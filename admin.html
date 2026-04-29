@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dip vinyl shop — 後台</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #111; --gray: #888; --line: #ddd; --bg: #f7f7f7;
+      --mono: 'Space Mono', monospace; --green: #2d8a4e; --red: #c0392b;
+    }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100vh; }
+
+    /* LOCK */
+    .lock { position: fixed; inset: 0; background: #fff; z-index: 999; display: flex; align-items: center; justify-content: center; }
+    .lock.hidden { display: none; }
+    .lock-box { width: 300px; }
+    .lock-title { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 20px; }
+    .lock-input { width: 100%; border: 1px solid var(--line); padding: 10px 12px; font-family: var(--mono); font-size: 12px; outline: none; margin-bottom: 10px; }
+    .lock-input:focus { border-color: var(--black); }
+    .lock-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; }
+    .lock-err { color: var(--red); font-size: 10px; margin-top: 8px; display: none; }
+
+    /* TOPBAR */
+    .topbar { background: var(--black); color: #fff; padding: 0 24px; height: 44px; display: flex; align-items: center; justify-content: space-between; }
+    .topbar-logo { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; }
+    .topbar-sub { font-size: 10px; color: #888; letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* LAYOUT */
+    .layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 44px); }
+    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+
+    /* LEFT */
+    .left { border-right: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; }
+    .panel-header { border-bottom: 1px solid var(--line); padding: 12px 16px; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); }
+    .search-wrap { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    .search-wrap input { width: 100%; border: 1px solid var(--line); padding: 8px 10px; font-family: var(--mono); font-size: 11px; outline: none; background: var(--bg); }
+    .search-wrap input:focus { border-color: var(--black); }
+    .item-list { flex: 1; overflow-y: auto; }
+    .item-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--line); cursor: pointer; transition: background 0.1s; }
+    .item-row:hover { background: var(--bg); }
+    .item-row.active { background: var(--black); color: #fff; }
+    .item-thumb { width: 44px; height: 44px; flex-shrink: 0; background: var(--line); display: flex; align-items: center; justify-content: center; font-size: 18px; color: #bbb; overflow: hidden; }
+    .item-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .item-info { flex: 1; min-width: 0; }
+    .item-name { font-size: 10px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.4; }
+    .item-meta { font-size: 10px; color: var(--gray); margin-top: 2px; }
+    .item-row.active .item-meta { color: #aaa; }
+    .list-empty { padding: 40px 16px; text-align: center; color: var(--gray); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .spinner { width: 16px; height: 16px; border: 1px solid var(--line); border-top-color: var(--black); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 10px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* RIGHT */
+    .right { padding: 24px; overflow-y: auto; }
+    .placeholder { height: 100%; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .editor { display: none; max-width: 640px; }
+    .editor.show { display: block; }
+    .editor-title { font-size: 13px; font-weight: 700; line-height: 1.4; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+
+    .section { margin-bottom: 24px; }
+    .section-label { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; font-weight: 700; }
+
+    /* IMAGE */
+    .img-row { display: flex; gap: 16px; align-items: flex-start; }
+    .img-preview { width: 120px; height: 120px; flex-shrink: 0; background: var(--line); display: flex; align-items: center; justify-content: center; font-size: 32px; color: #bbb; overflow: hidden; }
+    .img-preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-controls { flex: 1; }
+    .upload-zone { border: 2px dashed var(--line); padding: 16px 12px; text-align: center; cursor: pointer; transition: all 0.2s; position: relative; margin-bottom: 8px; }
+    .upload-zone:hover, .upload-zone.dragover { border-color: var(--black); background: var(--bg); }
+    .upload-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+    .upload-zone p { font-size: 10px; color: var(--gray); line-height: 1.7; }
+    .upload-zone strong { color: var(--black); }
+    .progress-wrap { display: none; margin-top: 8px; }
+    .progress-wrap.show { display: block; }
+    .progress-bg { background: var(--line); height: 2px; }
+    .progress-bar { background: var(--black); height: 2px; width: 0; transition: width 0.2s; }
+    .progress-label { font-size: 10px; color: var(--gray); margin-top: 4px; }
+
+    /* FIELDS */
+    .field { margin-bottom: 14px; }
+    .field label { display: block; font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+    .field input { width: 100%; border: 1px solid var(--line); padding: 9px 10px; font-family: var(--mono); font-size: 11px; outline: none; background: #fff; }
+    .field input:focus { border-color: var(--black); }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    /* QUICK BTNS */
+    .quick-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .quick-btn { background: none; border: 1px solid var(--line); padding: 4px 10px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; cursor: pointer; color: var(--gray); transition: all 0.15s; }
+    .quick-btn:hover { border-color: var(--black); color: var(--black); }
+    .quick-btn.selected { background: var(--black); border-color: var(--black); color: #fff; }
+
+    /* CONDITION */
+    .condition-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    .cond-btn { border: 1px solid var(--line); padding: 8px 4px; text-align: center; font-family: var(--mono); font-size: 10px; font-weight: 700; cursor: pointer; transition: all 0.15s; background: #fff; }
+    .cond-btn:hover { border-color: var(--black); }
+    .cond-btn.selected { background: var(--black); border-color: var(--black); color: #fff; }
+    .cond-sub { font-size: 8px; font-weight: 400; color: var(--gray); display: block; margin-top: 2px; }
+    .cond-btn.selected .cond-sub { color: #aaa; }
+
+    /* GENRE */
+    .genre-grid { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .genre-tag { border: 1px solid var(--line); padding: 5px 10px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; cursor: pointer; transition: all 0.15s; background: #fff; color: var(--gray); }
+    .genre-tag:hover { border-color: var(--black); color: var(--black); }
+    .genre-tag.selected { background: var(--black); border-color: var(--black); color: #fff; }
+
+    /* SAVE */
+    .btn-save { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px; cursor: pointer; transition: opacity 0.2s; margin-top: 8px; }
+    .btn-save:hover { opacity: 0.8; }
+    .btn-save:disabled { opacity: 0.35; cursor: not-allowed; }
+    .msg { margin-top: 10px; padding: 10px 12px; font-size: 10px; letter-spacing: 0.06em; line-height: 1.6; display: none; }
+    .msg.show { display: block; }
+    .msg.success { background: #eaf5ee; color: var(--green); border-left: 3px solid var(--green); }
+    .msg.error   { background: #fdf0ef; color: var(--red);   border-left: 3px solid var(--red); }
+  </style>
+</head>
+<body>
+
+<div class="lock" id="lockScreen">
+  <div class="lock-box">
+    <div class="lock-title">dip vinyl shop — 後台</div>
+    <input type="password" class="lock-input" id="pwInput" placeholder="輸入密碼…">
+    <button class="lock-btn" id="pwBtn">進入</button>
+    <div class="lock-err" id="pwErr">密碼錯誤</div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-logo">dip vinyl shop</div>
+  <div class="topbar-sub">後台管理</div>
+</header>
+
+<div class="layout">
+  <div class="left">
+    <div class="panel-header">庫存商品</div>
+    <div class="search-wrap"><input type="text" id="searchInput" placeholder="搜尋商品…"></div>
+    <div class="item-list" id="itemList">
+      <div class="list-empty"><div class="spinner"></div>載入中…</div>
+    </div>
+  </div>
+
+  <div class="right" id="rightPanel">
+    <div class="placeholder" id="placeholder">← 選擇左側商品開始編輯</div>
+    <div class="editor" id="editor">
+      <div class="section">
+        <div class="section-label">專輯名稱</div>
+        <div class="field"><input type="text" id="nameInput" style="font-weight:700;font-size:12px;"></div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">商品照片</div>
+        <div class="img-row">
+          <div class="img-preview" id="imgPreview">○</div>
+          <div class="img-controls">
+            <div class="upload-zone" id="uploadZone">
+              <input type="file" id="fileInput" accept="image/*">
+              <p><strong>點擊上傳照片</strong><br>或拖曳圖片到此處<br>JPG、PNG、WEBP</p>
+            </div>
+            <div class="progress-wrap" id="progressWrap">
+              <div class="progress-bg"><div class="progress-bar" id="progressBar"></div></div>
+              <div class="progress-label" id="progressLabel"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">曲風 Genre（可多選）</div>
+        <div class="genre-grid" id="genreGrid"></div>
+        <div class="field">
+          <input type="text" id="genreCustom" placeholder="自行輸入曲風，按 Enter 新增…">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">品相 Condition</div>
+        <div class="condition-grid" id="conditionGrid"></div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">價格資訊</div>
+        <div id="priceInfo" style="border:1px solid var(--line);padding:12px;background:#fff;line-height:2;font-size:11px;"></div>
+      </div>
+
+      <div class="section">
+        <div class="field-row">
+          <div class="field">
+            <label>藝人 Artist</label>
+            <input type="text" id="artistInput" placeholder="例：Miles Davis">
+          </div>
+          <div class="field">
+            <label>發行年份 Year</label>
+            <input type="number" id="yearInput" placeholder="例：1959" min="1900" max="2099">
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label>版本 Pressing</label>
+          <div class="quick-btns" id="pressingBtns">
+            <button class="quick-btn" data-val="JP盤">JP盤</button>
+            <button class="quick-btn" data-val="US盤">US盤</button>
+            <button class="quick-btn" data-val="UK盤">UK盤</button>
+          </div>
+          <input type="text" id="pressingInput" placeholder="自行輸入版本…">
+        </div>
+        <div class="field">
+          <label>版次 Edition</label>
+          <div class="quick-btns" id="editionBtns">
+            <button class="quick-btn" data-val="首版">首版</button>
+            <button class="quick-btn" data-val="再版">再版</button>
+          </div>
+          <input type="text" id="editionInput" placeholder="自行輸入版次…">
+        </div>
+      </div>
+
+      <button class="btn-save" id="btnSave">儲存</button>
+      <div class="msg" id="msgBox"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, getDocs, doc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+
+  // 密碼
+  const PASSWORD = 'dip2026';
+  const lockEl = document.getElementById('lockScreen');
+  if (sessionStorage.getItem('dip_admin') === '1') lockEl.classList.add('hidden');
+  document.getElementById('pwBtn').addEventListener('click', checkPw);
+  document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkPw(); });
+  function checkPw() {
+    if (document.getElementById('pwInput').value === PASSWORD) {
+      sessionStorage.setItem('dip_admin', '1');
+      lockEl.classList.add('hidden');
+    } else {
+      document.getElementById('pwErr').style.display = 'block';
+      document.getElementById('pwInput').value = '';
+    }
+  }
+
+  const app = initializeApp({
+    apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
+    authDomain: "price-manager-e8846.firebaseapp.com",
+    projectId: "price-manager-e8846",
+    storageBucket: "price-manager-e8846.firebasestorage.app",
+    messagingSenderId: "570133498387",
+    appId: "1:570133498387:web:8835b8d2373797e91d0de6"
+  });
+
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+
+  const GENRES = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin'];
+  const CONDITIONS = [
+    { val: 'M', sub: 'Mint' }, { val: 'NM', sub: 'Near Mint' },
+    { val: 'VG+', sub: 'Very Good+' }, { val: 'VG', sub: 'Very Good' },
+    { val: 'G+', sub: 'Good+' }, { val: 'G', sub: 'Good' },
+    { val: 'F', sub: 'Fair' }, { val: 'P', sub: 'Poor' },
+  ];
+
+  let allItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
+
+  async function loadItems() {
+    try {
+      const snap = await getDocs(collection(db, 'items'));
+      allItems = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存'))
+        .sort((a, b) => (a.name||'').localeCompare(b.name||''));
+      renderList(allItems);
+    } catch (e) {
+      document.getElementById('itemList').innerHTML = `<div class="list-empty">⚠ ${e.message}</div>`;
+    }
+  }
+
+  function renderList(items) {
+    if (!items.length) { document.getElementById('itemList').innerHTML = `<div class="list-empty">找不到商品</div>`; return; }
+    document.getElementById('itemList').innerHTML = items.map(p => `
+      <div class="item-row ${currentItem?.id === p.id ? 'active' : ''}" data-id="${p.id}">
+        <div class="item-thumb">${p.imageUrl ? `<img src="${p.imageUrl}" alt="">` : '○'}</div>
+        <div class="item-info">
+          <div class="item-name">${p.name || '未命名'}</div>
+          <div class="item-meta">${p.artist || ''} ${p.condition ? '· ' + p.condition : ''}</div>
+          <div class="item-meta">${p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : p.basePrice ? p.baseCurrency + ' ' + Number(p.basePrice).toLocaleString() : ''}</div>
+        </div>
+      </div>
+    `).join('');
+    document.getElementById('itemList').querySelectorAll('.item-row').forEach(row => {
+      row.addEventListener('click', () => openEditor(row.dataset.id));
+    });
+  }
+
+  document.getElementById('searchInput').addEventListener('input', e => {
+    const q = e.target.value.toLowerCase();
+    renderList(allItems.filter(p => (p.name||'').toLowerCase().includes(q)));
+  });
+
+  function buildGenreGrid() {
+    const grid = document.getElementById('genreGrid');
+    // 預設標籤
+    const allGenres = [...new Set([...GENRES, ...selectedGenres])];
+    grid.innerHTML = allGenres.map(g => `
+      <div class="genre-tag ${selectedGenres.includes(g) ? 'selected' : ''}" data-genre="${g}">${g}</div>
+    `).join('');
+    grid.querySelectorAll('.genre-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        const g = tag.dataset.genre;
+        if (selectedGenres.includes(g)) { selectedGenres = selectedGenres.filter(x => x !== g); tag.classList.remove('selected'); }
+        else { selectedGenres.push(g); tag.classList.add('selected'); }
+      });
+    });
+  }
+
+  document.getElementById('genreCustom').addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    const val = e.target.value.trim();
+    if (val && !selectedGenres.includes(val)) {
+      selectedGenres.push(val);
+      buildGenreGrid();
+    }
+    e.target.value = '';
+  });
+
+  function buildConditionGrid() {
+    document.getElementById('conditionGrid').innerHTML = CONDITIONS.map(c => `
+      <div class="cond-btn ${selectedCondition === c.val ? 'selected' : ''}" data-val="${c.val}">
+        ${c.val}<span class="cond-sub">${c.sub}</span>
+      </div>
+    `).join('');
+    document.getElementById('conditionGrid').querySelectorAll('.cond-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedCondition = btn.dataset.val;
+        document.getElementById('conditionGrid').querySelectorAll('.cond-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+  }
+
+  function syncQuickBtns(containerId, val) {
+    document.getElementById(containerId).querySelectorAll('.quick-btn').forEach(b => {
+      b.classList.toggle('selected', b.dataset.val === val);
+    });
+  }
+
+  // 快速按鈕 — 初始化時綁定一次，不重複
+  function initQuickBtns(containerId, inputId) {
+    const container = document.getElementById(containerId);
+    const input = document.getElementById(inputId);
+    container.addEventListener('click', e => {
+      const btn = e.target.closest('.quick-btn');
+      if (!btn) return;
+      if (btn.classList.contains('selected')) {
+        btn.classList.remove('selected');
+        input.value = '';
+      } else {
+        container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        input.value = btn.dataset.val;
+      }
+    });
+    input.addEventListener('input', () => {
+      container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+    });
+  }
+
+  // 初始化快速按鈕（只跑一次）
+  initQuickBtns('pressingBtns', 'pressingInput');
+  initQuickBtns('editionBtns',  'editionInput');
+
+  function openEditor(id) {
+    currentItem = allItems.find(p => p.id === id);
+    if (!currentItem) return;
+    document.getElementById('placeholder').style.display = 'none';
+    document.getElementById('editor').classList.add('show');
+    document.getElementById('nameInput').value = currentItem.name || '';
+    document.getElementById('imgPreview').innerHTML = currentItem.imageUrl ? `<img src="${currentItem.imageUrl}" alt="">` : '○';
+
+    // 價格資訊
+    const pi = document.getElementById('priceInfo');
+    const rows = [
+      ['進貨價', currentItem.basePrice ? `${currentItem.baseCurrency || ''} ${Number(currentItem.basePrice).toLocaleString()}` : '—'],
+      ['當地運費', currentItem.localShipping ? `${currentItem.localShippingCurrency || ''} ${Number(currentItem.localShipping).toLocaleString()}` : '—'],
+      ['服務費', currentItem.serviceFee ? `${currentItem.serviceFeeCurrency || ''} ${Number(currentItem.serviceFee).toLocaleString()}` : '—'],
+      ['國際運費', currentItem.intlShipping ? `${Number(currentItem.intlShipping).toLocaleString()}` : '—'],
+      ['自訂售價', currentItem.customPrice ? `<strong>NT$ ${Number(currentItem.customPrice).toLocaleString()}</strong>` : '—'],
+    ];
+    pi.innerHTML = rows.map(([label, val]) =>
+      `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;">
+        <span style="color:var(--gray);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;">${label}</span>
+        <span>${val}</span>
+      </div>`
+    ).join('');
+
+    selectedGenres = Array.isArray(currentItem.genre) ? [...currentItem.genre] : (currentItem.genre ? [currentItem.genre] : []);
+    buildGenreGrid();
+    selectedCondition = currentItem.condition || '';
+    buildConditionGrid();
+
+    document.getElementById('artistInput').value   = currentItem.artist   || '';
+    document.getElementById('yearInput').value     = currentItem.year     || '';
+    document.getElementById('pressingInput').value = currentItem.pressing || '';
+    document.getElementById('editionInput').value  = currentItem.edition  || '';
+
+    syncQuickBtns('pressingBtns', currentItem.pressing);
+    syncQuickBtns('editionBtns',  currentItem.edition);
+
+    document.getElementById('progressWrap').classList.remove('show');
+    document.getElementById('progressBar').style.width = '0';
+    document.getElementById('msgBox').className = 'msg';
+    renderList(allItems);
+  }
+
+  // 照片上傳
+  const fileInput = document.getElementById('fileInput');
+  const uploadZone = document.getElementById('uploadZone');
+  fileInput.addEventListener('change', e => { if (e.target.files[0]) uploadFile(e.target.files[0]); });
+  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
+  uploadZone.addEventListener('drop', e => { e.preventDefault(); uploadZone.classList.remove('dragover'); if (e.dataTransfer.files[0]) uploadFile(e.dataTransfer.files[0]); });
+
+  async function uploadFile(file) {
+    if (!currentItem) return;
+    const progressWrap = document.getElementById('progressWrap');
+    const progressBar  = document.getElementById('progressBar');
+    const progressLabel = document.getElementById('progressLabel');
+    progressWrap.classList.add('show');
+    const ext = file.name.split('.').pop();
+    const task = uploadBytesResumable(ref(storage, `items/${currentItem.id}.${ext}`), file);
+    task.on('state_changed',
+      snap => { const p = Math.round(snap.bytesTransferred / snap.totalBytes * 100); progressBar.style.width = p + '%'; progressLabel.textContent = `上傳中… ${p}%`; },
+      err => showMsg('error', `上傳失敗：${err.message}`),
+      async () => {
+        const url = await getDownloadURL(task.snapshot.ref);
+        currentItem.imageUrl = url;
+        allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
+        document.getElementById('imgPreview').innerHTML = `<img src="${url}" alt="">`;
+        progressLabel.textContent = '照片上傳完成！';
+        renderList(allItems);
+      }
+    );
+  }
+
+  // 儲存
+  document.getElementById('btnSave').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const btn = document.getElementById('btnSave');
+    btn.disabled = true;
+    try {
+      const updates = {
+        name:      document.getElementById('nameInput').value.trim(),
+        genre:     selectedGenres,
+        condition: selectedCondition,
+        artist:    document.getElementById('artistInput').value.trim(),
+        year:      Number(document.getElementById('yearInput').value) || null,
+        pressing:  document.getElementById('pressingInput').value.trim(),
+        edition:   document.getElementById('editionInput').value.trim(),
+      };
+      if (currentItem.imageUrl) updates.imageUrl = currentItem.imageUrl;
+      await updateDoc(doc(db, 'items', currentItem.id), updates);
+      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
+      currentItem = { ...currentItem, ...updates };
+      showMsg('success', '✓ 儲存成功！');
+      renderList(allItems);
+    } catch (e) {
+      showMsg('error', `儲存失敗：${e.message}`);
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  function showMsg(type, text) {
+    const box = document.getElementById('msgBox');
+    box.className = `msg ${type} show`;
+    box.textContent = text;
+  }
+
+  loadItems();
+</script>
+</body>
+</html>
