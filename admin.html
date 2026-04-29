@@ -13,6 +13,22 @@
     }
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100vh; }
 
+    /* SORT LIST */
+    .sort-row { display:flex; align-items:center; gap:10px; padding:10px 12px; border-bottom:1px solid var(--line); cursor:grab; background:#fff; }
+    .sort-row:last-child { border-bottom:none; }
+    .sort-row.dragging { opacity:0.3; }
+    .sort-row.drag-over { border-top:2px solid var(--black); }
+    .sort-handle { color:var(--gray); font-size:14px; flex-shrink:0; }
+    .sort-thumb { width:40px; height:40px; object-fit:cover; background:var(--line); flex-shrink:0; }
+    .sort-name { font-size:11px; font-weight:700; flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .sort-type { font-size:10px; color:var(--gray); border:1px solid var(--line); padding:1px 6px; flex-shrink:0; }
+
+    /* ARCHIVE LIST */
+    .archive-row { display:flex; align-items:center; gap:10px; padding:10px 12px; border-bottom:1px solid var(--line); cursor:grab; background:#fff; }
+    .archive-row:last-child { border-bottom:none; }
+    .archive-row.dragging { opacity:0.3; }
+    .archive-del { background:none; border:1px solid var(--line); color:var(--red); font-family:var(--mono); font-size:10px; padding:2px 8px; cursor:pointer; margin-left:auto; flex-shrink:0; }
+
     /* TABS */
     .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; }
     .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 0 24px; height: 44px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; color: var(--gray); transition: all 0.15s; }
@@ -163,6 +179,8 @@
 <div class="tab-bar">
   <button class="tab-btn active" data-tab="edit">編輯商品</button>
   <button class="tab-btn" data-tab="new">新增商品</button>
+  <button class="tab-btn" data-tab="archive">Digital Archive</button>
+  <button class="tab-btn" data-tab="sort">商品排序</button>
 </div>
 
 <div class="layout tab-content active" id="tab-edit">
@@ -260,6 +278,46 @@
 </div>
 
 </div><!-- end tab-edit -->
+
+<!-- Digital Archive tab -->
+<div class="tab-content" id="tab-archive">
+  <div class="new-item-wrap">
+    <div class="section">
+      <div class="section-label">新增 Digital Archive</div>
+      <div class="field">
+        <label>YouTube 連結</label>
+        <input type="text" id="archiveUrl" placeholder="https://www.youtube.com/watch?v=...">
+      </div>
+      <div id="archivePreview" style="display:none;margin-bottom:12px;">
+        <img id="archiveThumb" src="" style="width:100%;max-height:200px;object-fit:cover;display:block;margin-bottom:8px;">
+        <div id="archiveTitle" style="font-weight:700;font-size:12px;margin-bottom:4px;"></div>
+        <div id="archiveArtist" style="font-size:10px;color:var(--gray);"></div>
+      </div>
+      <div class="field"><label>標題（可自行修改）</label><input type="text" id="archiveTitleInput" placeholder="自動帶入 YouTube 標題"></div>
+      <div class="field"><label>藝人</label><input type="text" id="archiveArtistInput" placeholder="藝人名稱…"></div>
+      <button class="btn-save" id="btnAddArchive">新增到 Digital Archive</button>
+      <div class="msg" id="archiveMsgBox"></div>
+    </div>
+
+    <div class="section" style="margin-top:24px;">
+      <div class="section-label">現有 Archive（可拖曳排序）</div>
+      <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 商品排序 tab -->
+<div class="tab-content" id="tab-sort">
+  <div class="new-item-wrap">
+    <div class="section">
+      <div class="section-label">拖曳調整商品順序</div>
+      <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">拖曳調整後按「儲存順序」。</p>
+      <div id="sortList" style="border:1px solid var(--line);min-height:100px;"></div>
+      <button class="btn-save" id="btnSaveSort" style="margin-top:12px;">儲存順序</button>
+      <div class="msg" id="sortMsgBox"></div>
+    </div>
+  </div>
+</div>
 
 <!-- 新增商品 tab -->
 <div class="tab-content" id="tab-new">
@@ -715,6 +773,191 @@
     box.className = 'msg ' + type + ' show';
     box.textContent = text;
   }
+
+  // ── Tab 切換時載入對應資料 ──
+  const origTabClick = document.querySelector('.tab-bar').onclick;
+  document.querySelector('.tab-bar').addEventListener('click', e => {
+    const btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    if (btn.dataset.tab === 'archive') loadArchiveList();
+    if (btn.dataset.tab === 'sort') loadSortList();
+  });
+
+  // ── YouTube helpers ──
+  function getYouTubeId(url) {
+    const m = (url||'').match(/(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})/);
+    return m ? m[1] : null;
+  }
+
+  // YouTube URL 自動帶入標題
+  document.getElementById('archiveUrl').addEventListener('change', async e => {
+    const url = e.target.value.trim();
+    const vid = getYouTubeId(url);
+    if (!vid) return;
+    const thumb = 'https://img.youtube.com/vi/' + vid + '/mqdefault.jpg';
+    document.getElementById('archiveThumb').src = thumb;
+    document.getElementById('archivePreview').style.display = 'block';
+    // 用 oEmbed 拿標題
+    try {
+      const res = await fetch('https://www.youtube.com/oembed?url=' + encodeURIComponent(url) + '&format=json');
+      if (res.ok) {
+        const data = await res.json();
+        document.getElementById('archiveTitle').textContent = data.title || '';
+        document.getElementById('archiveTitleInput').value = data.title || '';
+        document.getElementById('archiveArtist').textContent = data.author_name || '';
+        document.getElementById('archiveArtistInput').value = data.author_name || '';
+      }
+    } catch(e) {}
+  });
+
+  // ── 新增 Archive ──
+  document.getElementById('btnAddArchive').addEventListener('click', async () => {
+    const url = document.getElementById('archiveUrl').value.trim();
+    const title = document.getElementById('archiveTitleInput').value.trim();
+    if (!url || !title) { showArchiveMsg('error', '請填入 YouTube 連結和標題'); return; }
+    const btn = document.getElementById('btnAddArchive');
+    btn.disabled = true;
+    try {
+      await addDoc(collection(db, 'archives'), {
+        youtubeUrl: url,
+        title,
+        artist: document.getElementById('archiveArtistInput').value.trim(),
+        sortOrder: Date.now(),
+        createdAt: new Date().toISOString(),
+      });
+      showArchiveMsg('success', '✓ 新增成功！');
+      document.getElementById('archiveUrl').value = '';
+      document.getElementById('archiveTitleInput').value = '';
+      document.getElementById('archiveArtistInput').value = '';
+      document.getElementById('archivePreview').style.display = 'none';
+      loadArchiveList();
+    } catch(e) { showArchiveMsg('error', '新增失敗：' + e.message); }
+    finally { btn.disabled = false; }
+  });
+
+  function showArchiveMsg(type, text) {
+    const box = document.getElementById('archiveMsgBox');
+    box.className = 'msg ' + type + ' show';
+    box.textContent = text;
+  }
+
+  // ── 載入 Archive 列表 ──
+  let archiveItems = [];
+  async function loadArchiveList() {
+    try {
+      const snap = await getDocs(collection(db, 'archives'));
+      archiveItems = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        .sort((a, b) => (a.sortOrder || 0) - (b.sortOrder || 0));
+      renderArchiveList();
+    } catch(e) {}
+  }
+
+  function renderArchiveList() {
+    const list = document.getElementById('archiveList');
+    if (!archiveItems.length) { list.innerHTML = '<div class="list-empty">尚無 Archive</div>'; return; }
+    list.innerHTML = archiveItems.map((a, idx) => {
+      const vid = getYouTubeId(a.youtubeUrl);
+      const thumb = vid ? 'https://img.youtube.com/vi/' + vid + '/default.jpg' : '';
+      return '<div class="archive-row" data-id="' + a.id + '" draggable="true">' +
+        (thumb ? '<img src="' + thumb + '" style="width:48px;height:36px;object-fit:cover;flex-shrink:0;">' : '<div style="width:48px;height:36px;background:var(--line);flex-shrink:0;"></div>') +
+        '<div style="flex:1;min-width:0;"><div style="font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + (a.title || '') + '</div>' +
+        '<div style="font-size:10px;color:var(--gray);">' + (a.artist || '') + '</div></div>' +
+        '<button class="archive-del" data-id="' + a.id + '">刪除</button>' +
+        '</div>';
+    }).join('');
+
+    // 拖曳排序
+    list.querySelectorAll('.archive-row').forEach(row => {
+      row.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', row.dataset.id); row.classList.add('dragging'); });
+      row.addEventListener('dragend', () => row.classList.remove('dragging'));
+      row.addEventListener('dragover', e => { e.preventDefault(); row.classList.add('drag-over'); });
+      row.addEventListener('dragleave', () => row.classList.remove('drag-over'));
+      row.addEventListener('drop', async e => {
+        e.preventDefault(); row.classList.remove('drag-over');
+        const fromId = e.dataTransfer.getData('text/plain');
+        const toId = row.dataset.id;
+        if (fromId === toId) return;
+        const from = archiveItems.findIndex(a => a.id === fromId);
+        const to   = archiveItems.findIndex(a => a.id === toId);
+        const moved = archiveItems.splice(from, 1)[0];
+        archiveItems.splice(to, 0, moved);
+        // 存回 Firestore
+        for (let i = 0; i < archiveItems.length; i++) {
+          await updateDoc(doc(db, 'archives', archiveItems[i].id), { sortOrder: i });
+        }
+        renderArchiveList();
+      });
+      // 刪除
+      row.querySelector('.archive-del').addEventListener('click', async e => {
+        e.stopPropagation();
+        const id = e.target.dataset.id;
+        if (!confirm('確定刪除？')) return;
+        await deleteDoc(doc(db, 'archives', id));
+        archiveItems = archiveItems.filter(a => a.id !== id);
+        renderArchiveList();
+      });
+    });
+  }
+
+  // ── 商品排序 ──
+  let sortItems = [];
+  async function loadSortList() {
+    try {
+      const snap = await getDocs(collection(db, 'items'));
+      sortItems = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存'))
+        .sort((a, b) => (a.sortOrder || 999) - (b.sortOrder || 999));
+      renderSortList();
+    } catch(e) {}
+  }
+
+  function renderSortList() {
+    const list = document.getElementById('sortList');
+    list.innerHTML = sortItems.map((p, idx) => {
+      const thumb = p.imageUrl || (Array.isArray(p.imageUrls) && p.imageUrls[0]);
+      return '<div class="sort-row" data-id="' + p.id + '" draggable="true">' +
+        '<span class="sort-handle">⠿</span>' +
+        (thumb ? '<img class="sort-thumb" src="' + thumb + '">' : '<div class="sort-thumb"></div>') +
+        '<span class="sort-name">' + (p.name || '未命名') + '</span>' +
+        '<span class="sort-type">' + (p.itemType || 'Used') + '</span>' +
+        '</div>';
+    }).join('');
+
+    list.querySelectorAll('.sort-row').forEach(row => {
+      row.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', row.dataset.id); row.classList.add('dragging'); });
+      row.addEventListener('dragend', () => row.classList.remove('dragging'));
+      row.addEventListener('dragover', e => { e.preventDefault(); row.classList.add('drag-over'); });
+      row.addEventListener('dragleave', () => row.classList.remove('drag-over'));
+      row.addEventListener('drop', e => {
+        e.preventDefault(); row.classList.remove('drag-over');
+        const fromId = e.dataTransfer.getData('text/plain');
+        const toId = row.dataset.id;
+        if (fromId === toId) return;
+        const from = sortItems.findIndex(p => p.id === fromId);
+        const to   = sortItems.findIndex(p => p.id === toId);
+        const moved = sortItems.splice(from, 1)[0];
+        sortItems.splice(to, 0, moved);
+        renderSortList();
+      });
+    });
+  }
+
+  document.getElementById('btnSaveSort').addEventListener('click', async () => {
+    const btn = document.getElementById('btnSaveSort');
+    btn.disabled = true;
+    try {
+      for (let i = 0; i < sortItems.length; i++) {
+        await updateDoc(doc(db, 'items', sortItems[i].id), { sortOrder: i });
+      }
+      const box = document.getElementById('sortMsgBox');
+      box.className = 'msg success show';
+      box.textContent = '✓ 順序已儲存！';
+    } catch(e) {
+      const box = document.getElementById('sortMsgBox');
+      box.className = 'msg error show';
+      box.textContent = '儲存失敗：' + e.message;
+    } finally { btn.disabled = false; }
+  });
 
   loadItems();
 </script>
