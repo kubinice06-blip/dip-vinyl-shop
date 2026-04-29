@@ -182,7 +182,7 @@
           <div class="img-preview" id="imgPreview">○</div>
           <div class="img-controls">
             <div class="upload-zone" id="uploadZone">
-              <input type="file" id="fileInput" accept="image/*">
+              <input type="file" id="fileInput" accept="image/*" multiple>
               <p><strong>點擊上傳照片</strong><br>或拖曳圖片到此處<br>JPG、PNG、WEBP</p>
             </div>
             <div class="progress-wrap" id="progressWrap">
@@ -287,7 +287,7 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-  import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
   // Tab 切換
   document.querySelector('.tab-bar').addEventListener('click', e => {
@@ -493,31 +493,50 @@
   // 照片上傳
   const fileInput = document.getElementById('fileInput');
   const uploadZone = document.getElementById('uploadZone');
-  fileInput.addEventListener('change', e => { if (e.target.files[0]) uploadFile(e.target.files[0]); });
+  fileInput.addEventListener('change', async e => {
+    const files = Array.from(e.target.files);
+    for (const file of files) await uploadFile(file);
+  });
   uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
   uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
-  uploadZone.addEventListener('drop', e => { e.preventDefault(); uploadZone.classList.remove('dragover'); if (e.dataTransfer.files[0]) uploadFile(e.dataTransfer.files[0]); });
+  uploadZone.addEventListener('drop', async e => {
+    e.preventDefault(); uploadZone.classList.remove('dragover');
+    const files = Array.from(e.dataTransfer.files);
+    for (const file of files) await uploadFile(file);
+  });
 
   async function uploadFile(file) {
     if (!currentItem) return;
-    const progressWrap = document.getElementById('progressWrap');
-    const progressBar  = document.getElementById('progressBar');
+    const progressWrap  = document.getElementById('progressWrap');
+    const progressBar   = document.getElementById('progressBar');
     const progressLabel = document.getElementById('progressLabel');
+
     progressWrap.classList.add('show');
-    const ext = file.name.split('.').pop();
-    const task = uploadBytesResumable(ref(storage, `items/${currentItem.id}.${ext}`), file);
-    task.on('state_changed',
-      snap => { const p = Math.round(snap.bytesTransferred / snap.totalBytes * 100); progressBar.style.width = p + '%'; progressLabel.textContent = `上傳中… ${p}%`; },
-      err => showMsg('error', `上傳失敗：${err.message}`),
-      async () => {
-        const url = await getDownloadURL(task.snapshot.ref);
-        currentItem.imageUrl = url;
-        allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
-        document.getElementById('imgPreview').innerHTML = `<img src="${url}" alt="">`;
-        progressLabel.textContent = '照片上傳完成！';
-        renderList(allItems);
-      }
-    );
+    progressBar.style.width = '0%';
+    progressLabel.textContent = '上傳中…';
+
+    try {
+      const ext      = file.name.split('.').pop().toLowerCase();
+      const fileName = `items/${currentItem.id}_${Date.now()}.${ext}`;
+      const storageRef = ref(storage, fileName);
+
+      // 用 uploadBytes（單次上傳，比 resumable 更穩定）
+      progressBar.style.width = '50%';
+      const snapshot = await uploadBytes(storageRef, file);
+      progressBar.style.width = '90%';
+      const url = await getDownloadURL(snapshot.ref);
+      progressBar.style.width = '100%';
+      progressLabel.textContent = '上傳完成！';
+
+      currentItem.imageUrl = url;
+      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
+      document.getElementById('imgPreview').innerHTML = `<img src="${url}" alt="">`;
+      renderList(allItems);
+    } catch (err) {
+      progressLabel.textContent = '';
+      progressWrap.classList.remove('show');
+      showMsg('error', `上傳失敗：${err.message}`);
+    }
   }
 
   // 儲存
