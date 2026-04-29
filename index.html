@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dip vinyl shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace; }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
+
+    .topbar {
+      border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; background: #fff; z-index: 50;
+    }
+    .topbar-logo { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
+    .topbar-right { color: var(--gray); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    .search-bar {
+      border-bottom: 1px solid var(--line); padding: 0 20px; height: 36px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .search-bar label { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+    .search-bar input { border: none; outline: none; font-family: var(--mono); font-size: 11px; color: var(--black); width: 100%; background: transparent; }
+    .search-bar input::placeholder { color: var(--gray); }
+
+    .count-bar {
+      border-bottom: 1px solid var(--line); padding: 0 20px; height: 28px;
+      display: flex; align-items: center;
+      color: var(--gray); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 560px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .card { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; }
+    .card-img-wrap { position: relative; aspect-ratio: 1; overflow: hidden; background: #f0f0f0; }
+    .card-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+    .card:hover .card-img { transform: scale(1.04); }
+    .card-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 36px; color: #ccc; }
+    .card-img-wrap::after {
+      content: 'VIEW'; position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(17,17,17,0.82); color: #fff;
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-align: center; padding: 9px;
+      transform: translateY(100%); transition: transform 0.2s ease;
+    }
+    .card:hover .card-img-wrap::after { transform: translateY(0); }
+
+    .card-info { padding: 10px 12px 12px; border-top: 1px solid var(--line); }
+    .card-name {
+      font-size: 11px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
+    .card-price { font-size: 11px; font-weight: 700; }
+    .card-no-price { font-size: 10px; color: var(--gray); }
+
+    .state-msg { grid-column: 1 / -1; padding: 80px 20px; text-align: center; color: var(--gray); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .spinner { width: 18px; height: 18px; border: 1px solid var(--line); border-top-color: var(--black); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.97); z-index: 200; overflow-y: auto; }
+    .modal-bg.open { display: block; }
+    .modal { max-width: 800px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); min-height: 100vh; }
+    .modal-topbar {
+      border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; background: rgba(255,255,255,0.97);
+    }
+    .modal-topbar span { font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; }
+    .modal-close-btn {
+      background: none; border: 1px solid var(--line); font-family: var(--mono);
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 12px; cursor: pointer; color: var(--black); transition: all 0.15s;
+    }
+    .modal-close-btn:hover { background: var(--black); color: #fff; border-color: var(--black); }
+    .modal-body { display: grid; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 560px) { .modal-body { grid-template-columns: 1fr; } }
+    .modal-img-wrap { aspect-ratio: 1; background: #f0f0f0; border-right: 1px solid var(--line); overflow: hidden; }
+    .modal-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .modal-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 60px; color: #ccc; }
+    .modal-detail { padding: 20px; display: flex; flex-direction: column; }
+    .modal-price { font-size: 22px; font-weight: 700; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+    .modal-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--line); gap: 12px; }
+    .modal-row-label { font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
+    .modal-row-value { font-size: 11px; font-weight: 700; text-align: right; line-height: 1.5; }
+    .modal-note { margin-top: 20px; font-size: 10px; color: var(--gray); line-height: 1.9; }
+
+    footer { border-top: 1px solid var(--line); padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    footer .f-logo { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
+    footer p { font-size: 10px; color: var(--gray); }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-logo">dip vinyl shop</div>
+  <div class="topbar-right">黑膠唱片</div>
+</header>
+
+<div class="search-bar">
+  <label>Search —</label>
+  <input type="text" id="searchInput" placeholder="唱片名稱…">
+</div>
+
+<div class="count-bar">
+  <span id="countLabel">Loading…</span>
+</div>
+
+<main class="grid" id="grid">
+  <div class="state-msg"><div class="spinner"></div>Loading</div>
+</main>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <div class="modal-topbar">
+      <span>Vinyl Shop — Detail</span>
+      <button class="modal-close-btn" id="modalCloseBtn">✕ Close</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-img-wrap" id="modalImg"></div>
+      <div class="modal-detail" id="modalDetail"></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="f-logo">dip vinyl shop</div>
+  <p>© 2026</p>
+</footer>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const app = initializeApp({
+    apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
+    authDomain: "price-manager-e8846.firebaseapp.com",
+    projectId: "price-manager-e8846",
+    storageBucket: "price-manager-e8846.firebasestorage.app",
+    messagingSenderId: "570133498387",
+    appId: "1:570133498387:web:8835b8d2373797e91d0de6"
+  });
+
+  const db = getFirestore(app);
+  let all = [], searchQ = '';
+
+  async function load() {
+    try {
+      const q = query(collection(db, 'items'), where('status', '==', '庫存'));
+      const snap = await getDocs(q);
+
+      all = snap.docs
+        .map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => !p.group || p.group === '' || p.group === '一般庫存');
+
+      if (all.length === 0) {
+        document.getElementById('countLabel').textContent = '目前沒有在架商品';
+        document.getElementById('grid').innerHTML = `<div class="state-msg">目前沒有在架商品。</div>`;
+        return;
+      }
+
+      render();
+    } catch (e) {
+      document.getElementById('grid').innerHTML = `<div class="state-msg">⚠ 錯誤：${e.message}</div>`;
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('input', e => {
+    searchQ = e.target.value.toLowerCase();
+    render();
+  });
+
+  function formatPrice(p) {
+    const custom = Number(p.customPrice);
+    if (custom && custom > 0) return `NT$ ${custom.toLocaleString()}`;
+    const base = Number(p.basePrice);
+    if (base && base > 0) return `${p.baseCurrency || 'JPY'} ${base.toLocaleString()}`;
+    return null;
+  }
+
+  function render() {
+    const list = all.filter(p => !searchQ || (p.name||'').toLowerCase().includes(searchQ));
+    document.getElementById('countLabel').textContent = `${list.length} items in stock`;
+
+    if (!list.length) {
+      document.getElementById('grid').innerHTML = `<div class="state-msg">No results found.</div>`;
+      return;
+    }
+
+    document.getElementById('grid').innerHTML = list.map(p => {
+      const price = formatPrice(p);
+      return `
+        <div class="card" data-id="${p.id}">
+          <div class="card-img-wrap">
+            ${p.imageUrl
+              ? `<img class="card-img" src="${p.imageUrl}" alt="${p.name||''}" loading="lazy">`
+              : `<div class="card-img-placeholder">○</div>`}
+          </div>
+          <div class="card-info">
+            <div class="card-name">${p.name || 'Unknown Title'}</div>
+            <div class="card-bottom">
+              ${price
+                ? `<div class="card-price">${price}</div>`
+                : `<div class="card-no-price">洽詢</div>`}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    document.getElementById('grid').querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => openModal(card.dataset.id));
+    });
+  }
+
+  function openModal(id) {
+    const p = all.find(x => x.id === id);
+    if (!p) return;
+    const price = formatPrice(p);
+
+    document.getElementById('modalImg').innerHTML = p.imageUrl
+      ? `<img class="modal-img" src="${p.imageUrl}" alt="${p.name||''}">`
+      : `<div class="modal-img-placeholder">○</div>`;
+
+    document.getElementById('modalDetail').innerHTML = `
+      <div class="modal-price">${price || '洽詢'}</div>
+      <div class="modal-row">
+        <span class="modal-row-label">Title</span>
+        <span class="modal-row-value">${p.name || '—'}</span>
+      </div>
+      <div class="modal-note">如有購買意願，請聯絡我們。<br>Contact us to purchase this item.</div>
+    `;
+
+    document.getElementById('modalBg').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+  document.getElementById('modalBg').addEventListener('click', e => {
+    if (e.target === document.getElementById('modalBg')) closeModal();
+  });
+
+  function closeModal() {
+    document.getElementById('modalBg').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  load();
+</script>
+</body>
+</html>
