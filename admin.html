@@ -196,6 +196,13 @@
       </div>
 
       <div class="section">
+        <div class="section-label">商品描述</div>
+        <div class="field">
+          <textarea id="descInput" placeholder="輸入商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:80px;line-height:1.6;"></textarea>
+        </div>
+      </div>
+
+      <div class="section">
         <div class="section-label">曲風 Genre（可多選）</div>
         <div class="genre-grid" id="genreGrid"></div>
         <div class="field">
@@ -553,6 +560,7 @@
     selectedCondition = currentItem.condition || '';
     buildConditionGrid();
 
+    if (document.getElementById('descInput')) document.getElementById('descInput').value = currentItem.description || '';
     document.getElementById('artistInput').value   = currentItem.artist   || '';
     document.getElementById('yearInput').value     = currentItem.year     || '';
     document.getElementById('pressingInput').value = currentItem.pressing || '';
@@ -597,7 +605,8 @@
     btn.disabled = true;
     try {
       const updates = {
-        name:      document.getElementById('nameInput').value.trim(),
+        name:        document.getElementById('nameInput').value.trim(),
+        description: document.getElementById('descInput') ? document.getElementById('descInput').value.trim() : '',
         genre:     selectedGenres,
         condition: selectedCondition,
         artist:    document.getElementById('artistInput').value.trim(),
