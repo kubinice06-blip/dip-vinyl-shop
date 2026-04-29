@@ -549,7 +549,7 @@
       await updateDoc(doc(db, 'items', currentItem.id), { imageUrl: url });
       currentItem.imageUrl = url;
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
-      document.getElementById('imgPreview').innerHTML = `<img src="${url}" alt="">`;
+      // imgPreview removed
       renderList(allItems);
     } catch (err) {
       progressLabel.textContent = '';
