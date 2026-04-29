@@ -128,6 +128,12 @@
     .genre-tag:hover { border-color: var(--black); color: var(--black); }
     .genre-tag.selected { background: var(--black); border-color: var(--black); color: #fff; }
 
+    .gallery-item { position:relative; width:90px; height:90px; cursor:grab; border:2px solid var(--line); flex-shrink:0; }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; display:block; pointer-events:none; }
+    .gallery-item .del-btn { position:absolute; top:2px; right:2px; background:rgba(0,0,0,0.75); color:#fff; border:none; font-size:13px; width:20px; height:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; border-radius:2px; }
+    .gallery-item.drag-over { border:2px solid var(--black); }
+    .gallery-item.dragging { opacity:0.3; }
+
     /* SAVE */
     .btn-save { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px; cursor: pointer; transition: opacity 0.2s; margin-top: 8px; }
     .btn-save:hover { opacity: 0.8; }
@@ -177,20 +183,16 @@
       </div>
 
       <div class="section">
-        <div class="section-label">商品照片</div>
-        <div class="img-row">
-          <div class="img-preview" id="imgPreview">○</div>
-          <div class="img-controls">
-            <div class="upload-zone" id="uploadZone">
-              <input type="file" id="fileInput" accept="image/*" multiple>
-              <p><strong>點擊上傳照片</strong><br>或拖曳圖片到此處<br>JPG、PNG、WEBP</p>
-            </div>
-            <div class="progress-wrap" id="progressWrap">
-              <div class="progress-bg"><div class="progress-bar" id="progressBar"></div></div>
-              <div class="progress-label" id="progressLabel"></div>
-            </div>
-          </div>
+        <div class="section-label">商品照片（可拖曳排列順序）</div>
+        <div class="upload-zone" id="uploadZone" style="margin-bottom:12px;">
+          <input type="file" id="fileInput" accept="image/*" multiple>
+          <p><strong>點擊上傳照片</strong>　或拖曳圖片到此處　JPG、PNG、WEBP　可一次選多張</p>
         </div>
+        <div class="progress-wrap" id="progressWrap" style="margin-bottom:12px;">
+          <div class="progress-bg"><div class="progress-bar" id="progressBar"></div></div>
+          <div class="progress-label" id="progressLabel"></div>
+        </div>
+        <div id="imgGallery" style="display:flex;flex-wrap:wrap;gap:8px;min-height:60px;padding:4px 0;"></div>
       </div>
 
       <div class="section">
@@ -452,7 +454,10 @@
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.add('show');
     document.getElementById('nameInput').value = currentItem.name || '';
-    document.getElementById('imgPreview').innerHTML = currentItem.imageUrl ? `<img src="${currentItem.imageUrl}" alt="">` : '○';
+    currentImages = Array.isArray(currentItem.imageUrls) && currentItem.imageUrls.length
+      ? [...currentItem.imageUrls]
+      : (currentItem.imageUrl ? [currentItem.imageUrl] : []);
+    renderGallery();
 
     // 價格資訊
     const pi = document.getElementById('priceInfo');
@@ -568,7 +573,8 @@
         pressing:  document.getElementById('pressingInput').value.trim(),
         edition:   document.getElementById('editionInput').value.trim(),
       };
-      if (currentItem.imageUrl) updates.imageUrl = currentItem.imageUrl;
+      updates.imageUrl  = currentImages[0] || null;
+      updates.imageUrls = [...currentImages];
       await updateDoc(doc(db, 'items', currentItem.id), updates);
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
       currentItem = { ...currentItem, ...updates };
