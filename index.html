@@ -100,6 +100,16 @@
     @media (max-width: 560px) { .modal-body { grid-template-columns: 1fr; } }
     .modal-img-wrap { aspect-ratio: 1; background: #f0f0f0; border-right: 1px solid var(--line); overflow: hidden; }
     .modal-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .carousel { position: relative; width: 100%; height: 100%; }
+    .carousel-imgs { width: 100%; height: 100%; position: relative; overflow: hidden; }
+    .carousel-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.3s; }
+    .carousel-img.active { opacity: 1; }
+    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; font-size: 16px; width: 32px; height: 48px; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; }
+    .carousel-btn.prev { left: 0; }
+    .carousel-btn.next { right: 0; }
+    .carousel-dots { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; }
+    .carousel-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; border: none; }
+    .carousel-dot.active { background: #fff; }
     .modal-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 60px; color: #ccc; }
     .modal-detail { padding: 20px; display: flex; flex-direction: column; }
     .modal-price { font-size: 22px; font-weight: 700; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
@@ -278,9 +288,35 @@
     if (!p) return;
     const price = formatPrice(p);
 
-    document.getElementById('modalImg').innerHTML = p.imageUrl
-      ? `<img class="modal-img" src="${p.imageUrl}" alt="${p.name||''}">`
-      : `<div class="modal-img-placeholder">○</div>`;
+    const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length > 0
+      ? p.imageUrls
+      : (p.imageUrl ? [p.imageUrl] : []);
+
+    if (imgs.length === 0) {
+      document.getElementById('modalImg').innerHTML = `<div class="modal-img-placeholder">○</div>`;
+    } else if (imgs.length === 1) {
+      document.getElementById('modalImg').innerHTML = `<img class="modal-img" src="${imgs[0]}" alt="">`;
+    } else {
+      let cur = 0;
+      const render = () => {
+        document.querySelectorAll('.carousel-img').forEach((el, i) => el.classList.toggle('active', i === cur));
+        document.querySelectorAll('.carousel-dot').forEach((el, i) => el.classList.toggle('active', i === cur));
+      };
+      document.getElementById('modalImg').innerHTML = `
+        <div class="carousel">
+          <div class="carousel-imgs">
+            ${imgs.map((u, i) => `<img class="carousel-img ${i===0?'active':''}" src="${u}" alt="">`).join('')}
+          </div>
+          <button class="carousel-btn prev">‹</button>
+          <button class="carousel-btn next">›</button>
+          <div class="carousel-dots">
+            ${imgs.map((_, i) => `<button class="carousel-dot ${i===0?'active':''}"></button>`).join('')}
+          </div>
+        </div>`;
+      document.querySelector('.carousel-btn.prev').addEventListener('click', () => { cur = (cur - 1 + imgs.length) % imgs.length; render(); });
+      document.querySelector('.carousel-btn.next').addEventListener('click', () => { cur = (cur + 1) % imgs.length; render(); });
+      document.querySelectorAll('.carousel-dot').forEach((dot, i) => dot.addEventListener('click', () => { cur = i; render(); }));
+    }
 
     const rows = [
       ['Title',     p.name      || '—'],
