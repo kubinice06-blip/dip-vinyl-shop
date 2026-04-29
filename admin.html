@@ -290,19 +290,6 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-
-  // Tab 切換
-  document.querySelector('.tab-bar').addEventListener('click', e => {
-    const btn = e.target.closest('.tab-btn');
-    if (!btn) return;
-    const tab = btn.dataset.tab;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('tab-' + tab).classList.add('active');
-    if (tab === 'new') loadImportList();
-  });
-
   // 密碼
   const PASSWORD = 'dip2026';
   const lockEl = document.getElementById('lockScreen');
@@ -319,6 +306,18 @@
     }
   }
 
+  // Tab 切換
+  document.querySelector('.tab-bar').addEventListener('click', e => {
+    const btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + tab).classList.add('active');
+    if (tab === 'new') loadImportList();
+  });
+
   const app = initializeApp({
     apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
     authDomain: "price-manager-e8846.firebaseapp.com",
@@ -329,7 +328,8 @@
   });
 
   const db = getFirestore(app);
-
+  const CLOUDINARY_CLOUD = 'ddod3zcpy';
+  const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
 
   const GENRES = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin'];
   const CONDITIONS = [
@@ -340,7 +340,9 @@
   ];
 
   let allItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
+  let currentImages = []; // 多張照片陣列
 
+  // ── 載入商品 ──
   async function loadItems() {
     try {
       const snap = await getDocs(collection(db, 'items'));
@@ -349,39 +351,123 @@
         .sort((a, b) => (a.name||'').localeCompare(b.name||''));
       renderList(allItems);
     } catch (e) {
-      document.getElementById('itemList').innerHTML = `<div class="list-empty">⚠ ${e.message}</div>`;
+      document.getElementById('itemList').innerHTML = '<div class="list-empty">⚠ ' + e.message + '</div>';
     }
   }
 
   function renderList(items) {
-    if (!items.length) { document.getElementById('itemList').innerHTML = `<div class="list-empty">找不到商品</div>`; return; }
-    document.getElementById('itemList').innerHTML = items.map(p => `
-      <div class="item-row ${currentItem?.id === p.id ? 'active' : ''}" data-id="${p.id}">
-        <div class="item-thumb">${p.imageUrl ? `<img src="${p.imageUrl}" alt="">` : '○'}</div>
-        <div class="item-info">
-          <div class="item-name">${p.name || '未命名'}</div>
-          <div class="item-meta">${p.artist || ''} ${p.condition ? '· ' + p.condition : ''}</div>
-          <div class="item-meta">${p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : p.basePrice ? p.baseCurrency + ' ' + Number(p.basePrice).toLocaleString() : ''}</div>
-        </div>
-      </div>
-    `).join('');
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const filtered = q ? items.filter(p => (p.name||'').toLowerCase().includes(q)) : items;
+    if (!filtered.length) { document.getElementById('itemList').innerHTML = '<div class="list-empty">找不到商品</div>'; return; }
+    document.getElementById('itemList').innerHTML = filtered.map(p => {
+      const thumb = p.imageUrl || (Array.isArray(p.imageUrls) && p.imageUrls[0]);
+      return '<div class="item-row ' + (currentItem && currentItem.id === p.id ? 'active' : '') + '" data-id="' + p.id + '">' +
+        '<div class="item-thumb">' + (thumb ? '<img src="' + thumb + '" alt="">' : '○') + '</div>' +
+        '<div class="item-info"><div class="item-name">' + (p.name || '未命名') + '</div>' +
+        '<div class="item-meta">' + (p.artist || '') + (p.condition ? ' · ' + p.condition : '') + '</div>' +
+        '<div class="item-meta">' + (p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : '') + '</div></div></div>';
+    }).join('');
     document.getElementById('itemList').querySelectorAll('.item-row').forEach(row => {
       row.addEventListener('click', () => openEditor(row.dataset.id));
     });
   }
 
-  document.getElementById('searchInput').addEventListener('input', e => {
-    const q = e.target.value.toLowerCase();
-    renderList(allItems.filter(p => (p.name||'').toLowerCase().includes(q)));
+  document.getElementById('searchInput').addEventListener('input', () => renderList(allItems));
+
+  // ── Gallery 圖片陣列 ──
+  function renderGallery() {
+    const gallery = document.getElementById('imgGallery');
+    if (!gallery) return;
+    gallery.innerHTML = '';
+    currentImages.forEach((url, idx) => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.draggable = true;
+      item.dataset.idx = idx;
+      item.innerHTML = '<img src="' + url + '" alt=""><button class="del-btn" data-idx="' + idx + '">×</button>';
+      item.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', String(idx)); item.classList.add('dragging'); });
+      item.addEventListener('dragend', () => item.classList.remove('dragging'));
+      item.addEventListener('dragover', e => { e.preventDefault(); item.classList.add('drag-over'); });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault(); item.classList.remove('drag-over');
+        const from = parseInt(e.dataTransfer.getData('text/plain'));
+        const to = idx;
+        if (from === to) return;
+        const moved = currentImages.splice(from, 1)[0];
+        currentImages.splice(to, 0, moved);
+        renderGallery();
+      });
+      item.querySelector('.del-btn').addEventListener('click', async e => {
+        e.stopPropagation();
+        currentImages.splice(idx, 1);
+        renderGallery();
+        if (currentItem) {
+          await updateDoc(doc(db, 'items', currentItem.id), { imageUrls: [...currentImages], imageUrl: currentImages[0] || null });
+          currentItem.imageUrls = [...currentImages];
+          currentItem.imageUrl = currentImages[0] || null;
+          allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: currentItem.imageUrl, imageUrls: [...currentImages] } : p);
+          renderList(allItems);
+        }
+      });
+      gallery.appendChild(item);
+    });
+  }
+
+  // ── 照片上傳 ──
+  const fileInput = document.getElementById('fileInput');
+  const uploadZone = document.getElementById('uploadZone');
+  fileInput.addEventListener('change', async e => {
+    for (const file of Array.from(e.target.files)) await uploadFile(file);
+    fileInput.value = '';
+  });
+  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
+  uploadZone.addEventListener('drop', async e => {
+    e.preventDefault(); uploadZone.classList.remove('dragover');
+    for (const file of Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/'))) await uploadFile(file);
   });
 
+  async function uploadFile(file) {
+    if (!currentItem) return;
+    const wrap = document.getElementById('progressWrap');
+    const bar  = document.getElementById('progressBar');
+    const lbl  = document.getElementById('progressLabel');
+    wrap.classList.add('show');
+    bar.style.width = '10%';
+    lbl.textContent = '上傳中… ' + file.name;
+    try {
+      const fd = new FormData();
+      fd.append('file', file);
+      fd.append('upload_preset', CLOUDINARY_PRESET);
+      fd.append('folder', 'vinyl');
+      const res = await fetch('https://api.cloudinary.com/v1_1/' + CLOUDINARY_CLOUD + '/image/upload', { method: 'POST', body: fd });
+      bar.style.width = '90%';
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      const url = data.secure_url;
+      bar.style.width = '100%';
+      lbl.textContent = '✓ 上傳完成';
+      currentImages.push(url);
+      renderGallery();
+      await updateDoc(doc(db, 'items', currentItem.id), { imageUrls: [...currentImages], imageUrl: currentImages[0] });
+      currentItem.imageUrls = [...currentImages];
+      currentItem.imageUrl  = currentImages[0];
+      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: currentImages[0], imageUrls: [...currentImages] } : p);
+      renderList(allItems);
+      setTimeout(() => { wrap.classList.remove('show'); bar.style.width = '0'; }, 1500);
+    } catch (err) {
+      lbl.textContent = '';
+      wrap.classList.remove('show');
+      showMsg('error', '上傳失敗：' + err.message);
+    }
+  }
+
+  // ── 曲風 ──
   function buildGenreGrid() {
     const grid = document.getElementById('genreGrid');
-    // 預設標籤
-    const allGenres = [...new Set([...GENRES, ...selectedGenres])];
-    grid.innerHTML = allGenres.map(g => `
-      <div class="genre-tag ${selectedGenres.includes(g) ? 'selected' : ''}" data-genre="${g}">${g}</div>
-    `).join('');
+    const all = [...new Set([...GENRES, ...selectedGenres])];
+    grid.innerHTML = all.map(g => '<div class="genre-tag ' + (selectedGenres.includes(g) ? 'selected' : '') + '" data-genre="' + g + '">' + g + '</div>').join('');
     grid.querySelectorAll('.genre-tag').forEach(tag => {
       tag.addEventListener('click', () => {
         const g = tag.dataset.genre;
@@ -395,19 +481,15 @@
     if (e.key !== 'Enter') return;
     e.preventDefault();
     const val = e.target.value.trim();
-    if (val && !selectedGenres.includes(val)) {
-      selectedGenres.push(val);
-      buildGenreGrid();
-    }
+    if (val && !selectedGenres.includes(val)) { selectedGenres.push(val); buildGenreGrid(); }
     e.target.value = '';
   });
 
+  // ── 品相 ──
   function buildConditionGrid() {
-    document.getElementById('conditionGrid').innerHTML = CONDITIONS.map(c => `
-      <div class="cond-btn ${selectedCondition === c.val ? 'selected' : ''}" data-val="${c.val}">
-        ${c.val}<span class="cond-sub">${c.sub}</span>
-      </div>
-    `).join('');
+    document.getElementById('conditionGrid').innerHTML = CONDITIONS.map(c =>
+      '<div class="cond-btn ' + (selectedCondition === c.val ? 'selected' : '') + '" data-val="' + c.val + '">' + c.val + '<span class="cond-sub">' + c.sub + '</span></div>'
+    ).join('');
     document.getElementById('conditionGrid').querySelectorAll('.cond-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         selectedCondition = btn.dataset.val;
@@ -417,63 +499,54 @@
     });
   }
 
-  function syncQuickBtns(containerId, val) {
-    document.getElementById(containerId).querySelectorAll('.quick-btn').forEach(b => {
-      b.classList.toggle('selected', b.dataset.val === val);
-    });
-  }
-
-  // 快速按鈕 — 初始化時綁定一次，不重複
+  // ── 快速按鈕 ──
   function initQuickBtns(containerId, inputId) {
     const container = document.getElementById(containerId);
     const input = document.getElementById(inputId);
+    if (!container || !input) return;
     container.addEventListener('click', e => {
       const btn = e.target.closest('.quick-btn');
       if (!btn) return;
-      if (btn.classList.contains('selected')) {
-        btn.classList.remove('selected');
-        input.value = '';
-      } else {
-        container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        input.value = btn.dataset.val;
-      }
+      if (btn.classList.contains('selected')) { btn.classList.remove('selected'); input.value = ''; }
+      else { container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected')); btn.classList.add('selected'); input.value = btn.dataset.val; }
     });
-    input.addEventListener('input', () => {
-      container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
-    });
+    input.addEventListener('input', () => container.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected')));
   }
 
-  // 初始化快速按鈕（只跑一次）
+  function syncQuickBtns(containerId, val) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.querySelectorAll('.quick-btn').forEach(b => b.classList.toggle('selected', b.dataset.val === val));
+  }
+
   initQuickBtns('pressingBtns', 'pressingInput');
   initQuickBtns('editionBtns',  'editionInput');
 
+  // ── 開啟編輯 ──
   function openEditor(id) {
     currentItem = allItems.find(p => p.id === id);
     if (!currentItem) return;
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.add('show');
     document.getElementById('nameInput').value = currentItem.name || '';
+
+    // 載入圖片
     currentImages = Array.isArray(currentItem.imageUrls) && currentItem.imageUrls.length
       ? [...currentItem.imageUrls]
       : (currentItem.imageUrl ? [currentItem.imageUrl] : []);
     renderGallery();
 
-    // 價格資訊
+    // 價格
     const pi = document.getElementById('priceInfo');
-    const rows = [
-      ['進貨價', currentItem.basePrice ? `${currentItem.baseCurrency || ''} ${Number(currentItem.basePrice).toLocaleString()}` : '—'],
-      ['當地運費', currentItem.localShipping ? `${currentItem.localShippingCurrency || ''} ${Number(currentItem.localShipping).toLocaleString()}` : '—'],
-      ['服務費', currentItem.serviceFee ? `${currentItem.serviceFeeCurrency || ''} ${Number(currentItem.serviceFee).toLocaleString()}` : '—'],
-      ['國際運費', currentItem.intlShipping ? `${Number(currentItem.intlShipping).toLocaleString()}` : '—'],
-      ['自訂售價', currentItem.customPrice ? `<strong>NT$ ${Number(currentItem.customPrice).toLocaleString()}</strong>` : '—'],
-    ];
-    pi.innerHTML = rows.map(([label, val]) =>
-      `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;">
-        <span style="color:var(--gray);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;">${label}</span>
-        <span>${val}</span>
-      </div>`
-    ).join('');
+    if (pi) {
+      const rows = [
+        ['進貨價', currentItem.basePrice ? (currentItem.baseCurrency || '') + ' ' + Number(currentItem.basePrice).toLocaleString() : '—'],
+        ['當地運費', currentItem.localShipping ? Number(currentItem.localShipping).toLocaleString() : '—'],
+        ['服務費', currentItem.serviceFee ? Number(currentItem.serviceFee).toLocaleString() : '—'],
+        ['自訂售價', currentItem.customPrice ? '<strong>NT$ ' + Number(currentItem.customPrice).toLocaleString() + '</strong>' : '—'],
+      ];
+      pi.innerHTML = rows.map(([l, v]) => '<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">' + l + '</span><span>' + v + '</span></div>').join('');
+    }
 
     selectedGenres = Array.isArray(currentItem.genre) ? [...currentItem.genre] : (currentItem.genre ? [currentItem.genre] : []);
     buildGenreGrid();
@@ -491,74 +564,33 @@
     document.getElementById('progressWrap').classList.remove('show');
     document.getElementById('progressBar').style.width = '0';
     document.getElementById('msgBox').className = 'msg';
-    addDeleteBtn();
+
+    // 刪除按鈕
+    if (!document.getElementById('btnDelete')) {
+      const btn = document.createElement('button');
+      btn.className = 'btn-delete'; btn.id = 'btnDelete';
+      btn.textContent = '從展示網站移除此商品';
+      document.getElementById('btnSave').after(btn);
+      btn.addEventListener('click', () => { if (currentItem) deleteItem(currentItem.id, currentItem.name); });
+    }
+
     renderList(allItems);
   }
 
-  // 照片上傳
-  const fileInput = document.getElementById('fileInput');
-  const uploadZone = document.getElementById('uploadZone');
-  fileInput.addEventListener('change', async e => {
-    const files = Array.from(e.target.files);
-    for (const file of files) await uploadFile(file);
-  });
-  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('dragover'); });
-  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('dragover'));
-  uploadZone.addEventListener('drop', async e => {
-    e.preventDefault(); uploadZone.classList.remove('dragover');
-    const files = Array.from(e.dataTransfer.files);
-    for (const file of files) await uploadFile(file);
-  });
-
-  const CLOUDINARY_CLOUD = 'ddod3zcpy';
-  const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
-
-  async function uploadFile(file) {
-    if (!currentItem) return;
-    const progressWrap  = document.getElementById('progressWrap');
-    const progressBar   = document.getElementById('progressBar');
-    const progressLabel = document.getElementById('progressLabel');
-
-    progressWrap.classList.add('show');
-    progressBar.style.width = '0%';
-    progressLabel.textContent = '上傳中…';
-
+  // ── 刪除 ──
+  async function deleteItem(id, name) {
+    if (!confirm('確定要移除「' + name + '」？')) return;
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('upload_preset', CLOUDINARY_PRESET);
-      formData.append('public_id', `vinyl/${currentItem.id}_${Date.now()}`);
-
-      progressBar.style.width = '30%';
-
-      const res = await fetch(
-        `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/image/upload`,
-        { method: 'POST', body: formData }
-      );
-
-      progressBar.style.width = '80%';
-
-      if (!res.ok) throw new Error('上傳失敗 ' + res.status);
-      const data = await res.json();
-      const url = data.secure_url;
-
-      progressBar.style.width = '100%';
-      progressLabel.textContent = '上傳完成！';
-
-      // 存回 Firestore
-      await updateDoc(doc(db, 'items', currentItem.id), { imageUrl: url });
-      currentItem.imageUrl = url;
-      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
-      // imgPreview removed
+      await deleteDoc(doc(db, 'items', id));
+      allItems = allItems.filter(p => p.id !== id);
+      currentItem = null;
+      document.getElementById('editor').classList.remove('show');
+      document.getElementById('placeholder').style.display = '';
       renderList(allItems);
-    } catch (err) {
-      progressLabel.textContent = '';
-      progressWrap.classList.remove('show');
-      showMsg('error', `上傳失敗：${err.message}`);
-    }
+    } catch (e) { showMsg('error', '移除失敗：' + e.message); }
   }
 
-  // 儲存
+  // ── 儲存 ──
   document.getElementById('btnSave').addEventListener('click', async () => {
     if (!currentItem) return;
     const btn = document.getElementById('btnSave');
@@ -572,54 +604,23 @@
         year:      Number(document.getElementById('yearInput').value) || null,
         pressing:  document.getElementById('pressingInput').value.trim(),
         edition:   document.getElementById('editionInput').value.trim(),
+        imageUrl:  currentImages[0] || null,
+        imageUrls: [...currentImages],
       };
-      updates.imageUrl  = currentImages[0] || null;
-      updates.imageUrls = [...currentImages];
+      Object.keys(updates).forEach(k => updates[k] === null && delete updates[k]);
       await updateDoc(doc(db, 'items', currentItem.id), updates);
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
       currentItem = { ...currentItem, ...updates };
       showMsg('success', '✓ 儲存成功！');
       renderList(allItems);
-    } catch (e) {
-      showMsg('error', `儲存失敗：${e.message}`);
-    } finally {
-      btn.disabled = false;
-    }
+    } catch (e) { showMsg('error', '儲存失敗：' + e.message); }
+    finally { btn.disabled = false; }
   });
 
   function showMsg(type, text) {
     const box = document.getElementById('msgBox');
-    box.className = `msg ${type} show`;
+    box.className = 'msg ' + type + ' show';
     box.textContent = text;
-  }
-
-  // ── 刪除商品 ──
-  async function deleteItem(id, name) {
-    if (!confirm(`確定要從展示網站移除「${name}」？\n\n注意：只會移除展示資料，不影響訂貨管理系統的原始資料。`)) return;
-    try {
-      await deleteDoc(doc(db, 'items', id));
-      allItems = allItems.filter(p => p.id !== id);
-      currentItem = null;
-      document.getElementById('editor').classList.remove('show');
-      document.getElementById('placeholder').style.display = '';
-      showMsg('success', '✓ 已移除');
-      renderList(allItems);
-    } catch (e) {
-      showMsg('error', `移除失敗：${e.message}`);
-    }
-  }
-
-  // 刪除按鈕（動態加到 editor）
-  function addDeleteBtn() {
-    if (document.getElementById('btnDelete')) return;
-    const btn = document.createElement('button');
-    btn.className = 'btn-delete';
-    btn.id = 'btnDelete';
-    btn.textContent = '從展示網站移除此商品';
-    document.getElementById('btnSave').after(btn);
-    btn.addEventListener('click', () => {
-      if (currentItem) deleteItem(currentItem.id, currentItem.name);
-    });
   }
 
   // ── 匯入列表 ──
@@ -633,21 +634,18 @@
         .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存'))
         .sort((a, b) => (a.name||'').localeCompare(b.name||''));
       renderImportList(importItems);
-    } catch (e) {
-      document.getElementById('importList').innerHTML = `<div class="list-empty">⚠ ${e.message}</div>`;
-    }
+    } catch (e) { document.getElementById('importList').innerHTML = '<div class="list-empty">⚠ ' + e.message + '</div>'; }
   }
 
   function renderImportList(items) {
     const q = document.getElementById('importSearch').value.toLowerCase();
     const filtered = q ? items.filter(p => (p.name||'').toLowerCase().includes(q)) : items;
-    if (!filtered.length) { document.getElementById('importList').innerHTML = `<div class="list-empty">找不到商品</div>`; return; }
-    document.getElementById('importList').innerHTML = filtered.map(p => `
-      <div class="import-row ${selectedImportItem?.id === p.id ? 'selected' : ''}" data-id="${p.id}">
-        <div class="import-name">${p.name || '未命名'}</div>
-        <div class="import-price">${p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : p.baseCurrency + ' ' + Number(p.basePrice||0).toLocaleString()}</div>
-      </div>
-    `).join('');
+    if (!filtered.length) { document.getElementById('importList').innerHTML = '<div class="list-empty">找不到商品</div>'; return; }
+    document.getElementById('importList').innerHTML = filtered.map(p =>
+      '<div class="import-row ' + (selectedImportItem && selectedImportItem.id === p.id ? 'selected' : '') + '" data-id="' + p.id + '">' +
+      '<div class="import-name">' + (p.name || '未命名') + '</div>' +
+      '<div class="import-price">' + (p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : (p.baseCurrency || '') + ' ' + Number(p.basePrice||0).toLocaleString()) + '</div></div>'
+    ).join('');
     document.getElementById('importList').querySelectorAll('.import-row').forEach(row => {
       row.addEventListener('click', () => {
         selectedImportItem = importItems.find(p => p.id === row.dataset.id);
@@ -655,7 +653,6 @@
         const sel = document.getElementById('importSelected');
         sel.style.display = 'block';
         document.getElementById('importSelectedName').textContent = selectedImportItem.name || '未命名';
-        // 自動填入欄位
         document.getElementById('newName').value   = selectedImportItem.name    || '';
         document.getElementById('newArtist').value = selectedImportItem.artist  || '';
         document.getElementById('newYear').value   = selectedImportItem.year    || '';
@@ -670,69 +667,47 @@
   document.getElementById('btnCreate').addEventListener('click', async () => {
     const name = document.getElementById('newName').value.trim();
     if (!name) { showNewMsg('error', '請輸入專輯名稱'); return; }
-
     const btn = document.getElementById('btnCreate');
     btn.disabled = true;
-
     try {
       const data = {
-        name,
+        name, status: '庫存', group: '',
         artist:      document.getElementById('newArtist').value.trim() || null,
         year:        Number(document.getElementById('newYear').value)   || null,
         customPrice: Number(document.getElementById('newPrice').value)  || null,
-        status:      '庫存',
-        group:       '',
         createdAt:   new Date().toISOString(),
       };
-
-      // 如果是從庫存匯入，保留原始欄位
       if (selectedImportItem) {
         Object.assign(data, {
-          basePrice:    selectedImportItem.basePrice    || null,
+          basePrice: selectedImportItem.basePrice || null,
           baseCurrency: selectedImportItem.baseCurrency || null,
-          pressing:     selectedImportItem.pressing     || null,
-          edition:      selectedImportItem.edition      || null,
-          condition:    selectedImportItem.condition    || null,
-          genre:        selectedImportItem.genre        || null,
-          sourceId:     selectedImportItem.id,
+          pressing: selectedImportItem.pressing || null,
+          edition: selectedImportItem.edition || null,
+          condition: selectedImportItem.condition || null,
+          genre: selectedImportItem.genre || null,
+          sourceId: selectedImportItem.id,
         });
       }
-
-      // 移除 null 欄位
       Object.keys(data).forEach(k => data[k] === null && delete data[k]);
-
-      const ref = await addDoc(collection(db, 'items'), data);
-      showNewMsg('success', `✓ 「${name}」已新增！`);
-
-      // 重設
+      await addDoc(collection(db, 'items'), data);
+      showNewMsg('success', '✓「' + name + '」已新增！');
       selectedImportItem = null;
       document.getElementById('importSelected').style.display = 'none';
-      document.getElementById('newName').value = '';
-      document.getElementById('newArtist').value = '';
-      document.getElementById('newYear').value = '';
-      document.getElementById('newPrice').value = '';
+      ['newName','newArtist','newYear','newPrice'].forEach(id => document.getElementById(id).value = '');
       importItems = [];
-
-      // 重新載入左側列表
       allItems = [];
       await loadItems();
-    } catch (e) {
-      showNewMsg('error', `新增失敗：${e.message}`);
-    } finally {
-      btn.disabled = false;
-    }
+    } catch (e) { showNewMsg('error', '新增失敗：' + e.message); }
+    finally { btn.disabled = false; }
   });
 
   function showNewMsg(type, text) {
     const box = document.getElementById('newMsgBox');
-    box.className = `msg ${type} show`;
+    box.className = 'msg ' + type + ' show';
     box.textContent = text;
   }
 
   loadItems();
-  // 在 openEditor 最後加入刪除按鈕
-  const _origOpenEditor = openEditor;
-
 </script>
 </body>
 </html>
