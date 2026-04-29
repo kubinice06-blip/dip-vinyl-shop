@@ -287,7 +287,7 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
+
 
   // Tab 切換
   document.querySelector('.tab-bar').addEventListener('click', e => {
@@ -327,7 +327,7 @@
   });
 
   const db = getFirestore(app);
-  const storage = getStorage(app);
+
 
   const GENRES = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin'];
   const CONDITIONS = [
@@ -505,6 +505,9 @@
     for (const file of files) await uploadFile(file);
   });
 
+  const CLOUDINARY_CLOUD = 'ddod3zcpy';
+  const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
+
   async function uploadFile(file) {
     if (!currentItem) return;
     const progressWrap  = document.getElementById('progressWrap');
@@ -516,18 +519,29 @@
     progressLabel.textContent = '上傳中…';
 
     try {
-      const ext      = file.name.split('.').pop().toLowerCase();
-      const fileName = `items/${currentItem.id}_${Date.now()}.${ext}`;
-      const storageRef = ref(storage, fileName);
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('upload_preset', CLOUDINARY_PRESET);
+      formData.append('public_id', `vinyl/${currentItem.id}_${Date.now()}`);
 
-      // 用 uploadBytes（單次上傳，比 resumable 更穩定）
-      progressBar.style.width = '50%';
-      const snapshot = await uploadBytes(storageRef, file);
-      progressBar.style.width = '90%';
-      const url = await getDownloadURL(snapshot.ref);
+      progressBar.style.width = '30%';
+
+      const res = await fetch(
+        `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/image/upload`,
+        { method: 'POST', body: formData }
+      );
+
+      progressBar.style.width = '80%';
+
+      if (!res.ok) throw new Error('上傳失敗 ' + res.status);
+      const data = await res.json();
+      const url = data.secure_url;
+
       progressBar.style.width = '100%';
       progressLabel.textContent = '上傳完成！';
 
+      // 存回 Firestore
+      await updateDoc(doc(db, 'items', currentItem.id), { imageUrl: url });
       currentItem.imageUrl = url;
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: url } : p);
       document.getElementById('imgPreview').innerHTML = `<img src="${url}" alt="">`;
