@@ -27,6 +27,18 @@
     .search-bar input { border: none; outline: none; font-family: var(--mono); font-size: 11px; color: var(--black); width: 100%; background: transparent; }
     .search-bar input::placeholder { color: var(--gray); }
 
+    .main-tabs { border-bottom: 1px solid var(--line); display: flex; }
+    .main-tab { background: none; border: none; border-bottom: 3px solid transparent; padding: 0 28px; height: 48px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; transition: all 0.15s; }
+    .main-tab:hover { color: var(--black); }
+    .main-tab.active { color: var(--black); border-bottom-color: var(--black); }
+    .archive-card { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; text-decoration: none; color: var(--black); display: block; }
+    .archive-thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #f0f0f0; }
+    .archive-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
+    .archive-card:hover .archive-thumb img { transform: scale(1.04); }
+    .archive-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0); transition: background 0.2s; }
+    .archive-card:hover .archive-play { background: rgba(0,0,0,0.35); }
+    .archive-play svg { opacity: 0; transition: opacity 0.2s; }
+    .archive-card:hover .archive-play svg { opacity: 1; }
     .genre-bar {
       border-bottom: 1px solid var(--line); padding: 0 20px; height: 36px;
       display: flex; align-items: center; overflow-x: auto; scrollbar-width: none; gap: 0;
@@ -137,16 +149,21 @@
   </div>
 </header>
 
+<div class="main-tabs" id="mainTabs">
+  <button class="main-tab active" data-tab="used">Used</button>
+  <button class="main-tab" data-tab="new">New</button>
+  <button class="main-tab" data-tab="archive">Digital Archive</button>
+</div>
 <div class="search-bar">
   <label>Search —</label>
   <input type="text" id="searchInput" placeholder="唱片名稱…">
 </div>
 
-<div class="genre-bar" id="genreBar">
+<div id="filterSection"><div class="genre-bar" id="genreBar">
   <button class="genre-btn active" data-genre="all">All</button>
 </div>
 
-<div class="count-bar">
+</div><div class="count-bar">
   <span id="countLabel">Loading…</span>
 </div>
 
@@ -360,6 +377,78 @@
     document.getElementById('modalBg').classList.remove('open');
     document.body.style.overflow = '';
   }
+
+  // 主標籤切換
+  let activeTab = 'used';
+  document.getElementById('mainTabs').addEventListener('click', e => {
+    const btn = e.target.closest('.main-tab');
+    if (!btn) return;
+    activeTab = btn.dataset.tab;
+    document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filterSection = document.getElementById('filterSection');
+    const searchBar = document.querySelector('.search-bar');
+    if (activeTab === 'archive') {
+      if (filterSection) filterSection.style.display = 'none';
+      searchBar.style.display = 'none';
+      loadArchives();
+    } else {
+      if (filterSection) filterSection.style.display = '';
+      searchBar.style.display = '';
+      activeGenre = 'all';
+      document.querySelectorAll('.genre-btn').forEach(b => b.classList.toggle('active', b.dataset.genre === 'all'));
+      render();
+    }
+  });
+
+  // archive
+  let archives = [];
+  async function loadArchives() {
+    document.getElementById('countLabel').textContent = 'Loading...';
+    document.getElementById('grid').innerHTML = '<div class="state-msg"><div class="spinner"></div>Loading</div>';
+    try {
+      const snap = await getDocs(collection(db, 'archives'));
+      archives = snap.docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => (a.sortOrder||999)-(b.sortOrder||999));
+      renderArchives();
+    } catch(e) {
+      document.getElementById('grid').innerHTML = '<div class="state-msg">⚠ ' + e.message + '</div>';
+    }
+  }
+
+  function getYouTubeId(url) {
+    const m = (url||'').match(/(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})/);
+    return m ? m[1] : null;
+  }
+
+  function renderArchives() {
+    document.getElementById('countLabel').textContent = archives.length + ' items';
+    if (!archives.length) { document.getElementById('grid').innerHTML = '<div class="state-msg">目前沒有 Digital Archive。</div>'; return; }
+    document.getElementById('grid').innerHTML = archives.map(a => {
+      const vid = getYouTubeId(a.youtubeUrl);
+      const thumb = vid ? 'https://img.youtube.com/vi/' + vid + '/mqdefault.jpg' : '';
+      return '<a class="archive-card" href="' + (a.youtubeUrl||'#') + '" target="_blank" rel="noopener">' +
+        '<div class="archive-thumb">' + (thumb ? '<img src="' + thumb + '" alt="">' : '') +
+        '<div class="archive-play"><svg width="40" height="40" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div></div>' +
+        '<div class="card-info"><div class="card-name">' + (a.title||'Untitled') + '</div>' +
+        '<div style="font-size:10px;color:var(--gray);margin-bottom:8px;">' + (a.artist||'') + '</div></div></a>';
+    }).join('');
+  }
+
+  // render 加 itemType 篩選
+  const _origRender = render;
+  render = function() {
+    if (activeTab === 'archive') return;
+    const origFilter = all.filter.bind(all);
+    const filtered = all.filter(p => {
+      const matchTab = activeTab === 'new' ? p.itemType === 'New' : (p.itemType === 'Used' || !p.itemType);
+      return matchTab;
+    });
+    const tempAll = all;
+    // 暫時替換 all 讓原本的 render 只看到篩選後的
+    all = filtered;
+    _origRender();
+    all = tempAll;
+  };
 
   load();
 </script>
