@@ -27,6 +27,23 @@
     .search-bar input { border: none; outline: none; font-family: var(--mono); font-size: 11px; color: var(--black); width: 100%; background: transparent; }
     .search-bar input::placeholder { color: var(--gray); }
 
+    .genre-bar {
+      border-bottom: 1px solid var(--line); padding: 0 20px; height: 36px;
+      display: flex; align-items: center; overflow-x: auto; scrollbar-width: none; gap: 0;
+    }
+    .genre-bar::-webkit-scrollbar { display: none; }
+    .genre-btn {
+      background: none; border: none; border-right: 1px solid var(--line);
+      padding: 0 16px; height: 36px; font-family: var(--mono);
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gray); cursor: pointer; white-space: nowrap; flex-shrink: 0;
+      transition: color 0.15s;
+    }
+    .genre-btn:first-child { padding-left: 0; }
+    .genre-btn:hover { color: var(--black); }
+    .genre-btn.active { color: var(--black); font-weight: 700; }
+    .card-genre { font-size: 10px; color: var(--gray); margin-bottom: 6px; }
+
     .count-bar {
       border-bottom: 1px solid var(--line); padding: 0 20px; height: 28px;
       display: flex; align-items: center;
@@ -108,6 +125,10 @@
   <input type="text" id="searchInput" placeholder="唱片名稱…">
 </div>
 
+<div class="genre-bar" id="genreBar">
+  <button class="genre-btn active" data-genre="all">All</button>
+</div>
+
 <div class="count-bar">
   <span id="countLabel">Loading…</span>
 </div>
@@ -148,7 +169,7 @@
   });
 
   const db = getFirestore(app);
-  let all = [], searchQ = '';
+  let all = [], searchQ = '', activeGenre = 'all';
 
   async function load() {
     try {
@@ -165,10 +186,36 @@
         return;
       }
 
+      buildGenreBar();
       render();
     } catch (e) {
       document.getElementById('grid').innerHTML = `<div class="state-msg">⚠ 錯誤：${e.message}</div>`;
     }
+  }
+
+  function buildGenreBar() {
+    const bar = document.getElementById('genreBar');
+    const genreSet = new Set();
+    all.forEach(p => {
+      if (Array.isArray(p.genre)) p.genre.forEach(g => genreSet.add(g));
+      else if (p.genre) genreSet.add(p.genre);
+    });
+    const genres = [...genreSet].sort();
+    genres.forEach(g => {
+      const btn = document.createElement('button');
+      btn.className = 'genre-btn';
+      btn.dataset.genre = g;
+      btn.textContent = g;
+      bar.appendChild(btn);
+    });
+    bar.addEventListener('click', e => {
+      const btn = e.target.closest('.genre-btn');
+      if (!btn) return;
+      activeGenre = btn.dataset.genre;
+      bar.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+    });
   }
 
   document.getElementById('searchInput').addEventListener('input', e => {
@@ -185,7 +232,13 @@
   }
 
   function render() {
-    const list = all.filter(p => !searchQ || (p.name||'').toLowerCase().includes(searchQ));
+    const list = all.filter(p => {
+      const matchSearch = !searchQ || (p.name||'').toLowerCase().includes(searchQ);
+      const matchGenre = activeGenre === 'all' || (
+        Array.isArray(p.genre) ? p.genre.includes(activeGenre) : p.genre === activeGenre
+      );
+      return matchSearch && matchGenre;
+    });
     document.getElementById('countLabel').textContent = `${list.length} items in stock`;
 
     if (!list.length) {
