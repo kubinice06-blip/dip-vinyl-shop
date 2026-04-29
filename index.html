@@ -58,6 +58,7 @@
     .card-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
     .card-price { font-size: 11px; font-weight: 700; }
     .card-no-price { font-size: 10px; color: var(--gray); }
+    .card-genre { font-size: 10px; color: var(--gray); margin-bottom: 6px; }
 
     .state-msg { grid-column: 1 / -1; padding: 80px 20px; text-align: center; color: var(--gray); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
     .spinner { width: 18px; height: 18px; border: 1px solid var(--line); border-top-color: var(--black); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 12px; }
@@ -203,6 +204,7 @@
           </div>
           <div class="card-info">
             <div class="card-name">${p.name || 'Unknown Title'}</div>
+            ${p.genre ? `<div class="card-genre">${Array.isArray(p.genre) ? p.genre.join(' · ') : p.genre}</div>` : ''}
             <div class="card-bottom">
               ${price
                 ? `<div class="card-price">${price}</div>`
