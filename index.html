@@ -618,12 +618,10 @@
     const summary = cart.map(p => {
       const price = Number(p.customPrice) || Number(p.basePrice) || 0;
       return (p.name || '') + ' — NT$ ' + price.toLocaleString();
-    }).join('
-');
+    }).join('\n');
     const total = cart.reduce((s, p) => s + (Number(p.customPrice) || Number(p.basePrice) || 0), 0);
     document.getElementById('checkoutSummary').innerHTML =
-      summary.split('
-').map(l => '<div>' + l + '</div>').join('') +
+      summary.split('\n').map(l => '<div>' + l + '</div>').join('') +
       '<div style="border-top:1px solid var(--line);margin-top:6px;padding-top:6px;font-weight:700;">Total: NT$ ' + total.toLocaleString() + '</div>';
     document.getElementById('cartPanel').classList.remove('open');
     document.getElementById('checkoutModal').classList.add('open');
