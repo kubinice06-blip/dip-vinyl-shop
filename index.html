@@ -598,7 +598,7 @@
     });
   }
 
-  function addToCart(id) {
+  window.addToCart = function addToCart(id) {
     const p = all.find(x => x.id === id);
     if (!p) return;
     if (cart.find(x => x.id === id)) { alert('此商品已在購物車中'); return; }
