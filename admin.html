@@ -337,16 +337,69 @@
     </div>
 
     <div class="section">
-      <div class="section-label">或手動新增</div>
-      <div class="field"><label>專輯名稱</label><input type="text" id="newName" placeholder="專輯名稱…"></div>
+      <div class="section-label">商品資料</div>
+
+      <div class="field"><label>專輯名稱 *</label><input type="text" id="newName" placeholder="專輯名稱…"></div>
+
       <div class="field-row">
-        <div class="field"><label>藝人</label><input type="text" id="newArtist" placeholder="藝人名稱…"></div>
-        <div class="field"><label>年份</label><input type="number" id="newYear" placeholder="1959"></div>
+        <div class="field"><label>藝人 Artist</label><input type="text" id="newArtist" placeholder="例：Miles Davis"></div>
+        <div class="field"><label>年份 Year</label><input type="number" id="newYear" placeholder="1959"></div>
       </div>
-      <div class="field"><label>售價 NT$</label><input type="number" id="newPrice" placeholder="0"></div>
+
+      <div class="field-row">
+        <div class="field"><label>台幣售價 NT$</label><input type="number" id="newPrice" placeholder="0"></div>
+        <div class="field"><label>商品類型</label>
+          <select id="newItemType" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;">
+            <option value="Used">Used（二手）</option>
+            <option value="New">New（全新）</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field"><label>版本 Pressing</label>
+        <div class="quick-btns" id="newPressingBtns">
+          <button class="quick-btn" data-val="JP盤">JP盤</button>
+          <button class="quick-btn" data-val="US盤">US盤</button>
+          <button class="quick-btn" data-val="UK盤">UK盤</button>
+        </div>
+        <input type="text" id="newPressing" placeholder="自行輸入版本…">
+      </div>
+
+      <div class="field"><label>版次 Edition</label>
+        <div class="quick-btns" id="newEditionBtns">
+          <button class="quick-btn" data-val="首版">首版</button>
+          <button class="quick-btn" data-val="再版">再版</button>
+        </div>
+        <input type="text" id="newEdition" placeholder="自行輸入版次…">
+      </div>
+
+      <div class="field"><label>品相 Condition</label>
+        <div class="condition-grid" id="newConditionGrid"></div>
+      </div>
+
+      <div class="field"><label>曲風 Genre（可多選）</label>
+        <div class="genre-grid" id="newGenreGrid"></div>
+        <input type="text" id="newGenreCustom" placeholder="自行輸入曲風，按 Enter 新增…" style="margin-top:6px;width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;">
+      </div>
+
+      <div class="field"><label>描述</label>
+        <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
+      </div>
+
+      <div class="field"><label>商品照片</label>
+        <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
+          <input type="file" id="newFileInput" accept="image/*" multiple>
+          <p><strong>點擊上傳照片</strong>　JPG、PNG、WEBP　可一次選多張</p>
+        </div>
+        <div class="progress-wrap" id="newProgressWrap" style="margin-bottom:8px;">
+          <div class="progress-bg"><div class="progress-bar" id="newProgressBar"></div></div>
+          <div class="progress-label" id="newProgressLabel"></div>
+        </div>
+        <div id="newImgGallery" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+      </div>
     </div>
 
-    <button class="btn-save" id="btnCreate">新增到展示網站</button>
+    <button class="btn-save" id="btnCreate">新增商品</button>
     <div class="msg" id="newMsgBox"></div>
   </div>
 </div>
@@ -755,6 +808,103 @@
 
   document.getElementById('importSearch').addEventListener('input', () => renderImportList(importItems));
 
+  // ── 新增商品表單初始化 ──
+  let newSelectedGenres = [];
+  let newSelectedCondition = '';
+  let newImages = [];
+
+  function buildNewConditionGrid() {
+    document.getElementById('newConditionGrid').innerHTML = CONDITIONS.map(c =>
+      '<div class="cond-btn ' + (newSelectedCondition === c.val ? 'selected' : '') + '" data-val="' + c.val + '">' + c.val + '<span class="cond-sub">' + c.sub + '</span></div>'
+    ).join('');
+    document.getElementById('newConditionGrid').querySelectorAll('.cond-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        newSelectedCondition = btn.dataset.val;
+        document.getElementById('newConditionGrid').querySelectorAll('.cond-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+  }
+
+  function buildNewGenreGrid() {
+    const grid = document.getElementById('newGenreGrid');
+    const all = [...new Set([...GENRES, ...newSelectedGenres])];
+    grid.innerHTML = all.map(g => '<div class="genre-tag ' + (newSelectedGenres.includes(g) ? 'selected' : '') + '" data-genre="' + g + '">' + g + '</div>').join('');
+    grid.querySelectorAll('.genre-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        const g = tag.dataset.genre;
+        if (newSelectedGenres.includes(g)) { newSelectedGenres = newSelectedGenres.filter(x => x !== g); tag.classList.remove('selected'); }
+        else { newSelectedGenres.push(g); tag.classList.add('selected'); }
+      });
+    });
+  }
+
+  function renderNewGallery() {
+    const gallery = document.getElementById('newImgGallery');
+    gallery.innerHTML = '';
+    newImages.forEach((url, idx) => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.innerHTML = '<img src="' + url + '" alt=""><button class="del-btn">×</button>';
+      item.querySelector('.del-btn').addEventListener('click', () => { newImages.splice(idx, 1); renderNewGallery(); });
+      gallery.appendChild(item);
+    });
+  }
+
+  document.getElementById('newGenreCustom').addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    const val = e.target.value.trim();
+    if (val && !newSelectedGenres.includes(val)) { newSelectedGenres.push(val); buildNewGenreGrid(); }
+    e.target.value = '';
+  });
+
+  initQuickBtns('newPressingBtns', 'newPressing');
+  initQuickBtns('newEditionBtns',  'newEdition');
+  buildNewConditionGrid();
+  buildNewGenreGrid();
+
+  // 新表單照片上傳
+  const newFileInput = document.getElementById('newFileInput');
+  const newUploadZone = document.getElementById('newUploadZone');
+  newFileInput.addEventListener('change', async e => {
+    for (const file of Array.from(e.target.files)) await uploadNewFile(file);
+    newFileInput.value = '';
+  });
+  newUploadZone.addEventListener('dragover', e => { e.preventDefault(); newUploadZone.classList.add('dragover'); });
+  newUploadZone.addEventListener('dragleave', () => newUploadZone.classList.remove('dragover'));
+  newUploadZone.addEventListener('drop', async e => {
+    e.preventDefault(); newUploadZone.classList.remove('dragover');
+    for (const file of Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/'))) await uploadNewFile(file);
+  });
+
+  async function uploadNewFile(file) {
+    const wrap = document.getElementById('newProgressWrap');
+    const bar  = document.getElementById('newProgressBar');
+    const lbl  = document.getElementById('newProgressLabel');
+    wrap.classList.add('show');
+    bar.style.width = '10%';
+    lbl.textContent = '上傳中… ' + file.name;
+    try {
+      const fd = new FormData();
+      fd.append('file', file);
+      fd.append('upload_preset', CLOUDINARY_PRESET);
+      fd.append('folder', 'vinyl');
+      const res = await fetch('https://api.cloudinary.com/v1_1/' + CLOUDINARY_CLOUD + '/image/upload', { method: 'POST', body: fd });
+      bar.style.width = '100%';
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      newImages.push(data.secure_url);
+      renderNewGallery();
+      lbl.textContent = '✓ 上傳完成';
+      setTimeout(() => { wrap.classList.remove('show'); bar.style.width = '0'; }, 1500);
+    } catch(err) {
+      lbl.textContent = '';
+      wrap.classList.remove('show');
+      showNewMsg('error', '照片上傳失敗：' + err.message);
+    }
+  }
+
   // ── 新增商品 ──
   document.getElementById('btnCreate').addEventListener('click', async () => {
     const name = document.getElementById('newName').value.trim();
@@ -763,29 +913,45 @@
     btn.disabled = true;
     try {
       const data = {
-        name, status: '庫存', group: '',
-        artist:      document.getElementById('newArtist').value.trim() || null,
-        year:        Number(document.getElementById('newYear').value)   || null,
-        customPrice: Number(document.getElementById('newPrice').value)  || null,
+        name,
+        status:      '庫存',
+        group:       '',
+        itemType:    document.getElementById('newItemType').value,
+        artist:      document.getElementById('newArtist').value.trim()    || null,
+        year:        Number(document.getElementById('newYear').value)      || null,
+        customPrice: Number(document.getElementById('newPrice').value)     || null,
+        pressing:    document.getElementById('newPressing').value.trim()   || null,
+        edition:     document.getElementById('newEdition').value.trim()    || null,
+        condition:   newSelectedCondition                                   || null,
+        genre:       newSelectedGenres.length ? newSelectedGenres           : null,
+        description: document.getElementById('newDesc').value.trim()       || null,
+        imageUrl:    newImages[0]                                           || null,
+        imageUrls:   newImages.length ? [...newImages]                      : null,
         createdAt:   new Date().toISOString(),
       };
       if (selectedImportItem) {
-        Object.assign(data, {
-          basePrice: selectedImportItem.basePrice || null,
-          baseCurrency: selectedImportItem.baseCurrency || null,
-          pressing: selectedImportItem.pressing || null,
-          edition: selectedImportItem.edition || null,
-          condition: selectedImportItem.condition || null,
-          genre: selectedImportItem.genre || null,
-          sourceId: selectedImportItem.id,
-        });
+        data.basePrice    = selectedImportItem.basePrice    || null;
+        data.baseCurrency = selectedImportItem.baseCurrency || null;
+        data.sourceId     = selectedImportItem.id;
       }
       Object.keys(data).forEach(k => data[k] === null && delete data[k]);
       await addDoc(collection(db, 'items'), data);
       showNewMsg('success', '✓「' + name + '」已新增！');
+
+      // 重設表單
       selectedImportItem = null;
       document.getElementById('importSelected').style.display = 'none';
-      ['newName','newArtist','newYear','newPrice'].forEach(id => document.getElementById(id).value = '');
+      ['newName','newArtist','newYear','newPrice','newPressing','newEdition','newDesc'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('newItemType').value = 'Used';
+      newSelectedGenres = [];
+      newSelectedCondition = '';
+      newImages = [];
+      buildNewGenreGrid();
+      buildNewConditionGrid();
+      renderNewGallery();
+      document.getElementById('newPressingBtns').querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+      document.getElementById('newEditionBtns').querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+
       importItems = [];
       allItems = [];
       await loadItems();
