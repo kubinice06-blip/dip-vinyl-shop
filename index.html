@@ -56,6 +56,14 @@
     .genre-btn.active { color: var(--black); font-weight: 700; }
     .card-genre { font-size: 10px; color: var(--gray); margin-bottom: 6px; }
 
+    .sort-select {
+      background: none; border: none; border-left: 1px solid var(--line);
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--gray); cursor: pointer;
+      padding: 0 16px; height: 28px; outline: none;
+    }
+    .sort-select:hover { color: var(--black); }
+
     .count-bar {
       border-bottom: 1px solid var(--line); padding: 0 20px; height: 28px;
       display: flex; align-items: center;
@@ -176,6 +184,15 @@
     .checkout-success h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
     .checkout-success p { font-size: 11px; color: var(--gray); line-height: 1.8; }
 
+    /* NEW 標籤 */
+    .card-new-badge {
+      position: absolute; bottom: 0; right: 0;
+      background: #e8383d; color: #fff;
+      font-family: var(--mono); font-size: 9px; font-weight: 700;
+      letter-spacing: 0.1em; padding: 3px 7px;
+      text-transform: uppercase; line-height: 1;
+    }
+
     /* 首版 + pressing 標籤 */
     .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
     .card-tag-item { font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; border: 1px solid var(--black); padding: 1px 5px; text-transform: uppercase; }
@@ -216,6 +233,11 @@
 
 </div><div class="count-bar">
   <span id="countLabel">Loading…</span>
+  <select class="sort-select" id="sortSelect">
+    <option value="default">預設</option>
+    <option value="price-desc">價格高→低</option>
+    <option value="price-asc">價格低→高</option>
+  </select>
 </div>
 
 <main class="grid" id="grid">
@@ -384,14 +406,15 @@
       );
       return matchSearch && matchGenre;
     });
-    document.getElementById('countLabel').textContent = `${list.length} items in stock`;
+    const sorted = sortItems(list);
+    document.getElementById('countLabel').textContent = `${sorted.length} items in stock`;
 
-    if (!list.length) {
+    if (!sorted.length) {
       document.getElementById('grid').innerHTML = `<div class="state-msg">No results found.</div>`;
       return;
     }
 
-    document.getElementById('grid').innerHTML = list.map(p => {
+    document.getElementById('grid').innerHTML = sorted.map(p => {
       const price = formatPrice(p);
       return `
         <div class="card" data-id="${p.id}">
@@ -399,6 +422,7 @@
             ${p.imageUrl
               ? `<img class="card-img" src="${p.imageUrl}" alt="${p.name||''}" loading="lazy">`
               : `<div class="card-img-placeholder">○</div>`}
+          ${isNewItem(p) ? '<div class="card-new-badge">New</div>' : ''}
           </div>
           <div class="card-info">
             <div class="card-name">${p.name || 'Unknown Title'}</div>
@@ -535,6 +559,31 @@
   function getYouTubeId(url) {
     const m = (url||'').match(/(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})/);
     return m ? m[1] : null;
+  }
+
+  // 判斷是否為新上架（7天內）
+  function isNewItem(p) {
+    if (!p.createdAt) return false;
+    const created = new Date(p.createdAt);
+    const now = new Date();
+    const diff = (now - created) / (1000 * 60 * 60 * 24);
+    return diff <= 7;
+  }
+
+  // 排序
+  let activeSortOrder = 'default';
+  document.getElementById('sortSelect').addEventListener('change', e => {
+    activeSortOrder = e.target.value;
+    render();
+  });
+
+  function sortItems(list) {
+    if (activeSortOrder === 'price-desc') {
+      return [...list].sort((a, b) => (Number(b.customPrice) || Number(b.basePrice) || 0) - (Number(a.customPrice) || Number(a.basePrice) || 0));
+    } else if (activeSortOrder === 'price-asc') {
+      return [...list].sort((a, b) => (Number(a.customPrice) || Number(a.basePrice) || 0) - (Number(b.customPrice) || Number(b.basePrice) || 0));
+    }
+    return list;
   }
 
   function renderArchives() {
