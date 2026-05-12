@@ -1309,6 +1309,41 @@
     } finally { btn.disabled = false; }
   });
 
+  // + 新增按鈕
+  document.getElementById('btnNewItem').addEventListener('click', () => {
+    currentItem = null;
+    pendingImages = null;
+    document.getElementById('placeholder').style.display = 'none';
+    document.getElementById('editor').classList.remove('show');
+    document.getElementById('newItemPanel').style.display = 'block';
+    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    const ini = document.getElementById('newInternalNote');
+    if (ini) ini.value = '';
+    const nsp = document.getElementById('newSuggestPrice');
+    if (nsp) nsp.textContent = '';
+    document.getElementById('newItemType').value = 'Used';
+    newSelectedGenres = [];
+    newSelectedCondition = '';
+    newImages = [];
+    buildNewGenreGrid();
+    buildNewConditionGrid();
+    renderNewGallery();
+    document.getElementById('importSelected').style.display = 'none';
+    loadImportList();
+    renderList(allItems);
+  });
+
+  // 成本建議售價（新增表單）
+  document.getElementById('newCost').addEventListener('input', e => {
+    const cost = Number(e.target.value);
+    const el = document.getElementById('newSuggestPrice');
+    if (!el) return;
+    el.textContent = cost > 0 ? '建議售價：NT$ ' + (Math.ceil(cost * 1.3 / 10) * 10).toLocaleString() + '（×1.3）' : '';
+  });
+
   loadItems();
 </script>
 </body>
