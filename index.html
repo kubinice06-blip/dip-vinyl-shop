@@ -94,6 +94,7 @@
     }
     .card-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
     .card-price { font-size: 11px; font-weight: 700; }
+    .card-artist { font-size: 10px; color: var(--gray); margin-bottom: 4px; }
     .card-no-price { font-size: 10px; color: var(--gray); }
     .card-genre { font-size: 10px; color: var(--gray); margin-bottom: 6px; }
 
@@ -428,6 +429,7 @@
           </div>
           <div class="card-info">
             <div class="card-name">${p.name || 'Unknown Title'}</div>
+            ${p.artist ? `<div class="card-artist">${p.artist}</div>` : ''}
             ${(p.edition === '首版' || p.pressing) ? `<div class="card-tags">
               ${p.edition === '首版' ? '<span class="card-tag-item card-tag-first">First Press</span>' : ''}
               ${p.pressing ? '<span class="card-tag-item">' + p.pressing + '</span>' : ''}

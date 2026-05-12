@@ -178,14 +178,16 @@
 
 <div class="tab-bar">
   <button class="tab-btn active" data-tab="edit">編輯商品</button>
-  <button class="tab-btn" data-tab="new">新增商品</button>
   <button class="tab-btn" data-tab="archive">Digital Archive</button>
   <button class="tab-btn" data-tab="sort">商品排序</button>
 </div>
 
 <div class="layout tab-content active" id="tab-edit">
   <div class="left">
-    <div class="panel-header">庫存商品</div>
+    <div class="panel-header" style="display:flex;align-items:center;justify-content:space-between;">
+      <span>庫存商品</span>
+      <button id="btnNewItem" style="background:var(--black);color:#fff;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;cursor:pointer;">+ 新增</button>
+    </div>
     <div class="search-wrap"><input type="text" id="searchInput" placeholder="搜尋商品…"></div>
     <div class="item-list" id="itemList">
       <div class="list-empty"><div class="spinner"></div>載入中…</div>
@@ -194,6 +196,87 @@
 
   <div class="right" id="rightPanel">
     <div class="placeholder" id="placeholder">← 選擇左側商品開始編輯</div>
+    <!-- 新增商品面板 -->
+    <div id="newItemPanel" style="display:none;max-width:640px;">
+      <div style="font-size:13px;font-weight:700;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line);">新增商品</div>
+
+      <div class="section">
+        <div class="section-label">從庫存匯入（選填）</div>
+        <div class="search-wrap" style="padding:0;margin-bottom:8px;">
+          <input type="text" id="importSearch" placeholder="搜尋庫存商品…" style="width:100%;border:1px solid var(--line);padding:8px 10px;font-family:var(--mono);font-size:11px;outline:none;">
+        </div>
+        <div class="import-list" id="importList" style="max-height:200px;"></div>
+        <div id="importSelected" style="display:none;margin-top:8px;padding:8px 12px;border:1px solid var(--line);font-size:11px;background:#fff;">
+          <strong>已選：</strong><span id="importSelectedName"></span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">商品資料</div>
+        <div class="field"><label>專輯名稱 *</label><input type="text" id="newName" placeholder="專輯名稱…"></div>
+        <div class="field-row">
+          <div class="field"><label>藝人</label><input type="text" id="newArtist" placeholder="例：Miles Davis"></div>
+          <div class="field"><label>年份</label><input type="number" id="newYear" placeholder="1959"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>台幣售價 NT$</label><input type="number" id="newPrice" placeholder="0"></div>
+          <div class="field"><label>商品類型</label>
+            <select id="newItemType" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;">
+              <option value="Used">Used（二手）</option>
+              <option value="New">New（全新）</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>進貨成本 NT$</label>
+            <input type="number" id="newCost" placeholder="0">
+            <div id="newSuggestPrice" style="font-size:10px;color:var(--gray);margin-top:5px;"></div>
+          </div>
+          <div class="field"><label>內部備註</label><input type="text" id="newInternalNote" placeholder="僅後台可見…"></div>
+        </div>
+        <div class="field"><label>版本 Pressing</label>
+          <div class="quick-btns" id="newPressingBtns">
+            <button class="quick-btn" data-val="JP盤">JP盤</button>
+            <button class="quick-btn" data-val="US盤">US盤</button>
+            <button class="quick-btn" data-val="UK盤">UK盤</button>
+          </div>
+          <input type="text" id="newPressing" placeholder="自行輸入版本…">
+        </div>
+        <div class="field"><label>版次 Edition</label>
+          <div class="quick-btns" id="newEditionBtns">
+            <button class="quick-btn" data-val="首版">首版</button>
+            <button class="quick-btn" data-val="再版">再版</button>
+          </div>
+          <input type="text" id="newEdition" placeholder="自行輸入版次…">
+        </div>
+        <div class="field"><label>品相 Condition</label>
+          <div class="condition-grid" id="newConditionGrid"></div>
+        </div>
+        <div class="field"><label>曲風 Genre（可多選）</label>
+          <div class="genre-grid" id="newGenreGrid"></div>
+          <input type="text" id="newGenreCustom" placeholder="自行輸入曲風，按 Enter 新增…" style="margin-top:6px;width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;">
+        </div>
+        <div class="field"><label>描述</label>
+          <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
+        </div>
+        <div class="field"><label>商品照片</label>
+          <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
+            <input type="file" id="newFileInput" accept="image/*" multiple>
+            <p><strong>點擊上傳照片</strong>　JPG、PNG、WEBP　可一次選多張</p>
+          </div>
+          <div class="progress-wrap" id="newProgressWrap" style="margin-bottom:8px;">
+            <div class="progress-bg"><div class="progress-bar" id="newProgressBar"></div></div>
+            <div class="progress-label" id="newProgressLabel"></div>
+          </div>
+          <div id="newImgGallery" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+        </div>
+      </div>
+
+      <button class="btn-save" id="btnCreate">新增商品</button>
+      <div class="msg" id="newMsgBox"></div>
+    </div>
+
     <div class="editor" id="editor">
       <div class="section">
         <div class="section-label">專輯名稱</div>
@@ -211,6 +294,7 @@
           <div class="progress-label" id="progressLabel"></div>
         </div>
         <div id="imgGallery" style="display:flex;flex-wrap:wrap;gap:8px;min-height:60px;padding:4px 0;"></div>
+        <div id="galleryHint" style="display:none;font-size:10px;color:var(--gray);margin-top:6px;letter-spacing:0.04em;">照片變更將在「儲存」後生效</div>
       </div>
 
       <div class="section">
@@ -591,9 +675,10 @@
       const url = data.secure_url;
       bar.style.width = '100%';
       lbl.textContent = '✓ 上傳完成';
-      currentImages.push(url);
+      if (pendingImages === null) pendingImages = [...currentImages];
+      pendingImages.push(url);
       renderGallery();
-      await updateDoc(doc(db, 'items', currentItem.id), { imageUrls: [...currentImages], imageUrl: currentImages[0] });
+      await updateDoc(doc(db, 'items', currentItem.id), { imageUrls: [...pendingImages], imageUrl: pendingImages[0] });
       currentItem.imageUrls = [...currentImages];
       currentItem.imageUrl  = currentImages[0];
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: currentImages[0], imageUrls: [...currentImages] } : p);
@@ -684,6 +769,7 @@
     currentItem = allItems.find(p => p.id === id);
     if (!currentItem) return;
     document.getElementById('placeholder').style.display = 'none';
+    document.getElementById('newItemPanel').style.display = 'none';
     document.getElementById('editor').classList.add('show');
     document.getElementById('nameInput').value = currentItem.name || '';
 
@@ -691,6 +777,7 @@
     currentImages = Array.isArray(currentItem.imageUrls) && currentItem.imageUrls.length
       ? [...currentItem.imageUrls]
       : (currentItem.imageUrl ? [currentItem.imageUrl] : []);
+    pendingImages = null;
     renderGallery();
 
     // 價格
@@ -817,13 +904,15 @@
         year:      Number(document.getElementById('yearInput').value) || null,
         pressing:  document.getElementById('pressingInput').value.trim(),
         edition:   document.getElementById('editionInput').value.trim(),
-        imageUrl:  currentImages[0] || null,
-        imageUrls: [...currentImages],
+        imageUrl:  (pendingImages || currentImages)[0] || null,
+        imageUrls: [...(pendingImages || currentImages)],
       };
       Object.keys(updates).forEach(k => updates[k] === null && delete updates[k]);
       await updateDoc(doc(db, 'items', currentItem.id), updates);
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
       currentItem = { ...currentItem, ...updates };
+      currentImages = updates.imageUrls || [];
+      pendingImages = null;
       showMsg('success', '✓ 儲存成功！');
       renderList(allItems);
     } catch (e) { showMsg('error', '儲存失敗：' + e.message); }
@@ -988,6 +1077,8 @@
         artist:      document.getElementById('newArtist').value.trim()    || null,
         year:        Number(document.getElementById('newYear').value)      || null,
         customPrice: Number(document.getElementById('newPrice').value)     || null,
+        cost:        Number(document.getElementById('newCost').value)       || null,
+        internalNote: document.getElementById('newInternalNote') ? document.getElementById('newInternalNote').value.trim() || null : null,
         pressing:    document.getElementById('newPressing').value.trim()   || null,
         edition:     document.getElementById('newEdition').value.trim()    || null,
         condition:   newSelectedCondition                                   || null,
