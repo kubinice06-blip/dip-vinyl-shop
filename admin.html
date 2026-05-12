@@ -221,6 +221,30 @@
       </div>
 
       <div class="section">
+        <div class="section-label">NEW 標籤</div>
+        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">開：強制顯示　關：強制隱藏　自動：7天內自動顯示</div>
+        <div class="quick-btns">
+          <button class="quick-btn" id="badgeOn">開</button>
+          <button class="quick-btn" id="badgeOff">關</button>
+          <button class="quick-btn selected" id="badgeAuto">自動</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">成本資訊</div>
+        <div class="field-row">
+          <div class="field">
+            <label>進貨成本 NT$</label>
+            <input type="number" id="costInput" placeholder="0">
+          </div>
+          <div class="field">
+            <label>備註（內部用）</label>
+            <input type="text" id="internalNoteInput" placeholder="僅後台可見…">
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
         <div class="section-label">曲風 Genre（可多選）</div>
         <div class="genre-grid" id="genreGrid"></div>
         <div class="field">
@@ -697,6 +721,8 @@
     buildConditionGrid();
 
     if (document.getElementById('descInput')) document.getElementById('descInput').value = currentItem.description || '';
+    if (document.getElementById('costInput')) document.getElementById('costInput').value = currentItem.cost || '';
+    if (document.getElementById('internalNoteInput')) document.getElementById('internalNoteInput').value = currentItem.internalNote || '';
 
     // NEW 標籤開關狀態
     const badgeVal = currentItem.showNewBadge;
@@ -768,6 +794,8 @@
         showNewBadge: document.getElementById('badgeOn').classList.contains('selected') ? true
                     : document.getElementById('badgeOff').classList.contains('selected') ? false
                     : null,
+        cost:         Number(document.getElementById('costInput').value) || null,
+        internalNote: document.getElementById('internalNoteInput').value.trim() || null,
         genre:     selectedGenres,
         condition: selectedCondition,
         artist:    document.getElementById('artistInput').value.trim(),
