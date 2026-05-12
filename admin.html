@@ -697,6 +697,28 @@
     buildConditionGrid();
 
     if (document.getElementById('descInput')) document.getElementById('descInput').value = currentItem.description || '';
+
+    // NEW 標籤開關狀態
+    const badgeVal = currentItem.showNewBadge;
+    document.getElementById('badgeOn').classList.toggle('selected', badgeVal === true);
+    document.getElementById('badgeOff').classList.toggle('selected', badgeVal === false);
+    document.getElementById('badgeAuto').classList.toggle('selected', badgeVal === undefined || badgeVal === null);
+
+    document.getElementById('badgeOn').onclick = () => {
+      document.getElementById('badgeOn').classList.add('selected');
+      document.getElementById('badgeOff').classList.remove('selected');
+      document.getElementById('badgeAuto').classList.remove('selected');
+    };
+    document.getElementById('badgeOff').onclick = () => {
+      document.getElementById('badgeOff').classList.add('selected');
+      document.getElementById('badgeOn').classList.remove('selected');
+      document.getElementById('badgeAuto').classList.remove('selected');
+    };
+    document.getElementById('badgeAuto').onclick = () => {
+      document.getElementById('badgeAuto').classList.add('selected');
+      document.getElementById('badgeOn').classList.remove('selected');
+      document.getElementById('badgeOff').classList.remove('selected');
+    };
     document.getElementById('artistInput').value   = currentItem.artist   || '';
     document.getElementById('yearInput').value     = currentItem.year     || '';
     document.getElementById('pressingInput').value = currentItem.pressing || '';
@@ -743,6 +765,9 @@
       const updates = {
         name:        document.getElementById('nameInput').value.trim(),
         description: document.getElementById('descInput') ? document.getElementById('descInput').value.trim() : '',
+        showNewBadge: document.getElementById('badgeOn').classList.contains('selected') ? true
+                    : document.getElementById('badgeOff').classList.contains('selected') ? false
+                    : null,
         genre:     selectedGenres,
         condition: selectedCondition,
         artist:    document.getElementById('artistInput').value.trim(),

@@ -234,9 +234,11 @@
 </div><div class="count-bar">
   <span id="countLabel">Loading…</span>
   <select class="sort-select" id="sortSelect">
-    <option value="default">預設</option>
+    <option value="date-desc">上架日期新→舊</option>
+    <option value="date-asc">上架日期舊→新</option>
     <option value="price-desc">價格高→低</option>
     <option value="price-asc">價格低→高</option>
+    <option value="default">預設</option>
   </select>
 </div>
 
@@ -561,17 +563,17 @@
     return m ? m[1] : null;
   }
 
-  // 判斷是否為新上架（7天內）
+  // 判斷是否顯示 NEW 標籤
   function isNewItem(p) {
+    if (p.showNewBadge === true) return true;
+    if (p.showNewBadge === false) return false;
     if (!p.createdAt) return false;
-    const created = new Date(p.createdAt);
-    const now = new Date();
-    const diff = (now - created) / (1000 * 60 * 60 * 24);
+    const diff = (new Date() - new Date(p.createdAt)) / (1000 * 60 * 60 * 24);
     return diff <= 7;
   }
 
   // 排序
-  let activeSortOrder = 'default';
+  let activeSortOrder = 'date-desc';
   document.getElementById('sortSelect').addEventListener('change', e => {
     activeSortOrder = e.target.value;
     render();
@@ -579,11 +581,15 @@
 
   function sortItems(list) {
     if (activeSortOrder === 'price-desc') {
-      return [...list].sort((a, b) => (Number(b.customPrice) || Number(b.basePrice) || 0) - (Number(a.customPrice) || Number(a.basePrice) || 0));
+      return [...list].sort((a, b) => (Number(b.customPrice)||Number(b.basePrice)||0) - (Number(a.customPrice)||Number(a.basePrice)||0));
     } else if (activeSortOrder === 'price-asc') {
-      return [...list].sort((a, b) => (Number(a.customPrice) || Number(a.basePrice) || 0) - (Number(b.customPrice) || Number(b.basePrice) || 0));
+      return [...list].sort((a, b) => (Number(a.customPrice)||Number(a.basePrice)||0) - (Number(b.customPrice)||Number(b.basePrice)||0));
+    } else if (activeSortOrder === 'date-asc') {
+      return [...list].sort((a, b) => new Date(a.createdAt||0) - new Date(b.createdAt||0));
+    } else {
+      // date-desc 和 default 都照上架日期新→舊
+      return [...list].sort((a, b) => new Date(b.createdAt||0) - new Date(a.createdAt||0));
     }
-    return list;
   }
 
   function renderArchives() {
