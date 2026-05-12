@@ -1312,7 +1312,7 @@
   // + 新增按鈕
   document.getElementById('btnNewItem').addEventListener('click', () => {
     currentItem = null;
-    pendingImages = null;
+    if (typeof pendingImages !== 'undefined') pendingImages = null;
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.remove('show');
     document.getElementById('newItemPanel').style.display = 'block';
