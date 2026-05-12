@@ -236,6 +236,7 @@
           <div class="field">
             <label>進貨成本 NT$</label>
             <input type="number" id="costInput" placeholder="0">
+            <div id="suggestPrice" style="font-size:10px;color:var(--gray);margin-top:5px;letter-spacing:0.04em;"></div>
           </div>
           <div class="field">
             <label>備註（內部用）</label>
@@ -662,6 +663,20 @@
   }
 
   initQuickBtns('pressingBtns', 'pressingInput');
+
+  // 成本 × 1.3 建議售價
+  document.addEventListener('input', e => {
+    if (e.target.id !== 'costInput') return;
+    const cost = Number(e.target.value);
+    const el = document.getElementById('suggestPrice');
+    if (!el) return;
+    if (cost > 0) {
+      const suggest = Math.ceil(cost * 1.3 / 10) * 10;
+      el.textContent = '建議售價：NT$ ' + suggest.toLocaleString() + '（×1.3）';
+    } else {
+      el.textContent = '';
+    }
+  });
   initQuickBtns('editionBtns',  'editionInput');
 
   // ── 開啟編輯 ──
