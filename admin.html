@@ -441,6 +441,13 @@
 <div class="tab-content" id="tab-sort">
   <div class="new-item-wrap">
     <div class="section">
+      <div class="section-label">批次自動帶入試聽連結</div>
+      <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">為所有尚未設定試聽連結的商品自動搜尋 Apple Music 並存入。每筆間隔 0.5 秒以避免限速。</p>
+      <button class="btn-save" id="btnBatchMusic" style="background:var(--green);">⟳ 批次自動帶入試聽連結</button>
+      <div class="msg" id="batchMusicMsg"></div>
+      <div id="batchMusicLog" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:2;max-height:240px;overflow-y:auto;"></div>
+    </div>
+    <div class="section">
       <div class="section-label">拖曳調整商品順序</div>
       <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">拖曳調整後按「儲存順序」。</p>
       <div id="sortList" style="border:1px solid var(--line);min-height:100px;"></div>
@@ -1128,8 +1135,21 @@
         data.sourceId     = selectedImportItem.id;
       }
       Object.keys(data).forEach(k => data[k] === null && delete data[k]);
-      await addDoc(collection(db, 'items'), data);
-      showNewMsg('success', '✓「' + name + '」已新增！');
+      const newRef = await addDoc(collection(db, 'items'), data);
+
+      // 若未手動填音樂連結，自動搜尋 iTunes 並存入
+      if (!data.musicEmbedUrl && (data.artist || data.name)) {
+        showNewMsg('success', '✓「' + name + '」已新增！搜尋試聽連結中…');
+        const foundUrl = await searchItunes(data.artist || '', data.name || '');
+        if (foundUrl) {
+          await updateDoc(doc(db, 'items', newRef.id), { musicEmbedUrl: foundUrl });
+          showNewMsg('success', '✓「' + name + '」已新增，並自動帶入試聽連結！');
+        } else {
+          showNewMsg('success', '✓「' + name + '」已新增（未找到試聽連結，可稍後在編輯頁補上）。');
+        }
+      } else {
+        showNewMsg('success', '✓「' + name + '」已新增！');
+      }
 
       // 重設表單
       selectedImportItem = null;
@@ -1514,6 +1534,58 @@
       msgEl.className = 'msg error show';
       msgEl.textContent = '儲存失敗：' + e.message;
     } finally { btn.disabled = false; }
+  });
+
+  // ── 批次自動帶入試聽連結 ──
+  document.getElementById('btnBatchMusic').addEventListener('click', async () => {
+    const btn = document.getElementById('btnBatchMusic');
+    const msg = document.getElementById('batchMusicMsg');
+    const log = document.getElementById('batchMusicLog');
+    btn.disabled = true;
+    msg.className = 'msg success show';
+    msg.textContent = '搜尋中，請勿關閉頁面…';
+    log.innerHTML = '';
+
+    try {
+      const snap = await getDocs(collection(db, 'items'));
+      const targets = snap.docs
+        .map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => p.status === '庫存' && !p.musicEmbedUrl && (p.artist || p.name));
+
+      if (!targets.length) {
+        msg.textContent = '✓ 所有商品都已有試聽連結！';
+        btn.disabled = false;
+        return;
+      }
+
+      let done = 0, found = 0;
+      for (const p of targets) {
+        log.innerHTML += `<div>🔍 搜尋中：${p.name || ''} — ${p.artist || ''}</div>`;
+        log.scrollTop = log.scrollHeight;
+        const url = await searchItunes(p.artist || '', p.name || '');
+        if (url) {
+          await updateDoc(doc(db, 'items', p.id), { musicEmbedUrl: url });
+          found++;
+          log.innerHTML += `<div style="color:var(--green);">✓ 已帶入：${p.name || ''}</div>`;
+        } else {
+          log.innerHTML += `<div style="color:var(--gray);">— 未找到：${p.name || ''}</div>`;
+        }
+        done++;
+        msg.textContent = `進度 ${done}/${targets.length}，已帶入 ${found} 筆…`;
+        log.scrollTop = log.scrollHeight;
+        // 間隔 500ms 避免 iTunes API 限速
+        await new Promise(r => setTimeout(r, 500));
+      }
+
+      msg.textContent = `✓ 完成！共處理 ${done} 筆，成功帶入 ${found} 筆。`;
+      allItems = [];
+      await loadItems();
+    } catch(e) {
+      msg.className = 'msg error show';
+      msg.textContent = '批次失敗：' + e.message;
+    } finally {
+      btn.disabled = false;
+    }
   });
 
   loadItems();

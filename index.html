@@ -557,78 +557,24 @@
     return `<iframe src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
   }
 
-  async function fetchItunes(q, country, timeoutMs) {
-    const ctrl = new AbortController();
-    const tid = setTimeout(() => ctrl.abort(), timeoutMs);
-    try {
-      const res = await fetch(
-        `https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=8&country=${country}`,
-        { signal: ctrl.signal }
-      );
-      clearTimeout(tid);
-      if (!res.ok) return null;
-      return await res.json();
-    } catch { clearTimeout(tid); return null; }
-  }
-
-  async function searchItunes(artist, name) {
-    const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
-    const artistLow = (artist || '').toLowerCase();
-
-    function pick(data) {
-      if (!data || !data.results || !data.results.length) return null;
-      const match = artistLow
-        ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artistLow))
-        : null;
-      const result = match || data.results[0];
-      return result.collectionViewUrl || result.trackViewUrl || null;
-    }
-
-    // 優先用 US（目錄最廣）
-    let url = pick(await fetchItunes(q, 'US', 7000));
-    if (url) return url;
-
-    // 找不到補搜 JP（日本黑膠較多）
-    url = pick(await fetchItunes(q, 'JP', 5000));
-    if (url) return url;
-
-    // 最後只用藝人名搜 US（找到任何專輯也好）
-    if (artist) {
-      const qa = encodeURIComponent(artist);
-      url = pick(await fetchItunes(qa, 'US', 4000));
-    }
-    return url;
-  }
-
-  async function renderMusicSection(p) {
+  // 前台只讀 Firestore 存的 musicEmbedUrl，不做 live API 搜尋
+  // （搜尋在後台執行並存入，確保手機/電腦行為一致）
+  function renderMusicSection(p) {
     const musicEl = document.getElementById('modalMusic');
     if (!musicEl) return;
     const query = encodeURIComponent([(p.artist || ''), (p.name || '')].filter(Boolean).join(' '));
-    if (!query) return;
 
     const label = `<div class="modal-music-label">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
       試聽 Listen
     </div>`;
 
-    // 已手動設定 → 直接顯示
-    const stored = toEmbedUrl(p.musicEmbedUrl);
-    if (stored) {
-      musicEl.innerHTML = `<div class="modal-music">${label}${buildEmbed(stored)}</div>`;
-      return;
-    }
-
-    // 顯示 loading，背景搜尋 iTunes
-    musicEl.innerHTML = `<div class="modal-music">${label}<div style="font-size:10px;color:var(--gray);">搜尋中…</div></div>`;
-    const itunesUrl = await searchItunes(p.artist, p.name);
-    // 確認 modal 還開著（使用者可能已關閉）
-    if (!document.getElementById('modalBg').classList.contains('open')) return;
-    const embedUrl = toEmbedUrl(itunesUrl);
+    const embedUrl = toEmbedUrl(p.musicEmbedUrl);
     if (embedUrl) {
       musicEl.innerHTML = `<div class="modal-music">${label}${buildEmbed(embedUrl)}</div>`;
-    } else {
+    } else if (query) {
       musicEl.innerHTML = `<div class="modal-music">${label}
-        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">未找到自動結果，可在以下平台搜尋：</div>
+        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">在以下平台搜尋試聽：</div>
         <div class="modal-music-search">
           <a class="music-search-btn" href="https://open.spotify.com/search/${query}" target="_blank" rel="noopener">Spotify</a>
           <a class="music-search-btn" href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener">YouTube</a>
