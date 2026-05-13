@@ -368,12 +368,15 @@
 
       <div class="section">
         <div class="section-label">試聽音樂</div>
-        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">貼上 Spotify、YouTube 或 Apple Music 連結，系統自動轉換為嵌入播放器。</div>
         <div class="field">
-          <label>音樂連結</label>
-          <input type="text" id="musicInput" placeholder="https://open.spotify.com/track/… 或 youtube.com/watch?v=…">
+          <label>音樂連結（Spotify / Apple Music / YouTube）</label>
+          <input type="text" id="musicInput" placeholder="貼上連結，或點「自動帶入」…">
         </div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;" id="musicSearchBtns"></div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+          <button class="quick-btn" id="btnAutoMusic" style="border-color:var(--black);color:var(--black);font-weight:700;">⟳ 自動帶入</button>
+          <span style="width:1px;background:var(--line);margin:0 2px;"></span>
+          <div id="musicSearchBtns" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+        </div>
         <div id="musicPreview" style="margin-bottom:8px;"></div>
         <button class="btn-save" id="btnSaveMusic" style="margin-top:0;">儲存試聽連結</button>
         <div class="msg" id="musicMsg"></div>
@@ -1412,6 +1415,46 @@
       <a href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 YouTube</a>
       <a href="https://music.apple.com/search?term=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Apple Music</a>`;
   }
+
+  async function searchItunes(artist, name) {
+    const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
+    const res = await fetch(`https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=5`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data.results || !data.results.length) return null;
+    const match = artist
+      ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artist.toLowerCase()))
+      : null;
+    const result = match || data.results[0];
+    return result.collectionViewUrl || result.trackViewUrl || null;
+  }
+
+  document.getElementById('btnAutoMusic').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const btn = document.getElementById('btnAutoMusic');
+    btn.textContent = '搜尋中…';
+    btn.disabled = true;
+    try {
+      const url = await searchItunes(currentItem.artist, currentItem.name);
+      if (url) {
+        document.getElementById('musicInput').value = url;
+        renderMusicPreview(url);
+        const msg = document.getElementById('musicMsg');
+        msg.className = 'msg success show';
+        msg.textContent = '✓ 已找到 Apple Music 結果，確認後點「儲存試聽連結」。';
+      } else {
+        const msg = document.getElementById('musicMsg');
+        msg.className = 'msg error show';
+        msg.textContent = '找不到結果，請手動貼上連結。';
+      }
+    } catch(e) {
+      document.getElementById('musicMsg').className = 'msg error show';
+      document.getElementById('musicMsg').textContent = '搜尋失敗：' + e.message;
+    } finally {
+      btn.textContent = '⟳ 自動帶入';
+      btn.disabled = false;
+    }
+  });
 
   document.getElementById('musicInput').addEventListener('input', e => renderMusicPreview(e.target.value.trim()));
 

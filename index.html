@@ -543,36 +543,66 @@
     return null;
   }
 
-  function renderMusicSection(p) {
+  function buildEmbed(embedUrl) {
+    const isSpotify = embedUrl.includes('spotify.com/embed');
+    const isAM = embedUrl.includes('embed.music.apple.com');
+    const h = isSpotify ? 352 : isAM ? 450 : 200;
+    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
+    return `<iframe src="${embedUrl}" height="${h}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+  }
+
+  async function searchItunes(artist, name) {
+    try {
+      const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
+      const res = await fetch(`https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=5`);
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (!data.results || !data.results.length) return null;
+      // 優先選出 artistName 匹配的
+      const match = artist
+        ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artist.toLowerCase()))
+        : null;
+      const result = match || data.results[0];
+      return result.collectionViewUrl || result.trackViewUrl || null;
+    } catch { return null; }
+  }
+
+  async function renderMusicSection(p) {
     const musicEl = document.getElementById('modalMusic');
     if (!musicEl) return;
     const query = encodeURIComponent([(p.artist || ''), (p.name || '')].filter(Boolean).join(' '));
-    const embedUrl = toEmbedUrl(p.musicEmbedUrl);
+    if (!query) return;
 
-    let html = `<div class="modal-music">
-      <div class="modal-music-label">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
-        試聽 Listen
-      </div>`;
+    const label = `<div class="modal-music-label">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+      試聽 Listen
+    </div>`;
 
-    if (embedUrl) {
-      const isSpotify = embedUrl.includes('spotify.com/embed');
-      const isYT = embedUrl.includes('youtube.com/embed');
-      const isAM = embedUrl.includes('embed.music.apple.com');
-      const h = isSpotify ? 352 : isAM ? 450 : 200;
-      const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
-      html += `<iframe src="${embedUrl}" height="${h}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
-    } else if (query) {
-      html += `<div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">在以下平台搜尋試聽：</div>
-      <div class="modal-music-search">
-        <a class="music-search-btn" href="https://open.spotify.com/search/${query}" target="_blank" rel="noopener">Spotify</a>
-        <a class="music-search-btn" href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener">YouTube</a>
-        <a class="music-search-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">Apple Music</a>
-      </div>`;
+    // 已手動設定 → 直接顯示
+    const stored = toEmbedUrl(p.musicEmbedUrl);
+    if (stored) {
+      musicEl.innerHTML = `<div class="modal-music">${label}${buildEmbed(stored)}</div>`;
+      return;
     }
 
-    html += `</div>`;
-    musicEl.innerHTML = html;
+    // 顯示 loading，背景搜尋 iTunes
+    musicEl.innerHTML = `<div class="modal-music">${label}<div style="font-size:10px;color:var(--gray);">搜尋中…</div></div>`;
+    const itunesUrl = await searchItunes(p.artist, p.name);
+    // 確認 modal 還開著（使用者可能已關閉）
+    if (!document.getElementById('modalBg').classList.contains('open')) return;
+    const embedUrl = toEmbedUrl(itunesUrl);
+    if (embedUrl) {
+      musicEl.innerHTML = `<div class="modal-music">${label}${buildEmbed(embedUrl)}</div>`;
+    } else {
+      musicEl.innerHTML = `<div class="modal-music">${label}
+        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">未找到自動結果，可在以下平台搜尋：</div>
+        <div class="modal-music-search">
+          <a class="music-search-btn" href="https://open.spotify.com/search/${query}" target="_blank" rel="noopener">Spotify</a>
+          <a class="music-search-btn" href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener">YouTube</a>
+          <a class="music-search-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">Apple Music</a>
+        </div>
+      </div>`;
+    }
   }
 
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
