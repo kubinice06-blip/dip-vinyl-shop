@@ -1420,17 +1420,40 @@
       <a href="https://music.apple.com/search?term=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Apple Music</a>`;
   }
 
+  async function fetchItunes(q, country, timeoutMs) {
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const res = await fetch(
+        `https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=8&country=${country}`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(tid);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch { clearTimeout(tid); return null; }
+  }
+
   async function searchItunes(artist, name) {
     const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
-    const res = await fetch(`https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=5`);
-    if (!res.ok) return null;
-    const data = await res.json();
-    if (!data.results || !data.results.length) return null;
-    const match = artist
-      ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artist.toLowerCase()))
-      : null;
-    const result = match || data.results[0];
-    return result.collectionViewUrl || result.trackViewUrl || null;
+    const artistLow = (artist || '').toLowerCase();
+    function pick(data) {
+      if (!data || !data.results || !data.results.length) return null;
+      const match = artistLow
+        ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artistLow))
+        : null;
+      const result = match || data.results[0];
+      return result.collectionViewUrl || result.trackViewUrl || null;
+    }
+    let url = pick(await fetchItunes(q, 'US', 7000));
+    if (url) return url;
+    url = pick(await fetchItunes(q, 'JP', 5000));
+    if (url) return url;
+    if (artist) {
+      const qa = encodeURIComponent(artist);
+      url = pick(await fetchItunes(qa, 'US', 4000));
+    }
+    return url;
   }
 
   document.getElementById('btnAutoMusic').addEventListener('click', async () => {
