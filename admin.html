@@ -947,6 +947,15 @@
         imageUrl:  (pendingImages || currentImages)[0] || null,
         imageUrls: [...(pendingImages || currentImages)],
       };
+      // 同步 NT$ 成本至 basePrice/baseCurrency，讓進貨管理頁面能顯示成本
+      // 只在商品沒有外幣進貨價時才覆寫（避免蓋掉從進貨管理頁面匯入的日圓/美金資料）
+      if (updates.cost) {
+        const existingCurrency = currentItem.baseCurrency;
+        if (!existingCurrency || existingCurrency === 'TWD') {
+          updates.basePrice    = updates.cost;
+          updates.baseCurrency = 'TWD';
+        }
+      }
       Object.keys(updates).forEach(k => updates[k] === null && delete updates[k]);
       await updateDoc(doc(db, 'items', currentItem.id), updates);
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
@@ -1133,6 +1142,11 @@
         data.basePrice    = selectedImportItem.basePrice    || null;
         data.baseCurrency = selectedImportItem.baseCurrency || null;
         data.sourceId     = selectedImportItem.id;
+      } else if (data.cost) {
+        // 若非從進貨管理頁面匯入，將 NT$ 成本同步至 basePrice/baseCurrency
+        // 讓進貨管理頁面（price-app）能正確顯示成本（TWD 匯率固定為 1）
+        data.basePrice    = data.cost;
+        data.baseCurrency = 'TWD';
       }
       Object.keys(data).forEach(k => data[k] === null && delete data[k]);
       const newRef = await addDoc(collection(db, 'items'), data);
