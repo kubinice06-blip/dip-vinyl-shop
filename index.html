@@ -140,6 +140,15 @@
     .modal-row-value { font-size: 11px; font-weight: 700; text-align: right; line-height: 1.5; }
     .modal-note { margin-top: 20px; font-size: 10px; color: var(--gray); line-height: 1.9; }
 
+    /* 音樂試聽 */
+    .modal-music { border-top: 1px solid var(--line); padding: 16px 20px; }
+    .modal-music-label { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .modal-music-label svg { flex-shrink: 0; }
+    .modal-music iframe { display: block; border: none; width: 100%; }
+    .modal-music-search { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .music-search-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; padding: 5px 12px; cursor: pointer; color: var(--gray); text-decoration: none; display: inline-block; transition: all 0.15s; }
+    .music-search-btn:hover { border-color: var(--black); color: var(--black); }
+
     /* 購物車 */
     .cart-btn { position: fixed; bottom: 140px; right: 24px; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; padding: 12px 18px; cursor: pointer; z-index: 150; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s; }
     .cart-btn:hover { opacity: 0.8; }
@@ -258,6 +267,7 @@
       <div class="modal-img-wrap" id="modalImg"></div>
       <div class="modal-detail" id="modalDetail"></div>
     </div>
+    <div id="modalMusic"></div>
   </div>
 </div>
 
@@ -511,8 +521,58 @@
       <div class="modal-note" style="margin-top:12px;">如有購買意願，請聯絡我們。<br>Contact us to purchase this item.</div>
     `;
 
+    renderMusicSection(p);
     document.getElementById('modalBg').classList.add('open');
     document.body.style.overflow = 'hidden';
+  }
+
+  // ── 音樂試聽 ──
+  function toEmbedUrl(url) {
+    if (!url) return null;
+    // Spotify
+    const sp = url.match(/open\.spotify\.com\/(track|album|playlist|artist)\/([a-zA-Z0-9]+)/);
+    if (sp) return `https://open.spotify.com/embed/${sp[1]}/${sp[2]}?utm_source=generator`;
+    // YouTube / YouTube Music
+    const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|music\.youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/);
+    if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+    // Apple Music
+    const am = url.match(/music\.apple\.com\/([^?#]+)/);
+    if (am) return `https://embed.music.apple.com/${am[1]}`;
+    // 若已是 embed URL 則直接回傳
+    if (/open\.spotify\.com\/embed|youtube\.com\/embed|embed\.music\.apple\.com/.test(url)) return url;
+    return null;
+  }
+
+  function renderMusicSection(p) {
+    const musicEl = document.getElementById('modalMusic');
+    if (!musicEl) return;
+    const query = encodeURIComponent([(p.artist || ''), (p.name || '')].filter(Boolean).join(' '));
+    const embedUrl = toEmbedUrl(p.musicEmbedUrl);
+
+    let html = `<div class="modal-music">
+      <div class="modal-music-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+        試聽 Listen
+      </div>`;
+
+    if (embedUrl) {
+      const isSpotify = embedUrl.includes('spotify.com/embed');
+      const isYT = embedUrl.includes('youtube.com/embed');
+      const isAM = embedUrl.includes('embed.music.apple.com');
+      const h = isSpotify ? 152 : isAM ? 175 : 200;
+      const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
+      html += `<iframe src="${embedUrl}" height="${h}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+    } else if (query) {
+      html += `<div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">在以下平台搜尋試聽：</div>
+      <div class="modal-music-search">
+        <a class="music-search-btn" href="https://open.spotify.com/search/${query}" target="_blank" rel="noopener">Spotify</a>
+        <a class="music-search-btn" href="https://www.youtube.com/results?search_query=${query}" target="_blank" rel="noopener">YouTube</a>
+        <a class="music-search-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">Apple Music</a>
+      </div>`;
+    }
+
+    html += `</div>`;
+    musicEl.innerHTML = html;
   }
 
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
@@ -523,6 +583,7 @@
   function closeModal() {
     document.getElementById('modalBg').classList.remove('open');
     document.body.style.overflow = '';
+    document.getElementById('modalMusic').innerHTML = '';
   }
 
   // 主標籤切換

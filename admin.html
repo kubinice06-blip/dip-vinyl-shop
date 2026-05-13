@@ -261,6 +261,11 @@
         <div class="field"><label>描述</label>
           <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
         </div>
+        <div class="field">
+          <label>試聽音樂連結（選填）</label>
+          <input type="text" id="newMusicInput" placeholder="https://open.spotify.com/track/… 或 youtube.com/watch?v=…">
+          <div id="newMusicPreview" style="margin-top:8px;"></div>
+        </div>
         <div class="field"><label>商品照片</label>
           <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
             <input type="file" id="newFileInput" accept="image/*" multiple>
@@ -359,6 +364,19 @@
             <input type="number" id="yearInput" placeholder="例：1959" min="1900" max="2099">
           </div>
         </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">試聽音樂</div>
+        <div style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">貼上 Spotify、YouTube 或 Apple Music 連結，系統自動轉換為嵌入播放器。</div>
+        <div class="field">
+          <label>音樂連結</label>
+          <input type="text" id="musicInput" placeholder="https://open.spotify.com/track/… 或 youtube.com/watch?v=…">
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;" id="musicSearchBtns"></div>
+        <div id="musicPreview" style="margin-bottom:8px;"></div>
+        <button class="btn-save" id="btnSaveMusic" style="margin-top:0;">儲存試聽連結</button>
+        <div class="msg" id="musicMsg"></div>
       </div>
 
       <div class="section">
@@ -856,6 +874,16 @@
     syncQuickBtns('pressingBtns', currentItem.pressing);
     syncQuickBtns('editionBtns',  currentItem.edition);
 
+    // 試聽音樂
+    const musicInput = document.getElementById('musicInput');
+    if (musicInput) {
+      musicInput.value = currentItem.musicEmbedUrl || '';
+      renderMusicPreview(currentItem.musicEmbedUrl || '');
+      updateMusicSearchBtns();
+      const musicMsg = document.getElementById('musicMsg');
+      if (musicMsg) musicMsg.className = 'msg';
+    }
+
     document.getElementById('progressWrap').classList.remove('show');
     document.getElementById('progressBar').style.width = '0';
     document.getElementById('msgBox').className = 'msg';
@@ -1085,9 +1113,10 @@
         condition:   newSelectedCondition                                   || null,
         genre:       newSelectedGenres.length ? newSelectedGenres           : null,
         description: document.getElementById('newDesc').value.trim()       || null,
-        imageUrl:    newImages[0]                                           || null,
-        imageUrls:   newImages.length ? [...newImages]                      : null,
-        createdAt:   new Date().toISOString(),
+        imageUrl:      newImages[0]                                              || null,
+        imageUrls:     newImages.length ? [...newImages]                         : null,
+        musicEmbedUrl: document.getElementById('newMusicInput').value.trim()     || null,
+        createdAt:     new Date().toISOString(),
       };
       if (selectedImportItem) {
         data.basePrice    = selectedImportItem.basePrice    || null;
@@ -1101,7 +1130,8 @@
       // 重設表單
       selectedImportItem = null;
       document.getElementById('importSelected').style.display = 'none';
-      ['newName','newArtist','newYear','newPrice','newPressing','newEdition','newDesc'].forEach(id => document.getElementById(id).value = '');
+      ['newName','newArtist','newYear','newPrice','newPressing','newEdition','newDesc','newMusicInput'].forEach(id => { const el = document.getElementById(id); if(el) el.value = ''; });
+      const nmp = document.getElementById('newMusicPreview'); if(nmp) nmp.innerHTML = '';
       document.getElementById('newItemType').value = 'Used';
       newSelectedGenres = [];
       newSelectedCondition = '';
@@ -1317,10 +1347,11 @@
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.remove('show');
     document.getElementById('newItemPanel').style.display = 'block';
-    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc'].forEach(id => {
+    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicInput'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });
+    const nmp2 = document.getElementById('newMusicPreview'); if(nmp2) nmp2.innerHTML = '';
     const ini = document.getElementById('newInternalNote');
     if (ini) ini.value = '';
     const nsp = document.getElementById('newSuggestPrice');
@@ -1343,6 +1374,75 @@
     const el = document.getElementById('newSuggestPrice');
     if (!el) return;
     el.textContent = cost > 0 ? '建議售價：NT$ ' + (Math.ceil(cost * 1.3 / 10) * 10).toLocaleString() + '（×1.3）' : '';
+  });
+
+  // ── 試聽音樂 ──
+  function toEmbedUrl(url) {
+    if (!url) return null;
+    const sp = url.match(/open\.spotify\.com\/(track|album|playlist|artist)\/([a-zA-Z0-9]+)/);
+    if (sp) return `https://open.spotify.com/embed/${sp[1]}/${sp[2]}?utm_source=generator`;
+    const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|music\.youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/);
+    if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+    const am = url.match(/music\.apple\.com\/([^?#]+)/);
+    if (am) return `https://embed.music.apple.com/${am[1]}`;
+    if (/open\.spotify\.com\/embed|youtube\.com\/embed|embed\.music\.apple\.com/.test(url)) return url;
+    return null;
+  }
+
+  function renderMusicPreview(url) {
+    const el = document.getElementById('musicPreview');
+    if (!el) return;
+    const embed = toEmbedUrl(url);
+    if (!embed) { el.innerHTML = url ? '<div style="font-size:10px;color:var(--red);margin-top:4px;">無法辨識連結格式，請貼上 Spotify / YouTube / Apple Music 連結。</div>' : ''; return; }
+    const isSpotify = embed.includes('spotify.com/embed');
+    const isAM = embed.includes('embed.music.apple.com');
+    const h = isSpotify ? 152 : isAM ? 175 : 200;
+    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
+    el.innerHTML = `<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 已辨識，預覽如下：</div>
+      <iframe src="${embed}" width="100%" height="${h}" style="border:none;display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+  }
+
+  function updateMusicSearchBtns() {
+    const el = document.getElementById('musicSearchBtns');
+    if (!el || !currentItem) return;
+    const q = encodeURIComponent([(currentItem.artist || ''), (currentItem.name || '')].filter(Boolean).join(' '));
+    el.innerHTML = `
+      <a href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Spotify</a>
+      <a href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 YouTube</a>
+      <a href="https://music.apple.com/search?term=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Apple Music</a>`;
+  }
+
+  document.getElementById('musicInput').addEventListener('input', e => renderMusicPreview(e.target.value.trim()));
+
+  document.getElementById('newMusicInput').addEventListener('input', e => {
+    const url = e.target.value.trim();
+    const el = document.getElementById('newMusicPreview');
+    if (!el) return;
+    const embed = toEmbedUrl(url);
+    if (!embed) { el.innerHTML = url ? '<div style="font-size:10px;color:var(--red);">無法辨識連結格式</div>' : ''; return; }
+    const isSpotify = embed.includes('spotify.com/embed');
+    const isAM = embed.includes('embed.music.apple.com');
+    const h = isSpotify ? 152 : isAM ? 175 : 200;
+    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
+    el.innerHTML = `<iframe src="${embed}" width="100%" height="${h}" style="border:none;display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+  });
+
+  document.getElementById('btnSaveMusic').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const url = document.getElementById('musicInput').value.trim();
+    const btn = document.getElementById('btnSaveMusic');
+    const msgEl = document.getElementById('musicMsg');
+    btn.disabled = true;
+    try {
+      await updateDoc(doc(db, 'items', currentItem.id), { musicEmbedUrl: url || null });
+      currentItem.musicEmbedUrl = url || null;
+      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, musicEmbedUrl: url || null } : p);
+      msgEl.className = 'msg success show';
+      msgEl.textContent = url ? '✓ 試聽連結已儲存！' : '✓ 已清除試聽連結。';
+    } catch(e) {
+      msgEl.className = 'msg error show';
+      msgEl.textContent = '儲存失敗：' + e.message;
+    } finally { btn.disabled = false; }
   });
 
   loadItems();
