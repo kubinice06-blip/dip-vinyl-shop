@@ -441,6 +441,12 @@
 <div class="tab-content" id="tab-sort">
   <div class="new-item-wrap">
     <div class="section">
+      <div class="section-label">批次同步成本到進貨管理系統</div>
+      <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">將所有已設定「進貨成本（NT$）」但尚未同步的商品，補寫 basePrice/baseCurrency 欄位，讓進貨管理頁面能正確顯示成本。</p>
+      <button class="btn-save" id="btnBatchSyncCost" style="background:var(--accent);">⟳ 批次同步成本到進貨管理系統</button>
+      <div class="msg" id="batchSyncCostMsg"></div>
+    </div>
+    <div class="section">
       <div class="section-label">批次自動帶入試聽連結</div>
       <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">為所有尚未設定試聽連結的商品自動搜尋 Apple Music 並存入。每筆間隔 0.5 秒以避免限速。</p>
       <button class="btn-save" id="btnBatchMusic" style="background:var(--green);">⟳ 批次自動帶入試聽連結</button>
@@ -1592,6 +1598,49 @@
       }
 
       msg.textContent = `✓ 完成！共處理 ${done} 筆，成功帶入 ${found} 筆。`;
+      allItems = [];
+      await loadItems();
+    } catch(e) {
+      msg.className = 'msg error show';
+      msg.textContent = '批次失敗：' + e.message;
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  // ── 批次同步成本到進貨管理系統 ──
+  document.getElementById('btnBatchSyncCost').addEventListener('click', async () => {
+    const btn = document.getElementById('btnBatchSyncCost');
+    const msg = document.getElementById('batchSyncCostMsg');
+    btn.disabled = true;
+    msg.className = 'msg success show';
+    msg.textContent = '讀取商品中…';
+
+    try {
+      const snap = await getDocs(collection(db, 'items'));
+      // 找出有 cost 但沒有外幣 basePrice 的商品
+      const targets = snap.docs
+        .map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => p.cost && (!p.baseCurrency || p.baseCurrency === 'TWD') && (!p.basePrice || p.basePrice !== p.cost));
+
+      if (!targets.length) {
+        msg.textContent = '✓ 所有商品的成本都已同步！';
+        btn.disabled = false;
+        return;
+      }
+
+      msg.textContent = `正在同步 ${targets.length} 筆商品…`;
+      let done = 0;
+      for (const p of targets) {
+        await updateDoc(doc(db, 'items', p.id), {
+          basePrice: p.cost,
+          baseCurrency: 'TWD',
+        });
+        done++;
+        msg.textContent = `進度 ${done}/${targets.length}…`;
+      }
+
+      msg.textContent = `✓ 完成！已同步 ${done} 筆商品的進貨成本。`;
       allItems = [];
       await loadItems();
     } catch(e) {
