@@ -586,7 +586,8 @@
   ];
 
   let allItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
-  let currentImages = []; // 多張照片陣列
+  let currentImages = [];
+  let pendingImages = null;
 
   // ── 載入商品 ──
   async function loadItems() {
@@ -1396,7 +1397,7 @@
     if (!embed) { el.innerHTML = url ? '<div style="font-size:10px;color:var(--red);margin-top:4px;">無法辨識連結格式，請貼上 Spotify / YouTube / Apple Music 連結。</div>' : ''; return; }
     const isSpotify = embed.includes('spotify.com/embed');
     const isAM = embed.includes('embed.music.apple.com');
-    const h = isSpotify ? 152 : isAM ? 175 : 200;
+    const h = isSpotify ? 352 : isAM ? 450 : 200;
     const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
     el.innerHTML = `<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 已辨識，預覽如下：</div>
       <iframe src="${embed}" width="100%" height="${h}" style="border:none;display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;

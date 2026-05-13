@@ -559,7 +559,7 @@
       const isSpotify = embedUrl.includes('spotify.com/embed');
       const isYT = embedUrl.includes('youtube.com/embed');
       const isAM = embedUrl.includes('embed.music.apple.com');
-      const h = isSpotify ? 152 : isAM ? 175 : 200;
+      const h = isSpotify ? 352 : isAM ? 450 : 200;
       const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
       html += `<iframe src="${embedUrl}" height="${h}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
     } else if (query) {
