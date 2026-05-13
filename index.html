@@ -547,18 +547,29 @@
     const isSpotify = embedUrl.includes('spotify.com/embed');
     const isAM = embedUrl.includes('embed.music.apple.com');
     const h = isSpotify ? 352 : isAM ? 450 : 200;
-    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
-    return `<iframe src="${embedUrl}" height="${h}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+    if (isAM) {
+      // Apple 官方格式：allow 加 * 手機才能取得權限；不加 loading=lazy（modal 動態插入時手機會略過不載）
+      return `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embedUrl}"></iframe>`;
+    }
+    if (isSpotify) {
+      return `<iframe style="border-radius:12px;" src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    return `<iframe src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
   }
 
   async function searchItunes(artist, name) {
     try {
       const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
-      const res = await fetch(`https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=5`);
+      const ctrl = new AbortController();
+      const tid = setTimeout(() => ctrl.abort(), 8000);
+      const res = await fetch(
+        `https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=5`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(tid);
       if (!res.ok) return null;
       const data = await res.json();
       if (!data.results || !data.results.length) return null;
-      // 優先選出 artistName 匹配的
       const match = artist
         ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artist.toLowerCase()))
         : null;

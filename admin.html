@@ -1401,9 +1401,13 @@
     const isSpotify = embed.includes('spotify.com/embed');
     const isAM = embed.includes('embed.music.apple.com');
     const h = isSpotify ? 352 : isAM ? 450 : 200;
-    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
-    el.innerHTML = `<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 已辨識，預覽如下：</div>
-      <iframe src="${embed}" width="100%" height="${h}" style="border:none;display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+    let iframe;
+    if (isAM) {
+      iframe = `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embed}"></iframe>`;
+    } else {
+      iframe = `<iframe src="${embed}" width="100%" height="${h}" frameborder="0" style="display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    el.innerHTML = `<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 已辨識，預覽如下：</div>${iframe}`;
   }
 
   function updateMusicSearchBtns() {
