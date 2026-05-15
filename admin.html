@@ -362,6 +362,20 @@
       </div>
 
       <div class="section">
+        <div class="section-label">Discogs 參考價格</div>
+        <button id="btnDiscogsSearch" style="width:100%;background:none;border:1px solid var(--line);padding:8px 14px;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;color:var(--black);margin-bottom:10px;">搜尋 Discogs 版本</button>
+        <div id="discogsResults" style="display:none;border:1px solid var(--line);max-height:280px;overflow-y:auto;margin-bottom:10px;"></div>
+        <div id="discogsSelected" style="display:none;border:1px solid var(--line);padding:12px;background:#fff;font-size:11px;margin-bottom:10px;">
+          <div id="discogsTitle" style="font-weight:700;font-size:11px;margin-bottom:8px;"></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">掛賣數量</span><span id="discogsCount"></span></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最低價</span><span id="discogsLow"></span></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">中位數</span><span id="discogsMid"></span></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最高價</span><span id="discogsHigh"></span></div>
+          <div style="margin-top:8px;"><a id="discogsLink" href="#" target="_blank" rel="noopener" style="color:var(--black);font-size:10px;letter-spacing:0.06em;">→ 查看 Discogs 頁面</a></div>
+        </div>
+      </div>
+
+      <div class="section">
         <div class="field">
           <label>版本 Pressing</label>
           <div class="quick-btns" id="pressingBtns">
@@ -1350,24 +1364,31 @@
   const DISCOGS_TOKEN = 'siguOwNcNYVcfELjPfXJDKdQZdyaVLVnZWKKkewt';
 
   document.addEventListener('click', async (e) => {
+    // 事件委派：結果列表「選擇」按鈕
+    const selectBtn = e.target.closest('#discogsResults .import-row button');
+    if (selectBtn) {
+      const row = selectBtn.closest('.import-row');
+      await loadDiscogsPrice(row.dataset.id, row.dataset.url, row.dataset.title);
+      return;
+    }
+
     if (!e.target.closest('#btnDiscogsSearch')) return;
-    const _this = e.target.closest('#btnDiscogsSearch');
     if (!currentItem) return;
-    const artist = (currentItem.artist || document.getElementById('artistInput').value).trim();
-    const name   = (currentItem.name   || document.getElementById('nameInput').value).trim();
-    const year   = (currentItem.year   || document.getElementById('yearInput').value);
+
+    const artist   = (currentItem.artist || document.getElementById('artistInput').value).trim();
+    const name     = (currentItem.name   || document.getElementById('nameInput').value).trim();
+    const year     = (currentItem.year   || document.getElementById('yearInput').value);
     const pressing = document.getElementById('pressingInput').value.trim();
 
     if (!name) { showMsg('error', '請先填入專輯名稱'); return; }
 
-    const btn = _this;
+    const btn = e.target.closest('#btnDiscogsSearch');
     btn.textContent = '搜尋中…';
     btn.disabled = true;
     document.getElementById('discogsResults').style.display = 'none';
     document.getElementById('discogsSelected').style.display = 'none';
 
     try {
-      // 組合搜尋字串
       const country = pressing.includes('JP') ? 'Japan'
         : pressing.includes('US') ? 'US'
         : pressing.includes('UK') ? 'UK' : '';
@@ -1376,13 +1397,10 @@
       if (artist) query += ' ' + artist;
 
       const params = new URLSearchParams({
-        q: query,
-        type: 'release',
-        format: 'vinyl',
-        token: DISCOGS_TOKEN,
-        per_page: 8,
+        q: query, type: 'release', format: 'vinyl',
+        token: DISCOGS_TOKEN, per_page: 8,
       });
-      if (year) params.append('year', year);
+      if (year)    params.append('year', year);
       if (country) params.append('country', country);
 
       const res = await fetch('https://api.discogs.com/database/search?' + params);
@@ -1397,26 +1415,21 @@
       }
 
       document.getElementById('discogsResults').style.display = 'block';
-      document.getElementById('discogsResults').innerHTML = results.map(r => `
-        <div class="import-row" data-id="${r.id}" data-url="https://www.discogs.com${r.uri}" style="display:flex;gap:10px;align-items:center;">
-          ${r.thumb ? '<img src="' + r.thumb + '" style="width:40px;height:40px;object-fit:cover;flex-shrink:0;">' : '<div style="width:40px;height:40px;background:var(--line);flex-shrink:0;"></div>'}
-          <div style="flex:1;min-width:0;">
-            <div style="font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${r.title || ''}</div>
-            <div style="font-size:10px;color:var(--gray);">${r.year || ''} ${r.country || ''} ${r.format ? r.format.join(', ') : ''}</div>
-            <div style="font-size:10px;color:var(--gray);">${r.label ? r.label[0] : ''}</div>
-          </div>
-          <button class="quick-btn" style="flex-shrink:0;font-size:9px;">選擇</button>
-        </div>
-      `).join('');
-
-      // 點選版本
-      document.getElementById('discogsResults').querySelectorAll('.import-row').forEach(row => {
-        row.querySelector('button').addEventListener('click', async () => {
-          const releaseId  = row.dataset.id;
-          const releaseUrl = row.dataset.url;
-          await loadDiscogsPrice(releaseId, releaseUrl, row.querySelector('div div').textContent);
-        });
-      });
+      document.getElementById('discogsResults').innerHTML = results.map(r => {
+        const safeTitle = (r.title || '').replace(/"/g, '&quot;');
+        const thumb = r.thumb
+          ? '<img src="' + r.thumb + '" style="width:40px;height:40px;object-fit:cover;flex-shrink:0;">'
+          : '<div style="width:40px;height:40px;background:var(--line);flex-shrink:0;"></div>';
+        return '<div class="import-row" data-id="' + r.id + '" data-url="https://www.discogs.com' + r.uri + '" data-title="' + safeTitle + '" style="display:flex;gap:10px;align-items:center;">' +
+          thumb +
+          '<div style="flex:1;min-width:0;">' +
+          '<div style="font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + (r.title || '') + '</div>' +
+          '<div style="font-size:10px;color:var(--gray);">' + (r.year || '') + ' ' + (r.country || '') + ' ' + (r.format ? r.format.join(', ') : '') + '</div>' +
+          '<div style="font-size:10px;color:var(--gray);">' + (r.label ? r.label[0] : '') + '</div>' +
+          '</div>' +
+          '<button class="quick-btn" style="flex-shrink:0;font-size:9px;">選擇</button>' +
+          '</div>';
+      }).join('');
 
     } catch(e) {
       showMsg('error', 'Discogs 搜尋失敗：' + e.message);
