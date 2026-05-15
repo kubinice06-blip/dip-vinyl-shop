@@ -1351,7 +1351,6 @@
   document.addEventListener('click', async (e) => {
     if (!e.target.closest('#btnDiscogsSearch')) return;
     const _this = e.target.closest('#btnDiscogsSearch');
-    (async () => {
     if (!currentItem) return;
     const artist = (currentItem.artist || document.getElementById('artistInput').value).trim();
     const name   = (currentItem.name   || document.getElementById('nameInput').value).trim();
@@ -1426,7 +1425,6 @@
     }
   });
 
-    })();
   });
 
   async function loadDiscogsPrice(releaseId, releaseUrl, title) {
