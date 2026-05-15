@@ -140,6 +140,18 @@
     .modal-row-value { font-size: 11px; font-weight: 700; text-align: right; line-height: 1.5; }
     .modal-note { margin-top: 20px; font-size: 10px; color: var(--gray); line-height: 1.9; }
 
+    /* 音樂試聽 */
+    .modal-music { border-top: 1px solid var(--line); padding: 16px 20px; }
+    .modal-music-label { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .modal-music-label svg { flex-shrink: 0; }
+    .modal-music-platforms { margin-left: auto; display: flex; gap: 6px; }
+    .music-platform-btn { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 9px; letter-spacing: 0.05em; color: var(--gray); text-decoration: none; border: 1px solid var(--line); padding: 3px 8px; transition: all 0.15s; white-space: nowrap; }
+    .music-platform-btn:hover { color: var(--black); border-color: var(--black); }
+    .modal-music iframe { display: block; border: none; width: 100%; }
+    .modal-music-search { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .music-search-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; padding: 5px 12px; cursor: pointer; color: var(--gray); text-decoration: none; display: inline-block; transition: all 0.15s; }
+    .music-search-btn:hover { border-color: var(--black); color: var(--black); }
+
     /* 購物車 */
     .cart-btn { position: fixed; bottom: 140px; right: 24px; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; padding: 12px 18px; cursor: pointer; z-index: 150; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s; }
     .cart-btn:hover { opacity: 0.8; }
@@ -258,6 +270,7 @@
       <div class="modal-img-wrap" id="modalImg"></div>
       <div class="modal-detail" id="modalDetail"></div>
     </div>
+    <div id="modalMusic"></div>
   </div>
 </div>
 
@@ -511,8 +524,76 @@
       <div class="modal-note" style="margin-top:12px;">如有購買意願，請聯絡我們。<br>Contact us to purchase this item.</div>
     `;
 
+    renderMusicSection(p);
     document.getElementById('modalBg').classList.add('open');
     document.body.style.overflow = 'hidden';
+  }
+
+  // ── 音樂試聽 ──
+  function toEmbedUrl(url) {
+    if (!url) return null;
+    // Spotify
+    const sp = url.match(/open\.spotify\.com\/(track|album|playlist|artist)\/([a-zA-Z0-9]+)/);
+    if (sp) return `https://open.spotify.com/embed/${sp[1]}/${sp[2]}?utm_source=generator`;
+    // YouTube / YouTube Music
+    const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|music\.youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/);
+    if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+    // Apple Music
+    const am = url.match(/music\.apple\.com\/([^?#]+)/);
+    if (am) return `https://embed.music.apple.com/${am[1]}`;
+    // 若已是 embed URL 則直接回傳
+    if (/open\.spotify\.com\/embed|youtube\.com\/embed|embed\.music\.apple\.com/.test(url)) return url;
+    return null;
+  }
+
+  function buildEmbed(embedUrl) {
+    const isSpotify = embedUrl.includes('spotify.com/embed');
+    const isAM = embedUrl.includes('embed.music.apple.com');
+    const h = isSpotify ? 352 : isAM ? 450 : 200;
+    if (isAM) {
+      // Apple 官方格式：allow 加 * 手機才能取得權限；不加 loading=lazy（modal 動態插入時手機會略過不載）
+      return `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embedUrl}"></iframe>`;
+    }
+    if (isSpotify) {
+      return `<iframe style="border-radius:12px;" src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    return `<iframe src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+  }
+
+  // 前台只讀 Firestore 存的 musicEmbedUrl，不做 live API 搜尋
+  // （搜尋在後台執行並存入，確保手機/電腦行為一致）
+  function renderMusicSection(p) {
+    const musicEl = document.getElementById('modalMusic');
+    if (!musicEl) return;
+    const query = encodeURIComponent([(p.artist || ''), (p.name || '')].filter(Boolean).join(' '));
+
+    const platformBtns = query ? `<div class="modal-music-platforms">
+      <a class="music-platform-btn" href="https://open.spotify.com/search/${query}" target="_blank" rel="noopener">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Spotify
+      </a>
+      <a class="music-platform-btn" href="https://music.youtube.com/search?q=${query}" target="_blank" rel="noopener">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm4.596 13.332l-6.84 3.276A1.5 1.5 0 0 1 7.5 15.276V8.724a1.5 1.5 0 0 1 2.256-1.332l6.84 3.276a1.5 1.5 0 0 1 0 2.664z"/></svg>
+        YT Music
+      </a>
+      <a class="music-platform-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.865-.737c-.695-.144-1.4-.155-2.12-.155H6.41c-.72 0-1.425.01-2.12.155a5.022 5.022 0 0 0-1.865.737C1.308 1.624.563 2.624.246 3.934a9.23 9.23 0 0 0-.24 2.19C-.006 6.9 0 7.68 0 8.46v7.08c0 .78-.006 1.56.006 2.336a9.23 9.23 0 0 0 .24 2.19c.317 1.31 1.062 2.31 2.18 3.043a5.022 5.022 0 0 0 1.865.737c.695.144 1.4.155 2.12.155h11.19c.72 0 1.425-.01 2.12-.155a5.022 5.022 0 0 0 1.865-.737c1.118-.734 1.863-1.734 2.18-3.044a9.23 9.23 0 0 0 .24-2.19C24 17.1 24 16.32 24 15.54V8.46c0-.78.006-1.56-.006-2.336zm-6.466 3.01l-5.25 7.98a.84.84 0 0 1-.702.38.84.84 0 0 1-.702-.38l-2.34-3.558a.84.84 0 0 1 .234-1.164.84.84 0 0 1 1.164.234l1.644 2.496 4.548-6.912a.84.84 0 0 1 1.164-.234.84.84 0 0 1 .24 1.158z"/></svg>
+        Apple Music
+      </a>
+    </div>` : '';
+
+    const label = `<div class="modal-music-label">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+      試聽 Listen
+      ${platformBtns}
+    </div>`;
+
+    const embedUrl = toEmbedUrl(p.musicEmbedUrl);
+    if (embedUrl) {
+      musicEl.innerHTML = `<div class="modal-music">${label}${buildEmbed(embedUrl)}</div>`;
+    } else if (query) {
+      musicEl.innerHTML = `<div class="modal-music">${label}</div>`;
+    }
   }
 
   document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
@@ -523,6 +604,7 @@
   function closeModal() {
     document.getElementById('modalBg').classList.remove('open');
     document.body.style.overflow = '';
+    document.getElementById('modalMusic').innerHTML = '';
   }
 
   // 主標籤切換
