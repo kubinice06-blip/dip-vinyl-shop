@@ -1013,28 +1013,37 @@
       genre: Array.isArray(p.genre) ? p.genre.join(', ') : (p.genre || ''),
     }));
 
-    const prompt = `你是一個黑膠唱片店的選片顧問。
-用戶回答了以下問題：
+    const stockSummary = stockList.length
+      ? stockList.map(p => `- id:${p.id} | ${p.artist} — ${p.name} (${p.genre})`).join('\n')
+      : '（目前無庫存資料）';
+
+    const reelSummary = quizReels.length
+      ? quizReels.map(r => `- id:${r.id} | ${r.artist} — ${r.title} | mood:${(r.mood||[]).join(',')} | ${r.url}`).join('\n')
+      : '（無 Reels）';
+
+    const prompt = `你是一個黑膠唱片店的選片顧問，請根據以下用戶的回答，推薦一張最符合他此刻狀態的專輯。
+
+【用戶問答】
 ${qaText}
 
-以下是店內現有庫存：
-${JSON.stringify(stockList, null, 2)}
+【判斷步驟】
+1. 分析這5個回答透露的情緒（平靜/焦慮/孤獨/充滿能量…）和性格傾向
+2. 先想好推薦的方向（例：需要沉澱的爵士、充滿張力的搖滾…）
+3. 查看庫存和Reels是否有符合的，有的話優先選；沒有再推全球知識
 
-以下是店家的 Reels 推薦清單：
-${JSON.stringify(quizReels, null, 2)}
+【店內庫存】
+${stockSummary}
 
-請根據用戶的回答分析他的情緒狀態與性格，
-然後推薦最適合的一張專輯或一支 Reels。
-優先從全球音樂知識推薦，如果剛好跟庫存或 Reels 有匹配則優先選那個。
+【Reels 推薦清單】
+${reelSummary}
 
-只回傳 JSON，不要有任何其他文字：
-{
-  "type": "stock" | "reel" | "global",
-  "id": "Firestore document ID 或 reel id，global 則為 null",
-  "artist": "藝人名稱",
-  "album": "專輯名稱",
-  "reason": "2-3句話說明為什麼推薦這個給他，用你的口吻，像朋友說話不像機器"
-}`;
+【輸出規則】
+- 只回傳一個 JSON 物件，不要任何說明文字、不要 markdown
+- type 必須是 "stock"、"reel" 或 "global" 其中一個
+- stock 的 id 用庫存的 id 欄位；reel 的 id 用 Reels 的 id 欄位；global 的 id 填 null
+- reason 用繁體中文，2-3句，像朋友說話的口吻，說明為什麼這張專輯適合他現在的狀態
+
+{"type":"...","id":"...","artist":"...","album":"...","reason":"..."}`;
 
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
