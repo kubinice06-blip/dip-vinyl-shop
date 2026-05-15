@@ -250,6 +250,14 @@
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
     .quiz-retry-btn { width: 100%; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-retry-btn:hover { border-color: var(--black); color: var(--black); }
+    .quiz-result-cover-link { display: block; }
+    .quiz-stock-row { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .quiz-stock-row-label { font-size: 9px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+    .quiz-stock-thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .quiz-stock-thumb { cursor: pointer; }
+    .quiz-stock-thumb img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border: 1px solid var(--line); transition: opacity 0.15s; }
+    .quiz-stock-thumb:hover img { opacity: 0.7; }
+    .quiz-stock-thumb-name { font-size: 8px; color: var(--gray); margin-top: 4px; letter-spacing: 0.04em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   </style>
 </head>
 <body>
@@ -1014,15 +1022,20 @@
       return `Q: ${q.question}\nA: ${idx !== undefined ? q.options[idx] : '未回答'}`;
     }).join('\n\n');
 
-    const prompt = `你是一位黑膠唱片店的選片顧問，對全球音樂史瞭如指掌。
+    const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘冷門但有深度的音樂。
 
 用戶回答了5道心理測驗：
 ${qaText}
 
-根據這些回答，從全球音樂史中（任何年代、任何風格）挑選一張最符合這個人此刻狀態的專輯。不要侷限在任何特定清單，自由推薦你認為最合適的。
+請先判斷用戶此刻的情緒狀態（例如：憂鬱、平靜、充能、焦慮、懷舊、迷惘等），再依據大量聆聽數據的規律，推薦最適合這種情緒下聆聽的專輯。
+
+推薦原則：
+- 優先選擇冷門但有品味、有深度的作品，避免太主流或人人都知道的暢銷專輯
+- 可以是任何年代、任何風格
+- 選擇真正值得被更多人認識的作品
 
 請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
-{"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文，說明為什麼這張專輯符合這個人現在的狀態，語氣像朋友"}`;
+{"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文，說明為什麼這張專輯符合你現在的狀態，語氣像朋友"}`;
 
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
@@ -1086,8 +1099,35 @@ ${qaText}
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
       }
     } else {
-      const imgUrl = await fetchSpotifyCover(result.artist, result.album);
-      if (imgUrl) coverHtml = `<img class="quiz-result-cover" src="${imgUrl}" alt="">`;
+      const { imageUrl, spotifyUrl } = await fetchSpotifyCover(result.artist, result.album);
+      if (imageUrl) {
+        coverHtml = spotifyUrl
+          ? `<a class="quiz-result-cover-link" href="${spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${imageUrl}" alt="" style="cursor:pointer;"></a>`
+          : `<img class="quiz-result-cover" src="${imageUrl}" alt="">`;
+      }
+      result._spotifyUrl = spotifyUrl;
+    }
+
+    let stockRecoHtml = '';
+    if (result.type === 'global') {
+      const withImgs = all.filter(p => {
+        const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+        return imgs[0];
+      });
+      const picks = [...withImgs].sort(() => Math.random() - 0.5).slice(0, 4);
+      if (picks.length) {
+        const thumbs = picks.map(p => {
+          const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+          return `<div class="quiz-stock-thumb" data-quiz-action="view-item" data-id="${p.id}">
+            <img src="${imgs[0]}" alt="">
+            <div class="quiz-stock-thumb-name">${p.artist || p.name || ''}</div>
+          </div>`;
+        }).join('');
+        stockRecoHtml = `<div class="quiz-stock-row">
+          <div class="quiz-stock-row-label">店內在售</div>
+          <div class="quiz-stock-thumbs">${thumbs}</div>
+        </div>`;
+      }
     }
 
     document.getElementById('quizContent').innerHTML = `
@@ -1098,6 +1138,7 @@ ${qaText}
         <div class="quiz-result-album">${result.album || ''}</div>
         <div class="quiz-result-reason">${result.reason || ''}</div>
         ${ctaHtml}
+        ${stockRecoHtml}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
@@ -1123,7 +1164,7 @@ ${qaText}
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
       });
-      if (!tokenResp.ok) return null;
+      if (!tokenResp.ok) return {};
       const { access_token } = await tokenResp.json();
       const q = encodeURIComponent(`${album} ${artist}`);
       const sr = await fetch(`https://api.spotify.com/v1/search?q=${q}&type=album&limit=1`, {
@@ -1131,9 +1172,14 @@ ${qaText}
       });
       const sd = await sr.json();
       const items = sd.albums?.items;
-      if (items?.length && items[0].images?.length) return items[0].images[0].url;
+      if (items?.length) {
+        return {
+          imageUrl: items[0].images?.[0]?.url || null,
+          spotifyUrl: items[0].external_urls?.spotify || null,
+        };
+      }
     } catch(e) {}
-    return null;
+    return {};
   }
 </script>
 <!--Start of Tawk.to Script-->
