@@ -1348,7 +1348,10 @@
   // ── Discogs 搜尋 ──
   const DISCOGS_TOKEN = 'siguOwNcNYVcfELjPfXJDKdQZdyaVLVnZWKKkewt';
 
-  document.getElementById('btnDiscogsSearch').addEventListener('click', async () => {
+  document.addEventListener('click', async (e) => {
+    if (!e.target.closest('#btnDiscogsSearch')) return;
+    const _this = e.target.closest('#btnDiscogsSearch');
+    (async () => {
     if (!currentItem) return;
     const artist = (currentItem.artist || document.getElementById('artistInput').value).trim();
     const name   = (currentItem.name   || document.getElementById('nameInput').value).trim();
@@ -1357,7 +1360,7 @@
 
     if (!name) { showMsg('error', '請先填入專輯名稱'); return; }
 
-    const btn = document.getElementById('btnDiscogsSearch');
+    const btn = _this;
     btn.textContent = '搜尋中…';
     btn.disabled = true;
     document.getElementById('discogsResults').style.display = 'none';
@@ -1421,6 +1424,9 @@
       btn.textContent = '搜尋 Discogs 版本';
       btn.disabled = false;
     }
+  });
+
+    })();
   });
 
   async function loadDiscogsPrice(releaseId, releaseUrl, title) {
