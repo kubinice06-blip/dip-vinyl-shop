@@ -279,7 +279,7 @@
 <div class="main-tabs" id="mainTabs">
   <button class="main-tab active" data-tab="used">Used</button>
   <button class="main-tab" data-tab="new">New</button>
-  <button class="main-tab" data-tab="quiz">測驗</button>
+  <button class="main-tab" data-tab="quiz">心情選歌</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
 <div class="search-bar">
@@ -1197,61 +1197,33 @@ ${qaText}
   async function shareQuizResult() {
     if (!lastQuizResult) return;
     const { artist, album, reason } = lastQuizResult;
-    const shareText = `🎵 ${artist} — ${album}\n${reason || ''}\n\n來測驗你的音樂個性 →`;
+    const shareText = `🎵 ${artist} — ${album}\n${reason || ''}\n\n來選一首適合你的歌 →`;
     const shareUrl = window.location.href;
-    const resultEl = document.querySelector('#quizContent .quiz-result');
 
     const btn = document.querySelector('[data-quiz-action="share"]');
-    if (btn) btn.textContent = '…';
+    if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
     try {
-      if (!window.html2canvas) {
-        await new Promise((resolve, reject) => {
-          const s = document.createElement('script');
-          s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
-          s.onload = resolve;
-          s.onerror = reject;
-          document.head.appendChild(s);
+      if (navigator.share) {
+        await navigator.share({
+          title: `${artist} — ${album} | DIP Vinyl Shop`,
+          text: shareText,
+          url: shareUrl,
         });
-      }
-
-      const canvas = await window.html2canvas(resultEl, {
-        backgroundColor: '#ffffff',
-        scale: 2,
-        useCORS: true,
-        allowTaint: false,
-        logging: false,
-      });
-
-      const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-      const file = new File([blob], 'vinyl-quiz.png', { type: 'image/png' });
-
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl, files: [file] });
-      } else if (navigator.share) {
-        await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl });
       } else {
-        await navigator.clipboard.writeText(shareUrl);
-        showShareToast('已複製連結 ✓');
+        await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+        showShareToast('已複製 ✓');
       }
     } catch(e) {
-      if (e.name === 'AbortError') {
-        if (btn) btn.textContent = '✈ 分享結果';
-        return;
+      if (e.name !== 'AbortError') {
+        try {
+          await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+          showShareToast('已複製 ✓');
+        } catch(e2) {}
       }
-      try {
-        if (navigator.share) {
-          await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl });
-        } else {
-          await navigator.clipboard.writeText(shareUrl);
-          showShareToast('已複製連結 ✓');
-        }
-      } catch(e2) {
-        showShareToast('已複製連結 ✓');
-      }
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = '✈ 分享結果'; }
     }
-
-    if (btn) btn.textContent = '✈ 分享結果';
   }
 
   async function fetchSpotifyCover(artist, album) {
