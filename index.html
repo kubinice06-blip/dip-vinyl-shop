@@ -103,7 +103,7 @@
     .spinner { width: 18px; height: 18px; border: 1px solid var(--line); border-top-color: var(--black); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 12px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.97); z-index: 200; overflow-y: auto; }
+    .modal-bg { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.97); z-index: 260; overflow-y: auto; }
     .modal-bg.open { display: block; }
     .modal { max-width: 800px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); min-height: 100vh; }
     .modal-topbar {
@@ -250,6 +250,8 @@
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
     .quiz-retry-btn { width: 100%; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-retry-btn:hover { border-color: var(--black); color: var(--black); }
+    .quiz-share-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; margin-bottom: 12px; transition: opacity 0.15s; }
+    .quiz-share-btn:hover { opacity: 0.75; }
     .quiz-result-cover-link { display: block; }
     .quiz-stock-row { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
     .quiz-stock-row-label { font-size: 9px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
@@ -658,7 +660,9 @@
 
   function closeModal() {
     document.getElementById('modalBg').classList.remove('open');
-    document.body.style.overflow = '';
+    if (!document.getElementById('quizModal').classList.contains('open')) {
+      document.body.style.overflow = '';
+    }
     document.getElementById('modalMusic').innerHTML = '';
   }
 
@@ -897,6 +901,7 @@
   let quizSelected = [];
   let quizAnswers = {};
   let quizIdx = 0;
+  let lastQuizResult = null;
 
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
@@ -909,9 +914,10 @@
     }
     if (e.target.closest('[data-quiz-action="view-item"]')) {
       const id = e.target.closest('[data-quiz-action="view-item"]').dataset.id;
-      document.getElementById('quizModal').classList.remove('open');
-      document.body.style.overflow = '';
-      setTimeout(() => openModal(id), 100);
+      openModal(id);
+    }
+    if (e.target.closest('[data-quiz-action="share"]')) {
+      shareQuizResult();
     }
   });
 
@@ -1013,6 +1019,19 @@
     }
   }
 
+  async function getAiReason(artist, album, qaText) {
+    const prompt = `你是黑膠唱片店的選片顧問。用戶回答了5道心理測驗：\n${qaText}\n\n你決定推薦：${artist} — ${album}\n\n請用2-3句繁體中文說明，為什麼這張專輯符合你現在的狀態。語氣像朋友，不要像機器。只回傳說明文字，不要包含任何 JSON 或格式符號。`;
+    try {
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      const data = await resp.json();
+      return data.content?.[0]?.text?.trim() || '';
+    } catch(e) { return ''; }
+  }
+
   async function submitQuiz() {
     document.getElementById('quizContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
@@ -1022,7 +1041,30 @@
       return `Q: ${q.question}\nA: ${idx !== undefined ? q.options[idx] : '未回答'}`;
     }).join('\n\n');
 
-    const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘冷門但有深度的音樂。
+    try {
+      const rand = Math.random();
+      const stockPool = all.filter(p => {
+        const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+        return imgs[0] && p.artist;
+      });
+
+      // 35% stock, 25% reel, 40% global AI
+      if (rand < 0.35 && stockPool.length) {
+        const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
+        const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText);
+        await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason });
+        return;
+      }
+
+      if (rand < 0.60 && quizReels.length) {
+        const pick = quizReels[Math.floor(Math.random() * quizReels.length)];
+        const reason = await getAiReason(pick.artist, pick.title || '', qaText);
+        await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason });
+        return;
+      }
+
+      // Global AI recommendation
+      const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘冷門但有深度的音樂。
 
 用戶回答了5道心理測驗：
 ${qaText}
@@ -1037,7 +1079,6 @@ ${qaText}
 請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
 {"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文，說明為什麼這張專輯符合你現在的狀態，語氣像朋友"}`;
 
-    try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1050,22 +1091,6 @@ ${qaText}
       if (!jsonMatch) throw new Error('AI 回傳格式錯誤，請再試一次');
       const rec = JSON.parse(jsonMatch[0]);
       if (!rec.artist || !rec.album) throw new Error('AI 回傳缺少資訊，請再試一次');
-
-      const reelMatch = quizReels.find(r =>
-        r.artist && r.artist.toLowerCase() === rec.artist.toLowerCase()
-      );
-      if (reelMatch) {
-        await showQuizResult({ type: 'reel', id: reelMatch.id, artist: rec.artist, album: rec.album, reason: rec.reason });
-        return;
-      }
-
-      const stockMatch = all.find(p =>
-        p.artist && p.artist.toLowerCase() === rec.artist.toLowerCase()
-      );
-      if (stockMatch) {
-        await showQuizResult({ type: 'stock', id: stockMatch.id, artist: rec.artist, album: rec.album, reason: rec.reason });
-        return;
-      }
 
       await showQuizResult({ type: 'global', artist: rec.artist, album: rec.album, reason: rec.reason });
     } catch(e) {
@@ -1130,6 +1155,8 @@ ${qaText}
       }
     }
 
+    lastQuizResult = result;
+
     document.getElementById('quizContent').innerHTML = `
       <div class="quiz-result">
         <div class="quiz-result-label">為你推薦</div>
@@ -1139,6 +1166,7 @@ ${qaText}
         <div class="quiz-result-reason">${result.reason || ''}</div>
         ${ctaHtml}
         ${stockRecoHtml}
+        <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
@@ -1156,6 +1184,74 @@ ${qaText}
         processIgEmbed();
       }
     }
+  }
+
+  function showShareToast(msg) {
+    const t = document.createElement('div');
+    t.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#000;color:#fff;padding:10px 24px;font-size:11px;letter-spacing:0.1em;z-index:9999;font-family:var(--mono);white-space:nowrap;';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2200);
+  }
+
+  async function shareQuizResult() {
+    if (!lastQuizResult) return;
+    const { artist, album, reason } = lastQuizResult;
+    const shareText = `🎵 ${artist} — ${album}\n${reason || ''}\n\n來測驗你的音樂個性 →`;
+    const shareUrl = window.location.href;
+    const resultEl = document.querySelector('#quizContent .quiz-result');
+
+    const btn = document.querySelector('[data-quiz-action="share"]');
+    if (btn) btn.textContent = '…';
+
+    try {
+      if (!window.html2canvas) {
+        await new Promise((resolve, reject) => {
+          const s = document.createElement('script');
+          s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+          s.onload = resolve;
+          s.onerror = reject;
+          document.head.appendChild(s);
+        });
+      }
+
+      const canvas = await window.html2canvas(resultEl, {
+        backgroundColor: '#ffffff',
+        scale: 2,
+        useCORS: true,
+        allowTaint: false,
+        logging: false,
+      });
+
+      const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+      const file = new File([blob], 'vinyl-quiz.png', { type: 'image/png' });
+
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl, files: [file] });
+      } else if (navigator.share) {
+        await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl });
+      } else {
+        await navigator.clipboard.writeText(shareUrl);
+        showShareToast('已複製連結 ✓');
+      }
+    } catch(e) {
+      if (e.name === 'AbortError') {
+        if (btn) btn.textContent = '✈ 分享結果';
+        return;
+      }
+      try {
+        if (navigator.share) {
+          await navigator.share({ title: 'DIP Vinyl Shop', text: shareText, url: shareUrl });
+        } else {
+          await navigator.clipboard.writeText(shareUrl);
+          showShareToast('已複製連結 ✓');
+        }
+      } catch(e2) {
+        showShareToast('已複製連結 ✓');
+      }
+    }
+
+    if (btn) btn.textContent = '✈ 分享結果';
   }
 
   async function fetchSpotifyCover(artist, album) {
