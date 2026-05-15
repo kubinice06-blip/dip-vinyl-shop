@@ -997,6 +997,66 @@
     document.getElementById('quizSubmit')?.addEventListener('click', submitQuiz);
   }
 
+  function analyzeMood(selected, answers) {
+    let sad = 0, calm = 0, up = 0;
+    selected.forEach(q => {
+      const idx = answers[q.id];
+      if (idx === undefined) return;
+      const text = q.options[idx] || '';
+      if (/孤獨|悲傷|鬱悶|焦慮|累|害怕|逃避|後悔|難過|複雜|消失|不想|不敢|壓力|不開心/.test(text)) sad += 2;
+      if (/平靜|沉靜|安靜|靜靜|待著|一個人|發呆|放鬆|悠閒|沉澱/.test(text)) calm += 2;
+      if (/開心|不錯|驕傲|力量|改變|主動|熱鬧|掌控|清醒|充電|滿意|期待/.test(text)) up += 2;
+      if (q.question.includes('音樂的需求')) {
+        if (idx === 0) calm += 3;
+        if (idx === 1) up += 3;
+        if (idx === 2) sad += 3;
+        if (idx === 3) calm += 2;
+      }
+      if (q.question.includes('最常有的感覺')) {
+        if (idx === 0) calm++;
+        if (idx === 1) sad++;
+        if (idx === 2) sad += 2;
+        if (idx === 3) up += 2;
+      }
+      if (q.question.includes('最需要的')) {
+        if (idx === 0) calm++;
+        if (idx === 1) sad++;
+        if (idx === 2) calm++;
+        if (idx === 3) up++;
+      }
+    });
+    if (sad > calm && sad >= up) return 'melancholy';
+    if (up > sad && up > calm) return 'energy';
+    return 'calm';
+  }
+
+  function pickByMood(mood) {
+    const reelMap = {
+      melancholy: 'reel_002',
+      calm:       'reel_003',
+      energy:     'reel_001',
+    };
+    const globalMap = {
+      melancholy: { artist: 'Nick Drake',   album: 'Pink Moon' },
+      calm:       { artist: 'Bill Evans',   album: 'Waltz for Debby' },
+      energy:     { artist: 'James Brown',  album: 'Sex Machine' },
+    };
+
+    const reelId = reelMap[mood];
+    const reel = quizReels.find(r => r.id === reelId);
+    if (reel) return { type: 'reel', id: reel.id, artist: reel.artist, album: reel.title };
+
+    const genreMap = { melancholy: ['trip-hop','folk','blues'], calm: ['jazz','soul','ambient'], energy: ['funk','rock','jazz'] };
+    const preferred = genreMap[mood] || [];
+    const match = all.find(p => {
+      const g = (Array.isArray(p.genre) ? p.genre.join(' ') : (p.genre||'')).toLowerCase();
+      return preferred.some(pref => g.includes(pref));
+    });
+    if (match) return { type: 'stock', id: match.id, artist: match.artist||'', album: match.name||'' };
+
+    return { type: 'global', id: null, ...globalMap[mood] };
+  }
+
   async function submitQuiz() {
     document.getElementById('quizContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
@@ -1006,68 +1066,31 @@
       return `Q: ${q.question}\nA: ${idx !== undefined ? q.options[idx] : '未回答'}`;
     }).join('\n\n');
 
-    const stockList = all.map(p => ({
-      id: p.id,
-      name: p.name || '',
-      artist: p.artist || '',
-      genre: Array.isArray(p.genre) ? p.genre.join(', ') : (p.genre || ''),
-    }));
+    const mood = analyzeMood(quizSelected, quizAnswers);
+    const pick = pickByMood(mood);
 
-    const stockSummary = stockList.length
-      ? stockList.map(p => `- id:${p.id} | ${p.artist} — ${p.name} (${p.genre})`).join('\n')
-      : '（目前無庫存資料）';
-
-    const reelSummary = quizReels.length
-      ? quizReels.map(r => `- id:${r.id} | ${r.artist} — ${r.title} | mood:${(r.mood||[]).join(',')} | ${r.url}`).join('\n')
-      : '（無 Reels）';
-
-    const prompt = `你是一個黑膠唱片店的選片顧問，請根據以下用戶的回答，推薦一張最符合他此刻狀態的專輯。
-
-【用戶問答】
+    const reasonPrompt = `你是黑膠唱片店的選片顧問。
+用戶回答了5道問題：
 ${qaText}
 
-【判斷步驟】
-1. 分析這5個回答透露的情緒（平靜/焦慮/孤獨/充滿能量…）和性格傾向
-2. 先想好推薦的方向（例：需要沉澱的爵士、充滿張力的搖滾…）
-3. 查看庫存和Reels是否有符合的，有的話優先選；沒有再推全球知識
+根據以上回答，你決定推薦：${pick.artist} — ${pick.album}
 
-【店內庫存】
-${stockSummary}
+請用2-3句繁體中文說明，為什麼這張專輯符合這個人現在的狀態。語氣像朋友，不要像機器。只回傳說明文字，不要包含任何 JSON 或格式符號。`;
 
-【Reels 推薦清單】
-${reelSummary}
-
-【輸出規則】
-- 只回傳一個 JSON 物件，不要任何說明文字、不要 markdown
-- type 必須是 "stock"、"reel" 或 "global" 其中一個
-- stock 的 id 用庫存的 id 欄位；reel 的 id 用 Reels 的 id 欄位；global 的 id 填 null
-- reason 用繁體中文，2-3句，像朋友說話的口吻，說明為什麼這張專輯適合他現在的狀態
-
-{"type":"...","id":"...","artist":"...","album":"...","reason":"..."}`;
-
+    let reason = '這張專輯很適合你現在的狀態。';
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: [{ role: 'user', content: prompt }],
-        }),
+        body: JSON.stringify({ messages: [{ role: 'user', content: reasonPrompt }] }),
       });
-      if (!resp.ok) throw new Error('API ' + resp.status);
-      const data = await resp.json();
-      if (data.apiError) throw new Error('API 錯誤：' + data.apiError);
-      const text = data.content?.[0]?.text || '';
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) throw new Error('AI 回傳格式錯誤：' + text.slice(0, 200));
-      const result = JSON.parse(jsonMatch[0]);
-      await showQuizResult(result);
-    } catch(e) {
-      document.getElementById('quizContent').innerHTML = `
-        <div class="quiz-loading">
-          <div class="quiz-loading-text">⚠ ${e.message}</div>
-          <button class="quiz-retry-btn" style="margin-top:20px;" data-quiz-action="retry">再試一次</button>
-        </div>`;
-    }
+      if (resp.ok) {
+        const data = await resp.json();
+        reason = data.content?.[0]?.text?.trim() || reason;
+      }
+    } catch(e) {}
+
+    await showQuizResult({ ...pick, reason });
   }
 
   async function showQuizResult(result) {
