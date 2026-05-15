@@ -997,64 +997,12 @@
     document.getElementById('quizSubmit')?.addEventListener('click', submitQuiz);
   }
 
-  function analyzeMood(selected, answers) {
-    let sad = 0, calm = 0, up = 0;
-    selected.forEach(q => {
-      const idx = answers[q.id];
-      if (idx === undefined) return;
-      const text = q.options[idx] || '';
-      if (/孤獨|悲傷|鬱悶|焦慮|累|害怕|逃避|後悔|難過|複雜|消失|不想|不敢|壓力|不開心/.test(text)) sad += 2;
-      if (/平靜|沉靜|安靜|靜靜|待著|一個人|發呆|放鬆|悠閒|沉澱/.test(text)) calm += 2;
-      if (/開心|不錯|驕傲|力量|改變|主動|熱鬧|掌控|清醒|充電|滿意|期待/.test(text)) up += 2;
-      if (q.question.includes('音樂的需求')) {
-        if (idx === 0) calm += 3;
-        if (idx === 1) up += 3;
-        if (idx === 2) sad += 3;
-        if (idx === 3) calm += 2;
-      }
-      if (q.question.includes('最常有的感覺')) {
-        if (idx === 0) calm++;
-        if (idx === 1) sad++;
-        if (idx === 2) sad += 2;
-        if (idx === 3) up += 2;
-      }
-      if (q.question.includes('最需要的')) {
-        if (idx === 0) calm++;
-        if (idx === 1) sad++;
-        if (idx === 2) calm++;
-        if (idx === 3) up++;
-      }
-    });
-    if (sad > calm && sad >= up) return 'melancholy';
-    if (up > sad && up > calm) return 'energy';
-    return 'calm';
-  }
-
-  function pickByMood(mood) {
-    const reelMap = {
-      melancholy: 'reel_002',
-      calm:       'reel_003',
-      energy:     'reel_001',
-    };
-    const globalMap = {
-      melancholy: { artist: 'Nick Drake',   album: 'Pink Moon' },
-      calm:       { artist: 'Bill Evans',   album: 'Waltz for Debby' },
-      energy:     { artist: 'James Brown',  album: 'Sex Machine' },
-    };
-
-    const reelId = reelMap[mood];
-    const reel = quizReels.find(r => r.id === reelId);
-    if (reel) return { type: 'reel', id: reel.id, artist: reel.artist, album: reel.title };
-
-    const genreMap = { melancholy: ['trip-hop','folk','blues'], calm: ['jazz','soul','ambient'], energy: ['funk','rock','jazz'] };
-    const preferred = genreMap[mood] || [];
-    const match = all.find(p => {
-      const g = (Array.isArray(p.genre) ? p.genre.join(' ') : (p.genre||'')).toLowerCase();
-      return preferred.some(pref => g.includes(pref));
-    });
-    if (match) return { type: 'stock', id: match.id, artist: match.artist||'', album: match.name||'' };
-
-    return { type: 'global', id: null, ...globalMap[mood] };
+  function processIgEmbed() {
+    if (window.instgrm?.Embeds) {
+      window.instgrm.Embeds.process();
+    } else {
+      setTimeout(processIgEmbed, 400);
+    }
   }
 
   async function submitQuiz() {
@@ -1066,36 +1014,58 @@
       return `Q: ${q.question}\nA: ${idx !== undefined ? q.options[idx] : '未回答'}`;
     }).join('\n\n');
 
-    const mood = analyzeMood(quizSelected, quizAnswers);
-    const pick = pickByMood(mood);
+    const prompt = `你是一位黑膠唱片店的選片顧問，對全球音樂史瞭如指掌。
 
-    const reasonPrompt = `你是黑膠唱片店的選片顧問。
-用戶回答了5道問題：
+用戶回答了5道心理測驗：
 ${qaText}
 
-根據以上回答，你決定推薦：${pick.artist} — ${pick.album}
+根據這些回答，從全球音樂史中（任何年代、任何風格）挑選一張最符合這個人此刻狀態的專輯。不要侷限在任何特定清單，自由推薦你認為最合適的。
 
-請用2-3句繁體中文說明，為什麼這張專輯符合這個人現在的狀態。語氣像朋友，不要像機器。只回傳說明文字，不要包含任何 JSON 或格式符號。`;
+請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
+{"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文，說明為什麼這張專輯符合這個人現在的狀態，語氣像朋友"}`;
 
-    let reason = '這張專輯很適合你現在的狀態。';
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: reasonPrompt }] }),
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
       });
-      if (resp.ok) {
-        const data = await resp.json();
-        reason = data.content?.[0]?.text?.trim() || reason;
-      }
-    } catch(e) {}
+      const data = await resp.json();
+      if (data.apiError) throw new Error(data.apiError);
+      const text = data.content?.[0]?.text || '';
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) throw new Error('AI 回傳格式錯誤，請再試一次');
+      const rec = JSON.parse(jsonMatch[0]);
+      if (!rec.artist || !rec.album) throw new Error('AI 回傳缺少資訊，請再試一次');
 
-    await showQuizResult({ ...pick, reason });
+      const reelMatch = quizReels.find(r =>
+        r.artist && r.artist.toLowerCase() === rec.artist.toLowerCase()
+      );
+      if (reelMatch) {
+        await showQuizResult({ type: 'reel', id: reelMatch.id, artist: rec.artist, album: rec.album, reason: rec.reason });
+        return;
+      }
+
+      const stockMatch = all.find(p =>
+        p.artist && p.artist.toLowerCase() === rec.artist.toLowerCase()
+      );
+      if (stockMatch) {
+        await showQuizResult({ type: 'stock', id: stockMatch.id, artist: rec.artist, album: rec.album, reason: rec.reason });
+        return;
+      }
+
+      await showQuizResult({ type: 'global', artist: rec.artist, album: rec.album, reason: rec.reason });
+    } catch(e) {
+      document.getElementById('quizContent').innerHTML =
+        `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
+    }
   }
 
   async function showQuizResult(result) {
     let coverHtml = '';
     let ctaHtml = '';
+    let isReel = false;
+    let reelUrl = '';
 
     if (result.type === 'stock') {
       const item = all.find(x => x.id === result.id);
@@ -1110,17 +1080,10 @@ ${qaText}
     } else if (result.type === 'reel') {
       const reel = quizReels.find(r => r.id === result.id);
       if (reel) {
-        coverHtml = `<blockquote class="instagram-media" data-instgrm-permalink="${reel.url}" data-instgrm-version="14" style="width:100%;margin:0 0 20px;background:#fff;border:1px solid var(--line);"></blockquote>`;
+        isReel = true;
+        reelUrl = reel.url;
+        coverHtml = `<blockquote class="instagram-media" data-instgrm-permalink="${reel.url}" data-instgrm-version="14" style="width:100%;margin:0 0 20px;background:#fff;border:1px solid var(--line);border-radius:4px;"></blockquote>`;
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
-        if (!document.getElementById('ig-embed-script')) {
-          const s = document.createElement('script');
-          s.id = 'ig-embed-script';
-          s.src = 'https://www.instagram.com/embed.js';
-          s.async = true;
-          document.body.appendChild(s);
-        } else if (window.instgrm) {
-          setTimeout(() => window.instgrm.Embeds.process(), 300);
-        }
       }
     } else {
       const imgUrl = await fetchSpotifyCover(result.artist, result.album);
@@ -1139,8 +1102,18 @@ ${qaText}
       </div>
     `;
 
-    if (result.type === 'reel' && window.instgrm) {
-      setTimeout(() => window.instgrm.Embeds.process(), 500);
+    if (isReel) {
+      const existing = document.getElementById('ig-embed-script');
+      if (!existing) {
+        const s = document.createElement('script');
+        s.id = 'ig-embed-script';
+        s.src = 'https://www.instagram.com/embed.js';
+        s.async = true;
+        s.onload = processIgEmbed;
+        document.body.appendChild(s);
+      } else {
+        processIgEmbed();
+      }
     }
   }
 
