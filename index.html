@@ -257,7 +257,6 @@
 <header class="topbar">
   <div class="topbar-logo">dip vinyl shop</div>
   <div class="topbar-right" style="display:flex;align-items:center;gap:16px;">
-    <button class="modal-close-btn" id="quizOpenBtn" style="font-size:10px;letter-spacing:0.12em;">測驗</button>
     <a href="https://www.instagram.com/dip.vinyl/" target="_blank" style="color:var(--black);display:flex;align-items:center;" title="Instagram">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
@@ -270,6 +269,7 @@
 <div class="main-tabs" id="mainTabs">
   <button class="main-tab active" data-tab="used">Used</button>
   <button class="main-tab" data-tab="new">New</button>
+  <button class="main-tab" data-tab="quiz">測驗</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
 <div class="search-bar">
@@ -656,10 +656,22 @@
 
   // 主標籤切換
   let activeTab = 'used';
-  document.getElementById('mainTabs').addEventListener('click', e => {
+  let prevTab = 'used';
+  document.getElementById('mainTabs').addEventListener('click', async e => {
     const btn = e.target.closest('.main-tab');
     if (!btn) return;
-    activeTab = btn.dataset.tab;
+    const tab = btn.dataset.tab;
+
+    if (tab === 'quiz') {
+      document.getElementById('quizModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (!quizQs.length) await loadQuizData();
+      startQuiz();
+      return;
+    }
+
+    activeTab = tab;
+    prevTab = tab;
     document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filterSection = document.getElementById('filterSection');
@@ -878,13 +890,6 @@
   let quizAnswers = {};
   let quizIdx = 0;
 
-  document.getElementById('quizOpenBtn').addEventListener('click', async () => {
-    document.getElementById('quizModal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    if (!quizQs.length) await loadQuizData();
-    startQuiz();
-  });
-
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
     document.body.style.overflow = '';
@@ -979,7 +984,12 @@
     document.querySelectorAll('.quiz-option').forEach(btn => {
       btn.addEventListener('click', () => {
         quizAnswers[q.id] = parseInt(btn.dataset.idx);
-        renderQuizQ();
+        if (!isLast) {
+          btn.classList.add('selected');
+          setTimeout(() => { quizIdx++; renderQuizQ(); }, 280);
+        } else {
+          renderQuizQ();
+        }
       });
     });
     document.getElementById('quizPrev')?.addEventListener('click', () => { quizIdx--; renderQuizQ(); });
@@ -1036,8 +1046,10 @@ ${JSON.stringify(quizReels, null, 2)}
       });
       if (!resp.ok) throw new Error('API ' + resp.status);
       const data = await resp.json();
-      const text = data.content[0].text;
-      const result = JSON.parse(text.match(/\{[\s\S]*\}/)[0]);
+      const text = data.content?.[0]?.text || '';
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) throw new Error('AI 回傳格式錯誤：' + text.slice(0, 100));
+      const result = JSON.parse(jsonMatch[0]);
       await showQuizResult(result);
     } catch(e) {
       document.getElementById('quizContent').innerHTML = `
