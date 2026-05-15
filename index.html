@@ -1046,9 +1046,10 @@ ${JSON.stringify(quizReels, null, 2)}
       });
       if (!resp.ok) throw new Error('API ' + resp.status);
       const data = await resp.json();
+      if (data.apiError) throw new Error('API 錯誤：' + data.apiError);
       const text = data.content?.[0]?.text || '';
       const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) throw new Error('AI 回傳格式錯誤：' + text.slice(0, 100));
+      if (!jsonMatch) throw new Error('AI 回傳格式錯誤：' + text.slice(0, 200));
       const result = JSON.parse(jsonMatch[0]);
       await showQuizResult(result);
     } catch(e) {
