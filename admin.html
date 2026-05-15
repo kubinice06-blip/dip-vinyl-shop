@@ -568,7 +568,8 @@
   ];
 
   let allItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
-  let currentImages = []; // 多張照片陣列
+  let currentImages = [];
+  let pendingImages = null;
 
   // ── 載入商品 ──
   async function loadItems() {
@@ -1423,8 +1424,6 @@
       btn.textContent = '搜尋 Discogs 版本';
       btn.disabled = false;
     }
-  });
-
   });
 
   async function loadDiscogsPrice(releaseId, releaseUrl, title) {
