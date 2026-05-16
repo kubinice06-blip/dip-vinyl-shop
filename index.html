@@ -1101,10 +1101,12 @@ ${seenList}
 - 優先選擇在主流之外、但在樂迷圈內有口碑的酷作品
 - 避免 Radiohead、Pink Floyd、Miles Davis、Beatles 等過度曝光的名字
 
-【reason 撰寫規則】
-- 只描述這張專輯真實的音樂質感，以及它為何符合用戶此刻的狀態
-- 不要提及年代、地區、風格標籤等選曲條件
-- 語氣像懂音樂的朋友在推薦，不要像百科介紹
+【reason 撰寫風格】
+- 像占卜師在解讀你此刻的狀態，帶一點神秘感和宿命感
+- 用「你」直接對話，讓人覺得這張專輯是命中注定為他抽到的
+- 每次切入角度都要不同：有時像預言、有時像在說一個秘密、有時像夢境碎片、有時帶點哲學感
+- 2-3 句，語感精準，不說廢話，不用「這張專輯」開頭
+- 絕對不提年代、地區、風格標籤
 
 請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
 {"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文"}`;
@@ -1411,16 +1413,26 @@ ${seenList}
       });
       if (!tokenResp.ok) return {};
       const { access_token } = await tokenResp.json();
-      const q = encodeURIComponent(`${album} ${artist}`);
-      const sr = await fetch(`https://api.spotify.com/v1/search?q=${q}&type=album&limit=1`, {
+      const q = encodeURIComponent(`album:"${album}" artist:"${artist}"`);
+      const sr = await fetch(`https://api.spotify.com/v1/search?q=${q}&type=album&limit=3`, {
         headers: { Authorization: 'Bearer ' + access_token },
       });
       const sd = await sr.json();
       const items = sd.albums?.items;
       if (items?.length) {
+        const normalize = s => (s || '').toLowerCase().replace(/[^a-z0-9぀-鿿]/g, '');
+        const artistN = normalize(artist);
+        // Pick the first result whose artist name has any overlap with what we searched
+        const match = items.find(item => {
+          const returnedArtist = normalize(item.artists?.[0]?.name || '');
+          if (!artistN || !returnedArtist) return true;
+          // Accept if either string contains the other (handles short names)
+          return returnedArtist.includes(artistN) || artistN.includes(returnedArtist)
+            || returnedArtist.slice(0, 4) === artistN.slice(0, 4);
+        }) || items[0];
         return {
-          imageUrl: items[0].images?.[0]?.url || null,
-          spotifyUrl: items[0].external_urls?.spotify || null,
+          imageUrl: match.images?.[0]?.url || null,
+          spotifyUrl: match.external_urls?.spotify || null,
         };
       }
     } catch(e) {}
