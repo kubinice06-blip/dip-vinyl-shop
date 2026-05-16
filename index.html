@@ -1069,15 +1069,20 @@
 
       // Global AI recommendation — inject random decade + region + genre seed for diversity
       const _decades = ['1950年代','1960年代','1970年代','1980年代','1990年代','2000年代','2010年代','2020年代'];
-      const _regions = ['日本','巴西','北歐','英國','西非','東歐','德國','阿根廷','韓國','法國','牙買加','澳洲','加拿大','西班牙','衣索比亞','奈及利亞','印度','土耳其','葡萄牙','美國南方'];
+      // weighted regions: mainstream × 4, others × 1
+      const _regions = [
+        ...Array(4).fill('日本'), ...Array(4).fill('美國'), ...Array(4).fill('英國'),
+        ...Array(3).fill('韓國'), ...Array(3).fill('台灣'), ...Array(3).fill('歐陸（法國／德國／北歐）'), ...Array(3).fill('澳洲'),
+        '巴西','阿根廷','西非','東歐','牙買加','西班牙','衣索比亞','印度','土耳其','葡萄牙'
+      ];
       const _genres = ['free jazz','ambient','krautrock','bossa nova','post-punk','tropicália','minimal classical','soul','funk','noise rock','folk','afrobeat','new wave','blues','electronic','reggae','flamenco','fado','psychedelic','avant-garde','city pop','drum and bass','shoegaze','math rock','art pop'];
-      const pick3 = arr => {
-        const a = [...arr].sort(() => Math.random() - 0.5);
-        return [a[0], a[1], a[2]];
+      const pickRand = arr => arr[Math.floor(Math.random() * arr.length)];
+      const pick2Distinct = arr => {
+        const a = pickRand(arr); let b; do { b = pickRand(arr); } while (b === a); return [a, b];
       };
-      const [decade] = pick3(_decades);
-      const [region] = pick3(_regions);
-      const [genre1, genre2] = pick3(_genres);
+      const decade = pickRand(_decades);
+      const region = pickRand(_regions);
+      const [genre1, genre2] = pick2Distinct(_genres);
 
       const seenList = seenAlbums.size > 0
         ? `\n請勿重複推薦以下已推薦過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
