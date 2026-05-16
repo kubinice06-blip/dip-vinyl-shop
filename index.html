@@ -28,8 +28,9 @@
     .search-bar input { border: none; outline: none; font-family: var(--mono); font-size: 11px; color: var(--black); width: 100%; background: transparent; }
     .search-bar input::placeholder { color: var(--gray); }
 
-    .main-tabs { border-bottom: 1px solid var(--line); display: flex; }
-    .main-tab { background: none; border: none; border-bottom: 3px solid transparent; padding: 0 28px; height: 48px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; transition: all 0.15s; }
+    .main-tabs { border-bottom: 1px solid var(--line); display: flex; overflow-x: auto; scrollbar-width: none; }
+    .main-tabs::-webkit-scrollbar { display: none; }
+    .main-tab { background: none; border: none; border-bottom: 3px solid transparent; padding: 0 28px; height: 48px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); cursor: pointer; transition: all 0.15s; white-space: nowrap; flex-shrink: 0; }
     .main-tab:hover { color: var(--black); }
     .main-tab.active { color: var(--black); border-bottom-color: var(--black); }
     .archive-card { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; text-decoration: none; color: var(--black); display: block; }
@@ -746,9 +747,10 @@
     }
 
     if (tab === 'akinator') {
-      history.replaceState(null, '', '#akinator');
       document.getElementById('akinatorModal').classList.add('open');
       document.body.style.overflow = 'hidden';
+      document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
       if (akiPhase === 'idle') startAkinator();
       return;
     }
@@ -1537,7 +1539,6 @@ ${seenList}
   document.getElementById('akinatorCloseBtn').addEventListener('click', () => {
     document.getElementById('akinatorModal').classList.remove('open');
     document.body.style.overflow = '';
-    history.replaceState(null, '', '#akinator');
     akiPhase = 'idle';
     akiAnswers = [];
     akiWrongGuesses = [];
@@ -1570,17 +1571,6 @@ ${seenList}
     });
   }
 
-  function akiHistoryHtml() {
-    if (!akiAnswers.length) return '';
-    const items = akiAnswers.map(item =>
-      `<div class="aki-history-item">
-        <span class="aki-history-q">${item.q}</span>
-        <span class="aki-history-a">${item.a}</span>
-      </div>`
-    ).join('');
-    return `<div class="aki-history"><div class="aki-history-label">問答記錄</div>${items}</div>`;
-  }
-
   function renderAkiQuestionShell(loading = false) {
     const n = akiAnswers.length + 1;
     const pct = Math.round(((n - 1) / AKI_MAX) * 100);
@@ -1606,8 +1596,7 @@ ${seenList}
              </div>
              ${canGuess ? `<button class="aki-answer-btn" style="margin-top:16px;border-color:var(--black);font-size:10px;" id="akiForceGuessBtn">我覺得你應該猜得出來了！</button>` : ''}`
         }
-      </div>
-      ${akiHistoryHtml()}`;
+      </div>`;
 
     if (!loading) {
       document.querySelectorAll('.aki-answer-btn[data-ans]').forEach(btn => {
@@ -1653,8 +1642,7 @@ ${seenList}
       }
     } catch(e) {
       document.getElementById('akiContent').innerHTML = `
-        ${akiHistoryHtml()}
-        <div class="aki-loading" style="padding:32px 20px;">
+          <div class="aki-loading" style="padding:32px 20px;">
           <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
           <button class="aki-replay-btn" style="margin-top:20px;" id="akiRetryBtn">重試</button>
         </div>`;
@@ -1700,8 +1688,7 @@ ${qaText}${wrongPart}
       renderAkiGuess(json.guess, json.explanation);
     } catch(e) {
       document.getElementById('akiContent').innerHTML = `
-        ${akiHistoryHtml()}
-        <div class="aki-loading" style="padding:32px 20px;">
+          <div class="aki-loading" style="padding:32px 20px;">
           <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
           <button class="aki-replay-btn" style="margin-top:20px;" id="akiRetryBtn">重試</button>
         </div>`;
@@ -1711,7 +1698,6 @@ ${qaText}${wrongPart}
 
   function renderAkiGuess(guess, explanation) {
     document.getElementById('akiContent').innerHTML = `
-      ${akiHistoryHtml()}
       <div class="aki-guess-area">
         <div class="aki-guess-label">分析了 ${akiAnswers.length} 題後，我猜——</div>
         <div class="aki-guess-name">${guess}</div>
@@ -1769,10 +1755,6 @@ ${qaText}${wrongPart}
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       loadQuizData().then(() => startQuiz());
-    } else if (hash === 'akinator') {
-      document.getElementById('akinatorModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      startAkinator();
     } else {
       const btn = document.querySelector(`.main-tab[data-tab="${hash}"]`);
       if (btn) btn.click();
