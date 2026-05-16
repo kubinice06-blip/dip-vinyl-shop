@@ -1043,15 +1043,15 @@
         return imgs[0] && p.artist;
       });
 
-      // 35% stock, 25% reel, 40% global AI
-      if (rand < 0.35 && stockPool.length) {
+      // 25% stock, 25% reel, 50% global AI
+      if (rand < 0.25 && stockPool.length) {
         const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
         const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText);
         await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason });
         return;
       }
 
-      if (rand < 0.60 && quizReels.length) {
+      if (rand < 0.50 && quizReels.length) {
         const pick = quizReels[Math.floor(Math.random() * quizReels.length)];
         const reason = await getAiReason(pick.artist, pick.title || '', qaText);
         await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason });
