@@ -248,6 +248,8 @@
     .quiz-result-reason { font-size: 11px; line-height: 1.9; padding: 16px; border: 1px solid var(--line); margin-bottom: 20px; }
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
+    .quiz-another-btn { width: 100%; background: none; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s; margin-bottom: 12px; }
+    .quiz-another-btn:hover { background: var(--black); color: #fff; }
     .quiz-retry-btn { width: 100%; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-retry-btn:hover { border-color: var(--black); color: var(--black); }
     .quiz-share-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; margin-bottom: 12px; transition: opacity 0.15s; }
@@ -919,6 +921,9 @@
       const id = e.target.closest('[data-quiz-action="view-item"]').dataset.id;
       openModal(id);
     }
+    if (e.target.closest('[data-quiz-action="another"]')) {
+      submitQuiz();
+    }
     if (e.target.closest('[data-quiz-action="share"]')) {
       shareQuizResult();
     }
@@ -1167,6 +1172,7 @@ ${qaText}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
+        <button class="quiz-another-btn" data-quiz-action="another">再一張</button>
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
