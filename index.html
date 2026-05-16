@@ -1052,15 +1052,15 @@
       });
       const freshReels = quizReels.filter(r => !seenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
 
-      // 25% stock, 25% reel, 50% global AI
-      if (rand < 0.25 && stockPool.length) {
+      // 15% stock, 15% reel, 70% global AI
+      if (rand < 0.15 && stockPool.length) {
         const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
         const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText);
         await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason });
         return;
       }
 
-      if (rand < 0.50 && freshReels.length) {
+      if (rand < 0.30 && freshReels.length) {
         const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
         const reason = await getAiReason(pick.artist, pick.title || '', qaText);
         await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason });
@@ -1146,7 +1146,7 @@ ${seenList}
         const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
         const shortcode = scMatch?.[2];
         if (shortcode) {
-          coverHtml = `<iframe src="https://www.instagram.com/reel/${shortcode}/embed/" style="width:100%;border:none;aspect-ratio:9/16;max-height:500px;display:block;margin-bottom:20px;" allowtransparency="true" loading="lazy"></iframe>`;
+          coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
         }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
         // Fetch Spotify cover for canvas screenshot (no visible use in UI)
