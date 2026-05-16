@@ -262,6 +262,55 @@
     .quiz-stock-thumb img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border: 1px solid var(--line); transition: opacity 0.15s; }
     .quiz-stock-thumb:hover img { opacity: 0.7; }
     .quiz-stock-thumb-name { font-size: 8px; color: var(--gray); margin-top: 4px; letter-spacing: 0.04em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+    /* ── Akinator 猜音樂家 ── */
+    .akinator-modal { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.98); z-index: 250; overflow-y: auto; }
+    .akinator-modal.open { display: block; }
+    .aki-inner { max-width: 560px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); min-height: 100vh; }
+    .aki-topbar { border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: rgba(255,255,255,0.98); z-index: 10; }
+    .aki-topbar-label { font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; }
+    .aki-intro { padding: 48px 20px 32px; }
+    .aki-intro-title { font-size: 18px; font-weight: 700; line-height: 1.5; margin-bottom: 16px; }
+    .aki-intro-desc { font-size: 11px; color: var(--gray); line-height: 2; margin-bottom: 32px; }
+    .aki-start-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 16px; cursor: pointer; transition: opacity 0.15s; }
+    .aki-start-btn:hover { opacity: 0.8; }
+    .aki-progress { padding: 14px 20px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; }
+    .aki-progress-label { font-size: 10px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; }
+    .aki-progress-track { flex: 1; height: 1px; background: var(--line); margin: 0 16px; }
+    .aki-progress-fill { height: 1px; background: var(--black); transition: width 0.4s; }
+    .aki-q-area { padding: 36px 20px 24px; }
+    .aki-q-number { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+    .aki-question { font-size: 15px; font-weight: 700; line-height: 1.7; margin-bottom: 32px; }
+    .aki-answer-btns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .aki-answer-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 8px; cursor: pointer; color: var(--black); transition: all 0.15s; }
+    .aki-answer-btn:hover { border-color: var(--black); background: var(--black); color: #fff; }
+    .aki-history { margin: 28px 20px 0; border-top: 1px solid var(--line); padding-top: 16px; }
+    .aki-history-label { font-size: 9px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    .aki-history-item { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 10px; }
+    .aki-history-q { color: var(--gray); flex: 1; line-height: 1.6; }
+    .aki-history-a { font-weight: 700; white-space: nowrap; }
+    .aki-loading { padding: 80px 20px; text-align: center; }
+    .aki-loading .spinner { margin: 0 auto 16px; }
+    .aki-loading-text { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; }
+    .aki-guess-area { padding: 36px 20px; }
+    .aki-guess-label { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px; }
+    .aki-guess-name { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; }
+    .aki-guess-explanation { font-size: 11px; color: var(--gray); line-height: 1.8; padding: 14px 16px; border: 1px solid var(--line); margin-bottom: 28px; }
+    .aki-confirm-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .aki-confirm-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 14px; cursor: pointer; color: var(--black); transition: all 0.15s; }
+    .aki-confirm-btn.correct { background: var(--black); color: #fff; border-color: var(--black); }
+    .aki-confirm-btn:hover { border-color: var(--black); }
+    .aki-confirm-btn.correct:hover { opacity: 0.8; }
+    .aki-result { padding: 48px 20px; text-align: center; }
+    .aki-result-icon { font-size: 40px; margin-bottom: 20px; }
+    .aki-result-title { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+    .aki-result-sub { font-size: 11px; color: var(--gray); line-height: 1.8; margin-bottom: 32px; }
+    .aki-result-reveal { margin-bottom: 28px; text-align: left; }
+    .aki-result-reveal-label { font-size: 9px; color: var(--gray); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+    .aki-result-reveal input { width: 100%; border: 1px solid var(--line); background: none; font-family: var(--mono); font-size: 13px; font-weight: 700; padding: 12px 14px; outline: none; color: var(--black); }
+    .aki-result-reveal input:focus { border-color: var(--black); }
+    .aki-replay-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 14px; cursor: pointer; transition: opacity 0.15s; }
+    .aki-replay-btn:hover { opacity: 0.8; }
   </style>
 </head>
 <body>
@@ -282,6 +331,7 @@
   <button class="main-tab active" data-tab="used">Used</button>
   <button class="main-tab" data-tab="new">New</button>
   <button class="main-tab" data-tab="quiz">心情選歌</button>
+  <button class="main-tab" data-tab="akinator">猜猜我是誰</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
 <div class="search-bar">
@@ -390,6 +440,16 @@
       <button class="modal-close-btn" id="quizCloseBtn">✕ Close</button>
     </div>
     <div id="quizContent"></div>
+  </div>
+</div>
+
+<div class="akinator-modal" id="akinatorModal">
+  <div class="aki-inner">
+    <div class="aki-topbar">
+      <span class="aki-topbar-label">猜猜我是誰 — Music Akinator</span>
+      <button class="modal-close-btn" id="akinatorCloseBtn">✕ Close</button>
+    </div>
+    <div id="akiContent"></div>
   </div>
 </div>
 
@@ -682,6 +742,14 @@
       document.body.style.overflow = 'hidden';
       if (!quizQs.length) await loadQuizData();
       startQuiz();
+      return;
+    }
+
+    if (tab === 'akinator') {
+      history.replaceState(null, '', '#akinator');
+      document.getElementById('akinatorModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (akiPhase === 'idle') startAkinator();
       return;
     }
 
@@ -1440,6 +1508,225 @@ ${seenList}
     return {};
   }
 
+  // ── 猜猜我是誰 (Music Akinator) ──
+  const AKI_QUESTIONS = [
+    '你想的是一位單獨的藝人（獨唱歌手），而不是樂團嗎？',
+    '這位藝人主要以英語演唱嗎？',
+    '這位藝人是男性（或以男性成員為主的樂團）嗎？',
+    '這位藝人在 2000 年之後才出道嗎？',
+    '這位藝人主要來自美國或加拿大嗎？',
+    '這位藝人來自英國或愛爾蘭嗎？',
+    '這位藝人來自日本、韓國或台灣等亞洲地區嗎？',
+    '這位藝人在 1990 年代已是主要活躍時期嗎？',
+    '這位藝人在 1980 年代或更早就已出道嗎？',
+    '這位藝人目前仍在活躍（近 3 年有新作品或演出）嗎？',
+    '這位藝人以搖滾或金屬風格為主嗎？',
+    '這位藝人以電子、舞曲或 EDM 風格為主嗎？',
+    '這位藝人以嘻哈或饒舌為主嗎？',
+    '這位藝人以流行（Pop）為主嗎？',
+    '這位藝人以爵士、藍調或靈魂樂（Soul/R&B）為主嗎？',
+    '這位藝人在全球有非常高的知名度（幾乎人人聽過名字）嗎？',
+    '這位藝人曾獲得格萊美獎或同等重量級的國際音樂獎項嗎？',
+    '這位藝人曾有單曲登上全球排行榜冠軍（如 Billboard Hot 100）嗎？',
+    '這位藝人以演奏樂器著稱（而非主要以歌聲或形象出名）嗎？',
+    '這位藝人以獨特視覺形象或舞台表演風格著稱嗎？',
+    '這是一個超過 3 人的樂團嗎？',
+    '這位藝人曾和大量其他歌手合作錄製單曲或專輯嗎？',
+    '這位藝人有超過 30 年的音樂生涯嗎？',
+    '這位藝人以黑暗、憂鬱或實驗性風格著稱嗎？',
+    '這位藝人的音樂風格可以歸類為「獨立音樂（Indie）」或「另類（Alternative）」嗎？',
+    '這位藝人主要以鋼琴為核心樂器嗎？',
+    '這位藝人的作品常見於電影配樂、廣告或電視節目嗎？',
+    '這位藝人是否被認為是某個音樂流派的開創者或代表人物？',
+    '這位藝人是否曾引發重大的社會討論或文化影響？',
+    '這位藝人的音樂是否帶有強烈的民謠（Folk）或鄉村（Country）元素？',
+  ];
+
+  let akiAnswers = [];
+  let akiQIdx = 0;
+  let akiPhase = 'idle';
+  let akiWrongGuesses = [];
+
+  document.getElementById('akinatorCloseBtn').addEventListener('click', () => {
+    document.getElementById('akinatorModal').classList.remove('open');
+    document.body.style.overflow = '';
+    history.replaceState(null, '', '#akinator');
+    akiPhase = 'idle';
+    akiAnswers = [];
+    akiQIdx = 0;
+    akiWrongGuesses = [];
+  });
+
+  function startAkinator() {
+    akiPhase = 'intro';
+    akiAnswers = [];
+    akiQIdx = 0;
+    akiWrongGuesses = [];
+    renderAkiIntro();
+  }
+
+  function renderAkiIntro() {
+    document.getElementById('akiContent').innerHTML = `
+      <div class="aki-intro">
+        <div class="aki-intro-title">心裡想好一位<br>音樂家或樂團</div>
+        <div class="aki-intro-desc">
+          可以是任何人——<br>
+          超級巨星或冷門地下、<br>
+          任何年代、任何國家、任何曲風。<br><br>
+          我會透過問題，一步步猜出你心中的答案。
+        </div>
+        <button class="aki-start-btn" id="akiStartBtn">我已想好，開始！</button>
+      </div>`;
+    document.getElementById('akiStartBtn').addEventListener('click', () => {
+      akiPhase = 'playing';
+      renderAkiQuestion();
+    });
+  }
+
+  function renderAkiLoading(msg) {
+    document.getElementById('akiContent').innerHTML = `
+      <div class="aki-loading">
+        <div class="spinner"></div>
+        <div class="aki-loading-text">${msg || '分析中…'}</div>
+      </div>`;
+  }
+
+  function renderAkiQuestion() {
+    const total = AKI_QUESTIONS.length;
+    const pct = Math.round((akiQIdx / total) * 100);
+    const canGuess = akiQIdx >= 8;
+    const histItems = akiAnswers.map(item =>
+      `<div class="aki-history-item">
+        <span class="aki-history-q">${item.q}</span>
+        <span class="aki-history-a">${item.a}</span>
+      </div>`
+    ).join('');
+
+    document.getElementById('akiContent').innerHTML = `
+      <div class="aki-progress">
+        <span class="aki-progress-label">第 ${akiQIdx + 1} 題</span>
+        <div class="aki-progress-track"><div class="aki-progress-fill" style="width:${pct}%"></div></div>
+        <span class="aki-progress-label">${total} 題</span>
+      </div>
+      <div class="aki-q-area">
+        <div class="aki-q-number">問題 #${akiQIdx + 1}</div>
+        <div class="aki-question">${AKI_QUESTIONS[akiQIdx]}</div>
+        <div class="aki-answer-btns">
+          <button class="aki-answer-btn" data-ans="是">是</button>
+          <button class="aki-answer-btn" data-ans="否">否</button>
+          <button class="aki-answer-btn" data-ans="不確定">不確定</button>
+        </div>
+        ${canGuess ? `<button class="aki-answer-btn" style="margin-top:16px;border-color:var(--black);font-size:10px;" id="akiForceGuessBtn">我覺得你應該猜得出來了！</button>` : ''}
+      </div>
+      ${histItems ? `<div class="aki-history"><div class="aki-history-label">問答記錄</div>${histItems}</div>` : ''}`;
+
+    document.querySelectorAll('.aki-answer-btn[data-ans]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        akiAnswers.push({ q: AKI_QUESTIONS[akiQIdx], a: btn.dataset.ans });
+        akiQIdx++;
+        if (akiQIdx >= AKI_QUESTIONS.length) {
+          triggerAkiGuess();
+        } else {
+          renderAkiQuestion();
+        }
+      });
+    });
+    document.getElementById('akiForceGuessBtn')?.addEventListener('click', triggerAkiGuess);
+  }
+
+  async function triggerAkiGuess() {
+    renderAkiLoading('正在分析你的答案…');
+    const qaText = akiAnswers.map((item, i) => `Q${i+1}: ${item.q} → ${item.a}`).join('\n');
+    const wrongPart = akiWrongGuesses.length
+      ? `\n\n已排除（猜過但答案不對）：${akiWrongGuesses.join('、')}` : '';
+    const prompt = `你是世界頂尖的音樂知識庫，熟悉全球所有音樂家和樂團（主流到地下、任何年代、任何國家、任何曲風）。
+
+根據以下問答，推斷使用者心中想的是哪位音樂家或樂團：
+
+${qaText}${wrongPart}
+
+分析所有答案，給出最符合所有條件的唯一猜測。
+只回傳 JSON：{"guess":"藝人或樂團的完整名稱","explanation":"一句繁體中文說明推理邏輯"}`;
+
+    try {
+      const resp = await fetch(`${WORKER_URL}/grok`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      if (!resp.ok) throw new Error(`${resp.status}`);
+      const data = await resp.json();
+      const text = data.choices?.[0]?.message?.content || '';
+      const json = JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] || text);
+      akiPhase = 'guessing';
+      renderAkiGuess(json.guess, json.explanation);
+    } catch(e) {
+      document.getElementById('akiContent').innerHTML = `
+        <div class="aki-loading">
+          <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
+          <button class="aki-replay-btn" style="margin-top:24px;" id="akiRetryBtn">重試</button>
+        </div>`;
+      document.getElementById('akiRetryBtn').addEventListener('click', triggerAkiGuess);
+    }
+  }
+
+  function renderAkiGuess(guess, explanation) {
+    const answeredCount = akiAnswers.length;
+    document.getElementById('akiContent').innerHTML = `
+      <div class="aki-guess-area">
+        <div class="aki-guess-label">分析了 ${answeredCount} 題後，我猜——</div>
+        <div class="aki-guess-name">${guess}</div>
+        <div class="aki-guess-explanation">${explanation || ''}</div>
+        <div class="aki-confirm-btns">
+          <button class="aki-confirm-btn correct" id="akiCorrectBtn">猜對了！</button>
+          <button class="aki-confirm-btn" id="akiWrongBtn">不對…</button>
+        </div>
+      </div>`;
+    document.getElementById('akiCorrectBtn').addEventListener('click', () => renderAkiResult(true, guess));
+    document.getElementById('akiWrongBtn').addEventListener('click', () => {
+      akiWrongGuesses.push(guess);
+      if (akiQIdx < AKI_QUESTIONS.length) {
+        akiPhase = 'playing';
+        renderAkiQuestion();
+      } else {
+        triggerAkiGuess();
+      }
+    });
+  }
+
+  function renderAkiResult(win, guess) {
+    akiPhase = 'result';
+    const answeredCount = akiAnswers.length;
+    if (win) {
+      document.getElementById('akiContent').innerHTML = `
+        <div class="aki-result">
+          <div class="aki-result-icon">🎯</div>
+          <div class="aki-result-title">猜對了！</div>
+          <div class="aki-result-sub">答了 ${answeredCount} 題<br>你心中的答案是「${guess}」</div>
+          <button class="aki-replay-btn" id="akiReplayBtn">再玩一次</button>
+        </div>`;
+    } else {
+      document.getElementById('akiContent').innerHTML = `
+        <div class="aki-result">
+          <div class="aki-result-icon">🤔</div>
+          <div class="aki-result-title">這次猜不到…</div>
+          <div class="aki-result-sub">問完所有問題還是沒猜出來，<br>你贏了這回合！</div>
+          <div class="aki-result-reveal">
+            <div class="aki-result-reveal-label">你心中的答案是？</div>
+            <input type="text" id="akiRevealInput" placeholder="輸入藝人 / 樂團名稱…">
+          </div>
+          <button class="aki-replay-btn" id="akiReplayBtn">再玩一次</button>
+        </div>`;
+    }
+    document.getElementById('akiReplayBtn').addEventListener('click', () => {
+      akiPhase = 'idle';
+      akiAnswers = [];
+      akiQIdx = 0;
+      akiWrongGuesses = [];
+      startAkinator();
+    });
+  }
+
   // Hash-based routing — runs once on page load
   (function navigateByHash() {
     const hash = window.location.hash.slice(1);
@@ -1448,6 +1735,10 @@ ${seenList}
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       loadQuizData().then(() => startQuiz());
+    } else if (hash === 'akinator') {
+      document.getElementById('akinatorModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      startAkinator();
     } else {
       const btn = document.querySelector(`.main-tab[data-tab="${hash}"]`);
       if (btn) btn.click();
