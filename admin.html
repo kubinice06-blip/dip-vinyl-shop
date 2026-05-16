@@ -496,7 +496,11 @@
   <div class="quiz-admin-wrap">
     <div class="section">
       <div class="section-label">新增 Reel</div>
-      <div class="field"><label>Instagram Reel 連結 *</label><input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/…"></div>
+      <div class="field">
+        <label>Instagram Reel 連結 *</label>
+        <input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/…">
+        <div id="reelAutoStatus" style="font-size:10px;color:#888;letter-spacing:0.06em;margin-top:4px;min-height:14px;"></div>
+      </div>
       <div class="field-row">
         <div class="field"><label>標題 / 專輯名稱</label><input type="text" id="reelTitle" placeholder="All Kinds of Weather…"></div>
         <div class="field"><label>藝人</label><input type="text" id="reelArtist" placeholder="Red Garland…"></div>
@@ -645,6 +649,7 @@
   const db = getFirestore(app);
   const CLOUDINARY_CLOUD = 'ddod3zcpy';
   const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
+  const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
   const GENRES = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin'];
   const CONDITIONS = [
@@ -1722,6 +1727,56 @@
       await deleteDoc(doc(db, 'reels', row.dataset.id));
       row.remove();
     } catch(err) { alert('刪除失敗：' + err.message); }
+  });
+
+  // Auto-fill reel fields from Instagram URL via AI
+  document.getElementById('reelUrl').addEventListener('blur', async () => {
+    const url = document.getElementById('reelUrl').value.trim();
+    if (!url.includes('instagram.com')) return;
+    const statusEl = document.getElementById('reelAutoStatus');
+    // Only auto-fill if fields are empty
+    const alreadyFilled = ['reelTitle','reelArtist','reelGenre','reelMood'].some(id => document.getElementById(id).value.trim());
+    if (alreadyFilled) return;
+
+    statusEl.textContent = '⏳ 分析中…';
+    try {
+      // Try Instagram oEmbed for caption
+      let caption = '';
+      try {
+        const oe = await fetch(`https://api.instagram.com/oembed?url=${encodeURIComponent(url)}&omitscript=1`);
+        if (oe.ok) { const d = await oe.json(); caption = d.title || ''; }
+      } catch(e) {}
+
+      const prompt = `你是黑膠唱片店的助手。以下是一個 Instagram Reel 的資訊：
+連結：${url}
+${caption ? `貼文說明：${caption}` : '（無法取得貼文說明）'}
+
+請根據上述資訊判斷這個 Reel 分享的是哪首歌或哪張專輯，回傳以下 JSON（只回傳 JSON，不要其他文字）：
+{"artist":"藝人或樂團名稱","title":"曲名或專輯名稱","genre":"曲風（英文，如 jazz / ambient / soul）","mood":["心情標籤1","心情標籤2"]}
+mood 請用繁體中文，2-3個，從「放鬆、沉靜、深邃、悠閒、鬱悶、孤獨、慵懶、躁動、療癒、浪漫、懷舊、神秘」中選。
+如果資訊不足無法判斷，artist 和 title 填空字串，genre 和 mood 用合理預設值。`;
+
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      const data = await resp.json();
+      const text = data.content?.[0]?.text || '';
+      const match = text.match(/\{[\s\S]*\}/);
+      if (!match) throw new Error('格式錯誤');
+      const rec = JSON.parse(match[0]);
+
+      if (rec.artist) document.getElementById('reelArtist').value = rec.artist;
+      if (rec.title)  document.getElementById('reelTitle').value  = rec.title;
+      if (rec.genre)  document.getElementById('reelGenre').value  = rec.genre;
+      if (rec.mood?.length) document.getElementById('reelMood').value = rec.mood.join(', ');
+      statusEl.style.color = '#2a7a2a';
+      statusEl.textContent = '✓ 已自動填入，請確認後儲存';
+    } catch(e) {
+      statusEl.style.color = '#c00';
+      statusEl.textContent = '無法自動分析，請手動填寫';
+    }
   });
 
   document.getElementById('btnAddReel').addEventListener('click', async () => {
