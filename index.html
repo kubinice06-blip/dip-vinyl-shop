@@ -1415,26 +1415,25 @@ ${seenList}
       });
       if (!tokenResp.ok) return {};
       const { access_token } = await tokenResp.json();
-      const q = encodeURIComponent(`album:"${album}" artist:"${artist}"`);
-      const sr = await fetch(`https://api.spotify.com/v1/search?q=${q}&type=album&limit=3`, {
-        headers: { Authorization: 'Bearer ' + access_token },
-      });
-      const sd = await sr.json();
-      const items = sd.albums?.items;
-      if (items?.length) {
-        const normalize = s => (s || '').toLowerCase().replace(/[^a-z0-9぀-鿿]/g, '');
-        const artistN = normalize(artist);
-        // Pick the first result whose artist name has any overlap with what we searched
-        const match = items.find(item => {
-          const returnedArtist = normalize(item.artists?.[0]?.name || '');
-          if (!artistN || !returnedArtist) return true;
-          // Accept if either string contains the other (handles short names)
-          return returnedArtist.includes(artistN) || artistN.includes(returnedArtist)
-            || returnedArtist.slice(0, 4) === artistN.slice(0, 4);
-        }) || items[0];
+
+      const spotifySearch = async (q) => {
+        const sr = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=album&limit=3`, {
+          headers: { Authorization: 'Bearer ' + access_token },
+        });
+        return (await sr.json()).albums?.items || [];
+      };
+
+      // 1st try: structured query (precise)
+      let items = await spotifySearch(`album:"${album}" artist:"${artist}"`);
+      // 2nd try: free-text query (handles non-Latin artist names like 자우림)
+      if (!items.length) items = await spotifySearch(`${artist} ${album}`);
+      // 3rd try: album name only
+      if (!items.length) items = await spotifySearch(`"${album}"`);
+
+      if (items.length) {
         return {
-          imageUrl: match.images?.[0]?.url || null,
-          spotifyUrl: match.external_urls?.spotify || null,
+          imageUrl: items[0].images?.[0]?.url || null,
+          spotifyUrl: items[0].external_urls?.spotify || null,
         };
       }
     } catch(e) {}
