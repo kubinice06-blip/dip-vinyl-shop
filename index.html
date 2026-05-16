@@ -1610,20 +1610,16 @@ Guess: {"action":"guess","guess":"Full artist or band name","explanation":"一�
 
   function buildGrokMessages() {
     const msgs = [{ role: 'system', content: AKI_SYSTEM }];
-    // Build proper alternating conversation: assistant asked, user answered
-    if (akiAnswers.length === 0) {
-      msgs.push({ role: 'user', content: 'Start. Ask your first question.' });
-    } else {
-      msgs.push({ role: 'user', content: 'Start. Ask your first question.' });
-      for (const item of akiAnswers) {
-        msgs.push({ role: 'assistant', content: JSON.stringify({ action: 'ask', question: item.q }) });
-        msgs.push({ role: 'user', content: item.a });
-      }
-      const extras = [];
-      if (akiWrongGuesses.length) extras.push(`Already guessed wrong (exclude): ${akiWrongGuesses.join(', ')}`);
-      if (akiAnswers.length >= AKI_MAX) extras.push('Maximum questions reached. You MUST guess now.');
-      if (extras.length) msgs.push({ role: 'user', content: extras.join('\n') });
+    msgs.push({ role: 'user', content: 'Start. Ask your first question.' });
+    for (const item of akiAnswers) {
+      msgs.push({ role: 'assistant', content: JSON.stringify({ action: 'ask', question: item.q }) });
+      msgs.push({ role: 'user', content: item.a });
     }
+    // Append extras to last user message — never create two consecutive user messages
+    const extras = [];
+    if (akiWrongGuesses.length) extras.push(`Previously guessed wrong, exclude: ${akiWrongGuesses.join(', ')}`);
+    if (akiAnswers.length >= AKI_MAX) extras.push('Max questions reached. You MUST guess now.');
+    if (extras.length) msgs[msgs.length - 1].content += '\n\n' + extras.join('\n');
     return msgs;
   }
 
@@ -1635,8 +1631,8 @@ Guess: {"action":"guess","guess":"Full artist or band name","explanation":"一�
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: buildGrokMessages() }),
       });
-      if (!resp.ok) throw new Error(`${resp.status}`);
       const data = await resp.json();
+      if (!resp.ok) throw new Error(data.error || `HTTP ${resp.status}`);
       const text = data.choices?.[0]?.message?.content || '';
       const json = JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] || text);
       if (json.action === 'guess') {
@@ -1649,7 +1645,7 @@ Guess: {"action":"guess","guess":"Full artist or band name","explanation":"一�
     } catch(e) {
       document.getElementById('akiContent').innerHTML = `
           <div class="aki-loading" style="padding:32px 20px;">
-          <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
+          <div class="aki-loading-text">⚠ ${e.message || '連線錯誤'}</div>
           <button class="aki-replay-btn" style="margin-top:20px;" id="akiRetryBtn">重試</button>
         </div>`;
       document.getElementById('akiRetryBtn').addEventListener('click', fetchNextQuestion);
