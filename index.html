@@ -1217,8 +1217,9 @@ ${qaText}
   }
 
   async function buildResultCanvas(result) {
-    const W = 600, PAD = 36;
-    const HEADER = 60, COVER_H = 300, H = 700;
+    const W = 600, PAD = 40;
+    const HEADER = 64, COVER_H = W; // square cover = full width
+    const INFO = 340, H = HEADER + COVER_H + INFO;
     const canvas = document.createElement('canvas');
     canvas.width = W; canvas.height = H;
     const ctx = canvas.getContext('2d');
@@ -1226,21 +1227,21 @@ ${qaText}
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, W, H);
 
-    // Header strip
+    // Header
     ctx.fillStyle = '#111111';
     ctx.fillRect(0, 0, W, HEADER);
     ctx.fillStyle = '#ffffff';
-    ctx.font = '700 11px "Space Mono", monospace';
+    ctx.font = '700 14px "Space Mono", monospace';
     ctx.textBaseline = 'middle';
     ctx.fillText('DIP VINYL SHOP', PAD, HEADER / 2);
-    ctx.fillStyle = '#888888';
-    ctx.font = '400 9px "Space Mono", monospace';
+    ctx.fillStyle = '#666666';
+    ctx.font = '400 11px "Space Mono", monospace';
     ctx.textAlign = 'right';
     ctx.fillText('VINYL MATCH', W - PAD, HEADER / 2);
     ctx.textAlign = 'left';
 
-    // Cover area
-    ctx.fillStyle = '#eeeeee';
+    // Cover — square, center-cropped
+    ctx.fillStyle = '#e8e8e8';
     ctx.fillRect(0, HEADER, W, COVER_H);
 
     if (result._coverUrl) {
@@ -1253,20 +1254,19 @@ ${qaText}
         if (dh < COVER_H) { dh = COVER_H; dw = COVER_H * aspect; }
         const dx = (W - dw) / 2, dy = HEADER + (COVER_H - dh) / 2;
         ctx.save();
-        ctx.rect(0, HEADER, W, COVER_H);
-        ctx.clip();
+        ctx.beginPath(); ctx.rect(0, HEADER, W, COVER_H); ctx.clip();
         ctx.drawImage(img, dx, dy, dw, dh);
         ctx.restore();
       } catch(e) {
         ctx.fillStyle = '#bbbbbb';
-        ctx.font = '56px sans-serif';
+        ctx.font = '72px sans-serif';
         ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
         ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
         ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
       }
     } else {
       ctx.fillStyle = '#bbbbbb';
-      ctx.font = '56px sans-serif';
+      ctx.font = '72px sans-serif';
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
       ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
@@ -1278,38 +1278,46 @@ ${qaText}
     ctx.beginPath(); ctx.moveTo(0, HEADER + COVER_H); ctx.lineTo(W, HEADER + COVER_H); ctx.stroke();
 
     ctx.textBaseline = 'alphabetic';
-    let y = HEADER + COVER_H + 28;
+    let y = HEADER + COVER_H + 38;
 
     // Label
     ctx.fillStyle = '#999999';
-    ctx.font = '400 9px "Space Mono", monospace';
+    ctx.font = '400 12px "Space Mono", monospace';
     ctx.fillText('為你推薦', PAD, y);
-    y += 26;
+    y += 34;
 
     // Artist
-    ctx.fillStyle = '#888888';
-    ctx.font = '400 12px "Space Mono", monospace';
-    ctx.fillText((result.artist || '').toUpperCase(), PAD, y);
-    y += 28;
+    ctx.fillStyle = '#777777';
+    ctx.font = '400 17px "Space Mono", monospace';
+    ctx.fillText(result.artist || '', PAD, y);
+    y += 38;
 
-    // Album title
+    // Album title — auto-shrink if too wide
     ctx.fillStyle = '#111111';
-    const albumFontSize = ctx.measureText(result.album || '').width > W - PAD * 2 - 10 ? 15 : 19;
-    ctx.font = `700 ${albumFontSize}px "Space Mono", monospace`;
-    const albumLines = wrapText(ctx, result.album || '', PAD, y, W - PAD * 2, albumFontSize + 8);
-    y += albumLines * (albumFontSize + 8) + 14;
+    let albumSz = 24;
+    ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
+    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 16) {
+      albumSz -= 2;
+      ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
+    }
+    const albumLines = wrapText(ctx, result.album || '', PAD, y, W - PAD * 2, albumSz + 10);
+    y += albumLines * (albumSz + 10) + 18;
+
+    // Thin rule
+    ctx.strokeStyle = '#eeeeee';
+    ctx.beginPath(); ctx.moveTo(PAD, y); ctx.lineTo(W - PAD, y); ctx.stroke();
+    y += 26;
 
     // Reason
-    ctx.fillStyle = '#555555';
-    ctx.font = '400 11px "Space Mono", monospace';
-    const reasonCapped = (result.reason || '').slice(0, 120);
-    wrapText(ctx, reasonCapped, PAD, y, W - PAD * 2, 20);
+    ctx.fillStyle = '#444444';
+    ctx.font = '400 14px "Space Mono", monospace';
+    wrapText(ctx, (result.reason || '').slice(0, 150), PAD, y, W - PAD * 2, 26);
 
-    // URL bottom
-    ctx.fillStyle = '#aaaaaa';
-    ctx.font = '400 9px "Space Mono", monospace';
+    // URL
+    ctx.fillStyle = '#bbbbbb';
+    ctx.font = '400 11px "Space Mono", monospace';
     ctx.textAlign = 'right';
-    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 20);
+    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 22);
     ctx.textAlign = 'left';
 
     return canvas;
