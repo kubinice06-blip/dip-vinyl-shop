@@ -675,6 +675,7 @@
     const tab = btn.dataset.tab;
 
     if (tab === 'quiz') {
+      history.replaceState(null, '', '#quiz');
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       if (!quizQs.length) await loadQuizData();
@@ -684,6 +685,7 @@
 
     activeTab = tab;
     prevTab = tab;
+    history.replaceState(null, '', '#' + tab);
     document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filterSection = document.getElementById('filterSection');
@@ -906,6 +908,7 @@
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
     document.body.style.overflow = '';
+    history.replaceState(null, '', '#' + activeTab);
   });
 
   document.getElementById('quizContent').addEventListener('click', e => {
@@ -1111,6 +1114,7 @@ ${qaText}
         const imgs = Array.isArray(item.imageUrls) && item.imageUrls.length
           ? item.imageUrls : (item.imageUrl ? [item.imageUrl] : []);
         if (imgs[0]) {
+          result._coverUrl = imgs[0];
           coverHtml = `<img class="quiz-result-cover" src="${imgs[0]}" alt="" data-quiz-action="view-item" data-id="${item.id}">`;
         }
         ctaHtml = `<button class="quiz-result-cta" data-quiz-action="view-item" data-id="${item.id}">查看商品 →</button>`;
@@ -1125,12 +1129,13 @@ ${qaText}
       }
     } else {
       const { imageUrl, spotifyUrl } = await fetchSpotifyCover(result.artist, result.album);
+      result._coverUrl = imageUrl || null;
+      result._spotifyUrl = spotifyUrl;
       if (imageUrl) {
         coverHtml = spotifyUrl
           ? `<a class="quiz-result-cover-link" href="${spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${imageUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${imageUrl}" alt="">`;
       }
-      result._spotifyUrl = spotifyUrl;
     }
 
     let stockRecoHtml = '';
@@ -1194,30 +1199,156 @@ ${qaText}
     setTimeout(() => t.remove(), 2200);
   }
 
+  function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+    const lines = [];
+    let cur = '';
+    for (const ch of text) {
+      const test = cur + ch;
+      if (ctx.measureText(test).width > maxWidth && cur) {
+        lines.push(cur);
+        cur = ch;
+      } else {
+        cur = test;
+      }
+    }
+    if (cur) lines.push(cur);
+    lines.forEach((l, i) => ctx.fillText(l, x, y + i * lineHeight));
+    return lines.length;
+  }
+
+  async function buildResultCanvas(result) {
+    const W = 600, PAD = 36;
+    const HEADER = 60, COVER_H = 300, H = 700;
+    const canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, W, H);
+
+    // Header strip
+    ctx.fillStyle = '#111111';
+    ctx.fillRect(0, 0, W, HEADER);
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 11px "Space Mono", monospace';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('DIP VINYL SHOP', PAD, HEADER / 2);
+    ctx.fillStyle = '#888888';
+    ctx.font = '400 9px "Space Mono", monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('VINYL MATCH', W - PAD, HEADER / 2);
+    ctx.textAlign = 'left';
+
+    // Cover area
+    ctx.fillStyle = '#eeeeee';
+    ctx.fillRect(0, HEADER, W, COVER_H);
+
+    if (result._coverUrl) {
+      try {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = result._coverUrl; });
+        const aspect = img.naturalWidth / img.naturalHeight;
+        let dw = W, dh = W / aspect;
+        if (dh < COVER_H) { dh = COVER_H; dw = COVER_H * aspect; }
+        const dx = (W - dw) / 2, dy = HEADER + (COVER_H - dh) / 2;
+        ctx.save();
+        ctx.rect(0, HEADER, W, COVER_H);
+        ctx.clip();
+        ctx.drawImage(img, dx, dy, dw, dh);
+        ctx.restore();
+      } catch(e) {
+        ctx.fillStyle = '#bbbbbb';
+        ctx.font = '56px sans-serif';
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
+        ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+      }
+    } else {
+      ctx.fillStyle = '#bbbbbb';
+      ctx.font = '56px sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
+      ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+    }
+
+    // Separator
+    ctx.strokeStyle = '#dddddd';
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, HEADER + COVER_H); ctx.lineTo(W, HEADER + COVER_H); ctx.stroke();
+
+    ctx.textBaseline = 'alphabetic';
+    let y = HEADER + COVER_H + 28;
+
+    // Label
+    ctx.fillStyle = '#999999';
+    ctx.font = '400 9px "Space Mono", monospace';
+    ctx.fillText('為你推薦', PAD, y);
+    y += 26;
+
+    // Artist
+    ctx.fillStyle = '#888888';
+    ctx.font = '400 12px "Space Mono", monospace';
+    ctx.fillText((result.artist || '').toUpperCase(), PAD, y);
+    y += 28;
+
+    // Album title
+    ctx.fillStyle = '#111111';
+    const albumFontSize = ctx.measureText(result.album || '').width > W - PAD * 2 - 10 ? 15 : 19;
+    ctx.font = `700 ${albumFontSize}px "Space Mono", monospace`;
+    const albumLines = wrapText(ctx, result.album || '', PAD, y, W - PAD * 2, albumFontSize + 8);
+    y += albumLines * (albumFontSize + 8) + 14;
+
+    // Reason
+    ctx.fillStyle = '#555555';
+    ctx.font = '400 11px "Space Mono", monospace';
+    const reasonCapped = (result.reason || '').slice(0, 120);
+    wrapText(ctx, reasonCapped, PAD, y, W - PAD * 2, 20);
+
+    // URL bottom
+    ctx.fillStyle = '#aaaaaa';
+    ctx.font = '400 9px "Space Mono", monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 20);
+    ctx.textAlign = 'left';
+
+    return canvas;
+  }
+
   async function shareQuizResult() {
     if (!lastQuizResult) return;
     const { artist, album, reason } = lastQuizResult;
-    const shareText = `🎵 ${artist} — ${album}\n${reason || ''}\n\n來選一首適合你的歌 →`;
     const shareUrl = window.location.href;
 
     const btn = document.querySelector('[data-quiz-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
     try {
-      if (navigator.share) {
+      const canvas = await buildResultCanvas(lastQuizResult);
+      const blob = await new Promise(res => canvas.toBlob(res, 'image/png'));
+      const file = new File([blob], 'vinyl-match.png', { type: 'image/png' });
+
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           title: `${artist} — ${album} | DIP Vinyl Shop`,
-          text: shareText,
+          text: '來選一首適合你的歌 →',
+          url: shareUrl,
+          files: [file],
+        });
+      } else if (navigator.share) {
+        await navigator.share({
+          title: `${artist} — ${album} | DIP Vinyl Shop`,
+          text: `🎵 ${artist} — ${album}\n${reason || ''}\n\n來選一首適合你的歌 →`,
           url: shareUrl,
         });
       } else {
-        await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+        await navigator.clipboard.writeText(`🎵 ${artist} — ${album}\n${reason || ''}\n${shareUrl}`);
         showShareToast('已複製 ✓');
       }
     } catch(e) {
       if (e.name !== 'AbortError') {
         try {
-          await navigator.clipboard.writeText(`${shareText}\n${shareUrl}`);
+          await navigator.clipboard.writeText(`🎵 ${artist} — ${album}\n${shareUrl}`);
           showShareToast('已複製 ✓');
         } catch(e2) {}
       }
@@ -1249,6 +1380,20 @@ ${qaText}
     } catch(e) {}
     return {};
   }
+
+  // Hash-based routing — runs once on page load
+  (function navigateByHash() {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    if (hash === 'quiz') {
+      document.getElementById('quizModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      loadQuizData().then(() => startQuiz());
+    } else {
+      const btn = document.querySelector(`.main-tab[data-tab="${hash}"]`);
+      if (btn) btn.click();
+    }
+  })();
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
