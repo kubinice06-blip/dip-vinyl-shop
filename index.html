@@ -1105,9 +1105,6 @@ ${qaText}
   async function showQuizResult(result) {
     let coverHtml = '';
     let ctaHtml = '';
-    let isReel = false;
-    let reelUrl = '';
-
     if (result.type === 'stock') {
       const item = all.find(x => x.id === result.id);
       if (item) {
@@ -1122,10 +1119,16 @@ ${qaText}
     } else if (result.type === 'reel') {
       const reel = quizReels.find(r => r.id === result.id);
       if (reel) {
-        isReel = true;
-        reelUrl = reel.url;
-        coverHtml = `<blockquote class="instagram-media" data-instgrm-permalink="${reel.url}" data-instgrm-version="14" style="width:100%;margin:0 0 20px;background:#fff;border:1px solid var(--line);border-radius:4px;"></blockquote>`;
+        const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
+        const shortcode = scMatch?.[2];
+        if (shortcode) {
+          coverHtml = `<iframe src="https://www.instagram.com/reel/${shortcode}/embed/" style="width:100%;border:none;aspect-ratio:9/16;max-height:500px;display:block;margin-bottom:20px;" allowtransparency="true" loading="lazy"></iframe>`;
+        }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
+        // Fetch Spotify cover for canvas screenshot (no visible use in UI)
+        fetchSpotifyCover(reel.artist, reel.title || '').then(({ imageUrl }) => {
+          if (imageUrl) result._coverUrl = imageUrl;
+        });
       }
     } else {
       const { imageUrl, spotifyUrl } = await fetchSpotifyCover(result.artist, result.album);
@@ -1176,19 +1179,6 @@ ${qaText}
       </div>
     `;
 
-    if (isReel) {
-      const existing = document.getElementById('ig-embed-script');
-      if (!existing) {
-        const s = document.createElement('script');
-        s.id = 'ig-embed-script';
-        s.src = 'https://www.instagram.com/embed.js';
-        s.async = true;
-        s.onload = processIgEmbed;
-        document.body.appendChild(s);
-      } else {
-        processIgEmbed();
-      }
-    }
   }
 
   function showShareToast(msg) {
@@ -1220,9 +1210,11 @@ ${qaText}
     const W = 600, PAD = 40;
     const HEADER = 64, COVER_H = W; // square cover = full width
     const INFO = 340, H = HEADER + COVER_H + INFO;
+    const SCALE = 2; // retina
     const canvas = document.createElement('canvas');
-    canvas.width = W; canvas.height = H;
+    canvas.width = W * SCALE; canvas.height = H * SCALE;
     const ctx = canvas.getContext('2d');
+    ctx.scale(SCALE, SCALE);
 
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, W, H);
