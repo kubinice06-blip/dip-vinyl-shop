@@ -1067,7 +1067,18 @@
         return;
       }
 
-      // Global AI recommendation
+      // Global AI recommendation — inject random decade + region + genre seed for diversity
+      const _decades = ['1950年代','1960年代','1970年代','1980年代','1990年代','2000年代','2010年代','2020年代'];
+      const _regions = ['日本','巴西','北歐','英國','西非','東歐','德國','阿根廷','韓國','法國','牙買加','澳洲','加拿大','西班牙','衣索比亞','奈及利亞','印度','土耳其','葡萄牙','美國南方'];
+      const _genres = ['free jazz','ambient','krautrock','bossa nova','post-punk','tropicália','minimal classical','soul','funk','noise rock','folk','afrobeat','new wave','blues','electronic','reggae','flamenco','fado','psychedelic','avant-garde','city pop','drum and bass','shoegaze','math rock','art pop'];
+      const pick3 = arr => {
+        const a = [...arr].sort(() => Math.random() - 0.5);
+        return [a[0], a[1], a[2]];
+      };
+      const [decade] = pick3(_decades);
+      const [region] = pick3(_regions);
+      const [genre1, genre2] = pick3(_genres);
+
       const seenList = seenAlbums.size > 0
         ? `\n請勿重複推薦以下已推薦過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
         : '';
@@ -1076,12 +1087,16 @@
 用戶回答了5道心理測驗：
 ${qaText}
 ${seenList}
-請先判斷用戶此刻的情緒狀態（例如：憂鬱、平靜、充能、焦慮、懷舊、迷惘等），再依據大量聆聽數據的規律，推薦最適合這種情緒下聆聽的專輯。
+【本次探索方向（隨機指定，你必須從這個範疇中推薦）】
+年代：${decade} ／ 地區：${region} ／ 風格參考：${genre1} 或 ${genre2}
+（若此方向與用戶情緒完全不搭，可在同年代或同地區中找更合適的風格，但不可跳出這個地理文化圈）
+
+請先判斷用戶此刻的情緒狀態，再從上述探索方向中找一張最符合的冷門專輯。
 
 推薦原則：
-- 優先選擇冷門但有品味、有深度的作品，避免太主流或人人都知道的暢銷專輯
-- 可以是任何年代、任何風格
-- 選擇真正值得被更多人認識的作品
+- 必須是真實存在的專輯
+- 優先選擇在主流之外、但在樂迷圈內有口碑的作品
+- 避免推薦 Radiohead、Pink Floyd、Miles Davis、Beatles 等人人皆知的名字
 
 請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
 {"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文，說明為什麼這張專輯符合你現在的狀態，語氣像朋友"}`;
