@@ -1747,14 +1747,14 @@
         if (oe.ok) { const d = await oe.json(); caption = d.title || ''; }
       } catch(e) {}
 
+      // Step 1: AI extracts artist + title only (no genre guessing)
       const prompt = `你是黑膠唱片店的助手。以下是一個 Instagram Reel 的資訊：
 連結：${url}
 ${caption ? `貼文說明：${caption}` : '（無法取得貼文說明）'}
 
-請根據上述資訊判斷這個 Reel 分享的是哪首歌或哪張專輯，回傳以下 JSON（只回傳 JSON，不要其他文字）：
-{"artist":"藝人或樂團名稱","title":"曲名或專輯名稱","genre":"曲風（英文，如 jazz / ambient / soul）","mood":["心情標籤1","心情標籤2"]}
-mood 請用繁體中文，2-3個，從「放鬆、沉靜、深邃、悠閒、鬱悶、孤獨、慵懶、躁動、療癒、浪漫、懷舊、神秘」中選。
-如果資訊不足無法判斷，artist 和 title 填空字串，genre 和 mood 用合理預設值。`;
+請判斷這個 Reel 分享的是哪位藝人的哪首歌或哪張專輯，回傳 JSON（只回傳 JSON）：
+{"artist":"藝人或樂團名稱","title":"曲名或專輯名稱"}
+如果資訊不足無法確定，填空字串。不要猜測。`;
 
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
@@ -1769,8 +1769,51 @@ mood 請用繁體中文，2-3個，從「放鬆、沉靜、深邃、悠閒、鬱
 
       if (rec.artist) document.getElementById('reelArtist').value = rec.artist;
       if (rec.title)  document.getElementById('reelTitle').value  = rec.title;
-      if (rec.genre)  document.getElementById('reelGenre').value  = rec.genre;
-      if (rec.mood?.length) document.getElementById('reelMood').value = rec.mood.join(', ');
+
+      // Step 2: Spotify artist lookup for accurate genre
+      let spotifyGenre = '';
+      let spotifyMood = '';
+      if (rec.artist) {
+        try {
+          const tokResp = await fetch(`${WORKER_URL}/spotify-token`, { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+          if (tokResp.ok) {
+            const { access_token } = await tokResp.json();
+            const sr = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(rec.artist)}&type=artist&limit=1`, {
+              headers: { Authorization: 'Bearer ' + access_token }
+            });
+            const sd = await sr.json();
+            const genres = sd.artists?.items?.[0]?.genres || [];
+            if (genres.length) {
+              // Use first genre, cleaned up
+              spotifyGenre = genres[0].replace(/-/g, ' ');
+            }
+          }
+        } catch(e) {}
+      }
+
+      // Step 3: AI picks mood based on confirmed artist + genre
+      if (rec.artist) {
+        try {
+          const moodPrompt = `藝人：${rec.artist}，曲風：${spotifyGenre || '不明'}
+從以下清單選 2 個最符合這位藝人音樂氛圍的繁體中文心情標籤，只回傳 JSON 陣列，不要其他文字：
+["放鬆","沉靜","深邃","悠閒","鬱悶","孤獨","慵懶","躁動","療癒","浪漫","懷舊","神秘"]`;
+          const mr = await fetch(`${WORKER_URL}/claude`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ messages: [{ role: 'user', content: moodPrompt }] }),
+          });
+          const md = await mr.json();
+          const mt = md.content?.[0]?.text || '';
+          const mm = mt.match(/\[[\s\S]*?\]/);
+          if (mm) {
+            const moods = JSON.parse(mm[0]);
+            if (moods.length) document.getElementById('reelMood').value = moods.join(', ');
+          }
+        } catch(e) {}
+      }
+
+      if (spotifyGenre) document.getElementById('reelGenre').value = spotifyGenre;
+
       statusEl.style.color = '#2a7a2a';
       statusEl.textContent = '✓ 已自動填入，請確認後儲存';
     } catch(e) {
