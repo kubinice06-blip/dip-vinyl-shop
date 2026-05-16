@@ -906,6 +906,7 @@
   let quizAnswers = {};
   let quizIdx = 0;
   let lastQuizResult = null;
+  let seenAlbums = new Set();
 
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
@@ -971,6 +972,7 @@
     quizSelected = shuffled.slice(0, 5);
     quizAnswers = {};
     quizIdx = 0;
+    seenAlbums = new Set();
     renderQuizQ();
   }
 
@@ -1043,10 +1045,12 @@
 
     try {
       const rand = Math.random();
+      const albumKey = r => `${r.artist}||${r.album || r.title || r.name || ''}`.toLowerCase();
       const stockPool = all.filter(p => {
         const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
-        return imgs[0] && p.artist;
+        return imgs[0] && p.artist && !seenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase());
       });
+      const freshReels = quizReels.filter(r => !seenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
 
       // 25% stock, 25% reel, 50% global AI
       if (rand < 0.25 && stockPool.length) {
@@ -1056,19 +1060,22 @@
         return;
       }
 
-      if (rand < 0.50 && quizReels.length) {
-        const pick = quizReels[Math.floor(Math.random() * quizReels.length)];
+      if (rand < 0.50 && freshReels.length) {
+        const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
         const reason = await getAiReason(pick.artist, pick.title || '', qaText);
         await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason });
         return;
       }
 
       // Global AI recommendation
+      const seenList = seenAlbums.size > 0
+        ? `\n請勿重複推薦以下已推薦過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
+        : '';
       const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘冷門但有深度的音樂。
 
 用戶回答了5道心理測驗：
 ${qaText}
-
+${seenList}
 請先判斷用戶此刻的情緒狀態（例如：憂鬱、平靜、充能、焦慮、懷舊、迷惘等），再依據大量聆聽數據的規律，推薦最適合這種情緒下聆聽的專輯。
 
 推薦原則：
@@ -1161,6 +1168,7 @@ ${qaText}
     }
 
     lastQuizResult = result;
+    seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
 
     document.getElementById('quizContent').innerHTML = `
       <div class="quiz-result">
