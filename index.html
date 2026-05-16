@@ -1509,38 +1509,46 @@ ${seenList}
   }
 
   // ── 猜猜我是誰 (Music Akinator) ──
-  const AKI_FIXED_QS = [
-    '你想的是一位單獨的藝人（獨唱歌手），而不是樂團或組合嗎？',
-    '這位藝人主要以英語演唱嗎？',
-    '這位藝人是男性（或以男性成員為主）嗎？',
-    '這位藝人是在 2000 年之後才出道的嗎？',
-    '這位藝人主要來自美洲（美國、加拿大、拉丁美洲等）嗎？',
-    '這位藝人主要來自亞洲（日本、韓國、台灣、中國等）嗎？',
-  ];
+  const AKI_SYSTEM = `你是全球最精準的音樂知識 Akinator AI，熟知古今中外所有音樂家和樂團（主流巨星到地下冷門、任何年代、任���國家、任何曲風）。
 
-  let akiQueue = [];
+你的任務：透過是/否問題，猜出使用��心中的音樂人。
+
+決策樹原則（嚴格遵守）：
+1. 從最大分類開始切割：人/樂團 → 語言/地區 → 年代 → 主要曲風 → ��節特徵
+2. 一旦某個大類別確認為「是」，只在該類別內繼續追���，絕不回頭問被排除的平行類別
+   - 已確認：來自美洲 → 不再問亞洲、歐洲、非洲
+   - 已確認：搖滾風格 → 不再問爵士、嘻哈、古典、電子
+   - 已確認：2000年後出道 → 不再問「是否在1990年代活躍」
+3. 若某類別確認為「否」，整個類別及其子分類永遠排除
+4. 每次問「當前最能切割剩餘候選人」的問題
+5. 若信心超過 85%，直接猜測，不必問滿題數
+6. 最多 20 題，超過必須猜測
+
+回傳純 JSON（不含任何其他文字）��
+繼續提問：{"action":"ask","question":"問題（繁體中文）"}
+做出猜測：{"action":"guess","guess":"藝人完整名稱","explanation":"一句繁體中文推理說明"}`;
+
   let akiAnswers = [];
-  let akiQIdx = 0;
   let akiPhase = 'idle';
   let akiWrongGuesses = [];
+  let akiCurrentQ = '';
+  const AKI_MAX = 20;
 
   document.getElementById('akinatorCloseBtn').addEventListener('click', () => {
     document.getElementById('akinatorModal').classList.remove('open');
     document.body.style.overflow = '';
     history.replaceState(null, '', '#akinator');
     akiPhase = 'idle';
-    akiQueue = [];
     akiAnswers = [];
-    akiQIdx = 0;
     akiWrongGuesses = [];
+    akiCurrentQ = '';
   });
 
   function startAkinator() {
     akiPhase = 'intro';
-    akiQueue = [...AKI_FIXED_QS];
     akiAnswers = [];
-    akiQIdx = 0;
     akiWrongGuesses = [];
+    akiCurrentQ = '';
     renderAkiIntro();
   }
 
@@ -1552,122 +1560,131 @@ ${seenList}
           可以是任何人——<br>
           超級巨星或冷門地下、<br>
           任何年代、任何國家、任何曲風。<br><br>
-          我會透過問題，一步步猜出你心中的答案。
+          我會透過問���，一步步猜出你心��的答案。
         </div>
         <button class="aki-start-btn" id="akiStartBtn">我已想好，開始！</button>
       </div>`;
     document.getElementById('akiStartBtn').addEventListener('click', () => {
       akiPhase = 'playing';
-      renderAkiQuestion();
+      fetchNextQuestion();
     });
   }
 
-  function renderAkiLoading(msg) {
-    document.getElementById('akiContent').innerHTML = `
-      <div class="aki-loading">
-        <div class="spinner"></div>
-        <div class="aki-loading-text">${msg || '分析中…'}</div>
-      </div>`;
-  }
-
-  function renderAkiQuestion() {
-    const total = akiQueue.length;
-    const pct = Math.round((akiQIdx / Math.max(total, akiQIdx + 1)) * 100);
-    const canGuess = akiAnswers.length >= 8;
-    const isFixed = akiQIdx < AKI_FIXED_QS.length;
-    const histItems = akiAnswers.map(item =>
+  function akiHistoryHtml() {
+    if (!akiAnswers.length) return '';
+    const items = akiAnswers.map(item =>
       `<div class="aki-history-item">
         <span class="aki-history-q">${item.q}</span>
         <span class="aki-history-a">${item.a}</span>
       </div>`
     ).join('');
-
-    document.getElementById('akiContent').innerHTML = `
-      <div class="aki-progress">
-        <span class="aki-progress-label">第 ${akiQIdx + 1} 題</span>
-        <div class="aki-progress-track"><div class="aki-progress-fill" style="width:${pct}%"></div></div>
-        <span class="aki-progress-label" style="font-size:9px;color:var(--gray)">${isFixed ? '基礎' : '自適應'}</span>
-      </div>
-      <div class="aki-q-area">
-        <div class="aki-q-number">問題 #${akiQIdx + 1}</div>
-        <div class="aki-question">${akiQueue[akiQIdx]}</div>
-        <div class="aki-answer-btns">
-          <button class="aki-answer-btn" data-ans="是">是</button>
-          <button class="aki-answer-btn" data-ans="否">否</button>
-          <button class="aki-answer-btn" data-ans="不確定">不確定</button>
-        </div>
-        ${canGuess ? `<button class="aki-answer-btn" style="margin-top:16px;border-color:var(--black);font-size:10px;" id="akiForceGuessBtn">我覺得你應該猜得出來了！</button>` : ''}
-      </div>
-      ${histItems ? `<div class="aki-history"><div class="aki-history-label">問答記錄</div>${histItems}</div>` : ''}`;
-
-    document.querySelectorAll('.aki-answer-btn[data-ans]').forEach(btn => {
-      btn.addEventListener('click', () => handleAkiAnswer(btn.dataset.ans));
-    });
-    document.getElementById('akiForceGuessBtn')?.addEventListener('click', triggerAkiGuess);
+    return `<div class="aki-history"><div class="aki-history-label">問答記錄</div>${items}</div>`;
   }
 
-  async function handleAkiAnswer(answer) {
-    akiAnswers.push({ q: akiQueue[akiQIdx], a: answer });
-    akiQIdx++;
-    const justFinishedFixed = akiQIdx === AKI_FIXED_QS.length;
-    const exhausted = akiQIdx >= akiQueue.length;
+  function renderAkiQuestionShell(loading = false) {
+    const n = akiAnswers.length + 1;
+    const pct = Math.round(((n - 1) / AKI_MAX) * 100);
+    const canGuess = akiAnswers.length >= 6;
+    document.getElementById('akiContent').innerHTML = `
+      <div class="aki-progress">
+        <span class="aki-progress-label">第 ${n} 題</span>
+        <div class="aki-progress-track"><div class="aki-progress-fill" style="width:${pct}%"></div></div>
+        <span class="aki-progress-label">最多 ${AKI_MAX} 題</span>
+      </div>
+      <div class="aki-q-area" id="akiQArea">
+        ${loading
+          ? `<div style="display:flex;align-items:center;gap:10px;padding:20px 0;">
+               <div class="spinner" style="flex-shrink:0"></div>
+               <span style="font-size:10px;color:var(--gray);letter-spacing:0.1em;text-transform:uppercase;">思考中…</span>
+             </div>`
+          : `<div class="aki-q-number">問題 #${n}</div>
+             <div class="aki-question" id="akiQuestionText">${akiCurrentQ}</div>
+             <div class="aki-answer-btns">
+               <button class="aki-answer-btn" data-ans="是">是</button>
+               <button class="aki-answer-btn" data-ans="否">否</button>
+               <button class="aki-answer-btn" data-ans="不確定">不確定</button>
+             </div>
+             ${canGuess ? `<button class="aki-answer-btn" style="margin-top:16px;border-color:var(--black);font-size:10px;" id="akiForceGuessBtn">我覺得你應該猜得出來了！</button>` : ''}`
+        }
+      </div>
+      ${akiHistoryHtml()}`;
 
-    if (justFinishedFixed) {
-      renderAkiLoading('根據你的回答生成專屬問題…');
-      await loadAdaptiveQuestions();
-      renderAkiQuestion();
-    } else if (exhausted) {
-      triggerAkiGuess();
-    } else {
-      renderAkiQuestion();
+    if (!loading) {
+      document.querySelectorAll('.aki-answer-btn[data-ans]').forEach(btn => {
+        btn.addEventListener('click', () => handleAkiAnswer(btn.dataset.ans));
+      });
+      document.getElementById('akiForceGuessBtn')?.addEventListener('click', triggerAkiGuess);
     }
   }
 
-  async function loadAdaptiveQuestions() {
-    const qaText = akiAnswers.map((item, i) => `Q${i+1}: ${item.q} → ${item.a}`).join('\n');
-    const prompt = `你是一個音樂知識 Akinator 的問題設計師。根據以下問答，生成 8 個最有助於縮小候選範圍的後續問題。
+  function buildGrokMessages() {
+    const msgs = [{ role: 'system', content: AKI_SYSTEM }];
+    const wrongPart = akiWrongGuesses.length
+      ? `\n\n（已猜過但不對，請排除：${akiWrongGuesses.join('、')}）` : '';
+    if (akiAnswers.length === 0) {
+      msgs.push({ role: 'user', content: `開始遊戲。請問第一個問題。${wrongPart}` });
+    } else {
+      const history = akiAnswers.map(a => `${a.q}→${a.a}`).join('；');
+      const forceGuess = akiAnswers.length >= AKI_MAX
+        ? '\n\n已達題數上限，請立即做出最佳猜測。' : '';
+      msgs.push({ role: 'user', content: `問答記錄：${history}${wrongPart}${forceGuess}\n\n請繼續。` });
+    }
+    return msgs;
+  }
 
-已知資訊：
-${qaText}
-
-要求：
-- 每題必須能用「是/否/不確定」回答
-- 絕對不要問已被隱含排除的類別（例：若已知不是亞洲人，不要再問韓國、日本；若已知是爵士，不要問搖滾或嘻哈）
-- 針對已知資訊做深入追問（例：若已知英語系且2000年後出道，可問「是否在 2010 年後才出道？」「是否主要走 R&B 或 Pop 路線？」）
-- 涵蓋：曲風細節、地區細化、年代細化、知名度、樂器特徵、合作模式、獎項、視覺風格等不同面向
-- 按「最有效縮小範圍」排序
-
-只回傳 JSON：{"questions":["問題1","問題2","問題3","問題4","問題5","問題6","問題7","問題8"]}`;
-
+  async function fetchNextQuestion() {
+    renderAkiQuestionShell(true);
     try {
       const resp = await fetch(`${WORKER_URL}/grok`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+        body: JSON.stringify({ messages: buildGrokMessages() }),
       });
       if (!resp.ok) throw new Error(`${resp.status}`);
       const data = await resp.json();
       const text = data.choices?.[0]?.message?.content || '';
       const json = JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] || text);
-      if (Array.isArray(json.questions)) akiQueue.push(...json.questions);
+      if (json.action === 'guess') {
+        akiPhase = 'guessing';
+        renderAkiGuess(json.guess, json.explanation);
+      } else {
+        akiCurrentQ = json.question || '（無法取得問題）';
+        renderAkiQuestionShell(false);
+      }
     } catch(e) {
-      // fallback: continue with guess if adaptive load fails
+      document.getElementById('akiContent').innerHTML = `
+        ${akiHistoryHtml()}
+        <div class="aki-loading" style="padding:32px 20px;">
+          <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
+          <button class="aki-replay-btn" style="margin-top:20px;" id="akiRetryBtn">重試</button>
+        </div>`;
+      document.getElementById('akiRetryBtn').addEventListener('click', fetchNextQuestion);
+    }
+  }
+
+  async function handleAkiAnswer(answer) {
+    akiAnswers.push({ q: akiCurrentQ, a: answer });
+    akiCurrentQ = '';
+    if (akiAnswers.length >= AKI_MAX) {
+      triggerAkiGuess();
+    } else {
+      fetchNextQuestion();
     }
   }
 
   async function triggerAkiGuess() {
-    renderAkiLoading('正在分析你的答案…');
+    renderAkiQuestionShell(true);
     const qaText = akiAnswers.map((item, i) => `Q${i+1}: ${item.q} → ${item.a}`).join('\n');
     const wrongPart = akiWrongGuesses.length
       ? `\n\n已排除（猜過但不對）：${akiWrongGuesses.join('、')}` : '';
-    const prompt = `你是世界頂尖的音樂知識庫，熟悉全球所有音樂家和樂團（主流到地下、任何年代、任何國家、任何曲風）。
+    const prompt = `你是世界頂尖的音樂知識庫，熟悉全球所有音樂家和樂團（主流到地下、任何年代、任��國家、任何曲風）。
 
-根據以下問答，推斷使用者心中想的是哪位音樂家或樂團：
+根據��下問答，推斷使用者心中想的是哪位音樂家或樂團：
 
 ${qaText}${wrongPart}
 
-分析所有答案，給出最符合所有條件的唯一猜測。
-只回傳 JSON：{"guess":"藝人或樂團的完整名稱","explanation":"一句繁體中文說明推理邏輯"}`;
+分析所有答案，給出唯一最符合所有��件的猜測。
+只回傳 JSON：{"guess":"藝人或樂團完整名稱","explanation":"一句繁體中文推理說明"}`;
 
     try {
       const resp = await fetch(`${WORKER_URL}/grok`, {
@@ -1683,19 +1700,20 @@ ${qaText}${wrongPart}
       renderAkiGuess(json.guess, json.explanation);
     } catch(e) {
       document.getElementById('akiContent').innerHTML = `
-        <div class="aki-loading">
+        ${akiHistoryHtml()}
+        <div class="aki-loading" style="padding:32px 20px;">
           <div class="aki-loading-text">⚠ 連線錯誤，請稍後再試</div>
-          <button class="aki-replay-btn" style="margin-top:24px;" id="akiRetryBtn">重試</button>
+          <button class="aki-replay-btn" style="margin-top:20px;" id="akiRetryBtn">重試</button>
         </div>`;
       document.getElementById('akiRetryBtn').addEventListener('click', triggerAkiGuess);
     }
   }
 
   function renderAkiGuess(guess, explanation) {
-    const answeredCount = akiAnswers.length;
     document.getElementById('akiContent').innerHTML = `
+      ${akiHistoryHtml()}
       <div class="aki-guess-area">
-        <div class="aki-guess-label">分析了 ${answeredCount} 題後，我猜——</div>
+        <div class="aki-guess-label">分析了 ${akiAnswers.length} 題後，我猜——</div>
         <div class="aki-guess-name">${guess}</div>
         <div class="aki-guess-explanation">${explanation || ''}</div>
         <div class="aki-confirm-btns">
@@ -1707,19 +1725,18 @@ ${qaText}${wrongPart}
     document.getElementById('akiWrongBtn').addEventListener('click', () => {
       akiWrongGuesses.push(guess);
       akiPhase = 'playing';
-      triggerAkiGuess();
+      fetchNextQuestion();
     });
   }
 
   function renderAkiResult(win, guess) {
     akiPhase = 'result';
-    const answeredCount = akiAnswers.length;
     if (win) {
       document.getElementById('akiContent').innerHTML = `
         <div class="aki-result">
           <div class="aki-result-icon">🎯</div>
           <div class="aki-result-title">猜對了！</div>
-          <div class="aki-result-sub">答了 ${answeredCount} 題<br>你心中的答案是「${guess}」</div>
+          <div class="aki-result-sub">答了 ${akiAnswers.length} 題<br>你心中的答案是「${guess}」</div>
           <button class="aki-replay-btn" id="akiReplayBtn">再玩一次</button>
         </div>`;
     } else {
@@ -1727,7 +1744,7 @@ ${qaText}${wrongPart}
         <div class="aki-result">
           <div class="aki-result-icon">🤔</div>
           <div class="aki-result-title">這次猜不到…</div>
-          <div class="aki-result-sub">問完所有問題還是沒猜出來，<br>你贏了這回合！</div>
+          <div class="aki-result-sub">問了 ${akiAnswers.length} 題還是沒猜出來，<br>你贏了這回合！</div>
           <div class="aki-result-reveal">
             <div class="aki-result-reveal-label">你心中的答案是？</div>
             <input type="text" id="akiRevealInput" placeholder="輸入藝人 / 樂團名稱…">
@@ -1737,10 +1754,9 @@ ${qaText}${wrongPart}
     }
     document.getElementById('akiReplayBtn').addEventListener('click', () => {
       akiPhase = 'idle';
-      akiQueue = [];
       akiAnswers = [];
-      akiQIdx = 0;
       akiWrongGuesses = [];
+      akiCurrentQ = '';
       startAkinator();
     });
   }
