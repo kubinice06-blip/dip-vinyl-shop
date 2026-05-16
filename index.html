@@ -1014,14 +1014,6 @@
     document.getElementById('quizSubmit')?.addEventListener('click', submitQuiz);
   }
 
-  function processIgEmbed() {
-    if (window.instgrm?.Embeds) {
-      window.instgrm.Embeds.process();
-    } else {
-      setTimeout(processIgEmbed, 400);
-    }
-  }
-
   async function getAiReason(artist, album, qaText) {
     const prompt = `你是黑膠唱片店的選片顧問。用戶回答了5道心理測驗：\n${qaText}\n\n你決定推薦：${artist} — ${album}\n\n請用2-3句繁體中文說明，為什麼這張專輯符合你現在的狀態。語氣像朋友，不要像機器。只回傳說明文字，不要包含任何 JSON 或格式符號。`;
     try {
@@ -1194,23 +1186,49 @@ ${qaText}
     let cur = '';
     for (const ch of text) {
       const test = cur + ch;
-      if (ctx.measureText(test).width > maxWidth && cur) {
-        lines.push(cur);
-        cur = ch;
-      } else {
-        cur = test;
-      }
+      if (ctx.measureText(test).width > maxWidth && cur) { lines.push(cur); cur = ch; }
+      else cur = test;
     }
     if (cur) lines.push(cur);
     lines.forEach((l, i) => ctx.fillText(l, x, y + i * lineHeight));
     return lines.length;
   }
 
+  function measureLines(ctx, text, maxWidth) {
+    let n = 1, cur = '';
+    for (const ch of text) {
+      const test = cur + ch;
+      if (ctx.measureText(test).width > maxWidth && cur) { n++; cur = ch; }
+      else cur = test;
+    }
+    return n;
+  }
+
   async function buildResultCanvas(result) {
-    const W = 600, PAD = 40;
-    const HEADER = 64, COVER_H = W; // square cover = full width
-    const INFO = 340, H = HEADER + COVER_H + INFO;
-    const SCALE = 2; // retina
+    const W = 600, PAD = 36;
+    const HEADER = 56, COVER_H = W, SCALE = 2;
+    const FONT_ARTIST = 22, FONT_ALBUM_MAX = 32, FONT_REASON = 20;
+    const LH_REASON = 32, BOX_PAD = 22;
+
+    // Pre-measure to calculate dynamic height
+    const mc = document.createElement('canvas').getContext('2d');
+    let albumSz = FONT_ALBUM_MAX;
+    mc.font = `700 ${albumSz}px "Space Mono", monospace`;
+    while (mc.measureText(result.album || '').width > W - PAD * 2 && albumSz > 20) {
+      albumSz -= 2; mc.font = `700 ${albumSz}px "Space Mono", monospace`;
+    }
+    const albumLH = albumSz + 14;
+    const albumLineN = measureLines(mc, result.album || '', W - PAD * 2);
+    mc.font = `400 ${FONT_REASON}px "Space Mono", monospace`;
+    const reasonText = (result.reason || '').slice(0, 240);
+    const reasonLineN = measureLines(mc, reasonText, W - PAD * 2 - BOX_PAD * 2);
+
+    const H = HEADER + 40 + COVER_H
+      + 28 + FONT_ARTIST + 12
+      + albumLineN * albumLH + 24
+      + reasonLineN * LH_REASON + BOX_PAD * 2
+      + 40 + 24;
+
     const canvas = document.createElement('canvas');
     canvas.width = W * SCALE; canvas.height = H * SCALE;
     const ctx = canvas.getContext('2d');
@@ -1219,23 +1237,29 @@ ${qaText}
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, W, H);
 
-    // Header
+    // Black header bar
     ctx.fillStyle = '#111111';
     ctx.fillRect(0, 0, W, HEADER);
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '700 14px "Space Mono", monospace';
     ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '700 15px "Space Mono", monospace';
     ctx.fillText('DIP VINYL SHOP', PAD, HEADER / 2);
-    ctx.fillStyle = '#666666';
+    ctx.fillStyle = '#888888';
     ctx.font = '400 11px "Space Mono", monospace';
     ctx.textAlign = 'right';
     ctx.fillText('VINYL MATCH', W - PAD, HEADER / 2);
     ctx.textAlign = 'left';
 
-    // Cover — square, center-cropped
-    ctx.fillStyle = '#e8e8e8';
-    ctx.fillRect(0, HEADER, W, COVER_H);
+    // "為你推薦" label
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = '#999999';
+    ctx.font = '400 16px "Space Mono", monospace';
+    ctx.fillText('為你推薦', PAD, HEADER + 28);
 
+    // Square cover (starts at HEADER + 40)
+    const coverY = HEADER + 40;
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, coverY, W, COVER_H);
     if (result._coverUrl) {
       try {
         const img = new Image();
@@ -1244,72 +1268,57 @@ ${qaText}
         const aspect = img.naturalWidth / img.naturalHeight;
         let dw = W, dh = W / aspect;
         if (dh < COVER_H) { dh = COVER_H; dw = COVER_H * aspect; }
-        const dx = (W - dw) / 2, dy = HEADER + (COVER_H - dh) / 2;
+        const dx = (W - dw) / 2, diy = coverY + (COVER_H - dh) / 2;
         ctx.save();
-        ctx.beginPath(); ctx.rect(0, HEADER, W, COVER_H); ctx.clip();
-        ctx.drawImage(img, dx, dy, dw, dh);
+        ctx.beginPath(); ctx.rect(0, coverY, W, COVER_H); ctx.clip();
+        ctx.drawImage(img, dx, diy, dw, dh);
         ctx.restore();
       } catch(e) {
-        ctx.fillStyle = '#bbbbbb';
-        ctx.font = '72px sans-serif';
-        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
+        ctx.font = '72px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, coverY + COVER_H / 2);
         ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
       }
     } else {
-      ctx.fillStyle = '#bbbbbb';
-      ctx.font = '72px sans-serif';
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText('♪', W / 2, HEADER + COVER_H / 2);
+      ctx.font = '72px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, coverY + COVER_H / 2);
       ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
     }
 
-    // Separator
-    ctx.strokeStyle = '#dddddd';
-    ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(0, HEADER + COVER_H); ctx.lineTo(W, HEADER + COVER_H); ctx.stroke();
+    // Separator under cover
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, coverY + COVER_H); ctx.lineTo(W, coverY + COVER_H); ctx.stroke();
 
-    ctx.textBaseline = 'alphabetic';
-    let y = HEADER + COVER_H + 38;
-
-    // Label
-    ctx.fillStyle = '#999999';
-    ctx.font = '400 12px "Space Mono", monospace';
-    ctx.fillText('為你推薦', PAD, y);
-    y += 34;
+    let y = coverY + COVER_H + 28;
 
     // Artist
-    ctx.fillStyle = '#777777';
-    ctx.font = '400 17px "Space Mono", monospace';
-    ctx.fillText(result.artist || '', PAD, y);
-    y += 38;
+    ctx.fillStyle = '#888888';
+    ctx.font = `400 ${FONT_ARTIST}px "Space Mono", monospace`;
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText(result.artist || '', PAD, y + FONT_ARTIST);
+    y += FONT_ARTIST + 12;
 
-    // Album title — auto-shrink if too wide
+    // Album title
     ctx.fillStyle = '#111111';
-    let albumSz = 24;
     ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 16) {
-      albumSz -= 2;
-      ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    }
-    const albumLines = wrapText(ctx, result.album || '', PAD, y, W - PAD * 2, albumSz + 10);
-    y += albumLines * (albumSz + 10) + 18;
+    const drawnAlbumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
+    y += drawnAlbumLines * albumLH + 24;
 
-    // Thin rule
-    ctx.strokeStyle = '#eeeeee';
-    ctx.beginPath(); ctx.moveTo(PAD, y); ctx.lineTo(W - PAD, y); ctx.stroke();
-    y += 26;
-
-    // Reason
+    // Reason in bordered box
+    const boxH = reasonLineN * LH_REASON + BOX_PAD * 2;
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
     ctx.fillStyle = '#444444';
-    ctx.font = '400 14px "Space Mono", monospace';
-    wrapText(ctx, (result.reason || '').slice(0, 150), PAD, y, W - PAD * 2, 26);
+    ctx.font = `400 ${FONT_REASON}px "Space Mono", monospace`;
+    ctx.textBaseline = 'top';
+    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_REASON);
+    ctx.textBaseline = 'alphabetic';
+    y += boxH + 32;
 
     // URL
     ctx.fillStyle = '#bbbbbb';
-    ctx.font = '400 11px "Space Mono", monospace';
+    ctx.font = '400 14px "Space Mono", monospace';
     ctx.textAlign = 'right';
-    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 22);
+    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 24);
     ctx.textAlign = 'left';
 
     return canvas;
