@@ -1290,27 +1290,27 @@ ${seenList}
     const ctx = canvas.getContext('2d');
     ctx.scale(SCALE, SCALE);
 
-    // Black background
-    ctx.fillStyle = '#111111';
+    // White background
+    ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, W, H);
 
     // Top branding
     ctx.textBaseline = 'middle';
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#111111';
     ctx.font = '700 28px "Space Mono", monospace';
-    ctx.fillText('DIP VINYL SHOP', PAD, 100);
-    ctx.fillStyle = '#666666';
+    ctx.fillText('dip vinyl shop', PAD, 100);
+    ctx.fillStyle = '#999999';
     ctx.font = '400 20px "Space Mono", monospace';
     ctx.textAlign = 'right';
-    ctx.fillText('VINYL MATCH', W - PAD, 100);
+    ctx.fillText('vinyl match', W - PAD, 100);
     ctx.textAlign = 'left';
 
     // Thin top divider
-    ctx.strokeStyle = '#333333'; ctx.lineWidth = 1;
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, 140); ctx.lineTo(W - PAD, 140); ctx.stroke();
 
     // Album cover
-    ctx.fillStyle = '#222222';
+    ctx.fillStyle = '#f0f0f0';
     ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
     if (result._coverUrl) {
       try {
@@ -1327,11 +1327,11 @@ ${seenList}
         ctx.restore();
       } catch(e) {
         ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#444444'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
+        ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
       }
     } else {
       ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#444444'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
+      ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
     }
     ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
 
@@ -1355,13 +1355,13 @@ ${seenList}
 
     // Reason text
     const reasonText = (result.reason || '').slice(0, 200);
-    ctx.fillStyle = '#aaaaaa';
+    ctx.fillStyle = '#555555';
     ctx.font = '400 26px "Space Mono", monospace';
     const reasonLines = wrapText(ctx, reasonText, PAD, y + 26, W - PAD * 2, 40);
     y += reasonLines * 40 + 60;
 
     // Bottom divider + URL
-    ctx.strokeStyle = '#333333'; ctx.lineWidth = 1;
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
     ctx.fillStyle = '#555555';
     ctx.font = '400 22px "Space Mono", monospace';
@@ -1386,12 +1386,8 @@ ${seenList}
       const file = new File([blob], 'vinyl-match.png', { type: 'image/png' });
 
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({
-          title: `${artist} — ${album} | DIP Vinyl Shop`,
-          text: '來選一首適合你的歌 →',
-          url: shareUrl,
-          files: [file],
-        });
+        // 只傳圖片，不帶 url，IG 限動才會出現在分享選單
+        await navigator.share({ files: [file] });
       } else if (navigator.share) {
         await navigator.share({
           title: `${artist} — ${album} | DIP Vinyl Shop`,
