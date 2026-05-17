@@ -1599,6 +1599,7 @@ ${seenList}
   document.getElementById('akinatorCloseBtn').addEventListener('click', () => {
     document.getElementById('akinatorModal').classList.remove('open');
     document.body.style.overflow = '';
+    history.replaceState(null, '', ' ');
     akiPhase = 'idle';
     akiAnswers = [];
     akiWrongGuesses = [];
