@@ -1085,7 +1085,7 @@
 
       const seenArtists = [...new Set([...seenAlbums].map(k => k.split('||')[0]))];
       const seenList = seenAlbums.size > 0
-        ? `\n以下藝人與專輯已推薦過，請全部避開：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
+        ? `\n已推薦過的藝人（整個人都不能再推，換其他人）：${seenArtists.join('、')}\n已推薦過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
         : '';
       const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘有深度的音樂。
 
@@ -1098,8 +1098,7 @@ ${seenList}
 - 只推薦你確定真實存在、且你確實了解的專輯
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
-- 嚴格禁止推薦：Radiohead、Pink Floyd、Miles Davis、Beatles、Bon Iver、Taylor Swift、Billie Eilish、Coldplay 等過度曝光的名字
-${seenArtists.length ? `- 嚴格禁止推薦以下已出現過的藝人：${seenArtists.join('、')}` : ''}
+- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay 等過度曝光的名字
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
