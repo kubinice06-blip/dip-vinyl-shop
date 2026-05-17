@@ -487,6 +487,7 @@
   });
 
   const db = getFirestore(app);
+  document.title = 'DB OK';
   let all = [], searchQ = '', activeGenre = 'all';
 
   function logApiUsage(route, tokens) {
