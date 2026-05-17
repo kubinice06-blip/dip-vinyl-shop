@@ -1121,7 +1121,7 @@ ${seenList}
 - 只推薦你確定真實存在、且你確實了解的專輯
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
-- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay 等過度曝光的名字
+- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay、Nick Drake 等過度曝光的名字
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
@@ -1240,7 +1240,6 @@ ${seenList}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
-        <div style="text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;margin:-8px 0 12px;">點選後選 Instagram → Stories</div>
         <button class="quiz-another-btn" data-quiz-action="another">再一張</button>
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
@@ -1299,11 +1298,11 @@ ${seenList}
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#111111';
     ctx.font = '700 28px "Space Mono", monospace';
-    ctx.fillText('心情選歌', PAD, 100);
+    ctx.textAlign = 'center';
+    ctx.fillText('心情選歌', W / 2, 82);
     ctx.fillStyle = '#999999';
-    ctx.font = '400 20px "Space Mono", monospace';
-    ctx.textAlign = 'right';
-    ctx.fillText('找到你的那張', W - PAD, 100);
+    ctx.font = '400 22px "Space Mono", monospace';
+    ctx.fillText('找到你的那張', W / 2, 118);
     ctx.textAlign = 'left';
 
     // Thin top divider
@@ -1387,8 +1386,11 @@ ${seenList}
       const file = new File([blob], 'vinyl-match.jpg', { type: 'image/jpeg' });
 
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        // 只傳圖片，不帶 url，IG 限動才會出現在分享選單
-        await navigator.share({ files: [file] });
+        await navigator.share({
+          files: [file],
+          title: `${artist} — ${album} | 心情選歌`,
+          url: shareUrl,
+        });
       } else if (navigator.share) {
         await navigator.share({
           title: `${artist} — ${album} | DIP Vinyl Shop`,
