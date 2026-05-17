@@ -1083,13 +1083,13 @@
         return;
       }
 
-      // Step 1: AI analyzes quiz answers → Spotify search keywords
+      // Step 1: AI recommends an artist name only (much harder to hallucinate than an album)
+      const seenArtists = [...new Set([...seenAlbums].map(k => k.split('||')[0]))].join('、');
       const analysisPrompt = `用戶回答了5道心理測驗：
 ${qaText}
-
-根據這些回答，分析用戶當下的情緒狀態，產生一組適合搜尋 Spotify 專輯的英文關鍵字。
-關鍵字要能反映情緒氛圍和音樂風格，例如："melancholic indie folk"、"energetic punk rock"、"peaceful ambient piano"。
-只回傳關鍵字字串，不要其他文字，不要 JSON，不要引號，3-5 個英文詞即可。`;
+${seenArtists ? `\n請勿推薦以下已出現過的藝人：${seenArtists}\n` : ''}
+根據這些回答，推薦一位與用戶當下情緒和性格最相符的音樂藝人。
+只回傳藝人的原文名稱（西方藝人用英文，日韓藝人用日韓文），不要其他任何文字。`;
 
       const analysisResp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
@@ -1102,15 +1102,22 @@ ${qaText}
         const isRateLimit = /429|rate.?limit|quota/i.test(analysisData.apiError);
         throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : analysisData.apiError);
       }
-      const searchKeywords = (analysisData.content?.[0]?.text || 'indie melancholic').trim().slice(0, 100);
+      const artistName = (analysisData.content?.[0]?.text || '').trim().replace(/["'「」]/g, '').slice(0, 80);
+      if (!artistName) throw new Error('分析失敗，請再試一次');
 
-      // Step 2: Search Spotify albums with mood keywords — same path as fetchSpotifyCover
-      const albums = await searchSpotifyAlbumsByMood(searchKeywords);
-      if (!albums.length) throw new Error('找不到合適的推薦，請再試一次');
+      // Step 2: Search Spotify for albums by this artist — real albums guaranteed
+      const allAlbums = await searchSpotifyAlbumsByMood(artistName);
+      const norm = s => s.toLowerCase().replace(/\s+/g, '');
+      const artistNorm = norm(artistName);
+      const matched = allAlbums.filter(a =>
+        a.artists.some(ar => norm(ar.name).includes(artistNorm.slice(0, 6)) || artistNorm.includes(norm(ar.name).slice(0, 6)))
+      );
+      const pool2 = matched.length ? matched : allAlbums;
+      if (!pool2.length) throw new Error('找不到合適的推薦，請再試一次');
 
-      // Step 4: Pick random unseen album — all data from Spotify, no hallucination possible
-      const fresh = albums.filter(a => !seenAlbums.has(`${a.artists[0].name}||${a.name}`.toLowerCase()));
-      const pool = fresh.length ? fresh : albums;
+      // Step 3: Pick random unseen album — all data from Spotify, no hallucination possible
+      const fresh = pool2.filter(a => !seenAlbums.has(`${a.artists[0].name}||${a.name}`.toLowerCase()));
+      const pool = fresh.length ? fresh : pool2;
       const picked = pool[Math.floor(Math.random() * pool.length)];
       const artist = picked.artists[0].name;
       const album = picked.name;
