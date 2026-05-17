@@ -1707,7 +1707,13 @@ ${seenList}
         akiPhase = 'guessing';
         renderAkiGuess(json.guess, json.explanation);
       } else {
-        akiCurrentQ = json.question || '（無法取得問題）';
+        const q = json.question || '';
+        const badPattern = /哪種|哪類|什麼|哪些|多少|還是|或是|或者/;
+        if (badPattern.test(q)) {
+          // Bad question format — retry silently once
+          return fetchNextQuestion();
+        }
+        akiCurrentQ = q || '（無法取得問題）';
         renderAkiQuestionShell(false);
       }
     } catch(e) {
