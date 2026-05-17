@@ -15,12 +15,14 @@
     .logo-hero {
       background: #111; width: 100%;
       display: flex; align-items: center; justify-content: center;
-      padding: 28px 20px;
+      padding: 24px 20px;
       border-bottom: 1px solid #333;
     }
-    .logo-hero-text {
-      font-size: 52px; font-weight: 900; letter-spacing: -0.02em;
-      color: #f5f0e8; font-family: serif; line-height: 1;
+    .logo-hero-img {
+      height: 72px; width: auto; display: block;
+    }
+    @media (max-width: 560px) {
+      .logo-hero-img { height: 52px; }
     }
 
     .topbar {
@@ -283,7 +285,7 @@
 <body>
 
 <section class="logo-hero">
-  <div class="logo-hero-text">沾記</div>
+  <img src="/dip-tc.png" alt="沾記" class="logo-hero-img">
 </section>
 
 <header class="topbar">
