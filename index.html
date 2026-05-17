@@ -1104,21 +1104,8 @@ ${qaText}
       }
       const searchKeywords = (analysisData.content?.[0]?.text || 'indie melancholic').trim().slice(0, 100);
 
-      // Step 2: Get Spotify token
-      const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-      });
-      if (!tokenResp.ok) throw new Error('Spotify 連線失敗，請再試一次');
-      const { access_token } = await tokenResp.json();
-
-      // Step 3: Search Spotify albums with mood keywords — always returns real results
-      const srResp = await fetch(
-        `https://api.spotify.com/v1/search?q=${encodeURIComponent(searchKeywords)}&type=album&limit=20`,
-        { headers: { Authorization: 'Bearer ' + access_token } }
-      );
-      if (!srResp.ok) throw new Error('Spotify 搜尋失敗，請再試一次');
-      const srData = await srResp.json();
-      const albums = (srData.albums?.items || []).filter(a => a.images?.[0]?.url && a.artists?.[0]?.name);
+      // Step 2: Search Spotify albums with mood keywords — same path as fetchSpotifyCover
+      const albums = await searchSpotifyAlbumsByMood(searchKeywords);
       if (!albums.length) throw new Error('找不到合適的推薦，請再試一次');
 
       // Step 4: Pick random unseen album — all data from Spotify, no hallucination possible
@@ -1452,6 +1439,24 @@ ${qaText}
       }
     } catch(e) {}
     return {};
+  }
+
+  async function searchSpotifyAlbumsByMood(keywords) {
+    try {
+      const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+      });
+      if (!tokenResp.ok) return [];
+      const { access_token } = await tokenResp.json();
+      if (!access_token) return [];
+      const sr = await fetch(
+        `https://api.spotify.com/v1/search?q=${encodeURIComponent(keywords)}&type=album&limit=20`,
+        { headers: { Authorization: 'Bearer ' + access_token } }
+      );
+      if (!sr.ok) return [];
+      const data = await sr.json();
+      return (data.albums?.items || []).filter(a => a.images?.[0]?.url && a.artists?.[0]?.name);
+    } catch(e) { return []; }
   }
 
   function shareUrl(url, title) {
