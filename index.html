@@ -1185,7 +1185,7 @@ ${seenList}
       }
       if (!verified) throw new Error('找不到合適的推薦，請再試一次');
       const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText);
-      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason });
+      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason, _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl });
     } catch(e) {
       document.getElementById('quizContent').innerHTML =
         `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
@@ -1215,10 +1215,14 @@ ${seenList}
           coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
         }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
-        // Fetch Spotify cover for canvas screenshot (no visible use in UI)
-        fetchSpotifyCover(reel.artist, reel.title || '').then(({ imageUrl }) => {
-          if (imageUrl) result._coverUrl = imageUrl;
-        });
+        // Use coverUrl field from Firestore if present, else try Spotify
+        if (reel.coverUrl) {
+          result._coverUrl = reel.coverUrl;
+        } else {
+          fetchSpotifyCover(reel.artist, reel.title || '').then(({ imageUrl }) => {
+            if (imageUrl) result._coverUrl = imageUrl;
+          });
+        }
       }
     } else {
       // _coverUrl/_spotifyUrl pre-populated by Spotify Recommendations flow
