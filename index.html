@@ -926,7 +926,7 @@
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
     document.body.style.overflow = '';
-    history.replaceState(null, '', '#' + activeTab);
+    history.replaceState(null, '', location.pathname);
   });
 
   document.getElementById('quizContent').addEventListener('click', e => {
