@@ -490,9 +490,7 @@
   let all = [], searchQ = '', activeGenre = 'all';
 
   function logApiUsage(route, tokens) {
-    if (!tokens) return;
-    const date = new Date().toISOString().slice(0, 10);
-    addDoc(collection(db, 'api_usage'), { route, tokens, date, ts: Date.now() }).catch(() => {});
+    // temporarily disabled
   }
 
   async function load() {
