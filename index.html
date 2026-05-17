@@ -1570,7 +1570,7 @@ ${seenList}
   let akiPhase = 'idle';
   let akiWrongGuesses = [];
   let akiCurrentQ = '';
-  const AKI_MAX = 20;
+  const AKI_MAX = 15;
 
   function shareUrl(url, title) {
     if (navigator.share) {
@@ -1664,19 +1664,19 @@ ${seenList}
   }
 
   function buildGrokMessages() {
-    // Structure: system → user:"開始" → [assistant:question → user:answer] × N
-    const msgs = [{ role: 'system', content: AKI_SYSTEM }];
-    msgs.push({ role: 'user', content: '開始。' });
-    for (const item of akiAnswers) {
-      msgs.push({ role: 'assistant', content: JSON.stringify({ action: 'ask', question: item.q }) });
-      msgs.push({ role: 'user', content: item.a });
-    }
-    // Append extras to last user msg to avoid consecutive user messages
+    const qaLines = akiAnswers.map((item, i) => `Q${i+1}: ${item.q} → ${item.a}`).join('\n');
     const extras = [];
-    if (akiWrongGuesses.length) extras.push(`之前猜過但不對，請排除：${akiWrongGuesses.join('、')}`);
+    if (akiWrongGuesses.length) extras.push(`已排除（猜過但不對）：${akiWrongGuesses.join('、')}`);
     if (akiAnswers.length >= AKI_MAX) extras.push('已達題數上限，請立即猜測。');
-    if (extras.length) msgs[msgs.length - 1].content += '\n' + extras.join('\n');
-    return msgs;
+    const userMsg = [
+      akiAnswers.length ? `已知線索：\n${qaLines}` : '剛開始，尚無線索。',
+      ...extras,
+      '請回傳 JSON。'
+    ].join('\n');
+    return [
+      { role: 'system', content: AKI_SYSTEM },
+      { role: 'user', content: userMsg }
+    ];
   }
 
   async function fetchNextQuestion() {
