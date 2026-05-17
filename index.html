@@ -1037,7 +1037,7 @@
   }
 
   async function getAiReason(artist, album, qaText) {
-    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n\n命定推薦：${artist} — ${album}\n\n請用2-3句繁體中文寫出這張專輯與此人當下狀態的對應關係。風格像占卜解讀，客觀、帶宿命感，用「你」直接對話。禁止出現「我」「我們」「我覺得」等第一人稱。禁止「這張專輯」開頭。只回傳說明文字，不包含任何 JSON 或格式符號。`;
+    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n\n命定推薦：${artist} — ${album}\n\n請用2-3句繁體中文寫出這張專輯與此人當下狀態的對應關係。風格像占卜解讀，客觀、帶宿命感，用「你」直接對話。絕對禁止出現「我」「我不」「我很」「我想」「我覺」「我們」「讓我」「讓我想起」等任何第一人稱語氣——這是命運的宣判，沒有說話的人。禁止「這張專輯」開頭。只回傳說明文字，不包含任何 JSON 或格式符號。`;
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
