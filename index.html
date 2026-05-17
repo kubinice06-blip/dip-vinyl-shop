@@ -1118,6 +1118,24 @@
       const seenList = seenAlbums.size > 0
         ? `\n已推薦過的藝人（整個人都不能再推，換其他人）：${seenArtists.join('、')}\n已推薦過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
         : '';
+
+      const SCOPE_FRAMES = [
+        '年代限制：只從 1960–1979 年發行的專輯中選擇',
+        '年代限制：只從 1980–1999 年發行的專輯中選擇',
+        '年代限制：只從 2000–2015 年發行的專輯中選擇',
+        '年代限制：只從 2016 年後發行的專輯中選擇',
+        '地區限制：只從日本或台灣/香港的音樂中選擇',
+        '地區限制：只從英美以外的歐洲音樂（法、德、北歐、東歐等）中選擇',
+        '地區限制：只從拉丁美洲、非洲或中東的音樂中選擇',
+        '類型限制：只從爵士樂（jazz、fusion、post-bop）中選擇',
+        '類型限制：只從電子音樂（ambient、drone、IDM、electronica）中選擇',
+        '類型限制：只從後搖滾或器樂音樂（post-rock、instrumental）中選擇',
+        '類型限制：只從靈魂樂、funk 或 R&B 中選擇',
+        '類型限制：只從新古典或當代古典音樂中選擇',
+        '類型限制：只從世界音樂或非西方流行音樂中選擇',
+      ];
+      const scopeFrame = SCOPE_FRAMES[Math.floor(Math.random() * SCOPE_FRAMES.length)];
+
       const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘有深度的音樂。
 
 用戶回答了5道心理測驗：
@@ -1130,6 +1148,7 @@ ${seenList}
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
 - 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay 等過度曝光的名字
+- 本次探索範圍（必須遵守）：${scopeFrame}
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
