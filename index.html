@@ -1083,22 +1083,13 @@
         return;
       }
 
-      // Step 1: AI analyzes quiz answers → Spotify audio feature params
+      // Step 1: AI analyzes quiz answers → Spotify search keywords
       const analysisPrompt = `用戶回答了5道心理測驗：
 ${qaText}
 
-根據這些回答，分析用戶當下的情緒狀態，輸出 Spotify Recommendations API 所需參數。
-
-可用 seed_genres（選 1-2 個，必須從以下清單選）：
-acoustic, ambient, blues, chill, classical, country, dance, electronic, folk, hip-hop, indie, indie-pop, jazz, k-pop, latin, metal, new-age, pop, punk, r-n-b, rock, singer-songwriter, soul, world-music
-
-audio features（範圍 0.0–1.0）：
-- valence: 0=黑暗悲傷，1=明亮快樂
-- energy: 0=安靜緩慢，1=激烈強勁
-- acousticness: 0=電子合成，1=原聲自然
-
-只回傳 JSON，不要其他文字：
-{"seed_genres":["genre1"],"target_valence":0.5,"target_energy":0.5,"target_acousticness":0.5}`;
+根據這些回答，分析用戶當下的情緒狀態，產生一組適合搜尋 Spotify 專輯的英文關鍵字。
+關鍵字要能反映情緒氛圍和音樂風格，例如："melancholic indie folk"、"energetic punk rock"、"peaceful ambient piano"。
+只回傳關鍵字字串，不要其他文字，不要 JSON，不要引號，3-5 個英文詞即可。`;
 
       const analysisResp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
@@ -1111,13 +1102,7 @@ audio features（範圍 0.0–1.0）：
         const isRateLimit = /429|rate.?limit|quota/i.test(analysisData.apiError);
         throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : analysisData.apiError);
       }
-      const analysisText = analysisData.content?.[0]?.text || '';
-      // Extract first complete JSON object (non-greedy to avoid trailing text)
-      const paramsMatch = analysisText.match(/\{[^{}]*\}/);
-      if (!paramsMatch) throw new Error('分析失敗，請再試一次');
-      let params;
-      try { params = JSON.parse(paramsMatch[0]); }
-      catch(e) { throw new Error('分析失敗，請再試一次'); }
+      const searchKeywords = (analysisData.content?.[0]?.text || 'indie melancholic').trim().slice(0, 100);
 
       // Step 2: Get Spotify token
       const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
@@ -1126,53 +1111,24 @@ audio features（範圍 0.0–1.0）：
       if (!tokenResp.ok) throw new Error('Spotify 連線失敗，請再試一次');
       const { access_token } = await tokenResp.json();
 
-      // Step 3: Spotify Recommendations API → guaranteed real tracks
-      // (Falls back to album search if recommendations endpoint is restricted)
-      let tracks = [];
-      const genres = (Array.isArray(params.seed_genres) ? params.seed_genres : ['indie']).slice(0, 2).join(',');
-      try {
-        const recUrl = new URL('https://api.spotify.com/v1/recommendations');
-        recUrl.searchParams.set('seed_genres', genres);
-        recUrl.searchParams.set('target_valence', params.target_valence ?? 0.5);
-        recUrl.searchParams.set('target_energy', params.target_energy ?? 0.5);
-        recUrl.searchParams.set('target_acousticness', params.target_acousticness ?? 0.5);
-        recUrl.searchParams.set('limit', '20');
-        const recResp = await fetch(recUrl, { headers: { Authorization: 'Bearer ' + access_token } });
-        if (recResp.ok) {
-          const recData = await recResp.json();
-          tracks = recData.tracks || [];
-        }
-      } catch(e) {}
+      // Step 3: Search Spotify albums with mood keywords — always returns real results
+      const srResp = await fetch(
+        `https://api.spotify.com/v1/search?q=${encodeURIComponent(searchKeywords)}&type=album&limit=20`,
+        { headers: { Authorization: 'Bearer ' + access_token } }
+      );
+      if (!srResp.ok) throw new Error('Spotify 搜尋失敗，請再試一次');
+      const srData = await srResp.json();
+      const albums = (srData.albums?.items || []).filter(a => a.images?.[0]?.url && a.artists?.[0]?.name);
+      if (!albums.length) throw new Error('找不到合適的推薦，請再試一次');
 
-      // Fallback: search albums by genre keywords if recommendations unavailable
-      if (!tracks.length) {
-        const searchQ = encodeURIComponent(`genre:${genres.split(',')[0]}`);
-        const srResp = await fetch(
-          `https://api.spotify.com/v1/search?q=${searchQ}&type=album&limit=20`,
-          { headers: { Authorization: 'Bearer ' + access_token } }
-        );
-        if (srResp.ok) {
-          const srData = await srResp.json();
-          const albums = srData.albums?.items || [];
-          // Convert album results into track-like objects for uniform handling
-          tracks = albums.map(a => ({
-            artists: a.artists,
-            album: a,
-            external_urls: a.external_urls,
-          }));
-        }
-      }
-
-      if (!tracks.length) throw new Error('找不到合適的推薦，請再試一次');
-
-      // Step 4: Pick random unseen track; album data comes straight from Spotify (no hallucination possible)
-      const fresh = tracks.filter(t => !seenAlbums.has(`${t.artists?.[0]?.name}||${t.album?.name}`.toLowerCase()));
-      const pool = fresh.length ? fresh : tracks;
-      const track = pool[Math.floor(Math.random() * pool.length)];
-      const artist = track.artists?.[0]?.name || '';
-      const album = track.album?.name || '';
-      const imageUrl = track.album?.images?.[0]?.url || null;
-      const spotifyUrl = track.album?.external_urls?.spotify || track.external_urls?.spotify || null;
+      // Step 4: Pick random unseen album — all data from Spotify, no hallucination possible
+      const fresh = albums.filter(a => !seenAlbums.has(`${a.artists[0].name}||${a.name}`.toLowerCase()));
+      const pool = fresh.length ? fresh : albums;
+      const picked = pool[Math.floor(Math.random() * pool.length)];
+      const artist = picked.artists[0].name;
+      const album = picked.name;
+      const imageUrl = picked.images[0].url;
+      const spotifyUrl = picked.external_urls?.spotify || null;
 
       // Step 5: AI writes reason for this real album
       const reason = await getAiReason(artist, album, qaText);
