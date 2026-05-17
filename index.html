@@ -360,7 +360,7 @@
 </div>
 
 <main class="grid" id="grid">
-  <div class="state-msg"><div class="spinner"></div>Loading v2</div>
+  <div class="state-msg"><div class="spinner"></div>Loading</div>
 </main>
 
 <div class="modal-bg" id="modalBg">
@@ -487,7 +487,6 @@
   });
 
   const db = getFirestore(app);
-  document.title = 'DB OK';
   let all = [], searchQ = '', activeGenre = 'all';
 
   function logApiUsage(route, tokens) {
@@ -495,13 +494,9 @@
   }
 
   async function load() {
-    const timeout = setTimeout(() => {
-      document.getElementById('grid').innerHTML = `<div class="state-msg">⚠ 載入逾時：Firestore 無回應，請確認網路或 Firebase 設定。</div>`;
-    }, 8000);
     try {
       const q = query(collection(db, 'items'), where('status', '==', '庫存'));
       const snap = await getDocs(q);
-      clearTimeout(timeout);
 
       all = snap.docs
         .map(d => ({ id: d.id, ...d.data() }))
@@ -516,8 +511,7 @@
       buildGenreBar();
       render();
     } catch (e) {
-      clearTimeout(timeout);
-      document.getElementById('grid').innerHTML = `<div class="state-msg">⚠ 錯誤：${e.message || e.code || JSON.stringify(e)}</div>`;
+      document.getElementById('grid').innerHTML = `<div class="state-msg">⚠ 錯誤：${e.message}</div>`;
     }
   }
 
@@ -990,7 +984,6 @@
     }
   });
 
-  document.getElementById('grid').innerHTML = '<div class="state-msg">JS reached load()</div>';
   load();
 
   // ── 心理測驗 ──
@@ -1128,6 +1121,7 @@
       const data = await resp.json();
       logApiUsage('claude', data.usage?.total_tokens);
       return data.content?.[0]?.text?.trim() || '';
+    } catch(e) { return ''; }
   }
 
   async function submitQuiz() {
