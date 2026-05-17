@@ -12,10 +12,21 @@
     :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace; }
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
 
+    .logo-hero {
+      background: #111; width: 100%;
+      display: flex; align-items: center; justify-content: center;
+      padding: 28px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .logo-hero-text {
+      font-size: 52px; font-weight: 900; letter-spacing: -0.02em;
+      color: #f5f0e8; font-family: serif; line-height: 1;
+    }
+
     .topbar {
       border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px;
       display: flex; align-items: center; justify-content: space-between;
-      position: sticky; top: 0; background: #fff; z-index: 50;
+      background: #fff; z-index: 50;
     }
     .topbar-logo { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
     .topbar-right { color: var(--gray); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -270,6 +281,10 @@
   </style>
 </head>
 <body>
+
+<section class="logo-hero">
+  <div class="logo-hero-text">沾記</div>
+</section>
 
 <header class="topbar">
   <div class="topbar-logo">dip vinyl shop</div>
