@@ -410,9 +410,6 @@
     <div class="quiz-topbar">
       <div class="modal-topbar-left">
         <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Vinyl Match — 找到你的那張</span>
-        <button class="modal-share-btn" id="quizShareBtn" title="分享心情選歌">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        </button>
       </div>
       <button class="modal-close-btn" id="quizCloseBtn">✕ Close</button>
     </div>
@@ -1035,6 +1032,12 @@
           : `<button class="quiz-nav-btn primary" id="quizNext" ${quizAnswers[q.id] !== undefined ? '' : 'disabled'}>下一題 →</button>`
         }
       </div>
+      <div style="padding:0 20px 16px;display:flex;justify-content:center;">
+        <button id="quizShareBtn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="分享心情選歌">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          分享這個測驗
+        </button>
+      </div>
     `;
 
     document.querySelectorAll('.quiz-option').forEach(btn => {
@@ -1051,6 +1054,9 @@
     document.getElementById('quizPrev')?.addEventListener('click', () => { quizIdx--; renderQuizQ(); });
     document.getElementById('quizNext')?.addEventListener('click', () => { quizIdx++; renderQuizQ(); });
     document.getElementById('quizSubmit')?.addEventListener('click', submitQuiz);
+    document.getElementById('quizShareBtn')?.addEventListener('click', () => {
+      shareUrl('https://dip-vinyl-shop.pages.dev/quiz', '心情選歌 — dip vinyl shop');
+    });
   }
 
   async function getAiReason(artist, album, qaText) {
@@ -1273,120 +1279,94 @@ ${seenList}
   }
 
   async function buildResultCanvas(result) {
-    const W = 600, PAD = 36;
-    const HEADER = 56, COVER_H = W, SCALE = 2;
-    const FONT_ARTIST = 22, FONT_ALBUM_MAX = 32, FONT_REASON = 20;
-    const LH_REASON = 32, BOX_PAD = 22;
-
-    // Pre-measure to calculate dynamic height
-    const mc = document.createElement('canvas').getContext('2d');
-    let albumSz = FONT_ALBUM_MAX;
-    mc.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (mc.measureText(result.album || '').width > W - PAD * 2 && albumSz > 20) {
-      albumSz -= 2; mc.font = `700 ${albumSz}px "Space Mono", monospace`;
-    }
-    const albumLH = albumSz + 14;
-    const albumLineN = measureLines(mc, result.album || '', W - PAD * 2);
-    mc.font = `400 ${FONT_REASON}px "Space Mono", monospace`;
-    const reasonText = (result.reason || '').slice(0, 240);
-    const reasonLineN = measureLines(mc, reasonText, W - PAD * 2 - BOX_PAD * 2);
-
-    const H = HEADER + 40 + COVER_H
-      + 28 + FONT_ARTIST + 12
-      + albumLineN * albumLH + 24
-      + reasonLineN * LH_REASON + BOX_PAD * 2
-      + 40 + 24;
+    // 9:16 Instagram Stories format
+    const W = 1080, H = 1920, SCALE = 1;
+    const PAD = 72, COVER_SIZE = 900;
+    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 260;
+    const TEXT_Y = COVER_Y + COVER_SIZE + 60;
 
     const canvas = document.createElement('canvas');
     canvas.width = W * SCALE; canvas.height = H * SCALE;
     const ctx = canvas.getContext('2d');
     ctx.scale(SCALE, SCALE);
 
-    ctx.fillStyle = '#ffffff';
+    // Black background
+    ctx.fillStyle = '#111111';
     ctx.fillRect(0, 0, W, H);
 
-    // Black header bar
-    ctx.fillStyle = '#111111';
-    ctx.fillRect(0, 0, W, HEADER);
+    // Top branding
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#ffffff';
-    ctx.font = '700 15px "Space Mono", monospace';
-    ctx.fillText('DIP VINYL SHOP', PAD, HEADER / 2);
-    ctx.fillStyle = '#888888';
-    ctx.font = '400 11px "Space Mono", monospace';
+    ctx.font = '700 28px "Space Mono", monospace';
+    ctx.fillText('DIP VINYL SHOP', PAD, 100);
+    ctx.fillStyle = '#666666';
+    ctx.font = '400 20px "Space Mono", monospace';
     ctx.textAlign = 'right';
-    ctx.fillText('VINYL MATCH', W - PAD, HEADER / 2);
+    ctx.fillText('VINYL MATCH', W - PAD, 100);
     ctx.textAlign = 'left';
 
-    // "為你推薦" label
-    ctx.textBaseline = 'alphabetic';
-    ctx.fillStyle = '#999999';
-    ctx.font = '400 16px "Space Mono", monospace';
-    ctx.fillText('為你推薦', PAD, HEADER + 28);
+    // Thin top divider
+    ctx.strokeStyle = '#333333'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, 140); ctx.lineTo(W - PAD, 140); ctx.stroke();
 
-    // Square cover (starts at HEADER + 40)
-    const coverY = HEADER + 40;
-    ctx.fillStyle = '#e8e8e8';
-    ctx.fillRect(0, coverY, W, COVER_H);
+    // Album cover
+    ctx.fillStyle = '#222222';
+    ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
     if (result._coverUrl) {
       try {
         const img = new Image();
         img.crossOrigin = 'anonymous';
         await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = result._coverUrl; });
-        const aspect = img.naturalWidth / img.naturalHeight;
-        let dw = W, dh = W / aspect;
-        if (dh < COVER_H) { dh = COVER_H; dw = COVER_H * aspect; }
-        const dx = (W - dw) / 2, diy = coverY + (COVER_H - dh) / 2;
         ctx.save();
-        ctx.beginPath(); ctx.rect(0, coverY, W, COVER_H); ctx.clip();
-        ctx.drawImage(img, dx, diy, dw, dh);
+        ctx.beginPath(); ctx.rect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE); ctx.clip();
+        const aspect = img.naturalWidth / img.naturalHeight;
+        let dw = COVER_SIZE, dh = COVER_SIZE / aspect;
+        if (dh < COVER_SIZE) { dh = COVER_SIZE; dw = COVER_SIZE * aspect; }
+        const dx = COVER_X + (COVER_SIZE - dw) / 2, dy = COVER_Y + (COVER_SIZE - dh) / 2;
+        ctx.drawImage(img, dx, dy, dw, dh);
         ctx.restore();
       } catch(e) {
-        ctx.font = '72px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, coverY + COVER_H / 2);
-        ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+        ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#444444'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
       }
     } else {
-      ctx.font = '72px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, coverY + COVER_H / 2);
-      ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+      ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#444444'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
     }
+    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
 
-    // Separator under cover
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(0, coverY + COVER_H); ctx.lineTo(W, coverY + COVER_H); ctx.stroke();
-
-    let y = coverY + COVER_H + 28;
+    let y = TEXT_Y;
 
     // Artist
     ctx.fillStyle = '#888888';
-    ctx.font = `400 ${FONT_ARTIST}px "Space Mono", monospace`;
-    ctx.textBaseline = 'alphabetic';
-    ctx.fillText(result.artist || '', PAD, y + FONT_ARTIST);
-    y += FONT_ARTIST + 12;
+    ctx.font = '400 32px "Space Mono", monospace';
+    ctx.fillText(result.artist || '', PAD, y);
+    y += 52;
 
-    // Album title
-    ctx.fillStyle = '#111111';
+    // Album title (auto-shrink)
+    let albumSz = 44;
     ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    const drawnAlbumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
-    y += drawnAlbumLines * albumLH + 24;
+    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 28) {
+      albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
+    }
+    const albumLH = albumSz + 16;
+    const albumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
+    y += albumLines * albumLH + 40;
 
-    // Reason in bordered box
-    const boxH = reasonLineN * LH_REASON + BOX_PAD * 2;
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
-    ctx.fillStyle = '#444444';
-    ctx.font = `400 ${FONT_REASON}px "Space Mono", monospace`;
-    ctx.textBaseline = 'top';
-    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_REASON);
-    ctx.textBaseline = 'alphabetic';
-    y += boxH + 32;
+    // Reason text
+    const reasonText = (result.reason || '').slice(0, 200);
+    ctx.fillStyle = '#aaaaaa';
+    ctx.font = '400 26px "Space Mono", monospace';
+    const reasonLines = wrapText(ctx, reasonText, PAD, y + 26, W - PAD * 2, 40);
+    y += reasonLines * 40 + 60;
 
-    // URL
-    ctx.fillStyle = '#bbbbbb';
-    ctx.font = '400 14px "Space Mono", monospace';
-    ctx.textAlign = 'right';
-    ctx.fillText('dip-vinyl-shop.pages.dev', W - PAD, H - 24);
+    // Bottom divider + URL
+    ctx.strokeStyle = '#333333'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
+    ctx.fillStyle = '#555555';
+    ctx.font = '400 22px "Space Mono", monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('dip-vinyl-shop.pages.dev/quiz', W / 2, H - 52);
     ctx.textAlign = 'left';
 
     return canvas;
@@ -1527,9 +1507,6 @@ ${seenList}
     }
   }
 
-  document.getElementById('quizShareBtn').addEventListener('click', () => {
-    shareUrl('https://dip-vinyl-shop.pages.dev/quiz', '心情選歌 — dip vinyl shop');
-  });
 
   // Hash-based routing — runs once on page load
   (function navigateByHash() {
