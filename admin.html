@@ -34,8 +34,6 @@
     .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; }
     .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 0 24px; height: 44px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .tab-btn.active { color: var(--black); border-bottom-color: var(--black); }
-    .tab-content { display: none; }
-    .tab-content.active { display: grid; }
 
     /* DELETE BTN */
     .btn-delete { width: 100%; background: none; border: 1px solid var(--line); color: var(--red); font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; transition: all 0.15s; margin-top: 8px; }
@@ -69,8 +67,11 @@
     .topbar-sub { font-size: 10px; color: #888; letter-spacing: 0.1em; text-transform: uppercase; }
 
     /* LAYOUT */
-    .layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 44px); }
-    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+    .site-layout { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 88px); }
+    @media (max-width: 768px) { .site-layout { grid-template-columns: 1fr; } }
+    .right-area { overflow-y: auto; }
+    .right-panel { display: none; padding: 24px; }
+    .right-panel.active { display: block; }
 
     /* LEFT */
     .left { border-right: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; }
@@ -161,7 +162,6 @@
     .msg.error   { background: #fdf0ef; color: var(--red);   border-left: 3px solid var(--red); }
 
     /* 題目管理 & Reels 管理 */
-    #tab-questions.active, #tab-reels.active { display: block; }
     .quiz-admin-wrap { max-width: 800px; padding: 24px; }
     .quiz-q-row { border-bottom: 1px solid var(--line); background: #fff; }
     .quiz-q-summary { display: flex; align-items: center; gap: 10px; padding: 10px 12px; cursor: pointer; user-select: none; }
@@ -205,7 +205,7 @@
   <button class="tab-btn" data-tab="usage">算力</button>
 </div>
 
-<div class="layout tab-content active" id="tab-edit">
+<div class="site-layout">
   <div class="left">
     <div class="panel-header" style="display:flex;align-items:center;justify-content:space-between;">
       <span>庫存商品</span>
@@ -217,7 +217,9 @@
     </div>
   </div>
 
-  <div class="right" id="rightPanel">
+  <div class="right-area">
+
+  <div class="right-panel active" id="panel-edit">
     <div class="placeholder" id="placeholder">← 選擇左側商品開始編輯</div>
     <!-- 新增商品面板 -->
     <div id="newItemPanel" style="display:none;max-width:640px;">
@@ -300,7 +302,7 @@
       <div class="msg" id="newMsgBox"></div>
     </div>
 
-    <div class="editor" id="editor">
+    <div class="editor" id="editor" style="max-width:640px;">
       <div class="section">
         <div class="section-label">專輯名稱</div>
         <div class="field"><input type="text" id="nameInput" style="font-weight:700;font-size:12px;"></div>
@@ -420,227 +422,145 @@
       <button class="btn-save" id="btnSave">儲存</button>
       <div class="msg" id="msgBox"></div>
     </div>
-  </div>
-</div>
+  </div><!-- end panel-edit -->
 
-</div><!-- end tab-edit -->
-
-<!-- Digital Archive tab -->
-<div class="tab-content" id="tab-archive">
-  <div class="new-item-wrap">
-    <div class="section">
-      <div class="section-label">新增 Digital Archive</div>
-      <div class="field">
-        <label>YouTube 連結</label>
-        <input type="text" id="archiveUrl" placeholder="https://www.youtube.com/watch?v=...">
+  <!-- Digital Archive panel -->
+  <div class="right-panel" id="panel-archive">
+    <div style="max-width:640px;">
+      <div class="section">
+        <div class="section-label">新增 Digital Archive</div>
+        <div class="field">
+          <label>YouTube 連結</label>
+          <input type="text" id="archiveUrl" placeholder="https://www.youtube.com/watch?v=...">
+        </div>
+        <div id="archivePreview" style="display:none;margin-bottom:12px;">
+          <img id="archiveThumb" src="" style="width:100%;max-height:200px;object-fit:cover;display:block;margin-bottom:8px;">
+          <div id="archiveTitle" style="font-weight:700;font-size:12px;margin-bottom:4px;"></div>
+          <div id="archiveArtist" style="font-size:10px;color:var(--gray);"></div>
+        </div>
+        <div class="field"><label>標題（可自行修改）</label><input type="text" id="archiveTitleInput" placeholder="自動帶入 YouTube 標題"></div>
+        <div class="field"><label>藝人</label><input type="text" id="archiveArtistInput" placeholder="藝人名稱…"></div>
+        <button class="btn-save" id="btnAddArchive">新增到 Digital Archive</button>
+        <div class="msg" id="archiveMsgBox"></div>
       </div>
-      <div id="archivePreview" style="display:none;margin-bottom:12px;">
-        <img id="archiveThumb" src="" style="width:100%;max-height:200px;object-fit:cover;display:block;margin-bottom:8px;">
-        <div id="archiveTitle" style="font-weight:700;font-size:12px;margin-bottom:4px;"></div>
-        <div id="archiveArtist" style="font-size:10px;color:var(--gray);"></div>
-      </div>
-      <div class="field"><label>標題（可自行修改）</label><input type="text" id="archiveTitleInput" placeholder="自動帶入 YouTube 標題"></div>
-      <div class="field"><label>藝人</label><input type="text" id="archiveArtistInput" placeholder="藝人名稱…"></div>
-      <button class="btn-save" id="btnAddArchive">新增到 Digital Archive</button>
-      <div class="msg" id="archiveMsgBox"></div>
-    </div>
 
-    <div class="section" style="margin-top:24px;">
-      <div class="section-label">現有 Archive（可拖曳排序）</div>
-      <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
+      <div class="section" style="margin-top:24px;">
+        <div class="section-label">現有 Archive（可拖曳排序）</div>
+        <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- 商品排序 tab -->
-<div class="tab-content" id="tab-sort">
-  <div class="new-item-wrap">
-    <div class="section">
-      <div class="section-label">拖曳調整商品順序</div>
-      <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">拖曳調整後按「儲存順序」。</p>
-      <div id="sortList" style="border:1px solid var(--line);min-height:100px;"></div>
-      <button class="btn-save" id="btnSaveSort" style="margin-top:12px;">儲存順序</button>
-      <div class="msg" id="sortMsgBox"></div>
+  <!-- 商品排序 panel -->
+  <div class="right-panel" id="panel-sort">
+    <div style="max-width:640px;">
+      <div class="section">
+        <div class="section-label">拖曳調整商品順序</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">拖曳調整後按「儲存順序」。</p>
+        <div id="sortList" style="border:1px solid var(--line);min-height:100px;"></div>
+        <button class="btn-save" id="btnSaveSort" style="margin-top:12px;">儲存順序</button>
+        <div class="msg" id="sortMsgBox"></div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- 題目管理 tab -->
-<div class="tab-content" id="tab-questions">
-  <div class="quiz-admin-wrap">
-    <div class="section">
-      <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;">
-        <span>心理測驗題目</span>
-        <button id="btnSeedQuestions" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;padding:4px 12px;cursor:pointer;color:var(--gray);">從 questions.json 匯入</button>
+  <!-- 題目管理 panel -->
+  <div class="right-panel" id="panel-questions">
+    <div class="quiz-admin-wrap" style="max-width:800px;padding:0;">
+      <div class="section">
+        <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;">
+          <span>心理測驗題目</span>
+          <button id="btnSeedQuestions" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;padding:4px 12px;cursor:pointer;color:var(--gray);">從 questions.json 匯入</button>
+        </div>
+        <div id="quizQList" style="border:1px solid var(--line);min-height:60px;margin-top:10px;"></div>
       </div>
-      <div id="quizQList" style="border:1px solid var(--line);min-height:60px;margin-top:10px;"></div>
-    </div>
 
-    <div class="section" style="margin-top:24px;">
-      <div class="section-label">新增題目</div>
-      <div class="field">
-        <label>題目文字 *</label>
-        <textarea id="newQQuestion" rows="2" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;resize:vertical;line-height:1.6;background:#fff;"></textarea>
+      <div class="section" style="margin-top:24px;">
+        <div class="section-label">新增題目</div>
+        <div class="field">
+          <label>題目文字 *</label>
+          <textarea id="newQQuestion" rows="2" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;resize:vertical;line-height:1.6;background:#fff;"></textarea>
+        </div>
+        <div class="field"><label>選項 1 *</label><input type="text" id="newQOpt1" placeholder="選項文字…"></div>
+        <div class="field"><label>選項 2 *</label><input type="text" id="newQOpt2" placeholder="選項文字…"></div>
+        <div class="field"><label>選項 3 *</label><input type="text" id="newQOpt3" placeholder="選項文字…"></div>
+        <div class="field"><label>選項 4 *</label><input type="text" id="newQOpt4" placeholder="選項文字…"></div>
+        <button class="btn-save" id="btnAddQuizQ">新增題目</button>
+        <div class="msg" id="quizQMsgBox"></div>
       </div>
-      <div class="field"><label>選項 1 *</label><input type="text" id="newQOpt1" placeholder="選項文字…"></div>
-      <div class="field"><label>選項 2 *</label><input type="text" id="newQOpt2" placeholder="選項文字…"></div>
-      <div class="field"><label>選項 3 *</label><input type="text" id="newQOpt3" placeholder="選項文字…"></div>
-      <div class="field"><label>選項 4 *</label><input type="text" id="newQOpt4" placeholder="選項文字…"></div>
-      <button class="btn-save" id="btnAddQuizQ">新增題目</button>
-      <div class="msg" id="quizQMsgBox"></div>
     </div>
   </div>
-</div>
 
-<!-- Reels 管理 tab -->
-<div class="tab-content" id="tab-reels">
-  <div class="quiz-admin-wrap">
-    <div class="section">
-      <div class="section-label">新增 Reel</div>
-      <div class="field"><label>Instagram Reel 連結 *</label><input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/…"></div>
-      <div class="field-row">
-        <div class="field"><label>標題 / 專輯名稱</label><input type="text" id="reelTitle" placeholder="All Kinds of Weather…"></div>
-        <div class="field"><label>藝人</label><input type="text" id="reelArtist" placeholder="Red Garland…"></div>
+  <!-- Reels 管理 panel -->
+  <div class="right-panel" id="panel-reels">
+    <div class="quiz-admin-wrap" style="max-width:800px;padding:0;">
+      <div class="section">
+        <div class="section-label">新增 Reel</div>
+        <div class="field"><label>Instagram Reel 連結 *</label><input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/…"></div>
+        <div class="field-row">
+          <div class="field"><label>標題 / 專輯名稱</label><input type="text" id="reelTitle" placeholder="All Kinds of Weather…"></div>
+          <div class="field"><label>藝人</label><input type="text" id="reelArtist" placeholder="Red Garland…"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>曲風 Genre</label><input type="text" id="reelGenre" placeholder="jazz…"></div>
+          <div class="field"><label>Mood（逗號分隔）</label><input type="text" id="reelMood" placeholder="放鬆, 悠閒…"></div>
+        </div>
+        <button class="btn-save" id="btnAddReel">新增 Reel</button>
+        <div class="msg" id="reelMsgBox"></div>
       </div>
-      <div class="field-row">
-        <div class="field"><label>曲風 Genre</label><input type="text" id="reelGenre" placeholder="jazz…"></div>
-        <div class="field"><label>Mood（逗號分隔）</label><input type="text" id="reelMood" placeholder="放鬆, 悠閒…"></div>
-      </div>
-      <button class="btn-save" id="btnAddReel">新增 Reel</button>
-      <div class="msg" id="reelMsgBox"></div>
-    </div>
 
-    <div class="section" style="margin-top:24px;">
-      <div class="section-label">現有 Reels</div>
-      <div id="reelsList" style="border:1px solid var(--line);min-height:60px;"></div>
+      <div class="section" style="margin-top:24px;">
+        <div class="section-label">現有 Reels</div>
+        <div id="reelsList" style="border:1px solid var(--line);min-height:60px;"></div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- 新增商品 tab -->
-<div class="tab-content" id="tab-new">
-  <div class="new-item-wrap">
-    <div class="section">
-      <div class="section-label">從庫存匯入商品</div>
-      <p style="font-size:10px;color:var(--gray);margin-bottom:10px;line-height:1.8;">從你的訂貨管理系統（items collection）選擇商品，匯入後會複製基本資料到展示網站，你再補上照片和曲風即可。</p>
-      <div class="search-wrap" style="padding:0;margin-bottom:8px;">
-        <input type="text" id="importSearch" placeholder="搜尋庫存商品…" style="width:100%;border:1px solid var(--line);padding:8px 10px;font-family:var(--mono);font-size:11px;outline:none;">
-      </div>
-      <div class="import-list" id="importList">
-        <div class="list-empty"><div class="spinner"></div>載入中…</div>
-      </div>
-      <div id="importSelected" style="display:none;margin-bottom:12px;padding:10px 12px;border:1px solid var(--line);font-size:11px;background:#fff;">
-        <strong>已選：</strong><span id="importSelectedName"></span>
-      </div>
-    </div>
+  <!-- 算力 panel -->
+  <div class="right-panel" id="panel-usage">
+    <div style="max-width:640px;">
+      <div class="section-label" style="margin-bottom:20px;">今日算力用量</div>
 
-    <div class="section">
-      <div class="section-label">商品資料</div>
-
-      <div class="field"><label>專輯名稱 *</label><input type="text" id="newName" placeholder="專輯名稱…"></div>
-
-      <div class="field-row">
-        <div class="field"><label>藝人 Artist</label><input type="text" id="newArtist" placeholder="例：Miles Davis"></div>
-        <div class="field"><label>年份 Year</label><input type="number" id="newYear" placeholder="1959"></div>
-      </div>
-
-      <div class="field-row">
-        <div class="field"><label>台幣售價 NT$</label><input type="number" id="newPrice" placeholder="0"></div>
-        <div class="field"><label>商品類型</label>
-          <select id="newItemType" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;">
-            <option value="Used">Used（二手）</option>
-            <option value="New">New（全新）</option>
-          </select>
+      <div style="margin-bottom:28px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
+          <span style="font-weight:700;">猜猜我是誰 (grok)</span>
+          <span id="grokTokens">—</span>
+          <span style="color:var(--gray);">/ 100,000 tokens</span>
+        </div>
+        <div style="height:8px;background:var(--line);border-radius:0;">
+          <div id="grokBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
         </div>
       </div>
 
-      <div class="field"><label>版本 Pressing</label>
-        <div class="quick-btns" id="newPressingBtns">
-          <button class="quick-btn" data-val="JP盤">JP盤</button>
-          <button class="quick-btn" data-val="US盤">US盤</button>
-          <button class="quick-btn" data-val="UK盤">UK盤</button>
+      <div style="margin-bottom:36px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
+          <span style="font-weight:700;">心情選歌 (claude)</span>
+          <span id="claudeTokens">—</span>
+          <span style="color:var(--gray);">/ 500,000 tokens</span>
         </div>
-        <input type="text" id="newPressing" placeholder="自行輸入版本…">
-      </div>
-
-      <div class="field"><label>版次 Edition</label>
-        <div class="quick-btns" id="newEditionBtns">
-          <button class="quick-btn" data-val="首版">首版</button>
-          <button class="quick-btn" data-val="再版">再版</button>
+        <div style="height:8px;background:var(--line);border-radius:0;">
+          <div id="claudeBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
         </div>
-        <input type="text" id="newEdition" placeholder="自行輸入版次…">
       </div>
 
-      <div class="field"><label>品相 Condition</label>
-        <div class="condition-grid" id="newConditionGrid"></div>
-      </div>
-
-      <div class="field"><label>曲風 Genre（可多選）</label>
-        <div class="genre-grid" id="newGenreGrid"></div>
-        <input type="text" id="newGenreCustom" placeholder="自行輸入曲風，按 Enter 新增…" style="margin-top:6px;width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;">
-      </div>
-
-      <div class="field"><label>描述</label>
-        <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
-      </div>
-
-      <div class="field"><label>商品照片</label>
-        <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
-          <input type="file" id="newFileInput" accept="image/*" multiple>
-          <p><strong>點擊上傳照片</strong>　JPG、PNG、WEBP　可一次選多張</p>
-        </div>
-        <div class="progress-wrap" id="newProgressWrap" style="margin-bottom:8px;">
-          <div class="progress-bg"><div class="progress-bar" id="newProgressBar"></div></div>
-          <div class="progress-label" id="newProgressLabel"></div>
-        </div>
-        <div id="newImgGallery" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
-      </div>
-    </div>
-
-    <button class="btn-save" id="btnCreate">新增商品</button>
-    <div class="msg" id="newMsgBox"></div>
-  </div>
-</div>
-
-<div class="tab-content" id="tab-usage" style="display:none;padding:24px;max-width:640px;">
-  <div class="section-label" style="margin-bottom:20px;">今日算力用量</div>
-
-  <div style="margin-bottom:28px;">
-    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
-      <span style="font-weight:700;">猜猜我是誰 (grok)</span>
-      <span id="grokTokens">—</span>
-      <span style="color:var(--gray);">/ 100,000 tokens</span>
-    </div>
-    <div style="height:8px;background:var(--line);border-radius:0;">
-      <div id="grokBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
+      <div class="section-label" style="margin-bottom:12px;">近 7 天紀錄</div>
+      <table id="usageTable" style="width:100%;border-collapse:collapse;font-size:11px;">
+        <thead>
+          <tr style="border-bottom:1px solid var(--line);">
+            <th style="text-align:left;padding:6px 8px;color:var(--gray);font-weight:400;">日期</th>
+            <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">grok tokens</th>
+            <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">claude tokens</th>
+          </tr>
+        </thead>
+        <tbody id="usageBody">
+          <tr><td colspan="3" style="padding:12px 8px;color:var(--gray);">載入中…</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-  <div style="margin-bottom:36px;">
-    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
-      <span style="font-weight:700;">心情選歌 (claude)</span>
-      <span id="claudeTokens">—</span>
-      <span style="color:var(--gray);">/ 500,000 tokens</span>
-    </div>
-    <div style="height:8px;background:var(--line);border-radius:0;">
-      <div id="claudeBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
-    </div>
-  </div>
-
-  <div class="section-label" style="margin-bottom:12px;">近 7 天紀錄</div>
-  <table id="usageTable" style="width:100%;border-collapse:collapse;font-size:11px;">
-    <thead>
-      <tr style="border-bottom:1px solid var(--line);">
-        <th style="text-align:left;padding:6px 8px;color:var(--gray);font-weight:400;">日期</th>
-        <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">grok tokens</th>
-        <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">claude tokens</th>
-      </tr>
-    </thead>
-    <tbody id="usageBody">
-      <tr><td colspan="3" style="padding:12px 8px;color:var(--gray);">載入中…</td></tr>
-    </tbody>
-  </table>
-</div>
+  </div><!-- end right-area -->
+</div><!-- end site-layout -->
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -662,16 +582,20 @@
     }
   }
 
-  // Tab 切換
+  // Tab 切換（consolidated handler）
   document.querySelector('.tab-bar').addEventListener('click', e => {
     const btn = e.target.closest('.tab-btn');
     if (!btn) return;
     const tab = btn.dataset.tab;
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.right-panel').forEach(c => c.classList.remove('active'));
     btn.classList.add('active');
-    document.getElementById('tab-' + tab).classList.add('active');
-    if (tab === 'new') loadImportList();
+    document.getElementById('panel-' + tab).classList.add('active');
+    if (tab === 'archive') loadArchiveList();
+    if (tab === 'sort') loadSortList();
+    if (tab === 'questions') loadQuizQuestions();
+    if (tab === 'reels') loadAdminReels();
+    if (tab === 'usage') loadUsage();
   });
 
   const app = initializeApp({
@@ -1254,14 +1178,6 @@
     box.textContent = text;
   }
 
-  // ── Tab 切換時載入對應資料 ──
-  const origTabClick = document.querySelector('.tab-bar').onclick;
-  document.querySelector('.tab-bar').addEventListener('click', e => {
-    const btn = e.target.closest('.tab-btn');
-    if (!btn) return;
-    if (btn.dataset.tab === 'archive') loadArchiveList();
-    if (btn.dataset.tab === 'sort') loadSortList();
-  });
 
   // ── YouTube helpers ──
   function getYouTubeId(url) {
@@ -1590,14 +1506,6 @@
 
   // ── 題目管理 & Reels 管理 ──
 
-  // 額外 tab 載入觸發
-  document.querySelector('.tab-bar').addEventListener('click', e => {
-    const btn = e.target.closest('.tab-btn');
-    if (!btn) return;
-    if (btn.dataset.tab === 'questions') loadQuizQuestions();
-    if (btn.dataset.tab === 'reels') loadAdminReels();
-    if (btn.dataset.tab === 'usage') loadUsage();
-  });
 
   // ── 題目管理 ──
   async function loadQuizQuestions() {
