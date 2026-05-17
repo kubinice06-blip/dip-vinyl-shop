@@ -1127,16 +1127,42 @@ audio features（範圍 0.0–1.0）：
       const { access_token } = await tokenResp.json();
 
       // Step 3: Spotify Recommendations API → guaranteed real tracks
-      const recUrl = new URL('https://api.spotify.com/v1/recommendations');
+      // (Falls back to album search if recommendations endpoint is restricted)
+      let tracks = [];
       const genres = (Array.isArray(params.seed_genres) ? params.seed_genres : ['indie']).slice(0, 2).join(',');
-      recUrl.searchParams.set('seed_genres', genres);
-      recUrl.searchParams.set('target_valence', params.target_valence ?? 0.5);
-      recUrl.searchParams.set('target_energy', params.target_energy ?? 0.5);
-      recUrl.searchParams.set('target_acousticness', params.target_acousticness ?? 0.5);
-      recUrl.searchParams.set('limit', '20');
-      const recResp = await fetch(recUrl, { headers: { Authorization: 'Bearer ' + access_token } });
-      const recData = await recResp.json();
-      const tracks = recData.tracks || [];
+      try {
+        const recUrl = new URL('https://api.spotify.com/v1/recommendations');
+        recUrl.searchParams.set('seed_genres', genres);
+        recUrl.searchParams.set('target_valence', params.target_valence ?? 0.5);
+        recUrl.searchParams.set('target_energy', params.target_energy ?? 0.5);
+        recUrl.searchParams.set('target_acousticness', params.target_acousticness ?? 0.5);
+        recUrl.searchParams.set('limit', '20');
+        const recResp = await fetch(recUrl, { headers: { Authorization: 'Bearer ' + access_token } });
+        if (recResp.ok) {
+          const recData = await recResp.json();
+          tracks = recData.tracks || [];
+        }
+      } catch(e) {}
+
+      // Fallback: search albums by genre keywords if recommendations unavailable
+      if (!tracks.length) {
+        const searchQ = encodeURIComponent(`genre:${genres.split(',')[0]}`);
+        const srResp = await fetch(
+          `https://api.spotify.com/v1/search?q=${searchQ}&type=album&limit=20`,
+          { headers: { Authorization: 'Bearer ' + access_token } }
+        );
+        if (srResp.ok) {
+          const srData = await srResp.json();
+          const albums = srData.albums?.items || [];
+          // Convert album results into track-like objects for uniform handling
+          tracks = albums.map(a => ({
+            artists: a.artists,
+            album: a,
+            external_urls: a.external_urls,
+          }));
+        }
+      }
+
       if (!tracks.length) throw new Error('找不到合適的推薦，請再試一次');
 
       // Step 4: Pick random unseen track; album data comes straight from Spotify (no hallucination possible)
