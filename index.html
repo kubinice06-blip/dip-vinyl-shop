@@ -1240,6 +1240,7 @@ ${seenList}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
+        <div style="text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;margin:-8px 0 12px;">點選後選 Instagram → Stories</div>
         <button class="quiz-another-btn" data-quiz-action="another">再一張</button>
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
@@ -1298,11 +1299,11 @@ ${seenList}
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#111111';
     ctx.font = '700 28px "Space Mono", monospace';
-    ctx.fillText('dip vinyl shop', PAD, 100);
+    ctx.fillText('心情選歌', PAD, 100);
     ctx.fillStyle = '#999999';
     ctx.font = '400 20px "Space Mono", monospace';
     ctx.textAlign = 'right';
-    ctx.fillText('vinyl match', W - PAD, 100);
+    ctx.fillText('找到你的那張', W - PAD, 100);
     ctx.textAlign = 'left';
 
     // Thin top divider
@@ -1382,8 +1383,8 @@ ${seenList}
 
     try {
       const canvas = await buildResultCanvas(lastQuizResult);
-      const blob = await new Promise(res => canvas.toBlob(res, 'image/png'));
-      const file = new File([blob], 'vinyl-match.png', { type: 'image/png' });
+      const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
+      const file = new File([blob], 'vinyl-match.jpg', { type: 'image/jpeg' });
 
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         // 只傳圖片，不帶 url，IG 限動才會出現在分享選單
