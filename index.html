@@ -119,6 +119,10 @@
       padding: 4px 12px; cursor: pointer; color: var(--black); transition: all 0.15s;
     }
     .modal-close-btn:hover { background: var(--black); color: #fff; border-color: var(--black); }
+    .modal-share-btn { background: none; border: none; cursor: pointer; padding: 4px 6px; color: var(--gray); display: flex; align-items: center; transition: color 0.15s; }
+    .modal-share-btn:hover { color: var(--black); }
+    .modal-share-btn svg { width: 15px; height: 15px; }
+    .modal-topbar-left { display: flex; align-items: center; gap: 6px; }
     .modal-body { display: grid; grid-template-columns: 1fr 1fr; }
     @media (max-width: 560px) { .modal-body { grid-template-columns: 1fr; } }
     .modal-img-wrap { aspect-ratio: 1; background: #f0f0f0; border-right: 1px solid var(--line); overflow: hidden; }
@@ -437,7 +441,12 @@
 <div class="quiz-modal" id="quizModal">
   <div class="quiz-inner">
     <div class="quiz-topbar">
-      <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Vinyl Match — 找到你的那張</span>
+      <div class="modal-topbar-left">
+        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Vinyl Match — 找到你的那張</span>
+        <button class="modal-share-btn" id="quizShareBtn" title="分享心情選歌">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
       <button class="modal-close-btn" id="quizCloseBtn">✕ Close</button>
     </div>
     <div id="quizContent"></div>
@@ -447,7 +456,12 @@
 <div class="akinator-modal" id="akinatorModal">
   <div class="aki-inner">
     <div class="aki-topbar">
-      <span class="aki-topbar-label">猜猜我是誰 — Music Akinator</span>
+      <div class="modal-topbar-left">
+        <span class="aki-topbar-label">猜猜我是誰 — Music Akinator</span>
+        <button class="modal-share-btn" id="akiShareBtn" title="分享猜猜我是誰">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
       <button class="modal-close-btn" id="akinatorCloseBtn">✕ Close</button>
     </div>
     <div id="akiContent"></div>
@@ -747,6 +761,7 @@
     }
 
     if (tab === 'akinator') {
+      history.replaceState(null, '', '#akinator');
       document.getElementById('akinatorModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
@@ -1544,6 +1559,27 @@ ${seenList}
   let akiWrongGuesses = [];
   let akiCurrentQ = '';
   const AKI_MAX = 20;
+
+  function shareUrl(url, title) {
+    if (navigator.share) {
+      navigator.share({ title, url }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.activeElement;
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><polyline points="20 6 9 17 4 12"/></svg>';
+        setTimeout(() => { btn.innerHTML = orig; }, 1500);
+      });
+    }
+  }
+
+  document.getElementById('quizShareBtn').addEventListener('click', () => {
+    shareUrl('https://dip-vinyl-shop.pages.dev/quiz', '心情選歌 — dip vinyl shop');
+  });
+
+  document.getElementById('akiShareBtn').addEventListener('click', () => {
+    shareUrl('https://dip-vinyl-shop.pages.dev/akinator', '猜猜我是誰 — dip vinyl shop');
+  });
 
   document.getElementById('akinatorCloseBtn').addEventListener('click', () => {
     document.getElementById('akinatorModal').classList.remove('open');
