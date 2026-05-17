@@ -1684,7 +1684,7 @@ ${seenList}
     ];
   }
 
-  async function fetchNextQuestion() {
+  async function fetchNextQuestion(retried = false) {
     // First question is hardcoded — show instantly without API call
     if (akiAnswers.length === 0) {
       akiCurrentQ = AKI_FIRST_Q;
@@ -1709,9 +1709,8 @@ ${seenList}
       } else {
         const q = json.question || '';
         const badPattern = /哪種|哪類|什麼|哪些|多少|還是|或是|或者/;
-        if (badPattern.test(q)) {
-          // Bad question format — retry silently once
-          return fetchNextQuestion();
+        if (badPattern.test(q) && !retried) {
+          return fetchNextQuestion(true);
         }
         akiCurrentQ = q || '（無法取得問題）';
         renderAkiQuestionShell(false);
