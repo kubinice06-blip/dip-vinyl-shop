@@ -13,15 +13,16 @@
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
 
     .logo-hero {
-      width: 100%; display: block;
-      border-bottom: 1px solid #0f100b;
+      background: #111; width: 100%;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px 20px;
+      border-bottom: 1px solid #222;
     }
     .logo-hero-img {
-      width: 100%; height: 220px; display: block;
-      object-fit: contain; background: #0f100b;
+      height: 120px; width: auto; display: block;
     }
     @media (max-width: 560px) {
-      .logo-hero-img { height: 160px; }
+      .logo-hero-img { height: 80px; }
     }
 
     .topbar {
@@ -284,7 +285,7 @@
 <body>
 
 <section class="logo-hero">
-  <img src="dip-tc.png" alt="沾記" class="logo-hero-img">
+  <img src="dip-tc-noback.png" alt="沾記" class="logo-hero-img">
 </section>
 
 <header class="topbar">
