@@ -1445,8 +1445,6 @@ ${seenList}
       let items = await spotifySearch(`album:"${album}" artist:"${artist}"`);
       // 2nd try: free-text query (handles non-Latin artist names like 자우림)
       if (!items.length) items = await spotifySearch(`${artist} ${album}`);
-      // 3rd try: album name only
-      if (!items.length) items = await spotifySearch(`"${album}"`);
 
       if (items.length) {
         return {
