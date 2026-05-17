@@ -935,7 +935,13 @@
   let quizAnswers = {};
   let quizIdx = 0;
   let lastQuizResult = null;
-  let seenAlbums = new Set();
+  let seenAlbums = (() => {
+    try { const s = sessionStorage.getItem('dip_seen'); return s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { return new Set(); }
+  })();
+  function _saveSeenAlbums() {
+    try { sessionStorage.setItem('dip_seen', JSON.stringify([...seenAlbums])); } catch(e) {}
+  }
 
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
@@ -945,6 +951,7 @@
 
   document.getElementById('quizContent').addEventListener('click', e => {
     if (e.target.closest('[data-quiz-action="retry"]')) {
+      sessionStorage.removeItem('dip_seen'); seenAlbums = new Set();
       startQuiz();
     }
     if (e.target.closest('[data-quiz-action="view-item"]')) {
@@ -1001,7 +1008,8 @@
     quizSelected = shuffled.slice(0, 5);
     quizAnswers = {};
     quizIdx = 0;
-    seenAlbums = new Set();
+    try { const s = sessionStorage.getItem('dip_seen'); seenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { seenAlbums = new Set(); }
     renderQuizQ();
   }
 
@@ -1121,7 +1129,7 @@ ${seenList}
 - 只推薦你確定真實存在、且你確實了解的專輯
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
-- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay、Nick Drake 等過度曝光的名字
+- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay 等過度曝光的名字
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
@@ -1229,6 +1237,7 @@ ${seenList}
 
     lastQuizResult = result;
     seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
+    _saveSeenAlbums();
 
     document.getElementById('quizContent').innerHTML = `
       <div class="quiz-result">
@@ -1297,17 +1306,17 @@ ${seenList}
     // Top branding
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#111111';
-    ctx.font = '700 28px "Space Mono", monospace';
+    ctx.font = '700 42px "Space Mono", monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('心情選歌', W / 2, 82);
+    ctx.fillText('心情選歌', W / 2, 90);
     ctx.fillStyle = '#999999';
-    ctx.font = '400 22px "Space Mono", monospace';
-    ctx.fillText('找到你的那張', W / 2, 118);
+    ctx.font = '400 30px "Space Mono", monospace';
+    ctx.fillText('找到你的那張', W / 2, 136);
     ctx.textAlign = 'left';
 
     // Thin top divider
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, 140); ctx.lineTo(W - PAD, 140); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(PAD, 168); ctx.lineTo(W - PAD, 168); ctx.stroke();
 
     // Album cover
     ctx.fillStyle = '#f0f0f0';
@@ -1339,26 +1348,33 @@ ${seenList}
 
     // Artist
     ctx.fillStyle = '#888888';
-    ctx.font = '400 32px "Space Mono", monospace';
+    ctx.font = '400 38px "Space Mono", monospace';
     ctx.fillText(result.artist || '', PAD, y);
-    y += 52;
+    y += 60;
 
     // Album title (auto-shrink)
-    let albumSz = 44;
+    let albumSz = 54;
     ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 28) {
+    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 32) {
       albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
     }
     const albumLH = albumSz + 16;
     const albumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
     y += albumLines * albumLH + 40;
 
-    // Reason text
+    // Reason text in bordered box
     const reasonText = (result.reason || '').slice(0, 200);
-    ctx.fillStyle = '#555555';
-    ctx.font = '400 26px "Space Mono", monospace';
-    const reasonLines = wrapText(ctx, reasonText, PAD, y + 26, W - PAD * 2, 40);
-    y += reasonLines * 40 + 60;
+    const BOX_PAD = 40, LH_R = 46;
+    ctx.font = '400 30px "Space Mono", monospace';
+    const reasonLineCount = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2);
+    const boxH = reasonLineCount * LH_R + BOX_PAD * 2;
+    ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2;
+    ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
+    ctx.fillStyle = '#444444';
+    ctx.textBaseline = 'top';
+    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
+    ctx.textBaseline = 'alphabetic';
+    y += boxH + 60;
 
     // Bottom divider + URL
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
@@ -1389,6 +1405,7 @@ ${seenList}
         await navigator.share({
           files: [file],
           title: `${artist} — ${album} | 心情選歌`,
+          text: '來選一首適合你的歌 →',
           url: shareUrl,
         });
       } else if (navigator.share) {
