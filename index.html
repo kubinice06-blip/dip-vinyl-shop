@@ -1107,11 +1107,17 @@ audio features（範圍 0.0–1.0）：
       });
       const analysisData = await analysisResp.json();
       logApiUsage('claude', analysisData.usage?.total_tokens);
-      if (analysisData.apiError) throw new Error(analysisData.apiError);
+      if (analysisData.apiError) {
+        const isRateLimit = /429|rate.?limit|quota/i.test(analysisData.apiError);
+        throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : analysisData.apiError);
+      }
       const analysisText = analysisData.content?.[0]?.text || '';
-      const paramsMatch = analysisText.match(/\{[\s\S]*\}/);
+      // Extract first complete JSON object (non-greedy to avoid trailing text)
+      const paramsMatch = analysisText.match(/\{[^{}]*\}/);
       if (!paramsMatch) throw new Error('分析失敗，請再試一次');
-      const params = JSON.parse(paramsMatch[0]);
+      let params;
+      try { params = JSON.parse(paramsMatch[0]); }
+      catch(e) { throw new Error('分析失敗，請再試一次'); }
 
       // Step 2: Get Spotify token
       const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
