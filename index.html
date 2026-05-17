@@ -1083,51 +1083,56 @@
         return;
       }
 
-      // Step 1: AI recommends an artist name only (much harder to hallucinate than an album)
-      const seenArtists = [...new Set([...seenAlbums].map(k => k.split('||')[0]))].join('、');
-      const analysisPrompt = `用戶回答了5道心理測驗：
+      const seenList = seenAlbums.size > 0
+        ? `\n請勿重複推薦以下已出現過的專輯：\n${[...seenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
+        : '';
+      const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘有深度的音樂。
+
+用戶回答了5道心理測驗：
 ${qaText}
-${seenArtists ? `\n請勿推薦以下已出現過的藝人：${seenArtists}\n` : ''}
-根據這些回答，推薦一位與用戶當下情緒和性格最相符的音樂藝人。
-只回傳藝人的原文名稱（西方藝人用英文，日韓藝人用日韓文），不要其他任何文字。`;
+${seenList}
+根據這些回答，推薦一張與此人當下情緒和性格最相符的真實專輯。
 
-      const analysisResp = await fetch(`${WORKER_URL}/claude`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: analysisPrompt }] }),
-      });
-      const analysisData = await analysisResp.json();
-      logApiUsage('claude', analysisData.usage?.total_tokens);
-      if (analysisData.apiError) {
-        const isRateLimit = /429|rate.?limit|quota/i.test(analysisData.apiError);
-        throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : analysisData.apiError);
+推薦原則：
+- 只推薦你確定真實存在、且你確實了解的專輯
+- 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
+- 優先選擇在主流之外、但在樂迷圈內有口碑的作品
+- 避免 Radiohead、Pink Floyd、Miles Davis、Beatles 等過度曝光的名字
+
+只回傳 JSON，不要其他文字：
+{"artist":"藝人名稱","album":"專輯名稱"}`;
+
+      // Try up to 3 times — Claude Haiku rarely hallucinates, Spotify verifies
+      let verified = null;
+      let failedAlbums = [];
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const retryNote = failedAlbums.length
+          ? `\n以下在 Spotify 找不到，請換一張：\n${failedAlbums.join('\n')}\n`
+          : '';
+        const resp = await fetch(`${WORKER_URL}/claude`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: prompt + retryNote }] }),
+        });
+        const data = await resp.json();
+        logApiUsage('claude', data.usage?.total_tokens);
+        if (data.apiError) {
+          const isRateLimit = /429|rate.?limit|quota/i.test(data.apiError);
+          throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : data.apiError);
+        }
+        const text = data.content?.[0]?.text || '';
+        const jsonMatch = text.match(/\{[^{}]*\}/);
+        if (!jsonMatch) continue;
+        let rec;
+        try { rec = JSON.parse(jsonMatch[0]); } catch(e) { continue; }
+        if (!rec.artist || !rec.album) continue;
+        const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
+        if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
+        failedAlbums.push(`${rec.artist} — ${rec.album}`);
       }
-      // Clean artist name: strip markdown, brackets, parenthetical, newlines
-      const artistName = (analysisData.content?.[0]?.text || '')
-        .split('\n')[0]
-        .replace(/[*_`#\[\]【】「」『』()（）<>]/g, '')
-        .replace(/\s{2,}/g, ' ')
-        .trim()
-        .slice(0, 80);
-      if (!artistName) throw new Error('分析失敗，請再試一次');
-
-      // Step 2: Search Spotify for albums by this artist — real albums guaranteed
-      const allAlbums = await searchSpotifyAlbumsByArtist(artistName);
-      const pool2 = allAlbums;
-      if (!pool2.length) throw new Error(`找不到「${artistName}」的專輯，請再試一次`);
-
-      // Step 3: Pick random unseen album — all data from Spotify, no hallucination possible
-      const fresh = pool2.filter(a => !seenAlbums.has(`${a.artists[0].name}||${a.name}`.toLowerCase()));
-      const pool = fresh.length ? fresh : pool2;
-      const picked = pool[Math.floor(Math.random() * pool.length)];
-      const artist = picked.artists[0].name;
-      const album = picked.name;
-      const imageUrl = picked.images[0].url;
-      const spotifyUrl = picked.external_urls?.spotify || null;
-
-      // Step 5: AI writes reason for this real album
-      const reason = await getAiReason(artist, album, qaText);
-      await showQuizResult({ type: 'global', artist, album, reason, _coverUrl: imageUrl, _spotifyUrl: spotifyUrl });
+      if (!verified) throw new Error('找不到合適的推薦，請再試一次');
+      const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText);
+      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason });
     } catch(e) {
       document.getElementById('quizContent').innerHTML =
         `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
