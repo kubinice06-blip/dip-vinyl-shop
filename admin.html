@@ -202,6 +202,7 @@
   <button class="tab-btn" data-tab="sort">商品排序</button>
   <button class="tab-btn" data-tab="questions">題目管理</button>
   <button class="tab-btn" data-tab="reels">Reels 管理</button>
+  <button class="tab-btn" data-tab="usage">算力</button>
 </div>
 
 <div class="layout tab-content active" id="tab-edit">
@@ -601,9 +602,49 @@
   </div>
 </div>
 
+<div class="tab-content" id="tab-usage" style="display:none;padding:24px;max-width:640px;">
+  <div class="section-label" style="margin-bottom:20px;">今日算力用量</div>
+
+  <div style="margin-bottom:28px;">
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
+      <span style="font-weight:700;">猜猜我是誰 (grok)</span>
+      <span id="grokTokens">—</span>
+      <span style="color:var(--gray);">/ 100,000 tokens</span>
+    </div>
+    <div style="height:8px;background:var(--line);border-radius:0;">
+      <div id="grokBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:36px;">
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;">
+      <span style="font-weight:700;">心情選歌 (claude)</span>
+      <span id="claudeTokens">—</span>
+      <span style="color:var(--gray);">/ 500,000 tokens</span>
+    </div>
+    <div style="height:8px;background:var(--line);border-radius:0;">
+      <div id="claudeBar" style="height:100%;background:var(--black);width:0%;transition:width 0.4s;"></div>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-bottom:12px;">近 7 天紀錄</div>
+  <table id="usageTable" style="width:100%;border-collapse:collapse;font-size:11px;">
+    <thead>
+      <tr style="border-bottom:1px solid var(--line);">
+        <th style="text-align:left;padding:6px 8px;color:var(--gray);font-weight:400;">日期</th>
+        <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">grok tokens</th>
+        <th style="text-align:right;padding:6px 8px;color:var(--gray);font-weight:400;">claude tokens</th>
+      </tr>
+    </thead>
+    <tbody id="usageBody">
+      <tr><td colspan="3" style="padding:12px 8px;color:var(--gray);">載入中…</td></tr>
+    </tbody>
+  </table>
+</div>
+
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc, addDoc, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   // 密碼
   const PASSWORD = 'dip2026';
@@ -1555,6 +1596,7 @@
     if (!btn) return;
     if (btn.dataset.tab === 'questions') loadQuizQuestions();
     if (btn.dataset.tab === 'reels') loadAdminReels();
+    if (btn.dataset.tab === 'usage') loadUsage();
   });
 
   // ── 題目管理 ──
@@ -1749,6 +1791,46 @@
     }
     btn.disabled = false;
   });
+
+  // ── 算力監控 ──
+  async function loadUsage() {
+    const today = new Date().toISOString().slice(0, 10);
+    const sevenDaysAgo = new Date(Date.now() - 6 * 86400000).toISOString().slice(0, 10);
+
+    const snap = await getDocs(query(collection(db, 'api_usage'), where('date', '>=', sevenDaysAgo)));
+    const rows = snap.docs.map(d => d.data());
+
+    // Group by date + route
+    const byDate = {};
+    for (const r of rows) {
+      if (!byDate[r.date]) byDate[r.date] = { grok: 0, claude: 0 };
+      byDate[r.date][r.route] = (byDate[r.date][r.route] || 0) + (r.tokens || 0);
+    }
+
+    // Today's progress bars
+    const todayGrok = byDate[today]?.grok || 0;
+    const todayClaude = byDate[today]?.claude || 0;
+    document.getElementById('grokTokens').textContent = todayGrok.toLocaleString();
+    document.getElementById('claudeTokens').textContent = todayClaude.toLocaleString();
+    document.getElementById('grokBar').style.width = Math.min(todayGrok / 1000, 100) + '%';
+    document.getElementById('claudeBar').style.width = Math.min(todayClaude / 5000, 100) + '%';
+    if (todayGrok / 100000 > 0.8) document.getElementById('grokBar').style.background = 'var(--red)';
+    if (todayClaude / 500000 > 0.8) document.getElementById('claudeBar').style.background = 'var(--red)';
+
+    // 7-day table
+    const dates = [...new Set(rows.map(r => r.date))].sort().reverse();
+    const tbody = document.getElementById('usageBody');
+    if (!dates.length) {
+      tbody.innerHTML = '<tr><td colspan="3" style="padding:12px 8px;color:var(--gray);">尚無紀錄</td></tr>';
+      return;
+    }
+    tbody.innerHTML = dates.map(d => `
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:8px 8px;">${d}${d === today ? ' <span style="color:var(--green);font-size:10px;">今天</span>' : ''}</td>
+        <td style="text-align:right;padding:8px 8px;">${(byDate[d]?.grok || 0).toLocaleString()}</td>
+        <td style="text-align:right;padding:8px 8px;">${(byDate[d]?.claude || 0).toLocaleString()}</td>
+      </tr>`).join('');
+  }
 </script>
 </body>
 </html>

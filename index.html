@@ -475,7 +475,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const app = initializeApp({
     apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
@@ -488,6 +488,12 @@
 
   const db = getFirestore(app);
   let all = [], searchQ = '', activeGenre = 'all';
+
+  function logApiUsage(route, tokens) {
+    if (!tokens) return;
+    const date = new Date().toISOString().slice(0, 10);
+    addDoc(collection(db, 'api_usage'), { route, tokens, date, ts: Date.now() }).catch(() => {});
+  }
 
   async function load() {
     try {
@@ -1115,8 +1121,8 @@
         body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
       });
       const data = await resp.json();
+      logApiUsage('claude', data.usage?.total_tokens);
       return data.content?.[0]?.text?.trim() || '';
-    } catch(e) { return ''; }
   }
 
   async function submitQuiz() {
@@ -1205,6 +1211,7 @@ ${seenList}
         body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
       });
       const data = await resp.json();
+      logApiUsage('claude', data.usage?.total_tokens);
       if (data.apiError) throw new Error(data.apiError);
       const text = data.content?.[0]?.text || '';
       const jsonMatch = text.match(/\{[\s\S]*\}/);
@@ -1684,6 +1691,7 @@ ${seenList}
       });
       const data = await resp.json();
       if (!resp.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+      logApiUsage('grok', data.usage?.total_tokens);
       const text = data.choices?.[0]?.message?.content || '';
       const json = JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] || text);
       if (json.action === 'guess') {
@@ -1737,6 +1745,7 @@ Return ONLY JSON: {"guess":"Full artist or band name","explanation":"一句繁�
       });
       if (!resp.ok) throw new Error(`${resp.status}`);
       const data = await resp.json();
+      logApiUsage('grok', data.usage?.total_tokens);
       const text = data.choices?.[0]?.message?.content || '';
       const json = JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] || text);
       akiPhase = 'guessing';
