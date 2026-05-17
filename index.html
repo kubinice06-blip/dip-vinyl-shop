@@ -1132,21 +1132,37 @@ ${seenList}
 請用以下 JSON 格式回傳，只回傳 JSON，不要包含其他文字或 markdown：
 {"artist":"藝人名稱","album":"專輯名稱","reason":"2-3句繁體中文"}`;
 
-      const resp = await fetch(`${WORKER_URL}/claude`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
-      });
-      const data = await resp.json();
-      logApiUsage('claude', data.usage?.total_tokens);
-      if (data.apiError) throw new Error(data.apiError);
-      const text = data.content?.[0]?.text || '';
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) throw new Error('AI 回傳格式錯誤，請再試一次');
-      const rec = JSON.parse(jsonMatch[0]);
-      if (!rec.artist || !rec.album) throw new Error('AI 回傳缺少資訊，請再試一次');
-
-      await showQuizResult({ type: 'global', artist: rec.artist, album: rec.album, reason: rec.reason });
+      // Try up to 3 times until Spotify confirms the album is real
+      let verified = null;
+      let failedAlbums = [];
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const retryNote = failedAlbums.length
+          ? `\n以下專輯在 Spotify 上找不到，代表可能不存在，請勿再推薦：\n${failedAlbums.join('\n')}\n`
+          : '';
+        const attemptPrompt = prompt + retryNote;
+        const resp = await fetch(`${WORKER_URL}/claude`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: attemptPrompt }] }),
+        });
+        const data = await resp.json();
+        logApiUsage('claude', data.usage?.total_tokens);
+        if (data.apiError) throw new Error(data.apiError);
+        const text = data.content?.[0]?.text || '';
+        const jsonMatch = text.match(/\{[\s\S]*\}/);
+        if (!jsonMatch) continue;
+        const rec = JSON.parse(jsonMatch[0]);
+        if (!rec.artist || !rec.album) continue;
+        // Verify on Spotify before accepting
+        const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
+        if (spotifyResult.imageUrl) {
+          verified = { rec, spotifyResult };
+          break;
+        }
+        failedAlbums.push(`${rec.artist} — ${rec.album}`);
+      }
+      if (!verified) throw new Error('找不到合適的推薦，請再試一次');
+      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: verified.rec.reason });
     } catch(e) {
       document.getElementById('quizContent').innerHTML =
         `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
