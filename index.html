@@ -1102,18 +1102,20 @@ ${seenArtists ? `\n請勿推薦以下已出現過的藝人：${seenArtists}\n` :
         const isRateLimit = /429|rate.?limit|quota/i.test(analysisData.apiError);
         throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : analysisData.apiError);
       }
-      const artistName = (analysisData.content?.[0]?.text || '').trim().replace(/["'「」]/g, '').slice(0, 80);
+      // Clean artist name: strip markdown, brackets, parenthetical, newlines
+      const artistName = (analysisData.content?.[0]?.text || '')
+        .split('\n')[0]
+        .replace(/[*_`#\[\]【】「」『』()（）<>]/g, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim()
+        .slice(0, 80);
       if (!artistName) throw new Error('分析失敗，請再試一次');
 
       // Step 2: Search Spotify for albums by this artist — real albums guaranteed
-      const allAlbums = await searchSpotifyAlbumsByMood(artistName);
-      const norm = s => s.toLowerCase().replace(/\s+/g, '');
-      const artistNorm = norm(artistName);
-      const matched = allAlbums.filter(a =>
-        a.artists.some(ar => norm(ar.name).includes(artistNorm.slice(0, 6)) || artistNorm.includes(norm(ar.name).slice(0, 6)))
-      );
-      const pool2 = matched.length ? matched : allAlbums;
-      if (!pool2.length) throw new Error('找不到合適的推薦，請再試一次');
+      let allAlbums = await searchSpotifyAlbumsByMood(`artist:"${artistName}"`);
+      if (!allAlbums.length) allAlbums = await searchSpotifyAlbumsByMood(artistName);
+      const pool2 = allAlbums;
+      if (!pool2.length) throw new Error(`找不到「${artistName}」的專輯，請再試一次`);
 
       // Step 3: Pick random unseen album — all data from Spotify, no hallucination possible
       const fresh = pool2.filter(a => !seenAlbums.has(`${a.artists[0].name}||${a.name}`.toLowerCase()));
