@@ -308,6 +308,10 @@
         <div class="field"><label>描述</label>
           <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
         </div>
+        <div class="field">
+          <label>試聽連結（Spotify / YouTube / Apple Music）</label>
+          <input type="text" id="newMusicEmbedUrl" placeholder="貼上連結…">
+        </div>
         <div class="field"><label>商品照片</label>
           <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
             <input type="file" id="newFileInput" accept="image/*" multiple>
@@ -429,6 +433,16 @@
           <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最高價</span><span id="discogsHigh"></span></div>
           <div style="margin-top:8px;"><a id="discogsLink" href="#" target="_blank" rel="noopener" style="color:var(--black);font-size:10px;letter-spacing:0.06em;">→ 查看 Discogs 頁面</a></div>
         </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">試聽連結</div>
+        <div class="field">
+          <label>Spotify / YouTube / Apple Music URL</label>
+          <input type="text" id="musicEmbedUrl" placeholder="貼上連結，儲存後前台自動顯示播放器">
+        </div>
+        <div id="musicPreview" style="margin-top:8px;display:none;"></div>
+        <button id="btnPreviewMusic" style="background:none;border:1px solid var(--line);padding:6px 12px;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;cursor:pointer;color:var(--gray);margin-top:6px;">預覽播放器</button>
       </div>
 
       <div class="section">
@@ -830,6 +844,26 @@
   }
 
   // ── 快速按鈕 ──
+  // ── 試聽連結 embed helper ──
+  function adminToEmbedUrl(url) {
+    if (!url) return null;
+    const sp = url.match(/open\.spotify\.com\/(track|album|playlist|artist)\/([a-zA-Z0-9]+)/);
+    if (sp) return `https://open.spotify.com/embed/${sp[1]}/${sp[2]}?utm_source=generator`;
+    const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|music\.youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/);
+    if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+    const am = url.match(/music\.apple\.com\/([^?#]+)/);
+    if (am) return `https://embed.music.apple.com/${am[1]}`;
+    if (/open\.spotify\.com\/embed|youtube\.com\/embed|embed\.music\.apple\.com/.test(url)) return url;
+    return null;
+  }
+  function buildAdminEmbed(embedUrl) {
+    const isSpotify = embedUrl.includes('spotify.com/embed');
+    const isAM = embedUrl.includes('embed.music.apple.com');
+    const h = isSpotify ? 152 : isAM ? 200 : 150;
+    if (isAM) return `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;border:1px solid var(--line);" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embedUrl}"></iframe>`;
+    return `<iframe src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:1px solid var(--line);" allowfullscreen></iframe>`;
+  }
+
   function initQuickBtns(containerId, inputId) {
     const container = document.getElementById(containerId);
     const input = document.getElementById(inputId);
@@ -966,6 +1000,22 @@
     }
     if (document.getElementById('internalNoteInput')) document.getElementById('internalNoteInput').value = currentItem.internalNote || '';
 
+    // 試聽連結
+    const musicInput = document.getElementById('musicEmbedUrl');
+    const musicPreview = document.getElementById('musicPreview');
+    if (musicInput) {
+      musicInput.value = currentItem.musicEmbedUrl || '';
+      musicPreview.style.display = 'none';
+      musicPreview.innerHTML = '';
+    }
+    document.getElementById('btnPreviewMusic').onclick = () => {
+      const url = document.getElementById('musicEmbedUrl').value.trim();
+      const embedUrl = adminToEmbedUrl(url);
+      if (!embedUrl) { musicPreview.style.display = 'none'; musicPreview.innerHTML = ''; return; }
+      musicPreview.style.display = 'block';
+      musicPreview.innerHTML = buildAdminEmbed(embedUrl);
+    };
+
     // NEW 標籤開關狀態
     const badgeVal = currentItem.showNewBadge;
     document.getElementById('badgeOn').classList.toggle('selected', badgeVal === true);
@@ -1092,8 +1142,9 @@
           const rates = await getExchangeRates();
           return Math.round(amt * (rates[cur] || 1));
         })(),
-        obi:          document.getElementById('obiOn').classList.contains('selected') || null,
-        internalNote: document.getElementById('internalNoteInput').value.trim() || null,
+        obi:           document.getElementById('obiOn').classList.contains('selected') || null,
+        musicEmbedUrl: document.getElementById('musicEmbedUrl').value.trim() || null,
+        internalNote:  document.getElementById('internalNoteInput').value.trim() || null,
         genre:     selectedGenres,
         condition: selectedCondition,
         artist:    document.getElementById('artistInput').value.trim(),
@@ -1292,8 +1343,9 @@
           const rates = await getExchangeRates();
           return Math.round(amt * (rates[cur] || 1));
         })(),
-        obi:         document.getElementById('newObiOn').classList.contains('selected') || null,
-        internalNote: document.getElementById('newInternalNote') ? document.getElementById('newInternalNote').value.trim() || null : null,
+        obi:           document.getElementById('newObiOn').classList.contains('selected') || null,
+        musicEmbedUrl: document.getElementById('newMusicEmbedUrl').value.trim() || null,
+        internalNote:  document.getElementById('newInternalNote') ? document.getElementById('newInternalNote').value.trim() || null : null,
         pressing:    document.getElementById('newPressing').value.trim()   || null,
         edition:     document.getElementById('newEdition').value.trim()    || null,
         condition:   newSelectedCondition                                   || null,
@@ -1315,7 +1367,7 @@
       // 重設表單
       selectedImportItem = null;
       document.getElementById('importSelected').style.display = 'none';
-      ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc'].forEach(id => document.getElementById(id).value = '');
+      ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicEmbedUrl'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('newCostCurrency').value = 'TWD';
       document.getElementById('newCostTWD').textContent = '';
       document.getElementById('newSuggestPrice').textContent = '';
@@ -1528,7 +1580,7 @@
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.remove('show');
     document.getElementById('newItemPanel').style.display = 'block';
-    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc'].forEach(id => {
+    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicEmbedUrl'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });
