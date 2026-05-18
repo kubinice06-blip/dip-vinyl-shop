@@ -309,8 +309,9 @@
           <textarea id="newDesc" placeholder="商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:60px;line-height:1.6;"></textarea>
         </div>
         <div class="field">
-          <label>試聽連結（Spotify / YouTube / Apple Music）</label>
-          <input type="text" id="newMusicEmbedUrl" placeholder="貼上連結…">
+          <label>試聽音樂連結（選填）</label>
+          <input type="text" id="newMusicInput" placeholder="https://open.spotify.com/track/… 或 youtube.com/watch?v=…">
+          <div id="newMusicPreview" style="margin-top:8px;"></div>
         </div>
         <div class="field"><label>商品照片</label>
           <div class="upload-zone" id="newUploadZone" style="margin-bottom:8px;">
@@ -436,13 +437,19 @@
       </div>
 
       <div class="section">
-        <div class="section-label">試聽連結</div>
+        <div class="section-label">試聽音樂</div>
         <div class="field">
-          <label>Spotify / YouTube / Apple Music URL</label>
-          <input type="text" id="musicEmbedUrl" placeholder="貼上連結，儲存後前台自動顯示播放器">
+          <label>音樂連結（Spotify / Apple Music / YouTube）</label>
+          <input type="text" id="musicInput" placeholder="貼上連結，或點「自動帶入」…">
         </div>
-        <div id="musicPreview" style="margin-top:8px;display:none;"></div>
-        <button id="btnPreviewMusic" style="background:none;border:1px solid var(--line);padding:6px 12px;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;cursor:pointer;color:var(--gray);margin-top:6px;">預覽播放器</button>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+          <button class="quick-btn" id="btnAutoMusic" style="border-color:var(--black);color:var(--black);font-weight:700;">⟳ 自動帶入</button>
+          <span style="width:1px;background:var(--line);margin:0 2px;"></span>
+          <div id="musicSearchBtns" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
+        </div>
+        <div id="musicPreview" style="margin-bottom:8px;"></div>
+        <button class="btn-save" id="btnSaveMusic" style="margin-top:0;">儲存試聽連結</button>
+        <div class="msg" id="musicMsg"></div>
       </div>
 
       <div class="section">
@@ -508,6 +515,13 @@
   <div class="right-panel" id="panel-sort">
     <div style="max-width:640px;">
       <div class="section">
+        <div class="section-label">批次自動帶入試聽連結</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">為所有尚未設定試聽連結的商品自動搜尋 Apple Music 並存入。每筆間隔 0.5 秒以避免限速。</p>
+        <button class="btn-save" id="btnBatchMusic" style="background:var(--green);">⟳ 批次自動帶入試聽連結</button>
+        <div class="msg" id="batchMusicMsg"></div>
+        <div id="batchMusicLog" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:2;max-height:240px;overflow-y:auto;"></div>
+      </div>
+      <div class="section">
         <div class="section-label">拖曳調整商品順序</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">拖曳調整後按「儲存順序」。</p>
         <div id="sortList" style="border:1px solid var(--line);min-height:100px;"></div>
@@ -515,7 +529,7 @@
         <div class="msg" id="sortMsgBox"></div>
       </div>
     </div>
-  </div>
+  </div><!-- end panel-sort -->
 
   <!-- 題目管理 panel -->
   <div class="right-panel" id="panel-questions">
@@ -844,8 +858,8 @@
   }
 
   // ── 快速按鈕 ──
-  // ── 試聽連結 embed helper ──
-  function adminToEmbedUrl(url) {
+  // ── 試聽連結 helper ──
+  function toEmbedUrl(url) {
     if (!url) return null;
     const sp = url.match(/open\.spotify\.com\/(track|album|playlist|artist)\/([a-zA-Z0-9]+)/);
     if (sp) return `https://open.spotify.com/embed/${sp[1]}/${sp[2]}?utm_source=generator`;
@@ -856,12 +870,68 @@
     if (/open\.spotify\.com\/embed|youtube\.com\/embed|embed\.music\.apple\.com/.test(url)) return url;
     return null;
   }
-  function buildAdminEmbed(embedUrl) {
-    const isSpotify = embedUrl.includes('spotify.com/embed');
-    const isAM = embedUrl.includes('embed.music.apple.com');
-    const h = isSpotify ? 152 : isAM ? 200 : 150;
-    if (isAM) return `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;border:1px solid var(--line);" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embedUrl}"></iframe>`;
-    return `<iframe src="${embedUrl}" width="100%" height="${h}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:1px solid var(--line);" allowfullscreen></iframe>`;
+
+  function renderMusicPreview(url) {
+    const el = document.getElementById('musicPreview');
+    if (!el) return;
+    const embed = toEmbedUrl(url);
+    if (!embed) { el.innerHTML = url ? '<div style="font-size:10px;color:var(--red);margin-top:4px;">無法辨識連結格式，請貼上 Spotify / YouTube / Apple Music 連結。</div>' : ''; return; }
+    const isSpotify = embed.includes('spotify.com/embed');
+    const isAM = embed.includes('embed.music.apple.com');
+    const h = isSpotify ? 152 : isAM ? 175 : 150;
+    let iframe;
+    if (isAM) {
+      iframe = `<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="${h}" style="width:100%;overflow:hidden;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="${embed}"></iframe>`;
+    } else {
+      iframe = `<iframe src="${embed}" width="100%" height="${h}" frameborder="0" style="display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    el.innerHTML = `<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 已辨識，預覽如下：</div>${iframe}`;
+  }
+
+  function updateMusicSearchBtns() {
+    const el = document.getElementById('musicSearchBtns');
+    if (!el || !currentItem) return;
+    const q = encodeURIComponent([(currentItem.artist || ''), (currentItem.name || '')].filter(Boolean).join(' '));
+    el.innerHTML = `
+      <a href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Spotify</a>
+      <a href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 YouTube</a>
+      <a href="https://music.apple.com/search?term=${q}" target="_blank" rel="noopener" class="quick-btn" style="text-decoration:none;">搜尋 Apple Music</a>`;
+  }
+
+  async function fetchItunes(q, country, timeoutMs) {
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const res = await fetch(
+        `https://itunes.apple.com/search?term=${q}&media=music&entity=album&limit=8&country=${country}`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(tid);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch { clearTimeout(tid); return null; }
+  }
+
+  async function searchItunes(artist, name) {
+    const q = encodeURIComponent([artist, name].filter(Boolean).join(' '));
+    const artistLow = (artist || '').toLowerCase();
+    function pick(data) {
+      if (!data || !data.results || !data.results.length) return null;
+      const match = artistLow
+        ? data.results.find(r => (r.artistName || '').toLowerCase().includes(artistLow))
+        : null;
+      const result = match || data.results[0];
+      return result.collectionViewUrl || result.trackViewUrl || null;
+    }
+    let url = pick(await fetchItunes(q, 'US', 7000));
+    if (url) return url;
+    url = pick(await fetchItunes(q, 'JP', 5000));
+    if (url) return url;
+    if (artist) {
+      const qa = encodeURIComponent(artist);
+      url = pick(await fetchItunes(qa, 'US', 4000));
+    }
+    return url;
   }
 
   function initQuickBtns(containerId, inputId) {
@@ -1000,21 +1070,15 @@
     }
     if (document.getElementById('internalNoteInput')) document.getElementById('internalNoteInput').value = currentItem.internalNote || '';
 
-    // 試聽連結
-    const musicInput = document.getElementById('musicEmbedUrl');
-    const musicPreview = document.getElementById('musicPreview');
+    // 試聽音樂
+    const musicInput = document.getElementById('musicInput');
     if (musicInput) {
       musicInput.value = currentItem.musicEmbedUrl || '';
-      musicPreview.style.display = 'none';
-      musicPreview.innerHTML = '';
+      renderMusicPreview(currentItem.musicEmbedUrl || '');
+      updateMusicSearchBtns();
     }
-    document.getElementById('btnPreviewMusic').onclick = () => {
-      const url = document.getElementById('musicEmbedUrl').value.trim();
-      const embedUrl = adminToEmbedUrl(url);
-      if (!embedUrl) { musicPreview.style.display = 'none'; musicPreview.innerHTML = ''; return; }
-      musicPreview.style.display = 'block';
-      musicPreview.innerHTML = buildAdminEmbed(embedUrl);
-    };
+    const musicMsg = document.getElementById('musicMsg');
+    if (musicMsg) musicMsg.className = 'msg';
 
     // NEW 標籤開關狀態
     const badgeVal = currentItem.showNewBadge;
@@ -1143,7 +1207,7 @@
           return Math.round(amt * (rates[cur] || 1));
         })(),
         obi:           document.getElementById('obiOn').classList.contains('selected') || null,
-        musicEmbedUrl: document.getElementById('musicEmbedUrl').value.trim() || null,
+        musicEmbedUrl: document.getElementById('musicInput').value.trim() || null,
         internalNote:  document.getElementById('internalNoteInput').value.trim() || null,
         genre:     selectedGenres,
         condition: selectedCondition,
@@ -1344,7 +1408,7 @@
           return Math.round(amt * (rates[cur] || 1));
         })(),
         obi:           document.getElementById('newObiOn').classList.contains('selected') || null,
-        musicEmbedUrl: document.getElementById('newMusicEmbedUrl').value.trim() || null,
+        musicEmbedUrl: document.getElementById('newMusicInput').value.trim() || null,
         internalNote:  document.getElementById('newInternalNote') ? document.getElementById('newInternalNote').value.trim() || null : null,
         pressing:    document.getElementById('newPressing').value.trim()   || null,
         edition:     document.getElementById('newEdition').value.trim()    || null,
@@ -1367,7 +1431,7 @@
       // 重設表單
       selectedImportItem = null;
       document.getElementById('importSelected').style.display = 'none';
-      ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicEmbedUrl'].forEach(id => document.getElementById(id).value = '');
+      ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicInput'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('newCostCurrency').value = 'TWD';
       document.getElementById('newCostTWD').textContent = '';
       document.getElementById('newSuggestPrice').textContent = '';
@@ -1556,6 +1620,106 @@
     });
   }
 
+  // ── 試聽音樂事件 ──
+  document.getElementById('btnAutoMusic').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const btn = document.getElementById('btnAutoMusic');
+    btn.textContent = '搜尋中…'; btn.disabled = true;
+    const msgEl = document.getElementById('musicMsg');
+    try {
+      const url = await searchItunes(currentItem.artist, currentItem.name);
+      if (url) {
+        document.getElementById('musicInput').value = url;
+        renderMusicPreview(url);
+        msgEl.className = 'msg success show';
+        msgEl.textContent = '✓ 已找到 Apple Music 結果，確認後點「儲存試聽連結」。';
+      } else {
+        msgEl.className = 'msg error show';
+        msgEl.textContent = '找不到結果，請手動貼上連結。';
+      }
+    } catch(e) {
+      msgEl.className = 'msg error show';
+      msgEl.textContent = '搜尋失敗：' + e.message;
+    } finally { btn.textContent = '⟳ 自動帶入'; btn.disabled = false; }
+  });
+
+  document.getElementById('musicInput').addEventListener('input', e => renderMusicPreview(e.target.value.trim()));
+
+  document.getElementById('btnSaveMusic').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const url = document.getElementById('musicInput').value.trim();
+    const btn = document.getElementById('btnSaveMusic');
+    const msgEl = document.getElementById('musicMsg');
+    btn.disabled = true;
+    try {
+      await updateDoc(doc(db, 'items', currentItem.id), { musicEmbedUrl: url || null });
+      currentItem.musicEmbedUrl = url || null;
+      allItems = allItems.map(p => p.id === currentItem.id ? { ...p, musicEmbedUrl: url || null } : p);
+      unpublishedItems = unpublishedItems.map(p => p.id === currentItem.id ? { ...p, musicEmbedUrl: url || null } : p);
+      msgEl.className = 'msg success show';
+      msgEl.textContent = url ? '✓ 試聽連結已儲存！' : '✓ 已清除試聽連結。';
+    } catch(e) {
+      msgEl.className = 'msg error show';
+      msgEl.textContent = '儲存失敗：' + e.message;
+    } finally { btn.disabled = false; }
+  });
+
+  document.getElementById('newMusicInput').addEventListener('input', e => {
+    const url = e.target.value.trim();
+    const el = document.getElementById('newMusicPreview');
+    if (!el) return;
+    const embed = toEmbedUrl(url);
+    if (!embed) { el.innerHTML = url ? '<div style="font-size:10px;color:var(--red);">無法辨識連結格式</div>' : ''; return; }
+    const isSpotify = embed.includes('spotify.com/embed');
+    const isAM = embed.includes('embed.music.apple.com');
+    const h = isSpotify ? 152 : isAM ? 175 : 150;
+    const sandbox = isAM ? ' sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"' : '';
+    el.innerHTML = `<iframe src="${embed}" width="100%" height="${h}" style="border:none;display:block;" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"${sandbox}></iframe>`;
+  });
+
+  // ── 批次自動帶入試聽連結 ──
+  document.getElementById('btnBatchMusic').addEventListener('click', async () => {
+    const btn = document.getElementById('btnBatchMusic');
+    const msg = document.getElementById('batchMusicMsg');
+    const log = document.getElementById('batchMusicLog');
+    btn.disabled = true;
+    msg.className = 'msg success show';
+    msg.textContent = '搜尋中，請勿關閉頁面…';
+    log.innerHTML = '';
+    try {
+      const snap = await getDocs(collection(db, 'items'));
+      const targets = snap.docs
+        .map(d => ({ id: d.id, ...d.data() }))
+        .filter(p => p.status === '庫存' && !p.musicEmbedUrl && (p.artist || p.name));
+      if (!targets.length) {
+        msg.textContent = '✓ 所有商品都已有試聽連結！';
+        btn.disabled = false; return;
+      }
+      let done = 0, found = 0;
+      for (const p of targets) {
+        log.innerHTML += `<div>🔍 搜尋中：${p.name || ''} — ${p.artist || ''}</div>`;
+        log.scrollTop = log.scrollHeight;
+        const url = await searchItunes(p.artist || '', p.name || '');
+        if (url) {
+          await updateDoc(doc(db, 'items', p.id), { musicEmbedUrl: url });
+          found++;
+          log.innerHTML += `<div style="color:var(--green);">✓ 已帶入：${p.name || ''}</div>`;
+        } else {
+          log.innerHTML += `<div style="color:var(--gray);">— 未找到：${p.name || ''}</div>`;
+        }
+        done++;
+        msg.textContent = `進度 ${done}/${targets.length}，已帶入 ${found} 筆…`;
+        log.scrollTop = log.scrollHeight;
+        await new Promise(r => setTimeout(r, 500));
+      }
+      msg.textContent = `✓ 完成！共處理 ${done} 筆，成功帶入 ${found} 筆。`;
+      allItems = []; await loadItems();
+    } catch(e) {
+      msg.className = 'msg error show';
+      msg.textContent = '批次失敗：' + e.message;
+    } finally { btn.disabled = false; }
+  });
+
   document.getElementById('btnSaveSort').addEventListener('click', async () => {
     const btn = document.getElementById('btnSaveSort');
     btn.disabled = true;
@@ -1580,7 +1744,7 @@
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('editor').classList.remove('show');
     document.getElementById('newItemPanel').style.display = 'block';
-    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicEmbedUrl'].forEach(id => {
+    ['newName','newArtist','newYear','newPrice','newCost','newPressing','newEdition','newDesc','newMusicInput'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
     });
