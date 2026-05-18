@@ -1444,7 +1444,7 @@ ${seenList}
   async function shareQuizResult() {
     if (!lastQuizResult) return;
     const { artist, album, reason } = lastQuizResult;
-    const shareUrl = 'https://dipvinyl.tw';
+    const shareUrl = 'https://www.dipvinyl.tw/quiz';
 
     const btn = document.querySelector('[data-quiz-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
@@ -1580,13 +1580,15 @@ ${seenList}
   // Hash-based routing — runs once on page load
   (function navigateByHash() {
     const hash = window.location.hash.slice(1);
-    if (!hash) return;
-    if (hash === 'quiz') {
+    const path = window.location.pathname.replace(/^\//, '');
+    const target = hash || path;
+    if (!target) return;
+    if (target === 'quiz') {
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       loadQuizData().then(() => startQuiz());
     } else {
-      const btn = document.querySelector(`.main-tab[data-tab="${hash}"]`);
+      const btn = document.querySelector(`.main-tab[data-tab="${target}"]`);
       if (btn) btn.click();
     }
   })();
