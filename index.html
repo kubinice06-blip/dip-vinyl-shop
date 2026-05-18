@@ -532,10 +532,11 @@
           <div class="card-info">
             <div class="card-name">${p.name || 'Unknown Title'}</div>
             ${p.artist ? `<div class="card-artist">${p.artist}</div>` : ''}
-            ${(p.edition === '首版' || p.pressing) ? `<div class="card-tags">
+            ${(p.edition === '首版' || p.pressing || p.obi) ? `<div class="card-tags">
               ${p.edition === '首版' ? '<span class="card-tag-item card-tag-first">First Press</span>' : ''}
               ${p.edition === '見本盤' ? '<span class="card-tag-item card-tag-first">見本盤</span>' : ''}
               ${p.pressing ? '<span class="card-tag-item">' + p.pressing + '</span>' : ''}
+              ${p.obi ? '<span class="card-tag-item">有 OBI</span>' : ''}
             </div>` : ''}
             ${p.genre ? `<div class="card-genre">${Array.isArray(p.genre) ? p.genre.join(' · ') : p.genre}</div>` : ''}
             <div class="card-bottom">
@@ -596,6 +597,7 @@
       ['Condition', p.condition || null],
       ['Pressing',  p.pressing  || null],
       ['Edition',   p.edition   || null],
+      ['OBI',       p.obi ? '有' : null],
       ['Genre',     p.genre ? (Array.isArray(p.genre) ? p.genre.join(', ') : p.genre) : null],
     ].filter(([, v]) => v);
 

@@ -292,6 +292,12 @@
           </div>
           <input type="text" id="newEdition" placeholder="自行輸入版次…">
         </div>
+        <div class="field"><label>OBI 帶</label>
+          <div class="quick-btns">
+            <button class="quick-btn" id="newObiOn">有 OBI</button>
+            <button class="quick-btn selected" id="newObiOff">無</button>
+          </div>
+        </div>
         <div class="field"><label>品相 Condition</label>
           <div class="condition-grid" id="newConditionGrid"></div>
         </div>
@@ -442,6 +448,13 @@
             <button class="quick-btn" data-val="再版">再版</button>
           </div>
           <input type="text" id="editionInput" placeholder="自行輸入版次…">
+        </div>
+        <div class="field" style="margin-top:14px;">
+          <label>OBI 帶</label>
+          <div class="quick-btns">
+            <button class="quick-btn" id="obiOn">有 OBI</button>
+            <button class="quick-btn selected" id="obiOff">無</button>
+          </div>
         </div>
       </div>
 
@@ -982,6 +995,18 @@
     syncQuickBtns('pressingBtns', currentItem.pressing);
     syncQuickBtns('editionBtns',  currentItem.edition);
 
+    // OBI 切換
+    document.getElementById('obiOn').classList.toggle('selected', currentItem.obi === true);
+    document.getElementById('obiOff').classList.toggle('selected', currentItem.obi !== true);
+    document.getElementById('obiOn').onclick = () => {
+      document.getElementById('obiOn').classList.add('selected');
+      document.getElementById('obiOff').classList.remove('selected');
+    };
+    document.getElementById('obiOff').onclick = () => {
+      document.getElementById('obiOff').classList.add('selected');
+      document.getElementById('obiOn').classList.remove('selected');
+    };
+
     document.getElementById('progressWrap').classList.remove('show');
     document.getElementById('progressBar').style.width = '0';
     document.getElementById('msgBox').className = 'msg';
@@ -1067,6 +1092,7 @@
           const rates = await getExchangeRates();
           return Math.round(amt * (rates[cur] || 1));
         })(),
+        obi:          document.getElementById('obiOn').classList.contains('selected') || null,
         internalNote: document.getElementById('internalNoteInput').value.trim() || null,
         genre:     selectedGenres,
         condition: selectedCondition,
@@ -1189,6 +1215,14 @@
 
   initQuickBtns('newPressingBtns', 'newPressing');
   initQuickBtns('newEditionBtns',  'newEdition');
+  document.getElementById('newObiOn').onclick = () => {
+    document.getElementById('newObiOn').classList.add('selected');
+    document.getElementById('newObiOff').classList.remove('selected');
+  };
+  document.getElementById('newObiOff').onclick = () => {
+    document.getElementById('newObiOff').classList.add('selected');
+    document.getElementById('newObiOn').classList.remove('selected');
+  };
   buildNewConditionGrid();
   buildNewGenreGrid();
 
@@ -1258,6 +1292,7 @@
           const rates = await getExchangeRates();
           return Math.round(amt * (rates[cur] || 1));
         })(),
+        obi:         document.getElementById('newObiOn').classList.contains('selected') || null,
         internalNote: document.getElementById('newInternalNote') ? document.getElementById('newInternalNote').value.trim() || null : null,
         pressing:    document.getElementById('newPressing').value.trim()   || null,
         edition:     document.getElementById('newEdition').value.trim()    || null,
@@ -1293,6 +1328,8 @@
       renderNewGallery();
       document.getElementById('newPressingBtns').querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
       document.getElementById('newEditionBtns').querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+      document.getElementById('newObiOn').classList.remove('selected');
+      document.getElementById('newObiOff').classList.add('selected');
 
       importItems = [];
       allItems = [];
@@ -1504,6 +1541,8 @@
     const ncc = document.getElementById('newCostCurrency');
     if (ncc) ncc.value = 'TWD';
     document.getElementById('newItemType').value = 'Used';
+    document.getElementById('newObiOn').classList.remove('selected');
+    document.getElementById('newObiOff').classList.add('selected');
     newSelectedGenres = [];
     newSelectedCondition = '';
     newImages = [];
