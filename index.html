@@ -945,6 +945,23 @@
     try { sessionStorage.setItem('dip_seen', JSON.stringify([...seenAlbums])); } catch(e) {}
   }
 
+  // Track distinctive words used in reason texts to avoid repetition within session
+  let seenReasonWords = (() => {
+    try { const s = sessionStorage.getItem('dip_reason_words'); return s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { return new Set(); }
+  })();
+  function _extractReasonWords(text) {
+    // Common particles/connectives to skip
+    const SKIP = new Set(['的','了','是','在','有','也','都','和','與','但','而','為','把','被','讓','將','這','那','一','個','不','沒','就','很','到','去','來','你','我','他','她','它','們','或','及','以','於','從','對','由','等','如','其','此','之','所','因','則','雖','若','當','再','更','最','太','只','已','還','又','才','會','能','可','要','想','說','看','好','像','著','過','地','得','什麼','這個','那個','一個','沒有','可以']);
+    return text
+      .split(/[\s，。、！？⋯—：；「」『』\.\,\!\?\:\;]+/)
+      .filter(w => w.length >= 2 && !SKIP.has(w));
+  }
+  function _saveReasonWords(text) {
+    _extractReasonWords(text).forEach(w => seenReasonWords.add(w));
+    try { sessionStorage.setItem('dip_reason_words', JSON.stringify([...seenReasonWords])); } catch(e) {}
+  }
+
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
     document.body.style.overflow = '';
@@ -954,6 +971,7 @@
   document.getElementById('quizContent').addEventListener('click', e => {
     if (e.target.closest('[data-quiz-action="retry"]')) {
       sessionStorage.removeItem('dip_seen'); seenAlbums = new Set();
+      sessionStorage.removeItem('dip_reason_words'); seenReasonWords = new Set();
       startQuiz();
     }
     if (e.target.closest('[data-quiz-action="view-item"]')) {
@@ -1083,7 +1101,8 @@
       '從某種轉變切入：描述一件正在改變但還沒改完的事',
     ];
     const writingAngle = WRITING_ANGLES[Math.floor(Math.random() * WRITING_ANGLES.length)];
-    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n\n命定推薦：${artist} — ${album}\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。第一句描述對方此刻的某個狀態或傾向（像在說一件客觀存在的事）；第二句帶入專輯的聲音質感或情緒氛圍，說明它為何恰好對應這個狀態；第三句以一個開放的意象收尾，不下結論。本次寫作角度（必須遵守）：${writingAngle}。絕對禁止捏造不確定的歌名或歌詞——若不確定具體曲目，改用整體聲音質感描述。禁止出現任何建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）。禁止使用以下 AI 慣用句型：「不是⋯而是⋯」「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」。用「你」直接對話，語感冷靜、精準，像一面鏡子。絕對禁止出現「我」「我不」「我很」「我想」「我覺」「我們」「讓我」等第一人稱。禁止「這張專輯」開頭。只回傳說明文字，不包含任何 JSON 或格式符號。`;
+    const usedWords = seenReasonWords.size > 0 ? `\n本次禁止出現的詞彙（這些詞在之前的結果已用過，必須換其他詞表達）：${[...seenReasonWords].join('、')}\n` : '';
+    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。第一句描述對方此刻的某個狀態或傾向（像在說一件客觀存在的事）；第二句帶入專輯的聲音質感或情緒氛圍，說明它為何恰好對應這個狀態；第三句以一個開放的意象收尾，不下結論。本次寫作角度（必須遵守）：${writingAngle}。絕對禁止捏造不確定的歌名或歌詞——若不確定具體曲目，改用整體聲音質感描述。禁止出現任何建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）。禁止使用以下 AI 慣用句型：「不是⋯而是⋯」「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」。用「你」直接對話，語感冷靜、精準，像一面鏡子。絕對禁止出現「我」「我不」「我很」「我想」「我覺」「我們」「讓我」等第一人稱。禁止「這張專輯」開頭。只回傳說明文字，不包含任何 JSON 或格式符號。`;
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
@@ -1306,6 +1325,7 @@ ${seenList}
     lastQuizResult = result;
     seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
     _saveSeenAlbums();
+    if (result.reason) _saveReasonWords(result.reason);
 
     document.getElementById('quizContent').innerHTML = `
       <div class="quiz-result">
