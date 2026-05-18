@@ -89,6 +89,8 @@
     .item-meta { font-size: 10px; color: var(--gray); margin-top: 2px; }
     .item-row.active .item-meta { color: #aaa; }
     .list-empty { padding: 40px 16px; text-align: center; color: var(--gray); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .item-section-hdr { padding: 5px 12px; font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); background: var(--bg); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1; }
+    .item-row.unpub { opacity: 0.5; }
     .spinner { width: 16px; height: 16px; border: 1px solid var(--line); border-top-color: var(--black); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 10px; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -659,7 +661,7 @@
     { val: 'F', sub: 'Fair' }, { val: 'P', sub: 'Poor' },
   ];
 
-  let allItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
+  let allItems = [], unpublishedItems = [], currentItem = null, selectedGenres = [], selectedCondition = '';
   let currentImages = [];
   let pendingImages = null;
 
@@ -667,33 +669,42 @@
   async function loadItems() {
     try {
       const snap = await getDocs(collection(db, 'items'));
-      allItems = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+      const base = snap.docs.map(d => ({ id: d.id, ...d.data() }))
         .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存'))
         .sort((a, b) => (a.name||'').localeCompare(b.name||''));
-      renderList(allItems);
+      allItems = base.filter(p => p.published !== false);
+      unpublishedItems = base.filter(p => p.published === false);
+      renderList();
     } catch (e) {
       document.getElementById('itemList').innerHTML = '<div class="list-empty">⚠ ' + e.message + '</div>';
     }
   }
 
-  function renderList(items) {
+  function itemRowHTML(p, unpub) {
+    const thumb = p.imageUrl || (Array.isArray(p.imageUrls) && p.imageUrls[0]);
+    return '<div class="item-row' + (currentItem && currentItem.id === p.id ? ' active' : '') + (unpub ? ' unpub' : '') + '" data-id="' + p.id + '">' +
+      '<div class="item-thumb">' + (thumb ? '<img src="' + thumb + '" alt="">' : '○') + '</div>' +
+      '<div class="item-info"><div class="item-name">' + (p.name || '未命名') + '</div>' +
+      '<div class="item-meta">' + (p.artist || '') + (p.condition ? ' · ' + p.condition : '') + '</div>' +
+      '<div class="item-meta">' + (p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : '') + '</div></div></div>';
+  }
+
+  function renderList() {
     const q = document.getElementById('searchInput').value.toLowerCase();
-    const filtered = q ? items.filter(p => (p.name||'').toLowerCase().includes(q)) : items;
-    if (!filtered.length) { document.getElementById('itemList').innerHTML = '<div class="list-empty">找不到商品</div>'; return; }
-    document.getElementById('itemList').innerHTML = filtered.map(p => {
-      const thumb = p.imageUrl || (Array.isArray(p.imageUrls) && p.imageUrls[0]);
-      return '<div class="item-row ' + (currentItem && currentItem.id === p.id ? 'active' : '') + '" data-id="' + p.id + '">' +
-        '<div class="item-thumb">' + (thumb ? '<img src="' + thumb + '" alt="">' : '○') + '</div>' +
-        '<div class="item-info"><div class="item-name">' + (p.name || '未命名') + '</div>' +
-        '<div class="item-meta">' + (p.artist || '') + (p.condition ? ' · ' + p.condition : '') + '</div>' +
-        '<div class="item-meta">' + (p.customPrice ? 'NT$ ' + Number(p.customPrice).toLocaleString() : '') + '</div></div></div>';
-    }).join('');
+    const pub  = q ? allItems.filter(p => (p.name||'').toLowerCase().includes(q)) : allItems;
+    const unpub = q ? unpublishedItems.filter(p => (p.name||'').toLowerCase().includes(q)) : unpublishedItems;
+    let html = '';
+    html += '<div class="item-section-hdr">已上架（' + pub.length + '）</div>';
+    html += pub.length ? pub.map(p => itemRowHTML(p, false)).join('') : '<div class="list-empty" style="padding:14px 16px;">（無）</div>';
+    html += '<div class="item-section-hdr" style="margin-top:2px;">未上架（' + unpub.length + '）</div>';
+    html += unpub.length ? unpub.map(p => itemRowHTML(p, true)).join('') : '<div class="list-empty" style="padding:14px 16px;">（無）</div>';
+    document.getElementById('itemList').innerHTML = html;
     document.getElementById('itemList').querySelectorAll('.item-row').forEach(row => {
       row.addEventListener('click', () => openEditor(row.dataset.id));
     });
   }
 
-  document.getElementById('searchInput').addEventListener('input', () => renderList(allItems));
+  document.getElementById('searchInput').addEventListener('input', () => renderList());
 
   // ── Gallery 圖片陣列 ──
   function renderGallery() {
@@ -728,7 +739,7 @@
           currentItem.imageUrls = [...currentImages];
           currentItem.imageUrl = currentImages[0] || null;
           allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: currentItem.imageUrl, imageUrls: [...currentImages] } : p);
-          renderList(allItems);
+          renderList();
         }
       });
       gallery.appendChild(item);
@@ -776,7 +787,7 @@
       currentItem.imageUrls = [...currentImages];
       currentItem.imageUrl  = currentImages[0];
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, imageUrl: currentImages[0], imageUrls: [...currentImages] } : p);
-      renderList(allItems);
+      renderList();
       setTimeout(() => { wrap.classList.remove('show'); bar.style.width = '0'; }, 1500);
     } catch (err) {
       lbl.textContent = '';
@@ -860,7 +871,7 @@
 
   // ── 開啟編輯 ──
   function openEditor(id) {
-    currentItem = allItems.find(p => p.id === id);
+    currentItem = allItems.find(p => p.id === id) || unpublishedItems.find(p => p.id === id);
     if (!currentItem) return;
     document.getElementById('placeholder').style.display = 'none';
     document.getElementById('newItemPanel').style.display = 'none';
@@ -903,7 +914,7 @@
           allItems = allItems.map(p => p.id === currentItem.id ? { ...p, customPrice: val } : p);
           msgEl.style.color = 'var(--green)';
           msgEl.textContent = '✓ 售價已更新：NT$ ' + val.toLocaleString();
-          renderList(allItems);
+          renderList();
         } catch(e) {
           msgEl.style.color = 'var(--red)';
           msgEl.textContent = '更新失敗：' + e.message;
@@ -953,29 +964,63 @@
     document.getElementById('progressBar').style.width = '0';
     document.getElementById('msgBox').className = 'msg';
 
-    // 刪除按鈕
-    if (!document.getElementById('btnDelete')) {
-      const btn = document.createElement('button');
-      btn.className = 'btn-delete'; btn.id = 'btnDelete';
-      btn.textContent = '從展示網站移除此商品';
-      document.getElementById('btnSave').after(btn);
-      btn.addEventListener('click', () => { if (currentItem) deleteItem(currentItem.id, currentItem.name); });
+    // 下架 / 重新上架按鈕
+    let btnToggle = document.getElementById('btnTogglePublish');
+    if (!btnToggle) {
+      btnToggle = document.createElement('button');
+      btnToggle.className = 'btn-delete';
+      btnToggle.id = 'btnTogglePublish';
+      document.getElementById('btnSave').after(btnToggle);
+    }
+    if (currentItem.published === false) {
+      btnToggle.textContent = '重新上架';
+      btnToggle.style.color = 'var(--green)';
+      btnToggle.style.borderColor = 'var(--green)';
+      btnToggle.onclick = () => { if (currentItem) republishItem(currentItem.id, currentItem.name); };
+    } else {
+      btnToggle.textContent = '移至下架區';
+      btnToggle.style.color = 'var(--red)';
+      btnToggle.style.borderColor = 'var(--line)';
+      btnToggle.onclick = () => { if (currentItem) unpublishItem(currentItem.id, currentItem.name); };
     }
 
-    renderList(allItems);
+    renderList();
   }
 
-  // ── 刪除 ──
-  async function deleteItem(id, name) {
-    if (!confirm('確定要移除「' + name + '」？')) return;
+  // ── 移至下架區 ──
+  async function unpublishItem(id, name) {
+    if (!confirm('確定要將「' + name + '」移至下架區？')) return;
     try {
-      await deleteDoc(doc(db, 'items', id));
-      allItems = allItems.filter(p => p.id !== id);
+      await updateDoc(doc(db, 'items', id), { published: false });
+      const item = allItems.find(p => p.id === id);
+      if (item) {
+        const updated = { ...item, published: false };
+        allItems = allItems.filter(p => p.id !== id);
+        unpublishedItems = [...unpublishedItems, updated].sort((a, b) => (a.name||'').localeCompare(b.name||''));
+      }
       currentItem = null;
       document.getElementById('editor').classList.remove('show');
       document.getElementById('placeholder').style.display = '';
-      renderList(allItems);
-    } catch (e) { showMsg('error', '移除失敗：' + e.message); }
+      renderList();
+    } catch (e) { showMsg('error', '操作失敗：' + e.message); }
+  }
+
+  // ── 重新上架 ──
+  async function republishItem(id, name) {
+    if (!confirm('確定要將「' + name + '」重新上架？')) return;
+    try {
+      await updateDoc(doc(db, 'items', id), { published: true });
+      const item = unpublishedItems.find(p => p.id === id);
+      if (item) {
+        const updated = { ...item, published: true };
+        unpublishedItems = unpublishedItems.filter(p => p.id !== id);
+        allItems = [...allItems, updated].sort((a, b) => (a.name||'').localeCompare(b.name||''));
+      }
+      currentItem = null;
+      document.getElementById('editor').classList.remove('show');
+      document.getElementById('placeholder').style.display = '';
+      renderList();
+    } catch (e) { showMsg('error', '操作失敗：' + e.message); }
   }
 
   // ── 儲存 ──
@@ -1004,11 +1049,12 @@
       Object.keys(updates).forEach(k => updates[k] === null && delete updates[k]);
       await updateDoc(doc(db, 'items', currentItem.id), updates);
       allItems = allItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
+      unpublishedItems = unpublishedItems.map(p => p.id === currentItem.id ? { ...p, ...updates } : p);
       currentItem = { ...currentItem, ...updates };
       currentImages = updates.imageUrls || [];
       pendingImages = null;
       showMsg('success', '✓ 儲存成功！');
-      renderList(allItems);
+      renderList();
     } catch (e) { showMsg('error', '儲存失敗：' + e.message); }
     finally { btn.disabled = false; }
   });
@@ -1027,7 +1073,7 @@
     try {
       const snap = await getDocs(collection(db, 'items'));
       importItems = snap.docs.map(d => ({ id: d.id, ...d.data() }))
-        .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存'))
+        .filter(p => p.status === '庫存' && (!p.group || p.group === '' || p.group === '一般庫存') && p.published !== false)
         .sort((a, b) => (a.name||'').localeCompare(b.name||''));
       renderImportList(importItems);
     } catch (e) { document.getElementById('importList').innerHTML = '<div class="list-empty">⚠ ' + e.message + '</div>'; }
@@ -1427,7 +1473,7 @@
     renderNewGallery();
     document.getElementById('importSelected').style.display = 'none';
     loadImportList();
-    renderList(allItems);
+    renderList();
   });
 
   // 成本建議售價（新增表單）

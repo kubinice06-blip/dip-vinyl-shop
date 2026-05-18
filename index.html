@@ -482,7 +482,7 @@
 
       all = snap.docs
         .map(d => ({ id: d.id, ...d.data() }))
-        .filter(p => !p.group || p.group === '' || p.group === '一般庫存');
+        .filter(p => (!p.group || p.group === '' || p.group === '一般庫存') && p.published !== false);
 
       if (all.length === 0) {
         document.getElementById('countLabel').textContent = '目前沒有在架商品';
