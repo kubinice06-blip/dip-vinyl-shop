@@ -1243,17 +1243,27 @@ ${seenList}
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
 
-      // Try up to 3 times — Claude Haiku rarely hallucinates, Spotify verifies
+      // Progressive relaxation: try up to 6 times, drop constraints if failing
       let verified = null;
       let failedAlbums = [];
-      for (let attempt = 0; attempt < 3; attempt++) {
+      for (let attempt = 0; attempt < 6; attempt++) {
+        // Attempts 0-2: full constraints | 3: drop scope frame | 4: also allow seen artists | 5: minimal
+        let usePrompt;
+        if (attempt < 3) {
+          usePrompt = prompt;
+        } else if (attempt === 3) {
+          usePrompt = prompt.replace(/- 本次探索範圍（兩個維度都必須遵守）：[^\n]+\n/, '');
+        } else if (attempt === 4) {
+          usePrompt = prompt.replace(/- 本次探索範圍（兩個維度都必須遵守）：[^\n]+\n/, '').replace(seenList, '');
+        } else {
+          usePrompt = `推薦一張你了解的真實專輯，跟用戶心理測驗答案有關聯。\n${qaText}\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
+        }
         const retryNote = failedAlbums.length
-          ? `\n以下在 Spotify 找不到，請換一張：\n${failedAlbums.join('\n')}\n`
+          ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
           : '';
         const resp = await fetch(`${WORKER_URL}/claude`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ messages: [{ role: 'user', content: prompt + retryNote }] }),
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: usePrompt + retryNote }] }),
         });
         const data = await resp.json();
         logApiUsage('claude', data.usage?.total_tokens);
@@ -1262,11 +1272,13 @@ ${seenList}
           throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : data.apiError);
         }
         const text = data.content?.[0]?.text || '';
-        const jsonMatch = text.match(/\{[^{}]*\}/);
-        if (!jsonMatch) continue;
+        // Tolerant JSON extraction — handles code blocks, extra text
+        const jsonMatch = text.match(/\{[\s\S]*?"artist"[\s\S]*?"album"[\s\S]*?\}/);
+        if (!jsonMatch) { console.warn('[quiz] no JSON in attempt', attempt, text); continue; }
         let rec;
-        try { rec = JSON.parse(jsonMatch[0]); } catch(e) { continue; }
+        try { rec = JSON.parse(jsonMatch[0]); } catch(e) { console.warn('[quiz] JSON parse failed', attempt, jsonMatch[0]); continue; }
         if (!rec.artist || !rec.album) continue;
+        console.log('[quiz] attempt', attempt, '→', rec.artist, '—', rec.album);
         const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
         if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
         failedAlbums.push(`${rec.artist} — ${rec.album}`);
