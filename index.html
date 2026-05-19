@@ -1116,29 +1116,19 @@
       '從一個問句開場（不是疑問句，是反思感的陳述）',
     ];
     const openingMode = OPENING_MODES[Math.floor(Math.random() * OPENING_MODES.length)];
-    // Cap to most recent 250 ngrams to keep prompt manageable
-    const recentWords = [...seenReasonWords].slice(-250);
+    // Cap to most recent 80 ngrams to keep prompt small
+    const recentWords = [...seenReasonWords].slice(-80);
     const usedWords = recentWords.length > 0 ? `\n禁止重複出現的詞語（之前的結果用過，必須換別的字詞表達）：${recentWords.join('、')}\n` : '';
-    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n===最重要的一條規則===\n絕對禁止任何「對比修辭」句型。包括但不限於：\n- 「不是X，而是Y」「不是X而是Y」（任何標點變體）\n- 「並非X，而是Y」「並不是X，而是Y」\n- 「與其說X，不如說Y」「與其X不如Y」\n- 「不只是X，更是Y」「不僅X，還Y」\n- 「不是因為X，而是因為Y」\n這是AI寫作最明顯的破綻，一旦出現，整段文字就完蛋。寧可換掉整句，也絕對不能用這個結構。\n=================\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。\n\n關鍵：把5題答案當「整體人格輪廓」看，不要抓某一題的關鍵句當主軸。即使某題答案戲劇性很強（例如「懶得解釋」「想消失」），也不要讓整段文字繞著那一題打轉。要寫出此人的整體傾向。\n\n本次開場方式（必須遵守）：${openingMode}\n本次寫作角度（必須遵守）：${writingAngle}\n\n結構自由，跟著角度走，不要套「狀態→聲音→意象」的固定公式。每次的句長、節奏、切入點都應該不一樣。專輯本身的氣質決定文字的氣質——歡快的不該寫得陰沉，安靜的不該寫得激烈。\n\n其他禁止：\n- 捏造不確定的歌名或歌詞（若不確定改用整體聲音質感描述）\n- 建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）\n- 其他 AI 慣用詞（「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」「彷彿」）\n- 第一人稱「我」\n- 「這張專輯」開頭\n\n只回傳說明文字，不含 JSON 或格式符號。`;
-    // Detect "不是X而是Y" / "並非X而是Y" / "與其X不如Y" / "不只X更Y" / "不僅X還Y" patterns
-    const hasAiCliche = t => /(不是|並非|並不是).{1,20}(而是|，而是)/.test(t) || /與其.{1,15}(不如|不如說)/.test(t) || /(不只是?|不僅).{1,15}(更是?|還是?)/.test(t);
-    async function _callClaude(p) {
-      try {
-        const resp = await fetch(`${WORKER_URL}/claude`, {
-          method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ messages: [{ role: 'user', content: p }] }),
-        });
-        const data = await resp.json();
-        logApiUsage('claude', data.usage?.total_tokens);
-        return data.content?.[0]?.text?.trim() || '';
-      } catch(e) { return ''; }
-    }
-    let text = await _callClaude(prompt);
-    if (text && hasAiCliche(text)) {
-      const retryPrompt = prompt + `\n\n上一次你寫了：「${text}」\n裡面出現了「不是X而是Y」這種對比修辭，這是被嚴格禁止的。重寫，完全不要用任何對比修辭結構。`;
-      text = await _callClaude(retryPrompt);
-    }
-    return text;
+    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n★絕對禁止任何「對比修辭」結構：不是X而是Y / 並非X而是Y / 與其X不如Y / 不只X更Y / 不僅X還Y / 不是因為X而是因為Y。任何變體都不行，這是AI破綻。\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。\n\n關鍵：把5題答案當「整體人格輪廓」看，不要抓某一題的關鍵句當主軸。即使某題答案戲劇性很強（例如「懶得解釋」「想消失」），也不要讓整段文字繞著那一題打轉。要寫出此人的整體傾向。\n\n本次開場方式（必須遵守）：${openingMode}\n本次寫作角度（必須遵守）：${writingAngle}\n\n結構自由，跟著角度走，不要套「狀態→聲音→意象」的固定公式。每次的句長、節奏、切入點都應該不一樣。專輯本身的氣質決定文字的氣質——歡快的不該寫得陰沉，安靜的不該寫得激烈。\n\n其他禁止：\n- 捏造不確定的歌名或歌詞（若不確定改用整體聲音質感描述）\n- 建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）\n- 其他 AI 慣用詞（「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」「彷彿」）\n- 第一人稱「我」\n- 「這張專輯」開頭\n\n只回傳說明文字，不含 JSON 或格式符號。`;
+    try {
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      const data = await resp.json();
+      logApiUsage('claude', data.usage?.total_tokens);
+      return data.content?.[0]?.text?.trim() || '';
+    } catch(e) { return ''; }
   }
 
   async function submitQuiz() {
@@ -1249,17 +1239,15 @@ ${seenList}
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
 
-      // Progressive relaxation: try up to 6 times, drop constraints if failing
+      // Progressive relaxation: try up to 4 times, drop constraints if failing
       let verified = null;
       let failedAlbums = [];
-      for (let attempt = 0; attempt < 6; attempt++) {
-        // Attempts 0-2: full constraints | 3: drop scope frame | 4: also allow seen artists | 5: minimal
+      for (let attempt = 0; attempt < 4; attempt++) {
+        // 0-1: full | 2: drop scope frame + seen | 3: minimal fallback
         let usePrompt;
-        if (attempt < 3) {
+        if (attempt < 2) {
           usePrompt = prompt;
-        } else if (attempt === 3) {
-          usePrompt = prompt.replace(/- 本次探索範圍（兩個維度都必須遵守）：[^\n]+\n/, '');
-        } else if (attempt === 4) {
+        } else if (attempt === 2) {
           usePrompt = prompt.replace(/- 本次探索範圍（兩個維度都必須遵守）：[^\n]+\n/, '').replace(seenList, '');
         } else {
           usePrompt = `推薦一張你了解的真實專輯，跟用戶心理測驗答案有關聯。\n${qaText}\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
