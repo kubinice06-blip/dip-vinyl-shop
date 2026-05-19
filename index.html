@@ -1373,7 +1373,7 @@ ${seenList}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
-        ${quizAnotherCount < QUIZ_ANOTHER_MAX ? `<button class="quiz-another-btn" data-quiz-action="another">再一張（${QUIZ_ANOTHER_MAX - quizAnotherCount}）</button>` : ''}
+        ${quizAnotherCount < QUIZ_ANOTHER_MAX ? `<button class="quiz-another-btn" data-quiz-action="another">再一張${QUIZ_ANOTHER_MAX - quizAnotherCount > 1 ? `（${QUIZ_ANOTHER_MAX - quizAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
