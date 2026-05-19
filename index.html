@@ -951,11 +951,17 @@
     catch(e) { return new Set(); }
   })();
   function _extractReasonWords(text) {
-    // Common particles/connectives to skip
-    const SKIP = new Set(['的','了','是','在','有','也','都','和','與','但','而','為','把','被','讓','將','這','那','一','個','不','沒','就','很','到','去','來','你','我','他','她','它','們','或','及','以','於','從','對','由','等','如','其','此','之','所','因','則','雖','若','當','再','更','最','太','只','已','還','又','才','會','能','可','要','想','說','看','好','像','著','過','地','得','什麼','這個','那個','一個','沒有','可以']);
-    return text
-      .split(/[\s，。、！？⋯—：；「」『』\.\,\!\?\:\;]+/)
-      .filter(w => w.length >= 2 && !SKIP.has(w));
+    // Stop-chars that shouldn't be inside a meaningful chunk (particles/punctuation/numbers/latin)
+    const STOP = /[\s，。、！？⋯—：；「」『』\.\,\!\?\:\;0-9A-Za-z的了是在有也都和與但而為把被讓將這那一個不沒就很到去來你我他她它們或及以於從對由等如其此之所因則雖若當再更最太只已還又才會能可要想說看好像著過地得]/;
+    const out = new Set();
+    // Extract 2- and 3-char Chinese n-grams that contain no stop chars
+    for (let n = 2; n <= 3; n++) {
+      for (let i = 0; i <= text.length - n; i++) {
+        const chunk = text.slice(i, i + n);
+        if (!STOP.test(chunk)) out.add(chunk);
+      }
+    }
+    return [...out];
   }
   function _saveReasonWords(text) {
     _extractReasonWords(text).forEach(w => seenReasonWords.add(w));
@@ -1101,8 +1107,19 @@
       '從某種轉變切入：描述一件正在改變但還沒改完的事',
     ];
     const writingAngle = WRITING_ANGLES[Math.floor(Math.random() * WRITING_ANGLES.length)];
-    const usedWords = seenReasonWords.size > 0 ? `\n本次禁止出現的詞彙（這些詞在之前的結果已用過，必須換其他詞表達）：${[...seenReasonWords].join('、')}\n` : '';
-    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。第一句描述對方此刻的某個狀態或傾向（像在說一件客觀存在的事）；第二句帶入專輯的聲音質感或情緒氛圍，說明它為何恰好對應這個狀態；第三句以一個開放的意象收尾，不下結論。本次寫作角度（必須遵守）：${writingAngle}。絕對禁止捏造不確定的歌名或歌詞——若不確定具體曲目，改用整體聲音質感描述。禁止出現任何建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）。禁止使用以下 AI 慣用句型：「不是⋯而是⋯」「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」。用「你」直接對話，語感冷靜、精準，像一面鏡子。絕對禁止出現「我」「我不」「我很」「我想」「我覺」「我們」「讓我」等第一人稱。禁止「這張專輯」開頭。只回傳說明文字，不包含任何 JSON 或格式符號。`;
+    const OPENING_MODES = [
+      '從專輯的聲音/畫面開場，第二句才帶入此人狀態',
+      '從一個具體場景或物件開場，第三句才把人和音樂連起來',
+      '從一個動作或瞬間開場（不是「你」開頭）',
+      '直接以「你」開場，描述狀態',
+      '從一個矛盾或反差開場',
+      '從一個問句開場（不是疑問句，是反思感的陳述）',
+    ];
+    const openingMode = OPENING_MODES[Math.floor(Math.random() * OPENING_MODES.length)];
+    // Cap to most recent 250 ngrams to keep prompt manageable
+    const recentWords = [...seenReasonWords].slice(-250);
+    const usedWords = recentWords.length > 0 ? `\n禁止重複出現的詞語（之前的結果用過，必須換別的字詞表達）：${recentWords.join('、')}\n` : '';
+    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n請用3句繁體中文寫出這張專輯與此人當下狀態的對應。語氣像旁觀者說出一個觀察，不給建議、不說教、不鼓勵——只是陳述一個事實，讓對方自己感受。\n\n本次開場方式（必須遵守）：${openingMode}\n本次寫作角度（必須遵守）：${writingAngle}\n\n結構自由，跟著角度走，不要套「狀態→聲音→意象」的固定公式。每次的句長、節奏、切入點都應該不一樣。專輯本身的氣質決定文字的氣質——歡快的不該寫得陰沉，安靜的不該寫得激烈。\n\n絕對禁止：\n- 捏造不確定的歌名或歌詞（若不確定改用整體聲音質感描述）\n- 建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）\n- AI 慣用句型（「不是⋯而是⋯」「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」）\n- 第一人稱「我」\n- 「這張專輯」開頭\n\n只回傳說明文字，不含 JSON 或格式符號。`;
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST',
