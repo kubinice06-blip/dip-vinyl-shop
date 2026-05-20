@@ -732,7 +732,7 @@
     const tab = btn.dataset.tab;
 
     if (tab === 'quiz') {
-      history.replaceState(null, '', '/quiz');
+      history.replaceState(null, '', '#quiz');
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       if (!quizQs.length) await loadQuizData();
@@ -741,7 +741,7 @@
     }
 
     if (tab === 'genre') {
-      history.replaceState(null, '', '/genre');
+      history.replaceState(null, '', '#genre');
       document.getElementById('genreModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       startGenrePick();
@@ -1005,7 +1005,7 @@
   document.getElementById('quizCloseBtn').addEventListener('click', () => {
     document.getElementById('quizModal').classList.remove('open');
     document.body.style.overflow = '';
-    history.replaceState(null, '', '/');
+    history.replaceState(null, '', location.pathname);
   });
 
   document.getElementById('quizContent').addEventListener('click', e => {
@@ -1856,7 +1856,7 @@ ${seenList}
   document.getElementById('genreCloseBtn').addEventListener('click', () => {
     document.getElementById('genreModal').classList.remove('open');
     document.body.style.overflow = '';
-    history.replaceState(null, '', '/');
+    history.replaceState(null, '', location.pathname);
   });
 
   document.getElementById('genreContent').addEventListener('click', e => {
@@ -2230,12 +2230,10 @@ ${seenList}
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       loadQuizData().then(() => startQuiz());
-      history.replaceState(null, '', '/quiz');
     } else if (target === 'genre') {
       document.getElementById('genreModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       startGenrePick();
-      history.replaceState(null, '', '/genre');
     } else {
       const btn = document.querySelector(`.main-tab[data-tab="${target}"]`);
       if (btn) btn.click();
