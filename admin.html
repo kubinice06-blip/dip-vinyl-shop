@@ -2108,21 +2108,32 @@
   function renderAdminReels(reels) {
     const el = document.getElementById('reelsList');
     if (!reels.length) { el.innerHTML = '<div class="list-empty">尚無 Reels</div>'; return; }
-    el.innerHTML = reels.map(r => {
-      const moods = reelMoodArr(r);
-      const safe = s => (s || '').toString().replace(/</g,'&lt;');
-      return `<div class="reel-row" data-id="${r._docId}">
-        <div class="reel-row-info">
-          <div class="reel-row-title">${safe(r.title) || '—'}</div>
-          <div class="reel-row-meta">${safe(r.artist)}${r.genre ? ' · ' + safe(r.genre) : ''}${moods.length ? ' · ' + moods.map(safe).join(', ') : ''}</div>
-          ${r.url ? `<a class="reel-row-url" href="${r.url}" target="_blank" rel="noopener">${r.url}</a>` : ''}
-        </div>
-        <div class="reel-row-btns">
-          <button class="reel-edit-btn">編輯</button>
-          <button class="archive-del reel-del-btn">刪除</button>
-        </div>
-      </div>`;
-    }).join('');
+    const safe = s => (s == null ? '' : String(s)).replace(/</g, '&lt;');
+    el.innerHTML = '<div style="padding:6px 12px;font-size:10px;color:var(--gray);background:var(--bg);border-bottom:1px solid var(--line);">共 ' + reels.length + ' 筆</div>' +
+      reels.map(r => {
+        try {
+          const moods = reelMoodArr(r);
+          return `<div class="reel-row" data-id="${r._docId}">
+            <div class="reel-row-info">
+              <div class="reel-row-title">${safe(r.title) || safe(r.id) || r._docId}</div>
+              <div class="reel-row-meta">${safe(r.artist)}${r.genre ? ' · ' + safe(r.genre) : ''}${moods.length ? ' · ' + moods.map(safe).join(', ') : ''}</div>
+              ${r.url ? '<a class="reel-row-url" href="' + safe(r.url) + '" target="_blank" rel="noopener">' + safe(r.url) + '</a>' : '<span style="font-size:10px;color:var(--gray);">（無連結）</span>'}
+            </div>
+            <div class="reel-row-btns">
+              <button class="reel-edit-btn">編輯</button>
+              <button class="archive-del reel-del-btn">刪除</button>
+            </div>
+          </div>`;
+        } catch(err) {
+          return `<div class="reel-row" data-id="${r._docId}" style="background:#fff5f5;">
+            <div class="reel-row-info">
+              <div class="reel-row-title" style="color:var(--red);">⚠ 渲染錯誤</div>
+              <div class="reel-row-meta">doc id: ${r._docId} — ${err.message}</div>
+            </div>
+            <div class="reel-row-btns"><button class="archive-del reel-del-btn">刪除</button></div>
+          </div>`;
+        }
+      }).join('');
   }
 
   // 重設表單
