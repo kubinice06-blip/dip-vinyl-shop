@@ -1547,7 +1547,7 @@ ${seenList}
   async function shareQuizResult() {
     if (!lastQuizResult) return;
     const { artist, album, reason } = lastQuizResult;
-    const shareUrl = 'https://www.dipvinyl.tw/quiz';
+    const shareUrl = 'https://dipvinyl.tw/quiz';
 
     const btn = document.querySelector('[data-quiz-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
@@ -2140,7 +2140,7 @@ ${seenList}
   async function shareGpResult() {
     if (!lastGpResult) return;
     const { artist, album, reason } = lastGpResult;
-    const gpShareUrl = 'https://www.dipvinyl.tw/genre';
+    const gpShareUrl = 'https://dipvinyl.tw/genre';
     const btn = document.querySelector('[data-gp-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
     try {
