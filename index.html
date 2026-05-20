@@ -2130,9 +2130,9 @@ ${seenList}
       const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
       const file = new File([blob], 'genre-pick.jpg', { type: 'image/jpeg' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${artist} — ${album} | 類型挑片`, text: '來挖一張屬於你的冷門專輯 →', url: gpShareUrl });
+        await navigator.share({ files: [file], title: `${artist} — ${album} | 類型挑片`, text: '來點不一樣的音樂 →', url: gpShareUrl });
       } else if (navigator.share) {
-        await navigator.share({ title: `${artist} — ${album} | DIP Vinyl Shop`, text: `🎵 ${artist} — ${album}\n${reason || ''}\n\n來挖一張屬於你的冷門專輯 →`, url: gpShareUrl });
+        await navigator.share({ title: `${artist} — ${album} | DIP Vinyl Shop`, text: `🎵 ${artist} — ${album}\n${reason || ''}\n\n來點不一樣的音樂 →`, url: gpShareUrl });
       } else {
         await navigator.clipboard.writeText(`🎵 ${artist} — ${album}\n${reason || ''}\n${gpShareUrl}`);
         showShareToast('已複製 ✓');
