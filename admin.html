@@ -186,6 +186,13 @@
     .reel-row-meta { font-size: 10px; color: var(--gray); margin-bottom: 4px; }
     .reel-row-url { font-size: 10px; color: var(--gray); text-decoration: none; word-break: break-all; }
     .reel-row-url:hover { color: var(--black); }
+    .reel-row-btns { display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
+    .reel-edit-btn { background: none; border: 1px solid var(--line); color: var(--black); font-family: var(--mono); font-size: 10px; padding: 2px 8px; cursor: pointer; }
+    .reel-row.editing { background: #fffdf0; border-left: 3px solid #c8a000; }
+    .reel-tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
+    .reel-tag { border: 1px solid var(--line); padding: 3px 9px; font-family: var(--mono); font-size: 10px; cursor: pointer; color: var(--gray); background: #fff; transition: all 0.12s; }
+    .reel-tag:hover { border-color: var(--black); color: var(--black); }
+    .reel-tag.selected { background: var(--black); border-color: var(--black); color: #fff; }
   </style>
 </head>
 <body>
@@ -562,23 +569,39 @@
   <div class="right-panel" id="panel-reels">
     <div class="quiz-admin-wrap" style="max-width:800px;padding:0;">
       <div class="section">
-        <div class="section-label">新增 Reel</div>
+        <div class="section-label" id="reelFormLabel">新增 Reel</div>
+        <input type="hidden" id="reelEditId">
         <div class="field"><label>Instagram Reel 連結 *</label><input type="text" id="reelUrl" placeholder="https://www.instagram.com/reel/…"></div>
         <div class="field-row">
           <div class="field"><label>標題 / 專輯名稱</label><input type="text" id="reelTitle" placeholder="All Kinds of Weather…"></div>
           <div class="field"><label>藝人</label><input type="text" id="reelArtist" placeholder="Red Garland…"></div>
         </div>
-        <div class="field-row">
-          <div class="field"><label>曲風 Genre</label><input type="text" id="reelGenre" placeholder="jazz…"></div>
-          <div class="field"><label>Mood（逗號分隔）</label><input type="text" id="reelMood" placeholder="放鬆, 悠閒…"></div>
+
+        <div class="field">
+          <label>曲風 Genre</label>
+          <div class="reel-tag-row" id="reelGenreTags"></div>
+          <input type="text" id="reelGenre" placeholder="自行輸入或點選標籤…" style="margin-top:4px;">
         </div>
-        <button class="btn-save" id="btnAddReel">新增 Reel</button>
+
+        <div class="field">
+          <label>Mood（可多選）</label>
+          <div class="reel-tag-row" id="reelMoodTags"></div>
+          <input type="text" id="reelMood" placeholder="自行輸入，逗號分隔…" style="margin-top:4px;">
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:4px;">
+          <button class="btn-save" id="btnAddReel" style="flex:1;">新增 Reel</button>
+          <button id="btnCancelReelEdit" style="display:none;background:none;border:1px solid var(--line);font-family:var(--mono);font-size:11px;letter-spacing:0.08em;padding:12px 16px;cursor:pointer;color:var(--gray);">取消</button>
+        </div>
         <div class="msg" id="reelMsgBox"></div>
       </div>
 
       <div class="section" style="margin-top:24px;">
-        <div class="section-label">現有 Reels</div>
-        <div id="reelsList" style="border:1px solid var(--line);min-height:60px;"></div>
+        <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;">
+          <span>現有 Reels</span>
+          <button id="btnSeedReels" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;padding:4px 12px;cursor:pointer;color:var(--gray);">從 reels.json 匯入</button>
+        </div>
+        <div id="reelsList" style="border:1px solid var(--line);min-height:60px;margin-top:10px;"></div>
       </div>
     </div>
   </div>
@@ -2020,6 +2043,56 @@
   });
 
   // ── Reels 管理 ──
+  const REEL_GENRE_TAGS = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin','Trip-Hop','Bossa Nova','Post-Rock'];
+  const REEL_MOOD_TAGS  = ['放鬆','悠閒','沉靜','深邃','鬱悶','孤獨','振奮','歡快','浪漫','溫暖','哀愁','夢幻','緊張','神秘','慵懶','躁動','專注','懷舊'];
+
+  // 初始化 Genre/Mood 快選標籤
+  function initReelTags() {
+    const gEl = document.getElementById('reelGenreTags');
+    const mEl = document.getElementById('reelMoodTags');
+    gEl.innerHTML = REEL_GENRE_TAGS.map(g =>
+      `<button class="reel-tag" data-genre="${g}">${g}</button>`).join('');
+    mEl.innerHTML = REEL_MOOD_TAGS.map(m =>
+      `<button class="reel-tag" data-mood="${m}">${m}</button>`).join('');
+
+    // Genre：單選，點選後填入 input
+    gEl.querySelectorAll('.reel-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const already = btn.classList.contains('selected');
+        gEl.querySelectorAll('.reel-tag').forEach(b => b.classList.remove('selected'));
+        if (!already) {
+          btn.classList.add('selected');
+          document.getElementById('reelGenre').value = btn.dataset.genre;
+        } else {
+          document.getElementById('reelGenre').value = '';
+        }
+      });
+    });
+
+    // Mood：多選，同步更新 input
+    mEl.querySelectorAll('.reel-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('selected');
+        const sel = [...mEl.querySelectorAll('.reel-tag.selected')].map(b => b.dataset.mood);
+        document.getElementById('reelMood').value = sel.join(', ');
+      });
+    });
+
+    // 手動輸入 genre → 同步反選標籤
+    document.getElementById('reelGenre').addEventListener('input', e => {
+      const v = e.target.value.trim().toLowerCase();
+      gEl.querySelectorAll('.reel-tag').forEach(b =>
+        b.classList.toggle('selected', b.dataset.genre.toLowerCase() === v));
+    });
+  }
+  initReelTags();
+
+  function reelMoodArr(r) {
+    if (Array.isArray(r.mood)) return r.mood;
+    if (typeof r.mood === 'string' && r.mood) return r.mood.split(',').map(s => s.trim()).filter(Boolean);
+    return [];
+  }
+
   async function loadAdminReels() {
     const el = document.getElementById('reelsList');
     el.innerHTML = '<div class="list-empty"><div class="spinner"></div>載入中…</div>';
@@ -2034,56 +2107,140 @@
 
   function renderAdminReels(reels) {
     const el = document.getElementById('reelsList');
-    if (!reels.length) {
-      el.innerHTML = '<div class="list-empty">尚無 Reels</div>';
-      return;
-    }
-    el.innerHTML = reels.map(r => `
-      <div class="reel-row" data-id="${r._docId}">
+    if (!reels.length) { el.innerHTML = '<div class="list-empty">尚無 Reels</div>'; return; }
+    el.innerHTML = reels.map(r => {
+      const moods = reelMoodArr(r);
+      const safe = s => (s || '').toString().replace(/</g,'&lt;');
+      return `<div class="reel-row" data-id="${r._docId}">
         <div class="reel-row-info">
-          <div class="reel-row-title">${(r.title || '—').replace(/</g,'&lt;')}</div>
-          <div class="reel-row-meta">${(r.artist || '').replace(/</g,'&lt;')}${r.mood?.length ? ' · ' + r.mood.join(', ') : ''}</div>
-          <a class="reel-row-url" href="${r.url}" target="_blank" rel="noopener">${r.url}</a>
+          <div class="reel-row-title">${safe(r.title) || '—'}</div>
+          <div class="reel-row-meta">${safe(r.artist)}${r.genre ? ' · ' + safe(r.genre) : ''}${moods.length ? ' · ' + moods.map(safe).join(', ') : ''}</div>
+          ${r.url ? `<a class="reel-row-url" href="${r.url}" target="_blank" rel="noopener">${r.url}</a>` : ''}
         </div>
-        <button class="archive-del reel-del-btn">刪除</button>
-      </div>
-    `).join('');
+        <div class="reel-row-btns">
+          <button class="reel-edit-btn">編輯</button>
+          <button class="archive-del reel-del-btn">刪除</button>
+        </div>
+      </div>`;
+    }).join('');
   }
+
+  // 重設表單
+  function resetReelForm() {
+    ['reelUrl','reelTitle','reelArtist','reelGenre','reelMood'].forEach(k => document.getElementById(k).value = '');
+    document.getElementById('reelEditId').value = '';
+    document.getElementById('reelFormLabel').textContent = '新增 Reel';
+    document.getElementById('btnAddReel').textContent = '新增 Reel';
+    document.getElementById('btnCancelReelEdit').style.display = 'none';
+    document.getElementById('reelMsgBox').className = 'msg';
+    document.getElementById('reelGenreTags').querySelectorAll('.reel-tag').forEach(b => b.classList.remove('selected'));
+    document.getElementById('reelMoodTags').querySelectorAll('.reel-tag').forEach(b => b.classList.remove('selected'));
+    document.querySelectorAll('.reel-row.editing').forEach(r => r.classList.remove('editing'));
+  }
+
+  document.getElementById('btnCancelReelEdit').addEventListener('click', resetReelForm);
 
   document.getElementById('reelsList').addEventListener('click', async e => {
     const row = e.target.closest('.reel-row');
-    if (!row || !e.target.closest('.reel-del-btn')) return;
-    if (!confirm('確定刪除這個 Reel？')) return;
-    try {
-      await deleteDoc(doc(db, 'reels', row.dataset.id));
-      row.remove();
-    } catch(err) { alert('刪除失敗：' + err.message); }
+    if (!row) return;
+
+    // 刪除
+    if (e.target.closest('.reel-del-btn')) {
+      if (!confirm('確定刪除這個 Reel？')) return;
+      try {
+        await deleteDoc(doc(db, 'reels', row.dataset.id));
+        row.remove();
+        if (document.getElementById('reelEditId').value === row.dataset.id) resetReelForm();
+      } catch(err) { alert('刪除失敗：' + err.message); }
+      return;
+    }
+
+    // 編輯
+    if (e.target.closest('.reel-edit-btn')) {
+      const snap = await getDocs(collection(db, 'reels'));
+      const docData = snap.docs.find(d => d.id === row.dataset.id)?.data();
+      if (!docData) return;
+      const moods = reelMoodArr(docData);
+
+      document.getElementById('reelEditId').value = row.dataset.id;
+      document.getElementById('reelUrl').value   = docData.url    || '';
+      document.getElementById('reelTitle').value = docData.title  || '';
+      document.getElementById('reelArtist').value= docData.artist || '';
+      document.getElementById('reelGenre').value = docData.genre  || '';
+      document.getElementById('reelMood').value  = moods.join(', ');
+
+      // 同步標籤選取狀態
+      const gEl = document.getElementById('reelGenreTags');
+      gEl.querySelectorAll('.reel-tag').forEach(b =>
+        b.classList.toggle('selected', b.dataset.genre.toLowerCase() === (docData.genre||'').toLowerCase()));
+      const mEl = document.getElementById('reelMoodTags');
+      mEl.querySelectorAll('.reel-tag').forEach(b =>
+        b.classList.toggle('selected', moods.includes(b.dataset.mood)));
+
+      document.getElementById('reelFormLabel').textContent = '編輯 Reel';
+      document.getElementById('btnAddReel').textContent = '儲存修改';
+      document.getElementById('btnCancelReelEdit').style.display = '';
+      document.querySelectorAll('.reel-row.editing').forEach(r => r.classList.remove('editing'));
+      row.classList.add('editing');
+      document.getElementById('reelFormLabel').scrollIntoView({ behavior:'smooth', block:'start' });
+    }
   });
 
   document.getElementById('btnAddReel').addEventListener('click', async () => {
-    const url = document.getElementById('reelUrl').value.trim();
-    const title = document.getElementById('reelTitle').value.trim();
-    const artist = document.getElementById('reelArtist').value.trim();
-    const genre = document.getElementById('reelGenre').value.trim();
+    const editId  = document.getElementById('reelEditId').value;
+    const url     = document.getElementById('reelUrl').value.trim();
+    const title   = document.getElementById('reelTitle').value.trim();
+    const artist  = document.getElementById('reelArtist').value.trim();
+    const genre   = document.getElementById('reelGenre').value.trim();
     const moodStr = document.getElementById('reelMood').value.trim();
-    const mood = moodStr ? moodStr.split(',').map(m => m.trim()).filter(Boolean) : [];
-    const msgEl = document.getElementById('reelMsgBox');
+    const mood    = moodStr ? moodStr.split(',').map(m => m.trim()).filter(Boolean) : [];
+    const msgEl   = document.getElementById('reelMsgBox');
     if (!url) { msgEl.className = 'msg error show'; msgEl.textContent = '請填入 Reel 網址'; return; }
     const btn = document.getElementById('btnAddReel');
     btn.disabled = true;
     try {
-      const snap = await getDocs(collection(db, 'reels'));
-      const reelId = 'reel_' + String(snap.size + 1).padStart(3, '0');
-      await addDoc(collection(db, 'reels'), { id: reelId, url, title, artist, genre, mood, description: '' });
-      ['reelUrl','reelTitle','reelArtist','reelGenre','reelMood'].forEach(k => document.getElementById(k).value = '');
-      msgEl.className = 'msg success show';
-      msgEl.textContent = '✓ 新增成功';
+      if (editId) {
+        // 更新
+        await updateDoc(doc(db, 'reels', editId), { url, title, artist, genre, mood });
+        msgEl.className = 'msg success show';
+        msgEl.textContent = '✓ 已儲存修改';
+      } else {
+        // 新增
+        const snap = await getDocs(collection(db, 'reels'));
+        const reelId = 'reel_' + String(snap.size + 1).padStart(3, '0');
+        await addDoc(collection(db, 'reels'), { id: reelId, url, title, artist, genre, mood, description: '' });
+        msgEl.className = 'msg success show';
+        msgEl.textContent = '✓ 新增成功';
+      }
+      resetReelForm();
       loadAdminReels();
     } catch(e) {
       msgEl.className = 'msg error show';
-      msgEl.textContent = '新增失敗：' + e.message;
+      msgEl.textContent = (editId ? '儲存' : '新增') + '失敗：' + e.message;
     }
     btn.disabled = false;
+  });
+
+  // 從 reels.json 匯入
+  document.getElementById('btnSeedReels').addEventListener('click', async () => {
+    const btn = document.getElementById('btnSeedReels');
+    btn.disabled = true; btn.textContent = '匯入中…';
+    try {
+      const res = await fetch('./reels.json');
+      const data = await res.json();
+      const snap = await getDocs(collection(db, 'reels'));
+      const existingIds = new Set(snap.docs.map(d => d.data().id));
+      let added = 0;
+      for (const r of data) {
+        if (!existingIds.has(r.id)) {
+          await addDoc(collection(db, 'reels'), r);
+          added++;
+        }
+      }
+      alert(added ? `✓ 匯入 ${added} 筆新資料` : '所有資料已存在，無需匯入');
+      loadAdminReels();
+    } catch(e) { alert('匯入失敗：' + e.message); }
+    btn.disabled = false; btn.textContent = '從 reels.json 匯入';
   });
 
   // ── 算力監控 ──
