@@ -280,6 +280,16 @@
     .quiz-stock-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.15s; }
     .quiz-stock-thumb:hover img { opacity: 0.7; }
     .quiz-stock-thumb-name { font-size: 8px; color: var(--gray); margin-top: 4px; letter-spacing: 0.04em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+    .gp-genre-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+    .gp-genre-btn {
+      border: none; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+      background: none; font-family: var(--mono); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; padding: 28px 20px;
+      cursor: pointer; text-align: left; transition: all 0.15s; color: var(--black); line-height: 1.5;
+    }
+    .gp-genre-btn:nth-child(even) { border-right: none; }
+    .gp-genre-btn:hover { background: var(--black); color: #fff; }
   </style>
 </head>
 <body>
@@ -304,6 +314,7 @@
   <button class="main-tab active" data-tab="used">Used</button>
   <button class="main-tab" data-tab="new">New</button>
   <button class="main-tab" data-tab="quiz">心情選歌</button>
+  <button class="main-tab" data-tab="genre">類型挑片</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
 <div class="search-bar">
@@ -401,6 +412,19 @@
       <h3>✓ 訂單已送出！</h3>
       <p>我們會盡快與你聯繫確認訂單。<br>We will contact you shortly.</p>
     </div>
+  </div>
+</div>
+
+<!-- 類型挑片 modal -->
+<div class="quiz-modal" id="genreModal">
+  <div class="quiz-inner">
+    <div class="quiz-topbar">
+      <div class="modal-topbar-left">
+        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Genre Pick — 挖出你的那張</span>
+      </div>
+      <button class="modal-close-btn" id="genreCloseBtn">✕ Close</button>
+    </div>
+    <div id="genreContent"></div>
   </div>
 </div>
 
@@ -713,6 +737,14 @@
       document.body.style.overflow = 'hidden';
       if (!quizQs.length) await loadQuizData();
       startQuiz();
+      return;
+    }
+
+    if (tab === 'genre') {
+      history.replaceState(null, '', '#genre');
+      document.getElementById('genreModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      startGenrePick();
       return;
     }
 
@@ -1648,6 +1680,562 @@ ${seenList}
   }
 
 
+  // ── 類型挑片 ──
+  const GENRE_DATA = {
+    jazz: {
+      label: 'Jazz 爵士',
+      artists: [
+        'Bill Evans','John Coltrane','Thelonious Monk','Charles Mingus',
+        'Ornette Coleman','Wayne Shorter','Herbie Hancock','Eric Dolphy',
+        'Alice Coltrane','Sun Ra','Pharoah Sanders','Don Cherry',
+        'Paul Bley','Albert Ayler','Archie Shepp','Cecil Taylor',
+        'Lee Morgan','Freddie Hubbard','Joe Henderson','Wes Montgomery',
+      ],
+      subframes: [
+        '1960年代後期的自由爵士（free jazz）或靈魂爵士（soul jazz）',
+        '1970年代的電子融合爵士（electric fusion）或 loft jazz 實驗',
+        '歐洲爵士——ECM 廠牌的北歐或德國爵士場景',
+        '日本爵士——1970-80年代的前衛即興或城市爵士冷門支線',
+        '1980年代的 M-Base 實驗或 neo-bop 冷門支線',
+        '1960年代 Blue Note 以外的小廠牌硬爵士',
+      ],
+    },
+    rock: {
+      label: 'Rock 搖滾',
+      artists: [
+        'The Velvet Underground','Nick Drake','Scott Walker','Tim Buckley',
+        'Can','Neu!','Faust','Brian Eno',
+        'Television','Wire','Talk Talk','Cocteau Twins',
+        'The Fall','This Heat','Robert Wyatt','Pere Ubu',
+        'Big Star','Felt','The Durutti Column','Young Marble Giants',
+      ],
+      subframes: [
+        '1960年代末的迷幻或地下搖滾冷門支線',
+        '1970年代的 krautrock 或 prog 冷門支線',
+        '1980年代初的 post-punk 或 cold wave',
+        '1980年代中的 4AD 系夢幻搖滾或 dream pop 前身',
+        '1990年代的 slowcore、sadcore 或 lo-fi 地下場景',
+        '英國或德國的藝術搖滾或實驗流行冷門作品',
+      ],
+    },
+    electronic: {
+      label: 'Electronic 電子',
+      artists: [
+        'Brian Eno','Aphex Twin','Burial','Boards of Canada',
+        'Autechre','Tim Hecker','Stars of the Lid','William Basinski',
+        'Gas','Cluster','Tangerine Dream','Klaus Schulze',
+        'Actress','Andy Stott','The Caretaker','Oneohtrix Point Never',
+        'Alva Noto','Ryoji Ikeda','Monolake','Vladislav Delay',
+      ],
+      subframes: [
+        '1970年代的 kosmische Musik 或早期 ambient 合成器音樂',
+        '1990年代的 IDM 或 electronica 冷門支線',
+        '2000年代的 microhouse、glitch 或 minimal techno',
+        '2010年代的 hauntology 或 hypnagogic 電子音樂',
+        'ambient 電子——但有張力而非背景音樂的深層作品',
+        '歐洲工業電子或 dark ambient 的入門友善版本',
+      ],
+    },
+    soul: {
+      label: 'Soul / R&B 靈魂',
+      artists: [
+        'Al Green','Marvin Gaye','Curtis Mayfield','Donny Hathaway',
+        'Bill Withers','Bobby Womack','Syl Johnson','O.V. Wright',
+        'Ann Peebles','Betty Wright','Bettye Swann','Howard Tate',
+        'Arthur Alexander','Willie Hutch','Swamp Dogg','Lee Moses',
+        'Lyn Collins','Sharon Jones','Charles Bradley','Gene Clark',
+      ],
+      subframes: [
+        '1960年代末的深度靈魂樂（deep soul）或南方靈魂（southern soul）',
+        '1970年代的靈魂放克（soul funk）或政治靈魂樂',
+        '1970年代的軟性靈魂或 quiet storm 前身冷門作品',
+        '小廠牌發行的稀有靈魂 45 單曲或 album cuts',
+        '2000年代後的現代靈魂樂復興或 neo-soul 冷門支線',
+        '靈魂爵士（soul jazz）和 R&B 交界的冷門小品',
+      ],
+    },
+    hiphop: {
+      label: 'Hip-hop 嘻哈',
+      artists: [
+        'MF DOOM','Madlib','J Dilla','Ka',
+        'Billy Woods','Mach-Hommy','Armand Hammer','Navy Blue',
+        'Quelle Chris','Open Mike Eagle','Your Old Droog','Elucid',
+        'Fly Anakin','Pink Siifu','Meyhem Lauren','Roc Marciano',
+        'CRIMEAPPLE','Westside Gunn','Grieves','Homeboy Sandman',
+      ],
+      subframes: [
+        '1990年代末的地下 hip-hop 或 boom bap 冷門支線',
+        '2000年代的 alternative rap 或 abstract hip-hop',
+        '2010年代的 lo-fi rap 或 beat tape 文化',
+        '東岸地下饒舌——紐約獨立廠牌發行的冷門作品',
+        '器樂嘻哈（instrumental hip-hop）或 abstract beats',
+        '概念專輯形式的 rap——不是主流的 playlist 式作品',
+      ],
+    },
+    folk: {
+      label: 'Folk 民謠',
+      artists: [
+        'Nick Drake','John Fahey','Bert Jansch','Karen Dalton',
+        'Sandy Denny','Anne Briggs','Shirley Collins','Vashti Bunyan',
+        'Tim Buckley','Fred Neil','Jackson C. Frank','Michael Chapman',
+        'Richard Thompson','Davey Graham','John Renbourn','Pentangle',
+        'Incredible String Band','Bridget St John','Judee Sill','Tom Rapp',
+      ],
+      subframes: [
+        '1960年代的英國傳統民謠（British folk revival）冷門支線',
+        '美國鄉土民謠（American primitive guitar）或 Takoma Records 場景',
+        '1970年代的英美 singer-songwriter 中的冷門作品',
+        '帶有迷幻色彩的民謠或 psych folk',
+        '東歐或凱爾特民謠的當代詮釋或地下版本',
+        '1990年代後的 new weird America 或 freak folk 場景',
+      ],
+    },
+    classical: {
+      label: 'Classical 古典',
+      artists: [
+        'Arvo Pärt','Morton Feldman','Steve Reich','Terry Riley',
+        'Philip Glass','Henryk Górecki','Gavin Bryars','Harold Budd',
+        'Nils Frahm','Max Richter','Johann Johannsson','Ólafur Arnalds',
+        'Erik Satie','Moondog','La Monte Young','Charlemagne Palestine',
+        'Alvin Lucier','Eliane Radigue','Sofia Gubaidulina','Giacinto Scelsi',
+      ],
+      subframes: [
+        '美國極簡主義（minimalism）冷門支線——不是 Glass 和 Reich 的知名作',
+        '歐洲當代古典——室內樂或獨奏作品中的冷門小品',
+        'drone 或 long-tone 為主的冥想式古典作品',
+        '新古典（neoclassical）和 ambient 交界的當代冷門作品',
+        '獨立廠牌發行的當代鋼琴或弦樂冷門作品',
+        '電子古典（electroacoustic）或磁帶音樂的早期實驗',
+      ],
+    },
+    world: {
+      label: 'World Music 世界',
+      artists: [
+        'Caetano Veloso','Gilberto Gil','Hermeto Pascoal','Milton Nascimento',
+        'Mulatu Astatke','Ali Farka Touré','Fela Kuti','Tinariwen',
+        'Nusrat Fateh Ali Khan','Ravi Shankar','Hariprasad Chaurasia','L. Shankar',
+        'João Gilberto','João Donato','Edu Lobo','Egberto Gismonti',
+        'Maâlem Mahmoud Guinia','Orchestra Baobab','Salif Keita','Youssou N\'Dour',
+      ],
+      subframes: [
+        '巴西的 MPB、bossa nova 冷門支線或 tropicália',
+        '西非或東非的 afrobeat 或 highlife 中的冷門名字',
+        '北非的 gnawa 或 Saharan 藍調',
+        '印度的傳統古典（Hindustani 或 Carnatic）或融合冷門作品',
+        '中東或伊朗的當代民謠或傳統詮釋',
+        '加勒比海或拉丁美洲音樂中鮮少被討論的支線',
+      ],
+    },
+  };
+
+  const GP_OBSCURITY_SEEDS = [
+    '你在這個領域的第10到15個、而非第1到5個浮現的作品',
+    '那些只有在唱片行二手架深處才找得到的名字',
+    '即使在資深樂迷之間也很少被主動提及的作品',
+    '在任何「最佳專輯」排行榜幾乎不會出現的名字',
+    '你私藏的「第二層」——入門者不知道，但真正深挖的人才熟悉',
+    '那些沒有被大型音樂媒體大力報導的低調作品',
+  ];
+
+  let gpGenre = null;
+  let gpArtists = [];
+  let gpRound = 0;
+  let gpRoundOptions = [];
+  let gpUsed = new Set();
+  let gpAnotherCount = 0;
+  const GP_ANOTHER_MAX = 3;
+  let lastGpResult = null;
+  let gpSeenAlbums = (() => {
+    try { const s = sessionStorage.getItem('dip_gp_seen'); return s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { return new Set(); }
+  })();
+  function _saveGpSeen() {
+    try { sessionStorage.setItem('dip_gp_seen', JSON.stringify([...gpSeenAlbums])); } catch(e) {}
+  }
+
+  document.getElementById('genreCloseBtn').addEventListener('click', () => {
+    document.getElementById('genreModal').classList.remove('open');
+    document.body.style.overflow = '';
+    history.replaceState(null, '', location.pathname);
+  });
+
+  document.getElementById('genreContent').addEventListener('click', e => {
+    if (e.target.closest('[data-gp-action="retry"]')) {
+      sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
+      startGenrePick();
+    }
+    if (e.target.closest('[data-gp-action="view-item"]')) {
+      const id = e.target.closest('[data-gp-action="view-item"]').dataset.id;
+      openModal(id);
+    }
+    if (e.target.closest('[data-gp-action="another"]')) {
+      gpAnotherCount++;
+      submitGenrePick();
+    }
+    if (e.target.closest('[data-gp-action="share"]')) {
+      shareGpResult();
+    }
+  });
+
+  function startGenrePick() {
+    gpGenre = null; gpArtists = []; gpRound = 0;
+    gpUsed = new Set(); gpAnotherCount = 0;
+    try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { gpSeenAlbums = new Set(); }
+    renderGpGenreSelect();
+  }
+
+  function renderGpGenreSelect() {
+    document.getElementById('genreContent').innerHTML = `
+      <div style="padding:28px 20px 0;">
+        <div class="quiz-question">你想探索哪個領域？</div>
+        <div style="font-size:11px;color:var(--gray);line-height:1.7;margin-bottom:20px;">選一個方向，透過三位藝人的品味，找到屬於你的冷門專輯。</div>
+      </div>
+      <div class="gp-genre-grid">
+        ${Object.entries(GENRE_DATA).map(([key, d]) => `
+          <button class="gp-genre-btn" data-genre="${key}">${d.label}</button>
+        `).join('')}
+      </div>
+    `;
+    document.querySelectorAll('.gp-genre-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        gpGenre = btn.dataset.genre;
+        gpRound = 0; gpArtists = []; gpUsed = new Set();
+        renderGpRound();
+      });
+    });
+  }
+
+  function renderGpRound() {
+    const total = 3;
+    const pct = ((gpRound + 1) / total * 100).toFixed(0);
+    const available = GENRE_DATA[gpGenre].artists.filter(a => !gpUsed.has(a));
+    gpRoundOptions = [...available].sort(() => Math.random() - 0.5).slice(0, 4);
+    document.getElementById('genreContent').innerHTML = `
+      <div class="quiz-progress">
+        <div class="quiz-progress-track"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
+        <div class="quiz-progress-label">${gpRound + 1} / ${total}</div>
+      </div>
+      <div class="quiz-q-area">
+        <div class="quiz-question">這四位藝人中，誰最接近你的品味？</div>
+        <div class="quiz-options">
+          ${gpRoundOptions.map((artist, i) => `
+            <button class="quiz-option" data-idx="${i}">${artist}</button>
+          `).join('')}
+        </div>
+      </div>
+      <div class="quiz-nav">
+        <button class="quiz-nav-btn" id="gpBackBtn">${gpRound === 0 ? '← 換個類型' : '← 上一題'}</button>
+      </div>
+    `;
+    document.querySelectorAll('.quiz-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const picked = gpRoundOptions[parseInt(btn.dataset.idx)];
+        gpArtists.push(picked);
+        gpUsed.add(picked);
+        btn.classList.add('selected');
+        if (gpRound < 2) {
+          gpRound++;
+          setTimeout(() => renderGpRound(), 280);
+        } else {
+          setTimeout(() => submitGenrePick(), 280);
+        }
+      });
+    });
+    document.getElementById('gpBackBtn')?.addEventListener('click', () => {
+      if (gpRound === 0) {
+        gpGenre = null; gpArtists = []; gpUsed = new Set();
+        renderGpGenreSelect();
+      } else {
+        const last = gpArtists.pop();
+        gpUsed.delete(last);
+        gpRound--;
+        renderGpRound();
+      }
+    });
+  }
+
+  async function getGpReason(artist, album, genre, selectedArtists) {
+    const genreLabel = GENRE_DATA[genre]?.label || genre;
+    const WRITING_ANGLES = [
+      '從時間切入：抓住某個時刻的凝結感，或某段正在流逝的東西',
+      '從身體感知切入：用溫度、重量、呼吸、動作等物理感受描述狀態',
+      '從空間切入：用房間、光線、距離、邊界等空間感描述此刻',
+      '從細節切入：放大一個極具體的細節或習慣，從那裡展開',
+      '從節奏切入：描述這張專輯的律動感，和聽眾的生活如何呼應',
+      '從缺席切入：描述某個不在場的東西——某種沉默、某個空缺',
+      '從聲音本身切入：先給專輯的聲音一個極具體的畫面，再回到聽眾',
+      '從某種轉變切入：描述一件正在改變但還沒改完的事',
+    ];
+    const writingAngle = WRITING_ANGLES[Math.floor(Math.random() * WRITING_ANGLES.length)];
+    const OPENING_MODES = [
+      '從專輯的聲音/畫面開場，第二句才帶入聽眾狀態',
+      '從一個具體場景或物件開場',
+      '從一個動作或瞬間開場（不是「你」開頭）',
+      '直接以「你」開場，描述你的狀態',
+      '從這張專輯和他選的藝人之間的聲音連結開場',
+    ];
+    const openingMode = OPENING_MODES[Math.floor(Math.random() * OPENING_MODES.length)];
+    const recentWords = [...seenReasonWords].slice(-80);
+    const usedWords = recentWords.length > 0 ? `\n禁止重複出現的詞語：${recentWords.join('、')}\n` : '';
+    const prompt = `用戶在 ${genreLabel} 領域選了三位喜歡的藝人：${selectedArtists.join('、')}。
+${usedWords}
+命定推薦：${artist} — ${album}
+
+【最重要】絕對禁止任何「對比/否定」句型：不是X而是Y、並非X而是Y、與其X不如Y——任何含「不是」「並非」當開頭的對比結構都禁止。
+
+【人稱】必須用「你」直接對話，語感冷靜精準像一面鏡子。禁止用「他」「她」「這個人」第三人稱。
+
+請用3句精簡的繁體中文寫這張專輯，整段不超過 90 字。每句短促有力，禁止冗長鋪陳、禁止疊加形容詞。
+
+【語氣】參考唐綺陽老師講星座的口吻：溫暖、平視、有一點神秘感、像個比你年長的朋友隨口點破。陳述而不評判，看見而不分析。重點在「這張專輯有什麼質地」，用戶選的三位藝人只是輕輕被呼應，不是被分析。
+
+【嚴格禁止】
+- 不要說「因為你喜歡X所以推薦這張」這種說明式開場
+- 不要直接複述藝人名稱當開頭
+- 不要用「卻」「卻又」這種揭穿式的轉折
+- 不要居高臨下，不要替用戶下診斷
+
+本次開場方式（必須遵守）：${openingMode}
+本次寫作角度（必須遵守）：${writingAngle}
+
+結構自由，跟著角度走。專輯本身的氣質決定文字的氣質。
+
+禁止：捏造不確定的歌名或歌詞、建議語氣（「應該」「試試」「可以」）、AI 慣用詞（「也許你正在找的」「或許」「正是」「恰好」「彷彿」）、第一人稱「我」、「這張專輯」開頭。
+
+只回傳說明文字，不含 JSON 或格式符號。`;
+    try {
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      const apiData = await resp.json();
+      logApiUsage('claude', apiData.usage?.total_tokens);
+      return apiData.content?.[0]?.text?.trim() || '';
+    } catch(e) { return ''; }
+  }
+
+  async function submitGenrePick() {
+    document.getElementById('genreContent').innerHTML =
+      `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
+    try {
+      const genreInfo = GENRE_DATA[gpGenre];
+      const seenArtists = [...new Set([...gpSeenAlbums].map(k => k.split('||')[0]))];
+      const seenList = gpSeenAlbums.size > 0
+        ? `\n已推薦過的藝人（整個人都不能再推）：${seenArtists.join('、')}\n已推薦過的專輯：\n${[...gpSeenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
+        : '';
+      const subframe = genreInfo.subframes[Math.floor(Math.random() * genreInfo.subframes.length)];
+      const obscuritySeed = GP_OBSCURITY_SEEDS[Math.floor(Math.random() * GP_OBSCURITY_SEEDS.length)];
+
+      const prompt = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
+
+用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
+${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
+${seenList}
+==選片原則（最重要）==
+根據用戶的三個品味錨點，推薦一張符合他口味但他可能還沒聽過的冷門專輯。
+
+推薦原則：
+- 只推薦你確定真實存在、且你確實了解的專輯
+- 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
+- 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
+- 探索方向：${subframe}
+- 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
+- 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
+- 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
+- 要真正隨機：不要每次都推同一批「知名冷門」作品，想想那些更深處的名字
+- 可以推薦三個品味錨點之外的藝人——只要風格吻合就好
+
+只回傳 JSON，不要其他文字：
+{"artist":"藝人名稱","album":"專輯名稱"}`;
+
+      let verified = null;
+      let failedAlbums = [];
+      for (let attempt = 0; attempt < 4; attempt++) {
+        let usePrompt;
+        if (attempt < 2) {
+          usePrompt = prompt;
+        } else if (attempt === 2) {
+          usePrompt = prompt.replace(seenList, '');
+        } else {
+          usePrompt = `在 ${genreInfo.label} 領域推薦一張你了解的真實冷門專輯，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
+        }
+        const retryNote = failedAlbums.length
+          ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
+          : '';
+        const resp = await fetch(`${WORKER_URL}/claude`, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: usePrompt + retryNote }] }),
+        });
+        const apiData = await resp.json();
+        logApiUsage('claude', apiData.usage?.total_tokens);
+        if (apiData.apiError) {
+          const isRateLimit = /429|rate.?limit|quota/i.test(apiData.apiError);
+          throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : apiData.apiError);
+        }
+        const text = apiData.content?.[0]?.text || '';
+        const jsonMatch = text.match(/\{[\s\S]*?"artist"[\s\S]*?"album"[\s\S]*?\}/);
+        if (!jsonMatch) { console.warn('[gp] no JSON in attempt', attempt, text); continue; }
+        let rec;
+        try { rec = JSON.parse(jsonMatch[0]); } catch(e) { console.warn('[gp] JSON parse failed', attempt, jsonMatch[0]); continue; }
+        if (!rec.artist || !rec.album) continue;
+        console.log('[gp] attempt', attempt, '→', rec.artist, '—', rec.album);
+        const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
+        if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
+        failedAlbums.push(`${rec.artist} — ${rec.album}`);
+      }
+      if (!verified) throw new Error('找不到合適的推薦，請再試一次');
+      const reason = await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists);
+      await showGpResult({
+        artist: verified.rec.artist, album: verified.rec.album, reason,
+        _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl,
+      });
+    } catch(e) {
+      document.getElementById('genreContent').innerHTML =
+        `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">再試一次</button></div>`;
+    }
+  }
+
+  async function showGpResult(result) {
+    let coverHtml = '';
+    if (!result._coverUrl) {
+      const fetched = await fetchSpotifyCover(result.artist, result.album);
+      result._coverUrl = fetched.imageUrl || null;
+      result._spotifyUrl = fetched.spotifyUrl;
+    }
+    if (result._coverUrl) {
+      coverHtml = result._spotifyUrl
+        ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
+        : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
+    }
+    const ctaHtml = result._spotifyUrl
+      ? `<a class="quiz-result-cta" href="${result._spotifyUrl}" target="_blank" rel="noopener">在 Spotify 上聽 →</a>`
+      : '';
+
+    const withImgs = all.filter(p => {
+      const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+      return imgs[0];
+    });
+    const picks = [...withImgs].sort(() => Math.random() - 0.5).slice(0, 4);
+    let stockRecoHtml = '';
+    if (picks.length) {
+      const thumbs = picks.map(p => {
+        const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+        return `<div class="quiz-stock-thumb" data-gp-action="view-item" data-id="${p.id}">
+          <img src="${imgs[0]}" alt="">
+          <div class="quiz-stock-thumb-name">${p.artist || p.name || ''}</div>
+        </div>`;
+      }).join('');
+      stockRecoHtml = `<div class="quiz-stock-row">
+        <div class="quiz-stock-row-label">店內在售</div>
+        <div class="quiz-stock-thumbs">${thumbs}</div>
+      </div>`;
+    }
+
+    lastGpResult = result;
+    gpSeenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
+    _saveGpSeen();
+    if (result.reason) _saveReasonWords(result.reason);
+
+    document.getElementById('genreContent').innerHTML = `
+      <div class="quiz-result">
+        <div class="quiz-result-label">為你挖出的那張</div>
+        ${coverHtml}
+        <div class="quiz-result-artist">${result.artist || ''}</div>
+        <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="quiz-result-reason">${result.reason || ''}</div>
+        ${ctaHtml}
+        ${stockRecoHtml}
+        <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
+        ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
+        <button class="quiz-retry-btn" data-gp-action="retry">換個類型再試</button>
+      </div>
+    `;
+  }
+
+  async function shareGpResult() {
+    if (!lastGpResult) return;
+    const { artist, album, reason } = lastGpResult;
+    const gpShareUrl = 'https://www.dipvinyl.tw/genre';
+    const btn = document.querySelector('[data-gp-action="share"]');
+    if (btn) { btn.disabled = true; btn.textContent = '…'; }
+    try {
+      const canvas = await buildGpCanvas(lastGpResult);
+      const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
+      const file = new File([blob], 'genre-pick.jpg', { type: 'image/jpeg' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: `${artist} — ${album} | 類型挑片`, text: '來挖一張屬於你的冷門專輯 →', url: gpShareUrl });
+      } else if (navigator.share) {
+        await navigator.share({ title: `${artist} — ${album} | DIP Vinyl Shop`, text: `🎵 ${artist} — ${album}\n${reason || ''}\n\n來挖一張屬於你的冷門專輯 →`, url: gpShareUrl });
+      } else {
+        await navigator.clipboard.writeText(`🎵 ${artist} — ${album}\n${reason || ''}\n${gpShareUrl}`);
+        showShareToast('已複製 ✓');
+      }
+    } catch(e) {
+      if (e.name !== 'AbortError') {
+        try { await navigator.clipboard.writeText(`🎵 ${artist} — ${album}\n${gpShareUrl}`); showShareToast('已複製 ✓'); } catch(e2) {}
+      }
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = '✈ 分享結果'; }
+    }
+  }
+
+  async function buildGpCanvas(result) {
+    const W = 1080, H = 1920, PAD = 72, COVER_SIZE = 900;
+    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 260;
+    const TEXT_Y = COVER_Y + COVER_SIZE + 60;
+    const canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
+    ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
+    ctx.fillStyle = '#111111'; ctx.font = '700 42px "Space Mono", monospace';
+    ctx.fillText('類型挑片', W / 2, 90);
+    ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace';
+    ctx.fillText('挖出你的那張冷門', W / 2, 136);
+    ctx.textAlign = 'left';
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, 168); ctx.lineTo(W - PAD, 168); ctx.stroke();
+    ctx.fillStyle = '#f0f0f0'; ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
+    if (result._coverUrl) {
+      try {
+        const img = new Image(); img.crossOrigin = 'anonymous';
+        await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = result._coverUrl; });
+        ctx.save(); ctx.beginPath(); ctx.rect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE); ctx.clip();
+        const aspect = img.naturalWidth / img.naturalHeight;
+        let dw = COVER_SIZE, dh = COVER_SIZE / aspect;
+        if (dh < COVER_SIZE) { dh = COVER_SIZE; dw = COVER_SIZE * aspect; }
+        ctx.drawImage(img, COVER_X + (COVER_SIZE - dw) / 2, COVER_Y + (COVER_SIZE - dh) / 2, dw, dh);
+        ctx.restore();
+      } catch(e) {
+        ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
+      }
+    }
+    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+    let y = TEXT_Y;
+    ctx.fillStyle = '#888888'; ctx.font = '400 38px "Space Mono", monospace';
+    ctx.fillText(result.artist || '', PAD, y); y += 60;
+    let albumSz = 54; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
+    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 32) { albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`; }
+    const albumLH = albumSz + 16;
+    const albumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
+    y += albumLines * albumLH + 40;
+    const reasonText = (result.reason || '').slice(0, 200);
+    const BOX_PAD = 40, LH_R = 46;
+    ctx.font = '400 30px "Space Mono", monospace';
+    const boxH = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2) * LH_R + BOX_PAD * 2;
+    ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
+    ctx.fillStyle = '#444444'; ctx.textBaseline = 'top';
+    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
+    ctx.textBaseline = 'alphabetic'; y += boxH + 60;
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
+    ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
+    ctx.textAlign = 'center'; ctx.fillText('dipvinyl.tw', W / 2, H - 52);
+    return canvas;
+  }
+
   // Hash-based routing — runs once on page load
   (function navigateByHash() {
     const hash = window.location.hash.slice(1);
@@ -1658,6 +2246,10 @@ ${seenList}
       document.getElementById('quizModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       loadQuizData().then(() => startQuiz());
+    } else if (target === 'genre') {
+      document.getElementById('genreModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      startGenrePick();
     } else {
       const btn = document.querySelector(`.main-tab[data-tab="${target}"]`);
       if (btn) btn.click();
