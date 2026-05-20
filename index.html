@@ -2223,7 +2223,7 @@ ${seenList}
   // Hash-based routing — runs once on page load
   (function navigateByHash() {
     const hash = window.location.hash.slice(1);
-    const path = window.location.pathname.replace(/^\//, '');
+    const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
     const target = hash || path;
     if (!target) return;
     if (target === 'quiz') {
