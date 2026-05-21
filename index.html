@@ -2260,6 +2260,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
           throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : apiData.apiError);
         }
         const text = apiData.content?.[0]?.text || '';
+        console.log('[gp] attempt', attempt, 'raw:', text.slice(0, 120));
         const jsonMatch = text.match(/\{[\s\S]*?"artist"[\s\S]*?"album"[\s\S]*?\}/);
         if (!jsonMatch) { console.warn('[gp] no JSON in attempt', attempt, text); continue; }
         let rec;
@@ -2267,10 +2268,15 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         if (!rec.artist || !rec.album) continue;
         console.log('[gp] attempt', attempt, '→', rec.artist, '—', rec.album);
         const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
+        console.log('[gp] spotify:', spotifyResult.imageUrl ? '✓ found' : '✗ not found', rec.artist, rec.album);
         if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
         failedAlbums.push(`${rec.artist} — ${rec.album}`);
       }
-      if (!verified) throw new Error('找不到合適的推薦，請再試一次');
+      if (!verified) {
+        const tried = failedAlbums.length ? `\n試過：${failedAlbums.join('、')}` : '';
+        console.warn('[gp] all attempts failed. tried:', failedAlbums);
+        throw new Error('找不到合適的推薦，請再試一次' + tried);
+      }
       const reason = await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists);
       await showGpResult({
         artist: verified.rec.artist, album: verified.rec.album, reason,
