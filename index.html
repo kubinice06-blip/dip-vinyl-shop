@@ -270,6 +270,22 @@
     .quiz-another-btn:hover { background: var(--black); color: #fff; }
     .quiz-retry-btn { width: 100%; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-retry-btn:hover { border-color: var(--black); color: var(--black); }
+    .history-section { border-top: 1px solid var(--line); margin-top: 8px; padding: 24px 20px 8px; }
+    .history-section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+    .history-section-title { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; }
+    .history-clear-btn { font-size: 10px; color: var(--gray); background: none; border: none; cursor: pointer; font-family: var(--mono); letter-spacing: 0.08em; padding: 0; }
+    .history-clear-btn:hover { color: var(--black); }
+    .history-list { display: flex; flex-direction: column; gap: 14px; padding-bottom: 32px; }
+    .history-item { display: flex; gap: 12px; align-items: flex-start; }
+    .history-thumb { width: 52px; height: 52px; object-fit: cover; flex-shrink: 0; border: 1px solid var(--line); }
+    .history-thumb-placeholder { width: 52px; height: 52px; background: var(--line); display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--gray); flex-shrink: 0; }
+    .history-item-info { flex: 1; min-width: 0; }
+    .history-item-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+    .history-item-badge { font-size: 9px; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--line); padding: 1px 5px; }
+    .history-item-date { font-size: 9px; color: var(--gray); }
+    .history-item-artist { font-size: 11px; color: var(--gray); margin-bottom: 2px; }
+    .history-item-album { font-size: 13px; font-weight: 700; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .history-empty { font-size: 12px; color: var(--gray); padding-bottom: 24px; }
     .quiz-share-btn { width: 100%; background: var(--black); color: #fff; border: none; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; margin-bottom: 12px; transition: opacity 0.15s; }
     .quiz-share-btn:hover { opacity: 0.75; }
     .quiz-result-cover-link { display: block; }
@@ -1409,6 +1425,8 @@ ${seenList}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
+    saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+      .then(() => renderHistorySection(document.getElementById('quizContent')));
 
   }
 
@@ -1681,6 +1699,87 @@ ${seenList}
 
 
   // ── 類型挑片 ──
+  // ── 歷史紀錄 ──
+  const HISTORY_KEY = 'dip_history';
+  const HISTORY_MAX = 10;
+
+  async function compressCoverToBase64(url) {
+    try {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = url; });
+      const SIZE = 160;
+      const canvas = document.createElement('canvas');
+      canvas.width = SIZE; canvas.height = SIZE;
+      const ctx = canvas.getContext('2d');
+      const aspect = img.naturalWidth / img.naturalHeight;
+      let dw = SIZE, dh = SIZE / aspect;
+      if (dh < SIZE) { dh = SIZE; dw = SIZE * aspect; }
+      ctx.drawImage(img, (SIZE - dw) / 2, (SIZE - dh) / 2, dw, dh);
+      return canvas.toDataURL('image/jpeg', 0.75);
+    } catch(e) { return null; }
+  }
+
+  async function saveToHistory({ type, artist, album, reason, coverUrl }) {
+    const history = loadHistory();
+    if (history[0]?.artist === artist && history[0]?.album === album) return;
+    const coverData = coverUrl ? await compressCoverToBase64(coverUrl) : null;
+    const record = {
+      id: Date.now().toString(),
+      type, artist, album, reason: reason || '', coverData,
+      date: new Date().toLocaleDateString('zh-Hant', { month: 'numeric', day: 'numeric' }),
+    };
+    history.unshift(record);
+    if (history.length > HISTORY_MAX) history.length = HISTORY_MAX;
+    try { localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch(e) {}
+  }
+
+  function loadHistory() {
+    try { const s = localStorage.getItem(HISTORY_KEY); return s ? JSON.parse(s) : []; }
+    catch(e) { return []; }
+  }
+
+  function clearHistory() {
+    try { localStorage.removeItem(HISTORY_KEY); } catch(e) {}
+  }
+
+  function renderHistorySection(containerEl) {
+    containerEl.querySelectorAll('.history-section').forEach(el => el.remove());
+    const history = loadHistory();
+    const section = document.createElement('div');
+    section.className = 'history-section';
+    section.innerHTML = `
+      <div class="history-section-header">
+        <span class="history-section-title">我的紀錄</span>
+        ${history.length ? `<button class="history-clear-btn">清除紀錄</button>` : ''}
+      </div>
+      <div class="history-list">
+        ${history.length === 0
+          ? `<div class="history-empty">尚無紀錄。</div>`
+          : history.map(r => `
+            <div class="history-item">
+              ${r.coverData
+                ? `<img class="history-thumb" src="${r.coverData}" alt="">`
+                : `<div class="history-thumb-placeholder">♪</div>`}
+              <div class="history-item-info">
+                <div class="history-item-meta">
+                  <span class="history-item-badge">${r.type === 'genre' ? 'Genre' : 'Quiz'}</span>
+                  <span class="history-item-date">${r.date}</span>
+                </div>
+                <div class="history-item-artist">${r.artist || ''}</div>
+                <div class="history-item-album">${r.album || ''}</div>
+              </div>
+            </div>
+          `).join('')}
+      </div>
+    `;
+    section.querySelector('.history-clear-btn')?.addEventListener('click', () => {
+      clearHistory();
+      renderHistorySection(containerEl);
+    });
+    containerEl.appendChild(section);
+  }
+
   const GENRE_DATA = {
     jazz: {
       label: 'Jazz 爵士',
@@ -2135,6 +2234,8 @@ ${seenList}
         <button class="quiz-retry-btn" data-gp-action="retry">換個類型再試</button>
       </div>
     `;
+    saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+      .then(() => renderHistorySection(document.getElementById('genreContent')));
   }
 
   async function shareGpResult() {
