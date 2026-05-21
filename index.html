@@ -1302,14 +1302,18 @@ ${seenList}
 
 根據上述整體輪廓，推薦一張真實專輯。
 
+==絕對禁止幻覺==
+- 只推薦你 100% 確定真實存在的專輯
+- 寧可推薦稍微知名一點但確實存在的，也不要為了「冷門」編造作品
+- 藝人名稱與專輯名稱必須完全正確，連字母大小寫和標點都要對
+
 推薦原則：
-- 只推薦你確定真實存在、且你確實了解的專輯
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
 - 禁止藝人：Radiohead、Pink Floyd、Miles Davis、Beatles、Taylor Swift、Coldplay 等串流平台首頁等級的過度曝光名字
 - 你腦中浮現的「第一個答案」幾乎都是網路上被推薦爛的選擇，請往第二、第三層去想
 - 禁止選擇任何在音樂論壇上常被列為「孤獨必聽」「療癒必聽」「失戀必聽」的標誌性專輯
-- 本次探索範圍（兩個維度都必須遵守）：${scopeFrame}
+- 思考方向（若會導致你編造作品則忽略）：${scopeFrame}
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
@@ -1665,63 +1669,23 @@ ${seenList}
   async function fetchSpotifyCover(artist, album) {
     const cacheKey = _spotifyCacheKey(artist, album);
     const cached = _spotifyCacheGet(cacheKey);
-    if (cached) { console.log('[spotify] cache hit', artist, '-', album); return cached; }
+    if (cached) { console.log('[spotify] local cache hit', artist, '-', album); return cached; }
     try {
-      const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-      });
-      if (!tokenResp.ok) {
-        console.warn('[spotify] token fetch failed:', tokenResp.status, await tokenResp.text());
+      const resp = await fetch(
+        `${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`
+      );
+      if (!resp.ok) {
+        console.warn('[spotify] worker search failed:', resp.status);
         return {};
       }
-      const tokenData = await tokenResp.json();
-      const access_token = tokenData.access_token;
-      if (!access_token) {
-        console.warn('[spotify] no access_token in response:', tokenData);
-        return {};
-      }
-
-      const spotifySearch = async (q) => {
-        const sr = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=album&limit=3`, {
-          headers: { Authorization: 'Bearer ' + access_token },
-        });
-        if (!sr.ok) {
-          console.warn('[spotify] search failed:', sr.status, q);
-          return [];
-        }
-        const data = await sr.json();
-        return data.albums?.items || [];
-      };
-
-      // 1st try: structured query (precise)
-      let items = await spotifySearch(`album:"${album}" artist:"${artist}"`);
-      // 2nd try: free-text query (handles non-Latin artist names like 자우림)
-      if (!items.length) items = await spotifySearch(`${artist} ${album}`);
-
-      if (items.length) {
-        // Validate: returned artist must roughly match what we searched for
-        const normalize = s => s.toLowerCase().replace(/[^a-z0-9　-鿿가-힯]/g, '');
-        const searchArtist = normalize(artist);
-        const resultArtists = items[0].artists?.map(a => normalize(a.name)).join(' ') || '';
-        const artistMatch = searchArtist.length > 2 &&
-          (resultArtists.includes(searchArtist) || searchArtist.includes(resultArtists.slice(0, Math.max(4, resultArtists.length - 2))));
-        if (!artistMatch) {
-          console.warn('[spotify] artist mismatch. searched:', searchArtist, 'got:', resultArtists);
-          return {};
-        }
-        const result = {
-          imageUrl: items[0].images?.[0]?.url || null,
-          spotifyUrl: items[0].external_urls?.spotify || null,
-        };
-        if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
-        return result;
-      }
-      console.warn('[spotify] no items found for', artist, '-', album);
+      const result = await resp.json();
+      console.log('[spotify]', resp.headers.get('X-Cache') || 'WORKER', result.imageUrl ? '✓' : '✗', artist, '-', album);
+      if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
+      return result;
     } catch(e) {
       console.warn('[spotify] exception:', e);
+      return {};
     }
-    return {};
   }
 
   async function searchSpotifyAlbumsByArtist(artistName) {
@@ -2262,20 +2226,25 @@ ${seenList}
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 ${seenList}
-==選片原則（最重要）==
-根據用戶的三個品味錨點，推薦一張符合他口味但他可能還沒聽過的冷門專輯。
+==絕對禁止幻覺==
+- 只推薦你 100% 確定真實存在的專輯——你必須能在腦中清楚記得這張專輯的內容
+- 寧可推薦一張較知名但真實存在的，也不要為了「冷門」編造作品
+- 如果這個藝人你不熟，就推薦另一位你熟的藝人的作品
+- 藝人名稱與專輯名稱必須完全正確，連字母大小寫和標點都要對
 
-推薦原則：
-- 只推薦你確定真實存在、且你確實了解的專輯，並且有信心在 Spotify 找得到
+==選片原則==
+根據用戶的三個品味錨點，推薦一張符合他口味但他可能還沒聽過的冷門專輯。
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
 - 風格方向：${subframe}
-- 探索建議（若找不到合適作品可忽略）：${eraSeed}、${originSeed}
-- 特別視角（供參考）：${angleSeed}
 - 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
 - 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
 - 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
 - 可以推薦三個品味錨點之外的藝人——只要風格吻合就好
+
+==思考方向（純參考，請優先確保專輯真實存在）==
+你可以把以下方向當作「靈感觸發」，但若會導致你編造作品，請完全忽略：
+${eraSeed}；${originSeed}；${angleSeed}
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
