@@ -1634,7 +1634,38 @@ ${seenList}
     }
   }
 
+  // Spotify result cache (localStorage) — avoids repeated API calls for same album
+  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache';
+  const SPOTIFY_CACHE_MAX = 300;
+  function _spotifyCacheKey(artist, album) {
+    return (artist + '||' + album).toLowerCase().trim();
+  }
+  function _spotifyCacheGet(key) {
+    try {
+      const s = localStorage.getItem(SPOTIFY_CACHE_KEY);
+      if (!s) return null;
+      const cache = JSON.parse(s);
+      return cache[key] || null;
+    } catch(e) { return null; }
+  }
+  function _spotifyCacheSet(key, val) {
+    try {
+      const s = localStorage.getItem(SPOTIFY_CACHE_KEY);
+      const cache = s ? JSON.parse(s) : {};
+      cache[key] = val;
+      const keys = Object.keys(cache);
+      if (keys.length > SPOTIFY_CACHE_MAX) {
+        // drop oldest half
+        keys.slice(0, keys.length - SPOTIFY_CACHE_MAX / 2).forEach(k => delete cache[k]);
+      }
+      localStorage.setItem(SPOTIFY_CACHE_KEY, JSON.stringify(cache));
+    } catch(e) {}
+  }
+
   async function fetchSpotifyCover(artist, album) {
+    const cacheKey = _spotifyCacheKey(artist, album);
+    const cached = _spotifyCacheGet(cacheKey);
+    if (cached) { console.log('[spotify] cache hit', artist, '-', album); return cached; }
     try {
       const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
         method: 'POST',
@@ -1679,10 +1710,12 @@ ${seenList}
           console.warn('[spotify] artist mismatch. searched:', searchArtist, 'got:', resultArtists);
           return {};
         }
-        return {
+        const result = {
           imageUrl: items[0].images?.[0]?.url || null,
           spotifyUrl: items[0].external_urls?.spotify || null,
         };
+        if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
+        return result;
       }
       console.warn('[spotify] no items found for', artist, '-', album);
     } catch(e) {
