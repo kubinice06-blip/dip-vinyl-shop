@@ -2198,7 +2198,7 @@ ${seenList}
       const originSeed = GP_ORIGIN_SEEDS[Math.floor(Math.random() * GP_ORIGIN_SEEDS.length)];
       const angleSeed = GP_ANGLE_SEEDS[Math.floor(Math.random() * GP_ANGLE_SEEDS.length)];
 
-      const prompt = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
+      const promptStrict = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
 
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
@@ -2207,17 +2207,30 @@ ${seenList}
 根據用戶的三個品味錨點，推薦一張符合他口味但他可能還沒聽過的冷門專輯。
 
 推薦原則：
-- 只推薦你確定真實存在、且你確實了解的專輯
+- 只推薦你確定真實存在、且你確實了解的專輯，並且有信心在 Spotify 找得到
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
 - 風格方向：${subframe}
-- 年代範圍：${eraSeed}
-- 地域來源：${originSeed}
-- 特別視角：${angleSeed}
+- 探索建議（若找不到合適作品可忽略）：${eraSeed}、${originSeed}
+- 特別視角（供參考）：${angleSeed}
 - 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
 - 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
 - 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
 - 可以推薦三個品味錨點之外的藝人——只要風格吻合就好
+
+只回傳 JSON，不要其他文字：
+{"artist":"藝人名稱","album":"專輯名稱"}`;
+
+      const promptLoose = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
+
+用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
+${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
+
+推薦一張真實存在、在 Spotify 找得到的冷門專輯，符合以下條件：
+- 風格方向：${subframe}
+- 冷門程度：選擇${obscuritySeed}
+- 禁止「入門必聽」或「最佳專輯」等標誌性作品
+- 往你腦中第二、第三層去想
 
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
@@ -2227,11 +2240,11 @@ ${seenList}
       for (let attempt = 0; attempt < 4; attempt++) {
         let usePrompt;
         if (attempt < 2) {
-          usePrompt = prompt;
+          usePrompt = promptStrict;
         } else if (attempt === 2) {
-          usePrompt = prompt.replace(seenList, '');
+          usePrompt = promptLoose;
         } else {
-          usePrompt = `在 ${genreInfo.label} 領域推薦一張你了解的真實冷門專輯，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
+          usePrompt = `在 ${genreInfo.label} 領域推薦一張你了解的真實專輯，在 Spotify 找得到，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
         }
         const retryNote = failedAlbums.length
           ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
