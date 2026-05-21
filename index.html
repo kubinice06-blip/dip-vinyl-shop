@@ -1981,7 +1981,10 @@ ${seenList}
     history.replaceState(null, '', location.pathname);
   });
 
-  function openHistoryModal() {
+  let historyReturnTo = null;
+
+  function openHistoryModal(from) {
+    historyReturnTo = from || null;
     document.getElementById('quizModal').classList.remove('open');
     document.getElementById('genreModal').classList.remove('open');
     history.replaceState(null, '', '#history');
@@ -1993,12 +1996,26 @@ ${seenList}
 
   document.getElementById('historyCloseBtn').addEventListener('click', () => {
     document.getElementById('historyModal').classList.remove('open');
-    document.body.style.overflow = '';
-    history.replaceState(null, '', location.pathname);
+    if (historyReturnTo === 'quiz') {
+      history.replaceState(null, '', '#quiz');
+      document.getElementById('quizModal').classList.add('open');
+    } else if (historyReturnTo === 'genre') {
+      history.replaceState(null, '', '#genre');
+      document.getElementById('genreModal').classList.add('open');
+    } else {
+      document.body.style.overflow = '';
+      history.replaceState(null, '', location.pathname);
+    }
+    historyReturnTo = null;
   });
 
   document.addEventListener('click', e => {
-    if (e.target.closest('.go-history-btn')) openHistoryModal();
+    if (e.target.closest('.go-history-btn')) {
+      const from = document.getElementById('quizModal').classList.contains('open') ? 'quiz'
+        : document.getElementById('genreModal').classList.contains('open') ? 'genre'
+        : null;
+      openHistoryModal(from);
+    }
   });
 
   document.getElementById('genreContent').addEventListener('click', e => {
@@ -2081,16 +2098,6 @@ ${seenList}
       </div>
       <div class="quiz-nav">
         <button class="quiz-nav-btn" id="gpBackBtn">${gpRound === 0 ? '← 換個類型' : '← 上一題'}</button>
-      </div>
-      <div style="padding:0 20px 16px;display:flex;flex-direction:column;align-items:center;">
-        <button id="gpShareBtn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="分享類型挑片">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          分享這個測驗
-        </button>
-        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          我的紀錄
-        </button>
       </div>
     `;
     document.querySelectorAll('.quiz-option').forEach(btn => {
