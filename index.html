@@ -1690,43 +1690,11 @@ ${seenList}
 
   async function searchSpotifyAlbumsByArtist(artistName) {
     try {
-      const tokenResp = await fetch(`${WORKER_URL}/spotify-token`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-      });
-      if (!tokenResp.ok) return [];
-      const { access_token } = await tokenResp.json();
-      if (!access_token) return [];
-
-      // Step A: find artist ID by name
-      const artistResp = await fetch(
-        `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=artist&limit=1`,
-        { headers: { Authorization: 'Bearer ' + access_token } }
+      const resp = await fetch(
+        `${WORKER_URL}/spotify-artist-albums?artist=${encodeURIComponent(artistName)}`
       );
-      if (artistResp.ok) {
-        const artistData = await artistResp.json();
-        const artistId = artistData.artists?.items?.[0]?.id;
-        if (artistId) {
-          // Step B: get their actual albums
-          const albumsResp = await fetch(
-            `https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album&limit=20&market=TW`,
-            { headers: { Authorization: 'Bearer ' + access_token } }
-          );
-          if (albumsResp.ok) {
-            const albumsData = await albumsResp.json();
-            const albums = (albumsData.items || []).filter(a => a.images?.[0]?.url && a.artists?.[0]?.name);
-            if (albums.length) return albums;
-          }
-        }
-      }
-
-      // Fallback: plain album text search
-      const sr = await fetch(
-        `https://api.spotify.com/v1/search?q=${encodeURIComponent(artistName)}&type=album&limit=20`,
-        { headers: { Authorization: 'Bearer ' + access_token } }
-      );
-      if (!sr.ok) return [];
-      const data = await sr.json();
-      return (data.albums?.items || []).filter(a => a.images?.[0]?.url && a.artists?.[0]?.name);
+      if (!resp.ok) return [];
+      return await resp.json();
     } catch(e) { return []; }
   }
 
