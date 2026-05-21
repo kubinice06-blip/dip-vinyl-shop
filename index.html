@@ -331,6 +331,7 @@
   <button class="main-tab" data-tab="new">New</button>
   <button class="main-tab" data-tab="quiz">心情選歌</button>
   <button class="main-tab" data-tab="genre">類型挑片</button>
+  <button class="main-tab" data-tab="history">我的紀錄</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
 <div class="search-bar">
@@ -441,6 +442,19 @@
       <button class="modal-close-btn" id="genreCloseBtn">✕ Close</button>
     </div>
     <div id="genreContent"></div>
+  </div>
+</div>
+
+<!-- 我的紀錄 modal -->
+<div class="quiz-modal" id="historyModal">
+  <div class="quiz-inner">
+    <div class="quiz-topbar">
+      <div class="modal-topbar-left">
+        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">My Records — 你看過的那些</span>
+      </div>
+      <button class="modal-close-btn" id="historyCloseBtn">✕ Close</button>
+    </div>
+    <div id="historyContent"></div>
   </div>
 </div>
 
@@ -761,6 +775,11 @@
       document.getElementById('genreModal').classList.add('open');
       document.body.style.overflow = 'hidden';
       startGenrePick();
+      return;
+    }
+
+    if (tab === 'history') {
+      openHistoryModal();
       return;
     }
 
@@ -1118,10 +1137,14 @@
           : `<button class="quiz-nav-btn primary" id="quizNext" ${quizAnswers[q.id] !== undefined ? '' : 'disabled'}>下一題 →</button>`
         }
       </div>
-      <div style="padding:0 20px 16px;display:flex;justify-content:center;">
+      <div style="padding:0 20px 16px;display:flex;flex-direction:column;align-items:center;">
         <button id="quizShareBtn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="分享心情選歌">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           分享這個測驗
+        </button>
+        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          我的紀錄
         </button>
       </div>
     `;
@@ -1958,6 +1981,26 @@ ${seenList}
     history.replaceState(null, '', location.pathname);
   });
 
+  function openHistoryModal() {
+    document.getElementById('quizModal').classList.remove('open');
+    document.getElementById('genreModal').classList.remove('open');
+    history.replaceState(null, '', '#history');
+    const modal = document.getElementById('historyModal');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    renderHistorySection(document.getElementById('historyContent'));
+  }
+
+  document.getElementById('historyCloseBtn').addEventListener('click', () => {
+    document.getElementById('historyModal').classList.remove('open');
+    document.body.style.overflow = '';
+    history.replaceState(null, '', location.pathname);
+  });
+
+  document.addEventListener('click', e => {
+    if (e.target.closest('.go-history-btn')) openHistoryModal();
+  });
+
   document.getElementById('genreContent').addEventListener('click', e => {
     if (e.target.closest('[data-gp-action="retry"]')) {
       sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
@@ -1995,10 +2038,14 @@ ${seenList}
           <button class="gp-genre-btn" data-genre="${key}">${d.label}</button>
         `).join('')}
       </div>
-      <div style="padding:0 20px 16px;display:flex;justify-content:center;">
+      <div style="padding:0 20px 16px;display:flex;flex-direction:column;align-items:center;">
         <button id="gpShareBtn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="分享類型挑片">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           分享這個測驗
+        </button>
+        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          我的紀錄
         </button>
       </div>
     `;
@@ -2035,10 +2082,14 @@ ${seenList}
       <div class="quiz-nav">
         <button class="quiz-nav-btn" id="gpBackBtn">${gpRound === 0 ? '← 換個類型' : '← 上一題'}</button>
       </div>
-      <div style="padding:0 20px 16px;display:flex;justify-content:center;">
+      <div style="padding:0 20px 16px;display:flex;flex-direction:column;align-items:center;">
         <button id="gpShareBtn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="分享類型挑片">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           分享這個測驗
+        </button>
+        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          我的紀錄
         </button>
       </div>
     `;
