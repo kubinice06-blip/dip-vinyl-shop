@@ -774,6 +774,7 @@
       history.replaceState(null, '', '#genre');
       document.getElementById('genreModal').classList.add('open');
       document.body.style.overflow = 'hidden';
+      if (!quizReels.length) await loadQuizData();
       startGenrePick();
       return;
     }
@@ -2281,7 +2282,6 @@ ${seenList}
   }
 
   async function submitGenrePick() {
-    console.log('[gp] START all:', all.length, 'quizReels:', quizReels.length);
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
@@ -2291,7 +2291,6 @@ ${seenList}
       return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase());
     });
     const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
-    console.log('[gp] rand:', rand.toFixed(2), 'stock:', stockPool.length, 'reels:', freshReels.length);
 
     if (rand < 0.15 && stockPool.length) {
       const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
@@ -2638,7 +2637,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
     } else if (target === 'genre') {
       document.getElementById('genreModal').classList.add('open');
       document.body.style.overflow = 'hidden';
-      startGenrePick();
+      if (!quizReels.length) loadQuizData().then(() => startGenrePick()); else startGenrePick();
     } else {
       const btn = document.querySelector(`.main-tab[data-tab="${target}"]`);
       if (btn) btn.click();
