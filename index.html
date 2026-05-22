@@ -2283,6 +2283,38 @@ ${seenList}
   async function submitGenrePick() {
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
+
+    const rand = Math.random();
+    const stockPool = all.filter(p => {
+      const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
+      return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase());
+    });
+    const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
+
+    if (rand < 0.10 && stockPool.length) {
+      const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
+      await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
+      const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
+      const reason = await getGpReason(pick.artist, pick.name || pick.album || '', gpGenre, gpArtists, reasonEl);
+      lastGpResult.reason = reason;
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'genre', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastGpResult._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      return;
+    }
+
+    if (rand < 0.20 && freshReels.length) {
+      const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
+      await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
+      const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
+      const reason = await getGpReason(pick.artist, pick.title || '', gpGenre, gpArtists, reasonEl);
+      lastGpResult.reason = reason;
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'genre', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      return;
+    }
+
     let overloadCount = 0;
     while (true) {
     try {
@@ -2424,19 +2456,44 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 
   async function showGpResult(result) {
     let coverHtml = '';
-    if (!result._coverUrl && !result._streaming) {
-      const fetched = await fetchSpotifyCover(result.artist, result.album);
-      result._coverUrl = fetched.imageUrl || null;
-      result._spotifyUrl = fetched.spotifyUrl;
+    let ctaHtml = '';
+
+    if (result.type === 'stock') {
+      const item = all.find(x => x.id === result.id);
+      if (item) {
+        const imgs = Array.isArray(item.imageUrls) && item.imageUrls.length ? item.imageUrls : (item.imageUrl ? [item.imageUrl] : []);
+        if (imgs[0]) {
+          result._coverUrl = imgs[0];
+          coverHtml = `<img class="quiz-result-cover" src="${imgs[0]}" alt="" data-gp-action="view-item" data-id="${item.id}" style="cursor:pointer;">`;
+        }
+        ctaHtml = `<button class="quiz-result-cta" data-gp-action="view-item" data-id="${item.id}">查看商品 →</button>`;
+      }
+    } else if (result.type === 'reel') {
+      const reel = quizReels.find(r => r.id === result.id);
+      if (reel) {
+        const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
+        const shortcode = scMatch?.[2];
+        if (shortcode) {
+          coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
+        }
+        ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
+        if (reel.coverUrl) result._coverUrl = reel.coverUrl;
+      }
+    } else {
+      if (!result._coverUrl && !result._streaming) {
+        const fetched = await fetchSpotifyCover(result.artist, result.album);
+        result._coverUrl = fetched.imageUrl || null;
+        result._spotifyUrl = fetched.spotifyUrl;
+      }
+      if (result._coverUrl) {
+        coverHtml = result._spotifyUrl
+          ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
+          : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
+      }
+      ctaHtml = result._spotifyUrl
+        ? `<a class="quiz-result-cta" href="${result._spotifyUrl}" target="_blank" rel="noopener">線上聽 →</a>`
+        : '';
     }
-    if (result._coverUrl) {
-      coverHtml = result._spotifyUrl
-        ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
-        : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
-    }
-    const ctaHtml = result._spotifyUrl
-      ? `<a class="quiz-result-cta" href="${result._spotifyUrl}" target="_blank" rel="noopener">線上聽 →</a>`
-      : '';
 
     const withImgs = all.filter(p => {
       const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
