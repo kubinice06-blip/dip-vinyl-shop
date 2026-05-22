@@ -2291,7 +2291,7 @@ ${seenList}
     });
     const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
 
-    if (rand < 0.10 && stockPool.length) {
+    if (rand < 0.15 && stockPool.length) {
       const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
@@ -2303,7 +2303,7 @@ ${seenList}
       return;
     }
 
-    if (rand < 0.20 && freshReels.length) {
+    if (rand < 0.30 && freshReels.length) {
       const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
       await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
