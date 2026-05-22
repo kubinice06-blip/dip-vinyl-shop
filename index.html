@@ -2291,6 +2291,8 @@ ${seenList}
     });
     const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
 
+    console.log('[gp] rand:', rand.toFixed(2), 'stock:', stockPool.length, 'reels:', freshReels.length, 'all.length:', all.length, 'quizReels.length:', quizReels.length);
+
     if (rand < 0.15 && stockPool.length) {
       const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
