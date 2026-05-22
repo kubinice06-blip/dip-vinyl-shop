@@ -1495,7 +1495,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        <div class="quiz-result-reason">${result.reason || ''}</div>
+        <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
@@ -2469,7 +2469,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        <div class="quiz-result-reason">${result.reason || ''}</div>
+        <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
