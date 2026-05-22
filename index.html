@@ -2178,6 +2178,8 @@ ${seenList}
   async function submitGenrePick() {
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
+    let overloadCount = 0;
+    while (true) {
     try {
       const genreInfo = GENRE_DATA[gpGenre];
       const seenArtists = [...new Set([...gpSeenAlbums].map(k => k.split('||')[0]))];
@@ -2236,6 +2238,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
       let verified = null;
       let lastRec = null;
       let failedAlbums = [];
+      let isOverloaded = false;
       for (let attempt = 0; attempt < 4; attempt++) {
         let usePrompt;
         if (attempt < 2) {
@@ -2255,6 +2258,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         const apiData = await resp.json();
         logApiUsage('claude', apiData.usage?.total_tokens);
         if (apiData.apiError) {
+          if (/overload|529/i.test(apiData.apiError)) { isOverloaded = true; break; }
           const isRateLimit = /429|rate.?limit|quota/i.test(apiData.apiError);
           throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : apiData.apiError);
         }
@@ -2272,6 +2276,18 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
         failedAlbums.push(`${rec.artist} — ${rec.album}`);
       }
+      if (isOverloaded) {
+        overloadCount++;
+        if (overloadCount >= 3) {
+          document.getElementById('genreContent').innerHTML =
+            `<div class="quiz-error" style="padding:40px 20px;">目前人數過多，請稍後再試<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">晚點再來</button></div>`;
+          return;
+        }
+        document.getElementById('genreContent').innerHTML =
+          `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">目前人數過多，排隊中…</div></div>`;
+        await new Promise(r => setTimeout(r, 3000));
+        continue;
+      }
       // Fallback: if Spotify verification failed but we got a valid recommendation, show it without cover
       if (!verified && lastRec) {
         console.warn('[gp] spotify failed for all attempts, showing without cover');
@@ -2287,10 +2303,13 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         artist: verified.rec.artist, album: verified.rec.album, reason,
         _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl,
       });
+      return;
     } catch(e) {
       document.getElementById('genreContent').innerHTML =
         `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">再試一次</button></div>`;
+      return;
     }
+    } // end while
   }
 
   async function showGpResult(result) {
