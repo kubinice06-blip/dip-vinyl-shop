@@ -1168,7 +1168,43 @@
     });
   }
 
-  async function getAiReason(artist, album, qaText) {
+  async function streamText(messages, targetEl) {
+    try {
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages, stream: true }),
+      });
+      if (!resp.ok || !resp.body) return '';
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let fullText = '';
+      let buf = '';
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        const lines = buf.split('\n');
+        buf = lines.pop();
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const payload = line.slice(6).trim();
+          if (payload === '[DONE]') continue;
+          try {
+            const delta = JSON.parse(payload).choices?.[0]?.delta?.content || '';
+            if (delta) { fullText += delta; if (targetEl) targetEl.textContent = fullText; }
+          } catch(e) {}
+        }
+      }
+      reader.releaseLock();
+      const cleaned = fullText
+        .replace(/\d{4}年代/g, '').replace(/\d{4}年/g, '')
+        .replace(/\d{2}年代/g, '').replace(/二十世紀\S{0,4}/g, '').trim();
+      if (targetEl && cleaned !== fullText) targetEl.textContent = cleaned;
+      return cleaned;
+    } catch(e) { return ''; }
+  }
+
+  async function getAiReason(artist, album, qaText, targetEl = null) {
     const WRITING_ANGLES = [
       '從時間切入：抓住某個時刻的凝結感，或某段正在流逝的東西',
       '從身體感知切入：用溫度、重量、呼吸、動作等物理感受描述狀態',
@@ -1194,16 +1230,8 @@
     // Cap to most recent 80 ngrams to keep prompt small
     const recentWords = [...seenReasonWords].slice(-80);
     const usedWords = recentWords.length > 0 ? `\n禁止重複出現的詞語（之前的結果用過，必須換別的字詞表達）：${recentWords.join('、')}\n` : '';
-    const prompt = `用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n【最重要】絕對禁止任何「對比/否定」句型：不是X而是Y、不是X這是Y、不是X是Y、並非X而是Y、與其X不如Y、不只X更Y、不僅X還Y、不是因為X而是因為Y——任何含「不是」「並非」當開頭的對比結構都禁止。\n\n【人稱】必須用「你」直接對話，語感冷靜精準像一面鏡子。禁止用「他」「她」「這個人」「某人」這種第三人稱來描述用戶。\n\n請用3句精簡的繁體中文寫這張專輯，整段不超過 90 字。每句短促有力，禁止冗長鋪陳、禁止疊加形容詞。\n\n【語氣】參考唐綺陽老師講星座的口吻：溫暖、平視、有一點神秘感、像個比你年長的朋友隨口點破。陳述而不評判，看見而不分析。重點在「這張專輯有什麼質地」，用戶的狀態只是輕輕被呼應到，不是被剖析。\n\n【嚴格禁止】\n- 不要指出用戶的「矛盾」「拉扯」「逃避」「假裝」「掙扎」這類戲劇衝突\n- 不要直接複述或解析用戶答案裡的具體選項（如「睡眠」「便利」「懶得解釋」這些詞絕對不能出現）\n- 不要用「卻」「卻又」「明知卻」這種揭穿式的轉折\n- 不要寫成心理分析報告，不要當諮商師\n- 不要居高臨下，不要替用戶下診斷\n\n5 題答案是用來感知「整體氛圍」的，不是用來解讀的素材。理想的結果是：用戶讀完覺得這段文字在描述音樂、順便讓他想起自己現在的某種狀態，而不是「啊我被看穿了」的尷尬。\n\n本次開場方式（必須遵守）：${openingMode}\n本次寫作角度（必須遵守）：${writingAngle}\n\n結構自由，跟著角度走，不要套「狀態→聲音→意象」的固定公式。每次的句長、節奏、切入點都應該不一樣。專輯本身的氣質決定文字的氣質——歡快的不該寫得陰沉，安靜的不該寫得激烈。\n\n其他禁止：\n- 捏造不確定的歌名或歌詞（若不確定改用整體聲音質感描述）\n- 建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）\n- 其他 AI 慣用詞（「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」「彷彿」）\n- 第一人稱「我」\n- 「這張專輯」開頭\n\n只回傳說明文字，不含 JSON 或格式符號。`;
-    try {
-      const resp = await fetch(`${WORKER_URL}/claude`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
-      });
-      const data = await resp.json();
-      logApiUsage('claude', data.usage?.total_tokens);
-      return data.content?.[0]?.text?.trim() || '';
-    } catch(e) { return ''; }
+    const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘有深度的音樂。\n\n用戶回答了5道心理測驗：\n${qaText}\n${usedWords}\n命定推薦：${artist} — ${album}\n\n【最重要】絕對禁止任何「對比/否定」句型：不是X而是Y、不是X這是Y、不是X是Y、並非X而是Y、與其X不如Y、不只X更Y、不僅X還Y、不是因為X而是因為Y——任何含「不是」「並非」當開頭的對比結構都禁止。\n\n【人稱】必須用「你」直接對話，語感冷靜精準像一面鏡子。禁止用「他」「她」「這個人」「某人」這種第三人稱來描述用戶。\n\n請用3句精簡的繁體中文寫這張專輯，整段80-110字。每句短促有力，禁止冗長鋪陳、禁止疊加形容詞。\n\n【語氣】參考唐綺陽老師講星座的口吻：溫暖、平視、有一點神秘感、像個比你年長的朋友隨口點破。陳述而不評判，看見而不分析。重點在「這張專輯有什麼質地」，用戶的狀態只是輕輕被呼應到，不是被剖析。\n\n【嚴格禁止】\n- 不要指出用戶的「矛盾」「拉扯」「逃避」「假裝」「掙扎」這類戲劇衝突\n- 不要直接複述或解析用戶答案裡的具體選項（如「睡眠」「便利」「懶得解釋」這些詞絕對不能出現）\n- 不要用「卻」「卻又」「明知卻」這種揭穿式的轉折\n- 不要寫成心理分析報告，不要當諮商師\n- 不要居高臨下，不要替用戶下診斷\n\n5 題答案是用來感知「整體氛圍」的，不是用來解讀的素材。理想的結果是：用戶讀完覺得這段文字在描述音樂、順便讓他想起自己現在的某種狀態，而不是「啊我被看穿了」的尷尬。\n\n本次開場方式（必須遵守）：${openingMode}\n本次寫作角度（必須遵守）：${writingAngle}\n\n結構自由，跟著角度走，不要套「狀態→聲音→意象」的固定公式。每次的句長、節奏、切入點都應該不一樣。專輯本身的氣質決定文字的氣質——歡快的不該寫得陰沉，安靜的不該寫得激烈。\n\n其他禁止：\n- 捏造不確定的歌名或歌詞（若不確定改用整體聲音質感描述）\n- 建議語氣（「應該」「試試」「可以」「讓你」「幫助你」）\n- 其他 AI 慣用詞（「也許你正在找的」「或許」「正是」「恰好」「某種意義上」「以某種方式」「彷彿」）\n- 第一人稱「我」\n- 「這張專輯」開頭\n\n只回傳說明文字，不含 JSON 或格式符號。`;
+    return streamText([{ role: 'user', content: prompt }], targetEl);
   }
 
   async function submitQuiz() {
@@ -1227,15 +1255,25 @@
       // 15% stock, 15% reel, 70% global AI
       if (rand < 0.15 && stockPool.length) {
         const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
-        const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText);
-        await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason });
+        await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
+        const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
+        const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText, reasonEl);
+        lastQuizResult.reason = reason;
+        if (reason) _saveReasonWords(reason);
+        saveToHistory({ type: 'quiz', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastQuizResult._coverUrl })
+          .then(() => renderHistorySection(document.getElementById('quizContent')));
         return;
       }
 
       if (rand < 0.30 && freshReels.length) {
         const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
-        const reason = await getAiReason(pick.artist, pick.title || '', qaText);
-        await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason });
+        await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
+        const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
+        const reason = await getAiReason(pick.artist, pick.title || '', qaText, reasonEl);
+        lastQuizResult.reason = reason;
+        if (reason) _saveReasonWords(reason);
+        saveToHistory({ type: 'quiz', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastQuizResult._coverUrl })
+          .then(() => renderHistorySection(document.getElementById('quizContent')));
         return;
       }
 
@@ -1291,7 +1329,7 @@
 
       const prompt = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長發掘有深度的音樂。
 
-用戶回答了5道心理測驗：
+用戶回答了三名喜好藝人：
 ${qaText}
 ${seenList}
 ==分析原則（最重要）==
@@ -1365,8 +1403,13 @@ ${seenList}
         verified = { rec: lastRec, spotifyResult: { imageUrl: null, spotifyUrl: null } };
       }
       if (!verified) throw new Error('找不到合適的推薦，請再試一次');
-      const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText);
-      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason, _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl });
+      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: '', _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true });
+      const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
+      const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText, reasonEl);
+      lastQuizResult.reason = reason;
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'quiz', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.spotifyResult.imageUrl })
+        .then(() => renderHistorySection(document.getElementById('quizContent')));
     } catch(e) {
       document.getElementById('quizContent').innerHTML =
         `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
@@ -1444,7 +1487,7 @@ ${seenList}
     lastQuizResult = result;
     seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
     _saveSeenAlbums();
-    if (result.reason) _saveReasonWords(result.reason);
+    if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
     document.getElementById('quizContent').innerHTML = `
       <div class="quiz-result">
@@ -1460,8 +1503,10 @@ ${seenList}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
       </div>
     `;
-    saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
-      .then(() => renderHistorySection(document.getElementById('quizContent')));
+    if (!result._streaming) {
+      saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('quizContent')));
+    }
 
   }
 
@@ -2213,30 +2258,26 @@ ${seenList}
     });
   }
 
-  async function getGpReason(artist, album, genre, selectedArtists) {
+  async function getGpReason(artist, album, genre, selectedArtists, targetEl = null) {
     const genreLabel = GENRE_DATA[genre]?.label || genre;
     const prompt = `專輯：${artist} — ${album}（${genreLabel} 領域）
 
-用兩句精簡的繁體中文介紹這張專輯。語氣嚴謹、客觀、理性，像唱片評論或樂評短注。
+用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容。
 
-規則：
-- 只描述這張專輯本身——錄音年代、音樂風格、聲音特徵、在該領域的位置
-- 禁止提及用戶的選擇、品味或任何對聽者的評論
-- 禁止「你」「你的」等第二人稱
-- 禁止主觀情感形容（「令人心碎」「震撼人心」等）
-- 禁止建議語氣（「適合」「推薦給」「應該」）
-- 禁止 AI 慣用詞（「傑作」「必聽」「里程碑」「獨樹一格」「不可忽視」）
-- 每句不超過 35 字，合計不超過 60 字
-- 只回傳兩句文字，不含任何格式符號`;
-    try {
-      const resp = await fetch(`${WORKER_URL}/claude`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
-      });
-      const apiData = await resp.json();
-      logApiUsage('claude', apiData.usage?.total_tokens);
-      return apiData.content?.[0]?.text?.trim() || '';
-    } catch(e) { return ''; }
+【必須包含的資訊】
+- 藝人來自哪裡（城市或國家）
+- 這張專輯的聲音和做法是什麼（具體說出樂器、技術或音樂方向）
+- 它在 ${genreLabel} 領域為何值得注意（不能說「具有代表性」，要說具體原因）
+
+【壞例子，禁止這樣寫】
+「這張專輯以嘻哈為基礎，融入多種元素，其在音樂領域的定位強調器樂與和聲的整合。」→ 沒有地名、沒有具體聲音、全是廢話。
+
+【好例子，朝這個方向寫】
+「日本大阪的器樂製作人，以木琴、鋼琴與鼓機構築溫暖的爵士嘻哈聲景，全張以現場演奏取代取樣。在日本器樂嘻哈圈中屬較早以純演奏方式建立個人語彙的案例。」
+
+禁止：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
+整段 80-120 字，只回傳文字，不含格式符號。`;
+    return streamText([{ role: 'user', content: prompt }], targetEl);
   }
 
   async function submitGenrePick() {
@@ -2362,11 +2403,16 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         console.warn('[gp] all attempts failed. tried:', failedAlbums);
         throw new Error('找不到合適的推薦，請再試一次' + tried);
       }
-      const reason = await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists);
       await showGpResult({
-        artist: verified.rec.artist, album: verified.rec.album, reason,
-        _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl,
+        artist: verified.rec.artist, album: verified.rec.album, reason: '',
+        _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true,
       });
+      const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
+      const reason = await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists, reasonEl);
+      lastGpResult.reason = reason;
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'genre', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.spotifyResult.imageUrl })
+        .then(() => renderHistorySection(document.getElementById('genreContent')));
       return;
     } catch(e) {
       document.getElementById('genreContent').innerHTML =
@@ -2378,7 +2424,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 
   async function showGpResult(result) {
     let coverHtml = '';
-    if (!result._coverUrl) {
+    if (!result._coverUrl && !result._streaming) {
       const fetched = await fetchSpotifyCover(result.artist, result.album);
       result._coverUrl = fetched.imageUrl || null;
       result._spotifyUrl = fetched.spotifyUrl;
@@ -2415,7 +2461,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
     lastGpResult = result;
     gpSeenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
     _saveGpSeen();
-    if (result.reason) _saveReasonWords(result.reason);
+    if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
     document.getElementById('genreContent').innerHTML = `
       <div class="quiz-result">
@@ -2431,8 +2477,10 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
         <button class="quiz-retry-btn" data-gp-action="retry">換個類型再試</button>
       </div>
     `;
-    saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
-      .then(() => renderHistorySection(document.getElementById('genreContent')));
+    if (!result._streaming) {
+      saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('genreContent')));
+    }
   }
 
   async function shareGpResult() {
