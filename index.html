@@ -1540,7 +1540,7 @@ ${seenList}
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
-    if (!result.type && result.artist && result.album) {
+    if (result.type !== 'stock' && result.type !== 'reel' && result.artist && result.album) {
       fetchStreamingLinks(result.artist, result.album, document.getElementById('quizContent'));
     }
 
