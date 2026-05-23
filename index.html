@@ -1540,7 +1540,7 @@ ${seenList}
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
-    if (result.type === 'global' && result.artist && result.album) {
+    if (!result.type && result.artist && result.album) {
       fetchStreamingLinks(result.artist, result.album, document.getElementById('quizContent'));
     }
 
@@ -2353,7 +2353,8 @@ ${seenList}
       const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
-      const reason = await getGpReason(pick.artist, pick.name || pick.album || '', gpGenre, gpArtists, reasonEl);
+      const stockPrompt = `用兩到三句繁體中文介紹 ${pick.artist} 的《${pick.name || pick.album || ''}》。語氣像唱片行熟客在推薦：說清楚藝人來自哪裡、這張專輯的聲音和做法是什麼。只能說這張專輯本身有的東西，不能亂猜或延伸。禁止：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」。只回傳文字，不含格式符號。`;
+      const reason = await streamText([{ role: 'user', content: stockPrompt }], reasonEl);
       lastGpResult.reason = reason;
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastGpResult._coverUrl })
@@ -2365,7 +2366,8 @@ ${seenList}
       const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
       await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
-      const reason = await getGpReason(pick.artist, pick.title || '', gpGenre, gpArtists, reasonEl);
+      const reelPrompt = `用三到四句繁體中文介紹 ${pick.artist} 的《${pick.title || ''}》。具體說明藝人來自哪裡、這張作品的聲音做法是什麼。禁止：「融合多種元素」「層次豐富」「獨樹一格」「具有代表性」。只回傳文字，不含格式符號。`;
+      const reason = await streamText([{ role: 'user', content: reelPrompt }], reasonEl);
       lastGpResult.reason = reason;
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
@@ -2596,7 +2598,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
     }
-    if (result.type === 'global' && result.artist && result.album) {
+    if (!result.type && result.artist && result.album) {
       fetchStreamingLinks(result.artist, result.album, document.getElementById('genreContent'));
     }
   }
