@@ -1208,7 +1208,7 @@
       const cleaned = fullText
         .replace(/\d{4}年代/g, '').replace(/\d{4}年/g, '')
         .replace(/\d{2}年代/g, '').replace(/二十世紀\S{0,4}/g, '').trim();
-      if (targetEl && cleaned !== fullText) targetEl.textContent = cleaned;
+      if (targetEl) targetEl.textContent = cleaned;
       return cleaned;
     } catch(e) {
       console.error('[streamText] exception:', e);
@@ -2405,6 +2405,7 @@ ${seenList}
 - 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
 - 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
 - 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
+- 禁止推薦品味錨點藝人本人的任何專輯——用戶已經知道這些人，要推他們還沒發現的
 - 可以推薦三個品味錨點之外的藝人——只要風格吻合就好
 
 ==這次的隨機條件（盡量遵守，但若真的無法避免幻覺再跳過）==
@@ -2424,6 +2425,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 - 風格方向：${subframe}
 - 冷門程度：選擇${obscuritySeed}
 - 禁止「入門必聽」或「最佳專輯」等標誌性作品
+- 禁止推薦品味錨點藝人本人的任何專輯
 - 往你腦中第二、第三層去想
 - 不確定某張冷門專輯是否存在？→ 換另一張冷門專輯，不要改選知名作品
 
