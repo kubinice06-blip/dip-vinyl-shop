@@ -266,6 +266,11 @@
     .quiz-result-reason { font-size: 13px; line-height: 1.9; padding: 16px; border: 1px solid var(--line); margin-bottom: 20px; }
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
+    .streaming-btns { display: flex; gap: 8px; margin-bottom: 12px; }
+    .streaming-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 6px; border: 1px solid var(--line); text-decoration: none; font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; color: var(--gray); transition: all 0.15s; cursor: pointer; background: none; }
+    .streaming-btn:not([disabled]):hover { border-color: var(--black); color: var(--black); }
+    .streaming-btn[disabled] { opacity: 0.35; cursor: default; pointer-events: none; }
+    .streaming-btn svg { flex-shrink: 0; }
     .quiz-another-btn { width: 100%; background: none; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s; margin-bottom: 12px; }
     .quiz-another-btn:hover { background: var(--black); color: #fff; }
     .quiz-retry-btn { width: 100%; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
@@ -1472,6 +1477,7 @@ ${seenList}
           ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
       }
+      ctaHtml = `<div class="streaming-btns">${result._spotifyUrl ? `<a class="streaming-btn" href="${result._spotifyUrl}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>` : `<span class="streaming-btn" disabled>Apple Music</span>`}<a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="spotify" disabled>Spotify</a><a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="yt" disabled>YT Music</a></div>`;
     }
 
     let stockRecoHtml = '';
@@ -1518,6 +1524,9 @@ ${seenList}
     if (!result._streaming) {
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
+    }
+    if (result.type === 'global' && result.artist && result.album) {
+      fetchStreamingLinks(result.artist, result.album, document.getElementById('quizContent'));
     }
 
   }
@@ -1743,6 +1752,28 @@ ${seenList}
     } catch(e) {
       console.warn('[spotify] exception:', e);
       return {};
+    }
+  }
+
+  // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
+  async function fetchStreamingLinks(artist, album, containerEl) {
+    const [spotifyRes, ytRes] = await Promise.allSettled([
+      fetch(`${WORKER_URL}/spotify-album-link?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}),
+      fetch(`${WORKER_URL}/yt-music-link?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}),
+    ]);
+    const spotifyUrl = spotifyRes.status === 'fulfilled' ? spotifyRes.value?.url : null;
+    const ytUrl = ytRes.status === 'fulfilled' ? ytRes.value?.url : null;
+
+    if (!containerEl) return;
+    const spotifyBtn = containerEl.querySelector('.streaming-btn[data-platform="spotify"]');
+    const ytBtn = containerEl.querySelector('.streaming-btn[data-platform="yt"]');
+    if (spotifyBtn && spotifyUrl) {
+      spotifyBtn.href = spotifyUrl;
+      spotifyBtn.removeAttribute('disabled');
+    }
+    if (ytBtn && ytUrl) {
+      ytBtn.href = ytUrl;
+      ytBtn.removeAttribute('disabled');
     }
   }
 
@@ -2502,9 +2533,7 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
           ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
       }
-      ctaHtml = result._spotifyUrl
-        ? `<a class="quiz-result-cta" href="${result._spotifyUrl}" target="_blank" rel="noopener">線上聽 →</a>`
-        : '';
+      ctaHtml = `<div class="streaming-btns">${result._spotifyUrl ? `<a class="streaming-btn" href="${result._spotifyUrl}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>` : `<span class="streaming-btn" disabled>Apple Music</span>`}<a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="spotify" disabled>Spotify</a><a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="yt" disabled>YT Music</a></div>`;
     }
 
     const withImgs = all.filter(p => {
@@ -2549,6 +2578,9 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
     if (!result._streaming) {
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
+    }
+    if (result.type === 'global' && result.artist && result.album) {
+      fetchStreamingLinks(result.artist, result.album, document.getElementById('genreContent'));
     }
   }
 
