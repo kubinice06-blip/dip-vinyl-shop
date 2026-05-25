@@ -1210,41 +1210,19 @@
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages, stream: true }),
+        body: JSON.stringify({ messages }),
       });
-      if (!resp.ok || !resp.body) {
-        console.error('[streamText] failed:', resp.status);
+      const data = await resp.json();
+      if (data.apiError) {
         if (targetEl) targetEl.textContent = '';
         return '';
       }
-      const reader = resp.body.getReader();
-      const decoder = new TextDecoder();
-      let fullText = '';
-      let buf = '';
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        buf += decoder.decode(value, { stream: true });
-        const lines = buf.split('\n');
-        buf = lines.pop();
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          const payload = line.slice(6).trim();
-          if (payload === '[DONE]') continue;
-          try {
-            const delta = JSON.parse(payload).choices?.[0]?.delta?.content || '';
-            if (delta) { fullText += delta; if (targetEl) targetEl.textContent = fullText; }
-          } catch(e) {}
-        }
-      }
-      reader.releaseLock();
-      const cleaned = fullText
+      const text = (data.content?.[0]?.text || '')
         .replace(/\d{4}年代/g, '').replace(/\d{4}年/g, '')
         .replace(/\d{2}年代/g, '').replace(/二十世紀\S{0,4}/g, '').trim();
-      if (targetEl) targetEl.textContent = cleaned;
-      return cleaned;
+      if (targetEl) targetEl.textContent = text;
+      return text;
     } catch(e) {
-      console.error('[streamText] exception:', e);
       if (targetEl) targetEl.textContent = '';
       return '';
     }
