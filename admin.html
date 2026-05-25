@@ -218,7 +218,7 @@
   <button class="tab-btn" data-tab="questions">題目管理</button>
   <button class="tab-btn" data-tab="reels">Reels 管理</button>
   <button class="tab-btn" data-tab="banner">首頁 Banner</button>
-  <button class="tab-btn" data-tab="usage">算力</button>
+  <button class="tab-btn" data-tab="usage">設定</button>
 </div>
 
 <div class="site-layout">
@@ -607,9 +607,19 @@
     </div>
   </div>
 
-  <!-- 算力 panel -->
+  <!-- 設定 panel -->
   <div class="right-panel" id="panel-usage">
     <div style="max-width:640px;">
+
+      <div style="margin-bottom:40px;">
+        <div class="section-label" style="margin-bottom:16px;">類型挑片模式</div>
+        <div style="display:flex;border:1px solid var(--black);max-width:280px;">
+          <button id="modeDeepBtn" onclick="setGpMode('deep')" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">深度挖掘</button>
+          <button id="modeFastBtn" onclick="setGpMode('fast')" style="flex:1;padding:10px 0;border:none;border-left:1px solid var(--black);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">快速模式</button>
+        </div>
+        <div id="modeDesc" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:1.9;"></div>
+      </div>
+
       <div class="section-label" style="margin-bottom:20px;">今日算力用量</div>
 
       <div style="margin-bottom:28px;">
@@ -2527,6 +2537,30 @@
       msgEl.textContent = '移除失敗：' + e.message;
     }
   });
+
+  function setGpMode(mode) {
+    localStorage.setItem('gp_mode', mode);
+    renderGpModeUI();
+  }
+
+  function renderGpModeUI() {
+    const mode = localStorage.getItem('gp_mode') || 'deep';
+    const deepBtn = document.getElementById('modeDeepBtn');
+    const fastBtn = document.getElementById('modeFastBtn');
+    const desc = document.getElementById('modeDesc');
+    if (!deepBtn) return;
+    if (mode === 'deep') {
+      deepBtn.style.background = 'var(--black)'; deepBtn.style.color = '#fff';
+      fastBtn.style.background = 'none'; fastBtn.style.color = 'var(--gray)';
+      desc.textContent = '深度挖掘：極冷門選片，多重限制條件，Spotify 命中率低，速度較慢';
+    } else {
+      fastBtn.style.background = 'var(--black)'; fastBtn.style.color = '#fff';
+      deepBtn.style.background = 'none'; deepBtn.style.color = 'var(--gray)';
+      desc.textContent = '快速模式：仍冷門但 Claude 有把握，Spotify 命中率高，速度快';
+    }
+  }
+
+  renderGpModeUI();
 </script>
 </body>
 </html>

@@ -2354,6 +2354,7 @@ ${seenList}
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
     const rand = Math.random();
+    const gpMode = localStorage.getItem('gp_mode') || 'deep';
     const stockPool = all.filter(p => {
       const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
       return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase());
@@ -2445,18 +2446,44 @@ ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 只回傳 JSON，不要其他文字：
 {"artist":"藝人名稱","album":"專輯名稱"}`;
 
+      const promptFast = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域。
+
+用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
+${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
+${seenList}
+根據品味錨點，推薦一張他可能還沒聽過的冷門專輯。
+
+==選片原則==
+- 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
+- 風格方向：${subframe}
+- 絕對禁止：Spotify 首頁、Billboard、Grammy 等級的超主流作品
+- 目標是在音樂社群（Discogs、Rate Your Music）有一定評價，但一般聽眾不熟悉的作品
+- 禁止推薦品味錨點藝人本人的任何專輯
+
+==最重要：避免幻覺==
+- 只推薦你完全確定真實存在且在 Spotify 找得到的專輯
+- 不確定某張是否在 Spotify 上？→ 改選一張你更有把握的冷門替代品，不要猜
+
+只回傳 JSON，不要其他文字：
+{"artist":"藝人名稱","album":"專輯名稱"}`;
+
       let verified = null;
       let lastRec = null;
       let failedAlbums = [];
       let isOverloaded = false;
       for (let attempt = 0; attempt < 4; attempt++) {
         let usePrompt;
-        if (attempt < 2) {
-          usePrompt = promptStrict;
-        } else if (attempt === 2) {
-          usePrompt = promptLoose;
+        const _fallback = `在 ${genreInfo.label} 領域推薦一張你了解的真實專輯，在 Spotify 找得到，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
+        if (gpMode === 'fast') {
+          usePrompt = attempt < 3 ? promptFast : _fallback;
         } else {
-          usePrompt = `在 ${genreInfo.label} 領域推薦一張你了解的真實專輯，在 Spotify 找得到，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
+          if (attempt < 2) {
+            usePrompt = promptStrict;
+          } else if (attempt === 2) {
+            usePrompt = promptLoose;
+          } else {
+            usePrompt = _fallback;
+          }
         }
         const retryNote = failedAlbums.length
           ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
