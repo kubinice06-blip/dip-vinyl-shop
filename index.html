@@ -1008,8 +1008,26 @@
     try {
       const snap = await getDoc(doc(db, 'settings', 'banner'));
       if (snap.exists()) {
-        const { imageUrl } = snap.data();
-        if (imageUrl) hero.innerHTML = `<img src="${imageUrl}" alt="Banner" class="logo-hero-img">`;
+        const { imageUrl, heightDesktop, heightMobile } = snap.data();
+        if (imageUrl) {
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = 'Banner';
+          img.className = 'logo-hero-img';
+          // 套用自訂高度（若有設定）
+          if (heightDesktop) img.style.setProperty('--banner-h-desktop', heightDesktop + 'px');
+          if (heightMobile)  img.style.setProperty('--banner-h-mobile',  heightMobile  + 'px');
+          if (heightDesktop) img.style.height = heightDesktop + 'px';
+          // 手機版透過 CSS 變數覆蓋
+          if (heightDesktop || heightMobile) {
+            const style = document.createElement('style');
+            style.textContent = `.logo-hero-img { height: ${heightDesktop || 120}px !important; }` +
+              `@media (max-width:560px) { .logo-hero-img { height: ${heightMobile || 80}px !important; } }`;
+            document.head.appendChild(style);
+          }
+          hero.innerHTML = '';
+          hero.appendChild(img);
+        }
       }
     } catch(e) {}
     hero.style.opacity = '1';

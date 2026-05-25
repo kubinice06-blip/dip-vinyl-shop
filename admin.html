@@ -652,19 +652,62 @@
 
   <!-- 首頁 Banner panel -->
   <div class="right-panel" id="panel-banner">
-    <div style="max-width:640px;">
+    <div style="max-width:680px;">
       <div class="section">
         <div class="section-label">首頁 Banner 圖片</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">上傳後將顯示於首頁頂部 Banner 區域，取代預設 Logo 圖。建議使用寬幅圖片（16:9 或更寬）。</p>
 
-        <div id="bannerCurrentWrap" style="display:none;margin-bottom:16px;">
+        <!-- 目前 Banner -->
+        <div id="bannerCurrentWrap" style="display:none;margin-bottom:20px;">
           <div style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">目前 Banner</div>
-          <img id="bannerCurrentImg" src="" alt="目前 Banner" style="width:100%;max-height:220px;object-fit:cover;display:block;border:1px solid var(--line);">
+          <img id="bannerCurrentImg" src="" alt="目前 Banner" style="width:100%;max-height:180px;object-fit:cover;display:block;border:1px solid var(--line);">
           <button id="btnClearBanner" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">移除 Banner（恢復顯示 Logo）</button>
         </div>
 
-        <div class="section-label" style="margin-top:4px;">上傳新 Banner</div>
-        <div class="upload-zone" id="bannerUploadZone" style="margin-top:8px;margin-bottom:8px;">
+        <!-- 尺寸設定 -->
+        <div class="section-label" style="margin-bottom:10px;">尺寸設定</div>
+        <div class="field-row" style="margin-bottom:12px;">
+          <div class="field">
+            <label>電腦版高度（px）</label>
+            <input type="number" id="bannerHeightDesktop" value="120" min="40" max="600" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;">
+          </div>
+          <div class="field">
+            <label>手機版高度（px）</label>
+            <input type="number" id="bannerHeightMobile" value="80" min="30" max="400" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;">
+          </div>
+        </div>
+        <button id="btnPreviewBanner" style="width:100%;background:none;border:1px solid var(--black);font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:12px;cursor:pointer;color:var(--black);margin-bottom:4px;transition:all 0.15s;">預覽</button>
+
+        <!-- 預覽區 -->
+        <div id="bannerPreviewArea" style="display:none;margin-top:20px;margin-bottom:20px;">
+          <!-- 電腦版 -->
+          <div style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">電腦版預覽</div>
+          <div style="border:1px solid var(--line);overflow:hidden;margin-bottom:20px;">
+            <div id="bannerDesktopFrame" style="background:#111;display:flex;align-items:center;justify-content:center;"></div>
+            <div style="background:#fff;border-bottom:1px solid #ddd;padding:0 20px;height:40px;display:flex;align-items:center;justify-content:space-between;">
+              <span style="font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:0.08em;">dip vinyl shop</span>
+              <span style="font-family:var(--mono);font-size:10px;color:#888;letter-spacing:0.08em;">黑膠唱片</span>
+            </div>
+            <div style="background:#fff;border-bottom:1px solid #ddd;padding:0 20px;height:48px;display:flex;align-items:center;gap:28px;">
+              <span style="font-family:var(--mono);font-size:11px;font-weight:700;border-bottom:3px solid #111;height:100%;display:flex;align-items:center;">Used</span>
+              <span style="font-family:var(--mono);font-size:11px;color:#888;">New</span>
+              <span style="font-family:var(--mono);font-size:11px;color:#888;">心情選歌</span>
+            </div>
+          </div>
+          <!-- 手機版 -->
+          <div style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">手機版預覽（375px）</div>
+          <div style="width:375px;border:1px solid var(--line);overflow:hidden;">
+            <div id="bannerMobileFrame" style="background:#111;display:flex;align-items:center;justify-content:center;"></div>
+            <div style="background:#fff;border-bottom:1px solid #ddd;padding:0 16px;height:40px;display:flex;align-items:center;justify-content:space-between;">
+              <span style="font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:0.08em;">dip vinyl shop</span>
+              <span style="font-family:var(--mono);font-size:10px;color:#888;">黑膠唱片</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 上傳新 Banner -->
+        <div class="section-label" style="margin-bottom:8px;">上傳新 Banner</div>
+        <div class="upload-zone" id="bannerUploadZone" style="margin-bottom:8px;">
           <input type="file" id="bannerFileInput" accept="image/*">
           <p><strong>點擊上傳 Banner 圖片</strong>　JPG、PNG、WEBP　建議寬幅比例</p>
         </div>
@@ -672,8 +715,8 @@
           <div class="progress-bg"><div class="progress-bar" id="bannerProgressBar"></div></div>
           <div class="progress-label" id="bannerProgressLabel"></div>
         </div>
-        <div id="bannerNewPreview" style="margin-top:8px;"></div>
-        <button class="btn-save" id="btnSaveBanner" style="margin-top:12px;" disabled>儲存 Banner</button>
+
+        <button class="btn-save" id="btnSaveBanner" style="margin-top:16px;" disabled>儲存 Banner（含尺寸設定）</button>
         <div class="msg" id="bannerMsg"></div>
       </div>
     </div>
@@ -2327,27 +2370,59 @@
 
   // ── 首頁 Banner ──
   let pendingBannerUrl = null;
+  let currentBannerUrl = null;
 
   async function loadBanner() {
     pendingBannerUrl = null;
-    document.getElementById('btnSaveBanner').disabled = true;
-    document.getElementById('bannerNewPreview').innerHTML = '';
     document.getElementById('bannerMsg').className = 'msg';
+    document.getElementById('bannerPreviewArea').style.display = 'none';
     try {
       const snap = await getDoc(doc(db, 'settings', 'banner'));
       const data = snap.exists() ? snap.data() : null;
       const currentWrap = document.getElementById('bannerCurrentWrap');
       const currentImg  = document.getElementById('bannerCurrentImg');
       if (data && data.imageUrl) {
+        currentBannerUrl = data.imageUrl;
         currentImg.src = data.imageUrl;
         currentWrap.style.display = 'block';
+        // 載入已儲存的高度設定
+        if (data.heightDesktop) document.getElementById('bannerHeightDesktop').value = data.heightDesktop;
+        if (data.heightMobile)  document.getElementById('bannerHeightMobile').value  = data.heightMobile;
+        document.getElementById('btnSaveBanner').disabled = false;
       } else {
+        currentBannerUrl = null;
         currentWrap.style.display = 'none';
+        document.getElementById('btnSaveBanner').disabled = true;
       }
     } catch(e) {
       document.getElementById('bannerMsg').className = 'msg error show';
       document.getElementById('bannerMsg').textContent = '載入失敗：' + e.message;
     }
+  }
+
+  // 預覽按鈕
+  document.getElementById('btnPreviewBanner').addEventListener('click', () => {
+    const url = pendingBannerUrl || currentBannerUrl;
+    if (!url) {
+      document.getElementById('bannerMsg').className = 'msg error show';
+      document.getElementById('bannerMsg').textContent = '請先上傳 Banner 圖片或確認已有設定的 Banner。';
+      return;
+    }
+    document.getElementById('bannerMsg').className = 'msg';
+    const dh = Number(document.getElementById('bannerHeightDesktop').value) || 120;
+    const mh = Number(document.getElementById('bannerHeightMobile').value) || 80;
+    renderBannerPreview(url, dh, mh);
+  });
+
+  function renderBannerPreview(url, desktopH, mobileH) {
+    const area = document.getElementById('bannerPreviewArea');
+    const desktopFrame = document.getElementById('bannerDesktopFrame');
+    const mobileFrame  = document.getElementById('bannerMobileFrame');
+    desktopFrame.style.height = desktopH + 'px';
+    desktopFrame.innerHTML = `<img src="${url}" alt="Banner" style="height:${desktopH}px;width:auto;max-width:100%;display:block;">`;
+    mobileFrame.style.height = mobileH + 'px';
+    mobileFrame.innerHTML  = `<img src="${url}" alt="Banner" style="height:${mobileH}px;width:auto;max-width:100%;display:block;">`;
+    area.style.display = 'block';
   }
 
   document.getElementById('bannerFileInput').addEventListener('change', async e => {
@@ -2378,7 +2453,6 @@
     bar.style.width = '10%';
     lbl.textContent = '上傳中… ' + file.name;
     msgEl.className = 'msg';
-    document.getElementById('btnSaveBanner').disabled = true;
     try {
       const fd = new FormData();
       fd.append('file', file);
@@ -2389,11 +2463,12 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
       pendingBannerUrl = data.secure_url;
-      lbl.textContent = '✓ 上傳完成，請按「儲存 Banner」';
-      document.getElementById('bannerNewPreview').innerHTML =
-        '<div style="font-size:10px;color:var(--green);margin-bottom:6px;">✓ 預覽（尚未儲存）：</div>' +
-        '<img src="' + pendingBannerUrl + '" style="width:100%;max-height:200px;object-fit:cover;display:block;border:1px solid var(--line);">';
+      lbl.textContent = '✓ 上傳完成，可按「預覽」確認後再儲存';
       document.getElementById('btnSaveBanner').disabled = false;
+      // 上傳後自動跑一次預覽
+      const dh = Number(document.getElementById('bannerHeightDesktop').value) || 120;
+      const mh = Number(document.getElementById('bannerHeightMobile').value) || 80;
+      renderBannerPreview(pendingBannerUrl, dh, mh);
       setTimeout(() => { wrap.classList.remove('show'); bar.style.width = '0'; }, 1500);
     } catch(err) {
       wrap.classList.remove('show');
@@ -2404,18 +2479,27 @@
   }
 
   document.getElementById('btnSaveBanner').addEventListener('click', async () => {
-    if (!pendingBannerUrl) return;
+    const urlToSave = pendingBannerUrl || currentBannerUrl;
+    if (!urlToSave) return;
     const btn = document.getElementById('btnSaveBanner');
     const msgEl = document.getElementById('bannerMsg');
     btn.disabled = true;
     try {
-      await setDoc(doc(db, 'settings', 'banner'), { imageUrl: pendingBannerUrl, updatedAt: new Date().toISOString() });
-      document.getElementById('bannerCurrentImg').src = pendingBannerUrl;
-      document.getElementById('bannerCurrentWrap').style.display = 'block';
-      document.getElementById('bannerNewPreview').innerHTML = '';
+      const dh = Number(document.getElementById('bannerHeightDesktop').value) || 120;
+      const mh = Number(document.getElementById('bannerHeightMobile').value) || 80;
+      await setDoc(doc(db, 'settings', 'banner'), {
+        imageUrl: urlToSave,
+        heightDesktop: dh,
+        heightMobile: mh,
+        updatedAt: new Date().toISOString()
+      });
+      currentBannerUrl = urlToSave;
       pendingBannerUrl = null;
+      document.getElementById('bannerCurrentImg').src = urlToSave;
+      document.getElementById('bannerCurrentWrap').style.display = 'block';
       msgEl.className = 'msg success show';
       msgEl.textContent = '✓ Banner 已儲存！前台將立即生效。';
+      btn.disabled = false;
     } catch(e) {
       msgEl.className = 'msg error show';
       msgEl.textContent = '儲存失敗：' + e.message;
@@ -2428,11 +2512,14 @@
     const msgEl = document.getElementById('bannerMsg');
     try {
       await setDoc(doc(db, 'settings', 'banner'), { imageUrl: null, updatedAt: new Date().toISOString() });
+      currentBannerUrl = null;
+      pendingBannerUrl = null;
       document.getElementById('bannerCurrentWrap').style.display = 'none';
       document.getElementById('bannerCurrentImg').src = '';
-      pendingBannerUrl = null;
+      document.getElementById('bannerPreviewArea').style.display = 'none';
+      document.getElementById('bannerHeightDesktop').value = '120';
+      document.getElementById('bannerHeightMobile').value = '80';
       document.getElementById('btnSaveBanner').disabled = true;
-      document.getElementById('bannerNewPreview').innerHTML = '';
       msgEl.className = 'msg success show';
       msgEl.textContent = '✓ Banner 已移除，前台恢復顯示 Logo。';
     } catch(e) {
