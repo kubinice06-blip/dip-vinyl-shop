@@ -614,8 +614,8 @@
       <div style="margin-bottom:40px;">
         <div class="section-label" style="margin-bottom:16px;">類型挑片模式</div>
         <div style="display:flex;border:1px solid var(--black);max-width:280px;">
-          <button id="modeDeepBtn" onclick="setGpMode('deep')" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">深度挖掘</button>
-          <button id="modeFastBtn" onclick="setGpMode('fast')" style="flex:1;padding:10px 0;border:none;border-left:1px solid var(--black);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">快速模式</button>
+          <button id="modeDeepBtn" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">深度挖掘</button>
+          <button id="modeFastBtn" style="flex:1;padding:10px 0;border:none;border-left:1px solid var(--black);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">快速模式</button>
         </div>
         <div id="modeDesc" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:1.9;"></div>
       </div>
@@ -2538,11 +2538,6 @@
     }
   });
 
-  function setGpMode(mode) {
-    localStorage.setItem('gp_mode', mode);
-    renderGpModeUI();
-  }
-
   function renderGpModeUI() {
     const mode = localStorage.getItem('gp_mode') || 'deep';
     const deepBtn = document.getElementById('modeDeepBtn');
@@ -2559,6 +2554,15 @@
       desc.textContent = '快速模式：仍冷門但 Claude 有把握，Spotify 命中率高，速度快';
     }
   }
+
+  document.getElementById('modeDeepBtn').addEventListener('click', () => {
+    localStorage.setItem('gp_mode', 'deep');
+    renderGpModeUI();
+  });
+  document.getElementById('modeFastBtn').addEventListener('click', () => {
+    localStorage.setItem('gp_mode', 'fast');
+    renderGpModeUI();
+  });
 
   renderGpModeUI();
 </script>
