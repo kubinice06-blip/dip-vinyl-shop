@@ -17,6 +17,7 @@
       display: flex; align-items: center; justify-content: center;
       padding: 24px 20px;
       border-bottom: 1px solid #222;
+      opacity: 0; transition: opacity 0.25s;
     }
     .logo-hero-img {
       height: 120px; width: auto; display: block;
@@ -1002,15 +1003,16 @@
   loadBannerSetting();
 
   async function loadBannerSetting() {
+    const hero = document.querySelector('.logo-hero');
+    if (!hero) return;
     try {
       const snap = await getDoc(doc(db, 'settings', 'banner'));
-      if (!snap.exists()) return;
-      const { imageUrl } = snap.data();
-      if (!imageUrl) return;
-      const hero = document.querySelector('.logo-hero');
-      if (!hero) return;
-      hero.innerHTML = `<img src="${imageUrl}" alt="Banner" class="logo-hero-img">`;
+      if (snap.exists()) {
+        const { imageUrl } = snap.data();
+        if (imageUrl) hero.innerHTML = `<img src="${imageUrl}" alt="Banner" class="logo-hero-img">`;
+      }
     } catch(e) {}
+    hero.style.opacity = '1';
   }
 
   // ── 心理測驗 ──
