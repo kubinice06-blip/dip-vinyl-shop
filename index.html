@@ -2203,7 +2203,6 @@ ${seenList}
   }
 
   document.getElementById('genreCloseBtn').addEventListener('click', () => {
-    _gpWarmStop();
     document.getElementById('genreModal').classList.remove('open');
     document.body.style.overflow = '';
     history.replaceState(null, '', location.pathname);
@@ -2212,7 +2211,6 @@ ${seenList}
   let historyReturnTo = null;
 
   function openHistoryModal(from) {
-    _gpWarmStop();
     historyReturnTo = from || null;
     document.getElementById('quizModal').classList.remove('open');
     document.getElementById('genreModal').classList.remove('open');
@@ -2265,29 +2263,9 @@ ${seenList}
     }
   });
 
-  // ── Claude 預熱：閒置後第一次呼叫會冷啟動（12~40 秒），熱起來後 ~2 秒。
-  //    使用者在選類型＋答 3 題時，背景每隔幾秒打一個極小的 ping，讓真正推薦時連線是熱的。
-  let _gpWarmTimer = null;
-  function _gpWarmPing() {
-    fetch(`${WORKER_URL}/claude`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messages: [{ role: 'user', content: '回一個字：ok' }] }),
-    }).catch(() => {});
-  }
-  function _gpWarmStart() {
-    _gpWarmPing();
-    clearInterval(_gpWarmTimer);
-    _gpWarmTimer = setInterval(_gpWarmPing, 6000);
-  }
-  function _gpWarmStop() {
-    clearInterval(_gpWarmTimer);
-    _gpWarmTimer = null;
-  }
-
   function startGenrePick() {
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
-    _gpWarmStart();
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
     renderGpGenreSelect();
@@ -2402,7 +2380,6 @@ ${seenList}
   }
 
   async function submitGenrePick() {
-    _gpWarmStop();
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
