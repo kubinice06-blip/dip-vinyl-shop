@@ -1759,24 +1759,54 @@ ${seenList}
     } catch(e) {}
   }
 
+  // 封面查詢：瀏覽器端直接打 iTunes（worker 的資料中心 IP 會被 iTunes 封鎖，故改前端呼叫）
   async function fetchSpotifyCover(artist, album) {
     const cacheKey = _spotifyCacheKey(artist, album);
     const cached = _spotifyCacheGet(cacheKey);
-    if (cached) { console.log('[spotify] local cache hit', artist, '-', album); return cached; }
-    try {
-      const resp = await fetch(
-        `${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`
-      );
-      if (!resp.ok) {
-        console.warn('[spotify] worker search failed:', resp.status);
-        return {};
+    if (cached) { console.log('[itunes] local cache hit', artist, '-', album); return cached; }
+
+    const normalize = s => (s || '').toLowerCase().replace(/[^a-z0-9　-鿿가-힯]/g, '');
+    const searchArtist = normalize(artist);
+
+    const _fetchItunes = async (country, timeoutMs) => {
+      const ctrl = new AbortController();
+      const tid = setTimeout(() => ctrl.abort(), timeoutMs);
+      try {
+        const res = await fetch(
+          `https://itunes.apple.com/search?term=${encodeURIComponent(artist + ' ' + album)}&media=music&entity=album&limit=5&country=${country}`,
+          { signal: ctrl.signal }
+        );
+        clearTimeout(tid);
+        if (!res.ok) return [];
+        return (await res.json()).results || [];
+      } catch(e) { clearTimeout(tid); return []; }
+    };
+
+    const _match = items => {
+      for (const item of items) {
+        const resultArtist = normalize(item.artistName);
+        const artistMatch = searchArtist.length > 2 &&
+          (resultArtist.includes(searchArtist) || searchArtist.includes(resultArtist.slice(0, Math.max(4, resultArtist.length - 2))));
+        if (artistMatch && item.artworkUrl100) {
+          return {
+            imageUrl: item.artworkUrl100.replace('100x100bb', '600x600bb'),
+            spotifyUrl: (item.collectionViewUrl || '').replace(/\/(us|jp)\//, '/tw/') || null
+          };
+        }
       }
-      const result = await resp.json();
-      console.log('[spotify]', resp.headers.get('X-Cache') || 'WORKER', result.imageUrl ? '✓' : '✗', artist, '-', album);
+      return null;
+    };
+
+    // US 優先（西方藝人英文名）→ JP fallback（日本藝人原文名）；TW 商店會把西方藝人名翻成中文導致比對失敗，故不用
+    try {
+      let result = _match(await _fetchItunes('US', 7000));
+      if (!result) result = _match(await _fetchItunes('JP', 5000));
+      result = result || {};
+      console.log('[itunes]', result.imageUrl ? '✓' : '✗', artist, '-', album);
       if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
       return result;
     } catch(e) {
-      console.warn('[spotify] exception:', e);
+      console.warn('[itunes] exception:', e);
       return {};
     }
   }
