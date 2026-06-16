@@ -2408,8 +2408,21 @@ ${seenList}
       const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
       await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
-      const reelPrompt = `用三到四句繁體中文介紹 ${pick.artist} 的《${pick.title || ''}》。具體說明藝人來自哪裡、這張作品的聲音做法是什麼。禁止：「融合多種元素」「層次豐富」「獨樹一格」「具有代表性」。只回傳文字，不含格式符號。`;
-      const reason = await streamText([{ role: 'user', content: reelPrompt }], reasonEl);
+      let reason;
+      if (pick.description && pick.description.trim()) {
+        // 店家自己寫的真實介紹，直接用，不經過 AI（零幻覺）
+        reason = pick.description.trim();
+        if (reasonEl) reasonEl.textContent = reason;
+      } else {
+        const genreHint = pick.genre ? `已知曲風：${pick.genre}。` : '';
+        const moodHint = (Array.isArray(pick.mood) && pick.mood.length) ? `氛圍：${pick.mood.join('、')}。` : '';
+        const reelPrompt = `用三到四句繁體中文介紹這張黑膠：${pick.artist}《${pick.title || ''}》。${genreHint}${moodHint}
+【最重要——防止亂編】如果你無法確定這位藝人或這張作品的真實身分，絕對禁止編造國籍、來歷、生平、廠牌或任何具體事實。這種情況下，只依據上面已知的曲風與氛圍，概括描述這類音樂的聲音質地與聆聽感受即可。寧可寫得概括，也絕對不要寫錯。
+不要硬說藝人來自哪裡；只有在你真的確定時才提及背景。
+禁止用語：「融合多種元素」「層次豐富」「獨樹一格」「具有代表性」。
+只回傳文字，不含格式符號。`;
+        reason = await streamText([{ role: 'user', content: reelPrompt }], reasonEl);
+      }
       lastGpResult.reason = reason;
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
