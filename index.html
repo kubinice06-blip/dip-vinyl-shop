@@ -2203,6 +2203,7 @@ ${seenList}
   }
 
   document.getElementById('genreCloseBtn').addEventListener('click', () => {
+    _gpWarmStop();
     document.getElementById('genreModal').classList.remove('open');
     document.body.style.overflow = '';
     history.replaceState(null, '', location.pathname);
@@ -2211,6 +2212,7 @@ ${seenList}
   let historyReturnTo = null;
 
   function openHistoryModal(from) {
+    _gpWarmStop();
     historyReturnTo = from || null;
     document.getElementById('quizModal').classList.remove('open');
     document.getElementById('genreModal').classList.remove('open');
@@ -2263,9 +2265,29 @@ ${seenList}
     }
   });
 
+  // ── Claude 預熱：閒置後第一次呼叫會冷啟動（12~40 秒），熱起來後 ~2 秒。
+  //    使用者在選類型＋答 3 題時，背景每隔幾秒打一個極小的 ping，讓真正推薦時連線是熱的。
+  let _gpWarmTimer = null;
+  function _gpWarmPing() {
+    fetch(`${WORKER_URL}/claude`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: [{ role: 'user', content: '回一個字：ok' }] }),
+    }).catch(() => {});
+  }
+  function _gpWarmStart() {
+    _gpWarmPing();
+    clearInterval(_gpWarmTimer);
+    _gpWarmTimer = setInterval(_gpWarmPing, 6000);
+  }
+  function _gpWarmStop() {
+    clearInterval(_gpWarmTimer);
+    _gpWarmTimer = null;
+  }
+
   function startGenrePick() {
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
+    _gpWarmStart();
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
     renderGpGenreSelect();
@@ -2380,6 +2402,7 @@ ${seenList}
   }
 
   async function submitGenrePick() {
+    _gpWarmStop();
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
@@ -2418,6 +2441,8 @@ ${seenList}
     }
 
     let overloadCount = 0;
+    let failedAlbums = [];
+    let batchAttempt = 0;
     while (true) {
     try {
       const genreInfo = GENRE_DATA[gpGenre];
@@ -2431,139 +2456,116 @@ ${seenList}
       const originSeed = GP_ORIGIN_SEEDS[Math.floor(Math.random() * GP_ORIGIN_SEEDS.length)];
       const angleSeed = GP_ANGLE_SEEDS[Math.floor(Math.random() * GP_ANGLE_SEEDS.length)];
 
-      const promptStrict = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
+      const N = 5;
+      const promptDeep = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
 
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 ${seenList}
 ==絕對禁止幻覺==
-- 只推薦你 100% 確定真實存在的專輯——你必須能在腦中清楚記得這張專輯的內容
-- 不確定某張冷門專輯是否真實？→ 換一張你確定的**另一張冷門專輯**，絕對不要因此改選知名作品
+- 只推薦你 100% 確定真實存在、且在 Apple Music 找得到的專輯——你必須能在腦中清楚記得它的內容
+- 不確定某張冷門專輯是否真實？→ 換一張你確定的另一張冷門專輯，絕對不要因此改選知名作品
 - 藝人名稱與專輯名稱必須完全正確，連字母大小寫和標點都要對
 
 ==選片原則==
-根據用戶的三個品味錨點，推薦一張符合他口味但他可能還沒聽過的冷門專輯。
+根據用戶的三個品味錨點，推薦 ${N} 張符合他口味但他可能還沒聽過的冷門專輯。
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
-- 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
+- 每張都必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
 - 風格方向：${subframe}
 - 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
 - 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
 - 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
-- 禁止推薦品味錨點藝人本人的任何專輯——用戶已經知道這些人，要推他們還沒發現的
+- 禁止推薦品味錨點藝人本人的任何專輯——用戶已經知道這些人
 - 可以推薦三個品味錨點之外的藝人——只要風格吻合就好
+- ${N} 張要彼此不同的藝人，並依你的推薦信心由高到低排序
 
 ==這次的隨機條件（盡量遵守，但若真的無法避免幻覺再跳過）==
 - ${eraSeed}
 - ${originSeed}
 - ${angleSeed}
 
-只回傳 JSON，不要其他文字：
-{"artist":"藝人名稱","album":"專輯名稱"}`;
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言、說明或思考過程：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
-      const promptLoose = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
-
-用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
-${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
-
-推薦一張你 100% 確定真實存在的冷門專輯，符合以下條件：
-- 風格方向：${subframe}
-- 冷門程度：選擇${obscuritySeed}
-- 禁止「入門必聽」或「最佳專輯」等標誌性作品
-- 禁止推薦品味錨點藝人本人的任何專輯
-- 往你腦中第二、第三層去想
-- 不確定某張冷門專輯是否存在？→ 換另一張冷門專輯，不要改選知名作品
-
-只回傳 JSON，不要其他文字：
-{"artist":"藝人名稱","album":"專輯名稱"}`;
-
-      const promptFast = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域。
+      const promptFastBatch = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域。
 
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
 ${seenList}
-根據品味錨點，推薦一張他可能還沒聽過的冷門專輯。
-
-==選片原則==
-- 這張專輯必須屬於 ${genreInfo.label} 領域，或與其有清晰的風格連結
+推薦 ${N} 張他可能還沒聽過的冷門專輯，每張都要符合：
+- 屬於 ${genreInfo.label} 領域或有清晰風格連結
 - 風格方向：${subframe}
-- 絕對禁止：Spotify 首頁、Billboard、Grammy 等級的超主流作品
-- 目標是在音樂社群（Discogs、Rate Your Music）有一定評價，但一般聽眾不熟悉的作品
-- 禁止推薦品味錨點藝人本人的任何專輯
+- 禁止 Spotify 首頁／Billboard／Grammy 等級的超主流作品
+- 只推薦你完全確定真實存在、在 Apple Music 找得到的專輯
+- 禁止推薦品味錨點藝人本人的專輯
+- ${N} 張要不同藝人，依推薦信心由高到低排序
 
-==最重要：避免幻覺==
-- 只推薦你完全確定真實存在且在 Apple Music 找得到的專輯
-- 不確定某張是否在 Apple Music 上？→ 改選一張你更有把握的冷門替代品，不要猜
-
-只回傳 JSON，不要其他文字：
-{"artist":"藝人名稱","album":"專輯名稱"}`;
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
       let verified = null;
-      let lastRec = null;
-      let failedAlbums = [];
-      let isOverloaded = false;
-      for (let attempt = 0; attempt < 4; attempt++) {
-        let usePrompt;
-        const _fallback = `在 ${genreInfo.label} 領域推薦一張你了解的真實專輯，在 Spotify 找得到，適合喜歡 ${gpArtists.join('、')} 的聽眾。\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
-        if (gpMode === 'fast') {
-          usePrompt = attempt < 3 ? promptFast : _fallback;
-        } else {
-          if (attempt < 2) {
-            usePrompt = promptStrict;
-          } else if (attempt === 2) {
-            usePrompt = promptLoose;
-          } else {
-            usePrompt = _fallback;
+      const retryNote = failedAlbums.length
+        ? `\n以下封面都找不到，請整批換成別的（不同藝人、不同專輯）：\n${failedAlbums.join('\n')}\n`
+        : '';
+      const usePrompt = (gpMode === 'fast' ? promptFastBatch : promptDeep) + retryNote;
+
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: usePrompt }] }),
+      });
+      const apiData = await resp.json();
+      logApiUsage('claude', apiData.usage?.total_tokens);
+      if (apiData.apiError) {
+        if (/overload|529/i.test(apiData.apiError)) {
+          overloadCount++;
+          if (overloadCount >= 3) {
+            document.getElementById('genreContent').innerHTML =
+              `<div class="quiz-error" style="padding:40px 20px;">目前人數過多，請稍後再試<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">晚點再來</button></div>`;
+            return;
           }
-        }
-        const retryNote = failedAlbums.length
-          ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
-          : '';
-        const resp = await fetch(`${WORKER_URL}/claude`, {
-          method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ messages: [{ role: 'user', content: usePrompt + retryNote }] }),
-        });
-        const apiData = await resp.json();
-        logApiUsage('claude', apiData.usage?.total_tokens);
-        if (apiData.apiError) {
-          if (/overload|529/i.test(apiData.apiError)) { isOverloaded = true; break; }
-          const isRateLimit = /429|rate.?limit|quota/i.test(apiData.apiError);
-          throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : apiData.apiError);
-        }
-        const text = apiData.content?.[0]?.text || '';
-        console.log('[gp] attempt', attempt, 'raw:', text.slice(0, 120));
-        const jsonMatch = text.match(/\{[\s\S]*?"artist"[\s\S]*?"album"[\s\S]*?\}/);
-        if (!jsonMatch) { console.warn('[gp] no JSON in attempt', attempt, text); continue; }
-        let rec;
-        try { rec = JSON.parse(jsonMatch[0]); } catch(e) { console.warn('[gp] JSON parse failed', attempt, jsonMatch[0]); continue; }
-        if (!rec.artist || !rec.album) continue;
-        console.log('[gp] attempt', attempt, '→', rec.artist, '—', rec.album);
-        lastRec = rec;
-        const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
-        console.log('[gp] spotify:', spotifyResult.imageUrl ? '✓ found' : '✗ not found', rec.artist, rec.album);
-        if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
-        failedAlbums.push(`${rec.artist} — ${rec.album}`);
-      }
-      if (isOverloaded) {
-        overloadCount++;
-        if (overloadCount >= 3) {
           document.getElementById('genreContent').innerHTML =
-            `<div class="quiz-error" style="padding:40px 20px;">目前人數過多，請稍後再試<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">晚點再來</button></div>`;
-          return;
+            `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">目前人數過多，排隊中…</div></div>`;
+          await new Promise(r => setTimeout(r, 3000));
+          continue;
         }
-        document.getElementById('genreContent').innerHTML =
-          `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">目前人數過多，排隊中…</div></div>`;
-        await new Promise(r => setTimeout(r, 3000));
-        continue;
+        const isRateLimit = /429|rate.?limit|quota/i.test(apiData.apiError);
+        throw new Error(isRateLimit ? '今天的算力已用完，明天再來挑戰吧 ✦' : apiData.apiError);
       }
-      // Fallback: if Spotify verification failed but we got a valid recommendation, show it without cover
-      if (!verified && lastRec) {
-        console.warn('[gp] spotify failed for all attempts, showing without cover');
-        verified = { rec: lastRec, spotifyResult: { imageUrl: null, spotifyUrl: null } };
+
+      const text = apiData.content?.[0]?.text || '';
+      console.log('[gp] batch raw:', text.slice(0, 200));
+      let recs = [];
+      const arrMatch = text.match(/\[[\s\S]*\]/);
+      if (arrMatch) { try { recs = JSON.parse(arrMatch[0]); } catch(e) { console.warn('[gp] array parse failed', e); } }
+      if (!Array.isArray(recs) || !recs.length) {
+        const objs = text.match(/\{[^{}]*"artist"[^{}]*"album"[^{}]*\}/g) || [];
+        recs = objs.map(o => { try { return JSON.parse(o); } catch(e) { return null; } }).filter(Boolean);
       }
+      recs = (recs || []).filter(r => r && r.artist && r.album)
+        .filter(r => !gpSeenAlbums.has(`${r.artist}||${r.album}`.toLowerCase()));
+      console.log('[gp] batch candidates:', recs.map(r => `${r.artist} — ${r.album}`));
+
+      if (!recs.length) {
+        batchAttempt++;
+        if (batchAttempt < 2) continue;
+        throw new Error('找不到合適的推薦，請再試一次');
+      }
+
+      // 一次拿到多張候選，封面並行驗證；依信心排序挑第一張有封面的
+      const checked = await Promise.all(
+        recs.map(r => fetchSpotifyCover(r.artist, r.album)
+          .then(sr => ({ rec: r, spotifyResult: sr || {} }))
+          .catch(() => ({ rec: r, spotifyResult: {} })))
+      );
+      verified = checked.find(c => c.spotifyResult && c.spotifyResult.imageUrl) || null;
+      console.log('[gp] cover hit:', verified ? `${verified.rec.artist} — ${verified.rec.album}` : 'none');
+
       if (!verified) {
-        const tried = failedAlbums.length ? `\n試過：${failedAlbums.join('、')}` : '';
-        console.warn('[gp] all attempts failed. tried:', failedAlbums);
-        throw new Error('找不到合適的推薦，請再試一次' + tried);
+        failedAlbums.push(...recs.map(r => `${r.artist} — ${r.album}`));
+        batchAttempt++;
+        if (batchAttempt < 2) continue;
+        console.warn('[gp] all batch covers failed, showing first without cover');
+        verified = { rec: recs[0], spotifyResult: { imageUrl: null, spotifyUrl: null } };
       }
       await showGpResult({
         artist: verified.rec.artist, album: verified.rec.album, reason: '',
