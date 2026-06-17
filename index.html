@@ -3,8 +3,32 @@
 <head>
   <meta charset="UTF-8"/>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>dip vinyl shop</title>
+  <!-- PWA：選歌 App -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#111111">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="dip 選歌">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <script>
+    // 盡早判定 App 模式（?app=1 或已安裝為獨立 App），避免商店 UI 閃一下。
+    // 一旦進過 App 模式就記住，之後從主畫面開啟（無 query）也維持。
+    (function () {
+      try {
+        var params = new URLSearchParams(location.search);
+        var standalone = window.matchMedia('(display-mode: standalone)').matches
+          || window.navigator.standalone === true;
+        if (params.get('app') === '1') localStorage.setItem('dipAppMode', '1');
+        if (params.get('app') === '0') localStorage.removeItem('dipAppMode');
+        var isApp = params.get('app') === '1' || standalone || localStorage.getItem('dipAppMode') === '1';
+        window.__APP_MODE__ = isApp;
+        if (isApp) document.documentElement.classList.add('app-mode');
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
@@ -319,6 +343,62 @@
     .gp-genre-btn:nth-child(even) { border-right: none; }
     .gp-genre-btn:hover { background: var(--black); color: #fff; }
   </style>
+  <style>
+    /* ── App 模式：只保留選歌遊戲，隱藏唱片行 UI ── */
+    html.app-mode .logo-hero,
+    html.app-mode .search-bar,
+    html.app-mode #filterSection,
+    html.app-mode .count-bar,
+    html.app-mode #grid,
+    html.app-mode .cart-btn,
+    html.app-mode footer,
+    html.app-mode .main-tab[data-tab="used"],
+    html.app-mode .main-tab[data-tab="new"],
+    html.app-mode .main-tab[data-tab="archive"] { display: none !important; }
+
+    /* 隱藏 Tawk 線上客服泡泡（App 端不需要） */
+    html.app-mode #tawkchat-container,
+    html.app-mode iframe[title*="chat"] { display: none !important; }
+
+    /* App 模式頂欄：把店名換成 App 名稱 */
+    html.app-mode .topbar-logo { font-size: 12px; }
+
+    /* 安全區（瀏海 / 底部手勢列） */
+    html.app-mode .topbar { padding-top: env(safe-area-inset-top); height: calc(40px + env(safe-area-inset-top)); }
+
+    /* ── 「今天聽什麼？」首頁 hub（網站與 App 共用） ── */
+    #homeHub { display: none; }
+    #homeHub.show { display: block; }
+    .homehub-hero { padding: 40px 20px 24px; text-align: center; border-bottom: 1px solid var(--line); }
+    .homehub-title { font-size: 18px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .homehub-sub { font-size: 11px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.7; }
+    .homehub-cards { display: flex; flex-direction: column; }
+    .homehub-card {
+      border-bottom: 1px solid var(--line); padding: 28px 20px; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      background: #fff; transition: background 0.15s; text-align: left; width: 100%;
+      border-left: none; border-right: none; border-top: none; font-family: var(--mono);
+    }
+    .homehub-card:hover { background: #111; color: #fff; }
+    .homehub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .homehub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
+    .homehub-card:hover .homehub-card-desc { color: #bbb; }
+    .homehub-card-arrow { font-size: 18px; flex-shrink: 0; }
+    /* 「直接來一首」強調為主要入口 */
+    .homehub-card.feature { background: #111; color: #fff; }
+    .homehub-card.feature .homehub-card-desc { color: #bbb; }
+    .homehub-card.feature:hover { background: #000; }
+
+    /* 遊戲畫面的「返回首頁」列 */
+    .hub-back-btn {
+      display: block; width: 100%; text-align: left;
+      background: rgba(255,255,255,0.98); border: none; border-bottom: 1px solid var(--line);
+      padding: 12px 20px; font-family: var(--mono); font-size: 11px;
+      letter-spacing: 0.08em; color: var(--gray); cursor: pointer;
+      position: sticky; top: 0; z-index: 20; transition: color 0.15s;
+    }
+    .hub-back-btn:hover { color: var(--black); }
+  </style>
 </head>
 <body>
 
@@ -339,13 +419,49 @@
 </header>
 
 <div class="main-tabs" id="mainTabs">
-  <button class="main-tab active" data-tab="used">Used</button>
+  <button class="main-tab active" data-tab="home">今天聽什麼？</button>
+  <button class="main-tab" data-tab="used">Used</button>
   <button class="main-tab" data-tab="new">New</button>
-  <button class="main-tab" data-tab="quiz">心情選歌</button>
-  <button class="main-tab" data-tab="genre">類型挑片</button>
-  <button class="main-tab" data-tab="history">我的紀錄</button>
   <button class="main-tab" data-tab="archive">Digital Archive</button>
 </div>
+
+<!-- 「今天聽什麼？」首頁 hub -->
+<section id="homeHub">
+  <div class="homehub-hero">
+    <div class="homehub-title">今天聽什麼？</div>
+    <div class="homehub-sub">不知道從何聽起？<br>沾記幫你挖出屬於你的那張。</div>
+  </div>
+  <div class="homehub-cards">
+    <button class="homehub-card" data-go="quiz">
+      <div>
+        <div class="homehub-card-name">心情選歌</div>
+        <div class="homehub-card-desc">回答幾個問題，讓心情帶你找到一張唱片。</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+    <button class="homehub-card" data-go="genre">
+      <div>
+        <div class="homehub-card-name">類型挑片</div>
+        <div class="homehub-card-desc">選個領域，透過三位藝人的品味挖出那張。</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+    <button class="homehub-card feature" data-go="random">
+      <div>
+        <div class="homehub-card-name">直接來一首</div>
+        <div class="homehub-card-desc">不選類型、不選歌手，直接隨機送你一張冷門好碟。</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+    <button class="homehub-card" data-go="history">
+      <div>
+        <div class="homehub-card-name">我的紀錄</div>
+        <div class="homehub-card-desc">回顧你挖到過的每一張唱片。</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+  </div>
+</section>
 <div class="search-bar">
   <label>Search —</label>
   <input type="text" id="searchInput" placeholder="唱片名稱…">
@@ -447,6 +563,7 @@
 <!-- 類型挑片 modal -->
 <div class="quiz-modal" id="genreModal">
   <div class="quiz-inner">
+    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
     <div id="genreContent"></div>
   </div>
 </div>
@@ -454,6 +571,7 @@
 <!-- 我的紀錄 modal -->
 <div class="quiz-modal" id="historyModal">
   <div class="quiz-inner">
+    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
     <div id="historyContent"></div>
   </div>
 </div>
@@ -461,6 +579,7 @@
 <!-- 心理測驗 modal -->
 <div class="quiz-modal" id="quizModal">
   <div class="quiz-inner">
+    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
     <div id="quizContent"></div>
   </div>
 </div>
@@ -755,6 +874,18 @@
     // 先收起所有內嵌面板
     ['quizModal', 'genreModal', 'historyModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
+    // 「今天聽什麼？」首頁 hub
+    const homeHub = document.getElementById('homeHub');
+    if (homeHub) homeHub.classList.toggle('show', tab === 'home');
+    if (tab === 'home') {
+      // 隱藏所有商店 UI，只留首頁 hub
+      ['filterSection', 'grid'].forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
+      const sb = document.querySelector('.search-bar'); if (sb) sb.style.display = 'none';
+      const cb = document.querySelector('.count-bar'); if (cb) cb.style.display = 'none';
+      history.replaceState(null, '', location.pathname + location.search);
+      return;
+    }
+
     const filterSection = document.getElementById('filterSection');
     const searchBar = document.querySelector('.search-bar');
     const countBar = document.querySelector('.count-bar');
@@ -776,6 +907,12 @@
     if (tab === 'genre') {
       document.getElementById('genreModal').classList.add('open');
       (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startGenrePick());
+      return;
+    }
+    if (tab === 'random') {
+      // 直接來一首：沿用類型挑片結果 UI，但不選類型、不選歌手
+      document.getElementById('genreModal').classList.add('open');
+      (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startRandomPick());
       return;
     }
     if (tab === 'history') {
@@ -991,7 +1128,7 @@
     }
   });
 
-  load();
+  if (!window.__APP_MODE__) load();
   loadBannerSetting();
 
   async function loadBannerSetting() {
@@ -2211,6 +2348,7 @@ ${seenList}
   let gpUsed = new Set();
   let gpAnotherCount = 0;
   const GP_ANOTHER_MAX = 3;
+  let gpIsRandom = false; // 「直接來一首」隨機模式：不選類型、不選歌手
   let lastGpResult = null;
   let gpSeenAlbums = (() => {
     try { const s = sessionStorage.getItem('dip_gp_seen'); return s ? new Set(JSON.parse(s)) : new Set(); }
@@ -2229,7 +2367,7 @@ ${seenList}
   document.getElementById('genreContent').addEventListener('click', e => {
     if (e.target.closest('[data-gp-action="retry"]')) {
       sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
-      startGenrePick();
+      if (gpIsRandom) startRandomPick(); else startGenrePick();
     }
     if (e.target.closest('[data-gp-action="view-item"]')) {
       const id = e.target.closest('[data-gp-action="view-item"]').dataset.id;
@@ -2245,11 +2383,29 @@ ${seenList}
   });
 
   function startGenrePick() {
+    gpIsRandom = false;
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
     renderGpGenreSelect();
+  }
+
+  // 「直接來一首」：不選類型、不選歌手，直接用類型挑片的批次邏輯隨機送一張
+  function startRandomPick() {
+    gpIsRandom = true;
+    gpGenre = null; gpArtists = []; gpRound = 0;
+    gpUsed = new Set(); gpAnotherCount = 0;
+    try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
+    catch(e) { gpSeenAlbums = new Set(); }
+    submitGenrePick();
+  }
+
+  // 從所有類型中隨機抽一個 subframe，為隨機模式增添多樣性
+  function _randomSubframe() {
+    const genres = Object.values(GENRE_DATA);
+    const g = genres[Math.floor(Math.random() * genres.length)];
+    return g.subframes[Math.floor(Math.random() * g.subframes.length)];
   }
 
   function renderGpGenreSelect() {
@@ -2360,6 +2516,24 @@ ${seenList}
     return streamText([{ role: 'user', content: prompt }], targetEl);
   }
 
+  // 直接來一首的說明（不依賴特定類型，沿用同樣的反廢話規則）
+  async function getRandomReason(artist, album, targetEl = null) {
+    const prompt = `專輯：${artist} — ${album}
+
+用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容。
+
+【必須包含的資訊】
+- 藝人來自哪裡（城市或國家）
+- 這張專輯屬於什麼曲風、聲音和做法是什麼（具體說出樂器、技術或音樂方向）
+- 它為何值得一聽（不能說「具有代表性」，要說具體原因）
+
+【最重要——防止亂編】如果你無法確定這位藝人或這張作品的真實身分，絕對禁止編造國籍、來歷、廠牌或任何具體事實；寧可寫得概括，也絕對不要寫錯。
+
+禁止：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
+整段 80-120 字，只回傳文字，不含格式符號。`;
+    return streamText([{ role: 'user', content: prompt }], targetEl);
+  }
+
   async function submitGenrePick() {
     document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
@@ -2416,19 +2590,19 @@ ${seenList}
     let batchAttempt = 0;
     while (true) {
     try {
-      const genreInfo = GENRE_DATA[gpGenre];
+      const genreInfo = gpIsRandom ? null : GENRE_DATA[gpGenre];
       const seenArtists = [...new Set([...gpSeenAlbums].map(k => k.split('||')[0]))];
       const seenList = gpSeenAlbums.size > 0
         ? `\n已推薦過的藝人（整個人都不能再推）：${seenArtists.join('、')}\n已推薦過的專輯：\n${[...gpSeenAlbums].map(k => k.split('||').join(' — ')).join('\n')}\n`
         : '';
-      const subframe = genreInfo.subframes[Math.floor(Math.random() * genreInfo.subframes.length)];
+      const subframe = gpIsRandom ? _randomSubframe() : genreInfo.subframes[Math.floor(Math.random() * genreInfo.subframes.length)];
       const obscuritySeed = GP_OBSCURITY_SEEDS[Math.floor(Math.random() * GP_OBSCURITY_SEEDS.length)];
       const eraSeed = GP_ERA_SEEDS[Math.floor(Math.random() * GP_ERA_SEEDS.length)];
       const originSeed = GP_ORIGIN_SEEDS[Math.floor(Math.random() * GP_ORIGIN_SEEDS.length)];
       const angleSeed = GP_ANGLE_SEEDS[Math.floor(Math.random() * GP_ANGLE_SEEDS.length)];
 
       const N = 5;
-      const promptDeep = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
+      const promptDeep = gpIsRandom ? '' : `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域，品味獨特，擅長發掘真正有深度的冷門作品。
 
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
@@ -2458,7 +2632,7 @@ ${seenList}
 直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言、說明或思考過程：
 [{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
-      const promptFastBatch = `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域。
+      const promptFastBatch = gpIsRandom ? '' : `你是一位黑膠唱片店的選片顧問，專精於 ${genreInfo.label} 領域。
 
 用戶在 ${genreInfo.label} 領域的三個品味錨點（他喜歡這三位藝人的風格）：
 ${gpArtists.map((a, i) => `${i+1}. ${a}`).join('\n')}
@@ -2474,11 +2648,36 @@ ${seenList}
 直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
 [{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
+      // 直接來一首：完全沿用上面的選片邏輯，只是不限類型、沒有品味錨點，純隨機
+      const promptRandom = `你是一位黑膠唱片店的選片顧問，品味獨特，擅長從各種曲風中發掘真正有深度的冷門作品。
+${seenList}
+==絕對禁止幻覺==
+- 只推薦你 100% 確定真實存在、且在 Apple Music 找得到的專輯——你必須能在腦中清楚記得它的內容
+- 不確定某張冷門專輯是否真實？→ 換一張你確定的另一張冷門專輯，絕對不要因此改選知名作品
+- 藝人名稱與專輯名稱必須完全正確，連字母大小寫和標點都要對
+
+==選片原則==
+隨機推薦 ${N} 張橫跨不同曲風、彼此風格各異的冷門專輯（不限定任何音樂類型）。
+- 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
+- 風格方向參考（可作為其中一張的靈感，不必全部符合）：${subframe}
+- 冷門程度：選擇${obscuritySeed}——不要選串流平台或音樂媒體首頁等級的知名作品
+- 禁止選擇在音樂論壇常被列為「入門必聽」「最佳專輯」的標誌性作品
+- 你腦中浮現的「第一個答案」幾乎都太顯眼，請往第二、第三層去想
+- ${N} 張要彼此不同的藝人、盡量分屬不同曲風，並依你的推薦信心由高到低排序
+
+==這次的隨機條件（盡量遵守，但若真的無法避免幻覺再跳過）==
+- ${eraSeed}
+- ${originSeed}
+- ${angleSeed}
+
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言、說明或思考過程：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+
       let verified = null;
       const retryNote = failedAlbums.length
         ? `\n以下封面都找不到，請整批換成別的（不同藝人、不同專輯）：\n${failedAlbums.join('\n')}\n`
         : '';
-      const usePrompt = (gpMode === 'fast' ? promptFastBatch : promptDeep) + retryNote;
+      const usePrompt = (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep)) + retryNote;
 
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -2543,7 +2742,9 @@ ${seenList}
         _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true,
       });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
-      const reason = await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists, reasonEl);
+      const reason = gpIsRandom
+        ? await getRandomReason(verified.rec.artist, verified.rec.album, reasonEl)
+        : await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists, reasonEl);
       lastGpResult.reason = reason;
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.spotifyResult.imageUrl })
@@ -2632,7 +2833,7 @@ ${seenList}
         ${stockRecoHtml}
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
         ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
-        <button class="quiz-retry-btn" data-gp-action="retry">換個類型再試</button>
+        <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>
       </div>
     `;
     if (!result._streaming) {
@@ -2728,13 +2929,43 @@ ${seenList}
   }
 
   // Hash-based routing — runs once on page load
-  (function navigateByHash() {
+  (function bootstrapView() {
     const hash = window.location.hash.slice(1);
     const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
     const target = hash || path;
-    const valid = ['used', 'new', 'quiz', 'genre', 'history', 'archive'];
-    if (valid.includes(target)) setActiveTab(target);
+
+    // 首頁 hub 卡片（網站與 App 共用）
+    document.querySelectorAll('#homeHub .homehub-card').forEach((card) => {
+      card.addEventListener('click', () => setActiveTab(card.dataset.go));
+    });
+
+    // 遊戲畫面「返回首頁」
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('[data-hub-back]')) setActiveTab('home');
+    });
+
+    if (window.__APP_MODE__) {
+      // App 模式：改頂欄標題、隱藏 Tawk 客服泡泡
+      const logo = document.querySelector('.topbar-logo');
+      if (logo) logo.textContent = 'dip 選歌';
+      window.Tawk_API = window.Tawk_API || {};
+      window.Tawk_API.onLoad = function () { try { window.Tawk_API.hideWidget(); } catch (e) {} };
+      try { if (window.Tawk_API.hideWidget) window.Tawk_API.hideWidget(); } catch (e) {}
+    }
+
+    // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
+    const valid = window.__APP_MODE__
+      ? ['home', 'quiz', 'genre', 'random', 'history']
+      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive'];
+    setActiveTab(valid.includes(target) ? target : 'home');
   })();
+
+  // 註冊 service worker（離線後備 + 靜態快取；線上內容仍即時更新）
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
