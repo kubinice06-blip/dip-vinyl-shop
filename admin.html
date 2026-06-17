@@ -362,6 +362,10 @@
         <div class="section-label">商品描述</div>
         <div class="field">
           <textarea id="descInput" placeholder="輸入商品描述…" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;resize:vertical;min-height:80px;line-height:1.6;"></textarea>
+          <div style="margin-top:8px;display:flex;align-items:center;gap:10px;">
+            <button type="button" id="genDescBtn" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;padding:5px 12px;cursor:pointer;color:var(--gray);">✦ 生成介紹</button>
+            <span id="genDescMsg" style="font-size:10px;color:var(--gray);line-height:1.5;"></span>
+          </div>
         </div>
       </div>
 
@@ -784,6 +788,53 @@
   const db = getFirestore(app);
   const CLOUDINARY_CLOUD = 'ddod3zcpy';
   const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
+  const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
+
+  // 商品描述「生成介紹」按鈕：用 /claude 產 3~4 句草稿，附防幻覺提示。
+  // 注意：AI 沒有即時上網能力，冷門盤可能不準，務必人工核對後再儲存。
+  async function generateDescription() {
+    const btn = document.getElementById('genDescBtn');
+    const msg = document.getElementById('genDescMsg');
+    const ta = document.getElementById('descInput');
+    if (!currentItem || !ta) return;
+    const artist = currentItem.artist || '';
+    const title = currentItem.name || '';
+    if (!artist && !title) { if (msg) msg.textContent = '⚠ 缺品名／藝人，無法生成'; return; }
+    const genre = Array.isArray(currentItem.genre) ? currentItem.genre.join('、') : (currentItem.genre || '');
+    const year = currentItem.year || '';
+    const discogs = currentItem.discogsUrl || '';
+    const prompt = `你是黑膠唱片店的選片顧問，為店內這張商品寫一段繁體中文專輯介紹。
+
+專輯資訊（以下為唯一可信來源，不可與之矛盾）：
+- 藝人：${artist || '（未提供，請從品名判讀；判讀不出就不要瞎猜）'}
+- 品名／標題：${title}
+- 曲風：${genre || '（未提供）'}
+- 年份：${year || '（未提供）'}
+${discogs ? '- Discogs：' + discogs : ''}
+
+要求：
+- 3～4 句，講藝人是誰、這張作品的聲音特色與亮點。藝人與專輯名用原文。
+- 【最重要－防止亂編】若你無法確定這位藝人或這張作品的真實身分，絕對禁止編造國籍、來歷、生平、廠牌或任何具體事實。這種情況只依已知曲風概括描述聲音，或直接只回覆「⚠ 資料不足，建議人工查證後再撰寫」。寧可概括也絕不寫錯。
+- 不要硬說藝人來自哪裡；只有你真的確定時才提背景。
+- 禁止用語：「融合多種元素」「層次豐富」「獨樹一格」「具有代表性」。
+- 只回傳介紹文字，不含任何前言、說明或格式符號。`;
+    btn.disabled = true;
+    if (msg) { msg.style.color = 'var(--gray)'; msg.textContent = '生成中…'; }
+    try {
+      const resp = await fetch(`${WORKER_URL}/claude`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
+      });
+      const data = await resp.json();
+      if (data.apiError) throw new Error(data.apiError);
+      const text = (data.content && data.content[0] && data.content[0].text || '').trim();
+      if (!text) throw new Error('沒有回傳內容');
+      ta.value = text;
+      if (msg) { msg.style.color = 'var(--gray)'; msg.textContent = '✓ 已生成草稿，請核對後再「儲存」（AI 無法即時上網，冷門盤請務必查證）'; }
+    } catch (e) {
+      if (msg) { msg.style.color = 'var(--red)'; msg.textContent = '生成失敗：' + e.message; }
+    } finally { btn.disabled = false; }
+  }
 
   const GENRES = ['Jazz','Soul','Funk','R&B','Hip-Hop','Electronic','Rock','Pop','Classical','City Pop','Ambient','Folk','Blues','Reggae','Latin'];
   const CONDITIONS = [
@@ -1169,6 +1220,8 @@
     buildConditionGrid();
 
     if (document.getElementById('descInput')) document.getElementById('descInput').value = currentItem.description || '';
+    const _genBtn = document.getElementById('genDescBtn');
+    if (_genBtn && !_genBtn._bound) { _genBtn._bound = true; _genBtn.addEventListener('click', generateDescription); }
     if (document.getElementById('costInput')) {
       const cc = document.getElementById('costCurrency');
       if (cc) cc.value = currentItem.costCurrency || 'TWD';
