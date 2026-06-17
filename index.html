@@ -236,9 +236,9 @@
     footer p { font-size: 10px; color: var(--gray); }
 
     /* 心理測驗 */
-    .quiz-modal { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.98); z-index: 250; overflow-y: auto; }
+    .quiz-modal { display: none; }
     .quiz-modal.open { display: block; }
-    .quiz-inner { max-width: 560px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); min-height: 100vh; }
+    .quiz-inner { max-width: 560px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); min-height: 60vh; }
     .quiz-topbar { border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: rgba(255,255,255,0.98); z-index: 10; }
     .quiz-progress { padding: 16px 20px; border-bottom: 1px solid var(--line); }
     .quiz-progress-track { height: 1px; background: var(--line); margin-bottom: 8px; }
@@ -440,12 +440,6 @@
 <!-- 類型挑片 modal -->
 <div class="quiz-modal" id="genreModal">
   <div class="quiz-inner">
-    <div class="quiz-topbar">
-      <div class="modal-topbar-left">
-        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Genre Pick — 挖出你的那張</span>
-      </div>
-      <button class="modal-close-btn" id="genreCloseBtn">✕ Close</button>
-    </div>
     <div id="genreContent"></div>
   </div>
 </div>
@@ -453,12 +447,6 @@
 <!-- 我的紀錄 modal -->
 <div class="quiz-modal" id="historyModal">
   <div class="quiz-inner">
-    <div class="quiz-topbar">
-      <div class="modal-topbar-left">
-        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">My Records — 你看過的那些</span>
-      </div>
-      <button class="modal-close-btn" id="historyCloseBtn">✕ Close</button>
-    </div>
     <div id="historyContent"></div>
   </div>
 </div>
@@ -466,12 +454,6 @@
 <!-- 心理測驗 modal -->
 <div class="quiz-modal" id="quizModal">
   <div class="quiz-inner">
-    <div class="quiz-topbar">
-      <div class="modal-topbar-left">
-        <span style="font-size:10px;color:var(--gray);letter-spacing:0.08em;text-transform:uppercase;">Vinyl Match — 找到你的那張</span>
-      </div>
-      <button class="modal-close-btn" id="quizCloseBtn">✕ Close</button>
-    </div>
     <div id="quizContent"></div>
   </div>
 </div>
@@ -752,61 +734,64 @@
 
   function closeModal() {
     document.getElementById('modalBg').classList.remove('open');
-    if (!document.getElementById('quizModal').classList.contains('open')) {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = '';
     document.getElementById('modalMusic').innerHTML = '';
   }
 
-  // 主標籤切換
+  // 主標籤切換 —— 所有分頁（含心情選歌 / 類型挑片 / 我的紀錄）統一走這個函式
   let activeTab = 'used';
-  let prevTab = 'used';
-  document.getElementById('mainTabs').addEventListener('click', async e => {
-    const btn = e.target.closest('.main-tab');
-    if (!btn) return;
-    const tab = btn.dataset.tab;
 
-    if (tab === 'quiz') {
-      history.replaceState(null, '', '#quiz');
-      document.getElementById('quizModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      if (!quizQs.length) await loadQuizData();
-      startQuiz();
-      return;
-    }
+  function setActiveTab(tab) {
+    // tab 高亮
+    document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    document.body.style.overflow = '';
+    // 先收起所有內嵌面板
+    ['quizModal', 'genreModal', 'historyModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
-    if (tab === 'genre') {
-      history.replaceState(null, '', '#genre');
-      document.getElementById('genreModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      if (!quizReels.length) await loadQuizData();
-      startGenrePick();
-      return;
-    }
-
-    if (tab === 'history') {
-      openHistoryModal();
-      return;
-    }
-
-    activeTab = tab;
-    prevTab = tab;
-    history.replaceState(null, '', '#' + tab);
-    document.querySelectorAll('.main-tab').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
     const filterSection = document.getElementById('filterSection');
     const searchBar = document.querySelector('.search-bar');
-    if (activeTab === 'archive') {
-      if (filterSection) filterSection.style.display = 'none';
-      searchBar.style.display = 'none';
+    const countBar = document.querySelector('.count-bar');
+    const grid = document.getElementById('grid');
+    const isShop = tab === 'used' || tab === 'new' || tab === 'archive';
+    const showFilter = tab === 'used' || tab === 'new';
+    if (filterSection) filterSection.style.display = showFilter ? '' : 'none';
+    if (searchBar) searchBar.style.display = showFilter ? '' : 'none';
+    if (countBar) countBar.style.display = isShop ? '' : 'none';
+    if (grid) grid.style.display = isShop ? '' : 'none';
+
+    history.replaceState(null, '', '#' + tab);
+
+    if (tab === 'quiz') {
+      document.getElementById('quizModal').classList.add('open');
+      (quizQs.length ? Promise.resolve() : loadQuizData()).then(() => startQuiz());
+      return;
+    }
+    if (tab === 'genre') {
+      document.getElementById('genreModal').classList.add('open');
+      (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startGenrePick());
+      return;
+    }
+    if (tab === 'history') {
+      document.getElementById('historyModal').classList.add('open');
+      renderHistorySection(document.getElementById('historyContent'));
+      return;
+    }
+
+    // 商店分頁 used / new / archive
+    activeTab = tab;
+    if (tab === 'archive') {
       loadArchives();
     } else {
-      if (filterSection) filterSection.style.display = '';
-      searchBar.style.display = '';
       activeGenre = 'all';
       document.querySelectorAll('.genre-btn').forEach(b => b.classList.toggle('active', b.dataset.genre === 'all'));
       render();
     }
+  }
+
+  document.getElementById('mainTabs').addEventListener('click', e => {
+    const btn = e.target.closest('.main-tab');
+    if (!btn) return;
+    setActiveTab(btn.dataset.tab);
   });
 
   // archive
@@ -1075,11 +1060,6 @@
     try { sessionStorage.setItem('dip_reason_words', JSON.stringify([...seenReasonWords])); } catch(e) {}
   }
 
-  document.getElementById('quizCloseBtn').addEventListener('click', () => {
-    document.getElementById('quizModal').classList.remove('open');
-    document.body.style.overflow = '';
-    history.replaceState(null, '', location.pathname);
-  });
 
   document.getElementById('quizContent').addEventListener('click', e => {
     if (e.target.closest('[data-quiz-action="retry"]')) {
@@ -2202,46 +2182,9 @@ ${seenList}
     try { sessionStorage.setItem('dip_gp_seen', JSON.stringify([...gpSeenAlbums])); } catch(e) {}
   }
 
-  document.getElementById('genreCloseBtn').addEventListener('click', () => {
-    document.getElementById('genreModal').classList.remove('open');
-    document.body.style.overflow = '';
-    history.replaceState(null, '', location.pathname);
-  });
-
-  let historyReturnTo = null;
-
-  function openHistoryModal(from) {
-    historyReturnTo = from || null;
-    document.getElementById('quizModal').classList.remove('open');
-    document.getElementById('genreModal').classList.remove('open');
-    history.replaceState(null, '', '#history');
-    const modal = document.getElementById('historyModal');
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    renderHistorySection(document.getElementById('historyContent'));
-  }
-
-  document.getElementById('historyCloseBtn').addEventListener('click', () => {
-    document.getElementById('historyModal').classList.remove('open');
-    if (historyReturnTo === 'quiz') {
-      history.replaceState(null, '', '#quiz');
-      document.getElementById('quizModal').classList.add('open');
-    } else if (historyReturnTo === 'genre') {
-      history.replaceState(null, '', '#genre');
-      document.getElementById('genreModal').classList.add('open');
-    } else {
-      document.body.style.overflow = '';
-      history.replaceState(null, '', location.pathname);
-    }
-    historyReturnTo = null;
-  });
-
   document.addEventListener('click', e => {
     if (e.target.closest('.go-history-btn')) {
-      const from = document.getElementById('quizModal').classList.contains('open') ? 'quiz'
-        : document.getElementById('genreModal').classList.contains('open') ? 'genre'
-        : null;
-      openHistoryModal(from);
+      setActiveTab('history');
     }
   });
 
@@ -2751,19 +2694,8 @@ ${seenList}
     const hash = window.location.hash.slice(1);
     const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
     const target = hash || path;
-    if (!target) return;
-    if (target === 'quiz') {
-      document.getElementById('quizModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      loadQuizData().then(() => startQuiz());
-    } else if (target === 'genre') {
-      document.getElementById('genreModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
-      if (!quizReels.length) loadQuizData().then(() => startGenrePick()); else startGenrePick();
-    } else {
-      const btn = document.querySelector(`.main-tab[data-tab="${target}"]`);
-      if (btn) btn.click();
-    }
+    const valid = ['used', 'new', 'quiz', 'genre', 'history', 'archive'];
+    if (valid.includes(target)) setActiveTab(target);
   })();
 </script>
 <!--Start of Tawk.to Script-->
