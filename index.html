@@ -1627,7 +1627,7 @@ ${seenList}
           ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
       }
-      ctaHtml = `<div class="streaming-btns">${result._spotifyUrl ? `<a class="streaming-btn" href="${result._spotifyUrl}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>` : `<span class="streaming-btn" disabled>Apple Music</span>`}<a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="spotify" disabled>Spotify</a><a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="yt" disabled>YT Music</a></div>`;
+      ctaHtml = streamingBtnsHtml(result.artist, result.album, result._spotifyUrl);
     }
 
     let stockRecoHtml = '';
@@ -1674,9 +1674,6 @@ ${seenList}
     if (!result._streaming) {
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
-    }
-    if (result.type !== 'stock' && result.type !== 'reel' && result.artist && result.album) {
-      fetchStreamingLinks(result.artist, result.album, document.getElementById('quizContent'));
     }
 
   }
@@ -1856,7 +1853,7 @@ ${seenList}
   }
 
   // Spotify result cache (localStorage) — avoids repeated API calls for same album
-  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache';
+  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache_v2';
   const SPOTIFY_CACHE_MAX = 300;
   function _spotifyCacheKey(artist, album) {
     return (artist + '||' + album).toLowerCase().trim();
@@ -1883,56 +1880,44 @@ ${seenList}
     } catch(e) {}
   }
 
-  // 封面查詢：瀏覽器端直接打 iTunes（worker 的資料中心 IP 會被 iTunes 封鎖，故改前端呼叫）
+  // 封面查詢：走 Worker 的 /spotify-search（伺服器端 Spotify API，CORS 正確、附 24h 快取）
+  // 改用此法是因為手機瀏覽器直接打 iTunes 常因跨來源/ITP/逾時而失敗，導致沒封面、Apple Music 不能按
   async function fetchSpotifyCover(artist, album) {
     const cacheKey = _spotifyCacheKey(artist, album);
     const cached = _spotifyCacheGet(cacheKey);
-    if (cached) { console.log('[itunes] local cache hit', artist, '-', album); return cached; }
+    if (cached) { console.log('[cover] local cache hit', artist, '-', album); return cached; }
 
-    const normalize = s => (s || '').toLowerCase().replace(/[^a-z0-9　-鿿가-힯]/g, '');
-    const searchArtist = normalize(artist);
-
-    const _fetchItunes = async (country, timeoutMs) => {
-      const ctrl = new AbortController();
-      const tid = setTimeout(() => ctrl.abort(), timeoutMs);
-      try {
-        const res = await fetch(
-          `https://itunes.apple.com/search?term=${encodeURIComponent(artist + ' ' + album)}&media=music&entity=album&limit=5&country=${country}`,
-          { signal: ctrl.signal }
-        );
-        clearTimeout(tid);
-        if (!res.ok) return [];
-        return (await res.json()).results || [];
-      } catch(e) { clearTimeout(tid); return []; }
-    };
-
-    const _match = items => {
-      for (const item of items) {
-        const resultArtist = normalize(item.artistName);
-        const artistMatch = searchArtist.length > 2 &&
-          (resultArtist.includes(searchArtist) || searchArtist.includes(resultArtist.slice(0, Math.max(4, resultArtist.length - 2))));
-        if (artistMatch && item.artworkUrl100) {
-          return {
-            imageUrl: item.artworkUrl100.replace('100x100bb', '600x600bb'),
-            spotifyUrl: (item.collectionViewUrl || '').replace(/\/(us|jp)\//, '/tw/') || null
-          };
-        }
-      }
-      return null;
-    };
-
-    // US 優先（西方藝人英文名）→ JP fallback（日本藝人原文名）；TW 商店會把西方藝人名翻成中文導致比對失敗，故不用
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 8000);
     try {
-      let result = _match(await _fetchItunes('US', 7000));
-      if (!result) result = _match(await _fetchItunes('JP', 5000));
-      result = result || {};
-      console.log('[itunes]', result.imageUrl ? '✓' : '✗', artist, '-', album);
+      const res = await fetch(
+        `${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(tid);
+      const result = res.ok ? (await res.json()) : {};
+      console.log('[cover]', result.imageUrl ? '✓' : '✗', artist, '-', album);
       if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
       return result;
     } catch(e) {
-      console.warn('[itunes] exception:', e);
+      clearTimeout(tid);
+      console.warn('[cover] exception:', e);
       return {};
     }
+  }
+
+  // 串流按鈕：三個平台都用「一定可點」的連結（手機也保證能按）
+  // Spotify 若有 /spotify-search 回傳的專輯直連就用，否則用搜尋；Apple/YT 一律用搜尋連結
+  function streamingBtnsHtml(artist, album, spotifyUrl) {
+    const q = encodeURIComponent(`${artist || ''} ${album || ''}`.trim());
+    const apple = `https://music.apple.com/tw/search?term=${q}`;
+    const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
+    const yt = `https://music.youtube.com/search?q=${q}`;
+    return '<div class="streaming-btns">'
+      + `<a class="streaming-btn" href="${apple}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
+      + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
+      + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
+      + '</div>';
   }
 
   // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
@@ -2794,7 +2779,7 @@ ${seenList}
           ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
       }
-      ctaHtml = `<div class="streaming-btns">${result._spotifyUrl ? `<a class="streaming-btn" href="${result._spotifyUrl}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>` : `<span class="streaming-btn" disabled>Apple Music</span>`}<a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="spotify" disabled>Spotify</a><a class="streaming-btn" href="#" target="_blank" rel="noopener" data-platform="yt" disabled>YT Music</a></div>`;
+      ctaHtml = streamingBtnsHtml(result.artist, result.album, result._spotifyUrl);
     }
 
     const withImgs = all.filter(p => {
@@ -2839,9 +2824,6 @@ ${seenList}
     if (!result._streaming) {
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
-    }
-    if (!result.type && result.artist && result.album) {
-      fetchStreamingLinks(result.artist, result.album, document.getElementById('genreContent'));
     }
   }
 
