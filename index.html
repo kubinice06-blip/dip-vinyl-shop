@@ -2479,42 +2479,47 @@ ${seenList}
     });
   }
 
+  // 所有專輯介紹共用的鐵則：絕不擺爛、絕不寫免責句，不確定就從音樂本身寫
+  const NO_REFUSAL_RULE = `【絕不擺爛——最高優先】無論如何都要直接寫出一段完整、有自信的介紹。嚴禁出現任何免責、推託或反問，例如「我不確定」「無法確認」「不太了解」「不夠確定」「不想冒險編造」「如果你能提供更多背景／資訊」「我很樂意給你更準確的推薦」這類句子，一個字都不能出現。若你對藝人的生平、來歷、廠牌、年代等具體事實沒把握，就直接略過那些事實，改從音樂本身（曲風、聲音質地、編制、節奏、情緒、聆聽感受）自然地描述——寫得篤定，不要透露你不確定，但也不要編造假的具體事實（假地名、假廠牌、假年份）。`;
+
   async function getGpReason(artist, album, genre, selectedArtists, targetEl = null) {
     const genreLabel = GENRE_DATA[genre]?.label || genre;
     const prompt = `專輯：${artist} — ${album}（${genreLabel} 領域）
 
 用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容。
 
-【必須包含的資訊】
+${NO_REFUSAL_RULE}
+
+【若你確定，盡量寫出】
 - 藝人來自哪裡（城市或國家）
-- 這張專輯的聲音和做法是什麼（具體說出樂器、技術或音樂方向）
-- 它在 ${genreLabel} 領域為何值得注意（不能說「具有代表性」，要說具體原因）
+- 這張專輯的聲音和做法（具體樂器、技術或音樂方向）
+- 它在 ${genreLabel} 領域為何值得聽（不能說「具有代表性」，要說具體原因）
 
 【壞例子，禁止這樣寫】
-「這張專輯以嘻哈為基礎，融入多種元素，其在音樂領域的定位強調器樂與和聲的整合。」→ 沒有地名、沒有具體聲音、全是廢話。
+「這張專輯以嘻哈為基礎，融入多種元素，其在音樂領域的定位強調器樂與和聲的整合。」→ 全是廢話。
 
 【好例子，朝這個方向寫】
 「日本大阪的器樂製作人，以木琴、鋼琴與鼓機構築溫暖的爵士嘻哈聲景，全張以現場演奏取代取樣。在日本器樂嘻哈圈中屬較早以純演奏方式建立個人語彙的案例。」
 
-禁止：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
+禁止用語：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
 整段 80-120 字，只回傳文字，不含格式符號。`;
     return streamText([{ role: 'user', content: prompt }], targetEl);
   }
 
-  // 直接來一首的說明（不依賴特定類型，沿用同樣的反廢話規則）
+  // 直接來一首的說明（不依賴特定類型）
   async function getRandomReason(artist, album, targetEl = null) {
     const prompt = `專輯：${artist} — ${album}
 
 用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容。
 
-【必須包含的資訊】
+${NO_REFUSAL_RULE}
+
+【若你確定，盡量寫出】
 - 藝人來自哪裡（城市或國家）
-- 這張專輯屬於什麼曲風、聲音和做法是什麼（具體說出樂器、技術或音樂方向）
+- 這張專輯屬於什麼曲風、聲音和做法（具體樂器、技術或音樂方向）
 - 它為何值得一聽（不能說「具有代表性」，要說具體原因）
 
-【最重要——防止亂編】如果你無法確定這位藝人或這張作品的真實身分，絕對禁止編造國籍、來歷、廠牌或任何具體事實；寧可寫得概括，也絕對不要寫錯。
-
-禁止：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
+禁止用語：「你」「融合多種元素」「具有代表性」「層次豐富」「傑作」「必聽」「里程碑」「獨樹一格」
 整段 80-120 字，只回傳文字，不含格式符號。`;
     return streamText([{ role: 'user', content: prompt }], targetEl);
   }
@@ -2535,7 +2540,9 @@ ${seenList}
       const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
-      const stockPrompt = `用兩到三句繁體中文介紹 ${pick.artist} 的《${pick.name || pick.album || ''}》。語氣像唱片行熟客在推薦：說清楚藝人來自哪裡、這張專輯的聲音和做法是什麼。只能說這張專輯本身有的東西，不能亂猜或延伸。禁止：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」。只回傳文字，不含格式符號。`;
+      const stockPrompt = `用兩到三句繁體中文介紹 ${pick.artist} 的《${pick.name || pick.album || ''}》。語氣像唱片行熟客在推薦：若確定就說清楚藝人來自哪裡、這張專輯的聲音和做法是什麼。
+${NO_REFUSAL_RULE}
+禁止：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」。只回傳文字，不含格式符號。`;
       const reason = await streamText([{ role: 'user', content: stockPrompt }], reasonEl);
       lastGpResult.reason = reason;
       if (reason) _saveReasonWords(reason);
@@ -2557,8 +2564,8 @@ ${seenList}
         const genreHint = pick.genre ? `已知曲風：${pick.genre}。` : '';
         const moodHint = (Array.isArray(pick.mood) && pick.mood.length) ? `氛圍：${pick.mood.join('、')}。` : '';
         const reelPrompt = `用三到四句繁體中文介紹這張黑膠：${pick.artist}《${pick.title || ''}》。${genreHint}${moodHint}
-【最重要——防止亂編】如果你無法確定這位藝人或這張作品的真實身分，絕對禁止編造國籍、來歷、生平、廠牌或任何具體事實。這種情況下，只依據上面已知的曲風與氛圍，概括描述這類音樂的聲音質地與聆聽感受即可。寧可寫得概括，也絕對不要寫錯。
-不要硬說藝人來自哪裡；只有在你真的確定時才提及背景。
+${NO_REFUSAL_RULE}
+不要硬說藝人來自哪裡；只有在你真的確定時才提及背景，沒把握就改寫上面已知的曲風與氛圍、聲音質地與聆聽感受。
 禁止用語：「融合多種元素」「層次豐富」「獨樹一格」「具有代表性」。
 只回傳文字，不含格式符號。`;
         reason = await streamText([{ role: 'user', content: reelPrompt }], reasonEl);
