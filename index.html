@@ -389,6 +389,14 @@
     .homehub-card.feature .homehub-card-desc { color: #bbb; }
     .homehub-card.feature:hover { background: #000; }
 
+    /* 專輯三維評分（五顆星） */
+    .album-ratings { display: flex; flex-direction: column; gap: 7px; max-width: 280px; margin: 16px auto 4px; }
+    .rating-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .rating-label { font-size: 10px; letter-spacing: 0.1em; color: var(--gray); text-transform: uppercase; white-space: nowrap; }
+    .rating-stars { font-size: 13px; letter-spacing: 2px; line-height: 1; }
+    .rating-stars .on { color: var(--black); }
+    .rating-stars .off { color: var(--line); }
+
     /* 遊戲畫面的「返回首頁」列 */
     .hub-back-btn {
       display: block; width: 100%; text-align: left;
@@ -1663,6 +1671,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
@@ -1675,7 +1684,7 @@ ${seenList}
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
-
+    renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'));
   }
 
   function showShareToast(msg) {
@@ -1918,6 +1927,29 @@ ${seenList}
       + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
       + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
       + '</div>';
+  }
+
+  // 專輯三維評分（五顆星）
+  function ratingStars(n) {
+    n = Math.max(0, Math.min(5, Math.round(Number(n) || 0)));
+    let s = '';
+    for (let i = 1; i <= 5; i++) s += `<span class="${i <= n ? 'on' : 'off'}">★</span>`;
+    return s;
+  }
+  function albumRatingsHtml(r) {
+    const row = (label, n) => `<div class="rating-row"><span class="rating-label">${label}</span><span class="rating-stars">${ratingStars(n)}</span></div>`;
+    return `<div class="album-ratings">${row('冷門度', r.obscurity)}${row('經典度', r.classic)}${row('入耳難易度', r.accessibility)}</div>`;
+  }
+  // 從 Worker 取評分（KV 永久快取，同張碟星數一致），填進結果頁插槽
+  async function renderAlbumRatings(artist, album, containerEl) {
+    if (!containerEl || !artist || !album) return;
+    const slot = containerEl.querySelector('.album-ratings-slot');
+    if (!slot) return;
+    try {
+      const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
+      const r = res.ok ? await res.json() : {};
+      if (r && r.obscurity) slot.innerHTML = albumRatingsHtml(r);
+    } catch (e) {}
   }
 
   // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
@@ -2820,6 +2852,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
@@ -2832,6 +2865,7 @@ ${seenList}
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
     }
+    renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'));
   }
 
   async function shareGpResult() {
