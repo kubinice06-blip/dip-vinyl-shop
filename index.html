@@ -406,6 +406,43 @@
       position: sticky; top: 0; z-index: 20; transition: color 0.15s;
     }
     .hub-back-btn:hover { color: var(--black); }
+
+    /* 會員狀態（頂欄） */
+    .auth-status { display: flex; align-items: center; gap: 8px; }
+    .auth-name { font-size: 10px; letter-spacing: 0.06em; color: var(--black); max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .auth-btn { background: none; border: 1px solid var(--black); font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; padding: 4px 9px; cursor: pointer; color: var(--black); text-transform: uppercase; }
+    .auth-btn:hover { background: var(--black); color: #fff; }
+    @media (max-width: 560px) { .topbar-tag { display: none; } }
+
+    /* 收進卡冊按鈕 */
+    .quiz-collect-btn { display: block; width: 100%; margin: 0 0 10px; padding: 13px; background: #111; color: #fff; border: none; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; cursor: pointer; transition: opacity 0.15s; }
+    .quiz-collect-btn:hover { opacity: 0.85; }
+    .quiz-collect-btn:disabled { background: #fff; color: var(--gray); border: 1px solid var(--line); cursor: default; }
+
+    /* 卡冊 */
+    .collect-empty { padding: 48px 24px; text-align: center; }
+    .collect-empty-sub { font-size: 11px; color: var(--gray); line-height: 1.8; margin-bottom: 24px; }
+    .auth-btn-lg { background: #111; color: #fff; border: none; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 12px 28px; cursor: pointer; }
+    .collect-header { display: flex; align-items: baseline; justify-content: space-between; padding: 20px; border-bottom: 1px solid var(--line); }
+    .collect-title { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; }
+    .collect-count { font-size: 11px; color: var(--gray); }
+    .collect-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); }
+    .collect-card { background: #fff; padding: 14px; }
+    .cc-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 10px; }
+    .cc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cc-nocover { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--line); }
+    .cc-count { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,0.8); color: #fff; font-size: 10px; padding: 2px 7px; border-radius: 10px; }
+    .cc-rarity { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; font-weight: 700; }
+    .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
+    .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
+    /* 稀有度配色 */
+    .collect-card.rarity-legendary { box-shadow: inset 0 0 0 2px #c9a227; }
+    .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
+    .collect-card.rarity-rare { box-shadow: inset 0 0 0 2px #9a9a9a; }
+    .rarity-legendary .cc-rarity { color: #b8901f; }
+    .rarity-epic .cc-rarity { color: #7a3fb0; }
+    .rarity-rare .cc-rarity { color: #777; }
+    .rarity-common .cc-rarity { color: var(--gray); }
   </style>
 </head>
 <body>
@@ -422,7 +459,8 @@
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
       </svg>
     </a>
-    <span style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray);">黑膠唱片</span>
+    <span class="topbar-tag" style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray);">黑膠唱片</span>
+    <span id="authStatus" class="auth-status"></span>
   </div>
 </header>
 
@@ -458,6 +496,13 @@
       <div>
         <div class="homehub-card-name">直接來一張</div>
         <div class="homehub-card-desc">隨機抽一張你沒聽過的</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+    <button class="homehub-card" data-go="collection">
+      <div>
+        <div class="homehub-card-name">我的卡冊</div>
+        <div class="homehub-card-desc">收藏你抽到的專輯卡，越冷門經典越稀有。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
@@ -592,6 +637,14 @@
   </div>
 </div>
 
+<!-- 我的卡冊 modal -->
+<div class="quiz-modal" id="collectionModal">
+  <div class="quiz-inner">
+    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
+    <div id="collectionContent"></div>
+  </div>
+</div>
+
 
 <footer>
   <div class="f-logo">dip vinyl shop</div>
@@ -600,7 +653,8 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   const app = initializeApp({
     apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
@@ -613,6 +667,164 @@
 
   const db = getFirestore(app);
   let all = [], searchQ = '', activeGenre = 'all';
+
+  // ───────── 會員 + 卡牌收藏 ─────────
+  const auth = getAuth(app);
+  const googleProvider = new GoogleAuthProvider();
+  let currentUser = null;
+
+  onAuthStateChanged(auth, (user) => {
+    currentUser = user;
+    updateAuthUI();
+    // 若正在看卡冊，登入狀態改變時重畫
+    if (document.querySelector('.main-tab.active')?.dataset.tab === 'collection') {
+      renderCollection();
+    }
+  });
+
+  function updateAuthUI() {
+    const el = document.getElementById('authStatus');
+    if (!el) return;
+    if (currentUser) {
+      const name = currentUser.displayName || '會員';
+      el.innerHTML = `<span class="auth-name" title="${currentUser.email || ''}">${name}</span>` +
+        `<button class="auth-btn" id="signOutBtn">登出</button>`;
+      el.querySelector('#signOutBtn').addEventListener('click', () => signOut(auth));
+    } else {
+      el.innerHTML = `<button class="auth-btn" id="signInBtn">註冊 / 登入</button>`;
+      el.querySelector('#signInBtn').addEventListener('click', signInWithGoogle);
+    }
+  }
+
+  async function signInWithGoogle() {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      showShareToast && showShareToast('登入成功 ✓');
+    } catch (e) {
+      console.warn('[auth] sign-in failed', e?.code || e);
+      if (e?.code !== 'auth/popup-closed-by-user' && e?.code !== 'auth/cancelled-popup-request') {
+        showShareToast && showShareToast('登入失敗，請再試一次');
+      }
+    }
+  }
+
+  // 卡片 ID：與 Worker /album-rating 的 key 同規則
+  function cardIdOf(artist, album) {
+    return ((artist || '') + '|' + (album || '')).toLowerCase().trim();
+  }
+
+  // 收進卡冊（已收藏則張數 +1）
+  async function addCardToCollection(card) {
+    if (!currentUser) return 'need-login';
+    const id = cardIdOf(card.artist, card.album);
+    if (!id || id === '|') return false;
+    const ref = doc(db, 'collections', currentUser.uid, 'cards', id);
+    try {
+      const snap = await getDoc(ref);
+      if (snap.exists()) {
+        await setDoc(ref, { count: (snap.data().count || 1) + 1, lastObtainedAt: Date.now() }, { merge: true });
+        return 'dup';
+      }
+      await setDoc(ref, {
+        cardId: id,
+        artist: card.artist || '',
+        album: card.album || '',
+        coverUrl: card._coverUrl || card.coverUrl || '',
+        count: 1,
+        obtainedAt: Date.now()
+      });
+      return 'new';
+    } catch (e) {
+      console.warn('[collection] save failed', e);
+      return false;
+    }
+  }
+
+  async function getMyCollection() {
+    if (!currentUser) return [];
+    try {
+      const snap = await getDocs(collection(db, 'collections', currentUser.uid, 'cards'));
+      return snap.docs.map(d => d.data()).sort((a, b) => (b.obtainedAt || 0) - (a.obtainedAt || 0));
+    } catch (e) {
+      console.warn('[collection] load failed', e);
+      return [];
+    }
+  }
+
+  // 稀有度：三數值總分 → 比例分數 → 等級（與藍本一致，方便日後加數值）
+  function rarityFromRatings(r) {
+    if (!r || !r.obscurity) return null;
+    const keys = ['obscurity', 'classic', 'accessibility'];
+    const sum = keys.reduce((s, k) => s + (Number(r[k]) || 0), 0);
+    const score = sum / (keys.length * 5);
+    if (score >= 0.87) return { tier: 'legendary', label: '傳說', sum };
+    if (score >= 0.73) return { tier: 'epic', label: '史詩', sum };
+    if (score >= 0.60) return { tier: 'rare', label: '稀有', sum };
+    return { tier: 'common', label: '普通', sum };
+  }
+
+  async function renderCollection() {
+    const el = document.getElementById('collectionContent');
+    if (!el) return;
+    if (!currentUser) {
+      el.innerHTML = `<div class="collect-empty">
+        <div class="quiz-question" style="margin-bottom:10px;">登入後即可收藏卡牌</div>
+        <div class="collect-empty-sub">用 Google 一鍵註冊，你抽到的專輯卡會存進雲端卡冊，換手機也在。</div>
+        <button class="auth-btn-lg" id="collSignIn">註冊 / 登入</button>
+      </div>`;
+      el.querySelector('#collSignIn').addEventListener('click', signInWithGoogle);
+      return;
+    }
+    el.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">載入卡冊…</div></div>`;
+    const cards = await getMyCollection();
+    if (!cards.length) {
+      el.innerHTML = `<div class="collect-empty">
+        <div class="quiz-question" style="margin-bottom:10px;">卡冊還是空的</div>
+        <div class="collect-empty-sub">去「直接來一張」或「類型挑片」抽幾張，按「收進卡冊」就會出現在這裡。</div>
+      </div>`;
+      return;
+    }
+    // 取每張卡的評分以算稀有度（KV 快取，很快）
+    const rated = await Promise.all(cards.map(async (c) => {
+      let rarity = null;
+      try {
+        const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
+        if (res.ok) rarity = rarityFromRatings(await res.json());
+      } catch (e) {}
+      return { ...c, rarity };
+    }));
+    const order = { legendary: 4, epic: 3, rare: 2, common: 1 };
+    rated.sort((a, b) => (order[b.rarity?.tier] || 0) - (order[a.rarity?.tier] || 0) || (b.obtainedAt || 0) - (a.obtainedAt || 0));
+    const cardsHtml = rated.map((c) => {
+      const tier = c.rarity?.tier || 'common';
+      const label = c.rarity?.label || '？';
+      const cover = c.coverUrl ? `<img src="${c.coverUrl}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
+      return `<div class="collect-card rarity-${tier}">
+        <div class="cc-thumb">${cover}${c.count > 1 ? `<span class="cc-count">×${c.count}</span>` : ''}</div>
+        <div class="cc-rarity">${label}</div>
+        <div class="cc-artist">${c.artist || ''}</div>
+        <div class="cc-album">${c.album || ''}</div>
+      </div>`;
+    }).join('');
+    el.innerHTML = `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
+      <div class="collect-grid">${cardsHtml}</div>`;
+  }
+
+  // 「收進卡冊」按鈕（結果頁，委派）
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('[data-collect]');
+    if (!btn) return;
+    if (!currentUser) { signInWithGoogle(); return; }
+    const artist = btn.dataset.artist || '';
+    const album = btn.dataset.album || '';
+    const cover = btn.closest('.quiz-result')?.querySelector('.quiz-result-cover')?.getAttribute('src') || '';
+    btn.disabled = true;
+    const r = await addCardToCollection({ artist, album, _coverUrl: cover });
+    if (r === 'new') btn.textContent = '✓ 已收進卡冊';
+    else if (r === 'dup') btn.textContent = '✓ 已在卡冊（+1）';
+    else if (r === 'need-login') { signInWithGoogle(); btn.disabled = false; }
+    else { btn.textContent = '收藏失敗，再試一次'; btn.disabled = false; }
+  });
 
   function logApiUsage(route, tokens) {
     // temporarily disabled
@@ -880,7 +1092,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'genreModal', 'historyModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'genreModal', 'historyModal', 'collectionModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -926,6 +1138,11 @@
     if (tab === 'history') {
       document.getElementById('historyModal').classList.add('open');
       renderHistorySection(document.getElementById('historyContent'));
+      return;
+    }
+    if (tab === 'collection') {
+      document.getElementById('collectionModal').classList.add('open');
+      renderCollection();
       return;
     }
 
@@ -1675,6 +1892,7 @@ ${seenList}
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
+        <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
         ${quizAnotherCount < QUIZ_ANOTHER_MAX ? `<button class="quiz-another-btn" data-quiz-action="another">再一張${QUIZ_ANOTHER_MAX - quizAnotherCount > 1 ? `（${QUIZ_ANOTHER_MAX - quizAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
@@ -2856,6 +3074,7 @@ ${seenList}
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
+        <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
         ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>
@@ -2978,8 +3197,8 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'genre', 'random', 'history']
-      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive'];
+      ? ['home', 'quiz', 'genre', 'random', 'history', 'collection']
+      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive', 'collection'];
     setActiveTab(valid.includes(target) ? target : 'home');
   })();
 
