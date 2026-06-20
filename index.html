@@ -463,6 +463,9 @@
     .cd-stars { margin: 14px 0 4px; }
     .cd-desc { font-size: 12px; line-height: 1.9; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 12px 0 16px; }
     .cd-streaming { margin-bottom: 16px; }
+    .cd-share { width: 100%; padding: 13px; background: #111; color: #fff; border: none; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; cursor: pointer; margin-bottom: 10px; }
+    .cd-share:hover { opacity: 0.85; }
+    .cd-share:disabled { opacity: 0.6; cursor: default; }
     .cd-delete { width: 100%; padding: 11px; background: #fff; color: #c0392b; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; cursor: pointer; }
     .cd-delete:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
   </style>
@@ -891,6 +894,7 @@
       <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       <div class="cd-streaming" id="cdStreaming"></div>
+      <button class="cd-share" data-cd-share="${c.cardId}">✈ 分享卡片</button>
       <button class="cd-delete" data-cd-delete="${c.cardId}">從卡冊刪除這張</button>
     `;
     ov.classList.add('open');
@@ -933,6 +937,8 @@
     const card = e.target.closest('.collect-card[data-card-id]');
     if (card) { openCardDetail(card.dataset.cardId); return; }
     if (e.target.closest('[data-cd-close]')) { closeCardDetail(); return; }
+    const sh = e.target.closest('[data-cd-share]');
+    if (sh) { shareCard(sh.dataset.cdShare); return; }
     const del = e.target.closest('[data-cd-delete]');
     if (del) { deleteCard(del.dataset.cdDelete); return; }
     const ov = document.getElementById('cardDetailOverlay');
@@ -3297,6 +3303,128 @@ ${seenList}
     ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
     ctx.textAlign = 'center'; ctx.fillText('dipvinyl.tw', W / 2, H - 52);
     return canvas;
+  }
+
+  const RARITY_COLOR = { legendary: '#b8901f', epic: '#7a3fb0', rare: '#777777', common: '#999999' };
+
+  // 卡牌分享圖（比照 buildGpCanvas，加上稀有度與三維星星）
+  async function buildCardCanvas(card, desc) {
+    const W = 1080, H = 1920, PAD = 72, COVER_SIZE = 760;
+    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 250;
+    const tier = card.rarity?.tier || 'common';
+    const tColor = RARITY_COLOR[tier];
+    const canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
+    ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
+    // 頭部：稀有度
+    ctx.fillStyle = tColor; ctx.font = '700 50px "Space Mono", monospace';
+    ctx.fillText(card.rarity?.label || '收藏', W / 2, 92);
+    ctx.fillStyle = '#999999'; ctx.font = '400 26px "Space Mono", monospace';
+    ctx.fillText('dip vinyl shop · 卡冊', W / 2, 142);
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, 176); ctx.lineTo(W - PAD, 176); ctx.stroke();
+    // 封面
+    ctx.fillStyle = '#f0f0f0'; ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
+    if (card.coverUrl) {
+      try {
+        const img = new Image(); img.crossOrigin = 'anonymous';
+        await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = card.coverUrl; });
+        ctx.save(); ctx.beginPath(); ctx.rect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE); ctx.clip();
+        const aspect = img.naturalWidth / img.naturalHeight;
+        let dw = COVER_SIZE, dh = COVER_SIZE / aspect;
+        if (dh < COVER_SIZE) { dh = COVER_SIZE; dw = COVER_SIZE * aspect; }
+        ctx.drawImage(img, COVER_X + (COVER_SIZE - dw) / 2, COVER_Y + (COVER_SIZE - dh) / 2, dw, dh);
+        ctx.restore();
+      } catch (e) {}
+    }
+    // 稀有度外框
+    ctx.strokeStyle = tColor; ctx.lineWidth = tier === 'legendary' ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
+    ctx.strokeRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
+
+    // 藝人 / 專輯
+    let y = COVER_Y + COVER_SIZE + 56;
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#888888'; ctx.font = '400 32px "Space Mono", monospace';
+    ctx.fillText(_fitText(ctx, card.artist || '', W - PAD * 2, '400 32px "Space Mono", monospace'), W / 2, y); y += 56;
+    let albumSz = 50; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
+    while (ctx.measureText(card.album || '').width > W - PAD * 2 && albumSz > 30) { albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`; }
+    ctx.fillStyle = '#111111';
+    ctx.fillText(_fitText(ctx, card.album || '', W - PAD * 2, `700 ${albumSz}px "Space Mono", monospace`), W / 2, y); y += 64;
+
+    // 三維星星
+    const rows = [['冷門度', card.ratings?.obscurity], ['經典度', card.ratings?.classic], ['入耳難度', card.ratings?.accessibility]];
+    rows.forEach(([lab, val]) => {
+      const n = Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
+      ctx.font = '400 30px "Space Mono", monospace'; const labStr = lab + '   ';
+      const lw = ctx.measureText(labStr).width;
+      ctx.font = '400 36px "Space Mono", monospace'; const sw = ctx.measureText('★★★★★').width;
+      const startX = (W - (lw + sw)) / 2;
+      ctx.textAlign = 'left';
+      ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(labStr, startX, y);
+      ctx.font = '400 36px "Space Mono", monospace';
+      ctx.fillStyle = '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
+      const fw = ctx.measureText(filled).width;
+      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(5 - n), startX + lw + fw, y);
+      y += 56;
+    });
+    y += 18;
+
+    // 介紹框
+    const reasonText = (desc || '').slice(0, 200);
+    if (reasonText) {
+      const BOX_PAD = 38, LH_R = 44;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+      ctx.font = '400 29px "Space Mono", monospace';
+      const boxH = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2) * LH_R + BOX_PAD * 2;
+      ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
+      ctx.fillStyle = '#444444';
+      wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
+      ctx.textBaseline = 'middle';
+    }
+
+    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
+    ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
+    ctx.textAlign = 'center'; ctx.fillText('dipvinyl.tw', W / 2, H - 52);
+    return canvas;
+  }
+
+  // 單行截斷到指定寬度，超過加省略號
+  function _fitText(ctx, text, maxW, font) {
+    ctx.font = font;
+    if (ctx.measureText(text).width <= maxW) return text;
+    let t = text;
+    while (t.length > 1 && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
+    return t + '…';
+  }
+
+  async function shareCard(cardId) {
+    const card = _collCache.find(c => c.cardId === cardId);
+    if (!card) return;
+    const descEl = document.getElementById('cdDesc');
+    let desc = descEl ? descEl.textContent.trim() : '';
+    if (desc === '載入介紹…' || desc === '（暫無介紹）') desc = '';
+    const btn = document.querySelector('[data-cd-share]');
+    if (btn) { btn.disabled = true; btn.textContent = '製作圖片…'; }
+    try {
+      const canvas = await buildCardCanvas(card, desc);
+      const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.9));
+      const file = new File([blob], 'dip-card.jpg', { type: 'image/jpeg' });
+      const shareUrlStr = 'https://dipvinyl.tw';
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: `${card.artist} — ${card.album}`, text: '我在 dip 卡冊抽到這張 →', url: shareUrlStr });
+      } else {
+        // 後備：下載圖片
+        const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'dip-card.jpg'; a.click();
+        showShareToast && showShareToast('已下載卡片圖');
+      }
+    } catch (e) {
+      if (e?.name !== 'AbortError') { console.warn('[card] share failed', e); showShareToast && showShareToast('分享失敗'); }
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = '✈ 分享卡片'; }
+    }
   }
 
   // Hash-based routing — runs once on page load
