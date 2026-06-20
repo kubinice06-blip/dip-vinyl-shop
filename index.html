@@ -3043,6 +3043,8 @@ ${NO_REFUSAL_RULE}
     let batchAttempt = 0;
     // 經典模式：約 3% 機率改推「公認殿堂神作」（偶爾出 OK Computer 這種），抽到即「殿堂」銀卡，可調
     const classicMode = Math.random() < 0.03;
+    // 流行模式：約 5% 機率改推「流行常見盤」（大眾耳熟能詳的芭樂主流），分數天生低→多半普通卡，可調
+    const popularMode = !classicMode && Math.random() < 0.05;
     while (true) {
     try {
       const genreInfo = gpIsRandom ? null : GENRE_DATA[gpGenre];
@@ -3139,11 +3141,23 @@ ${seenList}
 直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
 [{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
+      // 流行模式：破例推大眾耳熟能詳的流行常見盤（與冷門原則相反，但不是「殿堂神作」那種樂評里程碑）
+      const promptPopular = `你是一位黑膠唱片店的選片顧問。這次破例推薦「大眾耳熟能詳的流行常見盤」——${gpIsRandom ? '橫跨任何曲風、' : `屬於 ${genreInfo.label} 領域、`}街上人人都聽過、串流播放量極高的主流芭樂／流行專輯（例如 Ed Sheeran、Bruno Mars、Adele、Taylor Swift、周杰倫那種大紅大紫等級）。
+${seenList}
+- 推薦 ${N} 張不同藝人的超主流流行專輯，依大眾知名度由高到低排序
+- 重點是「紅、好聽、好入耳」，不必是樂評公認的經典神作
+- 藝人名稱與專輯名稱必須完全正確、一律用原文
+- 只推薦你 100% 確定真實存在、在 Apple Music / Spotify 找得到的作品
+- ${N} 張要彼此不同的藝人
+
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+
       let verified = null;
       const retryNote = failedAlbums.length
         ? `\n以下封面都找不到，請整批換成別的（不同藝人、不同專輯）：\n${failedAlbums.join('\n')}\n`
         : '';
-      const usePrompt = (classicMode ? promptClassic : (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep))) + retryNote;
+      const usePrompt = (classicMode ? promptClassic : (popularMode ? promptPopular : (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep)))) + retryNote;
 
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
