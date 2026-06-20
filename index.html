@@ -714,9 +714,11 @@
   const auth = getAuth(app);
   const googleProvider = new GoogleAuthProvider();
   let currentUser = null;
+  let authReady = false; // Firebase 首次回報登入狀態前為 false
 
   onAuthStateChanged(auth, (user) => {
     currentUser = user;
+    authReady = true;
     updateAuthUI();
     // 若正在看卡冊，登入狀態改變時重畫（卡冊不是 main-tab，故用 currentView 判斷，
     // 才能在直接重新整理卡冊頁、Firebase 稍後才回復登入狀態時補上重畫）
@@ -842,6 +844,11 @@
   async function renderCollection() {
     const el = document.getElementById('collectionContent');
     if (!el) return;
+    // auth 尚未就緒：先顯示載入動畫，避免閃一下登入畫面（Firebase 回復登入狀態後會再重畫）
+    if (!authReady) {
+      el.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">載入中…</div></div>`;
+      return;
+    }
     if (!currentUser) {
       el.innerHTML = `<div class="collect-empty">
         <div class="quiz-question" style="margin-bottom:10px;">登入後即可收藏卡牌</div>
