@@ -825,16 +825,21 @@
     return { tier, label: labels[tier] || tier, sum: null };
   }
 
-  // 稀有度：三項評分總分（3–15）→ 五等級。門檻為 config，可依實際分布調整。
+  // 稀有度：冷門度降權版。卡池幾乎全是冷門盤、obscurity 近乎常數（多半 4–5），
+  // 拿它當主力會讓所有卡卡在同一格（之前全是罕見）。改由「經典度＋難度」決定，
+  // 冷門度只在「極冷門(=5)」時 +1 加成。score 範圍 2–11。門檻為 config，可再調。
   // 順位（高→低）：殿堂(銀,無數值) > 傳奇 > 史詩 > 罕見 > 稀有 > 普通
   function rarityFromRatings(r) {
     if (!r || !r.obscurity) return null;
-    const sum = (Number(r.obscurity) || 0) + (Number(r.classic) || 0) + (Number(r.accessibility) || 0);
-    if (sum >= 14) return { tier: 'legendary', label: '傳奇', sum };
-    if (sum >= 12) return { tier: 'epic', label: '史詩', sum };
-    if (sum >= 10) return { tier: 'uncommon', label: '罕見', sum };
-    if (sum >= 8)  return { tier: 'rare', label: '稀有', sum };
-    return { tier: 'common', label: '普通', sum };
+    const classic = Number(r.classic) || 0;
+    const accessibility = Number(r.accessibility) || 0;
+    const obscurity = Number(r.obscurity) || 0;
+    const score = classic + accessibility + (obscurity >= 5 ? 1 : 0);
+    if (score >= 10) return { tier: 'legendary', label: '傳奇', sum: score };
+    if (score >= 8)  return { tier: 'epic', label: '史詩', sum: score };
+    if (score >= 6)  return { tier: 'uncommon', label: '罕見', sum: score };
+    if (score >= 4)  return { tier: 'rare', label: '稀有', sum: score };
+    return { tier: 'common', label: '普通', sum: score };
   }
 
   let _collCache = [];
