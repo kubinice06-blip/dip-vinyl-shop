@@ -435,7 +435,10 @@
     .cc-rarity { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; font-weight: 700; }
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
-    /* 稀有度配色：傳奇橘 史詩紫 罕見綠 稀有藍 普通灰 */
+    /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 罕見綠 稀有藍 普通灰 */
+    .collect-card.rarity-hall { box-shadow: inset 0 0 0 3px #c0c4cc, inset 0 0 0 6px #eef0f2; }
+    .rarity-hall .cc-rarity { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .cd-rarity.rarity-hall { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
     .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
@@ -457,6 +460,7 @@
     .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
+    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
@@ -776,7 +780,8 @@
         coverUrl: card._coverUrl || card.coverUrl || '',
         desc: card.desc || '',
         count: 1,
-        obtainedAt: Date.now()
+        obtainedAt: Date.now(),
+        ...(card.hall ? { hall: true } : {})
       });
       return 'new';
     } catch (e) {
@@ -804,8 +809,19 @@
     } catch (e) { return null; }
   }
 
+  // 手動指定稀有度（key = 藝人小寫，比對所有同藝人的卡）。優先於數值計算。
+  const RARITY_OVERRIDES = {
+    'dollar brand': 'epic',
+  };
+  function rarityOverrideOf(card) {
+    const tier = RARITY_OVERRIDES[(card.artist || '').toLowerCase().trim()];
+    if (!tier) return null;
+    const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
+    return { tier, label: labels[tier] || tier, sum: null };
+  }
+
   // 稀有度：三項評分總分（3–15）→ 五等級。門檻為 config，可依實際分布調整。
-  // 順位（高→低）：傳奇 > 史詩 > 罕見 > 稀有 > 普通
+  // 順位（高→低）：殿堂(銀,無數值) > 傳奇 > 史詩 > 罕見 > 稀有 > 普通
   function rarityFromRatings(r) {
     if (!r || !r.obscurity) return null;
     const sum = (Number(r.obscurity) || 0) + (Number(r.classic) || 0) + (Number(r.accessibility) || 0);
@@ -819,7 +835,7 @@
   let _collCache = [];
   let collSort = 'rarity'; // 'rarity' | 'new' | 'artist'
   let collGroup = false;
-  const RARITY_ORDER = { legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
+  const RARITY_ORDER = { hall: 6, legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
 
   async function renderCollection() {
     const el = document.getElementById('collectionContent');
@@ -856,7 +872,10 @@
         if (ov.classic) ratings.classic = ov.classic;
         if (ov.accessibility) ratings.accessibility = ov.accessibility;
       }
-      return { ...c, ratings, rarity: rarityFromRatings(ratings), descOverride: ov?.desc || null };
+      const rarity = c.hall
+        ? { tier: 'hall', label: '殿堂', sum: null }
+        : (rarityOverrideOf(c) || rarityFromRatings(ratings));
+      return { ...c, ratings, rarity, descOverride: ov?.desc || null };
     }));
     drawCollection();
   }
@@ -893,8 +912,8 @@
 
     let body;
     if (collGroup) {
-      const tiers = ['legendary', 'epic', 'uncommon', 'rare', 'common'];
-      const labels = { legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
+      const tiers = ['hall', 'legendary', 'epic', 'uncommon', 'rare', 'common'];
+      const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
       body = tiers.map(t => {
         const items = rated.filter(c => (c.rarity?.tier || 'common') === t);
         if (!items.length) return '';
@@ -921,7 +940,7 @@
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
       <div class="cd-artist">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
-      <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings) : ''}</div>
+      <div class="cd-stars">${(c.ratings && tier !== 'hall') ? albumRatingsHtml(c.ratings) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       <div class="cd-streaming" id="cdStreaming"></div>
       <button class="cd-share" data-cd-share="${c.cardId}">✈ 分享卡片</button>
@@ -994,7 +1013,7 @@
     let drawDesc = (resultEl?.querySelector('.quiz-result-reason')?.textContent || '').trim();
     if (drawDesc === '輸入中…' || drawDesc === '輸入中...') drawDesc = '';
     btn.disabled = true;
-    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc: drawDesc });
+    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc: drawDesc, hall: btn.dataset.hall === '1' });
     if (r === 'new') btn.textContent = '✓ 已收進卡冊';
     else if (r === 'dup') btn.textContent = '✓ 已在卡冊（+1）';
     else if (r === 'need-login') { signInWithGoogle(); btn.disabled = false; }
@@ -3005,8 +3024,8 @@ ${NO_REFUSAL_RULE}
     let overloadCount = 0;
     let failedAlbums = [];
     let batchAttempt = 0;
-    // 經典模式：約 10% 機率改推「公認殿堂神作」（偶爾出 OK Computer 這種），可調
-    const classicMode = Math.random() < 0.10;
+    // 經典模式：約 3% 機率改推「公認殿堂神作」（偶爾出 OK Computer 這種），抽到即「殿堂」銀卡，可調
+    const classicMode = Math.random() < 0.03;
     while (true) {
     try {
       const genreInfo = gpIsRandom ? null : GENRE_DATA[gpGenre];
@@ -3170,6 +3189,7 @@ ${seenList}
       await showGpResult({
         artist: verified.rec.artist, album: verified.rec.album, reason: '',
         _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true,
+        _hall: classicMode,
       });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
       const reason = gpIsRandom
@@ -3258,11 +3278,11 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        <div class="album-ratings-slot"></div>
+        ${result._hall ? '<div class="quiz-hall-badge">殿堂級 ✦ 銀</div>' : '<div class="album-ratings-slot"></div>'}
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
-        <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
+        <button class="quiz-collect-btn" data-collect${result._hall ? ' data-hall="1"' : ''} data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
         ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>
@@ -3272,7 +3292,7 @@ ${seenList}
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
     }
-    renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'));
+    if (!result._hall) renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'));
   }
 
   async function shareGpResult() {
