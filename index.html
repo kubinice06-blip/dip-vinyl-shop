@@ -816,6 +816,7 @@
   // 手動指定稀有度（key = 藝人小寫，比對所有同藝人的卡）。優先於數值計算。
   const RARITY_OVERRIDES = {
     'dollar brand': 'epic',
+    'abdullah ibrahim': 'epic', // 同一人，改信前才叫 Dollar Brand
   };
   function rarityOverrideOf(card) {
     const tier = RARITY_OVERRIDES[(card.artist || '').toLowerCase().trim()];
