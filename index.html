@@ -748,6 +748,11 @@
     if (!currentUser) return 'need-login';
     const id = cardIdOf(card.artist, card.album);
     if (!id || id === '|') return false;
+    // 記錄到全站卡牌目錄（供後台校正用），fire-and-forget
+    setDoc(doc(db, 'card_catalog', id), {
+      cardId: id, artist: card.artist || '', album: card.album || '',
+      coverUrl: card._coverUrl || card.coverUrl || '', updatedAt: Date.now()
+    }, { merge: true }).catch(() => {});
     const ref = doc(db, 'collections', currentUser.uid, 'cards', id);
     try {
       const snap = await getDoc(ref);
@@ -779,6 +784,14 @@
       console.warn('[collection] load failed', e);
       return [];
     }
+  }
+
+  // 人工校正：後台填的修正版（介紹/評分），前台優先採用
+  async function getAlbumOverride(cardId) {
+    try {
+      const s = await getDoc(doc(db, 'album_overrides', cardId));
+      return s.exists() ? s.data() : null;
+    } catch (e) { return null; }
   }
 
   // 稀有度：三數值總分 → 比例分數 → 等級（與藍本一致，方便日後加數值）
@@ -819,14 +832,21 @@
       </div>`;
       return;
     }
-    // 取每張卡的評分（算稀有度＋詳情星星用，KV 快取很快）
+    // 取每張卡的評分（算稀有度＋詳情星星用，KV 快取很快）＋人工校正
     _collCache = await Promise.all(cards.map(async (c) => {
       let ratings = null;
       try {
         const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
         if (res.ok) ratings = await res.json();
       } catch (e) {}
-      return { ...c, ratings, rarity: rarityFromRatings(ratings) };
+      const ov = await getAlbumOverride(c.cardId);
+      if (ov) {
+        ratings = ratings || {};
+        if (ov.obscurity) ratings.obscurity = ov.obscurity;
+        if (ov.classic) ratings.classic = ov.classic;
+        if (ov.accessibility) ratings.accessibility = ov.accessibility;
+      }
+      return { ...c, ratings, rarity: rarityFromRatings(ratings), descOverride: ov?.desc || null };
     }));
     drawCollection();
   }
@@ -899,11 +919,15 @@
     `;
     ov.classList.add('open');
     document.body.style.overflow = 'hidden';
-    // 介紹（KV 快取）
-    fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
-      .then(r => r.ok ? r.json() : {})
-      .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
-      .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    // 介紹：有人工校正就用校正版，否則用 AI（KV 快取）
+    if (c.descOverride) {
+      document.getElementById('cdDesc').textContent = c.descOverride;
+    } else {
+      fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+        .then(r => r.ok ? r.json() : {})
+        .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
+        .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    }
     // 聆聽連結（取 Spotify 直連，其餘搜尋連結保證可點）
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
       .then(r => r.ok ? r.json() : {})

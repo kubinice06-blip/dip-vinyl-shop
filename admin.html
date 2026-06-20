@@ -218,6 +218,7 @@
   <button class="tab-btn" data-tab="questions">題目管理</button>
   <button class="tab-btn" data-tab="reels">Reels 管理</button>
   <button class="tab-btn" data-tab="banner">首頁 Banner</button>
+  <button class="tab-btn" data-tab="cards">卡牌校正</button>
   <button class="tab-btn" data-tab="usage">設定</button>
 </div>
 
@@ -732,6 +733,40 @@
 
         <button class="btn-save" id="btnSaveBanner" style="margin-top:16px;" disabled>儲存 Banner（含尺寸設定）</button>
         <div class="msg" id="bannerMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 卡牌校正 -->
+  <div class="right-panel" id="panel-cards">
+    <div style="max-width:680px;">
+      <div class="section">
+        <div class="section-label">卡牌校正（修正 AI 介紹 / 評分）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">輸入藝人與專輯，按「載入」會帶出目前 AI 版本。修改後存檔，前台卡冊就會<strong>優先顯示你的校正版</strong>，蓋過 AI。評分留空＝沿用 AI。</p>
+        <div class="field-row" style="margin-bottom:12px;">
+          <div class="field"><label>藝人 Artist</label><input id="ovArtist" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Abdullah Ibrahim"></div>
+          <div class="field"><label>專輯 Album</label><input id="ovAlbum" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Good News from Africa"></div>
+        </div>
+        <button id="btnLoadOverride" style="width:100%;background:none;border:1px solid var(--black);font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:11px;cursor:pointer;color:var(--black);">載入目前版本</button>
+
+        <div id="ovEditor" style="display:none;margin-top:18px;">
+          <div class="section-label" style="margin-bottom:8px;">介紹</div>
+          <textarea id="ovDesc" rows="5" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:13px;line-height:1.8;outline:none;background:#fff;resize:vertical;"></textarea>
+          <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI）</div>
+          <div class="field-row" style="margin-bottom:12px;">
+            <div class="field"><label>冷門度</label><input id="ovObscurity" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+            <div class="field"><label>經典度</label><input id="ovClassic" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+            <div class="field"><label>入耳難易度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+          </div>
+          <button class="btn-save" id="btnSaveOverride">儲存校正</button>
+          <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除校正（恢復 AI 版本）</button>
+          <div class="msg" id="ovMsg"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">最近被抽到的卡（點擊載入校正）</div>
+        <div id="catalogList" style="font-size:12px;color:var(--gray);">尚未載入</div>
       </div>
     </div>
   </div>
@@ -2618,6 +2653,92 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
 
   renderGpModeUI();
+
+  // ───────── 卡牌校正 ─────────
+  const ovCardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().trim();
+
+  async function loadOverrideEditor(artist, album) {
+    const a = (artist ?? document.getElementById('ovArtist').value).trim();
+    const b = (album ?? document.getElementById('ovAlbum').value).trim();
+    if (!a || !b) { document.getElementById('ovMsg').textContent = '請先填藝人與專輯'; return; }
+    document.getElementById('ovArtist').value = a;
+    document.getElementById('ovAlbum').value = b;
+    const id = ovCardId(a, b);
+    const ed = document.getElementById('ovEditor');
+    const msg = document.getElementById('ovMsg');
+    msg.textContent = '載入中…';
+    // 目前 AI 版本 + 既有校正
+    const [aiDescR, aiRateR, ovSnap] = await Promise.all([
+      fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(a)}&album=${encodeURIComponent(b)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(a)}&album=${encodeURIComponent(b)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      getDoc(doc(db, 'album_overrides', id)).catch(() => null)
+    ]);
+    const ov = ovSnap && ovSnap.exists ? (ovSnap.exists() ? ovSnap.data() : null) : null;
+    document.getElementById('ovDesc').value = ov?.desc || aiDescR.desc || '';
+    document.getElementById('ovObscurity').value = ov?.obscurity || '';
+    document.getElementById('ovClassic').value = ov?.classic || '';
+    document.getElementById('ovAccessibility').value = ov?.accessibility || '';
+    document.getElementById('ovObscurity').placeholder = 'AI ' + (aiRateR.obscurity || '?');
+    document.getElementById('ovClassic').placeholder = 'AI ' + (aiRateR.classic || '?');
+    document.getElementById('ovAccessibility').placeholder = 'AI ' + (aiRateR.accessibility || '?');
+    ed.style.display = 'block';
+    msg.textContent = ov ? '已載入（此張已有校正）' : '已載入 AI 版本，可修改';
+  }
+
+  document.getElementById('btnLoadOverride').addEventListener('click', () => loadOverrideEditor());
+
+  document.getElementById('btnSaveOverride').addEventListener('click', async () => {
+    const a = document.getElementById('ovArtist').value.trim();
+    const b = document.getElementById('ovAlbum').value.trim();
+    if (!a || !b) return;
+    const id = ovCardId(a, b);
+    const msg = document.getElementById('ovMsg');
+    const clampInt = (v) => { const n = parseInt(v, 10); return (n >= 1 && n <= 5) ? n : null; };
+    const data = { artist: a, album: b, desc: document.getElementById('ovDesc').value.trim(), updatedAt: Date.now() };
+    const o = clampInt(document.getElementById('ovObscurity').value);
+    const c = clampInt(document.getElementById('ovClassic').value);
+    const ac = clampInt(document.getElementById('ovAccessibility').value);
+    if (o) data.obscurity = o;
+    if (c) data.classic = c;
+    if (ac) data.accessibility = ac;
+    try {
+      await setDoc(doc(db, 'album_overrides', id), data, { merge: true });
+      msg.textContent = '✓ 已儲存校正，前台卡冊會優先顯示';
+      loadCatalog();
+    } catch (e) { msg.textContent = '儲存失敗：' + (e.message || e); }
+  });
+
+  document.getElementById('btnClearOverride').addEventListener('click', async () => {
+    const a = document.getElementById('ovArtist').value.trim();
+    const b = document.getElementById('ovAlbum').value.trim();
+    if (!a || !b) return;
+    if (!confirm('確定清除這張的校正、恢復成 AI 版本？')) return;
+    const id = ovCardId(a, b);
+    try {
+      await deleteDoc(doc(db, 'album_overrides', id));
+      document.getElementById('ovMsg').textContent = '已清除校正，恢復 AI 版本';
+    } catch (e) { document.getElementById('ovMsg').textContent = '清除失敗：' + (e.message || e); }
+  });
+
+  async function loadCatalog() {
+    const list = document.getElementById('catalogList');
+    if (!list) return;
+    try {
+      const snap = await getDocs(collection(db, 'card_catalog'));
+      const items = snap.docs.map(d => d.data()).sort((x, y) => (y.updatedAt || 0) - (x.updatedAt || 0)).slice(0, 100);
+      if (!items.length) { list.textContent = '還沒有任何卡被抽過收藏。'; return; }
+      list.innerHTML = items.map(it =>
+        `<div class="catalog-row" data-a="${(it.artist || '').replace(/"/g, '&quot;')}" data-b="${(it.album || '').replace(/"/g, '&quot;')}" style="display:flex;justify-content:space-between;gap:10px;padding:9px 10px;border:1px solid var(--line);margin-bottom:6px;cursor:pointer;color:var(--black);">
+          <span style="font-weight:700;">${it.album || ''}</span><span style="color:var(--gray);">${it.artist || ''}</span>
+        </div>`).join('');
+      list.querySelectorAll('.catalog-row').forEach(row => {
+        row.addEventListener('click', () => loadOverrideEditor(row.dataset.a, row.dataset.b));
+      });
+    } catch (e) { list.textContent = '載入清單失敗：' + (e.message || e); }
+  }
+
+  // 切到「卡牌校正」分頁時載入清單
+  document.querySelector('.tab-btn[data-tab="cards"]')?.addEventListener('click', loadCatalog);
 </script>
 </body>
 </html>
