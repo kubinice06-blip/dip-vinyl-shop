@@ -3005,6 +3005,8 @@ ${NO_REFUSAL_RULE}
     let overloadCount = 0;
     let failedAlbums = [];
     let batchAttempt = 0;
+    // 經典模式：約 10% 機率改推「公認殿堂神作」（偶爾出 OK Computer 這種），可調
+    const classicMode = Math.random() < 0.10;
     while (true) {
     try {
       const genreInfo = gpIsRandom ? null : GENRE_DATA[gpGenre];
@@ -3090,11 +3092,22 @@ ${seenList}
 直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言、說明或思考過程：
 [{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
+      // 經典模式：破例推公認神作（與上面的冷門原則相反）
+      const promptClassic = `你是一位黑膠唱片店的選片顧問。這次破例推薦「公認的殿堂級神作」——${gpIsRandom ? '橫跨任何曲風、' : `屬於 ${genreInfo.label} 領域、`}樂評與大眾都熟知、常被列為史上最佳的里程碑專輯（例如 Radiohead《OK Computer》那種等級）。
+${seenList}
+- 推薦 ${N} 張不同藝人的超經典神作，依名氣與地位由高到低排序
+- 藝人名稱與專輯名稱必須完全正確、一律用原文
+- 只推薦你 100% 確定真實存在、在 Apple Music / Spotify 找得到的作品
+- 不要全選同一張爛大街的，${N} 張要彼此不同
+
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+
       let verified = null;
       const retryNote = failedAlbums.length
         ? `\n以下封面都找不到，請整批換成別的（不同藝人、不同專輯）：\n${failedAlbums.join('\n')}\n`
         : '';
-      const usePrompt = (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep)) + retryNote;
+      const usePrompt = (classicMode ? promptClassic : (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep))) + retryNote;
 
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
