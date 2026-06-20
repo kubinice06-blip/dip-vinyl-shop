@@ -374,16 +374,17 @@
     .homehub-sub { font-size: 11px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.7; }
     .homehub-cards { display: flex; flex-direction: column; }
     .homehub-card {
-      border-bottom: 1px solid var(--line); padding: 28px 20px; cursor: pointer;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-      background: #fff; transition: background 0.15s; text-align: left; width: 100%;
+      position: relative;
+      border-bottom: 1px solid var(--line); padding: 28px 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      background: #fff; transition: background 0.15s; text-align: center; width: 100%;
       border-left: none; border-right: none; border-top: none; font-family: var(--mono);
     }
     .homehub-card:hover { background: #111; color: #fff; }
     .homehub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
     .homehub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
     .homehub-card:hover .homehub-card-desc { color: #bbb; }
-    .homehub-card-arrow { font-size: 18px; flex-shrink: 0; }
+    .homehub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
     /* 「直接來一首」強調為主要入口 */
     .homehub-card.feature { background: #111; color: #fff; }
     .homehub-card.feature .homehub-card-desc { color: #bbb; }
@@ -717,8 +718,9 @@
   onAuthStateChanged(auth, (user) => {
     currentUser = user;
     updateAuthUI();
-    // 若正在看卡冊，登入狀態改變時重畫
-    if (document.querySelector('.main-tab.active')?.dataset.tab === 'collection') {
+    // 若正在看卡冊，登入狀態改變時重畫（卡冊不是 main-tab，故用 currentView 判斷，
+    // 才能在直接重新整理卡冊頁、Firebase 稍後才回復登入狀態時補上重畫）
+    if (currentView === 'collection') {
       renderCollection();
     }
   });
@@ -1280,8 +1282,10 @@
 
   // 主標籤切換 —— 所有分頁（含心情選歌 / 類型挑片 / 我的紀錄）統一走這個函式
   let activeTab = 'used';
+  let currentView = 'home'; // 目前所在分頁（含非 main-tab 的卡冊／紀錄等）
 
   function setActiveTab(tab) {
+    currentView = tab;
     // tab 高亮
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
