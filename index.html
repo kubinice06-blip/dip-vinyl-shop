@@ -435,14 +435,21 @@
     .cc-rarity { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; font-weight: 700; }
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
-    /* 稀有度配色 */
-    .collect-card.rarity-legendary { box-shadow: inset 0 0 0 2px #c9a227; }
+    /* 稀有度配色：傳奇橘 史詩紫 罕見綠 稀有藍 普通灰 */
+    .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
-    .collect-card.rarity-rare { box-shadow: inset 0 0 0 2px #9a9a9a; }
-    .rarity-legendary .cc-rarity { color: #b8901f; }
+    .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
+    .collect-card.rarity-rare { box-shadow: inset 0 0 0 2px #3a7bd5; }
+    .rarity-legendary .cc-rarity { color: #d4791a; }
     .rarity-epic .cc-rarity { color: #7a3fb0; }
-    .rarity-rare .cc-rarity { color: #777; }
+    .rarity-uncommon .cc-rarity { color: #259643; }
+    .rarity-rare .cc-rarity { color: #3a7bd5; }
     .rarity-common .cc-rarity { color: var(--gray); }
+    .cd-rarity.rarity-legendary { color: #d4791a; }
+    .cd-rarity.rarity-epic { color: #7a3fb0; }
+    .cd-rarity.rarity-uncommon { color: #259643; }
+    .cd-rarity.rarity-rare { color: #3a7bd5; }
+    .cd-rarity.rarity-common { color: var(--gray); }
     .collect-card { cursor: pointer; text-align: left; font-family: var(--mono); border: none; border-radius: 0; }
     /* 卡冊控制列 */
     .collect-controls { display: flex; gap: 10px; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--line); }
@@ -797,22 +804,22 @@
     } catch (e) { return null; }
   }
 
-  // 稀有度：三數值總分 → 比例分數 → 等級（與藍本一致，方便日後加數值）
+  // 稀有度：三項評分總分（3–15）→ 五等級。門檻為 config，可依實際分布調整。
+  // 順位（高→低）：傳奇 > 史詩 > 罕見 > 稀有 > 普通
   function rarityFromRatings(r) {
     if (!r || !r.obscurity) return null;
-    const keys = ['obscurity', 'classic', 'accessibility'];
-    const sum = keys.reduce((s, k) => s + (Number(r[k]) || 0), 0);
-    const score = sum / (keys.length * 5);
-    if (score >= 0.87) return { tier: 'legendary', label: '傳說', sum };
-    if (score >= 0.73) return { tier: 'epic', label: '史詩', sum };
-    if (score >= 0.60) return { tier: 'rare', label: '稀有', sum };
+    const sum = (Number(r.obscurity) || 0) + (Number(r.classic) || 0) + (Number(r.accessibility) || 0);
+    if (sum >= 14) return { tier: 'legendary', label: '傳奇', sum };
+    if (sum >= 12) return { tier: 'epic', label: '史詩', sum };
+    if (sum >= 10) return { tier: 'uncommon', label: '罕見', sum };
+    if (sum >= 8)  return { tier: 'rare', label: '稀有', sum };
     return { tier: 'common', label: '普通', sum };
   }
 
   let _collCache = [];
   let collSort = 'rarity'; // 'rarity' | 'new' | 'artist'
   let collGroup = false;
-  const RARITY_ORDER = { legendary: 4, epic: 3, rare: 2, common: 1 };
+  const RARITY_ORDER = { legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
 
   async function renderCollection() {
     const el = document.getElementById('collectionContent');
@@ -886,8 +893,8 @@
 
     let body;
     if (collGroup) {
-      const tiers = ['legendary', 'epic', 'rare', 'common'];
-      const labels = { legendary: '傳說', epic: '史詩', rare: '稀有', common: '普通' };
+      const tiers = ['legendary', 'epic', 'uncommon', 'rare', 'common'];
+      const labels = { legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
       body = tiers.map(t => {
         const items = rated.filter(c => (c.rarity?.tier || 'common') === t);
         if (!items.length) return '';
@@ -3338,7 +3345,7 @@ ${seenList}
     return canvas;
   }
 
-  const RARITY_COLOR = { legendary: '#b8901f', epic: '#7a3fb0', rare: '#777777', common: '#999999' };
+  const RARITY_COLOR = { legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
 
   // 卡牌分享圖（比照 buildGpCanvas，加上稀有度與三維星星）
   async function buildCardCanvas(card, desc) {
