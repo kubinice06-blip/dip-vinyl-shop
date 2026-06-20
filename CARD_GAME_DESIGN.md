@@ -173,7 +173,9 @@ match /users/{uid} {
 ## 10. 分階段路線圖（慢慢建）
 
 - **P0 基礎 ✅（已做）**：Google 一鍵登入；結果頁「收進卡冊」；Firestore `collections/{uid}/cards`；我的卡冊頁（稀有度上色＋重複張數）。
-- **P1 卡冊強化**：懶人補值顯示、篩選/排序、圖鑑空格、收集進度。
+- **P1 卡冊強化 ✅（已做）**：點卡看詳情（介紹/album-desc＋星星＋Apple/Spotify/YT 聆聽連結）、刪除單卡、排序（稀有度/最新/藝人）、依稀有度分組。
+- **P1.5 卡冊更多**：圖鑑空格（未收藏輪廓）、收集進度、依曲風分組。
+- **P-播放清單**：收集滿門檻 → 一鍵建立 Spotify 播放清單。需玩家 Spotify OAuth（授權碼流程＋playlist-modify scope，沿用現有 Spotify app 加 redirect URI）。待定：解鎖門檻、整張加 vs 代表曲、是否也支援 Apple Music。屬獨立階段。
 - **P2 帳號**：（可選）匿名試玩 → 升級綁定；個人資料。
 - **P2.5 會員名冊**：登入時寫 `users/{uid}`（名字/Email/註冊時間/收藏數）；admin.html 後台讀整份名冊（規則限管理員帳號可讀全部；前端無法列舉 Auth 用戶，故走 users 集合）。
 - **P2.6 商品願望清單**：登入會員在商品按「加入清單」→ `wishlists/{uid}/items/{productId}`；「我的清單」頁；可延伸到貨通知、後台看熱門想要清單。與卡冊同一套 Auth＋per-uid 架構。
