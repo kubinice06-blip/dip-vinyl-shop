@@ -443,6 +443,28 @@
     .rarity-epic .cc-rarity { color: #7a3fb0; }
     .rarity-rare .cc-rarity { color: #777; }
     .rarity-common .cc-rarity { color: var(--gray); }
+    .collect-card { cursor: pointer; text-align: left; font-family: var(--mono); border: none; border-radius: 0; }
+    /* 卡冊控制列 */
+    .collect-controls { display: flex; gap: 10px; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--line); }
+    .collect-sort { font-family: var(--mono); font-size: 11px; padding: 6px 8px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+    .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
+    .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
+    .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
+
+    /* 卡片詳情 overlay */
+    .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
+    .card-detail-overlay.open { display: flex; }
+    .cd-body { background: #fff; width: 100%; max-width: 380px; padding: 24px 22px 28px; position: relative; text-align: center; }
+    .cd-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray); line-height: 1; }
+    .cd-rarity { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .cd-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 14px; }
+    .cd-artist { font-size: 12px; color: var(--gray); }
+    .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .cd-stars { margin: 14px 0 4px; }
+    .cd-desc { font-size: 12px; line-height: 1.9; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 12px 0 16px; }
+    .cd-streaming { margin-bottom: 16px; }
+    .cd-delete { width: 100%; padding: 11px; background: #fff; color: #c0392b; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; cursor: pointer; }
+    .cd-delete:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
   </style>
 </head>
 <body>
@@ -645,6 +667,11 @@
   </div>
 </div>
 
+<!-- 卡片詳情 overlay -->
+<div class="card-detail-overlay" id="cardDetailOverlay">
+  <div class="cd-body"></div>
+</div>
+
 
 <footer>
   <div class="f-logo">dip vinyl shop</div>
@@ -653,7 +680,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   const app = initializeApp({
@@ -763,6 +790,11 @@
     return { tier: 'common', label: '普通', sum };
   }
 
+  let _collCache = [];
+  let collSort = 'rarity'; // 'rarity' | 'new' | 'artist'
+  let collGroup = false;
+  const RARITY_ORDER = { legendary: 4, epic: 3, rare: 2, common: 1 };
+
   async function renderCollection() {
     const el = document.getElementById('collectionContent');
     if (!el) return;
@@ -784,31 +816,128 @@
       </div>`;
       return;
     }
-    // 取每張卡的評分以算稀有度（KV 快取，很快）
-    const rated = await Promise.all(cards.map(async (c) => {
-      let rarity = null;
+    // 取每張卡的評分（算稀有度＋詳情星星用，KV 快取很快）
+    _collCache = await Promise.all(cards.map(async (c) => {
+      let ratings = null;
       try {
         const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
-        if (res.ok) rarity = rarityFromRatings(await res.json());
+        if (res.ok) ratings = await res.json();
       } catch (e) {}
-      return { ...c, rarity };
+      return { ...c, ratings, rarity: rarityFromRatings(ratings) };
     }));
-    const order = { legendary: 4, epic: 3, rare: 2, common: 1 };
-    rated.sort((a, b) => (order[b.rarity?.tier] || 0) - (order[a.rarity?.tier] || 0) || (b.obtainedAt || 0) - (a.obtainedAt || 0));
-    const cardsHtml = rated.map((c) => {
-      const tier = c.rarity?.tier || 'common';
-      const label = c.rarity?.label || '？';
-      const cover = c.coverUrl ? `<img src="${c.coverUrl}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
-      return `<div class="collect-card rarity-${tier}">
-        <div class="cc-thumb">${cover}${c.count > 1 ? `<span class="cc-count">×${c.count}</span>` : ''}</div>
-        <div class="cc-rarity">${label}</div>
-        <div class="cc-artist">${c.artist || ''}</div>
-        <div class="cc-album">${c.album || ''}</div>
-      </div>`;
-    }).join('');
-    el.innerHTML = `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
-      <div class="collect-grid">${cardsHtml}</div>`;
+    drawCollection();
   }
+
+  function _collCardHtml(c) {
+    const tier = c.rarity?.tier || 'common';
+    const label = c.rarity?.label || '？';
+    const cover = c.coverUrl ? `<img src="${c.coverUrl}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
+    return `<button class="collect-card rarity-${tier}" data-card-id="${c.cardId}">
+      <div class="cc-thumb">${cover}${c.count > 1 ? `<span class="cc-count">×${c.count}</span>` : ''}</div>
+      <div class="cc-rarity">${label}</div>
+      <div class="cc-artist">${c.artist || ''}</div>
+      <div class="cc-album">${c.album || ''}</div>
+    </button>`;
+  }
+
+  function drawCollection() {
+    const el = document.getElementById('collectionContent');
+    if (!el) return;
+    const rated = _collCache.slice();
+    if (collSort === 'rarity') rated.sort((a, b) => (RARITY_ORDER[b.rarity?.tier] || 0) - (RARITY_ORDER[a.rarity?.tier] || 0) || (b.obtainedAt || 0) - (a.obtainedAt || 0));
+    else if (collSort === 'new') rated.sort((a, b) => (b.obtainedAt || 0) - (a.obtainedAt || 0));
+    else if (collSort === 'artist') rated.sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
+
+    const head = `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
+      <div class="collect-controls">
+        <select class="collect-sort" id="collSort">
+          <option value="rarity"${collSort === 'rarity' ? ' selected' : ''}>稀有度 高→低</option>
+          <option value="new"${collSort === 'new' ? ' selected' : ''}>最新收藏</option>
+          <option value="artist"${collSort === 'artist' ? ' selected' : ''}>藝人 A→Z</option>
+        </select>
+        <button class="collect-group-btn${collGroup ? ' on' : ''}" id="collGroup">${collGroup ? '✓ 依稀有度分組' : '依稀有度分組'}</button>
+      </div>`;
+
+    let body;
+    if (collGroup) {
+      const tiers = ['legendary', 'epic', 'rare', 'common'];
+      const labels = { legendary: '傳說', epic: '史詩', rare: '稀有', common: '普通' };
+      body = tiers.map(t => {
+        const items = rated.filter(c => (c.rarity?.tier || 'common') === t);
+        if (!items.length) return '';
+        return `<div class="collect-group-label rarity-${t}">${labels[t]}　${items.length}</div><div class="collect-grid">${items.map(_collCardHtml).join('')}</div>`;
+      }).join('');
+    } else {
+      body = `<div class="collect-grid">${rated.map(_collCardHtml).join('')}</div>`;
+    }
+    el.innerHTML = head + body;
+    el.querySelector('#collSort')?.addEventListener('change', (e) => { collSort = e.target.value; drawCollection(); });
+    el.querySelector('#collGroup')?.addEventListener('click', () => { collGroup = !collGroup; drawCollection(); });
+  }
+
+  // 卡片詳情：介紹 + 星星 + 聆聽連結
+  async function openCardDetail(cardId) {
+    const c = _collCache.find(x => x.cardId === cardId);
+    if (!c) return;
+    const ov = document.getElementById('cardDetailOverlay');
+    const body = ov.querySelector('.cd-body');
+    const tier = c.rarity?.tier || 'common';
+    body.innerHTML = `
+      <button class="cd-close" data-cd-close>✕</button>
+      <div class="cd-rarity rarity-${tier}">${c.rarity?.label || '？'}${c.count > 1 ? `　×${c.count}` : ''}</div>
+      ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
+      <div class="cd-artist">${c.artist || ''}</div>
+      <div class="cd-album">${c.album || ''}</div>
+      <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings) : ''}</div>
+      <div class="cd-desc" id="cdDesc">載入介紹…</div>
+      <div class="cd-streaming" id="cdStreaming"></div>
+      <button class="cd-delete" data-cd-delete="${c.cardId}">從卡冊刪除這張</button>
+    `;
+    ov.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // 介紹（KV 快取）
+    fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+      .then(r => r.ok ? r.json() : {})
+      .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
+      .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    // 聆聽連結（取 Spotify 直連，其餘搜尋連結保證可點）
+    fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+      .then(r => r.ok ? r.json() : {})
+      .then(sr => { const el = document.getElementById('cdStreaming'); if (el) el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); })
+      .catch(() => { const el = document.getElementById('cdStreaming'); if (el) el.innerHTML = streamingBtnsHtml(c.artist, c.album); });
+  }
+
+  function closeCardDetail() {
+    const ov = document.getElementById('cardDetailOverlay');
+    if (ov) ov.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  async function deleteCard(cardId) {
+    if (!currentUser) return;
+    if (!confirm('確定要從卡冊刪除這張卡嗎？')) return;
+    try {
+      await deleteDoc(doc(db, 'collections', currentUser.uid, 'cards', cardId));
+      _collCache = _collCache.filter(c => c.cardId !== cardId);
+      closeCardDetail();
+      drawCollection();
+      showShareToast && showShareToast('已刪除');
+    } catch (e) {
+      console.warn('[collection] delete failed', e);
+      showShareToast && showShareToast('刪除失敗');
+    }
+  }
+
+  // 卡冊互動（委派）：點卡片看詳情、關閉、刪除
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.collect-card[data-card-id]');
+    if (card) { openCardDetail(card.dataset.cardId); return; }
+    if (e.target.closest('[data-cd-close]')) { closeCardDetail(); return; }
+    const del = e.target.closest('[data-cd-delete]');
+    if (del) { deleteCard(del.dataset.cdDelete); return; }
+    const ov = document.getElementById('cardDetailOverlay');
+    if (ov && e.target === ov) closeCardDetail();
+  });
 
   // 「收進卡冊」按鈕（結果頁，委派）
   document.addEventListener('click', async (e) => {
