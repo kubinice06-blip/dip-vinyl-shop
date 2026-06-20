@@ -2667,14 +2667,17 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const ed = document.getElementById('ovEditor');
     const msg = document.getElementById('ovMsg');
     msg.textContent = '載入中…';
-    // 目前 AI 版本 + 既有校正
-    const [aiDescR, aiRateR, ovSnap] = await Promise.all([
+    // 既有校正 + 抽卡當下介紹(card_catalog) + AI 版本
+    const [aiDescR, aiRateR, ovSnap, catSnap] = await Promise.all([
       fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(a)}&album=${encodeURIComponent(b)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(a)}&album=${encodeURIComponent(b)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-      getDoc(doc(db, 'album_overrides', id)).catch(() => null)
+      getDoc(doc(db, 'album_overrides', id)).catch(() => null),
+      getDoc(doc(db, 'card_catalog', id)).catch(() => null)
     ]);
-    const ov = ovSnap && ovSnap.exists ? (ovSnap.exists() ? ovSnap.data() : null) : null;
-    document.getElementById('ovDesc').value = ov?.desc || aiDescR.desc || '';
+    const ov = ovSnap && ovSnap.exists && ovSnap.exists() ? ovSnap.data() : null;
+    const cat = catSnap && catSnap.exists && catSnap.exists() ? catSnap.data() : null;
+    // 優先序：既有校正 > 抽卡當下介紹 > AI 重生
+    document.getElementById('ovDesc').value = ov?.desc || cat?.desc || aiDescR.desc || '';
     document.getElementById('ovObscurity').value = ov?.obscurity || '';
     document.getElementById('ovClassic').value = ov?.classic || '';
     document.getElementById('ovAccessibility').value = ov?.accessibility || '';
@@ -2682,7 +2685,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('ovClassic').placeholder = 'AI ' + (aiRateR.classic || '?');
     document.getElementById('ovAccessibility').placeholder = 'AI ' + (aiRateR.accessibility || '?');
     ed.style.display = 'block';
-    msg.textContent = ov ? '已載入（此張已有校正）' : '已載入 AI 版本，可修改';
+    msg.textContent = ov ? '已載入（此張已有校正）' : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
   }
 
   document.getElementById('btnLoadOverride').addEventListener('click', () => loadOverrideEditor());
