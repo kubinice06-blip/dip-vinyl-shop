@@ -3423,8 +3423,6 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     // 頭部：稀有度
     ctx.fillStyle = tColor; ctx.font = '700 50px "Space Mono", monospace';
     ctx.fillText(card.rarity?.label || '收藏', W / 2, 92);
-    ctx.fillStyle = '#999999'; ctx.font = '400 26px "Space Mono", monospace';
-    ctx.fillText('dip vinyl shop · 卡冊', W / 2, 142);
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, 176); ctx.lineTo(W - PAD, 176); ctx.stroke();
     // 封面
