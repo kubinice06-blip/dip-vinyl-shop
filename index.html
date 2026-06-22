@@ -758,18 +758,31 @@
     return ((artist || '') + '|' + (album || '')).toLowerCase().trim();
   }
 
+  // 抽到即記錄到全站卡牌目錄（供後台校正用）；不需登入、fire-and-forget
+  // 注意：這要獨立於 addCardToCollection，否則未登入/未收藏的玩家抽的卡不會進目錄
+  function recordDrawnCard(card) {
+    if (!card) return;
+    try {
+      const id = cardIdOf(card.artist, card.album);
+      if (!id || id === '|') return;
+      const desc = (card.desc || card.reason || '').trim();
+      const hasDesc = desc && desc !== '輸入中…' && desc !== '輸入中...';
+      setDoc(doc(db, 'card_catalog', id), {
+        cardId: id, artist: card.artist || '', album: card.album || '',
+        coverUrl: card._coverUrl || card.coverUrl || '',
+        ...(hasDesc ? { desc } : {}),
+        updatedAt: Date.now()
+      }, { merge: true }).catch(() => {});
+    } catch (e) {}
+  }
+
   // 收進卡冊（已收藏則張數 +1）
   async function addCardToCollection(card) {
     if (!currentUser) return 'need-login';
     const id = cardIdOf(card.artist, card.album);
     if (!id || id === '|') return false;
     // 記錄到全站卡牌目錄（供後台校正用），fire-and-forget
-    setDoc(doc(db, 'card_catalog', id), {
-      cardId: id, artist: card.artist || '', album: card.album || '',
-      coverUrl: card._coverUrl || card.coverUrl || '',
-      ...(card.desc ? { desc: card.desc } : {}),
-      updatedAt: Date.now()
-    }, { merge: true }).catch(() => {});
+    recordDrawnCard(card);
     const ref = doc(db, 'collections', currentUser.uid, 'cards', id);
     try {
       const snap = await getDoc(ref);
@@ -1883,6 +1896,7 @@
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
         const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
+        recordDrawnCard(lastQuizResult);
         if (reason) _saveReasonWords(reason);
         saveToHistory({ type: 'quiz', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastQuizResult._coverUrl })
           .then(() => renderHistorySection(document.getElementById('quizContent')));
@@ -1895,6 +1909,7 @@
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
         const reason = await getAiReason(pick.artist, pick.title || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
+        recordDrawnCard(lastQuizResult);
         if (reason) _saveReasonWords(reason);
         saveToHistory({ type: 'quiz', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastQuizResult._coverUrl })
           .then(() => renderHistorySection(document.getElementById('quizContent')));
@@ -2031,6 +2046,7 @@ ${seenList}
       const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
       const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText, reasonEl);
       lastQuizResult.reason = reason;
+      recordDrawnCard(lastQuizResult);
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'quiz', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.spotifyResult.imageUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
@@ -2110,6 +2126,7 @@ ${seenList}
     }
 
     lastQuizResult = result;
+    recordDrawnCard(result);
     seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
     _saveSeenAlbums();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
@@ -3028,6 +3045,7 @@ ${NO_REFUSAL_RULE}
 禁止：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」。只回傳文字，不含格式符號。`;
       const reason = await streamText([{ role: 'user', content: stockPrompt }], reasonEl);
       lastGpResult.reason = reason;
+      recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastGpResult._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
@@ -3054,6 +3072,7 @@ ${NO_REFUSAL_RULE}
         reason = await streamText([{ role: 'user', content: reelPrompt }], reasonEl);
       }
       lastGpResult.reason = reason;
+      recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
@@ -3247,6 +3266,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
         ? await getRandomReason(verified.rec.artist, verified.rec.album, reasonEl)
         : await getGpReason(verified.rec.artist, verified.rec.album, gpGenre, gpArtists, reasonEl);
       lastGpResult.reason = reason;
+      recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
       saveToHistory({ type: 'genre', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.spotifyResult.imageUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
@@ -3319,6 +3339,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     }
 
     lastGpResult = result;
+    recordDrawnCard(result);
     gpSeenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
     _saveGpSeen();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
