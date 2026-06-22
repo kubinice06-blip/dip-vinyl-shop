@@ -1056,12 +1056,16 @@
     const artist = btn.dataset.artist || '';
     const album = btn.dataset.album || '';
     const resultEl = btn.closest('.quiz-result');
-    const cover = resultEl?.querySelector('.quiz-result-cover')?.getAttribute('src') || '';
-    // 保留「剛抽到」那段介紹（即時生成、品質較好）
-    let drawDesc = (resultEl?.querySelector('.quiz-result-reason')?.textContent || '').trim();
-    if (drawDesc === '輸入中…' || drawDesc === '輸入中...') drawDesc = '';
+    let cover = resultEl?.querySelector('.quiz-result-cover')?.getAttribute('src') || '';
+    // reel 結果是 IG iframe、沒有 .quiz-result-cover img → 改用結果物件的 _coverUrl
+    //（reel 封面或 Spotify/Bandcamp 封面都存在這，且涵蓋 render 後才非同步抓到的封面）
+    if (!cover && lastQuizResult && (lastQuizResult.artist || '') === artist && (lastQuizResult.album || '') === album) {
+      cover = lastQuizResult._coverUrl || '';
+    }
     btn.disabled = true;
-    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc: drawDesc, hall: btn.dataset.hall === '1' });
+    // 不存「抽卡當下的理由」——心情選歌那段是心理測驗結果、不是專輯簡介。
+    // desc 留空 → 卡冊詳情會自動抓 /album-desc 的事實型專輯簡介。
+    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc: '', hall: btn.dataset.hall === '1' });
     if (r === 'new') btn.textContent = '✓ 已收進卡冊';
     else if (r === 'dup') btn.textContent = '✓ 已在卡冊（+1）';
     else if (r === 'need-login') { signInWithGoogle(); btn.disabled = false; }
