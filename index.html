@@ -1320,6 +1320,10 @@
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.865-.737c-.695-.144-1.4-.155-2.12-.155H6.41c-.72 0-1.425.01-2.12.155a5.022 5.022 0 0 0-1.865.737C1.308 1.624.563 2.624.246 3.934a9.23 9.23 0 0 0-.24 2.19C-.006 6.9 0 7.68 0 8.46v7.08c0 .78-.006 1.56.006 2.336a9.23 9.23 0 0 0 .24 2.19c.317 1.31 1.062 2.31 2.18 3.043a5.022 5.022 0 0 0 1.865.737c.695.144 1.4.155 2.12.155h11.19c.72 0 1.425-.01 2.12-.155a5.022 5.022 0 0 0 1.865-.737c1.118-.734 1.863-1.734 2.18-3.044a9.23 9.23 0 0 0 .24-2.19C24 17.1 24 16.32 24 15.54V8.46c0-.78.006-1.56-.006-2.336zm-6.466 3.01l-5.25 7.98a.84.84 0 0 1-.702.38.84.84 0 0 1-.702-.38l-2.34-3.558a.84.84 0 0 1 .234-1.164.84.84 0 0 1 1.164.234l1.644 2.496 4.548-6.912a.84.84 0 0 1 1.164-.234.84.84 0 0 1 .24 1.158z"/></svg>
         Apple Music
       </a>
+      <a class="music-platform-btn" href="https://bandcamp.com/search?q=${query}" target="_blank" rel="noopener">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M0 18.75l7.437-13.5H24l-7.438 13.5z"/></svg>
+        Bandcamp
+      </a>
     </div>` : '';
 
     const label = `<div class="modal-music-label">
@@ -2409,10 +2413,12 @@ ${seenList}
     const apple = `https://music.apple.com/tw/search?term=${q}`;
     const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
     const yt = `https://music.youtube.com/search?q=${q}`;
+    const bandcamp = `https://bandcamp.com/search?q=${q}`;
     return '<div class="streaming-btns">'
       + `<a class="streaming-btn" href="${apple}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
       + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
       + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
+      + `<a class="streaming-btn" href="${bandcamp}" target="_blank" rel="noopener" data-platform="bandcamp">Bandcamp</a>`
       + '</div>';
   }
 
