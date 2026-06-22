@@ -1062,11 +1062,16 @@
     if (!cover && lastQuizResult && (lastQuizResult.artist || '') === artist && (lastQuizResult.album || '') === album) {
       cover = lastQuizResult._coverUrl || '';
     }
-    // 抽卡當下那段介紹（心情選歌與類型挑片現在都是事實型專輯簡介，存進卡冊＝結果頁看到的同一段）
-    let drawDesc = (resultEl?.querySelector('.quiz-result-reason')?.textContent || '').trim();
-    if (drawDesc === '輸入中…' || drawDesc === '輸入中...') drawDesc = '';
+    // 類型挑片：結果頁文字本身就是事實型專輯簡介 → 直接存。
+    // 心情選歌（data-gen-desc）：結果頁是心理測驗式描述、不適合當卡冊簡介 → desc 留空，
+    //   卡冊詳情會自動抓 /album-desc 的「唱片行熟客」專輯簡介（與類型挑片同一套生成邏輯）。
+    let desc = '';
+    if (btn.dataset.genDesc !== '1') {
+      desc = (resultEl?.querySelector('.quiz-result-reason')?.textContent || '').trim();
+      if (desc === '輸入中…' || desc === '輸入中...') desc = '';
+    }
     btn.disabled = true;
-    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc: drawDesc, hall: btn.dataset.hall === '1' });
+    const r = await addCardToCollection({ artist, album, _coverUrl: cover, desc, hall: btn.dataset.hall === '1' });
     if (r === 'new') btn.textContent = '✓ 已收進卡冊';
     else if (r === 'dup') btn.textContent = '✓ 已在卡冊（+1）';
     else if (r === 'need-login') { signInWithGoogle(); btn.disabled = false; }
@@ -1923,7 +1928,7 @@
         const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
         await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
-        const reason = await getRandomReason(pick.artist, pick.name || pick.album || '', reasonEl);
+        const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
         recordDrawnCard(lastQuizResult);
         if (reason) _saveReasonWords(reason);
@@ -1936,7 +1941,7 @@
         const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
         await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
-        const reason = await getRandomReason(pick.artist, pick.title || '', reasonEl);
+        const reason = await getAiReason(pick.artist, pick.title || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
         recordDrawnCard(lastQuizResult);
         if (reason) _saveReasonWords(reason);
@@ -2075,7 +2080,7 @@ ${seenList}
       if (!verified) throw new Error('找不到合適的推薦，請再試一次');
       await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: '', _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _bandcampUrl: verified.spotifyResult.bandcampUrl, _ytUrl: verified.spotifyResult.ytUrl, _streaming: true });
       const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
-      const reason = await getRandomReason(verified.rec.artist, verified.rec.album, reasonEl);
+      const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText, reasonEl);
       lastQuizResult.reason = reason;
       recordDrawnCard(lastQuizResult);
       if (reason) _saveReasonWords(reason);
@@ -2175,7 +2180,7 @@ ${seenList}
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
-        <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
+        <button class="quiz-collect-btn" data-collect data-gen-desc="1" data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
         <button class="quiz-share-btn" data-quiz-action="share">✈ 分享結果</button>
         ${quizAnotherCount < QUIZ_ANOTHER_MAX ? `<button class="quiz-another-btn" data-quiz-action="another">再一張${QUIZ_ANOTHER_MAX - quizAnotherCount > 1 ? `（${QUIZ_ANOTHER_MAX - quizAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-quiz-action="retry">再測一次</button>
