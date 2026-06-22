@@ -2358,7 +2358,7 @@ ${seenList}
   }
 
   // Spotify result cache (localStorage) — avoids repeated API calls for same album
-  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache_v2';
+  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache_v3'; // v3：清掉 v2 存到的破 Bandcamp 封面網址（缺 a 前綴）
   const SPOTIFY_CACHE_MAX = 300;
   function _spotifyCacheKey(artist, album) {
     return (artist + '||' + album).toLowerCase().trim();
