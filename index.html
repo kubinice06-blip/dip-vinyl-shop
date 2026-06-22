@@ -436,7 +436,7 @@
     .cc-rarity { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; font-weight: 700; }
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
-    /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 罕見綠 稀有藍 普通灰 */
+    /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 獨特綠 稀有藍 普通灰 */
     .collect-card.rarity-hall { box-shadow: inset 0 0 0 3px #c0c4cc, inset 0 0 0 6px #eef0f2; }
     .rarity-hall .cc-rarity { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .cd-rarity.rarity-hall { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -854,14 +854,14 @@
   function rarityOverrideOf(card) {
     const tier = RARITY_OVERRIDES[(card.artist || '').toLowerCase().trim()];
     if (!tier) return null;
-    const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
+    const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
     return { tier, label: labels[tier] || tier, sum: null };
   }
 
   // 稀有度：冷門度降權版。卡池幾乎全是冷門盤、obscurity 近乎常數（多半 4–5），
-  // 拿它當主力會讓所有卡卡在同一格（之前全是罕見）。改由「經典度＋難度」決定，
+  // 拿它當主力會讓所有卡卡在同一格（之前全是獨特）。改由「經典度＋難度」決定，
   // 冷門度只在「極冷門(=5)」時 +1 加成。score 範圍 2–11。門檻為 config，可再調。
-  // 順位（高→低）：殿堂(銀,無數值) > 傳奇 > 史詩 > 罕見 > 稀有 > 普通
+  // 順位（高→低）：殿堂(銀,無數值) > 傳奇 > 史詩 > 獨特 > 稀有 > 普通
   function rarityFromRatings(r) {
     if (!r || !r.obscurity) return null;
     const classic = Number(r.classic) || 0;
@@ -870,7 +870,7 @@
     const score = classic + accessibility + (obscurity >= 5 ? 1 : 0);
     if (score >= 10) return { tier: 'legendary', label: '傳奇', sum: score };
     if (score >= 8)  return { tier: 'epic', label: '史詩', sum: score };
-    if (score >= 6)  return { tier: 'uncommon', label: '罕見', sum: score };
+    if (score >= 6)  return { tier: 'uncommon', label: '獨特', sum: score };
     if (score >= 4)  return { tier: 'rare', label: '稀有', sum: score };
     return { tier: 'common', label: '普通', sum: score };
   }
@@ -961,7 +961,7 @@
     let body;
     if (collGroup) {
       const tiers = ['hall', 'legendary', 'epic', 'uncommon', 'rare', 'common'];
-      const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '罕見', rare: '稀有', common: '普通' };
+      const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
       body = tiers.map(t => {
         const items = rated.filter(c => (c.rarity?.tier || 'common') === t);
         if (!items.length) return '';
