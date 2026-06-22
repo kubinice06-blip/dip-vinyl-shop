@@ -1010,8 +1010,8 @@
     // 聆聽連結（取 Spotify 直連，其餘搜尋連結保證可點）
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
       .then(r => r.ok ? r.json() : {})
-      .then(sr => { const el = document.getElementById('cdStreaming'); if (el) el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); })
-      .catch(() => { const el = document.getElementById('cdStreaming'); if (el) el.innerHTML = streamingBtnsHtml(c.artist, c.album); });
+      .then(sr => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); resolveBandcampBtn(c.artist, c.album, el); } })
+      .catch(() => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album); resolveBandcampBtn(c.artist, c.album, el); } });
   }
 
   function closeCardDetail() {
@@ -2181,6 +2181,7 @@ ${seenList}
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
     renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'));
+    resolveBandcampBtn(result.artist, result.album, document.getElementById('quizContent'));
   }
 
   function showShareToast(msg) {
@@ -2468,13 +2469,34 @@ ${seenList}
     const apple = `https://music.apple.com/tw/search?term=${q}`;
     const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
     const yt = ytUrl || `https://music.youtube.com/search?q=${q}`;
-    const bandcamp = bandcampUrl || `https://bandcamp.com/search?q=${q}`;
+    // Bandcamp 只連「直連專輯頁」；沒有就灰掉、不能按（不退回搜尋，因為搜尋多半找不到）。
+    // bandcampUrl 未知時先渲染成灰色 placeholder，由 resolveBandcampBtn 背景查實後再決定啟用或維持灰。
+    const bandcampBtn = bandcampUrl
+      ? `<a class="streaming-btn" href="${bandcampUrl}" target="_blank" rel="noopener" data-platform="bandcamp">Bandcamp</a>`
+      : `<a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>`;
     return '<div class="streaming-btns">'
       + `<a class="streaming-btn" href="${apple}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
       + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
       + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
-      + `<a class="streaming-btn" href="${bandcamp}" target="_blank" rel="noopener" data-platform="bandcamp">Bandcamp</a>`
+      + bandcampBtn
       + '</div>';
+  }
+
+  // 背景補上 Bandcamp 直連：查到就啟用按鈕，查不到就維持灰色不能按。
+  // （streamingBtnsHtml 在 bandcampUrl 未知時會先給灰色 placeholder，這裡才去問 Bandcamp。）
+  async function resolveBandcampBtn(artist, album, containerEl) {
+    if (!containerEl) return;
+    const btn = containerEl.querySelector('.streaming-btn[data-platform="bandcamp"]');
+    if (!btn || btn.hasAttribute('href')) return; // 已是直連就不用查
+    try {
+      const bc = await fetchBandcampCover(artist, album);
+      if (bc.bandcampUrl) {
+        btn.href = bc.bandcampUrl;
+        btn.target = '_blank';
+        btn.rel = 'noopener';
+        btn.removeAttribute('disabled');
+      }
+    } catch (e) {}
   }
 
   // 專輯三維評分（五顆星）
@@ -3446,6 +3468,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
         .then(() => renderHistorySection(document.getElementById('genreContent')));
     }
     if (!result._hall) renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'));
+    resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
   }
 
   async function shareGpResult() {
