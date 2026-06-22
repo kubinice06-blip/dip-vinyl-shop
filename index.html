@@ -2011,6 +2011,7 @@ ${seenList}
 推薦原則：
 - 藝人名稱與專輯名稱一律使用原文（西方藝人用英文，日韓藝人用日韓文）
 - 優先選擇在主流之外、但在樂迷圈內有口碑的作品
+- 大方推薦只在 Bandcamp／獨立廠牌／netlabel 發行、Spotify 與 Apple Music 上可能根本沒有的冷門好作品——系統會自動到 Bandcamp 撈封面與連結，不必擔心它不在主流串流上
 - 絕對禁止：Radiohead、Pink Floyd、Beatles、Taylor Swift、Coldplay 等串流首頁等級的超主流名字
 - 如果你這次想到了 Grouper、Bon Iver、Nick Drake、Elliott Smith、Sufjan Stevens、Beach House、Sigur Rós——先在那個風格方向再往深一層，找一個更少人知道、風格相近但更具體的藝人；只有在實在找不到更好選擇時才考慮這些名字
 - 你腦中浮現的「第一個答案」幾乎都是網路上被推薦爛的選擇，請往第二、第三層去想
@@ -2035,7 +2036,7 @@ ${seenList}
           usePrompt = `推薦一張你了解的真實專輯，跟用戶心理測驗答案有關聯。\n${qaText}\n\n只回傳 JSON：{"artist":"...","album":"..."}`;
         }
         const retryNote = failedAlbums.length
-          ? `\n以下在 Spotify 找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
+          ? `\n以下在 Spotify／Bandcamp 都找不到，請換一張別的：\n${failedAlbums.join('\n')}\n`
           : '';
         const resp = await fetch(`${WORKER_URL}/claude`, {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -2059,6 +2060,7 @@ ${seenList}
         const spotifyResult = await fetchSpotifyCover(rec.artist, rec.album);
         if (spotifyResult.imageUrl) { verified = { rec, spotifyResult }; break; }
         failedAlbums.push(`${rec.artist} — ${rec.album}`);
+        // imageUrl 由 fetchSpotifyCover 整合 Spotify→Bandcamp，兩邊都沒有才算找不到
       }
       // Fallback: if Spotify verification failed but we got a valid recommendation, show it without cover
       if (!verified && lastRec) {
@@ -2066,7 +2068,7 @@ ${seenList}
         verified = { rec: lastRec, spotifyResult: { imageUrl: null, spotifyUrl: null } };
       }
       if (!verified) throw new Error('找不到合適的推薦，請再試一次');
-      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: '', _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true });
+      await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: '', _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _bandcampUrl: verified.spotifyResult.bandcampUrl, _streaming: true });
       const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
       const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText, reasonEl);
       lastQuizResult.reason = reason;
@@ -2118,13 +2120,15 @@ ${seenList}
         const fetched = await fetchSpotifyCover(result.artist, result.album);
         result._coverUrl = fetched.imageUrl || null;
         result._spotifyUrl = fetched.spotifyUrl;
+        result._bandcampUrl = fetched.bandcampUrl;
       }
       if (result._coverUrl) {
-        coverHtml = result._spotifyUrl
-          ? `<a class="quiz-result-cover-link" href="${result._spotifyUrl}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
+        const coverLink = result._spotifyUrl || result._bandcampUrl;
+        coverHtml = coverLink
+          ? `<a class="quiz-result-cover-link" href="${coverLink}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
           : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
       }
-      ctaHtml = streamingBtnsHtml(result.artist, result.album, result._spotifyUrl);
+      ctaHtml = streamingBtnsHtml(result.artist, result.album, result._spotifyUrl, result._bandcampUrl);
     }
 
     let stockRecoHtml = '';
@@ -2397,7 +2401,14 @@ ${seenList}
       clearTimeout(tid);
       const result = res.ok ? (await res.json()) : {};
       console.log('[cover]', result.imageUrl ? '✓' : '✗', artist, '-', album);
-      if (result.imageUrl) _spotifyCacheSet(cacheKey, result);
+      if (result.imageUrl) { _spotifyCacheSet(cacheKey, result); return result; }
+      // Spotify 沒有 → 回頭問 Bandcamp（冷門／獨立發行常只在這裡有）
+      const bc = await fetchBandcampCover(artist, album);
+      if (bc.imageUrl || bc.bandcampUrl) {
+        const merged = { ...result, imageUrl: bc.imageUrl || null, bandcampUrl: bc.bandcampUrl || null };
+        if (merged.imageUrl) _spotifyCacheSet(cacheKey, merged);
+        return merged;
+      }
       return result;
     } catch(e) {
       clearTimeout(tid);
@@ -2406,14 +2417,34 @@ ${seenList}
     }
   }
 
+  // Bandcamp 封面／直連：走 Worker 的 /bandcamp-search（站內 autocomplete JSON，附 KV 永久快取）
+  async function fetchBandcampCover(artist, album) {
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 8000);
+    try {
+      const res = await fetch(
+        `${WORKER_URL}/bandcamp-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(tid);
+      const r = res.ok ? (await res.json()) : {};
+      console.log('[bandcamp]', r.imageUrl ? '✓' : (r.bandcampUrl ? '~' : '✗'), artist, '-', album);
+      return r;
+    } catch(e) {
+      clearTimeout(tid);
+      console.warn('[bandcamp] exception:', e);
+      return {};
+    }
+  }
+
   // 串流按鈕：三個平台都用「一定可點」的連結（手機也保證能按）
   // Spotify 若有 /spotify-search 回傳的專輯直連就用，否則用搜尋；Apple/YT 一律用搜尋連結
-  function streamingBtnsHtml(artist, album, spotifyUrl) {
+  function streamingBtnsHtml(artist, album, spotifyUrl, bandcampUrl) {
     const q = encodeURIComponent(`${artist || ''} ${album || ''}`.trim());
     const apple = `https://music.apple.com/tw/search?term=${q}`;
     const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
     const yt = `https://music.youtube.com/search?q=${q}`;
-    const bandcamp = `https://bandcamp.com/search?q=${q}`;
+    const bandcamp = bandcampUrl || `https://bandcamp.com/search?q=${q}`;
     return '<div class="streaming-btns">'
       + `<a class="streaming-btn" href="${apple}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
       + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
