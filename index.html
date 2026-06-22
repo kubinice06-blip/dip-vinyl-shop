@@ -719,6 +719,7 @@
   onAuthStateChanged(auth, (user) => {
     currentUser = user;
     authReady = true;
+    if (user) upsertUserProfile(user);
     updateAuthUI();
     // 若正在看卡冊，登入狀態改變時重畫（卡冊不是 main-tab，故用 currentView 判斷，
     // 才能在直接重新整理卡冊頁、Firebase 稍後才回復登入狀態時補上重畫）
@@ -726,6 +727,25 @@
       renderCollection();
     }
   });
+
+  // 把會員基本資料寫進 users/{uid}，供後台「會員管理」用；fire-and-forget
+  // createdAt 只在第一次建立時寫入，之後每次登入只更新 lastSeenAt
+  async function upsertUserProfile(user) {
+    if (!user) return;
+    try {
+      const uref = doc(db, 'users', user.uid);
+      const snap = await getDoc(uref);
+      const base = {
+        uid: user.uid,
+        email: user.email || '',
+        displayName: user.displayName || '',
+        photoURL: user.photoURL || '',
+        lastSeenAt: Date.now()
+      };
+      if (!snap.exists()) base.createdAt = Date.now();
+      await setDoc(uref, base, { merge: true });
+    } catch (e) { /* fire-and-forget */ }
+  }
 
   function updateAuthUI() {
     const el = document.getElementById('authStatus');

@@ -200,9 +200,8 @@
 <div class="lock" id="lockScreen">
   <div class="lock-box">
     <div class="lock-title">dip vinyl shop — 後台</div>
-    <input type="password" class="lock-input" id="pwInput" placeholder="輸入密碼…">
-    <button class="lock-btn" id="pwBtn">進入</button>
-    <div class="lock-err" id="pwErr">密碼錯誤</div>
+    <button class="lock-btn" id="googleBtn">用 Google 登入（限管理員）</button>
+    <div class="lock-err" id="pwErr">此帳號非管理員，無法進入</div>
   </div>
 </div>
 
@@ -219,6 +218,7 @@
   <button class="tab-btn" data-tab="reels">Reels 管理</button>
   <button class="tab-btn" data-tab="banner">首頁 Banner</button>
   <button class="tab-btn" data-tab="cards">卡牌校正</button>
+  <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
 </div>
 
@@ -771,28 +771,25 @@
     </div>
   </div>
 
+  <!-- 會員管理 -->
+  <div class="right-panel" id="panel-members">
+    <div style="max-width:880px;">
+      <div class="section">
+        <div class="section-label">會員管理</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">用 Google 登入過的會員清單。資料僅供店家營運管理使用，請勿外流。點「卡冊」可載入該會員收藏的張數。</p>
+        <div id="membersStat" style="font-size:12px;color:var(--black);font-weight:700;margin-bottom:12px;">尚未載入</div>
+        <div id="membersList" style="font-size:12px;color:var(--gray);">尚未載入</div>
+      </div>
+    </div>
+  </div>
+
   </div><!-- end right-area -->
 </div><!-- end site-layout -->
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-  // 密碼
-  const PASSWORD = 'dip2026';
-  const lockEl = document.getElementById('lockScreen');
-  if (sessionStorage.getItem('dip_admin') === '1') lockEl.classList.add('hidden');
-  document.getElementById('pwBtn').addEventListener('click', checkPw);
-  document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key === 'Enter') checkPw(); });
-  function checkPw() {
-    if (document.getElementById('pwInput').value === PASSWORD) {
-      sessionStorage.setItem('dip_admin', '1');
-      lockEl.classList.add('hidden');
-    } else {
-      document.getElementById('pwErr').style.display = 'block';
-      document.getElementById('pwInput').value = '';
-    }
-  }
+  import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   // Tab 切換（consolidated handler）
   document.querySelector('.tab-bar').addEventListener('click', e => {
@@ -808,6 +805,7 @@
     if (tab === 'questions') loadQuizQuestions();
     if (tab === 'reels') loadAdminReels();
     if (tab === 'banner') loadBanner();
+    if (tab === 'members') loadMembers();
     if (tab === 'usage') loadUsage();
   });
 
@@ -821,6 +819,31 @@
   });
 
   const db = getFirestore(app);
+
+  // ───────── 管理員登入（Firebase Google，限定本人）─────────
+  // 規則用 request.auth.token.email 認管理員，所以後台必須用 Firebase 帳號登入，
+  // 純前端密碼擋不住直接讀資料庫的人。
+  const ADMIN_EMAIL = 'kubinice06@gmail.com';
+  const auth = getAuth(app);
+  const lockEl = document.getElementById('lockScreen');
+  const googleBtn = document.getElementById('googleBtn');
+  const pwErr = document.getElementById('pwErr');
+  googleBtn?.addEventListener('click', async () => {
+    try { await signInWithPopup(auth, new GoogleAuthProvider()); }
+    catch (e) { if (pwErr) { pwErr.textContent = '登入失敗，請再試一次'; pwErr.style.display = 'block'; } }
+  });
+  onAuthStateChanged(auth, (user) => {
+    if (user && user.email === ADMIN_EMAIL) {
+      lockEl.classList.add('hidden');
+    } else {
+      lockEl.classList.remove('hidden');
+      if (user) {  // 登入了但不是管理員
+        if (pwErr) { pwErr.textContent = `${user.email} 非管理員，無法進入`; pwErr.style.display = 'block'; }
+        signOut(auth);
+      }
+    }
+  });
+
   const CLOUDINARY_CLOUD = 'ddod3zcpy';
   const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
@@ -2742,6 +2765,56 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   // 切到「卡牌校正」分頁時載入清單
   document.querySelector('.tab-btn[data-tab="cards"]')?.addEventListener('click', loadCatalog);
+
+  // ───────── 會員管理 ─────────
+  const fmtDate = (ms) => {
+    if (!ms) return '—';
+    const d = new Date(ms);
+    return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+  };
+
+  async function loadMembers() {
+    const list = document.getElementById('membersList');
+    const stat = document.getElementById('membersStat');
+    if (!list) return;
+    list.textContent = '載入中…';
+    try {
+      const snap = await getDocs(collection(db, 'users'));
+      const users = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        .sort((a, b) => (b.createdAt || b.lastSeenAt || 0) - (a.createdAt || a.lastSeenAt || 0));
+      if (stat) stat.textContent = `共 ${users.length} 位會員`;
+      if (!users.length) { list.textContent = '還沒有會員登入過。'; return; }
+      list.innerHTML = users.map(u => {
+        const name = (u.displayName || '（未命名）').replace(/</g, '&lt;');
+        const email = (u.email || '—').replace(/</g, '&lt;');
+        const avatar = u.photoURL
+          ? `<img src="${u.photoURL.replace(/"/g, '&quot;')}" alt="" style="width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0;">`
+          : `<div style="width:36px;height:36px;border-radius:50%;background:var(--line);flex-shrink:0;"></div>`;
+        return `<div style="display:flex;align-items:center;gap:12px;padding:10px;border:1px solid var(--line);margin-bottom:6px;">
+          ${avatar}
+          <div style="flex:1;min-width:0;">
+            <div style="font-weight:700;color:var(--black);">${name}</div>
+            <div style="color:var(--gray);font-size:11px;word-break:break-all;">${email}</div>
+          </div>
+          <div style="text-align:right;font-size:10px;color:var(--gray);line-height:1.7;flex-shrink:0;">
+            <div>註冊 ${fmtDate(u.createdAt)}</div>
+            <div>最近 ${fmtDate(u.lastSeenAt)}</div>
+            <button class="btn-member-cards" data-uid="${u.id}" style="margin-top:4px;background:none;border:1px solid var(--line);color:var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">卡冊</button>
+          </div>
+        </div>`;
+      }).join('');
+      list.querySelectorAll('.btn-member-cards').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          btn.disabled = true; btn.textContent = '…';
+          try {
+            const cs = await getDocs(collection(db, 'collections', btn.dataset.uid, 'cards'));
+            const total = cs.docs.reduce((n, d) => n + (d.data().count || 1), 0);
+            btn.textContent = `${cs.size} 種 / ${total} 張`;
+          } catch (e) { btn.textContent = '讀取失敗'; btn.disabled = false; }
+        });
+      });
+    } catch (e) { list.textContent = '載入失敗：' + (e.message || e); }
+  }
 </script>
 </body>
 </html>

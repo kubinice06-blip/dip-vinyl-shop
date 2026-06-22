@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 管理員 = 店家本人的 Google 帳號（後台用 Firebase 登入後，token 帶 email）
+    function isAdmin() {
+      return request.auth != null && request.auth.token.email == 'kubinice06@gmail.com';
+    }
+
+    // ── 店家內容：前台要顯示，所以所有人可讀；只有管理員可寫 ──
+    match /items/{id}           { allow read: if true; allow write: if isAdmin(); }
+    match /archives/{id}        { allow read: if true; allow write: if isAdmin(); }
+    match /quiz_questions/{id}  { allow read: if true; allow write: if isAdmin(); }
+    match /reels/{id}           { allow read: if true; allow write: if isAdmin(); }
+    match /settings/{id}        { allow read: if true; allow write: if isAdmin(); }
+    match /album_overrides/{id} { allow read: if true; allow write: if isAdmin(); }
+
+    // ── 全站抽卡目錄：任何人（含未登入玩家）都能寫入抽到的卡，後台才看得到所有人抽的 ──
+    // 非個資（只有專輯名/封面/介紹），讀取開放無妨。
+    match /card_catalog/{id}    { allow read: if true; allow write: if true; }
+
+    // ── 使用量統計：僅管理員 ──
+    match /api_usage/{id}       { allow read, write: if isAdmin(); }
+
+    // ── 會員資料（含 email）：只有管理員能讀全部；會員只能讀寫自己那筆 ──
+    match /users/{uid} {
+      allow read:  if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // ── 會員卡冊：管理員可讀（看收藏張數）；會員只能讀寫自己的 ──
+    match /collections/{uid}/cards/{cardId} {
+      allow read:  if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
