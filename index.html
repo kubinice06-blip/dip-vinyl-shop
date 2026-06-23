@@ -3557,7 +3557,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     return canvas;
   }
 
-  const RARITY_COLOR = { legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
+  const RARITY_COLOR = { hall: '#9aa0a8', legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
 
   // 卡牌分享圖（比照 buildGpCanvas，加上稀有度與三維星星）
   async function buildCardCanvas(card, desc) {
@@ -3590,7 +3590,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       } catch (e) {}
     }
     // 稀有度外框
-    ctx.strokeStyle = tColor; ctx.lineWidth = tier === 'legendary' ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
+    ctx.strokeStyle = tColor; ctx.lineWidth = (tier === 'hall' || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
     ctx.strokeRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
 
     // 藝人 / 專輯
@@ -3606,17 +3606,20 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     // 三維星星
     const rows = [['冷門度', card.ratings?.obscurity], ['經典度', card.ratings?.classic], ['入耳難度', card.ratings?.accessibility]];
     rows.forEach(([lab, val]) => {
-      const n = Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
+      // 殿堂卡的經典度固定顯示 7 顆（公認殿堂神作）；其餘照原本 5 星評分
+      const hallClassic = tier === 'hall' && lab === '經典度';
+      const total = hallClassic ? 7 : 5;
+      const n = hallClassic ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
       ctx.font = '400 30px "Space Mono", monospace'; const labStr = lab + '   ';
       const lw = ctx.measureText(labStr).width;
-      ctx.font = '400 36px "Space Mono", monospace'; const sw = ctx.measureText('★★★★★').width;
+      ctx.font = '400 36px "Space Mono", monospace'; const sw = ctx.measureText('★'.repeat(total)).width;
       const startX = (W - (lw + sw)) / 2;
       ctx.textAlign = 'left';
       ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(labStr, startX, y);
       ctx.font = '400 36px "Space Mono", monospace';
       ctx.fillStyle = '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
       const fw = ctx.measureText(filled).width;
-      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(5 - n), startX + lw + fw, y);
+      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), startX + lw + fw, y);
       y += 56;
     });
     y += 18;
