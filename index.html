@@ -399,7 +399,7 @@
     .rating-stars .on { color: var(--black); }
     .rating-stars .off { color: var(--line); }
     /* 殿堂經典 7 星：閃亮銀色漸層＋掃光動畫（整排共用一道漸層）*/
-    .rating-stars.hall { background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 2.6s linear infinite; }
+    .rating-stars.hall { background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 7.8s linear infinite; }
     .rating-stars.hall .on, .rating-stars.hall .off { color: transparent; }
     @keyframes silverShimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
@@ -444,9 +444,9 @@
     /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 獨特綠 稀有藍 普通灰 */
     /* 殿堂卡銀框：閃亮銀色漸層＋掃光動畫（::after 疊一圈，用 mask 挖空中間只留邊框，不影響排版）*/
     .collect-card.rarity-hall { position: relative; }
-    .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 2.6s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
-    .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
-    .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
+    .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
     .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
@@ -468,7 +468,7 @@
     .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
-    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
+    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
 
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
