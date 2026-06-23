@@ -34,7 +34,7 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace;
-      --silver-shine: linear-gradient(115deg,#8e939b 0%,#f2f4f7 28%,#ffffff 48%,#aeb3bb 66%,#9aa0a8 100%); }
+      --silver-shine: linear-gradient(115deg,#767b84 0%,#b4b9c1 25%,#dde0e5 50%,#b4b9c1 75%,#767b84 100%); }
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
 
     .logo-hero {
@@ -392,15 +392,16 @@
     .homehub-card.feature:hover { background: #000; }
 
     /* 專輯三維評分（五顆星） */
-    .album-ratings { display: flex; flex-direction: column; gap: 7px; max-width: 280px; margin: 16px auto 4px; }
-    .rating-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .rating-label { font-size: 10px; letter-spacing: 0.1em; color: var(--gray); text-transform: uppercase; white-space: nowrap; }
+    .album-ratings { display: flex; flex-direction: column; gap: 7px; width: fit-content; max-width: 320px; margin: 16px auto 4px; }
+    .rating-row { display: flex; align-items: center; justify-content: flex-start; gap: 12px; }
+    .rating-label { font-size: 10px; letter-spacing: 0.1em; color: var(--gray); text-transform: uppercase; white-space: nowrap; width: 72px; flex-shrink: 0; }
     .rating-stars { font-size: 13px; letter-spacing: 2px; line-height: 1; }
     .rating-stars .on { color: var(--black); }
     .rating-stars .off { color: var(--line); }
-    /* 殿堂經典 7 星：閃亮銀色漸層（整排共用一道漸層掃過）*/
-    .rating-stars.hall { background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; }
+    /* 殿堂經典 7 星：閃亮銀色漸層＋掃光動畫（整排共用一道漸層）*/
+    .rating-stars.hall { background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 2.6s linear infinite; }
     .rating-stars.hall .on, .rating-stars.hall .off { color: transparent; }
+    @keyframes silverShimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
     /* 遊戲畫面的「返回首頁」列 */
     .hub-back-btn {
@@ -441,11 +442,11 @@
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
     /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 獨特綠 稀有藍 普通灰 */
-    /* 殿堂卡銀框：閃亮銀色漸層（用 ::after 疊一層漸層邊框，不影響排版）*/
+    /* 殿堂卡銀框：閃亮銀色漸層＋掃光動畫（::after 疊一圈，用 mask 挖空中間只留邊框，不影響排版）*/
     .collect-card.rarity-hall { position: relative; }
-    .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; border: 4px solid transparent; border-image: var(--silver-shine) 1; }
-    .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 2.6s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
+    .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
     .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
     .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
@@ -467,7 +468,7 @@
     .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
-    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 2.6s linear infinite; }
 
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
@@ -3579,8 +3580,8 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     // 殿堂用閃亮銀色漸層（與 CSS --silver-shine 一致）
     const silverGrad = (x0, y0, x1, y1) => {
       const g = ctx.createLinearGradient(x0, y0, x1, y1);
-      g.addColorStop(0, '#8e939b'); g.addColorStop(0.28, '#f2f4f7'); g.addColorStop(0.5, '#ffffff');
-      g.addColorStop(0.66, '#aeb3bb'); g.addColorStop(1, '#9aa0a8');
+      g.addColorStop(0, '#767b84'); g.addColorStop(0.25, '#b4b9c1'); g.addColorStop(0.5, '#dde0e5');
+      g.addColorStop(0.75, '#b4b9c1'); g.addColorStop(1, '#767b84');
       return g;
     };
     ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
@@ -3620,23 +3621,25 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     ctx.fillStyle = '#111111';
     ctx.fillText(_fitText(ctx, card.album || '', W - PAD * 2, `700 ${albumSz}px "Space Mono", monospace`), W / 2, y); y += 64;
 
-    // 三維星星
+    // 三維星星（左對齊：標籤固定欄寬、各列星星左緣對齊，整塊置中；殿堂經典 7 顆）
     const rows = [['冷門度', card.ratings?.obscurity], ['經典度', card.ratings?.classic], ['入耳難度', card.ratings?.accessibility]];
+    ctx.font = '400 30px "Space Mono", monospace';
+    const labelColW = Math.max(...rows.map(([lab]) => ctx.measureText(lab).width)) + 40;
+    ctx.font = '400 36px "Space Mono", monospace';
+    const blockX = (W - (labelColW + ctx.measureText('★★★★★★★').width)) / 2;
+    const starsX = blockX + labelColW;
+    ctx.textAlign = 'left';
     rows.forEach(([lab, val]) => {
-      // 殿堂卡的經典度固定顯示 7 顆（公認殿堂神作）；其餘照原本 5 星評分
       const hallClassic = tier === 'hall' && lab === '經典度';
       const total = hallClassic ? 7 : 5;
       const n = hallClassic ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
-      ctx.font = '400 30px "Space Mono", monospace'; const labStr = lab + '   ';
-      const lw = ctx.measureText(labStr).width;
-      ctx.font = '400 36px "Space Mono", monospace'; const sw = ctx.measureText('★'.repeat(total)).width;
-      const startX = (W - (lw + sw)) / 2;
-      ctx.textAlign = 'left';
-      ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(labStr, startX, y);
+      ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(lab, blockX, y);
       ctx.font = '400 36px "Space Mono", monospace';
-      ctx.fillStyle = hallClassic ? silverGrad(startX + lw, y - 24, startX + lw + sw, y + 24) : '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
+      const filled = '★'.repeat(n);
+      ctx.fillStyle = hallClassic ? silverGrad(starsX, y - 24, starsX + ctx.measureText('★'.repeat(total)).width, y + 24) : '#111111';
+      ctx.fillText(filled, starsX, y);
       const fw = ctx.measureText(filled).width;
-      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), startX + lw + fw, y);
+      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), starsX + fw, y);
       y += 56;
     });
     y += 18;
