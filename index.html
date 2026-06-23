@@ -397,6 +397,7 @@
     .rating-stars { font-size: 13px; letter-spacing: 2px; line-height: 1; }
     .rating-stars .on { color: var(--black); }
     .rating-stars .off { color: var(--line); }
+    .rating-stars.hall .on { color: #9aa0a8; } /* 殿堂經典 7 星：銀色 */
 
     /* 遊戲畫面的「返回首頁」列 */
     .hub-back-btn {
@@ -2511,8 +2512,8 @@ ${seenList}
   }
   // hall=true：殿堂卡，經典度固定 7 顆星（公認殿堂神作），冷門度／入耳難度照原本
   function albumRatingsHtml(r, hall = false) {
-    const row = (label, n, total = 5) => `<div class="rating-row"><span class="rating-label">${label}</span><span class="rating-stars">${ratingStars(n, total)}</span></div>`;
-    return `<div class="album-ratings">${row('冷門度', r.obscurity)}${hall ? row('經典度', 7, 7) : row('經典度', r.classic)}${row('入耳難易度', r.accessibility)}</div>`;
+    const row = (label, n, total = 5, cls = '') => `<div class="rating-row"><span class="rating-label">${label}</span><span class="rating-stars${cls ? ' ' + cls : ''}">${ratingStars(n, total)}</span></div>`;
+    return `<div class="album-ratings">${row('冷門度', r.obscurity)}${hall ? row('經典度', 7, 7, 'hall') : row('經典度', r.classic)}${row('入耳難易度', r.accessibility)}</div>`;
   }
   // 從 Worker 取評分（KV 永久快取，同張碟星數一致），填進結果頁插槽
   async function renderAlbumRatings(artist, album, containerEl, hall = false) {
@@ -3619,7 +3620,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       ctx.textAlign = 'left';
       ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(labStr, startX, y);
       ctx.font = '400 36px "Space Mono", monospace';
-      ctx.fillStyle = '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
+      ctx.fillStyle = hallClassic ? '#9aa0a8' : '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
       const fw = ctx.measureText(filled).width;
       ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), startX + lw + fw, y);
       y += 56;
