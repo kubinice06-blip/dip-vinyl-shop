@@ -33,7 +33,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace; }
+    :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace;
+      --silver-shine: linear-gradient(115deg,#8e939b 0%,#f2f4f7 28%,#ffffff 48%,#aeb3bb 66%,#9aa0a8 100%); }
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
 
     .logo-hero {
@@ -397,7 +398,9 @@
     .rating-stars { font-size: 13px; letter-spacing: 2px; line-height: 1; }
     .rating-stars .on { color: var(--black); }
     .rating-stars .off { color: var(--line); }
-    .rating-stars.hall .on { color: #9aa0a8; } /* 殿堂經典 7 星：銀色 */
+    /* 殿堂經典 7 星：閃亮銀色漸層（整排共用一道漸層掃過）*/
+    .rating-stars.hall { background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; }
+    .rating-stars.hall .on, .rating-stars.hall .off { color: transparent; }
 
     /* 遊戲畫面的「返回首頁」列 */
     .hub-back-btn {
@@ -438,9 +441,11 @@
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
     /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 獨特綠 稀有藍 普通灰 */
-    .collect-card.rarity-hall { box-shadow: inset 0 0 0 3px #c0c4cc, inset 0 0 0 6px #eef0f2; }
-    .rarity-hall .cc-rarity { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .cd-rarity.rarity-hall { font-weight: 700; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    /* 殿堂卡銀框：閃亮銀色漸層（用 ::after 疊一層漸層邊框，不影響排版）*/
+    .collect-card.rarity-hall { position: relative; }
+    .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; border: 4px solid transparent; border-image: var(--silver-shine) 1; }
+    .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
     .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
@@ -462,7 +467,7 @@
     .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
-    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: linear-gradient(90deg,#9aa0a8,#dfe2e7,#9aa0a8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
@@ -3571,10 +3576,18 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     const canvas = document.createElement('canvas');
     canvas.width = W; canvas.height = H;
     const ctx = canvas.getContext('2d');
+    // 殿堂用閃亮銀色漸層（與 CSS --silver-shine 一致）
+    const silverGrad = (x0, y0, x1, y1) => {
+      const g = ctx.createLinearGradient(x0, y0, x1, y1);
+      g.addColorStop(0, '#8e939b'); g.addColorStop(0.28, '#f2f4f7'); g.addColorStop(0.5, '#ffffff');
+      g.addColorStop(0.66, '#aeb3bb'); g.addColorStop(1, '#9aa0a8');
+      return g;
+    };
     ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
     ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
     // 頭部：稀有度
-    ctx.fillStyle = tColor; ctx.font = '700 50px "Space Mono", monospace';
+    ctx.fillStyle = tier === 'hall' ? silverGrad(W / 2 - 140, 64, W / 2 + 140, 120) : tColor;
+    ctx.font = '700 50px "Space Mono", monospace';
     ctx.fillText(card.rarity?.label || '收藏', W / 2, 92);
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, 176); ctx.lineTo(W - PAD, 176); ctx.stroke();
@@ -3593,7 +3606,8 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       } catch (e) {}
     }
     // 稀有度外框
-    ctx.strokeStyle = tColor; ctx.lineWidth = (tier === 'hall' || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
+    ctx.strokeStyle = tier === 'hall' ? silverGrad(COVER_X, COVER_Y, COVER_X + COVER_SIZE, COVER_Y + COVER_SIZE) : tColor;
+    ctx.lineWidth = (tier === 'hall' || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
     ctx.strokeRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
 
     // 藝人 / 專輯
@@ -3620,7 +3634,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       ctx.textAlign = 'left';
       ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(labStr, startX, y);
       ctx.font = '400 36px "Space Mono", monospace';
-      ctx.fillStyle = hallClassic ? '#9aa0a8' : '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
+      ctx.fillStyle = hallClassic ? silverGrad(startX + lw, y - 24, startX + lw + sw, y + 24) : '#111111'; const filled = '★'.repeat(n); ctx.fillText(filled, startX + lw, y);
       const fw = ctx.measureText(filled).width;
       ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), startX + lw + fw, y);
       y += 56;
