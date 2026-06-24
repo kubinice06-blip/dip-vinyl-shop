@@ -934,7 +934,18 @@
       const rarity = c.hall
         ? { tier: 'hall', label: '殿堂', sum: null }
         : (rarityOverrideOf(c) || rarityFromRatings(ratings));
-      return { ...c, ratings, rarity, descOverride: ov?.desc || null };
+      // 舊卡沒存封面：即時抓 Spotify 補上，並寫回 Firestore（之後就永久有）
+      let coverUrl = c.coverUrl || '';
+      if (!coverUrl && c.artist) {
+        try {
+          const res = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
+          if (res.ok) coverUrl = (await res.json()).imageUrl || '';
+        } catch (e) {}
+        if (coverUrl) {
+          setDoc(doc(db, 'collections', currentUser.uid, 'cards', c.cardId), { coverUrl }, { merge: true }).catch(() => {});
+        }
+      }
+      return { ...c, coverUrl, ratings, rarity, descOverride: ov?.desc || null };
     }));
     drawCollection();
   }
