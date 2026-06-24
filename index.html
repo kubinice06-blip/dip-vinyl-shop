@@ -1070,6 +1070,13 @@
       cover = lastQuizResult._coverUrl || '';
     }
     btn.disabled = true;
+    // reel 等情況 _coverUrl 可能還沒非同步抓到，這裡主動補抓 Spotify 封面（與「我的紀錄」一致）
+    if (!cover) {
+      try {
+        const res = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
+        if (res.ok) cover = (await res.json()).imageUrl || '';
+      } catch (e) {}
+    }
     // desc 不存——卡冊詳情一律顯示 /album-desc 的專輯簡介（見 openCardDetail）
     const r = await addCardToCollection({ artist, album, _coverUrl: cover, hall: btn.dataset.hall === '1' });
     if (r === 'new') btn.textContent = '✓ 已收進卡冊';
