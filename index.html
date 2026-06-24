@@ -986,10 +986,12 @@
     el.querySelector('#collGroup')?.addEventListener('click', () => { collGroup = !collGroup; drawCollection(); });
   }
 
-  // 用 artist + album 對回 quizReels，找出對應的 IG 貼文連結（reel 的 album = title）
+  // 用 artist + album 對回 quizReels（reel 的 album = title）
+  function reelFor(artist, album) {
+    return quizReels.find(r => (r.artist || '') === (artist || '') && (r.title || '') === (album || '')) || null;
+  }
   function reelUrlFor(artist, album) {
-    const r = quizReels.find(r => (r.artist || '') === (artist || '') && (r.title || '') === (album || '') && r.url);
-    return r?.url || '';
+    return reelFor(artist, album)?.url || '';
   }
 
   // 卡片詳情：介紹 + 星星 + 聆聽連結
@@ -1017,8 +1019,12 @@
     // 介紹一律用事實型專輯簡介（/album-desc，與類型挑片同一套「唱片行熟客」生成邏輯、server 端快取）；
     // 後台手動校正 descOverride 優先。不再讀抽卡當下存的 desc——這樣新舊卡、心情選歌與類型挑片全統一，
     // 也讓舊卡（曾存到心理測驗式描述的）自動改顯示專輯簡介。
+    const _reel = reelFor(c.artist, c.album);
     if (c.descOverride) {
       document.getElementById('cdDesc').textContent = c.descOverride;
+    } else if (_reel && _reel.description && _reel.description.trim()) {
+      // reel 卡：照 IG 貼文內文（店家自己寫的，與剛抽到時一致），不走 /album-desc
+      document.getElementById('cdDesc').textContent = _reel.description.trim();
     } else {
       fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
         .then(r => r.ok ? r.json() : {})
