@@ -34,7 +34,11 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace;
-      --silver-shine: linear-gradient(115deg,#aeb2b9 0%,#aeb2b9 38%,#b7bbc1 41%,#ced1d6 44%,#e5e7ea 47%,#eef0f2 50%,#e5e7ea 53%,#ced1d6 56%,#b7bbc1 59%,#aeb2b9 62%,#aeb2b9 100%); }
+      --silver-shine: linear-gradient(115deg,#aeb2b9 0%,#aeb2b9 38%,#b7bbc1 41%,#ced1d6 44%,#e5e7ea 47%,#eef0f2 50%,#e5e7ea 53%,#ced1d6 56%,#b7bbc1 59%,#aeb2b9 62%,#aeb2b9 100%);
+      /* 遺珠（極冷門7星）：暗黑油彩——近黑底滲出紫/青綠/洋紅虹光 */
+      --oil-shine: linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
+      /* 異端（極難入耳7星）：暗赤血光 */
+      --crimson-shine: linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%); }
     body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; }
 
     .logo-hero {
@@ -401,6 +405,12 @@
     /* 殿堂經典 7 星：閃亮銀色漸層＋掃光動畫（整排共用一道漸層）*/
     .rating-stars.hall { background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 7.8s linear infinite; }
     .rating-stars.hall .on, .rating-stars.hall .off { color: transparent; }
+    /* 遺珠 冷門7星：暗黑油彩掃光 */
+    .rating-stars.pearl { background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 7.8s linear infinite; }
+    .rating-stars.pearl .on, .rating-stars.pearl .off { color: transparent; }
+    /* 異端 入耳難7星：暗赤血光掃光 */
+    .rating-stars.heresy { background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: silverShimmer 7.8s linear infinite; }
+    .rating-stars.heresy .on, .rating-stars.heresy .off { color: transparent; }
     @keyframes silverShimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
     /* 遊戲畫面的「返回首頁」列 */
@@ -447,6 +457,16 @@
     .collect-card.rarity-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
     .rarity-hall .cc-rarity { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .cd-rarity.rarity-hall { font-weight: 700; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    /* 遺珠 油彩框 */
+    .collect-card.rarity-pearl { position: relative; }
+    .collect-card.rarity-pearl::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--oil-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .rarity-pearl .cc-rarity { font-weight: 700; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .cd-rarity.rarity-pearl { font-weight: 700; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    /* 異端 血光框 */
+    .collect-card.rarity-heresy { position: relative; }
+    .collect-card.rarity-heresy::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background: var(--crimson-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .rarity-heresy .cc-rarity { font-weight: 700; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .cd-rarity.rarity-heresy { font-weight: 700; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .collect-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
     .collect-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
     .collect-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
@@ -469,6 +489,15 @@
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
     .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .quiz-pearl-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #6a4ea0; border-radius: 999px; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .quiz-heresy-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #a01020; border-radius: 999px; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    /* 新手禮：免費抽一張殿堂卡 */
+    .welcome-hall { margin: 16px 20px; padding: 18px 16px; text-align: center; background: #0e0f12; border-radius: 4px; position: relative; overflow: hidden; }
+    .welcome-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 2px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .welcome-hall-title { font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: 0.18em; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .welcome-hall-sub { font-size: 11px; color: #aab; margin: 8px 0 14px; line-height: 1.7; }
+    .welcome-hall-btn { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 11px 22px; background: #fff; color: #111; border: none; cursor: pointer; }
+    .welcome-hall-btn:disabled { opacity: 0.6; cursor: default; }
 
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
@@ -828,7 +857,9 @@
         count: 1,
         obtainedAt: Date.now(),
         ...(card.reelUrl ? { reelUrl: card.reelUrl } : {}),
-        ...(card.hall ? { hall: true } : {})
+        ...(card.hall ? { hall: true } : {}),
+        ...(card.pearl ? { pearl: true } : {}),
+        ...(card.heresy ? { heresy: true } : {})
       });
       return 'new';
     } catch (e) {
@@ -868,6 +899,26 @@
     return { tier, label: labels[tier] || tier, sum: null };
   }
 
+  // 三張「頂點卡」：各把一個數值軸衝到 7 星，互斥、抽中率各 ~3%（與殿堂一致）。
+  //   hall 殿堂  = 經典度7（公認神作，AI 判定）         → 亮銀
+  //   pearl 遺珠 = 冷門度7（真實聽眾數 < 門檻才算）       → 暗黑油彩
+  //   heresy 異端= 入耳難易度7（前衛/噪音怪盤，AI 判定）  → 暗赤血光
+  const SPECIAL_TIERS = {
+    hall:   { label: '殿堂', dim: 'classic',       badge: '殿堂級 ✦ 銀',   ratingCls: 'hall' },
+    pearl:  { label: '遺珠', dim: 'obscurity',     badge: '遺珠級 ✦ 油彩', ratingCls: 'pearl' },
+    heresy: { label: '異端', dim: 'accessibility', badge: '異端級 ✦ 血',   ratingCls: 'heresy' },
+  };
+  // 極冷門「遺珠」門檻：Last.fm 累積聽眾數低於此才正式算 7 星（Spotify「每月聽眾」API 不公開，用累積聽眾當代理）
+  const ULTRA_OBSCURE_MAX_LISTENERS = 300;
+  // 卡片屬於哪個頂點 tier（讀 hall/pearl/heresy 旗標）
+  function specialTierOf(card) {
+    if (!card) return null;
+    if (card.hall) return 'hall';
+    if (card.pearl) return 'pearl';
+    if (card.heresy) return 'heresy';
+    return null;
+  }
+
   // 稀有度：冷門度降權版。卡池幾乎全是冷門盤、obscurity 近乎常數（多半 4–5），
   // 拿它當主力會讓所有卡卡在同一格（之前全是獨特）。改由「經典度＋難度」決定，
   // 冷門度只在「極冷門(=5)」時 +1 加成。score 範圍 2–11。門檻為 config，可再調。
@@ -888,7 +939,80 @@
   let _collCache = [];
   let collSort = 'new'; // 'rarity' | 'new' | 'artist'
   let collGroup = false;
-  const RARITY_ORDER = { hall: 6, legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
+  const RARITY_ORDER = { hall: 8, pearl: 7, heresy: 6, legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
+
+  // 新手禮：剛註冊的玩家可免費抽一張隨機殿堂卡（僅一次）。從這份公認神作名單裡隨機挑。
+  const WELCOME_HALL_ALBUMS = [
+    { artist: 'Radiohead', album: 'OK Computer' },
+    { artist: 'Pink Floyd', album: 'The Dark Side of the Moon' },
+    { artist: 'The Beatles', album: 'Abbey Road' },
+    { artist: 'Miles Davis', album: 'Kind of Blue' },
+    { artist: 'Marvin Gaye', album: "What's Going On" },
+    { artist: 'Fleetwood Mac', album: 'Rumours' },
+    { artist: 'Nirvana', album: 'Nevermind' },
+    { artist: 'Michael Jackson', album: 'Thriller' },
+    { artist: 'The Velvet Underground', album: 'The Velvet Underground & Nico' },
+    { artist: 'Joni Mitchell', album: 'Blue' },
+    { artist: 'Stevie Wonder', album: 'Songs in the Key of Life' },
+    { artist: 'Lauryn Hill', album: 'The Miseducation of Lauryn Hill' },
+    { artist: 'David Bowie', album: 'The Rise and Fall of Ziggy Stardust and the Spiders from Mars' },
+    { artist: 'Bob Dylan', album: 'Highway 61 Revisited' },
+    { artist: 'John Coltrane', album: 'A Love Supreme' },
+    { artist: 'Kendrick Lamar', album: 'To Pimp a Butterfly' },
+    { artist: 'The Clash', album: 'London Calling' },
+    { artist: 'My Bloody Valentine', album: 'Loveless' },
+  ];
+  let welcomeHallState = 'unknown'; // 'unknown' | 'unclaimed' | 'claimed'
+
+  function welcomeBannerHtml() {
+    if (welcomeHallState !== 'unclaimed') return '';
+    return `<div class="welcome-hall">
+      <div class="welcome-hall-title">🎁 新手禮</div>
+      <div class="welcome-hall-sub">免費抽一張隨機「殿堂」銀卡<br>僅此一次，開了就沒了</div>
+      <button class="welcome-hall-btn" id="claimWelcomeHall">開啟我的殿堂卡</button>
+    </div>`;
+  }
+
+  // 載入「是否已領新手殿堂卡」狀態（讀 users/{uid}.welcomeHallClaimed）
+  async function loadWelcomeHallState() {
+    if (!currentUser) { welcomeHallState = 'unknown'; return; }
+    try {
+      const us = await getDoc(doc(db, 'users', currentUser.uid));
+      welcomeHallState = (us.exists() && us.data().welcomeHallClaimed) ? 'claimed' : 'unclaimed';
+    } catch (e) { welcomeHallState = 'claimed'; /* 讀不到就先別跳禮物，避免重複領 */ }
+  }
+
+  // 領取新手殿堂卡：隨機挑一張公認神作，存成 hall 卡，標記已領
+  async function claimWelcomeHall() {
+    if (!currentUser) { signInWithGoogle(); return; }
+    const btn = document.getElementById('claimWelcomeHall');
+    if (btn) { btn.disabled = true; btn.textContent = '開啟中…'; }
+    try {
+      const uref = doc(db, 'users', currentUser.uid);
+      const us = await getDoc(uref);
+      if (us.exists() && us.data().welcomeHallClaimed) { welcomeHallState = 'claimed'; renderCollection(); return; }
+      const pick = WELCOME_HALL_ALBUMS[Math.floor(Math.random() * WELCOME_HALL_ALBUMS.length)];
+      let cover = '';
+      try {
+        const res = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(pick.artist)}&album=${encodeURIComponent(pick.album)}`);
+        if (res.ok) cover = (await res.json()).imageUrl || '';
+      } catch (e) {}
+      await addCardToCollection({ artist: pick.artist, album: pick.album, _coverUrl: cover, reelUrl: reelUrlFor(pick.artist, pick.album), hall: true });
+      await setDoc(uref, { welcomeHallClaimed: true, welcomeHallClaimedAt: Date.now() }, { merge: true });
+      welcomeHallState = 'claimed';
+      showShareToast && showShareToast(`🎉 殿堂卡到手：${pick.artist} — ${pick.album}`);
+      renderCollection();
+    } catch (e) {
+      console.warn('[welcome] claim failed', e);
+      if (btn) { btn.disabled = false; btn.textContent = '開啟我的殿堂卡'; }
+      showShareToast && showShareToast('開啟失敗，再試一次');
+    }
+  }
+
+  // 委派：點「開啟我的殿堂卡」
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('#claimWelcomeHall')) claimWelcomeHall();
+  });
 
   async function renderCollection() {
     const el = document.getElementById('collectionContent');
@@ -909,9 +1033,10 @@
     }
     el.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">載入卡冊…</div></div>`;
     if (!quizReels.length) await loadQuizData(); // reel 卡詳情要對回 IG 貼文連結
+    await loadWelcomeHallState();
     const cards = await getMyCollection();
     if (!cards.length) {
-      el.innerHTML = `<div class="collect-empty">
+      el.innerHTML = welcomeBannerHtml() + `<div class="collect-empty">
         <div class="quiz-question" style="margin-bottom:10px;">卡冊還是空的</div>
         <div class="collect-empty-sub">去「直接來一張」或「類型挑片」抽幾張，按「收進卡冊」就會出現在這裡。</div>
       </div>`;
@@ -931,8 +1056,9 @@
         if (ov.classic) ratings.classic = ov.classic;
         if (ov.accessibility) ratings.accessibility = ov.accessibility;
       }
-      const rarity = c.hall
-        ? { tier: 'hall', label: '殿堂', sum: null }
+      const sp = specialTierOf(c);
+      const rarity = sp
+        ? { tier: sp, label: SPECIAL_TIERS[sp].label, sum: null }
         : (rarityOverrideOf(c) || rarityFromRatings(ratings));
       // 舊卡沒存封面：即時抓 Spotify 補上，並寫回 Firestore（之後就永久有）
       let coverUrl = c.coverUrl || '';
@@ -970,7 +1096,7 @@
     else if (collSort === 'new') rated.sort((a, b) => (b.obtainedAt || 0) - (a.obtainedAt || 0));
     else if (collSort === 'artist') rated.sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
 
-    const head = `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
+    const head = welcomeBannerHtml() + `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
       <div class="collect-controls">
         <select class="collect-sort" id="collSort">
           <option value="rarity"${collSort === 'rarity' ? ' selected' : ''}>稀有度 高→低</option>
@@ -982,8 +1108,8 @@
 
     let body;
     if (collGroup) {
-      const tiers = ['hall', 'legendary', 'epic', 'uncommon', 'rare', 'common'];
-      const labels = { hall: '殿堂', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
+      const tiers = ['hall', 'pearl', 'heresy', 'legendary', 'epic', 'uncommon', 'rare', 'common'];
+      const labels = { hall: '殿堂', pearl: '遺珠', heresy: '異端', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
       body = tiers.map(t => {
         const items = rated.filter(c => (c.rarity?.tier || 'common') === t);
         if (!items.length) return '';
@@ -1018,7 +1144,7 @@
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
       <div class="cd-artist">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
-      <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings, tier === 'hall') : ''}</div>
+      <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       ${(() => { const ru = c.reelUrl || reelUrlFor(c.artist, c.album); return ru ? `<a class="cd-reel-btn" href="${ru}" target="_blank" rel="noopener">📷 看 Instagram 貼文 →</a>` : ''; })()}
       <div class="cd-streaming" id="cdStreaming"></div>
@@ -1106,7 +1232,7 @@
       } catch (e) {}
     }
     // desc 不存——卡冊詳情一律顯示 /album-desc 的專輯簡介（見 openCardDetail）
-    const r = await addCardToCollection({ artist, album, _coverUrl: cover, reelUrl: reelUrlFor(artist, album), hall: btn.dataset.hall === '1' });
+    const r = await addCardToCollection({ artist, album, _coverUrl: cover, reelUrl: reelUrlFor(artist, album), hall: btn.dataset.hall === '1', pearl: btn.dataset.pearl === '1', heresy: btn.dataset.heresy === '1' });
     if (r === 'new') btn.textContent = '✓ 已收進卡冊';
     else if (r === 'dup') btn.textContent = '✓ 已在卡冊（+1）';
     else if (r === 'need-login') { signInWithGoogle(); btn.disabled = false; }
@@ -2551,21 +2677,37 @@ ${seenList}
     for (let i = 1; i <= total; i++) s += `<span class="${i <= n ? 'on' : 'off'}">★</span>`;
     return s;
   }
-  // hall=true：殿堂卡，經典度固定 7 顆星（公認殿堂神作），冷門度／入耳難度照原本
-  function albumRatingsHtml(r, hall = false) {
+  // special：'hall'|'pearl'|'heresy'|false。對應數值軸固定 7 顆星＋專屬掃光色，其餘照原本。
+  //（相容舊呼叫：傳 true 視同 'hall'）
+  function albumRatingsHtml(r, special = false) {
+    if (special === true) special = 'hall';
+    const sp = special && SPECIAL_TIERS[special] ? SPECIAL_TIERS[special] : null;
     const row = (label, n, total = 5, cls = '') => `<div class="rating-row"><span class="rating-label">${label}</span><span class="rating-stars${cls ? ' ' + cls : ''}">${ratingStars(n, total)}</span></div>`;
-    return `<div class="album-ratings">${row('冷門度', r.obscurity)}${hall ? row('經典度', 7, 7, 'hall') : row('經典度', r.classic)}${row('入耳難易度', r.accessibility)}</div>`;
+    const dimRow = (label, dim, value) => (sp && sp.dim === dim)
+      ? row(label, 7, 7, sp.ratingCls)
+      : row(label, value);
+    return `<div class="album-ratings">${dimRow('冷門度', 'obscurity', r.obscurity)}${dimRow('經典度', 'classic', r.classic)}${dimRow('入耳難易度', 'accessibility', r.accessibility)}</div>`;
   }
   // 從 Worker 取評分（KV 永久快取，同張碟星數一致），填進結果頁插槽
-  async function renderAlbumRatings(artist, album, containerEl, hall = false) {
+  async function renderAlbumRatings(artist, album, containerEl, special = false) {
     if (!containerEl || !artist || !album) return;
     const slot = containerEl.querySelector('.album-ratings-slot');
     if (!slot) return;
     try {
       const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
       const r = res.ok ? await res.json() : {};
-      if (r && r.obscurity) slot.innerHTML = albumRatingsHtml(r, hall);
+      if (r && r.obscurity) slot.innerHTML = albumRatingsHtml(r, special);
     } catch (e) {}
+  }
+
+  // 取某張專輯的真實累積聽眾數（Last.fm，worker /album-rating 回傳 _listeners）；查不到回 null
+  async function fetchAlbumListeners(artist, album) {
+    try {
+      const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
+      if (!res.ok) return null;
+      const r = await res.json();
+      return typeof r._listeners === 'number' ? r._listeners : null;
+    } catch (e) { return null; }
   }
 
   // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
@@ -3233,8 +3375,12 @@ ${NO_REFUSAL_RULE}
     let batchAttempt = 0;
     // 經典模式：約 3% 機率改推「公認殿堂神作」（偶爾出 OK Computer 這種），抽到即「殿堂」銀卡，可調
     const classicMode = Math.random() < 0.03;
+    // 極冷門模式：約 3% 改推「幾乎沒人聽過」的盤，抽到後再用真實聽眾數驗證（<門檻）才算「遺珠」油彩卡
+    const obscureMode = !classicMode && Math.random() < 0.03;
+    // 異端模式：約 3% 改推「極度難入耳的前衛/噪音/實驗怪盤」，抽到即「異端」血光卡（主觀軸，不驗數據）
+    const heresyMode = !classicMode && !obscureMode && Math.random() < 0.03;
     // 流行模式：約 5% 機率改推「流行常見盤」（大眾耳熟能詳的芭樂主流），分數天生低→多半普通卡，可調
-    const popularMode = !classicMode && Math.random() < 0.05;
+    const popularMode = !classicMode && !obscureMode && !heresyMode && Math.random() < 0.05;
     while (true) {
     try {
       const genreInfo = gpIsRandom ? null : GENRE_DATA[gpGenre];
@@ -3341,11 +3487,30 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
 直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
 [{"artist":"藝人名稱","album":"專輯名稱"}]`;
 
+      // 極冷門模式：推「冷門到幾乎查無此盤」的極稀有作品（之後用聽眾數驗證是否到「遺珠」門檻）
+      const promptObscure = `你是一位黑膠唱片店最硬核的挖盤狂。這次只推「極度冷門、幾乎沒人聽過」的作品——${gpIsRandom ? '橫跨任何曲風' : `屬於 ${genreInfo.label} 領域`}，越冷門越好：私人壓片(private press)、極小廠牌、自主發行、Bandcamp 等級、Last.fm 聽眾寥寥可數的那種。
+${seenList}- 絕對禁止任何稍有名氣、樂評常提、論壇常列的作品——只要你覺得「還算有人知道」就不要選
+- 寧可選你只隱約記得、但你 100% 確定真實存在且能在 Spotify 找到的冷盤
+- 藝人/專輯名稱完全正確、一律用原文
+- 推薦 ${N} 張不同藝人的極冷門盤，依你認為「最沒人知道」由高到低排序
+
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+
+      // 異端模式：推「極度難入耳」的前衛/噪音/實驗怪盤（主觀軸，抽到即異端卡）
+      const promptHeresy = `你是一位黑膠唱片店的前衛樂狂熱者。這次只推「極度難入耳、挑戰聽覺極限」的怪盤——${gpIsRandom ? '橫跨任何曲風' : `屬於 ${genreInfo.label} 領域中最前衛難啃的那一端`}：噪音(noise)、自由即興、自由爵士的 skronk、musique concrète、harsh/實驗電子、無調性、結構崩解那種（Merzbow、Captain Beefheart《Trout Mask Replica》、Lou Reed《Metal Machine Music》、Yoko Ono、Albert Ayler 那種等級）。
+${seenList}- 重點是「第一次聽會皺眉、難以入耳、需要門檻」，不是單純小眾好聽
+- 只推薦你 100% 確定真實存在、能在 Spotify 找到的作品，名稱完全正確、一律用原文
+- 推薦 ${N} 張不同藝人的難入耳怪盤，依「最難入耳」由高到低排序
+
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+
       let verified = null;
       const retryNote = failedAlbums.length
         ? `\n以下封面都找不到，請整批換成別的（不同藝人、不同專輯）：\n${failedAlbums.join('\n')}\n`
         : '';
-      const usePrompt = (classicMode ? promptClassic : (popularMode ? promptPopular : (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep)))) + retryNote;
+      const usePrompt = (classicMode ? promptClassic : (obscureMode ? promptObscure : (heresyMode ? promptHeresy : (popularMode ? promptPopular : (gpIsRandom ? promptRandom : (gpMode === 'fast' ? promptFastBatch : promptDeep)))))) + retryNote;
 
       const resp = await fetch(`${WORKER_URL}/claude`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -3405,10 +3570,17 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
         console.warn('[gp] all batch covers failed, showing first without cover');
         verified = { rec: recs[0], spotifyResult: { imageUrl: null, spotifyUrl: null } };
       }
+      // 極冷門模式：用真實聽眾數驗證，夠冷（< 門檻）才升格「遺珠」
+      let isPearl = false;
+      if (obscureMode) {
+        const lis = await fetchAlbumListeners(verified.rec.artist, verified.rec.album);
+        isPearl = (lis !== null && lis < ULTRA_OBSCURE_MAX_LISTENERS);
+        console.log('[gp] obscure listeners:', lis, '→ pearl:', isPearl);
+      }
       await showGpResult({
         artist: verified.rec.artist, album: verified.rec.album, reason: '',
         _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _streaming: true,
-        _hall: classicMode,
+        _hall: classicMode, _pearl: isPearl, _heresy: heresyMode,
       });
       const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
       const reason = gpIsRandom
@@ -3499,12 +3671,12 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        ${result._hall ? '<div class="quiz-hall-badge">殿堂級 ✦ 銀</div>' : ''}
+        ${result._hall ? '<div class="quiz-hall-badge">殿堂級 ✦ 銀</div>' : (result._pearl ? '<div class="quiz-pearl-badge">遺珠級 ✦ 油彩</div>' : (result._heresy ? '<div class="quiz-heresy-badge">異端級 ✦ 血</div>' : ''))}
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}
-        <button class="quiz-collect-btn" data-collect${result._hall ? ' data-hall="1"' : ''} data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
+        <button class="quiz-collect-btn" data-collect${result._hall ? ' data-hall="1"' : ''}${result._pearl ? ' data-pearl="1"' : ''}${result._heresy ? ' data-heresy="1"' : ''} data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進卡冊</button>
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
         ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
         <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>
@@ -3514,7 +3686,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('genreContent')));
     }
-    renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), result._hall);
+    renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), result._hall ? 'hall' : (result._pearl ? 'pearl' : (result._heresy ? 'heresy' : false)));
     resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
   }
 
@@ -3601,7 +3773,7 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     return canvas;
   }
 
-  const RARITY_COLOR = { hall: '#9aa0a8', legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
+  const RARITY_COLOR = { hall: '#9aa0a8', pearl: '#7a5cc0', heresy: '#c41e3a', legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
 
   // 卡牌分享圖（比照 buildGpCanvas，加上稀有度與三維星星）
   async function buildCardCanvas(card, desc) {
@@ -3612,17 +3784,31 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     const canvas = document.createElement('canvas');
     canvas.width = W; canvas.height = H;
     const ctx = canvas.getContext('2d');
-    // 殿堂用閃亮銀色漸層（與 CSS --silver-shine 一致）
+    // 三張頂點卡的掃光漸層（與 CSS 變數一致）：殿堂銀 / 遺珠油彩 / 異端血光
     const silverGrad = (x0, y0, x1, y1) => {
       const g = ctx.createLinearGradient(x0, y0, x1, y1);
       g.addColorStop(0, '#767b84'); g.addColorStop(0.25, '#b4b9c1'); g.addColorStop(0.5, '#dde0e5');
       g.addColorStop(0.75, '#b4b9c1'); g.addColorStop(1, '#767b84');
       return g;
     };
+    const oilGrad = (x0, y0, x1, y1) => {
+      const g = ctx.createLinearGradient(x0, y0, x1, y1);
+      g.addColorStop(0, '#3a2a5d'); g.addColorStop(0.28, '#2bb6a3'); g.addColorStop(0.5, '#c84ad6');
+      g.addColorStop(0.72, '#2b6fd6'); g.addColorStop(1, '#3a2a5d');
+      return g;
+    };
+    const crimsonGrad = (x0, y0, x1, y1) => {
+      const g = ctx.createLinearGradient(x0, y0, x1, y1);
+      g.addColorStop(0, '#7a1020'); g.addColorStop(0.5, '#ff3048'); g.addColorStop(1, '#7a1020');
+      return g;
+    };
+    const specialGrad = tier === 'hall' ? silverGrad : tier === 'pearl' ? oilGrad : tier === 'heresy' ? crimsonGrad : null;
+    const isSpecial = !!specialGrad;
+    const specialDim = SPECIAL_TIERS[tier]?.dim || null; // 'classic'|'obscurity'|'accessibility'
     ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
     ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
     // 頭部：稀有度
-    ctx.fillStyle = tier === 'hall' ? silverGrad(W / 2 - 140, 64, W / 2 + 140, 120) : tColor;
+    ctx.fillStyle = isSpecial ? specialGrad(W / 2 - 140, 64, W / 2 + 140, 120) : tColor;
     ctx.font = '700 50px "Space Mono", monospace';
     ctx.fillText(card.rarity?.label || '收藏', W / 2, 92);
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
@@ -3642,8 +3828,8 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
       } catch (e) {}
     }
     // 稀有度外框
-    ctx.strokeStyle = tier === 'hall' ? silverGrad(COVER_X, COVER_Y, COVER_X + COVER_SIZE, COVER_Y + COVER_SIZE) : tColor;
-    ctx.lineWidth = (tier === 'hall' || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
+    ctx.strokeStyle = isSpecial ? specialGrad(COVER_X, COVER_Y, COVER_X + COVER_SIZE, COVER_Y + COVER_SIZE) : tColor;
+    ctx.lineWidth = (isSpecial || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
     ctx.strokeRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
 
     // 藝人 / 專輯
@@ -3657,21 +3843,21 @@ ${seenList}${gpIsRandom ? '' : `- 每張都必須確實屬於 ${genreInfo.label}
     ctx.fillText(_fitText(ctx, card.album || '', W - PAD * 2, `700 ${albumSz}px "Space Mono", monospace`), W / 2, y); y += 64;
 
     // 三維星星（左對齊：標籤固定欄寬、各列星星左緣對齊，整塊置中；殿堂經典 7 顆）
-    const rows = [['冷門度', card.ratings?.obscurity], ['經典度', card.ratings?.classic], ['入耳難度', card.ratings?.accessibility]];
+    const rows = [['冷門度', 'obscurity', card.ratings?.obscurity], ['經典度', 'classic', card.ratings?.classic], ['入耳難度', 'accessibility', card.ratings?.accessibility]];
     ctx.font = '400 30px "Space Mono", monospace';
     const labelColW = Math.max(...rows.map(([lab]) => ctx.measureText(lab).width)) + 40;
     ctx.font = '400 36px "Space Mono", monospace';
     const blockX = (W - (labelColW + ctx.measureText('★★★★★★★').width)) / 2;
     const starsX = blockX + labelColW;
     ctx.textAlign = 'left';
-    rows.forEach(([lab, val]) => {
-      const hallClassic = tier === 'hall' && lab === '經典度';
-      const total = hallClassic ? 7 : 5;
-      const n = hallClassic ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
+    rows.forEach(([lab, dim, val]) => {
+      const isSpecialRow = isSpecial && dim === specialDim;
+      const total = isSpecialRow ? 7 : 5;
+      const n = isSpecialRow ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
       ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(lab, blockX, y);
       ctx.font = '400 36px "Space Mono", monospace';
       const filled = '★'.repeat(n);
-      ctx.fillStyle = hallClassic ? silverGrad(starsX, y - 24, starsX + ctx.measureText('★'.repeat(total)).width, y + 24) : '#111111';
+      ctx.fillStyle = isSpecialRow ? specialGrad(starsX, y - 24, starsX + ctx.measureText('★'.repeat(total)).width, y + 24) : '#111111';
       ctx.fillText(filled, starsX, y);
       const fw = ctx.measureText(filled).width;
       ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), starsX + fw, y);

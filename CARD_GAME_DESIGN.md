@@ -78,6 +78,15 @@
 | 4–5 | 稀有 Rare | 🔵 藍 |
 | ≤3 | 普通 Common | ⚪ 灰 |
 
+> **三張「頂點卡」（各把一個數值軸衝到 7 星，互斥、抽中率各 ~3%）：**
+> | tier | 名稱 | 衝 7 星的軸 | 判定方式 | 邊框（掃光） | 旗標 |
+> |---|---|---|---|---|---|
+> | `hall` | 殿堂 | 經典度 | AI 推公認神作（經典模式） | 亮銀 `--silver-shine` | `hall:true` |
+> | `pearl` | 遺珠 | 冷門度 | 極冷門模式 → **真實聽眾數驗證**（Last.fm 累積 < `ULTRA_OBSCURE_MAX_LISTENERS`，目前 300）才升格 | 暗黑油彩 `--oil-shine` | `pearl:true` |
+> | `heresy` | 異端 | 入耳難易度 | AI 推極難入耳的前衛/噪音怪盤（異端模式，主觀軸不驗數據） | 暗赤血光 `--crimson-shine` | `heresy:true` |
+> 互斥順序：`classicMode → obscureMode → heresyMode → popularMode`（見 `getGpResult` 內）。設定集中在 `SPECIAL_TIERS`、`ULTRA_OBSCURE_MAX_LISTENERS`（index.html）。註：Spotify「每月聽眾」API 不公開，遺珠用 Last.fm 累積聽眾數（worker `/album-rating` 的 `_listeners`）當代理。
+> **新手禮：** 剛註冊玩家可免費抽一張隨機殿堂卡，**僅一次**。從 `WELCOME_HALL_ALBUMS` 公認神作名單隨機挑，存成 `hall` 卡，並在 `users/{uid}.welcomeHallClaimed` 標記。卡冊頁（空/非空都會）頂部顯示「🎁 新手禮」橫幅，按鈕觸發 `claimWelcomeHall()`。
+>
 > **殿堂（銀）= 最稀有、沒有數值。** 不是由 score 決定，而是「經典模式」抽到的公認殿堂神作（OK Computer 等級）才會是殿堂卡。經典模式觸發機率約 3%（`Math.random() < 0.03`），抽到時結果頁顯示銀色「殿堂級」徽章、不顯示星數；收進卡冊時存 `hall: true`，卡冊以銀框＋銀字呈現、無星數。
 > **流行模式（普通卡來源）：** 另約 5% 機率（`popularMode`，與經典模式互斥）改推「大眾耳熟能詳的流行常見盤」（Ed Sheeran / Taylor Swift / 周杰倫那種大紅等級）。這類盤冷門度低、難度低、經典度也不高，score 天生低 → 多半落在普通／稀有，用來增加低階卡出現率、平衡稀有度分布。不需特殊標記，走正常 score 計算。
 > 另：可在 `RARITY_OVERRIDES`（index.html）手動指定某藝人的稀有度（目前 `dollar brand / abdullah ibrahim → epic`），優先於 score 計算。
