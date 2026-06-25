@@ -9,7 +9,7 @@
 <style>
   :root {
     --black:#111; --gray:#888; --line:#ddd; --bg:#fff; --mono:'Space Mono',monospace;
-    --hp:#111; --hp-bg:#eee; --dmg:#c11628; --gold:#b8860b;
+    --hp:#111; --hp-bg:#eee; --dmg:#c11628; --gold:#b8860b; --qi:#b8860b;
     --silver-shine:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
     --oil-shine:linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
     --crimson-shine:linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%);
@@ -20,6 +20,7 @@
   @keyframes pop { 0%{transform:scale(0.6);opacity:0;} 60%{transform:scale(1.08);} 100%{transform:scale(1);opacity:1;} }
   @keyframes flash { 0%,100%{opacity:1;} 50%{opacity:0.25;} }
   @keyframes shake { 0%,100%{transform:translateX(0);} 20%{transform:translateX(-4px);} 40%{transform:translateX(4px);} 60%{transform:translateX(-3px);} 80%{transform:translateX(3px);} }
+  @keyframes qiglow { 0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,0);} 50%{box-shadow:0 0 8px 1px rgba(184,134,11,0.7);} }
 
   .wrap { max-width:560px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column; }
   .topbar { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--black); }
@@ -38,17 +39,24 @@
   .hpbar > span { position:absolute; inset:0; display:flex; align-items:center; justify-content:flex-end; padding-right:6px; font-size:9px; font-weight:700; color:var(--gray); mix-blend-mode:difference; }
   .hpbar.dmg { animation:shake .4s; }
 
+  .qiwrap { display:flex; align-items:center; gap:6px; margin-top:5px; }
+  .qiwrap .qilab { font-size:8px; letter-spacing:0.14em; color:var(--gray); white-space:nowrap; }
+  .qibar { display:flex; gap:3px; flex:1; }
+  .qibar i { flex:1; height:7px; background:var(--hp-bg); border:1px solid var(--line); transition:background .3s,border-color .3s; }
+  .qibar i.on { background:var(--qi); border-color:var(--qi); }
+  .qibar.full { border-radius:2px; animation:qiglow 0.9s infinite; }
+  .qibar.full i { border-color:var(--qi); }
+
   .enemy-hand { display:flex; gap:4px; margin-top:8px; }
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
-  .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:230px; position:relative; }
+  .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:220px; position:relative; }
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
   .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
   .vs { align-self:center; font-weight:700; font-size:13px; color:var(--gray); letter-spacing:0.1em; }
 
   .pcard { width:100%; animation:pop .3s; text-align:left; }
-  .pcard .cover { height:0; }
   .pcard .alb { font-weight:700; line-height:1.35; margin-bottom:2px; }
   .pcard .art { color:var(--gray); font-size:9px; margin-bottom:7px; letter-spacing:0.06em; }
   .stats { display:flex; flex-direction:column; gap:3px; }
@@ -67,12 +75,14 @@
   .ace-border.ace-pearl::after { background-image:var(--oil-shine); }
   .ace-border.ace-heresy::after { background-image:var(--crimson-shine); }
 
-  .callout { min-height:42px; text-align:center; display:flex; flex-direction:column; gap:3px; align-items:center; justify-content:center; }
+  .callout { min-height:48px; text-align:center; display:flex; flex-direction:column; gap:3px; align-items:center; justify-content:center; }
   .callout .skill { font-weight:700; letter-spacing:0.14em; animation:pop .3s; }
   .callout .skill.syn { color:var(--gold); }
   .callout .skill.cnt { color:var(--dmg); }
   .callout .sub { font-size:9px; color:var(--gray); }
-  .dmgnum { font-size:22px; font-weight:700; color:var(--dmg); animation:pop .3s; }
+  .qinum { font-size:13px; font-weight:700; color:var(--qi); animation:pop .3s; }
+  .dmgnum { font-size:24px; font-weight:700; color:var(--dmg); animation:pop .3s; }
+  .ultimate-skill { font-size:15px; font-weight:700; letter-spacing:0.18em; color:var(--dmg); animation:pop .3s; }
 
   .player-zone { border-top:1px solid var(--black); padding:10px 12px 16px; }
   .hint { text-align:center; font-size:9px; color:var(--gray); letter-spacing:0.08em; margin-bottom:8px; min-height:12px; }
@@ -81,7 +91,6 @@
   .handcard { flex:0 0 112px; border:1px solid var(--line); background:#fff; padding:8px; cursor:pointer; text-align:left; font-family:var(--mono); transition:transform .12s,border-color .12s; position:relative; }
   .handcard:hover { border-color:var(--black); transform:translateY(-3px); }
   .handcard.sel { border-color:var(--black); border-width:2px; transform:translateY(-6px); }
-  .handcard.dim { opacity:0.4; }
   .handcard .alb { font-weight:700; font-size:10px; line-height:1.25; margin-bottom:1px; height:25px; overflow:hidden; }
   .handcard .art { color:var(--gray); font-size:8px; margin-bottom:6px; height:10px; overflow:hidden; }
   .attrbtns { display:flex; gap:3px; margin-top:6px; }
@@ -90,23 +99,21 @@
   .attrbtn b { display:block; font-size:11px; color:var(--gold); }
   .attrbtn:hover b { color:#fff; }
 
-  .log { max-height:96px; overflow-y:auto; border-top:1px solid var(--line); margin-top:10px; padding-top:8px; font-size:9px; line-height:1.7; color:var(--gray); }
-  .log .me { color:var(--black); }
+  .log { max-height:90px; overflow-y:auto; border-top:1px solid var(--line); margin-top:10px; padding-top:8px; font-size:9px; line-height:1.7; color:var(--gray); }
   .log .hit { color:var(--dmg); font-weight:700; }
+  .log .qi { color:var(--qi); }
 
   .overlay { position:fixed; inset:0; background:rgba(255,255,255,0.96); display:none; flex-direction:column; align-items:center; justify-content:center; gap:16px; z-index:100; padding:24px; text-align:center; }
   .overlay.show { display:flex; animation:flash .5s; }
   .overlay h1 { font-size:30px; letter-spacing:0.2em; margin:0; }
   .overlay p { color:var(--gray); margin:0; letter-spacing:0.08em; }
-  .chip-row { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; }
-  .chip { font-size:8px; border:1px solid var(--line); padding:2px 7px; letter-spacing:0.1em; color:var(--gray); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="topbar">
     <span class="title">dip · 品味對戰</span>
-    <span class="beta">BETA</span>
+    <span class="beta">BETA v3 · 氣勢</span>
     <button class="btn" id="restart">新對局</button>
   </div>
 
@@ -116,6 +123,7 @@
       <span class="meta" id="eMeta">牌庫 — · 手牌 —</span>
     </div>
     <div class="hpbar" id="eHpbar"><i id="eHpfill"></i><span id="eHptxt"></span></div>
+    <div class="qiwrap"><span class="qilab">氣勢</span><div class="qibar" id="eQi"></div></div>
     <div class="enemy-hand" id="eHand"></div>
   </div>
 
@@ -134,6 +142,7 @@
       <span class="meta" id="pMeta">牌庫 — · 連段 —</span>
     </div>
     <div class="hpbar" id="pHpbar"><i id="pHpfill"></i><span id="pHptxt"></span></div>
+    <div class="qiwrap"><span class="qilab">氣勢</span><div class="qibar" id="pQi"></div></div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
     <div class="hand" id="pHand"></div>
     <div class="log" id="log"></div>
@@ -148,22 +157,25 @@
 
 <script>
 "use strict";
-// ===== v2 規則參數（對齊 CARD_GAME_DESIGN.md 第 8 節 BATTLE_CONFIG）=====
+// ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放論破）=====
 const CFG = {
   startHp:30, deckSize:20, startHand:5, drawPerTurn:1, handLimit:7,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
-  breakBonus:4, minCounterDamage:1,
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
-  chain2Bonus:2, chain3Bonus:5,
-  ace:{ hall:{suppress:2}, pearl:{breakBonus:6}, heresy:{breakChain:true} },
+  qiMax:6,            // 氣勢槽滿 → 論破
+  qiCounter:3,        // 相剋勝充能
+  qiCounterLoser:1,   // 被剋方扣氣勢
+  qiValue:1,          // 數值勝充能（星星只剩微薄加速）
+  qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
+  counterDmg:3,       // 相剋直接壓制傷害（讀招驅動、與星數無關）
+  ultimate:6,         // 論破爆發（週期性 accent，非全部傷害）
+  ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
   fatigueStart:1, fatigueStep:1,
 };
 const ATTRS = ['classic','obscurity','accessibility'];
 const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'入耳' };
 const ACE_ZH = { hall:'殿堂', pearl:'遺珠', heresy:'異端' };
-// 相剋技能名
 const COUNTER_SKILL = { classic:'大眾共鳴', obscurity:'品味突襲', accessibility:'降維打擊' };
-// 相生技能名（key = 上一屬性 → chainNext）
 const SYN_SKILL = { classic:'品味拓荒', obscurity:'閾值突破', accessibility:'前衛收編' };
 
 // ===== 範例卡池（對戰 stats 1–5；王牌單軸 7）=====
@@ -188,32 +200,31 @@ const ACES = [
   {artist:'Merzbow',album:'Pulse Demon',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
 
-// ===== 工具 =====
 const rnd = n => Math.floor(Math.random()*n);
 const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){const j=rnd(i+1);[a[i],a[j]]=[a[j],a[i]];} return a; };
 const sleep = ms => new Promise(r=>setTimeout(r,ms));
+const clampQi = q => Math.max(0, q);
 let uid=0;
 function buildDeck(){
   const regs = shuffle(POOL).slice(0,CFG.deckSize-1);
   const ace = ACES[rnd(ACES.length)];
   return shuffle([...regs,ace].map(c=>({...c,uid:++uid})));
 }
-function chainBonus(len){ return len>=3?CFG.chain3Bonus : len===2?CFG.chain2Bonus : 0; }
+function chainQi(len){ if(len>=CFG.qiChainCap) return 0; return len>=3?CFG.qiChain3 : len===2?CFG.qiChain2 : 0; }
 
-// ===== 遊戲狀態 =====
 let G;
 function newGame(){
   G = {
-    p:{ hp:CFG.startHp, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
-    e:{ hp:CFG.startHp, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
+    p:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
+    e:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
     busy:false, over:false, sel:null, logs:[],
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
-  pushLog('對局開始。先把對手品味聲望扣到 0。', 'me');
+  pushLog('對局開始。讀對相剋＋鋪連段充滿氣勢，放【論破】爆發。', '');
   render(); document.getElementById('overlay').classList.remove('show');
 }
 function drawCard(side){
-  if(side.deck.length===0){ // 疲勞
+  if(side.deck.length===0){
     side.fatigue += 1;
     const dmg = CFG.fatigueStart + (side.fatigue-1)*CFG.fatigueStep;
     side.hp -= dmg;
@@ -222,52 +233,52 @@ function drawCard(side){
   }
   const c = side.deck.pop(); side.hand.push(c); return c;
 }
-
-// ===== 連段計算 =====
 function computeChain(side, attr){
   if(side.last!==null && CFG.chainNext[side.last]===attr) side.chain += 1;
   else side.chain = 1;
-  return { len:side.chain, bonus:chainBonus(side.chain) };
+  return { len:side.chain, qi:chainQi(side.chain) };
 }
 
-// ===== AI：普通難度（追自己連段 + 偏好高數值，含隨機）=====
+// ===== AI：普通難度（追連段、適時讀相剋、危急時放王牌）=====
 function aiMove(){
-  const hand = G.e.hand; let best=null;
-  for(const card of hand){
-    for(const attr of ATTRS){
-      let s = card[attr];
-      if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += (G.e.chain>=2?5:2);
-      if(card.ace==='hall') s += 1.5;          // 壓制價值
-      s += Math.random()*1.6;
-      if(!best || s>best.s) best={card,attr,s};
-    }
-  }
+  const hand=G.e.hand; let best=null;
+  for(const card of hand){ for(const attr of ATTRS){
+    let s=1;
+    if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += (G.e.chain>=2?3:2);
+    s += card[attr]*0.25;
+    if(card.ace==='heresy') s += (G.p.qi>=4?6:0.5);   // 對手快滿 → 解構歸零
+    if(card.ace==='hall')   s += (G.p.qi>=3?3:0.8);   // 壓制對手氣勢
+    if(card.ace==='pearl')  s += 1.4;                 // 充能加速
+    s += Math.random()*2.2;
+    if(!best||s>best.s) best={card,attr,s};
+  }}
   return best;
 }
 
-// ===== 核心結算 =====
-function resolve(pCard,pAttr,pBonus, eCard,eAttr,eBonus){
-  let pF = pCard[pAttr]+pBonus, eF = eCard[eAttr]+eBonus;
-  // 殿堂【眾望所歸】：對手最終 -2
-  if(eCard.ace==='hall') pF = Math.max(0, pF-CFG.ace.hall.suppress);
-  if(pCard.ace==='hall') eF = Math.max(0, eF-CFG.ace.hall.suppress);
+// ===== 相剋 / 數值 → 氣勢與滲透（不含連段、不含王牌 phase0）=====
+function resolveClash(pCard,pAttr, eCard,eAttr){
+  const pF = pCard[pAttr], eF = eCard[eAttr];
+  let pCounters = CFG.beats[pAttr]===eAttr;
+  let eCounters = CFG.beats[eAttr]===pAttr;
+  // 霸權：被剋方為王牌 → 取消該相剋（落入純數值）
+  if(pCounters && eCard.ace) pCounters=false;
+  if(eCounters && pCard.ace) eCounters=false;
 
-  const pCounters = CFG.beats[pAttr]===eAttr;
-  const eCounters = CFG.beats[eAttr]===pAttr;
-
-  // 相剋（被剋方為王牌 → 霸權，取消破防，落入純數值比較）
-  if(pCounters && !eCard.ace){
-    const bonus = pCard.ace==='pearl'?CFG.ace.pearl.breakBonus:CFG.breakBonus;
-    return { dmgTo:'e', dmg:Math.max(CFG.minCounterDamage,(pF+bonus)-eF), kind:'counter', by:'p', attr:pAttr, pF, eF };
+  const r = { pdQi:0, edQi:0, dmgToP:0, dmgToE:0, kind:'tie', attr:null, by:null, pF, eF };
+  if(pCounters){
+    r.pdQi += CFG.qiCounter + (pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
+    r.edQi -= CFG.qiCounterLoser; r.dmgToE += CFG.counterDmg;
+    r.kind='counter'; r.by='p'; r.attr=pAttr;
+  } else if(eCounters){
+    r.edQi += CFG.qiCounter + (eCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
+    r.pdQi -= CFG.qiCounterLoser; r.dmgToP += CFG.counterDmg;
+    r.kind='counter'; r.by='e'; r.attr=eAttr;
+  } else {
+    if(pF>eF){ r.pdQi += CFG.qiValue; r.kind='value'; r.by='p'; }
+    else if(eF>pF){ r.edQi += CFG.qiValue; r.kind='value'; r.by='e'; }
+    else r.kind='tie';
   }
-  if(eCounters && !pCard.ace){
-    const bonus = eCard.ace==='pearl'?CFG.ace.pearl.breakBonus:CFG.breakBonus;
-    return { dmgTo:'p', dmg:Math.max(CFG.minCounterDamage,(eF+bonus)-pF), kind:'counter', by:'e', attr:eAttr, pF, eF };
-  }
-  // 純數值（含霸權抵消、同屬性、無相剋）
-  if(pF>eF) return { dmgTo:'e', dmg:pF-eF, kind:'value', pF, eF, hege:(pCounters||eCounters) };
-  if(eF>pF) return { dmgTo:'p', dmg:eF-pF, kind:'value', pF, eF, hege:(pCounters||eCounters) };
-  return { dmgTo:null, dmg:0, kind:'tie', pF, eF };
+  return r;
 }
 
 // ===== 出牌流程 =====
@@ -276,149 +287,167 @@ async function play(pCard, pAttr){
   G.busy=true; G.sel=null;
   const ai = aiMove();
   const eCard=ai.card, eAttr=ai.attr;
-  // 從手牌移除
   G.p.hand = G.p.hand.filter(c=>c.uid!==pCard.uid);
   G.e.hand = G.e.hand.filter(c=>c.uid!==eCard.uid);
 
   renderHandLocked();
-  // 揭示
-  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pAttr, true);
-  document.getElementById('pSlot').classList.add('filled');
+  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pAttr); document.getElementById('pSlot').classList.add('filled');
   await sleep(280);
-  document.getElementById('eSlot').innerHTML = cardHTML(eCard, eAttr, true);
-  document.getElementById('eSlot').classList.add('filled');
+  document.getElementById('eSlot').innerHTML = cardHTML(eCard, eAttr); document.getElementById('eSlot').classList.add('filled');
   setMeta();
-  await sleep(520);
+  await sleep(500);
 
-  // 階段一前：異端【終極解構】先斷對手連鎖
-  let pBreak=false, eBreak=false;
-  if(pCard.ace==='heresy'){ G.e.chain=0; G.e.last=null; eBreak=true; callout(`<div class="skill cnt">異端【終極解構】</div><div class="sub">你斷掉了電腦的相生連鎖</div>`); await sleep(700); }
-  if(eCard.ace==='heresy'){ G.p.chain=0; G.p.last=null; pBreak=true; callout(`<div class="skill cnt">異端【終極解構】</div><div class="sub">電腦斷掉了你的相生連鎖</div>`); await sleep(700); }
+  // 階段 0：王牌即時被動
+  const aceMsgs=[];
+  if(pCard.ace==='heresy'){ if(G.e.qi>0) aceMsgs.push('異端【終極解構】→ 歸零電腦氣勢'); G.e.qi=0; }
+  if(eCard.ace==='heresy'){ if(G.p.qi>0) aceMsgs.push('異端【終極解構】→ 歸零你的氣勢'); G.p.qi=0; }
+  if(pCard.ace==='hall'){ const d=Math.min(G.e.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 電腦氣勢 -${d}`); G.e.qi=clampQi(G.e.qi-CFG.ace.hall.enemyQi); }
+  if(eCard.ace==='hall'){ const d=Math.min(G.p.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 你的氣勢 -${d}`); G.p.qi=clampQi(G.p.qi-CFG.ace.hall.enemyQi); }
+  if(aceMsgs.length){ callout(`<div class="skill cnt">${aceMsgs.join('</div><div class="skill cnt">')}</div>`); renderQi(); await sleep(750); }
 
-  // 階段一：相生
-  const pc = computeChain(G.p, pAttr); if(pBreak){ pc.bonus=0; pc.len=0; G.p.chain=0; }
-  const ec = computeChain(G.e, eAttr); if(eBreak){ ec.bonus=0; ec.len=0; G.e.chain=0; }
+  // 階段 1：相生連段
+  const pc = computeChain(G.p, pAttr), ec = computeChain(G.e, eAttr);
   const synMsgs=[];
-  if(pc.bonus>0){ synMsgs.push(`<div class="skill syn">你 · ${SYN_SKILL[G.p.last]} ×${pc.len}連</div><div class="sub">宣告數值 +${pc.bonus}</div>`); }
-  if(ec.bonus>0){ synMsgs.push(`<div class="skill syn">電腦 · ${SYN_SKILL[G.e.last]} ×${ec.len}連</div><div class="sub">宣告數值 +${ec.bonus}</div>`); }
-  if(synMsgs.length){ callout(synMsgs.join('<hr style="border:none;border-top:1px solid #eee;width:60%;margin:4px 0">')); await sleep(820); }
+  if(pc.qi>0) synMsgs.push(`<div class="skill syn">你 · ${SYN_SKILL[G.p.last]} ×${pc.len}連</div><div class="sub">氣勢 +${pc.qi}</div>`);
+  if(ec.qi>0) synMsgs.push(`<div class="skill syn">電腦 · ${SYN_SKILL[G.e.last]} ×${ec.len}連</div><div class="sub">氣勢 +${ec.qi}</div>`);
+  if(synMsgs.length){ callout(synMsgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:3px 0">')); await sleep(720); }
 
-  // 階段二：相剋 / 數值
-  const r = resolve(pCard,pAttr,pc.bonus, eCard,eAttr,ec.bonus);
+  // 階段 2：相剋 / 數值
+  const r = resolveClash(pCard,pAttr, eCard,eAttr);
+  const pdQi = r.pdQi + pc.qi, edQi = r.edQi + ec.qi;
+  G.p.qi = clampQi(G.p.qi + pdQi);
+  G.e.qi = clampQi(G.e.qi + edQi);
+  if(r.dmgToP) G.p.hp -= r.dmgToP;
+  if(r.dmgToE) G.e.hp -= r.dmgToE;
+
   let head='';
   if(r.kind==='counter'){
-    const skill = COUNTER_SKILL[r.attr];
-    const pearl = (r.by==='p'?pCard:eCard).ace==='pearl';
-    head = `<div class="skill cnt">${r.by==='p'?'你':'電腦'} · ${skill}${pearl?'＋私盤特攻':''}</div><div class="sub">破防 +${pearl?CFG.ace.pearl.breakBonus:CFG.breakBonus} ｜ 面板 ${r.pF} vs ${r.eF}</div>`;
-  } else if(r.kind==='tie'){
-    head = `<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}，無傷害</div>`;
+    const skill=COUNTER_SKILL[r.attr]; const pearl=(r.by==='p'?pCard:eCard).ace==='pearl';
+    head=`<div class="skill cnt">${r.by==='p'?'你':'電腦'} · ${skill}${pearl?'＋私盤特攻':''}</div>
+      <div class="sub">面板 ${r.pF} vs ${r.eF} ｜ 壓制 -${CFG.counterDmg}</div>
+      <div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiCounter+(pearl?CFG.ace.pearl.counterQiBonus:0)}</div>`;
+  } else if(r.kind==='value'){
+    head=`<div class="skill">數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}</div><div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiValue}</div>`;
   } else {
-    head = `<div class="skill">${r.hege?'霸權抵消 · ':''}數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}</div>`;
+    head=`<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}，無氣勢</div>`;
   }
-  callout(head + (r.dmg>0?`<div class="dmgnum">-${r.dmg}</div>`:''));
+  callout(head);
+  if(r.dmgToP) flashHp('p'); if(r.dmgToE) flashHp('e');
+  renderHp(); renderQi();
+  pushLog(clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi), r.dmgToP||r.dmgToE?'hit':'qi');
+  await sleep(820);
 
-  // 套用傷害
-  if(r.dmgTo==='e'){ G.e.hp-=r.dmg; flashHp('e'); pushLog(logLine(pCard,pAttr,eCard,eAttr,r), r.dmg>0?'hit':''); }
-  else if(r.dmgTo==='p'){ G.p.hp-=r.dmg; flashHp('p'); pushLog(logLine(pCard,pAttr,eCard,eAttr,r), r.dmg>0?'hit':''); }
-  else pushLog(logLine(pCard,pAttr,eCard,eAttr,r), '');
-  renderHp();
-  await sleep(900);
+  // 階段 3：論破（氣勢滿）
+  for(const who of ['p','e']){
+    const me=G[who], foe=G[who==='p'?'e':'p'];
+    if(me.qi>=CFG.qiMax && !G.over){
+      let dmg=CFG.ultimate;
+      foe.hp -= dmg; me.qi=0;
+      callout(`<div class="ultimate-skill">${who==='p'?'你':'電腦'} 發動【論破】</div><div class="sub">品味突襲 · 氣勢全放</div><div class="dmgnum">-${dmg}</div>`);
+      flashHp(who==='p'?'e':'p'); renderHp(); renderQi();
+      pushLog(`${who==='p'?'你':'電腦'} 氣勢滿 → 論破！對手 -${dmg}`, 'hit');
+      await sleep(950);
+      if(foe.hp<=0){ break; }
+    }
+  }
 
   // 更新連段記憶
-  G.p.last = pBreak?null:pAttr; if(pBreak) G.p.chain=0;
-  G.e.last = eBreak?null:eAttr; if(eBreak) G.e.chain=0;
+  G.p.last=pAttr; G.e.last=eAttr;
 
-  // 勝負
-  if(G.p.hp<=0||G.e.hp<=0){ return endGame(); }
+  if(G.p.hp<=0||G.e.hp<=0) return endGame();
 
-  // 抽牌 + 棄牌上限
   drawCard(G.p); drawCard(G.e);
   while(G.p.hand.length>CFG.handLimit) G.p.hand.shift();
   while(G.e.hand.length>CFG.handLimit) G.e.hand.shift();
-  if(G.p.hp<=0||G.e.hp<=0){ return endGame(); }
+  if(G.p.hp<=0||G.e.hp<=0) return endGame();
 
-  // 清場
   document.getElementById('pSlot').className='slot'; document.getElementById('pSlot').innerHTML='';
   document.getElementById('eSlot').className='slot'; document.getElementById('eSlot').innerHTML='';
   document.getElementById('callout').innerHTML='';
-  G.busy=false;
-  render();
+  G.busy=false; render();
 }
 
-function logLine(pCard,pAttr,eCard,eAttr,r){
-  const p=`你 ${pCard.album.slice(0,14)}[${ATTR_ZH[pAttr]}]`;
-  const e=`電腦 ${eCard.album.slice(0,14)}[${ATTR_ZH[eAttr]}]`;
+function clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi){
+  const p=`你 ${pCard.album.slice(0,12)}[${ATTR_ZH[pAttr]}]`, e=`電腦 ${eCard.album.slice(0,12)}[${ATTR_ZH[eAttr]}]`;
   if(r.kind==='tie') return `${p} ╳ ${e} → 平手`;
-  const tgt = r.dmgTo==='e'?'電腦':'你';
-  return `${p} ╳ ${e} → ${tgt} -${r.dmg}`;
+  const tag = r.kind==='counter'?`${COUNTER_SKILL[r.attr]}`:'數值';
+  return `${p} ╳ ${e} → ${tag}｜氣勢 你${pdQi>=0?'+':''}${pdQi} 電腦${edQi>=0?'+':''}${edQi}`;
 }
 
 // ===== 渲染 =====
 function statRow(card, attr, active){
-  const v=card[attr]; const max = card.ace?7:5;
-  let bars=''; for(let i=0;i<max;i++) bars+=`<i class="${i<v?'on':''}"></i>`;
+  const v=card[attr], max=card.ace?7:5; let bars='';
+  for(let i=0;i<max;i++) bars+=`<i class="${i<v?'on':''}"></i>`;
   return `<div class="stat ${active?'act':''}"><span class="k">${ATTR_ZH[attr]}</span><span class="bars">${bars}</span></div>`;
 }
-function cardHTML(card, attr, big){
-  const ace = card.ace?` ace-border ace-${card.ace}`:'';
-  const tag = card.ace?`<span class="ace-tag ace-${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
+function cardHTML(card, attr){
+  const ace=card.ace?` ace-border ace-${card.ace}`:'';
+  const tag=card.ace?`<span class="ace-tag ace-${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
   return `<div class="pcard${ace}">${tag}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
     <div class="stats">${ATTRS.map(a=>statRow(card,a,a===attr)).join('')}</div></div>`;
 }
-function render(){ renderHp(); renderHand(); renderEnemyHand(); setMeta(); renderLog(); setHint(); }
+function render(){ renderHp(); renderQi(); renderHand(); renderEnemyHand(); setMeta(); renderLog(); setHint(); }
 function renderHp(){
-  document.getElementById('pHpfill').style.width = Math.max(0,G.p.hp)/CFG.startHp*100+'%';
-  document.getElementById('eHpfill').style.width = Math.max(0,G.e.hp)/CFG.startHp*100+'%';
-  document.getElementById('pHptxt').textContent = Math.max(0,G.p.hp)+' / '+CFG.startHp;
-  document.getElementById('eHptxt').textContent = Math.max(0,G.e.hp)+' / '+CFG.startHp;
+  document.getElementById('pHpfill').style.width=Math.max(0,G.p.hp)/CFG.startHp*100+'%';
+  document.getElementById('eHpfill').style.width=Math.max(0,G.e.hp)/CFG.startHp*100+'%';
+  document.getElementById('pHptxt').textContent=Math.max(0,G.p.hp)+' / '+CFG.startHp;
+  document.getElementById('eHptxt').textContent=Math.max(0,G.e.hp)+' / '+CFG.startHp;
+}
+function renderQi(){
+  for(const [side,id] of [['p','pQi'],['e','eQi']]){
+    const qi=G[side].qi, full=qi>=CFG.qiMax; let pips='';
+    for(let i=0;i<CFG.qiMax;i++) pips+=`<i class="${i<qi?'on':''}"></i>`;
+    const el=document.getElementById(id); el.innerHTML=pips; el.classList.toggle('full',full);
+  }
 }
 function flashHp(side){ const el=document.getElementById(side==='p'?'pHpbar':'eHpbar'); el.classList.remove('dmg'); void el.offsetWidth; el.classList.add('dmg'); }
-function renderEnemyHand(){ document.getElementById('eHand').innerHTML = G.e.hand.map(()=>`<div class="cardback"></div>`).join(''); }
+function renderEnemyHand(){ document.getElementById('eHand').innerHTML=G.e.hand.map(()=>`<div class="cardback"></div>`).join(''); }
 function renderHand(){
   const el=document.getElementById('pHand');
-  el.innerHTML = G.p.hand.map(c=>{
-    const ace = c.ace?` ace-border ace-${c.ace}`:'';
-    const tag = c.ace?`<span class="ace-tag ace-${c.ace}" style="margin-bottom:4px">${ACE_ZH[c.ace]}</span>`:'';
-    const sel = G.sel&&G.sel.uid===c.uid;
-    const attrs = sel?`<div class="attrbtns">${ATTRS.map(a=>`<button class="attrbtn" data-uid="${c.uid}" data-attr="${a}">${ATTR_ZH[a]}<b>${c[a]}</b></button>`).join('')}</div>`:'';
+  el.innerHTML=G.p.hand.map(c=>{
+    const ace=c.ace?` ace-border ace-${c.ace}`:'';
+    const tag=c.ace?`<span class="ace-tag ace-${c.ace}" style="margin-bottom:4px">${ACE_ZH[c.ace]}</span>`:'';
+    const sel=G.sel&&G.sel.uid===c.uid;
+    const attrs=sel?`<div class="attrbtns">${ATTRS.map(a=>`<button class="attrbtn" data-uid="${c.uid}" data-attr="${a}">${ATTR_ZH[a]}<b>${c[a]}</b></button>`).join('')}</div>`:'';
     return `<div class="handcard${ace}${sel?' sel':''}" data-uid="${c.uid}">${tag}<div class="alb">${c.album}</div><div class="art">${c.artist}</div>
-      <div class="stats" style="font-size:8px">${ATTRS.map(a=>statRow(c,a,sel&&false)).join('')}</div>${attrs}</div>`;
+      <div class="stats" style="font-size:8px">${ATTRS.map(a=>statRow(c,a,false)).join('')}</div>${attrs}</div>`;
   }).join('');
   el.querySelectorAll('.handcard').forEach(h=>h.addEventListener('click',e=>{
-    if(e.target.closest('.attrbtn')) return;
-    if(G.busy) return;
-    const uid=+h.dataset.uid; G.sel = G.sel&&G.sel.uid===uid?null:G.p.hand.find(c=>c.uid===uid);
+    if(e.target.closest('.attrbtn')||G.busy) return;
+    const id=+h.dataset.uid; G.sel=G.sel&&G.sel.uid===id?null:G.p.hand.find(c=>c.uid===id);
     renderHand(); setHint();
   }));
   el.querySelectorAll('.attrbtn').forEach(b=>b.addEventListener('click',()=>{
-    if(G.busy) return;
-    const c=G.p.hand.find(x=>x.uid===+b.dataset.uid);
-    if(c) play(c, b.dataset.attr);
+    if(G.busy) return; const c=G.p.hand.find(x=>x.uid===+b.dataset.uid); if(c) play(c,b.dataset.attr);
   }));
 }
 function renderHandLocked(){ G.sel=null; renderHand(); document.getElementById('hint').textContent='結算中…'; }
 function setHint(){
   const h=document.getElementById('hint');
-  if(G.sel) h.textContent=`${G.sel.album} — 選一個主打屬性發動`;
-  else { const nx = G.p.last!==null?`（接 ${ATTR_ZH[CFG.chainNext[G.p.last]]} 可續連段）`:''; h.textContent='選一張卡，再點一個主打屬性出招 '+nx; }
+  if(G.sel){ h.textContent=`${G.sel.album} — 選一個主打屬性發動`; return; }
+  let tip='選一張卡，再點一個主打屬性出招';
+  if(G.p.last!==null) tip+=`（接 ${ATTR_ZH[CFG.chainNext[G.p.last]]} 可續連段充氣勢）`;
+  if(G.p.qi>=CFG.qiMax-CFG.qiCounter) tip='⚡ 氣勢將滿 — 讀對相剋就放論破！';
+  h.textContent=tip;
 }
 function setMeta(){
   document.getElementById('eMeta').textContent=`牌庫 ${G.e.deck.length} · 手牌 ${G.e.hand.length}`;
-  const chainTxt = G.p.last!==null && G.p.chain>=1 ? `${ATTR_ZH[G.p.last]}×${G.p.chain}` : '無';
+  const chainTxt=G.p.last!==null&&G.p.chain>=1?`${ATTR_ZH[G.p.last]}×${G.p.chain}`:'無';
   document.getElementById('pMeta').textContent=`牌庫 ${G.p.deck.length} · 連段 ${chainTxt}`;
 }
 function pushLog(t,cls){ G.logs.unshift({t,cls}); if(G.logs.length>30)G.logs.pop(); renderLog(); }
 function renderLog(){ document.getElementById('log').innerHTML=G.logs.map(l=>`<div class="${l.cls}">${l.t}</div>`).join(''); }
-function callout(html){ const c=document.getElementById('callout'); c.innerHTML=html; }
+function callout(html){ document.getElementById('callout').innerHTML=html; }
 
 function endGame(){
   G.over=true; G.busy=false;
-  const win = G.e.hp<=0 && G.p.hp>0 ? true : (G.p.hp<=0 && G.e.hp>0 ? false : (G.e.hp<=0));
+  // 雙殺 → 剩血多者勝（無平手）
+  const win = (G.e.hp<=0&&G.p.hp<=0) ? (G.p.hp>=G.e.hp) : (G.e.hp<=0);
   const ov=document.getElementById('overlay');
-  document.getElementById('ovTitle').textContent = win?'品味勝出':'聲望歸零';
-  document.getElementById('ovSub').textContent = win?'你的鄙視鏈贏了這一局。':'這次被電腦的品味壓制了。';
-  renderHp();
-  setTimeout(()=>ov.classList.add('show'), 700);
+  document.getElementById('ovTitle').textContent=win?'品味勝出':'聲望歸零';
+  document.getElementById('ovSub').textContent=win?'你靠讀招與連段贏了這一局。':'這次被電腦的氣勢壓制了。';
+  renderHp(); renderQi();
+  setTimeout(()=>ov.classList.add('show'),700);
 }
 
 document.getElementById('restart').addEventListener('click', newGame);
