@@ -499,6 +499,18 @@
     .welcome-hall-btn { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 11px 22px; background: #fff; color: #111; border: none; cursor: pointer; }
     .welcome-hall-btn:disabled { opacity: 0.6; cursor: default; }
 
+    /* 特殊抽卡券（頂點卡免費抽） */
+    .special-draw-banner { margin: 16px 20px; padding: 18px 16px; text-align: center; background: #0e0f12; border-radius: 4px; position: relative; overflow: hidden; }
+    .special-draw-banner::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 2px; background: var(--crimson-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .special-draw-title { font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: 0.16em; color: #f4e9d8; }
+    .special-draw-sub { font-size: 11px; color: #aab; margin: 8px 0 14px; line-height: 1.7; }
+    .special-draw-btn { display: block; width: 100%; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; padding: 11px 18px; margin: 6px 0 0; background: #fff; color: #111; border: none; cursor: pointer; border-radius: 3px; }
+    .special-draw-btn:disabled { opacity: 0.55; cursor: default; }
+    .special-draw-btn.sd-heresy { background: var(--crimson-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; color: #fff; }
+    .special-draw-btn.sd-pearl { background: var(--oil-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; color: #fff; }
+    .special-draw-btn.sd-hall { background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; color: #111; }
+    .special-draw-btn.sd-random { background: linear-gradient(90deg, var(--crimson-shine), var(--oil-shine), var(--silver-shine)); background-size: 300% 100%; animation: silverShimmer 9s linear infinite; color: #fff; }
+
     /* 卡片詳情 overlay */
     .card-detail-overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
     .card-detail-overlay.open { display: flex; }
@@ -1009,9 +1021,183 @@
     }
   }
 
-  // 委派：點「開啟我的殿堂卡」
+  // ───────── 特殊抽卡券（頂點卡免費抽）─────────
+  // users/{uid}.specialDraws = [{ tier, grantedAt, note }]，tier ∈ hall|pearl|heresy|random3
+  // 來源：① 店長一次性補發（異端+遺珠）② 後台「贈送抽卡」（賣專輯給客人時送）
+  const OWNER_EMAIL = 'kubinice06@gmail.com';
+  const SPECIAL_DRAW_INFO = {
+    hall:    { label: '殿堂', cls: 'sd-hall',   emoji: '🩶' },
+    pearl:   { label: '遺珠', cls: 'sd-pearl',  emoji: '🛢️' },
+    heresy:  { label: '異端', cls: 'sd-heresy', emoji: '🩸' },
+    random3: { label: '三選一隨機', cls: 'sd-random', emoji: '🎲' },
+  };
+  let specialDraws = [];        // 目前待抽的票券
+  let _specialDrawBusy = false;
+
+  async function loadSpecialDraws() {
+    specialDraws = [];
+    if (!currentUser) return;
+    try {
+      const uref = doc(db, 'users', currentUser.uid);
+      const us = await getDoc(uref);
+      const data = us.exists() ? us.data() : {};
+      let arr = Array.isArray(data.specialDraws) ? data.specialDraws.slice() : [];
+      // 店長一次性補發：異端 ×1 + 遺珠 ×1（用 flag 確保只發一次）
+      if (currentUser.email === OWNER_EMAIL && !data.ownerDrawsGrantV1) {
+        const now = Date.now();
+        arr.push({ tier: 'heresy', grantedAt: now, note: '店長補發' });
+        arr.push({ tier: 'pearl',  grantedAt: now + 1, note: '店長補發' });
+        await setDoc(uref, { specialDraws: arr, ownerDrawsGrantV1: true }, { merge: true });
+      }
+      specialDraws = arr;
+    } catch (e) { console.warn('[specialDraws] load failed', e); specialDraws = []; }
+  }
+
+  function specialDrawBannerHtml() {
+    if (!specialDraws.length) return '';
+    const items = specialDraws.map((t, i) => {
+      const info = SPECIAL_DRAW_INFO[t.tier] || SPECIAL_DRAW_INFO.random3;
+      return `<button class="special-draw-btn ${info.cls}" data-special-draw="${i}">${info.emoji} 抽一張「${info.label}」卡</button>`;
+    }).join('');
+    return `<div class="special-draw-banner">
+      <div class="special-draw-title">🎴 你有 ${specialDraws.length} 次特殊抽卡機會</div>
+      <div class="special-draw-sub">點下去立刻抽，保證抽中對應的頂點卡，直接收進卡冊</div>
+      ${items}
+    </div>`;
+  }
+
+  // 強制抽某個頂點 tier 的卡（hall/pearl/heresy；random3 在這裡擲骰決定）
+  async function drawSpecialCard(rawTier) {
+    const tier = rawTier === 'random3'
+      ? ['hall', 'pearl', 'heresy'][Math.floor(Math.random() * 3)]
+      : rawTier;
+    const labelMap = { hall: '殿堂', pearl: '遺珠', heresy: '異端' };
+    const collModal = document.getElementById('collectionModal');
+    const genreModal = document.getElementById('genreModal');
+    if (collModal) collModal.classList.remove('open');
+    if (genreModal) genreModal.classList.add('open');
+    currentView = 'genre';
+    const gc = document.getElementById('genreContent');
+    gc.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">抽「${labelMap[tier]}」卡中…</div></div>`;
+
+    const N = 6;
+    const promptHall = `你是一位黑膠唱片店的選片顧問。這次破例推薦「公認的殿堂級神作」——橫跨任何曲風、樂評與大眾都熟知、常被列為史上最佳的里程碑專輯（例如 Radiohead《OK Computer》那種等級）。
+- 推薦 ${N} 張不同藝人的超經典神作，依名氣與地位由高到低排序
+- 藝人名稱與專輯名稱必須完全正確、一律用原文
+- 只推薦你 100% 確定真實存在、在 Apple Music / Spotify 找得到的作品
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+    const promptPearl = `你是一位黑膠唱片店最硬核的挖盤狂。這次只推「極度冷門、幾乎沒人聽過」的作品——橫跨任何曲風，越冷門越好：私人壓片(private press)、極小廠牌、自主發行、Bandcamp 等級、Last.fm 聽眾寥寥可數的那種。
+- 絕對禁止任何稍有名氣、樂評常提、論壇常列的作品——只要你覺得「還算有人知道」就不要選
+- 寧可選你只隱約記得、但你 100% 確定真實存在且能在 Spotify 找到的冷盤
+- 藝人/專輯名稱完全正確、一律用原文
+- 推薦 ${N} 張不同藝人的極冷門盤，依「最沒人知道」由高到低排序
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+    const promptHeresy = `你是一位黑膠唱片店的前衛樂狂熱者。這次只推「極度難入耳、挑戰聽覺極限」的怪盤——橫跨任何曲風：噪音(noise)、自由即興、自由爵士的 skronk、musique concrète、harsh/實驗電子、無調性、結構崩解那種（Merzbow、Captain Beefheart《Trout Mask Replica》、Lou Reed《Metal Machine Music》、Yoko Ono、Albert Ayler 那種等級）。
+- 重點是「第一次聽會皺眉、難以入耳、需要門檻」，不是單純小眾好聽
+- 只推薦你 100% 確定真實存在、能在 Spotify 找到的作品，名稱完全正確、一律用原文
+- 推薦 ${N} 張不同藝人的難入耳怪盤，依「最難入耳」由高到低排序
+直接輸出 JSON 陣列，第一個字元就是 [，禁止任何前言：
+[{"artist":"藝人名稱","album":"專輯名稱"}]`;
+    const basePrompt = tier === 'hall' ? promptHall : (tier === 'pearl' ? promptPearl : promptHeresy);
+
+    try {
+      let verified = null;
+      let failed = [];
+      for (let attempt = 0; attempt < 3 && !verified; attempt++) {
+        const retryNote = failed.length ? `\n以下都不行（找不到封面或已抽過），整批換成別的：\n${failed.join('\n')}\n` : '';
+        const resp = await fetch(`${WORKER_URL}/claude`, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: [{ role: 'user', content: basePrompt + retryNote }] }),
+        });
+        const apiData = await resp.json();
+        logApiUsage('claude', apiData.usage?.total_tokens);
+        if (apiData.apiError) {
+          if (/overload|529/i.test(apiData.apiError)) { await new Promise(r => setTimeout(r, 2500)); continue; }
+          throw new Error(/429|rate.?limit|quota/i.test(apiData.apiError) ? '今天的算力已用完，明天再來 ✦' : apiData.apiError);
+        }
+        const text = apiData.content?.[0]?.text || '';
+        let recs = [];
+        const m = text.match(/\[[\s\S]*\]/);
+        if (m) { try { recs = JSON.parse(m[0]); } catch (e) {} }
+        recs = (recs || []).filter(r => r && r.artist && r.album)
+          .filter(r => !gpSeenAlbums.has(`${r.artist}||${r.album}`.toLowerCase()));
+        if (!recs.length) continue;
+        const checked = await Promise.all(recs.map(r =>
+          fetchSpotifyCover(r.artist, r.album).then(sr => ({ rec: r, sr: sr || {} })).catch(() => ({ rec: r, sr: {} }))));
+        const withCover = checked.filter(c => c.sr && c.sr.imageUrl);
+        if (!withCover.length) { failed.push(...recs.map(r => `${r.artist} — ${r.album}`)); continue; }
+        if (tier === 'pearl') {
+          // 優先挑真的夠冷（聽眾 < 門檻）的；找不到就退而取第一張（禮物保證遺珠）
+          for (const c of withCover) {
+            const lis = await fetchAlbumListeners(c.rec.artist, c.rec.album);
+            if (lis !== null && lis < ULTRA_OBSCURE_MAX_LISTENERS) { verified = c; break; }
+          }
+          if (!verified) verified = withCover[0];
+        } else {
+          verified = withCover[0];
+        }
+      }
+      if (!verified) throw new Error('一時抽不到合適的卡，回卡冊再點一次');
+
+      const flags = { _hall: tier === 'hall', _pearl: tier === 'pearl', _heresy: tier === 'heresy' };
+      await showGpResult({
+        artist: verified.rec.artist, album: verified.rec.album, reason: '',
+        _coverUrl: verified.sr.imageUrl, _spotifyUrl: verified.sr.spotifyUrl, _streaming: true, ...flags,
+      });
+      // 禮物：自動收進卡冊，並移除「收進卡冊」鍵避免重複加
+      await addCardToCollection({
+        artist: verified.rec.artist, album: verified.rec.album,
+        _coverUrl: verified.sr.imageUrl, reelUrl: reelUrlFor(verified.rec.artist, verified.rec.album),
+        ...(tier === 'hall' ? { hall: true } : {}),
+        ...(tier === 'pearl' ? { pearl: true } : {}),
+        ...(tier === 'heresy' ? { heresy: true } : {}),
+      });
+      const collectBtn = document.querySelector('#genreContent [data-collect]');
+      if (collectBtn) { const note = document.createElement('div'); note.className = 'quiz-result-label'; note.style.marginTop = '6px'; note.textContent = '✓ 已自動收進卡冊'; collectBtn.replaceWith(note); }
+      const reasonEl = document.querySelector('#genreContent .quiz-result-reason');
+      const reason = await getRandomReason(verified.rec.artist, verified.rec.album, reasonEl);
+      if (lastGpResult) lastGpResult.reason = reason;
+      saveToHistory({ type: 'genre', artist: verified.rec.artist, album: verified.rec.album, reason, coverUrl: verified.sr.imageUrl }).catch(() => {});
+      return true;
+    } catch (e) {
+      gc.innerHTML = `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button class="welcome-hall-btn" data-back-to-collection>回我的卡冊</button></div>`;
+      return false;
+    }
+  }
+
+  async function claimSpecialDraw(index) {
+    if (_specialDrawBusy) return;
+    if (!currentUser) { signInWithGoogle(); return; }
+    const ticket = specialDraws[index];
+    if (!ticket) return;
+    _specialDrawBusy = true;
+    document.querySelectorAll('[data-special-draw]').forEach(b => { b.disabled = true; });
+    let ok = false;
+    try { ok = await drawSpecialCard(ticket.tier); } catch (e) { console.warn('[specialDraws] draw error', e); }
+    if (ok) {
+      // 消耗票券：重讀 → 移除一張同 tier+grantedAt → 寫回
+      try {
+        const uref = doc(db, 'users', currentUser.uid);
+        const us = await getDoc(uref);
+        let arr = (us.exists() && Array.isArray(us.data().specialDraws)) ? us.data().specialDraws.slice() : [];
+        let rm = arr.findIndex(t => t.tier === ticket.tier && t.grantedAt === ticket.grantedAt);
+        if (rm < 0) rm = arr.findIndex(t => t.tier === ticket.tier);
+        if (rm >= 0) arr.splice(rm, 1);
+        await setDoc(uref, { specialDraws: arr }, { merge: true });
+        specialDraws = arr;
+      } catch (e) { console.warn('[specialDraws] consume failed', e); }
+    }
+    _specialDrawBusy = false;
+  }
+
+  // 委派：點「開啟我的殿堂卡」／特殊抽卡券／抽卡失敗後回卡冊
   document.addEventListener('click', (e) => {
     if (e.target.closest('#claimWelcomeHall')) claimWelcomeHall();
+    const sd = e.target.closest('[data-special-draw]');
+    if (sd) claimSpecialDraw(Number(sd.dataset.specialDraw));
+    if (e.target.closest('[data-back-to-collection]')) setActiveTab('collection');
   });
 
   async function renderCollection() {
@@ -1034,9 +1220,10 @@
     el.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">載入卡冊…</div></div>`;
     if (!quizReels.length) await loadQuizData(); // reel 卡詳情要對回 IG 貼文連結
     await loadWelcomeHallState();
+    await loadSpecialDraws();
     const cards = await getMyCollection();
     if (!cards.length) {
-      el.innerHTML = welcomeBannerHtml() + `<div class="collect-empty">
+      el.innerHTML = welcomeBannerHtml() + specialDrawBannerHtml() + `<div class="collect-empty">
         <div class="quiz-question" style="margin-bottom:10px;">卡冊還是空的</div>
         <div class="collect-empty-sub">去「直接來一張」或「類型挑片」抽幾張，按「收進卡冊」就會出現在這裡。</div>
       </div>`;
@@ -1096,7 +1283,7 @@
     else if (collSort === 'new') rated.sort((a, b) => (b.obtainedAt || 0) - (a.obtainedAt || 0));
     else if (collSort === 'artist') rated.sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
 
-    const head = welcomeBannerHtml() + `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
+    const head = welcomeBannerHtml() + specialDrawBannerHtml() + `<div class="collect-header"><span class="collect-title">我的卡冊</span><span class="collect-count">${rated.length} 張</span></div>
       <div class="collect-controls">
         <select class="collect-sort" id="collSort">
           <option value="rarity"${collSort === 'rarity' ? ' selected' : ''}>稀有度 高→低</option>

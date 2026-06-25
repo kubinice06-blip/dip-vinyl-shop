@@ -2800,6 +2800,15 @@ ${discogs ? '- Discogs：' + discogs : ''}
             <div>註冊 ${fmtDate(u.createdAt)}</div>
             <div>最近 ${fmtDate(u.lastSeenAt)}</div>
             <button class="btn-member-cards" data-uid="${u.id}" style="margin-top:4px;background:none;border:1px solid var(--line);color:var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">卡冊</button>
+            <div style="margin-top:4px;display:flex;gap:4px;justify-content:flex-end;align-items:center;">
+              <select class="sd-tier" style="font-family:var(--mono);font-size:10px;padding:2px;border:1px solid var(--line);">
+                <option value="random3">三選一隨機</option>
+                <option value="heresy">異端</option>
+                <option value="pearl">遺珠</option>
+                <option value="hall">殿堂</option>
+              </select>
+              <button class="btn-grant-draw" data-uid="${u.id}" style="background:none;border:1px solid var(--line);color:var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">🎴 贈送抽卡</button>
+            </div>
           </div>
         </div>`;
       }).join('');
@@ -2811,6 +2820,26 @@ ${discogs ? '- Discogs：' + discogs : ''}
             const total = cs.docs.reduce((n, d) => n + (d.data().count || 1), 0);
             btn.textContent = `${cs.size} 種 / ${total} 張`;
           } catch (e) { btn.textContent = '讀取失敗'; btn.disabled = false; }
+        });
+      });
+      // 贈送抽卡券：賣專輯給客人時送一次（寫入 users/{uid}.specialDraws，需後台管理員權限）
+      list.querySelectorAll('.btn-grant-draw').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const tier = btn.parentElement.querySelector('.sd-tier')?.value || 'random3';
+          const orig = btn.textContent;
+          btn.disabled = true; btn.textContent = '贈送中…';
+          try {
+            const uref = doc(db, 'users', btn.dataset.uid);
+            const us = await getDoc(uref);
+            const arr = (us.exists() && Array.isArray(us.data().specialDraws)) ? us.data().specialDraws.slice() : [];
+            arr.push({ tier, grantedAt: Date.now(), note: '店家贈送' });
+            await setDoc(uref, { specialDraws: arr }, { merge: true });
+            btn.textContent = '✓ 已贈送';
+            setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 1600);
+          } catch (e) {
+            btn.textContent = '失敗'; btn.disabled = false;
+            alert('贈送失敗（可能 Firestore 規則尚未開放管理員寫入會員）：' + (e.message || e));
+          }
         });
       });
     } catch (e) { list.textContent = '載入失敗：' + (e.message || e); }
