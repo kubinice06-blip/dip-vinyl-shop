@@ -57,14 +57,27 @@
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
   .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:220px; position:relative; }
-  .cheat { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:8px; }
-  .relring { width:104px; flex:none; }
+  .cheat { display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:8px; }
+  .relring { width:54px; flex:none; }
   .relring svg { width:100%; height:auto; overflow:visible; display:block; }
   .relring .node circle { fill:#fff; stroke:var(--black); stroke-width:1.4; }
   .relring .node text { font-size:12px; font-weight:700; fill:var(--black); text-anchor:middle; }
-  .relring .cap { display:flex; justify-content:center; gap:12px; font-size:8px; margin-top:4px; letter-spacing:0.04em; }
+  .relring .cap { display:flex; justify-content:center; gap:7px; font-size:7px; margin-top:3px; letter-spacing:0; white-space:nowrap; overflow:visible; }
   .relring .cap .k { color:var(--dmg); } .relring .cap .s { color:var(--qi); }
   .cheat .legend { flex-direction:column; align-items:flex-start; gap:4px; margin:0; text-align:left; }
+  .cheat .rulesbtn { flex:none; font-family:var(--mono); font-size:9px; font-weight:700; letter-spacing:0.08em; background:none; border:1px solid var(--black); padding:6px 9px; cursor:pointer; color:var(--black); white-space:nowrap; transition:all .15s; }
+  .cheat .rulesbtn:hover { background:var(--black); color:#fff; }
+  .rules-modal { position:fixed; inset:0; background:rgba(255,255,255,0.97); display:none; z-index:120; padding:28px 18px; overflow-y:auto; }
+  .rules-modal.show { display:block; animation:flash .35s; }
+  .rules-box { max-width:480px; margin:0 auto; }
+  .rules-box h2 { font-size:17px; letter-spacing:0.14em; margin:0 0 4px; display:flex; align-items:center; justify-content:space-between; }
+  .rules-box .x { border:1px solid var(--black); background:none; cursor:pointer; font-family:var(--mono); font-size:13px; line-height:1; padding:4px 8px; }
+  .rules-box .x:hover { background:var(--black); color:#fff; }
+  .rules-box h3 { font-size:11px; letter-spacing:0.12em; margin:16px 0 6px; padding-bottom:3px; border-bottom:1px solid var(--line); color:var(--black); }
+  .rules-box p, .rules-box li { font-size:11px; line-height:1.7; color:#333; letter-spacing:0.03em; }
+  .rules-box ul { margin:4px 0; padding-left:18px; }
+  .rules-box b { color:var(--dmg); } .rules-box em { color:var(--qi); font-style:normal; font-weight:700; }
+  .rules-box .ring-cycle { font-weight:700; letter-spacing:0.1em; }
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
   .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
@@ -200,6 +213,7 @@
         <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1</span>
         <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
       </div>
+      <button class="rulesbtn" id="rulesBtn">📖 規則</button>
     </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
     <div class="hand" id="pHand"></div>
@@ -211,6 +225,42 @@
   <h1 id="ovTitle"></h1>
   <p id="ovSub"></p>
   <button class="btn" id="ovBtn">再來一局</button>
+</div>
+
+<div class="rules-modal" id="rulesModal">
+  <div class="rules-box">
+    <h2>品味對戰 · 規則 <button class="x" id="rulesClose">✕</button></h2>
+    <p>用你的選盤品味，把對手的「品味聲望」（HP 30）打到 0。每回合<b>讀電腦的氣場提示</b>，選一張卡＋一個主打屬性出招。</p>
+
+    <h3>三屬性 · 相生相剋</h3>
+    <p class="ring-cycle"><b>相剋（壓制）</b>：冷門 ▸ 經典 ▸ 入耳 ▸ 冷門</p>
+    <p class="ring-cycle"><em>相生（連段）</em>：經典 ▸ 冷門 ▸ 入耳 ▸ 經典（方向相反）</p>
+    <ul>
+      <li><b>相剋命中</b>：剋制方<em>氣勢 +3</em>、被剋方氣勢 +1（安慰）；被剋方 <b>HP − 你那招的星數</b>（讀招命中、星數決定多痛）。</li>
+      <li><em>相生連段</em>：宣告屬性接續上一手 → 充氣勢（2 連 +1、3 連 +2，第 4 環起停，須斷開重鋪）。</li>
+    </ul>
+
+    <h3>純比星（無相剋時）</h3>
+    <p>比面板星數，高星方<b>扣對手血＝星數差</b>、並充<em>氣勢 +1</em>；平手雙方氣勢 +1、不扣血。</p>
+
+    <h3>屬性專屬效果（宣告即觸發）</h3>
+    <ul>
+      <li><b>經典〔守〕</b>：自己 HP +1</li>
+      <li><b>冷門〔挖〕</b>：自己 <em>氣勢 +1</em></li>
+      <li><b>入耳〔攻〕</b>：對手 氣勢 −1</li>
+    </ul>
+
+    <h3>氣勢槽（0→6）· 品味碾壓</h3>
+    <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味碾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
+
+    <h3>氣場提示 · 虛晃反咬</h3>
+    <p>電腦會先暗中決定出招、露出一個<b>氣場提示</b>（偏哪個屬性），但<b>不亮牌</b>。<b>留意</b>：你上一手若照提示去剋，它下一手會<b>虛晃</b>改打能剋你預期招的屬性反咬——要會讀，別無腦照提示打。</p>
+
+    <h3>王牌 · 牌庫耗盡</h3>
+    <p>王牌單軸 7 星＋氣勢被動（殿堂壓對手氣勢、遺珠相剋多充、異端歸零對手氣勢；共通<b>霸權</b>：被剋時取消該次相剋）。牌庫見底 → <b>疲勞傷害</b>遞增（1/2/3…），加速收尾。</p>
+
+    <button class="btn" id="rulesClose2" style="margin-top:18px">開始對戰</button>
+  </div>
 </div>
 
 <script>
@@ -591,6 +641,15 @@ function endGame(){
 
 document.getElementById('restart').addEventListener('click', newGame);
 document.getElementById('ovBtn').addEventListener('click', newGame);
+// 規則浮動視窗
+const rulesModal=document.getElementById('rulesModal');
+const openRules=()=>rulesModal.classList.add('show');
+const closeRules=()=>rulesModal.classList.remove('show');
+document.getElementById('rulesBtn').addEventListener('click', openRules);
+document.getElementById('rulesClose').addEventListener('click', closeRules);
+document.getElementById('rulesClose2').addEventListener('click', closeRules);
+rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeRules(); });
 newGame();
 </script>
 </body>
