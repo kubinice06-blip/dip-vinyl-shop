@@ -128,7 +128,7 @@
 <div class="wrap">
   <div class="topbar">
     <span class="title">dip · 品味對戰</span>
-    <span class="beta">BETA v3 · 氣勢</span>
+    <span class="beta">BETA v4 · 星數傷害</span>
     <button class="btn" id="restart">新對局</button>
   </div>
 
@@ -159,8 +159,8 @@
     <div class="hpbar" id="pHpbar"><i id="pHpfill"></i><span id="pHptxt"></span></div>
     <div class="qiwrap"><span class="qilab" id="pQiLab">氣勢</span><div class="qibar" id="pQi"></div></div>
     <div class="legend">
-      <span>相剋（充氣勢 <em>+3</em>·壓制 <b>-3</b>）：冷▸經▸入▸冷</span>
-      <span>相生（連段充氣勢）：經▸冷▸入▸經</span>
+      <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b>｜冷▸經▸入▸冷</span>
+      <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1｜相生連段：經▸冷▸入▸經</span>
       <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
     </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
@@ -185,11 +185,12 @@ const CFG = {
   qiMax:6,            // 氣勢槽滿 → 可發動品味碾壓
   qiCounter:3,        // 相剋勝充能
   qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
-  qiValue:1,          // 數值勝充能（星星只剩微薄加速）
+  qiValue:1,          // 數值勝充能
   qiValueLoser:0,     // 數值敗充能
   qiTie:1,            // 平手雙方充能
   qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
-  counterDmg:3,       // 相剋直接壓制傷害（讀招驅動、與星數無關）
+  // 傷害＝星數驅動：相剋命中扣血 = 勝方那招星數(1–7)；純比星扣血 = 星數差 × valueDmg。讀招決定打不打中、星數決定多痛。
+  valueDmg:1,         // 純比星傷害倍率（星數差×此值；設 0 = 純比星只給氣勢、不扣血）
   ultimate:6,         // 品味碾壓傷害（無視屬性、保證命中）
   attrFx:{ classic:1, obscurity:1, accessibility:1 }, // 屬性專屬效果：經典守+HP / 冷門挖+氣勢 / 入耳攻-對手氣勢
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
@@ -329,15 +330,15 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
   const r = { pdQi:0, edQi:0, dmgToP:0, dmgToE:0, kind:'tie', attr:null, by:null, pF, eF };
   if(pCounters){
     r.pdQi += CFG.qiCounter + (pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
-    r.edQi += CFG.qiCounterLoser; r.dmgToE += CFG.counterDmg;
+    r.edQi += CFG.qiCounterLoser; r.dmgToE += pF;        // 相剋命中：扣血 = 你那招星數
     r.kind='counter'; r.by='p'; r.attr=pAttr;
   } else if(eCounters){
     r.edQi += CFG.qiCounter + (eCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
-    r.pdQi += CFG.qiCounterLoser; r.dmgToP += CFG.counterDmg;
+    r.pdQi += CFG.qiCounterLoser; r.dmgToP += eF;        // 相剋命中：扣血 = 對方那招星數
     r.kind='counter'; r.by='e'; r.attr=eAttr;
   } else {
-    if(pF>eF){ r.pdQi += CFG.qiValue; r.edQi += CFG.qiValueLoser; r.kind='value'; r.by='p'; }
-    else if(eF>pF){ r.edQi += CFG.qiValue; r.pdQi += CFG.qiValueLoser; r.kind='value'; r.by='e'; }
+    if(pF>eF){ r.pdQi += CFG.qiValue; r.edQi += CFG.qiValueLoser; r.dmgToE += (pF-eF)*CFG.valueDmg; r.kind='value'; r.by='p'; } // 純比星：扣血 = 星數差
+    else if(eF>pF){ r.edQi += CFG.qiValue; r.pdQi += CFG.qiValueLoser; r.dmgToP += (eF-pF)*CFG.valueDmg; r.kind='value'; r.by='e'; }
     else { r.pdQi += CFG.qiTie; r.edQi += CFG.qiTie; r.kind='tie'; }
   }
   return r;
@@ -420,12 +421,14 @@ async function play(pCard, pAttr){
     let head='';
     if(r.kind==='counter'){
       const skill=COUNTER_SKILL[r.attr]; const pearl=(r.by==='p'?pCard:eCard).ace==='pearl';
+      const dmg=r.by==='p'?r.dmgToE:r.dmgToP, winStar=r.by==='p'?r.pF:r.eF;
       const winQi=CFG.qiCounter+(pearl?CFG.ace.pearl.counterQiBonus:0), winSide=r.by==='p'?'你':'電腦', loseSide=r.by==='p'?'電腦':'你';
       head=`<div class="skill cnt">${winSide} · ${skill}${pearl?'＋私盤特攻':''}</div>
-        <div class="sub">面板 ${r.pF} vs ${r.eF} ｜ ${loseSide} HP -${CFG.counterDmg}</div>
+        <div class="sub">命中★${winStar} → ${loseSide} HP <b>-${dmg}</b></div>
         <div class="qinum">${winSide} 氣勢 +${winQi}　|　${loseSide} +${CFG.qiCounterLoser}</div>`;
     } else if(r.kind==='value'){
-      head=`<div class="skill">數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}</div><div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiValue}</div>`;
+      const dmg=r.dmgToP||r.dmgToE, winSide=r.by==='p'?'你':'電腦', loseSide=r.by==='p'?'電腦':'你';
+      head=`<div class="skill">數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}${dmg?` ｜ ${loseSide} HP <b>-${dmg}</b>`:''}</div><div class="qinum">${winSide} 氣勢 +${CFG.qiValue}</div>`;
     } else {
       head=`<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}</div><div class="qinum">雙方氣勢 +${CFG.qiTie}</div>`;
     }
@@ -456,7 +459,8 @@ function clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi){
   const p=`你 ${pCard.album.slice(0,12)}[${ATTR_ZH[pAttr]}]`, e=`電腦 ${eCard.album.slice(0,12)}[${ATTR_ZH[eAttr]}]`;
   if(r.kind==='tie') return `${p} ╳ ${e} → 平手`;
   const tag = r.kind==='counter'?`${COUNTER_SKILL[r.attr]}`:'數值';
-  return `${p} ╳ ${e} → ${tag}｜氣勢 你${pdQi>=0?'+':''}${pdQi} 電腦${edQi>=0?'+':''}${edQi}`;
+  const dmg = r.dmgToP?`電腦命中 你HP-${r.dmgToP}`:(r.dmgToE?`你命中 電腦HP-${r.dmgToE}`:'');
+  return `${p} ╳ ${e} → ${tag}${dmg?`｜${dmg}`:''}｜氣勢 你${pdQi>=0?'+':''}${pdQi} 電腦${edQi>=0?'+':''}${edQi}`;
 }
 
 // ===== 渲染 =====
