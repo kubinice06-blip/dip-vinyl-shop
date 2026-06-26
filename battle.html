@@ -21,6 +21,7 @@
   @keyframes flash { 0%,100%{opacity:1;} 50%{opacity:0.25;} }
   @keyframes shake { 0%,100%{transform:translateX(0);} 20%{transform:translateX(-4px);} 40%{transform:translateX(4px);} 60%{transform:translateX(-3px);} 80%{transform:translateX(3px);} }
   @keyframes qiglow { 0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,0);} 50%{box-shadow:0 0 8px 1px rgba(184,134,11,0.7);} }
+  @keyframes qibump { 0%{transform:scale(1);} 40%{transform:scale(1.05);} 100%{transform:scale(1);} }
 
   .wrap { max-width:560px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column; }
   .topbar { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--black); }
@@ -46,6 +47,11 @@
   .qibar i.on { background:var(--qi); border-color:var(--qi); }
   .qibar.full { border-radius:2px; animation:qiglow 0.9s infinite; }
   .qibar.full i { border-color:var(--qi); }
+  .qibar.bump { animation:qibump .35s; }
+  .qiwrap .qilab { font-weight:700; color:var(--qi); }
+
+  .legend { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; font-size:8px; letter-spacing:0.06em; color:var(--gray); margin-bottom:8px; }
+  .legend b { color:var(--dmg); } .legend em { color:var(--qi); font-style:normal; }
 
   .enemy-hand { display:flex; gap:4px; margin-top:8px; }
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
@@ -98,6 +104,9 @@
   .attrbtn:hover { background:var(--black); color:#fff; border-color:var(--black); }
   .attrbtn b { display:block; font-size:11px; color:var(--gold); }
   .attrbtn:hover b { color:#fff; }
+  .ultbtn { display:block; width:100%; margin-bottom:5px; padding:7px 0; color:#fff; border-color:#7a1020;
+    background:var(--crimson-shine); background-size:200% 100%; animation:shimmer 7.8s linear infinite; letter-spacing:0.06em; }
+  .ultbtn:hover { color:#fff; opacity:0.88; background:var(--crimson-shine); }
 
   .log { max-height:90px; overflow-y:auto; border-top:1px solid var(--line); margin-top:10px; padding-top:8px; font-size:9px; line-height:1.7; color:var(--gray); }
   .log .hit { color:var(--dmg); font-weight:700; }
@@ -123,7 +132,7 @@
       <span class="meta" id="eMeta">牌庫 — · 手牌 —</span>
     </div>
     <div class="hpbar" id="eHpbar"><i id="eHpfill"></i><span id="eHptxt"></span></div>
-    <div class="qiwrap"><span class="qilab">氣勢</span><div class="qibar" id="eQi"></div></div>
+    <div class="qiwrap"><span class="qilab" id="eQiLab">氣勢</span><div class="qibar" id="eQi"></div></div>
     <div class="enemy-hand" id="eHand"></div>
   </div>
 
@@ -142,7 +151,11 @@
       <span class="meta" id="pMeta">牌庫 — · 連段 —</span>
     </div>
     <div class="hpbar" id="pHpbar"><i id="pHpfill"></i><span id="pHptxt"></span></div>
-    <div class="qiwrap"><span class="qilab">氣勢</span><div class="qibar" id="pQi"></div></div>
+    <div class="qiwrap"><span class="qilab" id="pQiLab">氣勢</span><div class="qibar" id="pQi"></div></div>
+    <div class="legend">
+      <span>相剋（充氣勢 <em>+3</em>·壓制 <b>-3</b>）：冷▸經▸入▸冷</span>
+      <span>相生（連段充氣勢）：經▸冷▸入▸經</span>
+    </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
     <div class="hand" id="pHand"></div>
     <div class="log" id="log"></div>
@@ -157,18 +170,20 @@
 
 <script>
 "use strict";
-// ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放論破）=====
+// ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放品味碾壓）=====
 const CFG = {
   startHp:30, deckSize:20, startHand:5, drawPerTurn:1, handLimit:7,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
-  qiMax:6,            // 氣勢槽滿 → 論破
+  qiMax:6,            // 氣勢槽滿 → 可發動品味碾壓
   qiCounter:3,        // 相剋勝充能
-  qiCounterLoser:1,   // 被剋方扣氣勢
+  qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
   qiValue:1,          // 數值勝充能（星星只剩微薄加速）
+  qiValueLoser:0,     // 數值敗充能
+  qiTie:1,            // 平手雙方充能
   qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
   counterDmg:3,       // 相剋直接壓制傷害（讀招驅動、與星數無關）
-  ultimate:6,         // 論破爆發（週期性 accent，非全部傷害）
+  ultimate:6,         // 品味碾壓傷害（無視屬性、保證命中）
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
   fatigueStart:1, fatigueStep:1,
 };
@@ -220,7 +235,7 @@ function newGame(){
     busy:false, over:false, sel:null, logs:[],
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
-  pushLog('對局開始。讀對相剋＋鋪連段充滿氣勢，放【論破】爆發。', '');
+  pushLog('對局開始。讀對相剋＋鋪連段充滿氣勢，氣勢滿就放【品味碾壓】無視屬性一擊。', '');
   render(); document.getElementById('overlay').classList.remove('show');
 }
 function drawCard(side){
@@ -239,17 +254,17 @@ function computeChain(side, attr){
   return { len:side.chain, qi:chainQi(side.chain) };
 }
 
-// ===== AI：普通難度（追連段、適時讀相剋、危急時放王牌）=====
+// ===== AI：普通難度（已調軟）：出招偏隨機、較不執著連段，給玩家較好讀贏 =====
 function aiMove(){
   const hand=G.e.hand; let best=null;
   for(const card of hand){ for(const attr of ATTRS){
     let s=1;
-    if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += (G.e.chain>=2?3:2);
-    s += card[attr]*0.25;
-    if(card.ace==='heresy') s += (G.p.qi>=4?6:0.5);   // 對手快滿 → 解構歸零
-    if(card.ace==='hall')   s += (G.p.qi>=3?3:0.8);   // 壓制對手氣勢
-    if(card.ace==='pearl')  s += 1.4;                 // 充能加速
-    s += Math.random()*2.2;
+    if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += 1;
+    s += card[attr]*0.15;
+    if(card.ace==='heresy') s += (G.p.qi>=5?3:0.3);   // 只在對手快滿才解構
+    if(card.ace==='hall')   s += (G.p.qi>=4?1.5:0.5);
+    if(card.ace==='pearl')  s += 0.8;
+    s += Math.random()*4.0;                           // 出招更隨機
     if(!best||s>best.s) best={card,attr,s};
   }}
   return best;
@@ -267,16 +282,16 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
   const r = { pdQi:0, edQi:0, dmgToP:0, dmgToE:0, kind:'tie', attr:null, by:null, pF, eF };
   if(pCounters){
     r.pdQi += CFG.qiCounter + (pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
-    r.edQi -= CFG.qiCounterLoser; r.dmgToE += CFG.counterDmg;
+    r.edQi += CFG.qiCounterLoser; r.dmgToE += CFG.counterDmg;
     r.kind='counter'; r.by='p'; r.attr=pAttr;
   } else if(eCounters){
     r.edQi += CFG.qiCounter + (eCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0);
-    r.pdQi -= CFG.qiCounterLoser; r.dmgToP += CFG.counterDmg;
+    r.pdQi += CFG.qiCounterLoser; r.dmgToP += CFG.counterDmg;
     r.kind='counter'; r.by='e'; r.attr=eAttr;
   } else {
-    if(pF>eF){ r.pdQi += CFG.qiValue; r.kind='value'; r.by='p'; }
-    else if(eF>pF){ r.edQi += CFG.qiValue; r.kind='value'; r.by='e'; }
-    else r.kind='tie';
+    if(pF>eF){ r.pdQi += CFG.qiValue; r.edQi += CFG.qiValueLoser; r.kind='value'; r.by='p'; }
+    else if(eF>pF){ r.edQi += CFG.qiValue; r.pdQi += CFG.qiValueLoser; r.kind='value'; r.by='e'; }
+    else { r.pdQi += CFG.qiTie; r.edQi += CFG.qiTie; r.kind='tie'; }
   }
   return r;
 }
@@ -285,6 +300,8 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
 async function play(pCard, pAttr){
   if(G.busy||G.over) return;
   G.busy=true; G.sel=null;
+  const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇碾壓
+  const eUlt = G.e.qi>=CFG.qiMax;                  // 電腦氣勢滿 → 自動碾壓
   const ai = aiMove();
   const eCard=ai.card, eAttr=ai.attr;
   G.p.hand = G.p.hand.filter(c=>c.uid!==pCard.uid);
@@ -297,62 +314,67 @@ async function play(pCard, pAttr){
   setMeta();
   await sleep(500);
 
-  // 階段 0：王牌即時被動
-  const aceMsgs=[];
-  if(pCard.ace==='heresy'){ if(G.e.qi>0) aceMsgs.push('異端【終極解構】→ 歸零電腦氣勢'); G.e.qi=0; }
-  if(eCard.ace==='heresy'){ if(G.p.qi>0) aceMsgs.push('異端【終極解構】→ 歸零你的氣勢'); G.p.qi=0; }
-  if(pCard.ace==='hall'){ const d=Math.min(G.e.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 電腦氣勢 -${d}`); G.e.qi=clampQi(G.e.qi-CFG.ace.hall.enemyQi); }
-  if(eCard.ace==='hall'){ const d=Math.min(G.p.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 你的氣勢 -${d}`); G.p.qi=clampQi(G.p.qi-CFG.ace.hall.enemyQi); }
-  if(aceMsgs.length){ callout(`<div class="skill cnt">${aceMsgs.join('</div><div class="skill cnt">')}</div>`); renderQi(); await sleep(750); }
-
-  // 階段 1：相生連段
-  const pc = computeChain(G.p, pAttr), ec = computeChain(G.e, eAttr);
-  const synMsgs=[];
-  if(pc.qi>0) synMsgs.push(`<div class="skill syn">你 · ${SYN_SKILL[G.p.last]} ×${pc.len}連</div><div class="sub">氣勢 +${pc.qi}</div>`);
-  if(ec.qi>0) synMsgs.push(`<div class="skill syn">電腦 · ${SYN_SKILL[G.e.last]} ×${ec.len}連</div><div class="sub">氣勢 +${ec.qi}</div>`);
-  if(synMsgs.length){ callout(synMsgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:3px 0">')); await sleep(720); }
-
-  // 階段 2：相剋 / 數值
-  const r = resolveClash(pCard,pAttr, eCard,eAttr);
-  const pdQi = r.pdQi + pc.qi, edQi = r.edQi + ec.qi;
-  G.p.qi = clampQi(G.p.qi + pdQi);
-  G.e.qi = clampQi(G.e.qi + edQi);
-  if(r.dmgToP) G.p.hp -= r.dmgToP;
-  if(r.dmgToE) G.e.hp -= r.dmgToE;
-
-  let head='';
-  if(r.kind==='counter'){
-    const skill=COUNTER_SKILL[r.attr]; const pearl=(r.by==='p'?pCard:eCard).ace==='pearl';
-    head=`<div class="skill cnt">${r.by==='p'?'你':'電腦'} · ${skill}${pearl?'＋私盤特攻':''}</div>
-      <div class="sub">面板 ${r.pF} vs ${r.eF} ｜ 壓制 -${CFG.counterDmg}</div>
-      <div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiCounter+(pearl?CFG.ace.pearl.counterQiBonus:0)}</div>`;
-  } else if(r.kind==='value'){
-    head=`<div class="skill">數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}</div><div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiValue}</div>`;
+  if(pUlt || eUlt){
+    // ===== 碾壓回合（氣勢滿 → 無視對方屬性的保證一擊）=====
+    const msgs=[];
+    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.p.last=null; G.p.chain=0;
+      msgs.push(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="sub">無視對方屬性 · 保證命中</div><div class="dmgnum">-${CFG.ultimate}</div>`);
+      pushLog(`你 氣勢滿 → 品味碾壓！電腦 -${CFG.ultimate}`,'hit'); }
+    else { G.p.last=pAttr; }
+    if(eUlt){ G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
+      msgs.push(`<div class="ultimate-skill">電腦 · 品味碾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
+      pushLog(`電腦 氣勢滿 → 品味碾壓！你 -${CFG.ultimate}`,'hit'); }
+    else { G.e.last=eAttr; }
+    callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
+    if(pUlt) flashHp('e'); if(eUlt) flashHp('p');
+    renderHp(); renderQi();
+    await sleep(1000);
   } else {
-    head=`<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}，無氣勢</div>`;
-  }
-  callout(head);
-  if(r.dmgToP) flashHp('p'); if(r.dmgToE) flashHp('e');
-  renderHp(); renderQi();
-  pushLog(clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi), r.dmgToP||r.dmgToE?'hit':'qi');
-  await sleep(820);
+    // 階段 0：王牌即時被動
+    const aceMsgs=[];
+    if(pCard.ace==='heresy'){ if(G.e.qi>0) aceMsgs.push('異端【終極解構】→ 歸零電腦氣勢'); G.e.qi=0; }
+    if(eCard.ace==='heresy'){ if(G.p.qi>0) aceMsgs.push('異端【終極解構】→ 歸零你的氣勢'); G.p.qi=0; }
+    if(pCard.ace==='hall'){ const d=Math.min(G.e.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 電腦氣勢 -${d}`); G.e.qi=clampQi(G.e.qi-CFG.ace.hall.enemyQi); }
+    if(eCard.ace==='hall'){ const d=Math.min(G.p.qi,CFG.ace.hall.enemyQi); if(d>0) aceMsgs.push(`殿堂【眾望所歸】→ 你的氣勢 -${d}`); G.p.qi=clampQi(G.p.qi-CFG.ace.hall.enemyQi); }
+    if(aceMsgs.length){ callout(`<div class="skill cnt">${aceMsgs.join('</div><div class="skill cnt">')}</div>`); renderQi(); await sleep(750); }
 
-  // 階段 3：論破（氣勢滿）
-  for(const who of ['p','e']){
-    const me=G[who], foe=G[who==='p'?'e':'p'];
-    if(me.qi>=CFG.qiMax && !G.over){
-      let dmg=CFG.ultimate;
-      foe.hp -= dmg; me.qi=0;
-      callout(`<div class="ultimate-skill">${who==='p'?'你':'電腦'} 發動【論破】</div><div class="sub">品味突襲 · 氣勢全放</div><div class="dmgnum">-${dmg}</div>`);
-      flashHp(who==='p'?'e':'p'); renderHp(); renderQi();
-      pushLog(`${who==='p'?'你':'電腦'} 氣勢滿 → 論破！對手 -${dmg}`, 'hit');
-      await sleep(950);
-      if(foe.hp<=0){ break; }
+    // 階段 1：相生連段
+    const pc = computeChain(G.p, pAttr), ec = computeChain(G.e, eAttr);
+    const synMsgs=[];
+    if(pc.qi>0) synMsgs.push(`<div class="skill syn">你 · ${SYN_SKILL[G.p.last]} ×${pc.len}連</div><div class="sub">氣勢 +${pc.qi}</div>`);
+    if(ec.qi>0) synMsgs.push(`<div class="skill syn">電腦 · ${SYN_SKILL[G.e.last]} ×${ec.len}連</div><div class="sub">氣勢 +${ec.qi}</div>`);
+    if(synMsgs.length){ callout(synMsgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:3px 0">')); await sleep(720); }
+
+    // 階段 2：相剋 / 數值
+    const r = resolveClash(pCard,pAttr, eCard,eAttr);
+    const pdQi = r.pdQi + pc.qi, edQi = r.edQi + ec.qi;
+    G.p.qi = Math.min(CFG.qiMax, clampQi(G.p.qi + pdQi));
+    G.e.qi = Math.min(CFG.qiMax, clampQi(G.e.qi + edQi));
+    if(r.dmgToP) G.p.hp -= r.dmgToP;
+    if(r.dmgToE) G.e.hp -= r.dmgToE;
+
+    let head='';
+    if(r.kind==='counter'){
+      const skill=COUNTER_SKILL[r.attr]; const pearl=(r.by==='p'?pCard:eCard).ace==='pearl';
+      const winQi=CFG.qiCounter+(pearl?CFG.ace.pearl.counterQiBonus:0), winSide=r.by==='p'?'你':'電腦', loseSide=r.by==='p'?'電腦':'你';
+      head=`<div class="skill cnt">${winSide} · ${skill}${pearl?'＋私盤特攻':''}</div>
+        <div class="sub">面板 ${r.pF} vs ${r.eF} ｜ ${loseSide} HP -${CFG.counterDmg}</div>
+        <div class="qinum">${winSide} 氣勢 +${winQi}　|　${loseSide} +${CFG.qiCounterLoser}</div>`;
+    } else if(r.kind==='value'){
+      head=`<div class="skill">數值對拼</div><div class="sub">面板 ${r.pF} vs ${r.eF}</div><div class="qinum">${r.by==='p'?'你':'電腦'} 氣勢 +${CFG.qiValue}</div>`;
+    } else {
+      head=`<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}</div><div class="qinum">雙方氣勢 +${CFG.qiTie}</div>`;
     }
-  }
+    callout(head);
+    if(r.dmgToP) flashHp('p'); if(r.dmgToE) flashHp('e');
+    renderHp(); renderQi();
+    if(pdQi) bumpQi('p'); if(edQi) bumpQi('e');
+    pushLog(clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi), r.dmgToP||r.dmgToE?'hit':'qi');
+    await sleep(820);
 
-  // 更新連段記憶
-  G.p.last=pAttr; G.e.last=eAttr;
+    // 更新連段記憶
+    G.p.last=pAttr; G.e.last=eAttr;
+  }
 
   if(G.p.hp<=0||G.e.hp<=0) return endGame();
 
@@ -394,12 +416,14 @@ function renderHp(){
   document.getElementById('eHptxt').textContent=Math.max(0,G.e.hp)+' / '+CFG.startHp;
 }
 function renderQi(){
-  for(const [side,id] of [['p','pQi'],['e','eQi']]){
+  for(const [side,id,lab] of [['p','pQi','pQiLab'],['e','eQi','eQiLab']]){
     const qi=G[side].qi, full=qi>=CFG.qiMax; let pips='';
     for(let i=0;i<CFG.qiMax;i++) pips+=`<i class="${i<qi?'on':''}"></i>`;
     const el=document.getElementById(id); el.innerHTML=pips; el.classList.toggle('full',full);
+    document.getElementById(lab).textContent=`氣勢 ${qi}/${CFG.qiMax}`;
   }
 }
+function bumpQi(side){ const el=document.getElementById(side==='p'?'pQi':'eQi'); if(el.classList.contains('full'))return; el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump'); }
 function flashHp(side){ const el=document.getElementById(side==='p'?'pHpbar':'eHpbar'); el.classList.remove('dmg'); void el.offsetWidth; el.classList.add('dmg'); }
 function renderEnemyHand(){ document.getElementById('eHand').innerHTML=G.e.hand.map(()=>`<div class="cardback"></div>`).join(''); }
 function renderHand(){
@@ -408,7 +432,8 @@ function renderHand(){
     const ace=c.ace?` ace-border ace-${c.ace}`:'';
     const tag=c.ace?`<span class="ace-tag ace-${c.ace}" style="margin-bottom:4px">${ACE_ZH[c.ace]}</span>`:'';
     const sel=G.sel&&G.sel.uid===c.uid;
-    const attrs=sel?`<div class="attrbtns">${ATTRS.map(a=>`<button class="attrbtn" data-uid="${c.uid}" data-attr="${a}">${ATTR_ZH[a]}<b>${c[a]}</b></button>`).join('')}</div>`:'';
+    const ultBtn=(sel&&G.p.qi>=CFG.qiMax)?`<button class="attrbtn ultbtn" data-uid="${c.uid}" data-attr="__ult__">⚡ 品味碾壓 -${CFG.ultimate}（無視屬性）</button>`:'';
+    const attrs=sel?`${ultBtn}<div class="attrbtns">${ATTRS.map(a=>`<button class="attrbtn" data-uid="${c.uid}" data-attr="${a}">${ATTR_ZH[a]}<b>${c[a]}</b></button>`).join('')}</div>`:'';
     return `<div class="handcard${ace}${sel?' sel':''}" data-uid="${c.uid}">${tag}<div class="alb">${c.album}</div><div class="art">${c.artist}</div>
       <div class="stats" style="font-size:8px">${ATTRS.map(a=>statRow(c,a,false)).join('')}</div>${attrs}</div>`;
   }).join('');
@@ -424,10 +449,12 @@ function renderHand(){
 function renderHandLocked(){ G.sel=null; renderHand(); document.getElementById('hint').textContent='結算中…'; }
 function setHint(){
   const h=document.getElementById('hint');
-  if(G.sel){ h.textContent=`${G.sel.album} — 選一個主打屬性發動`; return; }
+  const charged=G.p.qi>=CFG.qiMax;
+  if(G.sel){ h.textContent= charged?`${G.sel.album} — ⚡可放【品味碾壓】或選一般屬性`:`${G.sel.album} — 選一個主打屬性發動`; return; }
+  if(charged){ h.textContent='⚡ 氣勢滿！選一張卡 → 品味碾壓（無視對方屬性一擊）'; return; }
   let tip='選一張卡，再點一個主打屬性出招';
   if(G.p.last!==null) tip+=`（接 ${ATTR_ZH[CFG.chainNext[G.p.last]]} 可續連段充氣勢）`;
-  if(G.p.qi>=CFG.qiMax-CFG.qiCounter) tip='⚡ 氣勢將滿 — 讀對相剋就放論破！';
+  if(G.p.qi>=CFG.qiMax-CFG.qiCounter) tip='⚡ 氣勢將滿 — 讀對相剋就能碾壓！';
   h.textContent=tip;
 }
 function setMeta(){
