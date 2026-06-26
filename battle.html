@@ -60,6 +60,12 @@
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
   .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
+  .slot.tell { border-style:dashed; border-color:var(--gray); flex-direction:column; gap:7px; }
+  .facedown { width:54px; height:76px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 4px,#eee 4px,#eee 8px); }
+  .tellbox { text-align:center; font-size:9px; color:var(--gray); line-height:1.5; }
+  .tellbox span { letter-spacing:0.12em; }
+  .tellbox b { display:block; color:var(--black); font-size:10px; margin-top:3px; }
+  .sub.fx { color:var(--qi); margin-top:2px; }
   .vs { align-self:center; font-weight:700; font-size:13px; color:var(--gray); letter-spacing:0.1em; }
 
   .pcard { width:100%; animation:pop .3s; text-align:left; }
@@ -155,6 +161,7 @@
     <div class="legend">
       <span>相剋（充氣勢 <em>+3</em>·壓制 <b>-3</b>）：冷▸經▸入▸冷</span>
       <span>相生（連段充氣勢）：經▸冷▸入▸經</span>
+      <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
     </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
     <div class="hand" id="pHand"></div>
@@ -184,6 +191,7 @@ const CFG = {
   qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
   counterDmg:3,       // 相剋直接壓制傷害（讀招驅動、與星數無關）
   ultimate:6,         // 品味碾壓傷害（無視屬性、保證命中）
+  attrFx:{ classic:1, obscurity:1, accessibility:1 }, // 屬性專屬效果：經典守+HP / 冷門挖+氣勢 / 入耳攻-對手氣勢
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
   fatigueStart:1, fatigueStep:1,
 };
@@ -192,6 +200,11 @@ const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'入耳' }
 const ACE_ZH = { hall:'殿堂', pearl:'遺珠', heresy:'異端' };
 const COUNTER_SKILL = { classic:'大眾共鳴', obscurity:'品味突襲', accessibility:'降維打擊' };
 const SYN_SKILL = { classic:'品味拓荒', obscurity:'閾值突破', accessibility:'前衛收編' };
+// 反剋對照：COUNTER_OF[x] = 能剋掉 x 的屬性
+const COUNTER_OF = {}; for(const k of ATTRS) COUNTER_OF[CFG.beats[k]] = k;
+// 屬性效果文案 + 提示氣場文案
+const FX_ZH = { classic:'守 +1聲望', obscurity:'挖 +1氣勢', accessibility:'攻 對手氣勢-1' };
+const TELL_FLAVOR = { classic:'像要搬出經典名盤', obscurity:'露出考古挖盤的眼神', accessibility:'散發前衛實驗的氣息' };
 
 // ===== 範例卡池（對戰 stats 1–5；王牌單軸 7）=====
 const POOL = [
@@ -226,17 +239,50 @@ function buildDeck(){
   return shuffle([...regs,ace].map(c=>({...c,uid:++uid})));
 }
 function chainQi(len){ if(len>=CFG.qiChainCap) return 0; return len>=3?CFG.qiChain3 : len===2?CFG.qiChain2 : 0; }
+// 屬性專屬效果：經典守(+HP) / 冷門挖(+氣勢) / 入耳攻(-對手氣勢)
+function applyAttrEffect(side, attr){
+  const me=G[side], foe=G[side==='p'?'e':'p'];
+  if(attr==='classic') me.hp=Math.min(CFG.startHp, me.hp+CFG.attrFx.classic);
+  else if(attr==='obscurity') me.qi=Math.min(CFG.qiMax, me.qi+CFG.attrFx.obscurity);
+  else if(attr==='accessibility') foe.qi=clampQi(foe.qi-CFG.attrFx.accessibility);
+}
 
 let G;
 function newGame(){
   G = {
     p:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
     e:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
-    busy:false, over:false, sel:null, logs:[],
+    busy:false, over:false, sel:null, logs:[], pendingE:null, pCounteredTellLast:false,
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
-  pushLog('對局開始。讀對相剋＋鋪連段充滿氣勢，氣勢滿就放【品味碾壓】無視屬性一擊。', '');
-  render(); document.getElementById('overlay').classList.remove('show');
+  pushLog('對局開始。讀電腦氣場、選對相剋充氣勢；別無腦照提示打，它會虛晃反咬。氣勢滿放【品味碾壓】。', '');
+  document.getElementById('overlay').classList.remove('show');
+  startTurn();
+}
+// ===== 回合開始：電腦先暗中決定出招＋對玩家露出「氣場提示」（會依玩家是否無腦照剋而虛晃）=====
+function startTurn(){
+  if(G.over) return;
+  G.busy=false; G.sel=null;
+  const plan=aiPlan();
+  if(!plan.best){ G.pendingE={ pass:true }; render(); renderTell(); return; } // 電腦無牌（疲勞）
+  let card=plan.best.card, attr=plan.best.attr, tell=plan.best.attr;
+  const eUlt=G.e.qi>=CFG.qiMax;
+  if(!eUlt && G.pCounteredTellLast){
+    // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性
+    const bait=COUNTER_OF[COUNTER_OF[tell]];
+    const alt=plan.scored.filter(x=>x.attr===bait).sort((a,b)=>b.s-a.s)[0];
+    if(alt){ card=alt.card; attr=alt.attr; }
+  }
+  G.e.hand=G.e.hand.filter(c=>c!==card);
+  G.pendingE={ card, attr, tell, ult:eUlt };
+  render(); renderTell();
+}
+function renderTell(){
+  const eSlot=document.getElementById('eSlot'); const pe=G.pendingE; if(!pe) return;
+  if(pe.pass){ eSlot.className='slot tell'; eSlot.innerHTML=`<div class="tellbox"><b>電腦疲勞、無牌可出</b></div>`; return; }
+  const txt = pe.ult ? '⚡ 氣勢滿溢，殺氣騰騰' : TELL_FLAVOR[pe.tell];
+  eSlot.className='slot tell';
+  eSlot.innerHTML=`<div class="facedown"></div><div class="tellbox"><span>電腦氣場</span><b>${txt}</b></div>`;
 }
 function drawCard(side){
   if(side.deck.length===0){
@@ -254,9 +300,9 @@ function computeChain(side, attr){
   return { len:side.chain, qi:chainQi(side.chain) };
 }
 
-// ===== AI：普通難度（已調軟）：出招偏隨機、較不執著連段，給玩家較好讀贏 =====
-function aiMove(){
-  const hand=G.e.hand; let best=null;
+// ===== AI 計劃：回傳選定出招 + 全部評分（供虛晃挑替代招）=====
+function aiPlan(){
+  const hand=G.e.hand; let best=null; const scored=[];
   for(const card of hand){ for(const attr of ATTRS){
     let s=1;
     if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += 1;
@@ -265,9 +311,10 @@ function aiMove(){
     if(card.ace==='hall')   s += (G.p.qi>=4?1.5:0.5);
     if(card.ace==='pearl')  s += 0.8;
     s += Math.random()*4.0;                           // 出招更隨機
+    scored.push({card,attr,s});
     if(!best||s>best.s) best={card,attr,s};
   }}
-  return best;
+  return { best, scored };
 }
 
 // ===== 相剋 / 數值 → 氣勢與滲透（不含連段、不含王牌 phase0）=====
@@ -299,20 +346,35 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
 // ===== 出牌流程 =====
 async function play(pCard, pAttr){
   if(G.busy||G.over) return;
+  if(!G.pendingE) return;
   G.busy=true; G.sel=null;
   const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇碾壓
-  const eUlt = G.e.qi>=CFG.qiMax;                  // 電腦氣勢滿 → 自動碾壓
-  const ai = aiMove();
-  const eCard=ai.card, eAttr=ai.attr;
+  if(G.pendingE.pass){                            // 電腦疲勞無牌 → 只結算玩家這邊
+    G.p.hand=G.p.hand.filter(c=>c.uid!==pCard.uid);
+    renderHandLocked();
+    document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled');
+    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
+    else { const pcq=computeChain(G.p,pAttr).qi; G.p.qi=Math.min(CFG.qiMax,G.p.qi+pcq); applyAttrEffect('p',pAttr); G.p.last=pAttr; callout(`<div class="sub fx">你〔${FX_ZH[pAttr]}〕`); }
+    flashHp('e'); renderHp(); renderQi();
+    await sleep(800);
+    if(G.e.hp<=0) return endGame();
+    drawCard(G.p); drawCard(G.e); while(G.p.hand.length>CFG.handLimit)G.p.hand.shift();
+    document.getElementById('pSlot').className='slot'; document.getElementById('pSlot').innerHTML=''; document.getElementById('callout').innerHTML='';
+    startTurn(); return;
+  }
+  const eCard=G.pendingE.card, eAttr=G.pendingE.attr, eUlt=G.pendingE.ult; // 電腦本回合已暗中決定
+  const feinted = !eUlt && eAttr!==G.pendingE.tell;
+  // 記錄玩家是否「照氣場提示去剋」→ 供下一手虛晃判定
+  G.pCounteredTellLast = !pUlt && (pAttr===COUNTER_OF[G.pendingE.tell]);
   G.p.hand = G.p.hand.filter(c=>c.uid!==pCard.uid);
-  G.e.hand = G.e.hand.filter(c=>c.uid!==eCard.uid);
 
   renderHandLocked();
-  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pAttr); document.getElementById('pSlot').classList.add('filled');
-  await sleep(280);
-  document.getElementById('eSlot').innerHTML = cardHTML(eCard, eAttr); document.getElementById('eSlot').classList.add('filled');
+  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled');
+  await sleep(300);
+  const eSlot=document.getElementById('eSlot'); eSlot.className='slot filled'; eSlot.innerHTML = cardHTML(eCard, eUlt?'__ult__':eAttr);
+  if(feinted && G.pCounteredTellLast){ callout(`<div class="skill cnt">電腦虛晃一招！</div><div class="sub">沒照氣場出牌，反咬你的相剋</div>`); await sleep(750); }
   setMeta();
-  await sleep(500);
+  await sleep(450);
 
   if(pUlt || eUlt){
     // ===== 碾壓回合（氣勢滿 → 無視對方屬性的保證一擊）=====
@@ -352,6 +414,8 @@ async function play(pCard, pAttr){
     G.e.qi = Math.min(CFG.qiMax, clampQi(G.e.qi + edQi));
     if(r.dmgToP) G.p.hp -= r.dmgToP;
     if(r.dmgToE) G.e.hp -= r.dmgToE;
+    // 屬性專屬效果（守/挖/攻）
+    applyAttrEffect('p',pAttr); applyAttrEffect('e',eAttr);
 
     let head='';
     if(r.kind==='counter'){
@@ -365,12 +429,12 @@ async function play(pCard, pAttr){
     } else {
       head=`<div class="skill">平手</div><div class="sub">面板 ${r.pF} = ${r.eF}</div><div class="qinum">雙方氣勢 +${CFG.qiTie}</div>`;
     }
-    callout(head);
+    callout(head + `<div class="sub fx">你〔${FX_ZH[pAttr]}〕 ｜ 電腦〔${FX_ZH[eAttr]}〕</div>`);
     if(r.dmgToP) flashHp('p'); if(r.dmgToE) flashHp('e');
     renderHp(); renderQi();
     if(pdQi) bumpQi('p'); if(edQi) bumpQi('e');
     pushLog(clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi), r.dmgToP||r.dmgToE?'hit':'qi');
-    await sleep(820);
+    await sleep(900);
 
     // 更新連段記憶
     G.p.last=pAttr; G.e.last=eAttr;
@@ -384,9 +448,8 @@ async function play(pCard, pAttr){
   if(G.p.hp<=0||G.e.hp<=0) return endGame();
 
   document.getElementById('pSlot').className='slot'; document.getElementById('pSlot').innerHTML='';
-  document.getElementById('eSlot').className='slot'; document.getElementById('eSlot').innerHTML='';
   document.getElementById('callout').innerHTML='';
-  G.busy=false; render();
+  startTurn(); // 電腦先決定下一手＋露出氣場提示
 }
 
 function clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi){
@@ -452,10 +515,10 @@ function setHint(){
   const charged=G.p.qi>=CFG.qiMax;
   if(G.sel){ h.textContent= charged?`${G.sel.album} — ⚡可放【品味碾壓】或選一般屬性`:`${G.sel.album} — 選一個主打屬性發動`; return; }
   if(charged){ h.textContent='⚡ 氣勢滿！選一張卡 → 品味碾壓（無視對方屬性一擊）'; return; }
-  let tip='選一張卡，再點一個主打屬性出招';
-  if(G.p.last!==null) tip+=`（接 ${ATTR_ZH[CFG.chainNext[G.p.last]]} 可續連段充氣勢）`;
-  if(G.p.qi>=CFG.qiMax-CFG.qiCounter) tip='⚡ 氣勢將滿 — 讀對相剋就能碾壓！';
-  h.textContent=tip;
+  const pe=G.pendingE;
+  if(pe && pe.ult){ h.textContent='⚠ 電腦氣勢滿、可能碾壓（屬性擋不住）— 搶氣勢或拚血'; return; }
+  if(pe){ h.textContent=`電腦氣場：偏【${ATTR_ZH[pe.tell]}】… 信它就去剋，但它可能虛晃反咬`; return; }
+  h.textContent='讀電腦氣場 → 選一張卡＋主打屬性出招';
 }
 function setMeta(){
   document.getElementById('eMeta').textContent=`牌庫 ${G.e.deck.length} · 手牌 ${G.e.hand.length}`;
