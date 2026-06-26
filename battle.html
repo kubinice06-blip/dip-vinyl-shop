@@ -57,12 +57,14 @@
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
   .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:220px; position:relative; }
-  .relring { position:absolute; left:2px; top:50%; transform:translateY(-50%); width:92px; pointer-events:none; z-index:3; }
-  .relring svg { width:100%; height:auto; display:block; }
+  .cheat { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:8px; }
+  .relring { width:104px; flex:none; }
+  .relring svg { width:100%; height:auto; overflow:visible; display:block; }
   .relring .node circle { fill:#fff; stroke:var(--black); stroke-width:1.4; }
-  .relring .node text { font-size:11px; font-weight:700; fill:var(--black); text-anchor:middle; }
-  .relring .cap { text-align:center; font-size:7.5px; letter-spacing:0.06em; margin-top:1px; }
+  .relring .node text { font-size:12px; font-weight:700; fill:var(--black); text-anchor:middle; }
+  .relring .cap { display:flex; justify-content:center; gap:12px; font-size:8px; margin-top:4px; letter-spacing:0.04em; }
   .relring .cap .k { color:var(--dmg); } .relring .cap .s { color:var(--qi); }
+  .cheat .legend { flex-direction:column; align-items:flex-start; gap:4px; margin:0; text-align:left; }
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
   .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
@@ -149,35 +151,6 @@
   </div>
 
   <div class="arena">
-    <div class="relring" aria-hidden="true">
-      <svg viewBox="0 0 120 122" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <marker id="arrK" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="var(--dmg)"/></marker>
-          <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="var(--qi)"/></marker>
-        </defs>
-        <!-- 相剋（紅，順時針 冷→經→入→冷） -->
-        <g fill="none" stroke="var(--dmg)" stroke-width="1.6" marker-end="url(#arrK)">
-          <path d="M22,90 Q6,46 56,18"/>
-          <path d="M64,18 Q114,46 98,90"/>
-          <path d="M96,96 Q60,118 24,96"/>
-        </g>
-        <!-- 相生（橘，逆時針 經→冷→入→經） -->
-        <g fill="none" stroke="var(--qi)" stroke-width="1.6" stroke-dasharray="3 2.5" marker-end="url(#arrS)">
-          <path d="M58,20 Q40,58 20,86"/>
-          <path d="M24,98 Q60,76 96,98"/>
-          <path d="M100,86 Q82,58 62,20"/>
-        </g>
-        <!-- 節點 -->
-        <g class="node">
-          <circle cx="60" cy="16" r="11.5"/><text x="60" y="20">經</text>
-          <circle cx="18" cy="94" r="11.5"/><text x="18" y="98">冷</text>
-          <circle cx="102" cy="94" r="11.5"/><text x="102" y="98">入</text>
-        </g>
-      </svg>
-      <div class="cap"><span class="k">→ 相剋</span> <span class="s">⇢ 相生</span></div>
-    </div>
     <div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
@@ -193,10 +166,40 @@
     </div>
     <div class="hpbar" id="pHpbar"><i id="pHpfill"></i><span id="pHptxt"></span></div>
     <div class="qiwrap"><span class="qilab" id="pQiLab">氣勢</span><div class="qibar" id="pQi"></div></div>
-    <div class="legend">
-      <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b></span>
-      <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1（相生連段見左側環圖）</span>
-      <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
+    <div class="cheat">
+      <div class="relring" aria-hidden="true">
+        <svg viewBox="0 0 126 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrK" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto">
+              <path d="M0,0 L8,3.5 L0,7 z" fill="var(--dmg)"/></marker>
+            <marker id="arrS" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto">
+              <path d="M0,0 L8,3.5 L0,7 z" fill="var(--qi)"/></marker>
+          </defs>
+          <!-- 相剋（紅實線，冷→經→入→冷）箭頭落在節點間空隙 -->
+          <g fill="none" stroke="var(--dmg)" stroke-width="1.7" marker-end="url(#arrK)">
+            <path d="M24.7,68.5 Q31.3,51 43.1,36.5"/>
+            <path d="M82.9,36.5 Q94.7,51 101.3,68.5"/>
+            <path d="M81.4,103 Q63,108 44.6,103"/>
+          </g>
+          <!-- 相生（橘虛線，經→冷→入→經） -->
+          <g fill="none" stroke="var(--qi)" stroke-width="1.7" stroke-dasharray="3 2.5" marker-end="url(#arrS)">
+            <path d="M55.3,43.5 Q48.7,61 36.9,75.5"/>
+            <path d="M44.6,89 Q63,84 81.4,89"/>
+            <path d="M89.1,75.5 Q77.3,61 70.7,43.5"/>
+          </g>
+          <g class="node">
+            <circle cx="63" cy="16" r="12"/><text x="63" y="20.5">經</text>
+            <circle cx="17" cy="96" r="12"/><text x="17" y="100.5">冷</text>
+            <circle cx="109" cy="96" r="12"/><text x="109" y="100.5">入</text>
+          </g>
+        </svg>
+        <div class="cap"><span class="k">→ 相剋</span><span class="s">⇢ 相生</span></div>
+      </div>
+      <div class="legend">
+        <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b></span>
+        <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1</span>
+        <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
+      </div>
     </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
     <div class="hand" id="pHand"></div>
