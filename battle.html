@@ -57,6 +57,12 @@
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
   .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:220px; position:relative; }
+  .relring { position:absolute; left:2px; top:50%; transform:translateY(-50%); width:92px; pointer-events:none; z-index:3; }
+  .relring svg { width:100%; height:auto; display:block; }
+  .relring .node circle { fill:#fff; stroke:var(--black); stroke-width:1.4; }
+  .relring .node text { font-size:11px; font-weight:700; fill:var(--black); text-anchor:middle; }
+  .relring .cap { text-align:center; font-size:7.5px; letter-spacing:0.06em; margin-top:1px; }
+  .relring .cap .k { color:var(--dmg); } .relring .cap .s { color:var(--qi); }
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
   .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
@@ -143,6 +149,35 @@
   </div>
 
   <div class="arena">
+    <div class="relring" aria-hidden="true">
+      <svg viewBox="0 0 120 122" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrK" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--dmg)"/></marker>
+          <marker id="arrS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--qi)"/></marker>
+        </defs>
+        <!-- 相剋（紅，順時針 冷→經→入→冷） -->
+        <g fill="none" stroke="var(--dmg)" stroke-width="1.6" marker-end="url(#arrK)">
+          <path d="M22,90 Q6,46 56,18"/>
+          <path d="M64,18 Q114,46 98,90"/>
+          <path d="M96,96 Q60,118 24,96"/>
+        </g>
+        <!-- 相生（橘，逆時針 經→冷→入→經） -->
+        <g fill="none" stroke="var(--qi)" stroke-width="1.6" stroke-dasharray="3 2.5" marker-end="url(#arrS)">
+          <path d="M58,20 Q40,58 20,86"/>
+          <path d="M24,98 Q60,76 96,98"/>
+          <path d="M100,86 Q82,58 62,20"/>
+        </g>
+        <!-- 節點 -->
+        <g class="node">
+          <circle cx="60" cy="16" r="11.5"/><text x="60" y="20">經</text>
+          <circle cx="18" cy="94" r="11.5"/><text x="18" y="98">冷</text>
+          <circle cx="102" cy="94" r="11.5"/><text x="102" y="98">入</text>
+        </g>
+      </svg>
+      <div class="cap"><span class="k">→ 相剋</span> <span class="s">⇢ 相生</span></div>
+    </div>
     <div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
@@ -159,8 +194,8 @@
     <div class="hpbar" id="pHpbar"><i id="pHpfill"></i><span id="pHptxt"></span></div>
     <div class="qiwrap"><span class="qilab" id="pQiLab">氣勢</span><div class="qibar" id="pQi"></div></div>
     <div class="legend">
-      <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b>｜冷▸經▸入▸冷</span>
-      <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1｜相生連段：經▸冷▸入▸經</span>
+      <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b></span>
+      <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1（相生連段見左側環圖）</span>
       <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
     </div>
     <div class="hint" id="hint">選一張卡，再點一個主打屬性出招</div>
@@ -205,7 +240,13 @@ const SYN_SKILL = { classic:'品味拓荒', obscurity:'閾值突破', accessibil
 const COUNTER_OF = {}; for(const k of ATTRS) COUNTER_OF[CFG.beats[k]] = k;
 // 屬性效果文案 + 提示氣場文案
 const FX_ZH = { classic:'守 +1聲望', obscurity:'挖 +1氣勢', accessibility:'攻 對手氣勢-1' };
-const TELL_FLAVOR = { classic:'像要搬出經典名盤', obscurity:'露出考古挖盤的眼神', accessibility:'散發前衛實驗的氣息' };
+const TELL_FLAVOR = {
+  classic:['像要搬出經典名盤','手指停在那排殿堂級唱片上','一副「這張你總聽過吧」的篤定','翻出公認神專的架勢','露出報菜名搬書袋的神情','嘴邊掛著「樂史必聽」四個字'],
+  obscurity:['露出考古挖盤的眼神','嘴角藏著「你沒聽過吧」的得意','散發二手店挖三小時的氣息','一臉要掏出絕版冷門的樣子','眼神飄向沒人知道的角落廠牌','擺出地下小眾的姿態'],
+  accessibility:['擺出「這首超洗腦」的表情','一副要點大家都會哼的歌','露出「保證入耳」的自信','手伸向街知巷聞的那張','散發朗朗上口的親和力','像要放首誰都能跟著唱的']
+};
+const ULT_FLAVOR = ['⚡ 氣勢滿溢，殺氣騰騰','⚡ 渾身散發要碾壓的氣場','⚡ 蓄勢待發、準備品味碾壓','⚡ 眼神鎖定，殺意已滿'];
+const pick = a => a[rnd(a.length)];
 
 // ===== 範例卡池（對戰 stats 1–5；王牌單軸 7）=====
 const POOL = [
@@ -275,13 +316,14 @@ function startTurn(){
     if(alt){ card=alt.card; attr=alt.attr; }
   }
   G.e.hand=G.e.hand.filter(c=>c!==card);
-  G.pendingE={ card, attr, tell, ult:eUlt };
+  const flavor = eUlt ? pick(ULT_FLAVOR) : pick(TELL_FLAVOR[tell]); // 開局抽一句，避免重繪跳字
+  G.pendingE={ card, attr, tell, ult:eUlt, flavor };
   render(); renderTell();
 }
 function renderTell(){
   const eSlot=document.getElementById('eSlot'); const pe=G.pendingE; if(!pe) return;
   if(pe.pass){ eSlot.className='slot tell'; eSlot.innerHTML=`<div class="tellbox"><b>電腦疲勞、無牌可出</b></div>`; return; }
-  const txt = pe.ult ? '⚡ 氣勢滿溢，殺氣騰騰' : TELL_FLAVOR[pe.tell];
+  const txt = pe.flavor || (pe.ult ? ULT_FLAVOR[0] : TELL_FLAVOR[pe.tell][0]);
   eSlot.className='slot tell';
   eSlot.innerHTML=`<div class="facedown"></div><div class="tellbox"><span>電腦氣場</span><b>${txt}</b></div>`;
 }
