@@ -56,7 +56,7 @@
   .enemy-hand { display:flex; gap:4px; margin-top:8px; }
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
-  .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; gap:10px; min-height:220px; position:relative; }
+  .arena { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; gap:8px; min-height:140px; position:relative; }
   .cheat { display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:8px; }
   .relring { width:54px; flex:none; }
   .relring svg { width:100%; height:auto; overflow:visible; display:block; }
@@ -79,7 +79,7 @@
   .rules-box b { color:var(--dmg); } .rules-box em { color:var(--qi); font-style:normal; font-weight:700; }
   .rules-box .ring-cycle { font-weight:700; letter-spacing:0.1em; }
   .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
-  .slot { flex:1; max-width:170px; min-height:150px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
+  .slot { flex:1; max-width:170px; min-height:116px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; }
   .slot.filled { border-style:solid; border-color:var(--black); }
   .slot.tell { border-style:dashed; border-color:var(--gray); flex-direction:column; gap:7px; }
   .facedown { width:54px; height:76px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 4px,#eee 4px,#eee 8px); }
@@ -119,12 +119,12 @@
 
   .player-zone { border-top:1px solid var(--black); padding:10px 12px 16px; }
   .hint { text-align:center; font-size:9px; color:var(--gray); letter-spacing:0.08em; margin-bottom:8px; min-height:12px; }
-  .hand { display:flex; gap:7px; overflow-x:auto; padding-bottom:4px; }
+  .hand { display:flex; gap:6px; overflow-x:auto; padding-bottom:4px; }
   .hand::-webkit-scrollbar { height:0; }
-  .handcard { flex:0 0 112px; border:1px solid var(--line); background:#fff; padding:8px; cursor:pointer; text-align:left; font-family:var(--mono); transition:transform .12s,border-color .12s; position:relative; }
+  .handcard { flex:0 0 100px; border:1px solid var(--line); background:#fff; padding:7px; cursor:pointer; text-align:left; font-family:var(--mono); transition:transform .12s,border-color .12s; position:relative; }
   .handcard:hover { border-color:var(--black); transform:translateY(-3px); }
   .handcard.sel { border-color:var(--black); border-width:2px; transform:translateY(-6px); }
-  .handcard .alb { font-weight:700; font-size:10px; line-height:1.25; margin-bottom:1px; height:25px; overflow:hidden; }
+  .handcard .alb { font-weight:700; font-size:10px; line-height:1.25; margin-bottom:1px; height:22px; overflow:hidden; }
   .handcard .art { color:var(--gray); font-size:8px; margin-bottom:6px; height:10px; overflow:hidden; }
   .attrbtns { display:flex; gap:3px; margin-top:6px; }
   .attrbtn { flex:1; font-family:var(--mono); font-size:9px; font-weight:700; border:1px solid var(--line); background:#fff; padding:5px 0; cursor:pointer; transition:all .12s; }
@@ -147,8 +147,8 @@
   .overlay .ovbtns { display:flex; gap:10px; }
 
   /* 卡面封面 */
-  .pcover { width:100%; height:56px; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
-  .handcard .pcover { height:42px; margin-bottom:5px; }
+  .pcover { width:100%; height:52px; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
+  .handcard .pcover { height:34px; margin-bottom:5px; }
   .borrow-tag { display:inline-block; font-size:8px; font-weight:700; letter-spacing:0.12em; color:var(--gray); border:1px solid var(--line); padding:1px 5px; margin-bottom:5px; margin-left:4px; }
 
   /* 開戰大廳 */
@@ -188,6 +188,23 @@
   .loadwrap .spin { width:26px; height:26px; border:2px solid var(--line); border-top-color:var(--black); border-radius:50%; animation:spin 0.8s linear infinite; }
   .loadwrap .lt { font-size:10px; color:var(--gray); letter-spacing:0.12em; }
   @keyframes spin { to { transform:rotate(360deg); } }
+
+  /* ── 手機緊湊化：壓低各區高度，盡量一屏看完（圖例可由「規則」取代故隱藏）── */
+  @media (max-width:600px) {
+    .side { padding:9px 12px; }
+    .arena { min-height:96px; padding:8px; gap:6px; }
+    .slots { gap:12px; }
+    .slot { min-height:104px; }
+    .facedown { width:46px; height:64px; }
+    .cheat { gap:10px; margin-bottom:6px; }
+    .cheat .legend { display:none; }
+    .relring { width:44px; }
+    .player-zone { padding:8px 10px 12px; }
+    .hint { margin-bottom:6px; }
+    .handcard { flex:0 0 96px; }
+    .log { max-height:54px; margin-top:8px; padding-top:6px; }
+    .tellbox { font-size:8px; } .tellbox b { font-size:9px; }
+  }
 </style>
 </head>
 <body>
