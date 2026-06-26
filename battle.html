@@ -143,6 +143,51 @@
   .overlay.show { display:flex; animation:flash .5s; }
   .overlay h1 { font-size:30px; letter-spacing:0.2em; margin:0; }
   .overlay p { color:var(--gray); margin:0; letter-spacing:0.08em; }
+  .overlay .ovrec { font-size:11px; color:var(--black); letter-spacing:0.08em; }
+  .overlay .ovbtns { display:flex; gap:10px; }
+
+  /* 卡面封面 */
+  .pcover { width:100%; height:56px; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
+  .handcard .pcover { height:42px; margin-bottom:5px; }
+  .borrow-tag { display:inline-block; font-size:8px; font-weight:700; letter-spacing:0.12em; color:var(--gray); border:1px solid var(--line); padding:1px 5px; margin-bottom:5px; margin-left:4px; }
+
+  /* 開戰大廳 */
+  .lobby { position:fixed; inset:0; background:var(--bg); display:none; flex-direction:column; align-items:center; z-index:130; padding:26px 16px 40px; overflow-y:auto; }
+  .lobby.show { display:flex; animation:flash .4s; }
+  .lobby-box { max-width:440px; width:100%; }
+  .lobby h1 { font-size:24px; letter-spacing:0.22em; text-align:center; margin:6px 0 2px; }
+  .lobby .tagline { text-align:center; font-size:9px; color:var(--gray); letter-spacing:0.16em; text-transform:uppercase; margin-bottom:18px; }
+  .lobby-auth { border:1px solid var(--line); padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px; font-size:10px; letter-spacing:0.05em; }
+  .lobby-auth .au-info { line-height:1.6; }
+  .lobby-auth .au-info b { color:var(--black); } .lobby-auth .au-info span { color:var(--gray); }
+  .lobby-rec { border:1px solid var(--line); padding:10px 12px; margin-bottom:18px; }
+  .lobby-rec .rec-top { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:6px; }
+  .lobby-rec .rec-top .rt-lab { font-size:9px; letter-spacing:0.14em; color:var(--gray); text-transform:uppercase; }
+  .lobby-rec .rec-top .rt-big { font-size:15px; font-weight:700; letter-spacing:0.08em; }
+  .lobby-rec .rec-rows { display:flex; flex-direction:column; gap:3px; }
+  .lobby-rec .rec-row { display:flex; justify-content:space-between; font-size:9px; color:var(--gray); letter-spacing:0.06em; }
+  .lobby-rec .rec-row b { color:var(--black); font-weight:700; }
+  .opp-head { font-size:9px; letter-spacing:0.16em; color:var(--gray); text-transform:uppercase; margin-bottom:8px; }
+  .opp-list { display:flex; flex-direction:column; gap:8px; }
+  .opp { display:flex; align-items:center; gap:12px; width:100%; text-align:left; font-family:var(--mono); border:1px solid var(--black); background:#fff; padding:12px 14px; cursor:pointer; transition:all .15s; }
+  .opp:hover { background:var(--black); color:#fff; } .opp:hover .opp-sub, .opp:hover .opp-rec { color:#bbb; }
+  .opp .opp-emoji { font-size:22px; flex:none; }
+  .opp .opp-main { flex:1; }
+  .opp .opp-name { font-weight:700; font-size:12px; letter-spacing:0.08em; }
+  .opp .opp-sub { font-size:9px; color:var(--gray); letter-spacing:0.04em; margin-top:2px; line-height:1.5; }
+  .opp .opp-rec { font-size:9px; color:var(--gray); letter-spacing:0.06em; flex:none; white-space:nowrap; }
+  .opp.po { border-color:var(--gold); }
+  .opp.po .opp-name { color:var(--gold); } .opp.po:hover .opp-name { color:#fff; }
+  .opp.po:hover { background:var(--gold); border-color:var(--gold); }
+  .opp .po-beta { display:inline-block; font-size:7px; border:1px solid var(--gold); color:var(--gold); padding:0 4px; margin-left:6px; letter-spacing:0.1em; vertical-align:middle; }
+  .opp:hover .po-beta { border-color:#fff; color:#fff; }
+  .lob-btn { font-family:var(--mono); font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; background:none; border:1px solid var(--black); padding:7px 12px; cursor:pointer; color:var(--black); transition:all .15s; white-space:nowrap; }
+  .lob-btn:hover { background:var(--black); color:#fff; }
+  .loadwrap { position:fixed; inset:0; background:rgba(255,255,255,0.97); display:none; flex-direction:column; align-items:center; justify-content:center; gap:14px; z-index:140; }
+  .loadwrap.show { display:flex; }
+  .loadwrap .spin { width:26px; height:26px; border:2px solid var(--line); border-top-color:var(--black); border-radius:50%; animation:spin 0.8s linear infinite; }
+  .loadwrap .lt { font-size:10px; color:var(--gray); letter-spacing:0.12em; }
+  @keyframes spin { to { transform:rotate(360deg); } }
 </style>
 </head>
 <body>
@@ -150,12 +195,12 @@
   <div class="topbar">
     <span class="title">dip · 品味對戰</span>
     <span class="beta">BETA v4 · 星數傷害</span>
-    <button class="btn" id="restart">新對局</button>
+    <button class="btn" id="restart">↩ 大廳</button>
   </div>
 
   <div class="side enemy">
     <div class="nameplate">
-      <span class="who">電腦 · 樂評魂</span>
+      <span class="who" id="eWho">電腦</span>
       <span class="meta" id="eMeta">牌庫 — · 手牌 —</span>
     </div>
     <div class="hpbar" id="eHpbar"><i id="eHpfill"></i><span id="eHptxt"></span></div>
@@ -224,7 +269,29 @@
 <div class="overlay" id="overlay">
   <h1 id="ovTitle"></h1>
   <p id="ovSub"></p>
-  <button class="btn" id="ovBtn">再來一局</button>
+  <p class="ovrec" id="ovRec"></p>
+  <div class="ovbtns">
+    <button class="btn" id="ovAgain">再戰</button>
+    <button class="btn" id="ovLobby">↩ 大廳</button>
+  </div>
+</div>
+
+<!-- 開戰大廳 -->
+<div class="lobby" id="lobby">
+  <div class="lobby-box">
+    <h1>品味對決</h1>
+    <div class="tagline">PVE 封測 · 用你的選盤品味開打</div>
+    <div class="lobby-auth" id="lobbyAuth"></div>
+    <div class="lobby-rec" id="lobbyRec"></div>
+    <div class="opp-head">選擇對手</div>
+    <div class="opp-list" id="oppList"></div>
+  </div>
+</div>
+
+<!-- 載入卡冊 -->
+<div class="loadwrap" id="loadwrap">
+  <div class="spin"></div>
+  <div class="lt" id="loadText">載入你的卡冊…</div>
 </div>
 
 <div class="rules-modal" id="rulesModal">
@@ -279,11 +346,34 @@
   </div>
 </div>
 
-<script>
-"use strict";
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+// ───────── Firebase（與 index.html 同專案）─────────
+const fbApp = initializeApp({
+  apiKey: "AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg",
+  authDomain: "price-manager-e8846.firebaseapp.com",
+  projectId: "price-manager-e8846",
+  storageBucket: "price-manager-e8846.firebasestorage.app",
+  messagingSenderId: "570133498387",
+  appId: "1:570133498387:web:8835b8d2373797e91d0de6"
+});
+const db = getFirestore(fbApp);
+const auth = getAuth(fbApp);
+const googleProvider = new GoogleAuthProvider();
+const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
+let currentUser = null, authReady = false, myColl = null, myStats = null;
+
+// ───────── 封測開關（未來正式開放：poOpponent 設 false 即移除「與 Po 對戰」；minDeck 設 10 即需 10 張才能打）─────────
+const BETA = { poOpponent:true };
+
 // ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放品味碾壓）=====
 const CFG = {
   startHp:30, deckSize:20, startHand:5, drawPerTurn:1, handLimit:7,
+  minDeck:0,           // 封測：0 張卡冊也能玩（全靠卡池借牌）；正式開放改 10
+  maxCopies:2, aceCopies:1,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
   qiMax:6,            // 氣勢槽滿 → 可發動品味碾壓
@@ -338,14 +428,95 @@ const ACES = [
   {artist:'Midori Takada',album:'Through the Looking Glass',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
   {artist:'Merzbow',album:'Pulse Demon',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
+// 王牌旗標 → 對戰三圍（卡冊只存 hall/pearl/heresy 旗標，對戰才賦予 7 星單軸）
+const ACE_STATS = {
+  hall:   { classic:7, obscurity:1, accessibility:1 },
+  pearl:  { classic:1, obscurity:7, accessibility:1 },
+  heresy: { classic:1, obscurity:1, accessibility:7 },
+};
+
+// ===== 對手（三難度只調 AI 行為，牌組同走卡池；Po = 封測限定店長精選牌組）=====
+const OPPONENTS = {
+  novice:    { who:'音樂小白',  diff:'easy',   sub:'隨便出牌、不會虛晃——練手用',     emoji:'🎧' },
+  critic:    { who:'資深樂評',  diff:'normal', sub:'會追連段、會讀心虛晃',           emoji:'🎙️' },
+  collector: { who:'瘋狂藏家',  diff:'hard',   sub:'精準虛晃＋牌庫管理，硬仗',       emoji:'💿' },
+  po:        { who:'Po · 店長', diff:'hard',   sub:'店長親自下海的私房牌組（封測限定）', emoji:'🪩', beta:true },
+};
+// Po 的招牌私盤（挖盤味重；不足 19 張由卡池補滿，附 1 張遺珠王牌）
+const PO_POOL = [
+  ['Alice Coltrane','Journey in Satchidananda',4,4,3], ['Pharoah Sanders','Karma',3,4,4],
+  ['Arthur Russell','World of Echo',3,5,4], ['Shuggie Otis','Inspiration Information',3,4,2],
+  ['Vashti Bunyan','Just Another Diamond Day',3,5,2], ['Os Mutantes','Os Mutantes',4,4,3],
+  ['Can','Future Days',4,4,3], ['Mulatu Astatke','Mulatu of Ethiopia',3,5,3],
+  ['Sun Ra','Space Is the Place',3,4,5], ['Don Cherry','Brown Rice',3,5,4],
+  ['Jorge Ben','África Brasil',4,4,2], ['Terry Riley','A Rainbow in Curved Air',3,4,4],
+  ['Linda Perhacs','Parallelograms',2,5,3], ['Gal Costa','Gal Costa',3,5,3],
+].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
+PO_POOL.push({artist:'Pauline Anna Strom',album:'Trans-Millenia Consort',classic:1,obscurity:7,accessibility:1,ace:'pearl'});
+
+// ───────── 卡冊 / 評分讀取 ─────────
+const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().trim();
+function clampStat(v){ return Math.max(1, Math.min(5, Math.round(Number(v)||1))); }
+async function getOverride(id){
+  try { const s=await getDoc(doc(db,'album_overrides',id)); return s.exists()?s.data():null; } catch(e){ return null; }
+}
+async function fetchRating(artist,album){
+  try {
+    const res=await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
+    let r = res.ok ? await res.json() : null;
+    const ov = await getOverride(cardIdOf(artist,album));
+    if(ov){ r=r||{}; if(ov.classic)r.classic=ov.classic; if(ov.obscurity)r.obscurity=ov.obscurity; if(ov.accessibility)r.accessibility=ov.accessibility; }
+    if(!r || r.classic==null || r.obscurity==null || r.accessibility==null) return null;
+    return { classic:clampStat(r.classic), obscurity:clampStat(r.obscurity), accessibility:clampStat(r.accessibility) };
+  } catch(e){ return null; }
+}
+async function getMyCollection(){
+  if(!currentUser) return [];
+  try {
+    const snap=await getDocs(collection(db,'collections',currentUser.uid,'cards'));
+    return snap.docs.map(d=>d.data());
+  } catch(e){ return []; }
+}
 
 const rnd = n => Math.floor(Math.random()*n);
 const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){const j=rnd(i+1);[a[i],a[j]]=[a[j],a[i]];} return a; };
 const sleep = ms => new Promise(r=>setTimeout(r,ms));
 const clampQi = q => Math.max(0, q);
 let uid=0;
-function buildDeck(){
-  const regs = shuffle(POOL).slice(0,CFG.deckSize-1);
+// 玩家牌組：真實卡冊（向目錄取三圍、旗標轉王牌三圍）＋ 不足時卡池借普卡補滿（標 borrowed、不入冊）
+async function buildPlayerDeck(){
+  let deck=[];
+  const cards = myColl || [];
+  const rated = await Promise.all(cards.map(async c=>{
+    const ace = c.hall?'hall':c.pearl?'pearl':c.heresy?'heresy':null;
+    if(ace) return { c, ace, stats:ACE_STATS[ace] };
+    const r = await fetchRating(c.artist, c.album);
+    return r ? { c, ace:null, stats:r } : null;
+  }));
+  for(const it of rated){
+    if(!it || deck.length>=CFG.deckSize) continue;
+    const base = { artist:it.c.artist, album:it.c.album, coverUrl:it.c.coverUrl||'', ...it.stats, ace:it.ace };
+    const copies = it.ace ? CFG.aceCopies : Math.min(it.c.count||1, CFG.maxCopies);
+    for(let i=0;i<copies && deck.length<CFG.deckSize;i++) deck.push({...base});
+  }
+  if(deck.length<CFG.deckSize){
+    const have = new Set(deck.map(c=>c.album));
+    const borrow = shuffle(POOL).filter(c=>!have.has(c.album)).slice(0, CFG.deckSize-deck.length)
+      .map(c=>({...c, borrowed:true}));
+    deck = deck.concat(borrow);
+  }
+  return shuffle(deck.map(c=>({...c,uid:++uid})));
+}
+// 對手牌組：一般對手走卡池＋隨機王牌；Po 走招牌私盤＋卡池補滿
+function buildEnemyDeck(oppKey){
+  if(oppKey==='po'){
+    const sig = PO_POOL.filter(c=>!c.ace);
+    const fill = shuffle(POOL).filter(c=>!sig.some(s=>s.album===c.album)).slice(0, Math.max(0, CFG.deckSize-1-sig.length));
+    const regs = shuffle([...sig,...fill]).slice(0, CFG.deckSize-1);
+    const ace = PO_POOL.find(c=>c.ace) || ACES[1];
+    return shuffle([...regs,ace].map(c=>({...c,uid:++uid})));
+  }
+  const regs = shuffle(POOL).slice(0, CFG.deckSize-1);
   const ace = ACES[rnd(ACES.length)];
   return shuffle([...regs,ace].map(c=>({...c,uid:++uid})));
 }
@@ -358,16 +529,37 @@ function applyAttrEffect(side, attr){
   else if(attr==='accessibility') foe.qi=clampQi(foe.qi-CFG.attrFx.accessibility);
 }
 
-let G;
-function newGame(){
+let G, lastOpp='critic';
+// 從大廳挑對手 → 載入卡冊牌組 → 開局
+async function startMatch(oppKey){
+  lastOpp = oppKey;
+  const lw=document.getElementById('loadwrap');
+  document.getElementById('loadText').textContent = currentUser ? '載入你的卡冊…' : '備牌中…';
+  lw.classList.add('show');
+  if(currentUser && myColl===null) myColl = await getMyCollection();
+  const pDeck = await buildPlayerDeck();
+  const eDeck = buildEnemyDeck(oppKey);
+  lw.classList.remove('show');
+  document.getElementById('lobby').classList.remove('show');
+  newGame(oppKey, pDeck, eDeck);
+}
+function newGame(oppKey, pDeck, eDeck){
+  const opp = OPPONENTS[oppKey];
   G = {
-    p:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
-    e:{ hp:CFG.startHp, qi:0, deck:buildDeck(), hand:[], last:null, chain:0, fatigue:0 },
+    p:{ hp:CFG.startHp, qi:0, deck:pDeck, hand:[], last:null, chain:0, fatigue:0 },
+    e:{ hp:CFG.startHp, qi:0, deck:eDeck, hand:[], last:null, chain:0, fatigue:0 },
     busy:false, over:false, sel:null, logs:[], pendingE:null, pCounteredTellLast:false,
+    diff:opp.diff, opp:oppKey,
   };
+  document.getElementById('eWho').textContent = opp.who;
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
-  pushLog('對局開始。讀電腦氣場、選對相剋充氣勢；別無腦照提示打，它會虛晃反咬。氣勢滿放【品味碾壓】。', '');
+  const borrowed = pDeck.filter(c=>c.borrowed).length;
+  const intro = borrowed>0
+    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，借了 ${borrowed} 張卡池牌（標「借」、不入冊）。`
+    : `對局開始 · 對手【${opp.who}】。整副都是你卡冊的卡。`;
+  pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味碾壓】。', '');
   document.getElementById('overlay').classList.remove('show');
+  render();
   startTurn();
 }
 // ===== 回合開始：電腦先暗中決定出招＋對玩家露出「氣場提示」（會依玩家是否無腦照剋而虛晃）=====
@@ -378,8 +570,8 @@ function startTurn(){
   if(!plan.best){ G.pendingE={ pass:true }; render(); renderTell(); return; } // 電腦無牌（疲勞）
   let card=plan.best.card, attr=plan.best.attr, tell=plan.best.attr;
   const eUlt=G.e.qi>=CFG.qiMax;
-  if(!eUlt && G.pCounteredTellLast){
-    // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性
+  if(!eUlt && G.diff!=='easy' && G.pCounteredTellLast){
+    // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性（小白不會虛晃）
     const bait=COUNTER_OF[COUNTER_OF[tell]];
     const alt=plan.scored.filter(x=>x.attr===bait).sort((a,b)=>b.s-a.s)[0];
     if(alt){ card=alt.card; attr=alt.attr; }
@@ -412,17 +604,30 @@ function computeChain(side, attr){
   return { len:side.chain, qi:chainQi(side.chain) };
 }
 
-// ===== AI 計劃：回傳選定出招 + 全部評分（供虛晃挑替代招）=====
+// ===== AI 計劃：依難度評分（easy 近乎隨機 / normal 現況 / hard 精準）=====
 function aiPlan(){
+  const diff = G.diff || 'normal';
   const hand=G.e.hand; let best=null; const scored=[];
   for(const card of hand){ for(const attr of ATTRS){
     let s=1;
-    if(G.e.last!==null && CFG.chainNext[G.e.last]===attr) s += 1;
-    s += card[attr]*0.15;
-    if(card.ace==='heresy') s += (G.p.qi>=5?3:0.3);   // 只在對手快滿才解構
-    if(card.ace==='hall')   s += (G.p.qi>=4?1.5:0.5);
-    if(card.ace==='pearl')  s += 0.8;
-    s += Math.random()*4.0;                           // 出招更隨機
+    const chainHit = G.e.last!==null && CFG.chainNext[G.e.last]===attr;
+    if(diff==='easy'){
+      s += Math.random()*5;                            // 純隨機：不追連段、不挑王牌時機
+    } else if(diff==='hard'){
+      if(chainHit) s += 2;                             // 更積極鋪連段
+      s += card[attr]*0.3;
+      if(card.ace==='heresy') s += (G.p.qi>=4?5:-1);   // 壓住王牌，等對手氣勢高才爆
+      if(card.ace==='hall')   s += (G.p.qi>=3?3:0.2);
+      if(card.ace==='pearl')  s += 1.2;
+      s += Math.random()*1.5;                          // 少隨機 → 出招更精準
+    } else { // normal
+      if(chainHit) s += 1;
+      s += card[attr]*0.15;
+      if(card.ace==='heresy') s += (G.p.qi>=5?3:0.3);
+      if(card.ace==='hall')   s += (G.p.qi>=4?1.5:0.5);
+      if(card.ace==='pearl')  s += 0.8;
+      s += Math.random()*4.0;
+    }
     scored.push({card,attr,s});
     if(!best||s>best.s) best={card,attr,s};
   }}
@@ -580,10 +785,14 @@ function statRow(card, attr, active){
   for(let i=0;i<max;i++) bars+=`<i class="${i<v?'on':''}"></i>`;
   return `<div class="stat ${active?'act':''}"><span class="k">${ATTR_ZH[attr]}</span><span class="bars">${bars}</span></div>`;
 }
+function coverHTML(card){
+  return card.coverUrl ? `<div class="pcover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>` : '';
+}
 function cardHTML(card, attr){
   const ace=card.ace?` ace-border ace-${card.ace}`:'';
   const tag=card.ace?`<span class="ace-tag ace-${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
-  return `<div class="pcard${ace}">${tag}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
+  const borrow=card.borrowed?`<span class="borrow-tag">借</span>`:'';
+  return `<div class="pcard${ace}">${tag}${borrow}${coverHTML(card)}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
     <div class="stats">${ATTRS.map(a=>statRow(card,a,a===attr)).join('')}</div></div>`;
 }
 function render(){ renderHp(); renderQi(); renderHand(); renderEnemyHand(); setMeta(); renderLog(); setHint(); }
@@ -609,10 +818,11 @@ function renderHand(){
   el.innerHTML=G.p.hand.map(c=>{
     const ace=c.ace?` ace-border ace-${c.ace}`:'';
     const tag=c.ace?`<span class="ace-tag ace-${c.ace}" style="margin-bottom:4px">${ACE_ZH[c.ace]}</span>`:'';
+    const borrow=c.borrowed?`<span class="borrow-tag">借</span>`:'';
     const sel=G.sel&&G.sel.uid===c.uid;
     const ultBtn=(sel&&G.p.qi>=CFG.qiMax)?`<button class="attrbtn ultbtn" data-uid="${c.uid}" data-attr="__ult__">⚡ 品味碾壓 -${CFG.ultimate}（無視屬性）</button>`:'';
     const attrs=sel?`${ultBtn}<div class="attrbtns">${ATTRS.map(a=>`<button class="attrbtn" data-uid="${c.uid}" data-attr="${a}">${ATTR_ZH[a]}<b>${c[a]}</b></button>`).join('')}</div>`:'';
-    return `<div class="handcard${ace}${sel?' sel':''}" data-uid="${c.uid}">${tag}<div class="alb">${c.album}</div><div class="art">${c.artist}</div>
+    return `<div class="handcard${ace}${sel?' sel':''}" data-uid="${c.uid}">${tag}${borrow}${coverHTML(c)}<div class="alb">${c.album}</div><div class="art">${c.artist}</div>
       <div class="stats" style="font-size:8px">${ATTRS.map(a=>statRow(c,a,false)).join('')}</div>${attrs}</div>`;
   }).join('');
   el.querySelectorAll('.handcard').forEach(h=>h.addEventListener('click',e=>{
@@ -644,19 +854,95 @@ function pushLog(t,cls){ G.logs.unshift({t,cls}); if(G.logs.length>30)G.logs.pop
 function renderLog(){ document.getElementById('log').innerHTML=G.logs.map(l=>`<div class="${l.cls}">${l.t}</div>`).join(''); }
 function callout(html){ document.getElementById('callout').innerHTML=html; }
 
-function endGame(){
+async function endGame(){
   G.over=true; G.busy=false;
   // 雙殺 → 剩血多者勝（無平手）
   const win = (G.e.hp<=0&&G.p.hp<=0) ? (G.p.hp>=G.e.hp) : (G.e.hp<=0);
+  const opp = OPPONENTS[G.opp];
   const ov=document.getElementById('overlay');
   document.getElementById('ovTitle').textContent=win?'品味勝出':'聲望歸零';
-  document.getElementById('ovSub').textContent=win?'你靠讀招與連段贏了這一局。':'這次被電腦的氣勢壓制了。';
+  document.getElementById('ovSub').textContent=win?`你贏了【${opp.who}】這一局。`:`這局被【${opp.who}】的氣勢壓制了。`;
   renderHp(); renderQi();
+  await saveResult(G.opp, win);
+  const r = myStats.byOpp[G.opp] || {w:0,l:0};
+  document.getElementById('ovRec').textContent = `對【${opp.who}】戰績 ${r.w} 勝 ${r.l} 敗　·　總戰績 ${myStats.total.w} 勝 ${myStats.total.l} 敗`;
   setTimeout(()=>ov.classList.add('show'),700);
 }
 
-document.getElementById('restart').addEventListener('click', newGame);
-document.getElementById('ovBtn').addEventListener('click', newGame);
+// ───────── 戰績（登入 → battleStats/{uid}；未登入 → localStorage）─────────
+const STATS_KEY='dipBattleStats';
+const blankStats = () => ({ total:{w:0,l:0}, byOpp:{} });
+function normStats(s){ s=s||{}; s.total=s.total||{w:0,l:0}; s.total.w=s.total.w||0; s.total.l=s.total.l||0; s.byOpp=s.byOpp||{}; return s; }
+function loadLocalStats(){ try{ return normStats(JSON.parse(localStorage.getItem(STATS_KEY))); }catch(e){ return blankStats(); } }
+async function loadStats(){
+  if(currentUser){
+    try{ const snap=await getDoc(doc(db,'battleStats',currentUser.uid)); if(snap.exists()) return normStats(snap.data()); }catch(e){}
+  }
+  return loadLocalStats();
+}
+async function saveResult(oppKey, win){
+  const s = normStats(myStats || loadLocalStats());
+  s.total[win?'w':'l']++;
+  s.byOpp[oppKey] = s.byOpp[oppKey] || {w:0,l:0};
+  s.byOpp[oppKey][win?'w':'l']++;
+  s.updatedAt = Date.now();
+  myStats = s;
+  try{ localStorage.setItem(STATS_KEY, JSON.stringify(s)); }catch(e){}
+  if(currentUser){ try{ await setDoc(doc(db,'battleStats',currentUser.uid), s, {merge:true}); }catch(e){} }
+}
+
+// ───────── 開戰大廳 ─────────
+const oppKeys = () => Object.keys(OPPONENTS).filter(k=>!OPPONENTS[k].beta || BETA.poOpponent);
+function lobbyAuthHtml(){
+  if(currentUser){
+    const n = currentUser.displayName || '會員';
+    const cnt = myColl ? myColl.length : '—';
+    return `<div class="au-info"><b>${n}</b><br><span>卡冊 ${cnt} 張 · 戰績雲端同步</span></div><button class="lob-btn" id="lobOut">登出</button>`;
+  }
+  return `<div class="au-info"><b>未登入</b><br><span>可直接玩（全用卡池牌）。登入後用自己卡冊出戰、戰績雲端同步。</span></div><button class="lob-btn" id="lobIn">登入</button>`;
+}
+function lobbyRecHtml(){
+  const s = normStats(myStats || blankStats());
+  const tot = s.total.w + s.total.l, rate = tot ? Math.round(s.total.w/tot*100) : 0;
+  const rows = oppKeys().map(k=>{ const r=s.byOpp[k]||{w:0,l:0};
+    return `<div class="rec-row"><span>${OPPONENTS[k].who}</span><span><b>${r.w}</b> 勝 <b>${r.l}</b> 敗</span></div>`; }).join('');
+  return `<div class="rec-top"><span class="rt-lab">總戰績</span><span class="rt-big">${s.total.w} 勝 ${s.total.l} 敗${tot?` · 勝率 ${rate}%`:''}</span></div><div class="rec-rows">${rows}</div>`;
+}
+function oppListHtml(){
+  const s = normStats(myStats || blankStats());
+  return oppKeys().map(k=>{
+    const o=OPPONENTS[k], r=s.byOpp[k]||{w:0,l:0};
+    const beta=o.beta?`<span class="po-beta">封測</span>`:'';
+    return `<button class="opp${o.beta?' po':''}" data-opp="${k}">
+      <span class="opp-emoji">${o.emoji}</span>
+      <span class="opp-main"><span class="opp-name">${o.who}${beta}</span><span class="opp-sub">${o.sub}</span></span>
+      <span class="opp-rec">${r.w}勝${r.l}敗</span></button>`;
+  }).join('');
+}
+async function showLobby(){
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('lobby').classList.add('show');
+  if(currentUser && myColl===null) myColl = await getMyCollection();
+  myStats = await loadStats();
+  document.getElementById('lobbyAuth').innerHTML = lobbyAuthHtml();
+  document.getElementById('lobbyRec').innerHTML = lobbyRecHtml();
+  document.getElementById('oppList').innerHTML = oppListHtml();
+  const inBtn=document.getElementById('lobIn'); if(inBtn) inBtn.addEventListener('click', ()=>signInWithPopup(auth, googleProvider).catch(()=>{}));
+  const outBtn=document.getElementById('lobOut'); if(outBtn) outBtn.addEventListener('click', ()=>signOut(auth));
+  document.querySelectorAll('#oppList .opp').forEach(b=>b.addEventListener('click', ()=>startMatch(b.dataset.opp)));
+  document.getElementById('lobby').classList.add('show');
+}
+
+onAuthStateChanged(auth, (user)=>{
+  const switched = (currentUser && currentUser.uid) !== (user && user.uid);
+  currentUser = user; authReady = true;
+  if(switched){ myColl = null; myStats = null; }
+  if(document.getElementById('lobby').classList.contains('show')) showLobby();
+});
+
+document.getElementById('restart').addEventListener('click', showLobby);
+document.getElementById('ovAgain').addEventListener('click', ()=>startMatch(lastOpp));
+document.getElementById('ovLobby').addEventListener('click', showLobby);
 // 規則浮動視窗
 const rulesModal=document.getElementById('rulesModal');
 const openRules=()=>rulesModal.classList.add('show');
@@ -666,7 +952,8 @@ document.getElementById('rulesClose').addEventListener('click', closeRules);
 document.getElementById('rulesClose2').addEventListener('click', closeRules);
 rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeRules(); });
-newGame();
+
+showLobby();
 </script>
 </body>
 </html>

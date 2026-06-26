@@ -34,5 +34,11 @@ service cloud.firestore {
       allow read:  if isAdmin() || (request.auth != null && request.auth.uid == uid);
       allow write: if request.auth != null && request.auth.uid == uid;
     }
+
+    // ── 對戰戰績：管理員可讀（看封測數據）；會員只能讀寫自己那筆 ──
+    match /battleStats/{uid} {
+      allow read:  if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
   }
 }
