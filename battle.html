@@ -104,6 +104,14 @@
   .slot.mk-lose::after { content:'負'; background:var(--dmg); }
   .slot.mk-tie::after  { content:'和'; background:var(--gray); }
   .slot.clickable { cursor:pointer; }
+  /* 上一手已結束的牌：卡面變灰（勝負標記維持鮮明）*/
+  .slot.done .pcard { opacity:0.5; filter:grayscale(0.6); }
+  /* 電腦本回合氣場提示（獨立橫幅，不再佔用敵方卡格）*/
+  .etell { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; max-width:340px; min-height:34px; margin:0 auto; padding:6px 10px; border:1px dashed var(--gray); font-size:9px; color:var(--gray); letter-spacing:0.04em; text-align:center; animation:pop .2s; }
+  .etell:empty { display:none; }
+  .etell .fd { flex:none; width:18px; height:24px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#eee 3px,#eee 6px); }
+  .etell .lab { letter-spacing:0.12em; white-space:nowrap; }
+  .etell b { color:var(--black); font-weight:700; }
   .slot.tell { border-style:dashed; border-color:var(--gray); flex-direction:column; gap:7px; }
   .facedown { width:54px; height:76px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 4px,#eee 4px,#eee 8px); }
   .tellbox { text-align:center; font-size:9px; color:var(--gray); line-height:1.5; }
@@ -302,6 +310,7 @@
   </div>
 
   <div class="arena">
+    <div class="etell" id="eTell"></div>
     <div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
@@ -692,7 +701,7 @@ function newGame(oppKey, pDeck, eDeck){
   };
   document.getElementById('eWho').textContent = opp.who;
   for(const sid of ['pSlot','eSlot']){ const s=document.getElementById(sid); s.className='slot'; s.innerHTML=''; }
-  document.getElementById('callout').innerHTML='';
+  document.getElementById('eTell').innerHTML=''; document.getElementById('callout').innerHTML='';
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
   const borrowed = pDeck.filter(c=>c.borrowed).length;
   const intro = borrowed>0
@@ -724,12 +733,13 @@ function startTurn(){
   render(); renderTell();
 }
 function renderTell(){
-  const eSlot=document.getElementById('eSlot'); const pe=G.pendingE; if(!pe) return;
-  G.eShow=null; markSlot('e',null);     // 電腦側換成新氣場 → 清掉上一張的勝負標記與可讀取狀態
-  if(pe.pass){ eSlot.className='slot tell'; eSlot.innerHTML=`<div class="tellbox"><b>電腦疲勞、無牌可出</b></div>`; return; }
+  const pe=G.pendingE; if(!pe) return;
+  const tell=document.getElementById('eTell');
+  // 上一手雙方的牌留在檯面、變灰表示已結束（仍可點看介紹、勝負標記照舊）
+  for(const sid of ['pSlot','eSlot']){ const s=document.getElementById(sid); if(s.classList.contains('filled')) s.classList.add('done'); }
+  if(pe.pass){ tell.innerHTML=`<span class="lab">電腦氣場</span><b>電腦疲勞、無牌可出</b>`; return; }
   const txt = pe.flavor || (pe.ult ? ULT_FLAVOR[0] : TELL_FLAVOR[pe.tell][0]);
-  eSlot.className='slot tell';
-  eSlot.innerHTML=`<div class="facedown"></div><div class="tellbox"><span>電腦氣場</span><b>${txt}</b></div>`;
+  tell.innerHTML=`<div class="fd"></div><span class="lab">電腦氣場</span><b>${txt}</b>`;
 }
 function drawCard(side){
   if(side.deck.length===0){
@@ -808,13 +818,14 @@ async function play(pCard, pAttr){
   if(G.busy||G.over) return;
   if(!G.pendingE) return;
   G.busy=true; G.sel=null;
+  document.getElementById('eTell').innerHTML='';   // 玩家已出招 → 收起本回合氣場提示
   const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇碾壓
   if(G.pendingE.pass){                            // 電腦疲勞無牌 → 只結算玩家這邊
     G.p.hand=G.p.hand.filter(c=>c.uid!==pCard.uid);
     pCard._attr = pUlt?'__ult__':pAttr; G.p.played.push(pCard);
     renderHandLocked();
     markSlot('p',null);
-    document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable');
+    document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
     G.pShow=pCard;
     lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
@@ -837,7 +848,7 @@ async function play(pCard, pAttr){
 
   renderHandLocked();
   markSlot('p',null);
-  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable');
+  document.getElementById('pSlot').innerHTML = cardHTML(pCard, pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
   G.pShow=pCard;
   lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
   await sleep(300);
