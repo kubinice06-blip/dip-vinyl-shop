@@ -543,6 +543,25 @@ const POOL = [
   ['Low','Things We Lost in the Fire',3,3,2], ['Grouper','Ruins',2,4,3],
   ['Cocteau Twins','Treasure',3,3,2], ['Pixies','Surfer Rosa',4,2,2],
   ['Pavement','Slanted and Enchanted',4,3,3], ['Sonic Youth','Daydream Nation',4,3,3],
+  ['David Bowie','Low',4,3,3], ['Brian Eno','Another Green World',4,4,3],
+  ['Joy Division','Unknown Pleasures',4,3,3], ['Television','Marquee Moon',4,3,2],
+  ['Wire','Pink Flag',3,4,3], ['Neu!','Neu!',3,4,3],
+  ['Kraftwerk','Trans-Europe Express',4,3,2], ['Portishead','Dummy',4,2,2],
+  ['Massive Attack','Mezzanine',4,3,3], ['Burial','Untrue',3,4,4],
+  ['DJ Shadow','Endtroducing.....',4,3,3], ['J Dilla','Donuts',4,3,3],
+  ['Madvillain','Madvillainy',4,3,3], ['A Tribe Called Quest','The Low End Theory',4,2,2],
+  ['Sufjan Stevens','Illinois',3,2,2], ['Bon Iver','For Emma, Forever Ago',3,2,1],
+  ['Beach House','Teen Dream',3,2,2], ['Mazzy Star','So Tonight That I Might See',3,3,2],
+  ['Galaxie 500','On Fire',3,4,3], ['The Microphones','The Glow Pt. 2',3,4,3],
+  ['Spiritualized','Ladies and Gentlemen We Are Floating in Space',4,3,3],
+  ['Godspeed You! Black Emperor','Lift Your Skinny Fists Like Antennas to Heaven',3,4,4],
+  ['Tim Hecker','Ravedeath, 1972',2,4,4], ['William Basinski','The Disintegration Loops',2,5,4],
+  ['Oneohtrix Point Never','Replica',2,4,4], ['Flying Lotus','Cosmogramma',3,3,3],
+  ['Four Tet','Rounds',3,3,3], ['Autechre','Tri Repetae',2,5,5],
+  ['Boredoms','Vision Creation Newsun',2,5,4], ['Fela Kuti','Zombie',3,4,3],
+  ['This Heat','Deceit',2,5,5], ['Faust','Faust',2,5,5],
+  ['Gas','Pop',2,5,4], ['Cluster','Zuckerzeit',2,4,3],
+  ['Harmonia','Musik von Harmonia',2,4,3],
   ['Taylor Swift','1989',2,1,1], ['Ed Sheeran','÷',1,1,1],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 const ACES = [
@@ -979,8 +998,7 @@ function statLine(card, attr){
 function cardHTML(card, attr){
   const ace=card.ace?` ace-border ace-${card.ace}`:'';
   const tag=card.ace?`<span class="ace-tag ace-${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
-  const borrow=card.borrowed?`<span class="borrow-tag">借</span>`:'';
-  return `<div class="pcard${ace}">${tag}${borrow}${coverHTML(card)}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
+  return `<div class="pcard${ace}">${tag}${coverHTML(card)}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
     ${statLine(card, attr)}</div>`;
 }
 function render(){ renderHp(); renderQi(); renderHand(); renderEnemyHand(); setMeta(); renderLog(); setHint(); }
@@ -1022,6 +1040,11 @@ function renderHand(){
     if(G.sel){ const t=el.querySelector('.handtile.sel'); if(t) t.scrollIntoView({block:'nearest',inline:'center'}); }
     renderTilePop();
   }));
+  // 卡池/借牌沒存封面 → 即時抓 Spotify 封面補進手牌（抓到才換掉佔位字）
+  G.p.hand.forEach(c=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{
+    if(!url) return; const cov=el.querySelector(`.handtile[data-uid="${c.uid}"] .ht-cover`);
+    if(cov){ cov.classList.remove('ht-noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; }
+  }); });
   if(!G.sel) renderTilePop();
 }
 // 選取時：在該卡正上方浮出小視窗（專輯名 + 精簡出牌鍵：經5 / 冷2 / 入4 / ⚡碾壓），帶向下箭頭指向卡牌
