@@ -857,7 +857,13 @@
     try {
       const snap = await getDoc(ref);
       if (snap.exists()) {
-        await setDoc(ref, { count: (snap.data().count || 1) + 1, lastObtainedAt: Date.now() }, { merge: true });
+        // 已擁有：張數 +1。若這次帶著特殊旗標而舊卡沒有 → 一併升格（特殊抽卡落在已擁有的卡時別把旗標吞掉）
+        const cur = snap.data();
+        const upgrade = {};
+        if (card.hall && !cur.hall) upgrade.hall = true;
+        if (card.pearl && !cur.pearl) upgrade.pearl = true;
+        if (card.heresy && !cur.heresy) upgrade.heresy = true;
+        await setDoc(ref, { count: (cur.count || 1) + 1, lastObtainedAt: Date.now(), ...upgrade }, { merge: true });
         return 'dup';
       }
       await setDoc(ref, {
@@ -1048,6 +1054,21 @@
         arr.push({ tier: 'heresy', grantedAt: now, note: '店長補發' });
         arr.push({ tier: 'pearl',  grantedAt: now + 1, note: '店長補發' });
         await setDoc(uref, { specialDraws: arr, ownerDrawsGrantV1: true }, { merge: true });
+      }
+      // 一次性修復：早期 dup 分支吞掉了特殊旗標，把店長這兩張被降級的卡補回旗標
+      if (currentUser.email === OWNER_EMAIL && !data.ownerCardFixV1) {
+        const fixes = [
+          { id: cardIdOf('Merzbow', 'Pulse Demon'), flag: 'heresy' },
+          { id: cardIdOf('Jlin', 'Dark Energy'),    flag: 'pearl' },
+        ];
+        for (const f of fixes) {
+          try {
+            const cref = doc(db, 'collections', currentUser.uid, 'cards', f.id);
+            const cs = await getDoc(cref);
+            if (cs.exists() && !cs.data()[f.flag]) await setDoc(cref, { [f.flag]: true }, { merge: true });
+          } catch (e) { console.warn('[ownerCardFix] failed', f.id, e); }
+        }
+        await setDoc(uref, { ownerCardFixV1: true }, { merge: true });
       }
       specialDraws = arr;
     } catch (e) { console.warn('[specialDraws] load failed', e); specialDraws = []; }
