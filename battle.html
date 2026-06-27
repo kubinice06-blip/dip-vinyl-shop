@@ -450,13 +450,13 @@
 
     <h3>氣勢槽（0→6）· 品味碾壓</h3>
     <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味碾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
-    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／遺珠／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
+    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／流亡／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
 
     <h3>氣場提示 · 虛晃反咬</h3>
     <p>電腦會先暗中決定出招、露出一個<b>氣場提示</b>（偏哪個屬性），但<b>不亮牌</b>。<b>留意</b>：你上一手若照提示去剋，它下一手會<b>虛晃</b>改打能剋你預期招的屬性反咬——要會讀，別無腦照提示打。</p>
 
     <h3>王牌 · 牌庫耗盡</h3>
-    <p>王牌單軸 7 星＋氣勢被動（殿堂壓對手氣勢、遺珠相剋多充、異端歸零對手氣勢；共通<b>霸權</b>：被剋時取消該次相剋）。牌庫見底 → <b>疲勞傷害</b>遞增（1/2/3…），加速收尾。</p>
+    <p>王牌單軸 7 星＋氣勢被動（殿堂壓對手氣勢、流亡相剋多充、異端歸零對手氣勢；共通<b>霸權</b>：被剋時取消該次相剋）。牌庫見底 → <b>疲勞傷害</b>遞增（1/2/3…），加速收尾。</p>
 
     <button class="btn" id="rulesClose2" style="margin-top:18px">開始對戰</button>
   </div>
@@ -508,7 +508,7 @@ const CFG = {
 };
 const ATTRS = ['classic','obscurity','accessibility'];
 const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'入耳' };
-const ACE_ZH = { hall:'殿堂', pearl:'遺珠', heresy:'異端' };
+const ACE_ZH = { hall:'殿堂', pearl:'流亡', heresy:'異端' };
 const COUNTER_SKILL = { classic:'大眾共鳴', obscurity:'品味突襲', accessibility:'降維打擊' };
 const SYN_SKILL = { classic:'品味拓荒', obscurity:'閾值突破', accessibility:'前衛收編' };
 // 反剋對照：COUNTER_OF[x] = 能剋掉 x 的屬性
@@ -576,7 +576,7 @@ const OPPONENTS = {
   collector: { who:'瘋狂藏家',  diff:'hard',   sub:'精準虛晃＋牌庫管理，硬仗',       emoji:'💿' },
   po:        { who:'po', diff:'hard',   sub:'聽膠優越仔　快來打爆他（封測限定）', emoji:'🪩', beta:true },
 };
-// Po 的招牌私盤（挖盤味重；不足 19 張由卡池補滿，附 1 張遺珠王牌）
+// Po 的招牌私盤（挖盤味重；不足 19 張由卡池補滿，附 1 張流亡王牌）
 const PO_POOL = [
   ['Alice Coltrane','Journey in Satchidananda',4,4,3], ['Pharoah Sanders','Karma',3,4,4],
   ['Arthur Russell','World of Echo',3,5,4], ['Shuggie Otis','Inspiration Information',3,4,2],

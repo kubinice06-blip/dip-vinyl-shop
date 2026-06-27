@@ -82,9 +82,9 @@
 > | tier | 名稱 | 衝 7 星的軸 | 判定方式 | 邊框（掃光） | 旗標 |
 > |---|---|---|---|---|---|
 > | `hall` | 殿堂 | 經典度 | AI 推公認神作（經典模式） | 亮銀 `--silver-shine` | `hall:true` |
-> | `pearl` | 遺珠 | 冷門度 | 極冷門模式 → **真實聽眾數驗證**（Last.fm 累積 < `ULTRA_OBSCURE_MAX_LISTENERS`，目前 300）才升格 | 暗黑油彩 `--oil-shine` | `pearl:true` |
+> | `pearl` | 流亡 | 冷門度 | 極冷門模式 → **真實聽眾數驗證**（Last.fm 累積 < `ULTRA_OBSCURE_MAX_LISTENERS`，目前 300）才升格 | 暗黑油彩 `--oil-shine` | `pearl:true` |
 > | `heresy` | 異端 | 入耳難易度 | AI 推極難入耳的前衛/噪音怪盤（異端模式，主觀軸不驗數據） | 暗赤血光 `--crimson-shine` | `heresy:true` |
-> 互斥順序：`classicMode → obscureMode → heresyMode → popularMode`（見 `getGpResult` 內）。設定集中在 `SPECIAL_TIERS`、`ULTRA_OBSCURE_MAX_LISTENERS`（index.html）。註：Spotify「每月聽眾」API 不公開，遺珠用 Last.fm 累積聽眾數（worker `/album-rating` 的 `_listeners`）當代理。
+> 互斥順序：`classicMode → obscureMode → heresyMode → popularMode`（見 `getGpResult` 內）。設定集中在 `SPECIAL_TIERS`、`ULTRA_OBSCURE_MAX_LISTENERS`（index.html）。註：Spotify「每月聽眾」API 不公開，流亡用 Last.fm 累積聽眾數（worker `/album-rating` 的 `_listeners`）當代理。
 > **新手禮：** 剛註冊玩家可免費抽一張隨機殿堂卡，**僅一次**。從 `WELCOME_HALL_ALBUMS` 公認神作名單隨機挑，存成 `hall` 卡，並在 `users/{uid}.welcomeHallClaimed` 標記。卡冊頁（空/非空都會）頂部顯示「🎁 新手禮」橫幅，按鈕觸發 `claimWelcomeHall()`。
 >
 > **殿堂（銀）= 最稀有、沒有數值。** 不是由 score 決定，而是「經典模式」抽到的公認殿堂神作（OK Computer 等級）才會是殿堂卡。經典模式觸發機率約 3%（`Math.random() < 0.03`），抽到時結果頁顯示銀色「殿堂級」徽章、不顯示星數；收進卡冊時存 `hall: true`，卡冊以銀框＋銀字呈現、無星數。
@@ -143,7 +143,7 @@
 | 旗標 | 卡名 | 對戰三圍（classic/obscurity/accessibility） |
 |---|---|---|
 | `hall` | 殿堂 | **7 / 1 / 1** |
-| `pearl` | 遺珠 | **1 / 7 / 1** |
+| `pearl` | 流亡 | **1 / 7 / 1** |
 | `heresy` | 異端 | **1 / 1 / 7** |
 
 ### 8.3 雙資源：品味聲望（HP）＋ 氣勢槽
@@ -188,7 +188,7 @@
 ### 8.6 王牌被動（重綁氣勢經濟）
 - **共通【霸權】**（hall/pearl/heresy）：作為被剋方時，**取消該次相剋**（對手不得 +3 氣勢與 −3 壓制，落入純面板比氣勢）。王牌＝難以充能的硬壁壘。
 - **殿堂【眾望所歸】**：打出回合，**對手氣勢 −2**（主流壓制，延遲對手碾壓）。
-- **遺珠【私盤特攻】**：作為剋制方時，相剋充能 +3 → **+4**。
+- **流亡【私盤特攻】**：作為剋制方時，相剋充能 +3 → **+4**。
 - **異端【終極解構】**：打出時立即**歸零對手整條氣勢槽**（解構核爆；於相剋結算前先生效）。
 
 ### 8.7 半公開讀心（v4 PvE：氣場提示 ＋ 虛晃反咬）
