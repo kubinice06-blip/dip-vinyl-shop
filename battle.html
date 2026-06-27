@@ -226,6 +226,9 @@
   .loot-pick .lp-alb { font-weight:700; } .loot-pick .loot-art { margin-left:auto; }
   .loot-save { width:100%; }
   .loot-note { font-size:9px; color:var(--gray); text-align:center; letter-spacing:0.04em; }
+  .loot-login { display:flex; flex-direction:column; gap:8px; align-items:center; border:1px solid var(--black); padding:12px; text-align:center; }
+  .loot-login .ll-txt { font-size:10px; color:var(--black); letter-spacing:0.04em; line-height:1.6; }
+  .loot-login .btn { width:100%; }
 
   /* 卡面封面 */
   /* 檯面卡片：整張方形專輯封面 */
@@ -447,6 +450,7 @@
 
     <h3>氣勢槽（0→6）· 品味碾壓</h3>
     <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味碾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
+    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／遺珠／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>、不扣血。</p>
 
     <h3>氣場提示 · 虛晃反咬</h3>
     <p>電腦會先暗中決定出招、露出一個<b>氣場提示</b>（偏哪個屬性），但<b>不亮牌</b>。<b>留意</b>：你上一手若照提示去剋，它下一手會<b>虛晃</b>改打能剋你預期招的屬性反咬——要會讀，別無腦照提示打。</p>
@@ -862,18 +866,26 @@ async function play(pCard, pAttr){
   if(pUlt || eUlt){
     // ===== 碾壓回合（氣勢滿 → 無視對方屬性的保證一擊）=====
     const msgs=[];
+    // 七星回擊：電腦發動碾壓時，玩家若出王牌(七星)可無效化該次碾壓
+    const eUltBlocked = eUlt && !pUlt && pCard && !!pCard.ace;
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.p.last=null; G.p.chain=0;
       msgs.push(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="sub">無視對方屬性 · 保證命中</div><div class="dmgnum">-${CFG.ultimate}</div>`);
       pushLog(`你 氣勢滿 → 品味碾壓！電腦 -${CFG.ultimate}`,'hit'); }
     else { G.p.last=pAttr; }
-    if(eUlt){ G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
-      msgs.push(`<div class="ultimate-skill">電腦 · 品味碾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
-      pushLog(`電腦 氣勢滿 → 品味碾壓！你 -${CFG.ultimate}`,'hit'); }
+    if(eUlt){
+      if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0;
+        msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味碾壓 → 無效化</div>`);
+        pushLog(`你以七星王牌【${pCard.album}】回擊 → 電腦品味碾壓無效！`,'qi'); }
+      else { G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
+        msgs.push(`<div class="ultimate-skill">電腦 · 品味碾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
+        pushLog(`電腦 氣勢滿 → 品味碾壓！你 -${CFG.ultimate}`,'hit'); }
+    }
     else { G.e.last=eAttr; }
     callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
-    if(pUlt) flashHp('e'); if(eUlt) flashHp('p');
+    if(pUlt) flashHp('e'); if(eUlt && !eUltBlocked) flashHp('p');
     renderHp(); renderQi();
-    if(pUlt&&eUlt){ markSlot('p','win'); markSlot('e','win'); }
+    if(eUltBlocked){ markSlot('p','win'); markSlot('e','lose'); }
+    else if(pUlt&&eUlt){ markSlot('p','win'); markSlot('e','win'); }
     else if(pUlt){ markSlot('p','win'); markSlot('e','lose'); }
     else if(eUlt){ markSlot('e','win'); markSlot('p','lose'); }
     await sleep(1000);
@@ -1044,7 +1056,12 @@ function setHint(){
   if(G.sel){ h.textContent= charged?`${G.sel.album} — ⚡可放【品味碾壓】或選一般屬性`:`${G.sel.album} — 選一個主打屬性發動`; return; }
   if(charged){ h.textContent='⚡ 氣勢滿！選一張卡 → 品味碾壓（無視對方屬性一擊）'; return; }
   const pe=G.pendingE;
-  if(pe && pe.ult){ h.textContent='⚠ 電腦氣勢滿、可能碾壓（屬性擋不住）— 搶氣勢或拚血'; return; }
+  if(pe && pe.ult){
+    const hasAce = G.p.hand.some(c=>c.ace);
+    h.textContent = hasAce ? '⚠ 電腦要碾壓了！出王牌(七星)可回擊無效化，否則 HP -6'
+                           : '⚠ 電腦氣勢滿、要碾壓（屬性擋不住）— 沒七星王牌就拚血/搶氣勢';
+    return;
+  }
   if(pe){ h.textContent=`電腦氣場：偏【${ATTR_ZH[pe.tell]}】… 信它就去剋，但它可能虛晃反咬`; return; }
   h.textContent='讀電腦氣場 → 選一張卡＋主打屬性出招';
 }
@@ -1163,7 +1180,8 @@ function bestPlunder(list){
 }
 // 賽後戰利品面板：贏 → 掠奪一張自動入冊；借的卡 → 勾選收進卡冊
 async function renderLoot(win){
-  const box=document.getElementById('ovLoot'); box.innerHTML=''; if(!box) return;
+  const box=document.getElementById('ovLoot'); if(!box) return; box.innerHTML='';
+  G._lootWin = win;
   let html='';
   // 掠奪（贏才有，從對手這局打出來過的卡裡挑）
   const plunder = win ? bestPlunder(dedupeByAlbum(G.e.played)) : null;
@@ -1184,9 +1202,18 @@ async function renderLoot(win){
       `</div><button class="btn loot-save" id="lootSave" ${currentUser?'':'disabled'}>收進卡冊</button></div>`;
   }
   if(!currentUser && (plunder || borrowed.length)){
-    html += `<div class="loot-note">※ 登入後才能把戰利品收進卡冊</div>`;
+    html += `<div class="loot-login">
+      <div class="ll-txt">想收藏這些專輯？登入就能立刻收進你的卡冊 ✦</div>
+      <button class="btn" id="lootLogin">登入立刻收藏</button></div>`;
   }
   box.innerHTML = html;
+  const loginBtn=document.getElementById('lootLogin');
+  if(loginBtn) loginBtn.addEventListener('click', async ()=>{
+    loginBtn.disabled=true; loginBtn.textContent='登入中…';
+    try{ await signInWithPopup(auth, googleProvider); }
+    catch(e){ loginBtn.disabled=false; loginBtn.textContent='登入立刻收藏'; return; }
+    renderLoot(G._lootWin);   // 登入後重繪：掠奪卡自動入冊、借卡勾選解鎖
+  });
   const saveBtn=document.getElementById('lootSave');
   if(saveBtn) saveBtn.addEventListener('click', async ()=>{
     if(!currentUser) return;
