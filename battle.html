@@ -552,16 +552,9 @@ const POOL = [
   ['Madvillain','Madvillainy',4,3,3], ['A Tribe Called Quest','The Low End Theory',4,2,2],
   ['Sufjan Stevens','Illinois',3,2,2], ['Bon Iver','For Emma, Forever Ago',3,2,1],
   ['Beach House','Teen Dream',3,2,2], ['Mazzy Star','So Tonight That I Might See',3,3,2],
-  ['Galaxie 500','On Fire',3,4,3], ['The Microphones','The Glow Pt. 2',3,4,3],
-  ['Spiritualized','Ladies and Gentlemen We Are Floating in Space',4,3,3],
-  ['Godspeed You! Black Emperor','Lift Your Skinny Fists Like Antennas to Heaven',3,4,4],
-  ['Tim Hecker','Ravedeath, 1972',2,4,4], ['William Basinski','The Disintegration Loops',2,5,4],
-  ['Oneohtrix Point Never','Replica',2,4,4], ['Flying Lotus','Cosmogramma',3,3,3],
+  ['Tim Hecker','Ravedeath, 1972',2,4,4], ['Flying Lotus','Cosmogramma',3,3,3],
   ['Four Tet','Rounds',3,3,3], ['Autechre','Tri Repetae',2,5,5],
   ['Boredoms','Vision Creation Newsun',2,5,4], ['Fela Kuti','Zombie',3,4,3],
-  ['This Heat','Deceit',2,5,5], ['Faust','Faust',2,5,5],
-  ['Gas','Pop',2,5,4], ['Cluster','Zuckerzeit',2,4,3],
-  ['Harmonia','Musik von Harmonia',2,4,3],
   ['Taylor Swift','1989',2,1,1], ['Ed Sheeran','÷',1,1,1],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 const ACES = [
@@ -618,17 +611,28 @@ async function getMyCollection(){
     return snap.docs.map(d=>d.data());
   } catch(e){ return []; }
 }
-// 卡池牌（含對手牌）沒存封面 → 上檯面時即時向 Spotify 取封面（跨牌/跨局快取）
+// 卡池牌（含對手牌）沒存封面 → 先讀全站卡牌目錄、再向 Spotify 取，抓到就存回目錄（跨牌/跨局快取）
 const coverCache = {};
+function saveCoverToCatalog(id, card, url){     // 跟平常抽卡一樣，把封面存進全站卡牌目錄 card_catalog
+  try { setDoc(doc(db,'card_catalog',id), { cardId:id, artist:card.artist||'', album:card.album||'', coverUrl:url, updatedAt:Date.now() }, { merge:true }).catch(()=>{}); } catch(e){}
+}
+function dropFromPool(album){                   // 沒封面可顯示 → 從卡池移除，往後不再抽到
+  for(let i=POOL.length-1;i>=0;i--){ if(POOL[i].album===album) POOL.splice(i,1); }
+}
 async function ensureCover(card){
   if(!card || card.coverUrl) return card && card.coverUrl;
   const id = cardIdOf(card.artist, card.album);
-  if(id in coverCache){ card.coverUrl = coverCache[id]; return card.coverUrl; }
+  if(id in coverCache){ card.coverUrl = coverCache[id]; if(!coverCache[id] && !card.ace) dropFromPool(card.album); return card.coverUrl; }
+  // 先讀全站卡牌目錄（平常抽卡會把封面存這裡）→ 命中就不打 Spotify
+  try { const s = await getDoc(doc(db,'card_catalog',id)); const cu = s.exists() && s.data().coverUrl; if(cu){ coverCache[id]=cu; card.coverUrl=cu; return cu; } } catch(e){}
   try {
     const res = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
     const url = res.ok ? ((await res.json()).imageUrl || '') : '';
-    coverCache[id] = url; card.coverUrl = url; return url;
-  } catch(e){ coverCache[id] = ''; return ''; }
+    coverCache[id] = url; card.coverUrl = url;
+    if(url) saveCoverToCatalog(id, card, url);          // 抓到 → 存下來
+    else if(!card.ace) dropFromPool(card.album);         // 抓不到 → 從卡池移除（王牌不在 POOL）
+    return url;
+  } catch(e){ return ''; }                               // 網路錯誤不視為無封面、不移除、不快取
 }
 // 補上檯面卡片的封面（抓到才重繪該格；中途被清空/換卡則不動）
 function lazyCover(slotId, card, attr){
