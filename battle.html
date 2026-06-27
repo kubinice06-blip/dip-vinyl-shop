@@ -202,6 +202,7 @@
   .lobby-rec .rec-row { display:flex; justify-content:space-between; font-size:9px; color:var(--gray); letter-spacing:0.06em; }
   .lobby-rec .rec-row b { color:var(--black); font-weight:700; }
   .opp-head { font-size:9px; letter-spacing:0.16em; color:var(--gray); text-transform:uppercase; margin-bottom:8px; }
+  .lobby-rules-row { display:flex; justify-content:center; margin-top:16px; }
   .opp-list { display:flex; flex-direction:column; gap:8px; }
   .opp { display:flex; align-items:center; gap:12px; width:100%; text-align:left; font-family:var(--mono); border:1px solid var(--black); background:#fff; padding:12px 14px; cursor:pointer; transition:all .15s; }
   .opp:hover { background:var(--black); color:#fff; } .opp:hover .opp-sub, .opp:hover .opp-rec { color:#bbb; }
@@ -339,6 +340,7 @@
     <div class="lobby-rec" id="lobbyRec"></div>
     <div class="opp-head">選擇對手</div>
     <div class="opp-list" id="oppList"></div>
+    <div class="lobby-rules-row"><button class="lob-btn" id="lobbyRulesBtn">📖 規則</button></div>
   </div>
 </div>
 
@@ -1056,6 +1058,7 @@ const rulesModal=document.getElementById('rulesModal');
 const openRules=()=>rulesModal.classList.add('show');
 const closeRules=()=>rulesModal.classList.remove('show');
 document.getElementById('rulesBtn').addEventListener('click', openRules);
+document.getElementById('lobbyRulesBtn').addEventListener('click', openRules);
 document.getElementById('rulesClose').addEventListener('click', closeRules);
 document.getElementById('rulesClose2').addEventListener('click', closeRules);
 rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules(); });
