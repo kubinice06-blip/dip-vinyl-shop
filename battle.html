@@ -450,7 +450,7 @@
 
     <h3>氣勢槽（0→6）· 品味碾壓</h3>
     <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味碾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
-    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／遺珠／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>、不扣血。</p>
+    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／遺珠／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
 
     <h3>氣場提示 · 虛晃反咬</h3>
     <p>電腦會先暗中決定出招、露出一個<b>氣場提示</b>（偏哪個屬性），但<b>不亮牌</b>。<b>留意</b>：你上一手若照提示去剋，它下一手會<b>虛晃</b>改打能剋你預期招的屬性反咬——要會讀，別無腦照提示打。</p>
@@ -874,15 +874,16 @@ async function play(pCard, pAttr){
     else { G.p.last=pAttr; }
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0;
-        msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味碾壓 → 無效化</div>`);
-        pushLog(`你以七星王牌【${pCard.album}】回擊 → 電腦品味碾壓無效！`,'qi'); }
+        const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility); G.e.hp-=star;
+        msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味碾壓 → 無效化、反傷</div><div class="dmgnum">-${star}</div>`);
+        pushLog(`你以七星王牌【${pCard.album}】回擊 → 碾壓無效，電腦 -${star}！`,'hit'); }
       else { G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
         msgs.push(`<div class="ultimate-skill">電腦 · 品味碾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
         pushLog(`電腦 氣勢滿 → 品味碾壓！你 -${CFG.ultimate}`,'hit'); }
     }
     else { G.e.last=eAttr; }
     callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
-    if(pUlt) flashHp('e'); if(eUlt && !eUltBlocked) flashHp('p');
+    if(pUlt || eUltBlocked) flashHp('e'); if(eUlt && !eUltBlocked) flashHp('p');
     renderHp(); renderQi();
     if(eUltBlocked){ markSlot('p','win'); markSlot('e','lose'); }
     else if(pUlt&&eUlt){ markSlot('p','win'); markSlot('e','win'); }
@@ -1058,7 +1059,7 @@ function setHint(){
   const pe=G.pendingE;
   if(pe && pe.ult){
     const hasAce = G.p.hand.some(c=>c.ace);
-    h.textContent = hasAce ? '⚠ 電腦要碾壓了！出王牌(七星)可回擊無效化，否則 HP -6'
+    h.textContent = hasAce ? '⚠ 電腦要碾壓了！出王牌(七星)回擊：碾壓無效＋反傷 -7，否則 HP -6'
                            : '⚠ 電腦氣勢滿、要碾壓（屬性擋不住）— 沒七星王牌就拚血/搶氣勢';
     return;
   }
