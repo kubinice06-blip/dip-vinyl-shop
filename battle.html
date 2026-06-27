@@ -239,6 +239,8 @@
   .lobby { position:fixed; inset:0; background:var(--bg); display:none; flex-direction:column; align-items:center; z-index:130; padding:26px 16px 40px; overflow-y:auto; }
   .lobby.show { display:flex; animation:flash .4s; }
   .lobby-box { max-width:440px; width:100%; }
+  .lobby-top { display:flex; justify-content:flex-start; margin-bottom:14px; }
+  .lobby-top .lob-btn { text-decoration:none; }
   .lobby h1 { font-size:24px; letter-spacing:0.22em; text-align:center; margin:6px 0 2px; }
   .lobby .tagline { text-align:center; font-size:9px; color:var(--gray); letter-spacing:0.16em; text-transform:uppercase; margin-bottom:18px; }
   .lobby-auth { border:1px solid var(--line); padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px; font-size:10px; letter-spacing:0.05em; }
@@ -386,6 +388,7 @@
 <!-- 開戰大廳 -->
 <div class="lobby" id="lobby">
   <div class="lobby-box">
+    <div class="lobby-top"><a class="lob-btn" href="index.html">↩ 回主頁</a></div>
     <h1>品味對決</h1>
     <div class="tagline">PVE 封測 · 用你的選盤品味開打</div>
     <div class="lobby-auth" id="lobbyAuth"></div>
