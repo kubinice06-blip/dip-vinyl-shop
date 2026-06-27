@@ -162,7 +162,7 @@
   .tp-alb { font-weight:700; font-size:12px; line-height:1.3; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
   .tp-art { font-size:9px; color:var(--gray); margin:2px 0 7px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
   .tp-borrow { font-size:8px; color:var(--gray); border:1px solid var(--line); padding:0 4px; margin-left:5px; letter-spacing:0; }
-  .tp-acts { display:flex; gap:4px; }
+  .tp-acts { display:flex; gap:4px; flex-wrap:wrap; }
   .pp-act { flex:1; font-family:var(--mono); font-size:13px; font-weight:700; border:1px solid var(--black); background:#fff; padding:8px 0; cursor:pointer; line-height:1; color:var(--black); text-align:center; }
   .pp-act b { color:var(--gold); margin-right:1px; font-size:11px; }
   .pp-act:hover { background:var(--black); color:#fff; } .pp-act:hover b { color:#fff; }
@@ -208,7 +208,7 @@
   .opp .opp-emoji { font-size:22px; flex:none; }
   .opp .opp-main { flex:1; }
   .opp .opp-name { font-weight:700; font-size:12px; letter-spacing:0.08em; }
-  .opp .opp-sub { font-size:9px; color:var(--gray); letter-spacing:0.04em; margin-top:2px; line-height:1.5; }
+  .opp .opp-sub { font-size:9px; color:var(--gray); letter-spacing:0.04em; margin-top:2px; margin-left:7px; line-height:1.5; }
   .opp .opp-rec { font-size:9px; color:var(--gray); letter-spacing:0.06em; flex:none; white-space:nowrap; }
   .opp.po { border-color:var(--gold); }
   .opp.po .opp-name { color:var(--gold); } .opp.po:hover .opp-name { color:#fff; }
@@ -492,7 +492,7 @@ const OPPONENTS = {
   novice:    { who:'音樂小白',  diff:'easy',   sub:'隨便出牌、不會虛晃——練手用',     emoji:'🎧' },
   critic:    { who:'資深樂評',  diff:'normal', sub:'會追連段、會讀心虛晃',           emoji:'🎙️' },
   collector: { who:'瘋狂藏家',  diff:'hard',   sub:'精準虛晃＋牌庫管理，硬仗',       emoji:'💿' },
-  po:        { who:'po', diff:'hard',   sub:'聽膠優越仔 快來打爆他（封測限定）', emoji:'🪩', beta:true },
+  po:        { who:'po', diff:'hard',   sub:'聽膠優越仔　快來打爆他（封測限定）', emoji:'🪩', beta:true },
 };
 // Po 的招牌私盤（挖盤味重；不足 19 張由卡池補滿，附 1 張遺珠王牌）
 const PO_POOL = [
@@ -528,6 +528,24 @@ async function getMyCollection(){
     const snap=await getDocs(collection(db,'collections',currentUser.uid,'cards'));
     return snap.docs.map(d=>d.data());
   } catch(e){ return []; }
+}
+// 卡池牌（含對手牌）沒存封面 → 上檯面時即時向 Spotify 取封面（跨牌/跨局快取）
+const coverCache = {};
+async function ensureCover(card){
+  if(!card || card.coverUrl) return card && card.coverUrl;
+  const id = cardIdOf(card.artist, card.album);
+  if(id in coverCache){ card.coverUrl = coverCache[id]; return card.coverUrl; }
+  try {
+    const res = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
+    const url = res.ok ? ((await res.json()).imageUrl || '') : '';
+    coverCache[id] = url; card.coverUrl = url; return url;
+  } catch(e){ coverCache[id] = ''; return ''; }
+}
+// 補上檯面卡片的封面（抓到才重繪該格；中途被清空/換卡則不動）
+function lazyCover(slotId, card, attr){
+  if(card.coverUrl) return;
+  const s = document.getElementById(slotId); s.dataset.cuid = card.uid;
+  ensureCover(card).then(url=>{ if(url && s.dataset.cuid==card.uid && s.classList.contains('filled')) s.innerHTML = cardHTML(card, attr); });
 }
 
 const rnd = n => Math.floor(Math.random()*n);
@@ -631,6 +649,7 @@ function startTurn(){
   G.e.hand=G.e.hand.filter(c=>c!==card);
   const flavor = eUlt ? pick(ULT_FLAVOR) : pick(TELL_FLAVOR[tell]); // 開局抽一句，避免重繪跳字
   G.pendingE={ card, attr, tell, ult:eUlt, flavor };
+  ensureCover(card);                                 // 預熱對手待出牌的封面，揭牌時即時顯示
   render(); renderTell();
 }
 function renderTell(){
@@ -722,6 +741,7 @@ async function play(pCard, pAttr){
     G.p.hand=G.p.hand.filter(c=>c.uid!==pCard.uid);
     renderHandLocked();
     document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled');
+    lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
     else { const pcq=computeChain(G.p,pAttr).qi; G.p.qi=Math.min(CFG.qiMax,G.p.qi+pcq); applyAttrEffect('p',pAttr); G.p.last=pAttr; callout(`<div class="sub fx">你〔${FX_ZH[pAttr]}〕`); }
     flashHp('e'); renderHp(); renderQi();
@@ -739,8 +759,10 @@ async function play(pCard, pAttr){
 
   renderHandLocked();
   document.getElementById('pSlot').innerHTML = cardHTML(pCard, pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled');
+  lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
   await sleep(300);
   const eSlot=document.getElementById('eSlot'); eSlot.className='slot filled'; eSlot.innerHTML = cardHTML(eCard, eUlt?'__ult__':eAttr);
+  lazyCover('eSlot', eCard, eUlt?'__ult__':eAttr);
   if(feinted && G.pCounteredTellLast){ callout(`<div class="skill cnt">電腦虛晃一招！</div><div class="sub">沒照氣場出牌，反咬你的相剋</div>`); await sleep(750); }
   setMeta();
   await sleep(450);
