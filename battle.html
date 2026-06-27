@@ -181,8 +181,8 @@
   .overlay .ovbtns { display:flex; gap:10px; }
 
   /* 卡面封面 */
-  .pcover { width:100%; height:52px; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
-  .handcard .pcover { height:34px; margin-bottom:5px; }
+  /* 檯面卡片：整張方形專輯封面 */
+  .pcover { width:100%; aspect-ratio:1/1; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
   .borrow-tag { display:inline-block; font-size:8px; font-weight:700; letter-spacing:0.12em; color:var(--gray); border:1px solid var(--line); padding:1px 5px; margin-bottom:5px; margin-left:4px; }
 
   /* 開戰大廳 */
@@ -236,7 +236,9 @@
     .player-zone { padding:8px 10px 12px; }
     .hint { margin-bottom:6px; }
     .handtile { width:104px; height:104px; }
-    .log { max-height:54px; margin-top:8px; padding-top:6px; }
+    .slot { padding:4px; }
+    .callout { min-height:32px; }
+    .log { max-height:40px; margin-top:6px; padding-top:6px; }
     .tellbox { font-size:8px; } .tellbox b { font-size:9px; }
   }
 </style>
