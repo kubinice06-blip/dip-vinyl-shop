@@ -737,9 +737,9 @@ function renderTell(){
   const tell=document.getElementById('eTell');
   // 上一手雙方的牌留在檯面、變灰表示已結束（仍可點看介紹、勝負標記照舊）
   for(const sid of ['pSlot','eSlot']){ const s=document.getElementById(sid); if(s.classList.contains('filled')) s.classList.add('done'); }
-  if(pe.pass){ tell.innerHTML=`<span class="lab">電腦氣場</span><b>電腦疲勞、無牌可出</b>`; return; }
+  if(pe.pass){ tell.innerHTML=`<span class="lab">下一回合 · 電腦氣場</span><b>電腦疲勞、無牌可出</b>`; return; }
   const txt = pe.flavor || (pe.ult ? ULT_FLAVOR[0] : TELL_FLAVOR[pe.tell][0]);
-  tell.innerHTML=`<div class="fd"></div><span class="lab">電腦氣場</span><b>${txt}</b>`;
+  tell.innerHTML=`<div class="fd"></div><span class="lab">下一回合 · 電腦氣場</span><b>${txt}</b>`;
 }
 function drawCard(side){
   if(side.deck.length===0){
