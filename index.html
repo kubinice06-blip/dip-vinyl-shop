@@ -387,6 +387,8 @@
     }
     .homehub-card:hover { background: #111; color: #fff; }
     .homehub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .homehub-beta { display: inline-block; margin-left: 8px; font-size: 8px; font-weight: 700; letter-spacing: 0.16em; vertical-align: 2px; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; animation: betaBlink 2.4s ease-in-out infinite; }
+    @keyframes betaBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
     .homehub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
     .homehub-card:hover .homehub-card-desc { color: #bbb; }
     .homehub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
@@ -588,8 +590,8 @@
     </button>
     <button class="homehub-card" data-go="battle">
       <div>
-        <div class="homehub-card-name">卡牌對戰</div>
-        <div class="homehub-card-desc">用你的專輯卡，與對手一決高下。</div>
+        <div class="homehub-card-name">品味對決<span class="homehub-beta">BETA</span></div>
+        <div class="homehub-card-desc">用你手邊的專輯，與音樂同好一決高下。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
