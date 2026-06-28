@@ -51,6 +51,20 @@
   .ri-st { font-size:9px; color:var(--gray); } .ri-st.act { color:var(--gold); font-weight:700; }
   .ri-desc { font-size:9px; color:#444; line-height:1.5; letter-spacing:0.02em; }
   .rec-empty { font-size:11px; color:var(--gray); text-align:center; padding:24px 0; }
+  /* 賽後點檯面卡：抽卡牌式的卡片詳情（大圖＋簡介）*/
+  .cd2 { text-align:center; padding:4px 0 2px; }
+  .cd2-ace { display:inline-block; font-size:10px; font-weight:700; letter-spacing:0.14em; padding:3px 10px; margin-bottom:10px; border:1px solid var(--gold); color:var(--gold); }
+  .cd2-cover { width:200px; max-width:72%; aspect-ratio:1/1; margin:0 auto 14px; background-size:cover; background-position:center; border:1px solid var(--black); }
+  .cd2-cover.ri-noimg { display:flex; align-items:center; justify-content:center; padding:10px; background:repeating-linear-gradient(45deg,#fff,#fff 6px,#f3f3f3 6px,#f3f3f3 12px); }
+  .cd2-cover.ri-noimg span { font-size:12px; font-weight:700; color:#444; }
+  .cd2-art { font-size:11px; color:var(--gray); letter-spacing:0.08em; }
+  .cd2-alb { font-size:16px; font-weight:700; line-height:1.35; margin:2px 0 12px; }
+  .cd2-stats { display:flex; justify-content:center; gap:18px; margin-bottom:14px; }
+  .cd2-st { font-size:10px; color:var(--gray); letter-spacing:0.06em; }
+  .cd2-st b { display:block; font-size:15px; color:var(--black); font-weight:700; margin-top:2px; }
+  .cd2-st.act { color:var(--gold); } .cd2-st.act b { color:var(--gold); }
+  .cd2-desc { font-size:12px; line-height:1.9; text-align:left; color:#333; letter-spacing:0.03em; padding:14px; border:1px solid var(--line); }
+  .cd2-desc.load { text-align:center; color:var(--gray); }
   .hpbar { height:14px; background:var(--hp-bg); position:relative; overflow:hidden; }
   .hpbar > i { position:absolute; inset:0 auto 0 0; background:var(--hp); transition:width .5s cubic-bezier(.4,0,.2,1); }
   .hpbar > span { position:absolute; inset:0; display:flex; align-items:center; justify-content:flex-end; padding-right:6px; font-size:9px; font-weight:700; color:var(--gray); mix-blend-mode:difference; }
@@ -1132,11 +1146,42 @@ function openRecords(side){
     : '<div class="rec-empty">還沒出過牌</div>';
   document.getElementById('recModal').classList.add('show');
 }
+// 賽後點檯面卡：抽卡牌式卡片詳情（大圖＋三圍＋專輯簡介）
+let _cardDescSeq = 0;
+function cardDetailHtml(card){
+  const aceTag = card.ace?`<span class="cd2-ace">${ACE_ZH[card.ace]}</span>`:'';
+  const cover = card.coverUrl
+    ? `<div class="cd2-cover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
+    : `<div class="cd2-cover ri-noimg"><span>${card.album}</span></div>`;
+  const stats = ATTRS.map(a=>`<span class="cd2-st${a===card._attr?' act':''}">${ATTR_ZH[a]}<b>${card[a]}</b></span>`).join('');
+  return `<div class="cd2">${aceTag}${cover}
+    <div class="cd2-art">${card.artist||''}</div>
+    <div class="cd2-alb">${card.album||''}</div>
+    <div class="cd2-stats">${stats}</div>
+    <div class="cd2-desc load" id="cd2Desc">載入簡介…</div></div>`;
+}
+async function loadCardDesc(card, seq){
+  // 與卡冊／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）
+  let txt = '（暫無簡介）';
+  try{
+    const r = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
+    if(r.ok){ const d = await r.json(); if(d && (d.desc||'').trim()) txt = d.desc.trim(); }
+  }catch(e){}
+  const el = document.getElementById('cd2Desc');
+  if(el && seq===_cardDescSeq){ el.textContent = txt; el.classList.remove('load'); }
+}
 function openCardInfo(card){
   if(!card) return;
   document.getElementById('recTitleTxt').textContent = '卡片資訊';
-  document.getElementById('recBody').innerHTML = cardInfoRow(card);
-  document.getElementById('recModal').classList.add('show');
+  // 對戰結束後：用抽卡牌式的詳情卡＋專輯簡介；對戰中：維持精簡資訊列
+  if(G && G.over){
+    document.getElementById('recBody').innerHTML = cardDetailHtml(card);
+    document.getElementById('recModal').classList.add('show');
+    loadCardDesc(card, ++_cardDescSeq);
+  } else {
+    document.getElementById('recBody').innerHTML = cardInfoRow(card);
+    document.getElementById('recModal').classList.add('show');
+  }
 }
 
 async function endGame(){
