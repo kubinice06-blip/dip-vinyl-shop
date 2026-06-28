@@ -1173,15 +1173,10 @@ async function loadCardDesc(card, seq){
 function openCardInfo(card){
   if(!card) return;
   document.getElementById('recTitleTxt').textContent = '卡片資訊';
-  // 對戰結束後：用抽卡牌式的詳情卡＋專輯簡介；對戰中：維持精簡資訊列
-  if(G && G.over){
-    document.getElementById('recBody').innerHTML = cardDetailHtml(card);
-    document.getElementById('recModal').classList.add('show');
-    loadCardDesc(card, ++_cardDescSeq);
-  } else {
-    document.getElementById('recBody').innerHTML = cardInfoRow(card);
-    document.getElementById('recModal').classList.add('show');
-  }
+  // 點檯面卡：一律用抽卡牌式的詳情卡＋專輯簡介（不分對戰中／賽後）
+  document.getElementById('recBody').innerHTML = cardDetailHtml(card);
+  document.getElementById('recModal').classList.add('show');
+  loadCardDesc(card, ++_cardDescSeq);
 }
 
 async function endGame(){
