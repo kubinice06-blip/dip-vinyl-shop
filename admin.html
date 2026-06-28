@@ -2723,10 +2723,13 @@ ${discogs ? '- Discogs：' + discogs : ''}
   ovModal.addEventListener('click', e => { if (e.target === ovModal) closeOvModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && ovModal.classList.contains('open')) closeOvModal(); });
 
+  let ovLoadToken = 0; // 防止快速連點時，前一張的非同步結果蓋掉後一張
+
   async function loadOverrideEditor(artist, album, coverUrl) {
     const a = (artist ?? document.getElementById('ovArtist').value).trim();
     const b = (album ?? document.getElementById('ovAlbum').value).trim();
     if (!a || !b) { alert('請先填藝人與專輯'); return; }
+    const token = ++ovLoadToken;
     document.getElementById('ovArtist').value = a;
     document.getElementById('ovAlbum').value = b;
     const id = ovCardId(a, b);
@@ -2737,6 +2740,14 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const coverEl = document.getElementById('ovModalCover');
     if (coverUrl) { coverEl.src = coverUrl; coverEl.style.visibility = 'visible'; }
     else { coverEl.removeAttribute('src'); coverEl.style.visibility = 'hidden'; }
+    // 先清空欄位，避免載入期間殘留上一張的內容
+    document.getElementById('ovDesc').value = '';
+    document.getElementById('ovObscurity').value = '';
+    document.getElementById('ovClassic').value = '';
+    document.getElementById('ovAccessibility').value = '';
+    document.getElementById('ovObscurity').placeholder = '';
+    document.getElementById('ovClassic').placeholder = '';
+    document.getElementById('ovAccessibility').placeholder = '';
     openOvModal();
     msg.textContent = '載入中…';
     // 既有校正 + 抽卡當下介紹(card_catalog) + AI 版本
@@ -2746,6 +2757,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       getDoc(doc(db, 'album_overrides', id)).catch(() => null),
       getDoc(doc(db, 'card_catalog', id)).catch(() => null)
     ]);
+    if (token !== ovLoadToken) return; // 已切到別張，丟棄這次結果
     const ov = ovSnap && ovSnap.exists && ovSnap.exists() ? ovSnap.data() : null;
     const cat = catSnap && catSnap.exists && catSnap.exists() ? catSnap.data() : null;
     // 優先序：既有校正 > 抽卡當下介紹 > AI 重生

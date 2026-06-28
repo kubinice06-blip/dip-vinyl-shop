@@ -926,6 +926,19 @@
     return { tier, label: labels[tier] || tier, sum: null };
   }
 
+  // 殿堂神作的人工資料（key = 藝人|專輯 小寫）。這些公認神作平常不會進冷門卡池、
+  // AI 簡介又是為冷門盤調的套上去會怪，所以這裡直接給定稀有度＋簡介，前台優先採用。
+  const NEOCLASSIC_CARDS = {
+    'pink floyd|the dark side of the moon': {
+      tier: 'hall',
+      desc: 'Pink Floyd 1973 年的概念專輯，圍繞時間、金錢、死亡與精神崩潰，把搖滾、合成器、磁帶拼貼與人聲采樣縫成一張不間斷的聲音整體。《The Great Gig in the Sky》的無詞嘶吼、《Money》以 7/4 拍收銀機聲開場，都成了標誌。它在告示牌專輯榜停留超過十年，是史上最暢銷的唱片之一，也是「用一整張專輯說一件事」的典範。'
+    },
+  };
+  const neoclassicKey = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().trim();
+  function neoclassicOf(card) {
+    return NEOCLASSIC_CARDS[neoclassicKey(card.artist, card.album)] || null;
+  }
+
   // 三張「頂點卡」：各把一個數值軸衝到 7 星，互斥、抽中率各 ~3%（與殿堂一致）。
   //   hall 殿堂  = 經典度7（公認神作，AI 判定）         → 亮銀
   //   pearl 流亡 = 冷門度7（真實聽眾數 < 門檻才算）       → 暗黑油彩
@@ -1274,9 +1287,12 @@
         if (ov.accessibility) ratings.accessibility = ov.accessibility;
       }
       const sp = specialTierOf(c);
+      const neo = neoclassicOf(c);
       const rarity = sp
         ? { tier: sp, label: SPECIAL_TIERS[sp].label, sum: null }
-        : (rarityOverrideOf(c) || rarityFromRatings(ratings));
+        : neo && SPECIAL_TIERS[neo.tier]
+          ? { tier: neo.tier, label: SPECIAL_TIERS[neo.tier].label, sum: null }
+          : (rarityOverrideOf(c) || rarityFromRatings(ratings));
       // 舊卡沒存封面：即時抓 Spotify 補上，並寫回 Firestore（之後就永久有）
       let coverUrl = c.coverUrl || '';
       if (!coverUrl && c.artist) {
@@ -1288,7 +1304,7 @@
           setDoc(doc(db, 'collections', currentUser.uid, 'cards', c.cardId), { coverUrl }, { merge: true }).catch(() => {});
         }
       }
-      return { ...c, coverUrl, ratings, rarity, descOverride: ov?.desc || null };
+      return { ...c, coverUrl, ratings, rarity, descOverride: ov?.desc || neo?.desc || null };
     }));
     drawCollection();
   }
