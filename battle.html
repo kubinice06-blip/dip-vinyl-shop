@@ -634,6 +634,21 @@ const PO_POOL = [
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 PO_POOL.push({artist:'Pauline Anna Strom',album:'Trans-Millenia Consort',classic:1,obscurity:7,accessibility:1,ace:'pearl'});
 
+// 殿堂神作：即使卡片沒存 hall 旗標，這些公認神作也視為對應王牌（與 worker / 前台同一份正規化）
+const NEOCLASSIC_LIST = [
+  { artist:'Pink Floyd', album:'The Dark Side of the Moon', tier:'hall' },
+];
+const _neoNorm = (s) => (s||'').toLowerCase()
+  .replace(/\([^)]*\)|\[[^\]]*\]/g,' ')
+  .replace(/\s[-–—:]\s.*$/,' ')
+  .replace(/[^a-z0-9]+/g,' ')
+  .replace(/\b\d{1,4}(st|nd|rd|th)?\b/g,' ')
+  .replace(/\b(remaster|remastered|anniversary|deluxe|expanded|edition|reissue|mono|stereo|version|the|a|an)\b/g,' ')
+  .replace(/\s+/g,' ').trim();
+const NEOCLASSIC_MAP = {};
+NEOCLASSIC_LIST.forEach(x=>{ NEOCLASSIC_MAP[_neoNorm(x.artist)+'|'+_neoNorm(x.album)] = x; });
+const neoAceOf = (artist,album) => { const n = NEOCLASSIC_MAP[_neoNorm(artist)+'|'+_neoNorm(album)]; return n && ACE_STATS[n.tier] ? n.tier : null; };
+
 // ───────── 卡冊 / 評分讀取 ─────────
 const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().trim();
 function clampStat(v){ return Math.max(1, Math.min(5, Math.round(Number(v)||1))); }
@@ -697,7 +712,7 @@ async function buildPlayerDeck(){
   let deck=[];
   const cards = myColl || [];
   const rated = await Promise.all(cards.map(async c=>{
-    const ace = c.hall?'hall':c.pearl?'pearl':c.heresy?'heresy':null;
+    const ace = c.hall?'hall':c.pearl?'pearl':c.heresy?'heresy':neoAceOf(c.artist,c.album);
     if(ace) return { c, ace, stats:ACE_STATS[ace] };
     const r = await fetchRating(c.artist, c.album);
     return r ? { c, ace:null, stats:r } : null;

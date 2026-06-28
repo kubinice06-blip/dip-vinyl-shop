@@ -2760,8 +2760,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (token !== ovLoadToken) return; // 已切到別張，丟棄這次結果
     const ov = ovSnap && ovSnap.exists && ovSnap.exists() ? ovSnap.data() : null;
     const cat = catSnap && catSnap.exists && catSnap.exists() ? catSnap.data() : null;
-    // 優先序：既有校正 > 抽卡當下介紹 > AI 重生
-    document.getElementById('ovDesc').value = ov?.desc || cat?.desc || aiDescR.desc || '';
+    // 優先序：既有校正 > 神作人工簡介(worker curated) > 抽卡當下介紹 > AI 重生
+    document.getElementById('ovDesc').value = ov?.desc || (aiDescR.curated ? aiDescR.desc : '') || cat?.desc || aiDescR.desc || '';
     document.getElementById('ovObscurity').value = ov?.obscurity || '';
     document.getElementById('ovClassic').value = ov?.classic || '';
     document.getElementById('ovAccessibility').value = ov?.accessibility || '';
