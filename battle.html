@@ -244,15 +244,23 @@
   .ovloot:empty { display:none; }
   .loot-sec { border:1px solid var(--line); padding:9px 11px; text-align:left; }
   .loot-h { font-size:9px; letter-spacing:0.1em; color:var(--gray); text-transform:uppercase; margin-bottom:6px; }
-  .loot-card { display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 8px; font-size:11px; }
-  .loot-card b { font-weight:700; } .loot-art { color:var(--gray); font-size:9px; }
+  .loot-card { display:flex; align-items:center; gap:10px; font-size:11px; }
+  .loot-card .loot-info { display:flex; flex-direction:column; gap:3px; min-width:0; flex:1; }
+  .loot-card .loot-titlerow { display:flex; align-items:baseline; flex-wrap:wrap; gap:3px 7px; }
+  .loot-card b { font-weight:700; }
+  .loot-art { color:var(--gray); font-size:9px; }
   .loot-stat { font-size:9px; color:var(--qi); letter-spacing:0.04em; }
+  .loot-cover { flex:none; width:56px; height:56px; border:1px solid var(--line); background-size:cover; background-position:center; }
+  .loot-cover.ace-border { border-color:transparent; }
+  .loot-cover.loot-noimg { display:flex; align-items:center; justify-content:center; padding:4px; text-align:center; background:repeating-linear-gradient(45deg,#fff,#fff 4px,#f3f3f3 4px,#f3f3f3 8px); }
+  .loot-cover.loot-noimg span { font-size:8px; font-weight:700; color:#444; overflow:hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; }
   .loot-ace { font-size:8px; font-weight:700; padding:0 4px; color:#fff; letter-spacing:0.04em; }
   .loot-ace.hall { background:#9aa0a8; } .loot-ace.pearl { background:#5b4a8a; } .loot-ace.heresy { background:#a01020; }
-  .loot-list { display:flex; flex-direction:column; gap:4px; margin-bottom:8px; }
-  .loot-pick { display:flex; align-items:center; gap:7px; font-size:11px; cursor:pointer; }
-  .loot-pick input { accent-color:var(--black); }
-  .loot-pick .lp-alb { font-weight:700; } .loot-pick .loot-art { margin-left:auto; }
+  .loot-list { display:flex; flex-direction:column; gap:7px; margin-bottom:8px; }
+  .loot-pick { display:flex; align-items:center; gap:8px; font-size:11px; cursor:pointer; }
+  .loot-pick input { accent-color:var(--black); flex:none; }
+  .loot-pick .lp-txt { display:flex; flex-direction:column; gap:2px; min-width:0; flex:1; }
+  .loot-pick .lp-alb { font-weight:700; }
   .loot-save { width:100%; }
   .loot-note { font-size:9px; color:var(--gray); text-align:center; letter-spacing:0.04em; }
   .loot-login { display:flex; flex-direction:column; gap:8px; align-items:center; border:1px solid var(--black); padding:12px; text-align:center; }
@@ -1296,6 +1304,13 @@ function bestPlunder(list){
   if(!list.length) return null;
   return list.slice().sort((a,b)=>{ const av=a.ace?1:0, bv=b.ace?1:0; return bv-av || cardTotal(b)-cardTotal(a); })[0];
 }
+// 戰利品封面方塊：有圖鋪滿，無圖顯示專輯名底牌；王牌再套卡牌級別框
+function lootCoverHTML(card, key){
+  const frame = card.ace?` ace-border ace-${card.ace}`:'';
+  return card.coverUrl
+    ? `<div class="loot-cover${frame}" data-lcid="${key}" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
+    : `<div class="loot-cover loot-noimg${frame}" data-lcid="${key}"><span>${card.album}</span></div>`;
+}
 // 賽後戰利品面板：贏 → 掠奪一張自動入冊；借的卡 → 勾選收進卡冊
 async function renderLoot(win){
   const box=document.getElementById('ovLoot'); if(!box) return; box.innerHTML='';
@@ -1307,8 +1322,10 @@ async function renderLoot(win){
     if(currentUser){ const r=await addCardToColl(plunder); }
     const acetag = plunder.ace?`<span class="loot-ace ${plunder.ace}">${ACE_ZH[plunder.ace]}</span>`:'';
     html += `<div class="loot-sec"><div class="loot-h">⚔ 掠奪戰利品${currentUser?' · 已入冊':''}</div>
-      <div class="loot-card">${acetag}<b>${plunder.album}</b><span class="loot-art">${plunder.artist}</span>
-      <span class="loot-stat">經${plunder.classic} 冷${plunder.obscurity} 入${plunder.accessibility}</span></div></div>`;
+      <div class="loot-card">${lootCoverHTML(plunder,'p')}<div class="loot-info">
+        <div class="loot-titlerow">${acetag}<b>${plunder.album}</b><span class="loot-art">${plunder.artist}</span></div>
+        <span class="loot-stat">經${plunder.classic} 冷${plunder.obscurity} 入${plunder.accessibility}</span>
+      </div></div></div>`;
   }
   // 借的卡（這局打出來過的，勾選入冊）
   const borrowed = dedupeByAlbum(G.p.played.filter(c=>c.borrowed));
@@ -1316,7 +1333,7 @@ async function renderLoot(win){
   if(borrowed.length){
     html += `<div class="loot-sec"><div class="loot-h">借來打過的卡 · 勾選收進卡冊</div><div class="loot-list">`+
       borrowed.map((c,i)=>`<label class="loot-pick"><input type="checkbox" data-i="${i}" ${currentUser?'':'disabled'}>
-        <span class="lp-alb">${c.album}</span><span class="loot-art">${c.artist}</span></label>`).join('')+
+        ${lootCoverHTML(c,'b'+i)}<span class="lp-txt"><span class="lp-alb">${c.album}</span><span class="loot-art">${c.artist}</span></span></label>`).join('')+
       `</div><button class="btn loot-save" id="lootSave" ${currentUser?'':'disabled'}>收進卡冊</button></div>`;
   }
   if(!currentUser && (plunder || borrowed.length)){
@@ -1325,6 +1342,13 @@ async function renderLoot(win){
       <button class="btn" id="lootLogin">登入立刻收藏</button></div>`;
   }
   box.innerHTML = html;
+  // 卡池/借牌沒存封面 → 即時抓 Spotify 封面補進戰利品方塊
+  [['p',plunder], ...borrowed.map((c,i)=>['b'+i,c])].forEach(([key,c])=>{ if(!c || c.coverUrl) return; ensureCover(c).then(url=>{
+    if(!url) return;
+    box.querySelectorAll(`.loot-cover[data-lcid="${key}"]`).forEach(cov=>{
+      cov.classList.remove('loot-noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`;
+    });
+  }); });
   const loginBtn=document.getElementById('lootLogin');
   if(loginBtn) loginBtn.addEventListener('click', async ()=>{
     loginBtn.disabled=true; loginBtn.textContent='登入中…';
