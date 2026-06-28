@@ -123,7 +123,7 @@
   /* 上一手已結束的牌：卡面變灰（勝負標記維持鮮明）*/
   .slot.done .pcard { opacity:0.5; filter:grayscale(0.6); }
   /* 電腦本回合氣場提示（獨立橫幅，不再佔用敵方卡格）*/
-  .etell { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; max-width:340px; min-height:34px; margin:0 auto; padding:6px 10px; border:1px dashed var(--gray); font-size:9px; color:var(--gray); letter-spacing:0.04em; text-align:center; animation:pop .2s; }
+  .etell { flex:none; display:flex; align-items:center; justify-content:center; gap:8px; width:calc(100% - 24px); max-width:340px; min-height:34px; margin:8px auto 0; padding:6px 10px; border:1px dashed var(--gray); font-size:9px; color:var(--gray); letter-spacing:0.04em; text-align:center; animation:pop .2s; }
   .etell:empty { display:none; }
   .etell .fd { flex:none; width:18px; height:24px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#eee 3px,#eee 6px); }
   .etell .lab { letter-spacing:0.12em; white-space:nowrap; }
@@ -296,14 +296,15 @@
   /* ── 手機緊湊化：壓低各區高度，盡量一屏看完（圖例可由「規則」取代故隱藏）── */
   @media (max-width:600px) {
     .side { padding:9px 12px; }
-    .arena { min-height:0; padding:8px; gap:6px; }
+    /* 手機：牌桌靠上對齊，卡片永遠完整不被裁；空間不足時讓最底的結果文字(callout)讓位（log 也有記錄） */
+    .arena { min-height:0; padding:8px; gap:6px; justify-content:flex-start; }
     .slots { gap:12px; }
     .slot { height:150px; }
     .facedown { width:44px; height:60px; }
-    .cheat { gap:10px; margin-bottom:5px; }
+    .cheat { gap:10px; margin-bottom:5px; justify-content:center; }
     .cheat .legend { display:none; }
-    .relring { width:56px; }
-    .relring .cap { font-size:8px; margin-top:2px; }
+    /* 手機版收起經/冷/入三角圖（規則鈕＋下方文字提示已足夠），把高度讓給牌桌與提示列 */
+    .relring { display:none; }
     .player-zone { padding:8px 10px 12px; }
     .hint { margin-bottom:5px; }
     .handtile { width:90px; height:90px; }
@@ -320,7 +321,6 @@
     .facedown { width:38px; height:52px; }
     .slot { height:104px; }
     .callout { min-height:20px; }
-    .relring { width:46px; }
     .cheat { margin-bottom:4px; }
     .handtile { width:88px; height:88px; }
     .log { max-height:26px; }
@@ -346,8 +346,10 @@
     <div class="enemy-hand" id="eHand"></div>
   </div>
 
+  <!-- 對手本回合氣場提示：放在牌桌外、固定一列，避免被 arena 裁切看不到 -->
+  <div class="etell" id="eTell"></div>
+
   <div class="arena">
-    <div class="etell" id="eTell"></div>
     <div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
