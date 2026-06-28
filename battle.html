@@ -110,10 +110,13 @@
   .rules-box ul { margin:4px 0; padding-left:18px; }
   .rules-box b { color:var(--dmg); } .rules-box em { color:var(--qi); font-style:normal; font-weight:700; }
   .rules-box .ring-cycle { font-weight:700; letter-spacing:0.1em; }
-  .slots { display:flex; gap:18px; align-items:flex-start; justify-content:center; width:100%; }
+  .slots { position:relative; display:flex; gap:18px; align-items:flex-start; justify-content:center; width:100%; }
   /* 檯面格：正方形（配合整張方形封面，不裁切）；只放封面，不再放文字 */
   .slot { flex:1; max-width:170px; aspect-ratio:1/1; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:0; position:relative; overflow:hidden; }
   .slot.filled { border-style:solid; border-color:var(--black); }
+  /* 左右錯位區分敵我：左(對手)微上、右(你)微下 */
+  #eSlot { transform:translateY(-9px); }
+  #pSlot { transform:translateY(9px); }
   /* 勝負標記：留在檯面的卡右上角 */
   .slot.mk-win::after, .slot.mk-lose::after, .slot.mk-tie::after {
     position:absolute; top:5px; right:5px; z-index:3; font-size:11px; font-weight:700; line-height:1;
@@ -126,7 +129,8 @@
   .slot.done .pcard { opacity:0.5; filter:grayscale(0.6); }
   /* 電腦本回合氣場提示（獨立橫幅，不再佔用敵方卡格）*/
   .etell { flex:none; display:flex; align-items:center; justify-content:center; gap:8px; width:calc(100% - 24px); max-width:340px; min-height:34px; margin:8px auto 0; padding:6px 10px; border:1px dashed var(--gray); font-size:9px; color:var(--gray); letter-spacing:0.04em; text-align:center; animation:pop .2s; }
-  .etell:empty { display:none; }
+  /* 空著也保留高度（只隱藏邊框）：出招時提示清空不會讓整個檯面上下跳 */
+  .etell:empty { border-color:transparent; }
   .etell .fd { flex:none; width:18px; height:24px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#eee 3px,#eee 6px); }
   .etell .lab { letter-spacing:0.12em; white-space:nowrap; }
   .etell b { color:var(--black); font-weight:700; }
@@ -157,8 +161,14 @@
   .ace-border.ace-pearl::after { background-image:var(--oil-shine); }
   .ace-border.ace-heresy::after { background-image:var(--crimson-shine); }
 
-  .callout { min-height:48px; text-align:center; display:flex; flex-direction:column; gap:3px; align-items:center; justify-content:center; }
-  .callout .skill { font-weight:700; letter-spacing:0.14em; animation:pop .3s; }
+  /* 對招文字：浮在兩張牌正中央、用爆出式動畫衝出，半透明底板保證看得清；不佔版面故不會推擠卡牌 */
+  .callout { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:25; width:max-content; max-width:90%;
+    padding:9px 14px; background:rgba(255,255,255,0.94); border:1px solid var(--black); box-shadow:0 6px 26px rgba(0,0,0,0.30);
+    text-align:center; display:flex; flex-direction:column; gap:3px; align-items:center; justify-content:center; pointer-events:none; }
+  .callout:empty { display:none; }
+  .callout.burst { animation:burst .42s cubic-bezier(.18,.9,.32,1.25); }
+  @keyframes burst { 0%{ transform:translate(-50%,-50%) scale(.2); opacity:0; } 55%{ transform:translate(-50%,-50%) scale(1.14); opacity:1; } 100%{ transform:translate(-50%,-50%) scale(1); opacity:1; } }
+  .callout .skill { font-weight:700; letter-spacing:0.14em; }
   .callout .skill.syn { color:var(--gold); }
   .callout .skill.cnt { color:var(--dmg); }
   .callout .sub { font-size:9px; color:var(--gray); }
@@ -353,8 +363,8 @@
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
       <div class="slot" id="pSlot"></div>
+      <div class="callout" id="callout"></div>
     </div>
-    <div class="callout" id="callout"></div>
   </div>
 
   <div class="player-zone">
@@ -1139,7 +1149,7 @@ function setMeta(){
 }
 function pushLog(t,cls){ G.logs.unshift({t,cls}); if(G.logs.length>30)G.logs.pop(); renderLog(); }
 function renderLog(){ document.getElementById('log').innerHTML=G.logs.map(l=>`<div class="${l.cls}">${l.t}</div>`).join(''); }
-function callout(html){ document.getElementById('callout').innerHTML=html; }
+function callout(html){ const el=document.getElementById('callout'); el.innerHTML=html||''; if(html){ el.classList.remove('burst'); void el.offsetWidth; el.classList.add('burst'); } }
 
 // ===== 勝負標記（留在檯面的卡）=====
 function markSlot(side, kind){
