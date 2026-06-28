@@ -193,6 +193,28 @@
     .reel-tag { border: 1px solid var(--line); padding: 3px 9px; font-family: var(--mono); font-size: 10px; cursor: pointer; color: var(--gray); background: #fff; transition: all 0.12s; }
     .reel-tag:hover { border-color: var(--black); color: var(--black); }
     .reel-tag.selected { background: var(--black); border-color: var(--black); color: #fff; }
+
+    /* 卡牌校正：封面卡冊網格 */
+    .cardgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .cardgrid-cell { background: #fff; padding: 10px; cursor: pointer; transition: background 0.12s; }
+    .cardgrid-cell:hover { background: #fafafa; }
+    .cardgrid-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 8px; }
+    .cardgrid-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cardgrid-nocover { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: var(--line); }
+    .cardgrid-badge { position: absolute; left: 6px; top: 6px; background: var(--green); color: #fff; font-size: 9px; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 3px; }
+    .cardgrid-album { font-size: 11px; font-weight: 700; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cardgrid-artist { font-size: 10px; color: var(--gray); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* 卡牌校正：彈出編輯 modal */
+    .ov-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 9000; overflow-y: auto; padding: 40px 16px; }
+    .ov-modal.open { display: flex; }
+    .ov-modal-box { background: #fff; border: 1px solid var(--line); width: 100%; max-width: 560px; padding: 22px; position: relative; }
+    .ov-modal-close { position: absolute; right: 12px; top: 10px; background: none; border: none; font-size: 22px; line-height: 1; color: var(--gray); cursor: pointer; font-family: var(--mono); }
+    .ov-modal-close:hover { color: var(--black); }
+    .ov-modal-head { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; padding-right: 24px; }
+    .ov-modal-cover { width: 72px; height: 72px; object-fit: cover; background: #f0f0f0; flex-shrink: 0; border: 1px solid var(--line); }
+    .ov-modal-album { font-size: 14px; font-weight: 700; line-height: 1.4; }
+    .ov-modal-artist { font-size: 11px; color: var(--gray); margin-top: 2px; }
   </style>
 </head>
 <body>
@@ -739,34 +761,47 @@
 
   <!-- 卡牌校正 -->
   <div class="right-panel" id="panel-cards">
-    <div style="max-width:680px;">
+    <div style="max-width:880px;">
       <div class="section">
         <div class="section-label">卡牌校正（修正 AI 介紹 / 評分）</div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">輸入藝人與專輯，按「載入」會帶出目前 AI 版本。修改後存檔，前台卡冊就會<strong>優先顯示你的校正版</strong>，蓋過 AI。評分留空＝沿用 AI。</p>
-        <div class="field-row" style="margin-bottom:12px;">
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">下方是全站被抽過的卡，照卡冊封面排列。<strong>點任一張卡片</strong>即可彈出編輯介紹與評分；存檔後前台卡冊會<strong>優先顯示你的校正版</strong>，蓋過 AI。綠色「已校正」標記＝這張已有你的版本。也可用下方欄位手動輸入沒被抽過的卡。</p>
+        <div class="field-row" style="margin-bottom:10px;">
           <div class="field"><label>藝人 Artist</label><input id="ovArtist" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Abdullah Ibrahim"></div>
           <div class="field"><label>專輯 Album</label><input id="ovAlbum" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Good News from Africa"></div>
         </div>
-        <button id="btnLoadOverride" style="width:100%;background:none;border:1px solid var(--black);font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:11px;cursor:pointer;color:var(--black);">載入目前版本</button>
-
-        <div id="ovEditor" style="display:none;margin-top:18px;">
-          <div class="section-label" style="margin-bottom:8px;">介紹</div>
-          <textarea id="ovDesc" rows="5" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:13px;line-height:1.8;outline:none;background:#fff;resize:vertical;"></textarea>
-          <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI）</div>
-          <div class="field-row" style="margin-bottom:12px;">
-            <div class="field"><label>冷門度</label><input id="ovObscurity" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
-            <div class="field"><label>經典度</label><input id="ovClassic" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
-            <div class="field"><label>入耳難易度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
-          </div>
-          <button class="btn-save" id="btnSaveOverride">儲存校正</button>
-          <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除校正（恢復 AI 版本）</button>
-          <div class="msg" id="ovMsg"></div>
-        </div>
+        <button id="btnLoadOverride" style="width:100%;background:none;border:1px solid var(--black);font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:11px;cursor:pointer;color:var(--black);">手動載入這張來校正</button>
       </div>
 
       <div class="section">
-        <div class="section-label">最近被抽到的卡（點擊載入校正）</div>
+        <div class="section-label" style="margin-bottom:12px;">卡片庫（點封面編輯）</div>
         <div id="catalogList" style="font-size:12px;color:var(--gray);">尚未載入</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 卡牌校正：彈出編輯 modal -->
+  <div class="ov-modal" id="ovModal">
+    <div class="ov-modal-box">
+      <button class="ov-modal-close" id="ovModalClose" aria-label="關閉">×</button>
+      <div class="ov-modal-head">
+        <img class="ov-modal-cover" id="ovModalCover" src="" alt="">
+        <div>
+          <div class="ov-modal-album" id="ovModalAlbum"></div>
+          <div class="ov-modal-artist" id="ovModalArtist"></div>
+        </div>
+      </div>
+      <div id="ovEditor">
+        <div class="section-label" style="margin-bottom:8px;">介紹</div>
+        <textarea id="ovDesc" rows="6" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:13px;line-height:1.8;outline:none;background:#fff;resize:vertical;"></textarea>
+        <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI）</div>
+        <div class="field-row" style="margin-bottom:12px;">
+          <div class="field"><label>冷門度</label><input id="ovObscurity" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+          <div class="field"><label>經典度</label><input id="ovClassic" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+          <div class="field"><label>入耳難易度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+        </div>
+        <button class="btn-save" id="btnSaveOverride">儲存校正</button>
+        <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除校正（恢復 AI 版本）</button>
+        <div class="msg" id="ovMsg"></div>
       </div>
     </div>
   </div>
@@ -2680,15 +2715,29 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // ───────── 卡牌校正 ─────────
   const ovCardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().trim();
 
-  async function loadOverrideEditor(artist, album) {
+  // 編輯 modal 開關
+  const ovModal = document.getElementById('ovModal');
+  function openOvModal() { ovModal.classList.add('open'); }
+  function closeOvModal() { ovModal.classList.remove('open'); }
+  document.getElementById('ovModalClose').addEventListener('click', closeOvModal);
+  ovModal.addEventListener('click', e => { if (e.target === ovModal) closeOvModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && ovModal.classList.contains('open')) closeOvModal(); });
+
+  async function loadOverrideEditor(artist, album, coverUrl) {
     const a = (artist ?? document.getElementById('ovArtist').value).trim();
     const b = (album ?? document.getElementById('ovAlbum').value).trim();
-    if (!a || !b) { document.getElementById('ovMsg').textContent = '請先填藝人與專輯'; return; }
+    if (!a || !b) { alert('請先填藝人與專輯'); return; }
     document.getElementById('ovArtist').value = a;
     document.getElementById('ovAlbum').value = b;
     const id = ovCardId(a, b);
-    const ed = document.getElementById('ovEditor');
     const msg = document.getElementById('ovMsg');
+    // 設定 modal 標頭與封面
+    document.getElementById('ovModalAlbum').textContent = b;
+    document.getElementById('ovModalArtist').textContent = a;
+    const coverEl = document.getElementById('ovModalCover');
+    if (coverUrl) { coverEl.src = coverUrl; coverEl.style.visibility = 'visible'; }
+    else { coverEl.removeAttribute('src'); coverEl.style.visibility = 'hidden'; }
+    openOvModal();
     msg.textContent = '載入中…';
     // 既有校正 + 抽卡當下介紹(card_catalog) + AI 版本
     const [aiDescR, aiRateR, ovSnap, catSnap] = await Promise.all([
@@ -2707,7 +2756,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('ovObscurity').placeholder = 'AI ' + (aiRateR.obscurity || '?');
     document.getElementById('ovClassic').placeholder = 'AI ' + (aiRateR.classic || '?');
     document.getElementById('ovAccessibility').placeholder = 'AI ' + (aiRateR.accessibility || '?');
-    ed.style.display = 'block';
     msg.textContent = ov ? '已載入（此張已有校正）' : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
   }
 
@@ -2743,24 +2791,42 @@ ${discogs ? '- Discogs：' + discogs : ''}
     try {
       await deleteDoc(doc(db, 'album_overrides', id));
       document.getElementById('ovMsg').textContent = '已清除校正，恢復 AI 版本';
+      loadCatalog();
     } catch (e) { document.getElementById('ovMsg').textContent = '清除失敗：' + (e.message || e); }
   });
+
+  const esc = (s) => (s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
   async function loadCatalog() {
     const list = document.getElementById('catalogList');
     if (!list) return;
+    list.textContent = '載入中…';
     try {
-      const snap = await getDocs(collection(db, 'card_catalog'));
-      const items = snap.docs.map(d => d.data()).sort((x, y) => (y.updatedAt || 0) - (x.updatedAt || 0)).slice(0, 100);
+      // 卡片庫 + 已校正清單（用來標記）
+      const [catSnap, ovSnap] = await Promise.all([
+        getDocs(collection(db, 'card_catalog')),
+        getDocs(collection(db, 'album_overrides')).catch(() => ({ docs: [] }))
+      ]);
+      const overridden = new Set(ovSnap.docs.map(d => d.id));
+      const items = catSnap.docs.map(d => d.data()).sort((x, y) => (y.updatedAt || 0) - (x.updatedAt || 0)).slice(0, 200);
       if (!items.length) { list.textContent = '還沒有任何卡被抽過收藏。'; return; }
-      list.innerHTML = items.map(it =>
-        `<div class="catalog-row" data-a="${(it.artist || '').replace(/"/g, '&quot;')}" data-b="${(it.album || '').replace(/"/g, '&quot;')}" style="display:flex;justify-content:space-between;gap:10px;padding:9px 10px;border:1px solid var(--line);margin-bottom:6px;cursor:pointer;color:var(--black);">
-          <span style="font-weight:700;">${it.album || ''}</span><span style="color:var(--gray);">${it.artist || ''}</span>
-        </div>`).join('');
-      list.querySelectorAll('.catalog-row').forEach(row => {
-        row.addEventListener('click', () => loadOverrideEditor(row.dataset.a, row.dataset.b));
+      list.className = 'cardgrid';
+      list.innerHTML = items.map(it => {
+        const id = ovCardId(it.artist, it.album);
+        const cover = it.coverUrl
+          ? `<img src="${esc(it.coverUrl)}" alt="" loading="lazy">`
+          : `<div class="cardgrid-nocover">♪</div>`;
+        const badge = overridden.has(id) ? `<span class="cardgrid-badge">已校正</span>` : '';
+        return `<div class="cardgrid-cell" data-a="${esc(it.artist)}" data-b="${esc(it.album)}" data-cover="${esc(it.coverUrl || '')}">
+          <div class="cardgrid-thumb">${cover}${badge}</div>
+          <div class="cardgrid-album">${esc(it.album) || '—'}</div>
+          <div class="cardgrid-artist">${esc(it.artist) || '—'}</div>
+        </div>`;
+      }).join('');
+      list.querySelectorAll('.cardgrid-cell').forEach(cell => {
+        cell.addEventListener('click', () => loadOverrideEditor(cell.dataset.a, cell.dataset.b, cell.dataset.cover));
       });
-    } catch (e) { list.textContent = '載入清單失敗：' + (e.message || e); }
+    } catch (e) { list.className = ''; list.textContent = '載入清單失敗：' + (e.message || e); }
   }
 
   // 切到「卡牌校正」分頁時載入清單
