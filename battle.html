@@ -85,7 +85,8 @@
   .legend { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; font-size:8px; letter-spacing:0.06em; color:var(--gray); margin-bottom:8px; }
   .legend b { color:var(--dmg); } .legend em { color:var(--qi); font-style:normal; }
 
-  .enemy-hand { display:flex; gap:4px; margin-top:8px; }
+  /* 對手覆蓋手牌（四張灰卡）隱藏：手牌數已顯示在上方 meta，省下高度給牌桌 */
+  .enemy-hand { display:none; }
   .cardback { width:26px; height:36px; border:1px solid var(--black); background:repeating-linear-gradient(45deg,#fff,#fff 3px,#f0f0f0 3px,#f0f0f0 6px); }
 
   .arena { flex:1 1 0; min-height:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; gap:8px; position:relative; overflow:hidden; }
@@ -109,8 +110,9 @@
   .rules-box ul { margin:4px 0; padding-left:18px; }
   .rules-box b { color:var(--dmg); } .rules-box em { color:var(--qi); font-style:normal; font-weight:700; }
   .rules-box .ring-cycle { font-weight:700; letter-spacing:0.1em; }
-  .slots { display:flex; gap:18px; align-items:stretch; justify-content:center; width:100%; }
-  .slot { flex:1; max-width:170px; height:196px; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:6px; position:relative; overflow:hidden; }
+  .slots { display:flex; gap:18px; align-items:flex-start; justify-content:center; width:100%; }
+  /* 檯面格：正方形（配合整張方形封面，不裁切）；只放封面，不再放文字 */
+  .slot { flex:1; max-width:170px; aspect-ratio:1/1; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; padding:0; position:relative; overflow:hidden; }
   .slot.filled { border-style:solid; border-color:var(--black); }
   /* 勝負標記：留在檯面的卡右上角 */
   .slot.mk-win::after, .slot.mk-lose::after, .slot.mk-tie::after {
@@ -136,7 +138,7 @@
   .sub.fx { color:var(--qi); margin-top:2px; }
   .vs { align-self:center; font-weight:700; font-size:13px; color:var(--gray); letter-spacing:0.1em; }
 
-  .pcard { width:100%; height:100%; animation:pop .3s; text-align:left; display:flex; flex-direction:column; }
+  .pcard { width:100%; height:100%; position:relative; animation:pop .3s; }
   .pcard .alb { font-weight:700; line-height:1.25; margin-bottom:1px; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
   .pcard .art { color:var(--gray); font-size:9px; margin-bottom:5px; letter-spacing:0.06em; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
   .stats { display:flex; flex-direction:column; gap:3px; }
@@ -248,8 +250,10 @@
   .loot-login .btn { width:100%; }
 
   /* 卡面封面 */
-  /* 檯面卡片：整張方形專輯封面 */
-  .pcover { width:100%; flex:1; min-height:0; background-size:cover; background-position:center; border:1px solid var(--line); margin-bottom:6px; }
+  /* 檯面卡片：整張方形專輯封面（鋪滿整格，與下排手牌一致） */
+  .pcover { width:100%; height:100%; background-size:cover; background-position:center; }
+  .pcover.ht-noimg { display:flex; align-items:center; justify-content:center; padding:8px; text-align:center; background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px); }
+  .pcover.ht-noimg span { font-size:11px; line-height:1.3; font-weight:700; color:#444; overflow:hidden; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; }
   .borrow-tag { display:inline-block; font-size:8px; font-weight:700; letter-spacing:0.12em; color:var(--gray); border:1px solid var(--line); padding:1px 5px; margin-bottom:5px; margin-left:4px; }
 
   /* 開戰大廳 */
@@ -299,16 +303,13 @@
     /* 手機：牌桌靠上對齊，卡片永遠完整不被裁；空間不足時讓最底的結果文字(callout)讓位（log 也有記錄） */
     .arena { min-height:0; padding:8px; gap:6px; justify-content:flex-start; }
     .slots { gap:12px; }
-    .slot { height:150px; }
-    .facedown { width:44px; height:60px; }
     .cheat { gap:10px; margin-bottom:5px; justify-content:center; }
     .cheat .legend { display:none; }
-    /* 手機版收起經/冷/入三角圖（規則鈕＋下方文字提示已足夠），把高度讓給牌桌與提示列 */
-    .relring { display:none; }
+    .relring { width:60px; }
+    .relring .cap { font-size:8px; margin-top:2px; }
     .player-zone { padding:8px 10px 12px; }
     .hint { margin-bottom:5px; }
-    .handtile { width:90px; height:90px; }
-    .slot { padding:4px; }
+    .handtile { width:72px; height:72px; }
     .callout { min-height:32px; }
     .log { max-height:40px; margin-top:6px; padding-top:6px; }
     .tellbox { font-size:8px; } .tellbox b { font-size:9px; }
@@ -317,12 +318,10 @@
   @media (max-height:640px) {
     .topbar { padding:8px 14px; }
     .side { padding:7px 12px; }
-    .enemy-hand { margin-top:5px; }
-    .facedown { width:38px; height:52px; }
-    .slot { height:104px; }
     .callout { min-height:20px; }
     .cheat { margin-bottom:4px; }
-    .handtile { width:88px; height:88px; }
+    .relring { width:52px; }
+    .handtile { width:68px; height:68px; }
     .log { max-height:26px; }
     .player-zone { padding:7px 10px 10px; }
   }
@@ -1038,9 +1037,12 @@ function statLine(card, attr){
 }
 function cardHTML(card, attr){
   const ace=card.ace?` ace-border ace-${card.ace}`:'';
-  const tag=card.ace?`<span class="ace-tag ace-${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
-  return `<div class="pcard${ace}">${tag}${coverHTML(card)}<div class="alb">${card.album}</div><div class="art">${card.artist}</div>
-    ${statLine(card, attr)}</div>`;
+  // 檯面卡：跟下排手牌一樣只露整張封面，專輯名／三圍點擊後才在卡片資訊顯示
+  const tag=card.ace?`<span class="ht-ace ${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
+  const cover=card.coverUrl
+    ? `<div class="pcover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
+    : `<div class="pcover ht-noimg"><span>${card.album}</span></div>`;
+  return `<div class="pcard${ace}">${cover}${tag}</div>`;
 }
 function render(){ renderHp(); renderQi(); renderHand(); renderEnemyHand(); setMeta(); renderLog(); setHint(); }
 function renderHp(){
