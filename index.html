@@ -1294,13 +1294,13 @@
         if (ov.classic) ratings.classic = ov.classic;
         if (ov.accessibility) ratings.accessibility = ov.accessibility;
       }
-      const sp = specialTierOf(c);
       const neo = neoclassicOf(c);
-      const rarity = sp
-        ? { tier: sp, label: SPECIAL_TIERS[sp].label, sum: null }
-        : neo && SPECIAL_TIERS[neo.tier]
-          ? { tier: neo.tier, label: SPECIAL_TIERS[neo.tier].label, sum: null }
-          : (rarityOverrideOf(c) || rarityFromRatings(ratings));
+      // 頂點級別優先序：後台校正 tier > 卡片旗標 > 神作名單
+      const ovTier = (ov && ov.tier && SPECIAL_TIERS[ov.tier]) ? ov.tier : null;
+      const apex = ovTier || specialTierOf(c) || (neo && SPECIAL_TIERS[neo.tier] ? neo.tier : null);
+      const rarity = apex
+        ? { tier: apex, label: SPECIAL_TIERS[apex].label, sum: null }
+        : (rarityOverrideOf(c) || rarityFromRatings(ratings));
       // 舊卡沒存封面：即時抓 Spotify 補上，並寫回 Firestore（之後就永久有）
       let coverUrl = c.coverUrl || '';
       if (!coverUrl && c.artist) {

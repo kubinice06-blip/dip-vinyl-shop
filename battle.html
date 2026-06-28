@@ -665,9 +665,12 @@ async function getOverride(id){
 }
 async function fetchRating(artist,album){
   try {
+    const ov = await getOverride(cardIdOf(artist,album));
+    // 後台校正設了頂點級別 → 直接當王牌（單軸 7 星），不需數值評分
+    const ovTier = ov && ov.tier && ACE_STATS[ov.tier] ? ov.tier : null;
+    if(ovTier) return { tier:ovTier, ...ACE_STATS[ovTier] };
     const res=await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
     let r = res.ok ? await res.json() : null;
-    const ov = await getOverride(cardIdOf(artist,album));
     if(ov){ r=r||{}; if(ov.classic)r.classic=ov.classic; if(ov.obscurity)r.obscurity=ov.obscurity; if(ov.accessibility)r.accessibility=ov.accessibility; }
     if(!r || r.classic==null || r.obscurity==null || r.accessibility==null) return null;
     return { classic:clampStat(r.classic), obscurity:clampStat(r.obscurity), accessibility:clampStat(r.accessibility) };
@@ -720,9 +723,10 @@ async function buildPlayerDeck(){
   let deck=[];
   const cards = myColl || [];
   const rated = await Promise.all(cards.map(async c=>{
-    const ace = c.hall?'hall':c.pearl?'pearl':c.heresy?'heresy':neoAceOf(c.artist,c.album);
-    if(ace) return { c, ace, stats:ACE_STATS[ace] };
+    const flagAce = c.hall?'hall':c.pearl?'pearl':c.heresy?'heresy':neoAceOf(c.artist,c.album);
+    if(flagAce) return { c, ace:flagAce, stats:ACE_STATS[flagAce] };
     const r = await fetchRating(c.artist, c.album);
+    if(r && r.tier && ACE_STATS[r.tier]) return { c, ace:r.tier, stats:ACE_STATS[r.tier] }; // 後台設的頂點
     return r ? { c, ace:null, stats:r } : null;
   }));
   for(const it of rated){

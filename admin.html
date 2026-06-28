@@ -215,6 +215,14 @@
     .ov-modal-cover { width: 72px; height: 72px; object-fit: cover; background: #f0f0f0; flex-shrink: 0; border: 1px solid var(--line); }
     .ov-modal-album { font-size: 14px; font-weight: 700; line-height: 1.4; }
     .ov-modal-artist { font-size: 11px; color: var(--gray); margin-top: 2px; }
+    /* 頂點級別按鈕 */
+    .ov-tier-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .ov-tier-btn { background: #fff; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 9px 8px; cursor: pointer; color: var(--black); line-height: 1.4; text-align: center; transition: all 0.12s; }
+    .ov-tier-btn small { display: block; font-weight: 400; font-size: 9px; color: var(--gray); margin-top: 2px; }
+    .ov-tier-btn:hover { border-color: var(--black); }
+    .ov-tier-btn.active { background: var(--black); border-color: var(--black); color: #fff; }
+    .ov-tier-btn.active small { color: #ccc; }
+    .ov-num-apex { background: #f0f0f0 !important; color: var(--gray) !important; }
   </style>
 </head>
 <body>
@@ -793,7 +801,14 @@
       <div id="ovEditor">
         <div class="section-label" style="margin-bottom:8px;">介紹</div>
         <textarea id="ovDesc" rows="6" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:13px;line-height:1.8;outline:none;background:#fff;resize:vertical;"></textarea>
-        <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI）</div>
+        <div class="section-label" style="margin:14px 0 8px;">頂點級別（單軸 7 星王牌，按下即設定；可不選）</div>
+        <div class="ov-tier-row" id="ovTierRow">
+          <button type="button" class="ov-tier-btn" data-tier="hall">🩶 殿堂級<small>經典度衝 7</small></button>
+          <button type="button" class="ov-tier-btn" data-tier="pearl">🛢️ 流亡級<small>冷門度衝 7</small></button>
+          <button type="button" class="ov-tier-btn" data-tier="heresy">🩸 異端級<small>入耳難易度衝 7</small></button>
+          <button type="button" class="ov-tier-btn active" data-tier="">一般卡<small>不設頂點</small></button>
+        </div>
+        <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI；設了頂點該軸自動 7）</div>
         <div class="field-row" style="margin-bottom:12px;">
           <div class="field"><label>冷門度</label><input id="ovObscurity" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
           <div class="field"><label>經典度</label><input id="ovClassic" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
@@ -823,7 +838,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, deleteField } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   // Tab 切換（consolidated handler）
@@ -2723,6 +2738,26 @@ ${discogs ? '- Discogs：' + discogs : ''}
   ovModal.addEventListener('click', e => { if (e.target === ovModal) closeOvModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && ovModal.classList.contains('open')) closeOvModal(); });
 
+  // 頂點級別：殿堂=經典度7、流亡=冷門度7、異端=入耳難易度7
+  const TIER_AXIS = { hall: 'ovClassic', pearl: 'ovObscurity', heresy: 'ovAccessibility' };
+  let ovTierSel = '';
+  function setOvTier(tier) {
+    ovTierSel = (tier && TIER_AXIS[tier]) ? tier : '';
+    document.querySelectorAll('#ovTierRow .ov-tier-btn').forEach(b => b.classList.toggle('active', (b.dataset.tier || '') === ovTierSel));
+    // 被選為頂點的那一軸：鎖定顯示「頂點 7」，其餘恢復可填
+    Object.entries(TIER_AXIS).forEach(([t, id]) => {
+      const inp = document.getElementById(id);
+      const isApex = (t === ovTierSel);
+      inp.disabled = isApex;
+      inp.classList.toggle('ov-num-apex', isApex);
+      if (isApex) { inp.value = ''; inp.placeholder = '頂點 7'; }
+    });
+  }
+  document.getElementById('ovTierRow').addEventListener('click', e => {
+    const b = e.target.closest('.ov-tier-btn');
+    if (b) setOvTier(b.dataset.tier || '');
+  });
+
   let ovLoadToken = 0; // 防止快速連點時，前一張的非同步結果蓋掉後一張
 
   async function loadOverrideEditor(artist, album, coverUrl) {
@@ -2748,6 +2783,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('ovObscurity').placeholder = '';
     document.getElementById('ovClassic').placeholder = '';
     document.getElementById('ovAccessibility').placeholder = '';
+    setOvTier('');
     openOvModal();
     msg.textContent = '載入中…';
     // 既有校正 + 抽卡當下介紹(card_catalog) + AI 版本
@@ -2768,6 +2804,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('ovObscurity').placeholder = 'AI ' + (aiRateR.obscurity || '?');
     document.getElementById('ovClassic').placeholder = 'AI ' + (aiRateR.classic || '?');
     document.getElementById('ovAccessibility').placeholder = 'AI ' + (aiRateR.accessibility || '?');
+    setOvTier(ov?.tier || '');
     msg.textContent = ov ? '已載入（此張已有校正）' : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
   }
 
@@ -2787,9 +2824,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (o) data.obscurity = o;
     if (c) data.classic = c;
     if (ac) data.accessibility = ac;
+    // 頂點級別：設了就寫旗標（前台卡冊／對戰會把該軸當 7 星王牌），取消則刪欄位
+    data.tier = ovTierSel ? ovTierSel : deleteField();
     try {
       await setDoc(doc(db, 'album_overrides', id), data, { merge: true });
-      msg.textContent = '✓ 已儲存校正，前台卡冊會優先顯示';
+      msg.textContent = ovTierSel ? '✓ 已存：設為頂點卡，前台／對戰即生效' : '✓ 已儲存校正，前台卡冊會優先顯示';
       loadCatalog();
     } catch (e) { msg.textContent = '儲存失敗：' + (e.message || e); }
   });
@@ -2820,6 +2859,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
         getDocs(collection(db, 'album_overrides')).catch(() => ({ docs: [] }))
       ]);
       const overridden = new Set(ovSnap.docs.map(d => d.id));
+      const tierOf = {}; ovSnap.docs.forEach(d => { const t = d.data().tier; if (t) tierOf[d.id] = t; });
+      const TIER_LABEL = { hall: '🩶 殿堂', pearl: '🛢️ 流亡', heresy: '🩸 異端' };
       const items = catSnap.docs.map(d => d.data()).sort((x, y) => (y.updatedAt || 0) - (x.updatedAt || 0)).slice(0, 200);
       if (!items.length) { list.textContent = '還沒有任何卡被抽過收藏。'; return; }
       list.className = 'cardgrid';
@@ -2828,7 +2869,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
         const cover = it.coverUrl
           ? `<img src="${esc(it.coverUrl)}" alt="" loading="lazy">`
           : `<div class="cardgrid-nocover">♪</div>`;
-        const badge = overridden.has(id) ? `<span class="cardgrid-badge">已校正</span>` : '';
+        const badge = tierOf[id]
+          ? `<span class="cardgrid-badge" style="background:#111;">${TIER_LABEL[tierOf[id]] || '頂點'}</span>`
+          : (overridden.has(id) ? `<span class="cardgrid-badge">已校正</span>` : '');
         return `<div class="cardgrid-cell" data-a="${esc(it.artist)}" data-b="${esc(it.album)}" data-cover="${esc(it.coverUrl || '')}">
           <div class="cardgrid-thumb">${cover}${badge}</div>
           <div class="cardgrid-album">${esc(it.album) || '—'}</div>
