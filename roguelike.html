@@ -208,12 +208,17 @@ const ACES = [
 ];
 
 // ---------- 流派（給 run 級被動 + 三圍基礎；暫名）— 可被後台設定覆寫 ----------
+// affinity＝該派系的「親和屬性」：打那個屬性的牌會觸發專屬 buff（affBuff）。
+//   affBuff: { hp:n 額外回聲望 / qi:n 額外氣勢 / dmg:n 額外傷害 / foeQi:n 額外削對手氣勢 }
 let CLASSES = {
   guard: { name:'守舊派', tag:'〔守〕經典 · 高血線耐久', stats:{atk:1,def:3,qir:1}, maxHpBonus:5, qiPerTurn:0,
+           affinity:'classic', affBuff:{hp:2}, affDesc:'打【經典】牌：額外回 +2 聲望(HP)',
            desc:'起始聲望(HP)高、防禦厚，靠扛住對手慢慢磨。' },
   digger:{ name:'挖掘派', tag:'〔挖〕冷門 · 氣勢爆發', stats:{atk:1,def:1,qir:2}, maxHpBonus:0, qiPerTurn:1,
+           affinity:'obscurity', affBuff:{qi:2}, affDesc:'打【冷門】牌：額外 +2 氣勢',
            desc:'每回合氣勢自動 +1、充能更快，更常放品味輾壓。' },
   heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:3,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
+           affinity:'accessibility', affBuff:{dmg:2,foeQi:1}, affDesc:'打【入耳】牌：額外 +2 傷害、削對手 1 氣勢',
            desc:'攻擊高、傷害狠，打快攻速戰速決。' },
 };
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
@@ -319,6 +324,7 @@ function renderClassSelect(){
     return `<div class="cls">
       <h3>${c.name} <span class="tag">${c.tag}</span></h3>
       <div class="muted">${c.desc}</div>
+      <div class="muted" style="color:var(--gold);margin:4px 0 2px">★ 派系專長：${c.affDesc||''}</div>
       <div class="statline">
         <span class="s-atk">攻 <b>${s.atk}</b></span>
         <span class="s-def">防 <b>${s.def}</b></span>
@@ -337,6 +343,7 @@ function chooseClass(key){
     classKey:key,
     stats:{ atk:c.stats.atk+META.talents.atk, def:c.stats.def+META.talents.def, qir:c.stats.qir+META.talents.qir },
     baseMaxHp:CFG.startHp+c.maxHpBonus, qiPerTurn:c.qiPerTurn,
+    affinity:c.affinity, affBuff:c.affBuff||{},
     // 局內特殊能力（吸血鬼倖存者式，整趟生效、run 結束洗掉）
     mods:{ maxHpAdd:0, extraDraw:0, counterQi:0, regen:0, ultDmg:0 },
     runLevel:1, runXp:0, lvlQueue:0,
@@ -621,6 +628,15 @@ async function play(uid, pAttr){
     if(dmgToE) G.e.hp-=dmgToE;
     if(dmgToP) G.p.hp-=dmgToP;
     applyAttrEffect(G.p,pAttr); applyAttrEffect(G.e,eAttr);
+    // 派系專長：打親和屬性的牌 → 觸發專屬 buff
+    if(pAttr===RUN.affinity){
+      const ab=RUN.affBuff||{}; const notes=[];
+      if(ab.hp){ G.p.hp=Math.min(G.p.maxHp,G.p.hp+ab.hp); notes.push(`聲望+${ab.hp}`); }
+      if(ab.qi){ G.p.qi=clampQi(G.p.qi+ab.qi); notes.push(`氣勢+${ab.qi}`); }
+      if(ab.foeQi){ G.e.qi=clampQi(G.e.qi-ab.foeQi); notes.push(`削對手氣勢${ab.foeQi}`); }
+      if(ab.dmg){ const d=applyDef(applyAtk(ab.dmg,st.atk),est.def); G.e.hp-=d; notes.push(`額外傷害−${d}`); }
+      if(notes.length) pushLog(`★ ${CLASSES[RUN.classKey].name}專長（${ATTR_ZH[pAttr]}）：${notes.join('、')}`,'good');
+    }
     G.p.last=pAttr; G.e.last=eAttr;
     // 訊息
     if(r.kind==='counter'){
