@@ -223,6 +223,17 @@
     .ov-tier-btn.active { background: var(--black); border-color: var(--black); color: #fff; }
     .ov-tier-btn.active small { color: #ccc; }
     .ov-num-apex { background: #f0f0f0 !important; color: var(--gray) !important; }
+    /* 遊戲後台 */
+    .gbtn { background:#fff; border:1px solid var(--line); font-family:var(--mono); font-size:11px; font-weight:700; padding:8px 14px; cursor:pointer; color:var(--black); transition:all .12s; }
+    .gbtn:hover { border-color:var(--black); }
+    .gbtn-primary { background:var(--black); color:#fff; border-color:var(--black); }
+    .gfield { display:flex; flex-direction:column; gap:3px; }
+    .gfield label { font-size:10px; color:var(--gray); font-family:var(--mono); }
+    .gfield input { border:1px solid var(--line); padding:7px 8px; font-family:var(--mono); font-size:12px; width:100%; }
+    .buff-row { display:grid; grid-template-columns:1.4fr 1.8fr 0.9fr 1.1fr 0.7fr auto; gap:6px; align-items:center; margin-bottom:6px; }
+    .buff-row input, .buff-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
+    .buff-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
+    .buff-head { display:grid; grid-template-columns:1.4fr 1.8fr 0.9fr 1.1fr 0.7fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
   </style>
 </head>
 <body>
@@ -250,6 +261,8 @@
   <button class="tab-btn" data-tab="cards">卡牌校正</button>
   <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
+  <button class="tab-btn" data-tab="game-battle">🎴 對戰系統</button>
+  <button class="tab-btn" data-tab="game-roguelike">🎮 Roguelike</button>
 </div>
 
 <div class="site-layout">
@@ -833,6 +846,54 @@
     </div>
   </div>
 
+  <!-- 對戰系統設定 -->
+  <div class="right-panel" id="panel-game-battle">
+    <div style="max-width:880px;">
+      <div class="section">
+        <div class="section-label">對戰系統設定（gameConfig/battle）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">調整對戰核心數值；儲存後 <b>battle.html</b> 載入時會讀這份覆寫內建值。空白或非數字欄位會被忽略。</p>
+        <div id="battleForm" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;"></div>
+        <div style="margin-top:18px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn gbtn-primary" id="battleSave">儲存到 Firestore</button>
+          <button class="gbtn" id="battleReload">重新載入</button>
+          <button class="gbtn" id="battleReset">重置為預設</button>
+          <span id="battleMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Roguelike 設定 -->
+  <div class="right-panel" id="panel-game-roguelike">
+    <div style="max-width:880px;">
+      <div class="section">
+        <div class="section-label">Roguelike 數值（gameConfig/roguelike）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">儲存後 <b>roguelike.html</b> 載入時會讀這份覆寫內建值（讀不到則用內建預設）。</p>
+        <div id="rogueForm" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;"></div>
+      </div>
+      <div class="section">
+        <div class="section-label">升級 Buff 管理（局內三選一強化）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
+          每個 buff＝一筆資料。<b>效果</b>由「對象＋鍵＋數值」決定：<br>
+          ・<b>三圍</b>(stat)：atk 攻 / def 防 / qir 氣勢率<br>
+          ・<b>能力</b>(mod)：maxHpAdd 最大HP / extraDraw 起手抽 / counterQi 相剋充氣勢 / regen 每回合回血 / ultDmg 輾壓傷害<br>
+          ・<b>牌組</b>(deck)：add 撿盤 / cullWeakest 丟最弱盤<br>
+          （以上是程式已支援的效果鍵；要全新機制才需改程式碼。）
+        </p>
+        <div id="buffList"></div>
+        <button class="gbtn" id="buffAdd" style="margin-top:10px;">＋ 新增 Buff</button>
+      </div>
+      <div class="section">
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn gbtn-primary" id="rogueSave">儲存到 Firestore</button>
+          <button class="gbtn" id="rogueReload">重新載入</button>
+          <button class="gbtn" id="rogueReset">重置為預設</button>
+          <span id="rogueMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div><!-- end right-area -->
 </div><!-- end site-layout -->
 
@@ -857,6 +918,8 @@
     if (tab === 'banner') loadBanner();
     if (tab === 'members') loadMembers();
     if (tab === 'usage') loadUsage();
+    if (tab === 'game-battle') loadBattleCfg();
+    if (tab === 'game-roguelike') loadRogueCfg();
   });
 
   const app = initializeApp({
@@ -2965,6 +3028,143 @@ ${discogs ? '- Discogs：' + discogs : ''}
       });
     } catch (e) { list.textContent = '載入失敗：' + (e.message || e); }
   }
+
+  // ═══════════════════ 遊戲後台：對戰系統 + Roguelike ═══════════════════
+  // 設定存 Firestore：gameConfig/battle、gameConfig/roguelike。
+  // 各遊戲頁載入時讀取覆寫內建值；讀不到就用內建預設（離線仍可玩）。
+
+  // ── 對戰系統 ──
+  const DEF_BATTLE = {
+    startHp:30, qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
+    qiChain2:1, qiChain3:2, qiChainCap:4, valueDmg:1, ultimate:6
+  };
+  const BATTLE_LABELS = {
+    startHp:'起始HP', qiCounter:'相剋勝充氣勢', qiCounterLoser:'被剋安慰充氣勢',
+    qiValue:'數值勝充氣勢', qiValueLoser:'數值敗充氣勢', qiTie:'平手充氣勢',
+    qiChain2:'2連充氣勢', qiChain3:'3連充氣勢', qiChainCap:'連段上限(環)',
+    valueDmg:'純比星傷害倍率', ultimate:'品味輾壓傷害'
+  };
+  let battleCfg = { ...DEF_BATTLE };
+  async function loadBattleCfg(){
+    const msg=document.getElementById('battleMsg'); if(msg) msg.textContent='載入中…';
+    try{ const s=await getDoc(doc(db,'gameConfig','battle')); battleCfg = s.exists()? {...DEF_BATTLE, ...s.data()} : {...DEF_BATTLE};
+      if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
+    catch(e){ battleCfg={...DEF_BATTLE}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
+    renderBattleForm();
+  }
+  function renderBattleForm(){
+    const wrap=document.getElementById('battleForm'); if(!wrap) return;
+    wrap.innerHTML = Object.keys(DEF_BATTLE).map(k=>`
+      <div class="gfield"><label>${BATTLE_LABELS[k]||k} · ${k}</label>
+        <input type="number" step="any" id="bf_${k}" value="${battleCfg[k]}"></div>`).join('');
+  }
+  function collectBattle(){
+    const o={}; Object.keys(DEF_BATTLE).forEach(k=>{ const v=parseFloat(document.getElementById('bf_'+k).value); if(!isNaN(v)) o[k]=v; }); return o;
+  }
+  document.getElementById('battleSave')?.addEventListener('click', async ()=>{
+    const msg=document.getElementById('battleMsg'); msg.textContent='儲存中…';
+    try{ await setDoc(doc(db,'gameConfig','battle'), collectBattle()); msg.textContent='✓ 已儲存（battle.html 下次載入生效）'; }
+    catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
+  });
+  document.getElementById('battleReload')?.addEventListener('click', loadBattleCfg);
+  document.getElementById('battleReset')?.addEventListener('click', ()=>{ battleCfg={...DEF_BATTLE}; renderBattleForm(); document.getElementById('battleMsg').textContent='已填回預設（尚未儲存）'; });
+
+  // ── Roguelike ──
+  const DEF_ROGUE = {
+    startHp:12,
+    runXp:{ base:6, perDepth:2, needBase:8, needPerLevel:4 },
+    metaXp:{ perDepth:15, perStreak:8, recordBonus:30, perLevel:100 },
+    upgrades:[
+      {id:'atk',label:'⚔ 攻擊 +1',desc:'打中時多扣 1 血',target:'stat',key:'atk',amount:1},
+      {id:'def',label:'🛡 防禦 +1',desc:'受擊少扣 1 血',target:'stat',key:'def',amount:1},
+      {id:'qir',label:'🔥 氣勢率 +1',desc:'充氣勢更快、更常輾壓',target:'stat',key:'qir',amount:1},
+      {id:'hp',label:'❤ 最大HP +3',desc:'上限 +3 並回 3 血',target:'mod',key:'maxHpAdd',amount:3},
+      {id:'draw',label:'🎴 起手多抽 1',desc:'每場起手手牌 +1',target:'mod',key:'extraDraw',amount:1},
+      {id:'cqi',label:'💢 相剋多充氣勢',desc:'相剋命中額外 +1 氣勢',target:'mod',key:'counterQi',amount:1},
+      {id:'regen',label:'💗 每回合回血',desc:'每回合自動回 1 血',target:'mod',key:'regen',amount:1},
+      {id:'ult',label:'⚡ 品味輾壓 +2',desc:'輾壓傷害 +2',target:'mod',key:'ultDmg',amount:2},
+      {id:'loot',label:'➕ 撿一張盤',desc:'從收藏抽 1 張加入牌組',target:'deck',key:'add',amount:1},
+      {id:'cull',label:'🗑 丟最弱盤',desc:'移除牌組總星最低的一張',target:'deck',key:'cullWeakest',amount:1},
+    ]
+  };
+  const ROGUE_NUM = {
+    'startHp':'起始HP(快打建議低)',
+    'runXp.base':'局內·勝利基礎XP','runXp.perDepth':'局內·每深度+XP','runXp.needBase':'局內·升級門檻','runXp.needPerLevel':'局內·門檻每級+',
+    'metaXp.perDepth':'樂歷·每深度XP','metaXp.perStreak':'樂歷·每連勝XP','metaXp.recordBonus':'樂歷·破紀錄獎勵','metaXp.perLevel':'樂歷·每級所需XP',
+  };
+  const KEYS_BY_TARGET = { stat:['atk','def','qir'], mod:['maxHpAdd','extraDraw','counterQi','regen','ultDmg'], deck:['add','cullWeakest'] };
+  let rogueCfg = JSON.parse(JSON.stringify(DEF_ROGUE));
+  const getPath=(o,p)=>p.split('.').reduce((a,k)=>a&&a[k],o);
+  const setPath=(o,p,v)=>{ const ks=p.split('.'); let a=o; for(let i=0;i<ks.length-1;i++){ a[ks[i]]=a[ks[i]]||{}; a=a[ks[i]]; } a[ks[ks.length-1]]=v; };
+  async function loadRogueCfg(){
+    const msg=document.getElementById('rogueMsg'); if(msg) msg.textContent='載入中…';
+    try{ const s=await getDoc(doc(db,'gameConfig','roguelike'));
+      rogueCfg = s.exists()? deepMergeRogue(s.data()) : JSON.parse(JSON.stringify(DEF_ROGUE));
+      if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
+    catch(e){ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
+    renderRogueForm(); renderBuffs();
+  }
+  function deepMergeRogue(d){
+    const o=JSON.parse(JSON.stringify(DEF_ROGUE));
+    if(typeof d.startHp==='number') o.startHp=d.startHp;
+    if(d.runXp) Object.assign(o.runXp,d.runXp);
+    if(d.metaXp) Object.assign(o.metaXp,d.metaXp);
+    if(Array.isArray(d.upgrades)&&d.upgrades.length) o.upgrades=d.upgrades;
+    return o;
+  }
+  function renderRogueForm(){
+    const wrap=document.getElementById('rogueForm'); if(!wrap) return;
+    wrap.innerHTML = Object.entries(ROGUE_NUM).map(([p,lab])=>`
+      <div class="gfield"><label>${lab} · ${p}</label>
+        <input type="number" step="any" id="rf_${p.replace('.','_')}" value="${getPath(rogueCfg,p)}"></div>`).join('');
+  }
+  function renderBuffs(){
+    const wrap=document.getElementById('buffList'); if(!wrap) return;
+    const head=`<div class="buff-head"><span>名稱 label</span><span>說明 desc</span><span>對象 target</span><span>效果鍵 key</span><span>數值</span><span></span></div>`;
+    wrap.innerHTML = head + rogueCfg.upgrades.map((u,i)=>buffRow(u,i)).join('');
+    wrap.querySelectorAll('select.b-target').forEach(sel=>sel.addEventListener('change', e=>{
+      const i=+e.target.dataset.i; rogueCfg.upgrades[i].target=e.target.value;
+      rogueCfg.upgrades[i].key = KEYS_BY_TARGET[e.target.value][0]; renderBuffs();
+    }));
+  }
+  function buffRow(u,i){
+    const tgt=['stat','mod','deck'].map(t=>`<option value="${t}" ${u.target===t?'selected':''}>${t}</option>`).join('');
+    const keys=(KEYS_BY_TARGET[u.target]||[]).map(k=>`<option value="${k}" ${u.key===k?'selected':''}>${k}</option>`).join('');
+    return `<div class="buff-row">
+      <input class="b-f" data-i="${i}" data-k="label" value="${(u.label||'').replace(/"/g,'&quot;')}">
+      <input class="b-f" data-i="${i}" data-k="desc" value="${(u.desc||'').replace(/"/g,'&quot;')}">
+      <select class="b-target" data-i="${i}">${tgt}</select>
+      <select class="b-f" data-i="${i}" data-k="key">${keys}</select>
+      <input class="b-f" data-i="${i}" data-k="amount" type="number" step="any" value="${u.amount}">
+      <button class="del" data-i="${i}">✕</button>
+    </div>`;
+  }
+  // 委派：編輯欄位 / 刪除 / 新增
+  document.getElementById('buffList')?.addEventListener('input', e=>{
+    const el=e.target.closest('.b-f'); if(!el) return;
+    const i=+el.dataset.i, k=el.dataset.k;
+    rogueCfg.upgrades[i][k] = (k==='amount') ? (parseFloat(el.value)||0) : el.value;
+  });
+  document.getElementById('buffList')?.addEventListener('click', e=>{
+    const del=e.target.closest('.del'); if(!del) return;
+    rogueCfg.upgrades.splice(+del.dataset.i,1); renderBuffs();
+  });
+  document.getElementById('buffAdd')?.addEventListener('click', ()=>{
+    rogueCfg.upgrades.push({id:'buff'+Date.now(),label:'新 Buff',desc:'說明',target:'stat',key:'atk',amount:1}); renderBuffs();
+  });
+  function collectRogue(){
+    const o=JSON.parse(JSON.stringify(rogueCfg));
+    Object.keys(ROGUE_NUM).forEach(p=>{ const el=document.getElementById('rf_'+p.replace('.','_')); const v=parseFloat(el.value); if(!isNaN(v)) setPath(o,p,v); });
+    return o;
+  }
+  document.getElementById('rogueSave')?.addEventListener('click', async ()=>{
+    const msg=document.getElementById('rogueMsg'); msg.textContent='儲存中…';
+    if(!rogueCfg.upgrades.length){ msg.textContent='至少要留一個 Buff'; return; }
+    try{ await setDoc(doc(db,'gameConfig','roguelike'), collectRogue()); msg.textContent='✓ 已儲存（roguelike.html 下次載入生效）'; }
+    catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
+  });
+  document.getElementById('rogueReload')?.addEventListener('click', loadRogueCfg);
+  document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
 </script>
 </body>
 </html>
