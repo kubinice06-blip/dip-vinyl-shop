@@ -108,6 +108,76 @@
   .sp{height:8px;}
   .pill{display:inline-block;font-size:9px;border:1px solid var(--line);border-radius:0;padding:2px 8px;color:var(--gray);letter-spacing:0.06em;}
   .hidden{display:none;}
+
+  /* ===== 牌桌（與 battle.html 一模一樣：封面方塊、tilePop、相生相剋圈） ===== */
+  @keyframes shimmer{0%{background-position:200% 0;}100%{background-position:0 0;}}
+  @keyframes pop{0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.08);}100%{transform:scale(1);opacity:1;}}
+  @keyframes burst{0%{transform:translate(-50%,-50%) scale(.2);opacity:0;}55%{transform:translate(-50%,-50%) scale(1.14);opacity:1;}100%{transform:translate(-50%,-50%) scale(1);opacity:1;}}
+  :root{ --silver-shine:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
+    --oil-shine:linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
+    --crimson-shine:linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%); }
+  .side{padding:6px 0;}
+  .nameplate{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+  .nameplate .who{font-weight:700;letter-spacing:0.08em;font-size:12px;}
+  .nameplate .meta{font-size:9px;color:var(--gray);letter-spacing:0.04em;}
+  .hpbar{height:14px;background:var(--hp-bg);position:relative;overflow:hidden;}
+  .hpbar > i{position:absolute;inset:0 auto 0 0;background:var(--hp);transition:width .5s cubic-bezier(.4,0,.2,1);}
+  .hpbar > span{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:var(--gray);}
+  .hpbar.e > i{background:var(--dmg);}
+  .qiwrap{display:flex;align-items:center;gap:6px;margin-top:5px;}
+  .qiwrap .qilab{font-size:8px;letter-spacing:0.14em;color:var(--qi);font-weight:700;white-space:nowrap;}
+  .qibar2{display:flex;gap:3px;flex:1;}
+  .qibar2 i{flex:1;height:7px;background:var(--hp-bg);border:1px solid var(--line);}
+  .qibar2 i.on{background:var(--qi);border-color:var(--qi);}
+  .qibar2.full{animation:qiglow .9s infinite;}
+  @keyframes qiglow{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,0);}50%{box-shadow:0 0 8px 1px rgba(184,134,11,.7);}}
+  .etell{display:flex;align-items:center;justify-content:center;gap:8px;min-height:30px;margin:8px auto 0;padding:6px 10px;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:center;}
+  .etell:empty{border-color:transparent;}
+  .etell b{color:var(--black);font-weight:700;}
+  .arena{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:10px 0;}
+  .slots{position:relative;display:flex;gap:16px;align-items:center;justify-content:center;width:100%;}
+  .slot{flex:1;max-width:150px;aspect-ratio:1/1;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;padding:0;position:relative;overflow:hidden;border-radius:0;min-height:0;color:var(--gray);font-size:10px;}
+  .slot.filled{border-style:solid;border-color:var(--black);}
+  .slot.win{border-color:var(--win);} .slot.lose{border-color:var(--lose);}
+  .slot.win::after,.slot.lose::after{position:absolute;top:5px;right:5px;z-index:3;font-size:11px;font-weight:700;padding:2px 6px;color:#fff;}
+  .slot.win::after{content:'勝';background:var(--black);} .slot.lose::after{content:'負';background:var(--dmg);}
+  .vs{align-self:center;font-weight:700;font-size:13px;color:var(--gray);letter-spacing:0.1em;}
+  .pcard{width:100%;height:100%;position:relative;animation:pop .3s;}
+  .pcover{width:100%;height:100%;background-size:cover;background-position:center;}
+  .pcover.ht-noimg,.ht-cover.ht-noimg{display:flex;align-items:center;justify-content:center;padding:8px;text-align:center;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px);}
+  .pcover.ht-noimg span,.ht-cover.ht-noimg span{font-size:11px;line-height:1.3;font-weight:700;color:#444;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+  .ht-ace{position:absolute;top:0;left:0;font-size:9px;font-weight:700;padding:2px 5px;color:#fff;z-index:2;}
+  .ht-ace.hall{background:#9aa0a8;} .ht-ace.pearl{background:#5b4a8a;} .ht-ace.heresy{background:#a01020;}
+  .callout{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:25;width:max-content;max-width:90%;padding:9px 14px;background:rgba(255,255,255,.94);border:1px solid var(--black);box-shadow:0 6px 26px rgba(0,0,0,.3);text-align:center;pointer-events:none;font-weight:700;letter-spacing:0.04em;font-size:13px;}
+  .callout:empty{display:none;} .callout.burst{animation:burst .42s cubic-bezier(.18,.9,.32,1.25);}
+  .callout .dmg{color:var(--dmg);} .callout .good{color:var(--win);}
+  .player-zone{border-top:1px solid var(--black);padding:10px 0 4px;position:relative;}
+  .cheat{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px 0;}
+  .relring{width:64px;flex:none;}
+  .relring svg{width:100%;height:auto;overflow:visible;display:block;}
+  .relring .node text{font-size:19px;font-weight:700;fill:var(--black);text-anchor:middle;}
+  .relring .cap{display:flex;justify-content:center;gap:10px;font-size:8px;margin-top:2px;white-space:nowrap;}
+  .relring .cap .k{color:var(--dmg);} .relring .cap .s{color:var(--qi);}
+  .cheat .legend{font-size:8px;color:var(--gray);line-height:1.6;letter-spacing:0.04em;}
+  .cheat .legend b{color:var(--dmg);} .cheat .legend em{color:var(--qi);font-style:normal;font-weight:700;}
+  .hint{text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;margin:6px 0 8px;min-height:12px;}
+  .htrow{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;align-items:center;}
+  .htrow::-webkit-scrollbar{height:0;}
+  .handtile{flex:none;width:100px;height:100px;border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .12s,border-color .12s;}
+  .handtile:hover{border-color:var(--black);transform:translateY(-3px);}
+  .handtile.sel{border-color:var(--black);border-width:2px;transform:translateY(-6px);box-shadow:0 4px 14px rgba(0,0,0,.18);}
+  .ht-cover{width:100%;height:100%;background-size:cover;background-position:center;}
+  .tilepop{position:fixed;left:0;top:0;width:154px;display:none;background:#fff;border:1px solid var(--black);padding:8px 9px;box-shadow:0 6px 18px rgba(0,0,0,.16);z-index:40;}
+  .tilepop.show{display:block;animation:pop .18s;}
+  .tilepop::after,.tilepop::before{content:'';position:absolute;top:100%;left:var(--arrow-x,77px);transform:translateX(-50%);border:7px solid transparent;}
+  .tilepop::after{border-top-color:var(--black);} .tilepop::before{border-top-color:#fff;top:calc(100% - 1.4px);z-index:1;}
+  .tp-alb{font-weight:700;font-size:12px;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+  .tp-art{font-size:9px;color:var(--gray);margin:2px 0 7px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+  .tp-acts{display:flex;gap:4px;flex-wrap:wrap;}
+  .pp-act{flex:1;font-family:var(--mono);font-size:12px;font-weight:700;border:1px solid var(--black);background:#fff;padding:8px 0;cursor:pointer;line-height:1;color:var(--black);text-align:center;}
+  .pp-act b{color:var(--gold);margin-right:1px;font-size:11px;}
+  .pp-act:hover{background:var(--black);color:#fff;} .pp-act:hover b{color:#fff;}
+  .pp-ult{flex:1 0 100%;margin-bottom:4px;color:#fff;border-color:#7a1020;background:var(--crimson-shine);background-size:200% 100%;animation:shimmer 7.8s linear infinite;}
 </style>
 </head>
 <body>
@@ -116,7 +186,7 @@
 <!-- 讀取後台設定（gameConfig/roguelike）。讀不到就用內建預設，離線仍可玩。 -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   window.__rogueCfg = (async () => {
     try {
       const app = initializeApp({
@@ -128,6 +198,18 @@
         appId:"1:570133498387:web:8835b8d2373797e91d0de6"
       });
       const db = getFirestore(app);
+      // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
+      const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
+      window.__getCover = async (artist, album) => {
+        const id = (artist+'|'+album).toLowerCase().trim();
+        try { const s=await getDoc(doc(db,'card_catalog',id)); const cu=s.exists()&&s.data().coverUrl; if(cu) return cu; } catch(e){}
+        try {
+          const res=await fetch(WORKER_URL+'/spotify-search?artist='+encodeURIComponent(artist)+'&album='+encodeURIComponent(album));
+          const url=res.ok?((await res.json()).imageUrl||''):'';
+          if(url){ try{ setDoc(doc(db,'card_catalog',id),{cardId:id,artist,album,coverUrl:url,updatedAt:Date.now()},{merge:true}).catch(()=>{}); }catch(e){} }
+          return url;
+        } catch(e){ return ''; }
+      };
       const s = await getDoc(doc(db,'gameConfig','roguelike'));
       return s.exists() ? s.data() : null;
     } catch(e){ return null; }
@@ -498,62 +580,113 @@ function startTurn(){
 // =========================================================================
 //  畫面 3：戰鬥
 // =========================================================================
-function fighterHTML(s, label, emoji){
+// ----- 封面（與 battle.html 同源：worker /spotify-search ＋ card_catalog 快取）-----
+const coverCache={};
+async function ensureCover(card){
+  if(!card || card.coverUrl) return card && card.coverUrl;
+  const id=keyOf(card);
+  if(id in coverCache){ card.coverUrl=coverCache[id]; return card.coverUrl; }
+  let url=''; try{ if(window.__getCover) url = await window.__getCover(card.artist, card.album); }catch(e){}
+  coverCache[id]=url; card.coverUrl=url; return url;
+}
+function lazyCover(slotId, card){
+  if(!card || card.coverUrl) return;
+  const s=document.getElementById(slotId); if(!s) return; s.dataset.cuid=card.uid;
+  ensureCover(card).then(url=>{ if(url && s.dataset.cuid==card.uid && s.classList.contains('filled')) s.innerHTML=boardCardHTML(card); });
+}
+// 檯面卡＝整張方形封面（與 battle.html .pcard/.pcover 一致）
+function boardCardHTML(card){
+  const aceTag=card.ace?`<span class="ht-ace ${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
+  const cover=card.coverUrl
+    ? `<div class="pcover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
+    : `<div class="pcover ht-noimg"><span>${card.album}</span></div>`;
+  return `<div class="pcard">${cover}${aceTag}</div>`;
+}
+const REL_RING_SVG = `<div class="relring" aria-hidden="true"><svg viewBox="0 0 126 120" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrK" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--dmg)"/></marker>
+  <marker id="arrS" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--qi)"/></marker></defs>
+  <g fill="none" stroke="var(--dmg)" stroke-width="1.7" marker-end="url(#arrK)"><path d="M24.7,68.5 Q31.3,51 43.1,36.5"/><path d="M82.9,36.5 Q94.7,51 101.3,68.5"/><path d="M81.4,103 Q63,108 44.6,103"/></g>
+  <g fill="none" stroke="var(--qi)" stroke-width="1.7" stroke-dasharray="3 2.5" marker-end="url(#arrS)"><path d="M55.3,43.5 Q48.7,61 36.9,75.5"/><path d="M44.6,89 Q63,84 81.4,89"/><path d="M89.1,75.5 Q77.3,61 70.7,43.5"/></g>
+  <g class="node"><text x="63" y="23">經</text><text x="17" y="103">冷</text><text x="109" y="103">入</text></g>
+</svg><div class="cap"><span class="k">→ 相剋</span><span class="s">⇢ 相生</span></div></div>`;
+
+function sideHTML(s, who, side){
   const pct=Math.max(0,s.hp)/s.maxHp*100;
-  const qi=[]; for(let i=0;i<CFG.qiMax;i++) qi.push(`<span class="qp ${i<s.qi?'on':''}"></span>`);
-  const st=s.stats;
-  return `<div class="fighter">
-    <div class="who"><span>${emoji||''} ${label}</span><span class="muted">HP ${Math.max(0,s.hp)}/${s.maxHp}</span></div>
-    <div class="hpwrap ${s.side==='e'?'e':''}"><i style="width:${pct}%"></i></div>
-    <div class="qirow">氣勢 <div class="qibar">${qi.join('')}</div> ${s.qi>=CFG.qiMax?'<b style="color:var(--qi)">滿!</b>':''}</div>
-    <div class="ministats"><span class="s-atk">攻${st.atk}</span><span class="s-def">防${st.def}</span><span class="s-qir">氣勢率${st.qir}</span></div>
+  const st=s.stats; let pips=''; for(let i=0;i<CFG.qiMax;i++) pips+=`<i class="${i<s.qi?'on':''}"></i>`;
+  const meta = side==='e'
+    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　攻${st.atk}/防${st.def}/勢${st.qir}`
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　攻${st.atk}/防${st.def}/勢${st.qir}`;
+  return `<div class="side ${side==='e'?'enemy':''}">
+    <div class="nameplate"><span class="who">${who}</span><span class="meta" id="${side}Meta">${meta}</span></div>
+    <div class="hpbar ${side==='e'?'e':''}" id="${side}Hpbar"><i id="${side}Hpfill" style="width:${pct}%"></i><span id="${side}Hptxt">${Math.max(0,s.hp)} / ${s.maxHp}</span></div>
+    <div class="qiwrap"><span class="qilab">氣勢 ${s.qi}/${CFG.qiMax}</span><div class="qibar2 ${s.qi>=CFG.qiMax?'full':''}" id="${side}Qi">${pips}</div></div>
   </div>`;
 }
 function renderBattle(){
   const pe=G.pendingE;
   const tellTxt = pe ? (pe.ult
-      ? '⚡ 對手氣勢滿溢，殺氣騰騰（小心品味輾壓）'
-      : `對手${pick(TELL_FLAVOR[pe.tell])}<span class="muted">（氣場偏 ${ATTR_ZH[pe.tell]}）</span>`)
+      ? '⚡ <b>對手氣勢滿溢</b>，殺氣騰騰（小心品味輾壓）'
+      : `對手${pick(TELL_FLAVOR[pe.tell])}　氣場偏 <b>${ATTR_ZH[pe.tell]}</b>`)
     : '';
   const need=runXpNeed();
   $app.innerHTML = topbarHTML() + `
-    <div class="row"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill">牌庫 ${G.p.deck.length}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span></div>
+    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span></div>
     <div class="xpbar" style="margin:5px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
-    <div class="sp"></div>
-    ${fighterHTML(G.e, G.E.who, G.E.emoji)}
-    ${fighterHTML(G.p, '你', '🧑')}
-    <div class="tell" id="tell">${tellTxt}</div>
-    <div class="slotrow">
-      <div class="slot" id="eSlot">對手暗牌</div>
-      <div class="slot" id="pSlot">你的出牌</div>
-    </div>
-    <div class="callout" id="callout"></div>
-    <div class="muted">你的手牌（點卡選擇）</div>
-    <div class="hand" id="hand"></div>
-    <div id="attrZone"></div>
-    <div class="log" id="log">${G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('')}</div>`;
+    ${sideHTML(G.e, G.E.who, 'e')}
+    <div class="etell" id="tell">${tellTxt}</div>
+    <div class="arena"><div class="slots">
+      <div class="slot" id="eSlot"></div>
+      <div class="vs">VS</div>
+      <div class="slot" id="pSlot"></div>
+      <div class="callout" id="callout"></div>
+    </div></div>
+    <div class="player-zone">
+      ${sideHTML(G.p, '你', 'p')}
+      <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>你那招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>派系專長：打親和屬性牌觸發 <em>buff</em></div></div>
+      <div class="hint" id="hint">點一張手牌 → 選主打屬性出招</div>
+      <div class="tilepop" id="tilePop"></div>
+      <div class="htrow" id="hand"></div>
+      <div class="log" id="log">${G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('')}</div>
+    </div>`;
   renderHand();
 }
 let _sel=null;
 function renderHand(){
-  const h=document.getElementById('hand');
-  h.innerHTML = G.p.hand.map(c=>`<div onclick="selectCard(${c.uid})">${cardHTML(c,{clk:true,attr:true,sel:_sel===c.uid})}</div>`).join('');
-  renderAttrZone();
+  const el=document.getElementById('hand'); if(!el) return;
+  el.innerHTML = G.p.hand.map(c=>{
+    const aceTag=c.ace?`<span class="ht-ace ${c.ace}">${ACE_ZH[c.ace]}</span>`:'';
+    const cover=c.coverUrl
+      ? `<div class="ht-cover" style="background-image:url('${String(c.coverUrl).replace(/'/g,'%27')}')"></div>`
+      : `<div class="ht-cover ht-noimg"><span>${c.album}</span></div>`;
+    return `<div class="handtile ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}</div>`;
+  }).join('');
+  // 即時補封面
+  G.p.hand.forEach(c=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
+    const cov=el.querySelector(`.handtile[data-uid="${c.uid}"] .ht-cover`); if(cov){ cov.classList.remove('ht-noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+  renderTilePop();
 }
-function selectCard(uid){ if(G.busy||G.over) return; _sel = (_sel===uid?null:uid); renderHand(); }
-function renderAttrZone(){
-  const z=document.getElementById('attrZone'); if(!z) return;
+function selectCard(uid){ if(G.busy||G.over) return; _sel = (_sel===uid?null:uid); renderHand();
+  if(_sel){ const t=document.querySelector('.handtile.sel'); if(t) t.scrollIntoView({block:'nearest',inline:'center'}); } }
+function renderTilePop(){
+  const pop=document.getElementById('tilePop'); if(!pop) return;
   const c=G.p.hand.find(x=>x.uid===_sel);
-  if(!c){ z.innerHTML=`<div class="muted" style="margin-top:8px">先點一張手牌。</div>`; return; }
+  if(!c||G.busy){ pop.classList.remove('show'); return; }
   const ultReady=G.p.qi>=CFG.qiMax;
-  z.innerHTML = `<div class="muted" style="margin-top:8px">用【${c.album}】宣告主打屬性：</div>
-    <div class="attrbtns">
-      ${ATTRS.map(at=>`<button class="ab ${at}" onclick="play(${c.uid},'${at}')">${ATTR_ZH[at]} ${c[at]}★<br><span style="font-size:9px;opacity:.8">${ATTR_FX_ZH[at]}</span></button>`).join('')}
-    </div>
-    ${ultReady?`<div class="attrbtns"><button class="ab ult" style="flex:1" onclick="play(${c.uid},'__ult__')">⚡ 品味輾壓（無視屬性 −${CFG.ultimate+G.p.stats.atk}）</button></div>`:''}`;
+  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.ultimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
+  const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
+  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
+  pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
+function positionTilePop(){
+  const pop=document.getElementById('tilePop'); const tile=document.querySelector('.handtile.sel');
+  if(!_sel||!tile||G.busy){ if(pop)pop.classList.remove('show'); return; }
+  const tr=tile.getBoundingClientRect(), vw=window.innerWidth, popW=pop.offsetWidth||154;
+  const cx=tr.left+tr.width/2, left=Math.max(6,Math.min(cx-popW/2, vw-popW-6));
+  pop.style.left=left+'px'; pop.style.top=(tr.top-pop.offsetHeight-9)+'px'; pop.style.setProperty('--arrow-x',(cx-left)+'px');
+}
+window.addEventListener('resize', ()=>{ if(_sel) positionTilePop(); });
 
-function callout(html){ const el=document.getElementById('callout'); if(el) el.innerHTML=html; }
+function callout(html){ const el=document.getElementById('callout'); if(el){ el.innerHTML=html||''; if(html){ el.classList.remove('burst'); void el.offsetWidth; el.classList.add('burst'); } } }
 
 // 相剋/數值結算（沿用 resolveClash），再套三圍（攻/防/氣勢率）
 function resolveClash(pCard,pAttr,eCard,eAttr){
@@ -584,11 +717,11 @@ async function play(uid, pAttr){
   // 移出手牌
   G.p.hand=G.p.hand.filter(c=>c.uid!==uid);
 
+  const tp=document.getElementById('tilePop'); if(tp) tp.classList.remove('show');
   document.getElementById('tell').innerHTML='';
-  document.getElementById('pSlot').className='slot filled';
-  document.getElementById('pSlot').innerHTML=cardHTML(pCard);
-  document.getElementById('eSlot').className='slot filled';
-  document.getElementById('eSlot').innerHTML=cardHTML(eCard);
+  const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
+  ps.className='slot filled'; ps.innerHTML=boardCardHTML(pCard); lazyCover('pSlot',pCard);
+  es.className='slot filled'; es.innerHTML=boardCardHTML(eCard); lazyCover('eSlot',eCard);
   renderHand();
   if(feinted && G.pCounteredTellLast){ callout('<span class="dmg">對手虛晃一招！反咬你的相剋</span>'); pushLog('對手虛晃 → 反咬你的相剋','hit'); await sleep(650); }
 
@@ -676,14 +809,18 @@ function markResult(pCard,eCard){
   if(G.e.hp<G.p.hp){ ps.classList.add('win'); es.classList.add('lose'); }
   else if(G.p.hp<G.e.hp){ ps.classList.add('lose'); es.classList.add('win'); }
 }
+function refreshSide(side){
+  const s=G[side];
+  const fill=document.getElementById(side+'Hpfill'); if(fill) fill.style.width=Math.max(0,s.hp)/s.maxHp*100+'%';
+  const txt=document.getElementById(side+'Hptxt'); if(txt) txt.textContent=Math.max(0,s.hp)+' / '+s.maxHp;
+  const qi=document.getElementById(side+'Qi'); if(qi){ let p=''; for(let i=0;i<CFG.qiMax;i++) p+=`<i class="${i<s.qi?'on':''}"></i>`; qi.innerHTML=p; qi.classList.toggle('full',s.qi>=CFG.qiMax); const lab=qi.previousElementSibling; if(lab) lab.textContent=`氣勢 ${s.qi}/${CFG.qiMax}`; }
+  const meta=document.getElementById(side+'Meta'); const st=s.stats;
+  if(meta) meta.textContent = side==='e'
+    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　攻${st.atk}/防${st.def}/勢${st.qir}`
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　攻${st.atk}/防${st.def}/勢${st.qir}`;
+}
 function refreshFighters(){
-  // 重繪兩個 fighter 區（HP/氣勢/三圍）
-  const cont=$app;
-  const fighters=cont.querySelectorAll('.fighter');
-  if(fighters.length>=2){
-    fighters[0].outerHTML=fighterHTML(G.e,G.E.who,G.E.emoji);
-    cont.querySelectorAll('.fighter')[1].outerHTML=fighterHTML(G.p,'你','🧑');
-  }
+  refreshSide('e'); refreshSide('p');
   const log=document.getElementById('log'); if(log) log.innerHTML=G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('');
 }
 
