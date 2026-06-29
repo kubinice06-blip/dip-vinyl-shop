@@ -114,7 +114,7 @@
 'use strict';
 /* =========================================================================
    dip 黑膠 · 無止盡品味試煉 — Roguelike beta (P0)
-   沿用 battle.html 的品味氣勢制（相剋/相生/氣勢/品味碾壓/王牌被動），
+   沿用 battle.html 的品味氣勢制（相剋/相生/氣勢/品味輾壓/王牌被動），
    外加：流派、角色三圍（攻/防/氣勢率，暫名）、無限賽局、樂歷(XP/等級)。
    純前端、範例卡池當卡冊、localStorage 存樂歷。
    ========================================================================= */
@@ -184,12 +184,12 @@ const CLASSES = {
   guard: { name:'守舊派', tag:'〔守〕經典 · 高血線耐久', stats:{atk:1,def:3,qir:1}, maxHpBonus:5, qiPerTurn:0,
            desc:'起始聲望(HP)高、防禦厚，靠扛住對手慢慢磨。' },
   digger:{ name:'挖掘派', tag:'〔挖〕冷門 · 氣勢爆發', stats:{atk:1,def:1,qir:2}, maxHpBonus:0, qiPerTurn:1,
-           desc:'每回合氣勢自動 +1、充能更快，更常放品味碾壓。' },
+           desc:'每回合氣勢自動 +1、充能更快，更常放品味輾壓。' },
   heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:3,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
            desc:'攻擊高、傷害狠，打快攻速戰速決。' },
 };
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
-const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常碾壓' };
+const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
 
 // ---------- 樂歷（XP / 等級，localStorage 永久）----------
 const META_KEY = 'dipRogueMeta_v1';
@@ -239,7 +239,7 @@ const $app = document.getElementById('app');
 function topbarHTML(){
   const lv=levelOf(META.xp), into=META.xp%XP_PER_LV;
   return `<div class="topbar">
-    <span class="lv">樂歷 Lv.${lv}</span>
+    <span class="lv">樂歷 Lv.${lv} · ${into}/${XP_PER_LV}</span>
     <div class="xpbar"><i style="width:${into}%"></i></div>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
   </div>`;
@@ -448,7 +448,7 @@ function fighterHTML(s, label, emoji){
 function renderBattle(){
   const pe=G.pendingE;
   const tellTxt = pe ? (pe.ult
-      ? '⚡ 對手氣勢滿溢，殺氣騰騰（小心品味碾壓）'
+      ? '⚡ 對手氣勢滿溢，殺氣騰騰（小心品味輾壓）'
       : `對手${pick(TELL_FLAVOR[pe.tell])}<span class="muted">（氣場偏 ${ATTR_ZH[pe.tell]}）</span>`)
     : '';
   $app.innerHTML = topbarHTML() + `
@@ -484,7 +484,7 @@ function renderAttrZone(){
     <div class="attrbtns">
       ${ATTRS.map(at=>`<button class="ab ${at}" onclick="play(${c.uid},'${at}')">${ATTR_ZH[at]} ${c[at]}★<br><span style="font-size:9px;opacity:.8">${ATTR_FX_ZH[at]}</span></button>`).join('')}
     </div>
-    ${ultReady?`<div class="attrbtns"><button class="ab ult" style="flex:1" onclick="play(${c.uid},'__ult__')">⚡ 品味碾壓（無視屬性 −${CFG.ultimate+G.p.stats.atk}）</button></div>`:''}`;
+    ${ultReady?`<div class="attrbtns"><button class="ab ult" style="flex:1" onclick="play(${c.uid},'__ult__')">⚡ 品味輾壓（無視屬性 −${CFG.ultimate+G.p.stats.atk}）</button></div>`:''}`;
 }
 
 function callout(html){ const el=document.getElementById('callout'); if(el) el.innerHTML=html; }
@@ -529,16 +529,16 @@ async function play(uid, pAttr){
   const st=G.p.stats, est=G.e.stats;
 
   if(pUlt || eUlt){
-    // 品味碾壓回合
+    // 品味輾壓回合
     const eUltBlocked = eUlt && !pUlt && pCard.ace;   // 七星回擊
     if(pUlt){ let d=applyDef(applyAtk(CFG.ultimate,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0;
-      callout(`<span class="dmg">你 · 品味碾壓 −${d}</span>`); pushLog(`你品味碾壓！對手 −${d}`,'hit'); }
+      callout(`<span class="dmg">你 · 品味輾壓 −${d}</span>`); pushLog(`你品味輾壓！對手 −${d}`,'hit'); }
     else G.p.last=pAttr;
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0; const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility); const d=applyDef(applyAtk(star,st.atk),est.def); G.e.hp-=d;
-        callout(`<span class="good">七星回擊！對手碾壓無效，反傷 −${d}</span>`); pushLog(`${ACE_ZH[pCard.ace]}王牌七星回擊 → 對手 −${d}`,'good'); }
+        callout(`<span class="good">七星回擊！對手輾壓無效，反傷 −${d}</span>`); pushLog(`${ACE_ZH[pCard.ace]}王牌七星回擊 → 對手 −${d}`,'good'); }
       else { let d=applyDef(applyAtk(CFG.ultimate,est.atk), st.def); G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0;
-        callout(`<span class="dmg">對手 · 品味碾壓 −${d}</span>`); pushLog(`對手品味碾壓！你 −${d}`,'hit'); }
+        callout(`<span class="dmg">對手 · 品味輾壓 −${d}</span>`); pushLog(`對手品味輾壓！你 −${d}`,'hit'); }
     } else G.e.last=eAttr;
   } else {
     // 階段0 王牌即時被動
@@ -657,8 +657,9 @@ function cull(i){ RUN.deck.splice(i,1); afterReward(); }
 function afterReward(){ nextFight(); }
 
 function renderDeath(){
-  // 樂歷結算
-  const gained = RUN.depth*10 + RUN.streak*5;
+  // 樂歷結算（每趟給的 XP，調高一點讓成長有感）
+  const recordBonus = RUN.depth>META.bestDepth ? 30 : 0;   // 破紀錄額外給
+  const gained = RUN.depth*15 + RUN.streak*8 + recordBonus;
   const lvBefore=levelOf(META.xp);
   META.xp += gained;
   META.runsPlayed++;

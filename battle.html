@@ -502,9 +502,9 @@
       <li><b>入耳〔攻〕</b>：對手 氣勢 −1</li>
     </ul>
 
-    <h3>氣勢槽（0→6）· 品味碾壓</h3>
-    <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味碾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
-    <p>電腦發動品味碾壓時，你可出<em>七星王牌</em>（殿堂／流亡／異端）<b>回擊</b> → 該次碾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
+    <h3>氣勢槽（0→6）· 品味輾壓</h3>
+    <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味輾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
+    <p>電腦發動品味輾壓時，你可出<em>七星王牌</em>（殿堂／流亡／異端）<b>回擊</b> → 該次輾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
 
     <h3>氣場提示 · 虛晃反咬</h3>
     <p>電腦會先暗中決定出招、露出一個<b>氣場提示</b>（偏哪個屬性），但<b>不亮牌</b>。<b>留意</b>：你上一手若照提示去剋，它下一手會<b>虛晃</b>改打能剋你預期招的屬性反咬——要會讀，別無腦照提示打。</p>
@@ -539,14 +539,14 @@ let currentUser = null, authReady = false, myColl = null, myStats = null;
 // ───────── 封測開關（未來正式開放：poOpponent 設 false 即移除「與 Po 對戰」；minDeck 設 10 即需 10 張才能打）─────────
 const BETA = { poOpponent:true };
 
-// ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放品味碾壓）=====
+// ===== v3 品味氣勢制（三國志X 舌戰/一騎討 借鏡：讀招充氣勢 → 滿了放品味輾壓）=====
 const CFG = {
   startHp:30, deckSize:20, startHand:5, drawPerTurn:1, handLimit:7,
   minDeck:0,           // 封測：0 張卡冊也能玩（全靠卡池借牌）；正式開放改 10
   maxCopies:2, aceCopies:1,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
-  qiMax:6,            // 氣勢槽滿 → 可發動品味碾壓
+  qiMax:6,            // 氣勢槽滿 → 可發動品味輾壓
   qiCounter:3,        // 相剋勝充能
   qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
   qiValue:1,          // 數值勝充能
@@ -555,7 +555,7 @@ const CFG = {
   qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
   // 傷害＝星數驅動：相剋命中扣血 = 勝方那招星數(1–7)；純比星扣血 = 星數差 × valueDmg。讀招決定打不打中、星數決定多痛。
   valueDmg:1,         // 純比星傷害倍率（星數差×此值；設 0 = 純比星只給氣勢、不扣血）
-  ultimate:6,         // 品味碾壓傷害（無視屬性、保證命中）
+  ultimate:6,         // 品味輾壓傷害（無視屬性、保證命中）
   attrFx:{ classic:1, obscurity:1, accessibility:1 }, // 屬性專屬效果：經典守+HP / 冷門挖+氣勢 / 入耳攻-對手氣勢
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
   fatigueStart:1, fatigueStep:1,
@@ -573,14 +573,14 @@ const ATTR_DESC = {
   classic:'經典〔守〕大眾公認、歷史留名的主流名盤；出招回 +1 聲望(HP)。',
   obscurity:'冷門〔挖〕地下小眾、稀有私盤；出招 +1 氣勢。',
   accessibility:'入耳〔攻〕前衛實驗、越難入耳越硬；出招削對手 1 氣勢。',
-  __ult__:'品味碾壓：氣勢滿溢的保證一擊，無視對方屬性、對手 HP −6。',
+  __ult__:'品味輾壓：氣勢滿溢的保證一擊，無視對方屬性、對手 HP −6。',
 };
 const TELL_FLAVOR = {
   classic:['像要搬出經典名盤','手指停在那排殿堂級唱片上','一副「這張你總聽過吧」的篤定','翻出公認神專的架勢','露出報菜名搬書袋的神情','嘴邊掛著「樂史必聽」四個字'],
   obscurity:['露出考古挖盤的眼神','嘴角藏著「你沒聽過吧」的得意','散發二手店挖三小時的氣息','一臉要掏出絕版冷門的樣子','眼神飄向沒人知道的角落廠牌','擺出地下小眾的姿態'],
   accessibility:['散發前衛實驗的氣息','露出「越難懂越屌」的眼神','一臉要放噪音牆的樣子','擺出解構一切的姿態','散發不甩旋律的冷峻','像要端出聽不懂的硬貨']
 };
-const ULT_FLAVOR = ['⚡ 氣勢滿溢，殺氣騰騰','⚡ 渾身散發要碾壓的氣場','⚡ 蓄勢待發、準備品味碾壓','⚡ 眼神鎖定，殺意已滿'];
+const ULT_FLAVOR = ['⚡ 氣勢滿溢，殺氣騰騰','⚡ 渾身散發要輾壓的氣場','⚡ 蓄勢待發、準備品味輾壓','⚡ 眼神鎖定，殺意已滿'];
 const pick = a => a[rnd(a.length)];
 
 // ===== 範例卡池（對戰 stats 1–5；王牌單軸 7）=====
@@ -807,7 +807,7 @@ function newGame(oppKey, pDeck, eDeck){
   const intro = borrowed>0
     ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，借了 ${borrowed} 張卡池牌（標「借」、不入冊）。`
     : `對局開始 · 對手【${opp.who}】。整副都是你卡冊的卡。`;
-  pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味碾壓】。', '');
+  pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味輾壓】。', '');
   document.getElementById('overlay').classList.remove('show');
   render();
   startTurn();
@@ -919,7 +919,7 @@ async function play(pCard, pAttr){
   if(!G.pendingE) return;
   G.busy=true; G.sel=null;
   document.getElementById('eTell').innerHTML='';   // 玩家已出招 → 收起本回合氣場提示
-  const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇碾壓
+  const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇輾壓
   if(G.pendingE.pass){                            // 電腦疲勞無牌 → 只結算玩家這邊
     G.p.hand=G.p.hand.filter(c=>c.uid!==pCard.uid);
     pCard._attr = pUlt?'__ult__':pAttr; G.p.played.push(pCard);
@@ -928,7 +928,7 @@ async function play(pCard, pAttr){
     document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
     G.pShow=pCard;
     lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
-    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
+    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
     else { const pcq=computeChain(G.p,pAttr).qi; G.p.qi=Math.min(CFG.qiMax,G.p.qi+pcq); applyAttrEffect('p',pAttr); G.p.last=pAttr; callout(`<div class="sub fx">你〔${FX_ZH[pAttr]}〕`); }
     flashHp('e'); renderHp(); renderQi();
     await sleep(800);
@@ -960,22 +960,22 @@ async function play(pCard, pAttr){
   await sleep(450);
 
   if(pUlt || eUlt){
-    // ===== 碾壓回合（氣勢滿 → 無視對方屬性的保證一擊）=====
+    // ===== 輾壓回合（氣勢滿 → 無視對方屬性的保證一擊）=====
     const msgs=[];
-    // 七星回擊：電腦發動碾壓時，玩家若出王牌(七星)可無效化該次碾壓
+    // 七星回擊：電腦發動輾壓時，玩家若出王牌(七星)可無效化該次輾壓
     const eUltBlocked = eUlt && !pUlt && pCard && !!pCard.ace;
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.p.last=null; G.p.chain=0;
-      msgs.push(`<div class="ultimate-skill">你 · 品味碾壓</div><div class="sub">無視對方屬性 · 保證命中</div><div class="dmgnum">-${CFG.ultimate}</div>`);
-      pushLog(`你 氣勢滿 → 品味碾壓！電腦 -${CFG.ultimate}`,'hit'); }
+      msgs.push(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="sub">無視對方屬性 · 保證命中</div><div class="dmgnum">-${CFG.ultimate}</div>`);
+      pushLog(`你 氣勢滿 → 品味輾壓！電腦 -${CFG.ultimate}`,'hit'); }
     else { G.p.last=pAttr; }
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0;
         const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility); G.e.hp-=star;
-        msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味碾壓 → 無效化、反傷</div><div class="dmgnum">-${star}</div>`);
-        pushLog(`你以七星王牌【${pCard.album}】回擊 → 碾壓無效，電腦 -${star}！`,'hit'); }
+        msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味輾壓 → 無效化、反傷</div><div class="dmgnum">-${star}</div>`);
+        pushLog(`你以七星王牌【${pCard.album}】回擊 → 輾壓無效，電腦 -${star}！`,'hit'); }
       else { G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
-        msgs.push(`<div class="ultimate-skill">電腦 · 品味碾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
-        pushLog(`電腦 氣勢滿 → 品味碾壓！你 -${CFG.ultimate}`,'hit'); }
+        msgs.push(`<div class="ultimate-skill">電腦 · 品味輾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
+        pushLog(`電腦 氣勢滿 → 品味輾壓！你 -${CFG.ultimate}`,'hit'); }
     }
     else { G.e.last=eAttr; }
     callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
@@ -1127,12 +1127,12 @@ function renderHand(){
   }); });
   if(!G.sel) renderTilePop();
 }
-// 選取時：在該卡正上方浮出小視窗（專輯名 + 精簡出牌鍵：經5 / 冷2 / 入4 / ⚡碾壓），帶向下箭頭指向卡牌
+// 選取時：在該卡正上方浮出小視窗（專輯名 + 精簡出牌鍵：經5 / 冷2 / 入4 / ⚡輾壓），帶向下箭頭指向卡牌
 function renderTilePop(){
   const pop=document.getElementById('tilePop');
   if(!G.sel || G.busy){ pop.classList.remove('show'); return; }
   const c=G.sel, charged=G.p.qi>=CFG.qiMax;
-  const ult=charged?`<button class="pp-act pp-ult" data-attr="__ult__">⚡ 碾壓 -${CFG.ultimate}</button>`:'';
+  const ult=charged?`<button class="pp-act pp-ult" data-attr="__ult__">⚡ 輾壓 -${CFG.ultimate}</button>`:'';
   const acts=ATTRS.map(a=>`<button class="pp-act" data-attr="${a}"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}</button>`).join('');
   const borrow=c.borrowed?'<span class="tp-borrow">借</span>':'';
   pop.innerHTML=`<div class="tp-alb">${c.album}${borrow}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
@@ -1157,13 +1157,13 @@ function renderHandLocked(){ G.sel=null; renderHand(); renderTilePop(); document
 function setHint(){
   const h=document.getElementById('hint');
   const charged=G.p.qi>=CFG.qiMax;
-  if(G.sel){ h.textContent= charged?`${G.sel.album} — ⚡可放【品味碾壓】或選一般屬性`:`${G.sel.album} — 選一個主打屬性發動`; return; }
-  if(charged){ h.textContent='⚡ 氣勢滿！選一張卡 → 品味碾壓（無視對方屬性一擊）'; return; }
+  if(G.sel){ h.textContent= charged?`${G.sel.album} — ⚡可放【品味輾壓】或選一般屬性`:`${G.sel.album} — 選一個主打屬性發動`; return; }
+  if(charged){ h.textContent='⚡ 氣勢滿！選一張卡 → 品味輾壓（無視對方屬性一擊）'; return; }
   const pe=G.pendingE;
   if(pe && pe.ult){
     const hasAce = G.p.hand.some(c=>c.ace);
-    h.textContent = hasAce ? '⚠ 電腦要碾壓了！出王牌(七星)回擊：碾壓無效＋反傷 -7，否則 HP -6'
-                           : '⚠ 電腦氣勢滿、要碾壓（屬性擋不住）— 沒七星王牌就拚血/搶氣勢';
+    h.textContent = hasAce ? '⚠ 電腦要輾壓了！出王牌(七星)回擊：輾壓無效＋反傷 -7，否則 HP -6'
+                           : '⚠ 電腦氣勢滿、要輾壓（屬性擋不住）— 沒七星王牌就拚血/搶氣勢';
     return;
   }
   if(pe){ h.textContent=`電腦氣場：偏【${ATTR_ZH[pe.tell]}】… 信它就去剋，但它可能虛晃反咬`; return; }
