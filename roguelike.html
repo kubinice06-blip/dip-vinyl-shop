@@ -197,6 +197,19 @@
     .handtile{width:74px;height:74px;}
     .log{height:44px;}
   }
+
+  /* ===== 局末抽盤：與「直接來一張」同調的揭曉卡（封面＋介紹）===== */
+  .drawmask{position:fixed;inset:0;background:rgba(255,255,255,.97);z-index:60;display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto;animation:pop .22s;}
+  .drawcard{max-width:360px;width:100%;text-align:center;margin:auto;}
+  .drawcard .lab{font-size:10px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;font-weight:700;}
+  .drawcard .cov{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--black);display:block;margin-bottom:14px;}
+  .drawcard .cov.noimg{display:flex;align-items:center;justify-content:center;font-weight:700;color:#444;padding:12px;font-size:15px;line-height:1.4;background:repeating-linear-gradient(45deg,#fff,#fff 6px,#f3f3f3 6px,#f3f3f3 12px);}
+  .drawcard .ar{font-size:12px;color:var(--gray);letter-spacing:0.04em;}
+  .drawcard .al{font-size:18px;font-weight:700;margin:2px 0 10px;letter-spacing:0.04em;line-height:1.3;}
+  .drawcard .acebadge{position:static;display:inline-block;margin:0 0 10px;}
+  .drawcard .stats{max-width:210px;margin:0 auto 14px;}
+  .drawcard .intro{font-size:12px;line-height:1.95;text-align:left;border:1px solid var(--line);padding:14px;margin-bottom:16px;min-height:64px;color:#333;}
+  .drawcard .intro.wait{color:var(--gray);}
 </style>
 </head>
 <body>
@@ -880,7 +893,7 @@ function applyBuff(u){
 }
 
 function winFight(){
-  G.over=true; RUN.streak++;
+  G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
   RUN.hp = Math.min(RUN.maxHp, Math.max(1,G.p.hp) + 3);   // 贏了小回血
   // 局內經驗累積（與結算樂歷分開算）
   const gain = RXP.base + RUN.depth*RXP.perDepth;
@@ -925,7 +938,74 @@ function renderWinContinue(){
     <div class="muted">局內 Lv.${RUN.runLevel}　經驗 +${RUN._lastGain}（${RUN.runXp}/${need}）</div>
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     <div style="font-size:11px;color:var(--dim);margin-bottom:12px">能力：${modsLine()}</div>
+    ${RUN._drewThisWin
+      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已收進卡組（共 ${RUN.deck.length} 張）</div>`
+      : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
     <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
+}
+
+// =========================================================================
+//  局末抽盤：抽一張盤 → 用「直接來一張」風格揭曉封面＋介紹 → 進卡組
+// =========================================================================
+const RG_WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
+let _drawCard = null;
+// 抽一張卡組裡還沒有的盤（小機率出王牌）
+function pickDrawCard(){
+  const inDeck = new Set(RUN.deck.map(keyOf));
+  const wantAce = Math.random() < 0.12;
+  const src = wantAce ? ACES.concat(POOL) : POOL.concat(ACES);
+  for(const c of shuffle(src.slice())){
+    if(!inDeck.has(keyOf(c))) return copyCard({artist:c.artist,album:c.album,classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
+  }
+  return copyCard(pick(POOL));   // 卡池抽乾了的保險
+}
+// 介紹文字（與「直接來一張」同源：worker /claude）
+async function streamRogueReason(card, el){
+  const prompt = `專輯：${card.artist} — ${card.album}\n\n用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容：若你確定，講清楚藝人來自哪裡、這張的曲風聲音與做法、為何值得一聽。禁止用語：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」「必聽」「傑作」。整段 60-110 字，只回傳文字，不含格式符號。`;
+  try{
+    const resp = await fetch(RG_WORKER+'/claude', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ messages:[{role:'user',content:prompt}] }),
+    });
+    const data = await resp.json();
+    let text = (data.content?.[0]?.text || '').trim();
+    if(el){ el.classList.remove('wait'); el.textContent = text || '（一時找不到介紹，但這張值得你親耳聽聽。）'; }
+    return text;
+  }catch(e){
+    if(el){ el.classList.remove('wait'); el.textContent = '（介紹載入失敗，先收進卡組吧。）'; }
+    return '';
+  }
+}
+function openDrawReveal(){
+  if(RUN._drewThisWin || document.getElementById('drawMask')) return;
+  const c = _drawCard = pickDrawCard();
+  const aceTag = c.ace ? `<span class="acebadge">${ACE_ZH[c.ace]}</span>` : '';
+  const mask = document.createElement('div');
+  mask.className = 'drawmask'; mask.id = 'drawMask';
+  mask.innerHTML = `<div class="drawcard">
+    <div class="lab">★ 局末抽盤 · 為你抽到</div>
+    <div class="cov noimg" id="drawCov"><span>${c.album}</span></div>
+    <div class="ar">${c.artist}</div>
+    <div class="al">${c.album}</div>
+    ${aceTag}
+    <div class="stats">${starsHTML(c)}</div>
+    <div class="intro wait" id="drawIntro">介紹輸入中…</div>
+    <button class="btn primary" style="width:100%" onclick="confirmDraw()">＋ 加入卡組</button>
+  </div>`;
+  document.body.appendChild(mask);
+  ensureCover(c).then(url=>{
+    const el = document.getElementById('drawCov');
+    if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
+  });
+  streamRogueReason(c, document.getElementById('drawIntro'));
+}
+function confirmDraw(){
+  if(!_drawCard) return;
+  RUN.deck.push(_drawCard);
+  RUN._drewThisWin = true;
+  _drawCard = null;
+  const m = document.getElementById('drawMask'); if(m) m.remove();
+  renderWinContinue();
 }
 
 function renderDeath(){
