@@ -415,8 +415,9 @@ function copyCard(c){ return Object.assign({}, c, {uid:newUid()}); }
 function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=rnd(i+1); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 function starsHTML(c){
   return ATTRS.map(at=>{
-    const n=c[at]; let pips='';
-    for(let i=0;i<7;i++) pips+=`<span class="pip ${i<n?'on '+at:''}"></span>`;
+    const n=c[at]; const total = n>5 ? 7 : 5;   // 平常上限 5 格；頂級卡單軸衝到 7 才擴充成 7 格
+    let pips='';
+    for(let i=0;i<total;i++) pips+=`<span class="pip ${i<n?'on '+at:''}"></span>`;
     return `<div class="st"><span class="lab">${ATTR_ZH[at]}</span><div class="pips">${pips}</div></div>`;
   }).join('');
 }
@@ -566,7 +567,7 @@ async function renderSeedSelect(){
       }
       return c;
     }));
-    RUN._collShelf = cards.filter(c=>!c.ace);   // 王牌不可當種子
+    RUN._collShelf = cards;   // 頂級卡（王牌）也可當種子，但起始最多選 1 張（見 toggleSeed）
     RUN._collLoaded = true;
   }
   if(!RUN._source) RUN._source = (user && RUN._collShelf && RUN._collShelf.length>=5) ? 'collection' : 'random';
@@ -608,10 +609,23 @@ async function seedSignIn(){
   RUN._collLoaded=false; RUN._source=null;   // 重新載卡冊、預設切到卡冊
   renderSeedSelect();
 }
+function seedToast(msg){
+  let t=document.getElementById('seedToast');
+  if(!t){ t=document.createElement('div'); t.id='seedToast';
+    t.style.cssText='position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:rgba(0,0,0,.86);color:#fff;padding:8px 14px;font-size:12px;font-weight:700;letter-spacing:.04em;z-index:999;pointer-events:none;transition:opacity .3s;';
+    document.body.appendChild(t); }
+  t.textContent=msg; t.style.opacity='1';
+  clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; }, 1800);
+}
 function toggleSeed(i){
   const idx = RUN.seedsPicked.indexOf(i);
-  if(idx>=0) RUN.seedsPicked.splice(idx,1);
-  else { if(RUN.seedsPicked.length>=5) return; RUN.seedsPicked.push(i); }
+  if(idx>=0){ RUN.seedsPicked.splice(idx,1); updateSeedUI(); return; }
+  if(RUN.seedsPicked.length>=5) return;
+  // 頂級卡（王牌）起始最多選 1 張，過程中還會抽到
+  if(RUN._shelf[i].ace && RUN.seedsPicked.some(j=>RUN._shelf[j].ace)){
+    seedToast('頂級卡起始最多選 1 張（過程中還會抽到）'); return;
+  }
+  RUN.seedsPicked.push(i);
   updateSeedUI();
 }
 function updateSeedUI(){
