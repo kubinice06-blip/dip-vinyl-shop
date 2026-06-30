@@ -117,13 +117,13 @@
     --oil-shine:linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
     --crimson-shine:linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%); }
   .side{padding:6px 0;}
+  .side.enemy{border-bottom:1px solid var(--line);padding-bottom:8px;}
   .nameplate{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
   .nameplate .who{font-weight:700;letter-spacing:0.08em;font-size:12px;}
   .nameplate .meta{font-size:9px;color:var(--gray);letter-spacing:0.04em;}
   .hpbar{height:14px;background:var(--hp-bg);position:relative;overflow:hidden;}
   .hpbar > i{position:absolute;inset:0 auto 0 0;background:var(--hp);transition:width .5s cubic-bezier(.4,0,.2,1);}
-  .hpbar > span{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:var(--gray);}
-  .hpbar.e > i{background:var(--dmg);}
+  .hpbar > span{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:var(--gray);mix-blend-mode:difference;}
   .qiwrap{display:flex;align-items:center;gap:6px;margin-top:5px;}
   .qiwrap .qilab{font-size:8px;letter-spacing:0.14em;color:var(--qi);font-weight:700;white-space:nowrap;}
   .qibar2{display:flex;gap:3px;flex:1;}
@@ -134,10 +134,11 @@
   .etell{display:flex;align-items:center;justify-content:center;gap:8px;min-height:30px;margin:8px auto 0;padding:6px 10px;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:center;}
   .etell:empty{border-color:transparent;}
   .etell b{color:var(--black);font-weight:700;}
-  .arena{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:10px 0;}
-  .slots{position:relative;display:flex;gap:16px;align-items:center;justify-content:center;width:100%;}
-  .slot{flex:1;max-width:150px;aspect-ratio:1/1;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;padding:0;position:relative;overflow:hidden;border-radius:0;min-height:0;color:var(--gray);font-size:10px;}
+  .arena{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 0;}
+  .slots{position:relative;display:flex;gap:18px;align-items:flex-start;justify-content:center;width:100%;}
+  .slot{flex:1;max-width:170px;aspect-ratio:1/1;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;padding:0;position:relative;overflow:hidden;border-radius:0;min-height:0;color:var(--gray);font-size:10px;}
   .slot.filled{border-style:solid;border-color:var(--black);}
+  #eSlot{transform:translateY(-9px);} #pSlot{transform:translateY(9px);}
   .slot.win{border-color:var(--win);} .slot.lose{border-color:var(--lose);}
   .slot.win::after,.slot.lose::after{position:absolute;top:5px;right:5px;z-index:3;font-size:11px;font-weight:700;padding:2px 6px;color:#fff;}
   .slot.win::after{content:'勝';background:var(--black);} .slot.lose::after{content:'負';background:var(--dmg);}
@@ -163,7 +164,7 @@
   .hint{text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;margin:6px 0 8px;min-height:12px;}
   .htrow{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;align-items:center;}
   .htrow::-webkit-scrollbar{height:0;}
-  .handtile{flex:none;width:100px;height:100px;border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .12s,border-color .12s;}
+  .handtile{flex:none;width:116px;height:116px;border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .12s,border-color .12s;}
   .handtile:hover{border-color:var(--black);transform:translateY(-3px);}
   .handtile.sel{border-color:var(--black);border-width:2px;transform:translateY(-6px);box-shadow:0 4px 14px rgba(0,0,0,.18);}
   .ht-cover{width:100%;height:100%;background-size:cover;background-position:center;}
@@ -178,6 +179,24 @@
   .pp-act b{color:var(--gold);margin-right:1px;font-size:11px;}
   .pp-act:hover{background:var(--black);color:#fff;} .pp-act:hover b{color:#fff;}
   .pp-ult{flex:1 0 100%;margin-bottom:4px;color:#fff;border-color:#7a1020;background:var(--crimson-shine);background-size:200% 100%;animation:shimmer 7.8s linear infinite;}
+
+  /* 戰鬥畫面：與 battle.html 同——整屏不滾動、牌桌置中、手牌固定底部 */
+  body.in-battle{overflow:hidden;}
+  body.in-battle #app{height:100dvh;overflow:hidden;display:flex;flex-direction:column;padding:8px 14px 4px;}
+  body.in-battle .arena{flex:1 1 0;min-height:0;}
+  body.in-battle .player-zone{flex:none;}
+  body.in-battle #app > .xpbar, body.in-battle #app > .row, body.in-battle #app > .side{flex:none;}
+  body.in-battle .topbar{margin-bottom:6px;padding:6px 0;}
+  /* 手機緊湊化（同 battle.html）：縮手牌、藏文字圖例、牌桌靠上不裁切 */
+  @media (max-width:600px){
+    body.in-battle .arena{justify-content:flex-start;}
+    .slots{gap:12px;}
+    .cheat{gap:10px;margin:4px 0;}
+    .cheat .legend{display:none;}
+    .relring{width:58px;}
+    .handtile{width:74px;height:74px;}
+    .log{height:44px;}
+  }
 </style>
 </head>
 <body>
@@ -381,6 +400,7 @@ function topbarHTML(){
 //  畫面 1：選流派
 // =========================================================================
 function renderClassSelect(){
+  document.body.classList.remove('in-battle');
   const free=freeTalents();
   const talentNote = (spentTalents()>0||free>0)
     ? `<div class="muted" style="margin:6px 0 2px">樂歷天賦（永久三圍）：
@@ -446,6 +466,7 @@ function recomputeMaxHp(prevMax){
 //  畫面 2：挑 3 張種子（用範例卡池當卡冊）
 // =========================================================================
 function renderSeedSelect(){
+  document.body.classList.remove('in-battle');
   const c=CLASSES[RUN.classKey];
   // 卡冊 = 你的收藏圖鑑（靠樂歷升級「抽專輯」擴充）。王牌不可當種子。
   const shelf = META.collection.filter(c=>!c.ace);
@@ -623,6 +644,7 @@ function sideHTML(s, who, side){
   </div>`;
 }
 function renderBattle(){
+  document.body.classList.add('in-battle');
   const pe=G.pendingE;
   const tellTxt = pe ? (pe.ult
       ? '⚡ <b>對手氣勢滿溢</b>，殺氣騰騰（小心品味輾壓）'
@@ -871,6 +893,7 @@ function loseFight(){ G.over=true; renderDeath(); }
 
 let _lvlChoices=null;
 function renderLevelUp(){
+  document.body.classList.remove('in-battle');
   _lvlChoices = shuffle(UPGRADES.slice()).slice(0,3);
   $app.innerHTML = topbarHTML() + `
     <h1 style="color:var(--gold)">⬆ 局內升級 Lv.${RUN.runLevel}</h1>
@@ -894,6 +917,7 @@ function modsLine(){
   return `攻${s.atk} 防${s.def} 氣勢率${s.qir}${extra}`;
 }
 function renderWinContinue(){
+  document.body.classList.remove('in-battle');
   const need=runXpNeed();
   $app.innerHTML = topbarHTML() + `
     <h1 class="good" style="color:var(--win)">第 ${RUN.depth} 場 — 勝！</h1>
@@ -905,6 +929,7 @@ function renderWinContinue(){
 }
 
 function renderDeath(){
+  document.body.classList.remove('in-battle');
   // 樂歷結算經驗（與局內經驗分開算）：依 depth／連勝
   const recordBonus = RUN.depth>META.bestDepth ? MXP.recordBonus : 0;   // 破紀錄額外給
   const gained = RUN.depth*MXP.perDepth + RUN.streak*MXP.perStreak + recordBonus;
