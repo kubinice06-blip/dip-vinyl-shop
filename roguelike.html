@@ -222,7 +222,8 @@
 <!-- 讀取後台設定（gameConfig/roguelike）。讀不到就用內建預設，離線仍可玩。 -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, doc, getDoc, setDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
   window.__rogueCfg = (async () => {
     try {
       const app = initializeApp({
@@ -234,6 +235,18 @@
         appId:"1:570133498387:web:8835b8d2373797e91d0de6"
       });
       const db = getFirestore(app);
+      // ---- 登入（Google）＋ 我的卡冊（與商店同源：collections/{uid}/cards）----
+      const auth = getAuth(app);
+      const provider = new GoogleAuthProvider();
+      let _authResolve; window.__rogueAuthReady = new Promise(r=>_authResolve=r);
+      onAuthStateChanged(auth, u => { if(_authResolve){ _authResolve(u); _authResolve=null; } });
+      window.__rogueUser = () => auth.currentUser;
+      window.__rogueSignIn = () => signInWithPopup(auth, provider);
+      window.__getMyCollection = async () => {
+        const u = auth.currentUser; if(!u) return [];
+        try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>d.data()); }
+        catch(e){ return []; }
+      };
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
       const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
       window.__getCover = async (artist, album) => {
@@ -485,26 +498,82 @@ function recomputeMaxHp(prevMax){
 }
 
 // =========================================================================
-//  畫面 2：挑 3 張種子（用範例卡池當卡冊）
+//  畫面 2：挑 5 張專輯開始旅程
+//   來源兩種：① 我的卡冊（登入才有；讀 Firestore collections/{uid}/cards）
+//             ② 隨機發牌（不論冷熱好壞，整個卡池洗牌取一批；未登入也能玩）
 // =========================================================================
-function renderSeedSelect(){
+// 由名稱雜湊穩定生成 1–5 三圍（卡冊裡 AI 推薦的冷盤沒有遊戲數值時用）
+function hashStats(str){
+  let h=0; for(let i=0;i<str.length;i++){ h=(h*31+str.charCodeAt(i))>>>0; }
+  return { c:1+(h%5), o:1+((h>>>4)%5), a:1+((h>>>8)%5) };
+}
+// 卡冊資料 → 遊戲卡：王牌旗標→ace；POOL 既有→設計數值；其他→雜湊數值
+function cardFromCollection(d){
+  const artist=d.artist||'', album=d.album||'', coverUrl=d.coverUrl||'';
+  const mk=(c,o,a,ace)=>({artist,album,coverUrl,classic:c,obscurity:o,accessibility:a,ace:ace||null});
+  if(d.hall)   return mk(7,1,1,'hall');
+  if(d.pearl)  return mk(1,7,1,'pearl');
+  if(d.heresy) return mk(1,1,7,'heresy');
+  const key=keyOf({artist,album});
+  const inPool = POOL.find(p=>keyOf(p)===key) || ACES.find(p=>keyOf(p)===key);
+  if(inPool) return mk(inPool.classic,inPool.obscurity,inPool.accessibility,inPool.ace||null);
+  const s=hashStats(key); return mk(s.c,s.o,s.a,null);
+}
+// 隨機發牌池：整個 POOL 洗牌取 18 張（冷門到主流、強到弱都有），王牌不發
+function buildRandomShelf(){ return shuffle(POOL.slice()).slice(0,18).map(c=>({...c,ace:null})); }
+
+async function renderSeedSelect(){
   document.body.classList.remove('in-battle');
+  $app.innerHTML = topbarHTML() + `<div class="center muted" style="padding:40px">載入中…</div>`;
+  // 等登入狀態回復（最多等 2.5s，離線/未登入照樣開始）
+  try{ await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
+  const user = window.__rogueUser ? window.__rogueUser() : null;
+  RUN._loggedIn = !!user;
+  if(!RUN._randomShelf) RUN._randomShelf = buildRandomShelf();
+  // 載一次卡冊
+  if(user && !RUN._collLoaded){
+    let raw=[]; try{ raw = await window.__getMyCollection(); }catch(e){}
+    RUN._collShelf = raw.map(cardFromCollection).filter(c=>!c.ace);   // 王牌不可當種子
+    RUN._collLoaded = true;
+  }
+  if(!RUN._source) RUN._source = (user && RUN._collShelf && RUN._collShelf.length>=5) ? 'collection' : 'random';
+  paintSeedScreen();
+}
+function paintSeedScreen(){
   const c=CLASSES[RUN.classKey];
-  // 卡冊 = 你的收藏圖鑑（靠樂歷升級「抽專輯」擴充）。王牌不可當種子。
-  const shelf = META.collection.filter(c=>!c.ace);
+  const user = RUN._loggedIn;
+  const coll = RUN._collShelf||[];
+  const shelf = (RUN._source==='collection') ? coll : RUN._randomShelf;
   RUN._shelf = shelf;
+  RUN.seedsPicked = [];
+  // 來源切換列（登入才顯示卡冊頁籤；未登入給登入鈕）
+  const tab = (src,label,extra='')=>`<button class="btn ${RUN._source===src?'primary':''}" style="flex:1" onclick="setSeedSource('${src}')">${label}${extra}</button>`;
+  const sourceRow = user
+    ? `<div class="row" style="gap:6px;margin:8px 0">${tab('collection','我的卡冊',`（${coll.length}）`)}${tab('random','隨機發牌')}</div>`
+    : `<div class="row" style="gap:8px;margin:8px 0;align-items:center"><span class="muted" style="flex:1">登入後可用自己卡冊裡的專輯出戰</span><button class="btn" onclick="seedSignIn()">Google 登入</button></div>`;
+  const emptyColl = (RUN._source==='collection' && shelf.length<5)
+    ? `<div class="muted" style="margin:6px 0;color:var(--lose)">卡冊不足 5 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
-    <h1>挑 5 張種子盤</h1>
-    <div class="muted" style="margin:4px 0 8px">流派：<b>${c.name}</b>　從你的收藏挑 <b>5 張</b>當核心（共 ${shelf.length} 張；王牌不可當種子）。系統會補基礎雜牌湊成起始牌組。<br><span class="pill">樂歷升級可抽更多專輯進收藏</span></div>
-    <div class="row" style="margin:6px 0">已選 <b id="seedCount">0</b>/5
-      <button class="btn primary" id="seedGo" disabled style="margin-left:auto" onclick="startRun()">開始試煉 →</button></div>
+    <h1>挑 5 張專輯開始旅程</h1>
+    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>5 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。</div>
+    ${sourceRow}${emptyColl}
+    <div class="row" style="margin:4px 0">已選 <b id="seedCount">0</b>/5
+      <button class="btn primary" id="seedGo" disabled style="margin-left:auto" onclick="startRun()">開始旅程 →</button></div>
     <div class="grid" id="shelf"></div>`;
   const wrap=document.getElementById('shelf');
-  wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
-  // 懶載入封面（與戰鬥同源 ensureCover）
-  shelf.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
-    const cov=document.querySelector('#seed'+i+' .cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+  wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
+  // 懶載入封面（卡冊本身多半已帶 coverUrl；隨機發牌走 ensureCover）
+  // 切換來源後，舊 shelf 的回調可能晚到 → 用 data-ck 確認該格仍是同一張卡才寫入
+  shelf.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
+    const slot=document.getElementById('seed'+i); if(!slot || slot.dataset.ck!==ck) return;
+    const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
   updateSeedUI();
+}
+function setSeedSource(src){ if(RUN._source===src) return; RUN._source=src; paintSeedScreen(); }
+async function seedSignIn(){
+  try{ await window.__rogueSignIn(); }catch(e){ return; }
+  RUN._collLoaded=false; RUN._source=null;   // 重新載卡冊、預設切到卡冊
+  renderSeedSelect();
 }
 function toggleSeed(i){
   const idx = RUN.seedsPicked.indexOf(i);
