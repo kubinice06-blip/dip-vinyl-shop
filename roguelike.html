@@ -244,7 +244,7 @@
       window.__rogueSignIn = () => signInWithPopup(auth, provider);
       window.__getMyCollection = async () => {
         const u = auth.currentUser; if(!u) return [];
-        try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>d.data()); }
+        try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>({cardId:d.id,...d.data()})); }
         catch(e){ return []; }
       };
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
@@ -258,6 +258,25 @@
           if(url){ try{ setDoc(doc(db,'card_catalog',id),{cardId:id,artist,album,coverUrl:url,updatedAt:Date.now()},{merge:true}).catch(()=>{}); }catch(e){} }
           return url;
         } catch(e){ return ''; }
+      };
+      // 專輯評分（與主選單卡冊同源）：worker /album-rating（KV 快取的 AI 評分）＋ album_overrides 人工校正
+      window.__getAlbumRating = async (artist, album, cardId) => {
+        let r = null;
+        try {
+          const res = await fetch(WORKER_URL+'/album-rating?artist='+encodeURIComponent(artist)+'&album='+encodeURIComponent(album));
+          if(res.ok) r = await res.json();
+        } catch(e){}
+        if(cardId){
+          try {
+            const s = await getDoc(doc(db,'album_overrides',cardId));
+            if(s.exists()){ const ov=s.data(); r=r||{};
+              if(ov.classic) r.classic=ov.classic;
+              if(ov.obscurity) r.obscurity=ov.obscurity;
+              if(ov.accessibility) r.accessibility=ov.accessibility;
+            }
+          } catch(e){}
+        }
+        return r;
       };
       const s = await getDoc(doc(db,'gameConfig','roguelike'));
       return s.exists() ? s.data() : null;
@@ -507,6 +526,8 @@ function hashStats(str){
   let h=0; for(let i=0;i<str.length;i++){ h=(h*31+str.charCodeAt(i))>>>0; }
   return { c:1+(h%5), o:1+((h>>>4)%5), a:1+((h>>>8)%5) };
 }
+// 把卡冊評分(1–5)夾到合法區間；取不到就用 fallback（hashStats/POOL 的值）
+function clampStat(v, fallback){ v=Number(v); if(!v) return fallback; return Math.max(1,Math.min(5,Math.round(v))); }
 // 卡冊資料 → 遊戲卡：王牌旗標→ace；POOL 既有→設計數值；其他→雜湊數值
 function cardFromCollection(d){
   const artist=d.artist||'', album=d.album||'', coverUrl=d.coverUrl||'';
@@ -533,7 +554,19 @@ async function renderSeedSelect(){
   // 載一次卡冊
   if(user && !RUN._collLoaded){
     let raw=[]; try{ raw = await window.__getMyCollection(); }catch(e){}
-    RUN._collShelf = raw.map(cardFromCollection).filter(c=>!c.ace);   // 王牌不可當種子
+    // 三圍以卡冊為基準：跟主選單卡冊同源（/album-rating + album_overrides），取不到才退回 hashStats/POOL
+    const cards = await Promise.all(raw.map(async d=>{
+      const c = cardFromCollection(d);
+      if(c.ace) return c;   // 王牌單軸 7，下面 filter 會排除，不用覆寫
+      let r=null; try{ r = await window.__getAlbumRating(d.artist||'', d.album||'', d.cardId); }catch(e){}
+      if(r){
+        c.classic = clampStat(r.classic, c.classic);
+        c.obscurity = clampStat(r.obscurity, c.obscurity);
+        c.accessibility = clampStat(r.accessibility, c.accessibility);
+      }
+      return c;
+    }));
+    RUN._collShelf = cards.filter(c=>!c.ace);   // 王牌不可當種子
     RUN._collLoaded = true;
   }
   if(!RUN._source) RUN._source = (user && RUN._collShelf && RUN._collShelf.length>=5) ? 'collection' : 'random';
