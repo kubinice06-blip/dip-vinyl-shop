@@ -69,6 +69,10 @@
   .pip.on.accessibility{background:var(--accessibility);border-color:var(--accessibility);}
   .acebadge{position:absolute;top:6px;right:6px;font-size:8px;font-weight:700;letter-spacing:0.08em;color:var(--gold);border:1px solid var(--gold);border-radius:0;padding:1px 5px;}
   .junk .al{color:var(--gray);}
+  /* 選種子卡的封面縮圖 */
+  .card .cover{width:100%;aspect-ratio:1;background-size:cover;background-position:center;border:1px solid var(--line);margin-bottom:6px;}
+  .card .cover.noimg{display:flex;align-items:center;justify-content:center;padding:6px;text-align:center;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px);}
+  .card .cover.noimg span{font-size:10px;font-weight:700;color:#444;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
 
   /* battle */
   .fighter{border:1px solid var(--line);background:#fff;border-radius:0;padding:10px 12px;margin-bottom:8px;}
@@ -387,8 +391,13 @@ function starsHTML(c){
 function cardHTML(c, opts={}){
   const cls = ['card', c.ace?'ace':'', c.junk?'junk':'', opts.sel?'sel':'', opts.clk?'clk':''].filter(Boolean).join(' ');
   const ace = c.ace?`<span class="acebadge">${ACE_ZH[c.ace]}</span>`:'';
+  const cover = opts.cover
+    ? (c.coverUrl
+        ? `<div class="cover" style="background-image:url('${String(c.coverUrl).replace(/'/g,'%27')}')"></div>`
+        : `<div class="cover noimg"><span>${c.album}</span></div>`)
+    : '';
   return `<div class="${cls}" ${opts.attr?`data-uid="${c.uid}"`:''}>
-    ${ace}<div class="al">${c.album}</div><div class="ar">${c.artist}</div>
+    ${ace}${cover}<div class="al">${c.album}</div><div class="ar">${c.artist}</div>
     <div class="stats">${starsHTML(c)}</div></div>`;
 }
 
@@ -485,24 +494,27 @@ function renderSeedSelect(){
   const shelf = META.collection.filter(c=>!c.ace);
   RUN._shelf = shelf;
   $app.innerHTML = topbarHTML() + `
-    <h1>挑 3 張種子盤</h1>
-    <div class="muted" style="margin:4px 0 8px">流派：<b>${c.name}</b>　從你的收藏挑 <b>3 張</b>當核心（共 ${shelf.length} 張；王牌不可當種子）。系統會補基礎雜牌湊成起始牌組。<br><span class="pill">樂歷升級可抽更多專輯進收藏</span></div>
-    <div class="row" style="margin:6px 0">已選 <b id="seedCount">0</b>/3
+    <h1>挑 5 張種子盤</h1>
+    <div class="muted" style="margin:4px 0 8px">流派：<b>${c.name}</b>　從你的收藏挑 <b>5 張</b>當核心（共 ${shelf.length} 張；王牌不可當種子）。系統會補基礎雜牌湊成起始牌組。<br><span class="pill">樂歷升級可抽更多專輯進收藏</span></div>
+    <div class="row" style="margin:6px 0">已選 <b id="seedCount">0</b>/5
       <button class="btn primary" id="seedGo" disabled style="margin-left:auto" onclick="startRun()">開始試煉 →</button></div>
     <div class="grid" id="shelf"></div>`;
   const wrap=document.getElementById('shelf');
-  wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}">${cardHTML(c,{clk:true})}</div>`).join('');
+  wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
+  // 懶載入封面（與戰鬥同源 ensureCover）
+  shelf.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
+    const cov=document.querySelector('#seed'+i+' .cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
   updateSeedUI();
 }
 function toggleSeed(i){
   const idx = RUN.seedsPicked.indexOf(i);
   if(idx>=0) RUN.seedsPicked.splice(idx,1);
-  else { if(RUN.seedsPicked.length>=3) return; RUN.seedsPicked.push(i); }
+  else { if(RUN.seedsPicked.length>=5) return; RUN.seedsPicked.push(i); }
   updateSeedUI();
 }
 function updateSeedUI(){
   document.getElementById('seedCount').textContent = RUN.seedsPicked.length;
-  document.getElementById('seedGo').disabled = RUN.seedsPicked.length!==3;
+  document.getElementById('seedGo').disabled = RUN.seedsPicked.length!==5;
   RUN._shelf.forEach((c,i)=>{
     const el=document.getElementById('seed'+i); if(!el) return;
     const card=el.querySelector('.card');
@@ -521,9 +533,9 @@ function makeJunk(){
 }
 
 function startRun(){
-  if(RUN.seedsPicked.length!==3) return;
+  if(RUN.seedsPicked.length!==5) return;
   const seeds = RUN.seedsPicked.map(i=>copyCard(RUN._shelf[i]));
-  RUN.deck = seeds.concat(makeJunk());   // 3 種子 + 5 雜牌 = 8 張
+  RUN.deck = seeds.concat(makeJunk());   // 5 種子 + 5 雜牌 = 10 張
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
   nextFight();
 }
