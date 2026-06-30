@@ -939,7 +939,7 @@ function renderWinContinue(){
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     <div style="font-size:11px;color:var(--dim);margin-bottom:12px">能力：${modsLine()}</div>
     ${RUN._drewThisWin
-      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已收進卡組（共 ${RUN.deck.length} 張）</div>`
+      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）${RUN._drewThisKept?'，並永久收進卡冊':'，趟結束後消失'}</div>`
       : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
     <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
 }
@@ -990,7 +990,8 @@ function openDrawReveal(){
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
-    <button class="btn primary" style="width:100%" onclick="confirmDraw()">＋ 加入卡組</button>
+    <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="confirmDraw(true)">★ 收進卡冊（永久保留）</button>
+    <button class="btn" style="width:100%" onclick="confirmDraw(false)">只加本趟牌組（趟結束消失）</button>
   </div>`;
   document.body.appendChild(mask);
   ensureCover(c).then(url=>{
@@ -999,9 +1000,15 @@ function openDrawReveal(){
   });
   streamRogueReason(c, document.getElementById('drawIntro'));
 }
-function confirmDraw(){
+function confirmDraw(keep){
   if(!_drawCard) return;
-  RUN.deck.push(_drawCard);
+  RUN.deck.push(_drawCard);                 // 本趟牌組（趟結束洗掉）
+  if(keep && !META.collection.some(c=>keyOf(c)===keyOf(_drawCard))){
+    // 永久收進卡冊：之後挑種子、撿盤都能用到
+    META.collection.push({artist:_drawCard.artist,album:_drawCard.album,classic:_drawCard.classic,obscurity:_drawCard.obscurity,accessibility:_drawCard.accessibility,ace:_drawCard.ace||null});
+    saveMeta();
+  }
+  RUN._drewThisKept = !!keep;
   RUN._drewThisWin = true;
   _drawCard = null;
   const m = document.getElementById('drawMask'); if(m) m.remove();
