@@ -144,6 +144,8 @@
   .slot.filled{border-style:solid;border-color:var(--black);}
   #eSlot{transform:translateY(-9px);} #pSlot{transform:translateY(9px);}
   .slot.win{border-color:var(--win);} .slot.lose{border-color:var(--lose);}
+  .slot.done{filter:grayscale(.35);opacity:.9;}            /* 上一手：留在檯面、稍微變灰 */
+  .slot.clk{cursor:pointer;} .slot.clk:hover{border-color:var(--black);}
   .slot.win::after,.slot.lose::after{position:absolute;top:5px;right:5px;z-index:3;font-size:11px;font-weight:700;padding:2px 6px;color:#fff;}
   .slot.win::after{content:'勝';background:var(--black);} .slot.lose::after{content:'負';background:var(--dmg);}
   .vs{align-self:center;font-weight:700;font-size:13px;color:var(--gray);letter-spacing:0.1em;}
@@ -295,7 +297,7 @@
 
 // ---------- 戰鬥規則（與 CARD_GAME_DESIGN §8 / battle.html 一致；roguelike override）----------
 const CFG = {
-  startHp:12,            // roguelike 快打：HP 大幅調低 → 3~4 招分勝負
+  startHp:10,            // roguelike 快打：HP 更低（10）→ 更快分勝負、玩家更需步步為營
   startHand:5, drawPerTurn:1, handLimit:7,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生（與 beats 反向）
@@ -350,6 +352,75 @@ const POOL = [
   ['Four Tet','Rounds',3,3,3],['Autechre','Tri Repetae',2,5,5],
   ['Boredoms','Vision Creation Newsun',2,5,4],['Fela Kuti','Zombie',3,4,3],
   ['Taylor Swift','1989',2,1,1],['Ed Sheeran','÷',1,1,1],
+  // ── 擴充卡池（讓每回合抽牌更豐富，不再老是那幾張）──
+  // 搖滾／經典正典
+  ['The Beatles','Revolver',5,1,3],['The Beach Boys','Pet Sounds',5,2,3],
+  ['Bob Dylan','Highway 61 Revisited',5,2,3],['The Rolling Stones','Exile on Main St.',4,2,2],
+  ['Led Zeppelin','Led Zeppelin IV',5,1,2],['Pink Floyd','Wish You Were Here',5,2,3],
+  ['David Bowie','Hunky Dory',4,2,3],['Fleetwood Mac','Rumours',4,1,1],
+  ['Neil Young','After the Gold Rush',4,2,2],['Joni Mitchell','Blue',5,2,3],
+  ['Van Morrison','Astral Weeks',4,3,4],['The Clash','London Calling',4,2,2],
+  ['Patti Smith','Horses',4,3,3],['Talking Heads','Remain in Light',4,3,3],
+  ['Bruce Springsteen','Born to Run',4,1,1],['The Smiths','The Queen Is Dead',4,2,3],
+  ['New Order','Power, Corruption & Lies',4,3,3],['The Cure','Disintegration',4,2,3],
+  ['Depeche Mode','Violator',4,2,2],['R.E.M.','Automatic for the People',4,2,2],
+  // 獨立／另類
+  ['Wilco','Yankee Hotel Foxtrot',4,3,3],['The National','Boxer',3,3,2],
+  ['Arcade Fire','Funeral',4,2,2],['Modest Mouse','The Lonesome Crowded West',3,3,3],
+  ['Built to Spill','Perfect from Now On',3,4,3],['Neutral Milk Hotel','In the Aeroplane Over the Sea',4,3,3],
+  ['Elliott Smith','Either/Or',3,3,3],['Yo La Tengo','I Can Hear the Heart Beating as One',3,4,3],
+  ['Galaxie 500','On Fire',3,4,3],['The Microphones','The Glow Pt. 2',3,5,4],
+  ['Sunny Day Real Estate','Diary',3,4,3],['American Football','American Football',3,4,3],
+  ['Alex G','Rocket',3,3,2],['Big Thief','Two Hands',3,3,2],
+  ['Sufjan Stevens','Carrie & Lowell',3,3,2],['Phoebe Bridgers','Punisher',3,2,2],
+  ['Weyes Blood','Titanic Rising',3,3,2],['Angel Olsen','Burn Your Fire for No Witness',3,3,2],
+  ['Deerhunter','Halcyon Digest',3,4,3],['Animal Collective','Merriweather Post Pavilion',3,3,3],
+  ['Fleet Foxes','Fleet Foxes',3,2,2],['Vampire Weekend','Modern Vampires of the City',3,2,2],
+  // 電子
+  ['Aphex Twin','Richard D. James Album',4,4,3],['Squarepusher','Feed Me Weird Things',2,5,4],
+  ['Boards of Canada','Geogaddi',3,4,3],['The Chemical Brothers','Dig Your Own Hole',3,2,2],
+  ['Daft Punk','Discovery',4,1,1],['The Avalanches','Since I Left You',3,3,2],
+  ['Caribou','Swim',3,3,2],['Jamie xx','In Colour',3,2,2],
+  ['Floating Points','Elaenia',3,4,3],['Nicolas Jaar','Space Is Only Noise',3,4,4],
+  ['Oneohtrix Point Never','R Plus Seven',2,5,4],['Actress','R.I.P.',2,5,4],
+  ['Gas','Pop',2,5,4],['William Basinski','The Disintegration Loops',2,5,5],
+  // 嘻哈
+  ['Nas','Illmatic',5,2,2],['Wu-Tang Clan','Enter the Wu-Tang (36 Chambers)',4,2,2],
+  ['OutKast','Aquemini',4,2,2],['Kendrick Lamar','To Pimp a Butterfly',4,2,2],
+  ['Kanye West','My Beautiful Dark Twisted Fantasy',4,1,1],['MF DOOM','MM..FOOD',3,4,3],
+  ['Danny Brown','Atrocity Exhibition',3,4,4],['Death Grips','The Money Store',3,4,5],
+  ['clipping.','Splendor & Misery',2,5,5],['Earl Sweatshirt','Some Rap Songs',3,4,4],
+  ['GZA','Liquid Swords',4,3,2],['Frank Ocean','Blonde',4,2,1],
+  // 爵士
+  ['Miles Davis','Kind of Blue',5,2,3],['John Coltrane','A Love Supreme',5,3,4],
+  ['Charles Mingus','The Black Saint and the Sinner Lady',4,4,4],['Herbie Hancock','Head Hunters',4,2,2],
+  ['Bill Evans','Sunday at the Village Vanguard',4,3,3],['Ornette Coleman','The Shape of Jazz to Come',3,4,4],
+  ['Eric Dolphy','Out to Lunch!',3,5,4],['Sun Ra','Space Is the Place',3,4,5],
+  ['Alice Coltrane','Journey in Satchidananda',4,4,3],['Pharoah Sanders','Karma',3,4,4],
+  // 靈魂／放克／世界
+  ['Marvin Gaye',"What's Going On",5,1,2],['Stevie Wonder','Songs in the Key of Life',5,1,2],
+  ['Curtis Mayfield','Superfly',4,2,2],["D'Angelo",'Voodoo',4,3,3],
+  ['Sly and the Family Stone',"There's a Riot Goin' On",4,3,3],['Caetano Veloso','Transa',3,5,3],
+  ['Milton Nascimento','Clube da Esquina',3,5,3],['Arthur Russell','World of Echo',3,5,4],
+  // 重／實驗
+  ['Black Sabbath','Paranoid',4,2,2],['Metallica','Master of Puppets',4,1,2],
+  ['Godspeed You! Black Emperor','Lift Your Skinny Fists Like Antennas to Heaven',3,4,4],
+  ['Sunn O)))','Monoliths & Dimensions',2,5,5],['Deafheaven','Sunbather',3,4,3],
+  ['Converge','Jane Doe',3,4,4],['Boris','Pink',2,5,4],
+  // 後龐克／噪音
+  ['Fugazi','Repeater',3,4,3],['The Fall','Hex Enduction Hour',2,5,4],
+  ['Gang of Four','Entertainment!',3,4,3],['This Heat','Deceit',2,5,5],
+  ['Suicide','Suicide',3,4,4],['Public Image Ltd','Metal Box',3,5,4],
+  // 夢幻流行／瞪鞋
+  ['Slowdive','Souvlaki',4,3,3],['Ride','Nowhere',3,3,3],
+  ['Beach House','Bloom',3,2,2],['The Jesus and Mary Chain','Psychocandy',4,3,3],
+  // 民謠
+  ['Vashti Bunyan','Just Another Diamond Day',3,5,2],['Karen Dalton','In My Own Time',3,5,3],
+  ['Judee Sill','Judee Sill',3,5,3],['John Fahey','The Transfiguration of Blind Joe Death',2,5,3],
+  // 流行（好入耳、低冷門）
+  ['Michael Jackson','Thriller',4,1,1],['Prince','Purple Rain',4,1,1],
+  ['Lorde','Melodrama',3,1,1],['Robyn','Body Talk',3,2,1],
+  ['Carly Rae Jepsen','Emotion',2,2,1],['SZA','Ctrl',3,1,1],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 const ACES = [
   {artist:'Radiohead',album:'OK Computer',classic:7,obscurity:1,accessibility:1,ace:'hall'},
@@ -361,15 +432,15 @@ const ACES = [
 // affinity＝該派系的「親和屬性」：打那個屬性的牌會觸發專屬 buff（affBuff）。
 //   affBuff: { hp:n 額外回聲望 / qi:n 額外氣勢 / dmg:n 額外傷害 / foeQi:n 額外削對手氣勢 }
 let CLASSES = {
-  guard: { name:'守舊派', tag:'〔守〕經典 · 高血線耐久', stats:{atk:1,def:3,qir:1}, maxHpBonus:5, qiPerTurn:0,
-           affinity:'classic', affBuff:{hp:2}, affDesc:'打【經典】牌：額外回 +2 聲望(HP)',
-           desc:'起始聲望(HP)高、防禦厚，靠扛住對手慢慢磨。' },
-  digger:{ name:'挖掘派', tag:'〔挖〕冷門 · 氣勢爆發', stats:{atk:1,def:1,qir:2}, maxHpBonus:0, qiPerTurn:1,
-           affinity:'obscurity', affBuff:{qi:2}, affDesc:'打【冷門】牌：額外 +2 氣勢',
-           desc:'每回合氣勢自動 +1、充能更快，更常放品味輾壓。' },
-  heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:3,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
-           affinity:'accessibility', affBuff:{dmg:2,foeQi:1}, affDesc:'打【入耳】牌：額外 +2 傷害、削對手 1 氣勢',
-           desc:'攻擊高、傷害狠，打快攻速戰速決。' },
+  guard: { name:'守舊派', tag:'〔守〕經典 · 高血線耐久', stats:{atk:1,def:2,qir:1}, maxHpBonus:3, qiPerTurn:0,
+           affinity:'classic', affBuff:{hp:1}, affDesc:'打【經典】牌：額外回 +1 聲望(HP)',
+           desc:'起始聲望(HP)略高、防禦稍厚，靠扛住對手慢慢磨。' },
+  digger:{ name:'挖掘派', tag:'〔挖〕冷門 · 氣勢爆發', stats:{atk:1,def:1,qir:1}, maxHpBonus:0, qiPerTurn:1,
+           affinity:'obscurity', affBuff:{qi:1}, affDesc:'打【冷門】牌：額外 +1 氣勢',
+           desc:'每回合氣勢自動 +1、充能較快，較常放品味輾壓。' },
+  heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:2,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
+           affinity:'accessibility', affBuff:{dmg:1,foeQi:1}, affDesc:'打【入耳】牌：額外 +1 傷害、削對手 1 氣勢',
+           desc:'攻擊較高、傷害狠，打快攻速戰速決。' },
 };
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
 const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
@@ -471,6 +542,7 @@ function renderClassSelect(){
       <button class="btn" onclick="spendTalent('qir')">氣勢率 +1</button>
     </div>` : '';
   $app.innerHTML = topbarHTML() + `
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
     <div class="muted" style="margin:4px 0 10px">選流派 → 挑 3 張種子盤 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${talentNote}${tBtns}
@@ -660,15 +732,27 @@ function startRun(){
 //  無限賽局：開下一場（敵人隨 depth 變強）
 // =========================================================================
 function enemyForDepth(d){
-  // 難度：前段 easy、中段 normal、深層 hard
-  const diff = d<3?'easy' : d<7?'normal' : 'hard';
-  // 敵人三圍隨深度爬升（HP 只微升，避免拖慢快打）
-  const stats = { atk:Math.floor(d/3), def:Math.floor(d/4), qir:Math.floor(d/5) };
-  const hp = CFG.startHp + Math.floor(d/2);
-  // 牌組：卡池隨機 ~10；深層摻王牌
-  const deck=[]; const pool=shuffle(POOL.slice());
-  for(let i=0;i<10;i++) deck.push(copyCard(pool[i%pool.length]));
-  if(d>=5 && Math.random()<Math.min(.6,.15*(d-3))) deck.push(copyCard(pick(ACES)));
+  // 難度陡升：第2場就 normal、第4場起 hard（讀心＋虛晃全開）
+  const diff = d<2?'easy' : d<4?'normal' : 'hard';
+  // 敵人三圍隨深度陡升（第4場就有輾壓氣勢）：攻長最快、血也明顯變厚
+  const stats = { atk:Math.round(d*0.7), def:Math.round(d*0.45), qir:Math.round(d*0.5) };
+  const hp = CFG.startHp + Math.floor(d*1.6);
+  // 牌組：偏向卡池中的「強牌」，並隨深度整體加值 → 數值更好、主軸更犀利、也更好猜對手主打
+  const buff = Math.floor(d/2);                 // 每 2 場，敵牌主軸 +1（上限 6）
+  const ranked = POOL.slice().sort((a,b)=>
+    (b.classic+b.obscurity+b.accessibility)-(a.classic+a.obscurity+a.accessibility));
+  const top = ranked.slice(0, Math.min(ranked.length, 16 + d*3));  // 前段只放強牌，深層才放行雜牌
+  const bag = shuffle(top);
+  const deck=[];
+  for(let i=0;i<11;i++){
+    const c=copyCard(bag[i%bag.length]);
+    if(buff>0){                                 // 加在該卡最高的主軸上，讓敵牌更難纏
+      const mainAttr = ATTRS.reduce((m,a)=>c[a]>c[m]?a:m, 'classic');
+      c[mainAttr]=Math.min(6, c[mainAttr]+buff);
+    }
+    deck.push(c);
+  }
+  if(d>=4 && Math.random()<Math.min(.7,.2*(d-2))) deck.push(copyCard(pick(ACES)));
   shuffle(deck);
   const titles=['音樂小白','文青同好','社團學長','資深樂評','二手店老闆','地下廠牌主理人','傳說藏家','品味之神'];
   const who = titles[Math.min(titles.length-1, Math.floor(d/2))];
@@ -711,13 +795,19 @@ function applyAttrEffect(side, attr){
 // AI：暗定出招 + 露氣場提示（照剋會虛晃）
 function aiPlan(){
   const diff=G.diff, hand=G.e.hand; let best=null;
+  const depth = RUN ? RUN.depth : 1;
+  // 讀心：玩家常「順著相生」接招（chainNext），對手就專挑能剋掉玩家預期出招的屬性
+  const predicted = G.p.last!==null ? CFG.chainNext[G.p.last] : null;
+  const wantCounter = predicted ? COUNTER_OF[predicted] : null;   // 能剋掉玩家預期招的屬性
   for(const card of hand){ for(const attr of ATTRS){
     let s=1; const chainHit=G.e.last!==null && CFG.chainNext[G.e.last]===attr;
     if(diff==='easy'){ s+=Math.random()*5; }
-    else if(diff==='hard'){ if(chainHit)s+=2; s+=card[attr]*0.3;
-      if(card.ace==='heresy')s+=(G.p.qi>=4?5:-1); if(card.ace==='hall')s+=(G.p.qi>=3?3:.2); if(card.ace==='pearl')s+=1.2; s+=Math.random()*1.5; }
-    else { if(chainHit)s+=1; s+=card[attr]*0.15;
-      if(card.ace==='heresy')s+=(G.p.qi>=5?3:.3); if(card.ace==='hall')s+=(G.p.qi>=4?1.5:.5); if(card.ace==='pearl')s+=.8; s+=Math.random()*4; }
+    else if(diff==='hard'){ if(chainHit)s+=2; s+=card[attr]*0.35;
+      if(wantCounter && attr===wantCounter) s += 3 + depth*0.25;    // 深層讀心越準，越常剋在玩家臉上
+      if(card.ace==='heresy')s+=(G.p.qi>=4?5:-1); if(card.ace==='hall')s+=(G.p.qi>=3?3:.2); if(card.ace==='pearl')s+=1.2; s+=Math.random()*1.2; }
+    else { if(chainHit)s+=1; s+=card[attr]*0.2;
+      if(wantCounter && attr===wantCounter) s += 1.4;
+      if(card.ace==='heresy')s+=(G.p.qi>=5?3:.3); if(card.ace==='hall')s+=(G.p.qi>=4?1.5:.5); if(card.ace==='pearl')s+=.8; s+=Math.random()*3; }
     if(!best||s>best.s) best={card,attr,s};
   }}
   return best;
@@ -812,6 +902,14 @@ function renderBattle(){
       <div class="log" id="log">${G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('')}</div>
     </div>`;
   renderHand();
+  paintBoardSlots();
+}
+// 上一手雙方的牌留在檯面（變灰、可點看介紹、勝負標記照舊）——同 battle.html
+function paintBoardSlots(){
+  if(!G) return;
+  const es=document.getElementById('eSlot'), ps=document.getElementById('pSlot');
+  if(es && G.eShow){ es.className=(G.eSlotCls||'slot filled')+' done clk'; es.innerHTML=boardCardHTML(G.eShow); lazyCover('eSlot',G.eShow); es.onclick=()=>{ if(G&&G.eShow) openCardInfo(G.eShow); }; }
+  if(ps && G.pShow){ ps.className=(G.pSlotCls||'slot filled')+' done clk'; ps.innerHTML=boardCardHTML(G.pShow); lazyCover('pSlot',G.pShow); ps.onclick=()=>{ if(G&&G.pShow) openCardInfo(G.pShow); }; }
 }
 let _sel=null;
 function renderHand(){
@@ -948,6 +1046,10 @@ async function play(uid, pAttr){
 
   // 結算畫面
   markResult(pCard,eCard);
+  // 記住這一手雙方的牌＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
+  G.pShow=pCard; G.eShow=eCard;
+  const _psE=document.getElementById('pSlot'), _esE=document.getElementById('eSlot');
+  G.pSlotCls=_psE?_psE.className:'slot filled'; G.eSlotCls=_esE?_esE.className:'slot filled';
   refreshFighters();
   await sleep(900);
 
@@ -1143,6 +1245,39 @@ function confirmDraw(keep){
   renderWinContinue();
 }
 
+// ----- 點檯面卡／死亡結算抽到的盤：揭曉封面＋三圍＋專輯簡介（可關閉）-----
+async function loadAlbumDesc(card, el){
+  let txt='（暫無簡介）';
+  try{
+    const r=await fetch(RG_WORKER+'/album-desc?artist='+encodeURIComponent(card.artist)+'&album='+encodeURIComponent(card.album));
+    if(r.ok){ const d=await r.json(); if(d && (d.desc||'').trim()) txt=d.desc.trim(); }
+  }catch(e){}
+  if(el){ el.classList.remove('wait'); el.textContent=txt; }
+}
+function closeCardInfo(){ const m=document.getElementById('cardInfoMask'); if(m) m.remove(); }
+function openCardInfo(card){
+  if(!card || document.getElementById('cardInfoMask') || document.getElementById('drawMask')) return;
+  const aceTag = card.ace ? `<span class="acebadge">${ACE_ZH[card.ace]}</span>` : '';
+  const mask=document.createElement('div');
+  mask.className='drawmask'; mask.id='cardInfoMask';
+  mask.innerHTML=`<div class="drawcard">
+    <div class="lab">卡片資訊</div>
+    ${card.coverUrl
+      ? `<img class="cov" src="${String(card.coverUrl).replace(/'/g,'%27')}" alt="">`
+      : `<div class="cov noimg"><span>${card.album}</span></div>`}
+    <div class="ar">${card.artist}</div>
+    <div class="al">${card.album}</div>
+    ${aceTag}
+    <div class="stats">${starsHTML(card)}</div>
+    <div class="intro wait" id="ciIntro">介紹載入中…</div>
+    <button class="btn primary" style="width:100%" onclick="closeCardInfo()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeCardInfo(); });
+  document.body.appendChild(mask);
+  if(!card.coverUrl) ensureCover(card).then(url=>{ const el=mask.querySelector('.cov'); if(url && el && el.tagName!=='IMG'){ el.outerHTML=`<img class="cov" src="${String(url).replace(/'/g,'%27')}" alt="">`; } });
+  loadAlbumDesc(card, document.getElementById('ciIntro'));
+}
+
 function renderDeath(){
   document.body.classList.remove('in-battle');
   // 樂歷結算經驗（與局內經驗分開算）：依 depth／連勝
@@ -1158,10 +1293,12 @@ function renderDeath(){
   // 每升一級樂歷 → 抽一張專輯進收藏（升級獎勵之一）
   const drawn=[]; for(let i=0;i<gainedLevels;i++){ const c=drawAlbum(); if(c) drawn.push(c); }
   saveMeta();
+  window._deathDrawn = drawn;
   const drawnHTML = drawn.length ? `
     <div class="sp"></div>
     <div style="color:var(--gold);font-weight:700">🎁 抽到 ${drawn.length} 張新專輯進收藏！</div>
-    <div class="grid" style="margin:8px 0">${drawn.map(c=>cardHTML(c)).join('')}</div>` : '';
+    <div class="muted" style="font-size:10px;margin-top:2px">點專輯看封面與介紹</div>
+    <div class="grid" style="margin:8px 0" id="deathDrawn">${drawn.map((c,i)=>`<div onclick="openCardInfo(window._deathDrawn[${i}])" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="death">
       <div class="muted">試煉終結</div>
@@ -1176,7 +1313,13 @@ function renderDeath(){
       <div class="muted">收藏：${META.collection.length} 張專輯</div>
       <div class="sp"></div>
       <button class="btn primary" style="width:100%" onclick="renderClassSelect()">再來一趟 →</button>
+      <div class="sp"></div>
+      <button class="btn" style="width:100%" onclick="location.href='index.html'">← 回主選單</button>
     </div>`;
+  // 抽到的專輯懶載入封面
+  drawn.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
+    const wrap=document.getElementById('deathDrawn'); if(!wrap||!wrap.children[i]) return;
+    const cov=wrap.children[i].querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
 }
 
 // 套用後台設定（部分覆寫，缺的用內建預設）
