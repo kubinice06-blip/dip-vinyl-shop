@@ -205,6 +205,26 @@
     .cardgrid-album { font-size: 11px; font-weight: 700; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .cardgrid-artist { font-size: 10px; color: var(--gray); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+    /* 合併分頁的子分頁 */
+    .subtab-bar { display: flex; border: 1px solid var(--line); background: #fff; margin-bottom: 18px; width: max-content; max-width: 100%; }
+    .subtab-btn { background: none; border: none; border-right: 1px solid var(--line); padding: 9px 18px; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; cursor: pointer; color: var(--gray); transition: all 0.12s; }
+    .subtab-btn:last-child { border-right: none; }
+    .subtab-btn:hover { color: var(--black); }
+    .subtab-btn.active { background: var(--black); color: #fff; }
+    .subpanel { display: none; }
+    .subpanel.active { display: block; }
+
+    /* 頂級牌網格：卡片下方操作鈕 */
+    .cardgrid-actions { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+    .cardgrid-actions button { flex: 1; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; padding: 3px 0; cursor: pointer; color: var(--black); transition: all 0.12s; white-space: nowrap; }
+    .cardgrid-actions .apex-gen-one { flex-basis: 100%; border-color: var(--black); font-weight: 700; }
+    .cardgrid-actions button:hover { border-color: var(--black); }
+    .cardgrid-actions .apex-del { color: var(--red); }
+
+    /* 非商品分頁隱藏左側商品欄 */
+    .site-layout.no-left { grid-template-columns: 1fr; }
+    .site-layout.no-left .left { display: none; }
+
     /* 卡牌校正：彈出編輯 modal */
     .ov-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 9000; overflow-y: auto; padding: 40px 16px; }
     .ov-modal.open { display: flex; }
@@ -253,17 +273,12 @@
 
 <div class="tab-bar">
   <button class="tab-btn active" data-tab="edit">編輯商品</button>
-  <button class="tab-btn" data-tab="archive">Digital Archive</button>
   <button class="tab-btn" data-tab="sort">商品排序</button>
-  <button class="tab-btn" data-tab="questions">題目管理</button>
-  <button class="tab-btn" data-tab="reels">Reels 管理</button>
-  <button class="tab-btn" data-tab="banner">首頁 Banner</button>
-  <button class="tab-btn" data-tab="cards">卡牌校正</button>
-  <button class="tab-btn" data-tab="apex">👑 頂級牌</button>
+  <button class="tab-btn" data-tab="content">內容管理</button>
+  <button class="tab-btn" data-tab="cards">🎴 卡牌管理</button>
+  <button class="tab-btn" data-tab="game">🎮 遊戲設定</button>
   <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
-  <button class="tab-btn" data-tab="game-battle">🎴 對戰系統</button>
-  <button class="tab-btn" data-tab="game-roguelike">🎮 Roguelike</button>
 </div>
 
 <div class="site-layout">
@@ -541,33 +556,6 @@
     </div>
   </div><!-- end panel-edit -->
 
-  <!-- Digital Archive panel -->
-  <div class="right-panel" id="panel-archive">
-    <div style="max-width:640px;">
-      <div class="section">
-        <div class="section-label">新增 Digital Archive</div>
-        <div class="field">
-          <label>YouTube 連結</label>
-          <input type="text" id="archiveUrl" placeholder="https://www.youtube.com/watch?v=...">
-        </div>
-        <div id="archivePreview" style="display:none;margin-bottom:12px;">
-          <img id="archiveThumb" src="" style="width:100%;max-height:200px;object-fit:cover;display:block;margin-bottom:8px;">
-          <div id="archiveTitle" style="font-weight:700;font-size:12px;margin-bottom:4px;"></div>
-          <div id="archiveArtist" style="font-size:10px;color:var(--gray);"></div>
-        </div>
-        <div class="field"><label>標題（可自行修改）</label><input type="text" id="archiveTitleInput" placeholder="自動帶入 YouTube 標題"></div>
-        <div class="field"><label>藝人</label><input type="text" id="archiveArtistInput" placeholder="藝人名稱…"></div>
-        <button class="btn-save" id="btnAddArchive">新增到 Digital Archive</button>
-        <div class="msg" id="archiveMsgBox"></div>
-      </div>
-
-      <div class="section" style="margin-top:24px;">
-        <div class="section-label">現有 Archive（可拖曳排序）</div>
-        <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
-      </div>
-    </div>
-  </div>
-
   <!-- 商品排序 panel -->
   <div class="right-panel" id="panel-sort">
     <div style="max-width:640px;">
@@ -588,9 +576,16 @@
     </div>
   </div><!-- end panel-sort -->
 
-  <!-- 題目管理 panel -->
-  <div class="right-panel" id="panel-questions">
+  <!-- 內容管理（Reels / 心理測驗題目 / Digital Archive）-->
+  <div class="right-panel" id="panel-content">
     <div class="quiz-admin-wrap" style="max-width:800px;padding:0;">
+      <div class="subtab-bar">
+        <button class="subtab-btn active" data-sub="sub-reels">Reels</button>
+        <button class="subtab-btn" data-sub="sub-questions">心理測驗題目</button>
+        <button class="subtab-btn" data-sub="sub-archive">Digital Archive</button>
+      </div>
+
+      <div class="subpanel" id="sub-questions">
       <div class="section">
         <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;">
           <span>心理測驗題目</span>
@@ -612,12 +607,9 @@
         <button class="btn-save" id="btnAddQuizQ">新增題目</button>
         <div class="msg" id="quizQMsgBox"></div>
       </div>
-    </div>
-  </div>
+      </div><!-- end sub-questions -->
 
-  <!-- Reels 管理 panel -->
-  <div class="right-panel" id="panel-reels">
-    <div class="quiz-admin-wrap" style="max-width:800px;padding:0;">
+      <div class="subpanel active" id="sub-reels">
       <div class="section">
         <div class="section-label" id="reelFormLabel">新增 Reel</div>
         <input type="hidden" id="reelEditId">
@@ -653,6 +645,31 @@
         </div>
         <div id="reelsList" style="border:1px solid var(--line);min-height:60px;margin-top:10px;"></div>
       </div>
+      </div><!-- end sub-reels -->
+
+      <div class="subpanel" id="sub-archive">
+      <div class="section">
+        <div class="section-label">新增 Digital Archive</div>
+        <div class="field">
+          <label>YouTube 連結</label>
+          <input type="text" id="archiveUrl" placeholder="https://www.youtube.com/watch?v=...">
+        </div>
+        <div id="archivePreview" style="display:none;margin-bottom:12px;">
+          <img id="archiveThumb" src="" style="width:100%;max-height:200px;object-fit:cover;display:block;margin-bottom:8px;">
+          <div id="archiveTitle" style="font-weight:700;font-size:12px;margin-bottom:4px;"></div>
+          <div id="archiveArtist" style="font-size:10px;color:var(--gray);"></div>
+        </div>
+        <div class="field"><label>標題（可自行修改）</label><input type="text" id="archiveTitleInput" placeholder="自動帶入 YouTube 標題"></div>
+        <div class="field"><label>藝人</label><input type="text" id="archiveArtistInput" placeholder="藝人名稱…"></div>
+        <button class="btn-save" id="btnAddArchive">新增到 Digital Archive</button>
+        <div class="msg" id="archiveMsgBox"></div>
+      </div>
+
+      <div class="section" style="margin-top:24px;">
+        <div class="section-label">現有 Archive（可拖曳排序）</div>
+        <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
+      </div>
+      </div><!-- end sub-archive -->
     </div>
   </div>
 
@@ -706,13 +723,9 @@
           <tr><td colspan="3" style="padding:12px 8px;color:var(--gray);">載入中…</td></tr>
         </tbody>
       </table>
-    </div>
-  </div>
 
-  <!-- 首頁 Banner panel -->
-  <div class="right-panel" id="panel-banner">
-    <div style="max-width:680px;">
-      <div class="section">
+      <!-- 首頁 Banner（併入設定分頁） -->
+      <div class="section" style="margin-top:40px;">
         <div class="section-label">首頁 Banner 圖片</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">上傳後將顯示於首頁頂部 Banner 區域，取代預設 Logo 圖。建議使用寬幅圖片（16:9 或更寬）。</p>
 
@@ -781,9 +794,15 @@
     </div>
   </div>
 
-  <!-- 卡牌校正 -->
+  <!-- 卡牌管理（卡牌校正 / 頂級牌）-->
   <div class="right-panel" id="panel-cards">
     <div style="max-width:880px;">
+      <div class="subtab-bar">
+        <button class="subtab-btn active" data-sub="sub-fix">卡牌校正</button>
+        <button class="subtab-btn" data-sub="sub-apex">👑 頂級牌</button>
+      </div>
+
+      <div class="subpanel active" id="sub-fix">
       <div class="section">
         <div class="section-label">卡牌校正（修正 AI 介紹 / 評分）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">下方是全站被抽過的卡，照卡冊封面排列。<strong>點任一張卡片</strong>即可彈出編輯介紹與評分；存檔後前台卡冊會<strong>優先顯示你的校正版</strong>，蓋過 AI。綠色「已校正」標記＝這張已有你的版本。也可用下方欄位手動輸入沒被抽過的卡。</p>
@@ -798,8 +817,7 @@
         <div class="section-label" style="margin-bottom:12px;">卡片庫（點封面編輯）</div>
         <div id="catalogList" style="font-size:12px;color:var(--gray);">尚未載入</div>
       </div>
-    </div>
-  </div>
+      </div><!-- end sub-fix -->
 
   <!-- 卡牌校正：彈出編輯 modal -->
   <div class="ov-modal" id="ovModal">
@@ -835,9 +853,8 @@
     </div>
   </div>
 
-  <!-- 頂級牌管理 -->
-  <div class="right-panel" id="panel-apex">
-    <div style="max-width:880px;">
+  <!-- 頂級牌管理（sub-apex）-->
+      <div class="subpanel" id="sub-apex">
       <div class="section">
         <div class="section-label">頂級牌管理（固定卡池 apex_pool）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">
@@ -883,8 +900,9 @@
           <span id="seedImportMsg" style="font-size:11px;color:var(--gray);"></span>
         </div>
       </div>
+      </div><!-- end sub-apex -->
     </div>
-  </div>
+  </div><!-- end panel-cards -->
 
   <!-- 會員管理 -->
   <div class="right-panel" id="panel-members">
@@ -898,9 +916,15 @@
     </div>
   </div>
 
-  <!-- 對戰系統設定 -->
-  <div class="right-panel" id="panel-game-battle">
+  <!-- 遊戲設定（對戰系統 / Roguelike）-->
+  <div class="right-panel" id="panel-game">
     <div style="max-width:880px;">
+      <div class="subtab-bar">
+        <button class="subtab-btn active" data-sub="sub-battle">🎴 對戰系統</button>
+        <button class="subtab-btn" data-sub="sub-rogue">🎮 Roguelike</button>
+      </div>
+
+      <div class="subpanel active" id="sub-battle">
       <div class="section">
         <div class="section-label">對戰系統設定（gameConfig/battle）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">調整對戰核心數值；儲存後 <b>battle.html</b> 載入時會讀這份覆寫內建值。空白或非數字欄位會被忽略。</p>
@@ -912,12 +936,9 @@
           <span id="battleMsg" style="font-size:11px;color:var(--gray);"></span>
         </div>
       </div>
-    </div>
-  </div>
+      </div><!-- end sub-battle -->
 
-  <!-- Roguelike 設定 -->
-  <div class="right-panel" id="panel-game-roguelike">
-    <div style="max-width:880px;">
+      <div class="subpanel" id="sub-rogue">
       <div class="section">
         <div class="section-label">Roguelike 數值（gameConfig/roguelike）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">儲存後 <b>roguelike.html</b> 載入時會讀這份覆寫內建值（讀不到則用內建預設）。</p>
@@ -943,8 +964,9 @@
           <span id="rogueMsg" style="font-size:11px;color:var(--gray);"></span>
         </div>
       </div>
+      </div><!-- end sub-rogue -->
     </div>
-  </div>
+  </div><!-- end panel-game -->
 
   </div><!-- end right-area -->
 </div><!-- end site-layout -->
@@ -954,6 +976,17 @@
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, deleteField, writeBatch } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
+  // 子分頁 → 載入函式對照（function declaration 會 hoist，這裡先引用沒問題）
+  const SUB_LOADERS = {
+    'sub-reels': () => loadAdminReels(),
+    'sub-questions': () => loadQuizQuestions(),
+    'sub-archive': () => loadArchiveList(),
+    'sub-fix': () => loadCatalog(),
+    'sub-apex': () => loadApexPool(),
+    'sub-battle': () => loadBattleCfg(),
+    'sub-rogue': () => loadRogueCfg(),
+  };
+
   // Tab 切換（consolidated handler）
   document.querySelector('.tab-bar').addEventListener('click', e => {
     const btn = e.target.closest('.tab-btn');
@@ -962,17 +995,26 @@
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.right-panel').forEach(c => c.classList.remove('active'));
     btn.classList.add('active');
-    document.getElementById('panel-' + tab).classList.add('active');
-    if (tab === 'archive') loadArchiveList();
+    const panel = document.getElementById('panel-' + tab);
+    panel.classList.add('active');
+    // 只有「編輯商品」需要左側商品欄，其餘分頁全寬顯示
+    document.querySelector('.site-layout').classList.toggle('no-left', tab !== 'edit');
     if (tab === 'sort') loadSortList();
-    if (tab === 'questions') loadQuizQuestions();
-    if (tab === 'reels') loadAdminReels();
-    if (tab === 'banner') loadBanner();
-    if (tab === 'apex') loadApexPool();
     if (tab === 'members') loadMembers();
-    if (tab === 'usage') loadUsage();
-    if (tab === 'game-battle') loadBattleCfg();
-    if (tab === 'game-roguelike') loadRogueCfg();
+    if (tab === 'usage') { loadUsage(); loadBanner(); }
+    // 合併分頁：載入目前 active 的子分頁
+    const activeSub = panel.querySelector('.subpanel.active');
+    if (activeSub && SUB_LOADERS[activeSub.id]) SUB_LOADERS[activeSub.id]();
+  });
+
+  // 子分頁切換
+  document.addEventListener('click', e => {
+    const sb = e.target.closest('.subtab-btn');
+    if (!sb) return;
+    const panel = sb.closest('.right-panel');
+    sb.parentElement.querySelectorAll('.subtab-btn').forEach(b => b.classList.toggle('active', b === sb));
+    panel.querySelectorAll('.subpanel').forEach(p => p.classList.toggle('active', p.id === sb.dataset.sub));
+    if (SUB_LOADERS[sb.dataset.sub]) SUB_LOADERS[sb.dataset.sub]();
   });
 
   const app = initializeApp({
@@ -3000,9 +3042,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
     } catch (e) { list.className = ''; list.textContent = '載入清單失敗：' + (e.message || e); }
   }
 
-  // 切到「卡牌校正」分頁時載入清單
-  document.querySelector('.tab-btn[data-tab="cards"]')?.addEventListener('click', loadCatalog);
-
   // ───────── 頂級牌管理（apex_pool：殿堂/異端/流亡 固定卡池）─────────
   const APEX_INFO = {
     hall:   { label: '殿堂', emoji: '🩶' },
@@ -3011,6 +3050,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   };
   let apexTier = 'hall';
   let apexDocs = [];          // 目前載入的整個 apex_pool（三分類都在）
+  let apexCovers = {};        // 已入庫卡的封面（card_catalog where apex==true）
   let apexEditingId = null;   // 編輯中的 docId（null = 新增模式）
 
   document.getElementById('apexTierRow')?.addEventListener('click', (e) => {
@@ -3023,9 +3063,14 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   async function loadApexPool() {
     const list = document.getElementById('apexList');
-    if (list) list.textContent = '載入中…';
+    if (list) { list.className = ''; list.textContent = '載入中…'; }
     try {
-      const snap = await getDocs(collection(db, 'apex_pool'));
+      const [snap, catSnap] = await Promise.all([
+        getDocs(collection(db, 'apex_pool')),
+        getDocs(query(collection(db, 'card_catalog'), where('apex', '==', true))).catch(() => ({ docs: [] })),
+      ]);
+      apexCovers = {};
+      catSnap.docs.forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
       apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       renderApexList();
     } catch (e) { if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
@@ -3040,21 +3085,23 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const done = items.filter(d => d.generatedAt).length;
     const dead = items.filter(d => d.noCover).length;
     if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張 · 已入庫 ${done} · 無封面 ${dead}`;
-    if (!items.length) { list.textContent = '此分類還沒有牌，按上方「匯入固定名單」或手動新增。'; return; }
+    if (!items.length) { list.className = ''; list.textContent = '此分類還沒有牌，按上方「匯入固定名單」或手動新增。'; return; }
+    list.className = 'cardgrid';
     list.innerHTML = items.map(d => {
+      const cover = apexCovers[d.id];
       const badge = d.generatedAt
-        ? `<span style="font-size:9px;color:#1a7f37;border:1px solid #1a7f37;padding:1px 6px;">已入庫 ${fmtDate(d.generatedAt)}</span>`
-        : (d.noCover ? `<span style="font-size:9px;color:var(--red);border:1px solid var(--red);padding:1px 6px;">無封面略過</span>`
-                     : `<span style="font-size:9px;color:var(--gray);border:1px solid var(--line);padding:1px 6px;">未入庫</span>`);
-      return `<div style="display:flex;align-items:center;gap:10px;padding:7px 10px;border:1px solid var(--line);margin-bottom:4px;background:#fff;">
-        <div style="flex:1;min-width:0;">
-          <span style="font-weight:700;color:var(--black);">${esc(d.album)}</span>
-          <span style="color:var(--gray);">　${esc(d.artist)}</span>
+        ? `<span class="cardgrid-badge">已入庫 ${fmtDate(d.generatedAt)}</span>`
+        : (d.noCover ? `<span class="cardgrid-badge" style="background:var(--red);">無封面略過</span>`
+                     : `<span class="cardgrid-badge" style="background:var(--gray);">未入庫</span>`);
+      return `<div class="cardgrid-cell" style="cursor:default;">
+        <div class="cardgrid-thumb">${cover ? `<img src="${esc(cover)}" alt="" loading="lazy">` : `<div class="cardgrid-nocover">♪</div>`}${badge}</div>
+        <div class="cardgrid-album" title="${esc(d.album)}">${esc(d.album) || '—'}</div>
+        <div class="cardgrid-artist" title="${esc(d.artist)}">${esc(d.artist) || '—'}</div>
+        <div class="cardgrid-actions">
+          ${d.generatedAt ? '' : `<button class="apex-gen-one" data-id="${esc(d.id)}" title="產出這張入庫">⚡ 入庫</button>`}
+          <button class="apex-edit" data-id="${esc(d.id)}" title="編輯">✎</button>
+          <button class="apex-del" data-id="${esc(d.id)}" title="從卡池刪除">✕</button>
         </div>
-        ${badge}
-        ${d.generatedAt ? '' : `<button class="apex-gen-one" data-id="${esc(d.id)}" title="產出這張入庫" style="background:none;border:1px solid var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">⚡ 入庫</button>`}
-        <button class="apex-edit" data-id="${esc(d.id)}" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">✎</button>
-        <button class="apex-del" data-id="${esc(d.id)}" style="background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">✕</button>
       </div>`;
     }).join('');
     list.querySelectorAll('.apex-gen-one').forEach(b => b.addEventListener('click', () => produceApexCard(apexTier, b.dataset.id)));
@@ -3172,6 +3219,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         }, { merge: true });
         await setDoc(doc(db, 'apex_pool', cand.id), { generatedAt: now }, { merge: true });
         cand.generatedAt = now;
+        apexCovers[cand.id] = cover;
         made = { ...cand, cover, spotifyUrl };
         break;
       }
