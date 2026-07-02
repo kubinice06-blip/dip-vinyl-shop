@@ -428,6 +428,31 @@ const ACES = [
   {artist:'Merzbow',album:'Pulse Demon',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
 
+// ---------- 殿堂神作判定（與 worker / index / battle 同一份清單與正規化）----------
+// 公認神作即使卡片沒存 hall 旗標，也一律視為對應王牌 → 隨機發牌、動態卡池、卡冊全部適用
+const NEOCLASSIC_LIST = [
+  { artist:'Pink Floyd', album:'The Dark Side of the Moon', tier:'hall' },
+  { artist:'Miles Davis', album:'Kind of Blue', tier:'hall' },
+];
+const _neoNorm = (s) => (s||'').toLowerCase()
+  .replace(/\([^)]*\)|\[[^\]]*\]/g,' ')
+  .replace(/\s[-–—:]\s.*$/,' ')
+  .replace(/[^a-z0-9]+/g,' ')
+  .replace(/\b\d{1,4}(st|nd|rd|th)?\b/g,' ')
+  .replace(/\b(remaster|remastered|anniversary|deluxe|expanded|edition|reissue|mono|stereo|version|the|a|an)\b/g,' ')
+  .replace(/\s+/g,' ').trim();
+const NEOCLASSIC_MAP = {};
+NEOCLASSIC_LIST.forEach(x=>{ NEOCLASSIC_MAP[_neoNorm(x.artist)+'|'+_neoNorm(x.album)] = x; });
+const neoAceOf = (artist,album) => { const n=NEOCLASSIC_MAP[_neoNorm(artist)+'|'+_neoNorm(album)]; return n?n.tier:null; };
+const NEO_ACE_STATS = { hall:[7,1,1], pearl:[1,7,1], heresy:[1,1,7] };
+function applyNeoAce(c){
+  if(c.ace) return c;
+  const t=neoAceOf(c.artist,c.album);
+  if(t){ c.ace=t; const s=NEO_ACE_STATS[t]; c.classic=s[0]; c.obscurity=s[1]; c.accessibility=s[2]; }
+  return c;
+}
+POOL.forEach(applyNeoAce);   // 內建卡池先掃一輪（如 Kind of Blue → 殿堂 7 星）
+
 // ---------- 動態卡池（同「類型挑片／直接來一張」抓取邏輯：/claude 由 AI 推真實專輯，/spotify-search 驗封面，/album-rating 取三圍）----------
 // 內建 POOL 打底、離線可玩；DYNAMIC_POOL 在背景慢慢長大並存 localStorage，讓每回合抽牌跨遍「全世界」真實專輯、不再老是那幾張。
 const DYN_WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
@@ -457,7 +482,7 @@ async function fillDynamicPool(n=14){
       let rt=null; try{ rt=window.__getAlbumRating?await window.__getAlbumRating(r.artist,r.album):null; }catch(e){}
       const s=hashStats(keyOf({artist:r.artist,album:r.album}));
       const c=(rt&&clampStat(rt.classic,0))||s.c, o=(rt&&clampStat(rt.obscurity,0))||s.o, a=(rt&&clampStat(rt.accessibility,0))||s.a;
-      return {artist:r.artist,album:r.album,coverUrl:cover,classic:c,obscurity:o,accessibility:a,ace:null};
+      return applyNeoAce({artist:r.artist,album:r.album,coverUrl:cover,classic:c,obscurity:o,accessibility:a,ace:null});
     }));
     const good=built.filter(Boolean);
     if(good.length){ DYNAMIC_POOL.push(...good); saveDynPool(); }
@@ -646,13 +671,15 @@ function cardFromCollection(d){
   if(d.hall)   return mk(7,1,1,'hall');
   if(d.pearl)  return mk(1,7,1,'pearl');
   if(d.heresy) return mk(1,1,7,'heresy');
+  const neoT=neoAceOf(artist,album);   // 殿堂神作清單：沒存旗標也視為王牌
+  if(neoT){ const s=NEO_ACE_STATS[neoT]; return mk(s[0],s[1],s[2],neoT); }
   const key=keyOf({artist,album});
   const inPool = POOL.find(p=>keyOf(p)===key) || ACES.find(p=>keyOf(p)===key);
   if(inPool) return mk(inPool.classic,inPool.obscurity,inPool.accessibility,inPool.ace||null);
   const s=hashStats(key); return mk(s.c,s.o,s.a,null);
 }
-// 隨機發牌池：整個 POOL 洗牌取 18 張（冷門到主流、強到弱都有），王牌不發
-function buildRandomShelf(){ return shuffle(allPool().slice()).slice(0,18).map(c=>({...c,ace:null})); }
+// 隨機發牌池：整個卡池洗牌取 18 張（冷門到主流、強到弱都有）；殿堂神作保留王牌身分
+function buildRandomShelf(){ return shuffle(allPool().slice()).slice(0,18).map(c=>({...c})); }
 
 async function renderSeedSelect(){
   document.body.classList.remove('in-battle');
@@ -689,7 +716,7 @@ function paintSeedScreen(){
   const coll = RUN._collShelf||[];
   const shelf = (RUN._source==='collection') ? coll : RUN._randomShelf;
   RUN._shelf = shelf;
-  RUN.seedsPicked = [];
+  // 已選的牌跨頁籤保留（卡冊與隨機發牌可混搭），不重置
   // 來源切換列（登入才顯示卡冊頁籤；未登入給登入鈕）
   const tab = (src,label,extra='')=>`<button class="btn ${RUN._source===src?'primary':''}" style="flex:1" onclick="setSeedSource('${src}')">${label}${extra}</button>`;
   const sourceRow = user
@@ -699,7 +726,7 @@ function paintSeedScreen(){
     ? `<div class="muted" style="margin:6px 0;color:var(--lose)">卡冊不足 5 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
     <h1>挑 5 張專輯開始旅程</h1>
-    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>5 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。</div>
+    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>5 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'卡冊與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
     ${sourceRow}${emptyColl}
     <div class="row" style="margin:4px 0">已選 <b id="seedCount">0</b>/5
       <button class="btn primary" id="seedGo" disabled style="margin-left:auto" onclick="startRun()">開始旅程 →</button></div>
@@ -727,24 +754,27 @@ function seedToast(msg){
   t.textContent=msg; t.style.opacity='1';
   clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; }, 1800);
 }
+// 選牌以「卡」為單位（存卡片物件，key=artist|album），卡冊與隨機發牌兩個頁籤可混著選
 function toggleSeed(i){
-  const idx = RUN.seedsPicked.indexOf(i);
+  const c=RUN._shelf[i], ck=keyOf(c);
+  const idx = RUN.seedsPicked.findIndex(x=>keyOf(x)===ck);
   if(idx>=0){ RUN.seedsPicked.splice(idx,1); updateSeedUI(); return; }
   if(RUN.seedsPicked.length>=5) return;
   // 頂級卡（王牌）起始最多選 1 張，過程中還會抽到
-  if(RUN._shelf[i].ace && RUN.seedsPicked.some(j=>RUN._shelf[j].ace)){
+  if(c.ace && RUN.seedsPicked.some(x=>x.ace)){
     seedToast('頂級卡起始最多選 1 張（過程中還會抽到）'); return;
   }
-  RUN.seedsPicked.push(i);
+  RUN.seedsPicked.push(c);
   updateSeedUI();
 }
 function updateSeedUI(){
+  const picked=new Set(RUN.seedsPicked.map(keyOf));
   document.getElementById('seedCount').textContent = RUN.seedsPicked.length;
   document.getElementById('seedGo').disabled = RUN.seedsPicked.length!==5;
   RUN._shelf.forEach((c,i)=>{
     const el=document.getElementById('seed'+i); if(!el) return;
     const card=el.querySelector('.card');
-    card.classList.toggle('sel', RUN.seedsPicked.includes(i));
+    card.classList.toggle('sel', picked.has(keyOf(c)));
   });
 }
 
@@ -760,7 +790,7 @@ function makeJunk(){
 
 function startRun(){
   if(RUN.seedsPicked.length!==5) return;
-  const seeds = RUN.seedsPicked.map(i=>copyCard(RUN._shelf[i]));
+  const seeds = RUN.seedsPicked.map(c=>copyCard(c));
   RUN.deck = seeds.concat(makeJunk());   // 5 種子 + 5 雜牌 = 10 張
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
   nextFight();
@@ -785,7 +815,7 @@ function enemyForDepth(d){
   const deck=[];
   for(let i=0;i<11;i++){
     const c=copyCard(bag[i%bag.length]);
-    if(buff>0){                                 // 加在該卡最高的主軸上，讓敵牌更難纏
+    if(buff>0 && !c.ace){                       // 加在該卡最高的主軸上，讓敵牌更難纏（王牌 7 星不動）
       const mainAttr = ATTRS.reduce((m,a)=>c[a]>c[m]?a:m, 'classic');
       c[mainAttr]=Math.min(6, c[mainAttr]+buff);
     }
@@ -828,7 +858,11 @@ function applyAttrEffect(side, attr){
   const me=G[side.side], foe=G[side.side==='p'?'e':'p'];
   if(attr==='classic') me.hp=Math.min(me.maxHp, me.hp+CFG.attrFx.classic);
   else if(attr==='obscurity') me.qi=clampQi(me.qi+CFG.attrFx.obscurity);
-  else if(attr==='accessibility') foe.qi=clampQi(foe.qi-CFG.attrFx.accessibility);
+  else if(attr==='accessibility'){
+    // 入耳屬性效果：削對手氣勢（寫進 log，讓玩家看得懂氣勢為什麼掉）
+    if(foe.qi>0) pushLog(`${side.side==='p'?'你':'對手'}打【入耳】→ ${side.side==='p'?'對手':'你的'}氣勢 -${CFG.attrFx.accessibility}`,'qi');
+    foe.qi=clampQi(foe.qi-CFG.attrFx.accessibility);
+  }
 }
 
 // AI：暗定出招 + 露氣場提示（照剋會虛晃）
@@ -1241,23 +1275,6 @@ function pickDrawCard(){
   }
   return copyCard(pick(allPool()));   // 卡池抽乾了的保險
 }
-// 介紹文字（與「直接來一張」同源：worker /claude）
-async function streamRogueReason(card, el){
-  const prompt = `專輯：${card.artist} — ${card.album}\n\n用兩到三句繁體中文介紹這張專輯。語氣像唱片行熟客在推薦，要有實質內容：若你確定，講清楚藝人來自哪裡、這張的曲風聲音與做法、為何值得一聽。禁止用語：「融合多種元素」「層次豐富」「具有代表性」「獨樹一格」「必聽」「傑作」。整段 60-110 字，只回傳文字，不含格式符號。`;
-  try{
-    const resp = await fetch(RG_WORKER+'/claude', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ messages:[{role:'user',content:prompt}] }),
-    });
-    const data = await resp.json();
-    let text = (data.content?.[0]?.text || '').trim();
-    if(el){ el.classList.remove('wait'); el.textContent = text || '（一時找不到介紹，但這張值得你親耳聽聽。）'; }
-    return text;
-  }catch(e){
-    if(el){ el.classList.remove('wait'); el.textContent = '（介紹載入失敗，先收進卡組吧。）'; }
-    return '';
-  }
-}
 function openDrawReveal(){
   if(RUN._drewThisWin || document.getElementById('drawMask')) return;
   const c = _drawCard = pickDrawCard();
@@ -1280,7 +1297,7 @@ function openDrawReveal(){
     const el = document.getElementById('drawCov');
     if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
   });
-  streamRogueReason(c, document.getElementById('drawIntro'));
+  loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與卡冊/對戰同一套事實型簡介（/album-desc，含人工校正）
 }
 function confirmDraw(keep){
   if(!_drawCard) return;
