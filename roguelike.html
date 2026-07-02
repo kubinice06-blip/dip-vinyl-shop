@@ -267,7 +267,7 @@
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
       const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
       window.__getCover = async (artist, album) => {
-        const id = (artist+'|'+album).toLowerCase().trim();
+        const id = (artist+'|'+album).toLowerCase().replace(/\//g,'-').trim();
         try { const s=await getDoc(doc(db,'card_catalog',id)); const cu=s.exists()&&s.data().coverUrl; if(cu) return cu; } catch(e){}
         try {
           const res=await fetch(WORKER_URL+'/spotify-search?artist='+encodeURIComponent(artist)+'&album='+encodeURIComponent(album));

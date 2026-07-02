@@ -678,7 +678,7 @@ NEOCLASSIC_LIST.forEach(x=>{ NEOCLASSIC_MAP[_neoNorm(x.artist)+'|'+_neoNorm(x.al
 const neoAceOf = (artist,album) => { const n = NEOCLASSIC_MAP[_neoNorm(artist)+'|'+_neoNorm(album)]; return n && ACE_STATS[n.tier] ? n.tier : null; };
 
 // ───────── 卡冊 / 評分讀取 ─────────
-const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().trim();
+const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().replace(/\//g,'-').trim();
 function clampStat(v){ return Math.max(1, Math.min(5, Math.round(Number(v)||1))); }
 async function getOverride(id){
   try { const s=await getDoc(doc(db,'album_overrides',id)); return s.exists()?s.data():null; } catch(e){ return null; }

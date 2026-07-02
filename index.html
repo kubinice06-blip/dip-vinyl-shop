@@ -841,7 +841,7 @@
 
   // 卡片 ID：與 Worker /album-rating 的 key 同規則
   function cardIdOf(artist, album) {
-    return ((artist || '') + '|' + (album || '')).toLowerCase().trim();
+    return ((artist || '') + '|' + (album || '')).toLowerCase().replace(/\//g, '-').trim();
   }
 
   // 抽到即記錄到全站卡牌目錄（供後台校正用）；不需登入、fire-and-forget

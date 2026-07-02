@@ -2844,7 +2844,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   renderGpModeUI();
 
   // ───────── 卡牌校正 ─────────
-  const ovCardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().trim();
+  const ovCardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim();
 
   // 編輯 modal 開關
   const ovModal = document.getElementById('ovModal');
