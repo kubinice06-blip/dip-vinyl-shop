@@ -95,6 +95,11 @@
 > 例：classic5＋access5＋冷門5 → 11 → 傳奇；classic5＋access3 → 8 → 史詩；classic3＋access2 → 5 → 稀有。
 > 程式：`rarityFromRatings()`（index.html），門檻為 config 可調。
 
+### 固定卡池（2026-07-03 新增）
+- **頂級牌固定卡池 `apex_pool.json`**：殿堂／流亡／異端各 100 張人工名單。後台「👑 頂級牌」分頁可匯入 Firestore `apex_pool`、三分類瀏覽／編輯／刪除，「⚡ 產出一張入庫」＝隨機挑未入庫的牌 → 驗 Spotify 封面 → 寫 `card_catalog`（含 `tier`/`apex` 欄）＋ `album_overrides.tier`（前台卡冊／對戰立即當 7 星王牌）→ 標 `generatedAt`。抓不到封面標 `noCover` 略過。
+- **一般卡種子池 `seed_cards.json`**：3331 張 `[artist, album, classic, obscurity, accessibility]`，五級分布約 普通352／稀有1535／獨特1265／史詩157／傳奇22。後台同分頁可批次匯入 `card_catalog`（含 `rarity` 欄；新卡 `updatedAt=1` 沉底，不洗掉玩家抽過的卡；封面顯示時才懶抓回存）。
+- **對戰/roguelike 牌組外框**：手牌與檯面卡依稀有度上色（傳奇橘/史詩紫/獨特綠/稀有藍/普通灰，`rarityCls()`），頂級卡維持 `ace-border` 掃光（roguelike 也補上同款掃光框）。
+
 ### 門檻調校（重要）
 `card_catalog` 已記錄每張被抽到的卡，**累積一段時間後可拉真實 score 分布來微調門檻**，確保五色都出現且「越高級越少」。冷門度降權後若仍偏某一格，主要調 classic／accessibility 的門檻即可。
 

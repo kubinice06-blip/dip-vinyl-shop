@@ -259,6 +259,7 @@
   <button class="tab-btn" data-tab="reels">Reels 管理</button>
   <button class="tab-btn" data-tab="banner">首頁 Banner</button>
   <button class="tab-btn" data-tab="cards">卡牌校正</button>
+  <button class="tab-btn" data-tab="apex">👑 頂級牌</button>
   <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
   <button class="tab-btn" data-tab="game-battle">🎴 對戰系統</button>
@@ -834,6 +835,57 @@
     </div>
   </div>
 
+  <!-- 頂級牌管理 -->
+  <div class="right-panel" id="panel-apex">
+    <div style="max-width:880px;">
+      <div class="section">
+        <div class="section-label">頂級牌管理（固定卡池 apex_pool）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">
+          三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7）、<b>🩸 異端</b>＝極難入耳前衛怪盤（入耳難度 7）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7）。<br>
+          「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台卡冊／對戰立即當 7 星王牌）。抓不到封面的會標記略過。
+        </p>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
+          <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（300 張，跳過已存在）</button>
+          <span id="apexImportMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+        <div class="ov-tier-row" id="apexTierRow" style="margin-bottom:14px;">
+          <button type="button" class="ov-tier-btn active" data-apex-tier="hall">🩶 殿堂<small>經典度 7</small></button>
+          <button type="button" class="ov-tier-btn" data-apex-tier="heresy">🩸 異端<small>入耳難度 7</small></button>
+          <button type="button" class="ov-tier-btn" data-apex-tier="pearl">🛢️ 流亡<small>冷門度 7</small></button>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px;">
+          <button class="gbtn gbtn-primary" id="apexGenBtn">⚡ 產出一張入庫</button>
+          <span id="apexStat" style="font-size:11px;font-weight:700;color:var(--black);"></span>
+          <span id="apexGenMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+        <div id="apexResult" style="margin-bottom:12px;"></div>
+        <div id="apexList" style="font-size:12px;color:var(--gray);">切換分類或按重新載入</div>
+      </div>
+      <div class="section">
+        <div class="section-label">手動新增／編輯（寫入目前選取的分類）</div>
+        <div class="field-row" style="margin-bottom:10px;">
+          <div class="field"><label>藝人 Artist</label><input id="apexArtist" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;"></div>
+          <div class="field"><label>專輯 Album</label><input id="apexAlbum" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;"></div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn gbtn-primary" id="apexSaveBtn">儲存到卡池</button>
+          <button class="gbtn" id="apexCancelEditBtn" style="display:none;">取消編輯</button>
+          <span id="apexEditMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-label">一般卡池批次匯入（seed_cards.json）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
+          一次把 <b>3331 張一般卡</b>（含三圍評分與五級稀有度：普通/稀有/獨特/史詩/傳奇）批次寫入 <b>card_catalog</b>。已存在的卡只補評分欄位、不覆蓋封面與介紹。封面不預抓——卡片在前台／對戰被看到時會自動補抓並回存。
+        </p>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn" id="seedImportBtn">⬆ 匯入一般卡池（3331 張）</button>
+          <span id="seedImportMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 會員管理 -->
   <div class="right-panel" id="panel-members">
     <div style="max-width:880px;">
@@ -899,7 +951,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, deleteField } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, deleteField, writeBatch } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   // Tab 切換（consolidated handler）
@@ -916,6 +968,7 @@
     if (tab === 'questions') loadQuizQuestions();
     if (tab === 'reels') loadAdminReels();
     if (tab === 'banner') loadBanner();
+    if (tab === 'apex') loadApexPool();
     if (tab === 'members') loadMembers();
     if (tab === 'usage') loadUsage();
     if (tab === 'game-battle') loadBattleCfg();
@@ -2949,6 +3002,230 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   // 切到「卡牌校正」分頁時載入清單
   document.querySelector('.tab-btn[data-tab="cards"]')?.addEventListener('click', loadCatalog);
+
+  // ───────── 頂級牌管理（apex_pool：殿堂/異端/流亡 固定卡池）─────────
+  const APEX_INFO = {
+    hall:   { label: '殿堂', emoji: '🩶' },
+    heresy: { label: '異端', emoji: '🩸' },
+    pearl:  { label: '流亡', emoji: '🛢️' },
+  };
+  let apexTier = 'hall';
+  let apexDocs = [];          // 目前載入的整個 apex_pool（三分類都在）
+  let apexEditingId = null;   // 編輯中的 docId（null = 新增模式）
+
+  document.getElementById('apexTierRow')?.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-apex-tier]');
+    if (!btn) return;
+    apexTier = btn.dataset.apexTier;
+    document.querySelectorAll('#apexTierRow .ov-tier-btn').forEach(b => b.classList.toggle('active', b === btn));
+    renderApexList();
+  });
+
+  async function loadApexPool() {
+    const list = document.getElementById('apexList');
+    if (list) list.textContent = '載入中…';
+    try {
+      const snap = await getDocs(collection(db, 'apex_pool'));
+      apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      renderApexList();
+    } catch (e) { if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
+  }
+
+  function renderApexList() {
+    const list = document.getElementById('apexList');
+    const stat = document.getElementById('apexStat');
+    if (!list) return;
+    const items = apexDocs.filter(d => d.tier === apexTier)
+      .sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
+    const done = items.filter(d => d.generatedAt).length;
+    const dead = items.filter(d => d.noCover).length;
+    if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張 · 已入庫 ${done} · 無封面 ${dead}`;
+    if (!items.length) { list.textContent = '此分類還沒有牌，按上方「匯入固定名單」或手動新增。'; return; }
+    list.innerHTML = items.map(d => {
+      const badge = d.generatedAt
+        ? `<span style="font-size:9px;color:#1a7f37;border:1px solid #1a7f37;padding:1px 6px;">已入庫 ${fmtDate(d.generatedAt)}</span>`
+        : (d.noCover ? `<span style="font-size:9px;color:var(--red);border:1px solid var(--red);padding:1px 6px;">無封面略過</span>`
+                     : `<span style="font-size:9px;color:var(--gray);border:1px solid var(--line);padding:1px 6px;">未入庫</span>`);
+      return `<div style="display:flex;align-items:center;gap:10px;padding:7px 10px;border:1px solid var(--line);margin-bottom:4px;background:#fff;">
+        <div style="flex:1;min-width:0;">
+          <span style="font-weight:700;color:var(--black);">${esc(d.album)}</span>
+          <span style="color:var(--gray);">　${esc(d.artist)}</span>
+        </div>
+        ${badge}
+        ${d.generatedAt ? '' : `<button class="apex-gen-one" data-id="${esc(d.id)}" title="產出這張入庫" style="background:none;border:1px solid var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">⚡ 入庫</button>`}
+        <button class="apex-edit" data-id="${esc(d.id)}" style="background:none;border:1px solid var(--line);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">✎</button>
+        <button class="apex-del" data-id="${esc(d.id)}" style="background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">✕</button>
+      </div>`;
+    }).join('');
+    list.querySelectorAll('.apex-gen-one').forEach(b => b.addEventListener('click', () => produceApexCard(apexTier, b.dataset.id)));
+    list.querySelectorAll('.apex-edit').forEach(b => b.addEventListener('click', () => {
+      const d = apexDocs.find(x => x.id === b.dataset.id); if (!d) return;
+      apexEditingId = d.id;
+      document.getElementById('apexArtist').value = d.artist || '';
+      document.getElementById('apexAlbum').value = d.album || '';
+      document.getElementById('apexCancelEditBtn').style.display = '';
+      document.getElementById('apexEditMsg').textContent = `編輯中：${d.artist} — ${d.album}`;
+    }));
+    list.querySelectorAll('.apex-del').forEach(b => b.addEventListener('click', async () => {
+      const d = apexDocs.find(x => x.id === b.dataset.id); if (!d) return;
+      if (!confirm(`從卡池刪除「${d.artist} — ${d.album}」？（不影響已入庫的 card_catalog）`)) return;
+      try { await deleteDoc(doc(db, 'apex_pool', d.id)); apexDocs = apexDocs.filter(x => x.id !== d.id); renderApexList(); }
+      catch (e) { alert('刪除失敗：' + (e.message || e)); }
+    }));
+  }
+
+  // 匯入固定名單 apex_pool.json（三分類各 100 張；已存在的跳過）
+  document.getElementById('apexImportBtn')?.addEventListener('click', async () => {
+    const msg = document.getElementById('apexImportMsg');
+    const btn = document.getElementById('apexImportBtn');
+    btn.disabled = true; msg.textContent = '讀取名單…';
+    try {
+      const data = await (await fetch('apex_pool.json?v=' + Date.now())).json();
+      const existing = new Set(apexDocs.map(d => d.id));
+      const toAdd = [];
+      for (const tier of ['hall', 'pearl', 'heresy']) {
+        for (const [artist, album] of (data[tier] || [])) {
+          const id = ovCardId(artist, album);
+          if (existing.has(id)) continue;
+          existing.add(id);
+          toAdd.push({ id, artist, album, tier, addedAt: Date.now() });
+        }
+      }
+      if (!toAdd.length) { msg.textContent = '名單全部已存在，無需匯入'; btn.disabled = false; return; }
+      for (let i = 0; i < toAdd.length; i += 400) {
+        const batch = writeBatch(db);
+        toAdd.slice(i, i + 400).forEach(d => batch.set(doc(db, 'apex_pool', d.id), { artist: d.artist, album: d.album, tier: d.tier, addedAt: d.addedAt }));
+        await batch.commit();
+        msg.textContent = `匯入中… ${Math.min(i + 400, toAdd.length)}/${toAdd.length}`;
+      }
+      msg.textContent = `✓ 已匯入 ${toAdd.length} 張`;
+      await loadApexPool();
+    } catch (e) { msg.textContent = '匯入失敗：' + (e.message || e); }
+    btn.disabled = false;
+  });
+
+  // 手動新增／編輯
+  document.getElementById('apexSaveBtn')?.addEventListener('click', async () => {
+    const artist = document.getElementById('apexArtist').value.trim();
+    const album = document.getElementById('apexAlbum').value.trim();
+    const msg = document.getElementById('apexEditMsg');
+    if (!artist || !album) { msg.textContent = '藝人與專輯都要填'; return; }
+    const id = ovCardId(artist, album);
+    try {
+      const old = apexEditingId ? apexDocs.find(x => x.id === apexEditingId) : null;
+      await setDoc(doc(db, 'apex_pool', id), {
+        artist, album, tier: old ? old.tier : apexTier,
+        addedAt: old?.addedAt || Date.now(),
+        ...(old?.generatedAt ? { generatedAt: old.generatedAt } : {}),
+      });
+      if (apexEditingId && apexEditingId !== id) await deleteDoc(doc(db, 'apex_pool', apexEditingId));
+      msg.textContent = apexEditingId ? '✓ 已更新' : '✓ 已加入卡池';
+      apexEditingId = null;
+      document.getElementById('apexArtist').value = ''; document.getElementById('apexAlbum').value = '';
+      document.getElementById('apexCancelEditBtn').style.display = 'none';
+      await loadApexPool();
+    } catch (e) { msg.textContent = '儲存失敗：' + (e.message || e); }
+  });
+  document.getElementById('apexCancelEditBtn')?.addEventListener('click', () => {
+    apexEditingId = null;
+    document.getElementById('apexArtist').value = ''; document.getElementById('apexAlbum').value = '';
+    document.getElementById('apexCancelEditBtn').style.display = 'none';
+    document.getElementById('apexEditMsg').textContent = '';
+  });
+
+  // ⚡ 產出一張頂級牌入庫：挑未入庫 → 驗封面 → card_catalog + album_overrides(tier) → 標記已入庫
+  let apexGenBusy = false;
+  document.getElementById('apexGenBtn')?.addEventListener('click', () => produceApexCard(apexTier));
+  async function produceApexCard(tier, specificId) {
+    if (apexGenBusy) return;
+    apexGenBusy = true;
+    const msg = document.getElementById('apexGenMsg');
+    const resBox = document.getElementById('apexResult');
+    const btn = document.getElementById('apexGenBtn');
+    btn.disabled = true;
+    try {
+      let candidates = apexDocs.filter(d => d.tier === tier && !d.generatedAt && !d.noCover);
+      if (specificId) candidates = candidates.filter(d => d.id === specificId);
+      if (!candidates.length) { msg.textContent = '沒有可產出的牌（都入庫了或被標記無封面）'; return; }
+      // 隨機順序最多試 5 張：抓不到封面就標記 noCover 換下一張
+      candidates.sort(() => Math.random() - 0.5);
+      let made = null;
+      for (const cand of candidates.slice(0, 5)) {
+        msg.textContent = `抓封面驗證中：${cand.artist} — ${cand.album}…`;
+        let cover = '', spotifyUrl = '';
+        try {
+          const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(cand.artist)}&album=${encodeURIComponent(cand.album)}`);
+          if (r.ok) { const j = await r.json(); cover = j.imageUrl || ''; spotifyUrl = j.spotifyUrl || ''; }
+        } catch (e) {}
+        if (!cover) {
+          await setDoc(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true }).catch(() => {});
+          cand.noCover = true;
+          continue;
+        }
+        const now = Date.now();
+        await setDoc(doc(db, 'card_catalog', cand.id), {
+          cardId: cand.id, artist: cand.artist, album: cand.album,
+          coverUrl: cover, tier, apex: true, updatedAt: now,
+        }, { merge: true });
+        await setDoc(doc(db, 'album_overrides', cand.id), {
+          artist: cand.artist, album: cand.album, tier, updatedAt: now,
+        }, { merge: true });
+        await setDoc(doc(db, 'apex_pool', cand.id), { generatedAt: now }, { merge: true });
+        cand.generatedAt = now;
+        made = { ...cand, cover, spotifyUrl };
+        break;
+      }
+      if (!made) { msg.textContent = '這批候選都抓不到封面，已標記略過，再按一次換別張'; renderApexList(); return; }
+      msg.textContent = `✓ 已入庫（card_catalog + album_overrides.tier=${tier}）`;
+      resBox.innerHTML = `<div style="display:flex;gap:12px;align-items:center;border:1px solid var(--black);padding:10px;background:#fff;">
+        <img src="${esc(made.cover)}" alt="" style="width:64px;height:64px;object-fit:cover;">
+        <div>
+          <div style="font-weight:700;color:var(--black);">${APEX_INFO[tier].emoji} ${APEX_INFO[tier].label}級 — ${esc(made.album)}</div>
+          <div style="color:var(--gray);font-size:11px;">${esc(made.artist)}</div>
+        </div>
+      </div>`;
+      renderApexList();
+    } finally { apexGenBusy = false; btn.disabled = false; }
+  }
+
+  // ───────── 一般卡池批次匯入（seed_cards.json → card_catalog）─────────
+  const rarityFromStats = (c, o, a) => {
+    const s = (c || 0) + (a || 0) + ((o || 0) >= 5 ? 1 : 0);
+    return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+  };
+  document.getElementById('seedImportBtn')?.addEventListener('click', async () => {
+    const msg = document.getElementById('seedImportMsg');
+    const btn = document.getElementById('seedImportBtn');
+    if (!confirm('批次匯入 3331 張一般卡到 card_catalog？（已存在的只補評分欄位）')) return;
+    btn.disabled = true; msg.textContent = '讀取 seed_cards.json…';
+    try {
+      const arr = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+      msg.textContent = '比對既有卡片…';
+      // 先撈既有 id：舊卡（玩家抽過的）只補評分，不動 updatedAt，避免把它們洗出「卡牌校正」排序
+      const existSnap = await getDocs(collection(db, 'card_catalog'));
+      const exist = new Set(existSnap.docs.map(d => d.id));
+      let done = 0;
+      for (let i = 0; i < arr.length; i += 400) {
+        const batch = writeBatch(db);
+        for (const [artist, album, c, o, a] of arr.slice(i, i + 400)) {
+          const id = ovCardId(artist, album);
+          if (!id || id === '|') continue;
+          const data = {
+            cardId: id, artist, album,
+            classic: c, obscurity: o, accessibility: a,
+            rarity: rarityFromStats(c, o, a), seed: true,
+          };
+          if (!exist.has(id)) data.updatedAt = 1;   // 新卡沉底排序；舊卡保留原 updatedAt
+          batch.set(doc(db, 'card_catalog', id), data, { merge: true });
+        }
+        await batch.commit();
+        done = Math.min(i + 400, arr.length);
+        msg.textContent = `匯入中… ${done}/${arr.length}`;
+      }
+      msg.textContent = `✓ 完成，已匯入 ${done} 張（五級稀有度已寫入 rarity 欄位）`;
+    } catch (e) { msg.textContent = '匯入失敗：' + (e.message || e); }
+    btn.disabled = false;
+  });
 
   // ───────── 會員管理 ─────────
   const fmtDate = (ms) => {

@@ -214,6 +214,14 @@
   .ht-ace.hall { background:#9aa0a8; } .ht-ace.pearl { background:#5b4a8a; } .ht-ace.heresy { background:#a01020; }
   .ht-borrow { position:absolute; bottom:0; right:0; font-size:9px; padding:1px 5px; background:rgba(255,255,255,0.9); border-top:1px solid var(--line); border-left:1px solid var(--line); color:var(--gray); letter-spacing:0; z-index:2; }
 
+  /* 一般卡五級稀有度外框（與卡冊同色：傳奇橘/史詩紫/獨特綠/稀有藍/普通灰；頂級卡走 ace-border 掃光不套這組） */
+  .r-legendary { box-shadow:inset 0 0 0 3px #e0851c; }
+  .r-epic      { box-shadow:inset 0 0 0 2px #7a3fb0; }
+  .r-uncommon  { box-shadow:inset 0 0 0 2px #2faf4f; }
+  .r-rare      { box-shadow:inset 0 0 0 2px #3a7bd5; }
+  .r-common    { box-shadow:inset 0 0 0 2px #c9c9c9; }
+  .handtile.sel.r-legendary, .handtile.sel.r-epic, .handtile.sel.r-uncommon, .handtile.sel.r-rare, .handtile.sel.r-common { box-shadow:0 4px 14px rgba(0,0,0,0.18); }
+
   /* 選取時：貼著該卡正上方浮出的出牌小視窗（JS 定位 left/bottom，箭頭指向卡牌） */
   .tilepop { position:fixed; left:0; top:0; width:150px; display:none; background:#fff; border:1px solid var(--black); padding:8px 9px; box-shadow:0 6px 18px rgba(0,0,0,0.16); z-index:40; }
   .tilepop.show { display:block; animation:pop .18s; }
@@ -1081,8 +1089,15 @@ function coverHTML(card){
 function statLine(card, attr){
   return `<div class="statline">${ATTRS.map(a=>`<span class="st${a===attr?' act':''}">${ATTR_ZH[a].charAt(0)}<b>${card[a]}</b></span>`).join('')}</div>`;
 }
+// 一般卡稀有度（同卡冊公式：經典+難度+(冷門=5?+1)）→ 外框顏色 class；頂級卡回空（走 ace-border 掃光）
+function rarityCls(card){
+  if(!card || card.ace) return '';
+  const s=(card.classic||0)+(card.accessibility||0)+((card.obscurity||0)>=5?1:0);
+  if(!s) return '';
+  return s>=10?' r-legendary':s>=8?' r-epic':s>=6?' r-uncommon':s>=4?' r-rare':' r-common';
+}
 function cardHTML(card, attr){
-  const ace=card.ace?` ace-border ace-${card.ace}`:'';
+  const ace=card.ace?` ace-border ace-${card.ace}`:rarityCls(card);
   // 檯面卡：跟下排手牌一樣只露整張封面，專輯名／三圍點擊後才在卡片資訊顯示
   const tag=card.ace?`<span class="ht-ace ${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
   const cover=card.coverUrl
@@ -1112,7 +1127,7 @@ function renderEnemyHand(){ document.getElementById('eHand').innerHTML=G.e.hand.
 function renderHand(){
   const el=document.getElementById('pHand');
   el.innerHTML=G.p.hand.map(c=>{
-    const ace=c.ace?` ace-border ace-${c.ace}`:'';
+    const ace=c.ace?` ace-border ace-${c.ace}`:rarityCls(c);
     const sel=G.sel&&G.sel.uid===c.uid;
     const aceTag=c.ace?`<span class="ht-ace ${c.ace}">${ACE_ZH[c.ace]}</span>`:'';
     const borrow=c.borrowed?`<span class="ht-borrow">借</span>`:'';

@@ -18,6 +18,9 @@ service cloud.firestore {
     // ── 遊戲設定（對戰/roguelike 數值與升級 buff）：玩家端要讀，所有人可讀；只有管理員可寫 ──
     match /gameConfig/{id}      { allow read: if true; allow write: if isAdmin(); }
 
+    // ── 頂級牌固定卡池（殿堂/異端/流亡 各100張名單）：後台管理用，僅管理員可寫 ──
+    match /apex_pool/{id}       { allow read: if true; allow write: if isAdmin(); }
+
     // ── 全站抽卡目錄：任何人（含未登入玩家）都能寫入抽到的卡，後台才看得到所有人抽的 ──
     // 非個資（只有專輯名/封面/介紹），讀取開放無妨。
     match /card_catalog/{id}    { allow read: if true; allow write: if true; }
