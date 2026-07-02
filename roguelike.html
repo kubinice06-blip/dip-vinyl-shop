@@ -305,12 +305,13 @@ const CFG = {
   qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
   qiChain2:1, qiChain3:2, qiChainCap:4,
   valueDmg:1, ultimate:6, pUltimate:4,   // 玩家輾壓基礎傷害較低（敵方仍 6）→ 輾壓不再一招定生死
+  hitQiDrain:1, hitQiDrainAcc:2,         // 被攻擊掉氣勢：一般 -1、被【入耳】-2（敵我皆適用）
   attrFx:{ classic:1, obscurity:1, accessibility:1 },
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
 };
 const ATTRS = ['classic','obscurity','accessibility'];
 const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'入耳' };
-const ATTR_FX_ZH = { classic:'守 +1聲望', obscurity:'挖 +1氣勢', accessibility:'攻 削對手氣勢' };
+const ATTR_FX_ZH = { classic:'守 +1聲望', obscurity:'挖 +1氣勢', accessibility:'攻 擊中削2氣勢' };
 const ACE_ZH = { hall:'殿堂', pearl:'流亡', heresy:'異端' };
 const COUNTER_SKILL = { classic:'大眾共鳴', obscurity:'品味突襲', accessibility:'降維打擊' };
 const SYN_SKILL = { classic:'品味拓荒', obscurity:'閾值突破', accessibility:'前衛收編' };
@@ -855,14 +856,19 @@ function computeChain(side, attr){
   return { len:side.chain, qi };
 }
 function applyAttrEffect(side, attr){
-  const me=G[side.side], foe=G[side.side==='p'?'e':'p'];
+  // 出招當下的自身效果：經典回聲望、冷門充氣勢。（入耳的削氣勢改成「被入耳打中才削」，見 drainQiOnHit）
+  const me=G[side.side];
   if(attr==='classic') me.hp=Math.min(me.maxHp, me.hp+CFG.attrFx.classic);
   else if(attr==='obscurity') me.qi=clampQi(me.qi+CFG.attrFx.obscurity);
-  else if(attr==='accessibility'){
-    // 入耳屬性效果：削對手氣勢（寫進 log，讓玩家看得懂氣勢為什麼掉）
-    if(foe.qi>0) pushLog(`${side.side==='p'?'你':'對手'}打【入耳】→ ${side.side==='p'?'對手':'你的'}氣勢 -${CFG.attrFx.accessibility}`,'qi');
-    foe.qi=clampQi(foe.qi-CFG.attrFx.accessibility);
-  }
+}
+// 被攻擊（吃到傷害）→ 該方氣勢下降；被【入耳】打中 -2，其餘 -1（敵我皆適用）
+function drainQiOnHit(victimSide, atkAttr, dmg){
+  if(dmg<=0) return;
+  const v=G[victimSide]; if(v.qi<=0) return;
+  const drop = atkAttr==='accessibility' ? CFG.hitQiDrainAcc : CFG.hitQiDrain;
+  const real = Math.min(v.qi, drop);
+  v.qi=clampQi(v.qi-drop);
+  pushLog(`${victimSide==='p'?'你':'對手'}被${atkAttr==='accessibility'?'【入耳】':''}攻擊 → 氣勢 -${real}`,'qi');
 }
 
 // AI：暗定出招 + 露氣場提示（照剋會虛晃）
@@ -980,7 +986,7 @@ function renderBattle(){
     </div></div>
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
-      <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>你那招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>派系專長：打親和屬性牌觸發 <em>buff</em></div></div>
+      <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>你那招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div></div>
       <div class="hint" id="hint">點一張手牌 → 選主打屬性出招</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>
@@ -1076,13 +1082,13 @@ async function play(uid, pAttr){
   if(pUlt || eUlt){
     // 品味輾壓回合
     const eUltBlocked = eUlt && !pUlt && pCard.ace;   // 七星回擊
-    if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0;
+    if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0; drainQiOnHit('e',null,d);
       callout(`<span class="dmg">你 · 品味輾壓 −${d}</span>`); pushLog(`你品味輾壓！對手 −${d}`,'hit'); }
     else G.p.last=pAttr;
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0; const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility); const d=applyDef(applyAtk(star,st.atk),est.def); G.e.hp-=d;
         callout(`<span class="good">七星回擊！對手輾壓無效，反傷 −${d}</span>`); pushLog(`${ACE_ZH[pCard.ace]}王牌七星回擊 → 對手 −${d}`,'good'); }
-      else { let d=applyDef(applyAtk(CFG.ultimate,est.atk), st.def); G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0;
+      else { let d=applyDef(applyAtk(CFG.ultimate,est.atk), st.def); G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0; drainQiOnHit('p',null,d);
         callout(`<span class="dmg">對手 · 品味輾壓 −${d}</span>`); pushLog(`對手品味輾壓！你 −${d}`,'hit'); }
     } else G.e.last=eAttr;
   } else {
@@ -1106,6 +1112,7 @@ async function play(uid, pAttr){
     const dmgToP=applyDef(applyAtk(r.dmgToP,est.atk), st.def);
     if(dmgToE) G.e.hp-=dmgToE;
     if(dmgToP) G.p.hp-=dmgToP;
+    drainQiOnHit('e', pAttr, dmgToE); drainQiOnHit('p', eAttr, dmgToP);   // 被攻擊 → 氣勢下降
     applyAttrEffect(G.p,pAttr); applyAttrEffect(G.e,eAttr);
     // 派系專長：打親和屬性的牌 → 觸發專屬 buff
     if(pAttr===RUN.affinity){
@@ -1414,6 +1421,8 @@ function applyConfig(cfg){
   try{
     if(typeof cfg.startHp==='number') CFG.startHp=cfg.startHp;
     if(typeof cfg.pUltimate==='number') CFG.pUltimate=cfg.pUltimate;
+    if(typeof cfg.hitQiDrain==='number') CFG.hitQiDrain=cfg.hitQiDrain;
+    if(typeof cfg.hitQiDrainAcc==='number') CFG.hitQiDrainAcc=cfg.hitQiDrainAcc;
     if(cfg.runXp) RXP=Object.assign({},RXP,cfg.runXp);
     if(cfg.metaXp) MXP=Object.assign({},MXP,cfg.metaXp);
     if(cfg.classes && typeof cfg.classes==='object') CLASSES=cfg.classes;
