@@ -304,7 +304,7 @@ const CFG = {
   qiMax:6,
   qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
   qiChain2:1, qiChain3:2, qiChainCap:4,
-  valueDmg:1, ultimate:6,
+  valueDmg:1, ultimate:6, pUltimate:4,   // 玩家輾壓基礎傷害較低（敵方仍 6）→ 輾壓不再一招定生死
   attrFx:{ classic:1, obscurity:1, accessibility:1 },
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
 };
@@ -775,6 +775,7 @@ function enemyForDepth(d){
   // 敵人三圍隨深度陡升（第4場就有輾壓氣勢）：攻長最快、血也明顯變厚
   const stats = { atk:Math.round(d*0.7), def:Math.round(d*0.45), qir:Math.round(d*0.5) };
   const hp = CFG.startHp + Math.floor(d*1.6);
+  const startQi = Math.min(3, Math.floor(d/2));   // 深層敵人開場自帶氣勢 → 更快威脅輾壓
   // 牌組：偏向卡池中的「強牌」，並隨深度整體加值 → 數值更好、主軸更犀利、也更好猜對手主打
   const buff = Math.floor(d/2);                 // 每 2 場，敵牌主軸 +1（上限 6）
   const ranked = allPool().slice().sort((a,b)=>
@@ -795,7 +796,7 @@ function enemyForDepth(d){
   const titles=['音樂小白','文青同好','社團學長','資深樂評','二手店老闆','地下廠牌主理人','傳說藏家','品味之神'];
   const who = titles[Math.min(titles.length-1, Math.floor(d/2))];
   const emoji = ['🎧','🧣','🎓','🎙️','💿','📀','🏆','👑'][Math.min(7,Math.floor(d/2))];
-  return { who, emoji, diff, stats, hp, maxHp:hp, deck };
+  return { who, emoji, diff, stats, hp, maxHp:hp, deck, startQi };
 }
 
 function nextFight(){
@@ -805,7 +806,7 @@ function nextFight(){
   G = {
     over:false, busy:false, turn:0,
     p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:0, deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },
-    e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
+    e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
     E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[],
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
@@ -858,12 +859,22 @@ function startTurn(){
   if(RUN.qiPerTurn) G.p.qi=clampQi(G.p.qi+RUN.qiPerTurn);
   // 能力：每回合回血
   if(RUN.mods.regen && G.turn>1) G.p.hp=Math.min(G.p.maxHp, G.p.hp+RUN.mods.regen);
-  // AI 暗定 + 虛晃
+  // AI 暗定 + 虛晃（隨深度越來越會騙：氣場提示不再可以照剋）
   const plan=aiPlan();
-  let attr=plan.attr; const tell=plan.attr;
-  if(G.pCounteredTellLast && !plan.card.ace){ attr = COUNTER_OF[COUNTER_OF[tell]]; } // 玩家上手照剋 → 虛晃反咬
+  let attr=plan.attr, vague=false; const tell=plan.attr;
+  const d=RUN.depth;
+  if(G.diff!=='easy' && !plan.card.ace){
+    if(G.pCounteredTellLast){ attr = COUNTER_OF[COUNTER_OF[tell]]; }   // 玩家上手照剋 → 虛晃反咬
+    else {
+      // 主動虛晃：normal 兩成、hard 隨深度爬到過半 → 照提示剋反而常吃虧
+      const feintP = G.diff==='hard' ? Math.min(.55, .3 + d*.03) : .2;
+      if(Math.random()<feintP) attr = pick(ATTRS.filter(a=>a!==tell));
+    }
+    // hard 深層：一定機率完全不露氣場（深不可測），玩家只能自己讀局
+    if(G.diff==='hard' && Math.random() < Math.min(.5, .12 + d*.05)) vague=true;
+  }
   const eUlt = G.e.qi>=CFG.qiMax;
-  G.pendingE = { card:plan.card, attr, tell, ult:eUlt };
+  G.pendingE = { card:plan.card, attr, tell, ult:eUlt, vague };
   renderBattle();
 }
 
@@ -917,7 +928,9 @@ function renderBattle(){
   const pe=G.pendingE;
   const tellTxt = pe ? (pe.ult
       ? '⚡ <b>對手氣勢滿溢</b>，殺氣騰騰（小心品味輾壓）'
-      : `對手${pick(TELL_FLAVOR[pe.tell])}　氣場偏 <b>${ATTR_ZH[pe.tell]}</b>`)
+      : pe.vague
+        ? '對手不動聲色，<b>氣場深不可測</b>……'
+        : `對手${pick(TELL_FLAVOR[pe.tell])}　氣場偏 <b>${ATTR_ZH[pe.tell]}</b>`)
     : '';
   const need=runXpNeed();
   $app.innerHTML = topbarHTML() + `
@@ -971,7 +984,7 @@ function renderTilePop(){
   const c=G.p.hand.find(x=>x.uid===_sel);
   if(!c||G.busy){ pop.classList.remove('show'); return; }
   const ultReady=G.p.qi>=CFG.qiMax;
-  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.ultimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
+  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
   const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
   pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
@@ -1010,9 +1023,9 @@ async function play(uid, pAttr){
   G.busy=true; _sel=null;
   const pCard=G.p.hand.find(c=>c.uid===uid); if(!pCard){ G.busy=false; return; }
   const pUlt=pAttr==='__ult__';
-  const {card:eCard, attr:eAttr, tell, ult:eUlt}=G.pendingE;
-  const feinted = !eUlt && eAttr!==tell;
-  G.pCounteredTellLast = !pUlt && (pAttr===COUNTER_OF[tell]);
+  const {card:eCard, attr:eAttr, tell, ult:eUlt, vague}=G.pendingE;
+  const feinted = !eUlt && !vague && eAttr!==tell;
+  G.pCounteredTellLast = !pUlt && !vague && (pAttr===COUNTER_OF[tell]);   // 氣場藏起來的回合不算「照剋」
   // 移出手牌
   G.p.hand=G.p.hand.filter(c=>c.uid!==uid);
 
@@ -1029,7 +1042,7 @@ async function play(uid, pAttr){
   if(pUlt || eUlt){
     // 品味輾壓回合
     const eUltBlocked = eUlt && !pUlt && pCard.ace;   // 七星回擊
-    if(pUlt){ let d=applyDef(applyAtk(CFG.ultimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0;
+    if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0;
       callout(`<span class="dmg">你 · 品味輾壓 −${d}</span>`); pushLog(`你品味輾壓！對手 −${d}`,'hit'); }
     else G.p.last=pAttr;
     if(eUlt){
@@ -1383,6 +1396,7 @@ function applyConfig(cfg){
   if(!cfg) return;
   try{
     if(typeof cfg.startHp==='number') CFG.startHp=cfg.startHp;
+    if(typeof cfg.pUltimate==='number') CFG.pUltimate=cfg.pUltimate;
     if(cfg.runXp) RXP=Object.assign({},RXP,cfg.runXp);
     if(cfg.metaXp) MXP=Object.assign({},MXP,cfg.metaXp);
     if(cfg.classes && typeof cfg.classes==='object') CLASSES=cfg.classes;
