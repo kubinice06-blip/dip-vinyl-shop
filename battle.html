@@ -863,6 +863,7 @@ function applyAttrEffect(side, attr){
 }
 
 let G, lastOpp='critic';
+window.__dbg = { cfg:CFG, get g(){ return G; }, get mercy(){ return mercyLevel(); } };   // console 調參/測試用（改血量氣勢重現情境）
 // 從大廳挑對手 → 載入卡冊牌組 → 開局
 async function startMatch(oppKey){
   lastOpp = oppKey;
@@ -905,8 +906,11 @@ function startTurn(){
   const plan=aiPlan();
   if(!plan.best){ G.pendingE={ pass:true }; render(); renderTell(); return; } // 電腦無牌（疲勞）
   let card=plan.best.card, attr=plan.best.attr, tell=plan.best.attr;
-  const eUlt=G.e.qi>=CFG.qiMax;
-  const feintOdds = G.diff==='hard' ? 0.75 : 0.5;      // 虛晃改機率觸發：被讀懂不再「必定」反咬，留讀招空間
+  let eUlt=G.e.qi>=CFG.qiMax;
+  // 大幅領先時電腦會「多晾你一手」不急著輾壓（貓玩老鼠），玩家多一回合掙扎 → 翻盤窗口
+  if(eUlt && Math.random() < mercyLevel()*0.7) eUlt=false;
+  // 虛晃機率觸發：被讀懂不再「必定」反咬；領先越多越懶得算計你（鬆懈感）
+  const feintOdds = (G.diff==='hard' ? 0.75 : 0.5) * (1 - mercyLevel()*0.8);
   if(!eUlt && G.diff!=='easy' && G.pCounteredTellLast && Math.random()<feintOdds){
     // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性（小白不會虛晃）
     const bait=COUNTER_OF[COUNTER_OF[tell]];
@@ -936,6 +940,21 @@ function drawCard(side){
     pushLog(`${side===G.p?'你':'電腦'} 牌庫見底 → 疲勞 -${dmg}`, 'hit');
     return null;
   }
+  // 玩家劣勢時抽牌手感變順：從牌庫頂偷看幾張，摸「相對能打」的那張上來（介面零痕跡，牌庫總數不變）
+  // 對手氣勢逼近輾壓時王牌加權浮上 → 玩家體感是「絕境神抽七星回擊」，其實是系統在後面搭橋。
+  if(side===G.p && side.deck.length>1){
+    const m = mercyLevel();
+    if(m>0 && Math.random()<m){
+      const peek = Math.min(3, side.deck.length);
+      let bi=-1, bs=-1;
+      for(let i=side.deck.length-peek; i<side.deck.length; i++){
+        const c=side.deck[i];
+        const sc = Math.max(c.classic,c.obscurity,c.accessibility) + (c.ace && G.e.qi>=CFG.qiMax-2 ? 4 : 0);
+        if(sc>bs){ bs=sc; bi=i; }
+      }
+      const c = side.deck.splice(bi,1)[0]; side.hand.push(c); return c;
+    }
+  }
   const c = side.deck.pop(); side.hand.push(c); return c;
 }
 function computeChain(side, attr){
@@ -944,9 +963,19 @@ function computeChain(side, attr){
   return { len:side.chain, qi:chainQi(side.chain) };
 }
 
+// ===== 隱形手感調整（玩家看不到任何提示、log 也不寫）=====
+// 劣勢係數 0→1：勢均力敵或領先 = 0（完全不介入）；落後 5 HP 起漸進、落後 17 HP 拉滿。
+// 用它驅動三件事：電腦出招變鈍、虛晃變少、輾壓會「多晾你一手」；玩家抽牌手感變順。
+// 效果是「快死的人常常摸到能翻盤的牌、對手剛好在這時鬆懈」——玩家只覺得自己上演逆轉秀。
+function mercyLevel(){
+  if(!G || G.over) return 0;
+  return Math.max(0, Math.min(1, (G.e.hp - G.p.hp - 4) / 12));
+}
+
 // ===== AI 計劃：依難度評分（easy 近乎隨機 / normal 現況 / hard 精準）=====
 function aiPlan(){
   const diff = G.diff || 'normal';
+  const mercy = diff==='easy' ? 0 : mercyLevel();   // 小白本來就隨機，不用再鈍
   const hand=G.e.hand; let best=null; const scored=[];
   for(const card of hand){ for(const attr of ATTRS){
     let s=1;
@@ -968,6 +997,7 @@ function aiPlan(){
       if(card.ace==='pearl')  s += 0.8;
       s += Math.random()*4.0;
     }
+    if(mercy>0) s += Math.random()*6*mercy;          // 大幅領先 → 評分摻噪音，出招像「玩心大起」的鈍
     scored.push({card,attr,s});
     if(!best||s>best.s) best={card,attr,s};
   }}
@@ -1022,6 +1052,7 @@ async function play(pCard, pAttr){
     markSlot('p','win');
     if(G.e.hp<=0) return endGame();
     drawCard(G.p); drawCard(G.e); while(G.p.hand.length>CFG.handLimit)G.p.hand.shift();
+    if(G.p.hp<=0||G.e.hp<=0) return endGame();   // 疲勞抽牌也可能打死人，這裡原本沒判
     document.getElementById('callout').innerHTML='';
     startTurn(); return;
   }
