@@ -3072,6 +3072,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
       apexCovers = {};
       catSnap.docs.forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
       apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      // apex_pool doc 自己快取的封面（曾補抓過的）優先沿用
+      apexDocs.forEach(d => { if (d.coverUrl && !apexCovers[d.id]) apexCovers[d.id] = d.coverUrl; });
       renderApexList();
     } catch (e) { if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
   }
@@ -3119,6 +3121,43 @@ ${discogs ? '- Discogs：' + discogs : ''}
       try { await deleteDoc(doc(db, 'apex_pool', d.id)); apexDocs = apexDocs.filter(x => x.id !== d.id); renderApexList(); }
       catch (e) { alert('刪除失敗：' + (e.message || e)); }
     }));
+    // 背景補抓還沒有封面的牌（不改變入庫狀態，只是顯示 + 快取回 apex_pool）
+    fillApexCovers(items, apexTier);
+  }
+
+  // 背景抓 Spotify 封面：只處理沒封面、也沒被標記無封面的牌，限流併發，抓到就即時填圖並快取
+  let apexFillToken = 0;
+  async function fillApexCovers(items, tier) {
+    const myToken = ++apexFillToken;
+    const todo = items.filter(d => !apexCovers[d.id] && !d.noCover);
+    if (!todo.length) return;
+    const CONCURRENCY = 4;
+    let idx = 0;
+    async function worker() {
+      while (idx < todo.length) {
+        if (myToken !== apexFillToken) return;   // 已切分類或重繪，停手
+        const d = todo[idx++];
+        let cover = '';
+        try {
+          const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(d.artist)}&album=${encodeURIComponent(d.album)}`);
+          if (r.ok) cover = (await r.json()).imageUrl || '';
+        } catch (e) {}
+        if (myToken !== apexFillToken) return;
+        if (!cover) continue;
+        apexCovers[d.id] = cover;
+        // 只有目前仍在畫面上（同分類）才更新該格的圖
+        if (tier === apexTier) {
+          const cell = document.querySelector(`#apexList .apex-edit[data-id="${CSS.escape(d.id)}"]`)?.closest('.cardgrid-cell');
+          const thumb = cell?.querySelector('.cardgrid-thumb');
+          const noCover = thumb?.querySelector('.cardgrid-nocover');
+          if (noCover) noCover.outerHTML = `<img src="${esc(cover)}" alt="" loading="lazy">`;
+        }
+        // 快取回 apex_pool，下次載入直接用
+        setDoc(doc(db, 'apex_pool', d.id), { coverUrl: cover }, { merge: true }).catch(() => {});
+        const local = apexDocs.find(x => x.id === d.id); if (local) local.coverUrl = cover;
+      }
+    }
+    await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   }
 
   // 匯入固定名單 apex_pool.json（三分類各 100 張；已存在的跳過）
