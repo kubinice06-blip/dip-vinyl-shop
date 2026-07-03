@@ -239,7 +239,7 @@
 <!-- 讀取後台設定（gameConfig/roguelike）。讀不到就用內建預設，離線仍可玩。 -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, doc, getDoc, setDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, doc, getDoc, setDoc, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
   window.__rogueCfg = (async () => {
     try {
@@ -290,10 +290,18 @@
               if(ov.classic) r.classic=ov.classic;
               if(ov.obscurity) r.obscurity=ov.obscurity;
               if(ov.accessibility) r.accessibility=ov.accessibility;
+              if(ov.tier) r.tier=ov.tier;   // 後台設的頂點級別（hall/pearl/heresy）→ 王牌
             }
           } catch(e){}
         }
         return r;
+      };
+      // 後台入庫的頂級牌卡池（card_catalog 標 apex==true 的 300 張）：一次撈回 [{artist,album,tier}]
+      window.__getApexTiers = async () => {
+        try {
+          const snap = await getDocs(query(collection(db,'card_catalog'), where('apex','==',true)));
+          return snap.docs.map(d=>{ const x=d.data(); return { artist:x.artist||'', album:x.album||'', tier:x.tier||'' }; });
+        } catch(e){ return []; }
       };
       const s = await getDoc(doc(db,'gameConfig','roguelike'));
       return s.exists() ? s.data() : null;
@@ -468,6 +476,37 @@ function applyNeoAce(c){
   return c;
 }
 POOL.forEach(applyNeoAce);   // 內建卡池先掃一輪（如 Kind of Blue → 殿堂 7 星）
+
+// ---------- 頂級牌卡池（後台入庫 300 張；card_catalog.apex==true）----------
+// 匯入後併進 NEOCLASSIC_MAP（同一份判定表）→ 內建卡池 / 動態卡池 / 樂歷收藏 / 卡冊種子全部升級成王牌。
+// Firebase 模組比本腳本晚載入 → 輪詢等 __getApexTiers 就緒；離線/失敗就靜默略過（不影響開局）。
+let _apexReady = null;
+function loadApexAces(){
+  if(_apexReady) return _apexReady;
+  _apexReady = (async()=>{
+    try{
+      const t0=Date.now();
+      while(!window.__getApexTiers && Date.now()-t0<5000) await new Promise(r=>setTimeout(r,100));
+      if(!window.__getApexTiers) return;
+      const list = await window.__getApexTiers();
+      let n=0;
+      for(const x of (list||[])){
+        if(!x || !NEO_ACE_STATS[x.tier] || !x.artist || !x.album) continue;
+        NEOCLASSIC_MAP[_neoNorm(x.artist)+'|'+_neoNorm(x.album)] = { artist:x.artist, album:x.album, tier:x.tier };
+        n++;
+      }
+      if(!n) return;
+      POOL.forEach(applyNeoAce);
+      if(DYNAMIC_POOL.length){ DYNAMIC_POOL.forEach(applyNeoAce); saveDynPool(); }
+      // 樂歷收藏裡先前以普卡身分抽到的頂級牌也補正
+      if(typeof META==='object' && META && Array.isArray(META.collection) && META.collection.length){
+        META.collection.forEach(applyNeoAce); saveMeta();
+      }
+    }catch(e){}
+  })();
+  return _apexReady;
+}
+loadApexAces();
 
 // ---------- 動態卡池（同「類型挑片／直接來一張」抓取邏輯：/claude 由 AI 推真實專輯，/spotify-search 驗封面，/album-rating 取三圍）----------
 // 內建 POOL 打底、離線可玩；DYNAMIC_POOL 在背景慢慢長大並存 localStorage，讓每回合抽牌跨遍「全世界」真實專輯、不再老是那幾張。
@@ -709,6 +748,8 @@ async function renderSeedSelect(){
   $app.innerHTML = topbarHTML() + `<div class="center muted" style="padding:40px">載入中…</div>`;
   // 等登入狀態回復（最多等 2.5s，離線/未登入照樣開始）
   try{ await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
+  // 等頂級牌卡池併入判定表（最多等 2.5s）→ 隨機發牌/卡冊種子才會正確顯示王牌
+  try{ await Promise.race([ loadApexAces(), new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
   const user = window.__rogueUser ? window.__rogueUser() : null;
   RUN._loggedIn = !!user;
   if(!RUN._randomShelf) RUN._randomShelf = buildRandomShelf();
@@ -720,7 +761,11 @@ async function renderSeedSelect(){
       const c = cardFromCollection(d);
       if(c.ace) return c;   // 王牌單軸 7，下面 filter 會排除，不用覆寫
       let r=null; try{ r = await window.__getAlbumRating(d.artist||'', d.album||'', d.cardId); }catch(e){}
-      if(r){
+      if(r && r.tier && NEO_ACE_STATS[r.tier]){
+        // 後台校正設了頂點級別（album_overrides.tier）→ 直接升王牌
+        const s=NEO_ACE_STATS[r.tier];
+        c.ace=r.tier; c.classic=s[0]; c.obscurity=s[1]; c.accessibility=s[2];
+      } else if(r){
         c.classic = clampStat(r.classic, c.classic);
         c.obscurity = clampStat(r.obscurity, c.obscurity);
         c.accessibility = clampStat(r.accessibility, c.accessibility);
