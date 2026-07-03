@@ -1247,12 +1247,14 @@ function cardDetailHtml(card){
     <div class="cd2-desc load" id="cd2Desc">載入簡介…</div></div>`;
 }
 async function loadCardDesc(card, seq){
-  // 與卡冊／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）
+  // 與卡冊／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）；偶發回空 → 再試一次
   let txt = '（暫無簡介）';
-  try{
-    const r = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
-    if(r.ok){ const d = await r.json(); if(d && (d.desc||'').trim()) txt = d.desc.trim(); }
-  }catch(e){}
+  for(let i=0;i<2 && txt==='（暫無簡介）';i++){
+    try{
+      const r = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
+      if(r.ok){ const d = await r.json(); if(d && (d.desc||'').trim()) txt = d.desc.trim(); }
+    }catch(e){}
+  }
   const el = document.getElementById('cd2Desc');
   if(el && seq===_cardDescSeq){ el.textContent = txt; el.classList.remove('load'); }
 }
@@ -1262,6 +1264,11 @@ function openCardInfo(card){
   // 點檯面卡：一律用抽卡牌式的詳情卡＋專輯簡介（不分對戰中／賽後）
   document.getElementById('recBody').innerHTML = cardDetailHtml(card);
   document.getElementById('recModal').classList.add('show');
+  // 開窗當下還沒抓到封面 → 補抓，抓到即時換上（不然彈窗會停在斜紋佔位）
+  if(!card.coverUrl) ensureCover(card).then(url=>{
+    const el=document.querySelector('#recBody .cd2-cover');
+    if(url && el){ el.classList.remove('ri-noimg'); el.innerHTML=''; el.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; }
+  });
   loadCardDesc(card, ++_cardDescSeq);
 }
 

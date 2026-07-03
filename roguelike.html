@@ -950,6 +950,10 @@ async function ensureCover(card){
   const id=keyOf(card);
   if(id in coverCache){ card.coverUrl=coverCache[id]; return card.coverUrl; }
   let url=''; try{ if(window.__getCover) url = await window.__getCover(card.artist, card.album); }catch(e){}
+  if(!url && !window.__getCover){
+    // Firebase 模組沒起來（被擋/載入失敗）→ 封面直接打 worker，不讓整頁全變無圖佔位
+    try{ const r=await fetch(DYN_WORKER+'/spotify-search?artist='+encodeURIComponent(card.artist)+'&album='+encodeURIComponent(card.album)); if(r.ok) url=(await r.json()).imageUrl||''; }catch(e){ return ''; }
+  }
   coverCache[id]=url; card.coverUrl=url; return url;
 }
 function lazyCover(slotId, card){
@@ -1348,10 +1352,12 @@ function confirmDraw(keep){
 // ----- 點檯面卡／死亡結算抽到的盤：揭曉封面＋三圍＋專輯簡介（可關閉）-----
 async function loadAlbumDesc(card, el){
   let txt='（暫無簡介）';
-  try{
-    const r=await fetch(RG_WORKER+'/album-desc?artist='+encodeURIComponent(card.artist)+'&album='+encodeURIComponent(card.album));
-    if(r.ok){ const d=await r.json(); if(d && (d.desc||'').trim()) txt=d.desc.trim(); }
-  }catch(e){}
+  for(let i=0;i<2 && txt==='（暫無簡介）';i++){   // 偶發回空 → 再試一次
+    try{
+      const r=await fetch(RG_WORKER+'/album-desc?artist='+encodeURIComponent(card.artist)+'&album='+encodeURIComponent(card.album));
+      if(r.ok){ const d=await r.json(); if(d && (d.desc||'').trim()) txt=d.desc.trim(); }
+    }catch(e){}
+  }
   if(el){ el.classList.remove('wait'); el.textContent=txt; }
 }
 function closeCardInfo(){ const m=document.getElementById('cardInfoMask'); if(m) m.remove(); }
