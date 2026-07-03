@@ -3072,8 +3072,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
       apexCovers = {};
       catSnap.docs.forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
       apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      // apex_pool doc 自己快取的封面（曾補抓過的）優先沿用
-      apexDocs.forEach(d => { if (d.coverUrl && !apexCovers[d.id]) apexCovers[d.id] = d.coverUrl; });
       renderApexList();
     } catch (e) { if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
   }
@@ -3144,7 +3142,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         } catch (e) {}
         if (myToken !== apexFillToken) return;
         if (!cover) continue;
-        apexCovers[d.id] = cover;
+        apexCovers[d.id] = cover;   // 本次 session 記著，切分類來回不重抓；跨 session 靠 worker KV 快取
         // 只有目前仍在畫面上（同分類）才更新該格的圖
         if (tier === apexTier) {
           const cell = document.querySelector(`#apexList .apex-edit[data-id="${CSS.escape(d.id)}"]`)?.closest('.cardgrid-cell');
@@ -3152,9 +3150,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
           const noCover = thumb?.querySelector('.cardgrid-nocover');
           if (noCover) noCover.outerHTML = `<img src="${esc(cover)}" alt="" loading="lazy">`;
         }
-        // 快取回 apex_pool，下次載入直接用
-        setDoc(doc(db, 'apex_pool', d.id), { coverUrl: cover }, { merge: true }).catch(() => {});
-        const local = apexDocs.find(x => x.id === d.id); if (local) local.coverUrl = cover;
       }
     }
     await Promise.all(Array.from({ length: CONCURRENCY }, worker));
