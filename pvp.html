@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>品味對決 · dip</title>
+  <meta name="theme-color" content="#111111">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace; }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100dvh; display: flex; flex-direction: column; }
+    .topbar { display: flex; align-items: center; border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; flex-shrink: 0; }
+    .topbar a { color: var(--black); text-decoration: none; font-size: 11px; letter-spacing: 0.08em; }
+    .topbar a:hover { color: var(--gray); }
+    .hero { text-align: center; padding: 40px 20px 24px; }
+    .hero-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
+    .hero-beta { display: inline-block; margin-left: 8px; font-size: 8px; font-weight: 700; letter-spacing: 0.16em; vertical-align: 4px; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; animation: betaBlink 2.4s ease-in-out infinite; }
+    @keyframes betaBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .hero-sub { margin-top: 12px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
+    .cards { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+    .card {
+      position: relative; border-bottom: 1px solid var(--line); padding: 32px 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      background: #fff; transition: background 0.15s; text-align: center; width: 100%;
+      border-left: none; border-right: none; border-top: none; font-family: var(--mono); text-decoration: none; color: var(--black);
+    }
+    .card:hover { background: #111; color: #fff; }
+    .card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
+    .card:hover .card-desc { color: #bbb; }
+    .card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+  <div class="topbar"><a href="index.html">↩ 回主頁</a></div>
+  <div class="hero">
+    <div class="hero-title">品味對決<span class="hero-beta">BETA</span></div>
+    <div class="hero-sub">用你手邊的專輯，一決高下。<br>選一種玩法開打。</div>
+  </div>
+  <div class="cards">
+    <a class="card" href="battle.html">
+      <div>
+        <div class="card-name">單場對決</div>
+        <div class="card-desc">用你手邊的專輯，與音樂同好一決高下。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="roguelike.html">
+      <div>
+        <div class="card-name">無盡品味試煉</div>
+        <div class="card-desc">選流派、挑三張盤，一場接一場越打越強，撐到死。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+  </div>
+</body>
+</html>
