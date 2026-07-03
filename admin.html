@@ -3394,14 +3394,14 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   // ── 對戰系統 ──
   const DEF_BATTLE = {
-    startHp:30, qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
-    qiChain2:1, qiChain3:2, qiChainCap:4, valueDmg:1, ultimate:6
+    startHp:30, qiCounter:2, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
+    qiChain2:1, qiChain3:2, qiChainCap:4, valueDmg:1, ultimate:5, ultLoserQi:2
   };
   const BATTLE_LABELS = {
     startHp:'起始HP', qiCounter:'相剋勝充氣勢', qiCounterLoser:'被剋安慰充氣勢',
     qiValue:'數值勝充氣勢', qiValueLoser:'數值敗充氣勢', qiTie:'平手充氣勢',
     qiChain2:'2連充氣勢', qiChain3:'3連充氣勢', qiChainCap:'連段上限(環)',
-    valueDmg:'純比星傷害倍率', ultimate:'品味輾壓傷害'
+    valueDmg:'純比星傷害倍率', ultimate:'品味輾壓傷害', ultLoserQi:'被輾壓逆風充氣勢'
   };
   let battleCfg = { ...DEF_BATTLE };
   async function loadBattleCfg(){
