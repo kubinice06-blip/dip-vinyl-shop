@@ -858,11 +858,13 @@
       <div class="section">
         <div class="section-label">頂級牌管理（固定卡池 apex_pool）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">
-          三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7）、<b>🩸 異端</b>＝極難入耳前衛怪盤（入耳難度 7）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7）。<br>
-          「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台卡冊／對戰立即當 7 星王牌）。抓不到封面的會標記略過。
+          三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7，400 張）、<b>🩸 異端</b>＝極難入耳前衛怪盤（入耳難度 7，100 張）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7，100 張）。<br>
+          「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台卡冊／對戰立即當 7 星王牌）。「<b>⚡⚡ 全部入庫</b>」把三分類所有未入庫的牌一次跑完（逐張驗封面，可中途停止）。抓不到封面的會標記略過。
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
-          <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（300 張，跳過已存在）</button>
+          <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（跳過已存在）</button>
+          <button class="gbtn gbtn-primary" id="apexGenAllBtn">⚡⚡ 全部入庫（三分類）</button>
+          <button class="gbtn" id="apexGenAllStopBtn" style="display:none;color:var(--red);">■ 停止</button>
           <span id="apexImportMsg" style="font-size:11px;color:var(--gray);"></span>
         </div>
         <div class="ov-tier-row" id="apexTierRow" style="margin-bottom:14px;">
@@ -893,10 +895,10 @@
       <div class="section">
         <div class="section-label">一般卡池批次匯入（seed_cards.json）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
-          一次把 <b>3331 張一般卡</b>（含三圍評分與五級稀有度：普通/稀有/獨特/史詩/傳奇）批次寫入 <b>card_catalog</b>。已存在的卡只補評分欄位、不覆蓋封面與介紹。封面不預抓——卡片在前台／對戰被看到時會自動補抓並回存。
+          一次把 <b>seed_cards.json 裡的全部一般卡</b>（含三圍評分與五級稀有度：普通/稀有/獨特/史詩/傳奇）批次寫入 <b>card_catalog</b>。按下後會先顯示實際張數再確認。已存在的卡只補評分欄位、不覆蓋封面與介紹。封面不預抓——卡片在前台／對戰被看到時會自動補抓並回存。
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-          <button class="gbtn" id="seedImportBtn">⬆ 匯入一般卡池（3331 張）</button>
+          <button class="gbtn" id="seedImportBtn">⬆ 匯入一般卡池（seed_cards.json 全部）</button>
           <span id="seedImportMsg" style="font-size:11px;color:var(--gray);"></span>
         </div>
       </div>
@@ -3270,6 +3272,60 @@ ${discogs ? '- Discogs：' + discogs : ''}
     } finally { apexGenBusy = false; btn.disabled = false; }
   }
 
+  // ⚡⚡ 全部入庫：三分類所有未入庫的牌一次跑完（逐張驗封面；Firestore 寫入用 batch 分批送）
+  let apexAllBusy = false, apexAllStop = false;
+  document.getElementById('apexGenAllStopBtn')?.addEventListener('click', () => { apexAllStop = true; });
+  document.getElementById('apexGenAllBtn')?.addEventListener('click', async () => {
+    if (apexAllBusy || apexGenBusy) return;
+    const pending = apexDocs.filter(d => !d.generatedAt && !d.noCover);
+    if (!pending.length) { document.getElementById('apexGenMsg').textContent = '沒有待入庫的牌（先匯入名單或全部都已入庫）'; return; }
+    if (!confirm(`把 ${pending.length} 張未入庫的頂級牌全部入庫？（逐張抓 Spotify 封面驗證，約需幾分鐘）`)) return;
+    apexAllBusy = true; apexAllStop = false;
+    const btn = document.getElementById('apexGenAllBtn');
+    const stopBtn = document.getElementById('apexGenAllStopBtn');
+    const msg = document.getElementById('apexGenMsg');
+    btn.disabled = true; stopBtn.style.display = '';
+    let ok = 0, bad = 0, i = 0;
+    let batch = writeBatch(db), inBatch = 0;
+    const flush = async () => { if (inBatch) { await batch.commit(); batch = writeBatch(db); inBatch = 0; } };
+    try {
+      for (const cand of pending) {
+        if (apexAllStop) break;
+        i++;
+        msg.textContent = `全部入庫中 ${i}/${pending.length}：${cand.artist} — ${cand.album}`;
+        let cover = '';
+        try {
+          const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(cand.artist)}&album=${encodeURIComponent(cand.album)}`);
+          if (r.ok) cover = ((await r.json()).imageUrl) || '';
+        } catch (e) {}
+        const now = Date.now();
+        if (!cover) {
+          batch.set(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true });
+          cand.noCover = true; bad++; inBatch++;
+        } else {
+          batch.set(doc(db, 'card_catalog', cand.id), {
+            cardId: cand.id, artist: cand.artist, album: cand.album,
+            coverUrl: cover, tier: cand.tier, apex: true, updatedAt: now,
+          }, { merge: true });
+          batch.set(doc(db, 'album_overrides', cand.id), {
+            artist: cand.artist, album: cand.album, tier: cand.tier, updatedAt: now,
+          }, { merge: true });
+          batch.set(doc(db, 'apex_pool', cand.id), { generatedAt: now }, { merge: true });
+          cand.generatedAt = now; ok++; inBatch += 3;
+        }
+        if (inBatch >= 300) { await flush(); renderApexList(); }
+      }
+      await flush();
+      msg.textContent = `${apexAllStop ? '已停止' : '✓ 全部入庫完成'}：成功 ${ok} 張、無封面略過 ${bad} 張`;
+      renderApexList();
+    } catch (e) {
+      try { await flush(); } catch (e2) {}
+      msg.textContent = `中斷（已入庫 ${ok} 張）：` + (e.message || e);
+    } finally {
+      apexAllBusy = false; btn.disabled = false; stopBtn.style.display = 'none';
+    }
+  });
+
   // ───────── 一般卡池批次匯入（seed_cards.json → card_catalog）─────────
   const rarityFromStats = (c, o, a) => {
     const s = (c || 0) + (a || 0) + ((o || 0) >= 5 ? 1 : 0);
@@ -3278,10 +3334,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('seedImportBtn')?.addEventListener('click', async () => {
     const msg = document.getElementById('seedImportMsg');
     const btn = document.getElementById('seedImportBtn');
-    if (!confirm('批次匯入 3331 張一般卡到 card_catalog？（已存在的只補評分欄位）')) return;
     btn.disabled = true; msg.textContent = '讀取 seed_cards.json…';
     try {
       const arr = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+      if (!confirm(`批次匯入 ${arr.length} 張一般卡到 card_catalog？（已存在的只補評分欄位）`)) { btn.disabled = false; msg.textContent = ''; return; }
       msg.textContent = '比對既有卡片…';
       // 先撈既有 id：舊卡（玩家抽過的）只補評分，不動 updatedAt，避免把它們洗出「卡牌校正」排序
       const existSnap = await getDocs(collection(db, 'card_catalog'));
