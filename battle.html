@@ -423,7 +423,7 @@
         <div class="cap"><span class="k">→ 相剋</span><span class="s">⇢ 相生</span></div>
       </div>
       <div class="legend">
-        <span>相剋命中（充氣勢 <em>+3</em>）：壓制傷害＝<b>你那招的星數</b></span>
+        <span>相剋命中（充氣勢 <em>+2</em>）：壓制傷害＝<b>你那招的星數</b></span>
         <span>純比星：高星扣對手血＝<b>星數差</b>，並充氣勢 +1</span>
         <span>屬性效果：經典〔守〕+聲望 · 冷門〔挖〕+氣勢 · 入耳〔攻〕削對手氣勢</span>
       </div>
@@ -487,7 +487,7 @@
     </ul>
 
     <h3>相剋（壓制）· 冷 ▸ 經 ▸ 入 ▸ 冷</h3>
-    <p>剋中：剋制方<em>氣勢 +3</em>、被剋方氣勢 +1（安慰）；被剋方 <b>HP − 你那招的星數</b>。三種剋制各有道理：</p>
+    <p>剋中：剋制方<em>氣勢 +2</em>、被剋方氣勢 +1（安慰）；被剋方 <b>HP − 你那招的星數</b>。三種剋制各有道理：</p>
     <ul>
       <li><b>【品味突襲】冷門 剋 經典</b>：拿邊緣稀有的冷門盤，戳主流名盤「太通俗」的痛點——你聽的大家都聽過，有什麼了不起？</li>
       <li><b>【大眾共鳴】經典 剋 入耳</b>：經得起時間的歷史地位，正面壓過前衛的晦澀與抗拒感——再前衛，也撼動不了公認的偉大。</li>
@@ -514,7 +514,7 @@
     </ul>
 
     <h3>氣勢槽（0→6）· 品味輾壓</h3>
-    <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味輾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −6</b>，自身氣勢清零。</p>
+    <p>氣勢<b>只進不退</b>。槽<b>滿（6）</b>時可發動 <b>品味輾壓</b>：無視對方屬性的保證一擊，<b>對手 HP −5</b>，自身氣勢清零；被輾壓方<em>逆風氣勢 +2</em>（觀眾同情票，留翻盤火種）。</p>
     <p>電腦發動品味輾壓時，你可出<em>七星王牌</em>（殿堂／流亡／異端）<b>回擊</b> → 該次輾壓<b>無效化</b>，並以七星反傷<b>對手 HP −7</b>。</p>
 
     <h3>氣場提示 · 虛晃反咬</h3>
@@ -559,7 +559,7 @@ let CFG = {
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
   qiMax:6,            // 氣勢槽滿 → 可發動品味輾壓
-  qiCounter:3,        // 相剋勝充能
+  qiCounter:2,        // 相剋勝充能（3→2：兩剋就輾壓循環太快，改三剋一輾）
   qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
   qiValue:1,          // 數值勝充能
   qiValueLoser:0,     // 數值敗充能
@@ -567,7 +567,8 @@ let CFG = {
   qiChain2:1, qiChain3:2, qiChainCap:4, // 連段充能；第 4 環起不再充能（避免無腦循環刷氣勢）
   // 傷害＝星數驅動：相剋命中扣血 = 勝方那招星數(1–7)；純比星扣血 = 星數差 × valueDmg。讀招決定打不打中、星數決定多痛。
   valueDmg:1,         // 純比星傷害倍率（星數差×此值；設 0 = 純比星只給氣勢、不扣血）
-  ultimate:6,         // 品味輾壓傷害（無視屬性、保證命中）
+  ultimate:5,         // 品味輾壓傷害（6→5：無視屬性保證命中已夠強，降斬殺感）
+  ultLoserQi:2,       // 被輾壓方逆風補償氣勢（挨一記大的 → 觀眾同情、氣勢回充）
   attrFx:{ classic:1, obscurity:1, accessibility:1 }, // 屬性專屬效果：經典守+HP / 冷門挖+氣勢 / 入耳攻-對手氣勢
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
   fatigueStart:1, fatigueStep:1,
@@ -575,7 +576,7 @@ let CFG = {
 // 後台設定覆寫（只覆寫數值欄，相剋/相生表等結構維持內建）
 (async()=>{
   try{ const s=await getDoc(doc(db,'gameConfig','battle')); if(s.exists()){ const d=s.data();
-    for(const k of ['startHp','qiCounter','qiCounterLoser','qiValue','qiValueLoser','qiTie','qiChain2','qiChain3','qiChainCap','valueDmg','ultimate'])
+    for(const k of ['startHp','qiCounter','qiCounterLoser','qiValue','qiValueLoser','qiTie','qiChain2','qiChain3','qiChainCap','valueDmg','ultimate','ultLoserQi'])
       if(typeof d[k]==='number') CFG[k]=d[k];
   } }catch(e){ /* 讀不到 → 用內建預設 */ }
 })();
@@ -592,7 +593,7 @@ const ATTR_DESC = {
   classic:'經典〔守〕大眾公認、歷史留名的主流名盤；出招回 +1 聲望(HP)。',
   obscurity:'冷門〔挖〕地下小眾、稀有私盤；出招 +1 氣勢。',
   accessibility:'入耳〔攻〕前衛實驗、越難入耳越硬；出招削對手 1 氣勢。',
-  __ult__:'品味輾壓：氣勢滿溢的保證一擊，無視對方屬性、對手 HP −6。',
+  __ult__:`品味輾壓：氣勢滿溢的保證一擊，無視對方屬性、對手 HP −${CFG.ultimate}。`,
 };
 const TELL_FLAVOR = {
   classic:['像要搬出經典名盤','手指停在那排殿堂級唱片上','一副「這張你總聽過吧」的篤定','翻出公認神專的架勢','露出報菜名搬書袋的神情','嘴邊掛著「樂史必聽」四個字'],
@@ -641,6 +642,66 @@ const ACE_STATS = {
   pearl:  { classic:1, obscurity:7, accessibility:1 },
   heresy: { classic:1, obscurity:1, accessibility:7 },
 };
+
+// ===== 打折花車雜牌（卡冊不足時的借牌）=====
+// 虛構的出清區廉價合輯：封面由程式生成（SVG data URI，不打 Spotify、開局即顯示），
+// 數值刻意平庸但各屬性有梗（老民歌其實很經典、阿伯自燒 CD-R 冷門度爆表）。
+const JUNK_PALETTES = [
+  ['#f7c948','#e8590c','#7a2e0e'], // 0 落日金橘（薩克斯風夕陽感）
+  ['#c8b6e2','#7048a8','#2a1a4a'], // 1 紫羅蘭浪漫
+  ['#9be7c4','#2b8a6e','#0b3d2e'], // 2 療癒森林綠
+  ['#f8a5c2','#d6336c','#5c0f2e'], // 3 俗豔桃紅
+  ['#a5d8ff','#1971c2','#0b2545'], // 4 廉價天空藍
+  ['#ffe066','#f08c00','#803300'], // 5 卡拉OK金
+  ['#ced4da','#868e96','#343a40'], // 6 二手灰
+  ['#b197fc','#5f3dc4','#1a1035'], // 7 迪斯可夜紫
+];
+function junkCoverURI(t1,t2,artist,pal,motif,sticker,banner){
+  const [c1,c2,dark]=JUNK_PALETTES[pal%JUNK_PALETTES.length];
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">`+
+    `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs>`+
+    `<rect width="300" height="300" fill="url(#g)"/>`+
+    `<text x="150" y="210" text-anchor="middle" font-size="150" fill="${dark}" opacity="0.25" font-family="serif">${motif}</text>`+
+    `<rect y="26" width="300" height="34" fill="${dark}" opacity="0.82"/>`+
+    `<text x="150" y="50" text-anchor="middle" font-size="16" letter-spacing="4" fill="#ffe89b" font-family="serif">${banner}</text>`+
+    `<text x="150" y="148" text-anchor="middle" font-size="27" font-weight="bold" fill="#fff" font-family="serif" stroke="${dark}" stroke-width="0.8">${t1}</text>`+
+    (t2?`<text x="150" y="178" text-anchor="middle" font-size="15" fill="#fff" opacity="0.92" font-family="serif">${t2}</text>`:'')+
+    `<text x="150" y="272" text-anchor="middle" font-size="12" letter-spacing="2" fill="#fff" opacity="0.75" font-family="serif">${artist}</text>`+
+    `<g transform="rotate(-14 246 236)"><circle cx="246" cy="236" r="33" fill="#e03131" stroke="#fff" stroke-width="2.5"/>`+
+    `<text x="246" y="232" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">${sticker[0]}</text>`+
+    `<text x="246" y="250" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffe89b">${sticker[1]}</text></g>`+
+    `<rect x="5" y="5" width="290" height="290" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>`+
+    `</svg>`;
+  return 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
+}
+// [演出者, 專輯名, 經,冷,入, 色盤, 圖騰, 橫幅, 貼紙上,貼紙下, 封面主標, 封面副標]
+const JUNK_POOL = [
+  ['Romantic Sax Ensemble','Smooth Jazz Café',2,2,2, 0,'♪','浪漫首選','特價','$99','Smooth Jazz','Café 深夜薩克斯風'],
+  ['眾星','世紀民歌精選 Vol.3',4,1,2, 2,'✿','3CD 完整收錄','出清','$59','世紀民歌精選','Vol.3 校園木吉他'],
+  ['神祕排笛大師','排笛之夢 Pan Flute Dreams',2,3,2, 4,'♬','心靈之旅','買2','送1','排笛之夢','Pan Flute Dreams'],
+  ['Sleepy Piano','心靈鋼琴放鬆101',3,1,2, 1,'♪','療癒系','特價','$99','心靈鋼琴','放鬆 101'],
+  ['V.A.','Disco Fever 舞池金曲',3,2,1, 7,'★','舞林必備','2手','$50','DISCO FEVER','舞池金曲不敗'],
+  ['歡樂伴唱天團','卡拉OK金曲王 Vol.18',4,1,1, 5,'♬','KTV伴唱首選','特價','$99','卡拉OK金曲王','Vol.18 原聲原影'],
+  ['The Jingle Singers','Christmas Hits Forever',3,1,2, 2,'❆','聖誕典藏','出清','$39','Christmas Hits','Forever 鈴聲齊響'],
+  ['Café Jazz Trio','午后爵士 Jazz for Lovers',3,2,1, 0,'☕','咖啡時光','特價','$79','午后爵士','Jazz for Lovers'],
+  ['大自然音樂系列','森林雨聲8小時',1,3,4, 2,'☁','自然音效','助眠','神器','森林雨聲','完整收錄 8 小時'],
+  ['愛樂室內樂團','Baby Mozart 胎教古典',4,1,1, 4,'♪','胎教首選','媽咪','必買','Baby Mozart','胎教古典精選'],
+  ['V.A.','西洋老歌情懷 Vol.7',4,2,1, 6,'♥','白金典藏','2手','$50','西洋老歌情懷','Vol.7 永恆金曲'],
+  ['Hollywood Dream Orchestra','電影主題曲精選',3,2,2, 1,'★','巨星原聲','特價','$99','電影主題曲','管弦重新演繹'],
+  ['DJ Master K','Ultimate Party Megamix 2003',2,3,2, 7,'◉','2003勁爆','絕版','出清','Party Megamix','2003 Ultimate'],
+  ['舞王樂隊','國標舞曲大全',2,3,2, 3,'♬','恰恰倫巴','買2','送1','國標舞曲大全','恰恰・倫巴・探戈'],
+  ['Bossa Amigos','咖啡廳巴薩諾瓦',2,2,2, 2,'☕','慵懶午后','特價','$79','咖啡廳','巴薩諾瓦'],
+  ['海洋療癒工作室','鯨魚之歌 Whale Songs',1,4,4, 4,'♒','深海療癒','助眠','神器','鯨魚之歌','Whale Songs 實錄'],
+  ['無名街頭藝人','街頭排笛 Live 實錄',1,4,2, 6,'♪','現場實錄','老闆','亂賣','街頭排笛','Live 實錄'],
+  ['鄰居阿伯','阿伯自燒精選 CD-R',1,5,3, 6,'◉','手工燒錄','非賣','品？','自燒精選','CD-R 阿伯嚴選'],
+  ['V.A.','環遊世界民謠精選',3,2,1, 2,'✿','環球嚴選','特價','$99','環遊世界','民謠精選'],
+  ['眾星','懷念台語金曲',4,2,1, 5,'♥','夜市限定','3片','$100','懷念台語金曲','夜市走唱版'],
+  ['Smooth Nite Band','尊爵威士忌爵士夜',2,2,2, 7,'♪','尊爵不凡','2手','$50','威士忌爵士夜','尊爵・不凡'],
+  ['快樂兒童合唱團','兒歌大進擊30首',3,1,1, 0,'☀','媽媽安心','特價','$59','兒歌大進擊','完整 30 首'],
+].map(([artist,album,c,o,a,pal,motif,banner,s1,s2,t1,t2])=>({
+  artist,album,classic:c,obscurity:o,accessibility:a,ace:null,junk:true,
+  coverUrl:junkCoverURI(t1,t2,artist,pal,motif,[s1,s2],banner)
+}));
 
 // ===== 對手（三難度只調 AI 行為，牌組同走卡池；Po = 封測限定店長精選牌組）=====
 const OPPONENTS = {
@@ -757,8 +818,12 @@ async function buildPlayerDeck(){
   }
   if(deck.length<CFG.deckSize){
     const have = new Set(deck.map(c=>c.album));
-    const borrow = shuffle(POOL).filter(c=>!have.has(c.album)).slice(0, CFG.deckSize-deck.length)
-      .map(c=>({...c, borrowed:true}));
+    let room = CFG.deckSize - deck.length;
+    const borrow = [];
+    // 一張王牌都沒有 → 店長借一張鎮店王牌（電腦輾壓時才有七星回擊可用，不然只能乾挨）
+    if(!deck.some(c=>c.ace) && room>0){ borrow.push({...ACES[rnd(ACES.length)], borrowed:true}); room--; }
+    // 其餘從門口打折花車撈雜牌補滿（標「借」、不入冊）
+    for(const c of shuffle(JUNK_POOL)){ if(room<=0) break; if(have.has(c.album)) continue; borrow.push({...c, borrowed:true}); room--; }
     deck = deck.concat(borrow);
   }
   return shuffle(deck.map(c=>({...c,uid:++uid})));
@@ -823,9 +888,10 @@ function newGame(oppKey, pDeck, eDeck){
   for(const sid of ['pSlot','eSlot']){ const s=document.getElementById(sid); s.className='slot'; s.innerHTML=''; }
   document.getElementById('eTell').innerHTML=''; document.getElementById('callout').innerHTML='';
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.p); drawCard(G.e); }
-  const borrowed = pDeck.filter(c=>c.borrowed).length;
+  const borrowed = pDeck.filter(c=>c.borrowed && !c.ace).length;
+  const bAce = pDeck.some(c=>c.borrowed && c.ace);
   const intro = borrowed>0
-    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，借了 ${borrowed} 張卡池牌（標「借」、不入冊）。`
+    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，從門口打折花車撈了 ${borrowed} 張雜牌充數（標「借」、不入冊）${bAce?'，店長還偷塞一張鎮店王牌給你':''}。`
     : `對局開始 · 對手【${opp.who}】。整副都是你卡冊的卡。`;
   pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味輾壓】。', '');
   document.getElementById('overlay').classList.remove('show');
@@ -840,7 +906,8 @@ function startTurn(){
   if(!plan.best){ G.pendingE={ pass:true }; render(); renderTell(); return; } // 電腦無牌（疲勞）
   let card=plan.best.card, attr=plan.best.attr, tell=plan.best.attr;
   const eUlt=G.e.qi>=CFG.qiMax;
-  if(!eUlt && G.diff!=='easy' && G.pCounteredTellLast){
+  const feintOdds = G.diff==='hard' ? 0.75 : 0.5;      // 虛晃改機率觸發：被讀懂不再「必定」反咬，留讀招空間
+  if(!eUlt && G.diff!=='easy' && G.pCounteredTellLast && Math.random()<feintOdds){
     // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性（小白不會虛晃）
     const bait=COUNTER_OF[COUNTER_OF[tell]];
     const alt=plan.scored.filter(x=>x.attr===bait).sort((a,b)=>b.s-a.s)[0];
@@ -885,7 +952,7 @@ function aiPlan(){
     let s=1;
     const chainHit = G.e.last!==null && CFG.chainNext[G.e.last]===attr;
     if(diff==='easy'){
-      s += Math.random()*5;                            // 純隨機：不追連段、不挑王牌時機
+      s += card[attr]*0.2 + Math.random()*3.5;         // 大致隨機，但不會蠢到專出 1 星招（前期不再白送）
     } else if(diff==='hard'){
       if(chainHit) s += 2;                             // 更積極鋪連段
       s += card[attr]*0.3;
@@ -948,7 +1015,7 @@ async function play(pCard, pAttr){
     document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
     G.pShow=pCard;
     lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
-    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; callout(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
+    if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.e.qi=Math.min(CFG.qiMax,G.e.qi+CFG.ultLoserQi); callout(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
     else { const pcq=computeChain(G.p,pAttr).qi; G.p.qi=Math.min(CFG.qiMax,G.p.qi+pcq); applyAttrEffect('p',pAttr); G.p.last=pAttr; callout(`<div class="sub fx">你〔${FX_ZH[pAttr]}〕`); }
     flashHp('e'); renderHp(); renderQi();
     await sleep(800);
@@ -985,8 +1052,9 @@ async function play(pCard, pAttr){
     // 七星回擊：電腦發動輾壓時，玩家若出王牌(七星)可無效化該次輾壓
     const eUltBlocked = eUlt && !pUlt && pCard && !!pCard.ace;
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.p.last=null; G.p.chain=0;
+      G.e.qi=Math.min(CFG.qiMax,G.e.qi+CFG.ultLoserQi);
       msgs.push(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="sub">無視對方屬性 · 保證命中</div><div class="dmgnum">-${CFG.ultimate}</div>`);
-      pushLog(`你 氣勢滿 → 品味輾壓！電腦 -${CFG.ultimate}`,'hit'); }
+      pushLog(`你 氣勢滿 → 品味輾壓！電腦 -${CFG.ultimate}（電腦逆風氣勢 +${CFG.ultLoserQi}）`,'hit'); }
     else { G.p.last=pAttr; }
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0;
@@ -994,8 +1062,9 @@ async function play(pCard, pAttr){
         msgs.push(`<div class="ultimate-skill">${ACE_ZH[pCard.ace]}王牌 · 七星回擊</div><div class="sub">電腦品味輾壓 → 無效化、反傷</div><div class="dmgnum">-${star}</div>`);
         pushLog(`你以七星王牌【${pCard.album}】回擊 → 輾壓無效，電腦 -${star}！`,'hit'); }
       else { G.p.hp-=CFG.ultimate; G.e.qi=0; G.e.last=null; G.e.chain=0;
+        G.p.qi=Math.min(CFG.qiMax,G.p.qi+CFG.ultLoserQi);
         msgs.push(`<div class="ultimate-skill">電腦 · 品味輾壓</div><div class="sub">無視對方屬性</div><div class="dmgnum">-${CFG.ultimate}</div>`);
-        pushLog(`電腦 氣勢滿 → 品味輾壓！你 -${CFG.ultimate}`,'hit'); }
+        pushLog(`電腦 氣勢滿 → 品味輾壓！你 -${CFG.ultimate}（你逆風氣勢 +${CFG.ultLoserQi}）`,'hit'); }
     }
     else { G.e.last=eAttr; }
     callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
@@ -1246,7 +1315,19 @@ function cardDetailHtml(card){
     <div class="cd2-stats">${stats}</div>
     <div class="cd2-desc load" id="cd2Desc">載入簡介…</div></div>`;
 }
+// 打折花車雜牌是虛構合輯 → 不打 /album-desc（免得 AI 瞎掰），給店長吐槽即可
+const JUNK_DESCS = [
+  '門口打折花車撈出來的廉價合輯，膠膜都泛黃了。店長：「這張喔…就、堪聽。」',
+  '出清區常駐班底，三張一百那種。奇妙的是偶爾真的有一兩首能聽。',
+  '來路不明的授權合輯，封面設計散發濃濃 2000 年代大賣場氣息。',
+  '店長進貨時「整箱一起算」被搭進來的。品味聲望堪憂，救急堪用。',
+];
 async function loadCardDesc(card, seq){
+  if(card.junk){
+    const el0 = document.getElementById('cd2Desc');
+    if(el0 && seq===_cardDescSeq){ el0.textContent = JUNK_DESCS[(card.album||'').length % JUNK_DESCS.length]; el0.classList.remove('load'); }
+    return;
+  }
   // 與卡冊／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）；偶發回空 → 再試一次
   let txt = '（暫無簡介）';
   for(let i=0;i<2 && txt==='（暫無簡介）';i++){
@@ -1365,8 +1446,8 @@ async function renderLoot(win){
         <span class="loot-stat">經${plunder.classic} 冷${plunder.obscurity} 入${plunder.accessibility}</span>
       </div></div></div>`;
   }
-  // 借的卡（這局打出來過的，勾選入冊）
-  const borrowed = dedupeByAlbum(G.p.played.filter(c=>c.borrowed));
+  // 借的卡（這局打出來過的，勾選入冊）；花車雜牌是虛構合輯不入冊、借的鎮店王牌不能白拿
+  const borrowed = dedupeByAlbum(G.p.played.filter(c=>c.borrowed && !c.junk && !c.ace));
   G._lootBorrowed = borrowed;
   if(borrowed.length){
     html += `<div class="loot-sec"><div class="loot-h">借來打過的卡 · 勾選收進卡冊</div><div class="loot-list">`+
