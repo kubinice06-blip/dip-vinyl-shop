@@ -990,8 +990,9 @@ function startTurn(){
     if(G.pCounteredTellLast){ attr = COUNTER_OF[COUNTER_OF[tell]]; }   // 玩家上手照剋 → 虛晃反咬
     else {
       // 主動虛晃：normal 兩成、hard 隨深度爬到過半 → 照提示剋反而常吃虧
+      // 虛晃＝故意出「剋掉玩家反制牌」的牌型：他說打入耳、你打經典想剋 → 他實出冷門反剋你的經典
       const feintP = G.diff==='hard' ? Math.min(.55, .3 + d*.03) : .2;
-      if(Math.random()<feintP) attr = pick(ATTRS.filter(a=>a!==tell));
+      if(Math.random()<feintP) attr = COUNTER_OF[COUNTER_OF[tell]];
     }
     // hard 深層：一定機率完全不露氣場（深不可測），玩家只能自己讀局
     if(G.diff==='hard' && Math.random() < Math.min(.5, .12 + d*.05)) vague=true;
@@ -1085,6 +1086,31 @@ function openHistView(){
   lazyHistCovers(G.eHist,'hvE'); lazyHistCovers(G.pHist,'hvP');
 }
 function closeHistView(){ const m=document.getElementById('histMask'); if(m) m.remove(); }
+
+// ----- 規則彈窗（相生相剋表旁的「規則？」；含怎麼剋品味輾壓）-----
+function openRules(){
+  if(document.getElementById('rulesMask')) return;
+  const aff = (RUN && CLASSES[RUN.classKey]) ? `<li><b style="color:var(--gold)">派系專長</b>：${CLASSES[RUN.classKey].affDesc}</li>` : '';
+  const mask=document.createElement('div'); mask.className='drawmask'; mask.id='rulesMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left">
+    <div class="lab">玩法規則</div>
+    <div style="display:flex;justify-content:center;margin-bottom:6px">${REL_RING_SVG}</div>
+    <ul style="font-size:11px;line-height:1.9;padding-left:18px;margin:0 0 10px">
+      <li><b style="color:var(--dmg)">相剋</b>（實線→）：經典 剋 入耳、入耳 剋 冷門、冷門 剋 經典。剋中＝傷害為<b>你那招的星數</b>、氣勢 +3（被剋方 +1）。<b>王牌不會被相剋</b>。</li>
+      <li><b>純比星</b>：沒相剋就比星數，差幾星扣幾血，贏家氣勢 +1；平手雙方氣勢 +1。</li>
+      <li><b style="color:var(--qi)">相生連段</b>（虛線⇢）：照 經典→冷門→入耳→經典 的順序接招：2 連氣勢 +1、3 連 +2（連過長不再加）。</li>
+      <li><b>牌型附帶效果</b>：經典＝回 1 聲望；冷門＝+1 氣勢；入耳＝擊中時多削對手氣勢（-2）。自己被擊中氣勢 -1。</li>
+      <li><b style="color:var(--gold)">品味輾壓</b>：氣勢滿 6 發動，無視相剋直接大傷害，用完氣勢歸零。</li>
+      <li><b style="color:var(--gold)">⭐ 怎麼剋輾壓</b>：對手氣勢快滿時打出<b>王牌（頂級卡）</b>——對手的輾壓會被【七星回擊】擋下並反傷他最高星數；王牌被動也能先削他氣勢（殿堂 -2、異端直接歸零）。</li>
+      <li><b>氣場提示會騙人</b>：對手可能虛晃——故意出能剋掉「你反制牌」的牌型，越深層越會騙。</li>
+      ${aff}
+    </ul>
+    <button class="btn primary" style="width:100%" onclick="closeRules()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeRules(); });
+  document.body.appendChild(mask);
+}
+function closeRules(){ const m=document.getElementById('rulesMask'); if(m) m.remove(); }
 const REL_RING_SVG = `<div class="relring" aria-hidden="true"><svg viewBox="0 0 126 120" xmlns="http://www.w3.org/2000/svg">
   <defs><marker id="arrK" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--dmg)"/></marker>
   <marker id="arrS" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--qi)"/></marker></defs>
@@ -1128,7 +1154,7 @@ function renderBattle(){
     </div></div>
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
-      <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>你那招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div></div>
+      <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>你那招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則？</button></div>
       <div class="hint" id="hint">點一張手牌 → 選主打屬性出招</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>
@@ -1169,9 +1195,7 @@ function renderTilePop(){
   const ultReady=G.p.qi>=CFG.qiMax;
   const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
   const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
-  const stream=`<a class="pp-act" id="tpStream" style="flex:1 0 100%;margin-top:4px;text-decoration:none;font-size:10px;padding:6px 0" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">♪ 串流聽這張</a>`;
-  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}${stream}</div>`;
-  hookStreamLink('tpStream', c);
+  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
 function positionTilePop(){
@@ -1573,8 +1597,8 @@ function renderDeath(){
   window._deathDrawn = drawn;
   const drawnHTML = drawn.length ? `
     <div class="sp"></div>
-    <div style="color:var(--gold);font-weight:700">🎁 抽到 ${drawn.length} 張新專輯進收藏！</div>
-    <div class="muted" style="font-size:10px;margin-top:2px">點專輯看封面與介紹</div>
+    <div style="color:var(--gold);font-weight:700">🎁 樂歷升級獎勵：抽到 ${drawn.length} 張新專輯進收藏！</div>
+    <div class="muted" style="font-size:10px;margin-top:2px">每升 1 級樂歷抽 1 張・點專輯看封面與介紹</div>
     <div class="grid" style="margin:8px 0" id="deathDrawn">${drawn.map((c,i)=>`<div onclick="openCardInfo(window._deathDrawn[${i}])" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
   // 一路上局末抽到的盤：結算時挑「一張」永久收進卡冊
   const runDrawn = RUN.drawnCards||[];
