@@ -630,11 +630,77 @@ const POOL = [
   ['Four Tet','Rounds',3,3,3], ['Autechre','Tri Repetae',2,5,5],
   ['Boredoms','Vision Creation Newsun',2,5,4], ['Fela Kuti','Zombie',3,4,3],
   ['Taylor Swift','1989',2,1,1], ['Ed Sheeran','÷',1,1,1],
+  // ── 擴充池：搖滾經典 ──
+  ['The Beach Boys','Pet Sounds',5,1,2], ['The Beatles','Abbey Road',5,1,1],
+  ['Fleetwood Mac','Rumours',5,1,1], ['Led Zeppelin','Led Zeppelin IV',5,1,1],
+  ['Neil Young','On the Beach',4,3,2], ['The Stooges','Fun House',4,3,4],
+  ['King Crimson','In the Court of the Crimson King',5,2,4], ['Captain Beefheart','Trout Mask Replica',3,4,5],
+  ['Love','Forever Changes',4,3,2], ['The Zombies','Odessey and Oracle',4,3,2],
+  ['Black Sabbath','Paranoid',5,1,2],
+  // ── 後龐克 / 新浪潮 ──
+  ['Talking Heads','Remain in Light',5,2,3], ['Gang of Four','Entertainment!',3,3,3],
+  ["The Fall","This Nation's Saving Grace",3,4,4], ['Public Image Ltd.','Metal Box',3,4,4],
+  ['The Cure','Disintegration',4,2,2], ['New Order','Power, Corruption & Lies',4,2,2],
+  ['This Heat','Deceit',2,5,5], ['Young Marble Giants','Colossal Youth',2,5,3],
+  ['ESG','Come Away with ESG',2,5,3],
+  // ── 瞪鞋 / 夢幻流行 ──
+  ['Slowdive','Souvlaki',3,3,2], ['Ride','Nowhere',3,3,2],
+  ['Galaxie 500','On Fire',2,4,2], ['Julee Cruise','Floating into the Night',2,4,2],
+  // ── 泡菜搖滾 / 氛圍電子 ──
+  ['Faust','Faust IV',2,5,4], ['Cluster','Zuckerzeit',2,5,3],
+  ['Harmonia','Musik von Harmonia',2,5,3], ['Popol Vuh','Hosianna Mantra',2,5,3],
+  ['Tangerine Dream','Phaedra',3,4,4], ['Brian Eno','Ambient 1: Music for Airports',4,3,3],
+  ['William Basinski','The Disintegration Loops',2,4,4], ['Oneohtrix Point Never','Replica',2,4,4],
+  ['Ryuichi Sakamoto','async',3,3,3],
+  // ── 電子 / 另類 ──
+  ['Daft Punk','Discovery',5,1,1], ['Björk','Homogenic',4,2,3],
+  ['LCD Soundsystem','Sound of Silver',4,2,1], ['Air','Moon Safari',3,2,1],
+  ['Tricky','Maxinquaye',3,3,3], ['Death Grips','The Money Store',3,3,5],
+  // ── 爵士 ──
+  ['John Coltrane','A Love Supreme',5,2,3], ['Charles Mingus','The Black Saint and the Sinner Lady',4,3,4],
+  ['Eric Dolphy','Out to Lunch!',3,4,4], ['Herbie Hancock','Head Hunters',4,2,2],
+  ['Bill Evans','Sunday at the Village Vanguard',4,2,1],
+  // ── 靈魂 / 嘻哈 ──
+  ["Marvin Gaye","What's Going On",5,1,1], ['Stevie Wonder','Songs in the Key of Life',5,1,1],
+  ["Sly & the Family Stone","There's a Riot Goin' On",4,3,3], ["D'Angelo",'Voodoo',4,2,2],
+  ['Wu-Tang Clan','Enter the Wu-Tang (36 Chambers)',4,2,2], ['Nas','Illmatic',5,1,2],
+  ['MF DOOM','MM..FOOD',3,3,3], ['Kendrick Lamar','To Pimp a Butterfly',5,1,2],
+  ['OutKast','Aquemini',4,2,2], ["Erykah Badu","Mama's Gun",3,3,2],
+  ['Frank Ocean','Blonde',5,1,2],
+  // ── 民謠 / 唱作 ──
+  ['Joni Mitchell','Blue',5,1,1], ['Leonard Cohen','Songs of Leonard Cohen',4,2,2],
+  ['Karen Dalton','In My Own Time',2,5,2], ['Judee Sill','Heart Food',2,5,2],
+  ['Sibylle Baier','Colour Green',1,5,2], ['Elliott Smith','Either/Or',3,2,2],
+  // ── 日本 / 巴西 / 華語 ──
+  ['Haruomi Hosono','Hosono House',3,4,2], ['Yellow Magic Orchestra','Solid State Survivor',3,3,2],
+  ['Mariya Takeuchi','Variety',3,3,1], ['Tatsuro Yamashita','For You',3,3,1],
+  ['Caetano Veloso','Transa',3,4,2], ['Milton Nascimento','Clube da Esquina',3,4,2],
+  ['Tom Zé','Estudando o Samba',2,5,4],
+  ['王菲','浮躁',4,3,2], ['羅大佑','之乎者也',4,2,2],
+  ['鄧麗君','淡淡幽情',4,2,1], ['草東沒有派對','醜奴兒',3,3,2],
+  ['落日飛車','Jinji Kikko',3,3,1],
+  // ── 後搖 / 獨立 ──
+  ['Godspeed You! Black Emperor','Lift Your Skinny Fists Like Antennas to Heaven',3,4,4],
+  ['Sigur Rós','Ágætis byrjun',4,2,3], ['Mogwai','Young Team',3,3,3],
+  ['Tortoise','Millions Now Living Will Never Die',3,4,3], ['Nine Inch Nails','The Downward Spiral',4,2,3],
+  ['Neutral Milk Hotel','In the Aeroplane Over the Sea',4,3,3], ['Arcade Fire','Funeral',4,1,2],
+  ['The Strokes','Is This It',4,1,1], ['Interpol','Turn On the Bright Lights',3,2,2],
+  ['Deerhunter','Halcyon Digest',3,3,3], ['Animal Collective','Merriweather Post Pavilion',3,2,3],
+  ['Weyes Blood','Titanic Rising',3,2,1], ['Mac DeMarco','Salad Days',3,2,1],
+  ['Tame Impala','Currents',4,1,1],
+  // ── 大眾流行（小白池主力）──
+  ['ABBA','Arrival',4,1,1], ['Michael Jackson','Thriller',5,1,1],
+  ['Madonna','Like a Prayer',4,1,1], ['Adele','21',3,1,1],
+  ["Oasis","(What's the Story) Morning Glory?",4,1,1], ['Norah Jones','Come Away with Me',3,1,1],
+  ['Coldplay','Parachutes',3,1,1],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 const ACES = [
   {artist:'Radiohead',album:'OK Computer',classic:7,obscurity:1,accessibility:1,ace:'hall'},
   {artist:'Midori Takada',album:'Through the Looking Glass',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
   {artist:'Merzbow',album:'Pulse Demon',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
+  {artist:'The Beatles',album:'Revolver',classic:7,obscurity:1,accessibility:1,ace:'hall'},
+  {artist:'Connie Converse',album:'How Sad, How Lovely',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
+  {artist:'Lou Reed',album:'Metal Machine Music',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
 // 王牌旗標 → 對戰三圍（卡冊只存 hall/pearl/heresy 旗標，對戰才賦予 7 星單軸）
 const ACE_STATS = {
@@ -710,7 +776,7 @@ const OPPONENTS = {
   collector: { who:'瘋狂藏家',  diff:'hard',   sub:'精準虛晃＋牌庫管理，硬仗',       emoji:'💿' },
   po:        { who:'po', diff:'hard',   sub:'聽膠優越仔　快來打爆他（封測限定）', emoji:'🪩', beta:true },
 };
-// Po 的招牌私盤（挖盤味重；不足 19 張由卡池補滿，附 1 張流亡王牌）
+// Po 的招牌私盤（挖盤味重；每局只抽部分招牌、其餘由卡池補滿 → 場場不同，附 1 張流亡王牌）
 const PO_POOL = [
   ['Alice Coltrane','Journey in Satchidananda',4,4,3], ['Pharoah Sanders','Karma',3,4,4],
   ['Arthur Russell','World of Echo',3,5,4], ['Shuggie Otis','Inspiration Information',3,4,2],
@@ -719,6 +785,9 @@ const PO_POOL = [
   ['Sun Ra','Space Is the Place',3,4,5], ['Don Cherry','Brown Rice',3,5,4],
   ['Jorge Ben','África Brasil',4,4,2], ['Terry Riley','A Rainbow in Curved Air',3,4,4],
   ['Linda Perhacs','Parallelograms',2,5,3], ['Gal Costa','Gal Costa',3,5,3],
+  ['Beverly Glenn-Copeland','Keyboard Fantasies',2,5,3], ['Ryo Fukui','Scenery',2,5,2],
+  ['Dorothy Ashby','Afro-Harping',2,5,3], ['Hiroshi Yoshimura','Green',2,5,3],
+  ['Hailu Mergia','Hailu Mergia & His Classical Instrument',1,5,3], ['Francis Bebey','African Electronic Music',1,5,4],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 PO_POOL.push({artist:'Pauline Anna Strom',album:'Trans-Millenia Consort',classic:1,obscurity:7,accessibility:1,ace:'pearl'});
 
@@ -832,7 +901,8 @@ async function buildPlayerDeck(){
 const cardTotal = c => (c.classic||0)+(c.obscurity||0)+(c.accessibility||0);
 function buildEnemyDeck(oppKey){
   if(oppKey==='po'){
-    const sig = PO_POOL.filter(c=>!c.ace);
+    // 招牌私盤每局只抽 9 張（不再全上）→ 同一張招牌不會場場報到，其餘從卡池補滿
+    const sig = shuffle(PO_POOL.filter(c=>!c.ace)).slice(0, 9);
     const fill = shuffle(POOL).filter(c=>!sig.some(s=>s.album===c.album)).slice(0, Math.max(0, CFG.deckSize-1-sig.length));
     const regs = shuffle([...sig,...fill]).slice(0, CFG.deckSize-1);
     const ace = PO_POOL.find(c=>c.ace) || ACES[1];
