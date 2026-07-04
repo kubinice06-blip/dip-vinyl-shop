@@ -558,6 +558,35 @@ async function fillDynamicPool(n=14){
 }
 function maybeTopUpDynPool(){ if(DYNAMIC_POOL.length < 140) fillDynamicPool(14); }
 
+// ---------- 正式卡池：seed_cards.json（13,000+ 張普卡含三圍）＋ apex_pool.json（殿堂/流亡/異端 600 張王牌）----------
+// 開場載入直接併進 POOL / 覆蓋 ACES；內建小池與動態池只是離線備援與額外加料
+const seedReady = (async()=>{
+  const _k = c => (c.artist+'|'+c.album).toLowerCase();
+  try{
+    const [seedRes, apexRes] = await Promise.all([fetch('seed_cards.json'), fetch('apex_pool.json')]);
+    if(seedRes.ok){
+      const seed = await seedRes.json();
+      if(Array.isArray(seed) && seed.length){
+        const have = new Set(POOL.map(_k));
+        for(const [artist,album,c,o,a] of seed){
+          if(have.has((artist+'|'+album).toLowerCase())) continue;
+          POOL.push(applyNeoAce({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
+        }
+      }
+    }
+    if(apexRes.ok){
+      const apex = await apexRes.json();
+      const aces=[];
+      for(const t of ['hall','pearl','heresy']) for(const [artist,album] of (apex&&apex[t])||[]){
+        const s=NEO_ACE_STATS[t];
+        aces.push({artist,album,classic:s[0],obscurity:s[1],accessibility:s[2],ace:t});
+      }
+      if(aces.length){ ACES.length=0; ACES.push(...aces); }
+    }
+  }catch(e){ /* 離線 / 讀不到 → 內建池照玩 */ }
+})();
+window.__dbg = Object.assign(window.__dbg||{}, { get pool(){ return POOL; }, get aces(){ return ACES; }, get dyn(){ return DYNAMIC_POOL; }, seedReady });
+
 // ---------- 流派（給 run 級被動 + 三圍基礎；暫名）— 可被後台設定覆寫 ----------
 // affinity＝該派系的「親和屬性」：打那個屬性的牌會觸發專屬 buff（affBuff）。
 //   affBuff: { hp:n 額外回聲望 / qi:n 額外氣勢 / dmg:n 額外傷害 / foeQi:n 額外削對手氣勢 }
@@ -892,8 +921,10 @@ function enemyForDepth(d){
   const buff = Math.floor(d/2);                 // 每 2 場，敵牌主軸 +1（上限 6）
   const ranked = allPool().slice().sort((a,b)=>
     (b.classic+b.obscurity+b.accessibility)-(a.classic+a.obscurity+a.accessibility));
-  const top = ranked.slice(0, Math.min(ranked.length, 16 + d*3));  // 前段只放強牌，深層才放行雜牌
-  const bag = shuffle(top);
+  // 在「強牌帶」內隨機取樣（帶寬至少 120 張、隨深度放寬）：
+  // 舊寫法固定切全池最強前 16 張，排序是確定性的 → 前期敵人永遠同一批卡；改成帶內抽樣後場場不同
+  const bandN = Math.min(ranked.length, Math.max(120, (16 + d*3) * 8));
+  const bag = shuffle(ranked.slice(0, bandN));
   const deck=[];
   for(let i=0;i<11;i++){
     const c=copyCard(bag[i%bag.length]);
