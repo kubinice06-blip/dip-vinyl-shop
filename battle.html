@@ -603,7 +603,8 @@ const TELL_FLAVOR = {
 const ULT_FLAVOR = ['⚡ 氣勢滿溢，殺氣騰騰','⚡ 渾身散發要輾壓的氣場','⚡ 蓄勢待發、準備品味輾壓','⚡ 眼神鎖定，殺意已滿'];
 const pick = a => a[rnd(a.length)];
 
-// ===== 範例卡池（對戰 stats 1–5；王牌單軸 7）=====
+// ===== 內建備援卡池（對戰 stats 1–5；王牌單軸 7）=====
+// 正式池在下方 poolReady 從 seed_cards.json / apex_pool.json 載入後整份覆蓋；這裡只在 fetch 失敗時墊檔
 const POOL = [
   ['Radiohead','Kid A',5,2,4], ['The Velvet Underground','White Light/White Heat',4,4,5],
   ['Slint','Spiderland',3,4,4], ['My Bloody Valentine','Loveless',5,3,4],
@@ -708,6 +709,24 @@ const ACE_STATS = {
   pearl:  { classic:1, obscurity:7, accessibility:1 },
   heresy: { classic:1, obscurity:1, accessibility:7 },
 };
+
+// ===== 正式卡池：seed_cards.json（13,000+ 張普卡含三圍）＋ apex_pool.json（殿堂400/流亡100/異端100 王牌）=====
+// 開場先載入、抽牌全走這份；上面的內建小池只當 fetch 失敗時的備援
+const poolReady = (async()=>{
+  try{
+    const [seed, apex] = await Promise.all([
+      fetch('seed_cards.json').then(r=>r.ok?r.json():Promise.reject(r.status)),
+      fetch('apex_pool.json').then(r=>r.ok?r.json():Promise.reject(r.status)),
+    ]);
+    if(Array.isArray(seed) && seed.length){
+      POOL.length = 0;
+      for(const [artist,album,c,o,a] of seed) POOL.push({artist,album,classic:c,obscurity:o,accessibility:a,ace:null});
+    }
+    const aces = [];
+    for(const t of ['hall','pearl','heresy']) for(const [artist,album] of (apex&&apex[t])||[]) aces.push({artist,album,...ACE_STATS[t],ace:t});
+    if(aces.length){ ACES.length = 0; ACES.push(...aces); }
+  }catch(e){ /* 讀不到 → 用內建備援池，照樣能玩 */ }
+})();
 
 // ===== 打折花車雜牌（卡冊不足時的借牌）=====
 // 虛構的出清區廉價合輯：封面由程式生成（SVG data URI，不打 Spotify、開局即顯示），
@@ -891,8 +910,8 @@ async function buildPlayerDeck(){
     const borrow = [];
     // 一張王牌都沒有 → 店長借一張鎮店王牌（電腦輾壓時才有七星回擊可用，不然只能乾挨）
     if(!deck.some(c=>c.ace) && room>0){ borrow.push({...ACES[rnd(ACES.length)], borrowed:true}); room--; }
-    // 其餘從門口打折花車撈雜牌補滿（標「借」、不入冊）
-    for(const c of shuffle(JUNK_POOL)){ if(room<=0) break; if(have.has(c.album)) continue; borrow.push({...c, borrowed:true}); room--; }
+    // 其餘從正式卡池借牌補滿（標「借」、不入冊）；卡池空了才退回門口打折花車雜牌
+    for(const c of shuffle(POOL.length?POOL:JUNK_POOL)){ if(room<=0) break; if(have.has(c.album)) continue; borrow.push({...c, borrowed:true}); room--; }
     deck = deck.concat(borrow);
   }
   return shuffle(deck.map(c=>({...c,uid:++uid})));
@@ -940,6 +959,7 @@ async function startMatch(oppKey){
   const lw=document.getElementById('loadwrap');
   document.getElementById('loadText').textContent = currentUser ? '載入你的卡冊…' : '備牌中…';
   lw.classList.add('show');
+  await poolReady;                                   // 等正式卡池（seed/apex）載完再組牌
   if(currentUser && myColl===null) myColl = await getMyCollection();
   const pDeck = await buildPlayerDeck();
   const eDeck = buildEnemyDeck(oppKey);
@@ -962,7 +982,7 @@ function newGame(oppKey, pDeck, eDeck){
   const borrowed = pDeck.filter(c=>c.borrowed && !c.ace).length;
   const bAce = pDeck.some(c=>c.borrowed && c.ace);
   const intro = borrowed>0
-    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，從門口打折花車撈了 ${borrowed} 張雜牌充數（標「借」、不入冊）${bAce?'，店長還偷塞一張鎮店王牌給你':''}。`
+    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，從店裡卡池借了 ${borrowed} 張牌充數（標「借」、不入冊）${bAce?'，店長還偷塞一張鎮店王牌給你':''}。`
     : `對局開始 · 對手【${opp.who}】。整副都是你卡冊的卡。`;
   pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味輾壓】。', '');
   document.getElementById('overlay').classList.remove('show');
