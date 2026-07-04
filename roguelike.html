@@ -155,6 +155,18 @@
   .pcover.ht-noimg span,.ht-cover.ht-noimg span{font-size:11px;line-height:1.3;font-weight:700;color:#444;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
   .ht-ace{position:absolute;top:0;left:0;font-size:9px;font-weight:700;padding:2px 5px;color:#fff;z-index:2;}
   .ht-ace.hall{background:#9aa0a8;} .ht-ace.pearl{background:#5b4a8a;} .ht-ace.heresy{background:#a01020;}
+  /* 檯面卡左下角：這一手出的牌型（屬性）角標 */
+  .pattr{position:absolute;left:0;bottom:0;font-size:9px;font-weight:700;padding:2px 6px;color:#fff;z-index:2;background:var(--black);letter-spacing:0.04em;}
+  .pattr.classic{background:var(--classic);} .pattr.obscurity{background:var(--obscurity);} .pattr.accessibility{background:var(--accessibility);} .pattr.ult{background:var(--gold);}
+  /* 出牌記錄列（對戰中回顧、局末結算回顧） */
+  .histrow{display:flex;gap:6px;overflow-x:auto;padding:6px 0;}
+  .histrow .htile{flex:none;width:56px;height:56px;border:1px solid var(--line);background-size:cover;background-position:center;cursor:pointer;position:relative;overflow:hidden;background-color:#fff;}
+  .histrow .htile:hover{border-color:var(--black);}
+  .histrow .htile.noimg{display:flex;align-items:center;justify-content:center;padding:2px;text-align:center;background-image:repeating-linear-gradient(45deg,#fff,#fff 4px,#f3f3f3 4px,#f3f3f3 8px);}
+  .histrow .htile.noimg > span{font-size:7px;line-height:1.2;font-weight:700;color:#444;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+  .histrow .htile .hnum{position:absolute;left:0;top:0;background:rgba(0,0,0,.72);color:#fff;font-size:8px;padding:1px 4px;z-index:2;}
+  .histrow .htile .hattr{position:absolute;left:0;bottom:0;color:#fff;font-size:8px;padding:1px 4px;z-index:2;background:var(--black);}
+  .histrow .htile .hattr.classic{background:var(--classic);} .histrow .htile .hattr.obscurity{background:var(--obscurity);} .histrow .htile .hattr.accessibility{background:var(--accessibility);} .histrow .htile .hattr.ult{background:var(--gold);}
   .callout{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:25;width:max-content;max-width:90%;padding:9px 14px;background:rgba(255,255,255,.94);border:1px solid var(--black);box-shadow:0 6px 26px rgba(0,0,0,.3);text-align:center;pointer-events:none;font-weight:700;letter-spacing:0.04em;font-size:13px;}
   .callout:empty{display:none;} .callout.burst{animation:burst .42s cubic-bezier(.18,.9,.32,1.25);}
   .callout .dmg{color:var(--dmg);} .callout .good{color:var(--win);}
@@ -557,7 +569,7 @@ let CLASSES = {
            affinity:'obscurity', affBuff:{qi:1}, affDesc:'打【冷門】牌：額外 +1 氣勢',
            desc:'每回合氣勢自動 +1、充能較快，較常放品味輾壓。' },
   heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:2,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
-           affinity:'accessibility', affBuff:{dmg:1,foeQi:1}, affDesc:'打【入耳】牌：額外 +1 傷害、削對手 1 氣勢',
+           affinity:'accessibility', affBuff:{dmg:1,foeQi:1}, affDesc:'打【入耳】且該回合打贏：額外 +1 傷害、削對手 1 氣勢',
            desc:'攻擊較高、傷害狠，打快攻速戰速決。' },
 };
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
@@ -703,6 +715,8 @@ function chooseClass(key){
     runLevel:1, runXp:0, lvlQueue:0,
     deck:[], depth:0, streak:0, relics:[],
     seedsPicked:[],
+    drawnCards:[],   // 一路上局末抽到的盤：趟結束結算時挑 1 張永久收藏
+    _keptOne:false,
   };
   RUN.maxHp = RUN.baseMaxHp; RUN.hp = RUN.maxHp;
   renderSeedSelect();
@@ -906,6 +920,7 @@ function nextFight(){
     p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:0, deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },
     e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
     E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[],
+    eHist:[], pHist:[],   // 本場雙方出過的牌（回顧用）
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
   for(let i=0;i<CFG.startHand+RUN.mods.extraDraw;i++){ drawCard(G.p); }  // 起手多抽（能力）
@@ -968,6 +983,7 @@ function startTurn(){
   if(RUN.mods.regen && G.turn>1) G.p.hp=Math.min(G.p.maxHp, G.p.hp+RUN.mods.regen);
   // AI 暗定 + 虛晃（隨深度越來越會騙：氣場提示不再可以照剋）
   const plan=aiPlan();
+  if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 對手無牌可出 → 速判
   let attr=plan.attr, vague=false; const tell=plan.attr;
   const d=RUN.depth;
   if(G.diff!=='easy' && !plan.card.ace){
@@ -1001,20 +1017,74 @@ async function ensureCover(card){
   }
   coverCache[id]=url; card.coverUrl=url; return url;
 }
-function lazyCover(slotId, card){
+function lazyCover(slotId, card, attr){
   if(!card || card.coverUrl) return;
   const s=document.getElementById(slotId); if(!s) return; s.dataset.cuid=card.uid;
-  ensureCover(card).then(url=>{ if(url && s.dataset.cuid==card.uid && s.classList.contains('filled')) s.innerHTML=boardCardHTML(card); });
+  ensureCover(card).then(url=>{ if(url && s.dataset.cuid==card.uid && s.classList.contains('filled')) s.innerHTML=boardCardHTML(card, attr); });
 }
-// 檯面卡＝整張方形封面（與 battle.html .pcard/.pcover 一致）
-function boardCardHTML(card){
+// 檯面卡＝整張方形封面（與 battle.html .pcard/.pcover 一致）；attr = 這一手出的牌型角標
+function boardCardHTML(card, attr){
   const aceTag=card.ace?`<span class="ht-ace ${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
+  const attrTag=attr ? (attr==='__ult__'
+    ? `<span class="pattr ult">⚡輾壓</span>`
+    : `<span class="pattr ${attr}">${ATTR_ZH[attr]} ${card[attr]||''}</span>`) : '';
   const cover=card.coverUrl
     ? `<div class="pcover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
     : `<div class="pcover ht-noimg"><span>${card.album}</span></div>`;
   const ring=card.ace?` ace-border ace-${card.ace}`:(' '+rarityCls(card));
-  return `<div class="pcard${ring.trim()?ring:''}">${cover}${aceTag}</div>`;
+  return `<div class="pcard${ring.trim()?ring:''}">${cover}${aceTag}${attrTag}</div>`;
 }
+// ----- 串流連結：worker /spotify-search 回 spotifyUrl（KV 快取）；拿不到就退 Spotify 站內搜尋 -----
+function streamSearchUrl(c){ return 'https://open.spotify.com/search/'+encodeURIComponent(c.artist+' '+c.album); }
+async function ensureStreamUrl(c){
+  if(c._streamUrl) return c._streamUrl;
+  try{
+    const r=await fetch(DYN_WORKER+'/spotify-search?artist='+encodeURIComponent(c.artist)+'&album='+encodeURIComponent(c.album));
+    if(r.ok){ const d=await r.json(); if(d && d.spotifyUrl) return c._streamUrl=d.spotifyUrl; }
+  }catch(e){}
+  return c._streamUrl=streamSearchUrl(c);
+}
+// 先給搜尋連結讓按鈕立即可點，抓到專輯直連再換上（避開 popup 攔截）
+function hookStreamLink(id, card){
+  ensureStreamUrl(card).then(u=>{ const a=document.getElementById(id); if(a&&u) a.href=u; });
+}
+
+// ----- 出牌記錄（對戰中回顧＋局末結算回顧；點小圖看介紹/聽歌）-----
+window._histReg = {};
+function histRowHTML(hist, prefix){
+  window._histReg[prefix]=hist||[];
+  if(!hist || !hist.length) return `<div class="muted" style="font-size:10px">（尚未出牌）</div>`;
+  return `<div class="histrow">${hist.map((h,i)=>{
+    const c=h.card;
+    const attrTag = h.attr==='__ult__' ? `<span class="hattr ult">輾壓</span>` : `<span class="hattr ${h.attr}">${ATTR_ZH[h.attr]}</span>`;
+    const bg = c.coverUrl ? ` style="background-image:url('${String(c.coverUrl).replace(/'/g,'%27')}')"` : '';
+    return `<div class="htile${c.coverUrl?'':' noimg'}" id="${prefix}${i}"${bg} onclick="openHistInfo('${prefix}',${i})"><span class="hnum">${i+1}</span>${c.coverUrl?'':`<span>${c.album}</span>`}${attrTag}</div>`;
+  }).join('')}</div>`;
+}
+function lazyHistCovers(hist, prefix){
+  (hist||[]).forEach((h,i)=>{ const c=h.card; if(c.coverUrl) return;
+    ensureCover(c).then(url=>{ if(!url) return; const el=document.getElementById(prefix+i); if(!el) return;
+      el.classList.remove('noimg'); const s=[...el.children].find(x=>!x.className); if(s) s.remove();
+      el.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; }); });
+}
+function openHistInfo(prefix,i){ const h=(window._histReg[prefix]||[])[i]; if(h) openCardInfo(h.card); }
+function openHistView(){
+  if(!G || document.getElementById('histMask')) return;
+  const mask=document.createElement('div'); mask.className='drawmask'; mask.id='histMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left">
+    <div class="lab">本場出牌記錄</div>
+    <div class="muted" style="margin:2px 0">對手出過的牌（點小圖看介紹／聽歌）</div>
+    ${histRowHTML(G.eHist,'hvE')}
+    <div class="muted" style="margin:10px 0 2px">你出過的牌</div>
+    ${histRowHTML(G.pHist,'hvP')}
+    <div class="sp"></div>
+    <button class="btn primary" style="width:100%" onclick="closeHistView()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeHistView(); });
+  document.body.appendChild(mask);
+  lazyHistCovers(G.eHist,'hvE'); lazyHistCovers(G.pHist,'hvP');
+}
+function closeHistView(){ const m=document.getElementById('histMask'); if(m) m.remove(); }
 const REL_RING_SVG = `<div class="relring" aria-hidden="true"><svg viewBox="0 0 126 120" xmlns="http://www.w3.org/2000/svg">
   <defs><marker id="arrK" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--dmg)"/></marker>
   <marker id="arrS" viewBox="0 0 8 7" refX="7" refY="3.5" markerWidth="7" markerHeight="6" orient="auto"><path d="M0,0 L8,3.5 L0,7 z" fill="var(--qi)"/></marker></defs>
@@ -1046,7 +1116,7 @@ function renderBattle(){
     : '';
   const need=runXpNeed();
   $app.innerHTML = topbarHTML() + `
-    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span><button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
+    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span><button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">出牌記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
     <div class="xpbar" style="margin:5px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     ${sideHTML(G.e, G.E.who, 'e')}
     <div class="etell" id="tell">${tellTxt}</div>
@@ -1071,8 +1141,8 @@ function renderBattle(){
 function paintBoardSlots(){
   if(!G) return;
   const es=document.getElementById('eSlot'), ps=document.getElementById('pSlot');
-  if(es && G.eShow){ es.className=(G.eSlotCls||'slot filled')+' done clk'; es.innerHTML=boardCardHTML(G.eShow); lazyCover('eSlot',G.eShow); es.onclick=()=>{ if(G&&G.eShow) openCardInfo(G.eShow); }; }
-  if(ps && G.pShow){ ps.className=(G.pSlotCls||'slot filled')+' done clk'; ps.innerHTML=boardCardHTML(G.pShow); lazyCover('pSlot',G.pShow); ps.onclick=()=>{ if(G&&G.pShow) openCardInfo(G.pShow); }; }
+  if(es && G.eShow){ es.className=(G.eSlotCls||'slot filled')+' done clk'; es.innerHTML=boardCardHTML(G.eShow,G.eShowAttr); lazyCover('eSlot',G.eShow,G.eShowAttr); es.onclick=()=>{ if(G&&G.eShow) openCardInfo(G.eShow); }; }
+  if(ps && G.pShow){ ps.className=(G.pSlotCls||'slot filled')+' done clk'; ps.innerHTML=boardCardHTML(G.pShow,G.pShowAttr); lazyCover('pSlot',G.pShow,G.pShowAttr); ps.onclick=()=>{ if(G&&G.pShow) openCardInfo(G.pShow); }; }
 }
 let _sel=null;
 function renderHand(){
@@ -1099,7 +1169,9 @@ function renderTilePop(){
   const ultReady=G.p.qi>=CFG.qiMax;
   const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
   const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
-  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
+  const stream=`<a class="pp-act" id="tpStream" style="flex:1 0 100%;margin-top:4px;text-decoration:none;font-size:10px;padding:6px 0" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">♪ 串流聽這張</a>`;
+  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}${stream}</div>`;
+  hookStreamLink('tpStream', c);
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
 function positionTilePop(){
@@ -1139,18 +1211,21 @@ async function play(uid, pAttr){
   const {card:eCard, attr:eAttr, tell, ult:eUlt, vague}=G.pendingE;
   const feinted = !eUlt && !vague && eAttr!==tell;
   G.pCounteredTellLast = !pUlt && !vague && (pAttr===COUNTER_OF[tell]);   // 氣場藏起來的回合不算「照剋」
-  // 移出手牌
+  // 移出手牌（雙方：對手的牌也要消耗，否則同一張會一直重複出）
   G.p.hand=G.p.hand.filter(c=>c.uid!==uid);
+  G.e.hand=G.e.hand.filter(c=>c.uid!==eCard.uid);
 
+  const pAttrShow = pUlt?'__ult__':pAttr, eAttrShow = eUlt?'__ult__':eAttr;
   const tp=document.getElementById('tilePop'); if(tp) tp.classList.remove('show');
   document.getElementById('tell').innerHTML='';
   const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
-  ps.className='slot filled'; ps.innerHTML=boardCardHTML(pCard); lazyCover('pSlot',pCard);
-  es.className='slot filled'; es.innerHTML=boardCardHTML(eCard); lazyCover('eSlot',eCard);
+  ps.className='slot filled'; ps.innerHTML=boardCardHTML(pCard,pAttrShow); lazyCover('pSlot',pCard,pAttrShow);
+  es.className='slot filled'; es.innerHTML=boardCardHTML(eCard,eAttrShow); lazyCover('eSlot',eCard,eAttrShow);
   renderHand();
   if(feinted && G.pCounteredTellLast){ callout('<span class="dmg">對手虛晃一招！反咬你的相剋</span>'); pushLog('對手虛晃 → 反咬你的相剋','hit'); await sleep(650); }
 
   const st=G.p.stats, est=G.e.stats;
+  const pHp0=G.p.hp, eHp0=G.e.hp;   // 記回合前血量 → 勝負標記照「這一手誰掉血多」判，不看總血量
 
   if(pUlt || eUlt){
     // 品味輾壓回合
@@ -1188,12 +1263,13 @@ async function play(uid, pAttr){
     drainQiOnHit('e', pAttr, dmgToE); drainQiOnHit('p', eAttr, dmgToP);   // 被攻擊 → 氣勢下降
     applyAttrEffect(G.p,pAttr); applyAttrEffect(G.e,eAttr);
     // 派系專長：打親和屬性的牌 → 觸發專屬 buff
+    // 攻擊型效果（額外傷害／削氣勢）只在「該回合打贏」時觸發——輸掉比拚還反打對手一下太怪
     if(pAttr===RUN.affinity){
-      const ab=RUN.affBuff||{}; const notes=[];
+      const ab=RUN.affBuff||{}; const notes=[]; const wonRound = r.by==='p';
       if(ab.hp){ G.p.hp=Math.min(G.p.maxHp,G.p.hp+ab.hp); notes.push(`聲望+${ab.hp}`); }
       if(ab.qi){ G.p.qi=clampQi(G.p.qi+ab.qi); notes.push(`氣勢+${ab.qi}`); }
-      if(ab.foeQi){ G.e.qi=clampQi(G.e.qi-ab.foeQi); notes.push(`削對手氣勢${ab.foeQi}`); }
-      if(ab.dmg){ const d=applyDef(applyAtk(ab.dmg,st.atk),est.def); G.e.hp-=d; notes.push(`額外傷害−${d}`); }
+      if(wonRound && ab.foeQi){ G.e.qi=clampQi(G.e.qi-ab.foeQi); notes.push(`削對手氣勢${ab.foeQi}`); }
+      if(wonRound && ab.dmg){ const d=applyDef(applyAtk(ab.dmg,st.atk),est.def); G.e.hp-=d; notes.push(`額外傷害−${d}`); }
       if(notes.length) pushLog(`★ ${CLASSES[RUN.classKey].name}專長（${ATTR_ZH[pAttr]}）：${notes.join('、')}`,'good');
     }
     G.p.last=pAttr; G.e.last=eAttr;
@@ -1209,12 +1285,18 @@ async function play(uid, pAttr){
     } else { callout('平手 · 雙方氣勢+1'); pushLog('平手，雙方氣勢+1','qi'); }
   }
 
-  // 結算畫面
-  markResult(pCard,eCard);
-  // 記住這一手雙方的牌＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
-  G.pShow=pCard; G.eShow=eCard;
+  // 結算畫面（勝負標記照這一手的掉血差，不看總血量）
+  markResult(pHp0,eHp0);
+  // 記住這一手雙方的牌＋牌型＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
+  G.pShow=pCard; G.eShow=eCard; G.pShowAttr=pAttrShow; G.eShowAttr=eAttrShow;
+  G.pHist.push({card:pCard, attr:pAttrShow}); G.eHist.push({card:eCard, attr:eAttrShow});
   const _psE=document.getElementById('pSlot'), _esE=document.getElementById('eSlot');
   G.pSlotCls=_psE?_psE.className:'slot filled'; G.eSlotCls=_esE?_esE.className:'slot filled';
+  // 揭曉對手這一手實際出的牌型（原本打完就空著）
+  const tellEl=document.getElementById('tell');
+  if(tellEl) tellEl.innerHTML = eUlt
+    ? '上一手：對手發動 <b>⚡品味輾壓</b>'
+    : `上一手：對手出【<b>${ATTR_ZH[eAttr]}</b>】${eCard[eAttr]}★${feinted?'（虛晃！氣場是假的）':''}`;
   refreshFighters();
   await sleep(900);
 
@@ -1227,17 +1309,19 @@ async function play(uid, pAttr){
   drawCard(G.p); drawCard(G.e);
   while(G.p.hand.length>CFG.handLimit) G.p.hand.shift();
   while(G.e.hand.length>CFG.handLimit) G.e.hand.shift();
-  if(G.p.hand.length===0 && G.e.hand.length===0){ // 雙方無牌 → 速判
+  if(G.p.hand.length===0 || G.e.hand.length===0){ // 任一方無牌可出 → 速判
     if(G.p.hp>=G.e.hp) winFight(); else loseFight(); return;
   }
   callout(''); startTurn();
 }
 
-function markResult(pCard,eCard){
+function markResult(pHp0,eHp0){
+  // 這一手誰掉血多誰輸（原本比「總血量」，領先時就算這手被打也會標「勝」，誤導）
   const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
   if(!ps||!es) return;
-  if(G.e.hp<G.p.hp){ ps.classList.add('win'); es.classList.add('lose'); }
-  else if(G.p.hp<G.e.hp){ ps.classList.add('lose'); es.classList.add('win'); }
+  const pLoss=pHp0-G.p.hp, eLoss=eHp0-G.e.hp;
+  if(eLoss>pLoss){ ps.classList.add('win'); es.classList.add('lose'); }
+  else if(pLoss>eLoss){ ps.classList.add('lose'); es.classList.add('win'); }
 }
 function refreshSide(side){
   const s=G[side];
@@ -1335,9 +1419,12 @@ function renderWinContinue(){
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     <div style="font-size:11px;color:var(--dim);margin-bottom:12px">能力：${modsLine()}</div>
     ${RUN._drewThisWin
-      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）${RUN._drewThisKept?'，並永久收進卡冊':'，趟結束後消失'}</div>`
+      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）——趟結束結算時可從一路抽到的盤挑 <b>1</b> 張永久收藏</div>`
       : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
+    ${(G&&G.eHist&&G.eHist.length)?`<div class="muted" style="margin:8px 0 0">本場對手出過的牌（點小圖看介紹／聽歌）</div>${histRowHTML(G.eHist,'wh')}`:''}
+    <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
+  if(G&&G.eHist) lazyHistCovers(G.eHist,'wh');
 }
 
 // =========================================================================
@@ -1369,29 +1456,44 @@ function openDrawReveal(){
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
-    <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="confirmDraw(true)">★ 收進卡冊（永久保留）</button>
-    <button class="btn" style="width:100%" onclick="confirmDraw(false)">只加本趟牌組（趟結束消失）</button>
+    <a class="btn" id="drawStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    <button class="btn primary" style="width:100%" onclick="confirmDraw()">加入本趟牌組 →</button>
+    <div class="muted" style="font-size:10px;margin-top:8px">趟結束結算時，可從一路抽到的盤中挑 <b>1</b> 張永久收進卡冊</div>
   </div>`;
   document.body.appendChild(mask);
   ensureCover(c).then(url=>{
     const el = document.getElementById('drawCov');
     if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
   });
+  hookStreamLink('drawStream', c);
   loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與卡冊/對戰同一套事實型簡介（/album-desc，含人工校正）
 }
-function confirmDraw(keep){
+function confirmDraw(){
   if(!_drawCard) return;
-  RUN.deck.push(_drawCard);                 // 本趟牌組（趟結束洗掉）
-  if(keep && !META.collection.some(c=>keyOf(c)===keyOf(_drawCard))){
-    // 永久收進卡冊：之後挑種子、撿盤都能用到
-    META.collection.push({artist:_drawCard.artist,album:_drawCard.album,classic:_drawCard.classic,obscurity:_drawCard.obscurity,accessibility:_drawCard.accessibility,ace:_drawCard.ace||null});
-    saveMeta();
-  }
-  RUN._drewThisKept = !!keep;
+  RUN.deck.push(_drawCard);                            // 本趟牌組（趟結束洗掉）
+  (RUN.drawnCards=RUN.drawnCards||[]).push(_drawCard); // 記下來：趟結束結算時挑 1 張永久收藏
   RUN._drewThisWin = true;
   _drawCard = null;
   const m = document.getElementById('drawMask'); if(m) m.remove();
   renderWinContinue();
+}
+// 局末結算：從一路抽到的盤中挑「一張」永久收進卡冊
+function keepRunCard(i){
+  if(!RUN || RUN._keptOne) return;
+  const c=(RUN.drawnCards||[])[i]; if(!c) return;
+  RUN._keptOne=true;
+  if(!META.collection.some(x=>keyOf(x)===keyOf(c))){
+    META.collection.push({artist:c.artist,album:c.album,classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
+    saveMeta();
+  }
+  closeCardInfo();
+  // 只改 DOM、不重跑 renderDeath（那會重複結算 XP）
+  const wrap=document.getElementById('runDrawn');
+  if(wrap){ [...wrap.children].forEach((el,j)=>{ el.style.opacity = j===i?'1':'.35';
+    if(j===i){ const cd=el.querySelector('.card'); if(cd){ cd.style.borderColor='var(--gold)'; cd.style.boxShadow='0 0 0 1px var(--gold) inset'; } } }); }
+  const note=document.getElementById('keepNote');
+  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）`; }
+  const cnt=document.getElementById('collCount'); if(cnt) cnt.textContent=META.collection.length;
 }
 
 // ----- 點檯面卡／死亡結算抽到的盤：揭曉封面＋三圍＋專輯簡介（可關閉）-----
@@ -1423,9 +1525,13 @@ function confirmQuit(){
 }
 function closeQuit(){ const m=document.getElementById('quitMask'); if(m) m.remove(); }
 function doQuit(){ location.href='index.html'; }
-function openCardInfo(card){
+function openCardInfo(card, opts){
   if(!card || document.getElementById('cardInfoMask') || document.getElementById('drawMask')) return;
+  opts=opts||{};
   const aceTag = card.ace ? `<span class="acebadge">${ACE_ZH[card.ace]}</span>` : '';
+  // 局末結算的「挑一張收藏」：從結算畫面點進來才有這顆鍵，整趟只能按一次
+  const keepBtn = (opts.keepIdx!=null && RUN && !RUN._keptOne)
+    ? `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="keepRunCard(${opts.keepIdx})">★ 收進卡冊（本趟只能選一張）</button>` : '';
   const mask=document.createElement('div');
   mask.className='drawmask'; mask.id='cardInfoMask';
   mask.innerHTML=`<div class="drawcard">
@@ -1438,11 +1544,14 @@ function openCardInfo(card){
     ${aceTag}
     <div class="stats">${starsHTML(card)}</div>
     <div class="intro wait" id="ciIntro">介紹載入中…</div>
+    <a class="btn" id="ciStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(card)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    ${keepBtn}
     <button class="btn primary" style="width:100%" onclick="closeCardInfo()">關閉</button>
   </div>`;
   mask.addEventListener('click', e=>{ if(e.target===mask) closeCardInfo(); });
   document.body.appendChild(mask);
   if(!card.coverUrl) ensureCover(card).then(url=>{ const el=mask.querySelector('.cov'); if(url && el && el.tagName!=='IMG'){ el.outerHTML=`<img class="cov" src="${String(url).replace(/'/g,'%27')}" alt="">`; } });
+  hookStreamLink('ciStream', card);
   loadAlbumDesc(card, document.getElementById('ciIntro'));
 }
 
@@ -1467,6 +1576,19 @@ function renderDeath(){
     <div style="color:var(--gold);font-weight:700">🎁 抽到 ${drawn.length} 張新專輯進收藏！</div>
     <div class="muted" style="font-size:10px;margin-top:2px">點專輯看封面與介紹</div>
     <div class="grid" style="margin:8px 0" id="deathDrawn">${drawn.map((c,i)=>`<div onclick="openCardInfo(window._deathDrawn[${i}])" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
+  // 一路上局末抽到的盤：結算時挑「一張」永久收進卡冊
+  const runDrawn = RUN.drawnCards||[];
+  window._runDrawn = runDrawn;
+  const runDrawnHTML = runDrawn.length ? `
+    <div class="sp"></div>
+    <div style="color:var(--gold);font-weight:700">🎴 本趟一路抽到 ${runDrawn.length} 張盤 — 挑 1 張永久收進卡冊</div>
+    <div class="muted" id="keepNote" style="font-size:10px;margin-top:2px">點專輯看介紹，再按「★ 收進卡冊」；只能選一張，其餘趟結束消失</div>
+    <div class="grid" style="margin:8px 0" id="runDrawn">${runDrawn.map((c,i)=>`<div onclick="openCardInfo(window._runDrawn[${i}],{keepIdx:${i}})" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
+  // 本場對手出過的牌（回顧）
+  const foeHistHTML = (G&&G.eHist&&G.eHist.length) ? `
+    <div class="sp"></div>
+    <div class="muted" style="text-align:left">本場對手出過的牌（點小圖看介紹／聽歌）</div>
+    ${histRowHTML(G.eHist,'dh')}` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="death">
       <div class="muted">試煉終結</div>
@@ -1476,9 +1598,11 @@ function renderDeath(){
       <div>獲得樂歷 <b style="color:var(--gold)">+${gained} XP</b>　<span class="muted">(結算另計，與局內經驗無關)</span></div>
       ${gainedLevels>0?`<div style="color:var(--gold);font-weight:800;margin-top:6px">⬆ 樂歷升級！Lv.${lvBefore} → Lv.${lvAfter}（得 ${gainedLevels} 天賦點，下局開始前可配）</div>`:''}
       <div class="muted" style="margin-top:4px">${META.bestDepth===RUN.depth&&RUN.depth>0?'🏆 新紀錄！':''}</div>
+      ${runDrawnHTML}
       ${drawnHTML}
+      ${foeHistHTML}
       <div class="sp"></div>
-      <div class="muted">收藏：${META.collection.length} 張專輯</div>
+      <div class="muted">收藏：<span id="collCount">${META.collection.length}</span> 張專輯</div>
       <div class="sp"></div>
       <button class="btn primary" style="width:100%" onclick="renderClassSelect()">再來一趟 →</button>
       <div class="sp"></div>
@@ -1488,6 +1612,10 @@ function renderDeath(){
   drawn.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
     const wrap=document.getElementById('deathDrawn'); if(!wrap||!wrap.children[i]) return;
     const cov=wrap.children[i].querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+  runDrawn.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
+    const wrap=document.getElementById('runDrawn'); if(!wrap||!wrap.children[i]) return;
+    const cov=wrap.children[i].querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+  if(G&&G.eHist) lazyHistCovers(G.eHist,'dh');
 }
 
 // 套用後台設定（部分覆寫，缺的用內建預設）
