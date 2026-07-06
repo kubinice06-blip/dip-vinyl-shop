@@ -558,7 +558,7 @@ async function fillDynamicPool(n=14){
 }
 function maybeTopUpDynPool(){ if(DYNAMIC_POOL.length < 140) fillDynamicPool(14); }
 
-// ---------- 正式卡池：seed_cards.json（13,000+ 張普卡含三圍）＋ apex_pool.json（殿堂/流亡/異端 600 張王牌）----------
+// ---------- 正式卡池：seed_cards.json（約 5,000 張精選普卡含三圍）＋ apex_pool.json（殿堂/流亡/異端 600 張王牌）----------
 // 開場載入直接併進 POOL / 覆蓋 ACES；內建小池與動態池只是離線備援與額外加料
 const seedReady = (async()=>{
   const _k = c => (c.artist+'|'+c.album).toLowerCase();
