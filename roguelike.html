@@ -74,6 +74,21 @@
   .card .cover.noimg{display:flex;align-items:center;justify-content:center;padding:6px;text-align:center;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px);}
   .card .cover.noimg span{font-size:10px;font-weight:700;color:#444;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
 
+  /* 選初始牌：選中浮起＋金框＋勾號（長按可看介紹，禁選字/選單） */
+  #shelf > div{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+  #shelf .card{transition:transform .18s,border-color .18s,box-shadow .18s;}
+  #shelf .card.sel{transform:translateY(-6px) scale(1.05);border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset,0 10px 22px rgba(0,0,0,.22);z-index:2;}
+  #shelf .card.sel::before{content:'✓';position:absolute;top:6px;left:6px;width:18px;height:18px;background:var(--gold);color:#fff;font-weight:700;font-size:11px;line-height:18px;text-align:center;z-index:4;animation:pop .2s;}
+  /* 底部固定選牌列：已選 n/5 ＋ 開始旅程，跟著視窗走 */
+  .seedbar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--black);z-index:50;box-shadow:0 -4px 14px rgba(0,0,0,.08);}
+  .seedbar .inner{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:10px 14px;}
+  .seedbar .cnt{font-weight:700;font-size:12px;white-space:nowrap;}
+  .seedbar .cnt b{color:var(--gold);font-size:14px;}
+  .seedbar .dots{display:flex;gap:4px;}
+  .seedbar .dots i{width:11px;height:11px;border:1px solid var(--line);background:#eee;transition:background .15s;}
+  .seedbar .dots i.on{background:var(--gold);border-color:var(--gold);}
+  .seedbar .btn{margin-left:auto;}
+
   /* battle */
   .fighter{border:1px solid var(--line);background:#fff;border-radius:0;padding:10px 12px;margin-bottom:8px;}
   .fighter .who{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:0.06em;}
@@ -125,6 +140,9 @@
   .nameplate{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
   .nameplate .who{font-weight:700;letter-spacing:0.08em;font-size:12px;}
   .nameplate .meta{font-size:9px;color:var(--gray);letter-spacing:0.04em;}
+  /* 三圍徽章（攻/防/勢）：上色加粗、數字放大，戰鬥中一眼可讀 */
+  .nameplate .meta .s-atk,.nameplate .meta .s-def,.nameplate .meta .s-qir{font-weight:700;font-size:10px;}
+  .nameplate .meta .s-atk b,.nameplate .meta .s-def b,.nameplate .meta .s-qir b{font-size:12px;}
   .hpbar{height:14px;background:var(--hp-bg);position:relative;overflow:hidden;}
   .hpbar > i{position:absolute;inset:0 auto 0 0;background:var(--hp);transition:width .5s cubic-bezier(.4,0,.2,1);}
   .hpbar > span{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:var(--gray);mix-blend-mode:difference;}
@@ -275,6 +293,40 @@
         const u = auth.currentUser; if(!u) return [];
         try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>({cardId:d.id,...d.data()})); }
         catch(e){ return []; }
+      };
+      // 收進會員卡冊（與商店 index.html addCardToCollection 同 schema / 同 doc id 規則）
+      window.__addToMyCollection = async (card) => {
+        const u = auth.currentUser; if(!u) return 'need-login';
+        const id = ((card.artist||'')+'|'+(card.album||'')).toLowerCase().replace(/\//g,'-').trim();
+        if(!id || id==='|') return false;
+        const ref = doc(db,'collections',u.uid,'cards',id);
+        try {
+          const snap = await getDoc(ref);
+          if(snap.exists()){
+            const cur = snap.data(); const up = {};
+            if(card.ace==='hall' && !cur.hall) up.hall = true;
+            if(card.ace==='pearl' && !cur.pearl) up.pearl = true;
+            if(card.ace==='heresy' && !cur.heresy) up.heresy = true;
+            await setDoc(ref,{ count:(cur.count||1)+1, lastObtainedAt:Date.now(), ...up },{merge:true});
+            return 'dup';
+          }
+          await setDoc(ref,{
+            cardId:id, artist:card.artist||'', album:card.album||'',
+            coverUrl:card.coverUrl||'', desc:'', count:1, obtainedAt:Date.now(),
+            ...(card.ace==='hall'?{hall:true}:{}), ...(card.ace==='pearl'?{pearl:true}:{}), ...(card.ace==='heresy'?{heresy:true}:{})
+          });
+          return 'new';
+        } catch(e){ return false; }
+      };
+      // 樂歷雲端同步：存 users/{uid}.rogueMeta（規則本來就允許會員寫自己那筆，免改規則）
+      window.__loadRogueMeta = async () => {
+        const u = auth.currentUser; if(!u) return null;
+        try { const s = await getDoc(doc(db,'users',u.uid)); return s.exists() ? (s.data().rogueMeta||null) : null; }
+        catch(e){ return null; }
+      };
+      window.__saveRogueMeta = (m) => {
+        const u = auth.currentUser; if(!u) return;
+        try { setDoc(doc(db,'users',u.uid),{ rogueMeta:m, rogueMetaUpdatedAt:Date.now() },{merge:true}).catch(()=>{}); } catch(e){}
       };
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
       const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
@@ -604,13 +656,18 @@ let CLASSES = {
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
 const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
 
-// ---------- 樂歷（結算經驗 / 等級，localStorage 永久；升級給天賦＋抽專輯）----------
+// ---------- 樂歷（結算經驗 / 等級；登入後綁 Google 帳號存雲端，未登入存本機訪客檔）----------
 const META_KEY = 'dipRogueMeta_v2';
+const META_UID_KEY = 'dipRogueLastUid';
+let _cloudUid = null; try{ _cloudUid = localStorage.getItem(META_UID_KEY) || null; }catch(e){}
+// 登入後改用 uid 專屬 key（＝本機快取），訪客用共用 key；登出後等級不再跟著裝置走
+function metaStoreKey(){ return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
 const keyOf = c => (c.artist+'|'+c.album).toLowerCase();
 function loadMeta(){
-  let m; try{ m = JSON.parse(localStorage.getItem(META_KEY)); }catch(e){}
-  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[] };
+  let m; try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){}
+  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[] };
   m.talents = Object.assign({atk:0,def:0,qir:0}, m.talents||{});
+  if(!Array.isArray(m.pending)) m.pending = [];
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -620,7 +677,69 @@ function loadMeta(){
   }
   return m;
 }
-function saveMeta(){ localStorage.setItem(META_KEY, JSON.stringify(META)); }
+function saveMeta(){
+  try{ localStorage.setItem(metaStoreKey(), JSON.stringify(META)); }catch(e){}
+  // 登入中 → 同步寫雲端（fire-and-forget；JSON 轉一圈把 undefined 洗掉，Firestore 不收）
+  if(_cloudUid && window.__saveRogueMeta){ try{ window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
+}
+// 併兩份樂歷：以 xp 較高者為底（天賦跟著它），紀錄取最大值、收藏／待補綁卡聯集
+function mergeMeta(a,b){
+  if(!a) return b; if(!b) return a;
+  const hi = (b.xp||0)>(a.xp||0) ? b : a, lo = hi===a ? b : a;
+  const m = {
+    xp:Math.max(a.xp||0,b.xp||0),
+    talents:Object.assign({atk:0,def:0,qir:0}, hi.talents||{}),
+    runsPlayed:Math.max(a.runsPlayed||0,b.runsPlayed||0),
+    bestDepth:Math.max(a.bestDepth||0,b.bestDepth||0),
+    bestStreak:Math.max(a.bestStreak||0,b.bestStreak||0),
+    collection:(hi.collection||[]).slice(),
+    pending:(hi.pending||[]).slice(),
+  };
+  const owned = new Set(m.collection.map(keyOf));
+  for(const c of (lo.collection||[])) if(!owned.has(keyOf(c))){ m.collection.push(c); owned.add(keyOf(c)); }
+  const pset = new Set(m.pending.map(keyOf));
+  for(const c of (lo.pending||[])) if(!pset.has(keyOf(c))){ m.pending.push(c); pset.add(keyOf(c)); }
+  return m;
+}
+// 登入 → 樂歷綁帳號：雲端為主、本機訪客進度首次登入時併入；訪客檔清掉（登出後回到訪客 Lv.1）
+async function bindMetaToAccount(u){
+  if(!u) return;
+  let cloud=null; try{ cloud = await window.__loadRogueMeta(); }catch(e){}
+  const local = META;
+  if(_cloudUid===u.uid){
+    // 同帳號回訪：本機快取跟雲端對齊（雲端可能有其他裝置打出來的進度）
+    META = mergeMeta(cloud, local) || local;
+  } else {
+    // 首次在這台裝置登入這個帳號：訪客進度併入帳號
+    // 全新開頁的空白訪客檔（只有系統送的起始 8 張）→ 直接用雲端，別把隨機起始卡灌進帳號
+    const pristine = !(local.xp||0) && !(local.runsPlayed||0) && !(local.pending||[]).length;
+    META = cloud ? (pristine ? cloud : mergeMeta(cloud, local)) : local;
+    try{ localStorage.removeItem(META_KEY); }catch(e){}   // 訪客進度已併入帳號，登出後等級不再跟著裝置走
+    _cloudUid = u.uid;
+    try{ localStorage.setItem(META_UID_KEY, u.uid); }catch(e){}
+  }
+  META.talents = Object.assign({atk:0,def:0,qir:0}, META.talents||{});
+  if(!Array.isArray(META.collection)) META.collection = [];
+  if(!Array.isArray(META.pending)) META.pending = [];
+  saveMeta();
+  flushPendingCards();
+  const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
+  if(document.getElementById('clsList')) renderClassSelect();
+}
+// 未登入時「收進卡冊」的卡先記在 pending，登入後自動補寫進 Firestore 卡冊
+async function flushPendingCards(){
+  const user = window.__rogueUser && window.__rogueUser();
+  if(!user || !window.__addToMyCollection) return;
+  const pend = META.pending||[];
+  if(!pend.length) return;
+  const rest=[];
+  for(const c of pend){
+    let r=false; try{ r = await window.__addToMyCollection(c); }catch(e){}
+    if(!r || r==='need-login') rest.push(c);
+  }
+  META.pending = rest; saveMeta();
+  if(!rest.length) seedToast('先前收藏的卡已同步進帳號卡冊 ✓');
+}
 function levelOf(xp){ return Math.floor(xp/MXP.perLevel)+1; }
 function spentTalents(){ return META.talents.atk+META.talents.def+META.talents.qir; }
 function freeTalents(){ return (levelOf(META.xp)-1) - spentTalents(); } // 每升一級得 1 天賦點
@@ -678,6 +797,22 @@ let META = loadMeta();   // 在 helpers(shuffle/POOL) 之後初始化
 let RUN = null;   // 當前 run
 let G = null;     // 當前單場戰鬥
 const $app = document.getElementById('app');
+
+// 開頁即等登入狀態：登入 → 樂歷綁帳號；確認登出 → 丟掉上次帳號快取、回訪客檔
+// （Firebase 是 module、比本腳本晚跑 → 輪詢等 __rogueAuthReady 出現，不能直接 race undefined）
+(async()=>{
+  const t0=Date.now();
+  while(!window.__rogueAuthReady && Date.now()-t0<8000) await new Promise(r=>setTimeout(r,100));
+  if(!window.__rogueAuthReady) return;
+  const u = await window.__rogueAuthReady;
+  if(u){ bindMetaToAccount(u); }
+  else if(_cloudUid){
+    _cloudUid=null; try{ localStorage.removeItem(META_UID_KEY); }catch(e){}
+    META=loadMeta();
+    const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
+    if(document.getElementById('clsList')) renderClassSelect();
+  }
+})();
 
 function topbarHTML(){
   const lv=levelOf(META.xp), into=META.xp%MXP.perLevel;
@@ -790,7 +925,12 @@ async function renderSeedSelect(){
   document.body.classList.remove('in-battle');
   $app.innerHTML = topbarHTML() + `<div class="center muted" style="padding:40px">載入中…</div>`;
   // 等登入狀態回復（最多等 2.5s，離線/未登入照樣開始）
-  try{ await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
+  // 注意 __rogueAuthReady 是 module 晚一步才掛上——先輪詢等它出現，否則 race(undefined) 直接落空、登入者被當訪客
+  try{
+    const t0=Date.now();
+    while(!window.__rogueAuthReady && Date.now()-t0<2500) await new Promise(r=>setTimeout(r,80));
+    if(window.__rogueAuthReady) await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]);
+  }catch(e){}
   // 等頂級牌卡池併入判定表（最多等 2.5s）→ 隨機發牌/卡冊種子才會正確顯示王牌
   try{ await Promise.race([ loadApexAces(), new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
   const user = window.__rogueUser ? window.__rogueUser() : null;
@@ -838,12 +978,18 @@ function paintSeedScreen(){
   $app.innerHTML = topbarHTML() + `
     <h1>挑 5 張專輯開始旅程</h1>
     <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>5 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'卡冊與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
+    <div class="muted" style="margin:2px 0 2px;font-size:10px">點卡選入／取消，<b>長按</b>卡片看專輯介紹與試聽。</div>
     ${sourceRow}${emptyColl}
-    <div class="row" style="margin:4px 0">已選 <b id="seedCount">0</b>/5
-      <button class="btn primary" id="seedGo" disabled style="margin-left:auto" onclick="startRun()">開始旅程 →</button></div>
-    <div class="grid" id="shelf"></div>`;
+    <div class="grid" id="shelf"></div>
+    <div style="height:64px"></div>
+    <div class="seedbar"><div class="inner">
+      <span class="cnt">已選 <b id="seedCount">0</b>/5</span>
+      <div class="dots" id="seedDots">${'<i></i>'.repeat(5)}</div>
+      <button class="btn primary" id="seedGo" disabled onclick="startRun()">開始旅程 →</button>
+    </div></div>`;
   const wrap=document.getElementById('shelf');
   wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
+  shelf.forEach((c,i)=>{ const el=document.getElementById('seed'+i); if(el) attachSeedPress(el,i); });   // 長按看介紹
   // 懶載入封面（卡冊本身多半已帶 coverUrl；隨機發牌走 ensureCover）
   // 切換來源後，舊 shelf 的回調可能晚到 → 用 data-ck 確認該格仍是同一張卡才寫入
   shelf.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
@@ -854,6 +1000,7 @@ function paintSeedScreen(){
 function setSeedSource(src){ if(RUN._source===src) return; RUN._source=src; paintSeedScreen(); }
 async function seedSignIn(){
   try{ await window.__rogueSignIn(); }catch(e){ return; }
+  try{ await bindMetaToAccount(window.__rogueUser()); }catch(e){}   // 樂歷、收藏一併綁帳號
   RUN._collLoaded=false; RUN._source=null;   // 重新載卡冊、預設切到卡冊
   renderSeedSelect();
 }
@@ -865,8 +1012,27 @@ function seedToast(msg){
   t.textContent=msg; t.style.opacity='1';
   clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; }, 1800);
 }
+// 長按（450ms）初始牌 → 彈出專輯介紹＋串流連結；放開前移動視為滑動、取消
+let _seedHeld=false, _seedTimer=null, _seedPt=null;
+function attachSeedPress(el, i){
+  el.addEventListener('pointerdown', e=>{
+    _seedPt={x:e.clientX,y:e.clientY};
+    clearTimeout(_seedTimer);
+    _seedTimer=setTimeout(()=>{
+      _seedHeld=true; setTimeout(()=>{ _seedHeld=false; }, 800);   // 放開時的誤點吞掉，之後自動復位
+      const c=RUN&&RUN._shelf&&RUN._shelf[i]; if(c) openCardInfo(c);
+    }, 450);
+  });
+  const cancel=()=>clearTimeout(_seedTimer);
+  el.addEventListener('pointermove', e=>{ if(_seedPt && (Math.abs(e.clientX-_seedPt.x)>12 || Math.abs(e.clientY-_seedPt.y)>12)) cancel(); });
+  el.addEventListener('pointerup', cancel);
+  el.addEventListener('pointercancel', cancel);
+  el.addEventListener('pointerleave', cancel);
+  el.addEventListener('contextmenu', e=>e.preventDefault());
+}
 // 選牌以「卡」為單位（存卡片物件，key=artist|album），卡冊與隨機發牌兩個頁籤可混著選
 function toggleSeed(i){
+  if(_seedHeld){ _seedHeld=false; return; }   // 長按看介紹的那一下，別誤觸選牌
   const c=RUN._shelf[i], ck=keyOf(c);
   const idx = RUN.seedsPicked.findIndex(x=>keyOf(x)===ck);
   if(idx>=0){ RUN.seedsPicked.splice(idx,1); updateSeedUI(); return; }
@@ -880,8 +1046,11 @@ function toggleSeed(i){
 }
 function updateSeedUI(){
   const picked=new Set(RUN.seedsPicked.map(keyOf));
-  document.getElementById('seedCount').textContent = RUN.seedsPicked.length;
-  document.getElementById('seedGo').disabled = RUN.seedsPicked.length!==5;
+  const n=RUN.seedsPicked.length;
+  document.getElementById('seedCount').textContent = n;
+  document.getElementById('seedGo').disabled = n!==5;
+  const dots=document.getElementById('seedDots');
+  if(dots) [...dots.children].forEach((d,j)=>d.classList.toggle('on', j<n));
   RUN._shelf.forEach((c,i)=>{
     const el=document.getElementById('seed'+i); if(!el) return;
     const card=el.querySelector('.card');
@@ -993,16 +1162,22 @@ function aiPlan(){
   const wantCounter = predicted ? COUNTER_OF[predicted] : null;   // 能剋掉玩家預期招的屬性
   for(const card of hand){ for(const attr of ATTRS){
     let s=1; const chainHit=G.e.last!==null && CFG.chainNext[G.e.last]===attr;
-    if(diff==='easy'){ s+=Math.random()*5; }
-    else if(diff==='hard'){ if(chainHit)s+=2; s+=card[attr]*0.35;
+    // 星數是主要依據（權重＞隨機噪音）：不再出現「手上有經典5卻打冷門1」的亂出
+    if(diff==='easy'){ s+=card[attr]*0.45 + Math.random()*2.4; }
+    else if(diff==='hard'){ if(chainHit)s+=2; s+=card[attr]*0.7;
       if(wantCounter && attr===wantCounter) s += 3 + depth*0.25;    // 深層讀心越準，越常剋在玩家臉上
-      if(card.ace==='heresy')s+=(G.p.qi>=4?5:-1); if(card.ace==='hall')s+=(G.p.qi>=3?3:.2); if(card.ace==='pearl')s+=1.2; s+=Math.random()*1.2; }
-    else { if(chainHit)s+=1; s+=card[attr]*0.2;
-      if(wantCounter && attr===wantCounter) s += 1.4;
-      if(card.ace==='heresy')s+=(G.p.qi>=5?3:.3); if(card.ace==='hall')s+=(G.p.qi>=4?1.5:.5); if(card.ace==='pearl')s+=.8; s+=Math.random()*3; }
+      if(card.ace==='heresy')s+=(G.p.qi>=4?5:-1); if(card.ace==='hall')s+=(G.p.qi>=3?3:.2); if(card.ace==='pearl')s+=1.2; s+=Math.random()*0.8; }
+    else { if(chainHit)s+=1; s+=card[attr]*0.6;
+      if(wantCounter && attr===wantCounter) s += 1.6;
+      if(card.ace==='heresy')s+=(G.p.qi>=5?3:.3); if(card.ace==='hall')s+=(G.p.qi>=4?1.5:.5); if(card.ace==='pearl')s+=.8; s+=Math.random()*1.4; }
     if(!best||s>best.s) best={card,attr,s};
   }}
   return best;
+}
+// 虛晃改招後換牌用：手上該屬性星數最高的牌
+function bestEnemyCardFor(attr){
+  let b=null; for(const c of G.e.hand){ if(!b || (c[attr]||0)>(b[attr]||0)) b=c; }
+  return b;
 }
 
 function startTurn(){
@@ -1015,7 +1190,7 @@ function startTurn(){
   // AI 暗定 + 虛晃（隨深度越來越會騙：氣場提示不再可以照剋）
   const plan=aiPlan();
   if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 對手無牌可出 → 速判
-  let attr=plan.attr, vague=false; const tell=plan.attr;
+  let attr=plan.attr, card=plan.card, vague=false; const tell=plan.attr;
   const d=RUN.depth;
   if(G.diff!=='easy' && !plan.card.ace){
     if(G.pCounteredTellLast){ attr = COUNTER_OF[COUNTER_OF[tell]]; }   // 玩家上手照剋 → 虛晃反咬
@@ -1028,8 +1203,10 @@ function startTurn(){
     // hard 深層：一定機率完全不露氣場（深不可測），玩家只能自己讀局
     if(G.diff==='hard' && Math.random() < Math.min(.5, .12 + d*.05)) vague=true;
   }
+  // 虛晃改了屬性 → 牌也要換成手上該屬性最強的（原本硬拿原牌打，才會出現「冷門1也照打」）
+  if(attr!==plan.attr){ const alt=bestEnemyCardFor(attr); if(alt) card=alt; }
   const eUlt = G.e.qi>=CFG.qiMax;
-  G.pendingE = { card:plan.card, attr, tell, ult:eUlt, vague };
+  G.pendingE = { card, attr, tell, ult:eUlt, vague };
   renderBattle();
 }
 
@@ -1150,12 +1327,16 @@ const REL_RING_SVG = `<div class="relring" aria-hidden="true"><svg viewBox="0 0 
   <g class="node"><text x="63" y="23">經</text><text x="17" y="103">冷</text><text x="109" y="103">入</text></g>
 </svg><div class="cap"><span class="k">→ 相剋</span><span class="s">⇢ 相生</span></div></div>`;
 
+// 三圍徽章：攻/防/氣勢率 上色加粗，戰鬥中一眼看到自己（與對手）的數值
+function statBadges(st){
+  return `<span class="s-atk">攻<b>${st.atk}</b></span> <span class="s-def">防<b>${st.def}</b></span> <span class="s-qir">勢<b>${st.qir}</b></span>`;
+}
 function sideHTML(s, who, side){
   const pct=Math.max(0,s.hp)/s.maxHp*100;
   const st=s.stats; let pips=''; for(let i=0;i<CFG.qiMax;i++) pips+=`<i class="${i<s.qi?'on':''}"></i>`;
   const meta = side==='e'
-    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　攻${st.atk}/防${st.def}/勢${st.qir}`
-    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　攻${st.atk}/防${st.def}/勢${st.qir}`;
+    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　${statBadges(st)}`
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　${statBadges(st)}`;
   return `<div class="side ${side==='e'?'enemy':''}">
     <div class="nameplate"><span class="who">${who}</span><span class="meta" id="${side}Meta">${meta}</span></div>
     <div class="hpbar ${side==='e'?'e':''}" id="${side}Hpbar"><i id="${side}Hpfill" style="width:${pct}%"></i><span id="${side}Hptxt">${Math.max(0,s.hp)} / ${s.maxHp}</span></div>
@@ -1384,9 +1565,9 @@ function refreshSide(side){
   const txt=document.getElementById(side+'Hptxt'); if(txt) txt.textContent=Math.max(0,s.hp)+' / '+s.maxHp;
   const qi=document.getElementById(side+'Qi'); if(qi){ let p=''; for(let i=0;i<CFG.qiMax;i++) p+=`<i class="${i<s.qi?'on':''}"></i>`; qi.innerHTML=p; qi.classList.toggle('full',s.qi>=CFG.qiMax); const lab=qi.previousElementSibling; if(lab) lab.textContent=`氣勢 ${s.qi}/${CFG.qiMax}`; }
   const meta=document.getElementById(side+'Meta'); const st=s.stats;
-  if(meta) meta.textContent = side==='e'
-    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　攻${st.atk}/防${st.def}/勢${st.qir}`
-    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　攻${st.atk}/防${st.def}/勢${st.qir}`;
+  if(meta) meta.innerHTML = side==='e'
+    ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　${statBadges(st)}`
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　${statBadges(st)}`;
 }
 function refreshFighters(){
   refreshSide('e'); refreshSide('p');
@@ -1533,21 +1714,66 @@ function confirmDraw(){
   renderWinContinue();
 }
 // 局末結算：從一路抽到的盤中挑「一張」永久收進卡冊
+// 未登入 → 先詢問登入（卡冊在帳號上）；不想登入也可先存本機，之後登入自動補綁
 function keepRunCard(i){
+  if(!RUN || RUN._keptOne) return;
+  const user = window.__rogueUser && window.__rogueUser();
+  if(!user){ closeCardInfo(); openKeepLogin(i); return; }
+  doKeepRunCard(i);
+}
+function doKeepRunCard(i){
   if(!RUN || RUN._keptOne) return;
   const c=(RUN.drawnCards||[])[i]; if(!c) return;
   RUN._keptOne=true;
-  if(!META.collection.some(x=>keyOf(x)===keyOf(c))){
-    META.collection.push({artist:c.artist,album:c.album,classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
-    saveMeta();
-  }
+  const clean={artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null};
+  if(!META.collection.some(x=>keyOf(x)===keyOf(clean))) META.collection.push(clean);
+  const user = window.__rogueUser && window.__rogueUser();
+  if(user && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號卡冊（Firestore）
+  else { META.pending=META.pending||[]; if(!META.pending.some(x=>keyOf(x)===keyOf(clean))) META.pending.push(clean); }
+  saveMeta();
   closeCardInfo();
   // 只改 DOM、不重跑 renderDeath（那會重複結算 XP）
   const wrap=document.getElementById('runDrawn');
   if(wrap){ [...wrap.children].forEach((el,j)=>{ el.style.opacity = j===i?'1':'.35';
     if(j===i){ const cd=el.querySelector('.card'); if(cd){ cd.style.borderColor='var(--gold)'; cd.style.boxShadow='0 0 0 1px var(--gold) inset'; } } }); }
   const note=document.getElementById('keepNote');
-  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）`; }
+  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）${user?'・已同步帳號卡冊':'・存本機（登入後自動補進卡冊）'}`; }
+  const cnt=document.getElementById('collCount'); if(cnt) cnt.textContent=META.collection.length;
+}
+// 未登入收卡 → 詢問登入/註冊（Google 一鍵，登入即註冊）
+let _pendingKeepIdx=null;
+function openKeepLogin(i){
+  if(document.getElementById('keepLoginMask')) return;
+  _pendingKeepIdx=i;
+  const mask=document.createElement('div');
+  mask.className='drawmask'; mask.id='keepLoginMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:320px">
+    <div class="lab">收進卡冊需要登入</div>
+    <div class="intro" style="text-align:center;min-height:0;border:none;padding:6px 0 14px">
+      卡冊綁定 Google 帳號——登入（即註冊）後這張卡會<b>永久存進你的帳號</b>，換裝置也在。</div>
+    <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="keepLoginGo()">Google 登入並收藏</button>
+    <button class="btn" style="width:100%;margin-bottom:8px" onclick="keepLocalGo()">先存本機（之後登入自動補綁）</button>
+    <button class="btn" style="width:100%" onclick="closeKeepLogin()">取消</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeKeepLogin(); });
+  document.body.appendChild(mask);
+}
+function closeKeepLogin(){ const m=document.getElementById('keepLoginMask'); if(m) m.remove(); }
+async function keepLoginGo(){
+  try{ await window.__rogueSignIn(); }catch(e){ return; }
+  try{ await bindMetaToAccount(window.__rogueUser()); }catch(e){}
+  const i=_pendingKeepIdx; closeKeepLogin();
+  const b=document.getElementById('deathLogin');
+  if(b) b.innerHTML='<span style="color:var(--win);font-weight:700">✓ 已綁定帳號，樂歷與收藏會跟著你的 Google 帳號</span>';
+  doKeepRunCard(i);
+}
+function keepLocalGo(){ const i=_pendingKeepIdx; closeKeepLogin(); doKeepRunCard(i); }
+// 死亡結算畫面的登入鈕：綁定樂歷＋補綁先前本機收藏
+async function deathSignIn(){
+  try{ await window.__rogueSignIn(); }catch(e){ return; }
+  try{ await bindMetaToAccount(window.__rogueUser()); }catch(e){}
+  const b=document.getElementById('deathLogin');
+  if(b) b.innerHTML='<span style="color:var(--win);font-weight:700">✓ 已綁定帳號，樂歷與收藏會跟著你的 Google 帳號</span>';
   const cnt=document.getElementById('collCount'); if(cnt) cnt.textContent=META.collection.length;
 }
 
@@ -1658,6 +1884,11 @@ function renderDeath(){
       ${foeHistHTML}
       <div class="sp"></div>
       <div class="muted">收藏：<span id="collCount">${META.collection.length}</span> 張專輯</div>
+      ${(window.__rogueUser && window.__rogueUser()) ? '' : `
+      <div id="deathLogin" style="border:1px dashed var(--gold);padding:10px 12px;margin-top:10px;font-size:11px;color:#7a5e12;line-height:1.7">
+        ⚠ 尚未登入——樂歷等級與收藏只存在<b>這台裝置</b>。<br>
+        <button class="btn" style="margin-top:6px" onclick="deathSignIn()">Google 登入 · 綁定帳號</button>
+      </div>`}
       <div class="sp"></div>
       <button class="btn primary" style="width:100%" onclick="renderClassSelect()">再來一趟 →</button>
       <div class="sp"></div>
@@ -1691,7 +1922,12 @@ function applyConfig(cfg){
 async function bootstrap(){
   $app.innerHTML = '<div class="center muted" style="padding:40px">載入設定中…</div>';
   let cfg=null;
-  try{ cfg = await Promise.race([ window.__rogueCfg, new Promise(r=>setTimeout(()=>r(null),4000)) ]); }catch(e){}
+  // __rogueCfg 由 module 晚一步掛上 → 先輪詢等它出現再 race，否則後台設定永遠讀不到
+  try{
+    const t0=Date.now();
+    while(!window.__rogueCfg && Date.now()-t0<3000) await new Promise(r=>setTimeout(r,80));
+    if(window.__rogueCfg) cfg = await Promise.race([ window.__rogueCfg, new Promise(r=>setTimeout(()=>r(null),4000)) ]);
+  }catch(e){}
   applyConfig(cfg);
   renderClassSelect();
   // 背景抓「全世界」真實專輯擴充卡池（不擋畫面；離線就跳過、用內建 POOL）
