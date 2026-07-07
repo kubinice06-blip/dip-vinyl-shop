@@ -97,7 +97,8 @@
 
 ### 固定卡池（2026-07-03 新增）
 - **頂級牌固定卡池 `apex_pool.json`**：殿堂／流亡／異端各 100 張人工名單。後台「👑 頂級牌」分頁可匯入 Firestore `apex_pool`、三分類瀏覽／編輯／刪除，「⚡ 產出一張入庫」＝隨機挑未入庫的牌 → 驗 Spotify 封面 → 寫 `card_catalog`（含 `tier`/`apex` 欄）＋ `album_overrides.tier`（前台卡冊／對戰立即當 7 星王牌）→ 標 `generatedAt`。抓不到封面標 `noCover` 略過。
-- **一般卡種子池 `seed_cards.json`**：5036 張 `[artist, album, classic, obscurity, accessibility]`（2026-07-06 精選版：MusicBrainz 收割的一萬張雜盤太多、近半在 Spotify 無封面，故大砍——手工 3055 張全留＋收割卡經「雜盤關鍵字過濾→每藝人上限（依冷門度 3/2/1 張）→ iTunes API 逐張驗真」剩 1949 張＋台灣/華語經典包 80 張全數驗過 Spotify 封面，伍佰、草東、羅大佑、交工樂隊、閃靈、落日飛車、椎名林檎等）。五級分布約 稀有2474／獨特1468／普通914／史詩162／傳奇18。淘汰的 875 張備份在 repo 外 `~/dip-vinyl-home/seed_dropped_backup.json`。殿堂名單擴至 400 張（heresy/pearl 各 100，共 600）。後台同分頁可批次匯入 `card_catalog`（含 `rarity` 欄；新卡 `updatedAt=1` 沉底，不洗掉玩家抽過的卡；封面顯示時才懶抓回存）。
+- **一般卡種子池 `seed_cards.json`**：5526 張 `[artist, album, classic, obscurity, accessibility]`（2026-07-07 精選版：MusicBrainz 收割的一萬張雜盤太多、近半在 Spotify 無封面，故大砍——手工 3055 張全留＋收割卡經「雜盤關鍵字過濾→每藝人上限（依冷門度 3/2/1 張）→ iTunes API 逐張驗真」＋台灣/華語經典包 80 張全數驗過 Spotify 封面，伍佰、草東、羅大佑、交工樂隊、閃靈、落日飛車、椎名林檎等；再把被誤殺的淘汰卡直連 Spotify 複驗撈回 490 張〔誤殺兩來源：限流風暴期 worker 競態把空值寫進 KV、iTunes term search 誤判如 Radiohead〈Pablo Honey〉只回 boy pablo〕）。五級分布 稀有2750／獨特1571／普通1023／史詩164／傳奇18。真消失的 389 張備份在 repo 外 `~/dip-vinyl-home/seed_dropped_backup.json`。殿堂名單擴至 400 張（heresy/pearl 各 100，共 600）。後台同分頁可批次匯入 `card_catalog`（含 `rarity` 欄；新卡 `updatedAt=1` 沉底，不洗掉玩家抽過的卡；封面顯示時才懶抓回存）。
+- **封面預熱（2026-07-06）**：`seed_cards.json` 約 4234 張的封面已用 iTunes 600x600 圖直接 PATCH 進 Firestore `card_catalog`（前台/對戰查封面第一順位讀 catalog、命中就不打 Spotify），另 490 張複驗撈回卡的封面走直連 Spotify 存入。目的：對戰開局隨機發牌不再因 Spotify 限流而整片沒封面。
 - **對戰/roguelike 牌組外框**：手牌與檯面卡依稀有度上色（傳奇橘/史詩紫/獨特綠/稀有藍/普通灰，`rarityCls()`），頂級卡維持 `ace-border` 掃光（roguelike 也補上同款掃光框）。
 
 ### 門檻調校（重要）
