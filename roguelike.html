@@ -143,6 +143,10 @@
   /* 三圍徽章（攻/防/勢）：上色加粗、數字放大，戰鬥中一眼可讀 */
   .nameplate .meta .s-atk,.nameplate .meta .s-def,.nameplate .meta .s-qir{font-weight:700;font-size:10px;}
   .nameplate .meta .s-atk b,.nameplate .meta .s-def b,.nameplate .meta .s-qir b{font-size:12px;}
+  /* 我方三圍：獨立一列放在氣勢條下方，避免被下移的檯面卡蓋住 */
+  .statrow{display:flex;gap:16px;justify-content:flex-end;margin-top:5px;}
+  .statrow .s-atk,.statrow .s-def,.statrow .s-qir{font-weight:700;font-size:11px;letter-spacing:0.04em;}
+  .statrow .s-atk b,.statrow .s-def b,.statrow .s-qir b{font-size:13px;margin-left:1px;}
   .hpbar{height:14px;background:var(--hp-bg);position:relative;overflow:hidden;}
   .hpbar > i{position:absolute;inset:0 auto 0 0;background:var(--hp);transition:width .5s cubic-bezier(.4,0,.2,1);}
   .hpbar > span{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:9px;font-weight:700;color:var(--gray);mix-blend-mode:difference;}
@@ -1343,11 +1347,14 @@ function sideHTML(s, who, side){
   const st=s.stats; let pips=''; for(let i=0;i<CFG.qiMax;i++) pips+=`<i class="${i<s.qi?'on':''}"></i>`;
   const meta = side==='e'
     ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　${statBadges(st)}`
-    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　${statBadges(st)}`;
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}`;
+  // 我方三圍另起一列擺在氣勢條下方（原本擠在名牌 meta 會被下移的檯面卡蓋住）
+  const statRow = side==='p' ? `<div class="statrow" id="${side}StatRow">${statBadges(st)}</div>` : '';
   return `<div class="side ${side==='e'?'enemy':''}">
     <div class="nameplate"><span class="who">${who}</span><span class="meta" id="${side}Meta">${meta}</span></div>
     <div class="hpbar ${side==='e'?'e':''}" id="${side}Hpbar"><i id="${side}Hpfill" style="width:${pct}%"></i><span id="${side}Hptxt">${Math.max(0,s.hp)} / ${s.maxHp}</span></div>
     <div class="qiwrap"><span class="qilab">氣勢 ${s.qi}/${CFG.qiMax}</span><div class="qibar2 ${s.qi>=CFG.qiMax?'full':''}" id="${side}Qi">${pips}</div></div>
+    ${statRow}
   </div>`;
 }
 function renderBattle(){
@@ -1590,7 +1597,8 @@ function refreshSide(side){
   const meta=document.getElementById(side+'Meta'); const st=s.stats;
   if(meta) meta.innerHTML = side==='e'
     ? `牌庫 ${s.deck.length}·手 ${s.hand.length}　${statBadges(st)}`
-    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}　${statBadges(st)}`;
+    : `連段 ${s.last!==null&&s.chain>=1?ATTR_ZH[s.last]+'×'+s.chain:'無'}`;
+  const statRow=document.getElementById(side+'StatRow'); if(statRow) statRow.innerHTML=statBadges(st);
 }
 function refreshFighters(){
   refreshSide('e'); refreshSide('p');
