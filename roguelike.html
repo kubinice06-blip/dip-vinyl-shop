@@ -175,7 +175,7 @@
   .ht-ace.hall{background:#9aa0a8;} .ht-ace.pearl{background:#5b4a8a;} .ht-ace.heresy{background:#a01020;}
   /* 檯面卡左下角：這一手出的牌型（屬性）角標 */
   .pattr{position:absolute;left:0;bottom:0;font-size:9px;font-weight:700;padding:2px 6px;color:#fff;z-index:2;background:var(--black);letter-spacing:0.04em;}
-  .pattr.classic{background:var(--classic);} .pattr.obscurity{background:var(--obscurity);} .pattr.accessibility{background:var(--accessibility);} .pattr.ult{background:var(--gold);}
+  .pattr.classic{background:var(--classic);} .pattr.obscurity{background:var(--obscurity);} .pattr.accessibility{background:var(--accessibility);} .pattr.ult{background:var(--gold);} .pattr.sac{background:#5a6b7a;}
   /* 出牌記錄列（對戰中回顧、局末結算回顧） */
   .histrow{display:flex;gap:6px;overflow-x:auto;padding:6px 0;}
   .histrow .htile{flex:none;width:56px;height:56px;border:1px solid var(--line);background-size:cover;background-position:center;cursor:pointer;position:relative;overflow:hidden;background-color:#fff;}
@@ -230,6 +230,8 @@
   .pp-act b{color:var(--gold);margin-right:1px;font-size:11px;}
   .pp-act:hover{background:var(--black);color:#fff;} .pp-act:hover b{color:#fff;}
   .pp-ult{flex:1 0 100%;margin-bottom:4px;color:#fff;border-color:#7a1020;background:var(--crimson-shine);background-size:200% 100%;animation:shimmer 7.8s linear infinite;}
+  .pp-sac{flex:1 0 100%;margin-bottom:4px;color:#fff;border-color:#3f4d59;background:#5a6b7a;font-size:11px;letter-spacing:0.02em;}
+  .pp-sac:hover{background:#3f4d59;color:#fff;}
 
   /* 戰鬥畫面：與 battle.html 同——整屏不滾動、牌桌置中、手牌固定底部 */
   body.in-battle{overflow:hidden;}
@@ -761,6 +763,8 @@ const sleep = ms => new Promise(r=>setTimeout(r,ms));
 const clampQi = v => Math.max(0, Math.min(CFG.qiMax, v));
 let _uid=0; const newUid=()=>++_uid;
 function copyCard(c){ return Object.assign({}, c, {uid:newUid()}); }
+// 割捨防禦：把一張牌本趟永久移出牌組（手牌是 RUN.deck 的複本→uid 對不上，改用 keyOf 比對移一張）
+function removeFromRunDeck(card){ const k=keyOf(card); const i=RUN.deck.findIndex(c=>keyOf(c)===k); if(i>=0) RUN.deck.splice(i,1); }
 function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=rnd(i+1); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 function starsHTML(c){
   return ATTRS.map(at=>{
@@ -1119,7 +1123,7 @@ function nextFight(){
     over:false, busy:false, turn:0,
     p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:0, deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },
     e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
-    E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[],
+    E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[], sacUsed:false,   // sacUsed：割捨防禦每場限一次
     eHist:[], pHist:[],   // 本場雙方出過的牌（回顧用）
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
@@ -1236,6 +1240,8 @@ function boardCardHTML(card, attr){
   const aceTag=card.ace?`<span class="ht-ace ${card.ace}">${ACE_ZH[card.ace]}</span>`:'';
   const attrTag=attr ? (attr==='__ult__'
     ? `<span class="pattr ult">⚡輾壓</span>`
+    : attr==='__sac__'
+    ? `<span class="pattr sac">🛡割捨</span>`
     : `<span class="pattr ${attr}">${ATTR_ZH[attr]} ${card[attr]||''}</span>`) : '';
   const cover=card.coverUrl
     ? `<div class="pcover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
@@ -1309,7 +1315,8 @@ function openRules(){
       <li><b style="color:var(--qi)">相生連段</b>（虛線⇢）：照 經典→冷門→入耳→經典 的順序接招：2 連氣勢 +1、3 連 +2（連過長不再加）。</li>
       <li><b>牌型附帶效果</b>：經典＝回 1 聲望；冷門＝+1 氣勢；入耳＝擊中時多削對手氣勢（-2）。自己被擊中氣勢 -1。</li>
       <li><b style="color:var(--gold)">品味輾壓</b>：氣勢滿 6 發動，無視相剋直接大傷害，用完氣勢歸零。</li>
-      <li><b style="color:var(--gold)">⭐ 怎麼剋輾壓</b>：對手氣勢快滿時打出<b>王牌（頂級卡）</b>——對手的輾壓會被【七星回擊】擋下並反傷他最高星數；王牌被動也能先削他氣勢（殿堂 -2、異端直接歸零）。</li>
+      <li><b style="color:var(--gold)">⭐ 怎麼剋輾壓</b>：對手氣勢快滿時打出<b>王牌（頂級卡）</b>——對手的輾壓會被【七星回擊】擋下並反傷他最高星數；王牌被動也能先削他氣勢（殿堂 -2、異端直接歸零）。王牌不會被消耗。</li>
+      <li><b style="color:#5a6b7a">🛡 割捨防禦</b>：手上沒王牌時的保命符。對手要輾壓時，可<b>犧牲任意一張非王牌</b>抵傷，抵擋量＝該牌<b>最高星數</b>（雜牌只擋一點、好牌擋更多）；<b>不反傷、每場限一次</b>，且該牌<b>本趟永久移除</b>。</li>
       <li><b>氣場提示會騙人</b>：對手可能虛晃——故意出能剋掉「你反制牌」的牌型，越深層越會騙。</li>
       ${aff}
     </ul>
@@ -1406,8 +1413,12 @@ function renderTilePop(){
   if(!c||G.busy){ pop.classList.remove('show'); return; }
   const ultReady=G.p.qi>=CFG.qiMax;
   const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
+  // 割捨防禦：對手要放輾壓時，犧牲任意非王牌手牌，依其最高星數抵傷（每場一次、該牌本趟永久移除）；王牌請正常出走七星回擊
+  const canSac = G.pendingE && G.pendingE.ult && !G.sacUsed && !c.ace;
+  const sacStar = Math.max(c.classic,c.obscurity,c.accessibility);
+  const sac = canSac?`<button class="pp-act pp-sac" onclick="play(${c.uid},'__sac__')">🛡 割捨防禦 · 抵 ${sacStar} 傷（棄此牌）</button>`:'';
   const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
-  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${acts}</div>`;
+  pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${sac}${acts}</div>`;
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
 function positionTilePop(){
@@ -1444,14 +1455,15 @@ async function play(uid, pAttr){
   G.busy=true; _sel=null;
   const pCard=G.p.hand.find(c=>c.uid===uid); if(!pCard){ G.busy=false; return; }
   const pUlt=pAttr==='__ult__';
+  const pSac=pAttr==='__sac__';        // 割捨防禦：犧牲此牌抵擋對手輾壓
   const {card:eCard, attr:eAttr, tell, ult:eUlt, vague}=G.pendingE;
   const feinted = !eUlt && !vague && eAttr!==tell;
-  G.pCounteredTellLast = !pUlt && !vague && (pAttr===COUNTER_OF[tell]);   // 氣場藏起來的回合不算「照剋」
+  G.pCounteredTellLast = !pUlt && !pSac && !vague && (pAttr===COUNTER_OF[tell]);   // 氣場藏起來的回合不算「照剋」
   // 移出手牌（雙方：對手的牌也要消耗，否則同一張會一直重複出）
   G.p.hand=G.p.hand.filter(c=>c.uid!==uid);
   G.e.hand=G.e.hand.filter(c=>c.uid!==eCard.uid);
 
-  const pAttrShow = pUlt?'__ult__':pAttr, eAttrShow = eUlt?'__ult__':eAttr;
+  const pAttrShow = pUlt?'__ult__':pSac?'__sac__':pAttr, eAttrShow = eUlt?'__ult__':eAttr;
   const tp=document.getElementById('tilePop'); if(tp) tp.classList.remove('show');
   document.getElementById('tell').innerHTML='';
   const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
@@ -1463,15 +1475,26 @@ async function play(uid, pAttr){
   const st=G.p.stats, est=G.e.stats;
   const pHp0=G.p.hp, eHp0=G.e.hp;   // 記回合前血量 → 勝負標記照「這一手誰掉血多」判，不看總血量
 
-  if(pUlt || eUlt){
-    // 品味輾壓回合
-    const eUltBlocked = eUlt && !pUlt && pCard.ace;   // 七星回擊
+  if(pUlt || eUlt || pSac){
+    // 品味輾壓回合（含七星回擊 / 割捨防禦）
+    const eUltBlocked = eUlt && !pUlt && !pSac && pCard.ace;   // 七星回擊（王牌專屬：擋＋反傷＋不消耗）
     if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0; drainQiOnHit('e',null,d);
       callout(`<span class="dmg">你 · 品味輾壓 −${d}</span>`); pushLog(`你品味輾壓！對手 −${d}`,'hit'); }
+    else if(pSac){ G.p.last=null; G.p.chain=0; }   // 割捨＝防守，不算出招、不接連段
     else G.p.last=pAttr;
     if(eUlt){
       if(eUltBlocked){ G.e.qi=0; G.e.last=null; G.e.chain=0; const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility); const d=applyDef(applyAtk(star,st.atk),est.def); G.e.hp-=d;
         callout(`<span class="good">七星回擊！對手輾壓無效，反傷 −${d}</span>`); pushLog(`${ACE_ZH[pCard.ace]}王牌七星回擊 → 對手 −${d}`,'good'); }
+      else if(pSac){ // 割捨防禦：依犧牲牌最高星數抵傷（不反傷、不削氣），該牌本趟永久移除，每場一次
+        const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility);
+        const raw=applyDef(applyAtk(CFG.ultimate,est.atk), st.def);
+        const blocked=Math.min(star,raw), d=Math.max(0, raw-star);
+        if(d>0){ G.p.hp-=d; }
+        G.e.qi=0; G.e.last=null; G.e.chain=0;
+        if(d>0) drainQiOnHit('p',null,d);
+        removeFromRunDeck(pCard); G.sacUsed=true;
+        callout(`<span class="good">🛡 割捨【${pCard.album}】· 擋 ${blocked}${d>0?` · 仍受 −${d}`:'（完全擋下）'}</span>`);
+        pushLog(`割捨防禦：棄「${pCard.album}」抵 ${blocked} 傷${d>0?`，輾壓仍 −${d}`:'，完全擋下'}（此牌本趟永久移除）`, d>0?'hit':'good'); }
       else { let d=applyDef(applyAtk(CFG.ultimate,est.atk), st.def); G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0; drainQiOnHit('p',null,d);
         callout(`<span class="dmg">對手 · 品味輾壓 −${d}</span>`); pushLog(`對手品味輾壓！你 −${d}`,'hit'); }
     } else G.e.last=eAttr;
