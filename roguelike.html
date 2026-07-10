@@ -1694,11 +1694,9 @@ function applyBuff(u){
     if(u.key==='maxHpAdd'){ const p=RUN.maxHp; RUN.mods.maxHpAdd+=u.amount; recomputeMaxHp(p); }
     else RUN.mods[u.key]=(RUN.mods[u.key]||0)+u.amount;
   } else if(u.target==='deck'){
-    if(u.key==='add'){
-      const got=[];
-      for(let i=0;i<u.amount;i++){ const c=copyCard(pick(META.collection)); RUN.deck.push(c); got.push(c); }
-      if(got.length) seedToast('🎴 撿到【'+got.map(c=>`${c.album} — ${c.artist}`).join('】【')+'】加入本趟牌組');
-    }
+    // 撿盤（deck/add）的實際加牌與揭曉改由 applyUpgrade → openLootReveal 處理（像局末抽盤一樣先看封面＋介紹）
+    // 這裡保留純加牌邏輯當備援（若 applyBuff 被直接呼叫）
+    if(u.key==='add'){ for(let i=0;i<u.amount;i++) RUN.deck.push(copyCard(pick(META.collection))); }
     else if(u.key==='cullWeakest'){ for(let i=0;i<u.amount;i++){ if(RUN.deck.length>1){ let wi=0,wv=99; RUN.deck.forEach((c,j)=>{const v=c.classic+c.obscurity+c.accessibility; if(v<wv){wv=v;wi=j;}}); RUN.deck.splice(wi,1);} } }
   }
 }
@@ -1730,7 +1728,14 @@ function renderLevelUp(){
     </div>`).join('');
 }
 function applyUpgrade(i){
-  applyBuff(_lvlChoices[i]);
+  const u=_lvlChoices[i];
+  // 撿一張盤：跟局末抽盤同一種揭曉——彈出封面＋三圍＋介紹，確認後才進牌組、再接續升級佇列
+  if(u.target==='deck' && u.key==='add'){
+    RUN.lvlQueue--;
+    openLootReveal(pickLootCard());
+    return;
+  }
+  applyBuff(u);
   RUN.lvlQueue--;
   if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();
 }
@@ -1808,6 +1813,51 @@ function confirmDraw(){
   _drawCard = null;
   const m = document.getElementById('drawMask'); if(m) m.remove();
   renderWinContinue();
+}
+
+// =========================================================================
+//  撿一張盤（局內升級「➕ 撿一張盤」）：從收藏翻出一張 → 同局末抽盤揭曉封面＋介紹 → 進本趟牌組
+// =========================================================================
+let _lootCard = null;
+// 從收藏挑一張本趟牌組還沒有的盤（都在牌組裡了才隨機一張），像「翻箱倒櫃找到一張」
+function pickLootCard(){
+  const inDeck = new Set(RUN.deck.map(keyOf));
+  for(const c of shuffle(META.collection.slice())){
+    if(!inDeck.has(keyOf(c))) return copyCard(c);
+  }
+  return copyCard(pick(META.collection));
+}
+function openLootReveal(card){
+  if(document.getElementById('lootMask')) return;
+  const c = _lootCard = card;
+  const aceTag = c.ace ? `<span class="acebadge">${ACE_ZH[c.ace]}</span>` : '';
+  const mask = document.createElement('div');
+  mask.className = 'drawmask'; mask.id = 'lootMask';
+  mask.innerHTML = `<div class="drawcard">
+    <div class="lab">➕ 撿一張盤 · 從收藏翻出</div>
+    <div class="cov noimg" id="lootCov"><span>${c.album}</span></div>
+    <div class="ar">${c.artist}</div>
+    <div class="al">${c.album}</div>
+    ${aceTag}
+    <div class="stats">${starsHTML(c)}</div>
+    <div class="intro wait" id="lootIntro">介紹載入中…</div>
+    <a class="btn" id="lootStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    <button class="btn primary" style="width:100%" onclick="confirmLoot()">加入本趟牌組 →</button>
+  </div>`;
+  document.body.appendChild(mask);
+  ensureCover(c).then(url=>{
+    const el = document.getElementById('lootCov');
+    if(url && el) el.outerHTML = `<img class="cov" id="lootCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
+  });
+  hookStreamLink('lootStream', c);
+  loadAlbumDesc(c, document.getElementById('lootIntro'));
+}
+function confirmLoot(){
+  if(!_lootCard) return;
+  RUN.deck.push(_lootCard);
+  _lootCard = null;
+  const m = document.getElementById('lootMask'); if(m) m.remove();
+  if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();   // 接續剩餘升級佇列
 }
 // 局末結算：從一路抽到的盤中挑「一張」永久收進卡冊
 // 未登入 → 先詢問登入（卡冊在帳號上）；不想登入也可先存本機，之後登入自動補綁
