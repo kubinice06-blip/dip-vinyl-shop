@@ -222,6 +222,11 @@
   .ace-border.ace-hall::after{background-image:var(--silver-shine);}
   .ace-border.ace-pearl::after{background-image:var(--oil-shine);}
   .ace-border.ace-heresy::after{background-image:var(--crimson-shine);}
+  /* 對手將要輾壓 → 手上王牌金框脈動＋「可反制」角標（七星回擊提示）
+     用 ::before 畫在框內側——外側 box-shadow 會被 .htrow 的 overflow 裁掉 */
+  .handtile.counter-ready::before{content:'';position:absolute;inset:0;z-index:4;pointer-events:none;border:2px solid var(--gold);animation:counterPulse 1s ease-in-out infinite;}
+  @keyframes counterPulse{0%,100%{box-shadow:inset 0 0 4px rgba(184,134,11,.3);opacity:.55;}50%{box-shadow:inset 0 0 16px rgba(184,134,11,.85);opacity:1;}}
+  .ht-counter{position:absolute;bottom:0;left:0;right:0;z-index:4;background:var(--gold);color:#fff;font-size:9px;font-weight:700;letter-spacing:0.08em;text-align:center;padding:2px 0;animation:counterPulse 1s ease-in-out infinite;}
   .ht-cover{width:100%;height:100%;background-size:cover;background-position:center;}
   .tilepop{position:fixed;left:0;top:0;width:154px;display:none;background:#fff;border:1px solid var(--black);padding:8px 9px;box-shadow:0 6px 18px rgba(0,0,0,.16);z-index:40;}
   .tilepop.show{display:block;animation:pop .18s;}
@@ -1410,6 +1415,13 @@ function renderBattle(){
         ? '對手不動聲色，<b>氣場深不可測</b>……'
         : `對手${pick(TELL_FLAVOR[pe.tell])}　氣場偏 <b>${ATTR_ZH[pe.tell]}</b>`)
     : '';
+  // 對手要輾壓 → 提示欄改教反制手段：有王牌打七星回擊；沒王牌可割捨（每場一次，下一場重置）
+  const _hasAce=G.p.hand.some(c=>c.ace);
+  const hintTxt = (pe && pe.ult)
+    ? (_hasAce ? '⚡ 出發光的<b>王牌</b>七星回擊 → 輾壓無效＋反傷對手'
+      : !G.sacUsed ? '⚡ 沒王牌 → 點一張牌選「🛡 割捨防禦」抵傷（本場限一次）'
+      : '⚡ 本場割捨已用過 → 拚血扛下或搶先出招')
+    : '點一張手牌 → 選主打屬性出招';
   const need=runXpNeed();
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span><button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">出牌記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
@@ -1425,7 +1437,7 @@ function renderBattle(){
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
       <div class="cheat">${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
-      <div class="hint" id="hint">點一張手牌 → 選主打屬性出招</div>
+      <div class="hint" id="hint">${hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>
       <div class="log" id="log">${G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('')}</div>
@@ -1443,13 +1455,15 @@ function paintBoardSlots(){
 let _sel=null;
 function renderHand(){
   const el=document.getElementById('hand'); if(!el) return;
+  const eUltNext = !!(G.pendingE && G.pendingE.ult && !G.busy && !G.over);   // 對手這手要輾壓 → 王牌亮框提示可七星回擊
   el.innerHTML = G.p.hand.map(c=>{
     const aceTag=c.ace?`<span class="ht-ace ${c.ace}">${ACE_ZH[c.ace]}</span>`:'';
+    const counterTag=(eUltNext&&c.ace)?`<span class="ht-counter">⚡ 可反制輾壓</span>`:'';
     const cover=c.coverUrl
       ? `<div class="ht-cover" style="background-image:url('${String(c.coverUrl).replace(/'/g,'%27')}')"></div>`
       : `<div class="ht-cover ht-noimg"><span>${c.album}</span></div>`;
     const ring=c.ace?`ace-border ace-${c.ace}`:rarityCls(c);
-    return `<div class="handtile ${ring} ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}</div>`;
+    return `<div class="handtile ${ring} ${eUltNext&&c.ace?'counter-ready':''} ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}${counterTag}</div>`;
   }).join('');
   // 即時補封面
   G.p.hand.forEach(c=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
