@@ -417,7 +417,7 @@ const TELL_FLAVOR = {
 
 // ---------- 可調數值（後台可覆寫）----------
 let RXP = { base:6, perDepth:2, needBase:8, needPerLevel:4 };          // 局內經驗：勝利給 base+depth*perDepth；升級門檻 needBase+(lv-1)*needPerLevel
-let MXP = { perDepth:15, perStreak:8, recordBonus:30, perLevel:100 };  // 樂歷(結算)：depth*perDepth+streak*perStreak(+破紀錄)；每 perLevel 升一級
+let MXP = { perDepth:15, perStreak:8, recordBonus:30, perLevel:100 };  // 樂歷(結算)：depth*perDepth+streak*perStreak(+破紀錄)；perLevel＝升級曲線基準（Lv1→2 所需），之後每級遞增（見 levelOf）
 
 // ---------- 範例卡池（沿用 battle.html；對戰 stats 1–5、王牌單軸 7）----------
 const POOL = [
@@ -700,6 +700,7 @@ function mergeMeta(a,b){
     bestStreak:Math.max(a.bestStreak||0,b.bestStreak||0),
     collection:(hi.collection||[]).slice(),
     pending:(hi.pending||[]).slice(),
+    curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
   const owned = new Set(m.collection.map(keyOf));
   for(const c of (lo.collection||[])) if(!owned.has(keyOf(c))){ m.collection.push(c); owned.add(keyOf(c)); }
@@ -727,6 +728,12 @@ async function bindMetaToAccount(u){
   META.talents = Object.assign({atk:0,def:0,qir:0}, META.talents||{});
   if(!Array.isArray(META.collection)) META.collection = [];
   if(!Array.isArray(META.pending)) META.pending = [];
+  // 一次性樂歷歸零（本人帳號；換新升級曲線後重新開始）：xp 與天賦點清空、卡冊與紀錄保留
+  if(u.email==='kubinice06@gmail.com' && !META.curveResetV1){
+    META.xp = 0;
+    META.talents = {atk:0,def:0,qir:0};
+    META.curveResetV1 = true;
+  }
   saveMeta();
   flushPendingCards();
   const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
@@ -746,7 +753,17 @@ async function flushPendingCards(){
   META.pending = rest; saveMeta();
   if(!rest.length) seedToast('先前收藏的卡已同步進帳號卡冊 ✓');
 }
-function levelOf(xp){ return Math.floor(xp/MXP.perLevel)+1; }
+// 樂歷升級曲線（三角遞增）：升到 lv+1 所需＝perLevel×lv（Lv1→2:100、Lv2→3:200、Lv3→4:300…越後越陡）
+function xpNeedForLevel(lv){ return MXP.perLevel*lv; }              // 由 lv 升到 lv+1 需要的經驗
+function xpTotalForLevel(lv){ return MXP.perLevel*(lv-1)*lv/2; }    // 到達第 lv 級的累計經驗（Lv1=0）
+function levelOf(xp){
+  xp = Math.max(0, xp||0);
+  let lv = Math.floor((1 + Math.sqrt(1 + 8*xp/MXP.perLevel)) / 2); // 解 perLevel*lv*(lv-1)/2 <= xp
+  if(lv < 1) lv = 1;
+  while(xpTotalForLevel(lv+1) <= xp) lv++;                          // 浮點保險：往上補
+  while(lv > 1 && xpTotalForLevel(lv) > xp) lv--;                   // 浮點保險：往下退
+  return lv;
+}
 function spentTalents(){ return META.talents.atk+META.talents.def+META.talents.qir; }
 function freeTalents(){ return (levelOf(META.xp)-1) - spentTalents(); } // 每升一級得 1 天賦點
 // 抽專輯：抽一張收藏沒有的專輯（深層樂歷小機率出王牌）；回傳抽到的卡或 null
@@ -823,10 +840,11 @@ const $app = document.getElementById('app');
 })();
 
 function topbarHTML(){
-  const lv=levelOf(META.xp), into=META.xp%MXP.perLevel;
+  const lv=levelOf(META.xp), into=META.xp-xpTotalForLevel(lv), need=xpNeedForLevel(lv);
+  const pct=Math.min(100, into/need*100);
   return `<div class="topbar">
-    <span class="lv">樂歷 Lv.${lv} · ${into}/${MXP.perLevel}</span>
-    <div class="xpbar"><i style="width:${into}%"></i></div>
+    <span class="lv">樂歷 Lv.${lv} · ${into}/${need}</span>
+    <div class="xpbar"><i style="width:${pct}%"></i></div>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
   </div>`;
 }
