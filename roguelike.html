@@ -245,13 +245,18 @@
   /* 戰鬥畫面：與 battle.html 同——整屏不滾動、牌桌置中、手牌固定底部 */
   body.in-battle{overflow:hidden;}
   body.in-battle #app{height:100dvh;overflow:hidden;display:flex;flex-direction:column;padding:8px 14px 4px;}
-  body.in-battle .arena{flex:1 1 0;min-height:0;}
+  /* 牌桌吃剩餘高度；overflow:hidden 兜底，避免卡片溢出蓋到下方我方面板（同 battle.html） */
+  body.in-battle .arena{flex:1 1 0;min-height:0;overflow:hidden;}
+  /* 檯面卡改「以高度定方形」：牌桌變矮時整張等比縮小塞得下，永遠不會頂出去蓋住血條 */
+  body.in-battle .slots{height:100%;min-height:0;align-items:flex-start;}
+  body.in-battle .slot{flex:0 0 auto;height:100%;width:auto;max-width:none;max-height:170px;aspect-ratio:1/1;}
   body.in-battle .player-zone{flex:none;}
   body.in-battle #app > .xpbar, body.in-battle #app > .row, body.in-battle #app > .side{flex:none;}
   body.in-battle .topbar{margin-bottom:6px;padding:6px 0;}
   /* 手機緊湊化（同 battle.html）：縮手牌、藏文字圖例、牌桌靠上不裁切 */
   @media (max-width:600px){
     body.in-battle .arena{justify-content:flex-start;}
+    body.in-battle .slot{max-height:150px;}   /* 手機收窄，卡片上限降一點讓兩張＋VS 一列排得下 */
     .slots{gap:12px;}
     .cheat{gap:10px;margin:4px 0;}
     .cheat .legend{display:none;}
