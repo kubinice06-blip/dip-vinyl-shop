@@ -1691,7 +1691,11 @@ function applyBuff(u){
     if(u.key==='maxHpAdd'){ const p=RUN.maxHp; RUN.mods.maxHpAdd+=u.amount; recomputeMaxHp(p); }
     else RUN.mods[u.key]=(RUN.mods[u.key]||0)+u.amount;
   } else if(u.target==='deck'){
-    if(u.key==='add'){ for(let i=0;i<u.amount;i++) RUN.deck.push(copyCard(pick(META.collection))); }
+    if(u.key==='add'){
+      const got=[];
+      for(let i=0;i<u.amount;i++){ const c=copyCard(pick(META.collection)); RUN.deck.push(c); got.push(c); }
+      if(got.length) seedToast('🎴 撿到【'+got.map(c=>`${c.album} — ${c.artist}`).join('】【')+'】加入本趟牌組');
+    }
     else if(u.key==='cullWeakest'){ for(let i=0;i<u.amount;i++){ if(RUN.deck.length>1){ let wi=0,wv=99; RUN.deck.forEach((c,j)=>{const v=c.classic+c.obscurity+c.accessibility; if(v<wv){wv=v;wi=j;}}); RUN.deck.splice(wi,1);} } }
   }
 }
