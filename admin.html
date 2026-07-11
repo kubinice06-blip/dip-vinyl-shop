@@ -254,6 +254,10 @@
     .buff-row input, .buff-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
     .buff-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
     .buff-head { display:grid; grid-template-columns:1.4fr 1.8fr 0.9fr 1.1fr 0.7fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
+    .relic-row { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr auto; gap:6px; align-items:center; margin-bottom:6px; }
+    .relic-row input, .relic-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
+    .relic-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
+    .relic-head { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
   </style>
 </head>
 <body>
@@ -957,6 +961,20 @@
         </p>
         <div id="buffList"></div>
         <button class="gbtn" id="buffAdd" style="margin-top:10px;">＋ 新增 Buff</button>
+      </div>
+      <div class="section">
+        <div class="section-label">遺物管理（每 5 場擊敗傳說藏家掉落，三選一）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
+          每件遺物＝一筆資料，<b>效果</b>由「效果鍵＋數值」決定（程式已支援的鍵）：<br>
+          ・counterQi 相剋命中+N氣勢｜startQi 開局氣勢+N｜winHeal 勝利多回N血｜valueDmg 比星勝+N傷｜counterGuard 被剋受傷-N<br>
+          ・aceQi 出王牌+N氣勢｜ultDmg 輾壓+N傷｜maxHp 最大HP+N｜extraDraw 起手多抽N｜chainQi 相生連段+N氣勢<br>
+          ・drawTwo 局末抽盤二選一(填1)｜firstHitHalf 首次受擊減半(填1)｜revive 免死一次回5HP(填1)｜aceDouble 王牌被動加倍(填1)<br>
+          ・feintDown 對手虛晃率-N%(如50)｜ultGuard 被輾壓傷害-N｜xpBoost 局內經驗+N%(如25)<br>
+          <b>圖示</b>：填內建像素圖示 id（stylus / sleeve / dustcover / testpress / pointcard / adapter45 / cleaner / obi / gauge / heavy180 / matrix / numbered / headphone / bizcard / isolation / firstpress / column）或直接填 emoji。
+          <b>級別</b>：1＝一開始就會出、2＝進階（玩家樂歷 Lv.3 才進池）。
+        </p>
+        <div id="relicList"></div>
+        <button class="gbtn" id="relicAdd" style="margin-top:10px;">＋ 新增遺物</button>
       </div>
       <div class="section">
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
@@ -3500,8 +3518,28 @@ ${discogs ? '- Discogs：' + discogs : ''}
       {id:'ult',label:'⚡ 品味輾壓 +2',desc:'輾壓傷害 +2',target:'mod',key:'ultDmg',amount:2},
       {id:'loot',label:'➕ 撿一張盤',desc:'從收藏抽 1 張加入牌組',target:'deck',key:'add',amount:1},
       {id:'cull',label:'🗑 丟最弱盤',desc:'移除牌組總星最低的一張',target:'deck',key:'cullWeakest',amount:1},
+    ],
+    relics:[
+      {id:'stylus',    name:'黑膠唱針',     icon:'stylus',    tier:1, desc:'相剋命中額外 +1 氣勢',                          fx:{counterQi:1}},
+      {id:'sleeve',    name:'防靜電內套',   icon:'sleeve',    tier:2, desc:'王牌被動加倍：殿堂削 4 氣勢、流亡充能加倍、異端歸零後自身 +2 氣勢', fx:{aceDouble:1}},
+      {id:'dustcover', name:'防塵套',       icon:'dustcover', tier:1, desc:'每場第一次受擊傷害減半',                        fx:{firstHitHalf:1}},
+      {id:'testpress', name:'神秘見本盤',   icon:'testpress', tier:2, desc:'死亡時免死一次並回 5 HP（每趟一次）',            fx:{revive:1}},
+      {id:'pointcard', name:'會員集點卡',   icon:'pointcard', tier:1, desc:'局末抽盤變成二選一',                            fx:{drawTwo:1}},
+      {id:'adapter45', name:'45 轉接環',    icon:'adapter45', tier:1, desc:'每場開局氣勢 +2',                               fx:{startQi:2}},
+      {id:'cleaner',   name:'洗碟水',       icon:'cleaner',   tier:1, desc:'每場勝利額外回 2 血',                           fx:{winHeal:2}},
+      {id:'obi',       name:'原版側標',     icon:'obi',       tier:1, desc:'純比星獲勝時傷害 +1',                           fx:{valueDmg:1}},
+      {id:'gauge',     name:'針壓計',       icon:'gauge',     tier:1, desc:'被相剋命中時受傷 -1（最低 1）',                  fx:{counterGuard:1}},
+      {id:'heavy180',  name:'180g 重量盤',  icon:'heavy180',  tier:1, desc:'最大 HP +4（取得立刻回 4）',                     fx:{maxHp:4}},
+      {id:'matrix',    name:'內圈刻字',     icon:'matrix',    tier:1, desc:'品味輾壓傷害 +2',                               fx:{ultDmg:2}},
+      {id:'numbered',  name:'絕版編號標',   icon:'numbered',  tier:1, desc:'打出王牌時 +1 氣勢',                            fx:{aceQi:1}},
+      {id:'headphone', name:'試聽站耳機',   icon:'headphone', tier:1, desc:'每場起手多抽 1 張',                             fx:{extraDraw:1}},
+      {id:'bizcard',   name:'老闆的名片',   icon:'bizcard',   tier:1, desc:'看穿套路：對手虛晃機率減半',                     fx:{feintDown:50}},
+      {id:'isolation', name:'絕緣避震墊',   icon:'isolation', tier:2, desc:'被品味輾壓的傷害 -2',                           fx:{ultGuard:2}},
+      {id:'firstpress',name:'首刻盤',       icon:'firstpress',tier:1, desc:'相生連段額外 +1 氣勢',                          fx:{chainQi:1}},
+      {id:'column',    name:'樂評人專欄',   icon:'column',    tier:2, desc:'局內經驗 +25%',                                 fx:{xpBoost:25}},
     ]
   };
+  const RELIC_FX_KEYS = ['counterQi','startQi','winHeal','valueDmg','counterGuard','aceQi','ultDmg','maxHp','extraDraw','chainQi','drawTwo','firstHitHalf','revive','aceDouble','feintDown','ultGuard','xpBoost'];
   const ROGUE_NUM = {
     'startHp':'起始HP(快打建議低)',
     'runXp.base':'局內·勝利基礎XP','runXp.perDepth':'局內·每深度+XP','runXp.needBase':'局內·升級門檻','runXp.needPerLevel':'局內·門檻每級+',
@@ -3517,7 +3555,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       rogueCfg = s.exists()? deepMergeRogue(s.data()) : JSON.parse(JSON.stringify(DEF_ROGUE));
       if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
     catch(e){ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
-    renderRogueForm(); renderBuffs();
+    renderRogueForm(); renderBuffs(); renderRelics();
   }
   function deepMergeRogue(d){
     const o=JSON.parse(JSON.stringify(DEF_ROGUE));
@@ -3525,6 +3563,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if(d.runXp) Object.assign(o.runXp,d.runXp);
     if(d.metaXp) Object.assign(o.metaXp,d.metaXp);
     if(Array.isArray(d.upgrades)&&d.upgrades.length) o.upgrades=d.upgrades;
+    if(Array.isArray(d.relics)&&d.relics.length) o.relics=d.relics;
     return o;
   }
   function renderRogueForm(){
@@ -3567,6 +3606,52 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('buffAdd')?.addEventListener('click', ()=>{
     rogueCfg.upgrades.push({id:'buff'+Date.now(),label:'新 Buff',desc:'說明',target:'stat',key:'atk',amount:1}); renderBuffs();
   });
+
+  // ── 遺物管理（gameConfig/roguelike.relics）──
+  function relicFxKey(r){ return Object.keys(r.fx||{})[0] || RELIC_FX_KEYS[0]; }
+  function relicFxAmt(r){ const k=Object.keys(r.fx||{})[0]; return k ? r.fx[k] : 1; }
+  function renderRelics(){
+    const wrap=document.getElementById('relicList'); if(!wrap) return;
+    const head=`<div class="relic-head"><span>名稱 name</span><span>說明 desc</span><span>圖示 icon</span><span>級別</span><span>效果鍵 fx</span><span>數值</span><span></span></div>`;
+    wrap.innerHTML = head + (rogueCfg.relics||[]).map((r,i)=>relicRow(r,i)).join('');
+  }
+  function relicRow(r,i){
+    const fxKey=relicFxKey(r), fxAmt=relicFxAmt(r);
+    const keys=RELIC_FX_KEYS.map(k=>`<option value="${k}" ${fxKey===k?'selected':''}>${k}</option>`).join('');
+    const tiers=[1,2].map(t=>`<option value="${t}" ${(r.tier||1)===t?'selected':''}>${t}</option>`).join('');
+    return `<div class="relic-row">
+      <input class="r-f" data-i="${i}" data-k="name" value="${(r.name||'').replace(/"/g,'&quot;')}">
+      <input class="r-f" data-i="${i}" data-k="desc" value="${(r.desc||'').replace(/"/g,'&quot;')}">
+      <input class="r-f" data-i="${i}" data-k="icon" value="${(r.icon||'').replace(/"/g,'&quot;')}">
+      <select class="r-f" data-i="${i}" data-k="tier">${tiers}</select>
+      <select class="r-f" data-i="${i}" data-k="fxKey">${keys}</select>
+      <input class="r-f" data-i="${i}" data-k="fxAmt" type="number" step="any" value="${fxAmt}">
+      <button class="del rdel" data-i="${i}">✕</button>
+    </div>`;
+  }
+  document.getElementById('relicList')?.addEventListener('input', e=>{
+    const el=e.target.closest('.r-f'); if(!el) return;
+    const i=+el.dataset.i, k=el.dataset.k, r=rogueCfg.relics[i]; if(!r) return;
+    if(k==='fxKey'){ r.fx={ [el.value]: relicFxAmt(r) }; }
+    else if(k==='fxAmt'){ r.fx={ [relicFxKey(r)]: (parseFloat(el.value)||0) }; }
+    else if(k==='tier'){ r.tier=parseInt(el.value)||1; }
+    else r[k]=el.value;
+  });
+  document.getElementById('relicList')?.addEventListener('change', e=>{
+    const el=e.target.closest('select.r-f'); if(!el) return;
+    const i=+el.dataset.i, k=el.dataset.k, r=rogueCfg.relics[i]; if(!r) return;
+    if(k==='fxKey') r.fx={ [el.value]: relicFxAmt(r) };
+    else if(k==='tier') r.tier=parseInt(el.value)||1;
+  });
+  document.getElementById('relicList')?.addEventListener('click', e=>{
+    const del=e.target.closest('.rdel'); if(!del) return;
+    rogueCfg.relics.splice(+del.dataset.i,1); renderRelics();
+  });
+  document.getElementById('relicAdd')?.addEventListener('click', ()=>{
+    rogueCfg.relics=rogueCfg.relics||[];
+    rogueCfg.relics.push({id:'relic'+Date.now(),name:'新遺物',desc:'效果說明',icon:'🎁',tier:1,fx:{counterQi:1}});
+    renderRelics();
+  });
   function collectRogue(){
     const o=JSON.parse(JSON.stringify(rogueCfg));
     Object.keys(ROGUE_NUM).forEach(p=>{ const el=document.getElementById('rf_'+p.replace('.','_')); const v=parseFloat(el.value); if(!isNaN(v)) setPath(o,p,v); });
@@ -3575,11 +3660,12 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('rogueSave')?.addEventListener('click', async ()=>{
     const msg=document.getElementById('rogueMsg'); msg.textContent='儲存中…';
     if(!rogueCfg.upgrades.length){ msg.textContent='至少要留一個 Buff'; return; }
+    if(!(rogueCfg.relics||[]).length){ msg.textContent='至少要留一件遺物（建議 ≥3 件才夠三選一）'; return; }
     try{ await setDoc(doc(db,'gameConfig','roguelike'), collectRogue()); msg.textContent='✓ 已儲存（roguelike.html 下次載入生效）'; }
     catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
   });
   document.getElementById('rogueReload')?.addEventListener('click', loadRogueCfg);
-  document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
+  document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); renderRelics(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
 </script>
 </body>
 </html>

@@ -275,6 +275,27 @@
   .drawcard .stats{max-width:210px;margin:0 auto 14px;}
   .drawcard .intro{font-size:12px;line-height:1.95;text-align:left;border:1px solid var(--line);padding:14px;margin-bottom:16px;min-height:64px;color:#333;}
   .drawcard .intro.wait{color:var(--gray);}
+
+  /* ===== 遺物（像素風圖示、戰鬥列、三選一） ===== */
+  .pixicon{display:inline-block;vertical-align:middle;image-rendering:pixelated;}
+  .relicbar{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin:4px 0 2px;}
+  .relicbar .rslot{width:26px;height:26px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fff;cursor:pointer;padding:0;}
+  .relicbar .rslot:hover{border-color:var(--gold);}
+  .relic-card{border:1px solid var(--line);background:#fff;padding:12px;margin:10px 0;cursor:pointer;display:flex;gap:12px;align-items:center;transition:border-color .15s,transform .15s;}
+  .relic-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+  .relic-card .ric{flex:none;width:46px;height:46px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fafafa;}
+  .relic-card h3{margin:0 0 3px;font-size:13px;letter-spacing:0.05em;}
+  .relic-list-row{display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:8px 0;text-align:left;}
+  .relic-list-row .ric{flex:none;width:34px;height:34px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fafafa;}
+
+  /* 局末抽盤二選一（會員集點卡） */
+  .drawtwo{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .drawtwo .opt{flex:1;min-width:150px;max-width:220px;border:1px solid var(--line);padding:10px;background:#fff;text-align:center;}
+  .drawtwo .opt .cov2{width:100%;aspect-ratio:1;background-size:cover;background-position:center;border:1px solid var(--line);margin-bottom:8px;}
+  .drawtwo .opt .cov2.noimg{display:flex;align-items:center;justify-content:center;padding:6px;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px);font-weight:700;font-size:11px;color:#444;}
+  .drawtwo .opt .al2{font-weight:700;font-size:12px;line-height:1.3;margin:2px 0;}
+  .drawtwo .opt .ar2{font-size:10px;color:var(--gray);}
+  .drawtwo .opt .intro2{font-size:10px;line-height:1.7;text-align:left;border:1px solid var(--line);padding:8px;margin:8px 0;min-height:48px;max-height:110px;overflow-y:auto;color:#333;}
 </style>
 </head>
 <body>
@@ -670,6 +691,84 @@ let CLASSES = {
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
 const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
 
+// ---------- 遺物（每 5 場擊敗傳說藏家掉落三選一；效果純資料、後台可覆寫）----------
+// fx 效果鍵（程式已掛勾）：counterQi 相剋+氣勢 / startQi 開局氣勢 / winHeal 勝利多回血 /
+//   valueDmg 比星勝+傷 / counterGuard 被剋減傷 / aceQi 出王牌+氣勢 / ultDmg 輾壓+傷 /
+//   maxHp 最大HP(取得即回) / extraDraw 起手多抽 / drawTwo 局末抽盤二選一 / firstHitHalf 首擊減半 /
+//   revive 免死一次 / aceDouble 王牌被動加倍 / feintDown 對手虛晃率-％ / ultGuard 被輾壓減傷 /
+//   chainQi 相生連段+氣勢 / xpBoost 局內經驗+％
+const DEFAULT_RELICS = [
+  {id:'stylus',    name:'黑膠唱針',     icon:'stylus',    tier:1, desc:'相剋命中額外 +1 氣勢',                          fx:{counterQi:1}},
+  {id:'sleeve',    name:'防靜電內套',   icon:'sleeve',    tier:2, desc:'王牌被動加倍：殿堂削 4 氣勢、流亡充能加倍、異端歸零後自身 +2 氣勢', fx:{aceDouble:1}},
+  {id:'dustcover', name:'防塵套',       icon:'dustcover', tier:1, desc:'每場第一次受擊傷害減半',                        fx:{firstHitHalf:1}},
+  {id:'testpress', name:'神秘見本盤',   icon:'testpress', tier:2, desc:'死亡時免死一次並回 5 HP（每趟一次）',            fx:{revive:1}},
+  {id:'pointcard', name:'會員集點卡',   icon:'pointcard', tier:1, desc:'局末抽盤變成二選一',                            fx:{drawTwo:1}},
+  {id:'adapter45', name:'45 轉接環',    icon:'adapter45', tier:1, desc:'每場開局氣勢 +2',                               fx:{startQi:2}},
+  {id:'cleaner',   name:'洗碟水',       icon:'cleaner',   tier:1, desc:'每場勝利額外回 2 血',                           fx:{winHeal:2}},
+  {id:'obi',       name:'原版側標',     icon:'obi',       tier:1, desc:'純比星獲勝時傷害 +1',                           fx:{valueDmg:1}},
+  {id:'gauge',     name:'針壓計',       icon:'gauge',     tier:1, desc:'被相剋命中時受傷 -1（最低 1）',                  fx:{counterGuard:1}},
+  {id:'heavy180',  name:'180g 重量盤',  icon:'heavy180',  tier:1, desc:'最大 HP +4（取得立刻回 4）',                     fx:{maxHp:4}},
+  {id:'matrix',    name:'內圈刻字',     icon:'matrix',    tier:1, desc:'品味輾壓傷害 +2',                               fx:{ultDmg:2}},
+  {id:'numbered',  name:'絕版編號標',   icon:'numbered',  tier:1, desc:'打出王牌時 +1 氣勢',                            fx:{aceQi:1}},
+  {id:'headphone', name:'試聽站耳機',   icon:'headphone', tier:1, desc:'每場起手多抽 1 張',                             fx:{extraDraw:1}},
+  {id:'bizcard',   name:'老闆的名片',   icon:'bizcard',   tier:1, desc:'看穿套路：對手虛晃機率減半',                     fx:{feintDown:50}},
+  {id:'isolation', name:'絕緣避震墊',   icon:'isolation', tier:2, desc:'被品味輾壓的傷害 -2',                           fx:{ultGuard:2}},
+  {id:'firstpress',name:'首刻盤',       icon:'firstpress',tier:1, desc:'相生連段額外 +1 氣勢',                          fx:{chainQi:1}},
+  {id:'column',    name:'樂評人專欄',   icon:'column',    tier:2, desc:'局內經驗 +25%',                                 fx:{xpBoost:25}},
+];
+let RELICS = DEFAULT_RELICS;
+function relicById(id){ return RELICS.find(r=>r.id===id) || null; }
+function ownedRelics(){ return (RUN&&RUN.relics||[]).map(relicById).filter(Boolean); }
+function relicFx(key){ let n=0; for(const r of ownedRelics()){ const v=r.fx&&r.fx[key]; if(v) n+=v; } return n; }
+function isBossDepth(d){ return d>0 && d%5===0; }
+
+// ---------- 像素風遺物圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
+const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e'};
+const PIX_ICONS = {
+  stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
+  sleeve:['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
+  dustcover:['............','..eeeeeeee..','.e........e.','.e.kkkkkk.e.','.e.k....k.e.','.e.kkkkkk.e.','.e........e.','.eeeeeeeeee.','.kkkkkkkkkk.','.kkkkkkkkkk.','..g......g..','............'],
+  testpress:['............','...kkkkkk...','..kkkkkkkk..','.kkkwwwwkkk.','.kkwwrrwwkk.','.kkwwwrwwkk.','.kkwwrrwwkk.','.kkwwwwwwkk.','.kkwwrrwwkk.','.kkkwwwwkkk.','..kkkkkkkk..','...kkkkkk...'],
+  pointcard:['............','............','.kkkkkkkkkk.','.kwwwwwwwwk.','.kwgwgwgwwk.','.kwwwwwwwwk.','.kwgwgwgwwk.','.kwwwwwwwwk.','.kwwwwwkkwk.','.kkkkkkkkkk.','............','............'],
+  adapter45:['............','....gggg....','..gggggggg..','..gg....gg..','.gg......gg.','.gg......gg.','.gg......gg.','.gg......gg.','..gg....gg..','..gggggggg..','....gggg....','............'],
+  cleaner:['....kkk.....','...kkkkk....','...kk.......','...kkkk.....','...kwwk.....','..kwwwwk....','..kwbbwk....','..kwbbwk....','..kwbbwk....','..kwwwwk....','..kkkkkk....','............'],
+  obi:['....kkkk....','....krrk....','....krrk....','....kwwk....','....kkwk....','....kwwk....','....kwkk....','....kwwk....','....kkwk....','....kwwk....','....kkkk....','............'],
+  gauge:['............','..kkkkkkkk..','.k........k.','.k...kk...k.','.k...kk...k.','.k....k...k.','.kkkkkkkkkk.','....kkkk....','....kkkk....','..kkkkkkkk..','............','............'],
+  heavy180:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+  matrix:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kw.w.w.wkk.','.kkkeeeekkk.','.kkke..ekkk.','.kkkeeeekkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+  numbered:['............','.kkkkkkkkk..','.kyyyyyyyk..','.kykyykyyk..','.kyyyyyyyk..','.kyykykyyk..','.kyyyyyyyk..','.kkkkkkkkk..','....kk......','....kk......','............','............'],
+  headphone:['............','....kkkk....','...kk..kk...','..kk....kk..','..k......k..','..k......k..','.kkk....kkk.','.kgk....kgk.','.kgk....kgk.','.kkk....kkk.','............','............'],
+  bizcard:['............','............','..kkkkkkkk..','..kwwwwwwk..','..kwkkkwwk..','..kwwwwwwk..','..kwkkkkwk..','..kwwwwwwk..','..kwwwwgwk..','..kkkkkkkk..','............','............'],
+  isolation:['............','............','.kkkkkkkkkk.','.kkkkkkkkkk.','...d....d...','..d.d..d.d..','...d....d...','..d.d..d.d..','.kkkkkkkkkk.','.kkkkkkkkkk.','............','............'],
+  firstpress:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkggggkkk.','.kkkggggkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+  column:['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
+};
+function relicIconHTML(r, size){
+  size = size||22;
+  const rows = r && PIX_ICONS[r.icon];
+  if(!rows) return `<span style="font-size:${Math.max(10,size-8)}px;line-height:1">${(r&&r.icon)||'🎁'}</span>`;
+  let rects='';
+  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
+  return `<svg class="pixicon" width="${size}" height="${size}" viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
+}
+
+// ---------- 樂歷解鎖階梯（升級除了天賦點，還解鎖具體內容；主畫面顯示下一級解什麼）----------
+const UNLOCKS = [
+  {lv:2,  key:'aceRate',    label:'局末抽盤王牌機率提升'},
+  {lv:3,  key:'relicT2',    label:'進階遺物進池（神秘見本盤等）'},
+  {lv:4,  key:'junk4',      label:'起始雜牌 -1（牌組更精）'},
+  {lv:5,  key:'seed6',      label:'種子格 +1（可挑 6 張開局）'},
+  {lv:6,  key:'heal4',      label:'每場勝利回血 +1'},
+  {lv:7,  key:'aceSeeds2',  label:'開局可帶 2 張王牌'},
+  {lv:8,  key:'relicPick4', label:'藏家遺物三選一 → 四選一'},
+  {lv:10, key:'startRelic', label:'開局自帶 1 件隨機遺物'},
+];
+function hasUnlock(key){ const u=UNLOCKS.find(x=>x.key===key); return !!u && levelOf(META.xp)>=u.lv; }
+function nextUnlock(){ const lv=levelOf(META.xp); return UNLOCKS.find(x=>x.lv>lv) || null; }
+function seedMax(){ return hasUnlock('seed6') ? 6 : 5; }
+function aceSeedMax(){ return hasUnlock('aceSeeds2') ? 2 : 1; }
+function relicPool(){ const t=hasUnlock('relicT2')?2:1; return RELICS.filter(r=>(r.tier||1)<=t && !(RUN&&RUN.relics.includes(r.id))); }
+
 // ---------- 樂歷（結算經驗 / 等級；登入後綁 Google 帳號存雲端，未登入存本機訪客檔）----------
 const META_KEY = 'dipRogueMeta_v2';
 const META_UID_KEY = 'dipRogueLastUid';
@@ -708,6 +807,7 @@ function mergeMeta(a,b){
     bestStreak:Math.max(a.bestStreak||0,b.bestStreak||0),
     collection:(hi.collection||[]).slice(),
     pending:(hi.pending||[]).slice(),
+    lastLoadout: hi.lastLoadout || lo.lastLoadout || null,   // 同流派再戰的上次配置
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
   const owned = new Set(m.collection.map(keyOf));
@@ -876,10 +976,17 @@ function renderClassSelect(){
       <button class="btn" onclick="spendTalent('def')">防 +1</button>
       <button class="btn" onclick="spendTalent('qir')">氣勢率 +1</button>
     </div>` : '';
+  const lv=levelOf(META.xp), nu=nextUnlock();
+  const unlockedNow = UNLOCKS.filter(u=>u.lv<=lv);
+  const unlockLine = `<div class="muted" style="margin:2px 0 10px;font-size:10px;line-height:1.8">
+      ${unlockedNow.length?`已解鎖：${unlockedNow.map(u=>u.label).join('・')}<br>`:''}
+      ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲遺物）`:'🏆 解鎖項目已全數開啟'}
+    </div>`;
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
-    <div class="muted" style="margin:4px 0 10px">選流派 → 挑5張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
+    <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
+    ${unlockLine}
     ${talentNote}${tBtns}
     <div id="clsList"></div>`;
   const list=document.getElementById('clsList');
@@ -901,7 +1008,7 @@ function renderClassSelect(){
 }
 function spendTalent(stat){ if(freeTalents()<=0) return; META.talents[stat]++; saveMeta(); renderClassSelect(); }
 
-function chooseClass(key){
+function initRun(key){
   const c=CLASSES[key];
   RUN = {
     classKey:key,
@@ -911,13 +1018,21 @@ function chooseClass(key){
     // 局內特殊能力（吸血鬼倖存者式，整趟生效、run 結束洗掉）
     mods:{ maxHpAdd:0, extraDraw:0, counterQi:0, regen:0, ultDmg:0 },
     runLevel:1, runXp:0, lvlQueue:0,
-    deck:[], depth:0, streak:0, relics:[],
+    deck:[], depth:0, streak:0, relics:[], _revived:false,
     seedsPicked:[],
     drawnCards:[],   // 一路上局末抽到的盤：趟結束結算時挑 1 張永久收藏
     _keptOne:false,
   };
   RUN.maxHp = RUN.baseMaxHp; RUN.hp = RUN.maxHp;
-  renderSeedSelect();
+}
+function chooseClass(key){ initRun(key); renderSeedSelect(); }
+// 死亡畫面「同流派再戰」：沿用上次流派＋種子，一鍵直接開局（降低重開摩擦）
+function quickRestart(){
+  const lo=META.lastLoadout;
+  if(!lo || !CLASSES[lo.classKey] || !Array.isArray(lo.seeds) || !lo.seeds.length) { renderClassSelect(); return; }
+  initRun(lo.classKey);
+  RUN.seedsPicked = lo.seeds.map(c=>({...c}));
+  startRun();
 }
 function recomputeMaxHp(prevMax){
   RUN.maxHp = RUN.baseMaxHp + RUN.mods.maxHpAdd;
@@ -1007,18 +1122,19 @@ function paintSeedScreen(){
   const sourceRow = user
     ? `<div class="row" style="gap:6px;margin:8px 0">${tab('collection','我的卡冊',`（${coll.length}）`)}${tab('random','隨機發牌')}</div>`
     : `<div class="row" style="gap:8px;margin:8px 0;align-items:center"><span class="muted" style="flex:1">登入後可用自己卡冊裡的專輯出戰</span><button class="btn" onclick="seedSignIn()">Google 登入</button></div>`;
-  const emptyColl = (RUN._source==='collection' && shelf.length<5)
-    ? `<div class="muted" style="margin:6px 0;color:var(--lose)">卡冊不足 5 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
+  const SM=seedMax();
+  const emptyColl = (RUN._source==='collection' && shelf.length<SM)
+    ? `<div class="muted" style="margin:6px 0;color:var(--lose)">卡冊不足 ${SM} 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
-    <h1>挑 5 張專輯開始旅程</h1>
-    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>5 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'卡冊與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
+    <h1>挑 ${SM} 張專輯開始旅程</h1>
+    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'卡冊與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
     <div class="muted" style="margin:2px 0 2px;font-size:10px">點卡選入／取消，<b>長按</b>卡片看專輯介紹與試聽。</div>
     ${sourceRow}${emptyColl}
     <div class="grid" id="shelf"></div>
     <div style="height:64px"></div>
     <div class="seedbar"><div class="inner">
-      <span class="cnt">已選 <b id="seedCount">0</b>/5</span>
-      <div class="dots" id="seedDots">${'<i></i>'.repeat(5)}</div>
+      <span class="cnt">已選 <b id="seedCount">0</b>/${SM}</span>
+      <div class="dots" id="seedDots">${'<i></i>'.repeat(SM)}</div>
       <button class="btn primary" id="seedGo" disabled onclick="startRun()">開始旅程 →</button>
     </div></div>`;
   const wrap=document.getElementById('shelf');
@@ -1070,10 +1186,11 @@ function toggleSeed(i){
   const c=RUN._shelf[i], ck=keyOf(c);
   const idx = RUN.seedsPicked.findIndex(x=>keyOf(x)===ck);
   if(idx>=0){ RUN.seedsPicked.splice(idx,1); updateSeedUI(); return; }
-  if(RUN.seedsPicked.length>=5) return;
-  // 頂級卡（王牌）起始最多選 1 張，過程中還會抽到
-  if(c.ace && RUN.seedsPicked.some(x=>x.ace)){
-    seedToast('頂級卡起始最多選 1 張（過程中還會抽到）'); return;
+  if(RUN.seedsPicked.length>=seedMax()) return;
+  // 頂級卡（王牌）起始有上限（預設 1 張；樂歷 Lv.7 解鎖 2 張），過程中還會抽到
+  const aceCap=aceSeedMax();
+  if(c.ace && RUN.seedsPicked.filter(x=>x.ace).length>=aceCap){
+    seedToast(`頂級卡起始最多選 ${aceCap} 張（過程中還會抽到）`); return;
   }
   RUN.seedsPicked.push(c);
   updateSeedUI();
@@ -1082,7 +1199,7 @@ function updateSeedUI(){
   const picked=new Set(RUN.seedsPicked.map(keyOf));
   const n=RUN.seedsPicked.length;
   document.getElementById('seedCount').textContent = n;
-  document.getElementById('seedGo').disabled = n!==5;
+  document.getElementById('seedGo').disabled = n!==seedMax();
   const dots=document.getElementById('seedDots');
   if(dots) [...dots.children].forEach((d,j)=>d.classList.toggle('on', j<n));
   RUN._shelf.forEach((c,i)=>{
@@ -1103,27 +1220,48 @@ function makeJunk(){
 }
 
 function startRun(){
-  if(RUN.seedsPicked.length!==5) return;
+  // 正常流程按鈕只在選滿 seedMax 時可按；「同流派再戰」允許沿用舊上限（如解鎖第 6 格前存的 5 張）
+  if(RUN.seedsPicked.length<5 || RUN.seedsPicked.length>seedMax()) return;
   const seeds = RUN.seedsPicked.map(c=>copyCard(c));
-  RUN.deck = seeds.concat(makeJunk());   // 5 種子 + 5 雜牌 = 10 張
+  let junk = makeJunk();
+  if(hasUnlock('junk4')) junk = junk.slice(0,4);   // Lv.4 解鎖：起始雜牌 -1
+  RUN.deck = seeds.concat(junk);                   // 種子 + 雜牌 ≈ 9~11 張
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
+  // Lv.10 解鎖：開局自帶 1 件隨機遺物
+  if(hasUnlock('startRelic') && !RUN.relics.length){
+    const pool=relicPool();
+    if(pool.length){ const r=pick(pool); grantRelic(r.id); seedToast(`🎁 開局遺物：${r.name}`); }
+  }
+  // 記住這次的流派＋種子 → 死亡畫面可「同流派再戰」一鍵重開
+  META.lastLoadout = { classKey:RUN.classKey,
+    seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null})) };
+  saveMeta();
   nextFight();
+}
+// 取得遺物（含一次性效果如 maxHp）
+function grantRelic(id){
+  if(RUN.relics.includes(id)) return;
+  RUN.relics.push(id);
+  const r=relicById(id);
+  if(r && r.fx && r.fx.maxHp){ const p=RUN.maxHp; RUN.mods.maxHpAdd+=r.fx.maxHp; recomputeMaxHp(p); }
 }
 
 // =========================================================================
 //  無限賽局：開下一場（敵人隨 depth 變強）
 // =========================================================================
 function enemyForDepth(d){
+  const boss = isBossDepth(d);                   // 每 5 場一位傳說藏家（里程碑強敵，打贏掉遺物）
   // 難度曲線：前 3 場是暖身（三圍近乎 0、牌從全池隨機抓），第 4 場起才進陡升段、第 5 場進 hard
   const diff = d<3?'easy' : d<5?'normal' : 'hard';
   const late = Math.max(0, d-3);                 // 陡升段深度：第 4 場開始計
   const stats = {
-    atk: Math.round(late*0.75),                  // 第4場1 → 第5場2 → 第8場4
-    def: Math.round(late*0.45),                  // 第5場1 → 第7場2
-    qir: (d>=3?1:0) + Math.floor(late*0.5),      // 第3場1 → 第5場2 → 第7場3
+    atk: Math.round(late*0.75) + (boss?1:0),     // 第4場1 → 第5場2 → 第8場4；藏家 +1
+    def: Math.round(late*0.45) + (boss?1:0),
+    qir: (d>=3?1:0) + Math.floor(late*0.5) + (boss?1:0),
   };
-  const hp = CFG.startHp + Math.floor((d-1)*1.2);   // 血只微升（保持 3~4 招快打），難度靠三圍/AI
-  const startQi = d<4 ? 0 : Math.min(3, Math.floor((d-2)/2));   // 第4場1 → 第6場2 → 第8場3
+  const hp = CFG.startHp + Math.floor((d-1)*1.2) + (boss?2:0);   // 血只微升（保持 3~4 招快打），難度靠三圍/AI
+  let startQi = d<4 ? 0 : Math.min(3, Math.floor((d-2)/2));   // 第4場1 → 第6場2 → 第8場3
+  if(boss) startQi = Math.max(startQi, 2);
   // 牌組：暖身期從整個卡池隨機抓（有強有弱）；第 4 場起改抽「強牌帶」並隨深度整體加值
   const buff = Math.floor(late/3);              // 第6場起敵牌主軸 +1、第9場 +2（上限 6）
   const ranked = allPool().slice().sort((a,b)=>
@@ -1131,22 +1269,26 @@ function enemyForDepth(d){
   // 在「強牌帶」內隨機取樣（帶寬至少 120 張、隨深度放寬）：
   // 舊寫法固定切全池最強前 16 張，排序是確定性的 → 前期敵人永遠同一批卡；改成帶內抽樣後場場不同
   const bandN = Math.min(ranked.length, Math.max(120, (16 + d*3) * 8));
-  const bag = d<4 ? shuffle(allPool().filter(c=>!c.ace)) : shuffle(ranked.slice(0, bandN));   // 暖身期不給敵人王牌
+  const strongBag = d<4 ? shuffle(allPool().filter(c=>!c.ace)) : shuffle(ranked.slice(0, bandN));   // 暖身期不給敵人王牌
+  const wildBag = shuffle(allPool().filter(c=>!c.ace));   // 與玩家同一個完整卡池（冷熱強弱都有）
   const deck=[];
   for(let i=0;i<11;i++){
-    const c=copyCard(bag[i%bag.length]);
+    // 35% 機率改抽「玩家同款全卡池」：對手牌面更豐富、不會場場都是同一批狠牌
+    const src = (d>=4 && Math.random()<0.35) ? wildBag : strongBag;
+    const c=copyCard(src[i%src.length]);
     if(buff>0 && !c.ace){                       // 加在該卡最高的主軸上，讓敵牌更難纏（王牌 7 星不動）
       const mainAttr = ATTRS.reduce((m,a)=>c[a]>c[m]?a:m, 'classic');
       c[mainAttr]=Math.min(6, c[mainAttr]+buff);
     }
     deck.push(c);
   }
-  if(d>=5 && Math.random()<Math.min(.6,.15*(d-4))) deck.push(copyCard(pick(ACES)));
+  if(boss) deck.push(copyCard(pick(ACES)));      // 藏家必帶王牌
+  else if(d>=5 && Math.random()<Math.min(.6,.15*(d-4))) deck.push(copyCard(pick(ACES)));
   shuffle(deck);
-  const titles=['音樂小白','文青同好','社團學長','資深樂評','二手店老闆','地下廠牌主理人','傳說藏家','品味之神'];
-  const who = titles[Math.min(titles.length-1, Math.floor(d/2))];
-  const emoji = ['🎧','🧣','🎓','🎙️','💿','📀','🏆','👑'][Math.min(7,Math.floor(d/2))];
-  return { who, emoji, diff, stats, hp, maxHp:hp, deck, startQi };
+  const titles=['音樂小白','文青同好','社團學長','資深樂評','二手店老闆','地下廠牌主理人','品味行家','品味之神'];
+  const who = boss ? '傳說藏家' : titles[Math.min(titles.length-1, Math.floor(d/2))];
+  const emoji = boss ? '🎩' : ['🎧','🧣','🎓','🎙️','💿','📀','🏆','👑'][Math.min(7,Math.floor(d/2))];
+  return { who, emoji, diff, stats, hp, maxHp:hp, deck, startQi, boss };
 }
 
 function nextFight(){
@@ -1159,14 +1301,16 @@ function nextFight(){
   const pDeck = _junk.concat(_good);
   G = {
     over:false, busy:false, turn:0,
-    p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:0, deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },
+    p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:clampQi(relicFx('startQi')), deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },   // 45 轉接環：開局氣勢
     e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
     E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[], sacUsed:false,   // sacUsed：割捨防禦每場限一次
+    _dustUsed:false,      // 防塵套：每場首次受擊減半（每場重置）
     eHist:[], pHist:[],   // 本場雙方出過的牌（回顧用）
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
-  for(let i=0;i<CFG.startHand+RUN.mods.extraDraw;i++){ drawCard(G.p); }  // 起手多抽（能力）
-  pushLog(`⚔️ 第 ${RUN.depth} 場 · 對手【${E.who}】（${E.diff==='easy'?'生手':E.diff==='normal'?'老練':'硬仗'}）`,'good');
+  for(let i=0;i<CFG.startHand+RUN.mods.extraDraw+relicFx('extraDraw');i++){ drawCard(G.p); }  // 起手多抽（能力＋試聽站耳機）
+  if(E.boss) pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲遺物！`,'good');
+  else pushLog(`⚔️ 第 ${RUN.depth} 場 · 對手【${E.who}】（${E.diff==='easy'?'生手':E.diff==='normal'?'老練':'硬仗'}）`,'good');
   renderBattle();
   startTurn();
 }
@@ -1250,13 +1394,14 @@ function startTurn(){
   if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 對手無牌可出 → 速判
   let attr=plan.attr, card=plan.card, vague=false; const tell=plan.attr;
   const d=RUN.depth, mercy=mercyLevel();
+  const fd = Math.max(0, 1 - relicFx('feintDown')/100);   // 老闆的名片：對手虛晃機率打折
   if(G.diff!=='easy' && !plan.card.ace){
     // 玩家上手照剋 → 虛晃反咬（玩家大幅劣勢時偶爾放過，隱形 DDA）
-    if(G.pCounteredTellLast && Math.random() >= mercy*0.7){ attr = COUNTER_OF[COUNTER_OF[tell]]; }
+    if(G.pCounteredTellLast && Math.random() >= mercy*0.7 && Math.random()<fd){ attr = COUNTER_OF[COUNTER_OF[tell]]; }
     else {
       // 主動虛晃：normal 一成五、hard 從第 5 場起隨深度爬到過半 → 照提示剋反而常吃虧
       // 虛晃＝故意出「剋掉玩家反制牌」的牌型：他說打入耳、你打經典想剋 → 他實出冷門反剋你的經典
-      const feintP = (G.diff==='hard' ? Math.min(.55, .18 + Math.max(0,d-5)*.05) : .15) * (1 - mercy*0.8);
+      const feintP = (G.diff==='hard' ? Math.min(.55, .18 + Math.max(0,d-5)*.05) : .15) * (1 - mercy*0.8) * fd;
       if(Math.random()<feintP) attr = COUNTER_OF[COUNTER_OF[tell]];
     }
     // hard 深層：一定機率完全不露氣場（深不可測），玩家只能自己讀局
@@ -1426,8 +1571,12 @@ function renderBattle(){
       : '⚡ 本場割捨已用過 → 拚血扛下或搶先出招')
     : '點一張手牌 → 選主打屬性出招';
   const need=runXpNeed();
+  const bossPill = (G.E && G.E.boss)
+    ? `<span class="pill" style="color:var(--gold);border-color:var(--gold);font-weight:700">🎩 藏家戰・掉遺物</span>`
+    : `<span class="pill">🎩 藏家再 ${toNextBoss()} 場</span>`;
+  const relicPill = RUN.relics.length ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="openRelicList()">遺物 ${RUN.relics.length}</button>` : '';
   $app.innerHTML = topbarHTML() + `
-    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span><button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">出牌記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
+    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span>${bossPill}${relicPill}<button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">出牌記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
     <div class="xpbar" style="margin:5px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     ${sideHTML(G.e, G.E.who, 'e')}
     <div class="etell" id="tell">${tellTxt}</div>
@@ -1480,7 +1629,7 @@ function renderTilePop(){
   const c=G.p.hand.find(x=>x.uid===_sel);
   if(!c||G.busy){ pop.classList.remove('show'); return; }
   const ultReady=G.p.qi>=CFG.qiMax;
-  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg}</button>`:'';
+  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg+relicFx('ultDmg')}</button>`:'';
   // 割捨防禦：對手要放輾壓時，犧牲任意非王牌手牌，依其最高星數抵傷（每場一次、該牌本趟永久移除）；王牌請正常出走七星回擊
   const canSac = G.pendingE && G.pendingE.ult && !G.sacUsed && !c.ace;
   const sacStar = Math.max(c.classic,c.obscurity,c.accessibility);
@@ -1507,7 +1656,7 @@ function resolveClash(pCard,pAttr,eCard,eAttr){
   if(pC&&eCard.ace) pC=false;       // 霸權：被剋方王牌 → 取消相剋
   if(eC&&pCard.ace) eC=false;
   const r={ pdQi:0,edQi:0,dmgToP:0,dmgToE:0,kind:'tie',by:null,attr:null,pF,eF };
-  if(pC){ r.pdQi+=CFG.qiCounter+(pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0); r.edQi+=CFG.qiCounterLoser; r.dmgToE+=pF; r.kind='counter'; r.by='p'; r.attr=pAttr; }
+  if(pC){ r.pdQi+=CFG.qiCounter+(pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus*(relicFx('aceDouble')?2:1):0); r.edQi+=CFG.qiCounterLoser; r.dmgToE+=pF; r.kind='counter'; r.by='p'; r.attr=pAttr; }
   else if(eC){ r.edQi+=CFG.qiCounter+(eCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0); r.pdQi+=CFG.qiCounterLoser; r.dmgToP+=eF; r.kind='counter'; r.by='e'; r.attr=eAttr; }
   else { if(pF>eF){ r.pdQi+=CFG.qiValue; r.edQi+=CFG.qiValueLoser; r.dmgToE+=(pF-eF)*CFG.valueDmg; r.kind='value'; r.by='p'; }
     else if(eF>pF){ r.edQi+=CFG.qiValue; r.pdQi+=CFG.qiValueLoser; r.dmgToP+=(eF-pF)*CFG.valueDmg; r.kind='value'; r.by='e'; }
@@ -1517,6 +1666,16 @@ function resolveClash(pCard,pAttr,eCard,eAttr){
 // 三圍：攻=造傷+atk；防=受傷-def(最低1)；氣勢率=當回合有充能則+qir(一次)
 function applyAtk(dmg, atk){ return dmg>0 ? dmg+atk : 0; }
 function applyDef(dmg, def){ return dmg>0 ? Math.max(1, dmg-def) : 0; }
+// 防塵套：每場第一次吃到的傷害減半（向下取整、最低 1）
+function softenIncoming(d){
+  if(d>0 && !G._dustUsed && relicFx('firstHitHalf')){
+    G._dustUsed=true;
+    const nd=Math.max(1, Math.floor(d/2));
+    if(nd<d) pushLog(`🛡 防塵套：首次受擊 ${d} → ${nd}`,'good');
+    return nd;
+  }
+  return d;
+}
 
 async function play(uid, pAttr){
   if(G.busy||G.over||!G.pendingE) return;
@@ -1546,7 +1705,7 @@ async function play(uid, pAttr){
   if(pUlt || eUlt || pSac){
     // 品味輾壓回合（含七星回擊 / 割捨防禦）
     const eUltBlocked = eUlt && !pUlt && !pSac && pCard.ace;   // 七星回擊（王牌專屬：擋＋反傷＋不消耗）
-    if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg,st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0; drainQiOnHit('e',null,d);
+    if(pUlt){ let d=applyDef(applyAtk(CFG.pUltimate+RUN.mods.ultDmg+relicFx('ultDmg'),st.atk), est.def); G.e.hp-=d; G.p.qi=0; G.p.last=null; G.p.chain=0; drainQiOnHit('e',null,d);
       callout(`<span class="dmg">你 · 品味輾壓 −${d}</span>`); pushLog(`你品味輾壓！對手 −${d}`,'hit'); }
     else if(pSac){ G.p.last=null; G.p.chain=0; }   // 割捨＝防守，不算出招、不接連段
     else G.p.last=pAttr;
@@ -1555,7 +1714,7 @@ async function play(uid, pAttr){
         callout(`<span class="good">七星回擊！對手輾壓無效，反傷 −${d}</span>`); pushLog(`${ACE_ZH[pCard.ace]}王牌七星回擊 → 對手 −${d}`,'good'); }
       else if(pSac){ // 割捨防禦：依犧牲牌最高星數抵傷（不反傷、不削氣），該牌本趟永久移除，每場一次
         const star=Math.max(pCard.classic,pCard.obscurity,pCard.accessibility);
-        const raw=applyDef(applyAtk(eUltBase(),est.atk), st.def);
+        const raw=Math.max(1, applyDef(applyAtk(eUltBase(),est.atk), st.def) - relicFx('ultGuard'));   // 絕緣避震墊：被輾壓減傷
         const blocked=Math.min(star,raw), d=Math.max(0, raw-star);
         if(d>0){ G.p.hp-=d; }
         G.e.qi=0; G.e.last=null; G.e.chain=0;
@@ -1563,28 +1722,38 @@ async function play(uid, pAttr){
         removeFromRunDeck(pCard); G.sacUsed=true;
         callout(`<span class="good">🛡 割捨【${pCard.album}】· 擋 ${blocked}${d>0?` · 仍受 −${d}`:'（完全擋下）'}</span>`);
         pushLog(`割捨防禦：棄「${pCard.album}」抵 ${blocked} 傷${d>0?`，輾壓仍 −${d}`:'，完全擋下'}（此牌本趟永久移除）`, d>0?'hit':'good'); }
-      else { let d=applyDef(applyAtk(eUltBase(),est.atk), st.def); G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0; drainQiOnHit('p',null,d);
+      else { let d=Math.max(1, applyDef(applyAtk(eUltBase(),est.atk), st.def) - relicFx('ultGuard'));   // 絕緣避震墊
+        d=softenIncoming(d);   // 防塵套：首次受擊減半
+        G.p.hp-=d; G.e.qi=0; G.e.last=null; G.e.chain=0; drainQiOnHit('p',null,d);
         callout(`<span class="dmg">對手 · 品味輾壓 −${d}</span>`); pushLog(`對手品味輾壓！你 −${d}`,'hit'); }
     } else G.e.last=eAttr;
   } else {
-    // 階段0 王牌即時被動
-    if(pCard.ace==='heresy'){ if(G.e.qi>0)pushLog('異端【終極解構】→ 歸零對手氣勢','qi'); G.e.qi=0; }
+    // 階段0 王牌即時被動（防靜電內套：我方王牌被動加倍）
+    const aceDbl = relicFx('aceDouble') ? 2 : 1;
+    if(pCard.ace==='heresy'){ if(G.e.qi>0)pushLog('異端【終極解構】→ 歸零對手氣勢','qi'); G.e.qi=0;
+      if(aceDbl>1){ G.p.qi=clampQi(G.p.qi+2); pushLog('防靜電內套 → 解構回充自身氣勢 +2','qi'); } }
     if(eCard.ace==='heresy'){ if(G.p.qi>0)pushLog('異端【終極解構】→ 歸零你的氣勢','qi'); G.p.qi=0; }
-    if(pCard.ace==='hall'){ G.e.qi=clampQi(G.e.qi-CFG.ace.hall.enemyQi); pushLog('殿堂【眾望所歸】→ 對手氣勢 -2','qi'); }
+    if(pCard.ace==='hall'){ const dq=CFG.ace.hall.enemyQi*aceDbl; G.e.qi=clampQi(G.e.qi-dq); pushLog(`殿堂【眾望所歸】→ 對手氣勢 -${dq}`,'qi'); }
     if(eCard.ace==='hall'){ G.p.qi=clampQi(G.p.qi-CFG.ace.hall.enemyQi); pushLog('殿堂【眾望所歸】→ 你的氣勢 -2','qi'); }
+    // 絕版編號標：打出王牌 +1 氣勢
+    if(pCard.ace && relicFx('aceQi')){ G.p.qi=clampQi(G.p.qi+relicFx('aceQi')); pushLog(`絕版編號標 → 王牌出場氣勢 +${relicFx('aceQi')}`,'qi'); }
     // 階段1 相生連段
     const pc=computeChain(G.p,pAttr), ec=computeChain(G.e,eAttr);
     if(pc.qi>0) pushLog(`你 · ${SYN_SKILL[pAttr]} ×${pc.len}連 氣勢+${pc.qi}`,'qi');
     if(ec.qi>0) pushLog(`對手 · ${SYN_SKILL[eAttr]} ×${ec.len}連 氣勢+${ec.qi}`,'qi');
     // 階段2 相剋/數值
     const r=resolveClash(pCard,pAttr,eCard,eAttr);
+    if(r.kind==='value' && r.by==='p') r.dmgToE += relicFx('valueDmg');   // 原版側標：比星勝 +傷
     let pdQi=r.pdQi+pc.qi, edQi=r.edQi+ec.qi;
+    if(pc.qi>0) pdQi += relicFx('chainQi');   // 首刻盤：相生連段額外充能
     if(pdQi>0) pdQi+=st.qir;     // 氣勢率
     if(edQi>0) edQi+=est.qir;
-    if(r.kind==='counter' && r.by==='p') pdQi+=RUN.mods.counterQi;  // 能力：相剋多充氣勢
+    if(r.kind==='counter' && r.by==='p') pdQi+=RUN.mods.counterQi+relicFx('counterQi');  // 能力＋黑膠唱針：相剋多充氣勢
     G.p.qi=clampQi(G.p.qi+pdQi); G.e.qi=clampQi(G.e.qi+edQi);
     const dmgToE=applyDef(applyAtk(r.dmgToE,st.atk), est.def);
-    const dmgToP=applyDef(applyAtk(r.dmgToP,est.atk), st.def);
+    let dmgToP=applyDef(applyAtk(r.dmgToP,est.atk), st.def);
+    if(r.kind==='counter' && r.by==='e' && dmgToP>0) dmgToP=Math.max(1, dmgToP-relicFx('counterGuard'));   // 針壓計：被剋減傷
+    dmgToP=softenIncoming(dmgToP);   // 防塵套：首次受擊減半
     if(dmgToE) G.e.hp-=dmgToE;
     if(dmgToP) G.p.hp-=dmgToP;
     drainQiOnHit('e', pAttr, dmgToE); drainQiOnHit('p', eAttr, dmgToP);   // 被攻擊 → 氣勢下降
@@ -1704,15 +1873,58 @@ function applyBuff(u){
 function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
   maybeTopUpDynPool();                                  // 邊打邊在背景補充動態卡池
-  RUN.hp = Math.min(RUN.maxHp, Math.max(1,G.p.hp) + 3);   // 贏了小回血
-  // 局內經驗累積（與結算樂歷分開算）
-  const gain = RXP.base + RUN.depth*RXP.perDepth;
+  const heal = 3 + (hasUnlock('heal4')?1:0) + relicFx('winHeal');   // Lv.6 解鎖＋洗碟水
+  RUN.hp = Math.min(RUN.maxHp, Math.max(1,G.p.hp) + heal);   // 贏了小回血
+  // 局內經驗累積（與結算樂歷分開算）；樂評人專欄：經驗 +％
+  const gain = Math.round((RXP.base + RUN.depth*RXP.perDepth) * (1 + relicFx('xpBoost')/100));
   RUN.runXp += gain; RUN._lastGain = gain;
   let lv=0; while(RUN.runXp >= runXpNeed()){ RUN.runXp -= runXpNeed(); RUN.runLevel++; lv++; }
   RUN.lvlQueue = lv;
+  // 擊敗傳說藏家 → 遺物三選一（之後才接升級佇列）＋ 本場局末抽盤王牌率大增
+  if(G.E && G.E.boss){ RUN._aceLuck=true; renderRelicChoice(); return; }
   if(lv>0) renderLevelUp(); else renderWinContinue();
 }
-function loseFight(){ G.over=true; renderDeath(); }
+function loseFight(){
+  // 神秘見本盤：死亡時免死一次、回 5 HP（每趟一次；對手還活著才有得續）
+  if(G.p.hp<=0 && G.e.hp>0 && relicFx('revive') && !RUN._revived){
+    RUN._revived=true;
+    G.p.hp=Math.min(RUN.maxHp,5); RUN.hp=G.p.hp;
+    pushLog('🌟 神秘見本盤發出微光——免死回魂，HP 5！','good');
+    callout('<span class="good">🌟 神秘見本盤 · 免死回魂</span>');
+    drawCard(G.p); drawCard(G.e);
+    if(G.p.hand.length>0 && G.e.hand.length>0){
+      refreshFighters(); renderHand();
+      setTimeout(()=>{ callout(''); startTurn(); }, 1000);
+      return;
+    }
+  }
+  G.over=true; renderDeath();
+}
+
+// ----- 藏家掉落：遺物三選一（樂歷 Lv.8 解鎖四選一）-----
+let _relicChoices=null;
+function renderRelicChoice(){
+  document.body.classList.remove('in-battle');
+  const pool=relicPool();
+  const n = hasUnlock('relicPick4') ? 4 : 3;
+  _relicChoices = shuffle(pool.slice()).slice(0,n);
+  if(!_relicChoices.length){ afterRelicChoice(); return; }   // 遺物拿滿 → 直接往下走
+  $app.innerHTML = topbarHTML() + `
+    <h1 style="color:var(--gold)">🎩 擊敗傳說藏家！</h1>
+    <div class="muted" style="margin:2px 0 8px">他從私藏木箱裡拿出幾件行頭——選一件<b>遺物</b>帶走（整趟生效、死亡洗掉）</div>
+    <div id="relicChoices">${_relicChoices.map((r,i)=>`
+      <div class="relic-card" onclick="pickRelic(${i})">
+        <div class="ric">${relicIconHTML(r,36)}</div>
+        <div><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''}</h3>
+        <div class="muted">${r.desc}</div></div>
+      </div>`).join('')}</div>`;
+}
+function pickRelic(i){
+  const r=_relicChoices && _relicChoices[i]; if(!r) return;
+  grantRelic(r.id); _relicChoices=null;
+  afterRelicChoice();
+}
+function afterRelicChoice(){ if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue(); }
 
 let _lvlChoices=null;
 function renderLevelUp(){
@@ -1746,12 +1958,40 @@ function modsLine(){
   if(m.counterQi) extra+=` 剋氣+${m.counterQi}`; if(m.regen) extra+=` 回血${m.regen}`; if(m.ultDmg) extra+=` 輾壓+${m.ultDmg}`;
   return `攻${s.atk} 防${s.def} 氣勢率${s.qir}${extra}`;
 }
+// 已持有遺物 → 小圖示列（點開清單）
+function relicBarHTML(){
+  const rs=ownedRelics();
+  if(!rs.length) return '';
+  return `<div class="relicbar">${rs.map(r=>`<button class="rslot" title="${r.name}" onclick="openRelicList()">${relicIconHTML(r,20)}</button>`).join('')}</div>`;
+}
+function openRelicList(){
+  if(document.getElementById('relicMask')) return;
+  const rs=ownedRelics();
+  const mask=document.createElement('div'); mask.className='drawmask'; mask.id='relicMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left">
+    <div class="lab">持有遺物（${rs.length}）</div>
+    ${rs.length?rs.map(r=>`<div class="relic-list-row"><div class="ric">${relicIconHTML(r,26)}</div>
+      <div><b style="font-size:12px">${r.name}</b><div class="muted" style="font-size:10px">${r.desc}</div></div></div>`).join('')
+      :'<div class="muted">尚無遺物——每 5 場擊敗「傳說藏家」可獲得。</div>'}
+    <div class="sp"></div>
+    <button class="btn primary" style="width:100%" onclick="closeRelicList()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeRelicList(); });
+  document.body.appendChild(mask);
+}
+function closeRelicList(){ const m=document.getElementById('relicMask'); if(m) m.remove(); }
+// 距下一位藏家還幾場（正在打藏家 → 0）
+function toNextBoss(){ const r=RUN.depth%5; return r===0 ? 0 : 5-r; }
+
 function renderWinContinue(){
   document.body.classList.remove('in-battle');
   const need=runXpNeed();
+  const tb=toNextBoss();
   $app.innerHTML = topbarHTML() + `
     <h1 class="good" style="color:var(--win)">第 ${RUN.depth} 場 — 勝！</h1>
     <div class="muted" style="margin:2px 0 8px">連勝 ${RUN.streak}・回血至 HP ${RUN.hp}/${RUN.maxHp}・牌組 ${RUN.deck.length} 張</div>
+    <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉遺物）</div>
+    ${relicBarHTML()}
     <div class="muted">局內 Lv.${RUN.runLevel}　經驗 +${RUN._lastGain}（${RUN.runXp}/${need}）</div>
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     <div style="font-size:11px;color:var(--dim);margin-bottom:12px">能力：${modsLine()}</div>
@@ -1768,11 +2008,13 @@ function renderWinContinue(){
 //  局末抽盤：抽一張盤 → 用「直接來一張」風格揭曉封面＋介紹 → 進卡組
 // =========================================================================
 const RG_WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
-let _drawCard = null;
-// 抽一張卡組裡還沒有的盤（小機率出王牌）
-function pickDrawCard(){
+let _drawCard = null, _drawChoices = null;
+// 抽一張卡組裡還沒有的盤（小機率出王牌；Lv.2 解鎖提高、剛打贏藏家大幅提高）
+function pickDrawCard(excludeKeys){
   const inDeck = new Set(RUN.deck.map(keyOf));
-  const wantAce = Math.random() < 0.12;
+  (excludeKeys||[]).forEach(k=>inDeck.add(k));
+  const aceBase = hasUnlock('aceRate') ? 0.16 : 0.12;
+  const wantAce = Math.random() < (RUN._aceLuck ? 0.5 : aceBase);
   const src = wantAce ? ACES.concat(allPool()) : allPool().concat(ACES);
   for(const c of shuffle(src.slice())){
     if(!inDeck.has(keyOf(c))) return copyCard({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
@@ -1781,6 +2023,33 @@ function pickDrawCard(){
 }
 function openDrawReveal(){
   if(RUN._drewThisWin || document.getElementById('drawMask')) return;
+  // 會員集點卡：抽兩張、挑一張
+  if(relicFx('drawTwo')){
+    const a=pickDrawCard(), b=pickDrawCard([keyOf(a)]);
+    _drawChoices=[a,b];
+    const mask=document.createElement('div');
+    mask.className='drawmask'; mask.id='drawMask';
+    mask.innerHTML=`<div class="drawcard" style="max-width:480px">
+      <div class="lab">★ 局末抽盤 · 會員集點卡發威——二選一</div>
+      <div class="drawtwo">${_drawChoices.map((c,i)=>`
+        <div class="opt">
+          <div class="cov2 noimg" id="dt2cov${i}"><span>${c.album}</span></div>
+          ${c.ace?`<span class="acebadge">${ACE_ZH[c.ace]}</span>`:''}
+          <div class="al2">${c.album}</div><div class="ar2">${c.artist}</div>
+          <div class="stats" style="margin:6px 0">${starsHTML(c)}</div>
+          <div class="intro2 wait" id="dt2intro${i}">介紹載入中…</div>
+          <button class="btn primary" style="width:100%" onclick="confirmDrawChoice(${i})">選這張 →</button>
+        </div>`).join('')}</div>
+      <div class="muted" style="font-size:10px;margin-top:8px">趟結束結算時，可從一路抽到的盤中挑 <b>1</b> 張永久收進卡冊</div>
+    </div>`;
+    document.body.appendChild(mask);
+    _drawChoices.forEach((c,i)=>{
+      ensureCover(c).then(url=>{ const el=document.getElementById('dt2cov'+i);
+        if(url&&el){ el.classList.remove('noimg'); el.innerHTML=''; el.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } });
+      loadAlbumDesc(c, document.getElementById('dt2intro'+i));
+    });
+    return;
+  }
   const c = _drawCard = pickDrawCard();
   const aceTag = c.ace ? `<span class="acebadge">${ACE_ZH[c.ace]}</span>` : '';
   const mask = document.createElement('div');
@@ -1805,15 +2074,16 @@ function openDrawReveal(){
   hookStreamLink('drawStream', c);
   loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與卡冊/對戰同一套事實型簡介（/album-desc，含人工校正）
 }
-function confirmDraw(){
-  if(!_drawCard) return;
-  RUN.deck.push(_drawCard);                            // 本趟牌組（趟結束洗掉）
-  (RUN.drawnCards=RUN.drawnCards||[]).push(_drawCard); // 記下來：趟結束結算時挑 1 張永久收藏
+function _takeDrawnCard(c){
+  RUN.deck.push(c);                            // 本趟牌組（趟結束洗掉）
+  (RUN.drawnCards=RUN.drawnCards||[]).push(c); // 記下來：趟結束結算時挑 1 張永久收藏
   RUN._drewThisWin = true;
-  _drawCard = null;
+  RUN._aceLuck = false;                        // 藏家加成用一次就歸零
   const m = document.getElementById('drawMask'); if(m) m.remove();
   renderWinContinue();
 }
+function confirmDraw(){ if(!_drawCard) return; const c=_drawCard; _drawCard=null; _takeDrawnCard(c); }
+function confirmDrawChoice(i){ const c=_drawChoices && _drawChoices[i]; if(!c) return; _drawChoices=null; _takeDrawnCard(c); }
 
 // =========================================================================
 //  撿一張盤（局內升級「➕ 撿一張盤」）：從收藏翻出一張 → 同局末抽盤揭曉封面＋介紹 → 進本趟牌組
@@ -1985,6 +2255,7 @@ function openCardInfo(card, opts){
 function renderDeath(){
   document.body.classList.remove('in-battle');
   // 樂歷結算經驗（與局內經驗分開算）：依 depth／連勝
+  const prevBest = META.bestDepth;   // 先記舊紀錄 → 算「差一點」勾子
   const recordBonus = RUN.depth>META.bestDepth ? MXP.recordBonus : 0;   // 破紀錄額外給
   const gained = RUN.depth*MXP.perDepth + RUN.streak*MXP.perStreak + recordBonus;
   const lvBefore=levelOf(META.xp);
@@ -1994,6 +2265,14 @@ function renderDeath(){
   META.bestStreak=Math.max(META.bestStreak, RUN.streak);
   const lvAfter=levelOf(META.xp);
   const gainedLevels = lvAfter-lvBefore;
+  // ── near-miss 勾子：差幾場破紀錄、差多少 XP 升級、下一級解鎖什麼 ──
+  let recordLine='';
+  if(RUN.depth>prevBest && RUN.depth>0) recordLine='🏆 <b style="color:var(--gold)">新紀錄！</b>';
+  else if(RUN.depth===prevBest && RUN.depth>0) recordLine='😤 追平最佳紀錄——<b>再贏 1 場</b>就破！';
+  else if(prevBest>0 && prevBest-RUN.depth<=3) recordLine=`😖 差 <b style="color:var(--dmg)">${prevBest-RUN.depth+1} 場</b>就破紀錄（最佳 ${prevBest}）`;
+  const toNextLv = xpTotalForLevel(lvAfter+1)-META.xp;
+  const nu = nextUnlock();
+  const nextLine = `距樂歷 Lv.${lvAfter+1} 還差 <b style="color:var(--gold)">${toNextLv} XP</b>${nu?`・Lv.${nu.lv} 解鎖「${nu.label}」`:''}`;
   // 每升一級樂歷 → 抽一張專輯進收藏（升級獎勵之一）
   const drawn=[]; for(let i=0;i<gainedLevels;i++){ const c=drawAlbum(); if(c) drawn.push(c); }
   saveMeta();
@@ -2016,15 +2295,19 @@ function renderDeath(){
     <div class="sp"></div>
     <div class="muted" style="text-align:left">本場對手出過的牌（點小圖看介紹／聽歌）</div>
     ${histRowHTML(G.eHist,'dh')}` : '';
+  const metCount = (RUN.drawnCards||[]).length + ((G&&G.eHist)?G.eHist.length:0);
+  const relicNote = RUN.relics.length ? `・遺物 ${RUN.relics.length} 件` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="death">
       <div class="muted">試煉終結</div>
       <div class="big">第 ${RUN.depth} 場</div>
-      <div class="muted">連勝 ${RUN.streak}・流派 ${CLASSES[RUN.classKey].name}・局內 Lv.${RUN.runLevel}</div>
-      <div class="sp"></div><div class="sp"></div>
+      <div class="muted">連勝 ${RUN.streak}・流派 ${CLASSES[RUN.classKey].name}・局內 Lv.${RUN.runLevel}${relicNote}</div>
+      <div style="margin-top:8px;min-height:16px">${recordLine}</div>
+      <div class="sp"></div>
       <div>獲得樂歷 <b style="color:var(--gold)">+${gained} XP</b>　<span class="muted">(結算另計，與局內經驗無關)</span></div>
       ${gainedLevels>0?`<div style="color:var(--gold);font-weight:800;margin-top:6px">⬆ 樂歷升級！Lv.${lvBefore} → Lv.${lvAfter}（得 ${gainedLevels} 天賦點，下局開始前可配）</div>`:''}
-      <div class="muted" style="margin-top:4px">${META.bestDepth===RUN.depth&&RUN.depth>0?'🏆 新紀錄！':''}</div>
+      <div class="muted" style="margin-top:4px">${nextLine}</div>
+      ${metCount>0?`<div class="muted" style="margin-top:2px">🎧 本趟路上遇見了 ${metCount} 張盤</div>`:''}
       ${runDrawnHTML}
       ${drawnHTML}
       ${foeHistHTML}
@@ -2036,7 +2319,10 @@ function renderDeath(){
         <button class="btn" style="margin-top:6px" onclick="deathSignIn()">Google 登入 · 綁定帳號</button>
       </div>`}
       <div class="sp"></div>
-      <button class="btn primary" style="width:100%" onclick="renderClassSelect()">再來一趟 →</button>
+      ${META.lastLoadout && CLASSES[META.lastLoadout.classKey] ? `
+      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="quickRestart()">⚡ 同流派再戰（${CLASSES[META.lastLoadout.classKey].name}・同批種子）</button>
+      <div class="sp"></div>` : ''}
+      <button class="btn ${META.lastLoadout?'':'primary'}" style="width:100%" onclick="renderClassSelect()">重新選流派 →</button>
       <div class="sp"></div>
       <button class="btn" style="width:100%" onclick="location.href='index.html'">← 回主選單</button>
     </div>`;
@@ -2062,6 +2348,8 @@ function applyConfig(cfg){
     if(cfg.metaXp) MXP=Object.assign({},MXP,cfg.metaXp);
     if(cfg.classes && typeof cfg.classes==='object') CLASSES=cfg.classes;
     if(Array.isArray(cfg.upgrades) && cfg.upgrades.length) UPGRADES=cfg.upgrades;
+    // 後台遺物：整組覆寫（fx 是 {效果鍵:數值}；icon 對得上內建像素圖示就用像素圖、否則當 emoji/文字顯示）
+    if(Array.isArray(cfg.relics) && cfg.relics.length) RELICS=cfg.relics.filter(r=>r&&r.id&&r.name&&r.fx);
   }catch(e){ console.warn('套用後台設定失敗，改用預設', e); }
 }
 // 啟動：先等後台設定（最多等一下），再開遊戲
