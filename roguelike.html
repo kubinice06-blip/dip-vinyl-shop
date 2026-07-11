@@ -192,7 +192,7 @@
   .callout{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:25;width:max-content;max-width:90%;padding:9px 14px;background:rgba(255,255,255,.94);border:1px solid var(--black);box-shadow:0 6px 26px rgba(0,0,0,.3);text-align:center;pointer-events:none;font-weight:700;letter-spacing:0.04em;font-size:13px;}
   .callout:empty{display:none;} .callout.burst{animation:burst .42s cubic-bezier(.18,.9,.32,1.25);}
   .callout .dmg{color:var(--dmg);} .callout .good{color:var(--win);}
-  .player-zone{border-top:1px solid var(--black);padding:10px 0 4px;position:relative;}
+  .player-zone{padding:6px 0 4px;position:relative;}
   .cheat{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px 0;}
   .relring{width:64px;flex:none;}
   .relring svg{width:100%;height:auto;overflow:visible;display:block;}
@@ -248,7 +248,7 @@
   /* 牌桌高度只貼齊卡片本身（不再 flex:1 撐大）→ 我方面板緊接在卡片下方、不留大片空白；
      卡片維持原尺寸。畫面不夠高時整體往下溢出，交給 #app 的 overflow:hidden 收掉（底部 log 先被裁），
      卡片永遠不會被壓縮、也不會頂出去蓋住血條黑線。 */
-  body.in-battle .arena{flex:0 0 auto;min-height:0;overflow:hidden;padding:6px 0;}
+  body.in-battle .arena{flex:0 0 auto;min-height:0;overflow:hidden;padding:16px 0 10px;}
   body.in-battle .player-zone{flex:none;}
   body.in-battle #app > .xpbar, body.in-battle #app > .row, body.in-battle #app > .side{flex:none;}
   body.in-battle .topbar{margin-bottom:6px;padding:6px 0;}
@@ -287,6 +287,22 @@
   .relic-card h3{margin:0 0 3px;font-size:13px;letter-spacing:0.05em;}
   .relic-list-row{display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:8px 0;text-align:left;}
   .relic-list-row .ric{flex:none;width:34px;height:34px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fafafa;}
+
+  /* ===== 傳說藏家開場（全屏蓋章式動畫＋震屏） ===== */
+  @keyframes bossMaskIn{0%{opacity:0;}100%{opacity:1;}}
+  @keyframes bossStamp{0%{transform:scale(3);opacity:0;}55%{transform:scale(.92);opacity:1;}75%{transform:scale(1.06);}100%{transform:scale(1);}}
+  @keyframes bossLine{0%{transform:scaleX(0);}100%{transform:scaleX(1);}}
+  @keyframes bossShake{0%,100%{transform:translate(0,0);}20%{transform:translate(-6px,2px);}40%{transform:translate(5px,-3px);}60%{transform:translate(-4px,-2px);}80%{transform:translate(3px,2px);}}
+  @keyframes bossGlow{0%,100%{text-shadow:0 0 0 rgba(184,134,11,0);}50%{text-shadow:0 0 26px rgba(184,134,11,.75);}}
+  .bossmask{position:fixed;inset:0;z-index:80;background:rgba(255,255,255,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;animation:bossMaskIn .25s;}
+  .bossmask.out{opacity:0;transition:opacity .45s;}
+  .bossmask .bline{width:min(320px,70vw);height:2px;background:var(--gold);transform-origin:left;animation:bossLine .5s .15s both;}
+  .bossmask .bline.r{transform-origin:right;}
+  .bossmask .bemoji{font-size:64px;line-height:1;animation:bossStamp .6s .1s both cubic-bezier(.2,1.4,.4,1);}
+  .bossmask .btitle{font-size:32px;font-weight:700;letter-spacing:.35em;text-indent:.35em;color:var(--black);animation:bossStamp .55s .35s both cubic-bezier(.2,1.4,.4,1),bossGlow 1.2s .9s infinite;}
+  .bossmask .bsub{font-size:12px;color:var(--gold);letter-spacing:.14em;font-weight:700;animation:bossStamp .5s .62s both;}
+  .bossmask .bdepth{font-size:10px;color:var(--gray);letter-spacing:.1em;animation:bossStamp .5s .78s both;}
+  body.boss-shake #app{animation:bossShake .5s .55s;}
 
   /* 局末抽盤二選一（會員集點卡） */
   .drawtwo{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
@@ -1236,6 +1252,11 @@ function startRun(){
   META.lastLoadout = { classKey:RUN.classKey,
     seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null})) };
   saveMeta();
+  // 開局選的盤若尚未擁有（隨機發牌來的）→ 一併列入趟末「挑 1 張永久收藏」名單，
+  // 和局末抽盤／遊戲中抽到的放在一起讓玩家挑
+  const _owned = new Set(META.collection.map(keyOf).concat((RUN._collShelf||[]).map(keyOf)));
+  RUN.drawnCards = RUN.seedsPicked.filter(c=>!_owned.has(keyOf(c)))
+    .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null,uid:newUid()}));
   nextFight();
 }
 // 取得遺物（含一次性效果如 maxHp）
@@ -1309,10 +1330,33 @@ function nextFight(){
   };
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
   for(let i=0;i<CFG.startHand+RUN.mods.extraDraw+relicFx('extraDraw');i++){ drawCard(G.p); }  // 起手多抽（能力＋試聽站耳機）
-  if(E.boss) pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲遺物！`,'good');
+  if(E.boss){ pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲遺物！`,'good'); bossIntro(); }
   else pushLog(`⚔️ 第 ${RUN.depth} 場 · 對手【${E.who}】（${E.diff==='easy'?'生手':E.diff==='normal'?'老練':'硬仗'}）`,'good');
   renderBattle();
   startTurn();
+}
+
+// 傳說藏家開場動畫：全屏蓋章＋金線＋震屏，約 2 秒自動收場（戰鬥已在底下備好）
+const BOSS_LINES = [
+  '「讓我看看你的品味有幾兩重。」',
+  '「這些年輕人聽的……哼。」',
+  '「我的木箱裡，沒有一張爛盤。」',
+  '「敢在我面前放這種歌？」',
+  '「三十年的耳朵，不會騙人。」',
+];
+function bossIntro(){
+  const old=document.getElementById('bossMask'); if(old) old.remove();
+  const m=document.createElement('div'); m.className='bossmask'; m.id='bossMask';
+  m.innerHTML=`<div class="bline"></div>
+    <div class="bemoji">🎩</div>
+    <div class="btitle">傳說藏家</div>
+    <div class="bsub">${pick(BOSS_LINES)}</div>
+    <div class="bdepth">第 ${RUN.depth} 場 · 里程碑戰 — 打贏掉遺物</div>
+    <div class="bline r"></div>`;
+  document.body.appendChild(m);
+  document.body.classList.add('boss-shake');
+  setTimeout(()=>{ m.classList.add('out'); }, 1850);
+  setTimeout(()=>{ m.remove(); document.body.classList.remove('boss-shake'); }, 2350);
 }
 
 function drawCard(s){ if(s.deck.length) s.hand.push(s.deck.pop()); }
@@ -2076,7 +2120,8 @@ function openDrawReveal(){
 }
 function _takeDrawnCard(c){
   RUN.deck.push(c);                            // 本趟牌組（趟結束洗掉）
-  (RUN.drawnCards=RUN.drawnCards||[]).push(c); // 記下來：趟結束結算時挑 1 張永久收藏
+  RUN.drawnCards=RUN.drawnCards||[];
+  if(!RUN.drawnCards.some(x=>keyOf(x)===keyOf(c))) RUN.drawnCards.push(c); // 記下來：趟結束結算時挑 1 張永久收藏（開局種子已在名單就不重複）
   RUN._drewThisWin = true;
   RUN._aceLuck = false;                        // 藏家加成用一次就歸零
   const m = document.getElementById('drawMask'); if(m) m.remove();
@@ -2287,7 +2332,7 @@ function renderDeath(){
   window._runDrawn = runDrawn;
   const runDrawnHTML = runDrawn.length ? `
     <div class="sp"></div>
-    <div style="color:var(--gold);font-weight:700">🎴 本趟一路抽到 ${runDrawn.length} 張盤 — 挑 1 張永久收進卡冊</div>
+    <div style="color:var(--gold);font-weight:700">🎴 本趟集到 ${runDrawn.length} 張盤（開局挑的＋一路抽到的）— 挑 1 張永久收進卡冊</div>
     <div class="muted" id="keepNote" style="font-size:10px;margin-top:2px">點專輯看介紹，再按「★ 收進卡冊」；只能選一張，其餘趟結束消失</div>
     <div class="grid" style="margin:8px 0" id="runDrawn">${runDrawn.map((c,i)=>`<div onclick="openCardInfo(window._runDrawn[${i}],{keepIdx:${i}})" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
   // 本場對手出過的牌（回顧）
