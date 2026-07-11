@@ -242,6 +242,11 @@
   .pp-sac{flex:1 0 100%;margin-bottom:4px;color:#fff;border-color:#3f4d59;background:#5a6b7a;font-size:11px;letter-spacing:0.02em;}
   .pp-sac:hover{background:#3f4d59;color:#fff;}
 
+  /* 戰鬥頂部藥丸列：單行不換行、塞不下就橫向滑（不再換行把手牌擠出畫面） */
+  .battle-pills{flex-wrap:nowrap;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-top:8px;}
+  .battle-pills::-webkit-scrollbar{display:none;}
+  .battle-pills .pill{flex:none;white-space:nowrap;}
+
   /* 戰鬥畫面：與 battle.html 同——整屏不滾動、牌桌置中、手牌固定底部 */
   body.in-battle{overflow:hidden;}
   body.in-battle #app{height:100dvh;overflow:hidden;display:flex;flex-direction:column;padding:8px 14px 4px;}
@@ -1615,13 +1620,14 @@ function renderBattle(){
       : '⚡ 本場割捨已用過 → 拚血扛下或搶先出招')
     : '點一張手牌 → 選主打屬性出招';
   const need=runXpNeed();
+  // 戰鬥中不放樂歷列（省高度給手牌）；藥丸合併縮短、強制單行不換行 → 手機不再把手牌擠出畫面
   const bossPill = (G.E && G.E.boss)
-    ? `<span class="pill" style="color:var(--gold);border-color:var(--gold);font-weight:700">🎩 藏家戰・掉遺物</span>`
-    : `<span class="pill">🎩 藏家再 ${toNextBoss()} 場</span>`;
-  const relicPill = RUN.relics.length ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="openRelicList()">遺物 ${RUN.relics.length}</button>` : '';
-  $app.innerHTML = topbarHTML() + `
-    <div class="row" style="flex-wrap:wrap;gap:6px"><span class="pill">第 ${RUN.depth} 場</span><span class="pill">連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">局內 Lv.${RUN.runLevel}</span>${bossPill}${relicPill}<button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">出牌記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">離開 ✕</button></div>
-    <div class="xpbar" style="margin:5px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
+    ? `<span class="pill" style="color:var(--gold);border-color:var(--gold);font-weight:700">🎩 藏家戰</span>`
+    : `<span class="pill">🎩 ${toNextBoss()} 場後</span>`;
+  const relicPill = RUN.relics.length ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="openRelicList()">遺物${RUN.relics.length}</button>` : '';
+  $app.innerHTML = `
+    <div class="row battle-pills"><span class="pill">第 ${RUN.depth} 場・連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">Lv.${RUN.runLevel}</span>${bossPill}${relicPill}<button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">✕</button></div>
+    <div class="xpbar" style="margin:4px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     ${sideHTML(G.e, G.E.who, 'e')}
     <div class="etell" id="tell">${tellTxt}</div>
     <div class="arena"><div class="slots">
