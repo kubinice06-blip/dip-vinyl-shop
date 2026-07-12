@@ -144,7 +144,11 @@
   .nameplate .meta .s-atk,.nameplate .meta .s-def,.nameplate .meta .s-qir{font-weight:700;font-size:10px;}
   .nameplate .meta .s-atk b,.nameplate .meta .s-def b,.nameplate .meta .s-qir b{font-size:12px;}
   /* 我方三圍：獨立一列放在氣勢條下方，避免被下移的檯面卡蓋住 */
-  .statrow{display:flex;gap:16px;justify-content:flex-end;margin-top:5px;}
+  .statrow{display:flex;gap:16px;justify-content:center;margin-top:5px;}
+  /* 我方名牌：你＋連段靠左並排，右側空出來給我方像素小人站 */
+  .player-zone .nameplate{justify-content:flex-start;gap:10px;}
+  /* 相剋圈微移，讓頂點「經」對齊置中三圍的「攻」 */
+  .cheat .relring{transform:translateX(-8px);}
   .statrow .s-atk,.statrow .s-def,.statrow .s-qir{font-weight:700;font-size:11px;letter-spacing:0.04em;}
   .statrow .s-atk b,.statrow .s-def b,.statrow .s-qir b{font-size:13px;margin-left:1px;}
   .hpbar{height:14px;background:var(--hp-bg);position:relative;overflow:hidden;}
@@ -261,14 +265,15 @@
      檯面卡略縮 → 手牌與底部攻防紀錄(log)都完整進畫面，不再被裁 */
   @media (max-width:600px){
     .battle-pills{padding-top:6px;}
-    body.in-battle .arena{justify-content:flex-start;padding:8px 0 4px;}
+    body.in-battle .arena{justify-content:flex-start;padding:4px 0 2px;}
     .slots{gap:12px;}
-    .slot{max-width:150px;}
+    .slot{max-width:164px;}
     #eSlot{transform:translateY(-5px);} #pSlot{transform:translateY(5px);}
     .etell{min-height:24px;margin:6px auto 0;padding:5px 8px;}
+    .side{padding:4px 0;}
     .side.enemy{padding-bottom:6px;}
     .player-zone{padding:4px 0 2px;}
-    .cheat{gap:16px;margin:2px 0;}
+    .cheat{gap:16px;margin:0;}
     .cheat .legend{display:none;}
     .relring{width:86px;}
     .hint{margin:2px 0 4px;}
@@ -896,9 +901,9 @@ function placeSprites(){
   const se=document.getElementById('sprE'), sp=document.getElementById('sprP');
   if(!slots||!es||!ps||!se||!sp) return;
   const sr=slots.getBoundingClientRect(), er=es.getBoundingClientRect(), pr=ps.getBoundingClientRect();
-  // 對手站對手卡位「左上角內側」（避開左上 ace 角標高度）；我方站我方卡位「右下角內側」（左下是牌型角標）
-  se.style.left=(er.left-sr.left+3)+'px';  se.style.top=(er.top-sr.top+16)+'px';
-  sp.style.left=(pr.right-sr.left-3-SPR_W)+'px'; sp.style.top=(pr.bottom-sr.top-3-SPR_W)+'px';
+  // 對手站自家卡位「上緣外側」、我方站自家卡位「下緣外側」：都落在牌框外，永遠不蓋到專輯封面
+  se.style.left=(er.left-sr.left-2)+'px';        se.style.top=(er.top-sr.top-SPR_W)+'px';
+  sp.style.left=(pr.right-sr.left-SPR_W+2)+'px'; sp.style.top=(pr.bottom-sr.top)+'px';
 }
 window.addEventListener('resize', placeSprites);
 function spriteFx(side, cls, ms){
