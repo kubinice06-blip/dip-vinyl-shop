@@ -498,6 +498,7 @@
       <li><b>【大眾共鳴】經典 剋 入耳</b>：經得起時間的歷史地位，正面壓過前衛的晦澀與抗拒感——再前衛，也撼動不了公認的偉大。</li>
       <li><b>【降維打擊】入耳 剋 冷門</b>：用前衛的硬實力與混亂，拆穿小眾「只是沒人聽過」的神祕防線——稀有不等於厲害。</li>
     </ul>
+    <p style="color:var(--gray);font-size:10px">⚖ <b>數值輾壓翻盤</b>：就算你屬性剋對方，只要對方星數比你<b>高 3 顆以上</b>，相剋無效、改比星數 → 由高星方取勝。（例：你出冷門 2★ 剋對方經典 5★，差 3★ → 反而算你輸。）</p>
 
     <h3>相生（連段充氣勢）· 經 ▸ 冷 ▸ 入 ▸ 經</h3>
     <p>宣告屬性接續上一手 → <em>充氣勢</em>（2 連 +1、3 連 +2，第 4 環起停、須斷開重鋪）。這條鏈是一個聽眾的進化史：</p>
@@ -564,6 +565,7 @@ let CFG = {
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
   qiMax:6,            // 氣勢槽滿 → 可發動品味輾壓
+  valueCrush:3,       // 數值輾壓翻盤：相剋方星數比被剋方低≥此值 → 相剋失效，改高星方純比星取勝
   qiCounter:2,        // 相剋勝充能（3→2：兩剋就輾壓循環太快，改三剋一輾）
   qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
   qiValue:1,          // 數值勝充能
@@ -581,7 +583,7 @@ let CFG = {
 // 後台設定覆寫（只覆寫數值欄，相剋/相生表等結構維持內建）
 (async()=>{
   try{ const s=await getDoc(doc(db,'gameConfig','battle')); if(s.exists()){ const d=s.data();
-    for(const k of ['startHp','qiCounter','qiCounterLoser','qiValue','qiValueLoser','qiTie','qiChain2','qiChain3','qiChainCap','valueDmg','ultimate','ultLoserQi'])
+    for(const k of ['startHp','qiCounter','qiCounterLoser','qiValue','qiValueLoser','qiTie','qiChain2','qiChain3','qiChainCap','valueDmg','ultimate','ultLoserQi','valueCrush'])
       if(typeof d[k]==='number') CFG[k]=d[k];
   } }catch(e){ /* 讀不到 → 用內建預設 */ }
 })();
@@ -1107,6 +1109,9 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
   // 霸權：被剋方為王牌 → 取消該相剋（落入純數值）
   if(pCounters && eCard.ace) pCounters=false;
   if(eCounters && pCard.ace) eCounters=false;
+  // 數值輾壓翻盤：相剋方星數比被剋方低 ≥valueCrush → 相剋失效，落入純比星（高星方贏）
+  if(pCounters && (eF - pF) >= CFG.valueCrush) pCounters=false;
+  if(eCounters && (pF - eF) >= CFG.valueCrush) eCounters=false;
 
   const r = { pdQi:0, edQi:0, dmgToP:0, dmgToE:0, kind:'tie', attr:null, by:null, pF, eF };
   if(pCounters){
