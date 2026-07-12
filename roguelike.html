@@ -808,9 +808,10 @@ function metaStoreKey(){ return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
 const keyOf = c => (c.artist+'|'+c.album).toLowerCase();
 function loadMeta(){
   let m; try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){}
-  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[] };
+  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[], relicsSeen:[] };
   m.talents = Object.assign({atk:0,def:0,qir:0}, m.talents||{});
   if(!Array.isArray(m.pending)) m.pending = [];
+  if(!Array.isArray(m.relicsSeen)) m.relicsSeen = [];   // 遺物圖鑑：歷來拿過的（跨趟累積、跟樂歷一起存）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -837,6 +838,7 @@ function mergeMeta(a,b){
     bestStreak:Math.max(a.bestStreak||0,b.bestStreak||0),
     collection:(hi.collection||[]).slice(),
     pending:(hi.pending||[]).slice(),
+    relicsSeen:[...new Set([...(a.relicsSeen||[]), ...(b.relicsSeen||[])])],   // 遺物圖鑑聯集
     lastLoadout: hi.lastLoadout || lo.lastLoadout || null,   // 同流派再戰的上次配置
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
@@ -1013,7 +1015,7 @@ function renderClassSelect(){
       ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲遺物）`:'🏆 解鎖項目已全數開啟'}
     </div>`;
   $app.innerHTML = topbarHTML() + `
-    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button></div>
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 遺物</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
     <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${unlockLine}
@@ -1277,6 +1279,9 @@ function startRun(){
 function grantRelic(id){
   if(RUN.relics.includes(id)) return;
   RUN.relics.push(id);
+  // 圖鑑點亮：拿過一次永久記錄（跨趟；跟樂歷一起存本機＋雲端）
+  if(!Array.isArray(META.relicsSeen)) META.relicsSeen=[];
+  if(!META.relicsSeen.includes(id)){ META.relicsSeen.push(id); saveMeta(); }
   const r=relicById(id);
   if(r && r.fx && r.fx.maxHp){ const p=RUN.maxHp; RUN.mods.maxHpAdd+=r.fx.maxHp; recomputeMaxHp(p); }
 }
@@ -2039,6 +2044,30 @@ function openRelicList(){
   document.body.appendChild(mask);
 }
 function closeRelicList(){ const m=document.getElementById('relicMask'); if(m) m.remove(); }
+// 遺物圖鑑（主畫面「遺物收藏」按鈕）：全部遺物列出，拿過的點亮、沒拿過的黑剪影＋？？？
+function openRelicDex(){
+  if(document.getElementById('relicDexMask')) return;
+  const seen=new Set(META.relicsSeen||[]);
+  const got=RELICS.filter(r=>seen.has(r.id)).length;
+  const mask=document.createElement('div'); mask.className='drawmask'; mask.id='relicDexMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left;max-height:82vh;overflow-y:auto">
+    <div class="lab">遺物收藏（${got}/${RELICS.length}）</div>
+    <div class="muted" style="font-size:10px;margin:2px 0 6px">每 5 場擊敗「傳說藏家」可獲遺物三選一；拿過一次就永久點亮。</div>
+    ${RELICS.map(r=>{
+      const tierTag=(r.tier||1)>1?` <span style="color:var(--gold);font-size:10px">· 進階</span>`:'';
+      return seen.has(r.id)
+        ? `<div class="relic-list-row"><div class="ric">${relicIconHTML(r,26)}</div>
+            <div><b style="font-size:12px">${r.name}</b>${tierTag}<div class="muted" style="font-size:10px">${r.desc}</div></div></div>`
+        : `<div class="relic-list-row" style="opacity:.55"><div class="ric"><span style="filter:brightness(0) opacity(.3);display:flex">${relicIconHTML(r,26)}</span></div>
+            <div><b style="font-size:12px">？？？</b>${tierTag}<div class="muted" style="font-size:10px">尚未取得</div></div></div>`;
+    }).join('')}
+    <div class="sp"></div>
+    <button class="btn primary" style="width:100%" onclick="closeRelicDex()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeRelicDex(); });
+  document.body.appendChild(mask);
+}
+function closeRelicDex(){ const m=document.getElementById('relicDexMask'); if(m) m.remove(); }
 // 距下一位藏家還幾場（正在打藏家 → 0）
 function toNextBoss(){ const r=RUN.depth%5; return r===0 ? 0 : 5-r; }
 
