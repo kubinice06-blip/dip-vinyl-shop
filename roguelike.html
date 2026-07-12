@@ -257,15 +257,24 @@
   body.in-battle .player-zone{flex:none;}
   body.in-battle #app > .xpbar, body.in-battle #app > .row, body.in-battle #app > .side{flex:none;}
   body.in-battle .topbar{margin-bottom:6px;padding:6px 0;}
-  /* 手機緊湊化（同 battle.html）：縮手牌、藏文字圖例、牌桌靠上不裁切 */
+  /* 手機緊湊化：相剋圖放大易讀（圖例藏起、規則鈕在側），其餘垂直間距全面壓緊、
+     檯面卡略縮 → 手牌與底部攻防紀錄(log)都完整進畫面，不再被裁 */
   @media (max-width:600px){
-    body.in-battle .arena{justify-content:flex-start;}
+    .battle-pills{padding-top:6px;}
+    body.in-battle .arena{justify-content:flex-start;padding:8px 0 4px;}
     .slots{gap:12px;}
-    .cheat{gap:10px;margin:4px 0;}
+    .slot{max-width:150px;}
+    #eSlot{transform:translateY(-5px);} #pSlot{transform:translateY(5px);}
+    .etell{min-height:24px;margin:6px auto 0;padding:5px 8px;}
+    .side.enemy{padding-bottom:6px;}
+    .player-zone{padding:4px 0 2px;}
+    .cheat{gap:16px;margin:2px 0;}
     .cheat .legend{display:none;}
-    .relring{width:58px;}
+    .relring{width:86px;}
+    .hint{margin:2px 0 4px;}
+    .htrow{padding-bottom:2px;}
     .handtile{width:74px;height:74px;}
-    .log{height:44px;}
+    .log{height:44px;margin:6px 0 0;}
   }
 
   /* ===== 局末抽盤：與「直接來一張」同調的揭曉卡（封面＋介紹）===== */
