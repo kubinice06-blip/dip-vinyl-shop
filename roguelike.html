@@ -302,6 +302,31 @@
   .relic-list-row{display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:8px 0;text-align:left;}
   .relic-list-row .ric{flex:none;width:34px;height:34px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fafafa;}
 
+  /* ===== 像素小人（對手/我方頭像疊在牌桌角落，絕對定位不佔版面） ===== */
+  .spr{position:absolute;z-index:2;pointer-events:none;line-height:0;}
+  .spr svg{display:block;}
+  .spr .sprin{animation:sprBob 1.15s steps(1,end) infinite;}
+  .spr.p .sprin{animation-duration:1.4s;animation-delay:.3s;}
+  @keyframes sprBob{0%,100%{transform:translateY(0);}50%{transform:translateY(-2px);}}
+  .spr.e.atk{animation:sprAtkE .5s steps(3,end);}
+  .spr.p.atk{animation:sprAtkP .5s steps(3,end);}
+  @keyframes sprAtkE{0%{transform:translate(0,0);}35%{transform:translate(10px,12px);}70%{transform:translate(2px,3px);}100%{transform:translate(0,0);}}
+  @keyframes sprAtkP{0%{transform:translate(0,0);}35%{transform:translate(-10px,-12px);}70%{transform:translate(-2px,-3px);}100%{transform:translate(0,0);}}
+  .spr.hurt{animation:sprHurt .55s steps(2,end);}
+  @keyframes sprHurt{0%,100%{transform:translateX(0);filter:none;}20%{transform:translateX(-4px);filter:sepia(1) saturate(9) hue-rotate(-38deg);}45%{transform:translateX(4px);}70%{transform:translateX(-2px);filter:sepia(1) saturate(9) hue-rotate(-38deg);}}
+  .spr.warn{animation:sprWarn .9s steps(2,end) infinite;}
+  @keyframes sprWarn{0%,100%{filter:drop-shadow(0 0 2px rgba(184,134,11,.5));}50%{filter:drop-shadow(0 0 7px rgba(184,134,11,1));}}
+  .spr.charged{filter:drop-shadow(0 0 4px rgba(184,134,11,.85));}
+  .spr.ko{animation:sprKo .7s steps(4,end) forwards;}
+  @keyframes sprKo{0%{transform:rotate(0deg) translateY(0);opacity:1;}100%{transform:rotate(86deg) translateY(9px);opacity:.25;}}
+  /* 出牌飛行卡：fixed 覆蓋層，動畫完就移除，不佔版面 */
+  .flycard{position:fixed;z-index:30;pointer-events:none;border:1px solid var(--black);background:#fff;overflow:hidden;transform-origin:top left;transition:transform .3s cubic-bezier(.25,.8,.3,1);box-shadow:0 8px 22px rgba(0,0,0,.25);}
+  .flycard>i{position:absolute;inset:0;background-size:cover;background-position:center;font-style:normal;}
+  .flycard>i.noimg{display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#444;text-align:center;padding:4px;background:repeating-linear-gradient(45deg,#fff,#fff 4px,#f3f3f3 4px,#f3f3f3 8px);}
+  /* 轉動的像素黑膠（勝利畫面等） */
+  .pixicon.pixspin{animation:pixSpin 1.6s steps(8) infinite;vertical-align:-4px;}
+  @keyframes pixSpin{100%{transform:rotate(360deg);}}
+
   /* ===== 傳說藏家開場（全屏蓋章式動畫＋震屏） ===== */
   @keyframes bossMaskIn{0%{opacity:0;}100%{opacity:1;}}
   @keyframes bossStamp{0%{transform:scale(3);opacity:0;}55%{transform:scale(.92);opacity:1;}75%{transform:scale(1.06);}100%{transform:scale(1);}}
@@ -753,7 +778,7 @@ function relicFx(key){ let n=0; for(const r of ownedRelics()){ const v=r.fx&&r.f
 function isBossDepth(d){ return d>0 && d%5===0; }
 
 // ---------- 像素風遺物圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
-const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e'};
+const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c'};
 const PIX_ICONS = {
   stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
   sleeve:['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
@@ -773,13 +798,137 @@ const PIX_ICONS = {
   firstpress:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkggggkkk.','.kkkggggkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
   column:['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
 };
+// 通用像素圖轉 SVG（任意寬高的格子字串；遺物 12×12、小人 16×16 都走這裡）
+function pixArtHTML(rows, size, cls){
+  const w=rows[0].length, h=rows.length;
+  let rects='';
+  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
+  return `<svg class="pixicon ${cls||''}" width="${size}" height="${Math.round(size*h/w)}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
+}
 function relicIconHTML(r, size){
   size = size||22;
   const rows = r && PIX_ICONS[r.icon];
   if(!rows) return `<span style="font-size:${Math.max(10,size-8)}px;line-height:1">${(r&&r.icon)||'🎁'}</span>`;
-  let rects='';
-  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
-  return `<svg class="pixicon" width="${size}" height="${size}" viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
+  return pixArtHTML(rows, size);
+}
+
+// ---------- 像素小人（16×16 手刻：對手 8 階＋藏家＋三流派；動畫走 CSS class） ----------
+// 身體模板：T=上衣、L=下身（組裝時換色），s=皮膚、k=鞋
+const SPR_BODY = [
+  '....TTTTTTTT....',
+  '...TTTTTTTTTT...',
+  '...sTTTTTTTTs...',
+  '...sTTTTTTTTs...',
+  '....TTTTTTTT....',
+  '....LLLLLLLL....',
+  '....LLL..LLL....',
+  '....kkk..kkk....',
+  '................',
+];
+function sprRows(head, shirt, pants, patch){
+  const rows = head.concat(SPR_BODY.map(r=>r.replace(/T/g,shirt).replace(/L/g,pants)));
+  if(patch) Object.keys(patch).forEach(i=>{ rows[+i]=patch[i]; });
+  return rows;
+}
+const SPR = {
+  // 對手（依場次深度 0~7 階：小白→之神）
+  e0: sprRows([   // 音樂小白：耳機
+    '.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....',
+  ],'w','b'),
+  e1: sprRows([   // 文青同好：毛帽＋圍巾
+    '................','.....nnnnnn.....','....nnnnnnnn....','....nssssssn....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'e','k',{7:'....rrrrrrrr....'}),
+  e2: sprRows([   // 社團學長：棒球帽
+    '................','.....bbbbbb.....','....bbbbbbbbbb..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'w','k'),
+  e3: sprRows([   // 資深樂評：貝雷帽＋眼鏡
+    '................','......pppp......','....pppppppp....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....',
+  ],'e','k'),
+  e4: sprRows([   // 二手店老闆：光頭鬍子＋圍裙
+    '................','................','.....ssssss.....','....ssssssss....','....ssksskss....','....sdssssds....','.....dddddd.....',
+  ],'w','d',{8:'...wggggggggw...',9:'...sggggggggs...',10:'...sggggggggs...',11:'....gggggggg....'}),
+  e5: sprRows([   // 地下廠牌主理人：長髮全黑
+    '................','.....kkkkkk.....','....kkkkkkkk....','...kksssssskk...','...kksksskskk...','...kssssssssk...','.....ssssss.....',
+  ],'k','k'),
+  e6: sprRows([   // 品味行家：紳士帽
+    '................','.....oooooo.....','.....oooooo.....','...oooooooooo...','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'p','k'),
+  e7: sprRows([   // 品味之神：皇冠＋長袍
+    '....y.y..y.y....','....yyyyyyyy....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'p','p'),
+  boss: sprRows([ // 傳說藏家：高禮帽＋單片眼鏡＋西裝領帶
+    '.....kkkkkk.....','.....kkkkkk.....','.....kkkkkk.....','...kkkkkkkkkk...','....ssssssss....','....sskssyys....','.....ssssss.....',
+  ],'k','k',{7:'....kkwrrwkk....',8:'...kkkwrrwkkk...'}),
+  // 我方三流派（key 對齊 CLASSES）
+  guard: sprRows([   // 守舊派：整齊西裝頭＋藍毛衣
+    '................','.....kkkkkk.....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'b','k'),
+  digger: sprRows([  // 挖掘派：反戴帽＋綠帽 T
+    '................','.....nnnnnn.....','..nnnnnnnnnn....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'n','d'),
+  heretic: sprRows([ // 異端派：刺蝟頭＋紅外套
+    '....k.k..k.k....','....kkkkkkkk....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'r','k'),
+};
+// 碎裂唱片（死亡結算用：黑膠裂一道白縫）
+SPR.brokenrec = [
+  '............','...kk.kkk...','..kkk.kkkk..','.kkkk.kkkkk.','.kkkkg.kkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkk.gkkkk.','.kkkk.kkkkk.','..kkk.kkkk..','...kkkkkk...','............',
+];
+function enemySprKey(){ return (G&&G.E&&G.E.boss) ? 'boss' : ('e'+Math.min(7, Math.floor((RUN?RUN.depth:0)/2))); }
+
+// ---------- 小人掛載/定位/動畫（絕對定位疊在牌桌卡位角落，不佔版面） ----------
+const SPR_W = 32;
+function mountSprites(){
+  const slots=document.querySelector('#app .slots'); if(!slots||!G) return;
+  let se=document.getElementById('sprE');
+  if(!se){ se=document.createElement('div'); se.id='sprE'; se.className='spr e';
+    se.innerHTML=`<div class="sprin">${pixArtHTML(SPR[enemySprKey()]||SPR.e0, SPR_W)}</div>`; slots.appendChild(se); }
+  let sp=document.getElementById('sprP');
+  if(!sp){ sp=document.createElement('div'); sp.id='sprP'; sp.className='spr p';
+    sp.innerHTML=`<div class="sprin">${pixArtHTML(SPR[RUN&&RUN.classKey]||SPR.guard, SPR_W)}</div>`; slots.appendChild(sp); }
+  placeSprites();
+  se.classList.toggle('warn', !!(G.pendingE && G.pendingE.ult && !G.over));
+  sp.classList.toggle('charged', G.p.qi>=CFG.qiMax);
+}
+function placeSprites(){
+  const slots=document.querySelector('#app .slots');
+  const es=document.getElementById('eSlot'), ps=document.getElementById('pSlot');
+  const se=document.getElementById('sprE'), sp=document.getElementById('sprP');
+  if(!slots||!es||!ps||!se||!sp) return;
+  const sr=slots.getBoundingClientRect(), er=es.getBoundingClientRect(), pr=ps.getBoundingClientRect();
+  // 對手站對手卡位「左上角內側」（避開左上 ace 角標高度）；我方站我方卡位「右下角內側」（左下是牌型角標）
+  se.style.left=(er.left-sr.left+3)+'px';  se.style.top=(er.top-sr.top+16)+'px';
+  sp.style.left=(pr.right-sr.left-3-SPR_W)+'px'; sp.style.top=(pr.bottom-sr.top-3-SPR_W)+'px';
+}
+window.addEventListener('resize', placeSprites);
+function spriteFx(side, cls, ms){
+  const el=document.getElementById(side==='e'?'sprE':'sprP'); if(!el) return;
+  el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls);
+  if(ms) setTimeout(()=>{ el.classList.remove(cls); }, ms);
+}
+
+// ---------- 出牌飛行動畫（fixed 覆蓋層：手牌飛上桌、敵卡從小人甩出） ----------
+function _flyGhost(card, r0, r1){
+  const g=document.createElement('div'); g.className='flycard';
+  g.style.left=r0.left+'px'; g.style.top=r0.top+'px'; g.style.width=r0.width+'px'; g.style.height=r0.height+'px';
+  g.innerHTML = card.coverUrl
+    ? `<i style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></i>`
+    : `<i class="noimg">${card.album}</i>`;
+  document.body.appendChild(g);
+  requestAnimationFrame(()=>{ g.style.transform=`translate(${r1.left-r0.left}px,${r1.top-r0.top}px) scale(${r1.width/r0.width},${r1.height/r0.height})`; });
+  return g;
+}
+async function flyCards(tileR, pCard, eCard){
+  const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
+  if(!ps||!es) return;
+  const pr=ps.getBoundingClientRect(), er=es.getBoundingClientRect();
+  const ghosts=[];
+  if(tileR) ghosts.push(_flyGhost(pCard, tileR, pr));
+  const seEl=document.getElementById('sprE');
+  const s0=seEl?seEl.getBoundingClientRect():null;
+  ghosts.push(_flyGhost(eCard, s0?{left:s0.left,top:s0.top,width:40,height:40}:{left:er.left+er.width/2,top:er.top-30,width:40,height:40}, er));
+  await sleep(320);
+  ghosts.forEach(g=>g.remove());
 }
 
 // ---------- 樂歷解鎖階梯（升級除了天賦點，還解鎖具體內容；主畫面顯示下一級解什麼）----------
@@ -1025,7 +1174,7 @@ function renderClassSelect(){
   list.innerHTML = Object.entries(CLASSES).map(([k,c])=>{
     const s=c.stats;
     return `<div class="cls">
-      <h3>${c.name} <span class="tag">${c.tag}</span></h3>
+      <h3>${pixArtHTML(SPR[k]||SPR.guard, 20)} ${c.name} <span class="tag">${c.tag}</span></h3>
       <div class="muted">${c.desc}</div>
       <div class="muted" style="color:var(--gold);margin:4px 0 2px">★ 派系專長：${c.affDesc||''}</div>
       <div class="statline">
@@ -1367,7 +1516,7 @@ function bossIntro(){
   const old=document.getElementById('bossMask'); if(old) old.remove();
   const m=document.createElement('div'); m.className='bossmask'; m.id='bossMask';
   m.innerHTML=`<div class="bline"></div>
-    <div class="bemoji">🎩</div>
+    <div class="bemoji">${pixArtHTML(SPR.boss, 88)}</div>
     <div class="btitle">傳說藏家</div>
     <div class="bsub">${pick(BOSS_LINES)}</div>
     <div class="bdepth">第 ${RUN.depth} 場 · 里程碑戰 — 打贏掉遺物</div>
@@ -1660,6 +1809,8 @@ function renderBattle(){
     </div>`;
   renderHand();
   paintBoardSlots();
+  mountSprites();
+  requestAnimationFrame(placeSprites);   // 字型/捲軸就緒後再校一次位
 }
 // 上一手雙方的牌留在檯面（變灰、可點看介紹、勝負標記照舊）——同 battle.html
 function paintBoardSlots(){
@@ -1757,10 +1908,16 @@ async function play(uid, pAttr){
   const pAttrShow = pUlt?'__ult__':pSac?'__sac__':pAttr, eAttrShow = eUlt?'__ult__':eAttr;
   const tp=document.getElementById('tilePop'); if(tp) tp.classList.remove('show');
   document.getElementById('tell').innerHTML='';
+  // 出牌動畫：先記手牌位置 → 收手牌 → 兩張卡飛上桌（我方從手牌、敵方從小人位置）→ 小人撲擊
+  const _tileEl=document.querySelector(`.handtile[data-uid="${uid}"]`);
+  const _tileR=_tileEl?_tileEl.getBoundingClientRect():null;
+  renderHand();
+  spriteFx('e','atk',520);
+  await flyCards(_tileR, pCard, eCard);
+  spriteFx('p','atk',520);
   const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
   ps.className='slot filled'; ps.innerHTML=boardCardHTML(pCard,pAttrShow); lazyCover('pSlot',pCard,pAttrShow);
   es.className='slot filled'; es.innerHTML=boardCardHTML(eCard,eAttrShow); lazyCover('eSlot',eCard,eAttrShow);
-  renderHand();
   if(feinted && G.pCounteredTellLast){ callout('<span class="dmg">對手虛晃一招！反咬你的相剋</span>'); pushLog('對手虛晃 → 反咬你的相剋','hit'); await sleep(650); }
 
   const st=G.p.stats, est=G.e.stats;
@@ -1847,6 +2004,8 @@ async function play(uid, pAttr){
 
   // 結算畫面（勝負標記照這一手的掉血差，不看總血量）
   markResult(pHp0,eHp0);
+  if(G.p.hp<pHp0) spriteFx('p','hurt',600);
+  if(G.e.hp<eHp0) spriteFx('e','hurt',600);
   // 記住這一手雙方的牌＋牌型＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
   G.pShow=pCard; G.eShow=eCard; G.pShowAttr=pAttrShow; G.eShowAttr=eAttrShow;
   G.pHist.push({card:pCard, attr:pAttrShow}); G.eHist.push({card:eCard, attr:eAttrShow});
@@ -1860,7 +2019,12 @@ async function play(uid, pAttr){
   refreshFighters();
   await sleep(900);
 
-  // 勝負
+  // 勝負（小人先倒地再切結算畫面）
+  if(G.e.hp<=0 || G.p.hp<=0){
+    if(G.e.hp<=0) spriteFx('e','ko');
+    if(G.p.hp<=0) spriteFx('p','ko');
+    await sleep(650);
+  }
   if(G.e.hp<=0 && G.p.hp<=0){ G.p.hp>=G.e.hp ? winFight() : loseFight(); return; }
   if(G.e.hp<=0){ winFight(); return; }
   if(G.p.hp<=0){ loseFight(); return; }
@@ -2076,7 +2240,7 @@ function renderWinContinue(){
   const need=runXpNeed();
   const tb=toNextBoss();
   $app.innerHTML = topbarHTML() + `
-    <h1 class="good" style="color:var(--win)">第 ${RUN.depth} 場 — 勝！</h1>
+    <h1 class="good" style="color:var(--win)">${pixArtHTML(PIX_ICONS.heavy180, 20, 'pixspin')} 第 ${RUN.depth} 場 — 勝！</h1>
     <div class="muted" style="margin:2px 0 8px">連勝 ${RUN.streak}・回血至 HP ${RUN.hp}/${RUN.maxHp}・牌組 ${RUN.deck.length} 張</div>
     <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉遺物）</div>
     ${relicBarHTML()}
@@ -2388,6 +2552,7 @@ function renderDeath(){
   const relicNote = RUN.relics.length ? `・遺物 ${RUN.relics.length} 件` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="death">
+      <div style="margin-bottom:6px">${pixArtHTML(SPR.brokenrec, 44)}</div>
       <div class="muted">試煉終結</div>
       <div class="big">第 ${RUN.depth} 場</div>
       <div class="muted">連勝 ${RUN.streak}・流派 ${CLASSES[RUN.classKey].name}・局內 Lv.${RUN.runLevel}${relicNote}</div>
