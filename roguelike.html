@@ -863,13 +863,18 @@ function isEquipped(id){ return !!(RUN&&RUN.equipped&&RUN.equipped.includes(id))
 function equippedRelics(){ return (RUN&&RUN.equipped||[]).map(relicById).filter(Boolean); }
 function benchedRelics(){ return (RUN&&RUN.relics||[]).filter(id=>!isEquipped(id)).map(relicById).filter(Boolean); }
 // 出戰中若在庫存但沒滿出戰欄 → 補位；相容舊存檔（無 equipped/relicWear 欄）
-function ensureRelicState(){
+function ensureRelicState(autofill){
   if(!RUN) return;
   if(!RUN.relicWear) RUN.relicWear={};
-  if(!Array.isArray(RUN.equipped)) RUN.equipped=[];
+  const legacy = !Array.isArray(RUN.equipped);   // 舊存檔沒有 equipped 欄 → 需首次補位
+  if(legacy) RUN.equipped=[];
   RUN.equipped = RUN.equipped.filter(id=>RUN.relics.includes(id));
   for(const id of RUN.relics){ if(RUN.relicWear[id]==null) RUN.relicWear[id]=0; }
-  for(const id of RUN.relics){ if(RUN.equipped.length>=wearSlots()) break; if(!isEquipped(id)) RUN.equipped.push(id); }
+  // 自動補位只在 run 初始化或舊存檔遷移時做；平時（開整備面板／畫出戰欄）不補，
+  // 否則玩家手動「卸下」會被立刻補回去（只閃一下、卸不掉）。
+  if(autofill || legacy){
+    for(const id of RUN.relics){ if(RUN.equipped.length>=wearSlots()) break; if(!isEquipped(id)) RUN.equipped.push(id); }
+  }
 }
 // fx 強度（越強越脆）：整數效果取絕對值加總，百分比類（feintDown/xpBoost）算 1
 function relicPower(r){ let p=0; const fx=r&&r.fx||{}; for(const k in fx){ p += (k==='feintDown'||k==='xpBoost')?1:Math.abs(fx[k]); } return Math.max(1,p); }
