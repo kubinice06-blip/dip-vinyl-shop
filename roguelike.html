@@ -892,6 +892,8 @@ function mountSprites(){
   let sp=document.getElementById('sprP');
   if(!sp){ sp=document.createElement('div'); sp.id='sprP'; sp.className='spr p';
     sp.innerHTML=`<div class="sprin">${pixArtHTML(SPR[RUN&&RUN.classKey]||SPR.guard, SPR_W)}</div>`; app.appendChild(sp); }
+  ['stkE','stkP'].forEach(id=>{ if(!document.getElementById(id)){ const d=document.createElement('div'); d.id=id; d.className='spr'; app.appendChild(d); } });
+  updateStacks();
   placeSprites();
   se.classList.toggle('warn', !!(G.pendingE && G.pendingE.ult && !G.over));
   sp.classList.toggle('charged', G.p.qi>=CFG.qiMax);
@@ -903,11 +905,43 @@ function placeSprites(){
   const se=document.getElementById('sprE'), sp=document.getElementById('sprP');
   if(!app||!tell||!np||!se||!sp) return;
   const ar=app.getBoundingClientRect(), tr=tell.getBoundingClientRect(), nr=np.getBoundingClientRect();
-  // 對手站「氣場提示列」左側空位、我方站「你」名牌列右端（連段移左後讓出的位置）：都在牌桌外，不蓋封面
-  se.style.left=Math.max(2, tr.left-ar.left-SPR_W-8)+'px';
-  se.style.top =(tr.bottom-ar.top-SPR_W-2)+'px';
+  // 對手站左上角（氣場提示列那排的最左邊，頂端貼齊提示框、不壓到上方氣勢條）；
+  // 我方站「你」名牌列右端（連段移左後讓出的位置）：都在牌桌外，不蓋封面
+  se.style.left=(nr.left-ar.left)+'px';
+  se.style.top =(tr.top-ar.top+1)+'px';
   sp.style.left=(nr.right-ar.left-SPR_W)+'px';
   sp.style.top =(nr.bottom-ar.top-SPR_W)+'px';
+  placeStacks();
+}
+// ---------- 腳邊唱片堆：手牌有幾張就疊幾張專輯（丟牌少一張、抽牌補回來） ----------
+const STACK_COLS=['r','b','n','p','o','y'];
+function recStackRows(n){
+  n=Math.max(0,Math.min(8,n));       // 顯示上限 8 張，再多也疊 8
+  const rows=[];
+  for(let i=n-1;i>=0;i--){           // 由上往下畫；底部第 0 張，左右交錯有堆疊感
+    const c=STACK_COLS[i%STACK_COLS.length], j=i%2;
+    rows.push(j? '..'+c.repeat(12) : c.repeat(12)+'..');
+    rows.push(j? '..'+'k'.repeat(12) : 'k'.repeat(12)+'..');
+  }
+  return rows;
+}
+function updateStacks(){
+  const me=document.getElementById('stkE'), mp=document.getElementById('stkP');
+  if(!me||!mp||!G) return;
+  const re=recStackRows(G.e.hand.length), rp=recStackRows(G.p.hand.length);
+  me.innerHTML = re.length? pixArtHTML(re,28) : '';
+  mp.innerHTML = rp.length? pixArtHTML(rp,28) : '';
+  placeStacks();
+}
+function placeStacks(){
+  const app=document.getElementById('app');
+  const se=document.getElementById('sprE'), sp=document.getElementById('sprP');
+  const me=document.getElementById('stkE'), mp=document.getElementById('stkP');
+  if(!app||!se||!sp||!me||!mp) return;
+  const ar=app.getBoundingClientRect(), s1=se.getBoundingClientRect(), s2=sp.getBoundingClientRect();
+  // 疊底對齊小人腳底：對手堆在小人右邊、我方堆在小人左邊
+  me.style.left=(s1.right-ar.left+2)+'px'; me.style.top=(s1.bottom-ar.top-me.offsetHeight)+'px';
+  mp.style.left=(s2.left-ar.left-2-mp.offsetWidth)+'px'; mp.style.top=(s2.bottom-ar.top-mp.offsetHeight)+'px';
 }
 window.addEventListener('resize', placeSprites);
 function spriteFx(side, cls, ms){
@@ -922,7 +956,7 @@ function _flyGhost(card, r0, r1){
   g.style.left=r0.left+'px'; g.style.top=r0.top+'px'; g.style.width=r0.width+'px'; g.style.height=r0.height+'px';
   g.innerHTML = card.coverUrl
     ? `<i style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></i>`
-    : `<i class="noimg">${card.album}</i>`;
+    : `<i class="noimg">${pixArtHTML(PIX_ICONS.heavy180, 34)}</i>`;  // 沒封面時飛一張黑膠，不再是純文字怪卡
   document.body.appendChild(g);
   requestAnimationFrame(()=>{ g.style.transform=`translate(${r1.left-r0.left}px,${r1.top-r0.top}px) scale(${r1.width/r0.width},${r1.height/r0.height})`; });
   return g;
@@ -1844,6 +1878,8 @@ function renderHand(){
   // 即時補封面
   G.p.hand.forEach(c=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
     const cov=el.querySelector(`.handtile[data-uid="${c.uid}"] .ht-cover`); if(cov){ cov.classList.remove('ht-noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+  // 敵方手牌封面也先暖好：出牌飛行動畫才有封面可飛（否則飛上桌是一張純文字卡）
+  if(G.e&&G.e.hand) G.e.hand.forEach(c=>{ if(!c.coverUrl) ensureCover(c); });
   renderTilePop();
 }
 function selectCard(uid){ if(G.busy||G.over) return; _sel = (_sel===uid?null:uid); renderHand();
@@ -1921,6 +1957,7 @@ async function play(uid, pAttr){
   const _tileEl=document.querySelector(`.handtile[data-uid="${uid}"]`);
   const _tileR=_tileEl?_tileEl.getBoundingClientRect():null;
   renderHand();
+  updateStacks();   // 雙方各丟一張 → 腳邊唱片堆即時少一張（抽牌後由 mountSprites 補回）
   spriteFx('e','atk',520);
   await flyCards(_tileR, pCard, eCard);
   spriteFx('p','atk',520);
