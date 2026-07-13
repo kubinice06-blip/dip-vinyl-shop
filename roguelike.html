@@ -274,6 +274,8 @@
     .player-zone{padding:4px 0 2px;}
     /* 相剋圈縮小、整塊上提：讓頂點「經」跟右側「攻 防 勢」落在同一條水平線 */
     .cheat{gap:16px;margin:-24px 0 0;}
+    .cheat.has-relics{gap:10px;margin:2px 0 0;justify-content:flex-start;}   /* 帶發燒配件時不上拉：左＝配件欄、右＝相剋圈規則，不擠不歪 */
+    .cheat.has-relics .relring{margin-left:auto;}
     .cheat .legend{display:none;}
     .relring{width:64px;}
     .hint{margin:2px 0 4px;}
@@ -295,22 +297,23 @@
   .drawcard .intro{font-size:12px;line-height:1.95;text-align:left;border:1px solid var(--line);padding:14px;margin-bottom:16px;min-height:64px;color:#333;}
   .drawcard .intro.wait{color:var(--gray);}
 
-  /* ===== 遺物（像素風圖示、戰鬥列、三選一） ===== */
+  /* ===== 發燒配件（像素風圖示、戰鬥列、三選一） ===== */
   .pixicon{display:inline-block;vertical-align:middle;image-rendering:pixelated;}
-  /* 橫向出戰遺物欄（戰鬥列左側＋勝利畫面）：像素圖＋4格耗損條 */
-  .relicbar{display:inline-flex;gap:5px;align-items:center;background:#1c1c24;border-radius:9px;padding:4px 6px;flex:none;}
-  .relicbar .rlab{font-size:8px;color:#8a8a99;writing-mode:vertical-rl;letter-spacing:.12em;}
+  /* 橫向出戰發燒配件欄（戰鬥列左側＋勝利畫面）：白底細框方角、同 .pill 風格；像素圖＋4格耗損條 */
+  .relicbar{display:inline-flex;gap:6px;align-items:center;background:#fff;border:1px solid var(--line);padding:3px 6px;flex:none;}
   .relicbar .rcell{display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:transparent;cursor:pointer;padding:0;}
-  .relicbar .rcell .ric{position:relative;width:26px;height:26px;border:1px solid #44444f;border-radius:5px;background:#2b2b36;display:flex;align-items:center;justify-content:center;}
-  .relicbar .rcell.warn .ric{border-color:#c11628;animation:relicPulse 1s ease-in-out infinite;}
-  .relicbar .rcell.broke .ric{filter:grayscale(1) brightness(.55);border-color:#333;}
-  .relicbar .rcell.broke .ric:after{content:"✕";position:absolute;color:#c11628;font-size:14px;font-weight:700;}
+  .relicbar .rcell .ric{position:relative;width:24px;height:24px;border:1px solid var(--line);background:#fafafa;display:flex;align-items:center;justify-content:center;}
+  .relicbar .rcell:hover .ric{border-color:var(--gold);}
+  .relicbar .rcell.warn .ric{border-color:var(--dmg);animation:relicPulse 1s ease-in-out infinite;}
+  .relicbar .rcell.broke .ric{border-color:var(--line);}
+  .relicbar .rcell.broke .ric .pixicon{filter:grayscale(1) opacity(.25);}
+  .relicbar .rcell.broke .ric:after{content:"✕";position:absolute;color:var(--dmg);font-size:13px;font-weight:700;}
   .relicbar .wbar{display:flex;gap:2px;}
-  .relicbar .wpip{width:5px;height:4px;border-radius:1px;}
-  .relicbar .rempty{width:26px;height:26px;border:1px dashed #44444f;border-radius:5px;color:#66666f;display:flex;align-items:center;justify-content:center;font-size:13px;}
-  @keyframes relicPulse{0%,100%{box-shadow:0 0 0 0 rgba(193,22,40,0)}50%{box-shadow:0 0 0 2px rgba(193,22,40,.55)}}
+  .relicbar .wpip{width:5px;height:3px;}
+  .relicbar .rempty{width:24px;height:24px;border:1px dashed var(--line);color:var(--gray);display:flex;align-items:center;justify-content:center;font-size:12px;}
+  @keyframes relicPulse{0%,100%{box-shadow:0 0 0 0 rgba(193,22,40,0)}50%{box-shadow:0 0 0 2px rgba(193,22,40,.4)}}
   /* 耗損長條（詳情彈窗／整備面板） */
-  .wbarwide{height:6px;background:#e6e2d6;border-radius:3px;overflow:hidden;}
+  .wbarwide{height:5px;background:#eee;overflow:hidden;}
   .wbarwide i{display:block;height:100%;}
   .relic-card{border:1px solid var(--line);background:#fff;padding:12px;margin:10px 0;cursor:pointer;display:flex;gap:12px;align-items:center;transition:border-color .15s,transform .15s;}
   .relic-card:hover{border-color:var(--gold);transform:translateY(-2px);}
@@ -763,7 +766,7 @@ let CLASSES = {
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
 const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
 
-// ---------- 遺物（每 5 場擊敗傳說藏家掉落三選一；效果純資料、後台可覆寫）----------
+// ---------- 發燒配件（每 5 場擊敗傳說藏家掉落三選一；效果純資料、後台可覆寫）----------
 // fx 效果鍵（程式已掛勾）：counterQi 相剋+氣勢 / startQi 開局氣勢 / winHeal 勝利多回血 /
 //   valueDmg 比星勝+傷 / counterGuard 被剋減傷 / aceQi 出王牌+氣勢 / ultDmg 輾壓+傷 /
 //   maxHp 最大HP(取得即回) / extraDraw 起手多抽 / drawTwo 局末抽盤二選一 / firstHitHalf 首擊減半 /
@@ -791,9 +794,9 @@ const DEFAULT_RELICS = [
 let RELICS = DEFAULT_RELICS;
 function relicById(id){ return RELICS.find(r=>r.id===id) || null; }
 
-// ---------- 遺物耗損／品相系統（黑膠器材會老：只有「出戰」的會磨，庫存不耗）----------
+// ---------- 發燒配件耗損／品相系統（黑膠器材會老：只有「出戰」的會磨，庫存不耗）----------
 // 品相由「耗損值 0→100」決定；mul 作用在 fx 值上（無條件進位、最低 1，直到報廢歸零）。
-// 每場每件出戰遺物磨損量 ＝ (基礎 + 該場觸發過再加成) × 類別係數 × tier係數 × 越強越脆係數。
+// 每場每件出戰發燒配件磨損量 ＝ (基礎 + 該場觸發過再加成) × 類別係數 × tier係數 × 越強越脆係數。
 let WEAR = {
   enabled:true,
   slots:3,            // 出戰欄格數（同時只有這幾件生效與耗損）
@@ -801,8 +804,8 @@ let WEAR = {
   usedBump:7,         // 該場 fx 實際觸發過再 +這麼多（唱得越多磨越兇）
   swanAt:82,          // 進入此耗損 → 「迴光一轉」：搖搖欲墜期 fx 翻倍（黑膠最後一轉）
   tuneAmt:30,         // 保養一件：−耗損（整備面板，每場一次）
-  cleanerHeal:8,      // 洗碟水在出戰 → 每場勝利替所有出戰遺物 −耗損
-  recycleHeal:3,      // 回收報廢遺物 → +HP
+  cleanerHeal:8,      // 洗碟水在出戰 → 每場勝利替所有出戰發燒配件 −耗損
+  recycleHeal:3,      // 回收報廢發燒配件 → +HP
   powerBase:0.15, powerCap:2.2,               // 越強越脆：fx 強度→磨損加成
   tierMul:{1:1.0, 2:0.6},                     // tier2 更耐用
   grades:[            // 由輕到重；到達 max 以下即該階
@@ -819,7 +822,7 @@ let WEAR = {
     accessory: {mul:0.6, zh:'配件／保護'},
   },
 };
-// 遺物 → 類別（後台自訂遺物可帶 r.cat 覆寫；查無則當配件）
+// 發燒配件 → 類別（後台自訂發燒配件可帶 r.cat 覆寫；查無則當配件）
 const RELIC_CAT = {
   stylus:'stylus', gauge:'stylus',
   cleaner:'consumable',
@@ -860,7 +863,7 @@ function wearPerFight(r, fired){
   const pw=Math.min(WEAR.powerCap, 1+(relicPower(r)-1)*WEAR.powerBase);
   return (WEAR.perFight + (fired?WEAR.usedBump:0)) * cat.mul * tv * pw;
 }
-// 出戰遺物的 fx（乘品相係數；搖搖欲墜期迴光一轉翻倍；最低 1，報廢＝0）
+// 出戰發燒配件的 fx（乘品相係數；搖搖欲墜期迴光一轉翻倍；最低 1，報廢＝0）
 function relicFx(key){
   let n=0; const swan=G&&G._swan;
   for(const r of equippedRelics()){
@@ -872,13 +875,13 @@ function relicFx(key){
   }
   return n;
 }
-// 出戰遺物提供的最大 HP 加成（隨品相下修 → 重量盤翹曲會掉血上限）
+// 出戰發燒配件提供的最大 HP 加成（隨品相下修 → 重量盤翹曲會掉血上限）
 function relicMaxHp(){ let n=0; for(const r of equippedRelics()){ const v=r.fx&&r.fx.maxHp; if(!v) continue; const m=gradeMul(r.id); if(m>0) n+=Math.max(1,Math.ceil(v*m)); } return n; }
 // 記錄本場哪些 fx 真的觸發過（給耗損加成用）
 function fireRelic(){ if(!G) return; if(!G._fired) G._fired=new Set(); for(let i=0;i<arguments.length;i++) G._fired.add(arguments[i]); }
 function isBossDepth(d){ return d>0 && d%5===0; }
 
-// ---------- 像素風遺物圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
+// ---------- 像素風發燒配件圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
 const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c'};
 const PIX_ICONS = {
   stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
@@ -899,7 +902,7 @@ const PIX_ICONS = {
   firstpress:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkggggkkk.','.kkkggggkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
   column:['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
 };
-// 通用像素圖轉 SVG（任意寬高的格子字串；遺物 12×12、小人 16×16 都走這裡）
+// 通用像素圖轉 SVG（任意寬高的格子字串；發燒配件 12×12、小人 16×16 都走這裡）
 function pixArtHTML(rows, size, cls){
   const w=rows[0].length, h=rows.length;
   let rects='';
@@ -1073,13 +1076,13 @@ async function flyCards(tileR, pCard, eCard){
 // ---------- 樂歷解鎖階梯（升級除了天賦點，還解鎖具體內容；主畫面顯示下一級解什麼）----------
 const UNLOCKS = [
   {lv:2,  key:'aceRate',    label:'局末抽盤王牌機率提升'},
-  {lv:3,  key:'relicT2',    label:'進階遺物進池（神秘見本盤等）'},
+  {lv:3,  key:'relicT2',    label:'進階發燒配件進池（神秘見本盤等）'},
   {lv:4,  key:'junk4',      label:'起始雜牌 -1（牌組更精）'},
   {lv:5,  key:'seed6',      label:'種子格 +1（可挑 6 張開局）'},
   {lv:6,  key:'heal4',      label:'每場勝利回血 +1'},
   {lv:7,  key:'aceSeeds2',  label:'開局可帶 2 張王牌'},
-  {lv:8,  key:'relicPick4', label:'藏家遺物三選一 → 四選一'},
-  {lv:10, key:'startRelic', label:'開局自帶 1 件隨機遺物'},
+  {lv:8,  key:'relicPick4', label:'藏家發燒配件三選一 → 四選一'},
+  {lv:10, key:'startRelic', label:'開局自帶 1 件隨機發燒配件'},
 ];
 function hasUnlock(key){ const u=UNLOCKS.find(x=>x.key===key); return !!u && levelOf(META.xp)>=u.lv; }
 function nextUnlock(){ const lv=levelOf(META.xp); return UNLOCKS.find(x=>x.lv>lv) || null; }
@@ -1099,7 +1102,7 @@ function loadMeta(){
   if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[], relicsSeen:[] };
   m.talents = Object.assign({atk:0,def:0,qir:0}, m.talents||{});
   if(!Array.isArray(m.pending)) m.pending = [];
-  if(!Array.isArray(m.relicsSeen)) m.relicsSeen = [];   // 遺物圖鑑：歷來拿過的（跨趟累積、跟樂歷一起存）
+  if(!Array.isArray(m.relicsSeen)) m.relicsSeen = [];   // 發燒配件圖鑑：歷來拿過的（跨趟累積、跟樂歷一起存）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -1126,7 +1129,7 @@ function mergeMeta(a,b){
     bestStreak:Math.max(a.bestStreak||0,b.bestStreak||0),
     collection:(hi.collection||[]).slice(),
     pending:(hi.pending||[]).slice(),
-    relicsSeen:[...new Set([...(a.relicsSeen||[]), ...(b.relicsSeen||[])])],   // 遺物圖鑑聯集
+    relicsSeen:[...new Set([...(a.relicsSeen||[]), ...(b.relicsSeen||[])])],   // 發燒配件圖鑑聯集
     lastLoadout: hi.lastLoadout || lo.lastLoadout || null,   // 同流派再戰的上次配置
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
@@ -1300,10 +1303,10 @@ function renderClassSelect(){
   const unlockedNow = UNLOCKS.filter(u=>u.lv<=lv);
   const unlockLine = `<div class="muted" style="margin:2px 0 10px;font-size:10px;line-height:1.8">
       ${unlockedNow.length?`已解鎖：${unlockedNow.map(u=>u.label).join('・')}<br>`:''}
-      ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲遺物）`:'🏆 解鎖項目已全數開啟'}
+      ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲發燒配件）`:'🏆 解鎖項目已全數開啟'}
     </div>`;
   $app.innerHTML = topbarHTML() + `
-    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 遺物</button></div>
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 發燒配件</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
     <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${unlockLine}
@@ -1352,13 +1355,13 @@ function quickRestart(){
   if(!lo || !CLASSES[lo.classKey] || !Array.isArray(lo.seeds) || !lo.seeds.length) { renderClassSelect(); return; }
   initRun(lo.classKey);
   RUN.seedsPicked = lo.seeds.map(c=>({...c}));
-  // 沿用上次帶的遺物（過濾掉已不在圖鑑的），全新品相帶上場
+  // 沿用上次帶的發燒配件（過濾掉已不在圖鑑的），全新品相帶上場
   (lo.relics||[]).forEach(id=>{ if(relicById(id) && (META.relicsSeen||[]).includes(id)) grantRelic(id); });
   startRun();
 }
 function recomputeMaxHp(prevMax){
   RUN.maxHp = RUN.baseMaxHp + RUN.mods.maxHpAdd + relicMaxHp();
-  // 提升上限時同步補等量的現有血；上限下修（遺物磨損/卸下）則夾住現有血
+  // 提升上限時同步補等量的現有血；上限下修（發燒配件磨損/卸下）則夾住現有血
   const add = RUN.maxHp - (prevMax||RUN.maxHp);
   if(add>0) RUN.hp = Math.min(RUN.maxHp, RUN.hp + add);
   if(RUN.hp>RUN.maxHp) RUN.hp = RUN.maxHp;
@@ -1458,7 +1461,7 @@ function paintSeedScreen(){
     <div class="seedbar"><div class="inner">
       <span class="cnt">已選 <b id="seedCount">0</b>/${SM}</span>
       <div class="dots" id="seedDots">${'<i></i>'.repeat(SM)}</div>
-      <button class="btn primary" id="seedGo" disabled onclick="afterSeedSelect()">下一步：帶遺物 →</button>
+      <button class="btn primary" id="seedGo" disabled onclick="afterSeedSelect()">下一步：帶發燒配件 →</button>
     </div></div>`;
   const wrap=document.getElementById('shelf');
   wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
@@ -1542,12 +1545,12 @@ function makeJunk(){
   }));
 }
 
-// 選完種子 → 開戰前挑遺物帶上場（從已解鎖的圖鑑挑，最多出戰欄格數）
+// 選完種子 → 開戰前挑發燒配件帶上場（從已解鎖的圖鑑挑，最多出戰欄格數）
 let _loadoutPick=[];
 function afterSeedSelect(){
   if(RUN.seedsPicked.length<5 || RUN.seedsPicked.length>seedMax()) return;
   const unlocked=(META.relicsSeen||[]).map(relicById).filter(Boolean);
-  if(!unlocked.length){ startRun(); return; }   // 還沒解鎖任何遺物 → 直接開打
+  if(!unlocked.length){ startRun(); return; }   // 還沒解鎖任何發燒配件 → 直接開打
   _loadoutPick=[];
   renderRelicLoadout();
 }
@@ -1556,8 +1559,8 @@ function renderRelicLoadout(){
   const unlocked=(META.relicsSeen||[]).map(relicById).filter(Boolean);
   const cap=wearSlots();
   $app.innerHTML = topbarHTML() + `
-    <h1>帶哪些遺物上場？</h1>
-    <div class="muted" style="margin:4px 0 2px">從<b>已解鎖</b>的遺物挑最多 <b>${cap}</b> 件帶上場（整趟生效、會磨損；不選也行）。途中打贏「傳說藏家」還能撿到＋解鎖新遺物。</div>
+    <h1>帶哪些發燒配件上場？</h1>
+    <div class="muted" style="margin:4px 0 2px">從<b>已解鎖</b>的發燒配件挑最多 <b>${cap}</b> 件帶上場（整趟生效、會磨損；不選也行）。途中打贏「傳說藏家」還能撿到＋解鎖新發燒配件。</div>
     <div class="muted" style="margin:2px 0 8px;font-size:10px">點卡選入／取消。出戰中會磨損，庫存/未帶的不耗。</div>
     <div id="loadoutGrid">${unlocked.map(r=>`
       <div class="relic-card" id="lo_${r.id}" onclick="toggleLoadoutRelic('${r.id}')">
@@ -1590,7 +1593,7 @@ function updateLoadoutUI(){
   });
 }
 function confirmLoadout(){
-  // 把選的遺物灌進 run（全新品相），出戰欄＝選的（上限格數）
+  // 把選的發燒配件灌進 run（全新品相），出戰欄＝選的（上限格數）
   RUN.relics=[]; RUN.equipped=[]; RUN.relicWear={};
   _loadoutPick.slice(0,wearSlots()).forEach(id=>{ if(relicById(id)) grantRelic(id); });
   startRun();
@@ -1603,12 +1606,12 @@ function startRun(){
   if(hasUnlock('junk4')) junk = junk.slice(0,4);   // Lv.4 解鎖：起始雜牌 -1
   RUN.deck = seeds.concat(junk);                   // 種子 + 雜牌 ≈ 9~11 張
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
-  // Lv.10 解鎖：開局自帶 1 件隨機遺物
+  // Lv.10 解鎖：開局自帶 1 件隨機發燒配件
   if(hasUnlock('startRelic') && !RUN.relics.length){
     const pool=relicPool();
-    if(pool.length){ const r=pick(pool); grantRelic(r.id); seedToast(`🎁 開局遺物：${r.name}`); }
+    if(pool.length){ const r=pick(pool); grantRelic(r.id); seedToast(`🎁 開局發燒配件：${r.name}`); }
   }
-  // 記住這次的流派＋種子＋帶的遺物 → 死亡畫面可「同流派再戰」一鍵重開
+  // 記住這次的流派＋種子＋帶的發燒配件 → 死亡畫面可「同流派再戰」一鍵重開
   META.lastLoadout = { classKey:RUN.classKey, relics:(RUN.equipped||[]).slice(),
     seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null})) };
   saveMeta();
@@ -1619,7 +1622,7 @@ function startRun(){
     .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null,uid:newUid()}));
   nextFight();
 }
-// 取得遺物 → 進庫存（全新品相）；出戰欄有空位就自動裝上
+// 取得發燒配件 → 進庫存（全新品相）；出戰欄有空位就自動裝上
 function grantRelic(id){
   if(RUN.relics.includes(id)) return;
   RUN.relics.push(id);
@@ -1647,7 +1650,7 @@ function tuneRelic(id){
   RUN._tunedThisWin=true;
   const p=RUN.maxHp; recomputeMaxHp(p);
 }
-// 回收報廢遺物 → 移出庫存、換一點 HP
+// 回收報廢發燒配件 → 移出庫存、換一點 HP
 function recycleRelic(id){
   if(!RUN.relics.includes(id)) return;
   unequipRelic(id);
@@ -1669,7 +1672,7 @@ function applyWear(){
     const after=gradeIndex(wearOf(id));
     if(after>before) events.push({r, to:after, broke:WEAR.grades[after].mul===0});
   }
-  // 洗碟水在出戰 → 每場保養其他出戰遺物（清潔向 build 的核心）
+  // 洗碟水在出戰 → 每場保養其他出戰發燒配件（清潔向 build 的核心）
   if(WEAR.cleanerHeal>0 && isEquipped('cleaner')){
     for(const id of RUN.equipped){ if(id!=='cleaner') RUN.relicWear[id]=Math.max(0,(RUN.relicWear[id]||0)-WEAR.cleanerHeal); }
   }
@@ -1681,7 +1684,7 @@ function applyWear(){
 //  無限賽局：開下一場（敵人隨 depth 變強）
 // =========================================================================
 function enemyForDepth(d){
-  const boss = isBossDepth(d);                   // 每 5 場一位傳說藏家（里程碑強敵，打贏掉遺物）
+  const boss = isBossDepth(d);                   // 每 5 場一位傳說藏家（里程碑強敵，打贏掉發燒配件）
   // 難度曲線：前 3 場是暖身（三圍近乎 0、牌從全池隨機抓），第 4 場起才進陡升段、第 5 場進 hard
   const diff = d<3?'easy' : d<5?'normal' : 'hard';
   const late = Math.max(0, d-3);                 // 陡升段深度：第 4 場開始計
@@ -1739,13 +1742,13 @@ function nextFight(){
     _dustUsed:false,      // 防塵套：每場首次受擊減半（每場重置）
     eHist:[], pHist:[],   // 本場雙方出過的牌（回顧用）
   };
-  // 遺物耗損：本場觸發記錄＋迴光一轉（搖搖欲墜的出戰遺物 fx 翻倍）
+  // 發燒配件耗損：本場觸發記錄＋迴光一轉（搖搖欲墜的出戰發燒配件 fx 翻倍）
   G._fired=new Set();
   G._swan=new Set((RUN.equipped||[]).filter(id=>WEAR.enabled && wearOf(id)>=WEAR.swanAt && gradeMul(id)>0));
   fireRelic('startQi','maxHp','extraDraw','winHeal','xpBoost','feintDown','drawTwo');
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
   for(let i=0;i<CFG.startHand+RUN.mods.extraDraw+relicFx('extraDraw');i++){ drawCard(G.p); }  // 起手多抽（能力＋試聽站耳機）
-  if(E.boss){ pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲遺物！`,'good'); bossIntro(); }
+  if(E.boss){ pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲發燒配件！`,'good'); bossIntro(); }
   else pushLog(`⚔️ 第 ${RUN.depth} 場 · 對手【${E.who}】（${E.diff==='easy'?'生手':E.diff==='normal'?'老練':'硬仗'}）`,'good');
   renderBattle();
   startTurn();
@@ -1766,7 +1769,7 @@ function bossIntro(){
     <div class="bemoji">${pixArtHTML(SPR.boss, 88)}</div>
     <div class="btitle">傳說藏家</div>
     <div class="bsub">${pick(BOSS_LINES)}</div>
-    <div class="bdepth">第 ${RUN.depth} 場 · 里程碑戰 — 打贏掉遺物</div>
+    <div class="bdepth">第 ${RUN.depth} 場 · 里程碑戰 — 打贏掉發燒配件</div>
     <div class="bline r"></div>`;
   document.body.appendChild(m);
   document.body.classList.add('boss-shake');
@@ -2046,7 +2049,7 @@ function renderBattle(){
   const bossPill = (G.E && G.E.boss)
     ? `<span class="pill" style="color:var(--gold);border-color:var(--gold);font-weight:700">🎩 藏家戰</span>`
     : `<span class="pill">🎩 ${toNextBoss()} 場後</span>`;
-  const relicPill = RUN.relics.length ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="openRelicList()">遺物${RUN.relics.length}</button>` : '';
+  const relicPill = RUN.relics.length ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="openRelicList()">配件${RUN.relics.length}</button>` : '';   // 藥丸列單行空間緊，縮寫「配件」；全名「發燒配件」用在其他畫面
   $app.innerHTML = `
     <div class="row battle-pills"><span class="pill">第 ${RUN.depth} 場・連勝 ${RUN.streak}</span><span class="pill" style="color:var(--gold);border-color:var(--gold)">Lv.${RUN.runLevel}</span>${bossPill}${relicPill}<button class="pill" style="margin-left:auto;cursor:pointer;background:#fff" onclick="openHistView()">記錄</button><button class="pill" style="cursor:pointer;background:#fff" onclick="confirmQuit()">✕</button></div>
     <div class="xpbar" style="margin:4px 0 2px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
@@ -2060,7 +2063,7 @@ function renderBattle(){
     </div></div>
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
-      <div class="cheat">${RUN.relics.length?`<span style="margin-right:auto">${relicBarHTML()}</span>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
+      <div class="cheat${RUN.relics.length?' has-relics':''}">${RUN.relics.length?relicBarHTML():''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
       <div class="hint" id="hint">${hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>
@@ -2365,7 +2368,7 @@ function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
   maybeTopUpDynPool();                                  // 邊打邊在背景補充動態卡池
   const heal = 3 + (hasUnlock('heal4')?1:0) + relicFx('winHeal');   // Lv.6 解鎖＋洗碟水
-  RUN._wearEvents = applyWear();                        // 出戰遺物磨損（迴光一轉／報廢在此結算）
+  RUN._wearEvents = applyWear();                        // 出戰發燒配件磨損（迴光一轉／報廢在此結算）
   RUN._tunedThisWin=false;                              // 本場整備可再保養一件
   RUN.hp = Math.min(RUN.maxHp, Math.max(1,G.p.hp) + heal);   // 贏了小回血
   // 局內經驗累積（與結算樂歷分開算）；樂評人專欄：經驗 +％
@@ -2373,7 +2376,7 @@ function winFight(){
   RUN.runXp += gain; RUN._lastGain = gain;
   let lv=0; while(RUN.runXp >= runXpNeed()){ RUN.runXp -= runXpNeed(); RUN.runLevel++; lv++; }
   RUN.lvlQueue = lv;
-  // 擊敗傳說藏家 → 遺物三選一（之後才接升級佇列）＋ 本場局末抽盤王牌率大增
+  // 擊敗傳說藏家 → 發燒配件三選一（之後才接升級佇列）＋ 本場局末抽盤王牌率大增
   if(G.E && G.E.boss){ RUN._aceLuck=true; renderRelicChoice(); return; }
   if(lv>0) renderLevelUp(); else renderWinContinue();
 }
@@ -2394,7 +2397,7 @@ function loseFight(){
   G.over=true; renderDeath();
 }
 
-// ----- 藏家掉落：遺物三選一（樂歷 Lv.8 解鎖四選一）-----
+// ----- 藏家掉落：發燒配件三選一（樂歷 Lv.8 解鎖四選一）-----
 let _relicChoices=null;
 function hasWornRelic(){ return (RUN&&RUN.relics||[]).some(id=>wearOf(id)>0); }
 function renderRelicChoice(){
@@ -2405,26 +2408,26 @@ function renderRelicChoice(){
   if(!_relicChoices.length && !hasWornRelic()){ afterRelicChoice(); return; }   // 拿滿又無耗損 → 直接往下走
   const restoreBtn = hasWornRelic()
     ? `<div class="muted" style="margin:10px 0 4px;font-size:11px">或者——</div>
-       <button class="btn" style="width:100%" onclick="renderRestorePick()">🧴 不拿新遺物，整新一件舊遺物到全新</button>` : '';
+       <button class="btn" style="width:100%" onclick="renderRestorePick()">🧴 不拿新發燒配件，整新一件舊發燒配件到全新</button>` : '';
   $app.innerHTML = topbarHTML() + `
     <h1 style="color:var(--gold)">🎩 擊敗傳說藏家！</h1>
-    <div class="muted" style="margin:2px 0 8px">他從私藏木箱裡拿出幾件行頭——選一件<b>遺物</b>帶走（整趟生效、死亡洗掉）</div>
+    <div class="muted" style="margin:2px 0 8px">他從私藏木箱裡拿出幾件行頭——選一件<b>發燒配件</b>帶走（整趟生效、死亡洗掉）</div>
     <div id="relicChoices">${_relicChoices.map((r,i)=>`
       <div class="relic-card" onclick="pickRelic(${i})">
         <div class="ric">${relicIconHTML(r,36)}</div>
         <div><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''}</h3>
         <div class="muted">${r.desc}</div></div>
       </div>`).join('')}</div>
-    ${!_relicChoices.length?'<div class="muted" style="font-size:11px">遺物已收滿。</div>':''}
+    ${!_relicChoices.length?'<div class="muted" style="font-size:11px">發燒配件已收滿。</div>':''}
     ${restoreBtn}`;
 }
-// 藏家整新：列出有耗損的遺物，選一件回全新
+// 藏家整新：列出有耗損的發燒配件，選一件回全新
 function renderRestorePick(){
   const worn=(RUN.relics||[]).map(relicById).filter(r=>r&&wearOf(r.id)>0);
   if(!worn.length){ afterRelicChoice(); return; }
   $app.innerHTML = topbarHTML() + `
     <h1 style="color:var(--gold)">🧴 整新一件</h1>
-    <div class="muted" style="margin:2px 0 8px">挑一件磨損的遺物，整新回<b>全新</b>品相。</div>
+    <div class="muted" style="margin:2px 0 8px">挑一件磨損的發燒配件，整新回<b>全新</b>品相。</div>
     ${worn.map(r=>{ const g=gradeOf(r.id); return `
       <div class="relic-card" onclick="doRestore('${r.id}')">
         <div class="ric">${relicIconHTML(r,36)}</div>
@@ -2433,7 +2436,7 @@ function renderRestorePick(){
           <div class="muted">${r.desc}</div></div>
       </div>`; }).join('')}
     <div class="sp"></div>
-    <button class="btn" style="width:100%" onclick="renderRelicChoice()">← 返回選遺物</button>`;
+    <button class="btn" style="width:100%" onclick="renderRelicChoice()">← 返回選發燒配件</button>`;
 }
 function doRestore(id){ restoreRelic(id); _relicChoices=null; afterRelicChoice(); }
 function pickRelic(i){
@@ -2475,14 +2478,14 @@ function modsLine(){
   if(m.counterQi) extra+=` 剋氣+${m.counterQi}`; if(m.regen) extra+=` 回血${m.regen}`; if(m.ultDmg) extra+=` 輾壓+${m.ultDmg}`;
   return `攻${s.atk} 防${s.def} 氣勢率${s.qir}${extra}`;
 }
-// 已持有遺物 → 小圖示列（點開清單）
+// 已持有發燒配件 → 小圖示列（點開清單）
 function wearPipsHTML(id){
   const gi=gradeIndex(wearOf(id)); const g=WEAR.grades[gi];
   const filled = g.mul===0 ? 0 : (WEAR.grades.length-gi);
   let s=''; for(let i=0;i<WEAR.grades.length;i++){ s+=`<span class="wpip" style="background:${i<filled?g.color:'#3a3a44'}"></span>`; }
   return s;
 }
-// 橫向出戰遺物欄：只顯示出戰中的（庫存在整備面板看）
+// 橫向出戰發燒配件欄：只顯示出戰中的（庫存在整備面板看）
 function relicBarHTML(){
   if(!RUN) return '';
   ensureRelicState();
@@ -2495,9 +2498,9 @@ function relicBarHTML(){
       <span class="ric">${broke?'':relicIconHTML(r,22)}</span><span class="wbar">${wearPipsHTML(id)}</span></button>`;
   }).join('');
   const empties = Array.from({length:Math.max(0,wearSlots()-eq.length)}, ()=>`<span class="rempty">＋</span>`).join('');
-  return `<div class="relicbar"><span class="rlab">遺物</span>${cells}${empties}</div>`;
+  return `<div class="relicbar">${cells}${empties}</div>`;
 }
-// 輕點遺物 → 唯讀詳情（效果／品相／耗損）
+// 輕點發燒配件 → 唯讀詳情（效果／品相／耗損）
 function openRelicView(id){
   const r=relicById(id); if(!r || document.getElementById('relicMask')) return;
   const gi=gradeIndex(wearOf(id)); const g=WEAR.grades[gi];
@@ -2520,7 +2523,7 @@ function openRelicView(id){
   mask.addEventListener('click', e=>{ if(e.target===mask) closeRelicList(); });
   document.body.appendChild(mask);
 }
-// 舊入口（戰鬥藥丸「遺物N」）→ 導到整備面板
+// 舊入口（戰鬥藥丸「發燒配件N」）→ 導到整備面板
 function openRelicList(){ openLoadout(); }
 function closeRelicList(){ const m=document.getElementById('relicMask'); if(m) m.remove(); }
 // 整備面板：出戰欄換裝／保養／回收（戰鬥中鎖定，只在勝利結算與藥丸開）
@@ -2548,11 +2551,11 @@ function openLoadout(){
   };
   const eq=equippedRelics(), bench=benchedRelics();
   mask.innerHTML=`<div class="drawcard" style="max-width:460px;text-align:left;max-height:84vh;overflow-y:auto">
-    <div class="lab">🎒 整備遺物 · 出戰欄 ${eq.length}/${wearSlots()}</div>
+    <div class="lab">🎒 整備發燒配件 · 出戰欄 ${eq.length}/${wearSlots()}</div>
     <div class="muted" style="font-size:10px;margin:2px 0 8px">只有出戰的 fx 生效、每場磨損；庫存休息不耗。保養每場限一次。${locked?'<br><b style="color:var(--dmg)">戰鬥中鎖定，勝利後才能換裝。</b>':''}</div>
     ${eq.length?eq.map(r=>row(r,true)).join(''):'<div class="muted" style="font-size:11px">出戰欄空著。</div>'}
     ${bench.length?`<div class="lab" style="margin-top:12px">庫存（休息中 · 不耗損）</div>${bench.map(r=>row(r,false)).join('')}`:''}
-    ${!RUN.relics.length?'<div class="muted" style="font-size:11px">尚無遺物——每 5 場擊敗「傳說藏家」可獲得。</div>':''}
+    ${!RUN.relics.length?'<div class="muted" style="font-size:11px">尚無發燒配件——每 5 場擊敗「傳說藏家」可獲得。</div>':''}
     <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="closeLoadout()">完成整備</button>
   </div>`;
@@ -2567,15 +2570,15 @@ function loAct(act,id){
   else if(act==='recycle') recycleRelic(id);
   openLoadout();   // 重繪面板
 }
-// 遺物圖鑑（主畫面「遺物收藏」按鈕）：全部遺物列出，拿過的點亮、沒拿過的黑剪影＋？？？
+// 發燒配件圖鑑（主畫面「發燒配件收藏」按鈕）：全部發燒配件列出，拿過的點亮、沒拿過的黑剪影＋？？？
 function openRelicDex(){
   if(document.getElementById('relicDexMask')) return;
   const seen=new Set(META.relicsSeen||[]);
   const got=RELICS.filter(r=>seen.has(r.id)).length;
   const mask=document.createElement('div'); mask.className='drawmask'; mask.id='relicDexMask';
   mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left;max-height:82vh;overflow-y:auto">
-    <div class="lab">遺物收藏（${got}/${RELICS.length}）</div>
-    <div class="muted" style="font-size:10px;margin:2px 0 6px">每 5 場擊敗「傳說藏家」可獲遺物三選一；拿過一次就永久點亮。</div>
+    <div class="lab">發燒配件收藏（${got}/${RELICS.length}）</div>
+    <div class="muted" style="font-size:10px;margin:2px 0 6px">每 5 場擊敗「傳說藏家」可獲發燒配件三選一；拿過一次就永久點亮。</div>
     ${RELICS.map(r=>{
       const tierTag=(r.tier||1)>1?` <span style="color:var(--gold);font-size:10px">· 進階</span>`:'';
       return seen.has(r.id)
@@ -2601,7 +2604,7 @@ function renderWinContinue(){
   $app.innerHTML = topbarHTML() + `
     <h1 class="good" style="color:var(--win)">${pixArtHTML(PIX_ICONS.heavy180, 20, 'pixspin')} 第 ${RUN.depth} 場 — 勝！</h1>
     <div class="muted" style="margin:2px 0 8px">連勝 ${RUN.streak}・回血至 HP ${RUN.hp}/${RUN.maxHp}・牌組 ${RUN.deck.length} 張</div>
-    <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉遺物）</div>
+    <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉發燒配件）</div>
     ${relicBarHTML()}
     <div class="muted">局內 Lv.${RUN.runLevel}　經驗 +${RUN._lastGain}（${RUN.runXp}/${need}）</div>
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
@@ -2610,7 +2613,7 @@ function renderWinContinue(){
       ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）——趟結束結算時可從一路抽到的盤挑 <b>1</b> 張永久收藏</div>`
       : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
     ${wearNoteHTML()}
-    ${RUN.relics.length?`<button class="btn" style="width:100%;margin-bottom:8px" onclick="openLoadout()">🎒 整備遺物（換裝／保養／回收）</button>`:''}
+    ${RUN.relics.length?`<button class="btn" style="width:100%;margin-bottom:8px" onclick="openLoadout()">🎒 整備發燒配件（換裝／保養／回收）</button>`:''}
     ${(G&&G.eHist&&G.eHist.length)?`<div class="muted" style="margin:8px 0 0">本場對手出過的牌（點小圖看介紹／聽歌）</div>${histRowHTML(G.eHist,'wh')}`:''}
     <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
@@ -2919,7 +2922,7 @@ function renderDeath(){
     <div class="muted" style="text-align:left">本場對手出過的牌（點小圖看介紹／聽歌）</div>
     ${histRowHTML(G.eHist,'dh')}` : '';
   const metCount = (RUN.drawnCards||[]).length + ((G&&G.eHist)?G.eHist.length:0);
-  const relicNote = RUN.relics.length ? `・遺物 ${RUN.relics.length} 件` : '';
+  const relicNote = RUN.relics.length ? `・發燒配件 ${RUN.relics.length} 件` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="death">
       <div style="margin-bottom:6px">${pixArtHTML(SPR.brokenrec, 44)}</div>
@@ -2972,9 +2975,9 @@ function applyConfig(cfg){
     if(cfg.metaXp) MXP=Object.assign({},MXP,cfg.metaXp);
     if(cfg.classes && typeof cfg.classes==='object') CLASSES=cfg.classes;
     if(Array.isArray(cfg.upgrades) && cfg.upgrades.length) UPGRADES=cfg.upgrades;
-    // 後台遺物：整組覆寫（fx 是 {效果鍵:數值}；icon 對得上內建像素圖示就用像素圖、否則當 emoji/文字顯示）
+    // 後台發燒配件：整組覆寫（fx 是 {效果鍵:數值}；icon 對得上內建像素圖示就用像素圖、否則當 emoji/文字顯示）
     if(Array.isArray(cfg.relics) && cfg.relics.length) RELICS=cfg.relics.filter(r=>r&&r.id&&r.name&&r.fx);
-    // 遺物耗損系統：淺層覆寫（可調係數、階梯、關閉）
+    // 發燒配件耗損系統：淺層覆寫（可調係數、階梯、關閉）
     if(cfg.wear && typeof cfg.wear==='object'){
       const w=cfg.wear;
       if(Array.isArray(w.grades) && w.grades.length) WEAR.grades=w.grades;

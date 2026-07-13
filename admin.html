@@ -963,9 +963,9 @@
         <button class="gbtn" id="buffAdd" style="margin-top:10px;">＋ 新增 Buff</button>
       </div>
       <div class="section">
-        <div class="section-label">遺物管理（每 5 場擊敗傳說藏家掉落，三選一）</div>
+        <div class="section-label">發燒配件管理（每 5 場擊敗傳說藏家掉落，三選一）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
-          每件遺物＝一筆資料，<b>效果</b>由「效果鍵＋數值」決定（程式已支援的鍵）：<br>
+          每件發燒配件＝一筆資料，<b>效果</b>由「效果鍵＋數值」決定（程式已支援的鍵）：<br>
           ・counterQi 相剋命中+N氣勢｜startQi 開局氣勢+N｜winHeal 勝利多回N血｜valueDmg 比星勝+N傷｜counterGuard 被剋受傷-N<br>
           ・aceQi 出王牌+N氣勢｜ultDmg 輾壓+N傷｜maxHp 最大HP+N｜extraDraw 起手多抽N｜chainQi 相生連段+N氣勢<br>
           ・drawTwo 局末抽盤二選一(填1)｜firstHitHalf 首次受擊減半(填1)｜revive 免死一次回5HP(填1)｜aceDouble 王牌被動加倍(填1)<br>
@@ -974,7 +974,7 @@
           <b>級別</b>：1＝一開始就會出、2＝進階（玩家樂歷 Lv.3 才進池）。
         </p>
         <div id="relicList"></div>
-        <button class="gbtn" id="relicAdd" style="margin-top:10px;">＋ 新增遺物</button>
+        <button class="gbtn" id="relicAdd" style="margin-top:10px;">＋ 新增發燒配件</button>
       </div>
       <div class="section">
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
@@ -3607,7 +3607,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     rogueCfg.upgrades.push({id:'buff'+Date.now(),label:'新 Buff',desc:'說明',target:'stat',key:'atk',amount:1}); renderBuffs();
   });
 
-  // ── 遺物管理（gameConfig/roguelike.relics）──
+  // ── 發燒配件管理（gameConfig/roguelike.relics）──
   function relicFxKey(r){ return Object.keys(r.fx||{})[0] || RELIC_FX_KEYS[0]; }
   function relicFxAmt(r){ const k=Object.keys(r.fx||{})[0]; return k ? r.fx[k] : 1; }
   function renderRelics(){
@@ -3649,7 +3649,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
   document.getElementById('relicAdd')?.addEventListener('click', ()=>{
     rogueCfg.relics=rogueCfg.relics||[];
-    rogueCfg.relics.push({id:'relic'+Date.now(),name:'新遺物',desc:'效果說明',icon:'🎁',tier:1,fx:{counterQi:1}});
+    rogueCfg.relics.push({id:'relic'+Date.now(),name:'新發燒配件',desc:'效果說明',icon:'🎁',tier:1,fx:{counterQi:1}});
     renderRelics();
   });
   function collectRogue(){
@@ -3660,7 +3660,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('rogueSave')?.addEventListener('click', async ()=>{
     const msg=document.getElementById('rogueMsg'); msg.textContent='儲存中…';
     if(!rogueCfg.upgrades.length){ msg.textContent='至少要留一個 Buff'; return; }
-    if(!(rogueCfg.relics||[]).length){ msg.textContent='至少要留一件遺物（建議 ≥3 件才夠三選一）'; return; }
+    if(!(rogueCfg.relics||[]).length){ msg.textContent='至少要留一件發燒配件（建議 ≥3 件才夠三選一）'; return; }
     try{ await setDoc(doc(db,'gameConfig','roguelike'), collectRogue()); msg.textContent='✓ 已儲存（roguelike.html 下次載入生效）'; }
     catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
   });
