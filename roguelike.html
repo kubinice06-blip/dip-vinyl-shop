@@ -1352,6 +1352,8 @@ function quickRestart(){
   if(!lo || !CLASSES[lo.classKey] || !Array.isArray(lo.seeds) || !lo.seeds.length) { renderClassSelect(); return; }
   initRun(lo.classKey);
   RUN.seedsPicked = lo.seeds.map(c=>({...c}));
+  // 沿用上次帶的遺物（過濾掉已不在圖鑑的），全新品相帶上場
+  (lo.relics||[]).forEach(id=>{ if(relicById(id) && (META.relicsSeen||[]).includes(id)) grantRelic(id); });
   startRun();
 }
 function recomputeMaxHp(prevMax){
@@ -1456,7 +1458,7 @@ function paintSeedScreen(){
     <div class="seedbar"><div class="inner">
       <span class="cnt">已選 <b id="seedCount">0</b>/${SM}</span>
       <div class="dots" id="seedDots">${'<i></i>'.repeat(SM)}</div>
-      <button class="btn primary" id="seedGo" disabled onclick="startRun()">開始旅程 →</button>
+      <button class="btn primary" id="seedGo" disabled onclick="afterSeedSelect()">下一步：帶遺物 →</button>
     </div></div>`;
   const wrap=document.getElementById('shelf');
   wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
@@ -1540,6 +1542,59 @@ function makeJunk(){
   }));
 }
 
+// 選完種子 → 開戰前挑遺物帶上場（從已解鎖的圖鑑挑，最多出戰欄格數）
+let _loadoutPick=[];
+function afterSeedSelect(){
+  if(RUN.seedsPicked.length<5 || RUN.seedsPicked.length>seedMax()) return;
+  const unlocked=(META.relicsSeen||[]).map(relicById).filter(Boolean);
+  if(!unlocked.length){ startRun(); return; }   // 還沒解鎖任何遺物 → 直接開打
+  _loadoutPick=[];
+  renderRelicLoadout();
+}
+function renderRelicLoadout(){
+  document.body.classList.remove('in-battle');
+  const unlocked=(META.relicsSeen||[]).map(relicById).filter(Boolean);
+  const cap=wearSlots();
+  $app.innerHTML = topbarHTML() + `
+    <h1>帶哪些遺物上場？</h1>
+    <div class="muted" style="margin:4px 0 2px">從<b>已解鎖</b>的遺物挑最多 <b>${cap}</b> 件帶上場（整趟生效、會磨損；不選也行）。途中打贏「傳說藏家」還能撿到＋解鎖新遺物。</div>
+    <div class="muted" style="margin:2px 0 8px;font-size:10px">點卡選入／取消。出戰中會磨損，庫存/未帶的不耗。</div>
+    <div id="loadoutGrid">${unlocked.map(r=>`
+      <div class="relic-card" id="lo_${r.id}" onclick="toggleLoadoutRelic('${r.id}')">
+        <div class="ric">${relicIconHTML(r,36)}</div>
+        <div style="flex:1"><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''} <span style="font-size:9px;color:var(--dim)">${catZh(r)}</span></h3>
+          <div class="muted">${r.desc}</div></div>
+        <div class="lo-check" style="flex:none;font-size:18px;width:22px;text-align:center"></div>
+      </div>`).join('')}</div>
+    <div style="height:64px"></div>
+    <div class="seedbar"><div class="inner">
+      <span class="cnt">帶 <b id="loCount">0</b>/${cap}</span>
+      <button class="btn" style="flex:none" onclick="startRun()">不帶，直接開打</button>
+      <button class="btn primary" style="flex:none" onclick="confirmLoadout()">開始旅程 →</button>
+    </div></div>`;
+  updateLoadoutUI();
+}
+function toggleLoadoutRelic(id){
+  const cap=wearSlots(); const i=_loadoutPick.indexOf(id);
+  if(i>=0) _loadoutPick.splice(i,1);
+  else { if(_loadoutPick.length>=cap){ seedToast(`最多帶 ${cap} 件`); return; } _loadoutPick.push(id); }
+  updateLoadoutUI();
+}
+function updateLoadoutUI(){
+  const cnt=document.getElementById('loCount'); if(cnt) cnt.textContent=_loadoutPick.length;
+  (META.relicsSeen||[]).forEach(id=>{
+    const el=document.getElementById('lo_'+id); if(!el) return;
+    const on=_loadoutPick.includes(id);
+    el.style.borderColor=on?'var(--gold)':''; el.style.background=on?'#fffbe9':'';
+    const ck=el.querySelector('.lo-check'); if(ck){ ck.textContent=on?'✓':''; ck.style.color='var(--gold)'; }
+  });
+}
+function confirmLoadout(){
+  // 把選的遺物灌進 run（全新品相），出戰欄＝選的（上限格數）
+  RUN.relics=[]; RUN.equipped=[]; RUN.relicWear={};
+  _loadoutPick.slice(0,wearSlots()).forEach(id=>{ if(relicById(id)) grantRelic(id); });
+  startRun();
+}
 function startRun(){
   // 正常流程按鈕只在選滿 seedMax 時可按；「同流派再戰」允許沿用舊上限（如解鎖第 6 格前存的 5 張）
   if(RUN.seedsPicked.length<5 || RUN.seedsPicked.length>seedMax()) return;
@@ -1553,8 +1608,8 @@ function startRun(){
     const pool=relicPool();
     if(pool.length){ const r=pick(pool); grantRelic(r.id); seedToast(`🎁 開局遺物：${r.name}`); }
   }
-  // 記住這次的流派＋種子 → 死亡畫面可「同流派再戰」一鍵重開
-  META.lastLoadout = { classKey:RUN.classKey,
+  // 記住這次的流派＋種子＋帶的遺物 → 死亡畫面可「同流派再戰」一鍵重開
+  META.lastLoadout = { classKey:RUN.classKey, relics:(RUN.equipped||[]).slice(),
     seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null})) };
   saveMeta();
   // 開局選的盤若尚未擁有（隨機發牌來的）→ 一併列入趟末「挑 1 張永久收藏」名單，
