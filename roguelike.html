@@ -800,18 +800,17 @@ function relicById(id){ return RELICS.find(r=>r.id===id) || null; }
 let WEAR = {
   enabled:true,
   slots:3,            // 出戰欄格數（同時只有這幾件生效與耗損）
-  perFight:9,         // 每場每件出戰基礎磨損
-  usedBump:7,         // 該場 fx 實際觸發過再 +這麼多（唱得越多磨越兇）
+  perFight:6,         // 每場每件出戰基礎磨損
+  usedBump:5,         // 該場 fx 實際觸發過再 +這麼多（唱得越多磨越兇）
   swanAt:82,          // 進入此耗損 → 「迴光一轉」：搖搖欲墜期 fx 翻倍（黑膠最後一轉）
-  tuneAmt:30,         // 保養一件：−耗損（整備面板，每場一次）
   cleanerHeal:8,      // 洗碟水在出戰 → 每場勝利替所有出戰發燒配件 −耗損
   recycleHeal:3,      // 回收報廢發燒配件 → +HP
   powerBase:0.15, powerCap:2.2,               // 越強越脆：fx 強度→磨損加成
   tierMul:{1:1.0, 2:0.6},                     // tier2 更耐用
-  grades:[            // 由輕到重；到達 max 以下即該階
+  grades:[            // 由輕到重；到達 max 以下即該階（報廢＝耗損滿 100＝耐久 0）
     {key:'M',  name:'全新',  max:24,   mul:1,   color:'#639922'},
     {key:'NM', name:'近全新',max:59,   mul:0.6, color:'#EF9F27'},
-    {key:'VG', name:'良品',  max:89,   mul:0.3, color:'#D85A30'},
+    {key:'VG', name:'良品',  max:99,   mul:0.3, color:'#D85A30'},
     {key:'F',  name:'報廢',  max:9999, mul:0,   color:'#8a8a8a'},
   ],
   cat:{               // 類別耐用係數（越大磨越快）
@@ -822,6 +821,23 @@ let WEAR = {
     accessory: {mul:0.6, zh:'配件／保護'},
   },
 };
+// ---------- 現金（跨趟貨幣）：贏一場賺一筆，只能在趟與趟之間花錢保養發燒配件 ----------
+// 耗損跨趟保留（存樂歷 META.relicWear），趟中沒有免費保養——修多少、修哪件要錙銖必較。
+let CASH = {
+  base:4,          // 每贏一場基本收入
+  perDepth:0.5,    // 深度加成：+floor(depth×perDepth)（越深越好賺）
+  bossBonus:12,    // 擊敗傳說藏家額外
+  recordBonus:25,  // 破最深紀錄獎金（趟結算時）
+  repairT1:0.6,    // 每修 1 點耐久的工錢（tier1）
+  repairT2:0.9,    // 進階件工錢較貴（tier2）
+  tuneStep:25,     // 小保養一次修的耐久量
+};
+function cashOf(){ return Math.max(0, Math.round((META&&META.cash)||0)); }
+function metaWearOf(id){ return (META&&META.relicWear&&META.relicWear[id])||0; }
+function metaBroken(id){ return WEAR.enabled && WEAR.grades[gradeIndex(metaWearOf(id))].mul===0; }
+function duraOf(w){ return Math.max(0, 100-Math.round(w)); }
+function repairCost(id, amt){ const r=relicById(id); const rate=(r&&(r.tier||1)>1)?CASH.repairT2:CASH.repairT1; return Math.max(1, Math.ceil(amt*rate)); }
+function fightCash(depth, boss){ return Math.max(0, Math.round(CASH.base + Math.floor(depth*CASH.perDepth) + (boss?CASH.bossBonus:0))); }
 // 發燒配件 → 類別（後台自訂發燒配件可帶 r.cat 覆寫；查無則當配件）
 const RELIC_CAT = {
   stylus:'stylus', gauge:'stylus',
@@ -842,7 +858,7 @@ function wearOf(id){ return (RUN&&RUN.relicWear&&RUN.relicWear[id])||0; }
 function gradeIndex(w){ for(let i=0;i<WEAR.grades.length-1;i++){ if(w<=WEAR.grades[i].max) return i; } return WEAR.grades.length-1; }
 function gradeOf(id){ return WEAR.grades[gradeIndex(wearOf(id))]; }
 function gradeMul(id){ return WEAR.enabled ? gradeOf(id).mul : 1; }
-function gradeName(r){ const gi=gradeIndex(wearOf(r.id)); const nm=GRADE_NAMES[relicCat(r)]; return (nm&&nm[gi]) || WEAR.grades[gi].name; }
+function gradeName(r, w){ const gi=gradeIndex(w==null?wearOf(r.id):w); const nm=GRADE_NAMES[relicCat(r)]; return (nm&&nm[gi]) || WEAR.grades[gi].name; }
 function isEquipped(id){ return !!(RUN&&RUN.equipped&&RUN.equipped.includes(id)); }
 function equippedRelics(){ return (RUN&&RUN.equipped||[]).map(relicById).filter(Boolean); }
 function benchedRelics(){ return (RUN&&RUN.relics||[]).filter(id=>!isEquipped(id)).map(relicById).filter(Boolean); }
@@ -1099,10 +1115,12 @@ function metaStoreKey(){ return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
 const keyOf = c => (c.artist+'|'+c.album).toLowerCase();
 function loadMeta(){
   let m; try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){}
-  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[], relicsSeen:[] };
+  if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[], relicsSeen:[], cash:0, relicWear:{} };
   m.talents = Object.assign({atk:0,def:0,qir:0}, m.talents||{});
   if(!Array.isArray(m.pending)) m.pending = [];
   if(!Array.isArray(m.relicsSeen)) m.relicsSeen = [];   // 發燒配件圖鑑：歷來拿過的（跨趟累積、跟樂歷一起存）
+  if(typeof m.cash!=='number' || !isFinite(m.cash)) m.cash = 0;          // 現金：跨趟貨幣，只花在保養
+  if(!m.relicWear || typeof m.relicWear!=='object') m.relicWear = {};    // 發燒配件耗損跨趟紀錄（舊玩家視為全新）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -1130,6 +1148,9 @@ function mergeMeta(a,b){
     collection:(hi.collection||[]).slice(),
     pending:(hi.pending||[]).slice(),
     relicsSeen:[...new Set([...(a.relicsSeen||[]), ...(b.relicsSeen||[])])],   // 發燒配件圖鑑聯集
+    cash:Math.max(a.cash||0, b.cash||0),   // 現金取較高者（同 xp 邏輯，避免換裝置歸零）
+    // 耗損紀錄逐件併：取品相較好（耗損較低）者，玩家不吃虧
+    relicWear:(()=>{ const w=Object.assign({}, a.relicWear||{}); const bw=b.relicWear||{}; for(const k in bw){ w[k]=(w[k]==null)?bw[k]:Math.min(w[k],bw[k]); } return w; })(),
     lastLoadout: hi.lastLoadout || lo.lastLoadout || null,   // 同流派再戰的上次配置
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
@@ -1276,6 +1297,7 @@ function topbarHTML(){
   return `<div class="topbar">
     <span class="lv">樂歷 Lv.${lv} · ${into}/${need}</span>
     <div class="xpbar"><i style="width:${pct}%"></i></div>
+    <span style="flex:none;color:var(--gold);font-weight:700">💰 $${cashOf()}</span>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
   </div>`;
 }
@@ -1341,7 +1363,7 @@ function initRun(key){
     // 局內特殊能力（吸血鬼倖存者式，整趟生效、run 結束洗掉）
     mods:{ maxHpAdd:0, extraDraw:0, counterQi:0, regen:0, ultDmg:0 },
     runLevel:1, runXp:0, lvlQueue:0,
-    deck:[], depth:0, streak:0, relics:[], equipped:[], relicWear:{}, _revived:false,
+    deck:[], depth:0, streak:0, relics:[], equipped:[], relicWear:{}, _revived:false, cashEarned:0,
     seedsPicked:[],
     drawnCards:[],   // 一路上局末抽到的盤：趟結束結算時挑 1 張永久收藏
     _keptOne:false,
@@ -1355,8 +1377,8 @@ function quickRestart(){
   if(!lo || !CLASSES[lo.classKey] || !Array.isArray(lo.seeds) || !lo.seeds.length) { renderClassSelect(); return; }
   initRun(lo.classKey);
   RUN.seedsPicked = lo.seeds.map(c=>({...c}));
-  // 沿用上次帶的發燒配件（過濾掉已不在圖鑑的），全新品相帶上場
-  (lo.relics||[]).forEach(id=>{ if(relicById(id) && (META.relicsSeen||[]).includes(id)) grantRelic(id); });
+  // 沿用上次帶的發燒配件（過濾掉已不在圖鑑的），耐久沿用跨趟紀錄；報廢的帶不動自動跳過
+  (lo.relics||[]).forEach(id=>{ if(relicById(id) && (META.relicsSeen||[]).includes(id)) carryRelic(id); });
   startRun();
 }
 function recomputeMaxHp(prevMax){
@@ -1560,15 +1582,21 @@ function renderRelicLoadout(){
   const cap=wearSlots();
   $app.innerHTML = topbarHTML() + `
     <h1>帶哪些發燒配件上場？</h1>
-    <div class="muted" style="margin:4px 0 2px">從<b>已解鎖</b>的發燒配件挑最多 <b>${cap}</b> 件帶上場（整趟生效、會磨損；不選也行）。途中打贏「傳說藏家」還能撿到＋解鎖新發燒配件。</div>
-    <div class="muted" style="margin:2px 0 8px;font-size:10px">點卡選入／取消。出戰中會磨損，庫存/未帶的不耗。</div>
-    <div id="loadoutGrid">${unlocked.map(r=>`
-      <div class="relic-card" id="lo_${r.id}" onclick="toggleLoadoutRelic('${r.id}')">
+    <div class="muted" style="margin:4px 0 2px">從<b>已解鎖</b>的發燒配件挑最多 <b>${cap}</b> 件帶上場（不選也行）。途中打贏「傳說藏家」還能撿到＋解鎖新發燒配件。</div>
+    <div class="muted" style="margin:2px 0 8px;font-size:10px">出戰會磨損且<b>耗損跨趟保留</b>；報廢（耐久 0）帶不上場。點 🔧 看簡介／耐久、花現金保養（💰 $${cashOf()}）。</div>
+    <div id="loadoutGrid">${unlocked.map(r=>{
+      const w=metaWearOf(r.id), g=WEAR.grades[gradeIndex(w)], broke=g.mul===0;
+      return `
+      <div class="relic-card" id="lo_${r.id}" onclick="toggleLoadoutRelic('${r.id}')"${broke?' style="opacity:.55"':''}>
         <div class="ric">${relicIconHTML(r,36)}</div>
-        <div style="flex:1"><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''} <span style="font-size:9px;color:var(--dim)">${catZh(r)}</span></h3>
+        <div style="flex:1"><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''} <span style="font-size:9px;color:${g.color}">${broke?'報廢 · 需保養':gradeName(r,w)+' · 耐久 '+duraOf(w)}</span></h3>
+          <div class="wbarwide" style="margin:3px 0"><i style="width:${Math.min(100,w)}%;background:${g.color}"></i></div>
           <div class="muted">${r.desc}</div></div>
-        <div class="lo-check" style="flex:none;font-size:18px;width:22px;text-align:center"></div>
-      </div>`).join('')}</div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;flex:none">
+          <button class="pill" style="cursor:pointer;background:#fff" onclick="event.stopPropagation();openRelicCare('${r.id}')">🔧</button>
+          <div class="lo-check" style="font-size:18px;width:22px;text-align:center"></div>
+        </div>
+      </div>`;}).join('')}</div>
     <div style="height:64px"></div>
     <div class="seedbar"><div class="inner">
       <span class="cnt">帶 <b id="loCount">0</b>/${cap}</span>
@@ -1580,7 +1608,11 @@ function renderRelicLoadout(){
 function toggleLoadoutRelic(id){
   const cap=wearSlots(); const i=_loadoutPick.indexOf(id);
   if(i>=0) _loadoutPick.splice(i,1);
-  else { if(_loadoutPick.length>=cap){ seedToast(`最多帶 ${cap} 件`); return; } _loadoutPick.push(id); }
+  else {
+    if(metaBroken(id)){ seedToast('💥 已報廢（耐久 0）——先花現金保養才能帶上場'); return; }
+    if(_loadoutPick.length>=cap){ seedToast(`最多帶 ${cap} 件`); return; }
+    _loadoutPick.push(id);
+  }
   updateLoadoutUI();
 }
 function updateLoadoutUI(){
@@ -1593,9 +1625,9 @@ function updateLoadoutUI(){
   });
 }
 function confirmLoadout(){
-  // 把選的發燒配件灌進 run（全新品相），出戰欄＝選的（上限格數）
+  // 把選的發燒配件灌進 run（耐久沿用跨趟紀錄），出戰欄＝選的（上限格數）
   RUN.relics=[]; RUN.equipped=[]; RUN.relicWear={};
-  _loadoutPick.slice(0,wearSlots()).forEach(id=>{ if(relicById(id)) grantRelic(id); });
+  _loadoutPick.slice(0,wearSlots()).forEach(id=>{ if(relicById(id)) carryRelic(id); });
   startRun();
 }
 function startRun(){
@@ -1622,17 +1654,35 @@ function startRun(){
     .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null,uid:newUid()}));
   nextFight();
 }
-// 取得發燒配件 → 進庫存（全新品相）；出戰欄有空位就自動裝上
+// 取得發燒配件（掉落／禮物＝全新的一件，舊耗損紀錄一併換新）；出戰欄有空位就自動裝上
 function grantRelic(id){
   if(RUN.relics.includes(id)) return;
   RUN.relics.push(id);
   if(!RUN.relicWear) RUN.relicWear={};
   RUN.relicWear[id]=0;   // 入手全新
+  if(!META.relicWear) META.relicWear={};
+  META.relicWear[id]=0;  // 跨趟紀錄同步換新（拿到同款＝換一件新的）
   // 圖鑑點亮：拿過一次永久記錄（跨趟；跟樂歷一起存本機＋雲端）
   if(!Array.isArray(META.relicsSeen)) META.relicsSeen=[];
-  if(!META.relicsSeen.includes(id)){ META.relicsSeen.push(id); saveMeta(); }
+  if(!META.relicsSeen.includes(id)) META.relicsSeen.push(id);
+  saveMeta();
   if(!Array.isArray(RUN.equipped)) RUN.equipped=[];
   if(RUN.equipped.length < wearSlots()){ const p=RUN.maxHp; RUN.equipped.push(id); recomputeMaxHp(p); }
+}
+// 帶自己的舊件上場（開戰前選單／同流派再戰）：耐久沿用跨趟紀錄；報廢（耐久 0）帶不動
+function carryRelic(id){
+  if(!relicById(id) || RUN.relics.includes(id) || metaBroken(id)) return;
+  RUN.relics.push(id);
+  if(!RUN.relicWear) RUN.relicWear={};
+  RUN.relicWear[id]=metaWearOf(id);
+  if(!Array.isArray(RUN.equipped)) RUN.equipped=[];
+  if(RUN.equipped.length < wearSlots()){ const p=RUN.maxHp; RUN.equipped.push(id); recomputeMaxHp(p); }
+}
+// 趟中耗損同步回樂歷（跨趟保留：黑膠器材的傷是真的傷）
+function syncWearToMeta(){
+  if(!RUN || !RUN.relicWear) return;
+  if(!META.relicWear) META.relicWear={};
+  for(const id of (RUN.relics||[])) META.relicWear[id]=Math.round(RUN.relicWear[id]||0);
 }
 // 換裝：裝上／卸下（含 maxHp 類重算）—— 整備面板用
 function equipRelic(id){
@@ -1643,13 +1693,7 @@ function unequipRelic(id){
   const i=RUN.equipped.indexOf(id); if(i<0) return;
   const p=RUN.maxHp; RUN.equipped.splice(i,1); recomputeMaxHp(p);
 }
-// 保養：−耗損（整備面板，每場一次）
-function tuneRelic(id){
-  if(RUN._tunedThisWin || !RUN.relics.includes(id)) return;
-  RUN.relicWear[id]=Math.max(0,(RUN.relicWear[id]||0)-WEAR.tuneAmt);
-  RUN._tunedThisWin=true;
-  const p=RUN.maxHp; recomputeMaxHp(p);
-}
+// （趟中免費保養已移除——保養改在趟與趟之間的配件選單花現金進行，見 openRelicCare/doRepair）
 // 回收報廢發燒配件 → 移出庫存、換一點 HP
 function recycleRelic(id){
   if(!RUN.relics.includes(id)) return;
@@ -1658,8 +1702,8 @@ function recycleRelic(id){
   delete RUN.relicWear[id];
   RUN.hp=Math.min(RUN.maxHp, RUN.hp+WEAR.recycleHeal);
 }
-// 整新：一件回全新（藏家獎勵用）
-function restoreRelic(id){ if(RUN.relicWear) RUN.relicWear[id]=0; const p=RUN.maxHp; recomputeMaxHp(p); }
+// 整新：一件回全新（藏家獎勵用；跨趟紀錄同步）
+function restoreRelic(id){ if(RUN.relicWear) RUN.relicWear[id]=0; if(META.relicWear) META.relicWear[id]=0; saveMeta(); const p=RUN.maxHp; recomputeMaxHp(p); }
 // 每場結算套用耗損（只有出戰的磨）→ 回傳品相跨階事件（升級提示用）
 function applyWear(){
   if(!WEAR.enabled || !RUN.equipped) return [];
@@ -1676,6 +1720,7 @@ function applyWear(){
   if(WEAR.cleanerHeal>0 && isEquipped('cleaner')){
     for(const id of RUN.equipped){ if(id!=='cleaner') RUN.relicWear[id]=Math.max(0,(RUN.relicWear[id]||0)-WEAR.cleanerHeal); }
   }
+  syncWearToMeta();   // 耗損跨趟保留（saveMeta 由 winFight 統一呼叫）
   recomputeMaxHp(prevMax);
   return events;
 }
@@ -2368,8 +2413,11 @@ function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
   maybeTopUpDynPool();                                  // 邊打邊在背景補充動態卡池
   const heal = 3 + (hasUnlock('heal4')?1:0) + relicFx('winHeal');   // Lv.6 解鎖＋洗碟水
-  RUN._wearEvents = applyWear();                        // 出戰發燒配件磨損（迴光一轉／報廢在此結算）
-  RUN._tunedThisWin=false;                              // 本場整備可再保養一件
+  RUN._wearEvents = applyWear();                        // 出戰發燒配件磨損（迴光一轉／報廢在此結算；耗損跨趟保留）
+  // 現金：贏一場賺一筆（越深越好賺、藏家加碼）；只能在趟與趟之間花在保養
+  const cashGain = fightCash(RUN.depth, !!(G.E&&G.E.boss));
+  META.cash = cashOf() + cashGain; RUN.cashEarned = (RUN.cashEarned||0) + cashGain; RUN._cashGain = cashGain;
+  saveMeta();
   RUN.hp = Math.min(RUN.maxHp, Math.max(1,G.p.hp) + heal);   // 贏了小回血
   // 局內經驗累積（與結算樂歷分開算）；樂評人專欄：經驗 +％
   const gain = Math.round((RXP.base + RUN.depth*RXP.perDepth) * (1 + relicFx('xpBoost')/100));
@@ -2411,7 +2459,7 @@ function renderRelicChoice(){
        <button class="btn" style="width:100%" onclick="renderRestorePick()">🧴 不拿新發燒配件，整新一件舊發燒配件到全新</button>` : '';
   $app.innerHTML = topbarHTML() + `
     <h1 style="color:var(--gold)">🎩 擊敗傳說藏家！</h1>
-    <div class="muted" style="margin:2px 0 8px">他從私藏木箱裡拿出幾件行頭——選一件<b>發燒配件</b>帶走（整趟生效、死亡洗掉）</div>
+    <div class="muted" style="margin:2px 0 8px">他從私藏木箱裡拿出幾件行頭——選一件<b>發燒配件</b>帶走（全新品相、永久進圖鑑；耗損跨趟保留）</div>
     <div id="relicChoices">${_relicChoices.map((r,i)=>`
       <div class="relic-card" onclick="pickRelic(${i})">
         <div class="ric">${relicIconHTML(r,36)}</div>
@@ -2514,9 +2562,9 @@ function openRelicView(id){
     </div>
     <div class="muted" style="font-size:11px;margin-bottom:8px">${r.desc}</div>
     <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
-      <span>品相 · <b>${gradeName(r)}</b></span><span style="color:${g.color}">${g.mul>0?'效果 ×'+g.mul:'已報廢 · 失效'}</span></div>
+      <span>品相 · <b>${gradeName(r)}</b> <span class="muted">耐久 ${duraOf(wearOf(id))}/100</span></span><span style="color:${g.color}">${g.mul>0?'效果 ×'+g.mul:'已報廢 · 失效'}</span></div>
     <div class="wbarwide"><i style="width:${Math.min(100,wearOf(id))}%;background:${g.color}"></i></div>
-    <div class="muted" style="font-size:9px;margin-top:6px">${isEquipped(id)?'出戰中 · 每場會磨損':'庫存中 · 休息不耗損'}${swan?' · ⚡ 搖搖欲墜：本場 fx 翻倍（迴光一轉）':''}</div>
+    <div class="muted" style="font-size:9px;margin-top:6px">${isEquipped(id)?'出戰中 · 每場會磨損（耗損跨趟保留，趟後可花現金保養）':'庫存中 · 休息不耗損'}${swan?' · ⚡ 搖搖欲墜：本場 fx 翻倍（迴光一轉）':''}</div>
     <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="closeRelicList()">關閉</button>
   </div>`;
@@ -2540,11 +2588,10 @@ function openLoadout(){
         : (RUN.equipped.length<wearSlots()
             ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="loAct('equip','${id}')">出戰</button>`
             : `<span class="pill" style="opacity:.4">欄滿</span>`);
-      if(!RUN._tunedThisWin && wearOf(id)>0 && !broke) acts += `<button class="pill" style="cursor:pointer;background:#fff" onclick="loAct('tune','${id}')">🧽 保養</button>`;
       if(broke) acts += `<button class="pill" style="cursor:pointer;background:#fff;color:var(--dmg);border-color:var(--dmg)" onclick="loAct('recycle','${id}')">♻ 回收</button>`;
     }
     return `<div class="relic-list-row"><div class="ric">${relicIconHTML(r,26)}</div>
-      <div style="flex:1"><b style="font-size:12px">${r.name}</b> <span style="font-size:9px;color:${g.color}">${gradeName(r)}${g.mul>0?'':' · 失效'}</span>
+      <div style="flex:1"><b style="font-size:12px">${r.name}</b> <span style="font-size:9px;color:${g.color}">${gradeName(r)} · 耐久 ${duraOf(wearOf(id))}${g.mul>0?'':' · 失效'}</span>
         <div class="wbarwide" style="margin:3px 0"><i style="width:${Math.min(100,wearOf(id))}%;background:${g.color}"></i></div>
         <div class="muted" style="font-size:9px">${r.desc}</div></div>
       <div style="display:flex;flex-direction:column;gap:3px;flex:none">${acts}</div></div>`;
@@ -2552,7 +2599,7 @@ function openLoadout(){
   const eq=equippedRelics(), bench=benchedRelics();
   mask.innerHTML=`<div class="drawcard" style="max-width:460px;text-align:left;max-height:84vh;overflow-y:auto">
     <div class="lab">🎒 整備發燒配件 · 出戰欄 ${eq.length}/${wearSlots()}</div>
-    <div class="muted" style="font-size:10px;margin:2px 0 8px">只有出戰的 fx 生效、每場磨損；庫存休息不耗。保養每場限一次。${locked?'<br><b style="color:var(--dmg)">戰鬥中鎖定，勝利後才能換裝。</b>':''}</div>
+    <div class="muted" style="font-size:10px;margin:2px 0 8px">只有出戰的 fx 生效、每場磨損；庫存休息不耗。<b>耗損跨趟保留</b>，保養要等趟結束後在配件選單花現金。${locked?'<br><b style="color:var(--dmg)">戰鬥中鎖定，勝利後才能換裝。</b>':''}</div>
     ${eq.length?eq.map(r=>row(r,true)).join(''):'<div class="muted" style="font-size:11px">出戰欄空著。</div>'}
     ${bench.length?`<div class="lab" style="margin-top:12px">庫存（休息中 · 不耗損）</div>${bench.map(r=>row(r,false)).join('')}`:''}
     ${!RUN.relics.length?'<div class="muted" style="font-size:11px">尚無發燒配件——每 5 場擊敗「傳說藏家」可獲得。</div>':''}
@@ -2566,7 +2613,6 @@ function closeLoadout(){ const m=document.getElementById('loadoutMask'); if(m) m
 function loAct(act,id){
   if(act==='equip') equipRelic(id);
   else if(act==='unequip') unequipRelic(id);
-  else if(act==='tune') tuneRelic(id);
   else if(act==='recycle') recycleRelic(id);
   openLoadout();   // 重繪面板
 }
@@ -2577,15 +2623,18 @@ function openRelicDex(){
   const got=RELICS.filter(r=>seen.has(r.id)).length;
   const mask=document.createElement('div'); mask.className='drawmask'; mask.id='relicDexMask';
   mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left;max-height:82vh;overflow-y:auto">
-    <div class="lab">發燒配件收藏（${got}/${RELICS.length}）</div>
-    <div class="muted" style="font-size:10px;margin:2px 0 6px">每 5 場擊敗「傳說藏家」可獲發燒配件三選一；拿過一次就永久點亮。</div>
+    <div class="lab">發燒配件收藏（${got}/${RELICS.length}）<span style="float:right;color:var(--gold)">💰 $${cashOf()}</span></div>
+    <div class="muted" style="font-size:10px;margin:2px 0 6px">每 5 場擊敗「傳說藏家」可獲發燒配件三選一；拿過一次就永久點亮。<b>耗損跨趟保留</b>——點一件看簡介／耐久、花現金保養。</div>
     ${RELICS.map(r=>{
       const tierTag=(r.tier||1)>1?` <span style="color:var(--gold);font-size:10px">· 進階</span>`:'';
-      return seen.has(r.id)
-        ? `<div class="relic-list-row"><div class="ric">${relicIconHTML(r,26)}</div>
-            <div><b style="font-size:12px">${r.name}</b>${tierTag}<div class="muted" style="font-size:10px">${r.desc}</div></div></div>`
-        : `<div class="relic-list-row" style="opacity:.55"><div class="ric"><span style="filter:brightness(0) opacity(.3);display:flex">${relicIconHTML(r,26)}</span></div>
+      if(!seen.has(r.id)) return `<div class="relic-list-row" style="opacity:.55"><div class="ric"><span style="filter:brightness(0) opacity(.3);display:flex">${relicIconHTML(r,26)}</span></div>
             <div><b style="font-size:12px">？？？</b>${tierTag}<div class="muted" style="font-size:10px">尚未取得</div></div></div>`;
+      const w=metaWearOf(r.id), g=WEAR.grades[gradeIndex(w)], broke=g.mul===0;
+      return `<div class="relic-list-row" style="cursor:pointer" onclick="openRelicCare('${r.id}')"><div class="ric">${relicIconHTML(r,26)}</div>
+            <div style="flex:1"><b style="font-size:12px">${r.name}</b>${tierTag} <span style="font-size:9px;color:${g.color}">${broke?'報廢 · 需保養':gradeName(r,w)+' · 耐久 '+duraOf(w)}</span>
+              <div class="wbarwide" style="margin:3px 0"><i style="width:${Math.min(100,w)}%;background:${g.color}"></i></div>
+              <div class="muted" style="font-size:10px">${r.desc}</div></div>
+            <div class="pill" style="flex:none">🔧</div></div>`;
     }).join('')}
     <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="closeRelicDex()">關閉</button>
@@ -2594,6 +2643,57 @@ function openRelicDex(){
   document.body.appendChild(mask);
 }
 function closeRelicDex(){ const m=document.getElementById('relicDexMask'); if(m) m.remove(); }
+// ---------- 配件保養視窗（趟與趟之間）：簡介＋耐久＋花現金保養 ----------
+function openRelicCare(id){
+  const r=relicById(id); if(!r) return;
+  const old=document.getElementById('relicCareMask'); if(old) old.remove();
+  const w=metaWearOf(id), gi=gradeIndex(w), g=WEAR.grades[gi], broke=g.mul===0;
+  const small=Math.min(CASH.tuneStep, w), cSmall=repairCost(id,small), cFull=repairCost(id,w);
+  const dis1=cashOf()<cSmall, dis2=cashOf()<cFull;
+  const btns = w<=0
+    ? `<div class="muted" style="font-size:10px;text-align:center">品相全新，不用保養。</div>`
+    : `<button class="btn" style="width:100%;margin-bottom:6px${dis1?';opacity:.45':''}"${dis1?' disabled':''} onclick="doRepair('${id}',false)">🧽 小保養 · 耐久 +${small} — <b>$${cSmall}</b></button>
+       <button class="btn" style="width:100%${dis2?';opacity:.45':''}"${dis2?' disabled':''} onclick="doRepair('${id}',true)">✨ 整新到全新 — <b>$${cFull}</b></button>`;
+  const mask=document.createElement('div'); mask.className='drawmask'; mask.id='relicCareMask';
+  mask.innerHTML=`<div class="drawcard" style="max-width:340px;text-align:left">
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px">
+      <div class="ric" style="width:46px;height:46px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fafafa">${relicIconHTML(r,34)}</div>
+      <div><b style="font-size:13px">${r.name}</b>${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''}
+        <div class="muted" style="font-size:10px">${catZh(r)}${(r.tier||1)>1?' · 進階件工錢較貴':''}</div></div>
+    </div>
+    <div class="muted" style="font-size:11px;margin-bottom:8px">${r.desc}</div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
+      <span>品相 · <b>${gradeName(r,w)}</b> <span class="muted">耐久 ${duraOf(w)}/100</span></span>
+      <span style="color:${g.color}">${broke?'已報廢 · 不能帶上場':'效果 ×'+g.mul}</span></div>
+    <div class="wbarwide"><i style="width:${Math.min(100,w)}%;background:${g.color}"></i></div>
+    ${broke?`<div style="font-size:10px;color:var(--dmg);margin-top:6px">💥 耐久 0——先保養才能再帶上場。</div>`:''}
+    <div style="font-size:11px;color:var(--gold);margin:8px 0 6px">💰 現金 $${cashOf()}<span class="muted" style="font-size:9px">（贏一場賺一筆、打贏藏家加碼）</span></div>
+    ${btns}
+    <div class="sp"></div>
+    <button class="btn primary" style="width:100%" onclick="closeRelicCare()">關閉</button>
+  </div>`;
+  mask.addEventListener('click', e=>{ if(e.target===mask) closeRelicCare(); });
+  document.body.appendChild(mask);
+}
+function closeRelicCare(){ const m=document.getElementById('relicCareMask'); if(m) m.remove(); }
+function doRepair(id, full){
+  const w=metaWearOf(id); if(w<=0) return;
+  const amt=full?w:Math.min(CASH.tuneStep,w);
+  const cost=repairCost(id,amt);
+  if(cashOf()<cost){ seedToast('💸 現金不足——多打幾場再來'); return; }
+  META.cash = cashOf()-cost;
+  if(!META.relicWear) META.relicWear={};
+  META.relicWear[id]=Math.max(0, w-amt);
+  saveMeta();
+  refreshCareContext();
+  openRelicCare(id);   // 重繪保養視窗（疊回最上層）
+}
+// 保養後重繪身後畫面（圖鑑列表／出戰前選單／頂欄現金）
+function refreshCareContext(){
+  if(document.getElementById('relicDexMask')){ closeRelicDex(); openRelicDex(); }
+  if(document.getElementById('loadoutGrid')) renderRelicLoadout();
+  else { const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML(); }
+}
 // 距下一位藏家還幾場（正在打藏家 → 0）
 function toNextBoss(){ const r=RUN.depth%5; return r===0 ? 0 : 5-r; }
 
@@ -2604,6 +2704,7 @@ function renderWinContinue(){
   $app.innerHTML = topbarHTML() + `
     <h1 class="good" style="color:var(--win)">${pixArtHTML(PIX_ICONS.heavy180, 20, 'pixspin')} 第 ${RUN.depth} 場 — 勝！</h1>
     <div class="muted" style="margin:2px 0 8px">連勝 ${RUN.streak}・回血至 HP ${RUN.hp}/${RUN.maxHp}・牌組 ${RUN.deck.length} 張</div>
+    <div class="muted" style="margin:2px 0 4px;color:var(--gold)">💰 收入 <b>+$${RUN._cashGain||0}</b>（存款 $${cashOf()}）<span class="muted" style="font-size:10px">— 趟結束後可花在保養配件</span></div>
     <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉發燒配件）</div>
     ${relicBarHTML()}
     <div class="muted">局內 Lv.${RUN.runLevel}　經驗 +${RUN._lastGain}（${RUN.runXp}/${need}）</div>
@@ -2613,7 +2714,7 @@ function renderWinContinue(){
       ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）——趟結束結算時可從一路抽到的盤挑 <b>1</b> 張永久收藏</div>`
       : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
     ${wearNoteHTML()}
-    ${RUN.relics.length?`<button class="btn" style="width:100%;margin-bottom:8px" onclick="openLoadout()">🎒 整備發燒配件（換裝／保養／回收）</button>`:''}
+    ${RUN.relics.length?`<button class="btn" style="width:100%;margin-bottom:8px" onclick="openLoadout()">🎒 整備發燒配件（換裝／回收）</button>`:''}
     ${(G&&G.eHist&&G.eHist.length)?`<div class="muted" style="margin:8px 0 0">本場對手出過的牌（點小圖看介紹／聽歌）</div>${histRowHTML(G.eHist,'wh')}`:''}
     <div class="sp"></div>
     <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
@@ -2884,6 +2985,8 @@ function renderDeath(){
   const prevBest = META.bestDepth;   // 先記舊紀錄 → 算「差一點」勾子
   const recordBonus = RUN.depth>META.bestDepth ? MXP.recordBonus : 0;   // 破紀錄額外給
   const gained = RUN.depth*MXP.perDepth + RUN.streak*MXP.perStreak + recordBonus;
+  const recordCash = (RUN.depth>prevBest && RUN.depth>0) ? CASH.recordBonus : 0;   // 破紀錄現金獎金
+  if(recordCash) META.cash = cashOf() + recordCash;
   const lvBefore=levelOf(META.xp);
   META.xp += gained;
   META.runsPlayed++;
@@ -2932,6 +3035,8 @@ function renderDeath(){
       <div style="margin-top:8px;min-height:16px">${recordLine}</div>
       <div class="sp"></div>
       <div>獲得樂歷 <b style="color:var(--gold)">+${gained} XP</b>　<span class="muted">(結算另計，與局內經驗無關)</span></div>
+      <div style="margin-top:4px">💰 本趟收入 <b style="color:var(--gold)">$${RUN.cashEarned||0}</b>${recordCash?`＋破紀錄獎金 <b style="color:var(--gold)">$${recordCash}</b>`:''}　<span class="muted">存款 $${cashOf()}</span></div>
+      ${(META.relicsSeen||[]).length?`<button class="btn" style="width:100%;margin-top:8px" onclick="openRelicDex()">🔧 保養發燒配件（耗損跨趟保留，現在花現金修）</button>`:''}
       ${gainedLevels>0?`<div style="color:var(--gold);font-weight:800;margin-top:6px">⬆ 樂歷升級！Lv.${lvBefore} → Lv.${lvAfter}（得 ${gainedLevels} 天賦點，下局開始前可配）</div>`:''}
       <div class="muted" style="margin-top:4px">${nextLine}</div>
       ${metCount>0?`<div class="muted" style="margin-top:2px">🎧 本趟路上遇見了 ${metCount} 張盤</div>`:''}
@@ -2983,8 +3088,13 @@ function applyConfig(cfg){
       if(Array.isArray(w.grades) && w.grades.length) WEAR.grades=w.grades;
       if(w.cat && typeof w.cat==='object') WEAR.cat=Object.assign({},WEAR.cat,w.cat);
       if(w.tierMul && typeof w.tierMul==='object') WEAR.tierMul=Object.assign({},WEAR.tierMul,w.tierMul);
-      ['enabled','slots','perFight','usedBump','swanAt','tuneAmt','cleanerHeal','recycleHeal','powerBase','powerCap']
+      ['enabled','slots','perFight','usedBump','swanAt','cleanerHeal','recycleHeal','powerBase','powerCap']
         .forEach(k=>{ if(w[k]!=null) WEAR[k]=w[k]; });
+    }
+    // 現金系統：淺層覆寫（roguelike.cash）
+    if(cfg.cash && typeof cfg.cash==='object'){
+      ['base','perDepth','bossBonus','recordBonus','repairT1','repairT2','tuneStep']
+        .forEach(k=>{ if(typeof cfg.cash[k]==='number') CASH[k]=cfg.cash[k]; });
     }
   }catch(e){ console.warn('套用後台設定失敗，改用預設', e); }
 }
