@@ -20,7 +20,7 @@
     style.textContent = `
       .music-map{border-top:1px solid var(--line,#ddd);border-bottom:1px solid var(--line,#ddd);padding:20px 0;margin:18px 0;color:var(--black,#111)}
       .music-map-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:8px}.music-map-kicker{font-size:9px;color:var(--gray,#888);letter-spacing:.12em}.music-map-title{font-size:14px;font-weight:700;letter-spacing:.08em}.music-map-total{font-size:10px;color:var(--gray,#888);white-space:nowrap}
-      .music-map-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(180px,.75fr);gap:16px;align-items:center}.music-map-svg{width:100%;max-width:500px;margin:0 auto;display:block}.music-map-svg .grid{fill:none;stroke:var(--line,#ddd);stroke-width:1}.music-map-svg .axis{stroke:var(--line,#ddd);stroke-width:1}.music-map-svg .rail{stroke:var(--line,#ddd);stroke-width:2}.music-map-svg .shape{fill:rgba(17,17,17,.12);stroke:var(--black,#111);stroke-width:2}.music-map-svg .dot{fill:var(--black,#111)}.music-map-svg .node{fill:#fff;stroke:var(--line,#ddd);stroke-width:1.5}.music-map-svg .node.on{fill:var(--black,#111);stroke:var(--black,#111)}.music-map-svg text{fill:var(--black,#111);font-family:var(--mono,monospace);font-size:10px;letter-spacing:.02em}.music-map-svg .val{fill:var(--gray,#888);font-size:9px}
+      .music-map-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(180px,.75fr);gap:16px;align-items:center}.music-map-svg{width:100%;max-width:500px;margin:0 auto;display:block}.music-map-svg .grid{fill:none;stroke:var(--line,#ddd);stroke-width:1}.music-map-svg .axis{stroke:var(--line,#ddd);stroke-width:1}.music-map-svg .rail{stroke:var(--line,#ddd);stroke-width:2}.music-map-svg .shape{fill:rgba(17,17,17,.12);stroke:var(--black,#111);stroke-width:2}.music-map-svg .dot{fill:var(--black,#111)}.music-map-svg .node{fill:#fff;stroke:var(--line,#ddd);stroke-width:1.5}.music-map-svg .node.on{fill:var(--black,#111);stroke:var(--black,#111)}.music-map-svg text{fill:var(--black,#111);font-family:var(--mono,monospace);font-size:18px;letter-spacing:.02em}.music-map-svg .val{fill:var(--gray,#888);font-size:14px}.music-map-svg .mobile-label{font-size:24px}.music-map-svg .mobile-value{font-size:18px}
       .music-map-paths{display:grid;gap:7px}.music-map-path{display:grid;grid-template-columns:1fr auto;gap:10px;font-size:10px;border-bottom:1px solid var(--line,#ddd);padding-bottom:6px}.music-map-path span:last-child{color:var(--gray,#888);text-align:right}.music-map-note{margin-top:10px;font-size:10px;line-height:1.7;color:var(--gray,#888)}
       .music-map.compact{padding:16px 0;margin:0 0 12px}.music-map.compact .music-map-layout{grid-template-columns:minmax(0,1fr) 135px;gap:10px}.music-map.compact .music-map-svg{max-width:260px}.music-map.compact .music-map-paths{gap:4px}.music-map.compact .music-map-path{font-size:9px;padding-bottom:4px}.music-map.compact .music-map-note{display:none}.music-map.compact .music-map-title{font-size:12px}
       @media(max-width:520px){.music-map-layout,.music-map.compact .music-map-layout{grid-template-columns:1fr}.music-map:not(.compact) .music-map-svg{max-width:350px}.music-map.compact .music-map-svg{max-width:310px}.music-map.compact .music-map-paths{grid-template-columns:1fr 1fr;gap:5px}.music-map.compact .music-map-path{font-size:8px}.music-map-head{align-items:flex-start;flex-direction:column;gap:3px}}
@@ -29,6 +29,7 @@
   }
 
   function chart(data, compact) {
+    const mobileFull = !compact && window.matchMedia && window.matchMedia('(max-width: 520px)').matches;
     const cx = 250, cy = 240, radar = 110, nodes = [130, 145, 160, 175, 190, 205], label = compact ? 226 : 244, all = total(data) || 1;
     const polygon = r => GENRES.map((_, i) => { const p = at(i, r, cx, cy); return `${p.x},${p.y}`; }).join(' ');
     const grid = [.25, .5, .75, 1].map(x => `<polygon class="grid" points="${polygon(radar * x)}"/>`).join('');
@@ -37,8 +38,17 @@
     const path = GENRES.map(([id], i) => { const p = at(i, radar * data.credits[id] / all, cx, cy); return `${i ? 'L' : 'M'} ${p.x} ${p.y}`; }).join(' ') + ' Z';
     const points = GENRES.map(([id], i) => { const p = at(i, radar * data.credits[id] / all, cx, cy); return `<circle class="dot" cx="${p.x}" cy="${p.y}" r="3"/>`; }).join('');
     const mapNodes = GENRES.map(([id], i) => MARKS.map((m, j) => { const p = at(i, nodes[j], cx, cy); return `<circle class="node ${data.credits[id] >= m ? 'on' : ''}" cx="${p.x}" cy="${p.y}" r="4.5"/>`; }).join('')).join('');
-    const labels = GENRES.map(([id, name], i) => { const p = at(i, label, cx, cy), anchor = p.x < 210 ? 'end' : p.x > 290 ? 'start' : 'middle'; const value = data.credits[id]; return `<text x="${p.x}" y="${p.y}" text-anchor="${anchor}">${compact ? name.split(' ')[0] : name}</text><text class="val" x="${p.x}" y="${p.y + 12}" text-anchor="${anchor}">${value} 點 · ${Math.round(value / all * 100)}%</text>`; }).join('');
-    return `<svg class="music-map-svg" viewBox="-115 -30 730 570" role="img" aria-label="聆聽品味分布圖">${grid}${axes}${rails}<path class="shape" d="${path}"/>${points}${mapNodes}${labels}</svg>`;
+    const mobileLabels = [
+      [250,-18,'middle'], [460,62,'end'], [478,193,'end'], [460,428,'end'],
+      [250,492,'middle'], [40,428,'start'], [22,193,'start'], [40,62,'start']
+    ];
+    const labels = GENRES.map(([id, name], i) => {
+      const p = mobileFull ? { x:mobileLabels[i][0], y:mobileLabels[i][1] } : at(i, label, cx, cy);
+      const anchor = mobileFull ? mobileLabels[i][2] : (p.x < 210 ? 'end' : p.x > 290 ? 'start' : 'middle');
+      const value = data.credits[id];
+      return `<text class="${mobileFull ? 'mobile-label' : ''}" x="${p.x}" y="${p.y}" text-anchor="${anchor}">${compact ? name.split(' ')[0] : name}</text><text class="val ${mobileFull ? 'mobile-value' : ''}" x="${p.x}" y="${p.y + (mobileFull ? 24 : 12)}" text-anchor="${anchor}">${value} 點 · ${Math.round(value / all * 100)}%</text>`;
+    }).join('');
+    return `<svg class="music-map-svg" viewBox="${mobileFull ? '0 -50 500 600' : '-115 -30 730 570'}" role="img" aria-label="聆聽品味分布圖">${grid}${axes}${rails}<path class="shape" d="${path}"/>${points}${mapNodes}${labels}</svg>`;
   }
 
   function render(target, source, compact, message = '') {
