@@ -535,7 +535,7 @@
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, getDocs, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 // ───────── Firebase（與 index.html 同專案）─────────
@@ -552,6 +552,16 @@ const auth = getAuth(fbApp);
 const googleProvider = new GoogleAuthProvider();
 const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 let currentUser = null, authReady = false, myColl = null, myStats = null;
+const MAP_GENRE_IDS=['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+const validMapGenres=tags=>[...new Set((tags||[]).filter(tag=>MAP_GENRE_IDS.includes(tag)))];
+async function findMapGenres(card,saved){
+  const known=validMapGenres(saved); if(known.length) return known;
+  try{const res=await fetch(`${WORKER_URL}/album-genres?artist=${encodeURIComponent(card.artist||'')}&album=${encodeURIComponent(card.album||'')}`);return res.ok?validMapGenres((await res.json()).genres):[];}catch(e){return [];}
+}
+async function addMapCredit(tags){
+  if(!currentUser) return; const valid=validMapGenres(tags),credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
+  try{await setDoc(doc(db,'users',currentUser.uid),{musicMap:{version:1,albums:increment(1),credits,updatedAt:Date.now()}},{merge:true});}catch(e){}
+}
 
 // ───────── 封測開關（未來正式開放：poOpponent 設 false 即移除「與 Po 對戰」；minDeck 設 10 即需 10 張才能打）─────────
 const BETA = { poOpponent:true };
@@ -1534,14 +1544,19 @@ async function addCardToColl(card){
     await ensureCover(card);
     const snap = await getDoc(ref);
     if(snap.exists()){
-      await setDoc(ref, { count:(snap.data().count||1)+1, lastObtainedAt:Date.now() }, { merge:true });
+      const cur=snap.data(), mapGenres=await findMapGenres(card,cur.mapGenres);
+      await setDoc(ref, { count:(cur.count||1)+1, lastObtainedAt:Date.now(), ...(mapGenres.length&&!validMapGenres(cur.mapGenres).length?{mapGenres}:{}) }, { merge:true });
+      await addMapCredit(mapGenres);
       myColl = null; return 'dup';
     }
+    const mapGenres=await findMapGenres(card);
     await setDoc(ref, {
       cardId:id, artist:card.artist||'', album:card.album||'',
       coverUrl:card.coverUrl||'', count:1, obtainedAt:Date.now(), source:'battle',
       ...(card.ace==='hall'?{hall:true}:{}), ...(card.ace==='pearl'?{pearl:true}:{}), ...(card.ace==='heresy'?{heresy:true}:{}),
+      ...(mapGenres.length?{mapGenres}:{}),
     }, { merge:true });
+    await addMapCredit(mapGenres);
     myColl = null; return true;
   }catch(e){ return false; }
 }

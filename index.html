@@ -604,7 +604,7 @@
     </button>
     <button class="homehub-card" data-go="music-map">
       <div>
-        <div class="homehub-card-name">音樂地圖<span class="homehub-beta">PREVIEW</span></div>
+        <div class="homehub-card-name">音樂地圖</div>
         <div class="homehub-card-desc">看你的收藏如何長成八大曲風的聆聽版圖。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
@@ -761,7 +761,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   const app = initializeApp({
@@ -862,6 +862,24 @@
     } catch (e) {}
   }
 
+  const MUSIC_MAP_GENRES = ['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+  const validMapGenres = (genres) => [...new Set((genres || []).filter(g => MUSIC_MAP_GENRES.includes(g)))];
+  async function findMapGenres(card, savedGenres) {
+    const known = validMapGenres(savedGenres);
+    if (known.length) return known;
+    try {
+      const res = await fetch(`${WORKER_URL}/album-genres?artist=${encodeURIComponent(card.artist || '')}&album=${encodeURIComponent(card.album || '')}`);
+      return res.ok ? validMapGenres((await res.json()).genres) : [];
+    } catch (e) { return []; }
+  }
+  async function addMusicMapCredit(genres) {
+    if (!currentUser) return;
+    const tags = validMapGenres(genres);
+    const credits = Object.fromEntries(tags.map(id => [id, increment(1)]));
+    try { await setDoc(doc(db, 'users', currentUser.uid), { musicMap: { version: 1, albums: increment(1), credits, updatedAt: Date.now() } }, { merge: true }); }
+    catch (e) { console.warn('[music-map] credit save failed', e); }
+  }
+
   // 收進卡冊（已收藏則張數 +1）
   async function addCardToCollection(card) {
     if (!currentUser) return 'need-login';
@@ -879,9 +897,13 @@
         if (card.hall && !cur.hall) upgrade.hall = true;
         if (card.pearl && !cur.pearl) upgrade.pearl = true;
         if (card.heresy && !cur.heresy) upgrade.heresy = true;
+        const mapGenres = await findMapGenres(card, cur.mapGenres);
+        if (mapGenres.length && !validMapGenres(cur.mapGenres).length) upgrade.mapGenres = mapGenres;
         await setDoc(ref, { count: (cur.count || 1) + 1, lastObtainedAt: Date.now(), ...upgrade }, { merge: true });
+        await addMusicMapCredit(mapGenres);
         return 'dup';
       }
+      const mapGenres = await findMapGenres(card);
       await setDoc(ref, {
         cardId: id,
         artist: card.artist || '',
@@ -893,8 +915,10 @@
         ...(card.reelUrl ? { reelUrl: card.reelUrl } : {}),
         ...(card.hall ? { hall: true } : {}),
         ...(card.pearl ? { pearl: true } : {}),
-        ...(card.heresy ? { heresy: true } : {})
+        ...(card.heresy ? { heresy: true } : {}),
+        ...(mapGenres.length ? { mapGenres } : {})
       });
+      await addMusicMapCredit(mapGenres);
       return 'new';
     } catch (e) {
       console.warn('[collection] save failed', e);

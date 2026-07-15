@@ -59,6 +59,20 @@
     </a>
   </div>
   <script src="music-map-widget.js"></script>
-  <script>DipMusicMap.mount(document.getElementById('pvpMusicMap'), { compact:true });</script>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+    const app = initializeApp({ apiKey:'AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg', authDomain:'price-manager-e8846.firebaseapp.com', projectId:'price-manager-e8846', storageBucket:'price-manager-e8846.firebasestorage.app', messagingSenderId:'570133498387', appId:'1:570133498387:web:8835b8d2373797e91d0de6' });
+    const db = getFirestore(app), auth = getAuth(app), map = DipMusicMap.mount(document.getElementById('pvpMusicMap'), { compact:true });
+    onAuthStateChanged(auth, async user => {
+      if (!user) return map.update(DipMusicMap.empty(), '登入後會在這裡顯示你的永久收藏地圖。');
+      try {
+        const profile = (await getDoc(doc(db, 'users', user.uid))).data();
+        if (profile?.musicMap?.version === 1) map.update(profile.musicMap);
+        else map.update(DipMusicMap.empty(), '請先到「我的音樂地圖」建立既有卡冊資料。');
+      } catch { map.update(DipMusicMap.empty(), '暫時無法讀取地圖資料。'); }
+    });
+  </script>
 </body>
 </html>

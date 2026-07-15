@@ -380,7 +380,7 @@
 <!-- 讀取後台設定（gameConfig/roguelike）。讀不到就用內建預設，離線仍可玩。 -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, doc, getDoc, setDoc, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, doc, getDoc, setDoc, collection, getDocs, query, where, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
   window.__rogueCfg = (async () => {
     try {
@@ -405,6 +405,17 @@
         try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>({cardId:d.id,...d.data()})); }
         catch(e){ return []; }
       };
+      const mapGenreIds=['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+      const validMapGenres=tags=>[...new Set((tags||[]).filter(tag=>mapGenreIds.includes(tag)))];
+      const findMapGenres=async(card,saved)=>{
+        const known=validMapGenres(saved); if(known.length) return known;
+        try{ const res=await fetch('https://dip-vinyl-worker.kubinice06.workers.dev/album-genres?artist='+encodeURIComponent(card.artist||'')+'&album='+encodeURIComponent(card.album||'')); return res.ok?validMapGenres((await res.json()).genres):[]; }catch(e){ return []; }
+      };
+      const addMapCredit=async(tags)=>{
+        const valid=validMapGenres(tags), u=auth.currentUser; if(!u) return;
+        const credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
+        try{ await setDoc(doc(db,'users',u.uid),{musicMap:{version:1,albums:increment(1),credits,updatedAt:Date.now()}},{merge:true}); }catch(e){}
+      };
       // 收進會員卡冊（與商店 index.html addCardToCollection 同 schema / 同 doc id 規則）
       window.__addToMyCollection = async (card) => {
         const u = auth.currentUser; if(!u) return 'need-login';
@@ -418,14 +429,19 @@
             if(card.ace==='hall' && !cur.hall) up.hall = true;
             if(card.ace==='pearl' && !cur.pearl) up.pearl = true;
             if(card.ace==='heresy' && !cur.heresy) up.heresy = true;
+            const mapGenres=await findMapGenres(card,cur.mapGenres);
+            if(mapGenres.length && !validMapGenres(cur.mapGenres).length) up.mapGenres=mapGenres;
             await setDoc(ref,{ count:(cur.count||1)+1, lastObtainedAt:Date.now(), ...up },{merge:true});
+            await addMapCredit(mapGenres);
             return 'dup';
           }
+          const mapGenres=await findMapGenres(card);
           await setDoc(ref,{
             cardId:id, artist:card.artist||'', album:card.album||'',
             coverUrl:card.coverUrl||'', desc:'', count:1, obtainedAt:Date.now(),
-            ...(card.ace==='hall'?{hall:true}:{}), ...(card.ace==='pearl'?{pearl:true}:{}), ...(card.ace==='heresy'?{heresy:true}:{})
+            ...(card.ace==='hall'?{hall:true}:{}), ...(card.ace==='pearl'?{pearl:true}:{}), ...(card.ace==='heresy'?{heresy:true}:{}), ...(mapGenres.length?{mapGenres}:{})
           });
+          await addMapCredit(mapGenres);
           return 'new';
         } catch(e){ return false; }
       };
