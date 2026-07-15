@@ -494,7 +494,7 @@
 
 // ---------- 戰鬥規則（與 CARD_GAME_DESIGN §8 / battle.html 一致；roguelike override）----------
 const CFG = {
-  startHp:10,            // roguelike 快打：HP 更低（10）→ 更快分勝負、玩家更需步步為營
+  startHp:12,            // roguelike 快打：與設計目標及後台預設一致；保留 3–4 招決勝的空間
   startHand:5, drawPerTurn:1, handLimit:7,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生（與 beats 反向）
