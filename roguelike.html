@@ -159,7 +159,7 @@
   .qibar2 i.on{background:var(--qi);border-color:var(--qi);}
   .qibar2.full{animation:qiglow .9s infinite;}
   @keyframes qiglow{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,0);}50%{box-shadow:0 0 8px 1px rgba(184,134,11,.7);}}
-  .etell{display:flex;align-items:center;justify-content:center;gap:8px;min-height:30px;margin:8px auto 0;padding:6px 10px;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:center;}
+  .etell{display:flex;align-items:center;justify-content:flex-end;gap:8px;min-height:30px;margin:8px auto 0;padding:6px 10px;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:right;}
   .etell:empty{border-color:transparent;}
   .etell b{color:var(--black);font-weight:700;}
   .arena{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 0;}
@@ -1035,28 +1035,29 @@ function placeSprites(){
 }
 // ---------- 腳邊唱片堆：取手牌屬性主色，散放的封套＋黑膠（丟牌少一張、抽牌補回來） ----------
 const STACK_POS=[[0,3],[3,0],[7,4],[10,1],[14,6]];
-function stackCardCol(c){
+function stackCardCol(c, concealed){
+  if(concealed) return 'e';           // 對手的手牌資訊必須隱藏：一律中性色，不洩漏屬性主色
   const attrs=['classic','obscurity','accessibility'];
   const top=attrs.reduce((best,a)=>(c[a]||0)>(c[best]||0)?a:best,attrs[0]);
   return {classic:'b',obscurity:'p',accessibility:'r'}[top]; // 與手牌三圍色一致：經典藍／冷門紫／硬蕊紅
 }
-function recStackRows(hand){
+function recStackRows(hand, concealed){
   const cards=(hand||[]).slice(-5), w=23, h=16;
   const px=Array.from({length:h},()=>Array(w).fill('.'));
   const put=(x,y,c)=>{ if(x>=0&&x<w&&y>=0&&y<h) px[y][x]=c; };
   cards.forEach((card,i)=>{
-    const [x,y]=STACK_POS[i], col=stackCardCol(card);
+    const [x,y]=STACK_POS[i], col=stackCardCol(card,concealed);
     // 8×8 封套；每張略為錯開，露出的黑膠與中心標籤讓它讀起來像手牌縮影，而非整齊色條。
     for(let yy=0;yy<8;yy++) for(let xx=0;xx<8;xx++) put(x+xx,y+yy,(xx===0||xx===7||yy===0||yy===7)?'k':col);
     [[3,2],[4,2],[2,3],[3,3],[4,3],[5,3],[2,4],[3,4],[4,4],[5,4],[3,5],[4,5]].forEach(([xx,yy])=>put(x+xx,y+yy,'k'));
-    [[3,3],[4,3],[3,4],[4,4]].forEach(([xx,yy])=>put(x+xx,y+yy,i%2?'y':'s'));
+    [[3,3],[4,3],[3,4],[4,4]].forEach(([xx,yy])=>put(x+xx,y+yy,concealed?'d':(i%2?'y':'s')));
   });
   return px.map(row=>row.join(''));
 }
 function updateStacks(){
   const me=document.getElementById('stkE'), mp=document.getElementById('stkP');
   if(!me||!mp||!G) return;
-  const re=recStackRows(G.e.hand), rp=recStackRows(G.p.hand);
+  const re=recStackRows(G.e.hand,true), rp=recStackRows(G.p.hand,false);
   me.innerHTML = G.e.hand.length? pixArtHTML(re,38) : '';
   mp.innerHTML = G.p.hand.length? pixArtHTML(rp,38) : '';
   placeStacks();
