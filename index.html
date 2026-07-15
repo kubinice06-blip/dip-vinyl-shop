@@ -602,6 +602,13 @@
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
+    <button class="homehub-card" data-go="music-map">
+      <div>
+        <div class="homehub-card-name">音樂地圖<span class="homehub-beta">PREVIEW</span></div>
+        <div class="homehub-card-desc">看你的收藏如何長成八大曲風的聆聽版圖。</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
     <button class="homehub-card" data-go="history">
       <div>
         <div class="homehub-card-name">我的紀錄</div>
@@ -1772,6 +1779,7 @@
   function setActiveTab(tab) {
     // 卡牌對戰為獨立頁面，直接導向
     if (tab === 'pvp') { location.href = 'pvp.html'; return; }
+    if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
     currentView = tab;

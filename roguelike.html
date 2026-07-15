@@ -1786,6 +1786,9 @@ function enemyForDepth(d){
 }
 
 function nextFight(){
+  // 每場勝利先翻一張新專輯：把「變強」與「認識一張盤」綁成同一個循環。
+  // 開局 depth=0 不攔截；已抽盤後才可進下一場。
+  if(RUN.depth>0 && !RUN._drewThisWin){ openDrawReveal(); return; }
   RUN.depth++;            // 進入第 depth 場
   ensureRelicState();     // 相容舊存檔＋補齊出戰欄
   const E = enemyForDepth(RUN.depth);
@@ -2726,13 +2729,13 @@ function renderWinContinue(){
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
     <div style="font-size:11px;color:var(--dim);margin-bottom:12px">能力：${modsLine()}</div>
     ${RUN._drewThisWin
-      ? `<div class="muted" style="margin-bottom:10px">🎴 本場抽到的盤已加入牌組（共 ${RUN.deck.length} 張）——趟結束結算時可從一路抽到的盤挑 <b>1</b> 張永久收藏</div>`
-      : `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="openDrawReveal()">🎴 局末抽盤 · 看介紹後進卡組</button>`}
+      ? `<div class="muted" style="margin-bottom:10px">🎴 本場新認識的盤已加入牌組（共 ${RUN.deck.length} 張）——趟結束結算時可從一路抽到的盤挑 <b>1</b> 張永久收藏</div>`
+      : `<div class="muted" style="margin:8px 0 6px;color:var(--gold)">這場贏到一個認識新專輯的機會：看完介紹，帶它進下一場。</div><button class="btn primary" style="width:100%;margin-bottom:8px;border-color:var(--gold);background:var(--gold)" onclick="openDrawReveal()">🎴 翻一張新專輯 →</button>`}
     ${wearNoteHTML()}
     ${RUN.relics.length?`<button class="btn" style="width:100%;margin-bottom:8px" onclick="openLoadout()">🎒 整備發燒配件（換裝／回收）</button>`:''}
     ${(G&&G.eHist&&G.eHist.length)?`<div class="muted" style="margin:8px 0 0">本場對手出過的牌（點小圖看介紹／聽歌）</div>${histRowHTML(G.eHist,'wh')}`:''}
     <div class="sp"></div>
-    <button class="btn primary" style="width:100%" onclick="nextFight()">下一場 →</button>`;
+    ${RUN._drewThisWin?`<button class="btn primary" style="width:100%" onclick="nextFight()">帶著這張盤進下一場 →</button>`:''}`;
   if(G&&G.eHist) lazyHistCovers(G.eHist,'wh');
 }
 // 勝利畫面的耗損播報（報廢／降階）
@@ -2771,7 +2774,7 @@ function openDrawReveal(){
     const mask=document.createElement('div');
     mask.className='drawmask'; mask.id='drawMask';
     mask.innerHTML=`<div class="drawcard" style="max-width:480px">
-      <div class="lab">★ 局末抽盤 · 會員集點卡發威——二選一</div>
+      <div class="lab">★ 勝利戰利品 · 先認識一張盤——二選一</div>
       <div class="drawtwo">${_drawChoices.map((c,i)=>`
         <div class="opt">
           <div class="cov2 noimg" id="dt2cov${i}"><span>${c.album}</span></div>
@@ -2781,7 +2784,7 @@ function openDrawReveal(){
           <div class="intro2 wait" id="dt2intro${i}">介紹載入中…</div>
           <button class="btn primary" style="width:100%" onclick="confirmDrawChoice(${i})">選這張 →</button>
         </div>`).join('')}</div>
-      <div class="muted" style="font-size:10px;margin-top:8px">趟結束結算時，可從一路抽到的盤中挑 <b>1</b> 張永久收進卡冊</div>
+      <div class="muted" style="font-size:10px;margin-top:8px">選完會加入本趟牌組；趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進卡冊</div>
     </div>`;
     document.body.appendChild(mask);
     _drawChoices.forEach((c,i)=>{
@@ -2796,7 +2799,7 @@ function openDrawReveal(){
   const mask = document.createElement('div');
   mask.className = 'drawmask'; mask.id = 'drawMask';
   mask.innerHTML = `<div class="drawcard">
-    <div class="lab">★ 局末抽盤 · 為你抽到</div>
+    <div class="lab">★ 勝利戰利品 · 為你翻到</div>
     <div class="cov noimg" id="drawCov"><span>${c.album}</span></div>
     <div class="ar">${c.artist}</div>
     <div class="al">${c.album}</div>
@@ -2804,8 +2807,8 @@ function openDrawReveal(){
     <div class="stats">${starsHTML(c)}</div>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
     <a class="btn" id="drawStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
-    <button class="btn primary" style="width:100%" onclick="confirmDraw()">加入本趟牌組 →</button>
-    <div class="muted" style="font-size:10px;margin-top:8px">趟結束結算時，可從一路抽到的盤中挑 <b>1</b> 張永久收進卡冊</div>
+    <button class="btn primary" style="width:100%" onclick="confirmDraw()">帶這張盤進下一場 →</button>
+    <div class="muted" style="font-size:10px;margin-top:8px">趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進卡冊</div>
   </div>`;
   document.body.appendChild(mask);
   ensureCover(c).then(url=>{

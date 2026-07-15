@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>音樂地圖 · dip</title>
+  <meta name="theme-color" content="#111111">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} :root{--black:#111;--gray:#888;--line:#ddd;--bg:#fff;--mono:'Space Mono',monospace}
+    body{background:var(--bg);color:var(--black);font-family:var(--mono);font-size:11px;letter-spacing:.04em;min-height:100dvh}.topbar{height:40px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 20px}.topbar a{color:var(--black);text-decoration:none;font-size:11px;letter-spacing:.08em}.topbar a:hover{color:var(--gray)}main{max-width:760px;margin:0 auto;padding:34px 20px 48px}.eyebrow{font-size:9px;color:var(--gray);letter-spacing:.14em;margin-bottom:10px}.title{font-size:22px;letter-spacing:.1em}.preview{display:inline-block;vertical-align:4px;margin-left:7px;border:1px solid currentColor;padding:1px 5px;font-size:8px;letter-spacing:.12em}.sub{margin-top:12px;color:var(--gray);line-height:1.8;max-width:540px}.login-note{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-top:24px;line-height:1.7;color:var(--gray)}
+  </style>
+</head>
+<body>
+  <div class="topbar"><a href="index.html">↩ 回主頁</a></div>
+  <main>
+    <div class="eyebrow">MY COLLECTION</div>
+    <div class="title">音樂地圖<span class="preview">PREVIEW</span></div>
+    <div class="sub">你的永久收藏，慢慢長成一張屬於自己的聆聽版圖。</div>
+    <div class="login-note">預覽階段使用示例資料，尚未寫入任何帳號。正式啟用後，需登入才會永久記錄；每趟結算選擇收進卡冊的專輯才會推進地圖。</div>
+    <div id="musicMapFull"></div>
+  </main>
+  <script src="music-map-widget.js"></script>
+  <script>DipMusicMap.mount(document.getElementById('musicMapFull'));</script>
+</body>
+</html>
