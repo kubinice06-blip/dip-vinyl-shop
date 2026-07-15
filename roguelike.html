@@ -159,8 +159,8 @@
   .qibar2 i.on{background:var(--qi);border-color:var(--qi);}
   .qibar2.full{animation:qiglow .9s infinite;}
   @keyframes qiglow{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,0);}50%{box-shadow:0 0 8px 1px rgba(184,134,11,.7);}}
-  /* 左側預留給絕對定位的對手與其唱片，提示框本身不再延伸進該區。 */
-  .etell{display:flex;align-items:center;justify-content:flex-end;gap:8px;min-height:30px;margin:8px 0 0 72px;padding:6px 10px;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:right;}
+  /* 提示框依內容收合並貼齊右側；左側留給絕對定位的對手與其唱片。 */
+  .etell{display:flex;align-items:center;justify-content:flex-end;gap:8px;width:fit-content;max-width:calc(100% - 72px);min-height:30px;margin:8px 0 0 auto;padding:6px 10px;box-sizing:border-box;border:1px dashed var(--gray);font-size:10px;color:var(--gray);letter-spacing:0.04em;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .etell:empty{border-color:transparent;}
   .etell b{color:var(--black);font-weight:700;}
   .arena{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 0;}
@@ -271,7 +271,7 @@
     body.in-battle .arena{flex:1 0 auto;justify-content:center;padding:6px 0;}
     .slots{gap:12px;}
     .slot{max-width:164px;}
-    .etell{min-height:24px;margin:6px 0 0 72px;padding:5px 8px;}
+    .etell{min-height:24px;margin:6px 0 0 auto;padding:5px 8px;}
     .side{padding:4px 0;}
     .side.enemy{padding-bottom:6px;}
     .player-zone{padding:4px 0 2px;}
