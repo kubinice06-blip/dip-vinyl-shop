@@ -502,12 +502,12 @@ const CFG = {
   qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
   qiChain2:1, qiChain3:2, qiChainCap:4,
   valueDmg:1, ultimate:6, pUltimate:4,   // 玩家輾壓基礎傷害較低（敵方仍 6）→ 輾壓不再一招定生死
-  hitQiDrain:1, hitQiDrainAcc:2,         // 被攻擊掉氣勢：一般 -1、被【入耳】-2（敵我皆適用）
+  hitQiDrain:1, hitQiDrainAcc:2,         // 被攻擊掉氣勢：一般 -1、被【硬蕊】-2（敵我皆適用）
   attrFx:{ classic:1, obscurity:1, accessibility:1 },
   ace:{ hall:{enemyQi:2}, pearl:{counterQiBonus:1}, heresy:{zeroEnemyQi:true} },
 };
 const ATTRS = ['classic','obscurity','accessibility'];
-const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'入耳' };
+const ATTR_ZH = { classic:'經典', obscurity:'冷門', accessibility:'硬蕊' };
 const ATTR_FX_ZH = { classic:'守 +1聲望', obscurity:'挖 +1氣勢', accessibility:'攻 擊中削2氣勢' };
 const ACE_ZH = { hall:'殿堂', pearl:'流亡', heresy:'異端' };
 const COUNTER_SKILL = { classic:'大眾共鳴', obscurity:'品味突襲', accessibility:'降維打擊' };
@@ -759,8 +759,8 @@ let CLASSES = {
   digger:{ name:'挖掘派', tag:'〔挖〕冷門 · 氣勢爆發', stats:{atk:1,def:1,qir:1}, maxHpBonus:0, qiPerTurn:1,
            affinity:'obscurity', affBuff:{qi:1}, affDesc:'打【冷門】牌：額外 +1 氣勢',
            desc:'每回合氣勢自動 +1、充能較快，較常放品味輾壓。' },
-  heretic:{name:'異端派', tag:'〔攻〕入耳 · aggro 壓制', stats:{atk:2,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
-           affinity:'accessibility', affBuff:{dmg:1,foeQi:1}, affDesc:'打【入耳】且該回合打贏：額外 +1 傷害、削對手 1 氣勢',
+  heretic:{name:'異端派', tag:'〔攻〕硬蕊 · aggro 壓制', stats:{atk:2,def:1,qir:1}, maxHpBonus:0, qiPerTurn:0,
+           affinity:'accessibility', affBuff:{dmg:1,foeQi:1}, affDesc:'打【硬蕊】且該回合打贏：額外 +1 傷害、削對手 1 氣勢',
            desc:'攻擊較高、傷害狠，打快攻速戰速決。' },
 };
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
@@ -1836,19 +1836,19 @@ function computeChain(side, attr){
   return { len:side.chain, qi };
 }
 function applyAttrEffect(side, attr){
-  // 出招當下的自身效果：經典回聲望、冷門充氣勢。（入耳的削氣勢改成「被入耳打中才削」，見 drainQiOnHit）
+  // 出招當下的自身效果：經典回聲望、冷門充氣勢。（硬蕊的削氣勢改成「被硬蕊打中才削」，見 drainQiOnHit）
   const me=G[side.side];
   if(attr==='classic') me.hp=Math.min(me.maxHp, me.hp+CFG.attrFx.classic);
   else if(attr==='obscurity') me.qi=clampQi(me.qi+CFG.attrFx.obscurity);
 }
-// 被攻擊（吃到傷害）→ 該方氣勢下降；被【入耳】打中 -2，其餘 -1（敵我皆適用）
+// 被攻擊（吃到傷害）→ 該方氣勢下降；被【硬蕊】打中 -2，其餘 -1（敵我皆適用）
 function drainQiOnHit(victimSide, atkAttr, dmg){
   if(dmg<=0) return;
   const v=G[victimSide]; if(v.qi<=0) return;
   const drop = atkAttr==='accessibility' ? CFG.hitQiDrainAcc : CFG.hitQiDrain;
   const real = Math.min(v.qi, drop);
   v.qi=clampQi(v.qi-drop);
-  pushLog(`${victimSide==='p'?'你':'對手'}被${atkAttr==='accessibility'?'【入耳】':''}攻擊 → 氣勢 -${real}`,'qi');
+  pushLog(`${victimSide==='p'?'你':'對手'}被${atkAttr==='accessibility'?'【硬蕊】':''}攻擊 → 氣勢 -${real}`,'qi');
 }
 
 // 隱形 DDA（同 battle.html 的 mercyLevel 思路，介面零洩漏）：
@@ -1912,7 +1912,7 @@ function startTurn(){
     if(G.pCounteredTellLast && Math.random() >= mercy*0.7 && Math.random()<fd){ attr = COUNTER_OF[COUNTER_OF[tell]]; }
     else {
       // 主動虛晃：normal 一成五、hard 從第 5 場起隨深度爬到過半 → 照提示剋反而常吃虧
-      // 虛晃＝故意出「剋掉玩家反制牌」的牌型：他說打入耳、你打經典想剋 → 他實出冷門反剋你的經典
+      // 虛晃＝故意出「剋掉玩家反制牌」的牌型：他說打硬蕊、你打經典想剋 → 他實出冷門反剋你的經典
       const feintP = (G.diff==='hard' ? Math.min(.55, .18 + Math.max(0,d-5)*.05) : .15) * (1 - mercy*0.8) * fd;
       if(Math.random()<feintP) attr = COUNTER_OF[COUNTER_OF[tell]];
     }
@@ -2023,22 +2023,22 @@ function openRules(){
     <div class="lab">玩法規則</div>
     <div style="display:flex;justify-content:center;margin-bottom:6px">${REL_RING_SVG}</div>
     <ul style="font-size:11px;line-height:1.9;padding-left:18px;margin:0 0 10px">
-      <li><b style="color:var(--classic)">經典</b>＝時間驗證的主流名盤地位／<b style="color:var(--obscurity)">冷門</b>＝沒人聽過的資訊差與神祕感／<b style="color:var(--accessibility)">入耳</b>＝其實是「入耳<u>難度</u>」，越前衛越解構越難入耳。三者互有天敵，才有相生相剋。</li>
-      <li><b style="color:var(--dmg)">相剋</b>（實線→）：經典 剋 入耳、入耳 剋 冷門、冷門 剋 經典。剋中＝傷害為<b>該招的星數</b>、氣勢 +3（被剋方 +1）。<b>王牌不會被相剋</b>。<b>為什麼這樣剋</b>：
+      <li><b style="color:var(--classic)">經典</b>＝時間驗證的主流名盤地位／<b style="color:var(--obscurity)">冷門</b>＝沒人聽過的資訊差與神祕感／<b style="color:var(--accessibility)">硬蕊</b>＝其實是「入耳<u>難度</u>」，越前衛越解構越難入耳。三者互有天敵，才有相生相剋。</li>
+      <li><b style="color:var(--dmg)">相剋</b>（實線→）：經典 剋 硬蕊、硬蕊 剋 冷門、冷門 剋 經典。剋中＝傷害為<b>該招的星數</b>、氣勢 +3（被剋方 +1）。<b>王牌不會被相剋</b>。<b>為什麼這樣剋</b>：
         <ul style="padding-left:16px;margin:3px 0 0;list-style:'▸ '">
           <li><b>冷門 剋 經典〔品味突襲〕</b>：拿邊緣稀有盤戳主流「太通俗」的痛點——你聽的大家都聽過，有什麼了不起？</li>
-          <li><b>經典 剋 入耳〔大眾共鳴〕</b>：經得起時間的歷史地位，正面壓過前衛的晦澀抗拒——再前衛也撼動不了公認的偉大。</li>
-          <li><b>入耳 剋 冷門〔降維打擊〕</b>：用前衛的硬實力與混亂，拆穿小眾「只是沒人聽過」的神祕防線——稀有不等於厲害。</li>
+          <li><b>經典 剋 硬蕊〔大眾共鳴〕</b>：經得起時間的歷史地位，正面壓過前衛的晦澀抗拒——再前衛也撼動不了公認的偉大。</li>
+          <li><b>硬蕊 剋 冷門〔降維打擊〕</b>：用前衛的硬實力與混亂，拆穿小眾「只是沒人聽過」的神祕防線——稀有不等於厲害。</li>
         </ul></li>
       <li><b>純比星</b>：沒相剋就比星數，差幾星扣幾血，贏家氣勢 +1；平手雙方氣勢 +1。</li>
-      <li><b style="color:var(--qi)">相生連段</b>（虛線⇢）：照 經典→冷門→入耳→經典 的順序接招：2 連氣勢 +1、3 連 +2（連過長不再加）。這條鏈是一個聽眾的<b>進化史</b>：
+      <li><b style="color:var(--qi)">相生連段</b>（虛線⇢）：照 經典→冷門→硬蕊→經典 的順序接招：2 連氣勢 +1、3 連 +2（連過長不再加）。這條鏈是一個聽眾的<b>進化史</b>：
         <ul style="padding-left:16px;margin:3px 0 0;list-style:'⇢ '">
           <li><b>經典 → 冷門〔品味拓荒〕</b>：大眾名盤聽到審美疲勞，轉身往地下挖掘未知私盤。</li>
-          <li><b>冷門 → 入耳〔閾值突破〕</b>：連冷門都餵不飽耳朵，刺激門檻越拉越高，走向極端實驗聲響。</li>
-          <li><b>入耳 → 經典〔前衛收編〕</b>：玩過最極端的解構後返璞歸真，用全新眼光重新確立主流經典的偉大。</li>
+          <li><b>冷門 → 硬蕊〔閾值突破〕</b>：連冷門都餵不飽耳朵，刺激門檻越拉越高，走向極端實驗聲響。</li>
+          <li><b>硬蕊 → 經典〔前衛收編〕</b>：玩過最極端的解構後返璞歸真，用全新眼光重新確立主流經典的偉大。</li>
         </ul>
         <span style="color:var(--dim)">↺ 相剋與相生方向相反：照相生鋪連段，剛好不會餵到對手的相剋方向。</span></li>
-      <li><b>牌型附帶效果</b>：經典＝回 1 聲望；冷門＝+1 氣勢；入耳＝擊中時多削對手氣勢（-2）。自己被擊中氣勢 -1。</li>
+      <li><b>牌型附帶效果</b>：經典＝回 1 聲望；冷門＝+1 氣勢；硬蕊＝擊中時多削對手氣勢（-2）。自己被擊中氣勢 -1。</li>
       <li><b style="color:var(--gold)">品味輾壓</b>：氣勢滿 6 發動，無視相剋直接大傷害，用完氣勢歸零。</li>
       <li><b style="color:var(--gold)">⭐ 怎麼剋輾壓</b>：對手氣勢快滿時打出<b>王牌（頂級卡）</b>——對手的輾壓會被【七星回擊】擋下並反傷他最高星數；王牌被動也能先削他氣勢（殿堂 -2、異端直接歸零）。王牌不會被消耗。</li>
       <li><b style="color:#5a6b7a">🛡 割捨防禦</b>：手上沒王牌時的保命符。對手要輾壓時，可<b>犧牲任意一張非王牌</b>抵傷，抵擋量＝該牌<b>最高星數</b>（雜牌只擋一點、好牌擋更多）；<b>不反傷、每場限一次</b>，且該牌<b>本趟永久移除</b>。</li>
@@ -2113,7 +2113,7 @@ function renderBattle(){
     </div></div>
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
-      <div class="cheat">${RUN.relics.length?`<div class="cheat-relics">${relicBarHTML()}</div>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【入耳】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
+      <div class="cheat">${RUN.relics.length?`<div class="cheat-relics">${relicBarHTML()}</div>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【硬蕊】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
       <div class="hint" id="hint">${hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>

@@ -841,14 +841,14 @@
         <div class="ov-tier-row" id="ovTierRow">
           <button type="button" class="ov-tier-btn" data-tier="hall">🩶 殿堂級<small>經典度衝 7</small></button>
           <button type="button" class="ov-tier-btn" data-tier="pearl">🛢️ 流亡級<small>冷門度衝 7</small></button>
-          <button type="button" class="ov-tier-btn" data-tier="heresy">🩸 異端級<small>入耳難易度衝 7</small></button>
+          <button type="button" class="ov-tier-btn" data-tier="heresy">🩸 異端級<small>硬蕊度衝 7</small></button>
           <button type="button" class="ov-tier-btn active" data-tier="">一般卡<small>不設頂點</small></button>
         </div>
         <div class="section-label" style="margin:14px 0 8px;">評分（1–5，留空＝沿用 AI；設了頂點該軸自動 7）</div>
         <div class="field-row" style="margin-bottom:12px;">
           <div class="field"><label>冷門度</label><input id="ovObscurity" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
           <div class="field"><label>經典度</label><input id="ovClassic" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
-          <div class="field"><label>入耳難易度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
+          <div class="field"><label>硬蕊度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
         </div>
         <button class="btn-save" id="btnSaveOverride">儲存校正</button>
         <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除校正（恢復 AI 版本）</button>
@@ -862,7 +862,7 @@
       <div class="section">
         <div class="section-label">頂級牌管理（固定卡池 apex_pool）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">
-          三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7，400 張）、<b>🩸 異端</b>＝極難入耳前衛怪盤（入耳難度 7，100 張）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7，100 張）。<br>
+          三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7，400 張）、<b>🩸 異端</b>＝極難入耳前衛怪盤（硬蕊度 7，100 張）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7，100 張）。<br>
           「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台卡冊／對戰立即當 7 星王牌）。「<b>⚡⚡ 全部入庫</b>」把三分類所有未入庫的牌一次跑完（逐張驗封面，可中途停止）。抓不到封面的會標記略過。
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
@@ -873,7 +873,7 @@
         </div>
         <div class="ov-tier-row" id="apexTierRow" style="margin-bottom:14px;">
           <button type="button" class="ov-tier-btn active" data-apex-tier="hall">🩶 殿堂<small>經典度 7</small></button>
-          <button type="button" class="ov-tier-btn" data-apex-tier="heresy">🩸 異端<small>入耳難度 7</small></button>
+          <button type="button" class="ov-tier-btn" data-apex-tier="heresy">🩸 異端<small>硬蕊度 7</small></button>
           <button type="button" class="ov-tier-btn" data-apex-tier="pearl">🛢️ 流亡<small>冷門度 7</small></button>
         </div>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px;">
@@ -2916,7 +2916,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   ovModal.addEventListener('click', e => { if (e.target === ovModal) closeOvModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && ovModal.classList.contains('open')) closeOvModal(); });
 
-  // 頂點級別：殿堂=經典度7、流亡=冷門度7、異端=入耳難易度7
+  // 頂點級別：殿堂=經典度7、流亡=冷門度7、異端=硬蕊度7
   const TIER_AXIS = { hall: 'ovClassic', pearl: 'ovObscurity', heresy: 'ovAccessibility' };
   let ovTierSel = '';
   function setOvTier(tier) {
