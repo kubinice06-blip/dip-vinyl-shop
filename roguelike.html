@@ -412,9 +412,11 @@
         try{ const res=await fetch('https://dip-vinyl-worker.kubinice06.workers.dev/album-genres?artist='+encodeURIComponent(card.artist||'')+'&album='+encodeURIComponent(card.album||'')); return res.ok?validMapGenres((await res.json()).genres):[]; }catch(e){ return []; }
       };
       const addMapCredit=async(tags)=>{
-        const valid=validMapGenres(tags), u=auth.currentUser; if(!u) return;
-        const credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
-        try{ await setDoc(doc(db,'users',u.uid),{musicMap:{version:1,albums:increment(1),credits,updatedAt:Date.now()}},{merge:true}); }catch(e){}
+        const valid=validMapGenres(tags), u=auth.currentUser; if(!u) return false;
+        const value={musicMap:{version:1,albums:increment(1),updatedAt:Date.now()}};
+        const mergeFields=['musicMap.version','musicMap.albums','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
+        if(valid.length)value.musicMap.credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
+        try{ await setDoc(doc(db,'users',u.uid),value,{mergeFields}); return true; }catch(e){ return false; }
       };
       // 收進會員卡冊（與商店 index.html addCardToCollection 同 schema / 同 doc id 規則）
       window.__addToMyCollection = async (card) => {

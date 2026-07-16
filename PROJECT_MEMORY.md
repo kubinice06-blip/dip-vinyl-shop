@@ -104,6 +104,13 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-16｜修正音樂地圖隔日歸零並自動重建
+
+- Repo：`dip-vinyl-shop`
+- 改動：修正商店、單場對戰與 Roguelike 在曲風查詢回空時寫入 `credits: {}`、清除既有八大曲風點數的問題；改用 `mergeFields` 只更新實際命中的曲風欄位，空曲風仍保留收藏張數但不碰既有點數。音樂地圖若偵測到缺少曲風欄位或收藏非空但點數全為零，會自動從永久卡冊重建並回存。
+- 主要檔案：`index.html`、`battle.html`、`roguelike.html`、`music-map.html`
+- 驗證：抽出四個 HTML 的 module script 以 Node `--check` 驗證語法，`music-map-widget.js` 亦通過；靜態檢查確認三個收卡入口皆使用精準 `mergeFields` 且舊的整張 `credits` map 寫法已移除；另驗證損壞空 map、全零 map 與正常 map 三種健康判斷，並通過 `git diff --check`。
+
 ### 2026-07-16｜加入 Claude／Codex 開工前交接檢查
 
 - Repo：工作區、`dip-vinyl-shop`、`dip-vinyl-worker`

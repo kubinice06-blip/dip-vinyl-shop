@@ -559,8 +559,12 @@ async function findMapGenres(card,saved){
   try{const res=await fetch(`${WORKER_URL}/album-genres?artist=${encodeURIComponent(card.artist||'')}&album=${encodeURIComponent(card.album||'')}`);return res.ok?validMapGenres((await res.json()).genres):[];}catch(e){return [];}
 }
 async function addMapCredit(tags){
-  if(!currentUser) return; const valid=validMapGenres(tags),credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
-  try{await setDoc(doc(db,'users',currentUser.uid),{musicMap:{version:1,albums:increment(1),credits,updatedAt:Date.now()}},{merge:true});}catch(e){}
+  if(!currentUser) return false;
+  const valid=validMapGenres(tags);
+  const value={musicMap:{version:1,albums:increment(1),updatedAt:Date.now()}};
+  const mergeFields=['musicMap.version','musicMap.albums','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
+  if(valid.length)value.musicMap.credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
+  try{await setDoc(doc(db,'users',currentUser.uid),value,{mergeFields});return true;}catch(e){return false;}
 }
 
 // ───────── 封測開關（未來正式開放：poOpponent 設 false 即移除「與 Po 對戰」；minDeck 設 10 即需 10 張才能打）─────────

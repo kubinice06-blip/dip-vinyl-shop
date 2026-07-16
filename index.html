@@ -873,11 +873,19 @@
     } catch (e) { return []; }
   }
   async function addMusicMapCredit(genres) {
-    if (!currentUser) return;
+    if (!currentUser) return false;
     const tags = validMapGenres(genres);
-    const credits = Object.fromEntries(tags.map(id => [id, increment(1)]));
-    try { await setDoc(doc(db, 'users', currentUser.uid), { musicMap: { version: 1, albums: increment(1), credits, updatedAt: Date.now() } }, { merge: true }); }
-    catch (e) { console.warn('[music-map] credit save failed', e); }
+    // Firestore merge 遇到空 map 會清掉既有子欄位；查不到曲風時絕不能寫 credits:{}。
+    const value = { musicMap: { version: 1, albums: increment(1), updatedAt: Date.now() } };
+    const mergeFields = ['musicMap.version', 'musicMap.albums', 'musicMap.updatedAt', ...tags.map(id => `musicMap.credits.${id}`)];
+    if (tags.length) value.musicMap.credits = Object.fromEntries(tags.map(id => [id, increment(1)]));
+    try {
+      await setDoc(doc(db, 'users', currentUser.uid), value, { mergeFields });
+      return true;
+    } catch (e) {
+      console.warn('[music-map] credit save failed', e);
+      return false;
+    }
   }
 
   // 收進卡冊（已收藏則張數 +1）
