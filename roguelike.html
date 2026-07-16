@@ -212,7 +212,7 @@
   .handtile{flex:none;width:116px;height:116px;border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .12s,border-color .12s;}
   .handtile:hover{border-color:var(--black);transform:translateY(-3px);}
   .handtile.sel{border-color:var(--black);border-width:2px;transform:translateY(-6px);box-shadow:0 4px 14px rgba(0,0,0,.18);}
-  /* 一般卡五級稀有度外框（與卡冊/對戰同色：傳奇橘/史詩紫/獨特綠/稀有藍/普通灰）
+  /* 一般卡五級稀有度外框（與唱片櫃/對戰同色：傳奇橘/史詩紫/獨特綠/稀有藍/普通灰）
      用 ::after 疊框——封面(.ht-cover/.pcover/.cover 100%)會蓋掉 inset 陰影，須畫在封面上層 */
   .r-legendary,.r-epic,.r-uncommon,.r-rare,.r-common{position:relative;}
   .r-legendary::after,.r-epic::after,.r-uncommon::after,.r-rare::after,.r-common::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;}
@@ -393,7 +393,7 @@
         appId:"1:570133498387:web:8835b8d2373797e91d0de6"
       });
       const db = getFirestore(app);
-      // ---- 登入（Google）＋ 我的卡冊（與商店同源：collections/{uid}/cards）----
+      // ---- 登入（Google）＋ 我的唱片櫃（與商店同源：collections/{uid}/cards）----
       const auth = getAuth(app);
       const provider = new GoogleAuthProvider();
       let _authResolve; window.__rogueAuthReady = new Promise(r=>_authResolve=r);
@@ -418,7 +418,7 @@
         if(valid.length)value.musicMap.credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
         try{ await setDoc(doc(db,'users',u.uid),value,{mergeFields}); return true; }catch(e){ return false; }
       };
-      // 收進會員卡冊（與商店 index.html addCardToCollection 同 schema / 同 doc id 規則）
+      // 收進會員唱片櫃（與商店 index.html addCardToCollection 同 schema / 同 doc id 規則）
       window.__addToMyCollection = async (card) => {
         const u = auth.currentUser; if(!u) return 'need-login';
         const id = ((card.artist||'')+'|'+(card.album||'')).toLowerCase().replace(/\//g,'-').trim();
@@ -469,7 +469,7 @@
           return url;
         } catch(e){ return ''; }
       };
-      // 專輯評分（與主選單卡冊同源）：worker /album-rating（KV 快取的 AI 評分）＋ album_overrides 人工校正
+      // 專輯評分（與主選單唱片櫃同源）：worker /album-rating（KV 快取的 AI 評分）＋ album_overrides 人工校正
       window.__getAlbumRating = async (artist, album, cardId) => {
         let r = null;
         try {
@@ -508,7 +508,7 @@
    dip 黑膠 · 無止盡品味試煉 — Roguelike beta (P0)
    沿用 battle.html 的品味氣勢制（相剋/相生/氣勢/品味輾壓/王牌被動），
    外加：流派、角色三圍（攻/防/氣勢率，暫名）、無限賽局、樂歷(XP/等級)。
-   純前端、範例卡池當卡冊、localStorage 存樂歷。
+   純前端、範例卡池當唱片櫃、localStorage 存樂歷。
    ========================================================================= */
 
 // ---------- 戰鬥規則（與 CARD_GAME_DESIGN §8 / battle.html 一致；roguelike override）----------
@@ -646,7 +646,7 @@ const ACES = [
 ];
 
 // ---------- 殿堂神作判定（與 worker / index / battle 同一份清單與正規化）----------
-// 公認神作即使卡片沒存 hall 旗標，也一律視為對應王牌 → 隨機發牌、動態卡池、卡冊全部適用
+// 公認神作即使卡片沒存 hall 旗標，也一律視為對應王牌 → 隨機發牌、動態卡池、唱片櫃全部適用
 const NEOCLASSIC_LIST = [
   { artist:'Pink Floyd', album:'The Dark Side of the Moon', tier:'hall' },
   { artist:'Miles Davis', album:'Kind of Blue', tier:'hall' },
@@ -671,7 +671,7 @@ function applyNeoAce(c){
 POOL.forEach(applyNeoAce);   // 內建卡池先掃一輪（如 Kind of Blue → 殿堂 7 星）
 
 // ---------- 頂級牌卡池（後台入庫 300 張；card_catalog.apex==true）----------
-// 匯入後併進 NEOCLASSIC_MAP（同一份判定表）→ 內建卡池 / 動態卡池 / 樂歷收藏 / 卡冊種子全部升級成王牌。
+// 匯入後併進 NEOCLASSIC_MAP（同一份判定表）→ 內建卡池 / 動態卡池 / 樂歷收藏 / 唱片櫃種子全部升級成王牌。
 // Firebase 模組比本腳本晚載入 → 輪詢等 __getApexTiers 就緒；離線/失敗就靜默略過（不影響開局）。
 let _apexReady = null;
 function loadApexAces(){
@@ -1213,7 +1213,7 @@ async function bindMetaToAccount(u){
   META.talents = Object.assign({atk:0,def:0,qir:0}, META.talents||{});
   if(!Array.isArray(META.collection)) META.collection = [];
   if(!Array.isArray(META.pending)) META.pending = [];
-  // 一次性樂歷歸零（本人帳號；換新升級曲線後重新開始）：xp 與天賦點清空、卡冊與紀錄保留
+  // 一次性樂歷歸零（本人帳號；換新升級曲線後重新開始）：xp 與天賦點清空、唱片櫃與紀錄保留
   if(u.email==='kubinice06@gmail.com' && !META.curveResetV1){
     META.xp = 0;
     META.talents = {atk:0,def:0,qir:0};
@@ -1224,7 +1224,7 @@ async function bindMetaToAccount(u){
   const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
   if(document.getElementById('clsList')) renderClassSelect();
 }
-// 未登入時「收進卡冊」的卡先記在 pending，登入後自動補寫進 Firestore 卡冊
+// 未登入時「收進唱片櫃」的卡先記在 pending，登入後自動補寫進 Firestore 唱片櫃
 async function flushPendingCards(){
   const user = window.__rogueUser && window.__rogueUser();
   if(!user || !window.__addToMyCollection) return;
@@ -1236,7 +1236,7 @@ async function flushPendingCards(){
     if(!r || r==='need-login') rest.push(c);
   }
   META.pending = rest; saveMeta();
-  if(!rest.length) seedToast('先前收藏的卡已同步進帳號卡冊 ✓');
+  if(!rest.length) seedToast('先前收藏的卡已同步到帳號的唱片櫃 ✓');
 }
 // 樂歷升級曲線（三角遞增）：升到 lv+1 所需＝perLevel×lv（Lv1→2:100、Lv2→3:200、Lv3→4:300…越後越陡）
 function xpNeedForLevel(lv){ return MXP.perLevel*lv; }              // 由 lv 升到 lv+1 需要的經驗
@@ -1280,7 +1280,7 @@ function starsHTML(c){
     return `<div class="st"><span class="lab">${ATTR_ZH[at]}</span><div class="pips">${pips}</div></div>`;
   }).join('');
 }
-// 一般卡稀有度（同卡冊公式：經典+難度+(冷門=5?+1)）→ 外框顏色 class；頂級卡回空（走 ace-border 掃光）
+// 一般卡稀有度（同唱片櫃公式：經典+難度+(冷門=5?+1)）→ 外框顏色 class；頂級卡回空（走 ace-border 掃光）
 function rarityCls(c){
   if(!c || c.ace) return '';
   const s=(c.classic||0)+(c.accessibility||0)+((c.obscurity||0)>=5?1:0);
@@ -1424,17 +1424,17 @@ function recomputeMaxHp(prevMax){
 
 // =========================================================================
 //  畫面 2：挑 5 張專輯開始旅程
-//   來源兩種：① 我的卡冊（登入才有；讀 Firestore collections/{uid}/cards）
+//   來源兩種：① 我的唱片櫃（登入才有；讀 Firestore collections/{uid}/cards）
 //             ② 隨機發牌（不論冷熱好壞，整個卡池洗牌取一批；未登入也能玩）
 // =========================================================================
-// 由名稱雜湊穩定生成 1–5 三圍（卡冊裡 AI 推薦的冷盤沒有遊戲數值時用）
+// 由名稱雜湊穩定生成 1–5 三圍（唱片櫃裡 AI 推薦的冷盤沒有遊戲數值時用）
 function hashStats(str){
   let h=0; for(let i=0;i<str.length;i++){ h=(h*31+str.charCodeAt(i))>>>0; }
   return { c:1+(h%5), o:1+((h>>>4)%5), a:1+((h>>>8)%5) };
 }
-// 把卡冊評分(1–5)夾到合法區間；取不到就用 fallback（hashStats/POOL 的值）
+// 把唱片櫃評分(1–5)夾到合法區間；取不到就用 fallback（hashStats/POOL 的值）
 function clampStat(v, fallback){ v=Number(v); if(!v) return fallback; return Math.max(1,Math.min(5,Math.round(v))); }
-// 卡冊資料 → 遊戲卡：王牌旗標→ace；POOL 既有→設計數值；其他→雜湊數值
+// 唱片櫃資料 → 遊戲卡：王牌旗標→ace；POOL 既有→設計數值；其他→雜湊數值
 function cardFromCollection(d){
   const artist=d.artist||'', album=d.album||'', coverUrl=d.coverUrl||'';
   const mk=(c,o,a,ace)=>({artist,album,coverUrl,classic:c,obscurity:o,accessibility:a,ace:ace||null});
@@ -1461,15 +1461,15 @@ async function renderSeedSelect(){
     while(!window.__rogueAuthReady && Date.now()-t0<2500) await new Promise(r=>setTimeout(r,80));
     if(window.__rogueAuthReady) await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]);
   }catch(e){}
-  // 等頂級牌卡池併入判定表（最多等 2.5s）→ 隨機發牌/卡冊種子才會正確顯示王牌
+  // 等頂級牌卡池併入判定表（最多等 2.5s）→ 隨機發牌/唱片櫃種子才會正確顯示王牌
   try{ await Promise.race([ loadApexAces(), new Promise(r=>setTimeout(r,2500)) ]); }catch(e){}
   const user = window.__rogueUser ? window.__rogueUser() : null;
   RUN._loggedIn = !!user;
   if(!RUN._randomShelf) RUN._randomShelf = buildRandomShelf();
-  // 載一次卡冊
+  // 載一次唱片櫃
   if(user && !RUN._collLoaded){
     let raw=[]; try{ raw = await window.__getMyCollection(); }catch(e){}
-    // 三圍以卡冊為基準：跟主選單卡冊同源（/album-rating + album_overrides），取不到才退回 hashStats/POOL
+    // 三圍以唱片櫃為基準：跟主選單唱片櫃同源（/album-rating + album_overrides），取不到才退回 hashStats/POOL
     const cards = await Promise.all(raw.map(async d=>{
       const c = cardFromCollection(d);
       if(c.ace) return c;   // 王牌單軸 7，下面 filter 會排除，不用覆寫
@@ -1497,18 +1497,18 @@ function paintSeedScreen(){
   const coll = RUN._collShelf||[];
   const shelf = (RUN._source==='collection') ? coll : RUN._randomShelf;
   RUN._shelf = shelf;
-  // 已選的牌跨頁籤保留（卡冊與隨機發牌可混搭），不重置
-  // 來源切換列（登入才顯示卡冊頁籤；未登入給登入鈕）
+  // 已選的牌跨頁籤保留（唱片櫃與隨機發牌可混搭），不重置
+  // 來源切換列（登入才顯示唱片櫃頁籤；未登入給登入鈕）
   const tab = (src,label,extra='')=>`<button class="btn ${RUN._source===src?'primary':''}" style="flex:1" onclick="setSeedSource('${src}')">${label}${extra}</button>`;
   const sourceRow = user
-    ? `<div class="row" style="gap:6px;margin:8px 0">${tab('collection','我的卡冊',`（${coll.length}）`)}${tab('random','隨機發牌')}</div>`
-    : `<div class="row" style="gap:8px;margin:8px 0;align-items:center"><span class="muted" style="flex:1">登入後可用自己卡冊裡的專輯出戰</span><button class="btn" onclick="seedSignIn()">Google 登入</button></div>`;
+    ? `<div class="row" style="gap:6px;margin:8px 0">${tab('collection','我的唱片櫃',`（${coll.length}）`)}${tab('random','隨機發牌')}</div>`
+    : `<div class="row" style="gap:8px;margin:8px 0;align-items:center"><span class="muted" style="flex:1">登入後可用唱片櫃中的專輯出戰</span><button class="btn" onclick="seedSignIn()">Google 登入</button></div>`;
   const SM=seedMax();
   const emptyColl = (RUN._source==='collection' && shelf.length<SM)
-    ? `<div class="muted" style="margin:6px 0;color:var(--lose)">卡冊不足 ${SM} 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
+    ? `<div class="muted" style="margin:6px 0;color:var(--lose)">唱片櫃不足 ${SM} 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
     <h1>挑 ${SM} 張專輯開始旅程</h1>
-    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'卡冊與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
+    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'唱片櫃與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
     <div class="muted" style="margin:2px 0 2px;font-size:10px">點卡選入／取消，<b>長按</b>卡片看專輯介紹與試聽。</div>
     ${sourceRow}${emptyColl}
     <div class="grid" id="shelf"></div>
@@ -1521,7 +1521,7 @@ function paintSeedScreen(){
   const wrap=document.getElementById('shelf');
   wrap.innerHTML = shelf.map((c,i)=>`<div onclick="toggleSeed(${i})" id="seed${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">${cardHTML(c,{clk:true,cover:true})}</div>`).join('');
   shelf.forEach((c,i)=>{ const el=document.getElementById('seed'+i); if(el) attachSeedPress(el,i); });   // 長按看介紹
-  // 懶載入封面（卡冊本身多半已帶 coverUrl；隨機發牌走 ensureCover）
+  // 懶載入封面（唱片櫃本身多半已帶 coverUrl；隨機發牌走 ensureCover）
   // 切換來源後，舊 shelf 的回調可能晚到 → 用 data-ck 確認該格仍是同一張卡才寫入
   shelf.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
     const slot=document.getElementById('seed'+i); if(!slot || slot.dataset.ck!==ck) return;
@@ -1532,7 +1532,7 @@ function setSeedSource(src){ if(RUN._source===src) return; RUN._source=src; pain
 async function seedSignIn(){
   try{ await window.__rogueSignIn(); }catch(e){ return; }
   try{ await bindMetaToAccount(window.__rogueUser()); }catch(e){}   // 樂歷、收藏一併綁帳號
-  RUN._collLoaded=false; RUN._source=null;   // 重新載卡冊、預設切到卡冊
+  RUN._collLoaded=false; RUN._source=null;   // 重新載唱片櫃、預設切到唱片櫃
   renderSeedSelect();
 }
 function seedToast(msg){
@@ -1561,7 +1561,7 @@ function attachSeedPress(el, i){
   el.addEventListener('pointerleave', cancel);
   el.addEventListener('contextmenu', e=>e.preventDefault());
 }
-// 選牌以「卡」為單位（存卡片物件，key=artist|album），卡冊與隨機發牌兩個頁籤可混著選
+// 選牌以「卡」為單位（存卡片物件，key=artist|album），唱片櫃與隨機發牌兩個頁籤可混著選
 function toggleSeed(i){
   if(_seedHeld){ _seedHeld=false; return; }   // 長按看介紹的那一下，別誤觸選牌
   const c=RUN._shelf[i], ck=keyOf(c);
@@ -2802,7 +2802,7 @@ function openDrawReveal(){
           <div class="intro2 wait" id="dt2intro${i}">介紹載入中…</div>
           <button class="btn primary" style="width:100%" onclick="confirmDrawChoice(${i})">選這張 →</button>
         </div>`).join('')}</div>
-      <div class="muted" style="font-size:10px;margin-top:8px">選完會加入本趟牌組；趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進卡冊</div>
+      <div class="muted" style="font-size:10px;margin-top:8px">選完會加入本趟牌組；趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進唱片櫃</div>
     </div>`;
     document.body.appendChild(mask);
     _drawChoices.forEach((c,i)=>{
@@ -2826,7 +2826,7 @@ function openDrawReveal(){
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
     <a class="btn" id="drawStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
     <button class="btn primary" style="width:100%" onclick="confirmDraw()">帶這張盤進下一場 →</button>
-    <div class="muted" style="font-size:10px;margin-top:8px">趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進卡冊</div>
+    <div class="muted" style="font-size:10px;margin-top:8px">趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進唱片櫃</div>
   </div>`;
   document.body.appendChild(mask);
   ensureCover(c).then(url=>{
@@ -2834,7 +2834,7 @@ function openDrawReveal(){
     if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
   });
   hookStreamLink('drawStream', c);
-  loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與卡冊/對戰同一套事實型簡介（/album-desc，含人工校正）
+  loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與唱片櫃/對戰同一套事實型簡介（/album-desc，含人工校正）
 }
 function _takeDrawnCard(c){
   RUN.deck.push(c);                            // 本趟牌組（趟結束洗掉）
@@ -2892,8 +2892,8 @@ function confirmLoot(){
   const m = document.getElementById('lootMask'); if(m) m.remove();
   if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();   // 接續剩餘升級佇列
 }
-// 局末結算：從一路抽到的盤中挑「一張」永久收進卡冊
-// 未登入 → 先詢問登入（卡冊在帳號上）；不想登入也可先存本機，之後登入自動補綁
+// 局末結算：從一路抽到的盤中挑「一張」永久收進唱片櫃
+// 未登入 → 先詢問登入（唱片櫃在帳號上）；不想登入也可先存本機，之後登入自動補綁
 function keepRunCard(i){
   if(!RUN || RUN._keptOne) return;
   const user = window.__rogueUser && window.__rogueUser();
@@ -2907,7 +2907,7 @@ function doKeepRunCard(i){
   const clean={artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null};
   if(!META.collection.some(x=>keyOf(x)===keyOf(clean))) META.collection.push(clean);
   const user = window.__rogueUser && window.__rogueUser();
-  if(user && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號卡冊（Firestore）
+  if(user && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號唱片櫃（Firestore）
   else { META.pending=META.pending||[]; if(!META.pending.some(x=>keyOf(x)===keyOf(clean))) META.pending.push(clean); }
   saveMeta();
   closeCardInfo();
@@ -2916,7 +2916,7 @@ function doKeepRunCard(i){
   if(wrap){ [...wrap.children].forEach((el,j)=>{ el.style.opacity = j===i?'1':'.35';
     if(j===i){ const cd=el.querySelector('.card'); if(cd){ cd.style.borderColor='var(--gold)'; cd.style.boxShadow='0 0 0 1px var(--gold) inset'; } } }); }
   const note=document.getElementById('keepNote');
-  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）${user?'・已同步帳號卡冊':'・存本機（登入後自動補進卡冊）'}`; }
+  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）${user?'・已同步到唱片櫃':'・存本機（登入後自動補進唱片櫃）'}`; }
   const cnt=document.getElementById('collCount'); if(cnt) cnt.textContent=META.collection.length;
 }
 // 未登入收卡 → 詢問登入/註冊（Google 一鍵，登入即註冊）
@@ -2927,9 +2927,9 @@ function openKeepLogin(i){
   const mask=document.createElement('div');
   mask.className='drawmask'; mask.id='keepLoginMask';
   mask.innerHTML=`<div class="drawcard" style="max-width:320px">
-    <div class="lab">收進卡冊需要登入</div>
+    <div class="lab">收進唱片櫃需要登入</div>
     <div class="intro" style="text-align:center;min-height:0;border:none;padding:6px 0 14px">
-      卡冊綁定 Google 帳號——登入（即註冊）後這張卡會<b>永久存進你的帳號</b>，換裝置也在。</div>
+      唱片櫃綁定 Google 帳號——登入（即註冊）後這張卡會<b>永久存進你的帳號</b>，換裝置也在。</div>
     <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="keepLoginGo()">Google 登入並收藏</button>
     <button class="btn" style="width:100%;margin-bottom:8px" onclick="keepLocalGo()">先存本機（之後登入自動補綁）</button>
     <button class="btn" style="width:100%" onclick="closeKeepLogin()">取消</button>
@@ -2991,7 +2991,7 @@ function openCardInfo(card, opts){
   const aceTag = card.ace ? `<span class="acebadge">${ACE_ZH[card.ace]}</span>` : '';
   // 局末結算的「挑一張收藏」：從結算畫面點進來才有這顆鍵，整趟只能按一次
   const keepBtn = (opts.keepIdx!=null && RUN && !RUN._keptOne)
-    ? `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="keepRunCard(${opts.keepIdx})">★ 收進卡冊（本趟只能選一張）</button>` : '';
+    ? `<button class="btn" style="width:100%;margin-bottom:8px;border-color:var(--gold);color:var(--gold)" onclick="keepRunCard(${opts.keepIdx})">★ 收進唱片櫃（本趟只能選一張）</button>` : '';
   const mask=document.createElement('div');
   mask.className='drawmask'; mask.id='cardInfoMask';
   mask.innerHTML=`<div class="drawcard">
@@ -3047,13 +3047,13 @@ function renderDeath(){
     <div style="color:var(--gold);font-weight:700">🎁 樂歷升級獎勵：抽到 ${drawn.length} 張新專輯進收藏！</div>
     <div class="muted" style="font-size:10px;margin-top:2px">每升 1 級樂歷抽 1 張・點專輯看封面與介紹</div>
     <div class="grid" style="margin:8px 0" id="deathDrawn">${drawn.map((c,i)=>`<div onclick="openCardInfo(window._deathDrawn[${i}])" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
-  // 一路上局末抽到的盤：結算時挑「一張」永久收進卡冊
+  // 一路上局末抽到的盤：結算時挑「一張」永久收進唱片櫃
   const runDrawn = RUN.drawnCards||[];
   window._runDrawn = runDrawn;
   const runDrawnHTML = runDrawn.length ? `
     <div class="sp"></div>
-    <div style="color:var(--gold);font-weight:700">🎴 本趟集到 ${runDrawn.length} 張盤（開局挑的＋一路抽到的）— 挑 1 張永久收進卡冊</div>
-    <div class="muted" id="keepNote" style="font-size:10px;margin-top:2px">點專輯看介紹，再按「★ 收進卡冊」；只能選一張，其餘趟結束消失</div>
+    <div style="color:var(--gold);font-weight:700">🎴 本趟集到 ${runDrawn.length} 張盤（開局挑的＋一路抽到的）— 挑 1 張永久收進唱片櫃</div>
+    <div class="muted" id="keepNote" style="font-size:10px;margin-top:2px">點專輯看介紹，再按「★ 收進唱片櫃」；只能選一張，其餘趟結束消失</div>
     <div class="grid" style="margin:8px 0" id="runDrawn">${runDrawn.map((c,i)=>`<div onclick="openCardInfo(window._runDrawn[${i}],{keepIdx:${i}})" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>` : '';
   // 本場對手出過的牌（回顧）
   const foeHistHTML = (G&&G.eHist&&G.eHist.length) ? `

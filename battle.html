@@ -219,7 +219,7 @@
   .ht-ace.hall { background:#9aa0a8; } .ht-ace.pearl { background:#5b4a8a; } .ht-ace.heresy { background:#a01020; }
   .ht-borrow { position:absolute; bottom:0; right:0; font-size:9px; padding:1px 5px; background:rgba(255,255,255,0.9); border-top:1px solid var(--line); border-left:1px solid var(--line); color:var(--gray); letter-spacing:0; z-index:2; }
 
-  /* 一般卡五級稀有度外框（與卡冊同色：傳奇橘/史詩紫/獨特綠/稀有藍/普通灰；頂級卡走 ace-border 掃光不套這組）
+  /* 一般卡五級稀有度外框（與唱片櫃同色：傳奇橘/史詩紫/獨特綠/稀有藍/普通灰；頂級卡走 ace-border 掃光不套這組）
      用 ::after 疊框而非 inset box-shadow——封面(.ht-cover/.pcover 100%)會蓋掉 inset 陰影，必須畫在封面上層 */
   .r-legendary, .r-epic, .r-uncommon, .r-rare, .r-common { position:relative; }
   .r-legendary::after, .r-epic::after, .r-uncommon::after, .r-rare::after, .r-common::after {
@@ -466,10 +466,10 @@
   </div>
 </div>
 
-<!-- 載入卡冊 -->
+<!-- 載入唱片櫃 -->
 <div class="loadwrap" id="loadwrap">
   <div class="spin"></div>
-  <div class="lt" id="loadText">載入你的卡冊…</div>
+  <div class="lt" id="loadText">載入你的唱片櫃…</div>
 </div>
 
 <div class="rules-modal" id="recModal">
@@ -574,7 +574,7 @@ const BETA = { poOpponent:true };
 // CFG 可被後台設定覆寫（gameConfig/battle）；讀不到就用以下內建預設。
 let CFG = {
   startHp:30, deckSize:20, startHand:5, drawPerTurn:1, handLimit:7,
-  minDeck:0,           // 封測：0 張卡冊也能玩（全靠卡池借牌）；正式開放改 10
+  minDeck:0,           // 封測：0 張唱片櫃也能玩（全靠卡池借牌）；正式開放改 10
   maxCopies:2, aceCopies:1,
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
@@ -724,7 +724,7 @@ const ACES = [
   {artist:'Connie Converse',album:'How Sad, How Lovely',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
   {artist:'Lou Reed',album:'Metal Machine Music',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
-// 王牌旗標 → 對戰三圍（卡冊只存 hall/pearl/heresy 旗標，對戰才賦予 7 星單軸）
+// 王牌旗標 → 對戰三圍（唱片櫃只存 hall/pearl/heresy 旗標，對戰才賦予 7 星單軸）
 const ACE_STATS = {
   hall:   { classic:7, obscurity:1, accessibility:1 },
   pearl:  { classic:1, obscurity:7, accessibility:1 },
@@ -749,7 +749,7 @@ const poolReady = (async()=>{
   }catch(e){ /* 讀不到 → 用內建備援池，照樣能玩 */ }
 })();
 
-// ===== 打折花車雜牌（卡冊不足時的借牌）=====
+// ===== 打折花車雜牌（唱片櫃不足時的借牌）=====
 // 虛構的出清區廉價合輯：封面由程式生成（SVG data URI，不打 Spotify、開局即顯示），
 // 數值刻意平庸但各屬性有梗（老民歌其實很經典、阿伯自燒 CD-R 冷門度爆表）。
 const JUNK_PALETTES = [
@@ -847,7 +847,7 @@ const NEOCLASSIC_MAP = {};
 NEOCLASSIC_LIST.forEach(x=>{ NEOCLASSIC_MAP[_neoNorm(x.artist)+'|'+_neoNorm(x.album)] = x; });
 const neoAceOf = (artist,album) => { const n = NEOCLASSIC_MAP[_neoNorm(artist)+'|'+_neoNorm(album)]; return n && ACE_STATS[n.tier] ? n.tier : null; };
 
-// ───────── 卡冊 / 評分讀取 ─────────
+// ───────── 唱片櫃 / 評分讀取 ─────────
 const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().replace(/\//g,'-').trim();
 function clampStat(v){ return Math.max(1, Math.min(5, Math.round(Number(v)||1))); }
 async function getOverride(id){
@@ -908,7 +908,7 @@ const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){const j=rnd(i+
 const sleep = ms => new Promise(r=>setTimeout(r,ms));
 const clampQi = q => Math.max(0, q);
 let uid=0;
-// 玩家牌組：真實卡冊（向目錄取三圍、旗標轉王牌三圍）＋ 不足時卡池借普卡補滿（標 borrowed、不入冊）
+// 玩家牌組：真實唱片櫃（向目錄取三圍、旗標轉王牌三圍）＋ 不足時卡池借普卡補滿（標 borrowed、不入冊）
 async function buildPlayerDeck(){
   let deck=[];
   const cards = myColl || [];
@@ -974,11 +974,11 @@ function applyAttrEffect(side, attr){
 
 let G, lastOpp='critic';
 window.__dbg = { cfg:CFG, get g(){ return G; }, get mercy(){ return mercyLevel(); } };   // console 調參/測試用（改血量氣勢重現情境）
-// 從大廳挑對手 → 載入卡冊牌組 → 開局
+// 從大廳挑對手 → 載入唱片櫃牌組 → 開局
 async function startMatch(oppKey){
   lastOpp = oppKey;
   const lw=document.getElementById('loadwrap');
-  document.getElementById('loadText').textContent = currentUser ? '載入你的卡冊…' : '備牌中…';
+  document.getElementById('loadText').textContent = currentUser ? '載入你的唱片櫃…' : '備牌中…';
   lw.classList.add('show');
   await poolReady;                                   // 等正式卡池（seed/apex）載完再組牌
   if(currentUser && myColl===null) myColl = await getMyCollection();
@@ -1003,8 +1003,8 @@ function newGame(oppKey, pDeck, eDeck){
   const borrowed = pDeck.filter(c=>c.borrowed && !c.ace).length;
   const bAce = pDeck.some(c=>c.borrowed && c.ace);
   const intro = borrowed>0
-    ? `對局開始 · 對手【${opp.who}】。你卡冊不足 20 張，從店裡卡池借了 ${borrowed} 張牌充數（標「借」、不入冊）${bAce?'，店長還偷塞一張鎮店王牌給你':''}。`
-    : `對局開始 · 對手【${opp.who}】。整副都是你卡冊的卡。`;
+    ? `對局開始 · 對手【${opp.who}】。你的唱片櫃不足 20 張，從店裡卡池借了 ${borrowed} 張牌充數（標「借」、不入冊）${bAce?'，店長還偷塞一張鎮店王牌給你':''}。`
+    : `對局開始 · 對手【${opp.who}】。整副都是你唱片櫃裡的卡。`;
   pushLog(intro+' 讀對手氣場、選對相剋充氣勢；氣勢滿放【品味輾壓】。', '');
   document.getElementById('overlay').classList.remove('show');
   render();
@@ -1306,7 +1306,7 @@ function coverHTML(card){
 function statLine(card, attr){
   return `<div class="statline">${ATTRS.map(a=>`<span class="st${a===attr?' act':''}">${ATTR_ZH[a].charAt(0)}<b>${card[a]}</b></span>`).join('')}</div>`;
 }
-// 一般卡稀有度（同卡冊公式：經典+難度+(冷門=5?+1)）→ 外框顏色 class；頂級卡回空（走 ace-border 掃光）
+// 一般卡稀有度（同唱片櫃公式：經典+難度+(冷門=5?+1)）→ 外框顏色 class；頂級卡回空（走 ace-border 掃光）
 function rarityCls(card){
   if(!card || card.ace) return '';
   const s=(card.classic||0)+(card.accessibility||0)+((card.obscurity||0)>=5?1:0);
@@ -1475,7 +1475,7 @@ async function loadCardDesc(card, seq){
     if(el0 && seq===_cardDescSeq){ el0.textContent = JUNK_DESCS[(card.album||'').length % JUNK_DESCS.length]; el0.classList.remove('load'); }
     return;
   }
-  // 與卡冊／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）；偶發回空 → 再試一次
+  // 與唱片櫃／類型挑片同一套事實型專輯簡介（/album-desc，server 端快取）；偶發回空 → 再試一次
   let txt = '（暫無簡介）';
   for(let i=0;i<2 && txt==='（暫無簡介）';i++){
     try{
@@ -1538,7 +1538,7 @@ async function saveResult(oppKey, win){
   if(currentUser){ try{ await setDoc(doc(db,'battleStats',currentUser.uid), s, {merge:true}); }catch(e){} }
 }
 
-// ───────── 戰利品：收進卡冊（格式對齊 index.html 的 collections/{uid}/cards）─────────
+// ───────── 戰利品：收進唱片櫃（格式對齊 index.html 的 collections/{uid}/cards）─────────
 async function addCardToColl(card){
   if(!currentUser) return false;
   const id = cardIdOf(card.artist, card.album);
@@ -1582,7 +1582,7 @@ function lootCoverHTML(card, key){
     ? `<div class="loot-cover${frame}" data-lcid="${key}" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
     : `<div class="loot-cover loot-noimg${frame}" data-lcid="${key}"><span>${card.album}</span></div>`;
 }
-// 賽後戰利品面板：贏 → 掠奪一張自動入冊；借的卡 → 勾選收進卡冊
+// 賽後戰利品面板：贏 → 掠奪一張自動入冊；借的卡 → 勾選收進唱片櫃
 async function renderLoot(win){
   const box=document.getElementById('ovLoot'); if(!box) return; box.innerHTML='';
   G._lootWin = win;
@@ -1602,14 +1602,14 @@ async function renderLoot(win){
   const borrowed = dedupeByAlbum(G.p.played.filter(c=>c.borrowed && !c.junk && !c.ace));
   G._lootBorrowed = borrowed;
   if(borrowed.length){
-    html += `<div class="loot-sec"><div class="loot-h">借來打過的卡 · 勾選收進卡冊</div><div class="loot-list">`+
+    html += `<div class="loot-sec"><div class="loot-h">借來打過的卡 · 勾選收進唱片櫃</div><div class="loot-list">`+
       borrowed.map((c,i)=>`<label class="loot-pick"><input type="checkbox" data-i="${i}" ${currentUser?'':'disabled'}>
         ${lootCoverHTML(c,'b'+i)}<span class="lp-txt"><span class="lp-alb">${c.album}</span><span class="loot-art">${c.artist}</span></span></label>`).join('')+
-      `</div><button class="btn loot-save" id="lootSave" ${currentUser?'':'disabled'}>收進卡冊</button></div>`;
+      `</div><button class="btn loot-save" id="lootSave" ${currentUser?'':'disabled'}>收進唱片櫃</button></div>`;
   }
   if(!currentUser && (plunder || borrowed.length)){
     html += `<div class="loot-login">
-      <div class="ll-txt">想收藏這些專輯？登入就能立刻收進你的卡冊 ✦</div>
+      <div class="ll-txt">想收藏這些專輯？登入就能立刻收進你的唱片櫃 ✦</div>
       <button class="btn" id="lootLogin">登入立刻收藏</button></div>`;
   }
   box.innerHTML = html;
@@ -1645,9 +1645,9 @@ function lobbyAuthHtml(){
   if(currentUser){
     const n = currentUser.displayName || '會員';
     const cnt = myColl ? myColl.length : '—';
-    return `<div class="au-info"><b>${n}</b><br><span>卡冊 ${cnt} 張 · 戰績雲端同步</span></div><button class="lob-btn" id="lobOut">登出</button>`;
+    return `<div class="au-info"><b>${n}</b><br><span>唱片櫃 ${cnt} 張 · 戰績雲端同步</span></div><button class="lob-btn" id="lobOut">登出</button>`;
   }
-  return `<div class="au-info"><b>未登入</b><br><span>可直接玩（全用卡池牌）。登入後用自己卡冊出戰、戰績雲端同步。</span></div><button class="lob-btn" id="lobIn">登入</button>`;
+  return `<div class="au-info"><b>未登入</b><br><span>可直接玩（全用卡池牌）。登入後用自己的唱片櫃出戰、戰績雲端同步。</span></div><button class="lob-btn" id="lobIn">登入</button>`;
 }
 function lobbyRecHtml(){
   const s = normStats(myStats || blankStats());

@@ -58,7 +58,7 @@
       <span class="card-arrow">→</span>
     </a>
   </div>
-  <script src="music-map-widget.js?v=4"></script>
+  <script src="music-map-widget.js?v=5"></script>
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
     import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
@@ -70,7 +70,7 @@
       try {
         const profile = (await getDoc(doc(db, 'users', user.uid))).data();
         if (profile?.musicMap?.version === 1) map.update(profile.musicMap);
-        else map.update(DipMusicMap.empty(), '請先到「我的音樂地圖」建立既有卡冊資料。');
+        else map.update(DipMusicMap.empty(), '請先到「我的音樂地圖」同步既有唱片櫃資料。');
       } catch { map.update(DipMusicMap.empty(), '暫時無法讀取地圖資料。'); }
     });
   </script>

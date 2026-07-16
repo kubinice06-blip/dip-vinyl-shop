@@ -194,7 +194,7 @@
     .reel-tag:hover { border-color: var(--black); color: var(--black); }
     .reel-tag.selected { background: var(--black); border-color: var(--black); color: #fff; }
 
-    /* 卡牌校正：封面卡冊網格 */
+    /* 卡牌校正：封面唱片櫃網格 */
     .cardgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
     .cardgrid-cell { background: #fff; padding: 10px; cursor: pointer; transition: background 0.12s; }
     .cardgrid-cell:hover { background: #fafafa; }
@@ -809,7 +809,7 @@
       <div class="subpanel active" id="sub-fix">
       <div class="section">
         <div class="section-label">卡牌校正（修正 AI 介紹 / 評分）</div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">下方是全站被抽過的卡，照卡冊封面排列。<strong>點任一張卡片</strong>即可彈出編輯介紹與評分；存檔後前台卡冊會<strong>優先顯示你的校正版</strong>，蓋過 AI。綠色「已校正」標記＝這張已有你的版本。也可用下方欄位手動輸入沒被抽過的卡。</p>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">下方是全站被抽過的卡，照唱片櫃封面排列。<strong>點任一張卡片</strong>即可彈出編輯介紹與評分；存檔後前台唱片櫃會<strong>優先顯示你的校正版</strong>，蓋過 AI。綠色「已校正」標記＝這張已有你的版本。也可用下方欄位手動輸入沒被抽過的卡。</p>
         <div class="field-row" style="margin-bottom:10px;">
           <div class="field"><label>藝人 Artist</label><input id="ovArtist" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Abdullah Ibrahim"></div>
           <div class="field"><label>專輯 Album</label><input id="ovAlbum" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;outline:none;background:#fff;" placeholder="Good News from Africa"></div>
@@ -863,7 +863,7 @@
         <div class="section-label">頂級牌管理（固定卡池 apex_pool）</div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">
           三種頂級牌各有一份固定名單：<b>🩶 殿堂</b>＝公認神作（經典度 7，400 張）、<b>🩸 異端</b>＝極難入耳前衛怪盤（硬蕊度 7，100 張）、<b>🛢️ 流亡</b>＝極冷門私盤（冷門度 7，100 張）。<br>
-          「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台卡冊／對戰立即當 7 星王牌）。「<b>⚡⚡ 全部入庫</b>」把三分類所有未入庫的牌一次跑完（逐張驗封面，可中途停止）。抓不到封面的會標記略過。
+          「<b>⚡ 產出一張入庫</b>」會從該分類隨機挑一張<b>未入庫</b>的牌 → 抓 Spotify 封面驗證 → 寫入 <b>card_catalog</b>（全站卡片庫）＋ <b>album_overrides</b>（頂點旗標，前台唱片櫃／對戰立即當 7 星王牌）。「<b>⚡⚡ 全部入庫</b>」把三分類所有未入庫的牌一次跑完（逐張驗封面，可中途停止）。抓不到封面的會標記略過。
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
           <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（跳過已存在）</button>
@@ -915,7 +915,7 @@
     <div style="max-width:880px;">
       <div class="section">
         <div class="section-label">會員管理</div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">用 Google 登入過的會員清單。資料僅供店家營運管理使用，請勿外流。點「卡冊」可載入該會員收藏的張數。</p>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:16px;line-height:1.8;">用 Google 登入過的會員清單。資料僅供店家營運管理使用，請勿外流。點「唱片櫃」可載入該會員收藏的張數。</p>
         <div id="membersStat" style="font-size:12px;color:var(--black);font-weight:700;margin-bottom:12px;">尚未載入</div>
         <div id="membersList" style="font-size:12px;color:var(--gray);">尚未載入</div>
       </div>
@@ -3002,11 +3002,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (o) data.obscurity = o;
     if (c) data.classic = c;
     if (ac) data.accessibility = ac;
-    // 頂點級別：設了就寫旗標（前台卡冊／對戰會把該軸當 7 星王牌），取消則刪欄位
+    // 頂點級別：設了就寫旗標（前台唱片櫃／對戰會把該軸當 7 星王牌），取消則刪欄位
     data.tier = ovTierSel ? ovTierSel : deleteField();
     try {
       await setDoc(doc(db, 'album_overrides', id), data, { merge: true });
-      msg.textContent = ovTierSel ? '✓ 已存：設為頂點卡，前台／對戰即生效' : '✓ 已儲存校正，前台卡冊會優先顯示';
+      msg.textContent = ovTierSel ? '✓ 已存：設為頂點卡，前台／對戰即生效' : '✓ 已儲存校正，前台唱片櫃會優先顯示';
       loadCatalog();
     } catch (e) { msg.textContent = '儲存失敗：' + (e.message || e); }
   });
@@ -3416,7 +3416,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
           <div style="text-align:right;font-size:10px;color:var(--gray);line-height:1.7;flex-shrink:0;">
             <div>註冊 ${fmtDate(u.createdAt)}</div>
             <div>最近 ${fmtDate(u.lastSeenAt)}</div>
-            <button class="btn-member-cards" data-uid="${u.id}" style="margin-top:4px;background:none;border:1px solid var(--line);color:var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">卡冊</button>
+            <button class="btn-member-cards" data-uid="${u.id}" style="margin-top:4px;background:none;border:1px solid var(--line);color:var(--black);font-family:var(--mono);font-size:10px;padding:3px 8px;cursor:pointer;">唱片櫃</button>
             <div style="margin-top:4px;display:flex;gap:4px;justify-content:flex-end;align-items:center;">
               <select class="sd-tier" style="font-family:var(--mono);font-size:10px;padding:2px;border:1px solid var(--line);">
                 <option value="random3">三選一隨機</option>
