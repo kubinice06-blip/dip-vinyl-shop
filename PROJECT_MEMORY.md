@@ -12,6 +12,7 @@
 5. 撤回或修正舊改動時新增一筆，不改寫舊紀錄，讓決策過程可追溯。
 6. 備忘錄要在 commit 前更新；commit hash 可從同一時段的 Git 歷史查得，不必為了回填 hash 再製造一個 commit。
 7. 若同一項工作同時改到兩個 repo，合併成一筆並分別列出檔案與驗證。
+8. 「歷史改動摘要」不能代替逐次日誌；同一天有多個獨立 commit／工作項目時，必須逐筆記錄，不可只寫成一個籠統總結。
 
 建議格式：
 
@@ -101,9 +102,133 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-16｜補齊昨天逐筆工作日誌
+
+- Repo：`dip-vinyl-shop`
+- 改動：修正初版備忘錄只有歷史摘要、沒有昨天逐筆紀錄的缺漏；依兩個 repo 的 Git 歷史補登 2026-07-15 全部 16 筆提交，並明訂歷史摘要不得取代逐筆日誌。
+- 主要檔案：`PROJECT_MEMORY.md`
+- 驗證：以台北時區查詢 2026-07-15，確認 `dip-vinyl-shop` 14 筆、`dip-vinyl-worker` 2 筆；逐筆比對 commit 時間、差異檔案與 shortstat。
+
 ### 2026-07-16｜建立 Claude 自動讀取的專案備忘錄
 
 - Repo：工作區、`dip-vinyl-shop`、`dip-vinyl-worker`
 - 改動：依兩個 repo 共 529 次既有提交建立歷史基線與目前狀態摘要；加入 Claude 啟動時自動讀取，以及所有專案代理每次檔案改動完成前必須追加紀錄的規則。
 - 主要檔案：`../CLAUDE.md`、`../AGENTS.md`、`CLAUDE.md`、`AGENTS.md`、`PROJECT_MEMORY.md`、`../dip-vinyl-worker/CLAUDE.md`、`../dip-vinyl-worker/AGENTS.md`
 - 驗證：確認兩個 repo 的 Git 基線與工作區狀態；確認三個啟動位置皆能指向同一份備忘錄。
+
+### 2026-07-15｜逐筆工作日誌（由 Git 補登，共 16 筆）
+
+> 以下依當天時間先後排列。這是事後依 commit 差異補登；「驗證」代表已用 Git
+> 查證提交與檔案內容，不杜撰原提交沒有留下的人工或瀏覽器測試紀錄。
+
+#### 12:10｜全站「入耳」屬性改名為「硬蕊」
+
+- Repo／commit：`dip-vinyl-shop`／`d05a657`
+- 改動：將使用者可見的「入耳難易度／入耳」改為「硬蕊度／硬蕊」，同步更新商店、後台、單場對戰、Roguelike 與兩份設計文件；底層相容欄位仍沿用 `accessibility`。
+- 主要檔案：`index.html`、`admin.html`、`battle.html`、`roguelike.html`、`CARD_GAME_DESIGN.md`、`ROGUELIKE_DESIGN.md`
+- 驗證：`git show --stat d05a657` 確認 6 個檔案、48 行新增與 48 行刪除。
+
+#### 12:10｜Worker 評分提示同步「硬蕊度」命名
+
+- Repo／commit：`dip-vinyl-worker`／`d9a49ad`
+- 改動：`/album-rating` 的註解及 AI 評分提示改用「硬蕊度」，定義仍是越晦澀、實驗、需要時間消化，分數越高；JSON key 保持 `accessibility` 以維持前端相容。
+- 主要檔案：`src/index.js`
+- 驗證：`git show --stat d9a49ad` 確認 1 個檔案、3 行新增與 3 行刪除。
+
+#### 12:15｜相生相剋圖節點由「入」改為「硬」
+
+- Repo／commit：`dip-vinyl-shop`／`8892ade`
+- 改動：單場對戰與 Roguelike 的 SVG 相生相剋圖，屬性節點簡稱同步由「入」改為「硬」。
+- 主要檔案：`battle.html`、`roguelike.html`
+- 驗證：`git show --stat 8892ade` 確認 2 個檔案各替換 1 行。
+
+#### 17:06｜重畫 Roguelike 腳邊唱片堆
+
+- Repo／commit：`dip-vinyl-shop`／`9e7eda8`
+- 改動：把原本整齊色條改成散放的像素封套與黑膠，玩家唱片依手牌最高屬性顯示經典藍、冷門紫或硬蕊紅；顯示最近 5 張並隨抽牌／出牌更新。同時首次加入專案 `AGENTS.md` 協作規則。
+- 主要檔案：`roguelike.html`、`AGENTS.md`
+- 驗證：`git show --stat 9e7eda8` 確認 2 個檔案、30 行新增與 14 行刪除。
+
+#### 17:12｜隱藏對手唱片堆的屬性線索
+
+- Repo／commit：`dip-vinyl-shop`／`2a3ff3c`
+- 改動：對手腳邊唱片一律使用中性色與暗色中心，不再用紅／藍／紫洩漏手牌主屬性；對手氣場提示同步改為靠右對齊。
+- 主要檔案：`roguelike.html`
+- 驗證：`git show --stat 2a3ff3c` 確認 1 個檔案、7 行新增與 6 行刪除。
+
+#### 17:15｜建立 Roguelike 實玩與平衡紀錄
+
+- Repo／commit：`dip-vinyl-shop`／`0bca788`
+- 改動：新增逐趟實玩檢查表、健康指標、已知假設與一次只調一組數值的紀律；同時把 Roguelike 起始 HP 從 10 調回 12，與設計及後台預設一致，目標保留 3–4 個有效回合的反制空間。
+- 主要檔案：`ROGUELIKE_PLAYTEST.md`、`roguelike.html`
+- 驗證：`git show --stat 0bca788` 確認 2 個檔案、74 行新增與 1 行刪除。
+
+#### 17:19｜替對手角色保留提示框空間
+
+- Repo／commit：`dip-vinyl-shop`／`d35f889`
+- 改動：對手氣場提示框左側預留 72px，避免提示框延伸到絕對定位的對手角色與唱片堆區域；桌面與手機規則同步。
+- 主要檔案：`roguelike.html`
+- 驗證：`git show --stat d35f889` 確認 1 個檔案、3 行新增與 2 行刪除。
+
+#### 17:34｜讓對手提示框依內容收合
+
+- Repo／commit：`dip-vinyl-shop`／`218f367`
+- 改動：提示框改為靠右、`fit-content`，最大寬度扣除左側 72px；長文字維持單行並以省略號截斷，減少空白框佔據牌桌。
+- 主要檔案：`roguelike.html`
+- 驗證：`git show --stat 218f367` 確認 1 個檔案、3 行新增與 3 行刪除。
+
+#### 18:47｜加入獨立像素戰鬥介面預覽
+
+- Repo／commit：`dip-vinyl-shop`／`f522b6d`
+- 改動：新增一份獨立的像素風戰鬥介面預覽頁，作為視覺方向試作，沒有直接替換正式對戰頁。
+- 主要檔案：`battle-pixel-preview.html`
+- 驗證：`git show --stat f522b6d` 確認新增 1 個檔案、297 行。
+
+#### 18:48｜撤回像素戰鬥介面預覽
+
+- Repo／commit：`dip-vinyl-shop`／`cae1b4c`
+- 改動：完整撤回前一筆像素介面試作並刪除預覽頁；這個預覽不是現行產品功能。
+- 主要檔案：`battle-pixel-preview.html`（刪除）
+- 驗證：`git show --stat cae1b4c` 確認刪除 297 行，與 `f522b6d` 的新增互相抵銷。
+
+#### 20:25｜建立音樂地圖預覽與勝場探索獎勵
+
+- Repo／commit：`dip-vinyl-shop`／`c3e11a8`
+- 改動：新增八大曲風雷達／里程碑音樂地圖、首頁入口、獨立頁與品味生死鬥預覽；Roguelike 勝利後改為必須先翻一張新專輯、閱讀介紹並帶入下一場，實玩檢查表也加入抽盤完成率指標。此階段地圖先使用可操作的示例資料。
+- 主要檔案：`music-map-widget.js`、`music-map.html`、`index.html`、`pvp.html`、`roguelike.html`、`ROGUELIKE_PLAYTEST.md`
+- 驗證：`git show --stat c3e11a8` 確認 6 個檔案、115 行新增與 8 行刪除。
+
+#### 20:49｜Worker 新增專輯曲風查詢
+
+- Repo／commit：`dip-vinyl-worker`／`4234824`
+- 改動：新增 `/album-genres`，先從 Spotify 專輯／藝人曲風取得資料，空白時退回 Last.fm 專輯或藝人標籤，再映射到音樂地圖的八大曲風；跨界專輯最多回傳兩條路徑，成功結果寫入 KV 快取。
+- 主要檔案：`src/index.js`
+- 驗證：`git show --stat 4234824` 確認 1 個檔案、61 行新增；差異中可見 Spotify、Last.fm fallback 與 `musicMapGenres` 規則。
+
+#### 20:49｜音樂地圖接上玩家永久卡冊
+
+- Repo／commit：`dip-vinyl-shop`／`894d241`
+- 改動：移除示例操作，改從玩家 `musicMap` 與永久卡冊讀取真實收藏；舊卡冊首次開啟時逐張補查 `mapGenres` 並建立地圖，之後在商店、單場對戰與 Roguelike 永久收卡時同步累加專輯數及曲風點數；品味生死鬥顯示登入玩家的精簡地圖。
+- 主要檔案：`music-map-widget.js`、`music-map.html`、`index.html`、`pvp.html`、`battle.html`、`roguelike.html`
+- 驗證：`git show --stat 894d241` 確認 6 個檔案、123 行新增與 76 行刪除；差異中可見卡冊回填、`mapGenres` 儲存及 Firestore `increment`。
+
+#### 20:58｜更新音樂地圖元件快取版本
+
+- Repo／commit：`dip-vinyl-shop`／`121db1d`
+- 改動：將獨立音樂地圖與品味生死鬥引用的 `music-map-widget.js` 版本參數更新，強制瀏覽器取得接上真實收藏後的新元件。
+- 主要檔案：`music-map.html`、`pvp.html`
+- 驗證：`git show --stat 121db1d` 確認 2 個檔案各替換 1 行。
+
+#### 21:13｜修正手機版音樂地圖標籤被裁切
+
+- Repo／commit：`dip-vinyl-shop`／`7d8d1ea`
+- 改動：手機完整地圖限制為 350px，並擴大 SVG `viewBox`，讓八大曲風標籤與數值有足夠外圍空間；同步更新元件快取版本。
+- 主要檔案：`music-map-widget.js`、`music-map.html`、`pvp.html`
+- 驗證：`git show --stat 7d8d1ea` 確認 3 個檔案、4 行新增與 4 行刪除。
+
+#### 22:02｜提高手機版音樂地圖標籤可讀性
+
+- Repo／commit：`dip-vinyl-shop`／`b25a022`
+- 改動：手機完整地圖使用固定八方向標籤座標與專用 `viewBox`，曲風名稱及數值字級分別放大，避免依圓周計算的位置過小或靠邊；同步更新元件快取版本。
+- 主要檔案：`music-map-widget.js`、`music-map.html`、`pvp.html`
+- 驗證：`git show --stat b25a022` 確認 3 個檔案、15 行新增與 5 行刪除。
