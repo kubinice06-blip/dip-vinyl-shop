@@ -1,7 +1,7 @@
 (() => {
   const GENRES = [
-    ['jazz', 'Jazz 爵士'], ['rock', 'Rock 搖滾'], ['electronic', 'Electronic 電子'], ['soul', 'Soul & Funk'],
-    ['hiphop', 'Hip-hop / R&B'], ['folk', 'Folk 民謠'], ['classical', 'Classical 古典'], ['world', 'World Music']
+    ['jazz', 'Jazz'], ['rock', 'Rock'], ['electronic', 'Electronic'], ['soul', 'Soul & Funk'],
+    ['hiphop', 'Hip-hop / R&B'], ['folk', 'Folk'], ['classical', 'Classical'], ['world', 'World Music']
   ];
   const MARKS = [1, 3, 7, 15, 30, 60];
   const ids = GENRES.map(([id]) => id);
