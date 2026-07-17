@@ -4,7 +4,7 @@
     ['hiphop', 'Hip-hop / R&B'], ['folk', 'Folk'], ['classical', 'Classical'], ['world', 'World Music'],
     ['pop', 'Pop'], ['blues', 'Blues']
   ];
-  const MARKS = [1, 3, 7, 15, 30, 60];
+  const MARKS = [1, 3, 7, 15, 30, 60, 120, 250, 500, 1000];
   const ids = GENRES.map(([id]) => id);
 
   function normalise(data = {}) {
@@ -13,7 +13,15 @@
   }
   function total(data) { return ids.reduce((n, id) => n + data.credits[id], 0); }
   function at(i, r, cx, cy) { const a = -Math.PI / 2 + i * Math.PI * 2 / GENRES.length; return { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r }; }
-  function milestone(value) { const next = MARKS.find(n => value < n); return next ? `下一節點 ${next}` : '下一節點 120'; }
+  function levelRatio(value) {
+    const completed = MARKS.filter(mark => mark <= value).length;
+    if (completed >= MARKS.length) return 1;
+    const previous = completed ? MARKS[completed - 1] : 0;
+    const next = MARKS[completed];
+    const fraction = Math.max(0, Math.min(1, (value - previous) / (next - previous)));
+    return (completed + fraction) / MARKS.length;
+  }
+  function milestone(value) { const next = MARKS.find(n => value < n); return next ? `下一節點 ${next}` : '已滿級'; }
 
   function addStyle() {
     if (document.getElementById('musicMapWidgetStyle')) return;
@@ -31,13 +39,13 @@
 
   function chart(data, compact) {
     const mobileFull = !compact && window.matchMedia && window.matchMedia('(max-width: 520px)').matches;
-    const cx = 250, cy = 240, radar = 110, nodes = [130, 145, 160, 175, 190, 205], label = compact ? 226 : 244, all = total(data) || 1;
+    const cx = 250, cy = 240, radar = 110, nodes = MARKS.map((_, i) => 130 + i * 8.5), label = compact ? 226 : 244, all = total(data) || 1;
     const polygon = r => GENRES.map((_, i) => { const p = at(i, r, cx, cy); return `${p.x},${p.y}`; }).join(' ');
     const grid = [.25, .5, .75, 1].map(x => `<polygon class="grid" points="${polygon(radar * x)}"/>`).join('');
     const axes = GENRES.map((_, i) => { const p = at(i, radar, cx, cy); return `<line class="axis" x1="${cx}" y1="${cy}" x2="${p.x}" y2="${p.y}"/>`; }).join('');
     const rails = GENRES.map((_, i) => { const a = at(i, radar + 8, cx, cy), b = at(i, nodes.at(-1), cx, cy); return `<line class="rail" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"/>`; }).join('');
-    const path = GENRES.map(([id], i) => { const p = at(i, radar * data.credits[id] / all, cx, cy); return `${i ? 'L' : 'M'} ${p.x} ${p.y}`; }).join(' ') + ' Z';
-    const points = GENRES.map(([id], i) => { const p = at(i, radar * data.credits[id] / all, cx, cy); return `<circle class="dot" cx="${p.x}" cy="${p.y}" r="3"/>`; }).join('');
+    const path = GENRES.map(([id], i) => { const p = at(i, radar * levelRatio(data.credits[id]), cx, cy); return `${i ? 'L' : 'M'} ${p.x} ${p.y}`; }).join(' ') + ' Z';
+    const points = GENRES.map(([id], i) => { const p = at(i, radar * levelRatio(data.credits[id]), cx, cy); return `<circle class="dot" cx="${p.x}" cy="${p.y}" r="3"/>`; }).join('');
     const mapNodes = GENRES.map(([id], i) => MARKS.map((m, j) => { const p = at(i, nodes[j], cx, cy); return `<circle class="node ${data.credits[id] >= m ? 'on' : ''}" cx="${p.x}" cy="${p.y}" r="4.5"/>`; }).join('')).join('');
     const mobileLabels = [
       [250,-18,'middle'], [455,45,'end'], [478,155,'end'], [478,330,'end'], [455,440,'end'],
@@ -47,7 +55,7 @@
       const p = mobileFull ? { x:mobileLabels[i][0], y:mobileLabels[i][1] } : at(i, label, cx, cy);
       const anchor = mobileFull ? mobileLabels[i][2] : (p.x < 210 ? 'end' : p.x > 290 ? 'start' : 'middle');
       const value = data.credits[id];
-      return `<text class="${mobileFull ? 'mobile-label' : ''}" x="${p.x}" y="${p.y}" text-anchor="${anchor}">${compact ? name.split(' ')[0] : name}</text><text class="val ${mobileFull ? 'mobile-value' : ''}" x="${p.x}" y="${p.y + (mobileFull ? 24 : 12)}" text-anchor="${anchor}">${value} 點 · ${Math.round(value / all * 100)}%</text>`;
+      return `<text class="${mobileFull ? 'mobile-label' : ''}" x="${p.x}" y="${p.y}" text-anchor="${anchor}">${compact ? name.split(' ')[0] : name}</text><text class="val ${mobileFull ? 'mobile-value' : ''}" x="${p.x}" y="${p.y + (mobileFull ? 24 : 12)}" text-anchor="${anchor}">${value} 點</text>`;
     }).join('');
     return `<svg class="music-map-svg" viewBox="${mobileFull ? '0 -50 500 600' : '-115 -30 730 570'}" role="img" aria-label="聆聽品味分布圖">${grid}${axes}${rails}<path class="shape" d="${path}"/>${points}${mapNodes}${labels}</svg>`;
   }
@@ -55,9 +63,9 @@
   function render(target, source, compact, message = '') {
     const state = normalise(source), all = total(state);
     const ranked = GENRES.slice().sort((a, b) => state.credits[b[0]] - state.credits[a[0]]);
-    const paths = (compact ? ranked.slice(0, 4) : GENRES).map(([id, name]) => `<div class="music-map-path"><span>${name}</span><span>${state.credits[id]} 點 · ${milestone(state.credits[id])}</span></div>`).join('');
+    const paths = (compact ? ranked.slice(0, 4) : GENRES).map(([id, name]) => `<div class="music-map-path"><span>${name}</span><span>${state.credits[id]} 點 · ${Math.round(state.credits[id] / (all || 1) * 100)}% · ${milestone(state.credits[id])}</span></div>`).join('');
     target.className = `music-map${compact ? ' compact' : ''}`;
-    target.innerHTML = `<div class="music-map-head"><div><div class="music-map-kicker">MY COLLECTION · PERMANENT DATA</div><div class="music-map-title">我的聆聽品味地圖</div></div><div class="music-map-total">收藏 ${state.albums} 張<br>曲風點數 ${all}</div></div><div class="music-map-layout"><div>${chart(state, compact)}</div><div class="music-map-paths">${paths}${compact ? '' : `<div class="music-map-untagged">未分類 ${state.untagged} 張</div>`}</div></div><div class="music-map-note">中央十角圖是各曲風在你的收藏中所占比例；外側節點是固定的收藏里程碑。跨界專輯會同時點亮兩條路徑。</div>${message ? `<div class="music-map-note">${message}</div>` : ''}`;
+    target.innerHTML = `<div class="music-map-head"><div><div class="music-map-kicker">MY COLLECTION · PERMANENT DATA</div><div class="music-map-title">我的聆聽品味地圖</div></div><div class="music-map-total">收藏 ${state.albums} 張<br>曲風點數 ${all}</div></div><div class="music-map-layout"><div>${chart(state, compact)}</div><div class="music-map-paths">${paths}${compact ? '' : `<div class="music-map-untagged">未分類 ${state.untagged} 張</div>`}</div></div><div class="music-map-note">中央十角圖顯示各路徑的里程碑等級；外側十顆節點代表 1 到 1000 張收藏。跨界專輯會同時點亮兩條路徑。</div>${message ? `<div class="music-map-note">${message}</div>` : ''}`;
   }
 
   window.DipMusicMap = { empty: () => normalise(), normalise, mount(target, opts = {}) { addStyle(); let data = normalise(opts.data), message = opts.message || ''; render(target, data, !!opts.compact, message); return { update(next, nextMessage = '') { data = normalise(next); message = nextMessage; render(target, data, !!opts.compact, message); } }; } };
