@@ -862,7 +862,7 @@
     } catch (e) {}
   }
 
-  const MUSIC_MAP_GENRES = ['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+  const MUSIC_MAP_GENRES = ['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues'];
   const validMapGenres = (genres) => [...new Set((genres || []).filter(g => MUSIC_MAP_GENRES.includes(g)))];
   async function findMapGenres(card, savedGenres) {
     const known = validMapGenres(savedGenres);
@@ -875,9 +875,9 @@
   async function addMusicMapCredit(genres) {
     if (!currentUser) return false;
     const tags = validMapGenres(genres);
-    // Firestore merge 遇到空 map 會清掉既有子欄位；查不到曲風時絕不能寫 credits:{}。
-    const value = { musicMap: { version: 1, albums: increment(1), updatedAt: Date.now() } };
-    const mergeFields = ['musicMap.version', 'musicMap.albums', 'musicMap.updatedAt', ...tags.map(id => `musicMap.credits.${id}`)];
+    // 不在收卡時改 version：舊 v1 必須保持不健康，進地圖頁才會完整重建為 v2。
+    const value = { musicMap: { albums: increment(1), untagged: increment(tags.length ? 0 : 1), updatedAt: Date.now() } };
+    const mergeFields = ['musicMap.albums', 'musicMap.untagged', 'musicMap.updatedAt', ...tags.map(id => `musicMap.credits.${id}`)];
     if (tags.length) value.musicMap.credits = Object.fromEntries(tags.map(id => [id, increment(1)]));
     try {
       await setDoc(doc(db, 'users', currentUser.uid), value, { mergeFields });

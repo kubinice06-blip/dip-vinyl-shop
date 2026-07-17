@@ -552,7 +552,7 @@ const auth = getAuth(fbApp);
 const googleProvider = new GoogleAuthProvider();
 const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 let currentUser = null, authReady = false, myColl = null, myStats = null;
-const MAP_GENRE_IDS=['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+const MAP_GENRE_IDS=['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues'];
 const validMapGenres=tags=>[...new Set((tags||[]).filter(tag=>MAP_GENRE_IDS.includes(tag)))];
 async function findMapGenres(card,saved){
   const known=validMapGenres(saved); if(known.length) return known;
@@ -561,8 +561,8 @@ async function findMapGenres(card,saved){
 async function addMapCredit(tags){
   if(!currentUser) return false;
   const valid=validMapGenres(tags);
-  const value={musicMap:{version:1,albums:increment(1),updatedAt:Date.now()}};
-  const mergeFields=['musicMap.version','musicMap.albums','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
+  const value={musicMap:{albums:increment(1),untagged:increment(valid.length?0:1),updatedAt:Date.now()}};
+  const mergeFields=['musicMap.albums','musicMap.untagged','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
   if(valid.length)value.musicMap.credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
   try{await setDoc(doc(db,'users',currentUser.uid),value,{mergeFields});return true;}catch(e){return false;}
 }

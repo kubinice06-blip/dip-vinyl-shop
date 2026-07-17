@@ -405,7 +405,7 @@
         try { const snap = await getDocs(collection(db,'collections',u.uid,'cards')); return snap.docs.map(d=>({cardId:d.id,...d.data()})); }
         catch(e){ return []; }
       };
-      const mapGenreIds=['jazz','rock','electronic','soul','hiphop','folk','classical','world'];
+      const mapGenreIds=['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues'];
       const validMapGenres=tags=>[...new Set((tags||[]).filter(tag=>mapGenreIds.includes(tag)))];
       const findMapGenres=async(card,saved)=>{
         const known=validMapGenres(saved); if(known.length) return known;
@@ -413,8 +413,8 @@
       };
       const addMapCredit=async(tags)=>{
         const valid=validMapGenres(tags), u=auth.currentUser; if(!u) return false;
-        const value={musicMap:{version:1,albums:increment(1),updatedAt:Date.now()}};
-        const mergeFields=['musicMap.version','musicMap.albums','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
+        const value={musicMap:{albums:increment(1),untagged:increment(valid.length?0:1),updatedAt:Date.now()}};
+        const mergeFields=['musicMap.albums','musicMap.untagged','musicMap.updatedAt',...valid.map(id=>`musicMap.credits.${id}`)];
         if(valid.length)value.musicMap.credits=Object.fromEntries(valid.map(id=>[id,increment(1)]));
         try{ await setDoc(doc(db,'users',u.uid),value,{mergeFields}); return true; }catch(e){ return false; }
       };
