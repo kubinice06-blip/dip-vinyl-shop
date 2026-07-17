@@ -104,6 +104,13 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-17｜修正 PVP 地圖讀取 schema v2
+
+- Repo：`dip-vinyl-shop`
+- 改動：全階段回歸時發現 `pvp.html` 的共用 widget 已升版，但個人地圖讀取條件仍殘留 `musicMap.version === 1`，導致 P1 schema v2 上線後 PVP 入口會誤顯示尚未同步；改為只接受 v2，並全域搜尋確認前端不再殘留 v1 判斷。
+- 主要檔案：`pvp.html`
+- 驗證：PVP module Node 語法通過；全站搜尋無 `musicMap.version === 1` 殘留，schema v2 靜態斷言與 `git diff --check` 通過。修正仍位於待上線 P1 的本機提交鏈上，不提前 push。
+
 ### 2026-07-17｜P7 對戰出牌串接專輯音樂
 
 - Repo：`dip-vinyl-shop`

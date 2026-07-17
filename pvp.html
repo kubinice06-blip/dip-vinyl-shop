@@ -69,7 +69,7 @@
       if (!user) return map.update(DipMusicMap.empty(), '登入後會在這裡顯示你的永久收藏地圖。');
       try {
         const profile = (await getDoc(doc(db, 'users', user.uid))).data();
-        if (profile?.musicMap?.version === 1) map.update(profile.musicMap);
+        if (profile?.musicMap?.version === 2) map.update(profile.musicMap);
         else map.update(DipMusicMap.empty(), '請先到「我的音樂地圖」同步既有唱片櫃資料。');
       } catch { map.update(DipMusicMap.empty(), '暫時無法讀取地圖資料。'); }
     });
