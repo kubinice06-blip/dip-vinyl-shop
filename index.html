@@ -1068,6 +1068,7 @@
   let collGroup = false;
   let collGenre = 'all', collView = 'cards', currentRecordId = '', currentRecord = null, playerDrawerOpen = true, playerSubscribed = false, lastPlayerState = { status:'idle', provider:null, artist:'', album:'' };
   const MUSIC_MAP_GENRE_NAMES = { jazz:'Jazz', rock:'Rock', electronic:'Electronic', soul:'Soul', hiphop:'Hip-hop', folk:'Folk', classical:'Classical', world:'World', pop:'Pop', blues:'Blues' };
+  const escapeCollectionHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
   const RARITY_ORDER = { hall: 8, pearl: 7, heresy: 6, legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
 
   // 新手禮：剛註冊的玩家可免費抽一張隨機殿堂卡（僅一次）。從這份公認神作名單裡隨機挑。
@@ -1411,13 +1412,14 @@
   }
 
   function _recordSlotHtml(c) {
-    const cover = c.coverUrl ? `<img src="${c.coverUrl}" alt="" loading="lazy">` : `<div class="record-slot-empty">♪</div>`;
-    return `<button class="record-slot${currentRecordId === c.cardId ? ' active' : ''}" data-record-id="${c.cardId}">${cover}<div class="record-slot-artist">${c.artist || ''}${c.count > 1 ? `<span class="record-slot-count">×${c.count}</span>` : ''}</div><div class="record-slot-album">${c.album || ''}</div></button>`;
+    const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="record-slot-empty">♪</div>`;
+    return `<button class="record-slot${currentRecordId === c.cardId ? ' active' : ''}" data-record-id="${escapeCollectionHtml(c.cardId)}">${cover}<div class="record-slot-artist">${escapeCollectionHtml(c.artist)}${c.count > 1 ? `<span class="record-slot-count">×${Number(c.count) || 0}</span>` : ''}</div><div class="record-slot-album">${escapeCollectionHtml(c.album)}</div></button>`;
   }
 
   function turntableHtml() {
-    const label = currentRecord?.coverUrl ? `style="background-image:url('${currentRecord.coverUrl.replace(/'/g, '%27')}')"` : '';
-    return `<section class="turntable-panel"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div><div class="turntable-copy"><div class="turntable-kicker">PIXEL TURNTABLE</div><div class="turntable-now">${currentRecord ? `${currentRecord.artist} — ${currentRecord.album}` : '點一張唱片上盤'}</div><div class="turntable-hint">點唱片會自動換盤；點唱臂可停止。Spotify／YouTube 控制面板會顯示在下方。</div><button class="player-drawer-toggle" data-player-drawer>${playerDrawerOpen ? '收起播放器' : '展開播放器'}</button></div></div><div class="player-drawer${playerDrawerOpen ? '' : ' collapsed'}"><div id="dipPlayerMount"></div></div></section>`;
+    const label = currentRecord?.coverUrl ? `style="background-image:url('${escapeCollectionHtml(currentRecord.coverUrl.replace(/'/g, '%27'))}')"` : '';
+    const now = currentRecord ? `${escapeCollectionHtml(currentRecord.artist)} — ${escapeCollectionHtml(currentRecord.album)}` : '點一張唱片上盤';
+    return `<section class="turntable-panel"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div><div class="turntable-copy"><div class="turntable-kicker">PIXEL TURNTABLE</div><div class="turntable-now">${now}</div><div class="turntable-hint">點唱片會自動換盤；點唱臂可停止。Spotify／YouTube 控制面板會顯示在下方。</div><button class="player-drawer-toggle" data-player-drawer>${playerDrawerOpen ? '收起播放器' : '展開播放器'}</button></div></div><div class="player-drawer${playerDrawerOpen ? '' : ' collapsed'}"><div id="dipPlayerMount"></div></div></section>`;
   }
 
   function updateTurntableState(playerState) {

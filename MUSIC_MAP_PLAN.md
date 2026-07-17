@@ -44,12 +44,11 @@
 
 **驗收**
 
-- `curl "https://dip-vinyl-worker.kubinice06.workers.dev/album-genres?artist=五月天&album=後青春期的詩"` → rock。
-- 竹内まりや《Variety》→ pop（city pop）；B.B. King → blues；Taylor Swift → pop。
+- Worker 部署後在 `dip-vinyl-shop` 執行 `node verify-music-map.mjs`；腳本以 UTF-8 原始檔與 `URLSearchParams` 測五月天→rock、竹内まりや《Variety》→pop、B.B. King→blues、Taylor Swift→pop，避免命令列直接傳 CJK 造成編碼損壞。
 - 登入後開 `/music-map`：舊帳號自動重建成十角圖，`users/{uid}.musicMap.version === 2`。
 - 注意：全量重建冷快取時 KV 寫入量大，可能當日寫不完額度——`kvPut` 會安全略過，快取分幾天自然回填，屬預期行為，不要改成硬重試。
 
-**⚠️ 出手時機（2026-07-17 當日指示）**：店主目前 Cloudflare KV 寫入額度受限中。P1 的程式碼**今天先寫完、本機 commit，但不 `wrangler deploy`、不 `git push`**（worker 部署與 shop 前端六處 id 同步一旦上線，會讓每個開地圖頁的玩家觸發 `healthy()` 判定舊地圖失效並全量重建，瞬間打大量 KV 寫入，額度限制中會整批被 `kvPut` 略過、當天測不出結果）。等**明天額度重置（台北 08:00，晚一點到 08:15 後最保險，避開既有 `dip-vinyl-kv-auto-import` 排程）**再執行部署與推送，見下方「P1 上線時機」指令。P2–P6b 不受此限制，可以照常當天推送。
+**⚠️ 出手時機（2026-07-17 當日指示）**：店主目前 Cloudflare KV 寫入額度受限中。P1 的程式碼**今天先寫完、本機 commit，但不 `wrangler deploy`、不 `git push`**（worker 部署與 shop 前端六處 id 同步一旦上線，會讓每個開地圖頁的玩家觸發 `healthy()` 判定舊地圖失效並全量重建，瞬間打大量 KV 寫入，額度限制中會整批被 `kvPut` 略過、當天測不出結果）。等**明天額度重置（台北 08:00，晚一點到 08:15 後最保險，避開既有 `dip-vinyl-kv-auto-import` 排程）**再執行部署與推送，見下方「P1 上線時機」指令。P2–P7 本身不新增 KV 寫入，但目前 shop commits 與 P1 位於同一條線性提交鏈，**不得單獨 push；整條 shop 鏈一併等 Worker 上線驗收通過後再推送**。
 
 ## P2｜成長模型：里程碑等級半徑（music-map-widget.js）
 
@@ -143,10 +142,11 @@
    - `dip-vinyl-worker`：`git add` 相關檔案、**本機 commit，先不要 push、不要 `wrangler deploy`**。
    - `dip-vinyl-shop`：六處前端同步的檔案先寫完、**本機 commit，先不要 push**。
    - 這一步做完先停下回報，不要自動接著做 P1 的「上線時機」那一步。
-3. **接著做 P2 → P3 → P4 → P5 → P6a → P6b → P7**（不受 KV 額度限制，可照常各階段 commit + push，`dip-vinyl-shop` push 後 Cloudflare Pages 會自動部署，用 `curl -L` 驗證）。每階段結束都要在 `PROJECT_MEMORY.md` 加一筆逐次改動記錄。
-4. **P1 上線時機**：等台北時間**明天（2026-07-18）08:15 以後**，確認 KV 額度已重置（可先 `curl` 打一次 `/album-desc` 或 `/album-genres` 觀察是否恢復 200 且無 10048 錯誤），再：
-   - `dip-vinyl-worker`：`git fetch origin` 確認無新提交 → `git push` → `wrangler deploy` → 跑 P1 驗收指令。
-   - `dip-vinyl-shop`：`git fetch origin` 確認無新提交 → `git push`（Cloudflare Pages 自動部署）→ 驗證舊帳號登入 `/music-map` 能自動重建成十角圖。
+3. **接著做 P2 → P3 → P4 → P5 → P6a → P6b → P7**。每階段照常本機 commit 並在 `PROJECT_MEMORY.md` 加一筆逐次改動記錄；因這些 commits 以未上線的 P1 為祖先，當天不 push，避免線性歷史連同 P1 一起發布。
+4. **P1 上線時機（硬性順序，不得交換）**：等台北時間**明天（2026-07-18）08:15 以後**，確認 KV 額度已重置（可先以 PowerShell `Invoke-WebRequest` 打一次純 ASCII 的 `/album-desc` 或 `/album-genres`，確認 HTTP 200 且無 10048 錯誤），再：
+   - **Gate 1 — Worker 先上**：`dip-vinyl-worker` 執行 `git fetch origin`，確認無新提交後 `git push` → `wrangler deploy`。
+   - **Gate 2 — Worker 驗收**：到 `dip-vinyl-shop` 執行 `node verify-music-map.mjs`，四個案例全部 PASS 才可繼續；任何 FAIL 都禁止 push shop。
+   - **Gate 3 — Shop 後上**：`dip-vinyl-shop` 執行 `git fetch origin`，確認無新提交後才 `git push`（Cloudflare Pages 自動部署）→ 驗證舊帳號登入 `/music-map` 能自動重建成十角圖。
    - 更新 `PROJECT_MEMORY.md`（P1 這筆現在才算真正完成上線，含 deploy 版本號與驗收結果）。
 5. 全部完成後在對話中總結七個階段各自的 commit hash 與驗證結果。
 
