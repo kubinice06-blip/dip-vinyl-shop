@@ -175,7 +175,7 @@
   .slot.win::after,.slot.lose::after{position:absolute;top:5px;right:5px;z-index:3;font-size:11px;font-weight:700;padding:2px 6px;color:#fff;}
   .slot.win::after{content:'勝';background:var(--black);} .slot.lose::after{content:'負';background:var(--dmg);}
   .vs{align-self:center;font-weight:700;font-size:13px;color:var(--gray);letter-spacing:0.1em;}
-  .rogue-mini-player{position:absolute;z-index:7;left:50%;top:calc(50% + 18px);width:40px;height:28px;transform:translateX(-50%);padding:0;border:1px solid var(--black);background:#c8b89d;cursor:pointer;image-rendering:pixelated;}
+  .rogue-mini-player{position:absolute;z-index:7;left:50%;top:0;width:40px;height:28px;transform:translateX(-50%);padding:0;border:1px solid var(--black);background:#c8b89d;cursor:pointer;image-rendering:pixelated;}
   .rogue-mini-player::before{content:'';position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:repeating-radial-gradient(circle,#222 0 2px,#080808 3px 5px);box-shadow:0 0 0 2px #666;}
   .rogue-mini-player::after{content:'';position:absolute;width:3px;height:18px;right:6px;top:3px;background:#555;transform:rotate(28deg);transform-origin:50% 2px;box-shadow:2px 0 #ddd;}
   .rogue-mini-player.playing::before{animation:rogueMiniVinylSpin .9s linear infinite;}
@@ -515,7 +515,7 @@
   })();
 </script>
 
-<script src="dip-player.js?v=2"></script>
+<script src="dip-player.js?v=3"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1055,6 +1055,7 @@ function placeSprites(){
   const app=document.getElementById('app');
   const tell=document.getElementById('tell');
   const np=document.querySelector('.player-zone .nameplate');
+  const zone=document.querySelector('.player-zone'), mini=document.getElementById('rogueMiniPlayer');
   const se=document.getElementById('sprE'), sp=document.getElementById('sprP');
   if(!app||!tell||!np||!se||!sp) return;
   const ar=app.getBoundingClientRect(), tr=tell.getBoundingClientRect(), nr=np.getBoundingClientRect();
@@ -1064,6 +1065,8 @@ function placeSprites(){
   se.style.top =(tr.top-ar.top+1)+'px';
   sp.style.left=(nr.right-ar.left-SPR_W)+'px';
   sp.style.top =(nr.bottom-ar.top-SPR_W)+'px';
+  // 唱盤與我方像素小人水平置中；absolute 定位，不參與 player-zone 或牌桌高度計算。
+  if(zone&&mini){ const zr=zone.getBoundingClientRect(); mini.style.top=(nr.bottom-zr.top-30)+'px'; }
   placeStacks();
 }
 // ---------- 腳邊唱片堆：取手牌屬性主色，散放的封套＋黑膠（丟牌少一張、抽牌補回來） ----------
@@ -2190,12 +2193,12 @@ function renderBattle(){
     <div class="arena"><div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
-      <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="setRogueMusic(!rogueMusicOn)"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
       <div class="slot" id="pSlot"></div>
       <div class="callout" id="callout"></div>
     </div></div>
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
+      <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="setRogueMusic(!rogueMusicOn)"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
       <div class="cheat">${RUN.relics.length?`<div class="cheat-relics">${relicBarHTML()}</div>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【硬蕊】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
       <div class="hint" id="hint">${hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
@@ -2292,6 +2295,7 @@ function softenIncoming(d){
 
 async function play(uid, pAttr){
   if(G.busy||G.over||!G.pendingE) return;
+  window.DipPlayer?.unlock?.();
   G.busy=true; _sel=null;
   const pCard=G.p.hand.find(c=>c.uid===uid); if(!pCard){ G.busy=false; return; }
   const pUlt=pAttr==='__ult__';

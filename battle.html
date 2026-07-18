@@ -550,7 +550,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=2"></script>
+<script src="dip-player.js?v=3"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1202,6 +1202,7 @@ function resolveClash(pCard,pAttr, eCard,eAttr){
 async function play(pCard, pAttr){
   if(G.busy||G.over) return;
   if(!G.pendingE) return;
+  window.DipPlayer?.unlock?.();
   G.busy=true; G.sel=null;
   document.getElementById('eTell').innerHTML='';   // 玩家已出招 → 收起本回合氣場提示
   const pUlt = pAttr==='__ult__';                 // 玩家氣勢滿，選擇輾壓

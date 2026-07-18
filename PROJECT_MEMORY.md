@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜修正 iOS 多數專輯與對戰無聲、唱盤移至玩家血條上方
+- Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
+- 改動：追查店主 iPhone 實測後確認，多數專輯雖有 Spotify 連結，但 iOS 無法在非同步流程後啟動有聲 Spotify iframe；同時 `/yt-music-link` 每張專輯使用兩次 YouTube Data API 搜尋，在卡冊預抓時迅速耗盡額度。Worker 將曲目快取升至 v5，優先以不耗 API quota 的 YouTube 公開搜尋結果選出可信音樂影片，官方 Data API 改為單次後備；前端 iOS 改成 YouTube 優先、在出牌／點唱手勢內以同一常駐 iframe 做 1% 有聲解鎖，並防止解鎖計時器誤停稍後載入的真正專輯。卡冊批次預抓只查 Spotify，使用者點唱時才查 YouTube，避免再度爆量。Roguelike 唱盤保持 absolute，移到玩家 nameplate 中央、血條上方並與右側像素小人水平置中，不參與現有版面流。
+- 主要檔案：Worker `src/index.js`；Shop `dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`PROJECT_MEMORY.md`
+- 驗證：Worker 7 組中英日專輯皆由線上 v5 端點回傳具體 YouTube URL，已部署 version `34aad4fc-79db-4fb9-b6da-275fbcd85eed`；本機實際 iframe 逐張播放 Etta James、Bonnie 'Prince' Billy、2Pac、The Sundays、辛曉琪均為 `playing/youtube`。iPhone UA 模擬確認 YouTube 優先、有聲手勢解鎖、解鎖計時器不會暫停目標曲，且卡冊批次不查 YouTube。390×844 實際完成 Roguelike 與單場 PVE 出牌，兩者唱盤均進入 `playing`；Roguelike 唱盤與玩家像素小人中心 Y 差 0.01px、位於 HP bar 上方、頁寬 390/390 無橫向捲動，既有雙卡、VS、HP 與手牌座標未位移。`node --check dip-player.js`、HTML inline script syntax、`git diff --check` 全數通過；仍待店主以 iOS Safari 真機複驗實際出聲。
+
 ### 2026-07-18｜P9d Roguelike 接入勝方音樂與迷你唱盤
 
 - Repo：`dip-vinyl-shop`

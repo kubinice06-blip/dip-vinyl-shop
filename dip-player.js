@@ -4,12 +4,14 @@
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
+  const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const linkCache = new Map();
   const listeners = new Set();
   let root = null, spotifyHost = null, youtubeHost = null, youtubeFrameHost = null;
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
-  let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false;
+  let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -27,6 +29,9 @@
       .dip-player-provider.is-inactive{position:fixed!important;width:1px!important;height:1px!important;min-height:1px!important;left:-9999px!important;top:0!important;opacity:0!important;overflow:hidden!important;pointer-events:none!important}
       .dip-player-hidden{position:fixed!important;width:1px!important;height:1px!important;left:-9999px!important;top:0!important;opacity:0!important;overflow:hidden!important;pointer-events:none!important;z-index:-1!important}
       .dip-player-hidden .dip-player-provider,.dip-player-hidden iframe{width:1px!important;height:1px!important;min-height:1px!important;border:0!important}
+      /* YouTube IFrame API requires a real player surface. Keep it 200px inside the
+         clipped 1px root so hidden playback never participates in page layout. */
+      .dip-player-hidden .dip-player-youtube,.dip-player-hidden .dip-player-youtube iframe{width:200px!important;height:200px!important;min-height:200px!important}
     `;
     document.head.appendChild(style);
   }
@@ -147,20 +152,39 @@
     return withTimeout(youtubePlayerPromise, 8000);
   }
 
+  function primeYoutubeFromGesture() {
+    if (youtubePrimed || !youtubeReady || !youtubePlayer) return false;
+    try {
+      // iOS 只把手勢處理器直接觸發的有聲播放視為授權；mute→play 不會解鎖後續有聲切歌。
+      // 同一個常駐 iframe 以 1% 音量短播後暫停，回合結算時只需換這個 player 的內容。
+      youtubePlayer.unMute?.();
+      youtubePlayer.setVolume?.(1);
+      youtubePlayer.playVideo?.();
+      youtubePrimed = true;
+      const generation = youtubeGeneration;
+      setTimeout(() => {
+        try {
+          if (generation === youtubeGeneration) youtubePlayer.pauseVideo?.();
+          youtubePlayer.setVolume?.(100);
+        } catch (_) {}
+      }, 160);
+      return true;
+    } catch (_) { return false; }
+  }
+
   function installAudioUnlock() {
     if (document.documentElement.dataset.dipAudioUnlock === '1') return;
     document.documentElement.dataset.dipAudioUnlock = '1';
     const prime = () => {
-      if (youtubePrimed || !youtubeReady || !youtubePlayer) return;
-      try {
-        youtubePlayer.mute?.();
-        youtubePlayer.playVideo?.();
-        youtubePrimed = true;
-        setTimeout(() => { try { youtubePlayer.pauseVideo?.(); } catch (_) {} }, 120);
+      if (primeYoutubeFromGesture()) {
         ['pointerdown', 'touchstart', 'click'].forEach(type => document.removeEventListener(type, prime, true));
-      } catch (_) {}
+      }
     };
     ['pointerdown', 'touchstart', 'click'].forEach(type => document.addEventListener(type, prime, true));
+  }
+
+  function unlock() {
+    return primeYoutubeFromGesture();
   }
 
   function spotifyAlbumId(url) {
@@ -187,18 +211,35 @@
     return `${String(artist).trim().toLowerCase()}\u0000${String(album).trim().toLowerCase()}`;
   }
 
-  function prefetch({ artist = '', album = '' } = {}) {
+  function linkEntry(artist, album) {
+    const key = cacheKey(artist, album);
+    if (!linkCache.has(key)) linkCache.set(key, {
+      spotifyUrl: null, youtubeUrl: null, spotifyPromise: null, youtubePromise: null
+    });
+    return linkCache.get(key);
+  }
+
+  function loadCachedLink(entry, type, path, artist, album) {
+    const urlKey = `${type}Url`, promiseKey = `${type}Promise`;
+    if (entry[urlKey] !== null) return Promise.resolve(entry[urlKey]);
+    if (!entry[promiseKey]) {
+      entry[promiseKey] = fetchLink(path, artist, album)
+        .then(url => { entry[urlKey] = url || ''; return entry[urlKey]; })
+        .catch(() => { entry[urlKey] = ''; return ''; });
+    }
+    return entry[promiseKey];
+  }
+
+  function prefetch({ artist = '', album = '', youtube = true } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album) return Promise.resolve({ spotifyUrl: '', youtubeUrl: '' });
-    const key = cacheKey(artist, album);
-    if (!linkCache.has(key)) {
-      linkCache.set(key, Promise.all([
-        fetchLink('/spotify-album-link', artist, album),
-        fetchLink('/yt-music-link', artist, album)
-      ]).then(([spotifyUrl, youtubeUrl]) => ({ spotifyUrl, youtubeUrl })).catch(() => ({ spotifyUrl: '', youtubeUrl: '' })));
-    }
-    return linkCache.get(key);
+    const entry = linkEntry(artist, album);
+    const spotify = loadCachedLink(entry, 'spotify', '/spotify-album-link', artist, album);
+    const fallback = youtube
+      ? loadCachedLink(entry, 'youtube', '/yt-music-link', artist, album)
+      : Promise.resolve(entry.youtubeUrl || '');
+    return Promise.all([spotify, fallback]).then(([spotifyUrl, youtubeUrl]) => ({ spotifyUrl, youtubeUrl }));
   }
 
   function waitForSpotifyPlayback(controller, token) {
@@ -253,7 +294,7 @@
       const poll = setInterval(() => {
         try { if (player.getPlayerState?.() === 1) finish(true); } catch (_) {}
       }, 50);
-      const timer = setTimeout(() => finish(false), 1800);
+      const timer = setTimeout(() => finish(false), 6000);
     });
   }
 
@@ -264,6 +305,7 @@
       spotifyController?.pause?.();
       setProvider('youtube');
       const started = waitForYoutubePlayback(player, token);
+      youtubeGeneration++;
       if (target.list) player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
       else player.loadVideoById?.(target.video);
       player.unMute?.();
@@ -281,19 +323,21 @@
     const token = ++requestId;
     emit({ status: 'loading', provider: null, artist, album });
     try {
-      const { spotifyUrl, youtubeUrl } = await prefetch({ artist, album });
+      const { spotifyUrl, youtubeUrl } = await prefetch({ artist, album, youtube:true });
       if (token !== requestId) return false;
       const spotifyId = spotifyAlbumId(spotifyUrl);
-      if (spotifyId && await playSpotify(spotifyId, token)) {
-        if (token !== requestId) return false;
-        emit({ status: 'playing', provider: 'spotify', artist, album });
-        return true;
-      }
-      if (token !== requestId) return false;
-      if (youtubeUrl && await playYoutube(youtubeUrl, token)) {
-        if (token !== requestId) return false;
-        emit({ status: 'playing', provider: 'youtube', artist, album });
-        return true;
+      const attempts = IOS_DEVICE
+        ? [['youtube', youtubeUrl], ['spotify', spotifyId]]
+        : [['spotify', spotifyId], ['youtube', youtubeUrl]];
+      for (const [provider, target] of attempts) {
+        if (!target || token !== requestId) continue;
+        const played = provider === 'youtube'
+          ? await playYoutube(target, token)
+          : await playSpotify(target, token);
+        if (played && token === requestId) {
+          emit({ status: 'playing', provider, artist, album });
+          return true;
+        }
       }
     } catch (_) {}
     if (token === requestId) {
@@ -318,5 +362,5 @@
     return () => listeners.delete(callback);
   }
 
-  window.DipPlayer = { mount, prefetch, playAlbum, stop, onStateChange };
+  window.DipPlayer = { mount, unlock, prefetch, playAlbum, stop, onStateChange };
 })();
