@@ -221,6 +221,29 @@
     return albumKey.length > 1 && (candidateKey === albumKey || (albumCore.length > 1 && candidateCore === albumCore));
   }
 
+  function fetchItunesJsonp(requestUrl) {
+    return new Promise(resolve => {
+      const callback = `dipItunesCallback${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement('script');
+      let settled = false;
+      const finish = value => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        try { delete window[callback]; } catch (_) { window[callback] = undefined; }
+        script.remove?.();
+        resolve(value && typeof value === 'object' ? value : {});
+      };
+      window[callback] = value => finish(value);
+      requestUrl.searchParams.set('callback', callback);
+      script.src = requestUrl.toString();
+      script.async = true;
+      script.onerror = () => finish({});
+      const timer = setTimeout(() => finish({}), 6000);
+      document.head.appendChild(script);
+    });
+  }
+
   async function fetchItunesDirect(artist, album) {
     try {
       const requestUrl = new URL('https://itunes.apple.com/search');
@@ -229,9 +252,7 @@
       requestUrl.searchParams.set('media', 'music');
       requestUrl.searchParams.set('entity', 'song');
       requestUrl.searchParams.set('limit', '200');
-      const response = await fetch(requestUrl);
-      if (!response.ok) return {};
-      const json = await response.json();
+      const json = await fetchItunesJsonp(requestUrl);
       const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
       const tracks = (json.results || []).filter(item => {
         if (item.kind !== 'song' || !item.previewUrl || !previewAlbumMatches(item.collectionName, album)) return false;

@@ -106,7 +106,7 @@
 
 ### 2026-07-18｜唱片櫃改用 iTunes 試聽，對戰播放 YouTube 高觀看曲目片段
 - Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
-- 改動：唱片櫃不顯示完整播放清單，改由使用者瀏覽器直連 Apple iTunes Search API 取得台灣區專輯曲目，並在每次點擊時隨機播放一首 30 秒試聽；唱機下方只保留一行極小的曲名與 Apple Music 來源連結。曾嘗試由 Worker 代查，但 Apple 對 Cloudflare 共用出口回 429／403，因此正式路徑刻意不經 Worker，避免全站共用限流。對戰與 Roguelike 的勝方專輯維持 YouTube 路徑，Worker 從官方 Album playlist 取得各曲觀看數並挑選最高者，播放器再從可容納 30 秒的時間範圍隨機起播。播放器會核對實際載入的 YouTube video id，避免切換專輯時把上一張仍在播放的狀態誤認為新專輯成功；Spotify／iTunes／YouTube 切換時也會先停止舊來源。
+- 改動：唱片櫃不顯示完整播放清單，改由使用者瀏覽器以 JSONP 直連 Apple iTunes Search API 取得台灣區專輯曲目，並在每次點擊時隨機播放一首 30 秒試聽；唱機下方只保留一行極小的曲名與 Apple Music 來源連結。曾嘗試由 Worker 代查，但 Apple 對 Cloudflare 共用出口回 429／403，普通跨網域 `fetch` 的 CORS 標頭也不穩定，因此正式路徑刻意不經 Worker、改用 JSONP，避免共用限流與 CORS。對戰與 Roguelike 的勝方專輯維持 YouTube 路徑，Worker 從官方 Album playlist 取得各曲觀看數並挑選最高者，播放器再從可容納 30 秒的時間範圍隨機起播。播放器會核對實際載入的 YouTube video id，避免切換專輯時把上一張仍在播放的狀態誤認為新專輯成功；Spotify／iTunes／YouTube 切換時也會先停止舊來源。
 - 主要檔案：Worker `src/index.js`；Shop `dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
 - 驗證：`node --check`、三個 HTML 共 6 段 inline script 語法解析、`git diff --check` 均通過；`verify-playback.mjs` 通過瀏覽器直連 iTunes、隨機曲目／連續換專輯、YouTube 舊播放狀態隔離及隨機 30 秒區間回歸測試；Apple API 實測 Bonnie 'Prince' Billy《Beware》取得 11 首試聽、辛曉琪《一夜之間》取得 10 首，正式 Worker 的官方 YouTube playlist 則分別選出 `I Am Goodbye` 與〈一夜之間〉為最高觀看曲目。
 

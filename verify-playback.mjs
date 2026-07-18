@@ -32,6 +32,11 @@ class MockElement extends EventTarget {
     return child;
   }
   append(...children) { children.forEach(child => this.appendChild(child)); }
+  remove() {
+    if (!this.parentNode) return;
+    this.parentNode.children = this.parentNode.children.filter(child => child !== this);
+    this.parentNode = null;
+  }
   setAttribute(name, value) { this[name] = String(value); }
 }
 
@@ -56,6 +61,7 @@ const audioElements = [];
 let randomValue = 0;
 let youtubePlayer = null;
 const fetchCalls = [];
+const scriptRequests = [];
 
 class MockYoutubePlayer {
   constructor(_host, options) {
@@ -116,6 +122,11 @@ document.head.appendChild = child => {
     queueMicrotask(() => context.window.onSpotifyIframeApiReady?.({
       createController(_host, _options, ready) { ready(spotifyController); }
     }));
+  }
+  if (String(child.src || '').startsWith('https://itunes.apple.com/search?')) {
+    scriptRequests.push(String(child.src));
+    const callback = new URL(child.src).searchParams.get('callback');
+    queueMicrotask(() => context.window[callback]?.(sourceFor(child.src)));
   }
   return child;
 };
@@ -203,7 +214,8 @@ await player.prefetch({ artist:'Artist B', album:'Album B', spotify:false, youtu
 assert.equal(await player.playAlbum({ artist:'Artist B', album:'Album B', prefer:'itunes' }), true);
 assert.equal(states.at(-1).album, 'Album B');
 assert.equal(audioElements[0].src, 'https://audio/b1.m4a');
-assert.ok(fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'iTunes is fetched from the browser origin');
+assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/search?')), 'iTunes is loaded through browser JSONP');
+assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'preview lookup does not depend on CORS fetch headers');
 assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'preview playback does not depend on a rate-limited Worker hop');
 
 await player.prefetch({ artist:'Artist A', album:'Album A', spotify:false, youtube:true });
