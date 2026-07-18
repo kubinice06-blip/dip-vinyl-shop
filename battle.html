@@ -550,7 +550,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=15"></script>
+<script src="dip-player.js?v=16"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1765,10 +1765,11 @@ rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules()
 const recModal=document.getElementById('recModal');
 let recShowsCardInfo=false;
 const closeRec=()=>{
-  const stopMusic=recShowsCardInfo&&recModal.classList.contains('show');
+  const wasOpen=recModal.classList.contains('show');
   recModal.classList.remove('show');
   recShowsCardInfo=false;
-  if(stopMusic) window.DipPlayer?.stop({fade:true});
+  // 手機的關閉鈕、點遮罩與 Escape 都走同一路徑；只要視窗原本開著就淡出音樂。
+  if(wasOpen) window.DipPlayer?.stop({fade:true});
 };
 document.getElementById('recClose').addEventListener('click', closeRec);
 recModal.addEventListener('click', e=>{ if(e.target===recModal) closeRec(); });

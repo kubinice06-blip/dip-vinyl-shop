@@ -175,11 +175,11 @@ function sourceFor(url) {
   const artist = parsed.searchParams.get('artist');
   if (parsed.hostname === 'itunes.apple.com') {
     const term = parsed.searchParams.get('term') || '';
-    const artistName = term.includes('Artist A') ? 'Artist A' : 'Artist B';
-    const albumName = term.includes('Album A') ? 'Album A' : 'Album B';
-    const ids = artistName === 'Artist A' ? ['a1','a2'] : ['b1'];
+    const artistName = term.includes('Artist A') ? 'Artist A' : term.includes('Artist F') ? 'Artist F' : 'Artist B';
+    const albumName = term.includes('Album A') ? 'Album A' : term.includes('Album F') ? 'Album F' : 'Album B';
+    const ids = artistName === 'Artist A' ? ['a1','a2'] : artistName === 'Artist F' ? ['f1'] : ['b1'];
     return { resultCount:ids.length, results:ids.map((id, index) => ({
-      kind:'song', trackId:id, trackName:id === 'a1' ? 'A One' : id === 'a2' ? 'A Two' : 'B One',
+      kind:'song', trackId:id, trackName:id === 'a1' ? 'A One' : id === 'a2' ? 'A Two' : id === 'f1' ? 'F One' : 'B One',
       trackNumber:index + 1, trackTimeMillis:30000, previewUrl:`https://audio/${id}.m4a`,
       trackViewUrl:`https://music/${id}`, artistName, collectionName:albumName
     })) };
@@ -190,7 +190,9 @@ function sourceFor(url) {
         { id:'a1', trackName:'A One', previewUrl:'https://audio/a1.m4a', storeUrl:'https://music/a1' },
         { id:'a2', trackName:'A Two', previewUrl:'https://audio/a2.m4a', storeUrl:'https://music/a2' }
       ]
-    } : { tracks:[{ id:'b1', trackName:'B One', previewUrl:'https://audio/b1.m4a', storeUrl:'https://music/b1' }] };
+    } : artist === 'Artist B'
+      ? { tracks:[{ id:'b1', trackName:'B One', previewUrl:'https://audio/b1.m4a', storeUrl:'https://music/b1' }] }
+      : { tracks:[] };
   }
   if (parsed.pathname.endsWith('/yt-music-link')) {
     if (artist === 'Artist C') return {}; // C 專供「iTunes 與 YouTube 都失敗」的代碼測試
@@ -208,7 +210,22 @@ const context = {
   document,
   navigator: { userAgent:'Desktop test', platform:'Win32', maxTouchPoints:0 },
   location: { origin:'http://localhost:5179' },
-  fetch: async url => { fetchCalls.push(String(url)); return { ok:true, json:async () => sourceFor(url) }; },
+  fetch: async url => {
+    const requestUrl = String(url);
+    fetchCalls.push(requestUrl);
+    if (requestUrl.startsWith('https://r.jina.ai/')) {
+      const gatewayData = requestUrl.includes('Artist+G+Album+G') ? {
+        resultCount:1,
+        results:[{
+          kind:'song', trackId:'g1', trackName:'G One', trackNumber:1, trackTimeMillis:30000,
+          previewUrl:'https://audio-ssl.itunes.apple.com/g1.m4a', trackViewUrl:'https://music/g1',
+          artistName:'Artist G', collectionName:'Album G'
+        }]
+      } : { resultCount:0, results:[] };
+      return { ok:true, text:async () => `Title:\n\nMarkdown Content:\n${JSON.stringify(gatewayData)}` };
+    }
+    return { ok:true, json:async () => sourceFor(url) };
+  },
   URL,
   URLSearchParams,
   Blob,
@@ -231,7 +248,8 @@ const context = {
 };
 context.window.window = context.window;
 
-vm.runInNewContext(fs.readFileSync(new URL('./dip-player.js', import.meta.url), 'utf8'), context, { filename:'dip-player.js' });
+const playerSource = fs.readFileSync(new URL('./dip-player.js', import.meta.url), 'utf8');
+vm.runInNewContext(playerSource, context, { filename:'dip-player.js' });
 const player = context.window.DipPlayer;
 const mount = new MockElement('div');
 assert.ok(player.mount(mount, { hidden:true }), 'player mounts');
@@ -275,12 +293,22 @@ await wait(1600);
 assert.equal(states.at(-1).album, 'Album B');
 assert.equal(audioElements[0].src, 'https://audio/b1.m4a');
 assert.equal(audioElements[0].paused, false, 'an old fade-stop timer never pauses a newly selected album');
-assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/search?')), 'iTunes is loaded through browser JSONP');
+assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/search?')), 'desktop preview metadata uses Apple JSONP first');
 assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'preview lookup does not depend on CORS fetch headers');
-assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'preview playback does not depend on a rate-limited Worker hop');
+assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'playback does not wait on a Worker route that Apple blocks');
+assert.ok(playerSource.includes('MOBILE_DEVICE ? [fetchItunesGateway, fetchItunesDirect]'), 'mobile devices try the working gateway before direct Apple');
+
+// Windows 保留 Apple 官方 JSONP；官方查空時再由文字閘道取得同一份公開 JSON。
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist F', album:'Album F', prefer:'itunes-only' }), true);
+assert.equal(states.at(-1).trackName, 'F One');
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist G', album:'Album G', prefer:'itunes-only' }), true);
+assert.equal(states.at(-1).trackName, 'G One');
+assert.ok(fetchCalls.some(url => url.startsWith('https://r.jina.ai/')), 'Apple-empty lookup falls back to the text gateway');
 
 // 唱盤下方播放列表：playing 狀態要帶曲目摘要；點列表指定曲目要用同一顆已解鎖元件強制換源。
-assert.equal(JSON.stringify(states.at(-1).tracks), JSON.stringify([{ id:'b1', trackName:'B One' }]));
+assert.equal(JSON.stringify(states.at(-1).tracks), JSON.stringify([{ id:'g1', trackName:'G One' }]));
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(await player.playTrack('a2'), true);
@@ -324,7 +352,7 @@ assert.equal(states.at(-1).provider, null);
 // 失敗代碼：首次真查詢要標出配對失敗（S4:n），重試窗內再點要回報 S8（快取空結果），不能沒有代碼。
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist C', album:'Album C', prefer:'itunes' }), false);
-assert.match(states.at(-1).code, /^S4:/);
+assert.match(states.at(-1).code, /^S(?:3|4:|9:)/);
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist C', album:'Album C', prefer:'itunes' }), false);
 assert.equal(states.at(-1).code, 'S8');

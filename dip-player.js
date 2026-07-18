@@ -6,6 +6,7 @@
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const MOBILE_DEVICE = IOS_DEVICE || /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || '');
   const linkCache = new Map();
   const listeners = new Set();
   let root = null, spotifyHost = null, youtubeHost = null, youtubeFrameHost = null;
@@ -357,41 +358,72 @@
     });
   }
 
+  function previewDataFromApple(json, artist, album, requireAppleHost = false) {
+    const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
+    const tracks = (json?.results || []).filter(item => {
+      if (item.kind !== 'song' || !item.previewUrl || !previewAlbumMatches(item.collectionName, album)) return false;
+      if (requireAppleHost) {
+        try { if (!new URL(item.previewUrl).hostname.toLowerCase().endsWith('.itunes.apple.com')) return false; }
+        catch (_) { return false; }
+      }
+      return previewArtistMatches(item.artistName, artist) ||
+        (cjkArtist && normalizePreviewText(item.collectionName) === normalizePreviewText(album));
+    }).map(item => ({
+      id:String(item.trackId || ''), trackName:item.trackName || '', trackNumber:Number(item.trackNumber || 0),
+      duration:Number(item.trackTimeMillis || 0), previewUrl:item.previewUrl,
+      storeUrl:item.trackViewUrl || item.collectionViewUrl || '', artistName:item.artistName || artist,
+      collectionName:item.collectionName || album
+    }));
+    const unique = [...new Map(tracks.map(item => [item.id || item.previewUrl, item])).values()]
+      .sort((a, b) => a.trackNumber - b.trackNumber);
+    if (!unique.length) {
+      // S3=Apple 查無任何結果，S4:n=有 n 筆結果但專輯／藝人配對全數不符。
+      lastFailCode = (json?.results || []).length ? `S4:${json.results.length}` : 'S3';
+      return {};
+    }
+    return { source:'itunes-preview', tracks:unique };
+  }
+
+  function itunesSearchParams(artist, album) {
+    return new URLSearchParams({ term:`${artist} ${album}`, country:'TW', media:'music', entity:'song', limit:'50' });
+  }
+
   async function fetchItunesDirect(artist, album) {
     try {
       const requestUrl = new URL('https://itunes.apple.com/search');
-      requestUrl.searchParams.set('term', `${artist} ${album}`);
-      requestUrl.searchParams.set('country', 'TW');
-      requestUrl.searchParams.set('media', 'music');
-      requestUrl.searchParams.set('entity', 'song');
-      requestUrl.searchParams.set('limit', '50');
+      for (const [key, value] of itunesSearchParams(artist, album)) requestUrl.searchParams.set(key, value);
       const json = await fetchItunesJsonp(requestUrl);
       if (json.__stage) { lastFailCode = json.__stage; return {}; }
-      const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
-      const tracks = (json.results || []).filter(item => {
-        if (item.kind !== 'song' || !item.previewUrl || !previewAlbumMatches(item.collectionName, album)) return false;
-        return previewArtistMatches(item.artistName, artist) ||
-          (cjkArtist && normalizePreviewText(item.collectionName) === normalizePreviewText(album));
-      }).map(item => ({
-        id:String(item.trackId || ''), trackName:item.trackName || '', trackNumber:Number(item.trackNumber || 0),
-        duration:Number(item.trackTimeMillis || 0), previewUrl:item.previewUrl,
-        storeUrl:item.trackViewUrl || item.collectionViewUrl || '', artistName:item.artistName || artist,
-        collectionName:item.collectionName || album
-      }));
-      const unique = [...new Map(tracks.map(item => [item.id || item.previewUrl, item])).values()]
-        .sort((a, b) => a.trackNumber - b.trackNumber);
-      if (!unique.length) {
-        // S3=Apple 查無任何結果，S4:n=有 n 筆結果但專輯／藝人配對全數不符。
-        lastFailCode = (json.results || []).length ? `S4:${json.results.length}` : 'S3';
-        return {};
-      }
-      return { source:'itunes-preview', tracks:unique };
+      return previewDataFromApple(json, artist, album);
     } catch (_) { lastFailCode = 'S0'; return {}; }
+  }
+
+  async function fetchItunesGateway(artist, album) {
+    try {
+      const nestedQuery = itunesSearchParams(artist, album).toString().replace(/&/g, '%26');
+      const response = await withTimeout(fetch(`https://r.jina.ai/http://itunes.apple.com/search?${nestedQuery}`), 12000);
+      if (!response?.ok) { lastFailCode = `S9:${response?.status || 0}`; return {}; }
+      const text = await response.text();
+      const start = text.indexOf('{'), end = text.lastIndexOf('}');
+      if (start < 0 || end <= start) { lastFailCode = 'S9:json'; return {}; }
+      return previewDataFromApple(JSON.parse(text.slice(start, end + 1)), artist, album, true);
+    } catch (_) { lastFailCode = 'S9:fetch'; return {}; }
+  }
+
+  async function fetchItunesPreview(artist, album) {
+    // 手機 IP 常被 Apple 擋，因此手機先走文字閘道；桌面保留速度較快的官方
+    // JSONP。兩條路取得的都是 Apple 原始 previewUrl，播放與淡入淡出完全相同。
+    const fallbacks = MOBILE_DEVICE ? [fetchItunesGateway, fetchItunesDirect] : [fetchItunesDirect, fetchItunesGateway];
+    for (const fallback of fallbacks) {
+      const data = await fallback(artist, album);
+      if (data?.tracks?.length) return data;
+    }
+    return {};
   }
 
   async function fetchSource(path, artist, album) {
     try {
-      if (path === '/itunes-album-preview') return await fetchItunesDirect(artist, album);
+      if (path === '/itunes-album-preview') return await fetchItunesPreview(artist, album);
       const response = await fetch(`${WORKER_URL}${path}?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
       return response.ok ? (await response.json()) : {};
     } catch (_) { return {}; }

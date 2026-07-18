@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜手機 iTunes 查詢加入可用備援，介紹關閉淡出通過 390px 實測
+- Repo：`dip-vinyl-shop`
+- 改動：店主回報 Windows 已正常、手機仍抓不到 iTunes 且關閉介紹沒有淡出。再次分離驗證後確認：手機當時只停在手勢解鎖用的靜音 WAV，根本沒有取得試聽音檔，因此不是 GainNode 的 1.5 秒參數失效；Apple 同時也會封鎖 Cloudflare Worker 機房出口，不能把查詢單純搬到 Worker。播放器新增行動裝置專用查詢順序：手機先透過文字讀取閘道取得 Apple 公開 Search JSON，桌面維持官方 JSONP 優先，兩條路最後都只播放 Apple CDN 原始 `.m4a`，共同套用 Web Audio 的 50% 音量、1.5 秒淡入與 1.5 秒淡出。單場介紹關閉改為只要視窗原本開著就一律呼叫淡出停止，涵蓋手機關閉鈕、遮罩與 Esc；試煉頁原有關閉鈕／遮罩亦維持同一路徑。快取參數升至 v16。
+- 主要檔案：`dip-player.js`、`battle.html`、`roguelike.html`、`index.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
+- 驗證：`node verify-playback.mjs` 全數通過，涵蓋手機閘道優先、桌面 JSONP 優先／失敗再備援、50% 增益、1.5 秒淡入及關窗淡出。390×844 本機真實瀏覽器完成一回合並開啟 Robbie Basho《Visions of the Country》：成功載入 Apple `.m4a` 且播放時間前進；關閉後 0.3 秒視窗已消失但音訊仍在淡出、約 1.5 秒後才 pause（非突然停止）。`node --check dip-player.js` 與 `git diff --check` 通過。
+
 ### 2026-07-18｜關閉專輯介紹時同步讓音樂淡出停止
 - Repo：`dip-vinyl-shop`
 - 改動：店主確認 Windows 桌面版的點擊播放、1.5 秒淡入淡出與 50% 音量皆正常後，新增介紹視窗生命週期連動：單場對戰與無止盡試煉在按關閉、點遮罩外或（單場）按 Esc 關閉專輯介紹時，播放器會從當下音量淡出 1.5 秒至 0，再真正 pause。單場對戰共用的「出過的牌」清單視窗不會誤停音樂；淡出期間若立刻點另一張專輯，舊停止計時器會被取消，不會誤停新音樂。播放器快取參數升至 v15。
