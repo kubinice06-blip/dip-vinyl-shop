@@ -550,7 +550,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=14"></script>
+<script src="dip-player.js?v=15"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1495,6 +1495,7 @@ function cardInfoRow(card){
   return `<div class="rec-row${aceCls}">${cover}<div class="ri-info">${aceTag}${borrow}<div class="ri-alb">${card.album}</div><div class="ri-art">${card.artist}</div><div class="ri-stats">${stats}</div>${desc}</div></div>`;
 }
 function openRecords(side){
+  recShowsCardInfo=false;
   const list = G && G[side] ? G[side].played : [];
   const who = side==='p' ? '你' : (OPPONENTS[G.opp]||{}).who || '對手';
   document.getElementById('recTitleTxt').textContent = `${who} · 出過的牌`;
@@ -1543,6 +1544,7 @@ async function loadCardDesc(card, seq){
 }
 function openCardInfo(card){
   if(!card) return;
+  recShowsCardInfo=true;
   document.getElementById('recTitleTxt').textContent = '卡片資訊';
   // 點檯面卡：一律用抽卡牌式的詳情卡＋專輯簡介（不分對戰中／賽後）
   document.getElementById('recBody').innerHTML = cardDetailHtml(card);
@@ -1761,7 +1763,13 @@ document.getElementById('rulesClose2').addEventListener('click', closeRules);
 rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules(); });
 // 出牌紀錄 / 點檯面卡看資訊
 const recModal=document.getElementById('recModal');
-const closeRec=()=>recModal.classList.remove('show');
+let recShowsCardInfo=false;
+const closeRec=()=>{
+  const stopMusic=recShowsCardInfo&&recModal.classList.contains('show');
+  recModal.classList.remove('show');
+  recShowsCardInfo=false;
+  if(stopMusic) window.DipPlayer?.stop({fade:true});
+};
 document.getElementById('recClose').addEventListener('click', closeRec);
 recModal.addEventListener('click', e=>{ if(e.target===recModal) closeRec(); });
 document.getElementById('eRecBtn').addEventListener('click', ()=>openRecords('e'));

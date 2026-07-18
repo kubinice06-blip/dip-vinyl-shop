@@ -218,9 +218,14 @@
     if (previewGain && audioCtx) {
       try {
         const now = audioCtx.currentTime;
-        previewGain.gain.cancelScheduledValues(now);
-        previewGain.gain.setValueAtTime(previewGain.gain.value, now);
-        previewGain.gain.linearRampToValueAtTime(toValue, now + ms / 1000);
+        const gain = previewGain.gain;
+        if (typeof gain.cancelAndHoldAtTime === 'function') gain.cancelAndHoldAtTime(now);
+        else {
+          const current = gain.value;
+          gain.cancelScheduledValues(now);
+          gain.setValueAtTime(current, now);
+        }
+        gain.linearRampToValueAtTime(toValue, now + ms / 1000);
         return;
       } catch (_) {}
     }
@@ -719,17 +724,40 @@
     return false;
   }
 
-  function stop() {
-    requestId++;
+  function stop({ fade = false } = {}) {
+    const token = ++requestId;
     clearTimeout(previewTimer);
     clearTimeout(previewFadeTimer);
     clearInterval(previewVolumeTimer);
     clearInterval(youtubeFadeTimer);
-    try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
-    try { spotifyController?.pause?.(); } catch (_) {}
-    try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
-    setProvider(null);
-    emit({ status: 'stopped', provider: null, tracks: [], trackId: '' });
+    const finish = () => {
+      if (token !== requestId) return;
+      clearInterval(previewVolumeTimer);
+      clearInterval(youtubeFadeTimer);
+      try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
+      try { spotifyController?.pause?.(); } catch (_) {}
+      try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
+      setProvider(null);
+      emit({ status: 'stopped', provider: null, tracks: [], trackId: '' });
+    };
+    if (fade && state.status === 'playing') {
+      if (state.provider === 'itunes' && previewAudio && !previewAudio.paused) {
+        fadePreview(0, FADE_MS);
+        emit({ status:'stopping' });
+        previewFadeTimer = setTimeout(finish, FADE_MS);
+        return true;
+      }
+      if (state.provider === 'youtube' && youtubePlayer) {
+        let from = YT_BASE_VOLUME;
+        try { from = Number(youtubePlayer.getVolume?.()) || YT_BASE_VOLUME; } catch (_) {}
+        fadeYoutube(from, 0, FADE_MS);
+        emit({ status:'stopping' });
+        previewFadeTimer = setTimeout(finish, FADE_MS);
+        return true;
+      }
+    }
+    finish();
+    return true;
   }
 
   function onStateChange(callback) {

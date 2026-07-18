@@ -515,7 +515,7 @@
   })();
 </script>
 
-<script src="dip-player.js?v=14"></script>
+<script src="dip-player.js?v=15"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -3019,7 +3019,12 @@ async function loadAlbumDesc(card, el){
   }
   if(el){ el.classList.remove('wait'); el.textContent=txt; }
 }
-function closeCardInfo(){ const m=document.getElementById('cardInfoMask'); if(m) m.remove(); }
+function closeCardInfo(){
+  const m=document.getElementById('cardInfoMask');
+  if(!m) return;
+  m.remove();
+  window.DipPlayer?.stop({fade:true});
+}
 // 遊戲中離開：先確認（半途離開不結算、不累積樂歷）
 function confirmQuit(){
   if(document.getElementById('quitMask')) return;

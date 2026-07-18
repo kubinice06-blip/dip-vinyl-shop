@@ -72,6 +72,7 @@ class MockAudioContext {
     const gain = {
       value:1,
       cancelScheduledValues(time) { events.push({ type:'cancel', time }); },
+      cancelAndHoldAtTime(time) { events.push({ type:'hold', value:this.value, time }); },
       setValueAtTime(value, time) { this.value = value; events.push({ type:'set', value, time }); },
       linearRampToValueAtTime(value, time) { events.push({ type:'ramp', value, time }); }
     };
@@ -107,6 +108,7 @@ class MockYoutubePlayer {
     this.muted = false;
     this.unmuteEvents.push({ volume:this.volume, at:Date.now() });
   }
+  getVolume() { return this.volume; }
   setVolume(value) {
     this.volume = value;
     this.volumeChanges.push({ value, at:Date.now() });
@@ -250,17 +252,29 @@ assert.ok(mockGainNode, 'iTunes preview is routed through Web Audio');
 assert.ok(mockGainNode.events.some(event => event.type === 'set' && event.value === 0), 'iTunes preview starts at zero gain');
 assert.ok(mockGainNode.events.some(event => event.type === 'ramp' && event.value === 0.5 && event.time === 1.5), 'iTunes preview ramps to 50% over 1.5 seconds');
 
+// 關閉介紹視窗：先從當下音量淡出 1.5 秒，之後才真正暫停。
+player.stop({ fade:true });
+assert.equal(audioElements[0].paused, false, 'fade-stop does not pause the preview abruptly');
+assert.equal(states.at(-1).status, 'stopping');
+assert.ok(mockGainNode.events.some(event => event.type === 'ramp' && event.value === 0 && event.time === 1.5), 'fade-stop ramps Web Audio gain to zero over 1.5 seconds');
+await wait(1600);
+assert.equal(audioElements[0].paused, true, 'fade-stop pauses after the fade completes');
+assert.equal(states.at(-1).status, 'stopped');
+
 // Repeating the same album excludes the immediately previous preview when possible.
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(states.at(-1).trackName, 'A Two');
 
 // Switching albums must replace the actual audio source, never replay the old album.
+player.stop({ fade:true });
 await player.prefetch({ artist:'Artist B', album:'Album B', spotify:false, youtube:false, itunes:true });
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist B', album:'Album B', prefer:'itunes' }), true);
+await wait(1600);
 assert.equal(states.at(-1).album, 'Album B');
 assert.equal(audioElements[0].src, 'https://audio/b1.m4a');
+assert.equal(audioElements[0].paused, false, 'an old fade-stop timer never pauses a newly selected album');
 assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/search?')), 'iTunes is loaded through browser JSONP');
 assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'preview lookup does not depend on CORS fetch headers');
 assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'preview playback does not depend on a rate-limited Worker hop');
