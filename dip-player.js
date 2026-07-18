@@ -14,9 +14,9 @@
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let currentPreviewData = null, lastFailCode = '';
-  // 店主要求：整體音量降 70%（播 30%），開頭 1.5 秒淡入、結尾 1.5 秒淡出。
+  // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
   // iOS 忽略 audio.volume，iTunes 路徑須經 Web Audio GainNode 才能真正控音量。
-  const BASE_GAIN = 0.3, YT_BASE_VOLUME = 30, FADE_MS = 1500;
+  const BASE_GAIN = 0.5, YT_BASE_VOLUME = 50, FADE_MS = 1500;
   let audioCtx = null, previewGain = null, previewVolumeTimer = null, previewFadeTimer = null, youtubeFadeTimer = null;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
@@ -288,9 +288,9 @@
     ['pointerdown', 'touchstart', 'click'].forEach(type => document.addEventListener(type, prime, true));
   }
 
-  function unlock() {
+  function unlock({ youtube = true } = {}) {
     const previewReady = primePreviewFromGesture();
-    const youtubeReadyNow = primeYoutubeFromGesture();
+    const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
   }
 
@@ -632,6 +632,9 @@
       player.pauseVideo?.();
       setProvider('youtube');
       youtubeGeneration++;
+      // loadVideoById 本身會開始播放。先保持 mute，避免播放器在影片切換／buffering
+      // 期間以先前音量出聲；確認目標影片真的在播後，才在 0 音量解除靜音並淡入。
+      player.mute?.();
       try { player.setVolume?.(0); } catch (_) {}
       const started = waitForYoutubePlayback(player, token, target);
       let startSeconds = 0;
@@ -645,9 +648,13 @@
         player.setLoop?.(false);
         player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
       } else player.loadVideoById?.(target.video);
-      player.unMute?.();
       player.playVideo?.();
       if (await started) {
+        try {
+          player.setVolume?.(0);
+          player.unMute?.();
+          player.setVolume?.(0);
+        } catch (_) {}
         fadeYoutube(0, YT_BASE_VOLUME, FADE_MS);
         if (highlight) {
           // YT 會在 endSeconds（約 30 秒處）自行停止，淡出要提早開始才播得完。
@@ -678,7 +685,8 @@
       const entry = linkEntry(artist, album);
       // 唱片櫃混合路徑：iTunes 優先（真 30 秒試聽＋曲目列表），使用者 IP 被 Apple
       // 封鎖或查無專輯時，自動退到對戰同款的 YouTube 高觀看曲目 30 秒片段。
-      const order = prefer === 'itunes' ? ['itunes', 'youtube']
+      const order = prefer === 'itunes-only' ? ['itunes']
+        : prefer === 'itunes' ? ['itunes', 'youtube']
         : prefer === 'spotify' ? ['spotify', 'youtube']
         : prefer === 'youtube' ? ['youtube', 'spotify']
         : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];

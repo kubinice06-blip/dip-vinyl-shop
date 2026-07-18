@@ -63,6 +63,24 @@ class MockAudio extends MockElement {
   }
 }
 
+let mockGainNode = null;
+class MockAudioContext {
+  constructor() { this.currentTime = 0; this.state = 'running'; this.destination = {}; }
+  createMediaElementSource() { return { connect() {} }; }
+  createGain() {
+    const events = [];
+    const gain = {
+      value:1,
+      cancelScheduledValues(time) { events.push({ type:'cancel', time }); },
+      setValueAtTime(value, time) { this.value = value; events.push({ type:'set', value, time }); },
+      linearRampToValueAtTime(value, time) { events.push({ type:'ramp', value, time }); }
+    };
+    mockGainNode = { gain, events, connect() {} };
+    return mockGainNode;
+  }
+  resume() { this.state = 'running'; return Promise.resolve(); }
+}
+
 const elements = new Map();
 const audioElements = [];
 let randomValue = 0;
@@ -77,12 +95,18 @@ class MockYoutubePlayer {
     this.lastLoad = null;
     this.volume = 100;
     this.volumeChanges = [];
+    this.muted = false;
+    this.unmuteEvents = [];
     youtubePlayer = this;
     queueMicrotask(() => options.events.onReady());
   }
   pauseVideo() { this.state = 2; }
   playVideo() { this.state = 1; }
-  unMute() {}
+  mute() { this.muted = true; }
+  unMute() {
+    this.muted = false;
+    this.unmuteEvents.push({ volume:this.volume, at:Date.now() });
+  }
   setVolume(value) {
     this.volume = value;
     this.volumeChanges.push({ value, at:Date.now() });
@@ -178,7 +202,7 @@ function sourceFor(url) {
 const mockMath = Object.create(Math);
 mockMath.random = () => randomValue;
 const context = {
-  window: { YT:{ Player:MockYoutubePlayer } },
+  window: { YT:{ Player:MockYoutubePlayer }, AudioContext:MockAudioContext },
   document,
   navigator: { userAgent:'Desktop test', platform:'Win32', maxTouchPoints:0 },
   location: { origin:'http://localhost:5179' },
@@ -222,6 +246,9 @@ assert.equal(states.at(-1).provider, 'itunes');
 assert.equal(states.at(-1).trackName, 'A One');
 assert.equal(audioElements[0].src, 'https://audio/a1.m4a');
 assert.equal(audioElements[0].loop, false);
+assert.ok(mockGainNode, 'iTunes preview is routed through Web Audio');
+assert.ok(mockGainNode.events.some(event => event.type === 'set' && event.value === 0), 'iTunes preview starts at zero gain');
+assert.ok(mockGainNode.events.some(event => event.type === 'ramp' && event.value === 0.5 && event.time === 1.5), 'iTunes preview ramps to 50% over 1.5 seconds');
 
 // Repeating the same album excludes the immediately previous preview when possible.
 player.unlock();
@@ -271,7 +298,14 @@ await wait(100);
 const earlyFadeValues = youtubePlayer.volumeChanges
   .filter(change => change.at >= switchedAt)
   .map(change => change.value);
-assert.ok(!earlyFadeValues.includes(30), 'YouTube unlock cleanup must not bypass the 1.5-second fade-in');
+assert.ok(!earlyFadeValues.includes(50), 'YouTube unlock cleanup must not bypass the 1.5-second fade-in');
+const latestUnmute = youtubePlayer.unmuteEvents.at(-1);
+assert.equal(latestUnmute.volume, 0, 'YouTube remains muted until the requested video is playing at zero volume');
+
+// 對戰／試煉安全路徑：iTunes 找不到時不得退回 iOS 無法控音量的 YouTube。
+player.unlock({ youtube:false });
+assert.equal(await player.playAlbum({ artist:'Artist E', album:'Album E', prefer:'itunes-only' }), false);
+assert.equal(states.at(-1).provider, null);
 
 // 失敗代碼：首次真查詢要標出配對失敗（S4:n），重試窗內再點要回報 S8（快取空結果），不能沒有代碼。
 player.unlock();

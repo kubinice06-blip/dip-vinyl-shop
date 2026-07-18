@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜對戰改用可控音量的試聽來源，真正落實 1.5 秒淡入淡出與 50% 音量
+- Repo：`dip-vinyl-shop`
+- 改動：店主真機回報 v13 仍會突然全音量出聲。重新追查確認根因是 iPhone／iOS 不允許網頁控制 YouTube iframe 音量，`setVolume()` 模擬雖通過、真機卻會被平台忽略。為避免突發聲音，單場對戰與無止盡試煉改為點介紹時才查詢並播放可經 Web Audio GainNode 控制的 iTunes 30 秒試聽：同一點擊手勢先解鎖音訊圖，再從 gain 0 線性淡入 1.5 秒至 0.5；揭牌時不再預抓無用的 YouTube／Spotify，找不到試聽時也不退到無法保證音量的 YouTube。共用音量由 30% 改為店主指定的 50%。桌面仍使用 YouTube 的其他路徑也加強為載入與 buffering 全程 mute，確認目標影片播放後才在音量 0 解除靜音並淡入。播放器快取參數升至 v14。
+- 主要檔案：`dip-player.js`、`battle.html`、`roguelike.html`、`index.html`、`verify-playback.mjs`
+- 驗證：`node verify-playback.mjs` 全數通過，新增 Web Audio gain 由 0 在 1.5 秒 ramp 至 0.5、YouTube 於 0 音量才解除靜音、`itunes-only` 不得退 YouTube 三項回歸；`battle.html`、`roguelike.html` 內嵌腳本通過 `node --check`；本機真實瀏覽器完成一回合後點我方檯面專輯，介紹正常開啟、實際載入 Apple `.m4a` 試聽並持續播放，console 無 error／warning；`git diff --check` 通過。
+
 ### 2026-07-18｜對戰音樂改為點專輯介紹才播放；修正 YouTube 1.5 秒淡入被覆蓋
 - Repo：`dip-vinyl-shop`
 - 改動：單場對戰與無止盡試煉全面移除每回合勝方自動播放；揭牌仍只做背景預抓，玩家主動點擊敵方或我方專輯、介紹視窗實際開啟時才播放。追查 1.5 秒淡入未生效的原因，是 YouTube 首次手勢解鎖排定的 160ms 清理動作會在真實專輯已開始後仍把音量直接設為 30%，中途蓋掉淡入；現在以播放 generation 防止舊清理動作干擾新播放，原有 30 秒片段結尾 1.5 秒淡出計時維持。播放器快取參數升至 v13。

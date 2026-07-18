@@ -550,7 +550,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=13"></script>
+<script src="dip-player.js?v=14"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -589,12 +589,12 @@ function setBattleMusic(enabled){
 }
 function playBattleAlbum(card){
   if(!battleMusicOn || !card || !window.DipPlayer) return false;
-  try { void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'youtube'}).catch(()=>{}); return true; }
-  catch(e) { return false; }
-}
-function prefetchBattleAlbum(card){
-  if(!battleMusicOn || !card || !window.DipPlayer?.prefetch) return false;
-  try { void window.DipPlayer.prefetch({artist:card.artist,album:card.album}).catch(()=>{}); return true; }
+  try {
+    // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
+    window.DipPlayer.unlock?.({youtube:false});
+    void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'}).catch(()=>{});
+    return true;
+  }
   catch(e) { return false; }
 }
 function initBattlePlayer(){
@@ -1214,7 +1214,6 @@ async function play(pCard, pAttr){
     document.getElementById('pSlot').innerHTML=cardHTML(pCard,pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
     G.pShow=pCard;
     lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
-    prefetchBattleAlbum(pCard);
     if(pUlt){ G.e.hp-=CFG.ultimate; G.p.qi=0; G.e.qi=Math.min(CFG.qiMax,G.e.qi+CFG.ultLoserQi); callout(`<div class="ultimate-skill">你 · 品味輾壓</div><div class="dmgnum">-${CFG.ultimate}</div>`); }
     else { const pcq=computeChain(G.p,pAttr).qi; G.p.qi=Math.min(CFG.qiMax,G.p.qi+pcq); applyAttrEffect('p',pAttr); G.p.last=pAttr; callout(`<div class="sub fx">你〔${FX_ZH[pAttr]}〕`); }
     flashHp('e'); renderHp(); renderQi();
@@ -1239,12 +1238,10 @@ async function play(pCard, pAttr){
   document.getElementById('pSlot').innerHTML = cardHTML(pCard, pUlt?'__ult__':pAttr); document.getElementById('pSlot').classList.add('filled','clickable'); document.getElementById('pSlot').classList.remove('done');
   G.pShow=pCard;
   lazyCover('pSlot', pCard, pUlt?'__ult__':pAttr);
-  prefetchBattleAlbum(pCard);
   await sleep(300);
   const eSlot=document.getElementById('eSlot'); eSlot.className='slot filled clickable'; eSlot.innerHTML = cardHTML(eCard, eUlt?'__ult__':eAttr);
   G.eShow=eCard;
   lazyCover('eSlot', eCard, eUlt?'__ult__':eAttr);
-  prefetchBattleAlbum(eCard);
   if(feinted && G.pCounteredTellLast){ callout(`<div class="skill cnt">電腦虛晃一招！</div><div class="sub">沒照氣場出牌，反咬你的相剋</div>`); await sleep(750); }
   setMeta();
   await sleep(450);
