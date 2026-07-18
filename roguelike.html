@@ -515,7 +515,7 @@
   })();
 </script>
 
-<script src="dip-player.js?v=3"></script>
+<script src="dip-player.js?v=4"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1341,7 +1341,7 @@ function setRogueMusic(enabled){
 }
 function playRogueAlbum(card){
   if(!rogueMusicOn||!card||!window.DipPlayer) return false;
-  try{void window.DipPlayer.playAlbum({artist:card.artist,album:card.album}).catch(()=>{});return true;}catch(e){return false;}
+  try{void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'youtube'}).catch(()=>{});return true;}catch(e){return false;}
 }
 function prefetchRogueAlbum(card){
   if(!rogueMusicOn||!card||!window.DipPlayer?.prefetch) return false;

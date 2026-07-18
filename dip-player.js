@@ -306,7 +306,11 @@
       setProvider('youtube');
       const started = waitForYoutubePlayback(player, token);
       youtubeGeneration++;
-      if (target.list) player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
+      if (target.list) {
+        player.setShuffle?.(false);
+        player.setLoop?.(false);
+        player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
+      }
       else player.loadVideoById?.(target.video);
       player.unMute?.();
       player.playVideo?.();
@@ -316,20 +320,22 @@
     } catch (_) { return false; }
   }
 
-  async function playAlbum({ artist = '', album = '' } = {}) {
+  async function playAlbum({ artist = '', album = '', prefer = 'auto' } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return false;
     const token = ++requestId;
     emit({ status: 'loading', provider: null, artist, album });
     try {
-      const { spotifyUrl, youtubeUrl } = await prefetch({ artist, album, youtube:true });
-      if (token !== requestId) return false;
-      const spotifyId = spotifyAlbumId(spotifyUrl);
-      const attempts = IOS_DEVICE
-        ? [['youtube', youtubeUrl], ['spotify', spotifyId]]
-        : [['spotify', spotifyId], ['youtube', youtubeUrl]];
-      for (const [provider, target] of attempts) {
+      const entry = linkEntry(artist, album);
+      const order = prefer === 'spotify' ? ['spotify', 'youtube']
+        : prefer === 'youtube' ? ['youtube', 'spotify']
+        : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];
+      for (const provider of order) {
+        const url = provider === 'youtube'
+          ? await loadCachedLink(entry, 'youtube', '/yt-music-link', artist, album)
+          : await loadCachedLink(entry, 'spotify', '/spotify-album-link', artist, album);
+        const target = provider === 'youtube' ? url : spotifyAlbumId(url);
         if (!target || token !== requestId) continue;
         const played = provider === 'youtube'
           ? await playYoutube(target, token)

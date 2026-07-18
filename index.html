@@ -780,7 +780,7 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=3"></script>
+<script src="dip-player.js?v=4"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1475,7 +1475,7 @@
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
-    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album }).then(ok => { if (!ok) showShareToast && showShareToast('這張唱片暫時找不到可播放版本'); });
+    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'spotify' }).then(ok => { if (!ok) showShareToast && showShareToast('這張唱片暫時找不到可播放版本'); });
   }
 
   async function prefetchCollection(records) {

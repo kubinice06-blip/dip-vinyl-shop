@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜整張專輯播放來源改為官方 Album playlist 優先
+- Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
+- 改動：Worker `/yt-music-link` 使用全新 `album-v1` 快取命名空間，完全移除一般 YouTube 搜尋首片與 Data API 任意影片退路；現在先解析 YouTube Music 官方 OLAK Album playlist，需同時吻合專輯、藝人及版本，找不到時才接受標題明寫 `Full Album`、片長至少 20 分鐘且排除未要求的 live／concert／interview／commentary／cover／Taylor's Version 等版本。前端播放器新增明確來源偏好：唱片櫃逐張點播固定 Spotify 優先，對戰與 Roguelike 勝方專輯固定 YouTube 優先、Spotify 備援；解析與播放依優先序逐一進行，不再為等候備援來源延遲首選來源，Album playlist 保持第一首起播且關閉 shuffle／loop。
+- 主要檔案：Worker `src/index.js`；Shop `dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`PROJECT_MEMORY.md`
+- 驗證：Worker `node --check`、`wrangler deploy --dry-run`、前端 `node --check dip-player.js`、`git diff --check` 通過。本機 Worker 真實查詢：Eurythmics《Peace》、Chicago《Chicago III》、B.B. King《Live at the Regal》、五月天《人生海海》與辛曉琪《一夜之間》皆回官方 OLAK Album playlist；Taylor Swift《Red》未誤收 Taylor's Version，改採 4,523 秒且標題明寫 Full Album 的影片；無合格整張來源的 Ariana Grande《petal》與 Vulfpeck 合輯正確回空。390×844 單場對戰實測 viewport／scrollWidth 均為 390、無橫向捲動，100dvh 仍為 844，迷你唱盤座標與既有版面未位移；cache-bust 已升 v4。iOS Safari 的非手勢勝方自動出聲仍須店主真機複驗。
+
 ### 2026-07-18｜修正 iOS 多數專輯與對戰無聲、唱盤移至玩家血條上方
 - Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
 - 改動：追查店主 iPhone 實測後確認，多數專輯雖有 Spotify 連結，但 iOS 無法在非同步流程後啟動有聲 Spotify iframe；同時 `/yt-music-link` 每張專輯使用兩次 YouTube Data API 搜尋，在卡冊預抓時迅速耗盡額度。Worker 將曲目快取升至 v5，優先以不耗 API quota 的 YouTube 公開搜尋結果選出可信音樂影片，官方 Data API 改為單次後備；前端 iOS 改成 YouTube 優先、在出牌／點唱手勢內以同一常駐 iframe 做 1% 有聲解鎖，並防止解鎖計時器誤停稍後載入的真正專輯。卡冊批次預抓只查 Spotify，使用者點唱時才查 YouTube，避免再度爆量。Roguelike 唱盤保持 absolute，移到玩家 nameplate 中央、血條上方並與右側像素小人水平置中，不參與現有版面流。
