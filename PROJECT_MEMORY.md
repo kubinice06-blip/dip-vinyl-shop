@@ -104,6 +104,13 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜P9a 強化共用播放器的行動裝置自動播放
+
+- Repo：`dip-vinyl-shop`
+- 改動：`DipPlayer.mount(container,{hidden:true})` 新增 1×1 畫面外隱藏模式，不使用 `display:none`；掛載即預建 Spotify 控制器與 YouTube Player，第一次可用的 pointer／touch／click 以 mute→play→pause 解鎖 YouTube 音訊。新增 `prefetch()`，同時預抓 Spotify／YouTube 連結並以 artist＋album 記憶體快取去重；`playAlbum()` 優先使用快取，Spotify 起播後等待官方 `playback_started`／`playback_update`，1.5 秒未確認播放便暫停並改走 YouTube。兩平台都確認實際播放後才回報 `playing`，所有失敗仍收斂為 `false`，cache-bust 升至 v2。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`
+- 驗證：`node --check dip-player.js` 與 `git diff --check` 通過；VM 回歸確認隱藏掛載、Spotify 控制器預建、重複預抓只發兩個端點請求、Spotify 看門狗逾時後由 YouTube 起播、`onStateChange` 與 `stop()` 正常。iOS 真機「點一下 1 秒內出聲」及首次解鎖後非手勢切歌待店主配合驗收。
+
 ### 2026-07-18｜P9 音樂體驗改版計畫定稿（店主 iPhone 實測六點回饋）
 
 - Repo：`dip-vinyl-shop`
