@@ -12,6 +12,7 @@
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
+  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '';
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -200,11 +201,60 @@
     return null;
   }
 
-  async function fetchLink(path, artist, album) {
+  function normalizePreviewText(value) {
+    return String(value || '').normalize('NFKD').toLowerCase()
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
+  }
+
+  function previewArtistMatches(candidate, artist) {
+    const candidateKey = normalizePreviewText(candidate), artistKey = normalizePreviewText(artist);
+    return candidateKey.length > 2 && artistKey.length > 2 &&
+      (candidateKey.includes(artistKey) || artistKey.includes(candidateKey));
+  }
+
+  function previewAlbumMatches(candidate, album) {
+    const editions = /\b(?:remaster(?:ed)?(?:\s+version)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?|anniversary(?:\s+edition)?|mono|stereo|reissue|edition)\b/gi;
+    const candidateKey = normalizePreviewText(candidate), albumKey = normalizePreviewText(album);
+    const candidateCore = normalizePreviewText(String(candidate || '').replace(editions, ''));
+    const albumCore = normalizePreviewText(String(album || '').replace(editions, ''));
+    return albumKey.length > 1 && (candidateKey === albumKey || (albumCore.length > 1 && candidateCore === albumCore));
+  }
+
+  async function fetchItunesDirect(artist, album) {
     try {
+      const requestUrl = new URL('https://itunes.apple.com/search');
+      requestUrl.searchParams.set('term', `${artist} ${album}`);
+      requestUrl.searchParams.set('country', 'TW');
+      requestUrl.searchParams.set('media', 'music');
+      requestUrl.searchParams.set('entity', 'song');
+      requestUrl.searchParams.set('limit', '200');
+      const response = await fetch(requestUrl);
+      if (!response.ok) return {};
+      const json = await response.json();
+      const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
+      const tracks = (json.results || []).filter(item => {
+        if (item.kind !== 'song' || !item.previewUrl || !previewAlbumMatches(item.collectionName, album)) return false;
+        return previewArtistMatches(item.artistName, artist) ||
+          (cjkArtist && normalizePreviewText(item.collectionName) === normalizePreviewText(album));
+      }).map(item => ({
+        id:String(item.trackId || ''), trackName:item.trackName || '', trackNumber:Number(item.trackNumber || 0),
+        duration:Number(item.trackTimeMillis || 0), previewUrl:item.previewUrl,
+        storeUrl:item.trackViewUrl || item.collectionViewUrl || '', artistName:item.artistName || artist,
+        collectionName:item.collectionName || album
+      }));
+      const unique = [...new Map(tracks.map(item => [item.id || item.previewUrl, item])).values()]
+        .sort((a, b) => a.trackNumber - b.trackNumber);
+      return unique.length ? { source:'itunes-preview', tracks:unique } : {};
+    } catch (_) { return {}; }
+  }
+
+  async function fetchSource(path, artist, album) {
+    try {
+      if (path === '/itunes-album-preview') return await fetchItunesDirect(artist, album);
       const response = await fetch(`${WORKER_URL}${path}?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
-      return response.ok ? ((await response.json()).url || '') : '';
-    } catch (_) { return ''; }
+      return response.ok ? (await response.json()) : {};
+    } catch (_) { return {}; }
   }
 
   function cacheKey(artist, album) {
@@ -214,32 +264,34 @@
   function linkEntry(artist, album) {
     const key = cacheKey(artist, album);
     if (!linkCache.has(key)) linkCache.set(key, {
-      spotifyUrl: null, youtubeUrl: null, spotifyPromise: null, youtubePromise: null
+      spotifyData: null, youtubeData: null, itunesData: null,
+      spotifyPromise: null, youtubePromise: null, itunesPromise: null
     });
     return linkCache.get(key);
   }
 
-  function loadCachedLink(entry, type, path, artist, album) {
-    const urlKey = `${type}Url`, promiseKey = `${type}Promise`;
-    if (entry[urlKey] !== null) return Promise.resolve(entry[urlKey]);
+  function loadCachedSource(entry, type, path, artist, album) {
+    const dataKey = `${type}Data`, promiseKey = `${type}Promise`;
+    if (entry[dataKey] !== null) return Promise.resolve(entry[dataKey]);
     if (!entry[promiseKey]) {
-      entry[promiseKey] = fetchLink(path, artist, album)
-        .then(url => { entry[urlKey] = url || ''; return entry[urlKey]; })
-        .catch(() => { entry[urlKey] = ''; return ''; });
+      entry[promiseKey] = fetchSource(path, artist, album)
+        .then(data => { entry[dataKey] = data && typeof data === 'object' ? data : {}; return entry[dataKey]; })
+        .catch(() => { entry[dataKey] = {}; return entry[dataKey]; });
     }
     return entry[promiseKey];
   }
 
-  function prefetch({ artist = '', album = '', youtube = true } = {}) {
+  function prefetch({ artist = '', album = '', spotify = true, youtube = true, itunes = false } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
-    if (!artist || !album) return Promise.resolve({ spotifyUrl: '', youtubeUrl: '' });
+    if (!artist || !album) return Promise.resolve({ spotifyUrl: '', youtubeUrl: '', itunesData: {} });
     const entry = linkEntry(artist, album);
-    const spotify = loadCachedLink(entry, 'spotify', '/spotify-album-link', artist, album);
-    const fallback = youtube
-      ? loadCachedLink(entry, 'youtube', '/yt-music-link', artist, album)
-      : Promise.resolve(entry.youtubeUrl || '');
-    return Promise.all([spotify, fallback]).then(([spotifyUrl, youtubeUrl]) => ({ spotifyUrl, youtubeUrl }));
+    const spotifySource = spotify ? loadCachedSource(entry, 'spotify', '/spotify-album-link', artist, album) : Promise.resolve(entry.spotifyData || {});
+    const youtubeSource = youtube ? loadCachedSource(entry, 'youtube', '/yt-music-link', artist, album) : Promise.resolve(entry.youtubeData || {});
+    const itunesSource = itunes ? loadCachedSource(entry, 'itunes', '/itunes-album-preview', artist, album) : Promise.resolve(entry.itunesData || {});
+    return Promise.all([spotifySource, youtubeSource, itunesSource]).then(([spotifyData, youtubeData, itunesData]) => ({
+      spotifyUrl: spotifyData.url || '', youtubeUrl: youtubeData.url || '', spotifyData, youtubeData, itunesData
+    }));
   }
 
   function waitForSpotifyPlayback(controller, token) {
@@ -270,6 +322,10 @@
     const uri = `spotify:album:${id}`, controller = await ensureController(uri);
     if (!controller || token !== requestId) return false;
     try {
+      clearTimeout(previewTimer);
+      previewAudio?.pause?.();
+      youtubePlayer?.pauseVideo?.();
+      controller.pause?.();
       setProvider('spotify');
       const started = waitForSpotifyPlayback(controller, token);
       if (typeof controller.loadEntity === 'function') controller.loadEntity(uri);
@@ -281,7 +337,7 @@
     } catch (_) { return false; }
   }
 
-  function waitForYoutubePlayback(player, token) {
+  function waitForYoutubePlayback(player, token, target) {
     return new Promise(resolve => {
       let settled = false;
       const finish = value => {
@@ -292,29 +348,110 @@
         resolve(value && token === requestId);
       };
       const poll = setInterval(() => {
-        try { if (player.getPlayerState?.() === 1) finish(true); } catch (_) {}
+        try {
+          const currentVideo = player.getVideoData?.()?.video_id || '';
+          const currentList = player.getPlaylistId?.() || '';
+          const correctSource = target.video ? currentVideo === target.video : target.list ? currentList === target.list : false;
+          if (correctSource && player.getPlayerState?.() === 1) finish(true);
+        } catch (_) {}
       }, 50);
       const timer = setTimeout(() => finish(false), 6000);
     });
   }
 
-  async function playYoutube(url, token) {
-    const target = youtubeTarget(url), player = await ensureYoutubePlayer();
+  function ensurePreviewAudio() {
+    if (previewAudio) return previewAudio;
+    previewAudio = document.createElement('audio');
+    previewAudio.preload = 'auto';
+    previewAudio.setAttribute('playsinline', '');
+    previewAudio.setAttribute('aria-hidden', 'true');
+    previewAudio.style.display = 'none';
+    root?.appendChild(previewAudio);
+    return previewAudio;
+  }
+
+  function waitForPreviewPlayback(audio, token) {
+    return new Promise(resolve => {
+      let settled = false;
+      const finish = value => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        audio.removeEventListener('playing', playing);
+        audio.removeEventListener('error', failed);
+        resolve(value && token === requestId);
+      };
+      const playing = () => finish(true), failed = () => finish(false);
+      const timer = setTimeout(() => finish(false), 3000);
+      audio.addEventListener('playing', playing, { once:true });
+      audio.addEventListener('error', failed, { once:true });
+    });
+  }
+
+  async function playItunes(data, token) {
+    const tracks = Array.isArray(data?.tracks) ? data.tracks.filter(track => track?.previewUrl) : [];
+    if (!tracks.length || token !== requestId) return false;
+    const choices = tracks.length > 1 ? tracks.filter(track => track.id !== lastPreviewTrackId) : tracks;
+    const track = choices[Math.floor(Math.random() * choices.length)] || tracks[0];
+    const audio = ensurePreviewAudio();
+    if (!audio || !track) return false;
+    try {
+      clearTimeout(previewTimer);
+      spotifyController?.pause?.();
+      youtubePlayer?.pauseVideo?.();
+      audio.pause();
+      audio.src = track.previewUrl;
+      audio.currentTime = 0;
+      audio.load();
+      setProvider('itunes');
+      const started = waitForPreviewPlayback(audio, token);
+      const attempt = audio.play();
+      if (attempt?.catch) attempt.catch(() => {});
+      if (!(await started)) { audio.pause(); return false; }
+      lastPreviewTrackId = track.id || track.previewUrl;
+      previewTimer = setTimeout(() => {
+        if (token !== requestId) return;
+        audio.pause();
+        emit({ status:'stopped', provider:null });
+      }, 30500);
+      return { trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽' };
+    } catch (_) { return false; }
+  }
+
+  async function playYoutube(data, token) {
+    const highlight = data?.highlight?.videoId ? data.highlight : null;
+    const target = highlight ? { list:'', video:highlight.videoId } : youtubeTarget(data?.url || '');
+    const player = await ensureYoutubePlayer();
     if (!target || !player || token !== requestId) return false;
     try {
+      clearTimeout(previewTimer);
+      previewAudio?.pause?.();
       spotifyController?.pause?.();
+      player.pauseVideo?.();
       setProvider('youtube');
-      const started = waitForYoutubePlayback(player, token);
       youtubeGeneration++;
-      if (target.list) {
+      const started = waitForYoutubePlayback(player, token, target);
+      let startSeconds = 0;
+      if (highlight) {
+        const duration = Number(highlight.duration || 0);
+        startSeconds = duration > 70 ? Math.floor(10 + Math.random() * (duration - 50)) : 0;
+        const endSeconds = duration ? Math.min(startSeconds + 30, duration) : startSeconds + 30;
+        player.loadVideoById?.({ videoId:target.video, startSeconds, endSeconds });
+      } else if (target.list) {
         player.setShuffle?.(false);
         player.setLoop?.(false);
         player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
-      }
-      else player.loadVideoById?.(target.video);
+      } else player.loadVideoById?.(target.video);
       player.unMute?.();
       player.playVideo?.();
-      if (await started) return true;
+      if (await started) {
+        if (highlight) previewTimer = setTimeout(() => {
+          if (token !== requestId) return;
+          player.pauseVideo?.();
+          emit({ status:'stopped', provider:null });
+        }, 30500);
+        return { trackName:highlight?.title || '', startSeconds };
+      }
       player.pauseVideo?.();
       return false;
     } catch (_) { return false; }
@@ -325,23 +462,24 @@
     album = String(album).trim();
     if (!artist || !album || !root) return false;
     const token = ++requestId;
-    emit({ status: 'loading', provider: null, artist, album });
+    emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'' });
     try {
       const entry = linkEntry(artist, album);
-      const order = prefer === 'spotify' ? ['spotify', 'youtube']
+      const order = prefer === 'itunes' ? ['itunes']
+        : prefer === 'spotify' ? ['spotify', 'youtube']
         : prefer === 'youtube' ? ['youtube', 'spotify']
         : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];
       for (const provider of order) {
-        const url = provider === 'youtube'
-          ? await loadCachedLink(entry, 'youtube', '/yt-music-link', artist, album)
-          : await loadCachedLink(entry, 'spotify', '/spotify-album-link', artist, album);
-        const target = provider === 'youtube' ? url : spotifyAlbumId(url);
+        const path = provider === 'youtube' ? '/yt-music-link' : provider === 'itunes' ? '/itunes-album-preview' : '/spotify-album-link';
+        let source = entry[`${provider}Data`];
+        if (source === null) source = await loadCachedSource(entry, provider, path, artist, album);
+        const target = provider === 'spotify' ? spotifyAlbumId(source?.url || '') : source;
         if (!target || token !== requestId) continue;
-        const played = provider === 'youtube'
-          ? await playYoutube(target, token)
+        const played = provider === 'youtube' ? await playYoutube(target, token)
+          : provider === 'itunes' ? await playItunes(target, token)
           : await playSpotify(target, token);
         if (played && token === requestId) {
-          emit({ status: 'playing', provider, artist, album });
+          emit({ status: 'playing', provider, artist, album, ...(played === true ? {} : played) });
           return true;
         }
       }
@@ -355,6 +493,8 @@
 
   function stop() {
     requestId++;
+    clearTimeout(previewTimer);
+    try { previewAudio?.pause?.(); } catch (_) {}
     try { spotifyController?.pause?.(); } catch (_) {}
     try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
     setProvider(null);
