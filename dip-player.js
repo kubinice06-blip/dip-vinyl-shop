@@ -14,6 +14,10 @@
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let currentPreviewData = null, lastFailCode = '';
+  // 店主要求：整體音量降 70%（播 30%），開頭 1.5 秒淡入、結尾 1.5 秒淡出。
+  // iOS 忽略 audio.volume，iTunes 路徑須經 Web Audio GainNode 才能真正控音量。
+  const BASE_GAIN = 0.3, YT_BASE_VOLUME = 30, FADE_MS = 1500;
+  let audioCtx = null, previewGain = null, previewVolumeTimer = null, previewFadeTimer = null, youtubeFadeTimer = null;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -167,7 +171,7 @@
       setTimeout(() => {
         try {
           if (generation === youtubeGeneration) youtubePlayer.pauseVideo?.();
-          youtubePlayer.setVolume?.(100);
+          youtubePlayer.setVolume?.(YT_BASE_VOLUME);
         } catch (_) {}
       }, 160);
       return true;
@@ -186,10 +190,78 @@
     return silentPreviewUrl;
   }
 
+  // 建立 audio 元件 → GainNode → 喇叭 的固定路徑。必須在手勢內建立／喚醒
+  // AudioContext；Apple 試聽 CDN 帶 ACAO:*，crossOrigin 模式下不會被靜音。
+  function ensurePreviewGraph() {
+    if (!previewAudio) return;
+    if (!audioCtx) {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      try {
+        audioCtx = new Ctx();
+        const source = audioCtx.createMediaElementSource(previewAudio);
+        previewGain = audioCtx.createGain();
+        previewGain.gain.value = BASE_GAIN;
+        source.connect(previewGain);
+        previewGain.connect(audioCtx.destination);
+      } catch (_) { audioCtx = null; previewGain = null; }
+    }
+    if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
+  }
+
+  function fadePreview(toValue, ms) {
+    clearInterval(previewVolumeTimer);
+    if (previewGain && audioCtx) {
+      try {
+        const now = audioCtx.currentTime;
+        previewGain.gain.cancelScheduledValues(now);
+        previewGain.gain.setValueAtTime(previewGain.gain.value, now);
+        previewGain.gain.linearRampToValueAtTime(toValue, now + ms / 1000);
+        return;
+      } catch (_) {}
+    }
+    // 無 Web Audio 的後備：漸變 element volume（桌面有效；iOS 會忽略，只是不淡）。
+    if (!previewAudio) return;
+    const from = previewAudio.volume ?? 1, steps = Math.max(1, Math.round(ms / 60));
+    let step = 0;
+    previewVolumeTimer = setInterval(() => {
+      step++;
+      try { previewAudio.volume = Math.min(1, Math.max(0, from + (toValue - from) * (step / steps))); } catch (_) {}
+      if (step >= steps) clearInterval(previewVolumeTimer);
+    }, 60);
+  }
+
+  function setPreviewLevel(value) {
+    clearInterval(previewVolumeTimer);
+    if (previewGain && audioCtx) {
+      try {
+        previewGain.gain.cancelScheduledValues(audioCtx.currentTime);
+        previewGain.gain.setValueAtTime(value, audioCtx.currentTime);
+        return;
+      } catch (_) {}
+    }
+    if (previewAudio) { try { previewAudio.volume = Math.min(1, Math.max(0, value)); } catch (_) {} }
+  }
+
+  function fadeYoutube(fromValue, toValue, ms) {
+    clearInterval(youtubeFadeTimer);
+    if (!youtubePlayer?.setVolume) return;
+    const generation = youtubeGeneration, steps = Math.max(1, Math.round(ms / 60));
+    let step = 0;
+    try { youtubePlayer.setVolume(Math.round(fromValue)); } catch (_) {}
+    youtubeFadeTimer = setInterval(() => {
+      if (generation !== youtubeGeneration) { clearInterval(youtubeFadeTimer); return; }
+      step++;
+      try { youtubePlayer.setVolume(Math.round(fromValue + (toValue - fromValue) * (step / steps))); } catch (_) {}
+      if (step >= steps) clearInterval(youtubeFadeTimer);
+    }, 60);
+  }
+
   function primePreviewFromGesture() {
     if (!root) return false;
     try {
       const audio = ensurePreviewAudio();
+      ensurePreviewGraph();
       if (!audio.paused && !audio.ended) return true;
       audio.loop = true;
       audio.src = silentPreviewSource();
@@ -324,14 +396,24 @@
     const key = cacheKey(artist, album);
     if (!linkCache.has(key)) linkCache.set(key, {
       spotifyData: null, youtubeData: null, itunesData: null,
-      spotifyPromise: null, youtubePromise: null, itunesPromise: null, itunesRetryAt: 0
+      spotifyPromise: null, youtubePromise: null, itunesPromise: null,
+      itunesRetryAt: 0, youtubeRetryAt: 0
     });
     return linkCache.get(key);
   }
 
+  // iTunes 與 YouTube 的空結果都只黏 15 秒：暫時性失敗（限流、YT Music 被擋）
+  // 不應該讓整個瀏覽期都拿快取空資料。
+  function sourceEmpty(type, data) {
+    if (type === 'itunes') return !data?.tracks?.length;
+    if (type === 'youtube') return !(data?.url || data?.highlight);
+    return false;
+  }
+
   function loadCachedSource(entry, type, path, artist, album) {
-    const dataKey = `${type}Data`, promiseKey = `${type}Promise`;
-    if (type === 'itunes' && entry[dataKey] !== null && !entry[dataKey]?.tracks?.length && Date.now() >= entry.itunesRetryAt) {
+    const dataKey = `${type}Data`, promiseKey = `${type}Promise`, retryKey = `${type}RetryAt`;
+    const retriable = type === 'itunes' || type === 'youtube';
+    if (retriable && entry[dataKey] !== null && sourceEmpty(type, entry[dataKey]) && Date.now() >= (entry[retryKey] || 0)) {
       entry[dataKey] = null;
       entry[promiseKey] = null;
     }
@@ -340,15 +422,15 @@
       entry[promiseKey] = fetchSource(path, artist, album)
         .then(data => {
           entry[dataKey] = data && typeof data === 'object' ? data : {};
-          if (type === 'itunes' && !entry[dataKey]?.tracks?.length) {
-            entry.itunesRetryAt = Date.now() + 15000;
+          if (retriable && sourceEmpty(type, entry[dataKey])) {
+            entry[retryKey] = Date.now() + 15000;
             entry[promiseKey] = null;
           }
           return entry[dataKey];
         })
         .catch(() => {
           entry[dataKey] = {};
-          if (type === 'itunes') { entry.itunesRetryAt = Date.now() + 15000; entry[promiseKey] = null; }
+          if (retriable) { entry[retryKey] = Date.now() + 15000; entry[promiseKey] = null; }
           return entry[dataKey];
         });
     }
@@ -436,6 +518,7 @@
   function ensurePreviewAudio() {
     if (previewAudio) return previewAudio;
     previewAudio = document.createElement('audio');
+    previewAudio.crossOrigin = 'anonymous';
     previewAudio.preload = 'auto';
     previewAudio.setAttribute('playsinline', '');
     previewAudio.setAttribute('aria-hidden', 'true');
@@ -479,6 +562,7 @@
     if (!audio || !track) return false;
     try {
       clearTimeout(previewTimer);
+      clearTimeout(previewFadeTimer);
       spotifyController?.pause?.();
       youtubePlayer?.pauseVideo?.();
       audio.loop = false;
@@ -486,6 +570,7 @@
       audio.currentTime = 0;
       audio.load();
       setProvider('itunes');
+      setPreviewLevel(0);
       const started = waitForPreviewPlayback(audio, token);
       const attempt = audio.play();
       // S6=play() 被拒（授權／格式），S5:n=音檔 MediaError 代碼，S7=8 秒內未開始播放。
@@ -493,15 +578,21 @@
       if (!(await started)) {
         if (!/^S6/.test(lastFailCode)) lastFailCode = audio.error ? `S5:${audio.error.code}` : 'S7';
         audio.pause();
+        setPreviewLevel(BASE_GAIN);
         return false;
       }
+      fadePreview(BASE_GAIN, FADE_MS);
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       previewTimer = setTimeout(() => {
         if (token !== requestId) return;
-        audio.pause();
-        emit({ status:'stopped', provider:null });
-      }, 30500);
+        fadePreview(0, FADE_MS);
+        previewFadeTimer = setTimeout(() => {
+          if (token !== requestId) return;
+          audio.pause();
+          emit({ status:'stopped', provider:null });
+        }, FADE_MS);
+      }, 30500 - FADE_MS);
       return {
         trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽',
         trackId:String(track.id || track.previewUrl), tracks:previewTrackSummary(data)
@@ -531,11 +622,13 @@
     if (!target || !player || token !== requestId) return false;
     try {
       clearTimeout(previewTimer);
+      clearTimeout(previewFadeTimer);
       if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
       spotifyController?.pause?.();
       player.pauseVideo?.();
       setProvider('youtube');
       youtubeGeneration++;
+      try { player.setVolume?.(0); } catch (_) {}
       const started = waitForYoutubePlayback(player, token, target);
       let startSeconds = 0;
       if (highlight) {
@@ -551,11 +644,18 @@
       player.unMute?.();
       player.playVideo?.();
       if (await started) {
-        if (highlight) previewTimer = setTimeout(() => {
-          if (token !== requestId) return;
-          player.pauseVideo?.();
-          emit({ status:'stopped', provider:null });
-        }, 30500);
+        fadeYoutube(0, YT_BASE_VOLUME, FADE_MS);
+        if (highlight) {
+          // YT 會在 endSeconds（約 30 秒處）自行停止，淡出要提早開始才播得完。
+          previewFadeTimer = setTimeout(() => {
+            if (token === requestId) fadeYoutube(YT_BASE_VOLUME, 0, FADE_MS);
+          }, 30500 - FADE_MS - 500);
+          previewTimer = setTimeout(() => {
+            if (token !== requestId) return;
+            player.pauseVideo?.();
+            emit({ status:'stopped', provider:null });
+          }, 30500);
+        }
         return { trackName:highlight?.title || '', startSeconds };
       }
       player.pauseVideo?.();
@@ -610,6 +710,9 @@
   function stop() {
     requestId++;
     clearTimeout(previewTimer);
+    clearTimeout(previewFadeTimer);
+    clearInterval(previewVolumeTimer);
+    clearInterval(youtubeFadeTimer);
     try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
     try { spotifyController?.pause?.(); } catch (_) {}
     try { youtubePlayer?.pauseVideo?.(); } catch (_) {}

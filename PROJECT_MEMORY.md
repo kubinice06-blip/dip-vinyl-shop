@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜全站音量 30%＋1.5 秒淡入淡出；修好 CJK 專輯的 YouTube 備援
+- Repo：`dip-vinyl-shop`、`dip-vinyl-worker`
+- 改動：店主回報混合版已能播多數專輯，但伍佰、閃靈、JAGATARA、三上寬等仍 S1（iTunes 被封且 YouTube 備援落空）。兩線處理：(1) 依店主要求，所有播放（唱片櫃／對戰／roguelike）音量降為 30%，開頭 1.5 秒淡入、結尾 1.5 秒淡出——iOS 忽略 `audio.volume`，iTunes 路徑改走 Web Audio GainNode（audio 元件加 `crossOrigin`，Apple CDN 帶 ACAO:* 不會被靜音；AudioContext 在手勢內建立／resume），YouTube 路徑用 `setVolume` 漸變；快取參數升 v12。(2) 追查 YouTube 備援落空根因是 worker 比對太嚴：閃靈敗在雙語標題（賽德克巴萊 Seediq Bale）與別名藝人（閃靈樂團），JAGATARA／三上寛敗在英文介面把標題羅馬拼音化。worker `/yt-music-link` 補三招：解析清單列（musicResponsiveListItemRenderer，冷門藝人沒有頂部大卡片）、寬鬆比對（專輯名允許包含、藝人逐 token 命中）＋頂部大卡片信任備援、CJK 查詢在英文介面落空後改用原文介面（ja／zh-TW／ko）重試。空結果快取由 6 小時降為 15 分鐘、快取鍵升 v5；shop 端 YouTube 空結果也比照 iTunes 套 15 秒重試窗。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`、`dip-vinyl-worker/src/index.js`
+- 驗證：shop `verify-playback.mjs` 全數通過；真實瀏覽器 harness 攔截 AudioContext 實測——增益淡入後停在 0.3、RMS 0.083 證明未被 CORS 靜音、29 秒起漸弱 30 秒歸零停止。worker 部署後實測：三上寛（寬／寛皆可）、閃靈兩張、JAGATARA、伍佰全數解析出專輯清單與 highlight，Rolling Stones／辛曉琪迴歸正常。
+
 ### 2026-07-18｜唱片櫃改混合播放：iTunes 優先、失敗自動退 YouTube
 - Repo：`dip-vinyl-shop`
 - 改動：店主真機回報代碼 S8＋S1，證實其 iPhone 所有網路出口 IP 都被 Apple `/search` 長效封鎖（店主無 iCloud+，排除私密轉送因素；本機桌面同時段正常，確認是出口 IP 問題）。經店主選擇採混合方案：`prefer:'itunes'` 的搜尋順序改為 `['itunes','youtube']`——iTunes 可用時播真 30 秒試聽＋唱盤曲目列表；被封鎖（S1）或查無（S3/S4）時自動退到對戰同款、已在 iOS 驗證過的 YouTube 高觀看曲目 30 秒片段。播放成功的狀態事件先清空曲目欄位再展開結果，避免退 YouTube 時殘留上一張的 iTunes 列表；唱片櫃預抓同時抓 YouTube 連結（走 Worker KV 快取）讓備援即點即播。快取參數升 v11。治本備案（離線建 collectionId 表＋執行期 `/lookup`，被封 IP 實測仍可用）留待日後需要時再做。
