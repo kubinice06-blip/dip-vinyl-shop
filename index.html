@@ -509,8 +509,6 @@
     @keyframes armSwitch { 0%,100% { transform:rotate(42deg) } 45% { transform:rotate(22deg) } }
     .turntable-panel.error .turntable-arm { animation: armBounce .55s ease-out; }
     @keyframes armBounce { 45% { transform: rotate(48deg); } 100% { transform: rotate(-12deg); } }
-    .turntable-preview { min-height: 24px; padding: 6px 10px 7px; border-top: 1px solid #3a3a3a; color: #aaa; font-family: var(--mono); font-size: 9px; line-height: 1.35; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .turntable-preview a { color: #eee; text-decoration: underline; text-underline-offset: 2px; }
     .record-flight { position: fixed; z-index: 999; pointer-events: none; background:#111 center/cover no-repeat; box-shadow: 0 8px 24px rgba(0,0,0,.35); transition: left .6s ease-in,width .6s,height .6s,top .6s,border-radius .6s,opacity .6s,transform .6s; }
     @media(max-width:520px){.collect-controls{flex-wrap:wrap}.collect-genre-chips{padding:9px 12px}.turntable-panel{margin:14px 12px 20px;box-shadow:5px 5px 0 #ddd}.turntable-stage{padding:12px}.turntable-deck{width:270px;max-width:100%}}
     .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
@@ -782,7 +780,7 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=6"></script>
+<script src="dip-player.js?v=7"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1401,7 +1399,7 @@
 
   function turntableHtml() {
     const label = currentRecord?.coverUrl ? `style="background-image:url('${escapeCollectionHtml(currentRecord.coverUrl.replace(/'/g, '%27'))}')"` : '';
-    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div class="turntable-preview" aria-live="polite">點唱片試聽 30 秒</div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
+    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
   }
 
   function stepTurntable(time) {
@@ -1432,16 +1430,6 @@
     panel.classList.toggle('playing', isPlaying);
     panel.classList.toggle('loading', playerState.status === 'loading');
     panel.classList.toggle('error', playerState.status === 'error');
-    const preview = panel.querySelector('.turntable-preview');
-    if (preview) {
-      if (playerState.status === 'loading') preview.textContent = '準備 30 秒試聽…';
-      else if (playerState.status === 'playing' && playerState.provider === 'itunes') {
-        const track = escapeCollectionHtml(playerState.trackName || '隨機曲目');
-        const href = escapeCollectionHtml(playerState.storeUrl || '');
-        preview.innerHTML = `試聽：${track}${href ? ` · <a href="${href}" target="_blank" rel="noopener">Apple Music ↗</a>` : ' · Apple Music'}`;
-      } else if (playerState.status === 'error') preview.textContent = '這張唱片暫無可用試聽';
-      else if (playerState.status === 'stopped') preview.textContent = '點唱片試聽 30 秒';
-    }
     if (playerState.status === 'playing') {
       if (turntableTarget === 0) turntableSpinReadyAt = performance.now() + 500;
       turntableTarget = 180;

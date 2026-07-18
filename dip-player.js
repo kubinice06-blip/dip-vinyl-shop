@@ -4,6 +4,7 @@
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
+  const SILENT_PREVIEW = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAACAgICA';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const linkCache = new Map();
@@ -12,7 +13,7 @@
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
-  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '';
+  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -173,11 +174,29 @@
     } catch (_) { return false; }
   }
 
+  function primePreviewFromGesture() {
+    if (previewPrimed || !root) return previewPrimed;
+    try {
+      const audio = ensurePreviewAudio();
+      audio.src = SILENT_PREVIEW;
+      audio.currentTime = 0;
+      const silentSource = audio.src;
+      const attempt = audio.play();
+      previewPrimed = true;
+      if (attempt?.then) attempt.then(() => {
+        if (audio.src === silentSource) { audio.pause(); audio.currentTime = 0; }
+      }).catch(() => { previewPrimed = false; });
+      return true;
+    } catch (_) { previewPrimed = false; return false; }
+  }
+
   function installAudioUnlock() {
     if (document.documentElement.dataset.dipAudioUnlock === '1') return;
     document.documentElement.dataset.dipAudioUnlock = '1';
     const prime = () => {
-      if (primeYoutubeFromGesture()) {
+      const previewReady = primePreviewFromGesture();
+      const youtubeReadyNow = primeYoutubeFromGesture();
+      if (previewReady && youtubeReadyNow) {
         ['pointerdown', 'touchstart', 'click'].forEach(type => document.removeEventListener(type, prime, true));
       }
     };
@@ -185,7 +204,9 @@
   }
 
   function unlock() {
-    return primeYoutubeFromGesture();
+    const previewReady = primePreviewFromGesture();
+    const youtubeReadyNow = primeYoutubeFromGesture();
+    return previewReady || youtubeReadyNow;
   }
 
   function spotifyAlbumId(url) {
@@ -239,7 +260,7 @@
       script.src = requestUrl.toString();
       script.async = true;
       script.onerror = () => finish({});
-      const timer = setTimeout(() => finish({}), 6000);
+      const timer = setTimeout(() => finish({}), 10000);
       document.head.appendChild(script);
     });
   }

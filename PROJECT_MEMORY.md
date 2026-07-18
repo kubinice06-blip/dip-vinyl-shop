@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜修正 iOS iTunes 試聽全數失敗並移除唱機下方文字
+- Repo：`dip-vinyl-shop`
+- 改動：確認 Apple JSONP 能正確回傳曲目，真正失敗點是未預抓的專輯要等待非同步查詢，iOS Safari 在資料回來時已收回點擊播放權限。播放器現在於點擊當下用同一個隱藏 audio 元件播放極短靜音 WAV 完成解鎖，再等待曲目回來切換來源；JSONP 等候上限由 6 秒延長為 10 秒。唱機下方的提示／曲名／Apple Music 文字列與其佔位、CSS 全部移除，唱機本身和既有收藏版面不動；三頁播放器快取參數升至 v7。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
+- 驗證：`verify-playback.mjs` 新增「未預抓、JSONP 非同步後仍保有 iOS 播放授權」回歸案例並通過；本機真實瀏覽器直接載入 Apple JSONP 與音檔，Bonnie 'Prince' Billy《Beware》成功播放〈You Don't Love Me〉，再切辛曉琪《一夜之間》成功播放〈我在你懷裡哭你並不知道〉；確認 `turntable-preview` 與所有唱機下方試聽文字皆已移除。
+
 ### 2026-07-18｜唱片櫃改用 iTunes 試聽，對戰播放 YouTube 高觀看曲目片段
 - Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
 - 改動：唱片櫃不顯示完整播放清單，改由使用者瀏覽器以 JSONP 直連 Apple iTunes Search API 取得台灣區專輯曲目，並在每次點擊時隨機播放一首 30 秒試聽；唱機下方只保留一行極小的曲名與 Apple Music 來源連結。曾嘗試由 Worker 代查，但 Apple 對 Cloudflare 共用出口回 429／403，普通跨網域 `fetch` 的 CORS 標頭也不穩定，因此正式路徑刻意不經 Worker、改用 JSONP，避免共用限流與 CORS。對戰與 Roguelike 的勝方專輯維持 YouTube 路徑，Worker 從官方 Album playlist 取得各曲觀看數並挑選最高者，播放器再從可容納 30 秒的時間範圍隨機起播。播放器會核對實際載入的 YouTube video id，避免切換專輯時把上一張仍在播放的狀態誤認為新專輯成功；Spotify／iTunes／YouTube 切換時也會先停止舊來源。

@@ -46,10 +46,13 @@ class MockAudio extends MockElement {
     this.src = '';
     this.currentTime = 0;
     this.paused = true;
+    this.unlocked = false;
   }
   load() {}
   pause() { this.paused = true; }
   play() {
+    if (this.src.startsWith('data:audio/wav')) this.unlocked = true;
+    if (!this.unlocked) return Promise.reject(new Error('NotAllowedError'));
     this.paused = false;
     queueMicrotask(() => this.dispatchEvent(new Event('playing')));
     return Promise.resolve();
@@ -199,18 +202,22 @@ await wait(10);
 const states = [];
 player.onStateChange(state => states.push({ ...state, at:Date.now() }));
 
-await player.prefetch({ artist:'Artist A', album:'Album A', spotify:false, youtube:false, itunes:true });
+// The click handler calls unlock() before an uncached JSONP lookup. The same audio
+// element must remain authorized after that asynchronous lookup completes on iOS.
+player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(states.at(-1).provider, 'itunes');
 assert.equal(states.at(-1).trackName, 'A One');
 assert.equal(audioElements[0].src, 'https://audio/a1.m4a');
 
 // Repeating the same album excludes the immediately previous preview when possible.
+player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(states.at(-1).trackName, 'A Two');
 
 // Switching albums must replace the actual audio source, never replay the old album.
 await player.prefetch({ artist:'Artist B', album:'Album B', spotify:false, youtube:false, itunes:true });
+player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist B', album:'Album B', prefer:'itunes' }), true);
 assert.equal(states.at(-1).album, 'Album B');
 assert.equal(audioElements[0].src, 'https://audio/b1.m4a');
@@ -219,12 +226,14 @@ assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/searc
 assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'preview playback does not depend on a rate-limited Worker hop');
 
 await player.prefetch({ artist:'Artist A', album:'Album A', spotify:false, youtube:true });
+player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'youtube' }), true);
 assert.equal(youtubePlayer.getVideoData().video_id, 'AAAAAAAAAAA');
 
 await player.prefetch({ artist:'Artist B', album:'Album B', spotify:false, youtube:true });
 randomValue = 0.5;
 const switchedAt = Date.now();
+player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist B', album:'Album B', prefer:'youtube' }), true);
 const finalState = states.at(-1);
 assert.equal(finalState.album, 'Album B');
@@ -236,6 +245,7 @@ assert.deepEqual(
 );
 
 player.stop();
+console.log('PASS  iTunes preview remains authorized after an uncached asynchronous lookup');
 console.log('PASS  iTunes random 30-second previews switch to the requested album');
 console.log('PASS  YouTube waits for the requested highest-view video before reporting playback');
 console.log('PASS  YouTube highlight starts at a random valid point and stops after a 30-second window');
