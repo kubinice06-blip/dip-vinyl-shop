@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜修正點擊永遠吃到快取空結果的 bug，失敗 toast 保證有代碼
+- Repo：`dip-vinyl-shop`
+- 改動：店主真機回報 v9 仍失敗且 toast 沒有任何 SX 代碼。追查發現 `playAlbum` 只在快取為 null 時才呼叫 `loadCachedSource`，因此頁面載入時前 4 張預抓一旦失敗被記成空結果後，之後點擊永遠直接拿快取的空資料——既不會過重試窗重新查詢、也沒有任何失敗代碼（「15 秒可重試」只對預抓有效，對點擊無效）。修正：`playAlbum` 一律經過 `loadCachedSource`（內部本來就會回快取並處理空結果重試窗），並在錯誤事件加 `S8` 保底代碼（＝沒有發出新查詢就失敗，通常是重試窗內的快取空結果），確保 toast 一定有代碼可回報。快取參數升 v10。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`
+- 驗證：`verify-playback.mjs` 新增「首次真查詢回 S4:n、重試窗內再點回 S8」回歸並全數通過；真實瀏覽器 harness 以修正後檔案重測 Beware，自動播放與 11 首播放列表正常。
+
 ### 2026-07-18｜唱盤機下方加播放列表、失敗診斷代碼；確認 Apple 封鎖會自動過期
 - Repo：`dip-vinyl-shop`
 - 改動：本機實測確認三件事：(1) Apple 對 `/search` 的 IP 封鎖是長效但**會自動過期**（本機上午還全 403，晚間已恢復 200），店主 iPhone 全數失敗即是他用過的網路出口 IP（含行動網路 CGNAT、可能還有 iCloud Private Relay 的共用出口）被舊版全量預抓打進封鎖名單；(2) 被封期間 `/lookup` 與試聽音檔 CDN 仍可用，是日後備援方向；(3) Deezer API 在台灣回空 data（地區限制），**不能**當備援來源。本次上線：唱盤機下方新增小型像素風播放列表（曲序＋曲名，點任一首即在同一顆已解鎖 audio 元件換源播放，並附 Apple Music 商店連結作為 attribution 合規），播放器失敗時 toast 附診斷代碼（S1=JSONP 被封／斷網、S2=逾時、S3=查無、S4:n=配對全不符、S5:n=音檔 MediaError、S6=play() 被拒、S7=未開始播放），供店主真機回報失敗層；行動網路首包放寬 playing 等待 3→8 秒。快取參數升 v9。

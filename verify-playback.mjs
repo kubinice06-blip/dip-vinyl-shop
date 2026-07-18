@@ -260,9 +260,18 @@ assert.deepEqual(
   { videoId:'BBBBBBBBBBB', startSeconds:112, endSeconds:142 }
 );
 
+// 失敗代碼：首次真查詢要標出配對失敗（S4:n），重試窗內再點要回報 S8（快取空結果），不能沒有代碼。
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist C', album:'Album C', prefer:'itunes' }), false);
+assert.match(states.at(-1).code, /^S4:/);
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist C', album:'Album C', prefer:'itunes' }), false);
+assert.equal(states.at(-1).code, 'S8');
+
 player.stop();
 console.log('PASS  iTunes preview remains authorized after an uncached asynchronous lookup');
 console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
+console.log('PASS  failure toast always carries a stage code, including cached-empty replays');
 console.log('PASS  iTunes random 30-second previews switch to the requested album');
 console.log('PASS  YouTube waits for the requested highest-view video before reporting playback');
 console.log('PASS  YouTube highlight starts at a random valid point and stops after a 30-second window');

@@ -520,7 +520,7 @@
       emit({ status:'playing', provider:'itunes', ...played });
       return true;
     }
-    if (token === requestId) emit({ status:'error', provider:null, code:lastFailCode });
+    if (token === requestId) emit({ status:'error', provider:null, code:lastFailCode || 'S8' });
     return false;
   }
 
@@ -578,8 +578,9 @@
         : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];
       for (const provider of order) {
         const path = provider === 'youtube' ? '/yt-music-link' : provider === 'itunes' ? '/itunes-album-preview' : '/spotify-album-link';
-        let source = entry[`${provider}Data`];
-        if (source === null) source = await loadCachedSource(entry, provider, path, artist, album);
+        // 一律經過 loadCachedSource：它會回傳既有快取，並讓 iTunes 的空結果在
+        // 重試窗過後於「點擊當下」真正重新查詢，而不是永遠回快取的空資料。
+        const source = await loadCachedSource(entry, provider, path, artist, album);
         const target = provider === 'spotify' ? spotifyAlbumId(source?.url || '') : source;
         if (!target || token !== requestId) continue;
         const played = provider === 'youtube' ? await playYoutube(target, token)
@@ -597,7 +598,8 @@
         previewAudio.pause();
       }
       setProvider(null);
-      emit({ status: 'error', provider: null, artist, album, code: lastFailCode, tracks: [], trackId: '' });
+      // S8=沒有任何新查詢就失敗（重試窗內回快取空結果等），保證 toast 一定有代碼可回報。
+      emit({ status: 'error', provider: null, artist, album, code: lastFailCode || 'S8', tracks: [], trackId: '' });
     }
     return false;
   }
