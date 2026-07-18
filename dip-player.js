@@ -572,7 +572,9 @@
     emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'', code:'' });
     try {
       const entry = linkEntry(artist, album);
-      const order = prefer === 'itunes' ? ['itunes']
+      // 唱片櫃混合路徑：iTunes 優先（真 30 秒試聽＋曲目列表），使用者 IP 被 Apple
+      // 封鎖或查無專輯時，自動退到對戰同款的 YouTube 高觀看曲目 30 秒片段。
+      const order = prefer === 'itunes' ? ['itunes', 'youtube']
         : prefer === 'spotify' ? ['spotify', 'youtube']
         : prefer === 'youtube' ? ['youtube', 'spotify']
         : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];
@@ -587,7 +589,8 @@
           : provider === 'itunes' ? await playItunes(target, token)
           : await playSpotify(target, token);
         if (played && token === requestId) {
-          emit({ status: 'playing', provider, artist, album, ...(played === true ? {} : played) });
+          // 先清空曲目欄位再展開本次結果，避免退到 YouTube 時殘留上一張 iTunes 的列表。
+          emit({ status: 'playing', provider, artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
           return true;
         }
       }

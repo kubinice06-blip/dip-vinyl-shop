@@ -162,6 +162,7 @@ function sourceFor(url) {
     } : { tracks:[{ id:'b1', trackName:'B One', previewUrl:'https://audio/b1.m4a', storeUrl:'https://music/b1' }] };
   }
   if (parsed.pathname.endsWith('/yt-music-link')) {
+    if (artist === 'Artist C') return {}; // C 專供「iTunes 與 YouTube 都失敗」的代碼測試
     return artist === 'Artist A'
       ? { url:'https://youtube.com/playlist?list=OLA-A', highlight:{ videoId:'AAAAAAAAAAA', title:'Popular A', duration:141, views:100 } }
       : { url:'https://youtube.com/playlist?list=OLA-B', highlight:{ videoId:'BBBBBBBBBBB', title:'Popular B', duration:254, views:200 } };
@@ -268,10 +269,18 @@ player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist C', album:'Album C', prefer:'itunes' }), false);
 assert.equal(states.at(-1).code, 'S8');
 
+// 混合路徑：prefer itunes 但 iTunes 配對失敗時，要自動退到 YouTube 高觀看曲目並清空曲目列表。
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist D', album:'Album D', prefer:'itunes' }), true);
+assert.equal(states.at(-1).provider, 'youtube');
+assert.equal(states.at(-1).trackName, 'Popular B');
+assert.equal(states.at(-1).tracks.length, 0);
+
 player.stop();
 console.log('PASS  iTunes preview remains authorized after an uncached asynchronous lookup');
 console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
 console.log('PASS  failure toast always carries a stage code, including cached-empty replays');
+console.log('PASS  itunes preference falls back to YouTube when Apple metadata is unavailable');
 console.log('PASS  iTunes random 30-second previews switch to the requested album');
 console.log('PASS  YouTube waits for the requested highest-view video before reporting playback');
 console.log('PASS  YouTube highlight starts at a random valid point and stops after a 30-second window');
