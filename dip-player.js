@@ -170,8 +170,12 @@
       const generation = youtubeGeneration;
       setTimeout(() => {
         try {
-          if (generation === youtubeGeneration) youtubePlayer.pauseVideo?.();
-          youtubePlayer.setVolume?.(YT_BASE_VOLUME);
+          // 若手勢後已開始載入真正要播的專輯，generation 會遞增；此時不能再讓
+          // 解鎖用的延遲動作把 1.5 秒淡入直接跳回 30%。
+          if (generation === youtubeGeneration) {
+            youtubePlayer.pauseVideo?.();
+            youtubePlayer.setVolume?.(YT_BASE_VOLUME);
+          }
         } catch (_) {}
       }, 160);
       return true;

@@ -515,7 +515,7 @@
   })();
 </script>
 
-<script src="dip-player.js?v=12"></script>
+<script src="dip-player.js?v=13"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1346,12 +1346,6 @@ function playRogueAlbum(card){
 function prefetchRogueAlbum(card){
   if(!rogueMusicOn||!card||!window.DipPlayer?.prefetch) return false;
   try{void window.DipPlayer.prefetch({artist:card.artist,album:card.album}).catch(()=>{});return true;}catch(e){return false;}
-}
-function playRogueRoundWinner(pCard,eCard,pHp0,eHp0){
-  const pLoss=pHp0-G.p.hp, eLoss=eHp0-G.e.hp;
-  if(eLoss>pLoss) return playRogueAlbum(pCard);
-  if(pLoss>eLoss) return playRogueAlbum(eCard);
-  return false;
 }
 function initRoguePlayer(){
   const mount=document.getElementById('roguePlayerMount');
@@ -2409,7 +2403,6 @@ async function play(uid, pAttr){
 
   // 結算畫面（勝負標記照這一手的掉血差，不看總血量）
   markResult(pHp0,eHp0);
-  playRogueRoundWinner(pCard,eCard,pHp0,eHp0);
   if(G.p.hp<pHp0) spriteFx('p','hurt',600);
   if(G.e.hp<eHp0) spriteFx('e','hurt',600);
   // 記住這一手雙方的牌＋牌型＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
@@ -3069,6 +3062,8 @@ function openCardInfo(card, opts){
   </div>`;
   mask.addEventListener('click', e=>{ if(e.target===mask) closeCardInfo(); });
   document.body.appendChild(mask);
+  // 不再依回合勝負自動播；任何可開啟卡片介紹的專輯（敵我皆可）都由這裡播放。
+  playRogueAlbum(card);
   if(!card.coverUrl) ensureCover(card).then(url=>{ const el=mask.querySelector('.cov'); if(url && el && el.tagName!=='IMG'){ el.outerHTML=`<img class="cov" src="${String(url).replace(/'/g,'%27')}" alt="">`; } });
   hookStreamLink('ciStream', card);
   loadAlbumDesc(card, document.getElementById('ciIntro'));

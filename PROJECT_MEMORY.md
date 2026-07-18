@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜對戰音樂改為點專輯介紹才播放；修正 YouTube 1.5 秒淡入被覆蓋
+- Repo：`dip-vinyl-shop`
+- 改動：單場對戰與無止盡試煉全面移除每回合勝方自動播放；揭牌仍只做背景預抓，玩家主動點擊敵方或我方專輯、介紹視窗實際開啟時才播放。追查 1.5 秒淡入未生效的原因，是 YouTube 首次手勢解鎖排定的 160ms 清理動作會在真實專輯已開始後仍把音量直接設為 30%，中途蓋掉淡入；現在以播放 generation 防止舊清理動作干擾新播放，原有 30 秒片段結尾 1.5 秒淡出計時維持。播放器快取參數升至 v13。
+- 主要檔案：`battle.html`、`roguelike.html`、`dip-player.js`、`index.html`、`verify-playback.mjs`
+- 驗證：`node verify-playback.mjs` 全數通過，新增 YouTube 解鎖清理不得在淡入期間直接跳至 30% 的回歸；抽取 `battle.html`、`roguelike.html` 內嵌腳本後以 `node --check` 確認語法通過；`rg` 確認勝方播放函式／呼叫已移除，單場與試煉只剩介紹開窗觸發播放；`git diff --check` 通過。
+
 ### 2026-07-18｜全站音量 30%＋1.5 秒淡入淡出；修好 CJK 專輯的 YouTube 備援
 - Repo：`dip-vinyl-shop`、`dip-vinyl-worker`
 - 改動：店主回報混合版已能播多數專輯，但伍佰、閃靈、JAGATARA、三上寬等仍 S1（iTunes 被封且 YouTube 備援落空）。兩線處理：(1) 依店主要求，所有播放（唱片櫃／對戰／roguelike）音量降為 30%，開頭 1.5 秒淡入、結尾 1.5 秒淡出——iOS 忽略 `audio.volume`，iTunes 路徑改走 Web Audio GainNode（audio 元件加 `crossOrigin`，Apple CDN 帶 ACAO:* 不會被靜音；AudioContext 在手勢內建立／resume），YouTube 路徑用 `setVolume` 漸變；快取參數升 v12。(2) 追查 YouTube 備援落空根因是 worker 比對太嚴：閃靈敗在雙語標題（賽德克巴萊 Seediq Bale）與別名藝人（閃靈樂團），JAGATARA／三上寛敗在英文介面把標題羅馬拼音化。worker `/yt-music-link` 補三招：解析清單列（musicResponsiveListItemRenderer，冷門藝人沒有頂部大卡片）、寬鬆比對（專輯名允許包含、藝人逐 token 命中）＋頂部大卡片信任備援、CJK 查詢在英文介面落空後改用原文介面（ja／zh-TW／ko）重試。空結果快取由 6 小時降為 15 分鐘、快取鍵升 v5；shop 端 YouTube 空結果也比照 iTunes 套 15 秒重試窗。

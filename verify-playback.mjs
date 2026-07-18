@@ -75,13 +75,18 @@ class MockYoutubePlayer {
     this.videoId = options.videoId;
     this.state = 2;
     this.lastLoad = null;
+    this.volume = 100;
+    this.volumeChanges = [];
     youtubePlayer = this;
     queueMicrotask(() => options.events.onReady());
   }
   pauseVideo() { this.state = 2; }
   playVideo() { this.state = 1; }
   unMute() {}
-  setVolume() {}
+  setVolume(value) {
+    this.volume = value;
+    this.volumeChanges.push({ value, at:Date.now() });
+  }
   setShuffle() {}
   setLoop() {}
   getPlayerState() { return this.state; }
@@ -260,6 +265,13 @@ assert.deepEqual(
   { videoId:youtubePlayer.lastLoad.videoId, startSeconds:youtubePlayer.lastLoad.startSeconds, endSeconds:youtubePlayer.lastLoad.endSeconds },
   { videoId:'BBBBBBBBBBB', startSeconds:112, endSeconds:142 }
 );
+// 解鎖手勢會排一個 160ms 後的清理動作；真正專輯已開始播放時，該動作不得把
+// 音量直接跳到 30%，否則 1.5 秒淡入會被中途覆蓋。
+await wait(100);
+const earlyFadeValues = youtubePlayer.volumeChanges
+  .filter(change => change.at >= switchedAt)
+  .map(change => change.value);
+assert.ok(!earlyFadeValues.includes(30), 'YouTube unlock cleanup must not bypass the 1.5-second fade-in');
 
 // 失敗代碼：首次真查詢要標出配對失敗（S4:n），重試窗內再點要回報 S8（快取空結果），不能沒有代碼。
 player.unlock();

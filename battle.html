@@ -550,7 +550,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=12"></script>
+<script src="dip-player.js?v=13"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1220,7 +1220,6 @@ async function play(pCard, pAttr){
     flashHp('e'); renderHp(); renderQi();
     await sleep(800);
     markSlot('p','win');
-    playBattleAlbum(pCard);
     if(G.e.hp<=0) return endGame();
     drawCard(G.p); drawCard(G.e); while(G.p.hand.length>CFG.handLimit)G.p.hand.shift();
     if(G.p.hp<=0||G.e.hp<=0) return endGame();   // 疲勞抽牌也可能打死人，這裡原本沒判
@@ -1274,10 +1273,10 @@ async function play(pCard, pAttr){
     callout(msgs.join('<hr style="border:none;border-top:1px solid #eee;width:55%;margin:5px 0">'));
     if(pUlt || eUltBlocked) flashHp('e'); if(eUlt && !eUltBlocked) flashHp('p');
     renderHp(); renderQi();
-    if(eUltBlocked){ markSlot('p','win'); markSlot('e','lose'); playBattleAlbum(pCard); }
+    if(eUltBlocked){ markSlot('p','win'); markSlot('e','lose'); }
     else if(pUlt&&eUlt){ markSlot('p','win'); markSlot('e','win'); }
-    else if(pUlt){ markSlot('p','win'); markSlot('e','lose'); playBattleAlbum(pCard); }
-    else if(eUlt){ markSlot('e','win'); markSlot('p','lose'); playBattleAlbum(eCard); }
+    else if(pUlt){ markSlot('p','win'); markSlot('e','lose'); }
+    else if(eUlt){ markSlot('e','win'); markSlot('p','lose'); }
     await sleep(1000);
   } else {
     // 階段 0：王牌即時被動
@@ -1323,8 +1322,8 @@ async function play(pCard, pAttr){
     if(r.dmgToP) flashHp('p'); if(r.dmgToE) flashHp('e');
     renderHp(); renderQi();
     if(r.kind==='tie'){ markSlot('p','tie'); markSlot('e','tie'); }
-    else if(r.by==='p'){ markSlot('p','win'); markSlot('e','lose'); playBattleAlbum(pCard); }
-    else { markSlot('e','win'); markSlot('p','lose'); playBattleAlbum(eCard); }
+    else if(r.by==='p'){ markSlot('p','win'); markSlot('e','lose'); }
+    else { markSlot('e','win'); markSlot('p','lose'); }
     if(pdQi) bumpQi('p'); if(edQi) bumpQi('e');
     pushLog(clashLog(pCard,pAttr,eCard,eAttr,r,pdQi,edQi), r.dmgToP||r.dmgToE?'hit':'qi');
     await sleep(900);
@@ -1551,6 +1550,8 @@ function openCardInfo(card){
   // 點檯面卡：一律用抽卡牌式的詳情卡＋專輯簡介（不分對戰中／賽後）
   document.getElementById('recBody').innerHTML = cardDetailHtml(card);
   document.getElementById('recModal').classList.add('show');
+  // 不再依回合勝負自動播；玩家主動點任一方檯面專輯、看到介紹時才播放。
+  playBattleAlbum(card);
   // 開窗當下還沒抓到封面 → 補抓，抓到即時換上（不然彈窗會停在斜紋佔位）
   if(!card.coverUrl) ensureCover(card).then(url=>{
     const el=document.querySelector('#recBody .cd2-cover');
