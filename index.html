@@ -445,7 +445,7 @@
     .collect-title { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; }
     .collect-count { font-size: 11px; color: var(--gray); }
     .collect-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); }
-    .collect-card { background: #fff; padding: 14px; }
+    .collect-card { position: relative; background: #fff; padding: 14px; }
     .cc-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 10px; }
     .cc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .cc-nocover { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--line); }
@@ -453,6 +453,8 @@
     .cc-rarity { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; font-weight: 700; }
     .cc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
     .cc-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
+    .cc-info { position: absolute; z-index: 3; top: 7px; right: 7px; width: 25px; height: 25px; padding: 0; border: 1px solid rgba(255,255,255,.75); border-radius: 50%; background: rgba(17,17,17,.74); color: #fff; font: 700 14px/23px var(--mono); text-align: center; cursor: pointer; opacity: .72; }
+    .cc-info:hover,.cc-info:focus-visible { opacity: 1; outline: 2px solid #fff; outline-offset: -4px; }
     /* 稀有度配色：殿堂銀 傳奇橘 史詩紫 獨特綠 稀有藍 普通灰 */
     /* 殿堂卡銀框：閃亮銀色漸層＋掃光動畫（::after 疊一圈，用 mask 挖空中間只留邊框，不影響排版）*/
     .collect-card.rarity-hall { position: relative; }
@@ -484,49 +486,31 @@
     .cd-rarity.rarity-rare { color: #3a7bd5; }
     .cd-rarity.rarity-common { color: var(--gray); }
     .collect-card { cursor: pointer; text-align: left; font-family: var(--mono); border: none; border-radius: 0; }
+    .collect-card:focus-visible { outline: 2px solid #111; outline-offset: -4px; }
     /* 唱片櫃控制列 */
     .collect-controls { display: flex; gap: 10px; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--line); }
     .collect-sort { font-family: var(--mono); font-size: 11px; padding: 6px 8px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
     .collect-group-btn { font-family: var(--mono); font-size: 11px; padding: 6px 12px; border: 1px solid var(--line); background: #fff; cursor: pointer; letter-spacing: 0.05em; }
     .collect-group-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-group-label { padding: 16px 20px 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; }
-    .collect-view-toggle { display: flex; margin-left: auto; }
-    .collect-view-btn { font-family: var(--mono); font-size: 10px; padding: 6px 10px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
-    .collect-view-btn + .collect-view-btn { border-left: 0; }
-    .collect-view-btn.on { background: #111; color: #fff; border-color: #111; }
     .collect-genre-chips { display: flex; gap: 6px; padding: 10px 20px; overflow-x: auto; border-bottom: 1px solid var(--line); scrollbar-width: thin; }
     .collect-genre-chip { flex: 0 0 auto; border: 1px solid var(--line); background: #fff; color: #111; font-family: var(--mono); font-size: 9px; padding: 6px 9px; cursor: pointer; }
     .collect-genre-chip.on { background: #111; color: #fff; border-color: #111; }
-    .record-shelf-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 16px; background: #503323; border-bottom: 12px solid #2b190f; box-shadow: inset 0 8px #6d4932, inset 0 -6px #1f120b; }
-    .record-slot { min-width: 0; border: 0; border-bottom: 8px solid #23140c; background: #3c2518; color: #fff; padding: 9px; font-family: var(--mono); text-align: left; cursor: pointer; box-shadow: inset 2px 0 #79533b, inset -2px 0 #1f120b; }
-    .record-slot:hover,.record-slot.active { background: #62422e; }
-    .record-slot img,.record-slot-empty { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #222; image-rendering: pixelated; }
-    .record-slot-empty { display: grid; place-items: center; font-size: 28px; }
-    .record-slot-artist,.record-slot-album { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .record-slot-artist { margin-top: 7px; color: #cdbba8; font-size: 8px; }
-    .record-slot-album { margin-top: 3px; font-size: 9px; font-weight: 700; }
-    .record-slot-count { float: right; color: #e8d7c4; }
-    .turntable-panel { margin: 18px 20px 24px; background: #151515; color: #fff; border: 4px solid #111; box-shadow: 8px 8px 0 #ddd; overflow: hidden; }
-    .turntable-stage { display: grid; grid-template-columns: 230px minmax(0,1fr); gap: 18px; align-items: center; padding: 18px; }
-    .turntable-deck { position: relative; height: 190px; background: #c8b89d; border: 5px solid #75654f; box-shadow: inset 5px 5px #e4dac8, inset -5px -5px #5a4b38; image-rendering: pixelated; }
+    .turntable-panel { margin: 16px 20px 22px; background: #151515; border: 4px solid #111; box-shadow: 8px 8px 0 #ddd; overflow: hidden; }
+    .turntable-stage { padding: 15px; }
+    .turntable-deck { position: relative; width: 270px; max-width: 100%; height: 190px; margin: auto; background: #c8b89d; border: 5px solid #75654f; box-shadow: inset 5px 5px #e4dac8, inset -5px -5px #5a4b38; image-rendering: pixelated; }
     .turntable-platter { position: absolute; width: 148px; height: 148px; left: 18px; top: 17px; border-radius: 50%; background: repeating-radial-gradient(circle,#242424 0 3px,#111 4px 7px); box-shadow: 0 0 0 7px #777,0 0 0 10px #333; }
     .turntable-label { position: absolute; inset: 50%; width: 48px; height: 48px; transform: translate(-50%,-50%); border-radius: 50%; background:#d86f4a center/cover no-repeat; box-shadow: 0 0 0 4px #111; }
-    .turntable-panel.playing .turntable-platter { animation: vinylSpin 2.4s linear infinite; }
-    @keyframes vinylSpin { to { transform: rotate(360deg); } }
-    .turntable-arm { position: absolute; width: 17px; height: 112px; right: 24px; top: 25px; border: 0; background: #ddd; box-shadow: inset -5px 0 #777,5px 5px 0 rgba(0,0,0,.25); transform: rotate(-18deg); transform-origin: 50% 12px; transition: transform .45s; cursor: pointer; }
-    .turntable-arm::after { content:''; position:absolute; width:28px; height:18px; left:-5px; bottom:-7px; background:#333; }
-    .turntable-panel.playing .turntable-arm { transform: rotate(24deg); }
+    .turntable-arm { position: absolute; width: 17px; height: 130px; right: 22px; top: 18px; border: 0; background: #ddd; box-shadow: inset -5px 0 #777,5px 5px 0 rgba(0,0,0,.25); transform: rotate(-12deg); transform-origin: 50% 10px; transition: transform .85s cubic-bezier(.2,.8,.2,1); cursor: pointer; }
+    .turntable-arm::before { content:''; position:absolute; width:25px; height:25px; left:-4px; top:-7px; border-radius:50%; background:#555; box-shadow:inset -5px -5px #222; }
+    .turntable-arm::after { content:''; position:absolute; width:27px; height:17px; left:-5px; bottom:-7px; background:#333; box-shadow:inset -5px -4px #111; }
+    .turntable-panel.playing .turntable-arm { transform: rotate(42deg); transition-duration: .72s; transition-delay: .28s; }
+    .turntable-panel.switching .turntable-arm { animation: armSwitch .58s ease-in-out; }
+    @keyframes armSwitch { 0%,100% { transform:rotate(42deg) } 45% { transform:rotate(22deg) } }
     .turntable-panel.error .turntable-arm { animation: armBounce .55s ease-out; }
-    @keyframes armBounce { 45% { transform: rotate(34deg); } 100% { transform: rotate(-18deg); } }
-    .turntable-copy { min-width: 0; }
-    .turntable-kicker { color: #999; font-size: 9px; letter-spacing: .14em; }
-    .turntable-now { margin-top: 8px; font-size: 13px; line-height: 1.5; min-height: 40px; }
-    .turntable-hint { color: #aaa; font-size: 9px; line-height: 1.7; }
-    .player-drawer-toggle { margin-top: 10px; border: 1px solid #777; background: #222; color: #fff; font-family: var(--mono); font-size: 9px; padding: 6px 9px; cursor: pointer; }
-    .player-drawer { max-height: 190px; padding: 0 18px 18px; transition: max-height .3s,padding .3s; overflow: hidden; }
-    .player-drawer.collapsed { max-height: 0; padding-top: 0; padding-bottom: 0; }
+    @keyframes armBounce { 45% { transform: rotate(48deg); } 100% { transform: rotate(-12deg); } }
     .record-flight { position: fixed; z-index: 999; pointer-events: none; background:#111 center/cover no-repeat; box-shadow: 0 8px 24px rgba(0,0,0,.35); transition: left .6s ease-in,width .6s,height .6s,top .6s,border-radius .6s,opacity .6s,transform .6s; }
-    @media(max-width:520px){.collect-controls{flex-wrap:wrap}.collect-view-toggle{width:100%;margin-left:0}.collect-view-btn{flex:1}.collect-genre-chips{padding:9px 12px}.record-shelf-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px}.turntable-panel{margin:16px 12px 22px;box-shadow:5px 5px 0 #ddd}.turntable-stage{grid-template-columns:1fr;padding:14px}.turntable-deck{width:100%;max-width:270px;margin:auto}.player-drawer{padding:0 12px 12px}}
+    @media(max-width:520px){.collect-controls{flex-wrap:wrap}.collect-genre-chips{padding:9px 12px}.turntable-panel{margin:14px 12px 20px;box-shadow:5px 5px 0 #ddd}.turntable-stage{padding:12px}.turntable-deck{width:270px;max-width:100%}}
     .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-pearl-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #6a4ea0; border-radius: 999px; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-heresy-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #a01020; border-radius: 999px; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
@@ -1066,7 +1050,8 @@
   let _collCache = [];
   let collSort = 'new'; // 'rarity' | 'new' | 'artist'
   let collGroup = false;
-  let collGenre = 'all', collView = 'cards', currentRecordId = '', currentRecord = null, playerDrawerOpen = true, playerSubscribed = false, lastPlayerState = { status:'idle', provider:null, artist:'', album:'' };
+  let collGenre = 'all', currentRecordId = '', currentRecord = null, playerSubscribed = false, collectionPrefetchToken = 0;
+  let lastPlayerState = { status:'idle', provider:null, artist:'', album:'' }, turntableAngle = 0, turntableVelocity = 0, turntableTarget = 0, turntableFrame = 0, turntableLastTime = 0, turntableSpinReadyAt = 0;
   const MUSIC_MAP_GENRE_NAMES = { jazz:'Jazz', rock:'Rock', electronic:'Electronic', soul:'Soul', hiphop:'Hip-hop', folk:'Folk', classical:'Classical', world:'World', pop:'Pop', blues:'Blues' };
   const escapeCollectionHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
   const RARITY_ORDER = { hall: 8, pearl: 7, heresy: 6, legendary: 5, epic: 4, uncommon: 3, rare: 2, common: 1 };
@@ -1402,44 +1387,68 @@
   function _collCardHtml(c) {
     const tier = c.rarity?.tier || 'common';
     const label = c.rarity?.label || '？';
-    const cover = c.coverUrl ? `<img src="${c.coverUrl}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
-    return `<button class="collect-card rarity-${tier}" data-card-id="${c.cardId}">
-      <div class="cc-thumb">${cover}${c.count > 1 ? `<span class="cc-count">×${c.count}</span>` : ''}</div>
-      <div class="cc-rarity">${label}</div>
-      <div class="cc-artist">${c.artist || ''}</div>
-      <div class="cc-album">${c.album || ''}</div>
-    </button>`;
-  }
-
-  function _recordSlotHtml(c) {
-    const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="record-slot-empty">♪</div>`;
-    return `<button class="record-slot${currentRecordId === c.cardId ? ' active' : ''}" data-record-id="${escapeCollectionHtml(c.cardId)}">${cover}<div class="record-slot-artist">${escapeCollectionHtml(c.artist)}${c.count > 1 ? `<span class="record-slot-count">×${Number(c.count) || 0}</span>` : ''}</div><div class="record-slot-album">${escapeCollectionHtml(c.album)}</div></button>`;
+    const cardId = escapeCollectionHtml(c.cardId), artist = escapeCollectionHtml(c.artist), album = escapeCollectionHtml(c.album);
+    const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
+    return `<article class="collect-card rarity-${tier}${currentRecordId === c.cardId ? ' active' : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="播放 ${artist}《${album}》">
+      <div class="cc-thumb">${cover}${c.count > 1 ? `<span class="cc-count">×${Number(c.count) || 0}</span>` : ''}<button class="cc-info" type="button" data-card-info="${cardId}" aria-label="查看 ${artist}《${album}》詳情">ⓘ</button></div>
+      <div class="cc-rarity">${escapeCollectionHtml(label)}</div>
+      <div class="cc-artist">${artist}</div>
+      <div class="cc-album">${album}</div>
+    </article>`;
   }
 
   function turntableHtml() {
     const label = currentRecord?.coverUrl ? `style="background-image:url('${escapeCollectionHtml(currentRecord.coverUrl.replace(/'/g, '%27'))}')"` : '';
-    const now = currentRecord ? `${escapeCollectionHtml(currentRecord.artist)} — ${escapeCollectionHtml(currentRecord.album)}` : '點一張唱片上盤';
-    return `<section class="turntable-panel"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div><div class="turntable-copy"><div class="turntable-kicker">PIXEL TURNTABLE</div><div class="turntable-now">${now}</div><div class="turntable-hint">點唱片會自動換盤；點唱臂可停止。Spotify／YouTube 控制面板會顯示在下方。</div><button class="player-drawer-toggle" data-player-drawer>${playerDrawerOpen ? '收起播放器' : '展開播放器'}</button></div></div><div class="player-drawer${playerDrawerOpen ? '' : ' collapsed'}"><div id="dipPlayerMount"></div></div></section>`;
+    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
+  }
+
+  function stepTurntable(time) {
+    const platter = document.querySelector('#collectionContent .turntable-platter');
+    const dt = turntableLastTime ? Math.min((time - turntableLastTime) / 1000, .05) : 0;
+    turntableLastTime = time;
+    const desired = time >= turntableSpinReadyAt ? turntableTarget : 0;
+    const acceleration = desired > turntableVelocity ? 180 : 150;
+    const change = Math.sign(desired - turntableVelocity) * Math.min(Math.abs(desired - turntableVelocity), acceleration * dt);
+    turntableVelocity += change;
+    turntableAngle = (turntableAngle + turntableVelocity * dt) % 360;
+    if (platter) platter.style.transform = `rotate(${turntableAngle}deg)`;
+    if (Math.abs(turntableVelocity) > .05 || desired > 0 || time < turntableSpinReadyAt) turntableFrame = requestAnimationFrame(stepTurntable);
+    else { turntableVelocity = 0; turntableFrame = 0; turntableLastTime = 0; }
+  }
+
+  function runTurntable() {
+    if (!turntableFrame) turntableFrame = requestAnimationFrame(stepTurntable);
   }
 
   function updateTurntableState(playerState) {
+    const wasPlaying = lastPlayerState.status === 'playing';
     lastPlayerState = playerState;
     const panel = document.querySelector('#collectionContent .turntable-panel');
     if (!panel) return;
-    panel.classList.toggle('playing', playerState.status === 'playing');
+    const keepSpinning = playerState.status === 'loading' && wasPlaying;
+    const isPlaying = playerState.status === 'playing' || keepSpinning;
+    panel.classList.toggle('playing', isPlaying);
     panel.classList.toggle('loading', playerState.status === 'loading');
     panel.classList.toggle('error', playerState.status === 'error');
-    const now = panel.querySelector('.turntable-now');
-    if (playerState.status === 'loading') now.textContent = `上盤中：${playerState.artist} — ${playerState.album}`;
-    else if (playerState.status === 'playing') now.textContent = `${playerState.artist} — ${playerState.album}`;
-    else if (playerState.status === 'error') { now.textContent = '找不到可播放版本，唱臂已退回。'; currentRecordId = ''; currentRecord = null; document.querySelectorAll('.record-slot.active').forEach(slot => slot.classList.remove('active')); }
-    else if (playerState.status === 'stopped') now.textContent = '已停止，點一張唱片再上盤。';
+    if (playerState.status === 'playing') {
+      if (turntableTarget === 0) turntableSpinReadyAt = performance.now() + 500;
+      turntableTarget = 180;
+    } else if (!keepSpinning) {
+      turntableTarget = 0;
+      turntableSpinReadyAt = 0;
+    }
+    if (playerState.status === 'error') {
+      currentRecordId = '';
+      currentRecord = null;
+      document.querySelectorAll('.collect-card.active').forEach(card => card.classList.remove('active'));
+    }
+    runTurntable();
   }
 
   function ensureCollectionPlayer(el) {
     const mountPoint = el.querySelector('#dipPlayerMount');
     if (!mountPoint || !window.DipPlayer) return;
-    window.DipPlayer.mount(mountPoint);
+    window.DipPlayer.mount(mountPoint, { hidden:true });
     if (!playerSubscribed) { playerSubscribed = true; window.DipPlayer.onStateChange(updateTurntableState); }
     else updateTurntableState(lastPlayerState);
   }
@@ -1457,16 +1466,23 @@
 
   function playCollectionRecord(card, source) {
     if (!card || !window.DipPlayer) return;
+    const switching = lastPlayerState.status === 'playing';
     currentRecordId = card.cardId;
     currentRecord = card;
-    playerDrawerOpen = true;
-    document.querySelectorAll('.record-slot').forEach(slot => slot.classList.toggle('active', slot.dataset.recordId === card.cardId));
-    const panel = document.querySelector('#collectionContent .turntable-panel'), label = panel?.querySelector('.turntable-label'), drawer = panel?.querySelector('.player-drawer');
+    document.querySelectorAll('.collect-card').forEach(item => item.classList.toggle('active', item.dataset.cardId === card.cardId));
+    const panel = document.querySelector('#collectionContent .turntable-panel'), label = panel?.querySelector('.turntable-label');
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
-    drawer?.classList.remove('collapsed');
-    panel?.querySelector('.player-drawer-toggle') && (panel.querySelector('.player-drawer-toggle').textContent = '收起播放器');
+    if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
     void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album }).then(ok => { if (!ok) showShareToast && showShareToast('這張唱片暫時找不到可播放版本'); });
+  }
+
+  async function prefetchCollection(records) {
+    const token = ++collectionPrefetchToken;
+    for (let start = 0; start < records.length && token === collectionPrefetchToken; start += 4) {
+      await Promise.allSettled(records.slice(start, start + 4).map(card => window.DipPlayer?.prefetch({ artist:card.artist, album:card.album })));
+      if (start + 4 < records.length) await new Promise(resolve => setTimeout(resolve, 80));
+    }
   }
 
   function drawCollection() {
@@ -1486,13 +1502,10 @@
           <option value="artist"${collSort === 'artist' ? ' selected' : ''}>藝人 A→Z</option>
         </select>
         <button class="collect-group-btn${collGroup ? ' on' : ''}" id="collGroup">${collGroup ? '✓ 依稀有度分組' : '依稀有度分組'}</button>
-        <div class="collect-view-toggle"><button class="collect-view-btn${collView==='cards'?' on':''}" data-coll-view="cards">卡片檢視</button><button class="collect-view-btn${collView==='shelf'?' on':''}" data-coll-view="shelf">唱片櫃檢視</button></div>
       </div><div class="collect-genre-chips">${chips}</div>`;
 
     let body;
-    if (collView === 'shelf') {
-      body = rated.length ? `<div class="record-shelf-grid">${rated.map(_recordSlotHtml).join('')}</div>` : `<div class="collect-empty-sub" style="padding:28px 20px;text-align:center">這個篩選沒有唱片。</div>`;
-    } else if (collGroup) {
+    if (collGroup) {
       const tiers = ['hall', 'pearl', 'heresy', 'legendary', 'epic', 'uncommon', 'rare', 'common'];
       const labels = { hall: '殿堂', pearl: '流亡', heresy: '異端', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
       body = tiers.map(t => {
@@ -1503,12 +1516,12 @@
     } else {
       body = `<div class="collect-grid">${rated.map(_collCardHtml).join('')}</div>`;
     }
-    el.innerHTML = head + body + turntableHtml();
+    el.innerHTML = head + turntableHtml() + body;
     el.querySelector('#collSort')?.addEventListener('change', (e) => { collSort = e.target.value; drawCollection(); });
     el.querySelector('#collGroup')?.addEventListener('click', () => { collGroup = !collGroup; drawCollection(); });
     el.querySelectorAll('[data-coll-genre]').forEach(button => button.addEventListener('click', () => { collGenre = button.dataset.collGenre; drawCollection(); }));
-    el.querySelectorAll('[data-coll-view]').forEach(button => button.addEventListener('click', () => { collView = button.dataset.collView; drawCollection(); }));
     ensureCollectionPlayer(el);
+    void prefetchCollection(rated);
   }
 
   // 用 artist + album 對回 quizReels（reel 的 album = title）
@@ -1586,12 +1599,11 @@
 
   // 唱片櫃互動（委派）：點卡片看詳情、關閉、刪除
   document.addEventListener('click', (e) => {
-    const record = e.target.closest('.record-slot[data-record-id]');
-    if (record) { playCollectionRecord(_collCache.find(card => card.cardId === record.dataset.recordId), record); return; }
-    if (e.target.closest('[data-turntable-stop]')) { currentRecordId=''; currentRecord=null; window.DipPlayer?.stop(); document.querySelectorAll('.record-slot.active').forEach(slot=>slot.classList.remove('active')); return; }
-    if (e.target.closest('[data-player-drawer]')) { const drawer=document.querySelector('#collectionContent .player-drawer'); playerDrawerOpen=!playerDrawerOpen; drawer?.classList.toggle('collapsed',!playerDrawerOpen); e.target.closest('[data-player-drawer]').textContent=playerDrawerOpen?'收起播放器':'展開播放器'; return; }
+    if (e.target.closest('[data-turntable-stop]')) { currentRecordId=''; currentRecord=null; window.DipPlayer?.stop(); document.querySelectorAll('.collect-card.active').forEach(card=>card.classList.remove('active')); return; }
+    const info = e.target.closest('[data-card-info]');
+    if (info) { openCardDetail(info.dataset.cardInfo); return; }
     const card = e.target.closest('.collect-card[data-card-id]');
-    if (card) { openCardDetail(card.dataset.cardId); return; }
+    if (card) { playCollectionRecord(_collCache.find(item => item.cardId === card.dataset.cardId), card.querySelector('.cc-thumb') || card); return; }
     if (e.target.closest('[data-cd-close]')) { closeCardDetail(); return; }
     const sh = e.target.closest('[data-cd-share]');
     if (sh) { shareCard(sh.dataset.cdShare); return; }
@@ -1599,6 +1611,13 @@
     if (del) { deleteCard(del.dataset.cdDelete); return; }
     const ov = document.getElementById('cardDetailOverlay');
     if (ov && e.target === ov) closeCardDetail();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.key !== 'Enter' && e.key !== ' ') || !e.target.matches?.('.collect-card[data-card-id]')) return;
+    e.preventDefault();
+    const card = e.target;
+    playCollectionRecord(_collCache.find(item => item.cardId === card.dataset.cardId), card.querySelector('.cc-thumb') || card);
   });
 
   // 「收進唱片櫃」按鈕（結果頁，委派）
