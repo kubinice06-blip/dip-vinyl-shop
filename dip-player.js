@@ -13,6 +13,7 @@
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
+  let currentPreviewData = null, lastFailCode = '';
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -267,9 +268,10 @@
       requestUrl.searchParams.set('callback', callback);
       script.src = requestUrl.toString();
       script.async = true;
-      script.onerror = () => finish({});
-      script.onload = () => setTimeout(() => finish({}), 50);
-      const timer = setTimeout(() => finish({}), 7000);
+      // __stage 只作診斷代碼：S1=腳本載入失敗（403 封鎖／斷網），S2=逾時或有載入但無資料。
+      script.onerror = () => finish({ __stage: 'S1' });
+      script.onload = () => setTimeout(() => finish({ __stage: 'S2' }), 50);
+      const timer = setTimeout(() => finish({ __stage: 'S2' }), 7000);
       document.head.appendChild(script);
     });
   }
@@ -283,6 +285,7 @@
       requestUrl.searchParams.set('entity', 'song');
       requestUrl.searchParams.set('limit', '50');
       const json = await fetchItunesJsonp(requestUrl);
+      if (json.__stage) { lastFailCode = json.__stage; return {}; }
       const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
       const tracks = (json.results || []).filter(item => {
         if (item.kind !== 'song' || !item.previewUrl || !previewAlbumMatches(item.collectionName, album)) return false;
@@ -296,8 +299,13 @@
       }));
       const unique = [...new Map(tracks.map(item => [item.id || item.previewUrl, item])).values()]
         .sort((a, b) => a.trackNumber - b.trackNumber);
-      return unique.length ? { source:'itunes-preview', tracks:unique } : {};
-    } catch (_) { return {}; }
+      if (!unique.length) {
+        // S3=Apple 查無任何結果，S4:n=有 n 筆結果但專輯／藝人配對全數不符。
+        lastFailCode = (json.results || []).length ? `S4:${json.results.length}` : 'S3';
+        return {};
+      }
+      return { source:'itunes-preview', tracks:unique };
+    } catch (_) { lastFailCode = 'S0'; return {}; }
   }
 
   async function fetchSource(path, artist, album) {
@@ -448,17 +456,25 @@
         resolve(value && token === requestId);
       };
       const playing = () => finish(true), failed = () => finish(false);
-      const timer = setTimeout(() => finish(false), 3000);
+      // 行動網路首包 m4a 偶爾超過 3 秒，放寬到 8 秒避免誤判成失敗。
+      const timer = setTimeout(() => finish(false), 8000);
       audio.addEventListener('playing', playing, { once:true });
       audio.addEventListener('error', failed, { once:true });
     });
   }
 
-  async function playItunes(data, token) {
+  function previewTrackSummary(data) {
+    return (Array.isArray(data?.tracks) ? data.tracks : [])
+      .filter(track => track?.previewUrl)
+      .map(track => ({ id: String(track.id || track.previewUrl), trackName: track.trackName || '' }));
+  }
+
+  async function playItunes(data, token, forcedTrackId = '') {
     const tracks = Array.isArray(data?.tracks) ? data.tracks.filter(track => track?.previewUrl) : [];
     if (!tracks.length || token !== requestId) return false;
+    const forced = forcedTrackId ? tracks.find(track => String(track.id || track.previewUrl) === forcedTrackId) : null;
     const choices = tracks.length > 1 ? tracks.filter(track => track.id !== lastPreviewTrackId) : tracks;
-    const track = choices[Math.floor(Math.random() * choices.length)] || tracks[0];
+    const track = forced || choices[Math.floor(Math.random() * choices.length)] || tracks[0];
     const audio = ensurePreviewAudio();
     if (!audio || !track) return false;
     try {
@@ -472,16 +488,40 @@
       setProvider('itunes');
       const started = waitForPreviewPlayback(audio, token);
       const attempt = audio.play();
-      if (attempt?.catch) attempt.catch(() => {});
-      if (!(await started)) { audio.pause(); return false; }
+      // S6=play() 被拒（授權／格式），S5:n=音檔 MediaError 代碼，S7=8 秒內未開始播放。
+      if (attempt?.catch) attempt.catch(err => { lastFailCode = `S6:${err?.name || 'play'}`; });
+      if (!(await started)) {
+        if (!/^S6/.test(lastFailCode)) lastFailCode = audio.error ? `S5:${audio.error.code}` : 'S7';
+        audio.pause();
+        return false;
+      }
+      currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       previewTimer = setTimeout(() => {
         if (token !== requestId) return;
         audio.pause();
         emit({ status:'stopped', provider:null });
       }, 30500);
-      return { trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽' };
+      return {
+        trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽',
+        trackId:String(track.id || track.previewUrl), tracks:previewTrackSummary(data)
+      };
     } catch (_) { return false; }
+  }
+
+  // 點唱盤下方播放列表的某一首：資料已在手上，同一顆已解鎖的 audio 元件直接換源播放。
+  async function playTrack(trackId) {
+    if (!currentPreviewData || !trackId || !root) return false;
+    const token = ++requestId;
+    lastFailCode = '';
+    emit({ status:'loading', provider:'itunes', code:'' });
+    const played = await playItunes(currentPreviewData, token, String(trackId));
+    if (played && token === requestId) {
+      emit({ status:'playing', provider:'itunes', ...played });
+      return true;
+    }
+    if (token === requestId) emit({ status:'error', provider:null, code:lastFailCode });
+    return false;
   }
 
   async function playYoutube(data, token) {
@@ -528,7 +568,8 @@
     album = String(album).trim();
     if (!artist || !album || !root) return false;
     const token = ++requestId;
-    emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'' });
+    lastFailCode = '';
+    emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'', code:'' });
     try {
       const entry = linkEntry(artist, album);
       const order = prefer === 'itunes' ? ['itunes']
@@ -556,7 +597,7 @@
         previewAudio.pause();
       }
       setProvider(null);
-      emit({ status: 'error', provider: null, artist, album });
+      emit({ status: 'error', provider: null, artist, album, code: lastFailCode, tracks: [], trackId: '' });
     }
     return false;
   }
@@ -568,7 +609,7 @@
     try { spotifyController?.pause?.(); } catch (_) {}
     try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
     setProvider(null);
-    emit({ status: 'stopped', provider: null });
+    emit({ status: 'stopped', provider: null, tracks: [], trackId: '' });
   }
 
   function onStateChange(callback) {
@@ -578,5 +619,5 @@
     return () => listeners.delete(callback);
   }
 
-  window.DipPlayer = { mount, unlock, prefetch, playAlbum, stop, onStateChange };
+  window.DipPlayer = { mount, unlock, prefetch, playAlbum, playTrack, stop, onStateChange };
 })();

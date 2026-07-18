@@ -508,6 +508,13 @@
     .turntable-panel.switching .turntable-arm { animation: armSwitch .58s ease-in-out; }
     @keyframes armSwitch { 0%,100% { transform:rotate(42deg) } 45% { transform:rotate(22deg) } }
     .turntable-panel.error .turntable-arm { animation: armBounce .55s ease-out; }
+    .turntable-tracklist { border-top: 4px solid #111; background: #1c1c1c; max-height: 118px; overflow-y: auto; padding: 5px 0 7px; }
+    .tt-track { display: flex; width: 100%; gap: 8px; align-items: center; background: none; border: 0; color: #cfc6b8; font: inherit; font-size: 11px; line-height: 1.5; padding: 3px 14px; cursor: pointer; text-align: left; }
+    .tt-track .tt-num { color: #75654f; flex: none; }
+    .tt-track .tt-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .tt-track.on, .tt-track.on .tt-num { color: #d86f4a; }
+    .tt-track:active { color: #fff; }
+    .tt-source { display: block; font-size: 10px; color: #8a7c66; padding: 5px 14px 0; text-decoration: none; }
     @keyframes armBounce { 45% { transform: rotate(48deg); } 100% { transform: rotate(-12deg); } }
     .record-flight { position: fixed; z-index: 999; pointer-events: none; background:#111 center/cover no-repeat; box-shadow: 0 8px 24px rgba(0,0,0,.35); transition: left .6s ease-in,width .6s,height .6s,top .6s,border-radius .6s,opacity .6s,transform .6s; }
     @media(max-width:520px){.collect-controls{flex-wrap:wrap}.collect-genre-chips{padding:9px 12px}.turntable-panel{margin:14px 12px 20px;box-shadow:5px 5px 0 #ddd}.turntable-stage{padding:12px}.turntable-deck{width:270px;max-width:100%}}
@@ -780,7 +787,7 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=8"></script>
+<script src="dip-player.js?v=9"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1399,7 +1406,7 @@
 
   function turntableHtml() {
     const label = currentRecord?.coverUrl ? `style="background-image:url('${escapeCollectionHtml(currentRecord.coverUrl.replace(/'/g, '%27'))}')"` : '';
-    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
+    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div class="turntable-tracklist" data-turntable-tracks hidden></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
   }
 
   function stepTurntable(time) {
@@ -1442,7 +1449,19 @@
       currentRecord = null;
       document.querySelectorAll('.collect-card.active').forEach(card => card.classList.remove('active'));
     }
+    drawTurntableTracklist(panel, playerState);
     runTurntable();
+  }
+
+  function drawTurntableTracklist(panel, playerState) {
+    const listEl = panel.querySelector('[data-turntable-tracks]');
+    if (!listEl) return;
+    const tracks = Array.isArray(playerState.tracks) ? playerState.tracks : [];
+    if (!tracks.length) { listEl.hidden = true; listEl.innerHTML = ''; return; }
+    listEl.hidden = false;
+    listEl.innerHTML = tracks.map((track, index) =>
+      `<button class="tt-track${track.id === playerState.trackId ? ' on' : ''}" type="button" data-preview-track="${escapeCollectionHtml(track.id)}"><span class="tt-num">${String(index + 1).padStart(2, '0')}</span><span class="tt-name">${escapeCollectionHtml(track.trackName || '')}</span></button>`
+    ).join('') + (playerState.storeUrl ? `<a class="tt-source" href="${escapeCollectionHtml(playerState.storeUrl)}" target="_blank" rel="noopener">Apple Music 試聽 ↗</a>` : '');
   }
 
   function ensureCollectionPlayer(el) {
@@ -1475,7 +1494,12 @@
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
-    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'itunes' }).then(ok => { if (!ok) showShareToast && showShareToast('這張唱片暫時找不到 30 秒試聽'); });
+    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'itunes' }).then(ok => {
+      if (ok) return;
+      // 失敗代碼幫店主回報真機到底卡在哪一層（S1 封鎖／S3 查無／S5 音檔錯誤…）。
+      const code = lastPlayerState.code ? `（代碼 ${lastPlayerState.code}）` : '';
+      showShareToast && showShareToast(`這張唱片暫時找不到 30 秒試聽${code}`);
+    });
   }
 
   async function prefetchCollection(records) {
@@ -1602,6 +1626,8 @@
   // 唱片櫃互動（委派）：點卡片看詳情、關閉、刪除
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-turntable-stop]')) { currentRecordId=''; currentRecord=null; window.DipPlayer?.stop(); document.querySelectorAll('.collect-card.active').forEach(card=>card.classList.remove('active')); return; }
+    const trackBtn = e.target.closest('[data-preview-track]');
+    if (trackBtn) { window.DipPlayer?.unlock?.(); void window.DipPlayer?.playTrack?.(trackBtn.dataset.previewTrack); return; }
     const info = e.target.closest('[data-card-info]');
     if (info) { openCardDetail(info.dataset.cardInfo); return; }
     const card = e.target.closest('.collect-card[data-card-id]');

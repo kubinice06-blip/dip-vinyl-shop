@@ -232,6 +232,15 @@ assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/se
 assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'preview lookup does not depend on CORS fetch headers');
 assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'preview playback does not depend on a rate-limited Worker hop');
 
+// 唱盤下方播放列表：playing 狀態要帶曲目摘要；點列表指定曲目要用同一顆已解鎖元件強制換源。
+assert.equal(JSON.stringify(states.at(-1).tracks), JSON.stringify([{ id:'b1', trackName:'B One' }]));
+player.unlock();
+assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
+assert.equal(await player.playTrack('a2'), true);
+assert.equal(states.at(-1).trackName, 'A Two');
+assert.equal(states.at(-1).trackId, 'a2');
+assert.equal(audioElements[0].src, 'https://audio/a2.m4a');
+
 await player.prefetch({ artist:'Artist A', album:'Album A', spotify:false, youtube:true });
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'youtube' }), true);
@@ -253,6 +262,7 @@ assert.deepEqual(
 
 player.stop();
 console.log('PASS  iTunes preview remains authorized after an uncached asynchronous lookup');
+console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
 console.log('PASS  iTunes random 30-second previews switch to the requested album');
 console.log('PASS  YouTube waits for the requested highest-view video before reporting playback');
 console.log('PASS  YouTube highlight starts at a random valid point and stops after a 30-second window');

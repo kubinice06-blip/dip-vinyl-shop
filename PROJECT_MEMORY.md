@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜唱盤機下方加播放列表、失敗診斷代碼；確認 Apple 封鎖會自動過期
+- Repo：`dip-vinyl-shop`
+- 改動：本機實測確認三件事：(1) Apple 對 `/search` 的 IP 封鎖是長效但**會自動過期**（本機上午還全 403，晚間已恢復 200），店主 iPhone 全數失敗即是他用過的網路出口 IP（含行動網路 CGNAT、可能還有 iCloud Private Relay 的共用出口）被舊版全量預抓打進封鎖名單；(2) 被封期間 `/lookup` 與試聽音檔 CDN 仍可用，是日後備援方向；(3) Deezer API 在台灣回空 data（地區限制），**不能**當備援來源。本次上線：唱盤機下方新增小型像素風播放列表（曲序＋曲名，點任一首即在同一顆已解鎖 audio 元件換源播放，並附 Apple Music 商店連結作為 attribution 合規），播放器失敗時 toast 附診斷代碼（S1=JSONP 被封／斷網、S2=逾時、S3=查無、S4:n=配對全不符、S5:n=音檔 MediaError、S6=play() 被拒、S7=未開始播放），供店主真機回報失敗層；行動網路首包放寬 playing 等待 3→8 秒。快取參數升 v9。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`
+- 驗證：`verify-playback.mjs` 新增「playing 狀態帶曲目摘要＋playTrack 強制換源」回歸並全數通過；真實瀏覽器 harness 實測 Beware 自動播放〈You Don't Love Me〉並列出 11 首、點列表第 3 首成功切〈My Life's Work〉、切辛曉琪《一夜之間》自動播放並列出 10 首，audio currentTime 實際前進、來源為 Apple 試聽 CDN。待辦：離線建全卡池 collectionId 對照表＋執行期改走 `/lookup`，讓 IP 再被封時也能播。
+
 ### 2026-07-18｜停止唱片櫃全量預抓造成的 Apple 403／429，維持 iOS 播放授權至曲目載入
 - Repo：`dip-vinyl-shop`
 - 改動：店主真機回報 v7 仍是唱臂動一下即歸位。重新分離測試後確認 Apple 曲目 metadata 已回空，主因是唱片櫃原本會對數百張收藏四路連續全量預抓，超過 Apple 官方約 20 calls/min 限制，頁面一開即把使用者 IP 打入 403／429 限流；v7 只處理 iOS 手勢並未消除這個上游空結果。現在只預抓排序後首屏 4 張，Search `limit` 由 200 降為 50，單次失敗結果 15 秒後可重試，不再整個分頁永久記空。iOS 解鎖改成讓同一 audio 元件的 0.25 秒靜音 WAV 持續 loop 到 JSONP 回傳，再直接在仍播放的同一元件上換成實際 preview；不再先暫停靜音、遺失 per-element 播放授權。播放器快取參數升至 v8。
