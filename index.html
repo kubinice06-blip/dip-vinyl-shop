@@ -780,7 +780,7 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=7"></script>
+<script src="dip-player.js?v=8"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1522,7 +1522,8 @@
     el.querySelector('#collGroup')?.addEventListener('click', () => { collGroup = !collGroup; drawCollection(); });
     el.querySelectorAll('[data-coll-genre]').forEach(button => button.addEventListener('click', () => { collGenre = button.dataset.collGenre; drawCollection(); }));
     ensureCollectionPlayer(el);
-    void prefetchCollection(rated);
+    // Apple Search API 約限 20 calls/min；只預抓首屏，禁止對整個大收藏全量掃描。
+    void prefetchCollection(rated.slice(0, 4));
   }
 
   // 用 artist + album 對回 quizReels（reel 的 album = title）

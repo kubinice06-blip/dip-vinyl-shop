@@ -47,11 +47,15 @@ class MockAudio extends MockElement {
     this.currentTime = 0;
     this.paused = true;
     this.unlocked = false;
+    this.loop = false;
   }
   load() {}
-  pause() { this.paused = true; }
+  pause() {
+    this.paused = true;
+    if (this.src.startsWith('blob:')) this.unlocked = false;
+  }
   play() {
-    if (this.src.startsWith('data:audio/wav')) this.unlocked = true;
+    if (this.src.startsWith('blob:')) this.unlocked = true;
     if (!this.unlocked) return Promise.reject(new Error('NotAllowedError'));
     this.paused = false;
     queueMicrotask(() => this.dispatchEvent(new Event('playing')));
@@ -126,10 +130,11 @@ document.head.appendChild = child => {
       createController(_host, _options, ready) { ready(spotifyController); }
     }));
   }
-  if (String(child.src || '').startsWith('https://itunes.apple.com/search?')) {
+  if (String(child.src || '').startsWith('https://itunes.apple.com/') && new URL(child.src).searchParams.has('callback')) {
     scriptRequests.push(String(child.src));
     const callback = new URL(child.src).searchParams.get('callback');
-    queueMicrotask(() => context.window[callback]?.(sourceFor(child.src)));
+    setTimeout(() => context.window[callback]?.(sourceFor(child.src)), 80);
+    setTimeout(() => child.onload?.(), 100);
   }
   return child;
 };
@@ -174,6 +179,7 @@ const context = {
   fetch: async url => { fetchCalls.push(String(url)); return { ok:true, json:async () => sourceFor(url) }; },
   URL,
   URLSearchParams,
+  Blob,
   Event,
   EventTarget,
   Math: mockMath,
@@ -209,6 +215,7 @@ assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer
 assert.equal(states.at(-1).provider, 'itunes');
 assert.equal(states.at(-1).trackName, 'A One');
 assert.equal(audioElements[0].src, 'https://audio/a1.m4a');
+assert.equal(audioElements[0].loop, false);
 
 // Repeating the same album excludes the immediately previous preview when possible.
 player.unlock();

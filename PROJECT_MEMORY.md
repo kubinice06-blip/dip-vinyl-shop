@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-18｜停止唱片櫃全量預抓造成的 Apple 403／429，維持 iOS 播放授權至曲目載入
+- Repo：`dip-vinyl-shop`
+- 改動：店主真機回報 v7 仍是唱臂動一下即歸位。重新分離測試後確認 Apple 曲目 metadata 已回空，主因是唱片櫃原本會對數百張收藏四路連續全量預抓，超過 Apple 官方約 20 calls/min 限制，頁面一開即把使用者 IP 打入 403／429 限流；v7 只處理 iOS 手勢並未消除這個上游空結果。現在只預抓排序後首屏 4 張，Search `limit` 由 200 降為 50，單次失敗結果 15 秒後可重試，不再整個分頁永久記空。iOS 解鎖改成讓同一 audio 元件的 0.25 秒靜音 WAV 持續 loop 到 JSONP 回傳，再直接在仍播放的同一元件上換成實際 preview；不再先暫停靜音、遺失 per-element 播放授權。播放器快取參數升至 v8。
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
+- 驗證：官方 iTunes Search API 文件確認限制約 20 calls/min 並建議縮小 `limit`、加入快取；瀏覽器分離測試在舊流程實際得到 `tracks:0`，與店主全數失敗一致。`verify-playback.mjs` 模擬 JSONP 延遲及「靜音一旦暫停即失去授權」的 iOS 行為，確認新流程會保持同一元件播放到換源並通過；正式 Apple metadata／音檔待本機 IP 限流視窗退去後再驗。
+
 ### 2026-07-18｜修正 iOS iTunes 試聽全數失敗並移除唱機下方文字
 - Repo：`dip-vinyl-shop`
 - 改動：確認 Apple JSONP 能正確回傳曲目，真正失敗點是未預抓的專輯要等待非同步查詢，iOS Safari 在資料回來時已收回點擊播放權限。播放器現在於點擊當下用同一個隱藏 audio 元件播放極短靜音 WAV 完成解鎖，再等待曲目回來切換來源；JSONP 等候上限由 6 秒延長為 10 秒。唱機下方的提示／曲名／Apple Music 文字列與其佔位、CSS 全部移除，唱機本身和既有收藏版面不動；三頁播放器快取參數升至 v7。

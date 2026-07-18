@@ -4,7 +4,6 @@
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
-  const SILENT_PREVIEW = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAACAgICA';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const linkCache = new Map();
@@ -13,7 +12,7 @@
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
-  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false;
+  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -174,18 +173,29 @@
     } catch (_) { return false; }
   }
 
+  function silentPreviewSource() {
+    if (silentPreviewUrl) return silentPreviewUrl;
+    const samples = 2000, bytes = new Uint8Array(44 + samples), view = new DataView(bytes.buffer);
+    const write = (offset, value) => { for (let i = 0; i < value.length; i++) bytes[offset + i] = value.charCodeAt(i); };
+    write(0, 'RIFF'); view.setUint32(4, 36 + samples, true); write(8, 'WAVE'); write(12, 'fmt ');
+    view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true);
+    view.setUint32(24, 8000, true); view.setUint32(28, 8000, true); view.setUint16(32, 1, true); view.setUint16(34, 8, true);
+    write(36, 'data'); view.setUint32(40, samples, true); bytes.fill(128, 44);
+    silentPreviewUrl = URL.createObjectURL(new Blob([bytes], { type:'audio/wav' }));
+    return silentPreviewUrl;
+  }
+
   function primePreviewFromGesture() {
-    if (previewPrimed || !root) return previewPrimed;
+    if (!root) return false;
     try {
       const audio = ensurePreviewAudio();
-      audio.src = SILENT_PREVIEW;
+      if (!audio.paused && !audio.ended) return true;
+      audio.loop = true;
+      audio.src = silentPreviewSource();
       audio.currentTime = 0;
-      const silentSource = audio.src;
       const attempt = audio.play();
       previewPrimed = true;
-      if (attempt?.then) attempt.then(() => {
-        if (audio.src === silentSource) { audio.pause(); audio.currentTime = 0; }
-      }).catch(() => { previewPrimed = false; });
+      if (attempt?.catch) attempt.catch(() => { previewPrimed = false; });
       return true;
     } catch (_) { previewPrimed = false; return false; }
   }
@@ -194,9 +204,7 @@
     if (document.documentElement.dataset.dipAudioUnlock === '1') return;
     document.documentElement.dataset.dipAudioUnlock = '1';
     const prime = () => {
-      const previewReady = primePreviewFromGesture();
-      const youtubeReadyNow = primeYoutubeFromGesture();
-      if (previewReady && youtubeReadyNow) {
+      if (primeYoutubeFromGesture()) {
         ['pointerdown', 'touchstart', 'click'].forEach(type => document.removeEventListener(type, prime, true));
       }
     };
@@ -260,7 +268,8 @@
       script.src = requestUrl.toString();
       script.async = true;
       script.onerror = () => finish({});
-      const timer = setTimeout(() => finish({}), 10000);
+      script.onload = () => setTimeout(() => finish({}), 50);
+      const timer = setTimeout(() => finish({}), 7000);
       document.head.appendChild(script);
     });
   }
@@ -272,7 +281,7 @@
       requestUrl.searchParams.set('country', 'TW');
       requestUrl.searchParams.set('media', 'music');
       requestUrl.searchParams.set('entity', 'song');
-      requestUrl.searchParams.set('limit', '200');
+      requestUrl.searchParams.set('limit', '50');
       const json = await fetchItunesJsonp(requestUrl);
       const cjkArtist = /[㐀-鿿぀-ヿ가-힯]/.test(artist);
       const tracks = (json.results || []).filter(item => {
@@ -307,18 +316,33 @@
     const key = cacheKey(artist, album);
     if (!linkCache.has(key)) linkCache.set(key, {
       spotifyData: null, youtubeData: null, itunesData: null,
-      spotifyPromise: null, youtubePromise: null, itunesPromise: null
+      spotifyPromise: null, youtubePromise: null, itunesPromise: null, itunesRetryAt: 0
     });
     return linkCache.get(key);
   }
 
   function loadCachedSource(entry, type, path, artist, album) {
     const dataKey = `${type}Data`, promiseKey = `${type}Promise`;
+    if (type === 'itunes' && entry[dataKey] !== null && !entry[dataKey]?.tracks?.length && Date.now() >= entry.itunesRetryAt) {
+      entry[dataKey] = null;
+      entry[promiseKey] = null;
+    }
     if (entry[dataKey] !== null) return Promise.resolve(entry[dataKey]);
     if (!entry[promiseKey]) {
       entry[promiseKey] = fetchSource(path, artist, album)
-        .then(data => { entry[dataKey] = data && typeof data === 'object' ? data : {}; return entry[dataKey]; })
-        .catch(() => { entry[dataKey] = {}; return entry[dataKey]; });
+        .then(data => {
+          entry[dataKey] = data && typeof data === 'object' ? data : {};
+          if (type === 'itunes' && !entry[dataKey]?.tracks?.length) {
+            entry.itunesRetryAt = Date.now() + 15000;
+            entry[promiseKey] = null;
+          }
+          return entry[dataKey];
+        })
+        .catch(() => {
+          entry[dataKey] = {};
+          if (type === 'itunes') { entry.itunesRetryAt = Date.now() + 15000; entry[promiseKey] = null; }
+          return entry[dataKey];
+        });
     }
     return entry[promiseKey];
   }
@@ -365,7 +389,7 @@
     if (!controller || token !== requestId) return false;
     try {
       clearTimeout(previewTimer);
-      previewAudio?.pause?.();
+      if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
       youtubePlayer?.pauseVideo?.();
       controller.pause?.();
       setProvider('spotify');
@@ -407,7 +431,7 @@
     previewAudio.preload = 'auto';
     previewAudio.setAttribute('playsinline', '');
     previewAudio.setAttribute('aria-hidden', 'true');
-    previewAudio.style.display = 'none';
+    Object.assign(previewAudio.style, { position:'fixed', width:'1px', height:'1px', left:'-9999px', top:'0', opacity:'0', pointerEvents:'none' });
     root?.appendChild(previewAudio);
     return previewAudio;
   }
@@ -441,7 +465,7 @@
       clearTimeout(previewTimer);
       spotifyController?.pause?.();
       youtubePlayer?.pauseVideo?.();
-      audio.pause();
+      audio.loop = false;
       audio.src = track.previewUrl;
       audio.currentTime = 0;
       audio.load();
@@ -467,7 +491,7 @@
     if (!target || !player || token !== requestId) return false;
     try {
       clearTimeout(previewTimer);
-      previewAudio?.pause?.();
+      if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
       spotifyController?.pause?.();
       player.pauseVideo?.();
       setProvider('youtube');
@@ -527,6 +551,10 @@
       }
     } catch (_) {}
     if (token === requestId) {
+      if (previewAudio && silentPreviewUrl && previewAudio.src === silentPreviewUrl) {
+        previewAudio.loop = false;
+        previewAudio.pause();
+      }
       setProvider(null);
       emit({ status: 'error', provider: null, artist, album });
     }
@@ -536,7 +564,7 @@
   function stop() {
     requestId++;
     clearTimeout(previewTimer);
-    try { previewAudio?.pause?.(); } catch (_) {}
+    try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
     try { spotifyController?.pause?.(); } catch (_) {}
     try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
     setProvider(null);
