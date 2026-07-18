@@ -40,6 +40,7 @@
   .xpbar{flex:1;height:8px;background:var(--hp-bg);border:1px solid var(--line);overflow:hidden;}
   .xpbar i{display:block;height:100%;background:var(--gold);width:0;transition:width .5s;}
   .topbar .best{font-size:10px;color:var(--gray);letter-spacing:0.06em;white-space:nowrap;}
+  .rogue-music-toggle{flex:none;width:26px;height:26px;padding:0;border:1px solid var(--line);background:#fff;color:var(--black);font-size:13px;line-height:24px;}
 
   /* class select */
   .cls{border:1px solid var(--line);background:#fff;border-radius:0;padding:14px;margin:10px 0;transition:border-color .15s;}
@@ -174,6 +175,17 @@
   .slot.win::after,.slot.lose::after{position:absolute;top:5px;right:5px;z-index:3;font-size:11px;font-weight:700;padding:2px 6px;color:#fff;}
   .slot.win::after{content:'勝';background:var(--black);} .slot.lose::after{content:'負';background:var(--dmg);}
   .vs{align-self:center;font-weight:700;font-size:13px;color:var(--gray);letter-spacing:0.1em;}
+  .rogue-mini-player{position:absolute;z-index:7;left:50%;top:calc(50% + 18px);width:40px;height:28px;transform:translateX(-50%);padding:0;border:1px solid var(--black);background:#c8b89d;cursor:pointer;image-rendering:pixelated;}
+  .rogue-mini-player::before{content:'';position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:repeating-radial-gradient(circle,#222 0 2px,#080808 3px 5px);box-shadow:0 0 0 2px #666;}
+  .rogue-mini-player::after{content:'';position:absolute;width:3px;height:18px;right:6px;top:3px;background:#555;transform:rotate(28deg);transform-origin:50% 2px;box-shadow:2px 0 #ddd;}
+  .rogue-mini-player.playing::before{animation:rogueMiniVinylSpin .9s linear infinite;}
+  .rogue-mini-player.muted{opacity:.46;}
+  .rogue-mini-player .note{display:none;position:absolute;left:16px;top:0;color:#111;font-size:11px;font-weight:700;pointer-events:none;}
+  .rogue-mini-player.playing .note{display:block;animation:rogueMiniNote 1.45s ease-out infinite;}
+  .rogue-mini-player.playing .note.n2{left:23px;animation-delay:.48s;}
+  .rogue-mini-player.playing .note.n3{left:11px;animation-delay:.96s;}
+  @keyframes rogueMiniVinylSpin{to{transform:rotate(360deg);}}
+  @keyframes rogueMiniNote{0%{transform:translateY(0) scale(.7);opacity:0}20%{opacity:1}100%{transform:translateY(-24px) translateX(4px) scale(1);opacity:0}}
   .pcard{width:100%;height:100%;position:relative;animation:pop .3s;}
   .pcover{width:100%;height:100%;background-size:cover;background-position:center;}
   .pcover.ht-noimg,.ht-cover.ht-noimg{display:flex;align-items:center;justify-content:center;padding:8px;text-align:center;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f3f3f3 5px,#f3f3f3 10px);}
@@ -376,6 +388,7 @@
 </head>
 <body>
 <div id="app"></div>
+<div id="roguePlayerMount" aria-hidden="true"></div>
 
 <!-- 讀取後台設定（gameConfig/roguelike）。讀不到就用內建預設，離線仍可玩。 -->
 <script type="module">
@@ -502,6 +515,7 @@
   })();
 </script>
 
+<script src="dip-player.js?v=2"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1307,6 +1321,42 @@ let META = loadMeta();   // 在 helpers(shuffle/POOL) 之後初始化
 let RUN = null;   // 當前 run
 let G = null;     // 當前單場戰鬥
 const $app = document.getElementById('app');
+const ROGUE_MUSIC_KEY='dipBattleMusic';
+let rogueMusicOn=(()=>{ try{return localStorage.getItem(ROGUE_MUSIC_KEY)!=='off';}catch(e){return true;} })();
+let roguePlayerState={status:'idle',provider:null,artist:'',album:''};
+function syncRogueMusic(){
+  const top=document.getElementById('rogueMusicToggle');
+  if(top){ top.textContent=rogueMusicOn?'🔊':'🔇'; top.setAttribute('aria-pressed',String(rogueMusicOn)); top.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
+  const mini=document.getElementById('rogueMiniPlayer');
+  if(mini){ mini.classList.toggle('muted',!rogueMusicOn); mini.classList.toggle('playing',rogueMusicOn&&roguePlayerState.status==='playing'); mini.setAttribute('aria-pressed',String(rogueMusicOn)); mini.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
+}
+function setRogueMusic(enabled){
+  rogueMusicOn=!!enabled;
+  try{localStorage.setItem(ROGUE_MUSIC_KEY,rogueMusicOn?'on':'off');}catch(e){}
+  syncRogueMusic();
+  if(!rogueMusicOn) window.DipPlayer?.stop();
+}
+function playRogueAlbum(card){
+  if(!rogueMusicOn||!card||!window.DipPlayer) return false;
+  try{void window.DipPlayer.playAlbum({artist:card.artist,album:card.album}).catch(()=>{});return true;}catch(e){return false;}
+}
+function prefetchRogueAlbum(card){
+  if(!rogueMusicOn||!card||!window.DipPlayer?.prefetch) return false;
+  try{void window.DipPlayer.prefetch({artist:card.artist,album:card.album}).catch(()=>{});return true;}catch(e){return false;}
+}
+function playRogueRoundWinner(pCard,eCard,pHp0,eHp0){
+  const pLoss=pHp0-G.p.hp, eLoss=eHp0-G.e.hp;
+  if(eLoss>pLoss) return playRogueAlbum(pCard);
+  if(pLoss>eLoss) return playRogueAlbum(eCard);
+  return false;
+}
+function initRoguePlayer(){
+  const mount=document.getElementById('roguePlayerMount');
+  if(!mount||!window.DipPlayer) return;
+  window.DipPlayer.mount(mount,{hidden:true});
+  window.DipPlayer.onStateChange(state=>{roguePlayerState=state;syncRogueMusic();});
+  syncRogueMusic();
+}
 
 // 開頁即等登入狀態：登入 → 樂歷綁帳號；確認登出 → 丟掉上次帳號快取、回訪客檔
 // （Firebase 是 module、比本腳本晚跑 → 輪詢等 __rogueAuthReady 出現，不能直接 race undefined）
@@ -1332,6 +1382,7 @@ function topbarHTML(){
     <div class="xpbar"><i style="width:${pct}%"></i></div>
     <span style="flex:none;color:var(--gold);font-weight:700">💰 $${cashOf()}</span>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
+    <button class="rogue-music-toggle" id="rogueMusicToggle" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="setRogueMusic(!rogueMusicOn)">${rogueMusicOn?'🔊':'🔇'}</button>
   </div>`;
 }
 
@@ -2139,6 +2190,7 @@ function renderBattle(){
     <div class="arena"><div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
+      <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="setRogueMusic(!rogueMusicOn)"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
       <div class="slot" id="pSlot"></div>
       <div class="callout" id="callout"></div>
     </div></div>
@@ -2181,6 +2233,7 @@ function renderHand(){
   // 敵方手牌封面也先暖好：出牌飛行動畫才有封面可飛（否則飛上桌是一張純文字卡）
   if(G.e&&G.e.hand) G.e.hand.forEach(c=>{ if(!c.coverUrl) ensureCover(c); });
   renderTilePop();
+  syncRogueMusic();
 }
 function selectCard(uid){ if(G.busy||G.over) return; _sel = (_sel===uid?null:uid); renderHand();
   if(_sel){ const t=document.querySelector('.handtile.sel'); if(t) t.scrollIntoView({block:'nearest',inline:'center'}); } }
@@ -2264,6 +2317,7 @@ async function play(uid, pAttr){
   const ps=document.getElementById('pSlot'), es=document.getElementById('eSlot');
   ps.className='slot filled'; ps.innerHTML=boardCardHTML(pCard,pAttrShow); lazyCover('pSlot',pCard,pAttrShow);
   es.className='slot filled'; es.innerHTML=boardCardHTML(eCard,eAttrShow); lazyCover('eSlot',eCard,eAttrShow);
+  prefetchRogueAlbum(pCard); prefetchRogueAlbum(eCard);
   if(feinted && G.pCounteredTellLast){ callout('<span class="dmg">對手虛晃一招！反咬你的相剋</span>'); pushLog('對手虛晃 → 反咬你的相剋','hit'); await sleep(650); }
 
   const st=G.p.stats, est=G.e.stats;
@@ -2351,6 +2405,7 @@ async function play(uid, pAttr){
 
   // 結算畫面（勝負標記照這一手的掉血差，不看總血量）
   markResult(pHp0,eHp0);
+  playRogueRoundWinner(pCard,eCard,pHp0,eHp0);
   if(G.p.hp<pHp0) spriteFx('p','hurt',600);
   if(G.e.hp<eHp0) spriteFx('e','hurt',600);
   // 記住這一手雙方的牌＋牌型＋勝負標記 → 下一回合仍留在檯面（同 battle.html）
@@ -3137,6 +3192,7 @@ function applyConfig(cfg){
 // 啟動：先等後台設定（最多等一下），再開遊戲
 async function bootstrap(){
   $app.innerHTML = '<div class="center muted" style="padding:40px">載入設定中…</div>';
+  initRoguePlayer();
   let cfg=null;
   // __rogueCfg 由 module 晚一步掛上 → 先輪詢等它出現再 race，否則後台設定永遠讀不到
   try{
