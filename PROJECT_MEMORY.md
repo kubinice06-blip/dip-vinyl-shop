@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜發燒配件大改版：五階品相、毀損即移除、Lv.1~5 升級制
+- Repo：`dip-vinyl-shop`
+- 改動：依店主三點指示優化發燒配件系統。①品相改唱片行邏輯五階：只有耐久 100 算「全新」，1 點耗損就掉「近全新」（M 0／NM 1–39 皆 ×1 → VG 良品 40–69 ×0.6 → G 堪用 70–99 ×0.3 → F 毀損 100）；各類別語彙補到五階（耗材滿瓶→空瓶、唱針全新→斷針）、戰鬥列耗損條改 5 格。②耐久磨到 0＝整件毀損、直接從收藏移除（`META.relicsOwned` 新欄位＝現持有清單；`relicsSeen` 仍當圖鑑永久點亮，未持有顯示「已毀損 · 未持有」），只能再打贏傳說藏家重新入手；原「♻ 回收報廢件」機制與報廢保養分支全數移除；洗碟水保養改在毀損判定前結算（最後一口氣救得回）。③新增配件等級 Lv.1~5（`META.relicLv`，跨趟且毀損後保留、帳號合併取較高）：fx＝Lv.1 起始值（整體壓低，如開局氣勢 2→1、輾壓傷 2→1、經驗 +25%→+10%）、fx5＝Lv.5 滿級值，線性內插（`fxAt`）；desc 用 `{v}` 帶入當前數值；升級管道＝藏家三選一撞已持有同款（免費升一級＋整新，滿級退出掉落池）或花現金升級（`CASH.upCost` 60/100/150/220、tier2 ×1.5，不附整新）；每級再 −6% 磨損（`WEAR.lvDura`）。神秘見本盤免死回魂 HP 改隨等級（4→10）。admin.html 同步：`DEF_ROGUE.relics` 更新＋配件編輯器加「Lv5 值」欄；roguelike `applyConfig` 對舊版後台存檔自動補回 `fx5`／`{v}` desc。
+- 主要檔案：`roguelike.html`、`admin.html`、`ROGUELIKE_DESIGN.md`
+- 驗證：本機 http-server 載入 roguelike.html／admin.html 皆無 console 錯誤；console 實測品相階梯門檻（0 全新／1 近全新／100 毀損）、fxAt 內插（唱針 1/2/3）、desc 帶值、升級成本表與 tier2 倍率、舊存檔 `relicsOwned` 遷移（耗損 100 的自動剔除）、applyWear 毀損整件移除（RUN＋META 同步、等級保留）、`upgradeRelic` 整新、滿級退出 relicPool、保養視窗與毀損播報渲染全數正確；Node `--check` 兩檔 script 語法通過。
+
 ### 2026-07-19｜像素唱機搬進專輯介紹彈窗、兩遊戲介紹版面統一
 - Repo：`dip-vinyl-shop`
 - 改動：依店主指示把像素唱機從戰場移進「專輯介紹（卡片資訊）」彈窗：battle 移除牌桌正中央的 `#battleMiniPlayer`、roguelike 移除我方小人旁那台，唱機改為彈窗內「三屬性下方、簡介上方」置中一台，播放時唱盤轉動＋音符飄出，點一下靜音停播、再點恢復播放目前這張（battle 用 recModal 事件委派，roguelike 用全域 `toggleCardInfoMusic()`；皆記住彈窗當前卡片以便恢復）。修正 roguelike 介紹彈窗三屬性跑版的根因：`.st` 的橫排規則只套在 `.card .st`，彈窗內沒套到，且屬性名稱誤吃 `.drawcard .lab` 金色大標樣式——補上 `.drawcard .st`／`.st .lab` 專屬規則，名稱＋星格同列、整組置中。單場對決的卡片資訊彈窗改成與 roguelike 一致的排版：封面→藝人→專輯→王牌徽章→三屬性星格（同色 pips、出招屬性名稱金色）→唱機→簡介→「▶ 串流聽這張」（雜牌不給串流鍵；battle 補上 `--classic/--obscurity/--accessibility` 色票與 `streamSearchUrl`/`hookStreamLink`，先給 Spotify 搜尋連結、抓到直連再換上）。

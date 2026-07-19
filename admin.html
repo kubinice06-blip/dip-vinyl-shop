@@ -254,10 +254,10 @@
     .buff-row input, .buff-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
     .buff-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
     .buff-head { display:grid; grid-template-columns:1.4fr 1.8fr 0.9fr 1.1fr 0.7fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
-    .relic-row { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr auto; gap:6px; align-items:center; margin-bottom:6px; }
+    .relic-row { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr 0.6fr auto; gap:6px; align-items:center; margin-bottom:6px; }
     .relic-row input, .relic-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
     .relic-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
-    .relic-head { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
+    .relic-head { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr 0.6fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
   </style>
 </head>
 <body>
@@ -3520,23 +3520,24 @@ ${discogs ? '- Discogs：' + discogs : ''}
       {id:'cull',label:'🗑 丟最弱盤',desc:'移除牌組總星最低的一張',target:'deck',key:'cullWeakest',amount:1},
     ],
     relics:[
-      {id:'stylus',    name:'黑膠唱針',     icon:'stylus',    tier:1, desc:'相剋命中額外 +1 氣勢',                          fx:{counterQi:1}},
+      // 等級制：fx＝Lv.1 數值、fx5＝Lv.5 滿級數值（線性內插）；desc 用 {v} 帶入當前等級數值。與 roguelike.html DEFAULT_RELICS 同步。
+      {id:'stylus',    name:'黑膠唱針',     icon:'stylus',    tier:1, desc:'相剋命中額外 +{v} 氣勢',                        fx:{counterQi:1},   fx5:{counterQi:3}},
       {id:'sleeve',    name:'防靜電內套',   icon:'sleeve',    tier:2, desc:'王牌被動加倍：殿堂削 4 氣勢、流亡充能加倍、異端歸零後自身 +2 氣勢', fx:{aceDouble:1}},
       {id:'dustcover', name:'防塵套',       icon:'dustcover', tier:1, desc:'每場第一次受擊傷害減半',                        fx:{firstHitHalf:1}},
-      {id:'testpress', name:'神秘見本盤',   icon:'testpress', tier:2, desc:'死亡時免死一次並回 5 HP（每趟一次）',            fx:{revive:1}},
+      {id:'testpress', name:'神秘見本盤',   icon:'testpress', tier:2, desc:'死亡時免死一次並回 {v} HP（每趟一次）',          fx:{revive:4},      fx5:{revive:10}},
       {id:'pointcard', name:'會員集點卡',   icon:'pointcard', tier:1, desc:'局末抽盤變成二選一',                            fx:{drawTwo:1}},
-      {id:'adapter45', name:'45 轉接環',    icon:'adapter45', tier:1, desc:'每場開局氣勢 +2',                               fx:{startQi:2}},
-      {id:'cleaner',   name:'洗碟水',       icon:'cleaner',   tier:1, desc:'每場勝利額外回 2 血',                           fx:{winHeal:2}},
-      {id:'obi',       name:'原版側標',     icon:'obi',       tier:1, desc:'純比星獲勝時傷害 +1',                           fx:{valueDmg:1}},
-      {id:'gauge',     name:'針壓計',       icon:'gauge',     tier:1, desc:'被相剋命中時受傷 -1（最低 1）',                  fx:{counterGuard:1}},
-      {id:'heavy180',  name:'180g 重量盤',  icon:'heavy180',  tier:1, desc:'最大 HP +4（取得立刻回 4）',                     fx:{maxHp:4}},
-      {id:'matrix',    name:'內圈刻字',     icon:'matrix',    tier:1, desc:'品味輾壓傷害 +2',                               fx:{ultDmg:2}},
-      {id:'numbered',  name:'絕版編號標',   icon:'numbered',  tier:1, desc:'打出王牌時 +1 氣勢',                            fx:{aceQi:1}},
-      {id:'headphone', name:'試聽站耳機',   icon:'headphone', tier:1, desc:'每場起手多抽 1 張',                             fx:{extraDraw:1}},
-      {id:'bizcard',   name:'老闆的名片',   icon:'bizcard',   tier:1, desc:'看穿套路：對手虛晃機率減半',                     fx:{feintDown:50}},
-      {id:'isolation', name:'絕緣避震墊',   icon:'isolation', tier:2, desc:'被品味輾壓的傷害 -2',                           fx:{ultGuard:2}},
-      {id:'firstpress',name:'首刻盤',       icon:'firstpress',tier:1, desc:'相生連段額外 +1 氣勢',                          fx:{chainQi:1}},
-      {id:'column',    name:'樂評人專欄',   icon:'column',    tier:2, desc:'局內經驗 +25%',                                 fx:{xpBoost:25}},
+      {id:'adapter45', name:'45 轉接環',    icon:'adapter45', tier:1, desc:'每場開局氣勢 +{v}',                             fx:{startQi:1},     fx5:{startQi:3}},
+      {id:'cleaner',   name:'洗碟水',       icon:'cleaner',   tier:1, desc:'每場勝利額外回 {v} 血',                         fx:{winHeal:1},     fx5:{winHeal:4}},
+      {id:'obi',       name:'原版側標',     icon:'obi',       tier:1, desc:'純比星獲勝時傷害 +{v}',                         fx:{valueDmg:1},    fx5:{valueDmg:3}},
+      {id:'gauge',     name:'針壓計',       icon:'gauge',     tier:1, desc:'被相剋命中時受傷 -{v}（最低 1）',                fx:{counterGuard:1},fx5:{counterGuard:3}},
+      {id:'heavy180',  name:'180g 重量盤',  icon:'heavy180',  tier:1, desc:'最大 HP +{v}（取得立刻回補）',                   fx:{maxHp:3},       fx5:{maxHp:8}},
+      {id:'matrix',    name:'內圈刻字',     icon:'matrix',    tier:1, desc:'品味輾壓傷害 +{v}',                             fx:{ultDmg:1},      fx5:{ultDmg:4}},
+      {id:'numbered',  name:'絕版編號標',   icon:'numbered',  tier:1, desc:'打出王牌時 +{v} 氣勢',                          fx:{aceQi:1},       fx5:{aceQi:3}},
+      {id:'headphone', name:'試聽站耳機',   icon:'headphone', tier:1, desc:'每場起手多抽 {v} 張',                           fx:{extraDraw:1},   fx5:{extraDraw:2}},
+      {id:'bizcard',   name:'老闆的名片',   icon:'bizcard',   tier:1, desc:'看穿套路：對手虛晃機率 -{v}%',                   fx:{feintDown:25},  fx5:{feintDown:60}},
+      {id:'isolation', name:'絕緣避震墊',   icon:'isolation', tier:2, desc:'被品味輾壓的傷害 -{v}',                         fx:{ultGuard:1},    fx5:{ultGuard:4}},
+      {id:'firstpress',name:'首刻盤',       icon:'firstpress',tier:1, desc:'相生連段額外 +{v} 氣勢',                        fx:{chainQi:1},     fx5:{chainQi:3}},
+      {id:'column',    name:'樂評人專欄',   icon:'column',    tier:2, desc:'局內經驗 +{v}%',                                fx:{xpBoost:10},    fx5:{xpBoost:35}},
     ]
   };
   const RELIC_FX_KEYS = ['counterQi','startQi','winHeal','valueDmg','counterGuard','aceQi','ultDmg','maxHp','extraDraw','chainQi','drawTwo','firstHitHalf','revive','aceDouble','feintDown','ultGuard','xpBoost'];
@@ -3608,15 +3609,17 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
 
   // ── 發燒配件管理（gameConfig/roguelike.relics）──
+  // 等級制：fx＝Lv.1 數值、fx5＝Lv.5 滿級數值（遊戲內線性內插）；Lv5 欄留空／相同＝各級同值。desc 可用 {v} 帶入當前等級數值。
   function relicFxKey(r){ return Object.keys(r.fx||{})[0] || RELIC_FX_KEYS[0]; }
   function relicFxAmt(r){ const k=Object.keys(r.fx||{})[0]; return k ? r.fx[k] : 1; }
+  function relicFx5Amt(r){ const k=relicFxKey(r); return (r.fx5 && r.fx5[k]!=null) ? r.fx5[k] : relicFxAmt(r); }
   function renderRelics(){
     const wrap=document.getElementById('relicList'); if(!wrap) return;
-    const head=`<div class="relic-head"><span>名稱 name</span><span>說明 desc</span><span>圖示 icon</span><span>級別</span><span>效果鍵 fx</span><span>數值</span><span></span></div>`;
+    const head=`<div class="relic-head"><span>名稱 name</span><span>說明 desc（{v}＝當前數值）</span><span>圖示 icon</span><span>級別</span><span>效果鍵 fx</span><span>Lv1 值</span><span>Lv5 值</span><span></span></div>`;
     wrap.innerHTML = head + (rogueCfg.relics||[]).map((r,i)=>relicRow(r,i)).join('');
   }
   function relicRow(r,i){
-    const fxKey=relicFxKey(r), fxAmt=relicFxAmt(r);
+    const fxKey=relicFxKey(r), fxAmt=relicFxAmt(r), fx5Amt=relicFx5Amt(r);
     const keys=RELIC_FX_KEYS.map(k=>`<option value="${k}" ${fxKey===k?'selected':''}>${k}</option>`).join('');
     const tiers=[1,2].map(t=>`<option value="${t}" ${(r.tier||1)===t?'selected':''}>${t}</option>`).join('');
     return `<div class="relic-row">
@@ -3626,21 +3629,23 @@ ${discogs ? '- Discogs：' + discogs : ''}
       <select class="r-f" data-i="${i}" data-k="tier">${tiers}</select>
       <select class="r-f" data-i="${i}" data-k="fxKey">${keys}</select>
       <input class="r-f" data-i="${i}" data-k="fxAmt" type="number" step="any" value="${fxAmt}">
+      <input class="r-f" data-i="${i}" data-k="fx5Amt" type="number" step="any" value="${fx5Amt}">
       <button class="del rdel" data-i="${i}">✕</button>
     </div>`;
   }
   document.getElementById('relicList')?.addEventListener('input', e=>{
     const el=e.target.closest('.r-f'); if(!el) return;
     const i=+el.dataset.i, k=el.dataset.k, r=rogueCfg.relics[i]; if(!r) return;
-    if(k==='fxKey'){ r.fx={ [el.value]: relicFxAmt(r) }; }
+    if(k==='fxKey'){ r.fx={ [el.value]: relicFxAmt(r) }; r.fx5={ [el.value]: relicFx5Amt(r) }; }
     else if(k==='fxAmt'){ r.fx={ [relicFxKey(r)]: (parseFloat(el.value)||0) }; }
+    else if(k==='fx5Amt'){ r.fx5={ [relicFxKey(r)]: (parseFloat(el.value)||0) }; }
     else if(k==='tier'){ r.tier=parseInt(el.value)||1; }
     else r[k]=el.value;
   });
   document.getElementById('relicList')?.addEventListener('change', e=>{
     const el=e.target.closest('select.r-f'); if(!el) return;
     const i=+el.dataset.i, k=el.dataset.k, r=rogueCfg.relics[i]; if(!r) return;
-    if(k==='fxKey') r.fx={ [el.value]: relicFxAmt(r) };
+    if(k==='fxKey'){ r.fx={ [el.value]: relicFxAmt(r) }; r.fx5={ [el.value]: relicFx5Amt(r) }; }
     else if(k==='tier') r.tier=parseInt(el.value)||1;
   });
   document.getElementById('relicList')?.addEventListener('click', e=>{
@@ -3649,7 +3654,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
   document.getElementById('relicAdd')?.addEventListener('click', ()=>{
     rogueCfg.relics=rogueCfg.relics||[];
-    rogueCfg.relics.push({id:'relic'+Date.now(),name:'新發燒配件',desc:'效果說明',icon:'🎁',tier:1,fx:{counterQi:1}});
+    rogueCfg.relics.push({id:'relic'+Date.now(),name:'新發燒配件',desc:'效果說明 +{v}',icon:'🎁',tier:1,fx:{counterQi:1},fx5:{counterQi:3}});
     renderRelics();
   });
   function collectRogue(){
