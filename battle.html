@@ -76,6 +76,11 @@
   .cd2-pip.on.accessibility { background:var(--accessibility); border-color:var(--accessibility); }
   .cd2-desc { font-size:12px; line-height:1.9; text-align:left; color:#333; letter-spacing:0.03em; padding:14px; border:1px solid var(--line); }
   .cd2-desc.load { text-align:center; color:var(--gray); }
+  .cd2 .streaming-btns { display:flex; gap:6px; margin-top:12px; }
+  .cd2 .streaming-btn { flex:1; min-width:0; display:flex; align-items:center; justify-content:center; padding:10px 3px; border:1px solid var(--black); text-decoration:none; font-size:8px; letter-spacing:0.04em; color:var(--black); background:#fff; }
+  .cd2 .streaming-btn:hover { background:var(--black); color:#fff; }
+  .cd2 .streaming-btn[disabled] { border-color:var(--line); color:var(--gray); opacity:.5; pointer-events:none; }
+  .cd2 .stream-attribution { margin-top:5px; color:var(--gray); font-size:7px; letter-spacing:.04em; }
   .hpbar { height:14px; background:var(--hp-bg); position:relative; overflow:hidden; }
   .hpbar > i { position:absolute; inset:0 auto 0 0; background:var(--hp); transition:width .5s cubic-bezier(.4,0,.2,1); }
   .hpbar > span { position:absolute; inset:0; display:flex; align-items:center; justify-content:flex-end; padding-right:6px; font-size:9px; font-weight:700; color:var(--gray); mix-blend-mode:difference; }
@@ -587,6 +592,8 @@ function syncBattleMusicToggle(){
   button.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂');
   const mini=document.getElementById('battleMiniPlayer');
   if(mini){ mini.classList.toggle('muted',!battleMusicOn); mini.classList.toggle('playing',battleMusicOn&&battlePlayerState.status==='playing'); mini.setAttribute('aria-pressed',String(battleMusicOn)); mini.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂'); }
+  const apple=document.querySelector('#recBody .streaming-btn[data-platform="apple"]');
+  if(apple && battlePlayerState.storeUrl) apple.href=battlePlayerState.storeUrl;
 }
 function setBattleMusic(enabled){
   battleMusicOn=!!enabled;
@@ -1525,7 +1532,7 @@ function cardDetailHtml(card){
     return `<div class="cd2-st${a===card._attr?' act':''}"><span class="lab">${ATTR_ZH[a]}</span><div class="cd2-pips">${pips}</div></div>`;
   }).join('');
   // 打折花車雜牌是虛構合輯 → 不給串流搜尋連結
-  const stream = card.junk?'':`<a class="btn" id="cd2Stream" style="display:block;margin-top:12px;text-decoration:none" href="${streamSearchUrl(card)}" target="_blank" rel="noopener">▶ 串流聽這張</a>`;
+  const stream = card.junk?'':streamingBtnsHtml(card);
   return `<div class="cd2">${cover}
     <div class="cd2-art">${card.artist||''}</div>
     <div class="cd2-alb">${card.album||''}</div>
@@ -1534,18 +1541,29 @@ function cardDetailHtml(card){
     <button class="battle-mini-player${battleMusicOn?'':' muted'}" id="battleMiniPlayer" type="button" aria-label="${battleMusicOn?'關閉':'開啟'}對戰音樂" aria-pressed="${battleMusicOn}"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="cd2-desc load" id="cd2Desc">載入簡介…</div>${stream}</div>`;
 }
-// 串流連結：先給 Spotify 搜尋連結保證可點，抓到專輯直連再換上（同 roguelike）
-function streamSearchUrl(c){ return 'https://open.spotify.com/search/'+encodeURIComponent((c.artist||'')+' '+(c.album||'')); }
-async function ensureStreamUrl(c){
-  if(c._streamUrl) return c._streamUrl;
-  try{
-    const r=await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
-    if(r.ok){ const d=await r.json(); if(d && d.spotifyUrl) return c._streamUrl=d.spotifyUrl; }
-  }catch(e){}
-  return c._streamUrl=streamSearchUrl(c);
+// 與首頁抽專輯卡相同：Apple／Spotify／YT Music 保證可點，Bandcamp 查到正式專輯頁才啟用。
+function streamingBtnsHtml(c){
+  const q=encodeURIComponent(`${c.artist||''} ${c.album||''}`.trim());
+  return `<div class="streaming-btns">
+    <a class="streaming-btn" href="https://music.apple.com/tw/search?term=${q}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
+    <a class="streaming-btn" href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+    <a class="streaming-btn" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>
+    <a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>
+  </div><div class="stream-attribution">Preview provided courtesy of iTunes</div>`;
 }
-function hookStreamLink(id, card){
-  ensureStreamUrl(card).then(u=>{ const a=document.getElementById(id); if(a&&u) a.href=u; });
+async function hydrateStreamingLinks(container, card){
+  if(!container || !card) return;
+  const query=`artist=${encodeURIComponent(card.artist||'')}&album=${encodeURIComponent(card.album||'')}`;
+  const [spotify,bandcamp]=await Promise.allSettled([
+    fetch(`${WORKER_URL}/spotify-search?${query}`).then(r=>r.ok?r.json():{}),
+    fetch(`${WORKER_URL}/bandcamp-search?${query}`).then(r=>r.ok?r.json():{})
+  ]);
+  const spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  const bandcampUrl=bandcamp.status==='fulfilled'&&bandcamp.value?.bandcampUrl;
+  const spotifyBtn=container.querySelector('[data-platform="spotify"]');
+  const bandcampBtn=container.querySelector('[data-platform="bandcamp"]');
+  if(spotifyBtn&&spotifyUrl) spotifyBtn.href=spotifyUrl;
+  if(bandcampBtn&&bandcampUrl){ bandcampBtn.href=bandcampUrl; bandcampBtn.target='_blank'; bandcampBtn.rel='noopener'; bandcampBtn.removeAttribute('disabled'); }
 }
 // 打折花車雜牌是虛構合輯 → 不打 /album-desc（免得 AI 瞎掰），給店長吐槽即可
 const JUNK_DESCS = [
@@ -1581,7 +1599,7 @@ function openCardInfo(card){
   // 不再依回合勝負自動播；玩家主動點任一方檯面專輯、看到介紹時才播放。
   _cardInfoCard=card;
   syncBattleMusicToggle();   // 彈窗剛生出來：套上目前播放/靜音狀態（唱盤轉動、音符）
-  if(!card.junk) hookStreamLink('cd2Stream', card);
+  if(!card.junk) hydrateStreamingLinks(document.querySelector('#recBody .streaming-btns'), card);
   playBattleAlbum(card);
   // 開窗當下還沒抓到封面 → 補抓，抓到即時換上（不然彈窗會停在斜紋佔位）
   if(!card.coverUrl) ensureCover(card).then(url=>{

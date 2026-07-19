@@ -313,6 +313,11 @@
   .drawcard .st .lab{width:24px;color:var(--gray);font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;margin:0;text-align:left;}
   .drawcard .intro{font-size:12px;line-height:1.95;text-align:left;border:1px solid var(--line);padding:14px;margin-bottom:16px;min-height:64px;color:#333;}
   .drawcard .intro.wait{color:var(--gray);}
+  .drawcard .streaming-btns{display:flex;gap:6px;margin-bottom:8px;}
+  .drawcard .streaming-btn{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;padding:10px 3px;border:1px solid var(--black);text-decoration:none;font-size:8px;letter-spacing:.04em;color:var(--black);background:#fff;}
+  .drawcard .streaming-btn:hover{background:var(--black);color:#fff;}
+  .drawcard .streaming-btn[disabled]{border-color:var(--line);color:var(--gray);opacity:.5;pointer-events:none;}
+  .drawcard .stream-attribution{margin:-3px 0 8px;color:var(--gray);font-size:7px;letter-spacing:.04em;}
 
   /* ===== 發燒配件（像素風圖示、戰鬥列、三選一） ===== */
   .pixicon{display:inline-block;vertical-align:middle;image-rendering:pixelated;}
@@ -1406,6 +1411,8 @@ function syncRogueMusic(){
   if(top){ top.textContent=rogueMusicOn?'🔊':'🔇'; top.setAttribute('aria-pressed',String(rogueMusicOn)); top.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
   const mini=document.getElementById('rogueMiniPlayer');
   if(mini){ mini.classList.toggle('muted',!rogueMusicOn); mini.classList.toggle('playing',rogueMusicOn&&roguePlayerState.status==='playing'); mini.setAttribute('aria-pressed',String(rogueMusicOn)); mini.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
+  const apple=document.querySelector('.drawmask .streaming-btn[data-platform="apple"]');
+  if(apple&&roguePlayerState.storeUrl) apple.href=roguePlayerState.storeUrl;
 }
 function setRogueMusic(enabled){
   rogueMusicOn=!!enabled;
@@ -2124,19 +2131,29 @@ function boardCardHTML(card, attr){
   const ring=card.ace?` ace-border ace-${card.ace}`:(' '+rarityCls(card));
   return `<div class="pcard${ring.trim()?ring:''}">${cover}${aceTag}${attrTag}</div>`;
 }
-// ----- 串流連結：worker /spotify-search 回 spotifyUrl（KV 快取）；拿不到就退 Spotify 站內搜尋 -----
-function streamSearchUrl(c){ return 'https://open.spotify.com/search/'+encodeURIComponent(c.artist+' '+c.album); }
-async function ensureStreamUrl(c){
-  if(c._streamUrl) return c._streamUrl;
-  try{
-    const r=await fetch(DYN_WORKER+'/spotify-search?artist='+encodeURIComponent(c.artist)+'&album='+encodeURIComponent(c.album));
-    if(r.ok){ const d=await r.json(); if(d && d.spotifyUrl) return c._streamUrl=d.spotifyUrl; }
-  }catch(e){}
-  return c._streamUrl=streamSearchUrl(c);
+// ----- 與首頁抽專輯卡相同的四平台連結；Bandcamp 查到正式專輯頁才啟用 -----
+function streamingBtnsHtml(c){
+  const q=encodeURIComponent(`${c.artist||''} ${c.album||''}`.trim());
+  return `<div class="streaming-btns">
+    <a class="streaming-btn" href="https://music.apple.com/tw/search?term=${q}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
+    <a class="streaming-btn" href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+    <a class="streaming-btn" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>
+    <a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>
+  </div><div class="stream-attribution">Preview provided courtesy of iTunes</div>`;
 }
-// 先給搜尋連結讓按鈕立即可點，抓到專輯直連再換上（避開 popup 攔截）
-function hookStreamLink(id, card){
-  ensureStreamUrl(card).then(u=>{ const a=document.getElementById(id); if(a&&u) a.href=u; });
+async function hydrateStreamingLinks(container, card){
+  if(!container||!card) return;
+  const query='artist='+encodeURIComponent(card.artist||'')+'&album='+encodeURIComponent(card.album||'');
+  const [spotify,bandcamp]=await Promise.allSettled([
+    fetch(DYN_WORKER+'/spotify-search?'+query).then(r=>r.ok?r.json():{}),
+    fetch(DYN_WORKER+'/bandcamp-search?'+query).then(r=>r.ok?r.json():{})
+  ]);
+  const spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  const bandcampUrl=bandcamp.status==='fulfilled'&&bandcamp.value?.bandcampUrl;
+  const spotifyBtn=container.querySelector('[data-platform="spotify"]');
+  const bandcampBtn=container.querySelector('[data-platform="bandcamp"]');
+  if(spotifyBtn&&spotifyUrl) spotifyBtn.href=spotifyUrl;
+  if(bandcampBtn&&bandcampUrl){bandcampBtn.href=bandcampUrl;bandcampBtn.target='_blank';bandcampBtn.rel='noopener';bandcampBtn.removeAttribute('disabled');}
 }
 
 // ----- 出牌記錄（對戰中回顧＋局末結算回顧；點小圖看介紹/聽歌）-----
@@ -2987,7 +3004,7 @@ function openDrawReveal(){
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
-    <a class="btn" id="drawStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmDraw()">帶這張盤進下一場 →</button>
     <div class="muted" style="font-size:10px;margin-top:8px">趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進唱片櫃</div>
   </div>`;
@@ -2996,7 +3013,7 @@ function openDrawReveal(){
     const el = document.getElementById('drawCov');
     if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
   });
-  hookStreamLink('drawStream', c);
+  hydrateStreamingLinks(mask.querySelector('.streaming-btns'), c);
   loadAlbumDesc(c, document.getElementById('drawIntro'));   // 與唱片櫃/對戰同一套事實型簡介（/album-desc，含人工校正）
 }
 function _takeDrawnCard(c){
@@ -3037,7 +3054,7 @@ function openLootReveal(card){
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
     <div class="intro wait" id="lootIntro">介紹載入中…</div>
-    <a class="btn" id="lootStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(c)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmLoot()">加入本趟牌組 →</button>
   </div>`;
   document.body.appendChild(mask);
@@ -3045,7 +3062,7 @@ function openLootReveal(card){
     const el = document.getElementById('lootCov');
     if(url && el) el.outerHTML = `<img class="cov" id="lootCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
   });
-  hookStreamLink('lootStream', c);
+  hydrateStreamingLinks(mask.querySelector('.streaming-btns'), c);
   loadAlbumDesc(c, document.getElementById('lootIntro'));
 }
 function confirmLoot(){
@@ -3180,7 +3197,7 @@ function openCardInfo(card, opts){
     <div class="stats">${starsHTML(card)}</div>
     <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="ciIntro">介紹載入中…</div>
-    <a class="btn" id="ciStream" style="display:block;margin-bottom:8px;text-decoration:none" href="${streamSearchUrl(card)}" target="_blank" rel="noopener">▶ 串流聽這張</a>
+    ${streamingBtnsHtml(card)}
     ${keepBtn}
     <button class="btn primary" style="width:100%" onclick="closeCardInfo()">關閉</button>
   </div>`;
@@ -3191,7 +3208,7 @@ function openCardInfo(card, opts){
   syncRogueMusic();   // 彈窗剛生出來：套上目前播放/靜音狀態（唱盤轉動、音符）
   playRogueAlbum(card);
   if(!card.coverUrl) ensureCover(card).then(url=>{ const el=mask.querySelector('.cov'); if(url && el && el.tagName!=='IMG'){ el.outerHTML=`<img class="cov" src="${String(url).replace(/'/g,'%27')}" alt="">`; } });
-  hookStreamLink('ciStream', card);
+  hydrateStreamingLinks(mask.querySelector('.streaming-btns'), card);
   loadAlbumDesc(card, document.getElementById('ciIntro'));
 }
 
