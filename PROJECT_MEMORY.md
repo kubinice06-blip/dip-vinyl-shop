@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜Apple 音源第二輪安全補查
+- Repo：`dip-vinyl-shop`
+- 改動：確認 6,126 張卡實為 6,122 個唯一專輯加 4 個標點／大小寫重複別名，修正品質 gate 的完整覆蓋算法；新增第二輪 Apple 專輯層級搜尋，依序檢查 TW／US／JP／GB storefront，並以 collectionId 回查實際試聽後才接受高信心配對，模糊結果保留待人工確認。
+- 主要檔案：`scripts/build-apple-audio-map.mjs`、`scripts/verify-apple-audio-map.mjs`、`scripts/refine-apple-audio-map.mjs`
+- 驗證：三支腳本均通過 `node --check`、`git diff --check`；完整覆蓋檢查為 6,126 張卡／6,122 唯一專輯／4 重複別名／0 缺漏並通過；以前三筆無試聽項目試跑，正確補回 The Allman Brothers Band《At Fillmore East》，另兩筆維持無試聽。
+
 ### 2026-07-19｜配件像素圖示隨等級進化（等級鑲框）
 - Repo：`dip-vinyl-shop`
 - 改動：發燒配件的 12×12 像素圖示會隨 Lv.1~5 越來越高級——本體不重畫，`relicIconHTML` 把 viewBox 外擴一圈疊「等級鑲框」：Lv.1 素面 → Lv.2 四角銅釘 → Lv.3 銀色 L 形角框 → Lv.4 金色角框 → Lv.5 金滿框＋兩點星光交錯閃爍（`.lvspark` CSS 動畫）。全站沿用同一個函式，開戰前選單／整備面板／圖鑑／保養視窗／戰鬥列自動生效；藏家三選一的「升級」卡片圖示先預覽下一級外框（`relicIconHTML(r,36,lv+1)`）。emoji 自訂圖示（後台加的）維持原樣不加框。

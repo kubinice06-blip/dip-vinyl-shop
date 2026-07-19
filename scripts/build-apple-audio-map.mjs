@@ -14,6 +14,7 @@ const limit = Math.max(1, Number(args.get('limit') || 1000));
 const delayMs = Math.max(3000, Number(args.get('delay-ms') || 4200));
 const retry = args.has('retry');
 const retryStatus = String(args.get('retry-status') || '');
+const deep = args.has('deep');
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const normalized = value => String(value || '').normalize('NFKD').toLowerCase()
@@ -21,8 +22,8 @@ const normalized = value => String(value || '').normalize('NFKD').toLowerCase()
   .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]+/g, '');
 const hasCjk = value => /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/.test(value || '');
 const albumCore = value => normalized(String(value || '')
-  .replace(/[\(\[\{][^\)\]\}]*(?:remaster(?:ed)?|deluxe|expanded|anniversary|reissue|edition)[^\)\]\}]*[\)\]\}]/gi, ' ')
-  .replace(/\b(?:remaster(?:ed)?(?:\s+version)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?|anniversary(?:\s+edition)?|mono|stereo|reissue|edition)\b/gi, ' '));
+  .replace(/[\(\[\{][^\)\]\}]*(?:remaster(?:ed)?|deluxe|expanded|anniversary|reissue|edition|live)[^\)\]\}]*[\)\]\}]/gi, ' ')
+  .replace(/\b(?:remaster(?:ed)?(?:\s+version)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?|anniversary(?:\s+edition)?|mono|stereo|reissue|edition|live)\b/gi, ' '));
 const cardKey = ({ artist, album }) => `${normalized(artist)}\u0000${normalized(album)}`;
 const stableRank = card => createHash('sha256').update(cardKey(card)).digest('hex');
 
@@ -53,7 +54,8 @@ function titleScore(requestedArtist, requestedAlbum, candidateArtist, candidateA
 function rejectPenalty(requestedAlbum, item) {
   const text = `${item.collectionName || ''} ${item.artistName || ''}`.toLowerCase();
   if (/\b(?:karaoke|tribute|lullaby|cover version)\b/.test(text)) return 50;
-  if (!/\blive\b/i.test(requestedAlbum || '') && /\blive\b/.test(text)) return 25;
+  if (!/\blive\b/i.test(requestedAlbum || '') && /\blive\b/.test(text)
+    && albumCore(requestedAlbum) !== albumCore(item.collectionName)) return 25;
   return 0;
 }
 
@@ -86,6 +88,24 @@ function candidatesFrom(json, card) {
   return [...byCollection.values()].sort((a, b) => b.score - a.score || b.previewTrackCount - a.previewTrackCount);
 }
 
+function albumCandidatesFrom(json, card) {
+  const candidates = [];
+  for (const item of json?.results || []) {
+    if (!item.collectionId || !item.collectionName) continue;
+    const artist = artistScore(card.artist, item.artistName);
+    const title = titleScore(card.artist, card.album, item.artistName, item.collectionName);
+    const score = artist + title + 5 - rejectPenalty(card.album, item);
+    if (score < 60) continue;
+    candidates.push({
+      collectionId:String(item.collectionId),
+      artistName:item.artistName || '',
+      collectionName:item.collectionName || '',
+      score
+    });
+  }
+  return candidates.sort((a, b) => b.score - a.score);
+}
+
 async function appleSearch(card, storefront) {
   const query = new URLSearchParams({
     term:`${card.artist} ${card.album}`,
@@ -98,6 +118,28 @@ async function appleSearch(card, storefront) {
   const response = await fetch(`https://itunes.apple.com/search?${query}`, { signal });
   if (!response.ok) throw new Error(`search-http-${response.status}`);
   return response.json();
+}
+
+async function appleAlbumSearch(card, storefront) {
+  const query = new URLSearchParams({
+    term:`${card.artist} ${card.album}`,
+    country:storefront,
+    media:'music',
+    entity:'album',
+    limit:'50'
+  });
+  const response = await fetch(`https://itunes.apple.com/search?${query}`, { signal:AbortSignal.timeout(15000) });
+  if (!response.ok) throw new Error(`album-search-http-${response.status}`);
+  return response.json();
+}
+
+async function appleLookup(collectionId, storefront) {
+  const query = new URLSearchParams({ id:String(collectionId), country:storefront, entity:'song' });
+  const response = await fetch(`https://itunes.apple.com/lookup?${query}`, { signal:AbortSignal.timeout(15000) });
+  if (!response.ok) throw new Error(`lookup-http-${response.status}`);
+  const json = await response.json();
+  const previews = (json.results || []).filter(item => item.wrapperType === 'track' && item.previewUrl);
+  return { previewTrackCount:previews.length, previewUrl:previews[0]?.previewUrl || '' };
 }
 
 async function resolveCard(card) {
@@ -117,6 +159,31 @@ async function resolveCard(card) {
     };
     if (best && (!bestOverall || best.score > bestOverall.score)) bestOverall = { storefront, ...best };
     if (best) notes.push(`${storefront}:best-${best.score}`);
+  }
+  if (deep) {
+    for (const storefront of ['TW', 'US', 'JP', 'GB']) {
+      let json;
+      try { json = await appleAlbumSearch(card, storefront); }
+      catch (error) { notes.push(`${storefront}:album-${error.message}`); continue; }
+      successfulSearches++;
+      const candidates = albumCandidatesFrom(json, card).slice(0, 3);
+      for (const candidate of candidates) {
+        let preview;
+        try { preview = await appleLookup(candidate.collectionId, storefront); }
+        catch (error) { notes.push(`${storefront}:lookup-${error.message}`); continue; }
+        if (!preview.previewTrackCount) {
+          notes.push(`${storefront}:album-${candidate.score}-no-preview`);
+          continue;
+        }
+        const resolved = { storefront, source:'album-search', ...candidate, ...preview };
+        if (resolved.score >= 85) return {
+          status:'matched', ...resolved,
+          matchedAt:new Date().toISOString()
+        };
+        if (!bestOverall || resolved.score > bestOverall.score) bestOverall = resolved;
+      }
+      if (candidates[0]) notes.push(`${storefront}:album-best-${candidates[0].score}`);
+    }
   }
   if (!successfulSearches) return { status:'error', notes, checkedAt:new Date().toISOString() };
   if (!bestOverall || bestOverall.score < 60) return { status:'unavailable', notes, checkedAt:new Date().toISOString() };
@@ -141,10 +208,11 @@ const cards = [
   ...seed.map(([artist, album]) => ({ artist, album, pool:'seed' })),
   ...Object.entries(apexByTier).flatMap(([tier, list]) => list.map(([artist, album]) => ({ artist, album, pool:`apex:${tier}` })))
 ].sort((a, b) => stableRank(a).localeCompare(stableRank(b)) || cardKey(a).localeCompare(cardKey(b)));
+const uniqueCards = [...new Map(cards.map(card => [cardKey(card), card])).values()];
 
 const map = await readJson(mapPath, { version:1, generatedAt:'', entries:{} });
 map.entries ||= {};
-const pending = cards.filter(card => {
+const pending = uniqueCards.filter(card => {
   const prior = map.entries[cardKey(card)];
   return !prior || (retry && prior.status !== 'matched') || (retryStatus && prior.status === retryStatus);
 }).slice(0, limit);
@@ -171,6 +239,8 @@ const summary = {
   version:1,
   generatedAt:new Date().toISOString(),
   catalogTotal:cards.length,
+  uniqueCatalogTotal:uniqueCards.length,
+  duplicateAliases:cards.length - uniqueCards.length,
   processedThisRun:pending.length,
   entries:entries.length,
   matched:entries.filter(entry => entry.status === 'matched').length,

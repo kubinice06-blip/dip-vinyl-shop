@@ -12,6 +12,18 @@ const args = new Map(process.argv.slice(2).map(value => {
 const expected = Math.max(1, Number(args.get('expect') || 1000));
 const sampleSize = Math.max(0, Number(args.get('sample') || 12));
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const normalized = value => String(value || '').normalize('NFKD').toLowerCase()
+  .replace(/[\u0300-\u036f]/g, '')
+  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]+/g, '');
+const cardKey = ([artist, album]) => `${normalized(artist)}\u0000${normalized(album)}`;
+
+const seed = JSON.parse(await fs.readFile(path.join(root, 'seed_cards.json'), 'utf8'));
+const apexByTier = JSON.parse(await fs.readFile(path.join(root, 'apex_pool.json'), 'utf8'));
+const catalog = [
+  ...seed,
+  ...Object.values(apexByTier).flat()
+];
+const uniqueCatalogKeys = new Set(catalog.map(cardKey));
 
 const map = JSON.parse(await fs.readFile(mapPath, 'utf8'));
 const entries = Object.values(map.entries || {});
@@ -20,6 +32,7 @@ const review = entries.filter(entry => entry.status === 'review');
 const unavailable = entries.filter(entry => entry.status === 'unavailable');
 const errors = entries.filter(entry => entry.status === 'error');
 const structuralProblems = [];
+const missingCatalog = [...uniqueCatalogKeys].filter(key => !map.entries?.[key]);
 
 for (const entry of matched) {
   if (!/^\d+$/.test(String(entry.collectionId || ''))) structuralProblems.push(`${entry.artist} — ${entry.album}: collectionId`);
@@ -57,11 +70,14 @@ if (sampleSize && matched.length) {
 const failedSamples = samples.filter(sample => !sample.ok);
 const matchedRate = entries.length ? matched.length / entries.length : 0;
 const errorRate = entries.length ? errors.length / entries.length : 1;
-const passed = entries.length >= expected && matchedRate >= 0.7 && errorRate <= 0.01 && !structuralProblems.length && !failedSamples.length;
+const passed = catalog.length >= expected && !missingCatalog.length && matchedRate >= 0.7 && errorRate <= 0.01 && !structuralProblems.length && !failedSamples.length;
 const quality = {
   version:1,
   checkedAt:new Date().toISOString(),
   expected,
+  catalogTotal:catalog.length,
+  uniqueCatalogTotal:uniqueCatalogKeys.size,
+  duplicateAliases:catalog.length - uniqueCatalogKeys.size,
   entries:entries.length,
   matched:matched.length,
   review:review.length,
@@ -70,6 +86,7 @@ const quality = {
   matchedRate:Number(matchedRate.toFixed(4)),
   errorRate:Number(errorRate.toFixed(4)),
   structuralProblems:structuralProblems.slice(0, 100),
+  missingCatalog:missingCatalog.slice(0, 100),
   samples,
   passed
 };
