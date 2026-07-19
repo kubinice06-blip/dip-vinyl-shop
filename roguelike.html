@@ -2130,9 +2130,10 @@ function drawCard(s){ if(s.deck.length) s.hand.push(s.deck.pop()); }
 function refillDeck(side){
   const s=G[side];
   if(side==='p'){
-    const base=(RUN&&RUN.deck&&RUN.deck.length)?RUN.deck:allPool().filter(c=>!c.ace);
-    for(let i=0;i<3;i++) s.deck.push(copyCard(pick(base)));
-    pushLog('🎴 你的牌抽乾了——從本趟牌組再抽 3 張續戰','good');
+    // 玩家也從整個卡池隨機補（非王牌）；這些牌只在本場用、不寫回 RUN.deck、打完即棄
+    const bag=allPool().filter(c=>!c.ace);
+    for(let i=0;i<3;i++) s.deck.push(copyCard(pick(bag)));
+    pushLog('🎴 你的牌抽乾了——從卡池隨機補 3 張續戰（僅本場）','good');
   } else {
     const bag=enemyPoolBag(RUN?RUN.depth:1);
     for(let i=0;i<3;i++) s.deck.push(copyCard(pick(bag)));

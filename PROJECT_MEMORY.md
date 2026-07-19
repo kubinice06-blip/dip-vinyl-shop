@@ -111,7 +111,7 @@
   2. **標題正名**：卡片資訊彈窗標題「卡片資訊」→「唱片資訊」。
   3. **整備即可維修/升級**：`openLoadout` 每列加「🔧 保養/升級」鈕（`loCare`→`openRelicCare`，疊在整備面板上），面板標頭補現金顯示；`refreshCareContext` 增補 `loadoutMask` 開著時重繪。**這推翻先前「保養只能趟間」的經濟決策**——店主要求每場結束整備時就能花現金維修＋升級（出戰欄上限仍維持 `wearSlots()`＝3，只是換裝/維修更自由）。
   4. **對手用完整卡池、照深度撈**：新增 `enemyPoolBag(d)`——從 `allPool()`（5600+ 張）撈，品質下限 `minSum=min(13,3+floor(d*0.7))` 隨深度爬升（d1→門檻3幾乎全池、d12→只剩最強約 400 張）；`enemyForDepth` 與補牌共用，移除舊的 `ranked/strongBag/wildBag/bandN` 固定強牌帶。
-  5. **牌出完不結束、補三張續戰**：新增 `refillDeck(side)`（玩家補本趟 `RUN.deck`、對手補 `enemyPoolBag`，各 3 張）；`resolveTurn` 抽牌前偵測牌庫空即補，刪掉「任一方無牌→速判」；`startTurn` 的 `aiPlan()` 落空改為補牌重規劃；免死續戰路徑同步補牌。打到一方 HP 歸零才分勝負。
+  5. **牌出完不結束、補三張續戰**：新增 `refillDeck(side)`——**雙方都從卡池隨機補**（玩家 `allPool()` 非王牌、對手 `enemyPoolBag(depth)`），各 3 張，補的牌是 `copyCard` 進 `G.p/e.deck`、**只在本場用、不寫回 `RUN.deck`、打完即棄**；`resolveTurn` 抽牌前偵測牌庫空即補，刪掉「任一方無牌→速判」；`startTurn` 的 `aiPlan()` 落空改為補牌重規劃；免死續戰路徑同步補牌。打到一方 HP 歸零才分勝負。
   6. **手牌長按看簡介＋試聽**：新增 `attachHandPress(el,card)`（450ms 長按→`openCardInfo`），`renderHand` 逐格掛上；`selectCard` 加 `_handHeld` 守門避免長按誤選。
 - 主要檔案：`roguelike.html`
 - 驗證：本機 http-server（localhost:8788）載入 console 零錯誤；JS 實測——`allPool()`=5619、`enemyPoolBag(1)`=5571／`enemyPoolBag(12)`=401（深度分級生效）；用 `initRun('guard')`→塞 5 種子→`startRun()` 實開第 1 場，雙方手牌各 5、手牌 tile 5 格、敵牌全來自卡池且非王牌；深度 9 `refillDeck` 雙方各補 3 張、uid 齊、敵補平均總星 10.3；`openCardInfo` 標題顯示「唱片資訊」且含唱機；`openLoadout` 顯示「🔧 保養/升級」＋現金、`loCare`→保養視窗含維修＋升級、`doRepair` 實測耗損 40→0；`openDrawReveal` 含唱機、`confirmDraw` 正常關閉。開工前交接：`git fetch` 遠端無新提交、工作區僅 `data/` 未追蹤，無衝突。
