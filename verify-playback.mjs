@@ -109,6 +109,14 @@ let youtubePlayer = null;
 const fetchCalls = [];
 const previewFetchCalls = [];
 const scriptRequests = [];
+const runtimeAudioMap = {
+  version:1,
+  entries:{
+    'mappedartist\u0000mappedalbum':['TW','9001','https://audio/mapped1.m4a'],
+    'warmartist\u0000warmalbum':['TW','9002','https://audio/warm1.m4a'],
+    'staleartist\u0000stalealbum':['TW','9003','https://audio/stale-map.m4a']
+  }
+};
 
 class MockYoutubePlayer {
   constructor(_host, options) {
@@ -205,6 +213,9 @@ function sourceFor(url) {
       },
       term.includes("Ol' Dirty Bastard Return to the 36 Chambers") && {
         id:'odb1', artistName:"Ol' Dirty Bastard", collectionName:'Return to the 36 Chambers: The Dirty Version (25th Anniversary Remaster)', trackName:'Shimmy Shimmy Ya'
+      },
+      term.includes('Stale Artist Stale Album') && {
+        id:'stale-search', artistName:'Stale Artist', collectionName:'Stale Album', trackName:'Fresh replacement'
       }
     ].find(Boolean);
     if (reportedAlbums) return { resultCount:1, results:[{
@@ -251,8 +262,12 @@ const context = {
   fetch: async url => {
     const requestUrl = String(url);
     fetchCalls.push(requestUrl);
+    if (requestUrl === 'data/apple-audio-runtime-v1.json') {
+      return { ok:true, json:async () => runtimeAudioMap };
+    }
     if (requestUrl.startsWith('https://audio/')) {
       previewFetchCalls.push(requestUrl);
+      if (requestUrl === 'https://audio/stale-map.m4a') return { ok:false, arrayBuffer:async () => new ArrayBuffer(0) };
       return { ok:true, arrayBuffer:async () => new ArrayBuffer(16) };
     }
     if (requestUrl.startsWith('https://audio-ssl.itunes.apple.com/')) {
@@ -300,9 +315,32 @@ const player = context.window.DipPlayer;
 const mount = new MockElement('div');
 assert.ok(player.mount(mount, { hidden:true }), 'player mounts');
 await wait(10);
+assert.ok(playerSource.includes('const previewReady = primePreviewFromGesture();'), 'global first-gesture handler primes Apple Web Audio');
 
 const states = [];
 player.onStateChange(state => states.push({ ...state, at:Date.now() }));
+
+// 預配對成功時不可再等 Apple 名稱搜尋；開啟與預熱共用同一份音源下載／解碼工作。
+player.unlock({ youtube:false });
+const mappedSearchesBefore = scriptRequests.length;
+assert.equal(await player.playAlbum({ artist:'Mapped Artist', album:'Mapped Album', prefer:'itunes-only' }), true);
+assert.equal(previewFetchCalls.at(-1), 'https://audio/mapped1.m4a');
+assert.equal(scriptRequests.length, mappedSearchesBefore, 'mapped albums bypass Apple JSONP name search');
+assert.equal(JSON.stringify(states.at(-1).tracks), '[]', 'a compact mapping does not expose a fake one-track playlist');
+player.stop();
+player.unlock({ youtube:false });
+const warmFetchesBefore = previewFetchCalls.filter(url => url === 'https://audio/warm1.m4a').length;
+const warm = player.warmAlbum({ artist:'Warm Artist', album:'Warm Album' });
+const warmPlayback = player.playAlbum({ artist:'Warm Artist', album:'Warm Album', prefer:'itunes-only' });
+assert.ok(await warm, 'warmAlbum decodes the mapped preview');
+assert.equal(await warmPlayback, true);
+assert.equal(previewFetchCalls.filter(url => url === 'https://audio/warm1.m4a').length - warmFetchesBefore, 1, 'warm and playback share one preview fetch');
+player.stop();
+player.unlock({ youtube:false });
+const staleSearchesBefore = scriptRequests.length;
+assert.equal(await player.playAlbum({ artist:'Stale Artist', album:'Stale Album', prefer:'itunes-only' }), true);
+assert.equal(states.at(-1).trackName, 'Fresh replacement', 'an expired mapped URL repairs itself through Apple search');
+assert.ok(scriptRequests.length > staleSearchesBefore, 'expired mapped URL falls back to Apple name search');
 
 // 點擊先解鎖 AudioContext；非同步查詢與解碼完成後，真實音檔必須只經過
 // AudioBufferSourceNode → GainNode，不能再交給會在 iOS 旁路成 100% 的 <audio>。

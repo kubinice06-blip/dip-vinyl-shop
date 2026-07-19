@@ -2,12 +2,14 @@
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
+  const APPLE_AUDIO_MAP_URL = 'data/apple-audio-runtime-v1.json';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const MOBILE_DEVICE = IOS_DEVICE || /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || '');
   const linkCache = new Map();
+  const previewBufferCache = new Map();
   const listeners = new Set();
   let root = null, spotifyHost = null, youtubeHost = null, youtubeFrameHost = null;
   let hiddenMode = false, requestId = 0;
@@ -15,9 +17,10 @@
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let currentPreviewData = null, lastFailCode = '';
+  let appleAudioMap = null, appleAudioMapPromise = null;
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
   // iOS 忽略 audio.volume，iTunes 路徑須經 Web Audio GainNode 才能真正控音量。
-  const BASE_GAIN = 0.5, YT_BASE_VOLUME = 50, FADE_MS = 1500;
+  const BASE_GAIN = 0.5, YT_BASE_VOLUME = 50, FADE_MS = 1500, PREVIEW_BUFFER_CACHE_LIMIT = 3;
   let audioCtx = null, previewGain = null, previewVolumeTimer = null, previewFadeTimer = null, youtubeFadeTimer = null;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
@@ -66,6 +69,8 @@
     root.classList.toggle('dip-player-hidden', hiddenMode);
     if (root.parentNode !== container) container.appendChild(root);
     installAudioUnlock();
+    // 在玩家進遊戲後就先取得精簡音源索引；真正點專輯時不必再用名稱搜尋 Apple。
+    void loadAppleAudioMap();
     void ensureController(SPOTIFY_PLACEHOLDER);
     void ensureYoutubePlayer();
     return root;
@@ -296,7 +301,11 @@
     if (document.documentElement.dataset.dipAudioUnlock === '1') return;
     document.documentElement.dataset.dipAudioUnlock = '1';
     const prime = () => {
-      if (primeYoutubeFromGesture()) {
+      // iPhone 的 Web Audio 也必須在真實手勢內建立。先解鎖靜音 Apple 路徑，
+      // 長按 450ms 後才開介紹時仍能安全起播。
+      const previewReady = primePreviewFromGesture();
+      const youtubeReadyNow = primeYoutubeFromGesture();
+      if (previewReady || youtubeReadyNow) {
         ['pointerdown', 'touchstart', 'click'].forEach(type => document.removeEventListener(type, prime, true));
       }
     };
@@ -326,6 +335,40 @@
     return String(value || '').normalize('NFKD').toLowerCase()
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
+  }
+
+  function appleAudioKey(artist, album) {
+    return `${normalizePreviewText(artist)}\u0000${normalizePreviewText(album)}`;
+  }
+
+  function loadAppleAudioMap() {
+    if (appleAudioMap) return Promise.resolve(appleAudioMap);
+    if (!appleAudioMapPromise) {
+      appleAudioMapPromise = fetch(APPLE_AUDIO_MAP_URL, { cache:'force-cache' })
+        .then(response => response?.ok ? response.json() : null)
+        .then(data => {
+          appleAudioMap = data?.version === 1 && data?.entries && typeof data.entries === 'object' ? data : null;
+          return appleAudioMap;
+        })
+        .catch(() => null);
+    }
+    return appleAudioMapPromise;
+  }
+
+  async function mappedItunesPreview(artist, album) {
+    // 索引尚在背景載入時只等短時間；離線或首次快取失敗仍可走既有搜尋備援。
+    const map = await withTimeout(loadAppleAudioMap(), 1200);
+    const hit = map?.entries?.[appleAudioKey(artist, album)];
+    if (!Array.isArray(hit) || hit.length < 3) return {};
+    const [storefront, collectionId, previewUrl] = hit;
+    if (!/^[A-Z]{2}$/.test(String(storefront || '')) || !/^\d+$/.test(String(collectionId || '')) || !/^https:\/\//.test(String(previewUrl || ''))) return {};
+    return {
+      source:'itunes-map',
+      tracks:[{
+        id:`map:${collectionId}`, trackName:'', trackNumber:1, duration:30000,
+        previewUrl:String(previewUrl), storeUrl:'', collectionId:String(collectionId), storefront:String(storefront)
+      }]
+    };
   }
 
   function previewArtistMatches(candidate, artist) {
@@ -427,7 +470,11 @@
     } catch (_) { lastFailCode = 'S9:fetch'; return {}; }
   }
 
-  async function fetchItunesPreview(artist, album) {
+  async function fetchItunesPreview(artist, album, { skipMap = false } = {}) {
+    if (!skipMap) {
+      const mapped = await mappedItunesPreview(artist, album);
+      if (mapped?.tracks?.length) return mapped;
+    }
     // 手機 IP 常被 Apple 擋，因此手機先走文字閘道；桌面保留速度較快的官方
     // JSONP。兩條路取得的都是 Apple 原始 previewUrl，播放與淡入淡出完全相同。
     const fallbacks = MOBILE_DEVICE ? [fetchItunesGateway, fetchItunesDirect] : [fetchItunesDirect, fetchItunesGateway];
@@ -506,6 +553,16 @@
     return Promise.all([spotifySource, youtubeSource, itunesSource]).then(([spotifyData, youtubeData, itunesData]) => ({
       spotifyUrl: spotifyData.url || '', youtubeUrl: youtubeData.url || '', spotifyData, youtubeData, itunesData
     }));
+  }
+
+  async function warmAlbum({ artist = '', album = '' } = {}) {
+    artist = String(artist).trim();
+    album = String(album).trim();
+    if (!artist || !album || !root) return null;
+    const entry = linkEntry(artist, album);
+    const data = await loadCachedSource(entry, 'itunes', '/itunes-album-preview', artist, album);
+    const track = Array.isArray(data?.tracks) ? data.tracks.find(item => item?.previewUrl) : null;
+    return track ? loadPreviewBuffer(track.previewUrl) : null;
   }
 
   function waitForSpotifyPlayback(controller, token) {
@@ -621,15 +678,37 @@
   }
 
   async function loadPreviewBuffer(url) {
+    const cached = previewBufferCache.get(url);
+    if (cached) {
+      // LRU：最近使用的解碼結果留在記憶體，關窗或二次開啟都不重抓音檔。
+      previewBufferCache.delete(url);
+      previewBufferCache.set(url, cached);
+      return cached;
+    }
+    const load = (async () => {
+      try {
+        ensurePreviewGraph();
+        if (!audioCtx || !previewGain) return null;
+        if (audioCtx.state !== 'running') await audioCtx.resume?.();
+        const response = await withTimeout(fetch(url, { mode:'cors', cache:'force-cache' }), 10000);
+        if (!response?.ok || typeof response.arrayBuffer !== 'function') return null;
+        const bytes = await withTimeout(response.arrayBuffer(), 10000);
+        return await withTimeout(decodePreviewBuffer(bytes), 10000);
+      } catch (_) { return null; }
+    })();
+    previewBufferCache.set(url, load);
     try {
-      ensurePreviewGraph();
-      if (!audioCtx || !previewGain) return null;
-      if (audioCtx.state !== 'running') await audioCtx.resume?.();
-      const response = await withTimeout(fetch(url, { mode:'cors', cache:'force-cache' }), 10000);
-      if (!response?.ok || typeof response.arrayBuffer !== 'function') return null;
-      const bytes = await withTimeout(response.arrayBuffer(), 10000);
-      return await withTimeout(decodePreviewBuffer(bytes), 10000);
-    } catch (_) { return null; }
+      const decoded = await load;
+      if (!decoded) {
+        if (previewBufferCache.get(url) === load) previewBufferCache.delete(url);
+        return null;
+      }
+      while (previewBufferCache.size > PREVIEW_BUFFER_CACHE_LIMIT) previewBufferCache.delete(previewBufferCache.keys().next().value);
+      return decoded;
+    } catch (_) {
+      if (previewBufferCache.get(url) === load) previewBufferCache.delete(url);
+      return null;
+    }
   }
 
   async function playItunes(data, token, forcedTrackId = '') {
@@ -688,7 +767,7 @@
       }, Math.max(0, playMs - FADE_MS));
       return {
         trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽',
-        trackId:String(track.id || track.previewUrl), tracks:previewTrackSummary(data)
+        trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
       };
     } catch (_) {
       if (token === requestId) {
@@ -794,9 +873,16 @@
         const source = await loadCachedSource(entry, provider, path, artist, album);
         const target = provider === 'spotify' ? spotifyAlbumId(source?.url || '') : source;
         if (!target || token !== requestId) continue;
-        const played = provider === 'youtube' ? await playYoutube(target, token)
+        let played = provider === 'youtube' ? await playYoutube(target, token)
           : provider === 'itunes' ? await playItunes(target, token)
           : await playSpotify(target, token);
+        // 預存 URL 偶爾會被 Apple 換掉；只在它真的無法下載時才退回名稱搜尋自我修復。
+        if (!played && provider === 'itunes' && source?.source === 'itunes-map' && token === requestId) {
+          const refreshed = await fetchItunesPreview(artist, album, { skipMap:true });
+          entry.itunesData = refreshed;
+          entry.itunesPromise = null;
+          if (refreshed?.tracks?.length && token === requestId) played = await playItunes(refreshed, token);
+        }
         if (played && token === requestId) {
           // 先清空曲目欄位再展開本次結果，避免退到 YouTube 時殘留上一張 iTunes 的列表。
           emit({ status: 'playing', provider, artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
@@ -860,5 +946,5 @@
     return () => listeners.delete(callback);
   }
 
-  window.DipPlayer = { mount, unlock, prefetch, playAlbum, playTrack, stop, onStateChange };
+  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange };
 })();

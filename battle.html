@@ -160,6 +160,8 @@
   .battle-mini-player::before { content:''; position:absolute; width:20px; height:20px; left:3px; top:3px; border-radius:50%; background:repeating-radial-gradient(circle,#222 0 2px,#080808 3px 5px); box-shadow:0 0 0 2px #666; }
   .battle-mini-player::after { content:''; position:absolute; width:3px; height:18px; right:6px; top:3px; background:#555; transform:rotate(28deg); transform-origin:50% 2px; box-shadow:2px 0 #ddd; }
   .battle-mini-player.playing::before { animation:miniVinylSpin .9s linear infinite; }
+  .battle-mini-player.loading { cursor:progress; }
+  .battle-mini-player.loading::before { animation:miniVinylSpin 1.8s linear infinite; opacity:.58; }
   .battle-mini-player.muted { opacity:.46; }
   .battle-mini-player .note { display:none; position:absolute; left:16px; top:0; color:#111; font-size:11px; font-weight:700; pointer-events:none; }
   .battle-mini-player.playing .note { display:block; animation:miniNote 1.45s ease-out infinite; }
@@ -562,7 +564,7 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=18"></script>
+<script src="dip-player.js?v=19"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -591,7 +593,7 @@ function syncBattleMusicToggle(){
   button.setAttribute('aria-pressed',String(battleMusicOn));
   button.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂');
   const mini=document.getElementById('battleMiniPlayer');
-  if(mini){ mini.classList.toggle('muted',!battleMusicOn); mini.classList.toggle('playing',battleMusicOn&&battlePlayerState.status==='playing'); mini.setAttribute('aria-pressed',String(battleMusicOn)); mini.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂'); }
+  if(mini){ mini.classList.toggle('muted',!battleMusicOn); mini.classList.toggle('playing',battleMusicOn&&battlePlayerState.status==='playing'); mini.classList.toggle('loading',battleMusicOn&&battlePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(battleMusicOn)); mini.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂'); }
   const apple=document.querySelector('#recBody .streaming-btn[data-platform="apple"]');
   if(apple && battlePlayerState.storeUrl) apple.href=battlePlayerState.storeUrl;
 }
@@ -606,6 +608,7 @@ function playBattleAlbum(card){
   try {
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
+    void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
     void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'}).catch(()=>{});
     return true;
   }

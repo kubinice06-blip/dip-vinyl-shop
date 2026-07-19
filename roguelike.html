@@ -180,6 +180,8 @@
   .rogue-mini-player::before{content:'';position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:repeating-radial-gradient(circle,#222 0 2px,#080808 3px 5px);box-shadow:0 0 0 2px #666;}
   .rogue-mini-player::after{content:'';position:absolute;width:3px;height:18px;right:6px;top:3px;background:#555;transform:rotate(28deg);transform-origin:50% 2px;box-shadow:2px 0 #ddd;}
   .rogue-mini-player.playing::before{animation:rogueMiniVinylSpin .9s linear infinite;}
+  .rogue-mini-player.loading{cursor:progress;}
+  .rogue-mini-player.loading::before{animation:rogueMiniVinylSpin 1.8s linear infinite;opacity:.58;}
   .rogue-mini-player.muted{opacity:.46;}
   .rogue-mini-player .note{display:none;position:absolute;left:16px;top:0;color:#111;font-size:11px;font-weight:700;pointer-events:none;}
   .rogue-mini-player.playing .note{display:block;animation:rogueMiniNote 1.45s ease-out infinite;}
@@ -527,7 +529,7 @@
   })();
 </script>
 
-<script src="dip-player.js?v=18"></script>
+<script src="dip-player.js?v=19"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1517,7 +1519,7 @@ function syncRogueMusic(){
   const top=document.getElementById('rogueMusicToggle');
   if(top){ top.textContent=rogueMusicOn?'🔊':'🔇'; top.setAttribute('aria-pressed',String(rogueMusicOn)); top.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
   const mini=document.getElementById('rogueMiniPlayer');
-  if(mini){ mini.classList.toggle('muted',!rogueMusicOn); mini.classList.toggle('playing',rogueMusicOn&&roguePlayerState.status==='playing'); mini.setAttribute('aria-pressed',String(rogueMusicOn)); mini.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
+  if(mini){ mini.classList.toggle('muted',!rogueMusicOn); mini.classList.toggle('playing',rogueMusicOn&&roguePlayerState.status==='playing'); mini.classList.toggle('loading',rogueMusicOn&&roguePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(rogueMusicOn)); mini.setAttribute('aria-label',rogueMusicOn?'關閉試煉音樂':'開啟試煉音樂'); }
   const apple=document.querySelector('.drawmask .streaming-btn[data-platform="apple"]');
   if(apple&&roguePlayerState.storeUrl) apple.href=roguePlayerState.storeUrl;
 }
@@ -1532,6 +1534,7 @@ function playRogueAlbum(card){
   try{
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
+    void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
     void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'}).catch(()=>{});
     return true;
   }catch(e){return false;}
@@ -1784,6 +1787,8 @@ function seedToast(msg){
 let _seedHeld=false, _seedTimer=null, _seedPt=null;
 function attachSeedPress(el, i){
   el.addEventListener('pointerdown', e=>{
+    // iOS 對 Web Audio 只認同步的使用者手勢；不能等到 450ms 長按計時器才解鎖。
+    window.DipPlayer?.unlock?.({youtube:false});
     _seedPt={x:e.clientX,y:e.clientY};
     clearTimeout(_seedTimer);
     _seedTimer=setTimeout(()=>{
@@ -1802,6 +1807,8 @@ function attachSeedPress(el, i){
 let _handHeld=false, _handTimer=null, _handPt=null;
 function attachHandPress(el, card){
   el.addEventListener('pointerdown', e=>{
+    // 同上：先在 pointerdown 解鎖，長按成立後才開介紹與播放。
+    window.DipPlayer?.unlock?.({youtube:false});
     _handPt={x:e.clientX,y:e.clientY};
     clearTimeout(_handTimer);
     _handTimer=setTimeout(()=>{

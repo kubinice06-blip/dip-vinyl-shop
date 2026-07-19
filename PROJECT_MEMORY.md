@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜Apple 試聽首次開啟：預配對、手勢解鎖與預熱快取
+
+- Repo：`dip-vinyl-shop`
+- 改動：新增 5,349 筆可直接播放的精簡 Apple 音源索引；頁面掛載時背景載入索引，命中後直接使用預存 preview URL，避免首次開啟再做名稱搜尋。首次指標手勢同時解鎖 Apple Web Audio；Roguelike 長按在 `pointerdown` 當下解鎖，不再等 450ms 計時器。預熱與正式播放共用下載／解碼 Promise（保留最近 3 筆）；若預存 URL 失效，會自動退回 Apple 搜尋。對戰與試煉唱機新增載入旋轉狀態。
+- 主要檔案：`dip-player.js`、`battle.html`、`roguelike.html`、`index.html`、`data/apple-audio-runtime-v1.json`、`scripts/build-apple-audio-runtime-map.mjs`、`verify-playback.mjs`
+- 驗證：`node verify-playback.mjs` 通過（包含預配對免搜尋、預熱共用下載、失效 URL 搜尋修復）；`node --check dip-player.js`、`node scripts/build-apple-audio-runtime-map.mjs`、`git diff --check` 通過。The Clash／Diana Ross／Ol’ Dirty Bastard／Sarah Vaughan with Clifford Brown 均確認命中索引。
+
 > 這是 `dip-vinyl-shop` 與 `dip-vinyl-worker` 共用的長期記憶。
 > Claude 開始工作前必須先讀完本檔；任何檔案改動完成前必須追加一筆紀錄。
 
