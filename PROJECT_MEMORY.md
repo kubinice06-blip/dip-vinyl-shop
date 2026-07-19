@@ -108,7 +108,7 @@
 - Repo：`dip-vinyl-shop`
 - 改動：單場對戰與 Roguelike 的專輯簡介、勝利抽盤及撿盤視窗，將原本單一「串流聽這張」改成與首頁抽專輯卡相同的 Apple Music、Spotify、YT Music、Bandcamp 四平台列；Apple／Spotify／YT 提供立即可點搜尋，Spotify 背景換成專輯直連，Bandcamp 只有確認到正式專輯頁才啟用。Apple 試聽成功後 Apple Music 鍵會換成內容直連，並補上 iTunes 試聽來源標示。
 - 主要檔案：`battle.html`、`roguelike.html`
-- 驗證：兩頁共五段 inline script 全數通過 Node module 語法檢查；確認舊單一串流按鈕與函式已移除，四平台元件、非同步直連更新與 iTunes 來源標示均存在，`git diff --check` 通過。瀏覽器不允許直接開啟本機 `file:` 頁面，推送後再以正式站驗證桌面與手機版。
+- 驗證：兩頁共五段 inline script 全數通過 Node module 語法檢查；確認舊單一串流按鈕與函式已移除，四平台元件、非同步直連更新與 iTunes 來源標示均存在，`git diff --check` 通過。正式站桌面版實際開啟對戰專輯簡介，四平台列、Apple／Spotify 專輯直連與 Bandcamp 無結果停用狀態正確；390×844 手機版四鍵維持單列，頁面、簡介與按鈕列皆無橫向溢出，console 零錯誤。Roguelike 正式站亦確認新版四平台模板已上線、390px 頁寬無溢出且 console 零錯誤。
 
 ### 2026-07-19｜Apple 音源第二輪安全補查
 - Repo：`dip-vinyl-shop`
