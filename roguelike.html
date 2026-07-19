@@ -327,6 +327,9 @@
   .relicbar .rcell.broke .ric:after{content:"✕";position:absolute;color:var(--dmg);font-size:13px;font-weight:700;}
   .relicbar .wbar{display:flex;gap:2px;}
   .relicbar .wpip{width:4px;height:3px;}   /* 品相五階＝5 格；縮窄避免撐寬 cheat 列 */
+  .pixicon .lvspark{animation:lvSpark 1.4s steps(1) infinite;}   /* Lv.5 金框星光：兩點交錯眨 */
+  .pixicon .lvspark.d{animation-delay:.7s;}
+  @keyframes lvSpark{0%,55%{opacity:1}56%,100%{opacity:0}}
   .relicbar .rempty{width:24px;height:24px;border:1px dashed var(--line);color:var(--gray);display:flex;align-items:center;justify-content:center;font-size:12px;}
   @keyframes relicPulse{0%,100%{box-shadow:0 0 0 0 rgba(193,22,40,0)}50%{box-shadow:0 0 0 2px rgba(193,22,40,.4)}}
   /* 耗損長條（詳情彈窗／整備面板） */
@@ -1010,11 +1013,32 @@ function pixArtHTML(rows, size, cls){
   rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
   return `<svg class="pixicon ${cls||''}" width="${size}" height="${Math.round(size*h/w)}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
 }
-function relicIconHTML(r, size){
+// 發燒配件圖示＝像素本體＋「等級鑲框」（升級看得見）：
+//   Lv.1 素面 → Lv.2 銅角釘 → Lv.3 銀角框 → Lv.4 金角框 → Lv.5 金滿框＋星光閃爍。
+//   viewBox 外擴一圈畫框（本體 12×12 不動）；lvOverride 給預覽用（藏家升級卡先看下一級）。
+const LV_DECO = {2:'#b0763e', 3:'#9aa4b0', 4:'#b8860b', 5:'#b8860b'};
+function relicIconHTML(r, size, lvOverride){
   size = size||22;
   const rows = r && PIX_ICONS[r.icon];
+  const lv = lvOverride!=null ? lvOverride : (r ? relicLvOf(r.id) : 1);
   if(!rows) return `<span style="font-size:${Math.max(10,size-8)}px;line-height:1">${(r&&r.icon)||'🎁'}</span>`;
-  return pixArtHTML(rows, size);
+  if(lv<=1) return pixArtHTML(rows, size);
+  const W=rows[0].length+2, H=rows.length+2, R=W-1, B=H-1;
+  let rects='';
+  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x+1}" y="${y+1}" width="1" height="1" fill="${c}"/>`; } });
+  const c=LV_DECO[Math.min(5,lv)]||LV_DECO[2];
+  const px=(x,y,fill,cls)=>`<rect x="${x}" y="${y}" width="1" height="1" fill="${fill}"${cls?` class="${cls}"`:''}/>`;
+  if(lv===2){
+    rects+=px(0,0,c)+px(R,0,c)+px(0,B,c)+px(R,B,c);                       // 四角銅釘
+  } else if(lv<=4){
+    [[0,0,1,0,0,1],[R,0,R-1,0,R,1],[0,B,1,B,0,B-1],[R,B,R-1,B,R,B-1]]    // 四角 L 形角框
+      .forEach(a=>{ rects+=px(a[0],a[1],c)+px(a[2],a[3],c)+px(a[4],a[5],c); });
+  } else {
+    for(let x=0;x<=R;x++) rects+=px(x,0,c)+px(x,B,c);                     // 金滿框
+    for(let y=1;y<B;y++)  rects+=px(0,y,c)+px(R,y,c);
+    rects+=px(R-2,1,'#fff','lvspark')+px(1,B-2,'#ffe9a8','lvspark d');    // 星光兩點交錯閃
+  }
+  return `<svg class="pixicon" width="${size}" height="${Math.round(size*H/W)}" viewBox="0 0 ${W} ${H}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
 }
 
 // ---------- 像素小人（16×16 手刻：對手 8 階＋藏家＋三流派；動畫走 CSS class） ----------
@@ -2610,7 +2634,7 @@ function renderRelicChoice(){
       const dup=isOwnedRelic(r.id), lv=relicLvOf(r.id);
       return `
       <div class="relic-card" onclick="pickRelic(${i})">
-        <div class="ric">${relicIconHTML(r,36)}</div>
+        <div class="ric">${relicIconHTML(r,36, dup?lv+1:null)}</div>
         <div><h3>${r.name}${(r.tier||1)>1?' <span class="pill" style="color:var(--gold);border-color:var(--gold)">進階</span>':''}${dup?` <span class="pill" style="color:var(--gold);border-color:var(--gold)">⬆ 升級 Lv.${lv}→${lv+1} · 整新</span>`:''}</h3>
         <div class="muted">${relicDescOf(r)}</div></div>
       </div>`;}).join('')}</div>
