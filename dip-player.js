@@ -337,9 +337,13 @@
   function previewAlbumMatches(candidate, album) {
     const editions = /\b(?:remaster(?:ed)?(?:\s+version)?|deluxe(?:\s+edition)?|expanded(?:\s+edition)?|anniversary(?:\s+edition)?|mono|stereo|reissue|edition)\b/gi;
     const candidateKey = normalizePreviewText(candidate), albumKey = normalizePreviewText(album);
-    const candidateCore = normalizePreviewText(String(candidate || '').replace(editions, ''));
-    const albumCore = normalizePreviewText(String(album || '').replace(editions, ''));
-    return albumKey.length > 1 && (candidateKey === albumKey || (albumCore.length > 1 && candidateCore === albumCore));
+    // Apple 常只供應週年重製版；先整段移除含版本關鍵字的括號，避免
+    // 「(25th Anniversary Remaster)」清掉文字後仍殘留 25th 而配對失敗。
+    const decoratedEdition = /[\(\[\{][^\)\]\}]*(?:remaster(?:ed)?|deluxe|expanded|anniversary|reissue|edition)[^\)\]\}]*[\)\]\}]/gi;
+    const albumCore = value => normalizePreviewText(String(value || '').replace(decoratedEdition, ' ').replace(editions, ' '));
+    const candidateCore = albumCore(candidate);
+    const requestedCore = albumCore(album);
+    return albumKey.length > 1 && (candidateKey === albumKey || (requestedCore.length > 1 && candidateCore === requestedCore));
   }
 
   function fetchItunesJsonp(requestUrl) {
@@ -375,7 +379,11 @@
         try { if (!new URL(item.previewUrl).hostname.toLowerCase().endsWith('.itunes.apple.com')) return false; }
         catch (_) { return false; }
       }
-      return previewArtistMatches(item.artistName, artist) ||
+      // 台灣 Apple Music 會把部分西洋藝人直接本地化（The Clash→衝擊合唱團、
+      // Diana Ross→黛安娜羅絲）。搜尋詞和專輯已吻合時，接受這種「輸入為拉丁字、
+      // 回傳藝人為 CJK」的在地化名稱；拉丁字翻唱／同名專輯仍會被藝人檢查擋下。
+      const localizedArtist = !cjkArtist && /[㐀-鿿぀-ヿ가-힯]/.test(item.artistName || '');
+      return previewArtistMatches(item.artistName, artist) || localizedArtist ||
         (cjkArtist && normalizePreviewText(item.collectionName) === normalizePreviewText(album));
     }).map(item => ({
       id:String(item.trackId || ''), trackName:item.trackName || '', trackNumber:Number(item.trackNumber || 0),

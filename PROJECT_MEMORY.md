@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜修正 Apple 台灣區在地化藝人名與週年重製版配對
+- Repo：`dip-vinyl-shop`
+- 改動：店主回報 The Clash《London Calling》、Diana Ross《Swept Away》與 Ol' Dirty Bastard《Return to the 36 Chambers: The Dirty Version》無音樂。逐張查 Apple 台灣區 Search JSON，確認前兩張的 `artistName` 被在地化成「衝擊合唱團」「黛安娜羅絲」，第三張只回傳帶 `(25th Anniversary Remaster)` 的版本；舊邏輯因此分別在藝人與專輯版本比對階段排除。現在當搜尋詞與專輯已吻合、輸入為拉丁藝人名但 Apple 回傳 CJK 在地化名稱時允許配對，拉丁字翻唱／同名專輯仍需通過原藝人檢查；版本清理則會整段移除含 remaster／anniversary／deluxe 等關鍵字的括號，避免殘留 `25th`。音訊仍沿用 v17 的純 Web Audio、50% 音量與 1.5 秒淡入淡出；快取參數升至 v18。
+- 主要檔案：`dip-player.js`、`battle.html`、`roguelike.html`、`index.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
+- 驗證：`node verify-playback.mjs` 全數通過，新增三張實際 Apple TW 回傳型態的回歸。手機文字閘道真實查詢三張皆 200，修正後分別配對 23、10、18 首；本機真實瀏覽器逐張連線 Apple 並播放成功，狀態皆為 `playing/itunes`，console 無 error／warning。`node --check dip-player.js` 通過。
+
 ### 2026-07-19｜手機 Apple 試聽改走純 Web Audio，消除起播 100% 音量旁路
 - Repo：`dip-vinyl-shop`
 - 改動：店主真機確認上一版只有關閉介紹時會瞬間降到 50% 再淡出，點開介紹仍以 100% 突然起播。根因是 iOS 的 `MediaElementAudioSourceNode` 路由不穩定：雖然程式先把 GainNode 設為 0，實際 `<audio>` 聲音仍可能繞過節點直接輸出。本次不再讓 Apple `.m4a` 進入 `<audio>`：改為 CORS 抓取試聽檔、`decodeAudioData` 解碼，再以唯一的 `AudioBufferSourceNode → GainNode → destination` 路徑播放；起播前 Gain 固定為 0，開始後 1.5 秒線性升至 0.5，關窗仍以 1.5 秒降至 0 才停止。`<audio>` 只保留全靜音手勢解鎖，不會收到真實試聽 URL。快取參數升至 v17。

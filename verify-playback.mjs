@@ -196,6 +196,23 @@ function sourceFor(url) {
   const artist = parsed.searchParams.get('artist');
   if (parsed.hostname === 'itunes.apple.com') {
     const term = parsed.searchParams.get('term') || '';
+    const reportedAlbums = [
+      term.includes('The Clash London Calling') && {
+        id:'clash1', artistName:'衝擊合唱團', collectionName:'London Calling (Expanded Edition)', trackName:'London Calling'
+      },
+      term.includes('Diana Ross Swept Away') && {
+        id:'ross1', artistName:'黛安娜羅絲', collectionName:'Swept Away', trackName:'Swept Away'
+      },
+      term.includes("Ol' Dirty Bastard Return to the 36 Chambers") && {
+        id:'odb1', artistName:"Ol' Dirty Bastard", collectionName:'Return to the 36 Chambers: The Dirty Version (25th Anniversary Remaster)', trackName:'Shimmy Shimmy Ya'
+      }
+    ].find(Boolean);
+    if (reportedAlbums) return { resultCount:1, results:[{
+      kind:'song', trackId:reportedAlbums.id, trackName:reportedAlbums.trackName,
+      trackNumber:1, trackTimeMillis:30000, previewUrl:`https://audio/${reportedAlbums.id}.m4a`,
+      trackViewUrl:`https://music/${reportedAlbums.id}`, artistName:reportedAlbums.artistName,
+      collectionName:reportedAlbums.collectionName
+    }] };
     const artistName = term.includes('Artist A') ? 'Artist A' : term.includes('Artist F') ? 'Artist F' : 'Artist B';
     const albumName = term.includes('Album A') ? 'Album A' : term.includes('Album F') ? 'Album F' : 'Album B';
     const ids = artistName === 'Artist A' ? ['a1','a2'] : artistName === 'Artist F' ? ['f1'] : ['b1'];
@@ -339,9 +356,20 @@ player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist G', album:'Album G', prefer:'itunes-only' }), true);
 assert.equal(states.at(-1).trackName, 'G One');
 assert.ok(fetchCalls.some(url => url.startsWith('https://r.jina.ai/')), 'Apple-empty lookup falls back to the text gateway');
+assert.equal(JSON.stringify(states.at(-1).tracks), JSON.stringify([{ id:'g1', trackName:'G One' }]));
+
+// Apple 台灣區的在地化藝人名稱，以及只供應週年重製版的專輯，都要能配對。
+for (const albumCase of [
+  { artist:'The Clash', album:'London Calling', trackName:'London Calling' },
+  { artist:'Diana Ross', album:'Swept Away', trackName:'Swept Away' },
+  { artist:"Ol' Dirty Bastard", album:'Return to the 36 Chambers: The Dirty Version', trackName:'Shimmy Shimmy Ya' }
+]) {
+  player.unlock();
+  assert.equal(await player.playAlbum({ ...albumCase, prefer:'itunes-only' }), true, `${albumCase.artist} should match Apple TW metadata`);
+  assert.equal(states.at(-1).trackName, albumCase.trackName);
+}
 
 // 唱盤下方播放列表：playing 狀態要帶曲目摘要；點列表指定曲目要用同一顆已解鎖元件強制換源。
-assert.equal(JSON.stringify(states.at(-1).tracks), JSON.stringify([{ id:'g1', trackName:'G One' }]));
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(await player.playTrack('a2'), true);
@@ -399,6 +427,7 @@ assert.equal(states.at(-1).tracks.length, 0);
 
 player.stop();
 console.log('PASS  iTunes preview decodes into Web Audio and has no 100% media-element bypass');
+console.log('PASS  Apple TW localized artists and anniversary remasters match the requested albums');
 console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
 console.log('PASS  failure toast always carries a stage code, including cached-empty replays');
 console.log('PASS  itunes preference falls back to YouTube when Apple metadata is unavailable');
