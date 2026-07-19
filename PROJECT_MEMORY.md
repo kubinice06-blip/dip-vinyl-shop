@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜配件像素圖真正隨等級進化（85 張手繪圖，取代等級外框）
+- Repo：`dip-vinyl-shop`
+- 改動：店主要的是「像素圖本體進化」而非只加外框。手繪 17 件 × Lv.1~5＝85 張專屬 12×12 像素圖並接進遊戲：Lv.1 陽春／磨舊 → Lv.2 標準（沿用原圖）→ Lv.3 進階材質 → Lv.4 鍍金精品 → Lv.5 傳說（金件＋星光）。演化有劇情感：集點卡點數 1→3→6→銀卡→金 VIP、洗碟水半瓶→滿瓶→金噴頭、名片 Lv.4 翻霧黑卡→Lv.5 黑金卡、唱針鈍尖→金尖→銀唱頭→金唱頭→鑽石針尖等。新增 `PIX_ICONS_LV` 資料表與青光色 `c:#3fb6c9`；`relicIconHTML(r,size,lvOverride)` 改依當前等級取 `PIX_ICONS_LV[icon][lv-1]`，缺表（後台自訂件）退回 `PIX_ICONS`、再無則 emoji；移除上一版的「等級外框」疊加邏輯（`LV_DECO`）與 `.lvspark`，改為 Lv.5 外圈淡金光暈 `.pixlv5` 脈動（`prefers-reduced-motion` 關閉）。藏家升級卡片仍預覽下一級圖。全站顯示點沿用同函式自動生效；admin 無需改（只存 icon 鍵，不畫等級圖）。
+- 主要檔案：`roguelike.html`、`ROGUELIKE_DESIGN.md`
+- 驗證：先產 85 張獨立預覽頁經店主確認；接進後 Node `--check` 語法通過；本機 http-server 實跑 console 驗證五級圖各異（SVG 長度/ rect 數不同）、Lv.5 帶 `.pixlv5`、17 件全覆蓋 `PIX_ICONS_LV`、emoji 自訂件正確退回、藏家升級預覽下一級；實際遊戲畫面截圖確認 17 件五級皆用遊戲真函式渲染出不同圖、Lv.5 金光暈可見；頁面載入 console 零錯誤。開工前交接：codex 已推 3 筆（Apple 音源二輪、四平台串流連結，動到 roguelike.html 的簡介區塊），與本次圖示程式不重疊、本機 HEAD 已含其提交、無衝突。
+
 ### 2026-07-19｜專輯簡介改為四平台串流連結
 - Repo：`dip-vinyl-shop`
 - 改動：單場對戰與 Roguelike 的專輯簡介、勝利抽盤及撿盤視窗，將原本單一「串流聽這張」改成與首頁抽專輯卡相同的 Apple Music、Spotify、YT Music、Bandcamp 四平台列；Apple／Spotify／YT 提供立即可點搜尋，Spotify 背景換成專輯直連，Bandcamp 只有確認到正式專輯頁才啟用。Apple 試聽成功後 Apple Music 鍵會換成內容直連，並補上 iTunes 試聽來源標示。

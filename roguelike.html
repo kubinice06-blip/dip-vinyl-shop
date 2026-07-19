@@ -332,9 +332,9 @@
   .relicbar .rcell.broke .ric:after{content:"✕";position:absolute;color:var(--dmg);font-size:13px;font-weight:700;}
   .relicbar .wbar{display:flex;gap:2px;}
   .relicbar .wpip{width:4px;height:3px;}   /* 品相五階＝5 格；縮窄避免撐寬 cheat 列 */
-  .pixicon .lvspark{animation:lvSpark 1.4s steps(1) infinite;}   /* Lv.5 金框星光：兩點交錯眨 */
-  .pixicon .lvspark.d{animation-delay:.7s;}
-  @keyframes lvSpark{0%,55%{opacity:1}56%,100%{opacity:0}}
+  .pixicon.pixlv5{filter:drop-shadow(0 0 2px rgba(240,199,94,.85));animation:pixLv5Glow 1.8s ease-in-out infinite;}   /* Lv.5 傳說：淡金光暈脈動 */
+  @keyframes pixLv5Glow{0%,100%{filter:drop-shadow(0 0 1px rgba(240,199,94,.5))}50%{filter:drop-shadow(0 0 3px rgba(240,199,94,.95))}}
+  @media (prefers-reduced-motion:reduce){ .pixicon.pixlv5{animation:none} }
   .relicbar .rempty{width:24px;height:24px;border:1px dashed var(--line);color:var(--gray);display:flex;align-items:center;justify-content:center;font-size:12px;}
   @keyframes relicPulse{0%,100%{box-shadow:0 0 0 0 rgba(193,22,40,0)}50%{box-shadow:0 0 0 2px rgba(193,22,40,.4)}}
   /* 耗損長條（詳情彈窗／整備面板） */
@@ -991,7 +991,7 @@ function fireRelic(){ if(!G) return; if(!G._fired) G._fired=new Set(); for(let i
 function isBossDepth(d){ return d>0 && d%5===0; }
 
 // ---------- 像素風發燒配件圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
-const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c'};
+const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c',c:'#3fb6c9'};
 const PIX_ICONS = {
   stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
   sleeve:['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
@@ -1011,6 +1011,128 @@ const PIX_ICONS = {
   firstpress:['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkggggkkk.','.kkkggggkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
   column:['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
 };
+// ---------- 發燒配件 Lv.1~5 像素圖演化（輪廓不變、材質細節隨等級升級；缺此表的 icon 退回 PIX_ICONS）----------
+const PIX_ICONS_LV = {
+  stylus:[
+    ['............','.........kk.','........kk..','.......kk...','......kk....','.....kk.....','....kk......','...kk.......','..kk........','.kkk........','.kkd........','............'],
+    ['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
+    ['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..eee.......','.eeee.......','.eegg.......','............'],
+    ['............','.........gg.','........gkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..ggg.......','.gggg.......','.gggg.......','............'],
+    ['..y.........','.........gg.','........ggg.','.......gg.g.','......gg....','.....gg.....','....gg......','...gg.....y.','..ggg.......','.gggg...y...','.ggcc.......','............']
+  ],
+  sleeve:[
+    ['............','..kkkkkkk...','..kwwwwwk...','..kwwdwwk...','..kwwwwwk...','..kdwwwwk...','..kwwwwwk...','..kwwwdwk...','..kwwwwwk...','..kkkkkkk...','............','............'],
+    ['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
+    ['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwbbbwkkk.','..kwwwwwkkk.','..kwbbbwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
+    ['............','..ggggggg...','..gwwwwwgk..','..gwwwwwgkk.','..gwbbbwgkk.','..gwwwwwgkk.','..gwbbbwgkk.','..gwwwwwgkk.','..gwwwwwgk..','..ggggggg...','............','............'],
+    ['..........y.','..ggggggg...','..gwcwcwgk..','..gcwcwcgkk.','..gwcwcwgkk.','..gcwcwcgkk.','..gwcwcwgkk.','..gcwcwcgkk.','..gwcwcwgk..','..ggggggg...','............','.y..........']
+  ],
+  dustcover:[
+    ['............','..dddddddd..','.d........d.','.d.kkkkkk.d.','.d.k....k.d.','.d.kkkkkk.d.','.d........d.','.dddddddddd.','.kkkkkkkkkk.','............','............','............'],
+    ['............','..eeeeeeee..','.e........e.','.e.kkkkkk.e.','.e.k....k.e.','.e.kkkkkk.e.','.e........e.','.eeeeeeeeee.','.kkkkkkkkkk.','.kkkkkkkkkk.','..g......g..','............'],
+    ['............','..cccccccc..','.c........c.','.c.kkkkkk.c.','.c.k....k.c.','.c.kkkkkk.c.','.c........c.','.cccccccccc.','.kkkkkkkkkk.','.kkkkkkkkkk.','..g......g..','............'],
+    ['............','..geeeeeeg..','.e........e.','.e.kkkkkk.e.','.e.k....k.e.','.e.kkkkkk.e.','.e........e.','.geeeeeeeeg.','.kkkkkkkkkk.','.kggkkkkggk.','..gg....gg..','............'],
+    ['.y..........','..gggggggg..','.g........g.','.g.kkkkkk.g.','.g.k.cc.k.g.','.g.kkkkkk.g.','.g........g.','.gggggggggg.','.kkkkkkkkkk.','.kkkkkkkkkk.','..gg....gg..','..........y.']
+  ],
+  testpress:[
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkwwwwkkk.','.kkwwwwwwkk.','.kkwwwwwwkk.','.kkwwwwwwkk.','.kkwwwwwwkk.','.kkwwwwwwkk.','.kkkwwwwkkk.','..kkkkkkkk..','...kkkkkk...'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkwwwwkkk.','.kkwwrrwwkk.','.kkwwwrwwkk.','.kkwwrrwwkk.','.kkwwwwwwkk.','.kkwwrrwwkk.','.kkkwwwwkkk.','..kkkkkkkk..','...kkkkkk...'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkwwwwkkk.','.kkwrrwrwkk.','.kkwwwrwwkk.','.kkwrwrrwkk.','.kkwwwwwwkk.','.kkwrrwrwkk.','.kkkwwwwkkk.','..kkkkkkkk..','...kkkkkk...'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkyyyykkk.','.kkyyrryykk.','.kkyyyryykk.','.kkyyrryykk.','.kkyyyyyykk.','.kkyyrryykk.','.kkkyyyykkk.','..kkkkkkkk..','...kkkkkk...'],
+    ['..y.........','...pppppp...','..pppppppp..','.pppyyyyppp.','.ppyyrryypp.','.ppyyyryypp.','.ppyyrryypp.','.ppyyyyyypp.','.ppyyrryypp.','.pppyyyyppp.','..pppppppp..','...pppppp...']
+  ],
+  pointcard:[
+    ['............','............','.kkkkkkkkkk.','.kwwwwwwwwk.','.kwgwwwwwwk.','.kwwwwwwwwk.','.kwwwwwwwwk.','.kwwwwwwwwk.','.kwwwwwkkwk.','.kkkkkkkkkk.','............','............'],
+    ['............','............','.kkkkkkkkkk.','.kwwwwwwwwk.','.kwgwgwgwwk.','.kwwwwwwwwk.','.kwwwwwwwwk.','.kwwwwwwwwk.','.kwwwwwkkwk.','.kkkkkkkkkk.','............','............'],
+    ['............','............','.kkkkkkkkkk.','.kwwwwwwwwk.','.kwgwgwgwwk.','.kwwwwwwwwk.','.kwgwgwgwwk.','.kwwwwwwwwk.','.kwwwwwkkwk.','.kkkkkkkkkk.','............','............'],
+    ['............','............','.eeeeeeeeee.','.ewwwwwwwwe.','.ewgwgwgwge.','.ewwwwwwwwe.','.ewgwgwgwge.','.ewwwwwwwwe.','.ewwwwwkkwe.','.eeeeeeeeee.','............','............'],
+    ['............','.........y..','.gggggggggg.','.gyyyyyyyyg.','.gyryryryyg.','.gyyyyyyyyg.','.gyryryryyg.','.gyyyyyyyyg.','.gyyyyykkyg.','.gggggggggg.','.y..........','............']
+  ],
+  adapter45:[
+    ['............','....kkkk....','..kkkkkkkk..','..kk....kk..','.kk......kk.','.kk......kk.','.kk......kk.','.kk......kk.','..kk....kk..','..kkkkkkkk..','....kkkk....','............'],
+    ['............','....dddd....','..dddddddd..','..dd....dd..','.dd......dd.','.dd......dd.','.dd......dd.','.dd......dd.','..dd....dd..','..dddddddd..','....dddd....','............'],
+    ['............','....gggg....','..gggggggg..','..gg....gg..','.gg......gg.','.gg......gg.','.gg......gg.','.gg......gg.','..gg....gg..','..gggggggg..','....gggg....','............'],
+    ['............','....grrg....','..gggggggg..','..gg....gg..','.gg......gg.','.rg......gr.','.gg......gg.','.gg......gg.','..gg....gg..','..gggggggg..','....grrg....','............'],
+    ['.y........y.','....grrg....','..gggggggg..','..gg....gg..','.gg......gg.','.rg......gr.','.gg......gg.','.gg......gg.','..gg....gg..','..gggggggg..','....grrg....','....y.......']
+  ],
+  cleaner:[
+    ['....kkk.....','...kkkkk....','...kk.......','...kkkk.....','...kwwk.....','..kwwwwk....','..kwwwwk....','..kwwwwk....','..kwbbwk....','..kwbbwk....','..kkkkkk....','............'],
+    ['....kkk.....','...kkkkk....','...kk.......','...kkkk.....','...kwwk.....','..kwwwwk....','..kwbbwk....','..kwbbwk....','..kwbbwk....','..kwwwwk....','..kkkkkk....','............'],
+    ['....kkk.....','...kkkkk....','...kk.......','...kkkk.....','...kbbk.....','..kbbbbk....','..kbnnbk....','..kbnnbk....','..kbbbbk....','..kbbbbk....','..kkkkkk....','............'],
+    ['....ggg.....','...ggggg....','...gg.......','...gggg.....','...kbbk.....','..kbbbbk....','..kbnnbk....','..kbnnbk....','..kbbbbk....','..kbbbbk....','..kkkkkk....','............'],
+    ['....ggg..y..','...ggggg....','...gg....c..','...gggg.....','...kbbk..c..','..kbbbbk....','..kbnnbk.c..','..kbnnbk....','..kbbbbk....','..kbbbbk....','..kkkkkk....','.y..........']
+  ],
+  obi:[
+    ['....kkkk....','....kwwk....','....kwwk....','....kwwk....','....kkwk....','....kwwk....','....kwkk....','....kwwk....','....kkwk....','....kwwk....','....kkkk....','............'],
+    ['....kkkk....','....krrk....','....krrk....','....kwwk....','....kkwk....','....kwwk....','....kwkk....','....kwwk....','....kkwk....','....kwwk....','....kkkk....','............'],
+    ['....kkkk....','....krrk....','....krrk....','....kwwk....','....kkwk....','....kwwk....','....kbkk....','....kwwk....','....kkbk....','....kwwk....','....kkkk....','............'],
+    ['....kkkk....','....kggk....','....kggk....','....krrk....','....kkwk....','....kwwk....','....kbkk....','....kwwk....','....kkbk....','....kwwk....','....kkkk....','............'],
+    ['....gggg....','....grrg....','....grrg....','....gwwg....','....gbwg....','....gwwg....','....gwbg....','....gwwg....','....gbwg....','....gwwg....','....gggg....','.........y..']
+  ],
+  gauge:[
+    ['............','..kkkkkkkk..','.k........k.','.k...kk...k.','.k...kk...k.','.k....k...k.','.kkkkkkkkkk.','....kkkk....','............','............','............','............'],
+    ['............','..kkkkkkkk..','.k........k.','.k...kk...k.','.k...kk...k.','.k....k...k.','.kkkkkkkkkk.','....kkkk....','....kkkk....','..kkkkkkkk..','............','............'],
+    ['............','..dddddddd..','.d........d.','.d...rr...d.','.d...rr...d.','.d....r...d.','.dddddddddd.','....kkkk....','....kkkk....','..kkkkkkkk..','............','............'],
+    ['............','..kkkkkkkk..','.k.cccccc.k.','.k.ckckcc.k.','.k.cccccc.k.','.k........k.','.kkkkkkkkkk.','....kkkk....','....kkkk....','..kkkkkkkk..','............','............'],
+    ['..y.........','..gggggggg..','.g.cccccc.g.','.g.ckckcc.g.','.g.cccccc.g.','.g........g.','.gggggggggg.','....gggg....','....gggg....','..gggggggg..','............','.........y..']
+  ],
+  heavy180:[
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkddkkkk.','.kkkd..dkkk.','.kkkd..dkkk.','.kkkkddkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkddddkk..','.kdkkkkkkdk.','.kkkkggkkkk.','.kdkg..gkdk.','.kdkg..gkdk.','.kkkkggkkkk.','.kdkkkkkkdk.','..kkddddkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkggggkkk.','.kkgg..ggkk.','.kkgg..ggkk.','.kkkggggkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['.........y..','...kkkkkk...','..kkccppkk..','.kkkkkkkkkk.','.kkkggggkkk.','.kkgg..ggkk.','.kkgg..ggkk.','.kkkggggkkk.','.kkkkkkkkkk.','..kkppcckk..','...kkkkkk...','.y..........']
+  ],
+  matrix:[
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kw.....wkk.','.kkkddddkkk.','.kkkd..dkkk.','.kkkddddkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kw.w.w.wkk.','.kkkeeeekkk.','.kkke..ekkk.','.kkkeeeekkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.ky.y.y.ykk.','.kkkeeeekkk.','.kkke..ekkk.','.kkkeeeekkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.ky.y.y.ykk.','.kkkggggkkk.','.kkkg..gkkk.','.kkkggggkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['..y.........','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kc.c.c.ckk.','.kkkggggkkk.','.kkkg..gkkk.','.kkkggggkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','.........y..']
+  ],
+  numbered:[
+    ['............','.kkkkkkkkk..','.kwwwwwwwk..','.kwkwwkwwk..','.kwwwwwwwk..','.kwwkwkwwk..','.kwwwwwwwk..','.kkkkkkkkk..','....kk......','....kk......','............','............'],
+    ['............','.kkkkkkkkk..','.kyyyyyyyk..','.kykyykyyk..','.kyyyyyyyk..','.kyykykyyk..','.kyyyyyyyk..','.kkkkkkkkk..','....kk......','....kk......','............','............'],
+    ['............','.kkkkkkkkk..','.kyyyyyyyk..','.kykyykyyk..','.kyyyyyyyk..','.kyykykyyk..','.kyyyyyrrk..','.kkkkkkkkk..','....kk......','....kk......','............','............'],
+    ['............','.ggggggggg..','.gyyyyyyyg..','.gykyykyyg..','.gyyyyyyyg..','.gyykykyyg..','.gyyyyyyyg..','.ggggggggg..','....gg......','....gg......','............','............'],
+    ['.y..........','.ggggggggg..','.gyyyyyyyg..','.gykyykyyg..','.gyyyyyyyg..','.gyykykyyg..','.gyyyyyrrg..','.ggggggggg..','....gg......','....gg......','..........y.','............']
+  ],
+  headphone:[
+    ['............','....kkkk....','...kk..kk...','..kk....kk..','..k......k..','..k......k..','.kkk....kkk.','.kkk....kkk.','.kkk....kkk.','.kkk....kkk.','............','............'],
+    ['............','....kkkk....','...kk..kk...','..kk....kk..','..k......k..','..k......k..','.kkk....kkk.','.kgk....kgk.','.kgk....kgk.','.kkk....kkk.','............','............'],
+    ['............','....kkkk....','...kkeekk...','..kk....kk..','..k......k..','..k......k..','.kkk....kkk.','.kgk....kgk.','.kgk....kgk.','.kkk....kkk.','............','............'],
+    ['............','....gggg....','...ggeegg...','..gg....gg..','..g......g..','..g......g..','.ggg....ggg.','.gyg....gyg.','.gyg....gyg.','.ggg....ggg.','............','............'],
+    ['..y......y..','....gggg....','...ggeegg...','..gg....gg..','..g......g..','..g......g..','.ggg....ggg.','.gcg....gcg.','.gcg....gcg.','.ggg....ggg.','............','............']
+  ],
+  bizcard:[
+    ['............','............','..kkkkkkkk..','..kwwwwwwk..','..kwkkkwwk..','..kwwwwwwk..','..kwkkkkwk..','..kwwwwwwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
+    ['............','............','..kkkkkkkk..','..kwwwwwwk..','..kwkkkwwk..','..kwwwwwwk..','..kwkkkkwk..','..kwwwwwwk..','..kwwwwgwk..','..kkkkkkkk..','............','............'],
+    ['............','............','..kkkkkkkk..','..kwwwwwrk..','..kwkkkwwk..','..kwwwwwwk..','..kwkkkkwk..','..kwwwwwwk..','..kwwwwgwk..','..kkkkkkkk..','............','............'],
+    ['............','............','..dddddddd..','..dkkkkkkd..','..dkwwwkkd..','..dkkkkkkd..','..dkwwwwkd..','..dkkkkkkd..','..dkkkkwkd..','..dddddddd..','............','............'],
+    ['............','.........y..','..gggggggg..','..gkkkkkkg..','..gkyyykkg..','..gkkkkkkg..','..gkyyyykg..','..gkkkkkkg..','..gkkkkykg..','..gggggggg..','.y..........','............']
+  ],
+  isolation:[
+    ['............','............','............','.kkkkkkkkkk.','...d....d...','...d....d...','...d....d...','.kkkkkkkkkk.','............','............','............','............'],
+    ['............','............','.kkkkkkkkkk.','.kkkkkkkkkk.','...d....d...','..d.d..d.d..','...d....d...','..d.d..d.d..','.kkkkkkkkkk.','.kkkkkkkkkk.','............','............'],
+    ['............','............','.kkkkkkkkkk.','.bbbbbbbbbb.','...d....d...','..d.d..d.d..','...d....d...','..d.d..d.d..','.bbbbbbbbbb.','.kkkkkkkkkk.','............','............'],
+    ['............','............','.gkkkkkkkkg.','.kkkkkkkkkk.','...d....d...','..d.d..d.d..','...d....d...','..d.d..d.d..','.kkkkkkkkkk.','.gkkkkkkkkg.','..g......g..','............'],
+    ['..y.........','............','.gggggggggg.','.gkkkkkkkkg.','...c....c...','..c.c..c.c..','...c....c...','..c.c..c.c..','.gkkkkkkkkg.','.gggggggggg.','..g......g..','.........y..']
+  ],
+  firstpress:[
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..kkkkkkkk..','.kkkkkkkkkk.','.kkkkggkkkk.','.kkkggggkkk.','.kkkggggkkk.','.kkkkggkkkk.','.kkkkkkkkkk.','..kkkkkkkk..','...kkkkkk...','............'],
+    ['............','...kkkkkk...','..gkkkkkkg..','.kkkkkkkkkk.','.kkkkggkkkk.','.gkkggggkkg.','.gkkggggkkg.','.kkkkggkkkk.','.kkkkkkkkkk.','..gkkkkkkg..','...kkkkkk...','............'],
+    ['............','...gggggg...','..gkkkkkkg..','.gkkkkkkkkg.','.gkkkggkkkg.','.gkkggggkkg.','.gkkggggkkg.','.gkkkggkkkg.','.gkkkkkkkkg.','..gkkkkkkg..','...gggggg...','............'],
+    ['..y......y..','...gggggg...','..gggggggg..','.gggggggggg.','.ggggyygggg.','.gggy..yggg.','.gggy..yggg.','.ggggyygggg.','.gggggggggg.','..gggggggg..','...gggggg...','............']
+  ],
+  column:[
+    ['............','..kkkkkkkk..','..kwwwwwwk..','..kwdddwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
+    ['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkwwk..','..kwwwwwwk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
+    ['............','..kkkkkkkk..','..kwwwwwwk..','..kwrrrwwk..','..kwwwwwwk..','..kwkwkbbk..','..kwwwwbbk..','..kwkwkkwk..','..kwwwwwwk..','..kkkkkkkk..','............','............'],
+    ['............','..gggggggg..','..gwwwwwwg..','..gwrrrwwg..','..gwwwwwwg..','..gwkwkbbg..','..gwwwwbbg..','..gwkwkkwg..','..gwwwwwwg..','..gggggggg..','............','............'],
+    ['.y..........','..gggggggg..','..gwwwwwwg..','..gwrrrwwg..','..gwwwwwwg..','..gwkwkbbg..','..gwwwwbbg..','..gwkwkkwg..','..gwwwwyyg..','..gggggggg..','.........y..','............']
+  ],
+};
 // 通用像素圖轉 SVG（任意寬高的格子字串；發燒配件 12×12、小人 16×16 都走這裡）
 function pixArtHTML(rows, size, cls){
   const w=rows[0].length, h=rows.length;
@@ -1018,32 +1140,17 @@ function pixArtHTML(rows, size, cls){
   rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
   return `<svg class="pixicon ${cls||''}" width="${size}" height="${Math.round(size*h/w)}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
 }
-// 發燒配件圖示＝像素本體＋「等級鑲框」（升級看得見）：
-//   Lv.1 素面 → Lv.2 銅角釘 → Lv.3 銀角框 → Lv.4 金角框 → Lv.5 金滿框＋星光閃爍。
-//   viewBox 外擴一圈畫框（本體 12×12 不動）；lvOverride 給預覽用（藏家升級卡先看下一級）。
-const LV_DECO = {2:'#b0763e', 3:'#9aa4b0', 4:'#b8860b', 5:'#b8860b'};
+// 發燒配件圖示＝該等級的專屬像素圖（升級看得見：材質與細節整張換新）：
+//   Lv.1 陽春/磨舊 → Lv.2 標準 → Lv.3 進階材質 → Lv.4 鍍金精品 → Lv.5 傳說（發光＋星光）。
+//   優先取 PIX_ICONS_LV[icon][lv-1]；缺此表（後台自訂件）退回 PIX_ICONS；再無 → emoji/文字。
+//   lvOverride 給預覽用（藏家升級卡先看下一級）；Lv.5 外圈加淡金光暈（.pixlv5）。
 function relicIconHTML(r, size, lvOverride){
   size = size||22;
-  const rows = r && PIX_ICONS[r.icon];
-  const lv = lvOverride!=null ? lvOverride : (r ? relicLvOf(r.id) : 1);
+  const lv = Math.min(5, Math.max(1, lvOverride!=null ? lvOverride : (r ? relicLvOf(r.id) : 1)));
+  const set = r && PIX_ICONS_LV[r.icon];
+  const rows = set ? set[lv-1] : (r && PIX_ICONS[r.icon]);
   if(!rows) return `<span style="font-size:${Math.max(10,size-8)}px;line-height:1">${(r&&r.icon)||'🎁'}</span>`;
-  if(lv<=1) return pixArtHTML(rows, size);
-  const W=rows[0].length+2, H=rows.length+2, R=W-1, B=H-1;
-  let rects='';
-  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x+1}" y="${y+1}" width="1" height="1" fill="${c}"/>`; } });
-  const c=LV_DECO[Math.min(5,lv)]||LV_DECO[2];
-  const px=(x,y,fill,cls)=>`<rect x="${x}" y="${y}" width="1" height="1" fill="${fill}"${cls?` class="${cls}"`:''}/>`;
-  if(lv===2){
-    rects+=px(0,0,c)+px(R,0,c)+px(0,B,c)+px(R,B,c);                       // 四角銅釘
-  } else if(lv<=4){
-    [[0,0,1,0,0,1],[R,0,R-1,0,R,1],[0,B,1,B,0,B-1],[R,B,R-1,B,R,B-1]]    // 四角 L 形角框
-      .forEach(a=>{ rects+=px(a[0],a[1],c)+px(a[2],a[3],c)+px(a[4],a[5],c); });
-  } else {
-    for(let x=0;x<=R;x++) rects+=px(x,0,c)+px(x,B,c);                     // 金滿框
-    for(let y=1;y<B;y++)  rects+=px(0,y,c)+px(R,y,c);
-    rects+=px(R-2,1,'#fff','lvspark')+px(1,B-2,'#ffe9a8','lvspark d');    // 星光兩點交錯閃
-  }
-  return `<svg class="pixicon" width="${size}" height="${Math.round(size*H/W)}" viewBox="0 0 ${W} ${H}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
+  return pixArtHTML(rows, size, lv>=5 ? 'pixlv5' : '');
 }
 
 // ---------- 像素小人（16×16 手刻：對手 8 階＋藏家＋三流派；動畫走 CSS class） ----------
