@@ -10,6 +10,7 @@
   :root {
     --black:#111; --gray:#888; --line:#ddd; --bg:#fff; --mono:'Space Mono',monospace;
     --hp:#111; --hp-bg:#eee; --dmg:#c11628; --gold:#b8860b; --qi:#b8860b;
+    --classic:#1f5fae; --obscurity:#6a3fa0; --accessibility:#c11628;   /* 三屬性星格用色（同 roguelike） */
     --silver-shine:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
     --oil-shine:linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
     --crimson-shine:linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%);
@@ -63,10 +64,16 @@
   .cd2-cover.ri-noimg span { font-size:12px; font-weight:700; color:#444; }
   .cd2-art { font-size:11px; color:var(--gray); letter-spacing:0.08em; }
   .cd2-alb { font-size:16px; font-weight:700; line-height:1.35; margin:2px 0 12px; }
-  .cd2-stats { display:flex; justify-content:center; gap:18px; margin-bottom:14px; }
-  .cd2-st { font-size:10px; color:var(--gray); letter-spacing:0.06em; }
-  .cd2-st b { display:block; font-size:15px; color:var(--black); font-weight:700; margin-top:2px; }
-  .cd2-st.act { color:var(--gold); } .cd2-st.act b { color:var(--gold); }
+  /* 三屬性改 roguelike 介紹彈窗同款：名稱＋星格同列、整組置中；出招屬性名稱金色 */
+  .cd2-stats { width:max-content; margin:0 auto 14px; display:flex; flex-direction:column; gap:2px; }
+  .cd2-st { display:flex; align-items:center; gap:5px; font-size:9px; color:var(--gray); }
+  .cd2-st .lab { width:24px; text-align:left; }
+  .cd2-st.act .lab { color:var(--gold); font-weight:700; }
+  .cd2-pips { display:flex; gap:2px; }
+  .cd2-pip { width:7px; height:7px; background:#eee; border:1px solid #e0e0e0; }
+  .cd2-pip.on.classic { background:var(--classic); border-color:var(--classic); }
+  .cd2-pip.on.obscurity { background:var(--obscurity); border-color:var(--obscurity); }
+  .cd2-pip.on.accessibility { background:var(--accessibility); border-color:var(--accessibility); }
   .cd2-desc { font-size:12px; line-height:1.9; text-align:left; color:#333; letter-spacing:0.03em; padding:14px; border:1px solid var(--line); }
   .cd2-desc.load { text-align:center; color:var(--gray); }
   .hpbar { height:14px; background:var(--hp-bg); position:relative; overflow:hidden; }
@@ -143,7 +150,8 @@
   .tellbox b { display:block; color:var(--black); font-size:10px; margin-top:3px; }
   .sub.fx { color:var(--qi); margin-top:2px; }
   .vs { align-self:center; font-weight:700; font-size:13px; color:var(--gray); letter-spacing:0.1em; }
-  .battle-mini-player { position:absolute; z-index:7; left:50%; top:calc(50% + 18px); width:40px; height:28px; transform:translateX(-50%); padding:0; border:1px solid var(--black); background:#c8b89d; cursor:pointer; image-rendering:pixelated; }
+  /* 像素唱機：住在卡片資訊彈窗（三屬性下、簡介上置中）；播放時唱盤轉＋音符飄，點擊靜音/恢復 */
+  .battle-mini-player { position:relative; display:block; width:40px; height:28px; margin:0 auto 14px; padding:0; border:1px solid var(--black); background:#c8b89d; cursor:pointer; image-rendering:pixelated; }
   .battle-mini-player::before { content:''; position:absolute; width:20px; height:20px; left:3px; top:3px; border-radius:50%; background:repeating-radial-gradient(circle,#222 0 2px,#080808 3px 5px); box-shadow:0 0 0 2px #666; }
   .battle-mini-player::after { content:''; position:absolute; width:3px; height:18px; right:6px; top:3px; background:#555; transform:rotate(28deg); transform-origin:50% 2px; box-shadow:2px 0 #ddd; }
   .battle-mini-player.playing::before { animation:miniVinylSpin .9s linear infinite; }
@@ -400,7 +408,6 @@
     <div class="slots">
       <div class="slot" id="eSlot"></div>
       <div class="vs">VS</div>
-      <button class="battle-mini-player" id="battleMiniPlayer" type="button" aria-label="關閉對戰音樂" aria-pressed="true"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
       <div class="slot" id="pSlot"></div>
       <div class="callout" id="callout"></div>
     </div>
@@ -1511,12 +1518,34 @@ function cardDetailHtml(card){
   const cover = card.coverUrl
     ? `<div class="cd2-cover" style="background-image:url('${String(card.coverUrl).replace(/'/g,'%27')}')"></div>`
     : `<div class="cd2-cover ri-noimg"><span>${card.album}</span></div>`;
-  const stats = ATTRS.map(a=>`<span class="cd2-st${a===card._attr?' act':''}">${ATTR_ZH[a]}<b>${card[a]}</b></span>`).join('');
-  return `<div class="cd2">${aceTag}${cover}
+  // 三屬性：roguelike 同款「名稱＋星格」列（平常 5 格；頂級卡單軸破 5 才擴成 7 格）
+  const stats = ATTRS.map(a=>{
+    const n=card[a]||0, total=n>5?7:5;
+    let pips=''; for(let i=0;i<total;i++) pips+=`<span class="cd2-pip${i<n?' on '+a:''}"></span>`;
+    return `<div class="cd2-st${a===card._attr?' act':''}"><span class="lab">${ATTR_ZH[a]}</span><div class="cd2-pips">${pips}</div></div>`;
+  }).join('');
+  // 打折花車雜牌是虛構合輯 → 不給串流搜尋連結
+  const stream = card.junk?'':`<a class="btn" id="cd2Stream" style="display:block;margin-top:12px;text-decoration:none" href="${streamSearchUrl(card)}" target="_blank" rel="noopener">▶ 串流聽這張</a>`;
+  return `<div class="cd2">${cover}
     <div class="cd2-art">${card.artist||''}</div>
     <div class="cd2-alb">${card.album||''}</div>
+    ${aceTag}
     <div class="cd2-stats">${stats}</div>
-    <div class="cd2-desc load" id="cd2Desc">載入簡介…</div></div>`;
+    <button class="battle-mini-player${battleMusicOn?'':' muted'}" id="battleMiniPlayer" type="button" aria-label="${battleMusicOn?'關閉':'開啟'}對戰音樂" aria-pressed="${battleMusicOn}"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
+    <div class="cd2-desc load" id="cd2Desc">載入簡介…</div>${stream}</div>`;
+}
+// 串流連結：先給 Spotify 搜尋連結保證可點，抓到專輯直連再換上（同 roguelike）
+function streamSearchUrl(c){ return 'https://open.spotify.com/search/'+encodeURIComponent((c.artist||'')+' '+(c.album||'')); }
+async function ensureStreamUrl(c){
+  if(c._streamUrl) return c._streamUrl;
+  try{
+    const r=await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`);
+    if(r.ok){ const d=await r.json(); if(d && d.spotifyUrl) return c._streamUrl=d.spotifyUrl; }
+  }catch(e){}
+  return c._streamUrl=streamSearchUrl(c);
+}
+function hookStreamLink(id, card){
+  ensureStreamUrl(card).then(u=>{ const a=document.getElementById(id); if(a&&u) a.href=u; });
 }
 // 打折花車雜牌是虛構合輯 → 不打 /album-desc（免得 AI 瞎掰），給店長吐槽即可
 const JUNK_DESCS = [
@@ -1550,6 +1579,9 @@ function openCardInfo(card){
   document.getElementById('recBody').innerHTML = cardDetailHtml(card);
   document.getElementById('recModal').classList.add('show');
   // 不再依回合勝負自動播；玩家主動點任一方檯面專輯、看到介紹時才播放。
+  _cardInfoCard=card;
+  syncBattleMusicToggle();   // 彈窗剛生出來：套上目前播放/靜音狀態（唱盤轉動、音符）
+  if(!card.junk) hookStreamLink('cd2Stream', card);
   playBattleAlbum(card);
   // 開窗當下還沒抓到封面 → 補抓，抓到即時換上（不然彈窗會停在斜紋佔位）
   if(!card.coverUrl) ensureCover(card).then(url=>{
@@ -1749,7 +1781,6 @@ onAuthStateChanged(auth, (user)=>{
 
 document.getElementById('restart').addEventListener('click', showLobby);
 document.getElementById('battleMusicToggle').addEventListener('click', ()=>setBattleMusic(!battleMusicOn));
-document.getElementById('battleMiniPlayer').addEventListener('click', ()=>setBattleMusic(!battleMusicOn));
 document.getElementById('ovAgain').addEventListener('click', ()=>startMatch(lastOpp));
 document.getElementById('ovLobby').addEventListener('click', showLobby);
 // 規則浮動視窗
@@ -1763,16 +1794,25 @@ document.getElementById('rulesClose2').addEventListener('click', closeRules);
 rulesModal.addEventListener('click', e=>{ if(e.target===rulesModal) closeRules(); });
 // 出牌紀錄 / 點檯面卡看資訊
 const recModal=document.getElementById('recModal');
-let recShowsCardInfo=false;
+let recShowsCardInfo=false, _cardInfoCard=null;
 const closeRec=()=>{
   const wasOpen=recModal.classList.contains('show');
   recModal.classList.remove('show');
   recShowsCardInfo=false;
+  _cardInfoCard=null;
   // 手機的關閉鈕、點遮罩與 Escape 都走同一路徑；只要視窗原本開著就淡出音樂。
   if(wasOpen) window.DipPlayer?.stop({fade:true});
 };
 document.getElementById('recClose').addEventListener('click', closeRec);
-recModal.addEventListener('click', e=>{ if(e.target===recModal) closeRec(); });
+recModal.addEventListener('click', e=>{
+  // 彈窗內的像素唱機：點一下靜音（停播）、再點恢復播放目前這張（動態產生 → 用事件委派）
+  if(e.target.closest('#battleMiniPlayer')){
+    setBattleMusic(!battleMusicOn);
+    if(battleMusicOn && recShowsCardInfo && _cardInfoCard) playBattleAlbum(_cardInfoCard);
+    return;
+  }
+  if(e.target===recModal) closeRec();
+});
 document.getElementById('eRecBtn').addEventListener('click', ()=>openRecords('e'));
 document.getElementById('pRecBtn').addEventListener('click', ()=>openRecords('p'));
 document.getElementById('eSlot').addEventListener('click', ()=>{ const s=document.getElementById('eSlot'); if(s.classList.contains('filled')&&G&&G.eShow) openCardInfo(G.eShow); });

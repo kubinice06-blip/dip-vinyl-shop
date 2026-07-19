@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜像素唱機搬進專輯介紹彈窗、兩遊戲介紹版面統一
+- Repo：`dip-vinyl-shop`
+- 改動：依店主指示把像素唱機從戰場移進「專輯介紹（卡片資訊）」彈窗：battle 移除牌桌正中央的 `#battleMiniPlayer`、roguelike 移除我方小人旁那台，唱機改為彈窗內「三屬性下方、簡介上方」置中一台，播放時唱盤轉動＋音符飄出，點一下靜音停播、再點恢復播放目前這張（battle 用 recModal 事件委派，roguelike 用全域 `toggleCardInfoMusic()`；皆記住彈窗當前卡片以便恢復）。修正 roguelike 介紹彈窗三屬性跑版的根因：`.st` 的橫排規則只套在 `.card .st`，彈窗內沒套到，且屬性名稱誤吃 `.drawcard .lab` 金色大標樣式——補上 `.drawcard .st`／`.st .lab` 專屬規則，名稱＋星格同列、整組置中。單場對決的卡片資訊彈窗改成與 roguelike 一致的排版：封面→藝人→專輯→王牌徽章→三屬性星格（同色 pips、出招屬性名稱金色）→唱機→簡介→「▶ 串流聽這張」（雜牌不給串流鍵；battle 補上 `--classic/--obscurity/--accessibility` 色票與 `streamSearchUrl`/`hookStreamLink`，先給 Spotify 搜尋連結、抓到直連再換上）。
+- 主要檔案：`battle.html`、`roguelike.html`
+- 驗證：本機 http-server 實跑兩頁。battle：牌桌中央唱機消失；出牌後點檯面卡，彈窗順序與置中量測（stats/唱機 center offset 皆 0、三列 lab/pips X 對齊）、唱機 playing→點擊 muted 停播→再點恢復 playing、串流鍵存在。roguelike：戰場上無唱機；彈窗屬性名稱恢復灰 9px 非大寫、名稱與星格同列、整組置中、唱機置中並可靜音/恢復。兩頁手機 375px 寬皆無橫向溢出、彈窗內容置中完整。console 全程無 error。截圖工具逾時（既知環境問題），以 DOM 幾何量測代替。
+
 ### 2026-07-19｜啟動全卡池 Apple collectionId 預匹配管線
 - Repo：`dip-vinyl-shop`
 - 改動：依店主指示，將播放來源方向改為事先替 5,526 張 seed 卡與 600 張 apex 卡（共 6,126 張不重複專輯）建立 Apple 音源對照，不再於玩家點開介紹時依名稱臨時猜測。新增可中斷續跑、原子保存的批次工具：以保守速率查 TW／US storefront，嚴格核對藝人、專輯、合作藝人及版本，保存 `collectionId`、storefront、正式名稱、試聽數與代表 preview；低信心結果不強配，區分待複核、Apple 無試聽與查詢錯誤。第一批 1,000 張完成後會先通過結構、成功率、錯誤率與真實 `/lookup` 抽驗 gate；通過後自動重新分類第一批模糊結果，再接續掃完剩餘卡池。加入每小時進度／完成通知，遇品質 gate 失敗會停止，不會重複啟動批次。
