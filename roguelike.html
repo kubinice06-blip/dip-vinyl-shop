@@ -1798,6 +1798,24 @@ function attachSeedPress(el, i){
   el.addEventListener('pointerleave', cancel);
   el.addEventListener('contextmenu', e=>e.preventDefault());
 }
+// 對戰手牌長按（450ms）→ 彈出唱片資訊＋播放試聽（跟種子牌同一套）；放開前移動視為滑動、取消
+let _handHeld=false, _handTimer=null, _handPt=null;
+function attachHandPress(el, card){
+  el.addEventListener('pointerdown', e=>{
+    _handPt={x:e.clientX,y:e.clientY};
+    clearTimeout(_handTimer);
+    _handTimer=setTimeout(()=>{
+      _handHeld=true; setTimeout(()=>{ _handHeld=false; }, 800);   // 放開時的誤點吞掉
+      openCardInfo(card);
+    }, 450);
+  });
+  const cancel=()=>clearTimeout(_handTimer);
+  el.addEventListener('pointermove', e=>{ if(_handPt && (Math.abs(e.clientX-_handPt.x)>12 || Math.abs(e.clientY-_handPt.y)>12)) cancel(); });
+  el.addEventListener('pointerup', cancel);
+  el.addEventListener('pointercancel', cancel);
+  el.addEventListener('pointerleave', cancel);
+  el.addEventListener('contextmenu', e=>e.preventDefault());
+}
 // 選牌以「卡」為單位（存卡片物件，key=artist|album），唱片櫃與隨機發牌兩個頁籤可混著選
 function toggleSeed(i){
   if(_seedHeld){ _seedHeld=false; return; }   // 長按看介紹的那一下，別誤觸選牌
@@ -2006,6 +2024,17 @@ function applyWear(){
 // =========================================================================
 //  無限賽局：開下一場（敵人隨 depth 變強）
 // =========================================================================
+// 對手抽牌池：跟玩家同一個 6000+ 張完整卡池撈，但依 depth 設「品質下限」——
+// 越深入，能被抽到的專輯整體越強（第 1 場門檻低、什麼都有；越往後只剩強盤）。
+// 仍是整個卡池 → 場場不同、牌面豐富，不再侷限在同一小撮狠牌。
+function enemyStarSum(c){ return (c.classic||0)+(c.obscurity||0)+(c.accessibility||0); }
+function enemyPoolBag(d){
+  const pool = allPool().filter(c=>!c.ace);           // 王牌另循機率加入，這裡只給普卡
+  const minSum = Math.min(13, 3 + Math.floor(d*0.7)); // d1→3、d5→6、d10→10、d14→13（三軸總星 3~15）
+  let bag = pool.filter(c=>enemyStarSum(c)>=minSum);
+  if(bag.length < 11) bag = pool.slice();             // 門檻太高抽不滿 → 放寬回整池
+  return shuffle(bag);
+}
 function enemyForDepth(d){
   const boss = isBossDepth(d);                   // 每 5 場一位傳說藏家（里程碑強敵，打贏掉發燒配件）
   // 難度曲線：前 3 場是暖身（三圍近乎 0、牌從全池隨機抓），第 4 場起才進陡升段、第 5 場進 hard
@@ -2019,20 +2048,12 @@ function enemyForDepth(d){
   const hp = CFG.startHp + Math.floor((d-1)*1.2) + (boss?2:0);   // 血只微升（保持 3~4 招快打），難度靠三圍/AI
   let startQi = d<4 ? 0 : Math.min(3, Math.floor((d-2)/2));   // 第4場1 → 第6場2 → 第8場3
   if(boss) startQi = Math.max(startQi, 2);
-  // 牌組：暖身期從整個卡池隨機抓（有強有弱）；第 4 場起改抽「強牌帶」並隨深度整體加值
+  // 牌組：跟玩家同一個完整卡池撈，品質下限隨 depth 爬升（見 enemyPoolBag）；再隨深度整體微加值
   const buff = Math.floor(late/3);              // 第6場起敵牌主軸 +1、第9場 +2（上限 6）
-  const ranked = allPool().slice().sort((a,b)=>
-    (b.classic+b.obscurity+b.accessibility)-(a.classic+a.obscurity+a.accessibility));
-  // 在「強牌帶」內隨機取樣（帶寬至少 120 張、隨深度放寬）：
-  // 舊寫法固定切全池最強前 16 張，排序是確定性的 → 前期敵人永遠同一批卡；改成帶內抽樣後場場不同
-  const bandN = Math.min(ranked.length, Math.max(120, (16 + d*3) * 8));
-  const strongBag = d<4 ? shuffle(allPool().filter(c=>!c.ace)) : shuffle(ranked.slice(0, bandN));   // 暖身期不給敵人王牌
-  const wildBag = shuffle(allPool().filter(c=>!c.ace));   // 與玩家同一個完整卡池（冷熱強弱都有）
+  const bag = enemyPoolBag(d);
   const deck=[];
   for(let i=0;i<11;i++){
-    // 35% 機率改抽「玩家同款全卡池」：對手牌面更豐富、不會場場都是同一批狠牌
-    const src = (d>=4 && Math.random()<0.35) ? wildBag : strongBag;
-    const c=copyCard(src[i%src.length]);
+    const c=copyCard(bag[i%bag.length]);
     if(buff>0 && !c.ace){                       // 加在該卡最高的主軸上，讓敵牌更難纏（王牌 7 星不動）
       const mainAttr = ATTRS.reduce((m,a)=>c[a]>c[m]?a:m, 'classic');
       c[mainAttr]=Math.min(6, c[mainAttr]+buff);
@@ -2104,6 +2125,20 @@ function bossIntro(){
 }
 
 function drawCard(s){ if(s.deck.length) s.hand.push(s.deck.pop()); }
+// 牌庫抽乾 → 隨機從卡池補 3 張續戰（不再速判結束）：
+//   玩家補自己本趟牌組（RUN.deck）的盤；對手補依 depth 的品質池。續到有一方 HP 歸零為止。
+function refillDeck(side){
+  const s=G[side];
+  if(side==='p'){
+    const base=(RUN&&RUN.deck&&RUN.deck.length)?RUN.deck:allPool().filter(c=>!c.ace);
+    for(let i=0;i<3;i++) s.deck.push(copyCard(pick(base)));
+    pushLog('🎴 你的牌抽乾了——從本趟牌組再抽 3 張續戰','good');
+  } else {
+    const bag=enemyPoolBag(RUN?RUN.depth:1);
+    for(let i=0;i<3;i++) s.deck.push(copyCard(pick(bag)));
+    pushLog('🎴 對手的牌抽乾了——從卡池再補 3 張續戰','hit');
+  }
+}
 function pushLog(t,cls=''){ G.log.unshift({t,cls}); if(G.log.length>40)G.log.pop(); }
 
 function computeChain(side, attr){
@@ -2178,8 +2213,9 @@ function startTurn(){
   // 能力：每回合回血
   if(RUN.mods.regen && G.turn>1) G.p.hp=Math.min(G.p.maxHp, G.p.hp+RUN.mods.regen);
   // AI 暗定 + 虛晃（隨深度越來越會騙：氣場提示不再可以照剋）
-  const plan=aiPlan();
-  if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 對手無牌可出 → 速判
+  let plan=aiPlan();
+  if(!plan){ refillDeck('e'); drawCard(G.e); plan=aiPlan(); }   // 對手無牌 → 從卡池補牌續戰（不速判結束）
+  if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 補牌後仍無（理論上不會）→ 保險速判
   let attr=plan.attr, card=plan.card, vague=false; const tell=plan.attr;
   const d=RUN.depth, mercy=mercyLevel();
   const fd = Math.max(0, 1 - relicFx('feintDown')/100);   // 老闆的名片：對手虛晃機率打折
@@ -2430,6 +2466,8 @@ function renderHand(){
     const ring=c.ace?`ace-border ace-${c.ace}`:rarityCls(c);
     return `<div class="handtile ${ring} ${eUltNext&&c.ace?'counter-ready':''} ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}${counterTag}</div>`;
   }).join('');
+  // 長按手牌 → 唱片資訊＋試聽
+  G.p.hand.forEach(c=>{ const tile=el.querySelector(`.handtile[data-uid="${c.uid}"]`); if(tile) attachHandPress(tile,c); });
   // 即時補封面
   G.p.hand.forEach(c=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
     const cov=el.querySelector(`.handtile[data-uid="${c.uid}"] .ht-cover`); if(cov){ cov.classList.remove('ht-noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
@@ -2438,7 +2476,7 @@ function renderHand(){
   renderTilePop();
   syncRogueMusic();
 }
-function selectCard(uid){ if(G.busy||G.over) return; _sel = (_sel===uid?null:uid); renderHand();
+function selectCard(uid){ if(G.busy||G.over) return; if(_handHeld){ _handHeld=false; return; } _sel = (_sel===uid?null:uid); renderHand();
   if(_sel){ const t=document.querySelector('.handtile.sel'); if(t) t.scrollIntoView({block:'nearest',inline:'center'}); } }
 function renderTilePop(){
   const pop=document.getElementById('tilePop'); if(!pop) return;
@@ -2633,13 +2671,12 @@ async function play(uid, pAttr){
   if(G.e.hp<=0){ winFight(); return; }
   if(G.p.hp<=0){ loseFight(); return; }
 
-  // 抽牌 + 棄牌 + 疲勞（牌庫空 → 受傷遞增；beta 簡化）
+  // 抽牌 + 棄牌：牌庫抽乾 → 從卡池補 3 張續戰（不再速判結束，打到有一方 HP 歸零為止）
+  if(!G.p.deck.length) refillDeck('p');
+  if(!G.e.deck.length) refillDeck('e');
   drawCard(G.p); drawCard(G.e);
   while(G.p.hand.length>CFG.handLimit) G.p.hand.shift();
   while(G.e.hand.length>CFG.handLimit) G.e.hand.shift();
-  if(G.p.hand.length===0 || G.e.hand.length===0){ // 任一方無牌可出 → 速判
-    if(G.p.hp>=G.e.hp) winFight(); else loseFight(); return;
-  }
   callout(''); startTurn();
 }
 
@@ -2729,6 +2766,8 @@ function loseFight(){
     G.p.hp=Math.min(RUN.maxHp,rvHp); RUN.hp=G.p.hp;
     pushLog(`🌟 神秘見本盤發出微光——免死回魂，HP ${G.p.hp}！`,'good');
     callout('<span class="good">🌟 神秘見本盤 · 免死回魂</span>');
+    if(!G.p.deck.length) refillDeck('p');
+    if(!G.e.deck.length) refillDeck('e');
     drawCard(G.p); drawCard(G.e);
     if(G.p.hand.length>0 && G.e.hand.length>0){
       refreshFighters(); renderHand();
@@ -2892,6 +2931,7 @@ function openLoadout(){
         : (RUN.equipped.length<wearSlots()
             ? `<button class="pill" style="cursor:pointer;background:#fff;color:var(--gold);border-color:var(--gold)" onclick="loAct('equip','${id}')">出戰</button>`
             : `<span class="pill" style="opacity:.4">欄滿</span>`);
+      acts += `<button class="pill" style="cursor:pointer;background:#fff" onclick="loCare('${id}')" aria-label="保養或升級">🔧 保養/升級</button>`;
     }
     return `<div class="relic-list-row"><div class="ric">${relicIconHTML(r,26)}</div>
       <div style="flex:1"><b style="font-size:12px">${r.name}</b> <span class="pill" style="font-size:8px">Lv.${relicLvOf(id)}</span> <span style="font-size:9px;color:${g.color}">${gradeName(r)} · 耐久 ${duraOf(wearOf(id))}${g.mul>0?'':' · 失效'}</span>
@@ -2901,8 +2941,8 @@ function openLoadout(){
   };
   const eq=equippedRelics(), bench=benchedRelics();
   mask.innerHTML=`<div class="drawcard" style="max-width:460px;text-align:left;max-height:84vh;overflow-y:auto">
-    <div class="lab">🎒 整備發燒配件 · 出戰欄 ${eq.length}/${wearSlots()}</div>
-    <div class="muted" style="font-size:10px;margin:2px 0 8px">只有出戰的 fx 生效、每場磨損；庫存休息不耗。<b>耗損跨趟保留</b>，耐久磨到 0 整件<b>毀損、從收藏移除</b>；保養要等趟結束後在配件選單花現金。${locked?'<br><b style="color:var(--dmg)">戰鬥中鎖定，勝利後才能換裝。</b>':''}</div>
+    <div class="lab">🎒 整備發燒配件 · 出戰欄 ${eq.length}/${wearSlots()}<span style="float:right;color:var(--gold)">💰 $${cashOf()}</span></div>
+    <div class="muted" style="font-size:10px;margin:2px 0 8px">只有出戰的 fx 生效、每場磨損；庫存休息不耗。<b>耗損跨趟保留</b>，耐久磨到 0 整件<b>毀損、從收藏移除</b>。每場結束整備時可自由換裝，並按 <b>🔧 保養/升級</b> 花現金維修或升級。${locked?'<br><b style="color:var(--dmg)">戰鬥中鎖定，勝利後才能換裝。</b>':''}</div>
     ${eq.length?eq.map(r=>row(r,true)).join(''):'<div class="muted" style="font-size:11px">出戰欄空著。</div>'}
     ${bench.length?`<div class="lab" style="margin-top:12px">庫存（休息中 · 不耗損）</div>${bench.map(r=>row(r,false)).join('')}`:''}
     ${!RUN.relics.length?'<div class="muted" style="font-size:11px">尚無發燒配件——每 5 場擊敗「傳說藏家」可獲得。</div>':''}
@@ -2918,6 +2958,8 @@ function loAct(act,id){
   else if(act==='unequip') unequipRelic(id);
   openLoadout();   // 重繪面板
 }
+// 整備面板內按 🔧 → 開保養/升級視窗（疊在整備面板上；花現金維修或升級，關閉後回整備面板）
+function loCare(id){ openRelicCare(id); }
 // 發燒配件圖鑑（主畫面「發燒配件收藏」按鈕）：全部發燒配件列出，拿過的點亮、沒拿過的黑剪影＋？？？
 function openRelicDex(){
   if(document.getElementById('relicDexMask')) return;
@@ -3014,6 +3056,7 @@ function doUpgradeCash(id){
 // 保養後重繪身後畫面（圖鑑列表／出戰前選單／頂欄現金）
 function refreshCareContext(){
   if(document.getElementById('relicDexMask')){ closeRelicDex(); openRelicDex(); }
+  if(document.getElementById('loadoutMask')) openLoadout();   // 整備面板開著 → 重繪出戰欄/現金/耐久
   if(document.getElementById('loadoutGrid')) renderRelicLoadout();
   else { const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML(); }
 }
@@ -3110,12 +3153,14 @@ function openDrawReveal(){
     <div class="al">${c.album}</div>
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
+    <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
     ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmDraw()">帶這張盤進下一場 →</button>
     <div class="muted" style="font-size:10px;margin-top:8px">趟結束時，可從一路認識的盤中挑 <b>1</b> 張永久收進唱片櫃</div>
   </div>`;
   document.body.appendChild(mask);
+  _cardInfoCard=c; syncRogueMusic(); playRogueAlbum(c);   // 抽到盤即播放試聽（跟唱片資訊同一套）
   ensureCover(c).then(url=>{
     const el = document.getElementById('drawCov');
     if(url && el) el.outerHTML = `<img class="cov" id="drawCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
@@ -3129,6 +3174,7 @@ function _takeDrawnCard(c){
   if(!RUN.drawnCards.some(x=>keyOf(x)===keyOf(c))) RUN.drawnCards.push(c); // 記下來：趟結束結算時挑 1 張永久收藏（開局種子已在名單就不重複）
   RUN._drewThisWin = true;
   RUN._aceLuck = false;                        // 藏家加成用一次就歸零
+  window.DipPlayer?.stop({fade:true}); _cardInfoCard=null;   // 收起彈窗＝停播試聽
   const m = document.getElementById('drawMask'); if(m) m.remove();
   renderWinContinue();
 }
@@ -3160,11 +3206,13 @@ function openLootReveal(card){
     <div class="al">${c.album}</div>
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
+    <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="lootIntro">介紹載入中…</div>
     ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmLoot()">加入本趟牌組 →</button>
   </div>`;
   document.body.appendChild(mask);
+  _cardInfoCard=c; syncRogueMusic(); playRogueAlbum(c);   // 撿到盤即播放試聽
   ensureCover(c).then(url=>{
     const el = document.getElementById('lootCov');
     if(url && el) el.outerHTML = `<img class="cov" id="lootCov" src="${String(url).replace(/'/g,'%27')}" alt="">`;
@@ -3176,6 +3224,7 @@ function confirmLoot(){
   if(!_lootCard) return;
   RUN.deck.push(_lootCard);
   _lootCard = null;
+  window.DipPlayer?.stop({fade:true}); _cardInfoCard=null;   // 收起彈窗＝停播試聽
   const m = document.getElementById('lootMask'); if(m) m.remove();
   if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();   // 接續剩餘升級佇列
 }
@@ -3294,7 +3343,7 @@ function openCardInfo(card, opts){
   const mask=document.createElement('div');
   mask.className='drawmask'; mask.id='cardInfoMask';
   mask.innerHTML=`<div class="drawcard">
-    <div class="lab">卡片資訊</div>
+    <div class="lab">唱片資訊</div>
     ${card.coverUrl
       ? `<img class="cov" src="${String(card.coverUrl).replace(/'/g,'%27')}" alt="">`
       : `<div class="cov noimg"><span>${card.album}</span></div>`}
