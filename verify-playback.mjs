@@ -64,9 +64,29 @@ class MockAudio extends MockElement {
 }
 
 let mockGainNode = null;
+const bufferSources = [];
+class MockBufferSource {
+  constructor() {
+    this.buffer = null;
+    this.started = false;
+    this.stopped = false;
+    this.onended = null;
+    bufferSources.push(this);
+  }
+  connect(destination) { this.destination = destination; }
+  disconnect() {}
+  start() { this.started = true; }
+  stop() { this.stopped = true; }
+}
 class MockAudioContext {
-  constructor() { this.currentTime = 0; this.state = 'running'; this.destination = {}; }
-  createMediaElementSource() { return { connect() {} }; }
+  constructor() { this.currentTime = 0; this.state = 'running'; this.destination = {}; this.sampleRate = 48000; }
+  createBuffer(_channels, frames, sampleRate) { return { duration:frames / sampleRate, silent:true }; }
+  createBufferSource() { return new MockBufferSource(); }
+  decodeAudioData(_bytes, success) {
+    const decoded = { duration:30, decoded:true };
+    queueMicrotask(() => success?.(decoded));
+    return Promise.resolve(decoded);
+  }
   createGain() {
     const events = [];
     const gain = {
@@ -74,7 +94,7 @@ class MockAudioContext {
       cancelScheduledValues(time) { events.push({ type:'cancel', time }); },
       cancelAndHoldAtTime(time) { events.push({ type:'hold', value:this.value, time }); },
       setValueAtTime(value, time) { this.value = value; events.push({ type:'set', value, time }); },
-      linearRampToValueAtTime(value, time) { events.push({ type:'ramp', value, time }); }
+      linearRampToValueAtTime(value, time) { this.value = value; events.push({ type:'ramp', value, time }); }
     };
     mockGainNode = { gain, events, connect() {} };
     return mockGainNode;
@@ -87,6 +107,7 @@ const audioElements = [];
 let randomValue = 0;
 let youtubePlayer = null;
 const fetchCalls = [];
+const previewFetchCalls = [];
 const scriptRequests = [];
 
 class MockYoutubePlayer {
@@ -213,6 +234,14 @@ const context = {
   fetch: async url => {
     const requestUrl = String(url);
     fetchCalls.push(requestUrl);
+    if (requestUrl.startsWith('https://audio/')) {
+      previewFetchCalls.push(requestUrl);
+      return { ok:true, arrayBuffer:async () => new ArrayBuffer(16) };
+    }
+    if (requestUrl.startsWith('https://audio-ssl.itunes.apple.com/')) {
+      previewFetchCalls.push(requestUrl);
+      return { ok:true, arrayBuffer:async () => new ArrayBuffer(16) };
+    }
     if (requestUrl.startsWith('https://r.jina.ai/')) {
       const gatewayData = requestUrl.includes('Artist+G+Album+G') ? {
         resultCount:1,
@@ -258,25 +287,28 @@ await wait(10);
 const states = [];
 player.onStateChange(state => states.push({ ...state, at:Date.now() }));
 
-// The click handler calls unlock() before an uncached JSONP lookup. The same audio
-// element must remain authorized after that asynchronous lookup completes on iOS.
+// 點擊先解鎖 AudioContext；非同步查詢與解碼完成後，真實音檔必須只經過
+// AudioBufferSourceNode → GainNode，不能再交給會在 iOS 旁路成 100% 的 <audio>。
 player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer:'itunes' }), true);
 assert.equal(states.at(-1).provider, 'itunes');
 assert.equal(states.at(-1).trackName, 'A One');
-assert.equal(audioElements[0].src, 'https://audio/a1.m4a');
+assert.equal(previewFetchCalls.at(-1), 'https://audio/a1.m4a');
+assert.ok(!audioElements[0].src.includes('/a1.m4a'), 'real preview never plays through HTMLMediaElement');
 assert.equal(audioElements[0].loop, false);
-assert.ok(mockGainNode, 'iTunes preview is routed through Web Audio');
+let firstPreviewSource = bufferSources.filter(source => source.buffer?.decoded).at(-1);
+assert.ok(firstPreviewSource?.started, 'decoded iTunes preview starts as an AudioBufferSourceNode');
+assert.equal(firstPreviewSource.destination, mockGainNode, 'decoded preview has no route except the GainNode');
 assert.ok(mockGainNode.events.some(event => event.type === 'set' && event.value === 0), 'iTunes preview starts at zero gain');
 assert.ok(mockGainNode.events.some(event => event.type === 'ramp' && event.value === 0.5 && event.time === 1.5), 'iTunes preview ramps to 50% over 1.5 seconds');
 
 // 關閉介紹視窗：先從當下音量淡出 1.5 秒，之後才真正暫停。
 player.stop({ fade:true });
-assert.equal(audioElements[0].paused, false, 'fade-stop does not pause the preview abruptly');
+assert.equal(firstPreviewSource.stopped, false, 'fade-stop does not stop the decoded preview abruptly');
 assert.equal(states.at(-1).status, 'stopping');
 assert.ok(mockGainNode.events.some(event => event.type === 'ramp' && event.value === 0 && event.time === 1.5), 'fade-stop ramps Web Audio gain to zero over 1.5 seconds');
 await wait(1600);
-assert.equal(audioElements[0].paused, true, 'fade-stop pauses after the fade completes');
+assert.equal(firstPreviewSource.stopped, true, 'fade-stop stops the decoded preview after 1.5 seconds');
 assert.equal(states.at(-1).status, 'stopped');
 
 // Repeating the same album excludes the immediately previous preview when possible.
@@ -291,8 +323,9 @@ player.unlock();
 assert.equal(await player.playAlbum({ artist:'Artist B', album:'Album B', prefer:'itunes' }), true);
 await wait(1600);
 assert.equal(states.at(-1).album, 'Album B');
-assert.equal(audioElements[0].src, 'https://audio/b1.m4a');
-assert.equal(audioElements[0].paused, false, 'an old fade-stop timer never pauses a newly selected album');
+assert.equal(previewFetchCalls.at(-1), 'https://audio/b1.m4a');
+const albumBSource = bufferSources.filter(source => source.buffer?.decoded).at(-1);
+assert.equal(albumBSource.stopped, false, 'an old fade-stop timer never stops a newly selected album');
 assert.ok(scriptRequests.some(url => url.startsWith('https://itunes.apple.com/search?')), 'desktop preview metadata uses Apple JSONP first');
 assert.ok(!fetchCalls.some(url => url.startsWith('https://itunes.apple.com/search?')), 'preview lookup does not depend on CORS fetch headers');
 assert.ok(!fetchCalls.some(url => url.includes('/itunes-album-preview')), 'playback does not wait on a Worker route that Apple blocks');
@@ -314,7 +347,7 @@ assert.equal(await player.playAlbum({ artist:'Artist A', album:'Album A', prefer
 assert.equal(await player.playTrack('a2'), true);
 assert.equal(states.at(-1).trackName, 'A Two');
 assert.equal(states.at(-1).trackId, 'a2');
-assert.equal(audioElements[0].src, 'https://audio/a2.m4a');
+assert.equal(previewFetchCalls.at(-1), 'https://audio/a2.m4a');
 
 await player.prefetch({ artist:'Artist A', album:'Album A', spotify:false, youtube:true });
 player.unlock();
@@ -365,7 +398,7 @@ assert.equal(states.at(-1).trackName, 'Popular B');
 assert.equal(states.at(-1).tracks.length, 0);
 
 player.stop();
-console.log('PASS  iTunes preview remains authorized after an uncached asynchronous lookup');
+console.log('PASS  iTunes preview decodes into Web Audio and has no 100% media-element bypass');
 console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
 console.log('PASS  failure toast always carries a stage code, including cached-empty replays');
 console.log('PASS  itunes preference falls back to YouTube when Apple metadata is unavailable');

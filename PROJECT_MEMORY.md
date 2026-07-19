@@ -104,6 +104,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-19｜手機 Apple 試聽改走純 Web Audio，消除起播 100% 音量旁路
+- Repo：`dip-vinyl-shop`
+- 改動：店主真機確認上一版只有關閉介紹時會瞬間降到 50% 再淡出，點開介紹仍以 100% 突然起播。根因是 iOS 的 `MediaElementAudioSourceNode` 路由不穩定：雖然程式先把 GainNode 設為 0，實際 `<audio>` 聲音仍可能繞過節點直接輸出。本次不再讓 Apple `.m4a` 進入 `<audio>`：改為 CORS 抓取試聽檔、`decodeAudioData` 解碼，再以唯一的 `AudioBufferSourceNode → GainNode → destination` 路徑播放；起播前 Gain 固定為 0，開始後 1.5 秒線性升至 0.5，關窗仍以 1.5 秒降至 0 才停止。`<audio>` 只保留全靜音手勢解鎖，不會收到真實試聽 URL。快取參數升至 v17。
+- 主要檔案：`dip-player.js`、`battle.html`、`roguelike.html`、`index.html`、`verify-playback.mjs`、`PROJECT_MEMORY.md`
+- 驗證：`node verify-playback.mjs` 全數通過，明確檢查真實 Apple URL 只被 fetch／解碼、BufferSource 只能接到 GainNode、起播 0→0.5／1.5 秒與關窗 0／1.5 秒後才停止；`node --check dip-player.js` 通過。390×844 真實瀏覽器完成對局並點敵方 Todd Rundgren《Runt》：介紹開啟後成功進入 playing，頁面 `<audio>` 仍只有靜音 blob（沒有 Apple 真實音檔旁路），關閉介紹後播放狀態結束，console 無 error／warning。
+
 ### 2026-07-18｜手機 iTunes 查詢加入可用備援，介紹關閉淡出通過 390px 實測
 - Repo：`dip-vinyl-shop`
 - 改動：店主回報 Windows 已正常、手機仍抓不到 iTunes 且關閉介紹沒有淡出。再次分離驗證後確認：手機當時只停在手勢解鎖用的靜音 WAV，根本沒有取得試聽音檔，因此不是 GainNode 的 1.5 秒參數失效；Apple 同時也會封鎖 Cloudflare Worker 機房出口，不能把查詢單純搬到 Worker。播放器新增行動裝置專用查詢順序：手機先透過文字讀取閘道取得 Apple 公開 Search JSON，桌面維持官方 JSONP 優先，兩條路最後都只播放 Apple CDN 原始 `.m4a`，共同套用 Web Audio 的 50% 音量、1.5 秒淡入與 1.5 秒淡出。單場介紹關閉改為只要視窗原本開著就一律呼叫淡出停止，涵蓋手機關閉鈕、遮罩與 Esc；試煉頁原有關閉鈕／遮罩亦維持同一路徑。快取參數升至 v16。

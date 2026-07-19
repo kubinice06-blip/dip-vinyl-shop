@@ -13,7 +13,7 @@
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
-  let previewAudio = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
+  let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let currentPreviewData = null, lastFailCode = '';
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
   // iOS 忽略 audio.volume，iTunes 路徑須經 Web Audio GainNode 才能真正控音量。
@@ -195,19 +195,17 @@
     return silentPreviewUrl;
   }
 
-  // 建立 audio 元件 → GainNode → 喇叭 的固定路徑。必須在手勢內建立／喚醒
-  // AudioContext；Apple 試聽 CDN 帶 ACAO:*，crossOrigin 模式下不會被靜音。
+  // 真實試聽改由 AudioBufferSourceNode → GainNode → 喇叭，避免 iOS Safari
+  // 的 MediaElementAudioSourceNode 偶發旁路，讓 <audio> 以 100% 直接出聲。
+  // AudioContext 必須在點擊手勢內先建立／喚醒，稍後非同步解碼才能正常 start。
   function ensurePreviewGraph() {
-    if (!previewAudio) return;
     if (!audioCtx) {
       const Ctx = window.AudioContext || window.webkitAudioContext;
       if (!Ctx) return;
       try {
         audioCtx = new Ctx();
-        const source = audioCtx.createMediaElementSource(previewAudio);
         previewGain = audioCtx.createGain();
-        previewGain.gain.value = BASE_GAIN;
-        source.connect(previewGain);
+        previewGain.gain.value = 0;
         previewGain.connect(audioCtx.destination);
       } catch (_) { audioCtx = null; previewGain = null; }
     }
@@ -272,6 +270,17 @@
     try {
       const audio = ensurePreviewAudio();
       ensurePreviewGraph();
+      // 送出一個全靜音 sample，確保 iOS 真正解鎖 Web Audio 輸出，不只把
+      // AudioContext 狀態標成 running。gain 此時固定為 0，不會產生聲音。
+      if (audioCtx?.createBuffer && audioCtx?.createBufferSource && previewGain) {
+        try {
+          const silentBuffer = audioCtx.createBuffer(1, 1, audioCtx.sampleRate || 44100);
+          const silentSource = audioCtx.createBufferSource();
+          silentSource.buffer = silentBuffer;
+          silentSource.connect(previewGain);
+          silentSource.start(0);
+        } catch (_) {}
+      }
       if (!audio.paused && !audio.ended) return true;
       audio.loop = true;
       audio.src = silentPreviewSource();
@@ -520,6 +529,7 @@
     if (!controller || token !== requestId) return false;
     try {
       clearTimeout(previewTimer);
+      stopPreviewBuffer();
       if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
       youtubePlayer?.pauseVideo?.();
       controller.pause?.();
@@ -568,29 +578,50 @@
     return previewAudio;
   }
 
-  function waitForPreviewPlayback(audio, token) {
+  function previewTrackSummary(data) {
+    return (Array.isArray(data?.tracks) ? data.tracks : [])
+      .filter(track => track?.previewUrl)
+      .map(track => ({ id: String(track.id || track.previewUrl), trackName: track.trackName || '' }));
+  }
+
+  function disposePreviewBuffer(source) {
+    if (!source) return;
+    try { source.onended = null; source.stop(0); } catch (_) {}
+    try { source.disconnect?.(); } catch (_) {}
+  }
+
+  function stopPreviewBuffer() {
+    const source = previewBufferSource;
+    previewBufferSource = null;
+    disposePreviewBuffer(source);
+  }
+
+  function decodePreviewBuffer(bytes) {
+    if (!audioCtx?.decodeAudioData || !bytes) return Promise.resolve(null);
     return new Promise(resolve => {
       let settled = false;
       const finish = value => {
         if (settled) return;
         settled = true;
-        clearTimeout(timer);
-        audio.removeEventListener('playing', playing);
-        audio.removeEventListener('error', failed);
-        resolve(value && token === requestId);
+        resolve(value || null);
       };
-      const playing = () => finish(true), failed = () => finish(false);
-      // 行動網路首包 m4a 偶爾超過 3 秒，放寬到 8 秒避免誤判成失敗。
-      const timer = setTimeout(() => finish(false), 8000);
-      audio.addEventListener('playing', playing, { once:true });
-      audio.addEventListener('error', failed, { once:true });
+      try {
+        const result = audioCtx.decodeAudioData(bytes, finish, () => finish(null));
+        if (result?.then) result.then(finish, () => finish(null));
+      } catch (_) { finish(null); }
     });
   }
 
-  function previewTrackSummary(data) {
-    return (Array.isArray(data?.tracks) ? data.tracks : [])
-      .filter(track => track?.previewUrl)
-      .map(track => ({ id: String(track.id || track.previewUrl), trackName: track.trackName || '' }));
+  async function loadPreviewBuffer(url) {
+    try {
+      ensurePreviewGraph();
+      if (!audioCtx || !previewGain) return null;
+      if (audioCtx.state !== 'running') await audioCtx.resume?.();
+      const response = await withTimeout(fetch(url, { mode:'cors', cache:'force-cache' }), 10000);
+      if (!response?.ok || typeof response.arrayBuffer !== 'function') return null;
+      const bytes = await withTimeout(response.arrayBuffer(), 10000);
+      return await withTimeout(decodePreviewBuffer(bytes), 10000);
+    } catch (_) { return null; }
   }
 
   async function playItunes(data, token, forcedTrackId = '') {
@@ -606,42 +637,62 @@
       clearTimeout(previewFadeTimer);
       spotifyController?.pause?.();
       youtubePlayer?.pauseVideo?.();
-      audio.loop = false;
-      audio.src = track.previewUrl;
-      audio.currentTime = 0;
-      audio.load();
-      setProvider('itunes');
+      stopPreviewBuffer();
+      // 在換來源、下載、解碼之前就把唯一輸出路徑鎖在 0；真實音檔不再交給
+      // HTMLMediaElement 播放，因此 iOS 無法以元素預設的 100% 音量旁路。
+      ensurePreviewGraph();
       setPreviewLevel(0);
-      const started = waitForPreviewPlayback(audio, token);
-      const attempt = audio.play();
-      // S6=play() 被拒（授權／格式），S5:n=音檔 MediaError 代碼，S7=8 秒內未開始播放。
-      if (attempt?.catch) attempt.catch(err => { lastFailCode = `S6:${err?.name || 'play'}`; });
-      if (!(await started)) {
-        if (!/^S6/.test(lastFailCode)) lastFailCode = audio.error ? `S5:${audio.error.code}` : 'S7';
-        audio.pause();
-        setPreviewLevel(BASE_GAIN);
+      audio.loop = false;
+      audio.pause?.();
+      setProvider('itunes');
+      const decoded = await loadPreviewBuffer(track.previewUrl);
+      if (token !== requestId) return false;
+      if (!decoded || !audioCtx?.createBufferSource || !previewGain) {
+        lastFailCode = 'S10';
+        setPreviewLevel(0);
         return false;
       }
+      const source = audioCtx.createBufferSource();
+      source.buffer = decoded;
+      source.connect(previewGain);
+      previewBufferSource = source;
+      // 解碼期間 AudioContext 可能被系統暫停；起播前再 resume，gain 仍保持 0。
+      if (audioCtx.state !== 'running') await audioCtx.resume?.();
+      if (token !== requestId) {
+        if (previewBufferSource === source) previewBufferSource = null;
+        disposePreviewBuffer(source);
+        return false;
+      }
+      setPreviewLevel(0);
+      source.start(0);
       fadePreview(BASE_GAIN, FADE_MS);
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
+      const playMs = Math.max(FADE_MS, Math.min(30500, Number(decoded.duration || 30) * 1000));
       previewTimer = setTimeout(() => {
         if (token !== requestId) return;
         fadePreview(0, FADE_MS);
         previewFadeTimer = setTimeout(() => {
           if (token !== requestId) return;
-          audio.pause();
+          stopPreviewBuffer();
           emit({ status:'stopped', provider:null });
         }, FADE_MS);
-      }, 30500 - FADE_MS);
+      }, Math.max(0, playMs - FADE_MS));
       return {
         trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽',
         trackId:String(track.id || track.previewUrl), tracks:previewTrackSummary(data)
       };
-    } catch (_) { return false; }
+    } catch (_) {
+      if (token === requestId) {
+        stopPreviewBuffer();
+        setPreviewLevel(0);
+        lastFailCode = lastFailCode || 'S10';
+      }
+      return false;
+    }
   }
 
-  // 點唱盤下方播放列表的某一首：資料已在手上，同一顆已解鎖的 audio 元件直接換源播放。
+  // 點唱盤下方播放列表的某一首：資料已在手上，沿用已解鎖的 AudioContext 解碼播放。
   async function playTrack(trackId) {
     if (!currentPreviewData || !trackId || !root) return false;
     const token = ++requestId;
@@ -664,6 +715,7 @@
     try {
       clearTimeout(previewTimer);
       clearTimeout(previewFadeTimer);
+      stopPreviewBuffer();
       if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
       spotifyController?.pause?.();
       player.pauseVideo?.();
@@ -767,13 +819,14 @@
       clearInterval(previewVolumeTimer);
       clearInterval(youtubeFadeTimer);
       try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
+      stopPreviewBuffer();
       try { spotifyController?.pause?.(); } catch (_) {}
       try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
       setProvider(null);
       emit({ status: 'stopped', provider: null, tracks: [], trackId: '' });
     };
     if (fade && state.status === 'playing') {
-      if (state.provider === 'itunes' && previewAudio && !previewAudio.paused) {
+      if (state.provider === 'itunes' && previewBufferSource) {
         fadePreview(0, FADE_MS);
         emit({ status:'stopping' });
         previewFadeTimer = setTimeout(finish, FADE_MS);
