@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜找到真凶：await resume() 吊死 14.7 秒（iOS 首次沒聲音）
+
+- Repo：`dip-vinyl-shop`
+- 實機 log（`#auddbg`）決定性證據：
+  - `10.30s 下載解碼前｜ctx=suspended t=0.00` — AudioContext 從 1.83s 建立起一直是 `suspended`，
+    `currentTime` 十秒都還停在 `0.00`，一個 sample 都沒算過。
+  - `25.05s loadPreviewBuffer 完成（14747ms）` — **卡了 14.7 秒**，卡在
+    `loadPreviewBuffer()` 裡的 `await audioCtx.resume?.()`。iOS 在手勢外收到的 resume 請求
+    會被無限期擱置、promise 永不 resolve，整條下載解碼路徑被吊死。所以根本不是「播了沒聲音」，
+    **是壓根還沒播到**。它一直等到店主點唱盤機那兩下才被解開。
+  - 對照差異：`10.29s unlock｜自認播放中 → 重發 play()`（ctx 仍 suspended、卡死）
+    vs `24.76s unlock｜keep-alive 重新起播（paused=true）`（ctx 變 running、有聲音）。
+- 根因：對「自認還在播」的 `<audio>` 呼叫 `play()` 是 no-op，**不會建立新的 audio session**，
+  AudioContext 因此永遠 resume 不了。keep-alive 從進頁面就一直 loop 著，所以第一次點開簡介
+  必定走到 no-op 分支 → 必定沒聲音；而任何一次成功播放結尾或 `stop()` 都會 pause keep-alive，
+  之後就都會走到完整起播分支 → 之後都正常。（上一版 v=23「一律重發 play()」失敗正是因為
+  補的是 no-op，沒有 pause→換 src→play 的完整循環。）
+- 改動：
+  1. `primePreviewFromGesture()` 改為**一律完整重新武裝**：`pause()` → 重設 `src` → `play()`，
+     並在同一手勢內接著呼叫 `resume()`（session 由 play() 建立後才要求 resume 才有效）。
+  2. 兩處 `await audioCtx.resume?.()` 一律包 `withTimeout(..., 1500)`。獨立防禦：
+     就算 session 假設再次出錯，也不可能再出現整條路徑吊死十幾秒。
+  3. 節流：同一次觸碰常連帶觸發兩次 unlock，若都重新武裝，第二次的 pause 會把第一次的
+     `play()` 打成 AbortError。改為「剛武裝過且仍在播」時略過（400ms 內）。
+  4. `playItunes` 釋放 keep-alive 改為等武裝的 promise 落定後才 `pause()`，
+     否則快取命中時 start 與武裝幾乎同一 tick，必定把自己的 `play()` 打成 AbortError。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`（v=24 → v=27）
+- 驗證：`node --check` 通過。桌機帶 `#auddbg` 實測：首播 log 乾淨無 AbortError、
+  `loadPreviewBuffer` 515ms 完成、start+2.2s gain=0.500 peak=0.1046；
+  靜音→重播的快取路徑（loadPreviewBuffer 0ms）同樣乾淨 resolve 並正常播放；
+  不帶 hash 時 overlay 不存在、播放狀態 playing、console 無錯誤。iOS 實機待店主驗證。
+
 ### 2026-07-20｜殭屍假設也被推翻 → dip-player 內建 #auddbg 實機偵錯層
 
 - Repo：`dip-vinyl-shop`

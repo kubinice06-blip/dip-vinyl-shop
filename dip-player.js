@@ -16,6 +16,7 @@
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
+  let previewArmedAt = 0, previewArmPromise = null;
   let currentPreviewData = null, lastFailCode = '';
   let appleAudioMap = null, appleAudioMapPromise = null;
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
@@ -346,27 +347,42 @@
           silentSource.start(0);
         } catch (_) {}
       }
-      if (!audio.paused && !audio.ended) {
-        // iOS 可能把長時間循環的靜音元素實際停掉，但 paused 仍回報 false（殭屍狀態）。
-        // 手勢內一律重發 play() 當保險：正常播放中的元素呼叫 play() 是 no-op、
-        // 立即 resolve；殭屍元素則會重新起播、把 session 抓回來。
-        if (AUD_DEBUG) dbg('unlock｜keep-alive 自認播放中 → 重發 play()');
-        const retry = audio.play();
-        if (retry?.then) retry.then(
-          () => { if (AUD_DEBUG) dbg('unlock｜重發 play() resolve'); },
-          e => { if (AUD_DEBUG) dbg(`unlock｜重發 play() 被拒：${e && e.name}`); });
+      // 一律「完整重新武裝」：pause → 重設 src → play。不能只對自認還在播的元素
+      // 補一次 play()——實機 log 證明那是 no-op，不會建立新的 audio session，
+      // AudioContext 於是永遠停在 suspended（currentTime 十秒都還是 0.00），
+      // 後面 loadPreviewBuffer 的 await resume() 就整條吊死（實測卡 14.7 秒），
+      // 表現出來就是「第一次點開簡介沒聲音」。只有這個完整循環能讓 iOS 交出
+      // audio session，接著 resume() 才會真的完成。靜音檔重播不可聞，無副作用。
+      // 同一次觸碰常會連帶觸發兩次 unlock（捕獲階段的解鎖 + 播放前的解鎖）。若兩次
+      // 都重新武裝，第二次的 pause 會把第一次的 play() 打成 AbortError，反而把剛
+      // 建立的 session 弄丟。400ms 內只武裝一次，後續視為已完成。
+      // 只在「剛武裝過而且還在播」時才略過；元素若已被 stop 停掉就一定要重新武裝。
+      if (!audio.paused && Date.now() - previewArmedAt < 400) {
+        if (AUD_DEBUG) dbg('unlock｜剛武裝過且仍在播，略過重複武裝');
         return true;
       }
-      if (AUD_DEBUG) dbg(`unlock｜keep-alive 重新起播（paused=${audio.paused} ended=${audio.ended}）`);
+      previewArmedAt = Date.now();
+      if (AUD_DEBUG) dbg(`unlock｜keep-alive 重新武裝（原本 paused=${audio.paused}）`);
+      try { audio.pause(); } catch (_) {}
       audio.loop = true;
       audio.src = silentPreviewSource();
       audio.currentTime = 0;
       const attempt = audio.play();
       previewPrimed = true;
-      if (attempt?.then) attempt.then(
+      previewArmPromise = attempt?.then ? attempt.then(
         () => { if (AUD_DEBUG) dbg('unlock｜keep-alive play() resolve'); },
-        e => { previewPrimed = false; if (AUD_DEBUG) dbg(`unlock｜keep-alive play() 被拒：${e && e.name}`); });
-      else if (attempt?.catch) attempt.catch(() => { previewPrimed = false; });
+        e => { previewPrimed = false; if (AUD_DEBUG) dbg(`unlock｜keep-alive play() 被拒：${e && e.name}`); }) : null;
+      if (!attempt?.then && attempt?.catch) attempt.catch(() => { previewPrimed = false; });
+      // session 已由上面的 play() 建立 → 在同一個手勢內再要求一次 resume，
+      // 這樣稍後非同步路徑上的 resume 才不會等不到。
+      if (audioCtx && audioCtx.state !== 'running') {
+        try {
+          const r = audioCtx.resume?.();
+          if (r?.then) r.then(
+            () => { if (AUD_DEBUG) dbg(`unlock｜resume 完成｜ctx=${audioCtx.state}`); },
+            e => { if (AUD_DEBUG) dbg(`unlock｜resume 被拒：${e && e.name}`); });
+        } catch (_) {}
+      }
       return true;
     } catch (_) { previewPrimed = false; return false; }
   }
@@ -763,7 +779,10 @@
       try {
         ensurePreviewGraph();
         if (!audioCtx || !previewGain) return null;
-        if (audioCtx.state !== 'running') await audioCtx.resume?.();
+        // resume() 的 promise 在 iOS 上可能永遠不 resolve（手勢外請求會被無限期擱置）。
+        // 直接 await 會把整條下載解碼路徑吊死——實測卡了 14.7 秒才被下一次手勢解開。
+        // 一律加上限：逾時就繼續往下走，下載解碼不該被音訊狀態綁架。
+        if (audioCtx.state !== 'running') await withTimeout(Promise.resolve(audioCtx.resume?.()), 1500);
         const response = await withTimeout(fetch(url, { mode:'cors', cache:'force-cache' }), 10000);
         if (!response?.ok || typeof response.arrayBuffer !== 'function') return null;
         const bytes = await withTimeout(response.arrayBuffer(), 10000);
@@ -828,7 +847,8 @@
       source.connect(previewGain);
       previewBufferSource = source;
       // 解碼期間 AudioContext 可能被系統暫停；起播前再 resume，gain 仍保持 0。
-      if (audioCtx.state !== 'running') await audioCtx.resume?.();
+      // 同樣加上限：resume 卡住時寧可照常起播，也不要整個吊死。
+      if (audioCtx.state !== 'running') await withTimeout(Promise.resolve(audioCtx.resume?.()), 1500);
       if (token !== requestId) {
         if (previewBufferSource === source) previewBufferSource = null;
         disposePreviewBuffer(source);
@@ -840,8 +860,11 @@
       fadePreview(BASE_GAIN, FADE_MS);
       // 真實試聽已經在輸出、session 由它接手 → 這時才收掉靜音 keep-alive。
       // 失敗的分支一律不收：讓它繼續墊著，下一次重試才有 session 可用。
-      audio.loop = false;
-      audio.pause?.();
+      // 必須等這次手勢發出的 play() 落定再 pause，否則會把自己的 play() 打成
+      // AbortError（快取命中時 start 幾乎與武裝同一個 tick，必中）。
+      const releaseKeepAlive = () => { try { audio.loop = false; audio.pause?.(); } catch (_) {} };
+      if (previewArmPromise?.then) previewArmPromise.then(releaseKeepAlive, releaseKeepAlive);
+      else releaseKeepAlive();
       if (AUD_DEBUG) {
         // 起播後 0.8／2.2 秒各量一次輸出峰值。若 0.8 秒時峰值是 0（訊號沒到輸出端），
         // 自動試 suspend()→resume() 一次——如果之後音樂突然出來，代表這招就是解方。
