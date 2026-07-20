@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜整備面板列出全收藏＋趟中修理真正生效
+
+- Repo：`dip-vinyl-shop`
+- 改動：
+  1. **趟中修理不顯示、還會被吃掉的 bug**：`doRepair` 原本只寫 `META.relicWear`，但趟中面板顯示與實際效果都讀 `RUN.relicWear`，且下一場結束 `syncWearToMeta()` 會用 RUN 的舊耗損把 META 蓋回去——趟中花的修理費等於白花。修法：新增 `curWearOf(id)` 單一入口（趟中帶著的讀 RUN、沒帶上路的讀跨趟紀錄），`doRepair`／`openRelicCare`／整備面板列全部改用；修理時 RUN 與 META 同步寫入，並 `recomputeMaxHp`（品相回升會改 ×倍率）＋`saveRun()`。
+  2. **整備面板列出所有收藏配件**：`benchedRelics()` 從「只列 RUN.relics 沒出戰的」改為「RUN 帶著的＋收藏（`META.relicsOwned`）裡其他所有健在件」的聯集，出戰 3 件在上、其餘列在庫存區可隨時換上場。`loAct('equip')` 對還沒帶上路的收藏件走 `carryRelic()`（耐久沿用跨趟紀錄）。勝利畫面的「🎒 整備」按鈕條件放寬為 `RUN.relics.length || ownedRelicIds().length`，開局沒帶配件也能中途裝備。
+- 主要檔案：`roguelike.html`
+- 驗證：兩個 script 區塊 `node --check` 通過。本機 static server 瀏覽器 JS 實測：收藏 6 件、帶 3 件開趟 → 整備面板庫存正確列出未帶的 3 件且耐久讀 META（30/75/5）；卸下唱針換上見本盤，耐久 70 正確帶入 RUN；小保養唱針 40→15，RUN／META／面板三處同步、`syncWearToMeta()` 後不回退、現金 500→485；庫存件整新到全新 META 歸 0；開局零配件時勝利畫面照樣出現整備按鈕、可從收藏直接裝上。console 無錯誤。
+
 ### 2026-07-20｜試煉進度保留改跨裝置（存進玩家帳號）
 
 - Repo：`dip-vinyl-shop`
