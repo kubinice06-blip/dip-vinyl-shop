@@ -484,6 +484,21 @@
         const u = auth.currentUser; if(!u) return;
         try { setDoc(doc(db,'users',u.uid),{ rogueMeta:m, rogueMetaUpdatedAt:Date.now() },{merge:true}).catch(()=>{}); } catch(e){}
       };
+      // 進行中那一趟的存檔也跟著帳號走（同一份 users/{uid}，一樣免改規則）：
+      // rogueRun＝快照本體、rogueRunClearedAt＝墓碑（別台把這趟打完／放棄的時間）
+      window.__loadRogueRun = async () => {
+        const u = auth.currentUser; if(!u) return null;
+        try { const s = await getDoc(doc(db,'users',u.uid)); if(!s.exists()) return null;
+          const d = s.data(); return { run:d.rogueRun||null, clearedAt:d.rogueRunClearedAt||0 }; }
+        catch(e){ return null; }
+      };
+      window.__saveRogueRun = (p) => {
+        const u = auth.currentUser; if(!u) return;
+        const val = p ? { rogueRun:p, rogueRunUpdatedAt:Date.now() }
+                      : { rogueRun:null, rogueRunClearedAt:Date.now() };   // 清檔＝立墓碑，讓別台的舊存檔作廢
+        // 回傳 Promise：離開頁面前要等寫完（fire-and-forget 會在跳頁時被丟掉）
+        try { return setDoc(doc(db,'users',u.uid), val, {merge:true}).catch(()=>{}); } catch(e){ return null; }
+      };
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
       const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
       window.__getCover = async (artist, album) => {
@@ -1435,6 +1450,7 @@ async function bindMetaToAccount(u){
   }
   saveMeta();
   flushPendingCards();
+  try{ await pullCloudRun(); }catch(e){}   // 進行中那一趟也跟著帳號走（換裝置可接續）
   const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
   if(document.getElementById('clsList')) renderClassSelect();
 }
@@ -1691,8 +1707,42 @@ function saveRun(phase){
     else if(_phase==='loot')   pay.lootCard = _lootCard ? _clone(_lootCard) : null;
     localStorage.setItem(RUNSAVE_KEY, JSON.stringify(pay));
   }catch(e){}
+  syncRunToCloud(false);
 }
-function clearRunSave(){ _phase='menu'; try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){} }
+// 雲端同步（登入才有）：戰鬥中每一手都寫太耗流量 → 平時只在場間畫面同步，
+// 「保留進度離開」時才強制連戰鬥狀態一起上傳（換裝置能接在同一手）。
+function syncRunToCloud(force){
+  if(!window.__saveRogueRun || !(window.__rogueUser && window.__rogueUser())) return null;
+  const s = peekRunSave(); if(!s) return null;
+  if(!force && s.phase==='fight') return null;
+  return window.__saveRogueRun(s) || null;
+}
+function clearRunSave(){
+  _phase='menu';
+  try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}
+  // 立墓碑：別台裝置上那份同一趟的存檔要跟著作廢，否則同一趟能結算兩次
+  if(window.__saveRogueRun && window.__rogueUser && window.__rogueUser()) window.__saveRogueRun(null);
+}
+// 登入後把雲端那份拉下來比對（只在還沒開打時動本機存檔）
+async function pullCloudRun(){
+  if(_phase!=='menu') return false;
+  if(!window.__loadRogueRun || !(window.__rogueUser && window.__rogueUser())) return false;
+  let c=null; try{ c = await window.__loadRogueRun(); }catch(e){}
+  if(!c) return false;
+  const local = peekRunSave();
+  const cloud = (c.run && c.run.run && c.run.run.classKey && CLASSES[c.run.run.classKey]) ? c.run : null;
+  const clearedAt = c.clearedAt||0;
+  // 別台已經把這趟打完或放棄 → 本機這份作廢
+  if(local && clearedAt > (local.t||0) && (!cloud || (cloud.t||0) <= clearedAt)){
+    try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}
+    return true;
+  }
+  // 雲端那份比較新 → 換裝置接續（後存的贏）
+  if(cloud && (cloud.t||0) > ((local&&local.t)||0)){
+    try{ localStorage.setItem(RUNSAVE_KEY, JSON.stringify(cloud)); return true; }catch(e){}
+  }
+  return false;
+}
 function peekRunSave(){
   let s=null; try{ s=JSON.parse(localStorage.getItem(RUNSAVE_KEY)); }catch(e){}
   if(!s || !s.run || !s.run.classKey || !CLASSES[s.run.classKey]) return null;
@@ -3638,7 +3688,7 @@ function confirmQuit(){
     <div class="lab">要離開嗎？</div>
     <div class="intro" style="text-align:center;min-height:0;border:none;padding:6px 0 12px;line-height:1.9">
       目前進度：<b>第 ${RUN.depth} 場・連勝 ${RUN.streak}</b><br>
-      <span class="muted" style="font-size:10px">保留進度＝下次打開從這裡接續（電腦與手機各自保存）；<br>放棄則這趟直接作廢，不結算、不累積樂歷。</span></div>
+      <span class="muted" style="font-size:10px">保留進度＝下次打開從這裡接續${(window.__rogueUser&&window.__rogueUser())?'（已登入，換裝置也接得回來）':'（未登入＝只存這台裝置）'}；<br>放棄則這趟直接作廢，不結算、不累積樂歷。</span></div>
     <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="quitKeep()">⏸ 保留進度離開（下次接著打）</button>
     <button class="btn" style="width:100%;margin-bottom:8px;color:var(--lose);border-color:var(--lose)" onclick="quitAbandon()">🗑 放棄這趟離開（不結算）</button>
     <button class="btn" style="width:100%" onclick="closeQuit()">↩ 留下來繼續打</button>
@@ -3647,7 +3697,15 @@ function confirmQuit(){
   document.body.appendChild(mask);
 }
 function closeQuit(){ const m=document.getElementById('quitMask'); if(m) m.remove(); }
-function quitKeep(){ saveRun(); window.DipPlayer?.stop({fade:true}); location.href='index.html'; }
+// 保留進度離開：登入者要等雲端寫完再跳頁（跳頁會把還沒送出的寫入丟掉），最多等 1.5 秒
+async function quitKeep(){
+  saveRun();
+  window.DipPlayer?.stop({fade:true});
+  const btn=document.querySelector('#quitMask .btn.primary'); if(btn){ btn.textContent='儲存中…'; btn.disabled=true; }
+  const p=syncRunToCloud(true);
+  if(p){ try{ await Promise.race([p, new Promise(r=>setTimeout(r,1500))]); }catch(e){} }
+  location.href='index.html';
+}
 function quitAbandon(){ clearRunSave(); window.DipPlayer?.stop({fade:true}); location.href='index.html'; }
 function doQuit(){ quitAbandon(); }   // 舊入口保留
 function openCardInfo(card, opts){
