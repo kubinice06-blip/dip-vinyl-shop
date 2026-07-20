@@ -22,6 +22,9 @@
   // iOS 忽略 audio.volume，iTunes 路徑須經 Web Audio GainNode 才能真正控音量。
   const BASE_GAIN = 0.5, YT_BASE_VOLUME = 50, FADE_MS = 1500, PREVIEW_BUFFER_CACHE_LIMIT = 3;
   let audioCtx = null, previewGain = null, previewVolumeTimer = null, previewFadeTimer = null, youtubeFadeTimer = null;
+  // 自己記住音量狀態：gain.value 要等下一個 render quantum 才會反映剛排下去的
+  // setValueAtTime，緊接著讀會拿到舊值。previewRampEnd 是最後一段 ramp 的結束時間。
+  let previewLevel = 0, previewRampEnd = 0;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
   function emit(next) {
@@ -226,11 +229,15 @@
         // cancelAndHoldAtTime 在「now 之後已經沒有排程事件」時不會補上保持點（淡入的
         // ramp 早在 28 秒前就結束了）。少了錨點，接著的 linearRamp 會從那個舊事件起算，
         // 音量在呼叫當下就直接塌到約 2%，聽起來是硬切而不是淡出。一律自己補
-        // setValueAtTime(現值, now) 當起點，1.5 秒淡出才會真的走滿。
-        const current = gain.value;
+        // setValueAtTime(起點, now)，1.5 秒淡出才會真的走滿。
+        // 起點：ramp 還在跑 → 取實際值（中途打斷才不會跳）；已經跑完 → 取自己記的值，
+        // 因為 gain.value 這時可能還沒反映剛排下去的 setPreviewLevel。
+        const from = now < previewRampEnd ? gain.value : previewLevel;
         gain.cancelScheduledValues(now);
-        gain.setValueAtTime(current, now);
+        gain.setValueAtTime(from, now);
         gain.linearRampToValueAtTime(toValue, now + ms / 1000);
+        previewLevel = toValue;
+        previewRampEnd = now + ms / 1000;
         return;
       } catch (_) {}
     }
@@ -251,6 +258,8 @@
       try {
         previewGain.gain.cancelScheduledValues(audioCtx.currentTime);
         previewGain.gain.setValueAtTime(value, audioCtx.currentTime);
+        previewLevel = value;
+        previewRampEnd = 0;
         return;
       } catch (_) {}
     }
@@ -730,8 +739,11 @@
       // HTMLMediaElement 播放，因此 iOS 無法以元素預設的 100% 音量旁路。
       ensurePreviewGraph();
       setPreviewLevel(0);
-      audio.loop = false;
-      audio.pause?.();
+      // 這裡刻意「不」停掉靜音 keep-alive：下一行要 await 下載＋解碼（手機 1～3 秒）。
+      // 那段空窗若沒有任何東西在發聲，iOS 會把 audio session 收掉，之後 source.start(0)
+      // 就沒有輸出——而 AudioContext 仍回報 running，所以不會拋錯、也查不出來。這正是
+      // 「第一次點開沒聲音、關掉重開才正常」的成因：第二次 buffer 已在快取，幾乎同一個
+      // tick 就 start，來不及被收掉。改成等真實試聽開始輸出、由它接手 session 之後才收。
       setProvider('itunes');
       const decoded = await loadPreviewBuffer(track.previewUrl);
       if (token !== requestId) return false;
@@ -754,6 +766,10 @@
       setPreviewLevel(0);
       source.start(0);
       fadePreview(BASE_GAIN, FADE_MS);
+      // 真實試聽已經在輸出、session 由它接手 → 這時才收掉靜音 keep-alive。
+      // 失敗的分支一律不收：讓它繼續墊著，下一次重試才有 session 可用。
+      audio.loop = false;
+      audio.pause?.();
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       const playMs = Math.max(FADE_MS, Math.min(30500, Number(decoded.duration || 30) * 1000));

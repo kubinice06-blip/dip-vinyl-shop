@@ -18,12 +18,35 @@
   → 0.179 → 0.094 → 0 走滿 1.5 秒。關閉視窗的 `stop({fade:true})` 同樣由「瞬間 0.038」修正為
   0.45 → 0.396 → … → 0。另以 OfflineAudioContext 獨立重現並確認 `cancelAndHoldAtTime` 的行為
   （28.6s 時值 0.0246，與線上量到的 0.026 吻合）。battle 與 roguelike console 皆無錯誤。
-- 待辦（已診斷、尚未修）：iOS 上「第一次點開簡介不播、關掉重開才正常」與「小唱盤機再次點擊仍靜音」
-  推定同一根因——`playItunes()` 在 `await loadPreviewBuffer()` **之前**就把維持 iOS audio session
-  的靜音 `<audio>` keep-alive `pause()` 掉，第一次要等網路下載＋解碼（手機 1～3 秒），這段空窗
-  iOS 會把 session 收掉，之後 `source.start(0)` 就沒有聲音；第二次因為 buffer 已快取、幾乎同一個
-  tick 就 start，所以正常。桌機 Chrome 無法重現（即使人工延遲音檔 3.5 秒仍正常播放）。
-  建議修法：把 `audio.pause()` 移到 `source.start(0)` 之後，或乾脆讓靜音 keep-alive 持續播。
+### 2026-07-20｜iOS 首次點開簡介沒聲音：靜音 keep-alive 提早被收掉
+
+- Repo：`dip-vinyl-shop`
+- 背景：iOS 以前幾乎完全不會觸發試聽，現在這套解鎖流程是好不容易調到最接近理想的狀態，
+  **除了「第一次點開簡介沒聲音、關掉重開才正常」之外其他都順**。因此本次修改刻意做成單向的：
+  只延長 audio session 的維持時間，完全不動 `installAudioUnlock()`／`primePreviewFromGesture()`／
+  `unlock()` 這三個負責解鎖的函式，避免補東牆壞西牆。
+- 改動：
+  1. **首次沒聲音的根因**：`playItunes()` 原本在 `await loadPreviewBuffer()` **之前**就把用來維持
+     iOS audio session 的靜音 `<audio>` keep-alive `pause()` 掉。第一次點開要等網路下載＋解碼
+     （手機 1～3 秒），這段空窗沒有任何東西在發聲，iOS 會把 session 收掉，之後 `source.start(0)`
+     就沒有輸出——而且 `AudioContext` 仍回報 `running`，不會拋錯，所以完全查不出來。第二次因為
+     buffer 已在 `previewBufferCache`，幾乎同一個 tick 就 start，來不及被收掉，所以正常。
+     修法：把 `audio.loop=false; audio.pause()` 移到 `source.start(0)` 之後，讓靜音檔在整個
+     下載解碼空窗期間持續墊著，等真實試聽開始輸出、由它接手 session 之後才釋放。失敗分支一律
+     不收，讓下一次重試仍有 session 可用。小唱盤機「再點一次重播」推定同一根因（該邏輯本來就寫好了）。
+  2. **順手修掉自己前一筆改動引入的回歸**：`fadePreview()` 改成讀 `gain.value` 當錨點後，
+     「靜音後重播」會沒有淡入——因為 `setPreviewLevel(0)` 才剛在同一個 render quantum 排下去，
+     `gain.value` 還是舊值 0.5，於是拉出一條 0.5→0.5 的平線、瞬間全音量進場。改成自己追蹤
+     `previewLevel`／`previewRampEnd`：ramp 還在跑就取實際值（中途打斷不跳音），已跑完就取記錄值。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`（版號 v=20 → v=22）
+- 驗證：`node --check` 通過。本機瀏覽器實測（攔截 GainNode 取樣、並人工延遲音檔下載 3 秒放大空窗）：
+  下載解碼的 0～3.3 秒期間 keep-alive 維持 `paused:false`，3.6 秒真實試聽開始輸出（gain 0.019 起淡入）
+  的同時才被釋放，交接正確。回歸測試四條路徑全過——首播淡入 0.031→…→0.5；靜音後重播淡入
+  0.043→…→0.5（修正前是直接 0.5）；30 秒自然結束淡出 0.45→0.368→…→0 收在 30.5 秒；
+  淡入途中打斷由 0.097 平順降到 0 不跳音。Apple 查無資料（S3）的失敗路徑仍照舊由 `playAlbum`
+  錯誤分支收掉 keep-alive。battle 與 roguelike console 皆無錯誤。
+- 注意：iOS 實機尚未驗證（桌機 Chrome 無法重現首次沒聲音的症狀，即使人工延遲 3.5 秒仍正常播放），
+  需由店主用 iPhone 實測確認。若仍無聲，則本節的 session 假設被推翻，要再往下一層查。
 
 ### 2026-07-20｜整備面板列出全收藏＋趟中修理真正生效
 
