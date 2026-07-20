@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜移除 #auddbg 偵錯層，保留核心修復邏輯
+
+- Repo：`dip-vinyl-shop`
+- 店主確認 iOS 音訊問題已完全修復（「已經沒問題了」），決定拆掉 `#auddbg` 偵錯層。
+- 改動：
+  1. 刪除 `dip-player.js` 裡所有偵錯函式（`dbg()`、`dbgPeak()`、`dbgSnap()`）及 AUD_DEBUG 檢查
+  2. 保留關鍵修復邏輯：keep-alive 節流、resume() 逾時保護、previewArmedAt 狀態追蹤
+  3. 刪除獨立診斷頁 `audio-debug.html`
+- 主要檔案：`dip-player.js`（移除偵錯）、`battle.html` / `index.html` / `roguelike.html`（v=28，版號不變）
+- 驗證：`node --check` 通過。所有修復相關的功能邏輯保留無誤。
+
 ### 2026-07-20｜iOS 首次沒聲音修復確認生效＋去掉多餘的 1.5 秒等待
 
 - Repo：`dip-vinyl-shop`
