@@ -779,10 +779,11 @@
       try {
         ensurePreviewGraph();
         if (!audioCtx || !previewGain) return null;
-        // resume() 的 promise 在 iOS 上可能永遠不 resolve（手勢外請求會被無限期擱置）。
-        // 直接 await 會把整條下載解碼路徑吊死——實測卡了 14.7 秒才被下一次手勢解開。
-        // 一律加上限：逾時就繼續往下走，下載解碼不該被音訊狀態綁架。
-        if (audioCtx.state !== 'running') await withTimeout(Promise.resolve(audioCtx.resume?.()), 1500);
+        // 這裡完全不等 resume：下載與 decodeAudioData 在 suspended 的 context 上一樣能做，
+        // 只有 source.start() 需要 running（那邊有自己的 resume）。iOS 的 resume promise
+        // 在手勢外會被無限期擱置，早期版本直接 await 讓整條路徑吊死 14.7 秒；即使改成
+        // 逾時保護，也還是白等 1.5 秒才開始下載。ensurePreviewGraph() 已經非阻塞地
+        // 發過 resume 請求，這裡直接往下走即可。
         const response = await withTimeout(fetch(url, { mode:'cors', cache:'force-cache' }), 10000);
         if (!response?.ok || typeof response.arrayBuffer !== 'function') return null;
         const bytes = await withTimeout(response.arrayBuffer(), 10000);

@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜iOS 首次沒聲音修復確認生效＋去掉多餘的 1.5 秒等待
+
+- Repo：`dip-vinyl-shop`
+- 店主 iPhone 實機截圖確認 v=27 已修好：`ctx=running`、`peak=0.1839` 真的出聲了，
+  但仍感覺「不是立即播放」——log 顯示 `loadPreviewBuffer 完成（3994ms）`。
+  這 4 秒裡有一段是修法本身多花的：`loadPreviewBuffer()` 開頭那個 `await withTimeout(resume(), 1500)`
+  是在**下載開始之前**空等，但下載與 `decodeAudioData` 在 suspended 的 context 上一樣能做，
+  真正需要 running 的只有稍後的 `source.start()`（那裡已經有自己的 resume＋逾時）。
+- 改動：拿掉 `loadPreviewBuffer()` 開頭那次 resume 等待，直接進入 fetch。
+  `ensurePreviewGraph()`（在它之前就會呼叫）已經用 fire-and-forget 的方式發過
+  `resume().catch(()=>{})`，不需要在這裡重複等待一次。`source.start()` 前那個
+  `await withTimeout(resume(), 1500)` 原樣保留，作為起播前的最後把關。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`（v=27 → v=28）
+- 驗證：`node --check` 通過。桌機帶 `#auddbg` 實測首播與快取路徑（靜音→重播）皆乾淨無
+  AbortError、正常播放（peak 0.16～0.29）；不帶 hash 時 overlay 不存在、播放狀態 playing；
+  battle 與 roguelike 兩頁 console 皆無錯誤。桌機環境本來就重現不出 iOS 的 resume 延遲，
+  這次改動省下的 1.5 秒需由店主 iPhone 實機驗證是否感覺到起播變快。
+
 ### 2026-07-20｜找到真凶：await resume() 吊死 14.7 秒（iOS 首次沒聲音）
 
 - Repo：`dip-vinyl-shop`
