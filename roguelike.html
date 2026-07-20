@@ -569,6 +569,11 @@ const TELL_FLAVOR = {
 // ---------- 可調數值（後台可覆寫）----------
 let RXP = { base:6, perDepth:2, needBase:8, needPerLevel:4 };          // 局內經驗：勝利給 base+depth*perDepth；升級門檻 needBase+(lv-1)*needPerLevel
 let MXP = { perDepth:15, perStreak:8, recordBonus:30, perLevel:100 };  // 樂歷(結算)：depth*perDepth+streak*perStreak(+破紀錄)；perLevel＝升級曲線基準（Lv1→2 所需），之後每級遞增（見 levelOf）
+// 中繼點：從頭打到第 depth 場（＝兩位傳說藏家）會賺到一張中繼票，用票才能從第 depth 場開打。
+// 票是 1:1 換來的 → 想從中繼開，就得先有人從頭打過一趟，「再也不從頭打」不可能發生。
+// 重選配置那條路用快速選秀（draftCards 次撿盤二選一＋draftLevels 次升級三選一）催熟牌組，
+// 刻意比正常打到第 10 場略少一點 → 快照配置仍是推紀錄的首選，重選是換口味的路。
+let MID = { depth:10, draftCards:5, draftLevels:5 };
 
 // ---------- 範例卡池（沿用 battle.html；對戰 stats 1–5、王牌單軸 7）----------
 const POOL = [
@@ -1356,6 +1361,8 @@ function loadMeta(){
   if(!m.relicWear || typeof m.relicWear!=='object') m.relicWear = {};    // 發燒配件耗損跨趟紀錄（舊玩家視為全新）
   if(!Array.isArray(m.relicsOwned)) m.relicsOwned = _ownedOf(m);         // 現持有清單（舊存檔遷移：圖鑑扣掉已報廢件）
   if(!m.relicLv || typeof m.relicLv!=='object') m.relicLv = {};          // 配件等級 Lv.1~5（毀損重拿也保留）
+  if(typeof m.tickets!=='number' || !isFinite(m.tickets)) m.tickets = 0;  // 中繼票：從頭打到第 MID.depth 場才賺得到
+  if(!m.midBuild || typeof m.midBuild!=='object') m.midBuild = null;      // 中繼點 build 快照（照上次配置用）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -1390,6 +1397,8 @@ function mergeMeta(a,b){
     // 耗損紀錄逐件併：取品相較好（耗損較低）者，玩家不吃虧
     relicWear:(()=>{ const w=Object.assign({}, a.relicWear||{}); const bw=b.relicWear||{}; for(const k in bw){ w[k]=(w[k]==null)?bw[k]:Math.min(w[k],bw[k]); } return w; })(),
     lastLoadout: hi.lastLoadout || lo.lastLoadout || null,   // 同流派再戰的上次配置
+    tickets:Math.max(a.tickets||0, b.tickets||0),            // 中繼票取較多者（同 cash 邏輯，換裝置不吃虧）
+    midBuild: hi.midBuild || lo.midBuild || null,            // 中繼點快照取樂歷較高那份
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
   };
   const owned = new Set(m.collection.map(keyOf));
@@ -1600,9 +1609,31 @@ function renderClassSelect(){
       ${unlockedNow.length?`已解鎖：${unlockedNow.map(u=>u.label).join('・')}<br>`:''}
       ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲發燒配件）`:'🏆 解鎖項目已全數開啟'}
     </div>`;
+  // ⏸ 上一趟還沒打完 → 最上面給接續入口（關掉分頁不等於放棄）
+  const sv = peekRunSave();
+  const resumeBox = (sv && !_midMode) ? `
+    <div style="border:1px solid var(--gold);background:#fffbe9;padding:10px 12px;margin:6px 0 10px;line-height:1.8">
+      <b style="color:var(--gold)">⏸ 上一趟還在進行中</b>
+      <div class="muted" style="font-size:11px;margin:2px 0 6px">${CLASSES[sv.run.classKey]?CLASSES[sv.run.classKey].name:''}・第 ${sv.run.depth} 場・連勝 ${sv.run.streak}・HP ${sv.run.hp}/${sv.run.maxHp}${sv.run.backup?`・💿 備份盤第 ${sv.run.backupAt} 場`:''}</div>
+      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="resumeRun()">▶ 接著打（第 ${sv.run.depth} 場）</button>
+      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="if(confirm('放棄上一趟？進度會直接消失、不結算樂歷。')){clearRunSave();renderClassSelect();}">🗑 放棄那一趟，重新開始</button>
+    </div>` : '';
+  // 🎫 中繼票入口（有票才出現）
+  const ticketBox = (ticketsOf()>0 && !_midMode) ? `
+    <div style="border:1px dashed var(--gold);padding:10px 12px;margin:6px 0 10px;line-height:1.8">
+      <b style="color:var(--gold)">🎫 中繼票 ×${ticketsOf()}</b>
+      <div class="muted" style="font-size:11px;margin:2px 0 6px">可以直接從<b>第 ${MID.depth} 場</b>開打（照上次配置，或重選配置＋快速選秀）。</div>
+      <button class="btn" style="width:100%" onclick="renderMidStart()">🎫 用中繼票開局 →</button>
+    </div>` : '';
+  const midNote = _midMode==='fresh' ? `
+    <div class="muted" style="border:1px dashed var(--gold);padding:8px 10px;margin:6px 0 10px;color:var(--gold);line-height:1.8">
+      🎫 中繼票 · 重選配置中——選完流派、種子與配件後會進入<b>快速選秀</b>，然後直接開第 ${MID.depth} 場。
+      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="_midMode=null;renderClassSelect()">取消，改回一般開局</button>
+    </div>` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 發燒配件</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
+    ${resumeBox}${ticketBox}${midNote}
     <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${unlockLine}
     ${talentNote}${tBtns}
@@ -1626,7 +1657,218 @@ function renderClassSelect(){
 }
 function spendTalent(stat){ if(freeTalents()<=0) return; META.talents[stat]++; saveMeta(); renderClassSelect(); }
 
+// =========================================================================
+//  ⏸ 進度保留（自動續玩）｜💿 備份盤（一趟一次的倒帶）｜🎫 中繼票
+// =========================================================================
+// 【自動續玩】一趟只留一份存檔，關掉分頁再開就從原地接續——不用被迫一次打完。
+//   存檔時機：每回合開始、玩家出牌的當下、以及每個場間畫面。
+//   存的是「當下狀態的快照」，不是可重播的亂數種子：對手每回合仍重新讀局（虛晃／留手照舊隨機），
+//   所以續玩不會變成背版套路；而因為出牌當下就已存檔，關掉重開也撈不到重抽那一手的機會。
+const RUNSAVE_KEY = 'dipRogueRun_v1';
+let _phase = 'menu';
+const _clone = o => JSON.parse(JSON.stringify(o));
+
+function serializeG(){
+  if(!G) return null;
+  // Set 不能進 JSON → 轉陣列；busy 是動畫中的暫態，存檔一律當閒置
+  const g = Object.assign({}, G, { busy:false, _fired:[...(G._fired||[])], _swan:[...(G._swan||[])] });
+  try{ return _clone(g); }catch(e){ return null; }
+}
+function deserializeG(g){
+  if(!g) return null;
+  g._fired = new Set(g._fired||[]); g._swan = new Set(g._swan||[]); g.busy = false;
+  return g;
+}
+function saveRun(phase){
+  if(phase) _phase = phase;
+  if(!RUN || !RUN.classKey || _phase==='menu') return;
+  try{
+    const pay = { v:1, t:Date.now(), phase:_phase, run:_clone(RUN) };
+    if(_phase==='fight'){ pay.g = serializeG(); if(!pay.g) return; }
+    else if(_phase==='relic') pay.relicIds = (_relicChoices||[]).map(r=>r.id);
+    else if(_phase==='level')  pay.lvlIds = (_lvlChoices||[]).map(u=>u.id);
+    else if(_phase==='draw')   pay.drawCards = _drawChoices ? _clone(_drawChoices) : (_drawCard ? [_clone(_drawCard)] : null);
+    else if(_phase==='loot')   pay.lootCard = _lootCard ? _clone(_lootCard) : null;
+    localStorage.setItem(RUNSAVE_KEY, JSON.stringify(pay));
+  }catch(e){}
+}
+function clearRunSave(){ _phase='menu'; try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){} }
+function peekRunSave(){
+  let s=null; try{ s=JSON.parse(localStorage.getItem(RUNSAVE_KEY)); }catch(e){}
+  if(!s || !s.run || !s.run.classKey || !CLASSES[s.run.classKey]) return null;
+  return s;
+}
+function resumeRun(){
+  const s = peekRunSave();
+  if(!s){ clearRunSave(); renderClassSelect(); return; }
+  RUN = s.run;
+  RUN.mods = Object.assign({ maxHpAdd:0, extraDraw:0, counterQi:0, regen:0, ultDmg:0 }, RUN.mods||{});
+  RUN.relics = (RUN.relics||[]).filter(id=>relicById(id));
+  ensureRelicState(false);
+  _relicChoices=null; _lvlChoices=null; _drawCard=null; _drawChoices=null; _lootCard=null; _sel=null;
+  const ph = s.phase;
+  if(ph==='fight' && s.g){
+    G = deserializeG(s.g); _phase='fight';
+    renderBattle();
+    // 出牌當下存的檔：那一手玩家已經做過選擇 → 原樣打完，不給重選的機會
+    const cm = G._committed; G._committed=null;
+    if(cm && !G.over) setTimeout(()=>play(cm.uid, cm.attr), 80);
+    return;
+  }
+  G = null;
+  if(ph==='rewind'){ renderRewindOffer(); return; }
+  if(ph==='middraft'){ renderMidDraft(); return; }
+  if(ph==='relic'){ renderRelicChoice((s.relicIds||[]).map(relicById).filter(Boolean)); return; }
+  if(ph==='level'){ renderLevelUp((s.lvlIds||[]).map(id=>UPGRADES.find(u=>u.id===id)).filter(Boolean)); return; }
+  if(ph==='draw'){ renderWinContinue(); openDrawReveal((s.drawCards&&s.drawCards.length)?s.drawCards:null); return; }
+  if(ph==='loot'){ renderWinContinue(); openLootReveal(s.lootCard || pickLootCard()); return; }
+  renderWinContinue();
+}
+
+// 【備份盤】每打贏一位傳說藏家，可以把當下這一刻壓成一張備份盤——整趟只能壓一次。
+// 死掉時可以用它倒帶回壓片的那一場（用掉就沒了，之後再死就是真的死）。
+// 倒帶只回捲戰局（HP／牌組／深度／局內等級）；現金與配件耗損是跨趟資產，不回捲——器材的傷是真的傷。
+function runSnapshot(){
+  const r = Object.assign({}, RUN);
+  delete r.backup; delete r._midSnap;   // 不把快照包進快照裡
+  return _clone(r);
+}
+function makeBackup(){
+  if(!RUN || RUN.backup || RUN.backupUsed) return;
+  RUN.backupAt = RUN.depth;
+  RUN.backup = runSnapshot();
+  saveRun();
+  seedToast(`💿 已壓成備份盤（第 ${RUN.depth} 場）——死了可以倒帶回這裡一次`);
+  renderWinContinue();
+}
+function canRewind(){ return !!(RUN && RUN.backup && !RUN.backupUsed); }
+function renderRewindOffer(){
+  document.body.classList.remove('in-battle');
+  const at = RUN.backupAt || (RUN.backup && RUN.backup.depth) || 0;
+  _phase='rewind'; saveRun();
+  $app.innerHTML = topbarHTML() + `
+    <div class="death">
+      <div style="margin-bottom:6px">${pixArtHTML(SPR.brokenrec, 44)}</div>
+      <div class="muted">第 ${RUN.depth} 場 · 倒下了</div>
+      <div class="big" style="color:var(--gold)">💿 備份盤</div>
+      <div class="muted" style="margin-top:6px;line-height:1.9">你在<b>第 ${at} 場</b>壓過一張備份盤。<br>
+        要把唱針放回那一刻重來嗎？<b>整趟只有這一次</b>，用掉就沒了。</div>
+      <div class="muted" style="font-size:10px;margin-top:8px;line-height:1.8">
+        倒帶回捲的是戰局（HP／牌組／局內等級／深度）。<br>
+        已經賺到的現金和配件的磨損<b>不會回捲</b>——器材的傷是真的傷。</div>
+      <div class="sp"></div>
+      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="doRewind()">⏪ 倒帶回第 ${at} 場</button>
+      <div class="sp"></div>
+      <button class="btn" style="width:100%" onclick="RUN.backup=null;RUN.backupUsed=true;renderDeath()">接受這個結局 → 結算樂歷</button>
+    </div>`;
+}
+function doRewind(){
+  const b = RUN && RUN.backup; if(!b) return;
+  const cashEarned = RUN.cashEarned||0, rewound = (RUN.rewound||0)+1;
+  RUN = b;
+  RUN.backup = null; RUN.backupUsed = true; RUN.rewound = rewound;
+  RUN.cashEarned = cashEarned;          // 錢已經賺到了，不回捲
+  RUN.relics = (RUN.relics||[]).filter(id=>relicById(id) && isOwnedRelic(id));   // 倒帶後毀損的配件不會回來
+  RUN.equipped = (RUN.equipped||[]).filter(id=>RUN.relics.includes(id));
+  RUN.relicWear = RUN.relicWear||{};
+  RUN.relics.forEach(id=>{ RUN.relicWear[id] = Math.max(RUN.relicWear[id]||0, metaWearOf(id)); });  // 磨損取現況（較嚴者）
+  ensureRelicState(false);
+  const p = RUN.maxHp; recomputeMaxHp(p);
+  RUN.hp = Math.max(1, Math.min(RUN.maxHp, RUN.hp||RUN.maxHp));
+  RUN._drewThisWin = true;   // 不重複發那一場的抽盤
+  RUN._lastWasBoss = false;
+  G = null;
+  saveRun('win');
+  nextFight();
+}
+
+// 【中繼票】從頭打到第 MID.depth 場 → 賺一張票＋快照當時的 build。
+// 用票才能從第 MID.depth 場開打，兩條路：照快照配置接續，或重選流派種子＋快速選秀。
+let _midMode = null;          // 'fresh'＝重選配置那條路（走完選流派/種子/配件後接快速選秀）
+let _midDraftChoices = null;
+function ticketsOf(){ return Math.max(0, Math.round((META&&META.tickets)||0)); }
+function renderMidStart(){
+  document.body.classList.remove('in-battle');
+  const b = META.midBuild;
+  const bInfo = b ? `${CLASSES[b.classKey]?CLASSES[b.classKey].name:'—'}・牌組 ${(b.deck||[]).length} 張・局內 Lv.${b.runLevel||1}・攻${b.stats.atk} 防${b.stats.def} 氣勢率${b.stats.qir}` : '';
+  $app.innerHTML = topbarHTML() + `
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="renderClassSelect()">← 回選流派</button></div>
+    <h1>🎫 中繼點 · 第 ${MID.depth} 場</h1>
+    <div class="muted" style="margin:4px 0 2px">手上有 <b style="color:var(--gold)">${ticketsOf()}</b> 張中繼票（從頭打到第 ${MID.depth} 場才賺得到，一張只能用一次）。</div>
+    <div class="muted" style="margin:2px 0 12px;font-size:10px;line-height:1.8">
+      用票直接從<b>第 ${MID.depth} 場（傳說藏家戰）</b>開打。樂歷結算只算<b>實際打過的場數</b>，跳過的九場不給經驗——中繼票是拿來衝紀錄的，不是拿來刷等的。</div>
+    ${b ? `
+    <div class="cls">
+      <h3>💿 照上次配置接續</h3>
+      <div class="muted">用你打到第 ${MID.depth} 場當下那副牌組與能力原樣開打——實戰驗證過的 build，衝紀錄的首選。</div>
+      <div class="muted" style="color:var(--gold);margin:4px 0 2px">${bInfo}</div>
+      <button class="btn primary" style="width:100%" onclick="startMidRun()">用一張票 · 照這副開打 →</button>
+    </div>` : `
+    <div class="cls"><h3 class="muted">💿 照上次配置接續</h3><div class="muted">還沒有可用的快照——從頭打到第 ${MID.depth} 場就會存下來。</div></div>`}
+    <div class="cls">
+      <h3>🎲 重選配置</h3>
+      <div class="muted">重新選流派與種子，再用<b>快速選秀</b>（${MID.draftCards} 次撿盤二選一＋${MID.draftLevels} 次升級三選一）把牌組催熟到中繼點強度。想換流派、試新 build 又不想重爬前九場時用。</div>
+      <div class="muted" style="font-size:10px;margin:4px 0 2px">選秀次數比正常打到第 ${MID.depth} 場略少——換來的是新鮮感，強度上讓一點。</div>
+      <button class="btn primary" style="width:100%" onclick="midFreshStart()">用一張票 · 重選配置 →</button>
+    </div>`;
+}
+function midFreshStart(){ if(ticketsOf()<=0) return; _midMode='fresh'; renderClassSelect(); }
+// 照快照開打：牌組／能力沿用快照，配件耐久用「現在」的跨趟紀錄（不是快照當時的）
+function startMidRun(){
+  const b = META.midBuild;
+  if(!b || ticketsOf()<=0) return;
+  META.tickets = ticketsOf()-1; saveMeta();
+  RUN = _clone(b);
+  RUN.baseDepth = MID.depth-1;      // 跳過的場數：樂歷結算只算 depth-baseDepth
+  RUN.backup=null; RUN.backupUsed=false; RUN.backupAt=0; RUN.rewound=0;
+  RUN._midSnap=null; RUN._gotTicket=false; RUN._lastWasBoss=false; RUN._keptOne=false;
+  RUN.cashEarned=0; RUN._drewThisWin=true; RUN._revived=false;
+  RUN.relics=(RUN.relics||[]).filter(id=>relicById(id) && isOwnedRelic(id));
+  RUN.equipped=(RUN.equipped||[]).filter(id=>RUN.relics.includes(id));
+  RUN.relicWear={}; RUN.relics.forEach(id=>{ RUN.relicWear[id]=metaWearOf(id); });
+  ensureRelicState(true);
+  const p=RUN.maxHp; recomputeMaxHp(p); RUN.hp=RUN.maxHp;
+  clearRunSave();
+  nextFight();
+}
+// 快速選秀：撿盤二選一 × MID.draftCards → 升級三選一 × MID.draftLevels → 直接開第 MID.depth 場
+function renderMidDraft(){
+  document.body.classList.remove('in-battle');
+  const left = RUN._draftLeft||0;
+  if(left<=0){
+    RUN.runLevel = 1+MID.draftLevels; RUN.lvlQueue = MID.draftLevels; RUN._pendingStart = true;
+    afterLevelQueue(); return;
+  }
+  const a=pickDrawCard(), b=pickDrawCard([keyOf(a)]);
+  _midDraftChoices=[a,b];
+  saveRun('middraft');
+  $app.innerHTML = topbarHTML() + `
+    <h1 style="color:var(--gold)">🎲 快速選秀</h1>
+    <div class="muted" style="margin:2px 0 10px">把前九場的養牌濃縮成幾次選擇——挑一張加入牌組（還有 <b>${left}</b> 次）</div>
+    <div class="grid" id="midDraft">${_midDraftChoices.map((c,i)=>`
+      <div onclick="pickMidDraft(${i})" style="cursor:pointer">${cardHTML(c,{clk:true,cover:true})}</div>`).join('')}</div>`;
+  _midDraftChoices.forEach((c,i)=>{ if(c.coverUrl) return; ensureCover(c).then(url=>{ if(!url) return;
+    const wrap=document.getElementById('midDraft'); if(!wrap||!wrap.children[i]) return;
+    const cov=wrap.children[i].querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+}
+function pickMidDraft(i){
+  const c=_midDraftChoices && _midDraftChoices[i]; if(!c) return;
+  _midDraftChoices=null;
+  RUN.deck.push(c);
+  RUN.drawnCards=RUN.drawnCards||[];
+  if(!RUN.drawnCards.some(x=>keyOf(x)===keyOf(c))) RUN.drawnCards.push(c);   // 趟末一樣可以挑一張收藏
+  RUN._draftLeft=(RUN._draftLeft||1)-1;
+  renderMidDraft();
+}
+// 升級佇列走完之後要去哪：開局選秀 → 直接開打；一般情況 → 回勝利畫面
+function afterLevelQueue(){
+  if(RUN.lvlQueue>0){ renderLevelUp(); return; }
+  if(RUN._pendingStart){ RUN._pendingStart=false; nextFight(); return; }
+  renderWinContinue();
+}
+
 function initRun(key){
+  clearRunSave();   // 開新的一趟＝舊存檔作廢
   const c=CLASSES[key];
   RUN = {
     classKey:key,
@@ -1637,13 +1879,20 @@ function initRun(key){
     mods:{ maxHpAdd:0, extraDraw:0, counterQi:0, regen:0, ultDmg:0 },
     runLevel:1, runXp:0, lvlQueue:0,
     deck:[], depth:0, streak:0, relics:[], equipped:[], relicWear:{}, _revived:false, cashEarned:0,
+    baseDepth:0,                          // 中繼票跳過的場數（樂歷只算 depth-baseDepth）
+    backup:null, backupAt:0, backupUsed:false, rewound:0,   // 備份盤：整趟一次的倒帶
     seedsPicked:[],
     drawnCards:[],   // 一路上局末抽到的盤：趟結束結算時挑 1 張永久收藏
     _keptOne:false,
   };
   RUN.maxHp = RUN.baseMaxHp; RUN.hp = RUN.maxHp;
 }
-function chooseClass(key){ initRun(key); renderSeedSelect(); }
+function chooseClass(key){
+  // 上一趟還沒打完 → 開新的一趟等於放棄它，先問一聲（避免手滑洗掉進度）
+  const sv=peekRunSave();
+  if(sv && !confirm(`上一趟還在進行中（第 ${sv.run.depth} 場）。\n開新的一趟會直接放棄它，確定嗎？`)) return;
+  initRun(key); renderSeedSelect();
+}
 // 死亡畫面「同流派再戰」：沿用上次流派＋種子，一鍵直接開局（降低重開摩擦）
 function quickRestart(){
   const lo=META.lastLoadout;
@@ -1951,6 +2200,14 @@ function startRun(){
   const _owned = new Set(META.collection.map(keyOf).concat((RUN._collShelf||[]).map(keyOf)));
   RUN.drawnCards = RUN.seedsPicked.filter(c=>!_owned.has(keyOf(c)))
     .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null,uid:newUid()}));
+  // 中繼票（重選配置）：扣票 → 跳到中繼點前一場 → 快速選秀催熟牌組 → 直接開第 MID.depth 場
+  if(_midMode==='fresh'){
+    if(ticketsOf()<=0){ _midMode=null; renderMidStart(); return; }
+    META.tickets = ticketsOf()-1; saveMeta(); _midMode=null;
+    RUN.baseDepth = MID.depth-1; RUN.depth = MID.depth-1;
+    RUN._draftLeft = MID.draftCards; RUN._drewThisWin = true;
+    renderMidDraft(); return;
+  }
   nextFight();
 }
 // 取得發燒配件（掉落／禮物＝全新的一件，舊耗損紀錄一併換新）；出戰欄有空位就自動裝上
@@ -2083,7 +2340,10 @@ function nextFight(){
   // 每場勝利先翻一張新專輯：把「變強」與「認識一張盤」綁成同一個循環。
   // 開局 depth=0 不攔截；已抽盤後才可進下一場。
   if(RUN.depth>0 && !RUN._drewThisWin){ openDrawReveal(); return; }
+  // 中繼點快照：從頭打的趟，在踏進第 MID.depth 場前把 build 拍下來（打贏那場才發票）
+  if(!RUN.baseDepth && RUN.depth===MID.depth-1 && !RUN._midSnap) RUN._midSnap = runSnapshot();
   RUN.depth++;            // 進入第 depth 場
+  RUN._lastWasBoss = false;
   ensureRelicState();     // 相容舊存檔＋補齊出戰欄
   const E = enemyForDepth(RUN.depth);
   // 起手保證抽到自己選的牌：非雜牌洗勻放牌庫上層、雜牌沉底——好牌抽完才輪到雜牌充數
@@ -2248,6 +2508,8 @@ function startTurn(){
   if(eUlt && Math.random() < mercy*0.65) eUlt=false;   // 玩家瀕死劣勢 → 對手「留一手」不急著輾壓，給反殺窗口
   G.pendingE = { card, attr, tell, ult:eUlt, vague };
   renderBattle();
+  // 回合開始＝存檔點（含對手這回合已暗定的牌）→ 關掉重開接續同一個局面，不能重抽
+  G._committed=null; saveRun('fight');
 }
 
 // =========================================================================
@@ -2545,8 +2807,11 @@ function softenIncoming(d){
 async function play(uid, pAttr){
   if(G.busy||G.over||!G.pendingE) return;
   window.DipPlayer?.unlock?.();
+  const pCard0=G.p.hand.find(c=>c.uid===uid); if(!pCard0) return;
+  // 出牌當下先存檔（記下這一手）→ 看到結果才關掉分頁也沒用，續玩會把同一手打完
+  G._committed={uid, attr:pAttr}; saveRun('fight');
   G.busy=true; _sel=null;
-  const pCard=G.p.hand.find(c=>c.uid===uid); if(!pCard){ G.busy=false; return; }
+  const pCard=pCard0;
   const pUlt=pAttr==='__ult__';
   const pSac=pAttr==='__sac__';        // 割捨防禦：犧牲此牌抵擋對手輾壓
   const {card:eCard, attr:eAttr, tell, ult:eUlt, vague}=G.pendingE;
@@ -2752,6 +3017,14 @@ function applyBuff(u){
 
 function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
+  RUN._lastWasBoss = !!(G.E && G.E.boss);              // 剛打贏藏家 → 勝利畫面給壓備份盤的機會
+  // 中繼票：從頭打贏第 MID.depth 場 → 一張票＋存下踏進那場前的 build 快照
+  if(!RUN.baseDepth && RUN.depth===MID.depth && RUN._midSnap && !RUN._gotTicket){
+    RUN._gotTicket = true;
+    META.tickets = ticketsOf()+1;
+    META.midBuild = RUN._midSnap;
+    RUN._midSnap = null;
+  }
   maybeTopUpDynPool();                                  // 邊打邊在背景補充動態卡池
   const heal = 3 + (hasUnlock('heal4')?1:0) + relicFx('winHeal');   // Lv.6 解鎖＋洗碟水
   RUN._wearEvents = applyWear();                        // 出戰發燒配件磨損（迴光一轉／毀損移除在此結算；耗損跨趟保留）
@@ -2786,18 +3059,22 @@ function loseFight(){
       return;
     }
   }
-  G.over=true; renderDeath();
+  G.over=true;
+  if(canRewind()){ renderRewindOffer(); return; }   // 壓過備份盤 → 先問要不要倒帶，再決定結不結算
+  renderDeath();
 }
 
 // ----- 藏家掉落：發燒配件三選一（樂歷 Lv.8 解鎖四選一）-----
 let _relicChoices=null;
 function hasWornRelic(){ return (RUN&&RUN.relics||[]).some(id=>wearOf(id)>0); }
-function renderRelicChoice(){
+function renderRelicChoice(restored){
   document.body.classList.remove('in-battle');
   const pool=relicPool();
   const n = hasUnlock('relicPick4') ? 4 : 3;
-  _relicChoices = shuffle(pool.slice()).slice(0,n);
+  // restored＝續玩時還原上次的三選一（不讓關掉重開變成重抽獎品）
+  _relicChoices = (restored && restored.length) ? restored : shuffle(pool.slice()).slice(0,n);
   if(!_relicChoices.length && !hasWornRelic()){ afterRelicChoice(); return; }   // 拿滿又無耗損 → 直接往下走
+  saveRun('relic');
   const restoreBtn = hasWornRelic()
     ? `<div class="muted" style="margin:10px 0 4px;font-size:11px">或者——</div>
        <button class="btn" style="width:100%" onclick="renderRestorePick()">🧴 不拿新發燒配件，整新一件舊發燒配件到全新</button>` : '';
@@ -2846,12 +3123,13 @@ function pickRelic(i){
   _relicChoices=null;
   afterRelicChoice();
 }
-function afterRelicChoice(){ if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue(); }
+function afterRelicChoice(){ afterLevelQueue(); }
 
 let _lvlChoices=null;
-function renderLevelUp(){
+function renderLevelUp(restored){
   document.body.classList.remove('in-battle');
-  _lvlChoices = shuffle(UPGRADES.slice()).slice(0,3);
+  _lvlChoices = (restored && restored.length) ? restored : shuffle(UPGRADES.slice()).slice(0,3);
+  saveRun('level');
   $app.innerHTML = topbarHTML() + `
     <h1 style="color:var(--gold)">⬆ 局內升級 Lv.${RUN.runLevel}</h1>
     <div class="muted" style="margin:2px 0 8px">選一個強化（整趟生效、死亡洗掉）${RUN.lvlQueue>1?`　還有 ${RUN.lvlQueue-1} 次`:''}</div>
@@ -2871,7 +3149,7 @@ function applyUpgrade(i){
   }
   applyBuff(u);
   RUN.lvlQueue--;
-  if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();
+  afterLevelQueue();
 }
 function modsLine(){
   const m=RUN.mods, s=RUN.stats;
@@ -3076,13 +3354,32 @@ function toNextBoss(){ const r=RUN.depth%5; return r===0 ? 0 : 5-r; }
 
 function renderWinContinue(){
   document.body.classList.remove('in-battle');
+  saveRun('win');
   const need=runXpNeed();
   const tb=toNextBoss();
+  // 💿 備份盤：打贏藏家的當下才問（整趟一次）。早壓安全但浪費，留到後面又怕撐不到——這是玩家自己的賭。
+  const backupBox = (RUN._lastWasBoss && !RUN.backup && !RUN.backupUsed)
+    ? `<div style="border:1px dashed var(--gold);padding:10px 12px;margin:8px 0;line-height:1.8">
+         <b style="color:var(--gold)">💿 要在這裡壓一張備份盤嗎？</b>
+         <div class="muted" style="font-size:10px;margin:2px 0 6px">整趟<b>只能壓一次</b>。壓下去之後死掉，可以倒帶回這一場再拚一次；<b>不壓就留著等更深的藏家</b>——但你不一定撐得到。</div>
+         <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="makeBackup()">💿 壓成備份盤（第 ${RUN.depth} 場）</button>
+       </div>`
+    : RUN.backup
+      ? `<div class="muted" style="margin:6px 0;color:var(--gold)">💿 備份盤：第 ${RUN.backupAt} 場（死亡時可倒帶一次）</div>`
+      : RUN.backupUsed
+        ? `<div class="muted" style="margin:6px 0">💿 備份盤已用掉——接下來死了就是真的死。</div>` : '';
+  // 🎫 中繼票：從頭打贏第 MID.depth 場的那一刻發
+  const ticketBox = RUN._gotTicket && RUN.depth===MID.depth
+    ? `<div style="border:1px dashed var(--gold);padding:10px 12px;margin:8px 0;line-height:1.8">
+         <b style="color:var(--gold)">🎫 抵達中繼點——獲得中繼票 ×1</b>
+         <div class="muted" style="font-size:10px;margin-top:2px">這副 build 已存成快照。下次開局可以用票直接從第 ${MID.depth} 場開打（照這副接續，或重選配置＋快速選秀）。</div>
+       </div>` : '';
   $app.innerHTML = topbarHTML() + `
     <h1 class="good" style="color:var(--win)">${pixArtHTML(PIX_ICONS.heavy180, 20, 'pixspin')} 第 ${RUN.depth} 場 — 勝！</h1>
     <div class="muted" style="margin:2px 0 8px">連勝 ${RUN.streak}・回血至 HP ${RUN.hp}/${RUN.maxHp}・牌組 ${RUN.deck.length} 張</div>
     <div class="muted" style="margin:2px 0 4px;color:var(--gold)">💰 收入 <b>+$${RUN._cashGain||0}</b>（存款 $${cashOf()}）<span class="muted" style="font-size:10px">— 趟結束後可花在保養配件</span></div>
     <div class="muted" style="color:var(--gold)">🎩 距下一位傳說藏家還有 <b>${tb===0?5:tb}</b> 場（打贏掉發燒配件）</div>
+    ${ticketBox}${backupBox}
     ${relicBarHTML()}
     <div class="muted">局內 Lv.${RUN.runLevel}　經驗 +${RUN._lastGain}（${RUN.runXp}/${need}）</div>
     <div class="xpbar" style="margin:6px 0 12px"><i style="width:${Math.min(100,RUN.runXp/need*100)}%"></i></div>
@@ -3124,12 +3421,15 @@ function pickDrawCard(excludeKeys){
   }
   return copyCard(pick(allPool()));   // 卡池抽乾了的保險
 }
-function openDrawReveal(){
+// pre＝續玩時還原上次翻到的盤（1 張或 2 張）→ 關掉重開不會變成重抽
+function openDrawReveal(pre){
   if(RUN._drewThisWin || document.getElementById('drawMask')) return;
   // 會員集點卡：抽兩張、挑一張
-  if(relicFx('drawTwo')){ fireRelic('drawTwo');
-    const a=pickDrawCard(), b=pickDrawCard([keyOf(a)]);
+  if((pre && pre.length===2) || (!pre && relicFx('drawTwo'))){ fireRelic('drawTwo');
+    const a=(pre&&pre[0]) || pickDrawCard();
+    const b=(pre&&pre[1]) || pickDrawCard([keyOf(a)]);
     _drawChoices=[a,b];
+    saveRun('draw');
     const mask=document.createElement('div');
     mask.className='drawmask'; mask.id='drawMask';
     mask.innerHTML=`<div class="drawcard" style="max-width:480px">
@@ -3153,7 +3453,8 @@ function openDrawReveal(){
     });
     return;
   }
-  const c = _drawCard = pickDrawCard();
+  const c = _drawCard = (pre && pre[0]) || pickDrawCard();
+  saveRun('draw');
   const aceTag = c.ace ? `<span class="acebadge">${ACE_ZH[c.ace]}</span>` : '';
   const mask = document.createElement('div');
   mask.className = 'drawmask'; mask.id = 'drawMask';
@@ -3207,6 +3508,7 @@ function pickLootCard(){
 function openLootReveal(card){
   if(document.getElementById('lootMask')) return;
   const c = _lootCard = card;
+  saveRun('loot');
   const aceTag = c.ace ? `<span class="acebadge">${ACE_ZH[c.ace]}</span>` : '';
   const mask = document.createElement('div');
   mask.className = 'drawmask'; mask.id = 'lootMask';
@@ -3237,7 +3539,7 @@ function confirmLoot(){
   _lootCard = null;
   window.DipPlayer?.stop({fade:true}); _cardInfoCard=null;   // 收起彈窗＝停播試聽
   const m = document.getElementById('lootMask'); if(m) m.remove();
-  if(RUN.lvlQueue>0) renderLevelUp(); else renderWinContinue();   // 接續剩餘升級佇列
+  afterLevelQueue();   // 接續剩餘升級佇列（開局選秀走完則直接開打）
 }
 // 局末結算：從一路抽到的盤中挑「一張」永久收進唱片櫃
 // 未登入 → 先詢問登入（唱片櫃在帳號上）；不想登入也可先存本機，之後登入自動補綁
@@ -3327,23 +3629,27 @@ function toggleCardInfoMusic(){
   setRogueMusic(!rogueMusicOn);
   if(rogueMusicOn && _cardInfoCard) playRogueAlbum(_cardInfoCard);
 }
-// 遊戲中離開：先確認（半途離開不結算、不累積樂歷）
+// 遊戲中離開：三條路——保留進度下次接著打／放棄這趟／留下繼續玩
 function confirmQuit(){
   if(document.getElementById('quitMask')) return;
   const mask=document.createElement('div');
   mask.className='drawmask'; mask.id='quitMask';
-  mask.innerHTML=`<div class="drawcard" style="max-width:320px">
-    <div class="lab" style="color:var(--lose)">確定離開遊戲？</div>
-    <div class="intro" style="text-align:center;min-height:0;border:none;padding:6px 0 14px">
-      現在離開這一趟<b>不會結算、也不會累積樂歷</b>。<br>本場進度（第 ${RUN.depth} 場・連勝 ${RUN.streak}）將直接放棄。</div>
-    <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="doQuit()">確定離開 → 主選單</button>
-    <button class="btn" style="width:100%" onclick="closeQuit()">繼續遊戲</button>
+  mask.innerHTML=`<div class="drawcard" style="max-width:340px">
+    <div class="lab">要離開嗎？</div>
+    <div class="intro" style="text-align:center;min-height:0;border:none;padding:6px 0 12px;line-height:1.9">
+      目前進度：<b>第 ${RUN.depth} 場・連勝 ${RUN.streak}</b><br>
+      <span class="muted" style="font-size:10px">保留進度＝下次打開從這裡接續（電腦與手機各自保存）；<br>放棄則這趟直接作廢，不結算、不累積樂歷。</span></div>
+    <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="quitKeep()">⏸ 保留進度離開（下次接著打）</button>
+    <button class="btn" style="width:100%;margin-bottom:8px;color:var(--lose);border-color:var(--lose)" onclick="quitAbandon()">🗑 放棄這趟離開（不結算）</button>
+    <button class="btn" style="width:100%" onclick="closeQuit()">↩ 留下來繼續打</button>
   </div>`;
   mask.addEventListener('click', e=>{ if(e.target===mask) closeQuit(); });
   document.body.appendChild(mask);
 }
 function closeQuit(){ const m=document.getElementById('quitMask'); if(m) m.remove(); }
-function doQuit(){ location.href='index.html'; }
+function quitKeep(){ saveRun(); window.DipPlayer?.stop({fade:true}); location.href='index.html'; }
+function quitAbandon(){ clearRunSave(); window.DipPlayer?.stop({fade:true}); location.href='index.html'; }
+function doQuit(){ quitAbandon(); }   // 舊入口保留
 function openCardInfo(card, opts){
   if(!card || document.getElementById('cardInfoMask') || document.getElementById('drawMask')) return;
   opts=opts||{};
@@ -3381,10 +3687,13 @@ function openCardInfo(card, opts){
 
 function renderDeath(){
   document.body.classList.remove('in-battle');
-  // 樂歷結算經驗（與局內經驗分開算）：依 depth／連勝
+  clearRunSave();   // 這趟結束 → 續玩存檔作廢
+  // 樂歷結算經驗（與局內經驗分開算）：依「實際打過的場數」／連勝
+  // 中繼票跳過的場數不給經驗 → 從中繼開沒有刷等優勢，票只用來衝紀錄
   const prevBest = META.bestDepth;   // 先記舊紀錄 → 算「差一點」勾子
+  const fought = Math.max(0, RUN.depth - (RUN.baseDepth||0));
   const recordBonus = RUN.depth>META.bestDepth ? MXP.recordBonus : 0;   // 破紀錄額外給
-  const gained = RUN.depth*MXP.perDepth + RUN.streak*MXP.perStreak + recordBonus;
+  const gained = fought*MXP.perDepth + RUN.streak*MXP.perStreak + recordBonus;
   const recordCash = (RUN.depth>prevBest && RUN.depth>0) ? CASH.recordBonus : 0;   // 破紀錄現金獎金
   if(recordCash) META.cash = cashOf() + recordCash;
   const lvBefore=levelOf(META.xp);
@@ -3432,6 +3741,8 @@ function renderDeath(){
       <div class="muted">試煉終結</div>
       <div class="big">第 ${RUN.depth} 場</div>
       <div class="muted">連勝 ${RUN.streak}・流派 ${CLASSES[RUN.classKey].name}・局內 Lv.${RUN.runLevel}${relicNote}</div>
+      ${RUN.baseDepth?`<div class="muted" style="font-size:10px;margin-top:2px">🎫 中繼票開局（第 ${RUN.baseDepth+1} 場起）・實際打了 ${fought} 場，樂歷只算這幾場</div>`:''}
+      ${RUN.rewound?`<div class="muted" style="font-size:10px;margin-top:2px">💿 這趟用過備份盤倒帶 ${RUN.rewound} 次</div>`:''}
       <div style="margin-top:8px;min-height:16px">${recordLine}</div>
       <div class="sp"></div>
       <div>獲得樂歷 <b style="color:var(--gold)">+${gained} XP</b>　<span class="muted">(結算另計，與局內經驗無關)</span></div>
@@ -3500,6 +3811,10 @@ function applyConfig(cfg){
       if(w.tierMul && typeof w.tierMul==='object') WEAR.tierMul=Object.assign({},WEAR.tierMul,w.tierMul);
       ['enabled','slots','perFight','usedBump','swanAt','cleanerHeal','lvDura','powerBase','powerCap']
         .forEach(k=>{ if(w[k]!=null) WEAR[k]=w[k]; });
+    }
+    // 中繼點：淺層覆寫（roguelike.mid）——中繼場次與快速選秀次數可後台調
+    if(cfg.mid && typeof cfg.mid==='object'){
+      ['depth','draftCards','draftLevels'].forEach(k=>{ if(typeof cfg.mid[k]==='number') MID[k]=cfg.mid[k]; });
     }
     // 現金系統：淺層覆寫（roguelike.cash）
     if(cfg.cash && typeof cfg.cash==='object'){
