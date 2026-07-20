@@ -223,12 +223,13 @@
       try {
         const now = audioCtx.currentTime;
         const gain = previewGain.gain;
-        if (typeof gain.cancelAndHoldAtTime === 'function') gain.cancelAndHoldAtTime(now);
-        else {
-          const current = gain.value;
-          gain.cancelScheduledValues(now);
-          gain.setValueAtTime(current, now);
-        }
+        // cancelAndHoldAtTime 在「now 之後已經沒有排程事件」時不會補上保持點（淡入的
+        // ramp 早在 28 秒前就結束了）。少了錨點，接著的 linearRamp 會從那個舊事件起算，
+        // 音量在呼叫當下就直接塌到約 2%，聽起來是硬切而不是淡出。一律自己補
+        // setValueAtTime(現值, now) 當起點，1.5 秒淡出才會真的走滿。
+        const current = gain.value;
+        gain.cancelScheduledValues(now);
+        gain.setValueAtTime(current, now);
         gain.linearRampToValueAtTime(toValue, now + ms / 1000);
         return;
       } catch (_) {}

@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜試聽淡出失效修正（fadePreview 缺錨點）
+
+- Repo：`dip-vinyl-shop`
+- 改動：試聽的 1.5 秒淡出其實從來沒有生效，聽起來一直是硬切。成因在 `fadePreview()`：
+  `cancelAndHoldAtTime(now)` 只有在「now 之後還有排程事件」時才會補上保持點；淡入的 ramp
+  早在 28.5 秒前就結束，所以它什麼都不做，接著的 `linearRampToValueAtTime(0, now+1.5)`
+  會從那個舊事件（t=1.5s、值 0.5）起算整條斜線 → 呼叫當下音量就已經掉到約 0.025（2.5%），
+  剩下的 1.5 秒只是在聽不見的音量下慢慢爬到 0。修法：不再依賴 `cancelAndHoldAtTime`，
+  一律自己 `cancelScheduledValues(now)` + `setValueAtTime(現值, now)` 當錨點再拉 ramp
+  （原本 else 分支的寫法才是對的）。淡入不受影響（它前面本來就有 `setPreviewLevel(0)` 當錨點）。
+  同一修正同時讓「30 秒播完」與「關閉簡介視窗」兩條淡出路徑都真的走滿 1.5 秒。
+  另把三頁的 `dip-player.js?v=19` 一起改成 `?v=20`，讓已裝 PWA／service worker 的使用者拿得到新檔。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`
+- 驗證：`node --check dip-player.js` 通過。本機 static server 瀏覽器實測（攔截 GainNode 取樣真實 gain）：
+  修正前 30 秒結束時 gain 由 0.5 在一個取樣內塌到 0.026；修正後 0.5 → 0.43 → 0.345 → 0.264
+  → 0.179 → 0.094 → 0 走滿 1.5 秒。關閉視窗的 `stop({fade:true})` 同樣由「瞬間 0.038」修正為
+  0.45 → 0.396 → … → 0。另以 OfflineAudioContext 獨立重現並確認 `cancelAndHoldAtTime` 的行為
+  （28.6s 時值 0.0246，與線上量到的 0.026 吻合）。battle 與 roguelike console 皆無錯誤。
+- 待辦（已診斷、尚未修）：iOS 上「第一次點開簡介不播、關掉重開才正常」與「小唱盤機再次點擊仍靜音」
+  推定同一根因——`playItunes()` 在 `await loadPreviewBuffer()` **之前**就把維持 iOS audio session
+  的靜音 `<audio>` keep-alive `pause()` 掉，第一次要等網路下載＋解碼（手機 1～3 秒），這段空窗
+  iOS 會把 session 收掉，之後 `source.start(0)` 就沒有聲音；第二次因為 buffer 已快取、幾乎同一個
+  tick 就 start，所以正常。桌機 Chrome 無法重現（即使人工延遲音檔 3.5 秒仍正常播放）。
+  建議修法：把 `audio.pause()` 移到 `source.start(0)` 之後，或乾脆讓靜音 keep-alive 持續播。
+
 ### 2026-07-20｜整備面板列出全收藏＋趟中修理真正生效
 
 - Repo：`dip-vinyl-shop`
