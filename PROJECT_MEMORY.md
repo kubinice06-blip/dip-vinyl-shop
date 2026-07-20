@@ -1,5 +1,26 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜新增試聽診斷頁（iOS 首次沒聲音仍未解）
+
+- Repo：`dip-vinyl-shop`
+- 背景：上一筆的 keep-alive 修正經店主 iPhone 實機驗證——**淡出、小唱盤機重播都好了，但「第一次點開簡介沒聲音」依舊**。
+  代表「空窗期 audio session 被收掉」這個假設被推翻（keep-alive 全程墊著仍然無聲）。桌機 Chrome
+  完全無法重現，繼續猜只會亂改核心音訊管線，因此改為先取得實機數據。
+- 改動：新增獨立診斷頁 `audio-debug.html`（**全新檔案，不 import、不修改任何現有程式**，零風險）。
+  以與 `dip-player.js` 相同形狀的最小碼重現整條路徑，並在手機上印出逐步數據：
+  AudioContext state／sampleRate／currentTime 是否前進、keep-alive `<audio>.play()` 成功或被拒、
+  音檔 fetch status 與耗時、`decodeAudioData` 結果、**解碼後 buffer 的峰值**（判斷音檔本身是否無聲）、
+  以及用 AnalyserNode 量到的**圖形實際輸出峰值**（判斷訊號有沒有真的產生）。
+  五個按鈕構成 A/B：⓪ 只解鎖（讓 AudioContext 在更早一次觸碰建立，與正式版一致）→ ① 完整首播
+  → ② 快取路徑 → ③ 手勢當下立刻播 → ④ 同一份快取音但刻意空等 3 秒才播。
+  ③ 與 ④ 的差別只有「離手勢多久」，可單獨隔離延遲是不是主因。
+- 判讀方式：輸出峰值 >0 但耳朵沒聲音 → 訊號有產生、被 iOS 擋在輸出端（系統層路由）；
+  峰值為 0 但時鐘正常 → 圖形連接或起播時機問題；時鐘沒前進 → context 根本沒在算圖。
+- 主要檔案：`audio-debug.html`（新增）
+- 驗證：桌機 Chrome 實測五個按鈕全部正常運作、log 累積不清空可一次截圖；
+  首播路徑量到解碼峰值 0.9976、輸出峰值 0.4861、時鐘前進 2.51s，判讀邏輯正確。
+  線上路徑為 `https://dipvinyl.tw/audio-debug.html`，待店主用 iPhone 實測回報。
+
 ### 2026-07-20｜試聽淡出失效修正（fadePreview 缺錨點）
 
 - Repo：`dip-vinyl-shop`
