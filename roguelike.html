@@ -1747,7 +1747,10 @@ function paintSeedScreen(){
   const emptyColl = (RUN._source==='collection' && shelf.length<SM)
     ? `<div class="muted" style="margin:6px 0;color:var(--lose)">唱片櫃不足 ${SM} 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
-    <h1>挑 ${SM} 張專輯開始旅程</h1>
+    <div class="row" style="margin:14px 0 2px">
+      <button class="btn" style="padding:4px 9px;font-size:13px;line-height:1" onclick="renderClassSelect()" title="回上一步：重選流派" aria-label="回上一步：重選流派">←</button>
+      <h1 style="margin:0">挑 ${SM} 張專輯開始旅程</h1>
+    </div>
     <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'唱片櫃與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
     <div class="muted" style="margin:2px 0 2px;font-size:10px">點卡選入／取消，<b>長按</b>卡片看專輯介紹與試聽。</div>
     ${sourceRow}${emptyColl}

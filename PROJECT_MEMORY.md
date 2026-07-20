@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜移除「中國內地」用語＋種子選擇頁加回上一步
+
+- Repo：`dip-vinyl-worker`、`dip-vinyl-shop`
+- 改動：
+  1. 崔健《新长征路上的摇滚》的人工簡介把「中國內地第一張原創搖滾專輯」改為「中國第一張原創搖滾專輯」，移除以中國為主體、矮化台灣的用語。同時全庫掃描 `內地／大陸／台灣地區／中國台灣／港澳台／兩岸三地` 與常見中國用語（視頻、質量、信息、網絡、軟件、硬件、屏幕、音頻⋯），確認 CURATED_DESCS、NEOCLASSIC_LIST、desc-gen 批次與已入 KV 的 5,773 筆簡介都沒有其他違例；`index.html` 的「歐洲大陸」是地理名詞、`水準` 是台灣用語，均保留。
+  2. Roguelike 種子選擇頁（選完流派後挑專輯）標題左側加一顆 `←` 小箭頭按鈕，點了回到選流派畫面。與標題同一行、寬 27px，不增加任何版面高度。`chooseClass()` 每次都會 `initRun()` 重建 RUN，所以回上一步再選流派不會殘留舊狀態。
+- 主要檔案：`dip-vinyl-worker/src/index.js`、`dip-vinyl-shop/roguelike.html`
+- 驗證：`node --check src/index.js` 通過；`npx wrangler deploy` 已部署（Version `6375beac`），線上 `/album-desc` 回傳新文案且 `X-Cache: CURATED`（第一次查到舊文案是 CDN 邊緣快取，加 cache buster 後確認正確）。前端一律走 `/album-desc`、不從 Firestore 讀簡介，故各頁面同步生效。瀏覽器實測：選流派 → 種子頁出現「回上一步：重選流派」→ 點擊回到流派清單；桌機與 375px 手機下箭頭與標題同一行、無橫向溢位。
+
 ### 2026-07-20｜Apple 試聽首次開啟：預配對、手勢解鎖與預熱快取
 
 - Repo：`dip-vinyl-shop`
