@@ -1,5 +1,27 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜iOS 首次點開簡介沒聲音：真正根因是 keep-alive 殭屍狀態
+
+- Repo：`dip-vinyl-shop`
+- 診斷過程：店主 iPhone 實測 `audio-debug.html` ——最小重現路徑**全部有聲音**（連跳過解鎖鈕直接播
+  都正常），證明 `dip-player.js` 的下載→解碼→BufferSource 播放管線在 iOS 上本身沒問題。
+  同時發現新線索：正式頁第一次開簡介沒聲音時，**不用關視窗**，點小唱盤機兩下（靜音→再播）就有聲音。
+- 根因：診斷頁與正式頁失敗那一下的唯一差別＝「該次手勢內有沒有真的對靜音 keep-alive `<audio>`
+  重發 `play()`」。`primePreviewFromGesture()` 原本有 `if (!audio.paused && !audio.ended) return true`
+  的提前返回——靜音循環從進頁面第一次觸碰就開始播，元素自認還在播；但 iOS 會把長時間循環的
+  靜音元素實際停掉而 `paused` 仍回報 `false`（殭屍狀態），audio session 已不在頁面手上。
+  於是開簡介那次手勢被提前返回白白流掉，稍後 `source.start(0)` 的訊號有產生卻被 iOS 擋在輸出端。
+  一切觀察都吻合：點唱盤第一下 `stop()` 把元素真正 `pause()` 掉，第二下 unlock 看到 `paused===true`
+  終於在手勢內重發 `play()`、session 抓回來就有聲；之後每次成功播放結尾都會 pause keep-alive，
+  所以後續開簡介永遠走到重發分支 → 都正常 → 「只有第一次沒聲音」。
+- 修法（一行語意）：提前返回的分支改為**手勢內一律重發 `audio.play()`** ——正常播放中的元素呼叫
+  `play()` 是 no-op、立即 resolve；殭屍元素則重新起播、把 session 抓回來。單向保險，
+  不動 `installAudioUnlock`／`unlock` 的任何其他邏輯。版號 v=22 → v=23。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`
+- 驗證：`node --check` 通過。桌機回歸四條路徑全過——keep-alive 播放中重複 unlock 不炸、
+  首播 gain 0.5＋keep-alive 正確交接（start 後 paused=true）、靜音→重播淡入 0.05→0.5 走滿 1.5 秒、
+  關窗淡出 0.45→0 走滿 1.5 秒；console 無錯誤。iOS 實機由店主驗證（見下一步回報）。
+
 ### 2026-07-20｜新增試聽診斷頁（iOS 首次沒聲音仍未解）
 
 - Repo：`dip-vinyl-shop`

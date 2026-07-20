@@ -296,7 +296,17 @@
           silentSource.start(0);
         } catch (_) {}
       }
-      if (!audio.paused && !audio.ended) return true;
+      if (!audio.paused && !audio.ended) {
+        // iOS 會把長時間循環的靜音元素實際停掉，但 paused 仍回報 false（殭屍狀態），
+        // audio session 已不在頁面手上。此時若信任 paused 而不動作，這次手勢就白白
+        // 流掉，稍後 source.start() 的訊號會被 iOS 擋在輸出端——正是「第一次點開簡介
+        // 沒聲音」的根因（實機診斷頁比對確認）。手勢內一律重發 play()：正常播放中的
+        // 元素呼叫 play() 是 no-op、立即 resolve；殭屍元素則會重新起播、把 session
+        // 抓回來。單向保險，不影響既有解鎖路徑。
+        const retry = audio.play();
+        if (retry?.catch) retry.catch(() => {});
+        return true;
+      }
       audio.loop = true;
       audio.src = silentPreviewSource();
       audio.currentTime = 0;
