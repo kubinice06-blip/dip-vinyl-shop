@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-20｜殭屍假設也被推翻 → dip-player 內建 #auddbg 實機偵錯層
+
+- Repo：`dip-vinyl-shop`
+- 背景：keep-alive 殭屍修正（v=23）經店主 iPhone 實測**無效**，「第一次點開簡介沒聲音」依舊。
+  至此兩個假設（session 空窗、keep-alive 殭屍）都被實機推翻；且獨立診斷頁 `audio-debug.html`
+  在同一支 iPhone 上**全部路徑有聲音**——問題只出現在正式頁面的真實首播路徑上，
+  只能在那條路徑上直接量測。
+- 改動：`dip-player.js` 內建偵錯層，**只有網址帶 `#auddbg` 才啟動**，平常一行邏輯都不多跑：
+  1. 畫面底部固定 log 面板，記錄：AudioContext 建立、unlock 各分支與 keep-alive `play()`
+     的 promise 結果、playItunes 來源／曲目／buffer 快取命中、下載解碼耗時、每個關鍵點的
+     `ctx.state`／`currentTime`／gain／**AnalyserNode 輸出峰值**／keep-alive 狀態、狀態機轉換、stop 呼叫。
+  2. AnalyserNode 只作為 previewGain 的旁支（sink），不動原本輸出鏈。
+  3. **自動修復實驗**：起播後 0.8 秒若量到輸出峰值=0（訊號沒到輸出端），自動執行
+     `suspend()→resume()` 一次並記錄結果；2.2 秒再量一次。若音樂在約 1 秒後突然出來，
+     即證明「輸出端卡死、suspend/resume 可解」，正式修法就照這個做成無偵錯版 watchdog。
+- 主要檔案：`dip-player.js`、`battle.html`、`index.html`、`roguelike.html`（v=23 → v=24）
+- 驗證：`node --check` 通過。桌機帶 `#auddbg` 實測：overlay 逐步記錄完整（含 unlock 重發、
+  下載 656ms、start+0.8s peak=0.173、start+2.2s peak=0.3527、keep-alive 交接 playing→paused）；
+  不帶 hash 時 overlay 不存在、播放正常、console 無錯誤。
+  待店主用 iPhone 開 `https://dipvinyl.tw/battle.html#auddbg` 重現第一次開簡介後截圖回報。
+- 交接注意：本機測試時 python http.server 的 HTML 會被瀏覽器啟發式快取＋service worker 蓋住，
+  改了 `?v=` 後要清 SW 並用 `?nocache=` 之類的 query 重載才拿得到新 HTML。
+
 ### 2026-07-20｜iOS 首次點開簡介沒聲音：真正根因是 keep-alive 殭屍狀態
 
 - Repo：`dip-vinyl-shop`

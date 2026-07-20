@@ -27,7 +27,48 @@
   let previewLevel = 0, previewRampEnd = 0;
   let state = { status: 'idle', provider: null, artist: '', album: '' };
 
+  // ── 實機偵錯層：只有網址帶 #auddbg 才啟動，正常使用完全不跑 ──────────────
+  // iOS「第一次點開簡介沒聲音」在桌機與獨立診斷頁都重現不了，只能在真實頁面
+  // 的真實失敗路徑上量測。啟動時：畫面底部出現逐步 log、AnalyserNode 掛在
+  // previewGain 上量實際輸出峰值；起播後若量到峰值為 0，會自動嘗試
+  // suspend()→resume() 一次並回報結果——同一次實驗回答「壞在哪」與「怎麼修」。
+  const AUD_DEBUG = /auddbg/.test(location.hash || '');
+  let dbgEl = null, dbgAnalyser = null;
+  function dbg(msg) {
+    if (!AUD_DEBUG) return;
+    try {
+      if (!dbgEl) {
+        dbgEl = document.createElement('div');
+        dbgEl.style.cssText = 'position:fixed;left:0;right:0;bottom:0;max-height:42vh;overflow:auto;' +
+          'background:rgba(0,0,0,.93);color:#8ef5c8;font:10px/1.5 ui-monospace,Menlo,monospace;' +
+          'padding:6px 9px calc(6px + env(safe-area-inset-bottom));z-index:2147483647;white-space:pre-wrap;word-break:break-all';
+        document.body.appendChild(dbgEl);
+      }
+      const line = document.createElement('div');
+      line.textContent = `${(performance.now() / 1000).toFixed(2)}s ${msg}`;
+      dbgEl.appendChild(line);
+      dbgEl.scrollTop = dbgEl.scrollHeight;
+    } catch (_) {}
+  }
+  function dbgPeak() {
+    if (!dbgAnalyser?.getFloatTimeDomainData) return -1;
+    try {
+      const buf = new Float32Array(dbgAnalyser.fftSize);
+      dbgAnalyser.getFloatTimeDomainData(buf);
+      let peak = 0;
+      for (let i = 0; i < buf.length; i++) { const a = Math.abs(buf[i]); if (a > peak) peak = a; }
+      return +peak.toFixed(4);
+    } catch (_) { return -1; }
+  }
+  function dbgSnap(tag) {
+    if (!AUD_DEBUG) return;
+    dbg(`${tag}｜ctx=${audioCtx?.state} t=${audioCtx ? audioCtx.currentTime.toFixed(2) : '-'} ` +
+      `gain=${previewGain ? previewGain.gain.value.toFixed(3) : '-'} peak=${dbgPeak()} ` +
+      `keepAlive=${previewAudio ? (previewAudio.paused ? 'paused' : 'playing') : '-'}`);
+  }
+
   function emit(next) {
+    if (AUD_DEBUG && next.status && next.status !== state.status) dbg(`狀態 → ${next.status}${next.code ? '（' + next.code + '）' : ''}`);
     state = { ...state, ...next };
     listeners.forEach(listener => { try { listener({ ...state }); } catch (_) {} });
   }
@@ -215,6 +256,15 @@
         previewGain = audioCtx.createGain();
         previewGain.gain.value = 0;
         previewGain.connect(audioCtx.destination);
+        if (AUD_DEBUG) {
+          dbg(`建立 AudioContext｜state=${audioCtx.state} sampleRate=${audioCtx.sampleRate}`);
+          try {
+            // 只接 previewGain → analyser 當量測分支，不動原本的輸出鏈。
+            dbgAnalyser = audioCtx.createAnalyser();
+            dbgAnalyser.fftSize = 2048;
+            previewGain.connect(dbgAnalyser);
+          } catch (_) {}
+        }
       } catch (_) { audioCtx = null; previewGain = null; }
     }
     if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
@@ -297,22 +347,26 @@
         } catch (_) {}
       }
       if (!audio.paused && !audio.ended) {
-        // iOS 會把長時間循環的靜音元素實際停掉，但 paused 仍回報 false（殭屍狀態），
-        // audio session 已不在頁面手上。此時若信任 paused 而不動作，這次手勢就白白
-        // 流掉，稍後 source.start() 的訊號會被 iOS 擋在輸出端——正是「第一次點開簡介
-        // 沒聲音」的根因（實機診斷頁比對確認）。手勢內一律重發 play()：正常播放中的
-        // 元素呼叫 play() 是 no-op、立即 resolve；殭屍元素則會重新起播、把 session
-        // 抓回來。單向保險，不影響既有解鎖路徑。
+        // iOS 可能把長時間循環的靜音元素實際停掉，但 paused 仍回報 false（殭屍狀態）。
+        // 手勢內一律重發 play() 當保險：正常播放中的元素呼叫 play() 是 no-op、
+        // 立即 resolve；殭屍元素則會重新起播、把 session 抓回來。
+        if (AUD_DEBUG) dbg('unlock｜keep-alive 自認播放中 → 重發 play()');
         const retry = audio.play();
-        if (retry?.catch) retry.catch(() => {});
+        if (retry?.then) retry.then(
+          () => { if (AUD_DEBUG) dbg('unlock｜重發 play() resolve'); },
+          e => { if (AUD_DEBUG) dbg(`unlock｜重發 play() 被拒：${e && e.name}`); });
         return true;
       }
+      if (AUD_DEBUG) dbg(`unlock｜keep-alive 重新起播（paused=${audio.paused} ended=${audio.ended}）`);
       audio.loop = true;
       audio.src = silentPreviewSource();
       audio.currentTime = 0;
       const attempt = audio.play();
       previewPrimed = true;
-      if (attempt?.catch) attempt.catch(() => { previewPrimed = false; });
+      if (attempt?.then) attempt.then(
+        () => { if (AUD_DEBUG) dbg('unlock｜keep-alive play() resolve'); },
+        e => { previewPrimed = false; if (AUD_DEBUG) dbg(`unlock｜keep-alive play() 被拒：${e && e.name}`); });
+      else if (attempt?.catch) attempt.catch(() => { previewPrimed = false; });
       return true;
     } catch (_) { previewPrimed = false; return false; }
   }
@@ -755,7 +809,14 @@
       // 「第一次點開沒聲音、關掉重開才正常」的成因：第二次 buffer 已在快取，幾乎同一個
       // tick 就 start，來不及被收掉。改成等真實試聽開始輸出、由它接手 session 之後才收。
       setProvider('itunes');
+      if (AUD_DEBUG) {
+        dbg(`playItunes｜來源=${data?.source || 'search'} 曲=${(track.trackName || '').slice(0, 18) || '(map)'} ` +
+          `快取=${previewBufferCache.has(track.previewUrl) ? '命中' : '未命中'}`);
+        dbgSnap('下載解碼前');
+      }
+      const dbgT0 = AUD_DEBUG ? performance.now() : 0;
       const decoded = await loadPreviewBuffer(track.previewUrl);
+      if (AUD_DEBUG) dbg(`playItunes｜loadPreviewBuffer 完成（${Math.round(performance.now() - dbgT0)}ms）decoded=${decoded ? decoded.duration.toFixed(1) + 's' : 'null'}`);
       if (token !== requestId) return false;
       if (!decoded || !audioCtx?.createBufferSource || !previewGain) {
         lastFailCode = 'S10';
@@ -774,12 +835,28 @@
         return false;
       }
       setPreviewLevel(0);
+      if (AUD_DEBUG) dbgSnap('source.start 前');
       source.start(0);
       fadePreview(BASE_GAIN, FADE_MS);
       // 真實試聽已經在輸出、session 由它接手 → 這時才收掉靜音 keep-alive。
       // 失敗的分支一律不收：讓它繼續墊著，下一次重試才有 session 可用。
       audio.loop = false;
       audio.pause?.();
+      if (AUD_DEBUG) {
+        // 起播後 0.8／2.2 秒各量一次輸出峰值。若 0.8 秒時峰值是 0（訊號沒到輸出端），
+        // 自動試 suspend()→resume() 一次——如果之後音樂突然出來，代表這招就是解方。
+        setTimeout(() => {
+          if (token !== requestId) return;
+          dbgSnap('start+0.8s');
+          if (dbgPeak() === 0 && audioCtx) {
+            dbg('峰值=0 → 自動嘗試 suspend()→resume()…');
+            Promise.resolve(audioCtx.suspend?.()).then(() => audioCtx.resume?.()).then(
+              () => dbg(`suspend/resume 完成｜ctx=${audioCtx.state}`),
+              e => dbg(`suspend/resume 失敗：${e && e.name}`));
+          }
+        }, 800);
+        setTimeout(() => { if (token === requestId) dbgSnap('start+2.2s'); }, 2200);
+      }
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       const playMs = Math.max(FADE_MS, Math.min(30500, Number(decoded.duration || 30) * 1000));
@@ -930,6 +1007,7 @@
   }
 
   function stop({ fade = false } = {}) {
+    if (AUD_DEBUG) dbg(`stop(fade=${fade})`);
     const token = ++requestId;
     clearTimeout(previewTimer);
     clearTimeout(previewFadeTimer);
