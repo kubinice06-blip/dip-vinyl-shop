@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜三盲鼠精簡到 40 張：只留熱門經典
+
+- Repo：`dip-vinyl-shop`
+- 店主指示「三盲鼠不用全部都上，其他普通的排除，只保留 40 張左右」。
+- 排序依據：`classic` 分數（既有 worker `/album-rating` 的樂評共識分）由高到低，
+  同分再用 Last.fm `listeners` 由高到低當熱門度輔助排序（同一個冷門廠牌裡，聽眾數相對較高
+  代表比較「知名」）；查無聽眾數（`listeners` 為 null）者排最後。
+- 取前 40 張（classic=4 全 11 張 ＋ classic=3 中最熱門的 29 張），移除其餘 30 張全是
+  classic=2 或聽眾數極低／查無的普通盤。移除清單見 `.claude/skills/dip-card-pool-expand/`
+  本次執行紀錄（`Tee & Company` 三張、`Mari Nakamoto` 兩張、`New Direction for the Arts` 兩張等）。
+- `seed_cards.json` 5596 → **5566 張**；對應 30 筆 `card_catalog` 文件逐一確認
+  `updatedAt=1` 且無 `desc`（本批新建、玩家未抽過）後刪除，30 筆全數符合、無異常保留。
+- 主要檔案：`seed_cards.json`
+- 驗證：`node -e` parse 通過，5566 張全部 5 欄位；Firestore 刪除前逐一核對，30/30 成功。
+- 三盲鼠最終定案：**40 張**（原始 105 張候選 → 封面命中 90 → 標題去重 73 →
+  剔除自我同名撞名 3 張 → 精簡到熱門經典 40 張）。爵士曲風目前約 1016 張（1046 − 30），
+  距 1500 目標還差約 484 張。
+
 ### 2026-07-21｜修 worker YT 配對誤配＋剔除三盲鼠「自我同名」高風險卡
 
 - Repo：`dip-vinyl-shop`、`dip-vinyl-worker`
