@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜Venus／SteepleChase／ECM 三廠牌精選 128 張（爵士曲風擴充第二批）
+
+- Repo：`dip-vinyl-shop`
+- 店主指示三個廠牌都有上串流、都只留精華，直接開始。流程改成**先評分排序、只對精選出的
+  短名單解封面**（不像三盲鼠那批對全部候選都跑封面鏈）——因為候選量太大（Venus 449／
+  SteepleChase 559／ECM 1185，MB 目錄反查得到），若全部跑封面鏈會浪費大量在「反正會被砍掉」
+  的候選上。新增 skill 腳本 `2b-rate-and-rank.mjs`（只評分排序，不解封面）。
+- **Spotify 全程仍在 429 限流中**（本機直打 token 確認），封面來源全靠 Bandcamp／CAA，
+  三個廠牌命中率都不差：Venus 44/45、SteepleChase 一路補到 45/45（34→45，兩輪候補）、
+  ECM 49/50。等 Spotify 恢復可考慮重跑第 2 步撿漏。
+- **去重踩過的坑**：精選流程的候選內部會有「同一張碟被 MusicBrainz 拆成不同 artist-credit
+  字串」的重複——`Chet Baker` vs `Chet Baker Trio`、`Sun Ra & Walt Dickerson` vs
+  `Walt Dickerson & Sun Ra`（順序顛倒）、`Mary Lou Williams` vs `Mary Lou Williams Trio`；
+  以及跟現有卡池撞名但只有藝人名尾綴不同（`Duke Jordan` vs `Duke Jordan Trio - Flight to
+  Denmark`，後者其實已經在池子裡）。新增 skill 腳本 `3c-dedupe-finalize.mjs`：批次內部依
+  **專輯名**（忽略藝人寫法差異）去重、對現有卡池依「專輯名相同＋藝人名互為子字串」抓變體重複。
+  **仍有一類自動化抓不到**：文字上就是不同字串的縮寫變體（`Standards, Vol. 1` vs
+  `Standards, Volume 1`），這次是人工掃出來手動移除 2 筆，之後可考慮把 `Vol.`/`Volume` 這類
+  慣用縮寫加進正規化規則。
+- **三個廠牌各自的精選結果**（依 classic 分數為主、Last.fm listeners 為輔排序，門檻線見下）：
+  - **Venus**：449 候選 → classic 門檻線 4 → 43 張（Albert Ayler、Pharoah Sanders、Cecil Taylor
+    等自由爵士／抒情盤）。
+  - **SteepleChase**：559 候選 → classic 門檻線 4 → 45 張（Chet Baker、Mary Lou Williams、
+    Bud Powell、Dexter Gordon、Horace Parlan 系列）。
+  - **ECM**：1185 候選 → 前 50 名 **全部 classic=5**，改用「批次內部去重＋人工抓縮寫變體」
+    砍到 40 張（Keith Jarrett 三重奏系列、Pat Metheny、Chick Corea、Dave Holland、
+    Arvo Pärt、Gary Burton、以及一批 ECM New Series 古典錄音）。
+    **ECM 主標籤同時發行爵士與現代古典**（Bach／Beethoven／Bartók／Pérotin／Kurtág／
+    Thomas Tallis），曲風分類結果 10 張落在 `classical`（+ Arvo Pärt 落在 `classical,electronic`），
+    這不是誤判——正好補上先前盤點過的曲風分布裡 classical（194 張，全池最小之一）的缺口，
+    予以保留，不視為爵士擴充的雜訊。
+  - 三批合計 128 張，最終曲風標籤分布：jazz 107（含跨類）、classical 11、world 6、
+    (無標籤) 5——無標籤的仍是有效卡片，只是不進曲風流派抽牌池。
+  - 稀有度分布：legendary 13／epic 46／uncommon 69。封面來源 caa 103／bandcamp 10／
+    caa-rescue 15。
+- **修過一個資料流程的 bug**：中間把候選瘦身成 `{artist,title}` 給封面解析腳本用時，
+  漏掉了 `classic/obscurity/accessibility` 三軸欄位，直接合併會導致這三個欄位遺失。
+  最終合併前用原始評分檔（`*-ranked-full-ranked.json`）依 artist+album 重新對照補回，
+  補完後 128 張三軸欄位 100% 完整（`node -e` 驗證 0 缺漏）。
+- `seed_cards.json` 5566 → **5694 張**；128 筆封面＋三軸＋rarity 已 PATCH 進
+  Firestore `card_catalog`（`updateMask` 只動指定欄位、`updatedAt=1` 沉底）。抽驗
+  `albert ayler trio|spiritual unity`／`chet baker|the touch of your lips`／
+  `keith jarrett|the melody at night, with you` 三筆封面圖實抓 HTTP 200（其中一筆
+  第一次量到 500，重試 3 次皆 200，判定是 Internet Archive 節點暫時性問題，非壞連結）。
+- 主要檔案：`seed_cards.json`、`.claude/skills/dip-card-pool-expand/`
+  （新增 `2b-rate-and-rank.mjs`、`3c-dedupe-finalize.mjs`，SKILL.md 補精選流程與去重原則）
+- 驗證：`seed_cards.json` parse 通過、5694 張全部 5 欄位且三軸皆 1–5 整數；本批 128 張
+  與現有卡池及批內皆做過重複檢查（0 筆）；Firestore 128 筆全數 PATCH 成功、無失敗。
+- 待辦：爵士曲風目前約 1123 張（1016 + 107），距 1500 目標還差約 377 張；
+  Spotify 額度恢復後可重跑三個廠牌的封面解析步驟撿漏那 1（Venus）＋11（SteepleChase）＋
+  1（ECM）張沒中的候選。
+
 ### 2026-07-21｜三盲鼠精簡到 40 張：只留熱門經典
 
 - Repo：`dip-vinyl-shop`
