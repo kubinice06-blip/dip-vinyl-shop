@@ -1,5 +1,24 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜三廠牌撿漏：只用 CAA 重試沒中的 18 張，救回 1 張
+
+- Repo：`dip-vinyl-shop`
+- 店主指示撿漏這步只用 CAA／MusicBrainz，不必等 Spotify 恢復。
+- 對 Venus／SteepleChase／ECM 三批處理過程中實際沒中封面的 18 張（Venus 1、SteepleChase
+  16、ECM 1）用更寬鬆的 CAA 查詢重試（多組查詢寫法、release-group 補救、門檻降到 50 分）：
+  **只救回 1 張**——`Franz Schubert & Valery Afanassiev - Sonate B-Dur, D. 960`
+  （ECM New Series，這張封面掛在一張合輯 release 底下，第一輪的查詢寫法沒抓到）。
+  其餘 17 張（多為 SteepleChase 的 Dexter Gordon／Kenny Drew 冷門重發版）判定
+  MusicBrainz／CAA 確實沒有掃描封面，非查詢寫法問題，不再繼續嘗試。
+- 救回的 1 張走完整流程：`/album-rating` 取三軸（classic 5／obscurity 2／accessibility 2，
+  obscurity 用 AI 推估因 Last.fm 查無）→ 確認與現有卡池無重複 → 加入 `seed_cards.json`
+  → PATCH 進 `card_catalog`（`updateMask` 部分更新）。
+- `seed_cards.json` 5694 → **5695 張**。
+- 驗證：Firestore 回讀 `franz schubert & valery afanassiev|sonate b-dur, d. 960` 三軸／
+  rarity（uncommon）正確，封面圖實抓 HTTP 200；`seed_cards.json` parse 通過、5 欄位完整。
+- 待辦：Venus／SteepleChase／ECM 三批最終定案 Venus 43、SteepleChase 45、ECM 41
+  （128 + 1 撿漏）。爵士曲風目前約 1124 張，距 1500 還差約 376 張。
+
 ### 2026-07-21｜Venus／SteepleChase／ECM 三廠牌精選 128 張（爵士曲風擴充第二批）
 
 - Repo：`dip-vinyl-shop`
