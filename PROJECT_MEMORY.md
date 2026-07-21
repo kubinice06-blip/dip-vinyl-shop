@@ -1,5 +1,58 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜六批爵士擴充：波蘭／義大利／現代英國／日本／德國共 245 張
+
+- Repo：`dip-vinyl-shop`
+- 店主指示：波蘭/法國/德國、Black Saint、enja、其他日本廠牌、現代爵士（Yussef Dayes 一系）都要收，直接開始。
+  先偵察 36 個候選廠牌在 MusicBrainz 的目錄規模，並比對現有卡池找覆蓋缺口——波蘭 0 張、
+  日本非三盲鼠系 2 張、現代英國新浪潮 0 張，判定為優先順序；主流現代爵士（Yussef Dayes、
+  Ezra Collective、Nubya Garcia、Kamasi Washington、Robert Glasper 等）其實已經在池子裡且
+  分類正確，不必重收。
+- 六批各自流程：廠牌/系列反查 → 評分排序取精選短名單 → 只對短名單解封面 → 去重 → 最終：
+  - **Black Saint**：212 候選 → 45（classic 門檻 4）→ 100% 命中（43 Bandcamp／2 CAA）→ 去重後 44
+  - **Soul Note**：335 候選 → 45（門檻 4）→ 96% 命中 → 去重後 43
+  - **Enja**：703 候選 → 50（門檻 4）→ 96% 命中 → 去重後 47
+  - **現代英國新浪潮**：改用**藝人清單反查**（非廠牌，因這批人散在多個小廠牌）；
+    20 位藝人（Kamaal Williams、Joe Armon-Jones、Theon Cross、Nala Sinephro、Kokoroko、
+    Yazz Ahmed、Butcher Brown、Christian Scott aTunde Adjuah 等）→ 105 候選 → 40（門檻 3）
+    → 98% 命中 → 去重後 39
+  - **日本 East Wind＋Better Days＋Trio＋Paddle Wheel**：四廠合併 426 候選 → 45（門檻 4）
+    → 84% 命中 → 去重後 34（+1 張人工合併版）
+  - **波蘭**：第一輪用整個廠牌 Polskie Nagrania "Muza" 反查（528 候選）**結果作廢**——
+    這是波蘭國家廠牌，目錄混了蕭邦、哥雷茨基古典樂、Bruce Springsteen 授權版、波蘭搖滾樂團，
+    不是爵士專屬。改用 MusicBrainz 的「Polish Jazz」**系列**條目（那套知名編號 1–80 精選系列），
+    但該系列在 MB 只登錄 17 張（社群維護不完整），改**補一批藝人清單**（Komeda、Stańko、
+    Namysłowski、Urbaniak、Seifert、Marcin Wasilewski Trio 等 18 位）202 候選，
+    系列+藝人合併去重後 215 候選 → 45（門檻 4）→ 84% 命中（含 1 張終於等到 Spotify 恢復命中）
+    → 去重後 38
+  - 六批合計 245 張，跨批次同名重複 0 筆。
+- **抓到自動化去重漏網的一個案例**：日本批 `Ryo Fukui - シーナリィ`（片假名拼音）與
+  `福居良 - SCENERY`（漢字本名＋英文標題）是同一張 1976 年名盤《Scenery》，因文字系統
+  完全不同（片假名 vs 拉丁字母），正規化字串比對抓不到。人工合併成一張
+  `Ryo Fukui - Scenery`（沿用漢字版的冷門度 5，較符合這張盤的真實定位；片假名版聽眾數
+  267704 明顯是 Last.fm 名稱誤配到別的熱門作品）。
+- **藝人名最佳化撿到一個系統性問題**：`Chief Xian aTunde Adjuah`（Christian Scott 現在的法定
+  藝名）6 張專輯全部查無曲風標籤；換成他更廣為人知的 `Christian Scott aTunde Adjuah` 或
+  `Christian Scott` 就能正確查到 `jazz`。全部 6 張手動改名。
+  最終 236/245 帶 jazz 標籤。
+- 新增 skill 腳本：
+  - `1b-artist-discography.mjs`：目標是藝人群而非廠牌時，逐位查 MB 官方專輯（release-group
+    type=Album），比廠牌反查準——這批藝人散在很多小廠牌。**踩過一次藝人誤配**：搜尋
+    「Christian Scott」抓到一位電玩配樂作曲家，必須用全名消歧義。
+  - `1c-series-catalog.mjs`：目標是 MB 的「release-group series」而非整個廠牌時用——
+    國家/官方廠牌的 label 目錄是全部產出混一起，不是只有你要的子系列。
+    **踩過一個 API 欄位 bug**：MB 回傳的是底線 `release_group` 不是連字號 `release-group`，
+    第一次抓到 0 張；也遇過 MB 503 暫時過載，已加重試與逐筆存檔（不會因中途失敗全部重來）。
+- `seed_cards.json` 5695 → **5940 張**。245 筆封面＋三軸＋rarity 已 PATCH 進 Firestore
+  `card_catalog`。稀有度分布 uncommon 119／epic 103／legendary 12／rare 11。
+- 驗證：`seed_cards.json` parse 通過、5940 張全部 5 欄位且三軸皆 1–5 整數；245 張與現有
+  卡池及批內皆無重複；Firestore 抽驗 4 筆（Komeda、Ibrahim、Fukui、Braxton）封面圖實抓
+  HTTP 200 均通過。
+- 待辦：爵士曲風目前約 1360 張（1123 + 236 新增 jazz 標籤），距 1500 目標還差約 140 張。
+  法國（BYG／Saravah）、MPS、Disques Vogue 尚未處理；`Air`（前衛爵士團）這次在 Black Saint
+  出現一次《Air Mail》（非自我同名，應無虞），但下次遇到 Air 相關卡都要比照三盲鼠的規則
+  檢查是否為自我同名撞名。
+
 ### 2026-07-21｜三廠牌撿漏：只用 CAA 重試沒中的 18 張，救回 1 張
 
 - Repo：`dip-vinyl-shop`
