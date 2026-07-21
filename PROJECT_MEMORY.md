@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜卡池擴充：三盲鼠 73 張入池＋封面預熱＋流程存成 skill
+
+- Repo：`dip-vinyl-shop`、`dip-vinyl-home`（skill）
+- 背景：店主要做「曲風流派」新系統，先盤點卡池曲風分布，發現爵士 984 張且**日系／歐系近乎掛零**
+  （三盲鼠、Venus、East Wind 全部 0 張），決定先從爵士補起，目標 1500 張。本次完成第一批：三盲鼠 TBM。
+- **曲風分布盤點**（沿用音樂地圖十類規則，5526 張逐張打 worker `/album-genres`）：
+  rock 2809／pop 1086／electronic 1028／jazz 984／hiphop 856／soul 723／folk 622／world 244／
+  classical 194／blues 150，未分類 49。單曲風 2258 張、跨兩類 3219 張。
+  → blues／classical／world 池子太小不適合單獨開流派，建議合併成七個曲風流派（詳見對話規劃）。
+- **封面來源改用 Cover Art Archive 為主力**（本次最重要的發現）：
+  - Spotify 當時全面 429 限流（連已在池中的 Duke Jordan 都查不到），**限流期的空結果不可當「查無此碟」**。
+  - 現有卡池隨機抽 60 張實測 CAA 命中 **58/60（97%）**，53/58 為正方形、其餘最歪 1.14 可用 `object-fit` 吸收。
+  - CAA 與 Spotify 弱點互補：CAA 強在老黑膠／冷門盤、弱在近年新專（Lana Del Rey、Melanie Martinez 未中）。
+  - **iTunes 不可用於抓封面**：模糊比對會配到錯的碟（`Midnight Sugar`→`Short Ver. Single`、`Misty`→`Live at Jazz is`）。
+  - Deezer 台灣不可用，10/10 全空。
+  - **架構紅線**：MusicBrainz 硬性 1 req/s 且 Cloudflare 共用出口 IP，**不得放進 worker 即時查詢**
+    （與 Apple `/search` 被長效 IP 封鎖同一種死法）；只能本機批次跑後寫進 Firestore／KV。
+- 改動：
+  1. `seed_cards.json` 5526 → **5599 張**（+73 張三盲鼠）。流程：MusicBrainz 廠牌目錄 184 releases
+     → 去重 113 → 排除 Various Artists 合輯 105 → 封面命中 90（Bandcamp 26／CAA 43／CAA 補救輪 21）
+     → 標題去重 73 張。三軸沿用 worker `/album-rating`（冷門度=Last.fm 聽眾數、經典/硬蕊=Haiku 樂評共識）。
+  2. **封面預熱**：73 張的封面＋三軸＋rarity 以 Firestore REST PATCH 寫入 `card_catalog`
+     （`updateMask` 只動指定欄位、`updatedAt=1` 沉底）。**這步不能省**——前台封面查找是
+     `card_catalog` → `/spotify-search`，而這批多半在 Spotify 查無，不預熱就永遠是空白卡。
+  3. 新增 skill `dip-card-pool-expand`（`.claude/skills/` ＋ `.agents/` 鏡像），含 5 支可重跑腳本：
+     廠牌目錄反查／封面解析鏈／產三軸／藝人名最佳化／封面預熱。
+- 過程中修正的資料問題：
+  - `Air《Air》` 被 Last.fm 算到**法國電子雙人組 Air** 的 66856 聽眾（冷門度 5→3），
+    實為三盲鼠 1977 年日本前衛爵士團（MusicBrainz 標註 "70s Japanese avant-garde jazz band"），手動改回 5。
+  - 17 張聯名藝人名過長會在卡面爆版，取主奏者精簡（最長 80 → 39 字元）。
+  - **藝人名寫法會決定曲風分類器認不認得，且無單一規則**：`Hideto Kanai & King's Roar`→jazz 但
+    `Hideto Kanai`→無；`Masaru Imada Trio +2`→無 但 `Masaru Imada Trio`→jazz。逐張試候選寫法後
+    62/73 帶 jazz 標籤（jazz 984 → 1046）。改名造成的 7 筆孤兒文件已確認 `updatedAt=1` 且無 `desc` 後刪除。
+  - 改名時 `Shuko Mizuno`（現代古典作曲家）會讓專輯被判成 classical，改用樂團名
+    `Toshiyuki Miyama & The New Herd` 才正確回到 jazz。
+- 主要檔案：`seed_cards.json`、`.claude/skills/dip-card-pool-expand/`（SKILL.md ＋ scripts×5）、`.agents/` 鏡像
+- 驗證：`seed_cards.json` parse 通過、5599 張全部 5 欄位且三軸皆 1–5 整數；本批 73 張與現有卡池零重複
+  （全池另有 4 組既存重複，屬 `Guns N??Roses` 編碼損壞的舊問題，非本次造成）。
+  Firestore 抽驗 `tsuyoshi yamamoto trio|midnight sugar`／`air|air`／`isao suzuki trio|blow up`
+  三軸與 rarity 正確、封面圖實抓 HTTP 200（121KB／37KB／77KB）；改名後的
+  `hideto kanai & king's roar|ode to birds` 等三筆亦確認寫入成功。skill 5 支腳本 `node --check` 全通過。
+- 待辦：爵士還差約 454 張才到 1500（Venus／East Wind／ECM／SteepleChase／波蘭法國德國／Black Saint 等）；
+  曲風流派系統本身尚未實作。
+
 ### 2026-07-20｜移除 #auddbg 偵錯層，保留核心修復邏輯
 
 - Repo：`dip-vinyl-shop`
