@@ -39,19 +39,20 @@
     .card:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
 
     /* ── 第一列：音樂地圖收合條，點開才展開完整地圖 ── */
-    .maprow { border-bottom: 1px solid var(--line); }
+    .maprow { position: relative; border-bottom: 1px solid var(--line); }
     .mapbar-toggle {
-      width: 100%; display: flex; align-items: center; gap: 12px;
-      max-width: 760px; margin: 0 auto; padding: 12px 20px; min-height: 64px; background: none; border: 0;
-      font-family: var(--mono); color: var(--black); text-align: left; cursor: pointer;
+      width: 100%; display: flex; align-items: center; justify-content: center;
+      padding: 12px 44px; min-height: 64px; background: none; border: 0;
+      font-family: var(--mono); color: var(--black); text-align: center; cursor: pointer;
     }
     .mapbar-toggle:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
-    .mapbar-thumb { width: 40px; height: 40px; flex-shrink: 0; }
-    .mapbar-text { flex: 1; min-width: 0; }
+    /* 縮圖與箭頭都脫離排版流，文字才會對齊整列正中央 */
+    .mapbar-thumb { position: absolute; left: 20px; top: 32px; transform: translateY(-50%); width: 40px; height: 40px; }
+    .mapbar-text { min-width: 0; }
     .mapbar-title { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
     .mapbar-stat { display: block; margin-top: 4px; font-size: 9px; color: var(--gray); letter-spacing: 0.04em; line-height: 1.5; }
-    .mapbar-chev { font-size: 10px; color: var(--gray); flex-shrink: 0; transition: transform 0.2s; }
-    .maprow.open .mapbar-chev { transform: rotate(180deg); }
+    .mapbar-chev { position: absolute; right: 20px; top: 32px; transform: translateY(-50%); font-size: 10px; color: var(--gray); transition: transform 0.2s; }
+    .maprow.open .mapbar-chev { transform: translateY(-50%) rotate(180deg); }
     .mapbar-panel { display: none; }
     .maprow.open .mapbar-panel { display: block; }
     .map-entry { max-width: 720px; margin: 0 auto; padding: 0 20px 8px; }
