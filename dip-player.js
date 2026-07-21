@@ -356,6 +356,20 @@
     try { return new URL(url).pathname.match(/\/album\/([a-zA-Z0-9]+)/)?.[1] || ''; } catch (_) { return ''; }
   }
 
+  // 卡片可在 card_catalog 存一條固定試聽連結（previewUrl），不必每次即時查來源。
+  // 兩種型態：
+  //   1. 直接音檔（.m4a/.mp3/…）→ 走 Web Audio buffer 路徑，**有淡入淡出、音量可控、iOS 相容**，
+  //      對戰／Roguelike 也能用（那兩頁刻意排除 YouTube 正是因為 iframe 音量控不了）。
+  //   2. YouTube 連結 → 走 iframe 路徑，僅適用唱片櫃。
+  function pinnedPreviewKind(url) {
+    if (!/^https?:\/\//i.test(String(url || ''))) return '';
+    try {
+      const path = new URL(url).pathname.toLowerCase();
+      if (/\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/.test(path)) return 'file';
+    } catch (_) { return ''; }
+    return /youtu\.?be|youtube\.com/i.test(url) ? 'youtube' : '';
+  }
+
   function youtubeTarget(url) {
     try {
       const parsed = new URL(url), list = parsed.searchParams.get('list'), video = parsed.searchParams.get('v') || parsed.pathname.match(/\/embed\/([a-zA-Z0-9_-]{11})/)?.[1] || '';
@@ -815,7 +829,8 @@
         }, FADE_MS);
       }, Math.max(0, playMs - FADE_MS));
       return {
-        trackName:track.trackName || '', storeUrl:track.storeUrl || '', attribution:'Apple Music 試聽',
+        trackName:track.trackName || '', storeUrl:track.storeUrl || '',
+        attribution:data?.source === 'pinned-file' ? (data.attribution || '店內試聽') : 'Apple Music 試聽',
         trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
       };
     } catch (_) {
@@ -899,7 +914,7 @@
     } catch (_) { return false; }
   }
 
-  async function playAlbum({ artist = '', album = '', prefer = 'auto' } = {}) {
+  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '' } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return false;
@@ -907,6 +922,24 @@
     lastFailCode = '';
     emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'', code:'' });
     try {
+      // 固定連結優先：命中就完全跳過來源查詢（不打 worker、不吃 API 配額，
+      // 也不會發生即時比對配到別張專輯的問題——正確性在入庫前就人工覆核過了）。
+      const pinnedKind = pinnedPreviewKind(previewUrl);
+      if (pinnedKind === 'file') {
+        const data = { source:'pinned-file', attribution, tracks:[{ previewUrl, trackName:'', id:previewUrl }] };
+        const played = await playItunes(data, token);
+        if (played && token === requestId) {
+          emit({ status:'playing', provider:'itunes', artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
+          return true;
+        }
+      } else if (pinnedKind === 'youtube') {
+        const played = youtubeTarget(previewUrl) ? await playYoutube({ url:previewUrl }, token) : false;
+        if (played && token === requestId) {
+          emit({ status:'playing', provider:'youtube', artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
+          return true;
+        }
+      }
+      // 固定連結失效（檔案被刪、影片下架）→ 照舊走原本的來源查詢，不要讓卡片直接沒聲音。
       const entry = linkEntry(artist, album);
       // 唱片櫃混合路徑：iTunes 優先（真 30 秒試聽＋曲目列表），使用者 IP 被 Apple
       // 封鎖或查無專輯時，自動退到對戰同款的 YouTube 高觀看曲目 30 秒片段。

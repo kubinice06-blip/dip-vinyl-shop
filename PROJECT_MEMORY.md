@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜卡片固定試聽連結（previewUrl）＋自架音檔淡入淡出實測
+
+- Repo：`dip-vinyl-shop`
+- 背景：三盲鼠 73 張新卡沒有串流音源。實測盤點：
+  - **Apple**：現有索引命中 0/73；iTunes 本機直查 12 張只「命中」2 張且**兩張都是假的**
+    （`Window Pane`→助眠雨聲「Soothing Downpour on Window Pane」、`Midnight Sugar`→`(Short Ver.) - Single`）。
+    → 三盲鼠在 Apple Music 台灣區實質等於沒有。
+  - **YT Music**（抽樣 25 張）：正確 8、**配到別張專輯 3**、查無 14 → 真正可用僅 32%。
+    配錯案例：要《New Herd》給《Beneath the Underdog》、要《Midnight Sugar》給《A Shade Of Blue》、
+    要《Mari》給《NADECICO》。**配錯比查無更糟**，卡牌遊戲點了播出別張碟會直接砸掉信任。
+- 改動（A：固定連結）：
+  1. `dip-player.js` `playAlbum()` 新增 `previewUrl` / `attribution` 參數與 `pinnedPreviewKind()`。
+     命中固定連結就**完全跳過來源查詢**（不打 worker、不吃 YouTube Data API 配額、不會即時比對配錯）；
+     連結失效才回退原本的查詢順序，卡片不會因此變啞。
+     - **直接音檔**（.m4a/.mp3/…）→ 走既有 Web Audio buffer 路徑，**淡入淡出、音量、iOS session 全部沿用**現成邏輯。
+     - **YouTube 連結** → 走 iframe 路徑（僅唱片櫃適用）。
+  2. `index.html` 唱片櫃：從 `album_overrides` 讀 `previewUrl` 併進卡片資料並傳給 `playAlbum`。
+     **刻意放 `album_overrides` 而非 `card_catalog`**——後者規則是 `allow write: if true`（全世界可寫），
+     把「每位玩家瀏覽器都會去 fetch 並播放的網址」放在那裡等於開放任意 URL 注入；
+     `album_overrides` 是 `allow write: if isAdmin()`，才適合放這種連結。
+  3. 三頁 `dip-player.js?v=28 → v=29`。
+- B 的實測結論（自架音檔能否淡入淡出）：**可以，而且不需要寫任何新的音訊程式**。
+  `playItunes()` 本來就與網址來源無關——`loadPreviewBuffer(url)` → `fetch(mode:'cors')` →
+  `decodeAudioData` → `createBufferSource` → `connect(previewGain)` → `fadePreview()`。
+  任何帶 CORS 的音檔（自架在 Pages 上是同源，更沒問題）丟進去就自動獲得 1.5 秒淡入淡出、50% 音量，
+  以及先前為 iOS 修的 keep-alive／resume 逾時保護。**對戰／Roguelike 也能用**——
+  那兩頁排除 YouTube 的原因是「iOS 無法控制 iframe 音量」，自架音檔走的是 Web Audio，不受此限。
+- 新增 `preview-lab.html`：試聽模式實驗室，用 AnalyserNode 量**實際輸出峰值**（不靠耳朵judge），
+  含環境檢測（會驗 `HTMLAudioElement.volume` 在 iOS 是否唯讀）。供 iPhone 實機驗證。
+- 驗證：`node --check dip-player.js` 通過。桌機 http-server 實測自架路徑，AnalyserNode 取樣證實
+  gain 與實測峰值同步變化——
+  淡入 `gain 0.043→0.112→0.248→0.379→0.5`（1.6 秒到頂）、
+  淡出 `0.5→0.465→0.33→0.194→0.063→0`（1.5 秒歸零，peak 同步 0.17→0.08→0.05→0）；
+  CORS `*`、下載 977KB／26ms、解碼 30.0 秒雙聲道、console 無錯誤。**iOS 實機待店主用 preview-lab.html 驗證**。
+- 待辦：三盲鼠的固定連結尚未實際填入 `album_overrides`（要先決定音檔放哪、或逐張人工覆核 YT 連結）；
+  worker `/yt-music-link` 的寬鬆比對會靜默配錯，影響整個 5599 張卡池，尚未修。
+
 ### 2026-07-21｜卡池擴充：三盲鼠 73 張入池＋封面預熱＋流程存成 skill
 
 - Repo：`dip-vinyl-shop`、`dip-vinyl-home`（skill）

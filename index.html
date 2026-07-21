@@ -787,7 +787,7 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=28"></script>
+<script src="dip-player.js?v=29"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1386,7 +1386,9 @@
           setDoc(doc(db, 'collections', currentUser.uid, 'cards', c.cardId), { coverUrl }, { merge: true }).catch(() => {});
         }
       }
-      return { ...c, coverUrl, ratings, rarity, descOverride: ov?.desc || neo?.desc || null };
+      // 固定試聽連結：存在 album_overrides（僅管理員可寫），前台只讀不查——
+      // 串流查無的盤（如三盲鼠）就靠這條，且不會發生即時比對配到別張專輯。
+      return { ...c, coverUrl, ratings, rarity, previewUrl: ov?.previewUrl || '', descOverride: ov?.desc || neo?.desc || null };
     }));
     drawCollection();
   }
@@ -1494,7 +1496,7 @@
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
-    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'itunes' }).then(ok => {
+    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'itunes', previewUrl: card.previewUrl || '' }).then(ok => {
       if (ok) return;
       // 失敗代碼幫店主回報真機到底卡在哪一層（S1 封鎖／S3 查無／S5 音檔錯誤…）。
       const code = lastPlayerState.code ? `（代碼 ${lastPlayerState.code}）` : '';
