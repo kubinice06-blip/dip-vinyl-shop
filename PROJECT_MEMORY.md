@@ -325,6 +325,15 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-21｜音樂地圖 albums 掉隊偵測（healthy() 加一致性不變式）＋收合條顯示點數
+- Repo：`dip-vinyl-shop`
+- 改動：店主回報 pvp 收合條寫「收藏 1 張」但展開地圖有滿滿資料。查證實際資料為 `albums=1` 而 `credits` 合計 **29 點**（Folk 7／Hip-hop 6／Soul 5／Classical 3／Pop 2／Blues 2／Jazz・Rock・Electronic・World 各 1）——`musicMap.albums` 掉隊沒跟著累加，但摘要算出的主路徑（民謠／嘻哈）是正確的。
+  - **根因為何沒被自動修**：`music-map.html` 的 `healthy()` 只檢查欄位存在與非負，**完全沒驗張數與點數的關係**，所以這種壞資料被判為健康，永遠不會觸發 `build()` 重建。三個寫入點（`index.html:908`／`battle.html:635`／`roguelike.html:443`）現行邏輯都是 albums 與 credits 一起 `increment(1)`，判斷是舊版資料殘留。
+  - **修法**：新增 `consistent(value)` 不變式——**一張專輯最多讓每個曲風各 +1 點，故 `max(credits) ≤ albums` 且 `untagged ≤ albums` 必然成立**——併入 `healthy()`。店主的資料 Folk 7 > albums 1 即判為不健康，下次開 `music-map.html` 會自動從唱片櫃完整重建。
+  - `pvp.html` 收合條摘要改為「收藏 N 張 · M 點 · 主路徑 X / Y」，張數與點數並列，日後對不上一眼可見。
+- 主要檔案：`music-map.html`、`pvp.html`
+- 驗證：Node 跑 8 組 `healthy()` 案例全數符合預期——店主實際壞資料判 false、重建後正確資料判 true、空地圖 albums=0 判 true、單張跨界 albums=1/兩曲風各 1 判 true（不誤殺）、count>1 重複盤 albums=5/單曲風 5 判 true、全未分類 untagged=albums 判 true、untagged>albums 判 false、舊 v1 判 false；`music-map.html` 模組腳本 `node --check` 語法通過。`pvp.html` 瀏覽器實測三種摘要字串（含最長「收藏 1234 張 · 5678 點 · 主路徑 嘻哈 / 世界」）均維持單行、列高 65px、文字置中於 x=188、縮圖不溢出左邊界。**注意**：重建會按唱片櫃實際內容重算 credits，對戰取得但未進唱片櫃的卡其點數可能因此變動；已領里程碑獎勵記在 `musicMapRewards`，不受影響。
+
 ### 2026-07-21｜品味生死鬥大廳改回原排版，只把音樂地圖收成第一列（修正同日前一筆）
 - Repo：`dip-vinyl-shop`
 - 改動：店主看過並排雙卡版後決定**保留原本的直式全寬排版**，只採用地圖收合的做法。因此把 `pvp.html` 的 hero（含兩行副標）、`.cards` 直式全寬卡、置中文字、右側箭頭全部還原成改版前的樣子；音樂地圖不再放在 hero 與卡片之間佔 370px，而是變成 `.cards` 清單的**第一列**收合條（65px：40px 迷你雷達＋「我的聆聽品味地圖／收藏 N 張 · 主路徑 X / Y」＋展開箭頭），點擊才在原地展開完整 compact 地圖，狀態存 `localStorage` 的 `dipPvpMapOpen`（預設收合）。展開面板內隱藏 widget 自己的標題列（`.music-map-head`），避免與收合條標題重複。收合條內容用 `max-width:760px` 置中，桌機才不會貼齊最左。前一筆的 `:hover` 包 `@media (hover:hover)`、補 `:active` 觸控回饋、`:focus-visible` 保留；`music-map-widget.js` 的 `ranking`／`summary`／`thumb` 三個新匯出續用。

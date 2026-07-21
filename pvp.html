@@ -113,8 +113,10 @@
     function paint(data, note) {
       const s = DipMusicMap.summary(data);
       document.getElementById('mapThumb').innerHTML = DipMusicMap.thumb(data);
+      // 張數與點數並列：兩者對不上時（曾發生 albums 掉隊）一眼就看得出來
+      const head = `收藏 ${s.albums} 張 · ${s.points} 點`;
       document.getElementById('mapStat').textContent = note
-        || (s.top.length ? `收藏 ${s.albums} 張 · 主路徑 ${s.top.map(g => g.zh).join(' / ')}` : `收藏 ${s.albums} 張 · 尚無路徑`);
+        || (s.top.length ? `${head} · 主路徑 ${s.top.map(g => g.zh).join(' / ')}` : `${head} · 尚無路徑`);
     }
 
     onAuthStateChanged(auth, async user => {
