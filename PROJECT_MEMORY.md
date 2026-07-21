@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-21｜修 worker YT 配對誤配＋剔除三盲鼠「自我同名」高風險卡
+
+- Repo：`dip-vinyl-shop`、`dip-vinyl-worker`
+- 背景：前一輪發現對戰／Roguelike 排除 YouTube 是對的（iOS 上 `setVolume()` 無效，
+  iPhone 實機測階梯/斜坡/mute 全部「都沒有」變化，`preview-lab.html` 桌機同頁正常，證實不是程式問題，
+  只能靠 Web Audio GainNode 才能淡入淡出）。轉頭去修 worker `/yt-music-link` 的靜默配錯問題。
+- **worker 根因**：`youtubeMusicAlbumPlaylist()` 有一條「頂部大卡片備援」完全不驗證專輯名，
+  只要藝人對得上就採用——原意是給「專輯名被整個羅馬拼音化」的 CJK 案例用（南蛮渡来→Nanban Torai
+  這種文字比對必斷的情況），但沒把條件限定在「查詢真的含中日韓文字」，導致純英文查詢也誤觸發。
+  修法：加 `hasCJK(...)` 閘門。同時把快取鍵 `yt-music-link-album-v5` 升版為 `v6`，否則舊快取住的
+  錯誤配對不會失效重查。已 `npm run deploy`（worker）兩次（先改邏輯、再升版快取鍵）。
+  - 驗證：`New Herd`（原配到 Beneath the Underdog）、`Midnight Sugar`（原配到 A Shade Of Blue）
+    修復後皆配對正確；`CHTHONIC - Seediq Bale` 中文案例確認備援機制未被誤砍仍可用。
+- **新發現且未修的次要問題**：極短／自我同名專輯名（如「Mari」）會被字串子字串比對誤判成
+  撞到藝人名本身，這是另一條路徑（`youtubeFullAlbumVideo`）的獨立瑕疵，這次沒有動它
+  （見下方剔除清單，改用「直接不收錄」而非修演算法解決）。
+- **三盲鼠卡池砍 3 張**：對 73 張逐一實測 `/yt-music-link`，抓出 3 張「樂團名＝專輯名」的
+  自我同名卡全部配錯：
+  - `Air - Air` → 配到法國電子雙人組 Air 的《Moon Safari》
+  - `Mari Nakamoto - Mari` → 配到同廠牌另一張《Little Girl Blue》
+  - `Window Pane - Window Pane` → 配到 2024 年另一支同名樂團的專輯
+  店主指示「三盲鼠不用全部都上」，這類辨識度低又高風險的卡直接剔除，不修演算法去救。
+  `seed_cards.json` 5599 → **5596 張**；對應 3 筆 `card_catalog` 文件確認皆 `updatedAt=1` 且
+  無 `desc`（本批新建、玩家未抽過）後刪除。
+- 主要檔案：`dip-vinyl-worker/src/index.js`（`youtubeMusicAlbumPlaylist` 加 CJK 閘門、快取鍵升版）、
+  `seed_cards.json`、`.claude/skills/dip-card-pool-expand/SKILL.md`（補「自我同名卡直接排除」原則）
+- 驗證：`node --check src/index.js` 通過；`seed_cards.json` parse 通過、5596 張全部 5 欄位；
+  Firestore 3 筆刪除前逐一核對 `updatedAt`/`desc` 才動手。
+- 待辦：「短專輯名撞藝人名」的演算法瑕疵留給下次批次挑選階段用人工篩掉（篩選時看到專輯名＝
+  藝人名或極短就跳過），不預計修 `youtubeFullAlbumVideo` 本身。
+
 ### 2026-07-21｜卡片固定試聽連結（previewUrl）＋自架音檔淡入淡出實測
 
 - Repo：`dip-vinyl-shop`
