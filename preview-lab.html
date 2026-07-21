@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>試聽模式實驗室 — dip vinyl</title>
+<title>YouTube 淡入淡出實測 — dip vinyl</title>
 <style>
   :root { --line:#e5e2dc; --gray:#8b8680; --black:#1a1a1a; --gold:#b8860b; --green:#2d6a4f; --red:#9b2226; }
   * { box-sizing:border-box; }
@@ -12,41 +12,59 @@
   h1 { font-size:15px; letter-spacing:.1em; margin:0 0 4px; }
   .sub { color:var(--gray); font-size:11px; margin-bottom:16px; }
   .box { border:1px solid var(--line); background:#fff; padding:12px; margin-bottom:12px; }
-  .box h2 { font-size:12px; margin:0 0 8px; letter-spacing:.08em; }
+  .box h2 { font-size:12px; margin:0 0 6px; letter-spacing:.08em; }
   .note { color:var(--gray); font-size:10px; margin-bottom:10px; }
-  button { font-family:inherit; font-size:12px; padding:10px 14px; border:1px solid var(--black);
-           background:#fff; color:var(--black); cursor:pointer; margin:0 6px 6px 0; min-height:44px; }
+  button { font-family:inherit; font-size:12px; padding:11px 14px; border:1px solid var(--black);
+           background:#fff; color:var(--black); cursor:pointer; margin:0 6px 6px 0; min-height:46px; }
   button:active { background:var(--black); color:#fff; }
-  button[disabled] { opacity:.4; cursor:default; }
+  button[disabled] { opacity:.35; }
   input { font-family:inherit; font-size:12px; padding:9px 10px; border:1px solid var(--line);
           width:100%; margin-bottom:8px; background:#fff; }
-  #meter { height:10px; background:var(--line); position:relative; overflow:hidden; margin:8px 0; }
-  #meterFill { position:absolute; inset:0 100% 0 0; background:var(--gold); transition:none; }
-  #log { white-space:pre-wrap; font-size:10px; line-height:1.6; max-height:44vh; overflow:auto;
+  #bar { height:12px; background:var(--line); position:relative; overflow:hidden; margin:8px 0 4px; }
+  #barFill { position:absolute; inset:0 100% 0 0; background:var(--gold); }
+  #log { white-space:pre-wrap; font-size:10px; line-height:1.55; max-height:40vh; overflow:auto;
          border:1px solid var(--line); background:#fff; padding:10px; }
   .ok { color:var(--green); } .bad { color:var(--red); } .dim { color:var(--gray); }
+  #yt { width:1px; height:1px; opacity:.01; position:absolute; left:-9999px; }
+  .big { font-size:13px; font-weight:700; }
 </style>
 </head>
 <body>
-<h1>試聽模式實驗室</h1>
-<div class="sub">驗證「自架音檔 → Web Audio」路徑能不能做到真正的淡入淡出（尤其 iOS）。<br>
-在 iPhone 上開這一頁，依序按下面的按鈕，把 log 截圖回報。</div>
+<h1>YouTube 淡入淡出實測</h1>
+<div class="sub">測 YouTube iframe 的 <code>setVolume()</code> 在這台裝置上到底有沒有效。<br>
+<b>請戴耳機、把手機音量開到一半</b>，依序按下面三個測試，用耳朵判斷後回報。</div>
 
 <div class="box">
-  <h2>① 音檔來源</h2>
-  <div class="note">預設用 Apple 的公開試聽音檔（有 CORS）當替身。若要測自架檔案，把網址換成你放上去的 .m4a／.mp3。</div>
-  <input id="url" value="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/cd/bf/54cdbfac-de59-28bc-4bf1-47b5ef999fa5/mzaf_10829460728544797329.plus.aac.p.m4a">
-  <button id="btnFade">▶ 播放（1.5 秒淡入 → 8 秒 → 淡出）</button>
-  <button id="btnRaw">▶ 對照組：不淡入直接播</button>
-  <button id="btnStop">■ 停止</button>
-  <div id="meter"><div id="meterFill"></div></div>
-  <div class="note">上面那條是<b>實際量到的輸出音量</b>（AnalyserNode 峰值）。淡入時它應該由左往右長出來，淡出時縮回去——
-  這是客觀證據，不是靠耳朵judge。</div>
+  <h2>影片（預設是三盲鼠《Ode to Birds》整張）</h2>
+  <input id="vid" value="PeY2C1WQXQk">
+  <div class="note">可換成任何 YouTube 影片 id 或完整網址。</div>
+  <button id="btnLoad">① 載入播放器</button>
 </div>
 
 <div class="box">
-  <h2>② 環境檢測</h2>
-  <button id="btnEnv">執行檢測</button>
+  <h2>測試 A：階梯音量</h2>
+  <div class="note">依序設成 <b>音量 100 → 50 → 10 → 100</b>，每段 3 秒。<br>
+  <span class="big">要聽的是：音量有沒有明顯階梯式變化？</span><br>
+  若四段聽起來一樣大聲 → 這台裝置忽略 setVolume（iOS 典型行為）。</div>
+  <button id="btnSteps" disabled>▶ 執行階梯測試</button>
+</div>
+
+<div class="box">
+  <h2>測試 B：淡入 → 淡出</h2>
+  <div class="note">1.5 秒淡入 → 播 6 秒 → 1.5 秒淡出（每 50ms 一階，跟正式播放器同一套做法）。<br>
+  <span class="big">要聽的是：開頭是否由小漸大、結尾是否漸弱到無聲？</span></div>
+  <button id="btnFade" disabled>▶ 執行淡入淡出</button>
+  <div id="bar"><div id="barFill"></div></div>
+  <div class="note">上面那條只是「我們送出的音量指令」，<b>不是實際輸出</b>——
+  YouTube 在跨來源 iframe 裡，JS 抓不到它的聲音波形，所以這關只能靠耳朵。</div>
+</div>
+
+<div class="box">
+  <h2>測試 C：靜音開關對照</h2>
+  <div class="note">用 <code>mute()／unMute()</code> 切換（這個 iOS 通常有效）。<br>
+  <span class="big">若 C 有效但 A、B 無效 → 只能做硬切，做不了淡入淡出。</span></div>
+  <button id="btnMute" disabled>▶ 靜音 3 秒再開</button>
+  <button id="btnStop" disabled>■ 停止</button>
 </div>
 
 <div class="box">
@@ -54,151 +72,120 @@
   <div id="log"></div>
 </div>
 
+<div id="yt"></div>
+
 <script>
 const $ = id => document.getElementById(id);
-const logEl = $('log');
 function log(msg, cls='') {
   const t = (performance.now()/1000).toFixed(2).padStart(6);
-  logEl.insertAdjacentHTML('beforeend', `<span class="${cls}">${t}s  ${String(msg).replace(/</g,'&lt;')}</span>\n`);
-  logEl.scrollTop = logEl.scrollHeight;
+  $('log').insertAdjacentHTML('beforeend', `<span class="${cls}">${t}s  ${String(msg).replace(/</g,'&lt;')}</span>\n`);
+  $('log').scrollTop = $('log').scrollHeight;
 }
-
 const IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-let ctx = null, gain = null, analyser = null, source = null, meterTimer = null, keepAlive = null;
-const FADE = 1.5, BASE = 0.5;
+let player = null, ready = false;
+function videoId(v) {
+  v = String(v||'').trim();
+  const m = v.match(/(?:v=|youtu\.be\/|\/embed\/)([A-Za-z0-9_-]{11})/);
+  return m ? m[1] : (/^[A-Za-z0-9_-]{11}$/.test(v) ? v : '');
+}
+function enable(on) { ['btnSteps','btnFade','btnMute','btnStop'].forEach(id => $(id).disabled = !on); }
 
-// 靜音 keep-alive：iOS 在等待下載／解碼的空窗會把 audio session 收掉，
-// 之後 source.start() 不會出聲、AudioContext 卻仍回報 running（正式播放器踩過這個坑）。
-function silentWavUrl() {
-  const bytes = new Uint8Array(44 + 8000);
-  const dv = new DataView(bytes.buffer);
-  const ascii = (off, s) => { for (let i=0;i<s.length;i++) dv.setUint8(off+i, s.charCodeAt(i)); };
-  ascii(0,'RIFF'); dv.setUint32(4, 36+8000, true); ascii(8,'WAVEfmt ');
-  dv.setUint32(16,16,true); dv.setUint16(20,1,true); dv.setUint16(22,1,true);
-  dv.setUint32(24,8000,true); dv.setUint32(28,8000,true); dv.setUint16(32,1,true); dv.setUint16(34,8,true);
-  ascii(36,'data'); dv.setUint32(40,8000,true);
-  for (let i=0;i<8000;i++) bytes[44+i] = 128;
-  return URL.createObjectURL(new Blob([bytes], { type:'audio/wav' }));
+// setVolume 之後立刻回讀：回讀相符只代表「播放器記下了」，不保證真的有出聲差異——
+// iOS 上 YouTube 內部仍是 HTMLMediaElement，volume 是唯讀的。
+function setVol(v) {
+  try { player.setVolume(v); } catch (e) { log('setVolume 失敗 '+e.message,'bad'); return null; }
+  let back = null;
+  try { back = player.getVolume(); } catch (_) {}
+  return back;
 }
 
-function ensureGraph() {
-  if (ctx) return;
-  const AC = window.AudioContext || window.webkitAudioContext;
-  ctx = new AC();
-  gain = ctx.createGain();
-  gain.gain.value = 0;
-  analyser = ctx.createAnalyser();
-  analyser.fftSize = 2048;
-  gain.connect(analyser);          // 旁支量測，不影響輸出鏈
-  gain.connect(ctx.destination);
-  log(`AudioContext 建立 state=${ctx.state} sampleRate=${ctx.sampleRate}`);
-}
-
-function startMeter() {
-  clearInterval(meterTimer);
-  const buf = new Uint8Array(analyser.fftSize);
-  meterTimer = setInterval(() => {
-    analyser.getByteTimeDomainData(buf);
-    let peak = 0;
-    for (const v of buf) peak = Math.max(peak, Math.abs(v - 128) / 128);
-    $('meterFill').style.right = `${Math.max(0, 100 - peak * 300)}%`;
-  }, 60);
-}
-
-async function play(withFade) {
-  const url = $('url').value.trim();
-  if (!url) return;
-  stop();
-  ensureGraph();
-
-  // 手勢內先讓靜音 WAV 播起來，建立 audio session
-  if (!keepAlive) { keepAlive = new Audio(); keepAlive.loop = true; keepAlive.src = silentWavUrl(); }
-  const armed = keepAlive.play().then(()=>log('keep-alive 靜音播放中','dim'), e=>log('keep-alive play() 被拒: '+e.name,'bad'));
-  ctx.resume?.().catch(()=>{});
-
-  gain.gain.cancelScheduledValues(ctx.currentTime);
-  gain.gain.setValueAtTime(0, ctx.currentTime);
-  log(`下載音檔… ${url.slice(0,60)}…`);
-  const t0 = performance.now();
-  let decoded;
-  try {
-    const res = await fetch(url, { mode:'cors' });
-    log(`HTTP ${res.status}  CORS ${res.headers.get('access-control-allow-origin') || '(無標頭)'}`);
-    if (!res.ok) { log('下載失敗','bad'); return; }
-    const bytes = await res.arrayBuffer();
-    log(`下載完成 ${Math.round(bytes.byteLength/1024)}KB，耗時 ${Math.round(performance.now()-t0)}ms`);
-    decoded = await ctx.decodeAudioData(bytes);
-    log(`解碼完成 ${decoded.duration.toFixed(1)} 秒 / ${decoded.numberOfChannels} 聲道`, 'ok');
-  } catch (e) { log('下載或解碼失敗: '+e.message, 'bad'); return; }
-
-  if (ctx.state !== 'running') { await ctx.resume?.().catch(()=>{}); log(`resume 後 state=${ctx.state}`); }
-
-  source = ctx.createBufferSource();
-  source.buffer = decoded;
-  source.connect(gain);
-  source.start(0);
-  startMeter();
-
-  if (withFade) {
-    gain.gain.setValueAtTime(0, ctx.currentTime);
-    gain.gain.linearRampToValueAtTime(BASE, ctx.currentTime + FADE);
-    log(`淡入開始：0 → ${BASE}，${FADE} 秒`, 'ok');
-    setTimeout(() => {
-      if (!ctx) return;
-      gain.gain.cancelScheduledValues(ctx.currentTime);
-      gain.gain.setValueAtTime(gain.gain.value, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(0, ctx.currentTime + FADE);
-      log(`淡出開始：${BASE} → 0，${FADE} 秒`, 'ok');
-      setTimeout(stop, FADE*1000 + 200);
-    }, 8000);
-  } else {
-    gain.gain.setValueAtTime(BASE, ctx.currentTime);
-    log(`直接設為 ${BASE}（對照組，無斜坡）`);
+$('btnLoad').onclick = () => {
+  const id = videoId($('vid').value);
+  if (!id) { log('影片 id 解析失敗','bad'); return; }
+  log(`載入 YouTube iframe API…（影片 ${id}）`);
+  const boot = () => {
+    player = new YT.Player('yt', {
+      videoId: id, width:1, height:1,
+      playerVars: { playsinline:1, controls:0, disablekb:1 },
+      events: {
+        onReady: () => {
+          ready = true; enable(true);
+          log('播放器 ready','ok');
+          log(`裝置判定 iOS: ${IOS}`);
+          const a = new Audio(); a.volume = 0.3;
+          log(`HTMLAudioElement.volume 可寫: ${a.volume===0.3 ? '是（非 iOS 行為）' : '否 — iOS 忽略 volume'}`,
+              a.volume===0.3 ? '' : 'bad');
+        },
+        onError: e => log('播放器錯誤 code='+e.data+'（101/150=該影片禁止外嵌，換一支）','bad'),
+        onStateChange: e => {
+          const names = {'-1':'unstarted',0:'ended',1:'playing',2:'paused',3:'buffering',5:'cued'};
+          log(`state → ${names[e.data] ?? e.data}`,'dim');
+        }
+      }
+    });
+  };
+  if (window.YT?.Player) boot();
+  else {
+    window.onYouTubeIframeAPIReady = boot;
+    const s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(s);
   }
-
-  armed.finally(() => { try { keepAlive.loop = false; keepAlive.pause(); } catch(_){} });
-
-  // 起播 0.8 秒後量一次：峰值為 0 代表訊號沒到輸出端
-  setTimeout(() => {
-    if (!analyser) return;
-    const buf = new Uint8Array(analyser.fftSize);
-    analyser.getByteTimeDomainData(buf);
-    let peak = 0;
-    for (const v of buf) peak = Math.max(peak, Math.abs(v-128)/128);
-    log(`起播 0.8s 實測峰值 = ${peak.toFixed(4)}  gain=${gain.gain.value.toFixed(3)}  ctx=${ctx.state}`,
-        peak > 0.001 ? 'ok' : 'bad');
-  }, 800);
-}
-
-function stop() {
-  clearInterval(meterTimer);
-  $('meterFill').style.right = '100%';
-  if (source) { try { source.stop(); source.disconnect(); } catch(_){} source = null; }
-  if (keepAlive) { try { keepAlive.loop=false; keepAlive.pause(); } catch(_){} }
-}
-
-$('btnFade').onclick = () => play(true);
-$('btnRaw').onclick  = () => play(false);
-$('btnStop').onclick = stop;
-
-$('btnEnv').onclick = () => {
-  ensureGraph();
-  log('── 環境 ──');
-  log(`UA: ${navigator.userAgent}`);
-  log(`判定 iOS: ${IOS}`);
-  log(`AudioContext: ${!!(window.AudioContext||window.webkitAudioContext)}  state=${ctx.state}`);
-  const a = new Audio();
-  a.volume = 0.3;
-  // iOS 對 HTMLMediaElement.volume 是唯讀的：設 0.3 讀回來仍是 1
-  log(`HTMLAudioElement.volume 可寫: ${a.volume === 0.3 ? '是（非 iOS 行為）' : '否 — iOS 忽略 volume，必須走 Web Audio'}`,
-      a.volume === 0.3 ? '' : 'bad');
-  log(`GainNode 可用: ${typeof ctx.createGain === 'function' ? '是 → 淡入淡出可行' : '否'}`,
-      typeof ctx.createGain === 'function' ? 'ok' : 'bad');
 };
 
-log('準備就緒。先按「執行檢測」，再按播放。', 'dim');
+$('btnSteps').onclick = async () => {
+  log('── 測試 A：階梯音量 ──');
+  player.unMute?.(); player.playVideo?.();
+  await sleep(600);
+  for (const v of [100, 50, 10, 100]) {
+    const back = setVol(v);
+    log(`設定 ${String(v).padStart(3)} → getVolume 回讀 ${back}`, back === v ? '' : 'bad');
+    $('barFill').style.right = (100-v)+'%';
+    await sleep(3000);
+  }
+  log('測試 A 結束：這四段聽起來音量有變化嗎？','ok');
+};
+
+$('btnFade').onclick = async () => {
+  log('── 測試 B：淡入 → 淡出 ──');
+  const TARGET = 50, STEP = 50, FADE = 1500;
+  player.unMute?.(); setVol(0); player.playVideo?.();
+  await sleep(600);
+  for (let t = 0; t <= FADE; t += STEP) {
+    const v = Math.round(TARGET * t / FADE);
+    setVol(v); $('barFill').style.right = (100-v)+'%';
+    await sleep(STEP);
+  }
+  log(`淡入完成（0 → ${TARGET}，${FADE}ms）`,'ok');
+  await sleep(6000);
+  for (let t = 0; t <= FADE; t += STEP) {
+    const v = Math.round(TARGET * (1 - t / FADE));
+    setVol(v); $('barFill').style.right = (100-v)+'%';
+    await sleep(STEP);
+  }
+  log('淡出完成（→ 0）','ok');
+  player.pauseVideo?.();
+  log('測試 B 結束：開頭有漸強、結尾有漸弱嗎？','ok');
+};
+
+$('btnMute').onclick = async () => {
+  log('── 測試 C：靜音開關 ──');
+  player.unMute?.(); setVol(50); player.playVideo?.();
+  await sleep(2000);
+  player.mute?.(); log(`mute() → isMuted=${player.isMuted?.()}`);
+  await sleep(3000);
+  player.unMute?.(); log(`unMute() → isMuted=${player.isMuted?.()}`);
+  await sleep(2000);
+  player.pauseVideo?.();
+  log('測試 C 結束：中間那 3 秒真的變安靜了嗎？','ok');
+};
+
+$('btnStop').onclick = () => { try { player.pauseVideo(); } catch(_){} $('barFill').style.right='100%'; log('已停止'); };
+
+log('請先按「① 載入播放器」。','dim');
 </script>
 </body>
 </html>
