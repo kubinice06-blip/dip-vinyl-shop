@@ -35,9 +35,11 @@
 <b>請戴耳機、把手機音量開到一半</b>，依序按下面三個測試，用耳朵判斷後回報。</div>
 
 <div class="box">
-  <h2>影片（預設是三盲鼠《Ode to Birds》整張）</h2>
-  <input id="vid" value="PeY2C1WQXQk">
+  <h2>影片（預設：鈴木勲《Blow Up》整張，開場曲〈Aqua Marine〉）</h2>
+  <input id="vid" value="bvJrY_Wf7wk">
   <div class="note">可換成任何 YouTube 影片 id 或完整網址。</div>
+  <label class="note" style="display:block;">從第幾秒開始播（避開黑膠前奏的無聲段，直接落在旋律上比較好判斷淡入）</label>
+  <input id="start" value="35" inputmode="numeric">
   <button id="btnLoad">① 載入播放器</button>
 </div>
 
@@ -92,6 +94,13 @@ function videoId(v) {
   return m ? m[1] : (/^[A-Za-z0-9_-]{11}$/.test(v) ? v : '');
 }
 function enable(on) { ['btnSteps','btnFade','btnMute','btnStop'].forEach(id => $(id).disabled = !on); }
+function startSec() { const n = parseInt($('start').value, 10); return Number.isFinite(n) && n >= 0 ? n : 0; }
+// 每個測試都從指定秒數重新起播：整張黑膠 rip 的開頭常是無聲溝紋，
+// 落在旋律上才判斷得出淡入淡出。
+function startAt() {
+  try { player.seekTo(startSec(), true); } catch (_) {}
+  player.playVideo?.();
+}
 
 // setVolume 之後立刻回讀：回讀相符只代表「播放器記下了」，不保證真的有出聲差異——
 // iOS 上 YouTube 內部仍是 HTMLMediaElement，volume 是唯讀的。
@@ -109,7 +118,7 @@ $('btnLoad').onclick = () => {
   const boot = () => {
     player = new YT.Player('yt', {
       videoId: id, width:1, height:1,
-      playerVars: { playsinline:1, controls:0, disablekb:1 },
+      playerVars: { playsinline:1, controls:0, disablekb:1, start: startSec() },
       events: {
         onReady: () => {
           ready = true; enable(true);
@@ -138,7 +147,7 @@ $('btnLoad').onclick = () => {
 
 $('btnSteps').onclick = async () => {
   log('── 測試 A：階梯音量 ──');
-  player.unMute?.(); player.playVideo?.();
+  player.unMute?.(); startAt();
   await sleep(600);
   for (const v of [100, 50, 10, 100]) {
     const back = setVol(v);
@@ -152,7 +161,7 @@ $('btnSteps').onclick = async () => {
 $('btnFade').onclick = async () => {
   log('── 測試 B：淡入 → 淡出 ──');
   const TARGET = 50, STEP = 50, FADE = 1500;
-  player.unMute?.(); setVol(0); player.playVideo?.();
+  player.unMute?.(); setVol(0); startAt();
   await sleep(600);
   for (let t = 0; t <= FADE; t += STEP) {
     const v = Math.round(TARGET * t / FADE);
@@ -173,7 +182,7 @@ $('btnFade').onclick = async () => {
 
 $('btnMute').onclick = async () => {
   log('── 測試 C：靜音開關 ──');
-  player.unMute?.(); setVol(50); player.playVideo?.();
+  player.unMute?.(); setVol(50); startAt();
   await sleep(2000);
   player.mute?.(); log(`mute() → isMuted=${player.isMuted?.()}`);
   await sleep(3000);
