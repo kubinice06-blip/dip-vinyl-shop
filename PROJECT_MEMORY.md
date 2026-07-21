@@ -325,6 +325,17 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-21｜品味生死鬥大廳版面重排（兩個入口優先、音樂地圖收合）
+- Repo：`dip-vinyl-shop`
+- 改動：店主反映 `pvp.html` 大廳「地圖太大、兩個對戰選項被壓在底部很難按」。實測 iPhone 375×812 下地圖區佔 ~370px（46% 螢幕），兩張入口卡落在 700px 之後、iPhone SE 完全在摺線下。採「優先權對調」方案：
+  1. **兩個對戰入口上移並排**：`.deck` 改 2 欄格線放在 hero 正下方，直式卡（編號／名稱／描述／右下箭頭），卡高固定 148px（<400px 螢幕 138px）。
+  2. **音樂地圖降級為可收合摘要條**：新增 `.mapbar`，收合時只有 70px 一條——44px 迷你雷達縮圖 ＋「收藏 N 張 · 主路徑 X / Y」一行字；點擊才展開完整 compact 地圖，開關狀態存 `localStorage` 的 `dipPvpMapOpen`（預設收合）。
+  3. **hero 瘦身**：刪掉兩行副標（文案併入卡片描述），padding 40→26。
+  4. 順手修：箭頭改 `position:absolute` 釘在卡片右下、不再與描述文字重疊；`:hover` 包進 `@media (hover:hover)` 並補 `:active` 給觸控回饋；地圖預設收合所以不再有 Firestore 回來才撐開高度的版面跳動。
+  - `music-map-widget.js` 新增三個匯出供摘要條使用：`ranking(data)`（依點數排序、含中文名）、`summary(data)`（張數／點數／前兩大路徑）、`thumb(data)`（只有外框＋形狀的迷你 SVG）＋對應 `.music-map-thumb` 樣式；皆為新增，既有 `mount` 行為不變，其他頁面（`index.html` 等）沿用 `?v=12` 不受影響，`pvp.html` 引用改 `?v=13`。
+- 主要檔案：`pvp.html`、`music-map-widget.js`
+- 驗證：本機瀏覽器實測——iPhone 375×812 第一屏總高 **340px**（原 ~775px），兩張卡位在 y=116–256 完全在上半部，各 166.5×138px；展開地圖後 mapbar 488px、頁面不橫向捲動；桌機 1280 寬置中 680px、`scrollWidth` 無溢出；箭頭與描述經幾何量測確認無重疊；收合開關 `aria-expanded` 正確切換；console 零錯誤。開工前交接：`git fetch` 遠端無新提交，工作區僅先前已刪的 `audio-debug.html` 與未追蹤 `data/apple-audio-map-*.json`，無衝突。
+
 ### 2026-07-20｜對戰旅途六項改進（音樂、整備維修、對手卡池、無限續戰、手牌長按）
 - Repo：`dip-vinyl-shop`
 - 改動：依店主六點需求改 `roguelike.html`：

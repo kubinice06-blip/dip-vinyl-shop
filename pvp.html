@@ -15,64 +15,127 @@
     .topbar { display: flex; align-items: center; border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; flex-shrink: 0; }
     .topbar a { color: var(--black); text-decoration: none; font-size: 11px; letter-spacing: 0.08em; }
     .topbar a:hover { color: var(--gray); }
-    .hero { text-align: center; padding: 40px 20px 24px; }
+    .wrap { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+    .hero { text-align: center; padding: 26px 20px 20px; }
     .hero-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
     .hero-beta { display: inline-block; margin-left: 8px; font-size: 8px; font-weight: 700; letter-spacing: 0.16em; vertical-align: 4px; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; animation: betaBlink 2.4s ease-in-out infinite; }
     @keyframes betaBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-    .hero-sub { margin-top: 12px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
-    .cards { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+
+    /* ── 主要入口：兩張並排的對戰卡，永遠在第一屏 ── */
+    .deck { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); }
     .card {
-      position: relative; border-bottom: 1px solid var(--line); padding: 32px 44px; cursor: pointer;
-      display: flex; align-items: center; justify-content: center; gap: 16px;
-      background: #fff; transition: background 0.15s; text-align: center; width: 100%;
-      border-left: none; border-right: none; border-top: none; font-family: var(--mono); text-decoration: none; color: var(--black);
+      position: relative; display: flex; flex-direction: column; gap: 6px;
+      min-height: 148px; padding: 20px 16px 40px; text-align: left;
+      background: #fff; color: var(--black); text-decoration: none;
+      font-family: var(--mono); border: 0; border-right: 1px solid var(--line);
+      cursor: pointer; transition: background 0.15s, color 0.15s;
     }
-    .card:hover { background: #111; color: #fff; }
-    .card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
-    .card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
-    .card:hover .card-desc { color: #bbb; }
-    .card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
-    .map-entry { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    .card:last-child { border-right: 0; }
+    .card-kicker { font-size: 8px; letter-spacing: 0.16em; color: var(--gray); }
+    .card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; }
+    .card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.04em; line-height: 1.6; }
+    .card-arrow { position: absolute; right: 14px; bottom: 12px; font-size: 18px; line-height: 1; }
+    .card:active { background: #111; color: #fff; }
+    .card:active .card-desc, .card:active .card-kicker { color: #bbb; }
+    @media (hover: hover) {
+      .card:hover { background: #111; color: #fff; }
+      .card:hover .card-desc, .card:hover .card-kicker { color: #bbb; }
+    }
+    .card:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
+
+    /* ── 次要資訊：地圖收合成一條摘要，點開才展開 ── */
+    .mapbar { margin-top: 14px; border: 1px solid var(--line); }
+    .mapbar-toggle {
+      width: 100%; display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; min-height: 64px; background: none; border: 0;
+      font-family: var(--mono); color: var(--black); text-align: left; cursor: pointer;
+    }
+    .mapbar-toggle:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
+    .mapbar-thumb { width: 44px; height: 44px; flex-shrink: 0; }
+    .mapbar-text { flex: 1; min-width: 0; }
+    .mapbar-title { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
+    .mapbar-stat { margin-top: 4px; font-size: 9px; color: var(--gray); letter-spacing: 0.04em; line-height: 1.5; }
+    .mapbar-chev { font-size: 10px; color: var(--gray); flex-shrink: 0; transition: transform 0.2s; }
+    .mapbar.open .mapbar-chev { transform: rotate(180deg); }
+    .mapbar-panel { display: none; padding: 0 14px; border-top: 1px solid var(--line); }
+    .mapbar.open .mapbar-panel { display: block; min-height: 300px; }
+    .mapbar-panel .music-map { border-top: 0; border-bottom: 0; }
+
+    @media (max-width: 400px) {
+      .card { min-height: 138px; padding: 16px 12px 36px; }
+      .card-name { font-size: 13px; }
+      .card-desc { font-size: 9px; }
+    }
   </style>
 </head>
 <body>
   <div class="topbar"><a href="index.html">↩ 回主頁</a></div>
   <div class="hero">
     <div class="hero-title">品味生死鬥<span class="hero-beta">BETA</span></div>
-    <div class="hero-sub">用你手邊的專輯，一決高下。<br>選一種玩法開打。</div>
   </div>
-  <div class="map-entry" id="pvpMusicMap"></div>
-  <div class="cards">
-    <a class="card" href="battle.html">
-      <div>
-        <div class="card-name">單場對決</div>
-        <div class="card-desc">用你手邊的專輯，與音樂同好一決高下。</div>
-      </div>
-      <span class="card-arrow">→</span>
-    </a>
-    <a class="card" href="roguelike.html">
-      <div>
-        <div class="card-name">無盡品味試煉</div>
-        <div class="card-desc">選流派、挑三張盤，一場接一場越打越強，撐到死。</div>
-      </div>
-      <span class="card-arrow">→</span>
-    </a>
+
+  <div class="wrap">
+    <div class="deck">
+      <a class="card" href="battle.html">
+        <span class="card-kicker">01</span>
+        <span class="card-name">單場對決</span>
+        <span class="card-desc">用你手邊的專輯，與音樂同好一決高下。</span>
+        <span class="card-arrow">→</span>
+      </a>
+      <a class="card" href="roguelike.html">
+        <span class="card-kicker">02</span>
+        <span class="card-name">無盡品味試煉</span>
+        <span class="card-desc">選流派、挑三張盤，一場接一場撐到死。</span>
+        <span class="card-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="mapbar" id="mapBar">
+      <button class="mapbar-toggle" id="mapToggle" type="button" aria-expanded="false" aria-controls="mapPanel">
+        <span class="mapbar-thumb" id="mapThumb"></span>
+        <span class="mapbar-text">
+          <span class="mapbar-title">我的聆聽品味地圖</span>
+          <span class="mapbar-stat" id="mapStat">讀取中…</span>
+        </span>
+        <span class="mapbar-chev">▼</span>
+      </button>
+      <div class="mapbar-panel" id="mapPanel"><div id="pvpMusicMap"></div></div>
+    </div>
   </div>
-  <script src="music-map-widget.js?v=12"></script>
+
+  <script src="music-map-widget.js?v=13"></script>
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
     import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
     import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
     const app = initializeApp({ apiKey:'AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg', authDomain:'price-manager-e8846.firebaseapp.com', projectId:'price-manager-e8846', storageBucket:'price-manager-e8846.firebasestorage.app', messagingSenderId:'570133498387', appId:'1:570133498387:web:8835b8d2373797e91d0de6' });
-    const db = getFirestore(app), auth = getAuth(app), map = DipMusicMap.mount(document.getElementById('pvpMusicMap'), { compact:true });
+    const db = getFirestore(app), auth = getAuth(app);
+    const map = DipMusicMap.mount(document.getElementById('pvpMusicMap'), { compact:true });
+
+    const bar = document.getElementById('mapBar'), toggle = document.getElementById('mapToggle');
+    const KEY = 'dipPvpMapOpen';
+    const setOpen = open => { bar.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
+    setOpen(localStorage.getItem(KEY) === '1');
+    toggle.addEventListener('click', () => { const open = !bar.classList.contains('open'); setOpen(open); localStorage.setItem(KEY, open ? '1' : '0'); });
+
+    // 摘要條：只給一行「收藏 N 張 · 主路徑 X／Y」，完整地圖收在裡面
+    function paint(data, note) {
+      const s = DipMusicMap.summary(data);
+      document.getElementById('mapThumb').innerHTML = DipMusicMap.thumb(data);
+      document.getElementById('mapStat').textContent = note
+        || (s.top.length ? `收藏 ${s.albums} 張 · 主路徑 ${s.top.map(g => g.zh).join(' / ')}` : `收藏 ${s.albums} 張 · 尚無路徑`);
+    }
+
     onAuthStateChanged(auth, async user => {
-      if (!user) return map.update(DipMusicMap.empty(), '登入後會在這裡顯示你的永久收藏地圖。');
+      if (!user) { const e = DipMusicMap.empty(); paint(e, '登入後顯示你的永久收藏地圖'); return map.update(e, '登入後會在這裡顯示你的永久收藏地圖。'); }
       try {
         const profile = (await getDoc(doc(db, 'users', user.uid))).data();
-        if (profile?.musicMap?.version === 2) map.update(profile.musicMap);
-        else map.update(DipMusicMap.empty(), '請先到「我的音樂地圖」同步既有唱片櫃資料。');
-      } catch { map.update(DipMusicMap.empty(), '暫時無法讀取地圖資料。'); }
+        if (profile?.musicMap?.version === 2) { paint(profile.musicMap); map.update(profile.musicMap); }
+        else { const e = DipMusicMap.empty(); paint(e, '請先到「我的音樂地圖」同步唱片櫃'); map.update(e, '請先到「我的音樂地圖」同步既有唱片櫃資料。'); }
+      } catch { const e = DipMusicMap.empty(); paint(e, '暫時無法讀取地圖資料'); map.update(e, '暫時無法讀取地圖資料。'); }
     });
+    paint(DipMusicMap.empty(), '讀取中…');
   </script>
 </body>
 </html>
