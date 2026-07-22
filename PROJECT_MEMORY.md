@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22 — jazz card-pool audit fixes and playback verification
+- Repo: `dip-vinyl-shop` (plus mirrored workspace skill scripts)
+- Removed 16 confirmed bad cards from `seed_cards.json`: six duplicate release groups / alternate credits and ten non-Album releases (Singles, EPs, or compilations). Deleted the matching Firestore `card_catalog` documents only after confirming `updatedAt=1` and no `desc`; all 16 now return HTTP 404.
+- Hardened both copies of `1-label-catalog.mjs` (`.claude/...` and `.agents/...`): request MusicBrainz `release-groups` and retain only `primary-type=Album`, preventing future label imports from admitting Singles/EPs/compilations.
+- Verification: `seed_cards.json` parses as 6,052 cards; every row has five fields and 1–5 integer axes; no case-folded artist+album duplicates; `node --check` passes for every card-pool script.
+- Playback audit of the 486 surviving cards added in this expansion: 363 have a resolved `/yt-music-link` source (347 YouTube Music album playlists, 16 verified full-album videos). 123 resolve to no YouTube URL. The deployed Spotify endpoint returned no URL for all 486 and `/itunes-album-preview` returned HTTP 404 for all 486, so the unresolved 123 currently have no player fallback. Kept those album cards rather than deleting legitimate releases solely for catalog availability.
+
 ### 2026-07-22｜Disques Vogue 精選 20 張爵士（曲風先篩選再選卡）
 
 - Repo：`dip-vinyl-shop`
