@@ -11,6 +11,9 @@ const RARITY = score => score >= 10 ? 'legendary' : score >= 8 ? 'epic' : score 
 const TIERS = new Set(['hall', 'pearl', 'heresy']);
 const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
 const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual']);
+// 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
+const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
+const EXCEPTION_GENRES = new Set(['electronic']);
 const PREVIEW_SOURCES = new Set(['apple', 'youtube']);
 const BANNED = /(融合多種元素|具有代表性|層次豐富|傑作|必聽|里程碑|獨樹一格)/;
 const CJK = /[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\uac00-\ud7af]/;
@@ -124,7 +127,21 @@ for (let index = 0; index < albums.length; index++) {
   const identity = row?.identity;
   if (!isObj(identity)) err(label, '缺 identity');
   else {
-    if (identity.releaseType !== 'Album') err(label, 'identity.releaseType 必須是 Album');
+    if (identity.releaseType === 'Album') {
+      // 正規專輯：照原規則
+    } else if (EXCEPTION_RELEASE_TYPES.has(identity.releaseType)) {
+      // 曲風例外（白名單制）：非 Album 只開放給特定曲風，且走精選制
+      if (!EXCEPTION_GENRES.has(identity.genreException)) {
+        err(label, `releaseType=${identity.releaseType} 需要 genreException 在白名單內（目前開放：${[...EXCEPTION_GENRES].join('、')}）`);
+      }
+      if (charCount(identity.exceptionReason) < 12) err(label, '非 Album 例外必須在 identity.exceptionReason 留下具體歷史地位理由');
+      const ev = identity.exceptionEvidenceUrls;
+      if (!Array.isArray(ev) || ev.filter(u => isHttps(u)).length < 2) {
+        err(label, '非 Album 例外採精選制：identity.exceptionEvidenceUrls 至少需要兩個 HTTPS 證據網址');
+      }
+    } else {
+      err(label, `identity.releaseType 必須是 Album，或白名單曲風的例外類型（${[...EXCEPTION_RELEASE_TYPES].join('／')}）`);
+    }
     if (identity.aliasesChecked !== true) err(label, '必須完成跨文字系統／artist-credit 別名檢查');
     if (charCount(identity.aliasReview) < 10) err(label, 'identity.aliasReview 必須留下人工檢查結論');
   }

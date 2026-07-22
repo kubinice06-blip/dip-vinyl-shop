@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜上架公式新增「曲風 release type 例外」白名單（電子樂開放 EP／Single／DJ-mix）
+
+- Repo：`dip-vinyl-shop`
+- 背景：電子擴充前分析（電子現約 1028 張、564 藝人），Detroit/Chicago 起源與工業／synth-pop 根源是最大缺口，但大量經典是 12 吋單曲／EP／DJ mix，被「只收 primary-type=Album」擋掉。店主核定：只對電子樂開門，其他曲風未來偵測到同類文化再逐一指定；不開單一藝人精選輯窄門（Compilation 一律仍不收）。
+- 改動：
+  1. `ALBUM_ONBOARDING.md` 新增 §5.5「曲風 release type 例外（白名單制）」：白名單目前僅 `electronic`；開放 `EP`／`Single`／`DJ-mix`（DJ mix 限 DJ-Kicks、fabric 等公認系列）；manifest `identity` 需多填 `genreException`／`exceptionReason`／`exceptionEvidenceUrls`（≥2 個 HTTPS 證據網址，精選制）；其餘流程與正規專輯完全相同。
+  2. `scripts/verify-album-onboarding.mjs`：新增 `EXCEPTION_RELEASE_TYPES`／`EXCEPTION_GENRES` 常數與對應驗證分支；非白名單曲風、缺理由、證據不足兩個網址都會 error。
+- 主要檔案：`ALBUM_ONBOARDING.md`、`scripts/verify-album-onboarding.mjs`
+- 驗證：`node --check` 通過；以假 manifest 實測五種路徑（合法例外 0 error、缺 genreException、白名單外曲風、證據只 1 個、Compilation）全部按預期擋下或放行。
+- 附帶發現：卡池 Jarre 藝人名混用兩種連字號（`Jean-Michel Jarre` 與 U+2010 版本），電子批次去重時要正規化。
+
 ### 2026-07-22｜對手虛晃選牌、數值輾壓與戰鬥酬勞平衡
 - Repo：`dip-vinyl-shop`
 - 對手 AI 改為先決定氣場與是否虛晃，取得最終出招屬性後才從手牌挑該軸最高星牌；同星再取總星較高者。`battle.html` 與 `roguelike.html` 同步修正，不再為了虛晃拿低星牌硬打。
