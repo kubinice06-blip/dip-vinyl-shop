@@ -529,7 +529,7 @@
       <li><b>【大眾共鳴】經典 剋 硬蕊</b>：經得起時間的歷史地位，正面壓過前衛的晦澀與抗拒感——再前衛，也撼動不了公認的偉大。</li>
       <li><b>【降維打擊】硬蕊 剋 冷門</b>：用前衛的硬實力與混亂，拆穿小眾「只是沒人聽過」的神祕防線——稀有不等於厲害。</li>
     </ul>
-    <p style="color:var(--gray);font-size:10px">⚖ <b>數值輾壓翻盤</b>：就算你屬性剋對方，只要對方星數比你<b>高 3 顆以上</b>，相剋無效、改比星數 → 由高星方取勝。（例：你出冷門 2★ 剋對方經典 5★，差 3★ → 反而算你輸。）</p>
+    <p style="color:var(--gray);font-size:10px">⚖ <b>數值輾壓翻盤</b>：就算你屬性剋對方，只要對方星數比你<b>高 2 顆以上</b>，相剋無效、改比星數 → 由高星方取勝。（例：你出硬蕊 2★ 剋對方冷門 4★，差 2★ → 反而算你輸。）</p>
 
     <h3>相生（連段充氣勢）· 經 ▸ 冷 ▸ 硬 ▸ 經</h3>
     <p>宣告屬性接續上一手 → <em>充氣勢</em>（2 連 +1、3 連 +2，第 4 環起停、須斷開重鋪）。這條鏈是一個聽眾的進化史：</p>
@@ -542,6 +542,7 @@
 
     <h3>純比星（無相剋時）</h3>
     <p>比面板星數，高星方<b>扣對手血＝星數差</b>、並充<em>氣勢 +1</em>；平手雙方氣勢 +1、不扣血。</p>
+    <p style="color:var(--gray);font-size:10px">全 1 弱牌沒有數值輾壓豁免：仍可用低成本的經典回血、冷門充氣勢、相生連段，或剋制 1～2★ 招式；但不會因為弱而反過來成為萬用剋制牌。</p>
 
     <h3>屬性專屬效果（宣告即觸發）</h3>
     <ul>
@@ -674,7 +675,7 @@ let CFG = {
   beats:{ obscurity:'classic', classic:'accessibility', accessibility:'obscurity' }, // key 剋 value
   chainNext:{ classic:'obscurity', obscurity:'accessibility', accessibility:'classic' }, // 相生，與 beats 反向
   qiMax:6,            // 氣勢槽滿 → 可發動品味輾壓
-  valueCrush:3,       // 數值輾壓翻盤：相剋方星數比被剋方低≥此值 → 相剋失效，改高星方純比星取勝
+  valueCrush:2,       // 數值輾壓翻盤：相剋方星數比被剋方低≥此值 → 相剋失效，改高星方純比星取勝
   qiCounter:2,        // 相剋勝充能（3→2：兩剋就輾壓循環太快，改三剋一輾）
   qiCounterLoser:1,   // 被剋方安慰充能（不再倒扣 → 槽永遠向前，可逆轉）
   qiValue:1,          // 數值勝充能
@@ -1117,7 +1118,8 @@ function startTurn(){
   G.busy=false; G.sel=null;
   const plan=aiPlan();
   if(!plan.best){ G.pendingE={ pass:true }; render(); renderTell(); return; } // 電腦無牌（疲勞）
-  let card=plan.best.card, attr=plan.best.attr, tell=plan.best.attr;
+  const tell=plan.best.attr;
+  let attr=tell;
   let eUlt=G.e.qi>=CFG.qiMax;
   // 大幅領先時電腦會「多晾你一手」不急著輾壓（貓玩老鼠），玩家多一回合掙扎 → 翻盤窗口
   if(eUlt && Math.random() < mercyLevel()*0.7) eUlt=false;
@@ -1125,10 +1127,11 @@ function startTurn(){
   const feintOdds = (G.diff==='hard' ? 0.75 : 0.5) * (1 - mercyLevel()*0.8);
   if(!eUlt && G.diff!=='easy' && G.pCounteredTellLast && Math.random()<feintOdds){
     // 玩家上手照提示剋 → 虛晃：改打「能剋掉玩家預期 counter」的屬性（小白不會虛晃）
-    const bait=COUNTER_OF[COUNTER_OF[tell]];
-    const alt=plan.scored.filter(x=>x.attr===bait).sort((a,b)=>b.s-a.s)[0];
-    if(alt){ card=alt.card; attr=alt.attr; }
+    attr=COUNTER_OF[COUNTER_OF[tell]];
   }
+  // 最終屬性（含虛晃）確定後才選牌：固定拿手上該軸最高星，避免為了騙招硬打低星牌。
+  const card=bestEnemyCardFor(attr);
+  if(!card){ G.pendingE={ pass:true }; render(); renderTell(); return; }
   G.e.hand=G.e.hand.filter(c=>c!==card);
   const flavor = eUlt ? pick(ULT_FLAVOR) : pick(TELL_FLAVOR[tell]); // 開局抽一句，避免重繪跳字
   G.pendingE={ card, attr, tell, ult:eUlt, flavor };
@@ -1185,11 +1188,19 @@ function mercyLevel(){
 }
 
 // ===== AI 計劃：依難度評分（easy 近乎隨機 / normal 現況 / hard 精準）=====
+function bestEnemyCardFor(attr){
+  let best=null;
+  for(const card of G.e.hand){
+    if(!best || card[attr]>best[attr] || (card[attr]===best[attr] && cardTotal(card)>cardTotal(best))) best=card;
+  }
+  return best;
+}
 function aiPlan(){
   const diff = G.diff || 'normal';
   const mercy = diff==='easy' ? 0 : mercyLevel();   // 小白本來就隨機，不用再鈍
-  const hand=G.e.hand; let best=null; const scored=[];
-  for(const card of hand){ for(const attr of ATTRS){
+  let best=null;
+  for(const attr of ATTRS){
+    const card=bestEnemyCardFor(attr); if(!card) continue;
     let s=1;
     const chainHit = G.e.last!==null && CFG.chainNext[G.e.last]===attr;
     if(diff==='easy'){
@@ -1210,10 +1221,9 @@ function aiPlan(){
       s += Math.random()*4.0;
     }
     if(mercy>0) s += Math.random()*6*mercy;          // 大幅領先 → 評分摻噪音，出招像「玩心大起」的鈍
-    scored.push({card,attr,s});
     if(!best||s>best.s) best={card,attr,s};
-  }}
-  return { best, scored };
+  }
+  return { best };
 }
 
 // ===== 相剋 / 數值 → 氣勢與滲透（不含連段、不含王牌 phase0）=====

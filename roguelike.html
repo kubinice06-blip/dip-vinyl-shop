@@ -580,6 +580,7 @@ const CFG = {
   qiMax:6,
   qiCounter:3, qiCounterLoser:1, qiValue:1, qiValueLoser:0, qiTie:1,
   qiChain2:1, qiChain3:2, qiChainCap:4,
+  valueCrush:2,                          // 被剋方高 2★ 以上 → 相剋失效，改純比星
   valueDmg:1, ultimate:6, pUltimate:4,   // 玩家輾壓基礎傷害較低（敵方仍 6）→ 輾壓不再一招定生死
   hitQiDrain:1, hitQiDrainAcc:2,         // 被攻擊掉氣勢：一般 -1、被【硬蕊】-2（敵我皆適用）
   attrFx:{ classic:1, obscurity:1, accessibility:1 },
@@ -914,6 +915,7 @@ let CASH = {
   base:4,          // 每贏一場基本收入
   perDepth:0.5,    // 深度加成：+floor(depth×perDepth)（越深越好賺）
   bossBonus:12,    // 擊敗傳說藏家額外
+  fightMul:1.5,    // 每場總酬勞 +50%（基本＋深度＋藏家加碼一起乘）
   recordBonus:25,  // 破最深紀錄獎金（趟結算時）
   repairT1:0.6,    // 每修 1 點耐久的工錢（tier1）
   repairT2:0.9,    // 進階件工錢較貴（tier2）
@@ -926,7 +928,10 @@ function metaWearOf(id){ return (META&&META.relicWear&&META.relicWear[id])||0; }
 function metaBroken(id){ return WEAR.enabled && WEAR.grades[gradeIndex(metaWearOf(id))].mul===0; }
 function duraOf(w){ return Math.max(0, 100-Math.round(w)); }
 function repairCost(id, amt){ const r=relicById(id); const rate=(r&&(r.tier||1)>1)?CASH.repairT2:CASH.repairT1; return Math.max(1, Math.ceil(amt*rate)); }
-function fightCash(depth, boss){ return Math.max(0, Math.round(CASH.base + Math.floor(depth*CASH.perDepth) + (boss?CASH.bossBonus:0))); }
+function fightCash(depth, boss){
+  const raw=CASH.base + Math.floor(depth*CASH.perDepth) + (boss?CASH.bossBonus:0);
+  return Math.max(0, Math.round(raw*(CASH.fightMul||1)));
+}
 // ---------- 發燒配件等級（Lv.1~5，存 META.relicLv、跨趟保留；毀損重新入手也保留等級）----------
 const RELIC_LV_MAX = 5;
 function relicLvOf(id){ const lv=(META&&META.relicLv&&META.relicLv[id])||1; return Math.min(RELIC_LV_MAX, Math.max(1, Math.round(lv))); }
@@ -2543,15 +2548,25 @@ function mercyLevel(){
 // 敵方輾壓基礎傷害隨深度爬：暖身 4 → 中段 5 → 第 5 場起才完整 6（前期不再一發半血蒸發）
 function eUltBase(){ const d=RUN?RUN.depth:5; return CFG.ultimate - (d<3?2 : d<5?1 : 0); }
 
-// AI：暗定出招 + 露氣場提示（照剋會虛晃）
+// 最終屬性確定後選牌用：先比該軸星數，同星再取總星較高者。
+function bestEnemyCardFor(attr){
+  let best=null;
+  for(const card of G.e.hand){
+    if(!best || card[attr]>best[attr] || (card[attr]===best[attr] && enemyStarSum(card)>enemyStarSum(best))) best=card;
+  }
+  return best;
+}
+
+// AI：先決定氣場屬性；是否虛晃在 startTurn 決定，最後才依最終屬性拿牌。
 function aiPlan(){
-  const diff=G.diff, hand=G.e.hand; let best=null;
+  const diff=G.diff; let best=null;
   const depth = RUN ? RUN.depth : 1;
   const mercy = diff==='easy' ? 0 : mercyLevel();   // 生手本來就隨機，不用再鈍
   // 讀心：玩家常「順著相生」接招（chainNext），對手就專挑能剋掉玩家預期出招的屬性
   const predicted = G.p.last!==null ? CFG.chainNext[G.p.last] : null;
   const wantCounter = predicted ? COUNTER_OF[predicted] : null;   // 能剋掉玩家預期招的屬性
-  for(const card of hand){ for(const attr of ATTRS){
+  for(const attr of ATTRS){
+    const card=bestEnemyCardFor(attr); if(!card) continue;
     let s=1; const chainHit=G.e.last!==null && CFG.chainNext[G.e.last]===attr;
     // 星數是主要依據（權重＞隨機噪音）：不再出現「手上有經典5卻打冷門1」的亂出
     if(diff==='easy'){ s+=card[attr]*0.45 + Math.random()*2.4; }
@@ -2563,13 +2578,8 @@ function aiPlan(){
       if(card.ace==='heresy')s+=(G.p.qi>=5?3:.3); if(card.ace==='hall')s+=(G.p.qi>=4?1.5:.5); if(card.ace==='pearl')s+=.8; s+=Math.random()*1.4; }
     if(mercy>0) s += Math.random()*5*mercy;   // 大幅落後 → 對手評分摻噪音，出招像「玩心大起」的鈍
     if(!best||s>best.s) best={card,attr,s};
-  }}
+  }
   return best;
-}
-// 虛晃改招後換牌用：手上該屬性星數最高的牌
-function bestEnemyCardFor(attr){
-  let b=null; for(const c of G.e.hand){ if(!b || (c[attr]||0)>(b[attr]||0)) b=c; }
-  return b;
 }
 
 function startTurn(){
@@ -2583,10 +2593,11 @@ function startTurn(){
   let plan=aiPlan();
   if(!plan){ refillDeck('e'); drawCard(G.e); plan=aiPlan(); }   // 對手無牌 → 從卡池補牌續戰（不速判結束）
   if(!plan){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }   // 補牌後仍無（理論上不會）→ 保險速判
-  let attr=plan.attr, card=plan.card, vague=false; const tell=plan.attr;
+  let attr=plan.attr, vague=false; const tell=plan.attr;
+  const tellCard=bestEnemyCardFor(tell);
   const d=RUN.depth, mercy=mercyLevel();
   const fd = Math.max(0, 1 - relicFx('feintDown')/100);   // 老闆的名片：對手虛晃機率打折
-  if(G.diff!=='easy' && !plan.card.ace){
+  if(G.diff!=='easy' && tellCard && !tellCard.ace){
     // 玩家上手照剋 → 虛晃反咬（玩家大幅劣勢時偶爾放過，隱形 DDA）
     if(G.pCounteredTellLast && Math.random() >= mercy*0.7 && Math.random()<fd){ attr = COUNTER_OF[COUNTER_OF[tell]]; }
     else {
@@ -2598,8 +2609,9 @@ function startTurn(){
     // hard 深層：一定機率完全不露氣場（深不可測），玩家只能自己讀局
     if(G.diff==='hard' && Math.random() < Math.min(.5, .08 + Math.max(0,d-5)*.06) * (1 - mercy*0.6)) vague=true;
   }
-  // 虛晃改了屬性 → 牌也要換成手上該屬性最強的（原本硬拿原牌打，才會出現「冷門1也照打」）
-  if(attr!==plan.attr){ const alt=bestEnemyCardFor(attr); if(alt) card=alt; }
+  // 氣場與虛晃都定案後才選牌：拿最終屬性最高星的牌，不會再為騙招犧牲牌面數值。
+  const card=bestEnemyCardFor(attr);
+  if(!card){ (G.p.hp>=G.e.hp) ? winFight() : loseFight(); return; }
   let eUlt = G.e.qi>=CFG.qiMax;
   if(eUlt && Math.random() < mercy*0.65) eUlt=false;   // 玩家瀕死劣勢 → 對手「留一手」不急著輾壓，給反殺窗口
   G.pendingE = { card, attr, tell, ult:eUlt, vague };
@@ -2721,7 +2733,9 @@ function openRules(){
           <li><b>經典 剋 硬蕊〔大眾共鳴〕</b>：經得起時間的歷史地位，正面壓過前衛的晦澀抗拒——再前衛也撼動不了公認的偉大。</li>
           <li><b>硬蕊 剋 冷門〔降維打擊〕</b>：用前衛的硬實力與混亂，拆穿小眾「只是沒人聽過」的神祕防線——稀有不等於厲害。</li>
         </ul></li>
+      <li><b>數值輾壓翻盤</b>：被剋方只要高 <b>2★ 以上</b>，相剋不成立、改成純比星。（例：硬蕊 2★ 對冷門 4★，雖然屬性相剋，仍由冷門 4★ 勝。）</li>
       <li><b>純比星</b>：沒相剋就比星數，差幾星扣幾血，贏家氣勢 +1；平手雙方氣勢 +1。</li>
+      <li><b>全 1 弱牌</b>不會偷偷免除數值輾壓；它是刻意的牌組負擔，可拿來觸發低成本牌型效果、在輾壓時割捨，或用升級選項「丟最弱盤」淘汰。這樣保留弱牌的去留抉擇，也不會讓 1★ 反過來成為最佳剋制牌。</li>
       <li><b style="color:var(--qi)">相生連段</b>（虛線⇢）：照 經典→冷門→硬蕊→經典 的順序接招：2 連氣勢 +1、3 連 +2（連過長不再加）。這條鏈是一個聽眾的<b>進化史</b>：
         <ul style="padding-left:16px;margin:3px 0 0;list-style:'⇢ '">
           <li><b>經典 → 冷門〔品味拓荒〕</b>：大眾名盤聽到審美疲勞，轉身往地下挖掘未知私盤。</li>
@@ -2878,6 +2892,9 @@ function resolveClash(pCard,pAttr,eCard,eAttr){
   let pC=CFG.beats[pAttr]===eAttr, eC=CFG.beats[eAttr]===pAttr;
   if(pC&&eCard.ace) pC=false;       // 霸權：被剋方王牌 → 取消相剋
   if(eC&&pCard.ace) eC=false;
+  // 數值輾壓翻盤：被剋方高 2★ 以上，相剋不成立，改走純比星。
+  if(pC && (eF-pF)>=CFG.valueCrush) pC=false;
+  if(eC && (pF-eF)>=CFG.valueCrush) eC=false;
   const r={ pdQi:0,edQi:0,dmgToP:0,dmgToE:0,kind:'tie',by:null,attr:null,pF,eF };
   if(pC){ r.pdQi+=CFG.qiCounter+(pCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus*(relicFx('aceDouble')?2:1):0); r.edQi+=CFG.qiCounterLoser; r.dmgToE+=pF; r.kind='counter'; r.by='p'; r.attr=pAttr; }
   else if(eC){ r.edQi+=CFG.qiCounter+(eCard.ace==='pearl'?CFG.ace.pearl.counterQiBonus:0); r.pdQi+=CFG.qiCounterLoser; r.dmgToP+=eF; r.kind='counter'; r.by='e'; r.attr=eAttr; }
@@ -3903,6 +3920,7 @@ function applyConfig(cfg){
     if(typeof cfg.pUltimate==='number') CFG.pUltimate=cfg.pUltimate;
     if(typeof cfg.hitQiDrain==='number') CFG.hitQiDrain=cfg.hitQiDrain;
     if(typeof cfg.hitQiDrainAcc==='number') CFG.hitQiDrainAcc=cfg.hitQiDrainAcc;
+    if(typeof cfg.valueCrush==='number') CFG.valueCrush=cfg.valueCrush;
     if(cfg.runXp) RXP=Object.assign({},RXP,cfg.runXp);
     if(cfg.metaXp) MXP=Object.assign({},MXP,cfg.metaXp);
     if(cfg.classes && typeof cfg.classes==='object') CLASSES=cfg.classes;
@@ -3934,7 +3952,7 @@ function applyConfig(cfg){
     }
     // 現金系統：淺層覆寫（roguelike.cash）
     if(cfg.cash && typeof cfg.cash==='object'){
-      ['base','perDepth','bossBonus','recordBonus','repairT1','repairT2','tuneStep','upT2']
+      ['base','perDepth','bossBonus','fightMul','recordBonus','repairT1','repairT2','tuneStep','upT2']
         .forEach(k=>{ if(typeof cfg.cash[k]==='number') CASH[k]=cfg.cash[k]; });
       if(Array.isArray(cfg.cash.upCost) && cfg.cash.upCost.length) CASH.upCost=cfg.cash.upCost;
     }
