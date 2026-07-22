@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜新增專輯改為單一完整上架公式
+- Repo：`dip-vinyl-shop`、`dip-vinyl-worker`、工作區 Claude／Codex skills
+- 店主要求之後只要新增專輯，一律完成「身分／跨文字系統去重 → 封面 → 三軸 → 頂點卡資格判定 → 查證型繁中簡介 → 固定試聽／無來源狀態 → 上架 → 線上回讀」，不得只加 seed 或封面後再慢慢補。
+- 新增 `ALBUM_ONBOARDING.md` 作為唯一完成契約與 manifest schema。流程改為先寫 `card_catalog`、Worker 簡介 KV、`album_overrides`，全部回讀成功後才把 `seed_cards.json`／`apex_pool.json` 當上架開關；頂點卡逐張評估，但 legendary 或單軸 5 分不會自動升格。
+- 新增 prepare／published 雙階段 gate `scripts/verify-album-onboarding.mjs`：驗身分、封面 HTTP、三軸／rarity、頂點條件、80–180 字簡介與兩個來源、Apple／YouTube 固定試聽；published 模式另回讀 seed／apex、Firestore、`/album-desc` KV cache 與網址。
+- Worker 新增 `scripts/desc-gen/from_onboarding_manifest.mjs`，可在 seed 曝光前直接把已完成 manifest 轉為 `desc2:`／`desc4:` KV bulk，避免既有 `build_tasks.mjs` 必須先讀 seed 而顛倒發布順序。
+- `AGENTS.md`／`CLAUDE.md`（工作區、shop、worker）與 `.agents`／`.claude` 的 `dip-card-pool-expand` 都加入強制路由；`dip-album-intro` 明確只處理既有商品／reels 的獨立補文。Codex 與 Claude 共用資料查證、文案規格與 gate，品質不綁特定模型名稱。
+- 主要檔案：`ALBUM_ONBOARDING.md`、`scripts/verify-album-onboarding.mjs`、worker `scripts/desc-gen/from_onboarding_manifest.mjs`、兩 repo 與工作區規則、兩套 skill 鏡像
+- 驗證：完整 prepare manifest 0 error、不完整 manifest 正確被擋；mock Firestore／Worker 加真實 HTTPS URL 的 published gate 0 error；manifest→KV 轉檔正確分流 `desc2`／`desc4`；兩份 card-pool skill SHA-256 完全一致、frontmatter／名稱／描述／500 行上限通過等價 quick validation；所有鏡像 card-pool scripts 與新增兩支腳本 `node --check` 通過。
+
 ### 2026-07-22｜固定試聽改為完整零 live provider 查詢，補齊無來源狀態與管理安全
 - Repo：`dip-vinyl-shop`
 - 店主確認目標：本輪新增專輯要比照商品固定試聽的原則，播放／開介紹時直接讀預先覆核的來源，不再每次臨時搜尋 Apple、YouTube、Spotify 或 Bandcamp；無可靠來源者寧可不播，不可為湊試聽誤配。
