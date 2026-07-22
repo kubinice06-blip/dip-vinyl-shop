@@ -1,5 +1,32 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜Disques Vogue 精選 20 張爵士（曲風先篩選再選卡）
+
+- Repo：`dip-vinyl-shop`
+- 店主指示 Vogue 的爵士很值得收，但只要 20 張精華即可。
+- **驗證了先前的預判**：Vogue（1947–73 法國全類型國家級廠牌）直接反查 680 候選 →
+  評分排序前 60 名幾乎全是法語香頌／流行／不相干授權再版（The Doors、ABBA、Lionel
+  Richie、Sugarhill Gang），真正的爵士（Monk、Garner、Django Reinhardt、Sidney
+  Bechet）散落其中只占約 1/6。
+- **改用「先篩曲風、再選卡」的新做法**：不直接對評分排序前 N 名解封面，而是先對
+  `classic≥4` 的 152 張候選逐一打 `/album-genres`，篩出 45 張帶 `jazz` 標籤的，
+  再依 classic／listeners 排序取前 20 → 解封面 → 去重。這個做法比較適合「廠牌內容
+  龐雜、只要抓出其中一個曲風」的情況，跟波蘭 Muza 那次「改查系列」是不同的解法，
+  視廠牌實際情況選用。
+- 45 張候選裡有大量迪吉·葛拉斯彼／薛尼·貝雪的巴黎現場錄音（1948–1954 這幾位美國
+  爵士樂手常駐巴黎演出，正是 Vogue 廠牌抓到這些錄音的原因）。
+- **抓到一張「樂團名＝專輯名」自我同名卡**：`Experience - Experience`（1971 年同名
+  法國爵士搖滾團）——沿用三盲鼠那次的規則直接排除，不等實際發生 YT 誤配才處理。
+  用下一名候選 `Don Byas - Tenderly` 遞補。
+- 封面命中率偏低（首輪 17/20，85%；3 張沒中又逐輪候補到剛好 20 張，總共測了近 30 張
+  候選才湊齊）——這批多是罕見的 1950 年代巴黎現場錄音，CAA／Bandcamp 收錄率本來就低。
+- `seed_cards.json` 6048 → **6068 張**。20 筆封面＋三軸＋rarity 已 PATCH 進 Firestore
+  `card_catalog`。
+- 主要檔案：`seed_cards.json`
+- 驗證：`seed_cards.json` parse 通過、6068 張全部 5 欄位且三軸皆 1–5 整數；20 張與現有
+  卡池無重複；Firestore 抽驗 3 筆（Monk、Django Reinhardt、Bechet）封面圖實抓 HTTP 200。
+- 待辦：爵士曲風目前約 1470 張（1450 + 20），距 1500 目標僅差約 30 張。
+
 ### 2026-07-22｜法國／德國三廠牌：BYG／Saravah／MPS 共 108 張
 
 - Repo：`dip-vinyl-shop`
