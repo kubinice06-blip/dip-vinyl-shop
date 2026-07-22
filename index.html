@@ -787,7 +787,8 @@
   <p>© 2026</p>
 </footer>
 
-<script src="dip-player.js?v=29"></script>
+<script src="card-preview-status.js?v=1"></script>
+<script src="dip-player.js?v=30"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1386,9 +1387,12 @@
           setDoc(doc(db, 'collections', currentUser.uid, 'cards', c.cardId), { coverUrl }, { merge: true }).catch(() => {});
         }
       }
-      // 固定試聽連結：存在 album_overrides（僅管理員可寫），前台只讀不查——
-      // 串流查無的盤（如三盲鼠）就靠這條，且不會發生即時比對配到別張專輯。
-      return { ...c, coverUrl, ratings, rarity, previewUrl: ov?.previewUrl || '', descOverride: ov?.desc || neo?.desc || null };
+      // 固定試聽連結：存在 album_overrides（僅管理員可寫）。有固定來源或已人工標記
+      // 無來源的卡，前台都不再即時搜尋，避免 API 流量與錯配；三盲鼠維持 disabled。
+      const previewUrl = ov?.previewUrl || '';
+      const previewStatus = ov?.previewStatus || window.DipPreviewStatus?.[c.cardId] || '';
+      const previewUnavailable = previewStatus === 'unavailable' || previewStatus === 'disabled';
+      return { ...c, coverUrl, ratings, rarity, previewUrl, previewStatus, previewUnavailable, descOverride: ov?.desc || neo?.desc || null };
     }));
     drawCollection();
   }
@@ -1496,7 +1500,13 @@
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
-    void window.DipPlayer.playAlbum({ artist: card.artist, album: card.album, prefer:'itunes', previewUrl: card.previewUrl || '' }).then(ok => {
+    void window.DipPlayer.playAlbum({
+      artist: card.artist,
+      album: card.album,
+      prefer:'itunes',
+      previewUrl: card.previewUrl || '',
+      fixedOnly: !!card.previewUrl || !!card.previewUnavailable
+    }).then(ok => {
       if (ok) return;
       // 失敗代碼幫店主回報真機到底卡在哪一層（S1 封鎖／S3 查無／S5 音檔錯誤…）。
       const code = lastPlayerState.code ? `（代碼 ${lastPlayerState.code}）` : '';
@@ -1507,7 +1517,9 @@
   async function prefetchCollection(records) {
     const token = ++collectionPrefetchToken;
     for (let start = 0; start < records.length && token === collectionPrefetchToken; start += 4) {
-      await Promise.allSettled(records.slice(start, start + 4).map(card => window.DipPlayer?.prefetch({ artist:card.artist, album:card.album, spotify:false, youtube:true, itunes:true })));
+      await Promise.allSettled(records.slice(start, start + 4)
+        .filter(card => !card.previewUrl && !card.previewUnavailable)
+        .map(card => window.DipPlayer?.prefetch({ artist:card.artist, album:card.album, spotify:false, youtube:true, itunes:true })));
       if (start + 4 < records.length) await new Promise(resolve => setTimeout(resolve, 80));
     }
   }
@@ -1597,7 +1609,15 @@
         .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
         .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
     }
-    // 聆聽連結（取 Spotify 直連，其餘搜尋連結保證可點）
+    // 已有固定試聽或已人工確認無來源：直接用 Firestore 結果，不再因每次開介紹
+    // 重新打 Spotify／Bandcamp API。平台搜尋按鈕本身只是連結，使用者點擊才會開啟。
+    const streamEl = document.getElementById('cdStreaming');
+    if (c.previewUrl || c.previewUnavailable) {
+      const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(c.previewUrl || '') ? c.previewUrl : '';
+      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      return;
+    }
+    // 尚未人工覆核的舊卡維持原本行為：取 Spotify 直連，其餘搜尋連結保證可點。
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
       .then(r => r.ok ? r.json() : {})
       .then(sr => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); resolveBandcampBtn(c.artist, c.album, el); } })

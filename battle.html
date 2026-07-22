@@ -564,7 +564,8 @@
   </div>
 </div>
 
-<script src="dip-player.js?v=29"></script>
+<script src="card-preview-status.js?v=1"></script>
+<script src="dip-player.js?v=30"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -603,13 +604,36 @@ function setBattleMusic(enabled){
   syncBattleMusicToggle();
   if(!battleMusicOn) window.DipPlayer?.stop();
 }
+const battleDirectPreview = url => {
+  try { return /\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/i.test(new URL(url || '').pathname); }
+  catch(e) { return false; }
+};
+async function battlePreviewMeta(card){
+  if(card.previewResolved) return card;
+  const id=cardIdOf(card.artist,card.album);
+  const ov=await getOverride(id);
+  card.previewUrl=ov?.previewUrl||'';
+  card.previewStatus=ov?.previewStatus||window.DipPreviewStatus?.[id]||'';
+  card.previewResolved=true;
+  return card;
+}
 function playBattleAlbum(card){
   if(!battleMusicOn || !card || !window.DipPlayer) return false;
   try {
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
-    void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
-    void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'}).catch(()=>{});
+    void (async()=>{
+      const meta=await battlePreviewMeta(card);
+      if(meta.previewUrl){
+        // 已有固定 YouTube 的卡不再另查 Apple；對戰頁因音量不可控而維持靜音。
+        if(!battleDirectPreview(meta.previewUrl)){ window.DipPlayer.stop?.({fade:true}); return; }
+        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,fixedOnly:true});
+        return;
+      }
+      if(meta.previewStatus==='unavailable'||meta.previewStatus==='disabled'){ window.DipPlayer.stop?.({fade:true}); return; }
+      void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
+      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'});
+    })().catch(()=>{});
     return true;
   }
   catch(e) { return false; }
@@ -921,20 +945,26 @@ const neoAceOf = (artist,album) => { const n = NEOCLASSIC_MAP[_neoNorm(artist)+'
 // ───────── 唱片櫃 / 評分讀取 ─────────
 const cardIdOf = (artist,album) => ((artist||'')+'|'+(album||'')).toLowerCase().replace(/\//g,'-').trim();
 function clampStat(v){ return Math.max(1, Math.min(5, Math.round(Number(v)||1))); }
+const overrideCache = new Map();
 async function getOverride(id){
-  try { const s=await getDoc(doc(db,'album_overrides',id)); return s.exists()?s.data():null; } catch(e){ return null; }
+  if(overrideCache.has(id)) return overrideCache.get(id);
+  const pending=getDoc(doc(db,'album_overrides',id)).then(s=>s.exists()?s.data():null).catch(()=>null);
+  overrideCache.set(id,pending);
+  return pending;
 }
 async function fetchRating(artist,album){
   try {
     const ov = await getOverride(cardIdOf(artist,album));
+    const previewId=cardIdOf(artist,album);
+    const preview = { previewUrl:ov?.previewUrl||'', previewStatus:ov?.previewStatus||window.DipPreviewStatus?.[previewId]||'', previewResolved:true };
     // 後台校正設了頂點級別 → 直接當王牌（單軸 7 星），不需數值評分
     const ovTier = ov && ov.tier && ACE_STATS[ov.tier] ? ov.tier : null;
-    if(ovTier) return { tier:ovTier, ...ACE_STATS[ovTier] };
+    if(ovTier) return { tier:ovTier, ...ACE_STATS[ovTier], ...preview };
     const res=await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
     let r = res.ok ? await res.json() : null;
     if(ov){ r=r||{}; if(ov.classic)r.classic=ov.classic; if(ov.obscurity)r.obscurity=ov.obscurity; if(ov.accessibility)r.accessibility=ov.accessibility; }
     if(!r || r.classic==null || r.obscurity==null || r.accessibility==null) return null;
-    return { classic:clampStat(r.classic), obscurity:clampStat(r.obscurity), accessibility:clampStat(r.accessibility) };
+    return { classic:clampStat(r.classic), obscurity:clampStat(r.obscurity), accessibility:clampStat(r.accessibility), ...preview };
   } catch(e){ return null; }
 }
 async function getMyCollection(){

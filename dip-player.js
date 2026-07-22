@@ -356,7 +356,8 @@
     try { return new URL(url).pathname.match(/\/album\/([a-zA-Z0-9]+)/)?.[1] || ''; } catch (_) { return ''; }
   }
 
-  // 卡片可在 card_catalog 存一條固定試聽連結（previewUrl），不必每次即時查來源。
+  // 卡片可在受管理員寫入規則保護的 album_overrides 存固定試聽連結（previewUrl），
+  // 不必每次即時查來源。不要放在任何人都能寫入的 card_catalog。
   // 兩種型態：
   //   1. 直接音檔（.m4a/.mp3/…）→ 走 Web Audio buffer 路徑，**有淡入淡出、音量可控、iOS 相容**，
   //      對戰／Roguelike 也能用（那兩頁刻意排除 YouTube 正是因為 iframe 音量控不了）。
@@ -914,7 +915,7 @@
     } catch (_) { return false; }
   }
 
-  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '' } = {}) {
+  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '', fixedOnly = false } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return false;
@@ -938,6 +939,15 @@
           emit({ status:'playing', provider:'youtube', artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
           return true;
         }
+      }
+      // 已完成人工覆核的卡片只准用固定來源：連結失效或明確標成無來源時，
+      // 直接停止，不再為同一張卡臨時呼叫 Apple／YouTube／Spotify 搜尋。
+      if (fixedOnly) {
+        if (token === requestId) {
+          setProvider(null);
+          emit({ status:'error', provider:null, artist, album, code:lastFailCode || 'S11', tracks:[], trackId:'' });
+        }
+        return false;
       }
       // 固定連結失效（檔案被刪、影片下架）→ 照舊走原本的來源查詢，不要讓卡片直接沒聲音。
       const entry = linkEntry(artist, album);

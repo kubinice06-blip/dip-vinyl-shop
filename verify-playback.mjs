@@ -152,7 +152,7 @@ class MockYoutubePlayer {
     this.lastLoad = options;
     // Deliberately retain the old video briefly. The player must not report success
     // until getVideoData() identifies the newly requested video.
-    setTimeout(() => { this.videoId = options.videoId; }, 120);
+    setTimeout(() => { this.videoId = typeof options === 'string' ? options : options.videoId; }, 120);
   }
 }
 
@@ -320,6 +320,53 @@ assert.ok(playerSource.includes('const previewReady = primePreviewFromGesture();
 const states = [];
 player.onStateChange(state => states.push({ ...state, at:Date.now() }));
 
+// 人工固定來源必須優先，且 fixedOnly 卡不可因連結失效又偷偷打 live provider。
+const providerLookupCount = () => fetchCalls.filter(url =>
+  url.includes('/itunes-album-preview') || url.includes('/yt-music-link') || url.includes('/spotify-album-link')
+).length;
+let providerCallsBefore = providerLookupCount(), appleSearchesBefore = scriptRequests.length;
+player.unlock({ youtube:false });
+assert.equal(await player.playAlbum({
+  artist:'Pinned Artist', album:'Pinned Direct', prefer:'itunes',
+  previewUrl:'https://audio/pinned-direct.m4a', fixedOnly:true
+}), true);
+assert.equal(states.at(-1).provider, 'itunes');
+assert.equal(previewFetchCalls.at(-1), 'https://audio/pinned-direct.m4a');
+assert.equal(providerLookupCount(), providerCallsBefore);
+assert.equal(scriptRequests.length, appleSearchesBefore);
+player.stop();
+
+providerCallsBefore = providerLookupCount(); appleSearchesBefore = scriptRequests.length;
+player.unlock();
+assert.equal(await player.playAlbum({
+  artist:'Pinned Artist', album:'Pinned YouTube', prefer:'itunes',
+  previewUrl:'https://www.youtube.com/watch?v=CCCCCCCCCCC', fixedOnly:true
+}), true);
+assert.equal(states.at(-1).provider, 'youtube');
+assert.equal(youtubePlayer.getVideoData().video_id, 'CCCCCCCCCCC');
+assert.equal(providerLookupCount(), providerCallsBefore);
+assert.equal(scriptRequests.length, appleSearchesBefore);
+player.stop();
+
+providerCallsBefore = providerLookupCount(); appleSearchesBefore = scriptRequests.length;
+player.unlock({ youtube:false });
+assert.equal(await player.playAlbum({
+  artist:'Pinned Artist', album:'Broken Fixed', prefer:'itunes-only',
+  previewUrl:'https://audio/stale-map.m4a', fixedOnly:true
+}), false);
+assert.equal(states.at(-1).code, 'S10');
+assert.equal(providerLookupCount(), providerCallsBefore, 'broken fixed-only previews do not query providers');
+assert.equal(scriptRequests.length, appleSearchesBefore, 'broken fixed-only previews do not run Apple search');
+player.stop();
+
+// 沒有 fixedOnly 的舊卡維持原本 fallback，確保相容層沒有破壞既有機制。
+player.unlock({ youtube:false });
+assert.equal(await player.playAlbum({
+  artist:'Artist F', album:'Album F', prefer:'itunes-only', previewUrl:'https://audio/stale-map.m4a'
+}), true);
+assert.equal(states.at(-1).trackName, 'F One');
+player.stop();
+
 // 預配對成功時不可再等 Apple 名稱搜尋；開啟與預熱共用同一份音源下載／解碼工作。
 player.unlock({ youtube:false });
 const mappedSearchesBefore = scriptRequests.length;
@@ -464,6 +511,21 @@ assert.equal(states.at(-1).trackName, 'Popular B');
 assert.equal(states.at(-1).tracks.length, 0);
 
 player.stop();
+
+// 三頁都要載入同一份人工稽核狀態；固定／無來源卡不可進首屏 live 預抓。
+const previewStatusContext = { window:{} };
+vm.runInNewContext(fs.readFileSync(new URL('./card-preview-status.js', import.meta.url), 'utf8'), previewStatusContext);
+const previewStatuses = Object.values(previewStatusContext.window.DipPreviewStatus || {});
+assert.equal(previewStatuses.filter(value => value === 'disabled').length, 40);
+assert.equal(previewStatuses.filter(value => value === 'unavailable').length, 101);
+for (const htmlFile of ['index.html', 'battle.html', 'roguelike.html']) {
+  const html = fs.readFileSync(new URL(`./${htmlFile}`, import.meta.url), 'utf8');
+  assert.ok(html.includes('card-preview-status.js?v=1'), `${htmlFile} loads the audited no-live status map`);
+}
+const indexSource = fs.readFileSync(new URL('./index.html', import.meta.url), 'utf8');
+assert.ok(indexSource.includes('.filter(card => !card.previewUrl && !card.previewUnavailable)'), 'fixed cards are excluded from live prefetch');
+assert.ok(indexSource.includes('if (c.previewUrl || c.previewUnavailable)'), 'card details skip provider lookup after preview audit');
+
 console.log('PASS  iTunes preview decodes into Web Audio and has no 100% media-element bypass');
 console.log('PASS  Apple TW localized artists and anniversary remasters match the requested albums');
 console.log('PASS  turntable tracklist exposes tracks and plays a forced selection');
@@ -472,3 +534,5 @@ console.log('PASS  itunes preference falls back to YouTube when Apple metadata i
 console.log('PASS  iTunes random 30-second previews switch to the requested album');
 console.log('PASS  YouTube waits for the requested highest-view video before reporting playback');
 console.log('PASS  YouTube highlight starts at a random valid point and stops after a 30-second window');
+console.log('PASS  fixed card previews bypass live providers, while legacy cards retain fallback');
+console.log('PASS  all audited jazz cards bypass live prefetch and per-detail provider lookup');

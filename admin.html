@@ -823,8 +823,8 @@
       </div>
       <div class="section">
         <div class="section-label">批次固定試聽連結</div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">貼入 JSON 陣列（artist、album、previewUrl）。只接受 HTTPS 的 YouTube／Apple 試聽網址，並以 merge 寫入 album_overrides，不會覆蓋既有介紹、三軸或頂級牌設定。</p>
-        <textarea id="ovPreviewBatch" rows="7" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:11px;line-height:1.6;outline:none;background:#fff;resize:vertical;" placeholder='[{"artist":"Artist","album":"Album","previewUrl":"https://music.youtube.com/playlist?list=..."}]'></textarea>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">貼入 JSON 陣列（artist、album、previewUrl）；查無可靠來源可改填 previewStatus＝unavailable，明確不試聽則填 disabled。網址只接受 HTTPS 的 YouTube／Apple，並以 merge 寫入 album_overrides，不會覆蓋既有介紹、三軸或頂級牌設定。</p>
+        <textarea id="ovPreviewBatch" rows="7" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:11px;line-height:1.6;outline:none;background:#fff;resize:vertical;" placeholder='[{"artist":"Artist","album":"Album","previewUrl":"https://music.youtube.com/playlist?list=..."},{"artist":"No Stream","album":"Album","previewStatus":"unavailable"}]'></textarea>
         <button class="btn-save" id="btnBatchPreview" style="margin-top:10px;">寫入固定試聽連結</button>
         <div class="msg" id="ovPreviewBatchMsg"></div>
       </div>
@@ -858,7 +858,7 @@
           <div class="field"><label>硬蕊度</label><input id="ovAccessibility" type="number" min="1" max="5" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:13px;font-weight:700;outline:none;background:#fff;"></div>
         </div>
         <button class="btn-save" id="btnSaveOverride">儲存校正</button>
-        <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除校正（恢復 AI 版本）</button>
+        <button id="btnClearOverride" style="width:100%;margin-top:8px;background:none;border:1px solid var(--line);color:var(--red);font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px;cursor:pointer;">清除介紹／評分校正（保留固定試聽）</button>
         <div class="msg" id="ovMsg"></div>
       </div>
     </div>
@@ -2990,7 +2990,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('ovClassic').placeholder = 'AI ' + (aiRateR.classic || '?');
     document.getElementById('ovAccessibility').placeholder = 'AI ' + (aiRateR.accessibility || '?');
     setOvTier(ov?.tier || '');
-    msg.textContent = ov ? '已載入（此張已有校正）' : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
+    const hasCorrection = !!(ov && (ov.desc || ov.obscurity || ov.classic || ov.accessibility || ov.tier));
+    msg.textContent = hasCorrection ? '已載入（此張已有校正）'
+      : ov?.previewUrl ? '已載入（已有固定試聽，尚無介紹／評分校正）'
+      : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
   }
 
   document.getElementById('btnLoadOverride').addEventListener('click', () => loadOverrideEditor());
@@ -3022,11 +3025,21 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const a = document.getElementById('ovArtist').value.trim();
     const b = document.getElementById('ovAlbum').value.trim();
     if (!a || !b) return;
-    if (!confirm('確定清除這張的校正、恢復成 AI 版本？')) return;
+    if (!confirm('確定清除這張的介紹、評分與頂點校正、恢復成 AI 版本？固定試聽連結會保留。')) return;
     const id = ovCardId(a, b);
     try {
-      await deleteDoc(doc(db, 'album_overrides', id));
-      document.getElementById('ovMsg').textContent = '已清除校正，恢復 AI 版本';
+      const ref = doc(db, 'album_overrides', id);
+      const snap = await getDoc(ref);
+      const current = snap.exists() ? snap.data() : null;
+      if (current?.previewUrl || current?.previewStatus) {
+        await updateDoc(ref, {
+          desc:deleteField(), obscurity:deleteField(), classic:deleteField(),
+          accessibility:deleteField(), tier:deleteField(), updatedAt:Date.now()
+        });
+      } else if (snap.exists()) {
+        await deleteDoc(ref);
+      }
+      document.getElementById('ovMsg').textContent = '已清除介紹／評分校正；固定試聽連結已保留';
       loadCatalog();
     } catch (e) { document.getElementById('ovMsg').textContent = '清除失敗：' + (e.message || e); }
   });
@@ -3044,26 +3057,32 @@ ${discogs ? '- Discogs：' + discogs : ''}
         const artist = String(row?.artist || '').trim();
         const album = String(row?.album || '').trim();
         const previewUrl = String(row?.previewUrl || '').trim();
-        if (!artist || !album || !previewUrl) throw new Error(`第 ${index + 1} 筆缺少 artist、album 或 previewUrl`);
-        let parsed;
-        try { parsed = new URL(previewUrl); } catch (_) { throw new Error(`第 ${index + 1} 筆網址格式錯誤`); }
-        const host = parsed.hostname.toLowerCase();
-        const allowed = parsed.protocol === 'https:' && (
-          host === 'youtu.be' || host === 'youtube.com' || host.endsWith('.youtube.com') ||
-          host === 'itunes.apple.com' || host.endsWith('.itunes.apple.com')
-        );
-        if (!allowed) throw new Error(`第 ${index + 1} 筆不是允許的 YouTube／Apple HTTPS 網址`);
+        const requestedStatus = String(row?.previewStatus || '').trim().toLowerCase();
+        const previewStatus = previewUrl ? 'ready' : requestedStatus;
+        if (!artist || !album || (!previewUrl && !['unavailable', 'disabled'].includes(previewStatus))) {
+          throw new Error(`第 ${index + 1} 筆需有 artist、album，以及 previewUrl 或 unavailable／disabled 狀態`);
+        }
+        if (previewUrl) {
+          let parsed;
+          try { parsed = new URL(previewUrl); } catch (_) { throw new Error(`第 ${index + 1} 筆網址格式錯誤`); }
+          const host = parsed.hostname.toLowerCase();
+          const allowed = parsed.protocol === 'https:' && (
+            host === 'youtu.be' || host === 'youtube.com' || host.endsWith('.youtube.com') ||
+            host === 'itunes.apple.com' || host.endsWith('.itunes.apple.com')
+          );
+          if (!allowed) throw new Error(`第 ${index + 1} 筆不是允許的 YouTube／Apple HTTPS 網址`);
+        }
         const id = ovCardId(artist, album);
         if (seen.has(id)) throw new Error(`第 ${index + 1} 筆重複：${artist} — ${album}`);
         seen.add(id);
-        return { id, artist, album, previewUrl };
+        return { id, artist, album, previewUrl, previewStatus };
       });
     } catch (error) {
       msg.className = 'msg error show';
       msg.textContent = error.message || String(error);
       return;
     }
-    if (!confirm(`確認寫入 ${rows.length} 張專輯的固定試聽連結？`)) return;
+    if (!confirm(`確認寫入 ${rows.length} 張專輯的固定試聽設定？`)) return;
     button.disabled = true;
     msg.className = 'msg success show';
     try {
@@ -3077,17 +3096,19 @@ ${discogs ? '- Discogs：' + discogs : ''}
         msg.textContent = `已寫入 ${written}/${rows.length}`;
       };
       for (const row of rows) {
-        batch.set(doc(db, 'album_overrides', row.id), {
+        const previewData = {
           artist:row.artist,
           album:row.album,
-          previewUrl:row.previewUrl,
+          previewStatus:row.previewStatus,
           updatedAt:Date.now()
-        }, { merge:true });
+        };
+        previewData.previewUrl = row.previewUrl || deleteField();
+        batch.set(doc(db, 'album_overrides', row.id), previewData, { merge:true });
         pending++;
         if (pending === 400) await flush();
       }
       await flush();
-      msg.textContent = `✓ 已寫入 ${written} 張固定試聽連結`;
+      msg.textContent = `✓ 已寫入 ${written} 張固定試聽設定`;
       input.value = '';
       loadCatalog();
     } catch (error) {
@@ -3110,8 +3131,15 @@ ${discogs ? '- Discogs：' + discogs : ''}
         getDocs(collection(db, 'card_catalog')),
         getDocs(collection(db, 'album_overrides')).catch(() => ({ docs: [] }))
       ]);
-      const overridden = new Set(ovSnap.docs.map(d => d.id));
-      const tierOf = {}; ovSnap.docs.forEach(d => { const t = d.data().tier; if (t) tierOf[d.id] = t; });
+      const corrected = new Set();
+      const previewOf = new Set();
+      const tierOf = {};
+      ovSnap.docs.forEach(d => {
+        const value = d.data();
+        if (value.tier) tierOf[d.id] = value.tier;
+        if (value.desc || value.obscurity || value.classic || value.accessibility || value.tier) corrected.add(d.id);
+        if (value.previewUrl) previewOf.add(d.id);
+      });
       const TIER_LABEL = { hall: '🩶 殿堂', pearl: '🛢️ 流亡', heresy: '🩸 異端' };
       const items = catSnap.docs.map(d => d.data()).sort((x, y) => (y.updatedAt || 0) - (x.updatedAt || 0)).slice(0, 200);
       if (!items.length) { list.textContent = '還沒有任何卡被抽過收藏。'; return; }
@@ -3123,7 +3151,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
           : `<div class="cardgrid-nocover">♪</div>`;
         const badge = tierOf[id]
           ? `<span class="cardgrid-badge" style="background:#111;">${TIER_LABEL[tierOf[id]] || '頂點'}</span>`
-          : (overridden.has(id) ? `<span class="cardgrid-badge">已校正</span>` : '');
+          : corrected.has(id) ? `<span class="cardgrid-badge">已校正</span>`
+          : (previewOf.has(id) ? `<span class="cardgrid-badge" style="background:#245c3a;">固定試聽</span>` : '');
         return `<div class="cardgrid-cell" data-a="${esc(it.artist)}" data-b="${esc(it.album)}" data-cover="${esc(it.coverUrl || '')}">
           <div class="cardgrid-thumb">${cover}${badge}</div>
           <div class="cardgrid-album">${esc(it.album) || '—'}</div>

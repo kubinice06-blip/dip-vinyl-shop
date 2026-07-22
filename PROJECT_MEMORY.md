@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜固定試聽改為完整零 live provider 查詢，補齊無來源狀態與管理安全
+- Repo：`dip-vinyl-shop`
+- 店主確認目標：本輪新增專輯要比照商品固定試聽的原則，播放／開介紹時直接讀預先覆核的來源，不再每次臨時搜尋 Apple、YouTube、Spotify 或 Bandcamp；無可靠來源者寧可不播，不可為湊試聽誤配。
+- `dip-player.playAlbum()` 新增 `fixedOnly`：固定 Apple 音檔或 YouTube 命中即播放且零 provider lookup；固定連結失效或明確無來源時直接停止（S11），不再偷偷 fallback。未納入人工稽核的舊卡仍保留原本即時 fallback，相容機制未移除。
+- 新增 `card-preview-status.js` 保存本輪負面稽核結果：40 張三盲鼠＝`disabled`、101 張查無可靠來源＝`unavailable`；連同 Firestore 385 張固定連結，526 張本輪新卡完整覆蓋（385+40+101），無漏項、無額外項。唱片櫃首屏預抓與卡片介紹的 Spotify／Bandcamp enrichment 會跳過上述全部人工稽核卡。
+- `battle.html`／`roguelike.html` 也會先讀固定試聽及負面狀態；20 筆可控音量的 Apple 直連可直接播放，365 筆 YouTube 固定來源因遊戲頁 iOS iframe 音量不可控而不播放、也不再另查 Apple。Firestore override 讀取加入頁內 cache。
+- 後台「清除介紹／評分校正」改為只刪 `desc`／三軸／`tier`，保留 `previewUrl`／`previewStatus`；純試聽 override 改標「固定試聽」而非「已校正」。批次工具新增 `ready`／`unavailable`／`disabled` 狀態支援，未來可直接寫入正向或負向稽核結果。
+- 主要檔案：`card-preview-status.js`、`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`admin.html`、`verify-playback.mjs`
+- 驗證：`verify-playback.mjs` 通過固定 Apple、固定 YouTube、fixed-only 失效不查 provider、舊卡 fallback 保留等測試；526 張狀態重算為固定 385／disabled 40／unavailable 101，0 mismatch、0 extra；四頁 inline scripts、兩支 JS `node --check`、`git diff --check` 全數通過。
+
 ### 2026-07-22｜本輪爵士新卡固定試聽寫入（排除三盲鼠）
 - Repo：`dip-vinyl-shop`
 - 依店主指示，三盲鼠 40 張維持不處理試聽；本輪其餘 486 張新增專輯沿用固定連結流程，寫入受管理員規則保護的 Firestore `album_overrides.previewUrl`，前端專輯資訊會優先播放固定來源。

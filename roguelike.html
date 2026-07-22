@@ -501,6 +501,14 @@
       };
       // 封面取得（與 battle.html 同一套：先讀全站卡牌目錄 card_catalog，再向 worker /spotify-search）
       const WORKER_URL='https://dip-vinyl-worker.kubinice06.workers.dev';
+      const albumOverrideCache=new Map();
+      const readAlbumOverride=async (artist,album,cardId='')=>{
+        const id=cardId||((artist||'')+'|'+(album||'')).toLowerCase().replace(/\//g,'-').trim();
+        if(albumOverrideCache.has(id)) return albumOverrideCache.get(id);
+        const pending=getDoc(doc(db,'album_overrides',id)).then(s=>s.exists()?s.data():null).catch(()=>null);
+        albumOverrideCache.set(id,pending);
+        return pending;
+      };
       window.__getCover = async (artist, album) => {
         const id = (artist+'|'+album).toLowerCase().replace(/\//g,'-').trim();
         try { const s=await getDoc(doc(db,'card_catalog',id)); const cu=s.exists()&&s.data().coverUrl; if(cu) return cu; } catch(e){}
@@ -520,16 +528,24 @@
         } catch(e){}
         if(cardId){
           try {
-            const s = await getDoc(doc(db,'album_overrides',cardId));
-            if(s.exists()){ const ov=s.data(); r=r||{};
+            const ov=await readAlbumOverride(artist,album,cardId);
+            if(ov){ r=r||{};
               if(ov.classic) r.classic=ov.classic;
               if(ov.obscurity) r.obscurity=ov.obscurity;
               if(ov.accessibility) r.accessibility=ov.accessibility;
               if(ov.tier) r.tier=ov.tier;   // 後台設的頂點級別（hall/pearl/heresy）→ 王牌
+              r.previewUrl=ov.previewUrl||'';
+              r.previewStatus=ov.previewStatus||window.DipPreviewStatus?.[cardId]||'';
+              r.previewResolved=true;
             }
           } catch(e){}
         }
         return r;
+      };
+      window.__getAlbumPreview = async (artist,album,cardId='') => {
+        const id=cardId||((artist||'')+'|'+(album||'')).toLowerCase().replace(/\//g,'-').trim();
+        const ov=await readAlbumOverride(artist,album,cardId);
+        return { previewUrl:ov?.previewUrl||'', previewStatus:ov?.previewStatus||window.DipPreviewStatus?.[id]||'', previewResolved:true };
       };
       // 後台入庫的頂級牌卡池（card_catalog 標 apex==true 的 300 張）：一次撈回 [{artist,album,tier}]
       window.__getApexTiers = async () => {
@@ -544,7 +560,8 @@
   })();
 </script>
 
-<script src="dip-player.js?v=29"></script>
+<script src="card-preview-status.js?v=1"></script>
+<script src="dip-player.js?v=30"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1561,13 +1578,34 @@ function setRogueMusic(enabled){
   syncRogueMusic();
   if(!rogueMusicOn) window.DipPlayer?.stop();
 }
+const rogueDirectPreview=url=>{
+  try{return /\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/i.test(new URL(url||'').pathname);}
+  catch(e){return false;}
+};
+async function roguePreviewMeta(card){
+  if(card.previewResolved) return card;
+  const meta=window.__getAlbumPreview?await window.__getAlbumPreview(card.artist,card.album):{};
+  card.previewUrl=meta?.previewUrl||'';
+  card.previewStatus=meta?.previewStatus||'';
+  card.previewResolved=true;
+  return card;
+}
 function playRogueAlbum(card){
   if(!rogueMusicOn||!card||!window.DipPlayer) return false;
   try{
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
-    void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
-    void window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'}).catch(()=>{});
+    void (async()=>{
+      const meta=await roguePreviewMeta(card);
+      if(meta.previewUrl){
+        if(!rogueDirectPreview(meta.previewUrl)){ window.DipPlayer.stop?.({fade:true}); return; }
+        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,fixedOnly:true});
+        return;
+      }
+      if(meta.previewStatus==='unavailable'||meta.previewStatus==='disabled'){ window.DipPlayer.stop?.({fade:true}); return; }
+      void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
+      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'});
+    })().catch(()=>{});
     return true;
   }catch(e){return false;}
 }
@@ -2029,6 +2067,7 @@ async function renderSeedSelect(){
         c.obscurity = clampStat(r.obscurity, c.obscurity);
         c.accessibility = clampStat(r.accessibility, c.accessibility);
       }
+      if(r){ c.previewUrl=r.previewUrl||''; c.previewStatus=r.previewStatus||''; c.previewResolved=!!r.previewResolved; }
       return c;
     }));
     RUN._collShelf = cards;   // 頂級卡（王牌）也可當種子，但起始最多選 1 張（見 toggleSeed）
