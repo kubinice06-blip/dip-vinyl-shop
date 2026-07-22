@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜本輪爵士新卡固定試聽寫入（排除三盲鼠）
+- Repo：`dip-vinyl-shop`
+- 依店主指示，三盲鼠 40 張維持不處理試聽；本輪其餘 486 張新增專輯沿用固定連結流程，寫入受管理員規則保護的 Firestore `album_overrides.previewUrl`，前端專輯資訊會優先播放固定來源。
+- 嚴格核對後取得 385 張可靠來源：YouTube Music Album playlist 349 張、YouTube 完整專輯影片 16 張、Apple 30 秒試聽音檔 20 張；全部網址實抓為 HTTP 2xx/3xx。另 101 張在 YouTube 與 Apple 都查無可靠配對，未強制寫入，避免播錯專輯。
+- 後台卡牌管理新增可重用的「批次固定試聽連結」工具：僅接受 YouTube／Apple HTTPS 網址、檢查重複與必填欄位、每 400 筆分批 commit，使用 merge 保留既有介紹、三軸及頂級牌設定。
+- Firestore 回查：385/385 筆 artist+album 文件的 `previewUrl` 與預定值完全一致，101 張未配對專輯沒有誤寫；既有 Abdullah Ibrahim《Good News From Africa》的 `desc` 與 `accessibility` 也確認保留。
+- 主要檔案：`admin.html`、`PROJECT_MEMORY.md`
+- 驗證：`admin.html` module script 通過 `node --check --input-type=module`；`git diff --check` 通過；385 個固定網址全數實際可讀；Firestore `album_overrides` 精確比對 0 mismatch。
+
 ### 2026-07-22 — jazz card-pool audit fixes and playback verification
 - Repo: `dip-vinyl-shop` (plus mirrored workspace skill scripts)
 - Removed 16 confirmed bad cards from `seed_cards.json`: six duplicate release groups / alternate credits and ten non-Album releases (Singles, EPs, or compilations). Deleted the matching Firestore `card_catalog` documents only after confirming `updatedAt=1` and no `desc`; all 16 now return HTTP 404.
