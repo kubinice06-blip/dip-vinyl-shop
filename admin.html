@@ -821,6 +821,13 @@
         <div class="section-label" style="margin-bottom:12px;">卡片庫（點封面編輯）</div>
         <div id="catalogList" style="font-size:12px;color:var(--gray);">尚未載入</div>
       </div>
+      <div class="section">
+        <div class="section-label">批次固定試聽連結</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">貼入 JSON 陣列（artist、album、previewUrl）。只接受 HTTPS 的 YouTube／Apple 試聽網址，並以 merge 寫入 album_overrides，不會覆蓋既有介紹、三軸或頂級牌設定。</p>
+        <textarea id="ovPreviewBatch" rows="7" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:11px;line-height:1.6;outline:none;background:#fff;resize:vertical;" placeholder='[{"artist":"Artist","album":"Album","previewUrl":"https://music.youtube.com/playlist?list=..."}]'></textarea>
+        <button class="btn-save" id="btnBatchPreview" style="margin-top:10px;">寫入固定試聽連結</button>
+        <div class="msg" id="ovPreviewBatchMsg"></div>
+      </div>
       </div><!-- end sub-fix -->
 
   <!-- 卡牌校正：彈出編輯 modal -->
@@ -3022,6 +3029,73 @@ ${discogs ? '- Discogs：' + discogs : ''}
       document.getElementById('ovMsg').textContent = '已清除校正，恢復 AI 版本';
       loadCatalog();
     } catch (e) { document.getElementById('ovMsg').textContent = '清除失敗：' + (e.message || e); }
+  });
+
+  document.getElementById('btnBatchPreview').addEventListener('click', async () => {
+    const input = document.getElementById('ovPreviewBatch');
+    const button = document.getElementById('btnBatchPreview');
+    const msg = document.getElementById('ovPreviewBatchMsg');
+    let rows;
+    try {
+      rows = JSON.parse(input.value);
+      if (!Array.isArray(rows) || !rows.length || rows.length > 1000) throw new Error('JSON 必須是 1–1000 筆的陣列');
+      const seen = new Set();
+      rows = rows.map((row, index) => {
+        const artist = String(row?.artist || '').trim();
+        const album = String(row?.album || '').trim();
+        const previewUrl = String(row?.previewUrl || '').trim();
+        if (!artist || !album || !previewUrl) throw new Error(`第 ${index + 1} 筆缺少 artist、album 或 previewUrl`);
+        let parsed;
+        try { parsed = new URL(previewUrl); } catch (_) { throw new Error(`第 ${index + 1} 筆網址格式錯誤`); }
+        const host = parsed.hostname.toLowerCase();
+        const allowed = parsed.protocol === 'https:' && (
+          host === 'youtu.be' || host === 'youtube.com' || host.endsWith('.youtube.com') ||
+          host === 'itunes.apple.com' || host.endsWith('.itunes.apple.com')
+        );
+        if (!allowed) throw new Error(`第 ${index + 1} 筆不是允許的 YouTube／Apple HTTPS 網址`);
+        const id = ovCardId(artist, album);
+        if (seen.has(id)) throw new Error(`第 ${index + 1} 筆重複：${artist} — ${album}`);
+        seen.add(id);
+        return { id, artist, album, previewUrl };
+      });
+    } catch (error) {
+      msg.className = 'msg error show';
+      msg.textContent = error.message || String(error);
+      return;
+    }
+    if (!confirm(`確認寫入 ${rows.length} 張專輯的固定試聽連結？`)) return;
+    button.disabled = true;
+    msg.className = 'msg success show';
+    try {
+      let batch = writeBatch(db), pending = 0, written = 0;
+      const flush = async () => {
+        if (!pending) return;
+        await batch.commit();
+        written += pending;
+        pending = 0;
+        batch = writeBatch(db);
+        msg.textContent = `已寫入 ${written}/${rows.length}`;
+      };
+      for (const row of rows) {
+        batch.set(doc(db, 'album_overrides', row.id), {
+          artist:row.artist,
+          album:row.album,
+          previewUrl:row.previewUrl,
+          updatedAt:Date.now()
+        }, { merge:true });
+        pending++;
+        if (pending === 400) await flush();
+      }
+      await flush();
+      msg.textContent = `✓ 已寫入 ${written} 張固定試聽連結`;
+      input.value = '';
+      loadCatalog();
+    } catch (error) {
+      msg.className = 'msg error show';
+      msg.textContent = `寫入失敗：${error.message || error}`;
+    } finally {
+      button.disabled = false;
+    }
   });
 
   const esc = (s) => (s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
