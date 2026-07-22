@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜法國／德國三廠牌：BYG／Saravah／MPS 共 108 張
+
+- Repo：`dip-vinyl-shop`
+- 延續前一批（波蘭／義大利／現代英國／日本），繼續處理法國、德國剩下的廠牌。
+- 三批各自：廠牌反查 → 評分排序取精選 → 只對短名單解封面 → 去重：
+  - **BYG**（法國自由爵士）：103 候選 → 40（classic 門檻 4）→ 98% 命中 → 去重後 37
+  - **Saravah**（法國香頌／世界音樂為主，夾雜爵士）：111 候選 → 40（門檻 3）→ 93% 命中 → 去重後 33
+  - **MPS**（德國）：511 候選 → 45（門檻 4）→ 87% 命中 → 去重後 38
+  - 三批合計 108 張，跨批次同名重複 0 筆。
+- **MPS 目錄反查在 MusicBrainz 遇到暫時性 503 過載，整支腳本掛掉**——`1-label-catalog.mjs`
+  原本沒有重試機制（只有先前為系列查詢寫的 `1c-series-catalog.mjs` 有）。已補上同一套重試
+  邏輯（503 重試、間隔 2 秒、最多 3 次）＋分頁迴圈改成單頁持續失敗就跳出繼續，不會讓整批
+  作廢重來。修好後 MPS 重跑一次成功抓到 827 releases。
+- BYG／Saravah 這兩個廠牌本身內容龐雜（BYG 混了前衛搖滾團 Gong、Saravah 混了大量法語香頌），
+  不是爵士專屬——沿用 ECM New Series 古典樂那次的原則：**非目標曲風的正確分類結果直接保留**，
+  不必為了「這次是爵士擴充」而排除。
+- 人工抓到自動化去重漏網的兩筆（BYG）：`Gong - Camembert Electrique` vs
+  `Gong - Camembert électrique`（有無重音符號的同一張碟）；
+  `Anthony Braxton - B-X0 N0-47A` vs `B-X° / NO-I-47ᴬ`（同一個神秘代號標題的不同符號轉寫）。
+  兩組都手動移除其中一筆。
+- `seed_cards.json` 5940 → **6048 張**。108 筆封面＋三軸＋rarity 已 PATCH 進 Firestore
+  `card_catalog`。90/108 帶 `jazz` 標籤，其餘正確分類到 `folk`／`classical`（Areski Belkacem
+  香頌、Bach 鋼琴演奏）不算誤判，直接保留。
+- 主要檔案：`seed_cards.json`、`.claude/skills/dip-card-pool-expand/scripts/1-label-catalog.mjs`
+  （補 503 重試與分頁容錯，跟 `1c-series-catalog.mjs` 同一套邏輯）
+- 驗證：`seed_cards.json` parse 通過、6048 張全部 5 欄位且三軸皆 1–5 整數；108 張與現有卡池
+  及批內皆無重複；Firestore 抽驗 3 筆（Grappelli、Fontaine、Gong）封面圖實抓 HTTP 200。
+- 待辦：爵士曲風目前約 1450 張（1360 + 90），距 1500 目標僅差約 50 張，已接近完成；
+  Disques Vogue（法國，765 releases）尚未處理——同波蘭 Muza 的疑慮，這是 1947–73 全類型
+  國家級廠牌，若要收建議先用 1c 查有沒有對應的精選系列，不要直接用整個廠牌反查。
+
 ### 2026-07-22｜六批爵士擴充：波蘭／義大利／現代英國／日本／德國共 245 張
 
 - Repo：`dip-vinyl-shop`
