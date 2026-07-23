@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜R&B 擴充第一批：90s 黃金期＋日韓 R&B 共 101 張上架
+
+- Repo：`dip-vinyl-shop`（Firestore/KV 亦有寫入）
+- 店主決策：hiphop＋R&B 遊戲層同類、日韓 R&B 加重、R. Kelly 及掛名專輯一律排除。
+- 走 `dip-card-pool-expand` 完整公式：MB 藝人目錄反查（40 位直查＋13 位高撞名用 mbid 消歧義）
+  → 419 候選去重 368 → 評分排序人工選片 104（US 53＋日韓 51）→ 封面、簡介、試聽、published gate。
+- **封面教訓（重要）**：Bandcamp 對大廠美日藝人幾乎全是 bootleg／remix 誤配（Mariah 首專配到
+  耶誕 remix、Whitney 配到「Whitney Houston's Crypt」），39 張 bandcamp 命中全部作廢改走
+  MB→CAA；Spotify 全程 429 限流僅 1 張。最終 101/104 有封面（WONK《EYES》、박효신《Soul Tree》、
+  Colde《Wave》缺封面暫扣，等 Spotify 解限流補上）。
+- **評分教訓**：彎引號（What's the 411?／Don't Be Cruel）與 U+2010（m‐flo）害 Last.fm 查錯、
+  假 O5；重查修正 6 筆。人工升分 2 筆（Guy 首專、Candy Rain）理由記在 manifest。
+- 曲風：全 104 張 /album-genres 可辨識；`build-seed-genres.mjs` 新增 `ALBUM_GENRE_FIX`
+  專輯級覆寫（Bobby Brown《Bobby》jazz→hiphop,soul、Guy 首專、Total《Kima》rock 雜訊、
+  MISIA×2 rock→soul,pop）。
+- 試聽：Apple 本機 /search＋/lookup（4.2s 間隔），94 ready 寫入 apple-audio-map-v1＋重建
+  runtime；7 unavailable 進 card-preview-status.js（安室×4 全串流下架、No More Drama 取樣
+  授權缺席 Apple、DOUBLE《Vision》、Crush《Crush on You》Apple 只有同名 Single）。
+- 簡介：101 筆繁中 80–180 字自寫並逐筆查證，來源 Wikipedia（驗證過的直查標題）＋MB
+  release-group；KV desc2:/desc4: 匯入後全數回讀 KV-HIT。日籍藝人依 0.5 規則用官方掛名
+  （宇多田ヒカル、久保田利伸…），韓籍維持串流通用拉丁名，박효신用한글（Apple US 可查）。
+- 頂點：本批 0 張採用（What's the 411? 具 hall 候選資格但未採用，記在 manifest）。
+- DEAN 因無正規專輯（《130 mood: TRBL》是 EP、非 electronic 白名單）整位排除。
+- 上架後分布（seed 6,540）：hiphop 793／soul 843（嘻哈R&B類合計約 1,300 依含標計）。
+- 主要檔案：`seed_cards.json`（+101）、`data/apple-audio-map-v1.json`、
+  `data/apple-audio-runtime-v1.json`、`card-preview-status.js`、`scripts/build-seed-genres.mjs`
+- 驗證：prepare gate 0 error → card_catalog 101 PATCH 成功 → KV 101 回讀一致 →
+  published gate 101 張 0 error 0 warning。
+- 待辦：3 張缺封面卡補上、apex pearl 那 2 張 spiritual jazz 誤標、嘻哈六波擴充尚未開始。
+
 ### 2026-07-23｜曲風標修正：經典 soul 世代整批從 hiphop 退回 soul
 
 - Repo：`dip-vinyl-shop`

@@ -29,7 +29,16 @@ const SOUL_FIX = new Set([
   // 誤標離譜的流行歌手
   'Ed Sheeran','Charlie Puth','George Michael',
 ]);
-function applySoulFix(artist, genres) {
+// 專輯級覆寫：Last.fm 個別誤標（jazz/rock 雜訊）直接指定正確標籤
+const ALBUM_GENRE_FIX = {
+  'Bobby Brown|Bobby': ['hiphop','soul'],
+  'Guy|Guy': ['hiphop','soul'],
+  'Total|Kima, Keisha & Pam': ['hiphop','soul'],
+  'MISIA|Mother Father Brother Sister': ['soul','pop'],
+  'MISIA|MARVELOUS': ['soul','pop'],
+};
+function applySoulFix(artist, genres, album) {
+  if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();
   if (!SOUL_FIX.has(artist) || !Array.isArray(genres)) return genres;
   const g = genres.filter(x => x !== 'hiphop');
   if (!g.includes('soul')) g.unshift('soul');
@@ -83,7 +92,7 @@ await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 let fixed = 0;
 for (const r of rows) {
   if (!Array.isArray(r[5])) continue;
-  const g = applySoulFix(r[0], r[5]);
+  const g = applySoulFix(r[0], r[5], r[1]);
   if (g !== r[5] && JSON.stringify(g) !== JSON.stringify(r[5])) { r[5] = g; fixed++; }
 }
 console.log(`soul-fix applied to ${fixed} seed rows`);
@@ -106,7 +115,7 @@ for (const tier of ['hall', 'pearl', 'heresy']) {
       else apexFailed++;
     }
     // 人工覆寫（含 --fix-only）
-    const g = applySoulFix(list[i][0], list[i][2]);
+    const g = applySoulFix(list[i][0], list[i][2], list[i][1]);
     if (Array.isArray(g) && JSON.stringify(g) !== JSON.stringify(list[i][2])) { apex[tier][i] = [list[i][0], list[i][1], g]; apexDone++; }
   }
 }
