@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜曲風標修正：經典 soul 世代整批從 hiphop 退回 soul
+
+- Repo：`dip-vinyl-shop`
+- 背景：曲風標來自 worker /album-genres（Spotify→Last.fm），Last.fm 把「R&B」粗分進 hiphop，
+  導致 Marvin Gaye／Aretha／Stevie 等經典 soul 世代整批被誤標 hiphop。店主決策：
+  遊戲層 hiphop＋R&B 視為同一類（當代 R&B 如 TLC/Usher/Mariah 維持 hiphop 標是對的），
+  只需把「明顯是 soul」的藝人清出去；另 blues 之後在遊戲層併入 folk/world/classical（根源派）。
+- 改動：`scripts/build-seed-genres.mjs` 新增 `SOUL_FIX` 人工覆寫表（74 組藝人：經典 soul/funk/
+  Motown/Stax＋復古 soul＋neo-soul＋誤標流行歌手）與 `--fix-only` 模式；重抓或補新卡後自動套用，
+  不會被 Last.fm 重新污染。執行後 seed 修正 151 列、apex 修正 11 列。
+- 修正後分布（seed 6,439 含標）：rock 2867 / jazz 1482 / electronic 1405 / pop 1133 /
+  soul 790 / hiphop 720 / folk 655 / world 287 / classical 237 / blues 159。
+- 主要檔案：`scripts/build-seed-genres.mjs`、`seed_cards.json`、`apex_pool.json`
+- 驗證：抽查 Marvin Gaye→["soul"]、Stevie Wonder→["soul"]、TLC/Mariah/2Pac 維持 hiphop；
+  apex hall hiphop 26→15（soul 經典退場）。已知遺留：apex pearl 那 2 張 hiphop
+  （Ndikho Xaba、Khan Jamal）其實是 spiritual jazz，待嘻哈擴充時一併處理。
+
 ### 2026-07-23｜試聽暫時只留 iTunes（YT/Spotify iframe 無法淡入淡出）
 
 - Repo：`dip-vinyl-shop`
