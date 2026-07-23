@@ -1,5 +1,9 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "damu the fudgemunk|spare time": "unavailable",
+  "onra|long distance": "unavailable",
+  "dj krush|zen": "unavailable",
+  "clams casino|instrumentals 2": "unavailable",
   "new kingdom|paradise don't come cheap": "unavailable",
   "antipop consortium|fluorescent black": "unavailable",
   "antipop consortium|arrhythmia": "unavailable",

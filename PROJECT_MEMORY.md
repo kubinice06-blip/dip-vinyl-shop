@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜嘻哈第 5 波（Beat Scene／器樂）：40 張上架
+
+- Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-beatscene-wave5。
+- 範圍：J Dilla 前期補完（Welcome 2 Detroit／Ruff Draft／The Diary）、Pete Rock 器樂線、
+  RJD2《Deadringer》、Blockhead、Prefuse 73、DJ Krush 中期（Krush／Kakusei／Zen／
+  Message at the Depth／Jaku）、Clams Casino、Onra、Karriem Riggins、Apollo Brown、
+  Oh No 取樣考古雙作、Wax Tailor、TOKiMONSTA、Nosaj/Shlohmo/Mono-Poly（正確歸電子）。
+- 封面教訓：CJK 原題（深層/寂 -jaku）與 Jay Dee 舊掛名要用 MB 原始標題反查才有封面。
+- 試聽 36 ready／4 unavailable（Zen、Long Distance、Spare Time、Instrumentals 2 串流缺）。
+- 簡介修正教訓：後綴補長法會產生冗贅句，之後一律重寫整段而非黏接。
+- 驗證：prepare 0 error；KV 40/40；published gate 0 error。
+- 上架後 seed 6,991：hiphop 1227。
+
 ### 2026-07-23｜嘻哈第 4 波（實驗／異端）：67 普卡＋1 張 heresy 王牌上架
 
 - Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-experimental-wave4。
