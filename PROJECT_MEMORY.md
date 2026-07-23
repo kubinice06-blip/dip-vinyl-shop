@@ -7,7 +7,7 @@
   使用者自行輸入專輯名＋藝人名 → 並行打 worker `/spotify-search`（封面＋Spotify 直連）與
   `/album-desc`（簡介，與卡片詳情同一套 KV 快取、查無時現場生成）→ 顯示封面／藝人／專輯／
   簡介＋四平台串流按鈕（Bandcamp 沿用 `resolveBandcampBtn` 背景查直連）。
-- **刻意不放「收進唱片櫃」按鈕**，結果頁標註「僅供閱覽，不能收進唱片櫃」；兩欄未填會擋下並提示。
+- **刻意不放「收進唱片櫃」按鈕**（店主指示結果頁不放「僅供閱覽」標註字樣）；兩欄未填會擋下並提示。
 - 實作走既有 quiz-modal 面板模式：`albumSearchModal`＋`renderAlbumSearch()`／`doAlbumSearch()`，
   `setActiveTab` 收合清單與 hash 路由 valid 名單（web＋app 兩份）都加了 `album-search`；
   使用者輸入與 AI 簡介一律 textContent 塞入防 XSS；等待期間離開頁面（`currentView` 變了）就不回填。

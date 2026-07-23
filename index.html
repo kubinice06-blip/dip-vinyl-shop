@@ -2000,8 +2000,7 @@
       <div class="cd-artist"></div>
       <div class="cd-album"></div>
       <div class="cd-desc"></div>
-      <div id="asStreaming">${streamingBtnsHtml(artist, album, sr.spotifyUrl)}</div>
-      <div class="album-search-note">查詢結果僅供閱覽，不能收進唱片櫃</div>`;
+      <div id="asStreaming">${streamingBtnsHtml(artist, album, sr.spotifyUrl)}</div>`;
     // 使用者輸入與 AI 簡介一律走 textContent，避免被當成 HTML
     if (cover) result.querySelector('.cd-cover').src = cover;
     result.querySelector('.cd-artist').textContent = artist;
