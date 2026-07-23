@@ -3681,13 +3681,32 @@ ${seenList}
     if (gpPreviewStarted) { window.DipPlayer?.stop(); gpPreviewStarted = false; }
   }
 
+  // 播放器常駐掛載（隱藏、掛 body，不隨結果頁重繪銷毀）。
+  // 必須在使用者點擊的「手勢當下」同步呼叫，iOS/Chrome 才會解鎖音訊——
+  // mount 之前 DipPlayer 的 primeFromGesture 直接 return false，事後 unlock 無效。
+  function gpEnsurePlayer() {
+    if (!window.DipPlayer) return;
+    let el = document.getElementById('gpPlayerMount');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'gpPlayerMount';
+      el.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(el);
+    }
+    window.DipPlayer.mount(el, { hidden: true });
+    window.DipPlayer.unlock?.();
+  }
+  // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
+  // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
+  document.addEventListener('pointerdown', (e) => {
+    if (e.target.closest('.homehub-card, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
+  }, true);
+
   function gpPlayPreview(manual = true) {
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview(); return; }
-    window.DipPlayer.unlock?.();
-    const mount = document.getElementById('gpPlayerMount');
-    if (mount) window.DipPlayer.mount(mount, { hidden: true });
+    gpEnsurePlayer();
     gpPreviewStarted = true;
     gpPreviewManual = manual;
     void window.DipPlayer.playAlbum({
@@ -3706,7 +3725,7 @@ ${seenList}
         <svg data-gp-ic="play" width="15" height="15" viewBox="0 0 16 16" style="display:none;pointer-events:none;"><path d="M3 1.5 L14 8 L3 14.5 Z" fill="currentColor"/></svg>
         <svg data-gp-ic="pause" width="15" height="15" viewBox="0 0 16 16" style="pointer-events:none;"><rect x="2.5" y="1.5" width="4" height="13" fill="currentColor"/><rect x="9.5" y="1.5" width="4" height="13" fill="currentColor"/></svg>
       </button>
-    </div><div id="gpPlayerMount" aria-hidden="true"></div>`;
+    </div>`;
   }
 
   async function submitGenrePick() {

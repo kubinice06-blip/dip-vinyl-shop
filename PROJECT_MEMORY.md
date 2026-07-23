@@ -788,6 +788,12 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-23｜修抽卡自動播放不響：播放器改常駐掛載＋手勢當下解鎖
+- Repo：`dip-vinyl-shop`
+- 改動：店主回報抽卡結果沒點開就不會自動播。根因：`DipPlayer` 的音訊解鎖（`primePreviewFromGesture`）開頭 `if (!root) return false`——root 要 `mount()` 後才存在，而前一版把 mount 放在 `gpPlayPreview` 內，抽卡非同步流程跑完才第一次 mount；用戶點「直接來一張」的手勢當下播放器根本沒掛載、解鎖監聽不存在，等自動播放要響時已無手勢授權被瀏覽器擋掉（對戰頁能自動播是因為開頁就 mount）。修法：新增 `gpEnsurePlayer()`——把 `#gpPlayerMount` 改為常駐 `document.body` 的隱藏節點（不再放結果頁 HTML、不隨重繪銷毀），mount＋unlock 一次完成；再掛 document capture `pointerdown` 監聽，凡點擊 `.homehub-card / #genreContent / [data-special-draw] / [data-collect]` 就在手勢當下同步呼叫，涵蓋首頁入口、類型/藝人選項、再一張、重試、特殊抽卡券全部路徑。
+- 主要檔案：`index.html`
+- 驗證：三段 inline script `node --check` 通過；本機真實點擊（CDP trusted event）實測——pointerdown 命中 homehub 卡片後 `gpPlayerMount` 掛在 body、`dipAudioUnlock=1`；類型挑片走完三輪抽到結果，DipPlayer 自動進 `playing/itunes`、圖示顯示 ⏸，點一下暫停切回 ▶ 正常。教訓：**DipPlayer 解鎖必須「先 mount 再有手勢」，mount 放在結果渲染後等於永遠鎖死自動播放**。
+
 ### 2026-07-23｜結果頁試聽鈕改小型無框圖示＋抽到自動播放；串流按鈕文字置中
 - Repo：`dip-vinyl-shop`
 - 改動：店主嫌「▶ 試聽這張」全寬按鈕醜。改為 34×34 無框無底色小按鈕（15px 實心 SVG ▶／⏸，**不用 ⏸ 字符——iOS 會渲染成彩色 emoji**），置中放在三軸下方；抽到結果即自動播放（跟對戰一樣），播放中顯示 ⏸、點擊暫停。自動播放被瀏覽器擋或查無來源時安靜停在 ▶ 不 toast（`gpPreviewManual` 旗標——只有手動點擊失敗才 toast 錯誤代碼）。分享圖為手繪 canvas 本就不含按鈕，無需處理。另修 Apple Music 按鈕文字偏左：`.streaming-btn` 寬 77px 時「Apple Music」折兩行、按鈕沒設 text-align 導致折行靠左，補 `text-align:center`。設計先做預覽 mockup 給店主選定（只留圖示不加提示字、自動播放套用全部結果）。
