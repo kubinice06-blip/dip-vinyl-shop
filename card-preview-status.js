@@ -1,5 +1,4 @@
-// Generated from the 2026-07-22 jazz expansion audit.
-// Fixed URLs remain in the admin-protected album_overrides.previewUrl documents.
+// Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
   "山本剛トリオ|blues for tee": "disabled",
   "toshiyuki miyama & the new herd|new herd": "disabled",
@@ -141,5 +140,22 @@ window.DipPreviewStatus = Object.freeze({
   "nina simone|right on!": "unavailable",
   "dizzy gillespie|pleyel 53": "unavailable",
   "don byas|tenderly": "unavailable",
-  "sidney bechet all stars|ambiance bechet": "unavailable"
+  "sidney bechet all stars|ambiance bechet": "unavailable",
+  "larry heard|genesis": "unavailable",
+  "ron trent|primitive arts": "unavailable",
+  "robert hood|nighttime world, volume 1": "unavailable",
+  "jeff mills|three ages": "unavailable",
+  "jeff mills|waveform transmission, volume 1": "unavailable",
+  "model 500|mind and body": "unavailable",
+  "jeff mills|metropolis": "unavailable",
+  "model 500|digital solutions": "unavailable",
+  "mr. fingers|ammnesia": "unavailable",
+  "jeff mills|actual": "unavailable",
+  "moodymann|abcd": "unavailable",
+  "jeff mills|one man spaceship": "unavailable",
+  "moodymann|sinner": "unavailable",
+  "larry heard|ice castles": "unavailable",
+  "model 500|no ufo's": "unavailable",
+  "frankie knuckles|your love": "unavailable",
+  "lil louis|french kiss": "unavailable"
 });

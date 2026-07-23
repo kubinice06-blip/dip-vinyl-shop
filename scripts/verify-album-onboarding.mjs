@@ -41,6 +41,27 @@ const err = (label, message) => errors.push(`${label}: ${message}`);
 const warn = (label, message) => warnings.push(`${label}: ${message}`);
 const isObj = value => value && typeof value === 'object' && !Array.isArray(value);
 const isHttps = value => typeof value === 'string' && /^https:\/\//i.test(value);
+// 靜態試聽路徑 helper：與 dip-player.js appleAudioKey / card-preview-status.js 鍵一致
+const previewNorm = value => String(value || '').normalize('NFKD').toLowerCase()
+  .replace(/[\u0300-\u036f]/g, '')
+  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]+/g, '');
+let _staticMap, _staticStatus;
+function staticAudioMap() {
+  if (_staticMap !== undefined) return _staticMap;
+  try { _staticMap = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'apple-audio-runtime-v1.json'), 'utf8')); }
+  catch { _staticMap = null; }
+  return _staticMap;
+}
+function staticPreviewStatus() {
+  if (_staticStatus) return _staticStatus;
+  _staticStatus = {};
+  try {
+    const src = fs.readFileSync(path.join(ROOT, 'card-preview-status.js'), 'utf8');
+    const body = src.match(/Object\.freeze\((\{[\s\S]*?\})\)/);
+    if (body) _staticStatus = JSON.parse(body[1].replace(/,(\s*)\}/g, "$1}"));
+  } catch {}
+  return _staticStatus;
+}
 const charCount = value => Array.from(String(value || '')).length;
 const clean = value => String(value || '').trim();
 const keyOf = (artist, album) => `${artist}|${album}`.toLocaleLowerCase().replace(/\//g, '-').trim();
@@ -83,10 +104,14 @@ function firestoreFields(doc) {
   return Object.fromEntries(Object.entries(doc?.fields || {}).map(([key, value]) => [key, firestoreValue(value)]));
 }
 
-async function getJson(url, label) {
+async function getJson(url, label, { allow404 = false } = {}) {
   try {
     const response = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(20000) });
-    if (!response.ok) { err(label, `HTTP ${response.status}`); return { response, data: null }; }
+    if (!response.ok) {
+      // allow404：文件不存在是合法狀態（如 album_overrides 缺文件時改驗靜態試聽路徑）
+      if (!(allow404 && response.status === 404)) err(label, `HTTP ${response.status}`);
+      return { response, data: null };
+    }
     return { response, data: await response.json() };
   } catch (error) {
     err(label, `讀取失敗：${error.message}`);
@@ -270,13 +295,26 @@ if (publishedMode && errors.length === 0) {
       if (fields.coverUrl !== row.cover.url) err(label, 'card_catalog.coverUrl 不一致');
     }
 
-    const overrideResult = await getJson(`${FIRESTORE}/album_overrides/${docId}`, `${label} album_overrides`);
+    const overrideResult = await getJson(`${FIRESTORE}/album_overrides/${docId}`, `${label} album_overrides`, { allow404: true });
     if (overrideResult.data) {
       const fields = firestoreFields(overrideResult.data);
       if (fields.previewStatus !== row.preview.status) err(label, `album_overrides.previewStatus 應為 ${row.preview.status}`);
       if (row.preview.status === 'ready' && fields.previewUrl !== row.preview.url) err(label, 'album_overrides.previewUrl 不一致');
       if (row.preview.status !== 'ready' && clean(fields.previewUrl)) err(label, '負面試聽狀態不應留 previewUrl');
       if (row.published.apexPool && fields.tier !== row.apexAssessment.tier) err(label, 'album_overrides.tier 不一致');
+    } else {
+      // 靜態路徑（與 album_overrides 等價，見 ALBUM_ONBOARDING.md §6）：
+      // ready → data/apple-audio-runtime-v1.json 需有相同 previewUrl；
+      // unavailable/disabled → card-preview-status.js 需有對應狀態。
+      if (row.preview.status === 'ready') {
+        const mapKey = `${previewNorm(row.artist)}\u0000${previewNorm(row.album)}`;
+        const entry = staticAudioMap()?.entries?.[mapKey];
+        if (!entry) err(label, 'ready 但 album_overrides 與 apple-audio-runtime 靜態地圖皆無此卡');
+        else if (entry[2] !== row.preview.url) err(label, '靜態地圖 previewUrl 與 manifest 不一致');
+      } else {
+        const status = staticPreviewStatus()[keyOf(row.artist, row.album)];
+        if (status !== row.preview.status) err(label, `${row.preview.status} 但 album_overrides 與 card-preview-status.js 皆無對應狀態`);
+      }
     }
 
     const descUrl = `${WORKER}/album-desc?artist=${encodeURIComponent(row.artist)}&album=${encodeURIComponent(row.album)}&verify=${Date.now()}`;

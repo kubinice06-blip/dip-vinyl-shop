@@ -148,9 +148,12 @@
 
 - 優先 Apple 可直接播放的預覽音檔；其次 YouTube Music 官方 Album playlist；再其次經人工核對的完整專輯影片。
 - 必須同時核對藝人、專輯、版本，並實際確認網址 HTTP 2xx／3xx。
-- 有來源：寫 `album_overrides.previewUrl` 與 `previewStatus=ready`。
-- 查過但無可靠來源：寫 `previewStatus=unavailable`，不留 URL。
-- 明確不提供試聽：寫 `previewStatus=disabled`，不留 URL。
+- **兩條等價寫入路徑，擇一即可**（2026-07-22 店主確認靜態路徑為預設，不需後台人工操作）：
+  1. **靜態路徑（預設）**：ready → 寫進 `data/apple-audio-map-v1.json` 並重建 `data/apple-audio-runtime-v1.json`（鍵＝`appleAudioKey` 正規化，值＝`[storefront, collectionId, previewUrl]`，僅限 Apple .m4a 直連）；unavailable／disabled → 追加進 `card-preview-status.js`。git push 即生效。
+  2. **後台路徑**：經 admin.html 批次工具寫 `album_overrides.previewUrl`／`previewStatus`。YouTube 連結只能走這條（靜態地圖不收）。
+- 驗證器兩條都認：`album_overrides` 有文件就比對文件，否則回讀靜態地圖／狀態檔。
+- 查過但無可靠來源：`previewStatus=unavailable`，不留 URL。
+- 明確不提供試聽：`previewStatus=disabled`，不留 URL。
 - 不可為了提高命中率接受疑似配對。以上三種狀態都代表前端 `fixedOnly`，不得再即時搜尋 provider。
 
 ### 7. Prepare gate

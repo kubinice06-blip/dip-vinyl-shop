@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜電子擴充批次2：Detroit／Chicago 起源 64 張上架（首用 EP/Single 例外＋試聽改走靜態路徑）
+
+- Repo：`dip-vinyl-shop`
+- 1b 反查 35 位起源藝人（DAF 教訓沿用：Lil Louis 需查「Lil Louis & The World」）→ 266 候選 → 評分取前 60 → 封面 60/60（bandcamp 34/spotify 14/caa 12）→ 剔除 MB 誤標的 UR《Interstellar Fugitives》（實為合輯）、《Alleys of Your Mind / Off to Battle》（2004 合併再版）、《Omega: Alive》（live）、《Black Jazz Signature》（DJ-mix）→ 專輯 56 張。
+- **首次使用 §5.5 曲風例外**：8 張奠基 12 吋（Strings of Life、Acid Tracks、No UFO's、Your Love、Move Your Body、French Kiss、No Way Back、Can You Feel It），MB 逐張核實 EP/Single、各附 ≥2 歷史地位證據；Adonis《No Way Back》AI 評 classic 2 人工修正 4（留 manualNote）。
+- 數量：一般卡 60（seed 6119→6179）；**hall 王牌 4 張**（Strings of Life／Acid Tracks／Your Love／Can You Feel It，皆 classic=5＋跨來源共識；apex hall 406）——沿用店主「頂點卡都上」決策，如不同意可撤。preview ready 47／unavailable 17（地下廠牌不上串流屬預期；Frankie Knuckles《Your Love》iTunes 只有 Director's Cut 重錄版，人工駁回改 unavailable）。
+- **試聽改走靜態路徑（店主核定為預設）**：47 張 ready 寫進 `data/apple-audio-map-v1.json`（含 collectionId）→ 重建 runtime；17 張 unavailable 追加 `card-preview-status.js`。不再需要店主進後台貼 JSON。`ALBUM_ONBOARDING.md` §6 已改寫為「兩條等價路徑」；驗證器 published gate 同步支援：album_overrides 缺文件（404=合法）時 fallback 驗靜態地圖／狀態檔。
+- 踩坑：published gate 首跑 64 error——getJson 在 fallback 判斷前就把 404 記成 error；加 `allow404` 參數修正。另 chunkA agent 誤引 3 個 http:// 來源網址（驗證器擋下，換 https 或替代來源）。
+- 驗證：prepare gate 0 error；封面＋試聽網址全數實測 2xx；published gate 0 error 0 warning。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-preview-status.js`、`scripts/verify-album-onboarding.mjs`、`ALBUM_ONBOARDING.md`
+- 待辦：店主後台「👑 頂級牌」匯入＋入庫（批次1的5張＋本批4張一起）；批次3-8 評分進行中（917→前200）。
+
 ### 2026-07-22｜批次1頂點卡 9 張採用＋發現並修正「一卡兩身分」撞名
 
 - Repo：`dip-vinyl-shop`
