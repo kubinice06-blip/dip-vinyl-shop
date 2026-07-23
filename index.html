@@ -547,6 +547,18 @@
     .cd-body { background: #fff; width: 100%; max-width: 380px; padding: 24px 22px 28px; position: relative; text-align: center; }
     .cd-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray); line-height: 1; }
     .cd-rarity { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    /* 搜尋專輯 */
+    .album-search-form { padding: 28px 20px 8px; }
+    .album-search-field { margin-bottom: 14px; text-align: left; }
+    .album-search-field label { display: block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
+    .album-search-field input { width: 100%; border: 1px solid var(--line); padding: 12px; font-family: var(--mono); font-size: 13px; outline: none; background: none; color: var(--black); }
+    .album-search-field input:focus { border-color: var(--black); }
+    .album-search-btn { width: 100%; margin-top: 4px; background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 13px; cursor: pointer; }
+    .album-search-btn:disabled { opacity: 0.5; cursor: default; }
+    .album-search-error { font-size: 11px; color: #b00; margin-top: 12px; text-align: left; }
+    .album-search-result { padding: 20px 20px 40px; text-align: center; }
+    .album-search-note { font-size: 10px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.7; }
+
     .cd-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 14px; }
     .cd-artist { font-size: 12px; color: var(--gray); }
     .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
@@ -613,6 +625,13 @@
       <div>
         <div class="homehub-card-name">直接來一張</div>
         <div class="homehub-card-desc">隨機抽一張你沒聽過的</div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
+    <button class="homehub-card" data-go="album-search">
+      <div>
+        <div class="homehub-card-name">搜尋專輯</div>
+        <div class="homehub-card-desc">自行輸入專輯與藝人名，查這張的介紹。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
@@ -773,6 +792,14 @@
   <div class="quiz-inner">
     <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
     <div id="collectionContent"></div>
+  </div>
+</div>
+
+<!-- 搜尋專輯 modal -->
+<div class="quiz-modal" id="albumSearchModal">
+  <div class="quiz-inner">
+    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
+    <div id="albumSearchContent"></div>
   </div>
 </div>
 
@@ -1932,6 +1959,57 @@
     document.getElementById('modalMusic').innerHTML = '';
   }
 
+  // ───────── 搜尋專輯：自行輸入專輯＋藝人查介紹（僅閱覽，不能收藏） ─────────
+  function renderAlbumSearch() {
+    const el = document.getElementById('albumSearchContent');
+    el.innerHTML = `
+      <form class="album-search-form" id="albumSearchForm">
+        <div class="quiz-question" style="margin-bottom:8px;">搜尋專輯</div>
+        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名與藝人名，看看這張是什麼來頭。查詢結果僅供閱覽，不會收進唱片櫃。</div>
+        <div class="album-search-field"><label>專輯名 Album</label><input type="text" id="asAlbum" placeholder="例如：Kind of Blue" autocomplete="off"></div>
+        <div class="album-search-field"><label>藝人名 Artist</label><input type="text" id="asArtist" placeholder="例如：Miles Davis" autocomplete="off"></div>
+        <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
+        <div class="album-search-error" id="asError" style="display:none;"></div>
+      </form>
+      <div class="album-search-result" id="asResult"></div>`;
+    document.getElementById('albumSearchForm').addEventListener('submit', (e) => { e.preventDefault(); void doAlbumSearch(); });
+    document.getElementById('asAlbum').focus();
+  }
+
+  async function doAlbumSearch() {
+    const album = document.getElementById('asAlbum').value.trim();
+    const artist = document.getElementById('asArtist').value.trim();
+    const err = document.getElementById('asError');
+    const result = document.getElementById('asResult');
+    if (!album || !artist) { err.style.display = ''; err.textContent = '專輯名跟藝人名都要填喔。'; return; }
+    err.style.display = 'none';
+    const btn = document.getElementById('asSubmit');
+    btn.disabled = true; btn.textContent = '搜尋中…';
+    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找唱片行資料中…</div></div>`;
+    // 封面＋Spotify 直連與簡介並行查；簡介與卡片詳情同一套 /album-desc（KV 快取，查無時現場生成、可能要等幾秒）
+    const [sr, dr] = await Promise.all([
+      fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    ]);
+    btn.disabled = false; btn.textContent = '搜尋';
+    if (currentView !== 'album-search') return; // 等待期間已離開此頁
+    const cover = sr.imageUrl || '';
+    const desc = (dr.desc || '').trim();
+    result.innerHTML = `
+      ${cover ? `<img class="cd-cover" alt="">` : ''}
+      <div class="cd-artist"></div>
+      <div class="cd-album"></div>
+      <div class="cd-desc"></div>
+      <div id="asStreaming">${streamingBtnsHtml(artist, album, sr.spotifyUrl)}</div>
+      <div class="album-search-note">查詢結果僅供閱覽，不能收進唱片櫃</div>`;
+    // 使用者輸入與 AI 簡介一律走 textContent，避免被當成 HTML
+    if (cover) result.querySelector('.cd-cover').src = cover;
+    result.querySelector('.cd-artist').textContent = artist;
+    result.querySelector('.cd-album').textContent = album;
+    result.querySelector('.cd-desc').textContent = desc || '（查不到這張的介紹——檢查一下拼法，或這張真的太地下了。）';
+    resolveBandcampBtn(artist, album, document.getElementById('asStreaming'));
+  }
+
   // 主標籤切換 —— 所有分頁（含心情選歌 / 類型挑片 / 我的紀錄）統一走這個函式
   let activeTab = 'used';
   let currentView = 'home'; // 目前所在分頁（含非 main-tab 的唱片櫃／紀錄等）
@@ -1947,7 +2025,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'genreModal', 'historyModal', 'collectionModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'genreModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -1998,6 +2076,11 @@
     if (tab === 'collection') {
       document.getElementById('collectionModal').classList.add('open');
       renderCollection();
+      return;
+    }
+    if (tab === 'album-search') {
+      document.getElementById('albumSearchModal').classList.add('open');
+      renderAlbumSearch();
       return;
     }
 
@@ -4168,8 +4251,8 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'genre', 'random', 'history', 'collection']
-      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive', 'collection'];
+      ? ['home', 'quiz', 'genre', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive', 'collection', 'album-search'];
     setActiveTab(valid.includes(target) ? target : 'home');
   })();
 

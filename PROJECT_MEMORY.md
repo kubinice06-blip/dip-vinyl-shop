@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜新功能：搜尋專輯（自行輸入查介紹、僅閱覽不能收藏）
+
+- Repo：`dip-vinyl-shop`
+- 首頁 hub 新增「搜尋專輯」卡（`data-go="album-search"`，排在「直接來一張」之後）：
+  使用者自行輸入專輯名＋藝人名 → 並行打 worker `/spotify-search`（封面＋Spotify 直連）與
+  `/album-desc`（簡介，與卡片詳情同一套 KV 快取、查無時現場生成）→ 顯示封面／藝人／專輯／
+  簡介＋四平台串流按鈕（Bandcamp 沿用 `resolveBandcampBtn` 背景查直連）。
+- **刻意不放「收進唱片櫃」按鈕**，結果頁標註「僅供閱覽，不能收進唱片櫃」；兩欄未填會擋下並提示。
+- 實作走既有 quiz-modal 面板模式：`albumSearchModal`＋`renderAlbumSearch()`／`doAlbumSearch()`，
+  `setActiveTab` 收合清單與 hash 路由 valid 名單（web＋app 兩份）都加了 `album-search`；
+  使用者輸入與 AI 簡介一律 textContent 塞入防 XSS；等待期間離開頁面（`currentView` 變了）就不回填。
+- 主要檔案：`index.html`
+- 驗證：本機瀏覽器實測——hub 卡進頁、Kind of Blue｜Miles Davis 查到封面（Spotify CDN）＋
+  KV 簡介＋四平台按鈕（Bandcamp 解到直連）、無收藏按鈕；空欄提示與返回首頁收合正常；console 0 error。
+
 ### 2026-07-23｜R&B 擴充第一批：90s 黃金期＋日韓 R&B 共 101 張上架
 
 - Repo：`dip-vinyl-shop`（Firestore/KV 亦有寫入）
