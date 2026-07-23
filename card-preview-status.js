@@ -1,5 +1,9 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "8ball & mjg|space age 4 eva": "unavailable",
+  "three 6 mafia|when the smoke clears: sixty 6, sixty 1": "unavailable",
+  "three 6 mafia|smoked out, loced out": "unavailable",
+  "future|pluto": "unavailable",
   "lords of the underground|keepers of the funk": "unavailable",
   "mc lyte|eyes on this": "unavailable",
   "masta ace|take a look around": "unavailable",

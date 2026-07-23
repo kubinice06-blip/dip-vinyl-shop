@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜嘻哈第 2 波（南方）：98 張上架
+
+- Repo：dip-vinyl-shop（Firestore/KV 亦寫入）。批次：2026-07-23-hiphop-south-wave2。
+- 範圍：UGK／8Ball & MJG／Three 6／Geto Boys／Scarface／Master P（No Limit）／Cash Money
+  （Juvenile、Big Tymers）／crunk（Lil Jon、Crime Mob、YoungBloodZ）／休士頓 2005 浪潮
+  （Paul Wall、Slim Thug、Chamillionaire）／trap 世代（Gucci、Jeezy 補完、Future 補完、
+  Lil Baby、Gunna、Young Dolph、Key Glock、Playboi Carti 首專）。613 候選→98 張。
+- 掛名變體教訓再+3：Rick Ro$（Teflon Don）、Ghetto Boys（Grip It!）、The People's Champ
+  （撇號害 MB 搜尋落空）——搜不到先想「這張當年掛什麼名」。
+- 試聽 94 ready／4 unavailable（Pluto、Smoked Out, Loced Out、When the Smoke Clears、
+  Space Age 4 Eva 均已從 Apple 下架）。封面 98/98 全 CAA。
+- Jeezy 沿用池內既有「Young Jeezy」名（The Inspiration／The Recession），避免同人分裂。
+- 驗證：prepare 0 error；KV 98/98；published gate 0 error（CAA 間歇 500 重跑即過）。
+- 上架後 seed 6,807：hiphop 1,049 首度破千。
+
 ### 2026-07-23｜搜尋專輯頁移除唱盤機：點卡直接開簡介＋背景播試聽
 
 - Repo：`dip-vinyl-shop`

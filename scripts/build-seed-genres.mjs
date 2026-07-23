@@ -41,6 +41,7 @@ const ALBUM_GENRE_FIX = {
   'Jagged Edge|Jagged Little Thrill': ['hiphop','pop'],
   'The Weeknd|Hurry Up Tomorrow': ['hiphop','electronic','pop'],
   'Ne-Yo|Year of the Gentleman': ['hiphop','pop'],
+  'Trick Daddy|Thug Matrimony: Married to the Streets': ['hiphop'],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();
