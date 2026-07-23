@@ -190,6 +190,7 @@ node scripts/verify-album-onboarding.mjs <manifest.json>
 3. `album_overrides`：固定試聽／負面狀態，以及經明確採用的頂點 tier。
 4. 回讀上述三處，確認內容與 manifest 一致。
 5. **最後**才追加 `seed_cards.json`；若本次明確採用頂點卡則改寫 `apex_pool.json`。這一步是上架開關。
+6. 追加後執行 `node scripts/build-seed-genres.mjs` 補曲風欄：`seed_cards.json` 每列第 6 欄、`apex_pool.json` 每列第 3 欄為音樂地圖曲風 id 陣列（首頁「類型挑片」直接抽本地卡池，靠這欄過濾；缺欄的卡抽不到）。腳本只補缺欄的列，可重複執行。
 
 不要先推 seed 再補其他資料。
 

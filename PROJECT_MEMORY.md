@@ -788,6 +788,17 @@
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-23｜類型挑片／直接來一張改抽本地卡池（提示詞選片全面退役）
+- Repo：`dip-vinyl-shop`
+- 改動：店主要求兩個抽卡入口不再靠 AI 提示詞現想專輯，全面改抽現成資料庫。
+  1. **曲風欄批次**：新增 `scripts/build-seed-genres.mjs`——打 worker `/album-genres`（KV 幾乎全命中）為 `seed_cards.json` 每列補第 6 欄、`apex_pool.json` 每列補第 3 欄音樂地圖曲風 id 陣列。全池 6,439 張 seed（60 張查無曲風）＋ 628 張 apex 全數標完；腳本冪等、onboarding 追加新卡後重跑即可補缺。**卡池持續擴充中，程式一律以檔案當下內容為準，不得寫死張數。**
+  2. **`submitGenrePick` 重寫**：店內在售與 IG reel 由各 15% 改為**各 10%**；其餘全部改抽本地池——類型挑片按曲風欄過濾、直接來一張抽全池；三位品味錨點保留 UI，改為本地權重（錨點在 GENRE_DATA 名單前半＝深挖名字→抽卡往高冷門度偏，`gpDeepness`＋距離加權取代 AI 錨點提示詞）。特殊模式機率照舊（殿堂/流亡/異端各 3%、流行 5%），殿堂/流亡/異端改抽 `apex_pool` 對應分類（類型挑片時只挑同曲風王牌，沒有就退回一般池；流亡不再即時查聽眾數——池子已預先驗證），流行＝seed 中高經典低硬蕊低冷門子集。`drawSpecialCard`（特殊抽卡券）同步改抽 apex_pool。
+  3. **資料全走現成快取**：封面 `card_catalog`（後台校正優先）→ worker KV `/spotify-search` 鏈；簡介 `album_overrides.desc` → NEOCLASSIC 人工簡介 → 店家/IG 自寫 → `/album-desc`（KV 預生成，與卡片詳情同一套）；三軸直接用 seed 自帶數值（後台校正覆蓋，省一次請求）；結果頁新增「▶ 試聽這張」＝ DipPlayer（iTunes 30 秒、固定連結優先、`DipPreviewStatus` 無來源不顯示）。
+  4. **刪除**：六種選片提示詞、GP_*_SEEDS、GENRE_DATA subframes、529 排隊/429 額度/JSON 解析容錯、`fetchAlbumListeners`/`ULTRA_OBSCURE_MAX_LISTENERS`、`streamText`、`gp_mode`。心情選歌（quiz）仍走原提示詞路徑，未動。
+  5. **Onboarding 同步**：`verify-album-onboarding.mjs` published gate 改驗三軸取 `slice(2,5)` 並強制曲風欄存在（seed 第 6 欄／apex 第 3 欄）；ALBUM_ONBOARDING.md 與兩份 dip-card-pool-expand SKILL.md 補格式與補欄指令。battle/roguelike/admin 均為前欄解構，新欄相容已確認。
+- 主要檔案：`index.html`、`seed_cards.json`、`apex_pool.json`、`scripts/build-seed-genres.mjs`、`scripts/verify-album-onboarding.mjs`、`ALBUM_ONBOARDING.md`
+- 驗證：三段 inline script `node --check` 通過；本機 http-server 實抽——直接來一張連抽三張皆本地池且不重複（seen 過濾生效）、類型挑片選 Jazz 走完三輪錨點抽到 jazz 標籤卡、三軸星數與 seed 數值逐一比對一致（4/1/1）、「▶ 試聽這張」實際播放成功並可停止、「再一張」正常；battle.html 與 roguelike.html 載入六欄 seed／三欄 apex console 零錯誤；`/album-desc` 抽測三張全 KV-HIT（測試瀏覽器擋跨域 fetch 導致面板顯示暫無介紹，屬測試環境限制，正式站同路徑即卡片詳情現行路徑）；build-seed-genres 重跑 0 補抓確認冪等。
+
 ### 2026-07-21｜音樂地圖 albums 掉隊偵測（healthy() 加一致性不變式）＋收合條顯示點數
 - Repo：`dip-vinyl-shop`
 - 改動：店主回報 pvp 收合條寫「收藏 1 張」但展開地圖有滿滿資料。查證實際資料為 `albums=1` 而 `credits` 合計 **29 點**（Folk 7／Hip-hop 6／Soul 5／Classical 3／Pop 2／Blues 2／Jazz・Rock・Electronic・World 各 1）——`musicMap.albums` 掉隊沒跟著累加，但摘要算出的主路徑（民謠／嘻哈）是正確的。

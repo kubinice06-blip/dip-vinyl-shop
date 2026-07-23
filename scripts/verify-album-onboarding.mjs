@@ -278,12 +278,17 @@ if (publishedMode && errors.length === 0) {
     const seedMatches = seeds.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
     if (row.published.seedCards) {
       if (seedMatches.length !== 1) err(label, `seed_cards.json 應恰好 1 筆，目前 ${seedMatches.length}`);
-      else if (seedMatches[0].slice(2).some((value, i) => value !== [row.ratings.classic, row.ratings.obscurity, row.ratings.accessibility][i])) err(label, 'seed_cards.json 三軸與 manifest 不一致');
+      else {
+        if (seedMatches[0].slice(2, 5).some((value, i) => value !== [row.ratings.classic, row.ratings.obscurity, row.ratings.accessibility][i])) err(label, 'seed_cards.json 三軸與 manifest 不一致');
+        // 第 6 欄曲風陣列（類型挑片靠它過濾；追加後跑 scripts/build-seed-genres.mjs 補齊）
+        if (!Array.isArray(seedMatches[0][5])) err(label, 'seed_cards.json 缺第 6 欄曲風陣列，請跑 scripts/build-seed-genres.mjs');
+      }
     }
     if (row.published.apexPool) {
       const list = apexPool[row.apexAssessment.tier] || [];
       const matches = list.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
       if (matches.length !== 1) err(label, `apex_pool.${row.apexAssessment.tier} 應恰好 1 筆，目前 ${matches.length}`);
+      else if (!Array.isArray(matches[0][2])) err(label, `apex_pool.${row.apexAssessment.tier} 缺第 3 欄曲風陣列（類型挑片的特殊模式靠它過濾）`);
     }
 
     const docId = encodeURIComponent(keyOf(row.artist, row.album));
