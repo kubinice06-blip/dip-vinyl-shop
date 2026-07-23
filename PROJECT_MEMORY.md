@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜電子擴充批次1：工業／synth-pop 根源 77 張上架
+
+- Repo：`dip-vinyl-shop`
+- 電子擴充第一批（規劃見同日「曲風 release type 例外」條目）：1b 藝人清單反查 39 組（DAF、OMD 需用全名 Deutsch Amerikanische Freundschaft／Orchestral Manoeuvres in the Dark 才不會抓錯人）→ 730 候選 → 排除已覆蓋充足的 6 團 → 620 張評分排序取前 80（classic 門檻線 4）→ 封面 80/80 → 排除 2 張髒資料（TG《CD1》《2nd Annual Report》變體）與 1 張未授權 bootleg（TG《The First Annual Report》）→ **77 張全部完成 onboarding 並上架**。
+- 數量回報：候選 730／排除 653／一般卡 77／頂點候選 9（未採用）／preview ready 76（74 Apple .m4a＋2 YouTube）／unavailable 1（Coil《ANS》盒裝無串流）／disabled 0。曲風：73/77 判 electronic，4 張 Current 93 後期作正確歸 folk 保留。seed_cards.json 6052→6129。
+- 頂點卡候選（記錄在 manifest、**尚未寫入 apex_pool.json，待店主決定**）：hall×2（TG《20 Jazz Funk Greats》、OMD《Architecture & Morality》）；heresy×7（TG《Second Annual Report》《D.o.A.》、NWW《Chance Meeting》《Homotopy to Marie》、Neubauten《Kollaps》《Zeichnungen》、SPK《Leichenschrei》）。
+- 規則調整（店主核定）：簡介 180 字上限放寬——審核過無冗贅字詞可超過，manifest 標 `description.lengthReviewed=true`；驗證器與 ALBUM_ONBOARDING.md 已同步。
+- 踩坑記錄：
+  1. `2-resolve-covers.mjs` 讀 `row.title` 但 2b 精選流程輸出是 `album`，欄位對不上時不報錯、查字面 "undefined" 還巧合全配到同一張封面、假 100% 命中——已改成 title/album 都吃＋缺值防呆。**精選流程餵步驟 2 前務必轉 `{artist,title}`（skill 文件本來就有寫，這次是漏做）。**
+  2. 固定試聽一開始誤填 music.apple.com **網頁**連結（admin 白名單擋下才發現）；播放器（`pinnedPreviewKind`）要的是 audio-ssl.itunes.apple.com 的**直接 .m4a 音檔**或 YouTube 連結。已用本機 iTunes Search API（沿用 build-apple-audio-map 比對邏輯、score≥85）重解 74 張＋手動補 6 張。
+  3. 三個研究 agent 的簡介 46/78 超出 180 字，逐張人工精簡回區間（此事促成上述放寬政策，適用之後批次）。
+- 主要檔案：`seed_cards.json`（+77）、`ALBUM_ONBOARDING.md`、`scripts/verify-album-onboarding.mjs`、Firestore `card_catalog`（77 筆 PATCH）、`album_overrides`（店主經後台批次工具寫入 77 筆）、Worker KV desc2:（77 筆）
+- 驗證：prepare gate 0 error；封面／試聽網址全數實測 HTTP 2xx；`/album-desc` 抽查 KV-HIT 且文字一致；album_overrides 回讀 77/77 一致；published gate 0 error 0 warning。
+
 ### 2026-07-22｜上架公式新增「曲風 release type 例外」白名單（電子樂開放 EP／Single／DJ-mix）
 
 - Repo：`dip-vinyl-shop`

@@ -189,7 +189,12 @@ for (let index = 0; index < albums.length; index++) {
   if (!isObj(description)) err(label, '缺 description');
   else {
     const length = charCount(description.text);
-    if (length < 80 || length > 180) err(label, `description.text 長度必須 80–180 字，目前 ${length}`);
+    if (length < 80) err(label, `description.text 長度必須至少 80 字，目前 ${length}`);
+    // 2026-07-22 店主核定：超過 180 字允許，但必須經人工審核確認無冗贅字詞，
+    // 以 description.lengthReviewed=true 留下審核紀錄；未標記仍照原上限擋下。
+    else if (length > 180 && description.lengthReviewed !== true) {
+      err(label, `description.text 超過 180 字（${length}）：需人工審核無冗贅字詞後標記 lengthReviewed=true`);
+    }
     if (BANNED.test(description.text || '')) err(label, `description.text 含禁止用語：${description.text.match(BANNED)[0]}`);
     if (/^這張專輯/.test(clean(description.text))) err(label, 'description.text 不可用「這張專輯」開頭');
     uniqueHttps(description.sourceUrls, 2, `${label} description.sourceUrls`);
