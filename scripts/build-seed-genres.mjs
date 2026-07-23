@@ -42,6 +42,10 @@ const ALBUM_GENRE_FIX = {
   'The Weeknd|Hurry Up Tomorrow': ['hiphop','electronic','pop'],
   'Ne-Yo|Year of the Gentleman': ['hiphop','pop'],
   'Trick Daddy|Thug Matrimony: Married to the Streets': ['hiphop'],
+  'The Coup|Kill My Landlord': ['hiphop','soul'],
+  'The Coup|Party Music': ['hiphop','soul'],
+  'The Coup|Sorry to Bother You': ['hiphop','soul'],
+  'Murs|Murs 3:16: The 9th Edition': ['hiphop'],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();

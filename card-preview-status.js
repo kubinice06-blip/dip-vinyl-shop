@@ -1,5 +1,14 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "immortal technique|revolutionary, volume 1": "unavailable",
+  "the coup|steal this album": "unavailable",
+  "mr. lif|i phantom": "unavailable",
+  "slum village|fan-tas-tic, volume 1": "unavailable",
+  "binary star|waterworld": "unavailable",
+  "jedi mind tricks|the psycho-social, chemical, biological, and electro-magnetic manipulation of human consciousness": "unavailable",
+  "mos def|the ecstatic": "unavailable",
+  "reflection eternal|revolutions per minute": "unavailable",
+  "reflection eternal|train of thought": "unavailable",
   "8ball & mjg|space age 4 eva": "unavailable",
   "three 6 mafia|when the smoke clears: sixty 6, sixty 1": "unavailable",
   "three 6 mafia|smoked out, loced out": "unavailable",

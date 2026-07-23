@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜嘻哈第 3 波（地下／獨立）：77 張上架
+
+- Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-underground-wave3。
+- 範圍：Rawkus 系（Black Star、Reflection Eternal、Pharoahe Monch、Big L 遺作、Mos Def 補完）
+  ／Def Jux（El-P、Aesop Rock、Mr. Lif）／Rhymesayers（Atmosphere、Eyedea、Brother Ali 池內已有）
+  ／南方地下（CunninLynguists、Little Brother）／費城（Jedi Mind Tricks×5）／西岸（J5、Dilated、
+  Hiero、Freestyle Fellowship、PUTS、The Coup×5）。412 候選→77 張。
+- Mos Def 消歧義教訓：MB 搜「Mos Def」首位是 Black Star、次位是龐克團 The Yah Mos Def，
+  本尊條目叫「Yasiin Bey (fka Mos Def)」——改名藝人要用現名找條目、用舊名上卡。
+- J5 同名卡《Jurassic 5》因 Apple 無試聽觸發自我同名規則撤下（先前批次同規則）。
+- 試聽 68 ready／9 unavailable（Rawkus／Def Jux／Viper 授權黑洞：Train of Thought、
+  The Ecstatic、I Phantom、Revolutionary 卷一卷二等串流均缺）。封面 78/78 全 CAA。
+- 驗證：prepare 0 error；KV 77/77；published gate 0 error。
+- 上架後 seed 6,884：hiphop 1126／soul 923。
+
 ### 2026-07-23｜嘻哈第 2 波（南方）：98 張上架
 
 - Repo：dip-vinyl-shop（Firestore/KV 亦寫入）。批次：2026-07-23-hiphop-south-wave2。
