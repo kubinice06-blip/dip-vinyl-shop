@@ -1,19 +1,23 @@
 # dip vinyl 專案備忘錄
 
-### 2026-07-23｜新功能：搜尋專輯（自行輸入查介紹、僅閱覽不能收藏）
+### 2026-07-23｜新功能：搜尋專輯（擇一輸入、唱片櫃式卡片牆＋唱盤試聽、僅閱覽不能收藏）
 
 - Repo：`dip-vinyl-shop`
-- 首頁 hub 新增「搜尋專輯」卡（`data-go="album-search"`，排在「直接來一張」之後）：
-  使用者自行輸入專輯名＋藝人名 → 並行打 worker `/spotify-search`（封面＋Spotify 直連）與
-  `/album-desc`（簡介，與卡片詳情同一套 KV 快取、查無時現場生成）→ 顯示封面／藝人／專輯／
-  簡介＋四平台串流按鈕（Bandcamp 沿用 `resolveBandcampBtn` 背景查直連）。
-- **刻意不放「收進唱片櫃」按鈕**（店主指示結果頁不放「僅供閱覽」標註字樣）；兩欄未填會擋下並提示。
-- 實作走既有 quiz-modal 面板模式：`albumSearchModal`＋`renderAlbumSearch()`／`doAlbumSearch()`，
-  `setActiveTab` 收合清單與 hash 路由 valid 名單（web＋app 兩份）都加了 `album-search`；
-  使用者輸入與 AI 簡介一律 textContent 塞入防 XSS；等待期間離開頁面（`currentView` 變了）就不回填。
+- 首頁 hub 新增「搜尋專輯」卡（`data-go="album-search"`，排在「直接來一張」之後）。
+  第二版（同日改版）：專輯名／藝人名**擇一即可搜**；結果走 Apple `itunes.apple.com/search`
+  JSONP `entity=album`（與 dip-player 試聽同一條路，失敗退 r.jina.ai 文字閘道），最多 36 張，
+  以唱片櫃 `collect-grid`／`collect-card` 版型排列（無稀有度標）。
+- 互動與唱片櫃一致：**點卡片放上唱盤試聽**（重用 `playCollectionRecord`＋`turntableHtml`；
+  四處 `#collectionContent .turntable-*` 選擇器一併通用化成 `.quiz-modal.open .turntable-*`，
+  兩頁各有一台唱盤、同一個 DipPlayer 掛來掛去）；**點 ⓘ 開同一個 cardDetailOverlay**
+  （/album-desc 簡介＋四平台串流鈕＋resolveBandcampBtn），但無收藏／分享／刪除。
+- 搜尋卡 cardId 用 `as:` 前綴避免撞唱片櫃；容器級委派先攔截，全域唱片櫃 handler 查
+  `_collCache` 不中會安靜略過。返回首頁再進來保留上次查詢與結果（`_asQuery`/`_asResults`）。
+- **刻意不放「收進唱片櫃」按鈕**（店主指示結果頁不放「僅供閱覽」標註字樣）。
 - 主要檔案：`index.html`
-- 驗證：本機瀏覽器實測——hub 卡進頁、Kind of Blue｜Miles Davis 查到封面（Spotify CDN）＋
-  KV 簡介＋四平台按鈕（Bandcamp 解到直連）、無收藏按鈕；空欄提示與返回首頁收合正常；console 0 error。
+- 驗證：本機瀏覽器實測——只填 Fishmans 搜到 36 張（Long Season 第一張、封面齊）；點卡
+  唱盤轉起來（status playing、封面上盤、卡片高亮，30 秒試聽放完自然停）；ⓘ 開詳情
+  KV 簡介＋四平台鈕、無分享/刪除；返回再進結果保留；唱片櫃頁未登入空狀態正常；console 0 error。
 
 ### 2026-07-23｜R&B 擴充第一批：90s 黃金期＋日韓 R&B 共 101 張上架
 

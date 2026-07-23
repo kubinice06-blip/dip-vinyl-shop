@@ -631,7 +631,7 @@
     <button class="homehub-card" data-go="album-search">
       <div>
         <div class="homehub-card-name">搜尋專輯</div>
-        <div class="homehub-card-desc">自行輸入專輯與藝人名，查這張的介紹。</div>
+        <div class="homehub-card-desc">輸入專輯或藝人名，查介紹、放上唱盤試聽。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
@@ -1391,8 +1391,9 @@
     return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div class="turntable-tracklist" data-turntable-tracks hidden></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
   }
 
+  // 唱盤機同時給「我的唱片櫃」與「搜尋專輯」用，一律抓目前打開面板裡的那台
   function stepTurntable(time) {
-    const platter = document.querySelector('#collectionContent .turntable-platter');
+    const platter = document.querySelector('.quiz-modal.open .turntable-platter');
     const dt = turntableLastTime ? Math.min((time - turntableLastTime) / 1000, .05) : 0;
     turntableLastTime = time;
     const desired = time >= turntableSpinReadyAt ? turntableTarget : 0;
@@ -1412,7 +1413,7 @@
   function updateTurntableState(playerState) {
     const wasPlaying = lastPlayerState.status === 'playing';
     lastPlayerState = playerState;
-    const panel = document.querySelector('#collectionContent .turntable-panel');
+    const panel = document.querySelector('.quiz-modal.open .turntable-panel');
     if (!panel) return;
     const keepSpinning = playerState.status === 'loading' && wasPlaying;
     const isPlaying = playerState.status === 'playing' || keepSpinning;
@@ -1455,7 +1456,7 @@
   }
 
   function animateRecordToTurntable(source, coverUrl) {
-    const platter = document.querySelector('#collectionContent .turntable-platter');
+    const platter = document.querySelector('.quiz-modal.open .turntable-platter');
     if (!source || !platter) return;
     const from = source.getBoundingClientRect(), to = platter.getBoundingClientRect(), flight = document.createElement('div');
     flight.className = 'record-flight';
@@ -1472,7 +1473,7 @@
     currentRecordId = card.cardId;
     currentRecord = card;
     document.querySelectorAll('.collect-card').forEach(item => item.classList.toggle('active', item.dataset.cardId === card.cardId));
-    const panel = document.querySelector('#collectionContent .turntable-panel'), label = panel?.querySelector('.turntable-label');
+    const panel = document.querySelector('.quiz-modal.open .turntable-panel'), label = panel?.querySelector('.turntable-label');
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
@@ -1959,54 +1960,150 @@
     document.getElementById('modalMusic').innerHTML = '';
   }
 
-  // ───────── 搜尋專輯：自行輸入專輯＋藝人查介紹（僅閱覽，不能收藏） ─────────
+  // ───────── 搜尋專輯：自行輸入專輯／藝人（擇一即可）查介紹＋試聽（僅閱覽，不能收藏） ─────────
+  let _asResults = [];          // 本次搜尋結果（cardId 用 as: 前綴，避免撞唱片櫃）
+  let _asQuery = { album:'', artist:'' };
+  let _asBound = false;
+
   function renderAlbumSearch() {
     const el = document.getElementById('albumSearchContent');
     el.innerHTML = `
       <form class="album-search-form" id="albumSearchForm">
         <div class="quiz-question" style="margin-bottom:8px;">搜尋專輯</div>
-        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名與藝人名，看看這張是什麼來頭。查詢結果僅供閱覽，不會收進唱片櫃。</div>
+        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），點卡片放上唱盤試聽，點 ⓘ 看介紹。</div>
         <div class="album-search-field"><label>專輯名 Album</label><input type="text" id="asAlbum" placeholder="例如：Kind of Blue" autocomplete="off"></div>
         <div class="album-search-field"><label>藝人名 Artist</label><input type="text" id="asArtist" placeholder="例如：Miles Davis" autocomplete="off"></div>
         <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
         <div class="album-search-error" id="asError" style="display:none;"></div>
       </form>
-      <div class="album-search-result" id="asResult"></div>`;
+      ${turntableHtml()}
+      <div id="asResults">${_asResults.length ? _asGridHtml() : ''}</div>`;
+    document.getElementById('asAlbum').value = _asQuery.album;
+    document.getElementById('asArtist').value = _asQuery.artist;
     document.getElementById('albumSearchForm').addEventListener('submit', (e) => { e.preventDefault(); void doAlbumSearch(); });
-    document.getElementById('asAlbum').focus();
+    ensureCollectionPlayer(el);
+    if (!_asBound) {
+      _asBound = true;
+      // 委派掛在容器上：比全域唱片櫃 handler 先跑；後者查 _collCache 不會命中 as: 卡而安靜略過
+      el.addEventListener('click', (e) => {
+        const info = e.target.closest('[data-as-info]');
+        if (info) { openSearchDetail(Number(info.dataset.asInfo)); return; }
+        const card = e.target.closest('.collect-card[data-card-id]');
+        if (!card) return;
+        const rec = _asResults.find(r => r.cardId === card.dataset.cardId);
+        if (rec) playCollectionRecord(rec, card.querySelector('.cc-thumb') || card);
+      });
+    }
+    if (!_asResults.length) document.getElementById('asAlbum').focus();
+  }
+
+  function _asCardHtml(c, i) {
+    const cardId = escapeCollectionHtml(c.cardId), artist = escapeCollectionHtml(c.artist), album = escapeCollectionHtml(c.album);
+    const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
+    return `<article class="collect-card${currentRecordId === c.cardId ? ' active' : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="播放 ${artist}《${album}》">
+      <div class="cc-thumb">${cover}<button class="cc-info" type="button" data-as-info="${i}" aria-label="查看 ${artist}《${album}》詳情">ⓘ</button></div>
+      <div class="cc-artist">${artist}</div>
+      <div class="cc-album">${album}</div>
+    </article>`;
+  }
+
+  function _asGridHtml() {
+    return `<div class="collect-grid" style="border-top:1px solid var(--line);">${_asResults.map(_asCardHtml).join('')}</div>`;
+  }
+
+  // 專輯清單搜尋走 Apple JSONP（與 dip-player 試聽同一條路；手機 IP 被 Apple 擋時退 r.jina.ai 文字閘道）
+  function _asJsonp(requestUrl) {
+    return new Promise(resolve => {
+      const cb = `dipAlbumSearchCb${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement('script');
+      let done = false;
+      const timer = setTimeout(() => finish(null), 8000);
+      function finish(v) {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        try { delete window[cb]; } catch (_) { window[cb] = undefined; }
+        script.remove();
+        resolve(v && typeof v === 'object' ? v : null);
+      }
+      window[cb] = finish;
+      requestUrl.searchParams.set('callback', cb);
+      script.src = requestUrl.toString();
+      script.async = true;
+      script.onerror = () => finish(null);
+      script.onload = () => setTimeout(() => finish(null), 50);
+      document.head.appendChild(script);
+    });
+  }
+
+  async function _asItunesAlbums(term) {
+    const params = new URLSearchParams({ term, country:'TW', media:'music', entity:'album', limit:'36' });
+    const direct = new URL('https://itunes.apple.com/search');
+    for (const [k, v] of params) direct.searchParams.set(k, v);
+    let json = await _asJsonp(direct);
+    if (!json) {
+      try {
+        const res = await fetch(`https://r.jina.ai/http://itunes.apple.com/search?${params.toString().replace(/&/g, '%26')}`);
+        const text = await res.text();
+        const s = text.indexOf('{'), e = text.lastIndexOf('}');
+        if (s >= 0 && e > s) json = JSON.parse(text.slice(s, e + 1));
+      } catch (_) {}
+    }
+    return json?.results || [];
   }
 
   async function doAlbumSearch() {
     const album = document.getElementById('asAlbum').value.trim();
     const artist = document.getElementById('asArtist').value.trim();
     const err = document.getElementById('asError');
-    const result = document.getElementById('asResult');
-    if (!album || !artist) { err.style.display = ''; err.textContent = '專輯名跟藝人名都要填喔。'; return; }
+    const result = document.getElementById('asResults');
+    if (!album && !artist) { err.style.display = ''; err.textContent = '專輯名或藝人名至少填一欄。'; return; }
     err.style.display = 'none';
+    _asQuery = { album, artist };
     const btn = document.getElementById('asSubmit');
     btn.disabled = true; btn.textContent = '搜尋中…';
     result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找唱片行資料中…</div></div>`;
-    // 封面＋Spotify 直連與簡介並行查；簡介與卡片詳情同一套 /album-desc（KV 快取，查無時現場生成、可能要等幾秒）
-    const [sr, dr] = await Promise.all([
-      fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-      fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-    ]);
+    const rows = await _asItunesAlbums(`${artist} ${album}`.trim());
     btn.disabled = false; btn.textContent = '搜尋';
     if (currentView !== 'album-search') return; // 等待期間已離開此頁
-    const cover = sr.imageUrl || '';
-    const desc = (dr.desc || '').trim();
-    result.innerHTML = `
-      ${cover ? `<img class="cd-cover" alt="">` : ''}
-      <div class="cd-artist"></div>
-      <div class="cd-album"></div>
-      <div class="cd-desc"></div>
-      <div id="asStreaming">${streamingBtnsHtml(artist, album, sr.spotifyUrl)}</div>`;
-    // 使用者輸入與 AI 簡介一律走 textContent，避免被當成 HTML
-    if (cover) result.querySelector('.cd-cover').src = cover;
-    result.querySelector('.cd-artist').textContent = artist;
-    result.querySelector('.cd-album').textContent = album;
-    result.querySelector('.cd-desc').textContent = desc || '（查不到這張的介紹——檢查一下拼法，或這張真的太地下了。）';
-    resolveBandcampBtn(artist, album, document.getElementById('asStreaming'));
+    const seen = new Set();
+    _asResults = rows
+      .filter(r => r.collectionName && r.artistName && r.collectionId && !seen.has(r.collectionId) && seen.add(r.collectionId))
+      .map((r, i) => ({
+        cardId: `as:${i}`,
+        artist: r.artistName,
+        album: r.collectionName,
+        coverUrl: (r.artworkUrl100 || '').replace('100x100', '300x300'),
+      }));
+    result.innerHTML = _asResults.length
+      ? _asGridHtml()
+      : `<div class="album-search-result"><div class="cd-desc">查不到相符的專輯——檢查一下拼法，或這張真的太地下了。</div></div>`;
+  }
+
+  // 搜尋結果詳情：與唱片櫃卡片詳情同一個 overlay 與簡介來源，但沒有收藏／分享／刪除
+  function openSearchDetail(idx) {
+    const c = _asResults[idx];
+    if (!c) return;
+    const ov = document.getElementById('cardDetailOverlay');
+    const body = ov.querySelector('.cd-body');
+    body.innerHTML = `
+      <button class="cd-close" data-cd-close>✕</button>
+      ${c.coverUrl ? `<img class="cd-cover" src="${escapeCollectionHtml(c.coverUrl)}" alt="">` : ''}
+      <div class="cd-artist">${escapeCollectionHtml(c.artist)}</div>
+      <div class="cd-album">${escapeCollectionHtml(c.album)}</div>
+      <div class="cd-desc" id="cdDesc">載入介紹…</div>
+      <div class="cd-streaming" id="cdStreaming"></div>
+    `;
+    ov.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+      .then(r => r.ok ? r.json() : {})
+      .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = (d.desc || '').trim() || '（暫無介紹）'; })
+      .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+      .then(r => r.ok ? r.json() : {})
+      .then(sr => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); resolveBandcampBtn(c.artist, c.album, el); } })
+      .catch(() => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album); resolveBandcampBtn(c.artist, c.album, el); } });
   }
 
   // 主標籤切換 —— 所有分頁（含心情選歌 / 類型挑片 / 我的紀錄）統一走這個函式
