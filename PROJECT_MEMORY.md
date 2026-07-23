@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-22｜批次1頂點卡 9 張採用＋發現並修正「一卡兩身分」撞名
+
+- Repo：`dip-vinyl-shop`
+- 店主核定批次1全部 9 張頂點候選採用：hall×2（TG《20 Jazz Funk Greats》、OMD《Architecture & Morality》）、heresy×7。
+- **執行時發現批次1去重漏洞**：5 張卡（TG《Second Annual Report》、NWW《Chance Meeting》、Neubauten《Kollaps》、CabVolt《Red Mecca》、SPK《Leichenschrei》）**早已在 apex_pool.heresy 固定名單**，批次1仍把它們上架成普卡——去重只比對了 seed_cards.json，沒比 apex_pool.json，造成一卡兩身分（普卡＋王牌並存）。
+- 修正：10 張自 seed_cards.json 移除（9 張升級＋本來就是王牌的 Red Mecca），apex_pool.json 新增 5 張（其餘 5 張原本就在）；seed 6129→6119、apex hall 400→402、heresy 100→103。
+- **工具防呆三處**（之後所有批次自動生效）：`verify-album-onboarding.mjs` prepare gate 加 apex_pool 撞名檢查；skill 的 `2b-rate-and-rank.mjs` 與 `3c-dedupe-finalize.mjs` 的「排除現有卡池」都改為 seed＋apex 聯集。
+- 待辦：店主需在後台「👑 頂級牌」按「⬆ 匯入固定名單」＋「⚡⚡ 全部入庫」（等 Pages 部署完新 apex_pool.json 再按），把新 5 張寫進 Firestore card_catalog(tier)＋album_overrides.tier；完成後跑 manifest published gate 覆核。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`、`scripts/verify-album-onboarding.mjs`、skill scripts×2
+
 ### 2026-07-22｜電子擴充批次1：工業／synth-pop 根源 77 張上架
 
 - Repo：`dip-vinyl-shop`

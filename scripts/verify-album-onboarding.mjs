@@ -235,6 +235,14 @@ if (!publishedMode && errors.length === 0) {
   const seeds = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
   const existing = new Set(seeds.map(row => keyOf(row[0], row[1])));
   for (const row of albums) if (existing.has(keyOf(row.artist, row.album))) err(`${row.artist} — ${row.album}`, 'prepare gate 發現已存在 seed_cards.json，請先釐清是重跑或重複卡');
+  // apex_pool 也要查：2026-07-22 批次1有 5 張與 apex_pool.heresy 撞名仍被上架成普卡（一卡兩身分）
+  const apexPool = JSON.parse(fs.readFileSync(path.join(ROOT, 'apex_pool.json'), 'utf8'));
+  const apexExisting = new Map();
+  for (const [tier, list] of Object.entries(apexPool)) for (const [a, b] of list) apexExisting.set(keyOf(a, b), tier);
+  for (const row of albums) {
+    const tier = apexExisting.get(keyOf(row.artist, row.album));
+    if (tier && row.published?.apexPool !== true) err(`${row.artist} — ${row.album}`, `已存在 apex_pool.${tier}（王牌），不得再以普卡上架；若確為同一張請改走 apexPool 入口或自本批移除`);
+  }
 }
 
 if (publishedMode && errors.length === 0) {
