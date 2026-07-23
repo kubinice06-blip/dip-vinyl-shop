@@ -1,5 +1,14 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "lords of the underground|keepers of the funk": "unavailable",
+  "mc lyte|eyes on this": "unavailable",
+  "masta ace|take a look around": "unavailable",
+  "big daddy kane|prince of darkness": "unavailable",
+  "kool g rap & dj polo|live and let die": "unavailable",
+  "kool g rap & dj polo|wanted: dead or alive": "unavailable",
+  "kool g rap & dj polo|road to the riches": "unavailable",
+  "gang starr|no more mr. nice guy": "unavailable",
+  "bobby v.|bobby valentino": "unavailable",
   "mary j. blige|no more drama": "unavailable",
   "安室奈美恵|sweet 19 blues": "unavailable",
   "安室奈美恵|genius 2000": "unavailable",

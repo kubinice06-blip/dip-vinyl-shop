@@ -1,5 +1,27 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜R&B 第二批＋嘻哈黃金年代第 1 波：共 170 張上架
+
+- Repo：（Firestore/KV 亦寫入）。批次：（107 張：
+  New Jack Swing 全收＋2000s R&B＋Alt-R&B）＋（63 張）。
+- 流程同第一批：MB 目錄（61 位 1b＋19 位 mbid 消歧義）→ 567 候選評分 → 人工選片 171 →
+  封面全走 MB→CAA（Spotify 全程 429；171/171 命中，含 Master Ace／Show & A.G. 舊掛名、
+  Diamond and The Psychotic Neurotics 變名反查）→ 簡介 170 筆自寫 → 兩道 gate 全過。
+- **試聽新教訓**：Apple /search 對「The Weeknd Thursday」這類詞會回垃圾結果，改用
+  「artist 搜 id → /lookup 全目錄」最穩；「(Original)」「Bonus Track Version」後綴要納入
+  albumCore 正規化。最終 A 106 ready／1 unavailable、B 56 ready／8 unavailable
+  （Cold Chillin'／Wild Pitch 授權黑洞：Kool G Rap & DJ Polo×3、No More Mr. Nice Guy、
+  Prince of Darkness、Take a Look Around、Eyes on This、Keepers of the Funk）。
+- **舊髒資料修正**：先前擴充留下的 U+2010「Ne‐Yo」三張卡（雜湊評分 C1）改 ASCII 名、
+  Because of You 套用重查評分 C3/O1/A1、刪 Firestore 舊孤兒文件補寫新 id；
+  O.C.《Word...Life》既有卡假 O4 修正為 C4/O2/A3（seed＋card_catalog 同步）。
+- 人工升分：Showbiz & A.G.《Runaway Slave》C2→C4（D.I.T.C. 開山，理由記 manifest）。
+  ALBUM_GENRE_FIX 新增 5 筆。頂點 0 張採用。R. Kelly 掛名全程排除。
+- 上架後（seed 6,709）：hiphop 951／soul 915，嘻哈R&B類含標破 1,860。
+- 主要檔案：（+169）、（+160）、
+  （+9）、- 驗證：兩批 prepare gate 0 error；KV 回讀 170/170 KV-HIT；published gate A 107／B 63 全過。
+- 待辦：嘻哈第 2–6 波（南方／地下／實驗／Beat Scene／國際含華語）接續執行。
+
 ### 2026-07-23｜新功能：搜尋專輯（擇一輸入、唱片櫃式卡片牆＋唱盤試聽、僅閱覽不能收藏）
 
 - Repo：`dip-vinyl-shop`

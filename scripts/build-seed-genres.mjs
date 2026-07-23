@@ -36,6 +36,11 @@ const ALBUM_GENRE_FIX = {
   'Total|Kima, Keisha & Pam': ['hiphop','soul'],
   'MISIA|Mother Father Brother Sister': ['soul','pop'],
   'MISIA|MARVELOUS': ['soul','pop'],
+  'Heavy D & The Boyz|Big Tyme': ['hiphop','soul'],
+  'Heavy D & The Boyz|Peaceful Journey': ['hiphop','soul'],
+  'Jagged Edge|Jagged Little Thrill': ['hiphop','pop'],
+  'The Weeknd|Hurry Up Tomorrow': ['hiphop','electronic','pop'],
+  'Ne-Yo|Year of the Gentleman': ['hiphop','pop'],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();
