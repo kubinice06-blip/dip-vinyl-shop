@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜電子擴充批次3-8 合併執行：182 張上架（電子擴充計畫完成）
+
+- Repo：`dip-vinyl-shop`
+- 店主指示批次全部合併執行：65 位藝人（Berlin dub techno／Kompakt／UK 工業 techno／IDM 深挖／raster-noton glitch／合成器先驅+Italo+配樂／日本電子／UK bass+footwork）一次反查 → 1054 候選 → 修正 5 組 MB 錯抓（Maurizio→Maurizio Bianchi 工業噪音、Seether、Petula Clark、Mariah Carey、英搖版 Space；清掉 181 張污染）→ 917 評分 → 前 200＋手動補件 → 封面 100%（bandcamp 129/spotify 43/caa 29）→ 多輪剔除（自我同名 5、MB 誤標合輯/split/EP 6、Halloween 重複版 2、批內重複 3）→ **最終 182 張全過 published gate**。
+- 數量：一般卡 167（seed 6179→6346）；**apex 15 張**（hall 3：Plastikman《Consumed》、Goblin《Suspiria》、Carpenter《Halloween》；pearl 4：冨田勲《The Planets》、Wendy Carlos×3——皆 obscurity 5＋listeners<300；heresy 8：Ryoji Ikeda×2、Venetian Snares×3、Pan Sonic×2、Alva Noto《unitxt》——皆 accessibility 5＋極端聲響證據）。preview ready 155（Apple .m4a 直連，靜態地圖）／unavailable 28（狀態檔）。
+- 評分覆核抓到的系統性問題：**藝人名寫法會讓 bulk 評分靜默失敗**——`µ‐Ziq`（U+2010）整批 0 筆、Plantasia/Kakashi/Lunatic Harness 其實早在池中（3c 的 apex+變體比對接住 4 張，prepare gate 接住繞過去重的 Biokinetics 手動補件）。Mariah《うたかたの日々》AI 評 classic 2 人工修正 4（Palto Flats 再版正典）。
+- 有趣配對：Apple TW 把 Pole 掛名「Pole吖」，曲目名逐一核實後確認是本尊，試聽保留。
+- 三個 chunk agent 的 needsReview 全數裁定剔除：Goblin 精選輯、VS split 合輯、Gas《November 89》合輯、Ikeda《Time and Space》EP、Oval《Szenariodisk》CDEP、Seefeel 2024-25 迷你專輯×2（例外白名單只留有歷史地位的正典 12 吋，不放水）。
+- 驗證：prepare gate 0 error（中途接住 1 張 http 證據網址＋1 張重複卡）；published gate 182 張 0 error 0 warning。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`、`data/apple-audio-map-v1.json`＋runtime、`card-preview-status.js`
+- **電子擴充計畫總結**（2026-07-22~23，三個 commit 波次）：批次1 工業/synth-pop 77 → 批次2 Detroit/Chicago 64 → 批次3-8 合併 182，合計 **323 張新卡**（一般 294＋apex 28＋批次1升級9），電子類從 ~1028 張達到約 1350+。待辦：店主後台「頂級牌」匯入＋入庫（累計批次1 5張＋批次2 4張＋本批 15 張=24 張新王牌）。
+
 ### 2026-07-23｜電子擴充批次2：Detroit／Chicago 起源 64 張上架（首用 EP/Single 例外＋試聽改走靜態路徑）
 
 - Repo：`dip-vinyl-shop`
