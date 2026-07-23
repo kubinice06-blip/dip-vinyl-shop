@@ -46,6 +46,8 @@ const ALBUM_GENRE_FIX = {
   'The Coup|Party Music': ['hiphop','soul'],
   'The Coup|Sorry to Bother You': ['hiphop','soul'],
   'Murs|Murs 3:16: The 9th Edition': ['hiphop'],
+  'Techno Animal|Re-Entry': ['hiphop','electronic'],
+  'Moor Mother|Analog Fluids of Sonic Black Holes': ['hiphop','electronic'],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();

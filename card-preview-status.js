@@ -1,5 +1,11 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "new kingdom|paradise don't come cheap": "unavailable",
+  "antipop consortium|fluorescent black": "unavailable",
+  "antipop consortium|arrhythmia": "unavailable",
+  "antipop consortium|tragic epilogue": "unavailable",
+  "backxwash|god has nothing to do with this leave him out of it": "unavailable",
+  "armand hammer|we buy diabetic test strips": "unavailable",
   "immortal technique|revolutionary, volume 1": "unavailable",
   "the coup|steal this album": "unavailable",
   "mr. lif|i phantom": "unavailable",

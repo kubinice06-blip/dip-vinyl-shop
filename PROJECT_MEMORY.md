@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜嘻哈第 4 波（實驗／異端）：67 普卡＋1 張 heresy 王牌上架
+
+- Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-experimental-wave4。
+- 範圍：Dälek×5／Armand Hammer 系（billy woods×5、AH×5）／Ka×5／Shabazz Palaces×3
+  ／JPEGMAFIA、clipping.、Earl、MIKE 補完／Antipop、Techno Animal、cLOUDDEAD《Ten》
+  ／Backxwash 三部曲／Moor Mother×3／Saul Williams×4／Roc Marciano×3／日本 Dos Monos。
+- **嘻哈 heresy 王牌 0→1**：Death Grips《Government Plates》（A5、人聲退位噪響實驗，
+  證據 wiki＋Pitchfork）——嘻哈異端從零建檔。其餘 A4 級（Dälek、JPEG、clipping.）之後
+  可走 album_overrides.tier 後台升格，candidates 記在此。
+- 試聽 62 ready／6 unavailable（Backxwash 早期目錄本人下架、Antipop 三張、WBDTS、
+  New Kingdom 串流缺席）。封面 68/68 全 CAA。milo／R.A.P. Ferreira 分名處理
+  （who told you to think 用 milo 名，符合串流掛名）。
+- 驗證：prepare 0 error；KV 68/68；published gate 0 error。
+- 上架後 seed 6,951：hiphop 1193／soul 923；apex heresy 112（嘻哈 1）。
+
 ### 2026-07-23｜嘻哈第 3 波（地下／獨立）：77 張上架
 
 - Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-underground-wave3。
