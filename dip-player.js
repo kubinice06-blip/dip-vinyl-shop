@@ -934,11 +934,13 @@
           return true;
         }
       } else if (pinnedKind === 'youtube') {
-        const played = youtubeTarget(previewUrl) ? await playYoutube({ url:previewUrl }, token) : false;
-        if (played && token === requestId) {
-          emit({ status:'playing', provider:'youtube', artist, album, trackName:'', storeUrl:'', attribution:'', tracks:[], trackId:'', ...(played === true ? {} : played) });
-          return true;
+        // 2026-07-23 店主決定：YouTube iframe 無法淡入淡出（音量控不了），
+        // 固定連結是 YT 的卡暫時不播音樂——安靜停下，不退回即時搜尋。
+        if (token === requestId) {
+          setProvider(null);
+          emit({ status:'stopped', provider:null, artist, album, code:'YT-MUTED', tracks:[], trackId:'' });
         }
+        return false;
       }
       // 已完成人工覆核的卡片只准用固定來源：連結失效或明確標成無來源時，
       // 直接停止，不再為同一張卡臨時呼叫 Apple／YouTube／Spotify 搜尋。
@@ -951,13 +953,10 @@
       }
       // 固定連結失效（檔案被刪、影片下架）→ 照舊走原本的來源查詢，不要讓卡片直接沒聲音。
       const entry = linkEntry(artist, album);
-      // 唱片櫃混合路徑：iTunes 優先（真 30 秒試聽＋曲目列表），使用者 IP 被 Apple
-      // 封鎖或查無專輯時，自動退到對戰同款的 YouTube 高觀看曲目 30 秒片段。
-      const order = prefer === 'itunes-only' ? ['itunes']
-        : prefer === 'itunes' ? ['itunes', 'youtube']
-        : prefer === 'spotify' ? ['spotify', 'youtube']
-        : prefer === 'youtube' ? ['youtube', 'spotify']
-        : IOS_DEVICE ? ['youtube', 'spotify'] : ['spotify', 'youtube'];
+      // 2026-07-23 店主決定：YouTube／Spotify 的 iframe 都無法淡入淡出，
+      // 暫時只保留 iTunes（Web Audio 路徑）；查無 iTunes 試聽的卡先不播音樂。
+      // 原本的混合退階（iTunes→YouTube→Spotify）保留在 git 歷史，恢復時把 order 換回即可。
+      const order = ['itunes'];
       for (const provider of order) {
         const path = provider === 'youtube' ? '/yt-music-link' : provider === 'itunes' ? '/itunes-album-preview' : '/spotify-album-link';
         // 一律經過 loadCachedSource：它會回傳既有快取，並讓 iTunes 的空結果在

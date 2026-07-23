@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜試聽暫時只留 iTunes（YT/Spotify iframe 無法淡入淡出）
+
+- Repo：`dip-vinyl-shop`
+- 店主決定：YouTube iframe 音量控不了、做不到淡入淡出，**查無 iTunes 試聽的卡暫時不播音樂**。
+- 改動（`dip-player.js`，v=30→31）：
+  1. 固定連結是 YouTube 的卡：安靜停下（emit stopped、code YT-MUTED），不播、不退回即時搜尋。
+  2. 即時來源鏈一律只剩 `['itunes']`——原本的 iTunes→YouTube→Spotify 混合退階整段保留在 git 歷史，恢復時把 `order` 換回即可。
+- 影響：album_overrides 裡 previewUrl 為 YT 的卡（批次1 的 NWW《Chance Meeting》、Coil《Angelic Conversation》＋正名後那 10 筆日爵）以及 iTunes 查無的卡都會靜音。之後若做出可淡出的 YT 方案（或改存 .m4a）再恢復。
+- 主要檔案：`dip-player.js`、三頁 v=31
+
 ### 2026-07-23｜日籍藝人全面正名為漢字（73 張七層遷移）＋命名規則入公式
 
 - Repo：`dip-vinyl-shop`
