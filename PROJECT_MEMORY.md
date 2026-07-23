@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-24｜搜尋專輯關詳情改淡出＋補提交 audio-debug.html 刪除
+
+- Repo：`dip-vinyl-shop`
+- 店主回報：搜尋專輯頁點開簡介後按叉叉，音樂硬切斷掉。改為與對戰頁同款的 1.5 秒淡出。
+- 改動：`index.html` 兩處 `DipPlayer.stop()` 改成 `stop({ fade: true })`——
+  `closeCardDetail()`（搜尋頁按叉叉關詳情）與 `setActiveTab()`（直接切去其他分頁離開搜尋頁）。
+  播放器端不用動，`stop({fade:true})` 本來就支援（對戰頁關簡介就是走它）。
+- 另補提交：上次「移除 #auddbg 偵錯層」（e20c4da）時 `audio-debug.html` 的刪除只做在
+  工作區、沒被 add 進 commit，這次一併補上，線上站點才會真正移除該頁。
+- 主要檔案：`index.html`、`audio-debug.html`（刪除）
+- 驗證：桌機實測搜尋頁「Miles Davis → 點卡開詳情播放 → 按叉叉」，攔截 GainNode 排程
+  確認為 `setValueAtTime(0.5)` → 1.5 秒 linearRamp 到 0，取樣 0.461→0.423→…→0 乾淨走滿。
+  另查明一個非 bug 現象：固定試聽檔較短的卡在自然結尾淡出中按叉叉，會從當前音量
+  （已近 0）接手淡出——這是中途打斷不跳音的正確行為。
+- 附註：店主稍早回報「第一次點開又沒有立即播放」，複測後自行消失。查證過並行協作者
+  近三筆 `dip-player.js` 提交（pinned previewUrl／只留 iTunes）都沒動到 iOS 解鎖與
+  keep-alive 修復邏輯，判定是首次下載音檔的網路延遲（快取未命中），非回歸。
+
 ### 2026-07-23｜嘻哈第 5 波（Beat Scene／器樂）：40 張上架
 
 - Repo：dip-vinyl-shop。批次：2026-07-23-hiphop-beatscene-wave5。

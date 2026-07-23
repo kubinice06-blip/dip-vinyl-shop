@@ -1605,9 +1605,10 @@
     const ov = document.getElementById('cardDetailOverlay');
     if (ov) ov.classList.remove('open');
     document.body.style.overflow = '';
-    // 搜尋專輯頁沒有唱盤機可停：詳情關掉就停試聽（唱片櫃的唱盤播放不受影響）
+    // 搜尋專輯頁沒有唱盤機可停：詳情關掉就停試聽（唱片櫃的唱盤播放不受影響）。
+    // 帶 fade 走 1.5 秒淡出，跟對戰頁關簡介同手感，不要硬切。
     if (currentView === 'album-search') {
-      window.DipPlayer?.stop();
+      window.DipPlayer?.stop({ fade: true });
       document.querySelectorAll('#asResults .collect-card.active').forEach(card => card.classList.remove('active'));
     }
   }
@@ -2227,8 +2228,8 @@
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
-    // 離開搜尋專輯頁就停試聽（該頁沒有唱盤機介面可手動停）
-    if (currentView === 'album-search' && tab !== 'album-search') window.DipPlayer?.stop();
+    // 離開搜尋專輯頁就停試聽（該頁沒有唱盤機介面可手動停）；同樣淡出不硬切
+    if (currentView === 'album-search' && tab !== 'album-search') window.DipPlayer?.stop({ fade: true });
     currentView = tab;
     // tab 高亮
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
