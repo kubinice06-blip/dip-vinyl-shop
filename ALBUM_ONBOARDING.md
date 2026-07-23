@@ -84,6 +84,15 @@
 - 明確列出本批目標、預計張數、曲風／廠牌範圍與精選或全收模式。
 - 建立 manifest；後面所有步驟都更新同一份，不另外維護互相矛盾的清單。
 
+### 0.5 藝人命名規則（2026-07-23 店主核定）
+
+- **日籍藝人一律用日文漢字／假名本名**（山本剛トリオ、坂本龍一、細野晴臣、竹内まりや），不用羅馬拼音——但**官方藝名本身就是拉丁字者保留**（Ryoji Ikeda、Ken Ishii、rei harakami、Susumu Yokota、TOWA TEI、Mariah、Inoyama Land、Yellow Magic Orchestra）。判準：看該藝人的正式發行品掛名，不是看國籍。
+- 韓籍藝人命名規則待店主定案（한글 vs 漢字），定案前維持現狀。
+- **用非拉丁名上架時必須做兩件事**，否則卡片會從曲風流派抽牌池掉出去、簡介也查不到：
+  1. 曲風標籤先用「串流平台認得的拼法」查好，寫進 KV `mapgenre3:<漢字名小寫>|<專輯名小寫>`；
+  2. 簡介 KV 用 `desc4:` 前綴（CJK 鍵）。
+- 三軸評分（Last.fm listeners）也要用串流拼法查，manifest 記錄實際查詢用名。
+
 ### 1. 身分確認與去重先行
 
 - 只收 MusicBrainz `primary-type=Album`；Single、EP、Compilation 不進一般卡池。**唯一例外**：白名單曲風可依「曲風 release type 例外」章節收 EP／Single／DJ-mix。

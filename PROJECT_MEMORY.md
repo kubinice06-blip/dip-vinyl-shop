@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜日籍藝人全面正名為漢字（73 張七層遷移）＋命名規則入公式
+
+- Repo：`dip-vinyl-shop`
+- 店主核定：日籍藝人改用漢字／假名本名（46 組對照，含山本剛トリオ、今田勝トリオ、鈴木勲、日野皓正、宮間利之とニューハード、山下達郎、竹内まりや、大貫妙子、大滝詠一、細野晴臣、坂本龍一、吉村弘、高田みどり、清水靖晃、福居良等）；**官方拉丁藝名保留**（Ryoji Ikeda、Ken Ishii、rei harakami、Susumu Yokota、TOWA TEI、Mariah、Inoyama Land、YMO、Alva Noto & Ryuichi Sakamoto 合作計畫）；韓籍待店主定案暫不動。
+- 七層遷移（`scratchpad/kanji-rename/migrate.mjs`，斷點續跑）：73 張全成功——seed/apex 改名＋刪 1 張跨拼法重複（Isao Tomita《Snowflakes Are Dancing》＝冨田勲版）；card_catalog 建新文件（保留封面/三軸/tier，舊文件 updatedAt=1 且無 desc 才刪）；KV `desc4:` 新鍵（簡介內文羅馬字名同步替換）；**KV `mapgenre3:` 曲風預播種**（用羅馬字查好標籤存進漢字鍵——不做這步漢字卡會從曲風流派抽牌池掉出去）；試聽地圖搬 29 鍵＋rebuild；狀態檔搬 34 鍵。battle.html 內建備援卡池 5 筆同步改名。
+- `ALBUM_ONBOARDING.md` 新增 §0.5 命名規則：日籍用本名、官方拉丁保留、非拉丁名上架必須預播種 mapgenre3/desc4 兩鍵。
+- 驗證：漢字鍵 `/album-desc`（山本剛トリオ|Midnight Sugar）與 `/album-genres`（山下達郎|For You）皆 KV-HIT；3 張舊名本就無曲風標籤（竹内まりや Variety／高柳昌行 Lonely Woman／植松孝夫 Debut），無損失。
+- **店主待辦兩件**：①後台「批次固定試聽連結」貼 `scratchpad/kanji-rename/owner-overrides.json`（10 筆日爵固定試聽掛到新名下）；②「頂級牌」重按匯入＋入庫（讀新 apex_pool.json），並把清單裡舊羅馬字版（Masahiko Togashi／Takeo Moriyama／Fumio Itabashi／Takashi Kokubo／Kohsuke Mine／Hijokaidan／Yoshio Ojima）用 ✕ 刪掉，避免新舊並列。
+- 已知殘留：玩家已抽的卡保留舊羅馬字名（uid 子集合無法批次遷移），同專輯可能新舊兩卡並存於卡冊，屬預期。
+
 ### 2026-07-23｜舊 apex 長尾 14 張 noCover 救回 12 張（純 Firestore，未 commit repo 檔案）
 
 - Repo：`dip-vinyl-shop`（僅 PROJECT_MEMORY 本條；封面寫 Firestore card_catalog）
