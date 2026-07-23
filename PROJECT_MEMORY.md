@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜舊 apex 長尾 14 張 noCover 救回 12 張（純 Firestore，未 commit repo 檔案）
+
+- Repo：`dip-vinyl-shop`（僅 PROJECT_MEMORY 本條；封面寫 Firestore card_catalog）
+- 店主重按入庫後仍剩 14 張無封面——runQuery 撈出全是**舊 apex 名單長尾**（非電子批）：私盤怪奇（Zerfas、Moolah、Anno Luz、3 Hür-El、Egisto Macchi、山小屋、Michael A. Grant）＋名稱陷阱名盤（Big Star《Third/Sister Lovers》斜線、Peter Gabriel《(Melt)》括號、The Police）＋日韓噪音（Boredoms、非常階段、Ground Zero、尾島由郎）。
+- 救回 12 張寫進 card_catalog：CAA 鏈 9 張（Spotify 全程 429 零命中）＋手動變體 3 張——Peter Gabriel 用「Peter Gabriel 3: Melt」、Big Star 用 iTunes 正名「Third」（第一輪配到《Complete Third》demo 盒已駁回）、尾島由郎配到《Une Collection des Chaînons I》（**apex_pool 名單標題拼錯**：Chaînées 應為 Chaînons，卡片仍用舊拼法、封面正確；要正名得改 pool＋遷移 Firestore 文件 id，暫留待辦）。
+- 真無封面 2 張：San Ul Lim《The Mountain Hut》、Michael A. Grant 同名（私盤，各平台皆無）——維持 noCover 略過，或考慮自 apex_pool 移除。
+- 店主操作：後台重按「⚡⚡ 全部入庫」，新封面鏈會從 card_catalog 直接命中這 12 張。
+
 ### 2026-07-23｜修正後台頂級牌入庫「重抓封面」把地下盤全標 noCover
 
 - Repo：`dip-vinyl-shop`
