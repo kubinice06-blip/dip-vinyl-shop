@@ -185,5 +185,16 @@ window.DipPreviewStatus = Object.freeze({
   "john carpenter|escape from l.a.": "unavailable",
   "patrick cowley|menergy": "unavailable",
   "cerrone|cerrone 3: supernature": "unavailable",
-  "vladislav delay|ele": "unavailable"
+  "vladislav delay|ele": "unavailable",
+  "glenn underground|atmosfear": "unavailable",
+  "roni size|return to v": "unavailable",
+  "a guy called gerald|essence": "unavailable",
+  "tim hecker|haunt me, haunt me do it again": "unavailable",
+  "laurent garnier|tales of a kleptomaniac": "unavailable",
+  "808 state|newbuild": "unavailable",
+  "a guy called gerald|automanikk": "unavailable",
+  "alexander robotnick|ce n'est q'un début": "unavailable",
+  "alexander robotnick|the analog session": "unavailable",
+  "jlin|autobiography": "unavailable",
+  "a guy called gerald|silent sound spread spectrum": "unavailable"
 });

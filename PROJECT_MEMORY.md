@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜電子補完批次9：98 張上架（店主加碼 100 張）
+
+- Repo：`dip-vinyl-shop`
+- 店主問「能否再補 100 張」→ 兩源合擊：**落榜區回收 60**（批次2/3-8 full-ranked 備份裡 classic 3、listeners≥5000 的熱門盤，Clark/Plaid/Ellen Allien/Apparat/The Black Dog 等，每藝人上限 4）＋**新藝人線 45**（ambient/drone：Basinski/Tim Hecker/Fennesz/Biosphere/The Orb；法式：Laurent Garnier/St Germain/Cassius/Étienne de Crécy/Mr. Oizo；英倫：808 State/A Guy Called Gerald/Leftfield/MJ Cole；footwork：Jlin；Matmos/Mouse on Mars 等 20 位）→ 105 候選 → 封面 105/105 → 研究後剔除 7 張（mixtape/迷你配樂/系列合輯/demo 合輯/有聲書配樂等）→ **98 張全過雙 gate**。
+- 數量：一般卡 94（seed 6346→6440）；apex 4（hall：Biosphere《Substrata》；pearl：Jlin《Autobiography》、A Guy Called Gerald《Silent Sound Spread Spectrum》、Alexander Robotnick《Kind of... Robotnick》，皆 obscurity 5＋listeners<300）。preview ready 87／unavailable 11。
+- 踩坑修復：**Apple「(Bonus Track Version)」後綴讓標題比對失敗**——Modeselektor 兩張、Lost Themes II 全滅在第一輪，`core()` 剝除清單加 bonus|version 後救回；resolver 腳本已同步修補。q3 agent 漏標 lengthReviewed 29 張（內容掃過無冗贅，補標後過 gate）。
+- 驗證：prepare gate 0 error；published gate 98 張 0 error 0 warning。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`、`data/apple-audio-map-v1.json`＋runtime、`card-preview-status.js`
+- **電子擴充總計（07-22~23 四波）**：77＋64＋182＋98＝**421 張新卡**；seed 6440、apex 628（hall 410/pearl 107/heresy 111）。店主後台「頂級牌」待入庫累計 28 張新王牌。
+
 ### 2026-07-23｜電子擴充批次3-8 合併執行：182 張上架（電子擴充計畫完成）
 
 - Repo：`dip-vinyl-shop`
