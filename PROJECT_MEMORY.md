@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜修正後台頂級牌入庫「重抓封面」把地下盤全標 noCover
+
+- Repo：`dip-vinyl-shop`
+- 店主入庫新王牌時發現大量「無封面略過」。根因：`admin.html` 的單張入庫與「⚡⚡ 全部入庫」抓封面**只打 worker /spotify-search**——本輪電子擴充的王牌（工業／Detroit／glitch）多不在 Spotify（封面本來就是 Bandcamp/CAA 解到、且 onboarding 已預熱進 card_catalog），Spotify 查無→標 `noCover`→之後永遠被排除。
+- 修正（新增 `apexFindCover()` 封面鏈，三處共用）：
+  1. **先讀 card_catalog 既有 coverUrl**（預熱過的直接命中、零 API）→ 查無才 worker Spotify → 再退 worker Bandcamp。
+  2. 入庫候選不再排除 `noCover`（改為排序靠後），成功入庫時 `deleteField()` 清掉 noCover 標記——先前被 Spotify 誤判/429 的能自動救回。
+- 主要檔案：`admin.html`
+- 驗證：module script 語法 parse 通過；店主部署後重按「全部入庫」即可重試所有 noCover 卡。
+
 ### 2026-07-23｜電子補完批次9：98 張上架（店主加碼 100 張）
 
 - Repo：`dip-vinyl-shop`

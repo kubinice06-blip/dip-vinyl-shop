@@ -3337,6 +3337,23 @@ ${discogs ? '- Discogs：' + discogs : ''}
     document.getElementById('apexEditMsg').textContent = '';
   });
 
+  // 頂級牌封面查找鏈：card_catalog 既有封面（批次 onboarding 已預熱，Bandcamp/CAA 來源都在這）
+  // → worker Spotify → worker Bandcamp。只打 Spotify 會把不在串流上的地下盤全標成 noCover。
+  async function apexFindCover(cand) {
+    try {
+      const snap = await getDoc(doc(db, 'card_catalog', cand.id));
+      const cover = snap.exists() ? (snap.data().coverUrl || '') : '';
+      if (cover) return cover;
+    } catch (e) {}
+    for (const ep of ['spotify-search', 'bandcamp-search']) {
+      try {
+        const r = await fetch(`${WORKER_URL}/${ep}?artist=${encodeURIComponent(cand.artist)}&album=${encodeURIComponent(cand.album)}`);
+        if (r.ok) { const cover = ((await r.json()).imageUrl) || ''; if (cover) return cover; }
+      } catch (e) {}
+    }
+    return '';
+  }
+
   // ⚡ 產出一張頂級牌入庫：挑未入庫 → 驗封面 → card_catalog + album_overrides(tier) → 標記已入庫
   let apexGenBusy = false;
   document.getElementById('apexGenBtn')?.addEventListener('click', () => produceApexCard(apexTier));
@@ -3348,19 +3365,16 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const btn = document.getElementById('apexGenBtn');
     btn.disabled = true;
     try {
-      let candidates = apexDocs.filter(d => d.tier === tier && !d.generatedAt && !d.noCover);
+      // noCover 的也重試：封面鏈已補 card_catalog／Bandcamp 來源，先前被 Spotify 誤判的能救回
+      let candidates = apexDocs.filter(d => d.tier === tier && !d.generatedAt);
       if (specificId) candidates = candidates.filter(d => d.id === specificId);
-      if (!candidates.length) { msg.textContent = '沒有可產出的牌（都入庫了或被標記無封面）'; return; }
-      // 隨機順序最多試 5 張：抓不到封面就標記 noCover 換下一張
-      candidates.sort(() => Math.random() - 0.5);
+      if (!candidates.length) { msg.textContent = '沒有可產出的牌（都入庫了）'; return; }
+      // 隨機順序最多試 5 張：抓不到封面就標記 noCover 換下一張（未標記的優先）
+      candidates.sort((a, b) => (!!a.noCover - !!b.noCover) || Math.random() - 0.5);
       let made = null;
       for (const cand of candidates.slice(0, 5)) {
         msg.textContent = `抓封面驗證中：${cand.artist} — ${cand.album}…`;
-        let cover = '', spotifyUrl = '';
-        try {
-          const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(cand.artist)}&album=${encodeURIComponent(cand.album)}`);
-          if (r.ok) { const j = await r.json(); cover = j.imageUrl || ''; spotifyUrl = j.spotifyUrl || ''; }
-        } catch (e) {}
+        const cover = await apexFindCover(cand);
         if (!cover) {
           await setDoc(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true }).catch(() => {});
           cand.noCover = true;
@@ -3374,10 +3388,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
         await setDoc(doc(db, 'album_overrides', cand.id), {
           artist: cand.artist, album: cand.album, tier, updatedAt: now,
         }, { merge: true });
-        await setDoc(doc(db, 'apex_pool', cand.id), { generatedAt: now }, { merge: true });
+        await setDoc(doc(db, 'apex_pool', cand.id), { generatedAt: now, noCover: deleteField() }, { merge: true });
         cand.generatedAt = now;
+        delete cand.noCover;
         apexCovers[cand.id] = cover;
-        made = { ...cand, cover, spotifyUrl };
+        made = { ...cand, cover };
         break;
       }
       if (!made) { msg.textContent = '這批候選都抓不到封面，已標記略過，再按一次換別張'; renderApexList(); return; }
@@ -3398,9 +3413,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('apexGenAllStopBtn')?.addEventListener('click', () => { apexAllStop = true; });
   document.getElementById('apexGenAllBtn')?.addEventListener('click', async () => {
     if (apexAllBusy || apexGenBusy) return;
-    const pending = apexDocs.filter(d => !d.generatedAt && !d.noCover);
+    // noCover 的也納入重試：封面鏈為 card_catalog → Spotify → Bandcamp
+    const pending = apexDocs.filter(d => !d.generatedAt)
+      .sort((a, b) => (!!a.noCover - !!b.noCover));
     if (!pending.length) { document.getElementById('apexGenMsg').textContent = '沒有待入庫的牌（先匯入名單或全部都已入庫）'; return; }
-    if (!confirm(`把 ${pending.length} 張未入庫的頂級牌全部入庫？（逐張抓 Spotify 封面驗證，約需幾分鐘）`)) return;
+    if (!confirm(`把 ${pending.length} 張未入庫的頂級牌全部入庫？（先讀既有封面、查無才打 Spotify/Bandcamp，約需幾分鐘）`)) return;
     apexAllBusy = true; apexAllStop = false;
     const btn = document.getElementById('apexGenAllBtn');
     const stopBtn = document.getElementById('apexGenAllStopBtn');
@@ -3414,11 +3431,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         if (apexAllStop) break;
         i++;
         msg.textContent = `全部入庫中 ${i}/${pending.length}：${cand.artist} — ${cand.album}`;
-        let cover = '';
-        try {
-          const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(cand.artist)}&album=${encodeURIComponent(cand.album)}`);
-          if (r.ok) cover = ((await r.json()).imageUrl) || '';
-        } catch (e) {}
+        const cover = await apexFindCover(cand);
         const now = Date.now();
         if (!cover) {
           batch.set(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true });
@@ -3431,8 +3444,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
           batch.set(doc(db, 'album_overrides', cand.id), {
             artist: cand.artist, album: cand.album, tier: cand.tier, updatedAt: now,
           }, { merge: true });
-          batch.set(doc(db, 'apex_pool', cand.id), { generatedAt: now }, { merge: true });
-          cand.generatedAt = now; ok++; inBatch += 3;
+          batch.set(doc(db, 'apex_pool', cand.id), { generatedAt: now, noCover: deleteField() }, { merge: true });
+          cand.generatedAt = now; delete cand.noCover; apexCovers[cand.id] = cover; ok++; inBatch += 3;
         }
         if (inBatch >= 300) { await flush(); renderApexList(); }
       }
