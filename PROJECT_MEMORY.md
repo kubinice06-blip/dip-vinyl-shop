@@ -1,5 +1,24 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜搜尋專輯改搜卡池（iTunes 全網搜尋保留備用）
+
+- Repo：`dip-vinyl-shop`
+- 店主指示：先只搜店裡卡池，iTunes 保留。`doAlbumSearch` 改本地比對 `loadCardPool()`
+  （seed＋apex 合併、apex 撞名優先），藝人／專輯欄位皆 NFKC 小寫 includes、可擇一；
+  排序完全一致＞開頭＞內含、同分經典度高→低；最多列 24 張並顯示總命中數。
+- 卡片牆帶稀有度標（apex 用 SPECIAL_TIERS、seed 用 rarityOverrideOf→rarityFromRatings，
+  與抽卡同規則）；封面／固定試聽走 `resolveCardAssets`（card_catalog 校正圖優先）背景
+  6 張一批補進 `_asResults`，token 防新搜尋競態。
+- 詳情補三軸星星（seed 直接帶、apex 向 worker /album-rating 補，頂點軸 7 星）；簡介
+  優先序與抽卡結果頁一致：後台校正 ov.desc＞殿堂神作人工簡介＞/album-desc；固定試聽
+  ／已確認無來源的卡不再打 Spotify API。
+- **iTunes 全網搜尋（`_asItunesAlbums`/`_asJsonp`）留在原地未接線**，之後要做
+  「卡池／全網」雙模式把 doAlbumSearch 換回即可。
+- 主要檔案：`index.html`
+- 驗證：本機實測——Miles Davis 命中 26 張列 24（史詩標＋封面齊）；Kind of Blue 命中
+  apex 殿堂第一張（UK Subs《Another Kind of Blues》內含比對第二）、詳情 3 列星星
+  hall 軸 7 星、簡介走覆寫鏈；點卡唱盤播放正常；查無顯示引導文案；console 0 error。
+
 ### 2026-07-23｜R&B 第二批＋嘻哈黃金年代第 1 波：共 170 張上架
 
 - Repo：`dip-vinyl-shop`（Firestore/KV 亦寫入）。批次：`2026-07-23-rnb-wave2`（107 張：

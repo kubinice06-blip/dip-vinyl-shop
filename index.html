@@ -1970,7 +1970,7 @@
     el.innerHTML = `
       <form class="album-search-form" id="albumSearchForm">
         <div class="quiz-question" style="margin-bottom:8px;">搜尋專輯</div>
-        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），點卡片放上唱盤試聽，點 ⓘ 看介紹。</div>
+        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），從店裡卡池找卡；點卡片放上唱盤試聽，點 ⓘ 看介紹。</div>
         <div class="album-search-field"><label>專輯名 Album</label><input type="text" id="asAlbum" placeholder="例如：Kind of Blue" autocomplete="off"></div>
         <div class="album-search-field"><label>藝人名 Artist</label><input type="text" id="asArtist" placeholder="例如：Miles Davis" autocomplete="off"></div>
         <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
@@ -2000,8 +2000,10 @@
   function _asCardHtml(c, i) {
     const cardId = escapeCollectionHtml(c.cardId), artist = escapeCollectionHtml(c.artist), album = escapeCollectionHtml(c.album);
     const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
-    return `<article class="collect-card${currentRecordId === c.cardId ? ' active' : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="播放 ${artist}《${album}》">
+    const tier = c.rarity?.tier || '';
+    return `<article class="collect-card${tier ? ` rarity-${tier}` : ''}${currentRecordId === c.cardId ? ' active' : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="播放 ${artist}《${album}》">
       <div class="cc-thumb">${cover}<button class="cc-info" type="button" data-as-info="${i}" aria-label="查看 ${artist}《${album}》詳情">ⓘ</button></div>
+      ${c.rarity ? `<div class="cc-rarity">${escapeCollectionHtml(c.rarity.label)}</div>` : ''}
       <div class="cc-artist">${artist}</div>
       <div class="cc-album">${album}</div>
     </article>`;
@@ -2011,7 +2013,8 @@
     return `<div class="collect-grid" style="border-top:1px solid var(--line);">${_asResults.map(_asCardHtml).join('')}</div>`;
   }
 
-  // 專輯清單搜尋走 Apple JSONP（與 dip-player 試聽同一條路；手機 IP 被 Apple 擋時退 r.jina.ai 文字閘道）
+  // ↓ iTunes 全網專輯搜尋（JSONP＋r.jina.ai 退階）暫時保留備用——店主決定先只搜卡池，
+  //   之後若要做「卡池／全網」雙模式，把 doAlbumSearch 換回 _asItunesAlbums 即可。
   function _asJsonp(requestUrl) {
     return new Promise(resolve => {
       const cb = `dipAlbumSearchCb${Date.now()}_${Math.random().toString(36).slice(2)}`;
@@ -2052,6 +2055,10 @@
     return json?.results || [];
   }
 
+  // 卡池搜尋：seed＋apex 本地比對（apex 撞名優先），最多列 24 張
+  const AS_MAX_RESULTS = 24;
+  let _asCoverToken = 0;
+
   async function doAlbumSearch() {
     const album = document.getElementById('asAlbum').value.trim();
     const artist = document.getElementById('asArtist').value.trim();
@@ -2062,44 +2069,126 @@
     _asQuery = { album, artist };
     const btn = document.getElementById('asSubmit');
     btn.disabled = true; btn.textContent = '搜尋中…';
-    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找唱片行資料中…</div></div>`;
-    const rows = await _asItunesAlbums(`${artist} ${album}`.trim());
+    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找店裡卡池中…</div></div>`;
+    let pool;
+    try { pool = await loadCardPool(); }
+    catch (e) {
+      btn.disabled = false; btn.textContent = '搜尋';
+      err.style.display = ''; err.textContent = '卡池載入失敗，請再試一次。';
+      result.innerHTML = '';
+      return;
+    }
     btn.disabled = false; btn.textContent = '搜尋';
     if (currentView !== 'album-search') return; // 等待期間已離開此頁
-    const seen = new Set();
-    _asResults = rows
-      .filter(r => r.collectionName && r.artistName && r.collectionId && !seen.has(r.collectionId) && seen.add(r.collectionId))
-      .map((r, i) => ({
-        cardId: `as:${i}`,
-        artist: r.artistName,
-        album: r.collectionName,
-        coverUrl: (r.artworkUrl100 || '').replace('100x100', '300x300'),
-      }));
-    result.innerHTML = _asResults.length
-      ? _asGridHtml()
-      : `<div class="album-search-result"><div class="cd-desc">查不到相符的專輯——檢查一下拼法，或這張真的太地下了。</div></div>`;
+    const nq = s => String(s || '').normalize('NFKC').toLowerCase().trim();
+    const qArtist = nq(artist), qAlbum = nq(album);
+    // apex 先進 map（同名以 apex 為準），seed 後補
+    const byKey = new Map();
+    for (const t of ['hall', 'pearl', 'heresy']) {
+      for (const row of (pool.apex[t] || [])) byKey.set(nq(row[0]) + '|' + nq(row[1]), { artist: row[0], album: row[1], tier: t });
+    }
+    for (const c of pool.cards) {
+      const k = nq(c.artist) + '|' + nq(c.album);
+      if (!byKey.has(k)) byKey.set(k, c);
+    }
+    const hits = [...byKey.values()].filter(c => (!qArtist || nq(c.artist).includes(qArtist)) && (!qAlbum || nq(c.album).includes(qAlbum)));
+    // 排序：完全一致 > 開頭一致 > 內含；同分再依經典度高→低
+    const rank = c => {
+      let s = 0;
+      if (qArtist) { const a = nq(c.artist); s += a === qArtist ? 0 : a.startsWith(qArtist) ? 1 : 2; }
+      if (qAlbum) { const l = nq(c.album); s += l === qAlbum ? 0 : l.startsWith(qAlbum) ? 1 : 2; }
+      return s;
+    };
+    hits.sort((x, y) => rank(x) - rank(y) || (y.classic || 0) - (x.classic || 0));
+    const total = hits.length;
+    _asResults = hits.slice(0, AS_MAX_RESULTS).map((c, i) => {
+      const ratings = c.classic ? { classic: c.classic, obscurity: c.obscurity, accessibility: c.accessibility } : null;
+      const rarity = c.tier
+        ? { tier: c.tier, label: SPECIAL_TIERS[c.tier].label }
+        : (rarityOverrideOf(c) || (ratings ? rarityFromRatings(ratings) : null));
+      const status = window.DipPreviewStatus?.[cardIdOf(c.artist, c.album)] || '';
+      return {
+        cardId: `as:${i}`, artist: c.artist, album: c.album, coverUrl: '',
+        tier: c.tier || null, ratings, rarity,
+        previewUnavailable: status === 'unavailable' || status === 'disabled',
+      };
+    });
+    if (!_asResults.length) {
+      result.innerHTML = `<div class="album-search-result"><div class="cd-desc">店裡卡池查不到相符的專輯——換個關鍵字試試。</div></div>`;
+      return;
+    }
+    result.innerHTML = `<div class="album-search-note" style="padding:0 20px 10px;text-align:left;">卡池裡找到 ${total} 張${total > AS_MAX_RESULTS ? `，先列前 ${AS_MAX_RESULTS} 張` : ''}</div>` + _asGridHtml();
+    void _asFillCovers();
   }
 
-  // 搜尋結果詳情：與唱片櫃卡片詳情同一個 overlay 與簡介來源，但沒有收藏／分享／刪除
-  function openSearchDetail(idx) {
+  // 背景批次補封面與固定試聽（card_catalog 校正圖優先，與抽卡結果頁同一條 resolveCardAssets 鏈）
+  async function _asFillCovers() {
+    const token = ++_asCoverToken;
+    const pending = _asResults.filter(r => !r.coverUrl && !r._assetsDone);
+    for (let start = 0; start < pending.length && token === _asCoverToken; start += 6) {
+      await Promise.allSettled(pending.slice(start, start + 6).map(async rec => {
+        const a = await resolveCardAssets(rec.artist, rec.album);
+        if (token !== _asCoverToken) return;
+        rec._assetsDone = true;
+        rec.coverUrl = a.coverUrl || '';
+        rec.previewUrl = a.previewUrl || '';
+        rec.previewUnavailable = rec.previewUnavailable || a.previewUnavailable;
+        rec.ov = a.ov || null;
+        const thumb = document.querySelector(`#asResults .collect-card[data-card-id="${CSS.escape(rec.cardId)}"] .cc-thumb`);
+        if (thumb && rec.coverUrl) {
+          const img = document.createElement('img');
+          img.src = rec.coverUrl; img.alt = ''; img.loading = 'lazy';
+          thumb.querySelector('img, .cc-nocover')?.replaceWith(img);
+        }
+      }));
+    }
+  }
+
+  // 搜尋結果詳情：與唱片櫃卡片詳情同一個 overlay、同一套簡介優先序
+  //（後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc），但沒有收藏／分享／刪除
+  async function openSearchDetail(idx) {
     const c = _asResults[idx];
     if (!c) return;
     const ov = document.getElementById('cardDetailOverlay');
     const body = ov.querySelector('.cd-body');
+    const tier = c.tier || '';
     body.innerHTML = `
       <button class="cd-close" data-cd-close>✕</button>
+      ${tier ? `<div class="cd-rarity rarity-${tier}">${escapeCollectionHtml(c.rarity?.label || '')}</div>` : ''}
       ${c.coverUrl ? `<img class="cd-cover" src="${escapeCollectionHtml(c.coverUrl)}" alt="">` : ''}
       <div class="cd-artist">${escapeCollectionHtml(c.artist)}</div>
       <div class="cd-album">${escapeCollectionHtml(c.album)}</div>
+      <div class="cd-stars" id="cdStars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       <div class="cd-streaming" id="cdStreaming"></div>
     `;
     ov.classList.add('open');
     document.body.style.overflow = 'hidden';
-    fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
-      .then(r => r.ok ? r.json() : {})
-      .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = (d.desc || '').trim() || '（暫無介紹）'; })
-      .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    // apex 池的行只有藝人＋專輯，三軸星星向 worker /album-rating（KV 快取）補
+    if (!c.ratings) {
+      fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+        .then(r => r.ok ? r.json() : {})
+        .then(r => { const el = document.getElementById('cdStars'); if (el && r && r.obscurity) { c.ratings = r; el.innerHTML = albumRatingsHtml(r, SPECIAL_TIERS[tier] ? tier : false); } })
+        .catch(() => {});
+    }
+    const albumOv = c.ov !== undefined ? c.ov : (c.ov = await getAlbumOverride(cardIdOf(c.artist, c.album)));
+    const descEl = document.getElementById('cdDesc');
+    const preset = (albumOv?.desc || '').trim() || (neoclassicOf(c)?.desc || '');
+    if (preset) { if (descEl) descEl.textContent = preset; }
+    else {
+      fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
+        .then(r => r.ok ? r.json() : {})
+        .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = (d.desc || '').trim() || '（暫無介紹）'; })
+        .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
+    }
+    const streamEl = document.getElementById('cdStreaming');
+    const fixedPreview = c.previewUrl || albumOv?.previewUrl || '';
+    if (fixedPreview || c.previewUnavailable) {
+      // 已有固定試聽或人工確認無來源：不再打 Spotify API（與唱片櫃詳情同規則）
+      const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(fixedPreview) ? fixedPreview : '';
+      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      return;
+    }
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
       .then(r => r.ok ? r.json() : {})
       .then(sr => { const el = document.getElementById('cdStreaming'); if (el) { el.innerHTML = streamingBtnsHtml(c.artist, c.album, sr.spotifyUrl); resolveBandcampBtn(c.artist, c.album, el); } })
