@@ -297,7 +297,7 @@
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
     .streaming-btns { display: flex; gap: 8px; margin-bottom: 12px; }
-    .streaming-btn { flex: 1; display: flex; align-items: center; justify-content: center; padding: 11px 6px; border: 1px solid var(--black); text-decoration: none; font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; color: var(--black); transition: all 0.15s; cursor: pointer; background: none; }
+    .streaming-btn { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 11px 6px; border: 1px solid var(--black); text-decoration: none; font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; color: var(--black); transition: all 0.15s; cursor: pointer; background: none; }
     .streaming-btn:hover { background: var(--black); color: #fff; }
     .streaming-btn[disabled] { border-color: var(--line); color: var(--gray); opacity: 0.5; cursor: default; pointer-events: none; }
     .quiz-another-btn { width: 100%; background: none; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s; margin-bottom: 12px; }
@@ -3650,21 +3650,29 @@ ${seenList}
     return desc;
   }
 
-  // ── 結果頁試聽：與唱片櫃同一套 DipPlayer（iTunes 30 秒、固定連結優先）──
+  // ── 結果頁試聽：與唱片櫃同一套 DipPlayer（iTunes 30 秒、固定連結優先），抽到即自動播放 ──
   let gpPreviewStarted = false;
+  let gpPreviewManual = false; // 手動點擊才在失敗時 toast；自動播放被瀏覽器擋就安靜停在 ▶
   let gpPlayerState = { status: 'stopped' };
+  function _gpSetPreviewIcon(playing) {
+    const btn = document.querySelector('#genreContent [data-gp-action="preview"]');
+    if (!btn) return;
+    const play = btn.querySelector('[data-gp-ic="play"]');
+    const pause = btn.querySelector('[data-gp-ic="pause"]');
+    if (play) play.style.display = playing ? 'none' : 'block';
+    if (pause) pause.style.display = playing ? 'block' : 'none';
+  }
   window.DipPlayer?.onStateChange((s) => {
     gpPlayerState = s;
-    const btn = document.querySelector('#genreContent [data-gp-action="preview"]');
-    if (!btn || !lastGpResult) return;
+    if (!lastGpResult) return;
     const mine = gpPreviewStarted && s.artist === lastGpResult.artist && s.album === lastGpResult.album;
-    if (mine && s.status === 'loading') btn.textContent = '⏳ 試聽載入中…';
-    else if (mine && (s.status === 'playing' || s.status === 'stopping')) btn.textContent = '⏸ 停止試聽';
-    else {
-      btn.textContent = '▶ 試聽這張';
+    if (mine && (s.status === 'loading' || s.status === 'playing' || s.status === 'stopping')) {
+      _gpSetPreviewIcon(true);
+    } else {
+      _gpSetPreviewIcon(false);
       if (mine && s.status === 'error') {
+        if (gpPreviewManual) showShareToast && showShareToast(`這張唱片暫時找不到 30 秒試聽${s.code ? `（代碼 ${s.code}）` : ''}`);
         gpPreviewStarted = false;
-        showShareToast && showShareToast(`這張唱片暫時找不到 30 秒試聽${s.code ? `（代碼 ${s.code}）` : ''}`);
       } else if (mine && s.status === 'stopped') gpPreviewStarted = false;
     }
   });
@@ -3673,7 +3681,7 @@ ${seenList}
     if (gpPreviewStarted) { window.DipPlayer?.stop(); gpPreviewStarted = false; }
   }
 
-  function gpPlayPreview() {
+  function gpPlayPreview(manual = true) {
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview(); return; }
@@ -3681,6 +3689,7 @@ ${seenList}
     const mount = document.getElementById('gpPlayerMount');
     if (mount) window.DipPlayer.mount(mount, { hidden: true });
     gpPreviewStarted = true;
+    gpPreviewManual = manual;
     void window.DipPlayer.playAlbum({
       artist: r.artist, album: r.album, prefer: 'itunes',
       previewUrl: r._previewUrl || '',
@@ -3688,10 +3697,16 @@ ${seenList}
     });
   }
 
-  // 已人工標記無試聽來源且沒有固定連結的卡不顯示按鈕
+  // 小型無框播放鈕：實心 SVG 圖示（不用 ⏸ 字符，iOS 會渲染成彩色 emoji）。
+  // 已人工標記無試聽來源且沒有固定連結的卡不顯示。分享圖是手繪 canvas，不含此鈕。
   function gpPreviewBtnHtml(result) {
     if (result._previewUnavailable && !result._previewUrl) return '';
-    return `<button class="quiz-share-btn" data-gp-action="preview" style="margin-top:2px;">▶ 試聽這張</button><div id="gpPlayerMount" aria-hidden="true"></div>`;
+    return `<div style="text-align:center;margin:6px 0 10px;">
+      <button data-gp-action="preview" aria-label="試聽" style="width:34px;height:34px;border:none;background:none;padding:0;cursor:pointer;color:var(--black);display:inline-flex;align-items:center;justify-content:center;">
+        <svg data-gp-ic="play" width="15" height="15" viewBox="0 0 16 16" style="display:none;pointer-events:none;"><path d="M3 1.5 L14 8 L3 14.5 Z" fill="currentColor"/></svg>
+        <svg data-gp-ic="pause" width="15" height="15" viewBox="0 0 16 16" style="pointer-events:none;"><rect x="2.5" y="1.5" width="4" height="13" fill="currentColor"/><rect x="9.5" y="1.5" width="4" height="13" fill="currentColor"/></svg>
+      </button>
+    </div><div id="gpPlayerMount" aria-hidden="true"></div>`;
   }
 
   async function submitGenrePick() {
@@ -3872,6 +3887,8 @@ ${seenList}
       renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), special);
     }
     resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
+    // 抽到即自動播放試聽（跟對戰一樣）；瀏覽器擋自動播放時安靜失敗，圖示停在 ▶
+    if (!result.type && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
   }
 
   async function shareGpResult() {
