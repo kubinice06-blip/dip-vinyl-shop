@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜搜尋專輯頁移除唱盤機：點卡直接開簡介＋背景播試聽
+
+- Repo：`dip-vinyl-shop`
+- 店主指示：搜尋頁不要唱盤機。點專輯卡＝同時開詳情（簡介／星星／串流鈕）＋背景播
+  30 秒試聽（`_asPlay()`：DipPlayer 掛隱藏 mount、prefer itunes、固定試聽優先）；
+  ⓘ 按鈕移除（功能併入點卡）。
+- 停播規則：關掉詳情就停（`closeCardDetail` 加 currentView==='album-search' 分支，
+  唱片櫃的唱盤播放不受影響）；離開搜尋頁（返回首頁等）也停（`setActiveTab` 開頭攔）。
+- 唱盤機通用化選擇器（`.quiz-modal.open .turntable-*`）保留——現在只有唱片櫃有唱盤，無害。
+- 主要檔案：`index.html`
+- 驗證：本機實測——搜尋頁無唱盤、無 ⓘ；點 In a Silent Way 詳情開＋星星 3 列＋
+  status playing＋卡片高亮；關詳情 stopped＋高亮清除；播放中返回首頁也 stopped；
+  console 0 error。
+
 ### 2026-07-23｜搜尋專輯改搜卡池（iTunes 全網搜尋保留備用）
 
 - Repo：`dip-vinyl-shop`

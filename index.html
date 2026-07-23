@@ -631,7 +631,7 @@
     <button class="homehub-card" data-go="album-search">
       <div>
         <div class="homehub-card-name">搜尋專輯</div>
-        <div class="homehub-card-desc">輸入專輯或藝人名，查介紹、放上唱盤試聽。</div>
+        <div class="homehub-card-desc">輸入專輯或藝人名，查介紹、聽試聽。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
@@ -1605,6 +1605,11 @@
     const ov = document.getElementById('cardDetailOverlay');
     if (ov) ov.classList.remove('open');
     document.body.style.overflow = '';
+    // 搜尋專輯頁沒有唱盤機可停：詳情關掉就停試聽（唱片櫃的唱盤播放不受影響）
+    if (currentView === 'album-search') {
+      window.DipPlayer?.stop();
+      document.querySelectorAll('#asResults .collect-card.active').forEach(card => card.classList.remove('active'));
+    }
   }
 
   async function deleteCard(cardId) {
@@ -1970,39 +1975,56 @@
     el.innerHTML = `
       <form class="album-search-form" id="albumSearchForm">
         <div class="quiz-question" style="margin-bottom:8px;">搜尋專輯</div>
-        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），從店裡卡池找卡；點卡片放上唱盤試聽，點 ⓘ 看介紹。</div>
+        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），從店裡卡池找卡；點卡片看介紹、聽試聽。</div>
         <div class="album-search-field"><label>專輯名 Album</label><input type="text" id="asAlbum" placeholder="例如：Kind of Blue" autocomplete="off"></div>
         <div class="album-search-field"><label>藝人名 Artist</label><input type="text" id="asArtist" placeholder="例如：Miles Davis" autocomplete="off"></div>
         <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
         <div class="album-search-error" id="asError" style="display:none;"></div>
       </form>
-      ${turntableHtml()}
+      <div id="asPlayerMount" aria-hidden="true"></div>
       <div id="asResults">${_asResults.length ? _asGridHtml() : ''}</div>`;
     document.getElementById('asAlbum').value = _asQuery.album;
     document.getElementById('asArtist').value = _asQuery.artist;
     document.getElementById('albumSearchForm').addEventListener('submit', (e) => { e.preventDefault(); void doAlbumSearch(); });
-    ensureCollectionPlayer(el);
+    window.DipPlayer?.mount(el.querySelector('#asPlayerMount'), { hidden: true });
     if (!_asBound) {
       _asBound = true;
       // 委派掛在容器上：比全域唱片櫃 handler 先跑；後者查 _collCache 不會命中 as: 卡而安靜略過
       el.addEventListener('click', (e) => {
-        const info = e.target.closest('[data-as-info]');
-        if (info) { openSearchDetail(Number(info.dataset.asInfo)); return; }
         const card = e.target.closest('.collect-card[data-card-id]');
         if (!card) return;
-        const rec = _asResults.find(r => r.cardId === card.dataset.cardId);
-        if (rec) playCollectionRecord(rec, card.querySelector('.cc-thumb') || card);
+        const idx = _asResults.findIndex(r => r.cardId === card.dataset.cardId);
+        if (idx < 0) return;
+        openSearchDetail(idx);
+        _asPlay(_asResults[idx]);
       });
     }
     if (!_asResults.length) document.getElementById('asAlbum').focus();
+  }
+
+  // 搜尋頁沒有唱盤機：點卡片開詳情的同時直接背景播 30 秒試聽，關掉詳情就停
+  function _asPlay(rec) {
+    if (!rec || !window.DipPlayer) return;
+    window.DipPlayer.unlock?.();
+    document.querySelectorAll('#asResults .collect-card').forEach(item => item.classList.toggle('active', item.dataset.cardId === rec.cardId));
+    void window.DipPlayer.playAlbum({
+      artist: rec.artist,
+      album: rec.album,
+      prefer: 'itunes',
+      previewUrl: rec.previewUrl || '',
+      fixedOnly: !!rec.previewUrl || !!rec.previewUnavailable,
+    }).then(ok => {
+      if (ok) return;
+      showShareToast && showShareToast('這張唱片暫時找不到 30 秒試聽');
+    });
   }
 
   function _asCardHtml(c, i) {
     const cardId = escapeCollectionHtml(c.cardId), artist = escapeCollectionHtml(c.artist), album = escapeCollectionHtml(c.album);
     const cover = c.coverUrl ? `<img src="${escapeCollectionHtml(c.coverUrl)}" alt="" loading="lazy">` : `<div class="cc-nocover">♪</div>`;
     const tier = c.rarity?.tier || '';
-    return `<article class="collect-card${tier ? ` rarity-${tier}` : ''}${currentRecordId === c.cardId ? ' active' : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="播放 ${artist}《${album}》">
-      <div class="cc-thumb">${cover}<button class="cc-info" type="button" data-as-info="${i}" aria-label="查看 ${artist}《${album}》詳情">ⓘ</button></div>
+    return `<article class="collect-card${tier ? ` rarity-${tier}` : ''}" data-card-id="${cardId}" role="button" tabindex="0" aria-label="查看 ${artist}《${album}》介紹並播放試聽">
+      <div class="cc-thumb">${cover}</div>
       ${c.rarity ? `<div class="cc-rarity">${escapeCollectionHtml(c.rarity.label)}</div>` : ''}
       <div class="cc-artist">${artist}</div>
       <div class="cc-album">${album}</div>
@@ -2205,6 +2227,8 @@
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
+    // 離開搜尋專輯頁就停試聽（該頁沒有唱盤機介面可手動停）
+    if (currentView === 'album-search' && tab !== 'album-search') window.DipPlayer?.stop();
     currentView = tab;
     // tab 高亮
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
