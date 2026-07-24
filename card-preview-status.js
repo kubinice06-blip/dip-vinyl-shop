@@ -1,5 +1,14 @@
 // Generated from onboarding audits. Fixed URLs live in album_overrides or data/apple-audio-runtime-v1.json.
 window.DipPreviewStatus = Object.freeze({
+  "mc hotdog 熱狗|犬": "unavailable",
+  "가리온|가리온2": "unavailable",
+  "buddha brand|黒船": "unavailable",
+  "舐達麻|godbreath buddhacess": "unavailable",
+  "頑童mj116|董 don": "unavailable",
+  "e sens|저금통": "unavailable",
+  "キングギドラ|最終兵器": "unavailable",
+  "epik high|신발장": "unavailable",
+  "mc solaar|paradisiaque": "unavailable",
   "damu the fudgemunk|spare time": "unavailable",
   "onra|long distance": "unavailable",
   "dj krush|zen": "unavailable",

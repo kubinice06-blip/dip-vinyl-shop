@@ -1,5 +1,24 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-24｜嘻哈第 6 波（國際含華語）：50 張上架——六波擴充完結
+
+- Repo：dip-vinyl-shop。批次：2026-07-24-hiphop-international-wave6。
+- 範圍：法（NTM×4、MC Solaar×4、IAM×3）／韓（Epik High×5、Dynamic Duo×2、E SENS×2、
+  가리온×2、Beenzino）／日（RHYMESTER×4、キングギドラ×2、KOHH×3、ANARCHY×2、AKLO×2、
+  舐達麻×2、BUDDHA BRAND 黒船）／UK 補完（Dave、slowthai×2）／華語（MC HotDog 熱狗×4、
+  頑童MJ116×3、大支 Dwagie）。127 候選→50 張。
+- 華語命名依 0.5 規則採「中文名 拉丁名」複合掛名（MC HotDog 熱狗／大支 Dwagie），
+  曲風以 mapgenre3: KV 手動播種 5 筆。人工升分 3 筆（黒船 C4、가리온 C3、Anecdote C4）。
+- **Spotify 解除限流**：本波 9 張 CJK 封面靠 /spotify-search 補回；犬／Refuse to Listen
+  最後靠 MB rg+CAA 救回。試聽 41 ready／9 unavailable（Apple 無 CJK 舊目錄居多）。
+- 驗證：prepare 0 error；KV 50/50 KV-HIT；published gate 0 error。
+
+**六波總結算（2026-07-23〜24）**：R&B 一批 101＋二批 107＋嘻哈六波 63+98+77+68+40+50
+＝**604 張新卡**＋heresy 王牌 1 張（Government Plates）。seed 6,439→7041。
+hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第二大類。
+待辦：缺封面 3 張（wave1 遺留）、apex pearl 2 張 spiritual jazz 誤標、
+嘻哈 heresy 候選（Dälek/JPEG/clipping. 均 A4）可日後經後台 tier 升格。
+
 ### 2026-07-24｜搜尋專輯關詳情改淡出＋補提交 audio-debug.html 刪除
 
 - Repo：`dip-vinyl-shop`
