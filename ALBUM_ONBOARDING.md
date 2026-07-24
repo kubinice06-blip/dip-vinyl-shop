@@ -28,6 +28,8 @@
     "album": "Album",
     "identity": {
       "releaseType": "Album",
+      "rgMbid": "00000000-0000-0000-0000-000000000000",
+      "upc": "0000000000000",
       "aliasesChecked": true,
       "aliasReview": "已比對原文、羅馬拼音、譯名與不同 artist-credit"
     },
@@ -99,6 +101,15 @@
 - 在打封面、評分與試聽 API 前，先對現有卡池與批次內做去重，節省流量。
 - 除了 artist+album 完全相同，必須人工檢查：不同 artist-credit、團名尾綴、`Vol.`／`Volume`、重音符號、特殊符號、譯名，以及片假名／漢字／羅馬拼音等跨文字系統版本。
 - 自我同名或極短名稱屬高風險；只有在 release 身分與固定試聽都已嚴格核對時才能收錄。
+
+#### 外部識別：MBID 必填、UPC 盡力（2026-07-24 起新開批次適用）
+
+卡片身分過去只有 `artist|album` 字串當主鍵、試聽單點依賴 Apple `collectionId`，字串誤配與同名不同碟（如 Aretha Franklin 有 1961／1986 兩張《Aretha》）風險高。新規則：
+
+- **`identity.rgMbid` 必填（驗證器 error）**：MusicBrainz **release-group** MBID，是「當初指的是哪張碟」的穩定主鍵，對自我同名卡尤其關鍵。MusicBrainz 免認證，且封面解析鏈本來就會查 MB，順手記下最便宜。`1b-artist-discography.mjs` 已自動帶出；其他路徑用 `release-group/?query=artist:"…" AND releasegroup:"…"` 取最高分且 `primary-type=Album` 者。
+- **`identity.upc` 盡力而為（驗證器 warning）**：release barcode（8–14 位數字）。UPC 是 **release** 層級，同一張專輯每個壓片版本各有條碼、老黑膠與地區盤常查無，故**不當硬門檻**；查得到就記、查不到留空即可，不因缺 UPC 擋上架。
+- 生效日之前的批次不回溯檢查（驗證器依 `batch` 名稱開頭的日期判定）。
+- 寫入時 MBID／UPC 一併進 Firestore `card_catalog`（`rgMbid`／`upc` 欄），不寫進 `apple-audio-*` runtime 地圖（那是前端執行時資料，塞識別碼只會增肥）。既有卡池的回補屬低優先背景工作，不阻擋新批次。
 
 ### 2. 精選與三軸
 

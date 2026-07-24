@@ -14,6 +14,11 @@ const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual']);
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
 const EXCEPTION_GENRES = new Set(['electronic']);
+// 外部識別硬規則（2026-07-24 起新開批次適用）：新卡一律記 release-group MBID，
+// 讓「當初指的是哪張碟」不再單點依賴 Apple collectionId。生效日之前的批次不回溯檢查。
+const MBID_RULE_EFFECTIVE = '2026-07-24';
+const MBID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const UPC_RE = /^\d{8,14}$/;
 const PREVIEW_SOURCES = new Set(['apple', 'youtube']);
 const BANNED = /(融合多種元素|具有代表性|層次豐富|傑作|必聽|里程碑|獨樹一格)/;
 const CJK = /[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\uac00-\ud7af]/;
@@ -128,6 +133,9 @@ async function checkUrl(url, label) {
 
 if (manifest?.schemaVersion !== 1) err('manifest', 'schemaVersion 必須是 1');
 if (!clean(manifest?.batch)) err('manifest', '缺少 batch 名稱');
+// 批次日期取 batch 名稱開頭的 YYYY-MM-DD（onboarding 命名慣例）；解析不出就視為新批、套用最新規則
+const batchDateMatch = String(manifest?.batch || '').match(/^(\d{4}-\d{2}-\d{2})/);
+const mbidRuleApplies = !batchDateMatch || batchDateMatch[1] >= MBID_RULE_EFFECTIVE;
 if (!Array.isArray(manifest?.albums) || manifest.albums.length === 0) err('manifest', 'albums 必須是非空陣列');
 
 const albums = Array.isArray(manifest?.albums) ? manifest.albums : [];
@@ -169,6 +177,16 @@ for (let index = 0; index < albums.length; index++) {
     }
     if (identity.aliasesChecked !== true) err(label, '必須完成跨文字系統／artist-credit 別名檢查');
     if (charCount(identity.aliasReview) < 10) err(label, 'identity.aliasReview 必須留下人工檢查結論');
+    // 外部識別（2026-07-24 起）：MBID 必填（error）、UPC 盡力而為（warning）。
+    // MBID 是 release-group 穩定主鍵；UPC 是 release 層級，同碟多版本常查無，故只警告不擋。
+    if (mbidRuleApplies) {
+      if (!MBID_RE.test(clean(identity.rgMbid) || '')) {
+        err(label, 'identity.rgMbid 必須是有效的 MusicBrainz release-group MBID（外部識別不得單點依賴 Apple collectionId）');
+      }
+      if (!UPC_RE.test(clean(identity.upc) || '')) {
+        warn(label, 'identity.upc 缺漏或格式不符（release barcode 盡力而為，查無可留空）');
+      }
+    }
   }
 
   const cover = row?.cover;
