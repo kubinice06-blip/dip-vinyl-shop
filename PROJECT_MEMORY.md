@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-24｜onboarding 硬規則：新卡一律記 MBID（必填）＋UPC（盡力）
+
+- Repo：dip-vinyl-shop。commit b2f7949。
+- 背景：外部識別過去單點依賴 Apple collectionId、卡片身分用 `artist|album` 字串當主鍵，
+  同名不同碟（如 Aretha Franklin 有 1961／1986 兩張《Aretha》）與彎引號誤配風險高。
+- 改動：
+  1. `ALBUM_ONBOARDING.md` 步驟 1 加「外部識別」章節＋manifest schema 加 `identity.rgMbid`／`identity.upc`。
+  2. `scripts/verify-album-onboarding.mjs`：`rgMbid` 缺漏／格式不符 → error；`upc` 缺漏 → warning。
+     以 batch 名稱開頭日期判定，`MBID_RULE_EFFECTIVE=2026-07-24`；**舊批次不回溯**（守護嘻哈六波已完結的 manifest 不被追溯 fail）。
+  3. skill `1b-artist-discography.mjs` 改為永遠帶出 `rgMbid`（MB release-group id 本來就查到、原本丟棄）。
+- 決策要點：MBID 必填（release-group 穩定主鍵、免認證最便宜）；UPC 只警告不擋（release 層級、老黑膠與地區盤常查無，硬擋會砍掉最有收藏價值的冷門盤）。MBID／UPC 寫進 `card_catalog` 不進 apple-audio runtime 地圖（避免增肥前端執行時資料）。
+- 驗證：`node --check` 通過；舊批次 manifest 不觸發 MBID error、新批次無 MBID 觸發 error＋UPC warning、補齊後兩者皆清（三種情境實測）。
+- 進行中：funk/soul 擴充批（2026-07-24-funksoul，553 張）正在 scratchpad 補 MBID/UPC，將是首個套用此規則的批次。
+
 ### 2026-07-24｜嘻哈第 6 波（國際含華語）：50 張上架——六波擴充完結
 
 - Repo：dip-vinyl-shop。批次：2026-07-24-hiphop-international-wave6。
