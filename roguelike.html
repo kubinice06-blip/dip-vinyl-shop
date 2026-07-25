@@ -222,6 +222,13 @@
   .cheat .legend{font-size:8px;color:var(--gray);line-height:1.6;letter-spacing:0.04em;}
   .cheat .legend b{color:var(--dmg);} .cheat .legend em{color:var(--qi);font-style:normal;font-weight:700;}
   .hint{text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;margin:6px 0 8px;min-height:12px;}
+  /* 教學場（老闆帶打）：帶打提示金框、該出的牌發光、其他壓暗但仍可點（按錯老闆會糾正）；
+     該按的按鈕加金框脈動（按鈕上就有該軸星數） */
+  .hint.coach{font-size:11px;color:#5a4a10;background:#fffbe9;border:1px solid var(--gold);padding:6px 10px;line-height:1.7;letter-spacing:.02em;}
+  .handtile.tut-dim{opacity:.55;filter:grayscale(.55);}
+  .handtile.tut-glow{border-color:var(--gold);animation:tutpulse 1.15s infinite;}
+  .pp-act.tut-rec{border:2px solid var(--gold)!important;color:#5a4a10;background:#fffbe9;animation:tutpulse 1.15s infinite;}
+  @keyframes tutpulse{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,.65);}50%{box-shadow:0 0 0 7px rgba(184,134,11,0);}}
   .htrow{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;align-items:center;}
   .htrow::-webkit-scrollbar{height:0;}
   .handtile{flex:none;width:116px;height:116px;border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .12s,border-color .12s;}
@@ -1373,6 +1380,7 @@ async function flyCards(tileR, pCard, eCard){
 // ---------- 樂歷解鎖階梯（升級除了天賦點，還解鎖具體內容；主畫面顯示下一級解什麼）----------
 const UNLOCKS = [
   {lv:2,  key:'aceRate',    label:'局末抽盤王牌機率提升'},
+  {lv:3,  key:'classes',    label:'出師：流派三選一（守舊／挖掘／異端）＋天賦配點'},
   {lv:3,  key:'relicT2',    label:'進階發燒配件進池（神秘見本盤等）'},
   {lv:4,  key:'junk4',      label:'起始雜牌 -1（牌組更精）'},
   {lv:5,  key:'seed6',      label:'種子格 +1（可挑 6 張開局）'},
@@ -1380,6 +1388,7 @@ const UNLOCKS = [
   {lv:7,  key:'aceSeeds2',  label:'開局可帶 2 張王牌'},
   {lv:8,  key:'relicPick4', label:'藏家發燒配件三選一 → 四選一'},
   {lv:10, key:'startRelic', label:'開局自帶 1 件隨機發燒配件'},
+  {lv:10, key:'genreClasses', label:'曲風流派搶先資格（內容開發中，上線後率先開放）'},
 ];
 function hasUnlock(key){ const u=UNLOCKS.find(x=>x.key===key); return !!u && levelOf(META.xp)>=u.lv; }
 function nextUnlock(){ const lv=levelOf(META.xp); return UNLOCKS.find(x=>x.lv>lv) || null; }
@@ -1391,9 +1400,12 @@ function relicPool(){ const t=hasUnlock('relicT2')?2:1; return RELICS.filter(r=>
 // ---------- 樂歷（結算經驗 / 等級；登入後綁 Google 帳號存雲端，未登入存本機訪客檔）----------
 const META_KEY = 'dipRogueMeta_v2';
 const META_UID_KEY = 'dipRogueLastUid';
+// 🧪 管理員「以訪客身分瀏覽」：獨立沙盒檔（本機另一份樂歷＋run 存檔），升級／收卡照常運作，
+// 但完全不讀寫雲端與正式帳號——管理員可放心測新功能，並隨時改等級／歸零／全部重置。
+let SANDBOX=false; try{ SANDBOX = localStorage.getItem('dipRogueSandbox')==='1'; }catch(e){}
 let _cloudUid = null; try{ _cloudUid = localStorage.getItem(META_UID_KEY) || null; }catch(e){}
 // 登入後改用 uid 專屬 key（＝本機快取），訪客用共用 key；登出後等級不再跟著裝置走
-function metaStoreKey(){ return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
+function metaStoreKey(){ if(SANDBOX) return META_KEY+':sandbox'; return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
 const keyOf = c => (c.artist+'|'+c.album).toLowerCase();
 function loadMeta(){
   let m; try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){}
@@ -1407,6 +1419,7 @@ function loadMeta(){
   if(!m.relicLv || typeof m.relicLv!=='object') m.relicLv = {};          // 配件等級 Lv.1~5（毀損重拿也保留）
   if(typeof m.tickets!=='number' || !isFinite(m.tickets)) m.tickets = 0;  // 中繼票：從頭打到第 MID.depth 場才賺得到
   if(!m.midBuild || typeof m.midBuild!=='object') m.midBuild = null;      // 中繼點 build 快照（照上次配置用）
+  if(!m.tips || typeof m.tips!=='object') m.tips = {};                    // 老闆一次性提示（各機制首次發生時教一句）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -1418,8 +1431,8 @@ function loadMeta(){
 }
 function saveMeta(){
   try{ localStorage.setItem(metaStoreKey(), JSON.stringify(META)); }catch(e){}
-  // 登入中 → 同步寫雲端（fire-and-forget；JSON 轉一圈把 undefined 洗掉，Firestore 不收）
-  if(_cloudUid && window.__saveRogueMeta){ try{ window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
+  // 登入中 → 同步寫雲端（fire-and-forget；JSON 轉一圈把 undefined 洗掉，Firestore 不收）；沙盒不寫雲端
+  if(_cloudUid && !SANDBOX && window.__saveRogueMeta){ try{ window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
 }
 // 併兩份樂歷：以 xp 較高者為底（天賦跟著它），紀錄取最大值、收藏／待補綁卡聯集
 function mergeMeta(a,b){
@@ -1444,6 +1457,9 @@ function mergeMeta(a,b){
     tickets:Math.max(a.tickets||0, b.tickets||0),            // 中繼票取較多者（同 cash 邏輯，換裝置不吃虧）
     midBuild: hi.midBuild || lo.midBuild || null,            // 中繼點快照取樂歷較高那份
     curveResetV1:!!(a.curveResetV1||b.curveResetV1),   // 歸零旗標一旦設過就保留，避免合併後被重複歸零
+    tutorialDone:!!(a.tutorialDone||b.tutorialDone),   // 老闆帶打教學：任一份做過就不再重跑
+    classIntroSeen:!!(a.classIntroSeen||b.classIntroSeen),   // 出師（Lv.3 解鎖流派）的儀式畫面看過一次就好
+    tips:Object.assign({}, a.tips||{}, b.tips||{}),    // 一次性提示看過的聯集
   };
   const owned = new Set(m.collection.map(keyOf));
   for(const c of (lo.collection||[])) if(!owned.has(keyOf(c))){ m.collection.push(c); owned.add(keyOf(c)); }
@@ -1454,6 +1470,12 @@ function mergeMeta(a,b){
 // 登入 → 樂歷綁帳號：雲端為主、本機訪客進度首次登入時併入；訪客檔清掉（登出後回到訪客 Lv.1）
 async function bindMetaToAccount(u){
   if(!u) return;
+  if(SANDBOX){
+    // 🧪 訪客測試中：不併雲端、不綁帳號——只重畫，讓管理員面板與登入狀態顯示出來
+    const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
+    if(document.getElementById('clsList')||document.getElementById('rookieHome')) renderClassSelect();
+    return;
+  }
   let cloud=null; try{ cloud = await window.__loadRogueMeta(); }catch(e){}
   const local = META;
   if(_cloudUid===u.uid){
@@ -1481,10 +1503,11 @@ async function bindMetaToAccount(u){
   flushPendingCards();
   try{ await pullCloudRun(); }catch(e){}   // 進行中那一趟也跟著帳號走（換裝置可接續）
   const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
-  if(document.getElementById('clsList')) renderClassSelect();
+  if(document.getElementById('clsList')||document.getElementById('rookieHome')) renderClassSelect();
 }
 // 未登入時「收進唱片櫃」的卡先記在 pending，登入後自動補寫進 Firestore 唱片櫃
 async function flushPendingCards(){
+  if(SANDBOX) return;   // 沙盒的卡只留本機，不補寫進正式帳號的唱片櫃
   const user = window.__rogueUser && window.__rogueUser();
   if(!user || !window.__addToMyCollection) return;
   const pend = META.pending||[];
@@ -1634,7 +1657,7 @@ function initRoguePlayer(){
     _cloudUid=null; try{ localStorage.removeItem(META_UID_KEY); }catch(e){}
     META=loadMeta();
     const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
-    if(document.getElementById('clsList')) renderClassSelect();
+    if(document.getElementById('clsList')||document.getElementById('rookieHome')) renderClassSelect();
   }
 })();
 
@@ -1642,7 +1665,7 @@ function topbarHTML(){
   const lv=levelOf(META.xp), into=META.xp-xpTotalForLevel(lv), need=xpNeedForLevel(lv);
   const pct=Math.min(100, into/need*100);
   return `<div class="topbar">
-    <span class="lv">樂歷 Lv.${lv} · ${into}/${need}</span>
+    <span class="lv">${SANDBOX?'🧪 ':''}樂歷 Lv.${lv} · ${into}/${need}</span>
     <div class="xpbar"><i style="width:${pct}%"></i></div>
     <span style="flex:none;color:var(--gold);font-weight:700">💰 $${cashOf()}</span>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
@@ -1653,7 +1676,136 @@ function topbarHTML(){
 // =========================================================================
 //  畫面 1：選流派
 // =========================================================================
+// 接續／中繼票／中繼重選提示三個盒子：新手首頁與出師後的選流派畫面共用
+function homeBoxesHTML(){
+  // ⏸ 上一趟還沒打完 → 最上面給接續入口（關掉分頁不等於放棄）
+  const sv = peekRunSave();
+  const resumeBox = (sv && !_midMode) ? `
+    <div style="border:1px solid var(--gold);background:#fffbe9;padding:10px 12px;margin:6px 0 10px;line-height:1.8">
+      <b style="color:var(--gold)">⏸ 上一趟還在進行中</b>
+      <div class="muted" style="font-size:11px;margin:2px 0 6px">${CLASSES[sv.run.classKey]?CLASSES[sv.run.classKey].name:''}・第 ${sv.run.depth} 場・連勝 ${sv.run.streak}・HP ${sv.run.hp}/${sv.run.maxHp}${sv.run.backup?`・💿 備份盤第 ${sv.run.backupAt} 場`:''}</div>
+      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="resumeRun()">▶ 接著打（第 ${sv.run.depth} 場）</button>
+      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="if(confirm('放棄上一趟？進度會直接消失、不結算樂歷。')){clearRunSave();renderClassSelect();}">🗑 放棄那一趟，重新開始</button>
+    </div>` : '';
+  // 🎫 中繼票入口（有票才出現）
+  const ticketBox = (ticketsOf()>0 && !_midMode) ? `
+    <div style="border:1px dashed var(--gold);padding:10px 12px;margin:6px 0 10px;line-height:1.8">
+      <b style="color:var(--gold)">🎫 中繼票 ×${ticketsOf()}</b>
+      <div class="muted" style="font-size:11px;margin:2px 0 6px">可以直接從<b>第 ${MID.depth} 場</b>開打（照上次配置，或重選配置＋快速選秀）。</div>
+      <button class="btn" style="width:100%" onclick="renderMidStart()">🎫 用中繼票開局 →</button>
+    </div>` : '';
+  const midNote = _midMode==='fresh' ? `
+    <div class="muted" style="border:1px dashed var(--gold);padding:8px 10px;margin:6px 0 10px;color:var(--gold);line-height:1.8">
+      🎫 中繼票 · 重選配置中——選完牌組後會進入<b>快速選秀</b>，然後直接開第 ${MID.depth} 場。
+      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="_midMode=null;renderClassSelect()">取消，改回一般開局</button>
+    </div>` : '';
+  return resumeBox + ticketBox + midNote;
+}
+
+// ---------- 新手首頁（樂歷 Lv.3「出師」前）：不談流派、不談天賦，一顆按鈕直接開打 ----------
+// 流派＝守舊派（高血線最耐死，適合邊打邊學），包裝成「老闆的入門套裝」；
+// 第一趟第一場走老闆帶打教學（startTutorialRun），之後老闆自動配牌一鍵開局。
+function renderRookieHome(){
+  document.body.classList.remove('in-battle');
+  const dexBtn = (META.relicsOwned&&META.relicsOwned.length) ? `<button class="btn" onclick="openRelicDex()">🏺 發燒配件</button>` : '';
+  // Lv.2 前：教學開局／跳過教學 兩條路都給（沒玩過教學時教學當主打；玩過就換直接開打當主打）
+  const lv=levelOf(META.xp);
+  const bigBtn = s=>`style="width:100%;font-size:15px;padding:12px;border-color:var(--gold);background:var(--gold)" class="btn primary" ${s}`;
+  const subBtn = s=>`style="width:100%;margin-top:6px;font-size:10px" class="btn" ${s}`;
+  const startBtns = lv<2
+    ? (!META.tutorialDone
+        ? `<button ${bigBtn(`onclick="startTutorialGuarded()"`)}>🎓 教學開局（老闆帶打兩場）</button>
+           <button ${subBtn(`onclick="rookieQuickStart()"`)}>⏭ 跳過教學，直接開打</button>`
+        : `<button ${bigBtn(`onclick="rookieQuickStart()"`)}>▶ 直接開打</button>
+           <button ${subBtn(`onclick="startTutorialGuarded()"`)}>🎓 再玩一次教學</button>`)
+    : `<button ${bigBtn(`onclick="rookieQuickStart()"`)}>▶ 直接開打</button>`;
+  $app.innerHTML = topbarHTML() + `
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button>${dexBtn}</div>
+    <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
+    ${homeBoxesHTML()}
+    <div id="rookieHome" style="border:2px solid var(--gold);background:#fffbe9;padding:14px 14px 12px;margin:8px 0 10px;line-height:1.9">
+      <b style="color:var(--gold);font-size:15px">🎁 老闆的入門套裝</b>
+      <div class="muted" style="font-size:12px;margin:2px 0 10px">第一次來？不用先讀規則——老闆幫你把牌配好了，上桌<b>邊打邊學</b>。</div>
+      ${startBtns}
+      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="rookieCustomSeeds()">想自己挑專輯出戰 →</button>
+    </div>
+    <div class="muted" style="font-size:10px;line-height:1.9;margin:2px 0 10px">
+      🔒 樂歷 <b>Lv.3「出師」</b>：解鎖流派三選一（守舊／挖掘／異端）＋天賦配點<br>
+      🔒 樂歷 <b>Lv.10 之後</b>：曲風流派（開發中）——以曲風為主題的第二批流派
+    </div>
+    ${adminPanelHTML()}`;
+}
+// ---------- 🧪 管理員測試面板（僅 kubinice06 帳號可見；沙盒中永遠可見以便離開） ----------
+function isAdminUser(){ const u=window.__rogueUser&&window.__rogueUser(); return !!(u&&u.email==='kubinice06@gmail.com'); }
+function adminPanelHTML(){
+  if(!SANDBOX && !isAdminUser()) return '';
+  if(!SANDBOX) return `<div class="muted" style="border:1px dashed #999;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
+    🧪 管理員測試：<button class="btn" style="font-size:10px" onclick="enterSandbox()">以訪客身分瀏覽</button>
+    等級／卡牌全新開始，正式帳號進度完全不受影響，隨時可切回。</div>`;
+  return `<div style="border:1px dashed var(--gold);background:#fffbe9;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
+    <b style="color:var(--gold)">🧪 訪客測試中</b>——樂歷／卡牌／配件照常累積，但獨立存本機、不寫雲端與正式帳號。
+    <div class="row" style="gap:6px;margin-top:4px;flex-wrap:wrap">
+      <button class="btn" style="font-size:10px" onclick="sbSetLevel()">設定等級…</button>
+      <button class="btn" style="font-size:10px" onclick="sbResetXp()">樂歷歸零</button>
+      <button class="btn" style="font-size:10px" onclick="sbResetAll()">全部重置</button>
+      <button class="btn" style="font-size:10px" onclick="exitSandbox()">離開訪客模式 →</button>
+    </div></div>`;
+}
+function enterSandbox(){ try{ localStorage.setItem('dipRogueSandbox','1'); }catch(e){} location.reload(); }
+function exitSandbox(){ try{ localStorage.removeItem('dipRogueSandbox'); }catch(e){} location.reload(); }
+function sbSetLevel(){
+  if(!SANDBOX) return;
+  const v=prompt('設定樂歷等級（1〜99）', String(levelOf(META.xp))); if(v==null) return;
+  const lv=Math.max(1, Math.min(99, parseInt(v,10)||1));
+  META.xp = xpTotalForLevel(lv);
+  META.talents={atk:0,def:0,qir:0};   // 等級跳動會讓天賦點對不上 → 一併歸零重配
+  saveMeta(); renderClassSelect();
+}
+function sbResetXp(){ if(!SANDBOX) return; META.xp=0; META.talents={atk:0,def:0,qir:0}; saveMeta(); renderClassSelect(); }
+function sbResetAll(){
+  if(!SANDBOX) return;
+  if(!confirm('全部重置：訪客的樂歷、卡牌、配件、現金、教學進度與進行中的一趟都會清空，回到全新玩家。確定？')) return;
+  try{ localStorage.removeItem(RUNSAVE_KEY); localStorage.removeItem(metaStoreKey()); }catch(e){}
+  location.reload();
+}
+
+// 開新的一趟前的共用守門：上一趟還沒打完 → 先問一聲（同 chooseClass）
+function guardRunSave(){
+  const sv=peekRunSave();
+  return !(sv && !confirm(`上一趟還在進行中（第 ${sv.run.depth} 場）。\n開新的一趟會直接放棄它，確定嗎？`));
+}
+function rookieQuickStart(){
+  if(!guardRunSave()) return;
+  initRun('guard');
+  RUN.seedsPicked = autoSeeds();
+  afterSeedSelect();
+}
+// 教學開局（新手首頁按鈕＋品味生死鬥頁的教學關卡入口共用；可無限重玩）
+function startTutorialGuarded(){
+  if(!guardRunSave()) return;
+  startTutorialRun();
+}
+function rookieCustomSeeds(){
+  if(!guardRunSave()) return;
+  initRun('guard'); renderSeedSelect();
+}
+// 老闆自動配牌：收藏裡挑總星最高的 5 張（不含王牌）；不足就從卡池補
+function autoSeeds(){
+  const sum=c=>(c.classic||0)+(c.obscurity||0)+(c.accessibility||0);
+  const seeds=(META.collection||[]).filter(c=>!c.ace).sort((a,b)=>sum(b)-sum(a)).slice(0,5).map(c=>({...c}));
+  if(seeds.length<5){
+    const have=new Set(seeds.map(keyOf));
+    for(const c of shuffle(allPool().filter(x=>!x.ace))){
+      if(seeds.length>=5) break;
+      if(!have.has(keyOf(c))){ seeds.push({artist:c.artist,album:c.album,classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null}); have.add(keyOf(c)); }
+    }
+  }
+  return seeds;
+}
+
+let _gradShown=false;   // 出師橫幅：本次開頁期間持續顯示，下次進來就收
 function renderClassSelect(){
+  if(!hasUnlock('classes')){ renderRookieHome(); return; }
   document.body.classList.remove('in-battle');
   const free=freeTalents();
   const talentNote = (spentTalents()>0||free>0)
@@ -1675,35 +1827,23 @@ function renderClassSelect(){
       ${unlockedNow.length?`已解鎖：${unlockedNow.map(u=>u.label).join('・')}<br>`:''}
       ${nu?`🔒 <b style="color:var(--gold)">Lv.${nu.lv} 解鎖：${nu.label}</b>（每 5 場擊敗傳說藏家可獲發燒配件）`:'🏆 解鎖項目已全數開啟'}
     </div>`;
-  // ⏸ 上一趟還沒打完 → 最上面給接續入口（關掉分頁不等於放棄）
-  const sv = peekRunSave();
-  const resumeBox = (sv && !_midMode) ? `
-    <div style="border:1px solid var(--gold);background:#fffbe9;padding:10px 12px;margin:6px 0 10px;line-height:1.8">
-      <b style="color:var(--gold)">⏸ 上一趟還在進行中</b>
-      <div class="muted" style="font-size:11px;margin:2px 0 6px">${CLASSES[sv.run.classKey]?CLASSES[sv.run.classKey].name:''}・第 ${sv.run.depth} 場・連勝 ${sv.run.streak}・HP ${sv.run.hp}/${sv.run.maxHp}${sv.run.backup?`・💿 備份盤第 ${sv.run.backupAt} 場`:''}</div>
-      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="resumeRun()">▶ 接著打（第 ${sv.run.depth} 場）</button>
-      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="if(confirm('放棄上一趟？進度會直接消失、不結算樂歷。')){clearRunSave();renderClassSelect();}">🗑 放棄那一趟，重新開始</button>
-    </div>` : '';
-  // 🎫 中繼票入口（有票才出現）
-  const ticketBox = (ticketsOf()>0 && !_midMode) ? `
-    <div style="border:1px dashed var(--gold);padding:10px 12px;margin:6px 0 10px;line-height:1.8">
-      <b style="color:var(--gold)">🎫 中繼票 ×${ticketsOf()}</b>
-      <div class="muted" style="font-size:11px;margin:2px 0 6px">可以直接從<b>第 ${MID.depth} 場</b>開打（照上次配置，或重選配置＋快速選秀）。</div>
-      <button class="btn" style="width:100%" onclick="renderMidStart()">🎫 用中繼票開局 →</button>
-    </div>` : '';
-  const midNote = _midMode==='fresh' ? `
-    <div class="muted" style="border:1px dashed var(--gold);padding:8px 10px;margin:6px 0 10px;color:var(--gold);line-height:1.8">
-      🎫 中繼票 · 重選配置中——選完流派、種子與配件後會進入<b>快速選秀</b>，然後直接開第 ${MID.depth} 場。
-      <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="_midMode=null;renderClassSelect()">取消，改回一般開局</button>
+  // 🎓 出師橫幅：升上 Lv.3 後第一次進來的儀式感（本次開頁期間持續顯示）
+  if(!META.classIntroSeen){ _gradShown=true; META.classIntroSeen=true; saveMeta(); }
+  const gradBox = _gradShown ? `
+    <div style="border:2px solid var(--gold);background:#fffbe9;padding:12px 14px;margin:6px 0 10px;line-height:1.9">
+      <b style="color:var(--gold);font-size:15px">🎓 出師了！</b>
+      <div style="font-size:12px;margin-top:2px">打過幾趟，你已經聽出門道——現在起可以<b>自選流派</b>（守舊／挖掘／異端）、配<b>天賦點</b>，走自己的品味路線。</div>
     </div>` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 發燒配件</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
-    ${resumeBox}${ticketBox}${midNote}
+    ${gradBox}${homeBoxesHTML()}
     <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${unlockLine}
     ${talentNote}${tBtns}
-    <div id="clsList"></div>`;
+    <div id="clsList"></div>
+    ${lv<10?`<div class="muted" style="margin:10px 0 4px;font-size:10px">🔒 Lv.10 之後：<b>曲風流派</b>（開發中）——以曲風為主題的第二批流派。</div>`:''}
+    ${adminPanelHTML()}`;
   const list=document.getElementById('clsList');
   list.innerHTML = Object.entries(CLASSES).map(([k,c])=>{
     const s=c.stats;
@@ -1730,7 +1870,7 @@ function spendTalent(stat){ if(freeTalents()<=0) return; META.talents[stat]++; s
 //   存檔時機：每回合開始、玩家出牌的當下、以及每個場間畫面。
 //   存的是「當下狀態的快照」，不是可重播的亂數種子：對手每回合仍重新讀局（虛晃／留手照舊隨機），
 //   所以續玩不會變成背版套路；而因為出牌當下就已存檔，關掉重開也撈不到重抽那一手的機會。
-const RUNSAVE_KEY = 'dipRogueRun_v1';
+const RUNSAVE_KEY = SANDBOX ? 'dipRogueRun_v1_sandbox' : 'dipRogueRun_v1';   // 沙盒的進行中存檔也獨立一份
 let _phase = 'menu';
 const _clone = o => JSON.parse(JSON.stringify(o));
 
@@ -1762,6 +1902,7 @@ function saveRun(phase){
 // 雲端同步（登入才有）：戰鬥中每一手都寫太耗流量 → 平時只在場間畫面同步，
 // 「保留進度離開」時才強制連戰鬥狀態一起上傳（換裝置能接在同一手）。
 function syncRunToCloud(force){
+  if(SANDBOX) return null;   // 沙盒不同步雲端
   if(!window.__saveRogueRun || !(window.__rogueUser && window.__rogueUser())) return null;
   const s = peekRunSave(); if(!s) return null;
   if(!force && s.phase==='fight') return null;
@@ -1770,11 +1911,12 @@ function syncRunToCloud(force){
 function clearRunSave(){
   _phase='menu';
   try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}
-  // 立墓碑：別台裝置上那份同一趟的存檔要跟著作廢，否則同一趟能結算兩次
-  if(window.__saveRogueRun && window.__rogueUser && window.__rogueUser()) window.__saveRogueRun(null);
+  // 立墓碑：別台裝置上那份同一趟的存檔要跟著作廢，否則同一趟能結算兩次（沙盒不碰雲端）
+  if(!SANDBOX && window.__saveRogueRun && window.__rogueUser && window.__rogueUser()) window.__saveRogueRun(null);
 }
 // 登入後把雲端那份拉下來比對（只在還沒開打時動本機存檔）
 async function pullCloudRun(){
+  if(SANDBOX) return false;   // 沙盒不拉雲端存檔
   if(_phase!=='menu') return false;
   if(!window.__loadRogueRun || !(window.__rogueUser && window.__rogueUser())) return false;
   let c=null; try{ c = await window.__loadRogueRun(); }catch(e){}
@@ -1967,6 +2109,120 @@ function afterLevelQueue(){
   renderWinContinue();
 }
 
+// =========================================================================
+//  🎙 老闆帶打（第一趟前兩場的腳本化教學）＋一次性提示
+//  兩場課表——上：比星數＋三種相剋各用一次＋品味輾壓；下：相生連段＋被剋會痛＋割捨防禦擋大絕。
+//  引導方式＝「指出正確的按鈕」而非藏掉其他按鈕：介面照常，該按的發金光，按錯老闆出聲糾正。
+//  數值全程確定（守舊派 攻1、敵三圍0）：每回合傷害／氣勢都算死，兩場都照劇本收尾、玩家最多痛 1 滴。
+// =========================================================================
+const _tc=(artist,album,c,o,a)=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null});
+// 劇本核心五張（兩場共用；drawCard 從陣列尾端抽 → 排尾端的一定進起手）
+const TUT_CORE = {
+  revolver:_tc('The Beatles','Revolver',5,1,3),
+  kob:_tc('Miles Davis','Kind of Blue',5,2,3),
+  longseason:_tc('Fishmans','Long Season',2,5,3),
+  untrue:_tc('Burial','Untrue',3,4,4),
+  moneystore:_tc('Death Grips','The Money Store',3,4,5),
+  ruins:_tc('Grouper','Ruins',2,4,3),
+};
+// 玩家牌庫（前段＝墊牌，供每回合抽；尾端五張＝起手手牌）
+const TUT1_PDECK = [ _tc('Portishead','Dummy',4,2,2), _tc('Daft Punk','Discovery',4,1,1),
+  _tc('Fleetwood Mac','Rumours',4,1,1), _tc('Massive Attack','Mezzanine',4,3,3),
+  TUT_CORE.untrue, TUT_CORE.moneystore, TUT_CORE.longseason, TUT_CORE.kob, TUT_CORE.revolver ];
+const TUT2_PDECK = [ _tc('Massive Attack','Mezzanine',4,3,3), _tc('Portishead','Dummy',4,2,2),
+  _tc('Daft Punk','Discovery',4,1,1), _tc('Fleetwood Mac','Rumours',4,1,1), TUT_CORE.moneystore,
+  TUT_CORE.untrue, TUT_CORE.ruins, TUT_CORE.longseason, TUT_CORE.kob, TUT_CORE.revolver ];
+// 敵方牌庫（不洗牌；尾端五張＝敵方起手）。第一場：經×2＋硬＋冷（供三種相剋各上一課）；
+// 第二場：經典牌牆＋一張硬蕊 4★（剋玩家 5★ 不會被數值輾壓翻盤擋掉）。
+const TUT1_EDECK = [ _tc('Ed Sheeran','÷',1,1,1), _tc('Maroon 5','Songs About Jane',1,1,1),
+  _tc('Bruno Mars','Doo-Wops & Hooligans',1,1,1), _tc('Rihanna','Loud',1,1,1),
+  _tc('Justin Bieber','Purpose',1,1,1),
+  _tc('Cigarettes After Sex','Cigarettes After Sex',1,2,1),   // 冷 2（第四課：被硬蕊拆穿）
+  _tc('Linkin Park','Hybrid Theory',1,1,2),                   // 硬 2（第三課：被經典壓過）
+  _tc('Coldplay','Parachutes',2,1,1), _tc('Taylor Swift','1989',2,1,1) ];
+const TUT2_EDECK = [ _tc('Ed Sheeran','÷',1,1,1), _tc('Bruno Mars','Doo-Wops & Hooligans',1,1,1),
+  _tc('Rihanna','Loud',1,1,1), _tc('Maroon 5','Songs About Jane',1,1,1),
+  // 剋你冷門的那張硬蕊要「經典壓到 1」：不然它會在第 1 手就被 AI 當最高經典牌打掉、整個課表歪掉
+  _tc('Adele','21',2,1,1), _tc('Merzbow','Pulse Demon',1,3,5),
+  _tc('Coldplay','Parachutes',2,1,1), _tc('Coldplay','A Rush of Blood to the Head',2,1,1),
+  _tc('Taylor Swift','1989',2,1,1) ];
+// 課表：eAttr＝敵方這回合出的牌型（誠實露氣場）、eUlt＝敵方放大絕；want/attr＝要引導玩家按的那一手
+const TUT_SCRIPT = {
+  1:{ who:'音樂小白', hp:23, startQi:0, pdeck:TUT1_PDECK, edeck:TUT1_EDECK,
+      intro:'🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓',
+      steps:{
+        1:{ eAttr:'classic', want:'the beatles|revolver', attr:'classic',
+            txt:'🎙 老闆：每張盤有<b style="color:var(--classic)">經典</b>／<b style="color:var(--obscurity)">冷門</b>／<b style="color:var(--accessibility)">硬蕊</b>三軸星數（點牌就看得到）。點【Revolver】按發光的「經」——沒相剋就<b>比星數</b>，差幾星扣幾滴血。' },
+        2:{ eAttr:'classic', want:'fishmans|long season', attr:'obscurity',
+            txt:'🎙 老闆：相剋第一課【<b>冷門剋經典</b>】——他又要出經典，點【Long Season】按「冷」戳他：剋中照你整張的星數扣血、氣勢大漲。' },
+        3:{ eAttr:'accessibility', want:'miles davis|kind of blue', attr:'classic',
+            txt:'🎙 老闆：第二課【<b>經典剋硬蕊</b>】——他改走前衛硬蕊，用【Kind of Blue】按「經」正面壓過去。（⚡氣勢滿了？先留著，最後有用）' },
+        4:{ eAttr:'obscurity', want:'death grips|the money store', attr:'accessibility',
+            txt:'🎙 老闆：第三課【<b>硬蕊剋冷門</b>】——他挖冷門裝神祕，用【The Money Store】按「硬」拆穿他：稀有不等於厲害。' },
+        5:{ eAttr:'classic', want:null, attr:'__ult__',
+            txt:'🎙 老闆：三種相剋都會了！氣勢滿 6 可以放大絕——點任一張牌、按「<b>⚡ 品味輾壓</b>」收下這場。' },
+      },
+      outro:'🎙 老闆：基本功成了！選個獎勵喘口氣——下一場教你連段充氣勢、還有怎麼擋對手的大絕。' },
+  2:{ who:'文青同好', hp:9, startQi:5, pdeck:TUT2_PDECK, edeck:TUT2_EDECK,
+      intro:'🎙 老闆帶打（下）· 進階——相生連段、擋下品味輾壓',
+      steps:{
+        1:{ eAttr:'classic', want:'the beatles|revolver', attr:'classic',
+            txt:'🎙 老闆：這位有備而來（看他氣勢條！）。進階課【<b>相生連段</b>】：照 經典→冷門→硬蕊 的順序接招會多充氣勢。先出【Revolver】的「經」開頭。' },
+        2:{ eAttr:'accessibility', want:'fishmans|long season', attr:'obscurity',
+            txt:'🎙 老闆：接【Long Season】的「冷」＝<b>2 連</b>多充氣勢。欸，他氣場偏硬蕊——硬剋冷，這手會痛一下，但連段值得，忍著。' },
+        3:{ eAttr:'classic', eUlt:true, want:'burial|untrue', attr:'__sac__',
+            txt:'🎙 老闆：他氣勢滿了、要放大絕！手上沒王牌就<b>用牌擋</b>——點【Untrue】按「<b>🛡 割捨防禦</b>」：犧牲那張牌抵傷（有王牌時打出王牌更猛，直接反彈）。' },
+        4:{ eAttr:'classic', want:'miles davis|kind of blue', attr:'classic',
+            txt:'🎙 老闆：剛才被剋痛了一下吧？<b>相剋是雙向的</b>，讀氣場防著點。重鋪連段——出【Kind of Blue】的「經」。' },
+        5:{ eAttr:'classic', want:'grouper|ruins', attr:'obscurity', alt:'__ult__',
+            txt:'🎙 老闆：收尾——【Ruins】的「冷」既接連段<b>又剋他的經典</b>，一石二鳥！（氣勢滿了想直接 ⚡輾壓 也行）' },
+      },
+      outro:'🎙 老闆：出師前的課都教完了！之後每贏一場挑個獎勵、每五場有位大人物在等你——剩下的牌桌上學。' },
+};
+function tutStep(){ return (G && G.tut && TUT_SCRIPT[G.tut.fight]) ? TUT_SCRIPT[G.tut.fight].steps[G.tut.step] : null; }
+// 按錯時的糾正語：把該做的動作再講一次
+function tutRedirect(st){
+  const name = st.want ? TUT_SCRIPT[G.tut.fight].pdeck.concat(Object.values(TUT_CORE)).find(c=>keyOf(c)===st.want) : null;
+  const act = st.attr==='__ult__' ? '按「⚡ 品味輾壓」'
+    : st.attr==='__sac__' ? `點【${name?name.album:''}】按「🛡 割捨防禦」`
+    : `點【${name?name.album:''}】出「${ATTR_ZH[st.attr]}」`;
+  coachToast('🎙 老闆：這一手先照我說的——'+act+'。出完這場隨你打！');
+}
+function startTutorialRun(){
+  META.tutorialDone=true;   // 開場就記下：中途關頁也不會被卡在教學圈
+  initRun('guard');
+  RUN._tutorial=true;
+  RUN.seedsPicked=[TUT_CORE.revolver,TUT_CORE.kob,TUT_CORE.longseason,TUT_CORE.moneystore,TUT_CORE.untrue].map(c=>({...c}));
+  // 這趟之後（第 3 場起）用的牌組＝兩場教學用到的全部盤（割捨掉的 Untrue 會被 removeFromRunDeck 真的移除）
+  RUN.deck=TUT1_PDECK.concat([TUT_CORE.ruins]).map(c=>copyCard(c));
+  RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
+  META.lastLoadout={ classKey:'guard', relics:[],
+    seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
+  saveMeta();
+  // 老闆借的盤若收藏還沒有 → 一樣列入趟末「挑 1 張永久收藏」名單（打完老闆送你一張）
+  const _owned=new Set(META.collection.map(keyOf));
+  RUN.drawnCards=RUN.seedsPicked.filter(c=>!_owned.has(keyOf(c)))
+    .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null,uid:newUid()}));
+  nextFight();
+}
+// 老闆金框提示（教學外的一次性教學吐司）：coachTip 每個 id 一輩子只跳一次
+function coachToast(msg){
+  let t=document.getElementById('coachToast');
+  if(!t){ t=document.createElement('div'); t.id='coachToast';
+    t.style.cssText='position:fixed;left:50%;bottom:130px;transform:translateX(-50%);max-width:min(86vw,380px);background:#fffbe9;border:2px solid var(--gold);color:#4a3a08;padding:10px 14px;font-size:12px;font-weight:700;line-height:1.7;z-index:998;box-shadow:0 4px 18px rgba(0,0,0,.25);transition:opacity .3s;cursor:pointer';
+    t.onclick=()=>{ t.style.opacity='0'; };
+    document.body.appendChild(t); }
+  t.innerHTML=msg; t.style.opacity='1';
+  clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; }, 5200);
+}
+function coachTip(id,msg){
+  if(G&&G.tut) return;                 // 教學場自己會講，不疊吐司
+  if(!META.tips) META.tips={};
+  if(META.tips[id]) return;
+  META.tips[id]=1; saveMeta();
+  coachToast(msg);
+}
+
 function initRun(key){
   clearRunSave();   // 開新的一趟＝舊存檔作廢
   const c=CLASSES[key];
@@ -2098,10 +2354,10 @@ function paintSeedScreen(){
     ? `<div class="muted" style="margin:6px 0;color:var(--lose)">唱片櫃不足 ${SM} 張，先去抽幾張或改用「隨機發牌」。</div>` : '';
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:14px 0 2px">
-      <button class="btn" style="padding:4px 9px;font-size:13px;line-height:1" onclick="renderClassSelect()" title="回上一步：重選流派" aria-label="回上一步：重選流派">←</button>
+      <button class="btn" style="padding:4px 9px;font-size:13px;line-height:1" onclick="renderClassSelect()" title="回上一步" aria-label="回上一步">←</button>
       <h1 style="margin:0">挑 ${SM} 張專輯開始旅程</h1>
     </div>
-    <div class="muted" style="margin:4px 0 2px">流派：<b>${c.name}</b>　挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'唱片櫃與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
+    <div class="muted" style="margin:4px 0 2px">${hasUnlock('classes')?`流派：<b>${c.name}</b>　`:''}挑 <b>${SM} 張</b>專輯組成你的起始牌組，系統會再補幾張基礎雜牌。${user?'唱片櫃與隨機發牌可切換頁籤<b>混著選</b>。':''}</div>
     <div class="muted" style="margin:2px 0 2px;font-size:10px">點卡選入／取消，<b>長按</b>卡片看專輯介紹與試聽。</div>
     ${sourceRow}${emptyColl}
     <div class="grid" id="shelf"></div>
@@ -2447,15 +2703,20 @@ function nextFight(){
   RUN._lastWasBoss = false;
   ensureRelicState();     // 相容舊存檔＋補齊出戰欄
   const E = enemyForDepth(RUN.depth);
+  // 🎙 老闆帶打：教學趟前兩場換成腳本敵人（三圍 0、指定牌庫不洗牌 → 每回合數值完全可控）
+  const _tut = (RUN._tutorial && TUT_SCRIPT[RUN.depth]) || null;
+  if(_tut) Object.assign(E, { who:_tut.who, emoji:'🎧', diff:'easy', stats:{atk:0,def:0,qir:0},
+    hp:_tut.hp, maxHp:_tut.hp, startQi:_tut.startQi, boss:false, deck:_tut.edeck.map(c=>copyCard(c)) });
   // 起手保證抽到自己選的牌：非雜牌洗勻放牌庫上層、雜牌沉底——好牌抽完才輪到雜牌充數
   // （第 1 場起手 5 張＝玩家挑的 5 張種子；drawCard 用 pop() 從陣列尾端抽）
   const _good = shuffle(RUN.deck.filter(c=>!c.junk).map(copyCard));
   const _junk = shuffle(RUN.deck.filter(c=>c.junk).map(copyCard));
-  const pDeck = _junk.concat(_good);
+  // 教學場用課表指定牌庫（不洗牌、不受場間升級影響）：起手保證是劇本那五張
+  const pDeck = _tut ? _tut.pdeck.map(copyCard) : _junk.concat(_good);
   G = {
     over:false, busy:false, turn:0,
     p:{ side:'p', hp:RUN.hp, maxHp:RUN.maxHp, qi:clampQi(relicFx('startQi')), deck:pDeck, hand:[], last:null, chain:0, stats:RUN.stats },   // 45 轉接環：開局氣勢
-    e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },
+    e:{ side:'e', hp:E.hp, maxHp:E.maxHp, qi:E.startQi||0, deck:_tut?E.deck.slice():shuffle(E.deck), hand:[], last:null, chain:0, stats:E.stats },   // 教學場敵方也照課表順序抽
     E, diff:E.diff, pendingE:null, pCounteredTellLast:false, log:[], sacUsed:false,   // sacUsed：割捨防禦每場限一次
     _dustUsed:false,      // 防塵套：每場首次受擊減半（每場重置）
     eHist:[], pHist:[],   // 本場雙方出過的牌（回顧用）
@@ -2466,7 +2727,9 @@ function nextFight(){
   fireRelic('startQi','maxHp','extraDraw','winHeal','xpBoost','feintDown','drawTwo');
   for(let i=0;i<CFG.startHand;i++){ drawCard(G.e); }
   for(let i=0;i<CFG.startHand+RUN.mods.extraDraw+relicFx('extraDraw');i++){ drawCard(G.p); }  // 起手多抽（能力＋試聽站耳機）
+  if(_tut) G.tut={fight:RUN.depth, step:1};   // 教學狀態跟著 G 走（存檔/續玩自動保留）
   if(E.boss){ pushLog(`🎩 第 ${RUN.depth} 場 · 里程碑【傳說藏家】現身——打贏可獲發燒配件！`,'good'); bossIntro(); }
+  else if(_tut) pushLog(_tut.intro,'good');
   else pushLog(`⚔️ 第 ${RUN.depth} 場 · 對手【${E.who}】（${E.diff==='easy'?'生手':E.diff==='normal'?'老練':'硬仗'}）`,'good');
   renderBattle();
   startTurn();
@@ -2589,6 +2852,17 @@ function startTurn(){
   if(RUN.qiPerTurn) G.p.qi=clampQi(G.p.qi+RUN.qiPerTurn);
   // 能力：每回合回血
   if(RUN.mods.regen && G.turn>1) G.p.hp=Math.min(G.p.maxHp, G.p.hp+RUN.mods.regen);
+  // 🎙 老闆帶打：敵方照課表出牌（誠實露氣場、不虛晃；第二場第 3 手照劇本放大絕）
+  if(G.tut){
+    const st=tutStep();
+    const card=st && (bestEnemyCardFor(st.eAttr) || G.e.hand[0]);
+    if(st && card){
+      G.pendingE={ card, attr:st.eAttr, tell:st.eAttr, ult:!!st.eUlt, vague:false };
+      renderBattle();
+      G._committed=null; saveRun('fight');
+      return;
+    }
+  }
   // AI 暗定 + 虛晃（隨深度越來越會騙：氣場提示不再可以照剋）
   let plan=aiPlan();
   if(!plan){ refillDeck('e'); drawCard(G.e); plan=aiPlan(); }   // 對手無牌 → 從卡池補牌續戰（不速判結束）
@@ -2799,6 +3073,8 @@ function renderBattle(){
       : !G.sacUsed ? '⚡ 沒王牌 → 點一張牌選「🛡 割捨防禦」抵傷（本場限一次）'
       : '⚡ 本場割捨已用過 → 拚血扛下或搶先出招')
     : '點一張手牌 → 選主打屬性出招';
+  // 🎙 老闆帶打：提示列換成老闆的帶打台詞（金框），一回合教一件事
+  const _tstep = tutStep();
   const need=runXpNeed();
   // 戰鬥中不放樂歷列（省高度給手牌）；藥丸合併縮短、強制單行不換行 → 手機不再把手牌擠出畫面
   const bossPill = (G.E && G.E.boss)
@@ -2819,7 +3095,7 @@ function renderBattle(){
     <div class="player-zone">
       ${sideHTML(G.p, '你', 'p')}
       <div class="cheat">${RUN.relics.length?`<div class="cheat-relics">${relicBarHTML()}</div>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【硬蕊】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
-      <div class="hint" id="hint">${hintTxt}</div>
+      <div class="hint${_tstep?' coach':''}" id="hint">${_tstep?_tstep.txt:hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
       <div class="htrow" id="hand"></div>
       <div class="log" id="log">${G.log.map(l=>`<div class="${l.cls}">${l.t}</div>`).join('')}</div>
@@ -2840,6 +3116,7 @@ let _sel=null;
 function renderHand(){
   const el=document.getElementById('hand'); if(!el) return;
   const eUltNext = !!(G.pendingE && G.pendingE.ult && !G.busy && !G.over);   // 對手這手要輾壓 → 王牌亮框提示可七星回擊
+  const _ts = tutStep();   // 老闆帶打：指定牌發光、其他壓暗（仍可點開看，按錯老闆會出聲）；卡面直接亮三軸數值
   el.innerHTML = G.p.hand.map(c=>{
     const aceTag=c.ace?`<span class="ht-ace ${c.ace}">${ACE_ZH[c.ace]}</span>`:'';
     const counterTag=(eUltNext&&c.ace)?`<span class="ht-counter">⚡ 可反制輾壓</span>`:'';
@@ -2847,8 +3124,11 @@ function renderHand(){
       ? `<div class="ht-cover" style="background-image:url('${String(c.coverUrl).replace(/'/g,'%27')}')"></div>`
       : `<div class="ht-cover ht-noimg"><span>${c.album}</span></div>`;
     const ring=c.ace?`ace-border ace-${c.ace}`:rarityCls(c);
-    return `<div class="handtile ${ring} ${eUltNext&&c.ace?'counter-ready':''} ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}${counterTag}</div>`;
+    const tutCls=_ts?(_ts.want?(keyOf(c)===_ts.want?'tut-glow':'tut-dim'):'tut-glow'):'';
+    return `<div class="handtile ${ring} ${tutCls} ${eUltNext&&c.ace?'counter-ready':''} ${_sel===c.uid?'sel':''}" data-uid="${c.uid}" onclick="selectCard(${c.uid})">${cover}${aceTag}${counterTag}</div>`;
   }).join('');
+  // 手上第一次出現王牌 → 老闆教一句（一輩子一次）
+  if(!G.tut && G.p.hand.some(c=>c.ace)) coachTip('ace','✨ 發金光的是<b>王牌</b>：單軸七星、不會被相剋；對手要放品味輾壓時打出它＝七星回擊，擋下還反傷。');
   // 長按手牌 → 唱片資訊＋試聽
   G.p.hand.forEach(c=>{ const tile=el.querySelector(`.handtile[data-uid="${c.uid}"]`); if(tile) attachHandPress(tile,c); });
   // 即時補封面
@@ -2866,12 +3146,15 @@ function renderTilePop(){
   const c=G.p.hand.find(x=>x.uid===_sel);
   if(!c||G.busy){ pop.classList.remove('show'); return; }
   const ultReady=G.p.qi>=CFG.qiMax;
-  const ult=ultReady?`<button class="pp-act pp-ult" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg+relicFx('ultDmg')}</button>`:'';
+  // 🎙 老闆帶打：按鈕照常全部出現，只在「這一步該按的那顆」加金框脈動（按錯的 play() 會擋下並糾正）
+  const _ts=tutStep();
+  const _rec=a=>(_ts && _ts.attr===a && (!_ts.want || keyOf(c)===_ts.want)) ? ' tut-rec' : '';
+  const ult=ultReady?`<button class="pp-act pp-ult${_rec('__ult__')}" onclick="play(${c.uid},'__ult__')">⚡ 輾壓 −${CFG.pUltimate+G.p.stats.atk+RUN.mods.ultDmg+relicFx('ultDmg')}</button>`:'';
   // 割捨防禦：對手要放輾壓時，犧牲任意非王牌手牌，依其最高星數抵傷（每場一次、該牌本趟永久移除）；王牌請正常出走七星回擊
   const canSac = G.pendingE && G.pendingE.ult && !G.sacUsed && !c.ace;
   const sacStar = Math.max(c.classic,c.obscurity,c.accessibility);
-  const sac = canSac?`<button class="pp-act pp-sac" onclick="play(${c.uid},'__sac__')">🛡 割捨防禦 · 抵 ${sacStar} 傷（棄此牌）</button>`:'';
-  const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
+  const sac = canSac?`<button class="pp-act pp-sac${_rec('__sac__')}" onclick="play(${c.uid},'__sac__')">🛡 割捨防禦 · 抵 ${sacStar} 傷（棄此牌）</button>`:'';
+  const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act${_rec(a)}" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
   pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${sac}${acts}</div>`;
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
@@ -2921,6 +3204,15 @@ async function play(uid, pAttr){
   if(G.busy||G.over||!G.pendingE) return;
   window.DipPlayer?.unlock?.();
   const pCard0=G.p.hand.find(c=>c.uid===uid); if(!pCard0) return;
+  // 🎙 老闆帶打：介面不鎖、按錯不生效——老闆出聲把該按的再指一次（教學數值才全程可控）
+  if(G.tut){
+    const st=tutStep();
+    if(st){
+      const ok = (pAttr===st.attr && (!st.want || keyOf(pCard0)===st.want))
+              || (!!st.alt && pAttr===st.alt);   // 部分步驟允許替代解（如最後一手也可直接輾壓）
+      if(!ok){ tutRedirect(st); return; }
+    }
+  }
   // 出牌當下先存檔（記下這一手）→ 看到結果才關掉分頁也沒用，續玩會把同一手打完
   G._committed={uid, attr:pAttr}; saveRun('fight');
   G.busy=true; _sel=null;
@@ -2992,6 +3284,7 @@ async function play(uid, pAttr){
     // 階段1 相生連段
     const pc=computeChain(G.p,pAttr), ec=computeChain(G.e,eAttr);
     if(pc.qi>0) pushLog(`你 · ${SYN_SKILL[pAttr]} ×${pc.len}連 氣勢+${pc.qi}`,'qi');
+    if(pc.qi>0) coachTip('chain','♪ <b>相生連段</b>：照 經典→冷門→硬蕊 的順序接招，每連一段多充氣勢——而且剛好不會餵到對手的相剋。');
     if(ec.qi>0) pushLog(`對手 · ${SYN_SKILL[eAttr]} ×${ec.len}連 氣勢+${ec.qi}`,'qi');
     // 階段2 相剋/數值
     const r=resolveClash(pCard,pAttr,eCard,eAttr);
@@ -3047,6 +3340,7 @@ async function play(uid, pAttr){
   if(tellEl) tellEl.innerHTML = eUlt
     ? '上一手：對手發動 <b>⚡品味輾壓</b>'
     : `上一手：對手出【<b>${ATTR_ZH[eAttr]}</b>】${eCard[eAttr]}★${feinted?'（虛晃！氣場是假的）':''}`;
+  if(feinted) coachTip('feint','⚠ <b>氣場提示會騙人</b>：太乖照提示去剋，對手會虛晃反咬——偶爾反著打、或走自己的連段。');
   refreshFighters();
   await sleep(900);
 
@@ -3066,6 +3360,7 @@ async function play(uid, pAttr){
   drawCard(G.p); drawCard(G.e);
   while(G.p.hand.length>CFG.handLimit) G.p.hand.shift();
   while(G.e.hand.length>CFG.handLimit) G.e.hand.shift();
+  if(G.tut) G.tut.step=Math.min(5, G.tut.step+1);   // 老闆帶打：下一課
   callout(''); startTurn();
 }
 
@@ -3130,6 +3425,13 @@ function applyBuff(u){
 
 function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
+  // 🎙 老闆帶打：兩場各有結業語；第二場打完教學正式結束，之後正常連打（進階機制首次發生時 coachTip 再各教一句）
+  if(G.tut){
+    const sc=TUT_SCRIPT[G.tut.fight];
+    if(sc) setTimeout(()=>coachToast(sc.outro), 700);
+    if(G.tut.fight>=2) RUN._tutorial=false;
+    G.tut=null;
+  }
   RUN._lastWasBoss = !!(G.E && G.E.boss);              // 剛打贏藏家 → 勝利畫面給壓備份盤的機會
   // 中繼票：從頭打贏第 MID.depth 場 → 一張票＋存下踏進那場前的 build 快照
   if(!RUN.baseDepth && RUN.depth===MID.depth && RUN._midSnap && !RUN._gotTicket){
@@ -3681,7 +3983,7 @@ function doKeepRunCard(i){
   const clean={artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null};
   if(!META.collection.some(x=>keyOf(x)===keyOf(clean))) META.collection.push(clean);
   const user = window.__rogueUser && window.__rogueUser();
-  if(user && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號唱片櫃（Firestore）
+  if(user && !SANDBOX && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號唱片櫃（Firestore）；沙盒只留本機
   else { META.pending=META.pending||[]; if(!META.pending.some(x=>keyOf(x)===keyOf(clean))) META.pending.push(clean); }
   saveMeta();
   closeCardInfo();
@@ -3690,7 +3992,7 @@ function doKeepRunCard(i){
   if(wrap){ [...wrap.children].forEach((el,j)=>{ el.style.opacity = j===i?'1':'.35';
     if(j===i){ const cd=el.querySelector('.card'); if(cd){ cd.style.borderColor='var(--gold)'; cd.style.boxShadow='0 0 0 1px var(--gold) inset'; } } }); }
   const note=document.getElementById('keepNote');
-  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）${user?'・已同步到唱片櫃':'・存本機（登入後自動補進唱片櫃）'}`; }
+  if(note){ note.style.color='var(--gold)'; note.innerHTML=`★ 已收藏：${c.album}（${c.artist}）${user&&!SANDBOX?'・已同步到唱片櫃':SANDBOX?'・存訪客測試檔（不寫正式帳號）':'・存本機（登入後自動補進唱片櫃）'}`; }
   const cnt=document.getElementById('collCount'); if(cnt) cnt.textContent=META.collection.length;
 }
 // 未登入收卡 → 詢問登入/註冊（Google 一鍵，登入即註冊）
@@ -3970,7 +4272,12 @@ async function bootstrap(){
     if(window.__rogueCfg) cfg = await Promise.race([ window.__rogueCfg, new Promise(r=>setTimeout(()=>r(null),4000)) ]);
   }catch(e){}
   applyConfig(cfg);
-  renderClassSelect();
+  // 品味生死鬥頁的「教學關卡」入口：?tutorial=1 直接開教學（可無限重玩）；
+  // 把參數洗掉，之後死亡重來／重新整理不會又被拉回教學
+  const _wantTut = new URLSearchParams(location.search).get('tutorial')==='1';
+  if(_wantTut){ try{ history.replaceState(null,'',location.pathname); }catch(e){} }
+  if(_wantTut && guardRunSave()){ startTutorialRun(); }
+  else renderClassSelect();
   // 背景抓「全世界」真實專輯擴充卡池（不擋畫面；離線就跳過、用內建 POOL）
   fillDynamicPool(16);
   if(DYNAMIC_POOL.length < 60){ setTimeout(()=>fillDynamicPool(16), 4000); }
