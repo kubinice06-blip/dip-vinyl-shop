@@ -1,11 +1,9 @@
 # dip vinyl 專案備忘錄
 
-### 2026-07-25｜desc-restyle w1-005-b hook 層完成：10 張（Springsteen×4／Petty×2／Dire Straits×1／Police×3）
+### 2026-07-25｜desc-restyle wave1（apex 620）量產中：研究／hook／寫作三層全並行
 
-- Repo：無（僅 `../desc-restyle/` 工作資料夾）。Fable hook 層，輸出 `desc-restyle/batches/hooks/w1-005-hooks-b.json`。
-- 每張一句 hook＋note（主故事鏈／次要一句／疑義提醒）；型態輪換 斷言→懸疑→場景→懸疑→斷言→人物定調→場景→懸疑→場景→斷言，無連用。
-- Reggatta de Blanc 雙 g 官方拼法疑義已寫入 note 警告；BITUSA 的 mabumbe 弱來源、Damn the Torpedoes「兩週」保留語氣等均有提醒。
-- 驗證：JSON parse 通過、10 筆齊、hook 長度 28–40 字（Array.from）。
+- 管線升級：研究層 Sonnet×5 預跑多批、hook 層改由 Fable 子代理×5 並行（店主核准、主會話抽查）、寫作層 Sonnet×2/批、主會話終審。並行上限 20 subagents。
+- w1-002 已上線（50 張）；w1-003〜007 研究與 hook 完成、寫作層進行中。細節見 desc-restyle/progress.json；完成後在此整併一筆總記錄。
 
 ### 2026-07-25｜desc-restyle 改走「全池深度研究」路線：test20＋w1-001 共 70 張研究版簡介上線
 
