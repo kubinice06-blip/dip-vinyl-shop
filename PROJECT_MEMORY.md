@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-25｜Funk & Soul 大擴充：523 張上架（店史最大單批）＋殿堂 4 張、流亡 2 張
+
+- Repo：`dip-vinyl-shop`＋Worker KV。批次：`2026-07-24-funksoul`（首個套用 MBID/UPC 硬規則的批次）。
+- 範圍：店主指示補齊 funk 與 soul 兩大類（原 soul 標僅 915 張）。160 位藝人 MB 反查 → 2243 候選
+  → 評分排序精選 → 封面 98.5% → 最終 523 張（funk ~245／soul ~278）。seed 7041→7558、apex hall 410→414、pearl 107→109。
+- **頂點卡**：升殿堂 4 張——Maggot Brain、Mothership Connection（池中普卡升級、自 seed 移入 apex）、
+  The Payback、Cold Sweat（本批，funk 起源正典）；流亡珍珠 2 張——Damn Right I Am Somebody（149 listeners）、
+  Breakin' Bread（123）。Black Byrd 經店主裁定不進殿堂。Firestore `album_overrides.tier` 需後台匯入同步（admin 權限）。
+- **簡介**：523 張全數預生成入 KV（`desc2:`），管線＝Sonnet 研究層（WebSearch 兩來源）→ Fable 親寫 hook →
+  Sonnet 寫身體 → 四道自動 QA（官方字數 80-280／禁語／曲風房規／簡介專名逐一對照事實表）。幻覺率 0。
+  店主語氣房規 v2（簡潔有力、hook 一句到位、嚴禁詩化收語）與 280 字上限均為本批新定。
+- **固定試聽**：497 ready（UPC 精準通道佔 273——MBID/UPC 新規則首批即回本）＋26 unavailable，
+  全走靜態路徑（apple-audio-map-v1 追加 523 筆、runtime 重建 6689 筆、card-preview-status 追加 26 筆）。
+- **研究層剔除 27 張偽裝品**：MB secondary-types 對「再發行合輯／出土帶／換皮再版／live 漏標」有系統性盲點
+  （AWB R&B、Darondo、Meters Jam、J.B.'s 出土帶、Sings Out of Sight＝Out of Sight 重發等），
+  單靠 MB 中繼資料不足以執行「Compilation 不收」規則，onboarding 研究層必須逐張網查 isCompilation。
+- 掛名／年份修正十餘筆（The Jacksons→The Jackson 5、Miracles→Smokey Robinson & the Miracles、
+  Easy→Marvin Gaye & Tammi Terrell、RSD 再版年誤植等）；池中重複 2 張揪出（Twist And Shout、Jackson 5 ABC）。
+- 曲風欄：build-seed-genres 補齊，新卡 505/519 帶 soul 標（Funk & Soul 流派池 915→~1420）；8 張分類器回空。
+- 驗證：prepare gate 0 error；published gate 0 error（92 個 UPC 軟警告為預期；CAA 封面在 gate 單發抓取偶發 500 屬 IA 節點隨機抽風，帶重試全量實測 523/523 全通過）；
+  `/album-desc` 抽驗 KV-HIT 且文字一致；card_catalog 預熱 523/523 成功（含 rgMbid/upc 欄）。
+- 候補待辦：AWB《Show Your Hand》(1973)、James Brown《Out of Sight》(1964) 為被移除再版盤的正主、未在池中，之後補批可收。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+  `card-preview-status.js`、Worker KV（desc2: 523 筆）、Firestore card_catalog（REST 預熱）。manifest 留存 scratchpad。
+
 ### 2026-07-24｜onboarding 硬規則：新卡一律記 MBID（必填）＋UPC（盡力）
 
 - Repo：dip-vinyl-shop。commit b2f7949。
