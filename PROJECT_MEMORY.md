@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-25｜desc-restyle w1-005-b hook 層完成：10 張（Springsteen×4／Petty×2／Dire Straits×1／Police×3）
+
+- Repo：無（僅 `../desc-restyle/` 工作資料夾）。Fable hook 層，輸出 `desc-restyle/batches/hooks/w1-005-hooks-b.json`。
+- 每張一句 hook＋note（主故事鏈／次要一句／疑義提醒）；型態輪換 斷言→懸疑→場景→懸疑→斷言→人物定調→場景→懸疑→場景→斷言，無連用。
+- Reggatta de Blanc 雙 g 官方拼法疑義已寫入 note 警告；BITUSA 的 mabumbe 弱來源、Damn the Torpedoes「兩週」保留語氣等均有提醒。
+- 驗證：JSON parse 通過、10 筆齊、hook 長度 28–40 字（Array.from）。
+
 ### 2026-07-25｜desc-restyle 改走「全池深度研究」路線：test20＋w1-001 共 70 張研究版簡介上線
 
 - 店主裁定：純風格改寫版（batch-001 50 張）太做作、已用備份回滾；改採 funksoul 式研究管線
