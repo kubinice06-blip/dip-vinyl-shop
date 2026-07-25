@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-25｜既有卡池簡介重塑（desc-restyle）啟動：KV 全量備份＋第一批 50 張改寫上線，待店主抽驗定調
+
+- Repo：只動 Worker KV（`desc2:`），repo 檔案未動；作業資料夾 `../desc-restyle/`。
+- 依 `desc-restyle/INSTRUCTIONS.md` 純風格改寫（零新事實）：重寫開頭 hook＋店主語氣 v2 改寫內文。
+- 動工前已匯出 `desc2:` 全量 7,626 筆現值存 `desc-restyle/kv-backup-desc2.json`（回滾備份）。
+- 淨範圍 6,980 張／140 批（排除 funksoul 523、CJK 216、NEOCLASSIC 2、CURATED 1、KV 無現值 471）。
+- batch-001（50 張，六七零年代搖滾／民謠區段）：Fable 親寫 hook → Sonnet agent 改寫初稿 →
+  **Fable 全批審稿重寫**（初稿有湊字填充句、身體重複 hook、格言式收語三類系統性問題，全數修掉）→
+  qa-check 標記 0 → bulk put 50 筆 → 線上 `/album-desc` 抽驗 5 張 KV-HIT 且文字一致。
+- 字數落點 80–117（原文短就讓它短，不灌水）。進度記錄在 `desc-restyle/progress.json`。
+- **現狀：依規停在第一批，等店主抽驗定調後再放量**；不通過可用備份即時回滾這 50 鍵。
+
 ### 2026-07-25｜Funk & Soul 大擴充：523 張上架（店史最大單批）＋殿堂 4 張、流亡 2 張
 
 - Repo：`dip-vinyl-shop`＋Worker KV。批次：`2026-07-24-funksoul`（首個套用 MBID/UPC 硬規則的批次）。
