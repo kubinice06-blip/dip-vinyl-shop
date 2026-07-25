@@ -1,6 +1,19 @@
 # dip vinyl 專案備忘錄
 
-### 2026-07-25｜既有卡池簡介重塑（desc-restyle）啟動：KV 全量備份＋第一批 50 張改寫上線，待店主抽驗定調
+### 2026-07-25｜desc-restyle 改走「全池深度研究」路線：test20＋w1-001 共 70 張研究版簡介上線
+
+- 店主裁定：純風格改寫版（batch-001 50 張）太做作、已用備份回滾；改採 funksoul 式研究管線
+  （Sonnet 研究層 WebSearch 兩來源→Fable 親寫 hook→Sonnet 寫身體→qa-check-research 零編造比對→Fable 全批審稿）
+  對全池分四波重做，wave1＝apex 620 張。
+- **test20**（殿堂10/珍珠5/異端5 跨冷門度試作）：19 full／1 thin，店主核准；
+  《The Low End Theory》依店主回饋補 KQED 後續事實收滿故事弧——新通則：**hook 拋出的問題身體必須收尾**。
+- **w1-001**（殿堂正典 50 張：Beatles/Dylan/MJ/Prince/龐克後龐克/90s 搖滾）：研究 49 full／1 thin、
+  5 研究 agent＋2 寫作 agent 並行、Fable 審稿修 20 處（hook 重述、uncertain 名次誤用、簡體字、單曲/專輯榜混淆）、
+  QA 標記 0、KV bulk put、線上 5 張 KV-HIT 抽驗過。
+- 累計 70/6980；成本實測約 18k token/張；進度與批次狀態在 `desc-restyle/progress.json`。
+- 現狀：停在 w1-001 待店主抽驗，OK 後續跑 w1-002〜012（apex 其餘 550 張）。
+
+### 2026-07-25｜（已作廢）既有卡池簡介重塑（desc-restyle）啟動：KV 全量備份＋第一批 50 張改寫上線，待店主抽驗定調
 
 - Repo：只動 Worker KV（`desc2:`），repo 檔案未動；作業資料夾 `../desc-restyle/`。
 - 依 `desc-restyle/INSTRUCTIONS.md` 純風格改寫（零新事實）：重寫開頭 hook＋店主語氣 v2 改寫內文。
