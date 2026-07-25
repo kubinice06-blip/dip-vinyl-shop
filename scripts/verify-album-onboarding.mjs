@@ -233,10 +233,11 @@ for (let index = 0; index < albums.length; index++) {
   else {
     const length = charCount(description.text);
     if (length < 80) err(label, `description.text 長度必須至少 80 字，目前 ${length}`);
-    // 2026-07-22 店主核定：超過 180 字允許，但必須經人工審核確認無冗贅字詞，
-    // 以 description.lengthReviewed=true 留下審核紀錄；未標記仍照原上限擋下。
-    else if (length > 180 && description.lengthReviewed !== true) {
-      err(label, `description.text 超過 180 字（${length}）：需人工審核無冗贅字詞後標記 lengthReviewed=true`);
+    // 2026-07-24 店主核定（十張試寫實測後）：上限放寬至 280 字——名盤查證充足自然寫到 220+，
+    // 資料稀薄的卡「寧可簡短也不要寫未查證的字句」（280 是上限不是目標）。
+    // 超過 280 仍需人工審核無冗贅字詞後標 description.lengthReviewed=true（沿用 07-22 機制、門檻上移）。
+    else if (length > 280 && description.lengthReviewed !== true) {
+      err(label, `description.text 超過 280 字（${length}）：需人工審核無冗贅字詞後標記 lengthReviewed=true`);
     }
     if (BANNED.test(description.text || '')) err(label, `description.text 含禁止用語：${description.text.match(BANNED)[0]}`);
     if (/^這張專輯/.test(clean(description.text))) err(label, 'description.text 不可用「這張專輯」開頭');
