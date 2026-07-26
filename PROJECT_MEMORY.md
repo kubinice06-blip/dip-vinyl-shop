@@ -29,10 +29,19 @@
   直入教學且參數洗掉；沙盒改等級 7→歸零→全部重置→離開後正式檔 Lv.5 原封不動；
   console 全程 0 error。教學文案與門檻（Lv.3／Lv.10）後續會再迭代。
 
-### 2026-07-25｜desc-restyle wave1（apex 620）量產中：研究／hook／寫作三層全並行
+### 2026-07-26｜desc-restyle wave1 完成：apex 620 張研究版簡介全數上線 KV
 
-- 管線升級：研究層 Sonnet×5 預跑多批、hook 層改由 Fable 子代理×5 並行（店主核准、主會話抽查）、寫作層 Sonnet×2/批、主會話終審。並行上限 20 subagents。
-- w1-002 已上線（50 張）；w1-003〜007 研究與 hook 完成、寫作層進行中。細節見 desc-restyle/progress.json；完成後在此整併一筆總記錄。
+- Repo：只動 Worker KV（`desc2:`），repo 檔案未動；作業資料與逐批記錄在 `../desc-restyle/`（progress.json 為準）。
+- 範圍：test20＋w1-001〜012 共 620 張（正典／名盤／冷門深水區全含），每批走五層管線：
+  Sonnet 研究×5（WebSearch 兩獨立來源、主故事鏈、uncertain 標註）→ Fable hook×5（四型態輪換、擋研究過度推論）→
+  主會話 hook 品管（字數/禁語/uncertain 回滲）→ Sonnet 寫作×2 → qa-check-research 零編造比對 → 主會話逐張審稿 → KV bulk put → 線上 5 張抽驗。
+- 品質統計：研究層 full 約 9 成、thin 約 30 張、dry 3 張（誠實短寫不腦補）；每批 QA 標記歸零後上線；審稿層每批修 3〜23 處。
+- 寫作層系統性通病（三批實證，前置規則已補死仍需審稿把關）：把半形空格插進 hook（008/010 各 18/19 張、自動還原）、
+  引用含「必聽」的書單名（改英文原名或改述）、身體重述 hook、初稿爆字數 300〜600 再壓縮。
+- 資料疑義（待店主裁定）：Alexander Robotnick《Kind of... Robotnick》查證疑為 2024 數位選輯、與卡池年代不符；
+  San Ul Lim《The Mountain Hut》查無對應專輯；Michael A. Grant 同名盤查無任何紀錄——三張均以藝人/樂團層級保守簡介上線。
+- 中斷事故：07-26 月額度用罄一度中斷 15 個研究 agent，額度恢復後全數重跑；009-b 另因程序退出三跑才完成。
+- 累計 620/6980；wave2（正典高曝光 ~2000 張）待店主點頭再啟動。
 
 ### 2026-07-25｜desc-restyle 改走「全池深度研究」路線：test20＋w1-001 共 70 張研究版簡介上線
 
