@@ -2206,14 +2206,20 @@ function startTutorialRun(){
   nextFight();
 }
 // 老闆金框提示（教學外的一次性教學吐司）：coachTip 每個 id 一輩子只跳一次
+// ⚠ 這層一定要 pointer-events:none＋淡出後 visibility:hidden：它浮在手牌上方，
+//   正好壓在出牌彈窗的屬性按鈕上；只設 opacity:0 的話，看不見的它仍會把點擊吃掉。
 function coachToast(msg){
   let t=document.getElementById('coachToast');
   if(!t){ t=document.createElement('div'); t.id='coachToast';
-    t.style.cssText='position:fixed;left:50%;bottom:130px;transform:translateX(-50%);max-width:min(86vw,380px);background:#fffbe9;border:2px solid var(--gold);color:#4a3a08;padding:10px 14px;font-size:12px;font-weight:700;line-height:1.7;z-index:998;box-shadow:0 4px 18px rgba(0,0,0,.25);transition:opacity .3s;cursor:pointer';
-    t.onclick=()=>{ t.style.opacity='0'; };
+    t.style.cssText='position:fixed;left:50%;bottom:130px;transform:translateX(-50%);max-width:min(86vw,380px);background:#fffbe9;border:2px solid var(--gold);color:#4a3a08;padding:10px 14px;font-size:12px;font-weight:700;line-height:1.7;z-index:998;box-shadow:0 4px 18px rgba(0,0,0,.25);transition:opacity .3s;pointer-events:none;visibility:hidden';
     document.body.appendChild(t); }
-  t.innerHTML=msg; t.style.opacity='1';
-  clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; }, 5200);
+  t.innerHTML=msg; t.style.visibility='visible'; t.style.opacity='1';
+  clearTimeout(t._h); t._h=setTimeout(()=>hideCoachToast(), 5200);
+}
+function hideCoachToast(){
+  const t=document.getElementById('coachToast'); if(!t) return;
+  clearTimeout(t._h); t.style.opacity='0';
+  setTimeout(()=>{ if(t.style.opacity==='0') t.style.visibility='hidden'; }, 320);
 }
 function coachTip(id,msg){
   if(G&&G.tut) return;                 // 教學場自己會講，不疊吐司
@@ -3156,6 +3162,7 @@ function renderTilePop(){
   const sac = canSac?`<button class="pp-act pp-sac${_rec('__sac__')}" onclick="play(${c.uid},'__sac__')">🛡 割捨防禦 · 抵 ${sacStar} 傷（棄此牌）</button>`:'';
   const acts=ATTRS.map(a=>{ const aff=a===RUN.affinity?'★':''; return `<button class="pp-act${_rec(a)}" onclick="play(${c.uid},'${a}')"><b>${ATTR_ZH[a].charAt(0)}</b>${c[a]}${aff}</button>`; }).join('');
   pop.innerHTML=`<div class="tp-alb">${c.album}</div><div class="tp-art">${c.artist}</div><div class="tp-acts">${ult}${sac}${acts}</div>`;
+  hideCoachToast();   // 出牌彈窗就開在吐司那個位置：先收起來，別擋住屬性按鈕
   pop.classList.add('show'); positionTilePop(); requestAnimationFrame(positionTilePop);
 }
 function positionTilePop(){

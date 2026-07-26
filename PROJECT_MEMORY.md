@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-26｜修：教學第二場「冷」按不下去——淡出的老闆吐司仍在吃點擊
+
+- Repo：`dip-vinyl-shop`。店主回報教學第二場第二回合的「冷」按鈕按不下去。
+- **根因**：`coachToast`（第一場結業語）淡出時只設 `opacity:0`，元素仍留在 DOM，
+  且帶 `z-index:998`＋`pointer-events:auto`，位置 `bottom:130px` 正好壓在出牌彈窗
+  （`.tilepop` z-index 40）的屬性按鈕上——**看不見的吐司把 tap 吃掉**，畫面毫無反應
+  （不是教學守門擋的，`play()` 根本沒被呼叫）。實測 `elementsFromPoint` 在按鈕中心
+  回傳 `#coachToast` 在最上層，其矩形 y577–683 蓋住按鈕 y634。
+- **修法**：吐司改 `pointer-events:none`＋淡出後 `visibility:hidden`（新增 `hideCoachToast()`，
+  移除原本的點擊關閉），並在 `renderTilePop` 開啟彈窗時主動收起吐司，視覺上也不擋按鈕。
+- 通則教訓：**這個專案任何浮層都必須 `pointer-events:none` 或真的隱藏**——只降 opacity
+  的浮層會變成隱形點擊黑洞（`seedToast` 當初就有設 none，coachToast 漏了）。
+- 主要檔案：`roguelike.html`
+- 驗證：mobile 375×812 實測——修前 `hitOK:false`（命中 coachToast）、修後 `hitOK:true`
+  且真觸控序列（pointerdown/up/click）成功出牌進到 step3；第二場剩餘三手（割捨／經／冷）
+  tileHit＝btnHit＝true 全過、正常獲勝；console 0 error。
+
 ### 2026-07-26｜Roguelike 新手入門改造：等級解鎖流派＋老闆帶打兩場教學＋管理員訪客沙盒
 
 - Repo：`dip-vinyl-shop`。背景：朋友實測第一步就看不懂，入門門檻過高。
