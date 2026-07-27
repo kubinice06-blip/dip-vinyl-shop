@@ -1,5 +1,96 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜卡池發行年份回填：取數腳本與 50 張抽樣驗證（dip-vinyl-shop）
+
+- 目標是在藝人／專輯下面多顯示四位數發行年。新增 `scripts/build-release-years.mjs`：
+  **MusicBrainz release-group 的 `first-release-date` 為主來源**（原始發行年），
+  Apple `/lookup` 的 `releaseDate` 只做交叉驗證——**Apple 對老盤常回再版年，不可當主來源**，
+  抽樣裡兩筆 `check` 都是這個原因（Ohio Players《Pleasure》MB 1972／Apple 2023、
+  Gap Band IV MB 1982／Apple 1979），兩次都是 MB 對。
+- 判定分級：`ok`（MB 命中且與 Apple 差 ≤2 年）／`ok-no-cross`（MB 命中、無 Apple 可比）／
+  `check`（差 >2 年，人工看一眼）／`miss`（MB 無可信匹配）。輸出 `data/release-years-report.json`。
+- 抽樣採**分層**（sha256 排序取樣，確定性可重跑）：40 張全池隨機 + 10 張 CJK。
+  混在一起抽會完全看不出 CJK 這個破口——第一版 42/50＝84%，但**隨機層 98%、CJK 層只有 30%**。
+- CJK 低命中的根因**不是 MB 沒收錄**，是卡池 artist 欄位為複合名（「蘇打綠 sodagreen」
+  「茄子蛋 EggPlantEgg」「MC HotDog 熱狗」）→ MB 查詢 0 筆。加了兩條 fallback：
+  ① **複合名拆成 CJK 段／拉丁段各查一次**（`split-artist`）；
+  ② 前面都 0 筆時**只查專輯名、靠藝人 token 重疊認人**（`loose`，例如 Tony Williams
+  早期掛 Anthony Williams），loose 一律進人工複查桶、**不寫進資料檔**。
+- 加完 fallback 後 **46/50＝92%（隨機層 40/40＝100%，CJK 層 6/10＝60%）**。
+  `split-artist` 救回的三張華語盤年份與 Apple 完全一致（茄子蛋 2017／MC HotDog 2012／
+  蘇打綠 2015），loose 救回的 Tony Williams《Life Time》1964 也與 Apple 相符。
+- 仍 miss 的 4 張全是**日本爵士小廠盤**（清水靖晃《Kakashi》、宮間利之とニューハード、
+  山本剛トリオ《Speak Low》、福村博クインテット），其中只有清水靖晃有 Apple 年份可補。
+  這類就是最後要靠 Apple 或 AI 消歧義的殘餘。
+- MB 平均 **1.18 次請求／張**（只有第一輪沒中才走 fallback），全池 8193 張推估約 3 小時。
+- 全池首跑 7931/8193＝96.8%，但複查時抓出**四個匹配 bug，全部已修**（都寫進腳本註解）：
+  1. **空字串比對**：西里爾／希臘字母正規化後是 `''`，而 `任何字串.includes('')` 恆為真 →
+     Fela Kuti 認到 Тимати、Deep Purple 認到 Марлины。空字串一律不得參與比對。
+  2. **NFKD 拆解韓文**：韓文音節被拆成 Jamo（U+1100 區）後被字元類別濾光，同樣變空字串。
+  3. **短名 substring**：`'wire'.includes('wir')` → Wire 認到 Wir。拉丁名要求較短那邊 ≥4 字，
+     CJK ≥2 字（「王菲」不能被擋）。另加停用詞表：只共用一個 `the` 就配對會讓
+     The Beach Boys 認到 The Swift，只共用 `trio` 會讓 Vince Guaraldi Trio 認到 Eric Byrd Trio。
+  4. **最嚴重、且交叉驗證抓不出來的**：熱門老盤在 MB 有一大票同名合輯／紀念盤、score 全是 100，
+     原版被擠出前十（查 Santana《Santana》前十筆全是 Compilation，1969 原版不在裡面）→
+     拿到再版年（Santana 1997、Elvis Presley 2007、Camel 2013、Deep Purple 2014）。
+     修法是**在查詢層擋掉**：`AND primarytype:album AND -secondarytype:compilation AND -secondarytype:live`
+     ＋ limit 10→25，四張立刻全對。卡池本身收的現場盤／EP 會被這層擋光，所以保留
+     不過濾的第二階段（`exact-any-type`），多候選時一律取 `first-release-date` 最早者。
+     **這個 bug 不能靠 Apple 交叉驗證發現**——Apple 上架的常常也是 remaster，兩邊會一致地錯。
+- 新增 `--recheck`（只重跑上一輪報告裡的非 ok 卡）與 `--only <清單檔>`（補跑指定卡片），
+  兩者結果都**疊加**進既有資料檔（不整份覆寫），修嚴後不再成立的舊值會被撤掉。
+- **實測錯誤率只有 1.8%**（新舊兩版比對前 551 張，10 張年份改變）。所以全池重跑不是因為錯得多，
+  而是因為那 1.8% **無法用交叉驗證定位**——MB 與 Apple 會一致地錯，只能整批重算才知道是哪幾張。
+  錯的都錯很大：Elvis Presley 差 51 年、Deep Purple《Made in Japan》差 42 年、Camel 差 38 年。
+- 這次比對也揪出**修 bug 引入的回歸**：為了擋 `'wire'.includes('wir')` 而要求「較短那邊 ≥4 字」，
+  結果把 3 字藝人名全害了——Can 的首版在 MB 掛「The Can」，`can` 只有 3 字配不上，
+  1969 原版變成 2012 再版。修法是**在長度規則之前先做去冠詞比對**（`credited.replace(/^the/,'')`）。
+  受影響 186 張／70 位藝人（R.E.M.、U2、N.W.A、Yes、War、Nas、SZA、Neu!、Low、TLC…），
+  清單存 `data/short-artist-cards.json`，用 `--only` 補跑即可，不必再全池重來。
+  **教訓：改比對規則後要拿新舊結果對跑一次 diff，不能只看總命中率——命中率不會掉，年份卻悄悄變錯。**
+- **腳本只在跑完才寫檔，中途關機／中斷等於整批白跑**（第二次全池跑到一半時遇到要關機）。
+  應急做法是解析跑批的 stdout 逐行輸出（含 verdict／MB 年／Apple 年／matchLevel，足以重建資料檔），
+  存成 `data/release-years-partial.json`＋剩餘清單 `data/remaining-cards.json`。
+  **待辦：腳本應該每 N 張就落一次檔。**
+
+#### 2026-07-27 收工狀態與明天的續跑步驟
+
+- 第二次全池跑在 **3862/8193** 停下（手動中止），已保存 **3681 筆年份**於
+  `data/release-years-partial.json`；分佈 ok 3107／ok-no-cross 376／check 152／
+  loose-confirmed 46／check-loose 28／miss 153。
+- `data/release-years-v1.json` 仍是**第一次跑的舊版 7829 筆**（含 1.8% 再版年誤差），
+  尚未被新版覆蓋；前端與 `seed_cards.json` **完全沒動過**。
+- 續跑順序：
+  1. `node scripts/build-release-years.mjs --only data/remaining-cards.json`（4331 張，約 100 分鐘）
+  2. `node scripts/build-release-years.mjs --only data/short-artist-cards.json`（186 張短名回歸，約 5 分鐘）
+  3. `node scripts/verify-years-discogs.mjs`（Discogs 三方裁決 miss／check／check-loose）
+  4. 合併 partial 與上述結果 → 定版 `release-years-v1.json`，再談寫入卡池與前端顯示。
+- 新增 `loose-confirmed` 判級：loose 本身不夠格寫入，但只要 Apple 這個獨立來源給同一年份
+  就互相背書、可直接採信（實測 91 張可對照者有 83 張相符），不必人工。
+- 加入 **Discogs 當第三方裁判**（`scripts/verify-years-discogs.mjs`），只跑 miss／check／
+  check-loose，不做全池重查。要點：
+  - **不能用「MB 與 Apple 取最舊」這種通則**——Gap Band IV 是 MB 1982／Apple 1979，取最舊反而寫錯；
+    Apple 兩個方向都會偏，用一種錯換另一種錯，而且新錯誤沒有訊號能發現。
+  - 查 `type=release` 取最早壓片，**不查 master**：master 的 year 未必是原始年
+    （山本剛トリオ《Speak Low》master 標 1999，原版是 1975）。要濾掉 compilation／unofficial。
+  - **Discogs 幾乎不索引 CJK 原名**：查「清水靖晃」0 筆、查 `Yasuaki Shimizu` 命中 1982 →
+    新增 `data/artist-romanization.json` 對照表（卡池共 124 位 CJK 藝人／216 張卡，其中 52 位
+    名稱本身已含英文，腳本會自動抽拉丁段）。只收有把握的，寧可留空——轉寫錯只會查無，硬猜會配到別人的碟。
+  - 成效：福村博クインテット《Morning Flight》1977、宮間利之とニューハード《Sunday Thing》1976
+    這兩張 MB 與 Apple 都查無的日本爵士盤被救回；三方投票也把 Apple 的偏差壓過去
+    （Gap Band IV → 1982、Ohio Players《Pleasure》→ 1972）。
+  - **token 存 `dip-vinyl-shop/.discogs-token` 並已加進 `.gitignore`**，腳本優先讀環境變數
+    `DISCOGS_TOKEN`。此 token 曾貼進對話，應視為已洩漏、用完換一個。
+- 兩個踩過的坑，寫在腳本註解裡：① Node `fetch` 預設不逾時，跑批一定要帶 `AbortSignal.timeout`；
+  ② 參數解析原本只吃 `--sample=50`，`--sample 50` 會讓值變空字串→**靜靜跑成全池 8193 張**
+  （誤判成 hang，白跑兩次），已改成兩種寫法都吃；
+  ③ loose 的 token 比對一開始傳了**已正規化**的藝人名（`tony williams`→`tonywilliams`，
+  空格被吃掉），永遠切不出跟 `anthony williams` 的共同 token，那條路等於沒作用——
+  token 比對一律要用原字串。
+- 驗證：`node scripts/build-release-years.mjs --sample 50` 實跑三輪（初版／加 fallback／修
+  token bug），逐張人工掃過輸出，隨機層 40 張年份與已知事實相符。
+  **尚未寫入任何卡池資料檔，也未改前端。**
+
 ### 2026-07-27｜分享圖字距對齊畫面
 
 - 症狀：分享截圖的字看起來比抽卡結果頁擠。原因是**畫面吃 CSS `letter-spacing`，canvas 的
