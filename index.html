@@ -4227,6 +4227,28 @@ ${seenList}
     };
   }
 
+  // 畫面的字距來自 CSS letter-spacing，canvas 的 fillText 預設是 0，所以分享圖看起來擠。
+  // 這些 em 值直接對應結果頁的樣式：body 0.04em、.quiz-result-artist 0.06em、
+  // 徽章 0.15em、.rating-label 0.1em、.rating-stars 2px/13px≈0.154em。
+  const SHARE_TRACKING = { tier: 0.15, artist: 0.06, album: 0.04, label: 0.1, star: 0.154, desc: 0.04, foot: 0.04 };
+  // ctx.letterSpacing：Chrome 99+／Safari 17.4+。沒有就退回原本的零字距，不會壞版
+  //（measureText 會跟著字距走，所以斷行與靠右對齊的計算自動一致）。
+  const CANVAS_TRACKING_OK = (() => {
+    try {
+      const probe = document.createElement('canvas').getContext('2d');
+      probe.letterSpacing = '2px';
+      return probe.letterSpacing === '2px';
+    } catch (_) { return false; }
+  })();
+  // 設定字體同時套上對應字距；之後的 measureText／fillText 都會帶著它
+  function shareFont(ctx, font, kind) {
+    ctx.font = font;
+    if (!CANVAS_TRACKING_OK) return font;
+    const size = parseFloat(/(\d+(?:\.\d+)?)px/.exec(font)?.[1] || '0');
+    ctx.letterSpacing = `${(size * (SHARE_TRACKING[kind] || 0)).toFixed(2)}px`;
+    return font;
+  }
+
   // 全站唯一的分享圖：心情選歌／類型挑片／直接來一張／唱片櫃卡片都走這一支。
   // 版面固定：頂端等級（只有頂點三張才畫，其餘留白）／封面／左藝人專輯＋右三軸／介紹框。
   // result: { artist, album, reason, ratings, _coverUrl, _hall|_pearl|_heresy 或 _tierInfo }
@@ -4247,7 +4269,7 @@ ${seenList}
     ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
     // 頭部：卡牌等級，字級與下方藝人名同級
     if (info) {
-      ctx.font = '700 34px "Space Mono", monospace';
+      shareFont(ctx, '700 34px "Space Mono", monospace', 'tier');
       // 漸層寬度貼齊文字本身，字級縮小後金屬掃光才不會只取到中間最淡的一段
       const labelW = ctx.measureText(info.label || '').width;
       ctx.fillStyle = specialGrad(W / 2 - labelW / 2, 74, W / 2 + labelW / 2, 106);
@@ -4268,7 +4290,7 @@ ${seenList}
         ctx.drawImage(img, COVER_X + (COVER_SIZE - dw) / 2, COVER_Y + (COVER_SIZE - dh) / 2, dw, dh);
         ctx.restore();
       } catch(e) {
-        ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        shareFont(ctx, '120px sans-serif', 'album'); ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
         ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
       }
     }
@@ -4286,9 +4308,9 @@ ${seenList}
     const LEFT_W = 520;
     ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
     let albumSz = 50;
-    const albumFont = () => `700 ${albumSz}px "Space Mono", monospace`;
-    ctx.font = albumFont();
-    while (albumSz > 28 && measureLines(ctx, result.album || '', LEFT_W) > 2) { albumSz -= 2; ctx.font = albumFont(); }
+    const albumFont = () => shareFont(ctx, `700 ${albumSz}px "Space Mono", monospace`, 'album');
+    albumFont();
+    while (albumSz > 28 && measureLines(ctx, result.album || '', LEFT_W) > 2) { albumSz -= 2; albumFont(); }
     const albumLH = albumSz + 14;
     const albumLineCount = Math.min(2, measureLines(ctx, result.album || '', LEFT_W));
     // 左欄（藝人 34px ＋ 專輯 n 行）整塊垂直置中
@@ -4296,10 +4318,10 @@ ${seenList}
     const leftH = 34 + ARTIST_GAP + albumLineCount * albumLH;
     const artistBase = META_MID - leftH / 2 + 34;
     const albumBase = artistBase + ARTIST_GAP + albumSz;
-    const artistFont = '400 34px "Space Mono", monospace';
-    ctx.font = artistFont; ctx.fillStyle = '#888888';
+    const artistFont = shareFont(ctx, '400 34px "Space Mono", monospace', 'artist');
+    ctx.fillStyle = '#888888';
     ctx.fillText(_fitText(ctx, result.artist || '', LEFT_W, artistFont), PAD, artistBase);
-    ctx.font = albumFont(); ctx.fillStyle = '#111111';
+    albumFont(); ctx.fillStyle = '#111111';
     wrapText(ctx, result.album || '', PAD, albumBase, LEFT_W, albumLH);
 
     // 右欄三軸：三列一起垂直置中，跟左欄對齊（頂點卡的對應軸 7 顆＋掃光色）
@@ -4308,9 +4330,9 @@ ${seenList}
       const rows = [['經典度', 'classic', r.classic], ['冷門度', 'obscurity', r.obscurity], ['硬蕊度', 'accessibility', r.accessibility]];
       const LABEL_FONT = '400 26px "Space Mono", monospace', STAR_FONT = '400 30px "Space Mono", monospace';
       const ROW_H = 48;
-      ctx.font = LABEL_FONT;
+      shareFont(ctx, LABEL_FONT, 'label');
       const labelW = Math.max(...rows.map(([lab]) => ctx.measureText(lab).width));
-      ctx.font = STAR_FONT;
+      shareFont(ctx, STAR_FONT, 'star');
       const starsW = ctx.measureText('★★★★★★★').width;
       const blockX = W - PAD - (labelW + 16 + starsW);
       const starsX = blockX + labelW + 16;
@@ -4319,9 +4341,9 @@ ${seenList}
         const isSpecialRow = isSpecial && dim === specialDim;
         const total = isSpecialRow ? 7 : 5;
         const n = isSpecialRow ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
-        ctx.font = LABEL_FONT; ctx.fillStyle = '#999999';
+        shareFont(ctx, LABEL_FONT, 'label'); ctx.fillStyle = '#999999';
         ctx.fillText(lab, blockX, ry);
-        ctx.font = STAR_FONT;
+        shareFont(ctx, STAR_FONT, 'star');
         const filled = '★'.repeat(n);
         ctx.fillStyle = isSpecialRow ? specialGrad(starsX, ry - 22, starsX + starsW, ry + 22) : '#111111';
         ctx.fillText(filled, starsX, ry);
@@ -4342,7 +4364,7 @@ ${seenList}
     let descSz = 30, descLH = 44, descLines = 1, descMaxLines = 99;
     for (const size of [30, 28, 26, 24, 22]) {
       descSz = size; descLH = size + 14;
-      ctx.font = `400 ${descSz}px "Space Mono", monospace`;
+      shareFont(ctx, `400 ${descSz}px "Space Mono", monospace`, 'desc');
       descLines = measureLines(ctx, reasonText, TEXT_W);
       descMaxLines = Math.floor((BOX_MAX_H - BOX_PAD * 2) / descLH);
       if (descLines <= descMaxLines) break;
@@ -4351,12 +4373,12 @@ ${seenList}
     const boxH = Math.min(BOX_MAX_H, Math.max(190, descLines * descLH + BOX_PAD * 2));
     ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, BOX_Y, BOX_W, boxH);
     ctx.fillStyle = '#444444'; ctx.textBaseline = 'top';
-    ctx.font = `400 ${descSz}px "Space Mono", monospace`;
+    shareFont(ctx, `400 ${descSz}px "Space Mono", monospace`, 'desc');
     wrapText(ctx, reasonText, PAD + BOX_PAD, BOX_Y + (boxH - descLines * descLH) / 2 + 4, TEXT_W, descLH, descMaxLines);
     ctx.textBaseline = 'alphabetic';
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
-    ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
+    ctx.fillStyle = '#555555'; shareFont(ctx, '400 22px "Space Mono", monospace', 'foot');
     ctx.textAlign = 'center'; ctx.fillText('dipvinyl.tw', W / 2, H - 52);
     return canvas;
   }

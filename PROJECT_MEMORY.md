@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜分享圖字距對齊畫面
+
+- 症狀：分享截圖的字看起來比抽卡結果頁擠。原因是**畫面吃 CSS `letter-spacing`，canvas 的
+  `fillText` 預設字距是 0**，兩邊本來就不會一樣。
+- 修法：`shareFont(ctx, font, kind)` 在設字體時一併套 `ctx.letterSpacing`，em 值直接對應結果頁樣式
+  （`SHARE_TRACKING`：body 0.04／artist 0.06／徽章 0.15／rating-label 0.1／stars 2px÷13px≈0.154）。
+  `buildShareCanvas` 裡所有 `ctx.font =` 都改走這支，避免字距殘留到下一段文字。
+- `ctx.letterSpacing` 需 Chrome 99+／Safari 17.4+，開頭做特徵偵測（`CANVAS_TRACKING_OK`），
+  不支援就退回零字距，不會壞版。**`measureText` 會把字距算進去**，所以斷行、專輯名縮字級、
+  三軸靠右對齊的計算全部自動跟著調整，不必另外補償。
+- 驗證：本機實抽產圖，一般卡與殿堂卡各一張；7 星列加寬後仍在右邊界內（實算左欄 520px 結束於
+  x=592、右欄從 x≈664 起，留 72px 空隙），介紹框位置與行數未受影響。
+
 ### 2026-07-27｜抽卡結果頁的藝人／專輯／等級改置中
 
 - 只動前台結果頁（心情選歌與類型挑片／直接來一張共用同一組 class），分享圖不受影響。
