@@ -521,6 +521,7 @@
     .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-pearl-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #6a4ea0; border-radius: 999px; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-heresy-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #a01020; border-radius: 999px; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .quiz-tier-slot:empty { display: none; }
     /* 新手禮：免費抽一張殿堂卡 */
     .welcome-hall { margin: 16px 20px; padding: 18px 16px; text-align: center; background: #0e0f12; border-radius: 4px; position: relative; overflow: hidden; }
     .welcome-hall::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 2px; background: var(--silver-shine); background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
@@ -1050,9 +1051,9 @@
   //   pearl 流亡 = 冷門度7（真實聽眾數 < 門檻才算）       → 暗黑油彩
   //   heresy 異端= 硬蕊度7（前衛/噪音怪盤，AI 判定）  → 暗赤血光
   const SPECIAL_TIERS = {
-    hall:   { label: '殿堂', dim: 'classic',       badge: '殿堂級', ratingCls: 'hall' },
-    pearl:  { label: '流亡', dim: 'obscurity',     badge: '流亡級', ratingCls: 'pearl' },
-    heresy: { label: '異端', dim: 'accessibility', badge: '異端級', ratingCls: 'heresy' },
+    hall:   { label: '殿堂', dim: 'classic',       ratingCls: 'hall' },
+    pearl:  { label: '流亡', dim: 'obscurity',     ratingCls: 'pearl' },
+    heresy: { label: '異端', dim: 'accessibility', ratingCls: 'heresy' },
   };
   // 卡片屬於哪個頂點 tier（讀 hall/pearl/heresy 旗標）
   function specialTierOf(card) {
@@ -1078,6 +1079,31 @@
     if (score >= 6)  return { tier: 'uncommon', label: '獨特', sum: score };
     if (score >= 4)  return { tier: 'rare', label: '稀有', sum: score };
     return { tier: 'common', label: '普通', sum: score };
+  }
+
+  // 抽牌結果頁的「卡牌等級」：優先序與唱片櫃一致（頂點旗標 > 手動指定 > 神作名單 > 三軸計算）。
+  // 三軸要等 /album-rating 回來才算得出來，所以結果頁先留空槽，數值到齊再補上徽章。
+  function resultTierOf(card, ratings) {
+    if (!card) return null;
+    const apex = specialTierOf({ hall: card.hall || card._hall, pearl: card.pearl || card._pearl, heresy: card.heresy || card._heresy });
+    if (apex) return { tier: apex, label: SPECIAL_TIERS[apex].label };
+    const ov = rarityOverrideOf(card);
+    if (ov) return ov;
+    const neo = neoclassicOf(card);
+    if (neo && SPECIAL_TIERS[neo.tier]) return { tier: neo.tier, label: SPECIAL_TIERS[neo.tier].label };
+    return rarityFromRatings(ratings);
+  }
+  // 只有三張頂點卡（殿堂／流亡／異端）掛徽章；其餘等級一律留白——
+  // 抽到一般卡不需要被貼上「普通」，稀有度仍留在唱片櫃的排序與分組裡。
+  function resultTierBadgeHtml(info) {
+    if (!info || !SPECIAL_TIERS[info.tier]) return '';
+    return `<div class="quiz-${info.tier}-badge">${SPECIAL_TIERS[info.tier].label}</div>`;
+  }
+  // 結果頁畫（或補畫）等級徽章，同時把三軸留在 result 上給分享圖用
+  function paintResultTier(containerId, result, ratings) {
+    if (ratings) result.ratings = ratings;
+    const slot = document.querySelector(`#${containerId} .quiz-tier-slot`);
+    if (slot) slot.innerHTML = resultTierBadgeHtml(resultTierOf(result, result.ratings));
   }
 
   let _collCache = [];
@@ -3023,6 +3049,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${ctaHtml}
@@ -3037,7 +3064,8 @@ ${seenList}
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
-    renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'));
+    renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'))
+      .then(r => paintResultTier('quizContent', result, r));
     resolveBandcampBtn(result.artist, result.album, document.getElementById('quizContent'));
   }
 
@@ -3049,128 +3077,38 @@ ${seenList}
     setTimeout(() => t.remove(), 2200);
   }
 
-  function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+  // 逐字斷行（中日韓沒有空白可斷），但英文字不從字母中間切開：
+  // 換行點落在拉丁字中間時，退回這一行最後一個空白。
+  const _wrapLatin = ch => /[A-Za-z0-9'’&./-]/.test(ch);
+  function wrapLines(ctx, text, maxWidth) {
     const lines = [];
     let cur = '';
     for (const ch of text) {
       const test = cur + ch;
-      if (ctx.measureText(test).width > maxWidth && cur) { lines.push(cur); cur = ch; }
-      else cur = test;
+      if (ctx.measureText(test).width > maxWidth && cur) {
+        const space = _wrapLatin(ch) && _wrapLatin(cur[cur.length - 1]) ? cur.lastIndexOf(' ') : -1;
+        if (space > 0) { lines.push(cur.slice(0, space)); cur = cur.slice(space + 1) + ch; }
+        else { lines.push(cur); cur = ch; }
+      } else cur = test;
     }
     if (cur) lines.push(cur);
+    return lines;
+  }
+
+  // maxLines > 0 時超出的行數直接截掉，最後一行收尾加刪節號（寧可少幾個字也不要溢出框外）
+  function wrapText(ctx, text, x, y, maxWidth, lineHeight, maxLines = 0) {
+    let lines = wrapLines(ctx, text, maxWidth);
+    if (maxLines > 0 && lines.length > maxLines) {
+      lines = lines.slice(0, maxLines);
+      const last = lines[maxLines - 1].replace(/[\s，、。：；！？]+$/, '');
+      lines[maxLines - 1] = last.slice(0, -1) + '…';
+    }
     lines.forEach((l, i) => ctx.fillText(l, x, y + i * lineHeight));
     return lines.length;
   }
 
   function measureLines(ctx, text, maxWidth) {
-    let n = 1, cur = '';
-    for (const ch of text) {
-      const test = cur + ch;
-      if (ctx.measureText(test).width > maxWidth && cur) { n++; cur = ch; }
-      else cur = test;
-    }
-    return n;
-  }
-
-  async function buildResultCanvas(result) {
-    // 9:16 Instagram Stories format
-    const W = 1080, H = 1920, SCALE = 1;
-    const PAD = 72, COVER_SIZE = 900;
-    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 260;
-    const TEXT_Y = COVER_Y + COVER_SIZE + 60;
-
-    const canvas = document.createElement('canvas');
-    canvas.width = W * SCALE; canvas.height = H * SCALE;
-    const ctx = canvas.getContext('2d');
-    ctx.scale(SCALE, SCALE);
-
-    // White background
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, W, H);
-
-    // Top branding
-    ctx.textBaseline = 'middle';
-    ctx.fillStyle = '#111111';
-    ctx.font = '700 42px "Space Mono", monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('心情選歌', W / 2, 90);
-    ctx.fillStyle = '#999999';
-    ctx.font = '400 30px "Space Mono", monospace';
-    ctx.fillText('找到你的那張', W / 2, 136);
-    ctx.textAlign = 'left';
-
-    // Thin top divider
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, 168); ctx.lineTo(W - PAD, 168); ctx.stroke();
-
-    // Album cover
-    ctx.fillStyle = '#f0f0f0';
-    ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
-    if (result._coverUrl) {
-      try {
-        const img = new Image();
-        img.crossOrigin = 'anonymous';
-        await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = result._coverUrl; });
-        ctx.save();
-        ctx.beginPath(); ctx.rect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE); ctx.clip();
-        const aspect = img.naturalWidth / img.naturalHeight;
-        let dw = COVER_SIZE, dh = COVER_SIZE / aspect;
-        if (dh < COVER_SIZE) { dh = COVER_SIZE; dw = COVER_SIZE * aspect; }
-        const dx = COVER_X + (COVER_SIZE - dw) / 2, dy = COVER_Y + (COVER_SIZE - dh) / 2;
-        ctx.drawImage(img, dx, dy, dw, dh);
-        ctx.restore();
-      } catch(e) {
-        ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
-      }
-    } else {
-      ctx.font = '120px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
-    }
-    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-
-    let y = TEXT_Y;
-
-    // Artist
-    ctx.fillStyle = '#888888';
-    ctx.font = '400 38px "Space Mono", monospace';
-    ctx.fillText(result.artist || '', PAD, y);
-    y += 60;
-
-    // Album title (auto-shrink)
-    let albumSz = 54;
-    ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 32) {
-      albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    }
-    const albumLH = albumSz + 16;
-    const albumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
-    y += albumLines * albumLH + 40;
-
-    // Reason text in bordered box
-    const reasonText = (result.reason || '').slice(0, 200);
-    const BOX_PAD = 40, LH_R = 46;
-    ctx.font = '400 30px "Space Mono", monospace';
-    const reasonLineCount = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2);
-    const boxH = reasonLineCount * LH_R + BOX_PAD * 2;
-    ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2;
-    ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
-    ctx.fillStyle = '#444444';
-    ctx.textBaseline = 'top';
-    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
-    ctx.textBaseline = 'alphabetic';
-    y += boxH + 60;
-
-    // Bottom divider + URL
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
-    ctx.fillStyle = '#555555';
-    ctx.font = '400 22px "Space Mono", monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('dipvinyl.tw/quiz', W / 2, H - 52);
-    ctx.textAlign = 'left';
-
-    return canvas;
+    return Math.max(1, wrapLines(ctx, text, maxWidth).length);
   }
 
   async function shareQuizResult() {
@@ -3182,7 +3120,7 @@ ${seenList}
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
     try {
-      const canvas = await buildResultCanvas(lastQuizResult);
+      const canvas = await buildShareCanvas(lastQuizResult);
       const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
       const file = new File([blob], 'vinyl-match.jpg', { type: 'image/jpeg' });
 
@@ -3372,18 +3310,21 @@ ${seenList}
     const dimRow = (label, dim, value) => (sp && sp.dim === dim)
       ? row(label, 7, 7, sp.ratingCls)
       : row(label, value);
-    return `<div class="album-ratings">${dimRow('冷門度', 'obscurity', r.obscurity)}${dimRow('經典度', 'classic', r.classic)}${dimRow('硬蕊度', 'accessibility', r.accessibility)}</div>`;
+    // 順序固定為 經典度 → 冷門度 → 硬蕊度，與對戰／Roguelike 的 ATTRS 一致
+    return `<div class="album-ratings">${dimRow('經典度', 'classic', r.classic)}${dimRow('冷門度', 'obscurity', r.obscurity)}${dimRow('硬蕊度', 'accessibility', r.accessibility)}</div>`;
   }
-  // 從 Worker 取評分（KV 永久快取，同張碟星數一致），填進結果頁插槽
+  // 從 Worker 取評分（KV 永久快取，同張碟星數一致），填進結果頁插槽。
+  // 回傳取到的三軸（呼叫端拿來算卡牌等級／畫分享圖），取不到回 null。
   async function renderAlbumRatings(artist, album, containerEl, special = false) {
-    if (!containerEl || !artist || !album) return;
+    if (!containerEl || !artist || !album) return null;
     const slot = containerEl.querySelector('.album-ratings-slot');
-    if (!slot) return;
+    if (!slot) return null;
     try {
       const res = await fetch(`${WORKER_URL}/album-rating?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
       const r = res.ok ? await res.json() : {};
-      if (r && r.obscurity) slot.innerHTML = albumRatingsHtml(r, special);
+      if (r && r.obscurity) { slot.innerHTML = albumRatingsHtml(r, special); return r; }
     } catch (e) {}
+    return null;
   }
 
   // 抓 Spotify + YouTube Music 直連（背景非同步，結果出來後更新按鈕）
@@ -3977,7 +3918,8 @@ ${seenList}
   // 播放器常駐掛載（隱藏、掛 body，不隨結果頁重繪銷毀）。
   // 必須在使用者點擊的「手勢當下」同步呼叫，iOS/Chrome 才會解鎖音訊——
   // mount 之前 DipPlayer 的 primeFromGesture 直接 return false，事後 unlock 無效。
-  function gpEnsurePlayer() {
+  // withUnlock=false 用於自動播放：那時不在手勢內，解鎖動作只會干擾既有 audio session。
+  function gpEnsurePlayer(withUnlock = true) {
     if (!window.DipPlayer) return;
     let el = document.getElementById('gpPlayerMount');
     if (!el) {
@@ -3987,7 +3929,7 @@ ${seenList}
       document.body.appendChild(el);
     }
     window.DipPlayer.mount(el, { hidden: true });
-    window.DipPlayer.unlock?.();
+    if (withUnlock) window.DipPlayer.unlock?.();
   }
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
@@ -3999,7 +3941,7 @@ ${seenList}
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview(); return; }
-    gpEnsurePlayer();
+    gpEnsurePlayer(manual);
     gpPreviewStarted = true;
     gpPreviewManual = manual;
     void window.DipPlayer.playAlbum({
@@ -4174,7 +4116,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        ${result._hall ? '<div class="quiz-hall-badge">殿堂級</div>' : (result._pearl ? '<div class="quiz-pearl-badge">流亡級</div>' : (result._heresy ? '<div class="quiz-heresy-badge">異端級</div>' : ''))}
+        <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         ${result.type ? '' : gpPreviewBtnHtml(result)}
         <div class="quiz-result-reason">${result._streaming ? '介紹載入中…' : (result.reason || '')}</div>
@@ -4195,8 +4137,10 @@ ${seenList}
     if (result.ratings) {
       const slot = document.querySelector('#genreContent .album-ratings-slot');
       if (slot) slot.innerHTML = albumRatingsHtml(result.ratings, special);
+      paintResultTier('genreContent', result, null);
     } else {
-      renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), special);
+      renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), special)
+        .then(r => { if (lastGpResult === result) paintResultTier('genreContent', result, r); });
     }
     resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
     // 抽到即自動播放試聽（跟對戰一樣）；瀏覽器擋自動播放時安靜失敗，圖示停在 ▶
@@ -4210,7 +4154,7 @@ ${seenList}
     const btn = document.querySelector('[data-gp-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
     try {
-      const canvas = await buildGpCanvas(lastGpResult);
+      const canvas = await buildShareCanvas(lastGpResult);
       const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
       const file = new File([blob], 'genre-pick.jpg', { type: 'image/jpeg' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
@@ -4230,22 +4174,53 @@ ${seenList}
     }
   }
 
-  async function buildGpCanvas(result) {
+  // 三張頂點卡的掃光漸層（與 CSS 變數一致）：殿堂銀 / 流亡油彩 / 異端血光。
+  // 回傳 (x0,y0,x1,y1)=>CanvasGradient；一般卡回 null（分享圖上一般卡不著色）。
+  // 殿堂銀在白底上不能用畫面那套（中段是純白，印在白底等於消失），改用壓暗的金屬灰。
+  const TIER_GRADIENT_STOPS = {
+    hall:   [[0, '#565c64'], [0.25, '#80868f'], [0.5, '#a4aab2'], [0.75, '#80868f'], [1, '#565c64']],
+    pearl:  [[0, '#3a2a5d'], [0.28, '#2bb6a3'], [0.5, '#c84ad6'], [0.72, '#2b6fd6'], [1, '#3a2a5d']],
+    heresy: [[0, '#7a1020'], [0.5, '#ff3048'], [1, '#7a1020']],
+  };
+  function tierGradient(ctx, tier) {
+    const stops = TIER_GRADIENT_STOPS[tier];
+    if (!stops) return null;
+    return (x0, y0, x1, y1) => {
+      const g = ctx.createLinearGradient(x0, y0, x1, y1);
+      stops.forEach(([offset, color]) => g.addColorStop(offset, color));
+      return g;
+    };
+  }
+
+  // 全站唯一的分享圖：心情選歌／類型挑片／直接來一張／唱片櫃卡片都走這一支。
+  // 版面固定：頂端等級（只有頂點三張才畫，其餘留白）／封面／左藝人專輯＋右三軸／介紹框。
+  // result: { artist, album, reason, ratings, _coverUrl, _hall|_pearl|_heresy 或 _tierInfo }
+  async function buildShareCanvas(result) {
     const W = 1080, H = 1920, PAD = 72, COVER_SIZE = 900;
-    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 260;
-    const TEXT_Y = COVER_Y + COVER_SIZE + 60;
+    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 230;
     const canvas = document.createElement('canvas');
     canvas.width = W; canvas.height = H;
     const ctx = canvas.getContext('2d');
+    // 只認頂點三張；一般稀有度不進分享圖
+    const resolved = result._tierInfo || resultTierOf(result, result.ratings);
+    const info = resolved && SPECIAL_TIERS[resolved.tier] ? resolved : null;
+    const tier = info?.tier || '';
+    const specialGrad = tierGradient(ctx, tier);
+    const isSpecial = !!specialGrad;
+    const specialDim = SPECIAL_TIERS[tier]?.dim || null;
     ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
     ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
-    ctx.fillStyle = '#111111'; ctx.font = '700 42px "Space Mono", monospace';
-    ctx.fillText('類型挑片', W / 2, 90);
-    ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace';
-    ctx.fillText('挖出屬於你的那張', W / 2, 136);
-    ctx.textAlign = 'left';
+    // 頭部：卡牌等級，字級與下方藝人名同級
+    if (info) {
+      ctx.font = '700 34px "Space Mono", monospace';
+      // 漸層寬度貼齊文字本身，字級縮小後金屬掃光才不會只取到中間最淡的一段
+      const labelW = ctx.measureText(info.label || '').width;
+      ctx.fillStyle = specialGrad(W / 2 - labelW / 2, 74, W / 2 + labelW / 2, 106);
+      ctx.fillText(info.label || '', W / 2, 92);
+    }
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, 168); ctx.lineTo(W - PAD, 168); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(PAD, 152); ctx.lineTo(W - PAD, 152); ctx.stroke();
+    // 封面
     ctx.fillStyle = '#f0f0f0'; ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
     if (result._coverUrl) {
       try {
@@ -4262,135 +4237,88 @@ ${seenList}
         ctx.fillStyle = '#cccccc'; ctx.fillText('♪', W / 2, COVER_Y + COVER_SIZE / 2);
       }
     }
-    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-    let y = TEXT_Y;
-    ctx.fillStyle = '#888888'; ctx.font = '400 38px "Space Mono", monospace';
-    ctx.fillText(result.artist || '', PAD, y); y += 60;
-    let albumSz = 54; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (ctx.measureText(result.album || '').width > W - PAD * 2 && albumSz > 32) { albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`; }
-    const albumLH = albumSz + 16;
-    const albumLines = wrapText(ctx, result.album || '', PAD, y + albumSz, W - PAD * 2, albumLH);
-    y += albumLines * albumLH + 40;
-    const reasonText = (result.reason || '').slice(0, 200);
-    const BOX_PAD = 40, LH_R = 46;
-    ctx.font = '400 30px "Space Mono", monospace';
-    const boxH = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2) * LH_R + BOX_PAD * 2;
-    ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
-    ctx.fillStyle = '#444444'; ctx.textBaseline = 'top';
-    wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
-    ctx.textBaseline = 'alphabetic'; y += boxH + 60;
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
-    ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
-    ctx.textAlign = 'center'; ctx.fillText('dipvinyl.tw', W / 2, H - 52);
-    return canvas;
-  }
-
-  const RARITY_COLOR = { hall: '#9aa0a8', pearl: '#7a5cc0', heresy: '#c41e3a', legendary: '#e0851c', epic: '#7a3fb0', uncommon: '#2faf4f', rare: '#3a7bd5', common: '#999999' };
-
-  // 卡牌分享圖（比照 buildGpCanvas，加上稀有度與三維星星）
-  async function buildCardCanvas(card, desc) {
-    const W = 1080, H = 1920, PAD = 72, COVER_SIZE = 760;
-    const COVER_X = (W - COVER_SIZE) / 2, COVER_Y = 250;
-    const tier = card.rarity?.tier || 'common';
-    const tColor = RARITY_COLOR[tier];
-    const canvas = document.createElement('canvas');
-    canvas.width = W; canvas.height = H;
-    const ctx = canvas.getContext('2d');
-    // 三張頂點卡的掃光漸層（與 CSS 變數一致）：殿堂銀 / 流亡油彩 / 異端血光
-    const silverGrad = (x0, y0, x1, y1) => {
-      const g = ctx.createLinearGradient(x0, y0, x1, y1);
-      g.addColorStop(0, '#8a8e96'); g.addColorStop(0.25, '#c8ccd2'); g.addColorStop(0.5, '#ffffff');
-      g.addColorStop(0.75, '#c8ccd2'); g.addColorStop(1, '#8a8e96');
-      return g;
-    };
-    const oilGrad = (x0, y0, x1, y1) => {
-      const g = ctx.createLinearGradient(x0, y0, x1, y1);
-      g.addColorStop(0, '#3a2a5d'); g.addColorStop(0.28, '#2bb6a3'); g.addColorStop(0.5, '#c84ad6');
-      g.addColorStop(0.72, '#2b6fd6'); g.addColorStop(1, '#3a2a5d');
-      return g;
-    };
-    const crimsonGrad = (x0, y0, x1, y1) => {
-      const g = ctx.createLinearGradient(x0, y0, x1, y1);
-      g.addColorStop(0, '#7a1020'); g.addColorStop(0.5, '#ff3048'); g.addColorStop(1, '#7a1020');
-      return g;
-    };
-    const specialGrad = tier === 'hall' ? silverGrad : tier === 'pearl' ? oilGrad : tier === 'heresy' ? crimsonGrad : null;
-    const isSpecial = !!specialGrad;
-    const specialDim = SPECIAL_TIERS[tier]?.dim || null; // 'classic'|'obscurity'|'accessibility'
-    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, W, H);
-    ctx.textBaseline = 'middle'; ctx.textAlign = 'center';
-    // 頭部：稀有度
-    ctx.fillStyle = isSpecial ? specialGrad(W / 2 - 140, 64, W / 2 + 140, 120) : tColor;
-    ctx.font = '700 50px "Space Mono", monospace';
-    ctx.fillText(card.rarity?.label || '收藏', W / 2, 92);
-    ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(PAD, 176); ctx.lineTo(W - PAD, 176); ctx.stroke();
-    // 封面
-    ctx.fillStyle = '#f0f0f0'; ctx.fillRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
-    if (card.coverUrl) {
-      try {
-        const img = new Image(); img.crossOrigin = 'anonymous';
-        await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = card.coverUrl; });
-        ctx.save(); ctx.beginPath(); ctx.rect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE); ctx.clip();
-        const aspect = img.naturalWidth / img.naturalHeight;
-        let dw = COVER_SIZE, dh = COVER_SIZE / aspect;
-        if (dh < COVER_SIZE) { dh = COVER_SIZE; dw = COVER_SIZE * aspect; }
-        ctx.drawImage(img, COVER_X + (COVER_SIZE - dw) / 2, COVER_Y + (COVER_SIZE - dh) / 2, dw, dh);
-        ctx.restore();
-      } catch (e) {}
-    }
-    // 稀有度外框
-    ctx.strokeStyle = isSpecial ? specialGrad(COVER_X, COVER_Y, COVER_X + COVER_SIZE, COVER_Y + COVER_SIZE) : tColor;
-    ctx.lineWidth = (isSpecial || tier === 'legendary') ? 10 : tier === 'epic' ? 7 : tier === 'rare' ? 4 : 2;
+    // 封面外框：頂點卡才用等級掃光粗框，一般卡只描一道中性細線（框色也不該洩漏等級）
+    ctx.strokeStyle = isSpecial ? specialGrad(COVER_X, COVER_Y, COVER_X + COVER_SIZE, COVER_Y + COVER_SIZE) : '#e2e2e2';
+    ctx.lineWidth = isSpecial ? 10 : 2;
     ctx.strokeRect(COVER_X, COVER_Y, COVER_SIZE, COVER_SIZE);
 
-    // 藝人 / 專輯
-    let y = COVER_Y + COVER_SIZE + 56;
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#888888'; ctx.font = '400 32px "Space Mono", monospace';
-    ctx.fillText(_fitText(ctx, card.artist || '', W - PAD * 2, '400 32px "Space Mono", monospace'), W / 2, y); y += 56;
-    let albumSz = 50; ctx.font = `700 ${albumSz}px "Space Mono", monospace`;
-    while (ctx.measureText(card.album || '').width > W - PAD * 2 && albumSz > 30) { albumSz -= 2; ctx.font = `700 ${albumSz}px "Space Mono", monospace`; }
-    ctx.fillStyle = '#111111';
-    ctx.fillText(_fitText(ctx, card.album || '', W - PAD * 2, `700 ${albumSz}px "Space Mono", monospace`), W / 2, y); y += 64;
+    // ── 資訊帶（固定位置）：左邊藝人／專輯，右邊三軸，兩欄垂直置中對齊 ──
+    // 每張卡的三個區塊（等級／封面／資訊帶／介紹框）都落在固定的 y，
+    // 專輯名一行或兩行都不會把下面的介紹框推位。
+    const META_TOP = COVER_Y + COVER_SIZE + 40;   // 資訊帶頂
+    const META_H = 205;                            // 資訊帶固定高（容得下兩行專輯名）
+    const META_MID = META_TOP + META_H / 2;
+    const LEFT_W = 520;
+    ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+    let albumSz = 50;
+    const albumFont = () => `700 ${albumSz}px "Space Mono", monospace`;
+    ctx.font = albumFont();
+    while (albumSz > 28 && measureLines(ctx, result.album || '', LEFT_W) > 2) { albumSz -= 2; ctx.font = albumFont(); }
+    const albumLH = albumSz + 14;
+    const albumLineCount = Math.min(2, measureLines(ctx, result.album || '', LEFT_W));
+    // 左欄（藝人 34px ＋ 專輯 n 行）整塊垂直置中
+    const ARTIST_GAP = 22;
+    const leftH = 34 + ARTIST_GAP + albumLineCount * albumLH;
+    const artistBase = META_MID - leftH / 2 + 34;
+    const albumBase = artistBase + ARTIST_GAP + albumSz;
+    const artistFont = '400 34px "Space Mono", monospace';
+    ctx.font = artistFont; ctx.fillStyle = '#888888';
+    ctx.fillText(_fitText(ctx, result.artist || '', LEFT_W, artistFont), PAD, artistBase);
+    ctx.font = albumFont(); ctx.fillStyle = '#111111';
+    wrapText(ctx, result.album || '', PAD, albumBase, LEFT_W, albumLH);
 
-    // 三維星星（左對齊：標籤固定欄寬、各列星星左緣對齊，整塊置中；殿堂經典 7 顆）
-    const rows = [['冷門度', 'obscurity', card.ratings?.obscurity], ['經典度', 'classic', card.ratings?.classic], ['硬蕊度', 'accessibility', card.ratings?.accessibility]];
-    ctx.font = '400 30px "Space Mono", monospace';
-    const labelColW = Math.max(...rows.map(([lab]) => ctx.measureText(lab).width)) + 40;
-    ctx.font = '400 36px "Space Mono", monospace';
-    const blockX = (W - (labelColW + ctx.measureText('★★★★★★★').width)) / 2;
-    const starsX = blockX + labelColW;
-    ctx.textAlign = 'left';
-    rows.forEach(([lab, dim, val]) => {
-      const isSpecialRow = isSpecial && dim === specialDim;
-      const total = isSpecialRow ? 7 : 5;
-      const n = isSpecialRow ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
-      ctx.fillStyle = '#999999'; ctx.font = '400 30px "Space Mono", monospace'; ctx.fillText(lab, blockX, y);
-      ctx.font = '400 36px "Space Mono", monospace';
-      const filled = '★'.repeat(n);
-      ctx.fillStyle = isSpecialRow ? specialGrad(starsX, y - 24, starsX + ctx.measureText('★'.repeat(total)).width, y + 24) : '#111111';
-      ctx.fillText(filled, starsX, y);
-      const fw = ctx.measureText(filled).width;
-      ctx.fillStyle = '#cccccc'; ctx.fillText('★'.repeat(total - n), starsX + fw, y);
-      y += 56;
-    });
-    y += 18;
-
-    // 介紹框
-    const reasonText = (desc || '').slice(0, 200);
-    if (reasonText) {
-      const BOX_PAD = 38, LH_R = 44;
-      ctx.textAlign = 'left'; ctx.textBaseline = 'top';
-      ctx.font = '400 29px "Space Mono", monospace';
-      const boxH = measureLines(ctx, reasonText, W - PAD * 2 - BOX_PAD * 2) * LH_R + BOX_PAD * 2;
-      ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, y, W - PAD * 2, boxH);
-      ctx.fillStyle = '#444444';
-      wrapText(ctx, reasonText, PAD + BOX_PAD, y + BOX_PAD, W - PAD * 2 - BOX_PAD * 2, LH_R);
-      ctx.textBaseline = 'middle';
+    // 右欄三軸：三列一起垂直置中，跟左欄對齊（頂點卡的對應軸 7 顆＋掃光色）
+    const r = result.ratings;
+    if (r && r.obscurity) {
+      const rows = [['經典度', 'classic', r.classic], ['冷門度', 'obscurity', r.obscurity], ['硬蕊度', 'accessibility', r.accessibility]];
+      const LABEL_FONT = '400 26px "Space Mono", monospace', STAR_FONT = '400 30px "Space Mono", monospace';
+      const ROW_H = 48;
+      ctx.font = LABEL_FONT;
+      const labelW = Math.max(...rows.map(([lab]) => ctx.measureText(lab).width));
+      ctx.font = STAR_FONT;
+      const starsW = ctx.measureText('★★★★★★★').width;
+      const blockX = W - PAD - (labelW + 16 + starsW);
+      const starsX = blockX + labelW + 16;
+      let ry = META_MID - ROW_H + 10;
+      rows.forEach(([lab, dim, val]) => {
+        const isSpecialRow = isSpecial && dim === specialDim;
+        const total = isSpecialRow ? 7 : 5;
+        const n = isSpecialRow ? 7 : Math.max(0, Math.min(5, Math.round(Number(val) || 0)));
+        ctx.font = LABEL_FONT; ctx.fillStyle = '#999999';
+        ctx.fillText(lab, blockX, ry);
+        ctx.font = STAR_FONT;
+        const filled = '★'.repeat(n);
+        ctx.fillStyle = isSpecialRow ? specialGrad(starsX, ry - 22, starsX + starsW, ry + 22) : '#111111';
+        ctx.fillText(filled, starsX, ry);
+        ctx.fillStyle = '#cccccc';
+        ctx.fillText('★'.repeat(total - n), starsX + ctx.measureText(filled).width, ry);
+        ry += ROW_H;
+      });
     }
 
+    // ── 介紹框（固定起點，不隨上面幾行浮動）──
+    const BOX_Y = META_TOP + META_H + 30;
+    const BOX_W = W - PAD * 2, BOX_PAD = 32, BOX_MAX_H = H - 140 - BOX_Y;
+    const TEXT_W = BOX_W - BOX_PAD * 2;
+    // 簡介長度沒有硬上限（審核過的可以超過 180 字），只在誇張長度時收尾加刪節號
+    let reasonText = (result.reason || '').trim();
+    if (reasonText.length > 340) reasonText = reasonText.slice(0, 339) + '…';
+    // 字級由大到小挑第一個塞得下固定框高的；真的還放不下就截行（最後一行加刪節號）
+    let descSz = 30, descLH = 44, descLines = 1, descMaxLines = 99;
+    for (const size of [30, 28, 26, 24, 22]) {
+      descSz = size; descLH = size + 14;
+      ctx.font = `400 ${descSz}px "Space Mono", monospace`;
+      descLines = measureLines(ctx, reasonText, TEXT_W);
+      descMaxLines = Math.floor((BOX_MAX_H - BOX_PAD * 2) / descLH);
+      if (descLines <= descMaxLines) break;
+    }
+    descLines = Math.min(descLines, descMaxLines);
+    const boxH = Math.min(BOX_MAX_H, Math.max(190, descLines * descLH + BOX_PAD * 2));
+    ctx.strokeStyle = '#cccccc'; ctx.lineWidth = 2; ctx.strokeRect(PAD, BOX_Y, BOX_W, boxH);
+    ctx.fillStyle = '#444444'; ctx.textBaseline = 'top';
+    ctx.font = `400 ${descSz}px "Space Mono", monospace`;
+    wrapText(ctx, reasonText, PAD + BOX_PAD, BOX_Y + (boxH - descLines * descLH) / 2 + 4, TEXT_W, descLH, descMaxLines);
+    ctx.textBaseline = 'alphabetic';
     ctx.strokeStyle = '#dddddd'; ctx.lineWidth = 1;
     ctx.beginPath(); ctx.moveTo(PAD, H - 100); ctx.lineTo(W - PAD, H - 100); ctx.stroke();
     ctx.fillStyle = '#555555'; ctx.font = '400 22px "Space Mono", monospace';
@@ -4416,7 +4344,12 @@ ${seenList}
     const btn = document.querySelector('[data-cd-share]');
     if (btn) { btn.disabled = true; btn.textContent = '製作圖片…'; }
     try {
-      const canvas = await buildCardCanvas(card, desc);
+      // 唱片櫃卡片沿用同一張分享圖；等級以唱片櫃算好的 rarity.tier 為準（含後台校正）
+      const canvas = await buildShareCanvas({
+        artist: card.artist, album: card.album, reason: desc,
+        ratings: card.ratings, _coverUrl: card.coverUrl,
+        _tierInfo: SPECIAL_TIERS[card.rarity?.tier] ? { tier: card.rarity.tier, label: SPECIAL_TIERS[card.rarity.tier].label } : null,
+      });
       const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.9));
       const file = new File([blob], 'dip-card.jpg', { type: 'image/jpeg' });
       const shareUrlStr = 'https://dipvinyl.tw';

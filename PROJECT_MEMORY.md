@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜抽牌顯示卡牌等級＋分享圖統一改版＋修「第一次抽牌沒聲音」
+
+- Repo：`dip-vinyl-shop`（`index.html`、`dip-player.js`）。`dip-vinyl-worker` 有其他協作者未提交的
+  `src/index.js` 改動，本次完全沒動。
+- **等級全面顯示**：新增 `resultTierOf()`／`resultTierBadgeHtml()`／`paintResultTier()`，
+  心情選歌與類型挑片／直接來一張／特殊抽卡券的結果頁都在專輯名下加 `.quiz-tier-slot`。
+  判定順序與唱片櫃一致（頂點旗標 > RARITY_OVERRIDES > 神作名單 > 三軸計算）；
+  三軸是非同步取得，所以 `renderAlbumRatings()` 改為回傳 ratings，回來後補畫徽章並存進 result（分享圖也吃這份）。
+- **分享圖 `buildGpCanvas` 改版**：頂部「類型挑片／挖出屬於你的那張」換成卡牌等級（頂點用掃光漸層、
+  一般卡用 RARITY_COLOR），封面加等級外框；封面下改成左右兩欄——左藝人／專輯、右三軸星等。
+- **店主第一輪回饋（已改）**：頂點三張去掉「級」字（`SPECIAL_TIERS` 移除 `badge` 欄，一律用 `label`）；
+  分享圖改成固定網格——資訊帶固定起點與固定高（`META_TOP`／`META_H=210`），左欄藝人＋專輯整塊垂直置中、
+  右欄三軸三列也垂直置中對齊（原本靠右上很怪）；介紹框起點固定在 `META_TOP+META_H+30`，
+  不再被一行／兩行專輯名推位，字級在 30／28／26 之間挑第一個塞得下的，文字在框內垂直置中。
+- **店主第二輪（260 字壓測，已修）**：舊碼有一行 `slice(0, 200)`，260 字的簡介會被硬切在句子中間且無刪節號
+  （店主 07-24 已裁定審核過的簡介可超過 180 字，這個上限等於偷吃字）。改為：不設實質字數上限
+  （340 字以上才加刪節號）、封面 900→840 讓出版面、字級候選加到 30／28／26／24／22、
+  框高放不下時以行為單位截斷並在最後一行補「…」。實測 110 字＝30px 4 行、260 字＝26px 9 行全文完整、
+  486 字＝縮到最小字級後截行加刪節號，三種都沒有畫出框外或蓋到頁尾網址，介紹框上緣位置三張一致。
+  註：唱片櫃分享圖 `buildCardCanvas` 仍有 `slice(0, 200)`，本次未動（版面沒一起改，動了要重驗）。
+- **店主第三輪（已修）**：分享圖頂端等級字級 52px→34px，與下方藝人名同級；掃光漸層寬度改成貼齊
+  文字實際寬度（字變小後若仍用固定 300px 跨距，只會取到漸層中段最淡的一截，銀色會糊掉）。
+  店主同時回報實際簡介最長 220–230 字、260 字很罕見，所以把上一輪為了硬塞 260 字而縮的封面
+  840→還原 900（另把標題列上移，COVER_Y 250→230）。實測 110／230／260 字都完整不截、
+  介紹框上緣三張一致。
+- **店主第四輪（定案，已上線）**：
+  1. **只有頂點三張顯示等級**，傳奇／史詩／獨特／稀有／普通一律留白——抽到一般卡不需要被貼「普通」。
+     `resultTierBadgeHtml()` 與分享圖頭部都只認 `SPECIAL_TIERS`；封面外框同理，頂點卡才用掃光粗框，
+     一般卡改中性細線（框色也會洩漏等級）。稀有度本身沒有廢除，仍在唱片櫃的排序與分組裡。
+     `.quiz-rarity-badge` CSS 與 `RARITY_COLOR` 因此成為死碼，一併移除。
+  2. **三軸順序統一為 經典度 → 冷門度 → 硬蕊度**（原本 index 是冷門在前）。battle.html／roguelike.html
+     的 `ATTRS = ['classic','obscurity','accessibility']` 本來就是這個順序，這次是 index 對齊它們。
+  3. **全站分享圖收斂成一支 `buildShareCanvas()`**：心情選歌的 `buildResultCanvas` 與唱片櫃的
+     `buildCardCanvas` 整支刪除（各約 90–100 行），三個分享按鈕都改叫 `buildShareCanvas`。
+     唱片櫃卡片以 `_tierInfo` 傳入唱片櫃算好的 tier（含後台校正），不必再走一次 resultTierOf。
+- **殿堂銀在白底會消失**：畫面用的 `--silver-shine` 中段是純白，畫進白底分享圖等於看不到。
+  canvas 專用的 hall 漸層改成壓暗金屬灰（#565c64→#a4aab2→#565c64），兩張分享圖共用
+  （新抽出的 `tierGradient()`，順手把 buildCardCanvas 裡三份重複的漸層函式收掉）。
+- **`wrapText` 改為英文不斷字**：分享圖左欄只有 520px 寬，原本逐字斷行會切出「Hymns From the H / eart」。
+  抽出 `wrapLines()`，換行點落在拉丁字中間時退回上一個空白；CJK 照舊逐字斷。
+- **修「第一次抽牌顯示在播卻沒聲音」**：根因是抽到卡後的自動播放會呼叫 `DipPlayer.unlock()`，
+  而那時**不在手勢內**——`primePreviewFromGesture()` 的「完整重新武裝」把唯一在發聲的靜音 keep-alive
+  `pause()` 掉，接著的 `play()` 在手機必被拒絕，於是往後 1〜3 秒的下載＋解碼期間毫無音訊輸出，
+  iOS 收掉 audio session，`source.start(0)` 悄悄沒聲音、狀態卻照報 playing。第二次能出聲是因為
+  暫停／播放都是真手勢且 buffer 已快取。修法兩層：`dip-player.js` 加 `inUserGesture()`
+  （`navigator.userActivation` 為主、舊 iOS 退回自記時間戳），手勢外且 keep-alive 還在播就直接放行；
+  `gpEnsurePlayer(withUnlock)` 讓自動播放路徑根本不呼叫 unlock。
+- 驗證（本機 http-server + CDP）：三段 inline script 與 dip-player.js 語法檢查過；實際抽牌徽章正確
+  （史詩／稀有／獨特／殿堂級／異端級）、console 0 error；分享圖三種等級實跑產出（見預覽圖）；
+  音訊時序 log 修前「real start 前 1.5 秒出現非手勢 pause→play」、修後 keep-alive 一路撐到
+  `source.start bufDur=29.9` 才被 releaseKeepAlive 收掉。**iOS 實機尚未驗**（本機無法重現手機的 play 被拒）。
+
 ### 2026-07-26｜修：教學第二場「冷」按不下去——淡出的老闆吐司仍在吃點擊
 
 - Repo：`dip-vinyl-shop`。店主回報教學第二場第二回合的「冷」按鈕按不下去。

@@ -281,6 +281,18 @@
     }, 60);
   }
 
+  // 最近一次真實使用者手勢。navigator.userActivation 是主要判斷（Safari 對手勢
+  // 授權的認定比 Chrome 嚴格得多，它自己回報最準）；舊 iOS 沒這個 API，退回自己
+  // 記的時間戳。capture 監聽只寫時間戳，永不移除。
+  let lastGestureAt = 0;
+  ['pointerdown', 'touchstart', 'click', 'keydown'].forEach(type =>
+    document.addEventListener(type, event => { if (event.isTrusted) lastGestureAt = Date.now(); }, true));
+  function inUserGesture() {
+    const activation = navigator.userActivation;
+    if (activation && typeof activation.isActive === 'boolean') return activation.isActive;
+    return Date.now() - lastGestureAt < 1000;
+  }
+
   function primePreviewFromGesture() {
     if (!root) return false;
     try {
@@ -308,6 +320,12 @@
       // 建立的 session 弄丟。400ms 內只武裝一次，後續視為已完成。
       // 只在「剛武裝過而且還在播」時才略過；元素若已被 stop 停掉就一定要重新武裝。
       if (!audio.paused && Date.now() - previewArmedAt < 400) return true;
+      // 手勢外絕不重新武裝還在播的 keep-alive：那個 pause 會停掉唯一在發聲的元素，
+      // 接著的 play() 又會被瀏覽器拒絕（手機必中），於是往後 1〜3 秒的下載＋解碼期間
+      // 完全沒有音訊輸出，iOS 收掉 audio session，source.start(0) 就悄悄沒有聲音，
+      // 狀態卻照樣回報 playing——「第一次抽牌顯示在播卻沒聲音、暫停再播才有」正是這樣來的。
+      // 自動播放路徑（抽到卡就播）呼叫 unlock() 時一定不在手勢內，這裡直接放行既有 session。
+      if (!audio.paused && !inUserGesture()) return true;
       previewArmedAt = Date.now();
       try { audio.pause(); } catch (_) {}
       audio.loop = true;
