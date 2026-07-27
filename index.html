@@ -816,7 +816,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=31"></script>
+<script src="dip-player.js?v=32"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -3896,8 +3896,30 @@ ${seenList}
     if (play) play.style.display = playing ? 'none' : 'block';
     if (pause) pause.style.display = playing ? 'block' : 'none';
   }
+  // 網址加 ?audiodebug=1 才開：畫面下方黑框即時列出播放器狀態與音訊底層數值。
+  // 自動播放失敗照設計是安靜的，手機上等於什麼線索都看不到，只能靠這個現場抓。
+  const AUDIO_DEBUG = new URLSearchParams(location.search).has('audiodebug');
+  function audioDebugLog(msg) {
+    if (!AUDIO_DEBUG) return;
+    let box = document.getElementById('audioDebugBox');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'audioDebugBox';
+      box.style.cssText = 'position:fixed;left:6px;right:6px;bottom:6px;max-height:38vh;overflow:auto;background:rgba(0,0,0,.88);color:#5f5;font-family:var(--mono);font-size:10px;line-height:1.6;padding:8px;z-index:99999;white-space:pre-wrap;border-radius:4px;';
+      box.addEventListener('click', () => { box.textContent = ''; });
+      document.body.appendChild(box);
+    }
+    box.textContent += `${(performance.now() / 1000).toFixed(1)}s ${msg}\n`;
+    box.scrollTop = box.scrollHeight;
+  }
+  function audioDebugSnapshot(tag) {
+    if (!AUDIO_DEBUG) return;
+    const d = window.DipPlayer?.debugState?.();
+    audioDebugLog(d ? `${tag} ${JSON.stringify(d)}` : `${tag} (no debugState)`);
+  }
   window.DipPlayer?.onStateChange((s) => {
     gpPlayerState = s;
+    audioDebugLog(`state=${s.status}${s.provider ? '/' + s.provider : ''}${s.code ? ' code=' + s.code : ''}`);
     if (!lastGpResult) return;
     const mine = gpPreviewStarted && s.artist === lastGpResult.artist && s.album === lastGpResult.album;
     if (mine && (s.status === 'loading' || s.status === 'playing' || s.status === 'stopping')) {
@@ -3918,8 +3940,8 @@ ${seenList}
   // 播放器常駐掛載（隱藏、掛 body，不隨結果頁重繪銷毀）。
   // 必須在使用者點擊的「手勢當下」同步呼叫，iOS/Chrome 才會解鎖音訊——
   // mount 之前 DipPlayer 的 primeFromGesture 直接 return false，事後 unlock 無效。
-  // withUnlock=false 用於自動播放：那時不在手勢內，解鎖動作只會干擾既有 audio session。
-  function gpEnsurePlayer(withUnlock = true) {
+  // 一律呼叫 unlock：手勢外它會自己判斷（inUserGesture），不會去動還在墊場的 keep-alive。
+  function gpEnsurePlayer() {
     if (!window.DipPlayer) return;
     let el = document.getElementById('gpPlayerMount');
     if (!el) {
@@ -3929,7 +3951,7 @@ ${seenList}
       document.body.appendChild(el);
     }
     window.DipPlayer.mount(el, { hidden: true });
-    if (withUnlock) window.DipPlayer.unlock?.();
+    window.DipPlayer.unlock?.();
   }
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
@@ -3941,13 +3963,16 @@ ${seenList}
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview(); return; }
-    gpEnsurePlayer(manual);
+    gpEnsurePlayer();
     gpPreviewStarted = true;
     gpPreviewManual = manual;
+    audioDebugSnapshot(manual ? 'play(manual)' : 'play(auto)');
     void window.DipPlayer.playAlbum({
       artist: r.artist, album: r.album, prefer: 'itunes',
       previewUrl: r._previewUrl || '',
       fixedOnly: !!r._previewUrl || !!r._previewUnavailable,
+    }).then(() => {
+      setTimeout(() => audioDebugSnapshot('after 2s'), 2000);
     });
   }
 
@@ -4017,6 +4042,14 @@ ${seenList}
       if (!pick) pick = pickSeedCard(pool, { popular: popularMode });
       if (!pick) throw new Error('這個範圍的卡都抽過了，按「再試一次」會清除已抽紀錄重新挖');
 
+      // 抽到什麼就立刻開始抓 30 秒試聽並解碼，跟封面／後台校正的查詢並行跑。
+      // 等結果頁渲染完才開始下載的話，那 1〜3 秒空窗正是手機收掉 audio session、
+      // 自動播放看起來在播卻沒聲音的窗口；先暖好，起播就幾乎與渲染同一個 tick。
+      const pickStatus = window.DipPreviewStatus?.[cardIdOf(pick.artist, pick.album)] || '';
+      if (pickStatus !== 'unavailable' && pickStatus !== 'disabled') {
+        gpEnsurePlayer();
+        void window.DipPlayer?.warmAlbum?.({ artist: pick.artist, album: pick.album });
+      }
       const assets = await resolveCardAssets(pick.artist, pick.album);
       // 三軸直接用 seed 卡自帶數值（後台校正優先）；apex 卡沿用 /album-rating 顯示路徑
       const ratings = (!isApex && pick.classic) ? {

@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜Service Worker 一直餵舊的 dip-player.js（前一輪音訊修正等於沒上線）
+
+- 店主回報「一樣，直接來一張抽到卡沒有直接播放」。查下去發現**修正根本沒跑到**：
+  `index/battle/roguelike` 三頁都寫死 `<script src="dip-player.js?v=31">`，而 `sw.js` 對同源靜態檔
+  用 **stale-while-revalidate**——URL 沒變就先回快取的舊檔、背景才更新。改了 dip-player.js 但
+  沒動查詢字串，手機上跑的永遠是上一版；本機用 `caches.keys()` 直接看到快取裡躺著 `dip-player.js?v=31`。
+- 修法三層：① 三頁 `?v=31`→`?v=32`（舊 SW 也會因為 URL 沒命中而走網路，當下就生效）；
+  ② `sw.js` 對 `.js/.css/.json` 改成**網路優先**、失敗才回退快取（圖片字型維持 SWR）；
+  ③ `VERSION` v1→v2 清掉舊快取。**以後改任何 JS 都要記得這條路徑會吃快取。**
+- 另加現場診斷：前台網址帶 `?audiodebug=1` 會在畫面下方開一個黑框，即時列出 DipPlayer 狀態變化
+  與 `DipPlayer.debugState()`（AudioContext 狀態／gain 值／keep-alive 是否還在播／是否在手勢內／
+  失敗代碼）。自動播放失敗照設計是安靜的，手機上沒這個什麼都看不到。
+- 順帶釐清一個**不是 bug** 的來源：抽卡有 10% 抽店內在售、10% 抽 IG reel，這兩類沒有 30 秒試聽，
+  照設計不顯示播放鍵也不自動播；再加上 `card-preview-status.js` 有 271 張人工標記無來源
+  （231 unavailable／40 disabled）。所以即使一切正常，每五次抽卡也會有一次是安靜的。
+- 驗證：本機清掉 SW 與快取後重載，`DipPlayer.debugState` 存在（＝新檔有進去）；抽到有試聽的卡
+  自動播放正常（ctx running、gain 0.5、playing true）；抽到 reel／無來源卡則如設計般安靜。
+
 ### 2026-07-27｜抽牌顯示卡牌等級＋分享圖統一改版＋修「第一次抽牌沒聲音」
 
 - Repo：`dip-vinyl-shop`（`index.html`、`dip-player.js`）。`dip-vinyl-worker` 有其他協作者未提交的

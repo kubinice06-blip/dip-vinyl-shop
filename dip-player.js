@@ -1055,5 +1055,21 @@
     return () => listeners.delete(callback);
   }
 
-  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange };
+  // 現場診斷用（前台 ?audiodebug=1）：狀態機說「在播」但實際沒聲音時，
+  // 只有這幾個底層數值分得出「沒起播」「起播了但 context 被停住」「gain 沒拉起來」。
+  function debugState() {
+    return {
+      ctx: audioCtx ? audioCtx.state : 'none',
+      t: audioCtx ? Number(audioCtx.currentTime.toFixed(2)) : -1,
+      gain: previewGain ? Number(previewGain.gain.value.toFixed(3)) : -1,
+      keepAlive: previewAudio ? (previewAudio.paused ? 'paused' : 'playing') : 'none',
+      primed: previewPrimed,
+      playing: !!previewBufferSource,
+      gesture: inUserGesture(),
+      code: lastFailCode || '',
+      status: state.status,
+    };
+  }
+
+  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState };
 })();

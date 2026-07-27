@@ -3,8 +3,14 @@
 // service worker 只負責「離線時的後備」與靜態資源快取。
 // Firestore / Firebase SDK / 字型等跨網域請求一律不攔截，直接走網路。
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `dip-song-${VERSION}`;
+
+// 程式碼與資料一律「網路優先」：舊版的 stale-while-revalidate 會在部署後
+// 先回舊檔、背景才更新，等於使用者這一趟跑的是上一版的 JS——
+// 2026-07-27 追查「抽牌沒聲音的修正沒生效」就是卡在這裡（手機上的
+// dip-player.js?v=31 一直是舊的）。圖片／字型這類不影響行為的才留快取優先。
+const NETWORK_FIRST = /\.(js|css|json)(\?|$)/i;
 
 // 只預快取「外殼」與離線後備所需的同源靜態檔。
 const PRECACHE = [
@@ -67,7 +73,23 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 其他同源靜態資源：stale-while-revalidate（先回快取、背景更新）。
+  // 程式碼與資料：網路優先，成功就順手更新快取；離線或失敗才回退快取。
+  if (NETWORK_FIRST.test(url.pathname + url.search)) {
+    event.respondWith(
+      fetch(req)
+        .then((res) => {
+          if (res && res.status === 200) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(req, copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match(req).then((hit) => hit || Response.error()))
+    );
+    return;
+  }
+
+  // 圖片／字型等：stale-while-revalidate（先回快取、背景更新）。
   event.respondWith(
     caches.match(req).then((cached) => {
       const network = fetch(req)
