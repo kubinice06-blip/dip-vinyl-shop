@@ -291,8 +291,9 @@
     .quiz-result { padding: 32px 20px; }
     .quiz-result-label { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 16px; }
     .quiz-result-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 20px; border: 1px solid var(--line); cursor: pointer; }
-    .quiz-result-artist { font-size: 14px; color: var(--gray); margin-bottom: 6px; letter-spacing: 0.06em; }
-    .quiz-result-album { font-size: 19px; font-weight: 700; line-height: 1.5; margin-bottom: 16px; }
+    /* 抽卡結果頁的藝人／專輯／等級置中（介紹內文仍靠左，長段落置中不好讀） */
+    .quiz-result-artist { font-size: 14px; color: var(--gray); margin-bottom: 6px; letter-spacing: 0.06em; text-align: center; }
+    .quiz-result-album { font-size: 19px; font-weight: 700; line-height: 1.5; margin-bottom: 16px; text-align: center; }
     .quiz-result-reason { font-size: 13px; line-height: 1.9; padding: 16px; border: 1px solid var(--line); margin-bottom: 20px; }
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
@@ -521,6 +522,7 @@
     .quiz-hall-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #c0c4cc; border-radius: 999px; background: var(--silver-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-pearl-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #6a4ea0; border-radius: 999px; background: var(--oil-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
     .quiz-heresy-badge { display: inline-block; margin: 8px auto 4px; padding: 4px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; border: 1px solid #a01020; border-radius: 999px; background: var(--crimson-shine); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+    .quiz-tier-slot { text-align: center; }
     .quiz-tier-slot:empty { display: none; }
     /* 新手禮：免費抽一張殿堂卡 */
     .welcome-hall { margin: 16px 20px; padding: 18px 16px; text-align: center; background: #0e0f12; border-radius: 4px; position: relative; overflow: hidden; }

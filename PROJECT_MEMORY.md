@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜抽卡結果頁的藝人／專輯／等級改置中
+
+- 只動前台結果頁（心情選歌與類型挑片／直接來一張共用同一組 class），分享圖不受影響。
+- `.quiz-result-artist`／`.quiz-result-album` 加 `text-align:center`，`.quiz-tier-slot` 也置中
+  （徽章是 inline-block，要靠容器的 text-align 才會置中）。
+- 原本是 `text-align:start`（靠左），不是靠右。介紹內文 `.quiz-result-reason` 維持靠左——
+  長段落置中不好讀；上方的 `.quiz-result-label`（為你挖出的那張）也維持原樣。
+- 驗證：本機實抽，用 Range 量文字實際佔位，artist／album／徽章的左右留白皆相等
+  （一般卡與殿堂卡各驗一次），心情選歌那頁同樣置中。
+
 ### 2026-07-27｜Service Worker 一直餵舊的 dip-player.js（前一輪音訊修正等於沒上線）
 
 - 店主回報「一樣，直接來一張抽到卡沒有直接播放」。查下去發現**修正根本沒跑到**：
