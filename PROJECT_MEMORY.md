@@ -1129,6 +1129,14 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-27｜desc-restyle wave2 量產：批次 005–013 共 450 張簡介改寫上線（累計 1,370/6,980）
+- Repo：`desc-restyle`（工具鏈與批次檔）；KV 為線上資料面，`dip-vinyl-shop` 本次僅更新本備忘錄
+- 改動：延續路線一（研究快查＋寫手一次到位）跑完 w2-005～w2-013 共九批，每批 50 張，全部經 `qa-check-research.mjs` 標記歸零、主會話逐張審稿、`wrangler kv bulk put` 上線並線上抽驗五張確認 `X-Cache: KV-HIT` 且文字與 final 完全一致。批次主題依序為：005 八〇年代流行／後龐克／nu-metal、006 爵士經典、007 靈魂放克、008 R&B／neo-soul、009 黃金年代嘻哈、010 trip hop／當代嘻哈、011 嘻哈與 UK grime／IDM、012 電子舞曲／後搖、013 北歐電子／流行天后。
+  - **審稿抓到的實質錯誤**（非僅字數）：Sepultura《Roots》被寫成「Cavalera 最後一張錄音室專輯」（實為在 Sepultura 的最後一張，他之後另組 Soulfly）；Air《Talkie Walkie》hook 稱「未假外部樂手」但正文寫了弦樂編寫者與客席主唱，屬 hook 與事實直接矛盾，改寫 hook 並同步 hooks／input 檔；Marilyn Manson《Mechanical Animals》漏交代 note 明令的隱藏訊息機制（黃字＋藍膜＝綠色）；Bruno Mars《24K Magic》句尾「該曲」指代斷裂。其餘高頻缺陷仍是正文重述 hook、超出 280 字硬上限、專輯名漏書名號。
+  - **額度事故與教訓**：fable 月額度於本日用罄，前後砍掉 12 個子代理。**關鍵發現：被砍的代理多半已把檔案寫進 `batches/`**——009 前半、010 後半 9 張、012 前半、013 研究四組都完整存活，主會話直接本機接手審稿刪修（010 前半一次修 18 張超長），省下的重跑額度遠多於重發。之後遇代理中斷，**一律先檢查既有檔案再決定是否重跑**。主會話與子代理其後改用 Opus 5，字數控制明顯優於先前（013 首稿即落在 197–249，僅 3 張略長）。
+- 主要檔案：`desc-restyle/batches/w2-005~013-{final,kv}.json`、`batches/output/*`、`batches/hooks/*`、`batches/research/*`、`desc-restyle/progress.json`、`dip-vinyl-shop/PROJECT_MEMORY.md`
+- 驗證：九批 × `node qa-check-research.mjs` 全數「標記 0」；九批 × 線上抽驗 5 張皆 `OK KV-HIT` 且與 final 逐字相符。w2-014 依店主指示暫停於研究層完成、hook 僅 b 組（檔案留存於 `batches/research/w2-014-a~e.json` 與 `batches/hooks/w2-014-hooks-b.json`），復工只需補 a/c/d/e 四組 hook 再進寫作。
+
 ### 2026-07-23｜修抽卡自動播放不響：播放器改常駐掛載＋手勢當下解鎖
 - Repo：`dip-vinyl-shop`
 - 改動：店主回報抽卡結果沒點開就不會自動播。根因：`DipPlayer` 的音訊解鎖（`primePreviewFromGesture`）開頭 `if (!root) return false`——root 要 `mount()` 後才存在，而前一版把 mount 放在 `gpPlayPreview` 內，抽卡非同步流程跑完才第一次 mount；用戶點「直接來一張」的手勢當下播放器根本沒掛載、解鎖監聽不存在，等自動播放要響時已無手勢授權被瀏覽器擋掉（對戰頁能自動播是因為開頁就 mount）。修法：新增 `gpEnsurePlayer()`——把 `#gpPlayerMount` 改為常駐 `document.body` 的隱藏節點（不再放結果頁 HTML、不隨重繪銷毀），mount＋unlock 一次完成；再掛 document capture `pointerdown` 監聽，凡點擊 `.homehub-card / #genreContent / [data-special-draw] / [data-collect]` 就在手勢當下同步呼叫，涵蓋首頁入口、類型/藝人選項、再一張、重試、特殊抽卡券全部路徑。
