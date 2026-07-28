@@ -53,6 +53,46 @@
   存成 `data/release-years-partial.json`＋剩餘清單 `data/remaining-cards.json`。
   **待辦：腳本應該每 N 張就落一次檔。**
 
+#### 2026-07-28 完成：全池年份定版並寫入卡池
+
+- **最終覆蓋率 99.0%**：`seed_cards.json` 7481/7558（第 7 欄）、`apex_pool.json` 626/635（第 4 欄），
+  年份資料檔 `data/release-years-v1.json` 共 8102 筆。離譜值 0；年代分佈合理
+  （1970s 1468／1990s 1377／2010s 1379 為大宗，最早 1918 Beethoven 早期錄音，最新 2026）。
+- 抽驗 9 張已知案例全對，含這輪踩過的全部錯誤：Santana 1969、Elvis Presley 1956、
+  Deep Purple《Made in Japan》1972、Camel 1975、Can《Monster Movie》1969。
+- Discogs 裁決 657 張：majority 351／discogs-only 154／three-way-split 113／unresolved 39。
+  併回時覆寫 23 筆、新增 268 筆。**待人工複查 306 張**存 `data/years-pending-review.json`
+  （含 154 張 discogs-only——已寫入但屬單一來源，建議抽驗）。
+- **踩到的坑：`--only` 與 `--recheck` 都寫同一個 `release-years-recheck-report.json`**，
+  後跑的會把前面的整份蓋掉。續跑 4331 張的待驗清單就是被短名補跑（186 張）洗掉的，
+  導致 Discogs 只裁決到 6 張（真正應該是 657 張）。
+  補救：新增 `scripts/rebuild-pending-from-logs.mjs`，從跑批 stdout 依行號對回清單索引重建
+  （逐行輸出含 verdict／MB 年／Apple 年，足以還原）。
+  **待辦：報告檔名應該跟著 --only 的清單檔名走，不要共用同一個路徑。**
+- `discogs-only` 改為「採信但一併列入複查清單」：單一來源沒有第二方背書，而 Discogs 未必收得到
+  原版壓片（山本剛トリオ《Speak Low》只有 1999 再版，原版 1975 沒收）。
+- 修 `build-seed-genres.mjs` 的 apex 洗檔 bug：原本把每列重建成三元素，會把第 4 欄年份整批抹掉，
+  改為只覆寫第 3 欄。**這是往後任何補欄位腳本都要注意的模式。**
+- 前端（`index.html`）已加顯示：卡片詳情 `.cd-year`、抽卡結果頁 `.quiz-result-year`，
+  年份從卡池本體讀（同 URL 走瀏覽器快取＝零額外請求）。**尚未提交、尚未上線**，等人工看過樣式再推。
+
+#### 2026-07-28 續跑、checkpoint 與無人值守收尾
+
+- **補上 checkpoint**：`build-release-years.mjs` 現在每 200 張就把 `release-years-v1.json`
+  落一次檔（原本只在跑完才寫，中斷等於白跑）。中止後直接 `--only` 接續即可。
+- **續跑前務必先換基底**：`--only`／`--recheck` 是疊加模式，會疊在現有 `release-years-v1.json` 上。
+  昨天那份是**第一次跑的舊版（含 1.8% 再版年誤差）**，直接續跑會把舊誤差留下來 →
+  先把 `release-years-partial.json` 的內容換成基底才續跑。
+- 新增 `scripts/merge-year-sources.mjs`：把 Discogs 三方裁決結果併回資料檔。
+  只採信 `majority`（至少兩方同年）與 `discogs-only`（MB 查無、Discogs 查到）；
+  `three-way-split`／`unresolved` 一律不寫入，另存 `data/years-pending-review.json` 待人工。
+- 新增 `scripts/finish-and-shutdown.ps1`：無人值守收尾（等跑批 → 補跑短名 → Discogs →
+  合併 → commit/push → 關機）。**任一步失敗就不關機**並保留現場，關機前留 5 分鐘可 `shutdown /a` 取消。
+- **踩到的坑：`.ps1` 一定要存成 UTF-8 with BOM**。Windows PowerShell 5.1 讀無 BOM 的 UTF-8
+  會當成 ANSI，中文註解與訊息全變亂碼，引號配對錯亂後直接變成語法錯誤（進程秒退、log 都來不及建）。
+  更麻煩的是 `[PSParser]::Tokenize` 配合 `Get-Content` 檢查時會給**假陽性**，看起來語法沒問題。
+  寫入時用 `[System.IO.File]::WriteAllText($path, $text, (New-Object System.Text.UTF8Encoding $true))`。
+
 #### 2026-07-27 收工狀態與明天的續跑步驟
 
 - 第二次全池跑在 **3862/8193** 停下（手動中止），已保存 **3681 筆年份**於
