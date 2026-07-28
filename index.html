@@ -293,7 +293,9 @@
     .quiz-result-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 20px; border: 1px solid var(--line); cursor: pointer; }
     /* 抽卡結果頁的藝人／專輯／等級置中（介紹內文仍靠左，長段落置中不好讀） */
     .quiz-result-artist { font-size: 14px; color: var(--gray); margin-bottom: 6px; letter-spacing: 0.06em; text-align: center; }
-    .quiz-result-album { font-size: 19px; font-weight: 700; line-height: 1.5; margin-bottom: 16px; text-align: center; }
+    .quiz-result-album { font-size: 19px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; text-align: center; }
+    .quiz-result-year { font-size: 13px; color: var(--gray); letter-spacing: 0.14em; text-align: center; margin-bottom: 16px; }
+    .quiz-result-year:empty { display: none; }
     .quiz-result-reason { font-size: 13px; line-height: 1.9; padding: 16px; border: 1px solid var(--line); margin-bottom: 20px; }
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
     .quiz-result-cta:hover { background: var(--black); color: #fff; }
@@ -565,6 +567,8 @@
     .cd-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 14px; }
     .cd-artist { font-size: 12px; color: var(--gray); }
     .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .cd-year { font-size: 12px; color: var(--gray); letter-spacing: 0.14em; margin-bottom: 2px; }
+    .cd-year:empty { display: none; }
     .cd-stars { margin: 14px 0 4px; }
     .cd-desc { font-size: 12px; line-height: 1.9; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 12px 0 16px; }
     .cd-reel-btn { display: block; width: 100%; box-sizing: border-box; padding: 12px; margin-bottom: 12px; text-align: center; text-decoration: none; background: #fff; color: #111; border: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; }
@@ -1590,6 +1594,7 @@
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
       <div class="cd-artist">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
+      <div class="cd-year">${releaseYearOf(c.artist, c.album) || ''}</div>
       <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       ${(() => { const ru = c.reelUrl || reelUrlFor(c.artist, c.album); return ru ? `<a class="cd-reel-btn" href="${ru}" target="_blank" rel="noopener">📷 看 Instagram 貼文 →</a>` : ''; })()}
@@ -2563,6 +2568,31 @@
     hero.style.opacity = '1';
   }
 
+  // ── 發行年份 ──
+  // 資料由 scripts/build-release-years.mjs 產出（MusicBrainz 原始發行年，Apple／Discogs 交叉驗證）。
+  // 正規化規則必須與該腳本一模一樣，否則查不到；查無就顯示空字串，不佔版面。
+  const YEAR_MAP = new Map();
+  const yearKeyOf = (artist, album) => {
+    const norm = value => String(value || '').normalize('NFKD').toLowerCase()
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
+    return `${norm(artist)} ${norm(album)}`;
+  };
+  function releaseYearOf(artist, album) {
+    return YEAR_MAP.get(yearKeyOf(artist, album)) || '';
+  }
+  // 年份就存在卡池本體（seed 第 7 欄／apex 第 4 欄），這兩個檔開場本來就會載入，
+  // 同一個 URL 會走瀏覽器快取 → 實質零額外請求，也不會有另開一份檔案的同步問題。
+  Promise.all([
+    fetch('seed_cards.json').then(r => r.ok ? r.json() : []),
+    fetch('apex_pool.json').then(r => r.ok ? r.json() : {})
+  ]).then(([seed, apex]) => {
+    for (const row of (seed || [])) if (row[6]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[6]);
+    for (const tier of ['hall', 'pearl', 'heresy']) {
+      for (const row of ((apex || {})[tier] || [])) if (row[3]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[3]);
+    }
+  }).catch(() => { /* 拿不到就當沒有年份，不影響其他功能 */ });
+
   // ── 心理測驗 ──
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
@@ -3051,6 +3081,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="quiz-result-year">${releaseYearOf(result.artist, result.album) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
@@ -4151,6 +4182,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
+        <div class="quiz-result-year">${releaseYearOf(result.artist, result.album) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         ${result.type ? '' : gpPreviewBtnHtml(result)}
