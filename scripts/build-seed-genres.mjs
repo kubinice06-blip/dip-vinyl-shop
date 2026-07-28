@@ -123,12 +123,14 @@ for (const tier of ['hall', 'pearl', 'heresy']) {
   for (let i = 0; i < list.length; i++) {
     if (!fixOnly && (force || !Array.isArray(list[i][2]))) {
       const out = await fetchGenres(list[i][0], list[i][1]);
-      if (out) { apex[tier][i] = [list[i][0], list[i][1], out.genres]; apexDone++; }
+      // 只覆寫第 3 欄，其餘欄位（第 4 欄的發行年份）必須原封不動——
+      // 原本這裡是重建成三元素陣列，會把年份整批洗掉。
+      if (out) { list[i][2] = out.genres; apexDone++; }
       else apexFailed++;
     }
     // 人工覆寫（含 --fix-only）
     const g = applySoulFix(list[i][0], list[i][2], list[i][1]);
-    if (Array.isArray(g) && JSON.stringify(g) !== JSON.stringify(list[i][2])) { apex[tier][i] = [list[i][0], list[i][1], g]; apexDone++; }
+    if (Array.isArray(g) && JSON.stringify(g) !== JSON.stringify(list[i][2])) { list[i][2] = g; apexDone++; }
   }
 }
 if (apexDone || apexFailed) {

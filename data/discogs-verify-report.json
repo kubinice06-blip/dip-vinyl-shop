@@ -1,0 +1,94 @@
+{
+ "generatedAt": "2026-07-28T04:26:19.446Z",
+ "total": 6,
+ "tally": {
+  "majority": 3,
+  "discogs-only": 3
+ },
+ "rows": [
+  {
+   "artist": "The Gap Band",
+   "album": "Gap Band IV",
+   "pool": "seed",
+   "priorVerdict": "check",
+   "mbYear": 1982,
+   "appleYear": 1979,
+   "discogsYear": 1982,
+   "discogsError": null,
+   "discogsPressings": 41,
+   "discogsQueriedArtist": "The Gap Band",
+   "verdict": "majority",
+   "resolvedYear": 1982
+  },
+  {
+   "artist": "Ohio Players",
+   "album": "Pleasure",
+   "pool": "seed",
+   "priorVerdict": "check",
+   "mbYear": 1972,
+   "appleYear": 2023,
+   "discogsYear": 1972,
+   "discogsError": null,
+   "discogsPressings": 34,
+   "discogsQueriedArtist": "Ohio Players",
+   "verdict": "majority",
+   "resolvedYear": 1972
+  },
+  {
+   "artist": "清水靖晃",
+   "album": "Kakashi",
+   "pool": "seed",
+   "priorVerdict": "miss",
+   "mbYear": null,
+   "appleYear": 1982,
+   "discogsYear": 1982,
+   "discogsError": null,
+   "discogsPressings": 10,
+   "discogsQueriedArtist": "Yasuaki Shimizu",
+   "verdict": "majority",
+   "resolvedYear": 1982
+  },
+  {
+   "artist": "宮間利之とニューハード",
+   "album": "Sunday Thing",
+   "pool": "seed",
+   "priorVerdict": "miss",
+   "mbYear": null,
+   "appleYear": null,
+   "discogsYear": 1976,
+   "discogsError": null,
+   "discogsPressings": 6,
+   "discogsQueriedArtist": "Toshiyuki Miyama & The New Herd",
+   "verdict": "discogs-only",
+   "resolvedYear": 1976
+  },
+  {
+   "artist": "山本剛トリオ",
+   "album": "Speak Low",
+   "pool": "seed",
+   "priorVerdict": "miss",
+   "mbYear": null,
+   "appleYear": null,
+   "discogsYear": 1999,
+   "discogsError": null,
+   "discogsPressings": 9,
+   "discogsQueriedArtist": "Tsuyoshi Yamamoto Trio",
+   "verdict": "discogs-only",
+   "resolvedYear": 1999
+  },
+  {
+   "artist": "福村博クインテット",
+   "album": "Morning Flight",
+   "pool": "seed",
+   "priorVerdict": "miss",
+   "mbYear": null,
+   "appleYear": null,
+   "discogsYear": 1977,
+   "discogsError": null,
+   "discogsPressings": 10,
+   "discogsQueriedArtist": "Hiroshi Fukumura Quintet",
+   "verdict": "discogs-only",
+   "resolvedYear": 1977
+  }
+ ]
+}

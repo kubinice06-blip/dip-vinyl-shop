@@ -300,6 +300,25 @@ if (!skipApple) {
 }
 
 // ── 主流程 ──
+// 全池要跑三小時，只在最後才寫檔的話，中途一斷（關機、限流卡死）整批就白跑了——踩過一次，
+// 只能事後去解析 stdout 硬救。改成邊跑邊落檔，任何時候中止都能用 --only 接續。
+const CHECKPOINT_EVERY = 200;
+const partialMode = recheck || Boolean(onlyPath);
+const baseYears = partialMode ? { ...(await readJson(outputPath)).entries } : {};
+const years = { ...baseYears };
+let removedStale = 0;
+
+function applyRow(row) {
+  const key = cardKey(row);
+  // 未經 Apple 背書的 loose 不進資料檔——它只是「專輯名對上、藝人名有共同字」，要人工點頭才算數
+  if (row.mbYear && (row.matchLevel !== 'loose' || row.verdict === 'loose-confirmed')) years[key] = row.mbYear;
+  else if (partialMode && key in years) { delete years[key]; removedStale++; }   // 修嚴後不再成立的舊值要撤掉
+}
+
+const writeYears = () => writeJsonAtomically(outputPath, {
+  version:1, generatedAt:new Date().toISOString(), entries:years
+});
+
 const rows = [];
 for (let index = 0; index < targets.length; index++) {
   const card = targets[index];
@@ -322,8 +341,14 @@ for (let index = 0; index < targets.length; index++) {
       verdict = gap <= 2 ? 'ok' : 'check';
     }
   }
-  rows.push({ ...card, mbYear:mb.year ?? null, appleYear, gap, verdict, matchLevel:mb.matchLevel || null, mb });
+  const row = { ...card, mbYear:mb.year ?? null, appleYear, gap, verdict, matchLevel:mb.matchLevel || null, mb };
+  rows.push(row);
+  if (!sampleSize) applyRow(row);
   process.stdout.write(`${String(index + 1).padStart(4)}/${targets.length}  ${verdict.padEnd(12)} MB:${String(mb.year ?? '----')} AP:${String(appleYear ?? '----')} ${(mb.matchLevel || '-').padEnd(13)} ${card.artist} — ${card.album}\n`);
+  if (!sampleSize && (index + 1) % CHECKPOINT_EVERY === 0) {
+    await writeYears();
+    process.stdout.write(`— checkpoint：已落檔 ${Object.keys(years).length} 筆年份 —\n`);
+  }
 }
 
 const tally = rows.reduce((acc, row) => (acc[row.verdict] = (acc[row.verdict] || 0) + 1, acc), {});
@@ -340,25 +365,16 @@ if (sampleSize > 0) {
     report:path.relative(root, reportPath).replace(/\\/g, '/')
   }, null, 1));
 } else {
-  // recheck／only 都只重跑一小批 → 要疊在既有資料檔上，不能整份覆寫掉沒重跑的部分
-  const partial = recheck || Boolean(onlyPath);
-  const years = partial ? { ...(await readJson(outputPath)).entries } : {};
-  let removed = 0;
-  for (const row of rows) {
-    const key = cardKey(row);
-    // 未經 Apple 背書的 loose 不進資料檔——它只是「專輯名對上、藝人名有共同字」，要人工點頭才算數
-    if (row.mbYear && (row.matchLevel !== 'loose' || row.verdict === 'loose-confirmed')) years[key] = row.mbYear;
-    else if (partial && key in years) { delete years[key]; removed++; }   // 修嚴後不再成立的舊值要撤掉
-  }
-  await writeJsonAtomically(outputPath, { version:1, generatedAt:new Date().toISOString(), entries:years });
-  await writeJsonAtomically(partial ? recheckReportPath : reportPath, {
+  // years 在迴圈裡就一路累積並定期落檔了，這裡只補最後一段
+  await writeYears();
+  await writeJsonAtomically(partialMode ? recheckReportPath : reportPath, {
     generatedAt:new Date().toISOString(), total:targets.length, tally, rows:rows.filter(row => row.verdict !== 'ok')
   });
   console.log(JSON.stringify({
     mode:onlyPath ? 'only' : recheck ? 'recheck' : 'full',
     total:targets.length, resolved, tally,
     entriesInFile:Object.keys(years).length,
-    ...(partial ? { removedStaleEntries:removed } : {}),
+    ...(partialMode ? { removedStaleEntries:removedStale } : {}),
     output:path.relative(root, outputPath).replace(/\\/g, '/')
   }, null, 1));
 }

@@ -1,0 +1,1001 @@
+{
+ "generatedAt": "2026-07-28T04:26:10.346Z",
+ "total": 186,
+ "tally": {
+  "ok": 144,
+  "miss": 5,
+  "ok-no-cross": 31,
+  "loose-confirmed": 2,
+  "check": 3,
+  "check-loose": 1
+ },
+ "rows": [
+  {
+   "artist": "Can",
+   "album": "Ege Bamyasi",
+   "pool": "seed",
+   "mbYear": null,
+   "appleYear": 1972,
+   "gap": null,
+   "verdict": "miss",
+   "matchLevel": null,
+   "mb": {
+    "error": "no-match",
+    "requests": 3,
+    "topCandidates": [
+     {
+      "title": "Ege Bamyası",
+      "credited": "Can",
+      "date": "1972-11",
+      "score": 100
+     },
+     {
+      "title": "Ege Bamyası",
+      "credited": "Can",
+      "date": "1972-11",
+      "score": 100
+     },
+     {
+      "title": "Ege Bamyası",
+      "credited": "Can",
+      "date": "1972-11",
+      "score": 100
+     },
+     {
+      "title": "Can’s Ege Bamyasi",
+      "credited": "Stephen Malkmus Friends",
+      "date": "2013-04-20",
+      "score": 87
+     }
+    ]
+   }
+  },
+  {
+   "artist": "UFO",
+   "album": "Strangers in the Night",
+   "pool": "seed",
+   "mbYear": 1979,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact-any-type",
+   "mb": {
+    "year": 1979,
+    "date": "1979-01-02",
+    "mbid": "9fc0f4fc-400c-383e-9e5c-85fa2529dd8c",
+    "matchedTitle": "Strangers in the Night",
+    "matchedArtist": "UFO",
+    "clean": false,
+    "ambiguous": false,
+    "matchLevel": "exact-any-type",
+    "queriedArtist": "UFO",
+    "requests": 2
+   }
+  },
+  {
+   "artist": "XTC",
+   "album": "Drums and Wires",
+   "pool": "seed",
+   "mbYear": 1979,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1979,
+    "date": "1979-08-17",
+    "mbid": "b2b0f57f-2caf-31b4-a2b1-ad245c3c7af2",
+    "matchedTitle": "Drums and Wires",
+    "matchedArtist": "XTC",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "XTC",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "L7",
+   "album": "Bricks Are Heavy",
+   "pool": "seed",
+   "mbYear": 1992,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1992,
+    "date": "1992-04-14",
+    "mbid": "9f7bedef-5588-3bca-8c81-06a102c4eb8d",
+    "matchedTitle": "Bricks Are Heavy",
+    "matchedArtist": "L7",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "L7",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "X",
+   "album": "Wild Gift",
+   "pool": "seed",
+   "mbYear": 1981,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1981,
+    "date": "1981-05",
+    "mbid": "8aca1b90-9412-3a00-965c-fd1873f6b986",
+    "matchedTitle": "Wild Gift",
+    "matchedArtist": "X",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "X",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "OMD",
+   "album": "Architecture & Morality",
+   "pool": "seed",
+   "mbYear": null,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "miss",
+   "matchLevel": null,
+   "mb": {
+    "error": "no-match",
+    "requests": 3,
+    "topCandidates": [
+     {
+      "title": "Architecture & Morality",
+      "credited": "Orchestral Manœuvres in the Dark",
+      "date": "1981-11-06",
+      "score": 100
+     },
+     {
+      "title": "Architecture & Morality & More",
+      "credited": "Orchestral Manoeuvres in the Dark",
+      "date": "2008-04-28",
+      "score": 80
+     },
+     {
+      "title": "Architecture & Morality: The Singles",
+      "credited": "Orchestral Manœuvres in the Dark",
+      "date": "2021-10-15",
+      "score": 80
+     },
+     {
+      "title": "Architecture & Morality / Dazzle Ships",
+      "credited": "Orchestral Manoeuvres in the Dark",
+      "date": "2016-05-09",
+      "score": 73
+     }
+    ]
+   }
+  },
+  {
+   "artist": "OMD",
+   "album": "Dazzle Ships",
+   "pool": "seed",
+   "mbYear": null,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "miss",
+   "matchLevel": null,
+   "mb": {
+    "error": "no-match",
+    "requests": 3,
+    "topCandidates": [
+     {
+      "title": "Dazzle Ships at the Museum of Liverpool",
+      "credited": "OMD",
+      "date": "2015-12",
+      "score": 100
+     },
+     {
+      "title": "Dazzle Ships",
+      "credited": "Orchestral Manoeuvres in the Dark",
+      "date": "1983-03-04",
+      "score": 100
+     },
+     {
+      "title": "Dazzle Ships (deluxe)",
+      "credited": "Orchestral Manoeuvres in the Dark",
+      "date": "2023-03-30",
+      "score": 87
+     },
+     {
+      "title": "Architecture & Morality / Dazzle Ships",
+      "credited": "Orchestral Manoeuvres in the Dark",
+      "date": "2016-05-09",
+      "score": 64
+     }
+    ]
+   }
+  },
+  {
+   "artist": "Rex",
+   "album": "C",
+   "pool": "seed",
+   "mbYear": 1996,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1996,
+    "date": "1996-10-21",
+    "mbid": "723b6a30-aad6-3dd9-a8b2-0630e48c8794",
+    "matchedTitle": "C",
+    "matchedArtist": "Rex",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Rex",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "GZA",
+   "album": "Liquid Swords",
+   "pool": "seed",
+   "mbYear": 1995,
+   "appleYear": 1995,
+   "gap": null,
+   "verdict": "loose-confirmed",
+   "matchLevel": "loose",
+   "mb": {
+    "year": 1995,
+    "date": "1995-11-07",
+    "mbid": "6075a004-e983-3a00-8a13-50af32f0e200",
+    "matchedTitle": "Liquid Swords",
+    "matchedArtist": "Genius/GZA",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "loose",
+    "requests": 3
+   }
+  },
+  {
+   "artist": "Nas",
+   "album": "It Was Written",
+   "pool": "seed",
+   "mbYear": 1996,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1996,
+    "date": "1996-07-01",
+    "mbid": "f4dde59b-9a1d-3e74-9dee-c734435d9ea0",
+    "matchedTitle": "It Was Written",
+    "matchedArtist": "Nas",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Nas",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "O.C.",
+   "album": "Word...Life",
+   "pool": "seed",
+   "mbYear": 1994,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1994,
+    "date": "1994-10-18",
+    "mbid": "f01c8cf2-4690-32c6-ad32-015063493cf5",
+    "matchedTitle": "Word…Life",
+    "matchedArtist": "O.C.",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "O.C.",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "M.O.P.",
+   "album": "Firing Squad",
+   "pool": "seed",
+   "mbYear": 1996,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1996,
+    "date": "1996-10-22",
+    "mbid": "07296add-8e42-373a-ae10-0f0f7a0959a9",
+    "matchedTitle": "Firing Squad",
+    "matchedArtist": "M.O.P.",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "M.O.P.",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Ka",
+   "album": "Honor Killed the Samurai",
+   "pool": "seed",
+   "mbYear": 2016,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2016,
+    "date": "2016-08-13",
+    "mbid": "a87472bc-03fb-4d9a-8721-f54128c82e14",
+    "matchedTitle": "Honor Killed the Samurai",
+    "matchedArtist": "Ka",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Ka",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Z-Ro",
+   "album": "Let the Truth Be Told",
+   "pool": "seed",
+   "mbYear": 2005,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2005,
+    "date": "2005-04-26",
+    "mbid": "0706a137-65ec-33af-90fa-3e67c1dd05a0",
+    "matchedTitle": "Let the Truth Be Told",
+    "matchedArtist": "Z‐Ro",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Z-Ro",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "T.I.",
+   "album": "Trap Muzik",
+   "pool": "seed",
+   "mbYear": 2003,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2003,
+    "date": "2003-08-19",
+    "mbid": "099a331b-f9f7-3b89-b1bd-ef9dd9880de6",
+    "matchedTitle": "Trap Muzik",
+    "matchedArtist": "T.I.",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "T.I.",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Gas",
+   "album": "Pop",
+   "pool": "seed",
+   "mbYear": 2000,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2000,
+    "date": "2000-03-24",
+    "mbid": "8994e44b-0604-3091-a39c-0c2698920786",
+    "matchedTitle": "Pop",
+    "matchedArtist": "Gas",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Gas",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Gas",
+   "album": "Königsforst",
+   "pool": "seed",
+   "mbYear": 1998,
+   "appleYear": 2016,
+   "gap": 18,
+   "verdict": "check",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1998,
+    "date": "1998-12",
+    "mbid": "a1b1b817-41a7-3e60-ae0f-bf11e119ae33",
+    "matchedTitle": "Königsforst",
+    "matchedArtist": "Gas",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Gas",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "P!nk",
+   "album": "Missundaztood",
+   "pool": "seed",
+   "mbYear": null,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "miss",
+   "matchLevel": null,
+   "mb": {
+    "error": "no-match",
+    "requests": 3,
+    "topCandidates": [
+     {
+      "title": "Can’t Take Me Home / Missundaztood",
+      "credited": "P!nk",
+      "date": "2007-10-30",
+      "score": 100
+     },
+     {
+      "title": "Can’t Take Me Home / Missundaztood",
+      "credited": "P!nk",
+      "date": "2007-10-30",
+      "score": 100
+     }
+    ]
+   }
+  },
+  {
+   "artist": "Om",
+   "album": "Advaitic Songs",
+   "pool": "seed",
+   "mbYear": 2012,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2012,
+    "date": "2012-07-24",
+    "mbid": "10e734e7-2b6b-4bea-bc37-a47c521e173b",
+    "matchedTitle": "Advaitic Songs",
+    "matchedArtist": "Om",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Om",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Mgła",
+   "album": "Exercises in Futility",
+   "pool": "seed",
+   "mbYear": 2015,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2015,
+    "date": "2015-09-04",
+    "mbid": "1ae1b593-2ac7-45ea-b8df-107703e0ee1a",
+    "matchedTitle": "Exercises in Futility",
+    "matchedArtist": "Mgła",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Mgła",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "EXO",
+   "album": "OBSESSION",
+   "pool": "seed",
+   "mbYear": 2019,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2019,
+    "date": "2019-11-27",
+    "mbid": "445fcc2c-3faf-4b3a-be73-b025179d7144",
+    "matchedTitle": "OBSESSION",
+    "matchedArtist": "EXO",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "EXO",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "M83",
+   "album": "M83",
+   "pool": "seed",
+   "mbYear": 2001,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2001,
+    "date": "2001-04-18",
+    "mbid": "b1d19fbd-0840-3b90-ba0c-64832ba9838d",
+    "matchedTitle": "M83",
+    "matchedArtist": "M83",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "M83",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Mew",
+   "album": "Half the World Is Watching Me",
+   "pool": "seed",
+   "mbYear": 2000,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2000,
+    "date": "2000-05-04",
+    "mbid": "0b3907ed-3305-3b30-94ae-9122af3823af",
+    "matchedTitle": "Half the World Is Watching Me",
+    "matchedArtist": "Mew",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Mew",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Mew",
+   "album": "A Triumph for Man",
+   "pool": "seed",
+   "mbYear": 1997,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1997,
+    "date": "1997-04",
+    "mbid": "a4abf43e-d792-3ea2-9a58-e9f492e33296",
+    "matchedTitle": "A Triumph for Man",
+    "matchedArtist": "Mew",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Mew",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "EXO",
+   "album": "DON'T MESS UP MY TEMPO",
+   "pool": "seed",
+   "mbYear": 2018,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2018,
+    "date": "2018-11-02",
+    "mbid": "7f266820-472e-41c7-b77c-a4671d9d2bdd",
+    "matchedTitle": "DON’T MESS UP MY TEMPO",
+    "matchedArtist": "EXO",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "EXO",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Can",
+   "album": "Ege Bamyası",
+   "pool": "seed",
+   "mbYear": 1972,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1972,
+    "date": "1972-11",
+    "mbid": "a4b405a6-0577-3b77-b46d-06af1b98fbd2",
+    "matchedTitle": "Ege Bamyası",
+    "matchedArtist": "Can",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Can",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "EXO",
+   "album": "EXIST",
+   "pool": "seed",
+   "mbYear": 2023,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2023,
+    "date": "2023-07-10",
+    "mbid": "8b2ea376-1130-4d9a-b1c4-db55d90b1106",
+    "matchedTitle": "EXIST",
+    "matchedArtist": "EXO",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "EXO",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Ice?",
+   "album": "Rhyme Pays",
+   "pool": "seed",
+   "mbYear": 1987,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "check-loose",
+   "matchLevel": "loose",
+   "mb": {
+    "year": 1987,
+    "date": "1987-07-28",
+    "mbid": "999771bd-aefa-3df9-8398-e557e2352322",
+    "matchedTitle": "Rhyme Pays",
+    "matchedArtist": "Ice‐T",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "loose",
+    "requests": 3
+   }
+  },
+  {
+   "artist": "Nas",
+   "album": "[untitled]",
+   "pool": "seed",
+   "mbYear": 2008,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2008,
+    "date": "2008-07-11",
+    "mbid": "cd12cd7c-e0a3-3224-b419-3a85b2f6c3df",
+    "matchedTitle": "[untitled]",
+    "matchedArtist": "Nas",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Nas",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "UGK",
+   "album": "UGK (Underground Kingz)",
+   "pool": "seed",
+   "mbYear": 2007,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2007,
+    "date": "2007-08-07",
+    "mbid": "cb8832ea-ff11-3135-8b9e-88dd44cf4f76",
+    "matchedTitle": "UGK (Underground Kingz)",
+    "matchedArtist": "UGK",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "UGK",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Can",
+   "album": "Can",
+   "pool": "seed",
+   "mbYear": 1978,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1978,
+    "date": "1978",
+    "mbid": "a58318e7-0893-3484-ab5f-63aa2998bea3",
+    "matchedTitle": "Can",
+    "matchedArtist": "Can",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Can",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Air",
+   "album": "Air Mail",
+   "pool": "seed",
+   "mbYear": 1981,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1981,
+    "date": "1981",
+    "mbid": "f84b20bf-ddf4-43e8-8080-f9de57724e47",
+    "matchedTitle": "Air Mail",
+    "matchedArtist": "Air",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Air",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Air",
+   "album": "Air Song",
+   "pool": "seed",
+   "mbYear": 1975,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1975,
+    "date": "1975",
+    "mbid": "592a7c73-1319-47e5-bfe4-c9b857225fb5",
+    "matchedTitle": "Air Song",
+    "matchedArtist": "Air",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Air",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Gas",
+   "album": "Zauberberg",
+   "pool": "seed",
+   "mbYear": 1998,
+   "appleYear": 2016,
+   "gap": 18,
+   "verdict": "check",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1998,
+    "date": "1998-02-26",
+    "mbid": "f4027d7c-1f7c-32ec-a43a-dc02370b5775",
+    "matchedTitle": "Zauberberg",
+    "matchedArtist": "Gas",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Gas",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "B12",
+   "album": "Prelude Part 1",
+   "pool": "seed",
+   "mbYear": 1993,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1993,
+    "date": "1993",
+    "mbid": "069995e7-e5db-3841-afa5-e6a82640b182",
+    "matchedTitle": "Prelude Part 1",
+    "matchedArtist": "B12",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "B12",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "Ka",
+   "album": "Iron Works",
+   "pool": "seed",
+   "mbYear": 2008,
+   "appleYear": 2011,
+   "gap": 3,
+   "verdict": "check",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 2008,
+    "date": "2008",
+    "mbid": "e17fc778-7f7c-4a36-9ceb-91f5321ee9b5",
+    "matchedTitle": "Iron Works",
+    "matchedArtist": "Ka",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "Ka",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "War",
+   "album": "Eric Burdon Declares \"War\"",
+   "pool": "seed",
+   "mbYear": 1970,
+   "appleYear": 1970,
+   "gap": null,
+   "verdict": "loose-confirmed",
+   "matchLevel": "loose",
+   "mb": {
+    "year": 1970,
+    "date": "1970-04",
+    "mbid": "7e5f7e1b-070a-306e-b90c-48177653add6",
+    "matchedTitle": "Eric Burdon Declares \"War\"",
+    "matchedArtist": "Eric Burdon Declares \"War\"",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "loose",
+    "requests": 3
+   }
+  },
+  {
+   "artist": "War",
+   "album": "The Music Band 2",
+   "pool": "seed",
+   "mbYear": 1979,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1979,
+    "date": "1979",
+    "mbid": "bfddfb46-e732-406e-9419-c7924f4ac71c",
+    "matchedTitle": "The Music Band 2",
+    "matchedArtist": "War",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "War",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "U2",
+   "album": "The Joshua Tree",
+   "pool": "hall",
+   "mbYear": 1987,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1987,
+    "date": "1987-03-09",
+    "mbid": "6f3e9fa6-be7a-3de8-a2b2-2072ece8a54d",
+    "matchedTitle": "The Joshua Tree",
+    "matchedArtist": "U2",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "U2",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "X",
+   "album": "Los Angeles",
+   "pool": "hall",
+   "mbYear": 1980,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1980,
+    "date": "1980-04",
+    "mbid": "700da083-bd95-3301-91f1-af571a001414",
+    "matchedTitle": "Los Angeles",
+    "matchedArtist": "X",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "X",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "AMM",
+   "album": "AMMMusic",
+   "pool": "heresy",
+   "mbYear": 1967,
+   "appleYear": null,
+   "gap": null,
+   "verdict": "ok-no-cross",
+   "matchLevel": "exact",
+   "mb": {
+    "year": 1967,
+    "date": "1967",
+    "mbid": "9ef75f4d-f687-373b-9e06-9f9d67bd6939",
+    "matchedTitle": "AMMMusic",
+    "matchedArtist": "AMM",
+    "clean": true,
+    "ambiguous": false,
+    "matchLevel": "exact",
+    "queriedArtist": "AMM",
+    "requests": 1
+   }
+  },
+  {
+   "artist": "SPK",
+   "album": "Leichenschrei",
+   "pool": "heresy",
+   "mbYear": null,
+   "appleYear": 1982,
+   "gap": null,
+   "verdict": "miss",
+   "matchLevel": null,
+   "mb": {
+    "error": "no-match",
+    "requests": 3,
+    "topCandidates": [
+     {
+      "title": "Leichenschrei",
+      "credited": "Sozialistisches Patienten Kollektiv",
+      "date": "1982",
+      "score": 100
+     },
+     {
+      "title": "Leichenschrei: Trisol Bible, Chapter 2",
+      "credited": "Various Artists",
+      "date": "2004-05-24",
+      "score": 60
+     }
+    ]
+   }
+  }
+ ]
+}
