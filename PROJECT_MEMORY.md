@@ -53,6 +53,24 @@
   存成 `data/release-years-partial.json`＋剩餘清單 `data/remaining-cards.json`。
   **待辦：腳本應該每 N 張就落一次檔。**
 
+#### 2026-07-28 複查收尾：99.8% 覆蓋，只剩 15 張查無
+
+- **名稱別名是補齊殘餘的關鍵**。三方全查無的 43 張，絕大多數不是資料庫沒收，而是卡在寫法：
+  縮寫（OMD＝Orchestral Manoeuvres in the Dark）、俗稱括號（`Weezer (Blue Album)`）、
+  日文原名 vs 羅馬字（`Sheena Ringo` 要查「椎名林檎」）、掛在別的團名下
+  （Spinetta《Artaud》其實掛 Pescado Rabioso、Mos Def & Talib Kweli 掛 Black Star）。
+  → 新增 `data/query-aliases.json`＋`scripts/fill-missing-years.mjs`，兩輪補回 28 張。
+  **填錯別名只會查無、不會生出假年份，所以可以放心試。**
+- 最終 **99.8%**：seed 7546/7558、apex 632/635、資料檔 8173 筆、離譜值 0。
+- 覆寫表再添兩筆：`Weezer (Blue Album)` 1992→**1994**（Discogs 有早於發行的 1992 壓片登錄，
+  「取較早」會踩到）、`Public Image Ltd. — Public Image: First Issue` **1978**（查得到但重跑時
+  該次請求落空，屬網路波動，直接固定值）。
+- **仍無年份 15 張**（多為自由爵士與冷門私盤：Horace Tapscott、Anthony Braxton、
+  Art Ensemble of Chicago、Michael A. Grant、K. Leimer，以及台灣獨立盤黃玠、董事長樂團、
+  Mary See the Future）。前端對無年份的卡本來就不顯示該行，不影響版面。
+- 一筆待抽驗：`Chet Baker — Chet Baker Live in Tokyo` 取到 2000（Discogs 單一來源），
+  但該場錄音實際在 1987、1988 首發，2000 很可能是再版年。
+
 #### 2026-07-28 上線與複查：99.5% 覆蓋，前台已顯示年份
 
 - **前台已上線**：卡片詳情 `.cd-year`、抽卡結果頁 `.quiz-result-year`，年份讀卡池本體
