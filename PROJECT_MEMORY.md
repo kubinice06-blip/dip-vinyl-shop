@@ -53,6 +53,30 @@
   存成 `data/release-years-partial.json`＋剩餘清單 `data/remaining-cards.json`。
   **待辦：腳本應該每 N 張就落一次檔。**
 
+#### 2026-07-28 上線與複查：99.5% 覆蓋，前台已顯示年份
+
+- **前台已上線**：卡片詳情 `.cd-year`、抽卡結果頁 `.quiz-result-year`，年份讀卡池本體
+  （同 URL 走瀏覽器快取＝零額外請求）。本機實抽驗證 Coltrane《Ascension》1965、
+  Elvin Jones 1968、Jodeci 1991 皆正確；無年份的卡該行 `:empty` 高度為 0，不留空白。
+- **判定規則放寬後覆蓋率 99.0%→99.5%**（seed 7519/7558、apex 631/635、資料檔 8145 筆）：
+  - `majority` 門檻從「完全相等」放寬到 **±3 年**（各庫差一年半載很正常：發行月份跨年、
+    地區首發不同）。原本 113 張 three-way-split 裡有 42 張其實是共識。
+  - 新增 `single-source`：只有一方查得到就採信但列入複查。實測這批多半正確
+    （Carpenters《Close to You》1970、Coltrane & Hartman 1963、Santigold 2008）。
+  - 取值優先用 MB 的 first-release-date（語義就是原始發行年）；MB 不在共識組時才取較早者。
+- **同名不同團是最難的一類，三方投票抓不到**（錯的兩方會互相背書）：
+  `Placebo — Placebo` 被標成 1974（MB 與 Discogs 都配到比利時同名爵士搖滾團），實際是 1996；
+  `Jungle — Jungle` 標成 1969（配到 60 年代同名團），實際 2014。
+  判別靠 **Apple 的藝人身份**（collectionId 是我們比對過的那張碟）＋ Discogs 壓片年份分佈
+  （原版會有一整批再版壓片：Placebo 1996 有 26 片，比利時團 1973／1974 各只有 1 片）。
+  → 新增人工覆寫表 `data/year-overrides.json`（填原名即可，鍵由腳本正規化），最後套用、優先於一切自動判定。
+- **試過但放棄的規則**：用「壓片數佔比最高的年份」取代「取最早」。這會把大量正確的原版年
+  改成 remaster 年——老盤原版登錄數本來就少（Max Roach《We Insist!》1961→2020、
+  Os Mutantes 1968→2006、Monk《Alone in San Francisco》1959→1986 全被改錯）。
+  **壓片數多寡只能拿來「標記可疑」，不能自動改值。** 保守標記出 20 張，人工看過只有上述 2 張真錯。
+- 仍有 **251 張待複查**（`data/years-pending-review.json`），絕大多數是 single-source
+  （已寫入、建議抽驗），其餘是三方都有值卻互相差很遠的真分歧。
+
 #### 2026-07-28 完成：全池年份定版並寫入卡池
 
 - **最終覆蓋率 99.0%**：`seed_cards.json` 7481/7558（第 7 欄）、`apex_pool.json` 626/635（第 4 欄），

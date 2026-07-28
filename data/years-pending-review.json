@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-28T04:45:42.981Z",
+ "generatedAt": "2026-07-28T08:48:43.646Z",
  "note": "三方都無法達成共識或全查無的殘餘，需人工決定；未寫入 release-years-v1.json",
- "total": 306,
+ "total": 251,
  "rows": [
   {
    "artist": "OMD",
@@ -37,17 +37,6 @@
    "currentValue": null
   },
   {
-   "artist": "Gas",
-   "album": "Zauberberg",
-   "pool": "seed",
-   "mbYear": 1998,
-   "appleYear": 2016,
-   "discogsYear": 1997,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1998
-  },
-  {
    "artist": "The Beach Boys",
    "album": "Today!",
    "pool": "seed",
@@ -55,20 +44,9 @@
    "appleYear": null,
    "discogsYear": 1965,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1965,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "David Bowie",
-   "album": "Scary Monsters (And Super Creeps)",
-   "pool": "seed",
-   "mbYear": 1980,
-   "appleYear": 2017,
-   "discogsYear": 1981,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1980
   },
   {
    "artist": "Johnny Cash",
@@ -78,7 +56,7 @@
    "appleYear": null,
    "discogsYear": 1969,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1969,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -90,9 +68,8 @@
    "appleYear": 2009,
    "discogsYear": 1981,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1981,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1981
   },
   {
    "artist": "Buddy Holly",
@@ -102,9 +79,8 @@
    "appleYear": 1957,
    "discogsYear": 1962,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1962,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1962
   },
   {
    "artist": "Nino Rota",
@@ -114,7 +90,7 @@
    "appleYear": null,
    "discogsYear": 1972,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1972,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -126,7 +102,7 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -138,7 +114,7 @@
    "appleYear": null,
    "discogsYear": 1968,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1968,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -150,8 +126,9 @@
    "appleYear": 1970,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1970,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Public Image Ltd.",
@@ -172,20 +149,9 @@
    "appleYear": null,
    "discogsYear": 1979,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1979,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Throwing Muses",
-   "album": "Throwing Muses",
-   "pool": "seed",
-   "mbYear": 1986,
-   "appleYear": 2003,
-   "discogsYear": 1984,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1986
   },
   {
    "artist": "The Olivia Tremor Control",
@@ -195,7 +161,7 @@
    "appleYear": null,
    "discogsYear": 1999,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1999,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -207,7 +173,7 @@
    "appleYear": 2001,
    "discogsYear": 1970,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1993
   },
   {
@@ -218,8 +184,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1986,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Laika",
@@ -240,7 +207,7 @@
    "appleYear": null,
    "discogsYear": 1992,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1992,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -252,7 +219,7 @@
    "appleYear": null,
    "discogsYear": 1995,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": null
   },
   {
@@ -263,19 +230,9 @@
    "appleYear": 1996,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
-   "artist": "Placebo",
-   "album": "Placebo",
-   "pool": "seed",
-   "mbYear": 1974,
-   "appleYear": 1996,
-   "discogsYear": 1973,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1974
+   "verdict": "single-source",
+   "currentValue": 1996,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Miles Davis",
@@ -285,7 +242,7 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -297,8 +254,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1963,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Charlie Parker",
@@ -308,7 +266,7 @@
    "appleYear": null,
    "discogsYear": 1967,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1967,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -320,21 +278,8 @@
    "appleYear": 2013,
    "discogsYear": 1954,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1954,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Max Roach",
-   "album": "We Insist!",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1960,
-   "discogsYear": 1961,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1961,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1954
   },
   {
    "artist": "Art Blakey and the Jazz Messengers",
@@ -348,51 +293,6 @@
    "currentValue": null
   },
   {
-   "artist": "Art Blakey and the Jazz Messengers",
-   "album": "Free for All",
-   "pool": "seed",
-   "mbYear": 1964,
-   "appleYear": null,
-   "discogsYear": 1965,
-   "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
-   "artist": "Cannonball Adderley",
-   "album": "Mercy, Mercy, Mercy!",
-   "pool": "seed",
-   "mbYear": 1995,
-   "appleYear": 1966,
-   "discogsYear": 1967,
-   "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
-   "artist": "Stan Getz",
-   "album": "Getz/Gilberto",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1964,
-   "discogsYear": 1963,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1963,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Art Pepper",
-   "album": "Art Pepper + Eleven",
-   "pool": "seed",
-   "mbYear": 1959,
-   "appleYear": 2010,
-   "discogsYear": 1960,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1959
-  },
-  {
    "artist": "Lee Konitz",
    "album": "Subconscious-Lee",
    "pool": "seed",
@@ -400,7 +300,7 @@
    "appleYear": 1950,
    "discogsYear": 1997,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1955
   },
   {
@@ -411,9 +311,8 @@
    "appleYear": 1965,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1978,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1978
   },
   {
    "artist": "Ahmad Jamal",
@@ -423,7 +322,7 @@
    "appleYear": null,
    "discogsYear": 1958,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1958,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -435,21 +334,8 @@
    "appleYear": 1954,
    "discogsYear": 1990,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1990,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Peggy Lee",
-   "album": "Black Coffee",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1956,
-   "discogsYear": 1953,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1953,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1990
   },
   {
    "artist": "Tony Williams",
@@ -459,8 +345,9 @@
    "appleYear": 1965,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1965,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Charlie Haden & Pat Metheny",
@@ -470,7 +357,7 @@
    "appleYear": null,
    "discogsYear": 1997,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1997,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -486,17 +373,6 @@
    "currentValue": null
   },
   {
-   "artist": "Ornette Coleman & Prime Time",
-   "album": "Of Human Feelings",
-   "pool": "seed",
-   "mbYear": 1982,
-   "appleYear": 1979,
-   "discogsYear": null,
-   "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
    "artist": "Miles Davis",
    "album": "Dark Magus",
    "pool": "seed",
@@ -504,7 +380,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -516,7 +392,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -528,21 +404,8 @@
    "appleYear": 1999,
    "discogsYear": 1963,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1963,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Ike Quebec",
-   "album": "Blue & Sentimental",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1962,
-   "discogsYear": 1963,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1963,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1963
   },
   {
    "artist": "Eddie Harris",
@@ -552,7 +415,7 @@
    "appleYear": null,
    "discogsYear": 1968,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1968,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -564,7 +427,7 @@
    "appleYear": null,
    "discogsYear": 1969,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1969,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -576,43 +439,9 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Ronnie Foster",
-   "album": "Two Headed Freap",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1973,
-   "discogsYear": 1972,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1972,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Kenny Drew",
-   "album": "Everything I Love",
-   "pool": "seed",
-   "mbYear": 1991,
-   "appleYear": 1973,
-   "discogsYear": 1974,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1991
-  },
-  {
-   "artist": "Tete Montoliu",
-   "album": "Songs for Love",
-   "pool": "seed",
-   "mbYear": 1992,
-   "appleYear": 1973,
-   "discogsYear": 1974,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1992
   },
   {
    "artist": "Egberto Gismonti",
@@ -626,28 +455,6 @@
    "currentValue": null
   },
   {
-   "artist": "João Gilberto",
-   "album": "Chega de Saudade",
-   "pool": "seed",
-   "mbYear": 1959,
-   "appleYear": 2022,
-   "discogsYear": 1958,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1959
-  },
-  {
-   "artist": "João Gilberto",
-   "album": "João Gilberto",
-   "pool": "seed",
-   "mbYear": 1962,
-   "appleYear": 1973,
-   "discogsYear": 1961,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1962
-  },
-  {
    "artist": "Baden Powell",
    "album": "Os Afro-Sambas",
    "pool": "seed",
@@ -655,7 +462,7 @@
    "appleYear": 2000,
    "discogsYear": 1966,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1991
   },
   {
@@ -666,7 +473,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -678,9 +485,8 @@
    "appleYear": 2007,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1973,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1973
   },
   {
    "artist": "J.J. Johnson",
@@ -690,8 +496,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1955,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Shelly Manne",
@@ -701,9 +508,8 @@
    "appleYear": 2023,
    "discogsYear": 1956,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1956,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1956
   },
   {
    "artist": "Hampton Hawes",
@@ -713,9 +519,8 @@
    "appleYear": 1991,
    "discogsYear": 1983,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1983,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1983
   },
   {
    "artist": "Barney Kessel",
@@ -725,9 +530,8 @@
    "appleYear": 1957,
    "discogsYear": 1974,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1974,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1974
   },
   {
    "artist": "Otis Redding",
@@ -737,20 +541,8 @@
    "appleYear": null,
    "discogsYear": 1966,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1966,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "The Isley Brothers",
-   "album": "3 + 3",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1973,
-   "discogsYear": 1972,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1972,
    "note": "單一來源，已寫入但建議抽驗"
   },
   {
@@ -761,20 +553,8 @@
    "appleYear": 1967,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1971,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Usher",
-   "album": "Confessions",
-   "pool": "seed",
-   "mbYear": 2004,
-   "appleYear": 2024,
-   "discogsYear": 2003,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 2004
+   "verdict": "split",
+   "currentValue": 1971
   },
   {
    "artist": "cLOUDDEAD",
@@ -784,7 +564,7 @@
    "appleYear": 2024,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 2001
   },
   {
@@ -806,8 +586,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1993,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Mos Def & Talib Kweli",
@@ -828,9 +609,8 @@
    "appleYear": 2009,
    "discogsYear": 1998,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1998,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1998
   },
   {
    "artist": "Madlib",
@@ -840,7 +620,7 @@
    "appleYear": null,
    "discogsYear": 2003,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2003,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -852,7 +632,7 @@
    "appleYear": null,
    "discogsYear": 2006,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2006,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -864,7 +644,7 @@
    "appleYear": null,
    "discogsYear": 2007,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2007,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -876,7 +656,7 @@
    "appleYear": null,
    "discogsYear": 2015,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2015,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -888,8 +668,9 @@
    "appleYear": 2008,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2008,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "The Black Dog",
@@ -899,8 +680,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1993,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "808 State",
@@ -910,7 +692,7 @@
    "appleYear": null,
    "discogsYear": 1989,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1989,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -922,7 +704,7 @@
    "appleYear": null,
    "discogsYear": 1992,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1992,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -945,20 +727,8 @@
    "appleYear": 2023,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 2011
-  },
-  {
-   "artist": "Hercules & Love Affair",
-   "album": "Hercules & Love Affair",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 2008,
-   "discogsYear": 2007,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 2007,
-   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Jeff Mills",
@@ -968,7 +738,7 @@
    "appleYear": null,
    "discogsYear": 1993,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1993,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -984,17 +754,6 @@
    "currentValue": null
   },
   {
-   "artist": "Kelly Clarkson",
-   "album": "Breakaway",
-   "pool": "seed",
-   "mbYear": 2003,
-   "appleYear": 2011,
-   "discogsYear": 2004,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 2003
-  },
-  {
    "artist": "Ed Sheeran",
    "album": "x",
    "pool": "seed",
@@ -1002,7 +761,7 @@
    "appleYear": null,
    "discogsYear": 2014,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2014,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1014,31 +773,8 @@
    "appleYear": 2017,
    "discogsYear": 1998,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 2007
-  },
-  {
-   "artist": "Jimmy Cliff",
-   "album": "The Harder They Come",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1972,
-   "discogsYear": 1971,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1971,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "The Skatalites",
-   "album": "Ska Authentic",
-   "pool": "seed",
-   "mbYear": 1964,
-   "appleYear": 2018,
-   "discogsYear": 1967,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1964
   },
   {
    "artist": "Augustus Pablo",
@@ -1048,30 +784,8 @@
    "appleYear": 1977,
    "discogsYear": 1971,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1981
-  },
-  {
-   "artist": "Prince Far I",
-   "album": "Under Heavy Manners",
-   "pool": "seed",
-   "mbYear": 1995,
-   "appleYear": 1976,
-   "discogsYear": 1977,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1995
-  },
-  {
-   "artist": "Sizzla",
-   "album": "Black Woman & Child",
-   "pool": "seed",
-   "mbYear": 1992,
-   "appleYear": 1997,
-   "discogsYear": 1996,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1992
   },
   {
    "artist": "Fela Ransome-Kuti and the Africa '70",
@@ -1081,8 +795,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1972,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Tinariwen",
@@ -1092,32 +807,9 @@
    "appleYear": null,
    "discogsYear": 2006,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2006,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Youssou N'Dour",
-   "album": "Immigrés",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1985,
-   "discogsYear": 1984,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1984,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Os Mutantes",
-   "album": "Mutantes",
-   "pool": "seed",
-   "mbYear": 1969,
-   "appleYear": 2014,
-   "discogsYear": 1968,
-   "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
   },
   {
    "artist": "Sérgio Mendes & Brasil '66",
@@ -1127,7 +819,7 @@
    "appleYear": null,
    "discogsYear": 1966,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1966,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1139,8 +831,9 @@
    "appleYear": 1971,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1971,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Café Tacvba",
@@ -1183,7 +876,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1195,9 +888,8 @@
    "appleYear": 2009,
    "discogsYear": 1980,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1980,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1980
   },
   {
    "artist": "Toshiki Kadomatsu",
@@ -1207,7 +899,7 @@
    "appleYear": null,
    "discogsYear": 1984,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1984,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1219,7 +911,7 @@
    "appleYear": null,
    "discogsYear": 1981,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1981,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1231,8 +923,9 @@
    "appleYear": 2006,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2006,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Happy End",
@@ -1242,8 +935,9 @@
    "appleYear": 1971,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1971,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Happy End",
@@ -1253,9 +947,8 @@
    "appleYear": 2020,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1973,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1973
   },
   {
    "artist": "Sugar Babe",
@@ -1265,7 +958,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1310,8 +1003,9 @@
    "appleYear": 1998,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1998,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Sheena Ringo",
@@ -1332,30 +1026,8 @@
    "appleYear": 2012,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
-   "artist": "Susumu Yokota",
-   "album": "Sakura",
-   "pool": "seed",
-   "mbYear": 2000,
-   "appleYear": 2025,
-   "discogsYear": 1999,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 2000
-  },
-  {
-   "artist": "Ulver",
-   "album": "Nattens Madrigal",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1996,
-   "discogsYear": 1997,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1997,
+   "verdict": "single-source",
+   "currentValue": 2012,
    "note": "單一來源，已寫入但建議抽驗"
   },
   {
@@ -1366,8 +1038,9 @@
    "appleYear": 2015,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2015,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Pentagram",
@@ -1377,9 +1050,8 @@
    "appleYear": 1985,
    "discogsYear": 1993,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1993,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1993
   },
   {
    "artist": "Trouble",
@@ -1389,9 +1061,8 @@
    "appleYear": 1984,
    "discogsYear": 1988,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1988,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1988
   },
   {
    "artist": "Godspeed You! Black Emperor",
@@ -1412,7 +1083,7 @@
    "appleYear": null,
    "discogsYear": 1983,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1983,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1424,20 +1095,8 @@
    "appleYear": null,
    "discogsYear": 1986,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1986,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Constance Demby",
-   "album": "Novus Magnificat",
-   "pool": "seed",
-   "mbYear": null,
-   "appleYear": 1986,
-   "discogsYear": 1987,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1987,
    "note": "單一來源，已寫入但建議抽驗"
   },
   {
@@ -1448,7 +1107,7 @@
    "appleYear": null,
    "discogsYear": 1989,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1989,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1460,7 +1119,7 @@
    "appleYear": null,
    "discogsYear": 1963,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1963,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1483,7 +1142,7 @@
    "appleYear": null,
    "discogsYear": 2012,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2012,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1495,7 +1154,7 @@
    "appleYear": null,
    "discogsYear": 1999,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1999,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1507,52 +1166,9 @@
    "appleYear": 1991,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
-  },
-  {
-   "artist": "Hank Mobley",
-   "album": "Jazz Message #2",
-   "pool": "seed",
-   "mbYear": 1957,
-   "appleYear": 2025,
-   "discogsYear": 1956,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1957
-  },
-  {
-   "artist": "Todd Rundgren",
-   "album": "Todd",
-   "pool": "seed",
-   "mbYear": 1974,
-   "appleYear": 2016,
-   "discogsYear": 1972,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1974
-  },
-  {
-   "artist": "Jim Hall",
-   "album": "... Where Would I Be?",
-   "pool": "seed",
-   "mbYear": 1991,
-   "appleYear": 1971,
-   "discogsYear": 1972,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1991
-  },
-  {
-   "artist": "Os Mutantes",
-   "album": "Tecnicolor",
-   "pool": "seed",
-   "mbYear": 1999,
-   "appleYear": 1970,
-   "discogsYear": 2000,
-   "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1991,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Pizzicato Five",
@@ -1562,7 +1178,7 @@
    "appleYear": 2016,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1988
   },
   {
@@ -1573,7 +1189,7 @@
    "appleYear": null,
    "discogsYear": 2012,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": null
   },
   {
@@ -1584,8 +1200,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2018,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Roosevelt Sykes",
@@ -1595,20 +1212,9 @@
    "appleYear": null,
    "discogsYear": 1929,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1929,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Selena",
-   "album": "Ven Conmigo",
-   "pool": "seed",
-   "mbYear": 1991,
-   "appleYear": 2002,
-   "discogsYear": 1990,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1991
   },
   {
    "artist": "Neil Young",
@@ -1618,19 +1224,8 @@
    "appleYear": 1992,
    "discogsYear": 2007,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1977
-  },
-  {
-   "artist": "Sun Ra",
-   "album": "Astro Black",
-   "pool": "seed",
-   "mbYear": 1972,
-   "appleYear": 2018,
-   "discogsYear": 1973,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1972
   },
   {
    "artist": "Marcos Valle",
@@ -1640,7 +1235,7 @@
    "appleYear": 1983,
    "discogsYear": 1966,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1970
   },
   {
@@ -1651,7 +1246,7 @@
    "appleYear": 1961,
    "discogsYear": 1989,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1966
   },
   {
@@ -1662,9 +1257,8 @@
    "appleYear": 2019,
    "discogsYear": 1983,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1983,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1983
   },
   {
    "artist": "Erik Satie",
@@ -1674,7 +1268,7 @@
    "appleYear": 2023,
    "discogsYear": 1976,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1983
   },
   {
@@ -1685,7 +1279,7 @@
    "appleYear": 2017,
    "discogsYear": 1958,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1953
   },
   {
@@ -1696,7 +1290,7 @@
    "appleYear": 2025,
    "discogsYear": 1971,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1987
   },
   {
@@ -1707,8 +1301,9 @@
    "appleYear": 2026,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2026,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Sturgill Simpson",
@@ -1718,8 +1313,9 @@
    "appleYear": 2024,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2024,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "五月天 Mayday",
@@ -1729,8 +1325,9 @@
    "appleYear": 1999,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1999,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "閃靈 CHTHONIC",
@@ -1740,7 +1337,7 @@
    "appleYear": null,
    "discogsYear": 2005,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2005,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1752,7 +1349,7 @@
    "appleYear": null,
    "discogsYear": 2011,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2011,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1786,8 +1383,9 @@
    "appleYear": 2010,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2010,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Echo",
@@ -1797,8 +1395,9 @@
    "appleYear": 2007,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2007,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Mary See the Future",
@@ -1841,8 +1440,9 @@
    "appleYear": 2020,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2020,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Edward Ka-Spel",
@@ -1852,8 +1452,9 @@
    "appleYear": 1984,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1984,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Claude Debussy",
@@ -1863,8 +1464,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1949,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Electric Light Orchestra",
@@ -1874,7 +1476,7 @@
    "appleYear": null,
    "discogsYear": 2015,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2015,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1886,7 +1488,7 @@
    "appleYear": null,
    "discogsYear": 1952,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": null
   },
   {
@@ -1897,7 +1499,7 @@
    "appleYear": null,
    "discogsYear": 2019,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2019,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1909,7 +1511,7 @@
    "appleYear": null,
    "discogsYear": 2004,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2004,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1921,19 +1523,8 @@
    "appleYear": 2002,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 2022
-  },
-  {
-   "artist": "Tony Bennett",
-   "album": "Because of You",
-   "pool": "seed",
-   "mbYear": 1952,
-   "appleYear": 2011,
-   "discogsYear": 1951,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1952
   },
   {
    "artist": "Preoccupations",
@@ -1943,7 +1534,7 @@
    "appleYear": null,
    "discogsYear": 2023,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2023,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1955,7 +1546,7 @@
    "appleYear": null,
    "discogsYear": 1969,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1969,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1967,7 +1558,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1979,7 +1570,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -1991,7 +1582,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2003,7 +1594,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2015,7 +1606,7 @@
    "appleYear": null,
    "discogsYear": 1972,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1972,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2027,7 +1618,7 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2050,7 +1641,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2062,7 +1653,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2074,7 +1665,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2086,7 +1677,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2098,7 +1689,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2110,7 +1701,7 @@
    "appleYear": null,
    "discogsYear": 1974,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1974,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2122,7 +1713,7 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2134,7 +1725,7 @@
    "appleYear": null,
    "discogsYear": 1975,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1975,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2146,7 +1737,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2158,7 +1749,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2170,7 +1761,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2182,7 +1773,7 @@
    "appleYear": null,
    "discogsYear": 1982,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1982,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2194,7 +1785,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2206,7 +1797,7 @@
    "appleYear": null,
    "discogsYear": 1974,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1974,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2218,7 +1809,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2230,7 +1821,7 @@
    "appleYear": null,
    "discogsYear": 1982,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1982,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2242,7 +1833,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2254,7 +1845,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2266,7 +1857,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2278,7 +1869,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2290,7 +1881,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2302,7 +1893,7 @@
    "appleYear": null,
    "discogsYear": 1971,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1971,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2314,7 +1905,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2326,7 +1917,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2338,7 +1929,7 @@
    "appleYear": null,
    "discogsYear": 1966,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1966,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2350,7 +1941,7 @@
    "appleYear": null,
    "discogsYear": 1999,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1999,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2362,7 +1953,7 @@
    "appleYear": null,
    "discogsYear": 2009,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2009,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2374,7 +1965,7 @@
    "appleYear": null,
    "discogsYear": 1994,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1994,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2386,8 +1977,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1975,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Anthony Braxton",
@@ -2397,7 +1989,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2409,7 +2001,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2421,8 +2013,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2009,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Franz Schubert & Valery Afanassiev",
@@ -2432,7 +2025,7 @@
    "appleYear": null,
    "discogsYear": 1986,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": null
   },
   {
@@ -2443,8 +2036,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2012,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Christian Scott aTunde Adjuah",
@@ -2454,8 +2048,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2003,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Christian Scott aTunde Adjuah",
@@ -2465,8 +2060,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2011,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Cecil Taylor",
@@ -2476,7 +2072,7 @@
    "appleYear": null,
    "discogsYear": 1966,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1966,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2488,7 +2084,7 @@
    "appleYear": null,
    "discogsYear": 1983,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1983,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2500,7 +2096,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2512,7 +2108,7 @@
    "appleYear": null,
    "discogsYear": 1977,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1977,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2524,7 +2120,7 @@
    "appleYear": null,
    "discogsYear": 1981,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1981,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2536,7 +2132,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2548,7 +2144,7 @@
    "appleYear": null,
    "discogsYear": 1979,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1979,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2560,7 +2156,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2583,7 +2179,7 @@
    "appleYear": null,
    "discogsYear": 1981,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1981,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2595,7 +2191,7 @@
    "appleYear": null,
    "discogsYear": 1991,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1991,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2607,7 +2203,7 @@
    "appleYear": null,
    "discogsYear": 1979,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1979,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2619,7 +2215,7 @@
    "appleYear": null,
    "discogsYear": 1997,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1997,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2631,7 +2227,7 @@
    "appleYear": null,
    "discogsYear": 1989,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1989,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2676,7 +2272,7 @@
    "appleYear": null,
    "discogsYear": 1969,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1969,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2721,7 +2317,7 @@
    "appleYear": null,
    "discogsYear": 1968,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1968,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2733,7 +2329,7 @@
    "appleYear": null,
    "discogsYear": 1976,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1976,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2745,7 +2341,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2757,7 +2353,7 @@
    "appleYear": null,
    "discogsYear": 1951,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1951,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2769,7 +2365,7 @@
    "appleYear": null,
    "discogsYear": 1985,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1985,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -2792,19 +2388,8 @@
    "appleYear": 2008,
    "discogsYear": 1989,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1999
-  },
-  {
-   "artist": "John Carpenter",
-   "album": "Christine",
-   "pool": "seed",
-   "mbYear": 1990,
-   "appleYear": 1983,
-   "discogsYear": 1984,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1990
   },
   {
    "artist": "Bobby V.",
@@ -2814,8 +2399,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2005,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "가리온",
@@ -2825,8 +2411,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 2010,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "The J.B.’s",
@@ -2836,7 +2423,7 @@
    "appleYear": 2004,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1979
   },
   {
@@ -2847,7 +2434,7 @@
    "appleYear": 1990,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1969
   },
   {
@@ -2858,7 +2445,7 @@
    "appleYear": 2014,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1979
   },
   {
@@ -2869,19 +2456,8 @@
    "appleYear": 2006,
    "discogsYear": 1972,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1978
-  },
-  {
-   "artist": "The Temptations",
-   "album": "The Temptations",
-   "pool": "seed",
-   "mbYear": 1981,
-   "appleYear": 1965,
-   "discogsYear": 1964,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1981
   },
   {
    "artist": "The Supremes",
@@ -2891,7 +2467,7 @@
    "appleYear": 1966,
    "discogsYear": 1962,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1975
   },
   {
@@ -2902,41 +2478,8 @@
    "appleYear": 2021,
    "discogsYear": 1958,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1976
-  },
-  {
-   "artist": "Carla Thomas",
-   "album": "Gee Whiz",
-   "pool": "seed",
-   "mbYear": 1961,
-   "appleYear": 2008,
-   "discogsYear": 1960,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1961
-  },
-  {
-   "artist": "Candi Staton",
-   "album": "Hallelujah Anyway",
-   "pool": "seed",
-   "mbYear": 2010,
-   "appleYear": 2002,
-   "discogsYear": 2012,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 2010
-  },
-  {
-   "artist": "Terry Callier",
-   "album": "The New Folk Sound of Terry Callier",
-   "pool": "seed",
-   "mbYear": 1965,
-   "appleYear": 1968,
-   "discogsYear": 1966,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1965
   },
   {
    "artist": "The Manhattans",
@@ -2946,30 +2489,8 @@
    "appleYear": 1995,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1976
-  },
-  {
-   "artist": "Candi Staton",
-   "album": "Candi",
-   "pool": "seed",
-   "mbYear": 1974,
-   "appleYear": 1995,
-   "discogsYear": 1972,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1974
-  },
-  {
-   "artist": "Joe Tex",
-   "album": "I Gotcha",
-   "pool": "seed",
-   "mbYear": 1972,
-   "appleYear": 2021,
-   "discogsYear": 1971,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1972
   },
   {
    "artist": "Booker T. & the MG’s",
@@ -2979,19 +2500,8 @@
    "appleYear": 1991,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1969
-  },
-  {
-   "artist": "Betty Wright",
-   "album": "Betty Wright",
-   "pool": "seed",
-   "mbYear": 1981,
-   "appleYear": 2011,
-   "discogsYear": 1978,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1981
   },
   {
    "artist": "Bobby Womack",
@@ -3001,19 +2511,8 @@
    "appleYear": 1993,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1998
-  },
-  {
-   "artist": "Candi Staton",
-   "album": "Stand Up and Be a Witness",
-   "pool": "seed",
-   "mbYear": 2009,
-   "appleYear": 1990,
-   "discogsYear": 1989,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 2009
   },
   {
    "artist": "The Beatles",
@@ -3023,20 +2522,8 @@
    "appleYear": 1968,
    "discogsYear": 2009,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 2000
-  },
-  {
-   "artist": "David Bowie",
-   "album": "Blackstar",
-   "pool": "hall",
-   "mbYear": null,
-   "appleYear": 2016,
-   "discogsYear": 2015,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 2015,
-   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Big Star",
@@ -3046,7 +2533,7 @@
    "appleYear": null,
    "discogsYear": 1987,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1987,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3058,7 +2545,7 @@
    "appleYear": null,
    "discogsYear": 1979,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1979,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3070,7 +2557,7 @@
    "appleYear": null,
    "discogsYear": 2009,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2009,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3082,7 +2569,7 @@
    "appleYear": null,
    "discogsYear": 1970,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1970,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3094,7 +2581,7 @@
    "appleYear": null,
    "discogsYear": 1998,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1998,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3110,39 +2597,6 @@
    "currentValue": null
   },
   {
-   "artist": "Mr. Fingers",
-   "album": "Can You Feel It",
-   "pool": "hall",
-   "mbYear": 1998,
-   "appleYear": 2001,
-   "discogsYear": 1986,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1998
-  },
-  {
-   "artist": "Goblin",
-   "album": "Suspiria",
-   "pool": "hall",
-   "mbYear": 1977,
-   "appleYear": 2017,
-   "discogsYear": 1976,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1977
-  },
-  {
-   "artist": "John Carpenter",
-   "album": "Halloween",
-   "pool": "hall",
-   "mbYear": 1979,
-   "appleYear": 2018,
-   "discogsYear": 1981,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1979
-  },
-  {
    "artist": "尾島由郎",
    "album": "Une Collection des Chaînons I: Music for Spiral",
    "pool": "pearl",
@@ -3150,7 +2604,7 @@
    "appleYear": null,
    "discogsYear": 1988,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1988,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3162,8 +2616,9 @@
    "appleYear": 1982,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1982,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Yutaka Hirose",
@@ -3173,7 +2628,7 @@
    "appleYear": null,
    "discogsYear": 1986,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1986,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3185,7 +2640,7 @@
    "appleYear": null,
    "discogsYear": 1987,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1987,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3197,7 +2652,7 @@
    "appleYear": null,
    "discogsYear": 1987,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1987,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3209,7 +2664,7 @@
    "appleYear": 2019,
    "discogsYear": null,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1975
   },
   {
@@ -3220,7 +2675,7 @@
    "appleYear": null,
    "discogsYear": 2014,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2014,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3243,9 +2698,8 @@
    "appleYear": 1975,
    "discogsYear": 2002,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 2002,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 2002
   },
   {
    "artist": "Mor Thiam",
@@ -3255,7 +2709,7 @@
    "appleYear": null,
    "discogsYear": 1973,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1973,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3267,7 +2721,7 @@
    "appleYear": null,
    "discogsYear": 2013,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2013,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3279,7 +2733,7 @@
    "appleYear": null,
    "discogsYear": 2013,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2013,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3291,8 +2745,9 @@
    "appleYear": null,
    "discogsYear": null,
    "priorVerdict": "check-loose",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1975,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Gila",
@@ -3302,19 +2757,8 @@
    "appleYear": 2025,
    "discogsYear": 1959,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1967
-  },
-  {
-   "artist": "Janko Nilovic",
-   "album": "Rythmes Contemporains",
-   "pool": "pearl",
-   "mbYear": 1973,
-   "appleYear": 2000,
-   "discogsYear": 1974,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1973
   },
   {
    "artist": "Caedmon",
@@ -3324,18 +2768,7 @@
    "appleYear": 2002,
    "discogsYear": 1978,
    "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1994
-  },
-  {
-   "artist": "Stone Angel",
-   "album": "Stone Angel",
-   "pool": "pearl",
-   "mbYear": 1994,
-   "appleYear": 1974,
-   "discogsYear": 1975,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
+   "verdict": "split",
    "currentValue": 1994
   },
   {
@@ -3346,8 +2779,9 @@
    "appleYear": 1970,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1970,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "Kim Jung Mi",
@@ -3357,8 +2791,9 @@
    "appleYear": 1968,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1968,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "San Ul Lim",
@@ -3390,8 +2825,9 @@
    "appleYear": 1976,
    "discogsYear": null,
    "priorVerdict": "miss",
-   "verdict": "three-way-split",
-   "currentValue": null
+   "verdict": "single-source",
+   "currentValue": 1976,
+   "note": "單一來源，已寫入但建議抽驗"
   },
   {
    "artist": "非常階段",
@@ -3401,7 +2837,7 @@
    "appleYear": null,
    "discogsYear": 1984,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1984,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3413,9 +2849,8 @@
    "appleYear": 1980,
    "discogsYear": 2017,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 2017,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 2017
   },
   {
    "artist": "Boredoms",
@@ -3425,20 +2860,8 @@
    "appleYear": null,
    "discogsYear": 1989,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1989,
-   "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Ornette Coleman",
-   "album": "Free Jazz: A Collective Improvisation",
-   "pool": "heresy",
-   "mbYear": null,
-   "appleYear": 1961,
-   "discogsYear": 1964,
-   "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1964,
    "note": "單一來源，已寫入但建議抽驗"
   },
   {
@@ -3449,9 +2872,8 @@
    "appleYear": 1965,
    "discogsYear": 1992,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
-   "currentValue": 1992,
-   "note": "單一來源，已寫入但建議抽驗"
+   "verdict": "split",
+   "currentValue": 1992
   },
   {
    "artist": "Ground Zero",
@@ -3461,7 +2883,7 @@
    "appleYear": null,
    "discogsYear": 1996,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1996,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3473,7 +2895,7 @@
    "appleYear": null,
    "discogsYear": 1978,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1978,
    "note": "單一來源，已寫入但建議抽驗"
   },
@@ -3485,20 +2907,9 @@
    "appleYear": null,
    "discogsYear": 2000,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 2000,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Luc Ferrari",
-   "album": "Presque Rien",
-   "pool": "heresy",
-   "mbYear": 1995,
-   "appleYear": 1998,
-   "discogsYear": 1970,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1995
   },
   {
    "artist": "Pierre Henry",
@@ -3508,20 +2919,9 @@
    "appleYear": null,
    "discogsYear": 1967,
    "priorVerdict": "miss",
-   "verdict": "discogs-only",
+   "verdict": "single-source",
    "currentValue": 1967,
    "note": "單一來源，已寫入但建議抽驗"
-  },
-  {
-   "artist": "Bernard Parmegiani",
-   "album": "De Natura Sonorum",
-   "pool": "heresy",
-   "mbYear": 1975,
-   "appleYear": 2000,
-   "discogsYear": 1978,
-   "priorVerdict": "check",
-   "verdict": "three-way-split",
-   "currentValue": 1975
   }
  ]
 }

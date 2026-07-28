@@ -1,0 +1,18 @@
+{
+ "version": 1,
+ "note": "發行年份的人工覆寫，優先於 MusicBrainz／Apple／Discogs 的自動判定。直接寫藝人與專輯原名即可，鍵值由腳本正規化，不必自己處理大小寫或分隔符。主要用途是『同名不同團』——各資料庫會一起配到另一個團，三方投票抓不出來（錯的那兩方會互相背書）。判別依據：Apple 的藝人身份最可靠（collectionId 是我們自己比對過的那張碟），再對照 Discogs 的壓片年份分佈——真正的原版會有一整批再版壓片，同名老團通常只有零星一兩片。注意反例：老盤原版登錄數本來就少（Mulatu《Mulatu of Ethiopia》1972 只有 1 片、2017 再版有 7 片），所以不能單看壓片數多寡自動改值，一律人工確認後才寫進這裡。",
+ "entries": [
+  {
+   "artist": "Placebo",
+   "album": "Placebo",
+   "year": 1996,
+   "reason": "MusicBrainz 與 Discogs 都配到比利時同名爵士搖滾團（1973 CBS／1974 Harvest 各 1 片）。英國 Placebo 的同名首張是 1996 EMI，Discogs 有 26 片壓片、Apple 亦為 1996。"
+  },
+  {
+   "artist": "Jungle",
+   "album": "Jungle",
+   "year": 2014,
+   "reason": "MusicBrainz 配到 60 年代同名團（1969 僅 1 片）。英國 Jungle 2013 年出道，同名首張 2014，Discogs 主流壓片 14 片、Apple 亦為 2014。"
+  }
+ ]
+}
