@@ -2263,6 +2263,9 @@
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
     // 離開搜尋專輯頁就停試聽（該頁沒有唱盤機介面可手動停）；同樣淡出不硬切
     if (currentView === 'album-search' && tab !== 'album-search') window.DipPlayer?.stop({ fade: true });
+    // 抽卡結果頁的試聽同理：返回首頁／切去別的分頁時要跟著收掉，否則音樂會一直跑。
+    // gpStopPreview 內部會檢查 gpPreviewStarted，沒在播就不動作。
+    if (tab !== currentView) gpStopPreview({ fade: true });
     currentView = tab;
     // tab 高亮
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
@@ -3966,8 +3969,10 @@ ${seenList}
     }
   });
 
-  function gpStopPreview() {
-    if (gpPreviewStarted) { window.DipPlayer?.stop(); gpPreviewStarted = false; }
+  // fade：使用者主動停下（按暫停鈕、返回首頁）走 1.5 秒淡出，不要硬切。
+  // 換下一張卡時不淡出——反正新的 playAlbum 馬上接手，淡出只會拖慢起播。
+  function gpStopPreview({ fade = false } = {}) {
+    if (gpPreviewStarted) { window.DipPlayer?.stop({ fade }); gpPreviewStarted = false; }
   }
 
   // 播放器常駐掛載（隱藏、掛 body，不隨結果頁重繪銷毀）。
@@ -3995,7 +4000,7 @@ ${seenList}
   function gpPlayPreview(manual = true) {
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
-    if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview(); return; }
+    if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview({ fade: true }); return; }
     gpEnsurePlayer();
     gpPreviewStarted = true;
     gpPreviewManual = manual;

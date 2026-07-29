@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-27｜抽卡試聽：返回首頁沒收掉＋暫停鈕硬切，兩處都修
+
+- Repo：`dip-vinyl-shop`
+- 店主回報兩個問題（抽卡結果頁，即「直接來一張」／「類型挑片」／「心情選歌」共用的
+  `gpPlayPreview` 路徑，非對戰頁）：
+  1. 試聽播放中按「← 返回首頁」，音樂**繼續在背景跑**，沒有跟著收掉。
+  2. 播放中按暫停鈕，音樂**突然停止**（硬切），沒有淡出。
+- 根因：
+  1. `setActiveTab()` 原本只在離開 `album-search` 時停播放器，抽卡結果頁
+     （`currentView='genre'`）完全沒有對應處理——`genreModal` 只是被
+     `classList.remove('open')` 收起來，播放器仍在跑。返回首頁走的正是 `setActiveTab('home')`。
+  2. `gpStopPreview()` 呼叫的是無參數的 `stop()`，等同 `{fade:false}` 硬切。
+- 改動（都在 `index.html`，播放器端不用動）：
+  - `gpStopPreview()` 加上 `{ fade = false }` 參數並傳給 `DipPlayer.stop()`。
+  - 暫停鈕（`gpPlayPreview()` 內的 toggle 分支）改傳 `{ fade: true }`。
+  - `setActiveTab()` 增加 `if (tab !== currentView) gpStopPreview({ fade: true })`，
+    離開抽卡結果頁（返回首頁或切去任何其他分頁）都會淡出收掉。
+  - **刻意不改**「換下一張卡」的兩處（抽卡流程開頭的 `gpStopPreview()`）：
+    那裡緊接著就有新的 `playAlbum` 接手，淡出只會拖慢起播。
+- 主要檔案：`index.html`
+- 驗證：桌機實測「直接來一張」，攔截 GainNode 取樣——
+  暫停鈕 0.454→0.411→…→0 走滿 1.5 秒；返回首頁 0.457→0.415→…→0 走滿 1.5 秒且回到 home；
+  「再一張（3）」換卡時 gain 全程維持 0.5 不淡出、直接接手新曲（符合預期）；
+  回頭複測搜尋專輯關詳情仍為 0.45→…→0 正常淡出，未被本次改動影響；console 無錯誤。
+
 ### 2026-07-27｜卡池發行年份回填：取數腳本與 50 張抽樣驗證（dip-vinyl-shop）
 
 - 目標是在藝人／專輯下面多顯示四位數發行年。新增 `scripts/build-release-years.mjs`：
