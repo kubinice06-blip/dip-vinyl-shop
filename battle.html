@@ -837,10 +837,11 @@ const poolReady = (async()=>{
     ]);
     if(Array.isArray(seed) && seed.length){
       POOL.length = 0;
-      for(const [artist,album,c,o,a] of seed) POOL.push({artist,album,classic:c,obscurity:o,accessibility:a,ace:null});
+      // seed 第 7 欄／apex 第 4 欄是發行年份（可能沒有，缺的就是 undefined，顯示端自己略過）
+      for(const [artist,album,c,o,a,g,year] of seed) POOL.push({artist,album,classic:c,obscurity:o,accessibility:a,year,ace:null});
     }
     const aces = [];
-    for(const t of ['hall','pearl','heresy']) for(const [artist,album] of (apex&&apex[t])||[]) aces.push({artist,album,...ACE_STATS[t],ace:t});
+    for(const t of ['hall','pearl','heresy']) for(const [artist,album,g,year] of (apex&&apex[t])||[]) aces.push({artist,album,year,...ACE_STATS[t],ace:t});
     if(aces.length){ ACES.length = 0; ACES.push(...aces); }
   }catch(e){ /* 讀不到 → 用內建備援池，照樣能玩 */ }
 })();
