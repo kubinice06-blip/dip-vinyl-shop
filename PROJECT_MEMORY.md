@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜desc-restyle w2-024 上線：敏感題材條款進管線提示層，Opus 5 實測零縮手
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 進度：wave2 累計 **1,970 / 6,980（28.2%）**，003–024 全數上線。
+- 背景：店主指示確保管線不再有「規避敏感字詞、刪減故事」。原計畫本批用 Fable 當 hook／寫作
+  主引擎驗證，店主中途改令 **hook 與寫作照舊全用 Opus 5**，改以提示條款解決。
+  （與同日另一會話的「政治正確回溯清查」四輪互補：那邊修既有卡，這邊管新批產線。）
+- **敏感題材條款（w2-024 起寫入 hook 與寫手提示）**：爭議／失蹤／逝世／成癮／訴訟是招牌事實，
+  **必須**寫進主故事鏈，不得因敏感刪減；僅三條限制（有來源、不逐字引歌詞、逝者克制），並明寫
+  「**克制是指不渲染細節，不是指跳過事實**」＋逐張點名重點卡。023 的「只寫作品製作面」
+  防禦性條款廢止。
+- 實測（本批刻意當試金石）：Manics《Journal for Plague Lovers》Richey Edwards 手稿→失蹤→
+  宣告死亡全時間線、MJ《Invincible》與 Sony 決裂並公開譴責 Mottola、Stones《Black and Blue》
+  看板抵制全鏈、Whitney 婚變毒癮復出、Gaga 姑姑性侵創傷——**全數寫滿，Opus 5 零縮手、
+  內容過濾器零觸發**。hook 品管與事實對照核查**首度雙零標記**；寫手審稿僅修 2 處
+  （Common 指代斷裂、Cash 結尾重述 hook）。
+- 事故：研究層首發五組因 Claude Code 程序中斷全滅（檔案未存活），重發時在提示加
+  「每完成 3 張先存檔一次」防護。
+- 驗證：QA 標記 0、`wrangler kv bulk put` Success、線上抽驗 5/5 KV-HIT 文字一致
+  （抽驗含 MJ《Invincible》與 J. Cole 敏感卡）。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/w2-024-{final,kv}.json`。
+- 本次依店主指示，全部完成後執行排程關機。
+
 ### 2026-07-31｜第四輪（結案）：三張懸案定案，政治正確回溯清查全部完成
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
