@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜desc-restyle w2-025 上線：攔到研究層 key 損壞事故，新增 key 對卡單硬檢查
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 進度：wave2 累計 **2,020 / 6,980（28.9%）**，003–025 全數上線。全程 Opus 5（研究層 Sonnet）。
+- **事故與新防線（本批最重要的一件事）**：研究層 a 組整組漏掉 `desc2:` 前綴、b 組更嚴重——
+  key 只剩藝人名，`|專輯` 整段消失（`"dmx"`、`"foo fighters"`）。這 20 張若照原樣上線，
+  會在 KV 建出 20 個垃圾鍵，真正的卡片一張都不會更新，**而且線上抽驗驗不出來**：
+  抽驗是拿 final 檔的 key 去查，錯 key 查錯 key 一樣回 `KV-HIT` 且文字一致。
+  舊檢查只比對「hook key 與研究稿 key 是否一致」，兩邊一起錯就漏抓。
+  → **新增硬檢查：每批 build final 前必須驗「所有 key 都存在於該批 cards.json」**，
+  並在寫手提示加「key 必須從輸入檔逐字複製」。修復採「依卡單同位置回填」，
+  但腳本先以**藝人名正規化比對**確認對應無誤才允許寫入，任一張對不上就中止（20 張全數通過）。
+- 敏感題材（024 條款持續生效，本批同樣零縮手）：2Pac《Better Dayz》身後發行與素材重製、
+  Selena《Dreaming of You》遇害與四個月後遺作奪冠、Kate Bush《The Sensual World》的 Joyce
+  授權完整鏈（誤判公共領域→遭拒→改寫→2011 獲准）、Chic 對〈Rapper's Delight〉提告與和解、
+  Alice Cooper 的 PMRC 審查、Wu-Tang 的 ODB 受刑人電話錄音、Jarre 的挑戰者號題獻。
+  **反向禁令也守住**：DMX 2021 辭世、Brand New 2017 爭議都晚於各自專輯，全篇未提。
+- 研究層自查更正兩處：Motörhead《Snake Bite Love》的 Steve Vai 為誤傳（製作人是 Howard Benson）、
+  Depeche Mode《Some Great Reward》錄音地是**西柏林 Hansa**，不是我下指示時誤寫的漢堡。
+- hook 品管與事實對照**雙零標記**（連續第二批）；寫手審稿修 4 處（語序、指代、兩處重述 hook）。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/w2-025-{final,kv}.json`。
+- 驗證：QA 標記 0、`wrangler kv bulk put` 成功、線上抽驗 5/5，另針對修復過與含特殊連字號的
+  key（wu‐tang／jean‐michel jarre／a‐ha／run‐d.m.c./foo fighters／selena）加驗 6/6 全部 KV-HIT 一致。
+
 ### 2026-07-31｜desc-restyle w2-024 上線：敏感題材條款進管線提示層，Opus 5 實測零縮手
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
