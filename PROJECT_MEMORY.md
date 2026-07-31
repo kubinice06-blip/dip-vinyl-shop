@@ -1420,6 +1420,12 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-28｜desc-restyle w2-014 上線＋管線模型裁定：hook／寫手層改用 Opus 5（累計 1,420/6,980）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：額度重置後跑完 w2-014（2010s 流行／獨立／迷幻 50 張，Taylor Swift ×4、Lana ×3、Tame Impala ×3 等），這是**第一個 hook＋寫手全用 Opus 5 的批次**：hook 五組品管一次全過（全波首見）、寫手兩檔 QA 一次歸零且主會話審稿零修，是整個 wave2 最乾淨的一批。店主據此裁定：**hook 與寫作層改用 Opus 5（額度為 Fable 一半、品質實測持平或更佳），研究層維持 Sonnet**；已寫入 `desc-restyle/RUNBOOK.md`。關鍵經驗：Opus 寫手提示必須保留「字數最重要＋寫完自己數、超 260 先砍再存檔」段落，這是其字數紀律優於前期 Sonnet 寫手的主因。
+- 主要檔案：`desc-restyle/batches/w2-014-{final,kv}.json`、`batches/hooks/w2-014-hooks-*.json`、`desc-restyle/RUNBOOK.md`、`desc-restyle/progress.json`
+- 驗證：QA 兩檔皆「標記 0」；線上抽驗 5 張全 `OK KV-HIT` 且與 final 逐字一致；至此 005–014 十批共 500 張全數上線，wave2 累計 1,420/6,980。
+
 ### 2026-07-27｜desc-restyle wave2 量產：批次 005–013 共 450 張簡介改寫上線（累計 1,370/6,980）
 - Repo：`desc-restyle`（工具鏈與批次檔）；KV 為線上資料面，`dip-vinyl-shop` 本次僅更新本備忘錄
 - 改動：延續路線一（研究快查＋寫手一次到位）跑完 w2-005～w2-013 共九批，每批 50 張，全部經 `qa-check-research.mjs` 標記歸零、主會話逐張審稿、`wrangler kv bulk put` 上線並線上抽驗五張確認 `X-Cache: KV-HIT` 且文字與 final 完全一致。批次主題依序為：005 八〇年代流行／後龐克／nu-metal、006 爵士經典、007 靈魂放克、008 R&B／neo-soul、009 黃金年代嘻哈、010 trip hop／當代嘻哈、011 嘻哈與 UK grime／IDM、012 電子舞曲／後搖、013 北歐電子／流行天后。
