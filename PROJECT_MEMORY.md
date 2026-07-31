@@ -1,5 +1,31 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜封殺條款回溯清查：全 wave2 掃 note，12 張補回專輯發行前的事件
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 承上一則的題材裁定，回頭掃 `batches/input/w2-*-writer-*.json` 全部 48 檔（約 1,150 張卡）的 note，
+  找「封殺式措辭（不著墨／一律不寫／零觸碰…）」命中 **628 句**，再依店主給的兩條篩選：
+  **①用了封殺式措辭 ②該事件年份 ≤ 專輯發行年份**，篩出 **12 張**改寫。
+  事件發生在專輯之後的一律維持現狀（Cobain 1994 之於《Bleach》1989、Dimebag 2004 之於
+  《Far Beyond Driven》1994、SOPHIE 2021、Jesse Lacey 2017、Whitney、Sinéad… 共 47 句）。
+- 改寫的 12 張與補回的事件：Temple of the Dog／Andrew Wood 1990 逝世（整張就是悼念他）、
+  The Mars Volta《De-Loused》／Julio Venegas 1996 與 Jeremy Ward 發行前一個月離世、
+  《Frances the Mute》／Ward 死因、Tricky《Maxinquaye》／生母輕生（專輯名就是她）、
+  J Dilla《Donuts》／病名 TTP 併發狼瘡、Anthrax《Among the Living》／題獻對象 Cliff Burton 1986 事故、
+  Elton John《Jump Up!》／Lennon 1980 遇害、Nujabes《Spiritual State》／2010 車禍、
+  Al Green《Full of Fire》／1974 事件與受任牧師的因果、Morrissey《Maladjusted》與《Low in High School》／
+  政治爭議、Dizzee Rascal《Showtime》／2003 年 Ayia Napa 遇刺。
+- **規則①「事實要有來源」沒有跟著移除**：10 張先發背景代理補查雙來源才改寫，2 張（Tricky、Donuts）
+  的事實原本就在 facts 表、只是被 note 擋掉。Dizzee 那筆前一輪標「未查證」，這次找到 NME 2003 年 7 月
+  同期報導才寫；攻擊者身分只有單方說法，不寫。
+- **克制的界線**：自殺類只寫事實不寫方式（Venegas 寫「輕生離世」不寫細節），死因寫病名或事故類型
+  但不寫傷勢；Al Green 那筆不描寫經過、不把當事女子工具化；Morrissey 兩張只陳述已發生的演出、歌詞
+  與當時媒體反應，不下「是否構成種族主義」這類定性判斷。
+- 補查到的事實已回寫進對應的 writer input，並在原 note 註記「封殺條款作廢」，保持記錄真實。
+- 主要檔案：`desc-restyle/batches/research/fix-events-{a,b}.json`、`batches/fix-events-{final,kv}.json`、
+  同步更新 `w2-{004,010,016,018,020,021,022}-{final,kv}.json` 與各卡 writer input、`progress.json`。
+- 驗證：QA 標記 0；`wrangler kv bulk put` Success；**12 張全部線上驗證 KV-HIT 且文字一致（12/12）**。
+
 ### 2026-07-31｜店主裁定：簡介題材沒有禁區，14 張被自我審查掉招牌事實的卡重跑
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
