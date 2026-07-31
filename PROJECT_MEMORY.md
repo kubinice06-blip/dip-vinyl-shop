@@ -1,5 +1,53 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜三件修補：015–020 補空格 50 張、024 兩張改句、001–020 解除過度克制 5 張
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+
+**① 補 015–020 中英數字空格（50 張）**
+- 實際張數：015:1／016:19／017:0／018:24／019:4／020:2，與店主實測一致。根因是 hook 層當初沒補空格，
+  寫手依「hook 一字不改」原封照抄。
+- **關鍵判斷：以 `final.json` 為線上真值直接改，沒有從 output 重建**——016／018／020 有 10 張
+  final≠output，那是同日回溯清查改過的內容，若重建會把那些修正洗掉。同時同步修 input 的 hook
+  與 output 的 desc，避免日後重建回歸。補完最長 278 字，未破 280。
+- 驗證：六批 QA 標記 0；全批不變量檢查「final 內不得再有中文緊貼英數字」六批皆 0；
+  五批 `bulk put` Success（017 無異動）；線上抽驗 18/18 KV-HIT 一致。
+
+**② 修 024 兩張句子不通**
+- Carole King《Rhymes & Reasons》：破句「比這張史上最暢銷專輯之一」改為「沿用那張史上最暢銷專輯之一的
+  原班人馬」，片語式短句「鋼琴主導的民謠搖滾寫作。」併入 AllMusic 那句（253 字）。
+- Ella Fitzgerald《Like Someone in Love》：刪掉重述 hook 的「名字只出現這回」，懸空的 Songbook 句改成
+  「這批錄音落在她龐大的 Songbook 系列企畫進行期間」（170 字，thin 卡）。
+- 我第一版寫太長（294／188），字數檢查擋下未寫檔，壓合格才落地。QA 0、線上驗證 2/2。
+
+**③ 解除 001–020 的過度克制（5 張）**
+- 掃法：note 的封殺／克制條款 × 敏感題材 → 129 張；再篩「正文完全無敏感事實痕跡」→ 68 張；
+  逐張人工判「事件年份 ≤ 專輯年份」→ 實際需改 **5 張**。
+- 改的 5 張（原則是把空心委婉語換成中性一句，不展開細節）：
+  - **Johnny Cash《At Folsom Prison》**：「事業與生活低潮」→ 補回藥物成癮（事實表本就載明）。
+  - **Billie Holiday《Lady in Satin》**：「健康狀況不穩」→ 補回肝硬化確診；護士撐坐細節仍不寫。
+  - **A Tribe Called Quest《We got it from here》**：原文只寫「未能親眼見到發行」等於沒交代死亡
+    → 補回 2016 年 3 月因糖尿病併發症離世。
+  - **Britney Spears《Blackout》**：補回「錄音那兩年始終是狗仔跟拍焦點、〈Piece of Me〉寫的正是
+    媒體檢視」——不碰健康、監護權、家庭。
+  - **Ariana Grande《Sweetener》**：補回 2017 曼徹斯特事件與 One Love Manchester 義演——
+    不寫傷亡、攻擊者、任何醫療心理描述。
+- **後兩張原事實表完全沒有來源**（研究層當初照「不著墨」指示根本沒查），因此另發研究補查，
+  來源存 `desc-restyle/batches/research/fix-context-001-020.json`，並把 facts **回寫進 writer input**
+  ——否則 QA 的零編造防線會直接擋下（實測確實擋了「One Love Manchester」與「2017」）。
+- 其餘 63 張維持現狀，三類：事件晚於專輯（Nirvana／Soundgarden／STP／Deftones／Pantera／Type O／
+  Mac Miller／Lil Peep／Crystal Castles／Brand New／Ryan Adams／Peter Tosh／Rush／Glenn Gould…）、
+  正文其實已寫（Joy Division、Libertines、Gojira、Sublime、Temple of the Dog、Tricky、Mars Volta、
+  Bob Marley、J Dilla、Morrissey《Low in High School》、Neil Young《Trans》…）、
+  當事人隱私或未證實指控（Panic! at the Disco 家庭創傷、Sheryl Crow 的 O'Brien 之死說法）。
+- 驗證：四批 QA 標記 0，五張線上抽驗 5/5 KV-HIT 一致。
+
+**發現但未處理（待店主裁定）**：中英空格缺漏不只 015–020，w2-009 等早期批次同樣有
+「睽違18年」「135000 張」這類情形；本輪僅依指定範圍處理 015–020，001–014 未回溯。
+
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/w2-0{01,06,09,13,15,16,18,19,20,24}-{final,kv}.json`、
+  `desc-restyle/batches/research/fix-context-001-020.json`、對應 `batches/input`／`batches/output` 檔。
+
 ### 2026-07-31｜desc-restyle w2-025 上線：攔到研究層 key 損壞事故，新增 key 對卡單硬檢查
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
