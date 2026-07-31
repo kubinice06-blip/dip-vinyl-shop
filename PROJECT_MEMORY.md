@@ -1420,6 +1420,14 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-28｜卡池清理：移除四張查無對應的卡（seed 7558→7556、apex pearl 109→107）
+- Repo：`dip-vinyl-shop`
+- 改動：店主裁定移除查證後確認不存在或無法對應的卡片。`seed_cards.json` 移除 `["Genesis","Limbo"]`（官方目錄無此專輯，僅 1992 bootleg 與 1969 曲目〈In Limbo〉同名）與 `["Ennio Morricone","Ennio Morricone"]`（確認無同名專輯，原對應多張同名授權合輯）；`apex_pool.json` 的 pearl 分類移除 `["Michael A. Grant","Michael A. Grant"]`（查無任何紀錄）與 `["San Ul Lim","The Mountain Hut"]`（查無對應專輯）。四張卡在 KV 的 `desc2:` 簡介一併刪除，避免孤兒資料。
+  - **保留裁定**：`["Weezer","Weezer"]` 確認鎖定 1994 年藍色專輯（該團有六張同名專輯，此為店主指定）。
+  - **待裁定**：`apex_pool.json` pearl 仍有 `["Alexander Robotnick","Kind of... Robotnick",...,2024]`——此片**確實存在**但性質是 2024 年選輯，與前三張的「查無」不同類，依卡池排除合輯的既有原則可能該移除，保留待店主確認。
+- 主要檔案：`seed_cards.json`、`apex_pool.json`
+- 驗證：兩檔 JSON 皆可解析、殘留字串掃描全數 false；KV 四鍵刪除後線上查詢 `X-Cache` 由 `KV-HIT` 轉為 `MISS`（回傳值為 worker 即時生成的備援，非舊資料）。卡池程式一律以檔案當下內容為準、未寫死張數，故無需同步改碼。
+
 ### 2026-07-28｜desc-restyle 第二輪：批次 015–020 共 300 張上線（累計 1,770/6,980）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：以全 Opus 管線（研究 Sonnet、hook＋寫手 Opus 5）跑完 w2-015～020 六批，每批 50 張，全部 QA 標記歸零、逐張審稿、上 KV 並線上抽驗 5/5。批次主題：015 獨立搖滾／夢幻流行／雷鬼、016 世界音樂／金屬／前衛、017 emo／民謠／創作女聲、018 混合批（PJ Harvey ×4、Kate Bush、Sinéad）、019 深冷門混合批、020 深目錄混合批。
