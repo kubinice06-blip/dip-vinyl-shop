@@ -1420,6 +1420,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-07-28｜desc-restyle 第二輪：批次 015–020 共 300 張上線（累計 1,770/6,980）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：以全 Opus 管線（研究 Sonnet、hook＋寫手 Opus 5）跑完 w2-015～020 六批，每批 50 張，全部 QA 標記歸零、逐張審稿、上 KV 並線上抽驗 5/5。批次主題：015 獨立搖滾／夢幻流行／雷鬼、016 世界音樂／金屬／前衛、017 emo／民謠／創作女聲、018 混合批（PJ Harvey ×4、Kate Bush、Sinéad）、019 深冷門混合批、020 深目錄混合批。
+  - **品質顯著提升**：六批共 300 張，寫手輸出僅 3 處需修（前一輪同量約 30 處）。015 前半、016 後半、017 兩檔、018 兩檔、019 兩檔、020 兩檔皆審稿零修。
+  - **審稿抓到的實質錯誤**：Bob Marley《Natty Dread》把 Trench Town（金斯敦貧民區）誤譯為「千里達鎮」——錯在研究層、寫手忠實照抄、QA 抓不到，已溯源修正研究稿與 input 檔；PJ Harvey《Stories from the City》hook 自行添加事實表沒有的「五角大廈仍在冒煙」，於 hook 品管階段攔下改寫；Paramore《Riot!》hook 用「全片」指整張專輯（禁用法）。
+  - **新增資料疑義（待店主裁定）**：`desc2:genesis|limbo` 查無此專輯（官方目錄無，僅 1992 bootleg 與 1969 年曲目〈In Limbo〉同名）；`desc2:ennio morricone|ennio morricone` 對應多張同名授權合輯無法鎖定版本。兩張皆已用**藝人／樂團層級保守簡介**上線（不提任何專輯specific資訊），比照 wave1 前例。另 `desc2:weezer|weezer` 已鎖定 1994 藍色專輯，屬假設待確認。
+  - **研究層自我修正三例**：Iron & Wine《Hen's Teeth》非稀有曲合輯而是 2026 全新錄音室專輯；Johnny Cash《Keep on the Sunny Side》實為 The Carter Family 專輯、Cash 僅特別來賓；Sigur Rós《Liminal Sleep》是睡眠環境音樂企劃非錄音室專輯。三張皆照實際性質誠實書寫。
+  - **額度事故（第三次）**：月額度於 020/021/022 進行中用罄，砍掉 8 個代理。再次驗證「先查檔案再重跑」：020 兩檔、022 研究五組全數存活直接沿用，021 writer-2 留有可刪修的初稿，實際損失僅一個寫手。
+- 主要檔案：`desc-restyle/batches/w2-015~020-{final,kv}.json`、`batches/{research,hooks,input,output}/*`、`desc-restyle/progress.json`
+- 驗證：六批 × `node qa-check-research.mjs` 全數「標記 0」；六批 × 線上抽驗 5 張皆 `OK KV-HIT` 且與 final 逐字相符。021 寫作中斷、022 研究完成待 hook、023/024 未開始，狀態與復工順序均記於 progress.json。
+
 ### 2026-07-28｜desc-restyle w2-014 上線＋管線模型裁定：hook／寫手層改用 Opus 5（累計 1,420/6,980）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：額度重置後跑完 w2-014（2010s 流行／獨立／迷幻 50 張，Taylor Swift ×4、Lana ×3、Tame Impala ×3 等），這是**第一個 hook＋寫手全用 Opus 5 的批次**：hook 五組品管一次全過（全波首見）、寫手兩檔 QA 一次歸零且主會話審稿零修，是整個 wave2 最乾淨的一批。店主據此裁定：**hook 與寫作層改用 Opus 5（額度為 Fable 一半、品質實測持平或更佳），研究層維持 Sonnet**；已寫入 `desc-restyle/RUNBOOK.md`。關鍵經驗：Opus 寫手提示必須保留「字數最重要＋寫完自己數、超 260 先砍再存檔」段落，這是其字數紀律優於前期 Sonnet 寫手的主因。
