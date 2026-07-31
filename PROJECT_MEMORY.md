@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜desc-restyle wave2：021／022／023 三批 150 張上線，產線加四支腳本與兩道新防線
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；實際產出在 `desc-restyle/`（非 git 追蹤）與 Worker KV。
+- 進度：wave2 累計 **1,920 / 6,980（27.5%）**，003–023 全數上線。三批的逐批細節記在
+  `desc-restyle/progress.json`，此處只記跨批結論。
+- **021（復工批）**：writer-1 重發（Opus 一次到位、QA 首輪 0 標記）；writer-2 沿用中斷前初稿改發
+  「純刪修」代理，21 張從 286–462 字壓到 171–240 且 hook 全部原封。**刪修代理最後被 API 內容過濾器
+  中斷，但檔案已完整存活**——再次驗證「先查 `batches/` 檔案再決定是否重跑」這條。審稿修 6 處。
+- **022**：hook 品管新增**「hook 對照研究事實表」自動核查**（比對 hook 內曲名／西文專名／年份是否
+  存在於 facts blob）。抓到 Stan Getz《West Coast Jazz》研究稿孤證「五個樂手全是東岸出身」
+  （樂手出身地實際分歧），主會話改軸為「拍片檔期順手把夜店同台樂手拉進棚」並在 note 禁寫岸別。
+  寫手審稿修 2 處：Dream Theater 憑空補上 John Petrucci（人對、但事實表沒有，零新事實防線攔下）、
+  DMX 身體整句重述 hook。
+- **023**：研究層 c 組（Morrissey／Nas／Iron Maiden）**被內容過濾器擋下且檔案未存活**，拆成兩個
+  5 張代理並加三條防護後重跑成功：只寫作品與製作面、不逐字引歌詞或爭議發言、每 2–3 張先存檔一次。
+  審稿抓到研究層年份錯誤：My Morning Jacket《Evil Urges》寫「2008 年葛萊美入圍」，但《In Rainbows》
+  得獎是 2009 年 2 月第 51 屆，**已溯源修正研究稿與寫作輸入檔**，簡介改為不寫年份。
+- **系統性破口（新發現）**：hook 層產出常漏「中文與英數字間半形空格」（「1982年」「第147名」），
+  寫手因「hook 一字不改」原封照抄。抽查已上線的 016–020，250 張中 51 張帶此問題。021 起改為
+  **寫手前先對 hook 跑 spacer、輸出稿再跑一次**；舊批次未回溯，待店主決定是否重刷。
+- 新增檔案（`desc-restyle/`）：`qa-check-hooks.mjs`（hook 自動品管，全形計字把半形折半、禁語、
+  引號整句包裹、note 主故事鏈箭頭、開頭雷同、半形標點只在貼中文時才算誤用）、
+  `merge-writer-input.mjs`（合併時自動把 facts 物件轉字串）、`build-final.mjs`（產 final＋kv 並擋
+  字數異常）、`fix-spacing.mjs`（中英數字補空格，預設 dry-run）。`qa-check-research.mjs` 的 hook
+  前綴比對改為忽略空格差異，配合 spacer 補丁。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/qa-check-hooks.mjs`、
+  `desc-restyle/merge-writer-input.mjs`、`desc-restyle/build-final.mjs`、`desc-restyle/fix-spacing.mjs`、
+  `desc-restyle/batches/w2-02{1,2,3}-{final,kv}.json`。
+- 驗證：三批各 50 張 `qa-check-research` 標記 0；`wrangler kv bulk put` 三次皆 Success；
+  線上抽驗各 5 張全部 `X-Cache: KV-HIT` 且文字與 final 完全一致（15/15）。
+
 ### 2026-07-27｜抽卡試聽：返回首頁沒收掉＋暫停鈕硬切，兩處都修
 
 - Repo：`dip-vinyl-shop`
