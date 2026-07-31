@@ -1,5 +1,34 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜店主裁定：簡介題材沒有禁區，14 張被自我審查掉招牌事實的卡重跑
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- **起因**：主會話為了閃 API 內容過濾器，在子代理提示裡自行加了「政治爭議／私生活／法律糾紛／
+  死因／成癮一律不寫」的限制。結果整張唱片最值得講的事實被寫掉——**Iron Maiden《Piece of Mind》
+  漏掉封面上被腦葉切除、鎖在精神病院裡的 Eddie**（那正是這張的招牌）、Nas《Life Is Good》的離婚
+  題材被寫成「個人生活變動」、Morrissey《California Son》只剩選曲、Steven Wilson〈Raider II〉沒
+  點名 Dennis Rader、Nina Simone 與 Ella Fitzgerald 兩張都被寫薄。店主退貨。
+- **裁定（已寫進 `RUNBOOK.md` 新增的 0b 節，優先於任何自訂防護）**：唱片史上的爭議、犯罪題材、
+  成癮、離婚、政治立場、封面爭議**全是可寫題材，往往就是招牌事實，一律照寫**。只保留三條限制：
+  ①事實要有來源；②不逐字引歌詞（版權）；③涉逝者與受害者語氣克制——**克制＝不獵奇、不渲染、
+  不消費，不是不准寫**，死因與事件本身平實寫出即可。遇過濾器中斷的正確處置是拆小批、聚焦作品面
+  （寫封面設定與歌曲題材來源，而非犯罪過程）、邊查邊存檔，**不是把題材拿掉**。
+- **重跑範圍 14 張**：w2-023 c 組 10 張＋Steven Wilson《Grace for Drowning》（021）、
+  Fleetwood Mac《Kiln House》、Carole King《Welcome Home》、J Dilla《Batch #2》。
+  重研究（3 agent）→ 重寫 hook（3 agent）→ 重寫作（2 agent）→ 覆寫 KV。
+- 重研究順帶糾正主會話提示裡的兩個錯誤：Alan Parsons 是 2013 年《The Raven That Refused to Sing》
+  的混音者、**與《Grace for Drowning》無關**；Rick Evers 得年 31 非 32。另攔下三筆會誤導的數據：
+  〈Don't Let Me Be Misunderstood〉原唱名次兩輪研究不一致（131／134）故禁寫數字、
+  〈Mississippi Goddam〉**不收錄於《Broadway-Blues-Ballads》**只能寫成同期背景、
+  Yann Tiersen 的「UK 第 34 名」是官方榜的 **Record Store Chart 唱片行專榜**不是專輯總榜。
+- 審稿修 1 處：Steven Wilson 那張把「查不到他本人的公開說法」這句研究過程語言寫進正文，刪除。
+- 主要檔案：`desc-restyle/RUNBOOK.md`（新增 0b 題材規則）、`desc-restyle/progress.json`、
+  `desc-restyle/batches/research/w2-023-rerun-{a,b,c}.json`、`batches/hooks/w2-023-rerun-hooks-*.json`、
+  `batches/w2-023-rerun-{final,kv}.json`；並回寫 `w2-021-final.json`／`w2-023-final.json` 與兩份 kv 檔，
+  讓磁碟與 KV 一致。
+- 驗證：QA 標記 0；`wrangler kv bulk put` Success；**14 張全部（非抽樣）線上驗證 `X-Cache: KV-HIT`
+  且文字與 final 完全一致（14/14）**。
+
 ### 2026-07-31｜desc-restyle wave2：021／022／023 三批 150 張上線，產線加四支腳本與兩道新防線
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；實際產出在 `desc-restyle/`（非 git 追蹤）與 Worker KV。
