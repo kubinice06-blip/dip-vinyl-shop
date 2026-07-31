@@ -1,5 +1,25 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜第三輪收尾：改用 KV 全量快照掃完 7,630 張，補最後 2 張
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- **發現覆蓋漏洞**：前兩輪都只掃 `w2-*` 的檔案，但 **wave1 的 w1-001～007 與 batch-0XX 沒有本機
+  `-final.json`**（當年直接出 KV，沒留 final），磁碟掃描根本掃不到那批。已改用
+  `export_kv.mjs` 匯出 **KV 全量快照 7,630 筆**來掃（腳本輸出改到暫存檔，**不可覆寫
+  `kv-backup-desc2.json`**，那是 07-25 的回滾基準）。
+- 全量掃描結果：空心委婉語剩 4 張、「提到遺作／生前最後卻未交代死亡」在排除「驟逝／猝逝」
+  誤報後為 **0 張**。wave1 的 note 掃出 17 張候選，逐張比對線上現值後多數其實寫得很完整——
+  Bob Dylan《Desire》整段寫 Hurricane Carter 冤案與 1985 年認定的種族偏見、Slayer《Reign in Blood》
+  的 Mengele 爭議正反並陳、RATM 的釋廣德自焚封面與拒絕 Epic 刪詞、Nirvana《MTV Unplugged》有寫
+  「距 Cobain 辭世約七個月」、Ted Lucas 連死因都寫。**wave1 沒有系統性的自我審查。**
+- 實際再改 2 張：
+  - **Sufjan Stevens《Carrie & Lowell》**：事實表明寫「2012 年因胃癌過世」，是 note 軟化成
+    「一句事實帶過即可」導致寫手把死因省掉。已補回（並縮短錄音地點那句以守 280 上限）。
+  - **Nat King Cole《Welcome to the Club》**：「Basie 本人因故未參與」屬**資料缺口而非審查**，
+    查證為合約因素無法參與、由 Gerald Wiggins 頂替，已改精確。
+- 三輪合計改 19 張（12＋5＋2）＋Anthrax 人名一致性，全部 QA 0、線上逐張驗證 KV-HIT 文字一致。
+- 主要檔案：`desc-restyle/batches/fix-round3-{final,kv}.json`、`w2-021-{final,kv}.json`、`progress.json`。
+
 ### 2026-07-31｜第二輪清查：非年份型的自我審查，再補 5 張＋Anthrax 人名一致性
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
