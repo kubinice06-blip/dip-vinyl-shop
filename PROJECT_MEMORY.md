@@ -1,5 +1,32 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜第二輪清查：非年份型的自我審查，再補 5 張＋Anthrax 人名一致性
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 店主追問「還有沒有其他因政治正確刪改的內容」。第一輪只用「封殺式措辭＋事件年份 ≤ 專輯年」兩條篩，
+  抓不到**軟性抹除**（不是禁寫，而是要求寫成中性套話）與**整段缺席**（根本沒進正文）。改用三種抓法：
+  1. note 的軟性抹除：「不加評價／不定性／不影射／中性措辭」× 敏感題材 → 命中 32 句；
+  2. 已上線正文的空心委婉語（一場意外／個人風波／健康因素…）→ 命中 3 張；
+  3. **身後發行／遺作卡但正文完全沒交代死亡** → 這條抓出最嚴重的兩張。
+- 再改 5 張：
+  - **John Lennon《Milk and Honey》**：1984 年身後發行，正文只寫「生前未及完成」「身後發行」，
+    **全篇沒提他 1980 年 12 月遇害**。已補「同年 12 月 8 日他在紐約遇害，錄音停在半途」。
+  - **J Dilla《Rebirth of Detroit》**：2012 年身後發行，正文連他已離世都沒寫。已補死因與得年。
+  - **Mastodon《Crack the Skye》**：Skye Dailor 的死因被抹成「早逝」，已改為「1990 年輕生離世、得年 14」；
+    **另更正既有錯誤**——兩個來源都指她是 Brann Dailor 的妹妹，原文寫成姊姊。
+  - **Kendrick Lamar《Mr. Morale》**：〈Auntie Diaries〉的用詞爭議與 Kodak Black 客座爭議整段缺席，
+    兩者都與專輯同年。已補一句只陳述「有這首歌／有這位客座」與「引發正反討論」，不下定性判斷。
+  - **Al Green《Full of Fire》**：前一輪是我自己寫成「發生一場意外」——**性質寫錯**（不是意外），
+    而且事實表本來就有完整記載。已改為精確陳述（相識女子潑灑滾燙食物致燙傷、隨後在屋內自戕）。
+- **Anthrax《Among the Living》**：hook 寫「史蒂芬・金」、正文寫「Stephen King」，同一張卡中譯與拉丁名
+  並存。店主裁定以 hook 為準，正文改為「史蒂芬・金」——此卡是「人名一律拉丁原文」的明確例外。
+- 判定為維持現狀並回報店主的三張：Björk《Utopia》（離婚背景，屬前作脈絡且無來源）、
+  DMX《Grand Champ》（法律事件早於專輯但事實表無可引來源）、Bob Marley《Uprising》（1977 診斷早於專輯，
+  但本張故事軸不在病情）。要補都得再發研究。
+- 主要檔案：`desc-restyle/batches/research/fix-events-c.json`、`batches/fix-round2-{final,kv}.json`、
+  同步 `w2-{010,016,020}-{final,kv}.json` 與各卡 writer input、`progress.json`。
+- 驗證：QA 標記 0；`wrangler kv bulk put` Success；5 張＋Anthrax 全部線上 KV-HIT 文字一致。
+
 ### 2026-07-31｜封殺條款回溯清查：全 wave2 掃 note，12 張補回專輯發行前的事件
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
