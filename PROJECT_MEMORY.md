@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜第四輪（結案）：三張懸案定案，政治正確回溯清查全部完成
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 前三輪一直掛著的三張「事件早於專輯、但無來源」待決卡，發研究補查後定案：
+  - **Bob Marley《Uprising》改**：補回 1977 年確診腳趾黑色素瘤、因 Rastafari 信仰拒絕截肢
+    （AIM at Melanoma 等機構與傳記交叉）。與〈Redemption Song〉創作的直接關聯只有 Rita Marley
+    說法的二手轉述，**不寫進正文**。順手修掉身體重述 hook 的「原有樂團編制版本」句。
+  - **Björk《Utopia》改**：補回她本人 2017 年 Dazed 專訪自述——這是她的「Tinder 專輯」、寫
+    《Vulnicura》分手之痛過後的墜入愛河與烏托邦追尋（一手引述、NME／i-D 等多家轉引一致）。
+  - **DMX《Grand Champ》維持現狀**：查了 2002 年案件、2003 年 6 月案件與 Rolling Stone 訪談，
+    沒有任何一件與本張歌詞、錄製或宣傳有記載的因果關聯——**不為了補而硬塞流水帳**。
+- 兩張改動 QA 0、KV 覆寫後線上驗證 2/2 一致；facts 已回寫 writer input、舊封殺條款標記作廢。
+- **結案總計**：四輪掃描（w2 note 封殺條款 → 軟性抹除＋委婉語 → KV 全量 7,630 張 → 懸案補查），
+  共改 **21 張**＋Anthrax 人名一致性；每一張都補查來源、跑 QA、逐張線上驗證。三個判定
+  「維持現狀」的類別：事件晚於專輯（47 句）、查無來源且與專輯無故事關聯（DMX）、
+  本來就已寫進正文的（Ice Cube、Sheryl Crow、Smashing Pumpkins《Adore》等）。
+
 ### 2026-07-31｜第三輪收尾：改用 KV 全量快照掃完 7,630 張，補最後 2 張
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
