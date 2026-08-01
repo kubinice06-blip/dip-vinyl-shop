@@ -1,5 +1,25 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜全池空格回溯收官：KV 快照掃 7,630 筆、再補 2,219 張，desc2 卡池格式全數補齊
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 店主指示全面回溯。因 wave1 早期批次本機沒有 final 檔，改用 **KV 全量快照**當基準：
+  export 腳本改輸出到 scratchpad 暫存檔，`kv-backup-desc2.json`（07-25 回滾基準）未動。
+- 掃 7,630 筆 desc2:，**再補 2,219 張**（wave1 全部＋歷次零星殘留）。其中 **8 張補完超 280**
+  （281–287，全為 wave1 冷門卡：Autechre《Confield》、Gila、Henry Cow、Xenakis《Persepolis》、
+  Philip Cohran 等）——只超 1–7 字，由主會話本機**純刪除**微修（hook 不動、敏感與主故事不砍），
+  壓到 268–280。
+- 上傳兩包（2,211＋8）均 Success；被改 key 的原值另存回滾檔
+  （scratchpad/`spacing-wave1-rollback.json`，2,219 筆）。
+- **本機 w1-008〜012 final 以線上真值（快照＋spacer＋trim）反向同步**——過程中發現 10 張本機
+  落後於回溯清查後的線上版本，一併校正，避免日後誰照舊流程 bulk put 舊檔把修正洗掉。
+- 驗證：KV API 直查抽驗 12/12 一致且無缺空格（含全部 8 張 trim 卡）；全池複掃 2,219 筆
+  仍缺空格 **0 筆**；worker 公開路徑抽驗 3/3 KV-HIT 一致。
+- **結論：整個 desc2: 卡池 7,630 筆的中英空格至此全部補齊**（今日三輪合計 420＋2,219＝2,639 張）。
+  021 起的新批由 hook 層提示內建規則維持，不會再產生此類缺漏。
+- 主要檔案：`desc-restyle/batches/spacing-wave1-kv.json`、`spacing-wave1-trim8-kv.json`、
+  `trim-wave1-{1,2}.json`、`w1-0{08..12}-{final,kv}.json`、`progress.json`。
+
 ### 2026-07-31｜補 001–014 中英空格 370 張，順帶把 52 張撐破上限的卡刪修回來
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
