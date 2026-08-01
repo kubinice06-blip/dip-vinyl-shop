@@ -1,5 +1,45 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜卡池清理：移除 8 張非正規專輯卡（7,556 → 7,548）
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json`）＋ Worker KV（`desc2:` 鍵同步刪除）。
+- 店主裁定收錄標準：**不是正規專輯、沒有正式封面的一律移除；致敬樂團看重要性決定去留，
+  不重要的雜牌、無歷史意義者移除**。
+- 判定方法：封面 API 對任何查詢都會回最接近的圖，不能拿「有沒有回圖」當標準；
+  改拿 `/spotify-search` 回傳的連結去抓 `open.spotify.com/album/<id>` 的
+  og:title／og:description，看封面**實際指向哪張、掛誰的名**。
+
+**第一輪（查無實物／改標題 mixtape）**：
+| 移除卡 | 實況 |
+| --- | --- |
+| Simon & Garfunkel｜Feelin' Groovy | 非專輯（歌曲俗稱）；封面實為 Simon & Garfunkel Revival Band 1993 年同名盤，該致敬團查無實質資料 |
+| Future｜Zone | 官方作品列表查無此作 |
+| Pusha T｜The Animosity of Caine | 2013 mixtape《Wrath of Caine》串流改標題版 |
+| Raekwon｜Wu Victory | 2012 免費 mixtape《Unexpected Victory》串流改標題版 |
+
+**第二輪（翻錄／雜牌選輯，店主授權由 Claude 判斷）**：
+| 移除卡 | 實況 |
+| --- | --- |
+| Hans Zimmer｜Film Music of Hans Zimmer | Silva Screen 布拉格愛樂翻錄選輯，非本人錄音（w2-033 已寫明性質，仍不符收錄標準） |
+| Hans Zimmer｜Music From the Pirates of the Caribbean Trilogy | 同上，Spotify 直接掛 City of Prague Philharmonic 名下 |
+| Ennio Morricone｜Film Music Masterworks | 同上型 Silva Screen 系列 |
+| Nino Rota｜Film Music | 卡面「Film Music, 1993」查無明確實體；封面借自 2019 Decca《The Fellini Album》 |
+
+**同型但保留**（有正式身分，不符移除條件）：The Good, the Bad and the Ugly（原聲帶名盤）、
+Yo-Yo Ma Plays Ennio Morricone（本人指揮的 Sony Classical）、Zimmer《Diamond in the Desert》
+（本人 2025 現場）、Howard Shore 魔戒三部曲（本人指揮原始錄音）、Parquet Courts《MILANO》
+（Luppi 聯名真專輯）、The Scythe 合輯、Interpol 未發行新作、The Doors RSD 選輯、
+Sex Pistols《More Product》（官方訪談檔案輯）。
+
+- 8 張皆不在 `apex_pool.json` 與 NEOCLASSIC_LIST。KV 舊值備份：前四張在
+  `desc-restyle/batches/w2-03X-kv.json`，Nino Rota 在 `kv-backup-desc2.json`。
+- **重要陷阱（已記入長期記憶）**：刪 `desc2:` 鍵後**不可用公開端點 /album-desc 驗證**——
+  KV miss 會觸發 worker 即時生成罐頭簡介並寫回，等於重新汙染。第一輪就踩到，重刪一次。
+  正確驗證：`wrangler kv key get` 看輸出含 `404: Not Found`（exit code 恆為 0，不可依賴）。
+- 驗證：8 個 key wrangler 直查全部 404；seed_cards.json 單行格式未變、diff 乾淨。
+- desc-restyle 進度同步調整：總池 6,980 → **6,972**、已完成 2,520 → **2,513**
+  （8 張中 7 張已改寫上線、自完成數除名；Nino Rota 尚未改寫、只從總池扣除）。
+
 ### 2026-08-01｜desc-restyle w2-034／035 兩批上線（累計 2,520／6,980，36.1%）
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
