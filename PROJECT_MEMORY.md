@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle 027–030 四批 200 張連續上線，字元三掃描與 key 硬檢查定案
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 進度：wave2 累計 **2,270 / 6,980（32.5%）**，003–030 全數上線。全程 Opus 5（研究層 Sonnet）。
+  四批各 50 張，逐批細節記在 `desc-restyle/progress.json`，此處只記跨批結論。
+- **執行方式**：滾動接力（一批進 hook 時下一批開研究），最高同時 12 個代理；四批研究／hook／
+  寫作各層皆通過 QA 0 標記，逐批線上抽驗 5/5，另針對特殊字元 key 加驗（`[rammstein]` 方括號、
+  `jane’s` 彎引號、`run‐d.m.c.` U+2010、`crystal castles|(iii)` 括號開頭、`bon iver|i,i` 逗號、
+  TLC 刪節號、`édith piaf` 重音、`slipknot|.5:` 點號開頭），全數 KV-HIT 文字一致。
+
+**這四批定案的五條管線規則（都是踩到才補上的）**
+
+1. **字元三掃描固定進管線**：非拉丁亂碼（西里爾／天城／諺文）、簡體字、半形逗號貼中文。
+   四批共抓到西里爾污染 3 處、簡體字 4 處、**整組 10 張全用半形逗號 1 次**。
+   注意簡體字表必須用「簡體專用字」——制／值／台／准 都是正體字，誤列會造成大量誤報。
+2. **hook 開頭雷同**改判為「前四字不可與同批任一張相同（含人名）」。實際攔到同藝人兩張
+   都以 `Jim Morrison` 起首、兩張不同藝人都以 `Rick` 起首。
+3. **數字一律不用千分位逗號**，改寫成「約 2.9 萬張」形式——這是半形逗號的根源，從源頭消除。
+4. **key 損壞已出現三種型態**：漏 `desc2:` 前綴、只留藝人名（`|專輯` 整段消失）、
+   **整行連 `｜artist｜album` 一起複製**。`build final` 前的「key 必須存在於 cards.json」是
+   唯一能攔下的防線——線上抽驗驗不出來（錯 key 查錯 key 一樣回 KV-HIT）。修復一律走
+   「依卡單同位置回填＋藝人名正規化比對把關」，對不上就中止。
+5. **內容過濾器中斷**這四批又發生 3 次（029 hooks-d、030 hooks-e，加上先前 021／023）。
+   除 023 研究 c 外**檔案皆完整存活**，先查檔再決定是否重跑，四次只真的損失一組。
+
+**題材與品質**
+
+- 敏感題材連續四批零縮手，且反向禁令（事件晚於專輯不寫）同樣守住。四批合計寫滿的招牌故事包括：
+  Fiona Apple 母帶外流與 Free Fiona、Tears for Fears 預算失控致決裂、Megadeth 商業轉向致離團、
+  Clash 的 Headon 遭開除（巴黎失蹤照更正為經紀人公關操作）、S&G 的未授權重混促成復合、
+  Slipknot 的 Paul Gray 辭世、The Doors《Other Voices》的 Morrison 辭世、Beyoncé 的 CMA 種族化排斥、
+  Notorious B.I.G. 身後企劃與樂評負評、Lauryn Hill 署名官司、TLC 破產與版稅、Bill Withers 與
+  Columbia 決裂、Porter Robinson 的憂鬱敘事、Rammstein 的 MV 抗議事件（只陳述反應、不描述影像）。
+- **零新事實防線的完整實例**：Paramore《Brand New Eyes》的「Farro 兄弟離團」只見於研究稿的
+  hookCandidates、事實表未列——hook 層主動標記，寫作層照辦未寫入正文，三層各自守住、無需人工攔。
+- 資料疑義處理：Bloc Party《Anatomy of a Brief Romance》查證為**尚未發行**（訂 2026-09-11），
+  寫成「已宣布未上市」保守版；`m.i.a.|m.i.7`（2026-04）、`muse|the wow! signal`（2026-06）、
+  `boards of canada|inferno`（2026-05-29）原標身分存疑，查證皆為真實新作；
+  Édith Piaf 與 Frank Sinatra 兩張同名選輯版本鎖不定，走不寫年份廠牌曲序的保守寫法。
+- **人名規則例外（店主裁定）**：歷史／政治人物用台灣慣用中文譯名，音樂圈人名維持拉丁原文。
+  案例為 Patti Smith《Gung Ho》的胡志明；先前 Anthrax《Among the Living》的史蒂芬・金同屬此例。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/w2-02{7,8,9}-{final,kv}.json`、
+  `desc-restyle/batches/w2-030-{final,kv}.json`。
+
 ### 2026-07-31｜desc-restyle w2-026 上線：新增亂碼掃描，三張資料疑義查清
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
