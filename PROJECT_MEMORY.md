@@ -2181,6 +2181,24 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 049–052 共 200 張上線（剩餘卡池 3,779 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄（Laika 卡池更正另有一筆紀錄）
+- 改動：跑完 w2-049～052 各 50 張。研究 20 組、hook 20 組、寫作 8 組，四批 QA 皆 0 標記，字數 198–240（各批均值 225–233），KV 逐字比對 200/200 一致。批次主題：049 酒吧搖滾與 50 年代搖滾／陽光流行／法國香頌與 blaxploitation／舊金山迷幻、050 英國合成器流行與精緻流行／2 Tone／澳洲後龐克、051 工業與秘教／Factory／C86 與 Sarah／Stereolab 與 Broadcast、052 slowcore／路易維爾與芝加哥後搖滾／Albini 系譜／噪音搖滾。
+  - **人工審稿抓到四處機器 QA 驗不出的錯誤，其中三處是研究層來源本身錯了**：
+    1. Chuck Berry《After School Session》把 1957 年的名次掛在「Billboard Hot 100」，但該榜 1958 年 8 月才創設，已改「全美流行榜」。
+    2. Felt《Forever Breathes the Lonely Word》的編號與月份皆誤——CRELP 001 是 1984 年 8 月的合輯《Alive in the Living Room》，本作為 **CRELP 011、1986 年 10 月**。
+    3. Big Black《Songs About Fucking》寫「Touch and Go 由 Corey Rusk 於 1980 年底創立」，實際是 1979 年 Tesco Vee 等人辦的同人誌、1981 年轉為廠牌、**1983 年才交棒給 Rusk 夫婦**。
+    4. The Waterboys《This Is the Sea》的 hook 寫「五年後再版」與正文的 1991 年自相矛盾（單曲 1985 年 10 月初發，實為六年），三層同步改為六年。
+  - **這批的關鍵教訓**：上述 1、2、3 的數字**都存在於研究層事實表中**，因此 `qa-check-research` 的「編造專名／年份」檢查全數放行。該工具驗的是「這個數字有沒有來源」，驗不出「來源本身對不對」。修正後反而會被標成「編造年份」（正確年份不在錯誤的來源裡），因此**每次更正來源錯誤都必須同步改上游的 research／hooks／input 三層**，否則機器檢查與事實會長期背離。
+  - **場景群聚控制**：四批共 21 條通論全部只落在指定的單一卡片上，包含 049 的 pub rock／搖滾草創／陽光流行／yé-yé／blaxploitation／舊金山迷幻、051 的 TG 系譜／後工業／Factory／C86／Sarah／K Records／後搖滾、052 的 slowcore／Slint 系譜／芝加哥後搖滾／Albini 系譜／Touch and Go／噪音搖滾／AmRep。同一人多卡的極端案例（Japan＋Sylvian 四張、Talk Talk＋Mark Hollis 三張、Stereolab 三張、Broadcast 三張、XTC 三張、Scott Walker 三張）亦全部分軸。
+  - **同構故事的分軸**：050 的 Heaven 17 與 John Foxx 真實故事結構相同（皆離開原樂團另起爐灶），note 全面禁用該框架並禁止互相轉述，成稿兩張完全未提前團。這類「用字可以完全不同、骨架卻一模一樣」的重複比共用場景通論更難察覺，值得列為往後派工的固定檢查項。
+  - **研究層開始主動推翻來源**：查證擋下〈Coup〉不在《Seven Songs》（故不寫 Chemical Brothers 取樣）、Nirvana 翻唱的三首不在《Dum-Dum》曲目中（成稿直接把此事寫成該卡的收尾事實）、Don Caballero《What Burns Never Returns》製作人是 Al Sutton 而非 Albini。另主動查出卡池的 Laika 專輯名錯誤（另有紀錄）。
+  - **內容過濾器**：049-d 研究層中斷一次，但輸出檔 10 張完整、key 逐字對齊、notes 排除條款齊備，僅最終報告被切，獨立驗證後未重跑。同組後續的 hook 加強輸出紀律（只回計數與異常 key、零內容覆述）即順利通過。連續第六輪驗證根因是內容覆述而非題材敏感度。
+  - **題材克制三處照辦**：Rapeman 團名爭議照實陳述不渲染不玩味、Unsane 封面不宣稱查無來源的「通路拒賣」而改用可查證說法、Drunks with Guns 寫明實為 3 首的 7 吋 EP 且曲名留空。
+  - **待店主裁示**：`drunks with guns` 為 7 吋 EP 而非 LP，比照 `mudhoney|superfuzz bigmuff`、`misfits|static age` 的既有前例保留並於正文寫明實際性質。
+- 主要檔案：`desc-restyle/batches/w2-049~052-{final,kv}.json`、`batches/{research,hooks,input,output}/*`、`desc-restyle/progress.json`、`desc-restyle/prompts/*.md`、`desc-restyle/qa-batch.mjs`
+- 驗證：四批 `qa-check-research` 全數 0 標記、`fix-spacing` 待補 0 張、中文數字榜單名次殘留 0 處；`verify-kv.mjs` 以 bulk-get 逐字比對，四批各 50/50 一致。另針對已上線的 2,651 張回掃三種同型錯誤（Hot 100 年代錯置、CRELP 編號、Touch and Go 創辦說法），均無流出。
+
 ### 2026-08-01｜卡池更正：Laika 專輯名 Sun→Moon（seed 7547，張數不變）
 - Repo：`dip-vinyl-shop`（`seed_cards.json`）、`desc-restyle`（任務檔與批次檔）
 - 改動：`["Laika","Silver Apples of the Sun"]` 更正為 `["Laika","Silver Apples of the Moon"]`。Laika 1994 年首作正確名稱取自 Morton Subotnick 1967 年的電子樂作品《Silver Apples of the Moon》，該團目錄中並無任何名為「Sun」的作品，屬卡池原始資料的字詞錯誤。
