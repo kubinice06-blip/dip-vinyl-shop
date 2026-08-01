@@ -1,5 +1,59 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle w2-038／039／040 三批上線（累計 2,762／6,971，39.6%）
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- **本工程首次三批並行**：27 個子代理（研究 15、hook 6、寫作 6）**全程零內容過濾器中斷**，連續第三輪。
+- 150 張 QA 全 0 標記；**首次全部落在字數區間內、零超標**，不必事後修剪。
+  字數：038 為 181–247、039 為 198–242、040 為 178–242。KV 直查抽驗 21/21 一致。
+- 題材：038 當代 R&B＋南方饒舌、039 南方與地下饒舌、040 抽象與器樂嘻哈。
+
+#### 同藝人協調再創新高
+
+Future **五張**跨兩組（Pluto／Monster／56 Nights／Future／HNDRXX，連莊冠軍只寫在其中一張）；
+Aesop Rock、Jedi Mind Tricks、Earl Sweatshirt、MIKE 各**四張**；
+Mos Def／Talib Kweli 人脈重疊**六張**（Black Star 獨佔組團起源）；
+Rick Ross 四張跨 038／039。三張一組者另有八組。全部分軸成功，成品逐張比對無撞車。
+
+#### 子代理修正主會話錯誤 5 處（本輪最有價值的部分）
+
+| 我寫錯的 | 實際 |
+| --- | --- |
+| Saul Williams 同名作與 Rick Rubin 合作 | Rubin 製作的是 2001 年前作《Amethyst Rock Star》 |
+| Apollo Brown《Clouds》2012 年 | 2011 年（2012 是與 O.C. 的《Trophies》） |
+| Nosaj Thing《Home》廠牌 | Innovative Leisure（常見誤植為 Sub Pop） |
+| KRS-One 卡的〈Sound of da Police〉 | 是 1993 年前作曲目，hook 層下禁令擋掉 |
+| Future《Monster》的一條「事實」 | 實為歌詞原句，改為大意轉述（不逐字引歌詞） |
+
+hook 代理另自行補了我漏掉的協調：Bun B／Slim Thug／Paul Wall 三張會撞「2005 德州浪潮」共同背景。
+
+#### 兩條寫作規則經實測修正（也是子代理指出的）
+
+1. **半形逗號規則太粗糙**：038 writer-1 為了避開逗號，放棄了《Ugh, Those Feels Again》這種真實標題。
+   已改為「**只禁半形逗號貼著中文字**，原文標題與專名的標點照原樣保留」。
+2. **名次數字規則寫反了**：我原訂「名次維持中文數字」，實測全池 020–037 是
+   **阿拉伯 508 例對中文 102 例**。已改為年月日與榜單名次都用阿拉伯數字。
+   新增 `normalize-ranks.mjs` 一次正規化三批 **126 個欄位**——同步改 output／input／hooks，
+   確保 hook 與正文首句仍逐字相符；並順手修掉「同一曲名在 hook 用《》、正文用〈〉」兩例。
+   **殘留樣式「名列第五」（少「名」字）工具抓不到，仍需人工回讀。**
+
+#### 其他審稿修正
+
+- Future 同名作漏掉 hook 的收尾（〈Mask Off〉長笛取樣上線時版權尚未談妥），已補回。
+- Memphis 譯名在 039 內同時出現兩種寫法，依全池慣例（曼菲斯 4：孟菲斯 2）統一為**曼菲斯**，
+  並回頭修一張已上線的 Elvis 卡。
+- 兩處「發行在前…遇害在後」的編輯註記式措辭改為讓年份自己說話。
+
+#### 反向禁令兩分法在三批的實際運作
+
+可寫並標時序者：Gang Starr《One of the Best Yet》（Guru 身後由 Premier 完成）、Big L 身後遺作、
+Young Dolph《Rich Slave》（生前最後一張）、MIKE《Weight of the World》（母親辭世早於本作）、
+TOKiMONSTA（腦部手術後康復完成本作）、Pharoahe Monch（東寶提告致下架至 2019 重發）、
+Jurassic 5 解散、M.O.P. 廠牌收攤、slowthai 2019 水星獎典禮事件、T.I.《Paper Trail》的審判時序。
+明文禁寫者：Young Dolph《Role Model》、Mystikal 後續案件、slowthai 2023 年案件、
+Slum Village 的 J Dilla 2006 辭世、Eyedea 2010 辭世、T.I. 前兩張的 2007 年指控、
+Rick Ross《Trilla》的獄警爭議（數月後才曝光）。
+
 ### 2026-08-01｜反向禁令修訂後的全池回溯清查（001–037）：實際需改 4 張
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 與 `desc-restyle/`。
