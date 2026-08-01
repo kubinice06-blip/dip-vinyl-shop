@@ -1,5 +1,34 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle 產線精簡改版：實測 22.1k/張 → 目標 19k，RUNBOOK 全面重寫
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；改動在 `desc-restyle/`（RUNBOOK.md 重寫、新增 qa-batch.mjs、
+  progress.json 記錄）。**未動任何已上線內容與 KV。**
+- 依店主指示分析 027–030 四批實測算力：**22.1k tokens/張**（每批研究 433k＋hook 349k＋寫作 324k
+  ≈ 1,105k/50 張），比 RUNBOOK 路線一的 19k 估算高約 16%。膨脹主因不是規則本身，而是：
+  hook note 已長到**中位 479 字、P90 641**（note 會原样複製進寫手輸入、被讀第二次）；
+  我的提示逐批堆疊逐卡點名（研究／hook／寫手三層重複同一批題材指示）；
+  寫手回報 25 行全表；主會話每批手寫十多段 inline 檢查腳本。
+- **六項精簡（w2-031 起適用，已寫進新版 RUNBOOK）**：
+  1. hook 層 5 代理 → **2 代理**（a–c／d–e），省每代理固定開銷；研究層維持 5 組（中斷損失面小，
+     歷史六次過濾器中斷有五次靠檔案存活救回）。
+  2. **hook note 上限 350 字**——雙重計費的最大單一節省點。
+  3. hookCandidates 上限 2 條。
+  4. 寫手回報只列異常卡，不再輸出 25 行全表。
+  5. 提示範本瘦身：題材通則一段取代逐卡點名；特注只留四類（事件晚於專輯的反向禁令、
+     身分存疑／未發行、同名版本鎖定、同藝人分軸）；寫作層不再重複題材清單——**note 是唯一載體**。
+  6. 新增 **`qa-batch.mjs`**：research／hooks／out 三個指令取代主會話每批十多段 inline script
+     （key 對卡單、字元三掃描、hook 對事實表核查、字數統計一次跑完）；專名比對改拆詞，
+     Lisa "Left Eye" Lopes／Maureen Yancey 這類「綽號夾中間」誤報從此消失。
+- 順手修掉 w2-030 研究稿殘留：研究代理把我的括號指示抄進 album 欄（`（可能為近年新作,請先查證）`），
+  及 notes 欄的半形逗號——新版研究範本已加「指示文字不得抄進資料欄」。
+- 品質防線全數保留：五層流程、主會話逐張審稿、key 硬檢查、敏感題材條款、零新事實 QA 都不動；
+  砍的只有重複傳輸與過長的中間產物。
+- 主要檔案：`desc-restyle/RUNBOOK.md`（全面重寫）、`desc-restyle/qa-batch.mjs`（新增）、
+  `desc-restyle/progress.json`（notes 記錄）。
+- 驗證：qa-batch.mjs 以已完成的 w2-030 全批回歸測試，research／hooks／out 三階段皆通過，
+  並實際抓出前述研究稿殘留兩處（已清）。
+
 ### 2026-08-01｜desc-restyle 027–030 四批 200 張連續上線，字元三掃描與 key 硬檢查定案
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
