@@ -2,7 +2,7 @@
 
 ### 2026-08-01｜desc-restyle w2-031／032／033 三批上線（累計 2,420／6,980，34.7%）
 
-- Repo：（僅本備忘錄）；內容改動在 Worker KV 的  與 。
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
 - **精簡管線首次連跑三批**，六項改動全數生效：hook 層 2 代理、note ≤350 字、範本瘦身、
   寫手只回報異常、qa-batch.mjs 三段檢查。三批 QA 均 0 標記，字數穩定在 156–252（平均約 222）。
 - **Sonnet vs Opus hook 層 A/B 實測（031-a，10 張，同一份研究稿、同一份提示）**：兩者都通過
@@ -17,7 +17,7 @@
   對策已寫入 RUNBOOK 輸出紀律：**每組寫完立刻存檔不再整批重寫、超標只做定點修改、回報不覆述原文**。
   033 是首次全面套用：hook 兩個代理（含 031／032 都被擋過的 d–e 槽）與 writer-2 全部一次過。
 - **檔案存活 ≠ 完成（032 教訓）**：writer 前被擋的 hook 檔看似完整，實為停在「補句末標點」那一步，
-  20 條 hook 全缺句號。已把句末標點檢查加回 。
+  20 條 hook 全缺句號。已把句末標點檢查加回 `qa-check-hooks.mjs`。
 - **人名裁定（店主）**：歷史／政治人物用台灣慣用中文譯名（Patti Smith 卡的**胡志明**；沿用至 033 的
   **哈瑙戰役**），音樂圈人名維持拉丁原文。前例：Anthrax 的史蒂芬・金。
 - **033 審稿實例（題材規避仍會偶發）**：GN'R《G N' R Lies》末曲爭議原寫成「歌詞引發爭議討論」，
@@ -25,16 +25,16 @@
   另修 Metallica《Reload》hook 的都柏林在正文遺失、與「加州錄製」表面矛盾等 11 處。
 - **QA 工具修補**：①中文數字年份正規化放寬為「一／二開頭四字」——note 寫「一九四六到一九四七年間」時
   首個年份後接「到」不接「年」，舊前瞻失敗造成誤報；②《》內原始專輯名排除於格式檢查
-  （《Live ?!*@ Like a Suicide》的  被誤判 markdown）；③簡體字表補 17 字（乐为无与软权变现等），
+  （《Live ?!*@ Like a Suicide》的星號被誤判 markdown）；③簡體字表補 17 字（乐为无与软权变现等），
   Sinatra 研究稿的「乐评」原本漏網。
-- 主要檔案：、、、
-  、、、（031–033 各層產物）。
+- 主要檔案：`desc-restyle/progress.json`、`qa-check-research.mjs`、`qa-check-hooks.mjs`、
+  `qa-batch.mjs`、`fix-punct.mjs`、`RUNBOOK.md`、`batches/`（031–033 各層產物）。
 - 驗證：三批 QA 全 0 標記；033 線上抽驗 **12/12** KV-HIT 且文字逐字一致，含四個特殊字元 key
-  （ U+2010、 與  刪節號、
-   彎引號與直撇號混用）。
-- 待裁定／已知疑義（未變）： 版本待實體片確認；
-  （2026-09-11）與 （2026-08-14）
-  尚未發行； 18 筆藝人名亂碼（顯示為 "Guns N??Roses"）屬卡池層清理，不在本工程範圍。
+  （`run‐d.m.c.` U+2010、`in times new roman…` 與 `king for a day…` 刪節號、
+  `guns n’ roses|g n' r lies` 彎引號與直撇號混用）。
+- 待裁定／已知疑義（未變）：`nina simone|gifted & black` 版本待實體片確認；
+  `bloc party|anatomy of a brief romance`（2026-09-11）與 `phoebe bridgers|lost weekend`（2026-08-14）
+  尚未發行；`seed_cards.json` 18 筆藝人名亂碼（顯示為 "Guns N??Roses"）屬卡池層清理，不在本工程範圍。
 
 ### 2026-08-01｜desc-restyle 產線精簡改版：實測 22.1k/張 → 目標 19k，RUNBOOK 全面重寫
 
