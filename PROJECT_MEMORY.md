@@ -1,5 +1,66 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle w2-036／037 兩批上線（累計 2,613／6,972，37.5%）
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 兩批 100 張，QA 全 0 標記；字數 036 為 179–247（均 230）、037 為 143–249（均 228）。
+- 題材：036 前半電子（Plaid／Telefon Tel Aviv／Modeselektor／St Germain 等）＋後半九〇年代 R&B；
+  037 全批新傑克搖擺到當代 R&B。
+
+#### 同藝人多卡協調（歷來密度最高）
+
+- **Mary J. Blige 四張擠在同一組**，分為 1992 出道與 hip-hop soul 奠基／1997 脫離 Sean Combs 換班底／
+  2001 個人轉折／2005 商業與獎項；四張 note 明文**禁用「hip-hop soul 女王」這類通用定位**。
+- 三張一組者：Mariah Carey、Telefon Tel Aviv、Plaid（跨組）、Ashanti、Amerie、Ciara（跨組）、
+  Keyshia Cole、Miguel、Jhené Aiko。兩張一組者十餘組。
+- **新傑克搖擺四張的撞軸風險**（Guy／Blackstreet ×2／Keith Sweat）：指定只有 Guy 同名作寫「曲風成形」，
+  其餘三張各走自己的軸，成品確實守住。
+
+#### 反向禁令（本批特別密集）
+
+- `cassie|cassie`（2006）：2023 年後與 Sean Combs 相關的訴訟、和解與指控全部遠晚於本作，
+  hook 層以「【寫手禁令】」開頭原樣傳遞，成品只有 2006 年事實。
+- `whitney houston|whitney`（1987）：2012 年辭世與 1992 年婚事皆晚於本作，雙重禁令。
+- `h-town|fever for da flavor`（1993）、Keyshia Cole 三張：各自的辭世事件晚於專輯。
+- `telefon tel aviv|immolate yourself`：團員 Charles Cooper 於 2009-01-22 辭世，
+  **晚於同月 20 日的發行日兩天**，依現行反向禁令不寫。**此條待店主裁定是否比照
+  Mac Miller《Circles》那類「辭世早於發行」放行**，改判後可回補。
+- 十餘張 Bad Boy／Uptown 體系卡一律標明 Combs 相關後續禁令。
+- hook 代理另自行補了兩條正確禁令：112《Part III》把 R. Kelly 後續案件同列禁寫；
+  Faith Evans《The First Lady》註明她本人 2004 年被捕與 Combs 無關，避免寫手混為一談。
+
+#### 人工審稿修 7 處
+
+- **排除條款過度執行**：Bell Biv Devoe《Poison》因「New Edition 拆夥敘事只給 Bobby Brown」被執行過頭，
+  連三人出身 New Edition 都沒交代，卡片讀來斷頭。已補回團籍、仍不寫拆夥經過。
+- **hook 開了頭正文沒交代**：Xscape 卡 hook 說「只花一週」但正文全無此事（已補）；
+  Keyshia Cole 出道作 hook 說 64 週、正文只出現 84 週（不同榜，已補明 Billboard 200 的 64 週）。
+- **語意錯誤**：Faith Evans《The First Lady》寫成「離開 Bad Boy 後的第四張」（實為生涯第四張、
+  離開後第一張）；Johnny Gill「個人第三張同名專輯」歧義。
+- **中文用詞**：Modeselektor hook「兩人整整十週百分之百待在同一間錄音室」不通，已改寫並同步 hook 三層；
+  Arovane「橫貫東京…旅行」誤用。
+
+#### 新踩到的坑：KV 上傳驗證的邊緣快取陷阱
+
+`wrangler kv bulk put` 的輸出被 `tail -3` 截掉「Success!」時，我誤判已上傳就去公開端點抽驗——
+當時 KV 還是舊值，**那次讀取把舊文灌進邊緣快取**；補傳成功後 KV 已是新值，公開端點卻仍回快取舊文，
+抽驗 0/11 全錯。唯一通過的那張正是只出現在第二次清單、從未被舊值快取過的卡，反證了假設。
+**教訓：①wrangler 輸出不可截斷，確認 Success 再往下走；②驗證改用 `wrangler kv key get` 直查
+KV 真值**（036 補驗 9/9、037 驗 10/10 全過）。與既有「刪除後不可用公開端點驗證」是同一類陷阱，
+兩者已一併寫入長期記憶。
+
+#### 其他
+
+- 兩批 **18 個子代理再次全程零內容過濾器中斷**（連續第二輪），本批題材涉大量逝者、成癮、訴訟仍未觸發，
+  進一步佐證中斷主因是「整批內容的第二次輸出」而非敏感題材。
+- 字數紀律仍未完全生效：037 writer-2 初稿 15/25 超標才回頭修（033 是 12/25），
+  但因只做定點修改、未整批重寫，未引發中斷。**可考慮把目標值下修至 200–220，讓超寫剛好落進 180–240。**
+- 037 的 hook a–c 有 21 則 note 超過 350 字（最長 508）——該組每則要背兩條互斥條款，長度有正當理由，
+  多耗約 2k tokens，手修成本更高，決定不動。
+- 卡池疑義：`marshall jefferson|move your body` 查證為 1986 年 12 吋單曲（非專輯）、
+  `colde|love part 1` 為 2019 年 EP（非專輯），兩張簡介已照實寫明性質，
+  **是否依 08-01 的收錄標準移除待店主裁定**。
+
 ### 2026-08-01｜卡池清理：移除 8 張非正規專輯卡（7,556 → 7,548）
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`）＋ Worker KV（`desc2:` 鍵同步刪除）。
