@@ -1,5 +1,54 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle w2-034／035 兩批上線（累計 2,520／6,980，36.1%）
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 兩批 100 張，QA 全 0 標記；線上抽驗 034 為 11/11、035 為 12/12，均 KV-HIT 且逐字一致。
+- **產線再精簡：三層提示範本檔案化**（`prompts/research-base.md`、`hook-base.md`、
+  `writer-base.md`）。主會話每批只需寫「特注」，省下三大段重複輸出。
+- **key 轉錄風險歸零**：研究層改為代理自己從 `batches/wave2/<批次>-cards.json` 逐字複製 key，
+  不再由主會話把 50 個 key 打進提示——那正是歷史上「key 損壞三型態」的來源。兩批 100 張 key 全對。
+- **輸出紀律首次完整驗證**：兩批共 **18 個子代理（研究 10、hook 4、寫作 4）全程零內容過濾器中斷**，
+  是導入「每組寫完立刻存檔、不整批重寫、回報不覆述原文」以來第一次整批無事故
+  （對照：031、032 各有 d–e 槽被擋，033 writer-1 被擋）。寫手範本另把字數紀律前移為
+  「動筆前先定好 3–4 個資訊點再下筆」，取代原本容易誘發重寫的「寫完自己數一次」。
+
+#### 人工審稿抓到的三類問題（機器全過，只有人眼攔得下）
+
+1. **研究層事實錯誤 ×2，均已 WebSearch 查證後溯源修四層**（研究稿／hook／寫手輸入／輸出）：
+   - John Williams《How to Steal a Million》台灣譯名被寫成《偷天換日》——那是《The Italian Job》的
+     譯名，正確為 **《偷龍轉鳳》**。
+   - Pixies《Indie Cindy》寫成「取代原本考慮回鍋的三位 Kim（Deal、Shattuck、Lenchantin）」——
+     **Paz Lenchantin 不叫 Kim**，且她與 Shattuck 是後來的巡演貝斯手，不是人選。該說法整段刪除。
+2. **題材再度被寫糊**：Jane's Addiction《Nothing's Shocking》事實表寫「十一大通路中九家拒賣」，
+   正文卻糊成「多數以此為由拒收」，還跟 hook 的「嚇退九家」對不上。已改回具體數字。
+3. **格式一致性**：034-out-2 與 035-out-2 共 50 張整批用中文數字寫日期（「二〇〇四年八月十一日」），
+   但全池 030–033 每批 25/25 都是阿拉伯數字。新增 `cn-date-to-arabic.mjs` 轉換
+   （負向前瞻避開「年代」、不動名次與數量，另處理「一七九六至一八一五年」這類只有後者帶年的區間、
+   以及「同月二十五日」這類省略月份的日期），轉後再跑 `fix-spacing.mjs` 補空格。
+   副作用是 26 張漲到 241–251 字，仍在 280 硬上限內，未為此砍散文。規則已寫進 hook 與寫手兩份範本。
+
+#### 卡池層資料疑義（本工程照實寫明性質，但卡本身要不要改名／併卡／下架待店主裁定）
+
+| key | 研究查證結果 |
+| --- | --- |
+| `interpol|this mirror weighs a ton` | 尚未發行的第八張新作，預定 2026-08-28 上市 |
+| `denzel curry|strictly 4 the scythe` | 不是個人作，是他與 A$AP Ferg 等人組成的 The Scythe 首張團體合輯 |
+| `simon & garfunkel|feelin' groovy` | 不是專輯，是〈The 59th Street Bridge Song〉的通俗簡稱 |
+| `parquet courts|milano` | 實際署名為 Daniele Luppi 與 Parquet Courts 聯名 |
+| `raekwon|wu victory` | 2012 年免費 mixtape《Unexpected Victory》的串流改標題版 |
+| `pusha t|the animosity of caine` | 串流上此標題對應 2013 年 mixtape《Wrath of Caine》，查無同名新作 |
+| `future|zone` | 兩次檢索皆查無此作，官方作品列表無此品項 |
+| `ennio morricone|film music masterworks` | City of Prague Philharmonic 翻錄選輯，非本人原始錄音 |
+| `hans zimmer|...pirates of the caribbean trilogy` | 同上，另查明首集掛名作曲者實為 Klaus Badelt |
+
+- 主要檔案：`desc-restyle/prompts/`（三份新範本）、`cn-date-to-arabic.mjs`（新增）、
+  `progress.json`、`batches/`（034–035 各層產物）。
+- 前批遺留疑義（未變）：`nina simone|gifted & black` 版本待實體片確認；
+  `bloc party|anatomy of a brief romance`（2026-09-11）與
+  `phoebe bridgers|lost weekend`（2026-08-14）尚未發行；
+  `seed_cards.json` 18 筆藝人名亂碼屬卡池層清理。
+
 ### 2026-08-01｜desc-restyle w2-031／032／033 三批上線（累計 2,420／6,980，34.7%）
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
