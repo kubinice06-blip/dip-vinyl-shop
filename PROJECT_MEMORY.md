@@ -1,5 +1,59 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜desc-restyle w2-041／042／043 三批上線（累計 2,912／6,971，41.8%）
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 27 個子代理**全程零內容過濾器中斷，連續第四輪**；150 張 QA 全 0 標記、全部落在字數區間內。
+- 題材：041 六〇年代搖滾與英國民謠復興、042 glam／鄉村搖滾／AOR／前衛、043 坎特伯里與德國 krautrock。
+
+#### 先做了分池：wave2 預先切好的卡單到 040 就用完了
+
+新增 `build-next-batches.mjs`——排除已分池與已移除的卡、**對現行 seed_cards/apex_pool 做存在性驗證**
+（剩餘 4,379 張全部仍在，無幽靈卡）、照 `restyle-tasks.json` 原順序切（該檔已依風格與藝人分群）。
+一度讓工具自動避開藝人跨批，但那會產生 48／49 張的批次、打亂管線的 5 組×10 張，
+改回固定 50 張並**改為回報跨批藝人**由主會話寫特注協調。剩餘約 4,229 張、85 批。
+
+#### 三個時序判定全部查證成立（新反向禁令兩分法的實戰）
+
+| 卡 | 查證結果 |
+| --- | --- |
+| Fairport Convention《Unhalfbricking》 | 車禍 1969-05-12、發行 07-03；hook 寫成「錄音完成之後、唱片上架之前」 |
+| Robert Wyatt《Rock Bottom》 | 墜樓 1973-06-01，早於 1974-02 錄音與 07-26 發行，作品是康復期完成的 |
+| Gram Parsons《Grievous Angel》 | 1973-09 辭世、1974-01 發行，確認為遺作 |
+
+意外收穫兩則：**UFO《Strangers in the Night》**的 Schenker 離團其實發生在錄製與發行**之間**，
+根本不受反向禁令管；**Fleetwood Mac《Then Play On》**確認是 Peter Green 最後一張、他發行後八個月才離團。
+
+另有細膩判例：Judee Sill《Heart Food》銷售失利導致廠牌關係終結、Vashti Bunyan 發行後退隱數十年、
+John Martyn〈Solid Air〉因 Nick Drake 隔年辭世而被聽成安魂曲、Tim Buckley〈Song to the Siren〉
+1983 年翻唱帶動回溫——**皆判為與作品綁定可寫並標時序，但七位藝人本人的辭世一律不寫**。
+
+#### 研究層修正了三處問題
+
+Gentle Giant《Free Hand》的「英國獨立榜第 20 名」時序矛盾（該榜 1980 年才成立、專輯 1975 年）已捨棄；
+The Move《Shazam》封面不是墓碑而是超級英雄插畫；Brian Eno 的環境音樂起源查到完整版本
+（1975 年 1 月車禍臥床、擴大機故障讓豎琴唱片近乎無聲）。
+
+#### 新踩到的坑：含「..」的 key 無法用 wrangler 讀取
+
+`wrangler kv key get` 把 key 放進 URL 路徑，含 `..` 的 key 會被 Cloudflare API 以
+**403 Forbidden** 擋下（路徑穿越保護）。該 key 實際存在且服務正常，只是讀不到。
+**全池共 18 個這類 key**（《Endtroducing.....》《MM..Food》《...Baby One More Time》《Takk...》
+《Only Built 4 Cuban Linx...》《...Like Clockwork》《Miss E... So Addictive》等），
+先前抽驗剛好沒抽到才沒發現。新增 `verify-kv.mjs` 改走 bulk get API（POST body，不受路徑限制），
+並把驗證從抽樣升級為**整批逐張比對**——041–043 三批各 50/50 全數一致。
+
+#### 規則過度執行第二例
+
+043 writer-2 為了避開禁語「必聽」，放棄引用《1001 Albums You Must Hear Before You Die》這本書。
+已於 `prompts/writer-base.md` 補上「**禁語只約束自己的行文，不約束書名／獎項名／專輯名等專名**」。
+與先前半形逗號那次同型——**規則寫得像絕對禁令，代理就會連專名一起避開**，這類條款都要明寫適用範圍。
+
+#### 審稿修正
+
+僅三處：The Who《Sell Out》漏掉 hook 的收尾（廣告逼真到引來真正的電台與詞曲作者提告）、
+Future 同名作漏掉版權收尾（038 已處理）、Eagles《On the Border》一處名次仍是中文數字。
+
 ### 2026-08-01｜desc-restyle w2-038／039／040 三批上線（累計 2,762／6,971，39.6%）
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
