@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-31｜desc-restyle w2-026 上線：新增亂碼掃描，三張資料疑義查清
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
+- 進度：wave2 累計 **2,070 / 6,980（29.7%）**，003–026 全數上線。全程 Opus 5（研究層 Sonnet）。
+- **key 硬條款生效**：w2-025 的 key 損壞未重演，50 張研究稿 key 全數正確；build final 前的
+  「key 必須存在於 cards.json」檢查照跑，final 與 KV 皆通過。
+- **新增常規檢查：亂碼掃描**。研究層會偶發把非拉丁字元混進事實表——本批抓到三處
+  （Orbital「трип-hop」、Nina Simone「демо帶」、Basement Jaxx「официальные專輯榜」），
+  加上 w2-022 的「리फ」已是第二批出現。hook 層只零星回報一處、QA 也抓不到，因此改為
+  **每批研究稿完成即掃一次，hook／寫作輸入合併後複掃**，三層一起修（本批複驗零殘留）。
+- **三張資料疑義查清**：
+  - `de la soul|cabin in the sky` 原疑為 1943 年同名音樂劇，**查證確為 2025 年正規第九張專輯**，
+    主故事是 Trugoy the Dove 2023 年辭世後留下的未發表人聲做成致敬作——辭世早於本張，屬必寫。
+    （同批《Buhloone Mindstate》1993 相反，辭世晚於專輯，明令不寫。同一位逝者、兩種判準。）
+  - `jon hopkins|small craft on a milk sea` 正式掛名其實是 **Brian Eno with Jon Hopkins &
+    Leo Abrahams**，簡介誠實交代掛名關係，不寫成 Hopkins 個人作。
+  - `hans zimmer|diamond in the desert` 查無錄音室專輯，實為 **2025 年杜拜現場企劃**，標 thin。
+  - 另 `nina simone|gifted & black` 版本無法鎖定（《Black Gold》1970 vs 同名重發，內容為 1957 年
+    demo 事後加弦樂），已用不寫年份／廠牌／曲序／排行的保守寫法上線，**待店主以實體片確認**。
+- 敏感題材**連續第三批零縮手**：Clapton 遭 Warner 整張退件、Paul Williams 的病與酒癮退團、
+  Billy Joel 對前經紀人侵占的訴訟影射、Dylan 從惡評到 2013 翻案、Human League 惡評致 Virgin 解約、
+  Adele 的離婚與 Spotify 一役、Van Halen 團名爭執、Spoon 遭撤片解約與報復單曲、CCR 逼宮、
+  M.I.A. 的難民出身、Perfume Genius 的同志伴侶敘事、Basement Jaxx 的 Brixton 搶劫、
+  INXS 的跨種族改詞，全部寫滿；反向禁令同樣守住。
+- hook 品管與事實對照**雙零標記（連續第三批）**；審稿修 6 處，主要病灶是「格言式收語兼重述 hook」
+  （「換來的是評價，不是銷量」「廠牌要的是單曲，最後也真的拿到了」這類），已逐張改回落在事實。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/w2-026-{final,kv}.json`。
+- 驗證：QA 標記 0、`wrangler kv bulk put` Success、線上抽驗 5/5，另針對特殊字元與疑義卡
+  （motörhead／buhlo͞one 合字／romantic? 問號／Jon Hopkins／Hans Zimmer／Nina Simone）加驗 6/6。
+  **另因同日有別的會話在做全池空格回溯（也寫 KV），上線後再抽 6 張複驗，確認 026 未被其快照覆蓋。**
+
 ### 2026-07-31｜全池空格回溯收官：KV 快照掃 7,630 筆、再補 2,219 張，desc2 卡池格式全數補齊
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；產出在 `desc-restyle/` 與 Worker KV。
