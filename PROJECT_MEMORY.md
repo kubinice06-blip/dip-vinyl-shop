@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜店主兩項裁定：反向禁令改兩分法、卡池再移除一張
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json`、本備忘錄）＋ Worker KV ＋ `desc-restyle/prompts/`。
+
+**① 反向禁令從「一律不寫」改為兩分法**
+
+晚於專輯發行的事件，此後分兩類處理：
+
+- **與作品直接綁定者可寫**，但正文必須標明時序：成員辭世使本作成為遺作或最後合作、
+  作品本身的後世流傳、宣傳因某事件中斷、廠牌關係就此結束。
+- **與作品無關的後續生平事件仍一律禁寫**：多年後的訴訟與指控、離婚、重組、個人爭議。
+
+此修訂同時追認了既有作法（Tom Petty《Echo》寫 Epstein 最後參與、Nick Cave〈Red Right Hand〉
+的後世流傳、Ashanti《Concrete Rose》寫發行後 Irv Gotti 案導致宣傳受挫），並劃清仍禁的那一邊
+（Cassie 2006 首作不碰 2023 年後訴訟、Whitney Houston 1987 年作不寫 2012 年辭世）。
+規則已寫進 `prompts/research-base.md` 與 `prompts/hook-base.md`。
+
+**依此改寫 Telefon Tel Aviv《Immolate Yourself》**：原本依舊規則完全不提辭世，現改為以此為主軸——
+Charles Cooper 於 2009-01-22 被發現離世、得年 31 歲，距 01-20 發行僅兩天，本作成為他與
+Joshua Eustis 最後一次合作。克制原則照舊：只寫日期、年齡與時序，不寫死因與過程。
+研究稿／hook／寫手輸入／輸出四層同步更新，單鍵上傳後以 `wrangler kv key get` 直查驗證一致。
+
+**② 卡池：移除 1 張、保留 1 張（7,548 → 7,547）**
+
+- 移除 `colde|love part 1`：2019 年 EP，研究兩次檢索連曲目與製作細節都查無，
+  無故事亦無歷史獨特性。KV 鍵已刪並以 404 驗證，舊值留在 `batches/w2-037-kv.json`。
+- **保留 `marshall jefferson|move your body`**：形式雖是 1986 年 12 吋單曲而非專輯，
+  但副標即「The House Music Anthem」、是把鋼琴帶進 house 的奠基作，且故事完整
+  （廠牌老闆打回票說這不算 house、自費約 9000 美元購置器材、鋼琴以 40–45 拍慢錄再加速、
+  Ron Hardy 在芝加哥 Music Box 一夜連放六次）。符合店主「有故事、有歷史獨特性就留」的標準。
+
+**待辦**：反向禁令放寬後，001–037 舊批可能有卡因舊規則過度克制而漏寫「與作品直接綁定」的
+辭世或中斷事件，建議比照 2026-07-31 那次回溯清查再掃一輪。
+
 ### 2026-08-01｜desc-restyle w2-036／037 兩批上線（累計 2,613／6,972，37.5%）
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
