@@ -2181,6 +2181,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-01｜卡池更正：Laika 專輯名 Sun→Moon（seed 7547，張數不變）
+- Repo：`dip-vinyl-shop`（`seed_cards.json`）、`desc-restyle`（任務檔與批次檔）
+- 改動：`["Laika","Silver Apples of the Sun"]` 更正為 `["Laika","Silver Apples of the Moon"]`。Laika 1994 年首作正確名稱取自 Morton Subotnick 1967 年的電子樂作品《Silver Apples of the Moon》，該團目錄中並無任何名為「Sun」的作品，屬卡池原始資料的字詞錯誤。
+  - **發現途徑**：desc-restyle 批次 w2-051 的研究層代理在查證時發現曲目與專輯名對不上，主動回報而非照著錯誤名稱編寫。
+  - **查證**：MusicBrainz release-group 查詢命中《Silver Apples of the Moon》（primary-type Album、first-release-date 1994-10-17、artist Laika、score 100），無「Sun」版本。
+  - **連帶更新**：`desc-restyle/restyle-tasks.json`、`batches/wave2/w2-051-cards.json`、`batches/research/w2-051-e.json` 的 `desc2:` key 一併改為 `desc2:laika|silver apples of the moon`。本張尚未寫入正式簡介，此時更名不影響已上線內容。
+  - **孤兒鍵清除**：舊 key `desc2:laika|silver apples of the sun` 在 KV 中存有 worker 即時生成的 AI 備援值（卡片被抽到時會自動生成回寫），已一併刪除。
+- 主要檔案：`seed_cards.json`
+- 驗證：`seed_cards.json` JSON 可解析、張數維持 7547；`wrangler kv key get` 查舊 key 回 404 確認刪除（**未使用 `/album-desc` 驗證，該端點會觸發 worker 重新生成並回寫、反而污染已清除的鍵**）；`qa-batch.mjs research w2-051` 全批 50 張 key 與卡單完全一致。
+
 ### 2026-08-01｜desc-restyle：批次 044–048 共 250 張上線（剩餘卡池 3,979 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-044～048 五批各 50 張。研究 25 組、hook 25 組、寫作 10 組全數完成，五批 QA 皆 0 標記，字數 179–240（各批均值 229–231），KV 逐字比對 250/250 一致。批次主題：044 藍調復興／紐奧良／經典搖滾／軟搖滾與迪斯可、045 英國後龐克與哥德／Postcard 蘇格蘭獨立／Flying Nun 紐西蘭、046 SST 與低傳真美國獨立／Elephant 6／4AD／shoegaze、047 shoegaze 後段／Madchester／Britpop／grunge 週邊、048 美國硬蕊與 Dischord／Epitaph／英國第一波龐克與無政府龐克。
