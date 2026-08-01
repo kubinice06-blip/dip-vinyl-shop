@@ -1,5 +1,46 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-01｜反向禁令修訂後的全池回溯清查（001–037）：實際需改 4 張
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 與 `desc-restyle/`。
+- 承同日「反向禁令改兩分法」的裁定，全面回頭清查舊批是否有卡因舊規則過度克制。
+
+**方法（三段式，新增兩支腳本）**
+
+1. `scan-suppressed.mjs`：掃 **251 個 hook 檔**的 note，逐句找「禁令措辭 × 事件詞」同句命中者，
+   得 **166 張**（死亡 78、訴訟指控 40、解散離團 36、重組復出 13、廠牌中斷 2）。
+2. `fetch-suppressed.mjs`：以 Cloudflare bulk get 抓這些卡的 KV 現值，比對正文是否已有事件痕跡，
+   篩出 **112 張「正文無痕跡」**。
+3. 主會話逐張回讀正文全文判讀，判準只有一條：**辭世／事件是否使本作成為最後作品**。
+
+**實際需改 4 張（皆為成員辭世使本作成為最後作品）**
+
+| 卡 | 時序 |
+| --- | --- |
+| Linkin Park《One More Light》 | Bennington 發行兩個月後辭世，北美巡演取消 |
+| TV on the Radio《Nine Types of Light》 | Gerard Smith 確診肺癌無法巡演，發行**八天**後辭世 |
+| The Prodigy《No Tourists》 | Flint 四個月後辭世 |
+| Grateful Dead《Built to Last》 | Mydland 隔年辭世，本作是他與樂團的最後一張錄音室專輯 |
+
+四張皆只寫日期、年齡與時序，**不寫死因與過程**（與 Telefon Tel Aviv 同一處理）。
+改完一度全部衝破 280 硬上限（282–297），已再修剪至 232–254。
+研究稿／hook／寫手輸入／輸出四層同步，KV 直查驗證 4/4，四個批次 QA 全 0。
+
+**其餘 108 張維持原狀**——多為與作品無關的後續事件（Nirvana《Bleach》之於 Cobain 1994、
+DMX 1998 年作之於 2021 辭世、Cassie 與 Mary J. Blige 等十餘張 Bad Boy 體系的 Combs 禁令、
+Ryan Adams 與 Brand New 的未證實指控），或本來就是姊妹卡互斥條款而非禁令
+（Dream Theater、Smashing Pumpkins、Rage Against the Machine、Bell Biv Devoe）。
+
+**比對詞表的誤判要記住**：不少卡其實早就寫了，只是用詞不在 TRACE 表裡——
+Van Halen《1984》已寫「1985 年 4 月他宣布退出樂團，經典陣容告終」、
+2Pac《Better Dayz》開頭就是「1996 年遇害的人，怎麼在 2002 年交出一張雙碟新作」、
+Slayer《World Painted Blood》已寫「原始陣容共同完成的最後一張」、
+Bill Withers《Watching You Watching Me》已寫「最後一張錄音室專輯…自此淡出樂壇」。
+**判讀一律回讀正文全文，不可只信關鍵字比對。**
+
+**方法限制**：本次只掃得到「hook note 曾下過禁令」的卡。若研究層當初根本沒查到該事件，
+就不會留下禁令句，也就掃不出來——這類漏網只能靠日後單張深潛或人工發現。
+
 ### 2026-08-01｜店主兩項裁定：反向禁令改兩分法、卡池再移除一張
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`、本備忘錄）＋ Worker KV ＋ `desc-restyle/prompts/`。
