@@ -2181,6 +2181,19 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜worker 封面解析補上 Cover Art Archive 層；Nina Simone 封面修正
+- Repo：`dip-vinyl-worker`（`src/index.js`，commit 8009ff6，已 push 並部署）
+- 改動一（本次需求）：`/spotify-search` 在 Spotify 未取得封面時，新增 MusicBrainz release-group 查詢 → Cover Art Archive 取封面的補救層。`ALBUM_ONBOARDING.md` 記載的解析鏈本來就有這層，但執行期先前缺席（實際只有 card_catalog → Spotify → Bandcamp）。
+  - 門檻：MusicBrainz score >= 90 且 `primary-type` 為 Album。這層的用途就是修正 Spotify 的最近似匹配，自己放行低分結果只是換來源犯同樣的錯。secondary-types（Compilation／Live）不排除，卡池本就收錄少數精選輯與現場盤。
+  - **CAA 的 JSON 有部分條目回傳 `http://` 網址**（實測 Laika、Rodan），前台為 HTTPS 會被瀏覽器以混合內容擋成破圖，故一律強制升級為 https。這是實測才發現的，靜態閱讀程式碼看不出來。
+  - 線上驗證：Virginia Astley《From Gardens Where We Feel Secure》與 Talulah Gosh《Backwash》先前 `/spotify-search` 回空手，現在取得 CAA 封面且為 https。Drunks with Guns（Spotify 無、CAA 亦無封面）正常落空回 `{}`，不影響前端續打 `/bandcamp-search`。
+- 改動二（工作區既有、非本次需求，經店主確認後一併提交）：YT Music「頂部大卡片備援」限縮為含 CJK 的查詢。該備援不驗證專輯名，對純 ASCII 查詢會誤採同藝人的別張專輯（New Herd→Beneath the Underdog 等）；快取鍵一併升為 v6 讓舊的錯誤配對失效。
+- 改動三：`desc2:`／`cover6:` 所在 KV 直接覆寫 `cover6:nina simone|gifted & black`，改為 Cover Art Archive 的 1970 年正確封面，`spotifyUrl` 設為 null（原值指向 2006 年合輯，留著會把使用者導到錯的專輯）。
+  - **修正一項先前的錯誤認知**：封面覆寫不需要 Firestore 權限。前台鏈是 card_catalog → Spotify → Bandcamp，未入庫的卡直接吃 worker 的 `cover6:` KV，而該 namespace（`5f65e74b17d644b68a3f542b08a5c105`）與 `desc2:` 完全相同，用既有的 `CLOUDFLARE_API_TOKEN` 即可寫入。
+- **未解決的問題（重要）**：本補救層**只在 Spotify 完全查不到時觸發**，因此擋不住 Nina Simone 這一類「Spotify 有回結果但回錯」的情形——該張是靠直接改 KV 修好的，不是靠這層。根因在既有比對邏輯的 `albumOK`：專輯名採「正規化後互相包含」，卡池的 `gifted and black` 正好是合輯全名 `forever young gifted and black songs of freedom and spirit` 的子字串故通過。這個寬鬆比對是刻意的（要吃得下 `(Deluxe Edition)` 等副標），但同時放行了「短名被長名包住」的錯配。若要收緊需加長度比例護欄，有誤傷現有正確配對的風險，未動。
+- 主要檔案：`dip-vinyl-worker/src/index.js`
+- 驗證：`node --check` 通過、`wrangler deploy --dry-run` 建置成功、已部署（Version ID 2a46b3b9）；補救層演算法先以獨立腳本實測五張，再於部署後線上實測十三張，結果如上。
+
 ### 2026-08-02｜desc-restyle：批次 049–052 共 200 張上線（剩餘卡池 3,779 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄（Laika 卡池更正另有一筆紀錄）
 - 改動：跑完 w2-049～052 各 50 張。研究 20 組、hook 20 組、寫作 8 組，四批 QA 皆 0 標記，字數 198–240（各批均值 225–233），KV 逐字比對 200/200 一致。批次主題：049 酒吧搖滾與 50 年代搖滾／陽光流行／法國香頌與 blaxploitation／舊金山迷幻、050 英國合成器流行與精緻流行／2 Tone／澳洲後龐克、051 工業與秘教／Factory／C86 與 Sarah／Stereolab 與 Broadcast、052 slowcore／路易維爾與芝加哥後搖滾／Albini 系譜／噪音搖滾。
