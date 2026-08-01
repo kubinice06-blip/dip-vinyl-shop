@@ -2181,6 +2181,20 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-01｜desc-restyle：批次 044–048 共 250 張上線（剩餘卡池 3,979 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-044～048 五批各 50 張。研究 25 組、hook 25 組、寫作 10 組全數完成，五批 QA 皆 0 標記，字數 179–240（各批均值 229–231），KV 逐字比對 250/250 一致。批次主題：044 藍調復興／紐奧良／經典搖滾／軟搖滾與迪斯可、045 英國後龐克與哥德／Postcard 蘇格蘭獨立／Flying Nun 紐西蘭、046 SST 與低傳真美國獨立／Elephant 6／4AD／shoegaze、047 shoegaze 後段／Madchester／Britpop／grunge 週邊、048 美國硬蕊與 Dischord／Epitaph／英國第一波龐克與無政府龐克。
+  - **場景群聚控制是本輪重點，三個高密度群聚全部只落一張**：046 的 4AD 七張裡廠牌敘事只寫在 This Mortal Coil、shoegaze 十張裡「類型綽號由來」只寫在 Chapterhouse、Elephant 6 集體起源只寫在 The Apples in Stereo；045 的 Postcard 創辦故事只在 Orange Juice、Flying Nun 創辦故事只在 The Clean；048 的 Epitaph 草創只在 Bad Religion《Suffer》、Dischord 自營與低票價只在 Fugazi《Red Medicine》、無政府龐克體系與 Crass Records 成因只在 Crass《The Feeding of the 5000》。同體系其餘卡片僅將廠牌當作發行資訊帶過。
+  - **反向禁令兩分法實測無誤**：Mother Love Bone《Apple》把 Andrew Wood 辭世日與延後發行日並列標明時序、不寫死因過程；Slowdive《Pygmalion》寫「1995-02-06 發行→約一週後解約→隨即解散」；The Germs《GI》標明 Darby Crash 辭世晚於發行一年多、僅點到用藥過量。反向：John Denver 的州歌通過（2007）明寫晚於 1997 年辭世，Harry Chapin 1981 年辭世與 X-Ray Spex 後續辭世則完全不寫入。
+  - **人工審稿抓到四處機器檢查抓不到的問題**：`julian cope|fried` 照抄維基百科「距首作僅隔六個月」的錯算術（首作 1984-02-17、本作 11-09，實為近九個月），改為「不到一年」；`swervedriver|mezcal head` 誤用「夢核」（中文語境指 dreamcore 網路美學，非「夢幻」），改為「夢幻」；`oasis|be here now` 六位數裸寫「663389 張」不符全池「X 萬 Y 張」慣例，改為「66 萬 3389 張」；048-2 兩處「貝手」漏字補為「貝斯手」（全池其餘批次無此錯字）。
+  - **QA 腳本補丁**：`qa-check-research.mjs` 與 `qa-check-hooks.mjs` 將《》內的原始標題排除於禁語與格式檢查之外。起因是 047 寫手依新規則正確保留《死前必聽 1001 張專輯》卻被誤標為禁語「必聽」——禁語只約束行文、不約束專名。
+  - **並行代理暫存檔衝突**：044 寫手回報其 `chk.mjs` 被另一代理覆寫。三份 prompt 範本均已加入「臨時腳本與中間檔一律加批次組別前綴」規則。
+  - **良性誤報記錄**：QA 逐卡比對事實表，寫手若採用同批其他卡研究稿裡的正確資訊會被誤標。本輪一例：`the mission` 的 note 只寫「Eldritch」，寫手補上全名「Andrew Eldritch」（該全名見於同批 Sisters of Mercy 兩張的研究稿），事實正確，保留。
+  - **內容過濾器零中斷（連續第五輪）**：本輪 60 個代理全程無中斷，再次驗證根因是「整批內容重新輸出」而非題材敏感度——048 的無政府龐克十張含核戰意象、猥褻出版品查扣、極右翼滋事等題材，全數順利完成。
+  - **待店主裁示**：`the clean|anthology` 正文自述為 2002 年 Flying Nun／Merge 雙 CD 精選輯而非錄音室專輯。它有正式封面與正式發行，且 The Clean 早期僅出 EP 與單曲、這是唯一能完整聽到那批錄音的出版品，依「非正規專輯即移除」的字面標準屬邊界案例，暫予保留。
+- 主要檔案：`desc-restyle/batches/w2-044~048-{final,kv}.json`、`batches/{research,hooks,input,output}/*`、`desc-restyle/progress.json`、`desc-restyle/prompts/*.md`、`desc-restyle/qa-check-{research,hooks}.mjs`
+- 驗證：五批 `qa-check-research` 全數 0 標記、`fix-spacing` 待補 0 張；中文數字榜單名次殘留掃描 0 處；`verify-kv.mjs` 以 bulk-get 逐字比對 KV，五批各 50/50 一致。（註：`verify-kv.mjs` 在 Windows 上會於結果印出後觸發 libuv 關閉期 assertion，取結果請 grep 驗證行、勿用 `tail -1`。）
+
 ### 2026-07-28｜卡池清理：移除四張查無對應的卡（seed 7558→7556、apex pearl 109→107）
 - Repo：`dip-vinyl-shop`
 - 改動：店主裁定移除查證後確認不存在或無法對應的卡片。`seed_cards.json` 移除 `["Genesis","Limbo"]`（官方目錄無此專輯，僅 1992 bootleg 與 1969 曲目〈In Limbo〉同名）與 `["Ennio Morricone","Ennio Morricone"]`（確認無同名專輯，原對應多張同名授權合輯）；`apex_pool.json` 的 pearl 分類移除 `["Michael A. Grant","Michael A. Grant"]`（查無任何紀錄）與 `["San Ul Lim","The Mountain Hut"]`（查無對應專輯）。四張卡在 KV 的 `desc2:` 簡介一併刪除，避免孤兒資料。
