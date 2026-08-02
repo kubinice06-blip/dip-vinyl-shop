@@ -2181,6 +2181,27 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 061 共 50 張上線（平行模式收官，060／061 合計 100 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-061 一批 50 張，**與 060 平行跑三層、但依護欄分批審稿上線**（060 先收尾，061 稿件擱置至 060 上線後才開審）。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 5 組（Opus，a–e 對齊），QA 0 標記，字數 174–245（均 230），KV 逐字比對 50/50 一致。內容：巴西吉他與豎琴十張、大編制與跨界十張、底特律 Tribe 與黑人自營廠牌十張、Blue Note 六〇年代與鼓手十張、五〇年代硬咆勃十張。
+  - **人工審稿修十處，其中一處又是 hook 前提整個錯掉**：
+    1. **Luiz Bonfá《Solo in Rio 1959》**——原 hook 寫「母帶在庫房躺了四十多年，2005 年才第一次公開發行」，查證後**這批 1959 年錄音當年就以《O Violão de Luiz Bonfá》之名發行過**。真正的故事是母帶險些散失、1990 年隨 Emory Cook 把整間唱片公司捐給 Smithsonian 才重見天日、2005 年的 CD 依原順序重現舊作並補上未發表曲目。連 hook 重寫並同步 research／hooks／input 三層。
+    2. **Dorothy Ashby《Afro-Harping》**——hook 以「她在婚宴上一場場推翻它」立軸，正文卻從頭到尾沒回到婚宴，懸念沒收尾。事實表本就有「靠免費演出與婚宴、舞會場合逐漸說服懷疑者」，已補回。
+    3. **Art Taylor《A.T.'s Delight》**——「〈Move〉一曲裡他與 Taylor、Kelly 交鋒」的「他」指涉斷裂（前句連續出現三個人名），且該交鋒說法不在事實表內，整句移除。
+    4. **Philly Joe Jones《Blues for Dracula》**——「他拿湯還沒凝固前得趕快喝這類台詞開玩笑」句子破碎不可讀（原始素材是吸血鬼口白裡「趁還沒凝固前把湯喝了」的玩笑），改寫。
+    5. David Axelrod《Songs of Experience》的收語「後來成為經典」屬評語式收尾，改為事實。
+    6. 《Rubaiyat》同一張卡內世紀寫法不一致（hook 十一世紀／正文 11 至 12 世紀），統一為中文數字。
+    7–10. **四處校對用的編輯註記漏進正文**（見下）。
+  - **與 060 同型的失敗模式再次出現**：特注寫「不得寫成 X」時，寫作層把否定句本身寫進了消費者看的正文——「而非同一份母帶的重發」「專輯名的語源沒有一手來源可查⋯坊間流傳的其他說法都無從查證」「所謂聽來不像同一支樂團，指的正是⋯」「兩個數字在不同來源間並存」。**兩批合計 10 處**。已確認往後特注一律改寫成「正文只寫查證後的正確版本，不要交代卡池標錯這件事」。
+  - **研究層推翻主線 14 處**：Charles Tolliver《The Ringer》是 **1969 年錄於倫敦、英國 Polydor 發行，與 Strata-East 無關**（他兩年後才共同創立該廠牌）；The Lightmen 的廠牌**不是 Judnell** 而是 Bubbha Thomas 自營的 Bubbha's Lightnin'；Marcus Belgrave《Gemini II》採信 Tribe 而非網路孤說的 Gem Eye；**Baden Powell《Os Afro-Sambas》卡池標的 1991 不是重發、而是他本人 1990 年獨力重錄的版本**（重錄時原版合作者 Vinicius de Moraes 已辭世十年）；Cal Tjader《Amazonas》的三人角色必須拆開（監製 Airto Moreira／編曲 George Duke／客席鍵盤 Egberto Gismonti）。
+    - **兩處直接推翻主線的假設**：①**Serge Chaloff《Blue Serge》不是他生前最後的錄音**（真正的最後一次是隔年與 Zoot Sims 等人的《Four Brothers…Together Again》）——我原本要拿「最後錄音」當軸線；②**Doug Watkins 與 Paul Chambers 並非血親**，只是同鄉至交，表兄弟之說是長年誤傳。
+    - **一處誤植攔截**：Jack Wilson《Something Personal》的嘻哈取樣說法，實際指的是**另一位同名的風琴手 Reuben Wilson**（而他正是 059 的卡），已整條捨棄。
+    - **一處跨卡時序證實**：〈The Moontrane〉是 Woody Shaw 二十歲寫給 Coltrane 的舊作、**1965 年先被 Larry Young 錄進《Unity》**，九年後 Shaw 才接回自己名下當標題——該時序獨佔於《The Moontrane》，《Unity》只留單句。
+  - **組內同構預先拆開**：e 組同時有三位長號手與三位貝斯手領銜，兩個框架（「長號跟上咆勃的難題」「貝斯手當上領班」）各自只准一張或整組禁用；d 組五張鼓手領銜，「鼓手終於當領班」整組禁用。成稿逐張比對無撞車。
+- 主要檔案：`desc-restyle/batches/w2-061-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-061*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記；`qa-check-research.mjs` 五檔各 0 標記；`fix-spacing` 待補 0 張；中文數字掃描命中 12 處經逐一核對**全為序數**（第九屆、第二張專輯、第四號發行、第二群樂團、第一卷）非榜單名次；音樂人名中文音譯掃描 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **w2-061 50/50、w2-060 復驗 50/50 一致**。
+- 後續：尚未分池者 3,329 張。
+
 ### 2026-08-02｜desc-restyle：批次 060 共 50 張上線（首次採用「平行」模式，060／061 同時跑）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-060 一批 50 張。**店主指定平行模式**（skill 新增的節奏參數，N≤3 才接受），060 與 061 兩批的研究→hook→寫作全部同時跑完（共 30 個代理），**但逐張審稿與上線嚴格照護欄一次只做一批**：本筆只涵蓋 060，061 稿件完成待審。研究 5 組（Sonnet）、hook 5 組（Opus）、**寫作 5 組（Opus，skill 新制的 a–e 對齊）**，QA 0 標記，字數 165–242（均 226），KV 逐字比對 50/50 一致。內容：靈性爵士與 Strata-East 十張、Blue Note jazz-funk 與 Black Jazz 十張、爵士鋼琴十張、巴西二十張。
