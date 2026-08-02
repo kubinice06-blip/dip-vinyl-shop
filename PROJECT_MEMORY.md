@@ -2181,6 +2181,30 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 054 共 50 張上線（爵士正典第一批）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-054 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 179–240（均 231），KV 逐字比對 50/50 一致。內容為九〇年代電台搖滾尾聲四張，加上**爵士正典四十六張**：Miles Davis 十張、John Coltrane 七張、Charles Mingus 六張、Alice Coltrane 四張、Sonny Rollins 四張、Thelonious Monk 三張、Duke Ellington 三張。
+  - **這是本工程密度最高的一批。** 廠牌線幾乎每張卡都沾得到邊，因此主線在派工前先把 8 條廠牌通論與 18 條場景通論各釘死在單一張卡上，跨 054／055 兩批生效，其餘卡一律只能寫成「由某廠牌發行」。**Blue Note 廠牌敘事在 054 整批禁止**，留給 055 的 Art Blakey《A Night at Birdland, Vol. 1》。
+  - **派工方法改良（承接 053 的教訓，效果立竿見影）**：053 曾因主線把未查證的前提寫成肯定句，導致研究與 hook 兩層順著錯誤前提一路長上去。本批起，**特注裡凡屬版本鎖定、序號、廠牌歸屬、人物歸屬的斷言，一律改寫成「請查證」的問句，並要求代理明列任何以來源推翻主線的地方**。這一改就讓研究層推翻了三條通行說法：
+    1. **《Live at Birdland》並非全部錄於現場**——〈Alabama〉與〈Your Lady〉錄於 1963-11-18 的錄音室，只有三曲錄自同年 10-08 的 Birdland 現場。此點後來成為該卡的 hook。
+    2. **《Sun Ship》不是古典四重奏最後一次錄音室錄音**——一週後錄的《First Meditations》才是。主線特注原本是以肯定語氣暗示前者的。
+    3. **《Universal Consciousness》的弦樂由 Alice Coltrane 本人譜寫**，Ornette Coleman 只負責謄寫樂譜，與通行說法相反。此點成為該卡的 hook。
+  - 另有三處誠實處理：《Miles Smiles》的「time, no changes」查無直接來源，改用 Keith Waters 的可查證描述；《Filles de Kilimanjaro》的 Gil Evans 未具名編曲查無確證，直接略去並標 thin；The Verve Pipe《Villains》查證為第三張錄音室專輯（二手資料常誤植第二張）。
+  - **人工審稿修八處**：
+    1. `dizzy gillespie|sonny side up` 發行年誤植 1957，實為 **1957-12-19 錄音、1959 年發行**；〈The Eternal Triangle〉走 rhythm changes，調性由「B 大調」更正為**降 B 大調**。
+    2. `miles davis|relaxin'` 把〈Surrey with the Fringe on Top〉寫成本作曲目，該曲實收於《Steamin'》，已刪。
+    3. `dishwalla|pet your friends` 的 hook 說「換來死亡威脅」，正文卻寫弱成「強烈反彈」——查證後**死亡威脅屬實**，是正文寫弱而非 hook 寫過頭，改正文；單曲全名補回漏掉的 All。
+    4. `marcy playground` 的 hook 說「擱了近十年」與正文的 1992／93 年自相矛盾，改為不指定年數。
+    5. `john coltrane|sun ship` 的 hook 用了中文音譯「柯川」，違反「音樂人名用拉丁原文」，改回 Coltrane。
+    6. `miles davis|on the corner` 同上，「史托克豪森」改為 Stockhausen。
+    7. `john coltrane|meditations` 原寫「這個四重奏最後一次一起錄音」，與 Sun Ship 那張的說法表面衝突，改為「這四人最後一次同場錄音」——Sun Ship 指的是四重奏編制的最後兩次之一，Meditations 指的是四人同場的最後一次，兩者皆為真但用詞須分開。
+    8. `charles mingus|the black saint and the sinner lady` 把「爵士史上首度大量疊錄」寫成定論，來源本身是 arguably，已收斂為「被視為」。
+  - **兩處我差點把對的改成錯的，查到底才發現原稿正確**：①`kmfdm|nihil`（053 那批）的〈Juke-Joint Jezebel〉確實用於《Bad Boys》，《Mortal Kombat》用的是 Giorgio Moroder 混音版；②本批《The Black Saint and the Sinner Lady》確實錄於紐約 Atlantic Studios、Monk《Underground》封面確實是向 Baroness Pannonica de Koenigswarter 致敬且她本人形象在封面上。**溯源要查到底，不能只憑印象反向修正。**
+  - **來源品質警訊**：d 組研究層回報，一個 **AI 生成的百科條目**把《Pithecanthropus Erectus》誤植為六重奏、鋼琴手 Jaki Byard（Byard 實際是《The Black Saint》的鋼琴手）。代理交叉核實後改回正確的五重奏編制。往後遇到這類站點要一律交叉驗證。
+  - **主線派工失誤一處**：Alice Coltrane 四張與《Sun Ship》實際落在 writer-1，主線卻把對應的兩條更正寫進了 writer-2 的特注。所幸 hook 層已把禁令寫進 note 欄，writer-1 照 note 執行無誤（審稿逐張複驗過這五張）。**這再次確認 note 才是有效載體，寫手特注只是輔助。**
+- 主要檔案：`desc-restyle/batches/w2-054-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-054*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記；`qa-check-research.mjs` 兩檔各 0 標記（更正來源後同步改研究與 input 層，避免被誤標為編造）；`fix-spacing` 待補 0 張；中文數字榜單名次與音樂人名中文音譯掃描皆 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**。
+
 ### 2026-08-02｜desc-restyle：批次 053 共 50 張上線（尚未分池者 3,629 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-053 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 179–240（均 230），KV 逐字比對 50/50 一致。批次主題：中西部重型太空搖滾／工業與 EBM／nu metal／後 grunge 與九〇年代電台搖滾。
