@@ -2233,7 +2233,10 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 新增 `scripts/cover-audit/8-refresh-suspects.mjs`（刪鍵 → 重新解析 → 逐張 before／after），
 但**Spotify 當時仍在限流（Retry-After 約 4.4 小時）**，腳本內建前提檢查會自行中止
 （實測 exit 2）——限流期間重解析會全部落到 CAA、白白丟掉 `spotifyUrl`。
-**待限流解除後執行 `node scripts/cover-audit/8-refresh-suspects.mjs`。**
+**已改為自動執行**：`9-auto-refresh-runner.mjs`（commit `dde7bd7`）守在旁邊，每次依 Spotify
+的 `Retry-After` 算出該睡多久，限流一解除就自動叫步驟 8；卸離 session 獨立跑，
+輸出寫 `data/auto-refresh.log`（已 gitignore）。啟動時剩約 3.7 小時。
+若該進程被中斷，手動補跑 `node scripts/cover-audit/8-refresh-suspects.mjs` 即可。
 
 ### 2026-08-02｜卡池封面「Spotify 最近似匹配」錯配全面稽核：錯配率 3.5%、全池約 260 張
 
