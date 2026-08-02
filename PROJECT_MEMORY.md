@@ -2181,6 +2181,29 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜店主裁定：廠牌敘事的「一次配額」取消；desc-restyle 批次 057 共 50 張上線
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- **規則變更（店主裁定，即刻生效）**：先前產線把「同一條廠牌敘事整個工程只准出現一次」當成硬性配額在管，**這是主線自己加嚴的，現已取消**。新規則是：**只要某張專輯的背景故事本來就牽涉廠牌，就要把它寫出來**，不必顧慮同一廠牌是否已在別張卡寫過。
+  - **唯一保留的限制是反同構**：不得把同一段廠牌沿革原文照貼——每張要從自己這張唱片的角度切進去（這是他在該廠牌的第幾張／廠牌當時的處境促成了這張／製作人的哪個決定造就了這張的聲音），而不是重述創辦史。
+  - **回頭清查已上線的 054–056**：共 81 張曾被下過廠牌禁令，但其中只有 10 張的研究稿真有廠牌素材，而那 10 張裡 9 張的廠牌事實其實都已寫入正文——因為舊配額只擋「展開沿革」，不擋「這是他在該廠牌的最後一張」「廠牌財務吃緊才押這張」這類與作品綁定的事實。**已上線內容實質未受損，不需回溯重寫。** 唯一小缺口是 055《The Real McCoy》未寫「也是他在 Blue Note 的首張領銜作」，該卡已貼 239 字上限，暫未補。
+  - **真正被舊規則寫壞的是尚未執行的 057**：該批 c 組十張幾乎全是 ECM，而 Manfred Eicher 的錄音美學本來就是那些唱片的故事本體。規則在派工前解禁，效果立即可測——本批成稿裡 **ECM 出現於 14 張、Impulse! 9 張**，另有 Saturn／ESP-Disk／Elektra／Freedom／Arista／Philly Jazz／Blue Thumb／FMP／Tzadik 各自現身。
+- 改動：跑完 w2-057 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 177–240（均 229），KV 逐字比對 50/50 一致。內容：融合爵士（Return to Forever 2、Weather Report 2、Mahavishnu 2、Pat Metheny 4）、ECM 群、AACM 與 Art Ensemble 2、Archie Shepp 3、Pharoah Sanders 4、Sun Ra 4、自由爵士體制外五張。
+  - **研究層推翻主線七處，其中三處是廠牌歸屬**：①《Out of the Woods》是 **Elektra** 不是 ECM；②《The Black Ark》是 **Freedom** 不是 ESP-Disk；③《Liberation Music Orchestra》是 **Impulse!** 不是 ECM；④《Conception Vessel》**沒有 Sam Rivers**；⑤《Four for Trane》五曲**只有四首**取自 Coltrane，末曲〈Rufus〉是 Shepp 自作；⑥《Spaces》**不是四人同台**，Corea 只客串一曲；⑦《As Falls Wichita》標題曲**不是純二重奏**（另有 Nana Vasconcelos），真正的二重奏是〈September Fifteenth〉——**曲名正是 Bill Evans 的辭世日 1980-09-15、也是題獻對象**。
+  - 另三處誠實標記：Eberhard Weber 的自製五弦電低音提琴查無專屬名稱、《Thembi》命名對象兩說並存、《Atlantis》原始廠牌查證不實故標 thin 且全篇不提廠牌。
+  - **人工審稿修九處**：
+    1. **《Lanquidity》的 hook 前提是錯的**——SNL 演出為 1978-05-20、錄音為 1978-07-17，**相隔近兩個月**，不是「演完當晚直奔錄音室」。整張連 hook 重寫。
+    2. 《Out of the Woods》寫成「三人編制」，實為**四重奏**（漏了貝斯手 Glen Moore）；同時經 Wikipedia infobox 再次確認廠牌 Elektra 無誤（一則搜尋摘要曾誤稱 Vanguard）。
+    3. 《Bright Size Life》的年齡各多算一歲：1975 年 12 月錄音時 **Metheny 21 歲、Jaco 24 歲**。
+    4. 《Spectrum》寫成「Cobham 離開 Mahavishnu 之後的首張個人作」，實際錄於 1973 年 5 月、**當時原始陣容正在瓦解、他尚未離團**。
+    5. 《Space Is the Place》自相矛盾：寫了「10 月 19 至 20 日」又說「一日完成」。
+    6. 《Beyond the Missouri Sky》把 Lee's Summit 自造成中文「李鎮」，改用原文。
+    7. 《Fire Music》的貝斯手拼寫 Izenson → **Izenzon**。
+    8. 《Thembi》的錄音期間「1970 年冬至 1971 年冬」改為 1970 年 11 月至 1971 年 1 月。
+    9. 《Odyssey》把 Rypdal 彈的 string ensemble 寫成「弦樂團」，改為**弦樂合成器**。
+  - **產線問題（已寫進 `prompts/writer-base.md`）**：writer-1 回報初稿 **25 張有 19 張超標、最高 312 字**，才回頭刪節，違反「絕不先寫長再刪」的鐵則。原因是**中文行文夾大量拉丁人名、廠牌名與錄音室名時，實際字元數遠高於直覺估計**（一個 `Freddie Hubbard` 就吃掉 15 個字元）。已在寫作層範本加註：爵士／ECM 這類每張都要點名四五位樂手的批次，**動筆前就把陣容名單壓到主故事真正需要的那幾位**，不要先全列再刪。
+- 主要檔案：`desc-restyle/batches/w2-057-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-057*`、`desc-restyle/prompts/writer-base.md`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記（研究層另修 40 處半形逗號）；`qa-check-research.mjs` 兩檔各 0 標記（三處主線更正已同步回研究與 input 層）；`fix-spacing` 待補 0 張；中文數字榜單名次與音樂人名中文音譯掃描皆 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**（含 `the colours of chloë` 的 ë）。
+
 ### 2026-08-02｜desc-restyle：批次 056 共 50 張上線（爵士女聲與 Blue Note 新浪潮）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-056 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 187–239（均 224），KV 逐字比對 50/50 一致。內容：**14 張爵士女聲與人聲卡**、Ornette Coleman 4 張、Blue Note 新浪潮（Andrew Hill 3、Bobby Hutcherson 3、Jackie McLean 3、Joe Henderson 4）、Roland Kirk／Yusef Lateef／Keith Jarrett 各 2–3 張。
