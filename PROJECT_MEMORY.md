@@ -2180,6 +2180,40 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜desc-restyle：批次 062 共 48 張上線（新批次配置的第一批實跑）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-062，這是前一筆紀錄那份 67 批新配置的**第一批實跑**。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 5 組（Opus），QA 三關 0 標記，字數 148–240（均 227），KV 逐字比對 48/48 一致。內容：巴西 MPB 與 Tropicália、Afrobeat 與衣索比亞爵士、靈性爵士與 Sun Ra、Weather Report 與 Cannonball。
+- **原定 50 張，抽出 2 張後以 48 張執行**——見下方「卡池重複卡」。
+- **新配置的效益已可量測**：
+  - Fela×4、Caetano×4、Gil×3、Tom Zé×3、Chico×3、Weather Report×3、Cannonball×3 全部落在**同一組**，分軸只需組內處理，**不必再寫跨組排除條款**（舊配置下這些會散在十幾批）。
+  - **五組寫手全部一次到位、零初稿超標**，與 060／061「初稿全數超標再回頭壓」形成對比。推測原因是同藝人集中後，寫手不必為跨組排除而額外交代背景。
+  - 工具沒寫死 50 已獲驗證：`merge-writer-input.mjs` 依研究層實際張數對齊，48 張順利切成 10/10/9/9/10。
+- **但預先分批解決不了跨批同構**：Braxton《In the Tradition》查出「原定樂手 Dexter Gordon 缺席、臨時由他頂替」，與**前一天才上線的 061《Heavy Sounds》**（Larry Coryell 缺席、剩下兩人索性一起掛名）**完全同骨架**。兩張卡本來就不該在同一批，只有人眼比對得出來。已下禁令改軸到「寫圖形記譜的人這回規矩吹標準曲」的反差上。
+- **新查出的卡池問題：同一張專輯有兩張卡（不同藝人掛名）**。把預切卡單並排掃描後，全池找到 **8 對**：
+  | 專輯 | 兩張卡 | 狀態 |
+  | --- | --- | --- |
+  | 《Undercurrent》 | Bill Evans & Jim Hall (055) ／ Jim Hall (062) | 055 已上線，062 這張**已擱置** |
+  | 《Elis & Tom》 | Elis Regina & Antônio Carlos Jobim (060) ／ Elis Regina (062) | 060 已上線，062 這張**已擱置** |
+  | 《The Score》 | The Fugees (010) ／ Fugees (021) | **兩張都已上線** |
+  | 《Promises》 | Floating Points, Pharoah Sanders & LSO (006) ／ Floating Points (125) | 006 已上線 |
+  | 《In the Heart of the Moon》 | 合輯掛名＋兩位個人掛名 (072) | **一張唱片三張卡**，未上線 |
+  | 《Roberta Flack & Donny Hathaway》 | 合輯掛名 ／ Donny Hathaway (067) | 未上線 |
+  | 《Samba Esquema Novo》 | Jorge Ben ／ Jorge Ben Jor (075) | 未上線 |
+  擱置紀錄寫在 `desc-restyle/HELD_DUPLICATES.json`。**建議從卡池移除重複的那一張而不是寫兩份簡介，待店主裁示。**
+  另有兩件是誤報、不需處理：Wayne Shorter《Atlantis》與 Sun Ra《Atlantis》、Kurt Rosenwinkel 與 People Under the Stairs 的《The Next Step》，都只是同名不同作。
+- **另一件待裁示**：Mahalia Jackson《Mahalia Jackson》(1971) 查證為**精選輯／重發而非原創專輯**，依卡池收錄標準可能該移除；本批先以 thin 卡並在正文寫明選輯性質保守處理。
+- **研究層推翻主線 18 處**，版本鎖定佔 7 處（這批巴西作品同名專輯特別多）：Gil《Gilberto Gil》(1968) 慣稱《Frevo Rasgado》**且與同年集體合輯《Tropicália》是兩張不同作品**；Tom Zé 首作**官方標題就是同名**、「Grande Liquidação」只是坊間通稱；Chico Buarque《en español》**既非原創也非選輯**而是舊作以西語重錄；Azymuth《Azimüth》**帶變音**、1977 年起才改拼作 Azymuth。推翻我的假設 5 處：**Art Blakey《Child's Dance》沒有 Cedar Walton**（他在同期《Anthenagin》）、**Charles Lloyd《Soundtrack》的貝斯手是 Ron McClure 不是 Cecil McBee**、**Elis Regina《Poema de amor》是第二張不是首張且刻意迴避 bossa nova**、Cannonball《Sharpshooters》非「解散前後」而是數月後為了結合約重聚、Fela 改名晚於《Gentleman》兩年故不寫。另打假三處來源：Terry Callier 卡的收購方是 **GRT 不是 GRP**（GRP 1978 年才成立）、David Byrne 發掘 Tom Zé 的年份採 **1989** 而非自相矛盾的 1998、**Tom Zé《Todos os Olhos》封面那顆「眼睛」依攝影師本人說法是模特兒嘴唇夾著玻璃珠**（坊間版本只是傳說）。
+- **人工審稿修十一處**，其中三處是新失敗模式的延伸：
+  1. **Jim Hall 那張的 hook 直接寫著「資料庫至今記著兩個年份」**——這是校對註記不是文案，連 hook 重寫。**新增的掃描關鍵詞當場抓到。**
+  2. **Mahalia Jackson 選輯那張把「Discogs 的分類欄」「Wikipedia 的目錄」當證據寫進正文**——逐張讀才發現，掃描關鍵詞漏了。
+  3. **Chico Buarque《Chico Buarque》寫「這張靠年份與〈Cálice〉辨認」**——同樣是版本鎖定指示外洩。
+  **掃描關鍵詞已補：Discogs／Wikipedia／分類欄／目錄裡／辨認。**
+  其餘八處：Funmilayo Ransome-Kuti 在 1977 年突襲時是 **76 歲不是 77**（1900 年 10 月生）；EWF 卡的「Top Soul Albums」「Hot Soul Songs」是**現代回溯標籤**、1973 年當時不這樣叫，比照 059 處理 Hot 100 的做法改用中文榜名；同批內 Africa 70／Afrika 70 拼法不一；「約魯巴高麗樂」會被讀成韓國音樂、改用 highlife 原文；引號『』改為全池慣例的「」；koto 寫成「古箏」改為日本箏；曲名大小寫與專輯名不一致。
+- **同批內同名不同人的陷阱又出現一次**：兩張卡各自出現「Sandra Smith」——Fela 卡指的是引介他接觸黑權運動的黑豹黨成員，McCoy Tyner《Asante》指的是以 Songai 為藝名的歌手，兩者無關。已改用唱片實際掛的藝名迴避。
+- 主要檔案：`desc-restyle/batches/w2-062-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-062*`、`desc-restyle/HELD_DUPLICATES.json`（新增）、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關 0 標記；`qa-check-research.mjs` 五檔各 0 標記（改動後已同步 research／hooks／input 三層，否則會被誤標編造）；`fix-spacing` 補 1 張後歸零；中文數字掃描命中 13 處經逐一核對**全為序數**；音樂人名中文音譯 0 處；校對痕跡掃描歸零；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **48/48 一致**（含帶 `..` 的 key `jim hall|... where would i be?`，該 key 用 `wrangler kv key get` 會被 403 擋下，只能走 bulk get）。
+- 後續：063 卡單已預切完畢（50 張，jazz 家族第二批），可直接開跑。
+
 ### 2026-08-02｜desc-restyle：一次規劃完剩餘 67 批的配置（w2-062–128，3,329 張）
 - Repo：`desc-restyle`（新增 `BATCH_PLAN.md` 與 67 份預切卡單）；`dip-vinyl-shop` 僅更新本備忘錄
 - 起因：店主指出連續幾批都遇到**相關專輯被拆到不同批**（Eddie Henderson 跨 059／060、Hampton Hawes 跨 060／061），要求先把批次分配好、之後再依配置執行。
