@@ -2181,6 +2181,34 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 059 共 50 張上線（靈魂爵士／風琴爵士／jazz-funk／靈性爵士）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-059 一批 50 張。研究 5 組（Sonnet）＋補查 1 組、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 207–240（均 234），KV 逐字比對 50/50 一致。內容：硬咆勃與 Blue Note 靈魂爵士十張、Hammond 風琴爵士十張、jazz-funk 與 CTI 十張、Prestige 靈魂爵士與現場實錄十張、靈性爵士與黑人意識十張。
+  - **研究層推翻主線 17 處**，其中五處是主線的假設整個落空：
+    1. **《Person to Person》查無 Etta Jones 參與**——她本來是主線設計的軸線，查得的完整陣容裡沒有她；且兩人**多數資料稱從未正式結婚**（人稱「Aunt Etta and Uncle Person」），只能寫長期音樂搭檔。
+    2. **《Afro-Disiac》鼓手是 Bernard Purdie**，不是主線問的 Idris Muhammad。
+    3. **〈Blues Walk〉是 Lou Donaldson 自己的原創**，與 Clifford Brown 1955 年的〈The Blues Walk〉同名異曲，不是翻奏；且 **Ray Barretto 的康加鼓編制早一年在《Swing and Soul》就存在**，本作是延續而非開創。
+    4. **〈Mercy, Mercy, Mercy〉屬 1966 年錄製的另一張專輯**，與《Country Preacher》無關。
+    5. **Doug Carn《Infant Eyes》的歌詞 credit 是 Doug 為主要執筆者**，Jean Carn 的角色是演唱而非填詞——直接推翻主線特注的預設方向。
+    其餘包括：Chick Corea 在《The Thing to Do》**不是**錄音室首度亮相、且不可寫成「原班節奏組」（只有三人承襲自解散的 Horace Silver 五重奏）；Ramsey Lewis《The In Crowd》發行當下廠牌是 **Argo**，同年 10 月才因商標爭議改名 Cadet；Charles Earland 在 Jimmy McGriff 團吹的是**次中音**而非低音薩克斯風；《Alive!》有**兩位風琴手同台**（Ronnie Foster 與 Neal Creque）且顫音琴手拼法為 **Willie Bivens**；《Alligator Bogaloo》「最暢銷」說法查無實據已捨棄，改用查實的 Top LP's 第 141 名。
+  - **兩組身分查證定案**：「Big John Patton」與「John Patton」是同一人；**「Lonnie Smith」（風琴手）與「Lonnie Liston Smith」（鋼琴手）是不同的兩個人**——而且風琴手在名字前加「Dr.」正是為了避免這個混淆，這條查證本身成了該卡的主故事。
+  - **補查代理推翻了首輪研究的否定結論**：Reuben Wilson 的職業拳擊背景首輪判「查無來源」，補查在 WRTI／NPR 訃聞找到佐證（打過 12 場職業賽、當過 Floyd Patterson 陪練），成了該卡最好的 hook；同時修正「自學成才」的絕對化說法（他曾向 Richard「Groove」Holmes 學藝）。
+  - **人工審稿修六處，其中一處是 hook 前提整個錯掉**：
+    1. **Kenny Dorham《Afro-Cuban》**——研究稿寫「1957 年再補三首擴為 12 吋」，查證後**兩場錄音都在 1955 年（1 月 30 日、3 月 29 日）**，1957 年 5 月底只是把兩場素材重編成 12 吋 BLP 1535 發行，**沒有任何 1957 年的新錄音**。hook 原本就寫「橫跨 1955 與 1957 兩次錄音」，前提整個錯，連 hook 一併重寫，並同步改研究／hooks／input 三層。
+    2. **Baby Face Willette《Face to Face》**——研究稿寫 Grant Green「五天前（1 月 25 日）」錄完《Grant's First Stand》，實際該作錄於 **1961 年 1 月 28 日**，與本作的 1 月 30 日**相隔兩天**。
+    3. Eddie Harris 那張 1961 年金唱片單曲的句子主詞與賓語不對應（「他⋯⋯成為⋯⋯單曲」），改寫。
+    4. Charles Kynard 同一句裡把 Kansas City 寫成「堪薩斯城」與「堪薩斯市」兩種譯法，統一為堪薩斯城。
+    5. 《Back at the Chicken Shack》把來源的「首度受矚目的錄音**之一**」寫成無條件斷言，補回限定。
+    6. The Awakening 的「硬式爵士」非樂種名，改為硬式咆勃。
+  - **主線修掉四處代理看不到的撞車**（代理只保證組內互異）：兩張卡都以 Newark 夜店開場（Melvin Sparks 與 Grant Green《Alive!》，兩處 Newark 都屬實，改掉前者）、**三張卡都是「前一種身分→改彈風琴」的同骨架**（John Patton、Willette、Reuben Wilson，改掉一張）、兩組前兩字撞頭。
+  - **新增一條可沿用的判斷：「每張都對、整批讀起來全一樣」的重複只有主線看得到。** 研究稿裡 **19 張都寫了 Van Gelder 錄音室**、**Creed Taylor 掛名 6 張**、**Bob Porter 掛名 5 張**——每一條都正確且有來源，機器 QA 全數放行。已全批禁寫 Van Gelder（沒有一張的主故事依賴那個地點），並把兩位製作人各收斂成獨佔兩張（Creed Taylor 留 Kudu 創辦與 CTI 美學兩處、Bob Porter 留生產線通論與「簽下的第一位藝人」兩處）。
+  - **工具的同藝人偵測有兩個盲點**，派工前必須人工再掃一次：①**藝人字串不同的同一人不會被警告**（Big John Patton／John Patton、Gary Bartz NTU Troop／Gary Bartz）；②**反向陷阱**——看起來像同藝人多卡、實際是不同人（Lonnie Smith／Lonnie Liston Smith），這種要主動寫進特注做身分鎖定。
+  - **研究層的 thin 判定會過度保守**：首輪 9 張標 thin，逐張看過後有 6 張其實事實量足夠（只是 keyTracks 留空），僅 3 張真正不足，另派補查代理處理，最終 50 張全部 full。**往後收到 thin 不要照單全收，先看 facts 數量與內容。**
+  - **內容過濾器**：hook a 組中斷一次，但**輸出檔 10 張完整存活**、key 逐字對齊、字數合格，僅最終回報被切，比照 049-d 前例獨立驗證後未重跑。再次印證「每組寫完立刻存檔、不整批重寫」這條紀律。
+- 主要檔案：`desc-restyle/batches/w2-059-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-059*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記；`qa-check-research.mjs` 兩檔標記 0 與 1（唯一標記 `DJ Jimmy Gray` 為已知誤報型——研究稿寫「地方 DJ／音樂推廣人 Jimmy Gray」，工具把「DJ Jimmy Gray」當成一個專名）；`fix-spacing` 待補 0 張；中文數字榜單名次掃描命中 14 處經逐一核對**全為序數**（第八張、第二軌、第一位）非榜單名次，音樂人名中文音譯掃描 3 處經核對為古典作曲家（史特勞斯）、地名（華盛頓特區）與政治人物（傑西·傑克森）皆合規；中間點字元確認為 U+00B7、與既有 58 個 final 檔一致；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**。
+- 後續：尚未分池者 3,429 張。**Eddie Henderson 跨 059／060 邊界**——059 的《Realization》(1973) 已禁寫 1974 年以後與 Blue Note 時期，留給 060 的《Sunburst》(1975)；060 另有 Billy Harper、Egberto Gismonti、Azymuth、Marcos Valle、João Gilberto 各兩張需分軸。
+
 ### 2026-08-02｜`dip-desc-restyle` skill 新增第二個參數：批次節奏（序列／接力／全平行）
 - Repo：工作區 `dip-vinyl-home/.claude/skills/dip-desc-restyle/SKILL.md`（該層非 git repo）；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：店主要求能指定多批同時跑。**這與他先前「一批走完全程再開下一批」的裁定直接衝突**，
