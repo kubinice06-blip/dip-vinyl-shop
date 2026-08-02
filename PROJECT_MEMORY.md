@@ -2180,6 +2180,27 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜desc-restyle：一次規劃完剩餘 67 批的配置（w2-062–128，3,329 張）
+- Repo：`desc-restyle`（新增 `BATCH_PLAN.md` 與 67 份預切卡單）；`dip-vinyl-shop` 僅更新本備忘錄
+- 起因：店主指出連續幾批都遇到**相關專輯被拆到不同批**（Eddie Henderson 跨 059／060、Hampton Hawes 跨 060／061），要求先把批次分配好、之後再依配置執行。
+- **根因不是邊界沒對齊，而是排序來源本身**：`restyle-tasks.json` 的尾段不是精選排序。剩餘 3,329 張其實分成三段——
+  A 段（原順序 0–1125）相鄰同藝人密度每百張 14.5、已分群；**B 段（1125–2600，約 30 批）只有每百張 0.2，等同隨機**；C 段（2600–3329）每百張 23.3、已分群。
+  B 段每張卡的藝人、曲風、年代都不相干，**且含大量 A 段藝人的其他專輯**。照原順序切下去，874 組多卡藝人會有 **713 組（82%）被拆散**，其中 351 組跨區段。
+  最極端的例子：`makaya mccraven` 的四張會落在 w2-062、095、103 三批。
+- **另查出工具的檢查範圍比想像窄**：`build-next-batches.mjs` 的跨批警告**只比對「本批最後一張」與「下批第一張」的藝人字串**。非相鄰的拆散一概看不到——Hampton Hawes 跨 060／061 那次就完全沒警告，是靠平行模式下把兩批卡單並排讀才發現的。
+- **重切規則**（已寫進 `BATCH_PLAN.md`）：
+  1. **同一藝人的卡絕不跨批**，正規化處理 the／big／little／dr／brother 前綴與 trio／quartet／orchestra 等團名後綴（這正是先前 Big John Patton／John Patton、Gary Bartz NTU Troop／Gary Bartz、Gene Harris／The Three Sounds 沒被工具抓到的原因）。
+  2. **合作掛名與其成員收攏同批**（union-find，13 組）：Roberta Flack、Donny Hathaway 與兩人合輯同批；Rubén Blades、Willie Colón 與合輯同批；另有 Ali Farka Touré／Toumani Diabaté、Pete Rock、Kool G Rap、Timbaland、Alva Noto、Kode9、Sérgio Mendes、Ravi Shankar、Chaka Khan、Lee Fields、Davy Graham。
+  3. **人工裁定的兩對**：`jorge ben` 與 `jorge ben jor` 是**同一人**（1989 年改名）已合併；`sunny day real estate` 與 `real estate` 是**不同樂團**、`belle and sebastian` 與 `sebastian` 無關，明文禁止合併。**這正是 059 那次 Lonnie Smith／Lonnie Liston Smith 陷阱的同型，這回改成在規劃階段先攔下。**
+  4. 家族內先按年代（十年為單位）再按原精選錨點排序，兼顧主題收斂與保留 A／C 段既有順序；家族內嚴格裝箱，家族尾巴不足者與下一家族合成交界批。
+- **結果**：67 批、3,329 張，**64 批剛好 50 張**（其餘 w2-077 為 45、w2-112 為 43、w2-128 為 41），**跨批藝人 0 組**（原 713 組），**61／67 為單一曲風家族**。
+  家族區間：jazz 062–067、soul 068–071、folk 072–075、world 076–077、classical 078、rock/pop 079–100、hiphop 101–112、electronic 113–127、混合 128。
+- **確認工具不寫死 50**：`merge-writer-input.mjs` 是讀研究層各組的實際張數來對齊 a–e，因此 45／43／41 張的批可照常跑五組，不需改工具。
+- **執行時的兩項注意**：①`venetian snares×13`（w2-121）與 `vladislav delay×12`（w2-122）會**跨子組但不跨批**，派工時要在跨子組的特注互寫排除條款；②同家族連號是刻意的，rock/pop 連 22 批、electronic 連 15 批，**應在開跑該家族前一次盤點通論帳本**，而不是逐批發現撞車。
+- 主要檔案：`desc-restyle/BATCH_PLAN.md`（新增）、`desc-restyle/batches/wave2/w2-062~128-cards.json`（67 份新卡單）、`desc-restyle/progress.json`（新增 `batchPlan` 欄）
+- 驗證：67 份卡單逐檔重讀比對——卡片總數 3,329、**重複 key 0**、與可分池總數相符；正規化後**跨批藝人 0 組**；正規化未誤併（唯一合併多種原始字串的組是 `sun ra`／`the sun ra arkestra`，確為同一人；`mix`＝Little Mix、`brother`＝Little Brother 皆為單一藝人被剝掉 little 前綴）。
+- 後續：**執行時直接讀預切卡單，不要再跑 `build-next-batches.mjs`**（該工具現已回報可分池 0 張）。卡池日後若新增專輯，新卡不在這 67 批內、需另行分批。
+
 
 ### 2026-08-02｜desc-restyle：批次 061 共 50 張上線（平行模式收官，060／061 合計 100 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
