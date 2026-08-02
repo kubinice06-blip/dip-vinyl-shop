@@ -2181,6 +2181,28 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 060 共 50 張上線（首次採用「平行」模式，060／061 同時跑）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-060 一批 50 張。**店主指定平行模式**（skill 新增的節奏參數，N≤3 才接受），060 與 061 兩批的研究→hook→寫作全部同時跑完（共 30 個代理），**但逐張審稿與上線嚴格照護欄一次只做一批**：本筆只涵蓋 060，061 稿件完成待審。研究 5 組（Sonnet）、hook 5 組（Opus）、**寫作 5 組（Opus，skill 新制的 a–e 對齊）**，QA 0 標記，字數 165–242（均 226），KV 逐字比對 50/50 一致。內容：靈性爵士與 Strata-East 十張、Blue Note jazz-funk 與 Black Jazz 十張、爵士鋼琴十張、巴西二十張。
+  - **人工審稿修十三處，其中一處是 hook 前提整個錯掉**：
+    1. **Billy Harper《Capra Black》**——原 hook 建立在「上半張 Capra 是器樂、下半張 Black 交給人聲」這個分面上，查證後**根本沒有這種分面**；人聲是**四人不是五重唱**、Gene McDaniels 只是四位之一**並非領軍**、且人聲**只出現在〈Soulfully, I Love You / Black Spiritual of Love〉一曲**而非正文寫的〈Cry of Hunger〉。整張連 hook 重寫，改以查實的「三位鼓手分曲輪坐」立軸，並同步改 research／hooks／input 三層。
+    2. **Bayete《Worlds Around the Sun》**——原 hook 是「Down Beat 年終榜第 1、Miles Davis《On the Corner》屈居第 2」，該說法**唯一來源是再發行廠牌 Jazz Dispensary 的自家宣傳頁**，獨立搜尋無法佐證。這種等級的最高級宣稱不足以當 hook，整條移除並改軸；順帶修掉「多年之後被 Santana 翻唱」（實際僅隔約一年）。
+    3. **Pharoah Sanders《Elevation》**——正文寫「英國爵士藍調專輯榜第 13 名、Billboard 當代爵士專輯榜第 14 名」，兩個榜名**都晚於本作 1974 年才創設**（Top Contemporary Jazz Albums 為 1987 年）。這與 Hot 100 那類錯置同型，整段移除改用查實的四次錄音日期。
+    4. **Ronnie Foster《Two Headed Freap》**——正文寫他在 Grant Green《Alive!》彈風琴「被共同創辦人 Francis Wolff 記住」，但 **Wolff 於 1971 年 3 月辭世、本作 1972 年 1 月才錄音**，且該歸因超出研究稿。已移除（同時解掉與 Duke Pearson 卡重複使用 Wolff 當情節的問題）。
+    5. Gene Russell 卡把 Stevie Wonder 音譯成「史提夫汪達」，違反「音樂人名一律拉丁原文」，已同步改三層。
+    6. Wayne Shorter《Native Dancer》的「巴西籍妻子 Ana Maria」國籍查無來源，移除國籍。
+    7. Hermeto Pascoal 卡把豬叫聲說成「唱片裡巴西原住民色彩最濃的一段」，兩者無關且無來源，改寫。
+    8. Mtume 卡的「斯瓦希里語」與全池慣例（史瓦希里語）不一致，統一。
+    9–13. **五處校對用的編輯註記漏進正文**（見下）。
+  - **本輪最值得記下的新失敗模式：特注的否定句會被寫進消費者看的正文。** 我在特注寫「以查證年為準、不得寫成 1974 年」這類指令，寫作層照辦之餘，把**那句否定句本身**也寫進了 desc——例如「年份有出入：卡池標為 1974 年，兩個獨立來源則一致標為 1972 年，此處以查證到的 1972 年為準」「卡池標的 1962 年查無來源支撐」「兩者是完全不同的樂團與作品，僅標題巧合相同」「並不是這次錄音促成的」「而不是兩段長篇」。**這是校對痕跡，不是商品文案。** 往後特注一律改寫成「正文只寫查證後的正確版本，不要交代卡池標錯這件事」。
+  - **研究層推翻主線 17 處**，其中版本／年份鎖定錯誤佔 8 處：Gismonti《Água e Vinho》是 **1972 年 EMI/Odeon 而非 ECM、且非獨奏**（與同組另一張 1978 年 ECM 作品極易誤置）；João Gilberto 同名作是 **1961 年**（六個來源一致，查無卡池標的 1962 年）；Dom Um Romão 為 1972 年；Gene Harris《Astral Signal》1974 錄／1975 發；Tete Montoliu 1971 錄／1974 發；Tommy Flanagan **1957 年錄於斯德哥爾摩**（1958 是 Prestige 重發年）。廠牌歸屬錯誤：**Bayete 是 Prestige 不是 Black Jazz**。人物關係：**Jimmy Heath 是 Mtume 的生父不是兄弟**；Airto 與 Flora Purim 1967 年就結婚、早於本作六年。**兩處直接否決主線的分軸設計**：Kenny Drew《Everything I Love》是**全獨奏、無伴奏樂手**（我特注問的 NHOP 根本沒參與）、Julian Priester《Love, Love》是**五段組曲而非兩段長篇**。另攔下一個常見誤傳：**《Clube da Esquina》封面那兩個男孩不是 Milton 與 Lô Borges 的童年照**，是攝影師 Cafi 拍的路人男孩，四十週年才尋回身分。
+  - **主線修掉代理看不到的同構三處**：Mtume／Bill Evans／Andrew Hill 三張都是「錄完擱置多年才發行」（保留給塵封三十四年的 Andrew Hill，另兩張改軸）；Stanley Cowell 與 Gene Russell 兩張都是「廠牌共同創辦人把自己的鋼琴唱片放進自家目錄」（保留給 BJ-1 的 Gene Russell）。
+  - **Hampton Hawes 的時序是本批最漂亮的一條**：錄音 1958 年 3 月 → 逮捕 1958 年 11 月（他 30 歲生日當天）→ 判十年 → **1961 年 8 月唱片發行時他仍在服刑中**（與「發行代表某階段完結」的直覺相反）→ 1963 年 8 月獲甘迺迪特赦。他在 061 另有一張《All Night Session!》，兩批已切開：060 拿入獄與特赦、061 拿通宵錄音。
+  - **字數陷阱在本批再次實測**：巴西與靈性爵士的拉丁人名密度極高，五組寫手中有三組回報初稿全數超標（最高 333 字），一致指出「實際字元數比直覺高出約 60 字」。
+- 主要檔案：`desc-restyle/batches/w2-060-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-060*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記；`qa-check-research.mjs` 五檔僅 1 個已知誤報（`1948`——輸入層寫 `1947–48`，寫作層展開為「1947 至 1948 年」，屬正確展開）；`fix-spacing` 補 1 張後歸零；中文數字掃描命中 16 處經逐一核對**全為序數**（第三張個人作、第二首、第一位歐洲音樂家）非榜單名次；音樂人名中文音譯掃描修正 1 處後歸零；葡萄牙文變音（ã õ é ê ç í）在 10 個 key 與正文中全數保留；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**。
+- 後續：061 已完成研究、hook 與寫作三層，**待逐張審稿後上線**；尚未分池者 3,379 張。
+
 ### 2026-08-02｜產線提速：寫作層 2 組 → 5 組並依 a–e 對齊；同時修好兩個會安靜漏驗的下游腳本
 - Repo：`desc-restyle`（三支腳本＋三份 prompts）、工作區 skill；`dip-vinyl-shop` 僅更新本備忘錄
 - 起因：店主反映單批太久，另一個 session 提出三刀改法（寫作層切五組、樣板搬進 base 檔、跨批用接力模式）。
