@@ -2181,6 +2181,26 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 055 共 50 張上線（爵士正典第二批；053–055 三批合計 150 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-055 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 166–240（均 234），KV 逐字比對 50/50 一致。內容：硬咆勃與 Blue Note 體系、Wayne Shorter 四張＋Herbie Hancock 五張、McCoy Tyner 三張＋Bill Evans 三張、吉他與酷派、Tristano 學派與搖擺長青樹。
+  - **Blue Note 廠牌通論落在 Art Blakey《A Night at Birdland, Vol. 1》**，是 054／055 兩批合計唯一一次。**並依查證下了一條明文禁令**：Reid Miles 要到 1955 年底至 1956 年間才加入 Blue Note 任美術總監，本作 1954 年的原始 10 吋封面設計人是 **John Hermansader**，因此禁止把 Reid Miles 的視覺語彙掛在這張上。（這條是主線在派工時就以「若如此請照實寫明」的假設語氣要求查證的，結果顧慮成立。）
+  - **主線撤回一條通論指派**：原把「西岸酷派與無鋼琴四重奏起源」指派給 Gerry Mulligan《Night Lights》，研究層查證後發現**該作陣容裡根本沒有 Chet Baker，且 Mulligan 在本作改彈鋼琴**——Mulligan／Baker 的無鋼琴四重奏是 1952–53 年另一個時期的組合。**該通論整批撤銷、不再指派給任何卡**，比照 053 處理 Wax Trax! 的同一原則：查無支撐就不硬塞。
+  - **問句式派工持續見效，研究層推翻六處通行說法**：①《Undercurrent》那張水下封面是 Toni Frissell **1947 年的時尚攝影舊作、早於專輯 15 年**，並非為本作拍攝；②《Lennie Tristano》的爭議是 **1956 年〈Line Up〉等四曲的疊錄／變速磁帶技術**，不是 1949 年的自由即興實驗；③《Warne Marsh》是 **1958 年 11 月**發行，且與 1955 年的《Lee Konitz with Warne Marsh》是不同專輯；④《The Hawk Flies High》的陣容是**刻意的世代混搭**，不是「起用年輕一輩」；⑤《Lester Young with the Oscar Peterson Trio》**標題寫 Trio 實為四重奏**（多一位鼓手 J.C. Heard）；⑥Grant Green 1961 年的高產數字是**可考的五張**，非坊間的六張。另 Red Garland 與 Sugar Ray Robinson 交手一事雖見於多份記載但彼此疑似同源、無獨立拳擊史料佐證，正文改寫成「據傳」並禁寫回合數與傷勢。
+  - **人工審稿修九處**：
+    1. `stan getz|focus` **人物關係寫反**——〈Her〉題獻的 Goldie Getz 是他的**母親**（1961-07-13 辭世、就在首日錄音前一天），正文誤寫成「當時的妻子」。
+    2. `paul desmond|take ten` 寫他「脫離 Brubeck 體系」，實際 1963 年他**仍是 Brubeck 四重奏成員**（1967 年才離開），只是另以個人名義與 RCA 簽約。
+    3. `wynton kelly|kelly blue` 稱「首張以自己名義掛頭牌的專輯」，實際首作是 1951 年 Blue Note 的《Piano Interpretations》，本作是**該廠牌的第二張**領銜作。
+    4. `joe pass|virtuoso` 發行年誤植 1973 年 12 月，實為 **1974 年**（1973-08-28 錄音）。
+    5. `coleman hawkins|the hawk flies high` 的「十八小節獨奏」查無支撐，改為**兩段各 32 小節**的即興。
+    6. `donald byrd|a new perspective` 把錄音年當成發行年，實為 **1963 年 1 月錄製、1964 年 2 月發行**。
+    7. `max roach|we insist!` 稱 Abbey Lincoln 是「Max Roach 的妻子」，但**兩人 1962 年才成婚**，1960 年錄這張時尚未結婚。
+    8. `herbie hancock|empyrean isles` 寫「四重奏編制裡沒有和聲樂器」——Hancock 彈的鋼琴本身就是和聲樂器，該句有誤，已刪。
+    9. `wayne shorter|night dreamer` 說他「同年夏天」加入 Miles Davis，與上一批《E.S.P.》寫的「1964 年 9 月」對不上，改為不指定時點。另 `red garland|groovy` 的 hook 用了非通行中文的「彈鎖和弦」，且術語與 054 的《Workin'》不一致，統一改為 block chords。
+  - **抓到一處跨批次矛盾並回頭修正已上線內容**：055 的《Lennie Tristano》寫 1956 年是「爵士史上首度大量疊錄」，但 **054 已上線的《The Black Saint and the Sinner Lady》(1963) 也用了「首度」**，而 Tristano 更早。兩張都改成不帶最高級的敘述，**054 該張已重新推送 KV 並復驗 50/50 一致**。這類矛盾單看一批看不出來，只有跨批審稿才會浮現。
+- 主要檔案：`desc-restyle/batches/w2-055-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-055*`、`batches/output/w2-054-out-2.json`（Black Saint 一張）、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記；`qa-check-research.mjs` 兩檔各 0 標記（更正來源後同步改研究與 input 層）；`fix-spacing` 待補 0 張；中文數字榜單名次與音樂人名中文音譯掃描皆 0 處；`wrangler kv bulk put` 兩次皆回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **w2-055 50/50、w2-054 復驗 50/50 一致**。
+
 ### 2026-08-02｜desc-restyle：批次 054 共 50 張上線（爵士正典第一批）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-054 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 179–240（均 231），KV 逐字比對 50/50 一致。內容為九〇年代電台搖滾尾聲四張，加上**爵士正典四十六張**：Miles Davis 十張、John Coltrane 七張、Charles Mingus 六張、Alice Coltrane 四張、Sonny Rollins 四張、Thelonious Monk 三張、Duke Ellington 三張。
