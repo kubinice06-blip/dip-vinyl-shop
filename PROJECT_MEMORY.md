@@ -2181,6 +2181,25 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜取消開工前的協作交接檢查（店主已不在 codex 跑本專案）
+- Repo：`dip-vinyl-shop`、`dip-vinyl-worker`（各自的 `CLAUDE.md`）；工作區根目錄 `CLAUDE.md` 與 `dip-desc-restyle` skill
+- 改動：店主表示已不再於 codex 並行跑本專案，要求移除該規定以省額度。原本每次開工要對每個 repo 跑
+  `git fetch origin`、`git status --short`、`git log --oneline HEAD..origin/main`、`git diff --name-status HEAD..origin/main`
+  四道指令（兩個 repo 就是八次工具呼叫），**已全部取消**。
+- **保留的兩道最低限度**（已向店主說明並標示，可再砍）：
+  - **提交前** `git status --short`——這是防止把工作區既有的無關變更掃進 commit 的唯一防線；本專案長期存在
+    `data/apple-audio-map-*.json` 等 untracked 檔，先前正是靠這道檢查才沒被誤提交。
+  - **push 前** `git fetch origin` 並確認 `HEAD..origin/main` 為空——避免遠端已有新提交而被拒或造成分歧。
+- 同步更新處：`dip-vinyl-home/CLAUDE.md`、`dip-vinyl-shop/CLAUDE.md`、`dip-vinyl-worker/CLAUDE.md` 三處的
+  「開工前協作交接檢查（必做）」章節改寫為「Git 檢查（2026-08-02 精簡）」；`dip-desc-restyle` skill 的
+  開工前第 4 步改為「不需要跑 git 檢查」，收尾步驟改為提交前 status、push 前 fetch。
+- **未改動**：三個 `AGENTS.md`（那是 codex 自己讀的檔案，Claude 不會載入，留著不佔額度；日後若恢復協作可直接沿用）。
+- 另清理兩則已失效的長期記憶：刪除「並行 agent 協調」，並改寫「開工前先讀備忘錄」的理由——
+  讀 `PROJECT_MEMORY.md` 的必要性從「查 codex 改了什麼」改為「承接自己過去的決策」，該習慣本身保留。
+- 主要檔案：`dip-vinyl-shop/CLAUDE.md`、`dip-vinyl-worker/CLAUDE.md`、`dip-vinyl-home/CLAUDE.md`、
+  `dip-vinyl-home/.claude/skills/dip-desc-restyle/SKILL.md`
+- 驗證：三個 `CLAUDE.md` 與 skill 的相關段落已逐一確認改寫完成；skill 內僅餘收尾處兩處 git 指令。
+
 ### 2026-08-02｜把 desc-restyle 產線固化成 skill `dip-desc-restyle`
 - Repo：工作區 `dip-vinyl-home/.claude/skills/dip-desc-restyle/SKILL.md`（該層非 git repo）；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：店主要求「在新對話召喚 skill、輸入批次數或張數就能開跑」，已把整條產線寫成 178 行的 skill。

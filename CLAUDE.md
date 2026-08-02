@@ -1,14 +1,13 @@
 # dip vinyl shop — Claude 工作規則
 
-## 開工前協作交接檢查（必做）
+## Git 檢查（2026-08-02 精簡）
 
-1. 執行 `git fetch origin`。
-2. 執行 `git status --short`，確認本機新增、修改、刪除與未追蹤檔案。
-3. 執行 `git log --oneline HEAD..origin/main` 與 `git diff --name-status HEAD..origin/main`，確認 Codex／其他協作者的新提交及 A／M／D／R 檔案。
-4. 若工作區乾淨且遠端領先，以 `git pull --ff-only origin main` 同步，再重新讀取 `PROJECT_MEMORY.md` 與被更新的規則檔。
-5. 若有未提交內容、分支分歧或重疊變更，先讀取差異並保留對方工作，不得直接覆寫。
+店主已不再於 codex 並行跑本專案，原本開工前的四道協作交接檢查**已取消**。現行只保留：
 
-開始工作時先在對話中簡短說明是否發現新增／修改／刪除項目。正式提交前再執行一次 `git fetch origin`，確認工作期間沒有新提交。
+- **提交前** `git status --short`——只提交本次相關檔案，不把工作區既有的無關變更或 untracked 檔掃進去。
+- **push 前** `git fetch origin` 並確認 `git log --oneline HEAD..origin/main` 為空。
+
+若日後恢復多方協作，再把完整檢查加回來。
 
 ## 專案備忘錄（必讀、必更新）
 
