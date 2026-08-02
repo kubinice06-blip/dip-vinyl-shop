@@ -2180,6 +2180,57 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜desc-restyle：批次 064 共 49 張上線＋移除 1 張精選輯（7,536 → 7,535）
+
+- Repo：`desc-restyle`＋`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:`
+- 改動：跑完 w2-064（jazz 家族第三批，當代與跨界爵士）。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 5 組（Opus），
+  QA 三關 0 標記，字數 175–256（均 223），KV 逐字比對 **49/49 一致**。
+  內容：Norah Jones 三張、Brad Mehldau 三張、Tigran Hamasyan 三張、Jamie Cullum 四張、Melody Gardot 三張、
+  Esperanza Spalding 三張、GoGo Penguin 三張，以及**與 Shabaka Hutchings 有關的六張集中在同一組**
+  （The Comet Is Coming 兩張、Sons of Kemet 三張、Shabaka and the Ancestors 一張）。
+- **卡池：店主裁定「精選輯不留」，移除 Masayoshi Takanaka《All of Me》**（1979-06-21 日本 Kitty 唱片、編號 MKA 9005/6，
+  彙整他在該廠牌時期分散的單曲 A/B 面與專輯曲目，非原創錄音室專輯）。
+  **同藝人 1976 年個人首張《Seychelles》裁定保留**，已在本批上線。
+  研究層原建議保留該精選輯（理由是「Kitty 為他推出的第一張精選輯」），主線判定歷史定位不足並提請裁示，店主裁定移除。
+  移除流程同前例：備份 → 逐筆比對確認只動到那一筆、其餘 7,535 筆內容與順序完全相同 → `bulk delete` 回 `Success!` →
+  **bulk get API 驗證**該鍵查無值、且《Seychelles》仍在。
+- **一個新型態的校對痕跡外洩（本次最該記住的事）**：
+  Avishai Cohen《From Darkness》把**身分鎖定的校對指示原樣寫進消費者看的正文**——
+  「同名的小號手兼作曲家 Avishai Cohen 是另一個人，與這張無關」。
+  這是 060／061 那個失敗模式的新變體：**特注要求「鎖定身分」，寫作層就把鎖定的過程寫出來**。
+  既有的掃描關鍵詞（卡池／Discogs／Wikipedia／辨認／查無來源）**完全抓不到這種措辭**，
+  已補上「**是另一個人／與這張無關／與本作無關／同名不同**」四組到 `chk-hook-crossgroup.mjs`。
+  往後凡下「身分鎖定」類特注，都要同時寫明「正文只以查證後的身分敘述，不要交代另一位同名者的存在」。
+- **研究層推翻主線 8 處**：
+  | 主線寫的 | 查證結果 |
+  | --- | --- |
+  | GoGo Penguin 同名作在疫情期間完成 | **與疫情無關**——2019 年 9 月就錄完，只是 2020 年 6 月才發行；本作也沒有陣容變動（鼓手離團在 2021 年） |
+  | 「戴耳機現場錄音」概念始於 Snarky Puppy《The World Is Getting Smaller》 | **始於更晚的《Tell Your Friends》**；廠牌也是 Sitmom 而非 Ropeadope |
+  | Mehldau《Largo》用了鼓機 | 查無來源，改以合成器與客席樂手表述 |
+  | Mehldau《Love Songs》可能是選輯 | **是與次女高音 Anne Sofie von Otter 的聯名雙碟企劃**，一半是卡內基音樂廳委託曲目，有定位 |
+  | Vijay Iyer「在音樂認知領域取得學位」 | **耶魯數理雙主修 → 柏克萊物理博士班 → 自創 Technology and the Arts 學程 → 1998 年以具身認知論文取得博士** |
+  | Johnny Smith 本作獲 Down Beat 年度唱片 | 得獎的是**1952 年那首單曲**，不是 1956 年這張 LP |
+  | Cullum《Pointless Nostalgic》是自資發行 | **由獨立廠牌 Candid Records 發行**；真正自資自賣的是另一張不在本批的 1999 年作品 |
+  | Spalding《Milton + Esperanza》與 Nascimento 的告別有關 | **不是告別作**——他 2022 年已展開告別巡演，這張合作反而讓他**延後退休** |
+- **主線攔下的撞車**：三張二重奏卡（Vandermark／Iyer 與 Wadada Leo Smith／Gardot 與 Philippe Powell）
+  一律不得以「二重奏」本身當軸；四張都能寫大牌客座名單的卡只留一張以客座為軸；
+  「與某廠牌簽約的第一張」框架在研究稿出現超過五次，已對五組全下 hook 開場禁令。
+- **人工審稿修 8 處**（除上述校對痕跡外）：Norah Jones《The Fall》把 hook 的答案再講一次（贅句）；
+  Anita Baker 的葛萊美獎項語序；Sons of Kemet 那張的 New Orleans 未用中文譯名（同批其餘地名都是中文）；
+  Vandermark 的 hook 說「台上重來一次」但現場碟其實是另一批即興；
+  **GoGo Penguin《Fanfares》整篇被 Gondwana 廠牌創辦史吃掉、作品本身只剩一句**（補回錄音室與作品定位）——
+  這是「廠牌配額取消」之後的新副作用，指派廠牌通論給某張卡時要順便確認那張卡自己的事實量夠不夠撐起主體；
+  Avishai Cohen《Unity》的 Stretch Records 創立年與常見說法有出入（改為不指定年份）；
+  Gardot《Entre eux deux》的「巴西的 Bill Evans」指代不明（父子分不清）。
+- 主要檔案：`desc-restyle/batches/w2-064-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-064*`、
+  `desc-restyle/chk-hook-crossgroup.mjs`（補關鍵詞）、`desc-restyle/HELD_W2-064-NONALBUMS.json`、
+  `desc-restyle/REMOVE_LIST.json`、`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`
+- 驗證：`qa-batch.mjs` 三關 0 標記；`qa-check-research.mjs` 五檔各 0 標記；`fix-spacing` 待補 0 張；
+  中文數字榜單名次命中 1 處經核對為序數誤報；校對痕跡（含新補四組關鍵詞）、音譯人名、否定句式、
+  評語式收語、榜名年代錯置五項掃描皆歸零；`wrangler kv bulk put` 回 `Success!`；
+  `verify-kv.mjs` bulk-get 逐字比對 **49/49 一致**。
+- 後續：065 研究層五組已回齊，待跑 QA 與派 hook 層。**065 已有三件要裁示**（見下批紀錄）。
+
 ### 2026-08-02｜desc-restyle：批次 063 共 48 張上線＋卡池再移除 2 張（7,538 → 7,536）
 
 - Repo：`desc-restyle`＋`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:`
