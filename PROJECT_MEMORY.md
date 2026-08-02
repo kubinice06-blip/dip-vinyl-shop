@@ -2180,6 +2180,79 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜desc-restyle：批次 063 共 48 張上線＋卡池再移除 2 張（7,538 → 7,536）
+
+- Repo：`desc-restyle`＋`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:`
+- 改動：跑完 w2-063（jazz 家族第二批）。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 5 組（Opus），
+  QA 三關 0 標記，字數 180–241（均 230），KV 逐字比對 **48/48 一致**。
+  內容：爵士吉他（Tal Farlow／Charlie Christian／Rosenwinkel／Scofield）、Wayne Shorter 三張、
+  young lions（Wynton 兩張、Joshua Redman 兩張、Roy Hargrove 兩張）、jazz-rap 與 drum and bass、
+  Casiopea 四張、new jack swing 與 R&B 五張、Diana Krall 三張。
+- **本次最有價值的發現：「同藝人跨批 0 組」只保證在新配置的 062–128 之間，054–061 與更早的舊批不算。**
+  BATCH_PLAN 那次重切只處理了尚未執行的批次，**已上線的舊批不在對照範圍內**。
+  實際掃出 **18 位藝人在舊批已有卡**，而且不是零星幾張：
+
+  | 藝人 | 舊卡 | 063 新卡 |
+  | --- | --- | --- |
+  | Wayne Shorter | 6 張（006／055×4／060） | 3 張 |
+  | Janet Jackson | 7 張（007／008×2／019／021／027／036） | 1 張 |
+  | Robert Glasper | 4 張 | 1 張 |
+  | Horace Silver、Pat Metheny、Dizzy、Abdullah Ibrahim、Jaco、William Parker、Troop、Ginuwine、Al B. Sure! | 各 1–2 張 | 各 1–3 張 |
+
+  已寫腳本把每張舊卡的**開場句**抓出來、逐張寫成排除清單放進特注（例如 Janet 那張把七條舊軸逐條列禁、
+  Glasper 禁四條舊軸、Shorter 禁 Blue Note 時期通論與 Weather Report）。**這一步已寫進 progress note，往後每批開工都要做。**
+- **另一件要改的事：重複卡掃描腳本原本是壞的。** `seed_cards.json` 是**陣列的陣列**（`[artist, album, …]`）不是物件，
+  第一版腳本用 `c.artist`／`c.album` 比對，等於比對 undefined、必然回報 0 對。改用索引重跑後：
+  147 張目標卡對全池 7,536 張，**同名配對 16 組、逐組確認全是同名不同作**（Shorter／Sun Ra 的《Atlantis》、
+  Norah Jones／Grimes／Sun Ra 的《Visions》、Cory Wong／Coltrane 的《Meditations》、
+  BADBADNOTGOOD／Sebadoh／Crystal Castles 的《III》等），**疑似同一張唱片 0 組**。
+  順帶確認《The Cats》正式掛名雖是 Flanagan／Coltrane／Burrell／Sulieman 四人，但卡池只有 Burrell 這一張，不是重複卡。
+- **研究層推翻主線 6 處**：Wayne Shorter《Odyssey of Iska》的 **Iska 是他女兒的名字、不是「風」**（發行年也從 1970 更正為 1971）；
+  Jaco《Stuttgart Aria》**1986 年錄音當年就發行、屬生前發行**，不是身後檔案盤（我的分軸假設作廢）；
+  《Etcetera》「借來 Coltrane 班底」的說法不成立（實際是 Hancock／McBee／Chambers）；
+  William Parker《Some Order, Long Understood》**實為 Wayne Horvitz／Butch Morris／Parker 三人平權掛名**；
+  Casiopea《Dramatic》**是 1993 年、廠牌正是 Alfa**（我原以為是 2000 年後之作，整個分軸設計作廢）；
+  Roy Hargrove《Earfood》**不是他最後一張錄音室專輯**（2009《Emergence》才是）→ 辭世一律不寫。
+  另打假一處：The Bad Plus 翻唱的是 Aphex Twin，不是 Squarepusher。
+- **主線攔下三處代理看不到的撞車**：①「把真人樂手請進錄音室」原有三張（Guru／Adam F／Blowout Comb），
+  通論留給 Guru，Adam F 改走 MOBO Award、Blowout Comb 改走政治轉向與商業腰斬；
+  ②「回歸某廠牌」原有兩張（Casiopea 回 Alfa／Horace Silver 重返 Columbia），後者改走大編制銅管；
+  ③Kenny Garrett《Black Hope》的「離開 Miles 後的首張」正是已用盡的骨架，改走陣容與製作人。
+  另外「⋯⋯之後的首張」這個框架研究稿出現五次，已對五組全下 hook 開場禁令。
+- **人工審稿修 12 處**，其中兩處是機器完全驗不出的事實錯誤：
+  1. **Joshua Redman 的時序**：研究稿寫「1991 年 11 月遷居紐約、五個月後奪 Monk 大賽冠軍」，
+     但查證確認**他 1991 年就拿下該屆冠軍**（1991 年 11 月於華盛頓特區舉行）——11 月是**大賽日期、不是搬家日期**。
+  2. **《Bird and Diz》的廠牌時序倒置**：研究稿寫「Verve 旗下的 Clef Records」，
+     但 **Clef 早於 Verve**（Verve 要到 1956 年才創立），1952 年不可能是 Verve 旗下。改為「Norman Granz 的 Clef Records」。
+  其餘十處：Tal Farlow 那張把「自學」寫成「唯一受過的正式訓練」（邏輯自相矛盾）；
+  Blue Matter 把廠牌 Gramavision 當成錄音室；同一座葛萊美在 1.9 與 2.1 出現兩種譯名；
+  Timeless Tales 的 hook 提了 Gershwin 而正文從沒回到（hook 前提沒收尾）；
+  Blowout Comb 的「五巴仙教」非台灣用語；Parallel Universe 重述 hook 並把 AllMusic 與樂評姓名寫進正文；
+  Casiopea《Dramatic》正文把「回到 Alfa」講了兩次；Janet 那張把 Michael Jackson 寫成「傑克森」中譯又重述 hook；
+  new jack swing 大小寫兩種寫法；**兩張把 1990 年代前期的榜單寫成 1999 年才改名的「R&B/Hip-Hop 榜」**（榜名年代錯置，059 以來第三次）。
+- **卡池：店主裁定移除 2 張、保留 1 張**（研究層列為建議移除的三張）：
+  | 卡 | 裁定 | 依據 |
+  | --- | --- | --- |
+  | Joshua Redman《The Essence of Joshua Redman》 | **移除** | Wikipedia 正式專輯列表、AllMusic 完整 discography、RateYourMusic 三處皆查無；「The Essence of X」是九〇年代預算精選的命名套路 |
+  | Dizzy Gillespie《Dizzy Gillespie》 | **移除** | 拼盤重發，至少兩種版本內容互不相同，無法鎖定對應版本 |
+  | Jaco Pastorius《Golden Roads》 | **保留**（店主：故事很好聽） | 1986-10-11 錄於紐約 Skyline Studios，原是一部**從未完成的同名電影**的配樂，全碟單一長軌 30 分 35 秒，1997 年才由日本 Sound Hills 發行 |
+  移除流程照 08-01／08-02 前例：備份 → **逐筆比對確認只動到那兩筆、其餘 7,536 筆內容與順序完全相同** →
+  `wrangler kv bulk delete` 回 `Success!` → **驗證走 bulk get API**（`/album-desc` 會觸發重新生成回寫，絕不可用）→ 兩鍵確認查無值。
+  《Golden Roads》由主線補寫 thin 卡（183 字），軸走「一部沒拍完的電影」，與《Etcetera》的擱置軸刻意錯開；
+  同廠牌另一張身後盤的授權爭議與本作無直接關係，未寫入。
+- 主要檔案：`desc-restyle/batches/w2-063-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-063*`、
+  `desc-restyle/chk-hook-crossgroup.mjs`（新增，跨組 hook 撞頭與同構關鍵詞掃描）、
+  `desc-restyle/HELD_W2-063-NONALBUMS.json`（新增）、`desc-restyle/REMOVE_LIST.json`、
+  `desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`
+- 驗證：`qa-batch.mjs` 三關 0 標記；`qa-check-research.mjs` 五檔各 0 標記（更正來源後已同步 research／hooks／input 三層，
+  否則會被誤標編造——Clef 那處就先被標了一次）；`fix-spacing` 待補 0 張；中文數字榜單名次、校對痕跡、
+  音譯人名、否定句式外洩、評語式收語五項自訂掃描皆歸零；`wrangler kv bulk put` 回 `Success!`；
+  `verify-kv.mjs` bulk-get 逐字比對 **48/48 一致**（含帶 `..` 的兩個 key，該類 key 用 `wrangler kv key get` 會被 403 擋下）。
+- 後續：064 已進寫作層、065 卡單待派研究層。**064 另有一張待裁示**：
+  Masayoshi Takanaka《All of Me》查證為 1979 年 Kitty 唱片的精選輯，研究層建議保留（該廠牌為他推出的第一張精選輯），
+  但主線判定歷史定位不足（所收曲目原本並非只存在於單曲、全張只查得兩筆事實、沒有可寫的故事），已先抽出，
+  紀錄在 `HELD_W2-064-NONALBUMS.json`，064 暫以 49 張執行。
+
 ### 2026-08-02｜卡池清理：移除 8 張重複卡與 1 張無定位選輯（7,547 → 7,538）
 - Repo：`dip-vinyl-shop`（`seed_cards.json`）＋ Worker KV（已上線者同步刪 `desc2:` 鍵）；`desc-restyle` 同步卡單與規則
 - **店主裁定**：重複卡移除；選輯若沒有歷史定位一併移除。
