@@ -2180,6 +2180,45 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜卡池清理：移除 8 張重複卡與 1 張無定位選輯（7,547 → 7,538）
+- Repo：`dip-vinyl-shop`（`seed_cards.json`）＋ Worker KV（已上線者同步刪 `desc2:` 鍵）；`desc-restyle` 同步卡單與規則
+- **店主裁定**：重複卡移除；選輯若沒有歷史定位一併移除。
+- **第一類：同一張唱片有兩張卡（不同藝人掛名），移除 8 張**
+  保留原則是**留掛名與唱片實際版面一致的那張**（合輯掛名 vs 個人掛名，留合輯）。
+  | 移除 | 保留 |
+  | --- | --- |
+  | Jim Hall｜Undercurrent | Bill Evans & Jim Hall｜Undercurrent（055 已上線） |
+  | Elis Regina｜Elis & Tom | Elis Regina & Antônio Carlos Jobim｜Elis & Tom（060 已上線） |
+  | The Fugees｜The Score（**010 已上線，KV 已刪**） | Fugees｜The Score（021 已上線） |
+  | Floating Points｜Promises | Floating Points, Pharoah Sanders & The London Symphony Orchestra｜Promises（006 已上線） |
+  | Ali Farka Touré｜In the Heart of the Moon | Ali Farka Touré & Toumani Diabaté｜同名作 |
+  | Toumani Diabaté｜In the Heart of the Moon | 同上（**這張唱片原本有三張卡**） |
+  | Donny Hathaway｜Roberta Flack & Donny Hathaway | Roberta Flack & Donny Hathaway｜同名作 |
+  | Jorge Ben Jor｜Samba esquema novo | Jorge Ben｜Samba Esquema Novo（1963 原作掛名為 Jorge Ben） |
+- **第二類：無歷史定位的選輯，移除 1 張**
+  Mahalia Jackson｜Mahalia Jackson（1971）——查證為精選輯／重發，**查無曲目與原作來源**，
+  Columbia 該年的原創專輯目錄裡也沒有這張。**062 已上線，KV 已刪。**
+- **關於選輯的重要發現：靠標題掃全池沒有意義。**
+  全池標題含 Gold／Hits／Anthology／Best of／Complete 等字樣的只有 16 張，逐張看過後**真正的選輯只有 2 張候選，而且都判定保留**——
+  Keith Jarrett《At the Blue Note: The Complete Recordings》是特定駐演的完整存檔盒裝、
+  The Clean《Anthology》是該團散落 EP 與單曲唯一的權威彙整，兩者都有歷史定位。
+  其餘 14 張全是誤報（Gold Cobra、Stay Gold、Solid Gold、Love Over Gold、New Gold Dream、End Hits 都是正規專輯）。
+  **反過來，被移除的那張標題就叫《Mahalia Jackson》，從標題完全看不出是選輯——是研究層查證才發現的。**
+  **結論：這類卡只能在研究階段逐張確認，不能靠標題批次偵測。** 規則已寫進 `prompts/research-base.md`：
+  查到非原創錄音室專輯就在 notes 標明性質、判斷有無歷史定位、沒有的列為「建議移除」由主線彙整給店主；
+  同一張唱片有兩張卡也一併要求研究層回報。`SKILL.md` 另新增「卡池品質：兩類要主動回報給店主的卡」一節與移除流程。
+- **執行與驗證**：
+  - 先備份 `seed_cards.json` 與 `apex_pool.json`；9 張全部命中 seed、apex 無。
+  - 移除後**逐筆比對**：消失的正好是那 9 筆，其餘 7,538 筆內容與順序**完全相同**。
+  - 已上線的 2 張（The Fugees｜The Score、Mahalia Jackson 同名作）以 `wrangler kv bulk delete` 刪鍵，回 `Success!`；
+    **驗證走 bulk get API**（依既有陷阱紀錄，`/album-desc` 會觸發重新生成並回寫，絕不可用來驗刪除）：
+    兩個鍵確認已刪、保留的 `fugees|the score` 確認仍在。
+  - 同步清掉 6 份預切卡單裡的 7 張（另 2 張先前已擱置不在卡單內），並把 062 的 research／hooks／input／output 一併移除該卡，
+    重跑 `build-final` 後 `verify-kv` 回報 **47/47 一致**。
+  - `BATCH_PLAN.md` 的張數表與 `progress.json` 的 `batchPlan` 已更新：卡單總數 3,329 → 3,320。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/REMOVE_LIST.json`（新增）、`desc-restyle/BATCH_PLAN.md`、`desc-restyle/prompts/research-base.md`、`.claude/skills/dip-desc-restyle/SKILL.md`、六份預切卡單
+- 後續：卡池 7,538 張；`seed_cards.backup-before-dedupe.json` 與 `apex_pool.backup-before-dedupe.json` 為本次備份，確認無誤後可刪。
+
 ### 2026-08-02｜desc-restyle：批次 062 共 48 張上線（新批次配置的第一批實跑）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-062，這是前一筆紀錄那份 67 批新配置的**第一批實跑**。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 5 組（Opus），QA 三關 0 標記，字數 148–240（均 227），KV 逐字比對 48/48 一致。內容：巴西 MPB 與 Tropicália、Afrobeat 與衣索比亞爵士、靈性爵士與 Sun Ra、Weather Report 與 Cannonball。
