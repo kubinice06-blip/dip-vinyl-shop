@@ -2181,6 +2181,41 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜worker `/spotify-search`：模糊命中改由 CAA 覆核、修好 artistMatches 裸包含（已部署）
+
+- Repo：`dip-vinyl-worker`（`src/index.js`）＋ `dip-vinyl-shop`（`scripts/cover-audit/` 兩支新腳本、本備忘錄）。
+- 承同日稽核（下一筆）的處置。commit `e7db50f`，已 `wrangler deploy`，Version ID `0ee597e5`。
+
+**三處改動**
+
+1. `artistMatches` 從裸字串包含改為**詞集合互為子集**。舊寫法讓 `gong` 被 `gafaniogongkie`
+   吃掉；單純加長度比例護欄則會誤殺 `Buddy Holly` vs `Buddy Holly & The Crickets`、
+   `Sun Ra Arkestra` vs `Sun Ra`、`The Lightmen` vs `Bubbha Thomas & The Lightmen`。
+2. 跨語言補救層的 `nameKnown` 同樣改用子集判定（The Birthday Party《Junkyard》
+   就是靠 `party` 牽上草東沒有派對而配到《醜奴兒》）。
+3. **CAA 從「Spotify 查不到才跑」擴為「模糊命中時也跑並覆核」。** 覆核要求 MB 標題與
+   卡池專輯名**完全相同**，寧可放棄也不亂改；覆核成立時 `spotifyUrl` 設為 `null`。
+   新增 `albumEffectivelyExact()`：剝掉版本後綴或藝人前綴後名稱相同者（`Abbey Road
+   (Remastered)`、`The Beach Boys Today!`、`The Mack - Original Motion Picture Soundtrack`）
+   視為完全吻合，**不勞動覆核層**，避免無謂的 MB 請求與誤改。
+
+**刻意不動 `albumOK` 的長度門檻**——門檻無論訂多少都會在「續作編號只差 3 字」
+（Hot August Night → III）與「官方全名多 30 字」之間顧此失彼；覆核是直接判對錯。
+
+**驗證**（`scripts/cover-audit/7-verify-worker-logic.mjs`，並含與 worker 原始碼的特徵字串對照，防走鐘）
+
+- 定點測試 **13/13** 通過（含 Gong、The Birthday Party、Led Zeppelin II→III、Nina Simone 原始案例）。
+- 拿 2,173 張已稽核配對回歸：**2,020 張維持「直接信任」不改行為**、137 張落到覆核
+  （即 A 級 116＋B 級 21）、16 張被藝人比對擋掉且**全部本就被標記可疑**。**誤殺 0、A 級漏網 0。**
+- 線上實測：未快取的 `Nina Simone / Gifted and Black` 走 MISS，補救層回出**正確**封面
+  （與先前人工修的同一個 MB release-group）；已快取者原樣回傳。
+
+**遺留：已配錯並快取的卡不會自己好。** 新邏輯只在 KV MISS 時跑，`Gong / You` 等仍回舊的錯圖。
+新增 `scripts/cover-audit/8-refresh-suspects.mjs`（刪鍵 → 重新解析 → 逐張 before／after），
+但**Spotify 當時仍在限流（Retry-After 約 4.4 小時）**，腳本內建前提檢查會自行中止
+（實測 exit 2）——限流期間重解析會全部落到 CAA、白白丟掉 `spotifyUrl`。
+**待限流解除後執行 `node scripts/cover-audit/8-refresh-suspects.mjs`。**
+
 ### 2026-08-02｜卡池封面「Spotify 最近似匹配」錯配全面稽核：錯配率 3.5%、全池約 260 張
 
 - Repo：`dip-vinyl-shop`（新增 `scripts/cover-audit/`、本備忘錄）；**worker 程式碼未改動**（依指示先量化）。
