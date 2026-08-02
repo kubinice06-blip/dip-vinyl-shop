@@ -2181,6 +2181,21 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 058 共 50 張上線（056–058 三批合計 150 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-058 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 175–240（均 221），KV 逐字比對 50/50 一致。內容：loft jazz／BAG／AACM 系十張、晚期 Miles Davis 六張、Ornette Coleman 兩張、Gil Evans／George Russell／Jimmy Giuffre／Cecil Taylor／Steve Lacy／Mal Waldron 各兩張，以及南非與中東脈絡十張。
+  - **新廠牌規則的效益在本批最明顯**：多條與作品直接綁定的廠牌事實終於寫得出來——Julius Hemphill 自創 Mbari 自資壓片約 1000 張、Nimbus West 是為記錄 Horace Tapscott 的音樂而創立、William Parker 自營 Centering Music 首發後轉 AUM Fidelity、Homestead 從獨立搖滾轉向簽下自由爵士、Timeless Records 的第一張作品即《Eastern Rebellion》、**ECM 1001 就是 Mal Waldron《Free at Last》**。這些在舊配額下全會被壓成一句「由某某發行」。
+  - **harmolodics 通論從 056 一路預留到本批**，落在 Ornette《Dancing in Your Head》，三批合計只出現這一次。
+  - **研究層推翻主線三處**：①〈The Train and the River〉在紀錄片《Jazz on a Summer's Day》裡的是 **1958 年以長號手 Bob Brookmeyer 取代貝斯手的另一組編制**，與本張 1956 年的單簧管／吉他／貝斯三重奏不同——主線在特注裡把兩者當成同一件事；②《Of Human Feelings》是「**美國境內**第一張數位錄製的爵士專輯」，不是流傳較廣的「全球第一張」；③《You're Under Arrest》的「Columbia 最後一張錄音室專輯」**有但書**（《Aura》是例外）。
+  - 誠實處理數處：Leo Smith 的「留白／靜默音樂觀」查無可引用來源故不寫（只寫查實的 Ankhrasmation 記譜系統）、《O'Neal's Porch》標題由來查無來源不杜撰、四張因查不到具體曲名標 thin、《Ask the Ages》與 Sharrock 辭世相隔近三年判定不構成直接綁定故不寫。研究層另攔下一則疑似 AI 摘要把 Gullah／Geechee 的地域誤植為「喬治亞與北卡羅來納沿海」。
+  - **資料缺口由卡池自身解決**：研究層回報《Old and New Dreams》有 **1977 Black Saint 與 1979 ECM 兩張同名專輯**、成員完全相同，卡單無欄位可辨。查 `seed_cards.json` 的年份欄為 **1977**，即 Black Saint 版，研究層的判斷正確、不需店主裁示。**這也提醒往後遇到同名作時先查卡池年份欄，不要直接當成待裁示項。**
+  - **人工審稿修三處**：①《Dogon A.D.》的榜單出處原引自 rateyourmusic（使用者生成內容），查證後實為《紐約時報》樂評人 **Ben Ratliff** 的百張爵士必備錄音書單，已補正出處並把「必聽」改為「必備」以免與禁語混淆；②《O'Neal's Porch》點名了兩位側奏卻漏掉小號手 **Lewis Barnes**，讀起來像完整名單，已補回；③《The Jimmy Giuffre 3》的貝斯手 `Ralph Pena` 補回變音符號為 **Ralph Peña**。
+  - **產線改良見效**：上一批 writer-1 初稿 19／25 超標（最高 312 字），已於 057 收尾時把「拉丁人名密集批次的字數陷阱」寫進 `prompts/writer-base.md`。本批兩位寫手**全數一次到位、零超標**（writer-1 為 192–240、writer-2 的 full 卡 211–237、thin 卡 175–178），並主動回報「動筆前就把陣容名單壓到主故事需要的人數、未把 facts 的完整編制照抄」。
+  - **hook 層的跨組協調也自發改善**：c 組與 e 組在動筆前主動比對其他組已產出的開頭清單，前幾批都要靠主線在收尾時抓撞頭。本批仍有一處撞頭（Ulmer 與 Dixon 都以「唱片公司」起手）由主線修掉。
+- 主要檔案：`desc-restyle/batches/w2-058-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-058*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記（研究層本批零字元問題，前幾批都要修數十處半形逗號）；`qa-check-research.mjs` 兩檔各 0 標記（唯一殘留標記 `Lewis Barnes` 為已知誤報型——研究稿寫作 `Lewis「Flip」Barnes`，綽號夾在人名中間，RUNBOOK 已記載此類）；`fix-spacing` 待補 0 張；中文數字榜單名次與音樂人名中文音譯掃描皆 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**。
+- 後續：尚未分池者 3,479 張。切 059 時注意 **Eddie Henderson 跨 058／059 邊界**（本批 1 張、下批 1 張），兩批特注要互寫排除條款。
+
 ### 2026-08-02｜店主裁定：廠牌敘事的「一次配額」取消；desc-restyle 批次 057 共 50 張上線
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - **規則變更（店主裁定，即刻生效）**：先前產線把「同一條廠牌敘事整個工程只准出現一次」當成硬性配額在管，**這是主線自己加嚴的，現已取消**。新規則是：**只要某張專輯的背景故事本來就牽涉廠牌，就要把它寫出來**，不必顧慮同一廠牌是否已在別張卡寫過。
