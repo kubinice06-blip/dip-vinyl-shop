@@ -2181,6 +2181,42 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜卡池封面「Spotify 最近似匹配」錯配全面稽核：錯配率 3.5%、全池約 260 張
+
+- Repo：`dip-vinyl-shop`（新增 `scripts/cover-audit/`、本備忘錄）；**worker 程式碼未改動**（依指示先量化）。
+- 範圍：`seed_cards.json` 7,547 ＋ `apex_pool.json` 633 ＝ **8,180 張，兩池零重疊**。
+- 產出：`scripts/cover-audit/FINDINGS.md`（結論）、`REPORT.md`（完整清單）、`data/suspects.json`／`.csv`。
+
+**規模**：可稽核的 2,173 張（Spotify 供圖）中，工具標 A 級 116 張（5.34%），
+逐張人工覆核**約 65% 是真配錯（約 75 張）**，換算全池約 **260 張**。屬「該改程式」而非「逐張改 KV」。
+錯配型態六種：配到續作（Led Zeppelin II→III、The Godfather→Part II）、精選輯（Santana→Greatest Hits）、
+兩張併一片的重發盤、現場盤、完全無關的作品（The Birthday Party《Junkyard》→草東《醜奴兒》）、同名別人。
+
+**根因不只 `albumOK`，另實證兩處**（這是本次最該記住的）：
+1. **`artistMatches` 有同型的裸字串包含問題**——`gong` 正好是 `gafaniogongkie` 的子字串，
+   於是「藝人必須對得上」這道護欄自己先失守。**只加專輯名長度護欄擋不住這一類。**
+2. **跨語言補救層會誤放行**——它的「藝人同名確認」同樣用裸字串包含。
+   建議一律改用**詞集合互為子集**：實測擋掉 Gong 誤配，同時保住 `Buddy Holly` vs
+   `Buddy Holly & The Crickets`、`Sun Ra Arkestra` vs `Sun Ra` 這些真同一人（裸長度比護欄會誤殺）。
+
+**最關鍵發現：CAA 補救層準確度是 Spotify 模糊比對的五倍。**
+抽驗 150 張反查 MusicBrainz release-group，**148 張標題完全吻合、0 張名稱不符**，錯誤率約 0.7%。
+故建議修法**不是調 `albumOK` 門檻**（門檻無論訂多少都會在「續作編號只差 3 字」與
+「官方全名多 30 字」之間顧此失彼），而是把補救層從「Spotify 查不到才跑」改成
+**「只有 fuzzy 命中時就跑、以 MB 結果覆核」**；`exactHit` 照舊直接採用。
+
+**副作用（待店主裁示）**：補齊掃描跑到約第 600 張時 Spotify `/v1/search` 開始回 429，
+其後 **5,446 張改由 CAA 供圖並永久寫進 KV**（`spotifyUrl` 為 `null`）。
+封面本身更準、且 worker 既有的「任何一步失敗就不寫入」護欄有生效（**沒有污染負面快取**）；
+唯一損失是 Spotify 直連，前台按鈕會退回 `open.spotify.com/search/…` 不會壞。
+鍵清單存 `data/caa-written-keys.json`，**建議保留封面、日後單獨回填 `spotifyUrl`**。
+稽核結束時實測 `Retry-After`：`/v1/albums/{id}` 約 21 小時、`/v1/search` 約 5 小時。
+
+**方法上的兩個坑**：① `open.spotify.com` 的 `og:title`／`og:description` **已經抓不到**
+（web player 只吐 `og:site_name`），改用 `/embed/album/{id}` 頁的 `__NEXT_DATA__`，
+有 `name` 與 `subtitle` 且不吃 API 額度；② `/v1/albums?ids=`（批次 20 張）對本 app 的
+client-credentials token **回 403**，單張 `/v1/albums/{id}` 才是 200，省請求的批次路線走不通。
+
 ### 2026-08-02｜desc-restyle：批次 055 共 50 張上線（爵士正典第二批；053–055 三批合計 150 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-055 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 166–240（均 234），KV 逐字比對 50/50 一致。內容：硬咆勃與 Blue Note 體系、Wayne Shorter 四張＋Herbie Hancock 五張、McCoy Tyner 三張＋Bill Evans 三張、吉他與酷派、Tristano 學派與搖擺長青樹。
