@@ -2180,6 +2180,64 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-02｜desc-restyle：批次 065 共 49 張上線＋店主下了兩條卡池常設裁定（7,535 → 7,534）
+
+- Repo：`desc-restyle`＋`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:`
+- 改動：跑完 w2-065（jazz 家族第四批，UK 新一代爵士與當代人聲）。研究 5 組（Sonnet）＋補查 1 組、hook 5 組（Opus）、寫作 5 組（Opus），
+  QA 三關 0 標記，字數 166–249（均 227），KV 逐字比對 **49/49 一致**。
+  內容：Ezra Collective／Alfa Mist／Nubya Garcia 各三張、Makaya McCraven 四張、Cécile McLorin Salvant／Samara Joy／Laufey／Gregory Porter 各三張、
+  Mammal Hands 與 Portico Quartet 各兩張、Charlie Parker 兩張。
+- **店主兩條常設裁定（本次最重要的成果，往後不再逐次請示）**：
+  1. **尚未發行的專輯卡 → 一律保留**，走保守寫法。
+  2. **雜牌彙編／無歷史定位的選輯與重發 → 一律移除。**
+  店主同時指示「不用再問我等我了」。規則已寫進三處：`desc-restyle/prompts/research-base.md`（研究層直接照辦）、
+  `.claude/skills/dip-desc-restyle/SKILL.md` 的「卡池品質」一節、以及長期記憶。
+  本批兩類各出現一次：**Ezra Collective《Here Because of Hope》**（第四張錄音室專輯、官方預定 2026 年 9 月、
+  Bandcamp 與零售通路日期不一）以 thin 卡保守處理——正文明寫已宣布未上市、只用已公開資訊（廠牌、17 首、
+  Letitia Wright 旁白、先行單曲）、**不寫死日期、不編造聲響與成績**；
+  **Charlie Parker《The Happy "Bird"》**確認為雜牌彙編（1961／2009／2010 三次重發曲目互不相同）**予以移除**。
+  同批另兩張 Parker 都有定位而保留：《Plays Cole Porter #5》收的是**他此生最後一次錄音（1954-12-10，三個月後辭世）**、
+  《South of the Border》曲目可考自 1951 年《Fiesta》，是他與 Machito 樂團的 Afro-Cuban 合作。
+- **本批的先例級發現：thin 判定過度保守，059 之後第二次發生。**
+  研究層首輪 49 張標了 **21 張 thin**（歷史多在 4–14 張）。逐張核對事實字數後發現
+  **14 張其實有 199–415 字的事實可寫，只因 `keyTracks` 留空就被降級**。
+  處理：主線直接升級 13 張為 full（未發行那張維持 thin），另派一個補查代理處理真正不足的 7 張、**放寬到每張 3 次搜尋**，
+  結果**7 張全部改判 full**。最終 48 full／1 thin。
+  **這條已成常規：往後看到 thin 比例異常高，先核事實字數再決定，不要照收研究層的判定。**
+- **研究層與補查層合計推翻主線 12 處**（本工程單批最高）：
+  | 主線／首輪寫的 | 查證結果 |
+  | --- | --- |
+  | Mulgrew Miller《Grew's Tune》是 1985 年首張領銜作 | **是 2012 年他中風康復後與丹麥 Klüvers Big Band 的現場聯名錄音**，相差 27 年（真正首作是《Keys to the City》） |
+  | 《Great Voices of Harlem》是 Gregory Porter 個人作 | **三人聯合掛名**（Porter、Donald Smith、Mansur Scott），卡池只掛 Porter |
+  | Cory Wong《Meditations》是個人作 | **正式掛名是 Jon Batiste 與 Cory Wong 聯名** |
+  | Ezra《Here Because of Hope》可能是 EP 或現場輯 | **是尚未發行的第四張錄音室專輯** |
+  | Alfa Mist《Antiphon》是出道作 | **是第二張**（2015 年自家 Sekito 廠牌的《Nocturne》才是） |
+  | Portico Quartet《Isla》入圍 Mercury | 入圍的是**前一張《Knee-Deep in the North Sea》** |
+  | WONK 的 EPISTROPH 是自營廠牌 | **不是自營** |
+  | Jacob Collier 的 Quincy Jones 是製作人 | **是賞識與提攜，非製作人** |
+  | Salvant《Ghost Song》是概念專輯 | **她本人稱是日記式、刻意不定義概念** |
+  | Cory Wong《Elevator Music》2023 年 | **2020-01-10**（2023 只是黑膠再版年） |
+  | 《Louis and the Angels》收〈When the Saints Go Marching In〉 | **根本不在曲目裡**（首輪誤植，補查層抓到） |
+  | Laufey《A Matter of Time》資料不足 | 補查找到主題、先行單曲與 **Billboard 200 生涯最佳第 4 名** |
+- **c 組整份研究稿用半形標點**（82 個逗號、3 分號、6 冒號、32 括號），其他四組全是全形——
+  主線只轉換緊貼中文的部分（Latin 標題內照原樣保留）後歸零。這是繼西里爾字母、簡體字之後的第三種字元污染型態。
+- **人工審稿修 6 處**：《Louis and the Angels》把來源平台與樂評姓名寫進正文（比照 063 對 AllMusic 那次處理）；
+  Peyroux《Half the Perfect World》的 **hook 立了「嗓音被拿去和 Billie Holiday 比」而正文從頭到尾沒回到**
+  （補上那段復古爵士樂團巡演的來歷並重排時序）；Porter《Take Me to the Alley》的 hook 說「好萊塢與紐約的兩地錄音」
+  但正文只寫時間沒對上地點；**WONK《Sphere》把四位日本樂手的名字寫成漢字**（違反音樂人名一律拉丁原文，
+  063 的 Casiopea 已修過同型；本次改以編制表述，避開羅馬拼音誤植風險）；
+  Parker《South of the Border》把樂器名寫成 alto 而非中音薩克斯風；Peyroux 那張補完後超標，重排修剪回區間。
+- hook 層有 13 則 note 超過 350 字（a 組最長 510），比照 037 前例**未手修**——手改 13 則的成本高於多出來的 token，
+  且 hook 的內容項與跨組掃描全數通過。
+- 主要檔案：`desc-restyle/batches/w2-065-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-065*`、
+  `desc-restyle/prompts/research-base.md`、`.claude/skills/dip-desc-restyle/SKILL.md`、`desc-restyle/REMOVE_LIST.json`、
+  `desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`
+- 驗證：`qa-batch.mjs` 三關 0 標記；`qa-check-research.mjs` 五檔各 0 標記；`fix-spacing` 待補 0 張；
+  中文數字榜單名次、校對痕跡（含 064 新補的四組關鍵詞）、音譯人名、否定句式、評語式收語、榜名年代錯置、
+  **Verve 時序陷阱**七項自訂掃描全數歸零；`wrangler kv bulk put` 回 `Success!`；
+  `verify-kv.mjs` bulk-get 逐字比對 **49/49 一致**（含 5 個帶變音或彎引號的 key）。
+- 後續：063–065 三批（146 張）已全數上線，卡池 7,534 張。066 卡單已預切完畢可直接開跑。
+
 ### 2026-08-02｜desc-restyle：批次 064 共 49 張上線＋移除 1 張精選輯（7,536 → 7,535）
 
 - Repo：`desc-restyle`＋`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:`
