@@ -2181,6 +2181,25 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜把 desc-restyle 產線固化成 skill `dip-desc-restyle`
+- Repo：工作區 `dip-vinyl-home/.claude/skills/dip-desc-restyle/SKILL.md`（該層非 git repo）；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：店主要求「在新對話召喚 skill、輸入批次數或張數就能開跑」，已把整條產線寫成 178 行的 skill。
+  參數接受批次號（`059`）、批數（`3 批`）或張數（`150 張`，換算每批 50 張）；不給參數則讀 `progress.json` 的 `status` 找下一個未跑批次。
+- **skill 涵蓋**：開工前的交接檢查與備忘錄／progress 盤點、切卡單、研究 5 組（**指定 Sonnet**）→ hook 5 組（Opus）→ 合併 → 寫作 2 組（Opus）的派工模板與 model 指派、全套 QA 指令、逐張人工審稿的檢查清單、KV 上線與驗證、progress.json 與 PROJECT_MEMORY.md 的收尾格式、commit／push。
+- **明確寫進 skill 的、不可自動化的兩件事**（已向店主說明）：
+  1. **讀卡單決定通論分配與逐張特注**——代理看不到別組的卡，這是主線的判斷工作。
+  2. **逐張人工審稿**——機器只驗「有沒有來源」，驗不出「來源對不對」。近六批靠它抓到的錯誤穩定落在每批 3–9 處，且多數要現場上網查證。skill 只能規定必須做，不能代替做。
+- **把血淚教訓寫成硬規則**：
+  - **特注裡的斷言會被代理當成既定事實往下長**——凡版本鎖定、序號、廠牌歸屬、人物歸屬、分軸軸線，一律寫成「請查證」的問句，並要求代理明列以來源推翻主線之處。改成問句式後研究層近三批推翻主線 16 處，含一次**否決分軸設計本身**。
+  - **1958 年 8 月以前的單曲一律不得寫 Billboard Hot 100**（該榜那時才創設）——此錯已重演兩次。
+  - 人物關係時序（「妻子」是當時就是還是後來才結婚）、hook 前提整個錯掉、編制陣容、跨批矛盾等高頻錯誤型態，依歷史頻率排序列進審稿清單。
+  - 修正來源錯誤必須同步改 research／hooks／input 三層，否則會被 `qa-check-research` 誤標為編造。
+  - 字數陷阱（中文夾拉丁人名時字元數遠高於直覺）、回報紀律（不得覆述原文，這是內容過濾器中斷的根因）、AI 生成百科站需交叉驗證。
+  - 已知 QA 誤報型（《》內原文標題、綽號夾中間的人名、專名裡的半形逗號、序數被當名次）一併列出，避免下次「先查證再改稿」的功夫重做。
+- **技術陷阱沿用既有紀錄**：wrangler 要親眼看到 `Success!`、`verify-kv.mjs` 在 Windows 要用 grep 取結果、含「..」的 key 不能用 `wrangler kv key get`（403）、Bash 工具不能用 PowerShell here-string 寫 commit message。
+- 主要檔案：`dip-vinyl-home/.claude/skills/dip-desc-restyle/SKILL.md`（新增）
+- 驗證：skill 已被系統載入並出現在可用清單中，frontmatter 的 name／description 格式與既有三個 dip-* skill 一致。
+
 ### 2026-08-02｜desc-restyle：批次 058 共 50 張上線（056–058 三批合計 150 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
 - 改動：跑完 w2-058 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 175–240（均 221），KV 逐字比對 50/50 一致。內容：loft jazz／BAG／AACM 系十張、晚期 Miles Davis 六張、Ornette Coleman 兩張、Gil Evans／George Russell／Jimmy Giuffre／Cecil Taylor／Steve Lacy／Mal Waldron 各兩張，以及南非與中東脈絡十張。
