@@ -2181,6 +2181,25 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 056 共 50 張上線（爵士女聲與 Blue Note 新浪潮）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-056 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 187–239（均 224），KV 逐字比對 50/50 一致。內容：**14 張爵士女聲與人聲卡**、Ornette Coleman 4 張、Blue Note 新浪潮（Andrew Hill 3、Bobby Hutcherson 3、Jackie McLean 3、Joe Henderson 4）、Roland Kirk／Yusef Lateef／Keith Jarrett 各 2–3 張。
+  - **本批的結構性難題：前兩批把廠牌通論額度全用完了。** Blue Note、Van Gelder 錄音室、Prestige、Impulse!、Atlantic 爵士部門、CTI、Norman Granz 的 Verve／JATP 體系，全部已在 054／055 落點完畢。本批 c／d 兩組幾乎整組是 Blue Note 作品、a 組多張是 Verve 作品，**二十餘張卡一律只能把廠牌寫成「由某某發行」**。這是 Blue Note 在 054 的處理原則往下延伸的必然結果，可行但要在派工時講死。
+  - 新通論落點：自由爵士誕生與 Five Spot 駐場爭議只在 Ornette《The Shape of Jazz to Come》（**這條在 056／057／058 三批合計只出現一次**）、三管齊吹只在 Roland Kirk《The Inflated Tear》、東方樂器導入爵士只在 Yusef Lateef《Eastern Sounds》、獨奏鋼琴即興只在 Keith Jarrett《Facing You》、歌手自營廠牌只在 Betty Carter、Great American Songbook 標準曲傳統只在 Carmen McRae。**harmolodics 與 ECM 廠牌通論分別預留給 058 的《Dancing in Your Head》與 Mal Waldron《Free at Last》（ECM 1001，廠牌第一張發行），本批全面禁止。**
+  - **研究層推翻主線六處**：①《Point of Departure》的小號手是 **Kenny Dorham**、**並無 Freddie Hubbard**；②《Mode for Joe》是**七重奏**非六重奏；③**Rahsaan 之名 1970 年才冠上**，晚於《Volunteered Slavery》(1969) 的發行；④《Wild Is the Wind》**與 Philips 合約收尾無關**（她隔年仍在該廠牌發片）；⑤《Eastern Sounds》是 **1961 年錄、1962 年發行**；⑥ Peggy Lee《Black Coffee》的**曲目全非她創作**，她的詞曲人身分是生涯標籤而非本作特徵。
+    - **③是研究層第一次否決主線的「分軸設計」本身，不只是單一事實。** 主線原打算拿改名當兩張 Kirk 卡的軸線，但依反向禁令那屬「與作品無關的後續生平」，代理直接改用失明主題 vs 政治現場混編來分軸。**往後設計分軸時，軸線本身也要先查證時序。**
+  - 另有兩處誠實降階：《Fuchsia Swing Song》的 time-no-changes 說法查無來源、《Forest Flower》的百萬銷量出自單一回顧來源。
+  - **人工審稿修六處**：
+    1. `julie london|julie is her name` **兩處**——Bobby Troup 1955 年是**未婚夫**（1959-12-31 才結婚），且**〈Cry Me a River〉不可能上 Billboard Hot 100**（該榜 1958-08 才創設），改稱全美流行單曲榜。**這是 049 那次 Chuck Berry 榜名年代錯置的同型重演，值得列為固定檢查項：凡 1958 年 8 月之前的單曲，一律不得寫 Hot 100。**
+    2. `mel tormé|...dek-tette` 錄音地點誤植紐約，實為**好萊塢**（Radio Recorders）。
+    3. `blossom dearie|blossom dearie` 稱她「與 Barclay 合組」Les Blue Stars，實際是**她自己創立**、Barclay 夫婦僅為支持者。
+    4. `roland kirk|the inflated tear` 把致盲寫成「眼藥過量的**注射**」，實際是護理人員**點入過量藥水**。
+    5. `eric dolphy|outward bound` 用了「低音黑管」，改為台灣慣用的**低音單簧管**。
+    6. `ornette coleman|science fiction` 稱 Asha Puthli 為「印度裔美籍」，收斂為印度歌手。
+  - **跨批次一致性照辦**：Abbey Lincoln《Straight Ahead》(1961) 全程未用「妻子」稱謂——她與 Max Roach 1962 年才結婚，這一點在 055 的《We Insist!》剛修過；《Inner Urge》把《A Love Supreme》只當時間座標（錄音早九天），未展開該作故事（那已在 054《Crescent》用掉）。
+- 主要檔案：`desc-restyle/batches/w2-056-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-056*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關全數 0 標記（研究層另修 110 處半形逗號與簡體字）；`qa-check-research.mjs` 兩檔各 0 標記；`fix-spacing` 待補 0 張；中文數字榜單名次與音樂人名中文音譯掃描皆 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` bulk-get 逐字比對 **50/50 一致**（含 `mel tormé` 的 é 與 `destination... out!` 的三點 key）。
+
 ### 2026-08-02｜worker `/spotify-search`：模糊命中改由 CAA 覆核、修好 artistMatches 裸包含（已部署）
 
 - Repo：`dip-vinyl-worker`（`src/index.js`）＋ `dip-vinyl-shop`（`scripts/cover-audit/` 兩支新腳本、本備忘錄）。
