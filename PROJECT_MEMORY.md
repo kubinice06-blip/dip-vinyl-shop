@@ -2181,6 +2181,29 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-02｜desc-restyle：批次 053 共 50 張上線（尚未分池者 3,629 張）
+- Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
+- 改動：跑完 w2-053 一批 50 張。研究 5 組（Sonnet）、hook 5 組（Opus）、寫作 2 組（Opus），QA 0 標記，字數 179–240（均 230），KV 逐字比對 50/50 一致。批次主題：中西部重型太空搖滾／工業與 EBM／nu metal／後 grunge 與九〇年代電台搖滾。
+  - **本輪改採「一批走完全程再開下一批」**（店主 2026-08-02 裁定）。先前三四批並行，逐張審稿會把整批全文帶進上下文，堆越多後面每輪重送越貴。同時**研究層固定指定 model 為 sonnet**（RUNBOOK 早有規定，上一輪派工漏寫導致研究層全跑成 Opus）。
+  - **人工審稿抓到八處機器 QA 驗不出的錯誤，其中一處是主線自己造成的**：
+    1. **`311|311`——錯誤前提由主線的派工特注引入。** 我在特注寫「本張是 1995 年同名作，不是 1990 年的自主發行 demo」，但該團 1990 年的自主發行是《Dammit!》，**早期根本沒有同名版本**。研究層順著我的前提查證並「確認」了差異，hook 更把它寫成「同名的唱片有兩張，掛上三白金的到底是哪一張？」——**整張卡的懸念建立在不存在的事實上**，因此 hook、note、facts、正文全部重寫。
+    2. `front 242|front by front` 誤寫第三張錄音室專輯，實為**第四張**（Geography 1982→No Comment 1984→Official Version 1987→Front by Front 1988）。
+    3. `live|throwing copper` 誤寫第三張，實為**第二張**（Mental Jewelry 1991→Throwing Copper 1994）。
+    4. `barenaked ladies|stunt` 誤寫「1998 年 6 月發行、第五張錄音室專輯」，實為 **1998 年 7 月 7 日、第四張**。
+    5. `the wallflowers|bringing down the horse` 把〈One Headlight〉的獲獎年寫成 1999 年，實為 **1998 年第 40 屆葛萊美**。
+    6. `eve 6|eve 6` 把《X 檔案》〈Eve〉寫成第二季，實為**第一季第 11 集**（1993-12-10 首播）。
+    7. `silverchair|frogstomp` 兩處：團員年齡誤為 14 歲（三人皆生於 1979 年，錄音與發行時**均為 15 歲**）、澳洲認證誤為 11 白金（實為**六白金**、約 42 萬張）；另刪去查無來源的「澳洲樂團史上第一張首張專輯即空降冠軍」。
+    8. `bush|sixteen stone` 的美國發行日**來源分歧**（11 月 1 日與 12 月 6 日並存），改為只寫「1994 年底」不指定日期。
+  - **這輪最值得記的教訓：主線寫進特注的錯誤前提，比研究層自己查錯更危險。** 研究層會把它當成待驗證的既定事實去「確認」，hook 層再據以建構懸念，三層一路長上去，機器 QA 只驗「有沒有來源」全數放行。**往後派工特注裡的版本鎖定、同名作區分、廠牌歸屬等斷言，要嘛附來源、要嘛寫成「請查證是否存在」的問句，不要寫成肯定句。**
+  - **兩條通論查無支撐即不寫，不硬塞**：主線原把 Wax Trax! 廠牌通論配給 Ministry《The Land of Rape and Honey》、比利時 EBM 名詞由來配給 Front 242《Front by Front》，但 hook 層回報兩張的事實表都沒有對應細節（前者實為 **Sire** 發行，Wax Trax! 是 Ministry 更早的單曲時期）。兩條通論整批不展開。
+  - **差點把對的改成錯的**：`kmfdm|nihil` 寫〈Juke-Joint Jezebel〉被電影《Bad Boys》採用，我一度以為應該是《Mortal Kombat》而準備更正，查證後**原稿正確**——原版用於《Bad Boys》，《Mortal Kombat》用的是 Giorgio Moroder 混音版。**溯源要查到底，不能只憑印象反向修正。**
+  - **研究層主動推翻主線假設四處**：Collective Soul 的〈Shine〉電台自播故事屬 1993 年首張而非本張 1995 同名作、Republica 英美版曲序實際相同、Godflesh《Pure》無〈Spine〉一曲、White Zombie 的 Beavis and Butt-Head 曝光屬前作《La Sexorcisto》。
+  - **店主中途補線索促成一張升級**：`papa roach|infest` 原標 thin（〈Last Resort〉取樣來源查無確證）。依店主提供的討論串線索追查 Louder 專文後確認**該 riff 並非取樣**——貝斯手 Tobin Esperance 九〇年代中期在沙加緬度合租屋用鋼琴寫出主旋律，Shaddix 形容「聽起來像一首古典樂曲」才搬上吉他；Iron Maiden〈Genghis Khan〉抄襲指控由 Shaddix 於 2020 年否認（稱他 2004 年才聽該團）。升為 full，並依規則同步改 research／hooks 兩層，note 下明令「嚴禁寫成取樣」（誤傳的正是這個詞）、指控與否認兩邊都要寫。
+  - **同構故事分軸**：本批有四張真實骨架都是「離開原樂團另起爐灶」（Front Line Assembly／Jesu／Rob Zombie／Filter），note 全面禁用該框架並禁止互相轉述，成稿四張的開場切入點分別為發行錄音資訊、人員配置、取樣片單、歌曲取材對象。另有十張屬「單曲電台爆紅→專輯長銷」骨架，各指定不同切入點錯開。
+  - **題材克制照辦**：Filter〈Hey Man Nice Shot〉點名 R. Budd Dwyer 與 1987 年、不寫過程；Disturbed 的獨白爭議只作事實陳述並註明未收進電台版；Everclear、Live、Fastball 涉逝者處只寫客觀事實與時序。P.O.D.《Satellite》明寫發行日與 2001-09-11 僅為時序重疊、非為該事件而作。
+- 主要檔案：`desc-restyle/batches/w2-053-{final,kv}.json`、`batches/{wave2,research,hooks,input,output}/w2-053*`、`desc-restyle/progress.json`
+- 驗證：`qa-batch.mjs` 三關（research／hooks／out）全數 0 標記；`qa-check-research.mjs` 兩檔各 0 標記；`fix-spacing` 待補 0 張；中文數字榜單名次殘留 0 處；`wrangler kv bulk put` 回 `Success!`；`verify-kv.mjs` 以 bulk-get 逐字比對 **50/50 一致**。（沿用既有陷阱處置：verify-kv 在 Windows 會於印完結果後觸發 libuv assertion，取結果用 grep 驗證行、勿用 `tail -1`。）
+
 ### 2026-08-02｜worker 封面解析補上 Cover Art Archive 層；Nina Simone 封面修正
 - Repo：`dip-vinyl-worker`（`src/index.js`，commit 8009ff6，已 push 並部署）
 - 改動一（本次需求）：`/spotify-search` 在 Spotify 未取得封面時，新增 MusicBrainz release-group 查詢 → Cover Art Archive 取封面的補救層。`ALBUM_ONBOARDING.md` 記載的解析鏈本來就有這層，但執行期先前缺席（實際只有 card_catalog → Spotify → Bandcamp）。
