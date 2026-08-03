@@ -571,7 +571,7 @@
 </script>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=32"></script>
+<script src="dip-player.js?v=33"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1644,12 +1644,12 @@ function playRogueAlbum(card){
       const meta=await roguePreviewMeta(card);
       if(meta.previewUrl){
         if(!rogueDirectPreview(meta.previewUrl)){ window.DipPlayer.stop?.({fade:true}); return; }
-        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,fixedOnly:true});
+        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,cover:card.coverUrl||'',fixedOnly:true});
         return;
       }
       if(meta.previewStatus==='unavailable'||meta.previewStatus==='disabled'){ window.DipPlayer.stop?.({fade:true}); return; }
       void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
-      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only'});
+      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',cover:card.coverUrl||''});
     })().catch(()=>{});
     return true;
   }catch(e){return false;}

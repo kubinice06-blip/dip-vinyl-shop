@@ -26,11 +26,69 @@
   // 自己記住音量狀態：gain.value 要等下一個 render quantum 才會反映剛排下去的
   // setValueAtTime，緊接著讀會拿到舊值。previewRampEnd 是最後一段 ramp 的結束時間。
   let previewLevel = 0, previewRampEnd = 0;
-  let state = { status: 'idle', provider: null, artist: '', album: '' };
+  let state = { status: 'idle', provider: null, artist: '', album: '', cover: '' };
+  let mediaSessionActive = false;
 
   function emit(next) {
     state = { ...state, ...next };
+    syncMediaSession(state);
     listeners.forEach(listener => { try { listener({ ...state }); } catch (_) {} });
+  }
+
+  // 鎖定畫面／通知列的媒體卡片。不主動設定時，Android Chrome 會自己抓頁面標題與
+  // 網站圖示充當 metadata，於是把瀏覽器收起來後鎖屏會留一則掛著 dip logo 的播放器；
+  // 更糟的是試聽結束後那則通知不會自己消失，按下它的播放鍵只會喚醒靜音 keep-alive
+  // （顯示在播、實際沒聲音）。這裡在真的出聲時填入專輯資訊，播完或停止就銷毀 session。
+  function syncMediaSession(current) {
+    if (current.status === 'playing') setMediaSession(current);
+    else if (current.status === 'stopped' || current.status === 'error' || current.status === 'idle') clearMediaSession();
+  }
+
+  const MEDIA_ACTIONS = ['play', 'pause', 'stop', 'previoustrack', 'nexttrack', 'seekbackward', 'seekforward', 'seekto'];
+
+  function setMediaSession({ artist = '', album = '', trackName = '', cover = '' } = {}) {
+    const session = navigator.mediaSession;
+    if (!session) return;
+    try {
+      if (typeof window.MediaMetadata === 'function') {
+        session.metadata = new window.MediaMetadata({
+          title: trackName || album || 'dip vinyl 試聽',
+          artist, album,
+          artwork: /^https?:\/\//i.test(String(cover)) ? [{ src: cover, sizes: '512x512' }] : []
+        });
+      }
+      session.playbackState = 'playing';
+    } catch (_) {}
+    // 只掛停止類動作。30 秒試聽是一次性的 AudioBufferSource，沒有可回復的「繼續播放」，
+    // 因此刻意不註冊 play——沒有 play handler，鎖屏就不會給出按了不會出聲的播放鍵。
+    const stopFromLockScreen = () => { try { stop({ fade: true }); } catch (_) {} };
+    MEDIA_ACTIONS.forEach(action => {
+      const handler = action === 'pause' || action === 'stop' ? stopFromLockScreen : null;
+      try { session.setActionHandler(action, handler); } catch (_) {}
+    });
+    mediaSessionActive = true;
+  }
+
+  function clearMediaSession() {
+    const session = navigator.mediaSession;
+    const hadSession = mediaSessionActive;
+    mediaSessionActive = false;
+    if (session) {
+      MEDIA_ACTIONS.forEach(action => { try { session.setActionHandler(action, null); } catch (_) {} });
+      try { session.playbackState = 'none'; } catch (_) {}
+      try { session.metadata = null; } catch (_) {}
+    }
+    // playbackState='none' 只是把卡片標成非播放中，Chrome 仍會把它留在鎖定畫面上。
+    // 要讓它真的收掉，必須拆掉還掛著音源的 <audio>。keep-alive 這時已經暫停，拆 src
+    // 不影響下一次播放：primePreviewFromGesture 每次都會重新指定 src 再 play。
+    if (previewAudio && (hadSession || previewAudio.getAttribute('src'))) {
+      try {
+        previewAudio.loop = false;
+        if (!previewAudio.paused) previewAudio.pause();
+        previewAudio.removeAttribute('src');
+        previewAudio.load?.();
+      } catch (_) {}
+    }
   }
 
   function addStyle() {
@@ -933,13 +991,14 @@
     } catch (_) { return false; }
   }
 
-  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '', fixedOnly = false } = {}) {
+  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '', fixedOnly = false, cover = '' } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return false;
     const token = ++requestId;
     lastFailCode = '';
-    emit({ status: 'loading', provider: null, artist, album, trackName:'', storeUrl:'', attribution:'', code:'' });
+    // cover 只餵給鎖定畫面的媒體卡片；沒帶就留空，Chrome 會退回無封面而不是抓網站 logo。
+    emit({ status: 'loading', provider: null, artist, album, cover: String(cover || ''), trackName:'', storeUrl:'', attribution:'', code:'' });
     try {
       // 固定連結優先：命中就完全跳過來源查詢（不打 worker、不吃 API 配額，
       // 也不會發生即時比對配到別張專輯的問題——正確性在入庫前就人工覆核過了）。

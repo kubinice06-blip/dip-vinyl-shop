@@ -1,5 +1,45 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-03｜鎖定畫面媒體通知改用 MediaSession，播完自動收掉
+
+- Repo：`dip-vinyl-shop`。檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`。
+- 現象（店主手機 Chrome 回報）：抽完卡、試聽播完後把網頁最小化，**鎖定畫面留著一則掛著網站
+  logo 的播放器**，而且不會自己消失。
+
+**根因**：全專案原本沒有用過 `navigator.mediaSession`。只要頁面有 `<audio>` 或 Web Audio 在出聲，
+Android Chrome 就會自動掛一則媒體通知；metadata 沒人指定時它就抓 `document.title` ＋ manifest／
+favicon 圖示來湊，所以顯示的是站名和 dip logo。試聽結束後 `stop()` 只有 `pause()`，
+媒體 session 沒被銷毀，通知因此常駐；按它的播放鍵還會喚醒靜音 keep-alive，
+變成**顯示在播、實際沒聲音**。
+
+**改法**（`dip-player.js` 新增 `syncMediaSession` / `setMediaSession` / `clearMediaSession`，掛在 `emit()` 上）：
+
+- `status:'playing'` → 寫入專輯／藝人／曲名與封面，`playbackState='playing'`。
+  封面走 `playAlbum({ cover })` 新參數，四個呼叫點（唱片櫃、專輯搜尋、抽卡結果頁、對戰、Roguelike）
+  都改成傳 `coverUrl`／`_coverUrl`。**沒帶 cover 就留空陣列，讓 Chrome 顯示無封面而不是退回網站 logo。**
+- `status` 為 `stopped`／`error` → `playbackState='none'`、`metadata=null`，並**拆掉 keep-alive
+  `<audio>` 的 src**（`removeAttribute('src')` + `load()`）。只設 playbackState 不夠——Chrome 仍會把
+  卡片留在鎖屏，必須讓還掛著音源的元素失去來源，session 才會真的銷毀。
+  不影響下一次播放：`primePreviewFromGesture` 每次都會重新指定 src 再 play。
+- `loading`／`stopping` 不動，淡出那 1.5 秒卡片仍在。
+- **刻意不註冊 `play` handler**，只掛 `pause`／`stop` → `stop({fade:true})`。
+  30 秒試聽是一次性的 AudioBufferSource，沒有可回復的「繼續播放」；沒有 play handler
+  鎖屏就不會給出按了不會出聲的播放鍵。
+
+**驗證**（本機 static server + 3 秒測試 wav 走 pinned-file 路徑，實測 `onStateChange` 逐格快照）：
+
+| 階段 | playbackState | metadata |
+| --- | --- | --- |
+| loading | none | null |
+| playing | playing | Test Album／Test Artist／封面 512x512 |
+| 自然播完 stopped | none | null，keep-alive src 已清空 |
+| `stop({fade:true})` 淡出中 | playing | 仍在（正確） |
+| 淡出結束 | none | null，keep-alive src 已清空 |
+
+- 三頁的 `dip-player.js?v=32` → `v=33`（sw.js 對 .js 是網路優先，但沿用既有 cache-buster 慣例）。
+- 未動 YouTube 路徑：`mount()` 仍會 prime YT placeholder（160ms），那則 session 屬於
+  youtube.com，本次不處理；order 已是 `['itunes']`，YT prime 其實是舊路徑的殘留，日後可評估拿掉。
+
 ### 2026-08-01｜desc-restyle w2-041／042／043 三批上線（累計 2,912／6,971，41.8%）
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
