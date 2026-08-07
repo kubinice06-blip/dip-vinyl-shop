@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-071 上線 50 張（69–71 三批完成）
+
+- Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
+- 改動：**w2-071 上線 50 張**（費城國際唱片核心區塊＋Motown 靈魂：Spinners 3／Gladys Knight & The Pips 3／Smokey Robinson 3／Barry White 3／MISIA 3／Alicia Keys 3／Leon Bridges 3／Gil Scott-Heron 3／Harold Melvin 2／Temptations 2／Aretha Franklin 2／Parliament 2／Bootsy Collins 2 等），滿 50 張、無移除卡。**至此 069–071 三批共 150 張全數上線。**
+- **PIR 通論的跨批調度**：費城國際唱片的創辦與 Gamble & Huff 起家這條，早在 w2-069 就先從 Teddy Pendergrass 那張禁掉、預留給本批的費城區塊，最後落在 Billy Paul《360 Degrees of Billy Paul》。
+- **跨批藝人漏網一例**：The O'Jays 因預切時 068 的 key 用彎引號、071 用直引號而被正規化當成兩個藝人、拆到兩批。071 的《Ship Ahoy》已對 068 兩張加 w2-008《Back Stabbers》逐一寫排除，成稿零重疊。
+- 研究層推翻主線 7 處，全是我方在特注裡寫死的假設：Jill Scott 新作**已於 2026 年 2 月發行**（非未發行卡）；Sister Sledge 那張的製作人是 **George Duke** 而非 Chic 兩人；Jordan Rakei《Cloak》的廠牌是**自營的 4101 Records**；Jorja Smith 的製作雙人組出身 **Walsall** 與曼徹斯特無關；Spinners《Love Trippin'》的翻唱組曲我指錯（那首在前一張）；Parliament 的 Dr. Funkenstein 是**本張才首度登場**的新角色；Leon Bridges《Leon》主題寫 Fort Worth 童年但**主體錄音在墨西哥城郊**。
+- 人工審稿修 1 處：Alicia Keys《Santa Baby》的 hook 把 2012 到 2022 寫成「八年前」（實為十年），是 hook 層自己算錯，研究稿年份正確，已同步三層。
+- **我方另一個錯已記錄**：派工詞把兩張的 key 描述成含彎引號，但卡單實際是半形 ASCII 撇號。hook 代理照「逐字複製」鐵則辦事並主動回報質疑，各層 key 與卡單 100% 一致。往後派工詞描述 key 字元前要先實際比對卡單。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-071 研究／hooks／input／output／final／kv）
+- 驗證：機器 QA 三關 0 標記（兩則已知誤報）、字數 203–240（均 229）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜desc-restyle w2-070 上線 50 張
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
