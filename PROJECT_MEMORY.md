@@ -2221,6 +2221,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-080 上線（50 張）；075–080 六批完結
+
+- **改動摘要**：極端金屬（thrash／death／grindcore／black／power）與另類搖滾、post-punk 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。
+- **`the velvet underground & nico` 掛名更正完成**：依店主指示改為獨立掛名，`seed_cards.json` 藝人欄、預切卡單與研究檔三處同步；舊 key `desc2:nico|the velvet underground & nico` 已從 KV 刪除並以 bulk get 驗證為空，新 key 已有值。
+- **年份更正**：`10,000 maniacs|in my tribe` 1986→1987；`trouble|psalm 9` 1988→1984（1984 年原始發行時標題就是同名的《Trouble》，《Psalm 9》是 1990 年為了與第四張同名作區隔才回頭改稱的）。
+- **研究層推翻主線 6 處**：Terrorizer《World Downfall》不是「錄完隨即解散」——樂團在錄音前就已解散過一次，是 David Vincent 把人召回專門錄這張；Bathory《Under the Sign》不是自家車庫、是斯德哥爾摩一間原本服務木吉他與流行歌的專業錄音室；Rainbow《Stranger in Us All》不是重組（除 Blackmore 外全是新樂手）；《Straight Between the Eyes》不是 Joe Lynn Turner 的第一張；Robert Wyatt《Old Rottenhat》的題材是 1984 年 Michael Bettaney 叛國案與冷戰地緣政治、不是礦工罷工。
+- **人工審稿修 3 處**，其中 Cocteau Twins《Head Over Heels》的 hook 與舊卡《Victorialand》同構（都是「貝斯沒了，於是⋯」）——派工詞已明確要求避開，寫作層仍撞上，審稿時改走「兩人回蘇格蘭無計畫寫歌」的軸並做 hook 三層同步。另有一處「未指名來源的排行清單名次」，這是本輪第三次遇到同型問題（075 的 Watersons 年度專輯獎、079 的 Bill LaBounty 票選第 7 名），已成穩定的審稿檢查點。
+- **本輪六批（w2-075 至 w2-080）合計**：上線 280 張（49＋49＋43＋46＋46＋50，六批的 KV 驗證全部零不符）；卡池移除 13 張不該存在的卡（重複卡 4、無定位選輯與重發 6、掛錯藝人的翻奏／串流合輯 2、查無此發行的幽靈卡 1），`seed_cards.json` 由 7534 降至 7521；修正卡池發行年 12 處、掛名 2 處。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-08{0}-*`、`desc-restyle/batches/w2-080-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-080` 為「驗 50 張｜一致 50｜不符 0」。
+- **整體進度**：已完成 94 批、3790 張；剩 48 批（w2-081 至 w2-128）、2383 張。卡片進度 61.4%。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-079 上線（46 張）
 
 - **改動摘要**：rock/pop 家族的第一批（079–100 共 22 批），但前 19 張仍是古典與極簡。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，46 張全部推上 Cloudflare KV。
