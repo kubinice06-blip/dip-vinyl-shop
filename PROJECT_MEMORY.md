@@ -2221,6 +2221,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-076 上線（49 張）
+
+- **改動摘要**：world／reggae 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，49 張全部推上 Cloudflare KV。
+- **四處卡池年份錯誤已修正**（同步 `seed_cards.json` 與預切卡單）：Sizzla《Black Woman & Child》1996→1997、Tinariwen《Amassakoul》2003→2004、Tinariwen《Aman Iman: Water Is Life》2006→2007、Buju Banton《Mr. Mention》1993→1992（1993 只是 Mercury／Fader 買下版權後的重發年）。
+- **另移除一張重複卡**：`héctor lavoe|asalto navideño, vol. ii`（w2-077）與同批 `willie colón|asalto navideño, vol. ii` 是同一張 1973 年 Fania 作品，黑膠版面掛名為「Willie Colón Canta: Hector Lavoe Con Yomo Toro」，依「保留與唱片實際版面一致者」保留 Willie Colón 那張。w2-077 降為 44 張。
+- **研究層推翻主線 9 處**：Antibalas《Talkatif》是第二張不是首張；J Balvin《La familia》不是處女作（2009 年已有獨立發行的《Real》）；Chronixx《Dread & Terrible》與 Sean Paul《Mad Love》都是 EP；Ini Kamoze 同名作是六首迷你專輯；Sizzla 那張的製作人是 Bobby Digital 而非 Xterminator。
+- **三張疑似該移除的卡查證後全部保留**：Toots & The Maytals《Recoup》是正規錄音室專輯；Tinariwen《Kel Tinariwen》是 1991 年出道錄音的首度正式國際重發；Black Uhuru《Taxi Trax》是首度系統性彙整 Taxi 廠牌散落單曲與修復 dubplate 的雙 LP。三者都有歷史定位。
+- **人工審稿修 13 處**：Desmond Dekker《Action!》把〈Israelites〉寫成「英美榜冠軍」（實際是英國榜冠軍、美國第 9 名，hook 三層同步）；Steel Pulse《Handsworth Revolution》的「十天內」查無來源（官方榜資料為最高第 9 名、在榜 12 週，hook 三層同步）；三張 J Balvin 的專輯序號互相矛盾，統一改為「大廠牌旗下的第幾張」；Black Uhuru《Red》序號來源分歧，改寫成不帶序號；另有 Ibrahim Ferrer 年齡指涉、兩處校對痕跡與一處中英夾雜。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-076-*`、`desc-restyle/batches/w2-076-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-076` 為「驗 49 張｜一致 49｜不符 0」。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-075 上線（49 張）
 
 - **改動摘要**：folk／world 家族第一批。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，49 張全部推上 Cloudflare KV。
