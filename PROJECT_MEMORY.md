@@ -2220,6 +2220,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-072 上線 48 張；寫作層新增拉丁專名上限
+
+- Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
+- 改動：**w2-072 上線 48 張**（soul＋folk 交界批：孟菲斯與南方靈魂 11／Wilson Pickett 3／二〇〇〇年代原聲創作歌手 8／馬利音樂 4／實驗民謠 4／Faith Hill 4 等），滿 48 張、無移除卡。
+  - **卡池年份訂正**：`The Gloaming — The Gloaming` 2013 → 2014（查證實際發行為 2014-01-20）。
+- **產線改進**：寫作層新增硬條款「**拉丁專名每張壓到 4 個以內**」，已寫進 `desc-restyle/prompts/writer-base.md`。起因是本批 writer-1 初稿 24 張有 22 張超標、最高 346 字，根因是廠牌＋錄音室＋製作人＋樂手一次點滿。
+- 研究層推翻主線 2 處：Jack Rose **不是只用某一種特殊吉他**（橫跨六弦、十二弦與 Weissenborn 膝上鋼棒吉他三種形制）；**《In the Heart of the Moon》不是 Ali Farka Touré 的遺作**（真正的最後錄音室作品是身後才發行的《Savane》），本張的正確寫法是他獲葛萊美隔月辭世、獎座未及送到手上。
+- 人工審稿修 3 處，其中一處是校對痕跡：Manitoba 那張寫「並非敗訴被迫更名」，在否定讀者根本沒提出的說法，已改成正面表述；另一處是算術（葛萊美 2006、專輯 2008，相隔兩年而非三年）。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/prompts/writer-base.md`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-072 五層與 kv）
+- 驗證：機器 QA 三關 0 標記、字數 213–240（均 230）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **48/48 一致**。
+
 ### 2026-08-07｜desc-restyle w2-071 上線 50 張（69–71 三批完成）
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
