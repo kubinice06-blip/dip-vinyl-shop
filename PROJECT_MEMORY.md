@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-069 上線 50 張
+
+- Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
+- 改動：**w2-069 上線 50 張**（靈魂／R&B 跨四十年：Kool & The Gang 4／Sam Cooke 3／Patrick Cowley 3／Luther Vandross 3／Cameo 3／Tony! Toni! Toné! 3／千禧年前後靈魂樂六張等），滿 50 張、無移除卡。
+- 研究層推翻主線 3 處：Johnny Gill《Provocative》不是首張個人專輯而是**第四張**；Corinne Bailey Rae **不是在唱片行或酒吧打工被發掘**（真正促成唱片約的是 2004 年與 Mark Hill 以化名 the stiX 合作的單曲）；Patrick Cowley《Menergy》的發行廠牌是 **Fusion Records**，不是他後來自創的 Megatone。另主動降級三則單一來源說法。
+- 跨組處理：Raphael Saadiq 是 Tony! Toni! Toné! 的主唱兼貝斯手，個人專輯與團體三張分屬不同組，已互寫排除。
+- 時序處理三組逝者與傷病：Teddy Pendergrass 1982 年車禍卡在兩張之間（前一張不寫、後一張標明相隔十六年）；Patrick Cowley 辭世前一個月發片；Sam Cooke 辭世二十一年後母帶才問世——三張都照寫但克制，無一以「他走之後」開場。
+- 人工審稿修 3 處（gospedelic 的構詞說明錯誤、hook 用詞不通並同步三層、推論語氣贅詞）。
+- **產線事故一次（已修並寫進 RUNBOOK）**：KV 上傳時把 `wrangler kv bulk put` 與 `verify-kv.mjs` 串在同一行、又用 `tail` 截斷輸出，導致沒看到 put 其實沒成功，verify 回報全批 50/50 不符。重跑 put 並親眼確認 `Success!` 後即 50/50 一致。往後 put 與 verify 一律分開兩次執行、輸出不可截斷。
+- 主要檔案：`desc-restyle/RUNBOOK.md`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-069 研究／hooks／input／output／final／kv）
+- 驗證：機器 QA 三關 0 標記、字數 212–244（均 234）；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜卡池：Ahmad Jamal 自題作正式改為《Portfolio of Ahmad Jamal》
 
 - Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
