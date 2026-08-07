@@ -2221,6 +2221,15 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜曲風源流比照廠牌辦理（規則變更），並回頭修訂 w2-082 四張
+
+- **店主裁定**：death metal 怎麼成形、grindcore 是什麼、black metal 這個詞怎麼來的、維京金屬誰開的頭——**這類曲風源流和廠牌一樣，只要跟該張專輯有重要關聯就要寫上去**，不得因為別張卡寫過而整條禁掉。這是 2026-08-02／08-07 廠牌裁定的同一條原則再擴大一次。
+- **為什麼要改**：產線先前把「一條通論只准一張卡寫」的配額也套到曲風源流上，套過頭了。w2-082 因此出現明顯損失——Napalm Death《Scum》整張沒提 grindcore、Death 的卡沒提死亡金屬的來歷，而那正是那些唱片存在的理由。
+- **改了哪些檔**：`desc-restyle/prompts/{research,hook,writer}-base.md` 三份各新增「曲風源流規則（2026-08-08）」一節（規則變更改 base 檔、不改派工詞）；`desc-restyle/RUNBOOK.md` 的 1a 節把原本只涵蓋廠牌的防線擴大到曲風源流，並記下 w2-082 這個踩坑案例。反同構的做法改為**指定各張不同的切入面向**：寫「這張唱片在源流裡扮演什麼角色」（命名者／第一份文件／推向極端的那張／帶出地下的那張），而不是各張重講一次「這個曲風是什麼」。
+- **回頭修訂 w2-082 四張**（已重推 KV）：`napalm death|scum` 補上「grindcore 這個詞正是唯一橫跨 A、B 兩面的鼓手 Mick Harris 取的，這張被當成該曲風的起點」；`death|leprosy` 補上「Schuldiner 1984 年把 Mantas 改名為 Death，這個名字後來成了整個曲風的代稱」；`carcass|symphonies of sickness` 補上「前兩張催生 goregrind，這張收斂 grindcore 成分、換上更多死亡金屬的寫法」；`carcass|heartwork` 補上「普遍被當成 melodic death metal 的定義之作」——最後這條研究層本來就查到了，只是被禁令攔下沒進正文。
+- **未受影響**：w2-080 的 Possessed《Seven Churches》、Terrorizer《World Downfall》、兩張 Bathory 都是各該源流的「擁有者」，本來就寫足了；w2-083 的 American Football 與 Mineral 各有夠強的主軸，屬邊際情況，未動。
+- **主要檔案**：`desc-restyle/prompts/*-base.md`、`desc-restyle/RUNBOOK.md`、`desc-restyle/batches/{input,output}/w2-082-*`、`desc-restyle/batches/w2-082-kv.json`、`desc-restyle/progress.json`。
+
 ### 2026-08-08｜desc-restyle｜卡池簡介重塑 w2-083 上線（50 張）
 
 - **改動摘要**：emo／post-hardcore／slowcore／post-rock／女性創作歌手混合家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。舊卡包袱最重的一批——PJ Harvey 七張、Opeth 五張、Mogwai 五張、Tom Waits 三張舊卡的角度都要逐條排除。
