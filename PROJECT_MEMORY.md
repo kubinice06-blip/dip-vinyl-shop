@@ -2220,6 +2220,19 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-066 上線；店主指正廠牌歷史不得全面禁寫
+
+- Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
+- 改動：
+  - **w2-066 上線 48 張**（爵士與流行人聲）。原定 50 張，移除 2 張：`ornette coleman|free jazz` 與 w1-011 已上線的《Free Jazz: A Collective Improvisation》是同一張唱片（重複卡）；`freddie hubbard|minor mishap` 經研究層查出實為長號手 Willie Wilson 1961 年領銜的單一錄音，先後以《Groovy!》《Dedication!》《Minor Mishap》三度改名換領銜人發行，Hubbard 只是 23 歲的伴奏樂手，依常設裁定移除。
+  - **店主指正**：本批首輪派工把舊批 note 的「跨批已用盡而本批全禁」清單照抄進特注，連 Blue Note 創辦史、Van Gelder 錄音室、Prestige／Impulse!／Atlantic／CTI 等**廠牌**條目一併禁掉，違反 2026-08-02 取消廠牌配額的裁定。店主明示「重要的廠牌歷史一樣要寫出來，不是全面禁止」。已另派補查代理把廠牌處境補回（12 張補到 8 張、13 條事實），並把防線寫進 `desc-restyle/RUNBOOK.md`：往後抄舊清單前必須先濾掉廠牌條目，仍有效的禁令只限樂種通論與故事骨架。
+  - **補查層推翻的通說**：Blue Note 1965 年售予 Liberty、1967 年 Alfred Lion 退休、George Butler 要到 1972 年才接掌，因此《Green Is Beautiful》1970 年的放克轉向應歸因於 Grant Green 本人 1969 年復出後的方向，不是 Butler 主導；Prestige 1971 年售予 Fantasy，Dexter Gordon 的《The Tower of Power!》與《Generation》分屬交易前後。
+  - **卡單補上卡池年份**：`seed_cards.json` 的年份先前沒被帶進研究層卡單，導致同名作只能標 uncertain（w2-067 的 Ahmad Jamal 自題作即是）。已把 `year` 欄補進全部 128 批預切卡單（6,326／6,363 張有值）。
+  - **一併移除 w2-067 的重複卡** `duke ellington|at newport`（與 w2-006 的《Ellington at Newport》同一張）。seed_cards 7,534 → 7,531。
+- 研究層推翻主線 12 處，人工審稿修 14 處，其中三處是來源本身錯了：《Dino Latino》引《The Silencers》為 1965 年電影（實為 1966 年 3 月上映）、Adele《19》的「17 歲」與「畢業後錄示範帶」互相矛盾（示範帶實為在學時的課堂作業）、Michael Bublé《It’s Time》的專輯序數算法有爭議。另有一處是寫作層為壓字數把《Green Is Beautiful》整條廠牌線刪掉，已補回。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/RUNBOOK.md`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`desc-restyle/batches/`（w2-066 研究／hooks／input／output／final／kv）、`desc-restyle/batches/wave2/*-cards.json`
+- 驗證：機器 QA 三關 0 標記、字數 132–240（均 225）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **48/48 一致**；移除的三把 desc2: 鍵以 `wrangler kv key get` 驗到 **404**。
+
 ### 2026-08-02｜desc-restyle：店主裁定省流量優先於速度，hook 與寫作層回到各 2 組
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle/`（SKILL.md、RUNBOOK.md、progress.json）與長期記憶
