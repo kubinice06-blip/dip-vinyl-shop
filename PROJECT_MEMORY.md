@@ -2221,6 +2221,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜卡池簡介重塑 w2-083 上線（50 張）
+
+- **改動摘要**：emo／post-hardcore／slowcore／post-rock／女性創作歌手混合家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。舊卡包袱最重的一批——PJ Harvey 七張、Opeth 五張、Mogwai 五張、Tom Waits 三張舊卡的角度都要逐條排除。
+- **卡片資料更正**：`paradise lost|paradise lost`（標 1989）這個組合不存在——首張是 1990 年 2 月的《Lost Paradise》，同名專輯則是 2005 年的第十張。判為資料擷取時把團名填進了專輯欄（年份只差一年、且卡池沒有其他早期 Paradise Lost 卡），已改名為 `paradise lost|lost paradise`、年份改 1990，`seed_cards.json` 與預切卡單同步，舊 key 已從 KV 刪除並驗證為空。另修正年份兩處：Aimee Mann《Bachelor No. 2》1999→2000、Warren Zevon《My Ride’s Here》2001→2002。
+- **研究層推翻主線 9 處**：Red House Painters 的試聽帶是 Mark Eitzel→記者 Martin Aston→Ivo Watts-Russell 三手轉交；Mogwai《Come On Die Young》錄於 Tarbox Road Studios；Simple Minds《Néapolis》的原始貝斯手 Derek Forbes 1996 年已回歸；《Empires and Dance》的「Arista 拒發」查無實據（實情是刻意小批量發行造成缺貨）；Windy & Carl 的唱片行 1999 年才開業、晚於本作。
+- **hook 層第一次抓到研究層的跨卡內部矛盾**：研究稿寫「Peter Lindgren 最後一次參與《Morningrise》」，但同批《Still Life》的陣容裡他仍在。hook 層自行改寫成「De Farfalla 與 Anders Nordin 最後一次參與」，避免兩張互相打架。此前這類矛盾都要等主線審稿才會發現。
+- **人工審稿修 3 處**：Paradise Lost《Gothic》的「一份金屬雜誌名人堂」與 Mineral 的「一份 1990 年代代表曲名單」都未指名出處（**本輪第六、七次同型問題**）；The Promise Ring《Nothing Feels Good》的 hook 說「一本談這股風潮的書」，但正文裡沒有指涉對象、讀者讀不懂，改為直接點名 emo（只點名、不寫曲風概述）。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-083-*`、`desc-restyle/batches/w2-083-kv.json`、`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-083` 為「驗 50 張｜一致 50｜不符 0」。
+- **整體進度**：已完成 97 批、3940 張；剩 45 批（w2-084 起）、2233 張。卡片進度 63.8%。店主指示做完 083 就停。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-082 上線（50 張）
 
 - **改動摘要**：死亡金屬與挪威黑金屬家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。
