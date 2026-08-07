@@ -2221,6 +2221,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-078 上線（46 張）
+
+- **改動摘要**：古典／配樂／neo-classical／ambient 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，46 張全部推上 Cloudflare KV。
+- **卡池變更**：本批原 50 張，研究層查出四張不該存在，移除後為 46 張——Desplat《Winter Walking》是九位作曲家掛名的冬季主題串流選輯（66 首）、Francis Lai《13 jours au Japon》是 2024 年由其他樂手以「Francis Lai Orchestra」名義錄的翻奏致敬合輯、AWVFTS《0:5》是《The Undivided Five》發行前的宣傳倒數單曲（11 軌僅 8 分 21 秒）、Einaudi《I Giorni》2018 年版是 Decca 目錄重發。另修正 Lang Lang《Liszt: My Piano Hero》年份 2010→2011。
+- **研究層推翻主線 8 處**：Hilary Hahn《6 Partitas》不是巴哈的鍵盤帕蒂塔，是她委託 Antón García Abril 創作的當代新作、六首標題的首字母拼出「HILARY」；Pauline Oliveros《Ghostdance》不是 Deep Listening Band 三重奏，是林肯中心委託的舞蹈劇場配樂；John Adams《Grand Pianola Music》1982 年被噓的不是舊金山首演（那場反應良好），是同年夏天紐約 Horizons 新音樂節的重演場；Nils Frahm《Wintermusik》編制沒有大提琴；Ólafur Arnalds《A Dawning》正式掛名是「Ólafur Arnalds & Talos」，合作者 Eoin French 在專輯完成前辭世。
+- **人工審稿修 8 處**：Dead Can Dance《Spiritchaser》寫成「14 年後的 2010 年才以《Anastasis》重新出現」，實際是 2012 年、相隔 16 年；三張 Yiruma 都用「版權標示為」這種資料庫語氣且彼此同構；Yiruma 本名用了中文音譯「李潤摩」，改回拉丁原文；另有一處校對痕跡與兩處無來源的細節。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-078-*`、`desc-restyle/batches/w2-078-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-078` 為「驗 46 張｜一致 46｜不符 0」，含 16 個帶重音符與省略號的 key 全數保留正確。
+- **字數教訓**：古典／ECM 這類家族即使守住「動筆前把拉丁專名壓到 4 個以內」，full 卡仍普遍頂到 240 上緣；下次同家族的派工詞應收緊到 3 個。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-077 上線（43 張）
 
 - **改動摘要**：roots reggae／dub／salsa／非洲家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，43 張全部推上 Cloudflare KV。
