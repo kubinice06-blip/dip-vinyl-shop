@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-073 上線 50 張
+
+- Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
+- 改動：**w2-073 上線 50 張**（folk 家族：Current 93 6／Gillian Welch 4／Shawn Mendes 4／Devendra Banhart 4／Carrie Underwood 3／Keith Urban 3 等），滿 50 張、無移除卡。
+  - **卡池年份訂正兩筆**：`The Gloaming — The Gloaming` 2013 → 2014、`Jewel — Pieces of You` 1994 → 1995（1994 是簽約年）。
+- 研究層推翻主線 5 處，其中兩處是我方憑印象寫進特注的細節：**The Tallest Man on Earth 查無任何來源指出是在「廚房」錄的**；**Current 93《Earth Covers Earth》的 United Dairies 不是 David Tibet 自營**，而是 Nurse With Wound 那兩人共創的廠牌。另抓到一處時序錯誤：**《At the Cut》不是 Vic Chesnutt 的遺作**，他在那之後、辭世前約兩個月還發過一張。
+- **hook 層抓到研究稿自己打架的一處時序**：Keith Urban《Love, Pain & the Whole Crazy Thing》的 facts 同時寫著「發行 12 天後入住勒戒中心」與「10 月 19 日入住、11 月 7 日發行」——後者才對，是入住在先、專輯後發。已溯源更正。這是產線第一次由 hook 層攔下研究層的內部矛盾。
+- 人工審稿修 2 處，其中一處是事實錯誤：Brandi Carlile 那張寫「**時任**美國總統歐巴馬把〈The Joke〉列進 2017 年年度愛歌」，但歐巴馬 2017 年 1 月已卸任，改為「前總統」。
+- 主線另改寫 1 則 hook（三張卡的收尾都落在葛萊美座數，句式同構），並在寫作層開跑前先清掉研究稿裡兩處會外洩的內容（校對痕跡與樂器錯字）。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-073 五層與 kv）
+- 驗證：機器 QA 三關 0 標記（唯一標記為已知良性誤報）、字數 194–241（均 232）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜desc-restyle w2-072 上線 48 張；寫作層新增拉丁專名上限
 
 - Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
