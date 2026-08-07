@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-067 上線 48 張
+
+- Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
+- 改動：
+  - **w2-067 上線 48 張**（爵士後段與靈魂前段的交界批：Monk 3／Wes Montgomery 3／Sérgio Mendes 3／Sonny Rollins 3／Donald Byrd 3／Chet Baker 3／Oscar Peterson 3／Isaac Hayes 4／Curtis Mayfield 6／Marvin Gaye 2 等）。原定 49 張，扣掉與 w2-066 一併移除的重複卡 `duke ellington|at newport` 後為 48 張。
+  - **廠牌全程照現行裁定寫滿**（店主 2026-08-07 指正後的第一批）：Riverside 為留住 Milt Jackson 而答應他與 Wes Montgomery 合錄聯名專輯；Clef 與 Norgran 1957 年併入 Verve；波士頓 Transition Records 由非裔製作人 Tom Wilson 創立、兩年即倒閉、目錄轉賣 Blue Note 與 Delmark；Curtom 1968 年由 Mayfield 與經紀人 Eddie Thomas 合創、1980 年收攤；Sussex 1975 年因欠稅遭國稅局查封拍賣、母帶由 CBS 標下；Isaac Hayes 1976 年個人破產後才轉簽 Polydor。
+  - **卡池年份訂正**：`Minnie Riperton — Come to My Garden` 由 1971 改為 1970（研究層以多方來源推翻卡池登錄值，1969 年 11 月錄音、1970 年由 GRT 發行，1974 年才有 Janus 重發版）。
+- 研究層推翻主線 8 處，其中四處是掛名或身分錯誤：《In Orbit》正式掛名是《Clark Terry With Thelonious Monk》、Monk 只是客座；《Sonny Side Up》是 Gillespie／Stitt／Rollins 三人平權並列；《The Young Bloods》的聯名對象是 Phil Woods 而非 Gigi Gryce；《Born to Love》是 Peabo Bryson 與 Roberta Flack 的對等聯名。另推翻一則廣為流傳的說法：Marvin Gaye《Here, My Dear》並非「法官下令交出版稅」，而是雙方律師談成的贍養費抵付方案。
+- 人工審稿修 11 處，最重要的一處是來源本身錯了：《Djangology》寫「Reinhardt 返回法國後不久驟逝」，但錄音在 1949 年、他 1953 年辭世，相隔約四年，已溯源修 research 與 input 兩層。另修兩處「來源平台與樂評姓名寫進正文」（《滾石》與 Robert Christgau 的評分、AllMusic 星等），比照 063／065 前例處理；兩處把 alto 寫成音譯「阿爾托薩克斯風」；一處把 1974 年的引用改編寫成「取樣」。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-067 研究／hooks／input／output／final／kv）、`desc-restyle/batches/wave2/w2-068-cards.json`
+- 驗證：機器 QA 三關 0 標記、字數 144–240（均 226）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **48/48 一致**。
+
 ### 2026-08-07｜desc-restyle w2-066 上線；店主指正廠牌歷史不得全面禁寫
 
 - Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
