@@ -2221,6 +2221,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-082 上線（50 張）
+
+- **改動摘要**：死亡金屬與挪威黑金屬家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。
+- **這是目前跨批禁令最密的一批**：death metal 曲風成形（080 的 Possessed）、grindcore（080 的 Terrorizer）、black metal 詞源（079 的 Venom）、維京金屬開創（080 的 Bathory）四條全都已用盡，而本批正是 Death 四張、Napalm Death 三張、Carcass 四張、Darkthrone 五張、Emperor 四張——等於整批都只能靠各張唱片自己的具體事實撐起來。
+- **研究層推翻主線 7 處**：Darkthrone《Transilvanian Hunger》內頁那句爭議標語是挪威語不是德文；Carcass《Swansong》是解散在發行之前；Sepultura《Arise》遭 MTV 禁播的是標題曲的 MV（〈Dead Embryonic Cells〉反而大量輪播）；Napalm Death《Time Waits for No Slave》是 Century Media；Cannibal Corpse《Red Before Black》錄製時 Erik Rutan 只是製作人；Pentagram《Relentless》母帶錄於 1981–82 年 Death Row 時期；Ulver《Nattens Madrigal》的森林錄音傳言是 Garm 本人否認過的廠牌噱頭。
+- **時序精確度**：兩張 Burzum 的錄音都完成於命案之前——《Hvis Lyset Tar Oss》1992 年 9 月錄、1994 年 4 月發行時 Varg Vikernes 處於羈押候審（尚未定讞），《Filosofem》1993 年 3 月錄、1996 年 1 月發行時已在服刑。這個區別是本批最容易寫錯的地方。
+- **人工審稿修 2 處**：Deicide 那張的「2003 年一份統計裡並列第 2、3 名」未指名出處（**本輪第五次同型問題**），刪去排名、保留有出處的 SoundScan 數字；兩張 Immortal 的 hook 同構（都在講「掛名鼓手 vs 實際打鼓的人」），改寫首張那張的軸。
+- **產線觀察**：寫作組 2 回報主線派工詞把 `darkthrone|a blaze` 誤標成「屬前半」（與 w2-079 的 Caravan 同型錯誤），但這次沒有漏寫——因為 hook 層已把通論指派寫進該卡的 `note` 欄，寫作層依 note 執行。**逐卡 note 是這類切點誤判的有效防線。**
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-082-*`、`desc-restyle/batches/w2-082-kv.json`、`desc-restyle/progress.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-082` 為「驗 50 張｜一致 50｜不符 0」。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-081 上線（50 張）
 
 - **改動摘要**：美國 hardcore／post-punk、英國流行、拉美搖滾與日本獨立混合家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。
