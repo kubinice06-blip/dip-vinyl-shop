@@ -2221,6 +2221,15 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-077 上線（43 張）
+
+- **改動摘要**：roots reggae／dub／salsa／非洲家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，43 張全部推上 Cloudflare KV。
+- **卡池變更**：移除 `jimmy cliff|goodbye yesterday`（Island 彙整 1968–72 年 B 面與未發行曲的合輯，發行年在各來源間矛盾）與 `héctor lavoe|asalto navideño, vol. ii`（與 `willie colón` 同名卡是同一張，黑膠版面掛「Willie Colón Canta: Hector Lavoe Con Yomo Toro」，保留 Colón 那張）。年份更正三處：Augustus Pablo《East of the River Nile》1981→1977、Milton Nascimento《Courage》1968→1969、The Abyssinians《Satta Massagana》1975→1976。
+- **研究層推翻主線 8 處**：Tito Puente《The King and I / El Rey y Yo》不是他的個人專輯，是「Tito Puente Y La Lupe」的雙掛名合作、標題的「I」指的就是 La Lupe；Rubén Blades《Maestra Vida》不是家族三代的故事，是主角 Carmelo DaSilva 個人一生的敘事；Bonga《Angola 72》的因果順序相反——流亡在先、錄音在後，逮捕令是發行後才因歌詞追加簽發；Prince Far I《Under Heavy Manners》發行於 Joe Gibbs Music 而非 Front Line。
+- **人工審稿修 9 處**：Miriam Makeba《The Magnificent》把 1960 年護照註銷（返鄉奔喪時才發現）與 1963 年聯合國作證接成了錯的因果與年份；Héctor Lavoe《Comedia》的「Billboard Latin Albums 榜冠軍」來源薄弱、且該全國榜 1993 年才創設，改寫成 2006 年傳記電影沿用曲名；Bonga 那張的逮捕令應是葡萄牙當局（1972 年安哥拉仍是葡屬）；Lee Perry《Roast Fish》與 The Congos《Heart of the Congos》都寫「Island 拒發」屬同構，改寫前者。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-077-*`、`desc-restyle/batches/w2-077-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-077` 為「驗 43 張｜一致 43｜不符 0」。移除的兩張卡連同 w2-078 判定移除的四張，六個 `desc2:` 鍵已一併從 KV 刪除並以 bulk get 驗證為空。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-076 上線（49 張）
 
 - **改動摘要**：world／reggae 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，49 張全部推上 Cloudflare KV。
