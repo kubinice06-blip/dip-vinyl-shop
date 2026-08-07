@@ -2220,6 +2220,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-075 上線（49 張）
+
+- **改動摘要**：folk／world 家族第一批。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，49 張全部推上 Cloudflare KV。
+- **開跑前移除三張確定重複卡**：`tinariwen|aman iman`（與同批 `aman iman: water is life` 同一張）、`can|ege bamyası`（與 w2-043 已上線的 `ege bamyasi` 同一張，僅土耳其文轉寫差異）、`glenn gould|the goldberg variations`（與 w2-017 已上線的 1955 年錄音同一份）。w2-076 降為 49 張、w2-079 降為 48 張。
+- **研究層推翻主線 11 處**，三處是前提級：John Fahey《The Transfiguration of Blind Joe Death》不是 1959 年首張的重錄或續作、只沿用那個虛構藍調藝人的名字；Waylon Jennings《JD’s》正式標題是《Waylon at JD’s》而且不是現場專輯、是錄音室作品；Los Jaivas《Alturas de Macchu Picchu》錄音在巴黎 Pathé Marconi，馬丘比丘遺跡上的是 1981 年 9 月的現場演出與電視電影。
+- **人工審稿修 16 處**，兩處是實質事實錯誤：Glen Campbell《Oh Happy Day》把〈Oh Happy Day〉寫成 Edwin Hawkins 創作（該曲是 18 世紀讚美詩，Hawkins 是改編）；Anne Briggs 那張把 CBS《The Time Has Come》與 1973 年被她自己攔下、二十多年後才問世的另一張混為一談。其餘含 Rita Coolidge《Anytime...Anywhere》年份、Gipsy Kings 的 1987 法國／1988 美國發行自相矛盾、Youssou N’Dour「十大專輯評選第 18 名」自相矛盾、三處校對痕跡、兩處 hook 三層同步（Waylon《Jewels》的張數、Eddie Palmieri 的「唯一一次」最高級）。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-075-*`、`desc-restyle/batches/w2-075-final.json`、`desc-restyle/batches/w2-075-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`desc-restyle/batches/wave2/w2-076-cards.json`、`desc-restyle/batches/wave2/w2-079-cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-075` 為「驗 49 張｜一致 49｜不符 0」。
+- **工具環境變更**：`npx wrangler` 已失效（會去抓不存在的 4.120.0 tarball），改用 `dip-vinyl-worker/node_modules/.bin/wrangler`（3.114.17），該版不接受 `--remote` 參數。
 ### 2026-08-07｜desc-restyle w2-074 上線 50 張（072–074 三批完成）
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
