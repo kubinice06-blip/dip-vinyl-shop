@@ -2221,6 +2221,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-081 上線（50 張）
+
+- **改動摘要**：美國 hardcore／post-punk、英國流行、拉美搖滾與日本獨立混合家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。**本批零移除**。
+- **研究層推翻主線 8 處**：Talk Talk《It’s My Life》封面是取材自 Millais 油畫的插畫、不是自然攝影；Almendra 封面是 Spinetta 本人親繪的戴頭巾人像；Circle Jerks《VI》嚴格說是第五張錄音室專輯；Screaming Trees《Even If and Especially When》是 SST 的第一張但不是出道作；Kyuss《Welcome to Sky Valley》是三個樂章；Fishmans 世田谷三部曲的第一部是《Kuchu Camp》；Charly García《Filosofía Barata》錄於布宜諾斯艾利斯不是里約；Randy Newman《Trouble in Paradise》的對唱者是 Paul Simon。
+- **五張待判定性質的卡全部查證後保留**：Higelin《Inédits 1970》是原訂收進 1971 年首張、被抽換後擱置十年的錄音；Os Mutantes《Tecnicolor》是 1970 年巴黎錄音塵封三十年（實際發行 2000 年 4 月，卡池標 1999，正文已依查證寫 2000）；Café Tacvba《Avalancha de Éxitos》是有企劃概念的全翻唱專輯；Supercar《OOYeah!!》是官方企畫盤；Gainsbourg《Bonnie and Clyde》官方分類是選輯但有明確歷史定位。
+- **人工審稿修 3 處**：兩處 hook 用「不是⋯」去否定讀者根本沒有的前提（「封面那幅畫⋯不是攝影」「簽進 SST 的第一張，卻不是他們的出道作」），屬校對痕跡且造成開頭撞頭，都改成正面陳述；另一處是「未指名主辦單位的榜單名次」，**本輪第四次遇到同型問題**（075 Watersons、079 Bill LaBounty、080 Bathory），根因是 writer-base 禁止樂評媒體名入正文、寫作層便只留名次而拿掉來源，已成固定檢查點。
+- **產線觀察**：本批寫作組 1 初稿 25 張只有 4 張需微調字數。把「動筆前就把拉丁專名壓到 4 個以內」寫死進派工詞之後，超標率從先前的六成以上降到一成六。
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-081-*`、`desc-restyle/batches/w2-081-kv.json`、`desc-restyle/progress.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-081` 為「驗 50 張｜一致 50｜不符 0」。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-080 上線（50 張）；075–080 六批完結
 
 - **改動摘要**：極端金屬（thrash／death／grindcore／black／power）與另類搖滾、post-punk 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，50 張全部推上 Cloudflare KV。
