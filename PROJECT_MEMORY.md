@@ -2220,6 +2220,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜卡池：Ahmad Jamal 自題作正式改為《Portfolio of Ahmad Jamal》
+
+- Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
+- 改動：店主指定 Discogs master 214242，把卡池裡鎖不定版本的 `Ahmad Jamal — Ahmad Jamal` 正式改為 **`Ahmad Jamal — Portfolio of Ahmad Jamal`**。查證確認：1958 年 9 月 5、6 日錄於美國華盛頓特區的 Spotlite 俱樂部，三重奏為 Ahmad Jamal（鋼琴）、Israel Crosby（低音提琴）、Vernel Fournier（鼓），1959 年由 Argo 以壓凸對開封套的雙唱片形式發行，全碟十五首，含〈Autumn Leaves〉與他自己的〈Ahmad's Blues〉〈Serelitus〉。
+  - 版本鎖定後，該卡**由 thin 升為 full 並整張重寫**（原本因為查不到是哪一版而只能寫成不指定年份廠牌的保守版本，222 字新稿改走「同一組三重奏同年稍晚換一間俱樂部再錄四面」的軸）。
+  - 五層同步更新：`w2-067-cards.json`／research-b／hooks-b／writer-1／out-1，以及 `seed_cards.json`。
+  - 明文禁寫項：唱片編號（Wikipedia 記 LPS-638、二手市場記 LP 2638，兩說並存）、Keith Jarrett 的背書（與 `At the Pershing` 舊卡的名人背書骨架同構）。
+- 主要檔案：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/RUNBOOK.md`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-067 五層與 kv）
+- 驗證：`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 重驗 w2-067 逐字比對 **48/48 一致**；舊鍵 `desc2:ahmad jamal|ahmad jamal` 已 bulk delete 並以 `wrangler kv key get` 驗到 **404**。RUNBOOK 的待裁定清單只剩 `nina simone|gifted & black`。
+
 ### 2026-08-07｜desc-restyle w2-068 上線 50 張；「來源平台不進正文」升為硬條款
 
 - Repo：`dip-vinyl-shop`（本備忘錄）＋ `desc-restyle` 工作區
