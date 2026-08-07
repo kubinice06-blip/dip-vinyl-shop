@@ -2220,6 +2220,17 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-074 上線 50 張（072–074 三批完成）
+
+- Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
+- 改動：**w2-074 上線 50 張**（folk／country：Aldous Harding 4／Miranda Lambert 3／Tim McGraw 3／Alan Jackson 3／Kenny Rogers 3／Donovan 3 等），滿 50 張、無移除卡。**至此 072–074 三批共 148 張全數上線。**
+- **跨三批的通論調度成功**：「American Primitive 吉他傳統與 John Fahey 系譜」從 w2-072 就先禁掉（Jack Rose）、w2-073 再禁一次（William Tyler、Ryley Walker），一路預留到 w2-074 的 Leo Kottke《6- and 12-String Guitar》才寫滿。「freak folk 與 New Weird America」同理，從 072 預留給 073 的 Devendra Banhart。
+- 研究層推翻主線 9 處，其中四處是我方在特注裡寫死的假設：Aldous Harding **四張全部**都是 John Parish 製作（我以為三張）、《Train on the Island》**已於 2026 年 5 月發行**、Emmylou Harris 那張的和聲**含男歌手 Neil Young**（我寫成三位女歌手）、Donovan《7-Tease》的舞台演出**查無公演證據**（我寫成既成事實）。另抓到卡池年份錯誤一筆：Jewel《Pieces of You》1994 是簽約年、發行是 1995。
+- 人工審稿修 4 處，兩處是硬條款違規：**Aldous Harding《Warm Chris》的 hook 直接寫了樂評平台名**（三層同步改寫）、**Donovan《7-Tease》把查證過程寫給讀者看**（校對痕跡）。
+- Mount Eerie《A Crow Looked at Me》是本批克制要求最高的一張（整張寫伴侶因癌症過世），成稿只陳述確診年、辭世月與享年，不描述病程、不渲染、不引歌詞。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-074 五層與 kv）
+- 驗證：機器 QA 三關 0 標記、字數 207–240（均 230）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜desc-restyle w2-073 上線 50 張
 
 - Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
