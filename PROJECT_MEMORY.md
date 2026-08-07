@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-070 上線 50 張
+
+- Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
+- 改動：**w2-070 上線 50 張**（當代靈魂與流行：Ed Sheeran 5／India.Arie 4／Christina Aguilera 4／Sam Smith 4／Charles Bradley 3／Cleo Sol 3／Sault 3／Durand Jones & The Indications 3／Bruno Mars 3 等），滿 50 張、無移除卡。
+- 研究層推翻主線 9 處，其中五處是我方假設錯誤：Bruno Mars《The Romantic》**已於 2026 年 2 月發行**（非未發行卡）；**Ed Sheeran 的數學符號系列只有五張，《Play》是另起爐灶的「播放器符號系列」首張**；Steve Lacy《Apollo XXI》**不是**那張用 iPhone 錄完的（那是他 2017 年的《Demo》EP）；**Cleo Sol 與 Sault 六張本身都沒有 Mercury Prize 或 Ivor Novello 紀錄**（那兩項分屬不在卡單內的《Untitled (Rise)》與《11》）；Georgia Anne Muldrow 兩張**都不是**她自營廠牌的作品，且《Zhigeist》實為與 Elzhi 的雙掛名。另查出 Christina Aguilera《AGUILERA》實為三張 EP 分批發行後彙整的**西語**專輯、廠牌是 Sony Music Latin 而非 RCA。
+- 這批最吃力的限制是**「復古靈魂樂復興」通論已在 w2-069 給了 Sharon Jones**，而本批有八張落在同一個圈子（Charles Bradley 3、Lee Fields 2、Durand Jones 3），全部改走各自的專屬事件。
+- 人稱處理：Sam Smith 於 2019 年公開表明為非二元性別、使用 they/them，中文無對應中性代名詞，四張一律以姓名或「這位歌手」帶過，成稿零性別代名詞。
+- 人工審稿修 2 處，其中一處是人物關係的時序問題：Cleo Sol《Mother》把製作人 Inflo 寫成「丈夫」，但**無法確認 2021 年本作發行當時兩人是否已婚**（可得來源多為名人資料聚合站），改為時序上必然成立的「伴侶」，並同步 research／hooks／input／output 四層。
+- 未發行卡一張：Sam Smith《Hazel Eyes》（官方訂 2026-08-21），依常設裁定保留、走保守 thin 版，發行後應重寫。
+- 主要檔案：`desc-restyle/progress.json`、`desc-restyle/RUNBOOK.md`、`desc-restyle/batches/`（w2-070 研究／hooks／input／output／final／kv）
+- 驗證：機器 QA 三關 0 標記、字數 178–240（均 225）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜desc-restyle w2-069 上線 50 張
 
 - Repo：`dip-vinyl-shop` 僅本備忘錄；實際改動在 `desc-restyle` 工作區
