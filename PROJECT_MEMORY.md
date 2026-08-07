@@ -2220,6 +2220,18 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+### 2026-08-07｜desc-restyle w2-068 上線 50 張；「來源平台不進正文」升為硬條款
+
+- Repo：`dip-vinyl-shop`（本備忘錄）＋ `desc-restyle` 工作區
+- 改動：
+  - **w2-068 上線 50 張**（靈魂與放克：Funkadelic 6／Commodores 4／Otis Redding 3／Diana Ross 3／Ohio Players 3／Zapp 2／Cerrone 2 等），滿 50 張、無移除卡。
+  - **規則升級**：「**來源平台與樂評姓名不進正文**」寫成硬條款加進 `desc-restyle/prompts/writer-base.md`。AllMusic、《滾石》、《Billboard》、DownBeat、樂評人姓名、星等與字母評分一律不寫；研究稿的 `src` 是給主線查核用的，不是給讀者看的。這條累犯到第五批（063、065、067 兩處、068 四處）才立成條款。
+- 研究層推翻主線 6 處，並主動降級三則單一來源的說法（Commodores 團員因反對赴南非演出而退團、Berry Gordy 因 clavinet 彈法替〈Machine Gun〉命名、Shuggie Otis 錄《Freedom Flight》時 15 歲）。另查出 The O'Jays《Super Bad》不是獨立的錄音室企劃，而是同一批 H.B. Barnum 錄音在西德、英國、美國各以不同片名貼牌重發的其中一版，已比對卡池確認沒有同批錄音的重複卡。
+- 人工審稿修 11 處，最重要的一處是地名誤譯：《Twer Nyame》把合作樂團 The Pelikans 寫成「開普敦十二人樂團」，但該團其實在**迦納的海岸角（Cape Coast）**，研究層把它誤譯成南非的開普敦（Cape Town），差了一個國家，已上網查證後溯源修正 research 與 input 兩層。另有一處時序錯誤：Tim Buckley《Sefronia》把 1974 年發行的《Look at the Fool》稱為「遺作」，但他 1975 年才辭世。
+- 主線另手改 3 則 hook：兩則以「封面」開場與同批第三則撞頭，其中 Marcos Valle 那則的骨架還與他 w2-060 舊卡「封面上他沉在泳池水底」相同。
+- 主要檔案：`desc-restyle/prompts/writer-base.md`、`desc-restyle/progress.json`、`desc-restyle/batches/`（w2-068 研究／hooks／input／output／final／kv）
+- 驗證：機器 QA 三關 0 標記、字數 172–242（均 231）；`wrangler kv bulk put` 回 Success!；`verify-kv.mjs` 逐字比對 **50/50 一致**。
+
 ### 2026-08-07｜desc-restyle w2-067 上線 48 張
 
 - Repo：`dip-vinyl-shop`（seed_cards.json、本備忘錄）＋ `desc-restyle` 工作區
