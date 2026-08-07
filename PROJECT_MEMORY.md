@@ -2221,6 +2221,16 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-079 上線（46 張）
+
+- **改動摘要**：rock/pop 家族的第一批（079–100 共 22 批），但前 19 張仍是古典與極簡。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，46 張全部推上 Cloudflare KV。
+- **卡池變更**：本批原 48 張（開跑前已先移除兩張與舊批重複的卡），研究層又查出兩張不該存在——`steve reich|ii.` 是幽靈卡（Nonesuch 目錄、Discogs、串流平台與官方 discography 都查無此發行，研究層與主線兩次獨立查證都找不到對應唱片，判為資料擷取誤植）、`junko ohashi|magical` 正式名稱是《MAGICAL 大橋純子の世界 III》、是精選輯系列第三張。年份更正 `can|can` 1978→1979。
+- **`the velvet underground & nico` 改為獨立掛名**：依店主指示，這張唱片一般被視為獨立的 artist credit、不歸在 Nico 名下，已把 `seed_cards.json` 的藝人欄從 Nico 改為 The Velvet Underground & Nico，w2-080 的卡單與研究檔同步更新。舊 key 在 KV 有值（worker 按需生成回寫的），待 w2-080 上線後一併刪除。
+- **研究層推翻主線 6 處**：`leonard bernstein|piano concerto no. 3 in c minor` 其實是**貝多芬**的第三號鋼琴協奏曲、鋼琴獨奏是 **Glenn Gould**、Bernstein 只擔任指揮；Diamond Head 首作的白色封套是完全空白、沒有樂團手寫標題；Airplay 的〈Nothin’ You Can Do About It〉是 The Manhattan Transfer 先錄、比 Airplay 自己的版本早一年；Makoto Matsushita《First Light》沒有美國西岸樂手參與。
+- **人工審稿修 5 處**，其中一處是產線流程漏洞：Caravan 首作被指派了 Canterbury scene 通論，但主線派工詞誤把它標成「屬前半」，而兩張 Caravan 實際都落在 merge 後的後半，導致寫作組 2 依指示不寫、寫作組 1 手上又沒有該卡，整條通論整批沒人寫。**教訓：派工詞寫通論歸屬前，必須先看 `merge-writer-input.mjs` 的實際切點，不能憑卡單順序臆測某張在前半或後半。**
+- **主要檔案**：`desc-restyle/batches/{research,hooks,input,output}/w2-079-*`、`desc-restyle/batches/w2-079-kv.json`、`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+- **驗證結果**：`wrangler kv bulk put` 回報 `Success!`，`verify-kv.mjs w2-079` 為「驗 46 張｜一致 46｜不符 0」。
+
 ### 2026-08-07｜desc-restyle｜卡池簡介重塑 w2-078 上線（46 張）
 
 - **改動摘要**：古典／配樂／neo-classical／ambient 家族。研究層 5 組 Sonnet、hook 與寫作層各 2 組 Opus，機器 QA 後逐張人工審稿，46 張全部推上 Cloudflare KV。
