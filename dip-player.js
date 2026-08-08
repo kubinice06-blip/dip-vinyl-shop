@@ -26,8 +26,33 @@
   // 自己記住音量狀態：gain.value 要等下一個 render quantum 才會反映剛排下去的
   // setValueAtTime，緊接著讀會拿到舊值。previewRampEnd 是最後一段 ramp 的結束時間。
   let previewLevel = 0, previewRampEnd = 0;
-  let state = { status: 'idle', provider: null, artist: '', album: '', cover: '' };
+  // 自動播放授權：本站永遠不主動發出「這次造訪的第一個聲音」。
+  // 網頁沒有任何 API 能得知使用者此刻是否正在用別的 App 聽音樂——iOS 原生的
+  // isOtherAudioPlaying 沒開放給網頁，Android 完全沒有對應介面，而
+  // navigator.audioSession（宣告自己是可混音的背景音）2026-08 仍只有 Safari 實作，
+  // 且 ambient 的效果是「跟對方疊著播」而不是「不播」。因此改用授權門檻：
+  // 使用者自己按過一次播放，才允許後續的自動播放。正在聽 Spotify 的人不會去按，
+  // 音訊焦點就永遠不會被搶走。存 sessionStorage——關掉分頁重進要重新按一次，
+  // 今天整天在聽 Spotify 就一路安靜。
+  const AUTOPLAY_CONSENT_KEY = 'dip:autoplay-consent';
+  let autoplayConsent = false;
+  try { autoplayConsent = sessionStorage.getItem(AUTOPLAY_CONSENT_KEY) === '1'; } catch (_) {}
+  let state = { status: 'idle', provider: null, artist: '', album: '', cover: '', consent: autoplayConsent };
   let mediaSessionActive = false;
+
+  function hasAutoplayConsent() { return autoplayConsent; }
+
+  // 刻意不發事件：授權是在手勢當下、緊接著要起播時給的。走 emit() 會順手跑一次
+  // syncMediaSession，而此刻 status 還停在 stopped，會把剛武裝好的 keep-alive src
+  // 拆掉（iOS 第一次播放就會沒聲音）；就算避開 media session，訂閱者收到的也是
+  // 上一張的 artist/album，反而會把播放鈕圖示打回停止。呼叫端自己同步介面即可。
+  function grantAutoplayConsent() {
+    if (autoplayConsent) return false;
+    autoplayConsent = true;
+    state = { ...state, consent: true };
+    try { sessionStorage.setItem(AUTOPLAY_CONSENT_KEY, '1'); } catch (_) {}
+    return true;
+  }
 
   function emit(next) {
     state = { ...state, ...next };
@@ -923,6 +948,7 @@
   // 點唱盤下方播放列表的某一首：資料已在手上，沿用已解鎖的 AudioContext 解碼播放。
   async function playTrack(trackId) {
     if (!currentPreviewData || !trackId || !root) return false;
+    grantAutoplayConsent();  // 點播放列表的某一首＝使用者自己要出聲
     const token = ++requestId;
     lastFailCode = '';
     emit({ status:'loading', provider:'itunes', code:'' });
@@ -991,10 +1017,18 @@
     } catch (_) { return false; }
   }
 
-  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '', fixedOnly = false, cover = '' } = {}) {
+  async function playAlbum({ artist = '', album = '', prefer = 'auto', previewUrl = '', attribution = '', fixedOnly = false, cover = '', auto = false } = {}) {
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return false;
+    // auto=true 是系統自己決定要出聲（抽到卡、出牌）。沒有授權就安靜地不播，
+    // 且回報 stopped 而非 error——介面要停在「可播放」而不是跳找不到試聽的提示。
+    if (auto && !autoplayConsent) {
+      emit({ status:'stopped', provider:null, artist, album, cover:String(cover || ''), trackName:'', storeUrl:'', attribution:'', code:'NO-AUTOPLAY', tracks:[], trackId:'' });
+      return false;
+    }
+    // 使用者自己按的播放＝授權本次造訪的後續自動播放。
+    if (!auto) grantAutoplayConsent();
     const token = ++requestId;
     lastFailCode = '';
     // cover 只餵給鎖定畫面的媒體卡片；沒帶就留空，Chrome 會退回無封面而不是抓網站 logo。
@@ -1130,5 +1164,5 @@
     };
   }
 
-  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState };
+  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState, hasAutoplayConsent, grantAutoplayConsent };
 })();

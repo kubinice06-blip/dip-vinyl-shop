@@ -566,7 +566,7 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=33"></script>
+<script src="dip-player.js?v=34"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -589,13 +589,19 @@ let currentUser = null, authReady = false, myColl = null, myStats = null;
 const BATTLE_MUSIC_KEY = 'dipBattleMusic';
 let battleMusicOn = (()=>{ try { return localStorage.getItem(BATTLE_MUSIC_KEY) !== 'off'; } catch(e) { return true; } })();
 let battlePlayerState = {status:'idle',provider:null,artist:'',album:''};
+// 本站不主動發出這次造訪的第一個聲音（使用者可能正在用別的 App 聽音樂，
+// 而網頁查不到這件事）。開關記在 localStorage、預設開，但要等使用者自己點過一次
+// 才真的會出聲；沒授權時介面一律顯示靜音，讓「點一下才有音樂」看得出來。
+const battleMusicReady=()=>window.DipPlayer?.hasAutoplayConsent?.()!==false;
+const battleMusicLive=()=>battleMusicOn&&battleMusicReady();
 function syncBattleMusicToggle(){
+  const live=battleMusicLive();
   const button=document.getElementById('battleMusicToggle'); if(!button) return;
-  button.textContent=battleMusicOn?'🔊':'🔇';
-  button.setAttribute('aria-pressed',String(battleMusicOn));
-  button.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂');
+  button.textContent=live?'🔊':'🔇';
+  button.setAttribute('aria-pressed',String(live));
+  button.setAttribute('aria-label',live?'關閉對戰音樂':'開啟對戰音樂');
   const mini=document.getElementById('battleMiniPlayer');
-  if(mini){ mini.classList.toggle('muted',!battleMusicOn); mini.classList.toggle('playing',battleMusicOn&&battlePlayerState.status==='playing'); mini.classList.toggle('loading',battleMusicOn&&battlePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(battleMusicOn)); mini.setAttribute('aria-label',battleMusicOn?'關閉對戰音樂':'開啟對戰音樂'); }
+  if(mini){ mini.classList.toggle('muted',!live); mini.classList.toggle('playing',live&&battlePlayerState.status==='playing'); mini.classList.toggle('loading',live&&battlePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(live)); mini.setAttribute('aria-label',live?'關閉對戰音樂':'開啟對戰音樂'); }
   const apple=document.querySelector('#recBody .streaming-btn[data-platform="apple"]');
   if(apple && battlePlayerState.storeUrl) apple.href=battlePlayerState.storeUrl;
 }
@@ -604,6 +610,18 @@ function setBattleMusic(enabled){
   try { localStorage.setItem(BATTLE_MUSIC_KEY,battleMusicOn?'on':'off'); } catch(e) {}
   syncBattleMusicToggle();
   if(!battleMusicOn) window.DipPlayer?.stop();
+}
+// 還沒授權時，第一次點擊要解讀成「開啟音樂」而不是靜音——否則使用者會發現
+// 按了 🔊 反而變 🔇。授權後照舊是開／關切換。
+function battleMusicTap(card){
+  if(!battleMusicReady()){
+    window.DipPlayer?.grantAutoplayConsent?.();
+    if(battleMusicOn) syncBattleMusicToggle(); else setBattleMusic(true);
+    if(card) playBattleAlbum(card,{auto:false});
+    return;
+  }
+  setBattleMusic(!battleMusicOn);
+  if(battleMusicOn && card) playBattleAlbum(card,{auto:false});
 }
 const battleDirectPreview = url => {
   try { return /\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/i.test(new URL(url || '').pathname); }
@@ -618,8 +636,10 @@ async function battlePreviewMeta(card){
   card.previewResolved=true;
   return card;
 }
-function playBattleAlbum(card){
+function playBattleAlbum(card,{auto=true}={}){
   if(!battleMusicOn || !card || !window.DipPlayer) return false;
+  // 系統自己決定要出聲（出牌、開牌資訊）時，沒授權就整條不跑，連來源查詢都省。
+  if(auto && !battleMusicReady()) return false;
   try {
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
@@ -628,12 +648,12 @@ function playBattleAlbum(card){
       if(meta.previewUrl){
         // 已有固定 YouTube 的卡不再另查 Apple；對戰頁因音量不可控而維持靜音。
         if(!battleDirectPreview(meta.previewUrl)){ window.DipPlayer.stop?.({fade:true}); return; }
-        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,cover:card.coverUrl||'',fixedOnly:true});
+        await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',previewUrl:meta.previewUrl,cover:card.coverUrl||'',fixedOnly:true,auto});
         return;
       }
       if(meta.previewStatus==='unavailable'||meta.previewStatus==='disabled'){ window.DipPlayer.stop?.({fade:true}); return; }
       void window.DipPlayer.warmAlbum?.({artist:card.artist,album:card.album});
-      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',cover:card.coverUrl||''});
+      await window.DipPlayer.playAlbum({artist:card.artist,album:card.album,prefer:'itunes-only',cover:card.coverUrl||'',auto});
     })().catch(()=>{});
     return true;
   }
@@ -1842,7 +1862,7 @@ onAuthStateChanged(auth, (user)=>{
 });
 
 document.getElementById('restart').addEventListener('click', showLobby);
-document.getElementById('battleMusicToggle').addEventListener('click', ()=>setBattleMusic(!battleMusicOn));
+document.getElementById('battleMusicToggle').addEventListener('click', ()=>battleMusicTap());
 document.getElementById('ovAgain').addEventListener('click', ()=>startMatch(lastOpp));
 document.getElementById('ovLobby').addEventListener('click', showLobby);
 // 規則浮動視窗
@@ -1869,8 +1889,7 @@ document.getElementById('recClose').addEventListener('click', closeRec);
 recModal.addEventListener('click', e=>{
   // 彈窗內的像素唱機：點一下靜音（停播）、再點恢復播放目前這張（動態產生 → 用事件委派）
   if(e.target.closest('#battleMiniPlayer')){
-    setBattleMusic(!battleMusicOn);
-    if(battleMusicOn && recShowsCardInfo && _cardInfoCard) playBattleAlbum(_cardInfoCard);
+    battleMusicTap(recShowsCardInfo?_cardInfoCard:null);
     return;
   }
   if(e.target===recModal) closeRec();

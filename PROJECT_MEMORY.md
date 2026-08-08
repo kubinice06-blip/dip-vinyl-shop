@@ -1,5 +1,56 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜自動播放加授權門檻：本站不主動發出「這次造訪的第一個聲音」
+
+- Repo：`dip-vinyl-shop`。檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`。
+- 店主要求：試聽的優先權要**永遠低於使用者自己的播放器**，正在聽 Spotify 時瀏覽器不該自動播。
+
+**先講死技術現實（省得日後重查）**：網頁**沒有任何 API** 能得知使用者此刻是否正在用別的 App
+聽音樂。iOS 原生的 `isOtherAudioPlaying` 沒開放給網頁；Android 完全沒有對應介面。
+唯一沾邊的是 Audio Session API（`navigator.audioSession.type='ambient'` 宣告自己可混音、
+不搶音訊焦點），但 2026-08 為止**只有 Safari 實作**（本機 Chrome 148 實測 `navigator.audioSession`
+是 `undefined`），而且 ambient 的效果是「跟對方疊著一起播」不是「不播」。
+**所以「保留自動播放、但偵測到在聽 Spotify 就不播」不可能實作**，別再嘗試。
+
+**改用授權門檻**（`dip-player.js` 新增 `autoplayConsent`，存 **sessionStorage** `dip:autoplay-consent`）：
+
+- `playAlbum({ auto:true })`＝系統自己決定要出聲（抽到卡、出牌、撿盤）。沒授權就安靜不播，
+  回報 `stopped` + `code:'NO-AUTOPLAY'`（**不是 error**，介面要停在「可播放」而不是跳找不到試聽）。
+- `playAlbum()` 不帶 auto ＝使用者自己按的（試聽鍵、唱片櫃把唱片放上轉盤、搜尋頁點卡、
+  點播放列表某首）→ 播放並**授權本次造訪的後續自動播放**。
+- 存 sessionStorage 不是 localStorage：關掉分頁重進要重新按一次。今天整天在聽 Spotify 就一路安靜。
+- `grantAutoplayConsent()` **刻意不發 state 事件**。走 `emit()` 會順手跑 `syncMediaSession`，
+  而授權當下 status 還停在 `stopped`，會把剛武裝好的 keep-alive src 拆掉（iOS 第一次播放沒聲音）；
+  就算避開 media session，訂閱者收到的也是上一張的 artist/album，反而把播放鈕圖示打回停止。
+  呼叫端自己同步介面。
+
+**兩個遊戲頁的開關語意要跟著改**（`battleMusicOn`／`rogueMusicOn` 記在 localStorage、預設開，
+原本一進去出牌就自動搶音訊）：
+
+- 顯示狀態改成 `musicOn && 已授權`——沒授權時一律顯示成 🔇，讓「點一下才有音樂」看得出來。
+- 新增 `battleMusicTap()`／`rogueMusicTap()`：**沒授權時第一次點擊解讀成「開啟音樂」而不是靜音**，
+  否則使用者會發現按了 🔊 反而變 🔇。授權後照舊是開／關切換。
+- `playBattleAlbum`／`playRogueAlbum` 加 `{auto}`，auto 且未授權就整條不跑，連來源查詢都省。
+
+**另外**：抽卡結果頁播放鈕的預設圖示由 ⏸ 改成 ▶。原本靠「一定會自動播」讓預設 ⏸ 剛好正確，
+現在自動播放可能被擋，預設 ▶ 才安全（真的有播時 `loading` 事件會即時換成 ⏸）。
+
+**驗證**（本機 static server + 3 秒測試 wav 走 pinned-file 路徑，真實點擊觸發）：
+
+| 步驟 | 結果 |
+| --- | --- |
+| 清掉 consent 後 `auto:true` | `false`，事件 `stopped/NO-AUTOPLAY`，沒出聲，consent 仍 false |
+| 使用者按（`auto:false`） | `true`，正常播放，consent→true，sessionStorage 寫入 `1` |
+| 授權後 `auto:true` | `true`，正常播放 |
+
+roguelike 實測 `rogueMusicOn=true` 但 `rogueMusicLive()=false`（介面顯示靜音）。
+**battle 主 script 是 `type="module"`**（函式不必全域），**roguelike 是一般 script**、
+`rogueMusicTap` 要走 inline `onclick` 必須是全域——已確認 `typeof window.rogueMusicTap === 'function'`。
+改這兩頁的事件綁定前記得先確認是哪一種。
+
+- 三頁 `dip-player.js?v=33` → `v=34`。
+- 本次未提交工作區既有的 `seed_cards.json` 改動（非本次工作產生，來自並行的 desc-restyle 作業）。
+
 ### 2026-08-08｜desc-restyle w2-093 上線；三批接力收尾（91–93 累計 148 張）
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
@@ -143,7 +194,7 @@ Songhoy Blues 那條音樂禁令的施行組織查不到確切名稱（只寫概
 `desc-restyle/batches/w2-091-kv.json`、`desc-restyle/batches/output/w2-091-out-{1,2}.json`、
 `desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
 
-### 2026-08-03｜鎖定畫面媒體通知改用 MediaSession，播完自動收掉
+### 2026-08-08｜鎖定畫面媒體通知改用 MediaSession，播完自動收掉
 
 - Repo：`dip-vinyl-shop`。檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`。
 - 現象（店主手機 Chrome 回報）：抽完卡、試聽播完後把網頁最小化，**鎖定畫面留著一則掛著網站
