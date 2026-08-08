@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-095 上線；榜別混淆第二例，與一次派工詞和 base 檔打架
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 95 批 / 4,713 張（74.3%），剩 33 批 / 1,633 張。**
+- 題材：巴西（Erasmo Carlos／Marisa Monte）、車庫與獨立（Ty Segall／Best Coast／Primus／Wavves／
+  Peter Bjorn and John／Waxahatchee／DIIV）、前衛與極端金屬（Haken／Ayreon／At the Gates／
+  Cradle of Filth／Caligula's Horse）、K-pop（BTS／BIGBANG／SHINee）、工業（Ministry／Rob Zombie）。
+
+#### 卡池：與前一批的 Sting 案相反的判定
+
+`wavves|no life for me` 查出是 **Wavves 與 Cloud Nothings 的正式聯名合作專輯**（官方掛名
+Wavves X Cloud Nothings）。但這張**判定保留**——Wavves 是共同掛名的一半、唱片由 Nathan Williams
+自家的 Ghost Ramp 發行，卡池裡也沒有 Cloud Nothings 的重複卡，正文據實寫成兩團聯名即可。
+
+**與同日移除的 `sting|all we get is life` 的分界是「客座一軌」與「共同掛名」**：前者是別人的唱片、
+Sting 只是來賓，後者是兩團各出一半。往後遇到掛名疑義照這條分。
+
+#### 研究層推翻主線五處
+
+| 卡 | 我寫錯的 | 查證結果 |
+| --- | --- | --- |
+| Rob Zombie《The Great Satan》 | 「可能尚未上市」 | **已於 2026-02-27 由 Nuclear Blast 發行**，改走 full |
+| Ministry《Relapse》 | 疑為 Mike Scaccia 的遺作 | 他辭世晚於本作**九個月**，而且真正的遺作是 2013 年的《From Beer to Eternity》 |
+| Marisa Monte《O que você quer saber…》 | 指定查拉丁葛萊美 | **查無入圍紀錄**，該屆入圍者是 Céu 與 Seu Jorge，整條不寫 |
+| Ty Segall《Melted》 | 「是否幾乎一人包辦」 | 包辦大部分但**不是完全一人**，至少四位友人客串 |
+| Against Me!《Reinventing Axl Rose》 | — | 研究層自己剔除誤植：〈Sink, Florida, Sink〉其實在次張 |
+
+另外 **BTS《ARIRANG》確認已於 2026-03-20 發行**（BigHit、Billboard 200 冠軍），不必走保守寫法。
+
+#### 人工審稿修 7 處
+
+- **Wolf Alice〈Moaning Lisa Smile〉是美國 Alternative Airplay 榜第 9 名，不是英國單曲榜前十。**
+  研究稿把榜別搞錯、來源還掛在一篇 NPR 的樂評上。**這是榜別混淆的第二例**（第一例是 w2-091
+  One Direction《Four》的「67 國冠軍」其實是 iTunes 榜）——**「某某榜第幾名」要連榜別一起查，
+  已是穩定復發的型態。**
+- **Haken《The Mountain》是我的派工詞和 base 檔打架。** 我在特注寫「樂評定位要用具體排名佐證」，
+  但 `writer-base.md` 的 08-08 定案是樂評媒體榜單整條不寫；寫作層照特注做，成稿就出現
+  「另一份年度榜」這種去頭寫法——正是那條規則要消滅的樣式。**寫作層主動回報了這個衝突，判斷正確。**
+  以 base 檔為準，該卡連 hook 一起重寫成概念與曲式。
+  **教訓：派工詞不得下與 base 檔相牴觸的指示；規則要改就改 base 檔。**
+- **三張卡出現「都是確定得獎而非入圍」這類措辭**（BIGBANG《Remember》、SHINee 兩張）——
+  這是我「得獎與入圍分開查」的指示被寫成給讀者看的免責聲明，屬校對痕跡的第四種變體，全部改寫。
+- Rob Zombie《Venomous Rat…》寫了「查不到任何典故，也沒有可考的解釋」——把研究限制講給讀者聽，刪除。
+- Rob Zombie《The Great Satan》的「個人名下最長間隔」是寫作層自行推算的最高級，改為不帶最高級的說法。
+- BTS《WAKE UP》的〈相思病 (Boy in Luv)〉曲名寫法無法確認，改用不會錯的〈Boy in Luv〉。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-095-kv.json`、`desc-restyle/batches/output/w2-095-out-{1,2}.json`、
+`desc-restyle/progress.json`。
+
 ### 2026-08-08｜desc-restyle w2-094 上線；卡池出現第三類問題：掛名錯誤
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
