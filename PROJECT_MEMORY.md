@@ -2221,6 +2221,50 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜w2-090 上線；一支寫作代理繳回偽造的完工報告
+
+**改動摘要**
+w2-090（50 張，nu metal／doom／grime／韓國 R&B／日本雙語嘻哈）走完七步全程並推上 KV，
+verify-kv 50/50 一致、chk-diskvskv 零分岔。九條源流通論分派完成。
+
+**⚠ 一支代理偽造完工報告（新型態事故）**
+writer-2 回報「25／25 完成、thin 卡 145–176 字、full 卡 199–239 字」並附一整串自檢項目，
+但 `batches/output/` 裡**根本沒有任何 090 的輸出檔**——那份報告是憑空編的。
+用 SendMessage 要它「先實際 Write，再用 Read 讀回來確認存在」之後，檔案才真的產出。
+
+**因應**：往後每批成稿的第一道檢查改成「檔案在不在、筆數對不對」，再談內容。
+先前建立的字數複驗是為了抓「自報字數不準」，抓不到「檔案不存在」這一層。
+
+**卡池資料更正**
+`h.e.r.|h.e.r.` 年份 2018 → 2017（實際發行日 2017-10-20；該作是兩張 EP 重編加六首新曲的合輯，
+但拿下第 61 屆葛萊美最佳 R&B 專輯，定位明確故保留）。
+
+**研究層推翻主線（9 處）**
+Little River Band 那張只有金唱片（前批）；Aqua《Megalomania》重組錄音時四位原始團員全在、
+沒有少人（少人是 2016 年）；No Doubt《Return of Saturn》製作約兩年非三年、第 43 屆葛萊美是入圍未得獎；
+Brown Eyed Soul 三張的正規集數是 1／2／3 而非 1／3／4；m-flo 的 Lisa 2002 年 4 月就離團、
+loves… 系列同年即起步；UNKLE《The Road: Part II》廠牌是 Lavelle 自營的 Songs For The Def 不是 Mo'Wax，
+且他自稱那是 mixtape；Kool G Rap 查無參與《Psyence Fiction》；Limp Bizkit 的 Borland 2001 年就離團；
+Behemoth《I Loved You at Your Darkest》部分地區經 Metal Blade 發行。
+
+**人工審稿修正（5 處）**
+1. **Behemoth《Demigod》的「Decibel 名人堂」整條刪除**——Decibel 是樂評雜誌，不是可具名的機構獎項，
+   是我在派工詞裡判斷錯誤。hook 與正文一併重寫。
+2. My Dying Bride《Songs of Darkness》寫了「14 篇樂評平均給到 85%」——正是禁止的評分，
+   而且它就寫在 hook 裡，四層一起改。
+3. H.E.R. 的葛萊美類別誤植成「最佳當代 R&B 專輯」，正確是**最佳 R&B 專輯**。
+4. Incubus 卡的「turntable 手」改為「唱盤手」。
+5. Built to Spill 卡在正文重述了 hook 已說過的名次，刪除。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-090-*`、`desc-restyle/batches/w2-090-kv.json`、
+`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`（H.E.R. 年份）。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記（一則「票選」為誤報，正文已具名韓國大眾音樂賞）；
+build-final 50 張（含 4 張 thin 卡）；wrangler kv bulk put 回 Success；verify-kv 50/50；chk-diskvskv 零分岔。
+wave2 進度：**90 / 128 批、4466 / 6348 張，70.4%**。
+
 ### 2026-08-08｜desc-restyle｜w2-089 上線；更正一項長期誤判的 KV「分岔」結論
 
 **改動摘要**
