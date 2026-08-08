@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-099 上線；新源流做法的第三批實跑
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 99 批 / 4,911 張（77.4%）。**
+
+#### 源流位置分派（新做法的第三批）
+
+| 源流 | 各卡的位置 |
+| --- | --- |
+| 後龐克 | Iceage《You're Nothing》＝把它拉回粗糲的原型；PiL 兩張＝1978 年把 dub 與舞曲拉進後龐克／重組後靠自資與自有廠牌守住自主；Protomartyr 兩張＝底特律支線的兩個切點（Domino 與假訊息年代／37 歲才組團與自由爵士客座） |
+| skate punk | NOFX 兩張＝Epitaph 與雙封面爭議／Fat Wreck 與收山時序 |
+| metalcore 與前衛金屬 | BTBAM 兩張＝2000 年代初 metalcore 成形期／把《Colors》的組曲式推到更極端 |
+| pop-punk 與 emo | The Menzingers 兩張＝把自白腔裝回直球編制／把速度換成空隙 |
+| hyperpop | 100 gecs《10,000 gecs》＝從網路社群長出來的東西進入主流廠牌體系（與舊卡《1000 gecs》面向不同） |
+| stoner／sludge | High on Fire 兩張＝Lemmy 致敬與葛萊美／Sleep 血脈交到新一代鼓手手上 |
+| 自主製作定位 | SEVENTEEN 三張各一個面向 |
+
+#### 研究層推翻主線八處
+
+Iceage《You're Nothing》是**第二張**不是第三張；新作《For Love of Grace…》在 **Mexican Summer**、是他們
+**首次離開 Matador**（這本身成了那張的角度）；Melanie Martinez 在《The Voice》是**前六強被淘汰、不是第三名**；
+Dua Lipa《Radical Optimism》在 2025 年葛萊美是**零入圍**（不是入圍未得獎）；Sondre Lerche 真正的
+「離婚專輯」是 2014 年的《Please》**不是《Patience》**；Rina Sawayama《Hold the Girl》**查無水星獎紀錄**；
+Descendents《9th & Walnut》的器樂是 **2002 年**錄的、不是 1977–79 的檔案母帶；PiL《What the World Needs Now…》
+是**自籌資金、不是群眾募資**。
+
+另外 High on Fire《Electric Messiah》在第 61 屆葛萊美是**得獎**（生涯首次入圍即得獎），
+《Cometh the Storm》換的是**鼓手不是貝斯手**。
+
+#### 人工審稿修 4 處
+
+- **Sigrid 那張 thin 卡把研究限制講給讀者聽了**（「目前都還沒有可靠的公開資料」），
+  屬校對痕跡第四型，改寫成只陳述查得到的事實並補上與前作的間隔。
+- **Protomartyr《Ultimate Success Today》內部自相矛盾**：同一段同時給了 Joe Casey 的生日（1977 年 1 月）
+  與「37 歲才組第一支樂團」，兩者算起來對不上。他本人受訪說的就是「37 歲」，
+  因此保留他自己的說法、拿掉生日，矛盾即消失。
+- **SEVENTEEN《An Ode》的 hook 指名了「唱片大賞」**，但研究稿把同一項同時寫成本賞與 Daesang、
+  措辭自相矛盾；依「來源衝突就不寫」改成不指名層級。（**寫作層主動回報了這條派工詞內部衝突。**）
+- 一個異體字（卧室 → 臥室）。
+
+#### 卡池
+
+`mary see the future|cheers` 補上年份 **2010**（2010 年 4 月發行，部分數位平台誤標 2007）。
+**另有一件待店主裁示**：官方標題查證為《Cheer》（沒有 s），卡池標的《Cheers》多了一個字母。
+改動會連 KV 的 key 一起變、可能影響封面查找，因此**未動 key**；正文已指示不印出專輯標題、以「這張」指稱。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-099-kv.json`、`desc-restyle/batches/output/w2-099-out-{1,2}.json`、
+`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜desc-restyle w2-098 上線；本輪首次人工審稿零修正
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
