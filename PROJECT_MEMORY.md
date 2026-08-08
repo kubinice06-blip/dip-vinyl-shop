@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-093 上線；三批接力收尾（91–93 累計 148 張）
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 49 張全部上線，`verify-kv.mjs` 49/49 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 93 批 / 4,614 張（72.7%），剩 35 批 / 1,733 張。**
+- 題材：GY!BE 與 post-rock、2010 年代民謠復振、實驗女聲（Julia Holter／Jenny Hval／tUnE-yArDs／Circuit des Yeux）、
+  Deerhoof 與 Dirty Projectors 的跨界委創、Buzzcocks、Sleigh Bells、EXO、Bon Jovi。
+
+#### 研究層推翻主線三處
+
+| 卡 | 我寫錯的 | 查證結果 |
+| --- | --- | --- |
+| Deerhoof《Balter / Saunier》 | 「雙方互改對方的曲子」 | Marcos Balter 是為 Deerhoof 加 Ensemble Dal Niente 新寫《meltDown Upshot》；Saunier 把自家歌寫成變奏交給 **Dal Niente（不是 Deerhoof）**演奏。性質是委創合作專輯 |
+| Circuit des Yeux《Reaching for Indigo》 | 「2017 年那次崩潰」 | 事件是 **2016 年 1 月 22 日**（專輯即題獻該日期），2017 只是發行年 |
+| EXO《EXIST》 | 「距前作兩年」 | 距前一張**正規**專輯《OBSESSION》(2019) 約 3 年 8 個月；2021 年的《Don't Fight the Feeling》是特別專輯、不算正規前作 |
+
+另外 Poppy《Empty Hands》原本要走「可能未發行」的保守寫法，查證後確認**已於 2026 年 1 月 23 日由
+Sumerian Records 發行**，改走 full。The Lumineers〈Ho Hey〉的 Hot 100 最高名次是**第 3 名不是冠軍**，
+研究層特別標註這是常見誤傳。
+
+#### 人工審稿修 5 處
+
+- **Bastille〈Pompeii〉英國單曲榜最高第 2 名不是第 3 名**——研究層的完工報告寫「季軍」，但它自己的 facts
+  欄寫的是第 2 名。**代理的摘要與它產出的檔案不一致，這是新記錄的一種失敗型態：口頭回報不能當事實用，
+  派工前要回頭讀 facts 本身。**（我就是照那份摘要把「第 3 名」寫進 hook 派工詞的。）
+- **Black Flag《Damaged》原輯是 15 首不是 14 首**（研究稿誤植，連帶影響「5 首沒收進來」的算術）。
+- GY!BE《Lift Your Skinny Fists》把樂章寫成「小節」——`小節` 在音樂上是 bar，改為「段落」。
+- **George Ezra 那張把我的校對指示寫給讀者看了**：我要求「嗓音比喻是樂評用語、不得寫成事實」，
+  成稿就出現「那是形容音色的比喻，不是師承」。這是校對痕跡的第四種變體（前三種：交代卡池標錯、
+  否定讀者沒有的前提、把校對指令本身寫出來），**這次是把「不得寫成事實」的免責聲明寫成了正文**。
+- 一個異體字（絃樂 → 弦樂）。
+
+#### 卡池年份更正兩筆
+
+- `godspeed you! black emperor|lift your skinny fists like antennas to heaven` **原本沒有年份**，
+  補上 2000（黑膠 2000-10-09、CD 2000-10-23）。
+- `the head and the heart|the head and the heart` **2010 → 2009**。三個時間點是 2009 年 6 月自主發行、
+  2010 年 11 月簽 Sub Pop、2011 年 4 月 19 日再版；**卡池原本標的 2010 是簽約年，既非發行也非再版年。**
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-093-kv.json`、`desc-restyle/batches/output/w2-093-out-{1,2}.json`、
+`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜desc-restyle w2-092 上線；獎項「幾座、算誰的」連錯兩批
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
