@@ -1,5 +1,66 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-094 上線；卡池出現第三類問題：掛名錯誤
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 49 張全部上線，`verify-kv.mjs` 49/49 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 94 批 / 4,663 張（73.5%），剩 34 批 / 1,683 張。**
+- 題材：金屬（TesseracT／Amon Amarth／Helloween／Dark Tranquillity／Anathema）、老團重組
+  （Gang of Four／Swans／Killing Joke／Dinosaur Jr.／Meat Puppets／Mudhoney／Real Estate）、
+  主流流行（Sting／Little Mix／blink-182）。
+
+#### 卡池：新出現「掛名錯誤」這一類
+
+**`sting|all we get is life` 不是 Sting 的專輯。** 研究層查出那是 Ensemble Thélème 與
+Jean-Christophe Groffe 的古樂專輯（2024-11-22，Aparté 發行，曲目為 John Dowland 與 John Cage），
+Sting 只客座一軌、重新演繹〈Shape of My Heart〉。主線獨立覆核後移除：seed_cards 7,516 → 7,515，
+KV 的 `desc2:` 鍵以 bulk delete 刪除並用 bulk get 確認為 null，本批因此是 49 張。
+
+**這是卡池的第三類問題**——前兩類是重複卡（同一張唱片兩張卡）與無歷史定位的選輯重發，
+這類是**卡宣稱某人出了一張他沒出的專輯**。偵測不到，只能靠研究層逐張查。
+
+同一天在 w2-095 的研究層又遇到一次近似情形：`wavves|no life for me` 查出是 Wavves 與 Cloud Nothings 的
+**正式聯名合作專輯**。但這張的判斷相反——Wavves 是共同掛名的一半、且由他自家廠牌 Ghost Ramp 發行，
+卡池裡也沒有 Cloud Nothings 的重複卡，**判定保留**、正文據實寫成兩團聯名。
+**兩案的分界是「客座一軌」與「共同掛名」。**
+
+#### 研究層推翻主線六處
+
+| 卡 | 我寫錯的 | 查證結果 |
+| --- | --- | --- |
+| Cursive《Such Blinding Stars…》 | 「首張是 Saddle Creek」 | 是 **Crank! Records**；Saddle Creek 要到 2000 年的《Domestica》才開始。通論改成只掛「奧馬哈場景與 Kasher 的人脈」 |
+| Dark Tranquillity《The Mind's I》 | 預設 Stanne 是原始主唱 | 首張主唱是 **Anders Fridén**，他離團去了 In Flames，Stanne 才從節奏吉他接手 |
+| TesseracT《Altered State》 | 「是否為全器樂」 | 不是——全清腔無吼腔，限量版才另附器樂碟 |
+| Helloween《Straight Out of Hell》 | 預設 Nuclear Blast | 原始廠牌是 **The End Records**，Nuclear Blast 2020 年才再版 |
+| Helloween《Rabbit Don't Come Easy》 | 「有無客座鼓手」 | 是**三人接力**：Mark Cross 錄 2 首後因病退出、Mikkey Dee 代打其餘、真正的新鼓手只出現在日版加曲 |
+| The Offspring《Supercharged》 | 疑 Pete Parada 離團相關 | 離團（2021）與本作（2024）無直接時序綁定，依反向禁令排除 |
+
+**Dinosaur Jr.《There Near》確實存在但尚未上市**（2026-08-28 由 Jagjaguwar 發行），標 thin、
+走未發行卡的保守寫法。
+
+#### 人工審稿修 5 處
+
+- **The Offspring《Rise and Fall, Rage and Grace》寫成「首度把製作交給外人」是錯的**——
+  《Splinter》就是 Brendan O'Brien 製作。研究稿只寫「首度找 Bob Rock」，是寫作層自己把它擴寫成
+  更大的宣稱。**「首度／第一次」這種最高級被寫作層擅自放大，是新記錄的失敗型態。**
+- **Mudhoney 兩張互相矛盾**：《Every Good Boy》寫「這是他們在 Sub Pop 的最後一張」，《Digital Garbage》
+  卻寫「留在該廠牌的第七張」。數字沒錯（Sub Pop 第七張）但措辭讓兩張打架，改為「重返該廠牌後的第五張」。
+  **同批同藝人多卡要互相對得起來，這點跟 w2-091 的 Shakira 序號問題同型。**
+- Little Mix《Get Weird》的「對象是單曲本身，而不是專輯」是把校對指示寫給讀者看，刪除。
+- `Mötörhead` 拼寫錯誤（應為 Motörhead）。
+- `雷鬼動` 改為與卡池其他卡一致的 `雷鬼頓`。
+
+#### Andy Gill 的時序判定
+
+Gang of Four《Happy Now》(2019-04-19) 發行約十個月後，僅存的原始成員 Andy Gill 於 2020-02-01 辭世，
+使本作成為他生前最後一張錄音室專輯——依反向禁令兩分法屬「與作品直接綁定」，可寫且已標明時序、
+死因一句帶過不渲染。本作主唱是 John Sterry 而非 Gill，也已寫明。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-094-kv.json`、`desc-restyle/batches/output/w2-094-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜自動播放加授權門檻：本站不主動發出「這次造訪的第一個聲音」
 
 - Repo：`dip-vinyl-shop`。檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`。
