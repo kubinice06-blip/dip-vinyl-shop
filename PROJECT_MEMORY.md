@@ -1,5 +1,60 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-096 上線；94–96 三批接力收尾，wave2 過四分之三
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 49 張全部上線，`verify-kv.mjs` 49/49 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 96 批 / 4,762 張（75.1%），剩 32 批 / 1,583 張。**
+- 題材：安那托利亞源流（Erkin Koray）、獨立搖滾（Yo La Tengo／Ought／Japandroids／Band of Horses／
+  Beach Fossils／alt-J）、nu metal 與哥德金屬（Korn／Lacuna Coil）、挪威流行（AURORA）、
+  The Weeknd 的 2011 年混音帶三部曲、日本（Suchmos）、台灣（deca joins）。
+
+#### 卡池：本輪第二張掛名錯誤
+
+**`yo la tengo|parallelogram` 不是 Yo La Tengo 的專輯。** Parallelogram 是 Three Lobed Recordings
+2015 年的五張分軌黑膠盒裝（各方藝人合輯），Bardo Pond 與 Yo La Tengo 那張各出一首，
+YLT 僅提供〈Electric Eye〉一軌。主線覆核後移除：seed_cards 7,515 → 7,514，KV 鍵已刪並以 bulk get 確認。
+
+**這一輪三批共處理了三件掛名疑義，分界已經清楚**：
+- `sting|all we get is life`（w2-094）→ **移除**，別人的唱片、Sting 客座一軌
+- `yo la tengo|parallelogram`（w2-096）→ **移除**，各方分軌盒裝、YLT 一軌
+- `wavves|no life for me`（w2-095）→ **保留**，Wavves × Cloud Nothings 共同掛名、自家廠牌發行
+
+**判準是「客座／一軌」對「共同掛名」。**
+
+#### 研究層推翻主線六處
+
+| 卡 | 我寫錯的 | 查證結果 |
+| --- | --- | --- |
+| Korn《The Path of Totality》 | 指定查葛萊美 | **查無任何葛萊美紀錄**；它拿的 Revolver Golden Gods 是樂評雜誌主辦的獎，依 08-08 定案（Decibel 名人堂那條）同樣不得寫入正文 |
+| Korn《The Serenity of Suffering》 | 預設是 Head 的回歸首作 | 他 **2013 年就已回歸**，隨 2014 年《The Paradigm Shift》完成回歸首作，本作是第二張 |
+| Erkin Koray | 「自製樂器是否有來源」 | 電巴格拉馬琴是他與 **Orhan Gencebay 並列共同發明**，不是他獨自發明 |
+| Pissed Jeans《Why Love Now》 | 疑 Lydia Lunch 獻聲旁白 | 旁白是作家 **Lindsay Hunter**；Lunch 是製作人 |
+| Band of Horses《Why Are You OK》 | 「Lytle 或 Rubin 掛執行製作」 | **Lytle 是主製作、Rubin 是執行製作**，兩者不可對調 |
+| Ought《Sun Coming Down》 | 疑與 2012 年魁北克學運有關 | **查無可靠交叉來源**，且與樂團 2011 年成軍的官方說法矛盾，整條排除 |
+
+#### 人工審稿只修 2 處
+
+- Daughters《You Won't Get What You Want》的「睽違近十二年」與可查證的間隔對不上——上一張是
+  2010 年的同名作，實際相隔八年。改為「距上一張又隔了八年」。
+- Suchmos《THE KIDS》的「專輯半年後才到」與正文自己給的日期矛盾（廣告 2016 年 9 月、專輯
+  2017 年 1 月），改為「要再等幾個月」。
+
+**兩處都是「hook 的概數與正文的精確日期打架」**，與 w2-094 的 Mudhoney 兩卡互相矛盾同型：
+**同一張卡（或同批同藝人的多張卡）內部的數字必須互相對得起來。**
+
+#### 一個切點陷阱
+
+合併寫作層輸入時，a 組因移除一張變成 9 張，`--split=2` 的邊界跟著位移，把 AURORA 的兩部曲
+（Step 1 與 Step 2）劈到不同寫手——那組的反同構條款要求兩張互不重述兩部曲架構，跨寫手就守不住。
+已重排 c 組的順序讓 AURORA 三張落在同一個寫手。
+**往後任何批次一旦中途移除卡片，都要重新檢查 `--split=2` 的切點有沒有劈開同藝人群組。**
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-096-kv.json`、`desc-restyle/batches/output/w2-096-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜desc-restyle w2-095 上線；榜別混淆第二例，與一次派工詞和 base 檔打架
 
 - Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
