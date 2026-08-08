@@ -1,5 +1,55 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-091 上線；一則錯誤的 hook 前提與一個 iTunes 假冠軍
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 49 張全部上線，`verify-kv.mjs` 49/49 一致、`chk-diskvskv.mjs` 零分岔。wave2 累計 91 批 / 4,515 張（71.1%）。
+- 題材：主流流行（Shakira／Kesha／P!nk／Miley Cyrus／Justin Bieber／One Direction）與 2010 年代 indie、hypnagogic pop。
+
+#### 開工先移除一張重複卡
+
+`p!nk|missundaztood` 與 `p!nk|m!ssundaztood` 是同一張 2001 年專輯的兩張卡。依「保留掛名與唱片實際版面
+一致的那張」原則留下 `M!ssundaztood`，seed_cards 7,517 → 7,516，KV 的 `desc2:` 鍵以 bulk delete 刪除
+並用 bulk get 確認為 null。本批因此是 49 張而非 50 張。
+
+#### 研究層推翻主線 12 處
+
+| 卡 | 查證結果 |
+| --- | --- |
+| One Direction《Four》 | Zayn Malik 離團公告晚於發行四個多月且與本作無綁定，依反向禁令排除 |
+| Ellie Goulding《Lights》 | BBC Sound of 2010 與 BRIT Critics' Choice **兩項都是獲選、不是入圍** |
+| Camila Cabello《Camila》 | 離團到首作間隔 13 個月，不是外傳的「數週後」（某自動摘要工具只取月份餘數、漏算整年） |
+| Miley Cyrus《Something Beautiful》 | 專輯與同名電影非同步發行，三個時間點各自錯開 |
+| P!nk《TRUSTFALL》 | 第 66 屆葛萊美**完全沒入圍**，不是入圍未得獎 |
+| John Maus | 本作 2011 年發行時他尚未取得博士學位（2014 年才完成） |
+| Imagine Dragons | 「團員曾任 Slipknot 成員」查無來源、疑為 AI 條目誤植，捨棄 |
+
+#### 人工審稿修了 9 處，最重的一處是 hook 前提整個錯掉
+
+**〈Pumped Up Kicks〉的靈感不是科倫拜案。** 研究稿把兩件事併成一句：Mark Foster 本人說這首歌起於他讀到
+青少年心理疾病增加的趨勢、想弄懂那套對他全然陌生的心理；與科倫拜案有關的是**貝斯手 Cubbie Fink**，
+他的表親是該案倖存者。hook 與正文首句連同 research／hooks／input 四層一併重寫。
+
+其餘八處：
+
+- **One Direction《Four》的「67 個國家專輯榜冠軍」其實是 iTunes 榜。** Wikipedia 原文是「豪華版在約 67 國
+  登上 iTunes 榜首」，寫作層讀成各國專輯榜冠軍。hook 與正文同步改寫。
+  **這類「某某榜冠軍」的榜別混淆是新記錄的失敗型態，往後榜單宣稱要連榜別一起查。**
+- **Shakira《Sale el Sol》是第九張不是第七張**（研究稿的來源是 PR Newswire 新聞稿）。同批《Las mujeres
+  ya no lloran》寫「第十二張」，兩者一比就露餡——**同藝人多卡放同一組時，序號必須互相對得起來。**
+- **Rex Orange County 的「19 歲」是寫作層自己補的**，研究稿裡沒有任何年齡事實，且他當時實際是 18 歲。
+  年齡整個拿掉。
+- Miley Cyrus《Younger Now》的〈Rainbowland〉被威斯康辛州小學撤下是 **2023 年**，研究稿寫 2019 年。
+- Kesha《Rainbow》的「提告後五年無法發片」與提告年份對不上（2014 提告、2017 發行），改為三年。
+- Shakira《Laundry Service》的「一句英文都不會說」超譯了來源的「不諳英語」。
+- Wild Nothing《Life of Pause》hook 說三位鼓手，正文只點到兩位，補上收尾。
+- Julien Baker《Sprained Ankle》的「巡演路上自己賣的 CD」有來源但正文漏寫，補回。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-091-kv.json`、`desc-restyle/batches/output/w2-091-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-03｜鎖定畫面媒體通知改用 MediaSession，播完自動收掉
 
 - Repo：`dip-vinyl-shop`。檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`。
