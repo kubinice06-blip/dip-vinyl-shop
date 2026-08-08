@@ -2221,6 +2221,47 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜w2-085 上線（合成流行、千禧流行、英國 post-punk revival）
+
+**改動摘要**
+w2-085（49 張）走完七步全程並推上 KV，verify-kv 49/49 一致。批內含 Pet Shop Boys 5 張、
+Animal Collective 5 張、Doobie Brothers 3 張、Camera Obscura 以外的英國 revival 群七張，
+同藝人分軸與通論歸屬全數落實。
+
+**研究層推翻主線（7 處）**
+- Westlife《Coast to Coast》——〈Uptown Girl〉根本不在這張裡（屬 2001 年的《World of Our Own》），
+  該曲已從本卡整條移除。
+- Kelly Clarkson《Breakaway》——卡池標的 2003 年是首作《Thankful》的年份，本作實為 2004-11-30；
+  葛萊美是**得獎**（兩座）不是入圍。
+- Pet Shop Boys《Very》——〈Go West〉在英國只到第 2 名（德／瑞典／瑞士／奧地利才是冠軍）；
+  《Very》本身才是他們唯一一張英國專輯榜冠軍作。
+- Pet Shop Boys《Introspective》——〈Always on My Mind〉是先在電視特輯演出、反應熱烈才補錄單曲版，
+  不是「為特輯錄製」。《Bilingual》的南美巡演年份為 1994 非 1995。
+- Sublime《Robbin' the Hood》——錄音地是長堤一間毒品屋的客廳，不是出租屋臥室。
+- Sublime《Until the Sun Explodes》——已於 2026-06-12 發行（主線原以為可能未發行），
+  主唱是創團主唱之子 Jakob Nowell。
+- Passion Pit《Manners》前身 EP 是情人節禮物不是生日禮物；Animal Collective《Strawberry Jam》
+  的果醬命名故事屬於 Panda Bear 不是 Avey Tare。
+
+**人工審稿修正（7 處）**
+1. Hilary Duff《Metamorphosis》把「2005 年底全球 500 萬張」與「四白金」併寫，但那張 RIAA 認證是
+   2023 年 10 月才給的，改成分開陳述。
+2. Editors《The Back Room》與 Kaiser Chiefs《Employment》兩張同批出現結構完全相同的句子
+   （「首次發行僅第 22 名，重新發行後才衝上第 X 名」，連第一個數字都一樣），改寫 Editors 那句。
+3. Maroon 5 卡的「首張同年 6 月 25 日」——上一句講的是 1997 年，指涉會誤讀，改成明寫 2002 年。
+4. KT Tunstall 卡的「同樣在 2005 年入圍」無所承接，改為「並在」。
+5. The Wombats 卡首次提到主唱只寫姓氏 Murphy，補全名 Matthew Murphy。
+6–7. 兩張因修改而超標的卡回頭修剪。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-085-*`、`desc-restyle/batches/w2-085-kv.json`、
+`desc-restyle/progress.json`。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 49 張、字數 182–240；
+wrangler kv bulk put 回 Success；verify-kv 49/49 一致。
+進度：99 批 / 4038 張完成，剩 43 批 / 2132 張，**65.4%**。
+
 ### 2026-08-08｜desc-restyle + dip-vinyl-shop｜w2-084 上線、卡池近似重複卡系統掃描
 
 **改動摘要**
