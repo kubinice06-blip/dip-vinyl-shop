@@ -1,5 +1,88 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜店主再次糾正「源流禁令」；w2-097 上線並改用新的源流處理法
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；另改了 `desc-restyle/prompts/` 三份 base 檔。
+- w2-097 共 49 張上線，`verify-kv.mjs` 49/49 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 97 批 / 4,811 張（75.8%）。**
+
+#### 這一輪最重要的一件事：我把作廢的舊配額搬回來了
+
+跑 w2-091 至 098 期間，我在派工詞裡寫了一整串「djent／維京金屬／哥德堡旋死／death-doom／assouf／
+交響金屬／不諧和死亡金屬／安那托利亞搖滾／南倫敦 post-punk 場景／SM 世界觀，源流概述一律不得重述」。
+**這等於把 2026-08-02 與 08-08 已經取消的「一條源流只准一張卡寫」配額整套搬回來。**
+店主當場糾正並補上關鍵理由：
+
+> **卡池是打散抽卡的，卡與卡之間根本沒有閱讀順序，「先寫後寫」不構成任何約束。**
+
+**這是同一條裁定的第三次糾正**（08-02 廠牌、08-07 擴大、08-08 曲風源流），前兩次我都只把「不得禁」
+記成一條規則、沒記住理由，所以一再把配額當成反同構的工具重新發明出來。
+
+**當場做的處置**：
+1. 對五個正在跑的代理發出更正（w2-097 hook 兩組、w2-098 研究 a／c／d 組）。
+   已存檔的組別只做定點 note 修改、未重寫整檔。
+2. **三份 base 檔（research／hook／writer）都補上店主給的理由，並新增一條授權**：
+   「若派工詞出現某條曲風源流或廠牌敘事一律不得重述的禁令，那是派工詞寫錯了——以本檔為準照常寫，
+   並在回報裡指出這條衝突。」防線因此不再依賴我記不記得。
+3. 效果當天就驗證到：w2-097 的 writer-2 主動回報研究稿 `researchNotes` 欄裡殘留的舊配額字樣
+   （研究層在更正之前寫的），並依 base 檔照寫源流面向、未採用那些舊禁令。**判斷正確。**
+
+**仍然有效的禁令只剩兩類**：具體某張舊卡已用掉的切入面向、純粹的故事骨架同構。
+
+#### 新的源流處理法：指定位置，不是禁掉整條
+
+w2-097 有 19 張屬同一波 post-punk，正好用來示範。**不再是「通論釘在一張、其餘全禁」，
+而是為每張指定它在這條脈絡裡站的位置**：
+
+| 卡 | 位置 |
+| --- | --- |
+| shame《Songs of Praise》 | 場景內圈最早留下的一份唱片文件 |
+| Squid《Bright Green Field》 | 簽進 Warp、靠榜單把這批樂團推上主流視野 |
+| black midi《Schlagenheim》 | 把它推向極端 |
+| Black Country, New Road | 現場聲譽先於唱片 |
+| Dry Cleaning《New Long Leg》 | 從場景外圍接進來（視覺藝術界的主唱） |
+| Sleaford Mods《Divide and Exit》 | 其實不屬於這個場景（不在南倫敦、幾乎不用樂器、出手更早） |
+| Viagra Boys《Street Worms》 | 不在英國，瑞典自成一支 |
+| Amyl and the Sniffers 首張 | 不在英國，接的是澳洲 pub rock 血脈 |
+
+其餘 9 張明寫「本張不碰脈絡敘事」，改走製作人／錄音地／專輯名出處／客座名單等面向。
+**同樣的做法也套在 Mdou Moctar 三張的 assouf（takit 情歌傳統首度進錄音室／推進西方獨立廠牌體系／
+政變後的政治處境）、Within Temptation 三張的交響金屬、aespa 與 Red Velvet 的 SM 企劃、
+Ulcerate 的不諧和死亡金屬（南半球支線）、Barış Manço 的安那托利亞搖滾（把土耳其民謠推向交響化）。**
+**資訊量比舊做法高得多，這才是那批唱片存在的理由。**
+
+#### 卡池：又一張重複卡
+
+`aespa|lemonade - the 2nd album` 與 `aespa|lemonade` 是同一張唱片（第二張正規，2026-05-29）。
+官方標題就是《LEMONADE》，「- The 2nd Album」是串流平台的完整標題變體；保留短標也與卡池既有的
+《Armageddon》命名慣例一致。seed_cards 7,514 → 7,513，KV 鍵已刪並以 bulk get 確認。
+
+#### 研究層推翻主線五處
+
+GusGus《Polydistortion》**不是樂團首張**（1995 年已有冰島本土同名作），只是他們在 4AD 的第一張；
+beabadoobee《Beatopia》製作人是 Jacob Bugden 與 Iain Berryman；Halsey 四張**都查無葛萊美紀錄**；
+Mdou Moctar「本作才改為全體掛名」**查無此事**（那個名字本來就同時指個人與樂團）；
+Amyl「12 小時寫錄完」對應的是首張 EP《Giddy Up》**不是**那張全長。
+
+另有一則需覆核的新事實，主線獨立查證後採用：**black midi 創團吉他手 Matt Kwasniewski-Kelvin
+於 2026 年 1 月 12 日辭世、得年 26 歲**，他 2020 年因心理健康因素離團，《Schlagenheim》是他與樂團
+唯一的錄音室作品——依反向禁令兩分法屬與作品直接綁定，已標時序、死因僅作最低限度陳述、只寫在那一張。
+
+#### 人工審稿修 5 處
+
+- **Ulcerate 那句「也是 Debemur Morti Productions 出版的第一張作品」是研究稿自己寫錯**
+  （該廠牌 2003 年就成立、發過數百張），原意是「樂團在該廠牌的第一張」。
+- black midi《Schlagenheim》把研究稿的「九曲中的八首（在五天內錄完）」誤讀成「九首裡只有八首成形」。
+- 《Hellfire》的「化名登場的孫子」漏了羅馬拼音（Sun Tzu），讀者看不懂。
+- GusGus 那張出現「嚴格說來並非樂團首張」——否定讀者沒有的前提，屬校對痕跡第二型。
+- Within Temptation《Bleed Out》的「這不是選輯或重發」同型，改成正面陳述。
+
+#### 主要檔案
+
+`desc-restyle/prompts/{research,hook,writer}-base.md`、`desc-restyle/batches/w2-097-kv.json`、
+`desc-restyle/batches/output/w2-097-out-{1,2}.json`、`desc-restyle/progress.json`、
+`desc-restyle/REMOVE_LIST.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜desc-restyle w2-096 上線；94–96 三批接力收尾，wave2 過四分之三
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
