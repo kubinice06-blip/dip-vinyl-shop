@@ -2221,6 +2221,48 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle + dip-vinyl-shop｜w2-084 上線、卡池近似重複卡系統掃描
+
+**改動摘要**
+- w2-084（49 張，rock/metal/giallo 配樂）走完七步全程並推上 KV，verify-kv 49/49 一致。
+- 全卡池做了一次「同藝人、專輯名去掉標點後相同」的近似重複掃描（排除 CJK 標題以免全誤報），
+  掃出僅有的兩組真重複並移除：Sublime《40 oz. to Freedom》（留無空格的官方寫法《40oz. to Freedom》，
+  w2-005 已上線）、Tune-Yards《Whokill》（留官方小寫加空格的《w h o k i l l》）。seed 7519 → 7517。
+  這是本工作階段第三、四張同型重複卡（前兩張是 Suicidal Tendencies 與 Guns N' Roses 的字元損毀重複）。
+
+**研究層推翻主線**
+Bad Religion《Generator》錄音年為 1991 非 1990、是 Epitaph 倒數第二張；Goblin《Contamination》
+錄製時 Simonetti 與 Morante 都已離團；《Buio Omega》1997 年版是 1979 年配樂的首度發行；
+《Phenomena》1997 年版才是純 Goblin 配樂首度單獨發行；《Fearless》是四十週年重錄非新配樂；
+Fugazi《Steady Diet of Nothing》是第二張全長非首張；Social Distortion《Born to Kill》已於
+2026-05-08 發行；Nena 專輯名結尾的「nich」是官方寫法。
+
+**人工審稿修正（11 處）**
+1. ELP《Black Moon》——研究稿引用的 classicbands.com 數據全錯（英國第 9、美國第 12、兩地金唱片），
+   覆核 Wikipedia 為 Billboard 200 第 78 名、英國未進榜、查無認證。**再次驗證「粉絲站數據不可信」這條。**
+2. Chicago《13》——〈No Tell Lover〉〈Alive Again〉是《Hot Streets》的單曲、掛錯專輯；改為
+   〈Must Have Been Crazy〉與〈Street Player〉（後者是樂團首支完全未進 Hot 100 的單曲），榜位第 21 名。
+3. Def Leppard《Slang》——製作人誤植成 Mike Shipley（那是《Adrenalize》的製作人），實為樂團＋Pete Woodroffe。
+4. Gamma Ray《Sigh No More》——「Kusch／Schlächter 陣容維持到第五張」有誤，Kusch 1992 年即離團、
+   Schlächter 1997 年才轉正式團員。
+5. Sleater-Kinney《The Hot Rock》——「第一張進榜」未具名榜單（違反 08-08 新規），補為 Billboard 200 第 181 名。
+6. Spock's Beard《Beware of Darkness》——錄音年是 1995 非 1996。
+7. Goblin《Fearless》——「1975 年歷史班底」不確，Guarini 自《Roller》時期才加入，改為七〇年代歷史班底。
+8. Sebadoh《The Sebadoh》——Sub Pop 合約敘述混亂，改為 CD 走 Sire、黑膠仍走 Sub Pop。
+9. White Noise《An Electric Storm》hook 語病（「一天空白母帶」）改為「七分鐘空白母帶與一天期限」。
+10. Goblin《Zombi》正文出現「本卡」這種指涉卡片本身的說法，改為「這份原聲帶」。
+11. 三張因更正而超標的卡回頭修剪至 240 字內。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-084-*`、`desc-restyle/batches/w2-084-kv.json`、
+`desc-restyle/progress.json`、`desc-restyle/REMOVE_LIST.json`、`desc-restyle/chk-splithooks.mjs`（重建）、
+`dip-vinyl-shop/seed_cards.json`（7519 → 7517）。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 49 張、字數 210–240；
+wrangler kv bulk put 回 Success；verify-kv 49/49 一致；兩張移除卡的 KV 鍵經 bulk get 確認已空。
+進度：98 批 / 3989 張完成，剩 44 批 / 2181 張，**64.7%**。
+
 ### 2026-08-08｜desc-restyle｜降錯誤率三項修正（QA 機械化＋base 檔規則＋派工流程）
 
 - **背景**：075–083 九批的審稿修正處數從 16 一路降到 2–3，降的機制是「每次審稿抓到的錯升級成上游規則」。本次把三類仍在復發的錯誤一次升級，經店主核可。
