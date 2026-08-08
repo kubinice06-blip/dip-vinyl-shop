@@ -1,5 +1,48 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-098 上線；本輪首次人工審稿零修正
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 98 批 / 4,861 張（76.6%）。**
+- **人工審稿零修正**——機器 QA 零標記、校對痕跡掃描零命中、逐 key 更正全部落實。這是這一輪
+  （w2-091 起）第一次逐張讀完 50 張沒有要改的。歸因於兩件事：base 檔補上的規則衝突授權，
+  以及研究層更正在派工詞裡逐 key 寫得更細。
+
+#### 卡池年份更正兩筆
+
+- **`preoccupations|viet cong` 2023 → 2015。** 該作實為 2015 年 1 月 20 日由 Flemish Eye 與
+  Jagjaguwar 發行，**發行時掛的團名就是 Viet Cong**，樂團 2016 年 4 月才因團名爭議改名 Preoccupations。
+  **掛名維持 Preoccupations 未動**——改藝人字串會連 KV 的 key 一起變、牽動封面查找，而把改名樂團的
+  舊作掛在現名下是常見慣例；正文則據實把「發行時的團名與後來的改名」寫成這張卡的主故事。
+- **`panda bear|panda bear` 1998 → 1999**（錄於 1997 至 1998 年、正式發行是 1999 年 6 月 1 日）。
+
+#### 研究層推翻主線八處
+
+| 卡 | 查證結果 |
+| --- | --- |
+| The Jesus Lizard《Blue》 | **製作人不是 Steve Albini，是前 Gang of Four 的 Andy Gill**；轉投 Capitol 正是與 Albini 疏遠的原因。2000 年的《Bang》是選輯，所以《Blue》確為解散前最後一張錄音室專輯 |
+| Cloud Nothings 同名輯 | **仍是 Dylan Baldi 一人操刀**，全團首作是 2012 年的《Attack on Memory》 |
+| Panda Bear《Sinister Grift》 | 不是首度獨力全包，是與 Animal Collective 的 Josh Dibb 共同製作 |
+| Conan Gray《Kid Krow》 | 不是「被星探從 YouTube 挖出」，是長期自製影音日誌累積聲量後才簽進 Republic |
+| Sabrina Carpenter《Short n' Sweet》 | 廠牌是 **Island Records**，不是 Hollywood |
+| Tate McRae《The One Day LP》 | 是**黑膠專屬彙整輯**（收簽 RCA 前 2016–2019 的獨立單曲），與 2021 年那張 EP《Too Young to Be Sad》是不同的東西 |
+| Tom Misch《Happy Music》 | 官方掛名的藝人是他的電子分身 **Supershy**，不是本名 |
+| Norma Jean 兩張 | 身分鎖定為 1960 年代美國鄉村歌手 Norma Jean Beasler，不是 1990 年代末的金屬硬蕊樂團；卡池年份與掛名皆無誤 |
+
+#### 兩張的卡池裁定
+
+- `tate mcrae|the one day lp` → **保留**。「把散落單曲首度彙整」屬有歷史定位那一類
+  （比照 Cornelius《Ethereal Essence》與 Harmonia《Documents 1975》），正文據實寫成彙整輯。
+- `tom misch|happy music` → **保留**。分身掛名仍是本人的作品，與別人的唱片（w2-094 的 Sting 案）
+  不同；正文如實反映 Supershy 這個掛名，那正是這張的故事。卡池本來也容得下化名差異
+  （`ariel pink's haunted graffiti` 與 `ariel pink` 就是兩張分開的卡）。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-098-kv.json`、`desc-restyle/batches/output/w2-098-out-{1,2}.json`、
+`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜店主再次糾正「源流禁令」；w2-097 上線並改用新的源流處理法
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；另改了 `desc-restyle/prompts/` 三份 base 檔。
