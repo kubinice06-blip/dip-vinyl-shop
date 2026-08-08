@@ -1,5 +1,58 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-100 上線；wave2 過 100 批
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 100 批 / 4,961 張（78.2%）。**
+
+#### 又一次「廠牌史上第一張」的假事實（與 w2-097 的 Ulcerate 同型）
+
+Mercyful Fate《Melissa》的 hook 前提是「Roadrunner 開廠的第一張唱片」，
+研究稿引 Wikipedia 條目的原句（英文維基 Melissa 與 Fandom 鏡站都這樣寫）。
+**但 Roadrunner 1980 年成立時是授權代理商**，1981 至 1982 年間已經替 Patricia Ruddock、
+Liaisons Dangereuses 等非金屬藝人發過唱片，1983 年的《Melissa》不可能是廠牌首發。
+**維基百科這句話本身是錯的**，整張因此重寫：hook 改走頭骨上祭壇、
+1984 年 1 月在阿姆斯特丹 Paradiso 被歌迷偷走那條線，廠牌事實降為「樂團在該廠牌的第一張」。
+
+**這是「某廠牌史上第一張」第二次在同一輪被抓到**（w2-097 是 Ulcerate 與 Debemur Morti）。
+教訓：**這類宣稱一律要反查廠牌自己的成立年與早期目錄，不能只憑作品條目的單句。**
+
+#### 人工審稿修 10 處
+
+| 卡 | 修了什麼 |
+| --- | --- |
+| Mercyful Fate《Melissa》 | 見上，整張重寫（hook 前提不成立） |
+| Area《Arbeit macht frei》 | **Demetrio Stratos 不是「生於希臘」**——1945 年生於埃及亞歷山卓的希臘裔家庭、1962 年 17 歲移居米蘭。研究稿引的 progarchives 寫錯 |
+| Sonic Youth《Experimental Jet Set》 | **榜單比較整句錯**。研究稿寫「Billboard 34 名與英國 10 名皆低於前作《Dirty》」，但《Dirty》在美國只到第 83 名——本作其實是他們當時在美最高名次，只有英國榜低於前作 |
+| Braid《Frame & Canvas》 | **Chris Broach 是吉他手兼主唱，不是貝斯手**（貝斯是 Todd Bell）。研究稿寫錯 |
+| Angélique Kidjo《Ayé》 | 兩處：倫敦錄音室名「Soul to Soul」查不到可靠來源（Discogs 之外無旁證），改成只寫倫敦並補上「十首歌對半拆」的實際分工；Jean Hébrail 那句「確切署名分工沒有明確記載」是**校對痕跡第四型**（把研究限制講給讀者聽），改成正面陳述兩人 1991 至 1998 年合作五張 |
+| This Mortal Coil《Filigree & Shadow》 | 「25 首裡 13 首器樂曲」與「翻唱略多於原創」**同段自相矛盾**（器樂 13 首已過半，翻唱不可能多於原創總數），改成「有人聲的部分多半是翻唱」 |
+| This Mortal Coil《Blood》 | hook 把 Tanya Donelly 寫成「Throwing Muses 的主唱」，她是吉他手兼合唱，主唱是 Kristin Hersh |
+| King Diamond《Abigail》 | hook 用了直接引語『18 將變 9』，依規則轉間接敘述 |
+| ANARCHY《Rob the World》 | 把研究稿的「**他自己**的饒舌敘事起點」放大成「**日本硬派街頭饒舌**的敘事起點」，是無來源的曲風級最高級，改回他個人 |
+| Bolt Thrower《Those Once Loyal》 | 正文「是生涯最好的名次」重述了 hook 已說過的話 |
+
+另統一批內譯名：明尼亞波利斯（全池 32 對 17 的多數式，Kidjo 那張原寫明尼阿波利斯）。
+
+#### 寫作層自己擋下的三件事
+
+兩組都主動整條捨去「拿不到可具名出處的榜單」：ANARCHY《Rob the World》的兩本雜誌年度專輯選入、
+Laurel Halo 與 Lapalux 的 Metacritic 與樂評人具名、The Walkmen 的年度單曲名次、
+Liars 的字母評分、Marillion《Fugazi》的樂評出處（金唱片與英國榜名次照寫）。
+兩組也都回報「本批禁令都是舊卡角度的反同構條款、未出現已作廢的源流全禁令」——
+base 檔那條授權連續四批都有實效。
+
+**字數紀律恢復**：w2-099 的 writer-2 有 21 張初稿超標，本批派工時明寫「拉丁專名密度高，
+動筆前先把陣容壓到主故事需要的那幾位」，兩組成稿 204–240、零張回頭刪。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-100-kv.json`、`desc-restyle/batches/output/w2-100-out-{1,2}.json`、
+`desc-restyle/batches/research/w2-100-{d,e}.json`、`desc-restyle/progress.json`、
+`dip-vinyl-shop/seed_cards.json` 的 Stratovarius《Twilight Time》年份 1991 → 1992
+（該筆在本批派工前就改好，已隨 w2-099 的提交入庫，本次提交只含備忘錄）。
+
 ### 2026-08-08｜desc-restyle w2-099 上線；新源流做法的第三批實跑
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
