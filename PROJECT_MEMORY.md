@@ -2221,6 +2221,50 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜w2-089 上線；更正一項長期誤判的 KV「分岔」結論
+
+**改動摘要**
+w2-089（50 張，交響金屬／英搖／post-punk／前衛）走完七步全程並推上 KV，verify-kv 50/50 一致。
+十條源流通論分派完成，切點乾淨。
+
+**更正一項舊結論（重要）**
+上線後用自製腳本比對「磁碟 vs KV」，回報 11–13 張分岔、**每次執行分岔的是不同一組**，
+而 `verify-kv.mjs` 同時穩定回報 50/50。逐字比對後找出真因：
+**自製腳本用 `res.on('data', c => d += c)` 逐塊累積 HTTP 回應，一個三位元組的中文字若跨在
+Buffer 塊邊界就被拆成替代字元**，塊邊界每次不同，分岔清單才會看起來在輪動。
+`verify-kv.mjs` 用 `fetch()` + `r.json()` 所以不受影響。
+
+**先前把同一現象歸因為「KV 最終一致性、讀取回傳舊值」是錯的** —— KV 沒問題，錯的是比對腳本。
+已新增 `desc-restyle/chk-diskvskv.mjs`（內建 fetch 寫法）並用它複驗 087／088／089 三批，
+全部零分岔。RUNBOOK 1e 前已加入這條，並註明它更正了舊結論。
+
+**研究層推翻主線（10 處）**
+Little River Band《Diamantina Cocktail》只拿金唱片不是白金（白金紀錄屬隔年的《Sleeper Catcher》）；
+Enslaved《Vikingligr Veldi》歌詞是「最貼近古諾斯語的冰島語」而非古諾斯語本身；
+Danzig《Circle of Snakes》是回歸精簡重型、不是整體工業化；Mew 兩張的自費／廠牌發行正好對調
+（首張是 Exlibris 正式發行，第二張才是自營廠牌）；UFO《Sharks》製作人是 Mike Varney 與
+Steve Fontano、不是 Ron Nevison，換人正是 Schenker 與樂團破局的導火線；
+Regina Spektor《Songs》錄於友人經營的 Antenna Studio 而非「朋友家客廳」；
+Ultravox 首張的 Brian Eno 只掛錄音室協力、不是聯合製作人；
+Fall Out Boy《M A N I A》延期是 Wentz 與 Stump 共同決定；No Doubt《Return of Saturn》製作約兩年非三年；
+Nightwish《Once》四國登頂的是專輯本身、〈Nemo〉只到德挪前十。
+
+**人工審稿修正（3 處）**
+1. Danzig《Circle of Snakes》——研究稿記第七張，覆核 Wikipedia 為**第八張**。
+2. Stereophonics——研究稿把《You Gotta Go There to Come Back》記成第三張，實為**第四張**
+   （Cable 是在該作發行後、2003 年 9 月離團）。
+3. Mew《Half the World Is Watching Me》正文寫出「公開能確認的資料只停在發行年份與廠牌」——
+   把研究限制講給讀者聽，已刪。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-089-*`、`desc-restyle/batches/w2-089-kv.json`、
+`desc-restyle/chk-diskvskv.mjs`（新增）、`desc-restyle/RUNBOOK.md`、`desc-restyle/progress.json`。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 50 張（含 2 張 thin 卡）；
+wrangler kv bulk put 回 Success；verify-kv 50/50 一致；chk-diskvskv 087／088／089 皆零分岔。
+wave2 進度：**89 / 128 批、4416 / 6348 張，69.6%**。
+
 ### 2026-08-08｜desc-restyle｜w2-088 上線（pop-punk／emo／post-rock／indie 50 張）
 
 **改動摘要**
