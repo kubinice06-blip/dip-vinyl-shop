@@ -1,5 +1,54 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-08｜desc-restyle w2-092 上線；獎項「幾座、算誰的」連錯兩批
+
+- Repo：`dip-vinyl-shop`（僅本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。wave2 累計 92 批 / 4,565 張（71.9%）。
+- 題材：英式 indie（Kasabian／Two Door）、美加獨立（Decemberists／Magnetic Fields／Destroyer／New Pornographers）、
+  世界音樂（Bombino／Songhoy Blues／Elza Soares／Natalia Lafourcade／Altın Gün）、日本（Cornelius／Kikagaku Moyo）、
+  極端金屬與 doom（Gorguts／Deafheaven／Alcest／Batushka／Panopticon／Mgła／Saint Vitus／Baroness）。
+
+#### 研究層推翻我的特注四處
+
+| 卡 | 我寫錯的 | 查證結果 |
+| --- | --- | --- |
+| The New Pornographers《Whiteout Conditions》 | 「Neko Case 缺席」 | 她仍在陣中，主唱〈Play Money〉；首度缺席的是 Dan Bejar 與鼓手 Kurt Dahle |
+| The New Pornographers《In the Morse Code…》 | 「與親人辭世有關」 | 查無任何來源，整條角度捨棄；改走 Bejar 的退出在本作新聞稿才正式確認為無限期 |
+| Baroness《Stone》 | 「陣容變動」 | 正好相反：樂團史上首度連兩張維持同一陣容；本作也打破了色彩命名傳統 |
+| Altın Gün《On》 | 「查葛萊美入圍」 | 本作從未入圍，入圍的是隔年的《Gece》（第 62 屆，未得獎） |
+
+另有兩處研究層自己砍掉沒來源的說法：Destroyer《Kaputt》的「Bejar 錄唱時的身體狀況」查無來源、
+Songhoy Blues 那條音樂禁令的施行組織查不到確切名稱（只寫概括說法，不指名）。
+
+#### 人工審稿修 5 處，兩處是獎項的老問題換了個形式
+
+**Natalia Lafourcade《Hasta la Raíz》在第 16 屆拉丁葛萊美是五座不是四座，而且拆法錯了。**
+研究稿寫「專輯 2 項＋單曲 2 項」，實際是**專輯 2 項**（最佳另類音樂專輯、最佳錄音工程專輯）
+**＋同名曲 3 項**（年度製作、年度歌曲、最佳另類歌曲），另入圍年度專輯未得獎。
+**年度製作（Record of the Year）頒給的是錄音、不是專輯**——這是前一批「入圍寫成得獎」之後的變形：
+獎項對不對只是第一層，**「幾座」與「算在專輯還是單曲頭上」是第二層，同樣要逐項查。**
+
+其餘四處：
+
+- **Françoise Hardy《Entr'acte》不是「同一年裡的第二張」**，《Message personnel》是 1973 年 11 月、本作 1974 年 11 月。
+- **Kikagaku Moyo《House in the Tall Grass》是第三張不是第二張**（研究稿誤植）。
+- The Decemberists〈12/17/12〉：歐巴馬的 Newtown 追思演說在 12 月 16 日，不能把 12/17 寫成「演說當天」，
+  改成不指定日期的敘述。
+- Saint Vitus《Lillie: F-65》的藥物成分只見於粉絲百科交叉彙整、且與已知成分對不上，改成不指名成分，
+  只留有出處的膠囊外觀、印字與 Wino 的說法。
+
+#### 一項卡池裁定
+
+**Cornelius《Ethereal Essence》查出不是新錄專輯**，而是把近年的委託配樂、展覽用曲與限量黑膠／卡帶稀有曲
+重編彙整的 30 週年紀念輯。依 08-02 常設裁定，雜牌彙編要移除、但「把散落曲目首度彙整的權威選輯」有定位者保留——
+這張是本人企劃、自家脈絡，**判定保留**，正文據實寫成彙整輯（比照 w2-088 的 `this will destroy you|young mountain`
+查出是 EP 就照寫 EP）。
+
+#### 主要檔案
+
+`desc-restyle/batches/w2-092-kv.json`、`desc-restyle/batches/output/w2-092-out-{1,2}.json`、
+`desc-restyle/progress.json`。
+
 ### 2026-08-08｜desc-restyle w2-091 上線；一則錯誤的 hook 前提與一個 iTunes 假冠軍
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
