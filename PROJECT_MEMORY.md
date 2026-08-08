@@ -2221,6 +2221,52 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜w2-087 上線（黑金屬／doom／mathcore／metalcore 50 張）
+
+**改動摘要**
+w2-087 走完七步全程並推上 KV，verify-kv 50/50 一致。這批同藝人群組特別密（Meshuggah 5、Converge 4、
+Dillinger Escape Plan 4、Candlemass 4、Underoath 4、Mayhem 3、Satyricon 3、Katatonia 3、Thursday 3、
+Every Time I Die 3），一次釘下 14 條源流通論；merge 後確認切點乾淨，所有群組都完整落在同一半。
+
+**progress.json 資料修正**
+先前報「已完成 100 批」是把 wave1 的 12 批與兩個早期一次性批次（`001`、`test20`）一起算進去了，
+w2 系列本身當時是 86 批。另外發現 **17 批（w2-005…w2-021）的 `cards` 欄從未填寫**，
+導致進度百分比是靠誤差互相抵銷才湊近正確值。已依卡單檔案實算補齊全部欄位，
+之後 wave2 進度一律以「卡單檔案張數」為準。
+
+**研究層推翻主線（12 處）**
+- Mayhem《De Mysteriis Dom Sathanas》——**Dead 的人聲並不在這張上**，只有他生前寫的歌詞被沿用，
+  實際主唱是 Attila Csihar。這是流傳極廣的誤解。
+- Katatonia《Nightmares as Extensions of the Waking State》——不是未發行，2025-06-06 已由 Napalm 發行；
+  Anders Nyström 2025 年 3 月離團，這是創團 34 年來第一張他零參與的專輯。
+- Underoath《They're Only Chasing Safety》——Billboard 200 只到第 101 名，真正的商業故事是 2011 年的 RIAA 金唱片。
+- Thursday《A City by the Light Divided》——與 Victory 的糾紛與轉投 Island 發生在更早的《Full Collapse》之後。
+- Meshuggah——招牌低頻是七弦降弦模擬，真八弦要到 2006 年《Nothing》重製版才落實。
+- Pages——五人編制的爵士搖滾樂團，不是二人組、也不是 AOR。
+- Candlemass《Psalms for the Dead》——「最後一張」的宣告後來被 Leif Edling 撤回（2019 年又出新作）。
+- 另有 Agalloch《Ashes Against the Grain》查無 Billy Anderson 參與、Weakling 是先解散後發片、
+  Dillinger《Miss Machine》的主唱是網路徵集不是公開試唱、Converge《You Fail Me》是換廠牌首張但生涯第五張、
+  Windir 的 Hardanger 提琴與 Valfar 身故都查無與本作的綁定。
+
+**人工審稿修正（6 處）**
+1. Converge《You Fail Me》正文寫出「兩件事得分開算」——**這是把給寫作層的校對指示直接寫給讀者看**，
+   是校對痕跡的一種新變體（前幾批的變體是否定句），已改寫。
+2. Every Time I Die《Ex Lives》——John Christ 客座的是主奏吉他，研究稿誤植成「獻聲」。
+3. Satyricon《The Age of Nero》——「自《Rebel Extravaganza》以來挪威本土最低」查無來源，整條刪除；
+   補上可查證的第七張與先行單曲以補足字數。
+4. Drudkh《Autumn Aurora》——Supernal Music 是英國廠牌不是法國。
+5. 同卡「Drudkh 終其生涯未曾接受採訪」——樂團仍在活動，改為「至今」。
+6. 一張因修改而低於下限的卡補足字數。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-087-*`、`desc-restyle/batches/w2-087-kv.json`、
+`desc-restyle/progress.json`（新增 w2-087、補齊 17 批 cards 欄）、`desc-restyle/chk-splithooks.mjs`（重建）。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 50 張、字數 195–240；
+wrangler kv bulk put 回 Success；verify-kv 50/50 一致。
+wave2 進度：**87 / 128 批、4316 / 6348 張，68.0%**。
+
 ### 2026-08-08｜desc-restyle + dip-vinyl-shop｜w2-086 上線（doom／日本 post-rock／佛州死亡金屬／阿根廷搖滾）
 
 **改動摘要**
