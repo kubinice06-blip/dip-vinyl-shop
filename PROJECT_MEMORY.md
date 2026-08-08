@@ -2221,6 +2221,47 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle + dip-vinyl-shop｜w2-086 上線（doom／日本 post-rock／佛州死亡金屬／阿根廷搖滾）
+
+**改動摘要**
+w2-086（50 張）走完七步全程並推上 KV，verify-kv 50/50 一致。這是連號 rock 家族裡曲風跨度最大的一批，
+一次釘下九條源流通論（見 progress.json 的 note）。
+
+**卡池資料更正**
+`Sleep《Jerusalem》` 的年份 1996 查無任何對應版本——實際時序是 1994 年下半錄音、London Records 拒絕發行、
+樂團 1998 年解散並流出非官方剪輯版、1999 年才由 Rise Above 與 The Music Cartel 正式發行。
+**seed_cards.json 與預切卡單的年份已改為 1999**（首度正式發行年）。
+
+**研究層推翻主線（11 處）**
+The Raconteurs 從來沒有水星獎入圍（美國樂團無資格）；Camera Obscura《Underachievers》裡 Stuart Murdoch
+只拍了封面照，他製作與編弦樂的是 2001 年首張；Number Girl 首張大廠作不是 Dave Fridmann 製作；
+Mono《You Are There》是與 Albini 的第二次合作不是首度；toe 首張全長的原始廠牌是 Catune 不是 Machupicchu；
+Morbid Angel《Altars of Madness》的 Tom Morris 是工程師、executive producer 是 Digby Pearson；
+Cerati《Bocanada》是生涯第二張個人專輯（但確為 Soda Stereo 解散後第一張）；Soft Machine 的 Kevin Ayers
+離團後要到 1970 年才組 The Whole World；Electric Wizard《Wizard Bloody Wizard》的「現場同步收音」查無硬來源；
+Sheena Ringo 那張的「整張大量倒放」也查無佐證；Obituary《Cause of Death》的封面是 Michael Whelan
+誤寄的畫作，原本要給 Sepultura《Beneath the Remains》。
+
+**人工審稿修正（6 處）**
+1. **Kings of Leon《Only by the Night》——研究層把獎項報錯了**：專輯只在第 51 屆「入圍」最佳搖滾專輯、
+   並未得獎；真正得獎的是〈Sex on Fire〉（第 51 屆最佳團體搖滾演唱）與〈Use Somebody〉（第 52 屆年度最佳唱片、
+   最佳搖滾歌曲）。**這是今天第三次「獎項入圍／得獎搞混」，值得列為固定覆核項。**
+2. Sheena Ringo 卡的 hook 立了「一句比較氣味的話變成專輯標題」這個懸念，正文卻只寫了原本的工作名稱、
+   沒交代那句話是什麼——**hook 懸念沒收尾**，補上實際內容（爭論精液氣味像水垢還是像栗子花）。
+3. Number Girl《Sappukei》的 hook 寫成「片名意思是乏味無趣」，「片名」在中文指電影名，改為「專輯名」。
+4. Sleep《Jerusalem》正文出現「官方盜版」這種自相矛盾的說法，改為「以非官方管道流出」。
+5–6. 三張因修改而超標的卡回頭修剪。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-086-*`、`desc-restyle/batches/w2-086-kv.json`、
+`desc-restyle/batches/wave2/w2-086-cards.json`、`desc-restyle/progress.json`、
+`dip-vinyl-shop/seed_cards.json`（Jerusalem 年份）。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 50 張、字數 178–240（含 1 張 thin 卡）；
+wrangler kv bulk put 回 Success；verify-kv 50/50 一致。
+進度：**100 批 / 4088 張完成，剩 42 批 / 2082 張，66.3%**。
+
 ### 2026-08-08｜desc-restyle｜w2-085 上線（合成流行、千禧流行、英國 post-punk revival）
 
 **改動摘要**
