@@ -2221,6 +2221,45 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-08｜desc-restyle｜w2-088 上線（pop-punk／emo／post-rock／indie 50 張）
+
+**改動摘要**
+w2-088 走完七步全程並推上 KV，verify-kv 50/50 一致。八條通論分派完成；Isis 兩張被切點劈開
+（《Oceanic》帶著 post-metal 通論在 writer-1、《Panopticon》在 writer-2），已在兩份派工寫明，未重演漏寫。
+
+**研究層推翻主線（8 處）**
+- Simple Plan《No Pads, No Helmets... Just Balls》——專輯名出自橄欖球圈的挑釁標語；
+  取自電影《A Simple Plan》的是**團名**，兩者不同來源。
+- Dashboard Confessional《Dusk and Summer (Now Is Then Is Now)》——不是重發或紀念版，
+  是 Carrabba 主導、把整張以木吉他獨奏重新演繹錄製的作品，判定有獨立定位、保留。
+- This Will Destroy You《Young Mountain》——2005 年原版是 EP（2006 年重發才擴充），
+  且與 Explosions in the Sky 並非同鄉（San Marcos vs Midland／Austin）。
+- Rufus Wainwright《Release the Stars》——Neil Tennant 掛的是 executive producer，
+  唱片 producer 掛名的是 Wainwright 本人。
+- Happy End 兩張——「日本語ロック論爭」是 1970 年同名首張挑起的，《風街ろまん》是延續與證明；
+  1973 年那張同名專輯是樂團 1972 年底解散**之後**受邀重聚錄的告別作，不是「錄完才解散」。
+- Scorpions《Fly to the Rainbow》——不是 Uli Jon Roth 加入既有樂團，而是 Rudolf Schenker 與
+  Klaus Meine 併入 Roth 的 Dawn Road、沿用 Scorpions 這個團名。
+- Xiu Xiu 團名所本的電影《天浴》是 1998 年不是 1993 年；Sparklehorse《It's a Wonderful Life》
+  裡 Nina Persson 的第二首合作曲是〈Apple Bed〉。
+
+**人工審稿修正（4 處）**
+1. Player《Player》的 hook 原寫〈Baby Come Back〉是「1978 年的第一首冠軍曲」——它是 1 月 14 日才登頂，
+   元旦那週的冠軍另有其歌，整句改寫。
+2. Balmorhea 卡並列「客座人聲」與「整張沒有歌詞」，讀起來自相矛盾（實際是無詞人聲），已改寫。
+3. Alkaline Trio 卡的「三只鬧鐘」是簡體量詞用法，繁中應為「三個」——研究稿與成稿一併修。
+4. **writer-1 自報字數 205–239，實測有 7 張超過 240（最高 272）**。這是代理自檢不可信的又一例，
+   主線的字數複驗不能省。
+
+**主要檔案**
+`desc-restyle/batches/{research,hooks,input,output}/w2-088-*`、`desc-restyle/batches/w2-088-kv.json`、
+`desc-restyle/progress.json`。
+
+**驗證結果**
+qa-batch out／qa-check-research／fix-spacing 全數零標記；build-final 50 張、字數 197–240；
+wrangler kv bulk put 回 Success；verify-kv 50/50 一致。
+wave2 進度：**88 / 128 批、4366 / 6348 張，68.8%**。
+
 ### 2026-08-08｜desc-restyle｜w2-087 上線（黑金屬／doom／mathcore／metalcore 50 張）
 
 **改動摘要**
