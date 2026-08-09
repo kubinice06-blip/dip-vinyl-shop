@@ -1,5 +1,96 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-09｜desc-restyle w2-107 至 w2-109 上線（148 張）；卡池移除兩張、訂正三筆
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 三批分別 49／49／50 張全部上線，`verify-kv.mjs` 逐批一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 109 批 / 5,459 張（86.1%）。**
+
+#### 卡池：移除兩張、訂正三筆
+
+- **重複卡（w2-107）**：Earl Sweatshirt 同一張唱片的長短標並存
+  （`i don't like shit, i don't go outside` 與 `…: an album by earl sweatshirt`）。
+  **保留短標**——副標與藝人欄完全重複，且合卡池短標慣例（比照 aespa《LEMONADE》前例）。
+- **非官方彙編（w2-108）**：XXXTENTACION《/r/XXXTENTACION Presents: Xxxtra Rare Tracks, Volume One》——
+  經 DatPiff 上架、源自同名 Reddit 版彙整、YouTube 版標「Unofficial」、官方作品列表未收錄，
+  判定為無歷史定位的粉絲雜牌彙編，依常設裁定移除。
+- 兩張都已備份 seed_cards、逐筆確認只動到目標（7,513 → 7,511）、卡單與 restyle-tasks 同步、KV 鍵刪除並確認 404。
+- **年份三筆**：Brand Nubian《In God We Trust》1992 → 1993、Crush《Crush on You》2013 → 2014
+  （2013 是先行單曲）、另 w2-108 的 Destiny's Child 已於前一輪處理。
+
+#### 研究層推翻主線 32 處，三類最值得記
+
+**一、作品性質整個判錯（8 處）**：`earl sweatshirt|pompeii // utility` 不是個人專輯而是三方合作雙專輯、
+他只做 UTILITY 那一半；Skepta《Insomnia》是與 Chip、Young Adz 的三人合作；《Microphone Champion》是第二張；
+Pete Rock《Petestrumentals》**不是**純器樂（真正的純器樂是十四年後的續作，兩張分軸對調）；
+Gucci Mane《The State vs. Radric Davis II》官方定位是 commercial mixtape；
+Big K.R.I.T. 的《K.R.I.T. Wuz Here》與《Return of 4eva》都是免費混音帶；Busdriver《Thumbs》亦然。
+
+**二、廠牌歸屬查錯（5 處）**：Fool's Gold 不是搖滾起家、Danny Brown《Old》不是大廠出道作；
+Roc Marciano《Reloaded》仍是 Decon 發行、還不是自營；clipping.《CLPPNG》是他們在 Sub Pop 的**第一張**（不是第二張）；
+**Amoeba Culture 2006 年 9 月才創立**——Dynamic Duo《Taxi Driver》（2004）當時掛 EMI Music Korea、
+Beenzino《12》掛 Illionaire Records，兩張都與該廠牌無關，**直接推翻我對 w2-109 韓國卡的整個框架**。
+
+**三、把當事人沒說過的話寫成事實（2 處）**：Usher **本人否認**《Raymond v Raymond》直接寫離婚，
+來源支持的只是「被解讀為與離婚相關」；Q-Tip 在 Mobb Deep《The Infamous》**並未掛執行製作**
+（他做的是製作與混音），可查證的說法是他上一次掛此頭銜為 2014 年。
+
+#### 敏感內容的處理（這三批特別多）
+
+- **Ka（w2-107，六張）**：2024-10-12 辭世、享年 52、死因未公開。六張都不寫成遺作；
+  《The Thief Next to Jesus》2024-08-19 發行、**早於辭世約兩個月，是他生前完成並發行的最後一張**，
+  提及辭世須標先後；死因只寫「未對外公開」、不補寫。
+- **Nicki Minaj《The Pinkprint》**：研究稿裡的具體私人經歷（喪親自責、墮胎）**只有單一來源**。
+  「題材無禁區」的前提是要有來源，這種程度的私人事實單一來源不足——**只寫「轉向自傳式書寫」的定性敘述**。
+- **XXXTentacion《17》**：辭世與生前刑事指控與該作無直接綁定，**一律不寫**；只有《Bad Vibes Forever》寫辭世後發行。
+- **Noname《Sundial》**：客座 verse 引發的反猶爭議，寫成她**拒絕為不是自己寫的 verse 道歉**、
+  並說明她反對的是白人至上主義體制——這是當事人的實際立場，寫反就是扭曲。
+- **Bun B 兩張**：都收了 Pimp C 生前錄音、辭世後才發行的曲目，《Trill O.G.》還同時有 2Pac 的生前錄音，
+  **時序必須標明，否則讀起來像死後合成**。
+- G-DRAGON 的抄襲爭議、Brand Nubian 的歌詞爭議、E SENS 與前東家的糾紛、Gucci Mane 的司法紀錄
+  ——一律中性陳述、不評斷，查不到最終結果就明講。
+
+#### 人工審稿（三批合計修 14 處）
+
+- **「廠牌史上第一張」第六與第七次**：Ice-T《Rhyme Pays》寫「Sire 與華納旗下第一張嘻哈專輯」——查無來源。
+  真正有記載的是「第一張加註 Parental Advisory 警語的嘻哈專輯」，而那條研究層已自行降級成「常被列為之一」。
+  **等於寫作層把一個已降級的宣稱，改頭換面成另一個沒查證的宣稱。**
+  對照組：Ab-Soul《Control System》的「TDE 史上第一張 iTunes 冠軍」查證**成立**——這是該句型第一次通過查核。
+- **校對痕跡第四型第四、五次**：billy woods《GOLLIWOG》寫「並無他本人的說法可循」、
+  Mos Def《True Magic》寫「但查無他本人的直接說法」——都是把研究限制講給讀者聽。
+- **hook 本身寫錯事實**：Big K.R.I.T.《Return of 4eva》的 hook 寫「還沒簽進大廠的新人」，
+  但簽約在本作之前（前一卷混音帶換來的）。改成「簽了大廠卻還沒發正規專輯」，三層同步。
+- **序數與地名錯誤**：Pretty Ricky《Late Night Special》是第二張不是第三張（hook 的「三張唱片裡」也不成立）；
+  MC Lyte《Eyes on This》封面地點寫成 2010 年才成立的布魯克林大橋公園。
+- **研究稿內部矛盾**：G-DRAGON《Übermensch》並列「Circle 五日 62.4 萬」與「Hanteo 首日 63.9 萬」，
+  並排讀起來像首日超過五日，只留一個。
+- 另有中文片名錯（GZA 那張是《笑俠楚留香》不是《新流星蝴蝶劍》）、用字錯（采樣 → 採樣）、
+  hook 懸念未收尾（Field Mob《613》立了「鬥出一紙 MCA 合約」卻沒交代經過）等。
+
+#### 三條寫進常設檔的規則
+
+1. **派工措辭範式**（`writer-base.md`）：反同構條款一律寫
+   **「某某骨架在本批只准 N 張、指定給某某卡」**，**不要寫「某某已在別批寫過所以不准寫」**——
+   後者與已取消的題材配額難以分辨，w2-101 與 w2-108 的寫作代理各回報過一次衝突（兩次判斷都正確，
+   但每次都得花一輪釐清）。要排除舊卡角度就具體寫出那張舊卡的切入點。
+2. **帳本的廠牌歸屬只是規劃時的粗略印象**（`HIPHOP_LEDGER.md`）：派工前要讓研究層反查廠牌成立年，
+   別把整組卡掛在一個沒查過的廠牌上。109 那列的「韓國獨立與 Amoeba Culture」就是這樣寫錯的。
+3. **代理回報「已寫檔」不等於檔案存在**（前一輪已記）：w2-106 的 hook 代理回報三檔都寫了，
+   實際缺一檔；`qa-batch.mjs hooks` 的缺檔檢查擋下了那次，**合併前一律要跑**。
+
+#### 字元預算偏差方向（七批實測）
+
+w2-103 低估 13 → w2-104 高估 20–30 → w2-105 略高估 → w2-106 低估 5–20 → w2-107 低估 20–30 →
+w2-108 單向超標 → w2-109 雙向都有。**方向完全隨批次內容擺盪，係數不可沿用**；
+這一輪三批合計只有 Kelela《Raven》一張差 1 字掉出下限、且在寫作層當場補回，
+證明「驗區間而非只防超標」那條有效。
+
+#### 主要檔案
+
+`desc-restyle/HIPHOP_LEDGER.md`、`desc-restyle/prompts/writer-base.md`、
+`desc-restyle/batches/w2-10{7,8,9}-kv.json`、`desc-restyle/batches/output/w2-10{7,8,9}-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-09｜desc-restyle w2-104 至 w2-106 上線（150 張）；卡池標題訂正兩筆
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
