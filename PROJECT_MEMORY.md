@@ -1,5 +1,115 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-09｜desc-restyle w2-113 至 w2-116 上線（197 張）；electronic 家族開跑；店主兩項裁定
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 四批分別 49／50／50／49 張全部上線，`verify-kv.mjs` 逐批一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 116 批 / 5,799 張（91.6%）。連同同日上線的 w2-110–112，本輪共完成 110–116 七批、340 張。**
+
+#### 店主兩項裁定
+
+**一、單曲卡：重要的一律保留。** 卡片指向的不是專輯而是一支單曲時，**只要那支單曲本身有歷史定位就保留**，
+正文照實以單曲的框架書寫（發行形式、廠牌目錄編號、B 面），**不得為了湊成專輯而虛構曲目**。
+**電子樂特別多這種卡**——house、techno、jungle、dubstep 的關鍵作品有很大一部分只以 12 吋單曲存在。
+（店主指出這條先前已裁定過，但 progress notes、本備忘錄與 skill 檔裡都沒有留下記錄，本輪因此被當成新問題請示了一次。
+現已寫進 skill 檔的「卡池品質」常設裁定清單、`ELECTRONIC_LEDGER.md` 與 progress notes 三處。）
+實例：w2-114 的 `model 500|no ufo's` 是 1985 年 4 月 Metroplex 目錄第一號的 12 吋單曲、查無同名專輯，**保留並照實寫成單曲**。
+
+**二、樂評本身就是這張卡最重要的內容時，寫進去**（「樂評媒體名不進正文」那條的窄例外）。
+**判準只有一條：把樂評整條拿掉之後，這張卡還剩不剩得下一個故事。**
+剩得下就照舊不寫；剩不下就寫——冷門作品的歷史定位常常只存在於樂評裡，它沒有榜單、認證或獎項可用。
+寫法：優先寫評語的內容而非分數；那條定位非得靠出處才成立時（年度榜、票選、十年百大）**可以具名該媒體**，
+因為去了頭就變成「一份清單第 81 名」這種無意義的數字；**星等與分數本身仍一律不寫**；一張卡最多用一次。
+起因是 w2-115 有多張冷門電子樂卡因禁令只剩發行事實（Freescha 那張只寫得出 187 字、貼著下限）。
+**首次實測兩組寫作代理都極保守**：w2-116 的 writer-2 判定 0 張適用，writer-1 標的 3 張其實都是舊規則本來就允許的不具名描述。
+
+#### electronic 家族開跑：`ELECTRONIC_LEDGER.md` 新建（w2-113–127，750 張）
+
+十六條源流的逐批位置一次規劃完畢。本家族與 hiphop 家族最大的不同是**化名鏈**：
+字串比對只抓到 1 組跨批同藝人，但電子樂一人多名是常態——Larry Heard／Mr. Fingers／Fingers Inc.（113/124/128）、
+Juan Atkins／Model 500／Cybotron（114/124）、Richie Hawtin／Plastikman（114/124）、
+Vladislav Delay／Luomo（117/122）、Basic Channel／Rhythm & Sound（113/127）分別橫跨兩到三批，**掃描完全看不到**。
+帳本已列表要求派工前逐條反查，並裁定「化名本身只准三張當主結構」。
+
+另定六條高風險骨架，其中**「Kraftwerk 的影響」整個家族一律不得當主結構**。
+
+**「某某是這個類型的第一張唱片」的反查規則見效顯著**——四批合計擋下：Warp 的「第一批發行」（實為第三張專輯，且 Warp 有三位創辦人）、
+Fifty Foot Hose 的「史上第一張電子搖滾專輯」、YMO《BGM》的「最早採用 TR-808」（坂本龍一《B-2 Unit》更早）、
+《Technodelic》的「取樣的早期使用」（《My Life in the Bush of Ghosts》同年更早）、
+Mort Garson 的「西岸第一張全 Moog 專輯」（Beaver & Krause 1970 年更早）、Dabrye 的「廠牌首張全長」。
+**這條要固定保留給整個 electronic 家族。**
+
+#### 人工審稿抓到的三類錯誤
+
+**一、hook 前提把專有名詞的類別搞錯**（w2-113）：Orbital《In Sides》寫「開場曲的電力全部來自一台音響擴大機」，
+研究稿把「Cyrus」讀成音響品牌——實際上那是**綠色和平組織那台行動太陽能發電機的名字**，
+〈The Girl with the Sun in Her Head〉是在他們的巴士上全程只用太陽能錄成的。
+**字面上本來就有破綻（擴大機不是電源），但讀起來像器材規格，研究層與寫作層都放過去了。**
+
+**二、研究稿內部互相矛盾**（w2-114）：Laibach《The Sound of Music》的 facts 寫「2015 年那場平壤演出是慶祝北韓建國 70 週年」，
+**但同一份 facts 的下一條就提到該場演出拍成的紀錄片叫《Liberation Day》**。北韓建國是 1948 年，
+2015 年 8 月是朝鮮半島脫離日本殖民統治 70 週年，演出日期 8 月 19 日正好落在光復節之後。
+**教訓：審稿時要讓同一張卡的 facts 互相對照。**
+
+**三、跨批矛盾**（w2-115）：Luke Vibert《YosepH》把 Peter Walker 也寫成「Warp 共同創辦人」，
+但 **w2-113 才查證過 Warp 的三位創辦人是 Steve Beckett、Rob Mitchell 與 Robert Gordon**。
+根因是研究稿那句的修飾範圍有歧義。**同一家族連跑時，前幾批查證過的「集體事實」要當成後續批次的既有知識來對照。**
+
+另修：Porter Ricks 團名出處的中文片名掛錯（Porter Ricks 出自 1960 年代影集《Flipper》，
+《海豚的一天》是 1973 年電影 The Day of the Dolphin）、Jade 的 hook 懸念沒收尾、Poliça 被寫成個人歌手（實為樂團）。
+
+#### 研究層推翻主線的重點（四批合計四十餘處）
+
+- **廠牌歸屬錯了五處**：Moodymann《Mahogany Brown》是 Peacefrog 不是 KDJ；Metro Area 是 Source 與 Environ 不是 DFA；
+  Pinch 自營的是 Tectonic、Punch Drunk 是 Peverelist 的；Surgeon《Force + Form》是 Tresor 不是 Downwards；
+  Robert Hood《Minimal Nation》最初是透過 Jeff Mills 的 Axis（AX 007）發行、M-Plant 當時只是錄音室名稱。
+- **Wire 改名 Wir 是鼓手 Robert Gotobed 離團**，不是常被誤傳的 Bruce Gilbert。
+- **Zero 7 兩人是 RAK Studios 的錄音工程師**，不是 Radiohead 或 Nigel Godrich 的助理；
+  「Zero 7」這個名字首度使用是 1997 年替〈Climbing Up the Walls〉做混音重製那次；團名源自宏都拉斯一間叫 Cero Siete 的酒吧。
+- **Ulrich Schnauss 本人否定樂評把他與 My Bloody Valentine 的比較**（說那「相當荒謬」），他講的是「讓吉他聽起來像合成器、也讓合成器聽起來像吉他」。
+- **Chris Horne 不是 Boards of Canada 的正式團員**，是成軍前 Hexagon Sun 圈子的參與者，2002 年 Warp 重發《Twoism》時主動要求拿掉掛名。
+- **Andrés 是 Slum Village 與 J Dilla 的駐團 DJ**，不是 Moodymann 的；〈New for U〉不在《II》。
+- **《Metropolis》與《Metropolis Metropolis》是兩件不同的默片配樂**（2000 Tresor／2023 Axis）。
+- 《Human After All》廣為流傳的「六週錄完」與可查證的錄製區間（2004-09-13 至 11-09，約八週）對不上。
+- 「French touch」一詞是樂評人 Martin James 1996 年為《Super Discount》寫評論時創造的。
+- 三張已發行卻被我當成未上市：A$AP Rocky《Don't Be Dumb》（2026-01-16）、Ski Mask《11th Dimension》（2024-06-07）、
+  Jeff Mills《The Trip to Vega》（2026-06-19）；另 Seefeel《Sol.hz》確實存在（2026-05-01 Warp）。
+
+#### 卡池：移除兩張、訂正一筆
+
+- **808 State《Ninety》**（w2-113）：與《90》是同一張 1989 年唱片。封面印「808:90」、書背印「Ninety」，
+  維基條目名與封面都用「90」，依短標慣例保留《90》。
+- **Jeff Mills《Waveform Transmission, Volume 1》**（w2-116）：與《Waveform Transmission Vol. 1》是同一張 1993 年唱片。
+- **年份訂正**：Jeff Mills《Metropolis Metropolis》2000 → 2023。
+- 兩次移除都備份 seed_cards、以字串移除保留單行壓縮格式、逐筆確認只動到目標、卡單與 restyle-tasks 同步、KV 舊鍵刪除並確認 404。
+  7,510 → 7,508。
+- **待處理**：w2-128 的 `ice?|rhyme pays`（藝人字串含私有區字元 U+E45F，是 `Ice‐T｜Rhyme Pays` 的編碼損壞重複卡）。
+
+#### 字元預算：四批實測後，可繼承的規則收斂成一條
+
+嘻哈家族的上浮幅度兩度上調（15 → 30）之後，electronic 家族又推翻了「樂團卡／個人卡」的分類法
+（w2-113 說個人卡高估、w2-114 說兩類齊低估）。四位寫作代理獨立驗證出更準的變數：
+**這張卡會點到幾個拉丁專名**——多的那組手算會低估、少的那組方向不定且**風險常在下限**。
+但 w2-114 與 w2-115 連幅度都對不上（+35 以上 vs 中位 +8），
+**所以只有「方向」可繼承，任何數字都不行**。已把 `writer-base.md` 改成這個版本，並補上：
+器材型號在字元計數上等同專名（`Roland TR-808` 13）、**最容易漏掉的是曲名**（〈Are We Here? (Criminal Justice Bill?)〉36）、
+**hook 若指向超長專名要先留 50 字元**（w2-115 的 Groove Armada 那張，48 字元的專名佔掉整卡兩成）。
+更根本的做法是動筆前就把專名壓下來——客座留 2 位、廠牌留 1 家、榜單留 1 個。
+
+#### 其他寫進常設檔的規則
+
+- `research-base.md`：**facts 欄只放事實、校對說明一律放 notes**。起因是 `merge-writer-input.mjs` 會把整個 facts 陣列
+  帶進寫作層輸入檔，w2-112 有 19 條 facts 帶著校對括號（榜名沿革、標 uncertain、`【最高優先查證結果】`），
+  主線得在合併前逐條清洗。**該規則寫入後，w2-114 五份研究稿的 facts 一次就全部乾淨。**
+- `hook-base.md`：note 的寫法統一成正面表述（前一輪已改）；**hook 層也吃「星等與評分不進正文」那條**
+  ——w2-112 有一張 hook 寫進了樂評分數，寫作層動不了 hook，只能由審稿層三層同步改掉。
+
+#### 主要檔案
+
+`desc-restyle/prompts/{writer,hook,research}-base.md`、`desc-restyle/ELECTRONIC_LEDGER.md`、
+`.claude/skills/dip-desc-restyle/SKILL.md`（單曲卡常設裁定）、
+`desc-restyle/batches/w2-11{3,4,5,6}-kv.json`、`desc-restyle/batches/output/w2-11{3,4,5,6}-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
 ### 2026-08-09｜desc-restyle w2-110 至 w2-112 上線（142 張）；hiphop 家族完成；店主新裁定「一張卡只講一個主故事」
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
