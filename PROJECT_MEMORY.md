@@ -1,5 +1,88 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-09｜desc-restyle w2-104 至 w2-106 上線（150 張）；卡池標題訂正兩筆
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 三批各 50 張全部上線，`verify-kv.mjs` 各 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 106 批 / 5,311 張（83.8%）。**
+
+#### 店主兩項裁示
+
+1. **標題贅字直接改、不用問。** 已執行兩例：
+   - `mary see the future|cheers` → 官方標題是《Cheer》（沒有 s）。卡池欄位、8 個 desc-restyle 檔與 `restyle-tasks.json` 同步；
+     KV 寫入新鍵後刪舊鍵，舊鍵確認 404、w2-099 全批 50/50 仍一致。正文原就未印出專輯標題，內容一字未改。
+   - `busta rhymes|extinction level event 2 the wrath of god (the leak)` → 《Extinction Level Event 2: The Wrath of God》。
+     「(The Leak)」是串流平台為外流版另編目錄造成的贅綴、非正式標題；卡池無重複卡。新鍵隨 w2-105 上線、舊鍵已刪並確認 404。
+2. **Binary Star 兩張都保留**（《Waterworld》與《Masters of the Universe》是同一批素材的原始自製版與換名重發版），正文各寫一端。
+
+#### 帳本錯誤：跨批同藝人漏抓一組
+
+先前寫進 `HIPHOP_LEDGER.md` 的「101–112 跨批同藝人 0 組」**是錯的**。
+`ice-t`（w2-101，ASCII 連字號）與 `ice‐t`（w2-105，**U+2010 連字號**）是同一位藝人、兩種 key 拼法，純字串比對看成了兩個人。
+以 NFKC 正規化並統一連字號與引號後重掃，**只有 Ice-T 這一組**，帳本其餘部分無誤。
+已把修正、教訓與一張「含非 ASCII 字元的藝人字串」對照表寫進帳本
+（`mýa`／`suprême ntm`／`destiny’s child` 彎引號／`ice‐t` 與 `g‐dragon` 的 U+2010／`dälek`），
+並要求各批的 key 一律從卡單檔逐字複製、不可自行打字。
+
+#### 「廠牌史上第一張」累計到第六次
+
+w2-097、100 之後，w2-101 一批抓到三處，w2-105 再抓到一處：
+
+| 卡 | 查證結果 |
+| --- | --- |
+| Ice-T《Rhyme Pays》 | 正文寫「Sire 與華納旗下第一張嘻哈專輯」——**查無來源**。真正有記載的是「第一張加註 Parental Advisory 警語的嘻哈專輯」，而那條研究層已自行降級成「常被列為之一」（Too $hort 1985 年已有類似警語）。**等於寫作層把一個已降級的宣稱，改頭換面成另一個沒查證的宣稱**，整條捨去 |
+
+**這是同一類錯誤第六次出現，而且防線已經拉到研究層。下一步應考慮在機器 QA 加一條「廠牌＋第一張／首發」的樣式掃描。**
+
+#### 研究層推翻主線的三次連鎖錯置（w2-106，Big Daddy Kane 七張）
+
+我把三件事全排錯了，而且環環相扣：
+《Taste of Chocolate》**查無拳擊人物客座**（真正的資深靈魂樂客座是 Barry White）；
+**《Looks Like a Job For…》才是 Cold Chillin' 的最後一張**（不是《Daddy's Home》）；
+「日後大咖客座」屬於**《Daddy's Home》**——當時沒沒無聞的 **Jay-Z** 在 DJ Premier 製作的〈Show & Prove〉裡。
+等於這位藝人七張的分軸有將近一半要重排。**特注寫成問句而非肯定句的價值就在這裡。**
+
+其他重要推翻：〈Dance with the Devil〉收在《Revolutionary Vol. 1》不在 Vol. 2；
+〈Alphabet Aerobics〉不在《Blazing Arrow》（在 1999 年的 EP《A2G》）；
+`timbaland|indecent proposal` 實為 Timbaland & Magoo 雙人組第二張；
+`geto boys|making trouble` 發行時團名拼作 **Ghetto Boys**；
+Ja Rule《Pain Is Love 2》發行時**人在獄中**；UGK《Dirty Money》的 Pimp C 入獄是**發行之後兩個月**；
+DJ Krush 兩張 1994 年作品是**完全獨立的兩張**；Paul Wall《Chick Magnet》是**個人首張正規專輯**；
+AI **不是在美國長大**、〈Story〉屬下一張；Pretty Ricky **不是兩對兄弟**；Lloyd《Street Love》客座是 **Lil Wayne**。
+
+#### 人工審稿（三批合計修 16 處）
+
+- **校對痕跡第四型再現**：Mos Def《True Magic》寫「但查無他本人的直接說法」——把研究限制講給讀者聽（w2-099、100 同型）。
+- **hook 懸念沒收尾兩處**：Heavy D《Big Tyme》承諾白金卻只寫到金唱片（根因是我禁寫白金認證日期，寫作層連白金本身一起省了）；
+  Field Mob《613》立了「鬥出一紙 MCA 合約」卻沒交代經過。
+- **序數錯誤**：Pretty Ricky《Late Night Special》是第二張不是第三張，hook 的「三張唱片裡」也不成立。
+- **中文片名錯**：GZA《Legend of the Liquid Sword》寫成《新流星蝴蝶劍》，實為《笑俠楚留香》（1993，王晶自編自導、郭富城飾楚留香）。
+- **廠牌錯置**：DJ Krush《Cosmic Yard》的 Gamma Proforma 只是歐洲授權方，主廠牌是日本 Es.U.Es Corporation。
+- **來源衝突不寫**：Marques Houston 的《Sister, Sister》參演季數（四季與五季兩說）。
+- 另有音樂人名中文音譯（惠妮休斯頓 → Whitney Houston，機器 QA 沒抓到）、Mo'Wax 拼法批內不一致、
+  代名詞所指不明、hook 與正文邏輯打架（Oh No 的「全數三國」vs 正文四國）等。
+
+#### 卡池訂正
+
+年份四筆：Mobb Deep《Amerikaz Nightmare》2003 → 2004、J Dilla《The Diary》2015 → 2016、
+Destiny's Child 同名出道作 1997 → 1998（另 w2-101 已改三筆）。標題兩筆見上。
+
+#### 兩條寫進 base 檔的常設規則
+
+1. **字元預算的偏差是雙向的**（`writer-base.md`）。四批實測：w2-103 低估約 13、w2-104 高估 20–30、
+   w2-105 略高估 5–15、w2-106 又低估 5–20。**方向隨批次內容擺盪，不可沿用上一批的修正係數**；
+   預算表要驗的是「落在 180–240 區間內」，估值低於 200 就先想好補哪一格。
+   w2-105 的 writer-2 回報這條在三張卡上實際生效、沒掉出下限。
+2. **代理回報「已寫檔」不等於檔案存在**。w2-106 的 hook 代理回報三檔都寫了，
+   但 `w2-106-hooks-c.json` 實際不存在（該檔 mtime 晚於主線去信時間）。
+   `qa-batch.mjs hooks` 的缺檔檢查擋下了這次——**合併前一律要跑**。
+
+#### 主要檔案
+
+`desc-restyle/HIPHOP_LEDGER.md`、`desc-restyle/prompts/writer-base.md`、
+`desc-restyle/batches/w2-10{4,5,6}-kv.json`、`desc-restyle/batches/output/w2-10{4,5,6}-out-{1,2}.json`、
+`desc-restyle/progress.json`、`desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-09｜desc-restyle w2-103 上線；字元預算硬程序首次實測成功
 
 - Repo：`dip-vinyl-shop`（本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
