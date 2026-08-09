@@ -1,5 +1,148 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-09｜desc-restyle w2-103 上線；字元預算硬程序首次實測成功
+
+- Repo：`dip-vinyl-shop`（本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 50 張全部上線，`verify-kv.mjs` 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 103 批 / 5,111 張（80.6%）。**
+
+#### 字元預算硬程序：一次就解決了反覆四批的老問題
+
+w2-102 的 writer-1 是 25 張裡 24 張超標、最高 363 字、兩輪重寫（w2-057、072、099 之後第四次）。
+把 `writer-base.md` 的「動筆前先想好」改成**五格字元預算表的硬程序**之後，
+**w2-103 兩組合計 50 張零超標、零回頭刪節。**
+
+有效的關鍵在兩組的回報裡講得很清楚：**砍內容發生在動筆之前，不是寫完之後。**
+writer-2 有 8 張在預算表階段就算出會爆（估 236–257 字），先砍專名格才寫第一個字；
+writer-1 有 5 張同樣如此（`steal this album` 預算階段點名到 8 個拉丁專名，先用「前東家」「那本書」替換）。
+
+**已補進 base 檔的安全邊際**：法語一類專名的空格與變音符號會讓手算低估約 13 字元
+（`Qui sème le vent récolte le tempo` 吃 33 字元），單張含兩個以上 20 字元級專名時預算表上浮 10 字元。
+
+#### 研究層推翻主線 11 處，兩處影響卡片本身
+
+- **`timbaland|indecent proposal` 掛名錯了**——這其實是 **Timbaland & Magoo 雙人組的第二張**，
+  而卡池另有 `timbaland & magoo|welcome to our world` 是同一組合的第一張。
+  依 w2-098（Preoccupations／Viet Cong）的前例**掛名維持不動**，正文據實寫成雙人組第二張；
+  兩張的分軸因此改成：第一張寫「製作人跳到麥克風前」與相識，第二張只寫自己那張的事。
+- **`geto boys|making trouble` 發行時團名拼作 Ghetto Boys**，陣容也還是換血前的四人。
+  同樣掛名不動、正文寫出當年拼法。
+
+其餘九處：Sensational 的 WordSound 是布魯克林本地廠牌（不是日／歐廠牌）；RHYMESTER《EGOTOPIA》
+日語來源一致定位為**第二張**（英語資料常誤作首張全長）；MC Solaar《Prose Combat》**沒有美國製作人參與**；
+Monica 發《Miss Thang》時**是 14 歲**（自動摘要工具算成 15）；Toni Braxton《Libra》的「健康影響宣傳」
+**查無實據**；Willie D 離隊是**主動暫離、不是入獄**；Rick Rubin 1990 年的《The Geto Boys》與 1989 年的
+《Grip It!》**是兩張不同專輯**；《We Can't Be Stopped》取樣來源訂正為 Isaac Hayes 與 Graham Central Station；
+我派工詞裡的〈Fat Cats, Bigger Fish〉正確拼法是 **Bigga**。
+
+#### 人工審稿修 5 處
+
+| 卡 | 修了什麼 |
+| --- | --- |
+| BDP《Ghetto Music》 | **榜名錯置**——〈Why Is That?〉查證**沒有進過 Hot 100**，第 48 名是當年的 Hot Black Singles。與「1958 年前不得寫 Hot 100」同一類錯誤，研究稿寫錯、正文照抄 |
+| IAM《L'École du micro d'argent》 | 研究稿只寫「部分錄於紐約、Nick Sansano 參與」，**漏掉更重要的事**：紐約版樂團不滿意，後來改請 Prince Charles Alexander 在巴黎花 24 天重錄了約八成。另「發行 24 小時內認證金唱片」精確化為「發行當天」 |
+| IAM《Ombre est lumière》 | 銷量「突破 50 萬張」與法語來源的 45 萬餘張不符，依法語來源為準改寫（「法語饒舌史上第一張雙專輯」則查證成立） |
+| Monica《Miss Thang》 | **音樂人名寫成中文音譯**（惠妮休斯頓 → Whitney Houston）。機器 QA 沒抓到，是靠人工掃描補的 |
+| Monica《Code Red》 | 研究稿把 2011 年的併購方向寫反（RCA 併入 J Records），改為 J Records 併入 RCA |
+
+#### 待店主裁示
+
+**Binary Star《Waterworld》（1999，自製自銷 1000 張）與已上線的《Masters of the Universe》（w2-039）
+是同一批素材**——後者是整批重新混音改編的換名重發，銷量約 20 倍。
+主線傾向**兩張都保留**（前者是原始自製版、有自己的歷史身分），正文各寫一端：
+本批寫自製自銷與 500 美元成本，舊卡寫的是獄中寫詞。**已依此寫成上線，若要砍再處理。**
+
+#### 主要檔案
+
+`desc-restyle/prompts/writer-base.md`、`desc-restyle/batches/w2-103-kv.json`、
+`desc-restyle/batches/output/w2-103-out-{1,2}.json`、`desc-restyle/batches/research/w2-103-{a,c}.json`、
+`desc-restyle/progress.json`。
+
+### 2026-08-09｜hiphop 家族開跑（w2-101、w2-102 上線）；家族通論帳本一次規劃完畢
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 兩批各 50 張全部上線，`verify-kv.mjs` 各 50/50 一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 102 批 / 5,061 張（79.8%）。**
+
+#### 店主裁定：12 批連號不一起跑，維持 3 批一段
+
+店主問 hiphop 家族的 12 批（w2-101–112）是否該一起接力。**裁定：不要。**
+接力省的是代理等待時間、不省流量；主線真正的成本是逐張審稿的全文（約 1.2 萬字／批），
+一次掛 12 批只會讓那些字反覆重送。更關鍵的是**跨批更正的回饋窗口會拉到八、九批之後**——
+像本輪抓到的「廠牌史上第一張」系統性錯誤，前幾批就只能事後回頭改稿。
+
+**但 12 批連號真正要求一次做完的是通論帳本**，那是規劃成本、只付一次，也正好是提升品質的那一半。
+因此新增 `desc-restyle/HIPHOP_LEDGER.md`（593 張、十條主源流的位置分派表），
+**每批開工只讀該檔對應列，不必重掃 12 批卡單**。實掃確認 101–112 跨批同藝人 0 組。
+帳本裡已寫死的跨批分軸：Scarface 六張（101）寫人／Geto Boys 六張（103）寫團；
+Bun B（109）不重述 UGK（104）；KRS-One（108）不重述 BDP（103）。
+另統一譯名：**曼菲斯**（全池 19 比 0，不寫孟斐斯）。
+
+#### 「廠牌史上第一張」在一批裡出現三次（w2-101）
+
+w2-097（Ulcerate／Debemur Morti）、w2-100（Mercyful Fate／Roadrunner）之後，w2-101 又抓到三處：
+
+| 卡 | 查證結果 |
+| --- | --- |
+| 8Ball & MJG《Comin' Out Hard》 | 寫成 Suave House 的第一張作品。廠牌 1990 年創立、早三年，維基查不到首發是哪張 → 退成「廠牌簽下的第一組藝人交出的出道作」 |
+| 8Ball & MJG《Living Legends》 | 寫成 Bad Boy South 的第一張作品。**該廠牌自己的維基目錄最早列的是 2005 年的 Boyz n da Hood**，與此矛盾 → 整條捨去 |
+| Three 6 Mafia《Mystic Stylez》 | hook 寫「自家廠牌交出的第一張恐怖說唱」，但該廠牌先前已發過多張 EP → hook 改寫為「出道專輯」，三層同步 |
+
+**w2-100 後補進 `research-base.md` 的規則在研究層確實生效了**（w2-101 的 c 組主動反查 Stones Throw
+沿革、退掉 Lootpack 那張的首發宣稱），**但寫作層仍會從研究稿的模糊措辭裡長出這種宣稱**。
+防線需要再往後拉一層。
+
+#### 人物歸屬整個錯掉（w2-102）
+
+研究層把 **Brandon Mitchell 寫成 Guy 的創團成員**、說樂團因他遇害而解散。
+查證：他是 **Wreckx-n-Effect** 1987 年的創團成員（與 Aqil Davidson、Markell Riley 組團），
+1990 年 8 月 8 日在曼哈頓遭槍殺，**與 Guy 無關**；Guy 的創團三人是 Teddy Riley、Aaron Hall、Timmy Gatling。
+我還為此設了「跨卡分軸」要兩張各寫一端——**分軸的前提本身是假的**。
+Guy 那張改寫成員更迭與解散時序，Mitchell 只留在 Wreckx-n-Effect 那張（團名改拼法紀念他是正確的）。
+
+#### 其餘人工審稿（w2-101 修 11 處、w2-102 修 5 處）
+
+- **校對痕跡第二型**：《On the Outside Looking In》寫「是完整的錄音室作品**而非精選或重發**」，否定讀者沒有的前提。
+- **hook 懸念沒收尾**：Lords of the Underground 出道作立了「朋友一句引介」卻沒交代。
+- **時代錯置的地名**：MC Lyte《Eyes on This》封面地點寫成「布魯克林大橋公園」——該公園 2010 年才成立。
+- **同批撞措辭**：Juvenile《Solja Rags》與 Master P 首張都寫「沒有大廠鋪貨仍賣掉逾 20 萬張」，前者改寫。
+- **無來源的曲風級評斷**：Scarface《The World Is Yours》寫「南方黑幫饒舌在他手上進入成熟期」，換成查證過的單曲事實。
+- 另有 Keepers of the Funk 把發行日誤掛成錄音時間、Westside Connection 把 Mack 10 首作寫成 9 月（實為 6 月 20 日）、
+  DJ Cam 廠牌創立年的臆測、Cee-Lo 譯名批內不一致等。
+- **Kool G Rap《Live and Let Die》與《4, 5, 6》串成一條線**：前者被 Warner 拒絕經銷導致 Cold Chillin' 合約終止，
+  後者確為該廠牌關門前的最後一張。
+
+#### 兩件寫進 base 檔的常設規則
+
+1. **「配額」與「反同構條款」是兩件事**（`writer-base.md`）。w2-101 的 writer-2 主動回報派工詞的
+   「廠牌骨架只准兩張」與 base 檔已取消的廠牌配額字面牴觸——**它的回報是對的一半**：
+   取消的是題材配額，我下的是故事骨架反同構。判準已寫入：**照辦之後若仍寫得出該廠牌與這張唱片的
+   具體關係，就是反同構條款、照辦；若照辦等於整條事實不能寫，才是寫錯的配額。**
+2. **字數紀律改成硬程序**（`writer-base.md`）。「動筆前先想好」這句提醒已失效四次
+   （w2-057、072、099，w2-102 是 25 張裡 24 張超標、最高 363 字，而且派工詞事前警告過）。
+   改成可執行步驟：**動筆前先列五格字元預算表（hook 實數＋懸念收尾 40–60＋發行事實 30–45＋
+   主故事後續 50–70＋成績或聲音 30–45），先算總和 ≤240 再下筆**；並標明一個拉丁專名平均吃 12–18 字元。
+
+#### 寫作層第一次反過來抓 hook 層
+
+w2-101 的 writer-2 指出《The Last of a Dying Breed》的 hook 寫了「樂評分數反倒是這段時期最高的」——
+分數式評價本來就在禁列，且拿不到可具名出處。已改成「樂評反應反倒是這段時期最好的」，三層同步。
+
+#### 卡池訂正
+
+- **年份三筆**：The Velvet Underground《Squeeze》1972 → 1973（1972 年秋錄音、1973 年 2 月 Polydor 發行）、
+  Slum Village《Fantastic, Vol. 2》1998 → 2000（1998 錄完，原簽廠牌倒閉延宕）、
+  Three 6 Mafia《The End》1997 → 1996（正式發行 1996-12-03）。
+- **掛名維持不動但正文據實寫**：Three 6 Mafia《Smoked Out, Loced Out》確認是混音帶而非錄音室專輯
+  （屬有歷史定位的早期地下作，保留）。
+
+#### 主要檔案
+
+`desc-restyle/HIPHOP_LEDGER.md`（新增）、`desc-restyle/prompts/writer-base.md`、
+`desc-restyle/batches/w2-101-kv.json`、`w2-102-kv.json`、
+`desc-restyle/batches/output/w2-10{1,2}-out-{1,2}.json`、`desc-restyle/progress.json`、
+`dip-vinyl-shop/seed_cards.json`。
+
 ### 2026-08-08｜desc-restyle w2-100 上線；wave2 過 100 批
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
