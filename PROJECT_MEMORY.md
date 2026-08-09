@@ -1,5 +1,107 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-09｜desc-restyle w2-110 至 w2-112 上線（142 張）；hiphop 家族完成；店主新裁定「一張卡只講一個主故事」
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 三批分別 49／50／43 張全部上線，`verify-kv.mjs` 逐批一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 112 批 / 5,601 張（88.4%）；hiphop 家族 w2-101–112 共 593 張至此全部完成。**
+
+#### 店主新裁定：一張卡只講一個主故事
+
+材料多的時候挑最重要的那一個講透，不要並列兩三段。已寫進 `writer-base.md` 的「## 內容」節開頭、
+標明優先於該節其他條目。判準與配套：
+
+- **判準**：讀完能不能用一句話說出「這張唱片發生了什麼事」。要用「而且」「另外」才接得下去的就是第二個故事。
+- **砍掉之後字數不夠，不是把第二個故事加回來**，而是把主故事往下挖一層（起因、當事人怎麼說、造成了什麼結果）。
+- 生平背景（出生地、家庭、遷徙、學歷）**只在直接推動主故事時才寫**——那是最常被誤當成「內容」塞進來的東西。
+- 客座名單、製作人名單、曲目數**是佐料不是故事**，一張最多留一組。
+
+w2-111 有 8 張依此退回重寫（Loyle Carner×2、Trippie Redd、Heize、Key Glock、Lucky Daye、Mick Jenkins、Smino），
+砍掉的都是並列的第二條軸（公益計畫、選秀節目、生平遷徙、共組集體）。改後 8 張全部落在 180–240，其餘 42 張一字未動。
+
+#### 榜名年代錯置：同一輪連中兩次，已找到系統性對策
+
+w2-110 的 Queen Latifah《All Hail the Queen》（1989）與 w2-111 的 Masta Ace《Take a Look Around》（1990）
+都寫成「Top R&B/Hip-Hop Albums」，但該榜 **1999 年 12 月**才改成這個名字（此前是 Top Black Albums、Top R&B Albums）。
+
+**根因不是代理粗心——維基與二手資料一律用現行榜名回填舊年代**，研究層照抄、寫作層看不出來，只有審稿抓得到。
+對策：自 w2-112 起在研究層派工詞加一條「逐項核對各榜當年的正式名稱並在 facts 裡寫出當年的名稱」，
+該批五組合計攔下二十餘處，寫作層派工詞另加「照輸入檔寫、不得換成你熟悉的現行榜名」。
+**這條要固定保留給所有 1999 年以前的批次。**
+
+#### 研究稿的 facts 欄會原封不動進入寫作層輸入檔
+
+`merge-writer-input.mjs` 會把整個 facts 陣列帶進 writer 輸入檔，所以寫進 facts 的任何一句話都可能被寫成正文。
+w2-112 五份研究稿合計 **19 條** facts 帶著校對說明（榜名沿革括號、標 uncertain、`【最高優先查證結果】`、
+「查無可靠來源證實⋯」、序數的括號註解），主線在合併前逐條清洗。
+**已寫進 `research-base.md`：facts 只放事實、校對說明一律放 notes、否定敘述改寫成正面版本。**
+
+#### 字元預算：嘻哈批次的上浮幅度兩度上調
+
+w2-110 出現**同一批兩組方向相反**（writer-1 低估、writer-2 高估），首次觀察到批內分歧。
+w2-111 起轉為單向低估，把兩格各上浮 15 字元；w2-112 照 15 上浮之後，
+writer-1 的 22 張仍有 14 張初稿超標、**writer-2 的 21 張全部超標（255–304）**，實測低估接近一整格。
+**已把 `writer-base.md` 的嘻哈上浮幅度改為 30。** 根因是專名不只多、而且個個偏長，加上廠牌雙掛與榜名全稱。
+
+#### 卡池：移除三張
+
+- **Nelly《Still Hot In Herre》**（w2-110）：2022 年 Republic 的 17 首精選，與 2005 年官方精選選曲高度重疊、
+  查無獨特歷史定位，依常設裁定移除。
+- **808 State《Ninety》**（w2-113 卡單）：與《90》是同一張 1989 年唱片。封面印「808:90」、書背印「Ninety」，
+  維基條目名與封面都用「90」，依短標慣例保留《90》。
+- 另 **w2-128 的 `ice?|rhyme pays`** 待移除：藝人字串含私有區字元 U+E45F，是 `Ice‐T｜Rhyme Pays` 的編碼損壞重複卡
+  （同專輯、同年、同三軸，genres 欄卻是空陣列），Ice-T 那張已於 w2-105 上線。尚未寫稿、無 KV 鍵。
+- 三次移除都備份 seed_cards、**以字串移除保留原檔單行壓縮格式**、逐筆確認只動到目標、卡單與 restyle-tasks 同步、
+  KV 舊鍵刪除並確認 404。7,511 → 7,509。
+
+#### 研究層推翻主線的重點（三批合計三十餘處）
+
+- **《To the Death》與 DJ Premier 完全無關**（製作人是 DR Period），我派工詞問的是「Premier 製作了幾首」。
+- **A$AP Rocky《Don't Be Dumb》已於 2026-01-16 發行**、**21 Savage《What Happened to the Streets?》已於 2025-12-12 發行**、
+  **Ski Mask《11th Dimension》已於 2024-06-07 發行**——三張我都當成未上市。
+- **Aesop Rock《Labor Days》從未登上 Billboard 任何榜**，二手資料把《Bazooka Tooth》的名次錯植在它身上。
+- **Redman《Muddy Waters》的標題與藍調樂手無關**，講的是「上一張埋在土裡、這張從土裡浮上來」。
+- **Masta Ace《MA_DOOM》的 MF DOOM 只授權既有節拍並客座一曲人聲、未參與製作**——這是最容易寫成「合作專輯」的一張。
+- **Wire 改名 Wir 是鼓手 Robert Gotobed 離團**，不是常被誤傳的 Bruce Gilbert。
+- **Warp Records 有三位創辦人**（第三位是製作人 Robert Gordon），且《Frequencies》是該廠第三張專輯、不是「第一批」。
+- **「French touch」一詞是樂評人 Martin James 1996 年為《Super Discount》寫評論時創造的。**
+- 《Nature of a Sista'》的「RIAA 金唱片」與「《Black Reign》是首張獲金認證的女性個人饒舌專輯」互相矛盾，移除較弱的一條。
+- Doja Cat《Planet Her》研究稿寫「未查得得獎」，實際上〈Kiss Me More〉在第 64 屆拿下最佳流行團體演出
+  ——**研究層說「未查得得獎」不等於沒得獎，審稿要自己再查一次。**
+
+#### 敏感內容
+
+Juice WRLD 四張（辭世後發行機制只釘一張、死因照官方法醫結果）、Injury Reserve 的成員辭世寫成「樂團形式的改變」、
+Lil Peep 兩張、Ski Mask 與 XXXTentacion、Backxwash 三部曲的宗教與跨性別題材、Chris Brown 2009 年案件、
+Gunna 的 YSL 案（發行早於起訴四個月，時序寫明）、Big L 與 Ol' Dirty Bastard 的辭世（**晚於作品且無綁定，一律不寫**）
+——全部照三限制處理：要有來源、不逐字引歌詞、逝者克制。
+
+#### 兩處我自己的操作失誤
+
+1. **seed_cards 被寫成縮排格式**：移除卡片時用 `JSON.stringify(out, null, 2)` 重寫全檔，把單行壓縮檔展開成八萬多行。
+   已從備份還原、改用字串移除。**往後一律用字串移除。**
+2. **反引號陷阱再次重演**：用 `node -e "…"` 寫 progress.json 時，雙引號內的反引號被 bash 當成命令替換，
+   把兩則備忘錄的內容整段吃掉**且不報錯**（只在 stderr 留下 command not found）。
+   **凡內容含反引號，一律寫成 scratchpad 的 `.mjs` 檔再執行。**
+
+#### 其他寫進常設檔的規則
+
+- `hook-base.md`：note 的寫法統一成**正面表述**，把「缺數據處寫明禁補」「研究稿的禁語標示改寫」
+  這兩條會反過來製造校對痕跡的舊措辭換掉，附三個對照例，標明優先於該節其他寫法。
+- `HIPHOP_LEDGER.md` 三處訂正：T.I. 的「trap 命名史」已被舊批 w2-011《Trap Muzik》用掉（111 改寫出道作與被解約）；
+  Aesop Rock×5 在 110 不在 111（兩支長壽地下線拆成 110＝Def Jux、111＝Rhymesayers）；Black Sheep 是 Native Tongues **正式成員**。
+- **`ELECTRONIC_LEDGER.md` 新建**（w2-113–127，共 750 張，十六條源流的逐批位置）。本家族與 hiphop 家族最大的不同是**化名鏈**：
+  字串比對只抓到 1 組跨批同藝人，但電子樂一人多名是常態——Larry Heard／Mr. Fingers／Fingers Inc.（113/124/128）、
+  Juan Atkins／Model 500／Cybotron（114/124）、Richie Hawtin／Plastikman（114/124）、Vladislav Delay／Luomo（117/122）、
+  Basic Channel／Rhythm & Sound（113/127）分別橫跨兩到三批，**掃描完全看不到**。帳本已列表要求派工前逐條反查，
+  並裁定「化名本身只准三張當主結構」。另定六條高風險骨架，其中「Kraftwerk 的影響」整個家族一律不得當主結構。
+
+#### 主要檔案
+
+`desc-restyle/prompts/{writer,hook,research}-base.md`、`desc-restyle/HIPHOP_LEDGER.md`、
+`desc-restyle/ELECTRONIC_LEDGER.md`（新建）、`desc-restyle/batches/w2-11{0,1,2}-kv.json`、
+`desc-restyle/batches/output/w2-11{0,1,2}-out-{1,2}.json`、`desc-restyle/progress.json`、
+`desc-restyle/restyle-tasks.json`、`dip-vinyl-shop/seed_cards.json`。
 ### 2026-08-09｜desc-restyle w2-107 至 w2-109 上線（148 張）；卡池移除兩張、訂正三筆
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
