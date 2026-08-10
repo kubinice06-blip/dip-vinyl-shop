@@ -1,5 +1,52 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-10｜卡池藝人字串大小寫與冠詞正規化（21 組）；Firestore 孤兒文件清點
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日前一筆的字元正規化。
+- 店主指示：大小寫／冠詞一律採官方用法。
+
+**改法與依據**
+
+- 寫法一律取 **MusicBrainz 的正規名稱**（本專案上架流程本來就以 MB 為準），
+  **唯連字號改用 ASCII**——查證時發現 **MusicBrainz 自己用 U+2010**（`alt‐J`、`blink‐182` 在 MB 上都是 U+2010），
+  **這極可能就是卡池那 32 張 U+2010 污染的來源**。MB 名稱可以抄，連字號不能照抄。
+- 21 組、seed_cards 34 張卡、apex_pool 3 處（Sly & the Family Stone 兩張、KISS 一張）。
+- 全大寫：KISS、SAULT、XXXTENTACION、KAYTRANADA、ROSALÍA、TOWA TEI、NUMBER GIRL、SUPERCAR、MONO。
+  全小寫：beabadoobee、shame、black midi、toe、blink-182、alt-J、Charli xcx。
+  冠詞小寫：Kool & the Gang、Sly & the Family Stone、Gladys Knight & the Pips、
+  Florence + the Machine、King Gizzard & the Lizard Wizard。
+- **這批完全不需要遷移 KV 或 Firestore**：只動大小寫與冠詞，`.toLowerCase()` 之後字串完全相同，
+  而 KV key 與 Firestore 文件 id 都是轉小寫後才組出來的。
+  **腳本把這條寫成硬性前置檢查——任一組轉小寫後不同就中止，不讓它有機會靜默改到 id。**
+- 查證時抓到兩個同名不同人的陷阱：MusicBrainz 上有三個 Rosalía、三個 Supercar，
+  已依卡池實際專輯確認為西班牙的 ROSALÍA（《El Mal Querer》）與日本的 SUPERCAR（《Highvision》）。
+- 驗證：改後全池同名分裂組數 0、含 U+2010／U+03BC 的藝人 0、總數 7,505 張不變、兩個檔的單行壓縮格式保留。
+
+**Firestore 孤兒文件（前一筆字元正規化的後續，尚未修）**
+
+- **先釐清一個誤解：抽牌不受影響。** 抽卡直接讀 `seed_cards.json` 與 `apex_pool.json`
+  （`index.html` 的 `loadCardPool`），Firestore 完全不參與「這張卡抽不抽得到」。
+  Firestore 存的是封面快取與人工修正，查不到就退回即時抓 Spotify（`resolveCardAssets` 三路並行）。
+- 以 Firestore REST 逐一查過（讀取是公開的，前台未登入就在讀），前一筆改名的 32 張留下：
+  - **`card_catalog` 32 筆**。其中 26 筆只是抽卡時 fire-and-forget 記的封面快取，下次抽到自己重建；
+    **但 6 筆帶著 `seed / classic / obscurity / rarity / accessibility / rgMbid / upc` 等上架流程欄位**
+    （Niels-Henning Ørsted Pedersen、Jean-Luc Godard、Jean-Roger Caussimon、The Bar-Kays 三張），**這些不會自動長回來**。
+  - **`album_overrides` 2 筆**，都是人工釘的固定試聽連結：
+    Niels-Henning Ørsted Pedersen & Sam Jones《Double Bass》、Jean-Luc Godard《Histoire(s) du cinéma》。
+- **未修的原因**：`card_catalog` 前台未登入就能寫（程式註解明講「任何人都能寫入」），本可用 REST 搬移，
+  但這次的 Firestore 寫入被權限分類器擋下、未執行；`album_overrides` 是管理員寫入保護，本來就要登入後台。
+  **34 份文件已完整備份**（scratchpad 的 `firestore-backup.json`），要修時直接照著搬即可。
+
+**往後的硬規則**：**任何藝人字串的改名，動手前先跑三件事**——
+(1) 掃 `apex_pool.json` 看有沒有頂級牌在內；
+(2) 用 Firestore REST 查 `card_catalog` 與 `album_overrides` 的舊 id 有沒有文件、有沒有帶上架欄位；
+(3) 確認改動是否真的會動到 `.toLowerCase()` 之後的 id——不會動到的話，整個遷移都可以省掉。
+
+**主要檔案**：`dip-vinyl-shop/seed_cards.json`、`dip-vinyl-shop/apex_pool.json`、
+`dip-vinyl-shop/PROJECT_MEMORY.md`、`desc-restyle/progress.json`、`desc-restyle/` 各層 artist 欄 168 處。
+
+**驗證結果**：seed_cards 與 apex_pool 皆 JSON 合法、單行格式保留、筆數不變；
+同名分裂 0 組；desc-restyle 71 檔 168 處同步；commit `d142803` 已 push。
 ### 2026-08-10｜desc-restyle w2-122 至 w2-128 上線（348 張）；**wave2 全部完成**；卡池藝人字串字元正規化
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
