@@ -1,5 +1,58 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-10｜Firestore 孤兒文件搬移完成（39 筆）；專輯名 U+2010 正規化（7 張）
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日兩筆字串正規化。
+- 店主開了 bypass permissions 並指示全部由 Claude 執行。
+
+**Firestore 兩個集合的規則不同——這是整件事的關鍵，寫進來免得下次再問**
+
+`firestore.rules` 裡：
+
+- `match /card_catalog/{id}    { allow read: if true; allow write: if true; }`
+  ——**任何人都能寫**，未登入玩家抽到卡就會寫入（用途就是讓後台看得到所有人抽了什麼）。
+  所以拿公開 API key 就能用 REST 搬移。
+- `match /album_overrides/{id} { allow read: if true; allow write: if isAdmin(); }`
+  ——`isAdmin()` 檢查 `request.auth.token.email == 'kubinice06@gmail.com'`。
+  **既有資料是店主在後台用 Google 登入後、由瀏覽器帶著登入 token 寫進去的。**
+  **API key 不是身分驗證**（它只識別專案、不代表任何使用者），所以任何 REST 寫入一律 403 PERMISSION_DENIED。
+  **這條繞不過，也不該繞——只能由店主在後台操作。**
+
+**已完成**
+
+- `card_catalog` 共 **39 筆**搬到新文件 id 並刪除舊文件（32 筆藝人字串改名 ＋ 7 筆專輯名改名），
+  全部先備份、寫入後逐筆驗證 `coverUrl` 與上架欄位、驗過才刪。**失敗 0。**
+  其中 **13 筆帶上架流程欄位**（`seed / classic / obscurity / rarity / accessibility / rgMbid / upc`）。
+  Sonny Sharrock《Monkey-Pockie-Boo》特別注意：**人工上架那份（CAA 封面＋三軸＋稀有度）在 U+2010 的 id 上，
+  ASCII id 上是更早的自動記錄（Spotify 封面）**，搬移方向是上架那份覆蓋掉自動記錄，方向正確。
+- **專輯名的 U+2010 正規化 7 張**（藝人欄那批的另一半，同樣會分裂 KV key）：
+  Sonny Sharrock《Monkey-Pockie-Boo》、Jean-Roger Caussimon《Jean-Roger Caussimon chante…》、
+  Graham Central Station《Ain't No 'Bout-a-Doubt It》、Eric Burdon and War《The Black-Man's Burdon》、
+  Smokey Robinson & the Miracles《Going to a Go-Go》、The Supremes《The Supremes A' Go-Go》、
+  Stevie Wonder《Up-Tight (Everything's Alright)》。
+  seed_cards 以字串替換保留單行格式（命中數／總長度／筆數／無重複卡四道防呆）、apex_pool 1 處、
+  desc-restyle 2 處；**KV 遷移 5 筆**（另 2 張本來就沒有 KV 值）。
+
+**待店主在後台處理：`album_overrides` 3 筆固定試聽連結**
+
+清單已產出在 `dip-vinyl-shop/album_overrides-repaste.json`，可直接貼進後台的批次匯入框
+（該框吃 `[{artist, album, previewUrl}]` 格式，以 merge 寫入、不會覆蓋既有介紹／三軸／頂級牌設定）：
+
+- Niels-Henning Ørsted Pedersen & Sam Jones《Double Bass》
+- Jean-Luc Godard《Histoire(s) du Cinéma》
+- Sonny Sharrock《Monkey-Pockie-Boo》
+
+**全域複查（改完後跑的）**
+
+卡池 7,505 張｜藝人欄殘留分裂字元 **0**｜專輯欄殘留 **0**｜apex_pool 殘留 **0**（共 633 項）｜
+藝人同名分裂 **0 組**｜重複卡 **0**｜本次遷移的 KV 新 key 34 筆缺漏 **0**｜
+Firestore `card_catalog` 新 id 有文件 38/39、舊 id 殘留 **0**
+（少的那 1 筆是 Caussimon 的中間態 id——先改藝人再改專輯，文件已接著搬到最終 id，非缺漏）。
+
+**主要檔案**：`dip-vinyl-shop/seed_cards.json`、`dip-vinyl-shop/apex_pool.json`、
+`dip-vinyl-shop/album_overrides-repaste.json`、`dip-vinyl-shop/scripts/migrate-card-catalog-ids.mjs`、
+`dip-vinyl-shop/PROJECT_MEMORY.md`、`desc-restyle/progress.json`。
+備份：`seed_cards.backup-before-album-hyphen.json`、`firestore-backup-cardids-2026-08-10.json`。
 ### 2026-08-10｜卡池藝人字串大小寫與冠詞正規化（21 組）；Firestore 孤兒文件清點
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日前一筆的字元正規化。
