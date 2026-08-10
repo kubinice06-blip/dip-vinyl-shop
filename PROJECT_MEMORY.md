@@ -33,6 +33,10 @@
     （Niels-Henning Ørsted Pedersen、Jean-Luc Godard、Jean-Roger Caussimon、The Bar-Kays 三張），**這些不會自動長回來**。
   - **`album_overrides` 2 筆**，都是人工釘的固定試聽連結：
     Niels-Henning Ørsted Pedersen & Sam Jones《Double Bass》、Jean-Luc Godard《Histoire(s) du cinéma》。
+- **已備妥腳本**：`scripts/migrate-card-catalog-ids.mjs`（預設乾跑，`--write` 才動手，`--delete-old` 才刪舊文件；
+  會先整份備份、寫入後逐筆驗證 coverUrl 與上架欄位、任一筆不符就中止不刪）。
+  對照表預設從 `seed_cards.backup-before-hyphen-normalize.json` 與現行檔比對推回，也可用 `--map` 指定。
+  乾跑結果：card_catalog 待搬 32 筆（6 筆帶上架欄位）、album_overrides 2 筆需在後台重設。
 - **未修的原因**：`card_catalog` 前台未登入就能寫（程式註解明講「任何人都能寫入」），本可用 REST 搬移，
   但這次的 Firestore 寫入被權限分類器擋下、未執行；`album_overrides` 是管理員寫入保護，本來就要登入後台。
   **34 份文件已完整備份**（scratchpad 的 `firestore-backup.json`），要修時直接照著搬即可。
