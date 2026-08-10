@@ -566,7 +566,7 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=36"></script>
+<script src="dip-player.js?v=37"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -611,6 +611,33 @@ function battleHintAnchor(){
   return (mini && mini.offsetParent) ? mini : document.getElementById('battleMusicToggle');
 }
 function showBattleHint(kind){ window.DipPlayer?.showHint?.(battleHintAnchor(), BATTLE_HINTS[kind]); }
+
+// ?audiodebug=1 才啟用的診斷層：店主的手機上「點手牌就停掉 Spotify」在本機重現不出來
+// （手牌 click 根本不呼叫播放器），需要真機回報到底是誰動了音訊。預設完全不執行。
+if(new URLSearchParams(location.search).get('audiodebug')==='1' && window.DipPlayer){
+  const lines=[], P=window.DipPlayer;
+  const box=document.createElement('div');
+  box.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99999;max-height:42vh;overflow:auto;background:#000;color:#0f0;font:10px/1.5 ui-monospace,monospace;padding:6px;white-space:pre-wrap';
+  const t0=Date.now();
+  const push=m=>{ lines.unshift('+'+String(Date.now()-t0).padStart(5)+'ms '+m); if(lines.length>40) lines.pop(); };
+  ['unlock','playAlbum','warmAlbum','prefetch','stop','playTrack','setAutoplayPreference'].forEach(k=>{
+    const fn=P[k]; if(typeof fn!=='function') return;
+    P[k]=function(...a){ push('呼叫 '+k+'('+JSON.stringify(a[0]??'').slice(0,60)+')'); return fn.apply(this,a); };
+  });
+  const ver=([...document.scripts].map(s=>s.src).find(s=>s&&s.includes('dip-player'))||'').split('/').pop();
+  const render=()=>{
+    const d=P.debugState(), n=document.querySelectorAll('iframe').length;
+    box.textContent=['版本 '+ver,
+      'dip:autoplay='+(()=>{try{return localStorage.getItem('dip:autoplay');}catch(e){return '?';}})()
+        +'  開關='+(battleMusicLive()?'開':'關'),
+      'ctx='+d.ctx+' keepAlive='+d.keepAlive+' playing='+d.playing+' status='+d.status+' iframe='+n,
+      '── 播放器呼叫紀錄 ──', ...lines].join('\n');
+  };
+  document.addEventListener('DOMContentLoaded',()=>document.body.appendChild(box));
+  if(document.body) document.body.appendChild(box);
+  setInterval(render,400); render();
+  push('診斷層啟動');
+}
 function syncBattleMusicToggle(){
   const live=battleMusicLive();
   const button=document.getElementById('battleMusicToggle'); if(!button) return;

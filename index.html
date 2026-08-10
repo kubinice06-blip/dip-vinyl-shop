@@ -822,7 +822,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=36"></script>
+<script src="dip-player.js?v=37"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1500,7 +1500,9 @@
 
   function playCollectionRecord(card, source) {
     if (!card || !window.DipPlayer) return;
-    window.DipPlayer.unlock?.();
+    // grant:true＝使用者自己點了這張唱片要聽，才准武裝音訊（unlock 沒有授權就不動作，
+    // 避免像遊戲頁那樣「碰一下卡片就把店主正在聽的串流停掉」）。
+    window.DipPlayer.unlock?.({ grant:true });
     const switching = lastPlayerState.status === 'playing';
     currentRecordId = card.cardId;
     currentRecord = card;
@@ -1666,7 +1668,7 @@
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-turntable-stop]')) { currentRecordId=''; currentRecord=null; window.DipPlayer?.stop(); document.querySelectorAll('.collect-card.active').forEach(card=>card.classList.remove('active')); return; }
     const trackBtn = e.target.closest('[data-preview-track]');
-    if (trackBtn) { window.DipPlayer?.unlock?.(); void window.DipPlayer?.playTrack?.(trackBtn.dataset.previewTrack); return; }
+    if (trackBtn) { window.DipPlayer?.unlock?.({ grant:true }); void window.DipPlayer?.playTrack?.(trackBtn.dataset.previewTrack); return; }
     const info = e.target.closest('[data-card-info]');
     if (info) { openCardDetail(info.dataset.cardInfo); return; }
     const card = e.target.closest('.collect-card[data-card-id]');
@@ -2040,7 +2042,7 @@
   // 搜尋頁沒有唱盤機：點卡片開詳情的同時直接背景播 30 秒試聽，關掉詳情就停
   function _asPlay(rec) {
     if (!rec || !window.DipPlayer) return;
-    window.DipPlayer.unlock?.();
+    window.DipPlayer.unlock?.({ grant:true });
     document.querySelectorAll('#asResults .collect-card').forEach(item => item.classList.toggle('active', item.dataset.cardId === rec.cardId));
     void window.DipPlayer.playAlbum({
       artist: rec.artist,

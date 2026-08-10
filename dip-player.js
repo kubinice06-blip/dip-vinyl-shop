@@ -633,7 +633,18 @@
 
   // youtube 預設關閉：primeYoutubeFromGesture 會真的以 1% 音量播一小段來解鎖，
   // 同樣會搶走音訊焦點，而目前沒有任何頁面靠 YouTube 出聲（order 只剩 itunes）。
-  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT } = {}) {
+  //
+  // 2026-08-10：授權檢查移到這裡，而不是散在各頁的呼叫點。
+  // 「武裝」＝讓靜音 keep-alive 開始播放＝向系統要走音訊焦點＝停掉店主正在聽的串流。
+  // 過去有好幾個呼叫點根本不看音樂開關就武裝（試煉手牌的 pointerdown、兩頁的出牌
+  // 流程），於是「手指碰一下卡片」就把 Spotify 停掉；又因為後續播放被開關擋下、
+  // 從未進入 playing，媒體通知不會被取代，看起來完全不像網頁幹的。
+  // 在這裡統一擋掉，往後新增呼叫點也不會再犯同一個錯。
+  // grant=true 專給「使用者明確點了某張唱片要聽」（唱片櫃／搜尋頁）——那是本次造訪的
+  // 授權，不寫裝置記憶，不會順手把對戰／試煉的自動播放也打開。
+  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false } = {}) {
+    if (grant) grantAutoplayConsent();
+    if (!autoplayConsent) return false;
     const previewReady = primePreviewFromGesture();
     const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
