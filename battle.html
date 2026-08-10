@@ -566,7 +566,7 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=34"></script>
+<script src="dip-player.js?v=35"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -586,14 +586,31 @@ const auth = getAuth(fbApp);
 const googleProvider = new GoogleAuthProvider();
 const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 let currentUser = null, authReady = false, myColl = null, myStats = null;
-const BATTLE_MUSIC_KEY = 'dipBattleMusic';
-let battleMusicOn = (()=>{ try { return localStorage.getItem(BATTLE_MUSIC_KEY) !== 'off'; } catch(e) { return true; } })();
+const BATTLE_MUSIC_KEY = 'dipBattleMusic';   // 舊鍵，只留作一次性搬移
 let battlePlayerState = {status:'idle',provider:null,artist:'',album:''};
-// 本站不主動發出這次造訪的第一個聲音（使用者可能正在用別的 App 聽音樂，
-// 而網頁查不到這件事）。開關記在 localStorage、預設開，但要等使用者自己點過一次
-// 才真的會出聲；沒授權時介面一律顯示靜音，讓「點一下才有音樂」看得出來。
-const battleMusicReady=()=>window.DipPlayer?.hasAutoplayConsent?.()!==false;
-const battleMusicLive=()=>battleMusicOn&&battleMusicReady();
+// 2026-08-10：自動播放的開關統一由 DipPlayer 的裝置記憶管理（'on'/'off'/'unset'）。
+// 裝置沒表態過就是靜音，點一次開關才開始自動播放，之後每次造訪都記得；
+// 偵測到串流把音訊焦點搶回去時會自動改回關閉（見 onAutoplayRevoked）。
+// 舊的 dipBattleMusic 只在裝置尚未表態時搬一次：以前明確關掉音樂的人維持關閉。
+(()=>{
+  if(!window.DipPlayer || window.DipPlayer.autoplayPreference?.()!=='unset') return;
+  try{ if(localStorage.getItem(BATTLE_MUSIC_KEY)==='off') window.DipPlayer.setAutoplayPreference?.(false); }catch(e){}
+})();
+const battleMusicLive=()=>window.DipPlayer?.autoplayPreference?.()==='on';
+const battleMusicReady=battleMusicLive;
+// 三種提示都錨在音樂開關下方；彈窗開著時改錨在彈窗裡的迷你唱機。
+const BATTLE_HINTS={
+  first:'♪ 點這裡開啟卡牌試聽',
+  auto:'♪ 自動試聽中 · 點 🔊 可關閉',
+  revoked:'偵測到你在聽其他音樂 · 已暫停自動試聽'
+};
+const BATTLE_HINT_SEEN_KEY='dip:autoplay-hint-seen';
+let battleAutoHintShown=false;
+function battleHintAnchor(){
+  const mini=document.getElementById('battleMiniPlayer');
+  return (mini && mini.offsetParent) ? mini : document.getElementById('battleMusicToggle');
+}
+function showBattleHint(kind){ window.DipPlayer?.showHint?.(battleHintAnchor(), BATTLE_HINTS[kind]); }
 function syncBattleMusicToggle(){
   const live=battleMusicLive();
   const button=document.getElementById('battleMusicToggle'); if(!button) return;
@@ -606,22 +623,20 @@ function syncBattleMusicToggle(){
   if(apple && battlePlayerState.storeUrl) apple.href=battlePlayerState.storeUrl;
 }
 function setBattleMusic(enabled){
-  battleMusicOn=!!enabled;
-  try { localStorage.setItem(BATTLE_MUSIC_KEY,battleMusicOn?'on':'off'); } catch(e) {}
+  // 關閉時 DipPlayer 會徹底釋放音訊（停試聽、停 keep-alive、拆媒體卡片、suspend
+  // AudioContext），店主回 Spotify 按播放後才不會又被這頁搶走。
+  window.DipPlayer?.setAutoplayPreference?.(!!enabled);
+  try { localStorage.setItem(BATTLE_MUSIC_KEY,enabled?'on':'off'); } catch(e) {}
   syncBattleMusicToggle();
-  if(!battleMusicOn) window.DipPlayer?.stop();
 }
-// 還沒授權時，第一次點擊要解讀成「開啟音樂」而不是靜音——否則使用者會發現
-// 按了 🔊 反而變 🔇。授權後照舊是開／關切換。
 function battleMusicTap(card){
-  if(!battleMusicReady()){
-    window.DipPlayer?.grantAutoplayConsent?.();
-    if(battleMusicOn) syncBattleMusicToggle(); else setBattleMusic(true);
+  const enable=!battleMusicLive();
+  setBattleMusic(enable);
+  if(enable){
+    battleAutoHintShown=true;   // 剛親手開的，這一場不必再提示一次
+    showBattleHint('auto');
     if(card) playBattleAlbum(card,{auto:false});
-    return;
   }
-  setBattleMusic(!battleMusicOn);
-  if(battleMusicOn && card) playBattleAlbum(card,{auto:false});
 }
 const battleDirectPreview = url => {
   try { return /\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/i.test(new URL(url || '').pathname); }
@@ -637,9 +652,9 @@ async function battlePreviewMeta(card){
   return card;
 }
 function playBattleAlbum(card,{auto=true}={}){
-  if(!battleMusicOn || !card || !window.DipPlayer) return false;
-  // 系統自己決定要出聲（出牌、開牌資訊）時，沒授權就整條不跑，連來源查詢都省。
-  if(auto && !battleMusicReady()) return false;
+  // 裝置沒開啟自動播放就整條不跑，連來源查詢都省——更重要的是不會武裝音訊、
+  // 不會向系統要焦點，正在聽串流的玩家全程不受打擾。
+  if(!battleMusicLive() || !card || !window.DipPlayer) return false;
   try {
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
@@ -663,10 +678,31 @@ function initBattlePlayer(){
   const mount=document.getElementById('battlePlayerMount'); if(!mount || !window.DipPlayer) return;
   window.DipPlayer.mount(mount,{hidden:true});
   window.DipPlayer.onStateChange(state=>{
+    const wasPlaying=battlePlayerState.status==='playing';
     battlePlayerState=state;
     syncBattleMusicToggle();
+    // 每次造訪的第一首試聽真正出聲時提示一次關閉方法。偵測不到「我們蓋過別人的
+    // 串流」（系統只通知被搶的一方），所以改用「每場開聲必提示」把那個情境涵蓋進來。
+    if(!battleAutoHintShown && !wasPlaying && state.status==='playing'){
+      battleAutoHintShown=true;
+      showBattleHint('auto');
+    }
+  });
+  // 串流把焦點搶回去 → DipPlayer 已自動關閉並記住，這裡只負責同步介面與告知。
+  window.DipPlayer.onAutoplayRevoked?.(()=>{
+    syncBattleMusicToggle();
+    showBattleHint('revoked');
   });
   syncBattleMusicToggle();
+  // 裝置從未表態過：靜音，但要讓玩家知道有這個功能。一台裝置只提示一次。
+  if(window.DipPlayer.autoplayPreference?.()==='unset'){
+    let seen=false;
+    try{ seen=localStorage.getItem(BATTLE_HINT_SEEN_KEY)==='1'; }catch(e){}
+    if(!seen){
+      try{ localStorage.setItem(BATTLE_HINT_SEEN_KEY,'1'); }catch(e){}
+      setTimeout(()=>showBattleHint('first'),900);
+    }
+  }
 }
 const MAP_GENRE_IDS=['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues'];
 const validMapGenres=tags=>[...new Set((tags||[]).filter(tag=>MAP_GENRE_IDS.includes(tag)))];
@@ -1602,7 +1638,7 @@ function cardDetailHtml(card){
     <div class="cd2-alb">${card.album||''}</div>
     ${aceTag}
     <div class="cd2-stats">${stats}</div>
-    <button class="battle-mini-player${battleMusicOn?'':' muted'}" id="battleMiniPlayer" type="button" aria-label="${battleMusicOn?'關閉':'開啟'}對戰音樂" aria-pressed="${battleMusicOn}"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
+    <button class="battle-mini-player${battleMusicLive()?'':' muted'}" id="battleMiniPlayer" type="button" aria-label="${battleMusicLive()?'關閉':'開啟'}對戰音樂" aria-pressed="${battleMusicLive()}"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="cd2-desc load" id="cd2Desc">載入簡介…</div>${stream}</div>`;
 }
 // 與首頁抽專輯卡相同：Apple／Spotify／YT Music 保證可點，Bandcamp 查到正式專輯頁才啟用。

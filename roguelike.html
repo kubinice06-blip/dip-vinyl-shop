@@ -571,7 +571,7 @@
 </script>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=34"></script>
+<script src="dip-player.js?v=35"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1606,14 +1606,29 @@ let META = loadMeta();   // 在 helpers(shuffle/POOL) 之後初始化
 let RUN = null;   // 當前 run
 let G = null;     // 當前單場戰鬥
 const $app = document.getElementById('app');
-const ROGUE_MUSIC_KEY='dipBattleMusic';
-let rogueMusicOn=(()=>{ try{return localStorage.getItem(ROGUE_MUSIC_KEY)!=='off';}catch(e){return true;} })();
+const ROGUE_MUSIC_KEY='dipBattleMusic';   // 舊鍵，只留作一次性搬移
 let roguePlayerState={status:'idle',provider:null,artist:'',album:''};
-// 本站不主動發出這次造訪的第一個聲音（使用者可能正在用別的 App 聽音樂，
-// 而網頁查不到這件事）。開關記在 localStorage、預設開，但要等使用者自己點過一次
-// 才真的會出聲；沒授權時介面一律顯示靜音，讓「點一下才有音樂」看得出來。
-const rogueMusicReady=()=>window.DipPlayer?.hasAutoplayConsent?.()!==false;
-const rogueMusicLive=()=>rogueMusicOn&&rogueMusicReady();
+// 2026-08-10：自動播放的開關統一由 DipPlayer 的裝置記憶管理（'on'/'off'/'unset'）。
+// 裝置沒表態過就是靜音，點一次開關才開始自動播放，之後每次造訪都記得；
+// 偵測到串流把音訊焦點搶回去時會自動改回關閉（見 onAutoplayRevoked）。
+(()=>{
+  if(!window.DipPlayer || window.DipPlayer.autoplayPreference?.()!=='unset') return;
+  try{ if(localStorage.getItem(ROGUE_MUSIC_KEY)==='off') window.DipPlayer.setAutoplayPreference?.(false); }catch(e){}
+})();
+const rogueMusicLive=()=>window.DipPlayer?.autoplayPreference?.()==='on';
+const rogueMusicReady=rogueMusicLive;
+const ROGUE_HINTS={
+  first:'♪ 點唱盤開啟卡牌試聽',
+  auto:'♪ 自動試聽中 · 點唱盤可關閉',
+  revoked:'偵測到你在聽其他音樂 · 已暫停自動試聽'
+};
+const ROGUE_HINT_SEEN_KEY='dip:autoplay-hint-seen';
+let rogueAutoHintShown=false;
+function rogueHintAnchor(){
+  const mini=document.getElementById('rogueMiniPlayer');
+  return (mini && mini.offsetParent) ? mini : document.getElementById('rogueMusicToggle');
+}
+function showRogueHint(kind){ window.DipPlayer?.showHint?.(rogueHintAnchor(), ROGUE_HINTS[kind]); }
 function syncRogueMusic(){
   const live=rogueMusicLive();
   const top=document.getElementById('rogueMusicToggle');
@@ -1624,22 +1639,19 @@ function syncRogueMusic(){
   if(apple&&roguePlayerState.storeUrl) apple.href=roguePlayerState.storeUrl;
 }
 function setRogueMusic(enabled){
-  rogueMusicOn=!!enabled;
-  try{localStorage.setItem(ROGUE_MUSIC_KEY,rogueMusicOn?'on':'off');}catch(e){}
+  // 關閉時 DipPlayer 會徹底釋放音訊，店主回 Spotify 按播放後不會又被這頁搶走。
+  window.DipPlayer?.setAutoplayPreference?.(!!enabled);
+  try{localStorage.setItem(ROGUE_MUSIC_KEY,enabled?'on':'off');}catch(e){}
   syncRogueMusic();
-  if(!rogueMusicOn) window.DipPlayer?.stop();
 }
-// 還沒授權時，第一次點擊要解讀成「開啟音樂」而不是靜音——否則使用者會發現
-// 按了 🔊 反而變 🔇。授權後照舊是開／關切換。
 function rogueMusicTap(card){
-  if(!rogueMusicReady()){
-    window.DipPlayer?.grantAutoplayConsent?.();
-    if(rogueMusicOn) syncRogueMusic(); else setRogueMusic(true);
+  const enable=!rogueMusicLive();
+  setRogueMusic(enable);
+  if(enable){
+    rogueAutoHintShown=true;   // 剛親手開的，這一場不必再提示一次
+    showRogueHint('auto');
     if(card) playRogueAlbum(card,{auto:false});
-    return;
   }
-  setRogueMusic(!rogueMusicOn);
-  if(rogueMusicOn && card) playRogueAlbum(card,{auto:false});
 }
 const rogueDirectPreview=url=>{
   try{return /\.(m4a|mp3|aac|wav|ogg|oga|opus|flac)$/i.test(new URL(url||'').pathname);}
@@ -1654,9 +1666,9 @@ async function roguePreviewMeta(card){
   return card;
 }
 function playRogueAlbum(card,{auto=true}={}){
-  if(!rogueMusicOn||!card||!window.DipPlayer) return false;
-  // 系統自己決定要出聲（抽卡、撿盤、開牌資訊）時，沒授權就整條不跑。
-  if(auto&&!rogueMusicReady()) return false;
+  // 裝置沒開啟自動播放就整條不跑——不武裝音訊、不向系統要焦點，
+  // 正在聽串流的玩家全程不受打擾。
+  if(!rogueMusicLive()||!card||!window.DipPlayer) return false;
   try{
     // iOS 無法控制 YouTube iframe 音量；只用可經 Web Audio 做淡入淡出的試聽來源。
     window.DipPlayer.unlock?.({youtube:false});
@@ -1678,8 +1690,30 @@ function initRoguePlayer(){
   const mount=document.getElementById('roguePlayerMount');
   if(!mount||!window.DipPlayer) return;
   window.DipPlayer.mount(mount,{hidden:true});
-  window.DipPlayer.onStateChange(state=>{roguePlayerState=state;syncRogueMusic();});
+  window.DipPlayer.onStateChange(state=>{
+    const wasPlaying=roguePlayerState.status==='playing';
+    roguePlayerState=state;
+    syncRogueMusic();
+    // 每次造訪的第一首試聽出聲時提示一次關閉方法（偵測不到「我們蓋過別人」，
+    // 用每場開聲必提示涵蓋那個情境）。
+    if(!rogueAutoHintShown && !wasPlaying && state.status==='playing'){
+      rogueAutoHintShown=true;
+      showRogueHint('auto');
+    }
+  });
+  window.DipPlayer.onAutoplayRevoked?.(()=>{
+    syncRogueMusic();
+    showRogueHint('revoked');
+  });
   syncRogueMusic();
+  if(window.DipPlayer.autoplayPreference?.()==='unset'){
+    let seen=false;
+    try{ seen=localStorage.getItem(ROGUE_HINT_SEEN_KEY)==='1'; }catch(e){}
+    if(!seen){
+      try{ localStorage.setItem(ROGUE_HINT_SEEN_KEY,'1'); }catch(e){}
+      setTimeout(()=>showRogueHint('first'),900);
+    }
+  }
 }
 
 // 開頁即等登入狀態：登入 → 樂歷綁帳號；確認登出 → 丟掉上次帳號快取、回訪客檔
@@ -1706,7 +1740,7 @@ function topbarHTML(){
     <div class="xpbar"><i style="width:${pct}%"></i></div>
     <span style="flex:none;color:var(--gold);font-weight:700">💰 $${cashOf()}</span>
     <span class="best">最深 ${META.bestDepth}・連勝 ${META.bestStreak}</span>
-    <button class="rogue-music-toggle" id="rogueMusicToggle" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="rogueMusicTap()">${rogueMusicOn?'🔊':'🔇'}</button>
+    <button class="rogue-music-toggle" id="rogueMusicToggle" type="button" aria-label="${rogueMusicLive()?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicLive()}" onclick="rogueMusicTap()">${rogueMusicLive()?'🔊':'🔇'}</button>
   </div>`;
 }
 
@@ -3937,7 +3971,7 @@ function openDrawReveal(pre){
     <div class="yr">${c.year||''}</div>
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
-    <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
+    <button class="rogue-mini-player${rogueMusicLive()?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicLive()?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicLive()}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="drawIntro">介紹輸入中…</div>
     ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmDraw()">帶這張盤進下一場 →</button>
@@ -3992,7 +4026,7 @@ function openLootReveal(card){
     <div class="yr">${c.year||''}</div>
     ${aceTag}
     <div class="stats">${starsHTML(c)}</div>
-    <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
+    <button class="rogue-mini-player${rogueMusicLive()?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicLive()?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicLive()}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="lootIntro">介紹載入中…</div>
     ${streamingBtnsHtml(c)}
     <button class="btn primary" style="width:100%" onclick="confirmLoot()">加入本趟牌組 →</button>
@@ -4149,7 +4183,7 @@ function openCardInfo(card, opts){
     <div class="yr">${card.year||''}</div>
     ${aceTag}
     <div class="stats">${starsHTML(card)}</div>
-    <button class="rogue-mini-player${rogueMusicOn?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicOn?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicOn}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
+    <button class="rogue-mini-player${rogueMusicLive()?'':' muted'}" id="rogueMiniPlayer" type="button" aria-label="${rogueMusicLive()?'關閉':'開啟'}試煉音樂" aria-pressed="${rogueMusicLive()}" onclick="toggleCardInfoMusic()"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="intro wait" id="ciIntro">介紹載入中…</div>
     ${streamingBtnsHtml(card)}
     ${keepBtn}

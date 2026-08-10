@@ -3679,6 +3679,43 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-10｜shop｜試聽不再搶走玩家的串流：自動播放改「裝置記憶＋碰撞偵測」
+
+**改動摘要**
+店主回報：邊聽 Spotify 邊切到網頁，只要一進站串流就被網頁播放器取代。
+偵錯後發現真正的根不在自動播放，而在**音訊解鎖層**：`installAudioUnlock()` 在 `mount()`
+時掛全域 capture 監聽，使用者點站上**任何東西**（翻卡、開選單，與播放無關）就會
+①讓隱藏 `<audio>` 循環播放靜音 WAV、②以 1% 音量真的播一小段 YouTube——兩者都是
+有聲播放，Android 立刻把音訊焦點轉給我們，Spotify 當場被暫停。
+2026-08-06 那次「自動播放加授權門檻」只擋住 `playAlbum`，完全沒擋到這一層，所以沒效。
+
+**主要檔案**
+- `dip-player.js`：三個斷路旗標 `GLOBAL_GESTURE_ARM`／`PERSIST_SESSION_CONSENT`／
+  `UNLOCK_YOUTUBE_DEFAULT` 全設 false（**舊程式碼一律保留，只斷路**，要退回舊行為改旗標即可）；
+  授權模型由 sessionStorage 每次造訪改為 localStorage 裝置記憶 `dip:autoplay`（'on'/'off'/未設定）；
+  新增 `autoplayPreference`／`setAutoplayPreference`／`onAutoplayRevoked`／`releaseAudio`／`showHint`。
+- `battle.html`、`roguelike.html`：音樂開關改讀寫裝置記憶（舊鍵 `dipBattleMusic` 只在裝置未表態時
+  搬移一次），三種提示氣泡；`?v=34` → `?v=35`（含 `index.html`）。
+
+**平台限制（查證後確認，別再重複研究）**
+- **「使用者現在是否在用別的 App 聽音樂」網頁問不到。** iOS 的 `isOtherAudioPlaying` 不開放給網頁，
+  Android 無對應介面；`navigator.audioSession`（ambient 混音）**只有 Safari 16.4+ 實作**，
+  Chrome／Chrome Android／Edge／Firefox 全部不支援，且 ambient 是「疊著播」不是「不播」。
+- **焦點只通知輸家。** 我們被搶得到通知（iOS→AudioContext `interrupted`；Android→播放中被 suspend），
+  但「我們蓋過別人」完全收不到事件 → 該情境**無法偵測**，改用「每場開聲必提示」涵蓋。
+- Android 焦點規則是「後來者全拿」，且請求由 Chrome 自動發出，網頁層無法放棄或條件式請求。
+  **結論：無法做到「出聲前先確認沒人在播」，只能保證「最多撞一次，撞過就記住不再自動出聲」。**
+
+**行為**：裝置未表態→靜音＋一次性提示「點這裡開啟卡牌試聽」；點開關→寫入 'on'，之後每次造訪
+直接自動播放、每場第一聲提示一次關閉方法；偵測到中斷或手動關閉→寫入 'off' 並 `releaseAudio()`
+（停試聽、停 keep-alive、拆 MediaSession、suspend AudioContext），之後保持安靜。
+另補 keep-alive 8 秒未起播自動釋放、`visibilitychange` 轉背景且未播放即釋放。
+
+**驗證**：`node --check` 與內嵌 script 逐塊解析全過；瀏覽器 API 測試 16/16 通過
+（全域武裝確認未安裝、裝置記憶三態、唱片櫃單張授權不寫記憶、未授權 auto 播放回
+stopped/NO-AUTOPLAY、提示為 fixed 定位不推擠版面）；battle／roguelike 實載無新錯誤，
+開關三態切換與 localStorage 寫入正確。**真機 Spotify 中斷偵測待店主實測。**
+
 ### 2026-08-08｜desc-restyle｜w2-090 上線；一支寫作代理繳回偽造的完工報告
 
 **改動摘要**

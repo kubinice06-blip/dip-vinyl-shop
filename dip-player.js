@@ -16,6 +16,7 @@
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
+  let keepAliveTimer = null;
   let previewArmedAt = 0, previewArmPromise = null;
   let currentPreviewData = null, lastFailCode = '';
   let appleAudioMap = null, appleAudioMapPromise = null;
@@ -26,32 +27,110 @@
   // 自己記住音量狀態：gain.value 要等下一個 render quantum 才會反映剛排下去的
   // setValueAtTime，緊接著讀會拿到舊值。previewRampEnd 是最後一段 ramp 的結束時間。
   let previewLevel = 0, previewRampEnd = 0;
-  // 自動播放授權：本站永遠不主動發出「這次造訪的第一個聲音」。
+  // ───────── 自動播放的授權模型（2026-08-10 改版）─────────
   // 網頁沒有任何 API 能得知使用者此刻是否正在用別的 App 聽音樂——iOS 原生的
   // isOtherAudioPlaying 沒開放給網頁，Android 完全沒有對應介面，而
-  // navigator.audioSession（宣告自己是可混音的背景音）2026-08 仍只有 Safari 實作，
-  // 且 ambient 的效果是「跟對方疊著播」而不是「不播」。因此改用授權門檻：
-  // 使用者自己按過一次播放，才允許後續的自動播放。正在聽 Spotify 的人不會去按，
-  // 音訊焦點就永遠不會被搶走。存 sessionStorage——關掉分頁重進要重新按一次，
-  // 今天整天在聽 Spotify 就一路安靜。
+  // navigator.audioSession（宣告自己是可混音的背景音）只有 Safari 實作，
+  // 且 ambient 的效果是「跟對方疊著播」而不是「不播」。
+  //
+  // 舊版做法是「每次造訪都要先按一次播放」（存 sessionStorage）。店主要求改成：
+  // 沒在聽串流的人應該一進來就有聲音，聽串流的人則要能被偵測並自動閉嘴。
+  // 因此改成「裝置記憶 + 碰撞偵測」：
+  //   1. 裝置從未表態（null）→ 靜音，由頁面提示「點這裡開啟」。
+  //   2. 使用者點過開關（'on'）→ 之後每次造訪都直接自動播放，不必再按。
+  //   3. 偵測到聲音被別的 App 搶走 → 視為「使用者選擇串流」，自動改成 'off' 並記住。
+  // 「出聲前先問系統有沒有人在播」做不到，所以保證是「最多撞一次，撞過就學乖」。
+  const AUTOPLAY_MEMORY_KEY = 'dip:autoplay';
+  // 舊的每次造訪授權保留在程式裡，改由旗標斷路（要退回舊行為就把兩個旗標打開）。
   const AUTOPLAY_CONSENT_KEY = 'dip:autoplay-consent';
+  const PERSIST_SESSION_CONSENT = false;
+  // 全站第一次點擊就武裝音訊 = 一進站就搶走 Spotify 的音訊焦點，這是原始災情的根。
+  // 武裝改為只在播放鍵／音樂開關這種「明確要出聲」的手勢內進行。
+  const GLOBAL_GESTURE_ARM = false;
+  // YouTube 解鎖會真的以 1% 音量播一小段（同樣搶焦點），而目前沒有任何頁面用它出聲。
+  const UNLOCK_YOUTUBE_DEFAULT = false;
+
+  function readAutoplayMemory() {
+    try {
+      const value = localStorage.getItem(AUTOPLAY_MEMORY_KEY);
+      return value === 'on' || value === 'off' ? value : '';
+    } catch (_) { return ''; }
+  }
+  function writeAutoplayMemory(value) {
+    try { localStorage.setItem(AUTOPLAY_MEMORY_KEY, value); } catch (_) {}
+  }
+
   let autoplayConsent = false;
-  try { autoplayConsent = sessionStorage.getItem(AUTOPLAY_CONSENT_KEY) === '1'; } catch (_) {}
+  try { if (PERSIST_SESSION_CONSENT) autoplayConsent = sessionStorage.getItem(AUTOPLAY_CONSENT_KEY) === '1'; } catch (_) {}
+  // 裝置記憶蓋過 session 授權：'on' 直接放行自動播放，'off' 一律安靜。
+  const initialMemory = readAutoplayMemory();
+  if (initialMemory) autoplayConsent = initialMemory === 'on';
+
   let state = { status: 'idle', provider: null, artist: '', album: '', cover: '', consent: autoplayConsent };
   let mediaSessionActive = false;
+  const revokeListeners = new Set();
 
   function hasAutoplayConsent() { return autoplayConsent; }
+  // 'on' | 'off' | 'unset'——頁面用它決定顯示開關圖示與是否要跳首次提示。
+  function autoplayPreference() { return readAutoplayMemory() || 'unset'; }
 
   // 刻意不發事件：授權是在手勢當下、緊接著要起播時給的。走 emit() 會順手跑一次
   // syncMediaSession，而此刻 status 還停在 stopped，會把剛武裝好的 keep-alive src
   // 拆掉（iOS 第一次播放就會沒聲音）；就算避開 media session，訂閱者收到的也是
   // 上一張的 artist/album，反而會把播放鈕圖示打回停止。呼叫端自己同步介面即可。
+  // 只給「這次造訪」的授權，不寫裝置記憶：唱片櫃點某張唱片是針對那一張的動作，
+  // 不該順手把對戰／試煉的自動播放也打開（否則下次邊聽串流邊開對戰又會被搶）。
+  // 要寫進裝置記憶的是音樂開關，走 setAutoplayPreference(true)。
   function grantAutoplayConsent() {
     if (autoplayConsent) return false;
     autoplayConsent = true;
     state = { ...state, consent: true };
-    try { sessionStorage.setItem(AUTOPLAY_CONSENT_KEY, '1'); } catch (_) {}
+    try { if (PERSIST_SESSION_CONSENT) sessionStorage.setItem(AUTOPLAY_CONSENT_KEY, '1'); } catch (_) {}
     return true;
+  }
+
+  // 店主自己按下靜音，或偵測到串流把焦點搶回去。兩者都要記進裝置，下次不再自動出聲。
+  function setAutoplayPreference(enabled) {
+    if (enabled) { writeAutoplayMemory('on'); return grantAutoplayConsent(); }
+    writeAutoplayMemory('off');
+    autoplayConsent = false;
+    state = { ...state, consent: false };
+    try { if (PERSIST_SESSION_CONSENT) sessionStorage.removeItem(AUTOPLAY_CONSENT_KEY); } catch (_) {}
+    releaseAudio();
+    return true;
+  }
+
+  function onAutoplayRevoked(callback) {
+    if (typeof callback !== 'function') return () => {};
+    revokeListeners.add(callback);
+    return () => revokeListeners.delete(callback);
+  }
+
+  // 偵測到別的 App 把音訊焦點拿回去。系統只通知「輸的一方」，所以我們偵測得到
+  // 自己被中斷（iOS：AudioContext 轉 interrupted；Android：播放中被系統 suspend），
+  // 但偵測不到「我們蓋過別人」——後者只能靠每場開聲時的提示涵蓋。
+  function revokeAutoplayByInterruption(reason) {
+    if (!autoplayConsent) return false;
+    setAutoplayPreference(false);
+    revokeListeners.forEach(listener => { try { listener({ reason }); } catch (_) {} });
+    return true;
+  }
+
+  // 徹底把音訊交還給系統：停試聽、停靜音 keep-alive、拆掉媒體卡片、suspend AudioContext。
+  // 少了任何一項，Spotify 那邊按播放後仍可能被我們這頁再搶一次。
+  function releaseAudio() {
+    clearTimeout(keepAliveTimer);
+    try { stop(); } catch (_) {}
+    try {
+      if (previewAudio) {
+        previewAudio.loop = false;
+        if (!previewAudio.paused) previewAudio.pause();
+        previewAudio.removeAttribute('src');
+        previewAudio.load?.();
+      }
+    } catch (_) {}
+    clearMediaSession();
+    try { if (audioCtx && audioCtx.state === 'running') audioCtx.suspend?.(); } catch (_) {}
   }
 
   function emit(next) {
@@ -129,8 +208,41 @@
       /* YouTube IFrame API requires a real player surface. Keep it 200px inside the
          clipped 1px root so hidden playback never participates in page layout. */
       .dip-player-hidden .dip-player-youtube,.dip-player-hidden .dip-player-youtube iframe{width:200px!important;height:200px!important;min-height:200px!important}
+      /* 自動播放提示：position:fixed 而非 absolute——不必要求呼叫頁的容器是定位元素，
+         也保證完全不參與版面計算（對戰頁是「一屏不滾動」的版面，不能被推擠）。 */
+      .dip-autoplay-hint{position:fixed;z-index:9999;max-width:calc(100vw - 24px);background:#fff;color:#111;border:1px solid #111;padding:5px 9px;font-family:'Space Mono',ui-monospace,monospace;font-size:9px;line-height:1.5;letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:2px 2px 0 #111;pointer-events:none;opacity:0;transform:translateY(-4px);transition:opacity .35s ease,transform .35s ease}
+      .dip-autoplay-hint::before{content:'';position:absolute;top:-4px;right:var(--dip-hint-arrow,16px);width:6px;height:6px;background:#fff;border-left:1px solid #111;border-top:1px solid #111;transform:rotate(45deg)}
+      .dip-autoplay-hint.is-shown{opacity:1;transform:translateY(0)}
     `;
     document.head.appendChild(style);
+  }
+
+  let hintShowTimer = null, hintFadeTimer = null, hintNode = null;
+
+  // 錨在音樂開關下方浮 4 秒的小提示。三種用途：裝置首次造訪告知有這功能、
+  // 每場第一首自動試聽出聲時告知怎麼關、偵測到串流搶回焦點後告知已自動停用。
+  function showHint(anchor, text, { duration = 4000 } = {}) {
+    if (!anchor?.getBoundingClientRect || !text) return false;
+    addStyle();
+    clearTimeout(hintShowTimer);
+    clearTimeout(hintFadeTimer);
+    if (!hintNode) {
+      hintNode = document.createElement('div');
+      hintNode.className = 'dip-autoplay-hint';
+      hintNode.setAttribute('role', 'status');
+      document.body.appendChild(hintNode);
+    }
+    hintNode.classList.remove('is-shown');
+    hintNode.textContent = text;
+    const rect = anchor.getBoundingClientRect();
+    if (!rect.width && !rect.height) return false;
+    hintNode.style.top = `${Math.round(rect.bottom + 6)}px`;
+    hintNode.style.right = `${Math.max(6, Math.round(window.innerWidth - rect.right))}px`;
+    // 箭頭對準錨點中心：泡泡右緣與開關右緣切齊，中心即距右緣半個開關寬。
+    hintNode.style.setProperty('--dip-hint-arrow', `${Math.max(6, Math.round(rect.width / 2 - 3))}px`);
+    hintShowTimer = setTimeout(() => hintNode?.classList.add('is-shown'), 60);
+    hintFadeTimer = setTimeout(() => hintNode?.classList.remove('is-shown'), 60 + duration);
+    return true;
   }
 
   function setProvider(provider) {
@@ -299,10 +411,54 @@
         previewGain = audioCtx.createGain();
         previewGain.gain.value = 0;
         previewGain.connect(audioCtx.destination);
+        watchAudioInterruption(audioCtx);
       } catch (_) { audioCtx = null; previewGain = null; }
     }
     if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
   }
+
+  // 串流把音訊焦點搶回去時，我們這邊會被系統中斷：iOS Safari 把 AudioContext 轉成
+  // 'interrupted'，Android Chrome 則是在播放中被 suspend。只在「自認正在播」時才判定，
+  // 否則分頁切到背景造成的正常 suspend 會被誤判成使用者要聽串流。
+  function watchAudioInterruption(ctx) {
+    try {
+      ctx.addEventListener?.('statechange', () => {
+        if (!previewBufferSource) return;
+        if (ctx.state === 'interrupted' || ctx.state === 'suspended') revokeAutoplayByInterruption(ctx.state);
+      });
+    } catch (_) {}
+  }
+
+  // 靜音 keep-alive 只是為了讓 iOS 在「下載＋解碼」的空窗期不要收掉 audio session。
+  // 若武裝之後遲遲沒有真的試聽起播（使用者只是點了介面、最後沒播成），它會一直
+  // 循環播放並持續佔著音訊焦點，Spotify 就一直被壓著。逾時就自己放手。
+  function armKeepAliveRelease() {
+    clearTimeout(keepAliveTimer);
+    keepAliveTimer = setTimeout(() => {
+      if (previewBufferSource) return;
+      try {
+        if (previewAudio && !previewAudio.paused) {
+          previewAudio.loop = false;
+          previewAudio.pause();
+          previewAudio.removeAttribute('src');
+          previewAudio.load?.();
+        }
+      } catch (_) {}
+    }, 8000);
+  }
+
+  // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState !== 'hidden' || previewBufferSource) return;
+    try {
+      if (previewAudio && !previewAudio.paused) {
+        previewAudio.loop = false;
+        previewAudio.pause();
+        previewAudio.removeAttribute('src');
+        previewAudio.load?.();
+      }
+    } catch (_) {}
+  });
 
   function fadePreview(toValue, ms) {
     clearInterval(previewVolumeTimer);
@@ -381,6 +537,8 @@
     try {
       const audio = ensurePreviewAudio();
       ensurePreviewGraph();
+      // 武裝就開始倒數：8 秒內沒有真的試聽起播就放掉焦點，別一直壓著別人的串流。
+      armKeepAliveRelease();
       // 送出一個全靜音 sample，確保 iOS 真正解鎖 Web Audio 輸出，不只把
       // AudioContext 狀態標成 running。gain 此時固定為 0，不會產生聲音。
       if (audioCtx?.createBuffer && audioCtx?.createBufferSource && previewGain) {
@@ -433,6 +591,10 @@
   }
 
   function installAudioUnlock() {
+    // 斷路：掛上這組全域監聽，等於使用者在站上點任何東西（翻卡、開選單、捲頁）
+    // 都會武裝音訊並向系統要走焦點，正在聽 Spotify 的人一進站就被打斷。
+    // 武裝已改為只發生在 unlock()——播放鍵與音樂開關的手勢裡。
+    if (!GLOBAL_GESTURE_ARM) return;
     if (document.documentElement.dataset.dipAudioUnlock === '1') return;
     document.documentElement.dataset.dipAudioUnlock = '1';
     const prime = () => {
@@ -447,7 +609,9 @@
     ['pointerdown', 'touchstart', 'click'].forEach(type => document.addEventListener(type, prime, true));
   }
 
-  function unlock({ youtube = true } = {}) {
+  // youtube 預設關閉：primeYoutubeFromGesture 會真的以 1% 音量播一小段來解鎖，
+  // 同樣會搶走音訊焦點，而目前沒有任何頁面靠 YouTube 出聲（order 只剩 itunes）。
+  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT } = {}) {
     const previewReady = primePreviewFromGesture();
     const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
@@ -1164,5 +1328,9 @@
     };
   }
 
-  window.DipPlayer = { mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState, hasAutoplayConsent, grantAutoplayConsent };
+  window.DipPlayer = {
+    mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
+    hasAutoplayConsent, grantAutoplayConsent,
+    autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint
+  };
 })();
