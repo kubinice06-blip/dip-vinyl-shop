@@ -1,5 +1,72 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-10｜desc-restyle w2-122 至 w2-128 上線（348 張）；**wave2 全部完成**；卡池藝人字串字元正規化
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- **七批全部上線，wave2 就此收工：128 批 / 6,338 張，`verify-kv.mjs` 逐批一致、`chk-diskvskv.mjs` 零分岔。**
+  最後一批 w2-128 是家族混合批（electronic／industrial／noise／house／rock／world／blues／hiphop／具象音樂）。
+
+**研究層推翻主線之處（挑重要的）**
+
+- **獎項誤植連攔三次**：Tool《Lateralus》得獎的是收錄曲〈Schism〉在第 44 屆葛萊美的最佳金屬演出獎，
+  **不是同名曲、也不是專輯本身**；Gary Clark Jr.《Blak and Blu》的兩項要分開講（〈Please Come Home〉得獎、
+  〈Ain't Messin' Round〉只入圍）；Netsky 的 Drum & Bass Arena 獎項各來源全衝突，整條不寫。
+- **EBM 詞源的層次**：「electronic body music」最早由 Kraftwerk 的 Ralf Hütter 1977 年受訪時提出，
+  早於 DAF 與 Front 242；DAF 當年自稱 Körpermusik，EBM 成為類型標籤要到 1984 年 Front 242 才確立。
+- **μ-Ziq《Scurlage》不是封存舊素材**，是 2020 年 Gower 半島封城期間的全新創作、廠牌是 Analogical Force 不是 Planet Mu。
+- Severed Heads《City Slab Horror》的原始發行商是澳洲 Ink Records（1985），Volition 是 1989 年的重發商。
+- Merzbow《Pulse Demon》的封面沒有任何爭議事件（是向 Philips 的 Prospective 21e Siècle 系列與 Bridget Riley 致敬）。
+- Luc Ferrari〈Presque rien No.1〉不是「一整天」的錄音壓縮而成，是連續多個清晨錄的；這張精選輯最早是 1995 年 INA-GRM 的 CD。
+- 23 Skidoo 與 Fun Boy Three 的合作查無紀錄，整條不寫；Emancipator 被 Nas／Damian Marley 取樣的說法查無證據，整條不寫。
+- Satoshi Ashikawa 1983 年車禍辭世屬實，但 **Wave Notation 系列並未因此中斷**，第三輯 1984 年仍完成。
+
+**人工審稿修到的（每批 0–8 處，其中三批零修正）**
+
+- **w2-122／123／126 三批零修正。** 研究層自發做對三件事：查不到就說查不到並換一個查得到的事實、
+  來源衝突就兩面並陳或乾脆不寫、連暗示都避開（DJ Rashad《Double Cup》略去「最後一張錄音室專輯」，因為那等於暗示他的死）。
+- **w2-127**：Shackleton《Three EPs》的曲目原本要各自獨立成 **EP**、正文卻寫成「單曲」——
+  專輯標題本身就寫著 EP，是掃描腳本抓不到的內部矛盾；Ron Trent 的「1986 年還在念高中時錄下〈Altered States〉」
+  與他 1990 年發行時十七歲對不上（1986 年才十三歲）；OMD《Universal》寫「1996 年英國樂界正瘋 grunge」，
+  1996 年的英國是 Britpop 高峰。
+- **w2-128**：Merzbow 那張把 Masami Akita 寫成日文漢字「秋田昌美」（**中文正文裡的中文人名不會觸發任何 QA 規則**）；
+  Cabaret Voltaire《The Crackdown》的 hook 前提錯了（不是「第一次進英國專輯榜」，是比先前唯一一次高出六十多名）；
+  Ride《Nowhere》的「Creation 旗下第一張進英國 Top 75」查無來源、整條刪掉；
+  Painkiller 的封面描述過細，依逝者克制原則削短；µ-Ziq 那張有一句校對痕跡（否定讀者從沒有過的前提）。
+
+**卡池品質（4 張移除／更正）**
+
+- 移除 Thomas Newman《Winter Walking: Soundtracks for Cold Days》（跨作曲家的串流合輯、無具名編選者、平台間掛名不一）。
+- 移除藝人字串含 U+E45F 私有區字元的 Ice-T《Rhyme Pays》**損壞重複卡**（正確的那張完好保留）。
+- 移除 Roosevelt Sykes《Blues》(1929)：**1929 年沒有「專輯」這種發行形式**，市面同名黑膠曲目彼此不一致、
+  查無單一權威整理者，屬雜牌彙編。同一位藝人的《The Meek》(1970) 是正式錄音室專輯、保留。
+- 更正掛名：Marta Złakowska 是《When It's Going Wrong》的主角，藝人欄由 `Tricky` 改為 `Marta and Tricky`（KV 鍵同步搬移）。
+- 更正年份：Brian Eno《My Life in the Bush of Ghosts》1980 → 1981、Edward Ka-Spel《Aa?zhyd China Doll》1984 → 1987。
+
+**卡池藝人字串的字元正規化（店主 2026-08-10 指示）**
+
+- 起因：店主指出兩張 µ-Ziq 卡用了不同字元，搜尋只會出一張。掃全池後發現不是個案。
+- **16 個藝人字串用了 U+2010 連字號而非 ASCII 的 `-`，共 32 張卡**（µ-Ziq 那張還多用了 U+03BC 希臘字母 mu）。
+  **這類會讓 KV key 一起分裂**——key 是 `artist.toLowerCase()+"|"+album`，U+2010 ≠ U+002D，轉小寫救不了。
+  其中 Wu-Tang Clan、Ice-T、alt-J、blink-182、Jean-Michel Jarre、Run-D.M.C.、Drive-By Truckers 這七個**卡池裡本來就兩種寫法並存**。
+- 處理：`seed_cards.json` 以字串替換保留單行壓縮格式（三道防呆：逐藝人命中數等於卡數、總字串長度不變、筆數不變）；
+  `desc-restyle/` 同步 110 檔 305 處；KV 遷移 29 張（寫新 key → 逐字比對內容相符 → 刪舊 key → 確認消失）。
+- **⚠ 要記住的兩條**：(1) Cloudflare 的 bulk 寫入走 API 會被這顆 token 以 10405 擋下（只給讀），**寫入與刪除一律走 wrangler**；
+  (2) bulk delete 之後立刻用 bulk/get 驗證會有一批還在（最終一致性），**隔一次呼叫再驗就全消失，別誤判成刪除失敗**。
+- **⚠ 改藝人字串會連帶動到 Firestore**：`card_catalog` 與 `album_overrides` 的文件 id 用同一條
+  `(artist+"|"+album).toLowerCase()` 規則（index.html 的 `cardIdOf`），改名等於讓既有文件變孤兒。
+  card_catalog 抽卡時會自己重建，但**後台手動修過的封面、固定試聽連結、頂級牌 tier 旗標都會失聯**。
+  這次先掃過 `apex_pool.json`：**含分裂字元的項目是 0，頂級牌一張都沒受影響。**
+- **未處理、待裁示**：另有 11 組大小寫／冠詞分裂（KISS/Kiss、SAULT/Sault、Charli xcx、beabadoobee、black midi、
+  shame、toe、MONO、Kool & The/the Gang、Sly & The/the Family Stone、Florence + The/the Machine 等）。
+  **這類不影響 KV key**（key 本來就轉小寫），只影響顯示字串與按藝人分組，與字元分裂是兩件事。
+
+**主要檔案**：`dip-vinyl-shop/seed_cards.json`、`dip-vinyl-shop/PROJECT_MEMORY.md`、
+`desc-restyle/progress.json`、`desc-restyle/prompts/{research,hook,writer}-base.md`、
+`desc-restyle/ELECTRONIC_LEDGER.md`、`desc-restyle/batches/` 各層產出。
+
+**驗證結果**：七批 `build-final` 皆在 167–240 字區間內；`wrangler kv bulk put` 七次皆 `Success!`；
+`verify-kv.mjs` 逐批「一致＝張數、不符 0」；`chk-diskvskv.mjs` 逐批零分岔；
+字元正規化的 29 張 KV 遷移逐筆比對內容相符、舊 key 全數確認消失。
 ### 2026-08-10｜desc-restyle w2-117 至 w2-121 上線（250 張）；wave2 過 96%；四條常設規則改寫
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
