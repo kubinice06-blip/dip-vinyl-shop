@@ -14,6 +14,9 @@
   let root = null, spotifyHost = null, youtubeHost = null, youtubeFrameHost = null;
   let hiddenMode = false, requestId = 0;
   let spotifyApi = null, spotifyApiPromise = null, spotifyController = null, controllerPromise = null;
+  // 只有真的透過這兩個 iframe 播放過，才准對它們送暫停。Spotify 嵌入連著使用者的
+  // 帳號，對一台我們從未播放過的嵌入送 pause，停掉的是店主自己正在聽的歌。
+  let spotifyEngaged = false, youtubeEngaged = false;
   let youtubeApiPromise = null, youtubePlayer = null, youtubePlayerPromise = null, youtubeReady = false, youtubePrimed = false, youtubeGeneration = 0;
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let keepAliveTimer = null;
@@ -49,6 +52,9 @@
   const GLOBAL_GESTURE_ARM = false;
   // YouTube 解鎖會真的以 1% 音量播一小段（同樣搶焦點），而目前沒有任何頁面用它出聲。
   const UNLOCK_YOUTUBE_DEFAULT = false;
+  // 載入頁面就預先建好 Spotify／YouTube 兩個 iframe 播放器。詳見 mount() 內的說明：
+  // Spotify 嵌入是一台連著使用者帳號的播放器，會讓我們無意間停掉店主正在聽的串流。
+  const EAGER_IFRAME_PLAYERS = false;
 
   function readAutoplayMemory() {
     try {
@@ -270,8 +276,18 @@
     installAudioUnlock();
     // 在玩家進遊戲後就先取得精簡音源索引；真正點專輯時不必再用名稱搜尋 Apple。
     void loadAppleAudioMap();
-    void ensureController(SPOTIFY_PLACEHOLDER);
-    void ensureYoutubePlayer();
+    // 2026-08-10 斷路：原本每次載入就先建好 Spotify 與 YouTube 兩個 iframe 播放器來預熱。
+    // 但 2026-07-23 起 order 只剩 iTunes、固定 YouTube 的卡也刻意靜音，這兩個播放器
+    // 全站都不會用到——留著只有壞處：
+    //   Spotify 嵌入本身就是一台連著使用者帳號的播放器。stop() 裡的
+    //   spotifyController?.pause?.() 會對它送出暫停，於是「點卡片開／關資訊」這種
+    //   完全不出聲的操作，也會把店主正在聽的 Spotify 停掉——而且因為我們從未取得
+    //   音訊焦點，鎖定畫面的媒體卡片仍顯示 Spotify，看起來完全不像我們幹的。
+    // playSpotify／playYoutube 仍會在需要時自己 lazy 建立，恢復 order 不必改這裡。
+    if (EAGER_IFRAME_PLAYERS) {
+      void ensureController(SPOTIFY_PLACEHOLDER);
+      void ensureYoutubePlayer();
+    }
     return root;
   }
 
@@ -370,6 +386,7 @@
       // 同一個常駐 iframe 以 1% 音量短播後暫停，回合結算時只需換這個 player 的內容。
       youtubePlayer.unMute?.();
       youtubePlayer.setVolume?.(1);
+      youtubeEngaged = true;
       youtubePlayer.playVideo?.();
       youtubePrimed = true;
       const generation = youtubeGeneration;
@@ -915,12 +932,13 @@
       clearTimeout(previewTimer);
       stopPreviewBuffer();
       if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
-      youtubePlayer?.pauseVideo?.();
+      if (youtubeEngaged) youtubePlayer?.pauseVideo?.();
       controller.pause?.();
       setProvider('spotify');
       const started = waitForSpotifyPlayback(controller, token);
       if (typeof controller.loadEntity === 'function') controller.loadEntity(uri);
       else controller.loadUri?.(uri);
+      spotifyEngaged = true;   // 從這一刻起，對這台嵌入送 pause 停的才是我們自己的播放
       controller.play?.();
       if (await started) return true;
       controller.pause?.();
@@ -1045,8 +1063,8 @@
     try {
       clearTimeout(previewTimer);
       clearTimeout(previewFadeTimer);
-      spotifyController?.pause?.();
-      youtubePlayer?.pauseVideo?.();
+      if (spotifyEngaged) spotifyController?.pause?.();
+      if (youtubeEngaged) youtubePlayer?.pauseVideo?.();
       stopPreviewBuffer();
       // 在換來源、下載、解碼之前就把唯一輸出路徑鎖在 0；真實音檔不再交給
       // HTMLMediaElement 播放，因此 iOS 無法以元素預設的 100% 音量旁路。
@@ -1140,7 +1158,7 @@
       clearTimeout(previewFadeTimer);
       stopPreviewBuffer();
       if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); }
-      spotifyController?.pause?.();
+      if (spotifyEngaged) spotifyController?.pause?.();
       player.pauseVideo?.();
       setProvider('youtube');
       youtubeGeneration++;
@@ -1160,6 +1178,7 @@
         player.setLoop?.(false);
         player.loadPlaylist?.({ listType: 'playlist', list: target.list, index: 0, startSeconds: 0 });
       } else player.loadVideoById?.(target.video);
+      youtubeEngaged = true;
       player.playVideo?.();
       if (await started) {
         try {
@@ -1285,8 +1304,8 @@
       clearInterval(youtubeFadeTimer);
       try { if (previewAudio) { previewAudio.loop = false; previewAudio.pause?.(); } } catch (_) {}
       stopPreviewBuffer();
-      try { spotifyController?.pause?.(); } catch (_) {}
-      try { youtubePlayer?.pauseVideo?.(); } catch (_) {}
+      try { if (spotifyEngaged) spotifyController?.pause?.(); } catch (_) {}
+      try { if (youtubeEngaged) youtubePlayer?.pauseVideo?.(); } catch (_) {}
       setProvider(null);
       emit({ status: 'stopped', provider: null, tracks: [], trackId: '' });
     };

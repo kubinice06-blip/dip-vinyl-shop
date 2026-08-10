@@ -3679,6 +3679,31 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-10（同日追加）｜shop｜第二個獨立病灶：Spotify 嵌入 iframe 會停掉店主自己的串流
+
+前一筆修完後店主回報**仍會被靜音**，且關鍵線索是
+**「背景播放器沒有被取代，還是 Spotify」——代表我們從未取得音訊焦點，卻還是把它停掉了。**
+這排除了所有「搶焦點」路徑，指向完全不同的機制：
+
+`mount()` 每次載入就 `ensureController(SPOTIFY_PLACEHOLDER)`，在頁面上建立一個
+**open.spotify.com 的嵌入播放器 iframe**。那是一台連著使用者 Spotify 帳號的真播放器。
+而 `stop()`／`playItunes()`／`playYoutube()` 裡都有 `spotifyController?.pause?.()`——
+於是「點卡片開一下資訊再關掉」這種**完全不出聲**的操作，也會對店主的帳號送出暫停。
+**因為我們沒有音訊焦點，鎖屏媒體卡片仍顯示 Spotify，看起來完全不像我們幹的。**
+
+修法：`EAGER_IFRAME_PLAYERS = false`，載入時不再建立 Spotify／YouTube 兩個 iframe
+（2026-07-23 起 order 只剩 iTunes、固定 YouTube 的卡刻意靜音，這兩台全站根本用不到；
+`playSpotify`／`playYoutube` 需要時仍會自己 lazy 建立）。
+另加 `spotifyEngaged`／`youtubeEngaged` 兩個旗標：**只有真的透過該 iframe 播放過，
+才准對它送 pause**，日後恢復 order 也不會重蹈覆轍。
+
+**教訓（與 08-08 那筆同型）**：症狀相同不代表病因相同。第一輪修掉的是「搶音訊焦點」，
+這一輪的病灶完全不碰音訊焦點，是我們自己養了一台對方帳號的遙控器。
+**「媒體通知有沒有被取代」是分辨這兩類病因最快的一句話。**
+
+驗證：battle 頁載入後 iframe 數 0、第三方腳本 0，連呼叫 `stop()` 兩次仍為 0；
+iTunes 試聽路徑不受影響（loading → playing、ctx running、音量淡入正常）。`?v=36`。
+
 ### 2026-08-10｜shop｜試聽不再搶走玩家的串流：自動播放改「裝置記憶＋碰撞偵測」
 
 **改動摘要**
