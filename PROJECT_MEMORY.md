@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-10｜新 skill `dip-card-create`：一句話輸入的完整建卡產線
+
+- Repo：skill 檔在 `dip-vinyl-home/.claude/skills/`（非 git）；工具鏈改造在 `desc-restyle/`（非 git）；
+  本備忘錄與 `CLAUDE.md` 指向更新。
+- 店主指示：輸入一個或複數個藝人／專輯／兩者／曲風延伸請求，就啟動「封面→三軸→找資料→hook→簡介」全流程；
+  名稱定為 `dip-card-create`。
+
+**設計要點（店主已確認）**
+
+- **定位**：接起兩條既有產線——`dip-card-pool-expand` 管上架結構（腳本全數沿用、降為腳本庫），
+  `dip-desc-restyle` 管簡介品質（prompts 與 QA 工具照用）。完成定義仍是 `ALBUM_ONBOARDING.md`。
+- **曲風模式＝策展**，不是 MB tag 搜尋：盤點現有覆蓋 → 研究層提子派系配置的重要專輯清單
+  （嘻哈分東岸／南方／地下等）→ 店主過目摘要 → 每張走 MB 身分查證進標準流程。
+- **簡介直上 180–240 新規格**（全池 6,338 張已統一，新卡不用舊的 80–180）。
+- **代理配置按批量縮放**：1–5 張＝研究1／hook主線自寫／寫作1；6–15＝2/1/1；16–50＝照 desc-restyle 5/2/2。
+- **入池字元正規化寫成硬規則**：MB 的名稱可以抄、連字號不能照抄（U+2010→ASCII、U+03BC→U+00B5）。
+- **album_overrides 固定產出 repaste JSON** 交店主後台貼（isAdmin 規則、REST 403 繞不過）。
+
+**desc-restyle 工具鏈改造（向下相容，w2 批行為不變，已用 w2-128 回歸）**
+
+- `verify-kv.mjs`：批名 regex 加收 `add-*`。
+- `qa-batch.mjs`／`build-final.mjs`：卡單路徑 fallback `batches/wave2/` → `batches/cards/`（新目錄已建）。
+- `merge-writer-input.mjs`：改為「實際存在幾組研究稿就吃幾組」，小批 1–2 組不再炸檔案不存在。
+
+**指向更新**：`CLAUDE.md` 的「新增專輯固定公式」改指 `dip-card-create`；
+`dip-card-pool-expand/SKILL.md` 頂部加註降為腳本庫。
+
+**主要檔案**：`.claude/skills/dip-card-create/SKILL.md`（新）、`CLAUDE.md`、
+`.claude/skills/dip-card-pool-expand/SKILL.md`、`desc-restyle/{verify-kv,qa-batch,build-final,merge-writer-input}.mjs`。
+
+**驗證結果**：`qa-batch out w2-128` 回歸通過（39 張與卡單相符）；`add-*` 批名走新路徑、
+缺檔時給明確錯誤訊息不再靜默。
 ### 2026-08-10｜Firestore 孤兒文件搬移完成（39 筆）；專輯名 U+2010 正規化（7 張）
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json`、`apex_pool.json`、本備忘錄）。承接同日兩筆字串正規化。
