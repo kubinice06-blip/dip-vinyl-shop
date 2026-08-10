@@ -1,5 +1,138 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-10｜desc-restyle w2-117 至 w2-121 上線（250 張）；wave2 過 96%；四條常設規則改寫
+
+- Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
+- 五批各 50 張全部上線，`verify-kv.mjs` 逐批一致、`chk-diskvskv.mjs` 零分岔。
+  **wave2 累計 121 批 / 6,049 張（96.6%），剩 7 批。**
+- 店主本輪原指定 117–122 六批接力，中途指示 **122 不開**，實際完成 117–121 五批。
+
+#### 四條常設規則改寫（本輪最重要的產出）
+
+**一、`hook-base.md`：分數與星等一律不進 hook，也不進 note 的指派句。**
+w2-117 有五張的 note 指派了樂評分數，其中一張**直接把「拿了 Pitchfork 9.1 分」寫進 hook 本身**。
+查下去才發現根因：該檔教「note 要用正面表述」那一節，**範例句寫的就是
+「不寫『禁補銷量』，改寫『成績段落只寫 Metacritic 分數』」——指令檔自己在示範違規，代理一字不差照抄。**
+w2-112 那次只當個案修掉單張卡、沒回頭看指令檔，這才是它會重演的原因。
+範例已改成榜單名次，並補一條區分「Pitchfork 選為 Best New Music」（定位，可寫）與「9.2 分」（評級，不可寫）。
+**教訓：同一型錯誤第二次出現時，要去查它是不是寫在指令檔裡，而不是只修那張卡。**
+效果立即可見——w2-119 的兩位 hook 代理主動把研究稿裡的分數改寫成非數字表述並在回報裡說明。
+
+**二、`writer-base.md`：字元預算的「偏差方向」也不可繼承了。**
+曾經有三代預測規則，每一代都被下一批推翻（樂團卡／個人卡 → 專名數量 → 至少方向可繼承）。
+本輪把最後一代也推翻了，而且是在三個層級各推翻一次：
+w2-118 **同一批的兩組方向相反**；w2-119 兩組都低估但幅度不同；
+w2-120 **同一位代理手上，Alva Noto 與 Tim Hecker 段落貼近估值、Clark 五張卻系統性高估 15–25 字元**。
+現行版本只留硬程序：動筆前列預算表、確認總和落在 180–240 之內（不是只確認沒超過 240）、
+**動筆前就把專名壓下來**（這是唯一真正有效的做法）、初稿逐張實測、修剪一律整格捨去。
+
+**三、`ELECTRONIC_LEDGER.md`：骨架「自組廠牌」改名為「他自己開了一家廠牌來發自己的唱片」。**
+w2-121 的 hook 代理當場回報這條與「廠牌配額已取消」相牴觸。它的折衷處理是對的，但混淆是我們造成的：
+受限的是**故事骨架**，2026-08-02 取消的是**廠牌題材配額**，舊名字面上看不出差別。已加說明框。
+
+**四、`research-base.md`：繁體中文要交件前自驗，並列出兩類 QA 掃不到的日文陷阱。**
+起因見下節。
+
+#### 帳本漏了一整個維度：舊批
+
+**`ELECTRONIC_LEDGER.md` 規劃的是 113–127 這 15 批彼此之間的位置分派，完全沒把 001–112 的舊卡算進去。**
+w2-118 一次撞到四組、w2-119 再撞一組，帳本原定的位置當場作廢、必須改派：
+
+- Einstürzende Neubauten 的「自製樂器與建築廢料」→ w2-050《Halber Mensch》整張寫過，改寫樂迷訂閱制等六條。
+- Brian Eno 的「ambient 一詞的提出」→ w2-042《Discreet Music》寫過車禍臥床那段，改寫各張的合作對象。
+- Ellen Allien 的 BPitch Control 自創 → w2-036《Berlinette》寫過，降為一句事實。
+- Fatboy Slim 的 House of Love 工作室與 Atari ST → w2-011 寫過，降為一句事實。
+- 「Plaid 與 The Black Dog 的同源分裂」→ w2-036《Double Figure》從 Plaid 那側寫過，
+  改由 The Black Dog 這側切入、釘《Spanners》。
+
+**往後每批步驟 1 的「掃舊批同藝人」不能只看開場句是否撞頭，要連舊卡把哪個切入點用掉了一起記下來。**
+另注意 `chk-hook-crossgroup.mjs` 掃的是全池 6,035 張含 wave1，比手寫的 `w2-*-kv.json` 掃描完整
+——w2-118 的 Biosphere 舊卡就在 wave1，只有那支工具抓得到。
+
+#### 人工審稿抓到的錯誤型態（五批共 27 處）
+
+**只有人眼抓得到的三型：**
+
+1. **研究稿把人的所屬團體寫錯，一路傳到 hook**（w2-120）：Clark《Iradelphic》寫「Massive Attack 歌手
+   Martina Topley-Bird」——她是 Tricky 的長期搭檔，與 Massive Attack 只有 2010 年一次客座。
+   **人名與團名都真實存在、拼寫也對，錯的只有兩者的關係，機器完全掃不到。**
+   而它剛好與 w2-119 的 Tricky 四張並行——**同一人物在相鄰批次出現時，前一批查證過的關係要當成對照組。**
+2. **日文專名的兩層陷阱**（w2-119、w2-120）：Toshifumi Hinata 被寫成漢字「日向敏文」、
+   Ryuichi Sakamoto 寫成「坂本龍一」、Tokyo Gakuso 寫成「東京楽所」（「楽」還是日文新字體）。
+   **CJK 字元與中文字無法區分，QA 兩層都掃不到。** 規則：音樂人與團體一律拉丁原文；
+   導演、畫家、數學家、哲學家才用台灣慣用中譯（本輪的柏格曼、馬諦斯、閔考斯基、班雅明都正確）。
+3. **hook 懸念沒收尾三處**：Fatboy Slim 首張的「自宅閣樓一週做完」正文完全沒交代（該事實研究稿有、
+   是壓字數時被整格砍掉）；Vitalic《OK Cowboy》的 hook 點名 Aphex Twin、正文只寫「DJ 圈」。
+
+**校對痕跡四處**（都源自我派工詞的提問被研究層寫成否定句、再被寫作層抄進正文）：
+Monolake《Polygon_Cities》「這不是一張全新的錄音室作品」、Yokota《Over Head》「是全新創作而不是舊作重組」、
+Tiësto《In My Memory》「〈Silence〉本身並不收在這張裡」、Tricky《Mixed Race》「他本人從未公開說明命名的由來」、
+Venetian Snares《The Chocolate Wheelchair Album》「不是選輯也不是混音輯」。
+**根因固定：我在派工詞問「這是 A 還是 B」，答案就會以「是 A 不是 B」的形式一路傳到正文。**
+
+**其他**：Pole《Steingarten》把 Düsseldorf 寫成「krautrock 的發源地」（超譯，改「重鎮」）；
+Matmos 的 banjo 誤譯成「班鳩琴」（研究稿就錯，hook 也中招）；Ellen Allien 的 acid house 音譯成「酸浩室」；
+Fuck Buttons 的奧運開幕寫成「典禮的第一聲」（研究稿只說「開場」）；
+The Black Dog《Spanners》把 Dust Science 廠牌寫進 2001 年那個時點（該廠牌的合作要到 2005 年才有作品）。
+
+#### 研究層推翻主線的重點（五批合計五十餘處）
+
+- **外部資料本身是假的，兩型**：Plaid《Spokes》查到的「倫敦地下墓穴蝙蝠聲」四處無源、代理判定是 AI 生成內容；
+  Tycho《Awake》廣為流傳的葛萊美入圍其實是 2016 年另一張《Epoch》的事。
+- **讀法錯而非事實錯**：Venetian Snares《Winnipeg Is a Frozen Shithole》乍看在罵家鄉，
+  但他自己的內頁寫那是「a tribute」、同年訪談說他真心喜歡溫尼伯（租金便宜、有空間工作）
+  ——**照標題字面寫會把整張卡的語氣搞反。**
+- **身分／性質判定四處**：`tricky|when it's going wrong` 不是 Tricky 的專輯，是波蘭歌手 Marta Złakowska 的首張、
+  掛名「Marta and Tricky」（掛名裡有他，依常設裁定保留）；OPN《Music for Reliquary House》是與 Rene Hell 的
+  分軌合輯、只有一面是他的；Skinny Puppy《Remission》是 EP；Washed Out《High Times》是限量卡帶 EP。
+- **「第一張」反查擋下五處**：Nettwerk 的第一號其實是 Moev《Toulyev》EP、Hearts of Space 的第一號是
+  Kevin Braheny《Perelandra》、Venetian Snares 的 `printf(...)` 是第四件作品（此前已自行發行三卷卡帶）、
+  Oval 創立時是四人不是三人、《My Love Is a Bulldozer》的「首度自唱」降級成「罕見地」。
+- **廠牌歸屬錯五處**：Alva Noto《Transform》原版在 Mille Plateaux（2008 才由 Raster-Noton 再版）、
+  Mr. Oizo《The Church》是 Brainfeeder 不是 Ed Banger、Clark《Cave Dog》是自營 Throttle 不是 Warp、
+  Peverelist《Tessellations》是 Livity Sound 不是 Punch Drunk、Pole《3》是 Kiff SM／Matador 不是 ~scape。
+- **時序釐清四處**：Pan Sonic 1995 年發行《Vakio》時還叫 Panasonic（1998 春才改名，且與另一組的
+  Neubauten 混音專輯名單交叉印證）、Skinny Puppy《Weapon》的帳單在專輯之後（2011 得知→2013 發行→2014 求償）、
+  Tiësto 的雅典奧運演出晚於《Just Be》發行、Nosaj Thing《Drift》夾在 Kid Cudi（2008）與 Kendrick（2011）之間。
+- **UR 的創始成員**：只有 Mad Mike Banks 與 Jeff Mills，Robert Hood 稍後加入、1992 年與 Mills 一同離團。
+- **Low End Theory 的創辦人**是 Daddy Kev 與 Nocando，Gaslamp Killer 只是駐場 DJ 之一。
+- 我派工詞給錯前提二十餘處，其中 w2-121 的 e 組一組就佔五處。
+
+#### 內容過濾器連續中斷四個代理（w2-121）
+
+四次全部發生在**代理輸出大段回報文字**的時候，工作檔案每次都完好——該批卡單含帶髒話的專輯標題。
+**正確處置是先檢查檔案狀態、不要反射性重跑**：前三次檔案都完整，只有 writer-1 因為
+「全部改完才第一次寫檔」而整組 25 張遺失。重派時加的兩條防護有效，同一位置再次中斷時零損失：
+
+1. **初稿一完成就先存檔，之後就地改、每改幾張存一次。**
+2. **完工回報壓成一行，不引用專輯標題與正文內容。**
+
+**這兩條往後對長標題或敏感標題的批次應固定加進派工詞。**
+
+#### 整組研究稿寫成簡體中文（本產線首見）
+
+w2-121 的 e 組十張全中、四百餘處。QA 攔下了，沒流到下游。已在 `research-base.md` 加警告框，
+要求交件前**用程式逐字檢查、不要用眼睛掃**——主線自己在這裡也犯了一次：
+我用眼睛掃一串 621 字的密集字表，把繁體字誤認成簡體、判定「字表轉換不會收斂」，因而多發了一次代理請求
+（那次還撞上過濾器）。**程式逐字驗證的結果是零殘留，轉換其實一次就完成了。**
+
+#### 卡池
+
+- **年份訂正一筆**：Brian Eno《My Life in the Bush of Ghosts》1980 → 1981（實際發行日 1981 年 2 月 25 日）。
+  以字串替換保留單行壓縮格式、位元組數不變、已備份。
+- **查到但不動的兩筆**：Arovane《Atol Scrap》的發行日來源衝突（MusicBrainz 記 1999 年 12 月、
+  零售登錄 2000 年 1 月）——這種程度的分歧不動卡池，正文改成不寫月份、只寫它早於《Tides》；
+  Venetian Snares《Winter in the Belly of a Snake》版權頁記 2002、實際因壓片問題延到 2003 年 1 月
+  ——卡池登錄值有來源，不是錯誤。
+- **待處理（延續前輪）**：w2-128 的 `ice?|rhyme pays`（藝人字串含私有區字元 U+E45F，
+  是 `Ice‐T｜Rhyme Pays` 的編碼損壞重複卡）。
+
+#### 主要檔案
+
+`desc-restyle/prompts/{hook,writer,research}-base.md`、`desc-restyle/ELECTRONIC_LEDGER.md`、
+`desc-restyle/batches/w2-1{17,18,19,20,21}-kv.json`、
+`desc-restyle/batches/output/w2-1{17,18,19,20,21}-out-{1,2}.json`、
+`desc-restyle/progress.json`、`dip-vinyl-shop/seed_cards.json`。
 ### 2026-08-09｜desc-restyle w2-113 至 w2-116 上線（197 張）；electronic 家族開跑；店主兩項裁定
 
 - Repo：`dip-vinyl-shop`（`seed_cards.json` 與本備忘錄）；內容改動在 Worker KV 的 `desc2:` 與 `desc-restyle/`。
