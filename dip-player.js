@@ -420,6 +420,11 @@
   // 串流把音訊焦點搶回去時，我們這邊會被系統中斷：iOS Safari 把 AudioContext 轉成
   // 'interrupted'，Android Chrome 則是在播放中被 suspend。只在「自認正在播」時才判定，
   // 否則分頁切到背景造成的正常 suspend 會被誤判成使用者要聽串流。
+  // 已知取捨：Android 只給得出 'suspended'，分不出「別的 App 搶走」與「使用者把瀏覽器
+  // 切到背景」。這裡刻意兩者都視為要閉嘴——店主的第一優先是不打斷串流，誤判的代價
+  // 只是下次要再點一下 🔊，漏判的代價卻是繼續被打斷。
+  // 不會無限遞迴：revoke → releaseAudio → stop() 先把 previewBufferSource 清成 null，
+  // 接著自己呼叫的 suspend() 再觸發 statechange 時就會在第一行被擋下。
   function watchAudioInterruption(ctx) {
     try {
       ctx.addEventListener?.('statechange', () => {
