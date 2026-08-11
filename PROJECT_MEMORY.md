@@ -1,5 +1,54 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-11｜desc-restyle（無 git）＋ dip-vinyl-shop｜wave3 w3-03..05 上線、w3-07..10 研究波
+
+**上線**：w3-03（19 張）、w3-04（40 張）、w3-05（10 張）推上 KV 並逐字驗證一致，前台抽驗五張皆 KV-HIT。
+wave3 累計上線 115 張。w3-03 移除 Eddie Harris《Listen Here》（池內保留他的《The Electrifying Eddie Harris》），
+卡池 7,502→7,501。**KV 的 desc2／desc4 已清乾淨，但 `rating4:eddie harris|listen here` 還留著一個孤兒**，
+三軸資料無卡可對、不影響前台，日後做 KV 清理時一併刪。
+卡池更正八筆年份與兩筆曲風：年份是 Chet Baker《When Sunny Gets Blue》1988→1986、
+Abdullah Ibrahim《Banyana》1981→1976 與《Africa - Tears and Laughter》1991→1979、
+Tomasz Stańko《Music 81》1983→1984、《Wolność w sierpniu》2005→2006、《Peyotl - Witkacy》2004→1986，
+以及兩張 Dizzy Gillespie 的 Pleyel 現場**年份對調**（1948 那場標成 1953、1953 那場標成 1962）；
+曲風是 Kenny Larkin《Metaphor》jazz+soul→electronic+jazz（底特律 techno 被標成爵士靈魂）、
+橫田進《Over Head》jazz+soul→electronic。
+**待裁示**：研究層回報 Butcher Brown《Triple Trey (Instrumentals)》是同年《Triple Trey》抽掉人聲的純演奏版
+（曲目編曲錄音完全相同），這張最後保留並照常寫了簡介，是否比照衍生版本移除未定。人工審稿修 6 處，其中 w3-04 的《Leosia》是 hook 前提錯誤——
+hook 寫「組了一支新四重奏」，但同四人 1993 年已錄過《Bosonossa》，寫作層照規矩沒動 hook、只回報，
+主線三層同步改成「錄音地點挪到了奧斯陸」。
+
+**研究波（新流程首度執行）**：依 2026-08-11 的裁定，w3-07 起先把研究全部做完再整頓卡單、重切批次，
+才開始 hook 與寫作。本輪跑完 w3-07..10 共 164 張／20 組，全部通過 `qa-batch research`
+（三組半形逗號貼中文已用程式正規化，《》〈〉內原文標題有保護）。**因額度考量停在 w3-10。**
+
+**產線改動**：
+- 新增 `desc-restyle/mk-research-groups.mjs`——把卡單切成組檔（`batches/groups/`）並產出批次備註
+  （`batches/notes/`，內含多卡藝人分軸清單、專輯名撞名的重複卡候選、oldDesc 稽核名單、
+  `prior-context.mjs` 的同藝人既有資料）。派工詞不再逐字打卡單，改叫代理去讀檔——
+  23 批共 99 份組檔與 23 份備註已一次產好，w3-11..29 續跑時不必重做。
+- **小批不再硬切五組**：五組的理由是中斷保險，8 張的批本來就沒有損失面。改成每組 8–9 張後，
+  23 批的代理數從 115 降到 99。
+- 新增 `desc-restyle/sum-findings.mjs`——把各組 findings 攤成一張整頓清單。
+
+**研究層查出（尚未執行，等全部批次做完一次整頓）**：卡池問題 50 條——
+年份 25（幾乎全是重發年或錄音年冒充發行年，Tommy Flanagan《Confirmation》1999→1982 落差十七年）、
+掛名 14、曲風 3（Brigitte Fontaine 三張被誤標 jazz，疑似沿用《Comme à la radio》的標籤）、
+重複卡 2、建議移除 2、待裁示 4。同人異名 5 條、舊稿錯誤 6 條、共用骨架 95 條。
+最重要的是 **Art Ensemble of Chicago 與 Don Cherry「mu」兩個重複卡叢集**：
+前者的《A.A.C.M., Great Black Music - A Jackson in Your House》與已上線的《A Jackson in Your House》
+是同一張 BYG Actuel 529.302，差別只在封面印的完整系列標題；後者有四層包裝。
+這兩組都是批次備註的「多卡藝人」欄自動攤開後才被代理一次看見的。
+
+**舊稿錯誤（線上還有四百多張同期稿，這是系統性稽核的價值）**：Bill Dixon《Intents and Purposes》
+被寫成「首張個人掛名專輯」（1963、1964 已有兩張）且 RCA 委託的成因寫錯；
+Stan Getz & Bill Evans 的節奏組漏掉 Richard Davis、雪藏原因是樂評推測而非定論；
+Tomasz Stańko《Music for K》寫成有鋼琴（五重奏是小號＋雙薩克斯風＋貝斯＋鼓）；
+Tommy Flanagan《Thelonica》寫成鋼琴獨奏專輯（八曲只有頭尾兩曲是獨奏）。
+
+**主要檔案**：desc-restyle/{mk-research-groups,sum-findings}.mjs、batches/{groups,notes,research,findings}/、
+progress.json、dip-vinyl-shop/seed_cards.json（7,501 筆）。
+**驗證**：w3-03/04/05 KV 逐字一致（19/19、40/40、10/10）；w3-07..10 研究稿 20 組張數與 key 逐字對齊、findings 四陣列齊備。
+
 ### 2026-08-11｜wave3 開跑：w3-01（6 張）與 w3-02（40 張）上線
 
 - Repo：`dip-vinyl-shop`（移除 3 張、藝人欄 6 筆、年份 6 筆、曲風 1 筆）、
