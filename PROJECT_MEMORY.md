@@ -1,5 +1,103 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-11｜wave3 開跑：w3-01（6 張）與 w3-02（40 張）上線
+
+- Repo：`dip-vinyl-shop`（移除 3 張、藝人欄 6 筆、年份 6 筆、曲風 1 筆）、
+  `desc-restyle`（W3_PLAN.md、卡單 29 檔、writer-base 補一條、verify-kv 正規式）。
+- 驗收：w3-01 KV 6/6、w3-02 KV 40/40 逐字一致；前台各抽驗 4–5 張（帶 cache-buster）全部命中新稿。
+  非 CJK 卡回的是 `KV-HIT` 而不是 `KV-HIT-RESTYLED`，那是走一般 desc2 路徑、不是 CJK 優先分支，正常。
+
+## w3-01（6 張，日本爵士）：先改藝人欄才開寫
+
+這批的重點是**前置作業**。6 張的卡池藝人欄都是羅馬字，研究層逐一查證後改成日文原名，
+**改完才凍結卡單開寫**——避免重演早上那次「寫完才發現要改藝人欄、得回頭搬 KV key」。
+因為這批全是補寫卡（沒有 desc2），實際上不用搬 KV，只動卡池、卡單、研究稿 key 與 Firestore。
+
+| 舊 | 新 | 附帶 |
+|---|---|---|
+| Naosuke Miyamoto Sextet | 宮本直介セクステット | |
+| Sunao Wada Quartet | 和田直カルテット | 年份 1973 → **1977**（他在 TBM 的最後一張） |
+| Sunao Wada Quintet + 1 | **和田直** | 年份 2006 → **1972**（TBM-12 原版，2006 是 SACD 重發年） |
+| Koji Moriyama | 森山浩二 + 山本剛トリオ | **聯名作**，山本剛トリオ整團伴奏 |
+| New Direction Unit | 高柳昌行ニュー・ディレクション・ユニット | |
+| Ayako Hosokawa | 細川綾子 | |
+
+**《Coco's Blues》我沒照研究層的建議**：它建議「和田直カルテット・セクステット」但自評只有中信心，
+我改用最保守的「和田直」。**卡片標題不該押在查不實的字串上**，編制在四／六重奏之間切換這件事
+寫進簡介即可。這條原則值得沿用。
+
+**研究稿有一處串行誤植**：井野信義與鈴木勲都被標成「貝斯、大提琴」，兩位通行身分都是低音提琴手。
+hook 層先發現、寫作層確認影響兩張，正文都只寫貝斯。**同一份研究稿裡出現重複的樂器兼任寫法時，要警覺是串行。**
+
+**人工審稿修 2 處，都在細川綾子那張**：伴奏樂團寫成「T. Miyama & The New Herd」——
+`writer-base.md` 第 191 行的舉例正好就是「宮間利之とニューハード」，這是明確違規；
+另一處是「婚後移居美國，這位爵士鋼琴家兼樂團領班替她牽線」**指代不清**，讀起來像在講她丈夫，
+改成明寫 Earl Hines。
+
+## w3-02（40 張，爵士×靈魂樂）：移除 3 張、修正 5 筆
+
+研究層 c 組查出 7 張裡 5 張身分有問題，我逐一覆核後依常設裁定**移除 3 張**：
+
+- **Nina Simone《Ne me quitte pas》**——Philips 452.045 BE，法國四曲 7 吋 EP，曲目取自她的 Philips
+  專輯，市場改包裝、無原創內容。
+- **Nina Simone《Right On!》**——1972 Roker 小廠牌發行的 1968 蒙特勒現場；該場演出的權威版本是
+  2021 年官方《The Montreux Years》。
+- **Mahalia Jackson《Negro Spirituals, Vol. 2》**——1962 法國 Philips 把 1946–54 的 Apollo 舊錄音
+  重新包裝，同名發行在歐洲有五種以上版號，無彙整論述。
+
+**《In the Upper Room》保留**：那是 1959 年 Apollo（KLP 474）的正規發行，
+1950 年代福音樂本來就是把單曲集結成專輯，卡池標的 1984 是法國重發年。
+
+**年份更正四筆全是同一種錯法——重發年冒充發行年**：《In the Upper Room》1984→1959、
+Urszula Dudziak《Future Talk》2008→1979、Baden Powell《Estudos》1974→1971、
+Terry Callier《The New Folk Sound》1965→1968（這筆例外，1965 是原訂發行年，製作人錄完赴墨西哥而延宕）。
+另修 Anita Baker《Giving You the Best That I Got》的曲風標籤 `jazz+hiphop` → `soul`。
+
+**研究層推翻主線四處**：Maze 不是伴奏班底出身（The Butlers 與 Raw Soul 都是 Frankie Beverly
+自己領銜主唱，與 Marvin Gaye 是巡演開場嘉賓關係）、Baden Powell 那四張不是都在 Villingen 錄
+（《Tristeza》錄於里約、《Estudos》是 1971 夏威夷／Elenco 原發）、四張裡查無任何 Jobim 曲目、
+Steve Lacy 是巴黎時期不是羅馬。
+
+## `oldDesc` 稽核：這一波新加的機制，第一批就有收穫
+
+把既有簡介當**稽核對象**而非來源，四組研究回報抓到六處舊稿錯誤：
+
+1. Roy Ayers《Change Up the Groove》的「AllMusic 四星」查無來源。
+2. Roy Ayers《A Tear to a Smile》把同團《Virgo Red》的**錄音工程師** James Green 寫成本張的協同製作人。
+3. Azymuth《Light as a Feather》的「銷量逾五十萬張」查無來源。
+4. Terry Callier《Lifetime》的廠牌寫錯——Verve Forecast 是前作《Timepeace》的廠牌，本張是
+   Talkin Loud／Blue Thumb。
+5. Anita Baker《The Songstress》的「出道即賣三十萬張」**方向反了**：獨立廠牌通路有限，
+   當時沒賣動，30.7 萬是 1992–2007 的累計數字。
+6. Dee Dee Bridgewater《Afro Blue》把 Cecil Bridgewater 誤植成她兄弟，實際是**當時的丈夫**。
+
+**線上還有四百多張同期舊稿，這條回報線要一直開著。**
+
+## 一個新的失敗模式：改年份會把 facts 掏空
+
+Mahalia Jackson《In the Upper Room》的年份從 1984 改成 1959 之後，
+**研究層原本三條 facts 全錨在 1984 年法國版上**，加上「不得交代重發」的禁令，
+等於整張沒有可用素材；而我指派的「拒絕唱世俗音樂」骨架研究層也明說沒找到來源。
+是 hook 層回報才發現的。Urszula Dudziak《Future Talk》同樣情況。
+**兩張都由主線另行查證補入有來源的事實**（Bess Berman 要她錄藍調她拒絕、1937 年 Decca 也因此放棄她；
+《Future Talk》的 Music Farm Studios、Bob Ludwig、以及「全碟無疊錄」這條剛好撐住 hook 的軸），
+status 由 thin 升為 full。
+
+**教訓：更正年份或下重發禁令之前，先確認該張的 facts 不是全部錨在被否定的那個版本上。**
+
+## 工具與規則
+
+- `writer-base.md` 補一條：**爵士與靈魂樂批次的字數低估與 CJK 批次同病**。
+  三組獨立回報初稿單向超標、無一張掉下限（writer-1 是 9 張裡 8 張、writer-4 是 11 張裡 9 張、
+  中位 +30）。根因不是日文，是這兩個曲風一張唱片要點名四到六個拉丁專名
+  （〈Papa Was a Rolling Stone〉吃 25 字元、A Tribe Called Quest 20）。**3 個專名的上限一體適用。**
+- `writer-base.md` 第 190 行的舉例改掉：原本拿「キングギドラ → King Giddra」示範全片假名改羅馬字，
+  但那正好是卡池藝人欄，與新增的「本卡藝人名照卡池逐字寫」互相打架，改用レイ・ハラカミ。
+- `verify-kv.mjs` 的批次名正規式加入 `w3-\\d+`。
+
+**主要檔案**：`dip-vinyl-shop/seed_cards.json`、`desc-restyle/W3_PLAN.md`、
+`desc-restyle/prompts/writer-base.md`、`desc-restyle/batches/{w3-01,w3-02}-kv.json`、
+`desc-restyle/REMOVE_W3-02.json`。
 ### 2026-08-11｜戸谷重子改名＋第二階段（wave3）規劃完成、開跑
 
 - Repo：`dip-vinyl-shop`（seed_cards.json 一筆藝人欄）、`desc-restyle`（W3_PLAN.md、卡單 29 檔、工具兩處修正）。
