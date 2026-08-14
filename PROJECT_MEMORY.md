@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜歌荒救星 hub 改可收合分組、拿掉深色卡
+
+- Repo：`dip-vinyl-shop`
+- 店主回饋：深色 `.feature` 大卡不好看、分組要可以收起來。**全部卡片改回白底**
+  （`.feature` 樣式與用法一併移除），「找一張來聽」與「你的收藏」的標題改成
+  `<button class="homehub-group-label" data-group aria-expanded>`，點擊 toggle 相鄰
+  `.homehub-group-body`（純 CSS `[aria-expanded="false"] + .homehub-group-body { display:none }`），
+  箭頭 caret 收合時 rotate(-90deg)。收合狀態存 `localStorage` 的 `dipHubGroup:find|mine`，預設展開。
+- **品味生死鬥不歸在任何分組**，獨立一張 `.homehub-solo`（上留白＋border-top），不可收合。
+- 「搜尋專輯」標題改用 `.homehub-search-label`，與可收合分組標題區隔（否則會有 pointer 游標卻點不動）。
+- 主要檔案：`index.html`。
+- 驗證：本機實測——深色卡 0 張、卡片底色 rgb(255,255,255)；順序為 找一張來聽→三張→品味生死鬥→
+  你的收藏→三張→搜尋專輯；點標題 body display 在 block/none 間切換且寫入 localStorage，
+  重整後「你的收藏」維持收合、「找一張來聽」維持展開；手機 378px 無橫向捲動（收合 809px／展開 972px）。
+  caret 旋轉以停用 transition 驗得 matrix(0,-1,1,0,0,0)——**Browser pane 未顯示時頁面不合成畫面，
+  CSS transition 不會推進，量 computed transform 會停在起始值**，日後驗證動畫要注意這點。
+
 ### 2026-08-14｜歌荒救星首頁 hub 三段式分組改版
 
 - Repo：`dip-vinyl-shop`
