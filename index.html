@@ -390,28 +390,31 @@
     }
     .homehub-card:hover { background: #111; color: #fff; }
     .homehub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
-    .homehub-beta { display: inline-block; margin-left: 8px; font-size: 8px; font-weight: 700; letter-spacing: 0.16em; vertical-align: 2px; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; animation: betaBlink 2.4s ease-in-out infinite; }
+    /* BETA 標籤絕對定位貼在卡名右側：不佔寬度，才不會把「品味生死鬥」四字推離置中 */
+    .homehub-beta { position: absolute; left: calc(100% + 8px); top: 50%; transform: translateY(-50%); white-space: nowrap; font-size: 8px; font-weight: 700; letter-spacing: 0.16em; border: 1px solid currentColor; padding: 1px 5px; border-radius: 2px; animation: betaBlink 2.4s ease-in-out infinite; }
     @keyframes betaBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
     .homehub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
     .homehub-card:hover .homehub-card-desc { color: #bbb; }
     .homehub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
     /* hub 分組標題：可點擊收合，字級與獨立卡「品味生死鬥」同大 */
     .homehub-group-label {
-      width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;
-      padding: 26px 20px 14px; background: none; border: none; cursor: pointer;
+      position: relative; width: 100%; display: flex; align-items: center; justify-content: center;
+      padding: 22px 44px; background: none; border: none; border-bottom: 1px solid var(--line); cursor: pointer;
       font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--black);
     }
     .homehub-group-label:hover { opacity: 0.6; }
-    .homehub-group-caret { font-size: 9px; font-weight: 400; letter-spacing: 0; color: var(--gray); transition: transform 0.2s; }
-    .homehub-group-label[aria-expanded="false"] .homehub-group-caret { transform: rotate(-90deg); }
+    /* caret 絕對定位在右側（與卡片箭頭同一條線）：不佔寬度，標題文字才真正置中 */
+    .homehub-group-caret { position: absolute; right: 24px; top: 50%; font-size: 9px; font-weight: 400; letter-spacing: 0; color: var(--gray); transform: translateY(-50%); transition: transform 0.2s; }
+    .homehub-group-label[aria-expanded="false"] .homehub-group-caret { transform: translateY(-50%) rotate(-90deg); }
     .homehub-group-label[aria-expanded="false"] + .homehub-group-body { display: none; }
     /* 分組內的子項目比分組標題／獨立卡小一級 */
     .homehub-group-body .homehub-card { padding: 22px 44px; }
     .homehub-group-body .homehub-card-name { font-size: 12px; margin-bottom: 4px; }
     .homehub-group-body .homehub-card-desc { font-size: 9px; }
-    /* 品味生死鬥：不歸在任何可收合分組，獨立一張；無副標題，卡名不留下緣空白 */
-    .homehub-solo { margin-top: 24px; border-top: 1px solid var(--line); }
-    .homehub-solo .homehub-card-name { margin-bottom: 0; }
+    /* 品味生死鬥：與兩個分組標題等高同列，三行才對得齊 */
+    .homehub-solo { padding: 22px 44px; }
+    /* inline-block 讓卡名寬度貼合文字，BETA 才能定位在文字右緣而不是容器右緣 */
+    .homehub-solo .homehub-card-name { margin-bottom: 0; position: relative; display: inline-block; }
     /* 「你的收藏」小卡兩欄 */
     .homehub-small-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
     .homehub-small-grid .homehub-card { padding: 18px 14px; }
@@ -420,7 +423,7 @@
     .homehub-small-grid .homehub-card-name { font-size: 12px; margin-bottom: 4px; }
     .homehub-small-grid .homehub-card-desc { font-size: 9px; }
     /* hub 搜尋列：搜尋專輯降級為工具列，不佔卡位（標題不可收合，與分組標題區隔） */
-    .homehub-search-label { padding: 26px 20px 14px; text-align: center; font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--black); }
+    .homehub-search-label { padding: 22px 44px 16px; text-align: center; font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--black); }
     .homehub-search { display: flex; width: min(420px, calc(100% - 40px)); margin: 0 auto 44px; border: 1px solid var(--line); }
     .homehub-search input { flex: 1 1 auto; min-width: 0; border: none; padding: 12px 14px; font-family: var(--mono); font-size: 12px; outline: none; background: none; color: var(--black); }
     .homehub-search button { flex: 0 0 auto; border: none; background: var(--black); color: #fff; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; padding: 0 18px; cursor: pointer; }

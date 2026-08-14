@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜歌荒救星 hub：三個主項目文字對齊、等高同列
+
+- Repo：`dip-vinyl-shop`
+- 店主回報介面亂、「品味生死鬥」偏左、標題上下沒置中。**根因是 BETA 標籤與收合 caret 都算進了
+  flex 置中的寬度**，把文字推離中線（BETA 約推 19px、caret 約推 9.5px，三行各偏一點所以對不齊）。
+- 修法：兩者都改 `position:absolute` 脫離排版流——`.homehub-beta` 定位在
+  `left: calc(100% + 8px)`（需搭配 `.homehub-solo .homehub-card-name` 設 `position:relative; display:inline-block`，
+  否則 100% 是容器寬不是文字寬）；`.homehub-group-caret` 定位 `right:24px`，與卡片箭頭 `right:20px`
+  的字形右緣對齊（→ 的 advance width 較寬，同樣 right 值會差 4px）。
+  caret 收合旋轉要寫成 `translateY(-50%) rotate(-90deg)`，否則會覆蓋掉垂直置中的 transform。
+- 同時把三行做成**等高同列**：分組標題 padding 改對稱 `22px 44px` 並加 `border-bottom`，
+  `.homehub-solo` 拿掉 `margin-top:24px` 與 `border-top`、padding 改 `22px 44px`（原本吃 `.homehub-card` 的 28px）。
+- 主要檔案：`index.html`。
+- 驗證：以 Range 量文字節點實際 bounding rect——找一張來聽／品味生死鬥／你的收藏／搜尋專輯
+  四行文字中心**全部 187.5px＝hub 正中**（「找一張來聽」與「品味生死鬥」同為五字，left/right 都是 147/228）；
+  三行等高 67.2px、間距 0；caret 右緣 355.1 對箭頭 355；展開後子卡接續整齊，手機 377px 無橫向溢出。
+
 ### 2026-08-14｜歌荒救星 hub：分組預設收起、品味生死鬥拿掉副標題
 
 - Repo：`dip-vinyl-shop`
