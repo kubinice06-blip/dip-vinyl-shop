@@ -4893,6 +4893,85 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-14｜shop｜jazz+hiphop 雙標稽核：22 張移除 jazz，卡片零移除
+
+稽核兩池裡同時掛 jazz 與 hiphop 的卡：**seed 118 張＋apex 2 張，合計 120 張**。
+只掃 seed 會漏掉 apex，兩個都掃過。apex 兩張（Nas《Illmatic》、
+ATCQ《The Low End Theory》）是 jazz rap 正解，**不動**。
+
+**判定：移除 22 張、待人工裁示 33 張、保留 65 張。**
+判準是這張唱片有無真的取用爵士素材或編制（取樣爵士唱片、真人爵士樂手參與、
+爵士和聲語彙），不看藝人知名度；不確定的一律保留並列待裁示，不猜。
+
+## 誤標來源是整批匯入，不是逐張失準
+
+**索引 6370–6521 是一段連續的 90 年代 R&B／new jack swing 匯入批次，整批被一律掛上 jazz。**
+Guy《The Future》、Blackstreet、Jodeci、Total、Troop、Today、After 7、Color Me Badd、
+Christopher Williams、Boyz II Men、Johnny Gill、Wreckx-n-Effect、Heavy D、Usher、
+Mary J. Blige《What's the 411?》、Janet Jackson《janet.》、Avant 全在這一段裡。
+加上店主點名的 Janet Jackson《Control》(1488)、Timbaland & Magoo《Welcome to Our World》(1572)，
+以及同製作路線的 Timbaland《Indecent Proposal》(5393)、
+Aaliyah《Age Ain't Nothing but a Number》(4872)、The Weeknd《Kiss Land》(4460)，共 22 張。
+
+Wreckx-n-Effect 值得記一筆：《Hard or Smooth》的招牌薩克斯風句取自
+Lafayette Afro Rock Band，是非洲放克不是爵士——這種「聽到薩克斯風就掛 jazz」
+是雙標誤判的典型來源。
+
+**待裁示 33 張**分三堆（傾向保留／傾向移除／資料不足），本輪一律保留 jazz，
+清單在下方「下一步」。
+
+## 只改 genres 欄，卡片一張都沒移除
+
+seed 這 118 張的 genres 欄**全部剛好只有 `["jazz","hiphop"]` 兩個標籤**，
+移除 jazz 後一律剩 `["hiphop"]`，不會生出空陣列、不會有卡掉進「哪一派都抽不到」。
+
+`JSON.stringify(JSON.parse(raw))===raw` 先驗過為真（單行無縮排），
+所以寫回零附帶排版差異。
+
+## 主要檔案
+
+- `seed_cards.json`（22 列的 genres 欄）
+- `seed_cards.backup-before-jazz-hiphop-audit.json`（備份，未進版控）
+- `apex_pool.json` **未動**（工作區裡它的 modified 是 15:50 的 Ayler 掛名修正，
+  非本次，未一併提交）
+
+## 驗證
+
+- 逐列比對 7485 列：**差異列數 22（=目標數），非目標列或非 genres 欄變動 0**。
+  年份、藝人、專輯名、三圍全部零變動。
+- **hiphop 標籤總數 1276 → 1276 完全不變**（沒有任何卡消失或掉標）；jazz 1634 → 1612。
+- 改後仍雙標 96 張；空 genres 仍 53 張（原檔就有，與本次無關）；曲風詞彙越界 0。
+
+## KV／Firestore 確認不必動
+
+三個前端（`index.html:3729`、`battle.html:918`、`roguelike.html:823`）都直接 fetch
+靜態 JSON，抽卡在 `index.html:3756` 用 `c.genres.includes(gpGenre)` 過濾。
+worker 的 `/album-genres` 是音樂地圖用的 MusicBrainz 曲風（`validMapGenres` 過濾
+`MUSIC_MAP_GENRES`），與六派抽卡無關；簡介走 `desc2:` KV 與 Firestore `card_catalog`，
+不含 genres 欄。**改曲風只需改 JSON 並部署。**
+
+## 順帶發現（未處理）
+
+1. **53 張卡的 genres 是空陣列，任何派系都抽不到**——Elvin Jones & Richard Davis
+   《Heavy Sounds》、Run-D.M.C.《King of Rock》《Down With the King》、蘇打綠《小宇宙》、
+   Rubén Blades & Willie Colón《Siembra》等。原檔就有的孤兒卡。
+2. 兩池曲風詞彙零越界，全部落在十個固定詞內。
+3. A 區有幾張（Johnny Gill、After 7、Boyz II Men、Total、Christopher Williams）
+   **連 hiphop 都可疑**，是純 R&B；移掉 jazz 後仍只憑 hiphop 進嘻哈牌組。
+4. 派工單提到的 ATCQ《Midnight Sun...》兩池查無此卡，最接近的是《Midnight Marauders》。
+
+## 下一步
+
+待裁示 33 張的完整清單見本筆上方判定；傾向移除的九張是
+Kendrick《Mr. Morale》(1806)、ScHoolboy Q《Blank Face LP》(1808)、
+Isaiah Rashad《The Sun's Tirade》(1811)、J. Cole《2014 Forest Hills Drive》(1876)、
+Mac Miller《GO:OD AM》(4760)、Open Mike Eagle《Brick Body Kids》(1886)、
+New Kingdom《Paradise Don't Come Cheap》(6875)、Zion.T《OO》(6456)、
+Big K.R.I.T.《4eva Is a Mighty Long Time》(6670)；
+資料不足兩張是 Chance《Star Line》(4415, 2025)、A$AP Rocky《Don't Be Dumb》(5307, 2026)。
+其餘 22 張傾向保留（Madlib／DOOM／billy woods／Earl 等有爵士取樣痕跡但無法逐軌指名來源）。
+
+
 ### 2026-08-10（同日第三次追加）｜shop｜真兇：`unlock()` 的呼叫點根本不看音樂開關
 
 前兩筆修完仍未解決。店主給的第三個線索定案了本案：
