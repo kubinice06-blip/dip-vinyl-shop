@@ -1,5 +1,69 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜desc-restyle（無 git）｜r-07..r-10 上線 168 張，接力十批收工
+
+接力模式續跑第七至十批，四批各 42 張。研究層早已完成，每批只跑 hook 2 組＋寫作 2 組。
+**卡池與 KV 的整頓資料這一輪沒有再動**（年份／曲風／掛名／移除都在 08-13 那批做完）。
+
+| 批次 | 張數 | 家族 | 審稿修正 |
+|---|---|---|---|
+| r-07 | 42 | ECM／Black Saint 爵士 | **0** |
+| r-08 | 42 | 義大利廠牌爵士 | **0** |
+| r-09 | 42 | 自由爵士 | 2 |
+| r-10 | 42 | 爵士（大人物集中批） | 1 |
+
+**接力十批合計 r-01..r-10 共 349 張，KV 全部逐字驗證一致。**
+
+## 重切的效果在 r-10 兌現
+
+r-10 是重切設計的壓力測試：**Anthony Braxton 八張、Cecil Taylor 六張、
+World Saxophone Quartet 三張、Dexter Gordon 三張、Stéphane Grappelli 三張全部落在同一批**。
+舊切法下這些會散進五、六批各寫各的，互相撞軸而且沒人看得見。同批之後：
+
+- 三張編號四重奏（1983／1984／1986）靠**鋼琴席位的人事更迭**切開——1983 是長號手 George Lewis 頂替、
+  1984 是 Marilyn Crispell 首度加入、1986 是鋼琴與貝斯同時換血只剩鼓手銜接。**不用任何序數宣稱。**
+- 六張 Cecil Taylor 全部避開已上線的《Conquistador!》《Silent Tongues》《Unit Structures》三條軸。
+- 三張 Dexter Gordon 一律不寫「1962 年移居哥本哈根」；三張 WSQ 不重複「四把薩克斯風、無節奏組」。
+
+## 審稿修正
+
+**r-09（2 處）**：Mary Lou Williams 那張出現一份沒頭沒尾的排名，具名回《The Penguin Guide to Jazz》；
+另一處是研究稿把 Albert Mangelsdorff 的無伴奏獨奏樂器誤寫成長笛，
+依 `hook-base.md`「遇到與樂手身分矛盾的細節就降級成不指定寫法」處理，**沒有擅自改成自己以為對的樂器**。
+
+**r-10（1 處，值得記下來）**：Billy Harper《In Europe》原稿以
+「Bonandrini 1977 年買下 Black Saint、1979 年再創立 Soul Note」開場。
+回查全池 40 餘筆帶 src 的 Bonandrini 事實，**只證得出「他是 Soul Note 創辦人」與「本作是該廠第一張正式發行」，
+那組 1977／1979 年份一筆 src 都沒有——它只出現在該卡研究稿的 `notes` 欄**。
+依 `hook-base.md`「`notes` ≠ `facts`」降級成只留有來源的部分。
+這條規則是 08-11 寫進去的，這是它第一次在審稿階段真的攔下東西。
+
+順帶修了研究稿兩處錯字（`Rosenberg Studie` → `Studio`，十份研究稿裡八份寫 Studio，
+同批 Dexter Gordon 那張也寫 Studio），避免日後批次繼承。
+
+## 中斷處理
+
+r-10 的 writer-1 在**修剪階段**吃到一次 529 Overloaded（伺服器端，不是內容過濾器）。
+產出檔已完整落地，驗過張數、key 順序、首句與 hook 逐字相符之後**沒有重跑**，
+由主線代為把六張 241–272 字整格捨去壓回 188–239。這比重跑整組便宜得多。
+
+## 主要檔案
+
+- `desc-restyle/batches/output/r-0[789]-out-*.json`、`r-10-out-*.json`
+- `desc-restyle/batches/r-0[789]-kv.json`、`r-10-kv.json`（已 bulk put）
+- `desc-restyle/batches/research/r-10-a.json`、`w3-08-a.json`（錯字）
+- `desc-restyle/progress.json`（r-07..r-10 四筆＋status）
+
+## 驗證
+
+`node verify-kv.mjs r-07 r-08 r-09 r-10` → 四批各 42 張，一致 168、不符 0。
+
+## 下一步
+
+**r-11**。重切後總共 r-01..r-23 共 845 張，已上線 349 張，剩 13 批 496 張尚未進 hook。
+共用骨架帳本在 `desc-restyle/batches/recut/LEDGER.md`。
+
+
 ### 2026-08-11｜desc-restyle（無 git）｜wave3 重切後開跑：r-01..r-06 上線 181 張
 
 接力模式（A 批進寫作時 B 批開 hook，**審稿與上線嚴格一次一批、照批次順序**）。
