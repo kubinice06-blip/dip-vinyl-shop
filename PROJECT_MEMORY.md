@@ -1,5 +1,107 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜desc-restyle（無 git）｜r-11..r-23 上線 491 張，wave3 重塑產線走完
+
+接力模式一路跑完剩下的十三批。**重切後的 r-01..r-23 共 23 批全部上線**，wave3 至此結束。
+
+| 批次 | 張數 | 家族 | 審稿修正 |
+|---|---|---|---|
+| r-11 | 41 | 爵士（Chet Baker 7、George Russell 6） | 6 |
+| r-12 | 41 | 爵士（Jarrett 標準三重奏 7、Paul Bley 6） | 7 |
+| r-13 | 27 | 經典（Coltrane 3、Miles 2、Rollins） | 5 |
+| r-14 | 32 | Komeda 6、TOWA TEI 3、Venus 4 | 3 |
+| r-15 | 32 | 當代爵士（Christian Scott 5、Ill Considered 4） | 1 |
+| r-16 | 41 | 混合（前衛／工業／噪音／古典） | 2 |
+| r-17 | 43 | 搖滾／流行（35 位藝人有已上線卡） | 2 |
+| r-18 | 40 | 靈魂（Betty Wright 8、Shirley Brown 5） | 1 |
+| r-19 | 38 | 靈魂（Candi Staton 7、Spinners 5） | 4 |
+| r-20 | 39 | 放克（Staple Singers 6、Mandrill 6） | 1 |
+| r-21 | 39 | 靈魂（Impressions 6、Tower of Power 6） | 5 |
+| r-22 | 39 | 靈魂（Isley 6、Stevie Wonder 5） | 1 |
+| r-23 | 39 | 放克（James Brown 6、War 5、Cameo 5） | **0** |
+
+**十三批 491 張，KV 全部逐字驗證一致。**
+
+## 卡池整理：這一輪移除 4 張、更正 3 處
+
+- **Albert Ayler《Spiritual Unity》重複卡**：apex_pool 掛「Albert Ayler」（已上線、heresy 級）與 seed_cards 掛「Albert Ayler Trio」（待寫）指向同一張唱片。
+  ESP 1002 封面與 Discogs 全部版次都掛 Trio，但不能直接刪 apex 那張（會動到頂級牌分層），
+  所以走「apex 改掛名 + seed 刪重複」，四處同步：卡池、KV（新 key 寫入舊 key 刪除）、
+  Firestore（兩份 doc 欄位互補，把 apex／tier 併進存活的那份、覆核後才刪舊 doc）、r-13 卡單與研究稿。
+- **Sidney Bechet《Petite Fleur》《100 Ans De Jazz》、John Coltrane《Live Trane》**：三張無歷史定位的選輯／重發，依常設裁定移除。
+- **Bobby Womack《I Still Love You》**：查實是 1987 年 MCA《The Last Soul Man》的預算線改名重發（曲目相同、拿其中一首歌當新標題），移除並刪 KV 孤兒鍵。
+- 年份更正：Erroll Garner《Erroll Garner》1951→1953、Albert Ayler《Ghosts》1964→1965；專輯名錯字 Clark Terry 的 Balled→Ballad。
+- seed_cards 7,489 → 7,484。
+
+## 兩張本來要被寫錯的卡
+
+- **《The Legacy, Volume 1》**：研究層只查到一條 facts、標 thin，並明確請主線覆核（1995 Enja 選輯 vs 1987 漢堡現場兩說矛盾）。
+  主線用三個獨立來源查實為 1987-11-14 漢堡 NDR Bigband 現場、Enja 1995-06 發行九首約 50 分鐘，
+  facts 補到四條、status 改 full、hook 重寫——它反而成了七張 Chet Baker 裡唯一的大樂團伴奏錄音。
+- **《Ross》**：舊簡介整段寫的是 1983 年 RCA 版（Gary Katz 製作、Donald Fagen 客席），
+  但卡池年份對應 1978 年 Motown 版，兩張完全不同的唱片。研究層全數更正。
+
+## 這一輪的規則落地
+
+1. **「研究稿的卡池現值是過期快照」**（寫進 `prompts/hook-base.md`）——研究稿的 poolIssue 記的是研究**當時**的卡池值，
+   而卡池整頓發生在研究之後。r-12 兩處年份、r-14 一處曲風、r-15 九處年份、r-18 一處掛名，
+   **逐一比對後十三處全部已經是正確的**。適用範圍涵蓋年份、曲風、掛名三類。
+2. **prior-context.mjs 兩個缺陷**：①把已移除的卡當「已上線」餵排除條款（全池濾掉 70 筆過期 key）；
+   ②按藝人字串精確比對，抓不到同一個人的其他掛名——r-12 的卡掛「Keith Jarrett, Gary Peacock, Jack DeJohnette」，
+   13 張掛「Keith Jarrett」的已上線卡一張都沒列出，**包括最該避開的同組三重奏《At the Blue Note》**。改成歸戶比對後補齊。
+3. **r-17 起改用 prior 檔**：該批 35 位藝人都有已上線卡，把開場句塞進派工詞會膨脹到上萬字，
+   改成把 prior-context 輸出存成 `batches/notes/r-NN-prior.md` 叫代理自己讀。
+   效果明確——六張卡因此主動換軸（Iggy Pop 讓開《Instinct》、Interpol 讓開《Marauder》的 Dave Fridmann⋯）。
+4. **chk-hook-crossgroup.mjs 重建**：我在 r-10 收尾跑 `rm -f chk-*.mjs` 把這支常設工具一起刪了（檔名符合那個 pattern）。
+   重建並在檔頭寫明清理要用帶批次前綴的 pattern；順便修掉排除條款造成的假陽性
+   （「遺作歸《Passion》」會讓三張 Seifert 被判成同構），r-11 的告警從 7 項降到 4 項。
+
+## 審稿抓到的實質錯誤（非體例）
+
+- **《Frank Wright Trio》的〈Your Prayer〉是編造的曲名**——那是他 1967 年第二張專輯的**專輯名**（該卡已上線），
+  Wikipedia 曲目是 The Earth／Jerry／The Moon。研究稿的 keyTracks 填錯，寫作層照抄。
+- **《Dancers in Love》把〈Charleston Rag〉的作曲者寫成 James P. Johnson**——實為 Eubie Blake 1899 年的作品
+  （James P. Johnson 寫的是 1923 年的〈Charleston〉）。研究稿的來源是零售商頁面。
+- **《World Wide Funk》的「那天正是他的 66 歲生日」**——主詞省略後緊接 Worrell 辭世那句，讀起來是 Worrell，
+  但享年 72 者不可能隔年過 66 歲生日。facts 寫明那是 Bootsy Collins 的生日。
+- **《Art Davis|Life》把 1985 減 1980 算成六年**、**《Cheer》的 hook 立了 BBC 專訪的懸念而正文從未收尾**、
+  **《Lost Weekend》的「該年 12 月」緊接 2026 年發行日會被讀成 2026**（實為 2022）。
+
+## 三次「研究稿互相牴觸」
+
+前十批未曾出現，這一輪三次：Mandrill《Beast from the East》與《Mandrilland》都寫「首度離開紐約錄音室」（依年份歸較早的）、
+Brothers Johnson《Blam!!》與《Light Up the Night》都自稱「連續第三張白金」（兩張都降級不寫序數）、
+以及 The Persuaders 的「Billboard Hot 100 第 105 名」（Hot 100 只到 100 名，該數字實屬 Bubbling Under）。
+
+## 體例統一（回查全池慣例後才改）
+
+`身分`（194:15）、半形 `&`（215:0）、綽號用「」（90:0 對 〝〞）、Memphis 寫 `曼菲斯`（24:13）。
+Memphis 連三批出問題（r-20 的孟斐斯、r-21 同一份裡孟菲斯與曼菲斯並存），已加進每批的 QA 掃描。
+
+## 操作教訓
+
+**KV 寫入或刪除後立刻用 bulk get 讀回會拿到過期結果**（本輪兩次：Ayler 改名、Womack 移除，都回報「仍在」），
+wrangler 直查才是可信路徑。bulk get 只適合隔一段時間後的批次核對。
+
+## 主要檔案
+
+- `desc-restyle/batches/output/r-1[1-9]-out-*.json`、`r-2[0-3]-out-*.json`
+- `desc-restyle/batches/r-1[1-9]-kv.json`、`r-2[0-3]-kv.json`（已 bulk put）
+- `desc-restyle/prompts/hook-base.md`（過期快照規則）
+- `desc-restyle/{chk-hook-crossgroup,plan-batch,prior-context,show-writer-split}.mjs`
+- `desc-restyle/progress.json`（r-11..r-23 十三筆＋status）
+- `dip-vinyl-shop/{seed_cards,apex_pool}.json`
+
+## 驗證
+
+`node verify-kv.mjs r-11 … r-23` → 十三批共 491 張，一致 491、不符 0。
+
+## 下一步
+
+wave3 走完，重切後的 845 張全數上線。卡池另有一件待辦已另立背景任務：
+**118 張同時掛 jazz 與 hiphop 的卡需要逐張稽核**（多數是 jazz rap 的正確雙標，但掃到 Janet Jackson《Control》這類明顯誤標）。
+
+
 ### 2026-08-14｜新功能：拍封面搜尋（測試版）——Haiku 視覺辨識＋卡池比對
 
 - Repo：`dip-vinyl-worker`（新端點）＋`dip-vinyl-shop`（搜尋專輯頁 UI）
