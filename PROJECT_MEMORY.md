@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-07-23｜搜尋專輯改單一 bar＋範圍下拉（全部／專輯／藝人，預設全部）
+
+- Repo：`dip-vinyl-shop`
+- 店主指示：兩個輸入欄收成一條搜尋 bar，左側加下拉單選搜尋範圍。`_asQuery` 改
+  `{ q, field }`（field=all｜album｜artist，預設 all）；`doAlbumSearch` 依 field 決定
+  matchArtist/matchAlbum，all 時任一欄含關鍵字即命中。排序改「命中欄位取較佳者
+  完全一致＞開頭＞內含，同分經典度高→低」。下拉選項與關鍵字離開返回都保留。
+- CSS 新增 `.album-search-bar`（flex：select 貼左＋input 佔滿、focus-within 邊框）。
+- 主要檔案：`index.html`
+- 驗證：本機實測——全部搜 blue 命中 127 張（專輯與藝人都中）；只搜藝人 blue 27 張
+  藝人名全含；只搜專輯 kind of blue 命中 2 張（Kind of Blue／Another Kind of Blues）；
+  下拉與關鍵字離開返回保留；點卡詳情開＋星星 3 列＋試聽 playing；空白查詢提示。
+  （console 403 是 Apple JSONP 本機被擋既有現象，試聽仍走音源地圖播放成功。）
+
 ### 2026-08-11｜desc-restyle（無 git）＋ dip-vinyl-shop｜wave3 w3-03..05 上線、w3-07..10 研究波
 
 **上線**：w3-03（19 張）、w3-04（40 張）、w3-05（10 張）推上 KV 並逐字驗證一致，前台抽驗五張皆 KV-HIT。

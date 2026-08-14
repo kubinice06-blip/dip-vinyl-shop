@@ -558,6 +558,10 @@
     .album-search-field label { display: block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
     .album-search-field input { width: 100%; border: 1px solid var(--line); padding: 12px; font-family: var(--mono); font-size: 13px; outline: none; background: none; color: var(--black); }
     .album-search-field input:focus { border-color: var(--black); }
+    .album-search-bar { display: flex; margin-bottom: 12px; border: 1px solid var(--line); }
+    .album-search-bar select { flex: 0 0 auto; border: none; border-right: 1px solid var(--line); background: #f6f6f6; font-family: var(--mono); font-size: 12px; padding: 0 10px; outline: none; color: var(--black); cursor: pointer; -webkit-appearance: none; appearance: none; text-align: center; }
+    .album-search-bar input { flex: 1 1 auto; min-width: 0; border: none; padding: 12px; font-family: var(--mono); font-size: 13px; outline: none; background: none; color: var(--black); }
+    .album-search-bar:focus-within { border-color: var(--black); }
     .album-search-btn { width: 100%; margin-top: 4px; background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 13px; cursor: pointer; }
     .album-search-btn:disabled { opacity: 0.5; cursor: default; }
     .album-search-error { font-size: 11px; color: #b00; margin-top: 12px; text-align: left; }
@@ -2002,26 +2006,28 @@
     document.getElementById('modalMusic').innerHTML = '';
   }
 
-  // ───────── 搜尋專輯：自行輸入專輯／藝人（擇一即可）查介紹＋試聽（僅閱覽，不能收藏） ─────────
+  // ───────── 搜尋專輯：一條搜尋 bar 同時比對專輯＋藝人，左側下拉可單選其中一項（僅閱覽，不能收藏） ─────────
   let _asResults = [];          // 本次搜尋結果（cardId 用 as: 前綴，避免撞唱片櫃）
-  let _asQuery = { album:'', artist:'' };
+  let _asQuery = { q:'', field:'all' }; // field: all｜album｜artist（預設 all）
   let _asBound = false;
 
   function renderAlbumSearch() {
     const el = document.getElementById('albumSearchContent');
+    const opt = (v, label) => `<option value="${v}"${_asQuery.field === v ? ' selected' : ''}>${label}</option>`;
     el.innerHTML = `
       <form class="album-search-form" id="albumSearchForm">
         <div class="quiz-question" style="margin-bottom:8px;">搜尋專輯</div>
-        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入專輯名或藝人名（填一欄就可以搜），從店裡卡池找卡；點卡片看介紹、聽試聽。</div>
-        <div class="album-search-field"><label>專輯名 Album</label><input type="text" id="asAlbum" placeholder="例如：Kind of Blue" autocomplete="off"></div>
-        <div class="album-search-field"><label>藝人名 Artist</label><input type="text" id="asArtist" placeholder="例如：Miles Davis" autocomplete="off"></div>
+        <div class="album-search-note" style="text-align:left;margin-bottom:20px;">輸入關鍵字，同時比對專輯名與藝人名；左側可切成只搜其中一項。點卡片看介紹、聽試聽。</div>
+        <div class="album-search-bar">
+          <select id="asField" aria-label="搜尋範圍">${opt('all', '全部')}${opt('album', '專輯')}${opt('artist', '藝人')}</select>
+          <input type="text" id="asQ" placeholder="專輯名或藝人名…" autocomplete="off">
+        </div>
         <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
         <div class="album-search-error" id="asError" style="display:none;"></div>
       </form>
       <div id="asPlayerMount" aria-hidden="true"></div>
       <div id="asResults">${_asResults.length ? _asGridHtml() : ''}</div>`;
-    document.getElementById('asAlbum').value = _asQuery.album;
-    document.getElementById('asArtist').value = _asQuery.artist;
+    document.getElementById('asQ').value = _asQuery.q;
     document.getElementById('albumSearchForm').addEventListener('submit', (e) => { e.preventDefault(); void doAlbumSearch(); });
     window.DipPlayer?.mount(el.querySelector('#asPlayerMount'), { hidden: true });
     if (!_asBound) {
@@ -2036,7 +2042,7 @@
         _asPlay(_asResults[idx]);
       });
     }
-    if (!_asResults.length) document.getElementById('asAlbum').focus();
+    if (!_asResults.length) document.getElementById('asQ').focus();
   }
 
   // 搜尋頁沒有唱盤機：點卡片開詳情的同時直接背景播 30 秒試聽，關掉詳情就停
@@ -2120,13 +2126,13 @@
   let _asCoverToken = 0;
 
   async function doAlbumSearch() {
-    const album = document.getElementById('asAlbum').value.trim();
-    const artist = document.getElementById('asArtist').value.trim();
+    const q = document.getElementById('asQ').value.trim();
+    const field = document.getElementById('asField').value; // all｜album｜artist
     const err = document.getElementById('asError');
     const result = document.getElementById('asResults');
-    if (!album && !artist) { err.style.display = ''; err.textContent = '專輯名或藝人名至少填一欄。'; return; }
+    if (!q) { err.style.display = ''; err.textContent = '輸入關鍵字再搜尋。'; return; }
     err.style.display = 'none';
-    _asQuery = { album, artist };
+    _asQuery = { q, field };
     const btn = document.getElementById('asSubmit');
     btn.disabled = true; btn.textContent = '搜尋中…';
     result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找店裡卡池中…</div></div>`;
@@ -2141,7 +2147,8 @@
     btn.disabled = false; btn.textContent = '搜尋';
     if (currentView !== 'album-search') return; // 等待期間已離開此頁
     const nq = s => String(s || '').normalize('NFKC').toLowerCase().trim();
-    const qArtist = nq(artist), qAlbum = nq(album);
+    const nqq = nq(q);
+    const matchArtist = field !== 'album', matchAlbum = field !== 'artist';
     // apex 先進 map（同名以 apex 為準），seed 後補
     const byKey = new Map();
     for (const t of ['hall', 'pearl', 'heresy']) {
@@ -2151,14 +2158,11 @@
       const k = nq(c.artist) + '|' + nq(c.album);
       if (!byKey.has(k)) byKey.set(k, c);
     }
-    const hits = [...byKey.values()].filter(c => (!qArtist || nq(c.artist).includes(qArtist)) && (!qAlbum || nq(c.album).includes(qAlbum)));
-    // 排序：完全一致 > 開頭一致 > 內含；同分再依經典度高→低
-    const rank = c => {
-      let s = 0;
-      if (qArtist) { const a = nq(c.artist); s += a === qArtist ? 0 : a.startsWith(qArtist) ? 1 : 2; }
-      if (qAlbum) { const l = nq(c.album); s += l === qAlbum ? 0 : l.startsWith(qAlbum) ? 1 : 2; }
-      return s;
-    };
+    const hits = [...byKey.values()].filter(c =>
+      (matchArtist && nq(c.artist).includes(nqq)) || (matchAlbum && nq(c.album).includes(nqq)));
+    // 排序：命中欄位「完全一致 > 開頭 > 內含」取較佳者；同分再依經典度高→低
+    const fieldRank = (text) => { const v = nq(text); return v === nqq ? 0 : v.startsWith(nqq) ? 1 : v.includes(nqq) ? 2 : 3; };
+    const rank = c => Math.min(matchArtist ? fieldRank(c.artist) : 3, matchAlbum ? fieldRank(c.album) : 3);
     hits.sort((x, y) => rank(x) - rank(y) || (y.classic || 0) - (x.classic || 0));
     const total = hits.length;
     _asResults = hits.slice(0, AS_MAX_RESULTS).map((c, i) => {
