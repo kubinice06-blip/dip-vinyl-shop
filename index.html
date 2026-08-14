@@ -593,6 +593,14 @@
     .album-search-bar input { flex: 1 1 auto; min-width: 0; border: none; padding: 12px; font-family: var(--mono); font-size: 13px; outline: none; background: none; color: var(--black); }
     .album-search-bar:focus-within { border-color: var(--black); }
     .album-search-btn { width: 100%; margin-top: 4px; background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 13px; cursor: pointer; }
+    /* 拍封面搜尋（測試版） */
+    .album-scan-btn { width: 100%; margin-top: 8px; background: none; color: var(--black); border: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; padding: 13px; cursor: pointer; }
+    .album-scan-btn:hover { border-color: var(--black); }
+    .album-scan-btn:disabled { opacity: 0.5; cursor: default; }
+    .album-scan-beta { font-size: 9px; letter-spacing: 0.1em; color: var(--gray); margin-left: 6px; }
+    .album-scan-read { font-size: 11px; line-height: 1.7; color: var(--gray); padding: 0 20px 10px; text-align: left; }
+    .album-scan-read b { color: var(--black); font-weight: 700; }
+    .album-scan-preview { display: block; width: 84px; height: 84px; object-fit: cover; border: 1px solid var(--line); margin: 0 20px 10px; }
     .album-search-btn:disabled { opacity: 0.5; cursor: default; }
     .album-search-error { font-size: 11px; color: #b00; margin-top: 12px; text-align: left; }
     .album-search-result { padding: 20px 20px 40px; text-align: center; }
@@ -2064,12 +2072,21 @@
           <input type="text" id="asQ" placeholder="專輯名或藝人名…" autocomplete="off">
         </div>
         <button type="submit" class="album-search-btn" id="asSubmit">搜尋</button>
+        <button type="button" class="album-scan-btn" id="asScanBtn">📷 拍封面搜尋<span class="album-scan-beta">BETA</span></button>
+        <input type="file" id="asScanInput" accept="image/*" capture="environment" hidden>
         <div class="album-search-error" id="asError" style="display:none;"></div>
       </form>
       <div id="asPlayerMount" aria-hidden="true"></div>
       <div id="asResults">${_asResults.length ? _asGridHtml() : ''}</div>`;
     document.getElementById('asQ').value = _asQuery.q;
     document.getElementById('albumSearchForm').addEventListener('submit', (e) => { e.preventDefault(); void doAlbumSearch(); });
+    const scanInput = document.getElementById('asScanInput');
+    document.getElementById('asScanBtn').addEventListener('click', () => scanInput.click());
+    scanInput.addEventListener('change', () => {
+      const file = scanInput.files?.[0];
+      scanInput.value = ''; // 清掉才能連續拍同一張
+      if (file) void doCoverScan(file);
+    });
     window.DipPlayer?.mount(el.querySelector('#asPlayerMount'), { hidden: true });
     if (!_asBound) {
       _asBound = true;
@@ -2165,47 +2182,36 @@
   // 卡池搜尋：seed＋apex 本地比對（apex 撞名優先），最多列 24 張
   const AS_MAX_RESULTS = 24;
   let _asCoverToken = 0;
+  let _asPoolRows = null;
 
-  async function doAlbumSearch() {
-    const q = document.getElementById('asQ').value.trim();
-    const field = document.getElementById('asField').value; // all｜album｜artist
-    const err = document.getElementById('asError');
-    const result = document.getElementById('asResults');
-    if (!q) { err.style.display = ''; err.textContent = '輸入關鍵字再搜尋。'; return; }
-    err.style.display = 'none';
-    _asQuery = { q, field };
-    const btn = document.getElementById('asSubmit');
-    btn.disabled = true; btn.textContent = '搜尋中…';
-    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找店裡卡池中…</div></div>`;
-    let pool;
-    try { pool = await loadCardPool(); }
-    catch (e) {
-      btn.disabled = false; btn.textContent = '搜尋';
-      err.style.display = ''; err.textContent = '卡池載入失敗，請再試一次。';
-      result.innerHTML = '';
-      return;
-    }
-    btn.disabled = false; btn.textContent = '搜尋';
-    if (currentView !== 'album-search') return; // 等待期間已離開此頁
-    const nq = s => String(s || '').normalize('NFKC').toLowerCase().trim();
-    const nqq = nq(q);
-    const matchArtist = field !== 'album', matchAlbum = field !== 'artist';
-    // apex 先進 map（同名以 apex 為準），seed 後補
+  const _asNorm = s => String(s || '').normalize('NFKC').toLowerCase().trim();
+  // 比對用的鬆散正規化：去括號內容、再版字樣與所有標點，讓「拍到的字」對得上卡池寫法
+  const _asLoose = s => _asNorm(s)
+    .replace(/\([^)]*\)|\[[^\]]*\]/g, ' ')
+    .replace(/\b(remaster|remastered|deluxe|expanded|edition|reissue|mono|stereo|version|anniversary|original|soundtrack)\b/g, ' ')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+
+  // 卡池攤平成一份陣列（apex 撞名優先，帶 tier），只算一次
+  async function _asPool() {
+    if (_asPoolRows) return _asPoolRows;
+    const pool = await loadCardPool();
     const byKey = new Map();
     for (const t of ['hall', 'pearl', 'heresy']) {
-      for (const row of (pool.apex[t] || [])) byKey.set(nq(row[0]) + '|' + nq(row[1]), { artist: row[0], album: row[1], tier: t });
+      for (const row of (pool.apex[t] || [])) byKey.set(_asNorm(row[0]) + '|' + _asNorm(row[1]), { artist: row[0], album: row[1], tier: t });
     }
     for (const c of pool.cards) {
-      const k = nq(c.artist) + '|' + nq(c.album);
+      const k = _asNorm(c.artist) + '|' + _asNorm(c.album);
       if (!byKey.has(k)) byKey.set(k, c);
     }
-    const hits = [...byKey.values()].filter(c =>
-      (matchArtist && nq(c.artist).includes(nqq)) || (matchAlbum && nq(c.album).includes(nqq)));
-    // 排序：命中欄位「完全一致 > 開頭 > 內含」取較佳者；同分再依經典度高→低
-    const fieldRank = (text) => { const v = nq(text); return v === nqq ? 0 : v.startsWith(nqq) ? 1 : v.includes(nqq) ? 2 : 3; };
-    const rank = c => Math.min(matchArtist ? fieldRank(c.artist) : 3, matchAlbum ? fieldRank(c.album) : 3);
-    hits.sort((x, y) => rank(x) - rank(y) || (y.classic || 0) - (x.classic || 0));
-    const total = hits.length;
+    _asPoolRows = [...byKey.values()];
+    return _asPoolRows;
+  }
+
+  // 卡池列 → 卡片牆資料（稀有度與抽卡同規則），並渲染＋背景補封面
+  function _asShowHits(hits, headerHtml) {
+    const result = document.getElementById('asResults');
+    if (!result) return;
     _asResults = hits.slice(0, AS_MAX_RESULTS).map((c, i) => {
       const ratings = c.classic ? { classic: c.classic, obscurity: c.obscurity, accessibility: c.accessibility } : null;
       const rarity = c.tier
@@ -2218,12 +2224,151 @@
         previewUnavailable: status === 'unavailable' || status === 'disabled',
       };
     });
-    if (!_asResults.length) {
-      result.innerHTML = `<div class="album-search-result"><div class="cd-desc">店裡卡池查不到相符的專輯——換個關鍵字試試。</div></div>`;
+    result.innerHTML = (headerHtml || '') + (_asResults.length ? _asGridHtml() : '');
+    if (_asResults.length) void _asFillCovers();
+  }
+
+  async function doAlbumSearch() {
+    const q = document.getElementById('asQ').value.trim();
+    const field = document.getElementById('asField').value; // all｜album｜artist
+    const err = document.getElementById('asError');
+    const result = document.getElementById('asResults');
+    if (!q) { err.style.display = ''; err.textContent = '輸入關鍵字再搜尋。'; return; }
+    err.style.display = 'none';
+    _asQuery = { q, field };
+    const btn = document.getElementById('asSubmit');
+    btn.disabled = true; btn.textContent = '搜尋中…';
+    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">翻找店裡卡池中…</div></div>`;
+    let rows;
+    try { rows = await _asPool(); }
+    catch (e) {
+      btn.disabled = false; btn.textContent = '搜尋';
+      err.style.display = ''; err.textContent = '卡池載入失敗，請再試一次。';
+      result.innerHTML = '';
       return;
     }
-    result.innerHTML = `<div class="album-search-note" style="padding:0 20px 10px;text-align:left;">卡池裡找到 ${total} 張${total > AS_MAX_RESULTS ? `，先列前 ${AS_MAX_RESULTS} 張` : ''}</div>` + _asGridHtml();
-    void _asFillCovers();
+    btn.disabled = false; btn.textContent = '搜尋';
+    if (currentView !== 'album-search') return; // 等待期間已離開此頁
+    const nqq = _asNorm(q);
+    const matchArtist = field !== 'album', matchAlbum = field !== 'artist';
+    const hits = rows.filter(c =>
+      (matchArtist && _asNorm(c.artist).includes(nqq)) || (matchAlbum && _asNorm(c.album).includes(nqq)));
+    // 排序：命中欄位「完全一致 > 開頭 > 內含」取較佳者；同分再依經典度高→低
+    const fieldRank = (text) => { const v = _asNorm(text); return v === nqq ? 0 : v.startsWith(nqq) ? 1 : v.includes(nqq) ? 2 : 3; };
+    const rank = c => Math.min(matchArtist ? fieldRank(c.artist) : 3, matchAlbum ? fieldRank(c.album) : 3);
+    hits.sort((x, y) => rank(x) - rank(y) || (y.classic || 0) - (x.classic || 0));
+    const total = hits.length;
+    if (!total) {
+      result.innerHTML = `<div class="album-search-result"><div class="cd-desc">店裡卡池查不到相符的專輯——換個關鍵字試試。</div></div>`;
+      _asResults = [];
+      return;
+    }
+    _asShowHits(hits, `<div class="album-search-note" style="padding:0 20px 10px;text-align:left;">卡池裡找到 ${total} 張${total > AS_MAX_RESULTS ? `，先列前 ${AS_MAX_RESULTS} 張` : ''}</div>`);
+  }
+
+  // ── 拍封面搜尋（測試版）：照片 → worker /cover-scan（Haiku 視覺）→ 卡池比對 → 卡片牆 ──
+  // 不直接跳唯一答案：AI 讀到的名字只是線索，實際列出的一律是卡池裡真有的卡。
+  async function _asCompressImage(file) {
+    // 手機直拍常帶 EXIF 方向，createImageBitmap 的 from-image 會自動轉正；不支援就退 <img>
+    let src = null;
+    try { src = await createImageBitmap(file, { imageOrientation: 'from-image' }); } catch (e) { src = null; }
+    if (!src) {
+      src = await new Promise((resolve, reject) => {
+        const img = new Image();
+        const url = URL.createObjectURL(file);
+        img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
+        img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('decode')); };
+        img.src = url;
+      });
+    }
+    const w0 = src.width || src.naturalWidth, h0 = src.height || src.naturalHeight;
+    const scale = Math.min(1, 1024 / Math.max(w0, h0)); // 長邊 1024 已足夠讀封面字，也壓住 token 成本
+    const w = Math.max(1, Math.round(w0 * scale)), h = Math.max(1, Math.round(h0 * scale));
+    const canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    canvas.getContext('2d').drawImage(src, 0, 0, w, h);
+    src.close?.();
+    return canvas.toDataURL('image/jpeg', 0.75);
+  }
+
+  // 一組辨識候選 → 卡池命中列（0=藝人專輯都中、1=只中專輯、2=只中藝人）
+  function _asMatchCandidate(rows, cand) {
+    const ca = _asLoose(cand.artist), cl = _asLoose(cand.album);
+    if (!ca && !cl) return [];
+    const out = [];
+    for (const c of rows) {
+      const pa = _asLoose(c.artist), pl = _asLoose(c.album);
+      const artistHit = !!ca && (pa === ca || pa.includes(ca) || ca.includes(pa));
+      const albumHit = !!cl && (pl === cl || pl.includes(cl) || cl.includes(pl));
+      if (artistHit && albumHit) out.push({ row: c, score: 0 });
+      else if (albumHit) out.push({ row: c, score: 1 });
+      else if (artistHit) out.push({ row: c, score: 2 });
+    }
+    return out;
+  }
+
+  async function doCoverScan(file) {
+    const err = document.getElementById('asError');
+    const result = document.getElementById('asResults');
+    const btn = document.getElementById('asScanBtn');
+    if (!file || !result) return;
+    err.style.display = 'none';
+    btn.disabled = true; btn.textContent = '辨識中…';
+    result.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">辨識封面中…</div></div>`;
+    let dataUrl = '';
+    try { dataUrl = await _asCompressImage(file); }
+    catch (e) {
+      btn.disabled = false; btn.innerHTML = '📷 拍封面搜尋<span class="album-scan-beta">BETA</span>';
+      err.style.display = ''; err.textContent = '這張圖讀不進來，換一張試試。';
+      result.innerHTML = '';
+      return;
+    }
+    let data = {};
+    try {
+      const res = await fetch(`${WORKER_URL}/cover-scan`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: dataUrl }),
+      });
+      data = res.ok ? await res.json() : {};
+    } catch (e) { data = {}; }
+    const rows = await _asPool().catch(() => null);
+    btn.disabled = false; btn.innerHTML = '📷 拍封面搜尋<span class="album-scan-beta">BETA</span>';
+    if (currentView !== 'album-search') return; // 等待期間已離開此頁
+    if (!rows) { err.style.display = ''; err.textContent = '卡池載入失敗，請再試一次。'; result.innerHTML = ''; return; }
+    const cands = Array.isArray(data.candidates) ? data.candidates : [];
+    const topConf = Math.max(0, ...cands.map(c => Number(c.confidence) || 0));
+    const readLabel = topConf && topConf < 0.5 ? '不太確定，可能是' : '辨識到'; // 低信心就別講得太篤定
+    const readLine = cands.length
+      ? cands.map(c => `<b>${escapeCollectionHtml(c.artist || '？')}</b>${c.album ? `《${escapeCollectionHtml(c.album)}》` : ''}`).join('、')
+      : '';
+    const thumb = `<img class="album-scan-preview" src="${dataUrl}" alt="剛拍的封面">`;
+    if (!cands.length) {
+      _asResults = [];
+      result.innerHTML = thumb + `<div class="album-scan-read">認不出這張封面${data.error ? `（${escapeCollectionHtml(String(data.error)).slice(0, 60)}）` : ''}。拍正一點、讓封面填滿畫面再試一次，或直接用上面的搜尋列找。</div>`;
+      return;
+    }
+    // 候選逐一比對卡池，取每張卡最好的分數；0（藝人＋專輯都中）優先，其次只中專輯，
+    // 最後「只中藝人」——AI 專輯名認錯時，這層會把該藝人在卡池的其他專輯撈出來救。
+    const best = new Map();
+    cands.forEach((cand, ci) => {
+      for (const { row, score } of _asMatchCandidate(rows, cand)) {
+        const key = _asNorm(row.artist) + '|' + _asNorm(row.album);
+        const prev = best.get(key);
+        if (!prev || score < prev.score || (score === prev.score && ci < prev.ci)) best.set(key, { row, score, ci });
+      }
+    });
+    const ranked = [...best.values()].sort((a, b) => a.score - b.score || a.ci - b.ci || (b.row.classic || 0) - (a.row.classic || 0));
+    if (!ranked.length) {
+      _asResults = [];
+      result.innerHTML = thumb + `<div class="album-scan-read">${readLabel}：${readLine}<br>這張不在店裡卡池——可以用上面的搜尋列找找其他版本。</div>`;
+      return;
+    }
+    const exact = ranked.filter(r => r.score === 0).length;
+    const note = exact
+      ? `${readLabel}：${readLine}`
+      : `${readLabel}：${readLine}<br>卡池沒有完全相符的，以下是同藝人／近似專輯的卡。`;
+    _asShowHits(ranked.map(r => r.row), thumb + `<div class="album-scan-read">${note}</div>`);
   }
 
   // 背景批次補封面與固定試聽（card_catalog 校正圖優先，與抽卡結果頁同一條 resolveCardAssets 鏈）
