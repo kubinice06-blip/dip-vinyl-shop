@@ -1,5 +1,82 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-11｜dip-vinyl-shop ＋ desc-restyle｜wave3 卡池整頓（第一、二階段）
+
+研究階段的 findings 落地。**掛名類（31 條）刻意未執行**，那會改藝人欄、連帶要搬 KV key
+與 Firestore 文件 id，等店主裁示。
+
+## ⚠ 先更正兩個先前報告裡的錯誤
+
+1. **卡池是兩個檔案、兩種欄位排列**：
+   `seed_cards.json` 是 `[artist, album, …, genres(5), year(6), …]`；
+   `apex_pool.json` 是 `{hall|pearl|heresy: [[artist, album, genres(2), year(3)]]}`。
+   先前的曲風年代稽核**只掃了 seed_cards**，漏掉 633 張 apex 卡。已改成兩個池都掃。
+2. **「43 張無曲風卡」是錯的，實際只有 15 張**。w3-29 的卡單是照只讀 seed_cards 的舊掃描切的，
+   把 apex 卡誤判成無曲風；那 28 張 apex 卡現在都已有標籤。研究層為它們補判的曲風
+   帶著過時的 `current: []`，套用會覆蓋現有標籤，已在腳本裡擋掉（跳過 26 筆）。
+3. 曲風年代稽核裡 `electronic` 的下限原設 1968 太晚——具象音樂 1948 年就有，
+   Pierre Henry《Variations pour une porte et un soupir》(1967) 與 Zappa《Lumpy Gravy》(1967)
+   是誤報。已把 electronic 移出年代判準。
+
+## 第一階段：年份與曲風（不動 key）
+
+`apply-pool-fixes.mjs`（新增，兩個池都處理，預設乾跑）。
+- **年份 66 筆**（seed 63／apex 3），含 21 張原本是 `null` 的。落差最大的是
+  Marian McPartland《Interplay》2017→1969、The Singers Unlimited《Four of Us》2014→1973。
+- **曲風 160 筆**（研究層 109／程式全池稽核補 50，另手動修 1）。修完後
+  **年代上不可能成立的標籤歸零、池外標籤歸零**。
+- 曲風詞彙硬限制：兩個池合計只有 10 種標籤（rock/jazz/electronic/soul/hiphop/pop/folk/world/classical/blues）。
+  **主線在 w3-29 派工詞裡誤列了 `funk` 與 `chanson`**，池內並不存在；腳本用 MAP 收斂
+  （funk→soul、chanson→pop、new age→electronic、reggae→world…），收斂不了就跳過。
+  **不得寫入池內不存在的標籤——那會產生抽卡永遠抽不到的孤兒。**
+- 跳過 39 筆：26 筆過時建議、9 筆低信心、3 筆 proposed 寫成不可解析的字串、1 筆拿掉後會變空陣列。
+
+## 第二階段：移除 9 張
+
+`remove-w3-cards.mjs`（新增）。seed 7,501 → **7,492**。KV 清 27 個 key
+（desc2/desc4/rating4 各一組），**用 bulk get 驗證零殘留**（沒用 `/album-desc`，那會觸發重新生成回寫）。
+
+移除的是：Art Ensemble of Chicago 三張（一張與已上線卡同一份 BYG 529.302 錄音、兩張是合併重發）、
+Don Cherry《“mu” First Part / “mu” Second Part》（1971 年 2LP 合併版）、
+Gong《Radio Gnome Invisible Trilogy》（2015 套裝，三張裡兩張已是獨立卡）、
+Héctor Lavoe《Asalto navideño, vol. II》（與已上線的 Willie Colón 同一份 1973 Fania 錄音）、
+Maurane《Les Années Saravah》、Nightmares on Wax《Wax Da Soul》、
+Pharoah Sanders《Ballads With Love》（與《Crescent With Love》同一份 1992 錄音）。
+
+**重複卡的實務判準新增一條**：兩張都在時，**優先保留已有上線簡介的那張**（零重工）。
+
+**乾跑救了一次**：清理下游檔案時原本會動到 `batches/research/w2-119-e.json`——
+那是**已上線批次的歷史紀錄**，回頭刪列會讓紀錄對不上當初實際出貨的內容。
+已限縮成只清 `w3-` 的檔案。這條寫進腳本註解了。
+
+## 附帶修掉一個前台實際在壞的 bug
+
+Busta Rhymes《Extinction Level Event 2: The Wrath of God》**不是重複卡**——
+池內只有一張，但 KV 的簡介掛在**不帶冒號**的舊 key 底下，卡片自己的 key 沒有 desc2，
+前台一直在走現場生成。已把值搬到正確 key、刪掉孤兒、驗證通過。
+
+**順手做了全面排查**：對 wave3 全部 971 張卡產生 193 個標點變體 key（去冒號、彎引號→直引號、
+去撇號／逗號／句點、破折號變體）逐一探測 KV，**只找到這一個孤兒**，不是系統性問題。
+清單存 `batches/findings/AUDIT-orphan-desc-keys.json`。
+
+## 待店主裁示（未動）
+
+1. **31 條掛名更動**——會改藝人欄，連帶搬 KV key 與 Firestore 文件 id。
+   最集中的是 Brigitte Fontaine 與 Areski Belkacem 的五張合作專輯被拆成單人掛名。
+2. **The Gap Band《Gap Band III》vs《The Gap Band III》**——同一張 1980 年專輯，
+   **兩張都已有上線簡介**，刪錯代價高。官方作品序列用「The Gap Band N」，傾向保留帶 The 的那張。
+3. **Don Cherry《“Mu” First Part / “Mu” Second Part / Orient》(2013)**——已上線的三合一，
+   與池內三張原作重疊，移除會刪掉現行簡介。
+4. **三張《平均律鍵盤曲集》**（1999 Clavier／2004 Klavier, Buch I／2009 Klavier）——
+   只差拼寫與大小寫，撞名偵測抓不到；且藝人欄分裂成「Johann Sebastian Bach」與「J. S. Bach」。
+
+## 主要檔案與驗證
+
+新增 `desc-restyle/{apply-pool-fixes,remove-w3-cards}.mjs`；
+異動明細 `batches/findings/{APPLIED-pool-fixes,APPLIED-removals,AUDIT-orphan-desc-keys}.json`。
+兩個池都在改動前備份（`*.backup-before-w3-cleanup.json`、`*.backup-before-w3-remove.json`）。
+寫入前逐筆比對確認只有預期欄位變動；KV 刪除以 bulk get 驗證零殘留。
+
 ### 2026-08-11｜desc-restyle（無 git）｜wave3 研究階段全部完成（29 批 / 973 張）
 
 依 2026-08-11 的新流程「先全部研究完、整頓卡單、重切批次，才開始 hook 與寫作」，
