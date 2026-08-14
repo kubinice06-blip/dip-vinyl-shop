@@ -5078,9 +5078,38 @@ blues→500、world→800、classical→800、folk→1,000，**rock 不動**。
 李雙澤生前無商業專輯，要挑有正規封面的紀念發行版本，**版本與封面須人工確認**。
 同線順帶處理陳達《民族樂手陳達和他的歌》，與古典區塊的許常惠互相呼應。已寫進 `POOL_BALANCE_PLAN.md`。
 
-**主要檔案**：`classical-expansion/candidates.json`（578 筆）、`classical-expansion/batches/c-01..c-18.json`
-（上架批次，每批 27–37 張同區塊）、`classical-expansion/HANDOFF.md`（改寫）、`POOL_BALANCE_PLAN.md`（新增）。
-**驗證**：去重／同曲／格式四項腳本檢查全清；卡池檔案本身未修改。
+## 同日追加：查核大師覆蓋率後，目標由 800 上修為 1000（候選 578 → 818）
+
+店主問「王羽佳、Argerich 這些大師有嗎？不只鋼琴，大提琴之類的也要」，一查發現嚴重偏食：
+**池內的古典大師只有 15 張，而且幾乎全是鍵盤**——Gould 2、Argerich 2、Horowitz 2、Lang Lang 2、
+Buniatishvili 2、Ólafsson 2、Hilary Hahn 2、Karajan 1。**大提琴、聲樂、弦樂四重奏、管樂、管風琴、
+中提琴全部零張**，指揮只有 Karajan 一張。王羽佳與小澤征爾都不在池裡。
+另一個容易誤判的點：**池內的 Richter 全是 Max Richter**（新古典），不是 Sviatoslav Richter；
+同理 Emerson 是 ELP、Nilsson 是 Harry Nilsson、Amadeus 是那張 Mozart 卡。
+
+店主指示「一不做二不休，看能不能到 1000，會開始有雜牌就算了」。盤點九條未挖礦脈後加開五個區塊：
+
+| 新區塊 | 張數 | 內容 |
+|---|---:|---|
+| 08 大師補完 | 71 | 中提琴（Primrose、Tertis、Bashmet）、管樂銅管豎琴打擊（Rampal、Maurice André、Zabaleta、Evelyn Glennie）、在世小提琴大提琴、聲樂、四重奏、當代指揮 |
+| 09 國族樂派／歌劇／錄音史 | 61 | 北歐西班牙英國中東歐拉美、歌劇全曲補完、錄音史線（Nikisch 1913 第一套交響曲錄音、Mercury 三支麥克風、1994 葛利果聖歌意外暢銷） |
+| 10 亞洲與台灣 | 24 | 林昭亮、胡乃元、曾宇謙、呂紹嘉、陳必先、朱宗慶打擊樂團、蕭泰然、郭芝苑、錢南章、王健、諏訪內晶子、辻井伸行、林尹燦、曹秀美、鄭明勳、杜韻、盛宗亮 |
+| 11 當代在世作曲家 | 36 | 普立茲一線（Julia Wolfe、David Lang）、歐陸前衛（Haas、Lachenmann、Sciarrino、Neuwirth）、新委創計畫 |
+| 12 歷史名家 | 48 | 留聲機到單聲道時代（Huberman 靠樂團簽證從納粹德國救出近千人、Beatrice Harrison 1924 年在花園與夜鶯合奏成就 BBC 首次戶外轉播），加台灣華語補完（李泰祥、呂泉生、馬思聰） |
+
+**818 筆是天花板，這是誠實結論**：再往上只剩三種來源——同曲的第四第五個錄音、
+沒有故事鉤子的大廠全集、查無正式發行的邊緣錄音，三種都是雜牌，不要再往下挖。
+全數上架名目 1040，扣掉上架損耗估落地 760–800、古典最終 980–1020。
+
+**上架人工成本已量化**：33 筆標「版本待確認」＋43 筆通用專輯名（《Violin Concertos》
+《The Complete Recordings》這類無法對應單一發行），聯集 62 筆佔 7.6%，都要人工定版。
+另抓到一個**同名不同人陷阱**：池內 `John Williams《How to Steal a Million》` 是電影配樂家，
+候選裡 `John Williams《Rodrigo: Concierto de Aranjuez》` 是古典吉他家，MBID／封面比對極可能混淆。
+
+**主要檔案**：`classical-expansion/candidates.json`（818 筆）、`classical-expansion/batches/c-01..c-26.json`
+（上架批次，每批 24–37 張同區塊）、`classical-expansion/HANDOFF.md`（改寫）、`POOL_BALANCE_PLAN.md`（新增）。
+**驗證**：去重／同曲／格式／字元混入四項腳本檢查全清（與池重複 0、內部重複 0、同曲 >3 為 0、
+631 位不重複演奏家）；卡池檔案本身未修改。
 **下一步**：從 `batches/c-01.json` 起逐批走 `dip-card-create` 上架。
 
 ### 2026-08-14（同日第四筆）｜shop｜複核前兩筆卡池改動，修掉一支會洗掉人工年份的腳本
