@@ -1,5 +1,94 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-11｜desc-restyle（無 git）｜wave3 研究階段全部完成（29 批 / 973 張）
+
+依 2026-08-11 的新流程「先全部研究完、整頓卡單、重切批次，才開始 hook 與寫作」，
+**w3-06..29 的研究已全部做完**。w3-07..29 共 **99 組 / 809 張**，加上先前的 w3-06（47 張），
+全部通過 `qa-batch research`。**hook 與寫作一張都還沒開始**，卡池整頓也尚未執行。
+
+## findings 總計（99 組）
+
+| 類別 | 條數 | 備註 |
+|---|---|---|
+| 卡池問題 | **294** | 曲風 145、年份 84、掛名 31、待裁示 23、重複卡 7、建議移除 4 |
+| 同人異名 | 16 | 重切批次時要歸同一批 |
+| 舊稿錯誤 | **171** | 線上現有簡介的系統性稽核成果 |
+| 共用骨架 | 333 | 全域通論帳本的原料（總骨架 809 條） |
+
+信心分佈：high 187、medium 77、low 30。彙整表：`batches/findings/SUMMARY.md`。
+
+## 三個系統性問題（不是零星錯誤）
+
+1. **曲風標籤污染**。145 條曲風問題裡，最大宗是靈魂樂老專輯被標 `hiphop`。
+   主線另寫了 `audit-genre-anachronism.mjs` 對全池掃描，找出 **76 張發行年早於該曲風成形**的卡
+   （最早是 Little Richard 1957 年那張），清單在 `batches/findings/AUDIT-genre-anachronism.json`。
+   **關鍵**：這 76 張裡有 44 張不在 wave3 卡單內，研究層永遠不會碰到——
+   **逐張抽驗看不到規模，全池掃描才行**。修起來乾淨：75 張拿掉後仍有有效標籤，
+   只有 The Staple Singers《Be What You Are》會變成空陣列。
+   另注意研究層點出的第二類：**年代成立但內容不符**的誤標（1985 年的 Slave 標 hiphop），
+   程式掃不到，只能靠逐張判斷——所以 76 張是下限不是全部。
+
+2. **無曲風卡**。w3-29 那 43 張 `genres` 是空陣列，被所有曲風抽卡排除、等於不存在於遊戲中。
+   研究層逐張補判，**41 張判出、2 張判不出**（Godard《Histoire(s) du Cinéma》、
+   Cacciapaglia《Sonanze》）。順帶查出 **21 張年份原本是 null** 並補齊。
+
+3. **同人異名與掛名拆散**。已記 16 條。最要緊的幾組：
+   Wendy Carlos／Walter Carlos（1969 原版封面用舊名，池內另一張仍是舊名）、
+   Johann Sebastian Bach／J. S. Bach、Abdullah Ibrahim／Dollar Brand／Abdullah Ibrahim & Ekaya、
+   Muhal Richard Abrams 的 Octet／Orchestra、David Murray 的三種編制掛名。
+   還有一組是**被拆散的聯名**：Brigitte Fontaine 與 Areski Belkacem 的五張合作專輯，
+   卡池全部只留單人掛名（w3-07 一張、w3-28 四張）。
+
+## 舊稿錯誤的型態（171 條）
+
+最嚴重的是**整段簡介寫的是另一張專輯**，抓到三起：
+Diana Ross《Ross》（1978 Motown 版被寫成 1983 RCA 版的內容）、
+Alexander Robotnick《Kind of... Robotnick》（寫成他另一張已上線的《Ce N'Est Qu'Un Début》）、
+以及 `?te whyte`（台灣歌手？te／壞特被讀成英文人名「Kate Whyte」，風格也全寫錯）。
+
+其次是**張冠李戴**：Lakeside 用了另一張專輯的招牌曲當開場、Kool & the Gang〈Summer Madness〉
+的出處寫錯（**且舊稿的整個開場鉤子就建立在這個錯誤上**）、Curtis Mayfield 的取樣者張冠李戴、
+The Move 的翻唱對象把 Tom Paxton 誤記成 Tom Jones、Shirley Brown 把〈Woman to Woman〉
+歌詞裡的 Barbara 記成 Betty 還據此編了續集敘事。
+
+**新增一種有效的稽核手法：用生卒年反推。** 抓到兩筆：
+Gianni Basso & Renato Sellani《Body and Soul》卡池標 2017，但兩人分別於 2009、2014 辭世；
+Otis Clay《The Gospel Truth》（1993）的製作人 Monk Higgins 卒於 1986。
+**已寫進後續派工詞的檢查清單。**
+
+## 研究層推翻主線的重要一次：古典卡通則的適用邊界
+
+w3-27 的 a 組與 b 組**各自獨立**指出——主線把整批當古典卡、要求套用
+「只寫創作背景與首演脈絡，不寫演奏者／廠牌／錄音年」的通則是錯的。
+那條規則預設的情境是**老曲目由後人重新演奏錄製**；但 Nils Frahm、Yiruma、Yann Tiersen、
+Sébastien Tellier、Philippe Sarde 這些是**作曲者本人就是演奏者的當代原創作品**，
+作品與唱片無法分離，硬套會寫不出東西。兩組都改用一般專輯寫法並回報。
+**這條邊界要補進 `prompts/research-base.md` 的古典卡通則。**
+同一批還抓到 Warne Marsh（咆勃系薩克斯風手）被標成 classical。
+
+## 產線觀察
+
+- **七次代理被內容過濾器中斷，七次產出零損失**——都斷在交件後的自我檢查階段，
+  兩個檔案已經落地。主線逐一驗過張數、key 順序與 findings 四陣列才判定不必重跑。
+  這是研究層維持多組小切（每組 8–9 張）的直接回報。
+- **QA 誤報一次**：w3-28-b 的諺文被判為非拉丁污染，但那是 Brown Eyed Soul 的團員本名與曲名，
+  規則明訂專名可用原文並附羅馬拼音，屬合法。
+- 半形逗號貼中文共修 5 組（w3-07-b、w3-09-a、w3-09-c、w3-15-d、w3-28-c），
+  第二波起在派工詞加了這條後發生率明顯下降。
+- w3-14-b 漏進西里爾字母（打 billing 時前三字母跑成 бил）且研究稿順序被打亂，均已修。
+- **WebSearch 額度在多組並行時會被整個 session 共用耗盡**，後段代理改用 WebFetch 補查。
+  這是往後排波次時要納入考量的實際限制。
+
+## 主要檔案
+
+`desc-restyle/`：`mk-research-groups.mjs`（切組＋產批次備註）、`sum-findings.mjs`（彙整）、
+`audit-genre-anachronism.mjs`（全池曲風年代稽核）、`batches/{groups,notes,research,findings}/`、`progress.json`。
+
+## 驗證
+
+99 組研究稿張數與 key 逐字對齊、findings 四陣列齊備；w3-07..29 全部批次 `qa-batch research` 通過。
+**卡池一張都還沒動**——整頓要等店主對掛名類更動裁示後才執行。
+
 ### 2026-08-14｜歌荒救星 hub：三個主項目文字對齊、等高同列
 
 - Repo：`dip-vinyl-shop`
