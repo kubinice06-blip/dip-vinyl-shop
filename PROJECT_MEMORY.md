@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜歌荒救星 hub：分組預設收起、品味生死鬥拿掉副標題
+
+- Repo：`dip-vinyl-shop`
+- 「找一張來聽」「你的收藏」**預設收起**：HTML 兩個 `.homehub-group-label` 的 `aria-expanded` 直接寫死
+  `false`（不靠 JS 設定，避免載入瞬間閃現展開），收合判斷由 `stored === 'closed'` 反轉為
+  `stored === 'open'` 才展開——沒存過的新訪客一律收起，點開後才寫入 `open` 並在下次記住。
+- 品味生死鬥移除 `.homehub-card-desc` 副標題，另加 `.homehub-solo .homehub-card-name { margin-bottom: 0 }`
+  補掉卡名原本留給副標題的 6px 下緣空白。
+- 主要檔案：`index.html`。
+- 驗證：清掉 localStorage 模擬新訪客——兩組 `aria-expanded=false`、body `display:none`，
+  首頁只剩「找一張來聽／品味生死鬥／你的收藏／搜尋專輯」四行，hub 高度 943px→**514px**；
+  品味生死鬥卡內文剩「品味生死鬥BETA →」無副標題；點開寫入 `open`、重整後維持展開，再點回收記 `closed`。
+
 ### 2026-08-11｜desc-restyle（無 git）｜wave3 第二波研究：w3-11..14、22、24-a、26
 
 **只做研究、不進 hook**（沿用 2026-08-11 的新流程）。本波 162 張／20 組全部通過

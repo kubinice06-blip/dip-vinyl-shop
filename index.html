@@ -409,8 +409,9 @@
     .homehub-group-body .homehub-card { padding: 22px 44px; }
     .homehub-group-body .homehub-card-name { font-size: 12px; margin-bottom: 4px; }
     .homehub-group-body .homehub-card-desc { font-size: 9px; }
-    /* 品味生死鬥：不歸在任何可收合分組，獨立一張 */
+    /* 品味生死鬥：不歸在任何可收合分組，獨立一張；無副標題，卡名不留下緣空白 */
     .homehub-solo { margin-top: 24px; border-top: 1px solid var(--line); }
+    .homehub-solo .homehub-card-name { margin-bottom: 0; }
     /* 「你的收藏」小卡兩欄 */
     .homehub-small-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
     .homehub-small-grid .homehub-card { padding: 18px 14px; }
@@ -643,7 +644,7 @@
     <div class="homehub-sub">不知道從何聽起？<br>沾記幫你挖出屬於你的那張。</div>
   </div>
   <div class="homehub-cards">
-    <button type="button" class="homehub-group-label" data-group="find" aria-expanded="true">
+    <button type="button" class="homehub-group-label" data-group="find" aria-expanded="false">
       找一張來聽<span class="homehub-group-caret">▼</span>
     </button>
     <div class="homehub-group-body">
@@ -672,11 +673,10 @@
     <button class="homehub-card homehub-solo" data-go="pvp">
       <div>
         <div class="homehub-card-name">品味生死鬥<span class="homehub-beta">BETA</span></div>
-        <div class="homehub-card-desc">單場對決或無盡試煉，用你手邊的專輯一決高下。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <button type="button" class="homehub-group-label" data-group="mine" aria-expanded="true">
+    <button type="button" class="homehub-group-label" data-group="mine" aria-expanded="false">
       你的收藏<span class="homehub-group-caret">▼</span>
     </button>
     <div class="homehub-group-body">
@@ -4516,12 +4516,12 @@ ${seenList}
       card.addEventListener('click', () => setActiveTab(card.dataset.go));
     });
 
-    // 首頁 hub 分組收合：狀態記在 localStorage，預設展開
+    // 首頁 hub 分組收合：狀態記在 localStorage，預設收起（HTML 就寫 aria-expanded="false"，不會閃現）
     document.querySelectorAll('#homeHub .homehub-group-label').forEach((label) => {
       const key = 'dipHubGroup:' + label.dataset.group;
       let stored = null;
       try { stored = localStorage.getItem(key); } catch (_) {}
-      if (stored === 'closed') label.setAttribute('aria-expanded', 'false');
+      if (stored === 'open') label.setAttribute('aria-expanded', 'true');
       label.addEventListener('click', () => {
         const open = label.getAttribute('aria-expanded') !== 'false';
         label.setAttribute('aria-expanded', open ? 'false' : 'true');
