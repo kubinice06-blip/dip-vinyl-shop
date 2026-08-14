@@ -98,7 +98,11 @@ wrangler 直查才是可信路徑。bulk get 只適合隔一段時間後的批�
 
 ## 下一步
 
-wave3 走完，重切後的 845 張全數上線。卡池另有一件待辦已另立背景任務：
+wave3 走完，重切後的 **840 張**全數上線（切批時是 845 張，跑的過程中移除了 5 張：
+r-13 三張 Bechet／Coltrane 的廉價重發與拼盤、r-19 的 Bobby Womack《I Still Love You》、
+Albert Ayler《Spiritual Unity》的重複卡。**下方 2026-08-14 的重切段落寫的 845 是切批當時的數字，
+不是上線數**；以 progress.json 逐批加總為準＝840，與 23 個 `r-*-kv.json` 的實際筆數逐批相符）。
+卡池另有一件待辦已另立背景任務：
 **118 張同時掛 jazz 與 hiphop 的卡需要逐張稽核**（多數是 jazz rap 的正確雙標，但掃到 Janet Jackson《Control》這類明顯誤標）。
 
 
@@ -5026,6 +5030,82 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+
+### 2026-08-14（同日第四筆）｜shop｜複核前兩筆卡池改動，修掉一支會洗掉人工年份的腳本
+
+店主改完卡池程式碼後要求複核。前兩筆（`a63b221` 孤兒卡收尾、`b537847` 一卡一行）本身查無問題，
+但順著查出一支同類的舊地雷。
+
+## 前兩筆的複核結果：資料層乾淨
+
+以我上線 wave3 的 `15df160` 為基準逐列比對現行卡池：
+
+- **掛名／專輯名零改動**（seed 消失 0、新增 0，apex 三層張數不變）。這是最關鍵的一項——
+  KV 的 `desc2:` 鍵與 Firestore 的 card id 都由「藝人|專輯」組成，只要這兩欄沒動，
+  剛上線的 840 張簡介就不會變孤兒。
+- 曲風 53 列、年份 4 列（都是 undefined→有值），**第 3/4/5 欄（三圍）零改動**，與 commit message 相符。
+- 新標的曲風全部落在既有的十個標籤內，與 `battle.html:734`／`index.html:982`／`music-map.html`／
+  `roguelike.html:445` 的 `mapGenreIds` 逐字一致，53 張確實抽得到。
+- 一卡一行的格式閉環驗過：`build-seed-genres.mjs` 寫 seed 與 apex 的輸出**與現行檔案逐位元組相同**
+  （不是「看起來一樣」，是 `Buffer.equals`），重跑零假 diff。
+
+## 查出的問題：`write-years-to-pool.mjs` 會覆寫人工裁定的年份
+
+這支原本是 `row[6] = year` **無條件覆寫**。以現行資料集乾跑，它會改掉 **106 張 seed＋3 張 apex**
+的年份，其中包含**當天稍早才人工查證裁定的兩張**：
+
+- Erroll Garner《Erroll Garner》會被改回 1951（正確是 1953-02-27 錄音、1953-11-02 Columbia CL 535 發行）
+- Albert Ayler《Ghosts》會被改回 1964（正確是 1965 丹麥 Debut DEB 144 發行）
+
+其餘 107 列多半是資料集分不出「錄音年／首發年／重發年」造成的，例如
+Preoccupations《Viet Cong》2015→2023（2023 是改名風波後的重發，原盤 2015 年掛 Viet Cong 發行）、
+山本剛《Blues for Tee》1974→1988（1988 是重發）、
+Slum Village《Fantastic, Vol. 2》2000→1998。**卡池的年份是人工裁定過的，資料集不該蓋過它。**
+
+改法：**預設改成只補空缺（fill-only）**，衝突只列出來給人看；要照資料集覆寫得自己加 `--overwrite`。
+`coverage` 舊算式是拿 `filled` 去除，fill-only 之後會誤報 0.0%，改成直接數卡池現況。
+這與 `a63b221` 修掉的 `build-seed-genres.mjs` 洗年份 bug 是同一類，只是那次沒掃到這一支。
+
+## 順手修掉的兩件
+
+- **apex 排版兩支腳本不同調**：`b537847` 把 `build-seed-genres.mjs` 對齊了現行的 `indent=1`，
+  但 `write-years-to-pool.mjs:57` 還是舊的手工組字串（一列一卡）。兩支交替跑就會整檔重排、
+  產生與資料無關的假 diff——正是那次提交要斷根的問題。已一起改成 `JSON.stringify(apex, null, 1)`。
+- **兩支腳本被 git 當成 binary**：`write-years-to-pool.mjs` 與 `fill-missing-years.mjs` 的
+  `cardKey` 分隔字元寫成**字面 NUL 位元組**，git 因此不顯示 diff、grep 也讀不到
+  （`build-release-years.mjs` 寫的是 `\u0000` 跳脫序列所以沒事）。改成跳脫序列，
+  執行結果完全相同（乾跑的 conflicts 109、coverage 都不變），git 從下一筆起就看得懂了。
+  **這與 seed_cards 擠在單行導致 git 失明是同一種病。**
+
+## 補一張缺年份的 apex 卡
+
+apex pearl 的 K. Leimer《A Period of Review》整列只有三欄、沒有年份欄（`cf7406f` 建池時就沒有，
+不是這兩筆造成的）。查證為 2014-05-13 RVNG Intl 發行，把 1975–1983 未發行的檔案首度彙整，
+依常設裁定屬「權威選輯」保留類。補上 2014 後**全池年份覆蓋率 8117/8117**。
+
+## 更正一筆我自己記錯的數字
+
+上一筆 wave3 收工紀錄寫「重切後的 845 張全數上線」。845 是**切批當時**的卡單總數，
+跑的過程中移除了 5 張（r-13 三張 Bechet／Coltrane 的廉價重發與拼盤、r-19 的
+Bobby Womack《I Still Love You》、Albert Ayler《Spiritual Unity》的重複卡），
+**實際上線 840 張**。已在該筆註明；依 `progress.json` 逐批加總與 23 個 `r-*-kv.json` 的
+實際筆數交叉核對，兩邊都是 840、逐批相符。
+
+## 主要檔案
+
+- `scripts/write-years-to-pool.mjs`（fill-only 預設＋`--overwrite`＋衝突清單＋apex 排版對齊＋去 NUL）
+- `scripts/fill-missing-years.mjs`（去 NUL）
+- `apex_pool.json`（K. Leimer 補年份，一列）
+- `PROJECT_MEMORY.md`（本筆＋上一筆的 845→840 更正）
+
+## 驗證
+
+- 逐列比對 `15df160` → HEAD：掛名／專輯名差異 0、三圍差異 0、曲風 53、年份 4。
+- `Buffer.equals`：兩支寫檔腳本的輸出與現行 `seed_cards.json`／`apex_pool.json` 逐位元組一致。
+- `node --check` 兩支腳本通過；`--dry-run` 在改動前後 conflicts 都是 109、查得到的 key 數不變。
+- fill-only 乾跑：seed changed 0、apex changed 0；`--overwrite` 乾跑重現舊行為 106＋3。
+- apex 改動 `git diff` 只有一列（K. Leimer 那列），無格式漂移。
+- 全池年份覆蓋 8117/8117、空曲風 0、seed 7,484 筆無重複、無七欄以外的異常列。
 
 ### 2026-08-14（同日第三筆）｜shop｜seed_cards 轉一卡一行＋Godard 裁定 classical
 
