@@ -5078,7 +5078,7 @@ blues→500、world→800、classical→800、folk→1,000，**rock 不動**。
 李雙澤生前無商業專輯，要挑有正規封面的紀念發行版本，**版本與封面須人工確認**。
 同線順帶處理陳達《民族樂手陳達和他的歌》，與古典區塊的許常惠互相呼應。已寫進 `POOL_BALANCE_PLAN.md`。
 
-## 同日追加：查核大師覆蓋率後，目標由 800 上修為 1000（候選 578 → 830）
+## 同日追加：查核大師覆蓋率後，目標由 800 上修為 1000（候選 578 → 838）
 
 店主問「王羽佳、Argerich 這些大師有嗎？不只鋼琴，大提琴之類的也要」，一查發現嚴重偏食：
 **池內的古典大師只有 15 張，而且幾乎全是鍵盤**——Gould 2、Argerich 2、Horowitz 2、Lang Lang 2、
@@ -5097,9 +5097,9 @@ Buniatishvili 2、Ólafsson 2、Hilary Hahn 2、Karajan 1。**大提琴、聲樂
 | 11 當代在世作曲家 | 36 | 普立茲一線（Julia Wolfe、David Lang）、歐陸前衛（Haas、Lachenmann、Sciarrino、Neuwirth）、新委創計畫 |
 | 12 歷史名家 | 48 | 留聲機到單聲道時代（Huberman 靠樂團簽證從納粹德國救出近千人、Beatrice Harrison 1924 年在花園與夜鶯合奏成就 BBC 首次戶外轉播），加台灣華語補完（李泰祥、呂泉生、馬思聰） |
 
-**830 筆是天花板，這是誠實結論**：再往上只剩三種來源——同曲的第四第五個錄音、
+**838 筆是天花板，這是誠實結論**：再往上只剩三種來源——同曲的第四第五個錄音、
 沒有故事鉤子的大廠全集、查無正式發行的邊緣錄音，三種都是雜牌，不要再往下挖。
-全數上架名目 1052，扣掉上架損耗估落地 770–810、古典最終 990–1030。
+全數上架名目 1060，扣掉上架損耗估落地 780–820、古典最終 1000–1040。
 
 ## 代表作稽核：抓到一個系統性偏誤
 
@@ -5118,6 +5118,23 @@ Buniatishvili 2、Ólafsson 2、Hilary Hahn 2、Karajan 1。**大提琴、聲樂
   托斯卡尼尼的《波希米亞人》（1896 年世界首演就是他指揮）、
   **三大男高音 1990 羅馬**（史上最暢銷的古典專輯，原本整個池子沒有）。
 
+## 第二輪：632 位演奏家全池掃描（候選 830 → 838）
+
+店主接著要求「其他大師也掃一次」。把全部演奏家的入選曲目拉出來對照代表作，再補 8 張、換 1 張：
+
+- **代表作缺口**：Heifetz 缺西貝流士小提琴協奏曲、Perlman 只有帕格尼尼隨想曲與貝爾格
+  （補孟德爾頌／布魯赫）、Menuhin 缺與 Ravi Shankar 的《West Meets East》、
+  Rattle 只有一張且非成名作（補馬勒第二）、Haitink 與 Barenboim 以他們的分量都只有一張。
+- **換片**：Perahia 原本掛《Davidsbündlertänze》，改成他拿葛萊美的蕭邦練習曲。
+- **曲目空白**：**馬勒第七、布拉姆斯德意志安魂曲、普契尼杜蘭朵這三個大曲目原本全池零錄音**。
+  杜蘭朵順便讓 Nilsson 有了第二張（她的招牌角色）。
+
+**同曲檢查的已知限制（工具面）**：現行檢查用專輯標題比對，會漏掉同一作品的德／英文異名
+（平均律的 `Das wohltemperierte Klavier` 與 `The Well-Tempered Clavier` 算成兩個曲目）；
+但若改成剝掉「作曲家：」前綴來比對，又會把不同作曲家的同名曲目誤併
+（十四張《Violin Concerto》其實分屬七位作曲家）。目前採標題比對＋人工複核，
+已知超限只有平均律與 Goldberg，兩者都源自池內那幾張作曲家掛名的重複卡。
+
 **這條教訓要帶進藍調／世界／民謠三個階段**：大牌藝人先確認代表作到位，再去挑有故事的冷門片。
 
 **上架人工成本已量化**：33 筆標「版本待確認」＋43 筆通用專輯名（《Violin Concertos》
@@ -5125,10 +5142,10 @@ Buniatishvili 2、Ólafsson 2、Hilary Hahn 2、Karajan 1。**大提琴、聲樂
 另抓到一個**同名不同人陷阱**：池內 `John Williams《How to Steal a Million》` 是電影配樂家，
 候選裡 `John Williams《Rodrigo: Concierto de Aranjuez》` 是古典吉他家，MBID／封面比對極可能混淆。
 
-**主要檔案**：`classical-expansion/candidates.json`（830 筆）、`classical-expansion/batches/c-01..c-26.json`
+**主要檔案**：`classical-expansion/candidates.json`（838 筆）、`classical-expansion/batches/c-01..c-26.json`
 （上架批次，每批 24–37 張同區塊）、`classical-expansion/HANDOFF.md`（改寫）、`POOL_BALANCE_PLAN.md`（新增）。
 **驗證**：去重／同曲／格式／字元混入四項腳本檢查全清（與池重複 0、內部重複 0、同曲 >3 為 0、
-632 位不重複演奏家）；卡池檔案本身未修改。
+634 位不重複演奏家）；卡池檔案本身未修改。
 **下一步**：從 `batches/c-01.json` 起逐批走 `dip-card-create` 上架。
 
 ### 2026-08-14（同日第四筆）｜shop｜複核前兩筆卡池改動，修掉一支會洗掉人工年份的腳本
