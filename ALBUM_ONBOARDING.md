@@ -95,6 +95,21 @@
   2. 簡介 KV 用 `desc4:` 前綴（CJK 鍵）。
 - 三軸評分（Last.fm listeners）也要用串流拼法查，manifest 記錄實際查詢用名。
 
+### 0.6 古典特例：作曲家欄（2026-08-14 店主指定）
+
+古典卡的 `artist` 欄依慣例放**演奏者／指揮**（Karl Richter、Martha Argerich），作曲家寫在專輯名。
+但這樣卡片資訊欄看不出這是誰的作品，所以古典開特例：**作曲家另存一欄，前端獨立顯示**。
+
+- **儲存位置**：`seed_cards.json` 每列**第 8 欄**（index 7）、`apex_pool.json` 每列**第 5 欄**（index 4），
+  值為作曲家字串（如 `"J.S. Bach"`）。與年份（seed 第 7 欄／apex 第 4 欄）同一套載入路徑。
+- **向後相容**：既有 7,484 列維持 7 欄不動，只有需要的卡多帶第 8 欄。
+  前端 `COMPOSER_MAP` 讀不到就回空字串，`.cd-composer:empty` 自動收起，非古典卡版面零影響。
+- **不另開檔案**：卡池本體開場就會載入，同一個 URL 走瀏覽器快取，實質零額外請求，
+  也避免另一份檔案的同步問題（與年份欄當初的決策一致）。
+- `build-seed-genres.mjs` 用 `JSON.stringify(r)` 整列寫回、只改第 6 欄，第 8 欄會被保留。
+- **多作曲家的卡**（選輯型如 Stile Antico《Song of Songs》收 Palestrina／Lassus／Victoria）
+  填主要作曲家或留空，不要塞一長串。
+
 ### 1. 身分確認與去重先行
 
 - 只收 MusicBrainz `primary-type=Album`；Single、EP、Compilation 不進一般卡池。**唯一例外**：白名單曲風可依「曲風 release type 例外」章節收 EP／Single／DJ-mix。

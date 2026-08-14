@@ -611,6 +611,10 @@
     .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
     .cd-year { font-size: 12px; color: var(--gray); letter-spacing: 0.14em; margin-bottom: 2px; }
     .cd-year:empty { display: none; }
+    /* 古典特例：卡片 artist 欄放的是演奏者／指揮，作曲家另立一行才看得出這是誰的作品。
+       非古典卡查無資料就是空字串，:empty 收起來，其他曲風的版面完全不動。 */
+    .cd-composer { font-size: 12px; color: var(--gray); margin-bottom: 2px; }
+    .cd-composer:empty { display: none; }
     .cd-stars { margin: 14px 0 4px; }
     .cd-desc { font-size: 12px; line-height: 1.9; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 12px 0 16px; }
     .cd-reel-btn { display: block; width: 100%; box-sizing: border-box; padding: 12px; margin-bottom: 12px; text-align: center; text-decoration: none; background: #fff; color: #111; border: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; }
@@ -1650,6 +1654,7 @@
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
       <div class="cd-artist">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
+      <div class="cd-composer">${composerOf(c.artist, c.album) || ''}</div>
       <div class="cd-year">${releaseYearOf(c.artist, c.album) || ''}</div>
       <div class="cd-stars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
@@ -2787,15 +2792,28 @@
   function releaseYearOf(artist, album) {
     return YEAR_MAP.get(yearKeyOf(artist, album)) || '';
   }
+  // 古典特例（2026-08-14 店主指定）：卡片 artist 欄依慣例放演奏者／指揮，
+  // 作曲家另存卡池第 8 欄（apex 第 5 欄），與年份同一套載入路徑，零額外請求。
+  const COMPOSER_MAP = new Map();
+  function composerOf(artist, album) {
+    const c = COMPOSER_MAP.get(yearKeyOf(artist, album));
+    return c ? `作曲：${c}` : '';
+  }
   // 年份就存在卡池本體（seed 第 7 欄／apex 第 4 欄），這兩個檔開場本來就會載入，
   // 同一個 URL 會走瀏覽器快取 → 實質零額外請求，也不會有另開一份檔案的同步問題。
   Promise.all([
     fetch('seed_cards.json').then(r => r.ok ? r.json() : []),
     fetch('apex_pool.json').then(r => r.ok ? r.json() : {})
   ]).then(([seed, apex]) => {
-    for (const row of (seed || [])) if (row[6]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[6]);
+    for (const row of (seed || [])) {
+      if (row[6]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[6]);
+      if (row[7]) COMPOSER_MAP.set(yearKeyOf(row[0], row[1]), row[7]);
+    }
     for (const tier of ['hall', 'pearl', 'heresy']) {
-      for (const row of ((apex || {})[tier] || [])) if (row[3]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[3]);
+      for (const row of ((apex || {})[tier] || [])) {
+        if (row[3]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[3]);
+        if (row[4]) COMPOSER_MAP.set(yearKeyOf(row[0], row[1]), row[4]);
+      }
     }
   }).catch(() => { /* 拿不到就當沒有年份，不影響其他功能 */ });
 
