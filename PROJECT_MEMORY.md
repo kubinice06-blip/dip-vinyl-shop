@@ -5027,6 +5027,90 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-14（同日追加）｜shop｜孤兒卡收尾：52 張補曲風、修腳本洗年份的 bug、補回 4 張年份
+
+承接同日 jazz+hiphop 稽核時發現的 53 張空 genres 卡（任何派系都抽不到）。
+
+## 成因：不是漏跑，是抓回來就是空的
+
+genres 欄由 `scripts/build-seed-genres.mjs` 打 worker `/album-genres`
+（Spotify → Last.fm）取得。這 53 張是**查到了但回空陣列**——Last.fm 對它們沒有可用標籤。
+名單組成完全吻合：台語／華語獨立樂團、日本爵士再發、放克樂手班底團、拉丁 salsa。
+
+**重跑腳本永遠救不了它們**：第 69 行挑選條件是 `force || !Array.isArray(r[5])`，
+而 `[]` **是** array，所以這些卡每次都被跳過。只能人工指定。
+
+## 附帶修掉一個會洗光全池年份的 bug
+
+`scripts/build-seed-genres.mjs:94` 原本是
+
+```js
+rows[i] = [r[0], r[1], r[2], r[3], r[4], out.genres];   // 六元素，年份被丟掉
+```
+
+apex 那段（124–128 行）**早就修過一模一樣的 bug**並留了註解，但 seed 這段沒改到。
+證據是全池有 **4 列只有 6 欄、沒有年份**——它已經咬過了。
+真正的風險是任何人跑一次 `--force`，全池 7484 張的年份會一次洗光。
+已改成 `rows[i][5] = out.genres;` 並補上同款註解。
+
+**補回的 4 張年份**：Art Blakey《A Night at Birdland, Vol. 1》1954、
+Horace Tapscott《The Call》1978、Rhythm & Sound《w/ The Artists》2003（皆網路查證），
+Egberto Gismonti《Água e Vinho》**1972**——這張直接採信本備忘錄既有的查證結論
+（1972 EMI/Odeon 而非 ECM，且警告過「與 1978 年 ECM 作品極易誤置」），
+而池內索引 1285 正是那張 1978 年的《Sol do Meio Dia》，正是備忘錄點名的誤置對象。
+
+## 曲風指定：52 張，1 張留待裁示
+
+爵士 4（Elvin Jones、和田直、植松孝夫、王若琳）、靈魂放克 5（Bar-Kays ×2、J.B.'s ×3）、
+嘻哈 3（Run-D.M.C.，其中《King of Rock》雙標 rock 是它整張的命題）、
+電子跨界 3（Vrioon `electronic+classical`、µ-Ziq、Siembra 走 world）、
+Steve Kipner 1、台灣搖滾 14、台灣搖滾流行 7、民謠系 6、
+帶傳統樂器加 world 4（閃靈 ×2、百合花、巴奈）、流行其他 5（含壞特 `soul+jazz`）。
+apex pearl 另補 2 張（Otis G. Johnson `soul`、稻垣次郎 `jazz+soul`）。
+
+**唯一保留空標的是 Jean-Luc Godard《Histoire(s) du Cinéma》**（索引 5624）——
+ECM New Series 的影像聲軌拼貼，主體是旁白與引用蒙太奇，十個固定詞沒有一個真的貼合；
+掛 classical 只是因為廠牌。留給店主裁示。
+
+## 過程中發現：有另一條線在同一個工作區並行
+
+做到一半發現卡池從 7485 變 7484。查出來是**另一條 desc-restyle 線在我 push 之後
+落了兩筆 commit（`111e22e`、`15df160`），其中移除了 Bobby Womack《I Still Love You》**
+（原索引 7453）。不是本次寫壞。
+
+所幸 7453 比本次所有目標索引（最高 7128）都後面，位移沒有影響到任何一張；
+套用腳本的前置檢核（每個目標索引現值必須是空 genres、未覆蓋者必須剛好只有 Godard）
+也全數通過，事後再逐張用卡名核對過 56 列。
+
+**但 CLAUDE.md 目前寫「店主已不再並行跑本專案」而取消了開工前檢查——這個前提已經不成立。**
+同一個工作區有第二條線在寫同一批檔案，建議把開工前的 `git fetch` ＋ 落後檢查加回來。
+
+## 主要檔案
+
+- `seed_cards.json`（52 列 genres ＋ 4 列年份）
+- `apex_pool.json`（pearl 2 列 genres）
+- `scripts/build-seed-genres.mjs:94`（年份洗除 bug）
+- 備份：`seed_cards.backup-before-orphan-genres.json`、`apex_pool.backup-before-orphan-genres.json`
+
+## 驗證
+
+- seed 逐列比對：**差異 56 列（曲風 52 ＋ 年份 4），非目標列或非預期欄位變動 0**；
+  藝人／專輯名／三圍零變動；56 列全部逐張核對過卡名。
+- apex 逐列比對：差異 2 列，張數與年份不變。
+- 空 genres：seed 53 → **1**（只剩 Godard）；apex 2 → **0**。
+- 欄位數分佈：7484 列全部 7 欄（原本有 4 列只有 6 欄）。
+- 曲風詞彙越界 0。
+- 寫回前先驗過序列化格式：seed 是單行 `JSON.stringify`、apex 是 `indent=1`，零附帶排版差異。
+
+## 待辦
+
+1. Godard 那張的曲風要不要指定。
+2. `build-seed-genres.mjs` 的**寫檔格式與現行檔案不符**：113 行寫 seed 是「一列一行」，
+   但現行 seed 是單行；137–138 行寫 apex 的格式也與現行 `indent=1` 不同。
+   腳本一跑就會整檔重排產生假 diff。尚未處理。
+3. jazz+hiphop 稽核留下的待裁示 33 張（見下一筆）。
+
+
 ### 2026-08-14｜shop｜jazz+hiphop 雙標稽核：22 張移除 jazz，卡片零移除
 
 稽核兩池裡同時掛 jazz 與 hiphop 的卡：**seed 118 張＋apex 2 張，合計 120 張**。

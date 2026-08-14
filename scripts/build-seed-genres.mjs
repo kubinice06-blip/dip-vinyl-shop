@@ -91,7 +91,9 @@ async function worker() {
     const { r, i } = todo[cursor++];
     const out = await fetchGenres(r[0], r[1]);
     if (out) {
-      rows[i] = [r[0], r[1], r[2], r[3], r[4], out.genres];
+      // 只覆寫第 6 欄，其餘欄位（第 7 欄的發行年份）必須原封不動——
+      // 原本這裡是重建成六元素陣列，跑 --force 會把全池年份整批洗掉（apex 那段早已修過同一個 bug）。
+      rows[i][5] = out.genres;
       if (out.kvHit) hits++;
       if (!out.genres.length) empty++;
     } else failed++;
