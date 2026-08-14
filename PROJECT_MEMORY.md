@@ -1,5 +1,84 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-11｜desc-restyle（無 git）｜wave3 重切後開跑：r-01..r-06 上線 181 張
+
+接力模式（A 批進寫作時 B 批開 hook，**審稿與上線嚴格一次一批、照批次順序**）。
+研究層已完成，所以每批只剩 hook 2 組＋寫作 2 組。**卡池與 KV 的整頓資料這一輪沒有再動。**
+
+| 批次 | 張數 | 家族 | 審稿修正 |
+|---|---|---|---|
+| r-01 | 24 | 混合 | 5 |
+| r-02 | 38 | 古典 | 1 |
+| r-03 | 45 | 電子 | 3 |
+| r-04 | 23 | 民謠／世界 | 2 |
+| r-05 | 26 | 嘻哈／R&B | **0** |
+| r-06 | 25 | 嘻哈／靈魂 | 1 |
+
+六批 181 張，KV 全部逐字驗證一致。
+
+## 規則落地：古典卡通則的適用邊界（已寫進 `prompts/hook-base.md`）
+
+判準一句話：**問「這首曲子在這張唱片之前就存在嗎」**。
+存在 → 古典通則（只寫創作背景與首演脈絡，不寫演奏者／指揮／廠牌／錄音年／排行榜）；
+這張唱片就是它第一次存在 → 一般專輯規則。
+r-02 的 38 張據此分成 21／17 兩邊，Kurtág 兩張還分屬兩種寫法
+（《Játékok》是他夫婦自己彈的、《Kafka-Fragmente》寫作品本身）。
+**若當初硬套古典通則，Nils Frahm、Yiruma、Einaudi 那幾張會無話可寫。**
+
+## 重切批次的效果，在這六批看得見
+
+- **Madlib 三張**（Lootpack／Madlib 個人／Kazi & Madlib）舊切法會散進三批、各寫各的 Stones Throw；
+  重切後同批，創廠敘事只給 Lootpack 那張，正文還直接把「Otis Jackson Jr. 就是 Madlib」寫給讀者。
+- **Brigitte Fontaine 七張**（兩張單人掛名＋五張與 Areski 聯名）擠在同一批，
+  切出七條互斥的軸、開頭前四字全數互異。同人多卡本來最容易寫成流水帳。
+- **底特律／芝加哥的通論**跨五張卡分派乾淨，沒有任何一張把源流概述重講一遍。
+
+## 審稿抓到的 12 處，型態分佈
+
+**時序矛盾 5 處**（最高頻）：Shabaka《Afrikan Culture》(2022) 被寫成「放下薩克斯風之後」但他 2023 年才停吹、
+《Of the Earth》的「隔了兩年」實為三年、Kreutzer 的「首演者早已絕交」實為首演後才交惡、
+Ernest Ranglin 的「隔了二十年」與 1974–81 錄音／1999 發行對不上、
+José González 的「整整五年」實為四年半。
+**校對痕跡 2 處**：Toots & The Maytals 的「掛名也仍是完整的」、Miguel Bosé 的「倒不是 Warhol 寫的」。
+**指涉錯誤 2 處**：Shabaka 把「曲名」寫成「專輯名」、Aesop Rock 把「同步上架」寫成「買唱片附」。
+**研究稿本身有問題 2 處**：Pierre Barouh 那條在來源內部自相矛盾（Saravah 自家型錄頁）、
+《Vous et nous》的 Saravah 合作年限與同批另一張跨卡矛盾。
+**行文 1 處**：混入 audiophile。
+
+## 寫作層駁回主線 note 指派共 4 次，全部正確
+
+r-05 的 busdriver（Exclaim! 年終榜附分數）、r-06 的 Open Mike Eagle（滾石／Spin 年終榜）、
+Kool G Rap（note 要求「寫成 Complex 雜誌的觀察」）、Aesop Rock（Metacritic／Pitchfork 分數）。
+**四次都是主線在 note 裡指派了 base 檔明令不得寫的樂評媒體與分數。**
+base 檔的禁令設計成「寫作層可以駁回派工詞」是對的。
+
+## 主線這輪犯的三類錯，與對策
+
+1. **在派工詞裡指派研究稿沒查到的事**（3 次）：Saravah 廠牌創立來歷、Air 的 1971 芝加哥組團、
+   Rei Harakami 的「日文專輯名」（那兩張的專輯名本來就是拉丁字母）。
+   代理都照實回報並改用有來源的版本。**指派通論前要先確認研究稿真的有那條事實。**
+2. **派工詞對錯寫作分份**（2 次，r-04 的 Johnny Cash、r-05 的 AKLO 與 Destiny's Child）。
+   根因是 `merge-writer-input.mjs` 把研究組 a→e 串起來後**照張數切半**，不是按藝人分組。
+   **已新增 `show-writer-split.mjs`，寫派工詞前先跑它對照。** r-06 用了，立刻發現
+   Madlib 三張跨在兩份輸入上，兩邊派工詞因此都寫了交叉指認。
+   兩次都沒出事，是因為 hook 層的 note 已把同樣指示寫成施工圖、寫作層照 note 走——
+   **note 這一層的價值不只是防同構，也是派工詞出錯時的備援。**
+3. **改藝人欄只改卡池、忘了同步 key**（1 次，Pierre Akendengué 的重音統一）。發現後補上下游 6 個檔與 KV。
+
+## 待處理
+
+- `skepta|insomnia` 的官方掛名是 **Skepta、Chip、Young Adz 三人聯名**（研究稿 facts 寫了、
+  但沒列進 poolIssues），正文已寫成三人聯名，**卡池藝人欄仍是 Skepta 一人**。
+- Areski Belkacem 已於 2026 年 6 月 2 日辭世。與 1970 年代那批作品無關、依反向禁令未寫，
+  但日後若有他晚期作品的卡，那條時序就變成可寫。
+- 《Comme à la radio》的年份在兩組研究稿裡不一致（1969／1970）。該張已上線、本批未觸及。
+
+## 主要檔案
+
+`desc-restyle/`：`show-writer-split.mjs`（新增）、`prompts/hook-base.md`（新增古典邊界一節）、
+`batches/{hooks,input,output}/r-0*`、`batches/r-0*-kv.json`、`progress.json`。
+剩 **r-07..r-23 共 17 批 / 664 張**未進 hook。
+
 ### 2026-08-14｜hub 搜尋列補上搜尋範圍下拉
 
 - Repo：`dip-vinyl-shop`
