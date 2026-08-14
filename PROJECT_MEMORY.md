@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜歌荒救星首頁 hub 三段式分組改版
+
+- Repo：`dip-vinyl-shop`
+- 8 張等權重直排卡改為三段：「找一張來聽」（心情選歌／類型挑片／直接來一張）＋「玩點別的」
+  （品味生死鬥 BETA）共四張 `.feature` 深色主選項大卡；「你的收藏」（我的唱片櫃／音樂地圖／
+  我的抽卡紀錄）收成兩欄小卡（`.homehub-small-grid`，奇數尾卡跨滿版）。
+- 「搜尋專輯」從卡片降級為 hub 底部搜尋列（`#homehubSearchForm`）：有關鍵字就設 `_asQuery`
+  後 `setActiveTab('album-search')` 並直接 `doAlbumSearch()`，空白只開頁；送出後清空 hub 輸入框。
+- 「我的紀錄」全站改名「我的抽卡紀錄」（hub 卡、historyModal 段落標題、兩處 go-history-btn 與其 title）。
+- 「直接來一張」描述改「不想選？隨機抽一張你沒聽過的。」補句號並對仗。
+- 主要檔案：`index.html`（hub HTML＋CSS＋bootstrapView 搜尋列 handler）。
+- 驗證：本機 http-server 實測——首頁 hub 四大卡三小卡與四段標籤齊全、商店 UI 隱藏；
+  搜尋列帶「blue」直進搜尋專輯頁命中 127 張（與 07-23 既知數一致）且輸入框清空；
+  點「我的抽卡紀錄」小卡開 modal、段落標題同步新名；手機 375px 兩欄小卡無橫向捲動。
+  console 僅 worker CORS（只允許 dipvinyl.tw，本機既有現象）。
+- 順帶發現未處理：`akinator/index.html` 轉址到 `/#akinator` 但 index.html 無此路由，分享連結會落回首頁，待裁示留或刪。
+
 ### 2026-07-23｜搜尋專輯改單一 bar＋範圍下拉（全部／專輯／藝人，預設全部）
 
 - Repo：`dip-vinyl-shop`

@@ -395,10 +395,24 @@
     .homehub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
     .homehub-card:hover .homehub-card-desc { color: #bbb; }
     .homehub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
-    /* 「直接來一首」強調為主要入口 */
+    /* 主選項深色大卡：找片三招＋品味生死鬥 */
     .homehub-card.feature { background: #111; color: #fff; }
     .homehub-card.feature .homehub-card-desc { color: #bbb; }
     .homehub-card.feature:hover { background: #000; }
+    /* hub 分組標題 */
+    .homehub-group-label { padding: 26px 20px 10px; text-align: center; font-family: var(--mono); font-size: 10px; letter-spacing: 0.28em; color: var(--gray); }
+    /* 「你的收藏」小卡兩欄 */
+    .homehub-small-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+    .homehub-small-grid .homehub-card { padding: 18px 14px; }
+    .homehub-small-grid .homehub-card:nth-child(odd) { border-right: 1px solid var(--line); }
+    .homehub-small-grid .homehub-card:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: none; }
+    .homehub-small-grid .homehub-card-name { font-size: 12px; margin-bottom: 4px; }
+    .homehub-small-grid .homehub-card-desc { font-size: 9px; }
+    /* hub 搜尋列：搜尋專輯降級為工具列，不佔卡位 */
+    .homehub-search { display: flex; width: min(420px, calc(100% - 40px)); margin: 0 auto 44px; border: 1px solid var(--line); }
+    .homehub-search input { flex: 1 1 auto; min-width: 0; border: none; padding: 12px 14px; font-family: var(--mono); font-size: 12px; outline: none; background: none; color: var(--black); }
+    .homehub-search button { flex: 0 0 auto; border: none; background: var(--black); color: #fff; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; padding: 0 18px; cursor: pointer; }
+    .homehub-search:focus-within { border-color: var(--black); }
 
     /* 專輯三維評分（五顆星） */
     .album-ratings { display: flex; flex-direction: column; gap: 7px; width: fit-content; max-width: 320px; margin: 16px auto 4px; }
@@ -618,62 +632,62 @@
     <div class="homehub-sub">不知道從何聽起？<br>沾記幫你挖出屬於你的那張。</div>
   </div>
   <div class="homehub-cards">
-    <button class="homehub-card" data-go="quiz">
+    <div class="homehub-group-label">找一張來聽</div>
+    <button class="homehub-card feature" data-go="quiz">
       <div>
         <div class="homehub-card-name">心情選歌</div>
         <div class="homehub-card-desc">回答幾個問題，讓心情帶你找到一張唱片。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <button class="homehub-card" data-go="genre">
+    <button class="homehub-card feature" data-go="genre">
       <div>
         <div class="homehub-card-name">類型挑片</div>
         <div class="homehub-card-desc">選個領域，透過三位藝人的品味挖出那張。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <button class="homehub-card" data-go="random">
+    <button class="homehub-card feature" data-go="random">
       <div>
         <div class="homehub-card-name">直接來一張</div>
-        <div class="homehub-card-desc">隨機抽一張你沒聽過的</div>
+        <div class="homehub-card-desc">不想選？隨機抽一張你沒聽過的。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <button class="homehub-card" data-go="album-search">
-      <div>
-        <div class="homehub-card-name">搜尋專輯</div>
-        <div class="homehub-card-desc">輸入專輯或藝人名，查介紹、聽試聽。</div>
-      </div>
-      <span class="homehub-card-arrow">→</span>
-    </button>
-    <button class="homehub-card" data-go="pvp">
+    <div class="homehub-group-label">玩點別的</div>
+    <button class="homehub-card feature" data-go="pvp">
       <div>
         <div class="homehub-card-name">品味生死鬥<span class="homehub-beta">BETA</span></div>
         <div class="homehub-card-desc">單場對決或無盡試煉，用你手邊的專輯一決高下。</div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <button class="homehub-card" data-go="collection">
-      <div>
-        <div class="homehub-card-name">我的唱片櫃</div>
-        <div class="homehub-card-desc">收藏你抽到的專輯卡。</div>
-      </div>
-      <span class="homehub-card-arrow">→</span>
-    </button>
-    <button class="homehub-card" data-go="music-map">
-      <div>
-        <div class="homehub-card-name">音樂地圖</div>
-        <div class="homehub-card-desc">看你的收藏如何長成八大曲風的聆聽版圖。</div>
-      </div>
-      <span class="homehub-card-arrow">→</span>
-    </button>
-    <button class="homehub-card" data-go="history">
-      <div>
-        <div class="homehub-card-name">我的紀錄</div>
-        <div class="homehub-card-desc">回顧你挖到過的每一張唱片。</div>
-      </div>
-      <span class="homehub-card-arrow">→</span>
-    </button>
+    <div class="homehub-group-label">你的收藏</div>
+    <div class="homehub-small-grid">
+      <button class="homehub-card" data-go="collection">
+        <div>
+          <div class="homehub-card-name">我的唱片櫃</div>
+          <div class="homehub-card-desc">收藏你抽到的專輯卡。</div>
+        </div>
+      </button>
+      <button class="homehub-card" data-go="music-map">
+        <div>
+          <div class="homehub-card-name">音樂地圖</div>
+          <div class="homehub-card-desc">看你的收藏如何長成八大曲風的聆聽版圖。</div>
+        </div>
+      </button>
+      <button class="homehub-card" data-go="history">
+        <div>
+          <div class="homehub-card-name">我的抽卡紀錄</div>
+          <div class="homehub-card-desc">回顧你挖到過的每一張唱片。</div>
+        </div>
+      </button>
+    </div>
+    <div class="homehub-group-label">搜尋專輯</div>
+    <form class="homehub-search" id="homehubSearchForm">
+      <input type="text" id="homehubSearchInput" placeholder="輸入專輯或藝人名，查介紹、聽試聽…" autocomplete="off">
+      <button type="submit">搜尋</button>
+    </form>
   </div>
 </section>
 <div class="search-bar">
@@ -2746,9 +2760,9 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           分享這個測驗
         </button>
-        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
+        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的抽卡紀錄">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          我的紀錄
+          我的抽卡紀錄
         </button>
       </div>
     `;
@@ -3489,7 +3503,7 @@ ${seenList}
     section.className = 'history-section';
     section.innerHTML = `
       <div class="history-section-header">
-        <span class="history-section-title">我的紀錄</span>
+        <span class="history-section-title">我的抽卡紀錄</span>
         ${history.length ? `<button class="history-clear-btn">清除紀錄</button>` : ''}
       </div>
       <div class="history-list">
@@ -3824,9 +3838,9 @@ ${seenList}
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           分享這個測驗
         </button>
-        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的紀錄">
+        <button class="go-history-btn" style="background:none;border:none;cursor:pointer;color:var(--gray);display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 12px;" title="我的抽卡紀錄">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          我的紀錄
+          我的抽卡紀錄
         </button>
       </div>
     `;
@@ -4482,6 +4496,17 @@ ${seenList}
     // 首頁 hub 卡片（網站與 App 共用）
     document.querySelectorAll('#homeHub .homehub-card').forEach((card) => {
       card.addEventListener('click', () => setActiveTab(card.dataset.go));
+    });
+
+    // 首頁 hub 搜尋列：有關鍵字就帶進「搜尋專輯」直接開搜，空白則只開頁
+    const hubSearchForm = document.getElementById('homehubSearchForm');
+    if (hubSearchForm) hubSearchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const q = document.getElementById('homehubSearchInput').value.trim();
+      _asQuery = { q, field: 'all' };
+      hubSearchForm.reset();
+      setActiveTab('album-search');
+      if (q) void doAlbumSearch();
     });
 
     // 遊戲畫面「返回首頁」
