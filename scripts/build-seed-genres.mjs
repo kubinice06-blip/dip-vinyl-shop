@@ -136,9 +136,7 @@ for (const tier of ['hall', 'pearl', 'heresy']) {
   }
 }
 if (apexDone || apexFailed) {
-  const apexJson = '{\n' + ['hall', 'pearl', 'heresy']
-    .map(t => JSON.stringify(t) + ': [' + (apex[t] || []).map(r => '\n' + JSON.stringify(r)).join(',') + '\n]').join(',\n') + '\n}';
-  JSON.parse(apexJson);
-  fs.writeFileSync(APEX, apexJson);
+  // 與現行 apex_pool.json 的格式（indent=1）逐字一致，避免腳本一跑整檔重排產生假 diff
+  fs.writeFileSync(APEX, JSON.stringify(apex, null, 1));
 }
 console.log(`apex tagged ${apexDone}, failed ${apexFailed}`);

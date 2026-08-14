@@ -5027,6 +5027,46 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+### 2026-08-14（同日第三筆）｜shop｜seed_cards 轉一卡一行＋Godard 裁定 classical
+
+孤兒卡收尾的兩件遺留一次做完。
+
+## Godard《Histoire(s) du Cinéma》→ `classical`
+
+店主起初認為「完全無法定義曲風」。裁定依據是池內先例：三圍 5/5/5 的極端卡共 7 張
+（Cecil Taylor ×2、Braxton、Roscoe Mitchell、Shankar、Coil《ANS》、本張），
+其中 **Coil《ANS》同樣是「聽起來無法歸類」的純聲響作品，但標了 `electronic`**——
+池子的既有作法是**標聲音的出身脈絡，不是標聽感**。照此 Godard 走 ECM New Series
+古典脈絡標 `classical`，讓古典派抽得到這張極端怪卡。店主同意。
+**全池空 genres 自此歸零。**
+
+## seed_cards.json 從單行轉為一卡一行
+
+原檔 44 萬字元擠在一行，是最初生成時 `JSON.stringify` 沒帶格式化參數的遺留。
+後果：git diff 對它完全失明（改 1 張還是 5000 張都只顯示「1 行變動」），
+歷史紀錄形同作廢，事後查改動只能自己寫腳本比對備份。
+
+轉換採用 **`build-seed-genres.mjs:113` 的寫法逐字元一致**
+（`'['+rows.map(JSON.stringify).join(',\n')+']'`，無行尾換行）——
+日後腳本重寫這個檔就是零假 diff。順手把腳本寫 apex 的那段（原 137-138 行自組字串）
+也改成與現行檔案一致的 `JSON.stringify(apex,null,1)`，兩個檔案的格式閉環都斷根了。
+
+這筆 commit 的 diff 會顯示整檔重排（7484 行新增、1 行刪除），是**一次性代價**；
+資料層實際只動了 Godard 一列，已逐列比對驗證（差異 1 列、異常 0）。
+
+## 主要檔案
+
+- `seed_cards.json`（格式轉換＋5624 一列）
+- `scripts/build-seed-genres.mjs`（apex 寫檔格式對齊）
+- 備份：`seed_cards.backup-before-line-format.json`
+
+## 驗證
+
+- 逐列比對：資料差異 1 列（僅 5624 genres `[]`→`["classical"]`），異常 0。
+- 新檔與腳本寫檔格式逐字相符：true；apex 現檔與 `indent=1` 逐字相符：true。
+- 行數 7484 = 列數；空 genres 0；`node --check` 腳本通過。
+
+
 ### 2026-08-14（同日追加）｜shop｜孤兒卡收尾：52 張補曲風、修腳本洗年份的 bug、補回 4 張年份
 
 承接同日 jazz+hiphop 稽核時發現的 53 張空 genres 卡（任何派系都抽不到）。
