@@ -2291,6 +2291,15 @@
     return canvas.toDataURL('image/jpeg', 0.75);
   }
 
+  // 包含式比對：空字串與極短字串只認完全一致，否則《( )》《O》這種名字會命中所有卡
+  const _asShortLimit = s => /[\p{sc=Han}\p{sc=Hiragana}\p{sc=Katakana}\p{sc=Hangul}]/u.test(s) ? 2 : 4;
+  function _asContains(hay, needle) {
+    if (!hay || !needle) return false;
+    if (hay === needle) return true;
+    if (needle.length < _asShortLimit(needle)) return false;
+    return hay.includes(needle);
+  }
+
   // 一組辨識候選 → 卡池命中列（0=藝人專輯都中、1=只中專輯、2=只中藝人）
   function _asMatchCandidate(rows, cand) {
     const ca = _asLoose(cand.artist), cl = _asLoose(cand.album);
@@ -2298,8 +2307,8 @@
     const out = [];
     for (const c of rows) {
       const pa = _asLoose(c.artist), pl = _asLoose(c.album);
-      const artistHit = !!ca && (pa === ca || pa.includes(ca) || ca.includes(pa));
-      const albumHit = !!cl && (pl === cl || pl.includes(cl) || cl.includes(pl));
+      const artistHit = _asContains(pa, ca) || _asContains(ca, pa);
+      const albumHit = _asContains(pl, cl) || _asContains(cl, pl);
       if (artistHit && albumHit) out.push({ row: c, score: 0 });
       else if (albumHit) out.push({ row: c, score: 1 });
       else if (artistHit) out.push({ row: c, score: 2 });
