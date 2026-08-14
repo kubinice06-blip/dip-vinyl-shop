@@ -425,6 +425,7 @@
     /* hub 搜尋列：搜尋專輯降級為工具列，不佔卡位（標題不可收合，與分組標題區隔） */
     .homehub-search-label { padding: 22px 44px 16px; text-align: center; font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--black); }
     .homehub-search { display: flex; width: min(420px, calc(100% - 40px)); margin: 0 auto 44px; border: 1px solid var(--line); }
+    .homehub-search select { flex: 0 0 auto; border: none; border-right: 1px solid var(--line); background: #f6f6f6; font-family: var(--mono); font-size: 12px; padding: 0 10px; outline: none; color: var(--black); cursor: pointer; -webkit-appearance: none; appearance: none; text-align: center; }
     .homehub-search input { flex: 1 1 auto; min-width: 0; border: none; padding: 12px 14px; font-family: var(--mono); font-size: 12px; outline: none; background: none; color: var(--black); }
     .homehub-search button { flex: 0 0 auto; border: none; background: var(--black); color: #fff; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; padding: 0 18px; cursor: pointer; }
     .homehub-search:focus-within { border-color: var(--black); }
@@ -706,7 +707,12 @@
     </div>
     <div class="homehub-search-label">搜尋專輯</div>
     <form class="homehub-search" id="homehubSearchForm">
-      <input type="text" id="homehubSearchInput" placeholder="輸入專輯或藝人名，查介紹、聽試聽…" autocomplete="off">
+      <select id="homehubSearchField" aria-label="搜尋範圍">
+        <option value="all">全部</option>
+        <option value="album">專輯</option>
+        <option value="artist">藝人</option>
+      </select>
+      <input type="text" id="homehubSearchInput" placeholder="專輯名或藝人名…" autocomplete="off">
       <button type="submit">搜尋</button>
     </form>
   </div>
@@ -4537,7 +4543,8 @@ ${seenList}
     if (hubSearchForm) hubSearchForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const q = document.getElementById('homehubSearchInput').value.trim();
-      _asQuery = { q, field: 'all' };
+      // 範圍下拉與搜尋專輯頁內那條共用同一組 field（all｜album｜artist），一起帶進去
+      _asQuery = { q, field: document.getElementById('homehubSearchField').value };
       hubSearchForm.reset();
       setActiveTab('album-search');
       if (q) void doAlbumSearch();

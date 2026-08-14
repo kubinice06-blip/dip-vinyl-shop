@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜hub 搜尋列補上搜尋範圍下拉
+
+- Repo：`dip-vinyl-shop`
+- 店主問「怎麼把原本搜尋的下拉式選單移除了」——**並沒有移除**，2026-07-23 那組
+  `#asField`（全部／專輯／藝人）一直在搜尋專輯頁內。落差是本次新增的 hub 搜尋列只有輸入框、
+  field 寫死 `'all'`，首頁看不到下拉。依店主指示（選項 A）**在 hub 搜尋列也補上同一組下拉**。
+- 新增 `#homehubSearchField`（三個 option 與頁內同值），送出時 `_asQuery.field` 改讀它而非固定 all；
+  `.homehub-search select` 樣式沿用 `.album-search-bar select`（灰底、置中、去原生箭頭）。
+  `form.reset()` 在讀值之後才跑，所以下拉會回到「全部」而不影響本次查詢。
+- 順帶把 placeholder 改成與頁內一致的「專輯名或藝人名…」。
+- 主要檔案：`index.html`。
+- 驗證：本機實測三種範圍皆與 07-23 既知數字一致——藝人搜 blue **27 張**（前四張藝人名皆含 blue）、
+  專輯搜 kind of blue **2 張**（Kind of Blue／Another Kind of Blues）、全部搜 blue 127 張；
+  頁內下拉同步顯示帶進去的範圍；桌機 420px、手機 375px（下拉 45＋輸入 228＋鈕 60）皆無橫向溢出。
+
 NaN### 2026-08-11｜desc-restyle（無 git）｜wave3 重切批次＋通論帳本（寫作前的最後前置）
 
 整頓完的 845 張重新切批。**卡池與 KV 這一輪沒有再動。**
