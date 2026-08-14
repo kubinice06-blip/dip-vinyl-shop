@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-14｜新功能：拍封面搜尋（測試版）——Haiku 視覺辨識＋卡池比對
+
+- Repo：`dip-vinyl-worker`（新端點）＋`dip-vinyl-shop`（搜尋專輯頁 UI）
+- **worker `/cover-scan`**（POST `{image: dataURL|base64}`）：照 `/claude` 既有 Anthropic
+  呼叫模式打 `claude-haiku-4-5-20251001`（image block＋文字），system 要求只輸出
+  `{"candidates":[{artist,album,confidence}]}`、最多 3 組。上限 base64 5.6M 字元（約 4MB）；
+  回應剝 code fence 後 parse，失敗一律回空陣列。**不帶 temperature**（沿用 Sonnet5 教訓）。
+- **前端**：搜尋 bar 下方「📷 拍封面搜尋 BETA」＋隱藏 `input[capture=environment]`
+  （手機開相機、桌機選檔）。canvas 壓到長邊 1024／JPEG 0.75（約 150KB）再上傳，
+  `createImageBitmap(..., imageOrientation:'from-image')` 處理手機 EXIF 方向。
+  辨識結果只當線索，實際列出的一律是卡池真有的卡：候選逐一比對，
+  **0=藝人＋專輯都中 ＞ 1=只中專輯 ＞ 2=只中藝人**，第 2 層專治「AI 專輯名認錯」。
+  低信心（<0.5）標題改「不太確定，可能是」。點卡沿用既有詳情＋試聽。
+- 重構：卡池索引 `_asPool()` 與結果渲染 `_asShowHits()` 抽出共用，文字搜尋一併改用。
+- **提示詞教訓（Haiku 實測）**：日本藝人封面只印羅馬拼音時模型會照抄
+  （TATSURO YAMASHITA），但卡池已全面漢字正名 → 提示詞明確要求換回官方漢字並給範例，
+  修正後回「山下達郎」正確命中。另加「認得藝人但專輯沒把握就 album 留空」規則。
+- **比對 bug（線上實測抓到）**：鬆散正規化會把《( )》《[untitled]》清成空字串，
+  而空字串是任何字串的子字串 → 命中全卡池；單字母專輯（《O》《A》）同理亂中。
+  修法：`_asContains()` 空字串直接 false，短字串（含 CJK 判定：CJK≥2、拉丁≥4）只認完全一致。
+- 主要檔案：`dip-vinyl-worker/src/index.js`、`dip-vinyl-shop/index.html`
+- 驗證：① 本機免費 Haiku 代理先驗提示詞（4 張封面）；② `wrangler deploy` 後 Node 打線上
+  端點：Kind of Blue 0.99、Long Season 0.95、山下達郎 For You 0.95 皆正確，Vashti Bunyan
+  手寫風封面認錯但 confidence 0.35；③ 離線拿真實卡池（8,118 張）測比對六案例，含
+  「藝人對專輯錯」成功救回正確卡、「整組認錯」0 命中；④ 線上 pages.dev 端到端：把封面畫成
+  傾斜＋反光的模擬照片塞進 file input，辨識到 Fishmans《Long Season》、命中 4 張（正確卡第一、
+  其餘同藝人）、點卡詳情 3 列星星＋簡介＋試聽 playing；console 0 error。
+- 成本：單次掃描 Haiku 約 NT$0.1 以下、耗時約 1.3–1.8 秒。測試版**未加頻率限制**，
+  之後要防濫用可在 worker 用 KV 計數。
+- 已知限制：手寫／純圖像無字封面辨識率低（靠候選清單＋手動搜尋兜底）；
+  部署後舊訪客可能被瀏覽器 HTTP 快取擋一次，重新整理即可（SW 導覽本身是網路優先）。
+
 ### 2026-08-14｜desc-restyle（無 git）｜r-07..r-10 上線 168 張，接力十批收工
 
 接力模式續跑第七至十批，四批各 42 張。研究層早已完成，每批只跑 hook 2 組＋寫作 2 組。
