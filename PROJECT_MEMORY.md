@@ -1,6 +1,6 @@
 # dip vinyl 專案備忘錄
 
-### 2026-08-11｜dip-vinyl-shop ＋ desc-restyle｜wave3 卡池整頓（第一、二階段）
+NaN### 2026-08-11｜dip-vinyl-shop ＋ desc-restyle｜wave3 卡池整頓（第一、二階段）
 
 研究階段的 findings 落地。**掛名類（31 條）刻意未執行**，那會改藝人欄、連帶要搬 KV key
 與 Firestore 文件 id，等店主裁示。
