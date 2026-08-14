@@ -1,6 +1,66 @@
 # dip vinyl 專案備忘錄
 
-NaN### 2026-08-11｜dip-vinyl-shop ＋ desc-restyle｜wave3 卡池整頓（第一、二階段）
+NaN### 2026-08-11｜desc-restyle（無 git）｜wave3 重切批次＋通論帳本（寫作前的最後前置）
+
+整頓完的 845 張重新切批。**卡池與 KV 這一輪沒有再動。**
+
+## 人物歸戶：重切的核心
+
+舊切法用**藝人字串**判斷同藝人，所以 Muhal Richard Abrams／Abrams Octet／The Muhal Richard
+Abrams Orchestra 被當成三個人、散進三批。新增 `build-person-groups.mjs` 建歸戶層，
+**530 種藝人字串 → 488 個人，29 組是多字串合併**（`batches/person-groups.json`）。
+
+兩個來源：
+- **findings 的 samePerson**（研究層查證過，最可信）——併了 8 組。
+  另外 8 條的別名字串不在本波卡單裡（例如 Abdullah Ibrahim 的卡都在已上線的 w3-04），不需處理。
+- **字串編制變體**（`X` / `X Trio` / `X & Y` / `The X`）——產生 38 組候選，**主線逐組看過才採用**。
+  這批不能全自動：`Miles Davis` 與 `Miles Davis Quintet` 是同一人，但同名不同人的情況字串比對分不出來。
+  規則刻意只比對**聯名的第一位**，所以 `Chet Baker & Paul Bley` 只併進 Chet Baker，
+  不會把 Paul Bley 也拖進同一組。
+
+最大的幾組：Archie Shepp 10 張（6 種掛名）、Muhal Richard Abrams 10 張（4 種）、
+Betty Wright 8 張、Keith Jarrett 8 張、Chet Baker 7 張、Brigitte Fontaine & Areski Belkacem 7 張。
+
+## 重切：23 批 / 845 張，同人跨批零組
+
+`recut-batches.mjs`。最小 23 張、最大 45 張，**沒有碎批**。
+
+第一版切出 25 批但尾巴碎成 2 張、5 張、10 張各一批——每批都有固定開銷（hook 兩組、寫作兩組），
+這樣切是白付。改成**家族內先算好要幾批（`round(總數/40)`，平均超過上限就多切一批），
+再把人物塊由大到小放進當下最小的批**，各批張數自然拉平；不足 20 張的小家族
+（blues 2、pop 10、world 12）併成一批混合批。
+
+家族分佈：soul 6 批、jazz-中期 6 批、jazz-當代 2、hiphop 2，
+classical／electronic／folk／jazz-早期／rock／無曲風／混合 各 1。
+**守恆驗過**：845 張、845 個 key，零遺漏零重複。
+
+## 研究稿按新批次重組
+
+研究稿原本按舊批次（`w3-XX-y`）存放，重切後對不上。已重組成 `r-NN-a..e` 共 **104 份**，
+同人不跨組（hook 層要一眼看到同人全貌）。驗證：23 批的研究組檔與卡單完全對應、facts 皆非空。
+**舊的 `w3-*` 檔案保留不動**，當對照用。
+
+## 全域通論帳本
+
+`batches/recut/LEDGER.md`。333 條共用骨架歸成 17 個主題，跨批分佈最廣的幾條：
+
+| 主題 | 張數 / 批數 |
+|---|---|
+| Soul Note／Black Saint（Bonandrini） | 18 / 7 |
+| 辭世使本作成為最後作品 | 17 / 11 |
+| BYG Actuel 1969 巴黎 | 15 / 7 |
+| Venus Records 日本重製 | 15 / 5 |
+| 同一場錄音拆成多張 | 13 / 7 |
+
+**這份帳本管的是反同構，不是配額**——廠牌沿革與曲風源流依 2026-08-02／08-08 裁定沒有配額，
+只要是該作背景就要寫；帳本要防的是同一段沿革被照抄，每張得從自己這張唱片的角度切進去。
+
+## 下一步
+
+從 **r-01** 開始跑 hook → 合併 → 寫作 → 機器 QA → 逐張人工審稿 → 上 KV。
+研究層已經做完，所以每批只剩 hook 2 組（Opus）＋ 寫作 2 組（Opus）。
+
+### 2026-08-11｜dip-vinyl-shop ＋ desc-restyle｜wave3 卡池整頓（第一、二階段）
 
 研究階段的 findings 落地。**掛名類（31 條）刻意未執行**，那會改藝人欄、連帶要搬 KV key
 與 Firestore 文件 id，等店主裁示。
