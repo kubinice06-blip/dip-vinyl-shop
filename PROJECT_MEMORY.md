@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-06 共 36 張上架，seed 7,672；補上三支缺漏的通用寫入腳本
+
+c-06 走完整條管線上架，seed 7,636 →**7,672**。這一批的重點不在卡片本身，而在**把前五批靠人工逐次操作的三個
+寫入步驟補成腳本**，以及**一個差點毀掉 apple 地圖的結構誤判**。
+
+- **試聽 100% 補齊**（前五批以來第一次）：apple 13／yt 23／unavailable 0。
+  `p5b-generic` token 驗證 pass 10，其餘 13 張全由 `p5d-generic` 的 YT Music 搜尋補到。
+- **⚠ apple-audio-map 的結構陷阱（本次踩到並已修）**：`data/apple-audio-map-v1.json` 的頂層是
+  `{ version, generatedAt, entries }`，**資料在 `entries` 底下，不是扁平 map**。
+  初版合併腳本把 13 筆寫到頂層，`Object.keys` 只看到 3 個 key 就是徵兆（印出「3 → 16」）。
+  已改寫 `apply-apple-map.mjs`：檢查 `entries` 存在、並自動把任何誤寫到頂層的資料筆救回 `entries`。
+  修正後 entries 7,550 → **7,563**、runtime 6,751 → **6,764**，git diff 195 行（無整檔重排）。
+- **三支新的通用腳本**（前五批都是逐次手動，這次補成可重跑的入口）：
+  `apply-apple-map.mjs`、`apply-seed-rows.mjs`（依既有一列一行格式追加、artist|album 去重）、
+  `apply-published.mjs`（寫入完成後翻 manifest 的 published 宣告旗標）。
+  **`published` 四個旗標是宣告欄位、不是自動偵測**——不翻的話 `--published` 會報滿江紅的
+  「必須是 true」，那不是實地檢查失敗。翻完之後錯誤數應恰好等於待貼 YT 張數。
+- **研究稿補件**：Argerich《Debut Recital (1960)》與 Horowitz《Horowitz at the Met》漏填
+  `yearVerified`，依其自身 facts（含來源 URL）補為 1961／1982，preflight 由 2 問題歸零。
+- **人工覆核 3 命中、真錯 1 件**：Kempff 卡的「克拉拉．維克」改回 `Clara Wieck`；
+  內田光子的「留聲機大獎」是 note 明確指定要寫、Gould 的「8 分」其實是時長「38 分半」，兩者為假陽性。
+- **零新事實 QA 的 5 處標記全是同一種假陽性**：來源用中文譯名（魯賓斯坦／杜達美／霍洛維茲／夏伊／佛萊雷），
+  寫作層依規則轉回拉丁拼寫；1937、1950 則是來源寫「1936-37 年、1949-50 年」被展開成完整年份。
+- **Gate**：prepare 0 error；published 24 error＝23 張待貼 YT ＋ 1 個 CAA 暫時性 500
+  （Lipatti 封面連測三次皆 200，非真錯）。
+- **待店主動手**：後台批次工具貼入 `album_overrides-repaste-c-01…c-06.json`
+  （15＋16＋7＋20＋27＋23＝**108 張** YT 試聽），貼完再跑各批 published gate 歸零。
+- 主要檔案：`seed_cards.json`（+36）、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+  `classical-expansion/onboarding/`（apply-apple-map／apply-seed-rows／apply-published／preflight 修正、
+  manifest-c-06、repaste-c-06）、`desc-restyle/batches/`（add-20260815-c06 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-04/c-05 共 72 張上架，seed 7,636（店主外出期間自主推進）
 
 店主外出前指示「有問題自行解決、不要停下來」，以下判斷皆為自主裁定，理由逐筆記於
