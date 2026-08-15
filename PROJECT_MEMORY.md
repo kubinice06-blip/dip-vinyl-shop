@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop｜後台新增「🎰 抽卡動畫」調校分頁（gameConfig/drawAnimation）
+
+- admin.html 遊戲設定分頁下加第三個子分頁：18 個參數（閃卡時長／間隔／減速曲線／
+  抖動／模糊／殘影、停頓／彈起／回彈／漂移、揭曉方式／延遲／翻牌／粒子、音效），
+  拉桿即時生效＋內嵌預覽舞台（試抽／試抽 APEX），儲存到 `gameConfig/drawAnimation`。
+- **沿用既有 `gameConfig/{id}` 規則（公開讀、管理員寫），不用動 firestore.rules、
+  不用去 Console 發布**。前台之後整合動畫時讀這份覆寫內建預設即可（尚未接前台）。
+- 預覽封面優先撈 `card_catalog` limit 80（玩家實抽過的卡，本次測到 79 張），
+  少於 12 張或讀取失敗退內建 12 張樣本；firebase-firestore import 加了 `limit`。
+- 動畫引擎與 `dip-vinyl-home/抽卡模擬-測試品.html` 同一套（da 前綴隔離），
+  兩邊參數鍵名一致，模擬頁調好的 JSON 可直接對填。
+- 驗證：本機不登入即可測（gameConfig/card_catalog 讀取本來就公開）；
+  取樣時間軸確認 APEX 全流程（閃卡→急停金光暈彈起→翻牌→流光邊框＋標籤）、
+  拉桿與下拉綁定正確、console 無新錯誤（僅原有 favicon 404）。
+
 ### 2026-08-15｜dip-vinyl-home（根目錄，非 repo）｜「直接來一張」抽卡動畫模擬頁
 
 - 新增 `dip-vinyl-home/抽卡模擬-測試品.html`：獨立的抽卡效果調校頁，流程為

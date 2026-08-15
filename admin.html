@@ -250,6 +250,57 @@
     .gfield { display:flex; flex-direction:column; gap:3px; }
     .gfield label { font-size:10px; color:var(--gray); font-family:var(--mono); }
     .gfield input { border:1px solid var(--line); padding:7px 8px; font-family:var(--mono); font-size:12px; width:100%; }
+
+    /* ── 抽卡動畫調校（sub-draw）── */
+    @keyframes daShimmer { 0%{background-position:200% 0;} 100%{background-position:0 0;} }
+    @keyframes daFloatyKf { 0%,100%{transform:translateY(0) rotate(-0.6deg);} 50%{transform:translateY(-6px) rotate(0.6deg);} }
+    @keyframes daSlamKf { 0%{transform:scale(1.1);} 55%{transform:scale(0.97);} 100%{transform:scale(1);} }
+    .da-stage { position:relative; height:340px; overflow:hidden; border:1px solid var(--line);
+      display:flex; align-items:center; justify-content:center;
+      background:radial-gradient(circle at 50% 42%, #fff 0%, #fafafa 60%, #f1f1f1 100%); }
+    .da-aura { position:absolute; left:50%; top:42%; width:300px; height:300px; transform:translate(-50%,-50%);
+      border-radius:50%; pointer-events:none; opacity:0; transition:opacity .5s; }
+    .da-aura.on-normal { background:radial-gradient(circle,rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 62%); opacity:1; }
+    .da-aura.on-apex   { background:radial-gradient(circle,rgba(184,134,11,0.34) 0%,rgba(184,134,11,0) 62%); opacity:1; }
+    .da-card { position:relative; width:190px; height:190px; margin-top:-26px; perspective:900px; }
+    .da-lift { width:100%; height:100%; transform-origin:center center; }
+    .da-floaty { width:100%; height:100%; }
+    .da-floaty.on { animation:daFloatyKf 2.4s ease-in-out infinite; }
+    .da-flip { position:relative; width:100%; height:100%; transform-style:preserve-3d; }
+    .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+      border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
+    .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
+    .da-face.da-back { background:#141414 radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
+      repeating-radial-gradient(circle at 50% 50%, #1d1d1d 0 2px, #141414 2px 4px);
+      display:flex; align-items:center; justify-content:center; }
+    .da-backlabel { width:62px; height:62px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
+      display:flex; align-items:center; justify-content:center; color:#141414; font-weight:700; font-size:22px; }
+    .da-backbrand { position:absolute; bottom:8px; left:0; right:0; text-align:center; color:#555;
+      font-size:8px; letter-spacing:0.3em; text-transform:uppercase; }
+    .da-card.slam .da-flip { animation:daSlamKf .28s ease-out; }
+    .da-ghost { position:absolute; inset:0; background-size:cover; background-position:center;
+      border:1px solid var(--line); pointer-events:none; opacity:0.35; transition:opacity .16s linear, transform .16s linear; }
+    .da-card.ace-border::after { content:''; position:absolute; inset:-2px; pointer-events:none; padding:3px;
+      background-image:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
+      background-size:200% 100%; animation:daShimmer 7.8s linear infinite;
+      -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; }
+    .da-burst { position:absolute; left:50%; top:42%; width:0; height:0; pointer-events:none; }
+    .da-pt { position:absolute; width:6px; height:6px; left:-3px; top:-3px; }
+    .da-hint { position:absolute; bottom:52px; left:0; right:0; text-align:center; font-size:10px; color:var(--gray);
+      letter-spacing:0.2em; opacity:0; transition:opacity .3s; }
+    .da-hint.on { opacity:1; }
+    .da-result { position:absolute; bottom:10px; left:0; right:0; text-align:center; opacity:0; transition:opacity .4s; font-family:var(--mono); }
+    .da-result.on { opacity:1; }
+    .da-result .da-alb { font-weight:700; font-size:13px; }
+    .da-result .da-art { color:var(--gray); font-size:10px; margin-top:1px; }
+    .da-acetag { display:inline-block; font-size:9px; font-weight:700; letter-spacing:0.14em; padding:2px 8px;
+      margin-bottom:5px; border:1px solid #b8860b; color:#b8860b; }
+    .da-row { display:flex; align-items:center; gap:8px; padding:5px 0; border-bottom:1px solid #f0f0f0; font-family:var(--mono); }
+    .da-row label { flex:none; width:128px; font-size:10px; color:#444; }
+    .da-row input[type=range] { flex:1; accent-color:#111; min-width:0; }
+    .da-row input[type=checkbox] { accent-color:#111; }
+    .da-row select { font-family:var(--mono); font-size:11px; border:1px solid var(--line); background:#fff; padding:3px 6px; }
+    .da-row .da-val { flex:none; width:52px; text-align:right; font-size:10px; font-weight:700; }
     .buff-row { display:grid; grid-template-columns:1.4fr 1.8fr 0.9fr 1.1fr 0.7fr auto; gap:6px; align-items:center; margin-bottom:6px; }
     .buff-row input, .buff-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
     .buff-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
@@ -935,6 +986,7 @@
       <div class="subtab-bar">
         <button class="subtab-btn active" data-sub="sub-battle">🎴 對戰系統</button>
         <button class="subtab-btn" data-sub="sub-rogue">🎮 Roguelike</button>
+        <button class="subtab-btn" data-sub="sub-draw">🎰 抽卡動畫</button>
       </div>
 
       <div class="subpanel active" id="sub-battle">
@@ -992,6 +1044,46 @@
         </div>
       </div>
       </div><!-- end sub-rogue -->
+
+      <div class="subpanel" id="sub-draw">
+      <div class="section">
+        <div class="section-label">直接來一張 · 抽卡動畫（gameConfig/drawAnimation）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
+          拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台抽卡動畫載入時讀這份設定覆寫內建值。
+          預覽封面取自 card_catalog（玩家實際抽過的卡）。</p>
+        <div class="da-stage">
+          <div class="da-aura" id="daAura"></div>
+          <div class="da-card" id="daCard">
+            <div class="da-lift" id="daLift">
+              <div class="da-floaty" id="daFloaty">
+                <div class="da-flip" id="daFlip">
+                  <div class="da-face da-back"><div class="da-backlabel">?</div><div class="da-backbrand">dip vinyl</div></div>
+                  <div class="da-face da-front" id="daFront"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="da-burst" id="daBurst"></div>
+          <div class="da-hint" id="daHint">點牌揭曉</div>
+          <div class="da-result" id="daResult">
+            <div><span class="da-acetag" id="daAceTag" style="display:none">APEX · 名盤</span></div>
+            <div class="da-alb" id="daAlb"></div><div class="da-art" id="daArt"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin:12px 0;">
+          <button class="gbtn" id="daDraw">▶ 試抽</button>
+          <button class="gbtn" id="daDrawApex" style="color:#b8860b;border-color:#b8860b;">👑 試抽 APEX</button>
+          <span id="daPoolMsg" style="font-size:10px;color:var(--gray);align-self:center;"></span>
+        </div>
+        <div id="daForm" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;"></div>
+        <div style="margin-top:16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn gbtn-primary" id="daSave">儲存到 Firestore</button>
+          <button class="gbtn" id="daReload">重新載入</button>
+          <button class="gbtn" id="daReset">重置為預設</button>
+          <span id="daMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+      </div><!-- end sub-draw -->
     </div>
   </div><!-- end panel-game -->
 
@@ -1000,7 +1092,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, deleteField, writeBatch } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs, doc, getDoc, setDoc, updateDoc, deleteDoc, addDoc, query, where, limit, deleteField, writeBatch } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   // 子分頁 → 載入函式對照（function declaration 會 hoist，這裡先引用沒問題）
@@ -1012,6 +1104,7 @@
     'sub-apex': () => loadApexPool(),
     'sub-battle': () => loadBattleCfg(),
     'sub-rogue': () => loadRogueCfg(),
+    'sub-draw': () => loadDrawCfg(),
   };
 
   // Tab 切換（consolidated handler）
@@ -3787,6 +3880,240 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
   document.getElementById('rogueReload')?.addEventListener('click', loadRogueCfg);
   document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); renderRelics(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
+
+  // ── 抽卡動畫（直接來一張）：gameConfig/drawAnimation ──
+  // 面板拉桿即時生效、試抽即時預覽；前台載入時讀這份覆寫內建值。
+  const DEF_DRAW = {
+    flashDuration:1800, startInterval:55, endInterval:260, easePow:2.5, jitter:6, maxBlur:2, ghosts:true,
+    pauseBeforePop:350, popDuration:550, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
+    revealMode:'auto', autoDelay:900, flipDuration:700, burstCount:24, sound:true
+  };
+  const DA_SCHEMA = [
+    {k:'flashDuration', l:'閃卡總時長 ms',    min:400, max:5000, step:100},
+    {k:'startInterval', l:'起始間隔 ms',      min:25,  max:160,  step:5},
+    {k:'endInterval',   l:'收尾間隔 ms',      min:80,  max:600,  step:10},
+    {k:'easePow',       l:'減速曲線指數',     min:1,   max:5,    step:0.1},
+    {k:'jitter',        l:'抖動幅度 px',      min:0,   max:20,   step:1},
+    {k:'maxBlur',       l:'高速模糊 px',      min:0,   max:8,    step:0.5},
+    {k:'ghosts',        l:'殘影',            type:'check'},
+    {k:'pauseBeforePop',l:'停牌停頓 ms',      min:0,   max:1200, step:50},
+    {k:'popDuration',   l:'彈起時長 ms',      min:200, max:1200, step:50},
+    {k:'popScale',      l:'彈起放大倍率',     min:1,   max:2.2,  step:0.05},
+    {k:'popLift',       l:'彈起上移 px',      min:0,   max:160,  step:5},
+    {k:'popOvershoot',  l:'彈性回彈強度',     min:1,   max:2.4,  step:0.1},
+    {k:'floatWobble',   l:'懸浮漂移',         type:'check'},
+    {k:'revealMode',    l:'揭曉方式',         type:'select', opts:[['auto','自動'],['click','點牌揭曉']]},
+    {k:'autoDelay',     l:'自動揭曉延遲 ms',  min:200, max:2500, step:100},
+    {k:'flipDuration',  l:'翻牌時長 ms',      min:300, max:1500, step:50},
+    {k:'burstCount',    l:'揭曉粒子數',       min:0,   max:60,   step:2},
+    {k:'sound',         l:'音效',            type:'check'},
+  ];
+  let daP = {...DEF_DRAW};
+
+  function renderDrawForm(){
+    const wrap=document.getElementById('daForm'); if(!wrap) return;
+    wrap.innerHTML = DA_SCHEMA.map(s=>{
+      const v=daP[s.k];
+      let input;
+      if(s.type==='check') input=`<input type="checkbox" data-dak="${s.k}" ${v?'checked':''}>`;
+      else if(s.type==='select') input=`<select data-dak="${s.k}">${s.opts.map(([ov,ol])=>`<option value="${ov}" ${ov===v?'selected':''}>${ol}</option>`).join('')}</select>`;
+      else input=`<input type="range" data-dak="${s.k}" min="${s.min}" max="${s.max}" step="${s.step}" value="${v}">`;
+      const val = (typeof v==='boolean') ? (v?'開':'關') : (s.type==='select'?'':v);
+      return `<div class="da-row"><label>${s.l}</label>${input}<span class="da-val">${val}</span></div>`;
+    }).join('');
+    wrap.querySelectorAll('[data-dak]').forEach(el=>{
+      el.addEventListener('input', ()=>{
+        const k=el.dataset.dak;
+        daP[k] = el.type==='checkbox' ? el.checked : (el.tagName==='SELECT' ? el.value : parseFloat(el.value));
+        const vs=el.closest('.da-row').querySelector('.da-val');
+        if(vs) vs.textContent = (typeof daP[k]==='boolean') ? (daP[k]?'開':'關') : (el.tagName==='SELECT'?'':daP[k]);
+      });
+    });
+  }
+
+  // 預覽封面：優先取 card_catalog（玩家實際抽過的卡），太少或讀不到就用內建樣本
+  const DA_FALLBACK = [
+    {artist:"The Beatles",album:"Abbey Road",cover:"https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"},
+    {artist:"Marvin Gaye",album:"What's Going On",cover:"https://i.scdn.co/image/ab67616d0000b273f7009b199768fc7ff3a8d7e0"},
+    {artist:"Joni Mitchell",album:"Blue",cover:"https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7"},
+    {artist:"Patti Smith",album:"Horses",cover:"https://i.scdn.co/image/ab67616d0000b2738b9cf42f267a8c162b9594b1"},
+    {artist:"Metallica",album:"Master of Puppets",cover:"https://i.scdn.co/image/ab67616d0000b273668e3aca3167e6e569a9aa20"},
+    {artist:"Nas",album:"Illmatic",cover:"https://i.scdn.co/image/ab67616d0000b27371d840defb002ed3b180f7cd"},
+    {artist:"Kendrick Lamar",album:"To Pimp a Butterfly",cover:"https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1"},
+    {artist:"My Bloody Valentine",album:"Loveless",cover:"https://i.scdn.co/image/ab67616d0000b273db8e38addb58131f77b48377"},
+    {artist:"Pink Floyd",album:"Meddle",cover:"https://i.scdn.co/image/ab67616d0000b2739eee212bba82bed8da96a8f7"},
+    {artist:"David Bowie",album:"Station to Station",cover:"https://i.scdn.co/image/ab67616d0000b2738f3cdfeac0678371b16f601d"},
+    {artist:"Tom Waits",album:"Rain Dogs",cover:"https://i.scdn.co/image/ab67616d0000b273d4d4cd6954bd161fd3a8b4a5"},
+    {artist:"Talking Heads",album:"Speaking in Tongues",cover:"https://i.scdn.co/image/ab67616d0000b2731e6080bcea9c1d05762084a1"},
+  ];
+  let daCovers = null;
+  async function daLoadCovers(){
+    if(daCovers) return daCovers;
+    const msg=document.getElementById('daPoolMsg');
+    try{
+      const snap = await getDocs(query(collection(db,'card_catalog'), limit(80)));
+      const arr=[]; snap.forEach(d=>{ const x=d.data(); if(x.coverUrl && x.album) arr.push({artist:x.artist||'',album:x.album,cover:x.coverUrl}); });
+      if(arr.length>=12){ daCovers=arr; if(msg) msg.textContent=`預覽卡池：card_catalog ${arr.length} 張`; }
+    }catch(e){}
+    if(!daCovers){ daCovers=DA_FALLBACK; if(msg) msg.textContent='預覽卡池：內建樣本 12 張'; }
+    daCovers.forEach(c=>{ const im=new Image(); im.src=c.cover; });
+    return daCovers;
+  }
+
+  // 合成音效（WebAudio，無外部檔）
+  let daAC=null;
+  const daAc=()=>{ if(!daAC) daAC=new (window.AudioContext||window.webkitAudioContext)(); return daAC; };
+  function daTick(prog){ if(!daP.sound) return; const c=daAc(),o=c.createOscillator(),g=c.createGain();
+    o.type='square'; o.frequency.value=1400-700*prog;
+    g.gain.setValueAtTime(0.028+0.03*prog,c.currentTime); g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+0.035);
+    o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime+0.04); }
+  function daThud(){ if(!daP.sound) return; const c=daAc(),o=c.createOscillator(),g=c.createGain();
+    o.type='sine'; o.frequency.setValueAtTime(150,c.currentTime); o.frequency.exponentialRampToValueAtTime(45,c.currentTime+0.16);
+    g.gain.setValueAtTime(0.5,c.currentTime); g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.2);
+    o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime+0.22); }
+  function daWhoosh(){ if(!daP.sound) return; const c=daAc(),o=c.createOscillator(),g=c.createGain(),d=daP.popDuration/1000;
+    o.type='sine'; o.frequency.setValueAtTime(220,c.currentTime); o.frequency.exponentialRampToValueAtTime(880,c.currentTime+d*0.7);
+    g.gain.setValueAtTime(0.001,c.currentTime); g.gain.exponentialRampToValueAtTime(0.12,c.currentTime+0.08);
+    g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+d);
+    o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime+d+0.05); }
+  function daFanfare(apex){ if(!daP.sound) return; const c=daAc();
+    (apex?[523.25,659.25,783.99,1046.5]:[523.25,659.25]).forEach((f,i)=>{
+      const o=c.createOscillator(),g=c.createGain(),t0=c.currentTime+i*0.05;
+      o.type='triangle'; o.frequency.value=f;
+      g.gain.setValueAtTime(0.0001,t0); g.gain.exponentialRampToValueAtTime(0.09,t0+0.03); g.gain.exponentialRampToValueAtTime(0.0001,t0+0.9);
+      o.connect(g); g.connect(c.destination); o.start(t0); o.stop(t0+1); }); }
+
+  // 動畫主流程
+  const daSleep=ms=>new Promise(r=>setTimeout(r,ms));
+  const daRndf=(a,b)=>a+Math.random()*(b-a);
+  let daBusy=false, daAwaitClick=false, daApex=false, daTarget=null;
+
+  function daResetStage(){
+    const card=document.getElementById('daCard'), flip=document.getElementById('daFlip'),
+          lift=document.getElementById('daLift'), fl=document.getElementById('daFloaty');
+    card.classList.remove('slam','ace-border'); card.style.cursor='default';
+    flip.style.transition='none'; flip.style.transform='rotateY(0deg)';
+    lift.style.transition='none'; lift.style.transform='none';
+    fl.classList.remove('on');
+    document.getElementById('daFront').style.backgroundImage='';
+    document.getElementById('daAura').className='da-aura';
+    document.getElementById('daResult').classList.remove('on');
+    document.getElementById('daHint').classList.remove('on');
+    document.getElementById('daAceTag').style.display='none';
+    document.getElementById('daBurst').innerHTML='';
+    void lift.offsetWidth;
+  }
+  async function daFlashPhase(covers){
+    const flip=document.getElementById('daFlip'), front=document.getElementById('daFront'),
+          lift=document.getElementById('daLift'), card=document.getElementById('daCard');
+    flip.style.transform='rotateY(180deg)';
+    const order=covers.slice().sort(()=>Math.random()-0.5);
+    let t=0,i=0,last=null;
+    while(t<daP.flashDuration){
+      const prog=Math.min(1,t/daP.flashDuration);
+      const interval=daP.startInterval+(daP.endInterval-daP.startInterval)*Math.pow(prog,daP.easePow);
+      const c=order[i%order.length];
+      if(daP.ghosts && last && interval<140){
+        const g=document.createElement('div'); g.className='da-ghost';
+        g.style.backgroundImage=`url(${last})`;
+        g.style.transform=`translate(${daRndf(-daP.jitter,daP.jitter)}px,${daRndf(-daP.jitter,daP.jitter)}px) scale(1.02)`;
+        card.appendChild(g);
+        requestAnimationFrame(()=>{ g.style.opacity='0'; g.style.transform+=' scale(1.12)'; });
+        setTimeout(()=>g.remove(),200);
+      }
+      front.style.backgroundImage=`url(${c.cover})`; last=c.cover;
+      const blur=daP.maxBlur*(1-prog), j=daP.jitter*(1-prog*0.6);
+      front.style.filter = blur>0.2?`blur(${blur.toFixed(1)}px)`:'';
+      lift.style.transform=`translate(${daRndf(-j,j)}px,${daRndf(-j,j)}px) rotate(${daRndf(-1.5,1.5)}deg)`;
+      daTick(prog); i++;
+      await daSleep(interval); t+=interval;
+    }
+    front.style.filter=''; lift.style.transform='none';
+  }
+  function daSlamToBack(){
+    document.getElementById('daFlip').style.transform='rotateY(0deg)';
+    const card=document.getElementById('daCard');
+    card.classList.add('slam'); daThud();
+    setTimeout(()=>card.classList.remove('slam'),300);
+  }
+  async function daPopPhase(apex){
+    const lift=document.getElementById('daLift');
+    document.getElementById('daAura').className='da-aura '+(apex?'on-apex':'on-normal');
+    lift.style.transition=`transform ${daP.popDuration}ms cubic-bezier(.2,${daP.popOvershoot},.35,1)`;
+    lift.style.transform=`translateY(-${daP.popLift}px) scale(${daP.popScale})`;
+    daWhoosh();
+    await daSleep(daP.popDuration);
+    if(daP.floatWobble) document.getElementById('daFloaty').classList.add('on');
+  }
+  function daBurstFx(apex){
+    const host=document.getElementById('daBurst'), n=daP.burstCount*(apex?1.5:1);
+    for(let k=0;k<n;k++){
+      const s=document.createElement('span'); s.className='da-pt';
+      const gold=apex||Math.random()<0.3;
+      s.style.background=gold?(Math.random()<0.5?'#b8860b':'#e6c34d'):(Math.random()<0.5?'#111':'#999');
+      if(Math.random()<0.4) s.style.borderRadius='50%';
+      host.appendChild(s);
+      const ang=daRndf(0,Math.PI*2), dist=daRndf(80,200)*(apex?1.2:1);
+      s.animate([
+        {transform:'translate(0,0) scale(1) rotate(0deg)',opacity:1},
+        {transform:`translate(${Math.cos(ang)*dist}px,${Math.sin(ang)*dist-40}px) scale(${daRndf(0.2,0.7)}) rotate(${daRndf(-360,360)}deg)`,opacity:0}
+      ],{duration:daRndf(500,950),easing:'cubic-bezier(.15,.8,.4,1)'}).onfinish=()=>s.remove();
+    }
+  }
+  async function daReveal(){
+    daAwaitClick=false; document.getElementById('daHint').classList.remove('on');
+    const flip=document.getElementById('daFlip'), apex=daApex, tg=daTarget;
+    document.getElementById('daFloaty').classList.remove('on');
+    flip.style.transition=`transform ${daP.flipDuration}ms cubic-bezier(.4,0,.2,1)`;
+    flip.style.transform='rotateY(180deg)';
+    await daSleep(daP.flipDuration*0.55);
+    daBurstFx(apex); daFanfare(apex);
+    await daSleep(daP.flipDuration*0.45);
+    if(apex) document.getElementById('daCard').classList.add('ace-border');
+    document.getElementById('daAlb').textContent=tg.album;
+    document.getElementById('daArt').textContent=tg.artist;
+    document.getElementById('daAceTag').style.display=apex?'inline-block':'none';
+    document.getElementById('daResult').classList.add('on');
+    daBusy=false;
+  }
+  async function daDrawRun(apex){
+    if(daBusy) return; daBusy=true; daApex=apex;
+    if(daP.sound && daAc().resume) daAc().resume();
+    daResetStage();
+    const covers=await daLoadCovers();
+    daTarget=covers[Math.floor(Math.random()*covers.length)];
+    await daFlashPhase(covers);
+    daSlamToBack();
+    document.getElementById('daFront').style.backgroundImage=`url(${daTarget.cover})`;
+    await daSleep(daP.pauseBeforePop);
+    await daPopPhase(apex);
+    if(daP.revealMode==='click'){
+      daAwaitClick=true; document.getElementById('daHint').classList.add('on');
+      document.getElementById('daCard').style.cursor='pointer';
+    }else{
+      await daSleep(daP.autoDelay);
+      await daReveal();
+    }
+  }
+
+  async function loadDrawCfg(){
+    const msg=document.getElementById('daMsg'); if(msg) msg.textContent='載入中…';
+    try{ const s=await getDoc(doc(db,'gameConfig','drawAnimation'));
+      daP = s.exists()? {...DEF_DRAW, ...s.data()} : {...DEF_DRAW};
+      if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
+    catch(e){ daP={...DEF_DRAW}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
+    renderDrawForm(); daLoadCovers();
+  }
+  document.getElementById('daCard')?.addEventListener('click',()=>{ if(daAwaitClick) daReveal(); });
+  document.getElementById('daDraw')?.addEventListener('click',()=>daDrawRun(false));
+  document.getElementById('daDrawApex')?.addEventListener('click',()=>daDrawRun(true));
+  document.getElementById('daSave')?.addEventListener('click', async ()=>{
+    const msg=document.getElementById('daMsg'); msg.textContent='儲存中…';
+    try{ await setDoc(doc(db,'gameConfig','drawAnimation'), {...daP}); msg.textContent='✓ 已儲存（前台抽卡動畫下次載入生效）'; }
+    catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
+  });
+  document.getElementById('daReload')?.addEventListener('click', loadDrawCfg);
+  document.getElementById('daReset')?.addEventListener('click', ()=>{ daP={...DEF_DRAW}; renderDrawForm(); document.getElementById('daMsg').textContent='已填回預設（尚未儲存）'; });
 </script>
 </body>
 </html>
