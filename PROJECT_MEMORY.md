@@ -1,5 +1,62 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15 深夜｜classical-expansion｜c-17～c-21 推到研究層；抓到年份規則缺口與「唱片不存在」的卡
+
+**停在哪**：c-17／c-18／c-19 研究完成，c-20／c-21 研究未派。交接清單在
+`classical-expansion/onboarding/FINDINGS-c17to21.md`（逐張列出待套用的釘錯／卡名／hook／年份四類）。
+進度與裁定在 `RUNBOOK.md`。**卡單 162 張、封面 162/162 = 100%。**
+
+**一、年份規則有個缺口，從 c-01 就存在。** §4-2 那張年份表是為**演奏者掛名**的卡寫的；
+`artist` 是**作曲家**時照它填會產生荒謬卡面——c-18 的 Weinberg《The Passenger》卡單填 **2025**，
+但他 **1996 年就辭世**。是研究層推翻主線指示時發現的，**代理是對的**。
+補上的判準：作曲家掛名 → 作品的創作／首演年；演奏者掛名 → 照原表。
+回頭稽核已上架的 **725 張古典卡，37 張命中（5.1%）**（判準：卡片 year > 該藝人卒年）：
+甲、卡名自己就寫著正確年份的鐵錯 2 張（Glenn Gould《Goldberg (1955)》填 1989、
+Toscanini《Eroica (1953)》填 1960）；乙、作曲家掛名 18 張；丙、身後選輯需逐張判 17 張。
+**尚未修**，清單在 `audit-composer-years-grouped.json`。
+⚠ 這個判準只抓得到「藝人已辭世」的，在世作曲家抓不出來。
+
+**二、新的錯誤型態：「卡片指名的唱片根本不存在」。** c-17 一批就四張——
+Herbert Henck 兩張卡的專輯名都是虛構的（《Nancarrow: Studies for Player Piano》、
+《Ives: Studies / Ornstein: Piano Music》，後者查證 **Henck 從未錄過 Ornstein**）、
+Zender 那張卡名指的曲子不在唱片裡、Kopatchinskaja 那張全碟沒有一軌 Kurtág。
+**更糟的是 hook 常與唱片內容相反**：Henck 的 hook 說「人類無法演奏、只能靠自動鋼琴打孔」，
+但那張收的正好是 Nancarrow 投入自動鋼琴**之前**寫給真人彈的曲子。
+**hook 是卡單自動生成的草稿、不是店主手寫規格**（好幾個還留著「（版本待確認）」佔位字串），
+所以更正走 hook 層，不是主線單方面改。
+
+**三、「釘到合輯」是最高頻的錯釘**（c-18 的 34 張抓到 3 張，c-17／c-19 各有數張）：
+專輯名對得上、掛名裡也有這個人，但**指名的人只佔一兩軌**。只有逐軌看曲目才擋得住。
+
+**四、我自己的三個錯，都值得記住**：
+1. **改釘只換 `rgMbid` 沒換 `mbCredit`**，卡單就一直掛著舊 RG 的演出者（Schulhoff 那張掛著
+   Tomáš Víšek，那人根本沒參與新那張；今井信子那張的 `composer` 欄還留著「Walton」）。
+   **改釘要連 `mbTitle`／`mbCredit`／`mbDate` 一起換，並重跑 `p2-covers`。**
+2. **worker 端點名稱打錯**（寫成 `album-cover`，正確是 **`spotify-search`**，回 JSON 的 `imageUrl`），
+   封面救援第一輪 0/7 全滅、差點誤判成「真的沒有」。
+3. **`seed_cards.json` 是陣列的陣列**（`[artist, album, a, b, c, genres[], year]`）不是物件陣列。
+   我用 `r.artist` 查「這位藝人在池裡還有沒有別張」，那個檢查**永遠回傳空**。
+   重跑修正版後結論不變，但當時的裁定是建立在壞掉的檢查上。
+
+**五、裁定原則（新定）**：**卡片的價值載體是 hook。**
+hook 講作品 → 換演奏家保住卡；hook 講演奏家 → 換專輯保住卡；兩邊都保不住 → needsRuling。
+依此處理的改卡名：Schulhoff→《Concertos alla Jazz》、周文中→《Pien / Yü Ko…》、周龍→《Rhymes》、
+Grainger→《Grainger Edition Vol. 1》。**都動到卡池規格，店主可推翻**，
+判準是原卡名本來就不是真實專輯標題而是描述詞。
+
+**六、`p2-covers` 有與 published gate 同一個坑**：`grab()` 只在連線例外時重試、回 5xx 就放棄。
+CAA 轉址 archive.org 會間歇回 500（同一 URL 實測 200/500/200）。已改成 5xx 也重試、4xx 不重試。
+
+**七、五張 needsRuling 留給店主**：Sirmen、Midori（1986 坦格塢那場伯恩斯坦《Serenade》史實正確，
+但從未進入任何商業發行，**換專輯就等於毀 hook**）、Antonia Brico（MB count=0，
+唯一封面是 Discogs 162×162 簽章網址，會過期，不接受）、許常惠（四種寫法查 MB 全 0 筆，
+**連封面都沒有，所以人工身分路線對他也不通**）、錢南章。
+
+**⚠ 八、`dip-vinyl-shop` 有另一個工作階段在並行提交。** 我的 commit `57721d9` 已被四個抽卡動畫的
+提交蓋在上面，這份備忘錄也被對方在最上方插入過。CLAUDE.md 現在寫著
+「店主已不再並行跑本專案，開工前的協作交接檢查已取消」——**這個前提看來已不成立**，
+建議把開工前的 `git fetch` 檢查加回來。
+
 ### 2026-08-15｜dip-vinyl-shop＋dip-vinyl-home｜抽卡動畫：白色牌背可改色＋揭曉→結果頁無縫接軌
 
 店主看過模擬頁預覽核可後上線。三項改動（index／admin／模擬頁三處同步）：
