@@ -280,5 +280,7 @@ window.DipPreviewStatus = Object.freeze({
   "luciano pavarotti|king of the high c's": "unavailable",
   "feodor chaliapin|mussorgsky: boris godunov": "unavailable",
   "la monte young|the well-tuned piano": "unavailable",
-  "george benjamin|written on skin": "unavailable"
+  "george benjamin|written on skin": "unavailable",
+  "eduardo mata|revueltas: sensemayá": "unavailable",
+  "peter serkin|takemitsu: piano works": "unavailable"
 });

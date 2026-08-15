@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-14 共 26 張上架，seed 7,987；十批（c-12～c-21）走完一輪
+
+seed 7,961 →**7,987**，classical 擴充累計 **467 張上架**。
+
+- **c-14 四張錯釘全部重釘**，都用 **recording relations** 查證（不是看掛名字串）：
+  Britten《Peter Grimes》原釘的指揮是 Colin Davis、Lutosławski 原釘是 Nicholas Collon、
+  David Tudor 原釘是 **2022 年由現役成員重演**（他 1996 年已辭世）、Gershwin 原釘是 Earl Wild／Fiedler。
+- **⚠ 改釘的四種連鎖影響，這批全部踩過一輪**（記下來，日後改釘要一併處理）：
+  1. **試聽候選檔還掛舊卡名**（Ormandy 改名那次，p6 報「無試聽決定」才發現）
+  2. **研究 facts 過期**（Rostropovich 那張，寫手依「只用輸入檔事實」拒寫我的指派——它是對的）
+  3. **警告放錯組別**（Gershwin 那張：我把「不可寫 1976 CBS 版細節」只寫進第 1 組派工詞，
+     但卡落在第 2 組，整張照舊版寫完才發現，已退回重寫）
+  4. **改釘引入研究稿沒有的事實，必然觸發零新事實 QA**（EMI 1992、Mode 1998、Nonesuch 1993
+     都被標成「編造」，實際有 MB 佐證）
+- **一次核可的鐵則例外**：Gershwin 那張的原 hook 本身就是 1976 版的編制描述
+  （「爵士樂團跟著紙捲合奏」），與改釘後的純鋼琴捲輯直接牴觸。寫手改了首句並**主動回報違反
+  「hook 首句一字不改」**，我核可並把新句同步回 hook 檔（`hookWas` 保留原句）。
+  **hook 與唱片牴觸時，改 hook 優先於讓首句與內文打架。**
+- **自指卡的試聽陷阱再現**：Copland《Appalachian Spring (自指)》被 p5d 配到
+  「Leonard Bernstein Conducts…」——掛名裡有 Copland 因為他是作曲家。
+  人工重配時加了 `pageBan` 排除別人指揮的版本。
+- **試聽**：apple 12／yt 12／unavailable 2（Eduardo Mata 的 Revueltas、Peter Serkin 的武満徹，
+  YT 上都只有別版或混編專輯）。**Gate**：prepare 0 error；published 12 error＝待貼 YT 張數。
+- **這輪十批的總結**：c-12／c-13／c-14／c-15／c-16 共 **138 張已上架**；
+  c-17～c-20 身分完成（可上架 123 張）待封面；c-21 的 13 張卡在台灣曲目的 MB 建檔問題。
+  累計 **移除 7 張、待店主裁定 30 張**。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-16.json`，累計 **275 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+26）、`data/apple-audio-map-v1.json`（entries 7,704／runtime 6,905）、
+  `card-preview-status.js`（+2）、`classical-expansion/onboarding/`（agent-c14repin-*、p5f-manual-c14、
+  manifest-c-14、repaste-c-14）、`desc-restyle/batches/`（add-20260815-c14 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-15＋c-16 共 61 張上架，seed 7,961
 
 seed 7,900 →**7,961**，classical 擴充累計 **441 張上架**。這兩批是當代作曲家與新古典。
