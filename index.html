@@ -626,48 +626,8 @@
     .cd-delete { width: 100%; padding: 11px; background: #fff; color: #c0392b; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; cursor: pointer; }
     .cd-delete:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
 
-    /* ── 直接來一張：抽卡動畫（參數可由後台 gameConfig/drawAnimation 覆寫）── */
-    @keyframes daShimmer { 0%{background-position:200% 0;} 100%{background-position:0 0;} }
-    @keyframes daFloatyKf { 0%,100%{transform:translateY(0) rotate(-0.6deg);} 50%{transform:translateY(-6px) rotate(0.6deg);} }
-    @keyframes daSlamKf { 0%{transform:scale(1.1);} 55%{transform:scale(0.97);} 100%{transform:scale(1);} }
-    /* 高度／卡片尺寸／垂直位置由 JS 依當下參數（popScale、popLift）算出並寫成 inline style，
-       後台把放大倍率或上移調大時才不會彈出舞台被 overflow 切掉。這裡只留保底值。 */
-    .da-stage { position:relative; height:390px; overflow:hidden;
-      display:flex; align-items:center; justify-content:center;
-      background:radial-gradient(circle at 50% 45%, #fff 0%, #fafafa 60%, #f1f1f1 100%); }
-    .da-aura { position:absolute; left:50%; top:45%; width:300px; height:300px; transform:translate(-50%,-50%);
-      border-radius:50%; pointer-events:none; opacity:0; transition:opacity .5s; }
-    .da-aura.on-normal { background:radial-gradient(circle,rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 62%); opacity:1; }
-    .da-aura.on-apex   { background:radial-gradient(circle,rgba(184,134,11,0.34) 0%,rgba(184,134,11,0) 62%); opacity:1; }
-    .da-card { position:relative; width:200px; height:200px; perspective:900px; }
-    .da-lift { width:100%; height:100%; transform-origin:center center; }
-    .da-floaty { width:100%; height:100%; }
-    .da-floaty.on { animation:daFloatyKf 2.4s ease-in-out infinite; }
-    .da-flip { position:relative; width:100%; height:100%; transform-style:preserve-3d; }
-    .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
-      border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
-    .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
-    /* 牌背：素色，顏色由 backColor 參數控制（預設白；2026-08-15 移除黑膠溝槽） */
-    .da-face.da-back { background:#fff; display:flex; align-items:center; justify-content:center; }
-    .da-backlabel { width:64px; height:64px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
-      display:flex; align-items:center; justify-content:center; color:#141414; font-weight:700; font-size:22px; font-family:var(--mono); }
-    .da-backbrand { position:absolute; bottom:8px; left:0; right:0; text-align:center; color:rgba(0,0,0,0.45);
-      font-size:8px; letter-spacing:0.3em; text-transform:uppercase; font-family:var(--mono); }
-    /* 揭曉 → 結果頁無縫接軌：fixed clone 從彈起位置飛進結果頁封面框，蓋住版面切換的跳動 */
-    .da-handoff-clone { position:fixed; z-index:9999; background-size:cover; background-position:center;
-      border:1px solid var(--black); box-shadow:0 10px 28px rgba(0,0,0,0.18); pointer-events:none; }
-    @keyframes daFadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
-    .quiz-result.da-fadein > *:not(.quiz-result-cover):not(.quiz-result-cover-link) {
-      animation:daFadeUp .45s ease both; animation-delay:.18s; }
-    .da-card.slam .da-flip { animation:daSlamKf .28s ease-out; }
-    .da-ghost { position:absolute; inset:0; background-size:cover; background-position:center;
-      border:1px solid var(--line); pointer-events:none; opacity:0.35; transition:opacity .16s linear, transform .16s linear; }
-    .da-card.ace-border::after { content:''; position:absolute; inset:-2px; pointer-events:none; padding:3px;
-      background-image:var(--silver-shine); background-size:200% 100%; animation:daShimmer 7.8s linear infinite;
-      -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; }
-    .da-burst { position:absolute; left:50%; top:45%; width:0; height:0; pointer-events:none; }
-    .da-pt { position:absolute; width:6px; height:6px; left:-3px; top:-3px; }
   </style>
+<link rel="stylesheet" href="dip-draw-anim.css?v=1">
 </head>
 <body>
 
@@ -922,6 +882,7 @@
 
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=37"></script>
+<script src="dip-draw-anim.js?v=1"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, limit, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -3077,7 +3038,9 @@
   }
 
   async function submitQuiz() {
-    document.getElementById('quizContent').innerHTML =
+    // 心情選歌也走抽卡動畫：AI 推薦＋三處驗證常要好幾秒，閃卡正好把等待變成儀式
+    const qzAnim = await DipDrawAnim.start({ host: document.getElementById('quizContent'), profile: 'front' }).catch(() => null);
+    if (!qzAnim) document.getElementById('quizContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
 
     const qaText = quizSelected.map(q => {
@@ -3097,7 +3060,13 @@
       // 15% stock, 15% reel, 70% global AI
       if (rand < 0.15 && stockPool.length) {
         const pick = stockPool[Math.floor(Math.random() * stockPool.length)];
+        if (qzAnim) {
+          const imgs = Array.isArray(pick.imageUrls) && pick.imageUrls.length ? pick.imageUrls : (pick.imageUrl ? [pick.imageUrl] : []);
+          if (imgs[0]) { qzAnim.state.cover = imgs[0]; qzAnim.state.ready = true; } else qzAnim.state.fail = true;
+          await qzAnim.done;
+        }
         await showQuizResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
+        daHandoffTo('#quizContent');
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
         const reason = await getAiReason(pick.artist, pick.name || pick.album || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
@@ -3110,6 +3079,7 @@
 
       if (rand < 0.30 && freshReels.length) {
         const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
+        if (qzAnim) { qzAnim.state.fail = true; await qzAnim.done; }   // IG 嵌入無封面可翻，跳過動畫
         await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
         const reason = await getAiReason(pick.artist, pick.title || '', qaText, reasonEl);
@@ -3249,7 +3219,13 @@ ${seenList}
         verified = { rec: lastRec, spotifyResult: { imageUrl: null, spotifyUrl: null } };
       }
       if (!verified) throw new Error('找不到合適的推薦，請再試一次');
+      if (qzAnim) {
+        if (verified.spotifyResult.imageUrl) { qzAnim.state.cover = verified.spotifyResult.imageUrl; qzAnim.state.ready = true; }
+        else qzAnim.state.fail = true;      // 只在 YT 找到、無封面可翻
+        await qzAnim.done;
+      }
       await showQuizResult({ type: 'global', artist: verified.rec.artist, album: verified.rec.album, reason: '', _coverUrl: verified.spotifyResult.imageUrl, _spotifyUrl: verified.spotifyResult.spotifyUrl, _bandcampUrl: verified.spotifyResult.bandcampUrl, _ytUrl: verified.spotifyResult.ytUrl, _streaming: true });
+      daHandoffTo('#quizContent');
       const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
       const reason = await getAiReason(verified.rec.artist, verified.rec.album, qaText, reasonEl);
       lastQuizResult.reason = reason;
@@ -3260,6 +3236,8 @@ ${seenList}
     } catch(e) {
       document.getElementById('quizContent').innerHTML =
         `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
+      if (qzAnim) qzAnim.state.fail = true;   // 錯誤頁蓋掉舞台後，閃卡迴圈會因 isConnected=false 靜默收工
+      DipDrawAnim.cancel();
     }
   }
 
@@ -4293,249 +4271,38 @@ ${seenList}
     </div>`;
   }
 
-  // ── 直接來一張：抽卡動畫 ──────────────────────────────────
-  // 內建預設＝店主 2026-08-15 調校版；後台「遊戲設定→🎰 抽卡動畫」存的
-  // gameConfig/drawAnimation 會覆寫這份（鍵名一致）。
-  const DRAW_ANIM_DEF = {
-    flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
-    pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
-    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
-    handoffDelay:650, handoffDuration:450, backColor:'#ffffff'
-  };
-  let drawAnimCfg = null;
-  async function getDrawAnimCfg() {
-    if (drawAnimCfg) return drawAnimCfg;
-    try { const s = await getDoc(doc(db, 'gameConfig', 'drawAnimation'));
-      drawAnimCfg = s.exists() ? { ...DRAW_ANIM_DEF, ...s.data() } : { ...DRAW_ANIM_DEF }; }
-    catch (e) { drawAnimCfg = { ...DRAW_ANIM_DEF }; }
-    return drawAnimCfg;
-  }
-  // 閃卡用的封面池：card_catalog（大家實際抽過的卡）；讀不到退內建樣本
-  const DRAW_ANIM_FALLBACK_COVERS = [
-    'https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25',
-    'https://i.scdn.co/image/ab67616d0000b273f7009b199768fc7ff3a8d7e0',
-    'https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7',
-    'https://i.scdn.co/image/ab67616d0000b2738b9cf42f267a8c162b9594b1',
-    'https://i.scdn.co/image/ab67616d0000b273668e3aca3167e6e569a9aa20',
-    'https://i.scdn.co/image/ab67616d0000b27371d840defb002ed3b180f7cd',
-    'https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1',
-    'https://i.scdn.co/image/ab67616d0000b273db8e38addb58131f77b48377',
-    'https://i.scdn.co/image/ab67616d0000b2739eee212bba82bed8da96a8f7',
-    'https://i.scdn.co/image/ab67616d0000b2738f3cdfeac0678371b16f601d',
-    'https://i.scdn.co/image/ab67616d0000b273d4d4cd6954bd161fd3a8b4a5',
-    'https://i.scdn.co/image/ab67616d0000b2731e6080bcea9c1d05762084a1',
-  ];
-  // 頁面載入後預熱：設定與封面池先抓好放快取（含封面圖預載），
-  // 使用者點「直接來一張」時幾乎都是現成的，動畫零等待起跑
-  setTimeout(() => { getDrawAnimCfg().catch(() => {}); getDrawAnimCovers().catch(() => {}); }, 1500);
-
-  let drawAnimCovers = null;
-  async function getDrawAnimCovers() {
-    if (drawAnimCovers) return drawAnimCovers;
-    try {
+  // ── 抽卡動畫接線（引擎在 dip-draw-anim.js，四處共用）──────────────
+  // 心情選歌／類型挑片／直接來一張都走 profile front（gameConfig/drawAnimation）；
+  // 對戰的戰利品揭曉在 battle.html 走 profile battle（gameConfig/drawAnimationBattle）。
+  DipDrawAnim.configure({
+    fetchConfig: async (profile) => {
+      const id = profile === 'battle' ? 'drawAnimationBattle' : 'drawAnimation';
+      const s = await getDoc(doc(db, 'gameConfig', id));
+      return s.exists() ? s.data() : {};
+    },
+    // 閃卡封面池：card_catalog（大家實際抽過的卡）；不足或失敗時引擎自己退內建樣本
+    fetchCovers: async () => {
       const snap = await getDocs(query(collection(db, 'card_catalog'), limit(60)));
       const arr = []; snap.forEach(d => { const x = d.data(); if (x.coverUrl) arr.push(x.coverUrl); });
-      if (arr.length >= 12) drawAnimCovers = arr;
-    } catch (e) {}
-    if (!drawAnimCovers) drawAnimCovers = DRAW_ANIM_FALLBACK_COVERS;
-    drawAnimCovers.forEach(u => { const im = new Image(); im.src = u; });
-    return drawAnimCovers;
-  }
-  // 合成音效（無外部檔；由點擊手勢觸發，行動端可播）
-  let daAC = null;
-  const daAc = () => { if (!daAC) daAC = new (window.AudioContext || window.webkitAudioContext)(); return daAC; };
-  function daSnd(kind, cfg, arg) {
-    if (!cfg.sound) return;
-    try {
-      const c = daAc();
-      if (kind === 'tick') { const o = c.createOscillator(), g = c.createGain();
-        o.type = 'square'; o.frequency.value = 1400 - 700 * arg;
-        g.gain.setValueAtTime(0.028 + 0.03 * arg, c.currentTime); g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 0.035);
-        o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + 0.04); }
-      else if (kind === 'thud') { const o = c.createOscillator(), g = c.createGain();
-        o.type = 'sine'; o.frequency.setValueAtTime(150, c.currentTime); o.frequency.exponentialRampToValueAtTime(45, c.currentTime + 0.16);
-        g.gain.setValueAtTime(0.5, c.currentTime); g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.2);
-        o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + 0.22); }
-      else if (kind === 'whoosh') { const o = c.createOscillator(), g = c.createGain(), d = cfg.popDuration / 1000;
-        o.type = 'sine'; o.frequency.setValueAtTime(220, c.currentTime); o.frequency.exponentialRampToValueAtTime(880, c.currentTime + d * 0.7);
-        g.gain.setValueAtTime(0.001, c.currentTime); g.gain.exponentialRampToValueAtTime(0.12, c.currentTime + 0.08);
-        g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + d);
-        o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + d + 0.05); }
-      else if (kind === 'fanfare') { (arg ? [523.25, 659.25, 783.99, 1046.5] : [523.25, 659.25]).forEach((f, i) => {
-        const o = c.createOscillator(), g = c.createGain(), t0 = c.currentTime + i * 0.05;
-        o.type = 'triangle'; o.frequency.value = f;
-        g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(0.09, t0 + 0.03); g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.9);
-        o.connect(g); g.connect(c.destination); o.start(t0); o.stop(t0 + 1); }); }
-    } catch (e) {}
-  }
-  const daSleep = ms => new Promise(r => setTimeout(r, ms));
-  const daRndf = (a, b) => a + Math.random() * (b - a);
+      return arr;
+    },
+  });
+  // 載入後預熱：設定與封面池先進快取（含封面預載），使用者點下去就零等待起跑
+  setTimeout(() => DipDrawAnim.preload('front'), 1500);
 
-  // 啟動抽卡動畫：把舞台放進 genreContent，回傳 {state, done}。
-  // 抽卡與封面解析在背景並行；資產晚到就多閃幾拍（正好掩蓋延遲），
-  // 到手後 state.ready=true → 急停→彈起→翻牌，done resolve 後由呼叫端渲染結果頁。
-  // state.fail=true（reel、無封面、出錯）→ 動畫淡出、done 立即 resolve。
-  async function startGpDrawAnim() {
-    if (drawAnimCfg && drawAnimCfg.enabled === false) return null;   // 已知停用 → 呼叫端補 spinner
-    const host = document.getElementById('genreContent');
-    host.innerHTML = `
-      <div class="da-stage">
-        <div class="da-aura"></div>
-        <div class="da-card">
-          <div class="da-lift"><div class="da-floaty"><div class="da-flip">
-            <div class="da-face da-back"><div class="da-backlabel">?</div><div class="da-backbrand">dip vinyl</div></div>
-            <div class="da-face da-front"></div>
-          </div></div></div>
-        </div>
-        <div class="da-burst"></div>
-      </div>`;
-    const q = s => host.querySelector(s);
-    const stage = q('.da-stage'), card = q('.da-card'), lift = q('.da-lift'),
-          floaty = q('.da-floaty'), flip = q('.da-flip'), front = q('.da-front'),
-          aura = q('.da-aura'), burstHost = q('.da-burst');
-
-    // 不等 Firestore（手機首抽曾因此停在靜止牌背好幾秒）：
-    // 先用「已快取的線上設定或內建預設」＋「已快取的目錄或內建樣本」立刻開跑，
-    // 首抽資料晚到就熱插拔——設定合併進 cfg（閃卡迴圈每拍都讀最新值）、封面池換成 card_catalog。
-    const cfg = { ...DRAW_ANIM_DEF, ...(drawAnimCfg || {}) };
-    let order = (drawAnimCovers || DRAW_ANIM_FALLBACK_COVERS).slice().sort(() => Math.random() - 0.5);
-    getDrawAnimCfg().then(c => { Object.assign(cfg, c); applyCfgVisuals(); }).catch(() => {});
-    getDrawAnimCovers().then(list => { if (list && list.length >= 4) order = list.slice().sort(() => Math.random() - 0.5); }).catch(() => {});
-    if (cfg.sound && daAc().resume) daAc().resume();
-
-    // 牌背顏色＋版面（依 popScale/popLift 算高度與位置）；cfg 晚到會再套一次
-    function applyCfgVisuals() {
-      const backEl = q('.da-back');
-      if (backEl && cfg.backColor) {
-        backEl.style.background = cfg.backColor;
-        const hx = String(cfg.backColor).replace('#', '');
-        const lum = 0.299*(parseInt(hx.substr(0,2),16)||0) + 0.587*(parseInt(hx.substr(2,2),16)||0) + 0.114*(parseInt(hx.substr(4,2),16)||0);
-        const brand = backEl.querySelector('.da-backbrand');
-        if (brand) brand.style.color = lum > 150 ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
-      }
-      // 卡片先往下擺 popLift/2，彈起後正好落在視覺中央；光暈與粒子對齊彈起後的位置
-      const scale = Math.max(1, cfg.popScale), liftPx = Math.max(0, cfg.popLift);
-      const availW = stage.clientWidth || window.innerWidth;
-      const cardSize = Math.max(120, Math.min(200, Math.floor((availW - 48) / scale)));
-      const stageH = Math.round(cardSize * scale + liftPx + 44);
-      const restOffset = Math.round(liftPx / 2);
-      stage.style.height = stageH + 'px';
-      card.style.width = card.style.height = cardSize + 'px';
-      card.style.top = restOffset + 'px';
-      const poppedY = Math.round(stageH / 2 + restOffset - liftPx);
-      aura.style.top = poppedY + 'px'; burstHost.style.top = poppedY + 'px';
-    }
-    applyCfgVisuals();
-    const state = { ready: false, fail: false, cover: '', apex: false };
-
-    const done = (async () => {
-      // 閃卡：跑滿設定時長；資產未到就用收尾間隔繼續閃（上限再等 15 秒）
-      // order 用外層 let：card_catalog 封面池晚到會整組換掉，這裡每拍取當下的
-      flip.style.transform = 'rotateY(180deg)';
-      let t = 0, i = 0, last = null;
-      while ((t < cfg.flashDuration || !state.ready) && !state.fail) {
-        if (t > cfg.flashDuration + 15000) { state.fail = true; break; }
-        if (!stage.isConnected) return;                       // 使用者關掉 modal → 靜默中止
-        const prog = Math.min(1, t / cfg.flashDuration);
-        const interval = cfg.startInterval + (cfg.endInterval - cfg.startInterval) * Math.pow(prog, cfg.easePow);
-        const c = order[i % order.length];
-        if (cfg.ghosts && last && interval < 140) {
-          const g = document.createElement('div'); g.className = 'da-ghost';
-          g.style.backgroundImage = `url(${last})`;
-          g.style.transform = `translate(${daRndf(-cfg.jitter, cfg.jitter)}px,${daRndf(-cfg.jitter, cfg.jitter)}px) scale(1.02)`;
-          card.appendChild(g);
-          requestAnimationFrame(() => { g.style.opacity = '0'; g.style.transform += ' scale(1.12)'; });
-          setTimeout(() => g.remove(), 200);
-        }
-        front.style.backgroundImage = `url(${c})`; last = c;
-        const blur = cfg.maxBlur * (1 - prog), j = cfg.jitter * (1 - prog * 0.6);
-        front.style.filter = blur > 0.2 ? `blur(${blur.toFixed(1)}px)` : '';
-        lift.style.transform = `translate(${daRndf(-j, j)}px,${daRndf(-j, j)}px) rotate(${daRndf(-1.5, 1.5)}deg)`;
-        daSnd('tick', cfg, prog); i++;
-        await daSleep(interval); t += interval;
-      }
-      if (state.fail || !stage.isConnected) { if (stage.isConnected) stage.style.opacity = '0'; return; }
-      front.style.filter = ''; lift.style.transform = 'none';
-      // 急停蓋回神秘牌背
-      flip.style.transition = 'none'; flip.style.transform = 'rotateY(0deg)';
-      card.classList.add('slam'); daSnd('thud', cfg);
-      setTimeout(() => card.classList.remove('slam'), 300);
-      front.style.backgroundImage = `url(${state.cover})`;
-      await daSleep(cfg.pauseBeforePop);
-      if (!stage.isConnected) return;
-      // 彈起
-      aura.className = 'da-aura ' + (state.apex ? 'on-apex' : 'on-normal');
-      lift.style.transition = `transform ${cfg.popDuration}ms cubic-bezier(.2,${cfg.popOvershoot},.35,1)`;
-      lift.style.transform = `translateY(-${cfg.popLift}px) scale(${cfg.popScale})`;
-      daSnd('whoosh', cfg);
-      await daSleep(cfg.popDuration);
-      if (!stage.isConnected) return;
-      if (cfg.floatWobble) floaty.classList.add('on');
-      // 揭曉（前台一律自動；點牌揭曉需等待互動，先不進前台流程）
-      await daSleep(Math.max(200, cfg.autoDelay));
-      if (!stage.isConnected) return;
-      floaty.classList.remove('on');
-      flip.style.transition = `transform ${cfg.flipDuration}ms cubic-bezier(.4,0,.2,1)`;
-      flip.style.transform = 'rotateY(180deg)';
-      await daSleep(cfg.flipDuration * 0.55);
-      if (!stage.isConnected) return;
-      const n = cfg.burstCount * (state.apex ? 1.5 : 1);
-      for (let k = 0; k < n; k++) {
-        const s = document.createElement('span'); s.className = 'da-pt';
-        const gold = state.apex || Math.random() < 0.3;
-        s.style.background = gold ? (Math.random() < 0.5 ? '#b8860b' : '#e6c34d') : (Math.random() < 0.5 ? '#111' : '#999');
-        if (Math.random() < 0.4) s.style.borderRadius = '50%';
-        burstHost.appendChild(s);
-        const ang = daRndf(0, Math.PI * 2), dist = daRndf(80, 200) * (state.apex ? 1.2 : 1);
-        s.animate([
-          { transform: 'translate(0,0) scale(1) rotate(0deg)', opacity: 1 },
-          { transform: `translate(${Math.cos(ang) * dist}px,${Math.sin(ang) * dist - 40}px) scale(${daRndf(0.2, 0.7)}) rotate(${daRndf(-360, 360)}deg)`, opacity: 0 }
-        ], { duration: daRndf(500, 950), easing: 'cubic-bezier(.15,.8,.4,1)' }).onfinish = () => s.remove();
-      }
-      daSnd('fanfare', cfg, state.apex);
-      if (state.apex) card.classList.add('ace-border');
-      await daSleep(cfg.flipDuration * 0.45 + Math.max(0, cfg.handoffDelay));   // 揭曉停留一拍
-      // 建 fixed clone 停在卡片目前的視覺位置：done resolve 後呼叫端渲染結果頁（舞台被拆掉），
-      // clone 蓋住這段版面切換，daFinishHandoff 再讓它飛進結果頁封面框
-      if (stage.isConnected && state.cover) {
-        const ra = front.getBoundingClientRect();
-        const cl = document.createElement('div'); cl.className = 'da-handoff-clone';
-        cl.style.backgroundImage = `url(${state.cover})`;
-        Object.assign(cl.style, { left: ra.left+'px', top: ra.top+'px', width: ra.width+'px', height: ra.height+'px' });
-        document.body.appendChild(cl);
-        daPendingClone = cl;
-      }
-    })();
-    return { state, done };
-  }
-
-  // 結果頁渲染完成後呼叫：把揭曉留下的 clone 飛進 .quiz-result-cover，文字淡入
-  let daPendingClone = null;
-  async function daFinishHandoff() {
-    const cl = daPendingClone; daPendingClone = null;
-    if (!cl) return;
-    const cfg = drawAnimCfg || DRAW_ANIM_DEF;
-    const img = document.querySelector('#genreContent .quiz-result-cover');
-    const wrap = document.querySelector('#genreContent .quiz-result');
-    if (!img) { cl.remove(); return; }
-    if (wrap) wrap.classList.add('da-fadein');
-    img.style.visibility = 'hidden';
-    const rb = img.getBoundingClientRect();
-    const ease = 'cubic-bezier(.25,.8,.3,1)', d = cfg.handoffDuration;
-    cl.style.transition = `left ${d}ms ${ease}, top ${d}ms ${ease}, width ${d}ms ${ease}, height ${d}ms ${ease}`;
-    requestAnimationFrame(() => {
-      Object.assign(cl.style, { left: rb.left+'px', top: rb.top+'px', width: rb.width+'px', height: rb.height+'px' });
+  // 抽卡動畫的結果頁接軌目標（心情選歌與類型挑片／直接來一張的容器不同）
+  function daHandoffTo(hostSel) {
+    return DipDrawAnim.finishHandoff({
+      target: hostSel + ' .quiz-result-cover',
+      fadeWrap: hostSel + ' .quiz-result',
     });
-    await daSleep(d + 40);
-    img.style.visibility = '';
-    cl.remove();
   }
-  function daCancelHandoff() { if (daPendingClone) { daPendingClone.remove(); daPendingClone = null; } }
 
   async function submitGenrePick() {
     gpStopPreview();
     // 直接來一張：抽卡動畫取代等待 spinner（抽卡/封面解析在背景並行跑）
-    const gpAnim = gpIsRandom ? await startGpDrawAnim().catch(() => null) : null;
+    // 類型挑片與直接來一張都走抽卡動畫（取代等待 spinner；抽卡／封面解析在背景並行跑）
+    const gpAnim = await DipDrawAnim.start({ host: document.getElementById('genreContent'), profile: 'front' }).catch(() => null);
     if (!gpAnim) document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
@@ -4555,7 +4322,7 @@ ${seenList}
         await gpAnim.done;
       }
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
-      daFinishHandoff();
+      daHandoffTo('#genreContent');
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.name || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -4622,7 +4389,7 @@ ${seenList}
         _streaming: true,
         _hall: isApex && classicMode, _pearl: isApex && obscureMode, _heresy: isApex && heresyMode,
       });
-      daFinishHandoff();
+      daHandoffTo('#genreContent');
       const reason = await fillGpDesc(pick, assets.ov);
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -4632,7 +4399,7 @@ ${seenList}
       return;
     } catch (e) {
       if (gpAnim) gpAnim.state.fail = true;   // 錯誤頁蓋掉舞台後，閃卡迴圈會因 isConnected=false 靜默收工
-      daCancelHandoff();
+      DipDrawAnim.cancel();
       document.getElementById('genreContent').innerHTML =
         `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">再試一次</button></div>`;
       return;

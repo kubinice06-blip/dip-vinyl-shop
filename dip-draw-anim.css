@@ -1,0 +1,50 @@
+/* dip vinyl 抽卡動畫共用樣式（搭配 dip-draw-anim.js）
+   舞台高度／卡片尺寸／垂直位置由 JS 依當下參數算出寫成 inline style，
+   後台把 popScale／popLift 調大時才不會彈出舞台被 overflow 切掉；這裡只留保底值。 */
+
+@keyframes daShimmer { 0% { background-position: 200% 0; } 100% { background-position: 0 0; } }
+@keyframes daFloatyKf { 0%, 100% { transform: translateY(0) rotate(-0.6deg); } 50% { transform: translateY(-6px) rotate(0.6deg); } }
+@keyframes daSlamKf { 0% { transform: scale(1.1); } 55% { transform: scale(0.97); } 100% { transform: scale(1); } }
+@keyframes daFadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.da-stage { position: relative; height: 390px; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 50% 45%, #fff 0%, #fafafa 60%, #f1f1f1 100%); }
+.da-aura { position: absolute; left: 50%; top: 45%; width: 300px; height: 300px; transform: translate(-50%, -50%);
+  border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity .5s; }
+.da-aura.on-normal { background: radial-gradient(circle, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0) 62%); opacity: 1; }
+.da-aura.on-apex { background: radial-gradient(circle, rgba(184,134,11,0.34) 0%, rgba(184,134,11,0) 62%); opacity: 1; }
+
+.da-card { position: relative; width: 200px; height: 200px; perspective: 900px; }
+.da-lift { width: 100%; height: 100%; transform-origin: center center; }
+.da-floaty { width: 100%; height: 100%; }
+.da-floaty.on { animation: daFloatyKf 2.4s ease-in-out infinite; }
+.da-flip { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+.da-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border: 1px solid #111; background: #fff; box-shadow: 0 10px 28px rgba(0,0,0,0.18); }
+.da-face.da-front { transform: rotateY(180deg); background-size: cover; background-position: center; }
+/* 牌背：素色，顏色由 backColor 參數控制（JS 套 inline style） */
+.da-face.da-back { background: #fff; display: flex; align-items: center; justify-content: center; }
+.da-backlabel { width: 64px; height: 64px; border-radius: 50%; background: #b8860b; border: 2px solid #8a6508;
+  display: flex; align-items: center; justify-content: center; color: #141414; font-weight: 700; font-size: 22px;
+  font-family: 'Space Mono', monospace; }
+.da-backbrand { position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; color: rgba(0,0,0,0.45);
+  font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase; font-family: 'Space Mono', monospace; }
+.da-card.slam .da-flip { animation: daSlamKf .28s ease-out; }
+.da-ghost { position: absolute; inset: 0; background-size: cover; background-position: center;
+  border: 1px solid #ddd; pointer-events: none; opacity: 0.35;
+  transition: opacity .16s linear, transform .16s linear; }
+.da-card.ace-border::after { content: ''; position: absolute; inset: -2px; pointer-events: none; padding: 3px;
+  background-image: linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
+  background-size: 200% 100%; animation: daShimmer 7.8s linear infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; }
+
+.da-burst { position: absolute; left: 50%; top: 45%; width: 0; height: 0; pointer-events: none; }
+.da-pt { position: absolute; width: 6px; height: 6px; left: -3px; top: -3px; }
+
+/* 揭曉 → 結果頁無縫接軌：fixed clone 從彈起位置飛進目標封面框，蓋住版面切換的跳動 */
+.da-handoff-clone { position: fixed; z-index: 9999; background-size: cover; background-position: center;
+  border: 1px solid #111; box-shadow: 0 10px 28px rgba(0,0,0,0.18); pointer-events: none; }
+.da-fadein > *:not(.quiz-result-cover):not(.quiz-result-cover-link) {
+  animation: daFadeUp .45s ease both; animation-delay: .18s; }

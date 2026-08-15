@@ -6,6 +6,7 @@
 <title>dip 卡牌對戰 · BETA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dip-draw-anim.css?v=1">
 <style>
   :root {
     --black:#111; --gray:#888; --line:#ddd; --bg:#fff; --mono:'Space Mono',monospace;
@@ -284,6 +285,10 @@
   .overlay p { color:var(--gray); margin:0; letter-spacing:0.08em; }
   .overlay .ovrec { font-size:11px; color:var(--black); letter-spacing:0.08em; }
   .overlay .ovbtns { display:flex; gap:10px; }
+  /* 掠奪戰利品揭曉的抽卡舞台（沒有戰利品時整塊不佔位）；背景配合勝利遮罩的白 */
+  .ovdraw { width:100%; max-width:360px; }
+  .ovdraw:empty { display:none; }
+  .ovdraw .da-stage { background:none; }
   .ovloot { width:100%; max-width:360px; display:flex; flex-direction:column; gap:10px; }
   .ovloot:empty { display:none; }
   .loot-sec { border:1px solid var(--line); padding:9px 11px; text-align:left; }
@@ -476,6 +481,7 @@
   <h1 id="ovTitle"></h1>
   <p id="ovSub"></p>
   <p class="ovrec" id="ovRec"></p>
+  <div class="ovdraw" id="ovDraw"></div>
   <div class="ovloot" id="ovLoot"></div>
   <div class="ovbtns">
     <button class="btn" id="ovAgain">再戰</button>
@@ -567,9 +573,10 @@
 
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=37"></script>
+<script src="dip-draw-anim.js?v=1"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, getDocs, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc, query, limit, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 // ───────── Firebase（與 index.html 同專案）─────────
@@ -1736,6 +1743,22 @@ function openCardInfo(card){
   loadCardDesc(card, ++_cardDescSeq);
 }
 
+// 抽卡動畫接線（引擎在 dip-draw-anim.js，與前台共用）：對戰走 profile battle，
+// 參數獨立存 gameConfig/drawAnimationBattle，節奏比前台快。
+DipDrawAnim.configure({
+  fetchConfig: async (profile) => {
+    const id = profile === 'battle' ? 'drawAnimationBattle' : 'drawAnimation';
+    const s = await getDoc(doc(db, 'gameConfig', id));
+    return s.exists() ? s.data() : {};
+  },
+  fetchCovers: async () => {
+    const snap = await getDocs(query(collection(db, 'card_catalog'), limit(60)));
+    const arr = []; snap.forEach(d => { const x = d.data(); if (x.coverUrl) arr.push(x.coverUrl); });
+    return arr;
+  },
+});
+setTimeout(()=>DipDrawAnim.preload('battle'), 2000);   // 開場預熱，賽末揭曉零等待
+
 async function endGame(){
   G.over=true; G.busy=false;
   // 雙殺 → 剩血多者勝（無平手）
@@ -1748,6 +1771,26 @@ async function endGame(){
   await saveResult(G.opp, win);
   const r = myStats.byOpp[G.opp] || {w:0,l:0};
   document.getElementById('ovRec').textContent = `對【${opp.who}】戰績 ${r.w} 勝 ${r.l} 敗　·　總戰績 ${myStats.total.w} 勝 ${myStats.total.l} 敗`;
+
+  // 掠奪戰利品＝對戰裡真正「抽到一張新卡」的時刻，走抽卡動畫揭曉；
+  // 輸了或沒有可掠奪的卡就照舊直接出戰利品面板。
+  const plunder = win ? bestPlunder(dedupeByAlbum(G.e.played)) : null;
+  const drawBox = document.getElementById('ovDraw');
+  if(drawBox) drawBox.innerHTML='';
+  if(plunder){
+    const anim = await DipDrawAnim.start({ host: drawBox, profile:'battle' }).catch(()=>null);
+    ov.classList.add('show');                       // 先亮遮罩，動畫才看得到
+    if(anim){
+      const url = plunder.coverUrl || await ensureCover(plunder).catch(()=>'');
+      if(url){ anim.state.cover=url; anim.state.apex=!!plunder.ace; anim.state.ready=true; }
+      else anim.state.fail=true;                    // 無封面可翻 → 跳過動畫
+      await anim.done;
+    }
+    await renderLoot(win, plunder);
+    if(drawBox) drawBox.innerHTML='';               // 收起舞台，clone 接著飛進戰利品縮圖
+    await DipDrawAnim.finishHandoff({ target:'#ovLoot .loot-cover[data-lcid="p"]' });
+    return;
+  }
   await renderLoot(win);
   setTimeout(()=>ov.classList.add('show'),700);
 }
@@ -1819,12 +1862,13 @@ function lootCoverHTML(card, key){
     : `<div class="loot-cover loot-noimg${frame}" data-lcid="${key}"><span>${card.album}</span></div>`;
 }
 // 賽後戰利品面板：贏 → 掠奪一張自動入冊；借的卡 → 勾選收進唱片櫃
-async function renderLoot(win){
+async function renderLoot(win, plunderIn){
   const box=document.getElementById('ovLoot'); if(!box) return; box.innerHTML='';
-  G._lootWin = win;
+  G._lootWin = win; G._lootPlunder = plunderIn || G._lootPlunder;
   let html='';
   // 掠奪（贏才有，從對手這局打出來過的卡裡挑）
-  const plunder = win ? bestPlunder(dedupeByAlbum(G.e.played)) : null;
+  // endGame 先算過就沿用同一張——重算會再抽一次，可能跟剛揭曉的那張不同
+  const plunder = win ? (plunderIn || G._lootPlunder || bestPlunder(dedupeByAlbum(G.e.played))) : null;
   if(plunder){
     if(currentUser){ const r=await addCardToColl(plunder); }
     const acetag = plunder.ace?`<span class="loot-ace ${plunder.ace}">${ACE_ZH[plunder.ace]}</span>`:'';

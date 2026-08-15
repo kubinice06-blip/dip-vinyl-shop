@@ -1046,9 +1046,14 @@
 
       <div class="subpanel" id="sub-draw">
       <div class="section">
-        <div class="section-label">直接來一張 · 抽卡動畫（gameConfig/drawAnimation）</div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
-          拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台抽卡動畫載入時讀這份設定覆寫內建值。
+        <div class="section-label">抽卡動畫調校</div>
+        <div style="display:flex;gap:6px;margin-bottom:10px;">
+          <button class="gbtn gbtn-primary" id="daProfFront" data-prof="front">前台抽卡</button>
+          <button class="gbtn" id="daProfBattle" data-prof="battle">卡牌對戰</button>
+        </div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;" id="daProfDesc">
+          <b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／直接來一張三處共用。
+          拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台載入時讀這份設定覆寫內建值。
           預覽封面取自 card_catalog（玩家實際抽過的卡）。</p>
         <div class="da-stage">
           <div class="da-aura" id="daAura"></div>
@@ -3880,14 +3885,35 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('rogueReload')?.addEventListener('click', loadRogueCfg);
   document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); renderRelics(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
 
-  // ── 抽卡動畫（直接來一張）：gameConfig/drawAnimation ──
-  // 面板拉桿即時生效、試抽即時預覽；前台載入時讀這份覆寫內建值。
-  const DEF_DRAW = {   // 店主 2026-08-15 調校版；與 index.html 的 DRAW_ANIM_DEF 同步
-    flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
-    pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
-    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
-    handoffDelay:650, handoffDuration:450, backColor:'#ffffff'
+  // ── 抽卡動畫：兩組參數 ──
+  //   front  → gameConfig/drawAnimation（心情選歌／類型挑片／直接來一張共用）
+  //   battle → gameConfig/drawAnimationBattle（卡牌對戰掠奪揭曉，節奏較快）
+  // 面板拉桿即時生效、試抽即時預覽；各頁載入時讀這份覆寫內建值。
+  // ⚠ 預設值必須與 dip-draw-anim.js 的 DEFAULTS 同步。
+  const DEF_DRAW_BY_PROFILE = {
+    front: {
+      flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
+      pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
+      revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
+      handoffDelay:650, handoffDuration:450, backColor:'#ffffff', cardMax:200
+    },
+    battle: {
+      flashDuration:900, startInterval:35, endInterval:150, easePow:2, jitter:6, maxBlur:3, ghosts:true,
+      pauseBeforePop:100, popDuration:300, popScale:1.35, popLift:40, popOvershoot:1.5, floatWobble:false,
+      revealMode:'auto', autoDelay:250, flipDuration:380, burstCount:30, sound:true,
+      handoffDelay:300, handoffDuration:350, backColor:'#ffffff', cardMax:150
+    },
   };
+  const DRAW_DOC_ID = { front:'drawAnimation', battle:'drawAnimationBattle' };
+  const DRAW_PROF_DESC = {
+    front: '<b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／直接來一張三處共用。'
+         + '拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台載入時讀這份設定覆寫內建值。'
+         + '預覽封面取自 card_catalog（玩家實際抽過的卡）。',
+    battle: '<b>卡牌對戰</b>（gameConfig/drawAnimationBattle）＝賽末「掠奪戰利品」揭曉那張卡。'
+          + '對戰中不該為了儀式感拖住玩家，預設節奏比前台快一截；這組參數與前台完全獨立。',
+  };
+  let daProfile = 'front';
+  const DEF_DRAW = DEF_DRAW_BY_PROFILE.front;   // 相容：舊程式碼引用
   const DA_SCHEMA = [
     {k:'flashDuration', l:'閃卡總時長 ms',    min:400, max:5000, step:100},
     {k:'startInterval', l:'起始間隔 ms',      min:25,  max:160,  step:5},
@@ -3909,9 +3935,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
     {k:'handoffDelay',  l:'揭曉停留 ms',      min:0,   max:2000, step:50},
     {k:'handoffDuration',l:'接軌時長 ms',     min:200, max:1200, step:50},
     {k:'backColor',     l:'牌背顏色',         type:'color'},
+    {k:'cardMax',       l:'卡片最大邊長 px',  min:110, max:240,  step:10},
     {k:'sound',         l:'音效',            type:'check'},
   ];
-  let daP = {...DEF_DRAW};
+  let daP = {...DEF_DRAW_BY_PROFILE.front};
 
   function renderDrawForm(){
     const wrap=document.getElementById('daForm'); if(!wrap) return;
@@ -4000,7 +4027,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
           aura=document.getElementById('daAura'), burst=document.getElementById('daBurst');
     if(!stage) return;
     const scale=Math.max(1,daP.popScale), liftPx=Math.max(0,daP.popLift);
-    const cardSize=Math.max(110, Math.min(190, Math.floor(((stage.clientWidth||600)-48)/scale)));
+    const cardSize=Math.max(110, Math.min(daP.cardMax||190, Math.floor(((stage.clientWidth||600)-48)/scale)));
     const stageH=Math.round(cardSize*scale + liftPx + 44);
     const restOffset=Math.round(liftPx/2);
     stage.style.height=stageH+'px';
@@ -4131,22 +4158,33 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   async function loadDrawCfg(){
     const msg=document.getElementById('daMsg'); if(msg) msg.textContent='載入中…';
-    try{ const s=await getDoc(doc(db,'gameConfig','drawAnimation'));
-      daP = s.exists()? {...DEF_DRAW, ...s.data()} : {...DEF_DRAW};
+    const def = DEF_DRAW_BY_PROFILE[daProfile];
+    try{ const s=await getDoc(doc(db,'gameConfig',DRAW_DOC_ID[daProfile]));
+      daP = s.exists()? {...def, ...s.data()} : {...def};
       if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
-    catch(e){ daP={...DEF_DRAW}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
+    catch(e){ daP={...def}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
     renderDrawForm(); daLayout(); daApplyBackColor(); daLoadCovers();
   }
+  // 前台／對戰切換：各自讀寫自己的 Firestore doc
+  document.querySelectorAll('[data-prof]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      daProfile = b.dataset.prof;
+      document.querySelectorAll('[data-prof]').forEach(x=>x.classList.toggle('gbtn-primary', x===b));
+      document.getElementById('daProfDesc').innerHTML = DRAW_PROF_DESC[daProfile];
+      loadDrawCfg();
+    });
+  });
   document.getElementById('daCard')?.addEventListener('click',()=>{ if(daAwaitClick) daReveal(); });
   document.getElementById('daDraw')?.addEventListener('click',()=>daDrawRun(false));
   document.getElementById('daDrawApex')?.addEventListener('click',()=>daDrawRun(true));
   document.getElementById('daSave')?.addEventListener('click', async ()=>{
     const msg=document.getElementById('daMsg'); msg.textContent='儲存中…';
-    try{ await setDoc(doc(db,'gameConfig','drawAnimation'), {...daP}); msg.textContent='✓ 已儲存（前台抽卡動畫下次載入生效）'; }
+    try{ await setDoc(doc(db,'gameConfig',DRAW_DOC_ID[daProfile]), {...daP});
+      msg.textContent = '✓ 已儲存（'+(daProfile==='battle'?'battle.html':'前台抽卡')+'下次載入生效）'; }
     catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
   });
   document.getElementById('daReload')?.addEventListener('click', loadDrawCfg);
-  document.getElementById('daReset')?.addEventListener('click', ()=>{ daP={...DEF_DRAW}; renderDrawForm(); document.getElementById('daMsg').textContent='已填回預設（尚未儲存）'; });
+  document.getElementById('daReset')?.addEventListener('click', ()=>{ daP={...DEF_DRAW_BY_PROFILE[daProfile]}; renderDrawForm(); daLayout(); daApplyBackColor(); document.getElementById('daMsg').textContent='已填回預設（尚未儲存）'; });
 </script>
 </body>
 </html>

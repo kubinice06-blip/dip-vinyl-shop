@@ -1,5 +1,32 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16｜dip-vinyl-shop｜抽卡動畫抽成共用模組，套用四處；對戰走獨立參數
+
+店主要求心情選歌／類型挑片／對戰也要有抽卡動畫，且對戰節奏要不同。
+
+- **新增 `dip-draw-anim.js` ＋ `dip-draw-anim.css`**：把 index 內嵌的引擎抽出來（原內嵌版已刪，
+  index 只留薄接線層）。三個頁面各留一份必定走鐘，這是抽模組的主因。
+  API：`configure({fetchConfig,fetchCovers})` → `preload(profile)` → `start({host,profile})`
+  → 呼叫端設 `state.cover/apex/ready`（或 `fail`）→ `await done` → 渲染結果頁
+  → `finishHandoff({target,fadeWrap})`。Firestore 存取由頁面注入，模組本身零相依。
+- **兩組參數（profile）**：`front` = `gameConfig/drawAnimation`（心情選歌／類型挑片／
+  直接來一張共用）；`battle` = `gameConfig/drawAnimationBattle`，預設快一截
+  （閃卡 900 vs 1600、彈起 300 vs 400、放大 1.35 vs 1.45、卡片上限 150 vs 200px）。
+  **新增 `cardMax` 參數**（對戰要塞進勝利遮罩，卡片得小一點）。
+  沿用既有 `gameConfig/{id}` 規則，新 doc 免改 firestore.rules。
+- **接線點**：`submitGenrePick` 拿掉 `gpIsRandom` 條件（類型挑片一併啟用）；
+  `submitQuiz` 三條路徑（店內 15%／IG reel 15%／AI 70%）各自接 ready/fail，
+  **AI 那條要等 Claude 推薦＋三處驗證好幾秒，閃卡正好把等待變成儀式**；
+  battle `endGame` 的**掠奪戰利品**揭曉（對戰裡真正「抽到新卡」的時刻），
+  完後 clone 飛進 `.loot-cover[data-lcid="p"]`。
+- ⚠ **`renderLoot` 改吃 `plunderIn`**：原本自己呼叫 `bestPlunder()`，動畫先算一次再讓它重算
+  會抽到不同張、跟剛揭曉的對不上。
+- ⚠ **battle.html 的 firestore import 少了 `query`/`limit`**，fetchCovers 會拋錯；已補。
+- 後台面板加「前台抽卡／卡牌對戰」切換鈕，各讀寫自己的 doc（22 列參數）。
+- 驗證：類型挑片 `SF--@1131 → --CR@4993 → ---R@5473` 完整走通；心情選歌送出後 126ms 起閃、
+  抽中 AI 路徑遇本機 CORS 時錯誤處理正確接手（clone 無殘留）；對戰 profile 直接驅動引擎
+  firstFlash 134ms、全程 2515ms、讀到 flash 900／cardMax 150；後台切換兩組值正確。
+
 ### 2026-08-15｜dip-vinyl-shop｜抽卡首抽卡頓修正：動畫零等待起跑＋載入預熱
 
 店主手機實測回報：點「直接來一張」停在靜止牌背好幾秒才動——就是 `startGpDrawAnim`
