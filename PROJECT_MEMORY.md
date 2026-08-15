@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-08 共 36 張上架，seed 7,743；試聽再補「年份衝突」第三道關卡
+
+seed 7,707 →**7,743**，classical 擴充累計 **223 張上架**。
+
+- **⚠ 第三道關卡：對的人、對的曲，還是可能配到錯的年代**。Hans Hotter《Winterreise》
+  配到標題帶 (1942) 的戰時版，但本卡是 1954 年 Abbey Road 錄音、1955 年 EMI 首發；
+  演奏者 token 與作品 token 都擋不住。新增 `p5h-yearcheck.mjs`：比對歌單標題裡的四位數年份
+  與研究稿 `yearVerified` 的 year／recorded，差距超過一年就報衝突。
+  同一關也抓到 Kreisler《The Complete Recordings》配到單一卷冊（1919-1924）。
+- **「名實不符」的指控要自己查曲目再信**。Szigeti《Bartók: Contrasts》被研究層與寫作層
+  各回報一次「rgMbid 其實是 1940 年國會圖書館獨奏會、沒有 Contrasts」。
+  我直接拉 release 的 track list：**第 1–3 軌就是 Contrasts 三個樂章**，其後是 Bartók 自彈的
+  Mikrokosmos 選曲——卡名沒問題，是下游誤判。該張已退回原寫手重寫
+  （原稿寫成獨奏會、還有一句「《Contrasts》則是另一回事」，與卡片標題正面牴觸）。
+- **對照組：Piatigorsky & Heifetz《Brahms: Double Concerto》的「釘錯」是真的**——
+  原 rgMbid 指向 Heifetz／**Feuermann**／Ormandy 的 1930 年代版本。MB 沒有 1961 原始發行的 RG，
+  改釘 RCA《Double Concertos》(2dc3f93e)，並用 **recording 的 artist-rels** 查證其 op.102 確為
+  Wallenstein／Heifetz／Piatigorsky／RCA Victor Symphony。
+  **兩種情況只能靠查曲目／掛名分辨，不能靠標題。**
+- **研究稿格式與補件**：c-08-b 又寫成陣列（下游一律吃物件），已就地轉回；
+  Hotter《Winterreise》把年份查證寫在 notes 而未填結構化欄位，依其結論補為 1955（錄音 1954）。
+- **人工覆核 3 命中、全數放行**：Kreisler 的《紐約時報》頭版坦承本身就是主故事（例外一）、
+  Cherkassky 的 Gramophone 年度器樂獎是可具名的機構獎項、Marian Anderson 卡的愛蓮娜·羅斯福
+  是政治人物照規則用中文譯名。零新事實 QA 唯一標記是我自己查證後指示補上的 Mikrokosmos。
+- **Kreisler 的取捨**：YT 上這套只有分卷、沒有整套，取第 1 卷（1904, 1910）代表並在 note 註明，
+  比留 unavailable 好。
+- **試聽**：apple 14／yt 22／unavailable 0。**Gate**：prepare 0 error；published 22 error＝待貼 YT 張數。
+- **另做**：新增 `p1p-adjudicate.mjs` 處理 c-09 之後約 248 張未解身分——用「作品 token＋作曲家掛名
+  ＋CAA 封面」三條件裁定，另加兩條規則：卡名括號裡的指揮必須出現在掛名（Ferras 因此正確選到
+  1964 Karajan 版而非 1954 版）、多個候選若編號與作曲家全同則視為同一演出的不同耦合取最早發行。
+  **開發時踩到的坑**：抽數字必須用 `fold()` 不能用 `canon()`——canon 把「no. 8」壓成「no8」，
+  數字前後沒有 word boundary，結果變成「卡片無編號」而全部放行（Solti 第 8 號一度配到第 9 號）；
+  區間寫法（Symphonies 4-7）要展開成完整集合且**每個編號都要命中**，否則會配到「nos. 4 & 6」。
+- 主要檔案：`seed_cards.json`（+36）、`data/apple-audio-map-v1.json`（entries 7,589／runtime 6,790）、
+  `classical-expansion/onboarding/`（p5h/p5i/p1o 系列/p1p、manifest-c-08、repaste-c-08、
+  RUNBOOK.md 取代舊的 RUNBOOK-c04plus.md）、`desc-restyle/batches/`（add-20260815-c08 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-07 共 35 張上架，seed 7,707；試聽驗證補上「作品 token」第二道關卡
 
 seed 7,672 →**7,707**。這批最重要的產出是**把只驗演奏者的試聽比對補成兩道關卡**，當場擋下三個錯配。
