@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop｜抽卡首抽卡頓修正：動畫零等待起跑＋載入預熱
+
+店主手機實測回報：點「直接來一張」停在靜止牌背好幾秒才動——就是 `startGpDrawAnim`
+裡 `await Promise.all([getDrawAnimCfg(), getDrawAnimCovers()])` 擋在閃卡前面，
+手機首抽兩筆 Firestore（getDoc＋card_catalog getDocs 60 筆）冷連線要數秒。
+
+- **改成不等 Firestore**：先用「已快取線上設定或內建預設」＋「已快取目錄或內建 12 張樣本」
+  立刻開跑；資料晚到熱插拔——cfg 用 `Object.assign` 就地合併（閃卡迴圈每拍讀最新值，
+  牌背色與版面由 `applyCfgVisuals()` 再套一次）、封面池整組換成 card_catalog（`order` 改外層 let）。
+- **載入後 1.5s 預熱**：`setTimeout` 先拉設定＋封面池進快取（含封面圖預載），
+  正常人點按鈕時一定晚於預熱，等於都走現成資料。
+- `enabled:false` 檢查改成只擋「已快取且已知停用」；首抽未快取就照跑一次（旗標尚無 UI，可接受）。
+- 驗證：本機點擊→第一拍閃卡 **303ms**（原本等兩筆 Firestore），首拍即真卡池封面；全流程照常到結果頁。
+
 ### 2026-08-15 深夜｜classical-expansion｜c-17～c-21 推到研究層；抓到年份規則缺口與「唱片不存在」的卡
 
 **停在哪**：c-17／c-18／c-19 研究完成，c-20／c-21 研究未派。交接清單在

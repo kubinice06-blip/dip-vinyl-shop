@@ -4325,6 +4325,10 @@ ${seenList}
     'https://i.scdn.co/image/ab67616d0000b273d4d4cd6954bd161fd3a8b4a5',
     'https://i.scdn.co/image/ab67616d0000b2731e6080bcea9c1d05762084a1',
   ];
+  // 頁面載入後預熱：設定與封面池先抓好放快取（含封面圖預載），
+  // 使用者點「直接來一張」時幾乎都是現成的，動畫零等待起跑
+  setTimeout(() => { getDrawAnimCfg().catch(() => {}); getDrawAnimCovers().catch(() => {}); }, 1500);
+
   let drawAnimCovers = null;
   async function getDrawAnimCovers() {
     if (drawAnimCovers) return drawAnimCovers;
@@ -4372,7 +4376,7 @@ ${seenList}
   // 到手後 state.ready=true → 急停→彈起→翻牌，done resolve 後由呼叫端渲染結果頁。
   // state.fail=true（reel、無封面、出錯）→ 動畫淡出、done 立即 resolve。
   async function startGpDrawAnim() {
-    // 舞台先上（牌背待機），設定與封面池並行抓——首抽才不會卡在舊畫面等 Firestore
+    if (drawAnimCfg && drawAnimCfg.enabled === false) return null;   // 已知停用 → 呼叫端補 spinner
     const host = document.getElementById('genreContent');
     host.innerHTML = `
       <div class="da-stage">
@@ -4385,41 +4389,49 @@ ${seenList}
         </div>
         <div class="da-burst"></div>
       </div>`;
-    const [cfg, covers] = await Promise.all([getDrawAnimCfg(), getDrawAnimCovers()]);
-    if (cfg.enabled === false) return null;   // 後台停用 → 呼叫端會補回 spinner
-    if (cfg.sound && daAc().resume) daAc().resume();
-    // 牌背顏色（後台可調）＋品牌字自動對比
-    const backEl = host.querySelector('.da-back');
-    if (backEl && cfg.backColor) {
-      backEl.style.background = cfg.backColor;
-      const hx = String(cfg.backColor).replace('#', '');
-      const lum = 0.299*(parseInt(hx.substr(0,2),16)||0) + 0.587*(parseInt(hx.substr(2,2),16)||0) + 0.114*(parseInt(hx.substr(4,2),16)||0);
-      const brand = backEl.querySelector('.da-backbrand');
-      if (brand) brand.style.color = lum > 150 ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
-    }
     const q = s => host.querySelector(s);
     const stage = q('.da-stage'), card = q('.da-card'), lift = q('.da-lift'),
           floaty = q('.da-floaty'), flip = q('.da-flip'), front = q('.da-front'),
           aura = q('.da-aura'), burstHost = q('.da-burst');
 
-    // 版面依參數計算：卡片放大 popScale 倍、再上移 popLift，兩者都要塞進舞台。
-    // 卡片先往下擺 popLift/2，彈起後正好落在視覺中央；光暈與粒子對齊彈起後的位置。
-    const scale = Math.max(1, cfg.popScale), liftPx = Math.max(0, cfg.popLift);
-    const availW = stage.clientWidth || window.innerWidth;
-    const cardSize = Math.max(120, Math.min(200, Math.floor((availW - 48) / scale)));
-    const stageH = Math.round(cardSize * scale + liftPx + 44);
-    const restOffset = Math.round(liftPx / 2);
-    stage.style.height = stageH + 'px';
-    card.style.width = card.style.height = cardSize + 'px';
-    card.style.top = restOffset + 'px';
-    const poppedY = Math.round(stageH / 2 + restOffset - liftPx);
-    aura.style.top = poppedY + 'px'; burstHost.style.top = poppedY + 'px';
+    // 不等 Firestore（手機首抽曾因此停在靜止牌背好幾秒）：
+    // 先用「已快取的線上設定或內建預設」＋「已快取的目錄或內建樣本」立刻開跑，
+    // 首抽資料晚到就熱插拔——設定合併進 cfg（閃卡迴圈每拍都讀最新值）、封面池換成 card_catalog。
+    const cfg = { ...DRAW_ANIM_DEF, ...(drawAnimCfg || {}) };
+    let order = (drawAnimCovers || DRAW_ANIM_FALLBACK_COVERS).slice().sort(() => Math.random() - 0.5);
+    getDrawAnimCfg().then(c => { Object.assign(cfg, c); applyCfgVisuals(); }).catch(() => {});
+    getDrawAnimCovers().then(list => { if (list && list.length >= 4) order = list.slice().sort(() => Math.random() - 0.5); }).catch(() => {});
+    if (cfg.sound && daAc().resume) daAc().resume();
+
+    // 牌背顏色＋版面（依 popScale/popLift 算高度與位置）；cfg 晚到會再套一次
+    function applyCfgVisuals() {
+      const backEl = q('.da-back');
+      if (backEl && cfg.backColor) {
+        backEl.style.background = cfg.backColor;
+        const hx = String(cfg.backColor).replace('#', '');
+        const lum = 0.299*(parseInt(hx.substr(0,2),16)||0) + 0.587*(parseInt(hx.substr(2,2),16)||0) + 0.114*(parseInt(hx.substr(4,2),16)||0);
+        const brand = backEl.querySelector('.da-backbrand');
+        if (brand) brand.style.color = lum > 150 ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
+      }
+      // 卡片先往下擺 popLift/2，彈起後正好落在視覺中央；光暈與粒子對齊彈起後的位置
+      const scale = Math.max(1, cfg.popScale), liftPx = Math.max(0, cfg.popLift);
+      const availW = stage.clientWidth || window.innerWidth;
+      const cardSize = Math.max(120, Math.min(200, Math.floor((availW - 48) / scale)));
+      const stageH = Math.round(cardSize * scale + liftPx + 44);
+      const restOffset = Math.round(liftPx / 2);
+      stage.style.height = stageH + 'px';
+      card.style.width = card.style.height = cardSize + 'px';
+      card.style.top = restOffset + 'px';
+      const poppedY = Math.round(stageH / 2 + restOffset - liftPx);
+      aura.style.top = poppedY + 'px'; burstHost.style.top = poppedY + 'px';
+    }
+    applyCfgVisuals();
     const state = { ready: false, fail: false, cover: '', apex: false };
 
     const done = (async () => {
       // 閃卡：跑滿設定時長；資產未到就用收尾間隔繼續閃（上限再等 15 秒）
+      // order 用外層 let：card_catalog 封面池晚到會整組換掉，這裡每拍取當下的
       flip.style.transform = 'rotateY(180deg)';
-      const order = covers.slice().sort(() => Math.random() - 0.5);
       let t = 0, i = 0, last = null;
       while ((t < cfg.flashDuration || !state.ready) && !state.fail) {
         if (t > cfg.flashDuration + 15000) { state.fail = true; break; }
