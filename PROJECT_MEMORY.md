@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion｜275 張試聽貼入完成、十六批 gate 歸零；MBID 硬規則開人工例外
+
+**一、275 張 YT 試聽網址貼入完成，c-01～c-16 published gate 全部 0 error。**
+
+- 十六個 repaste 檔合成單一 `album_overrides-repaste-ALL.json` 一次貼完。
+  **admin.html 的批次固定試聽欄位上限是 1000 筆**（`btnBatchPreview`），275 張遠低於上限，
+  之前規劃「貼十六次」是我沒去看那段程式碼的預設值。
+- 新增 `merge-repaste.mjs`：把 admin.html 那段驗證**原封不動複製過來先跑一遍**。
+  那段是 **throw-on-first-error、一筆錯整批不寫**，先在本機驗過才不會貼到一半在瀏覽器裡爆掉。
+  275 筆全過、無重複 ovCardId。
+- ⚠ 那個欄位的 Apple 白名單只收 `itunes.apple.com`，**`music.apple.com` 會被擋**。
+
+**二、修掉 published gate 的誤殺：`checkUrl` 現在對 5xx／連線錯誤重試兩次。**
+
+c-15 Morlot《Become Ocean》與 c-16 陳其鋼《Iris dévoilée》在 gate 判 HTTP 500，
+手動連測三次是 **200/500/200**——CAA 轉址到 archive.org，那層間歇性回 500。
+原本單發一次 GET 就判定，會把封面其實存在的好卡誤殺。4xx 不重試（真的沒有，重試只是白等）。
+修完兩張都歸零。**這是繼「HEAD 過、GET 掛」之後，封面檢查的第二個同類坑。**
+
+**三、店主核定走 RUNBOOK 四之五「選項 1」：台灣／亞洲曲目改走人工身分。**
+
+`verify-album-onboarding.mjs` 新增 `checkManualIdentity()`，`identity.identitySource === 'manual'`
+可免 rgMbid。**例外開得很窄**——若只看這個旗標就放行，它會立刻變成所有身分解不出來的卡的逃生門、
+MBID 硬規則等於作廢。四項舉證缺一不可：`rgMbid` 必須留空（不得兩存）、
+`mbAbsenceProof`（≥2 組實際查詢＋ISO 日期＋查無結論）、`manualEvidenceUrls`（≥2 個 HTTPS）、
+`manualRuling`。另外 `coverSourceHint` 不得為 `caa`（CAA 以 MBID 為鍵，必是殘留值）。
+每張走這條的卡固定吐一條 warning，不會無聲通過。已用三組樣本實測擋得住。
+
+後續：c-21 那 11 張與四之六表中三張台灣卡改走這條路重跑；
+de Waart／de Leeuw／Berberian 那三張是**掛名慣例問題、不是 MB 沒建檔，不適用此例外**。
+
+主要檔案：`dip-vinyl-shop/scripts/verify-album-onboarding.mjs`、
+`classical-expansion/onboarding/merge-repaste.mjs`、`album_overrides-repaste-ALL.json`、`RUNBOOK.md`。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-14 共 26 張上架，seed 7,987；十批（c-12～c-21）走完一輪
 
 seed 7,961 →**7,987**，classical 擴充累計 **467 張上架**。

@@ -81,6 +81,53 @@ function previewUrlMatchesSource(value, source) {
   return false;
 }
 
+// 2026-08-15 店主核定（RUNBOOK 四之五「選項 1」）：MBID 硬規則的窄例外。
+//
+// 為什麼要開：台灣與華語圈古典曲目在 MusicBrainz 幾乎沒有建檔——馬水龍整個 artist
+// browse 回 count=0、江文也全庫只有一個無封面的 2021 鋼琴集、盧律銘 2019 年《返校》
+// 電影原聲帶未建檔。硬要 rgMbid 等於讓「MB 有沒有人建檔」決定卡池收不收台灣曲目，
+// 那是讓管線的技術限制決定內容。
+//
+// 為什麼要卡這麼緊：這條若只看 identitySource='manual' 就放行，它會立刻變成所有
+// 身分解不出來的卡的逃生門，MBID 硬規則等於作廢。所以走人工的代價是舉證更重：
+// 得證明 MB 真的查過而且查無，而不是「查起來很麻煩」。
+function checkManualIdentity(identity, label) {
+  // 半套最危險：留一個半信半疑的 MBID 又宣告走人工，日後沒人知道該信哪個
+  if (clean(identity.rgMbid)) {
+    err(label, 'identitySource=manual 時 identity.rgMbid 必須留空（要嘛釘得住 MBID、要嘛走人工，不得兩存）');
+  }
+
+  // 一、證明 MB 真的查過且查無
+  const proof = identity.mbAbsenceProof;
+  if (!isObj(proof)) {
+    err(label, 'identitySource=manual 必須附 identity.mbAbsenceProof（證明 MusicBrainz 查過且查無）');
+  } else {
+    const queries = Array.isArray(proof.queries) ? proof.queries.filter(q => charCount(q) >= 3) : [];
+    if (queries.length < 2) err(label, 'mbAbsenceProof.queries 至少需要兩組實際下過的 MB 查詢（含藝人與作品兩個方向）');
+    if (!validIso(proof.checkedAt)) err(label, 'mbAbsenceProof.checkedAt 必須是 ISO 日期');
+    if (charCount(proof.conclusion) < 10) err(label, 'mbAbsenceProof.conclusion 必須寫明查無的具體情況（例如 count=0、僅有無封面的 RG）');
+  }
+
+  // 二、外部識別改由多個來源交叉支撐，不得單點
+  const ev = Array.isArray(identity.manualEvidenceUrls) ? identity.manualEvidenceUrls.filter(u => isHttps(u)) : [];
+  if (ev.length < 2) {
+    err(label, 'identitySource=manual 必須提供至少兩個 HTTPS 佐證網址（唱片公司／官方發行頁／館藏目錄等）');
+  }
+
+  // 三、留下是誰、依什麼核可的
+  if (charCount(identity.manualRuling) < 10) {
+    err(label, 'identity.manualRuling 必須留下核可依據（誰核定、依哪一條）');
+  }
+
+  // CAA 是用 release-group MBID 當鍵的，MBID 留空還標 caa 必然是抄來的殘留值
+  if (clean(identity.coverSourceHint) === 'caa') {
+    err(label, 'identitySource=manual 不可能有 CAA 封面（CAA 以 release-group MBID 為鍵）');
+  }
+
+  // 走這條的每一張都要在驗證輸出裡看得見，不能無聲通過
+  warn(label, 'identitySource=manual：本卡未釘 MusicBrainz release-group，外部識別依賴人工佐證');
+}
+
 function validIso(value) {
   return typeof value === 'string' && !Number.isNaN(Date.parse(value));
 }
@@ -124,11 +171,22 @@ async function getJson(url, label, { allow404 = false } = {}) {
   }
 }
 
-async function checkUrl(url, label) {
-  try {
-    const response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(25000) });
-    if (response.status < 200 || response.status >= 400) err(label, `實際 HTTP ${response.status}`);
-  } catch (error) { err(label, `網址讀取失敗：${error.message}`); }
+// 5xx 與連線錯誤一律重試：Cover Art Archive 會轉址到 archive.org，那層間歇回 500，
+// 同一個網址連三次可以拿到 200/500/200。單發一次就判定會把好卡誤殺
+// （c-15 Morlot 與 c-16 陳其鋼就是這樣被擋下的，兩張封面其實都在）。
+// 4xx 不重試——那是真的沒有，重試只是白等。
+async function checkUrl(url, label, retries = 2) {
+  let last = '';
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(25000) });
+      if (response.status >= 200 && response.status < 400) return;
+      last = `實際 HTTP ${response.status}`;
+      if (response.status < 500) break;
+    } catch (error) { last = `網址讀取失敗：${error.message}`; }
+    if (attempt < retries) await new Promise(r => setTimeout(r, 1200 * (attempt + 1)));
+  }
+  err(label, last);
 }
 
 if (manifest?.schemaVersion !== 1) err('manifest', 'schemaVersion 必須是 1');
@@ -180,7 +238,9 @@ for (let index = 0; index < albums.length; index++) {
     // 外部識別（2026-07-24 起）：MBID 必填（error）、UPC 盡力而為（warning）。
     // MBID 是 release-group 穩定主鍵；UPC 是 release 層級，同碟多版本常查無，故只警告不擋。
     if (mbidRuleApplies) {
-      if (!MBID_RE.test(clean(identity.rgMbid) || '')) {
+      const manual = clean(identity.identitySource) === 'manual';
+      if (manual) checkManualIdentity(identity, label);
+      else if (!MBID_RE.test(clean(identity.rgMbid) || '')) {
         err(label, 'identity.rgMbid 必須是有效的 MusicBrainz release-group MBID（外部識別不得單點依賴 Apple collectionId）');
       }
       if (!UPC_RE.test(clean(identity.upc) || '')) {
