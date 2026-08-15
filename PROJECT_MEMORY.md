@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-home（根目錄，非 repo）｜「直接來一張」抽卡動畫模擬頁
+
+- 新增 `dip-vinyl-home/抽卡模擬-測試品.html`：獨立的抽卡效果調校頁，流程為
+  快速閃過封面（減速曲線＋抖動＋殘影＋動態模糊）→ 急停蓋回神秘牌背（slam）→
+  牌往螢幕彈起（彈性 overshoot＋光暈＋懸浮漂移）→ 翻牌揭曉（粒子＋合成音效，
+  APEX 走金色光暈＋殿堂流光邊框）。全部參數都有滑桿即時調，附三組 preset
+  （標準／快狠準／吊足胃口）與「複製參數 JSON」，之後整合進正式站直接貼參數。
+- 封面素材：從 apex_pool 抽樣 48 張，經 worker `/spotify-search` 抓 imageUrl 內嵌
+  （worker CORS 只開 dipvinyl.tw，本機頁面不能直接 fetch，所以先抓好寫死）。
+- 新增 `.claude/home-static-server.mjs`＋launch.json 加 `home-static`（port 8902）：
+  原 `static` 只服務 dip-vinyl-shop，根目錄的測試品頁面要用這個新入口預覽。
+- 驗證：瀏覽器內 300ms 取樣時間軸確認各階段狀態轉換與揭曉專輯正確；
+  console 無錯誤。⚠ javascript_tool 的 `.click()` 會在隔離 world 重放一次、
+  約 3.5 秒後多觸發一輪抽卡——是工具特性，人手點擊不會。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion｜275 張試聽貼入完成、十六批 gate 歸零；MBID 硬規則開人工例外
 
 **一、275 張 YT 試聽網址貼入完成，c-01～c-16 published gate 全部 0 error。**
