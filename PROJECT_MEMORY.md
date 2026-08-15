@@ -1,5 +1,97 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-09 共 37 張上架，seed 7,780；身分自動裁定器上線
+
+seed 7,743 →**7,780**，classical 擴充累計 **260 張上架**。這是第一批走完新裁定器的批次。
+
+- **身分自動裁定器**（`p1p-adjudicate.mjs` 從既有候選裁定、`p1q-search.mjs` 候選為空時直接查 MB）：
+  判定條件是「作品 token ＋作曲家掛名＋演奏者掛名＋CAA 封面」四者全中且唯一。
+  另兩條加分規則：**卡名括號裡的指揮必須出現在掛名**（Ferras 因此正確選到 1964 Karajan 版而非 1954 版）、
+  **多個候選若編號與作曲家全同就視為同一演出的不同耦合、取最早發行**。
+  c-09 之後的未解身分由 248 降到 110；c-09 與 c-10 都已補到 100%。
+- **⚠ 裁定器開發時踩到四個坑，每個都會造成錯配**（都已修並寫進註解）：
+  1. 抽數字要用 `fold()` 不能用 `canon()`——canon 把「no. 8」壓成「no8」，數字前後沒有 word boundary，
+     結果變成「卡片無編號」而全部放行（Solti 第 8 號一度配到第 9 號）。
+  2. 區間寫法（Symphonies 4-7）要展開成完整集合且**每個編號都要命中**，否則會配到「nos. 4 & 6」。
+  3. 短標題（La Mer、Iberia）沒有 ≥4 字元的詞，token 集合會變空而必定不通過，要降級到 ≥2。
+  4. 體裁詞要含各語言的**複數與變格字尾**（Symphonien、Konzerte）——Karajan 的 Sibelius 4-7 因此漏掉。
+  另外**演奏者比對要走 MBID 不要走字串**：MB 上大量掛名寫成西里爾或漢字，字串比對必然失敗。
+- **⚠ 我自己的改釘腳本誤傷了另一張卡**：`p1u-apply-c09.mjs` 的比對條件只寫「bernstein ＋ symphony no. 5」，
+  把 Bernstein 的《Shostakovich: Symphony no. 5》（在 c-12）也改成了 Mahler 的 rgMbid，已還原。
+  **批次改釘的比對條件必須含作曲家或完整專輯名，藝人＋編號不夠窄。**
+- **試聽第三種錯配來源：套裝附的解說碟**。Solti《Der Ring des Nibelungen》被配到
+  「– Explorations」（Decca 隨套裝附的 Deryck Cooke 解說碟），**演奏者 token 與作品 token 全部命中**，
+  兩道關卡都擋不下來。人工重配要加排除詞（exploration／introduction／documentary／the making／golden ring）。
+  YT 上沒有整套《指環》，最終取同一份錄音的選段輯代表並在 note 寫明。
+- **三張改釘／補件**：Bernstein《Mahler 5 (VPO)》原釘 NYP 1963 版，改釘 DG 的維也納愛樂版
+  （1987 法蘭克福現場、1988 首發）並整份重做研究；Reiner《Also sprach Zarathustra》的 composer 欄是 null，
+  補為 R. Strauss；Böhm《Berg: Wozzeck》原 RG 無封面，改釘《Lulu / Wozzeck》合輯（c-10）。
+- **兩個被推翻的卡單 hook**：Reiner《Zarathustra》的「《2001 太空漫遊》開場」其實用的是 Karajan 1959 Decca 版；
+  Kubelík《Má vlast》的「流亡多年後回布拉格」是 1990 年與捷克愛樂的另一份錄音，本卡是 1958 維也納愛樂版。
+  兩者都在 hook 階段換掉。
+- **研究層三個代理的收尾訊息撞到內容過濾而失敗，但檔案都完整寫出**（37/37、key 全對、
+  `yearVerified` 無缺漏）。損失的只有它們的疑點回報，主線改用腳本掃 researchNotes 補回。
+- **試聽**：apple 17／yt 20／unavailable 0。**Gate**：prepare 0 error；published 20 error＝待貼 YT 張數。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-09.json`，累計 **172 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+37）、`data/apple-audio-map-v1.json`（entries 7,606／runtime 6,807）、
+  `classical-expansion/onboarding/`（p1p/p1q/p1s/p1u/p1v/p2l/p2k、manifest-c-09、repaste-c-09、
+  RUNBOOK.md）、`desc-restyle/batches/`（add-20260815-c09 全套）。
+
+### 2026-08-15｜mood-quiz（工作區資料夾，無 git）｜心情選歌離線化：三格句庫產線建成，回聲＋巴納姆已完工
+
+心情選歌要脫離線上即時 API（流量高峰會當機）。改成**預先寫好句庫、執行期純查表**。
+
+## 架構：一則結果三句，三格獨立輪替
+
+店主的硬要求是**按「換一張」時三句全部要換**，不能只換專輯。
+
+| 格 | 綁定 | 每個 N 句 | 總量 | 模型 | 狀態 |
+|---|---|---|---|---|---|
+| 回聲句 | 選項（400 個） | 5 | 2,000 | **Sonnet** | ✅ 完成 |
+| 巴納姆句 | 心情原型（11 個） | 12（balance 15） | 135 | 手寫 | ✅ 完成 |
+| 見證句 | 專輯（6,768 張有 desc2） | 2 | 13,536 | Haiku | 360 張，續跑中 |
+
+見證句只要 2 句／張，因為按「換一張」時專輯本來就換了，`seenAlbums` 保證同輪不重複，
+所以這格永遠不會跟自己撞——原本以為最貴的一格，這樣算下來省掉六成。
+
+## 最重要的發現：機器 QA 測得出違規，測不出好壞
+
+回聲句用同一份規格書、同樣 20 個選項跑 Haiku vs Sonnet：
+**機器分數幾乎一樣**（16 處 vs 13 處），但人眼看差距極大。
+Haiku 寫「門檻成了一道無形的分界線」（文青腔）、「你大部分的日子都在躲避」（指責玩家）；
+Sonnet 寫「朋友約你，你會答應，但心裡希望對方臨時取消」。
+**只看分數就會選錯模型**，做出一個句句合規但戳不中人的心理測驗。
+
+見證句反過來——Haiku 沒輸。因為見證句是改寫 desc2 既有事實，回聲句是無中生有。
+Sonnet 唯一優勢是會補正確外部事實，但那同時是編造風險，且 Sonnet 100% 把中英文黏在一起
+（「The Rolling Stones在《Some Girls》裡」），Haiku 100% 有留空格。
+
+## 規格訂錯方向，產出就朝錯的方向優化
+
+見證句字數下限我先訂「扣掉專有名詞後 30 字」，代理立刻用形容詞湊字數，
+產出比違規版更難看（「編制精簡有節制，每道樂器聲響都凝聚而清晰，呈現出典型乾淨質感」）。
+下修到 16 字並明寫「寧可短不要拖」才回到正軌。同理，字數把專輯名算進去，
+會逼代理去截短官方專輯名。
+
+## 檔案
+
+`mood-quiz/`（與卡池分離，店主要求）
+- `banks/echo.json` 400 選項 2,000 句、`banks/barnum.json` 135 句、`banks/witness.json` 360 張 720 句
+- `banks/echo-spec.md`、`banks/witness-spec.md` — 改文風只改這兩支
+- `bank-qa.mjs`、`witness-qa.mjs` — 機器 QA：簡體字、照抄選項、人稱漂移、評價玩家、
+  五句自我重複、兩句共用細節、中英空格、「專輪」錯字
+- `build-echo-batch.mjs`、`build-witness-batch.mjs`、`build-repair-batch.mjs`、`merge-banks.mjs`
+- `assemble.mjs` — 執行期組裝器（localStorage 輪替），待移植進 index.html
+
+## 驗證
+
+回聲句 2,000 句**跨選項零撞句**，違規率 4.8%（Haiku 前兩輪是 29.6% / 13.6%）。
+巴納姆 135 句零違規零重複。見證句第一波 320 句中，片 4 和片 8 各有 40/80 句
+漏專有名詞（整片走偏，其餘六片為零），已納入修補批。
+
+**index.html 尚未修改**，線上功能仍走原本的 `/claude` API。
+
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-08 共 36 張上架，seed 7,743；試聽再補「年份衝突」第三道關卡
 
 seed 7,707 →**7,743**，classical 擴充累計 **223 張上架**。
@@ -5231,6 +5323,7 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+
 
 ### 2026-08-15｜dip-vinyl-home（.claude/skills，無 git）｜dip-deep-dig 產出 Cowork 可攜版，修掉三處環境依賴
 
