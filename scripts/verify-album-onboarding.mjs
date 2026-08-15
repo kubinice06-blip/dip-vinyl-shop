@@ -346,7 +346,8 @@ if (publishedMode && errors.length === 0) {
     if (descResult.data) {
       if (descResult.data.desc !== row.description.text) err(label, '/album-desc 文字與 manifest 不一致');
       const cache = descResult.response?.headers.get('x-cache') || '';
-      if (!['KV-HIT', 'CURATED'].includes(cache)) err(label, `/album-desc X-Cache=${cache || '(空)'}，仍可能是現場生成`);
+      // KV-HIT-RESTYLED：CJK 卡的 desc2 產線稿命中（worker 對 CJK 名先讀 desc2 的分支），與 KV-HIT 等價
+      if (!['KV-HIT', 'KV-HIT-RESTYLED', 'CURATED'].includes(cache)) err(label, `/album-desc X-Cache=${cache || '(空)'}，仍可能是現場生成`);
     }
 
     await checkUrl(row.cover.url, `${label} coverUrl`);

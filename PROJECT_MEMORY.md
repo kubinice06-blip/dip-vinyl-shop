@@ -1,5 +1,40 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-01 首批 27 張完整上架，古典管線全流程打通
+
+古典擴充試跑批 c-01（巴哈／巴洛克 27 張）走完 dip-card-create 全流程並上線，
+是**作曲家第 8 欄與錨點制人工三軸（0.7 節）的首次實戰**。seed 7,484 → **7,511**。
+
+- **身分**：上架前抓出兩張錯釘——Marriner《布蘭登堡》原釘 EMI「Nos. 1-4」分冊
+  → 改釘 Philips Duo 全集合輯（642d4066，簡介描述的 1980/81 Szeryng/Holliger 版）；
+  鈴木雅明《Cantatas (BIS)》原釘 El País 西班牙授權盤 → 改釘 BIS 正盤 Vol.1（f38bb3a4）。
+  Il Giardino Armonico 卡名精確化《Vivaldi: Concerti》→《Vivaldi: Concerti per flauto》
+  （研究確認實體是 2020 Alpha 長笛協奏曲集，原名會被誤讀成四季；12 個工作檔同步改）。
+- **年份**：MB first-release-date 多為再版年（Landowska 1992、Walcha 2003），
+  27 張全部依研究查證改用錄音／首發年，理由記在 manifest.identity.yearNote。
+- **試聽**（27/27 有結論）：apple 11（UPC→/lookup 直連 .m4a，寫入 apple-audio-map，
+  runtime 6689→6700）；youtube 15（OLAK 歌單逐張用頁面 token 驗演奏者＋同曲異版
+  獨唱者驗證：抓到 Gardiner 晚禱歌單其實是 1974 Decca 舊版、水上音樂疑 1971 Argo 版
+  → 都改走 apple；5 張用瀏覽器搜 YT Music 人工補齊）；unavailable 1（Milstein 1975 DG
+  無單張數位版）。**教訓：OLAK 自動歌單標題不含演奏者，必驗頁面 token，用獨唱者名單釘年代版本**。
+- **來源網址**：研究 c–e 組省流量模式只留來源描述沒留網址 → 補救規則：
+  既有 https ∪ MB release-group 頁 ∪ 驗證 200 的 Wikipedia 演奏者頁，每卡 ≥2。
+  **後續批次研究組要求 src 一律留完整網址**。
+- **寫入**：KV desc2 27 筆（bulk put＋verify-kv 27/27 一致；本機 wrangler 3.x 無
+  `--remote` 旗標，預設就是 remote）；card_catalog PATCH 27/27（含 rgMbid/upc）；
+  seed 追加 27 列**含第 8 欄作曲家**（J.S. Bach／Handel／Monteverdi／Vivaldi）。
+- **Gate**：prepare 0 error；published 15 error 全部是「YT 卡等 album_overrides」
+  （見待辦）。修 gate 一處：CJK 卡 desc2 命中回 `KV-HIT-RESTYLED`，加入接受清單。
+- **⚠ 店主待辦**：後台批次工具貼入
+  `classical-expansion/onboarding/album_overrides-repaste-c-01.json`（15 張 YT 試聽），
+  完成後重跑 published gate 應 0 error。
+- 主要檔案：`seed_cards.json`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+  `card-preview-status.js`（Milstein unavailable）、`scripts/verify-album-onboarding.mjs`、
+  `classical-expansion/onboarding/`（manifest-c-01、p5/p6 工具鏈、repaste 檔）。
+- 管線範本（c-02 起沿用）：p5 試聽驗證（apple lookup＋YT oEmbed）→ p5b token 驗版
+  → p5c UPC 補救（MB `release?release-group=` 端點，`release-group?inc=labels` 會 400）
+  → p6 組裝 → prepare gate → KV/card_catalog/seed → published gate。
+
 ### 2026-08-14｜desc-restyle（無 git）｜r-11..r-23 上線 491 張，wave3 重塑產線走完
 
 接力模式一路跑完剩下的十三批。**重切後的 r-01..r-23 共 23 批全部上線**，wave3 至此結束。

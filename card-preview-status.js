@@ -270,5 +270,6 @@ window.DipPreviewStatus = Object.freeze({
   "植松孝夫クァルテット|debut": "disabled",
   "川崎燎|prism": "unavailable",
   "渡辺香津美|dogatana": "unavailable",
-  "山下洋輔トリオ|chiasma": "unavailable"
+  "山下洋輔トリオ|chiasma": "unavailable",
+  "nathan milstein|bach: sonatas & partitas for solo violin": "unavailable"
 });
