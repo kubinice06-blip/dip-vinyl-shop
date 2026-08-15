@@ -647,16 +647,18 @@
     .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
       border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
     .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
-    /* 背景色與多層漸層要分開寫：background 簡寫裡 <color> 只允許出現在最後一層，
-       寫在第一層會讓整條宣告失效（牌背會變成白底）。 */
-    .da-face.da-back { background-color:#141414;
-      background-image:radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
-      repeating-radial-gradient(circle at 50% 50%, #1d1d1d 0 2px, #141414 2px 4px);
-      display:flex; align-items:center; justify-content:center; }
+    /* 牌背：素色，顏色由 backColor 參數控制（預設白；2026-08-15 移除黑膠溝槽） */
+    .da-face.da-back { background:#fff; display:flex; align-items:center; justify-content:center; }
     .da-backlabel { width:64px; height:64px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
       display:flex; align-items:center; justify-content:center; color:#141414; font-weight:700; font-size:22px; font-family:var(--mono); }
-    .da-backbrand { position:absolute; bottom:8px; left:0; right:0; text-align:center; color:#555;
+    .da-backbrand { position:absolute; bottom:8px; left:0; right:0; text-align:center; color:rgba(0,0,0,0.45);
       font-size:8px; letter-spacing:0.3em; text-transform:uppercase; font-family:var(--mono); }
+    /* 揭曉 → 結果頁無縫接軌：fixed clone 從彈起位置飛進結果頁封面框，蓋住版面切換的跳動 */
+    .da-handoff-clone { position:fixed; z-index:9999; background-size:cover; background-position:center;
+      border:1px solid var(--black); box-shadow:0 10px 28px rgba(0,0,0,0.18); pointer-events:none; }
+    @keyframes daFadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+    .quiz-result.da-fadein > *:not(.quiz-result-cover):not(.quiz-result-cover-link) {
+      animation:daFadeUp .45s ease both; animation-delay:.18s; }
     .da-card.slam .da-flip { animation:daSlamKf .28s ease-out; }
     .da-ghost { position:absolute; inset:0; background-size:cover; background-position:center;
       border:1px solid var(--line); pointer-events:none; opacity:0.35; transition:opacity .16s linear, transform .16s linear; }
@@ -4297,7 +4299,8 @@ ${seenList}
   const DRAW_ANIM_DEF = {
     flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
     pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
-    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true
+    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
+    handoffDelay:650, handoffDuration:450, backColor:'#ffffff'
   };
   let drawAnimCfg = null;
   async function getDrawAnimCfg() {
@@ -4385,6 +4388,15 @@ ${seenList}
     const [cfg, covers] = await Promise.all([getDrawAnimCfg(), getDrawAnimCovers()]);
     if (cfg.enabled === false) return null;   // 後台停用 → 呼叫端會補回 spinner
     if (cfg.sound && daAc().resume) daAc().resume();
+    // 牌背顏色（後台可調）＋品牌字自動對比
+    const backEl = host.querySelector('.da-back');
+    if (backEl && cfg.backColor) {
+      backEl.style.background = cfg.backColor;
+      const hx = String(cfg.backColor).replace('#', '');
+      const lum = 0.299*(parseInt(hx.substr(0,2),16)||0) + 0.587*(parseInt(hx.substr(2,2),16)||0) + 0.114*(parseInt(hx.substr(4,2),16)||0);
+      const brand = backEl.querySelector('.da-backbrand');
+      if (brand) brand.style.color = lum > 150 ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
+    }
     const q = s => host.querySelector(s);
     const stage = q('.da-stage'), card = q('.da-card'), lift = q('.da-lift'),
           floaty = q('.da-floaty'), flip = q('.da-flip'), front = q('.da-front'),
@@ -4470,10 +4482,43 @@ ${seenList}
       }
       daSnd('fanfare', cfg, state.apex);
       if (state.apex) card.classList.add('ace-border');
-      await daSleep(cfg.flipDuration * 0.45 + 500);   // 讓揭曉停留一拍再進結果頁
+      await daSleep(cfg.flipDuration * 0.45 + Math.max(0, cfg.handoffDelay));   // 揭曉停留一拍
+      // 建 fixed clone 停在卡片目前的視覺位置：done resolve 後呼叫端渲染結果頁（舞台被拆掉），
+      // clone 蓋住這段版面切換，daFinishHandoff 再讓它飛進結果頁封面框
+      if (stage.isConnected && state.cover) {
+        const ra = front.getBoundingClientRect();
+        const cl = document.createElement('div'); cl.className = 'da-handoff-clone';
+        cl.style.backgroundImage = `url(${state.cover})`;
+        Object.assign(cl.style, { left: ra.left+'px', top: ra.top+'px', width: ra.width+'px', height: ra.height+'px' });
+        document.body.appendChild(cl);
+        daPendingClone = cl;
+      }
     })();
     return { state, done };
   }
+
+  // 結果頁渲染完成後呼叫：把揭曉留下的 clone 飛進 .quiz-result-cover，文字淡入
+  let daPendingClone = null;
+  async function daFinishHandoff() {
+    const cl = daPendingClone; daPendingClone = null;
+    if (!cl) return;
+    const cfg = drawAnimCfg || DRAW_ANIM_DEF;
+    const img = document.querySelector('#genreContent .quiz-result-cover');
+    const wrap = document.querySelector('#genreContent .quiz-result');
+    if (!img) { cl.remove(); return; }
+    if (wrap) wrap.classList.add('da-fadein');
+    img.style.visibility = 'hidden';
+    const rb = img.getBoundingClientRect();
+    const ease = 'cubic-bezier(.25,.8,.3,1)', d = cfg.handoffDuration;
+    cl.style.transition = `left ${d}ms ${ease}, top ${d}ms ${ease}, width ${d}ms ${ease}, height ${d}ms ${ease}`;
+    requestAnimationFrame(() => {
+      Object.assign(cl.style, { left: rb.left+'px', top: rb.top+'px', width: rb.width+'px', height: rb.height+'px' });
+    });
+    await daSleep(d + 40);
+    img.style.visibility = '';
+    cl.remove();
+  }
+  function daCancelHandoff() { if (daPendingClone) { daPendingClone.remove(); daPendingClone = null; } }
 
   async function submitGenrePick() {
     gpStopPreview();
@@ -4498,6 +4543,7 @@ ${seenList}
         await gpAnim.done;
       }
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
+      daFinishHandoff();
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.name || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -4564,6 +4610,7 @@ ${seenList}
         _streaming: true,
         _hall: isApex && classicMode, _pearl: isApex && obscureMode, _heresy: isApex && heresyMode,
       });
+      daFinishHandoff();
       const reason = await fillGpDesc(pick, assets.ov);
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -4573,6 +4620,7 @@ ${seenList}
       return;
     } catch (e) {
       if (gpAnim) gpAnim.state.fail = true;   // 錯誤頁蓋掉舞台後，閃卡迴圈會因 isConnected=false 靜默收工
+      daCancelHandoff();
       document.getElementById('genreContent').innerHTML =
         `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">再試一次</button></div>`;
       return;

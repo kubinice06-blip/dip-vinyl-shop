@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋dip-vinyl-home｜抽卡動畫：白色牌背可改色＋揭曉→結果頁無縫接軌
+
+店主看過模擬頁預覽核可後上線。三項改動（index／admin／模擬頁三處同步）：
+
+- **牌背移除黑膠溝槽改素色**，新增 `backColor` 參數（預設 `#ffffff`）進後台調校面板
+  （input type=color，改色即時預覽）；品牌字顏色依亮度自動對比（>150 深字、否則淺字）。
+  ⚠ 後台/模擬頁的參數綁定原本對非 checkbox/select 一律 `parseFloat`，
+  **color input 的 hex 會被 parse 成 NaN**，兩處都補了 `el.type==='color'` 走字串。
+- **揭曉→結果頁接軌（FLIP）**：店主回報揭曉卡（~290px）硬切到結果頁滿寬封面（~335px）
+  會「變大一跳」。改成：揭曉停留 `handoffDelay`(650) 後建 **fixed clone** 停在卡片視覺位置
+  → done resolve、`showGpResult` 照常渲染（舞台被拆掉，這段跳動全被 clone 蓋住）
+  → `daFinishHandoff()` 把 `.quiz-result-cover` 暫時 `visibility:hidden`、量目標框、
+  clone 以 `handoffDuration`(450) 飛過去、結束換回真圖；`.quiz-result.da-fadein` 讓
+  封面以外的子元素延遲 0.18s 淡入。catch 路徑呼叫 `daCancelHandoff()` 清 clone。
+- 驗證（本機取樣狀態機）：前台 `S→CRFH→RFV`（舞台→clone飛行＋結果頁就位＋真圖暫隱→
+  收尾）；模擬頁 `S→MC→MCT→MVT`；後台 21 列參數、色票改 #222 品牌字自動轉淺。
+  動畫過程照舊受「面板未顯示不合成」限制，只驗狀態轉換與最終幾何。
+
 ### 2026-08-15｜dip-vinyl-shop＋dip-vinyl-home｜抽卡動畫兩個上線 bug：牌背變白底、彈起被切頭
 
 店主手機實拍回報：抽到時「空白專輯往上移動然後切到上面」，且牌背是白底不是黑膠。

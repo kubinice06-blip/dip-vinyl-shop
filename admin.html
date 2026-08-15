@@ -270,11 +270,8 @@
     .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
       border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
     .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
-    /* 背景色與多層漸層要分開寫：background 簡寫裡 <color> 只允許出現在最後一層 */
-    .da-face.da-back { background-color:#141414;
-      background-image:radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
-      repeating-radial-gradient(circle at 50% 50%, #1d1d1d 0 2px, #141414 2px 4px);
-      display:flex; align-items:center; justify-content:center; }
+    /* 牌背：素色，顏色由 backColor 參數控制（預設白；2026-08-15 移除黑膠溝槽） */
+    .da-face.da-back { background:#fff; display:flex; align-items:center; justify-content:center; }
     .da-backlabel { width:62px; height:62px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
       display:flex; align-items:center; justify-content:center; color:#141414; font-weight:700; font-size:22px; }
     .da-backbrand { position:absolute; bottom:8px; left:0; right:0; text-align:center; color:#555;
@@ -3888,7 +3885,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
   const DEF_DRAW = {   // 店主 2026-08-15 調校版；與 index.html 的 DRAW_ANIM_DEF 同步
     flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
     pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
-    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true
+    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
+    handoffDelay:650, handoffDuration:450, backColor:'#ffffff'
   };
   const DA_SCHEMA = [
     {k:'flashDuration', l:'閃卡總時長 ms',    min:400, max:5000, step:100},
@@ -3908,6 +3906,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
     {k:'autoDelay',     l:'自動揭曉延遲 ms',  min:200, max:2500, step:100},
     {k:'flipDuration',  l:'翻牌時長 ms',      min:300, max:1500, step:50},
     {k:'burstCount',    l:'揭曉粒子數',       min:0,   max:60,   step:2},
+    {k:'handoffDelay',  l:'揭曉停留 ms',      min:0,   max:2000, step:50},
+    {k:'handoffDuration',l:'接軌時長 ms',     min:200, max:1200, step:50},
+    {k:'backColor',     l:'牌背顏色',         type:'color'},
     {k:'sound',         l:'音效',            type:'check'},
   ];
   let daP = {...DEF_DRAW};
@@ -3919,6 +3920,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       let input;
       if(s.type==='check') input=`<input type="checkbox" data-dak="${s.k}" ${v?'checked':''}>`;
       else if(s.type==='select') input=`<select data-dak="${s.k}">${s.opts.map(([ov,ol])=>`<option value="${ov}" ${ov===v?'selected':''}>${ol}</option>`).join('')}</select>`;
+      else if(s.type==='color') input=`<input type="color" data-dak="${s.k}" value="${v}">`;
       else input=`<input type="range" data-dak="${s.k}" min="${s.min}" max="${s.max}" step="${s.step}" value="${v}">`;
       const val = (typeof v==='boolean') ? (v?'開':'關') : (s.type==='select'?'':v);
       return `<div class="da-row"><label>${s.l}</label>${input}<span class="da-val">${val}</span></div>`;
@@ -3926,10 +3928,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
     wrap.querySelectorAll('[data-dak]').forEach(el=>{
       el.addEventListener('input', ()=>{
         const k=el.dataset.dak;
-        daP[k] = el.type==='checkbox' ? el.checked : (el.tagName==='SELECT' ? el.value : parseFloat(el.value));
+        daP[k] = el.type==='checkbox' ? el.checked : ((el.tagName==='SELECT' || el.type==='color') ? el.value : parseFloat(el.value));
         const vs=el.closest('.da-row').querySelector('.da-val');
         if(vs) vs.textContent = (typeof daP[k]==='boolean') ? (daP[k]?'開':'關') : (el.tagName==='SELECT'?'':daP[k]);
         if(k==='popScale' || k==='popLift') daLayout();   // 拉的當下就看到新版面
+        if(k==='backColor') daApplyBackColor();           // 改色即時預覽
       });
     });
   }
@@ -4007,8 +4010,18 @@ ${discogs ? '- Discogs：' + discogs : ''}
     aura.style.top=poppedY+'px'; burst.style.top=poppedY+'px';
   }
 
+  // 牌背顏色＋品牌字自動對比（亮底深字、暗底淺字）
+  function daApplyBackColor(){
+    const back=document.querySelector('#sub-draw .da-back'); if(!back) return;
+    const hex=String(daP.backColor||'#ffffff').replace('#','');
+    const lum=0.299*(parseInt(hex.substr(0,2),16)||0)+0.587*(parseInt(hex.substr(2,2),16)||0)+0.114*(parseInt(hex.substr(4,2),16)||0);
+    back.style.background=daP.backColor;
+    const brand=back.querySelector('.da-backbrand');
+    if(brand) brand.style.color=lum>150?'rgba(0,0,0,0.45)':'rgba(255,255,255,0.45)';
+  }
+
   function daResetStage(){
-    daLayout();
+    daLayout(); daApplyBackColor();
     const card=document.getElementById('daCard'), flip=document.getElementById('daFlip'),
           lift=document.getElementById('daLift'), fl=document.getElementById('daFloaty');
     card.classList.remove('slam','ace-border'); card.style.cursor='default';
@@ -4122,7 +4135,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       daP = s.exists()? {...DEF_DRAW, ...s.data()} : {...DEF_DRAW};
       if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
     catch(e){ daP={...DEF_DRAW}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
-    renderDrawForm(); daLayout(); daLoadCovers();
+    renderDrawForm(); daLayout(); daApplyBackColor(); daLoadCovers();
   }
   document.getElementById('daCard')?.addEventListener('click',()=>{ if(daAwaitClick) daReveal(); });
   document.getElementById('daDraw')?.addEventListener('click',()=>daDrawRun(false));
