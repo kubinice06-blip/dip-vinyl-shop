@@ -1,5 +1,68 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop｜#random「直接來一張」接上抽卡動畫；店主調校版參數定為內建預設
+
+- index.html `submitGenrePick`：gpIsRandom 時抽卡動畫取代「挖掘中…」spinner。
+  舞台先上（牌背待機）、gameConfig/drawAnimation 與 card_catalog 封面池（limit 60）
+  **並行抓**——首抽曾實測卡 5 秒舊畫面才進動畫，就是先 await 設定再 await 封面的順序害的。
+- 抽卡與封面解析照舊在背景跑；資產晚到閃卡就用收尾間隔**多閃幾拍掩蓋延遲**（上限 15 秒），
+  state.ready 才急停→彈起→翻牌，翻完停半拍進標準結果頁。三條路徑接法：
+  卡池→assets.coverUrl（apex 帶金光暈＋流光邊框）；店內在售→商品首圖；
+  **IG reel 無封面可翻，state.fail 跳過動畫**；出錯／使用者關 modal → `stage.isConnected`
+  判斷靜默中止。前台一律自動揭曉（revealMode click 需互動，不進前台流程）。
+- **店主 2026-08-15 調校版參數（flash 1600/45→250/pow2、jitter 8、blur 3.5、
+  pause 150、pop 400、autoDelay 450、flip 500、burst 50）直接寫成內建預設**，
+  三處同步：index `DRAW_ANIM_DEF`、admin `DEF_DRAW`、模擬頁 DEFAULTS——
+  不存 Firestore doc 也長這樣；後台另存的值照舊覆寫。cfg 支援 `enabled:false` 總開關（後台尚無 UI）。
+- 驗證：本機時間軸取樣 0.36s 舞台→2.1s 急停→2.5s 彈起→3.2s 翻牌→4.2s 結果頁，
+  與參數吻合；console 僅既知 worker CORS（只開 dipvinyl.tw，本機被擋是預期）。
+- ⚠ 動畫讓結果頁晚 ~4 秒渲染，warmAlbum 照舊在挑中當下就先暖——若手機自動播放
+  出現「看似在播沒聲音」，先懷疑這段加長的手勢空窗（submitGenrePick 內原有註解的坑）。
+
+### 2026-08-15｜mood-quiz（無 git）｜生產名單改版＋見證收尾句 800 張產出（p1 500／p2 頂點卡 300）
+
+**根本發現：`apex_pool.json`（633 張頂點卡）與 `seed_cards.json`（7849 張）零重疊，是兩個獨立池子。**
+心情選歌的 `build-demo.mjs` 只讀 seed，所以 Abbey Road、Pet Sounds、Highway 61 Revisited
+整個殿堂從來沒進過這個功能——店主說「抽出來太普通不好玩」的真正原因在這裡，不是文案問題。
+
+- 新增 `build-roster.mjs` → `banks/roster.json`：生產名單。優先序 A 頂點卡 619（hall／pearl／
+  heresy 按比例交錯，熟悉↔驚喜在名單層級就達成）→ B seed 的 legendary＋classic5 150 →
+  C classic4 1710；classic<=3 的 3948 張雜牌存 deferred 不排入（店主 2026-08-15 裁定）。
+  交錯用分數階位法（桶內第 i 筆給鍵 (i+0.5)/n 再混排），任何前綴都保持原比例。
+- 新增 `build-witness-run.mjs`：照名單切批次，id 帶 rank，續跑不撞號不漏。
+- `build-demo.mjs` 改為合併 apex＋seed 兩個池子建卡片清單。
+- 產出：p1 500 張（seed 經典4–5）、p2 300 張（頂點卡 rank 1–300）。三批 QA 全部 0 違規，
+  測試品可抽卡 960 → 1760 張（hall 200／heresy 53／pearl 47／一般 1460）。
+
+**QA 修了七處，其中三處是誤報、兩處是漏檢、兩處是合併順序錯誤：**
+- 誤報：彎引號（卡池用 `’`，寫手打 `'`）、官方專輯名本身是簡體（崔健《新长征路上的摇滚》）、
+  「天后」是正確繁體。第三個真的害修補代理把好句子改壞，所以修補派工新增一條
+  **「允許代理反駁 QA」**——QA 誤報會透過修補流程直接變成品質損失。
+- 漏檢：**收尾句從來沒跑過禁用詞與中英空格檢查**，已上線 960 張裡因此藏了 29 句帶
+  彷彿／正是／色彩繽紛／層次豐富的文案，正是店主退回五次的那種調子。規格寫得再嚴，
+  沒有檢查就不會執行。
+- 合併順序：cregen 排在修補之後會把剛修好的收尾句蓋回舊版（修補等於白做）；
+  `build-witness-repair.mjs` 建現況時用「有 lines 才收」的條件，會整列跳過只有 closers 的
+  cregen 檔，代理拿不到現行收尾句只好重寫。兩處都已改成逐欄合併＋修補最後套用。
+- 「兩句重複細節」調了三次才對：二字組會重疊，「藍調搖滾」一個詞就吐出三個組剛好踩滿門檻。
+  定案是剔除分類詞（曲風名、首張專輯）後，共用一個 4 字以上實質詞組或共用 3 處以上。
+  實測全池唯一的 4 字以上共用詞組**全部**是曲風名。
+- 87 句中英空格用確定性腳本批次修正，機械格式錯不叫代理重寫。
+
+**待辦（未動，需店主決定）**：desc2 有事實錯誤與舊規格殘留。Swans《Cop》寫成
+「Michael Balch 近乎咆哮的人聲」，但 Swans 主唱是 Michael Gira（Balch 是早期鍵盤手，
+後來加入 Front 242）；同段還有「不是X而是Y」句型與推薦語氣。另有至少 8 張的 desc2
+帶「值得一聽」「很適合」這類舊規格用語（Discharge、Anderson .Paak、Nujabes、
+Station to Station、Goodbye Yellow Brick Road、Radio City、Steely Dan《Aja》、Big Star）。
+改 desc2 屬線上內容，須走 `dip-card-create`，本次未動。
+
+- 主要檔案：`mood-quiz/build-roster.mjs`、`build-witness-run.mjs`（新增）；
+  `build-demo.mjs`、`merge-banks.mjs`、`witness-qa.mjs`、`build-witness-repair.mjs`、
+  `banks/witness-spec.md`（修改）；`banks/roster.json`、`banks/witness.json`、
+  `banks/witness-batches/p1-*`、`p2-*`、`*rep-*`（產出）；`心情選歌-測試品.html`（重建）。
+- 驗證：`node witness-qa.mjs wfull／p1／p2` 三批皆 0 違規；合併後 1760 張／見證 3520 句／
+  收尾 3520 句；抽驗 Abbey Road、Merzbow《Pulse Demon》、Yutaka Hirose《Nova》四句齊全。
+
 ### 2026-08-15｜dip-vinyl-shop｜後台新增「🎰 抽卡動畫」調校分頁（gameConfig/drawAnimation）
 
 - admin.html 遊戲設定分頁下加第三個子分頁：18 個參數（閃卡時長／間隔／減速曲線／

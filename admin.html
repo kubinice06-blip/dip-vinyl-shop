@@ -3883,10 +3883,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
 
   // ── 抽卡動畫（直接來一張）：gameConfig/drawAnimation ──
   // 面板拉桿即時生效、試抽即時預覽；前台載入時讀這份覆寫內建值。
-  const DEF_DRAW = {
-    flashDuration:1800, startInterval:55, endInterval:260, easePow:2.5, jitter:6, maxBlur:2, ghosts:true,
-    pauseBeforePop:350, popDuration:550, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
-    revealMode:'auto', autoDelay:900, flipDuration:700, burstCount:24, sound:true
+  const DEF_DRAW = {   // 店主 2026-08-15 調校版；與 index.html 的 DRAW_ANIM_DEF 同步
+    flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
+    pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
+    revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true
   };
   const DA_SCHEMA = [
     {k:'flashDuration', l:'閃卡總時長 ms',    min:400, max:5000, step:100},
