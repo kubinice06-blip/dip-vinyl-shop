@@ -1,5 +1,38 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-04/c-05 共 72 張上架，seed 7,636（店主外出期間自主推進）
+
+店主外出前指示「有問題自行解決、不要停下來」，以下判斷皆為自主裁定，理由逐筆記於
+`classical-expansion/onboarding/RUNBOOK-c04plus.md` 與各檔 `rulingNote`／`repinNote`。
+seed 7,564 → **7,636**（古典區塊約 374 張）。
+
+- **身分層一次跑完 c-04…c-26 共 765 張**（`p1j-identity.mjs`）：修掉 p1c 的 `limit=100`
+  分頁截斷（Karajan、Doráti 目錄被砍半）、作曲家別名表擴到 148 條（斯拉夫轉寫）。
+  自動解析 68%，c-04…c-08 的 179 張已人工補到 100%。
+- **研究層新增必填 `yearVerified` 欄**：年份改由研究層結構化輸出，`p6-generic.mjs` 直接讀，
+  主線不再逐張手寫 YEARS 表（765 張規模的關鍵改動）。c-04/c-05 兩批 72 張全部有值。
+- **試聽改為全腳本化**：發現 `music.youtube.com/search` 帶瀏覽器 UA 直接 fetch 就拿得到
+  server-rendered JSON（`\xNN` 轉義還原後有專輯 id 與 OLAK 歌單 id），
+  不必再逐張開瀏覽器。**但 token 只驗演奏者會放進「同演奏者的別張錄音」**
+  （Toscanini 抓到全集盒、Kleiber 抓到 DG 大全集），已加曲目 token 二次驗證。
+  成績：c-04 apple 15／yt 20／unavailable 1；c-05 apple 9／yt 27／unavailable 0。
+- **研究層抓出的錯釘（本輪 8 張）**：Karajan《九大 1963》用條碼證明原釘是 1975–77 第三套
+  →改用目錄編號 SKL 101/8 找到正確 RG；Casadesus 掛「Szell」實為 Previtali 1956 米蘭現場；
+  Menuhin 釘到 Klemperer 版；Schnabel 釘到大提琴奏鳴曲；Uchida 釘到小提琴奏鳴曲；
+  Byron Janis 釘到不含該曲的合輯；Rachmaninoff「自彈」釘到中村紘子錄音；MAK 玫瑰經釘到 2015 BIS 版。
+- **⚠ 主線自身的兩個流程漏洞（已修）**：(1) 重釘只寫進封面檔、沒同步身分檔與卡單，
+  導致研究代理拿到舊 rgMbid——已補同步邏輯；(2) 我的一次重釘本身也錯了
+  （Rachmaninoff 挑到 Ashkenazy/Previn 版），教訓是**快取標題比對不能取代掛名核對**。
+- **共用提示檔修正**：`hook-base.md` 的古典通則與 `research-base.md` 兩型分流字面矛盾
+  （c-06 hook 代理正確回報），已對齊為「先看 artist 欄是作曲家還是演奏者」；
+  另加 facts 的西方音樂人名一律拉丁原文（研究層寫中文音譯會讓零編造 QA 整批誤報）。
+- **資料完整性**：3 個研究檔輸出成陣列、1 個檔內層 `key` 欄空字串，已全批掃描修復。
+- **Gate**：兩批 prepare 0 error；published 除待貼 YT（20＋27）外全綠。
+- **⚠ 店主待辦**：後台貼 `album_overrides-repaste-c-01…c-05.json`（15＋16＋7＋20＋27＝85 張）。
+- 主要檔案：`seed_cards.json`（+72）、`data/apple-audio-map-v1.json`（+24，runtime 6751）、
+  `card-preview-status.js`（+1）、`classical-expansion/onboarding/`（p1j/p1k/p2i/p5b/p5d/p6-generic
+  等通用工具＋manifest-c-04/c-05）、`desc-restyle/prompts/`（三份共用提示檔更新）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-02/c-03 共 53 張上架，seed 7,564
 
 沿用 c-01 管線範本接力完成兩批（巴洛克古樂 27＋巴洛克名家與早期音樂 26）。seed 7,511 → **7,564**。
