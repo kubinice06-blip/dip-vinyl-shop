@@ -262,7 +262,7 @@
       border-radius:50%; pointer-events:none; opacity:0; transition:opacity .5s; }
     .da-aura.on-normal { background:radial-gradient(circle,rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 62%); opacity:1; }
     .da-aura.on-apex   { background:radial-gradient(circle,rgba(184,134,11,0.34) 0%,rgba(184,134,11,0) 62%); opacity:1; }
-    .da-card { position:relative; width:190px; height:190px; margin-top:-26px; perspective:900px; }
+    .da-card { position:relative; width:190px; height:190px; perspective:900px; }
     .da-lift { width:100%; height:100%; transform-origin:center center; }
     .da-floaty { width:100%; height:100%; }
     .da-floaty.on { animation:daFloatyKf 2.4s ease-in-out infinite; }
@@ -270,7 +270,9 @@
     .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
       border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
     .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
-    .da-face.da-back { background:#141414 radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
+    /* 背景色與多層漸層要分開寫：background 簡寫裡 <color> 只允許出現在最後一層 */
+    .da-face.da-back { background-color:#141414;
+      background-image:radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
       repeating-radial-gradient(circle at 50% 50%, #1d1d1d 0 2px, #141414 2px 4px);
       display:flex; align-items:center; justify-content:center; }
     .da-backlabel { width:62px; height:62px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
@@ -3927,6 +3929,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         daP[k] = el.type==='checkbox' ? el.checked : (el.tagName==='SELECT' ? el.value : parseFloat(el.value));
         const vs=el.closest('.da-row').querySelector('.da-val');
         if(vs) vs.textContent = (typeof daP[k]==='boolean') ? (daP[k]?'開':'關') : (el.tagName==='SELECT'?'':daP[k]);
+        if(k==='popScale' || k==='popLift') daLayout();   // 拉的當下就看到新版面
       });
     });
   }
@@ -3988,7 +3991,24 @@ ${discogs ? '- Discogs：' + discogs : ''}
   const daRndf=(a,b)=>a+Math.random()*(b-a);
   let daBusy=false, daAwaitClick=false, daApex=false, daTarget=null;
 
+  // 版面依當下參數重算（拉桿隨時會改 popScale/popLift），避免彈起後被舞台切掉
+  function daLayout(){
+    const stage=document.querySelector('#sub-draw .da-stage'), card=document.getElementById('daCard'),
+          aura=document.getElementById('daAura'), burst=document.getElementById('daBurst');
+    if(!stage) return;
+    const scale=Math.max(1,daP.popScale), liftPx=Math.max(0,daP.popLift);
+    const cardSize=Math.max(110, Math.min(190, Math.floor(((stage.clientWidth||600)-48)/scale)));
+    const stageH=Math.round(cardSize*scale + liftPx + 44);
+    const restOffset=Math.round(liftPx/2);
+    stage.style.height=stageH+'px';
+    card.style.width=card.style.height=cardSize+'px';
+    card.style.top=restOffset+'px';
+    const poppedY=Math.round(stageH/2 + restOffset - liftPx);
+    aura.style.top=poppedY+'px'; burst.style.top=poppedY+'px';
+  }
+
   function daResetStage(){
+    daLayout();
     const card=document.getElementById('daCard'), flip=document.getElementById('daFlip'),
           lift=document.getElementById('daLift'), fl=document.getElementById('daFloaty');
     card.classList.remove('slam','ace-border'); card.style.cursor='default';
@@ -4102,7 +4122,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       daP = s.exists()? {...DEF_DRAW, ...s.data()} : {...DEF_DRAW};
       if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
     catch(e){ daP={...DEF_DRAW}; if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
-    renderDrawForm(); daLoadCovers();
+    renderDrawForm(); daLayout(); daLoadCovers();
   }
   document.getElementById('daCard')?.addEventListener('click',()=>{ if(daAwaitClick) daReveal(); });
   document.getElementById('daDraw')?.addEventListener('click',()=>daDrawRun(false));

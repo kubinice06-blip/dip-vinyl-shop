@@ -630,14 +630,16 @@
     @keyframes daShimmer { 0%{background-position:200% 0;} 100%{background-position:0 0;} }
     @keyframes daFloatyKf { 0%,100%{transform:translateY(0) rotate(-0.6deg);} 50%{transform:translateY(-6px) rotate(0.6deg);} }
     @keyframes daSlamKf { 0%{transform:scale(1.1);} 55%{transform:scale(0.97);} 100%{transform:scale(1);} }
-    .da-stage { position:relative; height:380px; overflow:hidden;
+    /* 高度／卡片尺寸／垂直位置由 JS 依當下參數（popScale、popLift）算出並寫成 inline style，
+       後台把放大倍率或上移調大時才不會彈出舞台被 overflow 切掉。這裡只留保底值。 */
+    .da-stage { position:relative; height:390px; overflow:hidden;
       display:flex; align-items:center; justify-content:center;
       background:radial-gradient(circle at 50% 45%, #fff 0%, #fafafa 60%, #f1f1f1 100%); }
     .da-aura { position:absolute; left:50%; top:45%; width:300px; height:300px; transform:translate(-50%,-50%);
       border-radius:50%; pointer-events:none; opacity:0; transition:opacity .5s; }
     .da-aura.on-normal { background:radial-gradient(circle,rgba(0,0,0,0.10) 0%,rgba(0,0,0,0) 62%); opacity:1; }
     .da-aura.on-apex   { background:radial-gradient(circle,rgba(184,134,11,0.34) 0%,rgba(184,134,11,0) 62%); opacity:1; }
-    .da-card { position:relative; width:200px; height:200px; margin-top:-14px; perspective:900px; }
+    .da-card { position:relative; width:200px; height:200px; perspective:900px; }
     .da-lift { width:100%; height:100%; transform-origin:center center; }
     .da-floaty { width:100%; height:100%; }
     .da-floaty.on { animation:daFloatyKf 2.4s ease-in-out infinite; }
@@ -645,7 +647,10 @@
     .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
       border:1px solid var(--black); background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.18); }
     .da-face.da-front { transform:rotateY(180deg); background-size:cover; background-position:center; }
-    .da-face.da-back { background:#141414 radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
+    /* 背景色與多層漸層要分開寫：background 簡寫裡 <color> 只允許出現在最後一層，
+       寫在第一層會讓整條宣告失效（牌背會變成白底）。 */
+    .da-face.da-back { background-color:#141414;
+      background-image:radial-gradient(circle at 50% 50%, #141414 0 13%, transparent 13.5%),
       repeating-radial-gradient(circle at 50% 50%, #1d1d1d 0 2px, #141414 2px 4px);
       display:flex; align-items:center; justify-content:center; }
     .da-backlabel { width:64px; height:64px; border-radius:50%; background:#b8860b; border:2px solid #8a6508;
@@ -4384,6 +4389,19 @@ ${seenList}
     const stage = q('.da-stage'), card = q('.da-card'), lift = q('.da-lift'),
           floaty = q('.da-floaty'), flip = q('.da-flip'), front = q('.da-front'),
           aura = q('.da-aura'), burstHost = q('.da-burst');
+
+    // 版面依參數計算：卡片放大 popScale 倍、再上移 popLift，兩者都要塞進舞台。
+    // 卡片先往下擺 popLift/2，彈起後正好落在視覺中央；光暈與粒子對齊彈起後的位置。
+    const scale = Math.max(1, cfg.popScale), liftPx = Math.max(0, cfg.popLift);
+    const availW = stage.clientWidth || window.innerWidth;
+    const cardSize = Math.max(120, Math.min(200, Math.floor((availW - 48) / scale)));
+    const stageH = Math.round(cardSize * scale + liftPx + 44);
+    const restOffset = Math.round(liftPx / 2);
+    stage.style.height = stageH + 'px';
+    card.style.width = card.style.height = cardSize + 'px';
+    card.style.top = restOffset + 'px';
+    const poppedY = Math.round(stageH / 2 + restOffset - liftPx);
+    aura.style.top = poppedY + 'px'; burstHost.style.top = poppedY + 'px';
     const state = { ready: false, fail: false, cover: '', apex: false };
 
     const done = (async () => {

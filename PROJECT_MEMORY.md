@@ -1,5 +1,27 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋dip-vinyl-home｜抽卡動畫兩個上線 bug：牌背變白底、彈起被切頭
+
+店主手機實拍回報：抽到時「空白專輯往上移動然後切到上面」，且牌背是白底不是黑膠。
+
+- **白底＝CSS 簡寫寫錯**：`background:#141414 radial-gradient(...), repeating-radial-gradient(...)`
+  ——**background 簡寫的 `<color>` 只允許出現在最後一層**，寫在第一層會讓整條宣告失效，
+  牌背退成白底、兩層溝紋漸層全沒了。改拆成 `background-color` ＋ `background-image`。
+  三個檔同時中招（index/admin/模擬頁），一起修。
+- **切頭＝版面高度寫死沒算彈起**：舊值舞台 380、卡片 200 且 `margin-top:-14px`
+  （flex 置中的是**外邊距框**，實際只上移 7px）。彈起後 `scale(1.45)`＋`translateY(-60px)`
+  → 視覺上緣 = 83 − 45 − 60 = **−22px**，正好被 `overflow:hidden` 切掉 22px，與實拍吻合。
+- **改法不是把高度調大**（後台可調 popScale/popLift，寫死遲早再爆）：改成**依當下參數算版面**——
+  卡片尺寸取 `min(基準, (可用寬−48)/scale)`、舞台高 `cardSize*scale + popLift + 44`、
+  卡片先下移 `popLift/2`（彈起後正好回到視覺中央），光暈與粒子對齊彈起後的中心。
+  三處都加：index `startGpDrawAnim`、admin `daLayout()`（拉桿改 popScale/popLift 即時重算）、
+  模擬頁 `layoutStage()`。新值視覺上緣 +22px、左右各餘 41px。
+- **⚠ 量測環境陷阱（下次別再踩）**：Browser 面板未顯示時**頁面不合成畫面，
+  走合成器的 transform 過場會凍結在起點**——`getComputedStyle` 一路回 `matrix(1,0,0,1,0,0)`、
+  `getBoundingClientRect` 也看不到縮放（3D 情境下子元素回傳的是版面框），
+  `getAnimations()` 卻顯示過場 running。當時一度以為「彈起沒作用」，其實是量測看不到。
+  **動畫類改動在此環境只能驗可靜態觀測的部分（如 computed 背景色）＋用實測版面數字做算術驗證。**
+
 ### 2026-08-15｜dip-vinyl-shop｜#random「直接來一張」接上抽卡動畫；店主調校版參數定為內建預設
 
 - index.html `submitGenrePick`：gpIsRandom 時抽卡動畫取代「挖掘中…」spinner。
@@ -49,12 +71,33 @@
   實測全池唯一的 4 字以上共用詞組**全部**是曲風名。
 - 87 句中英空格用確定性腳本批次修正，機械格式錯不叫代理重寫。
 
-**待辦（未動，需店主決定）**：desc2 有事實錯誤與舊規格殘留。Swans《Cop》寫成
-「Michael Balch 近乎咆哮的人聲」，但 Swans 主唱是 Michael Gira（Balch 是早期鍵盤手，
-後來加入 Front 242）；同段還有「不是X而是Y」句型與推薦語氣。另有至少 8 張的 desc2
-帶「值得一聽」「很適合」這類舊規格用語（Discharge、Anderson .Paak、Nujabes、
-Station to Station、Goodbye Yellow Brick Road、Radio City、Steely Dan《Aja》、Big Star）。
-改 desc2 屬線上內容，須走 `dip-card-create`，本次未動。
+**～～待辦：desc2 事實錯誤與舊規格殘留～～ → 查證後撤銷，線上內容沒有問題。**
+本次一度認定 Swans《Cop》desc2 把主唱寫成 Michael Balch（實為 Michael Gira），
+並掃出 403 張帶推薦語氣／空泛宣稱的簡介。**兩者都是量錯對象**——那些是
+`desc-restyle/kv-backup-desc2.json`（2026-07-25 回滾備份）的內容，
+而 desc-restyle 產線早已跑完（wave2 6338＋CJK 216＋wave3 809 全部上線）。
+以 KV 現況逐字核對，Swans《Cop》線上版本正確且無違規用語。**線上 desc2 不需要修。**
+
+**但因此查出產線的真問題：見證句的事實來源用錯檔案。**
+`build-witness-run.mjs` 讀的是那份 2026-07-25 備份，首批 1760 張裡有 **1715 張（97%）**
+是照過期文字寫的。事實面影響經實測極小：
+- 321 張（18%）的見證句含「現行簡介查不到的專名／年份」，其中 315 張是舊簡介本來就有、
+  改寫時被刪掉的（wave2 是零新事實改寫，事實仍成立）。
+- 只有 6 張是寫手憑既有知識加的，屬規格允許的「十足把握的知名事實」。
+- **風險要依產線分層，不能一概而論**：「事實消失＝改寫時裁掉、原事實仍成立」只對 wave2
+  （零新事實改寫）成立；wave3／recut 有研究層，**事實消失有可能是查證後發現錯了才刪**。
+  分層後：純風格改寫 234 張（低風險）、查無批次 65 張、**研究層改寫 16 張（真正可疑）**。
+- **查證結果：16 張研究層＋6 張寫手自加，共 22 張逐張查核，ok 22／wrong 0／uncertain 0**
+  （其中 10 張實跑 WebSearch，如 B.T. Express 的 Hempstead 錄音地、Percy Sledge 製作班底、
+  Kool G Rap〈Foul Cats〉、Tower of Power 的 Rocco Prestia 歸隊）。紀錄在
+  `banks/witness-batches/factcheck-out1.json`。
+- 結論：**確認的事實錯誤 0 件，已產出的 1760 張不需要重跑**；後續批次一律改用線上現況。
+  偵測範圍限於專名與年份——無專名的錯誤敘述（如「整張只花一天錄完」）此法抓不到。
+- 修法：新增 `mood-quiz/fetch-desc2.mjs`（Cloudflare bulk/get API 拉現況存
+  `banks/desc2-cache.json`，已抓 3439 筆），`build-witness-run.mjs` 改讀此快取，
+  找不到快取直接中止並提示先跑 fetch。另新增 `check-source-drift.mjs` 供日後複驗。
+- KV 讀取用 fetch 不要用 `res.on('data')`（串流分塊會切開多位元組字元）；
+  `wrangler kv bulk get` 在本機 Windows 會 libuv assertion 崩潰，改走 API。
 
 - 主要檔案：`mood-quiz/build-roster.mjs`、`build-witness-run.mjs`（新增）；
   `build-demo.mjs`、`merge-banks.mjs`、`witness-qa.mjs`、`build-witness-repair.mjs`、
@@ -5730,6 +5773,27 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+
+
+### 2026-08-15｜dip-vinyl-home（classical-expansion）｜p1z：十張「卡單本身錯了」的卡逐張裁定
+
+身分解析器判定「該演奏家從未錄過卡片指名作品」的 10 張（c-17×3、c-19×5、c-20×2），
+依「卡片的價值載體是 hook」原則逐張查證 MusicBrainz artist-credit 與封面後裁定。
+**未動 `p1j-identity.json`**（主線正在改，避免撞車）。
+
+主要檔案：`classical-expansion/onboarding/p1z-adjudicate-10.json`（裁定結果）、
+`classical-expansion/onboarding/agent-p1z-mb.mjs`（新增的唯讀查證工具，含 release 層 CAA 與
+Spotify 封面回退）。
+
+裁定：repin-album 4 張（Tertis→Bax/Brahms/Bach/Delius、今井信子→白遼士《哈羅德在義大利》、
+Gary Karr→The World of Gary Karr、Marilyn Horne→Semiramide）、repin-performer 2 張
+（Feldman《Triadic Memories》→Sabine Liebner、Lady Macbeth→Myung-Whun Chung）、
+manual-identity 2 張（Nyiregyházi、Antonia Brico）、needsRuling 2 張（Sirmen、Midori）。
+
+驗證：8 張全部實拉 MB release-group artist-credit 確認演奏家在演出者串裡（非作曲家掛名）；
+所有封面一律用帶 `Range: bytes=0-1023` 的 GET 實測，9 個網址全回 206。
+Rossini Gala（bc31e658）與 Nyiregyházi Live Vol.1（29f98bb7）RG 層與 release 層封面皆 404，
+已據此改判。避重複：Nelsons 同批 c-20 已有卡故不選、Rostropovich 池內已四張故不選。
 
 
 ### 2026-08-15｜dip-vinyl-home（.claude/skills，無 git）｜dip-deep-dig 產出 Cowork 可攜版，修掉三處環境依賴
