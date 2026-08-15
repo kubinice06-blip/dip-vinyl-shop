@@ -276,5 +276,7 @@ window.DipPreviewStatus = Object.freeze({
   "alfred deller|purcell: dido and aeneas": "unavailable",
   "sigiswald kuijken|bach: brandenburg concertos": "unavailable",
   "robert casadesus|mozart: piano concertos 23 & 24": "unavailable",
-  "josef hofmann|casimir hall recital (1938)": "unavailable"
+  "josef hofmann|casimir hall recital (1938)": "unavailable",
+  "luciano pavarotti|king of the high c's": "unavailable",
+  "feodor chaliapin|mussorgsky: boris godunov": "unavailable"
 });

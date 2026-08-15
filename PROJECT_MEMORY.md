@@ -1,5 +1,48 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-10 共 36 張上架，seed 7,816；歷史名家批次的釘錯率是前面各批的五倍
+
+seed 7,780 →**7,816**，classical 擴充累計 **296 張上架**。
+
+- **⚠ 這批 36 張裡有 5 張釘錯**（前面各批平均 0–1 張）。原因是歌劇與歷史錄音的同一位演出者、
+  同一部作品往往有三四個年代的版本，而 MB 的 release-group 標題全都一樣：
+
+  | 卡片 | 原本釘到 | 正確版本 | 靠什麼分辨 |
+  |---|---|---|---|
+  | Callas《Norma (1954)》 | 1955 史卡拉開季夜現場 | 1954 EMI 錄音室 | 陣容 Filippeschi／Stignani |
+  | Callas《La traviata (Lisbon 1958)》 | 1953 Cetra 錄音室 | 1958 里斯本現場 | 陣容 Kraus／Sereni／Ghione |
+  | Furtwängler《Der Ring (RAI 1953)》 | 1950 米蘭史卡拉現場 | RAI 1953 廣播棚 | 樂團是義大利廣播交響 |
+  | Walter《Mahler 9 (Vienna 1938)》 | 1961 Columbia 錄音室 | 1938 維也納現場 | 樂團是維也納愛樂 |
+  | Tennstedt《Mahler 6 (live)》 | 1983 Kingsway Hall 錄音室 | 1983 RAH 現場 | 廠牌是樂團自家的 LPO |
+
+  **分辨的關鍵一律是 artist-credit 裡的陣容或樂團，不是標題。**
+  遇到歌劇與歷史錄音批次，身分那一關要逐張看掛名，不能只信自動裁定的分數。
+  其中兩張的研究是照舊 rgMbid 做的，已整份重做。
+- **卡片年份怎麼取，定案了**（研究層已問過四次同樣的問題，寫進 RUNBOOK 四之二節）：
+  year 取「這份錄音／演出最早公開的年份」，不是復刻商品的年份。
+  一般錄音室專輯取首發年；**卡名指定某場演出的取演出年**（Lisbon 1958 即使 EMI 1980 才發行也寫 1958）；
+  **彙編／全集取錄音涵蓋期的結束年**（Caruso 1920 而非盒裝的 2004、Melchior 1940 而非 1999）。
+  理由是卡片年份要讓玩家看到音樂的年代。
+- **自動檢查的新死角：通用卡名＋分冊發行**。Savall《Beethoven: Symphonies (古樂版)》被配到
+  《Révolution: Symphonies 1 à 5》，但實體是《6 à 9》——卡名的作品 token 只有 beethoven／symphonies，
+  配到任何一冊都算命中。**這種卡只能靠研究稿查到的實際曲目範圍人工指定。**
+- **五條被推翻的卡單內容**：Sutherland 的「La Stupenda」出自 1960 年威尼斯的《Alcina》而非《露琪亞》
+  瘋狂場景；Furtwängler 布八是維也納不是柏林；Kubelík 出走是 1948 年政變不是布拉格之春；
+  Klemperer「Mahler 提拔的最後一位指揮」查無來源；RAI 1953 本身就是廣播棚版，卡單說它是
+  「錄音室之外唯一的完整指環」語意反了。全部在 hook 階段擋掉。
+- **我下的一條反同構條款可能太寬**（已寫進 RUNBOOK 四之三節請店主覆核）：
+  「辭世不得作為整張主結構」在多數卡上是對的，但 Wunderlich《Die schöne Müllerin》
+  是他辭世前一個月的錄音，那件事本身就是那張卡最重要的內容，note 原本也這樣指定。
+  寫作代理依裁定改成以錄音為主結構、驟逝壓成一句。**可能讓那張失去最好的故事。**
+- **試聽**：apple 12／yt 22／unavailable 2（Pavarotti 的 Decca 選輯、Chaliapin 的 1928 柯芬園選段，
+  YT 上都只有各種彙編）。另 Flagstad 那張做了折衷：取她唱同一組《Wesendonck-Lieder》的另一份錄音，
+  曲目與歌者相符但場合不同，已在 note 與 RUNBOOK 標明供店主改判。
+- **Gate**：prepare 0 error；published 22 error＝待貼 YT 張數。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-10.json`，累計 **194 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+36）、`data/apple-audio-map-v1.json`（entries 7,618／runtime 6,819）、
+  `card-preview-status.js`（+2）、`classical-expansion/onboarding/`（p1x/p1y/p1z/p2l/p2m/p2n、
+  manifest-c-10、repaste-c-10、RUNBOOK.md）、`desc-restyle/batches/`（add-20260815-c10 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-09 共 37 張上架，seed 7,780；身分自動裁定器上線
 
 seed 7,743 →**7,780**，classical 擴充累計 **260 張上架**。這是第一批走完新裁定器的批次。
