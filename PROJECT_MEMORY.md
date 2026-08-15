@@ -1,5 +1,40 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-15＋c-16 共 61 張上架，seed 7,961
+
+seed 7,900 →**7,961**，classical 擴充累計 **441 張上架**。這兩批是當代作曲家與新古典。
+
+- **當代曲目的 Apple 命中率高很多**：c-15 apple 25／yt 6（前面歷史錄音批次多半 apple 只有 10–17）。
+  iTunes 對近二十年的發行覆蓋得好，歷史錄音則要靠 YT 補。
+- **研究層在這兩批推翻了十二條卡單 hook**，密度是全部批次最高。共通型態是
+  **「聽起來很好但查不到出處」**與**「半對」**：
+  - Currentzis 那張寫「西伯利亞」，Perm 在**烏拉爾**
+  - 《Joker》寫「第一位獨得奧斯卡最佳配樂的女性」，來源只支持**金球獎**
+    （Rachel Portman、Anne Dudley 早已各自獨得過奧斯卡）
+  - Anna Meredith 確實得過獎，但是 **Scottish Album of the Year 不是水星獎**
+  - Ellen Arkbro 用的是 1624 年**中庸全音律**管風琴，純律只是她的學習背景
+  - Sarah Davachi 的核心音源是 **Mellotron** 不是老風琴
+  - 《Become Ocean》的 Taylor Swift 捐款屬實，但**指定用於教育計畫與樂手退休金**、與黑膠發行無關
+- **新型陷阱：一張唱片三位指揮**（陳其鋼《Iris dévoilée》）。卡片指名那首是**湯沐海**指揮，
+  同片另兩首是 Dutoit 與 Benetti，而 **mbCredit 完全沒有指揮欄**。已加進必查清單。
+- **兩次寫作層正確拒絕主線指示**（兩次我都認可）：
+  1. c-12 的 Rostropovich——我要它照改釘後的 RG 寫「同片另收第二號」，但 facts 沒有那條，
+     它依「只用輸入檔事實」拒絕。**零新事實的規則優先於主線的指派。**
+  2. c-16 的 Emahoy——我裁定年份 1996，但同卡 facts 明載該彙編是 2006 年推出，
+     它沒有硬寫，改成用廠牌與選曲來歷交代發行事實、正文不出現發行年。
+     **卡面維持 1996（規則要的是音樂的年代），但正文不寫發行年是對的。**
+- **試聽新抓到的錯配型態**：**改編版**（La Monte Young 配到吉他改編版）。
+  另確立「母專輯配對」可接受：Roomful of Teeth《Partita》配到收錄該曲的同名首張、
+  Arnalds & Frahm《Collaborative Works》配到其組成之一《Trance Frendz》，都標註後放行。
+- **判 unavailable 兩張**：La Monte Young《The Well-Tuned Piano》（YT 只有吉他改編版）、
+  George Benjamin《Written on Skin》（YT 上七八張同名專輯，頁面都驗不到他本人，同名不同版風險太高）。
+- **Arrival (OST) 改釘**：原釘是 2017 年的《Complete Score》，本卡是 2016-11-11 DG 首發的原聲帶。
+- **Gate**：兩批 prepare 皆 0 error；published c-15 6 error、c-16 12 error，皆＝待貼 YT 張數。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-16.json`，累計 **263 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+61）、`data/apple-audio-map-v1.json`（entries 7,692／runtime 6,893）、
+  `card-preview-status.js`（+1）、`classical-expansion/onboarding/`（p1ar、p5f-manual-c1516、
+  manifest-c-15/c-16、repaste-c-15/c-16）、`desc-restyle/batches/`（add-20260815-c15／c16 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-12＋c-13 共 51 張上架，seed 7,900；回頭稽核 365 張已上架卡
 
 seed 7,849 →**7,900**，classical 擴充累計 **380 張上架**。

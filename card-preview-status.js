@@ -279,5 +279,6 @@ window.DipPreviewStatus = Object.freeze({
   "josef hofmann|casimir hall recital (1938)": "unavailable",
   "luciano pavarotti|king of the high c's": "unavailable",
   "feodor chaliapin|mussorgsky: boris godunov": "unavailable",
-  "la monte young|the well-tuned piano": "unavailable"
+  "la monte young|the well-tuned piano": "unavailable",
+  "george benjamin|written on skin": "unavailable"
 });
