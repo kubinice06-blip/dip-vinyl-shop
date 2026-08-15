@@ -271,5 +271,8 @@ window.DipPreviewStatus = Object.freeze({
   "川崎燎|prism": "unavailable",
   "渡辺香津美|dogatana": "unavailable",
   "山下洋輔トリオ|chiasma": "unavailable",
-  "nathan milstein|bach: sonatas & partitas for solo violin": "unavailable"
+  "nathan milstein|bach: sonatas & partitas for solo violin": "unavailable",
+  "kenneth gilbert|couperin: second livre de clavecin": "unavailable",
+  "alfred deller|purcell: dido and aeneas": "unavailable",
+  "sigiswald kuijken|bach: brandenburg concertos": "unavailable"
 });

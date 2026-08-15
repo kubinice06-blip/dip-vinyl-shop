@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-02/c-03 共 53 張上架，seed 7,564
+
+沿用 c-01 管線範本接力完成兩批（巴洛克古樂 27＋巴洛克名家與早期音樂 26）。seed 7,511 → **7,564**。
+
+- **身分整頓戰績**：7 張裁定落地（Gilbert 指定第二冊、Brüggen 改 1986 Vivaldi op.10、
+  Strozzi 改掛 Musica Secreta 1994、Holliger 釘 ECM 1671/72——MB 只掛作曲家致演奏者查詢落空、
+  Leonhardt 釘 1970 Telefunken、Alessandrini 釘 naïve 2006、Vox Luminis **查無 Membra 錄音**
+  →曲目保留換荷蘭巴哈協會 2006 名版）；4 張錯釘修正（MAK Biber 原釘 2015 BIS Daskalakis 版
+  ——研究層抓到、Fournier 改釘 1966 Kempff 正盤、Segovia 改釘 2002 DG 同名選輯、
+  Sutherland《Alcina》1962 Decca 全集查無 RG →**換卡**《The Art of the Prima Donna》）；
+  2 張卡名正名（Kirkby《Handel: Arias》→《Arias for Mrs Arne》、Scholl→《Heroes》，皆非純韓德爾）；
+  1 張移除（**Nadia Boulanger 1937 蒙台威爾第牧歌**：CAA/Spotify/復刻盤全查無正式封面，
+  依常設標準移除——史上首套蒙台威爾第錄音，店主若要開特例可撈回，工作檔都在）。
+- **年份**：53 張全依研究查證定案（MB first-release-date 再版年比例極高：Tureck 2017→1950、
+  Munrow 1996→1973、Rifkin 1999→1982、Kirkpatrick 2004→1971…），記 manifest.identity.yearNote。
+- **三軸**：錨點制人工；機器抽查 2 個報警皆為合唱名曲的作曲家端查詢掛錯（誤報）；
+  Savall《日出時讓悲傷終結》冷門 4→3（2.6 萬聽眾、電影破圈）。
+- **簡介產線**：研究 10 組（Sonnet）→hook 4 組（Opus）→寫作 4 組（Opus），QA 全清；
+  人工審稿修 7 處（兩處非東亞人名誤用中譯：Gustav Düben、Carl Orff；Sequentia 的
+  Edison 獎國別編造；Rousset「卡片對應」校對痕跡；Machaut 樂評句語意）。
+  **研究 src 必留完整網址的新規則本輪全數達標**。
+- **試聽**：apple 27（UPC→lookup 直連，runtime 6700→6727）／youtube 23（token 驗版
+  ＋瀏覽器補查；抓到 Savall Marais 第三冊冒充第五冊、Koopman 管風琴第一卷冒充第八卷、
+  Kuijken 1994 DHM 版冒充 2009 Accent 版——同曲異版驗證再立功）／unavailable 3
+  （Gilbert 僅第一冊上架、Deller 無歌劇全曲、Kuijken Accent 版僅 Spotify 有）。
+- **Gate**：兩批 prepare 0 error；published 除 23 張 YT 卡等 album_overrides 外全過。
+- **⚠ 店主待辦**：後台批次工具貼入 `album_overrides-repaste-c-02.json`（16 張）與
+  `album_overrides-repaste-c-03.json`（7 張），連同 c-01 的 15 張共 38 張；貼完三批 published gate 歸零。
+- 工具鏈補強：qa-batch／qa-check-hooks／merge-writer-input 相容古典批的物件格式研究檔
+  （`--split=2` 切檔）；p4-c0203（UPC 優先候選）＋p5b-c0203（token 驗版）為後續 23 批常備。
+- 主要檔案：`seed_cards.json`（+53）、`data/apple-audio-map-v1.json`（+27）、
+  `card-preview-status.js`（+3）、`classical-expansion/onboarding/`（manifest-c-02/c-03、
+  p4/p5/p6 工具、repaste×2）、`desc-restyle/batches/`（add-20260815-c02/c03 全鏈）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-01 首批 27 張完整上架，古典管線全流程打通
 
 古典擴充試跑批 c-01（巴哈／巴洛克 27 張）走完 dip-card-create 全流程並上線，
@@ -5065,6 +5099,33 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 - 行動版使用 `100dvh` 與緊湊戰鬥佈局；視覺修改至少檢查窄螢幕不裁切手牌、提示、牌桌與數值列。
 
 ## 逐次改動記錄（新到舊）
+
+### 2026-08-15｜dip-vinyl-home（.claude/skills，無 git）｜dip-deep-dig 產出 Cowork 可攜版，修掉三處環境依賴
+
+跑《The Detroit Experiment》深潛時發現 skill 的執行模型有 bug，順手做了可攜版供 Cowork 上傳使用。
+**只新增一個檔案，原 `SKILL.md` 未改動、行為不變。**
+
+## 原版三處不可攜
+
+1. 讀 `desc-restyle/style-guide.md` 的相對路徑——換工作區即找不到。**店主裁定研究稿不需要
+   套簡介語氣規範**，可攜版直接移除這條外部依賴；原本就內聯在 SKILL.md 的克制規則保留。
+2. 輸出寫死 `desc-restyle/deep-dives/`——改成兩段判斷：有 `desc-restyle/` 就寫進去，
+   否則寫工作區根目錄的 `deep-dives/`。
+3. 「發一個 Sonnet 研究子代理」是硬性指定——Cowork 未必有同機制。改成條件式：
+   能派就派、不能派就自己做。
+
+## 第 3 點是這次實際踩到的坑
+
+代理讀到「發子代理」後真的又派了一個巢狀代理，自己零搜尋就回報「已交辦」，導致同一任務
+跑出兩份平行研究（合計約 26 次搜尋）。兩份內容互補已合併，但可攜版加了**禁止再往下轉包**
+與**寫檔前先查同名檔、存在則合併不覆寫**兩條硬規則防止重演。
+
+## 檔案與驗證
+
+- 新增 `.claude/skills/dip-deep-dig/SKILL-cowork.md`（3,634 bytes）
+- 打包 `dip-deep-dig.zip`（內含 `dip-deep-dig/SKILL.md`）置於 scratchpad，供上傳個人 skill
+- 驗證：`unzip -l` 確認結構正確；檔名刻意用 `SKILL-cowork.md`，不會被 skill 掃描器
+  當成第二個同名 skill（掃描只認 `SKILL.md`）
 
 ### 2026-08-14（同日第五筆）｜classical-expansion（無 git）｜古典候選名單建完 578 筆，並立四階段卡池平衡計畫
 
