@@ -278,5 +278,6 @@ window.DipPreviewStatus = Object.freeze({
   "robert casadesus|mozart: piano concertos 23 & 24": "unavailable",
   "josef hofmann|casimir hall recital (1938)": "unavailable",
   "luciano pavarotti|king of the high c's": "unavailable",
-  "feodor chaliapin|mussorgsky: boris godunov": "unavailable"
+  "feodor chaliapin|mussorgsky: boris godunov": "unavailable",
+  "la monte young|the well-tuned piano": "unavailable"
 });

@@ -1,5 +1,138 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-12＋c-13 共 51 張上架，seed 7,900；回頭稽核 365 張已上架卡
+
+seed 7,849 →**7,900**，classical 擴充累計 **380 張上架**。
+
+- **回頭稽核已上架的 365 張**（c-01～c-11）。動機：早期身分解析只比對標題、不驗 artist-credit，
+  而每一批在研究階段都抓到大量釘錯，懷疑已上架的也有漏網。
+  **結果 364 張通過、只有 1 張真的錯**：c-01 Karl **Richter**《Bach: Christmas Oratorio》
+  釘到 Karl **Ristenpart**／RIAS 的版本（姓氏相近的誤配）。
+  **簡介內容本身是對的**，只有 rgMbid 與封面錯，已改釘、換封面、同步線上 card_catalog。
+  漏網這麼少的原因：研究層在每批都逐張查了 rgMbid——**稽核證明的是那道人工查證有效，
+  不是身分解析本身可靠**。明細在 `AUDIT-shipped-credits.json`。
+- **⚠ 抓到所有封面檢查的一個漏洞**：修 Richter 時第一次改釘的 RG，`caa()` 用 **HEAD 回 200**、
+  實際 **GET 回 500**，連三次都一樣。從 c-01 到當時的封面檢查全部用 HEAD。
+  已新增共用的 `caa-check.mjs`（帶 Range 的 GET），p1p／p1q／p2l 三支管線腳本都改用它。
+  published gate 本來就做真正的 GET，已上架的卡有那道保護。
+- **⚠ 更正一條我自己下錯的規則**：現場存檔盤的年份原本取首發年（c-09 Wand 2005、c-10 Tennstedt 2009）。
+  c-13 的研究代理指出反例：Richter 1970 年的獨奏會由 BBC Legends 2009 首發，而**他 1997 年就辭世**——
+  照舊規則卡片會顯示他死後十二年的數字。**規則改成取演出年，並回頭修正那兩張已上線的卡**
+  （Wand→1979、Tennstedt→1983，commit b3afaa3）。
+- **新增兩種錯釘型態到必查清單**：
+  1. **「作曲家自指／自彈」的卡**——MB 掛名裡作曲家一定在（因為他是作曲家），
+     「掛名有這個人」不能當判準，**要看指揮／演奏欄是不是同一人**。
+     Stravinsky《春之祭》原釘是 Doráti／明尼蘇達，**兩者首發年剛好都是 1960**，兩道檢查都過得去。
+  2. **一張唱片三位指揮**（c-16 的陳其鋼《Iris dévoilée》）——卡片指名那首是湯沐海指揮，
+     同片另兩首是 Dutoit 與 Benetti，而 **mbCredit 完全沒有指揮欄**。
+- **⚠ `p2l-caa-prefer.mjs` 第三次犯同類錯**：把 Abbado《Wozzeck》換成《Carmen》的封面
+  （兩邊都沒編號、空集合直接放行）。已補標題實詞比對。
+- **移除／待裁定的判準**：MB 找不到掛名正確又有封面的發行時，**看該演出者在池裡還有沒有別張**——
+  有就移除，沒有就標 `needsRuling` 留給店主。累計移除 7 張、待裁定 30 張。
+  **待裁定的共通點是「MB 只認演出者掛名、不認歷史意義」**：二十世紀作品常只掛作曲家
+  （Berio 的《Sequenza III》就是為 Berberian 寫的，但她不在掛名裡）；
+  台灣曲目根本沒建檔（馬水龍、許常惠的 release-group 數是 0）。
+- **⚠ 我收回一個判斷**：移除 c-14 的 Ensemble InterContemporain 那張時，理由是「本團在 c-13 已有一張」，
+  但 c-13 那張後來也查出掛名與曲目對不上（那兩首是紐約愛樂／Boulez 錄的）。**前提已失效**，
+  已在註記寫明，店主可考慮復原 c-14 那張。
+- **試聽**：c-12 apple 10／yt 15／unavailable 1；c-13 apple 10／yt 15／unavailable 0。
+  新抓到的錯配型態：**改編版**（La Monte Young 配到吉他改編版，已判 unavailable）。
+  自指卡的試聽要加驗「頁面上看得到自指的班底」（Stravinsky 那張驗 Columbia Symphony）。
+- **Gate**：兩批 prepare 皆 0 error；published 各 15 error＝待貼 YT 張數。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-13.json`，累計 **245 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+51）、`data/apple-audio-map-v1.json`（entries 7,650／runtime 6,851）、
+  `card-preview-status.js`（+1）、`classical-expansion/onboarding/`（caa-check.mjs、p1ak–p1aq、
+  audit-shipped-*、AUDIT-shipped-credits.json、manifest-c-12/c-13、RUNBOOK.md）、
+  `desc-restyle/batches/`（add-20260815-c12／c13 全套）。
+
+### 2026-08-15｜mood-quiz（無 git）｜心情判定公式二次檢驗：維持現行公式，新增體檢工具
+
+店主要求用新模型重新檢驗 `classify.mjs` 的判定公式。做了五項檢驗，結論是**公式不改**：
+
+- 新增 `mood-quiz/mood-audit.mjs`（可重用診斷）：方向判別力（刻意往原型方向答的召回率）、
+  穩定性（換一題答案的翻盤率 40.4%）、險勝程度（14.6% 判定為幾乎並列）。
+- 證實「正規化＋歐氏距離」存在座標長度偏差（原型座標長度 1.73～3.0 不等，短座標占便宜），
+  但改純 cosine 只救 lowtide（召回 28→40%），still／restless 反而掉，不是全面贏。
+- 弱原型（flame 18%、still 20%、anchor 20% 召回）的病根是**題庫訊號稀缺**，不是公式：
+  全池各方向訊號量 O− 只有 11 分、M+ 24、E+ 29（對比 S− 67、M− 63、X− 52）。
+  座標微調（still 純 E−、flame 純 E+、anchor 降 O）測過，幾乎不動甚至變差。
+- 錯判全落在語意相鄰的原型（still→hermit、anchor→keeper、lowtide→hermit），
+  推薦出的專輯與文案仍然對味，玩家無感，屬可接受的優雅退化。
+- 要真正救弱原型只有一條路：往題庫補明亮／高能量／戀舊方向的選項（改題庫，另案）。
+- 主要檔案：`mood-quiz/mood-audit.mjs`（新增）；`classify.mjs`、`banks/mood-targets.json` 未改動。
+  一次性對照腳本（cosine、座標微調）已刪除，結論記錄於此。
+
+### 2026-08-15｜mood-quiz（無 git）｜選項五維向量標註第三批完成（mv-in3 → mv-out3，50 筆）
+
+依 `banks/mood-spec.md` 規格，把 `banks/mood-batches/mv-in3.json` 的 50 個測驗選項
+（q_026～q_037 各 4 個選項、q_038 前 2 個選項）標上 E/M/X/O/S 五維分數，寫入
+`banks/mood-batches/mv-out3.json`（純 JSON 陣列，50 筆全涵蓋，五軸皆標數字）。
+
+- 50 筆中 11 筆五軸全 0：q_027-1「沒有做選擇，一直等待」、q_028-0「自由，有錢才有選擇」、
+  q_029-1／-2（財務自由／做自己喜歡的事）、q_031-1（相信但需要運氣的折衷答案）、
+  q_033-3（冷天，訊號太弱）、q_034-3（沒想過這問題）、q_035 整組四選項（對氣味敏不敏感，
+  題材本身不落在五軸定義內，未硬掰訊號）。
+- 依規格判準套用：q_030-0「穩定，不喜歡變動」與 q_030-2/-3「深度／廣度」直接沿用規格書
+  範例分數（O-2+S+1、S+2、O+2）；q_030-1「自由，不被框架綁住」判給 S-1（抗拒被框架綁住＝
+  抗拒秩序，非明暗或內外訊號）；q_038-0/-1（整齊才能放鬆／有點亂沒關係）比照規格書「整齊
+  app分類好」「亂的但知道在哪」給 S+2、S-1。
+- 特別注意 O 軸與 M 軸別漏標：q_027-3「失去現在擁有的」、q_028-1「安全感，有存款才安心」
+  給 O-1（怕變動＝保守，不是秩序）；天氣／光線題組（q_033、q_034）逐一檢視是否透露明暗
+  心情，晴天光線好心情給 M+2、暗越暗越好給 M-2、陰天／昏黃燈光等弱訊號給 M-1 或改標 X-1
+  （視文字重點是「氛圍暗」還是「獨處感」而定）。
+- 焦慮／困擾類判準本批未直接出現對應選項；內向不順手帶 M 的判準用於 q_033-2「下雨，有種
+  被包圍的感覺」（只給 X-1，不加 M）、q_034-1「昏黃的燈光」（只給 X-1，不當成低落）。
+- 極值（±2）只在單一選項最多一軸使用：q_030-0（O-2）、q_030-2（S+2）、q_030-3（O+2）、
+  q_033-0（M+2）、q_034-2（M-2）、q_038-0（S+2）。
+- 五軸訊號分布：E 5 筆、M 8 筆、X 8 筆、O 4 筆、S 16 筆（O 軸偏低是因本批問題多集中在
+  金錢觀／後悔／照片習慣等題材，天生較少獵奇⇄保守的落點，非漏標）。
+- 驗證：Node 腳本核對 50 筆 id 與輸入檔一一對應、每筆五軸皆為 -2~2 整數、逐筆檢查
+  無單選項雙極值、統計全 0 筆數與各軸訊號數。
+- 主要檔案：`mood-quiz/banks/mood-batches/mv-out3.json`（新產出）；
+  讀取 `mood-quiz/banks/mood-spec.md`、`mood-quiz/banks/mood-batches/mv-in3.json`（未改動）。
+
+### 2026-08-15｜mood-quiz（無 git）｜選項五維向量標註第二批完成（mv-in2 → mv-out2，50 筆）
+
+依 `banks/mood-spec.md` 規格，把 `banks/mood-batches/mv-in2.json` 的 50 個測驗選項
+（q_013-2/-3、q_014～q_025 各 4 個選項）標上 E/M/X/O/S 五維分數，寫入
+`banks/mood-batches/mv-out2.json`（純 JSON 陣列，50 筆全涵蓋，五軸皆標數字）。
+
+- 50 筆中 15 筆五軸全 0（迴避型或題材本身不落在五軸定義內，如「你上一次說謊是為了什麼」
+  整組 q_017-0～3 四個選項判定與 E/M/X/O/S 都無乾淨對應，故整組給 0，未硬掰訊號）。
+- 依規格判準套用：焦慮／困擾類（q_019-2「焦慮，很多事情還沒解決」、q_020-2「很煩躁，對小事
+  反應過度」、q_022-0「有，而且很困擾我」）標 E 正、S 負，不當成低能量；獨處類選項（q_013 系列、
+  q_018-2、q_020-3、q_021-1、q_024-2）只給 X 負，不順手加 M；q_018-0「精心安排的驚喜」S 正、
+  O 正分開標，q_018-1「不用特別」只給 O 負，不算保守混講究。
+- 極值只在單一選項最多一軸使用：q_014-2/-3（M-2）、q_013-3／q_015-3（X-2）、
+  q_024-0（X+2，因「害怕＋不喜歡一個人」訊號強於一般獨處偏好）、q_024-2（X-2）。
+- 驗證：50 筆 id 與輸入檔一一對應、每筆五軸皆為 -2~2 整數、逐筆檢查無單選項雙極值。
+- 主要檔案：`mood-quiz/banks/mood-batches/mv-out2.json`（新產出）；
+  讀取 `mood-quiz/banks/mood-spec.md`、`mood-quiz/banks/mood-batches/mv-in2.json`（未改動）。
+
+### 2026-08-15｜mood-quiz（無 git）｜見證句最後 21 張殘留問題修補完畢（wfinal-in1 → wrepair-out90）
+
+依 `banks/witness-spec.md` 規格，修補 `banks/witness-batches/wfinal-in1.json` 標出的
+21 張專輯見證句問題，寫入 `banks/witness-batches/wrepair-out90.json`（純 JSON，21 筆全涵蓋，兩句都回傳）。
+
+- 過長 4 張真的超字（JAY-Z、Timbaland & Magoo、Miles Davis《Milestones》L2、Deltron 3030）已縮短，
+  保留專有名詞與唯一具體細節。
+- **發現工單「過長」標記系統性誤判**：凡藝人名是專輯名的子字串（如 Scientist、
+  Thelonious Monk with John Coltrane、Cookin' with the Miles Davis Quintet、
+  Louis Armstrong Plays W.C. Handy、The Yes Album），扣字工具會把整段專輯名算回字數，
+  導致 wfull-0235／0238／0424／0550／0902 共 6 句被誤標過長。用「先扣《專輯名》整段、
+  再扣藝人名、再扣〈歌名〉」的正確算法重新驗證，這 6 句實際都在 55 字內，已改回原文，
+  未做不必要的砍字（避免誤刪 Red Garland 等具體人名）。
+- **簡體字「后」判定為誤報，刻意不改**：wfull-0526（歌后）、wfull-0745／0781／0871（皇后區）
+  四句被標「簡體字后」，但「后」在「皇后／歌后」語境本來就是正體字正確用法（簡化字合併的是
+  「後」→「后」，不是這個意義），改成「皇後區」反而是造字錯誤，四句原文照抄未動。
+- 其餘缺藝人名／缺專輯名／中英無空格／AI慣用詞／錯字專輪→專輯，逐句照規格修正
+  （含 wfull-0198、0282、0821 因引號或連接詞不符工單 artist 欄位精確字串被判缺名，已改用
+  artist 欄位原始字串；wfull-0550 L2 順手把「Armstrong」補成完整「Louis Armstrong」）。
+- 驗證：Node 腳本逐句核對「扣除藝人名/專輯名/〈歌名〉後 ≤55 字」「藝人名／專輯名都存在」
+  「無簡體字」「中英間有空格」「無 AI 慣用詞／禁用句式」「無錯字」，21 筆 42 句全數通過。
+- 主要檔案：`mood-quiz/banks/witness-batches/wrepair-out90.json`（新產出）；
+  讀取 `mood-quiz/banks/witness-spec.md`、`mood-quiz/banks/witness-batches/wfinal-in1.json`（未改動）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-11 共 33 張上架，seed 7,849；確立「什麼時候移除、什麼時候留給店主」的判準
 
 seed 7,816 →**7,849**，classical 擴充累計 **329 張上架**。原 36 張，移除 3 張。
