@@ -275,5 +275,6 @@ window.DipPreviewStatus = Object.freeze({
   "kenneth gilbert|couperin: second livre de clavecin": "unavailable",
   "alfred deller|purcell: dido and aeneas": "unavailable",
   "sigiswald kuijken|bach: brandenburg concertos": "unavailable",
-  "robert casadesus|mozart: piano concertos 23 & 24": "unavailable"
+  "robert casadesus|mozart: piano concertos 23 & 24": "unavailable",
+  "josef hofmann|casimir hall recital (1938)": "unavailable"
 });

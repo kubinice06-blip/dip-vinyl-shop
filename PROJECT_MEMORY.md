@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-07 共 35 張上架，seed 7,707；試聽驗證補上「作品 token」第二道關卡
+
+seed 7,672 →**7,707**。這批最重要的產出是**把只驗演奏者的試聽比對補成兩道關卡**，當場擋下三個錯配。
+
+- **⚠ 只驗演奏者 token 會放行「同一人的另一份錄音」**：`p5d-generic` 的搜尋補救對每張只檢查演奏者姓氏，
+  c-07 因此把 John Williams《Rodrigo: Concierto de Aranjuez》配到了他的另一場《in Seville》、
+  把 Josef Hofmann《Casimir Hall Recital (1938)》配到《SoundScape For Film, Vol. 28》。
+  新增 `p5e-worktoken.mjs`：用專輯名去掉作曲家名與編制通稱後剩下的詞當「作品 token」，
+  要求配到的歌單標題至少命中一個。兩張當場被擋下，改用 `p5f-manual-c07.mjs` 的人工指定查詢重配。
+- **人名陷阱（記一筆）**：Hofmann 本名就是 **Josef Casimir Hofmann**，
+  用「casimir」當作品 token 會命中人名而非卡西米爾廳，一度誤判通過。
+  最終判定 **unavailable**——YT 上他的東西全是自動鋼琴捲軸轉錄（The Condon Collection、
+  Masters of the Roll、Piano Soundscapes），沒有 1938 年那場實況。已寫進 `card-preview-status.js`。
+- **兩張錯釘覆查（結論相反，都記下來）**：
+  - Yundi《Chopin Recital (2001)》**確實釘錯**，原指向 2012 年雙輯合輯《Chopin and Liszt Recital》，
+    改釘 2001 年《Yundi Li: Chopin》(c0a20471)。
+  - Byron Janis《The Mercury Masters》**沒釘錯**，是研究層誤讀（p1／p2／卡單三處都已是正確的 5efe6b20）。
+    年份維持研究稿查證的 1962（1962 年 6 月莫斯科錄音、同年 Mercury 首發），套裝本身 2023-03-24 發行。
+  - 改釘一律用 `p1n3-apply-c07.mjs` 這類腳本**同步寫回 identity／covers／卡單三處**。
+- **hook 層要用拉丁原文（三組寫手都回報的結構性問題）**：hook 一字不改是鐵則，
+  但研究稿 facts 用中文譯名，hook 若照抄就會讓同一張卡出現「舒伯特」與 Schubert 兩種寫法。
+  寫作層目前的權宜做法是內文改用「這位作曲家」迴避。**已在 c-08 的 hook 派工詞加上這條**，
+  日後 hook 層一律直接寫拉丁原文。
+- **研究稿補件**：Kremer《Piazzolla: El Tango》漏填 `yearVerified`，依 Nonesuch 官方頁補為 1997（1996 錄音）。
+- **QA**：出稿 35/35 通過、人工覆核 0 命中；零新事實 5 處標記全是中文譯名假陽性
+  （拉赫曼尼諾夫、基里爾·孔德拉辛等——注意譯法有多種，比對腳本別只寫一種）。
+- **試聽**：apple 12／yt 22／unavailable 1。**Gate**：prepare 0 error；published 22 error＝待貼 YT 張數。
+- 主要檔案：`seed_cards.json`（+35）、`data/apple-audio-map-v1.json`（entries 7,575／runtime 6,776）、
+  `card-preview-status.js`（+1）、`classical-expansion/onboarding/`（p5e/p5f/p5g、p1n 系列、manifest-c-07、
+  repaste-c-07）、`desc-restyle/batches/`（add-20260815-c07 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-06 共 36 張上架，seed 7,672；補上三支缺漏的通用寫入腳本
 
 c-06 走完整條管線上架，seed 7,636 →**7,672**。這一批的重點不在卡片本身，而在**把前五批靠人工逐次操作的三個
