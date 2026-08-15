@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-11 共 33 張上架，seed 7,849；確立「什麼時候移除、什麼時候留給店主」的判準
+
+seed 7,816 →**7,849**，classical 擴充累計 **329 張上架**。原 36 張，移除 3 張。
+
+- **⚠ 這批又是 5 張釘錯，而且錯法各不相同**（c-10 是版本錯，這批是結構性錯）：
+  - Ansermet《Ravel: Complete Orchestral Works》→ 釘到單一舞劇《Daphnis et Chloé》
+  - Stokowski《Bach: Transcriptions》→ 釘到 **José Serebrier 的 2006 年重錄**，Stokowski 只是改編者
+  - Szell《Dvořák: Symphony no. 8》→ 該片的第八號其實是 **Kubelík** 指揮的（只有大提琴協奏曲是 Szell）
+  - Fischer-Dieskau《Mahler: Kindertotenlieder》→ 同片的第七號是 **Kubelík**
+  - Ormandy《Rachmaninoff: Symphonic Dances》→ 釘到的是第二號交響曲
+  **新增一條必查**：release-group 掛兩位指揮時，卡片指名那首可能是**另一位**指揮的；
+  「改編者」不等於「演出者」。
+- **移除／留下的判準定案**：MB 上找不到掛名正確又有封面的發行時，
+  **看該演出者在池裡還有沒有別張**——有就移除，沒有就標 `needsRuling` 留給店主。
+  理由：移除等於讓一位重要音樂家從卡池消失，那不該由主線單方面決定。
+  依此移除 6 張（Flagstad、Toscanini、Barenboim／Divan、Abbado 的 Wozzeck、Kondrashin 的第四號、
+  Ensemble InterContemporain 的 Poème），留下 7 張待裁定。
+- **唯一一次自行改卡名**：Ormandy 全池只有那一張卡，MB 又沒有他《交響舞曲》帶封面的發行，
+  依「換成該演出者代表作」原則改成《Rachmaninoff: Symphony no. 2》（1959 費城錄音、1960 首發）。
+  ⚠ 改名後試聽候選檔還掛著舊卡名，p6 組裝時報「無試聽決定」才發現，已補。
+- **⚠ `p2l-caa-prefer.mjs` 第三次犯同類錯**：把 Abbado《Wozzeck》換成了《Carmen》的封面。
+  前兩次是漏驗編號，這次是兩邊都沒編號、空集合直接放行。
+  已補標題實詞比對：**卡片標題有實詞時，候選標題至少要命中一個，全是通用詞才退回只看編號。**
+- **⚠ 台灣與亞洲曲目走不通這條管線**（結構性，已寫進 RUNBOOK 四之五節）：
+  身分那關要求 MB 有 release-group ＋ CAA 有封面，但馬水龍在 MB 的查詢直接回 count=0、
+  江文也只有一張無封面的鋼琴集、盧律銘的《返校》電影原聲帶未建檔。
+  **c-21 整批是台灣與亞洲區塊，24 張只解出 13 張，八成同一個原因。**
+  這類卡一律標 `needsRuling` 留在原地，等店主決定要不要另開封面來源。
+- **順手查清一組撞號**：c-08 已上線的 Menuhin《Elgar: Violin Concerto (1932)》與 c-25 的
+  Beatrice Harrison 共用同一個 rgMbid。查曲目後確認**已上線那張是對的**（Elgar 親自指揮的
+  小提琴＋大提琴協奏曲耦合），要改的是還沒做到的 c-25（那張碟裡沒有 1924 年的夜鶯廣播），已標記。
+- **試聽**：apple 12／yt 21／unavailable 0。**Gate**：prepare 0 error；published 21 error＝待貼 YT 張數。
+- **身分自動化進度**：c-09 之後未解由 110 降到 **上架批次全清**，全表 618/765 已解。
+- **待店主動手**：後台貼 `album_overrides-repaste-c-01…c-11.json`，累計 **215 張** YT 試聽。
+- 主要檔案：`seed_cards.json`（+33）、`data/apple-audio-map-v1.json`（entries 7,630／runtime 6,831）、
+  `classical-expansion/onboarding/`（p1aa–p1aj、p2l 修正、p2o/p2p、p5j、manifest-c-11、repaste-c-11、
+  RUNBOOK.md）、`desc-restyle/batches/`（add-20260815-c11 全套）。
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-10 共 36 張上架，seed 7,816；歷史名家批次的釘錯率是前面各批的五倍
 
 seed 7,780 →**7,816**，classical 擴充累計 **296 張上架**。
