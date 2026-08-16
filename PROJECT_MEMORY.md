@@ -1,5 +1,81 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（後續）｜dip-vinyl-shop｜六張線上破圖修復、積壓批查核（假警報）、發現 36 張舊卡封面已腐爛
+
+上一筆的六批上架完成後接著做的事。**最重要的產出是一份未完清單**，見
+`classical-expansion/onboarding/RUNBOOK.md` 第七節。
+
+## 一、CAA 封面正在腐爛，而且只會愈來愈多
+
+`audit-caa-health.mjs`（新寫）把整批 manifest 的 CAA 網址多輪實測（第一輪每張 3 次，
+非全綠的再測 6 次，命中率 < 50% 判要換）：
+
+| 範圍 | CAA 封面 | 判要換 | 比例 |
+|---|---|---|---|
+| c-22～c-27（本日新上架） | 132 | 3 → **已修** | 2.3% |
+| c-01～c-11（幾週前上架） | 348 | **36 → 未修** | 10.3% |
+| c-12～c-21 | 未稽核 | — | 推估約 30 張 |
+
+**確認不是暫時性的**：隔一段時間對其中 12 張再測第三輪（每張 5 次）只中 11/60，
+Klemperer《馬太受難曲》與 Landowska《郭德堡》三輪共 14 次全 500。
+名單裡不少是招牌卡（Furtwängler 拜魯特第九、Oistrakh、內田光子、Perlman、Cortot）。
+完整名單與逐次 HTTP 狀態在 `caa-health-c01to11.json` 的 `bad` 陣列。
+
+**為什麼一定要整批掃、不能逐張追**：gate 每張只做**一次** GET。同一份 c-23 manifest
+連跑三次，分別報 Kremer+Fiedler、Kremer、Pappano——逐張追等於在追隨機數。
+
+本日已修六張（Kremer、Fiedler、Corelli、Pappano、Julia Wolfe、Georg Friedrich Haas），
+流程：`fix-cover-only.mjs` 改三處（身分檔 hint／`p2-covers-<批>`／manifest）→ prewarm 進
+Firestore `card_catalog`。**這支刻意不碰 `preview`、不重跑 `p6-generic`**——
+店主已把 95 筆試聽貼進 `album_overrides`，重跑會重算 mapKey。
+
+## 二、「c-04～c-08 還有 45 張沒上架」是我製造的假警報
+
+盤點 `p1j-identity.json` 的 `resolved: false` 得到「45 張積壓」，派五支代理去攻，
+第一支就回報那批多數早已上架、只是結果沒回寫身分檔。
+
+成因是我的比對腳本：`seed_cards.json` **是陣列的陣列**（`[0]` 藝人、`[1]` 專輯），
+我寫成 `seed.map(r => r.artist + '|' + r.album)`——物件式取值在陣列上全是 `undefined`，
+每列的鍵都變成 `"|"`，**比對等於沒做**。
+
+改對後的真相：53 張「未解決」裡，46 張其實已上架（其中一批是當年改名後上架的，
+《Mozart: Idomeneo》線上是《Die Zauberflöte》、《Beethoven: Sonatas on period pianos》
+線上是《Les sonates pour le pianoforte》）；**真正沒上架的只有 6 張**，
+已收成 c-28（Rostropovich、Kubelík、Neuhaus、Ensemble InterContemporain、Midori、
+Minkowski），管線尚未開跑。另有 5 張待店主裁定（Brico、Courtney Bryan、錢南章、
+Slatkin、Martinon），其中三張卡在「四條路都找不到封面」，需要店主自備圖檔。
+
+**同一天第三次栽在「資料形狀假設」上**（前兩次是 preflight 的陣列／物件、p2-covers 的
+寫死鍵）。共同徵兆是**結果整齊得不合理**——0 張重複、167 張全部缺鍵、70 張全部找不到。
+
+## 三、我憑印象寫進派工詞的一條規則不存在
+
+「一位藝人只能有一張卡」——卡池實況是 3,790 位藝人裡 1,790 位有多張
+（Karajan 11、Richter 5、Colin Davis 4、Miles Davis 24），`ALBUM_ONBOARDING.md` 沒有這條。
+已即時發訊息更正四支還在跑的代理，並把依此誤判 `remove` 的 Martinon 退回重做。
+**代理回報「你給的規則跟我查到的實況不符」時，先查實況再回答。**
+
+## 四、hook 與專輯錯配：49 張改名卡查出 6 張，但**不影響線上**
+
+改過名的卡，`hook` 可能還在講原來那張專輯（Henck 的 hook 講自動鋼琴打孔，唱片卻正好是
+Nancarrow 投入自動鋼琴「之前」寫給真人彈的曲子；Biggs 的 hook 講跑遍歐洲錄古琴，唱片
+卻錄在哈佛 1958 年新裝的 Flentrop）。
+
+查證後確認**不是線上缺陷**：`hook` 是管線內部欄位，`seed_cards.json` 沒有它、前台程式也
+不讀它；而且**簡介全部寫對了**——寫手用的是研究層事實不是 hook。改寫版存在
+`hookcheck-out.json`，要不要回填是整潔問題不是品質問題。
+（順帶查證：10 張 hook 字串裡的「（版本待確認）」工單記號同樣沒有外洩到簡介或卡池。）
+
+**主要檔案**：`seed_cards.json`（Amadeus Quartet《Haydn: op. 76》年份 2002→1970，
+2002 是再版年、錄音 1963-09～1970-05 依彙編規則取跨度結束年）；
+`classical-expansion/onboarding/` 下 `audit-caa-health.mjs`、`fix-cover-only.mjs`、
+`p1-make-c28.mjs`、`pm-insert.mjs`、`BRIEF-backlog-idfix.md`、`caa-health-c01to11.json`、
+`caa-health-c22to27.json`、`hookcheck-out.json`、`idfix-out-bl1`～`bl5.json`、`RUNBOOK.md`。
+
+**驗證**：六批 published gate 在店主貼完試聽後全部 0 error（c-23 與 c-27 的殘餘 error
+就是上述破圖，修完歸零）；六張新封面 Node fetch 實測 200 並已推進 Firestore。
+
+
 ### 2026-08-16（續三）｜dip-vinyl-shop｜心情選歌結果頁新增「專輯介紹」小按鈕＋浮動視窗
 
 店主指示：心情選歌的欄位加一顆小按鈕「專輯介紹」，點開是浮動視窗看專輯的正式介紹。
