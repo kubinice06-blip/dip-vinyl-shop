@@ -285,5 +285,6 @@ window.DipPreviewStatus = Object.freeze({
   "peter serkin|takemitsu: piano works": "unavailable",
   "chou wen-chung 周文中|pien - yü ko - cursive - the willows are new": "unavailable",
   "zhou long 周龍|rhymes": "unavailable",
-  "toshi ichiyanagi 一柳慧|music for piano": "unavailable"
+  "toshi ichiyanagi 一柳慧|music for piano": "unavailable",
+  "shui-long ma 馬水龍|素描・台灣：馬水龍鋼琴獨奏作品全集": "unavailable"
 });

@@ -1,5 +1,127 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16｜dip-vinyl-shop｜古典 c-22～c-27 共 167 張上架，classical 破 1000；另修 45 張已上架卡的年份
+
+卡池 8,147 → **8,314**，`classical` 標籤 884 → **1,051**，`POOL_BALANCE_PLAN.md` 訂的
+「古典補到 1000 張」目標達成。六批的 prepare gate 全 **0 error**；published gate 的 error 數
+在店主貼完試聽前**精準等於待貼張數 95**（23／19／11／14／15／13），店主貼完後歸零
+（殘餘的 error 全是 CAA 抽風，見下）。
+
+| 批次 | 張數 | 性質 |
+|---|---|---|
+| c-22 | 34 | 指揮與獨奏名家（北歐、英國、法國、歌劇） |
+| c-23 | 32 | 古樂復興、當代、跨界、通俗管弦 |
+| c-24 | 35 | 二十一世紀在世作曲家 |
+| c-25 | 24 | 二十世紀初歷史錄音名家 |
+| c-26 | 24 | 歷史聲樂／早期音樂 ＋ 台灣華語 8 張 |
+| c-27 | 18 | 前面幾批擱置多年、這輪才攻下來的 |
+
+封面來源 CAA 135／Spotify 22／Apple 或人工 10；試聽 YouTube 95／Apple 71／無來源 1
+（馬水龍《素描・台灣》，已登記進 `card-preview-status.js`）；走人工身分（`rgMbid` 留空）14 張。
+
+**另外修了 45 張「已上架卡」的年份**，分兩批稽核：
+
+1. **36 張**：作曲家掛名的卡寫成專輯發行年。規則是**作曲家掛名 → 作品創作／首演年**，
+   **演奏者掛名 → 該錄音最早公開發行年**（具名演出取演出年、實況復刻取演出年、
+   彙編取跨度的結束年）。
+2. **9 張**：卡名括號裡自己寫著年份、但 `[6]` 欄位不符
+   （Gould & Bernstein 1998→1962、Hofmann 1976→1938、Django 2012→1951…）。
+   這條稽核**不需要任何外部查詢**——`audit-named-year.mjs` 一個正則就抓得到，
+   以後每批都該順手跑。
+
+`yearfix-apply.mjs` 寫入前會先做**逐字元 round-trip 檢查**（讀進來再序列化必須跟原檔完全相同，
+不同就中止）。沒有這道保險，這支腳本會把 8,000 行的 `seed_cards.json` 整檔重排，
+37 張的改動會淹沒在 diff 裡。實際 diff 是乾淨的 36 insertions／36 deletions。
+
+## 管線這輪修掉的坑（都是同一類：資料形狀假設）
+
+1. **`preflight.mjs` 把陣列當物件**——研究稿早期古典批是**物件**、c-22 起是**陣列**，
+   對陣列跑 `Object.keys()` 拿到 `"0","1","2"…`，於是 167 張**全部**報「研究稿缺此鍵」。
+   跟先前 `merge-writer-input.mjs` 的 NaN 是同一類錯。**全體一致的失敗＝檢查本身壞了。**
+2. **`add-20260815-` 前綴寫死**在 `p6-generic` / `preflight` / `p5h-yearcheck` 三支裡，
+   換批就會讀到不存在或別批的檔。抽成 `batch-name.mjs`，用 glob 反查真實檔名。
+3. **`p2-covers.mjs` 來源計數寫死鍵**：人工身分卡的 `coverSrcHint` 會是新值，
+   `undefined++` 變 NaN、JSON 印出來是 `null`。改成動態 `bump()`。
+4. **`p6-generic.mjs` 把非 CAA 的網址標成 `caa`**。gate 不會反查網址與宣告來源是否相符，
+   **標錯它會靜靜通過**。改成按網址前綴判定。
+
+## 派工詞的兩個系統性缺口（比腳本 bug 貴）
+
+**一、人工身分路線只給了五支代理裡的兩支。** 結果四支裡有三支回報同一種 `ruling`，共 13 張
+（Carlos Simon、Neuwirth、Czernowin、Courtney Bryan、Jan Kubelík、Suggia、Beatrice Harrison、
+Martinon、Prêtre、Minkowski、Slatkin…）。
+**MusicBrainz 沒建檔在當代作品、歷史復刻與非西方曲目上是常態，不是例外**——
+人工身分不是台灣曲目的特例，是這條管線對付 MB 覆蓋率不足的通用手段。
+以後每一份身分派工詞都要同時給四條路：**MB 正常釘 → 改名 → 封面救援 → 人工身分 → 才是 ruling**。
+
+**二、代理為了壞掉的封面去犧牲正確的身分。** 兩支代理把「身分全查證過、只有 CAA 圖檔壞掉」
+的卡判成 `ruling` 或改釘到別張專輯（Kaljuste 被從一張正確的 ECM 換掉、Gibson 留 ruling）。
+`cover.source='spotify'` 本來就是 gate 允許的來源，**為了一個壞掉的圖檔去動卡池規格，代價不對等**。
+
+## 值得記住的技術事實
+
+- **CAA 回 500 與回 404 意義不同**：404 是沒有這張圖，**500 是索引裡有、但 archive.org 的物件壞了**。
+  暫時性與永久性要用「隔幾分鐘測兩輪、每輪至少 5 次」分辨——
+  Kremer 一度 0/8、十分鐘後 5/5（暫時），Reiner 6/6 全 500、Hantaï 1/8（真壞）。
+- **封面實測一律用 Node fetch，不要用 curl**。c-26 呂泉生那張的網址 curl 回 200、
+  Node fetch 直接 `CERT_HAS_EXPIRED`。gate 用的就是 Node fetch，而且**瀏覽器對憑證無效的
+  `<img>` 子資源會無聲擋掉**，硬放行就是前台破圖。
+- **`p4` 只用 UPC 查 Apple**，UPC 在 Apple 查無就整張跳過。但那些卡**用專輯名搜尋常常找得到**
+  （Reiner 與 Hantaï 都是）。`fix-apple-cover-preview.mjs` 一次解決兩件事：
+  換到穩定封面，順便把試聽從「待店主貼的 YT」升格成 Apple 靜態地圖。
+- **試聽貼完之後就不要再動 `preview`**。店主把 95 筆貼進 `album_overrides` 之後，
+  又有三張的 CAA 封面被驗出反覆 500（Kremer、Fiedler、Corelli）。Reiner／Hantaï 當時試聽還沒貼，
+  可以用 `fix-apple-cover-preview.mjs` 順手升格；這三張只能換封面，於是另寫
+  `fix-cover-only.mjs`——**直接改 manifest、不重跑 `p6-generic`**（重跑會連帶重算試聽與 mapKey）。
+  改完一定要跑 `4-prewarm-covers` 推進 Firestore `card_catalog`，否則前台還是拿到舊的壞網址。
+- **一次 gate 跑出來的 error 數不可靠**：同一份 c-23 manifest 連跑兩次，一次 1 error、一次 2 error。
+  gate 每張只做一次 GET，撞上 CAA 抽風就是隨機的。**error 數跳動時先懷疑 CAA，不是懷疑資料。**
+- **`apple-audio-runtime-v1.json` 的 key 是用 NUL 字元分隔的**，不是空格。
+  我照 `p6-generic` 的 `mapKey`（空格）去比對，70 張全部「找不到」——
+  那個結果本身就不合理（gate 只報 5 筆），**是比對方式錯了不是資料錯了**。
+- **試聽比對的兩層規則**（這輪定案，解掉 Melba／Kipnis／Colin Davis／Arrau／Gibson 五張）：
+  **錄音層（演奏者＋作品＋錄音年）必須完全相同；發行層（復刻廠牌、目錄號）可以不同，
+  但註記要寫明是哪個復刻版。**
+- **零新事實 QA 的偽陽性本身是訊號**：Fennell 改釘後我忘了重跑 `merge-writer-input`，
+  寫作輸入還掛著舊釘的 facts，QA 於是報事實對不上。**偽陽性等於在說某個資料流步驟被跳過了。**
+
+## ⚠ 「c-04～c-08 還有 45 張沒上架」是假的（同日稍後查出）
+
+上架完之後我盤點 `p1j-identity.json` 的 `resolved: false`，得到「45 張積壓待攻」的結論，
+派了五支代理去攻。第一支回報時打臉：**那批多數早就上架了**，只是結果沒回寫進身分檔。
+
+假名單的成因是我自己的比對腳本：`seed_cards.json` **是陣列的陣列**
+（`[0]` 藝人、`[1]` 專輯），我寫成 `seed.map(r => r.artist + '|' + r.album)`——
+物件式取值在陣列上全是 `undefined`，於是每一列的鍵都是 `"|"`，**比對等於沒做**。
+改對之後：53 張裡 27 張的 artist+album 逐字就在卡池，另有一批是當年改名後上架的
+（《Mozart: Idomeneo》線上是《Mozart: Die Zauberflöte》、
+《Beethoven: Sonatas on period pianos》線上是《Beethoven: Les sonates pour le pianoforte》）。
+
+**同一天第三次栽在「資料形狀假設」上**（前兩次是 preflight 的陣列／物件、p2-covers 的寫死鍵）。
+這類 bug 的共同徵兆是**結果整齊得不合理**——0 張重複、167 張全部缺鍵、70 張全部找不到。
+
+順帶更正一條我憑印象寫進派工詞的規則：**卡池沒有「一位藝人只能有一張卡」**。
+實況是 3,790 位藝人裡 1,790 位有多張（Karajan 11、Richter 5、Miles Davis 24）。
+已即時發訊息更正四支還在跑的代理，並把已依此誤判 `remove` 的 Martinon 退回重做。
+
+## 主線裁定
+
+- **馬水龍／賴德和維持作曲家掛名**。改成演奏者掛名會把兩位作曲家從卡池裡整個抹掉。
+- **Dudamel 保留《Fiesta》、樂團那張搬走**：Dudamel 的 hook 綁在 Danzón No. 2 上，
+  樂團的 hook 講的是 El Sistema，兩者不是同一件事——而且這個撞號是我自己造成的。
+- 裁定原則統一為**「卡片的價值載體是 hook」**：hook 講作品 → 換演奏者；hook 講演奏者 → 換專輯；
+  兩者都保不住才是 `ruling`。前一輪 18 張 `needsRuling` 用這套攻下 14 張。
+
+**主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`、
+`data/apple-audio-runtime-v1.json`；`classical-expansion/onboarding/` 下 `manifest-c-22`～`c-27`、
+`RUNBOOK.md`、`FINDINGS-c22to27.md`、`batch-name.mjs`、`yearfix-apply.mjs`、
+`audit-named-year.mjs`、`fix-apple-cover-preview.mjs`。
+
+**驗證**：六批 prepare gate 0 error；published gate 在試聽貼完前 error 數＝待貼 95 張，貼完後 0；
+KV 167 筆寫入（抽驗 12/12）；封面預熱 167/167 進 Firestore `card_catalog`；
+`apple-audio-map` 7,779 → 7,850、runtime map 7,051 筆。
+
+
 ### 2026-08-16｜mood-quiz（無 git）｜心情段落定調：同路人寫法、人稱資料化、Opus vs Sonnet 實測、第一批 40 張
 
 店主逐輪退稿逼出寫作規格，最後定調並開跑量產（總量 240 張分六批，本次完成第一批 40 張）。
