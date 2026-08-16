@@ -6167,8 +6167,38 @@ Celibidache《Bruckner 8》2024→1985（他終身不錄音，母帶 2024 年才
 驗證：seed diff 36/36；KV 兩筆 `wrangler kv key get` 讀回相符；兩張簡介字數 233／230，
 都在 gate 的 80–280 內。
 
+### 同一輪補上的另外兩道稽核
+
+第一道（卒年比對）只抓得到已辭世的人，所以又寫了兩道補洞，結論分別是「沒事」與「還有 9 張」：
+
+**第二道 `audit-living-composer-years.mjs`**——作曲家掛名的卡，卡面 year 是作品年，
+**沒有理由剛好等於某張唱片的首發年**，相等就可疑。掃 21 個 manifest 共 662 張，
+只回 1 張，還是 The Tallis Scholars 被姓氏比對誤判（團名裡有 Tallis）的假陽性。
+翻了 20 張作曲家掛名卡的 `yearNote`，**研究層早就逐張處理過了**
+（「卡單的 2025 是 rgMbid 那張唱片的發行年，改為首演年 1968」這種註記到處都是）。
+所以在世作曲家這個缺口實際上被研究層的 `yearVerified` 補住了，c-01～c-11 那批殘留才是第一道抓到的。
+
+**第三道 `audit-named-year.mjs`**——最硬的一道，不必查任何外部資料：
+**卡名括號裡自己就寫著年份**，卡面填別的數字就是卡片自己在打自己。**又抓到 9 張**，全部更正：
+
+| 卡片 | 原 | 改 |
+|---|---|---|
+| Glenn Gould & Bernstein《Brahms: Piano Concerto no. 1 (1962)》 | 1998 | 1962 |
+| Josef Hofmann《Casimir Hall Recital (1938)》 | 1976 | 1938 |
+| Django Reinhardt《Complete Edition (1934–1951)》 | 2012 | 1951 |
+| Glenn Gould《Bach: The Goldberg Variations (1981)》 | 1982 | 1981 |
+| Karajan《Der Rosenkavalier (1956)》 | 1957 | 1956 |
+| Furtwängler《Tristan und Isolde (1952)》 | 1953 | 1952 |
+| Fritz Busch《Don Giovanni (Glyndebourne 1936)》 | 1937 | 1936 |
+| Argerich《Debut Recital (1960)》 | 1961 | 1960 |
+| Yundi 李雲迪《Chopin Recital (2001)》 | 2002 | 2001 |
+
+第一道漏掉它們是因為判準是「year > 卒年」——這 9 張的差距多半只有一年，
+或藝人還在世（Argerich、Yundi），或不是古典（Django）。**這一道該定期重跑，成本近乎零。**
+
 ⚠ `index.html` 的 `gpArtistMetaLine()` 目前對古典整類不顯示年代小註記，理由寫的正是這個年份缺口。
-這次只修好了「已辭世藝人」那一半，在世作曲家的部分還沒解，所以**那段抑制先不要拿掉**。
+第二道證明缺口已比當初小得多，但那段抑制**先不要拿掉**——三道稽核都只覆蓋古典擴充的 manifest，
+早期非古典卡沒掃過。
 
 
 ### 2026-08-15｜dip-vinyl-home（classical-expansion）｜p1z：十張「卡單本身錯了」的卡逐張裁定
