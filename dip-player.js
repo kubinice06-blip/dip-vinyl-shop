@@ -219,6 +219,8 @@
       .dip-autoplay-hint{position:fixed;z-index:9999;max-width:calc(100vw - 24px);background:#fff;color:#111;border:1px solid #111;padding:5px 9px;font-family:'Space Mono',ui-monospace,monospace;font-size:9px;line-height:1.5;letter-spacing:.08em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:2px 2px 0 #111;pointer-events:none;opacity:0;transform:translateY(-4px);transition:opacity .35s ease,transform .35s ease}
       .dip-autoplay-hint::before{content:'';position:absolute;top:-4px;right:var(--dip-hint-arrow,16px);width:6px;height:6px;background:#fff;border-left:1px solid #111;border-top:1px solid #111;transform:rotate(45deg)}
       .dip-autoplay-hint.is-shown{opacity:1;transform:translateY(0)}
+      .dip-autoplay-toggle{font-family:'Space Mono',ui-monospace,monospace;font-size:12px;line-height:1;background:none;border:1px solid currentColor;padding:5px 7px;cursor:pointer;color:inherit;transition:opacity .15s}
+      .dip-autoplay-toggle.is-muted{opacity:.45}
     `;
     document.head.appendChild(style);
   }
@@ -249,6 +251,75 @@
     hintShowTimer = setTimeout(() => hintNode?.classList.add('is-shown'), 60);
     hintFadeTimer = setTimeout(() => hintNode?.classList.remove('is-shown'), 60 + duration);
     return true;
+  }
+
+  // ───────── 共用的自動播放開關 ─────────
+  // 每個有內建試聽的介面都需要同一組行為：開關圖示、三種提示、狀態同步、碰撞偵測後
+  // 自動回到靜音。過去這些在 battle 與 roguelike 各手刻一份，而**手刻的版本就是漏掉
+  // 授權檢查的來源**（碰一下卡片就停掉店主的串流）。改成這裡出一份，新增試聽介面
+  // 只要 createToggle() 就有完整且一致的行為。
+  const HINT_SEEN_KEY = 'dip:autoplay-hint-seen';
+  let autoHintShownThisVisit = false;
+  const DEFAULT_TOGGLE_HINTS = {
+    first: '♪ 點這裡開啟自動試聽',
+    auto: '♪ 自動試聽中 · 點這裡可關閉',
+    revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
+  };
+
+  function createToggle(container, options = {}) {
+    if (!container?.appendChild) return null;
+    addStyle();
+    const hints = { ...DEFAULT_TOGGLE_HINTS, ...(options.hints || {}) };
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = ['dip-autoplay-toggle', options.className || ''].filter(Boolean).join(' ');
+    const sync = () => {
+      const on = autoplayPreference() === 'on';
+      button.textContent = on ? '🔊' : '🔇';
+      button.setAttribute('aria-pressed', String(on));
+      button.setAttribute('aria-label', on ? '關閉自動試聽' : '開啟自動試聽');
+      button.classList.toggle('is-muted', !on);
+    };
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      const enable = autoplayPreference() !== 'on';
+      setAutoplayPreference(enable);
+      sync();
+      if (enable) {
+        // 這一下就是使用者的授權手勢，順手把音訊武裝起來（iOS 只認同步手勢）。
+        unlock();
+        autoHintShownThisVisit = true;
+        showHint(button, hints.auto);
+      }
+      try { options.onToggle?.(enable); } catch (_) {}
+    });
+    container.appendChild(button);
+    sync();
+    // 每次造訪第一次真的出聲時提示一次關閉方法。偵測不到「我們蓋過別人的串流」
+    // （系統只通知被搶的一方），所以用「每次造訪開聲必提示」把那個情境涵蓋進來。
+    const offState = onStateChange(state => {
+      sync();
+      if (!autoHintShownThisVisit && state.status === 'playing') {
+        autoHintShownThisVisit = true;
+        showHint(button, hints.auto);
+      }
+    });
+    const offRevoke = onAutoplayRevoked(() => { sync(); showHint(button, hints.revoked); });
+    // 裝置從未表態：靜音，但要讓玩家知道有這個功能。整台裝置只提示一次。
+    if (autoplayPreference() === 'unset') {
+      let seen = false;
+      try { seen = localStorage.getItem(HINT_SEEN_KEY) === '1'; } catch (_) {}
+      if (!seen) {
+        try { localStorage.setItem(HINT_SEEN_KEY, '1'); } catch (_) {}
+        setTimeout(() => showHint(button, hints.first), 900);
+      }
+    }
+    return {
+      el: button,
+      sync,
+      destroy() { offState(); offRevoke(); button.remove(); }
+    };
   }
 
   function setProvider(provider) {
@@ -1366,6 +1437,6 @@
   window.DipPlayer = {
     mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
     hasAutoplayConsent, grantAutoplayConsent,
-    autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint
+    autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint, createToggle
   };
 })();

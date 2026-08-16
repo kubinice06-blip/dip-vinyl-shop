@@ -6392,6 +6392,36 @@ Big K.R.I.T.《4eva Is a Mighty Long Time》(6670)；
 其餘 22 張傾向保留（Madlib／DOOM／billy woods／Earl 等有爵士取樣痕跡但無法逐軌指名來源）。
 
 
+### 2026-08-10（同日第四次追加）｜shop｜自動試聽開關做成共用元件，套用到全站試聽介面
+
+店主要求「所有內建試聽的地方都要能自己切換自動播放」。
+
+**做法：`DipPlayer.createToggle(container, {hints, onToggle})`。**
+開關圖示、三種提示（裝置首次／每次造訪第一次出聲／偵測到串流搶回）、狀態同步、
+碰撞偵測後自動回靜音，全部封裝在 `dip-player.js` 一份。
+**這正是前一筆教訓的落實**——battle 與 roguelike 各手刻一份的版本，就是漏掉授權檢查、
+害店主串流被停掉的來源；往後新增試聽介面只要 `createToggle()` 就有完整且一致的行為。
+
+**套用範圍（index.html 三處，各一顆單例開關）**
+- 抽卡結果（類型挑片／直接來一張／心情選歌）：原本抽到就自動播，現在受開關控制。
+- 唱片櫃唱盤：點唱片照樣上盤換封面，但沒開試聽就不出聲。
+- 專輯搜尋：同上。
+介面會重繪，所以開關本體只建立一次、之後搬進新佔位元素——否則每次重繪都疊一組
+`onStateChange` 訂閱。沒開試聽時點唱片會用提示指向開關，不會讓人以為壞掉。
+
+**另修**：`gpEnsurePlayer()` 原本無條件 `unlock()`，且有一條 `pointerdown` capture
+監聽對 `.homehub-card / #genreContent / [data-special-draw] / [data-collect]` 全面預先解鎖
+——又一個「碰一下就武裝音訊」的呼叫點。改成手動按試聽鈕才帶 `grant:true`。
+
+**index.html 含一個 NUL 位元組**（約 offset 157198），ripgrep 會判定為二進位檔並提早
+停止搜尋——**盤點呼叫點時漏掉 index.html 的風險就從這裡來**。掃這支檔案要用 node，
+不要相信 rg 的結果。
+
+驗證：`createToggle` 元件行為逐項通過（未表態顯示 🔇、按下寫入 'on' 並武裝
+ctx=running/keepAlive=playing、再按回 'off'、onToggle 正確回傳）；三處佔位與掛載齊全；
+四支檔案語法檢查通過。本機無法完整跑 UI 流程（Firebase 模組在 localhost 失敗），
+UI 部分於正式站驗證。`?v=38`。
+
 ### 2026-08-10（同日第三次追加）｜shop｜真兇：`unlock()` 的呼叫點根本不看音樂開關
 
 前兩筆修完仍未解決。店主給的第三個線索定案了本案：

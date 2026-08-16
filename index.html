@@ -888,7 +888,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=37"></script>
+<script src="dip-player.js?v=38"></script>
 <script src="dip-draw-anim.js?v=1"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -1487,7 +1487,7 @@
 
   function turntableHtml() {
     const label = currentRecord?.coverUrl ? `style="background-image:url('${escapeCollectionHtml(currentRecord.coverUrl.replace(/'/g, '%27'))}')"` : '';
-    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div class="turntable-tracklist" data-turntable-tracks hidden></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
+    return `<section class="turntable-panel" aria-label="像素唱盤機"><div class="turntable-stage"><div class="turntable-deck"><div class="turntable-platter" style="transform:rotate(${turntableAngle}deg)"><div class="turntable-label" ${label}></div></div><button class="turntable-arm" data-turntable-stop aria-label="收回唱臂並停止播放"></button></div></div><div class="turntable-tracklist" data-turntable-tracks hidden></div><div style="text-align:center;margin:8px 0 2px;"><span data-collect-autoplay></span></div><div id="dipPlayerMount" aria-hidden="true"></div></section>`;
   }
 
   // 唱盤機同時給「我的唱片櫃」與「搜尋專輯」用，一律抓目前打開面板裡的那台
@@ -1550,6 +1550,15 @@
     const mountPoint = el.querySelector('#dipPlayerMount');
     if (!mountPoint || !window.DipPlayer) return;
     window.DipPlayer.mount(mountPoint, { hidden:true });
+    mountAutoplayToggle('collection', '[data-collect-autoplay]', {
+      hints: {
+        first: '♪ 點這裡開啟唱片試聽',
+        auto: '♪ 試聽中 · 點這裡可關閉',
+        revoked: '偵測到你在聽其他音樂 · 已暫停試聽'
+      },
+      // 在唱盤上按下開啟 → 直接播現在這張，不必再點一次唱片。
+      onToggle: enabled => { if (enabled && currentRecord) playCollectionRecord(currentRecord); }
+    });
     if (!playerSubscribed) { playerSubscribed = true; window.DipPlayer.onStateChange(updateTurntableState); }
     else updateTurntableState(lastPlayerState);
   }
@@ -1567,9 +1576,8 @@
 
   function playCollectionRecord(card, source) {
     if (!card || !window.DipPlayer) return;
-    // grant:true＝使用者自己點了這張唱片要聽，才准武裝音訊（unlock 沒有授權就不動作，
-    // 避免像遊戲頁那樣「碰一下卡片就把店主正在聽的串流停掉」）。
-    window.DipPlayer.unlock?.({ grant:true });
+    // 不帶 grant：沒開試聽就完全不武裝音訊，玩家在聽串流時可以安靜地翻唱片櫃。
+    window.DipPlayer.unlock?.();
     const switching = lastPlayerState.status === 'playing';
     currentRecordId = card.cardId;
     currentRecord = card;
@@ -1578,6 +1586,8 @@
     if (label) label.style.backgroundImage = card.coverUrl ? `url("${card.coverUrl.replace(/"/g,'%22')}")` : '';
     if (switching && panel) { panel.classList.remove('switching'); void panel.offsetWidth; panel.classList.add('switching'); setTimeout(() => panel.classList.remove('switching'), 620); }
     animateRecordToTurntable(source, card.coverUrl);
+    // 唱片照樣上盤、封面照樣換，只是不出聲——提示指向唱盤下方的開關。
+    if (autoplayBlocked('collection')) return;
     void window.DipPlayer.playAlbum({
       artist: card.artist,
       album: card.album,
@@ -2074,6 +2084,7 @@
   let _asResults = [];          // 本次搜尋結果（cardId 用 as: 前綴，避免撞唱片櫃）
   let _asQuery = { q:'', field:'all' }; // field: all｜album｜artist（預設 all）
   let _asBound = false;
+  let _asLastPlayed = null;     // 開啟試聽開關時要接著播的那一張
 
   function renderAlbumSearch() {
     const el = document.getElementById('albumSearchContent');
@@ -2091,6 +2102,7 @@
         <input type="file" id="asScanInput" accept="image/*" capture="environment" hidden>
         <div class="album-search-error" id="asError" style="display:none;"></div>
       </form>
+      <div style="text-align:center;margin:2px 0 8px;"><span data-search-autoplay></span></div>
       <div id="asPlayerMount" aria-hidden="true"></div>
       <div id="asResults">${_asResults.length ? _asGridHtml() : ''}</div>`;
     document.getElementById('asQ').value = _asQuery.q;
@@ -2103,6 +2115,14 @@
       if (file) void doCoverScan(file);
     });
     window.DipPlayer?.mount(el.querySelector('#asPlayerMount'), { hidden: true });
+    mountAutoplayToggle('search', '[data-search-autoplay]', {
+      hints: {
+        first: '♪ 點這裡開啟搜尋結果試聽',
+        auto: '♪ 試聽中 · 點這裡可關閉',
+        revoked: '偵測到你在聽其他音樂 · 已暫停試聽'
+      },
+      onToggle: enabled => { if (enabled && _asLastPlayed) _asPlay(_asLastPlayed); }
+    });
     if (!_asBound) {
       _asBound = true;
       // 委派掛在容器上：比全域唱片櫃 handler 先跑；後者查 _collCache 不會命中 as: 卡而安靜略過
@@ -2121,8 +2141,11 @@
   // 搜尋頁沒有唱盤機：點卡片開詳情的同時直接背景播 30 秒試聽，關掉詳情就停
   function _asPlay(rec) {
     if (!rec || !window.DipPlayer) return;
-    window.DipPlayer.unlock?.({ grant:true });
+    _asLastPlayed = rec;
+    // 不帶 grant：沒開試聽就不武裝音訊，聽串流時可以安靜地瀏覽搜尋結果。
+    window.DipPlayer.unlock?.();
     document.querySelectorAll('#asResults .collect-card').forEach(item => item.classList.toggle('active', item.dataset.cardId === rec.cardId));
+    if (autoplayBlocked('search')) return;
     void window.DipPlayer.playAlbum({
       artist: rec.artist,
       album: rec.album,
@@ -4387,7 +4410,9 @@ ${seenList}
   // 必須在使用者點擊的「手勢當下」同步呼叫，iOS/Chrome 才會解鎖音訊——
   // mount 之前 DipPlayer 的 primeFromGesture 直接 return false，事後 unlock 無效。
   // 一律呼叫 unlock：手勢外它會自己判斷（inUserGesture），不會去動還在墊場的 keep-alive。
-  function gpEnsurePlayer() {
+  // grant=true 只用在「使用者自己按了試聽鈕」。不帶 grant 時 unlock 會自己判斷授權，
+  // 沒開自動播放就完全不武裝音訊——碰一下卡片不會再停掉玩家正在聽的串流。
+  function gpEnsurePlayer({ grant = false } = {}) {
     if (!window.DipPlayer) return;
     let el = document.getElementById('gpPlayerMount');
     if (!el) {
@@ -4397,7 +4422,43 @@ ${seenList}
       document.body.appendChild(el);
     }
     window.DipPlayer.mount(el, { hidden: true });
-    window.DipPlayer.unlock?.();
+    window.DipPlayer.unlock?.({ grant });
+  }
+
+  // ── 自動試聽開關的通用掛載（抽卡結果／唱片櫃唱盤／專輯搜尋三處共用）──
+  // 每個介面各一顆單例開關：介面會重繪，但開關本體只建立一次、之後搬進新的佔位元素，
+  // 否則每次重繪都會再疊一組 onStateChange 訂閱。行為與三種提示由 DipPlayer 統一提供，
+  // 不再各頁手刻——手刻的版本正是漏掉授權檢查、害店主串流被停掉的來源。
+  const _autoplayToggles = {};
+  function mountAutoplayToggle(key, slotSelector, options = {}) {
+    if (!window.DipPlayer?.createToggle) return null;
+    const slots = document.querySelectorAll(slotSelector);
+    const slot = slots[slots.length - 1];
+    if (!slot) return null;
+    if (!_autoplayToggles[key]) _autoplayToggles[key] = window.DipPlayer.createToggle(slot, options);
+    const toggle = _autoplayToggles[key];
+    if (toggle && toggle.el.parentNode !== slot) { slot.appendChild(toggle.el); toggle.sync(); }
+    return toggle;
+  }
+  // 玩家沒開自動試聽時，點唱片不出聲；提示指向開關，才不會以為是壞掉。
+  function autoplayBlocked(key) {
+    if (window.DipPlayer?.autoplayPreference?.() === 'on') return false;
+    const toggle = _autoplayToggles[key];
+    if (toggle) window.DipPlayer?.showHint?.(toggle.el, '♪ 自動試聽目前關閉 · 點這裡開啟');
+    return true;
+  }
+  // 不綁定容器：同一支結果渲染器餵給類型挑片／直接來一張／心情選歌等不同宿主，
+  // 直接找當下畫面上的佔位元素最不容易漏。
+  function gpMountAutoplayToggle() {
+    mountAutoplayToggle('draw', '[data-gp-autoplay]', {
+      hints: {
+        first: '♪ 點這裡開啟抽到卡自動試聽',
+        auto: '♪ 自動試聽中 · 點這裡可關閉',
+        revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
+      },
+      // 在結果頁按下開啟 → 立刻試聽這張，不必再按一次播放鈕。
+      onToggle: enabled => { if (enabled) gpPlayPreview(true); }
+    });
   }
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
@@ -4409,7 +4470,8 @@ ${seenList}
     const r = lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview({ fade: true }); return; }
-    gpEnsurePlayer();
+    // 手動按試聽鈕＝明確要出聲，這時才准武裝音訊；自動路徑交給授權判斷。
+    gpEnsurePlayer({ grant: manual });
     gpPreviewStarted = true;
     gpPreviewManual = manual;
     audioDebugSnapshot(manual ? 'play(manual)' : 'play(auto)');
@@ -4430,11 +4492,12 @@ ${seenList}
   // 已人工標記無試聽來源且沒有固定連結的卡不顯示。分享圖是手繪 canvas，不含此鈕。
   function gpPreviewBtnHtml(result) {
     if (result._previewUnavailable && !result._previewUrl) return '';
-    return `<div style="text-align:center;margin:6px 0 10px;">
+    return `<div style="text-align:center;margin:6px 0 10px;display:flex;align-items:center;justify-content:center;gap:10px;">
       <button data-gp-action="preview" aria-label="試聽" style="width:34px;height:34px;border:none;background:none;padding:0;cursor:pointer;color:var(--black);display:inline-flex;align-items:center;justify-content:center;">
         <svg data-gp-ic="play" width="15" height="15" viewBox="0 0 16 16" style="pointer-events:none;"><path d="M3 1.5 L14 8 L3 14.5 Z" fill="currentColor"/></svg>
         <svg data-gp-ic="pause" width="15" height="15" viewBox="0 0 16 16" style="display:none;pointer-events:none;"><rect x="2.5" y="1.5" width="4" height="13" fill="currentColor"/><rect x="9.5" y="1.5" width="4" height="13" fill="currentColor"/></svg>
       </button>
+      <span data-gp-autoplay></span>
     </div>`;
   }
 
@@ -4683,7 +4746,10 @@ ${seenList}
         .then(r => { if (lastGpResult === result) paintResultTier('genreContent', result, r); });
     }
     resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
-    // 抽到即自動播放試聽（跟對戰一樣）；瀏覽器擋自動播放時安靜失敗，圖示停在 ▶
+    // 自動試聽的開關要跟著結果頁一起出現，玩家才有地方切換。
+    gpMountAutoplayToggle();
+    // 抽到即自動播放試聽（跟對戰一樣）。沒開自動播放就安靜停下，圖示停在 ▶，
+    // 玩家可以按試聽鈕聽這一張，或按開關讓之後每張都自動播。
     if (!result.type && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
   }
 
