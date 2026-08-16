@@ -6683,6 +6683,60 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 ## 逐次改動記錄（新到舊）
 
 
+### 2026-08-16｜dip-vinyl-shop＋dip-vinyl-worker｜資安健檢：關閉公開 AI 代理、撤除外洩的 Discogs token
+
+店主要求做一次網站安全健檢，查出兩個**已可被實際利用**的問題，當日修補完成。
+
+**問題一：Discogs token 公開外洩。** token 硬寫在 `admin.html` 裡，而 admin.html 是
+Cloudflare Pages 直接對外供應的靜態檔——`curl https://dipvinyl.tw/admin.html` 回 200
+且實測抓得到該字串，任何人都能取走。店主已在 Discogs 後台撤銷舊 token。
+修法：token 移到 Worker secret `DISCOGS_TOKEN`，新增 `/discogs-search` 與 `/discogs-price`
+兩支代理端點，都要求 `X-Admin-Key`；前端只帶金鑰不碰 token。
+
+**問題二：`/claude` 是無驗證的公開 LLM 代理。** 它把呼叫方傳來的 `messages`（含 system）
+原封不動轉發給 Anthropic／Grok，沒有任何驗證或速率限制。實測不帶 Origin、不帶憑證
+直接 curl 即可取得真實 LLM 回應，費用算在店主帳上。
+**關鍵觀念：`allowedOrigins` 白名單只在瀏覽器生效**，CORS 擋不住 curl 或伺服器端程式——
+這是當初誤以為有防護的原因。
+修法：加 `PUBLIC_AI_ENABLED` 開關預設 `false`，並在 `request.json()` 之前就擋掉，
+避免解析攻擊者的 payload。心情選歌已改 offline 查表、類型挑片已改抽本地卡池，
+兩條線都不再需要它；**前台舊版程式碼完整保留**，要恢復線上心情選歌需
+（1）改 `PUBLIC_AI_ENABLED = true` 重新部署（2）後台把 `gameConfig/moodQuiz.mode` 切回 `online`。
+後台「生成介紹」按鈕帶 `X-Admin-Key` 續用，不受開關影響。
+
+**其他強化：** `/cover-scan`（視覺模型、單價高、僅瀏覽器呼叫）加 Origin 白名單檢查；
+`firestore.rules` 的 `card_catalog` 由 `allow write: if true` 改為形狀驗證（欄位數 ≤20、
+字串長度上限）。**未登入玩家抽卡就要寫入，所以不能要求登入**；欄位上限必須涵蓋後台
+另外寫的 `tier`/`apex`/三軸/`rarity`（合併後共 13 個），因為前台用 `merge` 寫入時
+規則看到的是**合併後的完整文件**，不是這次送出的欄位。
+
+**刻意不做的事（重要，避免日後誤加）：** 沒有對 `/album-desc`、`/album-rating`、
+`/spotify-search` 等端點加 Origin 封鎖——本機產線腳本（`verify-album-onboarding.mjs`、
+`cover-audit/*`、`classical-expansion/onboarding/*`）會直接呼叫這些端點且**不帶 Origin**，
+加了會弄壞上架驗證流程。這些端點的防護要靠 Cloudflare 邊緣速率限制，不是來源檢查。
+
+主要檔案：`dip-vinyl-worker/src/index.js`（`PUBLIC_AI_ENABLED`、`isAdminRequest`、
+Discogs 代理、cover-scan Origin 檢查）、`dip-vinyl-shop/admin.html`（移除 token、
+`adminKey()`、三處呼叫改帶金鑰）、`dip-vinyl-shop/firestore.rules`。
+
+**驗證結果：** Worker 已 `wrangler deploy`（版本 6101dcee）。線上實測——
+`/claude` 匿名連打 8 次全回 403 `{"error":"disabled"}`、偽造金鑰 403、
+`/discogs-search` 與 `/discogs-price` 匿名 403、`/cover-scan` 無 Origin 回 `forbidden`；
+回歸測試確認 `/spotify-search`、`/album-desc`、`/album-genres` 不帶 Origin 仍回 200，
+`/cover-scan` 帶合法 Origin 可通過檢查，本機腳本不受影響。
+**部署傳播雷：** deploy 後前 1～2 分鐘 Cloudflare 邊緣節點是新舊版本混雜，
+同一組 curl 會時而 403 時而 200（`wrangler deployments list` 仍顯示 100% 新版本）。
+第一次測到舊行為不要急著判定修補失敗，隔一會兒重測數次再下結論。
+
+**待店主自行處理（Claude 無法代勞）：** （1）`wrangler secret put ADMIN_KEY` 設定後台金鑰，
+未設定前後台「生成介紹」與 Discogs 都會回 403；（2）拿到新 Discogs token 後
+`wrangler secret put DISCOGS_TOKEN`，並更新本機 `.discogs-token`（`fill-missing-years.mjs` 在讀）；
+（3）`firestore.rules` 需到 Firebase Console 手動套用；（4）Cloudflare 儀表板設速率限制規則。
+
+**已知未修（有意識的取捨）：** `users/{uid}` 規則允許會員寫自己那筆的任意欄位，
+包含後台用來贈送抽卡券的 `specialDraws` 與樂歷的 `rogueMeta`，玩家可從瀏覽器主控台
+自行灌值作弊。屬遊戲經濟問題非資料外洩，要修得先確定合法欄位清單，避免弄壞遊戲。
+
 ### 2026-08-16｜dip-vinyl-home＋dip-vinyl-shop｜已上架古典卡的年份缺口回頭補：36 張改年份、2 張改簡介
 
 `audit-composer-years.mjs` 用「卡片 year > 該藝人卒年」掃出的 37 張（見上一輪紀錄與
