@@ -118,6 +118,17 @@ Nancarrow 投入自動鋼琴「之前」寫給真人彈的曲子；Biggs 的 hoo
   用 curl 直接打同一個網址確認資料在（The Shaggs 那筆 200 且有 desc），
   console 也確實記到兩次 `/album-desc` 被擋（＝重試邏輯有跑）。線上才看得到真正的內容。
 
+**追加（同一次工作）：試聽鈕與「專輯介紹」水平對齊**
+店主要求兩顆鈕併成同一列。原本介紹鈕靠右自成一行（`.quiz-desc-row`），
+改成 `.quiz-act-row`：`display:flex; align-items:center; justify-content:center; gap:12px`，
+試聽鈕（34px 高）與介紹鈕（27px 高）靠中線對齊，整組置中。
+**關鍵一步是先把 `gpPreviewBtnHtml()` 外層 div 的 inline style 搬進
+`.gp-preview-wrap` class**——inline style 壓不掉，留著就只能加 `!important`。
+`.quiz-act-row .gp-preview-wrap { margin: 0 }` 只在心情選歌生效，
+**類型挑片（#genreContent）那邊完全沒變**（實測 standalone 仍是 `6px 0 10px` 置中）。
+試聽鈕可能不存在（人工標記無來源）→ 只剩介紹鈕時照樣置中；兩顆都沒有就整列不畫。
+實測 375×812：兩鈕中線差 0.1px、間距 12px、整組置中（pair 中心 188 vs 列中心 187）。
+
 ### 2026-08-16（續二）｜dip-vinyl-shop｜心情選歌離線版上線：前端判定＋查表文案，後台可一鍵切回 AI 版
 
 店主指示「讓這個專案正式上線，原本的線上版另外備份，隨時出問題可後台切換回來」。

@@ -647,8 +647,13 @@
     .aintro-year { font-size: 12px; color: var(--gray); letter-spacing: 0.14em; }
     .aintro-year:empty { display: none; }
     .aintro-desc { font-size: 12.5px; line-height: 2; text-align: left; padding: 14px; border: 1px solid var(--line); margin-top: 14px; }
-    /* 結果頁那顆小按鈕：靠右、比 CTA 小一號，不跟「收進唱片櫃」搶視線 */
-    .quiz-desc-row { margin: -12px 0 20px; text-align: right; }
+    /* 試聽鈕的外層（類型挑片沿用原本的置中與上下留白） */
+    .gp-preview-wrap { text-align: center; margin: 6px 0 10px; }
+    /* 心情選歌結果頁：試聽鈕與「專輯介紹」併成同一列、水平對齊置中。
+       試聽鈕 34px 高、介紹鈕 27px 高，靠 align-items:center 對齊中線。 */
+    .quiz-act-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 0 14px; }
+    .quiz-act-row .gp-preview-wrap { margin: 0; }
+    /* 那顆小按鈕比 CTA 小一號，不跟「收進唱片櫃」搶視線 */
     .quiz-desc-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-desc-btn:hover { border-color: var(--black); color: var(--black); }
 
@@ -3615,8 +3620,11 @@ ${seenList}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
-        ${qzHasIntro ? `<div class="quiz-desc-row"><button class="quiz-desc-btn" data-quiz-action="album-intro" data-artist="${_qzAttr(result.artist)}" data-album="${_qzAttr(result.album)}">專輯介紹</button></div>` : ''}
-        ${qzCanPreview ? gpPreviewBtnHtml(result) : ''}
+        ${(() => {
+          const preview = qzCanPreview ? gpPreviewBtnHtml(result) : '';
+          const intro = qzHasIntro ? `<button class="quiz-desc-btn" data-quiz-action="album-intro" data-artist="${_qzAttr(result.artist)}" data-album="${_qzAttr(result.album)}">專輯介紹</button>` : '';
+          return (preview || intro) ? `<div class="quiz-act-row">${preview}${intro}</div>` : '';
+        })()}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
@@ -4850,7 +4858,9 @@ ${seenList}
   // 已人工標記無試聽來源且沒有固定連結的卡不顯示。分享圖是手繪 canvas，不含此鈕。
   function gpPreviewBtnHtml(result) {
     if (result._previewUnavailable && !result._previewUrl) return '';
-    return `<div style="text-align:center;margin:6px 0 10px;">
+    // 外層 margin 走 class 不走 inline，心情選歌那邊要把它和「專輯介紹」併成同一列時
+    // 才有辦法覆寫（inline style 壓不掉，只能加 !important，不划算）。
+    return `<div class="gp-preview-wrap">
       <button data-gp-action="preview" aria-label="試聽" style="width:34px;height:34px;border:none;background:none;padding:0;cursor:pointer;color:var(--black);display:inline-flex;align-items:center;justify-content:center;">
         <svg data-gp-ic="play" width="15" height="15" viewBox="0 0 16 16" style="pointer-events:none;"><path d="M3 1.5 L14 8 L3 14.5 Z" fill="currentColor"/></svg>
         <svg data-gp-ic="pause" width="15" height="15" viewBox="0 0 16 16" style="display:none;pointer-events:none;"><rect x="2.5" y="1.5" width="4" height="13" fill="currentColor"/><rect x="9.5" y="1.5" width="4" height="13" fill="currentColor"/></svg>
