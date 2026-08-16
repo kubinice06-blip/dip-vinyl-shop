@@ -6029,6 +6029,45 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 ## 逐次改動記錄（新到舊）
 
 
+### 2026-08-16｜dip-vinyl-home＋dip-vinyl-shop｜已上架古典卡的年份缺口回頭補：36 張改年份、2 張改簡介
+
+`audit-composer-years.mjs` 用「卡片 year > 該藝人卒年」掃出的 37 張（見上一輪紀錄與
+RUNBOOK §4-5-3）全部查證完畢並套用。判準就是定案的那一條：**artist 是作曲家 → 取作品的
+創作／首演年；artist 是演奏者 → 取這份錄音最早公開的年份**（指名演出取演出年、身後選輯取
+錄音跨度結束年）。
+
+主要檔案：`dip-vinyl-shop/seed_cards.json`（36 列的第 7 欄）、
+`classical-expansion/onboarding/yearfix-{in,out}-{a,b,c,d}.json`（逐張結論＋來源網址）、
+`yearfix-apply.mjs`、`descfix-yearconflict.mjs`。
+
+**卡面年份的唯一真相來源是 `seed_cards.json` 的 `row[6]`**——`index.html` 的 `releaseYearOf()`
+直接讀它，`card_catalog` 不存年份，所以改這一個檔就夠，不必動 Firestore。
+
+`yearfix-apply.mjs` 寫檔前會先做一次「讀進來再序列化，與原檔逐字元比對」的自檢。
+沒有這道，`JSON.stringify(_, null, 1)` 會把 8000 行的卡池整個重排，36 張的改動就淹在
+全檔 diff 裡看不見了。實際 diff 是 36 insertions / 36 deletions，正好對得上。
+
+幅度最大的幾張：Pérotin 1989→1200、Tallis 1987→1569、Bach《平均律》2009→1742、
+Mozart《安魂曲》1952→1791、Ravel《波麗露》1983→1928。演奏者類最典型的是
+Celibidache《Bruckner 8》2024→1985（他終身不錄音，母帶 2024 年才由樂團自營廠牌從檔案庫取出）。
+
+**Clara Haskil《Mozart: Piano Concertos 20 & 24》是機械判準的假陽性**：1961 本來就是首發年
+（1960 年 11 月錄音、同年 12 月辭世），維持不動。這條判準只抓「year > 卒年」，
+在世作曲家把錄音發行年當成作品年的情況它抓不到，仍是未解的缺口。
+
+**兩張簡介被新年份照出原本就寫錯的地方，一併改寫並寫回 KV**：
+- Segovia《The Art of Segovia》：原句寫「1950 年代在美國」，實際跨度 1952–1969、
+  含 1967／1969 兩批馬德里 session
+- Bolet《Liszt: Piano Works》：原句把「1977–1990」當成李斯特系列的跨度，
+  那其實是他整段 Decca 合約期間；李斯特錄音到 1985 年 3 月第七卷為止，1990 年錄的是蕭邦
+
+驗證：seed diff 36/36；KV 兩筆 `wrangler kv key get` 讀回相符；兩張簡介字數 233／230，
+都在 gate 的 80–280 內。
+
+⚠ `index.html` 的 `gpArtistMetaLine()` 目前對古典整類不顯示年代小註記，理由寫的正是這個年份缺口。
+這次只修好了「已辭世藝人」那一半，在世作曲家的部分還沒解，所以**那段抑制先不要拿掉**。
+
+
 ### 2026-08-15｜dip-vinyl-home（classical-expansion）｜p1z：十張「卡單本身錯了」的卡逐張裁定
 
 身分解析器判定「該演奏家從未錄過卡片指名作品」的 10 張（c-17×3、c-19×5、c-20×2），
