@@ -23,7 +23,28 @@ service cloud.firestore {
 
     // ── 全站抽卡目錄：任何人（含未登入玩家）都能寫入抽到的卡，後台才看得到所有人抽的 ──
     // 非個資（只有專輯名/封面/介紹），讀取開放無妨。
-    match /card_catalog/{id}    { allow read: if true; allow write: if true; }
+    //
+    // 2026-08-16：原本是 `allow write: if true`，等於任何人可寫任意內容進來。
+    // 未登入玩家抽卡就要寫入，所以不能要求登入；改成限制「文件形狀」，
+    // 讓這裡只能當卡牌目錄用，不能被拿去塞大量垃圾資料當免費儲存空間。
+    //
+    // 注意：前台是用 merge 寫入，規則看到的 request.resource.data 是「合併後的完整文件」，
+    // 所以欄位數上限必須涵蓋後台另外加的 tier/apex/rarity/三軸等欄位（目前合計 13 個），
+    // 抓 20 留餘裕。若日後新增欄位超過上限，玩家端寫入會開始失敗，記得同步調高。
+    match /card_catalog/{id} {
+      allow read: if true;
+      allow write: if isAdmin() || (
+           request.resource.data.keys().size() <= 20
+        && request.resource.data.artist is string
+        && request.resource.data.artist.size() <= 200
+        && request.resource.data.album is string
+        && request.resource.data.album.size() <= 200
+        && (!('coverUrl' in request.resource.data)
+            || (request.resource.data.coverUrl is string && request.resource.data.coverUrl.size() <= 600))
+        && (!('desc' in request.resource.data)
+            || (request.resource.data.desc is string && request.resource.data.desc.size() <= 2000))
+      );
+    }
 
     // ── 使用量統計：僅管理員 ──
     match /api_usage/{id}       { allow read, write: if isAdmin(); }

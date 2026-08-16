@@ -1190,6 +1190,22 @@
   const CLOUDINARY_PRESET = 'dip_vinyl_unsigned';
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
+  // ── 後台金鑰（2026-08-16 資安更新）────────────────────────────
+  // Worker 上會花錢或動用店家額度的端點（AI 生成、Discogs 代理）都要求這把金鑰。
+  // 跟 Firebase 登入是兩回事：Firebase 管 Firestore 的讀寫權限，
+  // 這把管的是 Worker 上的付費 API——Worker 看不到 Firebase 的登入狀態。
+  // 值＝ Worker 的 wrangler secret ADMIN_KEY，第一次使用時輸入，之後存在本機。
+  function adminKey() {
+    let k = localStorage.getItem('dipAdminKey');
+    if (!k) {
+      k = (prompt('請輸入後台金鑰（Worker 的 ADMIN_KEY）：') || '').trim();
+      if (k) localStorage.setItem('dipAdminKey', k);
+    }
+    return k || '';
+  }
+  // 金鑰輸錯時清掉重來：主控台執行 clearAdminKey()
+  window.clearAdminKey = () => { localStorage.removeItem('dipAdminKey'); alert('後台金鑰已清除，下次操作會重新詢問。'); };
+
   // 商品描述「生成介紹」按鈕：用 /claude 產 3~4 句草稿，附防幻覺提示。
   // 注意：AI 沒有即時上網能力，冷門盤可能不準，務必人工核對後再儲存。
   async function generateDescription() {
@@ -1222,9 +1238,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (msg) { msg.style.color = 'var(--gray)'; msg.textContent = '生成中…'; }
     try {
       const resp = await fetch(`${WORKER_URL}/claude`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Admin-Key': adminKey() },
         body: JSON.stringify({ messages: [{ role: 'user', content: prompt }] }),
       });
+      if (resp.status === 403) throw new Error('後台金鑰錯誤或未設定（主控台執行 clearAdminKey() 可重新輸入）');
       const data = await resp.json();
       if (data.apiError) throw new Error(data.apiError);
       const text = (data.content && data.content[0] && data.content[0].text || '').trim();
@@ -2337,7 +2355,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
     updateCostUI('newCostCurrency', 'newCost', 'newCostTWD', 'newSuggestPrice'));
 
   // ── Discogs 搜尋 ──
-  const DISCOGS_TOKEN = 'siguOwNcNYVcfELjPfXJDKdQZdyaVLVnZWKKkewt';
+  // 2026-08-16 資安修正：token 不再放在前端。這個檔案是公開可下載的靜態檔
+  // （https://dipvinyl.tw/admin.html 任何人都能取得原始碼），舊做法等於把憑證公開。
+  // 改由 Worker 持有 secret 代打，前端只帶後台金鑰。
 
   document.addEventListener('click', async (e) => {
     // 事件委派：結果列表「選擇」按鈕
@@ -2372,14 +2392,15 @@ ${discogs ? '- Discogs：' + discogs : ''}
       let query = name;
       if (artist) query += ' ' + artist;
 
-      const params = new URLSearchParams({
-        q: query, type: 'release', format: 'vinyl',
-        token: DISCOGS_TOKEN, per_page: 8,
-      });
+      // type/format/per_page 由 Worker 端固定帶上，這裡只傳查詢條件。
+      const params = new URLSearchParams({ q: query });
       if (year)    params.append('year', year);
       if (country) params.append('country', country);
 
-      const res = await fetch('https://api.discogs.com/database/search?' + params);
+      const res = await fetch(`${WORKER_URL}/discogs-search?` + params, {
+        headers: { 'X-Admin-Key': adminKey() },
+      });
+      if (res.status === 403) throw new Error('後台金鑰錯誤或未設定（主控台執行 clearAdminKey() 可重新輸入）');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
 
@@ -2420,7 +2441,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
       document.getElementById('discogsResults').style.display = 'none';
 
       // 抓掛賣價格
-      const res = await fetch('https://api.discogs.com/marketplace/stats/' + releaseId + '?token=' + DISCOGS_TOKEN);
+      const res = await fetch(`${WORKER_URL}/discogs-price?releaseId=${encodeURIComponent(releaseId)}`, {
+        headers: { 'X-Admin-Key': adminKey() },
+      });
+      if (res.status === 403) throw new Error('後台金鑰錯誤或未設定（主控台執行 clearAdminKey() 可重新輸入）');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const stats = await res.json();
 
