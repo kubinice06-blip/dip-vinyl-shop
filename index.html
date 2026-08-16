@@ -4057,7 +4057,7 @@ ${seenList}
     if (m.type === 'anchor') return `呼應你的選擇：這張正是 ${m.name} 的作品`;
     if (m.type === 'taste') {
       const tag = m.tag && GP_TAG_ZH[m.tag] ? `，同樣帶${GP_TAG_ZH[m.tag]}血統` : '';
-      return `順著你選的 ${m.matched.join('、')} 的口味挑的${tag}`;
+      return `依你所選 ${m.matched.join('、')} 挑出的${tag}`;
     }
     return '';
   }
