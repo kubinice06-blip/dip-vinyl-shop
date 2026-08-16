@@ -1,10 +1,11 @@
-// 楊祖珺《楊祖珺》上架開關：把卡片追加進 apex_pool.json 的 pearl 池。
+// 楊祖珺《楊祖珺》上架開關：把卡片追加進 apex_pool.json 的 pearl 池。已於 2026-08-16 執行完畢。
 //
-// 為什麼獨立成一支、且沒有在建卡當下執行：
-// 這張的固定試聽是 YouTube Music album playlist，依 ALBUM_ONBOARDING §6 只能走後台路徑
-// （album_overrides 規則 allow write: if isAdmin()，REST 實測 403）。規範要求「任一項缺失
-// 不得先上架」，所以請店主先用後台批次匯入框貼上 album_overrides-repaste-add-20260816.json，
-// 再跑這支開上架開關：
+// 這支之所以獨立成一檔：原本規劃的固定試聽是 YouTube Music album playlist，依
+// ALBUM_ONBOARDING §6 只能走後台路徑（album_overrides 規則 allow write: if isAdmin()，
+// REST 實測 403），規範又要求「任一項缺失不得先上架」，所以先把上架開關留成一支待執行腳本。
+// 後來店主指出 Apple Music 有這張，改走 §6 路徑1 的靜態地圖（data/apple-audio-map-v1.json，
+// 店主指定試聽片段為〈美麗島〉），試聽當場落地，本腳本也就一併跑完了。保留檔案作為改動記錄；
+// 冪等，重跑會偵測到已在池中並直接結束。
 //
 //   node scripts/publish-add-20260816.mjs --dry   # 先看會改什麼
 //   node scripts/publish-add-20260816.mjs

@@ -51,17 +51,18 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://music.youtube.com/playlist?list=OLAK5uy_mCe3CIp-PhrVx9o_OZshkSX2c7LsAOo3U",
-        "source": "youtube",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/9b/76/9f9b760d-da14-3f59-f3ec-02b673d01fc6/mzaf_7840681520925157983.plus.aac.p.m4a",
+        "source": "apple",
         "httpStatus": 200,
-        "checkedAt": "2026-08-16T00:00:00Z"
+        "checkedAt": "2026-08-16T04:43:03.330Z",
+        "note": "店主指定試聽片段為〈美麗島〉（Apple trackId 1517017446、第 6 軌 175s），故取該軌 preview 而非專輯預設首軌。走靜態路徑寫入 data/apple-audio-map-v1.json 並重建 runtime，不需後台 album_overrides。"
       },
       "published": {
         "cardCatalog": true,
         "descriptionKv": true,
-        "albumOverride": false,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     }
   ]

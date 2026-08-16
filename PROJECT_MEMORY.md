@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（續完）｜dip-vinyl-shop｜楊祖珺改走 Apple 靜態試聽、正式上架 pearl；Firestore 配額耗盡
+
+承上一筆。店主指出 Apple Music 有這張，試聽因此不必卡在後台，**當場走完 §6 路徑1 上架**。
+
+- **iTunes search 端點目前可用**，更正記憶裡「Apple /search 長效 IP 封鎖」的判斷
+  （至少本次未被擋）：search 取得 collectionId **1517017315**（collectionName「楊祖珺專輯」，
+  與 YT Music 的 matchedTitle 一致），再用 `lookup?entity=song` 取曲目層 preview。
+  **13 首曲目與 Spotify 完全一致**，交叉確認身分無誤。
+- **店主指定試聽片段為〈美麗島〉**（trackId 1517017446、第 6 軌 175s），
+  所以 map 取該軌 previewUrl 而非專輯預設首軌；另存 `previewTrackId`／`previewTrackName`
+  記錄這個指定，日後重跑自動化不會誤覆蓋回首軌。m4a 實測 200／1.18MB。
+- 寫入 `data/apple-audio-map-v1.json`（7,777→7,778 筆）並重建 runtime（6,979 筆），
+  `apex_pool.json` pearl **107→108**。⚠ 兩個檔案都實測與 `JSON.stringify(obj, null, 1)`
+  逐字相同，腳本先驗 round-trip 才寫回；`seed_cards.json` 全程未動（pearl 不進 seed）。
+- ⚠ **appleAudioKey 的分隔是 U+0000**（`artist\u0000album`，各自 NFKD 正規化去標點）。
+  用編輯器寫腳本時 `\u0000` 與字元類別逃逸會被轉成字面字元，改用
+  `String.fromCharCode(0)` 與 `new RegExp('...\\u3400-\\u9fff...')` 建構才安全。
+- ⚠⚠ **Firestore 專案配額耗盡（429 RESOURCE_EXHAUSTED），published gate 的
+  `card_catalog`／`album_overrides` 兩項無法完成，待配額重置後補跑**：
+  `node scripts/verify-album-onboarding.mjs onboarding-manifest-add-20260816.json --published`。
+  其餘各項已個別驗證：card_catalog 寫入時 PATCH 200 且回應即完整回讀、KV 逐字一致、
+  線上 /album-desc 回 X-Cache: KV-HIT-RESTYLED 239 字、封面 200、試聽 m4a 200、
+  apex membership 由上架腳本確認。
+  **這是並行作業的真正瓶頸**：三條線（古典、mood-quiz、本批）共用同一個 Firebase 專案
+  `price-manager-e8846` 的免費配額，檔案衝突可以靠 git 紀律避開，配額不行——
+  要寫 Firestore 的批次最好錯開時段跑。
+- 後台匯入檔 `album_overrides-repaste-add-20260816.json` 因改走靜態路徑而移除（本日新增本日刪）。
+- **完成狀態**：一般卡 0、頂點卡 1（pearl）、preview ready 1、unavailable 0、disabled 0；
+  李雙澤仍為 needsRuling（MB 掛名發行 0 筆）。
+
 ### 2026-08-16｜dip-vinyl-shop｜台灣民謠必收上架：楊祖珺完成九成待試聽、李雙澤判定無碟可上
 
 店主指定的兩位台灣民謠必收藝人（記憶 project_taiwan_folk_must_include）查證後**結果分歧**，
