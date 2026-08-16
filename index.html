@@ -4016,7 +4016,12 @@ ${seenList}
     if (!cards.length) return '';
     const years = cards.map(c => c.year).filter(y => y > 1000).sort((a, b) => a - b);
     const mid = years.length ? years[Math.floor(years.length / 2)] : 0;
-    const decade = mid ? `${Math.floor(mid / 10) * 10}s` : '';
+    // 年代只在「代表得了這位藝人」時才顯示：
+    // 一、古典的 year 是錄音／發行年不是創作年（見備忘錄的年份規則缺口），
+    //     作曲家掛名會冒出「Bartók 2000s」這種荒謬註記，整類不顯示；
+    // 二、跨度超過 30 年時中位數沒有代表性（Ravel 三張橫跨 1953–1994）。
+    const spread = years.length ? years[years.length - 1] - years[0] : 0;
+    const decade = (mid && gpGenre !== 'classical' && spread <= 30) ? `${Math.floor(mid / 10) * 10}s` : '';
     const counts = {};
     for (const c of cards) for (const g of c.genres) if (g !== gpGenre) counts[g] = (counts[g] || 0) + 1;
     const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
@@ -4086,7 +4091,11 @@ ${seenList}
       if (prof) {
         const t = prof.target;
         const d = Math.abs((c.classic || 3) - t.classic) + Math.abs((c.obscurity || 3) - t.obscurity) + Math.abs((c.accessibility || 3) - t.accessibility);
-        w = 1 / (1 + d * 0.7); // 三軸越貼近錨點平均，權重越高
+        // 三軸越貼近錨點平均，權重越高。指數衰減不用 1/(1+kd)：後者尾巴太肥，
+        // 幾百上千張的類型池裡「差很遠的卡」加總起來仍蓋過貼近的卡，抽出的三軸會被拉回池平均
+        //（實測古典組 target 冷門度 1.6 卻抽出 2.73）。exp(-d) 誤差降到約三分之一，
+        // 且有效卡數最少仍有 364 張（單次遊玩最多抽 6 張），不會有重複感。
+        w = Math.exp(-d);
         let votes = 0;
         for (const g of c.genres) if (g !== gpGenre) votes = Math.max(votes, prof.tagVotes[g] || 0);
         w *= 1 + votes * 0.6;  // 副曲風與錨點重疊（最多 3 票 → ×2.8）
@@ -4223,7 +4232,13 @@ ${seenList}
     const total = 3;
     const pct = ((gpRound + 1) / total * 100).toFixed(0);
     const list = GENRE_DATA[gpGenre].artists;
-    const available = list.filter(a => !gpUsed.has(a));
+    // 只提供卡池裡真的有卡的藝人：名單有 33/50 的古典名字（Mahler 等）在池內 0 張，
+    // 選了對不回任何卡＝那一票白投。卡池還沒到手就不過濾（首次冷啟動，之後都有快取）。
+    let available = list.filter(a => !gpUsed.has(a));
+    if (gpPoolCache) {
+      const inPool = available.filter(a => gpFindArtistCards(gpPoolCache, a).length);
+      if (inPool.length >= 4) available = inPool;
+    }
     // 名單前半是深挖名字、後半是主流名字：各出兩位，保證每輪都有認得出的名字
     const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
     const deep = shuffle(available.filter(a => list.indexOf(a) < list.length / 2)).slice(0, 2);
