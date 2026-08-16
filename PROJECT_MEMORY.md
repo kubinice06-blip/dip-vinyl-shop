@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（三）｜dip-vinyl-shop｜李雙澤用紀念輯上架一般卡；兩張台灣民謠 gate 全綠
+
+店主裁定改用《敬！李雙澤 唱自己的歌》代表李雙澤，推翻前一筆「無碟可上」的結論。查證後
+**這張比預期強得多**，不是單純的他人翻唱紀念輯。
+
+- **23 軌裡 12 軌是李雙澤本人演唱**（〈老鼓手〉〈愚公移山〉〈紅毛城〉是自創，
+  〈思想起〉〈綠島小夜曲〉是他唱的既有歌謠，還有一首 Bob Dylan〈Blowing in the Wind〉），
+  其餘為胡德夫、楊祖珺、蘇瘂、Lisa、蔣勳詮釋。他生前無任何個人發行，
+  **這張實質是他錄音的唯一正式發行**。〈美麗島〉〈少年中國〉收的是 1977 年胡德夫與楊祖珺版本。
+- **artist 欄填「李雙澤」而非 Apple 顯示的「群星」**，兩個依據：本人演唱過半；
+  **Spotify 同一張另有掛名「李雙澤」的版本**（40qHw06FXlXTr98eTaer91），不是自創掛名。
+  專輯名採全形驚嘆號（Spotify 與店主寫法一致；Apple 半形，appleAudioKey 正規化後同鍵）。
+- **走 MBID 窄例外**（`identitySource: manual`，verify-album-onboarding.mjs 第 84 行起，
+  2026-08-15 為台灣曲目核定的那條）。MB 確認未建檔：藝人條目在但 release-group／release
+  皆 count=0，標題／barcode／廠牌三方向查詢也全 0。外部識別改由 Apple collectionId
+  1791884353＋Spotify album＋UPC 4711457850051 交叉支撐。
+  ⚠ **UPC 有旁證**：同廠牌野火樂集的胡德夫《匆匆》在 MB 記載 barcode 4711457850013，
+  與本張同屬 471145785 前綴，證實 UPC 不是從 artwork 檔名瞎猜的。
+- **判一般卡不判 pearl**（客觀符合門檻：obscurity=5、listeners=16）。理由：pearl 的敘事是
+  「流通被截斷的遺珠」，本張是 2008 年正常發行、冷門源於題材小眾，與楊祖珺 1979 那張
+  （發行兩月遭全面回收）性質不同；且店主要這兩位進池，**一般卡曝光遠高於 apex**
+  （約 3% 且需同曲風命中）。**店主可推翻改列 pearl。** seed 8,146→8,147。
+- **店主指定試聽片段為〈愚公移山〉**（trackId 1791884989、第 21 軌 179s、本人演唱），
+  取該軌而非首軌（首軌〈動物園 (1977) [Live]〉只有 16 秒）；
+  `previewTrackId`／`previewTrackName` 一併記錄，防日後自動化重跑覆蓋回首軌。
+  apple-audio-map 7,778→7,779、runtime 6,979→6,980。
+- ⚠ **cover.source 白名單只有 bandcamp／spotify／caa／manual**，填 apple 會被 gate 擋；
+  改用 Spotify 640px 封面（200KB、200）。⚠ **`seed_cards.json` 是第三種格式**——
+  每行一筆、首筆與開頭 `[` 同行、末筆與結尾 `]` 同行，既不是 indent=1（apex_pool）
+  也不是壓縮 JSON，只能字串替換＋三道防呆。三種格式各有腳本，別互抄。
+- **Firestore 配額已恢復**，前一筆待補跑的楊祖珺 published gate 一併補完。
+- 驗證：兩張 published gate **各 0 error**（李雙澤的 warning 是窄例外本來就要留的痕跡、
+  楊祖珺的是 1979 黑膠無 barcode）；KV desc2／mapgenre3 逐字回讀一致；
+  runtime 地圖確認指向〈愚公移山〉preview；card_catalog PATCH 200。
+- **本日台灣民謠合計**：一般卡 1（李雙澤）、頂點卡 1（楊祖珺 pearl）、
+  preview ready 2、unavailable 0、disabled 0。needsRuling 清空。
+
 ### 2026-08-16（續完）｜dip-vinyl-shop｜楊祖珺改走 Apple 靜態試聽、正式上架 pearl；Firestore 配額耗盡
 
 承上一筆。店主指出 Apple Music 有這張，試聽因此不必卡在後台，**當場走完 §6 路徑1 上架**。

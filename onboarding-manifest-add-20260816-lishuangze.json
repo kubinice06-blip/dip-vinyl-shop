@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "batch": "add-20260816-lishuangze",
+  "albums": [
+    {
+      "artist": "李雙澤",
+      "album": "敬！李雙澤 唱自己的歌",
+      "identity": {
+        "releaseType": "Album",
+        "identitySource": "manual",
+        "rgMbid": "",
+        "upc": "4711457850051",
+        "aliasesChecked": true,
+        "aliasReview": "artist 欄填「李雙澤」而非 Apple 顯示的「群星」，依據有二：一、23 軌中 12 軌由李雙澤本人演唱（過半），其餘為胡德夫、楊祖珺、蘇瘂、Lisa、蔣勳詮釋他的作品；二、Spotify 同一張另有掛名「李雙澤」的版本（40qHw06FXlXTr98eTaer91），非自創掛名。專輯名採全形驚嘆號（與 Spotify 及店主寫法一致；Apple 顯示半形，appleAudioKey 正規化後同鍵）。UPC 4711457850051 取自 Apple artwork 檔名，並由同廠牌旁證支持——野火樂集的胡德夫《匆匆》在 MB 記載 barcode 4711457850013，同屬 471145785 前綴。卡池查無同名或近名卡。",
+        "mbAbsenceProof": {
+          "queries": [
+            "artist/?query=李雙澤 → 命中藝人 9811bf84-9a96-4ae1-a0de-6f2d08d013e0（Person／TW／1949-07-14–1977-09-10）",
+            "release-group?artist=9811bf84-9a96-4ae1-a0de-6f2d08d013e0 → count=0（該藝人名下無任何 release-group）",
+            "release?artist=9811bf84-9a96-4ae1-a0de-6f2d08d013e0 → count=0",
+            "release-group/?query=releasegroup:\"敬！李雙澤\" / \"唱自己的歌\" / \"李雙澤\" → 各 count=0",
+            "release/?query=barcode:4711457850051 → count=0",
+            "release/?query=label:\"野火樂集\" → count=1，只有胡德夫《匆匆》，無本張",
+            "羅馬拼音四式 Li Shuang-tse／Li Shuangze／Lee Shuang-tse／Li Shuang Tse → 皆無對應藝人或發行"
+          ],
+          "checkedAt": "2026-08-16T05:00:00Z",
+          "conclusion": "MusicBrainz 有李雙澤的藝人條目但名下 release-group 與 release 皆 count=0，僅有兩筆 composer 關聯；本張紀念輯以標題、barcode、廠牌三個方向查詢亦全數 count=0，確認 MB 未建檔。這與他生前未發行個人專輯的史實一致，非查詢方式問題。"
+        },
+        "manualEvidenceUrls": [
+          "https://music.apple.com/tw/album/1791884353",
+          "https://open.spotify.com/album/40qHw06FXlXTr98eTaer91",
+          "https://open.spotify.com/album/0OlnlC9UOouLym0Q5bx9Dv"
+        ],
+        "manualRuling": "店主 2026-08-16 於對話中明確指定「李雙澤的部分，用敬！李雙澤／唱自己的歌這張紀念專輯來代表他」。既有裁定（PROJECT_MEMORY／記憶 project_taiwan_folk_must_include）亦載明李雙澤、楊祖珺不適用「非正規專輯移除」規則、必進卡池。依 verify-album-onboarding.mjs 第 84 行起的 MBID 窄例外（2026-08-15 店主核定，RUNBOOK 四之五選項 1）走人工身分：外部識別由 Apple collectionId 1791884353、Spotify album 40qHw06FXlXTr98eTaer91、UPC 4711457850051 三者交叉支撐。",
+        "compilationRuling": "Apple 標示為群星紀念輯，依 §1 Compilation 原不進池。但 23 軌中過半（12 軌）為李雙澤本人錄音，且他生前無任何個人發行，本張實質是其錄音的唯一正式發行；加上店主明確指定，據此收錄。"
+      },
+      "cover": {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b8baa3244ac389ce45e699ce",
+        "source": "spotify",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-16T05:00:00Z"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": 16,
+        "source": "worker:/album-rating",
+        "checkedAt": "2026-08-16T05:00:00Z"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "客觀符合 pearl 門檻（obscurity=5、Last.fm listeners=16 為有效數值且遠低於 300），但本批選擇作一般卡上架，不列頂點：一、pearl 的敘事核心是「流通被截斷的遺珠」，本張是 2008 年正常發行的紀念輯，冷門源於題材小眾，與同日上架的楊祖珺 1979 專輯（發行兩個月即遭全面回收、列為禁唱）性質不同；二、店主指定這兩位必須進池，一般卡在抽卡流程的曝光遠高於頂點卡（apex 僅約 3% 且需同曲風命中），作一般卡更能達成指定目的。店主可推翻改列 pearl。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "他生前沒有發過一張唱片。李雙澤一九七七年在淡水海邊為救人溺斃，得年二十八；這張二〇〇八年由野火樂集整理發行的紀念輯，才讓那些散落的錄音有了正式發行。二十三軌裡十二軌由他本人演唱：〈老鼓手〉〈愚公移山〉〈紅毛城〉是自己的創作，〈思想起〉〈綠島小夜曲〉是他唱的既有歌謠，也有一首 Bob Dylan 的〈Blowing in the Wind〉。〈美麗島〉與〈少年中國〉收的是一九七七年胡德夫與楊祖珺的版本，蘇瘂與 Lisa 另錄新詮釋。「唱自己的歌」這句話的聲音出處，留在這裡。",
+        "sourceUrls": [
+          "https://music.apple.com/tw/album/1791884353",
+          "https://open.spotify.com/album/40qHw06FXlXTr98eTaer91",
+          "https://storystudio.tw/article/gushi/banned-song-formosa",
+          "https://zh.wikipedia.org/zh-tw/%E6%9D%8E%E9%9B%99%E6%BE%A4"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/2c/ec/1f2cec9b-7397-5fb6-3432-3e400d985f9b/mzaf_14420083530381593790.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-16T05:00:00Z",
+        "note": "店主指定試聽片段為〈愚公移山〉（Apple trackId 1791884989、第 21 軌 179s、李雙澤本人演唱），故取該軌 preview 而非專輯預設首軌（首軌〈動物園 (1977) [Live]〉僅 16 秒）。"
+      },
+      "published": {
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
+        "apexPool": false
+      }
+    }
+  ]
+}
