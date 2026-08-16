@@ -1,5 +1,47 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（續三）｜dip-vinyl-shop｜心情選歌結果頁新增「專輯介紹」小按鈕＋浮動視窗
+
+店主指示：心情選歌的欄位加一顆小按鈕「專輯介紹」，點開是浮動視窗看專輯的正式介紹。
+
+**為什麼要分開放**：結果頁 `.quiz-result-reason` 那段是**寫給玩家的文案**
+（同路人語氣，刻意不鋪事實細節）；玩家想知道「這張到底是什麼」時沒有地方看。
+所以另開一個視窗放**事實型專輯簡介**，兩者不混在同一塊。
+
+**改的東西（都在 `dip-vinyl-shop/index.html`）**
+- CSS：`.aintro-overlay` / `.aintro-box` / `.aintro-close` / `.aintro-label` /
+  `.aintro-artist` / `.aintro-album` / `.aintro-year` / `.aintro-desc`，
+  以及結果頁的 `.quiz-desc-row` / `.quiz-desc-btn`（靠右、9px mono，不跟「收進唱片櫃」搶視線）。
+  **`z-index: 500`**——要比卡片詳情 overlay（400）高。
+- HTML：`#albumIntroOverlay`（接在 `#cardDetailOverlay` 之後）。
+- `showQuizResult()`：新增 `qzHasIntro = !!artist && !!album`，在 `.quiz-result-reason`
+  之後插那顆按鈕（`data-quiz-action="album-intro"`，藝人／專輯走 dataset 帶過去，
+  不依賴 `lastQuizResult`）。**stock／reel 也給**——它們顯示的是店家自寫的商品／IG 內文，
+  跟事實型專輯簡介是兩回事。
+- `loadAlbumIntro()` / `openAlbumIntro()` / `closeAlbumIntro()`＋全域 click／Escape 監聽。
+
+**介紹的來源沒有新增任何東西**，取用順序與唱片櫃詳情（`openCardDetail`）、
+搜尋詳情（`openSearchDetail`）、類型挑片（`fillGpDesc`）**完全一致**：
+`album_overrides.desc`（後台校正）→ `NEOCLASSIC_LIST`（殿堂神作人工簡介）→
+`/album-desc`（KV 預生成）。**不現場請 AI**。`/album-desc` 偶爾回空（KV 剛好在生成中），
+所以照 `fillGpDesc` 的做法重試一次；**空的不寫進快取**，下次開還有機會拿到。
+
+**兩個容易忽略的細節**
+- `_aintroToken`：連開兩張不同的卡時，慢的那次 fetch 回來不可以蓋掉現在這張。
+- 空字串不快取（`_albumIntroCache` 只存拿到的）。
+
+**實測（本機 static-b 預覽，375×812）**
+- 走完五題 → 結果頁 The Shaggs《Philosophy of the World》，按鈕正常出現，
+  dataset 帶對藝人／專輯。
+- 視窗開關四條路徑都對：✕、點背景、Esc 都關；**點內容區不關**。
+  `body.style.overflow` 開 `hidden`、關還原 `''`。
+- 版面：按鈕在文案下 8px、下一塊上 20px、靠右；視窗 345×411 置中，
+  灌 1200 字後高度停在 650（= 80vh 上限）並內部捲動，沒有溢出視窗。
+- **本機顯示「（暫無介紹）」是 CORS，不是程式問題**——Worker 的
+  `Access-Control-Allow-Origin` 只給 `https://dipvinyl.tw`。
+  用 curl 直接打同一個網址確認資料在（The Shaggs 那筆 200 且有 desc），
+  console 也確實記到兩次 `/album-desc` 被擋（＝重試邏輯有跑）。線上才看得到真正的內容。
+
 ### 2026-08-16（續二）｜dip-vinyl-shop｜心情選歌離線版上線：前端判定＋查表文案，後台可一鍵切回 AI 版
 
 店主指示「讓這個專案正式上線，原本的線上版另外備份，隨時出問題可後台切換回來」。

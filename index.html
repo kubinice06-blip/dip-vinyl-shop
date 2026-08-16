@@ -633,6 +633,25 @@
     .cd-delete { width: 100%; padding: 11px; background: #fff; color: #c0392b; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; cursor: pointer; }
     .cd-delete:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
 
+    /* 專輯介紹浮動視窗（心情選歌結果頁的小按鈕開啟）。
+       結果頁那段文案是寫給玩家的（同路人語氣、刻意不講事實細節），
+       這裡才是事實型的專輯簡介——兩者刻意分開，不擠在同一塊。
+       z-index 要比卡片詳情（400）高：從結果頁點開時可能疊在它上面。 */
+    .aintro-overlay { position: fixed; inset: 0; z-index: 500; background: rgba(0,0,0,0.55); display: none; align-items: center; justify-content: center; padding: 24px 16px; }
+    .aintro-overlay.open { display: flex; }
+    .aintro-box { background: #fff; width: 100%; max-width: 420px; max-height: 80vh; overflow-y: auto; padding: 26px 22px 24px; position: relative; text-align: center; }
+    .aintro-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray); line-height: 1; }
+    .aintro-label { font-size: 9px; color: var(--gray); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .aintro-artist { font-size: 12px; color: var(--gray); }
+    .aintro-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .aintro-year { font-size: 12px; color: var(--gray); letter-spacing: 0.14em; }
+    .aintro-year:empty { display: none; }
+    .aintro-desc { font-size: 12.5px; line-height: 2; text-align: left; padding: 14px; border: 1px solid var(--line); margin-top: 14px; }
+    /* 結果頁那顆小按鈕：靠右、比 CTA 小一號，不跟「收進唱片櫃」搶視線 */
+    .quiz-desc-row { margin: -12px 0 20px; text-align: right; }
+    .quiz-desc-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
+    .quiz-desc-btn:hover { border-color: var(--black); color: var(--black); }
+
   </style>
 <link rel="stylesheet" href="dip-draw-anim.css?v=1">
 </head>
@@ -881,6 +900,18 @@
 <!-- 卡片詳情 overlay -->
 <div class="card-detail-overlay" id="cardDetailOverlay">
   <div class="cd-body"></div>
+</div>
+
+<!-- 專輯介紹浮動視窗（心情選歌結果頁「專輯介紹」小按鈕開啟） -->
+<div class="aintro-overlay" id="albumIntroOverlay">
+  <div class="aintro-box">
+    <button class="aintro-close" data-aintro-close>✕</button>
+    <div class="aintro-label">專輯介紹</div>
+    <div class="aintro-artist" id="aintroArtist"></div>
+    <div class="aintro-album" id="aintroAlbum"></div>
+    <div class="aintro-year" id="aintroYear"></div>
+    <div class="aintro-desc" id="aintroDesc"></div>
+  </div>
 </div>
 
 
@@ -3026,6 +3057,10 @@
     if (e.target.closest('[data-quiz-action="share"]')) {
       shareQuizResult();
     }
+    const introBtn = e.target.closest('[data-quiz-action="album-intro"]');
+    if (introBtn) {
+      openAlbumIntro(introBtn.dataset.artist || '', introBtn.dataset.album || '');
+    }
     // 試聽鈕沿用類型挑片那一套（同一組 data-gp-action 與同一個控制器）
     if (e.target.closest('[data-gp-action="preview"]')) {
       gpPlayPreview(true, lastQuizResult);
@@ -3551,6 +3586,9 @@ ${seenList}
     // 試聽來源：與類型挑片同一條規則——固定連結優先，人工標記無來源的就不顯示試聽鈕。
     // reel／店內商品不是專輯卡，沒有試聽。
     const qzCanPreview = result.type !== 'reel' && result.type !== 'stock' && !!result.artist && !!result.album;
+    // 「專輯介紹」小按鈕：只要有藝人＋專輯就給。店內商品／IG reel 的介紹是店家自己寫的，
+    // 那是另一回事，這顆按鈕拿的一律是事實型專輯簡介（見 openAlbumIntro）。
+    const qzHasIntro = !!result.artist && !!result.album;
     if (qzCanPreview && result._previewUrl === undefined) {
       try {
         const qzId = cardIdOf(result.artist, result.album);
@@ -3577,6 +3615,7 @@ ${seenList}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
+        ${qzHasIntro ? `<div class="quiz-desc-row"><button class="quiz-desc-btn" data-quiz-action="album-intro" data-artist="${_qzAttr(result.artist)}" data-album="${_qzAttr(result.album)}">專輯介紹</button></div>` : ''}
         ${qzCanPreview ? gpPreviewBtnHtml(result) : ''}
         ${ctaHtml}
         ${stockRecoHtml}
@@ -3598,6 +3637,62 @@ ${seenList}
       gpPlayPreview(false, result);
     }
   }
+
+  // ── 專輯介紹浮動視窗 ──────────────────────────────────────────
+  // 結果頁那段是「文案」（寫給玩家、刻意不鋪事實），這裡是「介紹」（事實型）。
+  // 取用順序與唱片櫃詳情／類型挑片完全一致，不另外生成也不現場請 AI：
+  //   後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc（KV 預生成）
+  const _qzAttr = s => (s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  const _albumIntroCache = new Map();
+
+  async function loadAlbumIntro(artist, album) {
+    const key = `${artist}||${album}`.toLowerCase();
+    if (_albumIntroCache.has(key)) return _albumIntroCache.get(key);
+    let desc = '';
+    const ov = await getAlbumOverride(cardIdOf(artist, album));
+    desc = (ov?.desc || '').trim() || (neoclassicOf({ artist, album })?.desc || '').trim();
+    // /album-desc 偶爾回空（KV 剛好在生成中），與 fillGpDesc 一樣重試一次
+    for (let attempt = 0; attempt < 2 && !desc; attempt++) {
+      try {
+        const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`);
+        if (res.ok) desc = ((await res.json()).desc || '').trim();
+      } catch (e) {}
+    }
+    if (desc) _albumIntroCache.set(key, desc);   // 空的不快取，下次開還有機會拿到
+    return desc;
+  }
+
+  let _aintroToken = 0;
+  async function openAlbumIntro(artist, album) {
+    const ov = document.getElementById('albumIntroOverlay');
+    if (!ov || !artist || !album) return;
+    document.getElementById('aintroArtist').textContent = artist;
+    document.getElementById('aintroAlbum').textContent = album;
+    document.getElementById('aintroYear').textContent = releaseYearOf(artist, album) || '';
+    const descEl = document.getElementById('aintroDesc');
+    descEl.textContent = '載入介紹…';
+    ov.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // 連開兩張不同的卡時，慢的那次回來不要蓋掉現在這張
+    const token = ++_aintroToken;
+    const desc = await loadAlbumIntro(artist, album);
+    if (token !== _aintroToken || !ov.classList.contains('open')) return;
+    descEl.textContent = desc || '（暫無介紹）';
+  }
+
+  function closeAlbumIntro() {
+    const ov = document.getElementById('albumIntroOverlay');
+    if (!ov || !ov.classList.contains('open')) return;
+    ov.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', e => {
+    if (e.target.closest('[data-aintro-close]')) { closeAlbumIntro(); return; }
+    const ov = document.getElementById('albumIntroOverlay');
+    if (ov && e.target === ov) closeAlbumIntro();   // 點背景關閉
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAlbumIntro(); });
 
   function showShareToast(msg) {
     const t = document.createElement('div');
