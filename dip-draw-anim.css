@@ -43,6 +43,16 @@
 .da-burst { position: absolute; left: 50%; top: 45%; width: 0; height: 0; pointer-events: none; }
 .da-pt { position: absolute; width: 6px; height: 6px; left: -3px; top: -3px; }
 
+/* 全螢幕模式：動畫期間蓋掉整個視窗（含站頂選單），揭曉接軌時淡出還原正常版面。
+   背景用不透明白，與站上底色一致；z-index 要低於接軌用的 clone（9999）。 */
+.da-fs { position: fixed; inset: 0; z-index: 9990; background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .35s ease; }
+.da-fs.out { opacity: 0; }
+.da-fs .da-stage { width: 100%; height: 100%; background: none; }
+/* 動畫期間鎖住背景捲動，免得白幕底下的頁面被誤觸滑動 */
+html.da-fs-lock, html.da-fs-lock body { overflow: hidden; }
+
 /* 揭曉 → 結果頁無縫接軌：fixed clone 從彈起位置飛進目標封面框，蓋住版面切換的跳動 */
 .da-handoff-clone { position: fixed; z-index: 9999; background-size: cover; background-position: center;
   border: 1px solid #111; box-shadow: 0 10px 28px rgba(0,0,0,0.18); pointer-events: none; }

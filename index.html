@@ -3053,7 +3053,11 @@
 
   async function submitQuiz() {
     // 心情選歌也走抽卡動畫：AI 推薦＋三處驗證常要好幾秒，閃卡正好把等待變成儀式
-    const qzAnim = await DipDrawAnim.start({ host: document.getElementById('quizContent'), profile: 'front' }).catch(() => null);
+    const qzAnim = await DipDrawAnim.start({
+      host: document.getElementById('quizContent'), profile: 'front',
+      fullscreen: true,
+      alive: () => document.getElementById('quizModal')?.classList.contains('open'),
+    }).catch(() => null);
     if (!qzAnim) document.getElementById('quizContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
 
@@ -4548,7 +4552,11 @@ ${seenList}
     gpStopPreview();
     gpMatchInfo = null;
     // 類型挑片與直接來一張都走抽卡動畫（取代等待 spinner；抽卡／封面解析在背景並行跑）
-    const gpAnim = await DipDrawAnim.start({ host: document.getElementById('genreContent'), profile: 'front' }).catch(() => null);
+    const gpAnim = await DipDrawAnim.start({
+      host: document.getElementById('genreContent'), profile: 'front',
+      fullscreen: true,     // 動畫期間蓋滿視窗（含站頂選單），揭曉接軌時才還原
+      alive: () => document.getElementById('genreModal')?.classList.contains('open'),
+    }).catch(() => null);
     if (!gpAnim) document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 

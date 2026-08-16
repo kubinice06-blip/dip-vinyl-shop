@@ -27,13 +27,13 @@
       flashDuration: 1600, startInterval: 45, endInterval: 250, easePow: 2, jitter: 8, maxBlur: 3.5, ghosts: true,
       pauseBeforePop: 150, popDuration: 400, popScale: 1.45, popLift: 60, popOvershoot: 1.6, floatWobble: true,
       autoDelay: 450, flipDuration: 500, burstCount: 50, sound: true,
-      handoffDelay: 650, handoffDuration: 450, backColor: '#ffffff', cardMax: 200,
+      handoffDelay: 650, handoffDuration: 450, backColor: '#ffffff', cardMax: 200, fullscreen: true,
     },
     battle: {
       flashDuration: 900, startInterval: 35, endInterval: 150, easePow: 2, jitter: 6, maxBlur: 3, ghosts: true,
       pauseBeforePop: 100, popDuration: 300, popScale: 1.35, popLift: 40, popOvershoot: 1.5, floatWobble: false,
       autoDelay: 250, flipDuration: 380, burstCount: 30, sound: true,
-      handoffDelay: 300, handoffDuration: 350, backColor: '#ffffff', cardMax: 150,
+      handoffDelay: 300, handoffDuration: 350, backColor: '#ffffff', cardMax: 150, fullscreen: false,
     },
   };
   const FALLBACK_COVERS = [
@@ -133,6 +133,16 @@
     '</div>';
 
   let pendingClone = null;
+  let activeFs = null;              // 目前的全螢幕覆蓋層（同時只會有一個）
+
+  // 收掉全螢幕層並解除捲動鎖。fade=true 時先淡出再移除（給接軌時「白幕退場」用）。
+  function teardownFs(fade) {
+    const el = activeFs; if (!el) return;
+    activeFs = null;
+    document.documentElement.classList.remove('da-fs-lock');
+    if (fade) { el.classList.add('out'); setTimeout(() => el.remove(), 400); }
+    else el.remove();
+  }
 
   async function start(opts) {
     const o = opts || {};
@@ -142,11 +152,30 @@
     const known = cfgCache[profile];
     if (known && known.enabled === false) return null;    // 已知停用 → 呼叫端自理
 
-    host.innerHTML = STAGE_HTML;
-    const q = s => host.querySelector(s);
+    // 全螢幕模式：舞台不放進 host，改放進覆蓋整個視窗的固定層（連站頂選單一起蓋掉），
+    // 揭曉後由 finishHandoff 淡出、同時把卡片飛進結果頁——「動畫時全螢幕、出簡介才還原」。
+    // 呼叫端傳 fullscreen:true 啟用；後台可用 cfg.fullscreen=false 關掉。
+    const fs = !!o.fullscreen && (cfgCache[profile] ? cfgCache[profile].fullscreen !== false : true);
+    let fsEl = null;
+    if (fs) {
+      teardownFs();                       // 上一輪殘留（極少見）先收掉
+      fsEl = document.createElement('div');
+      fsEl.className = 'da-fs';
+      fsEl.innerHTML = STAGE_HTML;
+      document.body.appendChild(fsEl);
+      document.documentElement.classList.add('da-fs-lock');
+      activeFs = fsEl;
+    } else {
+      host.innerHTML = STAGE_HTML;
+    }
+    const root = fs ? fsEl : host;
+    const q = s => root.querySelector(s);
     const stage = q('.da-stage'), card = q('.da-card'), lift = q('.da-lift'),
           floaty = q('.da-floaty'), flip = q('.da-flip'), front = q('.da-front'),
           aura = q('.da-aura'), burstHost = q('.da-burst');
+    // 中止判斷：非全螢幕看舞台是否還在（結果頁覆蓋 host 即中止）；
+    // 全螢幕的舞台掛在 body 上不會被 host 影響，所以另外收呼叫端給的 alive()（例如 modal 是否還開著）。
+    const alive = () => fs ? (fsEl.isConnected && (!o.alive || o.alive())) : stage.isConnected;
 
     // 不等 Firestore：先用「已快取線上設定或內建預設」＋「已快取封面池或內建樣本」立刻開跑，
     // 資料晚到熱插拔（cfg 就地合併，閃卡迴圈每拍讀最新值；封面池整組換掉）。
@@ -170,11 +199,13 @@
         if (brand) brand.style.color = lum > 150 ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
       }
       const scale = Math.max(1, cfg.popScale), liftPx = Math.max(0, cfg.popLift);
-      const availW = stage.clientWidth || global.innerWidth;
-      const cardSize = Math.max(110, Math.min(cfg.cardMax || 200, Math.floor((availW - 48) / scale)));
-      const stageH = Math.round(cardSize * scale + liftPx + 44);
+      const availW = fs ? global.innerWidth : (stage.clientWidth || global.innerWidth);
+      let cardSize = Math.max(110, Math.min(cfg.cardMax || 200, Math.floor((availW - 48) / scale)));
+      // 全螢幕：舞台就是整個視窗，卡片再受視窗高度限制一次（彈起後也不能頂到上緣）
+      if (fs) cardSize = Math.max(110, Math.min(cardSize, Math.floor((global.innerHeight * 0.62 - liftPx) / scale)));
+      const stageH = fs ? global.innerHeight : Math.round(cardSize * scale + liftPx + 44);
       const restOffset = Math.round(liftPx / 2);
-      stage.style.height = stageH + 'px';
+      stage.style.height = fs ? '100%' : stageH + 'px';
       card.style.width = card.style.height = cardSize + 'px';
       card.style.top = restOffset + 'px';
       const poppedY = Math.round(stageH / 2 + restOffset - liftPx);
@@ -190,7 +221,7 @@
       // 閃卡：跑滿設定時長；資產未到就用收尾間隔繼續閃（上限再等 15 秒）
       while ((t < cfg.flashDuration || !state.ready) && !state.fail) {
         if (t > cfg.flashDuration + 15000) { state.fail = true; break; }
-        if (!stage.isConnected) return;                     // 使用者關掉畫面 → 靜默中止
+        if (!alive()) { teardownFs(); return; }             // 使用者關掉畫面 → 靜默中止
         const prog = Math.min(1, t / cfg.flashDuration);
         const interval = cfg.startInterval + (cfg.endInterval - cfg.startInterval) * Math.pow(prog, cfg.easePow);
         const c = order[i % order.length];
@@ -209,7 +240,9 @@
         snd('tick', cfg, prog); i++;
         await sleep(interval); t += interval;
       }
-      if (state.fail || !stage.isConnected) { if (stage.isConnected) stage.style.opacity = '0'; return; }
+      // 跳過動畫（無封面可翻／中止）：非全螢幕就地淡出；全螢幕淡出白幕，
+      // 淡出期間呼叫端正好把結果頁渲染好，使用者看到的是白幕退去露出結果，而不是閃一下舊畫面。
+      if (state.fail || !alive()) { if (alive()) stage.style.opacity = '0'; teardownFs(true); return; }
       front.style.filter = ''; lift.style.transform = 'none';
       // 急停蓋回牌背
       flip.style.transition = 'none'; flip.style.transform = 'rotateY(0deg)';
@@ -217,23 +250,23 @@
       setTimeout(() => card.classList.remove('slam'), 300);
       front.style.backgroundImage = 'url(' + state.cover + ')';
       await sleep(cfg.pauseBeforePop);
-      if (!stage.isConnected) return;
+      if (!alive()) { teardownFs(); return; }
       // 彈起
       aura.className = 'da-aura ' + (state.apex ? 'on-apex' : 'on-normal');
       lift.style.transition = 'transform ' + cfg.popDuration + 'ms cubic-bezier(.2,' + cfg.popOvershoot + ',.35,1)';
       lift.style.transform = 'translateY(-' + cfg.popLift + 'px) scale(' + cfg.popScale + ')';
       snd('whoosh', cfg);
       await sleep(cfg.popDuration);
-      if (!stage.isConnected) return;
+      if (!alive()) { teardownFs(); return; }
       if (cfg.floatWobble) floaty.classList.add('on');
       // 翻牌揭曉
       await sleep(Math.max(150, cfg.autoDelay));
-      if (!stage.isConnected) return;
+      if (!alive()) { teardownFs(); return; }
       floaty.classList.remove('on');
       flip.style.transition = 'transform ' + cfg.flipDuration + 'ms cubic-bezier(.4,0,.2,1)';
       flip.style.transform = 'rotateY(180deg)';
       await sleep(cfg.flipDuration * 0.55);
-      if (!stage.isConnected) return;
+      if (!alive()) { teardownFs(); return; }
       const n = cfg.burstCount * (state.apex ? 1.5 : 1);
       for (let k = 0; k < n; k++) {
         const s = document.createElement('span'); s.className = 'da-pt';
@@ -252,7 +285,7 @@
       await sleep(cfg.flipDuration * 0.45 + Math.max(0, cfg.handoffDelay));
       // 留一個 fixed clone 停在卡片視覺位置：呼叫端渲染結果頁時（舞台被拆掉）由它蓋住版面跳動，
       // 之後 finishHandoff() 讓它飛進結果頁封面框。呼叫端不接軌就 cancel()。
-      if (stage.isConnected && state.cover) {
+      if (alive() && state.cover) {
         const ra = front.getBoundingClientRect();
         const cl = document.createElement('div'); cl.className = 'da-handoff-clone';
         cl.style.backgroundImage = 'url(' + state.cover + ')';
@@ -270,15 +303,22 @@
   // 結果頁渲染完成後呼叫：clone 飛進目標封面框，期間目標暫時隱形，抵達後換回真圖
   async function finishHandoff(opts) {
     const p = pendingClone; pendingClone = null;
-    if (!p) return;
+    if (!p) { teardownFs(true); return; }
     const o = opts || {};
     const target = typeof o.target === 'string' ? document.querySelector(o.target) : o.target;
-    if (!target) { p.el.remove(); return; }
+    if (!target) { p.el.remove(); teardownFs(true); return; }
     const fadeWrap = typeof o.fadeWrap === 'string' ? document.querySelector(o.fadeWrap) : o.fadeWrap;
     if (fadeWrap) fadeWrap.classList.add('da-fadein');
     const prevVis = target.style.visibility;
     target.style.visibility = 'hidden';
-    const rb = target.getBoundingClientRect();
+    // 全螢幕白幕在這一刻淡出、還原正常版面；卡片（fixed clone）同時飛進結果頁封面框
+    teardownFs(true);
+    let rb = target.getBoundingClientRect();
+    // 目標若不在可視範圍（結果頁比一屏長時會發生），先捲進畫面再量，否則卡片會飛到看不見的地方
+    if (rb.top < 0 || rb.bottom > global.innerHeight) {
+      target.scrollIntoView({ block: 'center' });
+      rb = target.getBoundingClientRect();
+    }
     const d = p.duration, ease = 'cubic-bezier(.25,.8,.3,1)';
     p.el.style.transition = 'left ' + d + 'ms ' + ease + ', top ' + d + 'ms ' + ease
       + ', width ' + d + 'ms ' + ease + ', height ' + d + 'ms ' + ease;
@@ -290,7 +330,10 @@
     target.style.visibility = prevVis || '';
     p.el.remove();
   }
-  function cancelHandoff() { if (pendingClone) { pendingClone.el.remove(); pendingClone = null; } }
+  function cancelHandoff() {
+    if (pendingClone) { pendingClone.el.remove(); pendingClone = null; }
+    teardownFs();     // 錯誤／中止時務必收掉白幕，否則整站被蓋住
+  }
 
   global.DipDrawAnim = {
     DEFAULTS,

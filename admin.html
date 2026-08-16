@@ -3895,13 +3895,13 @@ ${discogs ? '- Discogs：' + discogs : ''}
       flashDuration:1600, startInterval:45, endInterval:250, easePow:2, jitter:8, maxBlur:3.5, ghosts:true,
       pauseBeforePop:150, popDuration:400, popScale:1.45, popLift:60, popOvershoot:1.6, floatWobble:true,
       revealMode:'auto', autoDelay:450, flipDuration:500, burstCount:50, sound:true,
-      handoffDelay:650, handoffDuration:450, backColor:'#ffffff', cardMax:200
+      handoffDelay:650, handoffDuration:450, backColor:'#ffffff', cardMax:200, fullscreen:true
     },
     battle: {
       flashDuration:900, startInterval:35, endInterval:150, easePow:2, jitter:6, maxBlur:3, ghosts:true,
       pauseBeforePop:100, popDuration:300, popScale:1.35, popLift:40, popOvershoot:1.5, floatWobble:false,
       revealMode:'auto', autoDelay:250, flipDuration:380, burstCount:30, sound:true,
-      handoffDelay:300, handoffDuration:350, backColor:'#ffffff', cardMax:150
+      handoffDelay:300, handoffDuration:350, backColor:'#ffffff', cardMax:150, fullscreen:false
     },
   };
   const DRAW_DOC_ID = { front:'drawAnimation', battle:'drawAnimationBattle' };
@@ -3935,7 +3935,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
     {k:'handoffDelay',  l:'揭曉停留 ms',      min:0,   max:2000, step:50},
     {k:'handoffDuration',l:'接軌時長 ms',     min:200, max:1200, step:50},
     {k:'backColor',     l:'牌背顏色',         type:'color'},
-    {k:'cardMax',       l:'卡片最大邊長 px',  min:110, max:240,  step:10},
+    {k:'cardMax',       l:'卡片最大邊長 px',  min:110, max:320,  step:10},
+    {k:'fullscreen',    l:'全螢幕動畫',       type:'check'},
     {k:'sound',         l:'音效',            type:'check'},
   ];
   let daP = {...DEF_DRAW_BY_PROFILE.front};
