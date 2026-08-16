@@ -3008,6 +3008,8 @@
 
   document.getElementById('quizContent').addEventListener('click', e => {
     if (e.target.closest('[data-quiz-action="retry"]')) {
+      // 離開這張結果就把試聽收掉，別讓音樂一路播到重新作答的畫面。
+      gpStopPreview({ fade: true });
       sessionStorage.removeItem('dip_seen'); seenAlbums = new Set();
       sessionStorage.removeItem('dip_reason_words'); seenReasonWords = new Set();
       startQuiz();
@@ -3017,11 +3019,16 @@
       openModal(id);
     }
     if (e.target.closest('[data-quiz-action="another"]')) {
+      gpStopPreview({ fade: true });
       quizAnotherCount++;
       submitQuiz();
     }
     if (e.target.closest('[data-quiz-action="share"]')) {
       shareQuizResult();
+    }
+    // 試聽鈕沿用類型挑片那一套（同一組 data-gp-action 與同一個控制器）
+    if (e.target.closest('[data-gp-action="preview"]')) {
+      gpPlayPreview(true, lastQuizResult);
     }
   });
 
@@ -3541,6 +3548,19 @@ ${seenList}
       }
     }
 
+    // 試聽來源：與類型挑片同一條規則——固定連結優先，人工標記無來源的就不顯示試聽鈕。
+    // reel／店內商品不是專輯卡，沒有試聽。
+    const qzCanPreview = result.type !== 'reel' && result.type !== 'stock' && !!result.artist && !!result.album;
+    if (qzCanPreview && result._previewUrl === undefined) {
+      try {
+        const qzId = cardIdOf(result.artist, result.album);
+        const qzOv = await getAlbumOverride(qzId);
+        const qzStatus = qzOv?.previewStatus || window.DipPreviewStatus?.[qzId] || '';
+        result._previewUrl = qzOv?.previewUrl || '';
+        result._previewUnavailable = qzStatus === 'unavailable' || qzStatus === 'disabled';
+      } catch (e) { result._previewUrl = ''; result._previewUnavailable = false; }
+    }
+
     lastQuizResult = result;
     recordDrawnCard(result);
     seenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
@@ -3557,6 +3577,7 @@ ${seenList}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
+        ${qzCanPreview ? gpPreviewBtnHtml(result) : ''}
         ${ctaHtml}
         ${stockRecoHtml}
         <button class="quiz-collect-btn" data-collect data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
@@ -3572,6 +3593,10 @@ ${seenList}
     renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'))
       .then(r => paintResultTier('quizContent', result, r));
     resolveBandcampBtn(result.artist, result.album, document.getElementById('quizContent'));
+    // 抽到即自動試聽，與類型挑片一致；串流中的結果等文字跑完再播，免得邊打字邊出聲。
+    if (qzCanPreview && !result._streaming && !(result._previewUnavailable && !result._previewUrl)) {
+      gpPlayPreview(false, result);
+    }
   }
 
   function showShareToast(msg) {
@@ -4593,8 +4618,11 @@ ${seenList}
   let gpPreviewStarted = false;
   let gpPreviewManual = false; // 手動點擊才在失敗時 toast；自動播放被瀏覽器擋就安靜停在 ▶
   let gpPlayerState = { status: 'stopped' };
+  // 這一套控制器同時服務類型挑片／直接來一張（#genreContent）與心情選歌（#quizContent）。
+  // 兩邊的結果頁不會同時出現，所以按鈕用全域選取、比對對象記在 activePreviewResult。
+  let activePreviewResult = null;
   function _gpSetPreviewIcon(playing) {
-    const btn = document.querySelector('#genreContent [data-gp-action="preview"]');
+    const btn = document.querySelector('[data-gp-action="preview"]');
     if (!btn) return;
     const play = btn.querySelector('[data-gp-ic="play"]');
     const pause = btn.querySelector('[data-gp-ic="pause"]');
@@ -4625,8 +4653,8 @@ ${seenList}
   window.DipPlayer?.onStateChange((s) => {
     gpPlayerState = s;
     audioDebugLog(`state=${s.status}${s.provider ? '/' + s.provider : ''}${s.code ? ' code=' + s.code : ''}`);
-    if (!lastGpResult) return;
-    const mine = gpPreviewStarted && s.artist === lastGpResult.artist && s.album === lastGpResult.album;
+    if (!activePreviewResult) return;
+    const mine = gpPreviewStarted && s.artist === activePreviewResult.artist && s.album === activePreviewResult.album;
     if (mine && (s.status === 'loading' || s.status === 'playing' || s.status === 'stopping')) {
       _gpSetPreviewIcon(true);
     } else {
@@ -4697,10 +4725,14 @@ ${seenList}
     if (e.target.closest('.homehub-card, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
   }, true);
 
-  function gpPlayPreview(manual = true) {
-    const r = lastGpResult;
+  function gpPlayPreview(manual = true, result = null) {
+    const r = result || lastGpResult;
     if (!r || !window.DipPlayer) return;
     if (gpPreviewStarted && (gpPlayerState.status === 'playing' || gpPlayerState.status === 'loading')) { gpStopPreview({ fade: true }); return; }
+    // 自動播放時若開關是關的，就地提示原因並停手。少了這一步，玩家只會看到
+    // 「抽到卡但沒聲音」而完全不知道頂欄那顆開關的存在（首次提示每台裝置只出現一次）。
+    if (!manual && autoplayBlocked()) return;
+    activePreviewResult = r;
     // 手動按試聽鈕＝明確要出聲，這時才准武裝音訊；自動路徑交給授權判斷。
     gpEnsurePlayer({ grant: manual });
     gpPreviewStarted = true;
