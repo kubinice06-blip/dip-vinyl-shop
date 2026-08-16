@@ -5125,15 +5125,18 @@ ${seenList}
   async function shareGpResult() {
     if (!lastGpResult) return;
     const { artist, album, reason } = lastGpResult;
-    const gpShareUrl = 'https://dipvinyl.tw/genre';
+    // 分享網址依模式分流：兩條線的 OG 縮圖不同（/genre → og-genre-v3、/random → og-random），
+    // 各自是 genre/index.html、random/index.html 這種只帶 OG meta 再轉回 /#hash 的樁頁
+    const gpShareUrl = gpIsRandom ? 'https://dipvinyl.tw/random' : 'https://dipvinyl.tw/genre';
+    const gpShareLabel = gpIsRandom ? '直接來一張' : '類型挑片';
     const btn = document.querySelector('[data-gp-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
     try {
       const canvas = await buildShareCanvas(lastGpResult);
       const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.88));
-      const file = new File([blob], 'genre-pick.jpg', { type: 'image/jpeg' });
+      const file = new File([blob], gpIsRandom ? 'random-pick.jpg' : 'genre-pick.jpg', { type: 'image/jpeg' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${artist} — ${album} | 類型挑片`, text: '來點不一樣的音樂 →', url: gpShareUrl });
+        await navigator.share({ files: [file], title: `${artist} — ${album} | ${gpShareLabel}`, text: '來點不一樣的音樂 →', url: gpShareUrl });
       } else if (navigator.share) {
         await navigator.share({ title: `${artist} — ${album} | DIP Vinyl Shop`, text: `🎵 ${artist} — ${album}\n${reason || ''}\n\n來點不一樣的音樂 →`, url: gpShareUrl });
       } else {

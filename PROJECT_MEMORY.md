@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（後續）｜dip-vinyl-shop｜「直接來一張」補上專屬分享縮圖（OG）
+
+店主：直接來一張分享出去的縮圖，要跟類型挑片／心情選歌一樣有張簡潔縮圖。
+
+**原本的狀況**：`shareGpResult()` 是類型挑片與直接來一張共用的，分享網址寫死
+`https://dipvinyl.tw/genre`，所以直接來一張貼出去，預覽卡吃到的是「類型挑片」那張圖與文案。
+
+**站上 OG 的既有作法**（照抄即可）：`genre/index.html`、`quiz/index.html` 是只帶 OG meta、
+接著 `location.replace('/#hash')` 的樁頁；縮圖是 1200×630 純白底＋黑色標題的極簡圖。
+本次照這個模式補第三組。
+
+**新增／改動**：
+- `og-random.png`（新）：1200×630、白底、Noto Sans TC「直接來一張」。刻意對齊既有兩張的
+  版面數字——墨水高 119px、置中於 (600, 315)，量出 em≈128.4、5 字寬 632px，
+  與 og-genre-v3（4 字 489×119、中心 590/314）同一個字級家族。
+- `random/index.html`（新）：OG meta（title／description／image／twitter card）＋轉回 `/#random`。
+  og:url／og:image 用正式網域 `dipvinyl.tw`（既有兩支寫的是 pages.dev，內容相同，沒動它們）。
+- `index.html` `shareGpResult()`：網址與標題改成依 `gpIsRandom` 分流
+  （`/random` + 「直接來一張」vs `/genre` + 「類型挑片」），分享圖檔名同步分成
+  `random-pick.jpg` / `genre-pick.jpg`。
+
+**驗證**：本機 8903 起站，`curl /random` 回完整 OG meta、`/og-random.png` 回 200；
+瀏覽器實走 `/random` 會轉到 `/#random` 且 `#genreModal` 開啟（樁頁→遊戲這條路通）。
+`sw.js` 的 PRECACHE 不含任何 og 圖（既有兩張也沒有），爬蟲直接抓樁頁不經 SW，不必改。
+
+**工具陷阱（下次會再踩）**：PowerShell 5.1 讀「無 BOM 的 UTF-8 .ps1」是當成 Big5 解，
+**中文行尾註解會把下一行整行吃掉**——`$W = 1200` 與 `$targetCx = 600.0` 都靜默變成 null，
+畫出來的圖是文字被推到畫布左外側、只剩半截。產圖腳本一律寫純 ASCII 註解，
+中文字串用 `[char]0x76F4` 這種碼位組出來（傳參也會被吃，別用 `$args` 傳中文）。
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜修正頂級卡掃光外框在抽卡揭曉時跑位
 
 店主回報：三種頂級卡抽到揭曉時，金銀掃光外框會偏下、偏小，和封面對不齊（後台調校面板
