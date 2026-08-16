@@ -221,6 +221,10 @@
       .dip-autoplay-hint.is-shown{opacity:1;transform:translateY(0)}
       .dip-autoplay-toggle{font-family:'Space Mono',ui-monospace,monospace;font-size:12px;line-height:1;background:none;border:1px solid currentColor;padding:5px 7px;cursor:pointer;color:inherit;transition:opacity .15s}
       .dip-autoplay-toggle.is-muted{opacity:.45}
+      /* is-plain：放在頂欄登入區旁邊的低調版，不要框、不要搶視覺。 */
+      .dip-autoplay-toggle.is-plain{border:none;padding:0;font-size:15px;line-height:1;opacity:.5}
+      .dip-autoplay-toggle.is-plain:hover{opacity:.9}
+      .dip-autoplay-toggle.is-plain.is-muted{opacity:.32}
     `;
     document.head.appendChild(style);
   }
