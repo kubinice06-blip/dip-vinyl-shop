@@ -1,5 +1,61 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16｜classical-expansion＋dip-vinyl-shop｜古典 c-17～c-21 共 159 張上架，seed 8,146；CAA 抖動的真實嚴重度
+
+**seed 7,987 →8,146（+159），classical 累計 626 張。** 五批 prepare gate 全 0 error；
+published gate 的 error 數**恰好等於待貼的 83 張 YT 試聽**，其餘全部歸零。
+待貼檔：`classical-expansion/onboarding/album_overrides-repaste-c17to21.json`（只含本次 83 筆）。
+
+**一、⚠ CAA 的間歇失敗比先前認知嚴重一個量級——這是本輪最重要的發現。**
+實測八張封面各打十次，成功率是 **0/10 到 2/10**。那不是「偶爾抖一下」，
+是**線上卡片多數時候會顯示空白**。這些卡先前每道檢查都「通過」，
+只因為每次中獎的卡不同，一直被當成隨機噪音。
+處理：八張全換到實測 6/6 的來源（release 層 CAA 或 Spotify），三處重試次數調高
+（`caa-check.mjs` 2→5、`p2-covers.mjs` 的 `grab` 3→6、gate 的 `checkUrl` 2→5）。
+**日後遇到 CAA 500 不要只重試，要用「打十次算成功率」判斷是抖動還是該換來源。**
+
+**二、`p6-generic` 的年份讀研究稿的 `yearVerified.year`，不是身分檔。**
+我先前在 `p1j-identity` 設的 `yearOverride` 全部不會生效，差點讓 Kell（1940 應為 1950）
+與 Gary Karr（1985 應為 1995）帶錯年份上線。**改年份要改研究稿那一欄。**
+
+**三、`p2-covers` 會把身分列整份複製進輸出檔**（`{...r}`），
+所以改了 `p1j-identity` 之後**必須重跑 p2-covers 或直接同步 p2-covers**，
+否則 p6 讀到的是舊值（Hardenberger 的 `manualIdentity` 就是這樣卡住 gate 的）。
+
+**四、改卡名的連鎖影響共五處**，缺一處就會在下游炸：
+研究稿的**物件鍵**與 `key` 欄 → 卡單（重跑 p3）→ `p2-covers` → `p4-candidates` → hook 檔的 key。
+本輪改名 13 張，前三批各漏一處才發現。
+
+**五、修掉的四個 bug**：
+- `merge-writer-input.mjs` 切檔時對**物件格式**的研究稿取 `.length` 回 `undefined`，五批全部合併失敗
+- `p6-generic` 沒把人工身分的 `identitySource` 與四項舉證寫進 manifest，七張撞 MBID 硬規則；
+  且 `sourceUrls` 會拼出 `.../release-group/null`
+- `preflight.mjs` 不認人工身分卡
+- `card-preview-status.js` 的鍵要用 gate 的 `keyOf`（**斜線轉成 `-`**），周文中那張因此對不上
+
+**六、上架後才會發現的兩個順序陷阱**：
+- **重跑 p6 會洗掉 `published` 四旗標**（那是宣告欄位），換完封面重組裝後要重跑 `apply-published`
+- **gate 檢查的是 `data/apple-audio-runtime-v1.json`**，不是 `apple-audio-map-v1.json` 的 `entries`
+  ——寫完 entries 要跑 `scripts/build-apple-audio-runtime-map.mjs` 重編（6,905 →6,978）
+
+**七、KV 驗證不要用 `/album-desc`**：那個端點吃 artist／album 參數，拿 key 去查會全空
+（我因此一度看到 0/15 的假警報）。用 `wrangler kv key get` 或 `verify-kv.mjs`（需 `CLOUDFLARE_API_TOKEN`）。
+
+**八、代理三次依「facts 優先於派工詞」駁回我的指派，三次都對**：
+Gary Karr 的 1985 無來源、佐藤聰明的「日本宮廷音樂」只在 notes、
+Martinů 的「五號＋六號並收」落錯欄位（已補進 facts 並附 MB 來源）。
+另外**內容過濾擋掉最終回報九次，檔案九次都完整寫出**——遇到這種 `failed` 先驗檔案再決定要不要重跑。
+
+**九、樂評規則的例外二實際用到一次**：Farrenc 那張的主體就是同代人的兩種反應
+（Adolphe Adam 讚配器、Joseph d'Ortigue 抱怨不夠嬌媚），寫作層套主規則把後者匿名化了，
+店主提醒後改回具名。**判準是「拿掉樂評還剩不剩得下故事」，不是一律不寫。**
+
+主要檔案：`classical-expansion/onboarding/`（manifest-c-17～21、p2-covers、p4-candidates、
+p5f-manual-c17to21.mjs、FINDINGS-c17to21.md、RUNBOOK.md）、
+`desc-restyle/batches/`（research／hooks／input／output／final／kv 各 5 批）、
+`dip-vinyl-shop/`（seed_cards.json、card-preview-status.js、data/apple-audio-*、
+scripts/verify-album-onboarding.mjs）。
+
 ### 2026-08-16（第二輪）｜dip-vinyl-shop｜類型挑片收尾：權重曲線換指數、選項只留池內有卡的藝人
 
 第一輪上線後自我驗證發現加權**強度不足**：抽出的三軸會被拉回池平均

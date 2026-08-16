@@ -282,5 +282,8 @@ window.DipPreviewStatus = Object.freeze({
   "la monte young|the well-tuned piano": "unavailable",
   "george benjamin|written on skin": "unavailable",
   "eduardo mata|revueltas: sensemayá": "unavailable",
-  "peter serkin|takemitsu: piano works": "unavailable"
+  "peter serkin|takemitsu: piano works": "unavailable",
+  "chou wen-chung 周文中|pien - yü ko - cursive - the willows are new": "unavailable",
+  "zhou long 周龍|rhymes": "unavailable",
+  "toshi ichiyanagi 一柳慧|music for piano": "unavailable"
 });

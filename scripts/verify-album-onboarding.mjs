@@ -175,7 +175,8 @@ async function getJson(url, label, { allow404 = false } = {}) {
 // 同一個網址連三次可以拿到 200/500/200。單發一次就判定會把好卡誤殺
 // （c-15 Morlot 與 c-16 陳其鋼就是這樣被擋下的，兩張封面其實都在）。
 // 4xx 不重試——那是真的沒有，重試只是白等。
-async function checkUrl(url, label, retries = 2) {
+// 2026-08-16 再調高至 5：實測過「連五次 500、第六次才 200」（c-20 趙成珍那張），2 次遠遠不夠。
+async function checkUrl(url, label, retries = 5) {
   let last = '';
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
