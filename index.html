@@ -3778,6 +3778,9 @@ ${seenList}
     containerEl.appendChild(section);
   }
 
+  // ⚠ 2026-08-16 起這份手寫名單只是「卡池還沒載入時」的冷啟動備援與八類的 label 來源。
+  // 正式的錨點藝人名單由 gpArtistListFor() 從 seed 卡池自動生成（每類上限 300 位、
+  // 前半深挖後半主流、含華語日語藝人）。要調整可選藝人請動卡池或該函式，改這裡沒有用。
   const GENRE_DATA = {
     jazz: {
       label: 'Jazz 爵士',
@@ -3945,16 +3948,46 @@ ${seenList}
     return _cardPoolPromise;
   }
 
-  // 三個品味錨點的「深度」：GENRE_DATA 名單前半是深挖名字、後半是主流名字；
+  // 三個品味錨點的「深度」：名單前半是深挖名字、後半是主流名字；
   // 錨點越靠前半，抽卡越往高冷門度偏。純本地計算，取代原本的 AI 提示詞錨點。
   function gpDeepness() {
     if (gpIsRandom || !gpGenre || !gpArtists.length) return 0.5;
-    const list = GENRE_DATA[gpGenre].artists;
+    const list = gpArtistListFor(gpGenre);
     const sum = gpArtists.reduce((s, a) => {
       const i = list.indexOf(a);
       return s + (i < 0 ? 0.5 : (i < list.length / 2 ? 1 : 0));
     }, 0);
     return sum / gpArtists.length;
+  }
+
+  // ── 各類型錨點名單改由卡池自動生成（2026-08-16 起）───────────────────
+  // 手寫 50 人名單只是冷啟動備援：卡池一到手就換成池內真有卡的藝人名單，
+  // 上限 300 位、前半深挖後半主流（沿用 gpDeepness 與每輪抽樣的前後半語意），
+  // 華語、日語藝人只要在池內就自然入列。知名度＝平均經典度－平均冷門度。
+  const GP_LIST_CAP = 300;
+  let _gpGenreListCache = {};
+  function gpArtistListFor(genre) {
+    if (_gpGenreListCache[genre]) return _gpGenreListCache[genre];
+    if (!gpPoolCache) return GENRE_DATA[genre].artists; // 卡池未到手：退回內建名單，不快取
+    const stat = new Map();
+    for (const c of gpPoolCache.cards) {
+      let e = stat.get(c.artist);
+      if (!e) { e = { n: 0, g: 0, cls: 0, obs: 0 }; stat.set(c.artist, e); }
+      e.n++;
+      if (c.genres.includes(genre)) { e.g++; e.cls += c.classic || 3; e.obs += c.obscurity || 3; }
+    }
+    // 類型佔比守門：至少過半的卡帶這個標籤、或這類就有 3 張以上，才算這個類型的代表——
+    // 不然 My Chemical Romance 會因一張卡標了 classical 混進古典主流半
+    const rows = [...stat.entries()]
+      .filter(([a, e]) => e.g > 0 && (e.g / e.n >= 0.5 || e.g >= 3))
+      .map(([a, e]) => ({ a, fame: e.cls / e.g - e.obs / e.g, deep: e.obs / e.g, n: e.g }));
+    if (rows.length < 12) return GENRE_DATA[genre].artists; // 池太小不足三輪就別換
+    const half = Math.min(Math.floor(GP_LIST_CAP / 2), Math.ceil(rows.length / 2));
+    rows.sort((x, y) => (y.fame - x.fame) || (y.n - x.n));   // 主流半：最有名（同分卡多優先）
+    const main = rows.slice(0, half);
+    const deep = rows.slice(half).sort((x, y) => (y.deep - x.deep) || (y.n - x.n)).slice(0, half); // 深挖半：其餘裡最冷門
+    _gpGenreListCache[genre] = [...deep.map(r => r.a), ...main.map(r => r.a)];
+    return _gpGenreListCache[genre];
   }
 
   // ── 錨點藝人 → 本地口味比對（零線上 API）───────────────────────────
@@ -3966,20 +3999,25 @@ ${seenList}
   const GP_TAG_ZH = { rock: '搖滾', blues: '藍調', folk: '民謠', pop: '流行', classical: '古典', jazz: '爵士', soul: '靈魂放克', electronic: '電子', world: '世界音樂', hiphop: '嘻哈' };
   function _gpTokens(name) {
     return String(name || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/&/g, ' and ').replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+      .replace(/&/g, ' and ')
+      // 保留漢字、假名（含長音符）、諺文——池裡有「竹内まりや」這類名字，洗掉假名會比對失真；諺文連字母區段(U+1100)一起留，NFD 會把音節拆成字母（박효신）
+      .replace(/[^a-z0-9\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af\u1100-\u11ff]+/g, ' ').trim().split(/\s+/).filter(Boolean);
   }
   let _gpArtistIndex = null; // 卡池依藝人分組（含 token），只建一次
+  let _gpArtistByKey = null; // 原始名字（小寫）直查表：「!!!」這種全標點名字 token 化後是空的，只能靠這裡
   function gpFindArtistCards(pool, name) {
     if (!_gpArtistIndex) {
       _gpArtistIndex = [];
-      const byKey = new Map();
+      _gpArtistByKey = new Map();
       for (const c of pool.cards) {
         const key = (c.artist || '').toLowerCase();
-        let e = byKey.get(key);
-        if (!e) { e = { tokens: _gpTokens(c.artist), cards: [] }; byKey.set(key, e); _gpArtistIndex.push(e); }
+        let e = _gpArtistByKey.get(key);
+        if (!e) { e = { tokens: _gpTokens(c.artist), cards: [] }; _gpArtistByKey.set(key, e); _gpArtistIndex.push(e); }
         e.cards.push(c);
       }
     }
+    const raw = _gpArtistByKey.get(String(name || '').toLowerCase());
+    if (raw) return raw.cards;
     const q = _gpTokens(name);
     if (!q.length) return [];
     const qs = q.join(' ');
@@ -4240,11 +4278,11 @@ ${seenList}
   function renderGpRound() {
     const total = 3;
     const pct = ((gpRound + 1) / total * 100).toFixed(0);
-    const list = GENRE_DATA[gpGenre].artists;
-    // 只提供卡池裡真的有卡的藝人：名單有 33/50 的古典名字（Mahler 等）在池內 0 張，
-    // 選了對不回任何卡＝那一票白投。卡池還沒到手就不過濾（首次冷啟動，之後都有快取）。
+    // 名單由卡池生成（gpArtistListFor），列出的藝人保證池內有卡；
+    // 冷啟動退回內建 50 人名單時仍過濾一次（Mahler 等在池內 0 張，選了那一票白投）
+    const list = gpArtistListFor(gpGenre);
     let available = list.filter(a => !gpUsed.has(a));
-    if (gpPoolCache) {
+    if (gpPoolCache && !_gpGenreListCache[gpGenre]) {
       const inPool = available.filter(a => gpFindArtistCards(gpPoolCache, a).length);
       if (inPool.length >= 4) available = inPool;
     }
