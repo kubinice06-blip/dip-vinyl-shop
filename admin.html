@@ -732,6 +732,16 @@
     <div style="max-width:640px;">
 
       <div style="margin-bottom:40px;">
+        <div class="section-label" style="margin-bottom:16px;">心情選歌模式</div>
+        <div style="display:flex;border:1px solid var(--black);max-width:280px;">
+          <button id="mqOfflineBtn" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">離線版</button>
+          <button id="mqOnlineBtn" style="flex:1;padding:10px 0;border:none;border-left:1px solid var(--black);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">AI 版（舊）</button>
+        </div>
+        <div id="mqDesc" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:1.9;">讀取中…</div>
+        <div id="mqSaved" style="font-size:10px;color:var(--gray);margin-top:6px;"></div>
+      </div>
+
+      <div style="margin-bottom:40px;">
         <div class="section-label" style="margin-bottom:16px;">類型挑片模式</div>
         <div style="display:flex;border:1px solid var(--black);max-width:280px;">
           <button id="modeDeepBtn" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">深度挖掘</button>
@@ -2980,6 +2990,50 @@ ${discogs ? '- Discogs：' + discogs : ''}
       msgEl.textContent = '移除失敗：' + e.message;
     }
   });
+
+  // ── 心情選歌模式（Firestore gameConfig/moodQuiz.mode）──
+  // 離線版＝前端判定＋1272 段查表文案，零 LLM 呼叫。
+  // AI 版是舊的那條線，整條保留在 index.html 裡，出問題按這裡就切回去，不用重新部署。
+  let mqMode = 'offline';
+
+  function renderMqModeUI() {
+    const off = document.getElementById('mqOfflineBtn');
+    const on = document.getElementById('mqOnlineBtn');
+    const desc = document.getElementById('mqDesc');
+    if (!off) return;
+    const active = mqMode === 'offline' ? off : on;
+    const idle = mqMode === 'offline' ? on : off;
+    active.style.background = 'var(--black)'; active.style.color = '#fff';
+    idle.style.background = 'none'; idle.style.color = 'var(--gray)';
+    desc.textContent = mqMode === 'offline'
+      ? '離線版：前端判定心情，文案從 300 張精選卡的 1272 段裡查表。不呼叫 AI，秒出結果，內容都審過。'
+      : 'AI 版（舊）：每次讓 Claude Haiku 現場挑專輯、現場寫文案。慢、要算力、內容沒審過，只在離線版出問題時用。';
+  }
+
+  async function loadMqMode() {
+    try {
+      const s = await getDoc(doc(db, 'gameConfig', 'moodQuiz'));
+      mqMode = (s.exists() && s.data().mode === 'online') ? 'online' : 'offline';
+    } catch (e) { mqMode = 'offline'; }
+    renderMqModeUI();
+  }
+
+  async function setMqMode(mode) {
+    const saved = document.getElementById('mqSaved');
+    mqMode = mode; renderMqModeUI();
+    if (saved) saved.textContent = '儲存中…';
+    try {
+      await setDoc(doc(db, 'gameConfig', 'moodQuiz'), { mode, updatedAt: Date.now() }, { merge: true });
+      if (saved) saved.textContent = `已切換為${mode === 'offline' ? '離線版' : 'AI 版'}，前台重新開啟心情選歌即生效`;
+    } catch (e) {
+      if (saved) saved.textContent = '✗ 儲存失敗：' + e.message;
+      await loadMqMode();
+    }
+  }
+
+  document.getElementById('mqOfflineBtn')?.addEventListener('click', () => setMqMode('offline'));
+  document.getElementById('mqOnlineBtn')?.addEventListener('click', () => setMqMode('online'));
+  loadMqMode();
 
   function renderGpModeUI() {
     const mode = localStorage.getItem('gp_mode') || 'deep';

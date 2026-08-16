@@ -2837,6 +2837,135 @@
   // ── 心理測驗 ──
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
+  // 心情選歌有兩條線，後台 gameConfig/moodQuiz.mode 決定跑哪一條：
+  //   offline — 前端判定＋查表文案（2026-08-16 上線；1272 段人工審過的段落、零 LLM 呼叫）
+  //   online  — 舊版，每次讓 Worker 上的 Haiku 現場挑專輯、現場寫文案
+  // 舊版整條保留在檔案裡（submitQuizOnline / getAiReason），出問題後台切一下就回去。
+  let quizMode = 'offline';
+  const QUIZ_LEN = 5;
+  let moodData = null, moodBank = null, moodPrep = null;
+
+  const DipMood = (() => {
+    const AXES = ['E', 'M', 'X', 'O', 'S'];
+    const dot = (a, b) => AXES.reduce((s, k) => s + (a[k] || 0) * (b[k] || 0), 0);
+    const mag = a => Math.hypot(...AXES.map(k => a[k] || 0));
+
+    // 預計算每題對每個原型的分離度。開場的「全域鑑別王」＝總分離度前 12 名。
+    function prepare(d) {
+      const moods = Object.keys(d.targets).filter(k => !k.startsWith('_') && k !== 'balance');
+      const rows = d.questions
+        .filter(q => q.o.every((_, i) => d.vectors[`${q.id}-${i}`]))
+        .map(q => {
+          let total = 0;
+          for (const m of moods) {
+            const sc = q.o.map((_, i) => dot(d.vectors[`${q.id}-${i}`], d.targets[m]));
+            total += Math.max(...sc) - Math.min(...sc);
+          }
+          return { q, total };
+        });
+      return { moods, rows, openers: rows.slice().sort((a, b) => b.total - a.total).slice(0, 12) };
+    }
+
+    // 五個選項向量相加 →（各軸反比加權，否則 S 軸的訊號量會主導方向）→ 比方向不比長度。
+    // 訊號太弱就走 balance 保底，不要硬從噪音裡挑一個原型。
+    function classify(optionIds) {
+      const t = moodData.targets, w = t._axisWeight || {};
+      const raw = { E: 0, M: 0, X: 0, O: 0, S: 0 };
+      for (const id of optionIds) { const v = moodData.vectors[id]; if (v) for (const k of AXES) raw[k] += (v[k] || 0); }
+      const sum = Object.fromEntries(AXES.map(k => [k, raw[k] * (w[k] ?? 1)]));
+      const m0 = Math.hypot(...AXES.map(k => sum[k]));
+      if (m0 < (t._minMagnitude ?? 1.8)) return 'balance';
+      const scale = 2.4 / m0;
+      const norm = Object.fromEntries(AXES.map(k => [k, sum[k] * scale]));
+      return Object.entries(t)
+        .filter(([k]) => !k.startsWith('_') && k !== 'balance')
+        .map(([m, tt]) => [m, Math.hypot(...AXES.map(k => norm[k] - (tt[k] || 0)))])
+        .sort((a, b) => a[1] - b[1])[0][0];
+    }
+
+    // 問對題比多問題有用：5 題隨機選的召回天花板只有 54%，選對題可以到 82% 有關聯率。
+    // 前 2 題廣撒網，之後看累積向量的方向找候選原型，挑最能拉開它們的那一題。
+    // 候選用 cosine 不用歐氏距離——用距離的話座標最遠的 lowtide 永遠擠不進候選。
+    function nextQuestion(answeredIds, usedIds) {
+      const { moods, rows, openers } = moodPrep, used = new Set(usedIds);
+      const pickOpener = () => {
+        const pool = openers.filter(r => !used.has(r.q.id));
+        return pool.length ? pool[Math.floor(Math.random() * pool.length)].q : null;
+      };
+      if (answeredIds.length < 2) return pickOpener() || rows.find(r => !used.has(r.q.id))?.q || null;
+
+      const cur = { E: 0, M: 0, X: 0, O: 0, S: 0 };
+      for (const id of answeredIds) { const v = moodData.vectors[id]; if (v) for (const k of AXES) cur[k] += v[k] || 0; }
+      const cn = mag(cur);
+      let cands;
+      if (cn < 0.5) {                    // 前兩題都答中性選項，還沒有方向——繼續廣撒
+        const o = pickOpener(); if (o) return o;
+        cands = moods;
+      } else {
+        // 固定盯前 3 名。試過越問越窄（4→3→2）反而更差：太早鎖定會把正解丟出候選。
+        cands = moods.map(m => [m, dot(cur, moodData.targets[m]) / (cn * mag(moodData.targets[m]))])
+          .sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]);
+      }
+      // 成對分離，不是加總分離：加總會讓「對大家都有點用」的題永遠贏過
+      // 「只對關鍵一對有用」的題——分辨 still 和 lowtide 靠 M 軸，加總制下永遠選不上。
+      let best = null, bs = -1;
+      for (const r of rows) {
+        if (used.has(r.q.id)) continue;
+        let s = 0;
+        for (let i = 0; i < cands.length; i++) for (let j = i + 1; j < cands.length; j++) {
+          const diff = {};
+          for (const k of AXES) diff[k] = (moodData.targets[cands[i]][k] || 0) - (moodData.targets[cands[j]][k] || 0);
+          const sc = r.q.o.map((_, oi) => dot(moodData.vectors[`${r.q.id}-${oi}`], diff));
+          s += Math.max(...sc) - Math.min(...sc);
+        }
+        if (s > bs) { bs = s; best = r.q; }
+      }
+      return best;
+    }
+
+    // 抽卡：先抽同心情沒看過的，抽光了才借鄰居心情的卡（判錯落在鄰居，玩家不會覺得突兀）。
+    // balance 在鄰居表裡是孤島（座標全零跟誰都等距），借不到也不該借——
+    // flame 的段落開頭「你現在有火」給一個沒有傾向的玩家看會很突兀。
+    function pickCard(mood, seen) {
+      const cardsFor = m => Object.keys(moodBank.passages).filter(k => moodBank.passages[k][m]);
+      const fresh = list => list.filter(k => {
+        const c = moodBank.cards[k];
+        return c && !seen.has(`${c.a}||${c.b}`.toLowerCase());
+      });
+      let m = mood, pool = fresh(cardsFor(mood));
+      if (!pool.length) {
+        for (const nb of (moodData.targets._neighbors?.[mood] || [])) {
+          const p = fresh(cardsFor(nb));
+          if (p.length) { m = nb; pool = p; break; }
+        }
+      }
+      if (!pool.length) { m = mood; pool = cardsFor(mood); }   // 全看過了就重複抽，總比抽不到好
+      if (!pool.length) return null;
+
+      const key = pool[Math.floor(Math.random() * pool.length)];
+      const variants = moodBank.passages[key][m] || [];
+      if (!variants.length) return null;
+      // 同一張卡同一種心情再抽到時輪替變體，不要每次都同一段
+      const seq = `dip_mv_${key}_${m}`;
+      let n = 0;
+      try { n = parseInt(sessionStorage.getItem(seq) || '0', 10) || 0; sessionStorage.setItem(seq, String(n + 1)); } catch (e) {}
+      const c = moodBank.cards[key];
+      return { key, mood: m, artist: c.a, album: c.b, year: c.y, tier: c.t, passage: variants[n % variants.length] };
+    }
+
+    async function load() {
+      if (moodData && moodBank) return true;
+      const [a, b] = await Promise.all([
+        fetch('./mood-quiz.json').then(r => r.ok ? r.json() : Promise.reject(new Error('mood-quiz.json'))),
+        fetch('./mood-bank.json').then(r => r.ok ? r.json() : Promise.reject(new Error('mood-bank.json'))),
+      ]);
+      moodData = a; moodBank = b; moodPrep = prepare(a);
+      return true;
+    }
+
+    return { load, prepare, classify, nextQuestion, pickCard, get ready() { return !!(moodData && moodBank && moodPrep); } };
+  })();
+
   let quizQs = [];
   let quizReels = [];
   let quizSelected = [];
@@ -2897,6 +3026,34 @@
   });
 
   async function loadQuizData() {
+    // 模式旗標：後台 gameConfig/moodQuiz.mode。讀不到（離線、規則擋住）就維持預設 offline，
+    // 因為離線版不依賴任何外部服務，是比較安全的那一邊。
+    try {
+      const s = await getDoc(doc(db, 'gameConfig', 'moodQuiz'));
+      if (s.exists() && s.data().mode === 'online') quizMode = 'online';
+      else quizMode = 'offline';
+    } catch (e) {}
+
+    if (quizMode === 'offline') {
+      try { await DipMood.load(); }
+      catch (e) { console.warn('[quiz] 離線資料載入失敗，退回 AI 版', e); quizMode = 'online'; }
+    }
+
+    // 舊版 AI 線才需要題庫；離線版的題目在 mood-quiz.json 裡（附選項向量）
+    if (quizMode === 'online') {
+      await loadLegacyQuizQs();
+    }
+
+    try {
+      const snap = await getDocs(collection(db, 'reels'));
+      if (!snap.empty) quizReels = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    } catch (e) {}
+    if (!quizReels.length) {
+      try { quizReels = await (await fetch('./reels.json')).json(); } catch (e) {}
+    }
+  }
+
+  async function loadLegacyQuizQs() {
     // 優先從 Firestore 載入，fallback 到靜態 JSON
     try {
       const snap = await getDocs(collection(db, 'quiz_questions'));
@@ -2912,43 +3069,49 @@
         quizQs = await r.json();
       } catch(e) {}
     }
-
-    try {
-      const snap = await getDocs(collection(db, 'reels'));
-      if (!snap.empty) {
-        quizReels = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      }
-    } catch(e) {}
-
-    if (!quizReels.length) {
-      try {
-        const r = await fetch('./reels.json');
-        quizReels = await r.json();
-      } catch(e) {}
-    }
   }
 
   function startQuiz() {
-    if (!quizQs.length) {
-      document.getElementById('quizContent').innerHTML =
-        '<div class="quiz-loading"><div class="quiz-loading-text">⚠ 無法載入題目</div></div>';
-      return;
-    }
-    const shuffled = [...quizQs].sort(() => Math.random() - 0.5);
-    quizSelected = shuffled.slice(0, 5);
     quizAnswers = {};
     quizIdx = 0;
     quizAnotherCount = 0;
     try { const s = sessionStorage.getItem('dip_seen'); seenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { seenAlbums = new Set(); }
+
+    if (quizMode === 'offline' && DipMood.ready) {
+      // 適應性選題：一次只給一題，下一題等答完才挑（要看累積向量往哪走）
+      const first = DipMood.nextQuestion([], []);
+      if (!first) { quizFatal('無法載入題目'); return; }
+      quizSelected = [first];
+    } else {
+      if (!quizQs.length) { quizFatal('無法載入題目'); return; }
+      quizSelected = [...quizQs].sort(() => Math.random() - 0.5).slice(0, QUIZ_LEN)
+        .map(q => ({ id: q.id, q: q.question, o: q.options }));
+    }
     renderQuizQ();
+  }
+
+  function quizFatal(msg) {
+    document.getElementById('quizContent').innerHTML =
+      `<div class="quiz-loading"><div class="quiz-loading-text">⚠ ${msg}</div></div>`;
+  }
+
+  // 答完一題就把下一題挑出來（只有離線版需要，AI 版開場就選好 5 題）
+  function quizAdvance() {
+    if (quizMode !== 'offline' || !DipMood.ready) return;
+    if (quizSelected.length >= QUIZ_LEN) return;
+    if (quizIdx !== quizSelected.length - 1) return;    // 回頭改答案時不重挑，避免後面的題目整批洗掉
+    const answered = quizSelected.filter(q => quizAnswers[q.id] !== undefined)
+      .map(q => `${q.id}-${quizAnswers[q.id]}`);
+    const next = DipMood.nextQuestion(answered, quizSelected.map(q => q.id));
+    if (next) quizSelected.push(next);
   }
 
   function renderQuizQ() {
     const q = quizSelected[quizIdx];
-    const total = quizSelected.length;
+    const total = QUIZ_LEN;                       // 進度條永遠顯示 5，離線版才不會邊答邊變長
     const pct = ((quizIdx + 1) / total * 100).toFixed(0);
-    const allDone = quizSelected.every(x => quizAnswers[x.id] !== undefined);
+    const allDone = quizSelected.length >= total && quizSelected.every(x => quizAnswers[x.id] !== undefined);
     const isLast = quizIdx === total - 1;
 
     document.getElementById('quizContent').innerHTML = `
@@ -2957,9 +3120,9 @@
         <div class="quiz-progress-label">${quizIdx + 1} / ${total}</div>
       </div>
       <div class="quiz-q-area">
-        <div class="quiz-question">${q.question}</div>
+        <div class="quiz-question">${q.q}</div>
         <div class="quiz-options">
-          ${q.options.map((opt, i) => `
+          ${q.o.map((opt, i) => `
             <button class="quiz-option${quizAnswers[q.id] === i ? ' selected' : ''}" data-idx="${i}">${opt}</button>
           `).join('')}
         </div>
@@ -2986,6 +3149,7 @@
     document.querySelectorAll('.quiz-option').forEach(btn => {
       btn.addEventListener('click', () => {
         quizAnswers[q.id] = parseInt(btn.dataset.idx);
+        quizAdvance();
         if (!isLast) {
           btn.classList.add('selected');
           setTimeout(() => { quizIdx++; renderQuizQ(); }, 280);
@@ -3051,7 +3215,53 @@
     }
   }
 
-  async function submitQuiz() {
+  function submitQuiz() {
+    return (quizMode === 'offline' && DipMood.ready) ? submitQuizOffline() : submitQuizOnline();
+  }
+
+  // 離線版：前端判定心情 → 從 300 張精選池挑一張接得住那個心情的卡 → 查表拿段落。
+  // 唯一的網路請求是封面（Worker 的 /spotify-search，KV 快取的查表，不是 AI）。
+  async function submitQuizOffline() {
+    const qzAnim = await DipDrawAnim.start({
+      host: document.getElementById('quizContent'), profile: 'front',
+      fullscreen: true,
+      alive: () => document.getElementById('quizModal')?.classList.contains('open'),
+    }).catch(() => null);
+    if (!qzAnim) document.getElementById('quizContent').innerHTML =
+      `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
+
+    try {
+      const optionIds = quizSelected
+        .filter(q => quizAnswers[q.id] !== undefined)
+        .map(q => `${q.id}-${quizAnswers[q.id]}`);
+      const mood = DipMood.classify(optionIds);
+      const pick = DipMood.pickCard(mood, seenAlbums);
+      if (!pick) throw new Error('這個心情的卡都抽過了，再測一次換個心情吧');
+
+      const cover = await fetchSpotifyCover(pick.artist, pick.album).catch(() => ({}));
+      if (qzAnim) {
+        if (cover.imageUrl) { qzAnim.state.cover = cover.imageUrl; qzAnim.state.ready = true; }
+        else qzAnim.state.fail = true;
+        await qzAnim.done;
+      }
+
+      await showQuizResult({
+        type: 'global', artist: pick.artist, album: pick.album, reason: pick.passage,
+        _coverUrl: cover.imageUrl || null, _spotifyUrl: cover.spotifyUrl,
+        _bandcampUrl: cover.bandcampUrl, _ytUrl: cover.ytUrl,
+        _mood: pick.mood,
+      });
+      daHandoffTo('#quizContent');
+      recordDrawnCard(lastQuizResult);
+    } catch (e) {
+      document.getElementById('quizContent').innerHTML =
+        `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
+      if (qzAnim) qzAnim.state.fail = true;
+      DipDrawAnim.cancel();
+    }
+  }
+
+  async function submitQuizOnline() {
     // 心情選歌也走抽卡動畫：AI 推薦＋三處驗證常要好幾秒，閃卡正好把等待變成儀式
     const qzAnim = await DipDrawAnim.start({
       host: document.getElementById('quizContent'), profile: 'front',
@@ -3063,7 +3273,7 @@
 
     const qaText = quizSelected.map(q => {
       const idx = quizAnswers[q.id];
-      return `Q: ${q.question}\nA: ${idx !== undefined ? q.options[idx] : '未回答'}`;
+      return `Q: ${q.q}\nA: ${idx !== undefined ? q.o[idx] : '未回答'}`;
     }).join('\n\n');
 
     try {

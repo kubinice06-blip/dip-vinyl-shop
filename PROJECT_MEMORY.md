@@ -1,5 +1,59 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（續二）｜dip-vinyl-shop｜心情選歌離線版上線：前端判定＋查表文案，後台可一鍵切回 AI 版
+
+店主指示「讓這個專案正式上線，原本的線上版另外備份，隨時出問題可後台切換回來」。
+
+**上線內容**
+- `mood-quiz.json`（39KB，判定層）：100 題 v2 題庫 + 400 個選項五維向量 + 11 心情原型
+  （含 `_axisWeight`／`_minMagnitude`／`_neighbors`）。sw.js 有預快取。
+- `mood-bank.json`（404KB，內容層）：300 張卡的後設資料 + 1272 段文案。**不**預快取，
+  只在按下送出時才需要，走網路優先＋執行期快取。
+- `index.html`：新增 `DipMood` 模組（`prepare` / `classify` / `nextQuestion` / `pickCard` / `load`），
+  由 `mood-quiz/classify.mjs` 與 `adaptive-pick.mjs` 移植而來，**兩邊必須保持一致**
+  （`mood-quiz/sim-shipped.mjs` 就是拿上線檔重跑一次驗證用的）。
+- `build-shop-bundle.mjs`（在 mood-quiz/）：從 banks/ 打包出上面兩個檔案。改了段落要重跑。
+
+**兩條線並存，後台切換**
+- `submitQuiz()` 變成分派器：`submitQuizOffline()`（新）／`submitQuizOnline()`（舊版原封不動改名）。
+- 旗標 `gameConfig/moodQuiz.mode`＝`offline`｜`online`，後台「設定 → 心情選歌模式」切。
+  Firestore 規則本來就允許 gameConfig 公開讀、管理員寫，**不用改規則**。
+- **讀不到旗標時預設 offline**——離線版不依賴任何外部服務，是比較安全的那一邊。
+- **離線資料載入失敗會自動退回 online**（實測：把 mood-quiz.json 移走後重整，
+  自動 fallback、舊題庫正常顯示）。
+- 上線前狀態打了 tag **`pre-mood-offline-2026-08-16`**（指向 c3ad84d）。
+  真的要整包回退：`git revert` 這幾筆，或直接後台切 online 就好（不必重新部署）。
+
+**題目結構統一**：兩條線的 `quizSelected` 都正規化成 `{id, q, o}`；舊版 Firestore/questions.json
+的 `{question, options}` 在 `startQuiz()` 就轉好。`renderQuizQ()`／`qaText` 都改讀 `q.q`／`q.o`。
+
+**適應性選題怎麼接進既有 UI**：離線版一次只給一題（下一題要看累積向量往哪走）。
+`quizSelected` 從 1 題開始，答完就 `quizAdvance()` 推下一題；進度條固定顯示 5，
+才不會邊答邊變長。回頭改前面的答案時**不重挑**後面的題，避免整批洗掉。
+
+**實測（本機 static-b 預覽）**
+- 適應性選題肉眼可見在收斂：答「一個人待著」之後，後面四題全在探社交軸。
+- 三種人格 → 三種心情（crowd／lowtide／drift），段落都對得上。
+- 一秒出結果（舊版要好幾秒，因為 LLM 挑專輯＋三處存在驗證）。
+- 「再一張」正常換卡，三張都是 hermit 且不重複。
+- **本機抓不到封面是 CORS 限制**（Worker 的 `Access-Control-Allow-Origin` 只給
+  `https://dipvinyl.tw`），不是程式問題；`fetchSpotifyCover` 已 `.catch` 優雅降級。
+
+**已知最大弱點：flame 幾乎抽不到（第一順位待辦）**
+`sim-shipped.mjs` 拿上線檔跑 400 場、30% 作答雜訊：整體判對 44%、有關聯 76%
+（與開發期 `test-question-picking.mjs` 的 44% 完全一致，**不是這次改壞的**）。
+但逐原型看，**flame 判對 0–5%，其中 75% 被判成 crowd**。
+根因：題庫裡高 E（有勁）的選項幾乎都同時帶高 X（外向），想表達「有勁」的玩家
+會一路累積 X 而落到 crowd（E+1 X+2）上；flame（E+2 M+1）真正的識別軸是 M，
+而 M+ 選項在題庫裡很稀有。**驗證過分類器本身沒問題**——零雜訊的完美 flame 玩家
+距離 flame 0.604、crowd 2.398，判得很開；問題純粹在選題拿不到 M 軸訊號。
+後果是 67 張卡的 flame 段落幾乎不會被看到。
+可能的解法（未做）：補 M 軸選項、或把 flame 的 X 座標設成負值讓它跟 crowd 拉開。
+
+**仍未做**
+- v2 題庫只進了離線版；`questions.json` 與 Firestore `quiz_questions`（舊版 AI 線在用）沒動。
+- balance 仍是鄰居表的孤島（38 張，最少），判錯借不到鄰居也不該借。
+
 ### 2026-08-16｜dip-vinyl-shop｜古典 c-22～c-27 共 167 張上架，classical 破 1000；另修 45 張已上架卡的年份
 
 卡池 8,147 → **8,314**，`classical` 標籤 884 → **1,051**，`POOL_BALANCE_PLAN.md` 訂的

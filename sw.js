@@ -3,7 +3,7 @@
 // service worker 只負責「離線時的後備」與靜態資源快取。
 // Firestore / Firebase SDK / 字型等跨網域請求一律不攔截，直接走網路。
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = `dip-song-${VERSION}`;
 
 // 程式碼與資料一律「網路優先」：舊版的 stale-while-revalidate 會在部署後
@@ -21,6 +21,9 @@ const PRECACHE = [
   '/logo-tc.png',
   '/questions.json',
   '/reels.json',
+  // 心情選歌離線版的判定層（39KB）。內容層 mood-bank.json 有 400KB，
+  // 不預快取——它只在按下送出時才需要，走網路優先＋執行期快取就夠了。
+  '/mood-quiz.json',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
   '/icons/icon-maskable-512.png',
