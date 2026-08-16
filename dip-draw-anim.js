@@ -281,7 +281,7 @@
         ], { duration: rndf(500, 950), easing: 'cubic-bezier(.15,.8,.4,1)' }).onfinish = () => s.remove();
       }
       snd('fanfare', cfg, state.apex);
-      if (state.apex) card.classList.add('ace-border');
+      if (state.apex) floaty.classList.add('ace-border');   // 掛 floaty 才會跟著彈起與放大（見 css 註解）
       await sleep(cfg.flipDuration * 0.45 + Math.max(0, cfg.handoffDelay));
       // 留一個 fixed clone 停在卡片視覺位置：呼叫端渲染結果頁時（舞台被拆掉）由它蓋住版面跳動，
       // 之後 finishHandoff() 讓它飛進結果頁封面框。呼叫端不接軌就 cancel()。

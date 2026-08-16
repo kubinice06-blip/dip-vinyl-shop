@@ -264,7 +264,8 @@
     .da-aura.on-apex   { background:radial-gradient(circle,rgba(184,134,11,0.34) 0%,rgba(184,134,11,0) 62%); opacity:1; }
     .da-card { position:relative; width:190px; height:190px; perspective:900px; }
     .da-lift { width:100%; height:100%; transform-origin:center center; }
-    .da-floaty { width:100%; height:100%; }
+    /* 掃光外框掛這層（不是 .da-card）：位移／放大套在外層 .da-lift，畫在 .da-card 會偏下偏小 */
+    .da-floaty { position:relative; width:100%; height:100%; }
     .da-floaty.on { animation:daFloatyKf 2.4s ease-in-out infinite; }
     .da-flip { position:relative; width:100%; height:100%; transform-style:preserve-3d; }
     .da-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
@@ -279,7 +280,7 @@
     .da-card.slam .da-flip { animation:daSlamKf .28s ease-out; }
     .da-ghost { position:absolute; inset:0; background-size:cover; background-position:center;
       border:1px solid var(--line); pointer-events:none; opacity:0.35; transition:opacity .16s linear, transform .16s linear; }
-    .da-card.ace-border::after { content:''; position:absolute; inset:-2px; pointer-events:none; padding:3px;
+    .da-floaty.ace-border::after { content:''; position:absolute; inset:-2px; pointer-events:none; padding:3px;
       background-image:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
       background-size:200% 100%; animation:daShimmer 7.8s linear infinite;
       -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; }
@@ -4131,6 +4132,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const card=document.getElementById('daCard'), flip=document.getElementById('daFlip'),
           lift=document.getElementById('daLift'), fl=document.getElementById('daFloaty');
     card.classList.remove('slam','ace-border'); card.style.cursor='default';
+    fl.classList.remove('ace-border');
     flip.style.transition='none'; flip.style.transform='rotateY(0deg)';
     lift.style.transition='none'; lift.style.transform='none';
     fl.classList.remove('on');
@@ -4208,7 +4210,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     await daSleep(daP.flipDuration*0.55);
     daBurstFx(apex); daFanfare(apex);
     await daSleep(daP.flipDuration*0.45);
-    if(apex) document.getElementById('daCard').classList.add('ace-border');
+    if(apex) document.getElementById('daFloaty').classList.add('ace-border');
     document.getElementById('daAlb').textContent=tg.album;
     document.getElementById('daArt').textContent=tg.artist;
     document.getElementById('daAceTag').style.display=apex?'inline-block':'none';

@@ -1,5 +1,33 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16（後續）｜dip-vinyl-shop｜修正頂級卡掃光外框在抽卡揭曉時跑位
+
+店主回報：三種頂級卡抽到揭曉時，金銀掃光外框會偏下、偏小，和封面對不齊（後台調校面板
+與前台一樣）。
+
+**根因**：`ace-border` 的 `::after` 掛在 `.da-card`，但彈起的位移（`popLift`）與放大
+（`popScale`）是套在裡面的 `.da-lift` 上。封面被抬高放大後，外框仍停在 `.da-card`
+的原始位置與原始尺寸，於是低 `popLift` 這麼多、小 `1/popScale` 倍
+（實測畫面比例 342/486 ≈ 1/1.45，正是 popScale）。
+
+**修法**：外框改掛 `.da-floaty`（在 `.da-lift` 之內），並給它 `position: relative`
+當定位基準。這層同時吃到位移、放大與浮動 wobble，框永遠貼著封面。
+
+**改的檔案**：
+- `dip-draw-anim.css`：`.da-floaty` 加 `position:relative`；選擇器
+  `.da-card.ace-border::after` → `.da-floaty.ace-border::after`（附註解說明為何不能掛 card）
+- `dip-draw-anim.js`：`card.classList.add('ace-border')` → `floaty.classList.add(...)`
+- `admin.html`：後台調校面板是同一套樣式的副本，同步改三處，並在 `daResetStage()`
+  補 `fl.classList.remove('ace-border')`（否則試抽 APEX 後再試抽普通卡會殘留外框）
+
+**驗證**：本機 8903 起靜態站，用臨時測試頁跑完整動畫（apex=true）後量矩形：
+彈起變換套滿時 `.da-card` = [533,127,200,200]（舊的框錨點），封面 `.da-front` =
+[488,22,290,290]，新的錨點 `.da-floaty` = [488,22,290,290] 與封面完全一致；
+`::after` 計算尺寸 198px + padding 6px = 204 = 卡片 200 + 兩側各 2px，符合 `inset:-2px`。
+數字同時重現了店主看到的症狀（舊框小 1/1.45、低約 105px）。測完刪除測試頁。
+（瀏覽器窗格未顯示、無法截圖，故以矩形量測代替；這個環境下 CSS transition 也不會跑完，
+量測前要先把 transition 關掉並直接套上最終 transform。）
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜六張線上破圖修復、積壓批查核（假警報）、發現 36 張舊卡封面已腐爛
 
 上一筆的六批上架完成後接著做的事。**最重要的產出是一份未完清單**，見
