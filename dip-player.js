@@ -502,6 +502,10 @@
         watchAudioInterruption(audioCtx);
       } catch (_) { audioCtx = null; previewGain = null; }
     }
+    // 只在有授權時才 resume。建立一個 suspended 的 context 不會驚動系統，但
+    // **resume 會向系統要走音訊焦點**、停掉玩家正在聽的串流。抽卡時的 warmAlbum
+    // 預先解碼就是走到這裡，於是「還沒開試聽、只是抽了一張牌」也會把 Spotify 停掉。
+    if (!autoplayConsent) return;
     if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
   }
 
@@ -973,7 +977,10 @@
     }));
   }
 
+  // 預先下載＋解碼下一張要播的試聽。沒有授權就整條不跑——它會建立音訊圖並 resume，
+  // 等於在玩家還沒同意出聲前就搶走音訊焦點（抽卡預熱一度是停掉店主 Spotify 的元凶之一）。
   async function warmAlbum({ artist = '', album = '' } = {}) {
+    if (!autoplayConsent) return null;
     artist = String(artist).trim();
     album = String(album).trim();
     if (!artist || !album || !root) return null;

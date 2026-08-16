@@ -79,8 +79,16 @@
   /* ── 合成音效（無外部檔；由點擊手勢觸發，行動端可播）── */
   let AC = null;
   const ac = () => { if (!AC) AC = new (global.AudioContext || global.webkitAudioContext)(); return AC; };
+  // 抽卡音效同樣受店主的自動試聽開關管。這是獨立於 DipPlayer 的第二套音訊系統，
+  // 一旦出聲就會向系統要走音訊焦點、停掉玩家正在聽的串流——而且因為它從頭到尾
+  // 不經過 DipPlayer，先前所有的授權修正都管不到它。沒開試聽就完全不建立 context。
+  function soundAllowed(cfg) {
+    if (!cfg || !cfg.sound) return false;
+    const pref = global.DipPlayer && global.DipPlayer.autoplayPreference;
+    return pref ? pref() === 'on' : true;
+  }
   function snd(kind, cfg, arg) {
-    if (!cfg.sound) return;
+    if (!soundAllowed(cfg)) return;
     try {
       const c = ac();
       if (kind === 'tick') {
@@ -146,7 +154,7 @@
     let order = (coversCache || FALLBACK_COVERS).slice().sort(() => Math.random() - 0.5);
     loadConfig(profile).then(c => { Object.assign(cfg, c); applyVisuals(); }).catch(() => {});
     loadCovers().then(list => { if (list && list.length >= 4) order = list.slice().sort(() => Math.random() - 0.5); }).catch(() => {});
-    if (cfg.sound && ac().resume) ac().resume();
+    if (soundAllowed(cfg) && ac().resume) ac().resume();
 
     // 牌背顏色（品牌字自動對比）＋版面：卡片放大 popScale、上移 popLift 都要塞進舞台，
     // 卡片先往下擺 popLift/2，彈起後正好落在視覺中央；光暈與粒子對齊彈起後的位置。

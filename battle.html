@@ -572,8 +572,8 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=38"></script>
-<script src="dip-draw-anim.js?v=1"></script>
+<script src="dip-player.js?v=39"></script>
+<script src="dip-draw-anim.js?v=2"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, query, limit, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1743,7 +1743,7 @@ function openCardInfo(card){
   loadCardDesc(card, ++_cardDescSeq);
 }
 
-// 抽卡動畫接線（引擎在 dip-draw-anim.js，與前台共用）：對戰走 profile battle，
+// 抽卡動畫接線（引擎在 dip-draw-anim.js?v=2，與前台共用）：對戰走 profile battle，
 // 參數獨立存 gameConfig/drawAnimationBattle，節奏比前台快。
 DipDrawAnim.configure({
   fetchConfig: async (profile) => {

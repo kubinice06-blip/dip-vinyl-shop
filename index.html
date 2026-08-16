@@ -888,8 +888,8 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=38"></script>
-<script src="dip-draw-anim.js?v=1"></script>
+<script src="dip-player.js?v=39"></script>
+<script src="dip-draw-anim.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, limit, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -4501,7 +4501,7 @@ ${seenList}
     </div>`;
   }
 
-  // ── 抽卡動畫接線（引擎在 dip-draw-anim.js，四處共用）──────────────
+  // ── 抽卡動畫接線（引擎在 dip-draw-anim.js?v=2，四處共用）──────────────
   // 心情選歌／類型挑片／直接來一張都走 profile front（gameConfig/drawAnimation）；
   // 對戰的戰利品揭曉在 battle.html 走 profile battle（gameConfig/drawAnimationBattle）。
   DipDrawAnim.configure({
