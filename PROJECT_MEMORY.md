@@ -1,5 +1,46 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16｜dip-vinyl-shop｜台灣民謠必收上架：楊祖珺完成九成待試聽、李雙澤判定無碟可上
+
+店主指定的兩位台灣民謠必收藝人（記憶 project_taiwan_folk_must_include）查證後**結果分歧**，
+走 dip-card-create 產線處理：
+
+- **李雙澤：無法上架，判 needsRuling。** MB 有藝人條目（9811bf84…，Person／TW，
+  生卒 1949-07-14–1977-09-10 與史實相符），但**掛名 release-group 為 0**，
+  僅有的兩個關聯都是 `composer`。漢字＋四種羅馬拼音（Li Shuang-tse／Li Shuangze／
+  Lee Shuang-tse／Li Shuang Tse）查 MB 全無對應發行；紀念輯各種標題（敬！李雙澤／
+  唱自己的歌／淡江事件）亦 0 筆。**這符合史實**：他生前未發行個人專輯，
+  〈美麗島〉〈少年中國〉都是他寫、由別人錄唱的。與許常惠同型（記憶已載）。
+  ⚠ 但他的代表作其實已間接進池——〈美麗島〉正是楊祖珺這張的曲目。
+- **楊祖珺《楊祖珺》1979：完成九成，卡在試聽寫入。** rgMbid a43ec7e6-7c30-4c8f-b1ca-9b290a04a54d，
+  1979-04 新格唱片 TW。三軸 4／5／2（rarity uncommon），**經典度由機器值 3 人工上修為 4**
+  （〈美麗島〉首次正式錄音發行、後成黨外運動象徵曲），冷門與硬蕊沿用機器值。
+  **判定 pearl 流亡卡**：obscurity=5 且 Last.fm listeners=43 為有效數值（非查無）遠低於門檻 300，
+  發行約兩個月即遭全面回收、列為禁唱，流通量被行政力量截斷——這正是 pearl 的定義，
+  且與 pearl 池既有的 folk 卡（Gary Higgins《Red Hash》、Bob Desper《New Sounds》）同性質。
+  **店主可推翻改一般卡。**
+- **卡在哪**：固定試聽是 YT Music 官方 album playlist（OLAK5uy_mCe3CIp…，highlight 為
+  〈美麗島〉176s），依 §6 **YT 連結只能走後台路徑**，`album_overrides` 規則
+  `allow write: if isAdmin()`，REST 實測回 403（與 skill 記載一致）。依「任一項缺失不得先上架」
+  **未開上架開關**。店主到後台批次匯入框貼上 `album_overrides-repaste-add-20260816.json`，
+  再跑 `node scripts/publish-add-20260816.mjs` 即完成（--dry 已驗過，pearl 107→108）。
+- **兩個技術點**：⚠ Firestore projectId 是 **price-manager-e8846**，不是 dip-vinyl-shop
+  （猜錯回 403 CONSUMER_INVALID）。⚠ **`apex_pool.json` 不是單行壓縮格式**——實測與
+  `JSON.stringify(obj, null, 1)` 逐字相同（5432 行），可安全結構化改寫；
+  單行壓縮那條規則只適用 `seed_cards.json`。上架腳本兩者都防（先驗 round-trip 再動手）。
+- ⚠ **簡介避開了一個二手來源錯誤**：多份中文報導稱本片收錄〈少年中國〉與〈美麗島〉兩首禁歌，
+  但 Spotify 曲目表 13 首**沒有〈少年中國〉**，故簡介只寫曲目可證的內容。
+  年份亦有分歧（維基與 storystudio 記 1978、MB 與唱片行商品頁記 1979），年份欄採 MB 的 1979。
+- **CLAUDE.md 兩份都修**（工作區與 repo）：店主澄清已不與 codex 協作，但會**同時開多個
+  Claude Code 工作階段**跑同一 repo，因此把開工前的 fetch／status 檢查加回來、
+  明令禁用 `git add -A`，並寫入 PROJECT_MEMORY.md 的 blob 分離提交手法。
+  repo 那份的「新增專輯固定公式」順手從舊入口 dip-card-pool-expand 對齊成 dip-card-create。
+- 驗證：prepare gate 0 error（自我同名卡經 `selfTitledVerified` 加強核對——Spotify 曲目 13 首
+  全掛楊祖珺、〈美麗島〉175s 與 YT highlight 176s 相符；唯一 warning 是 1979 黑膠無 barcode）；
+  `card_catalog` PATCH 200 回讀相符；KV bulk put Success! 且 `desc2:`／`mapgenre3:` 兩鍵
+  逐字回讀一致；線上 `/album-desc` 回 **X-Cache: KV-HIT-RESTYLED**、239 字。
+  封面走 Spotify（HTTP 200、140KB），CAA 亦有備援圖。
+
 ### 2026-08-16（第三輪）｜dip-vinyl-shop｜類型挑片錨點名單擴充：改由卡池自動生成（每類 300 位、含華語日語）
 
 店主要求每類藝人名單擴到 200–300 位、包含華語日語。手寫 300×8 個名字不可行也沒意義

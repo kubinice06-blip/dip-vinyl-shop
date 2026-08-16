@@ -1,13 +1,21 @@
 # dip vinyl shop — Claude 工作規則
 
-## Git 檢查（2026-08-02 精簡）
+## Git 檢查（2026-08-16 修訂）
 
-店主已不再於 codex 並行跑本專案，原本開工前的四道協作交接檢查**已取消**。現行只保留：
+**已不再與 codex 協作，但店主會同時開多個 Claude Code 工作階段跑這個 repo**
+（2026-08-16 實證：類型挑片線與 mood-quiz 線並行，對方一天疊了五筆提交，
+`PROJECT_MEMORY.md` 也被寫入未提交的條目）。開工前的檢查因此加回來：
 
-- **提交前** `git status --short`——只提交本次相關檔案，不把工作區既有的無關變更或 untracked 檔掃進去。
-- **push 前** `git fetch origin` 並確認 `git log --oneline HEAD..origin/main` 為空。
+- **開工前** `git fetch origin` → 看 `git log --oneline HEAD..origin/main` 是否為空
+  （非空就先 pull）→ `git status --short` 看有沒有**別人**未提交的變更。
+- **提交前** `git status --short`，並**逐一 `git add <file>`**；
+  **絕不 `git add -A` / `git add .`**，會掃走其他工作階段未提交的改動。
+- **push 前** 再 `git fetch origin`，確認 `HEAD..origin/main` 為空。
 
-若日後恢復多方協作，再把完整檢查加回來。
+**`PROJECT_MEMORY.md` 最容易衝突**（人人都往最上方插一筆）。若工作區已有別人未提交的條目，
+不要整檔提交：工作區保留雙方內容，staged 版本改用 `git show HEAD:PROJECT_MEMORY.md`
+為底、只插自己那筆，經 `git hash-object -w` ＋ `git update-index --cacheinfo` 進索引
+（`git status` 顯示 `MM` 就對了）。
 
 ## 專案備忘錄（必讀、必更新）
 
@@ -20,7 +28,8 @@
 ## 新增專輯固定公式（必做）
 
 任何新增專輯、上架卡片、補卡池或匯入廠牌／藝人目錄的工作，都必須使用
-`dip-card-pool-expand` 並完整遵守 `ALBUM_ONBOARDING.md`。封面、三軸、頂點資格
+`dip-card-create`（2026-08-10 起的統一入口；底層腳本沿用 `dip-card-pool-expand`），
+並完整遵守 `ALBUM_ONBOARDING.md`。封面、三軸、頂點資格
 判定、固定簡介、固定試聽／無來源狀態與 published gate 缺一不可；不得先上線
 `seed_cards.json` 再補其他資料。
 

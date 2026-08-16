@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "batch": "add-20260816-taiwan-folk",
+  "albums": [
+    {
+      "artist": "楊祖珺",
+      "album": "楊祖珺",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "a43ec7e6-7c30-4c8f-b1ca-9b290a04a54d",
+        "upc": "",
+        "selfTitledVerified": true,
+        "aliasesChecked": true,
+        "aliasReview": "MB 藝人 cdd4f1ae-6390-4896-937f-8772db5819d9（楊祖珺, Taiwanese folk singer, TW）名下唯一 release-group，1979-04 新格唱片 TW（release 28a0750a-6bee-438e-9dee-9175eca2d11e）。羅馬拼音四種寫法（Yang Tsu-chuan／Yang Zujun／Yang Tsu Chuan／Yang Tzu-chun）查 MB 皆無對應條目，卡池亦無同名或近名卡。自我同名卡（藝人名＝專輯名）依規定加強核對：Spotify 4QKXsygODcUwhvzccuedU1 曲目 13 首全數掛名楊祖珺、含〈美麗島〉175s，與 YT Music 官方 album playlist 的 highlight〈美麗島〉176s 相符，確認為同一張。老黑膠無 barcode，UPC 留空。"
+      },
+      "cover": {
+        "url": "https://i.scdn.co/image/ab67616d0000b273042b3cba17c9ac6a18ae04d2",
+        "source": "spotify",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-16T00:00:00Z"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": 43,
+        "source": "worker:/album-rating",
+        "checkedAt": "2026-08-16T00:00:00Z",
+        "manualNote": "經典度由機器值 3 人工上修為 4：〈美麗島〉的首次正式錄音發行，該曲後成為台灣黨外運動與民主化的象徵曲目；本片亦為台灣校園民歌運動最早的商業錄音成果之一。冷門度 5 與硬蕊度 2 沿用機器值。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "pearl",
+        "reason": "obscurity=5 且 Last.fm listeners=43 為有效數值（非查無資料）、遠低於門檻 300。專輯發行約兩個月後遭全面回收、列為禁唱，流通量被行政力量截斷，符合流亡卡「近乎無人知曉但值得遺珠級」的定義；歷史地位由〈美麗島〉的後續影響佐證。",
+        "evidenceUrls": [
+          "https://zh.wikipedia.org/zh/%E7%BE%8E%E9%BA%97%E5%B3%B6_(%E6%AD%8C%E6%9B%B2)",
+          "https://storystudio.tw/article/gushi/banned-song-formosa",
+          "https://newtalk.tw/news/view/2015-07-25/62650"
+        ]
+      },
+      "description": {
+        "text": "唱片發行兩個月，就被整批收回。楊祖珺在淡江求學時響應學長李雙澤「唱自己的歌」的號召，這是她在商業體制內唯一的個人作品。十三首曲目把台灣民謠〈西北雨直直落〉〈一隻鳥兒哮救救〉、江南小調〈紫竹調〉與新疆民歌〈青春舞曲〉並置，另收〈誕生〉〈我唱歌給你聽〉等創作曲。〈美麗島〉由陳秀喜的詩經梁景峰改寫、李雙澤譜曲，李雙澤一九七七年在淡水海邊為救人溺斃，未及聽見它發行；此曲後來被認定帶有政治意味，整張唱片遭新聞局列為禁唱、全面下架。台灣民歌運動最早的錄音成果之一，就此在市面上消失多年。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/a43ec7e6-7c30-4c8f-b1ca-9b290a04a54d",
+          "https://open.spotify.com/album/4QKXsygODcUwhvzccuedU1",
+          "https://storystudio.tw/article/gushi/banned-song-formosa",
+          "https://zh.wikipedia.org/zh-tw/%E6%A5%8A%E7%A5%96%E7%8F%BA"
+        ],
+        "lengthReviewed": false
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_mCe3CIp-PhrVx9o_OZshkSX2c7LsAOo3U",
+        "source": "youtube",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-16T00:00:00Z"
+      },
+      "published": {
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}
