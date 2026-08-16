@@ -279,6 +279,13 @@
     .quiz-option { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; padding: 14px 16px; cursor: pointer; text-align: left; transition: all 0.15s; color: var(--black); line-height: 1.5; width: 100%; }
     .quiz-option:hover { border-color: var(--black); }
     .quiz-option.selected { background: var(--black); color: #fff; border-color: var(--black); }
+    /* 類型挑片：選項下的年代／副曲風小註記（由卡池本地推導）、換一批鈕、結果頁「為什麼是這張」 */
+    .gp-opt-meta { display: block; font-size: 9px; color: var(--gray); letter-spacing: 0.08em; margin-top: 3px; }
+    .gp-opt-meta:empty { display: none; }
+    .quiz-option.selected .gp-opt-meta { color: rgba(255,255,255,0.65); }
+    .gp-reshuffle-btn { background: none; border: 1px dashed var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; padding: 11px 16px; cursor: pointer; color: var(--gray); width: 100%; margin-top: 10px; transition: all 0.15s; }
+    .gp-reshuffle-btn:hover { border-color: var(--black); color: var(--black); }
+    .gp-match-note { font-size: 10px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.7; text-align: center; margin: -4px 0 14px; }
     .quiz-nav { padding: 20px; display: flex; gap: 10px; border-top: 1px solid var(--line); }
     .quiz-nav-btn { flex: 1; background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s; }
     .quiz-nav-btn:hover:not(:disabled) { border-color: var(--black); }
@@ -2788,7 +2795,7 @@
   const YEAR_MAP = new Map();
   const yearKeyOf = (artist, album) => {
     const norm = value => String(value || '').normalize('NFKD').toLowerCase()
-      .replace(/[̀-ͯ]/g, '')
+      .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
     return `${norm(artist)} ${norm(album)}`;
   };
@@ -3921,8 +3928,8 @@ ${seenList}
           fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗，請重試'); return r.json(); }),
           fetch('apex_pool.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗，請重試'); return r.json(); }),
         ]);
-        const cards = (Array.isArray(seed) ? seed : []).map(([artist, album, classic, obscurity, accessibility, genres]) => ({
-          artist, album, classic, obscurity, accessibility, genres: Array.isArray(genres) ? genres : [],
+        const cards = (Array.isArray(seed) ? seed : []).map(([artist, album, classic, obscurity, accessibility, genres, year]) => ({
+          artist, album, classic, obscurity, accessibility, genres: Array.isArray(genres) ? genres : [], year: year || 0,
         }));
         if (!cards.length) throw new Error('卡池載入失敗，請重試');
         return { cards, apex: apex || {} };
@@ -3943,8 +3950,110 @@ ${seenList}
     return sum / gpArtists.length;
   }
 
-  // 從 seed 卡池抽一張：類型過濾＋已抽過濾（同藝人不重複）＋依錨點深度做冷門度加權
+  // ── 錨點藝人 → 本地口味比對（零線上 API）───────────────────────────
+  // 把使用者點的三位藝人對回 seed 卡池：名字正規化成 token 集合做子集比對，
+  // 吃得下「Beethoven／Ludwig van Beethoven」「Rakim／Eric B. & Rakim」這類異名。
+  // 全程本地計算，抽卡結果從此真的跟著選擇走。
+  let gpPoolCache = null;   // startGenrePick 預載，供選項小註記使用
+  let gpMatchInfo = null;   // 本次抽卡的「為什麼是這張」素材（pickSeedCard 填）
+  const GP_TAG_ZH = { rock: '搖滾', blues: '藍調', folk: '民謠', pop: '流行', classical: '古典', jazz: '爵士', soul: '靈魂放克', electronic: '電子', world: '世界音樂', hiphop: '嘻哈' };
+  function _gpTokens(name) {
+    return String(name || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/&/g, ' and ').replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+  }
+  let _gpArtistIndex = null; // 卡池依藝人分組（含 token），只建一次
+  function gpFindArtistCards(pool, name) {
+    if (!_gpArtistIndex) {
+      _gpArtistIndex = [];
+      const byKey = new Map();
+      for (const c of pool.cards) {
+        const key = (c.artist || '').toLowerCase();
+        let e = byKey.get(key);
+        if (!e) { e = { tokens: _gpTokens(c.artist), cards: [] }; byKey.set(key, e); _gpArtistIndex.push(e); }
+        e.cards.push(c);
+      }
+    }
+    const q = _gpTokens(name);
+    if (!q.length) return [];
+    const qs = q.join(' ');
+    // 子集比對只走「錨點 ⊆ 池內」單向：反向會讓 Nick Drake 錯配到 Drake。
+    // 忽略單字母 token（縮寫點），J.S. Bach 才對得上 Johann Sebastian Bach。
+    const qSig = q.filter(t => t.length > 1);
+    let best = null;
+    for (const e of _gpArtistIndex) {
+      if (e.tokens.join(' ') === qs) return e.cards; // 全名相同直接回
+      if (!qSig.length) continue;
+      const eSig = e.tokens.filter(t => t.length > 1);
+      if (qSig.every(t => eSig.includes(t)) && qSig.some(t => t.length >= 3)) {
+        if (!best || e.cards.length > best.cards.length) best = e;
+      }
+    }
+    return best ? best.cards : [];
+  }
+  // 三個錨點的口味畫像：每位錨點命中卡的三軸平均再平均，加上副曲風票數（每位一票）。
+  // 一位都對不上就回 null，抽卡退回原本的名單深度邏輯。
+  function gpAnchorProfile(pool) {
+    if (gpIsRandom || !gpArtists.length) return null;
+    const matched = [], anchorCards = [], tagVotes = {}, anchorAxes = [];
+    for (const name of gpArtists) {
+      const cards = gpFindArtistCards(pool, name);
+      if (!cards.length) continue;
+      matched.push(name); anchorCards.push(...cards);
+      let s = [0, 0, 0];
+      const tags = new Set();
+      for (const c of cards) { s[0] += c.classic || 3; s[1] += c.obscurity || 3; s[2] += c.accessibility || 3; c.genres.forEach(g => tags.add(g)); }
+      anchorAxes.push(s.map(v => v / cards.length));
+      tags.forEach(g => { tagVotes[g] = (tagVotes[g] || 0) + 1; });
+    }
+    if (!matched.length) return null;
+    const t = [0, 1, 2].map(i => anchorAxes.reduce((a, x) => a + x[i], 0) / anchorAxes.length);
+    return { matched, anchorCards, tagVotes, target: { classic: t[0], obscurity: t[1], accessibility: t[2] } };
+  }
+  // 選項名字下的小註記：年代＋副曲風，全部由卡池自己長出來（零人工維護）
+  function gpArtistMetaLine(artist) {
+    if (!gpPoolCache) return '';
+    const cards = gpFindArtistCards(gpPoolCache, artist);
+    if (!cards.length) return '';
+    const years = cards.map(c => c.year).filter(y => y > 1000).sort((a, b) => a - b);
+    const mid = years.length ? years[Math.floor(years.length / 2)] : 0;
+    const decade = mid ? `${Math.floor(mid / 10) * 10}s` : '';
+    const counts = {};
+    for (const c of cards) for (const g of c.genres) if (g !== gpGenre) counts[g] = (counts[g] || 0) + 1;
+    const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+    const tag = top && top[1] * 2 >= cards.length ? (GP_TAG_ZH[top[0]] || '') : ''; // 過半數卡帶這個副標才顯示
+    return [decade, tag].filter(Boolean).join('・');
+  }
+  // 卡池載到手後把還空著的小註記補上（round 可能比卡池先渲染）
+  function gpFillOptMetas() {
+    document.querySelectorAll('#genreContent [data-gp-meta]').forEach(el => {
+      if (!el.textContent) el.textContent = gpArtistMetaLine(el.dataset.gpMeta);
+    });
+  }
+  // 店內在售／IG reel 在類型模式要跟選擇對得上：商品曲風字串或卡池藝人曲風其一命中即可
+  const GP_STOCK_GENRE_WORDS = { jazz: ['jazz', '爵士'], rock: ['rock', 'punk', 'metal', 'indie', 'psych', '搖滾'], electronic: ['electronic', 'techno', 'house', 'ambient', 'synth', '電子'], soul: ['soul', 'funk', 'r&b', 'rnb', 'disco', '靈魂', '放克'], hiphop: ['hip', 'rap', 'r&b', 'rnb', '嘻哈', '饒舌'], folk: ['folk', 'country', '民謠'], classical: ['classical', 'baroque', 'opera', '古典'], world: ['world', 'reggae', 'latin', 'afro', 'brazil', 'bossa', 'tango', '世界'] };
+  function gpItemMatchesGenre(pool, artist, genreField) {
+    if (gpIsRandom || !gpGenre) return true;
+    const words = GP_STOCK_GENRE_WORDS[gpGenre] || [gpGenre];
+    const gs = Array.isArray(genreField) ? genreField : (genreField ? [genreField] : []);
+    if (gs.some(g => { const s = String(g).toLowerCase(); return words.some(w => s.includes(w)); })) return true;
+    return !!pool && gpFindArtistCards(pool, artist).some(c => c.genres.includes(gpGenre));
+  }
+  // 結果頁的「為什麼是這張」一行字，全本地組裝
+  function gpMatchNoteText() {
+    const m = gpMatchInfo;
+    if (!m || gpIsRandom) return '';
+    if (m.type === 'anchor') return `呼應你的選擇：這張正是 ${m.name} 的作品`;
+    if (m.type === 'taste') {
+      const tag = m.tag && GP_TAG_ZH[m.tag] ? `，同樣帶${GP_TAG_ZH[m.tag]}血統` : '';
+      return `依你選的 ${m.matched.join('、')} 校準口味挑出${tag}`;
+    }
+    return '';
+  }
+
+  // 從 seed 卡池抽一張：類型過濾＋已抽過濾（同藝人不重複），
+  // 再用三個錨點藝人的口味畫像（三軸距離＋副曲風重疊）加權——選誰真的會影響抽到什麼
   function pickSeedCard(pool, { popular = false } = {}) {
+    gpMatchInfo = null;
     let base = gpIsRandom ? pool.cards : pool.cards.filter(c => c.genres.includes(gpGenre));
     if (popular) {
       // 流行模式：高經典、低硬蕊、低冷門＝大眾耳熟能詳的好入耳盤
@@ -3953,15 +4062,48 @@ ${seenList}
     }
     if (!base.length) return null;
     const seenArtists = new Set([...gpSeenAlbums].map(k => k.split('||')[0]));
-    let fresh = base.filter(c => !gpSeenAlbums.has(`${c.artist}||${c.album}`.toLowerCase()) && !seenArtists.has((c.artist || '').toLowerCase()));
+    const isFresh = c => !gpSeenAlbums.has(`${c.artist}||${c.album}`.toLowerCase()) && !seenArtists.has((c.artist || '').toLowerCase());
+    let fresh = base.filter(isFresh);
     if (!fresh.length) fresh = base.filter(c => !gpSeenAlbums.has(`${c.artist}||${c.album}`.toLowerCase()));
     if (!fresh.length) return null;
-    const center = 2 + 2 * gpDeepness(); // 偏好的冷門度中心 2~4
+    const prof = popular ? null : gpAnchorProfile(pool);
+
+    // 兩成機率直接抽「你點名的藝人」自己的另一張（在池內、同類型、沒抽過才成立）
+    if (prof && Math.random() < 0.2) {
+      const own = prof.anchorCards.filter(c => c.genres.includes(gpGenre) && isFresh(c));
+      if (own.length) {
+        const c = own[Math.floor(Math.random() * own.length)];
+        const anchor = prof.matched.find(n => gpFindArtistCards(pool, n).includes(c)) || prof.matched[0];
+        gpMatchInfo = { type: 'anchor', name: anchor };
+        return c;
+      }
+    }
+
+    const center = 2 + 2 * gpDeepness(); // 錨點畫像缺席時退回原本的冷門度中心 2~4
     let total = 0;
-    const weights = fresh.map(c => { const w = 1 / (1 + Math.abs((c.obscurity || 3) - center)); total += w; return w; });
+    const weights = fresh.map(c => {
+      let w;
+      if (prof) {
+        const t = prof.target;
+        const d = Math.abs((c.classic || 3) - t.classic) + Math.abs((c.obscurity || 3) - t.obscurity) + Math.abs((c.accessibility || 3) - t.accessibility);
+        w = 1 / (1 + d * 0.7); // 三軸越貼近錨點平均，權重越高
+        let votes = 0;
+        for (const g of c.genres) if (g !== gpGenre) votes = Math.max(votes, prof.tagVotes[g] || 0);
+        w *= 1 + votes * 0.6;  // 副曲風與錨點重疊（最多 3 票 → ×2.8）
+      } else {
+        w = 1 / (1 + Math.abs((c.obscurity || 3) - center));
+      }
+      total += w; return w;
+    });
     let roll = Math.random() * total;
-    for (let i = 0; i < fresh.length; i++) { roll -= weights[i]; if (roll <= 0) return fresh[i]; }
-    return fresh[fresh.length - 1];
+    let pick = fresh[fresh.length - 1];
+    for (let i = 0; i < fresh.length; i++) { roll -= weights[i]; if (roll <= 0) { pick = fresh[i]; break; } }
+    if (prof) {
+      let bestTag = null, bestVotes = 0;
+      for (const g of pick.genres) if (g !== gpGenre && (prof.tagVotes[g] || 0) > bestVotes) { bestVotes = prof.tagVotes[g]; bestTag = g; }
+      gpMatchInfo = { type: 'taste', matched: prof.matched, tag: bestVotes >= 2 ? bestTag : null };
+    }
+    return pick;
   }
 
   // 從 apex_pool 抽指定 tier；類型挑片時只挑同曲風的王牌（第 3 欄曲風），沒有就回 null 退回一般池
@@ -4026,6 +4168,8 @@ ${seenList}
     gpIsRandom = false;
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
+    // 卡池先進快取：藝人選項的小註記與後續口味比對都吃它（靜態檔，零 API 成本）
+    loadCardPool().then(p => { gpPoolCache = p; gpFillOptMetas(); }).catch(() => {});
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
     renderGpGenreSelect();
@@ -4078,8 +4222,14 @@ ${seenList}
   function renderGpRound() {
     const total = 3;
     const pct = ((gpRound + 1) / total * 100).toFixed(0);
-    const available = GENRE_DATA[gpGenre].artists.filter(a => !gpUsed.has(a));
-    gpRoundOptions = [...available].sort(() => Math.random() - 0.5).slice(0, 4);
+    const list = GENRE_DATA[gpGenre].artists;
+    const available = list.filter(a => !gpUsed.has(a));
+    // 名單前半是深挖名字、後半是主流名字：各出兩位，保證每輪都有認得出的名字
+    const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+    const deep = shuffle(available.filter(a => list.indexOf(a) < list.length / 2)).slice(0, 2);
+    const main = shuffle(available.filter(a => list.indexOf(a) >= list.length / 2)).slice(0, 2);
+    const rest = shuffle(available.filter(a => !deep.includes(a) && !main.includes(a)));
+    gpRoundOptions = shuffle([...deep, ...main, ...rest].slice(0, 4));
     document.getElementById('genreContent').innerHTML = `
       <div class="quiz-progress">
         <div class="quiz-progress-track"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
@@ -4089,15 +4239,17 @@ ${seenList}
         <div class="quiz-question">這四位藝人中，誰最接近你的品味？</div>
         <div class="quiz-options">
           ${gpRoundOptions.map((artist, i) => `
-            <button class="quiz-option" data-idx="${i}">${artist}</button>
+            <button class="quiz-option" data-idx="${i}">${artist}<span class="gp-opt-meta" data-gp-meta="${artist.replace(/"/g, '&quot;')}">${gpArtistMetaLine(artist)}</span></button>
           `).join('')}
         </div>
+        <button class="gp-reshuffle-btn" data-gp-reshuffle>這四位都不熟？換一批 ↻</button>
       </div>
       <div class="quiz-nav">
         <button class="quiz-nav-btn" id="gpBackBtn">${gpRound === 0 ? '← 換個類型' : '← 上一題'}</button>
       </div>
     `;
-    document.querySelectorAll('.quiz-option').forEach(btn => {
+    document.querySelector('[data-gp-reshuffle]')?.addEventListener('click', () => renderGpRound());
+    document.querySelectorAll('.quiz-option[data-idx]').forEach(btn => {
       btn.addEventListener('click', () => {
         const picked = gpRoundOptions[parseInt(btn.dataset.idx)];
         gpArtists.push(picked);
@@ -4300,18 +4452,27 @@ ${seenList}
 
   async function submitGenrePick() {
     gpStopPreview();
-    // 直接來一張：抽卡動畫取代等待 spinner（抽卡/封面解析在背景並行跑）
+    gpMatchInfo = null;
     // 類型挑片與直接來一張都走抽卡動畫（取代等待 spinner；抽卡／封面解析在背景並行跑）
     const gpAnim = await DipDrawAnim.start({ host: document.getElementById('genreContent'), profile: 'front' }).catch(() => null);
     if (!gpAnim) document.getElementById('genreContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
+    // 卡池先到手（startGenrePick 已預熱、靜態檔有快取）：口味比對與店內/reel 類型過濾都要用。
+    // 這裡吞錯：拿不到就讓店內/reel 分支不過濾照舊跑，正式抽卡在 try 裡會再取一次並正確報錯。
+    let pool = null;
+    try { pool = await loadCardPool(); } catch (e) {}
+
     const rand = Math.random();
+    // 類型模式下，店內在售與 IG reel 也要對上使用者選的類型，不再無視選擇亂入
     const stockPool = all.filter(p => {
       const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
-      return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase());
+      return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase())
+        && gpItemMatchesGenre(pool, p.artist, p.genre);
     });
-    const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase()));
+    const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase())
+      && gpItemMatchesGenre(pool, r.artist, r.genre));
+    const gpStockNote = (!gpIsRandom && gpGenre) ? `店內剛好有一張對上你選的 ${GENRE_DATA[gpGenre].label}` : '';
 
     // 店內在售 10%：介紹用店家自寫的商品描述，沒有才退 /album-desc（KV 預生成）
     if (rand < 0.10 && stockPool.length) {
@@ -4321,7 +4482,7 @@ ${seenList}
         if (imgs[0]) { gpAnim.state.cover = imgs[0]; gpAnim.state.ready = true; } else gpAnim.state.fail = true;
         await gpAnim.done;
       }
-      await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _streaming: true });
+      await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _matchNote: gpStockNote, _streaming: true });
       daHandoffTo('#genreContent');
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.name || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
@@ -4336,7 +4497,7 @@ ${seenList}
     if (rand < 0.20 && freshReels.length) {
       const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
       if (gpAnim) { gpAnim.state.fail = true; await gpAnim.done; }   // IG 嵌入無封面可翻，跳過動畫
-      await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
+      await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _matchNote: gpStockNote ? `IG 介紹過、也對上你選類型的一張` : '', _streaming: true });
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.title || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -4347,7 +4508,7 @@ ${seenList}
     }
 
     try {
-      const pool = await loadCardPool();
+      if (!pool) pool = await loadCardPool();
       // 特殊模式機率照舊（殿堂/流亡/異端各 3%、流行 5%），但一律改抽現成卡池：
       // 殿堂→apex hall、流亡→apex pearl（池子已預先人工驗證，不再即時查聽眾數）、
       // 異端→apex heresy、流行→seed 中高經典低硬蕊低冷門的子集
@@ -4386,6 +4547,7 @@ ${seenList}
         artist: pick.artist, album: pick.album, reason: '', ratings,
         _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl, _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
+        _matchNote: isApex ? '' : gpMatchNoteText(),
         _streaming: true,
         _hall: isApex && classicMode, _pearl: isApex && obscureMode, _heresy: isApex && heresyMode,
       });
@@ -4481,6 +4643,7 @@ ${seenList}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         ${result.type ? '' : gpPreviewBtnHtml(result)}
+        ${result._matchNote ? `<div class="gp-match-note">${result._matchNote}</div>` : ''}
         <div class="quiz-result-reason">${result._streaming ? '介紹載入中…' : (result.reason || '')}</div>
         ${ctaHtml}
         ${stockRecoHtml}

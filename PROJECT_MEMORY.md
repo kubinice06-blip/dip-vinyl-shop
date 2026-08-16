@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-16｜dip-vinyl-shop｜類型挑片重做：選的三位藝人真的影響抽卡（全本地、零 API）
+
+店主反映：選三名藝人但結果與選擇無關、體驗差。查證屬實——原本三個選擇只餵進
+`gpDeepness()`（名單前半＝1／後半＝0 的粗分），只影響冷門度中心，權重曲線又平，
+等於類型內近乎隨機；且 `submitGenrePick` 前 20%（店內 10%＋IG reel 10%）在類型
+過濾之前就抽走，完全無視使用者選了什麼。
+
+- **本地口味比對引擎（index.html，零線上 API）**：`_gpTokens` 名字正規化（去變音符、
+  `&`→and、去標點）＋ token 子集比對，把錨點對回 seed 卡池的異名
+  （Beethoven→Ludwig van Beethoven、J.S. Bach→Johann Sebastian Bach、
+  Rakim→Eric B. & Rakim）。⚠ 子集只走「錨點 ⊆ 池內」單向——反向會讓
+  Nick Drake 錯配到 Drake（實測抓到的 bug）；單字母 token 忽略（縮寫點）。
+- **`gpAnchorProfile`**：三位錨點各自命中卡的三軸平均再平均＋副曲風票數（每位一票）。
+  `pickSeedCard` 改用畫像加權：三軸距離 `1/(1+d*0.7)` × 副曲風重疊 `1+votes*0.6`；
+  另有 20% 機率直接抽錨點本人的另一張（同類型、沒抽過）。一位都對不上→退回原邏輯。
+- **店內/IG reel 分支加類型過濾**：`gpItemMatchesGenre` 用商品曲風字串
+  （GP_STOCK_GENRE_WORDS 關鍵字）或卡池藝人曲風其一命中；卡池提前到 rand 分支前載
+  （吞錯，try 內會再取一次正確報錯）。
+- **體驗**：每輪選項改「深挖 2＋主流 2」保證有認得的名字；名字下加年代＋副曲風小註記
+  （由卡池 year／genres 本地推導，`loadCardPool` 補回原本丟掉的 year 欄）；新增
+  「這四位都不熟？換一批 ↻」不消耗輪次；結果頁加 `.gp-match-note` 一行「為什麼是這張」
+  （呼應錨點本人／校準口味＋血統），apex 特殊模式不顯示。
+- **成本結論**：推薦邏輯本來就已本地化（AI 錨點早移除），這次連「選擇→結果」的因果
+  也全本地；線上呼叫只剩封面/簡介等既有免費層（Firestore＋worker KV），零新增成本。
+- 驗證：Node 統計模擬 3000 抽×5 組（真實檔案程式碼抽出來跑）——jazz 深挖組冷門度 3.96
+  vs 主流組 3.34；rock 民謠向 folk 副曲風 38% vs 噪音向 9%；異名比對抽查全對。
+  瀏覽器實測 rock 選 Tom Waits/Nick Drake/Neil Young → 抽中 Tim Buckley
+  《Goodbye and Hello》，說明行正確列出兩位在池錨點；再一張命中異端模式、
+  直接來一張隨機模式均正常；console 僅既有本機 CORS，無 JS 例外。
+
 ### 2026-08-16｜dip-vinyl-shop｜抽卡動畫抽成共用模組，套用四處；對戰走獨立參數
 
 店主要求心情選歌／類型挑片／對戰也要有抽卡動畫，且對戰節奏要不同。
