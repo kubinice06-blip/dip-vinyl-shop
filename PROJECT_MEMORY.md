@@ -1,5 +1,64 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-21（同日第二筆）｜dip-vinyl-shop｜c-30／c-31／c-32 三線共 1,191 張研究層完成，四階段卡池平衡目標一次補到位
+
+接續 c-29，店主指示「一路把所有缺少的專輯都做完」。三批全部只到 prepare gate，
+**線上資料一律未寫**（KV、Firestore、`seed_cards.json`、`apex_pool.json` 都沒動）。
+
+| 批次 | 張數 | prepare gate |
+|---|---:|---|
+| c-30 藍調擴充 | 326 | 0 error / 44 warning |
+| c-31 世界音樂 | 530 | 0 error / 64 warning |
+| c-32 民謠 | 335 | 0 error / 25 warning |
+
+**四階段目標幾乎精準達成**（含 c-29 的 15 張，manifest 合計 1,206）：
+blues 158 → **499**（目標 500）、world 301 → **831**（目標 800）、folk 661 → **996**（目標 1,000）。
+封面 CAA 1,170／Apple 官方圖 36；固定試聽 Apple ready 881／unavailable 325；
+**hall 候選合計 60 張，全部未寫入 `apex_pool.json`，等店主裁定**。
+
+## 做法：把 c-29 的單批流程工業化
+
+`scratchpad/pipeline/` 下建了一套可重跑的腳本鏈：`pipe-identity`（MB 釘 rgMbid，自動判定
+score≥95＋Album＋非 Compilation＋藝人吻合才 auto）→ `pipe-identity-retry`（放寬重查）→
+`pipe-cover-upc` → `pipe-cover-rescue`（RG 無圖時逐 release 試）→ `pipe-cover-apple-rescue`
+（CAA 兩層都沒圖時改用已通過配對的 Apple 條目官方圖）→ `pipe-preview` → `pipe-cover-download`
+→ `pipe-writer-inputs`（切 chunk）→ `pipe-assemble`（組 manifest）。
+機械步驟用腳本批跑，**判斷步驟派 agent**：14 支策展 agent 建候選（1,337 筆去重後）、
+2 支身分裁定 agent 處理 MB 查不到的 138 筆、87 支寫作 agent 逐張查證並寫三軸／頂點／簡介。
+
+## 三個系統性錯誤（都值得記住）
+
+**一、卡池的完整名冊是 seed ＋ apex 兩份。** 策展 agent 只比對 `seed_cards.json`，
+結果民謠批有 **24 張已經是王牌卡**（Dylan《Freewheelin'》、Joni《Blue》、Nick Drake 三張、
+Bon Iver、Sufjan、Fleet Foxes…），藍調批 1 張（Janis Joplin《Pearl》）。
+全靠 prepare gate 擋下。已把這道檢查內建進 `pipe-assemble`。
+
+**二、封面檔名的 slug 把中日韓字元全刪光。** `[^a-z0-9]` 的清洗規則讓所有 CJK 標題塌成
+同一個檔名，民謠批 48 張共用一個檔——**寫作 agent 的封面目視等於看錯圖**。
+四支 agent 各自獨立發現並改用 `rgMbid` 直取 CAA 驗圖（結論是封面本身都正確）。
+規則已改成保留 CJK 字元並重新下載全部封面。
+
+**三、Apple 試聽最常見的錯配是「同名選輯／重錄版／單曲」**，戰前與非西方目錄尤其嚴重：
+Furry Lewis 配到 1927–29 戰前錄音、Khaled 配到 DJ Khaled 2021 專輯、
+Gary Clark Jr. 配到脫口秀重混單曲、Sufjan 配到現場版、Arlo Guthrie 配到 1996 重錄版。
+派工詞改成要求寫作 agent 在 JSON 標 `previewVerdict`，配錯的自動降級 `unavailable`
+而非留可疑網址。
+
+## 十一張換過 release-group（都是寫作 agent 查證時抓到的）
+
+The Band 同名盤原釘到放克團 The Band AKA 的 1981 同名專輯、Arlo Guthrie《Alice's Restaurant》
+原釘到 1969 電影原聲帶、Ali Farka Touré 首張原釘到 1988 Sonodisc 綠盤、
+Fabulous Thunderbirds 首張原釘到 2009 同名專輯、Le Mystère des Voix Bulgares 原釘到 Volume 2、
+Exuma 首作原釘到《Exuma II》、Theodorakis《Axion Esti》原釘到 2021 三作併輯、
+Irakere 原釘到 1982 古巴國內盤、Adoniran Barbosa 原釘到 1975 同名盤、
+Bothy Band 與 Misty in Roots 各原釘到重發 RG。每張的新 RG 與封面都重新實測過。
+
+**主要檔案**：`onboarding-manifest-c30-blues-20260821.json`、`-c31-world-`、`-c32-folk-`（皆新增）；
+`ONBOARDING_HANDOFF_20260821.md`（更新，含三批細節與回本機的推送步驟）。
+**驗證**：三份 manifest 各自 `verify-album-onboarding.mjs` prepare gate 0 error。
+**下一步（本機）**：三軸重跑 `/album-rating` 覆核、pearl 判定補 listeners、60 張 hall 候選裁定、
+年份用 Discogs 複核、325 張 unavailable 試聽補 YouTube。細節見交接單第四節。
+
 ### 2026-08-21｜dip-vinyl-shop｜c-29 藍調第一批 15 張研究層完成（遠端工作階段，只到 prepare gate）
 
 店主核定 c-29 開藍調線——實測卡池 blues 158 張是 `POOL_BALANCE_PLAN.md` 目標（500）的最大缺口

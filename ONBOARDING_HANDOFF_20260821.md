@@ -14,7 +14,7 @@
 |---|---|---:|---|---|
 | c-29 藍調正典 | `onboarding-manifest-c29-blues-20260821.json` | 15 | **0 error / 1 warning** | 可推 |
 | c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | **326** | **0 error / 44 warning** | 可推 |
-| c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | 進行中 | — | 研究中 |
+| c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | **530** | **0 error / 64 warning** | 可推 |
 | c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | **335** | **0 error / 25 warning** | 可推 |
 
 （進行中的批次完成後會補進這張表並更新張數與 gate 結果。）
@@ -55,6 +55,30 @@ browse count=0；陳達連藝人實體都沒有，Chen Da／Chen Ta 等拼法全
 **這批 gate 擋下 24 張已在王牌池的卡**（Dylan《Freewheelin'》、Joni《Blue》、Nick Drake 三張、
 Bon Iver、Sufjan、Fleet Foxes…）。原因是策展只比對 `seed_cards.json`，而成了王牌的卡不在那份名冊裡。
 管線已補上這道檢查，但**這條教訓值得記住：卡池的完整名冊是 seed + apex 兩份**。
+
+### c-31 細節
+
+530 張、稀有度 uncommon 347／rare 147／epic 36；封面 CAA 513／Apple 官方圖 17；
+固定試聽 Apple ready 357／unavailable 173。這是三批裡最大也最硬的一批：非洲、拉美、
+亞洲、歐洲地中海、中東、加勒比全數涵蓋。
+
+**hall 候選 36 張**（全部待你裁定，未寫入 `apex_pool.json`）——比例偏高是有原因的：
+世界音樂的「該地區史上核心」往往有明確的單一里程碑，例如 Mulatu Astatke《Ethio Jazz》
+（ethio-jazz 奠基）、Umm Kulthum《Enta Omri》與《Al Atlal》、Paco de Lucía《Fuente y caudal》、
+Amália Rodrigues 兩張、Fania All-Stars《Live at the Cheetah》、Tito Puente《Dance Mania》、
+The Upsetters《Blackboard Jungle Dub》（最早的純 dub 專輯之一）、山口五郎《A Bell Ringing in
+the Empty Sky》（航海家金唱片選曲）。**你可能會想把門檻收緊**，各卡的 `apexAssessment.reason`
+都寫了依據。另外有一批 classic=5 但寫作 agent 保守標 false 的，理由多半是
+「本環境只查得到 Wikipedia 單一來源家族」，`reason` 裡都註明了建議覆核。
+
+**非拉丁文字是這批的主要難點**，各卡 `identity.aliasReview` 都逐一交代了原文寫法、
+通行轉寫與 MB credit 三者的關係（阿姆哈拉文、阿拉伯文、希臘文、韓文、日文、泰文、
+Tifinagh、約魯巴語聲調符號、夏威夷語 ʻokina、毛利語 macron 等）。
+
+**七張換過 release-group**：Le Mystère des Voix Bulgares（原釘到 Volume 2）、
+Exuma（原釘到《Exuma II》）、The Bothy Band（原釘到 1983 重發）、Misty in Roots（原釘到併發盤）、
+Theodorakis《Axion Esti》（原釘到 2021 三作併輯）、Irakere（原釘到 1982 古巴國內盤）、
+Adoniran Barbosa（原釘到 1975 同名盤）。每張的 `cover.note` 都記了原委，新 RG 的封面都實測過。
 
 背景：實測卡池 8,314 張的曲風分布為 rock 2,944／jazz 1,620／electronic 1,480／
 soul 1,429／hiphop 1,279／pop 1,215／classical 1,051／folk 661／world 301／blues 158。
