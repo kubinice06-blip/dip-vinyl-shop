@@ -15,7 +15,7 @@
 | c-29 藍調正典 | `onboarding-manifest-c29-blues-20260821.json` | 15 | **0 error / 1 warning** | 可推 |
 | c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | **326** | **0 error / 44 warning** | 可推 |
 | c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | 進行中 | — | 研究中 |
-| c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | 進行中 | — | 研究中 |
+| c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | **335** | **0 error / 25 warning** | 可推 |
 
 （進行中的批次完成後會補進這張表並更新張數與 gate 結果。）
 
@@ -36,6 +36,25 @@ MusicBrainz 只有合輯條目或根本沒建檔（戰後老盤常見）、Apple
 兩個策展區塊用不同題名提同一張碟（Jimmy Witherspoon、SRV 各一組）、
 以及 Janis Joplin《Pearl》——**prepare gate 查出它已經在 `apex_pool.hall` 王牌池裡**，
 依規則不得再以普卡上架，已自本批移除。
+
+### c-32 細節
+
+335 張、稀有度 uncommon 206／rare 115／epic 14；封面 CAA 332／Apple 官方圖 3；
+固定試聽 Apple ready 243／unavailable 92（**中日韓專輯在 Apple 的覆蓋率很低**，
+92 張裡多數是這批，回本機補 YouTube Music 會比藍調線費工）。**hall 候選 10 張**待你裁定：
+Woody Guthrie《Dust Bowl Ballads》、Nitty Gritty Dirt Band《Will the Circle Be Unbroken》、
+Flatt & Scruggs《Foggy Mountain Banjo》、J.D. Crowe & The New South 同名盤、
+Fairport Convention《Liege & Lief》、Richard & Linda Thompson《Shoot Out the Lights》、
+楊弦《中國現代民歌集》、齊豫《橄欖樹》、岡林信康《わたしを断罪せよ》、井上陽水《氷の世界》。
+
+**含 50 張中日韓專輯**，台灣民歌運動、日本 70 年代フォーク、韓國 통기타 都補進來了。
+你指定的三張裡，**楊祖珺《楊祖珺》已經在 `apex_pool.pearl` 王牌池**（gate 查出，故未重複收），
+**李雙澤與陳達走人工身分路線**——MusicBrainz 確認查無（李雙澤有藝人實體但 release-group
+browse count=0；陳達連藝人實體都沒有，Chen Da／Chen Ta 等拼法全落空）。
+
+**這批 gate 擋下 24 張已在王牌池的卡**（Dylan《Freewheelin'》、Joni《Blue》、Nick Drake 三張、
+Bon Iver、Sufjan、Fleet Foxes…）。原因是策展只比對 `seed_cards.json`，而成了王牌的卡不在那份名冊裡。
+管線已補上這道檢查，但**這條教訓值得記住：卡池的完整名冊是 seed + apex 兩份**。
 
 背景：實測卡池 8,314 張的曲風分布為 rock 2,944／jazz 1,620／electronic 1,480／
 soul 1,429／hiphop 1,279／pop 1,215／classical 1,051／folk 661／world 301／blues 158。
