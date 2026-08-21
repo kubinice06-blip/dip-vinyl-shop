@@ -224,3 +224,82 @@ Firestore、KV 與封面／試聽網址的 HTTP 狀態。
 
 `cover.note` 會說明封面救援的來由（RG 層沒圖改用 release 層、或 CAA 全無改用
 已驗證的 Apple 官方封面）；`cover.visuallyVerified` 代表那張圖被人眼看過、確認是對的專輯。
+
+---
+
+## 七、沒做完的事（明確清單）
+
+研究層已完成的部分見上；以下是**確實還沒做、或做不到**的部分。
+
+### 7-1 店主指定的兩張台灣專輯卡在封面，未進任何 manifest
+
+| 專輯 | 狀態 | 卡在哪 |
+|---|---|---|
+| 李雙澤《美麗島──李雙澤紀念專輯》(1978) | **未上架** | 無可驗證封面／試聽 |
+| 陳達《民族樂手──陳達和他的歌》(1971) | **未上架** | 同上 |
+
+身分那關其實走完了——兩張都走**人工身分路線**，MusicBrainz 查無已完整舉證：
+
+- **李雙澤**：MB 有藝人實體（`9811bf84-9a96-4ae1-a0de-6f2d08d013e0`, TW, 1949-07-14），
+  但 release-group browse 在 `type=album` 與不限 type 兩種查法下 **count 皆為 0**，
+  RG 全文檢索「美麗島」「李雙澤」也無任何條目。
+- **陳達**：MB **連藝人實體都沒有**——artist search 只回陳達偉／陈达飞／陳達儒 三個不相干的人，
+  羅馬拼音 Chen Da、Chen Ta 皆空，《民族樂手》《陳達和他的歌》《思想起》全文檢索全落空。
+
+卡住的是封面：人工身分卡沒有 rgMbid，Cover Art Archive 以 rgMbid 為鍵，所以那條路走不通；
+Apple 這邊實測也沒有——李雙澤只有 2008 年的《敬！李雙澤 唱自己的歌》
+（**那張池內已經有了**），陳達只有兩曲的《陳達與恆春調說唱》(2000)，都不是要的那張。
+依 `ALBUM_ONBOARDING.md`「封面必須核對版本並實際 GET 到 2xx／3xx」，兩張不得上架。
+
+**要你做的**：自備封面圖檔（實體唱片翻拍或正式再版書影），另補
+`identity.manualEvidenceUrls`（≥2 個 HTTPS 佐證，例如唱片公司頁、圖書館館藏目錄）
+與 `identity.manualRuling`（誰核定、依哪一條）。這兩欄驗證器會硬擋。
+`mbAbsenceProof` 的查詢紀錄與結論已備妥，在 c-32 的研究稿裡找不到它們是因為整筆沒進 manifest——
+需要時我可以把那兩筆 identity 記錄單獨導出給你。
+
+> 楊祖珺《楊祖珺》不在此列：**它已經在 `apex_pool.pearl` 王牌池裡**（prepare gate 查出），
+> 三張指定專輯裡它已經在池內了。
+
+### 7-2 候選裡沒能進 manifest 的 131 張
+
+1,337 筆候選 → 1,206 張進 manifest。落掉的分三類，**都不是漏做，是規則擋下**：
+
+- **MusicBrainz 查無或只有合輯條目（約 50 張）**：台灣原民與客語線最慘
+  （桑布伊、以莉·高露、羅思容、陳永淘、王宏恩、謝銘祐——藝人實體在、專輯 browse count=0）、
+  沖繩線 5 張退 4 張（ネーネーズ、りんけんバンド、登川誠仁、嘉手苅林昌）、
+  加勒比 soca／calypso（Lord Kitchener、Lord Shorty、Kassav'、Arrow）、
+  衣索比亞黃金年代原盤（Mulatu《Afro-Latin Soul》、Mahmoud Ahmed《Almaz》只剩 Éthiopiques 合輯）。
+  **三張是純資料缺漏**：Bembeya Jazz《Regard sur le passé》、Jazz Epistles《Verse 1》、
+  Violeta Parra《Canciones Reencontradas en París》在 MB 上 `primary-type` 欄是空的，
+  條目本身正確——你若願意上 MB 補 type，這三張馬上能救回。
+- **無可用封面（約 40 張）**：CAA 的 RG 與 release 兩層都沒圖、Apple 也配不到。
+- **規則擋下（約 25 張）**：已在王牌池 25 張、自我同名卡缺固定試聽 19 張、
+  跨區塊重複、寫作 agent 查出配錯且無可替代 RG（El Gran Combo《Mejor Que Nunca》
+  在 MB 上根本沒有 1976 這張、Pablo Milanés 1976 同名錄音室盤 MB 全無、
+  Nass El Ghiwane《Essiniya》查不到 1974 原盤依據）。
+
+### 7-3 曲風歸屬待你裁定的幾張
+
+寫作 agent 查證後認為可能不該掛在世界音樂線，已照常寫完並標註，**要不要留是你的決定**：
+L. Subramaniam《Conversations》與 Zakir Hussain《Making Music》（MB tag 是 jazz、ECM／Milestone 發行）、
+Asin《Asin》與 The Cambodian Space Project（MB tag 是 rock）、Jambinai《Différance》（post-rock）、
+Alien Weaponry《Tū》（實為 groove metal，掛 world 的理由是全碟毛利語與 taonga pūoro）。
+
+### 7-4 已知的個別瑕疵（研究稿裡都標了，但值得單獨列出來）
+
+- **Ali Farka Touré & Toumani Diabaté《Ali and Toumani》**：CAA 該 RG 的主 front 掛錯圖
+  （印的是《Kala Djula》），已退回，待你換圖。
+- **Forest《Forest》**：原釘到俄羅斯黑金屬團的同名盤；正確 RG 是
+  `c06e4cbe-190b-3636-a411-1e28567ddfab`（1969 Harvest 英國 acid folk 團），
+  但它是自我同名卡、本環境查無可核對的固定試聽，依規則退回。
+- **友部正人《にんじん》**：CAA 掛的正面圖是一張攤販菜單照，明顯錯圖，待換。
+- **鄭怡《小雨來得正是時候》**：CAA 回 500、該 RG 無封面。
+- **Michel Camilo & Tomatito《Spain》**：Apple 目錄恐怕根本沒有 2000 初代，只有 2006 續作。
+- **Ojos de Brujo《Barí》**：美國區 iTunes 抓不到單曲，**西班牙區（country=ES）可以**——
+  本輪試聽一律用 us 商店，非英語圈專輯改用當地商店可能救回一批 unavailable。
+
+### 7-5 本來就不打算在雲端做的
+
+三軸重跑 `/album-rating`、pearl 判定（需 listeners）、60 張 hall 候選裁定、
+年份用 Discogs 複核、325 張 unavailable 試聽補 YouTube、以及整個上架寫入
+（`card_catalog` → KV → `album_overrides` → `seed_cards.json`）。詳見第三、四節。
