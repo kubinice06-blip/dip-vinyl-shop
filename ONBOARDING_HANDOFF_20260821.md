@@ -13,11 +13,29 @@
 | 批次 | manifest | 張數 | prepare gate | 狀態 |
 |---|---|---:|---|---|
 | c-29 藍調正典 | `onboarding-manifest-c29-blues-20260821.json` | 15 | **0 error / 1 warning** | 可推 |
-| c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | 進行中 | — | 研究中 |
+| c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | **326** | **0 error / 44 warning** | 可推 |
 | c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | 進行中 | — | 研究中 |
 | c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | 進行中 | — | 研究中 |
 
 （進行中的批次完成後會補進這張表並更新張數與 gate 結果。）
+
+### c-30 細節
+
+326 張、稀有度 rare 163／uncommon 160／epic 3；封面來源 CAA 310／Apple 官方圖 16
+（CAA 整個 release-group 都沒圖時的救援，`cover.note` 有記）；固定試聽 Apple ready 266／
+unavailable 60。**hall 候選 11 張**（見第四節第 3 點，全部待你裁定，未寫入 `apex_pool.json`）：
+Elizabeth Cotten《Folksongs and Instrumentals with Guitar》、Professor Longhair《Crawfish Fiesta》、
+Dr. John《Dr. John's Gumbo》、Big Brother《Cheap Thrills》、Howlin' Wolf《Moanin' in the Moonlight》、
+Sonny Boy Williamson II《Down and Out Blues》、Junior Wells《Hoodoo Man Blues》、
+Otis Rush《Right Place, Wrong Time》、Jimmy Reed《I'm Jimmy Reed》、Willie Dixon《I Am the Blues》、
+The Paul Butterfield Blues Band 同名首張。
+
+候選 351 張裡有 25 張在管線各關被擋下，理由都記在研究稿裡，其中幾類值得知道：
+MusicBrainz 只有合輯條目或根本沒建檔（戰後老盤常見）、Apple 試聽配到同名選輯
+（Furry Lewis 配到 1927–29 戰前錄音、Pink Anderson 與 Big Bill Broonzy 曲目零重疊）、
+兩個策展區塊用不同題名提同一張碟（Jimmy Witherspoon、SRV 各一組）、
+以及 Janis Joplin《Pearl》——**prepare gate 查出它已經在 `apex_pool.hall` 王牌池裡**，
+依規則不得再以普卡上架，已自本批移除。
 
 背景：實測卡池 8,314 張的曲風分布為 rock 2,944／jazz 1,620／electronic 1,480／
 soul 1,429／hiphop 1,279／pop 1,215／classical 1,051／folk 661／world 301／blues 158。
