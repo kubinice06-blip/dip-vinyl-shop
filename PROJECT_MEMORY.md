@@ -1,5 +1,81 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-21（同日第三筆）｜dip-vinyl-shop｜合輯規則變更＋c-33／c-34／c-35 三批 554 張：卡池從「樂評正典」轉向「唱片行實際庫存」
+
+店主人在日本，邊逛二手唱片行邊用網站搜尋卡池，**命中率極低（只真的找到過一次 The Band）**，
+並指出未來想做「逛唱片行時用網頁即時辨識手上這張是什麼」。同時核定兩件事：
+重要合輯／精選集開放收錄（不用再逐張裁定）、商品頁與 reels 的專輯也要入卡池。
+三批全部只到 prepare gate，**線上資料一律未寫**。
+
+| 批次 | 張數 | prepare gate |
+|---|---:|---|
+| c-33 重要合輯 | 60 | 0 error / 8 warning |
+| c-34 唱片行正典 | 187 | 0 error / 4 warning |
+| c-34 日本店頭盤 | 149 | 0 error / 10 warning |
+| c-34 爵士店頭盤 | 132 | 0 error / 3 warning |
+| c-35 店內商品／IG reel | 26 | 0 error / 4 warning |
+
+九份 manifest 合計 1,760 張；全部上架後卡池從 8,948 成長到約 10,708。
+hall 候選累計 88 張，全部未寫入 `apex_pool.json`。
+
+## 規則變更：重要合輯／精選集全曲風開放（店主核定）
+
+`ALBUM_ONBOARDING.md` 新增 §5.6、§1 硬規則改寫、§5.5 白名單縮回只管 EP／Single／DJ-mix；
+`scripts/verify-album-onboarding.mjs` 接受 `releaseType='Compilation'`，不需 `genreException`，
+但強制 `exceptionReason` ≥12 字與 `exceptionEvidenceUrls` ≥2 個 HTTPS。
+舊規則擋掉的正典因此收得回來：戰前藍調的權威結集、Chess 單曲藝人精選、Éthiopiques 系列、
+Alan Lomax 田野錄音、《Anthology of American Folk Music》、Franco／E.T. Mensah 等非洲回顧輯。
+
+## 判準換了：不是樂評正典，是「箱子裡會一直出現什麼」
+
+c-34 三線策展的指示不是找名盤（那些池裡多半有了），是找二手店架上實際的庫存。
+去重時暴露的缺口很說明問題：**Phil Collins、Lionel Richie、Cyndi Lauper、George Benson、
+Helen Merrill、MJQ、Bud Powell 整人整團掛零**；日本線更誇張——サザン、ユーミン（松任谷名義）、
+中森明菜、松田聖子、山口百恵、沢田研二、オフコース、吉田拓郎、矢沢永吉、BOØWY、尾崎豊、
+アイドル全線、アニメサントラ全線，全部零張。
+
+## 四個值得記住的教訓
+
+**1. 去重名冊的格式混用讓比對整段失效。** `pool-all-keys.txt` 裡 seed 行是
+`Artist | Album | Year`、後來追加的是小寫 `artist|album`，直接字串比對只擋得到後者。
+改成一律 `norm()` 正規化比對（`pipeline/pool-keys.mjs`，讀 seed＋apex＋所有 manifest），
+當場抓出 8 張已在池內的候選。**日文藝人另有漢字／羅馬拼音雙寫法**（池內是 `Miki Matsubara`，
+候選寫「松原みき」），正規化也擋不住，只能逐一 grep 兩種寫法。
+
+**2. Apple 試聽要挑對商店。** 原本一律 `country=us`：日本盤 120 張只配到 7 張。
+改 `country=jp` 後配到 85 張，店內商品批也從 13/28 提升到 22/28。腳本已加商店參數。
+
+**3. MusicBrainz 的自動釘定會挑到「同名但錯的碟」，而且錯得很有規律。**
+這輪由寫作 agent 逐張複查抓到 11 筆：釘到現場盤（Toto、Billy Idol、Stray Cats、
+RCサクセション）、釘到只含廉價再版或 bootleg 的重複 RG（Queen《Greatest Hits》只有一筆
+2008 俄羅斯盜版、Count Basie《April in Paris》只有 2000 年 Duoline 拼盤、Nat King Cole
+與 Art Farmer 釘到復刻專用 RG）、釘到續作（Boss Tenors 配到 in Orbit!）、
+釘到重混盤（宮川泰《宇宙戦艦ヤマト》2024mix、高橋幸宏《Saravah! Remix》）。
+**`first-release-date` 明顯偏晚就是警訊**——輸入檔上寫著 2006、2024 的那幾筆全中。
+封面同理：CAA 的 RG 預設 front 可能是別版（Bud Powell 給十吋盤、Duke Ellington 給日本盤、
+Ella in Berlin 給 1993 增補版），要退到 release 層挑。
+
+**4. 日文題名在 MB 上常常只活在 release 層。** RG 題名採英文或羅馬字的例子：
+坂本龍一「左うでの夢」→ Left Handed Dream、高橋幸宏「音楽殺人」→ Murdered by the Music、
+ゴダイゴ「西遊記」→ Magic Monkey、冨田勲「展覧会の絵」→ Pictures at an Exhibition。
+artist-credit 也混用漢字／假名／羅馬字／舊字體（浜↔濱、当↔當、大澤↔大沢）。
+用日文題名做 Lucene 查詢一律零命中，**日本盤的預設流程要改成 artist browse 掃目錄**。
+
+## 商品與 reel 的資料來源
+
+Firestore 的 `items`／`reels` 集合在 `firestore.rules` 是 `allow read: if true`，
+用 REST API 加 `index.html` 內建的 web key 就能純讀取（不需認證、不寫任何東西）。
+c-35 的 29 張候選就是這樣抓的。**前端還有一件事沒做**（研究層不碰）：`index.html`
+目前把 reel 與店內商品硬排除在卡片邏輯外（`result.type !== 'reel' && result.type !== 'stock'`），
+這批上架後可以改成去卡池找對應的正式卡。
+
+## 檔案
+
+新增五份 manifest；改 `ALBUM_ONBOARDING.md`、`scripts/verify-album-onboarding.mjs`、
+`ONBOARDING_HANDOFF_20260821.md`。分支 `claude/batch-c29-album-onboarding-oolzb1`、PR #2。
+**驗證**：五份 manifest 各自 prepare gate 0 error；既有四份重跑仍 0 error；
+Compilation 路徑以合成案例雙向自測（缺舉證 → 2 error，補齊 → 0 error）。
+
 ### 2026-08-21（同日第二筆）｜dip-vinyl-shop｜c-30／c-31／c-32 三線共 1,191 張研究層完成，四階段卡池平衡目標一次補到位
 
 接續 c-29，店主指示「一路把所有缺少的專輯都做完」。三批全部只到 prepare gate，

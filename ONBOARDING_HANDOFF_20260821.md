@@ -16,9 +16,48 @@
 | c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | **326** | **0 error / 44 warning** | 可推 |
 | c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | **530** | **0 error / 64 warning** | 可推 |
 | c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | **335** | **0 error / 25 warning** | 可推 |
+| c-33 重要合輯 | `onboarding-manifest-c33-comps-20260821.json` | **60** | **0 error / 8 warning** | 可推 |
+| c-34 唱片行正典 | `onboarding-manifest-c34-canon-20260821.json` | **187** | **0 error / 4 warning** | 可推 |
+| c-34 日本店頭盤 | `onboarding-manifest-c34-japan-20260821.json` | **149** | **0 error / 10 warning** | 可推 |
+| c-34 爵士店頭盤 | `onboarding-manifest-c34-jazz-20260821.json` | **132** | **0 error / 3 warning** | 可推 |
 | c-35 店內商品／IG reel | `onboarding-manifest-c35-shop-reels-20260821.json` | **26** | **0 error / 4 warning** | 可推 |
 
-（c-33 重要合輯、c-34 唱片行常備盤兩批完成後會補進這張表。）
+**九份 manifest 合計 1,760 張**（前四批 1,206＋本輪 554）。
+全部推上線後，卡池從 8,948（seed 8,314＋apex 634）成長到約 **10,708**。
+
+### c-33 細節（重要合輯，新規則的第一批）
+
+60 張裡 **43 張走 Compilation 精選制**（每張都帶 `exceptionReason` 與 ≥2 個 HTTPS 證據）。
+稀有度 uncommon 50／epic 9／rare 1；試聽 ready 27（戰前錄音在 Apple 的覆蓋率本來就低）；
+**hall 候選 11 張**：Little Walter《The Best of Little Walter》、Bessie Smith《The Essential
+Bessie Smith》、Ma Rainey《Mother of the Blues》、Charley Patton《Founder of the Delta
+Blues》、Skip James《The Complete Early Recordings》、Muddy Waters《The Best of Muddy
+Waters》、Chuck Berry《The Great Twenty-Eight》、Hank Williams《40 Greatest Hits》、
+Various《Anthology of American Folk Music》、《Éthiopiques 1》、《The Indestructible Beat
+of Soweto》。
+
+只有一張沒過：Molly Drake 同名盤（自我同名卡，Apple 查無條目）。
+
+### c-34 細節（唱片行常備盤，三線合計 468 張）
+
+- **正典線 187 張**：稀有度 rare 148／uncommon 39；試聽 ready 168（大眾正典的 Apple
+  覆蓋率遠高於冷門線）；14 張走合輯精選制；hall 候選 8 張（Fly Like an Eagle、
+  Saturday Night Fever、Star Wars、Sound of Music、West Side Story、Like a Virgin、
+  She's So Unusual、Beauty and the Beat）。
+- **日本盤 149 張**：稀有度 uncommon 74／rare 71／epic 4；試聽 ready 88；hall 候選 7 張
+  （はっぴいえんど同名盤、寺尾聰《Reflections》、佐野元春《SOMEDAY》、THE BLUE HEARTS
+  同名盤、サディスティック・ミカ・バンド《黒船》、Flower Travellin' Band《Satori》、
+  坂本龍一《戦場のメリークリスマス》）。
+- **爵士線 132 張**：稀有度 uncommon 69／rare 60／epic 2／common 1；試聽 ready 94；
+  hall 候選 2 張（Sinatra《Songs for Swingin' Lovers!》、Ella《Mack the Knife: Ella in
+  Berlin》）。
+
+**沒過的張數與原因**（三線合計 33 張）：無封面（CAA 兩層都沒圖、Apple 也配不到）
+約 20 張、自我同名卡在 Apple 全區查無試聽 5 張（Pretenders、Gorillaz、Helen Merrill、
+Nancy Wilson/Cannonball、ヒカシュー）、MB 未建檔 3 張（石川さゆり《津軽海峡・冬景色》
+只有單曲條目、風《風ファースト・アルバム》、The New George Otsuka Trio《You Are My
+Sunshine》）、被判定為重複包裝 1 張（Steve Miller Band《Greatest Hits 1974-78》——
+欄位已備妥，你若認為它的二手流通量足以破例，把 `reject` 拿掉就能過 gate）。
 
 ### c-35 細節（店內商品與 reel 入卡池）
 
@@ -208,8 +247,15 @@ Firestore、KV 與封面／試聽網址的 HTTP 狀態。
    所以本輪**沒有任何 pearl 候選**。研究 agent 認為疑似 pearl 的卡都寫在
    `apexAssessment.reason` 裡（例如 Bukka White《Big Daddy》），補到 listeners 後再判。
 3. **hall 候選裁定**。凡 `apexAssessment.eligible=true` 的卡都**還沒**寫進 `apex_pool.json`，
-   要你點頭才算數。另有一批「classic=5 但本環境只查得到單一獨立來源」的卡，
-   研究稿保守標 `eligible=false` 並在 `reason` 寫明建議覆核。
+   要你點頭才算數。**九份 manifest 合計 88 張候選**（前四批 60＋c-33 的 11＋c-34 的 17）。
+   另有一批「classic=5 但本環境只查得到單一獨立來源」的卡，研究稿保守標
+   `eligible=false` 並在 `reason` 寫明建議覆核（例如荒井由実《Misslim》、
+   藤圭子《新宿の女》、RCサクセション《ラプソディー》、Bud Powell《The Amazing Bud
+   Powell, Volume One》、矢沢永吉《ゴールドラッシュ》）。
+   **另外有一個通則要你定**：`Legend`、`Their Greatest Hits (1971-1975)` 這類合輯
+   在銷量與影響力上都夠殿堂，但性質是身後精選／廠牌編輯而非原創作品。
+   寫作 agent 一律保守判 false 並把理由寫在 `apexReason`——**合輯可不可以進殿堂，
+   規格裡沒寫，等你一句話**。
 4. **年份複核**。Discogs 與 AllMusic 在雲端也被擋，凡年份有疑義的都寫在
    `research.yearNote`（常見情況是 MusicBrainz 的 release-group 只登錄了 CD 再版年，
    例如 Lightnin' Hopkins《Lightnin'》MB 標 1977、實際是 1961 Bluesville）。
@@ -315,6 +361,16 @@ Apple 實測也只有兩曲的《陳達與恆春調說唱》(2000)，不是要�
 George Benson、Helen Merrill、MJQ、Bud Powell 整人／整團掛零；サザン、ユーミン（松任谷名義）、
 中森明菜、松田聖子、山口百恵、沢田研二、オフコース、吉田拓郎、矢沢永吉、BOØWY、尾崎豊、
 アイドル全線、アニメサントラ全線也是零張——這些正是日本店頭的大宗。
+
+**關於那個「逛唱片行即時辨識」的功能**：卡池覆蓋是前提，這輪補完後應該會好很多，
+但真要做起來還有兩件事這邊沒動、留給你決定：
+1. **搜尋要能容錯**。這輪最痛的教訓就是同一張碟有太多寫法——漢字／假名／羅馬字、
+   舊字體新字體（浜↔濱、当↔當）、全半形、中黑點與長音符、彎引號直引號、
+   `Vol.`↔`Volume`、英文題名 vs 日文題名（MB 上「左うでの夢」叫 Left Handed Dream）。
+   站上的搜尋若只做字串包含，店頭掃到腰帶上的字多半搜不到。
+   `scratchpad/pipeline/pool-keys.mjs` 的 `norm()`（NFKD ＋去重音＋去所有非文字數字字元）
+   是可以直接搬去前端的正規化基準。
+2. **入口在哪**。目前站上沒有「純搜尋卡池」的頁面，卡片都是抽到才看得到。
 
 ### 7-2 候選裡沒能進 manifest 的 131 張
 
