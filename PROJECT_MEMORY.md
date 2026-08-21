@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-21｜dip-vinyl-shop｜c-29 藍調第一批 15 張研究層完成（遠端工作階段，只到 prepare gate）
+
+店主核定 c-29 開藍調線——實測卡池 blues 158 張是 `POOL_BALANCE_PLAN.md` 目標（500）的最大缺口
+（classical 1,051 已達標；world 301/800、folk 661/1,000 排後）。本批 15 張走「大牌先補代表作」：
+At Newport 1960、Blues Breakers with Eric Clapton、West Side Soul、Father of Folk Blues、
+Two Steps from the Blues、Big Mama Thornton with the Muddy Waters Blues Band、Gospel Train、
+Blues from the Gutter、Hound Dog Taylor and the HouseRockers、Ice Pickin'、Otis Spann Is the Blues、
+Second Winter、Strong Persuader、Kingfish、T-Bone Blues。與現池、apex_pool 皆零撞名
+（Etta James《At Last!》已在池，未列入）。
+
+- **身分 15/15 釘到 rgMbid**。改名路線一例：Thornton 那張在 MB 的建檔名是
+  《Big Mama Thornton and the Chicago Blues Band》，靠廠牌目錄號（Arhoolie F-1032）＋曲目
+  逐一比對確認同碟。**封面救援兩例**：T-Bone Blues 的 RG 層封面是 BnF Collection 再版通用圖、
+  Son House 是電台宣傳盤掃圖（印 Not for Resale），皆改用 release 層乾淨原封
+  （1959 mono／2012 再版）。15 張封面全部下載目視核對。
+- **頂點候選 3 張（hall，待店主裁定，均未寫入 apex_pool）**：At Newport 1960（RS #348、
+  「第一張藍調現場專輯」）、Blues Breakers（RS #195）、Two Steps from the Blues（RS #217）。
+  池內同級的 Live at the Regal 目前是普卡，採納與否請店主權衡一致性。
+- **環境限制（重要）**：遠端 sandbox 的網路政策擋 workers.dev 與 last.fm（CONNECT 403），
+  `/album-rating` 打不到——**三軸改人工錨點評定、listeners 全 null**（各卡 `ratings.note` 有記），
+  店主回本機請重跑 API 覆核。Discogs／AllMusic 也被擋：West Side Soul 年份
+  （MB 1967 vs Wikipedia 1968）與 Thornton 發行年（1966 或 1967）留待 Discogs 複核。
+- **試聽 15/15 Apple ready**（previewUrl 實測 200，collectionId 記進 manifest）；三張特別改抓
+  標準版（Mayall 非 Deluxe、Tharpe 非 Expanded、Winter 非 Legacy）；Son House 的 Apple 條目是
+  《The Complete 1965 Sessions》（原盤九曲全在內，首曲即 A1，manifest 有註）。
+- **檔案**：`onboarding-manifest-c29-blues-20260821.json`（新）。`seed_cards.json`、
+  `apex_pool.json`、KV、Firestore 全未動，published 全 false——KV 與 Firestore 由店主本機收尾。
+- **驗證**：`node scripts/verify-album-onboarding.mjs` prepare gate **0 error、1 warning**
+  （Thornton 的 Arhoolie 老黑膠查無條碼，規則允許留空）。
+- 分支 `claude/batch-c29-album-onboarding-oolzb1` 開 draft PR；上架寫入與 published gate 留本機。
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜og-random.png 重畫：填色模式錯了，不是字型錯
 
 店主看到第一版說「字體完全搞錯了，要跟心情選歌一樣」。
