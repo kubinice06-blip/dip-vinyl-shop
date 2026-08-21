@@ -16,8 +16,26 @@
 | c-30 藍調擴充 | `onboarding-manifest-c30-blues-20260821.json` | **326** | **0 error / 44 warning** | 可推 |
 | c-31 世界音樂 | `onboarding-manifest-c31-world-20260821.json` | **530** | **0 error / 64 warning** | 可推 |
 | c-32 民謠 | `onboarding-manifest-c32-folk-20260821.json` | **335** | **0 error / 25 warning** | 可推 |
+| c-35 店內商品／IG reel | `onboarding-manifest-c35-shop-reels-20260821.json` | **26** | **0 error / 4 warning** | 可推 |
 
-（進行中的批次完成後會補進這張表並更新張數與 gate 結果。）
+（c-33 重要合輯、c-34 唱片行常備盤兩批完成後會補進這張表。）
+
+### c-35 細節（店內商品與 reel 入卡池）
+
+店主要求「商品頁面的專輯、reels 的專輯也都要入卡池，抽到時要是有封面有屬性的卡，
+不能只秀 reel 預覽圖」。資料來源是 Firestore **`items` 集合**（公開可讀，47 筆含已刪除與已售出）
+與 repo 內 **`reels.json`**（3 筆）。去重後 29 張進管線、26 張過關。
+
+稀有度 rare 14／uncommon 11／epic 1（三上寛《1972／コンサートライブ零狐徒》）；
+封面 CAA 24／Apple 官方圖 2；固定試聽 ready 21／unavailable 5。
+
+**三張沒過**：すぎやまこういち《伝説巨神イデオン》與 Mal Waldron《Live: 4 to 1》CAA 兩層都沒圖、
+Apple 也配不到；George Otsuka《You Are My Sunshine》MB 未建檔（藝人實體有，該盤沒有）。
+
+**還有一件前端的事沒做**（研究層不碰，留給你決定）：`index.html` 目前把 reel 與店內商品
+硬排除在試聽與卡片邏輯外（`result.type !== 'reel' && result.type !== 'stock'`）。
+這批上架後，reel／商品抽卡結果可以改成去卡池找對應的正式卡（用 artist+album 對 `cardIdOf`），
+抽到就顯示真正的卡面與三軸。要不要做、怎麼接，等你決定。
 
 ### c-30 細節
 
@@ -210,6 +228,18 @@ Firestore、KV 與封面／試聽網址的 HTTP 狀態。
 - 因此雲端能做的是「身分＋封面＋試聽＋事實查證＋簡介」，
   做不了的是「機器評分＋listeners＋上架寫入」。這條界線就是本批次的交付範圍。
 
+**2026-08-21 追加的兩條實測心得：**
+
+- **Apple 試聽要挑對商店**：本輪一律用 `country=us`，日本盤因此幾乎全掛——
+  日本盤批 120 張在 us 商店只配到 7 張，改用 `country=jp` 後配到 85 張。
+  店內商品批也從 13/28 提升到 22/28。非英語圈專輯請一律改用當地商店
+  （西語盤 `es`、日本盤 `jp`），管線腳本已加上商店參數。
+- **Firestore 的店面資料在雲端讀得到**：`items`／`reels`／`card_catalog` 等集合
+  在 `firestore.rules` 裡是 `allow read: if true`，用 REST API
+  （`https://firestore.googleapis.com/v1/projects/price-manager-e8846/databases/(default)/documents/<集合>`
+  加 `index.html` 內建的 web API key）就能純讀取，不需認證、也不會寫到任何東西。
+  下次要拿店內庫存或 reel 清單當候選來源，不用再手動貼。
+
 ---
 
 ## 六、manifest 裡的額外欄位
@@ -255,6 +285,36 @@ Apple 實測也只有兩曲的《陳達與恆春調說唱》(2000)，不是要�
 `identity.manualEvidenceUrls`（≥2 個 HTTPS 佐證，例如唱片公司頁、圖書館館藏目錄）
 與 `identity.manualRuling`（誰核定、依哪一條）——這兩欄驗證器會硬擋。
 `mbAbsenceProof` 的查詢紀錄與結論已備妥，需要時可從研究稿導出。
+
+### 7-1b 規則變更：重要合輯／精選集開放收錄（2026-08-21 你核定）
+
+你說「只要是重要的合輯、精選集都可以收錄，不用再叫我裁定」，已經寫進規格與驗證器：
+
+- `ALBUM_ONBOARDING.md` §1 硬規則改寫、新增 §5.6「重要合輯／精選集」章節；
+  §5.5 曲風白名單章節縮回只管 EP／Single／DJ-mix。
+- `scripts/verify-album-onboarding.mjs` 接受 `releaseType: "Compilation"`，
+  **不需** `genreException`（全曲風適用），但強制 `exceptionReason` ≥12 字
+  與 `exceptionEvidenceUrls` ≥2 個 HTTPS 證據網址（精選制舉證）。
+- 收錄標準寫在 §5.6：公認的正典入口或代表性文獻才收，促銷拼盤與重複包裝的
+  greatest-hits 不收，同一藝人同批錄音只挑最權威的一種結集。
+
+既有四份 manifest 重跑 prepare gate 仍 0 error；Compilation 路徑以合成案例雙向自測過。
+
+### 7-1c 唱片行命中率：這輪新增兩批的動機
+
+你在日本邊逛唱片行邊用網站搜尋，命中率極低（只中過 The Band 一次），並提到未來想做
+「逛唱片行時用網頁即時辨識手上這張是什麼」的功能。卡池要能涵蓋**二手唱片行架上實際的庫存**，
+判準不是樂評正典（那個池裡多半有了），是「箱子裡會一直出現什麼」。因此開了：
+
+- **c-34 唱片行常備盤**：三線策展——全球大眾正典與店頭原聲帶（195 提名）、
+  日本盤（173 提名：city pop／昭和歌謡／アイドル／ニューミュージック／J-rock／アニメサントラ）、
+  爵士店頭盤（153 提名：名門廠牌目錄深度、和ジャズ、vocal 線）。
+- **c-33 重要合輯**：新規則開放後才收得了的正典合輯（62 提名）。
+
+策展去重時發現的池內缺口值得記一筆：Phil Collins、Lionel Richie、Cyndi Lauper、
+George Benson、Helen Merrill、MJQ、Bud Powell 整人／整團掛零；サザン、ユーミン（松任谷名義）、
+中森明菜、松田聖子、山口百恵、沢田研二、オフコース、吉田拓郎、矢沢永吉、BOØWY、尾崎豊、
+アイドル全線、アニメサントラ全線也是零張——這些正是日本店頭的大宗。
 
 ### 7-2 候選裡沒能進 manifest 的 131 張
 
