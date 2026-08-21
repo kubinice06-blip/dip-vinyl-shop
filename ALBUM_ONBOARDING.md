@@ -141,7 +141,7 @@
 
 ### 1. 身分確認與去重先行
 
-- 只收 MusicBrainz `primary-type=Album`；Single、EP、Compilation 不進一般卡池。**唯一例外**：白名單曲風可依「曲風 release type 例外」章節收 EP／Single／DJ-mix。
+- 只收 MusicBrainz `primary-type=Album`；Single、EP 不進一般卡池。**例外一**：白名單曲風可依「曲風 release type 例外」章節收 EP／Single／DJ-mix。**例外二（2026-08-21 店主核定）**：**重要合輯／精選集全曲風開放**，依「重要合輯／精選集」章節走精選制舉證，不需逐張請店主裁定。
 - 在打封面、評分與試聽 API 前，先對現有卡池與批次內做去重，節省流量。
 - 除了 artist+album 完全相同，必須人工檢查：不同 artist-credit、團名尾綴、`Vol.`／`Volume`、重音符號、特殊符號、譯名，以及片假名／漢字／羅馬拼音等跨文字系統版本。
 - 自我同名或極短名稱屬高風險；只有在 release 身分與固定試聽都已嚴格核對時才能收錄。
@@ -192,7 +192,7 @@
 某些曲風的核心經典不是正規專輯（電子樂的 12 吋單曲、EP 與 DJ mix 文化）。對這些曲風開放非 Album 收錄，但採**白名單＋精選制**，不是通則：
 
 - **白名單目前只有 `electronic`**（2026-07-22 店主核定）。其他曲風偵測到同類文化時，須經店主指定才可把該曲風 id 加入 `scripts/verify-album-onboarding.mjs` 的 `EXCEPTION_GENRES`，不得自行擴大。
-- 開放的 release type：`EP`、`Single`（12 吋文化）、`DJ-mix`（限 DJ-Kicks、fabric、Global Underground 等公認系列的里程碑輯）。Compilation 仍一律不收，包含單一藝人精選輯。
+- 開放的 release type：`EP`、`Single`（12 吋文化）、`DJ-mix`（限 DJ-Kicks、fabric、Global Underground 等公認系列的里程碑輯）。Compilation 不走本節白名單，改依 §5.6 全曲風開放。
 - manifest 的 `identity` 需多填三個欄位，驗證器會強制檢查：
 
   ```json
@@ -208,6 +208,23 @@
 
 - **精選制門檻**：`exceptionEvidenceUrls` 至少兩個可追溯網址，證明歷史地位（樂評、資料庫條目、廠牌沿革）。例外卡不做廠牌全收，逐張判定。
 - 其餘流程（封面、三軸、頂點評估、固定簡介、固定試聽、published gate）與正規專輯完全相同，不因例外身分放寬。
+
+### 5.6 重要合輯／精選集（2026-08-21 店主核定，全曲風開放）
+
+背景：許多曲風的核心正典本來就是合輯形態——戰前藍調與早期錄音只以合輯流通
+（Robert Johnson《King of the Delta Blues Singers》、Chess 時期單曲藝人的精選）、
+Éthiopiques 這類廠牌考古系列、各地傳統音樂的田野錄音選。過去 Compilation 一律退回
+請店主裁定，2026-08-21 店主核定改為**通則開放，不需逐張裁定**，但採精選制：
+
+- 收錄標準是「**重要**」：該合輯本身是公認的正典入口或該藝人／該樂種的代表性文獻
+  （樂評史地位、名廠系列、唯一可得的錄音形態）。單純的廠牌促銷拼盤、氾濫的
+  greatest-hits 重複包裝不收；同一藝人同一批錄音的多種合輯只挑最權威的一種。
+- manifest 寫法：`identity.releaseType: "Compilation"`，**不需** `genreException`（全曲風適用），
+  但必須帶 `exceptionReason`（≥12 字，說明歷史重要性）與 `exceptionEvidenceUrls`
+  （≥2 個 HTTPS 證據網址）。驗證器已於同日更新強制檢查。
+- MB `primary-type` 為 Album 但 secondary-type 含 Compilation 者，照一般 Album 寫法即可；
+  本節針對 `primary-type=Compilation`（或 MB 判為合輯而先前被擋）的條目。
+- 其餘流程（封面、三軸、頂點評估、固定簡介、固定試聽、published gate）與正規專輯完全相同。
 
 ### 6. 固定試聽
 
