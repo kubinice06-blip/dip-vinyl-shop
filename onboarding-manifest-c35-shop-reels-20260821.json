@@ -1,0 +1,1747 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-35-shop-reels-20260821",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "Charles Webster",
+      "album": "Remixed on the 24th of July",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "75adb033-e79f-3cf4-8c7c-1c3dd030df98",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Charles Webster，與卡名完全一致，無跨文字系統問題。已排除與其化名 Presence／Furry Phreaks 之混淆：本 RG 明確掛本名。MB 標題 Remixed on the 24th of July 與卡名相同，非原作《Born on the 24th of July》，兩者不可混。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/83/7f/61/mzi.fdzsxcoa.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（280288544）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Peacefrog 深宅名家的重混企劃，remixer 名單分量足但本身非正典原作，屬深度舞曲樂迷領域，聽感溫和。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "重混企劃而非原創正典，跨來源長期共識不足以進殿堂；listeners 不可得故流亡線無法判定。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "英國 house 製作人 Charles Webster 也以 Presence 等化名發表作品，2001 年在 Peacefrog 推出《Born on the 24th of July》。2003 年底廠牌把該作交給旗下與友好的製作人重做，名單有 Matthew Herbert、Pépé Bradock、Theo Parrish、Ian O'Brien 與 Detroit Escalator Co.。〈Put Your Hurt Aside〉〈I'm Falling〉在不同人手裡被拆成低溫的 deep house 與 downtempo 版本。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Charles_Webster_(musician)",
+          "https://musicbrainz.org/release-group/75adb033-e79f-3cf4-8c7c-1c3dd030df98"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/0a/db/76/0adb76ec-48fc-62ce-95cb-87126bbf2bc5/mzaf_493060411053162471.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 280288544,
+        "appleCollectionName": "Remixed On the 24th of July"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB release-group first-release-date 2003；en.wikipedia 述及 Born on the 24th of July 的重混版於 2003 年底發行，與策展年一致。",
+        "mbTitle": "Remixed on the 24th of July",
+        "mbArtist": "Charles Webster",
+        "mbFirstRelease": "2003",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "店內在售(Firestore items):Peacefrog 深宅名家 remix 專輯",
+        "curatorRisk": "remix 專輯,MB 條目型態待查"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "達明一派",
+      "album": "石頭記",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "5e13875d-72e1-4ad4-9dd9-286033172995",
+        "upc": "0602488996891",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作「達明一派」，sort-name 為羅馬字 Tat Ming Pair，卡名沿用中文團名正確。已排除與 1986 年同名出道 EP《達明一派》及續作《達明一派II》的混淆：本 RG 標題為《石頭記》。另注意本 RG 內含一筆 1986 年台灣版，題名作《金燕子》，屬同一 RG 下的異題發行，非另一張專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5e13875d-72e1-4ad4-9dd9-286033172995/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；香港電子流行的公認代表作，同名曲拿下十大中文金曲獎項；華語樂迷熟知但非全球入門常客，編曲以合成器流行為主、旋律好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位集中於粵語流行圈，缺少跨語系長期共識的殿堂級佐證，故不列頂點。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "達明一派由劉以達與黃耀明組成，1986 年以同名 EP 出道。1987 年 4 月 9 日發行的本作配合進念‧二十面體同名舞台劇而作，同名曲〈石頭記〉是該劇主題曲，詞取材自《紅樓夢》，並奪下第十一屆十大中文金曲最受歡迎演出中文歌曲獎。全碟由劉以達作曲編曲、陳少琪填詞，〈馬路天使〉〈傷逝〉〈後窗〉同樣傳唱；〈美好「新世界」〉寫的是當年新世界中心的消費風景。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%A0%AD%E8%A8%98_(%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE%E5%B0%88%E8%BC%AF)",
+          "https://zh.wikipedia.org/wiki/%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE",
+          "https://musicbrainz.org/release-group/5e13875d-72e1-4ad4-9dd9-286033172995"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1987,
+        "yearNote": "zh.wikipedia 明載 1987 年 4 月 9 日發行，與策展年一致；MB release-group first-release-date 顯示 1986 是因 RG 內併入了 1986 年台灣異題版《金燕子》，不宜採用。",
+        "mbTitle": "石頭記",
+        "mbArtist": "達明一派",
+        "mbFirstRelease": "1986",
+        "upcNote": "石頭記 (2011-08-03 HK)",
+        "curatorWhy": "店內在售:香港電子二人組首張正式專輯",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Phew",
+      "album": "Phew",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "4d362671-76fb-4b5d-9008-1373f54fcdf5",
+        "upc": "4988008058338",
+        "aliasesChecked": true,
+        "aliasReview": "藝名 Phew 為拉丁字母寫法，依店規日籍藝人以拉丁官方藝名者不改寫漢字，卡名維持 Phew 正確；MB artist-credit 亦作 Phew。自我同名卡已嚴格核對：MB RG 標題 Phew、藝人 Phew、1981-06-25 首發，非 1979 年 Aunt Sally 同名作，也非 Claudia Lennear 或 Walker 的同名專輯。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4d362671-76fb-4b5d-9008-1373f54fcdf5/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本後龐克公認的重要單飛作，錄音陣容跨接 Can 與 Conny Plank；屬深度愛好者領域，聲響稀薄冷硬但結構不算難解。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位穩固但未達跨來源長期共識的史上核心；accessibility 未到 5 故不符異端條件。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Phew 1959 年生，先在大阪 Vanity Records 的後龐克團 Aunt Sally 出道，單飛首支單曲〈Finale〉由坂本龍一製作。1981 年 6 月由 Pass Records 發行的個人首作，1981 年初在科隆的 Conny Plank 錄音室完成，Can 的 Holger Czukay 與 Jaki Liebezeit 參與演奏。〈CLOSED〉〈SIGNAL〉在極簡節奏與冷冽電子底下托著她乾裂的日語念唱，之後她又與 Plank、Liebezeit 做出《Our Likeness》。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Phew_(album)",
+          "https://en.wikipedia.org/wiki/Phew_(singer)",
+          "https://musicbrainz.org/release-group/4d362671-76fb-4b5d-9008-1373f54fcdf5"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/4b/2f/6e4b2f4d-50aa-efc0-6df2-f184fc24cb79/mzaf_15517276851861472950.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1587291695,
+        "appleCollectionName": "Phew"
+      },
+      "research": {
+        "suggestedYear": 1981,
+        "yearNote": "MB first-release-date 1981-06-25，en.wikipedia 亦記 1981 年 6 月由 Pass Records 發行，與策展年一致。",
+        "mbTitle": "Phew",
+        "mbArtist": "Phew",
+        "mbFirstRelease": "1981-06-25",
+        "upcNote": "Phew (1988-07-25 JP)",
+        "curatorWhy": "店內在售:Conny Plank/Can 節奏組合作的日本後龐克經典",
+        "curatorRisk": "自我同名卡,需嚴格核對"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Lonnie Smith",
+      "album": "Think!",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "71d47e70-77bd-3235-b3e9-9f7b86a4e32a",
+        "upc": "077778429029",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作「Dr. Lonnie Smith」（sort-name: Smith, Lonnie, Dr.），卡名用 1968 年原盤封面實際印製的「LONNIE SMITH」，二者為同一人，Dr. 為其 1970 年代後才慣用的前綴。另須與同名的電子鍵盤手 Lonnie Liston Smith 區隔，兩者非同一人。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/71d47e70-77bd-3235-b3e9-9f7b86a4e32a/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Blue Note soul-jazz 風琴線公認的主要作品，AllMusic 給 4.5 星並稱為其廠牌時期最強場次之一；爵士樂迷領域，律動直接好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在 soul-jazz 內地位穩，但缺乏跨來源公認的樂史核心佐證，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "風琴手 Lonnie Smith 1968 年在 Blue Note 錄下的第二張個人作，Lee Morgan 吹小號、David Newman 兼次中音薩克斯風與長笛，Melvin Sparks 彈吉他，另加康加與 timbales。開場〈Son of Ice Bag〉取自 Hugh Masekela，一路推到十一分鐘；〈Think〉翻的是 Aretha Franklin 與 Ted White 的曲子。Hammond B-3 的黏稠推進撐起整場，是 soul-jazz 的紮實一課。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Think!_(Lonnie_Smith_album)",
+          "https://musicbrainz.org/release-group/71d47e70-77bd-3235-b3e9-9f7b86a4e32a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/46/c5/dd/46c5dd70-98db-72fa-404a-ec18cce25586/mzaf_6018146148516575671.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 715851023,
+        "appleCollectionName": "Think!"
+      },
+      "research": {
+        "suggestedYear": 1968,
+        "yearNote": "MB first-release-date 1968，en.wikipedia 記 1968 年錄音並於 Blue Note 發行，與策展年一致。",
+        "mbTitle": "Think!",
+        "mbArtist": "Dr. Lonnie Smith",
+        "mbFirstRelease": "1968",
+        "upcNote": "Think! (1988 US)",
+        "curatorWhy": "店內在售:Blue Note soul-jazz 風琴名盤",
+        "curatorRisk": "artist-credit 可能作 Dr. Lonnie Smith"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "間宮貴子",
+      "album": "Love Trip",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3b03f2df-1fc0-4572-8b90-8f952a2a9fcb",
+        "upc": "4988005746924",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作漢字「間宮貴子」，sort-name 為 Mamiya, Takako，卡名用漢字符合日籍藝人以日文本名為準的店規；英文圈通行寫法為 Takako Mamiya，en.wikipedia 條目即以此立條，屬同一人。MB 標題作全大寫 LOVE TRIP，卡名 Love Trip 僅為大小寫差異。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3b03f2df-1fc0-4572-8b90-8f952a2a9fcb/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被視為 city pop 再評價浪潮的象徵作，也是歌手唯一留下的專輯；發行當時未進主流、如今屬深度收藏者領域，編曲乾淨好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "近年 city pop 熱潮已使其廣為流傳，難以主張流亡；且本環境取不到 listeners，依規一律不列頂點。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "間宮貴子唯一的個人專輯，1982 年 11 月 25 日由 Kitty Records 發行，澤井原兒製作，1982 年 4 至 8 月在東京 KRS Studio 錄音。作詞多由來生悦子包辦，參與樂手包括難波弘之、椎名和夫等曾與山下達郎共事的名字。發行當時未進主流視野，間宮婚後即退出樂壇，關於她的資料極少；二十一世紀 city pop 熱潮下〈真夜中のジョーク〉成為 DJ 熱門，本作被重估為 city pop 再發現的象徵。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Love_Trip_(Takako_Mamiya_album)",
+          "https://musicbrainz.org/release-group/3b03f2df-1fc0-4572-8b90-8f952a2a9fcb"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/2e/8c/28/2e8c28e5-8d2d-1b70-1468-85ccc29d8e58/mzaf_6919915438747026885.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1671915477,
+        "appleCollectionName": "LOVE TRIP"
+      },
+      "research": {
+        "suggestedYear": 1982,
+        "yearNote": "MB first-release-date 1982-11-25，en.wikipedia 同記 1982 年 11 月 25 日 Kitty Records 發行；店品標示的 2014 為再版年，不採用。",
+        "mbTitle": "LOVE TRIP",
+        "mbArtist": "間宮貴子",
+        "mbFirstRelease": "1982-11-25",
+        "upcNote": "LOVE TRIP (2012-12-26 JP)",
+        "curatorWhy": "店內在售:city pop 幻名盤,近年再發重估",
+        "curatorRisk": "店品標 2014 為再發,原盤 1982"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Red Garland",
+      "album": "When There Are Grey Skies",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1746efe0-86bf-38c3-9e44-7e1043ca5641",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作 Red Garland，與卡名一致（本名 William McKinley Garland Jr.，Red 為通行藝名，無跨文字系統問題）。已排除與 2013 年合輯《Halleloo-Y'-All + When There Are Grey Skies》（掛 Red Garland Trio、MB secondary-type Compilation）的混淆，本卡指向的是 1963 年原作 RG。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/1746efe0-86bf-38c3-9e44-7e1043ca5641/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Garland 本人地位高，但這張是 Prestige 晚期的深層目錄而非其頭部作品；三重奏演奏直白好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "屬藝人深層目錄，classic 未達 5，不符殿堂門檻，亦無極端聽感可言。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Red Garland 的 block chord 觸鍵影響過一整代 bop 鋼琴手，樂評 Harvey Pekar 在《DownBeat》上稱他是近代爵士鋼琴史最重要的人物之一。本作 1962 年錄音、隔年由 Prestige 發行，搭檔是貝斯手 Wendell Marshall 與鼓手 Charlie Persip。選曲刻意走老派歌本與藍調靈歌，〈St. James Infirmary〉〈Sonny Boy〉〈I Ain't Got Nobody〉都被拉回三重奏的搖擺；樂評 Scott Yanow 曾點名這批曲目的「不尋常」。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/When_There_Are_Grey_Skies",
+          "https://musicbrainz.org/release-group/1746efe0-86bf-38c3-9e44-7e1043ca5641"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/77/09/b97709ce-900a-f88c-b169-92b1d60c40ae/mzaf_4992224061294509061.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1443164067,
+        "appleCollectionName": "When There Are Grey Skies"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "en.wikipedia 記 1962 年錄音、隔年（1963）由 Prestige 發行，採發行年 1963；策展年 1962 為錄音年。MB first-release-date 1992-02-17 是 OJC 復刻 CD，MB 尚未建立原盤 release，不採用。",
+        "mbTitle": "When There Are Grey Skies",
+        "mbArtist": "Red Garland",
+        "mbFirstRelease": "1992-02-17",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "店內在售:Prestige 三重奏晚期名演",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Oscar Peterson Trio",
+      "album": "Night Train",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "9ce4b9ee-9ad4-3deb-95a4-4cb4e68c145e",
+        "upc": "042282172426",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作「The Oscar Peterson Trio」（sort-name: Peterson, Oscar, Trio, The），與卡名逐字相同，未落到獨奏名義的 Oscar Peterson 或無冠詞的 Oscar Peterson Trio。已排除與 Jimmy Forrest 原曲〈Night Train〉、James Brown 及 Keith Jarrett 等同名專輯的混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/9ce4b9ee-9ad4-3deb-95a4-4cb4e68c145e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Peterson 三重奏最暢銷、最廣為人知的一張，〈Hymn to Freedom〉更外溢成民權運動頌歌；曲目短小、旋律直白，是爵士入門常見盤。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "知名度極高但屬熱門暢銷盤而非公認開創之作，跨來源史上核心共識不足，不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Oscar Peterson 三重奏 1963 年在 Verve 發行的暢銷之作，由 Norman Granz 監督錄音，多數曲目刻意壓短以利電台播放。除〈Night Train〉〈C-Jam Blues〉〈Georgia on My Mind〉等藍調與 R&B 標準曲外，壓軸的〈Hymn to Freedom〉是 Peterson 在錄音室當場寫成、以金恩博士為名，隔年填上歌詞後成為民權運動的非官方頌歌。全碟獻給他任加拿大太平洋鐵路臥鋪車服務員的父親，封面攝影出自 Pete Turner。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Night_Train_(Oscar_Peterson_album)",
+          "https://musicbrainz.org/release-group/9ce4b9ee-9ad4-3deb-95a4-4cb4e68c145e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/e6/62/9de6620b-457c-65b5-b6c8-9aac4a19706c/mzaf_8114527535822520731.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1440761118,
+        "appleCollectionName": "Night Train"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "MB first-release-date 1963（最早 release 為 1963 年德、英盤），en.wikipedia 亦記 1963 年 Verve 發行，與策展年一致。",
+        "mbTitle": "Night Train",
+        "mbArtist": "The Oscar Peterson Trio",
+        "mbFirstRelease": "1963",
+        "upcNote": "Night Train (1984 US)",
+        "curatorWhy": "店內在售:Verve 暢銷代表作",
+        "curatorRisk": "artist-credit 可能作 Oscar Peterson Trio 或 Oscar Peterson"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Black Eyed Peas",
+      "album": "Monkey Business",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "990c6869-9722-3190-9e49-bbac56ae53b6",
+        "upc": "602498442609",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作「The Black Eyed Peas」，與卡名一致（該團 2018 年後改以 Black Eyed Peas 行世，本盤時期仍帶冠詞）。已排除與 Chuck Mangione、Skid Row 等同名專輯《Monkey Business》的混淆：MB RG 掛的是本團且首發 2005-05-25。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/990c6869-9722-3190-9e49-bbac56ae53b6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 1,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球賣破九百萬張、拿下兩座葛萊美，商業地位明確但樂評兩極；是任何人都會撞見的入門常客，製作直白好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "銷量與獎項亮眼，但樂評普遍質疑其歌詞與商業化傾向，缺乏樂史核心共識，不列頂點。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Black Eyed Peas 第四張錄音室專輯，2005 年 5 月 25 日由 A&M、Interscope 與 will.i.am Music Group 發行。前作《Elephunk》巡演途中於 2004 年 6 月開錄，will.i.am 與 Ron Fair 任執行製作，並找來 Printz Board、Timbaland、Danja 參與。在 Billboard 200 開出第二名、全球售出逾九百萬張，〈Don't Phunk with My Heart〉與〈My Humps〉各拿一座葛萊美，後者的歌詞也引來爭議。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Monkey_Business_(Black_Eyed_Peas_album)",
+          "https://musicbrainz.org/release-group/990c6869-9722-3190-9e49-bbac56ae53b6"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2005,
+        "yearNote": "MB first-release-date 2005-05-25，en.wikipedia 同記 2005 年 5 月 25 日發行，與策展年一致。",
+        "mbTitle": "Monkey Business",
+        "mbArtist": "The Black Eyed Peas",
+        "mbFirstRelease": "2005-05-25",
+        "upcNote": "Monkey Business (2005 PL)",
+        "curatorWhy": "店內在售:2000 年代嘻哈流行巨賣盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "濱田金吾",
+      "album": "Mugshot",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2df099c3-da67-474c-8c27-6daa4d2ef978",
+        "upc": "190295116453",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作漢字「濱田金吾」但 sort-name 為羅馬字 Hamada, Kingo，封面亦以 KINGO HAMADA 印製；卡名用漢字符合日籍藝人以日文本名為準的店規。舊名寫作「浜田金吾」，同一人；須與同期走紅的浜田省吾區隔，兩者不相干。MB 標題作 Mugshot，原盤封面為全大寫 MUGSHOT，僅大小寫差異，依 curatorRisk 指示以 MB 為準。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2df099c3-da67-474c-8c27-6daa4d2ef978/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；city pop／AOR 圈內公認的好盤與 Alfa Moon 時期代表之一，但在日本流行樂史上非頭部作品；屬深度愛好者領域，編曲乾淨好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "屬類型內的優良作品而非跨來源公認核心，classic 未達 5，不符殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "濱田金吾 1953 年生於東京新宿，1974 年以貝斯兼主唱身分加入民謠團 Craft，解散後轉作創作歌手與作曲家，替西城秀樹、髙橋真梨子、太田裕美等人寫過大量歌曲。本作是 1983 年 8 月 24 日由 Alfa Moon 發行的第五張個人專輯，編曲交給佐藤博與山田秀俊，〈GATSBY WOMAN〉〈TROPICAL FISH〉〈POOL & SUNGLASSES〉把 AOR 的乾淨節奏推向盛夏。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%94%B0%E9%87%91%E5%90%BE",
+          "https://musicbrainz.org/release-group/2df099c3-da67-474c-8c27-6daa4d2ef978"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/d5/69/4ed5691a-a727-c8d9-721a-b57387a9a6a8/mzaf_16224792878583850058.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 41280009,
+        "appleCollectionName": "MUGSHOT"
+      },
+      "research": {
+        "suggestedYear": 1983,
+        "yearNote": "ja.wikipedia 專輯表列第 5 張原創專輯 MUGSHOT 為 1983 年 8 月 24 日、Alfa Moon、LP MOON-28012，與策展年一致；MB first-release-date 2001-02-21 是 CD 再版，MB 尚未建立 1983 年原盤 release，不採用。",
+        "mbTitle": "Mugshot",
+        "mbArtist": "濱田金吾",
+        "mbFirstRelease": "2001-02-21",
+        "upcNote": "Mugshot (2021-03-17 XW)",
+        "curatorWhy": "店內在售:city pop/AOR 名盤",
+        "curatorRisk": "題名大小寫 MUGSHOT/Mugshot 以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Kenny Burrell & John Coltrane",
+      "album": "Kenny Burrell & John Coltrane",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "5148324e-104c-3151-8f0a-b2981f15d37c",
+        "upc": "090204065202",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為兩段：Kenny Burrell 與 John Coltrane，以 & 相連，與卡名逐字相同。自我同名卡已嚴格核對：MB RG 標題即《Kenny Burrell & John Coltrane》，首發 1963 年 New Jazz。須與 1967 年改題再版《The Kenny Burrell Quintet With John Coltrane》、1966 年荷蘭版《KB & JC》區隔，三者為同一 RG 下的異題發行。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5148324e-104c-3151-8f0a-b2981f15d37c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Burrell 與 Coltrane 唯一的雙掛名小編制錄音，New Jazz 目錄裡的公認主要作品；爵士樂迷領域，演奏搖擺直接。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "AllMusic 亦指出並非 Coltrane 最篤定的演出，未達跨來源史上核心的殿堂共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "吉他手 Kenny Burrell 與薩克斯風手 John Coltrane 1958 年 3 月 7 日進錄音室，成品要到 1963 年 4 月才由 New Jazz 發行。同行的是鋼琴 Tommy Flanagan、貝斯 Paul Chambers、鼓 Jimmy Cobb；開場〈Freight Trane〉與長達十四分鐘的〈Big Paul〉都出自 Flanagan 之手。1967 年 Prestige 換上新封面再版，改題《The Kenny Burrell Quintet With John Coltrane》。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Kenny_Burrell_%26_John_Coltrane",
+          "https://musicbrainz.org/release-group/5148324e-104c-3151-8f0a-b2981f15d37c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/6f/3e/af6f3ed3-8643-f3a4-770e-e6a356c97990/mzaf_4949043848550201917.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1440936047,
+        "appleCollectionName": "Kenny Burrell & John Coltrane (Remastered)"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "MB first-release-date 1963，en.wikipedia 記 1963 年 4 月 New Jazz 發行；策展年 1958 為錄音年（1958-03-07），採發行年 1963。",
+        "mbTitle": "Kenny Burrell & John Coltrane",
+        "mbArtist": "Kenny Burrell & John Coltrane",
+        "mbFirstRelease": "1963",
+        "upcNote": "Kenny Burrell & John Coltrane (1987 DE)",
+        "curatorWhy": "店內在售:Prestige 雙掛名經典",
+        "curatorRisk": "自我同名卡;artist-credit 拼法以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Detroit Experiment",
+      "album": "The Detroit Experiment",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e87bf5c0-e145-31da-bcca-6ffc9612fdc3",
+        "upc": "075679313829",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作 The Detroit Experiment，與卡名一致，為企劃團名而非個人。自我同名卡已核對：MB RG 標題《The Detroit Experiment》、首發 2003-03-17，與系列前後作《The Philadelphia Experiment》（2001）、《The Harlem Experiment》（2007）不同名，無混淆。MB release 關係欄位列 Carl Craig 為 executive producer。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e87bf5c0-e145-31da-bcca-6ffc9612fdc3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；城市系列企劃第二作，上過 Billboard 爵士榜第 17 名，陣容硬但屬 2000 年代跨界深層目錄；器樂即興與電子處理段落偏長。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "企劃型跨界作品，發行年份新、缺乏長期跨來源共識，不符殿堂條件。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "底特律的跨界企劃，2003 年由 Ropeadope 發行。製作人 Aaron Levinson 找來薩克斯風手 Bennie Maupin、小號手 Marcus Belgrave、鋼琴家 Geri Allen 與小提琴家 Regina Carter，techno 製作人 Carl Craig 掛執行製作，把爵士即興與這座城市的電子節奏擺在同一張唱片上。承接《The Philadelphia Experiment》的城市系列第二作，曾登上 Billboard 爵士專輯榜第 17 名、電子舞曲榜第 24 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Detroit_Experiment",
+          "https://musicbrainz.org/release-group/e87bf5c0-e145-31da-bcca-6ffc9612fdc3"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/12/07/0c/12070c22-7fbe-cd0d-d34a-ea03ab608e6b/mzaf_16612799866037078127.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 14065811,
+        "appleCollectionName": "The Detroit Experiment"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 2003-03-17，en.wikipedia 記 2003 年發行，與策展年一致。",
+        "mbTitle": "The Detroit Experiment",
+        "mbArtist": "The Detroit Experiment",
+        "mbFirstRelease": "2003-03-17",
+        "upcNote": "The Detroit Experiment (2003 US)",
+        "curatorWhy": "店內在售:底特律跨界計畫(Carl Craig 參與)",
+        "curatorRisk": "自我同名卡"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Steve Kuhn",
+      "album": "Watch What Happens!",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2b968123-ec4b-4ca0-8b1f-e651c3733387",
+        "upc": "4988002725168",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 作「Steve Kuhn Trio」（sort-name: Kuhn, Steve, Trio），卡名用個人名 Steve Kuhn；en.wikipedia 亦以個人名立條，指同一場 1968 年三重奏錄音，兩種寫法通用。已排除與美國版改題《In Europe; 1968》及電視節目 Watch What Happens Live 的混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2b968123-ec4b-4ca0-8b1f-e651c3733387/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；AllMusic 給 4 星並直指 Kuhn 長期被低估，MPS 目錄裡演奏與錄音俱佳但非公認頭部正典；三重奏抒情好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價良好但屬藝人深層目錄，缺乏跨來源長期共識，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "鋼琴家 Steve Kuhn 1968 年在歐洲錄下的三重奏作品，由德國 MPS 發行，貝斯 Palle Danielsson、鼓 Jon Christensen，兩人日後都成了 ECM 的常客。曲目取自 Michel Legrand 的〈Watch What Happens〉、Bacharach 與 David 的〈Windows of the World〉，以及 Carla Bley 寫的九分鐘〈Ad Infinitum〉。美國版 1969 年由 Prestige 改題《In Europe; 1968》發行。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Watch_What_Happens!",
+          "https://musicbrainz.org/release-group/2b968123-ec4b-4ca0-8b1f-e651c3733387"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/7a/ac/247aac0c-0019-924d-e841-725233e85c54/mzaf_4281225954985013398.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1132902665,
+        "appleCollectionName": "Watch What Happens"
+      },
+      "research": {
+        "suggestedYear": 1968,
+        "yearNote": "MB first-release-date 1968（最早 release 為 1968 年德國 MPS 15 193 ST），en.wikipedia 記 1968 年錄音並由 MPS 發行，與策展年一致。",
+        "mbTitle": "Watch What Happens!",
+        "mbArtist": "Steve Kuhn Trio",
+        "mbFirstRelease": "1968",
+        "upcNote": "Watch What Happens! (2016-11-02 JP)",
+        "curatorWhy": "店內在售:鋼琴三重奏抒情名盤",
+        "curatorRisk": "店品掛 Steve Kuhn Trio,credit 以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Roy Haynes",
+      "album": "We Three",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "4fc75f29-4099-4c53-8d0b-c7df5c42d64e",
+        "upc": "090204163342",
+        "aliasesChecked": true,
+        "aliasReview": "輸入 rgMbid 指向的 MB artist-credit 為「Roy Haynes Group」，卡名作 Roy Haynes；但正解 RG（4fc75f29-4099-4c53-8d0b-c7df5c42d64e）的 credit 是 Roy Haynes、Phineas Newborn、Paul Chambers 三人聯名，與 curatorRisk 的疑慮相符。en.wikipedia 條目名為 We Three (jazz album) 並以 Roy Haynes 為首列名，卡名沿用 Roy Haynes 可行，但應改掛正解 RG。另須與 Aaron Parks、Beyoncé 等同名作品區隔。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4fc75f29-4099-4c53-8d0b-c7df5c42d64e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "原自動釘到一筆低品質重複條目（題名全大寫 WE THREE、artist-credit 誤作 Roy Haynes Group、誤掛 secondary-type Remix、底下只有 1992 德國再版）；寫作 agent 查出正解並經 MB 直接查證：primary-type=Album、無 secondary、first-release 1959-05，封面實測 307",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Haynes 早期少數以領銜名義留下的三重奏錄音，New Jazz 目錄中的公認主要作品；爵士樂迷領域，演奏直接好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "作品扎實且常被提及，但缺乏跨來源長期共識足列樂史核心，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "鼓手 Roy Haynes 1958 年 11 月找來鋼琴家 Phineas Newborn Jr. 與貝斯手 Paul Chambers 錄音，成品 1959 年 5 月由 New Jazz 發行。三人僅此一次以這個編制留下錄音，AllMusic 便說他們把短暫的合作發揮到最好。〈Reflection〉〈Sneakin' Around〉出自 Ray Bryant 手筆，〈After Hours〉則拉到十一分鐘的慢藍調。Haynes 的鼓不只負責拍點，而是持續與 Newborn 的單音線條互相接話。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/We_Three_(jazz_album)",
+          "https://musicbrainz.org/release-group/4fc75f29-4099-4c53-8d0b-c7df5c42d64e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/ef/e8/10efe88c-32ce-2a66-dd9d-b121fafca1b5/mzaf_1255771141372593438.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1440949183,
+        "appleCollectionName": "We Three (Rudy Van Gelder) [Remastered]"
+      },
+      "research": {
+        "suggestedYear": 1959,
+        "yearNote": "en.wikipedia 記 1958 年 11 月錄音、1959 年 5 月由 New Jazz 發行；正解 RG 的 first-release-date 亦為 1959-05。策展年 1958 為錄音年，採發行年 1959。輸入 RG 的 1992 是德國再版年，不採用。",
+        "mbTitle": "WE THREE",
+        "mbArtist": "Roy Haynes Group",
+        "mbFirstRelease": "1992",
+        "upcNote": "WE THREE (1992 DE)",
+        "curatorWhy": "店內在售:Newborn/Chambers 三巨頭名盤",
+        "curatorRisk": "credit 可能是三人聯名"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Red Garland",
+      "album": "Crossings",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "260a7106-6660-3c07-a50b-f7667943608b",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡名用 Red Garland，MB release-group artist-credit 為 Red Garland Trio，同一人領班的三重奏名義，非另一組樂團。MB 另有 1978 年日本 Victor 盤（SMJ-6226）與美國 Galaxy／OJC-472 盤，題名一致為 Crossings；店主商品頁縮寫作「Cross」為店品簡稱，非另一張唱片。排查無同名混淆：Herbie Hancock 亦有《Crossings》(1972)，但藝人與 rgMbid 不同。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/37/da/0b37daaf-2774-d62e-f30e-7a56564d2b7b/24CRGIM42083.rgb.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1741387216）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Galaxy 時期的晚年三重奏佳作，陣容硬但地位不及 Prestige 全盛期；直線 bop 三重奏，入耳無門檻，屬爵士樂迷領域。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "晚期錄音室三重奏作品，未見跨來源長期共識列為爵士史核心，classic 僅 3，不具殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Red Garland 一九七七年底進錄音室，與 Ron Carter、Philly Joe Jones 組三重奏，隔年由 Galaxy 發行。Garland 與 Philly Joe 同屬 Miles Davis 首支經典五重奏，卻直到這次才以三重奏形式同場錄音。選曲取 Miles Davis〈Solar〉、Sonny Rollins〈Oleo〉與 Gershwin 兄弟〈But Not for Me〉，另有 Ron Carter 自作的〈Railroad Crossing〉，Garland 為人熟知的塊狀和弦手法仍是主軸。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album)",
+          "https://en.wikipedia.org/wiki/Red_Garland",
+          "https://musicbrainz.org/release-group/260a7106-6660-3c07-a50b-f7667943608b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/2c/3f/af2c3fff-80d7-8309-6e9a-d28973fb3cec/mzaf_4681739711774572398.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1741387216,
+        "appleCollectionName": "Crossings (Remastered 1990)"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB release-group first-release-date 1978；英文維基載一九七七年底錄音、隔年由 Galaxy 發行，採發行年 1978。",
+        "mbTitle": "Crossings",
+        "mbArtist": "Red Garland Trio",
+        "mbFirstRelease": "1978",
+        "upcNote": "releases=3，皆無有效條碼",
+        "curatorWhy": "店內在售(店品名 Cross):Galaxy 期與 Ron Carter/Philly Joe 三重奏",
+        "curatorRisk": "店品題名縮寫,以 MB《Crossings》為準;若查無再核對"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "荒井由実",
+      "album": "Misslim",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7ffb0f4f-983f-43c5-8d97-55fe2e8a9de5",
+        "upc": "4988024014356",
+        "aliasesChecked": true,
+        "aliasReview": "卡名用發行當時的本名藝名 荒井由実（封面英文作 YUMI ARAI），符合日籍藝人用日文本名的店規；MB release-group 的 artist-credit 已改掛現名 松任谷由実（artist id 0d27f48b-…），兩者為同一人，婚後改姓所致，非不同藝人。題名 MB 作全大寫 MISSLIM，卡片作 Misslim；日文再版另有片假名題名『ミスリム』（1994、1998 年盤），同一 release-group 內，非另一張作品。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7ffb0f4f-983f-43c5-8d97-55fe2e8a9de5/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本流行樂正典級的一九七〇年代錄音，〈やさしさに包まれたなら〉因《魔女宅急便》成為國民曲目；旋律直白、傳唱度高，一般聽眾也容易撞見。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "日本樂史地位極高，但本環境可達來源僅日英維基，缺乏第二種獨立榜單或名人堂證據，暫不列殿堂，建議店主另行覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "荒井由実一九七四年十月五日交出的第二作，東芝EMI 發行（LP 編號 ETP-72001）。伴奏與編曲由松任谷正隆、細野晴臣、林立夫、鈴木茂的キャラメル・ママ班底擔綱，尚未走紅的山下達郎受邀負責合唱編排，吉田美奈子、大貫妙子、矢野顕子也在合聲名單上。〈やさしさに包まれたなら〉的專輯版後來成為《魔女の宅急便》片尾曲，〈12月の雨〉〈海を見ていた午後〉同樣傳唱至今。封面攝於川添梶子宅邸，鋼琴與禮服皆為屋主所有。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Misslim",
+          "https://ja.wikipedia.org/wiki/MISSLIM",
+          "https://musicbrainz.org/release-group/7ffb0f4f-983f-43c5-8d97-55fe2e8a9de5"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d1/50/33/d150335e-b644-0d21-6931-61e81f1adbcd/mzaf_18270075970472637721.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1436010441,
+        "appleCollectionName": "Misslim"
+      },
+      "research": {
+        "suggestedYear": 1974,
+        "yearNote": "MB first-release-date 1974-10-05，與日文維基所載一九七四年十月五日東芝EMI 初盤一致。",
+        "mbTitle": "MISSLIM",
+        "mbArtist": "荒井由実",
+        "mbFirstRelease": "1974-10-05",
+        "upcNote": "ミスリム (1994-06-29 JP)",
+        "curatorWhy": "店內在售:ユーミン第二作",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "三上寛",
+      "album": "1972／コンサートライブ零狐徒",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7b03e325-1e58-4da9-9dc0-12bd6b276270",
+        "upc": "4988006152656",
+        "aliasesChecked": true,
+        "aliasReview": "藝人依店規用日文本名 三上寛，MB artist-credit 亦為 三上寛，一致。題名漢字歷來浮動：一九七二年 URC 初盤在 MB 登錄為「コンサートライヴ零孤徒 三上寛1972」（日文維基同作『三上寛1972コンサートライヴ“零孤徒”』），一九九八年環球再版起改用「零狐徒」，MB release-group 題名即取再版拼法「1972／コンサートライブ零狐徒」。本卡依派工指示採 MB 拼法「零狐徒」；店主商品頁作「零孤徒」，係初盤寫法，兩者指同一份錄音，非兩張唱片。另註：ライヴ／ライブ 拗音寫法在初盤與再版間亦有差異。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7b03e325-1e58-4da9-9dc0-12bd6b276270/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本地下フォーク公認的主要現場文獻與三上寛代表錄音，但流通長期僅靠 URC 原盤與少量再版，屬收藏家領域；嘶吼式唱腔與長篇曲目對一般聽眾相當難入耳。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "accessibility 評為 4 而非 5，未達異端門檻；殿堂則缺跨來源長期共識證據。另 listeners 在本環境不可得，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "青森縣北津輕郡小泊村出身的三上寛，一九七一年三月以單曲〈馬鹿ぶし〉出道，同年八月臨時獲邀登上第三屆全日本民謠嘉年華，唱自作歌詞版的〈夢は夜ひらく〉與取材自劫機事件的〈飛行機ぶんどって〉，一舉打開知名度。這份一九七二年十一月二十五日由 URC 發行的現場錄音，把他當時最生猛的舞台狀態留了下來，也是日本地下フォーク最常被回頭翻查的現場文獻之一。他日後亦以怪演派演員身分活躍於影劇。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/三上寛",
+          "https://musicbrainz.org/release-group/7b03e325-1e58-4da9-9dc0-12bd6b276270"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1972,
+        "yearNote": "MB first-release-date 1972-11-25（URC 初盤）；日文維基現場專輯列表亦載一九七二年 URC 發行，一九九八年為環球再版。",
+        "mbTitle": "1972／コンサートライブ零狐徒",
+        "mbArtist": "三上寛",
+        "mbFirstRelease": "1972-11-25",
+        "upcNote": "1972／コンサートライブ零狐徒 (1998-08-26 JP)",
+        "curatorWhy": "店內在售:1972 現場,日本地下フォーク文獻",
+        "curatorRisk": "題名與 MB 條目對應待查,查無正規條目就退"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Keith Jarrett",
+      "album": "El Juicio (The Judgement)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "977a4ca2-d51b-3d42-bb5c-7cfb775c7a50",
+        "upc": "075678078323",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 Keith Jarrett 與 MB artist-credit 完全一致。題名括號寫法依 MB release-group：El Juicio (The Judgement)，MB 底下四個 release（1975 US、1998、2006、2012 XE）題名一律含括號，故保留括號。與同期同批錄音的《The Mourning of a Star》《Birth》為不同專輯，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/977a4ca2-d51b-3d42-bb5c-7cfb775c7a50/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國四重奏成形期的關鍵錄音，《Penguin Guide to Jazz》作者群稱其為早期高點；但被 Impulse! 期名盤蓋過，屬深度愛好者領域。自由度高、同名曲陰鬱綿長，入耳需要一點耐性。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價高但屬 Jarrett 作品序列中的次要位置，未見跨來源長期共識列為爵士史核心，不符殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一九七一年七、八月間，Keith Jarrett 帶著 Charlie Haden 與 Paul Motian 進 Atlantic 錄音室，加上薩克斯風手 Dewey Redman，一口氣錄下足夠出三張唱片的素材，日後所稱的「美國四重奏」就此成形。Atlantic 拖到一九七五年才推出本作，那時樂團早已轉簽 Impulse!。〈Gypsy Moth〉〈Toll Road〉是鬆散而輕快的鄉村式搖擺，十分鐘的同名曲則陰鬱如音詩，〈Piece for Ornette〉更留下九分十六秒與十二秒兩個版本。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/El_Juicio_(The_Judgement)",
+          "https://musicbrainz.org/release-group/977a4ca2-d51b-3d42-bb5c-7cfb775c7a50"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1975,
+        "yearNote": "MB first-release-date 1975，與英文維基所載一九七一年錄音、一九七五年才由 Atlantic 發行一致；採發行年 1975（策展年份相同）。",
+        "mbTitle": "El Juicio (The Judgement)",
+        "mbArtist": "Keith Jarrett",
+        "mbFirstRelease": "1975",
+        "upcNote": "El Juicio (The Judgement) (1998 )",
+        "curatorWhy": "店內在售:American Quartet 時期作品",
+        "curatorRisk": "題名括號有無以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Oscar Peterson",
+      "album": "Blues Etude",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ec3e28f3-214d-32e1-adf0-9a3790762667",
+        "upc": "042281884429",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 Oscar Peterson 與 MB release-group artist-credit 一致（同批另有掛 The Oscar Peterson Trio 的卡片，屬不同 rgMbid，本張不受影響）。MB 下三個 release：1966 US Limelight（LM 82039）、1987 Verve CD、2025 日本盤，題名皆為 Blues Etude，未與同名選輯混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ec3e28f3-214d-32e1-adf0-9a3790762667/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Limelight 期有明確歷史點的一張——三重奏最後一次留下 Ray Brown 的錄音，但不在 Peterson 最常被舉出的作品之列；標準曲為主，入耳直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Peterson 名下更受公認的是 Verve 期三重奏錄音，本作 classic 僅 3，未達殿堂門檻，亦無極端難入耳條件。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Oscar Peterson 一九六六年在 Limelight 發行的作品（編號 LM 82039），也是他的三重奏最後一次留下 Ray Brown 的錄音：後半數曲目由 Ray Brown 拉低音提琴，前四曲換成 Sam Jones，鼓手一律是 Louis Hayes。除了同名的〈Blues Etude〉與〈Bossa Beguine〉〈L'Impossible〉等自作曲，另收〈The Shadow of Your Smile〉〈Stella by Starlight〉等標準曲，速度與觸鍵仍是 Peterson 一貫的凌厲。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blues_Etude",
+          "https://musicbrainz.org/release-group/ec3e28f3-214d-32e1-adf0-9a3790762667"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "MB first-release-date 1966，1966 年 US Limelight 盤 LM 82039；英文維基亦載為一九六六年作品。",
+        "mbTitle": "Blues Etude",
+        "mbArtist": "Oscar Peterson",
+        "mbFirstRelease": "1966",
+        "upcNote": "Blues Etude (1987-04-20 US)",
+        "curatorWhy": "店內在售:Limelight 期代表作",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "John Wright",
+      "album": "Mr. Soul",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "41d3145b-9d08-3e77-bcfe-199ab816859f",
+        "upc": "025218187626",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 John Wright 與 MB artist-credit 一致。同名者眾（英國製作人 John Wright、同名吉他手等），已以英文維基 John Wright (pianist) 條目核對：生於 1934 年、芝加哥活動、1960–62 年為 Prestige 錄五張，與本 rgMbid 的 1962 年 Prestige 盤吻合，未配錯人。題名 Mr. Soul 亦與 Buffalo Springfield 同名歌曲、Ben E. King 等同名專輯無關。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/41d3145b-9d08-3e77-bcfe-199ab816859f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 靈魂爵士路線的合格作品，Wright 本人在芝加哥以外知名度有限，屬深度愛好者才會翻到的名字；藍調底的鋼琴三重奏，入耳無門檻。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂史地位僅屬合格非首選，distinct 證據不足以支撐殿堂；亦非極端難入耳之作，不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "John Wright 一九三四年生於肯塔基州 Louisville，兩歲遷居芝加哥，七歲起在母親創辦的教會裡彈琴，一九六〇年開始為 Prestige 錄音，到一九六二年共留下五張。本作即一九六二年那批的一員，Wendell Marshall 貝斯、Walter Perkins 鼓，Esmond Edwards 監製、Rudy Van Gelder 錄音。〈Our Waltz〉〈What's New?〉等標準曲之外，〈Everything's Gonna Work Out Fine〉〈Strut〉出自 Wright 自己的手筆，福音底的觸鍵一路貫穿。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mr._Soul_(John_Wright_album)",
+          "https://en.wikipedia.org/wiki/John_Wright_(pianist)",
+          "https://musicbrainz.org/release-group/41d3145b-9d08-3e77-bcfe-199ab816859f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/e7/b8/1ae7b824-ee85-b9e5-7c52-5ce647c54717/mzaf_1502335391274945837.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1771677238,
+        "appleCollectionName": "Mr. Soul"
+      },
+      "research": {
+        "suggestedYear": 1962,
+        "yearNote": "MB first-release-date 1962，英文維基載一九六二年錄音並由 Prestige 發行，一致。",
+        "mbTitle": "Mr. Soul",
+        "mbArtist": "John Wright",
+        "mbFirstRelease": "1962",
+        "upcNote": "Mr. Soul (1995 US)",
+        "curatorWhy": "店內在售:Prestige 靈魂爵士鋼琴",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "大橋純子",
+      "album": "Tea for Tears",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "becd68a5-c39d-4255-b366-320ba1ed21f7",
+        "upc": "4988011506055",
+        "aliasesChecked": true,
+        "aliasReview": "卡名依店規用日文本名 大橋純子；輸入檔記錄的 mbArtist 為羅馬字 Junko Ohashi，但實際查 MB release-group 的 artist-credit 顯示為漢字 大橋純子——羅馬字係該藝人條目的別名／部分 release credit 寫法，兩者同一人。題名 MB 作 Tea For Tears（For 大寫），卡片作 Tea for Tears，僅大小寫差異。MB 下 1981／1994／2009／2022 四個日本 release 曲目全同，非改版選輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/becd68a5-c39d-4255-b366-320ba1ed21f7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；大橋在日本本土是唱功掛帥的知名歌手，但這張一九八一年 Philips 盤本身主要靠 city pop 重估潮才被外界翻出，屬深度愛好者領域；編曲流暢，入耳無門檻。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "屬藝人盛期中的一張，未見跨來源長期共識列為該領域史上核心，不符殿堂；亦非極端難入耳之作。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "北海道夕張出身的大橋純子受 Sergio Mendes 與 Janis Joplin 影響，練出靈魂樂式唱腔，一九七四年在日本 Phonogram 旗下的 Philips 唱片以《フィーリング・ナウ》出道，一九七八年〈たそがれマイ・ラブ〉拿下日本唱片大賞金賞，一九八二年更以〈シルエット・ロマンス〉獲最優秀歌唱賞。一九八一年的本作同樣掛 Philips，十曲從〈Another Day, Another Love〉〈テレフォン・ナンバー〉〈Maroon Person〉一路走到收尾的同名曲。她在二〇二〇年代常被重新歸入 city pop 脈絡。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/大橋純子",
+          "https://musicbrainz.org/release-group/becd68a5-c39d-4255-b366-320ba1ed21f7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/37/40/ba37408b-1526-79c9-522c-17dc4e8858ee/mzaf_12558414002276025320.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1443304405,
+        "appleCollectionName": "Tea For Tears"
+      },
+      "research": {
+        "suggestedYear": 1981,
+        "yearNote": "MB first-release-date 1981，1981 年日本 Philips 初盤（1994 年 CD 再版編號 PHCL-8064），與策展年份一致。",
+        "mbTitle": "Tea For Tears",
+        "mbArtist": "Junko Ohashi",
+        "mbFirstRelease": "1981",
+        "upcNote": "Tea For Tears (1994-11-26 JP)",
+        "curatorWhy": "店內經手(已售出):city pop 歌姬名盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "杏里",
+      "album": "Bi・Ki・Ni",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "65c08cc7-0fe4-4d7d-91f8-3dcb2a6d38bc",
+        "upc": "4988018317982",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 杏里 與 MB artist-credit 一致（拉丁字寫法 ANRI 為官方英文藝名，店規採日文本名故用漢字 杏里）。題名中黑點依 MB release-group 作 Bi・Ki・Ni（全形中點），日文維基讀作「ビ・キ・ニ」；坊間常見 Bi-Ki-Ni／BIKINI 等寫法均為同一張。MB 下 1983／1985／2008／2011／2016／2023 各版題名一致，非再包裝選輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/65c08cc7-0fe4-4d7d-91f8-3dcb2a6d38bc/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角松敏生製作的 Disco Side 使本作成為和製 city pop 最常被舉出的作品之一，屬樂迷領域；舞曲節拍與夏日抒情並置，旋律直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在 city pop 圈內地位穩固，但缺乏跨來源長期共識列為日本流行樂史核心的證據，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "杏里一九八三年六月五日在 For Life Records 發行的第五張原創專輯，距前作《Heaven Beach》七個月。黑膠與卡帶把十首歌切成兩半：第一至五曲標為 Disco Side，由角松敏生一手包辦作曲與音效製作；第六至十曲的 Sea Side 則是杏里與當時巡演樂團成員小林武史共同創作，小林與佐藤準編曲。〈Lady Sunshine〉與〈September Walkin'〉同日切出單曲，〈Good Bye Boogie Dance〉〈Surf City〉延續她夏日海邊的路線。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/Bi・Ki・Ni",
+          "https://musicbrainz.org/release-group/65c08cc7-0fe4-4d7d-91f8-3dcb2a6d38bc"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/22/e6/9d/22e69d31-9f37-eb76-7c67-c1390608f12a/mzaf_437367333591878254.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 283306315,
+        "appleCollectionName": "Bi・Ki・Ni"
+      },
+      "research": {
+        "suggestedYear": 1983,
+        "yearNote": "MB first-release-date 1983-06-05，日文維基同載一九八三年六月五日フォーライフ・レコード發行。",
+        "mbTitle": "Bi・Ki・Ni",
+        "mbArtist": "杏里",
+        "mbFirstRelease": "1983-06-05",
+        "upcNote": "Bi・Ki・Ni (2008-07-16 JP)",
+        "curatorWhy": "店內經手(已售出):杏里 city pop 期作品",
+        "curatorRisk": "中黑點拼法以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "松田聖子",
+      "album": "Squall",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "74a9710a-a579-4c2c-b06e-793cf038f37c",
+        "upc": "4988009558363",
+        "aliasesChecked": true,
+        "aliasReview": "卡名依店規用日文本名 松田聖子，與 MB artist-credit 一致。題名 MB release-group 作全大寫 SQUALL（日文維基同作『SQUALL』），卡片作 Squall，僅大小寫差異，指同一張。注意一九八三年十二月起另有同名的再版與 CD 化多種（35DH 68、32DH 783 等），皆在同一 release-group 內；與其他歌手的同名作品無關。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/74a9710a-a579-4c2c-b06e-793cf038f37c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；八〇年代日本偶像史起點級的出道專輯，含〈青い珊瑚礁〉這種國民級曲目、Oricon LP 榜第二；大牌加大眾曲目，入耳全無門檻。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "商業成績與知名度極高，但殿堂需要的是跨來源長期共識的史上核心地位，本作證據不足，故不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "松田聖子一九八〇年八月一日在 CBS・ソニー 推出的首張原創專輯（LP 編號 27AH 1032），收錄出道單曲〈裸足の季節〉與第二張單曲、大賣的〈青い珊瑚礁〉；靠這兩首先行曲，首張作品就拿下 Oricon LP 榜第二。全作依夏日海邊與南國意象編成，帶腰紙文案寫著「珊瑚の香り、青い風」。錄音在同年六、七月於 CBS/Sony 信濃町一號、三號錄音室完成，也是她一九九二年自製之前，唯一一張全曲出自同一位作曲家之手的專輯。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/SQUALL_(松田聖子のアルバム)",
+          "https://musicbrainz.org/release-group/74a9710a-a579-4c2c-b06e-793cf038f37c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/9f/40/57/9f40570e-89ac-b3ca-b757-7161d2f66801/mzaf_8088833213652738192.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1536760538,
+        "appleCollectionName": "SQUALL"
+      },
+      "research": {
+        "suggestedYear": 1980,
+        "yearNote": "MB first-release-date 1980-08-01，日文維基同載一九八〇年八月一日 CBS・ソニー 發行。",
+        "mbTitle": "SQUALL",
+        "mbArtist": "松田聖子",
+        "mbFirstRelease": "1980-08-01",
+        "upcNote": "SQUALL (1987-11-21 JP)",
+        "curatorWhy": "店內經手(已售出):出道作",
+        "curatorRisk": "題名 SQUALL 大小寫以 MB 為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "当山ひとみ",
+      "album": "Sexy Robot",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "cb6e7d7d-5c92-3158-9d8b-c684a1a5cd88",
+        "upc": "4549767136240",
+        "aliasesChecked": true,
+        "aliasReview": "卡名依店規用日文本名 当山ひとみ；輸入檔記錄的 mbArtist 為羅馬字 Hitomi Tohyama，實查 MB release-group 的 artist-credit 為假名漢字混寫 当山ひとみ，羅馬字係其英文寫法，同一人。策展提示的「當山」為舊字體寫法，日文維基與 MB 皆用新字體「当山」，故採 当山ひとみ。她另有 PENNY 藝名（見 Penny Arcade、Five Pennys 等企劃），非另一位歌手。題名 MB 初盤作 Sexy Robot，1988 年再版改片假名『セクシィ・ロボット』、2013 年版作『セクシィ・ロボット？』，同一 release-group。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/cb6e7d7d-5c92-3158-9d8b-c684a1a5cd88/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；和製 boogie／electro-funk 的挖掘熱門盤，有明確特色與再發熱度，但藝人在日本本土從未真正大紅，屬深度愛好者領域；節拍明快，入耳無門檻。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "近年因再發與 DJ 使用而升溫，但缺乏長期跨來源共識的史上核心地位，不符殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "沖繩 Koza（今沖繩市）出身的当山ひとみ國中二年級後赴美，在 Oakland 讀完高中，回日本時日語還說不俐落，一九八一年在日本哥倫比亞以〈ドア越しのGood Song〉出道，頭一年連演出台詞都得照本宣科。一九八三年十月二十一日發行的本作，從同名曲〈Sexy Robot〉開場，接〈Wanna Kiss〉〈Tuxedo Connection〉〈Let's Talk In Bed〉〈Cathy〉等共十曲。二〇二四年 Night Tempo 重混〈Cathy〉，讓這批錄音再度流通。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/当山ひとみ",
+          "https://musicbrainz.org/release-group/cb6e7d7d-5c92-3158-9d8b-c684a1a5cd88"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6d/91/bc/6d91bcad-543d-fed6-7ef0-b7e7ad1e50d2/mzaf_1643406180802592228.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1584079450,
+        "appleCollectionName": "Sexy Robot (2021 Remaster)"
+      },
+      "research": {
+        "suggestedYear": 1983,
+        "yearNote": "MB first-release-date 1983-10-21（日本哥倫比亞初盤），日文維基專輯列表同載 1983/10/21。",
+        "mbTitle": "Sexy Robot",
+        "mbArtist": "Hitomi Tohyama",
+        "mbFirstRelease": "1983-10-21",
+        "upcNote": "Sexy Robot (1983-10-21 JP)",
+        "curatorWhy": "店內經手(已售出/預估):和製 boogie/funk 名盤",
+        "curatorRisk": "藝人寫法 当山/當山 兩種都查"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Jacksons",
+      "album": "Victory",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "a316d419-56da-39fa-a7ca-9c9fd30df0a6",
+        "upc": "07464389461",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 The Jacksons 與 MB artist-credit 一致；英文維基註明 LP 封面實際只印 Jacksons（無定冠詞），屬同一團體的封面寫法差異。與 The Jackson 5（Motown 時期團名）為同一組人的不同時期名義，本卡採 Epic 時期的 The Jacksons，未混淆。題名 Victory 與 Victory Tour 巡演同名但為不同事物；巡演並未演出本作曲目。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/a316d419-56da-39fa-a7ca-9c9fd30df0a6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國雙白金、Billboard 200 第四名，六兄弟唯一同框之作，有明確歷史位置但樂評地位不及同期 Michael 個人作品；大牌加暢銷單曲，入耳直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "銷量與話題極大，但長期樂評共識並未把本作列為靈魂樂或流行樂史核心，不符殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Jacksons 一九八四年七月二日由 Epic 推出的第十五張錄音室專輯，封面與唱片標籤都只印 Jacksons，也是六位 Jackson 兄弟唯一一次以正式團體身分同框。製作由兄弟們與 Toto 的 David Paich、Steve Porcaro 分擔，實際上多是各自單飛作品的集合：Michael 唱〈Be Not Always〉、Randy 唱〈One More Chance〉、Marlon 唱〈Body〉。〈State of Shock〉衝上 Billboard Hot 100 第三名，專輯最高第四，同年十月獲美國雙白金認證。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Victory_(The_Jacksons_album)",
+          "https://musicbrainz.org/release-group/a316d419-56da-39fa-a7ca-9c9fd30df0a6"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/fa/59/73/fa597346-4991-1e7b-86ea-e748472ddee9/mzaf_9473233964676089138.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1558235272,
+        "appleCollectionName": "Victory (Expanded Version)"
+      },
+      "research": {
+        "suggestedYear": 1984,
+        "yearNote": "MB first-release-date 1984，英文維基載一九八四年七月二日由 Epic 發行，採 1984。",
+        "mbTitle": "Victory",
+        "mbArtist": "The Jacksons",
+        "mbFirstRelease": "1984",
+        "upcNote": "Victory (1984 US)",
+        "curatorWhy": "店內經手(已售出):Victory 巡演期專輯",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "菊地雅章",
+      "album": "End for the Beginning",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "041fd338-0b5f-4cf8-848f-459f44e39ed0",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡名依店規用日文本名 菊地雅章；MB release-group 的 artist-credit 為羅馬字團名 Masabumi Kikuchi Quintet，與卡名的漢字寫法不同，指的是同一人領軍的五重奏，非另一組樂團。策展所擔心的 credit 掛 Masabumi Kikuchi 一事已核實。題名 MB 作 End For The Beginning（For／The 大寫），卡片作 End for the Beginning，僅大小寫差異。MB 下僅 1973 年日本 Philips FX-8527 一個 release，未見同名再版或選輯可混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/041fd338-0b5f-4cf8-848f-459f44e39ed0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；菊地七〇年代 Philips 期五重奏錄音，有明確特色但從未廣泛再版，日文維基的作品列表甚至未收，屬收藏家／學術領域；曲式較長且自由度高，入耳需要一點耐性。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "流通極稀且評述文獻不足，無跨來源共識可支撐殿堂；listeners 在本環境不可得，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "綽號「プーさん」的菊地雅章一九三九年生於東京，藝大附屬高中作曲科畢業後於一九五八年起以自組鋼琴三重奏出道，一九六八年隨 Sonny Rollins 日本巡演並赴 Berklee 進修。一九七〇年的《POO-SUN》讓他成為日本最早實踐 Miles Davis 電氣化路數的樂手之一，之後與 Gil Evans、Elvin Jones 頻繁合作。一九七三年這張掛 Masabumi Kikuchi Quintet 名義、由日本 Philips 發行（FX-8527），共五曲，其中〈Gin-Kai〉重讀他與山本邦山一九七〇年《銀界》的同名曲。",
+        "sourceUrls": [
+          "https://ja.wikipedia.org/wiki/菊地雅章",
+          "https://en.wikipedia.org/wiki/Masabumi_Kikuchi",
+          "https://musicbrainz.org/release-group/041fd338-0b5f-4cf8-848f-459f44e39ed0"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/96/9e/f2/969ef2a9-d434-16de-0679-94f93e36d540/mzaf_9179430853668030431.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1443736374,
+        "appleCollectionName": "End For the Beginning"
+      },
+      "research": {
+        "suggestedYear": 1973,
+        "yearNote": "MB first-release-date 1973，唯一 release 為 1973 年日本 Philips FX-8527，與策展年份一致。",
+        "mbTitle": "End For The Beginning",
+        "mbArtist": "Masabumi Kikuchi Quintet",
+        "mbFirstRelease": "1973",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過:菊地雅章 Quintet 時期,要成為有屬性的正式卡",
+        "curatorRisk": "reel 資料題名待 MB 校正,credit 可能掛 Masabumi Kikuchi"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Red Garland",
+      "album": "All Kinds of Weather",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "fca9e28b-981c-3512-9b41-e4705a690e85",
+        "upc": "025218619325",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 Red Garland，MB release-group artist-credit 為 Red Garland Trio，同一人領班的三重奏名義。題名 All Kinds of Weather 與 MB 一致。注意此 release-group 下三個 release（1990 US、1999 JP、2006 JP）全為 CD 再版，並未收原始 1959 年 Prestige LP，故 MB 的 first-release-date 失真，見 yearNote。與同批另一張 Red Garland 卡《Crossings》為不同 rgMbid，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/fca9e28b-981c-3512-9b41-e4705a690e85/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 全盛期的三重奏概念盤，Paul Chambers／Art Taylor 的固定班底，是 Garland 名下最常被舉出的作品之一；標準曲為主，入耳無門檻，屬爵士樂迷領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Garland 領班作中的上乘之作，但跨來源長期共識並未把它列為爵士鋼琴史核心，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Red Garland 一九五八年率 Paul Chambers、Art Taylor 錄音，隔年由 Prestige 發行（編號 7148），整張依天氣命題串起：〈Rain〉〈Summertime〉〈Stormy Weather〉〈Spring Will Be a Little Late This Year〉〈Winter Wonderland〉，最後收在九分鐘的〈'Tis Autumn〉。Garland 是把塊狀和弦手法帶進爵士鋼琴主流的關鍵人物之一，這種左手鋪塊、右手單音行進的做法在十分半的〈Stormy Weather〉裡被拉得最開。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/All_Kinds_of_Weather",
+          "https://en.wikipedia.org/wiki/Red_Garland",
+          "https://musicbrainz.org/release-group/fca9e28b-981c-3512-9b41-e4705a690e85"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/49/c2/7349c264-acac-ac1a-b52c-112ca6df06d8/mzaf_7693110569919423162.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T18:56:23Z",
+        "appleCollectionId": 1443113540,
+        "appleCollectionName": "All Kinds of Weather"
+      },
+      "research": {
+        "suggestedYear": 1959,
+        "yearNote": "MB first-release-date 顯示 1990，但該 release-group 只登錄了 CD 再版；英文維基載一九五八年錄音、一九五九年由 Prestige 發行，封面亦印 PRESTIGE 7148（1959 年目錄編號），故採 1959，與策展年份一致。",
+        "mbTitle": "All Kinds of Weather",
+        "mbArtist": "Red Garland Trio",
+        "mbFirstRelease": "1990",
+        "upcNote": "All Kinds of Weather (1990 US)",
+        "curatorWhy": "IG reel 用過:Prestige 三重奏概念盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}
