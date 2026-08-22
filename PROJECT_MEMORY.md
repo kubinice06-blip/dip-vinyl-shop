@@ -1,5 +1,330 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-22（同日第五筆）｜dip-vinyl-shop｜簡介規則增補：敘事重心依專輯性質選擇
+
+店主核定：「不一定要全都是只有故事，如果專輯的音樂性是重點的話，也可以將此視為主要介紹」。
+寫入 `ALBUM_ONBOARDING.md` §5（固定簡介）：音樂性導向的專輯（聲響設計、編曲、演奏、
+製作手法、曲式）以音樂描述為簡介主體，不必硬找背景軼事湊敘事；故事性強的照舊以脈絡為主。
+兩種寫法的查證與來源要求相同。管線的 WRITER-BRIEF 同步增補，c-37 起的寫作 agent 適用。
+
+主要檔案：`ALBUM_ONBOARDING.md`。驗證：純文件規則，無程式變更。
+
+### 2026-08-22（同日第四筆）｜dip-vinyl-shop｜跨 manifest 重複卡清除 6 張＋開 c-37～c-40 四線擴充
+
+開新批次前重整去重名冊（併入 c-33～c-36 的鍵，10,154 → 10,735）時，用 rgMbid 交叉掃描
+十份 manifest，抓到 **6 組跨批次重複**——同一張碟被不同批次用不同掛名寫法收了兩次，
+artist+album 字串去重擋不住（「Hanggai」vs「杭蓋 Hanggai」、「Black Eyed Peas」vs
+「The Black Eyed Peas」、「當山ひとみ」vs「当山ひとみ」、「菊地雅章クインテット」vs
+「Masabumi Kikuchi Quintet」）。教訓：**跨批次去重必須用 rgMbid，不能只靠字串鍵**；
+組裝器內已有單批 rgMbid 去重，但跨 manifest 沒有人查，此次補上人工掃描，日後新批
+組裝前應把既有 manifest 的 rgMbid 也納入 emittedRgs。
+
+逐組裁定（留品質好的那份）：Introducing Hanggai 留 c31（通行拼法 Hanggai、世界線）；
+Monkey Business 留 c35（The Black Eyed Peas 正確掛名）；We Three 留 c35（試聽 ready）；
+Sexy Robot 留 c35（当山ひとみ正確寫法＋ready）；End for the Beginning 留 c36
+（ready＋店主 IG 文案）；Crossings 留 c36（MB 有兩筆重複 RG，928be0b1 掛名與封面正確，
+c35 的 260a7106 CAA 無圖）。刪除後五份 manifest 重跑 prepare gate 全部 0 error，
+總數 1,787 → **1,781**。
+
+同時依店主指示開 **c-37～c-40 四線擴充**：爵士大師目錄深度（實測 Red Garland 在 seed
+只有《Groovy》一張）、靈魂樂深度、放克／disco／acid jazz、電子次類型（techno／house／
+jungle／dubstep…，電子線適用 EP／Single／DJ-mix 例外白名單）。4 支策展 agent 已派出。
+
+主要檔案：五份 manifest（c32-folk、c34-canon、c34-jazz、c34-japan、c35-shop-reels）
+各刪 1–2 張。驗證：五份重跑 prepare gate 皆 0 error。
+
+### 2026-08-22（同日第三筆）｜dip-vinyl-shop｜C：rock 誤標修正清單 370 張（提案，未套用）
+
+承前一筆的評估，執行 C 階段。派三支 agent 逐位覆核 `roots-other` 桶的 415 位藝人，
+判定該不該摘掉 `rock` 標籤。判定紀律是**從寬**：「這張卡出現在搖滾抽卡結果裡不會突兀」
+就保留；Dylan 型民謠創作歌手、藍調搖滾、放克搖滾一律保留——摘標籤是破壞性操作。
+
+**結果**：保留 159 位、應摘除 246 位、逐卡判定（同一藝人不同卡不同判定）10 位。
+展開到卡片層級為**保留 260 張、應摘 370 張**，套用後 `rock` 由 2,944 → **2,574**。
+
+摘掉的 370 張，正確主標籤分布：hiphop 123、electronic 102、pop 60、soul 38、
+jazz 23、folk 16、world 5、classical 2、blues 1。代表性的誤標包括整批嘻哈
+（Beastie Boys、Talib Kweli、MF DOOM、Gang Starr）、電子（Caribou、Bonobo、
+Jon Hopkins、Orbital、Suzanne Ciani）、主流流行（Taylor Swift、Britney Spears、
+Rihanna、Usher）與 soul（Beyoncé、Miguel、Khalid、Janelle Monáe）。
+
+**安全處理**：6 張卡的 tags 只有 `["rock"]`，摘掉會變成無曲風，清單標為「必補」
+（Ed Rush & Optical《Wormhole》→ electronic、Lapalux《Nostalchic》→ electronic、
+Caribou《Suddenly》→ electronic、Suzanne Ciani《The Velocity of Love》→ electronic、
+Norma Jean 兩張 → folk）。另有 19 張摘後只剩不準確的殘餘標籤（例如 Beyoncé
+《BEYONCÉ》摘掉 rock 只剩 hiphop），清單標為「建議補」。套用腳本預設兩者都補。
+
+**逐卡判定的 10 位**：Prince（只保留《Chaos and Disorder》）、Bee Gees（《Odessa》
+保留、《Main Course》→ soul）、Moby、Harry Styles、Poppy、Mos Def、Kid Cudi、
+Halsey、Return to Forever、Natalia Lafourcade。
+
+**最脆弱的判定**（店主可逐條推翻）：B.B. King《Live at the Regal》判 drop→blues
+（他在搖滾名人堂，但這張是純電氣藍調）；Beastie Boys 判 drop→hiphop（《Licensed to
+Ill》是 rap-rock，可考慮改逐卡判定）；Parliament 保留而 Graham Central Station
+判 drop→soul，同為放克卻兩樣處理，這條界線最脆弱；Lana Del Rey、Lady Gaga《Joanne》
+是搖滾傾向最高的兩張 pop 卡。
+
+主要檔案：`GENRE_FIX_ROCK_20260822.json`（新增，含統計、必補／建議補清單、370 筆
+逐卡修正與理由）、`scripts/apply-genre-fix.mjs`（新增，dry-run 預設，`--write` 才寫檔；
+內建保護：任何卡片會變成無曲風就中止不寫）。
+驗證：dry-run 顯示 370 筆全數對得上卡池、補上 25 張標籤、**摘後無曲風 0 張**、
+套用後 rock = 2,574。**清單為提案，尚未套用到 `seed_cards.json`**，等店主過目。
+
+### 2026-08-22（同日第二筆）｜dip-vinyl-shop｜rock 標籤肥大評估：子曲風層規格 ＋ 誤標清理（C→B）
+
+店主指出「搖滾太多了」，要求評估能否拆成更有多樣性的分類。`rock` 2,944 張、
+1,509 位藝人，是十類裡最肥的（次高 jazz 1,620）。派三支 agent 把全部藝人分進
+8 個候選子桶取得真實分布：indie-alt 780 張（26.5%）、roots-other 630（21.4%）、
+punk-wave 423、metal 380、classic 252、psych-prog 226、dream-post 144、jrock-asia 109。
+
+**最重要的發現不是分類粒度，是標籤髒。** 三支 agent 獨立作業卻一致回報：
+`roots-other` 之所以虛胖，是因為 rock 裡混著大量根本不是搖滾的藝人——整批嘻哈
+（Beastie Boys、The Roots、Run-D.M.C.、Aesop Rock）、電子（Daft Punk、Four Tet、
+Burial、Orbital）、主流流行（Taylor Swift、Beyoncé、One Direction）、
+soul/funk（Prince、Parliament、SZA），多半是多標籤時代被額外掛上 rock。
+這些卡在「類型挑片選搖滾」時會抽出來，是實際傷體驗的 bug。
+
+**評估結論：不做頂層拆分。** 拆成新的頂層曲風代價過高：`MUSIC_MAP_PLAN.md` 明列
+曲風 ID 有六處同步點（worker `musicMapGenres()`、`music-map-widget.js` 的 GENRES、
+`music-map.html`、index／battle／roguelike 三處 `validMapGenres`）；更麻煩的是
+**音樂地圖收藏點數按曲風 id 記在每位玩家的 Firestore 文件裡，拆分要寫資料遷移**；
+且十角雷達圖在 ≤520px 已接近極限，13–14 軸會擠爆。
+
+另一個支持不拆的事實：rock 的 2,944 張裡有 1,935 張本來就掛了第二個標籤
+（rock+pop 640、rock+folk 395、rock+electronic 381…），純 rock 只有 1,009 張。
+多樣性其實已存在於多標籤，只是 UI 沒用它。
+
+**店主核定方案：先 C 後 B。**
+- **C（進行中）**：摘掉 rock 誤標。派三支 agent 逐位覆核 roots-other 的 415 位，
+  判定 keep／drop／split 與正確主標籤，產出修正清單交店主過目後才套用。
+  判定從寬——「出現在搖滾抽卡結果不突兀」就保留；摘標籤是破壞性操作，寧可保守。
+  特別注意只掛 `["rock"]` 單一標籤的卡，摘掉會變成無曲風，清單須標明補上的標籤。
+- **B（規格已完成）**：加一層子曲風，頂層十類完全不動。子曲風**不進音樂地圖、
+  不進收卡記點**，因此零遷移、零地圖改動；只用在類型挑片、唱片櫃篩選、搜尋這一側。
+  同樣機制之後可複用到 jazz（1,788 張）與 electronic（1,502 張）。
+
+主要檔案：`GENRE_SUBTAG_PLAN.md`（新增，B 的規格與落地順序、8 個子曲風定義、
+已知邊界判例）、`rock-subgenre-map.json`（新增，1,509 位藝人 → 子曲風對照表）。
+驗證：對照表筆數與 `seed_cards.json` 的 rock 藝人數一致（1,509，零遺漏）；
+加權卡數合計 2,944 與卡池 rock 標籤數相符。本筆未改動任何卡片資料。
+
+### 2026-08-22｜dip-vinyl-shop｜c-36：線上 reels 27 張補做——修正「只讀 reels.json」的漏判，簡介改用店主 IG 原文
+
+**這批是補一個我自己造成的漏洞。** c-35 做「reel 專輯入卡池」時，我只讀了 repo 裡的
+`reels.json`（3 筆）就下結論，沒有查前台實際的資料來源。店主指出「reels 不只三張」後才發現：
+`index.html` 是**先讀 Firestore `reels` 集合，讀不到才 fallback 到 `reels.json`**——線上實際有
+**36 筆**，repo 裡那份是過期的靜態備份。教訓：前台有 Firestore／靜態檔雙路徑時，
+永遠以線上集合為準，靜態檔只是 fallback，不可拿來當事實依據。
+
+同時查了 `archives` 集合（全專輯影片存檔）6 筆，5 筆與 reels 重複，多出 Photon
+《林栄一・中尾勘二・関島岳郎》一張，一併納入。
+
+**規則變更（店主 2026-08-22 核定）：店家自寫的 IG 文案作為簡介底稿。**
+這批每張店主都在 IG 寫過介紹（Firestore reel 文件的 `description` 欄，字數中位數 201），
+店主核定「可以只用 IG 的內容編輯成簡介」。因此本批 27 張**全部以店主原文為底稿改寫**，
+只做長度／禁用詞／語氣的必要編輯，不為湊字數硬加外部資料；`descSources` 為
+IG 貼文網址 ＋ 至少一個查證來源（MusicBrainz release-group／廠牌頁）。
+寫作 agent 另外查出並修正了店主原文的 6 處事實問題（都列出未默改），例如
+Elmo Hope《Informal Jazz》改題《Two Tenors》是 1969 年不是兩年後、
+菊地雅章並非「首位打進主流爵士圈的日本樂手」（秋吉敏子早於他）、
+Horace Silver 的〈Doodin'〉正確拼法是〈Doodlin'〉、
+Ron Carter 在 1977 年錄音時的資歷是 18 年不是三十多年。
+
+**管線結果**：候選 33 →身分 28 釘定／4 人工身分／1 退回（モア《モア》：MB 與外部都查無，
+店主原文亦自陳「連歌手是誰都無從得知」）→ 封面 28／試聽 23 → 組裝 27 張，
+prepare gate **0 error、7 warning**。頂點候選 3 張（hall：Coltrane《Ballads》、
+Horace Silver 同名盤；heresy：森下登喜彦《妖怪幻想》）皆未寫入 `apex_pool.json`。
+
+**這輪修掉的具體問題**
+- **Apple 試聽的商店地區要看語種，不是看批次**：本批混語種，jp 商店只配到 9/28，補跑 us
+  再多 4 張；華語盤兩者皆落空，改用 **tw** 商店才找到辛曉琪《一夜之間》。
+- **Apple 封面的非方形陷阱**：辛曉琪那張 CAA 兩層皆 404，改用 Apple 官方圖，但
+  `1000x1000bb.jpg` 回的是卡帶版直式掃圖（650×1000）。改用 **`1000x1000bf.jpg`** 變體
+  才得到 1000×1000 方形且完整保留標題（`sr` 變體會裁掉下方標題）。此變體技巧可複用。
+- **The Avalanches《We Will Always Love You》**試聽配到同名單曲（單軌），改用 25 曲專輯條目。
+- **兩張 MB 條目只掛晚期再版導致年份錯誤**：Erroll Garner《Plays Misty》（MB 2022，實際
+  1961 Mercury MG-20662）、Mal Waldron《Mal: Live 4 to 1》（MB 1989，實際 1971 東京ヤマハホール），
+  已在 `research.suggestedYear` 覆寫。
+
+**Discogs 可用性實測**：`api.discogs.com` 在遠端環境**通**（免 token 可查 release／search），
+但 `www.discogs.com` 與圖片 CDN `i.discogs.com` 皆被擋。因此 Discogs 只能用來查證版本、
+編號與年份寫進備註，**不能當封面來源**（規則要求封面須實測 2xx／3xx）。
+
+**留給店主後台上傳封面的 4 張**（有身分、有簡介，缺封面故未上架）：
+Mal Waldron《Mal: Live 4 to 1》、Kenny Drew & Red Mitchell《洞氤》、
+The Trinity《Smile》（RJL-8012）、林栄一《Photon》（OFF NOTE on-30）。
+另 Attica Blues 同名盤因「自我同名卡必須有固定試聽」規則退回。
+
+主要檔案：`onboarding-manifest-c36-reels-20260822.json`（新增，27 張）。
+驗證：`node scripts/verify-album-onboarding.mjs onboarding-manifest-c36-reels-20260822.json --prepare`
+→ 0 error／7 warning（6 筆 UPC 查無、1 筆人工身分提示）。未寫任何線上資料，`published` 全 false。
+
+### 2026-08-21（同日第三筆）｜dip-vinyl-shop｜合輯規則變更＋c-33／c-34／c-35 三批 554 張：卡池從「樂評正典」轉向「唱片行實際庫存」
+
+店主人在日本，邊逛二手唱片行邊用網站搜尋卡池，**命中率極低（只真的找到過一次 The Band）**，
+並指出未來想做「逛唱片行時用網頁即時辨識手上這張是什麼」。同時核定兩件事：
+重要合輯／精選集開放收錄（不用再逐張裁定）、商品頁與 reels 的專輯也要入卡池。
+三批全部只到 prepare gate，**線上資料一律未寫**。
+
+| 批次 | 張數 | prepare gate |
+|---|---:|---|
+| c-33 重要合輯 | 60 | 0 error / 8 warning |
+| c-34 唱片行正典 | 187 | 0 error / 4 warning |
+| c-34 日本店頭盤 | 149 | 0 error / 10 warning |
+| c-34 爵士店頭盤 | 132 | 0 error / 3 warning |
+| c-35 店內商品／IG reel | 26 | 0 error / 4 warning |
+
+九份 manifest 合計 1,760 張；全部上架後卡池從 8,948 成長到約 10,708。
+hall 候選累計 88 張，全部未寫入 `apex_pool.json`。
+
+## 規則變更：重要合輯／精選集全曲風開放（店主核定）
+
+`ALBUM_ONBOARDING.md` 新增 §5.6、§1 硬規則改寫、§5.5 白名單縮回只管 EP／Single／DJ-mix；
+`scripts/verify-album-onboarding.mjs` 接受 `releaseType='Compilation'`，不需 `genreException`，
+但強制 `exceptionReason` ≥12 字與 `exceptionEvidenceUrls` ≥2 個 HTTPS。
+舊規則擋掉的正典因此收得回來：戰前藍調的權威結集、Chess 單曲藝人精選、Éthiopiques 系列、
+Alan Lomax 田野錄音、《Anthology of American Folk Music》、Franco／E.T. Mensah 等非洲回顧輯。
+
+## 判準換了：不是樂評正典，是「箱子裡會一直出現什麼」
+
+c-34 三線策展的指示不是找名盤（那些池裡多半有了），是找二手店架上實際的庫存。
+去重時暴露的缺口很說明問題：**Phil Collins、Lionel Richie、Cyndi Lauper、George Benson、
+Helen Merrill、MJQ、Bud Powell 整人整團掛零**；日本線更誇張——サザン、ユーミン（松任谷名義）、
+中森明菜、松田聖子、山口百恵、沢田研二、オフコース、吉田拓郎、矢沢永吉、BOØWY、尾崎豊、
+アイドル全線、アニメサントラ全線，全部零張。
+
+## 四個值得記住的教訓
+
+**1. 去重名冊的格式混用讓比對整段失效。** `pool-all-keys.txt` 裡 seed 行是
+`Artist | Album | Year`、後來追加的是小寫 `artist|album`，直接字串比對只擋得到後者。
+改成一律 `norm()` 正規化比對（`pipeline/pool-keys.mjs`，讀 seed＋apex＋所有 manifest），
+當場抓出 8 張已在池內的候選。**日文藝人另有漢字／羅馬拼音雙寫法**（池內是 `Miki Matsubara`，
+候選寫「松原みき」），正規化也擋不住，只能逐一 grep 兩種寫法。
+
+**2. Apple 試聽要挑對商店。** 原本一律 `country=us`：日本盤 120 張只配到 7 張。
+改 `country=jp` 後配到 85 張，店內商品批也從 13/28 提升到 22/28。腳本已加商店參數。
+
+**3. MusicBrainz 的自動釘定會挑到「同名但錯的碟」，而且錯得很有規律。**
+這輪由寫作 agent 逐張複查抓到 11 筆：釘到現場盤（Toto、Billy Idol、Stray Cats、
+RCサクセション）、釘到只含廉價再版或 bootleg 的重複 RG（Queen《Greatest Hits》只有一筆
+2008 俄羅斯盜版、Count Basie《April in Paris》只有 2000 年 Duoline 拼盤、Nat King Cole
+與 Art Farmer 釘到復刻專用 RG）、釘到續作（Boss Tenors 配到 in Orbit!）、
+釘到重混盤（宮川泰《宇宙戦艦ヤマト》2024mix、高橋幸宏《Saravah! Remix》）。
+**`first-release-date` 明顯偏晚就是警訊**——輸入檔上寫著 2006、2024 的那幾筆全中。
+封面同理：CAA 的 RG 預設 front 可能是別版（Bud Powell 給十吋盤、Duke Ellington 給日本盤、
+Ella in Berlin 給 1993 增補版），要退到 release 層挑。
+
+**4. 日文題名在 MB 上常常只活在 release 層。** RG 題名採英文或羅馬字的例子：
+坂本龍一「左うでの夢」→ Left Handed Dream、高橋幸宏「音楽殺人」→ Murdered by the Music、
+ゴダイゴ「西遊記」→ Magic Monkey、冨田勲「展覧会の絵」→ Pictures at an Exhibition。
+artist-credit 也混用漢字／假名／羅馬字／舊字體（浜↔濱、当↔當、大澤↔大沢）。
+用日文題名做 Lucene 查詢一律零命中，**日本盤的預設流程要改成 artist browse 掃目錄**。
+
+## 商品與 reel 的資料來源
+
+Firestore 的 `items`／`reels` 集合在 `firestore.rules` 是 `allow read: if true`，
+用 REST API 加 `index.html` 內建的 web key 就能純讀取（不需認證、不寫任何東西）。
+c-35 的 29 張候選就是這樣抓的。**前端還有一件事沒做**（研究層不碰）：`index.html`
+目前把 reel 與店內商品硬排除在卡片邏輯外（`result.type !== 'reel' && result.type !== 'stock'`），
+這批上架後可以改成去卡池找對應的正式卡。
+
+## 檔案
+
+新增五份 manifest；改 `ALBUM_ONBOARDING.md`、`scripts/verify-album-onboarding.mjs`、
+`ONBOARDING_HANDOFF_20260821.md`。分支 `claude/batch-c29-album-onboarding-oolzb1`、PR #2。
+**驗證**：五份 manifest 各自 prepare gate 0 error；既有四份重跑仍 0 error；
+Compilation 路徑以合成案例雙向自測（缺舉證 → 2 error，補齊 → 0 error）。
+
+### 2026-08-21（同日第二筆）｜dip-vinyl-shop｜c-30／c-31／c-32 三線共 1,191 張研究層完成，四階段卡池平衡目標一次補到位
+
+接續 c-29，店主指示「一路把所有缺少的專輯都做完」。三批全部只到 prepare gate，
+**線上資料一律未寫**（KV、Firestore、`seed_cards.json`、`apex_pool.json` 都沒動）。
+
+| 批次 | 張數 | prepare gate |
+|---|---:|---|
+| c-30 藍調擴充 | 326 | 0 error / 44 warning |
+| c-31 世界音樂 | 530 | 0 error / 64 warning |
+| c-32 民謠 | 335 | 0 error / 25 warning |
+
+**四階段目標幾乎精準達成**（含 c-29 的 15 張，manifest 合計 1,206）：
+blues 158 → **499**（目標 500）、world 301 → **831**（目標 800）、folk 661 → **996**（目標 1,000）。
+封面 CAA 1,170／Apple 官方圖 36；固定試聽 Apple ready 881／unavailable 325；
+**hall 候選合計 60 張，全部未寫入 `apex_pool.json`，等店主裁定**。
+
+## 做法：把 c-29 的單批流程工業化
+
+`scratchpad/pipeline/` 下建了一套可重跑的腳本鏈：`pipe-identity`（MB 釘 rgMbid，自動判定
+score≥95＋Album＋非 Compilation＋藝人吻合才 auto）→ `pipe-identity-retry`（放寬重查）→
+`pipe-cover-upc` → `pipe-cover-rescue`（RG 無圖時逐 release 試）→ `pipe-cover-apple-rescue`
+（CAA 兩層都沒圖時改用已通過配對的 Apple 條目官方圖）→ `pipe-preview` → `pipe-cover-download`
+→ `pipe-writer-inputs`（切 chunk）→ `pipe-assemble`（組 manifest）。
+機械步驟用腳本批跑，**判斷步驟派 agent**：14 支策展 agent 建候選（1,337 筆去重後）、
+2 支身分裁定 agent 處理 MB 查不到的 138 筆、87 支寫作 agent 逐張查證並寫三軸／頂點／簡介。
+
+## 三個系統性錯誤（都值得記住）
+
+**一、卡池的完整名冊是 seed ＋ apex 兩份。** 策展 agent 只比對 `seed_cards.json`，
+結果民謠批有 **24 張已經是王牌卡**（Dylan《Freewheelin'》、Joni《Blue》、Nick Drake 三張、
+Bon Iver、Sufjan、Fleet Foxes…），藍調批 1 張（Janis Joplin《Pearl》）。
+全靠 prepare gate 擋下。已把這道檢查內建進 `pipe-assemble`。
+
+**二、封面檔名的 slug 把中日韓字元全刪光。** `[^a-z0-9]` 的清洗規則讓所有 CJK 標題塌成
+同一個檔名，民謠批 48 張共用一個檔——**寫作 agent 的封面目視等於看錯圖**。
+四支 agent 各自獨立發現並改用 `rgMbid` 直取 CAA 驗圖（結論是封面本身都正確）。
+規則已改成保留 CJK 字元並重新下載全部封面。
+
+**三、Apple 試聽最常見的錯配是「同名選輯／重錄版／單曲」**，戰前與非西方目錄尤其嚴重：
+Furry Lewis 配到 1927–29 戰前錄音、Khaled 配到 DJ Khaled 2021 專輯、
+Gary Clark Jr. 配到脫口秀重混單曲、Sufjan 配到現場版、Arlo Guthrie 配到 1996 重錄版。
+派工詞改成要求寫作 agent 在 JSON 標 `previewVerdict`，配錯的自動降級 `unavailable`
+而非留可疑網址。
+
+## 十一張換過 release-group（都是寫作 agent 查證時抓到的）
+
+The Band 同名盤原釘到放克團 The Band AKA 的 1981 同名專輯、Arlo Guthrie《Alice's Restaurant》
+原釘到 1969 電影原聲帶、Ali Farka Touré 首張原釘到 1988 Sonodisc 綠盤、
+Fabulous Thunderbirds 首張原釘到 2009 同名專輯、Le Mystère des Voix Bulgares 原釘到 Volume 2、
+Exuma 首作原釘到《Exuma II》、Theodorakis《Axion Esti》原釘到 2021 三作併輯、
+Irakere 原釘到 1982 古巴國內盤、Adoniran Barbosa 原釘到 1975 同名盤、
+Bothy Band 與 Misty in Roots 各原釘到重發 RG。每張的新 RG 與封面都重新實測過。
+
+**主要檔案**：`onboarding-manifest-c30-blues-20260821.json`、`-c31-world-`、`-c32-folk-`（皆新增）；
+`ONBOARDING_HANDOFF_20260821.md`（更新，含三批細節與回本機的推送步驟）。
+**驗證**：三份 manifest 各自 `verify-album-onboarding.mjs` prepare gate 0 error。
+**下一步（本機）**：三軸重跑 `/album-rating` 覆核、pearl 判定補 listeners、60 張 hall 候選裁定、
+年份用 Discogs 複核、325 張 unavailable 試聽補 YouTube。細節見交接單第四節。
+
+### 2026-08-21｜dip-vinyl-shop｜c-29 藍調第一批 15 張研究層完成（遠端工作階段，只到 prepare gate）
+
+店主核定 c-29 開藍調線——實測卡池 blues 158 張是 `POOL_BALANCE_PLAN.md` 目標（500）的最大缺口
+（classical 1,051 已達標；world 301/800、folk 661/1,000 排後）。本批 15 張走「大牌先補代表作」：
+At Newport 1960、Blues Breakers with Eric Clapton、West Side Soul、Father of Folk Blues、
+Two Steps from the Blues、Big Mama Thornton with the Muddy Waters Blues Band、Gospel Train、
+Blues from the Gutter、Hound Dog Taylor and the HouseRockers、Ice Pickin'、Otis Spann Is the Blues、
+Second Winter、Strong Persuader、Kingfish、T-Bone Blues。與現池、apex_pool 皆零撞名
+（Etta James《At Last!》已在池，未列入）。
+
+- **身分 15/15 釘到 rgMbid**。改名路線一例：Thornton 那張在 MB 的建檔名是
+  《Big Mama Thornton and the Chicago Blues Band》，靠廠牌目錄號（Arhoolie F-1032）＋曲目
+  逐一比對確認同碟。**封面救援兩例**：T-Bone Blues 的 RG 層封面是 BnF Collection 再版通用圖、
+  Son House 是電台宣傳盤掃圖（印 Not for Resale），皆改用 release 層乾淨原封
+  （1959 mono／2012 再版）。15 張封面全部下載目視核對。
+- **頂點候選 3 張（hall，待店主裁定，均未寫入 apex_pool）**：At Newport 1960（RS #348、
+  「第一張藍調現場專輯」）、Blues Breakers（RS #195）、Two Steps from the Blues（RS #217）。
+  池內同級的 Live at the Regal 目前是普卡，採納與否請店主權衡一致性。
+- **環境限制（重要）**：遠端 sandbox 的網路政策擋 workers.dev 與 last.fm（CONNECT 403），
+  `/album-rating` 打不到——**三軸改人工錨點評定、listeners 全 null**（各卡 `ratings.note` 有記），
+  店主回本機請重跑 API 覆核。Discogs／AllMusic 也被擋：West Side Soul 年份
+  （MB 1967 vs Wikipedia 1968）與 Thornton 發行年（1966 或 1967）留待 Discogs 複核。
+- **試聽 15/15 Apple ready**（previewUrl 實測 200，collectionId 記進 manifest）；三張特別改抓
+  標準版（Mayall 非 Deluxe、Tharpe 非 Expanded、Winter 非 Legacy）；Son House 的 Apple 條目是
+  《The Complete 1965 Sessions》（原盤九曲全在內，首曲即 A1，manifest 有註）。
+- **檔案**：`onboarding-manifest-c29-blues-20260821.json`（新）。`seed_cards.json`、
+  `apex_pool.json`、KV、Firestore 全未動，published 全 false——KV 與 Firestore 由店主本機收尾。
+- **驗證**：`node scripts/verify-album-onboarding.mjs` prepare gate **0 error、1 warning**
+  （Thornton 的 Arhoolie 老黑膠查無條碼，規則允許留空）。
+- 分支 `claude/batch-c29-album-onboarding-oolzb1` 開 draft PR；上架寫入與 published gate 留本機。
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜og-random.png 重畫：填色模式錯了，不是字型錯
 
 店主看到第一版說「字體完全搞錯了，要跟心情選歌一樣」。
