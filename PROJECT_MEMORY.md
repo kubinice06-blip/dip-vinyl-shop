@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-22（同日第四筆）｜dip-vinyl-shop｜跨 manifest 重複卡清除 6 張＋開 c-37～c-40 四線擴充
+
+開新批次前重整去重名冊（併入 c-33～c-36 的鍵，10,154 → 10,735）時，用 rgMbid 交叉掃描
+十份 manifest，抓到 **6 組跨批次重複**——同一張碟被不同批次用不同掛名寫法收了兩次，
+artist+album 字串去重擋不住（「Hanggai」vs「杭蓋 Hanggai」、「Black Eyed Peas」vs
+「The Black Eyed Peas」、「當山ひとみ」vs「当山ひとみ」、「菊地雅章クインテット」vs
+「Masabumi Kikuchi Quintet」）。教訓：**跨批次去重必須用 rgMbid，不能只靠字串鍵**；
+組裝器內已有單批 rgMbid 去重，但跨 manifest 沒有人查，此次補上人工掃描，日後新批
+組裝前應把既有 manifest 的 rgMbid 也納入 emittedRgs。
+
+逐組裁定（留品質好的那份）：Introducing Hanggai 留 c31（通行拼法 Hanggai、世界線）；
+Monkey Business 留 c35（The Black Eyed Peas 正確掛名）；We Three 留 c35（試聽 ready）；
+Sexy Robot 留 c35（当山ひとみ正確寫法＋ready）；End for the Beginning 留 c36
+（ready＋店主 IG 文案）；Crossings 留 c36（MB 有兩筆重複 RG，928be0b1 掛名與封面正確，
+c35 的 260a7106 CAA 無圖）。刪除後五份 manifest 重跑 prepare gate 全部 0 error，
+總數 1,787 → **1,781**。
+
+同時依店主指示開 **c-37～c-40 四線擴充**：爵士大師目錄深度（實測 Red Garland 在 seed
+只有《Groovy》一張）、靈魂樂深度、放克／disco／acid jazz、電子次類型（techno／house／
+jungle／dubstep…，電子線適用 EP／Single／DJ-mix 例外白名單）。4 支策展 agent 已派出。
+
+主要檔案：五份 manifest（c32-folk、c34-canon、c34-jazz、c34-japan、c35-shop-reels）
+各刪 1–2 張。驗證：五份重跑 prepare gate 皆 0 error。
+
 ### 2026-08-22（同日第三筆）｜dip-vinyl-shop｜C：rock 誤標修正清單 370 張（提案，未套用）
 
 承前一筆的評估，執行 C 階段。派三支 agent 逐位覆核 `roots-other` 桶的 415 位藝人，
