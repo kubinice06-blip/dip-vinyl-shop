@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-22（同日第二筆）｜dip-vinyl-shop｜rock 標籤肥大評估：子曲風層規格 ＋ 誤標清理（C→B）
+
+店主指出「搖滾太多了」，要求評估能否拆成更有多樣性的分類。`rock` 2,944 張、
+1,509 位藝人，是十類裡最肥的（次高 jazz 1,620）。派三支 agent 把全部藝人分進
+8 個候選子桶取得真實分布：indie-alt 780 張（26.5%）、roots-other 630（21.4%）、
+punk-wave 423、metal 380、classic 252、psych-prog 226、dream-post 144、jrock-asia 109。
+
+**最重要的發現不是分類粒度，是標籤髒。** 三支 agent 獨立作業卻一致回報：
+`roots-other` 之所以虛胖，是因為 rock 裡混著大量根本不是搖滾的藝人——整批嘻哈
+（Beastie Boys、The Roots、Run-D.M.C.、Aesop Rock）、電子（Daft Punk、Four Tet、
+Burial、Orbital）、主流流行（Taylor Swift、Beyoncé、One Direction）、
+soul/funk（Prince、Parliament、SZA），多半是多標籤時代被額外掛上 rock。
+這些卡在「類型挑片選搖滾」時會抽出來，是實際傷體驗的 bug。
+
+**評估結論：不做頂層拆分。** 拆成新的頂層曲風代價過高：`MUSIC_MAP_PLAN.md` 明列
+曲風 ID 有六處同步點（worker `musicMapGenres()`、`music-map-widget.js` 的 GENRES、
+`music-map.html`、index／battle／roguelike 三處 `validMapGenres`）；更麻煩的是
+**音樂地圖收藏點數按曲風 id 記在每位玩家的 Firestore 文件裡，拆分要寫資料遷移**；
+且十角雷達圖在 ≤520px 已接近極限，13–14 軸會擠爆。
+
+另一個支持不拆的事實：rock 的 2,944 張裡有 1,935 張本來就掛了第二個標籤
+（rock+pop 640、rock+folk 395、rock+electronic 381…），純 rock 只有 1,009 張。
+多樣性其實已存在於多標籤，只是 UI 沒用它。
+
+**店主核定方案：先 C 後 B。**
+- **C（進行中）**：摘掉 rock 誤標。派三支 agent 逐位覆核 roots-other 的 415 位，
+  判定 keep／drop／split 與正確主標籤，產出修正清單交店主過目後才套用。
+  判定從寬——「出現在搖滾抽卡結果不突兀」就保留；摘標籤是破壞性操作，寧可保守。
+  特別注意只掛 `["rock"]` 單一標籤的卡，摘掉會變成無曲風，清單須標明補上的標籤。
+- **B（規格已完成）**：加一層子曲風，頂層十類完全不動。子曲風**不進音樂地圖、
+  不進收卡記點**，因此零遷移、零地圖改動；只用在類型挑片、唱片櫃篩選、搜尋這一側。
+  同樣機制之後可複用到 jazz（1,788 張）與 electronic（1,502 張）。
+
+主要檔案：`GENRE_SUBTAG_PLAN.md`（新增，B 的規格與落地順序、8 個子曲風定義、
+已知邊界判例）、`rock-subgenre-map.json`（新增，1,509 位藝人 → 子曲風對照表）。
+驗證：對照表筆數與 `seed_cards.json` 的 rock 藝人數一致（1,509，零遺漏）；
+加權卡數合計 2,944 與卡池 rock 標籤數相符。本筆未改動任何卡片資料。
+
 ### 2026-08-22｜dip-vinyl-shop｜c-36：線上 reels 27 張補做——修正「只讀 reels.json」的漏判，簡介改用店主 IG 原文
 
 **這批是補一個我自己造成的漏洞。** c-35 做「reel 專輯入卡池」時，我只讀了 repo 裡的
