@@ -415,3 +415,65 @@ Alien Weaponry《Tū》（實為 groove metal，掛 world 的理由是全碟毛�
 三軸重跑 `/album-rating`、pearl 判定（需 listeners）、60 張 hall 候選裁定、
 年份用 Discogs 複核、325 張 unavailable 試聽補 YouTube、以及整個上架寫入
 （`card_catalog` → KV → `album_overrides` → `seed_cards.json`）。詳見第三、四節。
+
+---
+
+## 八、c-36 追加批次（2026-08-22）：線上 reels 27 張
+
+### 8-1 為什麼有這一批
+
+c-35 做「reel 專輯入卡池」時只讀了 repo 裡的 `reels.json`（3 筆），漏掉線上實際資料。
+`index.html` 是**先讀 Firestore `reels` 集合、讀不到才 fallback 到 `reels.json`**，
+線上有 **36 筆**，repo 那份是過期靜態備份。你指出後補做，就是這一批。
+另從 `archives` 集合（全專輯影片存檔）多收一張 Photon《林栄一・中尾勘二・関島岳郎》。
+
+manifest：`onboarding-manifest-c36-reels-20260822.json`，27 張，prepare gate 0 error / 7 warning。
+推送順序與其他批次完全相同（見第三節），沒有任何特殊步驟。
+
+### 8-2 簡介改用你的 IG 原文（你 2026-08-22 核定）
+
+27 張**全部以你在 IG 寫的介紹為底稿**改寫，只做長度（80–280 字）、禁用詞、
+語氣的必要編輯，沒有為了湊字數硬加外部資料。`description.sourceUrls` 第一個一律是
+該則 reel 的 IG 網址，第二個是查證來源。
+
+寫作 agent 查出你原文的 **6 處事實問題**，都已修正並列出（沒有默默改）：
+
+| 專輯 | 原文 | 查證結果 |
+|---|---|---|
+| Elmo Hope《Informal Jazz》 | 「兩年後改名《Two Tenors》」 | 正式改題重發是 1969 年（13 年後） |
+| 同上 | 「二十年後因日本樂迷重新發行」 | 查不到具體依據，改為「多年後靠復刻與再評價」 |
+| 菊地雅章《End For The Beginning》 | 「首位打進主流爵士圈的日本樂手」 | 不成立，秋吉敏子 1950 年代已赴美錄音 |
+| 同上 | 「即將赴美加入 Elvin Jones 樂團」 | 1972 年 1 月就已加入並錄《Hollow Out》，1973 年才移居 |
+| Horace Silver 同名盤 | 〈Doodin'〉 | 正確拼法〈Doodlin'〉（BLP 1518 第 8 軌） |
+| Crossings | 「三人都已耕耘爵士壇三十多年」 | Ron Carter 當時約 18 年資歷 |
+
+另有幾處**查不到反證也查不到佐證、原樣保留**的說法，你自己覆核：
+Arms and Sleepers「父親喪生」、金田一「2020 年限量 300 張螢光藍」、
+Estelle Perrault「第三張專輯」與中文名「張婷雅」、Cannibale「小鎮 300 人」。
+
+### 8-3 要你在後台上傳封面的 4 張
+
+這四張**身分與簡介都做好了，只缺封面**（CAA 的 release-group 與 release 兩層皆無圖、
+Apple 也沒有條目），依規則不硬塞圖，所以沒進 manifest。你補圖後即可上架：
+
+| 專輯 | 版本資訊（用 Discogs API 查證） |
+|---|---|
+| Mal Waldron《Mal: Live 4 to 1》 | 原盤 1971 日本 Philips FX-8513〜4，東京ヤマハホール現場；1989 再版 EJD-3037 |
+| Kenny Drew & Red Mitchell《洞氤》 | 日本現場盤，別名 Kenny Drew Meets Red Mitchell at 歪珠亭 |
+| The Trinity《Smile》 | RJL-8012 |
+| 林栄一《Photon》 | OFF NOTE on-30，林栄一・中尾勘二・関島岳郎 |
+
+另 **Attica Blues 同名盤**（1997 Mo' Wax，非 Archie Shepp）因「自我同名卡必須有固定試聽」
+規則退回——Apple 全目錄只有《Test. Don't Test》。**モア《モア》**則是 MB 與外部都查無，
+你自己的文案也寫「連歌手是誰都無從得知」，無法確認唯一身分，退回。
+
+### 8-4 這輪學到、之後可複用的三件事
+
+1. **Apple 試聽的商店地區要看語種，不是看批次**：本批混語種，jp 只配到 9/28，
+   補跑 us 多 4 張，華語盤兩者皆落空、改 **tw** 才找到辛曉琪。
+2. **Apple 封面的非方形陷阱**：`1000x1000bb.jpg` 回的是原始比例（辛曉琪那張是卡帶版
+   直式 650×1000）。改用 **`1000x1000bf.jpg`** 得到方形且完整保留封面文字；
+   `sr` 變體是裁切，會切掉標題。
+3. **Discogs 可用性**：`api.discogs.com` 在雲端環境通（免 token），
+   但 `www.discogs.com` 與圖片 CDN `i.discogs.com` 被擋。所以 Discogs 只能查版本、
+   編號、年份寫進備註，**不能當封面來源**。你在本機沒這個限制。

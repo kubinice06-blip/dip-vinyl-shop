@@ -1,5 +1,56 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-22｜dip-vinyl-shop｜c-36：線上 reels 27 張補做——修正「只讀 reels.json」的漏判，簡介改用店主 IG 原文
+
+**這批是補一個我自己造成的漏洞。** c-35 做「reel 專輯入卡池」時，我只讀了 repo 裡的
+`reels.json`（3 筆）就下結論，沒有查前台實際的資料來源。店主指出「reels 不只三張」後才發現：
+`index.html` 是**先讀 Firestore `reels` 集合，讀不到才 fallback 到 `reels.json`**——線上實際有
+**36 筆**，repo 裡那份是過期的靜態備份。教訓：前台有 Firestore／靜態檔雙路徑時，
+永遠以線上集合為準，靜態檔只是 fallback，不可拿來當事實依據。
+
+同時查了 `archives` 集合（全專輯影片存檔）6 筆，5 筆與 reels 重複，多出 Photon
+《林栄一・中尾勘二・関島岳郎》一張，一併納入。
+
+**規則變更（店主 2026-08-22 核定）：店家自寫的 IG 文案作為簡介底稿。**
+這批每張店主都在 IG 寫過介紹（Firestore reel 文件的 `description` 欄，字數中位數 201），
+店主核定「可以只用 IG 的內容編輯成簡介」。因此本批 27 張**全部以店主原文為底稿改寫**，
+只做長度／禁用詞／語氣的必要編輯，不為湊字數硬加外部資料；`descSources` 為
+IG 貼文網址 ＋ 至少一個查證來源（MusicBrainz release-group／廠牌頁）。
+寫作 agent 另外查出並修正了店主原文的 6 處事實問題（都列出未默改），例如
+Elmo Hope《Informal Jazz》改題《Two Tenors》是 1969 年不是兩年後、
+菊地雅章並非「首位打進主流爵士圈的日本樂手」（秋吉敏子早於他）、
+Horace Silver 的〈Doodin'〉正確拼法是〈Doodlin'〉、
+Ron Carter 在 1977 年錄音時的資歷是 18 年不是三十多年。
+
+**管線結果**：候選 33 →身分 28 釘定／4 人工身分／1 退回（モア《モア》：MB 與外部都查無，
+店主原文亦自陳「連歌手是誰都無從得知」）→ 封面 28／試聽 23 → 組裝 27 張，
+prepare gate **0 error、7 warning**。頂點候選 3 張（hall：Coltrane《Ballads》、
+Horace Silver 同名盤；heresy：森下登喜彦《妖怪幻想》）皆未寫入 `apex_pool.json`。
+
+**這輪修掉的具體問題**
+- **Apple 試聽的商店地區要看語種，不是看批次**：本批混語種，jp 商店只配到 9/28，補跑 us
+  再多 4 張；華語盤兩者皆落空，改用 **tw** 商店才找到辛曉琪《一夜之間》。
+- **Apple 封面的非方形陷阱**：辛曉琪那張 CAA 兩層皆 404，改用 Apple 官方圖，但
+  `1000x1000bb.jpg` 回的是卡帶版直式掃圖（650×1000）。改用 **`1000x1000bf.jpg`** 變體
+  才得到 1000×1000 方形且完整保留標題（`sr` 變體會裁掉下方標題）。此變體技巧可複用。
+- **The Avalanches《We Will Always Love You》**試聽配到同名單曲（單軌），改用 25 曲專輯條目。
+- **兩張 MB 條目只掛晚期再版導致年份錯誤**：Erroll Garner《Plays Misty》（MB 2022，實際
+  1961 Mercury MG-20662）、Mal Waldron《Mal: Live 4 to 1》（MB 1989，實際 1971 東京ヤマハホール），
+  已在 `research.suggestedYear` 覆寫。
+
+**Discogs 可用性實測**：`api.discogs.com` 在遠端環境**通**（免 token 可查 release／search），
+但 `www.discogs.com` 與圖片 CDN `i.discogs.com` 皆被擋。因此 Discogs 只能用來查證版本、
+編號與年份寫進備註，**不能當封面來源**（規則要求封面須實測 2xx／3xx）。
+
+**留給店主後台上傳封面的 4 張**（有身分、有簡介，缺封面故未上架）：
+Mal Waldron《Mal: Live 4 to 1》、Kenny Drew & Red Mitchell《洞氤》、
+The Trinity《Smile》（RJL-8012）、林栄一《Photon》（OFF NOTE on-30）。
+另 Attica Blues 同名盤因「自我同名卡必須有固定試聽」規則退回。
+
+主要檔案：`onboarding-manifest-c36-reels-20260822.json`（新增，27 張）。
+驗證：`node scripts/verify-album-onboarding.mjs onboarding-manifest-c36-reels-20260822.json --prepare`
+→ 0 error／7 warning（6 筆 UPC 查無、1 筆人工身分提示）。未寫任何線上資料，`published` 全 false。
+
 ### 2026-08-21（同日第三筆）｜dip-vinyl-shop｜合輯規則變更＋c-33／c-34／c-35 三批 554 張：卡池從「樂評正典」轉向「唱片行實際庫存」
 
 店主人在日本，邊逛二手唱片行邊用網站搜尋卡池，**命中率極低（只真的找到過一次 The Band）**，
