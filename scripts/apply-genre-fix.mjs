@@ -43,7 +43,9 @@ const rockAfter = seed.filter(r => (r[5] || []).includes('rock')).length;
 console.log(`套用後 rock 標籤數: ${rockAfter}`);
 
 if (write) {
-  fs.writeFileSync(`${ROOT}/seed_cards.json`, JSON.stringify(seed) + '\n');
+  // 保持原檔「一行一張卡」的格式,否則 diff 會變成整檔重寫
+  const body = seed.map(r => JSON.stringify(r)).join(',\n');
+  fs.writeFileSync(`${ROOT}/seed_cards.json`, `[${body}]\n`);
   console.log('已寫入 seed_cards.json');
 } else {
   console.log('(dry-run,未寫檔;確認無誤後加 --write)');
