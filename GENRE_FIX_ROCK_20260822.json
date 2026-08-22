@@ -1,0 +1,5467 @@
+{
+ "產出日期": "2026-08-22",
+ "說明": "rock 標籤誤標修正清單。三支 agent 逐位覆核 roots-other 的 415 位藝人後合併,判定從寬(拿不定就保留 rock)。本檔僅為提案,尚未套用到 seed_cards.json。",
+ "統計": {
+  "覆核藝人": 415,
+  "保留rock": 159,
+  "應摘除": 246,
+  "逐卡判定": 10,
+  "保留的卡": 260,
+  "應摘rock的卡": 370,
+  "摘後無曲風需必補": 6,
+  "建議一併補標籤": 19
+ },
+ "套用後預估": {
+  "rock標籤數": 2574
+ },
+ "必補標籤": [
+  {
+   "artist": "Ed Rush & Optical",
+   "album": "Wormhole",
+   "現有": [
+    "rock"
+   ],
+   "必補": "electronic"
+  },
+  {
+   "artist": "Lapalux",
+   "album": "Nostalchic",
+   "現有": [
+    "rock"
+   ],
+   "必補": "electronic"
+  },
+  {
+   "artist": "Norma Jean",
+   "album": "Please Don't Hurt Me",
+   "現有": [
+    "rock"
+   ],
+   "必補": "folk"
+  },
+  {
+   "artist": "Norma Jean",
+   "album": "Norma Jean",
+   "現有": [
+    "rock"
+   ],
+   "必補": "folk"
+  },
+  {
+   "artist": "Caribou",
+   "album": "Suddenly",
+   "現有": [
+    "rock"
+   ],
+   "必補": "electronic"
+  },
+  {
+   "artist": "Suzanne Ciani",
+   "album": "The Velocity of Love",
+   "現有": [
+    "rock"
+   ],
+   "必補": "electronic"
+  }
+ ],
+ "建議補標籤": [
+  {
+   "artist": "The Carpenters",
+   "album": "Close to You",
+   "現有": [
+    "rock",
+    "folk"
+   ],
+   "摘後": [
+    "folk"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Blood Orange",
+   "album": "Freetown Sound",
+   "現有": [
+    "rock",
+    "hiphop"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "soul"
+  },
+  {
+   "artist": "Conan Gray",
+   "album": "Superache",
+   "現有": [
+    "rock",
+    "folk"
+   ],
+   "摘後": [
+    "folk"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Little Dragon",
+   "album": "Slugs of Love",
+   "現有": [
+    "pop",
+    "rock"
+   ],
+   "摘後": [
+    "pop"
+   ],
+   "建議補": "soul"
+  },
+  {
+   "artist": "Washed Out",
+   "album": "Paracosm",
+   "現有": [
+    "rock",
+    "pop"
+   ],
+   "摘後": [
+    "pop"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "Lady Gaga",
+   "album": "Joanne",
+   "現有": [
+    "rock",
+    "folk"
+   ],
+   "摘後": [
+    "folk"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Beyoncé",
+   "album": "BEYONCÉ",
+   "現有": [
+    "hiphop",
+    "rock"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "soul"
+  },
+  {
+   "artist": "Trentemøller",
+   "album": "Memoria",
+   "現有": [
+    "rock",
+    "pop"
+   ],
+   "摘後": [
+    "pop"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "M.I.A.",
+   "album": "M.I.7",
+   "現有": [
+    "hiphop",
+    "rock"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "Britney Spears",
+   "album": "Glory",
+   "現有": [
+    "rock",
+    "hiphop"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Halsey",
+   "album": "Manic",
+   "現有": [
+    "rock",
+    "hiphop"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Seu Jorge",
+   "album": "Ana E Jorge",
+   "現有": [
+    "jazz",
+    "rock"
+   ],
+   "摘後": [
+    "jazz"
+   ],
+   "建議補": "world"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Chemtrails Over the Country Club",
+   "現有": [
+    "folk",
+    "rock"
+   ],
+   "摘後": [
+    "folk"
+   ],
+   "建議補": "pop"
+  },
+  {
+   "artist": "Mr. Oizo",
+   "album": "Rubber",
+   "現有": [
+    "rock",
+    "soul"
+   ],
+   "摘後": [
+    "soul"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "The Weeknd",
+   "album": "Thursday",
+   "現有": [
+    "rock",
+    "hiphop"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "The Weeknd",
+   "album": "Echoes of Silence",
+   "現有": [
+    "rock",
+    "hiphop"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "electronic"
+  },
+  {
+   "artist": "Miguel",
+   "album": "Kaleidoscope Dream",
+   "現有": [
+    "hiphop",
+    "rock"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "soul"
+  },
+  {
+   "artist": "Khalid",
+   "album": "American Teen",
+   "現有": [
+    "hiphop",
+    "rock"
+   ],
+   "摘後": [
+    "hiphop"
+   ],
+   "建議補": "soul"
+  },
+  {
+   "artist": "Average White Band",
+   "album": "Soul Searching",
+   "現有": [
+    "jazz",
+    "rock"
+   ],
+   "摘後": [
+    "jazz"
+   ],
+   "建議補": "soul"
+  }
+ ],
+ "逐卡修正": [
+  {
+   "artist": "Glen Campbell",
+   "album": "Wichita Lineman",
+   "year": 1968,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "Wichita Lineman 是 countrypolitan／鄉村流行，非搖滾；卡上已有 folk 撐著（本項略猶豫，他曾是 Wrecking Crew 吉他手）。"
+  },
+  {
+   "artist": "Allen Toussaint",
+   "album": "Southern Nights",
+   "year": 1975,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "紐奧良 R&B／soul 鋼琴手兼製作人，Southern Nights 是 soul 專輯。"
+  },
+  {
+   "artist": "B.B. King",
+   "album": "Live at the Regal",
+   "year": 1965,
+   "before": [
+    "blues",
+    "rock"
+   ],
+   "after": [
+    "blues"
+   ],
+   "正確標籤": "blues",
+   "理由": "Live at the Regal 是純電氣藍調現場經典，不是藍調搖滾，blues 標籤已足夠撐住。"
+  },
+  {
+   "artist": "The Carpenters",
+   "album": "Close to You",
+   "year": 1970,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "pop",
+   "理由": "純 soft pop 二重唱，完全非搖滾；注意此卡現有 tags 只有 rock+folk，摘掉 rock 後需補上 pop。"
+  },
+  {
+   "artist": "ABBA",
+   "album": "Arrival",
+   "year": 1976,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "純流行團體，無搖滾本體，三張卡都已有 pop 撐著。"
+  },
+  {
+   "artist": "Bee Gees",
+   "album": "Main Course",
+   "year": 1975,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "早期 Odessa 是 baroque／psych pop rock，1975 Main Course 已轉 R&B／disco，兩張該分開判。"
+  },
+  {
+   "artist": "Tony Williams",
+   "album": "Spring",
+   "year": 1965,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "Spring（1965, Blue Note）是純 post-bop，非其後期 Lifetime 的 jazz-rock。"
+  },
+  {
+   "artist": "Keith Jarrett",
+   "album": "Belonging",
+   "year": 1974,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "Belonging 是 ECM 純爵士四重奏，非搖滾。"
+  },
+  {
+   "artist": "Return to Forever",
+   "album": "Light as a Feather",
+   "year": 1973,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "同團不同期：Light as a Feather 是輕巧的巴西風爵士，Romantic Warrior 才是 jazz-rock fusion。"
+  },
+  {
+   "artist": "John McLaughlin",
+   "album": "Extrapolation",
+   "year": 1969,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "Extrapolation 是 1969 年純爵士作品（Mahavishnu 之前）；他的 fusion 身分讓我略有猶豫，但此卡是爵士。"
+  },
+  {
+   "artist": "Ornette Coleman",
+   "album": "Dancing in Your Head",
+   "year": 1977,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "Prime Time 期的 harmolodic free jazz，雖有電吉他但本體是自由爵士。"
+  },
+  {
+   "artist": "Maynard Ferguson",
+   "album": "M.F. Horn",
+   "year": 1970,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "大樂團爵士小號手，M.F. Horn 只是翻搖滾曲目的 big band jazz。"
+  },
+  {
+   "artist": "Portico Quartet",
+   "album": "Isla",
+   "year": 2009,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "英國新爵士／電子爵士樂團，非搖滾。"
+  },
+  {
+   "artist": "Tom Misch & Yussef Dayes",
+   "album": "What Kinda Music",
+   "year": 2020,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "當代英式 jazz／neo-soul 合作專輯，沒有搖滾成分。"
+  },
+  {
+   "artist": "Jeff Parker",
+   "album": "The New Breed",
+   "year": 2016,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "兩張都是他的爵士個人作；雖然本人是 Tortoise（post-rock）成員，但唱片本體是 jazz。"
+  },
+  {
+   "artist": "The Isley Brothers",
+   "album": "3 + 3",
+   "year": 1972,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "核心是 R&B／soul／funk；3+3 的 Ernie Isley 吉他與 Shout! 的早期 rock'n'roll 讓我略猶豫，但主體是 soul。"
+  },
+  {
+   "artist": "Rick James",
+   "album": "Street Songs",
+   "year": 1981,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Street Songs 是 funk/R&B 本體，punk-funk 只是自稱。"
+  },
+  {
+   "artist": "Prince",
+   "album": "1999",
+   "year": 1982,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "主體是 funk／soul，但 1996 Chaos and Disorder 是他刻意錄的吉他搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Prince",
+   "album": "Dirty Mind",
+   "year": 1980,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "主體是 funk／soul，但 1996 Chaos and Disorder 是他刻意錄的吉他搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Prince",
+   "album": "Parade",
+   "year": 1986,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "主體是 funk／soul，但 1996 Chaos and Disorder 是他刻意錄的吉他搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Sheila E.",
+   "album": "The Glamorous Life",
+   "year": 1984,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Prince 系放克／舞曲流行打擊樂手，非搖滾。"
+  },
+  {
+   "artist": "Michael Jackson",
+   "album": "Bad",
+   "year": 1987,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "主流流行／R&B 天王，Bad 不是搖滾唱片。"
+  },
+  {
+   "artist": "Billy Paul",
+   "album": "360 Degrees of Billy Paul",
+   "year": 1972,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "費城靈魂歌手，360 Degrees 是純 soul。"
+  },
+  {
+   "artist": "D'Angelo",
+   "album": "Black Messiah",
+   "year": 2014,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "neo-soul 代表作；Black Messiah 的 Hendrix 式吉他讓我略猶豫，但本體是 soul。"
+  },
+  {
+   "artist": "The Weeknd",
+   "album": "After Hours",
+   "year": 2020,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "當代 alt-R&B／流行巨星，非搖滾；After Hours 靠 electronic 撐住，兩張 mixtape 由 hiphop 撐住。"
+  },
+  {
+   "artist": "Miguel",
+   "album": "Wildheart",
+   "year": 2015,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B 歌手；Wildheart 吉他感重但仍是 R&B，Kaleidoscope Dream 摘 rock 後只剩 hiphop，建議補 soul。猶豫。"
+  },
+  {
+   "artist": "SZA",
+   "album": "Ctrl",
+   "year": 2017,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B／neo-soul，非搖滾。"
+  },
+  {
+   "artist": "Kelela",
+   "album": "Take Me Apart",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗 R&B／電子女聲，非搖滾；現有 hiphop 標籤可撐（真正較準的是 soul/electronic）。"
+  },
+  {
+   "artist": "FKA twigs",
+   "album": "LP1",
+   "year": 2014,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "alt-R&B／電子製作，與搖滾無關。"
+  },
+  {
+   "artist": "Blood Orange",
+   "album": "Cupid Deluxe",
+   "year": 2013,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Dev Hynes 的 R&B／synth-soul；Freetown Sound 摘掉 rock 後仍有 hiphop，但正確主標籤是 soul。"
+  },
+  {
+   "artist": "Blood Orange",
+   "album": "Freetown Sound",
+   "year": 2016,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "soul",
+   "理由": "Dev Hynes 的 R&B／synth-soul；Freetown Sound 摘掉 rock 後仍有 hiphop，但正確主標籤是 soul。"
+  },
+  {
+   "artist": "James Blake",
+   "album": "James Blake",
+   "year": 2011,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "post-dubstep／電子製作人兼歌手。"
+  },
+  {
+   "artist": "James Blake",
+   "album": "Overgrown",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "post-dubstep／電子製作人兼歌手。"
+  },
+  {
+   "artist": "H.E.R.",
+   "album": "H.E.R.",
+   "year": 2017,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B（雖然本人彈吉他）。"
+  },
+  {
+   "artist": "Snoh Aalegra",
+   "album": "Ugh, Those Feels Again",
+   "year": 2019,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B 女聲，非搖滾。"
+  },
+  {
+   "artist": "Steve Lacy",
+   "album": "Gemini Rights",
+   "year": 2022,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "The Internet 出身的 neo-soul／bedroom funk，吉他味重但本體是 R&B，稍有猶豫。"
+  },
+  {
+   "artist": "Brent Faiyaz",
+   "album": "Wasteland",
+   "year": 2022,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B。"
+  },
+  {
+   "artist": "SAULT",
+   "album": "5",
+   "year": 2019,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "英國 soul／funk 匿名企劃，非搖滾。"
+  },
+  {
+   "artist": "Michael Franks",
+   "album": "The Art of Tea",
+   "year": 1976,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "smooth／vocal jazz，完全非搖滾。"
+  },
+  {
+   "artist": "Michael Franks",
+   "album": "Sleeping Gypsy",
+   "year": 1977,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "smooth／vocal jazz，完全非搖滾。"
+  },
+  {
+   "artist": "Beastie Boys",
+   "album": "Paul's Boutique",
+   "year": 1989,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "本體是嘻哈；Licensed to Ill 的 rap-rock 與 Check Your Head 的硬蕊片段讓我猶豫，但主標籤應為 hiphop。"
+  },
+  {
+   "artist": "Beastie Boys",
+   "album": "Licensed to Ill",
+   "year": 1986,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "本體是嘻哈；Licensed to Ill 的 rap-rock 與 Check Your Head 的硬蕊片段讓我猶豫，但主標籤應為 hiphop。"
+  },
+  {
+   "artist": "Beastie Boys",
+   "album": "Check Your Head",
+   "year": 1992,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "本體是嘻哈；Licensed to Ill 的 rap-rock 與 Check Your Head 的硬蕊片段讓我猶豫，但主標籤應為 hiphop。"
+  },
+  {
+   "artist": "Beastie Boys",
+   "album": "Ill Communication",
+   "year": 1994,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "本體是嘻哈；Licensed to Ill 的 rap-rock 與 Check Your Head 的硬蕊片段讓我猶豫，但主標籤應為 hiphop。"
+  },
+  {
+   "artist": "Black Sheep",
+   "album": "A Wolf in Sheep's Clothing",
+   "year": 1991,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Native Tongues 系純嘻哈。"
+  },
+  {
+   "artist": "Main Source",
+   "album": "Breaking Atoms",
+   "year": 1991,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 boom bap 嘻哈。"
+  },
+  {
+   "artist": "Digable Planets",
+   "album": "Blowout Comb",
+   "year": 1994,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "jazz rap 團，非搖滾。"
+  },
+  {
+   "artist": "The Pharcyde",
+   "album": "Labcabincalifornia",
+   "year": 1995,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "西岸 alternative hip hop。"
+  },
+  {
+   "artist": "Hieroglyphics",
+   "album": "3rd Eye Vision",
+   "year": 1998,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純西岸地下嘻哈。"
+  },
+  {
+   "artist": "Del the Funky Homosapien",
+   "album": "I Wish My Brother George Was Here",
+   "year": 1991,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈 MC。"
+  },
+  {
+   "artist": "Deltron 3030",
+   "album": "Deltron 3030",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Del/Dan the Automator 的概念嘻哈。"
+  },
+  {
+   "artist": "El-P",
+   "album": "Fantastic Damage",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純實驗嘻哈製作人／饒舌。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "Labor Days",
+   "year": 2001,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "Atmosphere",
+   "album": "God Loves Ugly",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Rhymesayers 獨立嘻哈。"
+  },
+  {
+   "artist": "Sage Francis",
+   "album": "Personal Journals",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純地下嘻哈。"
+  },
+  {
+   "artist": "Dilated Peoples",
+   "album": "The Platform",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 boom bap 嘻哈團。"
+  },
+  {
+   "artist": "People Under the Stairs",
+   "album": "O.S.T.",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "洛杉磯獨立嘻哈二人組。"
+  },
+  {
+   "artist": "Blackalicious",
+   "album": "Blazing Arrow",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純地下嘻哈。"
+  },
+  {
+   "artist": "UNKLE",
+   "album": "Psyence Fiction",
+   "year": 1998,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "James Lavelle 的 trip-hop／電子企劃；後期 The Road 系列偏樂團搖滾，讓我略猶豫。"
+  },
+  {
+   "artist": "DJ Krush",
+   "album": "Meiso",
+   "year": 1995,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "日本 instrumental hip hop／turntablism。"
+  },
+  {
+   "artist": "Portishead",
+   "album": "Third",
+   "year": 2008,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "trip-hop 本體；Third 雖有 krautrock／post-punk 邊緣，仍非搖滾樂團作品。猶豫。"
+  },
+  {
+   "artist": "Archive",
+   "album": "Londinium",
+   "year": 1996,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Londinium 是 1996 trip-hop 專輯（樂團要到後期才轉 prog rock），此卡歸電子。"
+  },
+  {
+   "artist": "The Roots",
+   "album": "Illadelph Halflife",
+   "year": 1996,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "雖是真人樂隊編制，本體仍是嘻哈團。"
+  },
+  {
+   "artist": "The Roots",
+   "album": "Phrenology",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "雖是真人樂隊編制，本體仍是嘻哈團。"
+  },
+  {
+   "artist": "Common",
+   "album": "Be",
+   "year": 2005,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Mos Def & Talib Kweli",
+   "album": "Black Star",
+   "year": 1998,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Black Star 是純嘻哈經典。"
+  },
+  {
+   "artist": "Talib Kweli",
+   "album": "Quality",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "紐約 conscious rap。"
+  },
+  {
+   "artist": "Kid Cudi",
+   "album": "Man on the Moon: The End of Day",
+   "year": 2009,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "三張 Man on the Moon 系嘻哈應摘 rock；但 Speedin' Bullet 2 Heaven 是他刻意做的 grunge／搖滾專輯且 tags 只有 rock，必須保留。"
+  },
+  {
+   "artist": "Lupe Fiasco",
+   "album": "The Cool",
+   "year": 2007,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Jay Rock",
+   "album": "90059",
+   "year": 2015,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "TDE 西岸嘻哈。"
+  },
+  {
+   "artist": "Travis Scott",
+   "album": "Astroworld",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／trap。"
+  },
+  {
+   "artist": "Playboi Carti",
+   "album": "Whole Lotta Red",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "rage rap，雖有 punk 氣質但本體是嘻哈。"
+  },
+  {
+   "artist": "Danny Brown",
+   "album": "Atrocity Exhibition",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "底特律實驗嘻哈（取樣後龐克但本體是 rap）。"
+  },
+  {
+   "artist": "Danny Brown",
+   "album": "XXX",
+   "year": 2011,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "底特律實驗嘻哈（取樣後龐克但本體是 rap）。"
+  },
+  {
+   "artist": "JPEGMAFIA",
+   "album": "All My Heroes Are Cornballs",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，噪音質地不等於搖滾。"
+  },
+  {
+   "artist": "Injury Reserve",
+   "album": "By the Time I Get to Phoenix",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，雜訊搖滾質感但本體是嘻哈。"
+  },
+  {
+   "artist": "Smino",
+   "album": "Blkswn",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／R&B rap。"
+  },
+  {
+   "artist": "Kano",
+   "album": "Home Sweet Home",
+   "year": 2005,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "英國 grime MC。"
+  },
+  {
+   "artist": "Roots Manuva",
+   "album": "Run Come Save Me",
+   "year": 2001,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "英國嘻哈。"
+  },
+  {
+   "artist": "The Streets",
+   "album": "Original Pirate Material",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Mike Skinner 的英式車庫饒舌，非搖滾。"
+  },
+  {
+   "artist": "The Streets",
+   "album": "A Grand Don't Come for Free",
+   "year": 2004,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Mike Skinner 的英式車庫饒舌，非搖滾。"
+  },
+  {
+   "artist": "Denzel Curry",
+   "album": "TA13OO",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "佛州嘻哈，雖帶金屬邊但本體是 rap。"
+  },
+  {
+   "artist": "XXXTENTACION",
+   "album": "17",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo-rap；17 有木吉他但本體是嘻哈。"
+  },
+  {
+   "artist": "Lil Peep",
+   "album": "Come Over When You're Sober, Pt. 1",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo rap；大量取樣 emo／pop-punk 吉他讓我猶豫，但本體是嘻哈。"
+  },
+  {
+   "artist": "Bibio",
+   "album": "Ambivalence Avenue",
+   "year": 2009,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "folktronica 製作人，摘掉 rock 後由 folk 撐住。"
+  },
+  {
+   "artist": "Röyksopp",
+   "album": "Melody A.M.",
+   "year": 2001,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "北歐電子二人組。"
+  },
+  {
+   "artist": "Moby",
+   "album": "Everything Is Wrong",
+   "year": 1995,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "主體是電子，但 1996 Animal Rights 是他自彈自唱的龐克／搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Propellerheads",
+   "album": "Decksandrumsandrockandroll",
+   "year": 1998,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "big beat 電子二人組（專輯名有 rock 只是玩笑）。"
+  },
+  {
+   "artist": "808 State",
+   "album": "90",
+   "year": 1989,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "acid house／techno。"
+  },
+  {
+   "artist": "808 State",
+   "album": "Ex:El",
+   "year": 1991,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "acid house／techno。"
+  },
+  {
+   "artist": "Ed Rush & Optical",
+   "album": "Wormhole",
+   "year": 1998,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "electronic",
+   "理由": "Wormhole 是 techstep drum&bass 經典；注意此卡 tags 只有 rock，摘掉 rock 後必須補上 electronic，否則卡片會沒有曲風。"
+  },
+  {
+   "artist": "Calibre",
+   "album": "Second Sun",
+   "year": 2005,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "liquid drum & bass 製作人。"
+  },
+  {
+   "artist": "Burial",
+   "album": "Untrue",
+   "year": 2007,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "dubstep／garage。"
+  },
+  {
+   "artist": "Burial",
+   "album": "Burial",
+   "year": 2006,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "dubstep／garage。"
+  },
+  {
+   "artist": "Benga",
+   "album": "Diary of an Afro Warrior",
+   "year": 2008,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "dubstep 製作人。"
+  },
+  {
+   "artist": "Peverelist",
+   "album": "Jarvik Mindstate",
+   "year": 2009,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Bristol dubstep／techno 製作人。"
+  },
+  {
+   "artist": "2562",
+   "album": "Aerial",
+   "year": 2008,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "荷蘭 dubstep／techno 製作人 Dave Huismans，Aerial 是純電子舞曲，與搖滾無關。"
+  },
+  {
+   "artist": "Mount Kimbie",
+   "album": "Cold Spring Fault Less Youth",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "post-dubstep；後期雖趨樂團化，這張仍是電子作品。"
+  },
+  {
+   "artist": "Darkstar",
+   "album": "North",
+   "year": 2010,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國電子／post-dubstep 團。"
+  },
+  {
+   "artist": "SBTRKT",
+   "album": "SBTRKT",
+   "year": 2011,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國電子製作人／future garage。"
+  },
+  {
+   "artist": "Disclosure",
+   "album": "Settle",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "house／舞曲。"
+  },
+  {
+   "artist": "Four Tet",
+   "album": "Rounds",
+   "year": 2003,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Kieran Hebden 的電子樂，非搖滾。"
+  },
+  {
+   "artist": "Four Tet",
+   "album": "There Is Love in You",
+   "year": 2010,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Kieran Hebden 的電子樂，非搖滾。"
+  },
+  {
+   "artist": "Caribou",
+   "album": "Swim",
+   "year": 2010,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Dan Snaith 的迷幻電子舞曲；注意 Suddenly 那張現有 tags 只有 rock，摘掉後必須補 electronic。"
+  },
+  {
+   "artist": "Caribou",
+   "album": "Andorra",
+   "year": 2007,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Dan Snaith 的迷幻電子舞曲；注意 Suddenly 那張現有 tags 只有 rock，摘掉後必須補 electronic。"
+  },
+  {
+   "artist": "Jamie xx",
+   "album": "In Colour",
+   "year": 2015,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "舞曲／電子製作人。"
+  },
+  {
+   "artist": "Machinedrum",
+   "album": "Room(s)",
+   "year": 2011,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子製作人（footwork／juke）。"
+  },
+  {
+   "artist": "Lapalux",
+   "album": "Nostalchic",
+   "year": 2013,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "electronic",
+   "理由": "Brainfeeder 系電子製作人；現有 tags 只有 rock，摘掉 rock 後需補上 electronic，否則卡片會沒有曲風。"
+  },
+  {
+   "artist": "Daft Punk",
+   "album": "Homework",
+   "year": 1997,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "法式浩室，純電子。"
+  },
+  {
+   "artist": "Daft Punk",
+   "album": "Human After All",
+   "year": 2005,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "法式浩室，純電子。"
+  },
+  {
+   "artist": "Vitalic",
+   "album": "OK Cowboy",
+   "year": 2005,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "法國電子舞曲。"
+  },
+  {
+   "artist": "Boys Noize",
+   "album": "Oi Oi Oi",
+   "year": 2007,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "德國 electro／techno。"
+  },
+  {
+   "artist": "Simian Mobile Disco",
+   "album": "Attack Decay Sustain Release",
+   "year": 2007,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "electro house。"
+  },
+  {
+   "artist": "Andrés",
+   "album": "II",
+   "year": 2009,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "底特律 house 製作人。"
+  },
+  {
+   "artist": "George Clanton",
+   "album": "Slide",
+   "year": 2018,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "vaporwave／chillwave 電子流行；卡上無 electronic，摘 rock 後由 pop 撐著（electronic 其實更準）。"
+  },
+  {
+   "artist": "Blank Banshee",
+   "album": "Blank Banshee 0",
+   "year": 2012,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "vaporwave 製作人。"
+  },
+  {
+   "artist": "The Books",
+   "album": "The Lemon of Pink",
+   "year": 2003,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "folktronica／取樣拼貼，非搖滾；摘 rock 後留 folk（其實 electronic 更貼切）。"
+  },
+  {
+   "artist": "Mouse on Mars",
+   "album": "Autoditacker",
+   "year": 1997,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "德國 IDM 二人組。"
+  },
+  {
+   "artist": "GusGus",
+   "album": "Polydistortion",
+   "year": 1997,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "冰島電子團。"
+  },
+  {
+   "artist": "Westlife",
+   "album": "Coast to Coast",
+   "year": 2000,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "愛爾蘭男團情歌，純主流流行。"
+  },
+  {
+   "artist": "Shakira",
+   "album": "Laundry Service",
+   "year": 2001,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "Laundry Service 是拉丁流行主流專輯（早期西語作品才偏 pop-rock）。"
+  },
+  {
+   "artist": "Gwen Stefani",
+   "album": "Love. Angel. Music. Baby.",
+   "year": 2004,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "L.A.M.B. 是舞曲流行個人專輯（No Doubt 才是搖滾），此卡非搖滾。"
+  },
+  {
+   "artist": "Rihanna",
+   "album": "Anti",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "流行／R&B 巨星，Anti 沒有搖滾本體；hiphop 標籤可撐住。"
+  },
+  {
+   "artist": "Katy Perry",
+   "album": "Teenage Dream",
+   "year": 2010,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像。"
+  },
+  {
+   "artist": "Kelly Clarkson",
+   "album": "Breakaway",
+   "year": 2003,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像；Breakaway 有真實 pop-rock 製作讓我猶豫，但本體是 pop。"
+  },
+  {
+   "artist": "Hilary Duff",
+   "album": "Metamorphosis",
+   "year": 2003,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "青少年流行偶像，pop-rock 只是編曲外衣。"
+  },
+  {
+   "artist": "One Direction",
+   "album": "Midnight Memories",
+   "year": 2013,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "男團流行偶像。"
+  },
+  {
+   "artist": "Harry Styles",
+   "album": "Fine Line",
+   "year": 2019,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "2017 同名首作是刻意做的 70 年代搖滾致敬，後兩張已是主流流行／funk pop，應分開判。"
+  },
+  {
+   "artist": "Zayn",
+   "album": "Mind of Mine",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "One Direction 出身的流行／R&B 個人作，非搖滾；hiphop 撐住（其實 pop 更準）。"
+  },
+  {
+   "artist": "Ed Sheeran",
+   "album": "+",
+   "year": 2011,
+   "before": [
+    "soul",
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "soul",
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "民謠流行唱作人，非搖滾；卡上已有 folk。"
+  },
+  {
+   "artist": "James Blunt",
+   "album": "Back to Bedlam",
+   "year": 2004,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "Back to Bedlam 是柔性流行／folk pop，非搖滾。"
+  },
+  {
+   "artist": "Colbie Caillat",
+   "album": "Coco",
+   "year": 2007,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "陽光流行／民謠流行。"
+  },
+  {
+   "artist": "Duffy",
+   "album": "Rockferry",
+   "year": 2008,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Rockferry 是復古 soul（團名裡的 Rock 是地名，容易誤導）。"
+  },
+  {
+   "artist": "Dido",
+   "album": "No Angel",
+   "year": 1999,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "成人流行／trip-hop 質地；卡上僅存 folk 可用（pop 更貼切）。"
+  },
+  {
+   "artist": "Ingrid Michaelson",
+   "album": "Girls and Boys",
+   "year": 2006,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "indie pop／folk pop 創作歌手，非搖滾（創作歌手身分讓我略猶豫）。"
+  },
+  {
+   "artist": "Taylor Swift",
+   "album": "folklore",
+   "year": 2020,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "folklore 是 Aaron Dessner 製作的 indie folk，Taylor Swift 非搖滾系；folk 標籤撐住。"
+  },
+  {
+   "artist": "Lorde",
+   "album": "Pure Heroine",
+   "year": 2013,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流另類流行。"
+  },
+  {
+   "artist": "Lorde",
+   "album": "Melodrama",
+   "year": 2017,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流另類流行。"
+  },
+  {
+   "artist": "Billie Eilish",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "當代主流流行，非搖滾。"
+  },
+  {
+   "artist": "Halsey",
+   "album": "Badlands",
+   "year": 2015,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "Badlands／Manic／hopeless fountain kingdom 是流行專輯應摘；The Great Impersonator 整張致敬搖滾偶像且摘掉 rock 只剩 folk，予以保留。Manic 摘 rock 後只剩 hiphop，建議補 pop。"
+  },
+  {
+   "artist": "Troye Sivan",
+   "album": "Blue Neighbourhood",
+   "year": 2015,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "synth-pop 流行歌手；卡上無 pop，摘 rock 後由 electronic 撐著。"
+  },
+  {
+   "artist": "Sia",
+   "album": "1000 Forms of Fear",
+   "year": 2014,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "流行歌手，卡上留 electronic 可撐（本體其實是 pop）。"
+  },
+  {
+   "artist": "Ellie Goulding",
+   "album": "Lights",
+   "year": 2010,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子流行歌手，非搖滾。"
+  },
+  {
+   "artist": "Marina and the Diamonds",
+   "album": "Electra Heart",
+   "year": 2012,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Electra Heart 是 electropop／synth-pop 概念作，非搖滾。"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Born to Die",
+   "year": 2012,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "baroque pop／另類流行；Ultraviolence 的迷幻吉他最接近搖滾，是本批最猶豫的一位。"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Norman Fucking Rockwell!",
+   "year": 2019,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "baroque pop／另類流行；Ultraviolence 的迷幻吉他最接近搖滾，是本批最猶豫的一位。"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Ultraviolence",
+   "year": 2014,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "baroque pop／另類流行；Ultraviolence 的迷幻吉他最接近搖滾，是本批最猶豫的一位。"
+  },
+  {
+   "artist": "Maggie Rogers",
+   "album": "Heard It in a Past Life",
+   "year": 2019,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "舞曲製作的流行創作歌手，此卡非搖滾。"
+  },
+  {
+   "artist": "The Skatalites",
+   "album": "Ska Authentic",
+   "year": 1964,
+   "before": [
+    "rock",
+    "world"
+   ],
+   "after": [
+    "world"
+   ],
+   "正確標籤": "world",
+   "理由": "牙買加 ska／爵士大樂團，非搖滾。"
+  },
+  {
+   "artist": "Gregory Isaacs",
+   "album": "Night Nurse",
+   "year": 1982,
+   "before": [
+    "world",
+    "rock"
+   ],
+   "after": [
+    "world"
+   ],
+   "正確標籤": "world",
+   "理由": "雷鬼／lovers rock 歌手——rock 標籤八成來自 lovers rock 字面誤判。"
+  },
+  {
+   "artist": "Natalia Lafourcade",
+   "album": "Hasta la Raíz",
+   "year": 2015,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "早期作品是墨西哥 indie pop-rock，2015 年後轉向拉丁民謠／傳統歌謠。"
+  },
+  {
+   "artist": "CocoRosie",
+   "album": "La Maison de Mon Rêve",
+   "year": 2004,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "freak folk／lo-fi，非搖滾樂團語彙。"
+  },
+  {
+   "artist": "George Ezra",
+   "album": "Wanted on Voyage",
+   "year": 2014,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "民謠流行歌手，非搖滾。"
+  },
+  {
+   "artist": "Norma Jean",
+   "album": "Please Don't Hurt Me",
+   "year": 1966,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "folk",
+   "理由": "是 Porter Wagoner 節目出身的鄉村歌手 Norma Jean Beasler，六七〇年代 countrypolitan 不是搖滾；兩張現有 tags 只有 rock，摘掉 rock 後需補上 folk，否則卡片會沒有曲風。"
+  },
+  {
+   "artist": "Janelle Monáe",
+   "album": "The ArchAndroid",
+   "year": 2010,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "本體是 R&B／放克藝術流行，ArchAndroid 雖有搖滾段落但 soul 才是主標，稍有猶豫。"
+  },
+  {
+   "artist": "Melody Gardot",
+   "album": "Entre eux deux",
+   "year": 2022,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "爵士女聲。"
+  },
+  {
+   "artist": "Jaco Pastorius",
+   "album": "Golden Roads",
+   "year": 1997,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "爵士貝斯手，兩張都是爵士現場／遺作。"
+  },
+  {
+   "artist": "Grimes",
+   "album": "Geidi Primes",
+   "year": 2010,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子流行製作人，Geidi Primes 是 lo-fi 電子。"
+  },
+  {
+   "artist": "Jenny Hval",
+   "album": "Apocalypse, girl",
+   "year": 2015,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "挪威實驗藝術流行，Apocalypse, girl 以電子與唸白為主，非搖滾（猶豫）。"
+  },
+  {
+   "artist": "ODESZA",
+   "album": "In Return",
+   "year": 2014,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子二人組。"
+  },
+  {
+   "artist": "Basement Jaxx",
+   "album": "Rooty",
+   "year": 2001,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國 house 二人組。"
+  },
+  {
+   "artist": "Moby",
+   "album": "18",
+   "year": 2002,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "主體是電子，但 1996 Animal Rights 是他自彈自唱的龐克／搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "Garbology",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "Zomby",
+   "album": "With Love",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "dubstep／電子製作人。"
+  },
+  {
+   "artist": "Gregory Isaacs",
+   "album": "The Lonely Lover",
+   "year": 1980,
+   "before": [
+    "world",
+    "rock"
+   ],
+   "after": [
+    "world"
+   ],
+   "正確標籤": "world",
+   "理由": "雷鬼／lovers rock 歌手——rock 標籤八成來自 lovers rock 字面誤判。"
+  },
+  {
+   "artist": "Norma Jean",
+   "album": "Norma Jean",
+   "year": 1971,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "folk",
+   "理由": "是 Porter Wagoner 節目出身的鄉村歌手 Norma Jean Beasler，六七〇年代 countrypolitan 不是搖滾；兩張現有 tags 只有 rock，摘掉 rock 後需補上 folk，否則卡片會沒有曲風。"
+  },
+  {
+   "artist": "Groove Armada",
+   "album": "Lovebox",
+   "year": 2002,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國舞曲／downtempo。"
+  },
+  {
+   "artist": "Kid Cudi",
+   "album": "Man on the Moon III: The Chosen",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "三張 Man on the Moon 系嘻哈應摘 rock；但 Speedin' Bullet 2 Heaven 是他刻意做的 grunge／搖滾專輯且 tags 只有 rock，必須保留。"
+  },
+  {
+   "artist": "Caribou",
+   "album": "Suddenly",
+   "year": 2020,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "electronic",
+   "理由": "Dan Snaith 的迷幻電子舞曲；注意 Suddenly 那張現有 tags 只有 rock，摘掉後必須補 electronic。"
+  },
+  {
+   "artist": "Dizzee Rascal",
+   "album": "Showtime",
+   "year": 2004,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "英國 grime／嘻哈。"
+  },
+  {
+   "artist": "Charli xcx",
+   "album": "SUCKER",
+   "year": 2014,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行歌手；SUCKER 有 pop-punk 外衣但本體是 pop。"
+  },
+  {
+   "artist": "UNKLE",
+   "album": "The Road: Part II / Lost Highway",
+   "year": 2019,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "James Lavelle 的 trip-hop／電子企劃；後期 The Road 系列偏樂團搖滾，讓我略猶豫。"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Lust for Life",
+   "year": 2017,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "baroque pop／另類流行；Ultraviolence 的迷幻吉他最接近搖滾，是本批最猶豫的一位。"
+  },
+  {
+   "artist": "Julia Holter",
+   "album": "Tragedy",
+   "year": 2011,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "實驗藝術流行，Tragedy 幾乎全是電子與室內樂音景，沒有搖滾本體。"
+  },
+  {
+   "artist": "Run the Jewels",
+   "album": "Run the Jewels 3",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈二人組。"
+  },
+  {
+   "artist": "Little Dragon",
+   "album": "New Me, Same Us",
+   "year": 2020,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "瑞典 electro-soul／synth-pop 樂團，非搖滾（Slugs of Love 那張以 pop 撐住）。"
+  },
+  {
+   "artist": "Sébastien Tellier",
+   "album": "Confection",
+   "year": 2013,
+   "before": [
+    "classical",
+    "rock"
+   ],
+   "after": [
+    "classical"
+   ],
+   "正確標籤": "classical",
+   "理由": "Confection 是純器樂管弦／室內樂配樂作品，非搖滾。"
+  },
+  {
+   "artist": "Caribou",
+   "album": "The Milk of Human Kindness",
+   "year": 2005,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Dan Snaith 的迷幻電子舞曲；注意 Suddenly 那張現有 tags 只有 rock，摘掉後必須補 electronic。"
+  },
+  {
+   "artist": "Bassnectar",
+   "album": "Cozza Frenzy",
+   "year": 2009,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "dubstep／bass music。"
+  },
+  {
+   "artist": "Conan Gray",
+   "album": "Superache",
+   "year": 2022,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "pop",
+   "理由": "臥室流行歌手；Superache 卡上無 pop（只有 folk），摘 rock 後宜補 pop。"
+  },
+  {
+   "artist": "SAULT",
+   "album": "UNTITLED (God)",
+   "year": 2022,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "英國 soul／funk 匿名企劃，非搖滾。"
+  },
+  {
+   "artist": "ABBA",
+   "album": "Voyage",
+   "year": 2021,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "純流行團體，無搖滾本體，三張卡都已有 pop 撐著。"
+  },
+  {
+   "artist": "Jeff Parker",
+   "album": "The Relatives",
+   "year": 2005,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "兩張都是他的爵士個人作；雖然本人是 Tortoise（post-rock）成員，但唱片本體是 jazz。"
+  },
+  {
+   "artist": "Talib Kweli",
+   "album": "Liberation 2",
+   "year": 2023,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "紐約 conscious rap。"
+  },
+  {
+   "artist": "Eminem",
+   "album": "Revival",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈（Revival 只是找搖滾客串）。"
+  },
+  {
+   "artist": "Angélique Kidjo",
+   "album": "Ayé",
+   "year": 1994,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "貝南 afropop 歌手，本體是 world；現有 tags 中以 pop 撐住（world 更準但不在此卡 tags 內）。"
+  },
+  {
+   "artist": "Jaco Pastorius",
+   "album": "Stuttgart Aria",
+   "year": 1986,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "爵士貝斯手，兩張都是爵士現場／遺作。"
+  },
+  {
+   "artist": "Falco",
+   "album": "Emotional",
+   "year": 1986,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "奧地利 synth-pop／饒舌流行（Rock Me Amadeus 只是歌名）；新浪潮成分讓我略猶豫。"
+  },
+  {
+   "artist": "Prince",
+   "album": "The Truth",
+   "year": 1997,
+   "before": [
+    "soul",
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "soul",
+    "folk"
+   ],
+   "正確標籤": "soul",
+   "理由": "主體是 funk／soul，但 1996 Chaos and Disorder 是他刻意錄的吉他搖滾專輯，該張保留。"
+  },
+  {
+   "artist": "Usher",
+   "album": "Raymond v Raymond",
+   "year": 2010,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "主流 R&B 歌手，非搖滾；hiphop 撐住（soul 其實更準）。"
+  },
+  {
+   "artist": "Morcheeba",
+   "album": "The Antidote",
+   "year": 2005,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "trip-hop／downtempo，非搖滾；卡上留 pop（electronic 其實更貼切）。"
+  },
+  {
+   "artist": "Maxwell",
+   "album": "Embrya",
+   "year": 1998,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "neo-soul 正統。"
+  },
+  {
+   "artist": "Madeon",
+   "album": "Good Faith",
+   "year": 2019,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "法式電子流行製作人。"
+  },
+  {
+   "artist": "DJ Koze",
+   "album": "Amygdala",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "德國 house／電子製作人。"
+  },
+  {
+   "artist": "Orbital",
+   "album": "Blue Album",
+   "year": 2004,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國 techno／rave 二人組。"
+  },
+  {
+   "artist": "Washed Out",
+   "album": "High Times",
+   "year": 2009,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "chillwave；Paracosm 摘 rock 後只剩 pop，建議補 electronic。"
+  },
+  {
+   "artist": "Marta and Tricky",
+   "album": "When It's Going Wrong",
+   "year": 2023,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "trip-hop／電子合作專輯。"
+  },
+  {
+   "artist": "Falco",
+   "album": "Falco 3",
+   "year": 1985,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "奧地利 synth-pop／饒舌流行（Rock Me Amadeus 只是歌名）；新浪潮成分讓我略猶豫。"
+  },
+  {
+   "artist": "Little Dragon",
+   "album": "Slugs of Love",
+   "year": 2023,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "soul",
+   "理由": "瑞典 electro-soul／synth-pop 樂團，非搖滾（Slugs of Love 那張以 pop 撐住）。"
+  },
+  {
+   "artist": "Harry Styles",
+   "album": "Harry's House",
+   "year": 2022,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "2017 同名首作是刻意做的 70 年代搖滾致敬，後兩張已是主流流行／funk pop，應分開判。"
+  },
+  {
+   "artist": "Shawn Mendes",
+   "album": "Shawn Mendes",
+   "year": 2018,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像。"
+  },
+  {
+   "artist": "Tate McRae",
+   "album": "THINK LATER",
+   "year": 2023,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "當代主流流行偶像。"
+  },
+  {
+   "artist": "Washed Out",
+   "album": "Paracosm",
+   "year": 2013,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "electronic",
+   "理由": "chillwave；Paracosm 摘 rock 後只剩 pop，建議補 electronic。"
+  },
+  {
+   "artist": "Lady Gaga",
+   "album": "Joanne",
+   "year": 2016,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行天后；Joanne 雖是她最 roots／搖滾傾向的一張，摘後只剩 folk，屬猶豫案例。"
+  },
+  {
+   "artist": "Portico Quartet",
+   "album": "Terrain",
+   "year": 2021,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "英國新爵士／電子爵士樂團，非搖滾。"
+  },
+  {
+   "artist": "Mammal Hands",
+   "album": "Captured Spirits",
+   "year": 2020,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "英國當代爵士三重奏。"
+  },
+  {
+   "artist": "Massive Attack",
+   "album": "Heligoland",
+   "year": 2010,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "trip-hop 開創者，非搖滾。"
+  },
+  {
+   "artist": "Tate McRae",
+   "album": "i used to think i could fly",
+   "year": 2022,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "當代主流流行偶像。"
+  },
+  {
+   "artist": "Jon Hopkins",
+   "album": "Contact Note",
+   "year": 2004,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國電子／ambient techno 製作人。"
+  },
+  {
+   "artist": "TWICE",
+   "album": "ENEMY",
+   "year": 2025,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "K-pop 女團。"
+  },
+  {
+   "artist": "Cleo Sol",
+   "album": "Rose in the Dark",
+   "year": 2020,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 soul 女聲。"
+  },
+  {
+   "artist": "J Balvin",
+   "album": "Vibras",
+   "year": 2018,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "reggaeton／拉丁都會，非搖滾；hiphop 撐住。"
+  },
+  {
+   "artist": "Beyoncé",
+   "album": "BEYONCÉ",
+   "year": 2013,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "soul",
+   "理由": "R&B／流行天后；此卡摘 rock 後只剩 hiphop，建議補 soul。"
+  },
+  {
+   "artist": "Four Tet",
+   "album": "Pink",
+   "year": 2012,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Kieran Hebden 的電子樂，非搖滾。"
+  },
+  {
+   "artist": "Juice WRLD",
+   "album": "Legends Never Die",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo rap，本體是嘻哈。"
+  },
+  {
+   "artist": "Little Simz",
+   "album": "Stillness in Wonderland",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "英國嘻哈。"
+  },
+  {
+   "artist": "Chance the Rapper",
+   "album": "The Big Day",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "P!nk",
+   "album": "Beautiful Trauma",
+   "year": 2017,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像；M!ssundaztood 有 Linda Perry 的 pop-rock 製作讓我略猶豫。"
+  },
+  {
+   "artist": "Caroline Polachek",
+   "album": "Desire, I Want to Turn Into You",
+   "year": 2023,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "art pop／電子流行（Chairlift 出身但本作非搖滾）。"
+  },
+  {
+   "artist": "One Direction",
+   "album": "Four",
+   "year": 2014,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "男團流行偶像。"
+  },
+  {
+   "artist": "Demi Lovato",
+   "album": "Don't Forget",
+   "year": 2008,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行偶像（Don't Forget 的 pop-rock 只是包裝）。"
+  },
+  {
+   "artist": "M.I.A.",
+   "album": "AIM",
+   "year": 2016,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子／嘻哈跨界，非搖滾（M.I.7 摘掉 rock 後仍有 hiphop）。"
+  },
+  {
+   "artist": "Tom Misch",
+   "album": "Geography",
+   "year": 2018,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "jazz／neo-soul 吉他製作人，非搖滾。"
+  },
+  {
+   "artist": "De La Soul",
+   "album": "Buhlo͞one Mind State",
+   "year": 1993,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Trentemøller",
+   "album": "Memoria",
+   "year": 2022,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "electronic",
+   "理由": "丹麥電子製作人；此卡 tags 只有 rock+pop，摘 rock 後由 pop 撐著，但宜補 electronic。"
+  },
+  {
+   "artist": "Tycho",
+   "album": "Awake",
+   "year": 2014,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "ambient／電子製作人。"
+  },
+  {
+   "artist": "Gregory Isaacs",
+   "album": "Soon Forward",
+   "year": 1979,
+   "before": [
+    "world",
+    "rock"
+   ],
+   "after": [
+    "world"
+   ],
+   "正確標籤": "world",
+   "理由": "雷鬼／lovers rock 歌手——rock 標籤八成來自 lovers rock 字面誤判。"
+  },
+  {
+   "artist": "Kid Cudi",
+   "album": "Satellite Flight: The Journey to Mother Moon",
+   "year": 2014,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "三張 Man on the Moon 系嘻哈應摘 rock；但 Speedin' Bullet 2 Heaven 是他刻意做的 grunge／搖滾專輯且 tags 只有 rock，必須保留。"
+  },
+  {
+   "artist": "Miley Cyrus",
+   "album": "Something Beautiful",
+   "year": 2025,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行歌手；Something Beautiful 有華麗搖滾參照但本體仍是 pop。"
+  },
+  {
+   "artist": "M.I.A.",
+   "album": "M.I.7",
+   "year": 2026,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子／嘻哈跨界，非搖滾（M.I.7 摘掉 rock 後仍有 hiphop）。"
+  },
+  {
+   "artist": "Nelly",
+   "album": "Nellyville",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "主流嘻哈。"
+  },
+  {
+   "artist": "Ski Mask the Slump God",
+   "album": "STOKELEY",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／trap。"
+  },
+  {
+   "artist": "San Holo",
+   "album": "EXISTENTIAL DANCE MUSIC",
+   "year": 2023,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "荷蘭 EDM／electronic 製作人（吉他味重但本體是電子）。"
+  },
+  {
+   "artist": "Disclosure",
+   "album": "ENERGY",
+   "year": 2020,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "house／舞曲。"
+  },
+  {
+   "artist": "The Comet Is Coming",
+   "album": "Channel the Spirits",
+   "year": 2016,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "英國新爵士＋電子，能量像搖滾但本體是 jazz。略猶豫。"
+  },
+  {
+   "artist": "Britney Spears",
+   "album": "Glory",
+   "year": 2016,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像；此卡 tags 是 rock+hiphop，兩者都不對，摘 rock 後需補上 pop。"
+  },
+  {
+   "artist": "Demi Lovato",
+   "album": "Demi",
+   "year": 2013,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行偶像（Don't Forget 的 pop-rock 只是包裝）。"
+  },
+  {
+   "artist": "Vince Staples",
+   "album": "Vince Staples",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "西岸嘻哈。"
+  },
+  {
+   "artist": "Juice WRLD",
+   "album": "Fighting Demons",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo rap，本體是嘻哈。"
+  },
+  {
+   "artist": "Kesha",
+   "album": "Rainbow",
+   "year": 2017,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行歌手（Rainbow 偏 roots pop 但非搖滾）。"
+  },
+  {
+   "artist": "Gorgon City",
+   "album": "Olympia",
+   "year": 2021,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國 house／EDM 二人組。"
+  },
+  {
+   "artist": "Lorde",
+   "album": "Solar Power",
+   "year": 2021,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流另類流行。"
+  },
+  {
+   "artist": "Gracie Abrams",
+   "album": "This Is What It Feels Like",
+   "year": 2021,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "bedroom／indie pop 創作歌手，非搖滾；摘 rock 後由 folk 撐住（其實 pop 更準）。"
+  },
+  {
+   "artist": "Billie Eilish",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "當代主流流行，非搖滾。"
+  },
+  {
+   "artist": "AURORA",
+   "album": "What Happened to the Heart?",
+   "year": 2024,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "北歐 art pop。"
+  },
+  {
+   "artist": "The Chainsmokers",
+   "album": "Summertime Friends",
+   "year": 2023,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "EDM／流行舞曲，非搖滾。"
+  },
+  {
+   "artist": "Bonobo",
+   "album": "The North Borders",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "downtempo 電子製作人。"
+  },
+  {
+   "artist": "Halsey",
+   "album": "Manic",
+   "year": 2020,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "pop",
+   "理由": "Badlands／Manic／hopeless fountain kingdom 是流行專輯應摘；The Great Impersonator 整張致敬搖滾偶像且摘掉 rock 只剩 folk，予以保留。Manic 摘 rock 後只剩 hiphop，建議補 pop。"
+  },
+  {
+   "artist": "Halsey",
+   "album": "hopeless fountain kingdom",
+   "year": 2017,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "Badlands／Manic／hopeless fountain kingdom 是流行專輯應摘；The Great Impersonator 整張致敬搖滾偶像且摘掉 rock 只剩 folk，予以保留。Manic 摘 rock 後只剩 hiphop，建議補 pop。"
+  },
+  {
+   "artist": "Sigrid",
+   "album": "How to Let Go",
+   "year": 2022,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "挪威流行歌手。"
+  },
+  {
+   "artist": "Travis Scott",
+   "album": "UTOPIA",
+   "year": 2023,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／trap。"
+  },
+  {
+   "artist": "Melanie Martinez",
+   "album": "Cry Baby",
+   "year": 2015,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "alt-pop／electropop 概念歌手，非搖滾。"
+  },
+  {
+   "artist": "Conan Gray",
+   "album": "Kid Krow",
+   "year": 2020,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "臥室流行歌手；Superache 卡上無 pop（只有 folk），摘 rock 後宜補 pop。"
+  },
+  {
+   "artist": "Gesaffelstein",
+   "album": "GAMMA",
+   "year": 2024,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "techno／electro 製作人。"
+  },
+  {
+   "artist": "Tom Misch",
+   "album": "Happy Music",
+   "year": 2023,
+   "before": [
+    "rock",
+    "jazz"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "jazz／neo-soul 吉他製作人，非搖滾。"
+  },
+  {
+   "artist": "Vince Staples",
+   "album": "RAMONA PARK BROKE MY HEART",
+   "year": 2022,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "西岸嘻哈。"
+  },
+  {
+   "artist": "Gracie Abrams",
+   "album": "The Secret of Us",
+   "year": 2024,
+   "before": [
+    "rock",
+    "folk"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "bedroom／indie pop 創作歌手，非搖滾；摘 rock 後由 folk 撐住（其實 pop 更準）。"
+  },
+  {
+   "artist": "Ed Sheeran",
+   "album": "Autumn Variations",
+   "year": 2023,
+   "before": [
+    "soul",
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "soul",
+    "folk"
+   ],
+   "正確標籤": "folk",
+   "理由": "民謠流行唱作人，非搖滾；卡上已有 folk。"
+  },
+  {
+   "artist": "Seu Jorge",
+   "album": "Ana E Jorge",
+   "year": 2005,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "world",
+   "理由": "巴西 samba／MPB 歌手，Ana E Jorge 是原音現場；摘 rock 後卡上留 jazz，但 world 更準。"
+  },
+  {
+   "artist": "One Direction",
+   "album": "Up All Night",
+   "year": 2011,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "男團流行偶像。"
+  },
+  {
+   "artist": "Digitalism",
+   "album": "JPEG",
+   "year": 2019,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "electro house 二人組。"
+  },
+  {
+   "artist": "Gorgon City",
+   "album": "Reverie",
+   "year": 2024,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國 house／EDM 二人組。"
+  },
+  {
+   "artist": "Missy Elliott",
+   "album": "This Is Not a Test!",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／R&B 製作人兼 MC。"
+  },
+  {
+   "artist": "Billie Eilish",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "當代主流流行，非搖滾。"
+  },
+  {
+   "artist": "Sam Smith",
+   "album": "The Thrill of It All",
+   "year": 2017,
+   "before": [
+    "rock",
+    "pop"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "流行／靈魂歌手，非搖滾。"
+  },
+  {
+   "artist": "Missy Elliott",
+   "album": "Under Construction",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈／R&B 製作人兼 MC。"
+  },
+  {
+   "artist": "P!nk",
+   "album": "M!ssundaztood",
+   "year": 2001,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "主流流行偶像；M!ssundaztood 有 Linda Perry 的 pop-rock 製作讓我略猶豫。"
+  },
+  {
+   "artist": "Beastie Boys",
+   "album": "Hello Nasty",
+   "year": 1998,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "本體是嘻哈；Licensed to Ill 的 rap-rock 與 Check Your Head 的硬蕊片段讓我猶豫，但主標籤應為 hiphop。"
+  },
+  {
+   "artist": "JPEGMAFIA",
+   "album": "EXPERIMENTAL RAP",
+   "year": 2026,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，噪音質地不等於搖滾。"
+  },
+  {
+   "artist": "The Sun Ra Arkestra",
+   "album": "Cosmic Tones for Mental Therapy",
+   "year": 1967,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "自由爵士大樂團。"
+  },
+  {
+   "artist": "Skepta",
+   "album": "Ignorance is Bliss",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "grime／嘻哈。"
+  },
+  {
+   "artist": "Common",
+   "album": "A Beautiful Revolution, Pt. 1",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Poppy",
+   "album": "Am I a Girl?",
+   "year": 2018,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "早期是電子流行、近年轉金屬，pop 期與 metal 期該分開判。"
+  },
+  {
+   "artist": "Talib Kweli",
+   "album": "Gutter Rainbows",
+   "year": 2011,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "紐約 conscious rap。"
+  },
+  {
+   "artist": "Dorian Electra",
+   "album": "Fanfare",
+   "year": 2023,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "hyperpop／電子概念歌手。"
+  },
+  {
+   "artist": "Vangelis",
+   "album": "See You Later",
+   "year": 1980,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "電子合成器作曲家。"
+  },
+  {
+   "artist": "AURORA",
+   "album": "A Different Kind of Human: Step 2",
+   "year": 2019,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "北歐 art pop。"
+  },
+  {
+   "artist": "MF DOOM",
+   "album": "Born Like This",
+   "year": 2009,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "地下嘻哈 MC／製作人。"
+  },
+  {
+   "artist": "Ashnikko",
+   "album": "WEEDKILLER",
+   "year": 2023,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "hyperpop／rap；WEEDKILLER 有金屬吉他色彩但本體是流行饒舌。"
+  },
+  {
+   "artist": "Lana Del Rey",
+   "album": "Chemtrails Over the Country Club",
+   "year": 2021,
+   "before": [
+    "folk",
+    "rock"
+   ],
+   "after": [
+    "folk"
+   ],
+   "正確標籤": "pop",
+   "理由": "baroque pop／另類流行；Ultraviolence 的迷幻吉他最接近搖滾，是本批最猶豫的一位。"
+  },
+  {
+   "artist": "Injury Reserve",
+   "album": "Injury Reserve",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，雜訊搖滾質感但本體是嘻哈。"
+  },
+  {
+   "artist": "Caribou",
+   "album": "Start Breaking My Heart",
+   "year": 2001,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Dan Snaith 的迷幻電子舞曲；注意 Suddenly 那張現有 tags 只有 rock，摘掉後必須補 electronic。"
+  },
+  {
+   "artist": "Rico Nasty",
+   "album": "Nightmare Vacation",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "punk 氣質的饒舌歌手，本體嘻哈。"
+  },
+  {
+   "artist": "Lil Peep",
+   "album": "Come Over When You're Sober, Pt. 2",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo rap；大量取樣 emo／pop-punk 吉他讓我猶豫，但本體是嘻哈。"
+  },
+  {
+   "artist": "Lil Peep",
+   "album": "DIAMONDS",
+   "year": 2023,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo rap；大量取樣 emo／pop-punk 吉他讓我猶豫，但本體是嘻哈。"
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Psykos",
+   "year": 2024,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "瑞典 cloud rap。"
+  },
+  {
+   "artist": "Common",
+   "album": "A Beautiful Revolution Pt. 1 & 2",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Melanie Martinez",
+   "album": "HADES",
+   "year": 2026,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "alt-pop／electropop 概念歌手，非搖滾。"
+  },
+  {
+   "artist": "Trippie Redd",
+   "album": "LIFE'S A TRIP",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "emo／trap 饒舌，非搖滾。"
+  },
+  {
+   "artist": "Porter Robinson",
+   "album": "SMILE! :D",
+   "year": 2024,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "EDM／電子製作人，SMILE! :D 雖有流行搖滾編制但本體是電子。"
+  },
+  {
+   "artist": "The Chainsmokers",
+   "album": "World War Joy",
+   "year": 2019,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "EDM／流行舞曲，非搖滾。"
+  },
+  {
+   "artist": "ABBA",
+   "album": "ABBA",
+   "year": 1975,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "純流行團體，無搖滾本體，三張卡都已有 pop 撐著。"
+  },
+  {
+   "artist": "Tom Misch",
+   "album": "Full Circle",
+   "year": 2026,
+   "before": [
+    "rock",
+    "jazz"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "jazz／neo-soul 吉他製作人，非搖滾。"
+  },
+  {
+   "artist": "Little Simz",
+   "album": "Lotus",
+   "year": 2025,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "英國嘻哈。"
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Jonatan",
+   "year": 2025,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "瑞典 cloud rap。"
+  },
+  {
+   "artist": "The Chainsmokers",
+   "album": "Memories…Do Not Open",
+   "year": 2017,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "EDM／流行舞曲，非搖滾。"
+  },
+  {
+   "artist": "Bad Bunny",
+   "album": "X 100PRE",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "拉丁 trap／雷鬼動。"
+  },
+  {
+   "artist": "AURORA",
+   "album": "Infections of a Different Kind: Step 1",
+   "year": 2018,
+   "before": [
+    "pop",
+    "rock"
+   ],
+   "after": [
+    "pop"
+   ],
+   "正確標籤": "pop",
+   "理由": "北歐 art pop。"
+  },
+  {
+   "artist": "Jamie xx",
+   "album": "In Waves",
+   "year": 2024,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "舞曲／電子製作人。"
+  },
+  {
+   "artist": "Disclosure",
+   "album": "Alchemy",
+   "year": 2023,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "house／舞曲。"
+  },
+  {
+   "artist": "Michał Urbaniak",
+   "album": "Facts of Life",
+   "year": 1983,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "jazz",
+   "理由": "波蘭爵士小提琴／fusion。"
+  },
+  {
+   "artist": "Carl Craig",
+   "album": "Landcruising",
+   "year": 1995,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "底特律 techno 代表。"
+  },
+  {
+   "artist": "Robert Hood",
+   "album": "Motor: Nighttime World 3",
+   "year": 2012,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "底特律 minimal techno。"
+  },
+  {
+   "artist": "Juan Atkins",
+   "album": "The Berlin Sessions",
+   "year": 2005,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "底特律 techno 元祖。"
+  },
+  {
+   "artist": "Telefon Tel Aviv",
+   "album": "Fahrenheit Fair Enough",
+   "year": 2001,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "美國 IDM／電子二人組。"
+  },
+  {
+   "artist": "Jan Jelinek",
+   "album": "Kosmischer Pitch",
+   "year": 2005,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "德國 glitch／microhouse（取樣 krautrock 不等於搖滾）。"
+  },
+  {
+   "artist": "Venetian Snares",
+   "album": "Cavalcade of Glee and Dadaist Happy Hardcore Pom Poms",
+   "year": 2006,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "breakcore。"
+  },
+  {
+   "artist": "Kode9",
+   "album": "Black Sun",
+   "year": 2011,
+   "before": [
+    "rock",
+    "electronic"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Hyperdub 主理人，dubstep／電子。"
+  },
+  {
+   "artist": "Apparat",
+   "album": "Krieg und Frieden (Music for Theatre)",
+   "year": 2013,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "德國電子製作人。"
+  },
+  {
+   "artist": "Clark",
+   "album": "Iradelphic",
+   "year": 2012,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "Warp 系電子。"
+  },
+  {
+   "artist": "Luke Vibert",
+   "album": "We Hear You",
+   "year": 2009,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "英國 IDM／breakbeat 製作人。"
+  },
+  {
+   "artist": "Suzanne Ciani",
+   "album": "The Velocity of Love",
+   "year": 1986,
+   "before": [
+    "rock"
+   ],
+   "after": [],
+   "正確標籤": "electronic",
+   "理由": "電子合成器先驅／new age；現有 tags 只有 rock，摘掉 rock 後需補上 electronic，否則卡片會沒有曲風。"
+  },
+  {
+   "artist": "Blawan",
+   "album": "Wet Will Always Dry",
+   "year": 2018,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "techno。"
+  },
+  {
+   "artist": "808 State",
+   "album": "Gorgeous",
+   "year": 1993,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "acid house／techno。"
+  },
+  {
+   "artist": "Matmos",
+   "album": "The Rose Has Teeth in the Mouth of a Beast",
+   "year": 2006,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "實驗電子二人組。"
+  },
+  {
+   "artist": "Mr. Oizo",
+   "album": "Rubber",
+   "year": 2010,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "electronic",
+   "理由": "法國電子製作人；注意現有 tags 是 rock+soul，electronic 並不在內，摘掉 rock 後需補上 electronic。"
+  },
+  {
+   "artist": "The Weeknd",
+   "album": "Thursday",
+   "year": 2011,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "electronic",
+   "理由": "當代 alt-R&B／流行巨星，非搖滾；After Hours 靠 electronic 撐住，兩張 mixtape 由 hiphop 撐住。"
+  },
+  {
+   "artist": "The Weeknd",
+   "album": "Echoes of Silence",
+   "year": 2011,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "electronic",
+   "理由": "當代 alt-R&B／流行巨星，非搖滾；After Hours 靠 electronic 撐住，兩張 mixtape 由 hiphop 撐住。"
+  },
+  {
+   "artist": "Miguel",
+   "album": "Kaleidoscope Dream",
+   "year": 2012,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B 歌手；Wildheart 吉他感重但仍是 R&B，Kaleidoscope Dream 摘 rock 後只剩 hiphop，建議補 soul。猶豫。"
+  },
+  {
+   "artist": "6LACK",
+   "album": "East Atlanta Love Letter",
+   "year": 2018,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "R&B／嘻哈（卡上已有 hiphop）。"
+  },
+  {
+   "artist": "Khalid",
+   "album": "American Teen",
+   "year": 2017,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "soul",
+   "理由": "當代 R&B／流行歌手；卡上無 soul（rock+hiphop），摘 rock 後宜補 soul。"
+  },
+  {
+   "artist": "Gang Starr",
+   "album": "The Ownerz",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "紐約 boom bap 經典組合。"
+  },
+  {
+   "artist": "Brand Nubian",
+   "album": "In God We Trust",
+   "year": 1993,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Rick Ross",
+   "album": "God Forgives, I Don't",
+   "year": 2012,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Nappy Roots",
+   "album": "Watermelon, Chicken & Gritz",
+   "year": 2002,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方嘻哈。"
+  },
+  {
+   "artist": "Field Mob",
+   "album": "Light Poles and Pine Trees",
+   "year": 2006,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方嘻哈。"
+  },
+  {
+   "artist": "Talib Kweli",
+   "album": "Eardrum",
+   "year": 2007,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "紐約 conscious rap。"
+  },
+  {
+   "artist": "Mos Def",
+   "album": "The Ecstatic",
+   "year": 2009,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "The New Danger 是他與 Black Jack Johnson 樂團做的搖滾／藍調專輯，The Ecstatic 則是純嘻哈。"
+  },
+  {
+   "artist": "Dilated Peoples",
+   "album": "Neighborhood Watch",
+   "year": 2004,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 boom bap 嘻哈團。"
+  },
+  {
+   "artist": "Dilated Peoples",
+   "album": "20/20",
+   "year": 2006,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 boom bap 嘻哈團。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "Float",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "Bazooka Tooth",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "The Impossible Kid",
+   "year": 2016,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "Aesop Rock",
+   "album": "Spirit World Field Guide",
+   "year": 2020,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純 underground 嘻哈。"
+  },
+  {
+   "artist": "CunninLynguists",
+   "album": "Will Rap for Food",
+   "year": 2001,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方地下嘻哈。"
+  },
+  {
+   "artist": "CunninLynguists",
+   "album": "Southernunderground",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方地下嘻哈。"
+  },
+  {
+   "artist": "CunninLynguists",
+   "album": "A Piece of Strange",
+   "year": 2005,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方地下嘻哈。"
+  },
+  {
+   "artist": "CunninLynguists",
+   "album": "Oneirology",
+   "year": 2011,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "南方地下嘻哈。"
+  },
+  {
+   "artist": "Little Brother",
+   "album": "The Listening",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Little Brother",
+   "album": "Getback",
+   "year": 2007,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Little Brother",
+   "album": "May the Lord Watch",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈。"
+  },
+  {
+   "artist": "Binary Star",
+   "album": "Masters of the Universe",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "底特律地下嘻哈二人組。"
+  },
+  {
+   "artist": "Binary Star",
+   "album": "Waterworld",
+   "year": 1999,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "底特律地下嘻哈二人組。"
+  },
+  {
+   "artist": "Atmosphere",
+   "album": "Overcast!",
+   "year": 1997,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Rhymesayers 獨立嘻哈。"
+  },
+  {
+   "artist": "Atmosphere",
+   "album": "You Can't Imagine How Much Fun We're Having",
+   "year": 2005,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Rhymesayers 獨立嘻哈。"
+  },
+  {
+   "artist": "Atmosphere",
+   "album": "When Life Gives You Lemons, You Paint That Shit Gold",
+   "year": 2008,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "Rhymesayers 獨立嘻哈。"
+  },
+  {
+   "artist": "Eyedea & Abilities",
+   "album": "By the Throat",
+   "year": 2009,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "獨立嘻哈二人組（By the Throat 有噪音搖滾邊但本體是 rap）。"
+  },
+  {
+   "artist": "Del the Funky Homosapien",
+   "album": "No Need for Alarm",
+   "year": 1993,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈 MC。"
+  },
+  {
+   "artist": "Del the Funky Homosapien",
+   "album": "Both Sides of the Brain",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "純嘻哈 MC。"
+  },
+  {
+   "artist": "Mr. Lif",
+   "album": "I Phantom",
+   "year": 2002,
+   "before": [
+    "rock",
+    "hiphop"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "地下嘻哈。"
+  },
+  {
+   "artist": "Immortal Technique",
+   "album": "Revolutionary, Volume 1",
+   "year": 2001,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "政治饒舌 MC。"
+  },
+  {
+   "artist": "Zion I",
+   "album": "Mind Over Matter",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "灣區獨立嘻哈。"
+  },
+  {
+   "artist": "JPEGMAFIA",
+   "album": "LP!",
+   "year": 2021,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，噪音質地不等於搖滾。"
+  },
+  {
+   "artist": "JPEGMAFIA",
+   "album": "I LAY DOWN MY LIFE FOR YOU",
+   "year": 2024,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈，噪音質地不等於搖滾。"
+  },
+  {
+   "artist": "cLOUDDEAD",
+   "album": "Ten",
+   "year": 2004,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈（anticon）。"
+  },
+  {
+   "artist": "Antipop Consortium",
+   "album": "Tragic Epilogue",
+   "year": 2000,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "實驗嘻哈團。"
+  },
+  {
+   "artist": "Nosaj Thing",
+   "album": "Home",
+   "year": 2012,
+   "before": [
+    "electronic",
+    "rock"
+   ],
+   "after": [
+    "electronic"
+   ],
+   "正確標籤": "electronic",
+   "理由": "LA beat／電子。"
+  },
+  {
+   "artist": "Epik High",
+   "album": "Map of the Human Soul",
+   "year": 2003,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "韓國嘻哈團體。"
+  },
+  {
+   "artist": "KOHH",
+   "album": "Monochrome",
+   "year": 2014,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "日本嘻哈 MC。"
+  },
+  {
+   "artist": "KOHH",
+   "album": "UNTITLED",
+   "year": 2019,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "日本嘻哈 MC。"
+  },
+  {
+   "artist": "가리온",
+   "album": "가리온",
+   "year": 2004,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "韓國 boom bap 嘻哈二人組。"
+  },
+  {
+   "artist": "가리온",
+   "album": "가리온2",
+   "year": 2010,
+   "before": [
+    "hiphop",
+    "rock"
+   ],
+   "after": [
+    "hiphop"
+   ],
+   "正確標籤": "hiphop",
+   "理由": "韓國 boom bap 嘻哈二人組。"
+  },
+  {
+   "artist": "The Isley Brothers",
+   "album": "Shout!",
+   "year": 1959,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "核心是 R&B／soul／funk；3+3 的 Ernie Isley 吉他與 Shout! 的早期 rock'n'roll 讓我略猶豫，但主體是 soul。"
+  },
+  {
+   "artist": "Average White Band",
+   "album": "AWB",
+   "year": 1974,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "蘇格蘭 funk／soul 樂團，本體是放克靈魂（樂團編制讓我略猶豫）。"
+  },
+  {
+   "artist": "Mandrill",
+   "album": "Mandrill Is",
+   "year": 1972,
+   "before": [
+    "rock",
+    "soul"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "拉丁 funk/soul 大團；有搖滾吉他但本體是 funk。猶豫。"
+  },
+  {
+   "artist": "Graham Central Station",
+   "album": "My Radio Sure Sounds Good to Me",
+   "year": 1978,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Larry Graham 的放克樂團，本體是 funk／soul（拍擊貝斯的搖滾力道讓我猶豫）。"
+  },
+  {
+   "artist": "Graham Central Station",
+   "album": "Ain’t No ’Bout-a-Doubt It",
+   "year": 1975,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Larry Graham 的放克樂團，本體是 funk／soul（拍擊貝斯的搖滾力道讓我猶豫）。"
+  },
+  {
+   "artist": "Average White Band",
+   "album": "Soul Searching",
+   "year": 1976,
+   "before": [
+    "jazz",
+    "rock"
+   ],
+   "after": [
+    "jazz"
+   ],
+   "正確標籤": "soul",
+   "理由": "蘇格蘭 funk／soul 樂團，本體是放克靈魂（樂團編制讓我略猶豫）。"
+  },
+  {
+   "artist": "Graham Central Station",
+   "album": "Now Do U Wanta Dance",
+   "year": 1977,
+   "before": [
+    "soul",
+    "rock"
+   ],
+   "after": [
+    "soul"
+   ],
+   "正確標籤": "soul",
+   "理由": "Larry Graham 的放克樂團，本體是 funk／soul（拍擊貝斯的搖滾力道讓我猶豫）。"
+  },
+  {
+   "artist": "Bryce Dessner",
+   "album": "Aheym (Kronos Quartet)",
+   "year": 2013,
+   "before": [
+    "classical",
+    "rock"
+   ],
+   "after": [
+    "classical"
+   ],
+   "正確標籤": "classical",
+   "理由": "雖是 The National 吉他手，但 Aheym 是為 Kronos Quartet 寫的當代古典弦樂作品。"
+  }
+ ]
+}

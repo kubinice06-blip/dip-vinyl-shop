@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-22（同日第三筆）｜dip-vinyl-shop｜C：rock 誤標修正清單 370 張（提案，未套用）
+
+承前一筆的評估，執行 C 階段。派三支 agent 逐位覆核 `roots-other` 桶的 415 位藝人，
+判定該不該摘掉 `rock` 標籤。判定紀律是**從寬**：「這張卡出現在搖滾抽卡結果裡不會突兀」
+就保留；Dylan 型民謠創作歌手、藍調搖滾、放克搖滾一律保留——摘標籤是破壞性操作。
+
+**結果**：保留 159 位、應摘除 246 位、逐卡判定（同一藝人不同卡不同判定）10 位。
+展開到卡片層級為**保留 260 張、應摘 370 張**，套用後 `rock` 由 2,944 → **2,574**。
+
+摘掉的 370 張，正確主標籤分布：hiphop 123、electronic 102、pop 60、soul 38、
+jazz 23、folk 16、world 5、classical 2、blues 1。代表性的誤標包括整批嘻哈
+（Beastie Boys、Talib Kweli、MF DOOM、Gang Starr）、電子（Caribou、Bonobo、
+Jon Hopkins、Orbital、Suzanne Ciani）、主流流行（Taylor Swift、Britney Spears、
+Rihanna、Usher）與 soul（Beyoncé、Miguel、Khalid、Janelle Monáe）。
+
+**安全處理**：6 張卡的 tags 只有 `["rock"]`，摘掉會變成無曲風，清單標為「必補」
+（Ed Rush & Optical《Wormhole》→ electronic、Lapalux《Nostalchic》→ electronic、
+Caribou《Suddenly》→ electronic、Suzanne Ciani《The Velocity of Love》→ electronic、
+Norma Jean 兩張 → folk）。另有 19 張摘後只剩不準確的殘餘標籤（例如 Beyoncé
+《BEYONCÉ》摘掉 rock 只剩 hiphop），清單標為「建議補」。套用腳本預設兩者都補。
+
+**逐卡判定的 10 位**：Prince（只保留《Chaos and Disorder》）、Bee Gees（《Odessa》
+保留、《Main Course》→ soul）、Moby、Harry Styles、Poppy、Mos Def、Kid Cudi、
+Halsey、Return to Forever、Natalia Lafourcade。
+
+**最脆弱的判定**（店主可逐條推翻）：B.B. King《Live at the Regal》判 drop→blues
+（他在搖滾名人堂，但這張是純電氣藍調）；Beastie Boys 判 drop→hiphop（《Licensed to
+Ill》是 rap-rock，可考慮改逐卡判定）；Parliament 保留而 Graham Central Station
+判 drop→soul，同為放克卻兩樣處理，這條界線最脆弱；Lana Del Rey、Lady Gaga《Joanne》
+是搖滾傾向最高的兩張 pop 卡。
+
+主要檔案：`GENRE_FIX_ROCK_20260822.json`（新增，含統計、必補／建議補清單、370 筆
+逐卡修正與理由）、`scripts/apply-genre-fix.mjs`（新增，dry-run 預設，`--write` 才寫檔；
+內建保護：任何卡片會變成無曲風就中止不寫）。
+驗證：dry-run 顯示 370 筆全數對得上卡池、補上 25 張標籤、**摘後無曲風 0 張**、
+套用後 rock = 2,574。**清單為提案，尚未套用到 `seed_cards.json`**，等店主過目。
+
 ### 2026-08-22（同日第二筆）｜dip-vinyl-shop｜rock 標籤肥大評估：子曲風層規格 ＋ 誤標清理（C→B）
 
 店主指出「搖滾太多了」，要求評估能否拆成更有多樣性的分類。`rock` 2,944 張、
