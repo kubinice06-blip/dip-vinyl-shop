@@ -1,5 +1,47 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第十筆）｜dip-vinyl-shop｜c-TW2 三位台灣藝人的專輯目錄（13 張）
+
+`onboarding-manifest-ctw2-taiwan-artists-20260823.json`：**13 張，0 error，試聽 ready 11／13**。
+
+**緣起是店主糾正了我的方向。** c-TW 有兩張因為只找到 EP 形態、卡在 §5.5 白名單而未上架
+（瓢蟲《讓太空人跳舞》、Cicada《Over the Sea / Under the Water》），我當時想的是「要不要
+為台灣線放寬 EP 白名單」。店主說「瓢蟲、西卡達都有專輯不是嗎」——**正解不是改規格，
+是去收這兩位藝人的正規專輯**。教訓：卡在規格例外時，先確認是不是選錯了作品。
+
+**瓢蟲確實有且只有一張正規專輯**：1997《Ladybug》（自資、Not On Label、14 軌），
+**比 1998 年水晶那張 EP 還早**；水晶只出了 EP（CIRD1058）與女性合輯《女人在唱歌》(CIRD 1060-2)。
+
+**Cicada 的團名裁定：用英文 `Cicada`，不要「西卡達」。** MB artist `66dcb8ed` 無任何 alias，
+中英文維基皆無本團條目，「西卡達」在中文維基全站 11 筆命中全是《GUNDAM》那類無關音譯。
+所有台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013/018、風潮 TCD-5348/5350/5352）
+藝人欄一律印 Cicada。**專輯名反過來取中文主標**——MB 的 RG 主標題全是英文
+（Pieces／Let's Go／Coastland／Light Shining Through the Sea／White Forest／Hiking in the Mist／
+Seeking the Sources of Streams／Gazing the Shades of White），中文只存在 release 層，
+這就是自動配對十張只中一張的原因。
+
+**三張存疑載體的裁定**：
+- 《Ocean》drop —— MB secondary-type Compilation、只有數位 release、CAA 404、Apple 無，
+  且依 §5.6「同一藝人同一批錄音的多種合輯只挑最權威的一種」輸給四個月後的《Farewell》。
+- 《Farewell》(2016) 判 Compilation —— Discogs 日本盤 flau FLAU56 的 notes 原文
+  「Early works of Cicada」；14 軌裡 13 軌可回溯到既有作品。**寫作 agent 修正了裁定 agent 的
+  「無一是新作」說法**：第 10 軌〈Meteoric Night〉在 MB recording 查詢中只掛本輯，來源不明。
+- 《回返》(2024) 判 Compilation **但刻意不填 EP** —— 五軌合計約 41 分鐘（5:43/9:01/7:13/10:08/8:57），
+  Discogs 的「Mini-Album」只是按曲數給的描述，被時長推翻；填 EP 會撞白名單被擋且與事實不符。
+
+**一筆「封面 vs 實體投稿標題」相衝，待店主明文確認**：何欣穗 2013 那張，
+**封面手寫體實印 `she and me`**（and 完整拼出，已實看 1000×1000 確認），
+但兩個 Discogs 實體投稿標題與 Apple TW 都印 `&`。依裁定表「實體發行品 credit 最優先」
+採《She and Me》，三種寫法（含中文維基單曲表的全形〈She ＆ Me〉）全進 aliasReview。
+
+**修正一則自己先前的錯誤轉述**：我曾說瓢蟲《Ladybug》「CAA 也沒有封面、只能實體掃圖」，
+實測 CAA front 回 200、600×595。這批 13 張全部備齊封面（何欣穗兩張是我自己列 Apple
+全目錄找到後下載實看補上的——自動救援只會用試聽配對成功的 collectionId 取圖，
+試聽先落空就連帶失去封面，這是管線的一個連動盲點）。
+
+**疑似 pearl 兩張**：瓢蟲《Ladybug》（自資無廠牌、無數位版）、Cicada《一起走吧》
+（Discogs 零建檔、無國際版）。apex hall／heresy 皆無。
+
 ### 2026-08-23（同日第九筆）｜dip-vinyl-shop｜c-TW 台灣獨立樂團批（52 張）＋店主點名清單機制
 
 店主開始零星點名專輯／藝人／方向，新增 `CURATION_WISHLIST.md` 滾動累積，

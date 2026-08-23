@@ -93,7 +93,7 @@ Bandcamp、Discogs 圖床、台灣各站台都被本環境的 egress proxy 擋�
 3. **《把我自己收回來》不收** —— 店主裁定，不另立卡。此案結案，
    `TW_INDIE_NAMING_RULINGS.md` 第三章的「日後要收必須另立裁定」條款維持有效但不啟用。
 
-### 2026-08-23（第二批）｜三位藝人的專輯目錄（c-TW2，研究中）
+### 2026-08-23（第二批）｜三位藝人的專輯目錄（c-TW2）　**已完成，13 張上架**
 
 店主點名 **何欣穗**，並指出瓢蟲與 Cicada 有正規專輯。研究範圍：
 
@@ -107,4 +107,12 @@ Bandcamp、Discogs 圖床、台灣各站台都被本環境的 egress proxy 擋�
 c-41 已收 林生祥《臨暗》（用 2022 重新混音版封面），本批的 生祥與瓦窯坑3《臨暗》是同一張碟
 （MB credit 作「生祥與瓦窯坑 3」）。本批那張因封面問題未上架，不構成重複，
 但你本機若要改 c-41 那張的 artist 掛名，正名裁定表裡有兩種寫法的紀錄。
+
+**c-TW2 結果**：13 張全部上架（`onboarding-manifest-ctw2-taiwan-artists-20260823.json`，0 error，
+試聽 ready 11／13）。瓢蟲《Ladybug》(1997) ＋ Cicada 十張 ＋ 何欣穗兩張。
+Cicada《Ocean》drop（早期作品輯，與《Farewell》重疊且無封面來源）。
+
+**一筆待你明文確認**：何欣穗 2013 那張的正名。**封面手寫體實印 `she and me`**，
+但 Discogs 兩個實體投稿標題與 Apple TW 都印 `She & Me`。目前依「實體發行品 credit 最優先」
+採《She and Me》，三種寫法都進了 aliasReview。你若認為該用 `&` 號，改一個字串即可。
 
