@@ -272,3 +272,34 @@ Blockhead 4、Prefuse 4、Kaytranada 4。
 5. **西岸 Bay Area＋G-funk 深度**——E-40、Too $hort、Mac Dre 全零，Dr. Dre 2001 也缺；灣區作為獨立生態系完全不存在。
 
 另兩個單點硬傷值得插隊：**Bone Thugs-N-Harmony 全缺**（E. 1999 Eternal）、**DJ Screw／Memphis 地下**（Tommy Wright III、Project Pat）——phonk/現代南方美學的源頭。
+
+---
+
+## ⚠ 本報告的自我更正（2026-08-23，c-45 策展時逐鍵複驗發現）
+
+本報告第 3、7 節有三處「已在池」的陳述是錯的，而且順著查下去又挖出六個同級旗艦缺頁。
+以 2026-08-23 的 11,522 筆全池鍵逐一精確比對（非子字串 grep）確認：
+
+**稽核誤判三筆**
+- **Dr. Dre — 全池零張**（本報告稱《The Chronic》已有）。《2001》也沒有。
+- **N.W.A — 全池零張**（本報告只把《Efil4zaggin》列為缺口，但《Straight Outta Compton》同樣缺席）。
+- **Kendrick Lamar — 只有 4 張不是 6 張**：池內是 Section.80／DAMN.／Mr. Morale／GNX，
+  **缺《good kid, m.A.A.d city》與《To Pimp a Butterfly》**。
+
+**本報告完全漏列的旗艦缺頁六筆**
+- Nas《Illmatic》（池內有 Stillmatic／It Was Written／God's Son／Life Is Good／[untitled]，獨缺首作）
+- Wu-Tang Clan《Enter the Wu-Tang (36 Chambers)》（池內有 Forever／The W／8 Diagrams，獨缺首作）
+- The Notorious B.I.G.《Ready to Die》（池內有 Life After Death／Duets，獨缺首作）
+- Public Enemy《It Takes a Nation of Millions to Hold Us Back》
+- A Tribe Called Quest《The Low End Theory》
+- Kanye West《My Beautiful Dark Twisted Fantasy》、OutKast《Stankonia》
+
+**這是 `MUSIC_DATABASE_ROADMAP.md` §5.1 反模式（抓次要作漏招牌作）最極端的一組實例**——
+而且連稽核本身都沒抓到。教訓：**稽核用的 grep 若是子字串比對，短藝人名（Nas、Ka、AZ、YG、Eve）
+與常見詞（Chronic、Message、23、777）會產生大量假陽性，把「有這個藝人」誤讀成「有這張碟」。**
+往後的稽核與去重一律走「藝人欄精確比對＋專輯欄精確比對」，或直接以 rgMbid 為鍵。
+
+**另因 8-22 之後新增的 787 張已補掉 8 筆**：Afrika Bambaataa《Planet Rock: The Album》、
+Mantronix《The Album》、Egyptian Lover《On the Nile》、Newcleus《Jam on Revenge》、
+キングギドラ《空からの力》、スチャダラパー《5th Wheel 2 the Coach》、Ka 兩張
+（Ka 現有 6 張，本報告記「僅 1 張」已過時，該線飽和）。
