@@ -275,31 +275,38 @@ Blockhead 4、Prefuse 4、Kaytranada 4。
 
 ---
 
-## ⚠ 本報告的自我更正（2026-08-23，c-45 策展時逐鍵複驗發現）
+## ⚠ 更正的更正（2026-08-23）：本報告原本是對的，錯的是去重用的鍵檔
 
-本報告第 3、7 節有三處「已在池」的陳述是錯的，而且順著查下去又挖出六個同級旗艦缺頁。
-以 2026-08-23 的 11,522 筆全池鍵逐一精確比對（非子字串 grep）確認：
+c-45 策展時，agent 回報「稽核誤判三筆＋漏列六個旗艦缺頁」（稱 Dr. Dre 全池零張、
+N.W.A 零張、Nas 缺《Illmatic》、Wu-Tang 缺《36 Chambers》、Biggie 缺《Ready to Die》等），
+我當時採信並寫進本報告，**那份更正是錯的，已於同日撤回**。
 
-**稽核誤判三筆**
-- **Dr. Dre — 全池零張**（本報告稱《The Chronic》已有）。《2001》也沒有。
-- **N.W.A — 全池零張**（本報告只把《Efil4zaggin》列為缺口，但《Straight Outta Compton》同樣缺席）。
-- **Kendrick Lamar — 只有 4 張不是 6 張**：池內是 Section.80／DAMN.／Mr. Morale／GNX，
-  **缺《good kid, m.A.A.d city》與《To Pimp a Butterfly》**。
+**真正的問題出在去重用的鍵檔漏了 `apex_pool.json` 的 634 張王牌。**
+根因有兩個，都在 `scratchpad/pipeline/pool-keys.mjs` 修掉了：
 
-**本報告完全漏列的旗艦缺頁六筆**
-- Nas《Illmatic》（池內有 Stillmatic／It Was Written／God's Son／Life Is Good／[untitled]，獨缺首作）
-- Wu-Tang Clan《Enter the Wu-Tang (36 Chambers)》（池內有 Forever／The W／8 Diagrams，獨缺首作）
-- The Notorious B.I.G.《Ready to Die》（池內有 Life After Death／Duets，獨缺首作）
-- Public Enemy《It Takes a Nation of Millions to Hold Us Back》
-- A Tribe Called Quest《The Low End Theory》
-- Kanye West《My Beautiful Dark Twisted Fantasy》、OutKast《Stankonia》
+1. **`apex_pool.json` 是物件不是陣列** —— 它的結構是 `{hall: [...], pearl: [...], heresy: [...]}`，
+   舊的鍵檔產生腳本用 `for (const r of JSON.parse(...))` 直接迭代物件會拋 TypeError，
+   而那行外面包了 `try/catch` 把錯誤吞掉 —— **靜默失敗，634 張王牌從此不在去重集裡**。
+2. **正規化沒有摺 U+2010–2015 連字號** —— `a‐ha`、`Drive‐By Truckers`、`B‐52s`、`μ‐Ziq`
+   在 ASCII grep 下必然零命中，會被誤判為「池內沒有」。
 
-**這是 `MUSIC_DATABASE_ROADMAP.md` §5.1 反模式（抓次要作漏招牌作）最極端的一組實例**——
-而且連稽核本身都沒抓到。教訓：**稽核用的 grep 若是子字串比對，短藝人名（Nas、Ka、AZ、YG、Eve）
-與常見詞（Chronic、Message、23、777）會產生大量假陽性，把「有這個藝人」誤讀成「有這張碟」。**
-往後的稽核與去重一律走「藝人欄精確比對＋專輯欄精確比對」，或直接以 rgMbid 為鍵。
+實測結果：那 11 張「旗艦缺頁」**全部都在 `apex_pool.json` 的 hall 層**——
+Illmatic (1994)、36 Chambers (1993)、Ready to Die (1994)、The Chronic (1992)、
+Straight Outta Compton (1988)、It Takes a Nation (1988)、The Low End Theory (1991)、
+good kid m.A.A.d city (2012)、To Pimp a Butterfly (2015)、MBDTF (2010)、Stankonia (2000)。
+本報告第 3、7 節的原始陳述沒有問題。
 
-**另因 8-22 之後新增的 787 張已補掉 8 筆**：Afrika Bambaataa《Planet Rock: The Album》、
-Mantronix《The Album》、Egyptian Lover《On the Nile》、Newcleus《Jam on Revenge》、
-キングギドラ《空からの力》、スチャダラパー《5th Wheel 2 the Coach》、Ka 兩張
-（Ka 現有 6 張，本報告記「僅 1 張」已過時，該線飽和）。
+**教訓（比缺口本身重要）**：
+- **靜默的 `try/catch` 會把「資料來源讀不到」偽裝成「資料來源是空的」。** 去重集這種
+  「漏一筆就重複上架」的東西，讀取失敗必須 fail loud。
+- **驗證一個「缺席」結論，成本比驗證「存在」高得多。** 說某張碟在池內，隨手 grep 就能確認；
+  說某張碟不在池內，等於宣稱「我掃過了全部來源」——而這正是最容易錯的地方。
+  往後凡是「某某旗艦作竟然缺席」這種反直覺結論，一律先回頭驗證去重集的**完整性**再下結論。
+- 鍵檔一律用 `scratchpad/pipeline/pool-keys.mjs` 產生（seed 8,314 ＋ apex 634 ＋
+  manifest 3,208 = 12,156 筆，正規化後 12,153 鍵），不要臨時手寫。
+
+**唯一站得住的原始發現**：8-22 之後新增的批次已補掉 8 筆稽核列為缺口的項目——
+Afrika Bambaataa《Planet Rock: The Album》、Mantronix《The Album》、Egyptian Lover《On the Nile》、
+Newcleus《Jam on Revenge》、キングギドラ《空からの力》、スチャダラパー《5th Wheel 2 the Coach》、
+Ka 兩張（Ka 現有 6 張，本報告記「僅 1 張」已過時）。
+另 **Grandmaster Flash《The Message》經完整鍵檔複驗確實仍缺席**，本報告該項成立。
