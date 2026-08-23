@@ -670,6 +670,124 @@ Second Winter、Strong Persuader、Kingfish、T-Bone Blues。與現池、apex_po
   （Thornton 的 Arhoolie 老黑膠查無條碼，規則允許留空）。
 - 分支 `claude/batch-c29-album-onboarding-oolzb1` 開 draft PR；上架寫入與 published gate 留本機。
 
+### 2026-08-23（後續）｜dip-vinyl-shop｜iOS 縮放改用 16px 字級真正解掉；Portishead 封面已修
+
+## 一、上一筆的 maximum-scale 沒有用，店主回報「點搜尋 bar 依然會放大一點」
+
+**上一筆做錯的判斷**：以為只要在 iOS 補 `maximum-scale=1` 就能擋掉聚焦自動縮放。
+實測不成立——新版 iOS Safari 基於無障礙考量已經會忽略 viewport 的縮放限制，
+`maximum-scale` 不可靠（動態用 JS 改 meta 更不可靠）。
+
+**真正可靠的只有一條**：讓聚焦的輸入框字級 ≥ 16px，iOS 就不會放大。
+站上輸入框全在 11–13px（topbar search 11、首頁與搜尋專輯 12–13、結帳 11），所以全中。
+
+**修法**（index.html 第二個 style 區塊結尾）：
+```css
+@media (hover: none) and (pointer: coarse) {
+  input, select, textarea { font-size: 16px !important; }
+}
+```
+只在觸控裝置套用，桌機維持原本的小字設計。**必須 `!important`**——各輸入框的
+11–13px 都寫在 class 選擇器上（`.album-search-bar input` 等），具體度比裸 `input` 高，
+只靠排在後面贏不了。上一筆的 viewport JS 保留（對舊版 iOS 仍有效、無副作用）。
+
+**驗證**：Playwright 兩種情境量 computed font-size——iPhone（isMobile+hasTouch，
+`(hover:none) and (pointer:coarse)` 為 true）五個輸入框全 16px；桌機維持 11/12/13px。
+行動版截圖確認搜尋列版面沒被撐壞（`全部` 下拉與輸入框仍並排）。
+
+## 二、Portishead 同名專輯封面已修
+
+`card_catalog/portishead|portishead` 的 `coverUrl` 原本指到 CAA 上一張叫
+「Portishead in Portishead」的私錄現場（黑底大「3」），不是 1997 的黑白同名專輯。
+改寫成 iTunes 官方版（collectionId 1440933279）：
+`https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/20/d1/97/20d1978c-e152-61a0-77cf-119397215d51/06UMGIM15814.rgb.jpg/600x600bb.jpg`
+
+以 Firestore REST `PATCH` + `updateMask` 只改 `coverUrl` 與 `updatedAt`，
+回讀確認 `desc`、三軸、`rarity` 都原封不動。（`card_catalog` 的規則允許未登入寫入，
+但限制文件形狀，見 firestore.rules。）
+
+
+### 2026-08-23（後續）｜dip-vinyl-shop｜後台卡牌校正：補上封面欄位、簡介不再顯示舊的心理測驗式描述
+
+店主：後台的簡介很奇怪，而且無法改封面。兩件事都是**後台與前台已經對不上**。
+
+## 一、簡介顯示的是前台早就不用的舊描述
+
+`loadOverrideEditor()` 的優先序退回 `cat?.desc`（card_catalog 抽卡當下存的那份）。
+2026-08-16 前台已改成一律走 `/album-desc` 事實型簡介、**不再讀 cat.desc**，
+所以舊卡的 card_catalog 裡還躺著當年心理測驗式的文字。實證：Firestore
+`card_catalog/portishead|portishead` 的 `desc` 就是店主截圖那段
+「你的生活很清爽，卻在夜裡做著無邊界的夢——」，而 `album_overrides` 這張根本沒建檔。
+
+**這不只是顯示問題**：那段文字是預填在輸入框裡的，只要按下「儲存校正」就會被寫進
+`album_overrides.desc`，於是前台真的變回舊文風——後台等於能把已經淘汰的描述倒灌回站上。
+
+**修法**：優先序改成與前台卡片詳情一致（既有校正 > worker curated 神作人工簡介 >
+`/album-desc`），拿掉 `cat?.desc` 這一段；載入訊息也改成「已載入專輯簡介（與前台顯示同一份）」。
+
+## 二、標題寫「點封面編輯」，但根本沒有封面欄位
+
+modal 裡的封面只有 `<img id="ovModalCover">` 純顯示，`btnSaveOverride` 只寫
+`album_overrides`（artist／album／desc／三軸／tier）。而前台 `resolveCardAssets()`
+的封面來源是 `card_catalog.coverUrl`，**兩邊完全沒有交集**，所以配錯封面在後台無解。
+
+**修法**（admin.html）：
+- modal 加 `#ovCover` 網址欄位，載入時填 `cat.coverUrl`（清單傳入的值僅當備援）；
+  `input` 事件即時換掉標頭縮圖，存檔前先看得到對不對。
+- 儲存時**只在網址真的改過**才寫 `card_catalog`（merge，帶 artist／album 以符合
+  Firestore 規則、讓沒進過卡片庫的專輯也能建檔）；留空＝`deleteField()` 清掉，
+  前台回頭自動抓。驗證 https:// 開頭與 600 字上限（對齊 firestore.rules 的欄位限制）。
+
+**Portishead 同名專輯就是這個坑**：card_catalog 存的是 CAA 上一張叫
+「Portishead in Portishead」的私錄現場（黑底大「3」），不是 1997 的黑白同名專輯。
+正確封面（iTunes collectionId 1440933279）：
+`https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/20/d1/97/20d1978c-e152-61a0-77cf-119397215d51/06UMGIM15814.rgb.jpg/600x600bb.jpg`
+——現在可以直接在後台貼上修好。
+
+**驗證**：本機 8903＋Playwright 載入 admin.html（Firebase CDN 被沙箱擋，改餵 npm 同版
+檔案）：無 pageerror，`#ovCover` 存在，貼上網址縮圖同步、清空縮圖隱藏。
+未登入時 `.lock` 蓋全頁且 `#panel-cards` 是 `display:none`，測試要先掀開這兩層才點得到。
+
+### 2026-08-23（後續）｜dip-vinyl-shop｜iOS 點搜尋輸入框不再自動放大頁面
+
+店主：手機上按搜尋條會自動放大頁面，很煩。
+
+**原因**：iOS Safari 的固定行為——聚焦的輸入框字級 < 16px 就自動 zoom，
+而全站輸入框（首頁搜尋、搜尋專輯、topbar search）都是 11–13px。
+
+**修法**（index.html `<head>`，viewport meta 之後）：只在 iOS（含 iPadOS 桌面 UA）
+用 JS 對 viewport 補 `maximum-scale=1`。iOS 10 起手動雙指縮放不受 maximum-scale
+限制，只有聚焦自動縮放被擋掉；Android 不加，避免真的鎖死縮放。
+沒有動任何輸入框字級，設計不變。
+
+**驗證**：Playwright 分別以 iPhone／Android UA 載入——iPhone 的 viewport content
+變成 `…, maximum-scale=1`，Android 維持原樣。
+
+### 2026-08-23｜dip-vinyl-shop｜搜尋專輯的卡片詳情補上「✈ 分享卡片」
+
+店主：搜尋出來的專輯卡沒有分享按鈕，比照一般分享按鈕流程，並生成截圖。
+
+**原狀**：`openSearchDetail()`（搜尋結果詳情）當初刻意只留閱覽，註解寫明
+「沒有收藏／分享／刪除」；一般流程是唱片櫃詳情的 `cd-share` 按鈕 →
+`shareCard()` → `buildShareCanvas()` 產 1080×1920 圖 → `navigator.share`
+（不支援就後備下載 dip-card.jpg）。
+
+**改法（index.html 三處，全走既有流程不另起爐灶）**：
+- `openSearchDetail()` 詳情底部加同一顆 `<button class="cd-share" data-cd-share=...>`，
+  點擊本來就會被全域委派 handler 接到 `shareCard()`，不用加新監聽。
+- `shareCard()` 用 `as:` 前綴認出搜尋卡，改查 `_asResults`（資料形狀與
+  `_collCache` 相同：artist/album/coverUrl/ratings/rarity），唱片櫃卡行為不變。
+- 分享文案分流：搜尋卡「我在 dip 找到這張唱片 →」，唱片櫃卡維持
+  「我在 dip 唱片櫃抽到這張 →」。頂點三張的 `_tierInfo` 掃光規則沿用原判斷。
+
+**驗證**：本機 8903 起站＋Playwright 實走（390×844 行動視窗）：搜尋
+「Beach Boys」→ 卡池 7 張 → 開《Surf's Up》詳情有分享鈕 → 點擊走後備下載，
+拿到的 dip-card.jpg 版面正確（等級／封面框／三軸星星／介紹框／dipvinyl.tw 頁腳），
+無 pageerror。截圖存 scratchpad。**沙箱限制**：這環境的 egress policy 擋
+`www.gstatic.com`（Firebase CDN，用 npm 同版檔案經 Playwright route 餵給頁面）與
+`dip-vinyl-worker.workers.dev`（封面／簡介／星星補值），所以截圖裡封面是 ♪
+佔位、簡介空白——線上不受影響。
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜og-random.png 重畫：填色模式錯了，不是字型錯
 
 店主看到第一版說「字體完全搞錯了，要跟心情選歌一樣」。

@@ -903,7 +903,10 @@
         </div>
       </div>
       <div id="ovEditor">
-        <div class="section-label" style="margin-bottom:8px;">介紹</div>
+        <div class="section-label" style="margin-bottom:8px;">封面網址（前台的封面來源；留空＝回頭自動抓）</div>
+        <input id="ovCover" type="url" placeholder="https://…jpg" style="width:100%;border:1px solid var(--line);padding:9px 10px;font-family:var(--mono);font-size:11px;outline:none;background:#fff;">
+        <div style="font-size:10px;color:var(--gray);margin-top:6px;line-height:1.7;">貼上正確封面網址後按「儲存校正」寫回 card_catalog；上方縮圖會即時預覽。配錯封面（同名現場盤、合輯）就是改這裡。</div>
+        <div class="section-label" style="margin:14px 0 8px;">介紹</div>
         <textarea id="ovDesc" rows="6" style="width:100%;border:1px solid var(--line);padding:10px;font-family:var(--mono);font-size:13px;line-height:1.8;outline:none;background:#fff;resize:vertical;"></textarea>
         <div class="section-label" style="margin:14px 0 8px;">頂點級別（單軸 7 星王牌，按下即設定；可不選）</div>
         <div class="ov-tier-row" id="ovTierRow">
@@ -3120,6 +3123,15 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
 
   let ovLoadToken = 0; // 防止快速連點時，前一張的非同步結果蓋掉後一張
+  let ovCoverLoaded = ''; // 載入這張時的封面，儲存時用來判斷有沒有真的改過
+
+  // 封面欄位即時預覽：貼上網址就換掉標頭縮圖，存檔前先看到對不對
+  document.getElementById('ovCover').addEventListener('input', (e) => {
+    const el = document.getElementById('ovModalCover');
+    const url = e.target.value.trim();
+    if (url) { el.src = url; el.style.visibility = 'visible'; }
+    else { el.removeAttribute('src'); el.style.visibility = 'hidden'; }
+  });
 
   async function loadOverrideEditor(artist, album, coverUrl) {
     const a = (artist ?? document.getElementById('ovArtist').value).trim();
@@ -3137,6 +3149,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (coverUrl) { coverEl.src = coverUrl; coverEl.style.visibility = 'visible'; }
     else { coverEl.removeAttribute('src'); coverEl.style.visibility = 'hidden'; }
     // 先清空欄位，避免載入期間殘留上一張的內容
+    document.getElementById('ovCover').value = '';
     document.getElementById('ovDesc').value = '';
     document.getElementById('ovObscurity').value = '';
     document.getElementById('ovClassic').value = '';
@@ -3157,8 +3170,14 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (token !== ovLoadToken) return; // 已切到別張，丟棄這次結果
     const ov = ovSnap && ovSnap.exists && ovSnap.exists() ? ovSnap.data() : null;
     const cat = catSnap && catSnap.exists && catSnap.exists() ? catSnap.data() : null;
-    // 優先序：既有校正 > 神作人工簡介(worker curated) > 抽卡當下介紹 > AI 重生
-    document.getElementById('ovDesc').value = ov?.desc || (aiDescR.curated ? aiDescR.desc : '') || cat?.desc || aiDescR.desc || '';
+    // 封面：前台只認 card_catalog.coverUrl，所以這裡也一律顯示／寫回那一份
+    //（清單傳進來的 coverUrl 就是同一份，僅在 catalog 尚未建檔時當備援）
+    ovCoverLoaded = cat?.coverUrl || coverUrl || '';
+    document.getElementById('ovCover').value = ovCoverLoaded;
+    // 優先序比照前台（index.html 卡片詳情）：既有校正 > 神作人工簡介(worker curated) > 專輯簡介。
+    // 刻意不再退回 cat.desc——那是抽卡當下存的舊版心理測驗式描述，前台早就不讀了；
+    // 這裡若顯示它，等於一按儲存就把那種文風寫回 album_overrides，前台反而變回舊描述。
+    document.getElementById('ovDesc').value = ov?.desc || (aiDescR.curated ? aiDescR.desc : '') || aiDescR.desc || '';
     document.getElementById('ovObscurity').value = ov?.obscurity || '';
     document.getElementById('ovClassic').value = ov?.classic || '';
     document.getElementById('ovAccessibility').value = ov?.accessibility || '';
@@ -3169,7 +3188,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const hasCorrection = !!(ov && (ov.desc || ov.obscurity || ov.classic || ov.accessibility || ov.tier));
     msg.textContent = hasCorrection ? '已載入（此張已有校正）'
       : ov?.previewUrl ? '已載入（已有固定試聽，尚無介紹／評分校正）'
-      : (cat?.desc ? '已載入（抽卡當下版本），可修改' : '已載入 AI 版本，可修改');
+      : '已載入專輯簡介（與前台顯示同一份），可修改';
   }
 
   document.getElementById('btnLoadOverride').addEventListener('click', () => loadOverrideEditor());
@@ -3190,9 +3209,23 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (ac) data.accessibility = ac;
     // 頂點級別：設了就寫旗標（前台唱片櫃／對戰會把該軸當 7 星王牌），取消則刪欄位
     data.tier = ovTierSel ? ovTierSel : deleteField();
+    // 封面改到 card_catalog（前台 resolveCardAssets 只認那一份），沒動就不寫
+    const cover = document.getElementById('ovCover').value.trim();
+    const coverChanged = cover !== ovCoverLoaded;
+    if (coverChanged && cover && !/^https:\/\/.+/i.test(cover)) { msg.textContent = '封面網址要是 https:// 開頭'; return; }
+    if (cover.length > 600) { msg.textContent = '封面網址過長（上限 600 字）'; return; }
     try {
       await setDoc(doc(db, 'album_overrides', id), data, { merge: true });
-      msg.textContent = ovTierSel ? '✓ 已存：設為頂點卡，前台／對戰即生效' : '✓ 已儲存校正，前台唱片櫃會優先顯示';
+      if (coverChanged) {
+        // 帶 artist/album 是為了這張還沒進過卡片庫時也能建檔（Firestore 規則要求這兩個欄位）
+        await setDoc(doc(db, 'card_catalog', id), {
+          artist: a, album: b, updatedAt: Date.now(),
+          coverUrl: cover || deleteField(),
+        }, { merge: true });
+        ovCoverLoaded = cover;
+      }
+      const coverNote = coverChanged ? (cover ? '，封面已更新' : '，封面已清除（前台會回頭自動抓）') : '';
+      msg.textContent = (ovTierSel ? '✓ 已存：設為頂點卡，前台／對戰即生效' : '✓ 已儲存校正，前台唱片櫃會優先顯示') + coverNote;
       loadCatalog();
     } catch (e) { msg.textContent = '儲存失敗：' + (e.message || e); }
   });

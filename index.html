@@ -4,6 +4,18 @@
   <meta charset="UTF-8"/>
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <script>
+    // iOS Safari 點輸入框（字級 < 16px）會自動放大頁面且不會自己縮回來。
+    // 只對 iOS 補 maximum-scale=1 擋掉這個自動縮放：iOS 10 起手動雙指縮放
+    // 不受 maximum-scale 限制，可照常放大；Android 不加，免得真的鎖死縮放。
+    (function () {
+      var ua = navigator.userAgent;
+      var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (!isIOS) return;
+      var v = document.querySelector('meta[name="viewport"]');
+      if (v && v.content.indexOf('maximum-scale') === -1) v.content += ', maximum-scale=1';
+    })();
+  </script>
   <title>dip vinyl shop</title>
   <!-- PWA：選歌 App -->
   <link rel="manifest" href="/manifest.json">
@@ -656,6 +668,15 @@
     /* 那顆小按鈕比 CTA 小一號，不跟「收進唱片櫃」搶視線 */
     .quiz-desc-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-desc-btn:hover { border-color: var(--black); color: var(--black); }
+
+    /* ── 觸控裝置：輸入框字級撐到 16px，擋掉 iOS 聚焦時自動放大整頁 ──
+       iOS Safari 只要聚焦的輸入框字級 < 16px 就會放大畫面，而且退出後不會自己縮回來。
+       viewport 的 maximum-scale 在新版 iOS 已因無障礙考量被忽略（不可靠），
+       唯一穩的解法就是把字級撐到 16px。桌機維持原本的小字設計，只有觸控裝置套用。
+       用 !important 是因為各輸入框的 11–13px 都寫在 class 選擇器上，具體度比這裡高。 */
+    @media (hover: none) and (pointer: coarse) {
+      input, select, textarea { font-size: 16px !important; }
+    }
 
   </style>
 <link rel="stylesheet" href="dip-draw-anim.css?v=1">
@@ -2462,7 +2483,8 @@
   }
 
   // 搜尋結果詳情：與唱片櫃卡片詳情同一個 overlay、同一套簡介優先序
-  //（後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc），但沒有收藏／分享／刪除
+  //（後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc），但沒有收藏／刪除；
+  // 分享走唱片櫃同一顆 cd-share 按鈕（shareCard 會用 as: 前綴認出搜尋卡）
   async function openSearchDetail(idx) {
     const c = _asResults[idx];
     if (!c) return;
@@ -2478,6 +2500,7 @@
       <div class="cd-stars" id="cdStars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       <div class="cd-streaming" id="cdStreaming"></div>
+      <button class="cd-share" data-cd-share="${escapeCollectionHtml(c.cardId)}">✈ 分享卡片</button>
     `;
     ov.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -5336,7 +5359,9 @@ ${seenList}
   }
 
   async function shareCard(cardId) {
-    const card = _collCache.find(c => c.cardId === cardId);
+    // as: 前綴是「搜尋專輯」的結果卡（僅閱覽、不在唱片櫃）；資料形狀與 _collCache 相同
+    const fromSearch = cardId.startsWith('as:');
+    const card = fromSearch ? _asResults.find(c => c.cardId === cardId) : _collCache.find(c => c.cardId === cardId);
     if (!card) return;
     const descEl = document.getElementById('cdDesc');
     let desc = descEl ? descEl.textContent.trim() : '';
@@ -5354,7 +5379,7 @@ ${seenList}
       const file = new File([blob], 'dip-card.jpg', { type: 'image/jpeg' });
       const shareUrlStr = 'https://dipvinyl.tw';
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${card.artist} — ${card.album}`, text: '我在 dip 唱片櫃抽到這張 →', url: shareUrlStr });
+        await navigator.share({ files: [file], title: `${card.artist} — ${card.album}`, text: fromSearch ? '我在 dip 找到這張唱片 →' : '我在 dip 唱片櫃抽到這張 →', url: shareUrlStr });
       } else {
         // 後備：下載圖片
         const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'dip-card.jpg'; a.click();
