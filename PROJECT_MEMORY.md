@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第三筆）｜dip-vinyl-shop｜c-39 放克／disco／acid jazz／rare groove 批定案（232 張）
+
+`onboarding-manifest-c39-funk-20260823.json`：**232 張，0 error（prepare gate）**。
+15 塊寫作 agent 產出 258 張成稿，經救援與去重後定案。
+
+**救援成果**：兩張 RG 配錯重釘——James Brown《Sex Machine》原本掛到廉價 CD 精選，
+改釘 1970 King KS-7-1115 雙 LP；Odyssey 同名作原本掛到 1972 Mowest 同名團，
+改釘 1977 RCA APL1-2204 三人組（〈Native New Yorker〉所在）。
+封面錯圖 15 張救回 13、試聽錯配 10 張救回 9。
+
+**去重**：跨 manifest 以 rgMbid 掃描，與 c-37／c-38 重複 22 張（254 → 232）。
+放克／爵士放克／disco soul 三線候選重疊本來就高，這道去重不能省。
+
+**留給本機收尾**：Johnny Hammond《Wild Horses Rock Steady》唯一可得圖是 CD 紙盒商品照，
+整張退回未上架；Weldon Irvine《Spirit Man》封面抓取失敗未進寫作；
+Voyage／Light of the World／Mondo Grosso 三張同名卡缺 ready 試聽，依規則不上架；
+Trouble Funk《Drop the Bomb》全站只有 12 吋版，判 unavailable 待補 YouTube；
+Incognito《Jazz Funk》與 Charles Earland《Black Drops》只找得到帶再版標記的封面，
+已取最乾淨的版本並註明待換原盤掃圖。
+
+**apex 候選 6 張（hall）**：Donna Summer《Love to Love You Baby》、Sparks《No. 1 in Heaven》、
+Gloria Gaynor《Never Can Say Goodbye》、Sylvester《Step II》、
+Chuck Brown & the Soul Searchers《Bustin' Loose》、Young Disciples《Road to Freedom》。
+試聽 ready 189／unavailable 43。
+
+**本輪學到的兩件事**：
+1. 寫作 agent 目測字數完全不可靠——多塊初稿有七成以上超過 280 字（最長 388），
+   一律要求交件前實跑 `Array.from(desc).length` 才穩定。
+2. `pipe-apply-decisions.mjs` 原本會把裁定的 `releaseType` 丟掉，
+   導致 DJ-mix／EP／Single／Compilation 失去例外身分卻仍通過 gate。已修並回填。
+
 ### 2026-08-22（同日第六筆）｜dip-vinyl-shop｜全池資料庫級缺口稽核（7 域）＋音樂資料庫藍圖
 
 店主指示「格局放大，仔細研究整個卡池缺少什麼，我要建立自己的音樂資料庫」——判準從
