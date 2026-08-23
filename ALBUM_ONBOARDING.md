@@ -239,6 +239,12 @@
 
 - 優先 Apple 可直接播放的預覽音檔；其次 YouTube Music 官方 Album playlist；再其次經人工核對的完整專輯影片。
 - 必須同時核對藝人、專輯、版本，並實際確認網址 HTTP 2xx／3xx。
+- **版本核對必須包含 Apple 的 `collectionExplicitness`（2026-08-23 增列）**：同一張碟在 Apple
+  常有**同名、同曲數、曲序也一致**的雙胞胎條目，一筆 `explicit`、一筆 `cleaned`（消音淨化版），
+  只看專輯名、曲名與曲數**分不出來**。淨化版屬不同版本，一律優先取 `explicit`；
+  若整份目錄確實只有淨化版，可收但要在備註寫明。`notExplicit` 是「本來就無不雅內容」，不是問題。
+  嘻哈與部分 R&B 受影響最深（線上嘻哈卡實測 1,062 張中 273 張配到淨化版，
+  搖滾批 217 張則為 0），見 `audits/cleaned-previews-hiphop.md`。
 - **兩條等價寫入路徑，擇一即可**（2026-07-22 店主確認靜態路徑為預設，不需後台人工操作）：
   1. **靜態路徑（預設）**：ready → 寫進 `data/apple-audio-map-v1.json` 並重建 `data/apple-audio-runtime-v1.json`（鍵＝`appleAudioKey` 正規化，值＝`[storefront, collectionId, previewUrl]`，僅限 Apple .m4a 直連）；unavailable／disabled → 追加進 `card-preview-status.js`。git push 即生效。
   2. **後台路徑**：經 admin.html 批次工具寫 `album_overrides.previewUrl`／`previewStatus`。YouTube 連結只能走這條（靜態地圖不收）。
