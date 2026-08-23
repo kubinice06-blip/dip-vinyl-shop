@@ -1,5 +1,46 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（後續）｜dip-vinyl-shop｜後台卡牌校正：補上封面欄位、簡介不再顯示舊的心理測驗式描述
+
+店主：後台的簡介很奇怪，而且無法改封面。兩件事都是**後台與前台已經對不上**。
+
+## 一、簡介顯示的是前台早就不用的舊描述
+
+`loadOverrideEditor()` 的優先序退回 `cat?.desc`（card_catalog 抽卡當下存的那份）。
+2026-08-16 前台已改成一律走 `/album-desc` 事實型簡介、**不再讀 cat.desc**，
+所以舊卡的 card_catalog 裡還躺著當年心理測驗式的文字。實證：Firestore
+`card_catalog/portishead|portishead` 的 `desc` 就是店主截圖那段
+「你的生活很清爽，卻在夜裡做著無邊界的夢——」，而 `album_overrides` 這張根本沒建檔。
+
+**這不只是顯示問題**：那段文字是預填在輸入框裡的，只要按下「儲存校正」就會被寫進
+`album_overrides.desc`，於是前台真的變回舊文風——後台等於能把已經淘汰的描述倒灌回站上。
+
+**修法**：優先序改成與前台卡片詳情一致（既有校正 > worker curated 神作人工簡介 >
+`/album-desc`），拿掉 `cat?.desc` 這一段；載入訊息也改成「已載入專輯簡介（與前台顯示同一份）」。
+
+## 二、標題寫「點封面編輯」，但根本沒有封面欄位
+
+modal 裡的封面只有 `<img id="ovModalCover">` 純顯示，`btnSaveOverride` 只寫
+`album_overrides`（artist／album／desc／三軸／tier）。而前台 `resolveCardAssets()`
+的封面來源是 `card_catalog.coverUrl`，**兩邊完全沒有交集**，所以配錯封面在後台無解。
+
+**修法**（admin.html）：
+- modal 加 `#ovCover` 網址欄位，載入時填 `cat.coverUrl`（清單傳入的值僅當備援）；
+  `input` 事件即時換掉標頭縮圖，存檔前先看得到對不對。
+- 儲存時**只在網址真的改過**才寫 `card_catalog`（merge，帶 artist／album 以符合
+  Firestore 規則、讓沒進過卡片庫的專輯也能建檔）；留空＝`deleteField()` 清掉，
+  前台回頭自動抓。驗證 https:// 開頭與 600 字上限（對齊 firestore.rules 的欄位限制）。
+
+**Portishead 同名專輯就是這個坑**：card_catalog 存的是 CAA 上一張叫
+「Portishead in Portishead」的私錄現場（黑底大「3」），不是 1997 的黑白同名專輯。
+正確封面（iTunes collectionId 1440933279）：
+`https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/20/d1/97/20d1978c-e152-61a0-77cf-119397215d51/06UMGIM15814.rgb.jpg/600x600bb.jpg`
+——現在可以直接在後台貼上修好。
+
+**驗證**：本機 8903＋Playwright 載入 admin.html（Firebase CDN 被沙箱擋，改餵 npm 同版
+檔案）：無 pageerror，`#ovCover` 存在，貼上網址縮圖同步、清空縮圖隱藏。
+未登入時 `.lock` 蓋全頁且 `#panel-cards` 是 `display:none`，測試要先掀開這兩層才點得到。
+
 ### 2026-08-23（後續）｜dip-vinyl-shop｜iOS 點搜尋輸入框不再自動放大頁面
 
 店主：手機上按搜尋條會自動放大頁面，很煩。
