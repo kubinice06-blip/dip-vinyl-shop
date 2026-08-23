@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第十二筆）｜dip-vinyl-shop｜c-45 嘻哈 136 張＋淨化版試聽這個從沒被檢查過的條件
+
+`onboarding-manifest-c45-hiphop-20260823.json`：**136 張，0 error、6 warning（皆為老盤查無條碼，
+規則允許留空），試聽 ready 129／136，封面 caa 136／136**。稀有度 uncommon 88／rare 44／epic 3／
+common 1，殿堂候選 2 張（Grandmaster Flash《The Message》、Dr. Dre《2001》）。
+
+## 一、本批最大的發現：Apple 的 `collectionExplicitness` 從來沒有人檢查過
+
+Apple 上同一張碟常有**同名、同曲數、曲序也一致**的雙胞胎條目，一筆 `explicit`、
+一筆 `cleaned`（消音淨化版）。只看專輯名、曲名與曲數**完全分不出來**，
+`pipe-preview.mjs` 也從來沒讀過這個欄位——所以自動配對挑中哪一筆純屬隨機。
+
+- **c-45 掃出 44 筆淨化版**（129 筆有試聽者的 34%），已全數改抓 explicit 版。
+- **對照組 c-44 搖滾 217 筆掃出 0 筆** → 這是嘻哈與部分 R&B 特有的問題，不需全類型重掃。
+- **線上既有嘻哈卡掃 1,062 張：273 張（25.7%）配到淨化版**，含 JAY-Z《The Blueprint》、
+  Kendrick《DAMN.》、Drake《Take Care》、OutKast《Speakerboxxx/The Love Below》等正典。
+  清單見 `audits/cleaned-previews-hiphop.md`／`.json`。**屬線上資料，留店主本機處理。**
+
+**而且淨化版不只是消音，還會整首抽掉曲目**：Jadakiss 16 vs 21 軌、Styles P 17 vs 24、
+Eve 13 vs 18（intro/outro/skit 全刪）、Bone Thugs 少〈Mo'murda〉、
+Pop Smoke 淨化 Deluxe 少了〈For The Night〉——**那是該專輯最紅的一首**。
+也就是說先前寫作 agent 拿淨化版去核對曲序時，比對基準本身就是錯的。
+
+規格已增列（`ALBUM_ONBOARDING.md` §6）：版本核對必須包含 `collectionExplicitness`，
+一律優先取 explicit；目錄確實只有淨化版才可收並註記。`notExplicit`（本來就無不雅內容）不是問題。
+`pipe-preview.mjs` 也已改為存下該欄位並把 cleaned 排到候選最後。
+
+**38 筆全部找到 explicit 版，0 筆只有淨化版。** 關鍵在於用 artistId 走整份目錄——
+硬搜專輯名時 Kendrick《untitled unmastered.》、Doechii、Ice Spice、Latto、GloRilla
+這幾張確實只會浮出淨化版。這再次印證那條反覆驗證過的技巧。
+
+## 二、退件一張、改收一張
+
+**Tierra Whack《Whack World》退件**：全長 14:56、英文維基定位為 mixtape，屬 EP 級時長，
+hiphop 不在 §5.5 白名單。依店主 2026-08-23 的裁示「卡在規格例外時，先確認是不是選錯了作品」，
+**改收她 2024 年的正規全長首作《World Wide Whack》**（15 軌 37:47，MB primary-type=Album、
+secondary-types 空），已單張補跑完整管線收進本批。
+
+**退件理由要用「時長＋維基定位」，不要引 MB type**：MB 把《Whack World》標成
+`primary-type=Album` 且無 secondary-type，跟維基的 mixtape 定位相反，引 MB 反而站不住。
+
+## 三、封面：CAA 的 release-group 層會回到重發盤
+
+Lil' Kim《Hard Core》抓到「黑豹躺在紅壁爐前」的串流替代美術，成因是該 RG 在 MB 只掛了
+一筆 2014 重發 release，CAA 的 RG 層 front 就回那筆的圖。改走 release 層 `24d6b0b0`
+（1996-11-12 US Official，barcode 075679273321）才是原盤美術。
+**與 c-44 的 Magazine／Banco 同一個病根：RG 層取到的圖不保證是原盤。**
+
+**驗證**：`node scripts/verify-album-onboarding.mjs onboarding-manifest-c45-hiphop-20260823.json --prepare`
+→ **0 error、6 warning**。與現有 12,153 鍵卡池零撞鍵，c-44／c-45 兩批互相也零撞鍵。
+`seed_cards.json`、`apex_pool.json`、KV、Firestore 全未動，published 五旗標全 false。
+
 ### 2026-08-23（同日第十一筆）｜dip-vinyl-shop｜c-44 搖滾正典 219 張＋兩個管線缺陷
 
 `onboarding-manifest-c44-rock-20260823.json`：**219 張，0 error 0 warning，試聽 ready 216／219**。
