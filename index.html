@@ -669,6 +669,15 @@
     .quiz-desc-btn { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .quiz-desc-btn:hover { border-color: var(--black); color: var(--black); }
 
+    /* ── 觸控裝置：輸入框字級撐到 16px，擋掉 iOS 聚焦時自動放大整頁 ──
+       iOS Safari 只要聚焦的輸入框字級 < 16px 就會放大畫面，而且退出後不會自己縮回來。
+       viewport 的 maximum-scale 在新版 iOS 已因無障礙考量被忽略（不可靠），
+       唯一穩的解法就是把字級撐到 16px。桌機維持原本的小字設計，只有觸控裝置套用。
+       用 !important 是因為各輸入框的 11–13px 都寫在 class 選擇器上，具體度比這裡高。 */
+    @media (hover: none) and (pointer: coarse) {
+      input, select, textarea { font-size: 16px !important; }
+    }
+
   </style>
 <link rel="stylesheet" href="dip-draw-anim.css?v=1">
 </head>

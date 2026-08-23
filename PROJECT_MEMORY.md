@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（後續）｜dip-vinyl-shop｜iOS 縮放改用 16px 字級真正解掉；Portishead 封面已修
+
+## 一、上一筆的 maximum-scale 沒有用，店主回報「點搜尋 bar 依然會放大一點」
+
+**上一筆做錯的判斷**：以為只要在 iOS 補 `maximum-scale=1` 就能擋掉聚焦自動縮放。
+實測不成立——新版 iOS Safari 基於無障礙考量已經會忽略 viewport 的縮放限制，
+`maximum-scale` 不可靠（動態用 JS 改 meta 更不可靠）。
+
+**真正可靠的只有一條**：讓聚焦的輸入框字級 ≥ 16px，iOS 就不會放大。
+站上輸入框全在 11–13px（topbar search 11、首頁與搜尋專輯 12–13、結帳 11），所以全中。
+
+**修法**（index.html 第二個 style 區塊結尾）：
+```css
+@media (hover: none) and (pointer: coarse) {
+  input, select, textarea { font-size: 16px !important; }
+}
+```
+只在觸控裝置套用，桌機維持原本的小字設計。**必須 `!important`**——各輸入框的
+11–13px 都寫在 class 選擇器上（`.album-search-bar input` 等），具體度比裸 `input` 高，
+只靠排在後面贏不了。上一筆的 viewport JS 保留（對舊版 iOS 仍有效、無副作用）。
+
+**驗證**：Playwright 兩種情境量 computed font-size——iPhone（isMobile+hasTouch，
+`(hover:none) and (pointer:coarse)` 為 true）五個輸入框全 16px；桌機維持 11/12/13px。
+行動版截圖確認搜尋列版面沒被撐壞（`全部` 下拉與輸入框仍並排）。
+
+## 二、Portishead 同名專輯封面已修
+
+`card_catalog/portishead|portishead` 的 `coverUrl` 原本指到 CAA 上一張叫
+「Portishead in Portishead」的私錄現場（黑底大「3」），不是 1997 的黑白同名專輯。
+改寫成 iTunes 官方版（collectionId 1440933279）：
+`https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/20/d1/97/20d1978c-e152-61a0-77cf-119397215d51/06UMGIM15814.rgb.jpg/600x600bb.jpg`
+
+以 Firestore REST `PATCH` + `updateMask` 只改 `coverUrl` 與 `updatedAt`，
+回讀確認 `desc`、三軸、`rarity` 都原封不動。（`card_catalog` 的規則允許未登入寫入，
+但限制文件形狀，見 firestore.rules。）
+
+
 ### 2026-08-23（後續）｜dip-vinyl-shop｜後台卡牌校正：補上封面欄位、簡介不再顯示舊的心理測驗式描述
 
 店主：後台的簡介很奇怪，而且無法改封面。兩件事都是**後台與前台已經對不上**。
