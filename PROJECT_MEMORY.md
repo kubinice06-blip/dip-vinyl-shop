@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第六筆）｜dip-vinyl-shop｜c-43 韓國批定案（54 張，從近零建起）
+
+`onboarding-manifest-c43-korea-20260823.json`：**54 張，0 error（prepare gate）**。
+稽核時全池諺文藝人只有 6 位，這批是韓國線從零建起的第一批。
+**試聽 ready 52／54（96%），是所有批次最高**。
+
+**稽核指出的「K-pop 全是日版盤」沒有重演**：29 筆需裁定的條目裡，除 Shin Joong Hyun
+那張本來就是 Light in the Attic 國際授權輯外，其餘 28 筆全釘韓國母國正規盤。
+主動擋掉的陷阱：Girls' Generation《Oh!》自動配對撞到 2012 日本版單曲、
+신중현과 엽전들首輯的 2012 美國復刻、봄여름가을겨울的 Live 輯。
+
+**自動配對器在韓國批全滅（0/55）的三個原因**（之後其他非拉丁語系批次都適用）：
+1. `country=kr` 回傳的 `artistName` 是諺文（NewJeans → 뉴진스），字串比對必定失敗。
+2. `collectionName` 帶前綴（「NewJeans 2nd EP 'Get Up'」「The 2nd Album 'Pink Tape'」）。
+3. **本環境對 `country=kr` 的 `lookup?entity=song` 一律只回 collection、不回曲目**，
+   必須走「kr 挑條目 → us 取曲目與 previewUrl」兩段式。
+可行解法：先拿 `artistId`，再 `lookup?id=<artistId>&entity=album&limit=200` 列全目錄人工挑。
+硬搜諺文專輯名幾乎搜不到；38 張待救有 35 張是靠這招配到的。
+
+**兩條韓國盤通則已寫進寫作指令**：①老盤數位化一律砍掉末軌〈건전가요〉（政府強制收錄曲），
+Apple 少一軌而前段逐首同序屬正常；②「마스터피스골드시리즈」不是忠實再發，
+김추자與펄 시스터즈兩張都證實後段曲目被抽換（김추자因此改採 1969 原盤條目）。
+
+**apex hall 候選 11 張**：신중현과 엽전들 1집、산울림 1집、들국화《행진》、
+유재하《사랑하기 때문에》、어떤날 I、서태지와 아이들 1집、언니네 이발관、델리스파이스、
+Verbal Jint《누명》、f(x)《Pink Tape》、BTS《LOVE YOURSELF 轉》。
+
+**未上架 2 張**：김민기首作（Apple 只有 72 軌 anthology，且無法確認是 1971 母帶還是
+1993 重錄）、송창식《토함산》（MB 有藝人條目但零張唱片，走人工身分路線但未進寫作）。
+兩張都留給店主本機處理。
+
+**管線 bug（本輪第二個）**：`pipe-writer-inputs.mjs` 的封面目錄是第二個位置參數，
+漏傳會讓 `coverImagePath` 全部變成 null；人工救援回填試聽時也只補了 previewUrl 沒補
+`trackNames`，導致 `appleTrackNames` 全空。c-41／c-42／c-43 三批都中，
+已回抓曲名、重建 writer-inputs，並對在跑的 agent 發訊息補做核對。
+**教訓：writer-inputs 產生後要先檢查「無封面／無曲名」的筆數再派工。**
+
 ### 2026-08-23（同日第五筆）｜dip-vinyl-shop｜c-40 電子細分批定案（257 張）
 
 `onboarding-manifest-c40-electronic-20260823.json`：**257 張，0 error（prepare gate）**。

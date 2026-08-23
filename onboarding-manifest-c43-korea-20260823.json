@@ -1,0 +1,3728 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-43-korea-20260823",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "Shin Joong Hyun",
+      "album": "Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "14cb3f46-d0bc-4257-b3dc-eadfa2d5b54c",
+        "upc": "826853006521",
+        "exceptionReason": "申重鉉一九五八至一九七四年的錄音與製作散落於單曲及他人名下唱片，此輯是這批錄音首次成套授權面世、也是英語圈認識韓國迷幻搖滾的標準入口",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Shin_Joong-hyun",
+          "https://musicbrainz.org/release-group/14cb3f46-d0bc-4257-b3dc-eadfa2d5b54c"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為拉丁字 Shin Joong Hyun，韓文本名신중현（申重鉉）；本卡依輸入檔用羅馬字寫法，與同批以韓文原名建卡的〈신중현과 엽전들〉為同一人不同單位，未混淆。韓籍藝人命名規則未定案，若日後統一改韓文原名，此卡應一併改為신중현。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/14cb3f46-d0bc-4257-b3dc-eadfa2d5b54c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；申重鉉本人與其製作曲目的國際正典入口，Light in the Attic 授權編纂、流通廣，但作為選輯本身不列史上核心"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "申重鉉個人地位足以進殿堂，但頂點資格應掛在其原盤（如엽전들 1집）而非二〇一一年的國際選輯",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "韓國搖滾教父申重鉉（신중현）一九五七年自美軍第八軍團樂隊出身，一九六四年組成韓國第一支搖滾樂隊 Add4。Light in the Attic 二〇一一年授權編纂的這套選輯橫跨一九五八至一九七四年，收他本人的錄音與他為김정미、장현、이정화等歌手製作的曲目，末軌〈아름다운 강산〉出自신중현과 더 멘——一九七二年他拒絕替朴正熙寫頌歌，改寫成這首詠嘆國土的長曲；一九七五年他因大麻案入獄，作品遭禁多年。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Shin_Joong-hyun",
+          "https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%A4%91%ED%98%84",
+          "https://musicbrainz.org/release-group/14cb3f46-d0bc-4257-b3dc-eadfa2d5b54c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/02/29/1d0229c3-9f2b-74c0-1317-49e7a79cee23/mzaf_1327268492403311652.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1790505348,
+        "appleCollectionName": "Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974"
+      },
+      "research": {
+        "suggestedYear": 2011,
+        "yearNote": "MB first-release-date 2011-09-12，Light in the Attic 美國發行；MB releases 三筆皆 2011 年 US／Light in the Attic Records",
+        "mbTitle": "Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974",
+        "mbArtist": "신중현",
+        "mbFirstRelease": "2011-09-12",
+        "upcNote": "Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974 (2011-09-27 US)",
+        "curatorWhy": "K1 老根基：申重鉉（신중현）——韓國搖滾教父、김정미《Now》製作人，池內有葉無根的最大單一缺口；LITA 官方授權輯是國際正典入口",
+        "curatorRisk": "掛 Light in the Attic 2011 國際輯條目（MB 完整、封面齊），勿用韓國原盤"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "신중현과 엽전들",
+      "album": "신중현과 엽전들 1집",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0d020562-9d80-4fe6-949e-8ef0cf07723c",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題作 The 1st Album、credit 作 Shin Joong Hyun & Yup Juns（拉丁字），卡片用韓文原名신중현과 엽전들／신중현과 엽전들 1집，同一實體；韓文原盤名為《신중현과 엽전들 제1집》。與同批 Shin Joong Hyun 名下的 LITA 選輯為不同單位，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0d020562-9d80-4fe6-949e-8ef0cf07723c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第七、銷量破百萬，韓國迷幻搖滾公認的最高點"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "韓國百大名盤第七、單張銷量破百萬，〈미인〉因歌詞被改編影射朴正熙延任而遭禁，韓國搖滾史核心作，跨韓英文來源長期共識",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98",
+          "https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns"
+        ]
+      },
+      "description": {
+        "text": "申重鉉一九七二年與貝斯手이남이、鼓手김호식組成엽전들（葉錢們），一九七四年由지구레코드發行首張作品。開場的〈미인〉把美軍基地磨出來的 fuzz 吉他扣在五聲音階的旋律上，單張銷量破百萬；歌詞「한번 보고 두번 보고」被樂迷改字影射朴正熙取消連任限制，成了當局盯上的理由。一九七五年十二月申重鉉因大麻案被聲請羈押，樂隊隨即解散。二〇〇七年韓國大眾音樂百大名盤列第七。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98",
+          "https://musicbrainz.org/release-group/0d020562-9d80-4fe6-949e-8ef0cf07723c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9c/04/77/9c047719-650c-b6f7-4720-5707e5284eb8/mzaf_13836967309928688055.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 355018220,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1974,
+        "yearNote": "MB first-release-date 1974；ko-wiki 百大名盤表列 1974 年、지구레코드；Apple 韓國條目標 1974-11-01",
+        "mbTitle": "The 1st Album",
+        "mbArtist": "Shin Joong Hyun & Yup Juns",
+        "mbFirstRelease": "1974",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "K1 老根基：미인所在、韓國迷幻搖滾最高峰的樂隊盤，韓國歷代名盤票選常客",
+        "curatorRisk": "原盤 MB 稀疏——一律掛 Lion Productions 等國際再發條目，封面不足時以 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "산울림",
+      "album": "산울림 1집 (아니 벌써)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "36813c96-5ab8-4d02-b154-582f12e0239b",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題作《아니벌써》（無空格），韓文維基正式條目名為《산울림 1집》、通稱《산울림 새노래 모음》，卡片用산울림 1집 (아니 벌써) 併寫可對應三種寫法；MB credit 산울림 與卡片用名一致，與극단 산울림（劇團）同名不同體，已排除。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/36813c96-5ab8-4d02-b154-582f12e0239b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第五，被稱為韓國樂史最具問題性的出道作，二〇二四年英國樂媒再評亦高"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "韓國百大名盤第五、二十天內售出四十萬張並開啟韓國樂團時代，二〇二四年 Uncut、Mojo 等英國樂媒再評，跨來源長期共識",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC_1%EC%A7%91",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98"
+        ]
+      },
+      "description": {
+        "text": "김창완、김창훈、김창익三兄弟一九七七年十二月由서라벌레코드推出的出道盤。錄音時김창훈用的是國產廉價貝斯，김창완用的是菲律賓樂團丟棄的二手吉他，後來向樂評이백천借琴重錄；因為練到閉眼能彈，整張一天錄完，김창완為此放棄了同日的銀行考試。〈아니 벌써〉粗礪的吉他與業餘感讓當年聽眾直呼怪異，卻在二十天內賣出四十萬張。封面是김창완用左手模仿孩童筆觸畫成。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC_1%EC%A7%91",
+          "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC",
+          "https://musicbrainz.org/release-group/36813c96-5ab8-4d02-b154-582f12e0239b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/13/ee/dc13ee2c-a662-b7a7-f9ae-b2beebcd2db6/mzaf_1437753529657480410.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1780362830,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1977,
+        "yearNote": "MB first-release-date 1977-12-15，與 ko-wiki《산울림 1집》發매일 1977년 12월 15일、Apple 韓國條目 1977-12-15 三方一致",
+        "mbTitle": "아니벌써",
+        "mbArtist": "산울림",
+        "mbFirstRelease": "1977-12-15",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "K1 老根基：Sanullim 石破天驚的出道盤，韓國迷幻／garage 正典，국제 재평가 핵심",
+        "curatorRisk": "原盤 MB 稀疏——掛 Lion Productions 國際再發條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "산울림",
+      "album": "산울림 2집 (내 마음에 주단을 깔고)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "aae4cfd5-fff7-474e-870c-299ca479d629",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題把三首主打串成《내 마음에 주단을 깔고/어느날 피었네/나 어떡해》，韓文維基條目名為《산울림 2집》，卡片用산울림 2집 (내 마음에 주단을 깔고) 可同時對應；MB credit 산울림 與卡片一致。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/aae4cfd5-fff7-474e-870c-299ca479d629/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六，公認산울림 사이키델릭 手法最完整的一張，二〇二四年 Uncut 給九分"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位極高但同批已以出道盤入殿堂，同團第二作宜列常規卡，避免同一藝人重複佔頂點名額",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一九七八年五月由서라벌레코드發行、방기남製作。標題曲〈내 마음에 주단을 깔고〉以六分餘的長度讓吉他緩慢推進、人聲像夢遊般拖行，是산울림的 사이키델릭 手法最完整的一次；〈나 어떡해〉原是김창훈寫給샌드 페블즈參加第一屆 MBC 大學歌謠祭的奪冠曲，此處由三兄弟重錄收入。二〇〇七年韓國大眾音樂百大名盤第六，二〇二四年英國《Uncut》給出十分之九。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC_2%EC%A7%91",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98",
+          "https://musicbrainz.org/release-group/aae4cfd5-fff7-474e-870c-299ca479d629"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/e3/e6/64e3e6bf-3f37-4f5a-5154-1e833185156a/mzaf_17256140433964305899.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1780363843,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB first-release-date 1978-05-10，與 ko-wiki《산울림 2집》發매일 1978년 5월 10일、Apple 條目 1978-05-10 三方一致",
+        "mbTitle": "내 마음에 주단을 깔고/어느날 피었네/나 어떡해",
+        "mbArtist": "산울림",
+        "mbFirstRelease": "1978-05-10",
+        "upcNote": "releases=3，皆無有效條碼",
+        "curatorWhy": "K1 老根基：18 分鐘長曲 내 마음에 주단을 깔고 所在，Sanullim 藝術巔峰",
+        "curatorRisk": "原盤 MB 稀疏——掛 Lion Productions 國際再發條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "김추자",
+      "album": "늦기전에",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "c9084bcf-9029-4ecb-adff-d35b7cd1347f",
+        "upc": "",
+        "exceptionReason": "MB 將此盤標為 Compilation，但一九六九年十月的《늦기전에》實為김추자的出道正規盤（申重鉉作編曲集），是韓國 soul／funk 女聲的原點，非事後拼盤",
+        "exceptionEvidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B6%94%EC%9E%90",
+          "https://musicbrainz.org/release-group/c9084bcf-9029-4ecb-adff-d35b7cd1347f"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題《늦기전에 / 월남에서 돌아온 김상사》為原盤 AB 面雙主打並列寫法，卡片用《늦기전에》為通稱，同一實體；MB credit 김추자 與卡片用名一致。漢字寫法金秋子見於韓文維基，卡片仍用韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c9084bcf-9029-4ecb-adff-d35b7cd1347f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國 soul／funk 女聲的原點與申重鉉作編曲集代表作，地位明確但未進韓國百大名盤，且原盤流通極稀"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位在申重鉉系譜內明確，但缺乏跨來源長期共識足列史上核心；原盤稀有，疑似 pearl，待店主補 listeners 覆核",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一九六九年十月，十八歲的김추자以申重鉉作編曲集出道。〈늦기 전에〉前半走 soul 的節奏與唱法，後半突然切進판소리的聲腔，把美軍基地學來的黑人音樂接上韓國傳統嗓音；同輯的〈월남에서 돌아온 김상사〉唱越戰返鄉的金上士，成了她的招牌曲。當年韓國流行語說「香菸要青瓷，唱歌要秋子」。一九七五年緊急措施九號下，她的歌全數被列為禁曲，本人也遭全面禁演。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B6%94%EC%9E%90",
+          "https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%A4%91%ED%98%84",
+          "https://musicbrainz.org/release-group/c9084bcf-9029-4ecb-adff-d35b7cd1347f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/59/31/8e5931ed-c6a6-4642-5d19-1a69104672bd/mzaf_3071467523338464846.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1752790717,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1969,
+        "yearNote": "MB first-release-date 1969-10-20，與 ko-wiki《김추자》음반 목록「1969년 10월 20일 《늦기전에》(총 10곡 수록)」、Apple 條目 1969-10-20 三方一致",
+        "mbTitle": "늦기전에 / 월남에서 돌아온 김상사",
+        "mbArtist": "김추자",
+        "mbFirstRelease": "1969-10-20",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K1 老根基：申重鉉作品集出道盤，韓國 soul/funk 女聲原點",
+        "curatorRisk": "原盤 MB 稀疏或年份錯亂——優先掛國際再發（LITA 申重鉉系列脈絡）條目，查無則 Discogs 封面源"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "펄 시스터즈",
+      "album": "님아",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e0aad08f-518d-4b63-b190-6f0a62be2cd2",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題《님아! / 커피한잔》為原盤雙主打並列寫法，韓文維基記為《님아/떠나야할 그사람/커피한잔》，卡片用《님아》為通稱，同一實體；MB credit 펄 시스터즈 與卡片一致，羅馬字寫法 Pearl Sisters 僅見於 Apple 與英文來源。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e0aad08f-518d-4b63-b190-6f0a62be2cd2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；申重鉉第一次獲得主流成功的製作盤、一九六〇年代韓國歌謠轉向靈魂樂的標誌，但原盤流通稀少"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "歷史轉折點明確但缺跨來源長期共識足列史上核心；原盤僅以精選重編版流通，疑似 pearl，待店主補 listeners 覆核",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "배인순、배인숙姊妹一九六八年的出道盤，全輯由申重鉉作曲編曲，封套直接印上「Shin Joong Hyun's Soul Sound Album」。〈님아〉與〈커피한잔〉把靈魂樂的節奏組、銅管與姊妹倆帶吼腔的合聲搬進當時트로트當道的韓國歌謠界；英文維基記載，申重鉉一直到製作這張唱片才首度取得主流成功。她們此後的錄音多半仍出自申重鉉之手。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%ED%8E%84_%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88",
+          "https://en.wikipedia.org/wiki/Shin_Joong-hyun",
+          "https://musicbrainz.org/release-group/e0aad08f-518d-4b63-b190-6f0a62be2cd2"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1968,
+        "yearNote": "MB first-release-date 1968-12-01；ko-wiki《펄 시스터즈》음반欄記「1968년 - 데뷔음반」，年份一致，日期以 MB 為準",
+        "mbTitle": "님아! / 커피한잔",
+        "mbArtist": "펄 시스터즈",
+        "mbFirstRelease": "1968-12-01",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K1 老根基：Pearl Sisters、申重鉉製作的 soul 雙人組，60s 韓國流行轉向的標誌",
+        "curatorRisk": "原盤 MB 稀疏——優先掛國際再發條目，查無則 Discogs 封面源"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "김두수",
+      "album": "자유혼",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3ac84050-16fc-3f3f-bc75-179034c28718",
+        "upc": "8809046081187",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題用漢字《自由魂》，韓文維基條目名為《자유혼》，卡片用韓文原名，同一實體；MB credit 김두수 與卡片一致。須注意韓文維基「김두수」主條目指的是同名政治人物，音樂家김두수僅在《자유혼》條目下有記載，已排除同名混淆。策展註記稱本作為 3집 有誤，韓文維基明載為정규음반 4집。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/b0/18/67b0182a-5989-8691-6d53-802a408c1a25/8809764907301.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1532011395）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六十九，韓國 acid folk 的國際代表作，但發行量極小、聽眾圈窄"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "百大名盤第六十九屬明確地位但非史上核心；初版 LP 僅三百六十五張、藝人長期隱居，疑似 pearl，待店主補 listeners 覆核",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "김두수在一九九一年《보헤미안》之後隔了十一年才交出的第四張作品，二〇〇二年一月先以三百六十五張限量 LP 發行，同年三月才出 CD。全輯詞曲、編曲與製作一手包辦，在 NADA Studio 錄成：吉他多是單線行走，人聲貼得極近，〈들꽃〉〈기슭으로 가는 배〉〈나비〉一路維持稀疏的 acid folk 質地。二〇〇七年韓國大眾音樂百大名盤列第六十九。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%ED%98%BC",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98",
+          "https://musicbrainz.org/release-group/3ac84050-16fc-3f3f-bc75-179034c28718"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/29/e5/c6/29e5c668-9591-3f73-11a8-d1fb1d99b5e3/mzaf_16854827455987478173.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1532011395,
+        "appleCollectionName": "자유혼"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB first-release-date 2002-03-19（CD 版）；ko-wiki 記 LP 於 2002 년 1 월 30 일限量發行、同年 3 월 19 일 CD 再發，年份同為 2002",
+        "mbTitle": "自由魂",
+        "mbArtist": "김두수",
+        "mbFirstRelease": "2002-03-19",
+        "upcNote": "自由魂 (2002-03-19 KR)",
+        "curatorWhy": "K1 老根基：韓國 acid folk 國際名盤（3집），隱士詩人的代表作",
+        "curatorRisk": "MB 條目薄（中風險），封面可能需 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "조동진",
+      "album": "조동진 1집 (행복한 사람)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1ee9a331-c47a-4f28-ad3a-19ef681dad9b",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題作《행복한 사람》（以主打歌代稱），韓文維基條目名為《조동진 1집》，卡片用조동진 1집 (행복한 사람) 兼容兩種寫法；MB credit 조동진 與卡片一致，漢字趙東振僅供參照。與其弟조동익／어떤날的作品分屬不同單位，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/1ee9a331-c47a-4f28-ad3a-19ef681dad9b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第三十九，동아기획一系韓國都市民謠的源頭之作"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "百大名盤第三十九屬該領域主要作品，但未達跨來源長期共識的史上核心層級",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "조동진一九六七年以미8군 재즈록 밴드 쉐그린的吉他手兼主唱出道，十二年後才發表這張同名首作，一九七九年三月由대도레코드推出、他本人製作。開場的〈행복한 사람〉只有三分十八秒，嗓子壓得極低、幾乎不使力，木吉他與淡薄的節奏組把民謠寫成近乎耳語的東西，日後成為동아기획一系與其弟조동익所在的어떤날的聲音源頭。二〇〇七年韓國大眾音樂百大名盤第三十九。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%8F%99%EC%A7%84_1%EC%A7%91",
+          "https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%8F%99%EC%A7%84",
+          "https://musicbrainz.org/release-group/1ee9a331-c47a-4f28-ad3a-19ef681dad9b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ca/4d/a2/ca4da279-f402-cbb7-c6c7-3cb34b488c97/mzaf_1477004221710648925.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1567895997,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1979,
+        "yearNote": "MB first-release-date 1979-03-15，與 ko-wiki《조동진 1집》초판 발매일 1979년 3월 15일、Apple 條目 1979-03-15 三方一致",
+        "mbTitle": "행복한 사람",
+        "mbArtist": "조동진",
+        "mbFirstRelease": "1979-03-15",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K1 老根基：행복한 사람 所在，동아기획／어떤날 系譜的精神源頭",
+        "curatorRisk": "MB 條目薄，封面可能需 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "들국화",
+      "album": "들국화 1집 (행진)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "57292ee6-e402-4696-9d27-bdc87f1405e2",
+        "upc": "8804524900639",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題與 credit 同為들국화（同名專輯），韓文維基音樂條目名為《행진 (음반)》，卡片用들국화 1집 (행진) 併寫可對應；與樂團二〇一三年另一張同名專輯《들국화》（주찬권遺作）不同，已排除混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/57292ee6-e402-4696-9d27-bdc87f1405e2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第一名，韓國언더그라운드的開端"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "韓國大眾音樂百大名盤票選第一名，音樂評論與樂史書寫長期一致視為韓國搖滾自主時代的起點，跨來源共識充分",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%ED%96%89%EC%A7%84_(%EC%9D%8C%EB%B0%98)",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98"
+        ]
+      },
+      "description": {
+        "text": "一九八五年九月由서라벌레코드發行、樂團自任製作，在서울스튜디오錄成。전인권近乎嘶吼的唱腔配上최성원的貝斯與허성욱的鍵盤，〈행진〉〈그것만이 내 세상〉不靠電視打歌，全憑現場演出與唱片本身傳開，替韓國언더그라운드打開了通路。當年唱片必須收錄的건전가요，他們改用無伴奏合唱的〈우리의 소원〉頂替。二〇〇七年韓國大眾音樂百大名盤票選第一名。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%ED%96%89%EC%A7%84_(%EC%9D%8C%EB%B0%98)",
+          "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EB%B0%B4%EB%93%9C)",
+          "https://musicbrainz.org/release-group/57292ee6-e402-4696-9d27-bdc87f1405e2"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/f4/50/33f4507a-b076-c25f-6601-573deb1bd7d4/mzaf_15368896863200438031.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1804595885,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1985,
+        "yearNote": "MB first-release-date 1985-09-10，與 ko-wiki《행진 (음반)》發매일 1985년 9월 10일一致；Apple 條目標 1985-09-01，採 MB／ko-wiki 之 9 月 10 日",
+        "mbTitle": "들국화",
+        "mbArtist": "들국화",
+        "mbFirstRelease": "1985-09-10",
+        "upcNote": "들국화 (1991 KR)",
+        "curatorWhy": "K2 正典：韓國歷代名盤票選常年第一《행진》，韓國搖滾自主時代的開端，資料庫不能沒有",
+        "curatorRisk": "MB 有條目但 release 資訊薄（中風險），封面以 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "유재하",
+      "album": "사랑하기 때문에",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "aa54dd85-563a-43e4-93c1-27cbd803dba2",
+        "upc": "8809069410155",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題與卡片同為《사랑하기 때문에》，MB credit 유재하；Apple 使用羅馬字 Yoo Jae Ha，漢字寫法柳在夏。同名曲〈사랑하기 때문에〉曾先收於조용필 7집（1985），與本專輯為不同錄音，已排除混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/aa54dd85-563a-43e4-93c1-27cbd803dba2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年百大名盤第二、二〇一八年 Melon 與《한겨레》名盤百選第一，韓國발라드的原點"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "兩份不同年份、不同機構的韓國名盤百選分列第二與第一名，作詞作曲編曲一人完成的先例，樂史地位長期不動",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%ED%95%98%EA%B8%B0_%EB%95%8C%EB%AC%B8%EC%97%90_(%EC%9D%8C%EB%B0%98)",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98"
+        ]
+      },
+      "description": {
+        "text": "유재하出身漢陽大學作曲系，一九八四年曾任조용필과 위대한 탄생的鍵盤手。一九八七年八月他自作詞曲、自任編曲，並在서울스튜디오幾乎獨力彈完全部樂器，完成這張唯一的作品：以轉調推進的和聲走法，加上長笛、小提琴、雙簧管與大提琴的編寫，把발라드從既有的歌謠腔裡拉開。發行兩個多月後他因車禍身故，得年二十五。一九八九年起設有유재하 음악경연대회。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%ED%95%98%EA%B8%B0_%EB%95%8C%EB%AC%B8%EC%97%90_(%EC%9D%8C%EB%B0%98)",
+          "https://ko.wikipedia.org/wiki/%EC%9C%A0%EC%9E%AC%ED%95%98",
+          "https://musicbrainz.org/release-group/aa54dd85-563a-43e4-93c1-27cbd803dba2"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/90/09/7a90092d-655f-3a6e-b44c-e066798bb4bf/mzaf_17896396630365946783.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1528476086,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1987,
+        "yearNote": "MB first-release-date 1987-08-20，與 ko-wiki《사랑하기 때문에 (음반)》發매일 1987년 8월 20일、Apple 條目 1987-08-20 三方一致",
+        "mbTitle": "사랑하기 때문에",
+        "mbArtist": "유재하",
+        "mbFirstRelease": "1987-08-20",
+        "upcNote": "사랑하기 때문에 (2001-12-10 KR)",
+        "curatorWhy": "K2 正典：唯一一張專輯即成韓國バラード原點，柳在夏音樂競演大賞以其命名",
+        "curatorRisk": "MB 條目薄（中風險），封面以 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "조용필",
+      "album": "조용필 1집 (창밖의 여자)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0a60161d-e5d0-46aa-a819-1f6187ca3946",
+        "upc": "8805115011758",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題與卡片同為조용필 1집，韓文維基另以主打《창밖의 여자》代稱，卡片併寫可對應；MB credit 조용필，Apple 用 Cho Yong-pil／Jo YongPil，漢字趙容弼。與其大量精選、日本盤版本眾多，本卡明確掛韓國正規 1 집條目。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0a60161d-e5d0-46aa-a819-1f6187ca3946/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國第一張銷量破百萬的單張唱片、八〇年代韓國歌謠統治的起點，二〇〇七年百大名盤第二十九"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "商業成就與影響力極大，但百大名盤僅列第二十九，未達跨來源共識的史上核心層級",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "조용필一九七七年因大麻파동被迫停止活動，解禁後於一九七九年組成위대한 탄생，隔年三月由지구레코드推出正規首作。主打〈창밖의 여자〉原是連續劇主題曲，由배명숙作詞、他自己譜曲；同輯還收了重錄的〈돌아와요 부산항에〉與〈단발머리〉。全輯成為韓國第一張銷量突破百萬的單張唱片。二〇〇七年韓國大眾音樂百大名盤第二十九。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%9A%A9%ED%95%84_1%EC%A7%91",
+          "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%9A%A9%ED%95%84",
+          "https://musicbrainz.org/release-group/0a60161d-e5d0-46aa-a819-1f6187ca3946"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/3f/ed/a53fed9f-07f8-8425-43ac-40a3e608fae3/mzaf_12159473921273861785.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 310139451,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1980,
+        "yearNote": "MB first-release-date 1980-03-20，與 ko-wiki《조용필 1집》發매일 1980년 3월 20일一致；Apple 條目標 1980-03-01，採 MB／ko-wiki 之 3 月 20 日",
+        "mbTitle": "조용필 1집",
+        "mbArtist": "조용필",
+        "mbFirstRelease": "1980-03-20",
+        "upcNote": "조용필 1집 (2015-01-29 KR)",
+        "curatorWhy": "K2 正典：「歌王」趙容弼正規 1 集，창밖의 여자／단발머리，80s 韓國歌謡的統治開端",
+        "curatorRisk": "版本眾多，掛韓國正規 1 集條目，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "조용필",
+      "album": "조용필 10집 Part.1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b7e94a76-a2fb-497e-b99a-b50137a7fa08",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題作《'88 Cho Yong Pil 10th》、credit 조용필，卡片用조용필 10집 Part.1，同一實體；Part.2《Q》為一九八九年另一張（Apple collectionId 1764088538），已排除。策展註記稱本輯收〈Q〉有誤，〈Q〉屬 10 집 Part.2。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b7e94a76-a2fb-497e-b99a-b50137a7fa08/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈서울 서울 서울〉與〈모나리자〉所在的後期代表作，地位明確但不及正規 1 집與 7 집"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "屬歌王後期主要作品，未見跨來源長期共識足列韓國樂史核心，故不列頂點",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一九八八年五月發行的正規十集前篇，收〈서울 서울 서울〉與〈모나리자〉。〈서울 서울 서울〉在漢城奧運閉幕的電視轉播中放送而傳開，조용필受訪時說寫這首歌是因為他料想奧運結束後社會會轉為低落。這時期他多半自己作曲、與樂隊위대한 탄생一同編曲並自任專輯製作，把歌謠、搖滾到민요改編一併吃下。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%9A%A9%ED%95%84",
+          "https://musicbrainz.org/release-group/b7e94a76-a2fb-497e-b99a-b50137a7fa08"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/fc/95/95fc95cb-7845-0f14-ba52-e5a0dd057d61/mzaf_9839651151330557129.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1764084732,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1988,
+        "yearNote": "MB first-release-date 1988-05；Apple 條目《88 Cho Yong Pil 10th》標 1988-05-28；ko-wiki《조용필》記 1988 년發表 10 집，年份一致",
+        "mbTitle": "'88 Cho Yong Pil 10th",
+        "mbArtist": "조용필",
+        "mbFirstRelease": "1988-05",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K2 正典：서울 서울 서울／Q 所在，歌王後期巔峰，以正規盤取代精選以符合反模式規則",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "김현식",
+      "album": "김현식 3집",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "4b9f5fec-826f-4b3d-8886-c4c465794979",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片用名同為한글原名 김현식，一致。韓籍藝人命名店規未定案，此處照輸入檔用韓文原名，可並列漢字 金賢植 或羅馬字 Kim Hyun-sik。MB 標題「3집 - 빗속의 연가 / 비처럼 음악처럼」是以雙主打歌標示同一張 3집，非另一版本；與同期精選盤《김현식 Best》無混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4b9f5fec-826f-4b3d-8886-c4c465794979/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第13位、동아기획 언더그라운드 代表作，聲響仍屬旋律清楚的 folk-rock，海外流通有限。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "跨來源地位僅見於韓國國內榜單與樂評，尚缺長期跨語圈共識，暫不列殿堂，建議店主日後覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "김현식（金賢植）1986 年的第三張正規盤，掛「김현식과 봄여름가을겨울」名義錄成，김종진、전태관、유재하、장기호 都在陣中。沙啞喉音撐起 folk-rock 與抒情曲的骨架，〈비처럼 음악처럼〉由 박성식 譜曲，〈가리워진 길〉出自 유재하 之手，隔年收進他自己的《사랑하기 때문에》。末軌〈고향의 봄〉是當年強制加掛的건전가요。1990 年 김현식 因肝硬化去世，得年三十二。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/김현식_3집",
+          "https://ko.wikipedia.org/wiki/김현식",
+          "https://musicbrainz.org/release-group/4b9f5fec-826f-4b3d-8886-c4c465794979"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/ff/79/59ff7961-f09a-f7f0-efb2-c0ff3cc123f6/mzaf_10579662540050810915.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1804627129,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1986,
+        "yearNote": "MB first-release 1986-12-05 與韓文維基〈김현식 3집〉載 1986年12月5日一致。",
+        "mbTitle": "3집 - 빗속의 연가 / 비처럼 음악처럼",
+        "mbArtist": "김현식",
+        "mbFirstRelease": "1986-12-05",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K2 正典：비처럼 음악처럼 所在，동아기획 소울 보컬의 대표반，봄여름가을겨울成員參與",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "어떤날",
+      "album": "어떤날 I",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2c4ae605-ff81-4fd1-9845-1e228cff561a",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 어떤날 與卡片用名一致。MB 標題「1960・1965」是封面上的數字副題（兩人出生年），韓文維基條目名為〈어떤날 I〉，同一張盤無誤；與 1989 年《어떤날 II》分屬兩張，未混淆。韓籍藝人命名店規未定案，此處照輸入檔用韓文原名，羅馬字作 Eotteon Nal。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/dd/be/44/ddbe4479-5dbf-1b29-433f-7649f19b6a84/8809764880932.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1572950295）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第4位、韓國 folk／fusion 公認核心盤；當年銷量平平，屬深度愛好者領域，但入耳門檻低。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "在韓國標準樂評榜單《대중음악 100대 명반》名列第4，長期被視為該國流行音樂史核心，且兩位作者日後成為韓國編曲與演奏的中樞人物。",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/어떤날_I",
+          "https://ko.wikipedia.org/wiki/한국대중음악_100대_명반"
+        ]
+      },
+      "description": {
+        "text": "조동익（1960 年生）與 이병우（1965 年生）的雙人組首作，封面上那組數字就是兩人的出生年。1986 年由 조동진 製作、서라벌레코드 發行。編曲刻意留白，木吉他與貝斯托著人聲走，長達七分多鐘的〈오후만 있던 일요일〉幾乎不催和聲，〈하늘〉〈겨울하루〉也維持同一種低音量。發行當時反應平淡，日後在韓國《대중음악 100대 명반》被列到第 4 位。末軌〈이나라 주인되어〉為건전가요。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/어떤날_I",
+          "https://ko.wikipedia.org/wiki/어떤날",
+          "https://musicbrainz.org/release-group/2c4ae605-ff81-4fd1-9845-1e228cff561a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/a0/04/dea00443-2f23-e7f0-d85a-2553c1265222/mzaf_11170657127436795689.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1572950295,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1986,
+        "yearNote": "MB first-release 1986-12-10 與韓文維基〈어떤날 I〉載 1986年12月10日一致。",
+        "mbTitle": "1960・1965",
+        "mbArtist": "어떤날",
+        "mbFirstRelease": "1986-12-10",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K2 正典：조동익／이병우雙人組首作，韓國 city pop／fusion 再評價的核心盤",
+        "curatorRisk": "MB 條目薄（中風險），近年韓版黑膠復刻可掛"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "어떤날",
+      "album": "어떤날 II",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ce5581f2-e973-491d-90fc-ed8e064eefc7",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 寫作「어떤날, 조동익 • 이병우」，是把團名與兩名成員並列，卡片用名 어떤날 為團名本身，相符。韓文維基條目名〈어떤날 Ⅱ〉使用羅馬數字Ⅱ，輸入檔用拉丁 II，同一張盤。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f6/76/c4/f676c460-3a03-3002-de90-52e812fd3fef/8809522692289.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1567847204）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第11位；編曲與錄音水準公認，但多首逾七分鐘的長曲與單一音色使入耳略需時間。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位穩固但主要證據集中於單一韓國榜單，跨來源長期共識略遜於首作，暫不列殿堂，留待店主覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "어떤날 的完結作，1989 年錄於서울 스튜디오。조동익 這回把 fretless 貝斯、電腦編程與鍵盤合成器疊成底床，이병우 以古典吉他和 guitar synthesizer 應答，임정희 的雙簧管、임인건 的鋼琴、김현철 的鍵盤補上空隙。〈출발〉開場明亮，〈취중독백〉與〈11월 그 저녁에〉都超過七分鐘，讓和聲慢慢鋪開而不趕拍。韓國《대중음악 100대 명반》列第 11 位。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/어떤날_Ⅱ",
+          "https://ko.wikipedia.org/wiki/어떤날",
+          "https://musicbrainz.org/release-group/ce5581f2-e973-491d-90fc-ed8e064eefc7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1a/c7/73/1ac7737c-476a-4681-656e-d69c3e5ab23c/mzaf_15466860666837676303.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1567847204,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1989,
+        "yearNote": "MB first-release 1989-06-20 與韓文維基〈어떤날 Ⅱ〉載 1989年6月20日一致。",
+        "mbTitle": "어떤날 II",
+        "mbArtist": "어떤날, 조동익 • 이병우",
+        "mbFirstRelease": "1989-06-20",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K2 正典：어떤날完結作，출발 所在，錄音與編曲美學的教科書",
+        "curatorRisk": "MB 條目薄（中風險），近年韓版黑膠復刻可掛"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "시인과 촌장",
+      "album": "푸른 돛",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "a293fc01-1c74-498a-8cd6-9c7c9944811f",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 시인과 촌장 與卡片用名一致，漢字寫作「市人과 村長」。專輯名 푸른 돛 有時與副題並記為《푸른 돛／사랑일기》，指同一張 2집，非另一版本；與 1988 年 3집《숲》分屬兩張，〈가시나무〉屬後者，已排除混淆。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/a293fc01-1c74-498a-8cd6-9c7c9944811f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第14位、하덕규 詞曲的韓國 folk 代表盤；編制精簡旋律直白，但海外流通稀少。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "疑似 pearl，海外流通極少、待店主補 listeners 覆核；殿堂資格則因跨來源證據僅限韓國榜單而暫不成立。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "하덕규 包辦全部詞曲、함춘호 擔任吉他的二人編制，1986 年錄於한국음반스튜디오、由 서라벌레코드 發行；團名取自 서영은 的小說《시인과 촌장》。聲響乾淨到近乎素描，木吉他分解和弦加上少量鍵盤與鼓，讓〈풍경〉〈사랑일기〉的旋律直接落在人聲上，〈고양이〉〈매〉則把寓言式的歌詞唱得冷。末軌〈고향의 봄〉為건전가요。韓國《대중음악 100대 명반》列第 14 位。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/푸른_돛",
+          "https://ko.wikipedia.org/wiki/시인과_촌장",
+          "https://musicbrainz.org/release-group/a293fc01-1c74-498a-8cd6-9c7c9944811f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/4f/82/424f82b7-eab3-9318-4cf1-32683e821143/mzaf_13180625576477268429.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1817434719,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1986,
+        "yearNote": "MB first-release 1986-07-15 與韓文維基〈푸른 돛〉載 1986年7月15日一致。",
+        "mbTitle": "푸른 돛",
+        "mbArtist": "시인과 촌장",
+        "mbFirstRelease": "1986-07-15",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "K2 正典：하덕규／함춘호的 2 집，풍경／사랑일기，韓國フォーク美學高點",
+        "curatorRisk": "MB 條目常缺封面或年份錯亂（高風險），以 Discogs 為封面源"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "봄여름가을겨울",
+      "album": "봄여름가을겨울",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "50563da6-7b09-49e6-a2c3-7ff8d7c16a37",
+        "upc": "8804524900950",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 봄여름가을겨울 與卡片用名一致。MB 標題「항상 기뻐하는 사람들」是首軌器樂曲名被拿來代稱同名首張專輯，韓文維基條目〈봄여름가을겨울 1집〉載專輯名即團名，非另一張盤；與 1988 年《봄여름가을겨울 2》分屬兩張。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/50563da6-7b09-49e6-a2c3-7ff8d7c16a37/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入選韓國《대중음악 100대 명반》、韓國 fusion jazz 系公認代表首作；編曲清晰易入耳，但海外能見度低。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，且跨來源證據集中於韓國國內榜單與樂評，未達殿堂門檻，維持不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "김종진 與 전태관 離開 김현식 的伴奏樂隊後自組的雙人編制，1988 年由 송홍섭 製作、서라벌레코드 發行，全碟詞曲與編曲皆出自 김종진。三首器樂小品〈항상 기뻐하는 사람들〉〈거리의 악사〉〈12월 31일〉分繫春、夏、冬，歌曲則以 fusion jazz 的和聲寫成，〈사람들은 모두 변하나봐〉傳唱最廣。電吉他與電鋼琴音色乾淨，鼓組留在後方不搶拍。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/봄여름가을겨울_1집",
+          "https://ko.wikipedia.org/wiki/봄여름가을겨울",
+          "https://musicbrainz.org/release-group/50563da6-7b09-49e6-a2c3-7ff8d7c16a37"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/15/f8/be15f817-c530-1765-1fe1-a5b640961ee6/mzaf_9186286474540553042.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1770961632,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1988,
+        "yearNote": "MB first-release 1988-06；韓文維基〈봄여름가을겨울 1집〉載 1988年6月15日，年份一致。",
+        "mbTitle": "항상 기뻐하는 사람들",
+        "mbArtist": "봄여름가을겨울",
+        "mbFirstRelease": "1988-06",
+        "upcNote": "항상 기뻐하는 사람들 (1989-03 KR)",
+        "curatorWhy": "K2 正典：김현식 백밴드出身的 fusion 雙人組 1 집，사람들은 모두 변하나봐，韓國 city pop 復刻熱門",
+        "curatorRisk": "MB 條目薄，近年復刻黑膠條目可掛"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "빛과 소금",
+      "album": "빛과 소금 Vol.1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "9441fbbf-90c5-47fa-a5bb-1ee7404b2ab7",
+        "upc": "888618093313",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 빛과 소금 與卡片用名一致；卡片名帶「Vol.1」以區辨同名樂隊與同名基督教月刊，韓文維基亦以〈빛과 소금 Vol.1〉立條。該盤另以主打歌名《샴푸의 요정》流通，指同一張 1집。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/9441fbbf-90c5-47fa-a5bb-1ee7404b2ab7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第88位、동아기획 系 fusion 樂隊代表首作；旋律直白但屬樂迷至深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，榜單排名偏後，跨來源長期共識不足以列入殿堂，維持預設不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "장기호、박성식、한경훈 三人組的首作，1990 年由 동아기획 發行。장기호 與 박성식 先前都是 김현식 三集的班底，〈비처럼 음악처럼〉即出自 박성식 之手。全碟把三首器樂曲〈아침〉〈빛 1990〉〈그녀를 위해〉與歌曲交錯排列，電鋼琴、合成器與貝斯鋪出明亮的都會質地；〈샴푸의 요정〉是 장기호 的詞曲，也是最常被提起的一首。韓國《대중음악 100대 명반》列第 88 位。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/빛과_소금_Vol.1",
+          "https://ko.wikipedia.org/wiki/빛과_소금_(밴드)",
+          "https://musicbrainz.org/release-group/9441fbbf-90c5-47fa-a5bb-1ee7404b2ab7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/3a/ef/2f3aefe1-8eab-de2c-dadd-32bbdbce3771/mzaf_11485994058342412753.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1804597212,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1990,
+        "yearNote": "MB first-release 1990-11-01 與韓文維基〈빛과 소금 Vol.1〉載 1990年11月一致。",
+        "mbTitle": "빛과 소금",
+        "mbArtist": "빛과 소금",
+        "mbFirstRelease": "1990-11-01",
+        "upcNote": "빛과 소금 (1990-11-01 XW)",
+        "curatorWhy": "K2 正典：샴푸의 요정 所在，동아기획 city pop 系雙壁之一，國際 DJ 圈再發熱門",
+        "curatorRisk": "MB 條目薄，近年復刻黑膠條目可掛"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "서태지와 아이들",
+      "album": "서태지와 아이들",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "56946299-2041-3758-a3f8-b33636c9300e",
+        "upc": "8809009030047",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 서태지와 아이들 與卡片用名一致；MB 標題採羅馬字「Seo Taiji and Boys」，韓文維基條目名亦作〈Seotaiji and Boys 1〉，皆指同一張 1992 年 1집，非 2007／2009 年重發套裝。與後續《Live & Techno Mix》等現場盤已排除混淆。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/56946299-2041-3758-a3f8-b33636c9300e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國流行音樂的斷代作，出道盤銷量紀錄保持者且列《대중음악 100대 명반》第24位；旋律與節拍直白，屬大眾曲目。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "公認為韓國流行音樂產業轉向的分界作，跨語圈長期共識明確，銷量與榜單地位皆有可查證記錄，足列該領域史上核心。",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_1",
+          "https://en.wikipedia.org/wiki/Seo_Taiji_and_Boys",
+          "https://ko.wikipedia.org/wiki/한국대중음악_100대_명반"
+        ]
+      },
+      "description": {
+        "text": "金屬樂隊 시나위 貝斯手出身的 서태지 帶著 양현석、이주노 於 1992 年推出的首作，作曲、編曲與錄音幾乎由他一人完成。〈난 알아요〉把韓語饒舌接上強拍舞曲，〈환상 속의 그대〉續推同一路子，〈Rock'N Roll Dance〉的曲則掛 Angus Young 之名。首次電視演出評審只給平均 7.8 分，唱片卻賣出約 170 萬張，至今仍是韓國銷量最高的出道專輯，也把十來歲聽眾推成唱片市場主力。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_1",
+          "https://en.wikipedia.org/wiki/Seo_Taiji_and_Boys",
+          "https://musicbrainz.org/release-group/56946299-2041-3758-a3f8-b33636c9300e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/38/f1/71/38f1717e-144a-bd34-d037-887899f1b7b8/mzaf_9273942356269570645.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1614224678,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1992,
+        "yearNote": "MB first-release 1992-03-23 與韓文維基〈Seotaiji and Boys 1〉載 1992年3月23日一致。",
+        "mbTitle": "Seo Taiji and Boys",
+        "mbArtist": "서태지와 아이들",
+        "mbFirstRelease": "1992-03-23",
+        "upcNote": "Seo Taiji and Boys (1992-03-23 KR)",
+        "curatorWhy": "K2 正典：난 알아요——K-pop 元年、韓國流行史的斷代線，資料庫必備",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "서태지와 아이들",
+      "album": "서태지와 아이들 IV",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "8dc98dde-124b-3553-b618-dfdf17386207",
+        "upc": "8809107692680",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 서태지와 아이들 與卡片用名一致；MB 標題「Seo Taiji and Boys IV」為羅馬字寫法，韓文維基條目名〈Seotaiji and Boys 4〉並於內文標「서태지와 아이들 IV」，三者同指 1995 年 4집。與 1996 年單曲《시대유감》、精選《Goodbye Best》已分辨清楚。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/8dc98dde-124b-3553-b618-dfdf17386207/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《대중음악 100대 명반》第36位、雙百萬銷量，且因〈시대유감〉直接牽動韓國事前審議制度廢止；曲風偏硬但仍是流行語法。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "歷史效應明確，但殿堂席次已由同組 1992 年首作代表，避免同一藝人重複佔位，此張暫不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1995 年的徐太志時代完結作，錄音分在首爾 Bay Studio 與洛杉磯 Ocean Way。〈COME BACK HOME〉被視為把 gangsta rap 帶進韓國主流的第一步，〈필승〉則在電視上以三人樂隊編制演出。〈시대유감〉遭한국공연윤리위원회 判定歌詞不可，서태지 不改詞，直接抽掉人聲只收器樂版以示抗議；此事推動 1996 年 6 月事前審議制度廢止，帶人聲的版本才在同年七月以單曲發行。銷量逾 200 萬張。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_4",
+          "https://ko.wikipedia.org/wiki/시대유감",
+          "https://musicbrainz.org/release-group/8dc98dde-124b-3553-b618-dfdf17386207"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8d/b8/3a/8db83a18-522b-c9e5-1f81-9092166ab997/mzaf_16343824968120064240.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1622325821,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1995,
+        "yearNote": "MB first-release 1995-10-05 與韓文維基〈Seotaiji and Boys 4〉載 1995年10月5日一致。",
+        "mbTitle": "Seo Taiji and Boys IV",
+        "mbArtist": "서태지와 아이들",
+        "mbFirstRelease": "1995-10-05",
+        "upcNote": "Seo Taiji and Boys IV (2009-05-25 KR)",
+        "curatorWhy": "K2 正典：컴백홈／필승，徐太志時代完結作，韓國 hip hop／rock 混融的先聲",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "N.EX.T",
+      "album": "The Return of N.EX.T Part 1: The Being",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "da2a73f6-0380-3814-a600-8918e222e5f0",
+        "upc": "8801035408456",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit N.EX.T 與卡片用名一致，該團官方藝名本即拉丁字母寫法（신해철 領軍，韓文亦作 넥스트）。專輯名與韓文維基條目〈The Return of N.EX.T Part 1: The Being〉相符，內頁另標「N.EX.T 2」為集數標示；與 1995 年《The Return of N.EX.T Part 2: World》分屬兩張，未混淆。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5b/8f/f9/5b8ff9ba-4abc-3164-4dd6-a3a8a566987e/3000.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1562126602）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第38位、90年代韓國搖滾概念盤代表；近十分鐘組曲與重型段落使入耳需要時間。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，地位主要限於韓國搖滾圈內共識，未達跨來源殿堂門檻，維持不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "신해철 因 1993 年大麻案沉潛後，帶 N.EX.T 復出的第二張正規盤，主題環繞人的存在。前作《Home》以 techno 接搖滾，這回改回常規樂隊編制，heavy metal 與 progressive rock 佔多數：〈껍질의 파괴〉是近十分鐘的三段組曲，〈The Ocean: 불멸에 관하여〉壓軸，이정식 的長笛穿插其間。反差最大的是木吉他伴奏的〈날아라 병아리〉。全碟曲由 신해철 一手包辦。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/The_Return_of_N.EX.T_Part_1:_The_Being",
+          "https://ko.wikipedia.org/wiki/N.EX.T",
+          "https://musicbrainz.org/release-group/da2a73f6-0380-3814-a600-8918e222e5f0"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/21/65/9b/21659bf3-24be-408a-bd23-f404c25010d3/mzaf_12632761693478647696.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1562126602,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "MB first-release 1994-05-01；韓文維基載 1994年4月30日，日期差一天但年份一致，採 1994。",
+        "mbTitle": "The Return of N.EX.T Part 1: The Being",
+        "mbArtist": "N.EX.T",
+        "mbFirstRelease": "1994-05-01",
+        "upcNote": "The Return of N.EX.T Part 1: The Being (1994-05 KR)",
+        "curatorWhy": "K2 正典：신해철的概念大作，날아라 병아리，90s 韓搖最高峰之一",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "이문세",
+      "album": "이문세 4집",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "fdef14ae-f477-4d2c-891f-fa15c8cdd08f",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 이문세 與卡片用名一致，漢字寫作 李文世。專輯名以集數命名（이문세 4집），韓文維基同名立條，與 3집、5집 分辨清楚；市面另有以〈사랑이 지나가면〉為題的後出精選，非本盤。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/fdef14ae-f477-4d2c-891f-fa15c8cdd08f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第16位、約280萬張銷量並獲골든디스크 음반 대상，是韓國 팝 발라드 成形期的定型之作。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "國內地位極高，但可查證的跨來源共識仍以韓國榜單與銷售紀錄為主，暫不列殿堂，建議店主日後覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "이영훈 包辦全碟詞曲並任製作，1987 年由 서라벌레코드 發行，與 유재하《사랑하기 때문에》同被視為韓國 팝 발라드 成形的起點。編曲交給 사랑과 평화 出身的 김명곤，吉他請來 함춘호；弦樂與電鋼琴托著 이문세 的中音，〈사랑이 지나가면〉〈그女의 웃음소리뿐〉都走長句旋律。銷量約 280 萬張，並拿下 1987 年골든디스크 음반 대상。末軌〈어허야 둥기둥기〉為건전가요。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/이문세_4집",
+          "https://ko.wikipedia.org/wiki/이문세",
+          "https://musicbrainz.org/release-group/fdef14ae-f477-4d2c-891f-fa15c8cdd08f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/6c/ad/de6cad88-2f01-30f6-a9dc-31c931c8c249/mzaf_6860068855885512111.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1454764581,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1987,
+        "yearNote": "MB first-release 1987-03-10 與韓文維基〈이문세 4집〉載 1987年3月10日一致。",
+        "mbTitle": "이문세 4집",
+        "mbArtist": "이문세",
+        "mbFirstRelease": "1987-03-10",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "K2 正典：이영훈作曲的국민 발라드 금자탑，사랑이 지나가면／그녀의 웃음소리뿐",
+        "curatorRisk": "MB 條目常缺封面（高風險），以 Discogs 為封面源"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "김광석",
+      "album": "다시 부르기 II",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "0b2f3a13-b9e7-3462-894f-219f835b526f",
+        "upc": "8804524011663",
+        "exceptionReason": "非促銷拼盤，而是 조동익 製作、全數重新錄音的韓國 모던포크 致敬盤，列《대중음악 100대 명반》第25位，並成為 김광석 生前最後、也最流通的一批錄音，是進入韓國民謠正典的標準入口。",
+        "exceptionEvidenceUrls": [
+          "https://ko.wikipedia.org/wiki/김광석_다시_부르기_2",
+          "https://ko.wikipedia.org/wiki/김광석",
+          "https://musicbrainz.org/release-group/0b2f3a13-b9e7-3462-894f-219f835b526f"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 김광석 與卡片用名一致，漢字寫作 金光石。MB 標題「다시 부르기 2」用阿拉伯數字，卡片作「다시 부르기 II」，韓文維基條目名〈김광석 다시 부르기 2〉，三者同指 1995 年這張重唱盤；與 1993 年《다시 부르기 1》分屬兩張，亦非後出的 Best 系精選。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0b2f3a13-b9e7-3462-894f-219f835b526f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第25位、韓國 모던포크 的致敬正典，也是 김광석 最流通的錄音；木吉他與人聲為主，入耳直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "重錄致敬性質使其史上核心地位不及原創正規盤，classic 未達 5，維持不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "김광석 1995 年的第二張重唱盤，由 조동익 製作，選的是韓國 모던포크 的代表曲：한대수〈바람과 나〉、양병집 改編 Dylan 的〈두 바퀴로 가는 자동차〉、김의철〈불행아〉、김목경〈어느 60대 노부부 이야기〉，以及동물원 時期的〈잊혀지는 것〉〈변해가네〉。編曲收得極簡，木吉他與人聲為主，把前輩的曲子唱成同一種語氣。發行隔年一月 김광석 過世，此作遂成他最流通的錄音。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/김광석_다시_부르기_2",
+          "https://ko.wikipedia.org/wiki/김광석",
+          "https://musicbrainz.org/release-group/0b2f3a13-b9e7-3462-894f-219f835b526f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/20/b3/8f20b317-d641-80f6-5f7f-63651b9858b0/mzaf_15476468297653456134.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1501122724,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1995,
+        "yearNote": "MB first-release 1995-02-22 與韓文維基〈김광석 다시 부르기 2〉載 1995年2月22日一致。",
+        "mbTitle": "다시 부르기 2",
+        "mbArtist": "김광석",
+        "mbFirstRelease": "1995-02-22",
+        "upcNote": "다시 부르기 2 (1995-02-22 KR)",
+        "curatorWhy": "K2 正典：김광석 재해석 앨범，어느 60대 노부부 이야기，池內僅 4 집、以此補其最流通代表盤",
+        "curatorRisk": "重錄再詮釋專輯（非精選），MB 條目確認為 1995 재발매 계열"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "장기하와 얼굴들",
+      "album": "별일 없이 산다",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1d5cb1e2-3425-4929-a272-7e695bd4571c",
+        "upc": "8809267370152",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 장기하와 얼굴들 與卡片用名一致（意為「張基河與臉孔們」）。專輯名 별일 없이 산다 取自末軌曲名，與 2008 年前作單曲《싸구려 커피》、2011 年同名團名專輯《장기하와 얼굴들》分辨清楚；日本版另題《何事もなく暮らす》（2010，P-Vine），為同一張盤的海外發行。韓籍藝人命名店規未定案，照輸入檔保留韓文原名。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ae/0c/95/ae0c959a-2464-712c-0204-58215ada58ba/dj.pgltruud.png/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "原圖 250×227 非正方、下緣被裁掉約一成且嚴重偏暗糊掉。改用 Apple 韓國商店 1450774540 官方封面（1000×1000bf），已下載目視確認：正方、首爾山坡住宅區空拍、右方小黃花圖案、左上 COMPACT DISC DIGITAL AUDIO 標誌（原封套印刷，Apple 官圖同樣印有），無盒邊無價格標籤"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000年代末韓國獨立場景的突破盤，銷量約五萬張並入選소리바다 2000年代名盤百選；當時樂評分歧，故不予更高分。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行時樂評評價分歧，長期共識尚未沉澱到史上核心的程度，classic 未達 5，維持不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "장기하 包辦製作與詞曲編曲，錄音多半在 나잠 수 位於쑥고개的房間完成，封面用設計師 김기조 從直升機上拍下的照片。說話式的唱腔配上七、八〇年代韓國搖滾的音色，〈싸구려 커피〉〈달이 차오른다, 가자〉〈별일 없이 산다〉寫的都是貧窮青年的日常。獨立廠牌붕가붕가레코드 發行卻賣出約五萬張，樂評則分歧，이즘 的 임진모 只給五分之二。〈나를 받아주오〉被청소년보호위원회 判為青少年有害媒體物。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/별일_없이_산다",
+          "https://ko.wikipedia.org/wiki/장기하와_얼굴들",
+          "https://musicbrainz.org/release-group/1d5cb1e2-3425-4929-a272-7e695bd4571c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/51/d8/e6/51d8e69d-8ebd-bf64-b7e0-a135f2db800e/mzaf_11387679180036253512.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1450774540,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "MB first-release 2009-02-27 與韓文維基〈별일 없이 산다〉載 2009年2月27日一致。",
+        "mbTitle": "별일 없이 산다",
+        "mbArtist": "장기하와 얼굴들",
+        "mbFirstRelease": "2009-02-27",
+        "upcNote": "별일 없이 산다 (2009-02-27 KR)",
+        "curatorWhy": "K3 K-indie：싸구려 커피 世代宣言，홍대 신 2000 年代末的代表盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "HYUKOH",
+      "album": "23",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "aeca72a6-7851-4207-b368-91cce0d14d8a",
+        "upc": "8809269507761",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為拉丁字 HYUKOH，韓文原名혁오（取自隊長오혁姓名倒置）。卡片用名沿用輸入檔的 HYUKOH；韓籍藝人命名規則未定案，若日後改採韓文原名應寫혁오。與同名數字專輯《22》《24》為不同作品，已排除混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/aeca72a6-7851-4207-b368-91cce0d14d8a/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張正規即拿下한국대중음악상年度歌曲、가온榜第 5，是 K-indie 走向大眾與海外的門面，但入耳門檻低、能見度高。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行僅數年，尚無跨來源長期共識足以列為韓國搖滾史核心；獎項與榜單成績雖佳仍屬當代評價。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "혁오（HYUKOH）由主唱兼吉他手오혁領軍，2014 年以 EP《20》起步。首張正規《23》2017 年 4 月 24 日經지니뮤직發行，十二曲詞全由오혁包辦。乾淨微顫的吉他聲線與留白的節奏，把 indie rock 的鬆散感壓進流行結構。〈TOMBOY〉奪下한국대중음악상年度歌曲，也讓獨立樂團睽違九年重登電視音樂節目冠軍；專輯登上가온榜第 5、告示牌 World Albums 第 6。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/23_(혁오의_음반)",
+          "https://ko.wikipedia.org/wiki/혁오",
+          "https://musicbrainz.org/release-group/aeca72a6-7851-4207-b368-91cce0d14d8a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/ba/4b/f6ba4b3a-0368-479e-86f0-6298f51ed0cf/mzaf_9101575353330784472.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1450778313,
+        "appleCollectionName": "23"
+      },
+      "research": {
+        "suggestedYear": 2017,
+        "yearNote": "ko.wikipedia 與 MB first-release-date 均為 2017-04-24，與 curatorYear 一致。",
+        "mbTitle": "23",
+        "mbArtist": "HYUKOH",
+        "mbFirstRelease": "2017-04-24",
+        "upcNote": "23 (2017-04-24 KR)",
+        "curatorWhy": "K3 K-indie：혁오首張正規，TOMBOY，K-indie 國際化的門面",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "잔나비",
+      "album": "전설",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1a4f4a63-c1b2-43b7-bb05-a543682ae04e",
+        "upc": "8804775122552",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片用名同為韓文原名잔나비（羅馬字 Jannabi，意為長臂猿）；ko.wikipedia 主條目「잔나비」是動物條目，樂團條目為「잔나비 (밴드)」，已確認未取錯。專輯名《전설》另有同名條目消歧義，本筆對應 2019 年正規二輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/1a4f4a63-c1b2-43b7-bb05-a543682ae04e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；멜론月榜冠軍與한국대중음악상年度歌曲加持，是韓國獨立樂團史上最暢銷的作品之一，旋律直白好入口。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "商業成績極佳但樂評評價中庸（이즘 3/5），尚未累積足以進殿堂的跨來源長期共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "잔나비（Jannabi）第二張正規《전설》2019 年 3 月 13 日由페포니 뮤직發行，主唱최정훈製作並包辦全碟作詞。相較前作《MONKEY HOTEL》，rock'n'roll 的躁動收斂，古典編制比重加大，過度堆疊的製作也退了一步，整體轉向柔軟的復古質地。〈주저하는 연인들을 위해〉登上멜론五月月榜冠軍並奪한국대중음악상年度歌曲，〈꿈과 책과 힘과 벽〉、〈투게더!〉亦廣為傳唱。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/전설_(음반)",
+          "https://ko.wikipedia.org/wiki/잔나비_(밴드)",
+          "https://musicbrainz.org/release-group/1a4f4a63-c1b2-43b7-bb05-a543682ae04e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/b4/c4/39b4c43c-f356-f46e-8055-b59f0d1bd19c/mzaf_12686605279587495674.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1456102975,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2019,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2019-03-13，與 curatorYear 一致。",
+        "mbTitle": "전설",
+        "mbArtist": "잔나비",
+        "mbFirstRelease": "2019-03-13",
+        "upcNote": "전설 (2019-03-13 KR)",
+        "curatorWhy": "K3 K-indie：주저하는 연인들을 위해 所在，復古搖滾美學的국민적 히트盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "SE SO NEON",
+      "album": "여름깃",
+      "identity": {
+        "releaseType": "EP",
+        "rgMbid": "7451c86a-fa8e-4540-85e1-3c16bc6295fc",
+        "upc": "8809516262740",
+        "genreException": "asia-mini-album",
+        "exceptionReason": "MB primary-type 為 EP 而非正規專輯：여름깃 是새소년出道作，同步壓製 LP 與 CD 實體，且以此作拿下한국대중음악상年度新人與最佳搖滾歌曲，是 2010 年代後期韓國樂團復興的起點文獻，故以例外收錄。",
+        "exceptionEvidenceUrls": [
+          "https://ko.wikipedia.org/wiki/새소년_(음악_그룹)",
+          "https://musicbrainz.org/release-group/7451c86a-fa8e-4540-85e1-3c16bc6295fc"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB release-group 標題為英譯 Summer Plumage、artist credit 為새소년，卡片用名沿用輸入檔的拉丁字 SE SO NEON（官方英文寫法）與韓文專輯名《여름깃》。ko.wikipedia 主條目「새소년」是 1964 年創刊的兒童雜誌，樂團條目為「새소년 (음악 그룹)」，同名混淆已排除。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7451c86a-fa8e-4540-85e1-3c16bc6295fc/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道 EP 即獲한국대중음악상年度新人與最佳搖滾歌曲，是新世代韓國樂團的起點，但作品體量小、樂迷領域為主。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "六曲 EP 的份量與年資都不足以談殿堂；本環境取不到 listeners，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "새소년（SE SO NEON）2016 年於붕가붕가레코드成軍，核心是主唱兼吉他手황소윤。出道 EP《여름깃》2017 年 10 月 26 日發行，六曲不到二十六分鐘，同時壓製 LP 與 CD。황소윤沙啞而中性的聲線配上顆粒粗的吉他推弦，把 indie rock 寫得緊縮克制；先行單曲〈긴 꿈〉收為第二軌，末軌〈새소년〉與團名同名。憑此樂團拿下한국대중음악상年度新人與最佳搖滾歌曲。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/새소년_(음악_그룹)",
+          "https://musicbrainz.org/release-group/7451c86a-fa8e-4540-85e1-3c16bc6295fc"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/37/19/ce371982-c979-8523-4e6b-521dba030db0/mzaf_12748184405855995015.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1450484183,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2017,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2017-10-26，與 curatorYear 一致。",
+        "mbTitle": "Summer Plumage",
+        "mbArtist": "SE SO NEON",
+        "mbFirstRelease": "2017-10-26",
+        "upcNote": "Summer Plumage (2017-10-26 KR)",
+        "curatorWhy": "K3 K-indie：새소년出道 EP，황소윤的吉他與聲線宣告新世代，긴 꿈",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Parannoul",
+      "album": "To See the Next Part of the Dream",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "74769203-cd8e-409b-912e-f1ec476dd716",
+        "upc": "8809784433132",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 為韓文原名파란노을，卡片用名沿用輸入檔的羅馬字 Parannoul（本人 Bandcamp 官方寫法），韓文原名建議並列。藝人匿名、無本名可考；與同名日文詞彙無關，未發現同名藝人混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/74769203-cd8e-409b-912e-f1ec476dd716/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Pitchfork 8.0 與多家年度榜單認證的臥室 shoegaze 代表作，但全碟破音牆與長篇幅使入耳需要適應。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "2021 年作品，網路世代口碑極強但時間尚短，跨來源長期共識還在形成，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "파란노을（Parannoul）是首爾一位匿名獨立音樂人，2021 年 2 月 23 日自行發行的第二張專輯全在自己房間完成，器樂幾乎都用軟體音源，多數曲目音量推到破音（clipping）邊緣。厚牆般的吉他噪音底下埋著 emo 式旋律與韓語自白，〈흰천장〉一曲長達十分鐘。Pitchfork 給 8.0 分並選入年度最佳搖滾專輯，Longinus Recordings 隨後發行實體版。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/To_See_the_Next_Part_of_the_Dream",
+          "https://ko.wikipedia.org/wiki/파란노을",
+          "https://musicbrainz.org/release-group/74769203-cd8e-409b-912e-f1ec476dd716"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/44/9f/7c449fde-1126-371a-ae01-23d9f7313853/mzaf_4434465929064451180.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1563369236,
+        "appleCollectionName": "To See the Next Part of the Dream"
+      },
+      "research": {
+        "suggestedYear": 2021,
+        "yearNote": "en.wikipedia 與 MB 皆記 2021-02-23 自主發行，與 curatorYear 一致。",
+        "mbTitle": "To See the Next Part of the Dream",
+        "mbArtist": "파란노을",
+        "mbFirstRelease": "2021-02-23",
+        "upcNote": "To See the Next Part of the Dream (2021-04-19 XW)",
+        "curatorWhy": "K3 K-indie：臥室 shoegaze 的世代名盤，RYM 世代正典、國際樂評最高的韓國專輯之一，黑膠有發行",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Mid-Air Thief",
+      "album": "무너지기",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "6365c820-46ec-41ba-9421-3a200116ed5b",
+        "upc": "4582237842760",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 作「공중도둑 (Mid‐Air Thief)」，卡片用名沿用輸入檔拉丁字 Mid-Air Thief，韓文原名공중도둑建議並列。此人先後用過 Hyoo／공중도덕／새눈바탕／새눈도둑等化名，改名공중도둑是為避開 Show Me The Money 5 同名嘻哈組合，同名混淆已排除。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6365c820-46ec-41ba-9421-3a200116ed5b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상最佳舞曲與電子專輯得主，海外 cult 名聲穩固；剪接密度高、段落多變，需要一點耐心。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人匿名且無現場演出，評價集中於網路社群與單一獎項，尚未形成殿堂所需的跨來源長期共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "공중도둑（Mid-Air Thief）是韓國匿名音樂人，2012 年起以휴、공중도덕等名義發表作品，至今未曾以任何化名登台。2018 年 7 月 31 日發行的《무너지기（Crumbling）》請歌手 Summer Soul 獻聲並填詞，把民謠指彈、變速取樣與電子音色剪接成不斷崩解又重組的織體，路數介於 folktronica 與 neo-psychedelia。本作奪下 2019 年한국대중음악상最佳舞曲與電子專輯，海外由 Topshelf Records 發行。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mid-Air_Thief",
+          "https://ko.wikipedia.org/wiki/공중도둑",
+          "https://musicbrainz.org/release-group/6365c820-46ec-41ba-9421-3a200116ed5b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c2/64/74/c26474ef-f586-ba3c-92bb-a2182bf8564e/mzaf_14825609437576735382.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1434798374,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2018,
+        "yearNote": "en.wikipedia 與 MB 皆記 2018-07-31（ko.wikipedia 誤記 8 月 7 日），與 curatorYear 一致。",
+        "mbTitle": "무너지기 (Crumbling)",
+        "mbArtist": "공중도둑",
+        "mbFirstRelease": "2018-07-31",
+        "upcNote": "Crumbling (2018-12-04 JP)",
+        "curatorWhy": "K3 K-indie：공중도둑《Crumbling》，folktronica 國際 cult 正典，Bandcamp 世代 MB 條目完整",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Black Skirts",
+      "album": "201",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "68e84b50-5c44-3729-934c-3e271591be06",
+        "upc": "8803581192360",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 為韓文原名검정치마，卡片用名沿用輸入檔英文藝名 The Black Skirts（官方寫法），本名조휴일。策展註記提到的〈Everything〉屬 2016 年單曲、不在本盤，已排除誤植；2010 年《201 (Special Edition)》為同一作品的擴充再發，非另一張專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/68e84b50-5c44-3729-934c-3e271591be06/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상最佳現代搖滾專輯，並列名멜론／한겨레「명반 100」第 73，是 2000 年代홍대 indie pop 的標準文本。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "名榜單排名居後段、獎項集中在單一年度，地位穩固但未達史上核心的跨來源共識，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "검정치마是조휴일的個人名義；他十二歲移居美國、2006 年返韓後以單人樂團起步。首張《201》2008 年 11 月 13 日由루비살롱發行，錄音在自宅地下室完成，十首曲全由조휴일作詞作曲。乾冷的鼓組配上懶散人聲與粗糙吉他，〈좋아해줘〉、〈Antifreeze〉傳唱至今。本作獲한국대중음악상最佳現代搖滾專輯，並列名멜론與한겨레合辦的「한국 대중음악 명반 100」第 73 名。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/201_(음반)",
+          "https://en.wikipedia.org/wiki/The_Black_Skirts",
+          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100",
+          "https://musicbrainz.org/release-group/68e84b50-5c44-3729-934c-3e271591be06"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/45/65/f24565b6-1d7b-ef67-e484-9eb9a61be138/mzaf_9172851488101724648.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1316404325,
+        "appleCollectionName": "201 (Special Edition)"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2008-11-13 루비살롱初版；en.wikipedia 寫的 2010 年指的是流通更廣的 Special Edition 與得獎年度，原盤年份仍取 2008。",
+        "mbTitle": "201",
+        "mbArtist": "검정치마",
+        "mbFirstRelease": "2008-11-13",
+        "upcNote": "201 (2010-03-18 KR)",
+        "curatorWhy": "K3 K-indie：검정치마出道盤，2000s 홍대 인디팝 정전，Everything／좋아해줘",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "언니네 이발관",
+      "album": "가장 보통의 존재",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "772f05b6-d0c1-339d-96bb-dcc568bc3d58",
+        "upc": "8809259900497",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 作「언니네 이발관」（中間有空格），ko.wikipedia 主條目為無空格的「언니네이발관」，兩者為同一團體；卡片用名沿用輸入檔帶空格寫法。團名另有中譯「姊姊們的理髮店」，本店不採意譯。同一榜單另收該團《비둘기는 하늘의 쥐》《후일담》，未與本盤混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/772f05b6-d0c1-339d-96bb-dcc568bc3d58/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상年度專輯等三項得主，並列名「명반 100」第 50，是韓國 indie rock 抒情路線的公認完成形。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "멜론／한겨레「한국 대중음악 명반 100」第 50 名，加上한국대중음악상年度專輯，跨來源長期共識足列韓國獨立搖滾史核心。",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/가장_보통의_존재",
+          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
+        ]
+      },
+      "description": {
+        "text": "언니네이발관第五張正規，2008 年 8 月 8 日經쌈넷發行，距前作《순간을 믿어요》四年。이석원與이능룡包辦全部作曲、이석원獨力作詞；每首混音重做十五次，母帶又花八天。樂團刻意避開過往的민요色彩而向黑人音樂的律動取徑，이석원要求聽者從第一軌依序聽完，全碟以單一主題貫串。獲한국대중음악상年度專輯等三項，並列「한국 대중음악 명반 100」第 50 名。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/가장_보통의_존재",
+          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100",
+          "https://musicbrainz.org/release-group/772f05b6-d0c1-339d-96bb-dcc568bc3d58"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/33/54/03335475-1531-b9cc-70ac-fc2b89090900/mzaf_6554693492456516341.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1253356877,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2008-08-08 쌈넷發行，與 curatorYear 一致。",
+        "mbTitle": "가장 보통의 존재",
+        "mbArtist": "언니네 이발관",
+        "mbFirstRelease": "2008-08-08",
+        "upcNote": "Most Ordinary Existence (2008-08-08 )",
+        "curatorWhy": "K3 K-indie：韓國 100대 명반 上位常客，인디록 서정의 완성形",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "델리스파이스",
+      "album": "Deli Spice",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "f5bab0ab-4b11-312a-a17e-a0e89a7465fc",
+        "upc": "8809010840192",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 為拉丁字 Deli Spice，ko.wikipedia 與韓國通行寫法為韓文「델리스파이스」；卡片用名沿用輸入檔韓文原名，專輯名維持原版拉丁字《Deli Spice》。2005 年문라이즈／디앤씨뮤직再發版為同一作品，非另一張專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/f5bab0ab-4b11-312a-a17e-a0e89a7465fc/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「한국 대중음악 명반 100」第 18 名，韓國獨立第一世代的開山作，〈챠우챠우〉已是全時代標準曲。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "멜론／한겨레「명반 100」第 18 名，且被視為韓國인디文化起點的關鍵作，跨來源長期共識足列史上核心。",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/Deli_Spice",
+          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
+        ]
+      },
+      "description": {
+        "text": "델리스파이스 1995 年由 PC 通訊하이텔的모던록同好會集結而成，김민규當年在板上貼出「想做 U2 和 R.E.M. 那樣的音樂」的徵人啟事。1997 年 8 月 8 日發行的同名首作共十一曲，捨棄地下헤비메탈路線，改以清脆刷弦與唯美旋律鋪陳。〈차우차우〉整首只繞著「너의 목소리가 들려」一句，2002 年因電影《후아유》再度翻紅；〈No Carrier〉取自連線中斷的提示。列「한국 대중음악 명반 100」第 18 名。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Deli_Spice",
+          "https://ko.wikipedia.org/wiki/델리스파이스",
+          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100",
+          "https://musicbrainz.org/release-group/f5bab0ab-4b11-312a-a17e-a0e89a7465fc"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/71/95/0a/71950a09-ebae-c96c-3a2f-0b605c4405e8/mzaf_8045416471701859319.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1680499541,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "ko.wikipedia 專輯條目記 1997-08-08，MB 只到 1997-08，取 1997，與 curatorYear 一致。",
+        "mbTitle": "Deli Spice",
+        "mbArtist": "Deli Spice",
+        "mbFirstRelease": "1997-08",
+        "upcNote": "Deli Spice (1997-08 KR)",
+        "curatorWhy": "K3 K-indie：챠우챠우 所在，韓國 인디 1 세대 開山盤",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "자우림",
+      "album": "Purple Heart",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "28dd00c7-116c-3df1-9648-d42583252640",
+        "upc": "8809069410070",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 與卡片用名同為韓文原名자우림（漢字紫雨林，出道前團名미운오리）。ko.wikipedia「Purple Heart」條目另有消歧義頁指向勳章，已確認取到자우림的專輯條目。策展註記把〈헤이 헤이 헤이〉算進本盤有誤——該曲屬電影原聲帶，簡介已改正。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/28dd00c7-116c-3df1-9648-d42583252640/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國最長壽樂團之一的出道盤，〈일탈〉是 1990 年代末的標誌曲，但未進「명반 100」等主要名榜單。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團地位穩固，惟首張本身未見於韓國主要名榜單，缺乏足以進殿堂的跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "자우림（紫雨林）1997 年以電影《꽃을 든 남자》原聲帶裡的〈헤이 헤이 헤이〉出道，同年 11 月推出首張正規《Purple Heart》。김윤아幾乎包辦全部詞曲，吉他手이선규另寫〈어른 아이〉與〈예뻐〉。十二曲四十二分鐘走 alternative rock 路線，〈일탈〉以近乎脫序的唸唱堆疊宣洩感，開卷〈밀랍천사〉則由강세일參與編曲。김윤아此後帶著樂團成為韓國最長壽的樂團之一。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Purple_Heart",
+          "https://ko.wikipedia.org/wiki/자우림",
+          "https://musicbrainz.org/release-group/28dd00c7-116c-3df1-9648-d42583252640"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5a/5e/52/5a5e52a5-3d1f-6e48-0796-e551027fcffe/mzaf_15470768223471573095.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1486570395,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "ko.wikipedia 記 1997-11-01，MB 只到 1997-11，取 1997，與 curatorYear 一致。",
+        "mbTitle": "Purple Heart",
+        "mbArtist": "자우림",
+        "mbFirstRelease": "1997-11",
+        "upcNote": "Purple Heart (2001-09 KR)",
+        "curatorWhy": "K3 K-indie：자우림 1 집，헤이 헤이 헤이，김윤아——韓國 밴드씬 最長壽的門面之一的起點",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Say Sue Me",
+      "album": "Where We Were Together",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d9cfb9a6-bb30-4fff-bed7-b9dae4112899",
+        "upc": "603728489326",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片用名同為拉丁字 Say Sue Me（官方藝名），ko.wikipedia 韓文寫法為세이수미，主唱本名최수미。此團為釜山在地團體，與同名英文短語無關；en.wikipedia 另載韓國版與國際版封面不同，非兩張專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d9cfb9a6-bb30-4fff-bed7-b9dae4112899/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 80 分與한국대중음악상最佳搖滾專輯、最佳搖滾歌曲雙料，是韓國樂團打進國際獨立線的代表案例。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價良好且獎項紮實，但屬近年作品、影響力仍限於獨立圈，未達殿堂的長期跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "세이수미（Say Sue Me）2012 年組於釜山，第二張專輯 2018 年 4 月 13 日由英國廠牌 Damnably 發行。錄音期間鼓手강세민因重傷離團，換上김창원後才重啟工程。滿是殘響的衝浪吉他與최수미慵懶的英語演唱撐起 jangle pop 骨架，末軌〈Coming to the End〉拉到七分半。Metacritic 綜合五篇樂評得 80 分，樂團隔年拿下한국대중음악상最佳搖滾專輯與最佳搖滾歌曲。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Where_We_Were_Together",
+          "https://ko.wikipedia.org/wiki/세이수미",
+          "https://musicbrainz.org/release-group/d9cfb9a6-bb30-4fff-bed7-b9dae4112899"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/09/14/cb/0914cbce-68e8-b3cd-2a6f-b42c2547a17f/mzaf_6099298666260882661.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1367833910,
+        "appleCollectionName": "Where We Were Together"
+      },
+      "research": {
+        "suggestedYear": 2018,
+        "yearNote": "en.wikipedia 與 MB 皆記 2018-04-13 Damnably 發行，與 curatorYear 一致。",
+        "mbTitle": "Where We Were Together",
+        "mbArtist": "Say Sue Me",
+        "mbFirstRelease": "2018-04-13",
+        "upcNote": "Where We Were Together (2018-04-13 KR)",
+        "curatorWhy": "K3 K-indie：釜山 surf-indie，국제 인디 서킷（Damnably）發行、黑膠流通良好",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Silica Gel",
+      "album": "POWER ANDRE 99",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d60c7552-e0bb-44e7-b386-d0f35ac59037",
+        "upc": "8809964653299",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 為拉丁字 Silica Gel，韓文原名실리카겔（團名取自口香糖罐裡的乾燥劑）；卡片用名沿用輸入檔拉丁字。與化學物質乾燥劑同名，資料庫檢索時須加樂團限定；MB 標題作 Power Andre 99，官方通行寫法為全大寫 POWER ANDRE 99，僅大小寫差異。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d60c7552-e0bb-44e7-b386-d0f35ac59037/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상年度音樂人、最佳現代搖滾專輯與歌曲三冠，是現行韓國樂團熱潮的中心；十八軌長篇且聲響繁複。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "2023 年作品，獎項極盛但時間太短，殿堂所需的長期跨來源共識尚未形成。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "실리카겔 2013 年成軍於서울예술대학교，以사이키델릭 록為底，把合成器、取樣與 VJ 影像併進演出。第二張正規《POWER ANDRE 99》2023 年 12 月 20 日先行數位發行，十八軌替虛構角色「머신 보이」的旅程收尾，接續單曲〈Mercurial〉、〈Tik Tak Tok〉與 EP《Machine Boy》。김한주以「양가성」概括全碟，讓機械感與人性、喜劇與悲劇並置。隔年獲한국대중음악상三冠。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/실리카겔_(밴드)",
+          "https://en.wikipedia.org/wiki/Silica_Gel_(band)",
+          "https://musicbrainz.org/release-group/d60c7552-e0bb-44e7-b386-d0f35ac59037"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/0c/2c/1c0c2cd7-476f-a12d-7e71-31cdf79a9b4d/mzaf_10022061872272740959.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1865062012,
+        "appleCollectionName": "POWER ANDRE 99"
+      },
+      "research": {
+        "suggestedYear": 2023,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2023-12-20 數位首發（實體 CD 版 2024-02-04），年份取 2023，與 curatorYear 一致。",
+        "mbTitle": "Power Andre 99",
+        "mbArtist": "Silica Gel",
+        "mbFirstRelease": "2023-12-20",
+        "upcNote": "Power Andre 99 (2023-12-20 XW)",
+        "curatorWhy": "K3 K-indie：실리카겔——現行韓國 밴드붐 的中心，한국대중음악상 수상盤",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "NELL",
+      "album": "Healing Process",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d5eae572-5c80-31a1-b56c-14756ee159df",
+        "upc": "8809114101991",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist credit 作 Nell，卡片用名沿用輸入檔全大寫 NELL，韓文原名넬；ko.wikipedia 條目為「넬 (음악 그룹)」。與英文人名 Nell 及同名外國藝人須以 rgMbid 區分，已確認取到韓國樂團條目。此為通算五輯、正規三輯，非精選或再發。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d5eae572-5c80-31a1-b56c-14756ee159df/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國 modern rock 抒情路線的長銷標準盤，帶動樂團脫離模仿標籤，但未見於主要名榜單。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團代表作且長期暢銷，惟缺乏名榜單與跨來源長期評價支撐，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "넬（NELL）在《Walk Through Me》後離開서태지컴퍼니，轉往울림 엔터테인먼트推出 2006 年 9 月 21 日發行的這套雙 CD。全碟詞曲由主唱김종완一手包辦、樂團自行編曲，近八十分鐘的篇幅把 modern rock 的殘響吉他與緩推段落拉得極長。主打〈마음을 잃다〉與後續曲〈Good Night〉讓樂團真正走出라디오헤드的影子，也帶動早期인디盤《Reflection of》的二手行情。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Healing_Process",
+          "https://ko.wikipedia.org/wiki/넬_(밴드)",
+          "https://musicbrainz.org/release-group/d5eae572-5c80-31a1-b56c-14756ee159df"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/00/5a/35/005a357f-1ca1-f4d2-5b7b-dedc2421ba54/mzaf_15005606890247945073.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1649447006,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2006,
+        "yearNote": "ko.wikipedia 與 MB 皆記 2006-09-21，與 curatorYear 一致。",
+        "mbTitle": "Healing Process",
+        "mbArtist": "Nell",
+        "mbFirstRelease": "2006-09-21",
+        "upcNote": "Healing Process (2006-09-21 KR)",
+        "curatorWhy": "K3 K-indie：넬的雙 CD 大作，韓國 모던록 감성의 표준，長銷正典",
+        "curatorRisk": "早期韓版黑膠無、以 CD 條目建檔或近年再發"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "DEAN",
+      "album": "130 mood : TRBL",
+      "identity": {
+        "releaseType": "EP",
+        "rgMbid": "76661742-b86c-4008-a66d-5f04fd223a78",
+        "upc": "8808678308914",
+        "genreException": "asia-mini-album",
+        "exceptionReason": "MB 標 EP，但這是韓國市場以正規迷你專輯規格發行並宣傳的作品：七首二十四分鐘、連推五支單曲、進 Gaon 專輯榜第十與《告示牌》世界專輯榜第三，母國待遇等同專輯，適用 ALBUM_ONBOARDING §5.5 asia-mini-album 白名單。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/130_Mood:_TRBL",
+          "https://musicbrainz.org/release-group/76661742-b86c-4008-a66d-5f04fd223a78"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 DEAN 與 MB credit 完全一致；本名권혁（Kwon Hyuk），韓國出道即用拉丁字藝名，依店規沿用國際出道名不改韓文。製作人化名 Deanfluenza 為同一人，非另一藝人。MB primary-type 為 EP（七首）而非 Album，屬韓國業界所稱迷你專輯，已向上游標註。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/76661742-b86c-4008-a66d-5f04fd223a78/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國 alternative R&B 的規格轉換點，《告示牌》2016 年度十大 K-pop 專輯第五名，但仍屬樂迷領域、入耳無門檻"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價集中在 2016 年前後的單一媒體榜單，缺少跨來源長期共識，尚不足以列入殿堂",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "韓國 alternative R&B 的規格轉換點。DEAN 以 Deanfluenza 之名自任詞曲與製作，與 2xxx! 等人做出七首、二十四分鐘的迷你專輯，2016 年 3 月 24 日由 Joombas 與環球發行。盤名取自詹姆斯・狄恩賽車上的號碼 130，TRBL 即 trouble。〈Pour Up〉找來 Block B 的 ZICO，〈What2do〉並置 Crush 與 Jeff Bernat，〈D (Half Moon)〉由 Gaeko 客串，收尾的〈21〉最見他寫旋律的手路。《告示牌》選為 2016 年十大 K-pop 專輯第五。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/130_Mood:_TRBL",
+          "https://musicbrainz.org/release-group/76661742-b86c-4008-a66d-5f04fd223a78"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/d1/2b/d6d12bca-59bf-ca0e-17be-1715083db23a/mzaf_6717131306487040537.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1422639416,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2016,
+        "yearNote": "MB first-release 2016-03-24（KR）與 en-wiki 一致；Apple 標 2016-03-25 為美國區發行日，取韓國原盤日",
+        "mbTitle": "130 mood : TRBL",
+        "mbArtist": "DEAN",
+        "mbFirstRelease": "2016-03-24",
+        "upcNote": "130 mood : TRBL (2016-03-24 KR)",
+        "curatorWhy": "K4 hiphop/R&B：韓國 R&B 國際面孔的唯一正式作品集，D (half moon)，池內 0 張是明顯的洞",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Tablo",
+      "album": "열꽃",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "890e37e2-502b-4512-86cd-5f44a36baf32",
+        "upc": "8809314510821",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Tablo 與 MB artist 名一致，MB credit 顯示為韓文「타블로」；本名이선웅／Daniel Armand Lee，韓籍藝人命名未定案，依輸入檔沿用拉丁字藝名。專輯名以韓文原名《열꽃》為準，英文盤名 Fever's End 為同一作品，非另一張；ko-wiki 條目「열꽃」是醫學詞條，正確條目為「열꽃 (음반)」。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/890e37e2-502b-4512-86cd-5f44a36baf32/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Epik High 主腦停工後的復出正規一輯，拿下힙합플레이야 2011 年度專輯，但未進韓國名盤正典，且旋律取向易入耳"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "作品評價良好卻非跨世代公認核心，한국 대중음악 명반 100 亦未收錄，不符殿堂門檻",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Epik High 主腦타블로（Tablo）在學歷爭議停工一年八個月後交出的首張個人正規盤，2011 年由 YG 發行，一片 CD 共十首、約三十九分鐘。多數曲目是他 2010 年七月到 2011 年初獨自寫成，盤名取自幼女發燒後浮出的熱疹——妻子告訴他那是燒要退了的徵兆。10 月 21 日與 11 月 1 日分兩批各五首公開，Part 1 由이소라獻聲的〈집〉開場、主打〈나쁘다〉，Part 2 主打〈Tomorrow〉找來太陽，兩首主打都登上韓國各大音源榜首。隔年獲힙합플레이야 2011 年度專輯。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%97%B4%EA%BD%83_(%EC%9D%8C%EB%B0%98)",
+          "https://musicbrainz.org/release-group/890e37e2-502b-4512-86cd-5f44a36baf32"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9d/d4/47/9dd447b5-a3f7-50e2-3b16-c536013e35dd/mzaf_5684975528023420852.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "Apple 全站無 10 軌完整《열꽃》，只有 Fever's End Pt. 1 - EP (1339095508, 2011-10-21, 5 軌) 與 Pt. 2 兩張分冊。Pt.1 的 5 軌＝MB 原盤（2011-11-01 KR, 10 軌）第 1–5 軌且逐首同序（집／나쁘다／Airbag／밀물／밑바닥에서），取第 1 軌〈집〉即原盤開場曲，錄音正確，實測 200。寫作 agent 依「拆卷發行一律 wrong」判退，此處人工放行並註明來源為分冊條目"
+      },
+      "research": {
+        "suggestedYear": 2011,
+        "yearNote": "MB first-release 2011-11-01 實為 Part 2 公開日；ko-wiki 記整張發賣日為 2011-10-21，同屬 2011 年",
+        "mbTitle": "열꽃",
+        "mbArtist": "Tablo",
+        "mbFirstRelease": "2011-11-01",
+        "upcNote": "열꽃 (2011-11-01 KR)",
+        "curatorWhy": "K4 hiphop/R&B：Epik High 主腦 solo《Fever's End》，池內 Epik High 5 張的自然延伸",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Verbal Jint",
+      "album": "누명",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "30fe1131-3cce-4f27-92ca-729ae5a6c268",
+        "upc": "8809218940205",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Verbal Jint 與 MB credit 一致，韓文原名버벌진트、本名김진태；專輯名用韓文原名《누명》（意近「冤名／不白之冤」）。已排查同名混淆：2008 年另有限量 EP《누명 간보기》為不同發行，本卡指的是同年 7 月 11 日的雙 CD 正規二輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/30fe1131-3cce-4f27-92ca-729ae5a6c268/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入選멜론／한겨레「한국 대중음악 명반 100」並獲第六屆韓國大眾音樂獎最佳嘻哈專輯，雙 CD 逾一小時四十分且韓語密度極高"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "韓語饒舌押韻技法的建立者最完整的一次陳列，同時入選國家級名盤百選與韓國大眾音樂獎最佳嘻哈專輯，跨來源長期共識足列韓國嘻哈史核心",
+        "evidenceUrls": [
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100",
+          "https://ko.wikipedia.org/wiki/%EB%88%84%EB%AA%85_(%EC%9D%8C%EB%B0%98)"
+        ]
+      },
+      "description": {
+        "text": "버벌진트（Verbal Jint，本名김진태）在 SNP 時期率先攤開韓語多音節押韻的可能性，這張 2008 年 7 月 11 日發行的正規二輯是那套技法最完整的一次陳列。原本只打算做首張《무명》的混音盤，作業期間接連被扣上各種「누명」（冤名），索性寫成一整套辯白：〈2008 대한민국〉、〈역사의 간지〉、〈Tight이란 낱말의 존재이유〉。全長一小時四十二分、雙 CD，第二片整片是混音輯，製作有더 콰이엇、JA、오래된엘피。2009 年獲第六屆韓國大眾音樂獎最佳嘻哈專輯。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EB%88%84%EB%AA%85_(%EC%9D%8C%EB%B0%98)",
+          "https://musicbrainz.org/release-group/30fe1131-3cce-4f27-92ca-729ae5a6c268"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ff/29/6e/ff296e98-ba0f-e4ab-7c7e-72c5de47c15a/mzaf_16313159208129948357.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1641459265,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "MB first-release 2008-07-11（KR）與 ko-wiki 一致；Apple 標 2008-07-17 為上架日，取原盤日",
+        "mbTitle": "누명",
+        "mbArtist": "Verbal Jint",
+        "mbFirstRelease": "2008-07-11",
+        "upcNote": "누명 (2008-07-11 KR)",
+        "curatorWhy": "K4 hiphop/R&B：버벌진트——韓語 라임 문법의 발명자，누명은 그 정점의 정규반",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Drunken Tiger",
+      "album": "위대한 탄생",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "df600918-b5dc-33d4-a07d-3e524b11f775",
+        "upc": "2000008008648",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Drunken Tiger 與 MB credit 一致，韓文原名드렁큰 타이거；專輯名用韓文原名《위대한 탄생》，MB 掛英譯標題 The Great Rebirth 為同一 RG。已排查同名混淆：韓文「위대한 탄생」另指 MBC 選秀節目與조용필的伴奏樂團，皆與本盤無關。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/df600918-b5dc-33d4-a07d-3e524b11f775/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國嘻哈開山組合走進主流的一張，Movement 一脈的起點，但未進名盤百選，且原盤在韓國以外幾乎不流通"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "歷史意義集中在場景建立而非作品本身的跨來源共識，名盤百選與大獎紀錄皆無，不符殿堂門檻",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "타이거 JK 與 DJ 샤인 的드렁큰 타이거 正規二輯，2000 年 3 月 29 日由도레미미디어發行。1992 年洛杉磯暴動後在美西起家的타이거 JK 把美式 boom bap 的節拍接到韓語饒舌上，六段 Skit 穿插的曲序刻意做成一張九〇年代美國嘻哈盤的樣子。〈The Movement〉集合 CB Mass、김진표與 Tasha（윤미래），等於把此後主導韓國嘻哈十年的 Movement 一脈寫進錄音；〈Blues〉的副題直接寫著「用 boom bap 治好你」，〈난 널 원해 Ⅱ〉則接續首張的同名曲。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/%EC%9C%84%EB%8C%80%ED%95%9C_%ED%83%84%EC%83%9D_(%EB%93%9C%EB%A0%81%ED%81%B0%ED%83%80%EC%9D%B4%EA%B1%B0%EC%9D%98_%EC%9D%8C%EB%B0%98)",
+          "https://musicbrainz.org/release-group/df600918-b5dc-33d4-a07d-3e524b11f775"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB first-release 與 ko-wiki 皆為 2000-03-29（KR，唯一發行）；另更正策展註記——本盤是正規 2 집而非 3 집，且〈Good Life〉不在曲目內",
+        "mbTitle": "The Great Rebirth",
+        "mbArtist": "Drunken Tiger",
+        "mbFirstRelease": "2000-03-29",
+        "upcNote": "위대한 탄생 (2000-03-29 KR)",
+        "curatorWhy": "K4 hiphop/R&B：K-hiphop 開山組合的3집，Good Life，주류 돌파의 순간",
+        "curatorRisk": "MB 條目薄，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Yerin Baek",
+      "album": "Every letter I sent you.",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3c687a27-af46-4d2d-8981-dc8dc8241af9",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Yerin Baek 為其國際通用羅馬字，MB credit 韓文本名백예린；韓籍藝人命名未定案，依輸入檔沿用羅馬字並在此標註韓文原名。已排查混淆：她另有 15& 時期與 The Volunteers 樂團的作品，皆非本盤；廠牌為블루바이닐（Blue Vinyl），策展註記誤植的「Square」實為專輯收錄曲名。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3c687a27-af46-4d2d-8981-dc8dc8241af9/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獨立廠牌自主發行卻席捲韓國榜單的雙碟正規一輯，2010 年代末韓國 R&B／indie pop 的代表案例，入耳無門檻"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行僅六年，尚無跨來源長期共識或名盤榜單背書，時間深度不足以進殿堂",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "백예린（Yerin Baek）與 JYP 約滿後自立廠牌블루바이닐，兩個月內就交出這張首度個人正規盤，2019 年 12 月 10 日由드림어스컴퍼니經銷。雙碟十八首、約六十一分鐘，同時推〈Popo (How Deep Is Our Love?)〉、〈0310〉、〈Square (2017)〉三首主打。她 2012 年以二人組 15& 出道，這裡把 alternative R&B 與 indie pop 的寫法收攏到自己的音色上：第一片貼近唱作歌謠，第二片放進〈Berlin〉、〈London〉這類地名小品與루피客串的〈Point〉。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Every_letter_I_sent_you.",
+          "https://musicbrainz.org/release-group/3c687a27-af46-4d2d-8981-dc8dc8241af9"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/4a/24/c04a2483-72ad-c4a7-d567-3140e090cdc2/mzaf_7084293144923562498.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1490544506,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2019,
+        "yearNote": "MB first-release 2019-12-10（KR）、ko-wiki 與 Apple 三者一致",
+        "mbTitle": "Every letter I sent you.",
+        "mbArtist": "Yerin Baek",
+        "mbFirstRelease": "2019-12-10",
+        "upcNote": "releases=4，皆無有效條碼",
+        "curatorWhy": "K4 hiphop/R&B：백예린首張正規雙碟，Square，독립 발매로 차트 석권한 R&B/인디팝 정전",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Jay Park",
+      "album": "Everything You Wanted",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7b305635-5e7a-4d69-9a41-ac0caafde546",
+        "upc": "8809380634810",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Jay Park 與 MB credit 一致，韓文名박재범；美國西雅圖出生的韓裔，官方藝名即拉丁字，依店規沿用。已排查混淆：他另有 2PM 時期與 More Vision／H1GHR 時期作品，本卡指 AOMG 時期 2016 年正規四輯，與 2024 年《The One You Wanted》為不同專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7b305635-5e7a-4d69-9a41-ac0caafde546/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲 2017 年韓國大眾音樂獎最佳 R&B／靈魂專輯，是 AOMG 體系工業化製作的標準樣本，但非跨世代正典"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "單一年度獎項與榜單成績為主，缺少長期跨來源共識，未達殿堂門檻",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "박재범（Jay Park）第四張個人正規盤，2016 年 10 月 20 日經 AOMG 發行，十九首、韓英雙語並置。做法是把 AOMG 一整套班底攤在同一張上：Cha Cha Malone、GRAY、Hoody、Sik-K 分工在不同曲目，聲響落在慢速 contemporary R&B 上。主打〈All I Wanna Do (K)〉與〈DRIVE〉走韓語版，〈Me Like Yuh〉、〈All I Wanna Do〉的英文版收在末尾，一張盤同時對兩個市場說話。登上《告示牌》世界專輯榜第三，並獲 2017 年韓國大眾音樂獎最佳 R&B／靈魂專輯。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Jay_Park",
+          "https://musicbrainz.org/release-group/7b305635-5e7a-4d69-9a41-ac0caafde546"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/e0/c8/5ce0c851-b201-330a-c074-46c19d6e2eb5/mzaf_7202311150015119718.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1580386461,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2016,
+        "yearNote": "MB first-release、ko-wiki 與 Apple 皆為 2016-10-20（KR）",
+        "mbTitle": "EVERYTHING YOU WANTED",
+        "mbArtist": "Jay Park",
+        "mbFirstRelease": "2016-10-20",
+        "upcNote": "EVERYTHING YOU WANTED (2016-10-20 XW)",
+        "curatorWhy": "K4 hiphop/R&B：박재범 AOMG 시기 대표작，K-R&B 산업화의 표준반",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "H.O.T.",
+      "album": "We Hate All Kinds of Violence",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "20303e3f-0d33-3fb6-a420-7d637bd3e868",
+        "upc": "8804524004429",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 H.O.T. 與 MB credit 一致（High-five Of Teenagers 縮寫），韓文寫作에이치오티；專輯名沿用原盤英文題名。已排查：MB 同 RG 下另有 2001-10-24 的日本授權盤，本卡掛的是 1996 年韓國原盤 release，封面亦為韓版。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/20303e3f-0d33-3fb6-a420-7d637bd3e868/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國偶像工業的起點盤，銷量逾一百五十萬張並保持 SM 最暢銷紀錄二十四年，曲風直白易入耳"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "產業地位無爭議，但樂評正典側始終未收（멜론／한겨레 명반 100 未入選），跨來源共識偏向歷史事件而非作品本身",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1996 年 9 月 7 日由 SM 發行的 H.O.T. 首張專輯，通常被算作韓國偶像工業的起點。이수만事前對首爾的高中生做問卷，依調查結果組出문희준、장우혁、토니안、강타、이재원五人團，練習生制度則取法日本的偶像體系。兩首主打取向相反：〈전사의 후예〉以硬派饒舌直指校園暴力，〈캔디〉是甜口的 dance-pop。製作由유영진、장용진等人擔綱，全長約三十六分鐘。銷量逾一百五十萬張，此後二十四年一直是 SM 旗下最暢銷的專輯，2020 年才被 NCT 打破。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/We_Hate_All_Kinds_of_Violence",
+          "https://musicbrainz.org/release-group/20303e3f-0d33-3fb6-a420-7d637bd3e868"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/3a/58/b93a5806-0a73-9c9d-ba1c-fe29e54db2e8/mzaf_12973314473649694196.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1060455860,
+        "appleCollectionName": "We Hate All Kinds of Violence... - The 1st Album"
+      },
+      "research": {
+        "suggestedYear": 1996,
+        "yearNote": "MB 同 RG 內並存 1996-06-05 與 1996-09-07 兩筆 KR release；en-wiki 與 Apple 皆記 1996-09-07 為發行日，年份 1996 不受影響",
+        "mbTitle": "We Hate all Kinds of violence...",
+        "mbArtist": "H.O.T.",
+        "mbFirstRelease": "1996-06-05",
+        "upcNote": "We Hate all Kinds of violence... (1996-06-05 KR)",
+        "curatorWhy": "K5 K-pop：1 집——偶像工業元年，전사의 후예／캔디，K-pop 系譜的起點（韓國本國盤）",
+        "curatorRisk": "MB 條目可能薄，掛韓國原盤條目，封面必要時 Discogs 補"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "BoA",
+      "album": "No.1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0ea78701-127c-3b47-8ade-1708108b0b97",
+        "upc": "8809049744218",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 BoA 與 MB 藝人一致，MB credit 顯示為「BoA*」（消歧義星號，非另一藝人），韓文本名권보아；官方藝名即拉丁字，依店規沿用。專輯韓國原題作《NO.1・늘...》，卡片用簡稱 No.1；已排查：同 RG 下 2002-06-12 為日本授權盤、2002-05-16 為台灣盤，本卡掛韓國原盤。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0ea78701-127c-3b47-8ade-1708108b0b97/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓流出海策略的第一個成功樣本，BoA 韓語專輯銷量最高的一張，但音樂本身是標準 europop 舞曲"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "產業意義大於作品評價，未見名盤榜單或跨來源長期共識，不符殿堂門檻",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "보아（BoA）的韓國第二張正規盤，2002 年 4 月由 SM 發行，是她在日本以《LISTEN TO MY HEART》拿下公信榜冠軍後回頭交出的第一張韓語專輯，選曲向美、歐、日、中各地作曲者廣泛邀稿。同名主打〈No.1〉是明亮的 europop 舞曲，唱的是要成為代表世界的歌手；同門前輩강타寫了〈늘 (Waiting)...〉與〈난〉兩首，〈Realize〉則是她在韓國的第一首自作曲，日文冠軍曲〈LISTEN TO MY HEART〉另以韓語版收作附加曲。十五首、約五十六分鐘。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/No.1_(%EB%B3%B4%EC%95%84%EC%9D%98_%EC%9D%8C%EB%B0%98)",
+          "https://musicbrainz.org/release-group/0ea78701-127c-3b47-8ade-1708108b0b97"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/55/70/9555707d-733e-e79c-8316-4b2f798f702f/mzaf_8256146321191964484.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1061506217,
+        "appleCollectionName": "NO.1 - The 2nd Album"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB first-release 2002-04-12（KR）與 Apple 一致；ko-wiki 資訊框誤植 2003-04-11，但同條目內文列的宣傳與日本授權時序皆在 2002 年，以 2002 為準",
+        "mbTitle": "NO.1",
+        "mbArtist": "BoA*",
+        "mbFirstRelease": "2002-04-12",
+        "upcNote": "NO.1・늘.. (2002-04-14 KR)",
+        "curatorWhy": "K5 K-pop：韓流出海里程碑，SM 全球化戰略的第一個成功樣本（韓國正規 2 集）",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "TVXQ!",
+      "album": "\"O\"-正.反.合.",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "16da896f-47c4-3159-9378-2360e62a13a8",
+        "upc": "8993122151205",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 TVXQ! 為國際通行名，MB credit 卻掛日文「東方神起」——經查該 RG 首發 release 為 2006-09-29 KR，日本盤（2007-10-24 JP）在同 RG 之下，故 MB 藝人名屬命名慣例問題，並非配到日版盤。韓文團名동방신기，卡片專輯名沿用韓國原盤漢字題《\"O\"-正.反.合.》。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/16da896f-47c4-3159-9378-2360e62a13a8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2006 年韓國全年銷量冠軍、二世代偶像聲樂路線的高點，但作品評價未進正典層級"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "商業成績突出而樂評正典缺席，名盤百選未收，跨來源長期共識不足",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "동방신기的韓語第三張正規盤，2006 年 9 月 29 日由 SM 發行。盤名取自黑格爾正—反—合的辯證架構，同名主打由유영진一手包辦詞曲編曲，把搖滾、嘻哈與 trance 揉進同一首快歌，歌詞寫的是對世界各地衝突的和平呼籲，MV 分別在東京、布拉格、曼谷與韓國取景。緊接的第二主打〈풍선〉走完全相反的路線，是首軟糖式的輕快歌。在唱片銷量低迷的 2006 年，它仍是韓國全年銷量第一，到 2022 年累計逾四十八萬張。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/%22O%22-Jung.Ban.Hap.",
+          "https://musicbrainz.org/release-group/16da896f-47c4-3159-9378-2360e62a13a8"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d7/fc/c4/d7fcc494-810d-46a8-4674-c7f9d1844467/mzaf_17351419847293870926.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1062499392,
+        "appleCollectionName": "\"O\"-正.反.合. - The 3rd Album"
+      },
+      "research": {
+        "suggestedYear": 2006,
+        "yearNote": "MB RG first-release 記 2006-06-29（XW 一筆）疑為資料誤植；MB 韓國 release、en-wiki 與 Apple 皆為 2006-09-29，年份同為 2006",
+        "mbTitle": "\"O\" -正・反・合",
+        "mbArtist": "東方神起",
+        "mbFirstRelease": "2006-06-29",
+        "upcNote": "\"O\" -正・反・合 (2006 ID)",
+        "curatorWhy": "K5 K-pop：동방신기 2 세대 아이돌 보컬리즘의 정점（韓國正規 3 集）",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Girls' Generation",
+      "album": "Oh!",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "949fe498-457d-401d-a271-6dce887283d2",
+        "upc": "888735899683",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Girls' Generation 與 MB credit 一致（MB 用彎引號 Girls’ Generation），韓文團名소녀시대；日本活動另用少女時代，本卡掛的是 2010-01-28 韓國原盤而非日版。已排查：同 RG 下 2010-03-22 的《Run Devil Run》為改版盤，非本卡對象。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/949fe498-457d-401d-a271-6dce887283d2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；소녀시대商業高點的正規二輯，2010 年 Gaon 年榜第二，甜面 bubblegum pop 入耳零門檻"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "銷量與人氣為主要依據，樂評面評價保留（IZM 認為不如前作單曲），未達殿堂共識",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "소녀시대的第二張正規盤，2010 年 1 月 28 日由 SM 發行，整體走 bubblegum pop 與 synth-pop 的甜面路線。同名主打〈Oh!〉由 Kenzie 作曲編曲，以啦啦隊為概念；〈Show! Show! Show!〉出自 Hitchhiker，〈웃자〉由 E-Tribe 寫成，〈영원히 너와 꿈꾸고 싶다〉則是專輯裡最長的一首慢歌。同年 3 月 17 日推出改版《Run Devil Run》，以同名新曲當後續主打，把形象由甜轉黑。原版在 2010 年 Gaon 年榜以 197,934 張排到全年第二。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Oh!_(Girls%27_Generation_album)",
+          "https://musicbrainz.org/release-group/949fe498-457d-401d-a271-6dce887283d2"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7c/eb/10/7ceb1052-44f5-81e0-dab3-19e80c03ac61/mzaf_3793375742620578513.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 854890642,
+        "appleCollectionName": "Oh!"
+      },
+      "research": {
+        "suggestedYear": 2010,
+        "yearNote": "MB first-release、en-wiki 與 Apple 皆為 2010-01-28（KR）",
+        "mbTitle": "Oh!",
+        "mbArtist": "Girls’ Generation",
+        "mbFirstRelease": "2010-01-28",
+        "upcNote": "Oh! The Second Album (2010-01-28 XW)",
+        "curatorWhy": "K5 K-pop：소녀시대 국민 걸그룹 전성기의 정규 2 집，Oh!／Run Devil Run（韓國本國盤）",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "2NE1",
+      "album": "To Anyone",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "c6c371d5-0214-4378-985b-1be9f9156b12",
+        "upc": "8809231389449",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 2NE1 與 MB credit 完全一致，韓文亦寫作 2NE1（투애니원），無跨文字系統歧異。已排查同名混淆：2009 年與 2011 年另有兩張同名 EP《2NE1》，本卡指 2010 年首張正規《To Anyone》，非該兩張。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c6c371d5-0214-4378-985b-1be9f9156b12/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；YG 女團首張正規、걸크러시路線的原點，拿下 2010 年 MAMA 與 Melon 年度專輯，但樂評對 auto-tune 用量有保留"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "年度大獎肯定但當時評價分歧，名盤百選未收，缺跨來源長期共識",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "2NE1 的首張正規盤，2010 年 9 月由 YG 發行。製作核心是 Teddy Park，e.knock、Choice37、Big Tone 分擔其餘曲目，聲響落在 dance-pop、electropop 與嘻哈之間。YG 一次推三首「主打」——〈Go Away〉、〈Can't Nobody〉與〈박수쳐〉，各配一支 MV，三首都進了 Gaon 數位榜前三，〈아파〉在 10 月底追加。樂評肯定製作品質，但普遍嫌 auto-tune 用得太滿。該年拿下 Mnet 亞洲音樂大獎與 Melon Music Awards 的年度專輯，韓國銷量逾十六萬八千張。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/To_Anyone",
+          "https://musicbrainz.org/release-group/c6c371d5-0214-4378-985b-1be9f9156b12"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e1/e2/2f/e1e22f15-f6eb-43e0-07fb-bb76d14e1034/mzaf_14509221348328771512.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1336366693,
+        "appleCollectionName": "To Anyone"
+      },
+      "research": {
+        "suggestedYear": 2010,
+        "yearNote": "MB first-release 記 2010-09-13，en-wiki 與 Apple 均為 2010-09-09；差異在實體／數位上架日，年份同為 2010",
+        "mbTitle": "To Anyone",
+        "mbArtist": "2NE1",
+        "mbFirstRelease": "2010-09-13",
+        "upcNote": "To Anyone (2010-09 KR)",
+        "curatorWhy": "K5 K-pop：YG 걸그룹의 첫 정규，Can't Nobody／Go Away，걸크러시 계보의 원점",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "f(x)",
+      "album": "Pink Tape",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "964773ee-faec-4c35-a8fb-b2ac15617d91",
+        "upc": "8806163325194",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 f(x) 與 MB credit 完全一致，韓文團名에프엑스；國際出道即用拉丁字寫法，依店規沿用。已排查同名混淆：MB 同 RG 下六筆 release 皆為 2013-07-29 KR/XW 同步發行，無日版分歧；與 2014 年《Red Light》為不同專輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/964773ee-faec-4c35-a8fb-b2ac15617d91/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《告示牌》評為二〇一〇年代最偉大 K-pop 專輯、名盤百選唯一入選的偶像團體作品，編曲怪異度高於一般流行盤"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "跨來源長期共識明確：멜론／한겨레名盤百選唯一入選的偶像團體專輯、Fuse 2013 年度榜唯一 K-pop 盤、《告示牌》2019 年評為該年代最偉大 K-pop 專輯，足列該領域史上核心",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Pink_Tape_(f(x)_album)",
+          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100"
+        ]
+      },
+      "description": {
+        "text": "f(x) 的第二張正規盤，2013 年 7 月 29 日由 SM 發行，是韓國偶像流行被樂評正典收編的關鍵一例。底子是 synth-pop、electropop 與 EDM，主打〈첫 사랑니 (Rum Pum Pum Pum)〉之外，〈미행 (그림자)〉、〈Airplane〉、〈Goodbye Summer〉各自岔到不同質地，十二首曲序像換帶一樣一段段跳。登上 Gaon 與《告示牌》世界專輯榜冠軍；在멜론與한겨레邀四十七位樂評選出的韓國名盤一百張中列第九十六，是名單上唯一的偶像團體作品。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Pink_Tape_(f(x)_album)",
+          "https://musicbrainz.org/release-group/964773ee-faec-4c35-a8fb-b2ac15617d91"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/2b/6f/be2b6fee-b8f3-3cb8-e178-bb92a48da5d6/mzaf_10784417156856948009.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 905856933,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB first-release、en-wiki 與 Apple 皆為 2013-07-29（KR）",
+        "mbTitle": "Pink Tape",
+        "mbArtist": "f(x)",
+        "mbFirstRelease": "2013-07-29",
+        "upcNote": "Pink Tape (2013-07-29 )",
+        "curatorWhy": "K5 K-pop：K-pop 專輯評價史的標竿——樂評正典 rhythm ta，Shadow／첫 사랑니",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "IU",
+      "album": "Modern Times",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "59c7150d-d3be-43ab-a089-0a1676950821",
+        "upc": "8804775051524",
+        "aliasesChecked": true,
+        "aliasReview": "MB 藝人 credit 為 IU（韓文 아이유，本名 이지은），卡片沿用國際通行的拉丁藝名，與輸入一致；韓籍藝人命名店規未定案，此處照輸入檔。RG 59c7150d 標題 Modern Times 為韓國原盤，與 2013 年改版《Modern Times - Epilogue》及 IU 的日本發行品無混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/59c7150d-d3be-43ab-a089-0a1676950821/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 列為 2010 年代第二名的 K-pop 專輯，swing／bossa nova 編制在主流韓國流行中少見，但仍是旋律導向的流行盤。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價極高且為 IU 轉型關鍵作，但跨來源的長期共識多集中在 2010 年代榜單層級，未達韓國樂史核心的殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "아이유（IU）的第三張正規盤，2013 年 10 月由 LOEN Tree 發行，以「French Black」概念離開國民妹妹形象：swing、jazz、bossa nova 與 Latin pop 的編制取代電子舞曲。開場〈을의 연애〉與吉他手 박주원 對彈，〈누구나 비밀은 있다〉找 Brown Eyed Girls 的 가인 客串，主打〈분홍신〉取材自安徒生童話「紅舞鞋」並登上 Gaon 數位榜冠軍。Billboard 曾將其列為 2010 年代第二名的 K-pop 專輯。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Modern_Times_(아이유의_음반)",
+          "https://en.wikipedia.org/wiki/Modern_Times_(IU_album)"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/5e/b7/2a5eb702-4daf-cc1b-2675-5339236bd68c/mzaf_15467888579998456732.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 721958263,
+        "appleCollectionName": "Modern Times"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB first-release-date 2013-10-07，韓文維基與韓國媒體記為 2013 年 10 月 8 日，兩者同為 2013 年，取 2013。",
+        "mbTitle": "Modern Times",
+        "mbArtist": "IU",
+        "mbFirstRelease": "2013-10-07",
+        "upcNote": "Modern Times (2013-10-07 KR)",
+        "curatorWhy": "K5 K-pop：국민가수 IU 的 재즈/스윙 콘셉트 정규 3 집，분홍신，池內 IU 0 張是明顯的洞",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "IU",
+      "album": "Palette",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "8409ea9b-5f9d-4954-88b7-a9ae77a1814c",
+        "upc": "8804775080043",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit IU 與卡片用名一致；韓文原名 팔레트，英文與韓文條目互為同一作品。已排查與 2017 年翻唱盤《꽃갈피 둘》及同名 Palette 單曲的混淆，RG 8409ea9b 指向 2017-04-21 韓國正規盤。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/8409ea9b-5f9d-4954-88b7-a9ae77a1814c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Melon Music Awards 年度專輯、第 15 屆韓國大眾音樂獎最優秀流行專輯、Billboard 2017 年 K-pop 專輯榜首，且入選 EBS 韓國百大專輯，是 IU 作者性的公認代表作。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "獎項與榜單證據充分，但屬 2010 年代後段的當代流行正典，尚缺足以列入韓國樂史核心的長期跨世代共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "아이유（IU）2017 年的第四張正規盤，詞曲絕大多數由本人參與。先行曲〈밤편지〉與〈사랑이 잘〉（與 혁오 主唱 오혁 對唱）用空氣感的編曲鋪陳，同名曲〈팔레트〉請來 G-DRAGON 唸白，收尾〈이름에게〉則交給大編制 ballad。三首單曲全數登上 Gaon 數位榜冠軍，作品拿下 Melon Music Awards 年度專輯與第 15 屆韓國大眾音樂獎最優秀流行專輯，並入選 EBS 韓國百大專輯。",
+        "sourceUrls": [
+          "https://ko.wikipedia.org/wiki/Palette_(아이유의_음반)",
+          "https://en.wikipedia.org/wiki/Palette_(album)"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cc/4b/ea/cc4beab3-409a-ca43-2a95-7c6d2dcdd40e/mzaf_13866297747755854883.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1229073300,
+        "appleCollectionName": "Palette"
+      },
+      "research": {
+        "suggestedYear": 2017,
+        "yearNote": "MB first-release-date 與韓／英文維基同為 2017 年 4 月 21 日。",
+        "mbTitle": "Palette",
+        "mbArtist": "IU",
+        "mbFirstRelease": "2017-04-21",
+        "upcNote": "Palette (2017-04-21 KR)",
+        "curatorWhy": "K5 K-pop：이 지금／밤편지／팔레트，IU 작가성의 완성반，韓版黑膠流通良好",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "BTS",
+      "album": "LOVE YOURSELF 轉 'Tear'",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "bdc4aa4d-bfba-4ef1-b3b6-ffc68055877e",
+        "upc": "8809440338092",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題 LOVE YOURSELF 轉 ‘Tear’ 用彎引號，卡片用直引號，僅字符差異；韓文團名 방탄소년단，國際出道名 BTS 已通行拉丁字故沿用。已確認 RG bdc4aa4d 為 2018 韓國正規盤，與日本市場盤《FACE YOURSELF》《WAKE UP》及後續《LOVE YOURSELF 結 'Answer'》非同一作品。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/bdc4aa4d-bfba-4ef1-b3b6-ffc68055877e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 1,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張登上 Billboard 200 冠軍的韓語專輯，並帶來韓國人第二次葛萊美提名（最佳專輯包裝），跨來源記載其為韓國流行音樂進入美國主流市場的轉折點。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "以 135,000 單位空降 Billboard 200 冠軍，為史上第一張攻頂美國專輯榜的韓語作品，英韓文百科與國際媒體長期一致將其列為 K-pop 全球化的分水嶺。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Love_Yourself:_Tear",
+          "https://ko.wikipedia.org/wiki/LOVE_YOURSELF_轉_'Tear'"
+        ]
+      },
+      "description": {
+        "text": "방탄소년단（BTS）的第三張韓語正規盤，2018 年 5 月由 Big Hit 發行，방시혁 與 Pdogg 掌製作。十一首曲從 뷔 獨唱的 neo-soul 開場〈Intro: Singularity〉，走到掛著 grunge 吉他音色與 trap 節拍的主打〈FAKE LOVE〉，再接上與 Steve Aoki 合作的〈The Truth Untold〉。發行隔週以 135,000 單位空降 Billboard 200 冠軍，是首張攻頂美國專輯榜的韓語作品；封面設計 HuskyFox 亦入圍葛萊美最佳專輯包裝獎。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Love_Yourself:_Tear",
+          "https://ko.wikipedia.org/wiki/LOVE_YOURSELF_轉_'Tear'"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/bc/66/2abc6668-9a54-3de6-116a-49eaf702f035/mzaf_7495097123915590317.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1598660934,
+        "appleCollectionName": "Love Yourself 轉 'Tear'"
+      },
+      "research": {
+        "suggestedYear": 2018,
+        "yearNote": "MB first-release-date 與英／韓文維基同為 2018 年 5 月 18 日。",
+        "mbTitle": "LOVE YOURSELF 轉 ‘Tear’",
+        "mbArtist": "BTS",
+        "mbFirstRelease": "2018-05-18",
+        "upcNote": "LOVE YOURSELF 轉 ‘Tear’ (2018-05-18 KR)",
+        "curatorWhy": "K5 K-pop：Billboard 200 冠軍的韓國正規 3 集——修正池內 BTS 全是日本市場盤（WAKE UP／FACE YOURSELF）的結構問題",
+        "curatorRisk": "務必掛韓國正規盤條目，勿與日版混同"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "BLACKPINK",
+      "album": "THE ALBUM",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "8240b45e-5e5c-4c47-a96c-0a0d2c556c08",
+        "upc": "602435042954",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit BLACKPINK（韓文 블랙핑크）與卡片用名一致，國際出道名為拉丁字故沿用。RG 8240b45e 為 2020-10-02 韓國原盤，與池內已有的《THE ALBUM -JP ver.-》(2021) 屬不同 release group，建檔時勿混同。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/8240b45e-5e5c-4c47-a96c-0a0d2c556c08/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 1,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道四年才推出的首張正規盤，是韓國榜史上第一張破百萬的女性歌手專輯，也是 BLACKPINK 最具代表的一組錄音，惟樂評對其長度與製作老派有保留。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "銷售與排行成績突出，但評論意見分歧且僅八首二十四分鐘，未形成足以列入殿堂的長期樂史共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "BLACKPINK 出道四年後才交出的首張正規盤，2020 年由 YG 與 Interscope 發行，八首曲、二十四分鐘，錄於首爾 The Black Label，Teddy 領銜的製作群操刀。〈How You Like That〉以 trap 鼓組與轉調副歌開場，〈Ice Cream〉找來 Selena Gomez、〈Bet You Wanna〉找來 Cardi B，〈Lovesick Girls〉登上 Gaon 數位榜第二。首月售出 1,092,550 張，是韓國榜史上第一張突破百萬的女性歌手專輯。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Album_(Blackpink_album)",
+          "https://musicbrainz.org/release-group/8240b45e-5e5c-4c47-a96c-0a0d2c556c08"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/b2/b1/8fb2b1a2-2498-9490-82f8-0226abfa9dc9/mzaf_9379484322617408629.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1533894050,
+        "appleCollectionName": "THE ALBUM"
+      },
+      "research": {
+        "suggestedYear": 2020,
+        "yearNote": "MB first-release-date 與英文維基同為 2020 年 10 月 2 日；日版為 2021 年，非本筆。",
+        "mbTitle": "THE ALBUM",
+        "mbArtist": "BLACKPINK",
+        "mbFirstRelease": "2020-10-02",
+        "upcNote": "THE ALBUM (2020-10-02 FR)",
+        "curatorWhy": "K5 K-pop：首張韓國正規，How You Like That——池內僅有 -JP ver.-，以韓版原盤取代",
+        "curatorRisk": "池內已有『THE ALBUM -JP ver.-』(2021)，本筆為 2020 韓國原盤，建檔時務必選對 release"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "TWICE",
+      "album": "Eyes wide open",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "aa05ff10-8589-4c9c-a0d4-6b024f4e4556",
+        "upc": "190295105280",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit TWICE（韓文 트와이스）與卡片一致；標題依 MB／JYP 官方寫法為小寫 Eyes wide open，英文維基條目作 Eyes Wide Open，同一作品。策展註記稱其為「首張韓國正規大碟」有誤：本作為第二張韓語正規盤（含日本盤為第四張），首張韓語正規為 2017 年《Twicetagram》，簡介未沿用該說法。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/aa05ff10-8589-4c9c-a0d4-6b024f4e4556/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；睽違三年的第二張韓語正規盤，Billboard 選為 2020 年十大 K-pop 專輯第六名，風格跨度與成員參與度是其特色，但非該團最具指標的一作。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "年度榜單有名次、商業成績穩健，但屬該團創作成熟期的一站，缺乏跨來源的樂史核心地位主張。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "TWICE 睽違三年的第二張韓語正規盤，2020 年 10 月由 JYP 發行，十三首曲以 retro 為軸。主打〈I CAN'T STOP ME〉由 박진영 與 심은지 作詞、Melanie Fontana 與 Michel Schulz 製作，走歐系電子混上八〇年代合成器的 synthwave 路線；〈Say Something〉大量取用日本 city pop 的吉他與貝斯 riff，末曲〈Behind the Mask〉有 Dua Lipa 與 Heize 參與作曲。Billboard 選為 2020 年十大 K-pop 專輯第六名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Eyes_Wide_Open_(Twice_album)",
+          "https://musicbrainz.org/release-group/aa05ff10-8589-4c9c-a0d4-6b024f4e4556"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/93/10/49/931049bb-8e0d-b987-cbf2-407631880911/mzaf_8393986293664874135.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1535654236,
+        "appleCollectionName": "Eyes wide open"
+      },
+      "research": {
+        "suggestedYear": 2020,
+        "yearNote": "MB first-release-date 與英文維基同為 2020 年 10 月 26 日。",
+        "mbTitle": "Eyes wide open",
+        "mbArtist": "TWICE",
+        "mbFirstRelease": "2020-10-26",
+        "upcNote": "Eyes wide open (2020-10-26 JP)",
+        "curatorWhy": "K5 K-pop：首張韓國正規大碟，I CAN'T STOP ME——池內 TWICE 全是日版盤，以韓版正規補正",
+        "curatorRisk": "務必掛韓國正規盤條目，勿與日版混同"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "NewJeans",
+      "album": "Get Up",
+      "identity": {
+        "releaseType": "EP",
+        "rgMbid": "d2b0e110-fe62-4c91-9504-5dbfbedf1374",
+        "upc": "8809929743379",
+        "genreException": "asia-mini-album",
+        "exceptionReason": "MusicBrainz 依 12 分 10 秒六軌判為 EP，但這是 ADOR 以正規作品規格發行、韓國本地一週賣出 165 萬張的作品，並成為首張登上美國 Billboard 200 冠軍的韓國女團 EP；六軌全部拍攝音樂錄影帶，屬母國市場當專輯操作的典型ミニアルバム形態。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Get_Up_(EP)",
+          "https://en.wikipedia.org/wiki/NewJeans"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit NewJeans（韓文 뉴진스）與卡片一致，國際出道名為拉丁字故沿用。MB primary-type 為 EP 而非 Album，屬 6 曲迷你專輯；已排查與同名曲〈Get Up〉（第五軌，0:36）及 2023 年日本盤《NJWMX》的混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d2b0e110-fe62-4c91-9504-5dbfbedf1374/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 1,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；以哥本哈根寫歌工作坊把 UK garage、Jersey club 與 liquid drum'n'bass 帶進主流 K-pop，登上 Billboard 200 冠軍並入選多家媒體年度榜，是四代女團聲響轉向的關鍵作。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行僅三年，影響力雖已明確，但尚未累積足以列入殿堂的長期跨來源共識，宜待後續評價沉澱。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "NewJeans（뉴진스）的第二張 EP，2023 年 7 月由 ADOR 發行，六首曲總長只有十二分鐘。ADOR 在哥本哈根辦了數日寫歌工作坊，找來 Erika de Casier、Smerz 二人組與 Fine Glindvad Jensen，以 250 提供的 loop 為起點寫出〈New Jeans〉〈Super Shy〉〈Cool with You〉〈ASAP〉四曲。成品把 UK garage、Jersey club 與 liquid drum'n'bass 壓進稀疏乾淨的節拍。登上 Billboard 200 冠軍。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Get_Up_(EP)",
+          "https://musicbrainz.org/release-group/d2b0e110-fe62-4c91-9504-5dbfbedf1374"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/fa/58/a1fa5822-ae67-1034-afcd-572c6d0cb264/mzaf_5691875287854100815.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T04:08:31Z",
+        "appleCollectionId": 1695951888,
+        "appleCollectionName": ""
+      },
+      "research": {
+        "suggestedYear": 2023,
+        "yearNote": "MB first-release-date 與英文維基同為 2023 年 7 月 21 日。",
+        "mbTitle": "Get Up",
+        "mbArtist": "NewJeans",
+        "mbFirstRelease": "2023-07-21",
+        "upcNote": "Get Up (2023-07-21 KR)",
+        "curatorWhy": "K5 K-pop：Super Shy／ETA／New Jeans，4 세대 사운드 전환（Jersey club）的里程碑 EP",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}
