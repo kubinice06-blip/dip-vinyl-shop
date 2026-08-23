@@ -2462,7 +2462,8 @@
   }
 
   // 搜尋結果詳情：與唱片櫃卡片詳情同一個 overlay、同一套簡介優先序
-  //（後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc），但沒有收藏／分享／刪除
+  //（後台校正 ov.desc > 殿堂神作人工簡介 > /album-desc），但沒有收藏／刪除；
+  // 分享走唱片櫃同一顆 cd-share 按鈕（shareCard 會用 as: 前綴認出搜尋卡）
   async function openSearchDetail(idx) {
     const c = _asResults[idx];
     if (!c) return;
@@ -2478,6 +2479,7 @@
       <div class="cd-stars" id="cdStars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
       <div class="cd-streaming" id="cdStreaming"></div>
+      <button class="cd-share" data-cd-share="${escapeCollectionHtml(c.cardId)}">✈ 分享卡片</button>
     `;
     ov.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -5336,7 +5338,9 @@ ${seenList}
   }
 
   async function shareCard(cardId) {
-    const card = _collCache.find(c => c.cardId === cardId);
+    // as: 前綴是「搜尋專輯」的結果卡（僅閱覽、不在唱片櫃）；資料形狀與 _collCache 相同
+    const fromSearch = cardId.startsWith('as:');
+    const card = fromSearch ? _asResults.find(c => c.cardId === cardId) : _collCache.find(c => c.cardId === cardId);
     if (!card) return;
     const descEl = document.getElementById('cdDesc');
     let desc = descEl ? descEl.textContent.trim() : '';
@@ -5354,7 +5358,7 @@ ${seenList}
       const file = new File([blob], 'dip-card.jpg', { type: 'image/jpeg' });
       const shareUrlStr = 'https://dipvinyl.tw';
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${card.artist} — ${card.album}`, text: '我在 dip 唱片櫃抽到這張 →', url: shareUrlStr });
+        await navigator.share({ files: [file], title: `${card.artist} — ${card.album}`, text: fromSearch ? '我在 dip 找到這張唱片 →' : '我在 dip 唱片櫃抽到這張 →', url: shareUrlStr });
       } else {
         // 後備：下載圖片
         const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'dip-card.jpg'; a.click();

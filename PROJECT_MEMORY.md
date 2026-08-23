@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23｜dip-vinyl-shop｜搜尋專輯的卡片詳情補上「✈ 分享卡片」
+
+店主：搜尋出來的專輯卡沒有分享按鈕，比照一般分享按鈕流程，並生成截圖。
+
+**原狀**：`openSearchDetail()`（搜尋結果詳情）當初刻意只留閱覽，註解寫明
+「沒有收藏／分享／刪除」；一般流程是唱片櫃詳情的 `cd-share` 按鈕 →
+`shareCard()` → `buildShareCanvas()` 產 1080×1920 圖 → `navigator.share`
+（不支援就後備下載 dip-card.jpg）。
+
+**改法（index.html 三處，全走既有流程不另起爐灶）**：
+- `openSearchDetail()` 詳情底部加同一顆 `<button class="cd-share" data-cd-share=...>`，
+  點擊本來就會被全域委派 handler 接到 `shareCard()`，不用加新監聽。
+- `shareCard()` 用 `as:` 前綴認出搜尋卡，改查 `_asResults`（資料形狀與
+  `_collCache` 相同：artist/album/coverUrl/ratings/rarity），唱片櫃卡行為不變。
+- 分享文案分流：搜尋卡「我在 dip 找到這張唱片 →」，唱片櫃卡維持
+  「我在 dip 唱片櫃抽到這張 →」。頂點三張的 `_tierInfo` 掃光規則沿用原判斷。
+
+**驗證**：本機 8903 起站＋Playwright 實走（390×844 行動視窗）：搜尋
+「Beach Boys」→ 卡池 7 張 → 開《Surf's Up》詳情有分享鈕 → 點擊走後備下載，
+拿到的 dip-card.jpg 版面正確（等級／封面框／三軸星星／介紹框／dipvinyl.tw 頁腳），
+無 pageerror。截圖存 scratchpad。**沙箱限制**：這環境的 egress policy 擋
+`www.gstatic.com`（Firebase CDN，用 npm 同版檔案經 Playwright route 餵給頁面）與
+`dip-vinyl-worker.workers.dev`（封面／簡介／星星補值），所以截圖裡封面是 ♪
+佔位、簡介空白——線上不受影響。
+
 ### 2026-08-16（後續）｜dip-vinyl-shop｜og-random.png 重畫：填色模式錯了，不是字型錯
 
 店主看到第一版說「字體完全搞錯了，要跟心情選歌一樣」。
