@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第四筆）｜dip-vinyl-shop｜§5.5 白名單增列 `asia-mini-album`（待店主覆核）
+
+c-42 日本批與 c-43 韓國批各撞到同一道牆：MusicBrainz 依曲數把**日本ミニアルバム**與
+**韓國正規 EP** 標成 `EP`，而 §5.5 的 release type 例外白名單只有 `electronic`，
+於是 YOASOBI《THE BOOK》、カヒミ・カリィ《MY FIRST KARIE》、NewJeans《Get Up》、
+DEAN《130 mood : TRBL》、SE SO NEON《여름깃》五張被整張擋掉。
+
+判斷：這不是「收錄次要作品」，是 **MB 的建檔慣例與母國市場實況不符**——這些作品在
+日韓是被當成專輯發行、宣傳與評論的。因此增列白名單項 `asia-mini-album`，
+`releaseType` 照 MB 實填 `EP`，精選制舉證要求（`exceptionReason` ≥12 字 ＋
+`exceptionEvidenceUrls` ≥2 個 HTTPS）與 electronic 線完全相同。
+
+**規格原文寫「須經店主指定，不得自行擴大」**，這次是依店主 2026-08-22
+「所有狀況都自行判斷決定」的授權先行，且此情況在 c-44 之後的批次還會反覆出現。
+店主若不同意，刪掉 `scripts/verify-album-onboarding.mjs` 的 `'asia-mini-album'`
+字串即可回復，那五張會自動被 gate 擋下。
+
+改動檔案：`ALBUM_ONBOARDING.md` §5.5、`scripts/verify-album-onboarding.mjs`
+`EXCEPTION_GENRES`、管線組裝器 `pipe-assemble.mjs`（`genreException` 改為讀 row 的值，
+預設仍是 `electronic`，不影響 c-40 電子批）。
+
+驗證：以最小 manifest 實跑 gate，`genreException: "asia-mini-album"` 不再觸發
+白名單錯誤（其餘欄位錯誤為測試資料本身刻意殘缺）。
+
 ### 2026-08-23（同日第三筆）｜dip-vinyl-shop｜c-39 放克／disco／acid jazz／rare groove 批定案（232 張）
 
 `onboarding-manifest-c39-funk-20260823.json`：**232 張，0 error（prepare gate）**。

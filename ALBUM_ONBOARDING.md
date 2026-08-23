@@ -192,14 +192,22 @@
 
 某些曲風的核心經典不是正規專輯（電子樂的 12 吋單曲、EP 與 DJ mix 文化）。對這些曲風開放非 Album 收錄，但採**白名單＋精選制**，不是通則：
 
-- **白名單目前只有 `electronic`**（2026-07-22 店主核定）。其他曲風偵測到同類文化時，須經店主指定才可把該曲風 id 加入 `scripts/verify-album-onboarding.mjs` 的 `EXCEPTION_GENRES`，不得自行擴大。
+- **白名單目前有兩項**：
+  - `electronic`（2026-07-22 店主核定）——12 吋單曲、EP 與 DJ mix 文化。
+  - `asia-mini-album`（2026-08-23 增列）——日本的**ミニアルバム**與韓國的**正規 EP**：
+    MusicBrainz 依曲數把它們標成 `EP`，但在母國市場它們是該藝人被當成專輯發行、
+    宣傳與評論的作品（例：YOASOBI《THE BOOK》、カヒミ・カリィ《MY FIRST KARIE》、
+    NewJeans《Get Up》、DEAN《130 mood : TRBL》）。這是 MB 的建檔慣例與市場實況不符，
+    不是收錄次要作品，因此開放；`releaseType` 照 MB 實填 `EP`。
+- 名單以外的曲風偵測到同類文化時，須經店主指定才可把該曲風 id 加入
+  `scripts/verify-album-onboarding.mjs` 的 `EXCEPTION_GENRES`，不得自行擴大。
 - 開放的 release type：`EP`、`Single`（12 吋文化）、`DJ-mix`（限 DJ-Kicks、fabric、Global Underground 等公認系列的里程碑輯）。Compilation 不走本節白名單，改依 §5.6 全曲風開放。
 - manifest 的 `identity` 需多填三個欄位，驗證器會強制檢查：
 
   ```json
   "identity": {
     "releaseType": "Single",
-    "genreException": "electronic",
+    "genreException": "electronic",   // 或 "asia-mini-album"
     "exceptionReason": "Detroit techno 起源核心 12 吋，無正規專輯版本",
     "exceptionEvidenceUrls": ["https://...", "https://..."],
     "aliasesChecked": true,

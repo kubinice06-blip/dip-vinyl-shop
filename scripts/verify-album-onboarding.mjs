@@ -13,7 +13,8 @@ const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
 const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual']);
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
-const EXCEPTION_GENRES = new Set(['electronic']);
+// asia-mini-album（2026-08-23）：日本ミニアルバム與韓國正規 EP，MB 標 EP 但母國市場當專輯發行
+const EXCEPTION_GENRES = new Set(['electronic', 'asia-mini-album']);
 // 外部識別硬規則（2026-07-24 起新開批次適用）：新卡一律記 release-group MBID，
 // 讓「當初指的是哪張碟」不再單點依賴 Apple collectionId。生效日之前的批次不回溯檢查。
 const MBID_RULE_EFFECTIVE = '2026-07-24';
