@@ -43,6 +43,8 @@
 | 張雨生《天天想你》(1988) | c-41 | CAA 僅有膠盒商品照；Apple 官方數位版美術根本不是原盤（後製藍天窗景插畫） |
 | Johnny Hammond《Wild Horses Rock Steady》(1972) | c-39 | CAA 僅有紅色紙盒商品照，無其他來源 |
 | Hashim《Al-Naafiysh (The Soul)》(1983) | c-40 | 所有來源都是 remix 版封套，查無 Cutting CR-200 原盤美術 |
+| 石川さゆり《暖流 - ベスト14》(1977) | c-42 | CAA 唯一那張帶紅底側標帯；Apple 全目錄 78 筆最早只到 2000 年代 |
+| 八代亜紀《舟唄》(1979) | c-42 | CAA 兩層無圖；Apple 全目錄 122 筆無 1979 Teichiku 原盤 |
 
 ## 已收但用了折衷封面（待換原盤掃圖）
 
