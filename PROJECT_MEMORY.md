@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第五筆）｜dip-vinyl-shop｜c-40 電子細分批定案（257 張）
+
+`onboarding-manifest-c40-electronic-20260823.json`：**257 張，0 error（prepare gate）**。
+15 塊寫作產出 267 張成稿，經救援與去重後定案。涵蓋 Detroit techno／Chicago house／
+Berlin dub techno／ambient／IDM／drum & bass／dubstep／trance／downtempo／electro 各支線。
+
+**例外型別 41 張**（Compilation 22、DJ-mix 14、EP 3、Single 2）——這批是 §5.5／§5.6
+例外規則最吃重的一次，全部補齊 `exceptionReason` 與兩個以上 HTTPS 證據。
+**管線 bug 記錄**：`pipe-apply-decisions.mjs` 原本會把裁定的 `releaseType` 丟掉，
+28 張 DJ-mix／EP／Single／Compilation 因此失去例外身分卻仍能過 gate。已修並回填；
+組裝器的 `genreException` 也改為讀 row 的值（預設仍 `electronic`）。
+
+**救援成果**：Various Artists《Artificial Intelligence》原本釘到 2018 年同名 psytrance
+數位合輯，改釘 Warp 1992 WARPCD6（這張有殿堂份量，重釘後建議店主覆核 hall 資格）；
+封面 5 張救回 4、試聽 11 張救回 7。
+
+**一次自我更正**：Anthony Rother《Simulationszeitalter》前一輪被判「CD 膠盒背面商品照」，
+實際那就是 Psi49Net digipak 原盤封面本身，托盤與條碼都是印刷元素；已改用藝人官方
+Bandcamp 1200×1200 原圖而非退回。
+
+**去重**：與 c-39 重複 3 張（Giorgio Moroder《E=MC²》、Sparks《No. 1 in Heaven》、
+Sylvester《Step II》）——disco 與電子兩線邊界模糊，rgMbid 去重擋下。260 → 257。
+
+**未上架 9 張**：6 張同名卡缺 ready 試聽（Voices from the Lake、Andrés、Nuyorican Soul、
+Man Parrish、Way Out West、3MB）、Hashim《Al-Naafiysh》全來源都是 remix 封套查無 1983
+原盤美術、2 張封面抓取失敗未進寫作。
+
+**試聽 ready 178／unavailable 79**（69%）——比 c-37～c-39 低，符合藍圖預估的
+「離核心越遠損耗率越高」。apex hall 候選 15 張（Eno 系 5 張、Detroit 3 張、
+Art of Noise、A Guy Called Gerald、Coldcut、Renaissance 等）。
+
+**MB 上游資料問題兩則**（建議日後回報 MB）：System 7《777》的 RG 誤併了首張同名專輯的
+美國改題版；Hashim 的 RG 標題掛著「(1990 remix)」但底下就是 1983 原盤。
+
 ### 2026-08-23（同日第四筆）｜dip-vinyl-shop｜§5.5 白名單增列 `asia-mini-album`（待店主覆核）
 
 c-42 日本批與 c-43 韓國批各撞到同一道牆：MusicBrainz 依曲數把**日本ミニアルバム**與
