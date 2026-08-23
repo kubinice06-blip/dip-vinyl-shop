@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（同日第十一筆）｜dip-vinyl-shop｜c-44 搖滾正典 219 張＋兩個管線缺陷
+
+`onboarding-manifest-c44-rock-20260823.json`：**219 張，0 error 0 warning，試聽 ready 216／219**。
+封面 caa 216／manual 3，稀有度 uncommon 150／epic 33／rare 36，殿堂候選 11 張
+（Black Sabbath 首作、Suicide、The Clash 首作、Pantera《Cowboys from Hell》、
+Death《Scream Bloody Gore》、At the Gates《Slaughter of the Soul》、
+Helloween《Keeper II》、Eyehategod《Take as Needed for Pain》、The Strokes《Is This It》、
+R.E.M.《Murmur》、Uncle Tupelo《No Depression》）。
+
+**兩筆身分配錯，是寫作 agent 逐首核對曲序才抓到的**：
+- Bo Diddley《Bo Diddley》原本配到 1962 Checker LP-2984，正解是 1958 Chess 首作
+  `f1cedb26-816f-3815-8489-c317ede4cae0`。封面圖上直接印著 CHECKER LP 2984，換 RG 後重抓
+  才拿到印 CHESS LP 1431 的原盤美術。
+- Banco del Mutuo Soccorso《Darwin!》原本配到 1991 重錄版（MB 標題沒有驚嘆號），
+  正解 `de54cbbb-070c-32fe-834e-329c33f6d0af`。
+
+**教訓：MB 同一藝人的同名條目，「標題差一個標點」往往就是原盤與重錄版的分界。**
+
+**封面救援的兩個新發現**：
+- CAA 的 release-group 層 front 會回該 RG 底下**任意一筆** release 的圖。Magazine
+  《The Correct Use of Soap》因此拿到美版「Promotional Copy NOT FOR SALE」宣傳盤套，
+  Banco 拿到日版 CD 側標掃圖。**RG 層取不到就要逐 release 試，不能直接放棄。**
+- Apple 圖床的封面依既有慣例（池內已有 150 張）一律記 `cover.source: "manual"`，
+  不可寫 `"apple"`——驗證器只認 bandcamp／spotify／caa／manual 四種。
+
+**修掉兩個管線缺陷**：
+1. `pipe-assemble.mjs` 會拿寫作 agent 的舊 `previewVerdict:"wrong"` 把**已經救援修好**的
+   試聽再降級一次。c-44 有 7 筆中招（含 3 張自我同名卡，被 published gate 直接擋下）。
+   改成：`preview.json` 的 `chosen.manual===true` 且 status 200 時，視為人工已重配，
+   不再套用舊判定。回頭掃 c-37～c-43 七批**確認都沒中招**——這個 bug 到 c-44 才出現，
+   因為這是第一批「先寫作、後救援」的批次。
+2. 新增 `merge-cover-fix.mjs`。封面救援一直沒有對應的合併腳本，而 rgMbid 改動要同時
+   寫回 `cover.json` 與 `identity.json` 兩個檔，全靠手改很容易只改一半。
+
+**驗證**：`node scripts/verify-album-onboarding.mjs onboarding-manifest-c44-rock-20260823.json --prepare`
+→ **0 error、0 warning**。`seed_cards.json`、`apex_pool.json`、KV、Firestore 全未動，
+published 五個旗標全 false。與現有 12,153 鍵卡池零撞鍵。
+
 ### 2026-08-23（同日第十筆）｜dip-vinyl-shop｜c-TW2 三位台灣藝人的專輯目錄（13 張）
 
 `onboarding-manifest-ctw2-taiwan-artists-20260823.json`：**13 張，0 error，試聽 ready 11／13**。
