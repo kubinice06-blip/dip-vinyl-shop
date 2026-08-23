@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-23（後續）｜dip-vinyl-shop｜iOS 點搜尋輸入框不再自動放大頁面
+
+店主：手機上按搜尋條會自動放大頁面，很煩。
+
+**原因**：iOS Safari 的固定行為——聚焦的輸入框字級 < 16px 就自動 zoom，
+而全站輸入框（首頁搜尋、搜尋專輯、topbar search）都是 11–13px。
+
+**修法**（index.html `<head>`，viewport meta 之後）：只在 iOS（含 iPadOS 桌面 UA）
+用 JS 對 viewport 補 `maximum-scale=1`。iOS 10 起手動雙指縮放不受 maximum-scale
+限制，只有聚焦自動縮放被擋掉；Android 不加，避免真的鎖死縮放。
+沒有動任何輸入框字級，設計不變。
+
+**驗證**：Playwright 分別以 iPhone／Android UA 載入——iPhone 的 viewport content
+變成 `…, maximum-scale=1`，Android 維持原樣。
+
 ### 2026-08-23｜dip-vinyl-shop｜搜尋專輯的卡片詳情補上「✈ 分享卡片」
 
 店主：搜尋出來的專輯卡沒有分享按鈕，比照一般分享按鈕流程，並生成截圖。

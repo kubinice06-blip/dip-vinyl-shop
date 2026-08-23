@@ -4,6 +4,18 @@
   <meta charset="UTF-8"/>
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <script>
+    // iOS Safari 點輸入框（字級 < 16px）會自動放大頁面且不會自己縮回來。
+    // 只對 iOS 補 maximum-scale=1 擋掉這個自動縮放：iOS 10 起手動雙指縮放
+    // 不受 maximum-scale 限制，可照常放大；Android 不加，免得真的鎖死縮放。
+    (function () {
+      var ua = navigator.userAgent;
+      var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (!isIOS) return;
+      var v = document.querySelector('meta[name="viewport"]');
+      if (v && v.content.indexOf('maximum-scale') === -1) v.content += ', maximum-scale=1';
+    })();
+  </script>
   <title>dip vinyl shop</title>
   <!-- PWA：選歌 App -->
   <link rel="manifest" href="/manifest.json">
