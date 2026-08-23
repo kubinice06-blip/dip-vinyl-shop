@@ -28,6 +28,26 @@
 廠牌官網、樂團官方社群、可靠媒體報導作為 `manualEvidenceUrls`。
 封面多半要走 Apple 台灣商店官方圖或店主本機上傳。
 
+## 待店主本機處理：線上 273 張嘻哈卡的試聽是淨化版（2026-08-23）
+
+跑 c-45 時發現 Apple 上同一張碟常有**同名、同曲數、曲序也一致**的雙胞胎條目，
+一筆 `explicit`、一筆 `cleaned`（消音淨化版），只看名稱與曲數分不出來，
+管線從來沒讀過 `collectionExplicitness` 這個欄位。
+
+掃線上 1,062 張嘻哈卡：**273 張（25.7%）配到淨化版**，含 JAY-Z《The Blueprint》、
+Kendrick《DAMN.》、Drake《Take Care》、OutKast《Speakerboxxx/The Love Below》、
+DMX《It's Dark and Hell Is Hot》、Common《Like Water for Chocolate》等正典。
+
+**而且淨化版不只是消音，還會整首抽掉曲目**（Pop Smoke 的淨化盤少了〈For The Night〉，
+那是該專輯最紅的一首），所以連曲數／曲序資料也一起錯。
+
+- 完整清單：`audits/cleaned-previews-hiphop.md`（表格）與 `.json`（原始資料）
+- 另有 4 張 collectionId 已失效需重抓：PARTYNEXTDOOR《P3》、Open Mike Eagle
+  《Hella Personal Film Festival》、Pete Rock《PeteStrumentals 2》、Apollo Brown《Clouds》
+- 規格與管線都已修好（`ALBUM_ONBOARDING.md` §6、`pipe-preview.mjs`），**新批次不會再中**；
+  這 273 張屬線上資料（KV／Firestore／靜態地圖），依規則本環境未寫入，要你本機處理。
+- 對照組：c-44 搖滾 217 筆掃出 0 筆，確認是嘻哈與部分 R&B 特有，不需全類型重掃。
+
 ## 卡住待店主本機處理（封面在本環境取不到）
 
 這些卡的文字、身分、三軸都做好了，卡在**封面在本環境完全找不到可用來源**
