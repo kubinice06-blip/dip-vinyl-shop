@@ -1,0 +1,963 @@
+{
+  "schemaVersion": 1,
+  "batch": "2026-08-21-c29-blues",
+  "batchNote": "藍調線第一批（POOL_BALANCE_PLAN blues 158→500 的開頭）：正典宗師代表作補洞。三軸為人工錨點評定（遠端環境無法連 worker /album-rating 與 last.fm，見各卡 ratings.note）；只完成研究層，未寫任何線上資料（KV／Firestore／seed 皆未動），published 全 false。",
+  "albums": [
+    {
+      "artist": "Muddy Waters",
+      "album": "At Newport 1960",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2c1288fa-19c4-34d3-97a7-ff2fe9c96b57",
+        "upc": "076731126920",
+        "aliasesChecked": true,
+        "aliasReview": "MB 標題為《Muddy Waters at Newport 1960》，通行名與串流用《At Newport 1960》；無其他 artist-credit 或譯名疑義"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "常被稱為史上第一張藍調現場專輯，滾石五百大專輯第 348 名，對 1960 年代英美藍調復興影響有明文記載；池內同級的 B.B. King《Live at the Regal》目前為普卡，是否採納請店主定奪。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/At_Newport_1960",
+          "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
+        ]
+      },
+      "description": {
+        "text": "1960 年 7 月 3 日 Newport 爵士音樂節的現場實況，常被稱為史上第一張藍調現場專輯。Muddy Waters 率領含 Otis Spann 與 James Cotton 的樂隊，從〈I Got My Brand on You〉一路唱到全場沸騰的〈Got My Mojo Working〉，還應觀眾要求再唱一遍；電氣化的 Chicago blues 第一次以完整專輯的形態被記錄在舞台上，對 1960 年代英美兩地的年輕藍調樂手影響深遠，滾石五百大專輯將其列於第 348 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/At_Newport_1960",
+          "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/96/f1/12/96f11232-77ed-79c4-5ebe-740cd9969c34/mzaf_8236177675422304178.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1484105309,
+        "appleCollectionName": "Muddy Waters At Newport 1960",
+        "note": "數位版 13 曲含加收曲，首曲 I Got My Brand on You 即原盤 A1"
+      },
+      "research": {
+        "suggestedYear": 1960,
+        "yearNote": "演奏者掛名→最早公開發行年；Chess 於 1960-11-15 發行（Wikipedia）",
+        "upcNote": "Muddy Waters at Newport 1960 (1986 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "John Mayall & The Bluesbreakers",
+      "album": "Blues Breakers with Eric Clapton",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2b031a2e-9d80-3240-b065-9445fb37f00b",
+        "upc": "3259180008628",
+        "aliasesChecked": true,
+        "aliasReview": "原始掛名 John Mayall with Eric Clapton，MB artist-credit 為 John Mayall & the Bluesbreakers；俗稱 Beano Album，已比對"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2b031a2e-9d80-3240-b065-9445fb37f00b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "俗稱 Beano 專輯，開創過載吉他音色的 blues-rock 原型，滾石五百大專輯第 195 名、All Time Top 1000 Albums 第 391 名；是否採納請店主定奪。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Blues_Breakers_with_Eric_Clapton",
+          "https://musicbrainz.org/release-group/2b031a2e-9d80-3240-b065-9445fb37f00b"
+        ]
+      },
+      "description": {
+        "text": "1966 年由 Mike Vernon 製作、Decca 發行，樂迷暱稱 Beano 專輯——封面上 Eric Clapton 低頭讀的正是那本漫畫。剛離開 The Yardbirds 的 Clapton 把 Les Paul 接上開到過載的 Marshall 音箱，錄下當時罕見的厚重吉他音色，倫敦街頭「Clapton is God」的塗鴉正出自這段時期。專輯把 Chicago blues 曲目翻成英式電吉他語彙，滾石五百大專輯列於第 195 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blues_Breakers_with_Eric_Clapton",
+          "https://musicbrainz.org/release-group/2b031a2e-9d80-3240-b065-9445fb37f00b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/16/00/191600fc-bb33-81e2-f25e-8d845e2b54aa/mzaf_5868399048626856306.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1434913344,
+        "appleCollectionName": "Blues Breakers with Eric Clapton",
+        "note": "取標準版（Deluxe 的首曲是 Mono 版，已改用非 Deluxe 條目）"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "1966-07-22 發行（MB）",
+        "upcNote": "Blues Breakers With Eric Clapton (1982 )"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Magic Sam",
+      "album": "West Side Soul",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "288aa280-02a8-3381-9390-229abe4bf978",
+        "upc": "038153061524",
+        "aliasesChecked": true,
+        "aliasReview": "1967 原盤 artist-credit 為 Magic Sam Blues Band（另一筆 score 100 的同名 RG 是 1992 合輯，已排除）；卡片沿用通行名 Magic Sam"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/288aa280-02a8-3381-9390-229abe4bf978/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Wikipedia 稱其常被引用為現代電氣藍調關鍵之作，classic 給 5；但殿堂需跨來源長期共識，本環境 AllMusic／Penguin 等來源被網路政策擋下無法查證，暫不提候選，店主可補查後再議。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Chicago 西區吉他手 Magic Sam 的首張錄音室專輯，由 Delmark 發行，常被引用為現代電氣藍調的關鍵之作。他重錄 1957 年在 Cobra 的首張單曲〈All Your Love〉，顫音吉他與高亢直接的唱腔貫穿全片；〈Sweet Home Chicago〉的編排日後成為最通行的版本之一。兩年後 Magic Sam 因心臟病驟逝，得年 32 歲，這批錄音因此成了他留下的主要遺產。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/West_Side_Soul",
+          "https://musicbrainz.org/release-group/288aa280-02a8-3381-9390-229abe4bf978"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/c5/c8/f7c5c88d-4152-73aa-23a3-c2428b2798fd/mzaf_17759961684790973106.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 96606680,
+        "appleCollectionName": "West Side Soul",
+        "note": "12 曲同原盤，首曲 That's All I Need 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1967,
+        "yearNote": "MB first-release 1967、Wikipedia 條目寫 1968，年份請店主以 Discogs 複核後定案",
+        "upcNote": "West Side Soul (1993 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Son House",
+      "album": "Father of Folk Blues",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1185f4fe-a799-360e-a83b-1224bb59d239",
+        "upc": "5014757171673",
+        "aliasesChecked": true,
+        "aliasReview": "原盤全名《The Legendary Son House: Father of Folk Blues》；英國版改題《Death Letter》、美國 CD 再版《The Original Delta Blues》，皆同一 RG，已比對"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release/1c5294c8-5de2-436c-bfdd-4ec7d1a02aca/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "RG 層封面是電台宣傳盤掃圖（下緣印 Not for Resale 與曲目條），改用 2012 再版 release 的乾淨原版封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藍調重發現運動的招牌錄音，classic 給 5；殿堂候選所需的跨來源共識證據在本環境查證受限（樂評資料庫多被擋），暫不提候選，留待店主補查。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Delta blues 的開山人物 Son House 在 1964 年被樂迷重新尋獲後，1965 年為 Columbia 錄下的回歸之作。離開音樂二十多年的他重拾金屬共鳴吉他與佈道式的唱腔，錄下〈Death Letter〉、〈John the Revelator〉等日後與他劃上等號的曲目。House 是 Robert Johnson 與 Muddy Waters 都直接受教的源頭人物，這批場次讓戰前 Delta blues 以完整專輯的形態重新回到聽眾面前。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Son_House",
+          "https://musicbrainz.org/release-group/1185f4fe-a799-360e-a83b-1224bb59d239"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/10/c0/a9/10c0a999-eca7-a8d0-3b46-f49323ed2cf7/mzaf_4345128489495118616.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 157314970,
+        "appleCollectionName": "Father of the Delta Blues: The Complete 1965 Sessions",
+        "note": "Apple 僅有《Father of the Delta Blues: The Complete 1965 Sessions》（同批 1965 場次的完整版），原盤九曲全數在內，首曲 Death Letter 即原盤 A1"
+      },
+      "research": {
+        "suggestedYear": 1965,
+        "yearNote": "1965 Columbia 發行（MB＋Wikipedia）",
+        "upcNote": "Death Letter (1985 GB)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Bobby \"Blue\" Bland",
+      "album": "Two Steps from the Blues",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "959bffeb-cdb8-3559-a0e7-2c88d278e7bf",
+        "upc": "076742703622",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Bobby Bland，串流與通行名為 Bobby \"Blue\" Bland；無同名他作"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/959bffeb-cdb8-3559-a0e7-2c88d278e7bf/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "soul-blues 範式的奠基專輯，滾石五百大專輯第 217 名，兩支單曲拿下 Billboard R&B 榜冠亞軍；是否採納請店主定奪。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Two_Steps_from_the_Blues",
+          "https://musicbrainz.org/release-group/959bffeb-cdb8-3559-a0e7-2c88d278e7bf"
+        ]
+      },
+      "description": {
+        "text": "Duke 廠牌歌手 Bobby \"Blue\" Bland 的首張專輯，收錄 1956 至 1960 年間的錄音，由小號手 Joe Scott 統籌編曲。銅管與福音式的吶喊包住 Bland 絲絨般的嗓音，把藍調唱進 soul-blues 的抒情範式；單曲〈I Pity the Fool〉與〈Don't Cry No More〉分別拿下 Billboard R&B 榜冠軍與亞軍。專輯名列滾石五百大專輯第 217 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Two_Steps_from_the_Blues",
+          "https://musicbrainz.org/release-group/959bffeb-cdb8-3559-a0e7-2c88d278e7bf"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/05/3f/6c053f97-ed2a-30e6-f8bf-3885a1482e04/mzaf_17375557304280751405.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1469576135,
+        "appleCollectionName": "Two Steps from the Blues",
+        "note": "首曲 Two Steps from the Blues 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1961,
+        "yearNote": "1961 Duke 發行（MB＋Wikipedia）",
+        "upcNote": "Two Steps From the Blues (1990 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Big Mama Thornton",
+      "album": "Big Mama Thornton with the Muddy Waters Blues Band",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0a65c7f0-6559-4cdd-8547-c96c8188aeaf",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 建檔題為《Big Mama Thornton and the Chicago Blues Band》，經廠牌目錄（Arhoolie F-1032）與曲目逐一比對確認即本作；封面與串流題為 with the Muddy Waters Blues Band，取通行題"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0a65c7f0-6559-4cdd-8547-c96c8188aeaf/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "三軸未達任一頂點門檻，也無跨來源殿堂共識，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1966 年 4 月，Arhoolie 創辦人 Chris Strachwitz 促成 Big Mama Thornton 與 Muddy Waters 整隊樂手同棚錄音。以〈Hound Dog〉原唱聞名的 Thornton——她 1953 年的原版曾在 R&B 榜連坐七週冠軍，早於 Elvis 的翻唱——全程以渾厚吼腔主導，〈Black Rat〉與〈Life Goes On〉見她在頂尖 Chicago blues 節奏組上自在游走，是她 1960 年代重返錄音生涯的關鍵文件。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+          "https://musicbrainz.org/release-group/0a65c7f0-6559-4cdd-8547-c96c8188aeaf"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/e5/2f/30e52f35-821f-db2f-29f3-33d58060e1fe/mzaf_2057972182336466632.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1508955758,
+        "appleCollectionName": "Big Mama Thornton With the Muddy Waters Blues Band - 1966",
+        "note": "Apple 條目《… - 1966》17 曲含 alternate takes，首曲 I'm Feeling Alright 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "MB 唯一 release 日期 1966-04-25（同錄音日）；Arhoolie 實際發行年份請店主以 Discogs 複核（1966 或 1967）",
+        "upcNote": "releases=1，皆無有效條碼"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Sister Rosetta Tharpe",
+      "album": "Gospel Train",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7844500a-f161-3fcc-969a-20db5492bba4",
+        "upc": "042284113427",
+        "aliasesChecked": true,
+        "aliasReview": "同名 RG 有 1956 Mercury 原盤與 1958 合輯兩筆，已取 1956-12-15 原盤；另有 EP《Gospel Train Vol.1》已排除"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7844500a-f161-3fcc-969a-20db5492bba4/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "三軸未達任一頂點門檻；搖滾名人堂列名屬藝人層級榮譽，不當作單一專輯的殿堂證據。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "福音吉他先驅 Sister Rosetta Tharpe 1956 年 7 月為 Mercury 錄製、同年 12 月發行的專輯，部分曲目由福音四重唱 The Harmonizing Four 和聲。她把電吉他的推弦與早期失真帶進聖歌，〈Jericho〉、〈When They Ring the Golden Bell〉都騎在搖擺的節奏上；她後來入選搖滾名人堂時，這張專輯被列名提及。Chuck Berry、Little Richard 到英國藍調吉他手都公開承認受她影響。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Gospel_Train_(album)",
+          "https://musicbrainz.org/release-group/7844500a-f161-3fcc-969a-20db5492bba4"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/f7/c2/d6f7c292-3bd4-3703-8fbe-47f50176aae0/mzaf_4392392131500684687.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1442449575,
+        "appleCollectionName": "Gospel Train",
+        "note": "取 12 曲標準版（Expanded Edition 已排除），首曲 Jericho 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1956,
+        "yearNote": "1956-12-15 Mercury 發行（MB＋Wikipedia）",
+        "upcNote": "Gospel Train (2002 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Champion Jack Dupree",
+      "album": "Blues from the Gutter",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "bd86dacb-657a-30af-8bd7-e316a3e86d09",
+        "upc": "075678243424",
+        "aliasesChecked": true,
+        "aliasReview": "MB 題寫作 Blues From the Gutter（大小寫差異）；無同名他作疑義"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/bd86dacb-657a-30af-8bd7-e316a3e86d09/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Penguin Guide 皇冠是強力單一來源，但殿堂需跨來源長期共識；三軸亦未達門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "New Orleans 鋼琴手 Champion Jack Dupree 為 Atlantic 錄製的首張專輯，以 barrelhouse 與 boogie-woogie 手法直面毒癮、疾病與貧民窟日常——〈T.B. Blues〉、〈Can't Kick the Habit〉的題材在 1958 年少有人敢這樣直寫。拳擊手出身的 Dupree 以半說半唱的演繹配上滾動的左手低音，《Penguin Guide to Blues Recordings》給予四星外加皇冠，視為不可或缺的錄音。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blues_from_the_Gutter",
+          "https://musicbrainz.org/release-group/bd86dacb-657a-30af-8bd7-e316a3e86d09"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f4/03/ac/f403ac93-e8e0-ba45-5ea2-25f120a04cc6/mzaf_6905007442899497854.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 45434408,
+        "appleCollectionName": "Blues from the Gutter",
+        "note": "10 曲同原盤，首曲 Strollin' 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1958,
+        "yearNote": "1958 Atlantic 發行（MB）",
+        "upcNote": "Blues from the Gutter (1992-09-15 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Hound Dog Taylor",
+      "album": "Hound Dog Taylor and the HouseRockers",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d5cc7ec8-920c-345f-9535-a90fbb014e38",
+        "upc": "045395470120",
+        "aliasesChecked": true,
+        "aliasReview": "專輯名含團名（and the HouseRockers），卡片 artist 取 Hound Dog Taylor，與自我同名規則不衝突；與 2006《Live in Boston》現場盤已區分"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d5cc7ec8-920c-345f-9535-a90fbb014e38/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "廠牌創業作的文化意義大，但三軸未達任一頂點門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Alligator 廠牌的第一號出版品：創辦人 Bruce Iglauer 因原雇主 Delmark 不願簽 Hound Dog Taylor，乾脆自掏腰包創廠錄下這張專輯。兩把吉他加鼓、沒有貝斯的三人編制，用廉價日製吉他與破音把 boogie 燒得粗礪滾燙，〈She's Gone〉、〈Taylor's Rock〉近乎南區酒吧現場的直接轉寫；Taylor 左手天生六指，滑管音色成了 house-rocking 一派的招牌。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Hound_Dog_Taylor",
+          "https://musicbrainz.org/release-group/d5cc7ec8-920c-345f-9535-a90fbb014e38"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/02/73/2c0273a3-3242-b0ee-698e-99b188805bf2/mzaf_14445258077181723983.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1881130081,
+        "appleCollectionName": "Hound Dog Taylor and The Houserockers",
+        "note": "12 曲同原盤，首曲 She's Gone 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1971,
+        "yearNote": "1971 Alligator 發行（MB）",
+        "upcNote": "Hound Dog Taylor and the HouseRockers (1990 XE)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Albert Collins",
+      "album": "Ice Pickin'",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b255acca-ece8-3cd2-ae3d-5838d7aebd65",
+        "upc": "0014551471325",
+        "aliasesChecked": true,
+        "aliasReview": "撇號寫法 Ice Pickin'（MB 用右單引號'）；無其他版本疑義"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b255acca-ece8-3cd2-ae3d-5838d7aebd65/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "葛萊美提名與翻身意義俱在，但三軸未達任一頂點門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "以變則調弦與 capo 聞名的 Telecaster 名手 Albert Collins，簽入 Alligator 後於 1978 年推出的翻身之作。冰錐般銳利的單音攻擊配上悶熱的 shuffle 律動，〈Honey Hush〉、〈Ice Pick〉把「Master of the Telecaster」的名號坐實；專輯獲 1979 年葛萊美獎提名，重啟他此後在 Alligator 的整段晚期生涯，也把 Texas blues 的凍寒音色帶回主流視野。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Ice_Pickin%27",
+          "https://musicbrainz.org/release-group/b255acca-ece8-3cd2-ae3d-5838d7aebd65"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/c0/dc/b5c0dcaa-eb70-53c7-49ca-ee9c7ae5f60c/mzaf_17465993118261513927.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1881129810,
+        "appleCollectionName": "Ice Pickin'",
+        "note": "首曲 Honey, Hush aka Talking Woman Blues 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "1978 Alligator 發行（MB＋Wikipedia）",
+        "upcNote": "Ice Pickin’ (1978 XW)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Otis Spann",
+      "album": "Otis Spann Is the Blues",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "5ea6c8dc-affa-3ba3-a27c-95f06067ff57",
+        "upc": "708857900121",
+        "aliasesChecked": true,
+        "aliasReview": "無別名疑義；Candid 原盤與 Remastered 數位版同 RG"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5ea6c8dc-affa-3ba3-a27c-95f06067ff57/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "三軸未達任一頂點門檻，也無跨來源殿堂共識，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Muddy Waters 樂隊的鋼琴手 Otis Spann 首次以主角身分錄製的專輯，1960 年在 New York 為 Candid 錄音，翌年一月發行。同場的吉他手是承襲 Robert Johnson 衣缽的 Robert Lockwood Jr.，兩人以極簡編制對話；〈The Hard Way〉到〈Otis in the Dark〉鋪開他從 barrelhouse 到慢板的鍵盤幅度。Spann 被普遍視為戰後 Chicago blues 鋼琴的第一人，這張是他個人目錄的起點。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Otis_Spann_Is_the_Blues",
+          "https://musicbrainz.org/release-group/5ea6c8dc-affa-3ba3-a27c-95f06067ff57"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/43/4d/6e434d72-338c-e26d-c0e3-3b65d7f267b7/mzaf_13527436973491058093.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1880971792,
+        "appleCollectionName": "Otis Spann Is The Blues (Remastered)",
+        "note": "Remastered 數位版曲目同原盤，首曲 The Hard Way 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1961,
+        "yearNote": "1961 年 1 月 Candid 發行（MB 1961-01＋Wikipedia）；錄音在 1960",
+        "upcNote": "Otis Spann Is the Blues (1989 GB)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Johnny Winter",
+      "album": "Second Winter",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "6039148f-6571-31da-a227-80655a7d81e8",
+        "upc": "5014757133121",
+        "aliasesChecked": true,
+        "aliasReview": "無別名疑義；2004 Legacy Edition 附加曲不影響本體"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6039148f-6571-31da-a227-80655a7d81e8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "三軸未達任一頂點門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "德州吉他手 Johnny Winter 在 Nashville 錄製的 Columbia 專輯，1969 年以三面黑膠、第四面留白的罕見規格發行——當時的說法是整批場次都夠好，不如全數收錄。曲目從 Percy Mayfield 的〈Memory Pain〉到 Bob Dylan 的〈Highway 61 Revisited〉，自寫的〈I'm Not Sure〉則見他把 blues-rock 骨架越燒越快；白熱的滑管與高速樂句是全片主軸。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Second_Winter",
+          "https://musicbrainz.org/release-group/6039148f-6571-31da-a227-80655a7d81e8"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/18/99/b21899c7-fd92-9239-101d-66c19ca03764/mzaf_18050449084120540753.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 197970004,
+        "appleCollectionName": "Second Winter",
+        "note": "取 1969 標準版（Legacy Edition 已排除），首曲 Memory Pain 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1969,
+        "yearNote": "1969 Columbia 發行（MB＋Wikipedia）",
+        "upcNote": "Second Winter (1989 GB)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Robert Cray Band",
+      "album": "Strong Persuader",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "953e7142-a162-3ab1-824a-e288b69ece51",
+        "upc": "042283056824",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 The Robert Cray Band，Apple 與部分串流掛 Robert Cray；卡片取樂隊名，店主查評分時兩種拼法都建議試"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/953e7142-a162-3ab1-824a-e288b69ece51/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "三軸未達任一頂點門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Robert Cray 的第四張錄音室專輯，由 Bruce Bromberg 與 Dennis Walker 製作，1986 年經 Mercury 與 Hightone 聯合發行。〈Smoking Gun〉打進主流電台，專輯累計售出逾兩百萬張，把藍調重新送回 1980 年代的排行榜；Cray 乾淨的 Stratocaster 音色配上 soul 式歌寫，外遇與猜疑的敘事題材成了他的正字標記。滾石雜誌將其列入八〇年代百大專輯第 42 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Strong_Persuader",
+          "https://musicbrainz.org/release-group/953e7142-a162-3ab1-824a-e288b69ece51"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/ea/ff/1ceaffbe-3866-d4d2-830c-77b7227417b3/mzaf_11707984549394694053.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1440860087,
+        "appleCollectionName": "Strong Persuader",
+        "note": "首曲 Smoking Gun 即 A1"
+      },
+      "research": {
+        "suggestedYear": 1986,
+        "yearNote": "1986-11-17 發行（Wikipedia）",
+        "upcNote": "Strong Persuader (1986 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Christone \"Kingfish\" Ingram",
+      "album": "Kingfish",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "be8f2d73-1d69-4bf1-9e87-12baa949bef9",
+        "upc": "014551499022",
+        "aliasesChecked": true,
+        "aliasReview": "自我同名風險已查：artist 為全名 Christone \"Kingfish\" Ingram，與專輯名 Kingfish 非同字串；引號取直引號（MB 用彎引號）"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/be8f2d73-1d69-4bf1-9e87-12baa949bef9/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "2019 年出道作，樂史定位仍在累積，三軸未達任一頂點門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Mississippi 州 Clarksdale 出身的 Christone \"Kingfish\" Ingram 二十歲發行的首張專輯，由 Alligator 出版，入圍 2020 年葛萊美最佳傳統藍調專輯。他從 Delta blues 的土壤長出當代語彙，火力全開的獨奏之外，〈Been Here Before〉這類慢板顯出敘事底子；前輩 Buddy Guy 在〈Fresh Out〉跨刀。發行後他被廣泛視為新世代藍調吉他的領頭人物。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Kingfish_(Christone_Ingram_album)",
+          "https://musicbrainz.org/release-group/be8f2d73-1d69-4bf1-9e87-12baa949bef9"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/e2/d5/30e2d51c-921b-5dfb-2797-2643b2074868/mzaf_17935849188201760219.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 1881164636,
+        "appleCollectionName": "Kingfish",
+        "note": "12 曲同原盤，首曲 Outside of This Town 即 A1"
+      },
+      "research": {
+        "suggestedYear": 2019,
+        "yearNote": "2019-05-17 Alligator 發行（MB＋Wikipedia）",
+        "upcNote": "Kingfish (2019-05-17 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "T-Bone Walker",
+      "album": "T-Bone Blues",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "fca91c11-50d7-3eb9-857c-a53ac043cf85",
+        "upc": "075678195426",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist 用 U+2010 連字符（T‐Bone），卡片用 ASCII 連字號；同名 RG 另有無日期的 Compilation 一筆，已取 1959 正規盤"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release/1a56228e-90ef-4bac-a975-03a0e6464a72/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "RG 層封面是 BnF Collection 數位再版的通用圖，改用 1959 mono 原盤 release 的 Atlantic 原版封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:blues-anchors",
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位極高但殿堂級跨來源共識在本環境查證受限，三軸依錨點評定未達門檻，依一般卡上架。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "電吉他藍調的開創者 T-Bone Walker 在 Atlantic 的專輯，集結 1955 至 1957 年三個場次的錄音，1959 年發行。〈Stormy Monday〉在此留下他中年後的權威重錄，〈T-Bone Shuffle〉與〈Papa Ain't Salty〉示範 jump blues 圓潤悠閒的搖擺。Walker 拿電吉他當主奏樂器的單音樂句，是 B.B. King 那整代人公開致敬的教材，此作是他專輯時期最常被引用的一張。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/T-Bone_Walker",
+          "https://musicbrainz.org/release-group/fca91c11-50d7-3eb9-857c-a53ac043cf85"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3c/cc/06/3ccc066d-865e-8b13-d764-5970d4d53895/mzaf_4096022850166322918.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T04:12:00Z",
+        "appleCollectionId": 299081284,
+        "appleCollectionName": "T-Bone Blues",
+        "note": "15 曲數位版，首曲 Papa Ain't Salty 為原盤曲目"
+      },
+      "research": {
+        "suggestedYear": 1959,
+        "yearNote": "1959 Atlantic 發行（MB）；錄音 1955–1957",
+        "upcNote": "T‐Bone Blues (1989 US)"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,924 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-tw2-taiwan-artists-20260823",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "瓢蟲",
+      "album": "Ladybug",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2b27b487-17b7-49ec-a6ca-1e7573ab9cd0",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "藝人別名：Ladybug（MB artist 5fc2615d 主名，中文只在 alias）／瓢虫（簡體）；依 TW_INDIE_NAMING_RULINGS 規則 3 取中文「瓢蟲」。專輯名維持英文 Ladybug——1997 台灣實體標題即純英文，無中文並列；Discogs 條目名寫作「Ladybug (4) = 瓢虫 - Ladybug」。1998 美國 Shock 盤 shock003 十四軌曲名全為英譯（Stop／Are We Still Friends／Fuck Off, Creep／Ghost Child…），與台灣盤同屬一個 RG，不分卡。⚠ 排除 The Ladybug Transistor、英國 Ladybug、日本 LADYBUG，以及中文維基〈水晶唱片〉第 47 行內鏈 [[瓢蟲 (乐队)|瓢虫]]——該內鏈實際指向東京製作團體 LADY BiRD（レディバード），與本團無關。1998 EP《讓太空人跳舞 Let The Spaceman Dance》(水晶 CIRD1058) 是另一張碟，不可合併。比對務必鎖 RG 2b27b487。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2b27b487-17b7-49ec-a6ca-1e7573ab9cd0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1990 年代末台灣地下龐克場景裡少見的自資長篇作品，場景內位置明確但無跨來源共識；無廠牌、無數位版、Apple 與各串流全無，屬收藏家領域；garage punk 錄音生猛粗礪。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂史地位僅限台灣地下場景，classic 未達 5 不合殿堂；accessibility 3 不合異端。listeners 本環境不可得，但這張自資盤無數位發行、Apple 零命中，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "台灣龐克團瓢蟲唯一的長篇作品，1997 年自資出版、封面上沒有廠牌，十四首歌壓成一張 CD：〈色狼滾開〉〈摩托車〉〈501教室〉〈鬼小孩〉〈我們還是朋友嗎？〉。隔年 Shock 在美國發行同一張碟（shock003），曲名全部改成英譯——Fuck Off, Creep、Classroom 501、Ghost Child。水晶唱片的 EP《讓太空人跳舞》(CIRD1058) 要到 1998 年才出，同年她們也與潘麗麗、雷光夏、葉樹茵一起收進水晶的女性創作合輯《女人在唱歌》(CIRD 1060-2)。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/2b27b487-17b7-49ec-a6ca-1e7573ab9cd0",
+          "https://api.discogs.com/releases/9585124",
+          "https://api.discogs.com/releases/19215418",
+          "https://api.discogs.com/releases/23473145"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB RG first-release-date 1997（TW release、[no label]、CD、14 軌），Discogs release 9585124 同記 1997、Not On Label／Taiwan。1998 是美國 Shock 盤 shock003 的年份，非首版年。",
+        "mbTitle": "Ladybug",
+        "mbArtist": "Ladybug = 瓢虫",
+        "mbFirstRelease": "1997",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "店主問題的答案：瓢蟲確實有一張正規專輯，就是這張 1997 年的同名 CD 專輯，14 首、自資發行（Discogs release 9585124「Ladybug (4) = 瓢虫 - Ladybug」，Not On Label / Taiwan / CD, Album；Discogs 分類 Rock — Alternative Rock, Garage Rock, Punk）。曲目包含〈色狼滾開〉〈摩托車〉〈501教室〉〈鬼小孩〉〈我們還是朋友嗎？〉，是女子主導的台灣龐克團在 1990 年代末唯一的長篇作品；隔年（1998）才有水晶唱片的 EP《讓太空人跳舞》CIRD1058，同年也收進水晶女性創作合輯《女人在唱歌》CIRD 1060-2（同輯：潘麗麗、雷光夏、葉樹茵、紀淑玲、黃靜雅、史辰蘭、潘秀梅）。專輯先於 EP，是這個團的目錄起點。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album**（RG 2b27b487-17b7-49ec-a6ca-1e7573ab9cd0，artist 5fc2615d-f4b5-4de4-acf6-980aefdf316f「Ladybug」，country TW、disambiguation『Taiwanese punk band』、alias 瓢蟲／瓢虫）。該 artist 目錄只有兩筆：1997 Album《Ladybug》與 1998 EP《Let the Spaceman Dance》，所以本團的正規專輯只有這一張。MB 上有兩個 release：TW 1997（[no label]、CD、14 軌）與 US 1998（Shock, shock003、CD、14 軌）。**陷阱一**：MB artist 主名建成英文 Ladybug，中文只在 alias，卡池鍵請用中文「瓢蟲」。**陷阱二**：中文維基〈水晶唱片〉條目第 47 行的內鏈是 [[瓢蟲 (乐队)|瓢虫]]，實際抓取該條目 raw 得到的是「LADY BiRD（レディバード），日本東京澀谷的音樂製作團隊，2007 年由 CLUB ATOM 常駐 dj TEN 及 KAZUHISA HIROTA 組成，隸屬 Ariola Japan」——完全不是本團，任何引用該內鏈的敘述都要丟掉。**Apple TW 無**（itunes search「Ladybug 瓢蟲」「瓢蟲 樂團」皆零命中，撈到的全是《Miraculous Ladybug》卡通歌）；CAA 也無，封面只能靠實體掃圖或不上架。專輯名與藝人名撞名嚴重（The Ladybug Transistor、英國 Ladybug、日本 LADYBUG），入卡池務必綁 MB RG id。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "散落的時光",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b039623c-94a1-44e5-8402-216d6ea5dcd5",
+        "upc": "4710660171250",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題建成英文 Pieces（中文只存在 release 層），台灣實體盤與卡片正名取中文《散落的時光》，英文 Pieces 進別名；2020 年黑膠 Discogs 條目把中文打成簡體「散落的时光」，去重時繁簡都要試。⚠ 排除 2016《Farewell》——它收了本張九軌中的七軌，是另一件商品。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b039623c-94a1-44e5-8402-216d6ea5dcd5/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；確立了此後十五年不變的鋼琴＋弦樂三部＋木吉他編制的首張正規專輯，團內位置明確但非跨來源公認代表作；小白兔盤加 2020 年限量黑膠，屬樂迷／深度愛好者領域，旋律線清楚不難入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "台灣後古典室內樂的起點盤之一，但中文維基無本團條目、英文維基亦無，湊不出跨來源長期共識，classic 僅 3，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Cicada 2009 年在台北成軍，江致潔（鋼琴）、許罡愷（小提琴）、鍾漁靜（中提琴）、桃子（大提琴）與謝維倫（木吉他）的室內樂編制，這是他們接在 2010 年 EP 之後的首張正規專輯。2011 年小白兔唱片發行（WWR-025），九首全器樂。中文曲名寫的是人跟人的事——〈一起之後...〉〈失溫〉〈能說的不多了〉——英文標題卻另立一套（Happily Ever After?、Fading Affection、No Words），跟日後以山海地景為題的作品是兩種寫法。2020 年小白兔再壓限量編號黑膠 WWR-038LP。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/b039623c-94a1-44e5-8402-216d6ea5dcd5",
+          "https://musicbrainz.org/artist/66dcb8ed-ca1f-4115-b8e0-17e7438e8b0e",
+          "https://api.discogs.com/releases/29694724",
+          "https://api.discogs.com/releases/23349863"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2011,
+        "yearNote": "MB RG first-release-date 2011-09-10，兩個 release（TW《散落的時光》小白兔 WWR-025 CD、XW《Pieces》數位）同日；Discogs 29694724 亦記 2011／Taiwan／WWR-025。2020 是黑膠 WWR-038LP 的再版年，非首發年。",
+        "mbTitle": "Pieces",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2011-09-10",
+        "upcNote": "散落的時光 (2011-09-10 TW)",
+        "curatorWhy": "Cicada 的首張正規專輯（前一年的《Over the Sea / Under the Water》是 EP）。小白兔唱片 WWR-025 CD，2020 年小白兔再發限量編號黑膠 WWR-038LP——是這三位藝人裡唯一確定有黑膠實體的起點盤，對唱片行直接有貨可談。9 軌，室內樂編制（鋼琴／小提琴／中提琴／大提琴／木吉他）確立了此後十五年的團體語言，2024 年十五週年自選集《回返》仍以此期曲目為骨幹。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG b039623c-94a1-44e5-8402-216d6ea5dcd5，artist 66dcb8ed-ca1f-4115-b8e0-17e7438e8b0e、country TW、disambiguation『Taiwanese chamber music group』）。MB 有兩個 release：XW 英文標題 Pieces、TW 中文標題《散落的時光》（小白兔 WWR025）；卡池取台灣盤的中文標題，英文 Pieces 進 aliasReview。**Apple TW 有**（artistId 1483724320、collectionId 470381339、9 軌、℗ 2011 White Wabbit Records，但 Apple 上的標題是英文 Pieces 不是中文）。同名團風險：Apple 另有一個 artistId 79382440 的「Cicada」頁面（primaryGenre 舞曲）混雜英國 Critical Mass 舞曲團，抓圖務必鎖 1483724320。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "一起走吧",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b51d6d35-5095-4aaa-9d62-ea9d8917fbd2",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題是英文 Let’s Go（U+2019 彎引號，寫入時勿改直引號；另見直引號 Let's Go 寫法），中文《一起走吧》在 TW release 層，卡片取中文。四首曲名在 2016《Farewell》上以英譯出現（怎麼辦=What Do I Do?、蹦蹦=Boom Boom、就跟你說吧=Told You!、我們到了=Here We Are!），那是另一張碟不可合併。Discogs 全無本盤條目，廠牌僅 MB 的 StreetVoice 單一來源。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b51d6d35-5095-4aaa-9d62-ea9d8917fbd2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；目錄裡最短最輕的一張，是樂團離開廠牌自主發行的轉折點但非代表作；Discogs 完全查無實體、無日本版、只在台灣流通，撞見機率最低；九首小品旋律直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 僅 2，不合殿堂；accessibility 2 不合異端。惟本張 Discogs 零建檔、無國際版、無實體流通紀錄，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "九首曲子加起來不到二十三分鐘，是 Cicada 目錄裡最短也最輕的一張：〈下雨了〉七十秒、〈小水窪〉一分二十七秒、〈撿到五分鐘〉一分四十二秒，最長的〈天橋下有一張床〉也只有五分零一秒，全部維持鋼琴與弦樂的室內樂編制。離開小白兔之後由樂團自主發行、掛 StreetVoice 名下，2012 年只在台灣流通，是目錄裡唯一沒有日本 flau 國際版的一張。四首後來以英譯版本收進 2016 年的《Farewell》。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/b51d6d35-5095-4aaa-9d62-ea9d8917fbd2",
+          "https://musicbrainz.org/artist/66dcb8ed-ca1f-4115-b8e0-17e7438e8b0e",
+          "https://musicbrainz.org/release-group/d709f863-c447-4a51-9c64-1b780f2d80f7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8c/b6/b9/8cb6b9a0-de37-0fbd-6ab2-077b5c42f38e/mzaf_14276965478167989705.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1594333336,
+        "appleCollectionName": "一起走吧"
+      },
+      "research": {
+        "suggestedYear": 2012,
+        "yearNote": "採 MB RG first-release-date 2012-07-01；Apple 標 2012-07-07，相差六天，年份 2012 無爭議。Discogs 查無此盤，無第三方年份可交叉。",
+        "mbTitle": "Let’s Go",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2012-07-01",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "第二張正規專輯，9 軌，MB 上的台灣盤掛在 StreetVoice 名下（樂團自資、StreetVoice 代理的獨立發行期）。是 Cicada 從小白兔轉為自主發行、開始每年一張節奏的轉折點，也是目錄裡少數沒有日本 flau 國際版的一張，只在台灣流通。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG b51d6d35-5095-4aaa-9d62-ea9d8917fbd2，first release 2012-07-01；MB 有 XW 英文標題 Let’s Go 與 TW 中文標題《一起走吧》兩個 release）。**Discogs 完全查無此盤**（q=Cicada 一起走吧、Cicada Let's Go 皆零命中），廠牌／編號只有 MB 的『StreetVoice』一個來源，無第二方交叉驗證。**Apple TW 有**（artistId 1483724320、collectionId 1594333336、releaseDate 2012-07-07、9 軌、℗ 2012 Cicada）——注意 Apple 日期 07-07 與 MB 的 07-01 差六天。英文標題在 MB 上用的是彎引號 Let’s Go，寫入時別誤打成直引號。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "邊境消逝",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "971b54b3-3e55-4a0a-9e93-afc01ae27ff0",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題英文 Coastland，中文《邊境消逝》在 TW release 層，Discogs 條目作「邊境消逝 Coastland」，卡片取中文主標、英文進別名。⚠ 三筆極易誤吸：2024《回返 Coastland Revisited》（英文只差 Revisited，是 2024 重錄自選集，另卡）、2015 flau 合輯《Ocean》（收本張五軌）、策展文件提到的《白色海岸線》（全站查無此盤，「白色」屬 2017《不在的你們都去了哪裡 White Forest》與 2025《凝視白色的邊界》）。廠牌兩說：Discogs=ULOUD MUSIC CO,. LTD／INFRA910、MB TW release=StreetVoice。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/971b54b3-3e55-4a0a-9e93-afc01ae27ff0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團第一次以單一地景概念貫穿整張，是日後山海主題路線的起點，也是十五週年自選集回頭重錄的母本；台灣獨立盤流通有限，旋律仍清晰。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在團內是主題轉向的關鍵一張，但缺乏中英文維基條目與跨來源長期共識，classic 3 未達殿堂；accessibility 2 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "第三張，七首曲子第一次被單一地景收束：從〈沿著風與沙〉八十二秒的引子推到〈匯流向海〉八分四十八秒，寫的是海岸線與國境。收尾的〈浮游在海上的島嶼／潛沈於水下的人們〉重演 2010 年同名 EP 的主題曲，把樂團的起點接回這張。2013 年台灣 CD 由 ULOUD MUSIC 發行（INFRA910），MB 上的台灣 release 則記在 StreetVoice 名下。十一年後的十五週年自選集《回返》英文題 Coastland Revisited，回頭重錄的正是這張的曲目。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/971b54b3-3e55-4a0a-9e93-afc01ae27ff0",
+          "https://api.discogs.com/releases/7774897",
+          "https://musicbrainz.org/release-group/d512ded9-2646-4020-87b7-1d7e414b491b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4e/49/8f/4e498f4f-08f4-e9b6-9b4d-a07c0a59219d/mzaf_11957063361092296524.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1594304688,
+        "appleCollectionName": "邊境消逝"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB RG first-release-date 2013-08-02（TW／XW 兩個 release 同日），Discogs 7774897 記 2013／Taiwan／INFRA910，兩方一致。",
+        "mbTitle": "Coastland",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2013-08-02",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "第三張正規專輯，7 軌，Discogs 建檔為 ULOUD MUSIC CO,. LTD／INFRA910（台灣 CD），MB 台灣盤則記在 StreetVoice。是 Cicada 首次以單一地景概念（海岸線與國境）貫穿整張的作品，也是 2024 年十五週年專輯《回返 Coastland Revisited》直接回頭重做的母本——兩張的英文名 Coastland / Coastland Revisited 就是這層對應關係。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 971b54b3-3e55-4a0a-9e93-afc01ae27ff0，2013-08-02）。**Apple TW 有**（artistId 1483724320、collectionId 1594304688、7 軌、℗ 2013 Cicada）。廠牌兩處來源不一致（Discogs=ULOUD MUSIC / INFRA910，MB TW release=StreetVoice），上架時廠牌欄建議留空或並列。策展指示裡提到的《白色海岸線》查無此盤——正確盤名是《邊境消逝》，「白色」出現在 2017《不在的你們都去了哪裡 White Forest》與 2025《凝視白色的邊界》，不要混。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "仰望海平面",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "c436885a-3e92-4b8d-8f92-1a7b1b110e7d",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題英文 Light Shining Through the Sea，中文《仰望海平面》在 TW CD release（風潮 TCD-9282）層，Discogs 條目作「仰望海平面 Light Shining Through the Sea」，卡片取中文主標。⚠ 排除：同名曲〈Light Shining Through the Sea〉是 2015-12-02 flau 合輯《Ocean》(FLAU54、MB RG 80d87f9d、Album+Compilation) 的壓軸曲，不可誤釘成本卡；策展文件提到的《仰望，星空》查無此盤。廠牌：首版 Dear Musik DEAR-013，2023 再版風潮 TCD-9282。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c436885a-3e92-4b8d-8f92-1a7b1b110e7d/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把主題從西岸邊境移到東岸太平洋的一張，也是同名曲被日本 flau 合輯選為壓軸、打開日本通路的節點；台灣獨立盤加 2023 風潮再版，樂迷領域。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "是進入日本市場的關鍵盤，但這層意義靠廠牌沿革推得，非跨來源的樂史共識；classic 3 未達殿堂，accessibility 2 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "主題從西岸的邊境轉到東岸：九首曲子沿著〈日出〉〈越過海岸山脈〉〈潛入太平洋〉排到七分五十五秒的同名曲，等於一天的行程，編制仍是鋼琴與弦樂加木吉他的全器樂。2015 年 Dear Musik 發行（DEAR-013），同年底日本 flau 的合輯《Ocean》(FLAU54) 把同名曲放在壓軸，這張因此成了 Cicada 打開日本通路的那一張；2023 年風潮以 TCD-9282 在台灣再版。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/c436885a-3e92-4b8d-8f92-1a7b1b110e7d",
+          "https://api.discogs.com/releases/7774862",
+          "https://musicbrainz.org/release-group/80d87f9d-0575-4146-9652-24496714c54a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/30/38/fa3038e6-d8e3-0290-5973-ed9ceae67f9b/mzaf_11213650721795047159.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1738175767,
+        "appleCollectionName": "仰望海平面"
+      },
+      "research": {
+        "suggestedYear": 2015,
+        "yearNote": "採 MB RG first-release-date 2015-09-19（首版數位 release，無 country）；Discogs 7774862 交叉確認 Dear Musik DEAR-013／2015／Taiwan／CD Album。MB 的 TW CD release 標 2023-04-25，那是風潮 TCD-9282 再版日，非首發。",
+        "mbTitle": "Light Shining Through the Sea",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2015-09-19",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "第四張正規專輯，9 軌，Dear Musik DEAR-013；2023 年風潮音樂（Wind Music）以 TCD-9282 再版，是 Cicada 進入風潮體系前後的分界盤。同年日本 flau 發行的《Ocean》合輯把這張的同名曲〈Light Shining Through the Sea〉放在壓軸，等於用這張把 Cicada 推向日本市場。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG c436885a-3e92-4b8d-8f92-1a7b1b110e7d，first release 2015-09-19）。MB 的台灣 release 日期標成 2023-04-25（那是風潮 TCD-9282 再版），首版 2015 的 release 沒有 country，年份請以 RG first-release-date 為準。Discogs 交叉確認：Dear Musik DEAR-013、2015、Taiwan、CD Album。**Apple TW 有**（artistId 1483724320、collectionId 1738175767、9 軌、℗ 2015 Cicada）。策展指示提到的《仰望，星空》查無此盤，正確盤名是《仰望海平面》。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "不在的你們都去了哪裡",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "77c2b371-61d8-4acb-baf9-81a8cde9cd76",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名三寫法：MB RG 主標題英文 White Forest／MB TW release 中英並列「不在的你們都去了哪裡 White Forest」／Discogs 台日 CD 條目（DEAR-018、FLAU70）標題只印 White Forest，2018 黑膠條目（FLAU70LP）則只印中文。依裁定取中文主標，White Forest 進別名。⚠ 排除 2025《凝視白色的邊界 Gazing the Shades of White》（「白色」撞字）與 2019《走入有霧的森林》（同屬森林主題）。台日三個實體同屬一個 RG，不分卡。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/77c2b371-61d8-4acb-baf9-81a8cde9cd76/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一次以正規專輯（而非合輯）台日同步發行的一張，議題最明確；有日本 flau CD 與 2018 限量黑膠，實體取得相對容易但仍在樂迷領域。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "台日雙發與環境議題主題在團內有清楚位置，但無中英文維基條目、無獎項或榜單佐證，達不到跨來源長期共識，classic 3。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "七首曲子的中文題全部指向正在消失的生物與棲地：〈等待再一次躍出水面〉英題寫作 Dolphins Leap，〈游向那片被丟棄的海〉英題直接是 Swimming in the Plastic Ocean，八分五十六秒的〈原本是家的地方〉是全片最長，收尾的〈鯨〉與〈竹圍小貓〉把 2010 年 EP 的一首舊作重新演過。2017 年台灣 Dear Musik（DEAR-018）與日本 flau（FLAU70）同步出 CD，隔年再壓限量黑膠 FLAU70LP——這是 Cicada 第一次以正規專輯而非合輯進日本。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/77c2b371-61d8-4acb-baf9-81a8cde9cd76",
+          "https://api.discogs.com/releases/29694904",
+          "https://api.discogs.com/releases/11616193",
+          "https://musicbrainz.org/release-group/4b549163-ebbd-4abd-80d2-be34f1d35b06"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/ad/cf/b3adcf16-f435-5751-4d50-4da2d275eede/mzaf_13066545839287851021.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1591146762,
+        "appleCollectionName": "不在的你們都去了哪裡"
+      },
+      "research": {
+        "suggestedYear": 2017,
+        "yearNote": "MB RG first-release-date 2017-11-23（TW 與 XW 兩個 release 同日），Discogs 台灣 CD 29694904 記 2017／Dear Musik DEAR-018，日本 CD 37544022 記 2017／flau FLAU70，三方一致。2018 是黑膠 FLAU70LP 的年份。",
+        "mbTitle": "White Forest",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2017-11-23",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "第五張正規專輯，7 軌。同時有台灣 Dear Musik DEAR-018 CD 與日本 flau FLAU70 CD，2018 年再出 flau／Dear Musik 合作的限量黑膠 FLAU70LP（台灣壓）。這是 Cicada 第一次台日同步以正規專輯（而非精選）進入日本市場，也是團體目錄裡黑膠實體最容易取得的兩張之一。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 77c2b371-61d8-4acb-baf9-81a8cde9cd76，2017-11-23）。**標題雙軌**：CD 版在 Discogs／flau 上叫 White Forest，台灣盤與黑膠叫《不在的你們都去了哪裡》，MB 的 TW release 標題是「不在的你們都去了哪裡 White Forest」中英並列。卡池取中文，White Forest 進 aliasReview。**Apple TW 有**（artistId 1483724320、collectionId 1591146762、7 軌、℗ 2017 Cicada，Apple 上標題用中文）。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "走入有霧的森林",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e4aa3509-8dc7-42eb-a382-814bcc7055eb",
+        "upc": "5050580726963",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題英文 Hiking in the Mist，四個 release 中兩個用中英並列「走入有霧的森林 Hiking in the Mist」、兩個純英文；Discogs 日本 CD／黑膠條目印 Hiking In The Mist（The 大寫），台灣再版 28165210 印「走入有霧的森林 = Hiking In The Mist」。卡片取中文主標，英文兩種大小寫都要進去重表。⚠ 排除 2017《不在的你們都去了哪裡 White Forest》（前一張森林主題作）。四個 release 同屬一個 RG，2023 風潮再版不另開卡。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e4aa3509-8dc7-42eb-a382-814bcc7055eb/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；目錄裡發行版本最完整、國際流通最廣的一張（日壓 CD 與黑膠、美國版、2023 風潮台壓 CD 與黑膠），也是團體轉入風潮體系的分界，實質為代表作。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "是 Cicada 流通最廣、公認的主要作品，但 classic 4 未達門檻，且中英文維基皆無本團條目，湊不出跨來源長期共識的殿堂證據。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "主題從海面移到台灣的高山森林，九首曲子按一趟登山的時序排：〈走入有霧的森林〉起步，八分零八秒的〈降落在金黃色草坡〉是全片最長，〈驟雨〉之後收在〈踏出一條白色的路〉。2019 年由日本 flau 出 CD（CCD-01）與黑膠（FLAU80LP），十一月再發美國版，2023 年風潮以 TCD-9283 與 LP-9283 在台灣重出——日壓、美盤與台壓黑膠齊備，是目錄裡實體最好找的一張，℗ 也從樂團自資轉成 WINDIE Music。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/e4aa3509-8dc7-42eb-a382-814bcc7055eb",
+          "https://api.discogs.com/releases/15705634",
+          "https://api.discogs.com/releases/14532831",
+          "https://api.discogs.com/releases/28165210"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b0/9b/79/b09b79ce-1f42-14f7-cbb6-f63e3aa898b8/mzaf_3408601291295990503.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1483724319,
+        "appleCollectionName": "走入有霧的森林"
+      },
+      "research": {
+        "suggestedYear": 2019,
+        "yearNote": "MB RG first-release-date 2019-10-30（XW 兩個 release 同日，US 版 2019-11-08）；Discogs 日本 CD 15705634 與黑膠 14532831 同記 2019。MB 的 TW CD release 標 2023-04-25 是風潮 TCD-9283 再版日，與《仰望海平面》同一波再版，勿被帶偏。",
+        "mbTitle": "Hiking in the Mist",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2019-10-30",
+        "upcNote": "Hiking in the Mist (2019-11-08 US)",
+        "curatorWhy": "第六張正規專輯，9 軌，是 Cicada 目錄裡發行版本最完整的一張：日本 flau CD（CCD-01）與黑膠 FLAU80LP、美國盤（2019-11-08）、2023 年風潮台灣再版 CD TCD-9283 與黑膠 LP-9283。℗ 標示已轉為 WINDIE Music（風潮旗下），標誌 Cicada 從獨立自資轉入風潮發行體系。對唱片行來說是唯一同時有日壓與台壓黑膠的一筆。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG e4aa3509-8dc7-42eb-a382-814bcc7055eb，2019-10-30，MB 下掛四個 release：XW／US／XW 中英並列／TW 2023 風潮再版）。**Apple TW 有**（artistId 1483724320、collectionId 1483724319、9 軌、℗ 2019 WINDIE Music）。標題同樣中英並列（MB 作「走入有霧的森林 Hiking in the Mist」），卡池取中文。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "棲居在溪源之上",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "f046dc45-66a3-4375-aa9b-f7310eca58d6",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題英文 Seeking the Sources of Streams，另一個 release 用中英並列「棲居在溪源之上 Seeking the Sources of Streams」，Discogs 條目作「棲居在溪源之上 = Seeking The Sources Of Streams」（The／Of 大寫），卡片取中文主標、兩種英文大小寫都進去重表。⚠ 必須排除同名的 2022-02-15 先行單曲（MB RG b8115155、primary-type Single、1 軌），那是另一件商品；本卡釘 Album 的 f046dc45。廠牌：風潮／Windie music TCD-5348 與 LP-5348、日本 flau FLAU101。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/f046dc45-66a3-4375-aa9b-f7310eca58d6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把前作的山林田野推到溪流源頭，結構最極端的一張（同名曲十一分十九秒、另有八分十七秒長曲，其餘多為兩分鐘小品）；風潮 CD 與黑膠加 flau 國際版，樂迷領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "主題延續前作而非開創，classic 3 未達殿堂門檻；長曲雖考驗耐性但仍是調性明確的室內樂，accessibility 3 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "把《走入有霧的森林》的台灣山林田野再往上推到溪流源頭。九首曲子的重量壓在兩處：〈抵達圈谷之前的稜線〉八分十七秒、同名的〈棲居在溪源之上〉十一分十九秒，是團體錄音裡最長的一首；其餘〈松葉上的鳥與水珠〉〈雨從傍晚下到午夜〉都在兩分鐘上下，長短落差就是這張的骨架。同名曲先於 2022 年二月以單曲發行，2023 年風潮出 CD（TCD-5348）與黑膠（LP-5348），日本 flau 同步發 FLAU101。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/f046dc45-66a3-4375-aa9b-f7310eca58d6",
+          "https://api.discogs.com/releases/35174407",
+          "https://api.discogs.com/releases/26516117",
+          "https://musicbrainz.org/release-group/b8115155-3277-46e1-8643-b27053ac3917"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/21/e8/85/21e885d1-dca3-cd1c-6aa9-d79b2bc9c255/mzaf_479195967991135915.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1659967937,
+        "appleCollectionName": "棲居在溪源之上"
+      },
+      "research": {
+        "suggestedYear": 2023,
+        "yearNote": "採 2023：MB RG first-release-date 與 Apple 皆為 2023-01-06（flau FLAU101 國際版），Discogs 黑膠 LP-5348（26516117）記 2023-03-10 完整日期。Discogs 台灣 CD 35174407 的 released 欄只有裸年份 2022、無月日，屬低精度投稿且可能受 2022-02-15 先行單曲影響；若店主堅持台灣首發年，需先取得 TCD-5348 實體印刷日期再改。",
+        "mbTitle": "Seeking the Sources of Streams",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2023-01-06",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "第七張正規專輯，9 軌，風潮／WINDIE 發行：台灣 CD TCD-5348、台灣黑膠 LP-5348（2023-03-10）、日本 flau FLAU101 國際版。延續《走入有霧的森林》的台灣山林田野錄音路線，把主題從森林推到溪流源頭；同名曲先於 2022-02-15 以單曲發行（MB RG b8115155）再收進專輯。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG f046dc45-66a3-4375-aa9b-f7310eca58d6，first release 2023-01-06）。**年份有爭議**：MB RG 與 Apple 都記 2023-01-06（flau FLAU101 國際版），但 Discogs 的台灣 CD（Windie music TCD-5348）標 2022，黑膠 LP-5348 標 2023-03-10。本欄採 MB／Apple 的 2023；若店主偏好台灣首發年，應改 2022。另注意 MB 上同名的 2022 單曲 RG（primary-type Single）不要誤抓。**Apple TW 有**（artistId 1483724320、collectionId 1659967937、9 軌、℗ 2023 WINDIE Music）。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "凝視白色的邊界",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0d0e4b08-9243-415c-a0e4-d9c2affafd32",
+        "upc": "600568535220",
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：MB RG 主標題英文 Gazing the Shades of White，另一個 release 中英並列「凝視白色的邊界 Gazing the Shades of White」，Discogs 台灣盤 36495817 同為中英並列、日本盤 36363133 純英文（The Shades Of White 大小寫不同），卡片取中文主標。⚠ 排除 2026 年的《Gazing the Shades of White (The Remixes) - EP》——MB 尚未建成獨立 RG，抓封面時 Apple 端須鎖 collectionId 1845054020。Discogs 台灣盤編號打成 TDC-5352，是 TCD-5352 的 typo。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0d0e4b08-9243-415c-a0e4-d9c2affafd32/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；地景第一次離開台灣、轉向冰河與極地，也是國際協作最深的一張（隔年 remix 版找來 Joseph Shabason、Colloboh、KMRU、aus）；最新作，流通尚淺，聲響較前作抽象。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "2025 年新作，尚無任何跨來源長期評價可依據，classic 3；質地雖較抽象但仍是調性室內樂，accessibility 3 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "地景第一次離開台灣：八首曲子寫冰河與極地，〈靜靜引路〉的英題 Embraced by Aoraki 直接點名紐西蘭南島的庫克山，〈走在冰川留下的路〉〈碎石坡畔的湖與森林〉也都指向冰蝕地形，全片三十五分鐘，最長的同名曲七分五十四秒。2025 年風潮以 TCD-5352、日本 flau 以 FLAU111 發行；隔年另有 Joseph Shabason、Colloboh、KMRU 與 aus 改作的 remix 版本，是這個團國際協作最深的一次。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/0d0e4b08-9243-415c-a0e4-d9c2affafd32",
+          "https://api.discogs.com/releases/36363133",
+          "https://api.discogs.com/releases/36495817"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/d2/0c/92d20c3e-5541-2c26-3b0a-61af3707d316/mzaf_17393441919510291050.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1845054020,
+        "appleCollectionName": "凝視白色的邊界"
+      },
+      "research": {
+        "suggestedYear": 2025,
+        "yearNote": "採 MB RG first-release-date 2025-01-22（風潮 TCD-5352／flau FLAU111 實體年），Discogs 兩個實體條目皆記 2025。Apple 的 2025-10-30 是數位重新上架日，恰與 MB 那個 8 軌數位 release 同日，互相印證。",
+        "mbTitle": "Gazing the Shades of White",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2025-01-22",
+        "upcNote": "凝視白色的邊界 Gazing the Shades of White (2025-01-22 XW)",
+        "curatorWhy": "第八張正規專輯，8 軌，風潮 TCD-5352 與日本 flau FLAU111。是 Cicada 目前最新的錄音室專輯，把《棲居在溪源之上》的台灣山林主題推向冰河／極地地景（衍生單曲〈Where the Glacier Once Passed〉〈Embraced by Aoraki〉〈Junipers by the Glacier Lake〉），並在 2026 年做出 remix EP，由 Joseph Shabason、Colloboh、KMRU 等國際音樂人改作——是團體目錄裡國際協作最深的一張。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 0d0e4b08-9243-415c-a0e4-d9c2affafd32，first release 2025-01-22；MB 有中英並列 release「凝視白色的邊界 Gazing the Shades of White」Wind Music TCD-5352 與純英文 release）。Discogs 上台灣盤編號打成 TDC-5352（疑似 typo，日本 flau 為 FLAU111）。**Apple TW 有**（artistId 1483724320、collectionId 1845054020、8 軌、℗ 2025 WIND MUSIC，但 Apple 的 releaseDate 標 2025-10-30，與 MB 的 2025-01-22 差近十個月，Apple 應為數位重新上架日）。2026 年另有《Gazing the Shades of White (The Remixes) - EP》，抓封面時別抓成 remix EP。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "回返",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "d512ded9-2646-4020-87b7-1d7e414b491b",
+        "upc": "600568535022",
+        "exceptionReason": "風潮官方定位的十五週年自選集，實體印刷標題即《回返（十五週年自選集）》，五軌全部取自 2013／2015／2017 三張既有專輯、無任何新作，是回顧 Cicada 十五年山海主題最完整也最權威的單一入口盤；與一般促銷拼盤不同的是五首全以現行編制同步重錄，兼具選集與錄音版本的雙重文獻價值。（非 EP：五軌時長 5:43／9:01／7:13／10:08／8:57，合計約四十一分鐘。）",
+        "exceptionEvidenceUrls": [
+          "https://api.discogs.com/releases/33125010",
+          "https://musicbrainz.org/release-group/d512ded9-2646-4020-87b7-1d7e414b491b",
+          "https://musicbrainz.org/release-group/971b54b3-3e55-4a0a-9e93-afc01ae27ff0"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名：實體印刷標題是《回返（十五週年自選集）》（Discogs 33125010、風潮 TCD-5350），Apple TW 作《回返 (十五週年自選集)》（半形括號），MB TW release 作「回返 Coastland Revisited」，MB RG 主標題純英文 Coastland Revisited。卡片取最短的中文主標《回返》，副標「十五週年自選集」與英文 Coastland Revisited 一併進別名。⚠ 排除 2013《邊境消逝 Coastland》（英文只差 Revisited）與 2025-01-15 現場專輯《The Revisit: 15th Anniversary Live at Cloud Gate Theater》(MB RG acdca242、Album+Live、14 軌)。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d512ded9-2646-4020-87b7-1d7e414b491b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十五週年的官方自選集，五首舊作全部 2024 年重錄、每首都比原版長，是回顧這個團最方便的單一入口；風潮台灣盤，流通限於本地樂迷。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "性質是週年回顧而非開創之作，classic 3 未達殿堂；accessibility 2 不合異端。listeners 不可得，但作為 2024 年新盤仍在流通，不列 pearl 疑似。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "十五週年自選集：五首曲子分別取自 2013《邊境消逝》、2015《仰望海平面》與 2017《不在的你們都去了哪裡》，2024 年全部重新錄過，曲名一律帶「2024 Version」。維持樂團慣用的同步錄音，五軌合計約四十一分鐘，每首都比原版拉長——〈原本是家的地方〉從八分五十六秒變成十分零八秒。風潮以 TCD-5350 發行，英文題 Coastland Revisited 直接對應十一年前的《邊境消逝 Coastland》。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/d512ded9-2646-4020-87b7-1d7e414b491b",
+          "https://api.discogs.com/releases/33125010",
+          "https://musicbrainz.org/release-group/971b54b3-3e55-4a0a-9e93-afc01ae27ff0"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/ba/1c/53ba1ca4-486e-10b3-dc78-7ebb7133f71d/mzaf_16716801611909255444.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1755135171,
+        "appleCollectionName": "回返 (十五週年自選集)"
+      },
+      "research": {
+        "suggestedYear": 2024,
+        "yearNote": "採 MB RG first-release-date 2024-08-20；Discogs 33125010 記 2024（released 2024-08-19），Apple 記 2024-07-19，年份 2024 三方無爭議，日期採 MB。",
+        "mbTitle": "Coastland Revisited",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2024-08-20",
+        "upcNote": "回返 Coastland Revisited (2024-08-20 TW)",
+        "curatorWhy": "十五週年自選集，5 軌，風潮 TCD-5350，英文名 Coastland Revisited 直接對應 2013 年《邊境消逝 Coastland》——是把早期曲目以現行編制重錄的週年盤，隔年（2025-01-15）並出雲門劇場現場專輯《回返：十五週年音樂會》。若卡池想要一張代表「Cicada 十五年」的入口盤，這是唯一一張。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG d512ded9-2646-4020-87b7-1d7e414b491b，2024-08-20，TW release 風潮 TCD-5350、CD、5 軌）——但 **MB 的 Album 標記可能過寬**：Discogs 把同一筆建成「CD, Mini-Album」，Apple TW 的標題直接寫《回返 (十五週年自選集)》，5 軌的長度也接近 EP。若店內 §5.5 的 EP 規則從嚴，這筆應該被擋下，故列 low。**Apple TW 有**（artistId 1483724320、collectionId 1755135171、5 軌、℗ 2024 WINDIE Music，Apple releaseDate 2024-07-19 早於 MB 的 2024-08-20）。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cicada",
+      "album": "Farewell",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "d709f863-c447-4a51-9c64-1b780f2d80f7",
+        "upc": "",
+        "exceptionReason": "實體 liner note 直述的早期作品輯：Discogs 日本盤 flau FLAU56 的 notes 原文即「Early works of Cicada」，十四軌中十三軌可逐一回溯到 2010 年 EP、2011《散落的時光》與 2012《一起走吧》（僅〈Meteoric Night〉在 MB 上只掛本輯），並非新錄音專輯。收錄理由：這是 Cicada 第一張在日本實體發行的作品，直接開啟 flau 之後連續代理三張正規專輯的長期關係，是該團早期錄音在台灣以外唯一成套流通的版本。",
+        "exceptionEvidenceUrls": [
+          "https://api.discogs.com/releases/11964353",
+          "https://api.discogs.com/releases/15632078",
+          "https://musicbrainz.org/release-group/d709f863-c447-4a51-9c64-1b780f2d80f7"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "團名一律用英文 Cicada：中文維基無本團條目，「西卡達」查不到書面來源（**但店主指出那是台灣樂迷對本團的通稱，屬實際使用名，已登記為別名供搜尋與去重**）；台灣實體盤（小白兔 WWR-025、Dear Musik DEAR-013／018、風潮 TCD-5348／5350／5352）藝人欄一律印 Cicada。MB artist 66dcb8ed（country TW、disambiguation Taiwanese chamber music group、無 alias），Discogs 建成 Cicada (6)。⚠ 必須排除的同名：英國 Critical Mass 舞曲團 Cicada（Apple artistId 79382440，本團為 1483724320）、MB 上另外三組 Cicada、日本同名團；比對一律鎖 RG id 不靠字串。 本張專輯名維持英文 Farewell——日台兩個實體標題都是純英文，無中文並列，MB／Apple 亦同。⚠ 兩處陷阱：(1) Apple 上的《Farewell》(collectionId 1089108994) 掛在 artistId 79382440 底下，那是英國舞曲團 Cicada 的頁面，抓圖可用但絕不可拿 79382440 當本團 artistId；(2) 開場曲名〈Farewell (In a Pretentious Way)〉的中文原題是 2010 EP 上的〈以一種假裝於蕩的矜持 與你告別〉，兩者是同一首。Discogs 條目名「Cicada (6) - Farewell」。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d709f863-c447-4a51-9c64-1b780f2d80f7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Cicada 第一張在日本實體發行的作品，直接促成 flau 之後長期代理的合作關係；性質是早期作品輯而非新作，日台雙實體但流通仍限於樂迷。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "作為早期作品的匯編有其通路意義，但無一軌新作、也無跨來源樂史評價，classic 3 未達殿堂；accessibility 2 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "日本 flau 在 2016 年二月發行的早期作品輯（FLAU56，Digipak），是 Cicada 第一張在日本上架的實體；台灣版由 Windie music 出（CCD-04）。數位版十四軌幾乎沒有新作：七首取自 2011《散落的時光》，四首是 2012《一起走吧》的英譯版本，開場的〈Farewell (In a Pretentious Way)〉與〈…till the Day We Meet〉來自 2010 年的 EP。這張促成 flau 之後連續代理 White Forest 與 Hiking in the Mist。",
+        "sourceUrls": [
+          "https://musicbrainz.org/release-group/d709f863-c447-4a51-9c64-1b780f2d80f7",
+          "https://api.discogs.com/releases/11964353",
+          "https://api.discogs.com/releases/15632078",
+          "https://musicbrainz.org/release-group/4b549163-ebbd-4abd-80d2-be34f1d35b06"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/2c/f8/f32cf8ff-529c-f6f4-745c-d772d22b5e60/mzaf_14946984514771670105.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1089108994,
+        "appleCollectionName": "Farewell"
+      },
+      "research": {
+        "suggestedYear": 2016,
+        "yearNote": "MB RG first-release-date 2016-03-12（XW 數位）；Discogs 日本盤 11964353 的 notes 明寫「Japan - February 10th / Oversea - March 12th 2016」，台灣 Windie music CCD-04（15632078）記 2016，年份 2016 無爭議。",
+        "mbTitle": "Farewell",
+        "mbArtist": "Cicada",
+        "mbFirstRelease": "2016-03-12",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "日本 flau FLAU56（2016-02-10）與台灣 Windie music CCD-04（2016-06-16）雙版本發行的早期作品集，CD 12 軌、數位 14 軌，Digipak。是 Cicada 第一張在日本實體發行的作品，直接促成之後 flau 連續代理 White Forest／Hiking in the Mist／Gazing the Shades of White 的長期關係。曲目〈Pieces〉〈Lake's End〉〈Meteoric Night〉來自 2010–2013 年的早期期。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、secondary-type 空**（RG d709f863-c447-4a51-9c64-1b780f2d80f7，2016-03-12，XW、Digital Media、14 軌）——**但 MB 的分類存疑**：Discogs 兩個實體版本的 notes 都明寫「Early works of Cicada」，實質是早期作品輯而非新錄音的正規專輯，故列 low 讓店主決定。**Apple TW 有但掛錯藝人**：搜到的《Farewell》(collectionId 1089108994、14 軌、℗ 2016 Cicada) 掛在 artistId **79382440** 底下，而該頁面 primaryGenre 是「舞曲」、目錄裡九成是英國 Critical Mass 的舞曲團 Cicada（Roulette、One Beat Away、Hit My Ego…），只是混進了本團的 Farewell、Dawn After Darkness、A Man Main Theme 三筆。抓封面可用，但**絕不能用 79382440 當本團的 artistId**。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "何欣穗",
+      "album": "她的。發光搖擺",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2184dbd1-3083-4f27-b3c5-7d4933c6e2d7",
+        "upc": "4710425220124",
+        "aliasesChecked": true,
+        "aliasReview": "藝人別名：Ciacia／ciacia her（中文維基英文名欄與封面實印）／Ciacia Ho／Patricia Ho／Her Sheen Sway／her sheen sway（封面小字）；卡池鍵沿用 batch-tw 裁定的中文本名「何欣穗」。專輯名《她的。發光搖擺》中間為全形句號「。」，非頓號或間隔號，鍵值正規化時不可替換；封面同時印 ciacia／何欣穗／her sheen sway 三種掛名。曲名寫法兩處差異：MB 作〈現在怎麼辦？〉（帶問號）、Apple 作〈現在怎麼辦〉；MB 作〈MR.RIGHT〉、中文維基作〈Mr.Right〉。廠牌兩說：中文維基記嘉瑪音樂，Apple ℗ 行記 2002 Sony Music Entertainment Taiwan（後續數位版權方），上架時擇一或留空。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/dc/27/05/dc270501-5c56-4c05-db20-d299475e4b43/886448144977.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "CAA 無圖。改用 Apple 台灣商店 1498913444 官方封面（1000×1000bf），已下載目視確認：正方、暖橘調人物面部特寫，左側白色 outline 字「ciacia 何欣穗 her sheen sway」與手寫體「她的。發光搖擺」，無側標無貼紙",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；中華音樂人交流協會年度十大專輯，隔年華語音樂傳媒大獎四項提名並獲十大華語唱片，是何欣穗公認的代表作；台灣樂迷領域，編曲流暢不難入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "獎項與樂評共識集中在台灣本地，中文維基該條目掛無來源模板、二次文獻在本環境不可讀，湊不出殿堂所需的跨來源長期共識，classic 4 亦未達門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人與最佳專輯製作人；三年後的第二張自己一手包辦，在台灣、新加坡、英國與美國錄音後製，混音找了替 The Cardigans、Franz Ferdinand 與 OK Go 操刀的 Tore Johansson。2002 年 12 月 24 日嘉瑪音樂發行，十三首從〈Famous〉起手，壓軸的〈給女兒 (A Letter From My Dad)〉後來成為《海角七號》插入曲。專輯拿下中華音樂人交流協會年度十大專輯，隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/何欣穗",
+          "https://musicbrainz.org/release-group/2184dbd1-3083-4f27-b3c5-7d4933c6e2d7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/39/3d/2c393d38-6ddd-3a60-0ac3-aac03826e54e/mzaf_18023659886082986168.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1498913444,
+        "appleCollectionName": "她的。發光搖擺"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB RG first-release-date 2002-12-24 與中文維基〈何欣穗〉專輯表「2002年12月24日／嘉瑪音樂」一致；MB release 條碼 4710425220124。",
+        "mbTitle": "她的。發光搖擺",
+        "mbArtist": "何欣穗",
+        "mbFirstRelease": "2002-12-24",
+        "upcNote": "她的。發光搖擺 (2002-12-24 TW)",
+        "curatorWhy": "何欣穗第二張、也是代表作。中文維基載明 2002-12-24 由嘉瑪音樂發行，13 軌，何欣穗一手包辦，在台灣、新加坡、英國、美國錄音與後製，混音找來 Tore Johansson（羊毛衫樂團 The Cardigans、Franz Ferdinand、OK Go 的專輯製作人）。獲中華音樂人交流協會年度十大專輯；隔年第三屆華語音樂傳媒大獎四項提名並拿下十大華語唱片。收錄曲〈給女兒 (A Letter From My Dad)〉後來成為《海角七號》插入曲。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 2184dbd1-3083-4f27-b3c5-7d4933c6e2d7，first release 2002-12-24，artist bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c、country TW）。該 artist 在 MB 上只有三筆：1999 Album《Miss Perfect》、2002 Album《她的。發光搖擺》、2005 EP《米》。**廠牌兩說**：中文維基寫嘉瑪音樂，Apple 的 ℗ 卻是「2002 Sony Music Entertainment Taiwan Ltd.」（可能是後來的數位版權方），上架時廠牌欄要擇一或留空。**Apple TW 有**（artistId 767258254、collectionId 1498913444、13 軌，artworkUrl 可取）。藝名 Ciacia／ciacia her／Patricia Ho／Her Sheen Sway 多名並存，卡池鍵沿用 batch-tw 的裁定用中文本名「何欣穗」。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "何欣穗",
+      "album": "She & Me",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c&fmt=json&limit=100 —— 列 artist 全目錄（不加 type 篩選）。release-group-count = 3，全部為：1999 Album《Miss Perfect》b4703bbb、2002 Album《她的。發光搖擺》2184dbd1、2005 EP《米》5df109c7。無 2013 年任何條目。",
+            "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"She and Me\" OR releasegroup:\"She & Me\"&fmt=json&limit=25 —— 標題全站搜尋（兩種寫法一起）。count = 1，唯一命中是 Nurse With Wound 的 2003《She and Me Fall Together in Free Death》(94aa894c)，與本張無關。",
+            "https://musicbrainz.org/ws/2/release-group?query=artist:\"何欣穗\" OR artist:Ciacia&fmt=json&limit=50 —— 以藝名反查 RG（防 artist mbid 綁錯或有第二個 artist entity）。count = 3，與第一項全目錄完全一致，無新條目。",
+            "https://musicbrainz.org/ws/2/artist?query=何欣穗 OR Ciacia OR \"Patricia Ho\"&fmt=json&limit=25 —— 查是否存在未合併的第二個何欣穗 artist entity（batch-tw 的拷秋勤即為此種雙條目案例）。唯一 score 100 命中就是 bf4ef2c0（TW，aliases: Patricia Ho / ciacia her / Her Sheen Sway / Ciacia Ho），次高只有 51 分的中國詞曲作者「何欣」，確認 MB 上無分裂條目。",
+            "https://musicbrainz.org/ws/2/release?query=\"She & Me\" OR \"She and Me\" AND date:2013&fmt=json&limit=25 —— 繞過 RG 層、直接查 release 層加年份限定（防只建了 release 未建 RG）。count = 0。"
+          ],
+          "checkedAt": "2026-08-23T13:29:57.275Z",
+          "conclusion": "**MB 完全沒有這張，確認走人工身分路線。**五種查法（artist 全目錄、標題雙寫法全站搜尋、藝名反查 RG、artist entity 查重、release 層加年份）互相獨立且全部落空，不是中英雙語標題比對失敗、也不是 artist 條目分裂造成的假陰性——何欣穗在 MB 上的目錄就只停在 2005 年的 EP《米》。**卡片正名裁定：album = 《She & Me》（& 號寫法），artist = 何欣穗，年份 2013。**依 TW_INDIE_NAMING_RULINGS.md「實體發行品 credit ＞ 樂團官方自稱 ＞ 中文維基 ＞ 第三方條目轉述」，本次查到的**兩個實體發行品標題都印 & 號**：Discogs id 13906740（CD, Album，風和日麗唱片行 A Good Day Records，catno **Dear-005**，Taiwan，released 2013-12-06，over-sized card sleeve）與 Discogs id 5393844（Vinyl, LP，博樂伯樂 Expo Music International Multi-media，catno **ELP-0001**，Taiwan，released 2013-12-06，EU 壓片、編號限量前 888 張、Deluxe Gatefold、附明信片）。Apple TW 亦作《She & Me》。中文維基的《She and Me》屬第三方條目轉述，證據層級最低，進 aliasReview。"
+        },
+        "manualEvidenceUrls": [
+          "https://api.discogs.com/releases/13906740",
+          "https://api.discogs.com/releases/5393844",
+          "https://zh.wikipedia.org/wiki/何欣穗",
+          "https://musicbrainz.org/artist/bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c"
+        ],
+        "manualRuling": "MB 完全查無此盤，走 ALBUM_ONBOARDING §1 人工身分路線。五種獨立查法全部落空：artist bf4ef2c0 全目錄只有 1999 Album《Miss Perfect》、2002 Album《她的。發光搖擺》、2005 EP《米》三筆；以 She and Me／She & Me 兩種寫法全站搜 RG 只命中 Nurse With Wound 的無關條目；以藝名反查 RG 結果同全目錄；查 artist entity 無分裂的第二個何欣穗；繞過 RG 層直接查 release 加 2013 年限定回 count=0。身分改由兩個實體發行品釘死：CD 為風和日麗唱片行 A Good Day Records、catno Dear-005（Discogs 13906740，Taiwan，CD Album，9 軌），黑膠為博樂伯樂 Expo Music International Multi-media、catno ELP-0001（Discogs 5393844，Taiwan，EU 壓片、編號限量前 888 張、Deluxe Gatefold），兩者 tracklist 一致九軌、同碟不同版不分卡。載體判 Album 不填 releaseType：權威性較高的 CD 正式盤標 CD, Album，中文維基〈何欣穗〉專輯表列為第三張專輯，且本張以專輯身分入圍金音創作獎最佳創作歌手；黑膠條目上的 LP, Compilation 是單一投稿者對「收攏舊作」的讀法。日期三說（中文維基 2013-05-20、Apple 2013-05-01、Discogs 兩個實體皆 2013-12-06）無一手證據可判，故只採年份 2013。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "專輯名三寫法，全部必須進去重表：(1)《She and Me》——封面手寫體實印 `she and me`（and 完整拼出），本卡據此定名，中文維基〈何欣穗〉專輯表亦作 She and Me；(2)《She & Me》——Discogs 兩個實體投稿標題（13906740 CD、5393844 LP）與 Apple TW 條目皆用 & 號，身分裁定 agent 原判即為此版本，本批依封面實圖改判；(3) 同名曲在中文維基單曲列表裡寫成〈She ＆ Me〉（全形＆）。藝人別名：Ciacia／ciacia（封面小字）／ciacia her／Ciacia Ho／Patricia Ho／Her Sheen Sway，卡池鍵沿用中文本名何欣穗。曲名寫法差異：Discogs 作〈A Good Day, Made With Love〉、中文維基作〈A Good Day,Made with Love〉。⚠ 本盤在 MB 上不存在，任何自動比對都不可用 rgMbid，只能鎖 catno Dear-005／ELP-0001。 ｜2026-08-23 店主裁定：卡片正名採《She & Me》（&號），與 Discogs 兩個實體投稿標題（CD Dear-005／LP ELP-0001）及 Apple 台灣條目一致；封面手寫體實印的 she and me 與中文維基單曲表的全形〈She ＆ Me〉皆為別名。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/7c/66/007c66ca-6ce1-956f-fb98-b95bc9055ab1/195497276196.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "人工身分路線，MB 無此 RG。改用 Apple 台灣商店 1534721131 官方封面（1000×1000bf），已下載目視確認：正方、彩色線描插畫（兩名女子側臉、扶桑花、旋轉木馬、沙鈴），右上手寫體印「she and me / ciacia」——**封面實圖拼的是 and 不是 &**，據此把卡片正名從《She & Me》改為《She and Me》",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；距前作十一年的第三張，把散在各合輯的作品收攏成盤，入圍金音創作獎最佳創作歌手、同名曲入圍金馬獎最佳原創電影歌曲；風和日麗獨立盤，深度愛好者領域。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "入圍而未得獎，且評價來源僅中文維基一處、MB 完全查無此盤，達不到跨來源長期共識，classic 3；accessibility 2 不合異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "距《她的。發光搖擺》十一年，何欣穗把散在各處的作品收攏成第三張專輯：〈我們快樂地向前走〉原是 2008 年風和日麗替她四十歲生日出的單曲，〈Here To Stay〉出自 2010 年合輯《Open Taipei》，〈英文歌 (54321)〉出自 2011 年的《英文歌》。同名曲〈She & Me〉是電影《寶米恰恰》主題曲，入圍第 49 屆金馬獎最佳原創電影歌曲；專輯本身入圍金音創作獎最佳創作歌手，〈Alcohol Kills〉入圍最佳節奏藍調歌曲。2013 年風和日麗唱片行發行，實體九軌。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/何欣穗",
+          "https://api.discogs.com/releases/13906740",
+          "https://api.discogs.com/releases/5393844"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/1c/ab/2c1cab5a-5fc3-1079-ad6a-697e0d30daeb/mzaf_9731611858513175809.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1534721131,
+        "appleCollectionName": "She & Me"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "採 2013：中文維基〈何欣穗〉專輯表記 2013 年 5 月 20 日／風和日麗唱片行，Apple 記 2013-05-01，Discogs 兩個實體皆記 2013-12-06。三說僅日期不同、年份一致；本次無一手證據可判日期，故只採年份。MB 完全查無此盤，無 first-release-date 可依。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "第三張專輯，距第二張《她的。發光搖擺》十一年，2013-05-20 由風和日麗唱片行發行，把她散在各合輯裡的作品收攏成盤（〈我們快樂地向前走〉2008 風和日麗單曲、〈Here To Stay〉2010《Open Taipei》、〈英文歌 (54321)〉2011《英文歌》、〈A Dialogue Between Me & My Ghost〉2010《風和日麗連連看》）。同名曲〈She & Me〉是電影《寶米恰恰》主題曲、入圍第 49 屆金馬獎最佳原創電影歌曲；專輯入圍金音創作獎最佳創作歌手，〈Alcohol Kills〉入圍金音創作獎最佳節奏藍調歌曲。",
+        "curatorRisk": "**MB 未建檔**——何欣穗的 MB artist（bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c）目錄只有 1999／2002／2005 三筆，這張完全不在 MB 上，因此**沒有 MB primary-type 可查**，只能靠中文維基＋Apple 認定為專輯（非 EP）。**標題兩寫法**：中文維基作《She and Me》，Apple TW 作《She & Me》，需擇一並把另一個放 aliasReview。**軌數與日期不一致**：維基列 9 軌、2013-05-20、風和日麗唱片行；Apple 為 8 軌、2013-05-01、℗ 2013 Dear Musik。**Apple TW 有**（artistId 767258254、collectionId 1534721131，artworkUrl 可取），封面沒問題。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}

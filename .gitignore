@@ -4,3 +4,6 @@ data/*.log
 data/*.tmp
 .discogs-token
 scripts/cover-audit/data/auto-refresh.log
+
+# publish-manifest.mjs 產生的上架 payload（每次可重新產生，不入版控）
+publish-stage/

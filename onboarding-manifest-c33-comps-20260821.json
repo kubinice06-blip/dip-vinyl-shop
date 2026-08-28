@@ -1,0 +1,4217 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-33-comps-20260821",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "Freddie King",
+      "album": "Let's Hide Away and Dance Away with Freddie King",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "c5e9cfff-c935-3dd6-8e0e-21062db7bac1",
+        "upc": "012676077323",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 作 Freddie King，1961 年 King 廠原 LP 封面印 Freddy King，同一人，卡片依 MB 拼法。已核對該 RG 底下釋出為 1961 US 首版（8692d1e4）、1988 與 2013 重發，非輸入所警示的 1993／2014 同名合輯條目。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c5e9cfff-c935-3dd6-8e0e-21062db7bac1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；戰後藍調器樂曲的原始出處，〈Hide Away〉長年是吉他手共同教材；旋律直白、全器樂，入耳無門檻。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "地位集中在〈Hide Away〉單曲層次，專輯本身缺乏名榜單或名人堂等跨來源的專輯級共識，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1961 年 King Records 發行的全器樂盤，Freddie King 帶著 Sonny Thompson（鋼琴）、Bill Willis（貝斯）、Phillip Paul（鼓）的辛辛那提班底錄成。開場〈Hide Away〉打進告示牌 R&B 榜第五名，〈San-Ho-Zay〉第四名，兩曲連同〈The Stumble〉成為此後數十年 blues 吉他手的共同教材；Stevie Ray Vaughan 也公開表示受此盤影響。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Let%27s_Hide_Away_and_Dance_Away_with_Freddy_King",
+          "https://musicbrainz.org/release-group/c5e9cfff-c935-3dd6-8e0e-21062db7bac1"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/d2/1c/02d21c3f-eb71-36de-bb4f-7537c272c247/mzaf_14699141787546577409.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 259676380,
+        "appleCollectionName": "Let's Hide Away and Dance Away"
+      },
+      "research": {
+        "suggestedYear": 1961,
+        "yearNote": "MB first-release-date 1961，與 King 廠原盤及 Wikipedia 一致，無重發年份陷阱。",
+        "mbTitle": "Let's Hide Away and Dance Away with Freddie King",
+        "mbArtist": "Freddie King",
+        "mbFirstRelease": "1961",
+        "upcNote": "Let's Hide Away and Dance Away With Freddie King (1988 US)",
+        "curatorWhy": "全演奏曲經典，〈Hide Away〉出處，影響 Clapton 一代英國吉他手",
+        "curatorRisk": "MB 已建檔 1961 原盤（primary=Album、無 Compilation 次類型），題名以 MB 拼法 Freddie（原 LP 封面作 Freddy）；同名另有 1993/2014 合輯條目須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Koerner, Ray & Glover",
+      "album": "Blues, Rags & Hollers + Lots More Blues, Rags & Hollers",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "cd554594-cfaf-3489-b182-0705d6b6c853",
+        "upc": "0033651007623",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Koerner, Ray & Glover」與卡片完全一致；封面所印 Spider John Koerner／Dave「Snaker」Ray／Tony「Little Sun」Glover 為三人全名，非另一團體。RG 標題雖含「+ Lots More」，其下釋出實為 1963-06 美版首作與 1995 英版 2-on-1 CD，無同名混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/cd554594-cfaf-3489-b182-0705d6b6c853/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；白人原音藍調復興公認的起點作，但流通度停在民謠深度愛好者圈；吉他口琴編制單純，聽感直接。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力有 Dylan 自傳等記述佐證，但缺少足以列為樂史核心的跨來源長期共識，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "明尼阿波利斯的 Spider John Koerner、Dave「Snaker」Ray 與 Tony「Little Sun」Glover 於 1962 年組團，1963 年由 Elektra 發行首作。兩把吉他加一支口琴，把戰前 country blues 與 rag 曲目重唱得生猛直接；Bob Dylan 在自傳中寫下 Glover 的口琴「捧在手裡吹，像 Sonny Terry 或 Little Walter」。MB 把 1964 年續作與首作併為同一 release group。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Koerner,_Ray_%26_Glover",
+          "https://musicbrainz.org/release-group/cd554594-cfaf-3489-b182-0705d6b6c853"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "MB first-release-date 1963-06，與 Wikipedia 所載 1963 年 Elektra 首作一致；併刻的續作為 1964 年。",
+        "mbTitle": "Blues, Rags & Hollers + Lots More Blues, Rags & Hollers",
+        "mbArtist": "Koerner, Ray & Glover",
+        "mbFirstRelease": "1963-06",
+        "upcNote": "Blues, Rags & Hollers (1995 GB)",
+        "curatorWhy": "明尼蘇達三人組，60 年代白人原音藍調復興起爆點，影響 Dylan 世代",
+        "curatorRisk": "MB 僅有與續作合刻的 RG（1963-06 與 2004 兩筆，primary=Album 無 Compilation 次類型）；若釘不到可改用同藝人 1964〈[Lots More] Blues, Rags and Hollers〉"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Big Walter Horton",
+      "album": "The Soul of Blues Harmonica",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "2ea14990-225d-38c9-a0aa-365d850b7c0f",
+        "upc": "4988005840295",
+        "exceptionReason": "戰後芝加哥口琴語彙的權威文獻，Horton 生涯唯一具份量的個人結集，MB 標 Album+Compilation。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Big_Walter_Horton",
+          "https://musicbrainz.org/release-group/2ea14990-225d-38c9-a0aa-365d850b7c0f"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片用 MB credit 的 Big Walter Horton；1964 年 Argo 原盤封面印 Shakey Horton，為其公認綽號（另有 Shakey Head、Mumbles、Tangle Eye），同一人。已釘定 1964 Big Walter Horton 的 RG（釋出 a8271069，1964 US、Argo 12 吋），避開輸入所警示的 1987 年 Shakey Horton 同名條目。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2ea14990-225d-38c9-a0aa-365d850b7c0f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被 Robert Palmer 列為現代藍調三大口琴獨奏者之一，但個人盤流通有限；器樂為主、聽感不刁難。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "本人地位極高，此盤卻未見名榜單或名人堂等專輯級跨來源共識，暫列 classic 4 不進殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Walter Horton（1921–1981）綽號 Shakey，是戰後 Chicago blues 少數長期以側錄樂手身分立足的口琴宗師。Willie Dixon 稱他是「我聽過最好的口琴手」，Robert Palmer 則把他與 Little Walter、Sonny Boy Williamson II 並列為現代藍調三大口琴獨奏者。1964 年 Argo 廠這套結集是他首張掛名個人盤，〈Groove Walk〉〈Wrinkles〉可聽見他招牌的 tongue-blocking 音色。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Big_Walter_Horton",
+          "https://musicbrainz.org/release-group/2ea14990-225d-38c9-a0aa-365d850b7c0f"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/25/ca/da/25cadad4-3381-f418-cebe-16cafcac57a7/mzaf_15644610065298897258.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1568141841,
+        "appleCollectionName": "The Soul Of Blues Harmonica"
+      },
+      "research": {
+        "suggestedYear": 1964,
+        "yearNote": "MB first-release-date 1964 與該 RG 唯一釋出（1964 US Argo）一致，Wikipedia 亦記為 1964 年 Argo 首張個人盤。",
+        "mbTitle": "The Soul of Blues Harmonica",
+        "mbArtist": "Big Walter Horton",
+        "mbFirstRelease": "1964",
+        "upcNote": "The Soul of Blues Harmonica (2014 JP)",
+        "curatorWhy": "芝加哥口琴宗師罕見的 Argo 個人盤，Willie Dixon 製作",
+        "curatorRisk": "MB 該 RG 標 Album+Compilation；另有 1987 掛名 Shakey Horton 的同名條目，須釘 1964 Big Walter Horton 那筆"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Lowell Fulson",
+      "album": "The Tramp Years",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "ef505a5d-616b-4004-afb7-317fa60af5a6",
+        "upc": "029667175524",
+        "exceptionReason": "西岸藍調轉入放克的關鍵錄音群，1967 原盤未建檔，此為該批錄音最權威的單一入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Lowell_Fulson",
+          "https://musicbrainz.org/release-group/ef505a5d-616b-4004-afb7-317fa60af5a6"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片用 MB credit 的 Lowell Fulson；封面印 LOWELL FULSOM，Wikipedia 記載他因合約因素曾以 Lowell Fulsom、Lowell Fullsom 名義錄音，同一人。該 RG 僅一筆釋出（2000 GB，Kent／Ace），無同名混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ef505a5d-616b-4004-afb7-317fa60af5a6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；West Coast blues 核心人物 Kent 時期的關鍵錄音群，僅以此結集流通；放克化節奏好入耳但非大眾曲目。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人地位穩固，但此結集屬後製回顧輯，缺乏專輯級的跨來源長期共識，不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Lowell Fulson（1921–1999）繼 T-Bone Walker 之後，被視為四、五○年代 West Coast blues 最重要的人物。Kent 時期是他晚期的高峰：1965 年〈Black Nights〉是睽違十年的熱門曲，登上告示牌 R&B 榜第 11 名；1967 年與 Jimmy McCracklin 合寫的〈Tramp〉衝到第 5 名，同年由 Otis Redding 與 Carla Thomas 翻唱成名。廠牌因合約因素把他的名字印成 Fulsom。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Lowell_Fulson",
+          "https://musicbrainz.org/release-group/ef505a5d-616b-4004-afb7-317fa60af5a6"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "1967 年 Kent 原盤《Tramp》無獨立 RG，卡片指的是 2000 年 Kent／Ace 結集，MB 首發日 2000 即該結集本身的發行年，非年份陷阱。",
+        "mbTitle": "The Tramp Years",
+        "mbArtist": "Lowell Fulson",
+        "mbFirstRelease": "2000",
+        "upcNote": "The Tramp Years (2000 GB)",
+        "curatorWhy": "Kent 時期〈Tramp〉〈Black Nights〉等西岸藍調跨放克代表作的結集",
+        "curatorRisk": "MB 只有此 Kent 時期結集（Album+Compilation），1967 原盤《Tramp》無獨立 RG"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Bembeya Jazz National",
+      "album": "The Syliphone Years",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "b37a1d19-2866-3037-9a3a-2dee7e473bb4",
+        "upc": "740042302129",
+        "exceptionReason": "Syliphone 國營廠牌時期最重要的官方回顧輯，西非國家樂團年代的標準入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Bembeya_Jazz_National",
+          "https://musicbrainz.org/release-group/b37a1d19-2866-3037-9a3a-2dee7e473bb4"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Bembeya Jazz National，封面亦同；同 RG 底下另有 2007 年英版與 2022 年數位分卷 Vol 1／Vol 2，均為同一結集的不同版本，非他團同名作。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b37a1d19-2866-3037-9a3a-2dee7e473bb4/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；幾內亞國營樂團年代最重要的官方回顧輯，非洲音樂深度愛好者領域；舞曲節奏明確，聽感不難。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在西非音樂研究中份量足夠，但缺少足以列入樂史核心的跨來源長期共識，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1961 年成立於幾內亞貝拉，是 Sékou Touré 政府「authenticité」政策下解散民間樂隊、改設國營樂團的產物；1974 年前的錄音全數交給國家廠牌 Syliphone。Stern's Africa 在 2004 年把這批母帶編成雙碟，收〈République Guinée〉〈Dembaty galant〉等曲，可聽見出身曼丁格里奧世家的吉他手 Sékou「Diamond Fingers」Diabaté，如何把傳統旋律搬上電吉他。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Bembeya_Jazz_National",
+          "https://musicbrainz.org/release-group/b37a1d19-2866-3037-9a3a-2dee7e473bb4"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/fb/6a/9efb6a26-d505-4a95-5f96-fa57e467f445/mzaf_18379679771969118052.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1314923841,
+        "appleCollectionName": "The Syliphone Years: Hits and Rare Recordings, Vol. 1"
+      },
+      "research": {
+        "suggestedYear": 2004,
+        "yearNote": "MB 首發 2004-12（Stern's Africa，STCD 3021）為此結集初版；Wikipedia 條目提到的 2009 年應為後續版本，採 2004。",
+        "mbTitle": "The Syliphone Years",
+        "mbArtist": "Bembeya Jazz National",
+        "mbFirstRelease": "2004-12",
+        "upcNote": "The Syliphone Years (2004-12 )",
+        "curatorWhy": "幾內亞國家樂團 Syliphone 時期精華，含〈Regard sur le passé〉組曲",
+        "curatorRisk": "MB 的 1968 原盤 primary-type 未設定；此 Sterns 雙碟為 Album+Compilation 的合格條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Dollar Brand",
+      "album": "Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d78a1ce8-cc86-42ce-95a0-d0eae89886a0",
+        "upc": "8436539313014",
+        "aliasesChecked": true,
+        "aliasReview": "卡片依 MB credit 用 Dollar Brand，即 Abdullah Ibrahim 改名前的藝名；Jazz Epistles 在 MB 為另一藝人條目，但此合刻 RG 掛在 Dollar Brand 名下，非誤配。該 RG 僅一筆釋出（2015-10-05，XE），無同名混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d78a1ce8-cc86-42ce-95a0-d0eae89886a0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；南非第一張黑人樂團專輯的錄音，史料價值高但原盤稀有、僅收藏家與研究者接觸；bebop 語彙較長且錄音粗礪。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "南非爵士史上的開端錄音，惟國際性的跨來源專輯級共識有限，classic 評 4 不進殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "合刻兩份南非爵士的早期錄音：Dollar Brand（1968 年改名 Abdullah Ibrahim）的《Dollar Brand Plays Sphere Jazz》，以及 Jazz Epistles 的《Jazz Epistle, Verse 1》——1959 年錄下、公認是南非第一張由黑人樂團錄製的專輯，陣容有 Kippie Moeketsi、Jonas Gwangwa、Hugh Masekela、Johnny Gertze 與 Makaya Ntshoko。1960 年沙佩維爾屠殺後爵士演出遭禁，團員相繼流亡海外。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Jazz_Epistles",
+          "https://musicbrainz.org/release-group/d78a1ce8-cc86-42ce-95a0-d0eae89886a0"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2015,
+        "yearNote": "錄音為 1959–60 年，兩張原盤皆無合格獨立 RG；卡片對應的是 2015-10-05 合刻重發，年份採該版本本身的發行年。",
+        "mbTitle": "Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1",
+        "mbArtist": "Dollar Brand",
+        "mbFirstRelease": "2015-10-05",
+        "upcNote": "Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1 (2015-10-05 XE)",
+        "curatorWhy": "南非史上第一張黑人爵士樂團專輯《Jazz Epistle: Verse 1》，Masekela 與 Ibrahim 同團",
+        "curatorRisk": "MB 掛 Dollar Brand 名下的合刻條目（Album+Compilation）；原 1960 Verse 1 無合格獨立 RG，年份採 MB 首發日 2015 以利釘定"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Mulatu Astatke & his Ethiopian Quintet",
+      "album": "Afro-Latin Soul",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "4603e9a9-680c-3626-bd29-4080db364297",
+        "upc": "",
+        "exceptionReason": "Ethio-jazz 誕生前夜的原始錄音，MB 標為合輯但內容即 1966 年原盤，是衣索比亞現代音樂史的起點文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Mulatu_Astatke",
+          "https://musicbrainz.org/release-group/4603e9a9-680c-3626-bd29-4080db364297"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片依 MB 的完整團名寫法 Mulatu Astatke & his Ethiopian Quintet（封面僅印 ETHIOPIAN QUINTET）；已釘定 1966 年 RG，避開 Vol. 2 與 2018 年合併版條目。該 RG 底下為 1966 US 原盤與 2005 年美版重發。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4603e9a9-680c-3626-bd29-4080db364297/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ethio-jazz 成形前夜的最早錄音，史料地位明確但屬深度愛好者領域；拉丁節奏鋪底，入耳不難。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "作為起點文獻價值高，惟公認代表作多指向後來的 Éthiopiques 第四卷，此盤未達殿堂級共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Mulatu Astatke 1943 年生於吉馬，先後就讀倫敦 Trinity College of Music 與波士頓 Berklee（該校第一位非洲學生），日後以 Ethio-jazz 概括自己的做法。1966 年他在紐約以 Ethiopian Quintet 名義錄下最早的一批曲目：vibraphone、conga 與拉丁節奏鋪底，旋律走衣索比亞音階，除一首西班牙語演唱外全為器樂。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mulatu_Astatke",
+          "https://musicbrainz.org/release-group/4603e9a9-680c-3626-bd29-4080db364297"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "MB first-release-date 1966 與 Wikipedia 所載 1966 年紐約錄音、發行一致；同 RG 的 2005 年釋出為重發。",
+        "mbTitle": "Afro-Latin Soul",
+        "mbArtist": "Mulatu Astatke & his Ethiopian Quintet",
+        "mbFirstRelease": "1966",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "Ethio-jazz 之父最早期紐約錄音，拉丁與衣索比亞音階的初次交會",
+        "curatorRisk": "MB 標 Album+Compilation；藝人須用 MB 的完整團名寫法，另有 Vol. 2 與 2018 合併版須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Mahmoud Ahmed",
+      "album": "Éthiopiques 6: Almaz",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "103603f7-2adb-3157-bd8f-07c593795e81",
+        "upc": "3307518297920",
+        "exceptionReason": "1973 年 Kaifa 原盤未建檔，此卷是該批黃金年代錄音唯一完整且權威的重發入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://en.wikipedia.org/wiki/Mahmoud_Ahmed"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Mahmoud Ahmed（阿姆哈拉語轉寫，另見 Mahmoud Ahmed Ahmed 等寫法，此處採 MB 拼法）。已確認 MB 唯一 Almaz 條目即 Éthiopiques 第六卷，與池內既有的《Ere Mela Mela》（第七卷所收 1975 年錄音）為不同錄音群。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/103603f7-2adb-3157-bd8f-07c593795e81/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；衣索比亞黃金年代最常被引用的錄音之一，Éthiopiques 系列讓它成為標準入口；歌唱旋律強，聽感親近。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在衣索比亞音樂領域份量足夠，但跨來源的樂史核心共識多集中在系列整體而非單卷，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Mahmoud Ahmed 1941 年生於阿迪斯阿貝巴 Mercato 區，原是 Arizona Club 的雜工，1962 年某晚代唱後留在皇家禁衛軍樂隊直到 1974 年。Buda Musique 的 Éthiopiques 系列由 Francis Falceto 編纂，專收 Amha、Kaifa、Philips-Ethiopia 等廠牌在 60、70 年代的母帶；第六卷收的是他 1973 年與 Ibex Band 合作的《Almaz》，2007 年他獲 BBC 世界音樂獎。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mahmoud_Ahmed",
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1999,
+        "yearNote": "原盤《Almaz》為 1973 年 Kaifa 出品但未建檔；卡片指的是 1999-05-17 的 Éthiopiques 第六卷，年份採此重發版，與 MB 首發日一致。",
+        "mbTitle": "Éthiopiques 6: Almaz",
+        "mbArtist": "Mahmoud Ahmed",
+        "mbFirstRelease": "1999-05-17",
+        "upcNote": "Éthiopiques 6: Almaz (1999-05-17 FR)",
+        "curatorWhy": "衣索比亞黃金年代之聲，與 Ibex Band 的 1973 Kaifa 名盤《Almaz》全曲",
+        "curatorRisk": "MB 唯一 Almaz 條目即此卷（Album+Compilation）；1973 原盤未建檔。池內已有《Ere Mela Mela》但為不同錄音群"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Violeta Parra",
+      "album": "Canciones reencontradas en París",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "421468f3-0dff-41db-b17d-5325de561a71",
+        "upc": "7808745902633",
+        "exceptionReason": "巴黎時期錄音在她生前未曾發行，此結集是這批歌曲唯一的權威來源。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Violeta_Parra",
+          "https://musicbrainz.org/release-group/421468f3-0dff-41db-b17d-5325de561a71"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Violeta Parra；題名大小寫依 MB 作 Canciones reencontradas en París。已釘定 1971-01 智利版 RG，該 RG 另含 1974／1978 年改題《Un río de sangre》與 1992 年《El hombre con su razón》等同內容異題版本，非他人作品。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/421468f3-0dff-41db-b17d-5325de561a71/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "寫作 agent 判 wrong：CAA 圖印的題名是《Un río de sangre》。查證後確認那是同一 release-group 底下 1978 年西班牙版的封面，曲目相同（第 8 軌即〈Un río de sangre corre〉，異題由此而來），並非配到別張碟；該 RG 只有這一組封面，1971 智利首版無圖。沿用此圖，店主本機可換原版封面"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；nueva canción chilena 源頭人物的巴黎錄音，拉美以外屬深度愛好者領域；人聲加吉他，編制素樸。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "本人在拉美樂史地位極高，但此結集的跨來源專輯級共識不及《Las últimas composiciones》，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Violeta Parra（1917–1967）以採集智利民間歌謠起家，被視為 nueva canción chilena 的源頭。1962 年起旅居巴黎，在當地錄下一批農民歌謠與抗議歌曲，她辭世後才於 1971 年成盤，收〈Arauco tiene una pena〉〈Según el favor del viento〉〈La carta〉等曲。1974、1978 年的法國與西班牙版改題《Un río de sangre》，曲目相同。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Violeta_Parra",
+          "https://musicbrainz.org/release-group/421468f3-0dff-41db-b17d-5325de561a71"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/89/8d/6e898d66-bdeb-298c-f972-1293176a92e4/mzaf_5943516718786373174.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 597727915,
+        "appleCollectionName": "Canciones Reencontradas en París"
+      },
+      "research": {
+        "suggestedYear": 1971,
+        "yearNote": "錄音為 1962–65 年巴黎時期，Wikipedia 記為「1971 年才出版」，與 MB 首發 1971-01（智利首版）一致。",
+        "mbTitle": "Canciones reencontradas en París",
+        "mbArtist": "Violeta Parra",
+        "mbFirstRelease": "1971-01",
+        "upcNote": "Canciones reencontradas en París (2010 CL)",
+        "curatorWhy": "巴黎時期錄音結集，智利新歌謠之母的關鍵曲目群",
+        "curatorRisk": "MB 有兩筆，須釘 1971-01 那筆（Album+Compilation）；另一筆 primary-type 未設定。題名大小寫依 MB 作小寫"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Lord Kitchener",
+      "album": "Klassic Kitchener, Volume 1",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "9ed32909-1f8a-3ad9-92e6-260c71e2ecb1",
+        "upc": "780563918027",
+        "exceptionReason": "Kitchener 的錄音多以單曲流通，Ice 廠這套結集是他曲目最有系統的權威入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Lord_Kitchener_(calypsonian)",
+          "https://musicbrainz.org/release-group/9ed32909-1f8a-3ad9-92e6-260c71e2ecb1"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片用藝名 Lord Kitchener（本名 Aldwyn Roberts），與 MB credit 一致；需與英國同名的 Kitchener 勛爵歷史人物區別，MB 藝人條目為千里達 calypsonian 無誤。已釘定 Volume 1（1993，ICE 691802），避開 Volume 2／3。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/9ed32909-1f8a-3ad9-92e6-260c71e2ecb1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；加勒比流行樂史核心人物的主要結集，但華語圈與一般玩家少見；calypso 節奏與唱腔直白好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Kitchener 本人地位無疑，此結集屬廠牌整理性質，未見專輯級的跨來源長期共識，不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Aldwyn Roberts（1922–2000）以 Lord Kitchener 之名出道，1948 年隨 Empire Windrush 抵達提伯利碼頭，在 Pathé 新聞鏡頭前唱出〈London Is the Place for Me〉，成為戰後加勒比移民的代表畫面。1962 年返回千里達後，他在 1963 至 1976 年間拿下十次 Road March 冠軍，至今無人能及。Ice 廠 1993 年這套結集的第一卷即整理他這段時期的 calypso 錄音。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Lord_Kitchener_(calypsonian)",
+          "https://musicbrainz.org/release-group/9ed32909-1f8a-3ad9-92e6-260c71e2ecb1"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1993,
+        "yearNote": "MB first-release-date 1993 即該 RG 唯一釋出（ICE 廠，編號 691802）的發行年，錄音本身為 1948–70 年代。",
+        "mbTitle": "Klassic Kitchener, Volume 1",
+        "mbArtist": "Lord Kitchener",
+        "mbFirstRelease": "1993",
+        "upcNote": "Klassic Kitchener, Volume 1 (1993 )",
+        "curatorWhy": "road march 之王的經典 calypso 結集，加勒比流行樂史核心人物",
+        "curatorRisk": "MB 有 Volume 1/2/3 三卷，須釘 Volume 1（1993, Album+Compilation）"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Connie Converse",
+      "album": "How Sad, How Lovely",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "821fd0fc-3533-409b-86db-01f38a1fb451",
+        "upc": "813195020032",
+        "exceptionReason": "1950 年代家庭錄音在她生前從未發行，這套 2009 年結集是這批創作唯一的正式出版。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Connie_Converse",
+          "https://musicbrainz.org/release-group/821fd0fc-3533-409b-86db-01f38a1fb451"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡片用她自取的藝名 Connie Converse，本名 Elizabeth Eaton Converse，MB credit 亦作 Connie Converse。MB 該藝人僅此一組 RG，無同名混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/821fd0fc-3533-409b-86db-01f38a1fb451/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；改寫創作歌手起源敘事的出土錄音，2009 年後才被聽見，屬深度愛好者領域；人聲加吉他，錄音粗但旋律好懂。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "出土後評價高，但地位形成僅十餘年，尚無足以列為民謠史核心的長期跨來源共識；本環境取不到 listeners，pearl 一律不評。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Elizabeth Eaton Converse（1924 年生）在 1950 年代的紐約自彈自唱寫歌，錄音多由動畫家 Gene Deitch 在住處錄下，公開演出僅 1954 年 CBS《The Morning Show》一次。1974 年 8 月她留下數封信、開車離家後從此下落不明。2004 年 Deitch 的帶子在 WNYC 播出，2009 年才彙整成十七首發行，開場曲〈Talkin' Like You (Two Tall Mountains)〉是流傳最廣的一首。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Connie_Converse",
+          "https://musicbrainz.org/release-group/821fd0fc-3533-409b-86db-01f38a1fb451"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/b2/da/7bb2dadb-f3a8-86c2-6a95-14da7b07e5ff/mzaf_10187834904968979273.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1866697273,
+        "appleCollectionName": "How Sad, How Lovely"
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "錄音為 1950 年代家庭錄音；MB 首發 2009-03-05 即初次結集發行（Lau derette），2015 年 Squirrel Thing 版為重發，採 2009。",
+        "mbTitle": "How Sad, How Lovely",
+        "mbArtist": "Connie Converse",
+        "mbFirstRelease": "2009-03-05",
+        "upcNote": "How Sad, How Lovely (2015 US)",
+        "curatorWhy": "1950 年代最早的 singer-songwriter，失蹤詩人半世紀後的出土錄音",
+        "curatorRisk": "MB 唯一條目 821fd0fc 為 Album+Compilation（1950s 家庭錄音 2009 年結集），無其他非合輯 RG"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Sweeney’s Men",
+      "album": "The Legend of Sweeney’s Men: Anthology",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "a0f1f424-323b-42f1-8b3d-90fcf4a41e24",
+        "upc": "5014757930041",
+        "exceptionReason": "1968、1969 兩張原盤皆未建檔，此雙碟收齊全部錄音室錄音，是該團唯一的權威入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Sweeney%27s_Men",
+          "https://musicbrainz.org/release-group/a0f1f424-323b-42f1-8b3d-90fcf4a41e24"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "藝人名依 MB 用彎引號寫法 Sweeney’s Men（直引號 Sweeney's Men 為同一團），卡片已照 MB。該團在 MB 的 RG 全為 Compilation，1968 年同名首作無獨立條目，故釘此 Anthology，非誤配他團。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/a0f1f424-323b-42f1-8b3d-90fcf4a41e24/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；愛爾蘭民謠復興與布祖基琴引進的原點團體，但錄音量少、流通有限；歌謠形式單純，聽感平易。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力主要透過 Planxty、Steeleye Span 等後續團體延伸，團體本身的專輯級跨來源共識不足以列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1966 年 5 月由 Johnny Moynihan、Andy Irvine 與「Galway Joe」Dolan 組成，1967 年 6 月 Terry Woods 接替 Dolan。Moynihan 把希臘 bouzouki 引進愛爾蘭傳統樂並改用 GDAD 調弦，此後成為愛爾蘭民謠的常備配置。團體只留下 1968 年同名首作與 1969 年《The Tracks of Sweeney》；散團後 Irvine 進 Planxty，Woods 先後進 Steeleye Span 與 The Pogues。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Sweeney%27s_Men",
+          "https://musicbrainz.org/release-group/a0f1f424-323b-42f1-8b3d-90fcf4a41e24"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2004,
+        "yearNote": "MB first-release-date 1988 指的是同 RG 底下的單張 LP《The Legend of Sweeney’s Men》；卡片題名與封面對應的是 2004 年 Castle Music 雙碟《…: Anthology》（CMDDD932），Wikipedia 亦記為 2004 年雙碟，故建議 2004。",
+        "mbTitle": "The Legend of Sweeney’s Men: Anthology",
+        "mbArtist": "Sweeney’s Men",
+        "mbFirstRelease": "1988",
+        "upcNote": "The Legend of Sweeney’s Men (1988 GB)",
+        "curatorWhy": "Irvine/Moynihan/Woods 陣容，愛爾蘭民謠復興與布祖基琴引進的原點",
+        "curatorRisk": "MB 該藝人全部 RG 皆為 Compilation，1968 同名首張無獨立條目；藝人名用 MB 的彎引號寫法 Sweeney’s Men"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Little Walter",
+      "album": "The Best of Little Walter",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "16bad57a-456a-3579-92ca-651411e71a9e",
+        "upc": "07673291921",
+        "exceptionReason": "戰後電氣藍調口琴的奠基錄音，Chess／Checker 單曲時代最權威的單張結集，也是他生前唯一專輯。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Little_Walter",
+          "https://en.wikipedia.org/wiki/Little_Walter"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Little Walter（本名 Marion Walter Jacobs），封面亦同；已釘定 1957 年初版 RG（釋出 6151d0ee，Checker LP-1428），避開 Volume Two 與 1967／1986／2004 等重發條目。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/16bad57a-456a-3579-92ca-651411e71a9e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》500 大第 198 名、藍調基金會名人堂選入，戰後電氣藍調的奠基錄音；單曲結集短小、旋律直接。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "2003 年《滾石》500 大專輯第 198 名、1991 年入選藍調基金會名人堂「Classics of Blues Recordings – Album」，錄音者本人 2008 年以唯一口琴手身分入選搖滾名人堂，跨來源長期共識明確。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Little_Walter",
+          "https://en.wikipedia.org/wiki/Little_Walter"
+        ]
+      },
+      "description": {
+        "text": "Checker 廠 1957 年編號 LP-1428 的單曲結集，是 Marion Walter Jacobs（1930–1968）生前發行的唯一專輯，收 1952 至 1955 年間十首打進告示牌 R&B 榜前十的錄音與兩首 B 面。他把麥克風連同口琴一起捧在掌心送進擴大機，刻意逼出破音；〈Juke〉在該榜連冠八週，至今仍是唯一登頂的口琴器樂曲。2003 年《滾石》把此盤列為 500 大專輯第 198 名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Little_Walter",
+          "https://en.wikipedia.org/wiki/Little_Walter"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ee/ad/33/eead33a1-bcbb-ddb6-97c6-d2adc55d6a67/mzaf_7049489761607964114.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1648821776,
+        "appleCollectionName": "The Best Of Little Walter"
+      },
+      "research": {
+        "suggestedYear": 1957,
+        "yearNote": "MB first-release-date 1957 與 Wikipedia 所載 Checker LP-1428 首版一致；同 RG 後續 1967 至 2017 年釋出皆為重發。",
+        "mbTitle": "The Best of Little Walter",
+        "mbArtist": "Little Walter",
+        "mbFirstRelease": "1957",
+        "upcNote": "The Best of Little Walter (1986 US)",
+        "curatorWhy": "放大器口琴的定義之作，〈Juke〉〈My Babe〉等 Chess 單曲結集",
+        "curatorRisk": "MB 已驗證存在（Album+Compilation）；另有 Volume Two 須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Sonny Boy Williamson II",
+      "album": "The Real Folk Blues",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "5fa654f2-c9a0-337e-8c1b-9593a2f088d4",
+        "upc": "076732927229",
+        "exceptionReason": "Chess／Checker 時期口琴傳奇的官方結集，Aleck Miller 生前錄音唯一成系列的權威整理，也是六〇年代英美樂團翻唱曲目的直接來源。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+          "https://musicbrainz.org/release-group/5fa654f2-c9a0-337e-8c1b-9593a2f088d4"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 作 Sonny Boy Williamson（無 II），卡片用 Sonny Boy Williamson II 以區別 1948 年遇害的芝加哥同名前輩 John Lee Curtis Williamson；本人本名 Aleck／Rice Miller，Apple 已標 II。Chess《The Real Folk Blues》系列另有 Howlin' Wolf、Muddy Waters 等同名卷，本筆曲目〈One Way Out〉〈Bring It On Home〉確認掛在 Miller 名下。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5fa654f2-c9a0-337e-8c1b-9593a2f088d4/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess/Checker 時期口琴傳奇的官方代表結集，戰後芝加哥藍調的主要作品，曲目直白好入耳，藍調樂迷常見但非入門常客。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Aleck Miller 地位穩固，但這套 1965 年 Chess 結集屬廠牌系列企劃之一，缺乏跨來源長期共識把它列為藍調史上核心文獻，故不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Chess 在 1965 年為口琴手 Aleck「Rice」Miller 集結的十二首 Checker 時期錄音，〈One Way Out〉〈Bring It On Home〉〈Checkin' Up On My Baby〉都在其中。他 1941 年在 King Biscuit Time 電台起家，1955 年後為 Checker 留下約七十首歌，六〇年代初赴歐與 Yardbirds、Animals 同台。口琴走短句與留白，唱腔懶散帶刺，是英美樂團翻唱藍調的教材來源。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+          "https://musicbrainz.org/release-group/5fa654f2-c9a0-337e-8c1b-9593a2f088d4"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b0/14/91/b0149121-4216-4899-d87f-b66f9107fe9d/mzaf_21112762343595008.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1436914341,
+        "appleCollectionName": "The Real Folk Blues"
+      },
+      "research": {
+        "suggestedYear": 1965,
+        "yearNote": "MB RG first-release 1965、Apple 標 1965-04-09（Chess LP-1503），兩者一致；策展表填的 1966 應是與續集《More Real Folk Blues》(1966) 混淆。",
+        "mbTitle": "The Real Folk Blues",
+        "mbArtist": "Sonny Boy Williamson",
+        "mbFirstRelease": "1965",
+        "upcNote": "The Real Folk Blues (1990 US)",
+        "curatorWhy": "Chess 晚期單曲結集，〈One Way Out〉〈Bring It On Home〉出處",
+        "curatorRisk": "Chess 的 Real Folk Blues 系列多位藝人同名，須確認掛在 Sonny Boy Williamson II 名下"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Elmore James",
+      "album": "The Sky Is Crying",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "7136f352-a101-34f8-82aa-347b8357a552",
+        "upc": "8712273470160",
+        "exceptionReason": "Elmore James 生前未發過錄音室專輯，Fire／Enjoy 時期錄音只能靠身後結集流通，1965 年 Sphere Sound 版是最早成形的一種。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Elmore_James",
+          "https://musicbrainz.org/release-group/7136f352-a101-34f8-82aa-347b8357a552"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與 Apple 皆 credit Elmore James，但 1965 年 Sphere Sound 封面印的是別名 Elmo James，屬同一人而非另一藝人，卡片沿用 Elmore James 正確。Apple 候選中的 Stevie Ray Vaughan 1991 年同名專輯與 Gary B.B. Coleman 單曲皆已排除。無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/f7/55/57f75516-a75b-3681-ddbd-ddabbf369cc5/LM25000677.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1840878032）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滑管語法的源頭人物，但這套 1965 年 Sphere Sound 結集流通量遠低於後來的 Rhino 版，屬深度愛好者領域；曲子短、旋律直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Elmore James 本人足列名人堂，但本 RG 是 Sphere Sound／Charly 一脈的早期結集，不是跨來源公認的權威整理，故頂點資格不成立。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Elmore James 生前沒有正規錄音室專輯，1963 年過世後，Sphere Sound 於 1965 年以他的別名「Elmo James」集結 Fire／Enjoy 時期單曲成輯，〈The Sky Is Crying〉〈I Done Somebody Wrong〉〈Rollin' and Tumblin'〉〈One Way Out〉與重錄版〈Dust My Broom〉並列。開放調弦的滑管推到破音邊緣，配上 Broomdusters 的緊實節奏，後來成為 Jimi Hendrix、Duane Allman 的共同參照。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Elmore_James",
+          "https://musicbrainz.org/release-group/7136f352-a101-34f8-82aa-347b8357a552"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/f3/58/72f358c2-4930-a2b1-2064-258e0bcb448b/mzaf_14927189107302272106.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1840878032,
+        "appleCollectionName": "The Sky Is Crying"
+      },
+      "research": {
+        "suggestedYear": 1965,
+        "yearNote": "Wikipedia 記 Sphere Sound 於 1965 年發行同名結集，Apple 標 ℗1965 Sphere Sound 相符；MB RG first-release 2000 是 Charly 的英國 CD 重發年，非初版年。",
+        "mbTitle": "The Sky Is Crying",
+        "mbArtist": "Elmore James",
+        "mbFirstRelease": "2000",
+        "upcNote": "The Sky Is Crying (2000 GB)",
+        "curatorWhy": "滑管吉他之王的權威結集，戰後電氣藍調滑管語法的源頭",
+        "curatorRisk": "MB 同名 RG 有多筆（1992 Album、1993/1997/2000 Compilation），須以年份與曲目核對釘定"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Bessie Smith",
+      "album": "The Essential Bessie Smith",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "d8c3eec2-f73d-33f0-881b-09a5346a0a4e",
+        "upc": "074646492222",
+        "exceptionReason": "Columbia 以官方母帶重製的雙碟，是藍調皇后一百六十首錄音中唯一實用的權威入口，古典女聲藍調的標準文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Bessie_Smith",
+          "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB／Apple 皆作 Bessie Smith，無異體或跨文字系統問題。須與市面上多套《Complete Recordings》與廉價 Essential 拼盤區分：本筆為 Columbia/Legacy 官方雙碟，Apple 三十六首曲目與正式碟數相符。無同名藝人混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；古典女聲藍調的定義者，搖滾名人堂與葛萊美終身成就雙重認證；官方雙碟精選流通廣，但 1920 年代蟲膠母源的音質對現代耳朵仍有門檻。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "Bessie Smith 1989 年同時入選搖滾名人堂與葛萊美終身成就獎，被公認為古典女聲藍調的核心人物，這套 Columbia 官方雙碟是其 1923–33 年錄音的標準文獻。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Bessie_Smith",
+          "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
+        ]
+      },
+      "description": {
+        "text": "Columbia／Legacy 於 1997 年推出的雙碟精選，從藍調皇后 1923 至 1933 年間約一百六十首 Columbia 錄音裡挑出三十六首：與 Louis Armstrong 合作的〈St. Louis Blues〉、〈Backwater Blues〉、〈Nobody Knows You When You're Down and Out〉俱在。她的女低音不靠麥克風也能壓過整團，伴奏名單還有 Fletcher Henderson、James P. Johnson；1989 年入選搖滾名人堂。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Bessie_Smith",
+          "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/49/be/8b/49be8bc9-7730-88d5-0dd2-5059b3e4eca4/mzaf_5808995447303499975.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 740001646,
+        "appleCollectionName": "The Essential Bessie Smith"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB RG first-release 1997-09-23、Apple 1997-08-27，兩者一致指向 Columbia/Legacy 1997 年雙碟初版；策展年份 1997 正確。",
+        "mbTitle": "The Essential Bessie Smith",
+        "mbArtist": "Bessie Smith",
+        "mbFirstRelease": "1997-09-23",
+        "upcNote": "The Essential Bessie Smith (1997-09-23 US)",
+        "curatorWhy": "藍調皇后 1923–33 錄音精華，含〈Downhearted Blues〉〈St. Louis Blues〉",
+        "curatorRisk": "MB 已驗證存在（Album+Compilation）；避開多套 Complete Recordings 與各式 Essential Classics 廉價包"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Ma Rainey",
+      "album": "Mother of the Blues",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "25390e26-80a4-442e-bb81-deb86a5e3d81",
+        "upc": "788065779320",
+        "exceptionReason": "JSP 五碟收齊 1923–28 年 Paramount 全部錄音並附 Max Haymes 考證，是女聲藍調源頭最完整的單一文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Ma_Rainey",
+          "https://musicbrainz.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB／Apple 皆作 Ma Rainey（本名 Gertrude Pridgett），無異體或跨文字系統問題。同題名另有 1998 年《Mother of the Blues: 1923-1928》與 2026 年《Mother of the Blues: The Complete Paramount Recordings 1923-1928》兩個 RG，本筆已釘定 2007 年 JSP 五碟版。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；錄音史上第一代職業藍調歌手，藍調名人堂與搖滾名人堂雙認證；但五碟全集規格與 Paramount 蟲膠盤的重雜訊，把它推向深度愛好者領域。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "Ma Rainey 1983 年入藍調名人堂、1990 年入搖滾名人堂，是女聲藍調傳統的源頭；此套 JSP 五碟收齊她 1923–28 年 Paramount 全部錄音，為該領域核心文獻。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Ma_Rainey",
+          "https://musicbrainz.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81"
+        ]
+      },
+      "description": {
+        "text": "JSP 在 2007 年以五碟規格收齊藍調之母 1923 至 1928 年的 Paramount 錄音，〈Bo-Weavil Blues〉〈See See Rider Blues〉〈Ma Rainey's Black Bottom〉〈Prove It on Me Blues〉與多組替換版本俱在。她由 Paramount 製作人 J. Mayo Williams 發掘，五年間錄下九十餘個曲目，伴奏名單有 Louis Armstrong、Coleman Hawkins 與 Tommy Ladnier。母源來自蟲膠唱片，雜訊重而唱腔厚實。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Ma_Rainey",
+          "https://musicbrainz.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "MB RG 與其唯一 release 皆為 2007 年 JSP Records 英國五碟版，與封面文案（Max Haymes 編註、111 sides）相符；策展年份 2007 正確。",
+        "mbTitle": "Mother of the Blues",
+        "mbArtist": "Ma Rainey",
+        "mbFirstRelease": "2007",
+        "upcNote": "Mother of the Blues (2007 GB)",
+        "curatorWhy": "藍調之母 1923–28 Paramount 錄音，女聲藍調傳統的源頭",
+        "curatorRisk": "MB 已驗證存在（Album+Compilation）；同藝人另有多套 Complete Recorded Works 須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Blind Willie McTell",
+      "album": "The Definitive Blind Willie McTell",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "5faee05b-4238-3e84-b10b-372e552e1a66",
+        "upc": "074645323428",
+        "exceptionReason": "Legacy 雙碟集中 McTell 1929–35 年 Columbia 系統錄音，是東南部 songster 與十二弦傳統最完整的個人文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Willie_McTell",
+          "https://musicbrainz.org/release-group/5faee05b-4238-3e84-b10b-372e552e1a66"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與封面皆作 Blind Willie McTell（本名 William Samuel McTier），與卡片一致。他錄音時用過 Blind Sammie、Georgia Bill、Hot Shot Willie 等化名，MB 上另有以化名歸檔的條目，本筆為本名主條目，無混淆。無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5faee05b-4238-3e84-b10b-372e552e1a66/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十二弦與亞特蘭大 songster 傳統的頂點人物，Legacy 官方雙碟是標準個人文獻；戰前單聲道母源與大量替換版本讓入耳門檻中等。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "McTell 1981 年入藍調名人堂、影響 Allman Brothers 與 Bob Dylan，地位明確，但本雙碟僅涵蓋 Columbia 系統母帶（不含 1928 年 Victor 版〈Statesboro Blues〉），未達跨來源公認的完整核心文獻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Legacy 在 1994 年整理的雙碟，收錄十二弦吉他手 1929 至 1935 年為 Columbia、Okeh、Vocalion 系統留下的錄音，〈Atlanta Strut〉〈Southern Can Is Mine〉〈Georgia Rag〉〈Broke Down Engine〉與多組替換版本並置。McTell 一生錄過約一百二十首歌，因合約限制而用過 Blind Sammie、Georgia Bill 等化名；他從未有過暢銷唱片，卻讓 Bob Dylan 在 1983 年寫下同名的〈Blind Willie McTell〉。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Willie_McTell",
+          "https://musicbrainz.org/release-group/5faee05b-4238-3e84-b10b-372e552e1a66"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "MB RG first-release 1994，其唯一 release 為 1994 年美國 Legacy 雙碟，與策展年份一致。",
+        "mbTitle": "The Definitive Blind Willie McTell",
+        "mbArtist": "Blind Willie McTell",
+        "mbFirstRelease": "1994",
+        "upcNote": "The Definitive Blind Willie McTell (1994 US)",
+        "curatorWhy": "十二弦吉他與亞特蘭大 songster 傳統的巔峰，〈Statesboro Blues〉出處",
+        "curatorRisk": "戰前藝人結集版本眾多，若 Definitive 釘不到可考慮 Yazoo《The Early Years 1927-1933》"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Charley Patton",
+      "album": "Founder of the Delta Blues",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "05277d2a-5b15-3158-bf88-acfd24a7d1c1",
+        "upc": "",
+        "exceptionReason": "Yazoo 以蟲膠原盤翻製三角洲開山者的全部代表錄音，長期被當作 Patton 作品的標準入口與該流派的起源文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Charley_Patton",
+          "https://musicbrainz.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與封面皆作 Charley Patton，與卡片一致；市面另有 Charlie Patton 拼法（Apple 候選中即有《The Best of Charlie Patton》），為同一人。與同名的其他樂手無混淆，無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三角洲藍調的開山者，藍調名人堂、搖滾名人堂早期影響與國家錄音登記簿三重認證；但 1929–34 年蟲膠翻製、含糊唱詞與粗礪敲擊節奏，入耳門檻高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "Patton 1980 年入藍調名人堂、2021 年入搖滾名人堂早期影響類，〈Pony Blues〉2006 年進美國國家錄音登記簿；Yazoo 這套結集長期被當作他作品的標準入口，屬三角洲藍調的起源文獻。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Charley_Patton",
+          "https://musicbrainz.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "description": {
+        "text": "Yazoo 從三角洲藍調開山者 1929 至 1934 年的 Paramount 與 Vocalion 蟲膠原盤翻製的結集，〈Pony Blues〉〈High Water Everywhere〉〈Screamin' and Hollerin' the Blues〉〈A Spoonful Blues〉〈Down the Dirt Road Blues〉俱在。Patton 的沙啞喉音與敲擊式節奏吉他直接餵養了 Son House、Howlin' Wolf 與 Robert Johnson；〈Pony Blues〉2006 年入選美國國家錄音登記簿。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Charley_Patton",
+          "https://musicbrainz.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9f/a4/b6/9fa4b6ca-96b6-2254-49a1-d42cebefb816/mzaf_328798735521858995.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1568084037,
+        "appleCollectionName": "Founder of the Delta Blues (2010 Remasters)"
+      },
+      "research": {
+        "suggestedYear": 1970,
+        "yearNote": "Yazoo L-1020 原始 LP 通行紀年 1970（封面標 1929–1934），與策展年份一致；Apple 標 1971、MB RG first-release 1989 均為後續 CD／重製標記（Yazoo 1987 年被 Shanachie 收購）。年份存在來源分歧，採 LP 年份上架。",
+        "mbTitle": "Founder of the Delta Blues",
+        "mbArtist": "Charley Patton",
+        "mbFirstRelease": "1989",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "三角洲藍調的開山者，Son House 與 Howlin' Wolf 的共同源頭",
+        "curatorRisk": "Yazoo 經典結集，MB 可能同時有 1970 LP 與後續 CD 條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Blind Lemon Jefferson",
+      "album": "King of the Country Blues",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "b84cc337-db05-3ac7-b706-09c40fdbaa20",
+        "upc": "016351016928",
+        "exceptionReason": "Yazoo 精選德州藍調原型人物的 Paramount 錄音，是唱片工業第一位賣座男聲鄉村藍調歌手的權威入門結集。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
+          "https://musicbrainz.org/release-group/b84cc337-db05-3ac7-b706-09c40fdbaa20",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB、Apple 與封面一致作 Blind Lemon Jefferson，與卡片相同，無別名或跨文字系統問題。須與 Document 的《Complete Recorded Works》全集系列區分，本筆為 Yazoo 二十三首精選。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b84cc337-db05-3ac7-b706-09c40fdbaa20/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一位賣座的男聲鄉村藍調歌手、德州藍調原型，Yazoo 精選是標準入口；高亢嗓音配不規則小節與 1920 年代母源，入耳門檻高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Jefferson 1980 年名列藍調名人堂首屆，影響 T-Bone Walker、Lead Belly 與 B.B. King，地位接近門檻，但缺國家登記簿或名人堂級的跨來源認證把這套結集列為史上核心，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Yazoo 在 1985 年集結德州藍調原型人物的 Paramount 錄音二十三首，〈Matchbox Blues〉〈See That My Grave Is Kept Clean〉〈One Dime Blues〉〈Rabbit Foot Blues〉都在其中。Jefferson 1926 至 1929 年間發行的四十三張唱片有四十二張出自 Paramount，是唱片工業裡第一位大量賣座的男聲鄉村藍調歌手；高亢嗓音配上快速跑句與不規則小節，同代人難以模仿，B.B. King 稱他為最大影響之一。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson",
+          "https://musicbrainz.org/release-group/b84cc337-db05-3ac7-b706-09c40fdbaa20",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/90/8f/81/908f81e5-66bf-9c67-9b62-507a5ac88717/mzaf_14400589084459980601.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1569131061,
+        "appleCollectionName": "King of the Country Blues"
+      },
+      "research": {
+        "suggestedYear": 1985,
+        "yearNote": "Apple 標 ℗1985 Shanachie，與策展年份及 Yazoo L-1069 原始 LP 一致；MB RG first-release 1990-10-08 為 CD 重發年。",
+        "mbTitle": "King of the Country Blues",
+        "mbArtist": "Blind Lemon Jefferson",
+        "mbFirstRelease": "1990-10-08",
+        "upcNote": "King of the Country Blues (1990-10-08 US)",
+        "curatorWhy": "第一位商業成功的男聲鄉村藍調歌手，德州藍調的原型",
+        "curatorRisk": "Yazoo 雙碟；MB 亦可能有 Document 的 Complete Recorded Works 系列須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Memphis Minnie",
+      "album": "Hoodoo Lady (1933-1937)",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "222e1218-8e5b-3940-8458-f4bf6b50b035",
+        "upc": "074644677522",
+        "exceptionReason": "Columbia Roots N' Blues 以官方母帶整理戰前最重要女性藍調吉他手的關鍵五年，記錄戰前指法到芝加哥電氣化的過渡。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Memphis_Minnie",
+          "https://musicbrainz.org/release-group/222e1218-8e5b-3940-8458-f4bf6b50b035"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與 Apple 皆作 Memphis Minnie（本名 Lizzie Douglas），與卡片一致。她早期唱片多以 Kansas Joe & Memphis Minnie 二人名義發行，本結集為她個人名義的 1933–37 年錄音，無混淆；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/222e1218-8e5b-3940-8458-f4bf6b50b035/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；戰前最重要的女性藍調吉他手，Columbia 官方系列整理的關鍵五年；曲子短、節奏明快，入耳容易。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Memphis Minnie 1980 年入藍調名人堂，地位明確，但這套只涵蓋她 1933–37 年 Vocalion／Columbia 一段，非跨來源公認的史上核心文獻，故不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Columbia 的 Roots N' Blues 系列在 1991 年整理出 Lizzie Douglas 1933 至 1937 年的二十首錄音，〈Hoodoo Lady〉〈Down in the Alley〉〈My Butcher Man〉〈If You See My Rooster〉都在其中。Big Bill Broonzy 說她彈唱不輸他聽過的任何男人；她 1929 年起與 Kansas Joe McCoy 搭檔，1941 年改用電吉他，把戰前指法推進到芝加哥電氣藍調的門口。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Memphis_Minnie",
+          "https://musicbrainz.org/release-group/222e1218-8e5b-3940-8458-f4bf6b50b035"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/aa/2c/91aa2c41-65dd-bc4b-a2b2-13a8a4a0ef31/mzaf_17580449587877863183.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 193112459,
+        "appleCollectionName": "Hoodoo Lady (1933-1937)"
+      },
+      "research": {
+        "suggestedYear": 1991,
+        "yearNote": "MB RG first-release 1991、Apple 1991-04-15（℗1991 Sony Music）一致，與策展年份相同。",
+        "mbTitle": "Hoodoo Lady (1933-1937)",
+        "mbArtist": "Memphis Minnie",
+        "mbFirstRelease": "1991",
+        "upcNote": "Hoodoo Lady (1933-1937) (1991 US)",
+        "curatorWhy": "戰前最重要的女性藍調吉他手與詞人，電氣化前後的橋樑",
+        "curatorRisk": "Columbia Roots N' Blues 系列；同藝人另有多套 Document 全集須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Blind Blake",
+      "album": "Ragtime Guitar's Foremost Fingerpicker",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "a2cd59e0-61dd-3e1c-9196-035b49d91cb3",
+        "upc": "016351016829",
+        "exceptionReason": "Yazoo 這套結集是 ragtime 指彈吉他技法的標準文獻，Blake 全部錄音僅約八十面且原盤多已散佚。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Blake",
+          "https://musicbrainz.org/release-group/a2cd59e0-61dd-3e1c-9196-035b49d91cb3",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB、Apple 與封面一致作 Blind Blake（推定本名 Arthur Blake，封面簽名作 Blind Arthur），與卡片相同。與同名的當代雷鬼／流行藝人無關，MB 條目為戰前藍調的 Blind Blake 主條目；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/a2cd59e0-61dd-3e1c-9196-035b49d91cb3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ragtime 指彈的宗師與 Piedmont 技法源頭，但生平幾乎空白、僅存約八十面錄音，屬深度愛好者領域；演奏明快，母源雜訊是主要門檻。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Blake 的指法被 Reverend Gary Davis、John Fahey、Ry Cooder 承接，技術地位公認，但缺名人堂或登記簿層級的跨來源認證，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Yazoo 挑出 Blind Blake 1926 至 1932 年在 Paramount 錄的二十三首，〈Diddie Wa Diddie〉〈Police Dog Blues〉〈Southern Rag〉〈Blind Arthur's Breakdown〉展示他把 ragtime 鋼琴的切分搬上吉他的手法。他一生只留下約八十面錄音，Paramount 破產後行蹤成謎，1934 年病逝於密爾瓦基；Big Bill Broonzy 說他一把吉他聽起來像一整個樂團，Reverend Gary Davis、John Fahey、Ry Cooder 都承其技法。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Blake",
+          "https://musicbrainz.org/release-group/a2cd59e0-61dd-3e1c-9196-035b49d91cb3",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/b7/57/d9b75781-9965-3684-0509-38133695f280/mzaf_14882483292953075586.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1569161877,
+        "appleCollectionName": "Ragtime Guitar's Foremost Fingerpicker"
+      },
+      "research": {
+        "suggestedYear": 1984,
+        "yearNote": "策展表記 Yazoo L-1068 原始 LP 為 1984，與同系列 L-1069（1985）編號相鄰可互相參照；MB RG first-release 1987 與 Apple 1990（℗2005 Shanachie）皆為 Shanachie 1987 年收購 Yazoo 後的 CD 重發標記。三來源分歧，採 LP 年份；若組裝器要求單一可查證來源，退用 1987。",
+        "mbTitle": "Ragtime Guitar's Foremost Fingerpicker",
+        "mbArtist": "Blind Blake",
+        "mbFirstRelease": "1987",
+        "upcNote": "Ragtime Guitar’s Foremost Fingerpicker (1990 US)",
+        "curatorWhy": "東岸 ragtime 指彈的宗師，Piedmont 吉他技法的源頭",
+        "curatorRisk": "Yazoo 結集；戰前藝人條目在 MB 常僅存 Document 全集版本"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Mississippi Sheiks",
+      "album": "Stop and Listen",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "0360d170-3043-3d35-862b-c18ce502dd55",
+        "upc": "016351200624",
+        "exceptionReason": "Yazoo 結集保存黑人弦樂團傳統唯一暢銷的錄音群，〈Sitting on Top of the World〉是藍調與鄉村共用的曲目源頭。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Mississippi_Sheiks",
+          "https://musicbrainz.org/release-group/0360d170-3043-3d35-862b-c18ce502dd55",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB、Apple 與封面一致作 Mississippi Sheiks，為團名而非個人。核心成員 Lonnie Chatmon、Walter Vinson、Bo Carter（Armenter Chatmon）在 MB 各有個人條目，本筆為團體條目，無混淆；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0360d170-3043-3d35-862b-c18ce502dd55/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；黑人弦樂團傳統唯一暢銷的錄音群，〈Sitting on Top of the World〉的原唱；團體本身知名度低於單曲，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "〈Sitting on Top of the World〉2008 年入葛萊美名人堂、2018 年進國家錄音登記簿，但榮譽集中在單曲而非樂團或本結集，樂團地位未達史上核心共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Yazoo 從 Chatmon 家族班底 1930 年代前半的錄音裡選出二十首，〈Sitting on Top of the World〉〈The World Is Going Wrong〉〈I've Got Blood in My Eyes for You〉並列。核心成員 Lonnie Chatmon、Walter Vinson 與 Bo Carter 用小提琴配吉他，總共錄過約七十首，是戰前唱片工業裡罕見暢銷的黑人弦樂團；〈Sitting on Top of the World〉2008 年入葛萊美名人堂、2018 年進美國國家錄音登記簿。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Mississippi_Sheiks",
+          "https://musicbrainz.org/release-group/0360d170-3043-3d35-862b-c18ce502dd55",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/8d/27/828d274d-08a9-ebc2-37f9-db7a18d70e7d/mzaf_2053652675578837450.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1569167493,
+        "appleCollectionName": "Stop and Listen"
+      },
+      "research": {
+        "suggestedYear": 1992,
+        "yearNote": "MB RG first-release 1992-07-14 與 Apple 1992（℗1992 Shanachie）一致，對應封面上的 Yazoo 2006 CD；MB 另有 1974 年同名 LP 的獨立 RG（ccfe8cf4），本筆未採用。",
+        "mbTitle": "Stop and Listen",
+        "mbArtist": "Mississippi Sheiks",
+        "mbFirstRelease": "1992-07-14",
+        "upcNote": "Stop and Listen (1992-07-14 US)",
+        "curatorWhy": "戰前弦樂團傳統代表，〈Sitting on Top of the World〉原唱",
+        "curatorRisk": "Yazoo 結集；亦可能有 1990 LP 與 CD 兩種條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Tampa Red",
+      "album": "The Guitar Wizard",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "88adc806-32ee-4db1-abab-b7f7daa61ee1",
+        "upc": "074645323527",
+        "exceptionReason": "Columbia Roots N' Blues 官方整理 Tampa Red 的 Vocalion 時期錄音，是 hokum 開山曲與戰前芝加哥藍調的原始文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Tampa_Red",
+          "https://musicbrainz.org/release-group/88adc806-32ee-4db1-abab-b7f7daa61ee1"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與封面皆作 Tampa Red（本名 Hudson Whittaker，出生名 Hudson Woodbridge），與卡片一致。同題名另有 RCA/Bluebird《The Guitar Wizard: 1935-1953》與 Blues Collection 版本，本筆已用曲目（Vocalion 時期十七首）確認為 Columbia/Legacy 1994 年版；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/88adc806-32ee-4db1-abab-b7f7daa61ee1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；戰前錄音量最大的藍調藝人與 hokum 開山者，Columbia 官方整理其 Vocalion 時期；曲子輕快好入耳，但今日聽眾稀少。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Tampa Red 的滑管手法被 Muddy Waters 與 Elmore James 承接、錄音量居戰前之冠，地位明確，但本結集僅涵蓋 Vocalion 一段，未達跨來源公認的史上核心文獻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Columbia 的 Roots N' Blues 系列在 1994 年整理 Hudson Whittaker 的 Vocalion 時期錄音十七首，開頭就是他與 Georgia Tom Dorsey 1928 年賣破百萬的 hokum 名曲〈(Honey) It's Tight Like That〉，〈Black Angel Blues〉隨後。他是第一位使用 National 金屬共鳴吉他的黑人樂手，單弦瓶頸滑管手法後來被 Muddy Waters 與 Elmore James 承接；1928 至 1942 年間錄下二百五十一首，居戰前藍調之冠。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Tampa_Red",
+          "https://musicbrainz.org/release-group/88adc806-32ee-4db1-abab-b7f7daa61ee1"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "MB RG first-release 1994，其 release 為 1994 年美國 Columbia／Legacy 版，曲目為 Vocalion 時期十七首；策展表填的 1975 指的是 RCA/Bluebird 另一套同名結集（MB 另有 8b399cd7《The Guitar Wizard: 1935-1953》），與本 RG 不同。",
+        "mbTitle": "The Guitar Wizard",
+        "mbArtist": "Tampa Red",
+        "mbFirstRelease": "1994",
+        "upcNote": "The Guitar Wizard (1994 US)",
+        "curatorWhy": "滑管吉他先驅與 hokum 之父，芝加哥藍調戰前中樞人物",
+        "curatorRisk": "同名結集有 RCA/Bluebird 與 Columbia 等多種版本，須核對曲目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Blind Boy Fuller",
+      "album": "Truckin' My Blues Away",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "c5721500-2b39-3700-87d5-43d835dc17e1",
+        "upc": "0163510260279",
+        "exceptionReason": "Yazoo 結集是 Piedmont 藍調商業高峰的標準入口，Fuller 一百二十餘面錄音的代表切片。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Boy_Fuller",
+          "https://musicbrainz.org/release-group/c5721500-2b39-3700-87d5-43d835dc17e1",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 與封面一致作 Blind Boy Fuller（本名 Fulton Allen），與卡片相同。須排除 Blind Boy Fuller No. 2（Brownie McGhee 早期沿用的藝名），本筆為原始 Fuller 的 1935–40 年錄音；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c5721500-2b39-3700-87d5-43d835dc17e1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Piedmont 藍調戰前銷量之王，Yazoo 結集是標準入口；交替低音指法輕快好入耳，但今日屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Fuller 是 Piedmont 商業高峰的代表、Brownie McGhee 一脈的源頭，地位清楚，但缺名人堂或國家登記簿層級的跨來源認證，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Yazoo 從 Fulton Allen 1935 至 1940 年的一百二十餘面錄音裡選出十四首，同名曲〈Truckin' My Blues Away〉〈Weeping Willow〉〈Meat Shakin' Woman〉呈現 Piedmont 交替低音指法的商業高峰。他常與口琴手 Sonny Terry 搭檔，1941 年早逝後由學徒 Brownie McGhee 錄下〈The Death of Blind Boy Fuller〉；〈Truckin' My Blues Away〉一句歌詞後來啟發了 Robert Crumb 的漫畫。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Blind_Boy_Fuller",
+          "https://musicbrainz.org/release-group/c5721500-2b39-3700-87d5-43d835dc17e1",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1991,
+        "yearNote": "MB RG first-release 1991-03-12，對應 Yazoo 美國 CD；同 RG 另有一張無日期的 Yazoo release（推測為 L-1060 原始 LP，一般紀為 1970 年代末），MB 未標日期故不採。策展年份 1991 一致。",
+        "mbTitle": "Truckin' My Blues Away",
+        "mbArtist": "Blind Boy Fuller",
+        "mbFirstRelease": "1991-03-12",
+        "upcNote": "Truckin' My Blues Away (? US)",
+        "curatorWhy": "Piedmont 藍調戰前銷量之王，影響 Brownie McGhee 一脈",
+        "curatorRisk": "Yazoo 結集；MB 可能同時有 1978 LP 與 1991 CD 條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Skip James",
+      "album": "The Complete Early Recordings of Skip James",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "17a104a6-ff4b-492a-b772-26b0aa0142a3",
+        "upc": "016351200921",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 作 Skip James（本名 Nehemiah Curtis James），與卡片一致；差異在題名而非藝名——MB RG 題名為《Complete 1931 Recordings》，店主採用的《The Complete Early Recordings of Skip James》是同 RG 底下 1994 與 2001 年 Yazoo 版的實體題名。須與 1960 年代重錄的《Devil Got My Woman》區分，非同批錄音；無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/17a104a6-ff4b-492a-b772-26b0aa0142a3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1931 年 Paramount 全部錄音，open D-minor 調弦配假聲的孤例，戰前三角洲最獨特的個人風格；陰冷小調與蟲膠母源讓入耳門檻偏高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "1931 年這批 Paramount 錄音是戰前藍調公認的核心文獻，〈Devil Got My Woman〉2020 年入葛萊美名人堂，1964 年 James 被重新發掘更直接觸發美國藍調復興，跨來源共識充分。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Skip_James",
+          "https://musicbrainz.org/release-group/17a104a6-ff4b-492a-b772-26b0aa0142a3",
+          "https://en.wikipedia.org/wiki/Yazoo_Records"
+        ]
+      },
+      "description": {
+        "text": "Nehemiah Curtis James 在 1931 年前往威斯康辛州 Grafton 為 Paramount 錄下的全部曲目，〈Devil Got My Woman〉〈Hard Time Killing Floor Blues〉〈I'm So Glad〉〈22-20 Blues〉都在其中。他用 Henry Stuckey 傳下的 open D-minor 調弦配假聲高音，唱出戰前三角洲最陰冷的聲響。這批唱片因大蕭條滯銷，他轉去教會帶詩班；直到 1964 年 John Fahey 等人在醫院找到他、送上新港民謠節，錄音才真正流通。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Skip_James",
+          "https://musicbrainz.org/release-group/17a104a6-ff4b-492a-b772-26b0aa0142a3"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "MB RG first-release 標 1990，但卡片題名對應的是同 RG 內 1994 年美國 Yazoo 版，故填 1994；1990 為更早的同內容發行，2001 年另有 Yazoo 重發。",
+        "mbTitle": "Complete 1931 Recordings",
+        "mbArtist": "Skip James",
+        "mbFirstRelease": "1990",
+        "upcNote": "The Complete Early Recordings of Skip James (1994 US)",
+        "curatorWhy": "1931 Paramount 全部錄音，D-minor 調弦與異色嗓音的孤例",
+        "curatorRisk": "MB 題名可能作《The Complete Early Recordings of Skip James》，須以藝人＋年份核對；池內《Devil Got My Woman》為 1960 年代重錄，非同批錄音"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Muddy Waters",
+      "album": "The Best of Muddy Waters",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "53a41b1c-9f5d-3873-a90a-16bdc50ca915",
+        "upc": "076731126821",
+        "exceptionReason": "芝加哥電氣藍調最重要的一批單曲首度成輯，是 Chess 首張藝人 LP，也是戰後藍調轉入搖滾的公認正典入口，藍調基金會名人堂 1983 年列為經典藍調錄音。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Muddy_Waters",
+          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+          "https://musicbrainz.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Muddy Waters（本名 McKinley Morganfield，卡片不採本名）。同名結集眾多，已以 Chess LP 1427／MB first-release 1958-04 那筆釘定；1969 年 Chess 重排曲序改題《Sail On》屬同批錄音的另一包裝，不混用。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 1,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess 第一張 Muddy LP，芝加哥電氣藍調單曲群的定義性結集，1983 年入藍調基金會名人堂；入門常客，曲式直白但錄音粗礪。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "藍調基金會名人堂 1983 年以「經典藍調錄音」名義列入，且為 Chess 首張藝人 LP、戰後芝加哥藍調的定義文獻，跨來源長期共識足列該領域核心。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Muddy_Waters",
+          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+          "https://musicbrainz.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915"
+        ]
+      },
+      "description": {
+        "text": "Chess 1958 年 4 月發行，Muddy Waters 的首張 LP，十二首曲目原為 1948 至 1954 年的單曲，多數進過 Billboard 節奏藍調榜前十。Little Walter 的口琴、Otis Spann 的鋼琴、Jimmy Rogers 的第二吉他撐起 Chicago blues 的標準編制，解說由 Studs Terkel 執筆。1983 年獲藍調基金會名人堂列為經典藍調錄音。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Muddy_Waters",
+          "https://musicbrainz.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ae/b6/d7/aeb6d78b-2ba9-6a8f-7bbc-4da50b513876/mzaf_448397558813735822.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1445668056,
+        "appleCollectionName": "The Best of Muddy Waters"
+      },
+      "research": {
+        "suggestedYear": 1958,
+        "yearNote": "MB first-release-date 1958-04 與 Wikipedia「released by Chess Records in April 1958」一致，封面 Chess LP 1427 亦為 1958 原盤，故取 1958；1987 Chess/MCA CD 與其後多次重發不採。",
+        "mbTitle": "The Best of Muddy Waters",
+        "mbArtist": "Muddy Waters",
+        "mbFirstRelease": "1958-04",
+        "upcNote": "The Best of Muddy Waters (1987 US)",
+        "curatorWhy": "Chess 首張 Muddy LP，芝加哥電氣藍調的定義性單曲群",
+        "curatorRisk": "同名結集後世重發極多，須釘 1958 Chess LP 那筆"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Howlin' Wolf",
+      "album": "The Real Folk Blues",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "28f17879-d3ae-3c03-be5e-04825895730e",
+        "upc": "076732927328",
+        "exceptionReason": "Chess 在藍調復興期為單曲藝人整編的權威系列，Wolf 這張被視為系列最佳，且收的是他較少被反覆選輯的側面錄音。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Real_Folk_Blues_(Howlin%27_Wolf_album)",
+          "https://en.wikipedia.org/wiki/The_Real_Folk_Blues",
+          "https://musicbrainz.org/release-group/28f17879-d3ae-3c03-be5e-04825895730e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 作 Howlin’ Wolf（彎引號），卡片用直引號 Howlin' Wolf，同一人（Chester Burnett），僅標點差異。系列同名混淆已排查：Muddy Waters、Sonny Boy Williamson II、John Lee Hooker、Memphis Slim 各有同題唱片，本筆為 Chess LP-1502 的 Wolf 版；池內《Moanin' in the Moonlight》與 1962 年同名專輯為不同曲目群。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/28f17879-d3ae-3c03-be5e-04825895730e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess Real Folk Blues 系列公認最好的一張，Wolf 的代表單曲群；大牌藝人的次級入口，曲目短促直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "系列內評價最高，但論長期跨來源共識仍不及《Moanin' in the Moonlight》與 1962 年同名專輯，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Chess 於 1965 至 1967 年為旗下藍調藝人推出的同名系列之一，由 Marshall Chess 策劃，回應英倫入侵後湧現的藍調聽眾。十二首錄音成於芝加哥 1956 至 1965 年，〈Killing Floor〉開場，〈Tail Dragger〉〈Built for Comfort〉出自 Willie Dixon 之手，Hubert Sumlin 幾乎全程司吉他，Buddy Guy 客串四曲。選曲刻意偏向少被收錄的側面。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Real_Folk_Blues_(Howlin%27_Wolf_album)",
+          "https://en.wikipedia.org/wiki/The_Real_Folk_Blues",
+          "https://musicbrainz.org/release-group/28f17879-d3ae-3c03-be5e-04825895730e"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1965,
+        "yearNote": "MB 唯一美版 release 記 1966-01，但 Wikipedia 專輯條目與系列條目皆記 Chess LP-1502 為 1965 年（系列中 1966 年 1 月者為 Sonny Boy Williamson II 的 LP-1503）。採 1965，若店主偏好 MB 標記可改 1966。",
+        "mbTitle": "The Real Folk Blues",
+        "mbArtist": "Howlin’ Wolf",
+        "mbFirstRelease": "1966-01",
+        "upcNote": "The Real Folk Blues (1987 US)",
+        "curatorWhy": "Chess 單曲結集，〈Smokestack Lightnin'〉〈Killing Floor〉一線曲目",
+        "curatorRisk": "Chess 同系列多位藝人同名；池內已有《Moanin' in the Moonlight》與同名 1962 專輯，本張為不同曲目群"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Chuck Berry",
+      "album": "The Great Twenty-Eight",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "d7da8113-a582-3656-9412-74e17a9a447e",
+        "upc": "076741250028",
+        "exceptionReason": "搖滾樂形成期最重要的單一結集，《滾石》五百大三版皆入榜且為榜上名次最高的合輯之一，長年被當作 Chuck Berry 的正典入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Great_Twenty-Eight",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/d7da8113-a582-3656-9412-74e17a9a447e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB RG 題名用連字符變體 The Great Twenty‐Eight（U+2010），卡片用一般連字號，同一物。已避開 2000 年《Anthology》雙碟（曲目全數重疊）與 2017 Geffen Super Deluxe 重發；本 RG 底下四筆 release 皆為 1982–1984 原始版本。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d7da8113-a582-3656-9412-74e17a9a447e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 1,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大 2003 年第二十一名、2020 年第五十一名，是榜上排名最高的合輯之一；旋律直白、人人撞得到。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "《滾石》五百大專輯三個版本皆入榜且名次極高，為榜上僅次於《The Sun Sessions》的合輯，搖滾詞曲與吉他語法的公認定本，跨來源共識穩固。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Great_Twenty-Eight",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/d7da8113-a582-3656-9412-74e17a9a447e"
+        ]
+      },
+      "description": {
+        "text": "1982 年 Chess 發行的雙唱片，收 Chuck Berry 在 Chess 頭十年的二十一首單曲、六首 B 面與一首取自《Chuck Berry in London》的專輯曲。其中十一首曾進 Billboard 節奏藍調榜前十。〈Maybellene〉〈Too Much Monkey Business〉依年序排開，Johnnie Johnson 的鋼琴貫穿全輯。2003 年《滾石》五百大專輯列第二十一名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Great_Twenty-Eight",
+          "https://musicbrainz.org/release-group/d7da8113-a582-3656-9412-74e17a9a447e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/3b/4b/be3b4b84-26fc-f29d-b7c7-c6a54b754212/mzaf_10490868372534307612.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1738561694,
+        "appleCollectionName": "The Great Twenty-Eight"
+      },
+      "research": {
+        "suggestedYear": 1982,
+        "yearNote": "MB first-release-date 1982 與 Wikipedia「released in 1982 on Chess Records」一致；2017 Geffen 黑膠重發與 Super Deluxe 版屬後續包裝，不改年份。",
+        "mbTitle": "The Great Twenty‐Eight",
+        "mbArtist": "Chuck Berry",
+        "mbFirstRelease": "1982",
+        "upcNote": "The Great Twenty‐Eight (1984 US)",
+        "curatorWhy": "搖滾樂詞曲與吉他語法的定本，Chess 時期 28 首經典",
+        "curatorRisk": "MB 有多次重發與 Super Deluxe 版，須釘 1982 原輯"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Bo Diddley",
+      "album": "His Best",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "22c455ab-a541-336e-a7c6-531fccf7a592",
+        "upc": "076732937327",
+        "exceptionReason": "Bo Diddley beat 這組節奏型的原始錄音群，Chess 五十週年考古系列的權威單碟整編，非促銷拼盤。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/His_Best_(Bo_Diddley_album)",
+          "https://en.wikipedia.org/wiki/Bo_Diddley_beat",
+          "https://musicbrainz.org/release-group/22c455ab-a541-336e-a7c6-531fccf7a592"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Bo Diddley（本名 Ellas McDaniel）。已與 1958 年同名首張專輯《Bo Diddley》區隔：後者是早期單曲結集的另一路，本筆為 1997 Chess/MCA 五十週年系列的 His Best，並非同物。2007 年《The Definitive Collection》為同內容換封面重發。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/22c455ab-a541-336e-a7c6-531fccf7a592/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess 五十週年系列中 Bo Diddley 的標準單碟入口，收錄他 1955–1967 年幾乎全部排行榜曲目；節奏強烈但旋律好認。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "錄音本身地位極高，但這個 1997 年包裝本身未見跨來源長期共識，且同批錄音另有 2007 年《The Definitive Collection》等版本並存。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Chess 五十週年系列 1997 年 4 月推出的選輯，依錄音年序排開 Bo Diddley 從 1955 年〈Bo Diddley〉到 1967 年〈Ooh Baby〉的排行榜曲目。〈I'm a Man〉〈Pretty Thing〉標定了那組被稱為 Bo Diddley beat 的切分節奏，Jerome Green 的 maracas 是關鍵聲響，Little Walter 在〈Diddley Daddy〉吹口琴。2007 年 Geffen 換封面重發為《The Definitive Collection》。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/His_Best_(Bo_Diddley_album)",
+          "https://en.wikipedia.org/wiki/Bo_Diddley_beat",
+          "https://musicbrainz.org/release-group/22c455ab-a541-336e-a7c6-531fccf7a592"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fd/89/eb/fd89eb41-380b-ef2c-7c79-a8cb3b988629/mzaf_2576540307465140924.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1423325110,
+        "appleCollectionName": "His Best"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB first-release-date 記 1997-01-01（明顯為年份佔位），Wikipedia 記 Chess/MCA 於 1997 年 4 月 8 日發行，MB 亦有 1997-04-08 美加兩筆 release，故年份取 1997。",
+        "mbTitle": "His Best",
+        "mbArtist": "Bo Diddley",
+        "mbFirstRelease": "1997-01-01",
+        "upcNote": "His Best (1997 XE)",
+        "curatorWhy": "Bo Diddley beat 的完整樣本，非洲節奏進入搖滾的通道",
+        "curatorRisk": "Chess 50th Anniversary 系列；早期同名專輯《Bo Diddley》亦屬單曲結集，兩者須擇一釘定"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Guitar Slim",
+      "album": "Sufferin' Mind",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "388912c7-8636-3340-92b5-d8526dea5e34",
+        "upc": "022211700722",
+        "exceptionReason": "電吉他破音音色最早的商業錄音群，Specialty 母帶的完整整編，此人錄音幾乎只以合輯形式流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Guitar_Slim",
+          "https://en.wikipedia.org/wiki/Specialty_Records",
+          "https://musicbrainz.org/release-group/388912c7-8636-3340-92b5-d8526dea5e34"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "已核對本尊為紐奧良的 Eddie Jones（1926–1959），非 Guitar Slim Green、Guitar Slim Jr. 等同綽號者；MB credit 與卡片同作 Guitar Slim，MB 該藝人條目底下即 Specialty 錄音。RG 僅一筆 1991-08-05 Specialty release，無同題混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/388912c7-8636-3340-92b5-d8526dea5e34/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Specialty 時期全錄音的權威整編，破音吉他的最早商業樣本；藝人早逝且非大眾名字，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "技術先驅地位明確，但作為結集缺乏名榜單或名人堂層級的跨來源共識，僅單曲〈The Things That I Used to Do〉入搖滾名人堂五百首歌名單。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Specialty 於 1991 年集結 Eddie Jones（藝名 Guitar Slim）1953 至 1955 年的錄音，共二十六首。〈The Things That I Used to Do〉由年輕的 Ray Charles 製作，1954 年登上 Billboard 節奏藍調榜冠軍並賣破百萬，列入搖滾名人堂「形塑搖滾的五百首歌」。他刻意把電吉他推入破音，比 Jimi Hendrix 早了十餘年，紐奧良的舞台作風同樣生猛。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Guitar_Slim",
+          "https://en.wikipedia.org/wiki/Specialty_Records",
+          "https://musicbrainz.org/release-group/388912c7-8636-3340-92b5-d8526dea5e34"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/c8/86/96c886c8-933c-dae2-1499-993c4b8a2164/mzaf_10426830141721721949.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1442969420,
+        "appleCollectionName": "Sufferin' Mind"
+      },
+      "research": {
+        "suggestedYear": 1991,
+        "yearNote": "MB first-release-date 1991-08-05（Specialty，RG 底下唯一 release）即此結集發行日；內含錄音為 1953–1955 年，兩者不可混為一談。",
+        "mbTitle": "Sufferin' Mind",
+        "mbArtist": "Guitar Slim",
+        "mbFirstRelease": "1991-08-05",
+        "upcNote": "Sufferin' Mind (1991-08-05 US)",
+        "curatorWhy": "破音吉他先驅，〈The Things That I Used to Do〉為 1954 年最大藍調單曲",
+        "curatorRisk": "Specialty 全集結集；藝人名同名者眾（Guitar Slim Green 等），須核對紐奧良 Eddie Jones 本尊"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Otis Rush",
+      "album": "The Classic Cobra Recordings 1956-1958",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "84da7f0e-4f77-32ec-b045-6952f30133c8",
+        "upc": "614475038583",
+        "exceptionReason": "芝加哥西城藍調風格的成形錄音，Cobra 廠牌全部單曲的權威整編，這批母帶只能以合輯形式取得。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Otis_Rush",
+          "https://en.wikipedia.org/wiki/Cobra_Records",
+          "https://musicbrainz.org/release-group/84da7f0e-4f77-32ec-b045-6952f30133c8"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Otis Rush，與卡片一致。RG 全名為《The Essential Otis Rush: The Classic Cobra Recordings 1956-1958》，卡片取副標，同一 RG 底下另有歐版《Good 'Un's: The Classic Cobra Recordings 1956-1958》與《The Complete Classic Cobra Recordings 1956-1958》，皆為同批錄音的異題發行，已確認非另一結集。池內 Otis Rush 其餘作品為 1960 年代後錄音。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/84da7f0e-4f77-32ec-b045-6952f30133c8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；West Side sound 的成形錄音、Otis Rush 生涯代表作，多首被英美搖滾樂團翻唱；屬樂迷領域而非大眾常客。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "錄音在戰後藍調吉他史上地位明確，但這批 Cobra 母帶另有《Good 'Un's》《The Complete Classic Cobra Recordings》等並行包裝，單一版本未累積殿堂級共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Otis Rush 1956 年由 Willie Dixon 相中簽進芝加哥小廠 Cobra，兩年間錄下奠定名聲的八張單曲。首發〈I Can't Quit You Baby〉當年攻上 Billboard 節奏藍調榜第六名，〈All Your Love (I Miss Loving)〉〈Double Trouble〉隨後跟上，Ike Turner 與 Jody Williams 客串吉他。左手反弦、長推弦的彈法造就了 West Side sound。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Otis_Rush",
+          "https://en.wikipedia.org/wiki/Cobra_Records",
+          "https://musicbrainz.org/release-group/84da7f0e-4f77-32ec-b045-6952f30133c8"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB first-release-date 2000-09-19（Fuel 2000/Varèse 版）即此結集發行日；內含錄音為 1956–1958 年 Cobra 單曲，年份欄取結集年而非錄音年。",
+        "mbTitle": "The Essential Otis Rush: The Classic Cobra Recordings 1956-1958",
+        "mbArtist": "Otis Rush",
+        "mbFirstRelease": "2000-09-19",
+        "upcNote": "Good 'Un's: The Classic Cobra Recordings 1956-1958 (2000 XE)",
+        "curatorWhy": "西城藍調（West Side sound）的奠基錄音，〈I Can't Quit You Baby〉出處",
+        "curatorRisk": "MB 可能另有《The Cobra Recordings》等近似題名；池內 Otis Rush 諸作皆為後期錄音"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Lead Belly",
+      "album": "Where Did You Sleep Last Night: Lead Belly Legacy, Vol. 1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "452a5573-d496-3062-8ce2-c8e7afd399e4",
+        "upc": "093074004425",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 用 Lead Belly（分寫），與墓碑及 Lead Belly Foundation 一致；許多發行印作 Leadbelly，卡片採 MB 寫法。卷號寫法在 MB 內部不一致（本卷作 Vol. 1、系列第三卷作 Volume 3），卡片依 MB 用 Vol. 1。池內《Lead Belly's Last Sessions》為 1948 年另一批錄音，非同物。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/452a5573-d496-3062-8ce2-c8e7afd399e4/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Smithsonian Folkways 官方系列首卷，收美國民謠曲目庫的核心曲；藝人有名但此卷屬樂迷領域，演唱直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Lead Belly 本人地位無疑，但其 Folkways 錄音另有 Last Sessions 等多種整編並行，本卷未形成單一權威的跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Smithsonian Folkways 1996 年啟動的 Lead Belly Legacy 系列首卷，取自 Huddie Ledbetter 為 Folkways 留下的錄音，三十四首。〈Irene〉〈Take This Hammer〉〈Cotton Fields〉都是後來被反覆傳唱的民謠標準，〈In the Pines〉即〈Where Did You Sleep Last Night〉。十二弦吉他的低音走句與吼腔是他的招牌，1988 年入搖滾名人堂。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Lead_Belly",
+          "https://en.wikipedia.org/wiki/Smithsonian_Folkways",
+          "https://musicbrainz.org/release-group/452a5573-d496-3062-8ce2-c8e7afd399e4"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6f/05/11/6f05111b-ef8b-94a6-c92b-b760343ca6a4/mzaf_4017982375788094232.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 219637503,
+        "appleCollectionName": "Where Did You Sleep Last Night: Lead Belly Legacy, Vol. 1"
+      },
+      "research": {
+        "suggestedYear": 1996,
+        "yearNote": "MB first-release-date 1996-02-20（Smithsonian Folkways）即本卷發行日；2017-07-10 為數位重發。內含錄音為 1940 年代 Folkways 母帶。",
+        "mbTitle": "Where Did You Sleep Last Night: Lead Belly Legacy, Vol. 1",
+        "mbArtist": "Lead Belly",
+        "mbFirstRelease": "1996-02-20",
+        "upcNote": "Where Did You Sleep Last Night: Lead Belly Legacy, Vol. 1 (1996-02-20 US)",
+        "curatorWhy": "Folkways 錄音精選，美國民謠曲目庫的活字典",
+        "curatorRisk": "藝人名在 MB 有 Lead Belly / Leadbelly 兩種寫法；池內《Lead Belly's Last Sessions》為不同錄音群"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Anthology of American Folk Music",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "af0fb63b-0f62-36af-8871-07342b13d2d8",
+        "upc": "",
+        "exceptionReason": "美國民謠復興運動的核心文獻，戰前商業錄音再發現的起點，入國家錄音登記簿與《滾石》五百大。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Anthology_of_American_Folk_Music",
+          "https://en.wikipedia.org/wiki/National_Recording_Registry",
+          "https://musicbrainz.org/release-group/af0fb63b-0f62-36af-8871-07342b13d2d8"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Various Artists，編者 Harry Smith 不入藝人欄，與卡片一致。MB 另有 1952 年拆成三卷的 RG（Volume One: Ballads 等）與 1997 年的 Selections 精簡版、2000 年 Volume Four，本筆釘的是完整套裝那筆，非拆卷或選粹。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/af0fb63b-0f62-36af-8871-07342b13d2d8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大第二七六名、2005 年入國家錄音登記簿，公認點燃民謠復興；八十四首戰前 78 轉噪訊與古調唱腔有門檻。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "《滾石》五百大入榜、美國國會圖書館國家錄音登記簿收錄，並被普遍認定為五六○年代民謠復興的直接源頭，跨來源長期共識充分。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Anthology_of_American_Folk_Music",
+          "https://en.wikipedia.org/wiki/National_Recording_Registry",
+          "https://musicbrainz.org/release-group/af0fb63b-0f62-36af-8871-07342b13d2d8"
+        ]
+      },
+      "description": {
+        "text": "Harry Smith 從自藏的 78 轉唱片裡選出八十四首，1952 年 8 月由 Folkways 發行，分成 ballads、social music、songs 三輯。錄音全來自 1926 至 1933 年的商業發行，把戰前鄉村、藍調與福音的曲目庫重新推到聽眾面前，餵養了五○、六○年代的民謠復興。2005 年入選美國國會圖書館國家錄音登記簿。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Anthology_of_American_Folk_Music",
+          "https://musicbrainz.org/release-group/af0fb63b-0f62-36af-8871-07342b13d2d8"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1952,
+        "yearNote": "MB first-release-date 1997-08-19 指的是 Smithsonian Folkways 六碟重發（此 RG 底下僅 1997 與 2014 兩筆），Wikipedia 明載原輯 1952 年 8 月由 Folkways 發行。歷史年份取 1952；卡面封面為 1997 重發套裝，屬同一結集的權威重發。",
+        "mbTitle": "Anthology of American Folk Music",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1997-08-19",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "Harry Smith 編選的六張 LP，直接點燃 60 年代民謠復興",
+        "curatorRisk": "MB 掛 Various Artists；編者 Harry Smith 不作藝人欄，另有 1997 Smithsonian 重發條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Sounds of the South",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e9fe80ec-6bba-4182-b8ac-a69e3c337597",
+        "upc": "075678249624",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Various Artists，Alan Lomax 只出現在 RG 全名尾端的 Recorded in the Field by Alan Lomax，故藝人欄不掛 Lomax，與卡片一致。卡片採短題名，MB 全名過長不上卡面。已與 1960 年 Atlantic 單張原盤 RG（ee2221e1，primary=Album 無 Compilation）區隔。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e9fe80ec-6bba-4182-b8ac-a69e3c337597/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1959 年 Lomax 南方之旅的成套整編，美國南部最早的立體聲田野錄音、Fred McDowell 的發掘現場；四碟田野素材屬深度愛好者。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "史料價值高，但這趟旅程的錄音另有 Atlantic 1960 年原系列與 Rounder 的 Southern Journey 系列並行流通，本套裝未取得單一權威共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1959 年 Alan Lomax 與英國歌手 Shirley Collins 走訪美國南方各州，留下該地區最早的立體聲田野錄音，Mississippi Fred McDowell 也在這趟旅程中被發掘。Atlantic 1993 年把當年錄音整編成四碟，從喬治亞海島的合唱、Vera Hall 的無伴奏吶喊，到 Hobart Smith 的山歌與 The Mountain Ramblers 的弦樂團一併收入。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Southern_Journey",
+          "https://en.wikipedia.org/wiki/Mississippi_Fred_McDowell",
+          "https://musicbrainz.org/release-group/e9fe80ec-6bba-4182-b8ac-a69e3c337597"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d5/0b/2c/d50b2cd3-d0be-6107-5420-c241e11c9a96/mzaf_69982441891407134.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 459051919,
+        "appleCollectionName": "Sounds of the South"
+      },
+      "research": {
+        "suggestedYear": 1993,
+        "yearNote": "MB first-release-date 1993-07-20（Atlantic 四碟套裝，RG 底下唯一 release）即本套裝發行日；錄音為 1959 年，原始發行為 1960 年 Atlantic 的 Southern Folk Heritage 系列，本卡釘 1993 成套版。",
+        "mbTitle": "Sounds of the South: A Musical Journey From the Georgia Sea Islands to the Mississippi Delta. Recorded in the Field by Alan Lomax",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1993-07-20",
+        "upcNote": "Sounds of the South: A Musical Journey From the Georgia Sea Islands to the Mississippi Delta. Recorded in the Field by Alan Lomax (1993-07-20 US)",
+        "curatorWhy": "1959 年南方田野錄音，Fred McDowell 與 Bessie Jones 等人的發掘現場",
+        "curatorRisk": "MB 可能掛 Various Artists 而非 Alan Lomax；原為 1960 Atlantic 系列，1993 年成套四碟"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Alan Lomax",
+      "album": "Prison Songs, Volume 1: Murderous Home",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d53c6d86-d3ae-3d86-b2e5-a7057e5bd4f4",
+        "upc": "076637032622",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Alan Lomax（非 Various Artists），與卡片一致；演唱者為獄中受刑人，不另立藝人。MB RG 題名沿用 1958 年的 Negro Prison Songs From The Mississippi State Penitentiary，卡片採 1997 Rounder 版題名。已與同系列 Volume 2（Don'tcha Hear Poor Mother Calling?）區隔。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d53c6d86-d3ae-3d86-b2e5-a7057e5bd4f4/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；藍調前史的第一手獄中勞動歌錄音，長年被當成工作歌傳統的標準文獻；無伴奏、以工具落地聲為節拍，屬收藏與學術領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "文獻價值極高，但屬田野錄音類別而非樂史核心作品，且同批錄音另有 1958 Tradition 原盤與 Volume 2 並行，未達殿堂共識門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1947 至 1948 年 Alan Lomax 在密西西比州立監獄 Parchman Farm 錄下的獄中勞動歌，1958 年由 Tradition 以《Negro Prison Songs》發行，1997 年 Rounder 在 Alan Lomax Collection 系列中以現題名重出。斧頭與鋤頭落地就是唯一伴奏，領唱與應答的結構把非洲帶來的工作歌傳統留在錄音裡，是理解藍調成形前夕的一手材料。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Alan_Lomax",
+          "https://archive.org/details/negroprisonsongs",
+          "https://musicbrainz.org/release-group/d53c6d86-d3ae-3d86-b2e5-a7057e5bd4f4"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB first-release-date 1958 指的是 Tradition 原盤；卡片題名《Prison Songs, Volume 1: Murderous Home》對應的是 RG 底下 1997-08-05 的 Rounder release，故年份取 1997。錄音年份為 1947–1948。",
+        "mbTitle": "Negro Prison Songs From The Mississippi State Penitentiary",
+        "mbArtist": "Alan Lomax",
+        "mbFirstRelease": "1958",
+        "upcNote": "Negro Prison Blues and Songs (1994-07-19 US)",
+        "curatorWhy": "1947–48 Parchman Farm 獄中勞動歌，藍調前史的第一手證據",
+        "curatorRisk": "MB 可能掛 Various Artists；Rounder Alan Lomax Collection 系列，另有 Volume 2"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Hank Williams",
+      "album": "40 Greatest Hits",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "4a48eaed-2b09-3147-b310-187bfc692849",
+        "upc": "042282123312",
+        "exceptionReason": "鄉村樂最具影響力歌手的權威整編，其原盤時代本無專輯概念，且首度排除假立體聲與後製配唱，長年被視為標準入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為 Hank Williams，非其子 Hank Williams Jr.（本輯正是為排除與兒子的後製拼接對唱而製）。MB 該 RG 底下 1978 GB 起共六筆重發，卡片釘 1978 原輯。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大 2003 年第九十四名、入 Christgau 基本唱片庫，公認是進入 Hank Williams 的標準門；歌謠直白、大牌入門。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "《滾石》五百大三個版本皆入榜、Christgau 基本唱片庫收錄，且是首度不加假立體聲與後製配唱的整編，公認為鄉村樂錄音史的核心文獻。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+        ]
+      },
+      "description": {
+        "text": "Mercury 在 1978 年、Hank Williams 逝世二十五週年推出的雙唱片，四十首依年序從〈Move It on Over〉排起。相較 MGM 早年那些加了假立體聲、後製配唱甚至與兒子拼接對唱的版本，這套首度讓錄音回到原始樣貌，也成為他生涯銷量最高的唱片。2003 年《滾石》五百大專輯列第九十四名。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
+          "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/66/03/1f660349-0c79-ddcd-9ff0-e3330e80c89e/mzaf_10314994999729410622.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1434905254,
+        "appleCollectionName": "40 Greatest Hits"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB first-release-date 1978 與 Wikipedia「released in 1978 by Mercury Records」一致；1984、1988、1989 各版為重發，不改年份。",
+        "mbTitle": "40 Greatest Hits",
+        "mbArtist": "Hank Williams",
+        "mbFirstRelease": "1978",
+        "upcNote": "40 Greatest Hits (1984 US)",
+        "curatorWhy": "鄉村樂詞曲的原型，戰後美國歌本的核心",
+        "curatorRisk": "MB 有多次重發（1988 CD 等），須擇一釘定"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Carter Family",
+      "album": "Anchored in Love: Their Complete Victor Recordings, 1927-1928",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "3461bf2a-e4d5-3666-b5a9-a88c637a7a5e",
+        "upc": "011661106420",
+        "exceptionReason": "美國鄉村音樂原點錄音的完整整編，Bristol Sessions 一手材料，該時期錄音僅能以合輯取得。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Carter_Family",
+          "https://en.wikipedia.org/wiki/Bristol_sessions",
+          "https://musicbrainz.org/release-group/3461bf2a-e4d5-3666-b5a9-a88c637a7a5e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 The Carter Family，與卡片一致；指原始三人組（A. P.、Sara、Maybelle），非後期的 Carter Sisters 或 Mother Maybelle 編制。Rounder 全集另有多卷同格式題名，本筆已釘 1927-1928 那卷（RG 底下唯一 release）。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3461bf2a-e4d5-3666-b5a9-a88c637a7a5e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國鄉村樂第一家族最初期 Victor 錄音的完整整編，起點即 Bristol Sessions；Rounder 分卷全集屬深度愛好者，78 轉音質有門檻。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "錄音本身是鄉村樂原點，但 Rounder 全集分成多卷、另有 Bear Family 等競爭整編，單卷未取得殿堂級的跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Rounder 1993 年整理的 Victor 錄音全集第一卷，收 A. P. Carter、Sara 與 Maybelle 於 1927 至 1928 年間留下的曲目。起點是 1927 年 8 月 1 日在田納西州 Bristol、由 Ralph Peer 主持的錄音，隔天才輪到 Jimmie Rodgers。Maybelle 的 Carter Scratch 同時奏出旋律與節奏，成為後世最常被模仿的吉他手法之一。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Carter_Family",
+          "https://en.wikipedia.org/wiki/Bristol_sessions",
+          "https://musicbrainz.org/release-group/3461bf2a-e4d5-3666-b5a9-a88c637a7a5e"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1993,
+        "yearNote": "MB first-release-date 1993（Rounder，RG 底下唯一 release）即本卷發行日；內含錄音為 1927–1928 年 Victor 母帶，年份欄取結集年。",
+        "mbTitle": "Anchored in Love: Their Complete Victor Recordings, 1927-1928",
+        "mbArtist": "The Carter Family",
+        "mbFirstRelease": "1993",
+        "upcNote": "Anchored in Love: Their Complete Victor Recordings, 1927-1928 (1993 US)",
+        "curatorWhy": "Bristol Sessions 起點，美國鄉村樂第一家族的最初錄音",
+        "curatorRisk": "Rounder 系列有多卷同格式題名，須釘 1927-1928 那卷"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Jimmie Rodgers",
+      "album": "The Essential Jimmie Rodgers",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "88336bfc-09d6-4c3b-b22e-9ba18e9dac6a",
+        "upc": "886444299114",
+        "exceptionReason": "鄉村音樂第一位巨星的權威年序整編，其 1927–1933 年錄音本無專輯形式，只能以合輯流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Jimmie_Rodgers_(country_singer)",
+          "https://en.wikipedia.org/wiki/Bristol_sessions",
+          "https://musicbrainz.org/release-group/88336bfc-09d6-4c3b-b22e-9ba18e9dac6a"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為 Jimmie Rodgers（1897–1933，鄉村樂），已排除同名的五○年代流行歌手 Jimmie Rodgers（〈Honeycomb〉）。MB 另有 1997 RCA 版《The Essential Jimmie Rodgers》二十曲，屬另一個 RG（ab98da81），與本筆四十曲的 2013 Legacy 版非同物。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/88336bfc-09d6-4c3b-b22e-9ba18e9dac6a/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；鄉村樂第一位巨星的雙碟年序整編，四十首涵蓋 blue yodel 系列；名字有分量但錄音年代久遠，音質與唱腔對新聽者有距離。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Rodgers 本人是鄉村樂公認源頭，但這套 2013 年 Legacy 整編屬廠牌標準系列，與 Rounder、Bear Family 全集並行，未累積殿堂級共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "鐵路剎車手出身的 Jimmie Rodgers 在 1927 年 Bristol 錄音會初試啼聲，同年於紐澤西 Camden 錄下〈Blue Yodel No. 1 (T for Texas)〉一舉成名，1933 年因肺結核病逝，得年三十五。Legacy 2013 年這套雙碟依年序收四十首，藍調樂句與約德爾唱腔如何進入鄉村樂，在這裡聽得最清楚。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Jimmie_Rodgers_(country_singer)",
+          "https://en.wikipedia.org/wiki/Bristol_sessions",
+          "https://musicbrainz.org/release-group/88336bfc-09d6-4c3b-b22e-9ba18e9dac6a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/26/51/1d/26511d51-1610-b4a9-88ee-1f0fc7da64b9/mzaf_8048280985844073941.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 740836718,
+        "appleCollectionName": "The Essential Jimmie Rodgers"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "策展註記假設是 1997 RCA/Legacy 版，但釘定的 RG 88336bfc 底下只有 2013-11-19 Sony Music 一筆 release、共四十曲，且 Apple 曲序與之逐首吻合；1997 RCA 的二十曲版在 MB 是另一個 RG。故年份取 2013。",
+        "mbTitle": "The Essential Jimmie Rodgers",
+        "mbArtist": "Jimmie Rodgers",
+        "mbFirstRelease": "2013-11-19",
+        "upcNote": "The Essential Jimmie Rodgers (2013-11-19 XW)",
+        "curatorWhy": "藍調唱腔與 yodel 的鄉村始祖，鄉村樂第一位巨星",
+        "curatorRisk": "MB 另有 Rounder 全集系列與多種同名精選，須以 1997 RCA/Legacy 版核對"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Dock Boggs",
+      "album": "Country Blues: Complete Early Recordings (1927-29)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7644e154-7b10-3786-aea9-8bb1ae34384b",
+        "upc": "630814020521",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Dock Boggs，與卡名完全一致；本名 Moran Lee Boggs，Dock 為通行藝名，不另立卡。已排查與 1963 年後 Mike Seeger 促成的三張 Folkways 重錄專輯屬不同錄音群，本輯僅含 1927–29 原始 78 轉側面，兩者不可混用。無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7644e154-7b10-3786-aea9-8bb1ae34384b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1927–29 全部商業錄音的完整權威結集，〈Sugar Baby〉〈Country Blues〉經哈利．史密斯 Anthology 成為民謠復興共同教材；錄音生猛、乾冷單色，屬深度愛好者領域。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "錄音本身透過 1952 年 Anthology 取得跨世代地位，但殿堂共識指向的是史密斯的選輯而非 Revenant 這個 1997 年結集本身，暫不列入，建議店主另行覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "維吉尼亞礦工鮑格斯 1927 年為 Brunswick、1929 年為 Lonesome Ace 錄下的全部早期側面，由 Revenant 於 1997 年整理成輯。他不用家族慣用的 frailing，改以向黑人樂手學來的 up-picking 撥彈 banjo，音色乾冷，唱腔平直近乎念白。〈Sugar Baby〉與〈Country Blues〉後來收進 1952 年哈利．史密斯《Anthology of American Folk Music》，成為民謠復興世代反覆翻唱的來源。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Dock_Boggs",
+          "https://musicbrainz.org/release-group/7644e154-7b10-3786-aea9-8bb1ae34384b"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB release-group first-release-date 與唯一美國版皆為 1997（Revenant），採 1997；策展稿寫的 1998 應是流通年而非發行年。",
+        "mbTitle": "Country Blues: Complete Early Recordings (1927-29)",
+        "mbArtist": "Dock Boggs",
+        "mbFirstRelease": "1997",
+        "upcNote": "Country Blues: Complete Early Recordings (1927-29) (1997 US)",
+        "curatorWhy": "阿帕拉契 banjo 與藍調嗓的異色結合，Anthology 名曲〈Sugar Baby〉出處",
+        "curatorRisk": "Revenant 發行；MB 另有 Folkways 60 年代重錄專輯，屬不同錄音群"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Roscoe Holcomb",
+      "album": "An Untamed Sense of Control",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "af0df2ab-0874-33d3-a166-63a2ecbbe65e",
+        "upc": "093074014424",
+        "exceptionReason": "阿帕拉契 high lonesome 唱法定義性人物的官方權威結集，其分散於三張 Folkways 原盤的錄音經此成為單一正典入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Roscoe_Holcomb",
+          "https://musicbrainz.org/release-group/af0df2ab-0874-33d3-a166-63a2ecbbe65e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Roscoe Holcomb，與卡名一致；本姓原作 Halcomb，是 John Cohen 在唱片上改寫為 Holcomb 而通行至今，兩種拼法指同一人，不另立卡。已與 1962–75 年間三張 Folkways 原盤區分：本輯為 2003 年 Smithsonian Folkways 的跨盤結集。無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/af0df2ab-0874-33d3-a166-63a2ecbbe65e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「high lonesome sound」一詞即為他而造，Folkways 官方結集為其錄音的權威入口；鼻腔高音無伴奏演唱粗礪但旋律線清楚，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "阿帕拉契唱法定義性人物且獲狄倫、克萊普頓公開推崇，惟跨來源共識多聚焦其人而非此結集，classic 未達 5，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "肯塔基 Daisy 的煤礦工霍爾康，是柯恩 1959 年提出「high lonesome sound」一詞時所指的對象。他承襲 Old Regular Baptist 教會的鼻腔高音，常無伴奏獨唱，或以 banjo、吉他自彈。輯名取自巴布．狄倫形容他嗓音的一句話。Smithsonian Folkways 2003 年這套結集把他生前的錄音整理成單一入口，〈Little Maggie〉、〈Graveyard Blues〉皆在其中。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Roscoe_Holcomb",
+          "https://musicbrainz.org/release-group/af0df2ab-0874-33d3-a166-63a2ecbbe65e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a9/b2/9e/a9b29ec7-060c-d33a-f868-bda4e3801a42/mzaf_5725184898502924258.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 82492110,
+        "appleCollectionName": "An Untamed Sense of Control"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 2003-03-25（US, Smithsonian Folkways），與英文維基所記 2003 年結集一致，採 2003。",
+        "mbTitle": "An Untamed Sense of Control",
+        "mbArtist": "Roscoe Holcomb",
+        "mbFirstRelease": "2003-03-25",
+        "upcNote": "An Untamed Sense of Control (2003-03-25 US)",
+        "curatorWhy": "「high lonesome sound」一詞所指的本人，肯塔基山歌極致",
+        "curatorRisk": "Smithsonian Folkways 結集；MB 另有 60 年代 Folkways 原盤條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Jackson C. Frank",
+      "album": "Jackson C. Frank",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2d7b621f-7243-353f-86fd-100ff54d071d",
+        "upc": "766126802125",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Jackson C. Frank，與卡名一致；同一 release-group 下另有 1978 年《Jackson Again》與 1996／2002／2003 年多版《Blues Run the Game》重發題名，皆為同一 1965 年錄音的改題，卡名採原題名正確。無同名藝人混淆，無跨文字系統寫法問題。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2d7b621f-7243-353f-86fd-100ff54d071d/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；保羅．賽門製作的唯一個人專輯，〈Blues Run the Game〉被賽門與葛芬柯、珊蒂．丹尼、伯特．楊許、尼克．德瑞克翻唱，為英美民謠圈公認的代表作；單吉他伴唱入耳直白，樂迷領域可見。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力集中在民謠歌手同行之間，當年滯銷、榜單與名人堂無紀錄，未達跨來源長期核心共識，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "法蘭克 1965 年 7 月在倫敦 CBS 錄音室錄下唯一一張個人專輯，由保羅．賽門製作，全程不到三小時完成；他因怯場要求以屏風把自己圍住才肯唱。〈Blues Run the Game〉日後被賽門與葛芬柯、珊蒂．丹尼、伯特．楊許與尼克．德瑞克翻唱，〈Kimbie〉源自 Bascom Lamar Lunsford 的傳統曲。原盤當年滯銷，2001 年 Castle 重製版才恢復原題名與封面。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Jackson_C._Frank_(album)",
+          "https://musicbrainz.org/release-group/2d7b621f-7243-353f-86fd-100ff54d071d"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/31/36/d5/3136d5f1-0da8-5ddf-42ec-1d0e7d4a9ad8/mzaf_3541984077671732077.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1436247189,
+        "appleCollectionName": "Jackson C. Frank (2001 - Remaster)"
+      },
+      "research": {
+        "suggestedYear": 1965,
+        "yearNote": "MB first-release-date 1965（GB, Columbia/EMI），英文維基載 1965 年 12 月發行，採 1965；Apple 條目的 2001 為重製版年份，不採。",
+        "mbTitle": "Jackson C. Frank",
+        "mbArtist": "Jackson C. Frank",
+        "mbFirstRelease": "1965",
+        "upcNote": "Blues Run the Game (1996-05-24 GB)",
+        "curatorWhy": "Paul Simon 製作的唯一專輯，〈Blues Run the Game〉影響整代英美民謠",
+        "curatorRisk": "MB 可能以《Blues Run the Game》為重發題名；為正規專輯故不帶 allowCompilation"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Ewan MacColl & A.L. Lloyd",
+      "album": "The English and Scottish Popular Ballads",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e07e92ed-442c-4c8c-a394-2097950242a3",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "重要落差：MB 該 release-group 的 artist-credit 只有 Ewan MacColl，題名亦作《The English and Scottish Popular Ballads, Vol. 2》（另有別名 Child Ballads, Volume 2），封面明載「F. J. Child Ballads sung by Ewan MacColl／Folkways Records FG 3510」，並無 A. L. Lloyd 掛名。卡名的「& A.L. Lloyd」來自 1956 年整套四輯的合唱者標示（英文維基載該套由 MacColl 與 Lloyd 合唱），非本卷實際 credit。建議店主二擇一：卡片改為「Ewan MacColl — The English and Scottish Popular Ballads, Vol. 2」，或改綁 1956 年 MacColl & Lloyd 全套的 release-group。已排查與 Topic 其他 MacColl 專輯無混淆，無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e07e92ed-442c-4c8c-a394-2097950242a3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Child Ballads 首次成系統的商業錄音，英倫民謠復興的曲目根基；無伴奏敘事長歌、方言唱詞、單一音色，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "整套四輯八張的地位確實跨來源公認，但本卡對應的是第二卷單卷 Folkways 重發，單卷未形成獨立殿堂共識；疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1956 年麥考爾與勞埃德把七十二首 Child Ballads 灌成《The English and Scottish Popular Ballads》四輯八張，是英倫民謠復興最直接的曲目來源。本卡對應的是其中第二卷，Folkways 於 1964 年以 FG 3510 重發，封面標明由麥考爾獨唱。內容多為無伴奏敘事長歌，依 F. J. Child 的編號逐首唱完，唱詞保留蘇格蘭與北英格蘭方言。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Child_Ballads",
+          "https://musicbrainz.org/release-group/e07e92ed-442c-4c8c-a394-2097950242a3"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1964,
+        "yearNote": "本卡所綁 release-group 為 Folkways FG 3510，MB first-release-date 1964，與封面目錄號一致，採 1964；原始錄音與首發為 1956 年（英文維基 Child Ballads 條目），若改綁全套需改為 1956。",
+        "mbTitle": "The English and Scottish Popular Ballads, Vol. 2",
+        "mbArtist": "Ewan MacColl",
+        "mbFirstRelease": "1964",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "Child Ballads 系統性錄音，英倫民謠復興的曲目根基",
+        "curatorRisk": "Topic/Riverside 多卷發行，MB 題名可能作《The English and Scottish Popular Ballads (The Child Ballads)》或分卷"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "The Iron Muse: A Panorama of Industrial Folk Song",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "5c0ec9d7-6a63-4385-ad19-0e069f21c7a8",
+        "upc": "5016272465022",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Various Artists，與卡名一致，屬正常合輯掛法。題名須注意：MB 與實體封面皆作「A Panorama of Industrial Folk Music」，卡名寫的是「Folk Song」，建議店主校為 Music。已排查 1964 年 GB 原版與 1993 年 CD 擴充版同屬一個 release-group，非兩張不同專輯。無跨文字系統寫法問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5c0ec9d7-6a63-4385-ad19-0e069f21c7a8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Topic 廠牌工業民謠企劃的定義性選輯，英國左翼民謠復興公認的主要文獻；唱腔直白、伴奏簡單但題材冷僻，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在英國民謠圈長期被引為 Topic 目錄核心之一，惟跨領域共識與名榜單紀錄不足以列入樂史殿堂；疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "勞埃德企劃、Topic 於 1963 年 3 月發行的工業民謠全景，1962 年 11 月 17 日一天錄成，唱的是礦坑、織廠與鐵路的勞動歌謠。原盤演唱者包括安．布莉格斯、Bob Davenport、Louis Killen、Ray Fisher 與 Matt McGinn，伴奏為 The Celebrated Working Man's Band。1993 年 CD 版保留其中八首，另補進 1957 至 1975 年間十八首，加入 High Level Ranters、Dick Gaughan 與 Oldham Tinkers。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Iron_Muse",
+          "https://musicbrainz.org/release-group/5c0ec9d7-6a63-4385-ad19-0e069f21c7a8"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "MB first-release-date 標 1964，但英文維基載 Topic 原盤為 1963 年 3 月發行、1962 年 11 月 17 日錄音，MB 年份偏晚一年，採 1963。",
+        "mbTitle": "The Iron Muse: A Panorama of Industrial Folk Music",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1964",
+        "upcNote": "The Iron Muse: A Panorama of Industrial Folk Music (1993 GB)",
+        "curatorWhy": "Topic 廠牌工業民謠全景，英國左翼民謠復興的代表企劃",
+        "curatorRisk": "MB 掛 Various Artists；另有 1993 CD 重發條目"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Éthiopiques 1: Golden Years of Modern Ethiopian Music 1969-1975",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0db53d52-a2f7-3ce6-b223-d11cb14dfe3c",
+        "upc": "3307518295124",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Various Artists，與卡名一致。MB 全題為《Éthiopiques 1: L'âge d'or de la musique éthiopienne moderne - Golden Years of Modern Ethiopian Music, 1969-1975》，卡名取其英文副題，同一物件。收錄藝人在 MB 上採法式重音拼法（Muluqèn Mèllèssè、Sèyfou Yohannès），與英文媒體常見的 Mulugen Mellesse、Seyfu Yohannes 為同人異拼，僅寫進簡介、不另立卡。衣索比亞文字（阿姆哈拉語 fidel）僅見於封面裝飾，卡名維持拉丁轉寫。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0db53d52-a2f7-3ce6-b223-d11cb14dfe3c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Éthiopiques 系列開卷，衣索比亞黃金年代錄音進入國際市場的公認起點，系列本身已成該領域標準文獻；旋律與管樂編制入耳不難，樂迷領域常見。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "Falceto 自此卷起以 Buda Musique 建立 Éthiopiques 系列，二十餘年間出到三十餘卷，成為衣索比亞現代音樂在國際上被引用、討論與再發行的共同基礎，開卷地位跨來源長期公認。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://musicbrainz.org/release-group/0db53d52-a2f7-3ce6-b223-d11cb14dfe3c"
+        ]
+      },
+      "description": {
+        "text": "法國製作人 Francis Falceto 1997 年為 Buda Musique 開啟 Éthiopiques 系列的第一卷，取材自 Amha Records、Kaifa Records 與 Philips-Ethiopia 在 1969 至 1975 年間發行的單曲與唱片。Muluqèn Mèllèssè、Mahmoud Ahmed、Bahta Gèbrè-Heywèt 與 Sèyfou Yohannès 等人以五聲調式唱腔配上管樂編制，把衣索比亞黃金年代第一次完整帶進國際市場。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://musicbrainz.org/release-group/0db53d52-a2f7-3ce6-b223-d11cb14dfe3c"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1997,
+        "yearNote": "MB first-release-date 1997-11-17，與英文維基所述 Buda Musique 於 1997 年展開該系列一致，採 1997；維基系列表格所記的 1998 應為流通年。",
+        "mbTitle": "Éthiopiques 1: L’âge d’or de la musique éthiopienne moderne - Golden Years of Modern Ethiopian Music, 1969-1975",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1997-11-17",
+        "upcNote": "Éthiopiques 1: L’âge d’or de la musique éthiopienne moderne - Golden Years of Modern Ethiopian Music, 1969-1975 (1997-11-17 FR)",
+        "curatorWhy": "Éthiopiques 系列開卷，衣索比亞黃金年代進入世界市場的起點",
+        "curatorRisk": "MB 掛 Various Artists；題名含重音字 É，連字號格式須依 MB"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Éthiopiques 8: Swinging Addis",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "7506d33c-3e73-3a6a-9b63-1eb4901f3ef6",
+        "upc": "3307518298224",
+        "exceptionReason": "衣索比亞黃金年代都會樂團編制的代表性選輯，是 Amha Records 時期夜總會場景最集中的權威文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://musicbrainz.org/release-group/7506d33c-3e73-3a6a-9b63-1eb4901f3ef6"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Various Artists，與卡名一致；MB 題名《Éthiopiques 8: Swinging Addis》與卡名完全相同，封面另標年份區間 1969-1974，屬副標非題名一部分。收錄藝人 Girma Bèyènè、Alèmayèhu Eshèté、Ayalèw Mesfin 在英文媒體亦作 Girma Beyene、Alemayehu Eshete、Ayalew Mesfin，同人異拼，簡介依 MB 重音拼法。無跨文字系統另立卡需求。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7506d33c-3e73-3a6a-9b63-1eb4901f3ef6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；系列中最常被引用的一卷，阿迪斯阿貝巴夜總會樂團編制的公認代表選輯；節奏明確、管樂主導，入耳不難，樂迷領域常見。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在系列內地位突出且被廣泛引用，但殿堂共識歸於 Éthiopiques 系列整體與開卷，本卷屬系列主要作品而非獨立史上核心。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "以 1969 至 1974 年阿迪斯阿貝巴夜總會場景為題的一卷，收 Girma Bèyènè〈Ené Nègn Bay Manèsh〉、Mahmoud Ahmed、Alèmayèhu Eshèté、Ayalèw Mesfin 與 Bahta Gèbrè-Heywèt 的錄音。管樂組與電風琴撐起節奏，唱腔仍走衣索比亞五聲調式，是理解 Amha Records 時期都會樂團編制最集中的一卷，Buda Musique 2000 年發行。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://musicbrainz.org/release-group/7506d33c-3e73-3a6a-9b63-1eb4901f3ef6"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB first-release-date 2000-03-21，與英文維基系列表所記 2000 年一致，採 2000。",
+        "mbTitle": "Éthiopiques 8: Swinging Addis",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "2000-03-21",
+        "upcNote": "Éthiopiques 8: Swinging Addis (2000-03-21 FR)",
+        "curatorWhy": "阿迪斯阿貝巴夜總會樂團全景，黃金年代編制樂的代表卷",
+        "curatorRisk": "MB 掛 Various Artists；題名副標可能作〈Swinging Addis 1969-1974〉"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Éthiopiques 10: Tezeta",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "a762c334-ee51-307d-b366-67a89763409c",
+        "upc": "",
+        "exceptionReason": "衣索比亞 tezeta 調式抒情傳統的專題文獻，是外界認識該國五聲音階體系的權威入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Tizita",
+          "https://musicbrainz.org/release-group/a762c334-ee51-307d-b366-67a89763409c"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Various Artists，與卡名一致；MB 全題《Éthiopiques 10: Tezeta: Ethiopian Blues & Ballads》，卡名省略副題，同一物件。曲名／調式名 Tezeta 與 Tizita 為同一阿姆哈拉語詞的不同轉寫（英文維基條目立在 Tizita），簡介依封面與 MB 採 Tezeta。收錄藝人 Mulatu Astatqé 亦作 Mulatu Astatke，同人異拼。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/a762c334-ee51-307d-b366-67a89763409c/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；以 tezeta 調式為題的專卷，是理解衣索比亞抒情傳統與音階體系的標準入口；慢速、單一調式反覆、篇幅偏長，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "專題價值高且被英文維基 tizita 條目引為該調式國際認知的依據，但屬系列分卷，未形成獨立於系列之外的長期核心共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Tezeta 在阿姆哈拉語意為記憶與思念，同時是 Amhara 傳統四個主要五聲調式之一，西方樂評常以藍調相比。本卷以該調式為題，收 Sèyfou Yohannès 與 Mahmoud Ahmed 各自的〈Tezeta〉、Mulatu Astatqé〈Gubèlyé〉與 Alèmayèhu Eshèté 的抒情曲，副題標作 Ethiopian Blues & Ballads，Buda Musique 2001 年發行。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Tizita",
+          "https://musicbrainz.org/release-group/a762c334-ee51-307d-b366-67a89763409c"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "MB first-release-date 與該版發行日皆為 2001-10-17，採 2001；策展稿與維基系列表所記 2002 應為流通年。",
+        "mbTitle": "Éthiopiques 10: Tezeta: Ethiopian Blues & Ballads",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "2001-10-17",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "以 tezeta 調式為題的專卷，衣索比亞抒情傳統核心",
+        "curatorRisk": "MB 題名可能作《Éthiopiques 10: Tezeta - Ethiopian Blues & Ballads》"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Éthiopiques 13: The Golden Seventies",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e0bf1d29-8322-3d2e-bd03-925e3501d569",
+        "upc": "3369190000229",
+        "aliasesChecked": true,
+        "aliasReview": "MB artist-credit 為 Various Artists，與卡名一致。須注意 MB release-group 題名作《Ethiopian Groove: The Golden Seventies》（1994, FR），與卡名的「Éthiopiques 13」不同字面，但同一 release-group 底下確有 2003-04-08 的《Éthiopiques 13: Ethiopian Groove》一版，兩者為同一內容的前後版本，配對正確；英文維基系列表亦列第 13 卷為 Ethiopian Groove。建議店主考慮把卡名補為「Éthiopiques 13: Ethiopian Groove — The Golden Seventies」。收錄藝人 Alèmayèhu Eshèté／Alemayehu Eshete 為同人異拼。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e0bf1d29-8322-3d2e-bd03-925e3501d569/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1994 年先行發行的 Ethiopian Groove 是 Éthiopiques 系列成形前的先聲，後編入第 13 卷，具明確歷史位置；曲風偏流行、入耳不難，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "作為系列前身有清楚的沿革意義，但流通量與被引用度低於開卷與 Swinging Addis，未達跨來源長期核心共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Buda Musique 1994 年先以《Ethiopian Groove: The Golden Seventies》發行，2003 年才編入 Éthiopiques 系列第 13 卷。收 Aster Aweke、Alèmayèhu Eshèté、Hirut Bekele、Bizunesh Bekele、Wallias Band 與 Ayalew Mesfin 等人 1970 年代的錄音，是系列正式成形前的先聲，也是黃金年代末期都會流行樂的橫切面。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+          "https://musicbrainz.org/release-group/e0bf1d29-8322-3d2e-bd03-925e3501d569"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 1994 指的是 Buda 原版《Ethiopian Groove》，非卡名所指的 Éthiopiques 第 13 卷；同 release-group 下的 Éthiopiques 13 版發行日為 2003-04-08，英文維基系列表亦記 2003，卡片既以卷號命名故採 2003。",
+        "mbTitle": "Ethiopian Groove: The Golden Seventies",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1994",
+        "upcNote": "Ethiopian Groove: The Golden Seventies (1994 FR)",
+        "curatorWhy": "七〇年代衣索比亞流行樂群像，黃金年代終章的紀錄",
+        "curatorRisk": "該卷副標寫法在 MB 可能不同（Ethiopian Groove 等），須以卷號 13 核對"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Getatchew Mekuria",
+      "album": "Éthiopiques 14: Negus of Ethiopian Sax",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "035e4e3e-9083-38c0-89d2-5213d06bb2a7",
+        "upc": "",
+        "exceptionReason": "衣索比亞器樂薩克斯風獨創語彙的權威結集，該批歷史錄音僅以此卷在國際流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Getatchew_Mekurya",
+          "https://musicbrainz.org/release-group/035e4e3e-9083-38c0-89d2-5213d06bb2a7"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名作 Getatchew Mekuria，MB artist-credit 作 Gétatchèw Mèkurya（法式重音拼法），英文維基條目立在 Getatchew Mekurya，三者為同一人（1935–2016）的不同轉寫，非同名混淆。建議卡名沿用輸入的 Getatchew Mekuria，並在資料層保留 MB 別名。阿姆哈拉語原名僅見於封面 fidel 字樣，不另立卡。已排查與 2006 年《Moa Anbessa》等 The Ex 合作專輯屬不同錄音群。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/035e4e3e-9083-38c0-89d2-5213d06bb2a7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 Amhara 戰吼曲式 shellela 轉為薩克斯風獨奏的獨創語彙，是衣索比亞器樂錄音的公認代表；長段自由吹奏、音色粗礪且無西方和聲支撐，入耳門檻高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "獨創性與 The Ex 的再引介使其國際知名度高，但跨來源討論規模仍限於衣索比亞音樂與即興樂圈，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "墨庫里亞十三歲起以樂團為業，把 Amhara 戰士出陣前吟唱的 shellela 改寫成薩克斯風獨奏，五〇年代初在未接觸西方自由爵士的情況下自行長出近似的吹法，登台時穿獸皮戰袍、戴獅鬃頭飾。原盤《Negus of Ethiopian Sax》1970 年前後錄於衣索比亞，2003 年由 Buda Musique 編為 Éthiopiques 第 14 卷；荷蘭樂團 The Ex 自 2004 年起與他合作巡演與錄音。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Getatchew_Mekurya",
+          "https://musicbrainz.org/release-group/035e4e3e-9083-38c0-89d2-5213d06bb2a7"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 2003-02-21，與英文維基系列表所記第 14 卷 2003 年一致，採 2003；封面所本的原盤錄音為 1970 年前後，非發行年。",
+        "mbTitle": "Éthiopiques 14: Negus of Ethiopian Sax",
+        "mbArtist": "Gétatchèw Mèkurya",
+        "mbFirstRelease": "2003-02-21",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "衣索比亞薩克斯風之王，將戰吼曲式 shellela 轉為器樂的獨創",
+        "curatorRisk": "藝人名 MB 可能作 Gétatchèw Mèkurya 等重音寫法"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Alèmayèhu Eshèté",
+      "album": "Éthiopiques 9: Alèmayèhu Eshèté",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "77a4e508-bf34-31fb-b65b-431ea7fcd92a",
+        "upc": "3307518298323",
+        "aliasesChecked": true,
+        "aliasReview": "卡名與 MB artist-credit 皆作 Alèmayèhu Eshèté（法式重音拼法），英文維基條目立在 Alemayehu Eshete，無重音；兩者為同一人（1941–2021），非同名混淆，卡名依 MB 拼法保留重音即可。他亦在第 22 卷及其他卷有錄音，本卡對應的是整卷獻給他的第 9 卷。阿姆哈拉語原名僅見於封面 fidel 字樣，不另立卡。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/77a4e508-bf34-31fb-b65b-431ea7fcd92a/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「衣索比亞貓王」黃金年代早期錄音的整卷權威結集，該藝人的國際流通入口；搖滾唱腔配管樂編制，旋律直白，樂迷領域常見。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在衣索比亞流行樂脈絡中地位穩固，但跨領域長期共識與名榜單紀錄不足，屬該領域主要作品而非史上核心。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "人稱「衣索比亞貓王」的埃謝提 1941 年生於阿迪斯阿貝巴，六〇年代起以搖滾唱腔配衣索比亞調式走紅，並與 Girma Bèyènè 共組 Alem-Girma Band。Éthiopiques 系列第 9 卷整卷獻給他 1969 至 1974 年間的早期錄音；〈Temar Lije〉與〈Addis Ababa Bete〉等曲在他 2021 年過世時，仍於梅斯克爾廣場的告別式上播放。Buda Musique 2000 年發行。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Alemayehu_Eshete",
+          "https://musicbrainz.org/release-group/77a4e508-bf34-31fb-b65b-431ea7fcd92a"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB first-release-date 2000-10-16（有完整日期），採 2000；策展稿與英文維基系列表所記的 2001 應為流通年。",
+        "mbTitle": "Éthiopiques 9: Alèmayèhu Eshèté",
+        "mbArtist": "Alèmayèhu Eshèté",
+        "mbFirstRelease": "2000-10-16",
+        "upcNote": "Éthiopiques 9: Alèmayèhu Eshèté (2000-10-16 FR)",
+        "curatorWhy": "「衣索比亞的貓王」，黃金年代最具魅力的流行男聲",
+        "curatorRisk": "藝人名重音寫法多變（Alemayehu Eshete），須以 MB 條目拼法為準"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Tlahoun Gèssèssè",
+      "album": "Éthiopiques 17: Tlahoun Gèssèssè",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "3a5918b5-60a6-34b4-9f38-71c417838378",
+        "upc": "3307518226623",
+        "exceptionReason": "衣索比亞最受尊崇國民歌手的整卷權威結集，其黃金年代單曲錄音的國際流通入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Tilahun_Gessesse",
+          "https://musicbrainz.org/release-group/3a5918b5-60a6-34b4-9f38-71c417838378"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名與 MB artist-credit 皆作 Tlahoun Gèssèssè（法式重音拼法），英文維基條目立在 Tilahun Gessesse；兩者為同一人（1940–2009），非同名混淆，卡名依 MB 拼法。他另有錄音散見系列其他卷，本卡對應整卷獻給他的第 17 卷。阿姆哈拉語原名僅見於封面 fidel 字樣，不另立卡。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3a5918b5-60a6-34b4-9f38-71c417838378/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；衣索比亞國民歌手被稱作「The Voice」，本卷為其黃金年代錄音的整卷權威結集；抒情唱腔配大編制伴奏，入耳不難，屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在衣索比亞境內地位崇高並獲阿迪斯阿貝巴大學榮譽博士，惟國際跨來源長期共識仍限於該領域，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "蓋塞塞十三歲輟學進入 Hager Fikir 劇院，後成為皇家衛隊樂團的台柱，六〇年代被公認為衣索比亞最好的流行男聲，得到「The Voice」之稱；他曾三度在海爾．塞拉西一世面前演唱，七〇至八〇年代的錄音替饑荒賑濟募得大筆款項。Buda Musique 2003 年以 Éthiopiques 第 17 卷整卷收錄他黃金年代的錄音。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Tilahun_Gessesse",
+          "https://musicbrainz.org/release-group/3a5918b5-60a6-34b4-9f38-71c417838378"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 2003-11-13，英文維基 Tilahun Gessesse 條目亦載第 17 卷為 Buda Musique 2003 年發行，採 2003；策展稿的 2004 與維基系列表一致但較晚，應為流通年。",
+        "mbTitle": "Éthiopiques 17: Tlahoun Gèssèssè",
+        "mbArtist": "Tlahoun Gèssèssè",
+        "mbFirstRelease": "2003-11-13",
+        "upcNote": "Éthiopiques 17: Tlahoun Gèssèssè (2003-11-13 FR)",
+        "curatorWhy": "衣索比亞國民歌手，黃金年代最受尊崇的嗓音",
+        "curatorRisk": "藝人名亦寫作 Tilahun Gessesse，須依 MB 條目拼法"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Franco & le TPOK Jazz",
+      "album": "Francophonic: A Retrospective, Vol. 1 (1953-1980)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "fea3dce1-294a-3ad2-9460-63c0f73770b2",
+        "upc": "740042304123",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名與 MB artist credit 完全一致（Franco & le TPOK Jazz）；MB 另有 Franco、Franco & le T.P. O.K. Jazz、Franco Luambo Makiadi 等寫法，同一人無誤。須注意此 release-group 把 Vol. 1（2008-11-17，STCD3041/3042）與 Vol. 2: 1980-1989（2009-10-13，STCD3046-47）併在同一個 RG 底下，本卡釘的是 2008 年的 Vol. 1，卡名的 1953-1980 與該版一致。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/fea3dce1-294a-3ad2-9460-63c0f73770b2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；剛果倫巴最大體系的生涯回顧，Franco 地位跨來源可查；世界音樂樂迷領域外少見，但舞曲律動直白好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Franco 本人地位足夠，但此卡是 2008 年策展式雙碟回顧，缺乏針對本結集的跨來源長期共識，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Franco Luambo（1938–1989）1956 年共同創立 OK Jazz，1971 年更名 TPOK Jazz，撐起剛果倫巴規模最大的樂團體系。Sterns Africa 2008 年推出的雙碟回顧（STCD3041/3042）從 1953 年最早的錄音排到 1980 年，涵蓋〈On entre O.K., on sort K.O.〉到七〇年代後期的長篇 sebene 段落。他偏好清脆的開放和弦與獨特撥弦法，把倫巴推成可無限延展的舞曲結構，一生留下約一千首作品，2023 年獲《滾石》選入史上最偉大吉他手名單。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Franco_Luambo",
+          "https://musicbrainz.org/release-group/fea3dce1-294a-3ad2-9460-63c0f73770b2"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "MB 該 RG first-release-date 2008-11-17 即 Vol. 1 的 Sterns Africa 英國版（STCD3041/3042），與卡名相符；Wikipedia 內文把這對雙碟寫成 2007 與 2009，年份與 MB／廠牌編號不一致，此處採 MB 的 2008。錄音年代本身為 1953-1980。",
+        "mbTitle": "Francophonic",
+        "mbArtist": "Franco & le TPOK Jazz",
+        "mbFirstRelease": "2008-11-17",
+        "upcNote": "Francophonic (2008-11-17 GB)",
+        "curatorWhy": "剛果倫巴之王的生涯回顧，非洲流行樂最大體系的入口",
+        "curatorRisk": "藝人名 MB 有 Franco & le T.P. O.K. Jazz / Franco 等寫法；另有 Vol. 2"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "E.T. Mensah & the Tempos",
+      "album": "All for You",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "6b9c910a-c2f5-35cf-89b8-07b200f3a355",
+        "upc": "",
+        "exceptionReason": "highlife 黃金年代的奠基錄音結集，戰後西非跨國流行樂的起點文獻，Mensah 這批 1950 年代母帶長期僅以此類重發輯流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/E._T._Mensah",
+          "https://musicbrainz.org/release-group/6b9c910a-c2f5-35cf-89b8-07b200f3a355"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名 E.T. Mensah & the Tempos，MB artist credit 作 E.T. Mensah & The Tempos（僅冠詞大小寫差異），Apple 掛 E.T. Mensah，Wikipedia 條目為 E. T. Mensah；另見 E. T. Mensah and His Tempos Band 的寫法，皆同一人同一團。與同期奈及利亞 highlife 的 Victor Olaiya（1983 年曾合作 Highlife Giants of Africa Vol. 1）非同一條目，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6b9c910a-c2f5-35cf-89b8-07b200f3a355/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Mensah 是公認的 highlife 開創者、戰後西非跨國流行樂建立者；這批 1950 年代錄音在一般玩家圈外流通，但管樂舞曲節奏明快易入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "開創地位明確，惟本卡為 1986 年 RetroAfric 重發結集，2015 年另有四碟 King of Highlife Anthology，尚無單一版本的跨來源殿堂共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "E.T. Mensah 與 The Tempos 是戰後西非 highlife 的建立者，把管樂編制、加勒比 calypso 與迦納本地舞曲併進 1950 年代的錄音室作業。RetroAfric 於 1986 年以編號 RETRO 1 重新發行這批曲目。二十首從〈All for You〉、〈Nkebo Baaya〉排到〈Inflation Calypso〉、〈St. Peter's Calypso〉，可以聽見樂團 1953 年赴英巡演、1957 年與 Louis Armstrong 同台前後的聲音樣貌。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/E._T._Mensah",
+          "https://musicbrainz.org/release-group/6b9c910a-c2f5-35cf-89b8-07b200f3a355"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/13/3a/70/133a7087-dc47-7bf4-5170-9cd7292c2003/mzaf_12753453233869190914.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 202093198,
+        "appleCollectionName": "All for You"
+      },
+      "research": {
+        "suggestedYear": 1986,
+        "yearNote": "MB 只收 1990 年 RetroAfric CD 版（RETRO1CD）並以之為 first-release-date；Apple 同名條目標 1986-01-01，且目錄編號 RETRO 1 對應該廠牌 1986 年的 LP 首發，故採 1986。錄音本身為 1950 年代。",
+        "mbTitle": "All for You",
+        "mbArtist": "E.T. Mensah & The Tempos",
+        "mbFirstRelease": "1990",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "highlife 之王，戰後西非跨國流行樂的建立者",
+        "curatorRisk": "RetroAfric 結集；MB 藝人名可能作 E.T. Mensah 或 E. T. Mensah and His Tempos Band"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "King Sunny Adé",
+      "album": "The Best of the Classic Years",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "d66265fa-f8e3-3b79-ab11-23eddd92f3ce",
+        "upc": "016351663429",
+        "exceptionReason": "jùjú 音樂國際化之前的奈及利亞本地錄音權威結集，補上理解其風格養成的關鍵段落，該批單曲在國際市場僅以此輯流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/King_Sunny_Ad%C3%A9",
+          "https://musicbrainz.org/release-group/d66265fa-f8e3-3b79-ab11-23eddd92f3ce"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名 King Sunny Adé 與 MB artist credit 完全一致（帶重音 é）；Apple 作 King Sunny Ade（無重音），本名 Sunday Adeniyi Adegeye。同廠牌另有 Gems From the Classic Years (1967-1974)（2007）與 Classics, Vol. 2 等近名結集，經 collectionId 與曲目核對確認本卡指向 2003 年十首版的 The Best of the Classic Years，未混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d66265fa-f8e3-3b79-ab11-23eddd92f3ce/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；jùjú 國際化前本地錄音的公認代表結集，但非其最知名的 Island 時期作品；長段落律動與談話鼓對話對初聽者稍長。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "早期錄音精選有明確價值，但地位仍在 Juju Music 等 Island 時期作品之下，未達殿堂所需的跨來源核心共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "King Sunny Adé 本名 Sunday Adeniyi Adegeye，1967 年組成 The Green Spots，後改稱 African Beats。Shanachie 2003 年這套十首選輯釘住他 1982 年簽進 Island 之前，在奈及利亞 African Songs 與自營 Sunny Alade 廠牌留下的錄音，收有〈Sunny Ti De〉、〈Ko Salapata〉與〈Synchro System〉的完整原始版本——同名曲後來成為 1983 年國際版專輯的骨幹。此時的 jùjú 仍以多把吉他交織與談話鼓對答為主。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/King_Sunny_Ad%C3%A9",
+          "https://musicbrainz.org/release-group/d66265fa-f8e3-3b79-ab11-23eddd92f3ce"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/df/68/acdf68d8-9476-a11f-efa0-9a7e8678f5d2/mzaf_8718784723592596159.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 1587789326,
+        "appleCollectionName": "The Best of the Classic Years"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB first-release-date 2003-02-11（Shanachie SHANCD66034）與 Apple releaseDate 2003-02-11 一致；2005-06-07 為數位版重發。收錄錄音為 1967-1974 年前後的本地母帶。",
+        "mbTitle": "The Best of the Classic Years",
+        "mbArtist": "King Sunny Adé",
+        "mbFirstRelease": "2003-02-11",
+        "upcNote": "The Best of the Classic Years (2003-02-11 US)",
+        "curatorWhy": "jùjú 現代化前的奈及利亞本地錄音精華，補完池內 Island 三部曲之前的空白",
+        "curatorRisk": "Shanachie 結集；池內已有 Juju Music 等 Island 時期作品，本張為 1967-74 本地錄音群"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Tabu Ley Rochereau",
+      "album": "The Voice of Lightness: Congo Classics 1961-1977",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "0be5a861-9335-3907-83e9-105684b7c1a3",
+        "upc": "740042302723",
+        "exceptionReason": "剛果倫巴另一支主流的權威編年回顧，把 African Jazz、African Fiesta 到 Afrisa 三個時期的單曲首度整理成可追索的序列，是必備文獻。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Tabu_Ley_Rochereau",
+          "https://musicbrainz.org/release-group/0be5a861-9335-3907-83e9-105684b7c1a3"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名與 MB artist credit 完全一致（Tabu Ley Rochereau）；另見 Rochereau、Tabu Ley、Pascal-Emmanuel Sinamoyi Tabu 等寫法，同一人。MB 同名系列另有 The Voice of Lightness Volume 2 (1977-1993)，本卡 rgMbid 指向的是 1961-1977 的第一輯，卷次無誤。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0be5a861-9335-3907-83e9-105684b7c1a3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與 Franco 並立的剛果倫巴另一主線，地位跨來源可查；世界音樂領域以外少見，但歌唱旋律與舞曲節奏平易。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人地位夠格，但此卡為 2007 年 Sterns 策展雙碟，未見針對本結集的跨來源長期共識，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Tabu Ley Rochereau（1940–2013）1959 年在 Le Grand Kallé 的 African Jazz 出道，1963 年與吉他手 Docteur Nico 另組 African Fiesta，1970 年成立 Afrisa International，同年成為首位登上巴黎奧林匹亞劇院的撒哈拉以南非洲歌手。Sterns Africa 2007 年的雙碟（STCD3027/3028）按年序排出 1961 至 1977 年共二十九首，從〈Mwana Mawa〉一類早期慢板走到 Afrisa 時期的長篇舞曲。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Tabu_Ley_Rochereau",
+          "https://musicbrainz.org/release-group/0be5a861-9335-3907-83e9-105684b7c1a3"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "MB first-release-date 2007-08-20，對應 Sterns Africa 雙碟 STCD3027/3028，與卡片策展年一致；收錄錄音年代為 1961-1977。",
+        "mbTitle": "The Voice of Lightness: Congo Classics 1961-1977",
+        "mbArtist": "Tabu Ley Rochereau",
+        "mbFirstRelease": "2007-08-20",
+        "upcNote": "The Voice of Lightness: Congo Classics 1961-1977 (2007-08-20 XW)",
+        "curatorWhy": "與 Franco 並立的剛果倫巴雙雄，African Fiesta 時期精華",
+        "curatorRisk": "Sterns 雙碟；MB 另有 Volume 2 (1977-1993)，須釘第一輯"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Le Grand Kallé",
+      "album": "His Life, His Music (Joseph Kabaselé and the Creation of Modern Congolese Music)",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7dd6bcb0-d8b8-4ee7-9aaa-09fa2cadf267",
+        "upc": "5017742301628",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 Le Grand Kallé 與 MB artist credit 一致；MB／文獻另見 Grand Kalle、Le Grand Kalle、Joseph Kabasele（或 Kabaselé）、Le Grand Kallé et l'African Jazz 等寫法，重音與拼法不統一但同指一人。Wikipedia 條目名 Le Grand Kallé，Sterns 該版封面題名作 Joseph Kabasele, Le Grand Kalle: His Life, His Music，與卡名同物。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7dd6bcb0-d8b8-4ee7-9aaa-09fa2cadf267/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；現代剛果流行樂之父的完整回顧，〈Indépendance Cha Cha〉的泛非象徵地位跨來源可查；圈外罕見但曲式輕快好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "Kabasele 的開創地位無疑，但這是 2013 年才問世的學術型雙碟，尚未累積足以列入殿堂的長期跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Joseph Kabasele（1930–1983）1953 年組成 African Jazz，被視為現代剛果流行樂之父。1960 年比屬剛果圓桌會議期間在布魯塞爾錄下的〈Indépendance Cha Cha〉，很快成為泛非去殖民與團結的象徵。Sterns 2013 年的雙碟（STCD3058-59）收三十八首，樂手名單串起 Docteur Nico、Tabu Ley Rochereau 與 Manu Dibango，也聽得出他把 lokole 裂縫鼓、ngongi 等本地打擊放進西式管樂與吉他編制的做法。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Le_Grand_Kall%C3%A9",
+          "https://musicbrainz.org/release-group/7dd6bcb0-d8b8-4ee7-9aaa-09fa2cadf267"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB first-release-date 2013（Stern's Music STCD3058-59，歐洲版），Wikipedia 亦記為 2013 年 Sterns Africa 發行；收錄錄音年代為 1950 年代末至 1960 年代。",
+        "mbTitle": "His Life, His Music (Joseph Kabaselé and the Creation of Modern Congolese Music)",
+        "mbArtist": "Le Grand Kallé",
+        "mbFirstRelease": "2013",
+        "upcNote": "His Life, His Music (Joseph Kabaselé and the Creation of Modern Congolese Music) (2013 XE)",
+        "curatorWhy": "〈Indépendance Cha Cha〉的創作者，剛果現代樂與非洲獨立的聲音象徵",
+        "curatorRisk": "藝人名在 MB 有 Grand Kalle / Le Grand Kallé et l'African Jazz 等多種寫法"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "T.P. Orchestre Poly-Rythmo",
+      "album": "The Vodoun Effect: Funk and Sato from Benin's Obscure Label",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b0426e25-5c1a-3e56-acb2-8cbbdbab6767",
+        "upc": "4260126060661",
+        "aliasesChecked": true,
+        "aliasReview": "卡名 T.P. Orchestre Poly-Rythmo 與 MB artist credit 一致；封面與 Wikipedia 條目作 Orchestre Poly-Rythmo de Cotonou，另見 T.P. Orchestre Poly-Rythmo de Cotonou、Tout Puissant Orchestre Poly-Rythmo 等寫法，同一團。題名方面卡名與 MB 作 Benin's Obscure Label（單數），封面與 Analog Africa 黑膠版作 Benin's Obscure Labels 1972-1975（複數），僅單複數差異。池內既有的 Cotonou Club（2011）為樂團重組後新作，非同物。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b0426e25-5c1a-3e56-acb2-8cbbdbab6767/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Analog Africa 招牌考掘、貝南放克再發現的第一部，屬深度愛好者領域；母帶粗礪、sato 鼓密度高，入耳需要一點適應。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在非洲考掘再發行這條線上影響顯著，但年份尚淺且缺乏跨來源的史上核心共識，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Orchestre Poly-Rythmo de Cotonou 1968 年由歌手兼吉他手 Mélomé Clément 在貝南成立，把 vodoun 儀式的 sato 鼓與 James Brown、Funkadelic 一路的放克接在一起，二十餘年間錄下約五百首。德國廠牌 Analog Africa 2008 年這套十四首（AACD 064），挖的是 1972 至 1975 年間他們為當地小廠牌錄下、母帶狀況粗礪的單曲，也是該樂團三部曲的第一部；發行後直接促成樂團 2009 年重組並展開國際巡演。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Orchestre_Poly-Rythmo_de_Cotonou",
+          "https://musicbrainz.org/release-group/b0426e25-5c1a-3e56-acb2-8cbbdbab6767"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "MB first-release-date 2008-11-03（Analog Africa CD 版 AACD 064，德國），同月 21 日另有雙黑膠 AALP 064；Wikipedia 亦記 The Vodoun Effect 為 2008 年發行。收錄錄音為 1972-1975 年。",
+        "mbTitle": "The Vodoun Effect: Funk and Sato from Benin's Obscure Label",
+        "mbArtist": "T.P. Orchestre Poly-Rythmo",
+        "mbFirstRelease": "2008-11-03",
+        "upcNote": "The Vodoun Effect: Funk and Sato from Benin's Obscure Label (2008-11-03 DE)",
+        "curatorWhy": "貝南 vodoun 節奏與放克的融合，Analog Africa 招牌考掘",
+        "curatorRisk": "Analog Africa 系列；MB 藝人名可能作 T.P. Orchestre Poly-Rythmo de Cotonou；池內僅有 Cotonou Club"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Victor Uwaifo",
+      "album": "Guitar Boy Superstar 1970-76",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "e1881a2b-1475-3fe9-bf4c-70e9f3b25e02",
+        "upc": "827565038626",
+        "exceptionReason": "奈及利亞 highlife 吉他風格代表人物黃金期錄音的權威結集，其七〇年代單曲在國際市場僅以此輯成套流通。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Victor_Uwaifo",
+          "https://musicbrainz.org/release-group/e1881a2b-1475-3fe9-bf4c-70e9f3b25e02"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "卡名 Victor Uwaifo，MB artist credit 作 Sir Victor Uwaifo（MB 題名亦帶前綴 Sir Victor Uwaifo: Guitar Boy Superstar 1970-76），Wikipedia 條目名 Victor Uwaifo，同一人；封面印 SIR VICTOR UWAIFO。Soundway 同 RG 下另有英國版題名 Guitar Boy Superstar: 1970-1976（連字號寫法不同），非另一結集。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e1881a2b-1475-3fe9-bf4c-70e9f3b25e02/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；奈及利亞 highlife 吉他線的主要人物、〈Joromi〉創造者，其黃金期錄音的權威結集；屬深度愛好者領域，長段落律動稍需適應。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "區域內地位明確，惟國際評價集中於再發現價值而非史上核心共識，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Sir Victor Uwaifo（1941–2021）來自奈及利亞貝南城，1965 年以〈Joromi〉成為首位在非洲拿下金唱片的奈及利亞人，樂團名為 Victor Uwaifo and His Titibitis。Soundway 2008 年這套十九首（SNDWCD012）集中在 1970 至 1976 年，收錄他 Akwete、Shadow、Ekassa 等自創律動時期的錄音；吉他線條清亮乾淨，與 Edo 傳統節奏和宮廷曲式對接，是 highlife 從舞廳管樂轉向吉他主導的一條路徑。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Victor_Uwaifo",
+          "https://musicbrainz.org/release-group/e1881a2b-1475-3fe9-bf4c-70e9f3b25e02"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "MB first-release-date 2008-02-27（Soundway 數位版 SNDWD012），同年 7 月 8 日發 CD（SNDWCD012）；Wikipedia 亦記為 2008 年 Soundway 重發。收錄錄音為 1970-1976 年。",
+        "mbTitle": "Sir Victor Uwaifo: Guitar Boy Superstar 1970-76",
+        "mbArtist": "Sir Victor Uwaifo",
+        "mbFirstRelease": "2008-02-27",
+        "upcNote": "Guitar Boy Superstar: 1970-1976 (2008-07-08 GB)",
+        "curatorWhy": "奈及利亞 highlife 吉他奇才，〈Joromi〉的創造者",
+        "curatorRisk": "Soundway 結集；MB 藝人名可能作 Sir Victor Uwaifo"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "The Indestructible Beat of Soweto",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "afa0750e-eee6-320f-845a-ad0ae891bd9b",
+        "upc": "5012981101428",
+        "exceptionReason": "南非 mbaqanga 打入國際的分水嶺選輯，是八〇年代世界音樂潮的引信與該樂種的正典入口，兩版《滾石》五百大皆收。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Indestructible_Beat_of_Soweto",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 掛 Various Artists，與卡片用名一致；實際參演者含 Udokotela Shange Namajaha、Nelcy Sedibe、Umahlathini Nabo、Amaswazi Emvelo、Mahlathini Nezintombi Zomgqashiyo、Moses Mchunu、Johnson Mkhalali、Ladysmith Black Mambazo 等，Mahlathini 的團名在不同版本有 Umahlathini Nabo／Mahlathini and the Mahotella Queens 等寫法。系列後續的 Thunder Before Dawn (Vol. 2)、Jive Soweto (Vol. 4) 為另卡，本卡釘第一輯（2002 年重發時加註 Volume One）。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大（1987 版 #388、2020 版 #497）、Christgau A+、Pazz & Jop 前十，跨來源地位明確；世界音樂入門常見，節奏與人聲和聲直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "南非 mbaqanga 進入西方視野的分水嶺選輯，《滾石》五百大兩版皆入選、Robert Christgau 給 A+ 並稱其為八〇年代最重要的唱片、Pitchfork 八〇年代最佳專輯第 159 名，跨來源長期共識足列世界音樂史核心。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Indestructible_Beat_of_Soweto",
+          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+          "https://musicbrainz.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b"
+        ]
+      },
+      "description": {
+        "text": "1985 年 4 月由英國 Earthworks 推出的十二首選輯，把南非黑人城鎮的 mbaqanga、maskanda 與 isicathamiya 並置：Mahlathini Nezintombi Zomgqashiyo 的〈Emthonjeni Womculo〉、Ladysmith Black Mambazo 的〈Nansi Imali〉都在其中。編選者 Jumbo Vanrenen 與 Trevor Herman 趕在 Paul Simon《Graceland》之前把這批聲音送到西方聽眾面前，Robert Christgau 給了 A+。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/The_Indestructible_Beat_of_Soweto",
+          "https://musicbrainz.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/ee/ca/aceeca38-e5fb-56a5-5a93-672da3d5a2a1/mzaf_13872904951302565785.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "appleCollectionId": 208459678,
+        "appleCollectionName": "The Indestructible Beat of Soweto - Volume One"
+      },
+      "research": {
+        "suggestedYear": 1985,
+        "yearNote": "MB first-release-date 1985（Shanachie 43033 黑膠），Wikipedia 記為 1985 年 4 月 Earthworks 英國首發、1986 年 Shanachie 美國版，Apple 條目亦標 1985-04-16；2002 年 Earthworks/Stern's 重發改題 Volume One。",
+        "mbTitle": "The Indestructible Beat of Soweto",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "1985",
+        "upcNote": "The Indestructible Beat of Soweto (1989 GB)",
+        "curatorWhy": "mbaqanga 進入西方視野的關鍵選輯，Ladysmith 與 Mahlathini 同台",
+        "curatorRisk": "MB 掛 Various Artists；另有 Volume Two 與 25 週年重發"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "The Roots of Chicha: Psychedelic Cumbias From Peru",
+      "identity": {
+        "releaseType": "Compilation",
+        "rgMbid": "481befd2-952c-3cb3-8c45-d278c454618e",
+        "upc": "881626907924",
+        "exceptionReason": "秘魯 chicha 國際再發現的開端選輯，把亞馬遜迷幻 cumbia 的原始單曲首度成套帶進北美市場，是該樂種的標準入口。",
+        "exceptionEvidenceUrls": [
+          "https://en.wikipedia.org/wiki/Peruvian_cumbia",
+          "https://en.wikipedia.org/wiki/Chicha_Libre",
+          "https://musicbrainz.org/release-group/481befd2-952c-3cb3-8c45-d278c454618e"
+        ],
+        "aliasesChecked": true,
+        "aliasReview": "MB 掛 Various Artists，與卡片用名一致；收錄樂團名 Los Destellos、Juaneco y Su Combo、Los Mirlos 等在西語資料中拼寫穩定，無跨文字系統問題。同 RG 下 2017-07-05 另有題名精簡為 The Roots of Chicha 的重發，仍為同一張十七首版本；Barbès 另出的 Roots of Chicha 2 為續集，非本卡。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/481befd2-952c-3cb3-8c45-d278c454618e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-21T20:27:45Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；秘魯 chicha 國際再發現的起點選輯，影響一整波拉美考掘與翻奏；在樂迷圈流通度不低，迷幻 cumbia 律動明快易入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "對 chicha 再發現影響顯著，但屬近年策展成果，缺乏跨來源長期共識足列史上核心，暫不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "秘魯 chicha 生於 1960 年代亞馬遜石油城鎮，把哥倫比亞 cumbia、安地斯五聲音階與衝浪、迷幻搖滾的 fuzz 和 wah-wah 接在一起，用電吉他與電風琴取代手風琴。布魯克林廠牌 Barbès Records 的 Olivier Conan 於 2007 年編出這套十七首（BR0016），把 Los Destellos、Juaneco y Su Combo、Los Mirlos 等樂團散落的單曲重新集結；隔年他自組的 Chicha Libre 發行《¡Sonido Amazonico!》，等於把這條線接進當代演出現場。",
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Peruvian_cumbia",
+          "https://en.wikipedia.org/wiki/Chicha_Libre",
+          "https://musicbrainz.org/release-group/481befd2-952c-3cb3-8c45-d278c454618e"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "MB first-release-date 2007-09-25（Barbès Records BR0016，17 首），與策展年一致；2017 年為同內容重發。收錄錄音為 1960 年代末至 1970 年代。",
+        "mbTitle": "The Roots of Chicha: Psychedelic Cumbias From Peru",
+        "mbArtist": "Various Artists",
+        "mbFirstRelease": "2007-09-25",
+        "upcNote": "The Roots of Chicha: Psychedelic Cumbias From Peru (2007-09-25 XW)",
+        "curatorWhy": "秘魯 chicha 再發現的起點，亞馬遜迷幻 cumbia 的入口",
+        "curatorRisk": "MB 掛 Various Artists；另有 Volume 2 須避開"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}

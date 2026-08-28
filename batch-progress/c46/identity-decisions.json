@@ -1,0 +1,231 @@
+{
+  "The Staple Singers|Uncloudy Day": {
+    "rgMbid": "c5d590ec-caf8-4964-8a6c-04a105571903",
+    "mbTitle": "Uncloudy Day",
+    "mbArtist": "The Staple Singers",
+    "mbFirstRelease": "1959",
+    "note": "自動流程誤取分數同為 100 的 1994／1995 兩筆再發（9b7045c0、71db9267，皆 Album+Compilation）。1959 Vee-Jay 原盤 c5d590ec 的 primary-type 為 Album 且無 secondary-type，才是本卡所指，不是合輯，不需標 Compilation。另排除 2007 年《Uncloudy Day / Will the Circle Be Unbroken》雙專輯合併片（a645e466）。"
+  },
+  "The Staple Singers|Freedom Highway": {
+    "rgMbid": "e147ad4d-33e4-41db-ab60-9bca2913c241",
+    "mbTitle": "Freedom Highway",
+    "mbArtist": "The Staple Singers",
+    "mbFirstRelease": "1965",
+    "note": "1965 Epic 現場專輯，primary-type=Album、secondary-type=Live（不是 Compilation），照一般專輯寫法。已排除 1991 年同名結集（4aa5f411, Album+Compilation，自動流程誤取此筆）與 1965 年同名單曲（1f12f28d, Single）。2015 年 Legacy《Freedom Highway Complete》為另一 release-group，本筆不採。"
+  },
+  "James Cleveland and the Angelic Choir|Peace Be Still": {
+    "rgMbid": "ae64e326-618f-30c5-a01e-296fcbac3eee",
+    "mbTitle": "Volume 3: Peace Be Still",
+    "mbArtist": "James Cleveland and The Angelic Choir",
+    "mbFirstRelease": "1963-09-19",
+    "note": "同一張 1963 Savoy 現場錄音。兩種題名：候選作《Peace Be Still》，MB 帶卷次前綴作《Volume 3: Peace Be Still》（原盤全題為 James Cleveland and the Angelic Choir, Vol. 3: Peace Be Still）。掛名 MB 的 The 為大寫（and The Angelic Choir），另見 Rev. James Cleveland 寫法。primary-type=Album、secondary-type=Live。卡片 album 欄維持候選原題名。"
+  },
+  "Elvis Presley|His Hand in Mine": {
+    "rgMbid": "d76fa095-8801-30b7-85be-65cbad806378",
+    "mbTitle": "His Hand in Mine",
+    "mbArtist": "Elvis Presley with The Jordanaires",
+    "mbFirstRelease": "1960-11-10",
+    "note": "1960 RCA 原盤為純 Album、無 secondary-type，不是合輯，不需標 Compilation。落地原因只是 MB 掛名帶 with The Jordanaires 使 artist 不完全吻合，分數 95 未達 100。自動流程取到的是 2021 年《The His Hand in Mine Sessions》（7fa5574d, Album+Compilation）與 2012 年《Elvis' Christmas Album + His Hand in Mine》雙專輯合併片（d4e4306b），兩者皆非原盤。"
+  },
+  "Duke Ellington|Never No Lament: The Blanton-Webster Band": {
+    "rgMbid": "7f11a8e0-84d5-354a-867f-925573840966",
+    "mbTitle": "Never No Lament: The Blanton‐Webster Band, 1940–1942",
+    "mbArtist": "Duke Ellington",
+    "mbFirstRelease": "2003-04-01",
+    "releaseType": "Compilation",
+    "note": "候選題名無年份後綴，MB 題名多了「, 1940–1942」，且連字用 U+2010（Blanton‐Webster）、年份區間用 U+2013，是題名不完全吻合的主因；同一套 RCA 2003 年三張裝修復版。與 1986 年舊版《The Blanton-Webster Band》為不同 release-group，依 §5.6「同一批錄音只挑最權威的一種」採 2003 版。MB first-release-date 2003-04-01 與候選 year 1940（錄音起始年，本線特例）不同，非上游錯誤。"
+  },
+  "Cab Calloway|The Early Years 1930-1934": {
+    "rgMbid": "3ac070d1-c680-30e3-b8ae-f45f22acd027",
+    "mbTitle": "The Chronological Cab Calloway and His Orchestra, Volume 1: The Early Years 1930‐1934",
+    "mbArtist": "Cab Calloway and His Orchestra",
+    "mbFirstRelease": "2001",
+    "releaseType": "Compilation",
+    "note": "候選記「MusicBrainz 查無對應 release-group」有誤：MB 有此條目，只是題名前綴為 The Chronological Cab Calloway and His Orchestra, Volume 1:，精確題名查詢因此零命中。已回查其 release fc5cf04e 確認身分：廠牌 JSP Records、編號 JSPCD908A–D、四片 CD（25／24／23／22 軌）、barcode 788065900823，與候選所指 JSP 四張裝（Discogs 9382551）為同一套，故不需自建 MB 條目。掛名 MB 作 Cab Calloway and His Orchestra。與 Columbia/Legacy《Are You Hep to the Jive?》（1939-1947 OKeh／Columbia 時期）無重疊。"
+  },
+  "Bunny Berigan|The Pied Piper 1934-1940": {
+    "rgMbid": "b10017f5-262e-4abc-8013-3c1814a3424f",
+    "mbTitle": "The Pied Piper 1934-1940",
+    "mbArtist": "Bunny Berigan",
+    "mbFirstRelease": "1995-06-13",
+    "releaseType": "Compilation",
+    "note": "題名與掛名皆與候選完全一致，落地原因是 MB 該 release-group 的 primary-type 為 null（未設定），自動規則因此擋下——不是身分有疑義。已回查其 release dcc39227 確認：廠牌 RCA Bluebird、編號 07863 66615-2、CD 22 軌、barcode 078636661520，即候選所指 RCA Bluebird 官方結集。實體形態為結集，故記 Compilation。建議上架時順手補 MB 的 primary/secondary type。"
+  },
+  "The Heptones|The Heptones": {
+    "rgMbid": "797d462e-bcd6-4e60-8d89-ee26754ba74d",
+    "mbTitle": "The Heptones",
+    "mbArtist": "The Heptones",
+    "mbFirstRelease": "1967",
+    "note": "三筆同名 release-group：67b1de1f（無日期、Album+Compilation，為後出結集，自動流程誤取此筆）、797d462e（1967 Studio One 原盤，純 Album）、91a47062（2018 版）。本筆取 1967 原盤，非合輯，不需標 Compilation。另排除《The Heptones in Treasure Land》（9167c410）與《Wonderful World With The Heptones》（3f8d384e）。"
+  },
+  "The Ethiopians|Engine 54": {
+    "rgMbid": "c113559a-d4b4-4497-a442-de7e7d42a733",
+    "mbTitle": "Engine 54",
+    "mbArtist": "The Ethiopians",
+    "mbFirstRelease": "1968",
+    "note": "1968 Trojan 盤，primary-type=Album、secondary-type=Compilation（WIRL／Leslie Kong 時期單曲結集）。依 ALBUM_ONBOARDING §5.6「MB primary-type 為 Album 但 secondary-type 含 Compilation 者，照一般 Album 寫法即可」，本筆刻意不填 releaseType=Compilation，manifest 走一般 Album 路徑、不需 exceptionReason／exceptionEvidenceUrls；候選本身的 risk 欄也是這樣寫的。落地原因僅為自動規則把 secondary-type 一併擋下。MB 無同名干擾條目。"
+  },
+  "Sister Nancy|One, Two...": {
+    "rgMbid": "ea2d6eee-d6a2-3297-8e68-506d91f0a56e",
+    "mbTitle": "One, Two...",
+    "mbArtist": "Sister Nancy",
+    "mbFirstRelease": "1982",
+    "note": "本筆不是只有 Single 形態：MB 的 1982 Techniques 原盤 ea2d6eee 就是 primary-type=Album，自動流程只是誤取了同分的單曲。已排除同年單曲〈One Two〉（aa91229e, Single，題名無逗號與刪節號）與 1999 再版 release-group（bfaf87a1）。題名的刪節號「One, Two...」須完整保留，是與單曲區辨的依據。"
+  },
+  "Ennio Morricone|Per un pugno di dollari": {
+    "rgMbid": "43d65d3e-d32f-44a7-b08e-8f524f82cb02",
+    "mbTitle": "A Fistful of Dollars",
+    "mbArtist": "Ennio Morricone",
+    "mbFirstRelease": "1967",
+    "note": "自動命中的 067b2196 經回查 release 0c4cc00b 確認是 RCA Italiana PM 45 3285、7 吋 2 軌單曲（〈Per un pugno di dollari〉／〈Titoli〉），不是原聲帶專輯，正確排除。專輯形態確實存在，但 MB 的 release-group 題名用英文片名《A Fistful of Dollars》（43d65d3e, Album+Soundtrack），所以 releasegroup:\"Per un pugno di dollari\" 精確查詢查不到——改以 release 層搜尋才找到。該 RG 底下同時含 1967 年 UA 英美 LP 與 2006／2024 年義大利文題名《Per un pugno di dollari》的 17 軌 CD，是同一張碟的不同題名。已排除 1970 年《Per qualche dollaro in più / Per un pugno di dollari》雙片合輯（c8455651）。卡片 album 欄維持候選的義大利文原題名。"
+  },
+  "Georges Delerue|Le mépris": {
+    "drop": "MB 內《Le Mépris》配樂只有兩種形態，都不能收。（1）1963 年原始發行是 Philips 434.809 BE 的 7 吋 4 軌 EP（RG a7284c86, primary-type=EP）；EP 不在 §5.5 白名單（白名單只有 electronic 與 asia-mini-album），classical／soundtrack 不適用，不能硬收。（2）一般流通的 1991 Auvidis CD（RG 6691c1e2, Album+Compilation/Soundtrack）經回查 release 7091ce9c 全部曲目，14 軌中只有前 4 軌屬《Le Mépris》，其餘為《Juste avant la nuit》《L'Ainé des Ferchaux》《Cléo de 5 à 7》（4 軌）《L'Insoumis》（4 軌）——實際是 Delerue 電影配樂選輯而非本片原聲帶，把它掛成《Le mépris》會誤導；同 RG 的 2002 年 28 軌版性質相同。候選自己已排除的 2018 年《Le Mépris / Pierrot le Fou》雙片合輯（dd8b705c）也不採。故本筆不收。備註：若日後店主把 soundtrack 納入 §5.5 白名單，可回頭收 1963 EP a7284c86。"
+  },
+  "Michel Legrand|Les Demoiselles de Rochefort": {
+    "rgMbid": "67aa0dc8-5911-3990-bdc7-d2fac1fa0ff7",
+    "mbTitle": "Les Demoiselles de Rochefort (1967 original film cast)",
+    "mbArtist": "Michel Legrand",
+    "mbFirstRelease": "1968",
+    "note": "兩種題名：候選作《Les Demoiselles de Rochefort》，MB 帶版本後綴「(1967 original film cast)」，指同一份 1967 年電影原始卡司錄音（1968 年 Philips 雙 LP），primary-type=Album、secondary-type=Soundtrack。已排除 1967 年 EP 形態《Les Demoiselles de Rochefort (Bande originale du film)》（3258b3a3, primary-type=EP，非白名單曲風不可收）與 2003 年法國舞台劇卡司盤（be9dc6e3）。卡片 album 欄維持候選原題名。"
+  },
+  "Bernard Herrmann|Psycho": {
+    "rgMbid": "0b5538f0-e5fd-3b6f-bf66-892ec0365bad",
+    "mbTitle": "Psycho",
+    "mbArtist": "Bernard Herrmann; National Philharmonic Orchestra, Bernard Herrmann",
+    "mbFirstRelease": "1975",
+    "note": "1960 年電影上映時未發行原聲帶，MB 亦無 1960 原始錄音的原聲帶 release-group；第一張正式唱片是 1975 年 Herrmann 親自指揮 National Philharmonic Orchestra 的 Unicorn 重錄，即本筆 0b5538f0（Album+Soundtrack），與候選 year 1975 一致。落地原因是自動流程誤取分數 100 的 2017 年 Single（88deaff6）。已逐一排除的同名干擾：1992《Psycho: Great Hitchcock Movie Thrillers》作曲家精選（c3699ec1）、2016《Psycho / Vertigo》合輯（f426245f）、1998 年 Danny Elfman 為 Gus Van Sant 重拍版的改編（5a88d2f5）、2017 單曲（88deaff6）；1997 年 Varèse 的 Joel McNeely 重錄未出現在候選清單中，亦不採。掛名須注意 MB 把指揮與樂團一併寫入 artist-credit。"
+  },
+  "Basil Poledouris|Conan the Barbarian": {
+    "rgMbid": "342e53b3-99e9-3d34-9648-4de1b863629c",
+    "mbTitle": "Conan the Barbarian",
+    "mbArtist": "Basil Poledouris",
+    "mbFirstRelease": "1982",
+    "note": "1982 Milan 原盤為 Album+Soundtrack，不是合輯，不需標 Compilation。落地原因是自動流程誤取同分的 2011 年同名合輯（7205509a, Album+Compilation）。已逐一排除：2008《Conan The Barbarian (Complete Motion Picture Score)》（df1eebfe）、2010 City of Prague Philharmonic 世界首錄完整版（4bc51eb9）、2015 管風琴改編版（b758bcf4）、2011 合輯（7205509a）。"
+  },
+  "Kalyanji-Anandji|Don": {
+    "rgMbid": "4e9707cb-c362-35f8-acf3-ce2327b6448a",
+    "mbTitle": "Don",
+    "mbArtist": "Kalyanji Anandji, Anjaan & Indiwar",
+    "mbFirstRelease": "1977",
+    "note": "單片原聲帶 RG 為 4e9707cb（Album+Soundtrack），不是合輯。落地原因是自動流程誤取《Don / Laawaris》雙片合併片（861dc13e, Album+Compilation），且 MB 掛名把作詞者 Anjaan／Indiwar 併入 artist-credit、二人組名未用連字號（Kalyanji Anandji），使 artist 與 title 都不完全吻合。已排除 1998《Don / The Great Gambler / Shakti》（6abec11f）與《Don / Zanjeer / The Great Gambler》（1609f974）兩張跨片合輯，以及 2006 年重拍片（Shankar-Ehsaan-Loy）的同名原聲帶。上游年份差異：MB first-release-date 為 1977，候選 year 為 1978（電影 1978 年 5 月上映），建議上架時仍以 1978 為準並在 aliasReview 記錄此差異。"
+  },
+  "The Swan Silvertones|Love Lifted Me / My Rock": {
+    "rgMbid": "70ae1440-4024-3fc2-b526-df7902a1a93e",
+    "mbTitle": "My Rock / Love Lifted Me",
+    "mbArtist": "The Swan Silvertones",
+    "mbFirstRelease": "1991",
+    "releaseType": "Compilation",
+    "note": "候選記為「MusicBrainz 查無」但其 compEvidenceUrls 本身就帶了這個 release-group，經回查確認有效：MB 題名把兩張 LP 的順序寫成《My Rock / Love Lifted Me》，Discogs 與 Ace CDCHD 340 實體作《Love Lifted Me / My Rock》，兩者同一張 1991 年合併 CD——精確題名查詢因順序相反而零命中。Album+Compilation，掛名 The Swan Silvertones（另見 Swan's Silvertone Singers 寫法）。卡片 album 欄維持候選原題名。"
+  },
+  "The Five Blind Boys of Mississippi|You Done What the Doctor Couldn't Do": {
+    "rgMbid": "dc143db8-24c4-42b9-a07e-3166b03beaed",
+    "mbTitle": "You Done What The Doctor Couldn´t Do",
+    "mbArtist": "The Five Blind Boys of Mississippi",
+    "mbFirstRelease": "1989",
+    "releaseType": "Compilation",
+    "note": "候選記為「MusicBrainz 查無」但其 compEvidenceUrls 已帶此 release-group，回查有效。零命中的原因是 MB 題名用 U+00B4 尖音符寫成 Couldn´t（不是撇號 Couldn't），且 The 大寫；精確字串查詢因此對不上。Album+Compilation、1989 Ace／Peacock 盤，掛名 The Five Blind Boys of Mississippi（原盤掛 Archie Brownlee and the Five Blind Boys of Mississippi）。與 The Blind Boys of Alabama 為不同團，已確認未混。"
+  },
+  "Thomas A. Dorsey|Precious Lord: New Recordings of the Great Songs of Thomas A. Dorsey": {
+    "rgMbid": "7e1ec340-918e-34ee-b941-157d315b7432",
+    "mbTitle": "Precious Lord",
+    "mbArtist": "Thomas A. Dorsey",
+    "mbFirstRelease": "2008-02-01",
+    "releaseType": "Compilation",
+    "note": "MB 的 release-group 題名只有《Precious Lord》，其下唯一 release（fb458804）題名為《Precious Lord: Recordings of the Great Gospel Songs of Thomas A. Dorsey》——與候選採用的維基題名《…New Recordings of the Great Songs…》有兩處差異（少了 New、Songs 前多 Gospel），所以精確查詢零命中。已回查曲目確認是同一張 1973 Columbia 企畫：Legacy CK 57164、barcode 886972380124，演唱者為 Marion Williams、Alex Bradford、The Dixie Hummingbirds、Bessie Griffin、Sallie Martin、R. H. Harris & The Evening Kings，正是 Dorsey 作品的作者專輯。MB 掛名為 Thomas A. Dorsey（與 Apple／維基一致，非 Discogs 的 Various）。候選 risk 欄把這筆當成「另一筆 2008 年重發」，其實 MB 只有這一個 release-group，2008 就是 1973 原盤的 Legacy 再版，同一張碟。first-release-date 2008-02-01 是 MB 只登錄再版所致，候選 year 1973 為原盤年，以 1973 為準。"
+  },
+  "Will Ackerman|In Search of the Turtle's Navel": {
+    "rgMbid": "6074fe95-d88f-316f-9421-fe6f0a162ce6",
+    "mbTitle": "The Search for the Turtle's Navel",
+    "mbArtist": "William Ackerman",
+    "mbFirstRelease": "1976",
+    "note": "零命中有兩個原因，都在候選的 risk 欄預告過：MB 掛名用 William Ackerman（不是 Will Ackerman），題名用 1976 初版的《The Search for the Turtle's Navel》（不是 1977 再版後通行的《In Search of the Turtle's Navel》）。改以 artist 查得 MBID 5155c952-8353-4e75-a56e-12e67aefdcb3 後拉全目錄（21 筆），只有這一筆 turtle 相關條目，即本卡所指 Windham Hill 首作，primary-type=Album、1976。MB 未另建 1977 再版 RG，故兩種題名同指此 RG。卡片 artist／album 欄維持候選的 Will Ackerman 與 1977 後題名。"
+  },
+  "Jon Hassell|Dream Theory in Malaya: Fourth World Volume Two": {
+    "rgMbid": "94c8bc31-8717-3c8b-889b-b239621ae0c0",
+    "mbTitle": "Fourth World, Volume 2: Dream Theory in Malaya",
+    "mbArtist": "Jon Hassell",
+    "mbFirstRelease": "1981",
+    "note": "零命中純粹是題名順序不同：候選採英文維基寫法《Dream Theory in Malaya: Fourth World Volume Two》，MB 把系列名放前面作《Fourth World, Volume 2: Dream Theory in Malaya》，同一張 1981 EG 原盤。改拉 Jon Hassell 全目錄（28 筆）人工比對確認，同目錄中的 bc72eaef《Fourth World, Vol. 1: Possible Musics》是第一集、不可混。primary-type=Album、無 secondary-type。2017 Glitterbeat 加曲再版未另建 RG。卡片 album 欄維持候選原題名（但須與池內 Vol. 1 的題名寫法擇一致，避免同碟雙卡）。"
+  },
+  "浜瀬元彦|Reminiscence": {
+    "rgMbid": "f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8",
+    "mbTitle": "Reminiscence",
+    "mbArtist": "Motohiko Hamase",
+    "mbFirstRelease": "1986-01-25",
+    "note": "跨文字系統盲點加一個漢字差異：MB 的藝人實體登錄為「濱瀬元彦」（U+6FF1 濱），候選與本店慣用的是「浜瀬元彦」（U+6D5C 浜），而 release-group 的 artist-credit 又寫成羅馬拼音 Motohiko Hamase——三種寫法都不同，精確查詢必然零命中。以漢字與羅馬拼音雙查 artist 端都導向同一個 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，其全目錄僅 6 筆，《Reminiscence》1986-01-25、primary-type=Album，即 Shi Zen 原盤（2021 Studio Mule 再版未另建 RG）。同目錄另有《Intaglio》兩筆（1986／2018）與《♯NOTES OF FORESTRY》，非本卡。上架時 aliasReview 須同時記下 濱／浜 與羅馬拼音三種寫法。"
+  },
+  "Tommy Dorsey & Frank Sinatra|The Song Is You": {
+    "rgMbid": "932cd472-39a6-308e-86bc-4de477b895f1",
+    "mbTitle": "The Song Is You",
+    "mbArtist": "Tommy Dorsey, Frank Sinatra",
+    "mbFirstRelease": "1994-08-30",
+    "releaseType": "Compilation",
+    "note": "候選記為「MusicBrainz 查無」但其 compEvidenceUrls 已帶此 release-group，回查有效。零命中的原因是掛名：MB 的 artist-credit 為兩位藝人以逗號串接（Tommy Dorsey, Frank Sinatra），候選用 & 串接，`artist:\"Tommy Dorsey & Frank Sinatra\"` 對不上。Album+Compilation、1994-08-30 RCA Victor 五張裝。題名〈The Song Is You〉同時是 Jerome Kern 標準曲與 1943 年 Dorsey 單曲，本 RG 為 1994 套裝、無混淆。候選 year 1940 為錄音起始年。上架時 artist 欄放誰仍需店主定（池內既有 4 張 Sinatra 皆單獨掛名）。"
+  },
+  "Jack Teagarden|That's a Serious Thing": {
+    "manualIdentity": true,
+    "mbQueries": [
+      "release-group/?query=artist:\"Jack Teagarden\" AND releasegroup:\"That's a Serious Thing\"（自動流程原查詢，零命中）",
+      "artist/?query=Jack Teagarden → 79dcf09e-2290-4740-9edc-907f82420160（Jack Teagarden, US）",
+      "release-group?artist=79dcf09e-2290-4740-9edc-907f82420160&limit=100（全目錄 57 筆，未加 type 篩選，逐筆人工看過）",
+      "release-group?artist=8eb57a99-7b88-4af1-ac9e-ae62d10f3798&limit=100（掛名變體 Jack Teagarden and His Orchestra，13 筆，全為 Chronological Classics 系列與單曲）",
+      "release/?query=release:\"That's a Serious Thing\"（release 層搜尋，繞過 RG 題名）",
+      "release-group/?query=releasegroup:\"Serious Thing\"（放寬題名，7 筆全非本碟）"
+    ],
+    "conclusion": "MusicBrainz 目前確實沒有 RCA Bluebird 1990 年《That's a Serious Thing》（Jack Teagarden，Discogs master/570612）的條目。Teagarden 兩個掛名下共 70 筆 release-group 全部看過，RCA／Bluebird 系只有零星 78 轉單曲，結集全屬 Classics、ASV、Proper 等其他廠牌，無此題名。release 層搜尋唯一同名結果是 Eddie Condon 1998 年的同名輯（RG 63549a56-daa6-3af4-a523-7dfce992a490，Album+Compilation）——不同藝人、不同碟，絕不可代用（題名同源於 1928 年 Teagarden 與 Condon 合灌的〈That's a Serious Thing〉，這正是誤配風險所在）。走人工身分路線，上架前需自建 MB 條目。",
+    "note": "候選自己也註明「此輯收錄的實際結束年份未取得一手佐證，year 1928 為錄音起始年」——建檔時請一併確認收錄區間再寫 yearNote。另提醒：本筆是複查後從 ASV／Living Era《I Gotta Right to Sing the Blues》換過來的版本，而 MB 有兩筆同名的 ASV 系 RG（ed856c99、52920694），若日後改回舊選擇可直接用它們。"
+  },
+  "Sidney Bechet|The Victor Sessions: Master Takes 1932-43": {
+    "rgMbid": "1625b17b-49d1-4aa1-a1f9-adcf8d19ffcb",
+    "mbTitle": "Master Takes: Victor Sessions (1932-1943)",
+    "mbArtist": "Sidney Bechet",
+    "mbFirstRelease": "1990-09-20",
+    "releaseType": "Compilation",
+    "note": "候選記「MusicBrainz 查無、需自建條目」有誤：MB 有此條目，只是把主副標對調成《Master Takes: Victor Sessions (1932-1943)》（候選作《The Victor Sessions: Master Takes 1932-43》），且年份區間寫成完整四位數，精確題名查詢因此零命中；改以 release 層搜尋 release:\"Victor Sessions\" AND artist:Bechet 即命中。Album+Compilation、1990-09-20 RCA Bluebird 三張裝，掛名 Sidney Bechet。與池內既有《The Best of Sidney Bechet》（Blue Note）為不同時期、不同 RG。卡片 album 欄維持候選原題名。"
+  },
+  "Nat King Cole Trio|The Best of the Nat King Cole Trio: The Vocal Classics (1942-1946)": {
+    "rgMbid": "c65dcc7f-a0cc-3fe0-8eb2-5efa8f15f73b",
+    "mbTitle": "The Best of the Nat King Cole Trio: Vocal Classics (1942–1946)",
+    "mbArtist": "The Nat King Cole Trio",
+    "mbFirstRelease": "1995",
+    "releaseType": "Compilation",
+    "note": "候選記為「MusicBrainz 查無」但其 compEvidenceUrls 已帶此 release-group，回查有效。零命中有三處字面差異：MB 題名的副標沒有 The（Vocal Classics，候選作 The Vocal Classics）、年份區間用 U+2013 en dash（1942–1946，候選用 ASCII 連字號）、掛名帶 The（The Nat King Cole Trio）。Album+Compilation、1995 Capitol 盤。同系列另有《The Instrumental Classics》與《The Vocal Classics 1947-1950》，題名極近，須以年份區間區辨，本 RG 確為 1942–1946 人聲卷。候選 year 1942 為錄音起始年，MB first-release-date 1995 為發行年。掛名是否併入池內既有的 Nat King Cole（5 張）仍需店主決定。"
+  },
+  "Various Artists|From Spirituals to Swing: The Legendary 1938 & 1939 Carnegie Hall Concerts": {
+    "rgMbid": "bb4e0bb4-2062-395f-ad20-c1a9b2aa6a9f",
+    "mbTitle": "From Spirituals to Swing: Carnegie Hall Concerts 1938/1939",
+    "mbArtist": "Various Artists",
+    "mbFirstRelease": "1979",
+    "releaseType": "Compilation",
+    "note": "候選記為「MusicBrainz 查無」但其 compEvidenceUrls 已帶此 release-group，回查有效；零命中是因為 MB 的 RG 題名用 1979 年那版的《…Carnegie Hall Concerts 1938/1939》，而候選採 1999 擴充版題名《…The Legendary 1938 & 1939 Carnegie Hall Concerts》。**兩者是同一個 release-group**：已回查其下的 1999-08-24 release（46aea9eb，Vanguard 3VCD 169/71-2、三片 CD 21/16/20 軌），確認候選所指的 1999 三張裝就掛在這個 RG 底下，另含 1979、1987、1997 三種版本。primary-type=Album、secondary-types=Compilation+Live。掛名 Various Artists，與 c-33 合輯批慣例一致。candidate year 1938 為演出起始年（本線特例），MB first-release-date 1979 為 MB 收錄的最早版本年，實際首次發行為 1959 Vanguard。上架時請把封面與試聽鎖定在 1999 三張裝版。"
+  },
+  "Prince Jammy|Prince Jammy Destroys the Invaders": {
+    "rgMbid": "d3b38231-baff-3b5d-b786-3811f1d7bba1",
+    "mbTitle": "Destroys the Invaders...",
+    "mbArtist": "Prince Jammy",
+    "mbFirstRelease": "1982",
+    "note": "零命中的原因如候選 risk 欄所料：MB 把藝人名從題名裡拆出去，release-group 題名只剩《Destroys the Invaders...》（還帶刪節號），封面題名則是《Prince Jammy Destroys the Invaders》。改拉 Prince Jammy 全目錄（MBID 7d2f071d-ffa4-4ce7-bea2-0685374c1b2a，34 筆）人工比對即找到，primary-type=Album、1982、掛名 Prince Jammy（非 King Jammy）。已確認與 Scientist《Scientist Meets the Space Invaders》(1981) 為不同 RG、不同製作人，未混。卡片 album 欄維持候選原題名。"
+  },
+  "Tapper Zukie|Man Ah Warrior": {
+    "rgMbid": "c42c0155-6950-3acd-9958-c986c323660b",
+    "mbTitle": "Man Ah Warrior",
+    "mbArtist": "Topper Zukie",
+    "mbFirstRelease": "1973",
+    "note": "題名與 MB 完全一致，零命中純粹是掛名：MB 的 release-group artist-credit 沿用 Klik 原盤印刷的「Topper Zukie」，而藝人實體本身登錄為「Tapper Zukie」（MBID 862c35ad-044f-42fd-9855-8a918d955e69）——artist 端用哪一種拼法查都導到同一個實體，但 `artist:\"Tapper Zukie\"` 的精確查詢對不上 credit 字串。拉全目錄（21 筆）確認《Man Ah Warrior》只有這一筆，primary-type=Album、1973 Klik 原盤，1970 年代多種 Mer／Klik 再版未另建 RG。卡片 artist 欄維持通行的 Tapper Zukie。"
+  },
+  "R. D. Burman|Teesri Manzil": {
+    "rgMbid": "6a1a1991-b1f1-4dd7-88f7-72d74bf96c38",
+    "mbTitle": "Teesri Manzil",
+    "mbArtist": "Rahul Dev Burman & Majrooh",
+    "mbFirstRelease": "1966",
+    "note": "零命中的原因是掛名寫法：MB 的藝人實體是全名「Rahul Dev Burman」（MBID 0278f30f-266b-4261-ba3a-67491555eab0），release-group 的 artist-credit 更寫成「Rahul Dev Burman & Majrooh」（併入作詞者 Majrooh Sultanpuri），候選用的是通行縮寫「R. D. Burman」。拉全目錄（339 筆）比對，《Teesri Manzil》只有這一筆，primary-type=Album、secondary-type=Soundtrack、1966，與候選 year 1966（HMV／Saregama）一致。已確認與其父 S. D. Burman（不同藝人實體）未混，也無多次再版造成的重複 RG。卡片 artist 欄維持 R. D. Burman。"
+  },
+  "Tan Dun 譚盾|Crouching Tiger, Hidden Dragon": {
+    "rgMbid": "0847782f-6cbe-3890-84ab-f7a345676e5e",
+    "mbTitle": "Crouching Tiger, Hidden Dragon",
+    "mbArtist": "谭盾",
+    "mbFirstRelease": "2000-10-18",
+    "note": "跨文字系統盲點：MB 的藝人與 artist-credit 都用**簡體**「谭盾」，候選用的是本店慣例「Tan Dun 譚盾」（繁體），所以 `artist:\"Tan Dun 譚盾\"` 精確查詢零命中。以 Tan Dun 與 譚盾 兩輪 artist 查詢都導向同一個實體 0a94a7ff-f7f4-4b07-8a3b-c3daa4ce2fb8，其全目錄 27 筆中《Crouching Tiger, Hidden Dragon》僅此一筆，primary-type=Album、secondary-type=Soundtrack、2000-10-18 Sony Classical 原盤，artist-credit 未拆成 Yo-Yo Ma / Tan Dun。已排除 2016 年梅林茂為續集所作的《Crouching Tiger, Hidden Dragon: Sword of Destiny》（d1616b67）。卡片 artist 欄維持池內既有的「Tan Dun 譚盾」以免與《Ghost Opera》分裂；aliasReview 須記下簡體 谭盾 這個寫法。"
+  }
+}

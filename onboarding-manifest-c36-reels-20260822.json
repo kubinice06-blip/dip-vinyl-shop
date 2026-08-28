@@ -1,0 +1,1852 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-36-reels-20260822",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "森下登喜彦",
+      "album": "妖怪幻想",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "6a197692-c6a0-4a31-83cf-6cd85f50eb5f",
+        "upc": "4988002597185",
+        "aliasesChecked": true,
+        "aliasReview": "MB 條目標題作「妖怪幻想 水木しげる」、藝人 credit 為森下登喜彦；水木しげる（中文作水木茂）是監修與插畫者，作曲者是森下登喜彦，卡片用名取作曲者正確。日籍藝人依店規用日文本名漢字「森下登喜彦」（注意不是繁體的「彥」），拉丁轉寫為 Tokihiko Morishita，Apple JP 2010年復刻掛名「RMC & 森下 登喜彦」，RMC 為錄音團隊代號，非另一位藝人；查無同名混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 5,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1978年Victor（KVX-1039）的合成器妖怪音響設計盤，日本電子／實驗地下圈公認的特色品，一般玩家幾乎撞不到，且全碟無旋律可依附。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "heresy",
+        "reason": "十首皆為依水木茂畫作而作的合成器音響設計，沒有節拍與旋律骨架，Victor原盤與2010年復刻皆歸類電子／musique concrète、實驗，明確不以悅耳為目的，符合異端門檻。",
+        "evidenceUrls": [
+          "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054",
+          "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f"
+        ]
+      },
+      "description": {
+        "text": "《鬼太郎》作者水木茂繪製各種日本傳統妖怪，森下登喜彦再依畫作以電子合成器設計聲音，共同完成這張「妖怪音響學」唱片。除了河童、座敷童，還收錄一反木綿、ぬらりひょん、砂かけ婆等台灣較陌生的妖怪，每首製作耗時超過五十小時。內容並非以悅耳為目的，而是聲響設計的百鬼夜行，一場「用耳朵見鬼」的體驗；內頁插畫全出自水木之手。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DLkZh8DyJxi/",
+          "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f",
+          "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/88/b6/3e/88b63ec3-f942-a390-0645-05a9408e1e7a/mzaf_437588174484120876.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "日本盤需用 jp 商店＋日文原題；自動配對只因 collectionName 是羅馬字「Yokai Genso (Kaisetsu.E Shigeru Mizuki)」、掛名寫成「RMC & 森下 登喜彦」而被判 noMatch。collectionId 369124054（jp，℗ Victor Entertainment，即 MB 那筆 Victor KVX-1039 的 2010 再版）曲目表與 MB 原盤十曲完全同序：河童／一反木綿／座敷童／ぬらりひょん／震震／狸囃子／砂かけ婆／小豆洗い／子泣き爺／べとべとさん。首曲〈河童〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB first-release 1978，與 Victor KVX-1039 原盤年份一致；Apple 上的 2010 年為 Victor Entertainment 復刻版年份，不採用。",
+        "mbTitle": "妖怪幻想 水木しげる",
+        "mbArtist": "森下登喜彦",
+        "mbFirstRelease": "1978",
+        "upcNote": "妖怪幻想 水木しげる (2010-10-04 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "J・A・シーザー",
+      "album": "田園に死す",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "4154fb44-66f9-4564-8350-9b9d0e5c24f7",
+        "upc": "4948722104995",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為片假名藝名「J・A・シーザー」，本名寺原孝明（Takaaki Terahara）；因官方藝名本身即為藝名而非拉丁本名，依店規保留日文寫法。西文常見拼作 J. A. Seazer 與 J. A. Caesar 兩種，中文圈亦見「J·A·凱撒」，同一人。專輯名《田園に死す》與寺山修司1965年同名歌集、1974年同名電影共用標題，此卡指的是CBS/Sony發行的電影原聲帶，非歌集或電影本身，已排除混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/4154fb44-66f9-4564-8350-9b9d0e5c24f7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；寺山修司／天井桟敷體系最被推崇的原聲帶之一，電影入選坎城主競賽並列《大アンケートによる日本映画ベスト150》第112位；唱片本身仍屬日本地下深度收藏，齊唱、咒術式聲響對一般耳朵相當難進入。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在日本前衛／寺山修司相關錄音中地位穩固，但缺乏跨語系、跨來源的長期正典共識，未達殿堂門檻；硬蕊評 4 亦未到異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "寺山修司1974年半自傳電影《田園に死す》的原聲帶，由其劇團「天井棧敷」御用音樂家J・A・シーザー作曲、寺山填詞。編曲把日本佛教「御詠歌」的吟唱感帶進童謠、民俗聲響與迷幻搖滾，並以三十弦琴、琵琶、箏、和太鼓等傳統樂器與電吉他、貝斯交織。東西方交錯出如宗教儀式與招魂咒術般的詭譎氛圍，並非舒適的聆聽，而是帶來衝擊的實驗聲響。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DVoFDlhj_qP/",
+          "https://musicbrainz.org/release-group/4154fb44-66f9-4564-8350-9b9d0e5c24f7",
+          "https://en.wikipedia.org/wiki/Pastoral:_To_Die_in_the_Country",
+          "https://en.wikipedia.org/wiki/J._A._Seazer"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1974,
+        "yearNote": "MB first-release 1974-12-21，與 CBS/Sony 原盤（SOLL-100）在電影1974年12月上映前一週發行的紀錄相符。",
+        "mbTitle": "田園に死す",
+        "mbArtist": "J・A・シーザー",
+        "mbFirstRelease": "1974-12-21",
+        "upcNote": "田園に死す (2002-08-25 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Fraction",
+      "album": "Moon Blood",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "030fc8f2-2cd9-3ca3-bd50-306886b01db3",
+        "upc": "5051125301713",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Fraction」與卡片一致，為1971年洛杉磯北好萊塢的樂團（Jim Beach 主唱、Don Swanson 吉他、Curt Swanson 鼓、Victor Hemme 貝斯、Robert Meinel 節奏吉他）。同名的英國電子計畫 Fraction 與加拿大視聽計畫 Fraction 均為後起、不同實體，已排除；唱片名亦見寫成單字 Moonblood 的拍賣品項，指同一張。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/030fc8f2-2cd9-3ca3-bd50-306886b01db3/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；private press 重迷幻圈長年公認的名品，但知名度幾乎全來自稀有度與後續復刻，非樂史主線；原壓僅約200張，屬收藏家領域；音樂粗礪但仍有明確riff與歌唱結構。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "僅在自主壓片迷幻的次領域享有盛名，缺乏跨來源的樂史正典共識；本環境取不到 listeners，流亡一律不合格，惟原壓200張、長年僅靠部落格流傳，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1971年，一群北好萊塢的藍領工人組成Fraction，只租得起三小時錄音室，以現場同步一次錄完這張唯一的作品，僅壓製兩百張便消聲匿跡，十多年後才被挖掘出土。專輯名取自《啟示錄》「滿月變紅像血」，奠定後末日廢土與宗教氛圍。樂風介於The Doors的陰冷迷幻與Black Sabbath的沉重之間，粗糙的錄音反而保留了原始的毛邊與顆粒感，野蠻而純粹。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DWEHe1Pj3_j/",
+          "https://musicbrainz.org/release-group/030fc8f2-2cd9-3ca3-bd50-306886b01db3",
+          "https://ridingeasyrecords.bandcamp.com/album/moon-blood"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b8/b9/96/b8b996bd-683c-92cf-09bf-18f87dba03c1/mzaf_1460556165727561555.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1694806317,
+        "appleCollectionName": "Moon Blood"
+      },
+      "research": {
+        "suggestedYear": 1971,
+        "yearNote": "MB first-release 1971，與 Angelus（WR-5005）原壓、1971年初於 Glendale 的 Whitney's Studio 錄音的記載一致。",
+        "mbTitle": "Moon Blood",
+        "mbArtist": "Fraction",
+        "mbFirstRelease": "1971",
+        "upcNote": "Moon Blood (2010 GB)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Elmo Hope Sextet",
+      "album": "Informal Jazz",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3003fbcb-ca2d-4e92-9538-3c23db622bf2",
+        "upc": "753088704369",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Elmo Hope Sextet」與卡片一致，本名 St. Elmo Sylvester Hope。同一份1956年5月7日 Van Gelder 錄音另以《Two Tenors》為題、改掛 John Coltrane／Hank Mobley 名義重發（同編號 PRLP 7043，1969年再版），屬同一張唱片的改題，非另一作品，卡片採原題與原掛名為準。另與 Elmo Hope 其他 Prestige 三重奏作品無混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3003fbcb-ca2d-4e92-9538-3c23db622bf2/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 1956年名盤級陣容的 hard bop 現場感錄音，評價穩健但非該廠牌首選；靠 Coltrane 之名長年在爵士樂迷圈流通，非收藏家才知；四首中規中矩的長篇即興，入耳無礙。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "陣容華麗但當代與後世評價皆屬中上（AllMusic 三星），未形成史上核心的跨來源共識，不具殿堂資格。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1956年Elmo Hope六重奏錄下的hard bop作品，樂手包含Donald Byrd、Hank Mobley、John Coltrane、Paul Chambers與Philly Joe Jones，如今看來是爵士夢幻隊，當時卻都還是年輕人。領隊鋼琴家Elmo Hope一生時不我予，這張後來被廠牌改題為《Two Tenors》、改掛Coltrane與Mobley之名重發，他自己反而從封面消失。他堅持踏實彈穩每個音符，名氣始終不及同儕，多年後才靠復刻與再評價討回公道。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DW_mxq6D9PZ/",
+          "https://musicbrainz.org/release-group/3003fbcb-ca2d-4e92-9538-3c23db622bf2",
+          "https://en.wikipedia.org/wiki/Informal_Jazz",
+          "https://en.wikipedia.org/wiki/Elmo_Hope"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/04/32/35/0432356b-0268-950e-0f80-a4e7675307c7/mzaf_17201815899904561229.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "us 商店只回到合輯《Trio and Quintet》（20 曲，非本盤）故自動配對落空；改用 jp 商店命中 collectionId 685863666《Informal Jazz》（4 曲，1956-05-07）。曲目表 Weeja／Polka Dots and Moonbeams／On It／Avalon 與 MB Prestige PRLP 7043 原盤四曲同序、時長一致，非精選輯。已排除同名 4 曲的 651921648（另一家 PD 廠）與《Classic Hope, Vol. 4》。首曲〈Weeja〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1956,
+        "yearNote": "MB first-release 1956，與 1956年5月7日錄音、同年9至10月由 Prestige（PRLP 7043）發行的紀錄一致。",
+        "mbTitle": "Informal Jazz",
+        "mbArtist": "Elmo Hope Sextet",
+        "mbFirstRelease": "1956",
+        "upcNote": "Informal Jazz (2013 US)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Sensational Guitars of Dan & Dale",
+      "album": "Batman and Robin",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "984e3c0b-03f2-3c66-ac6d-dfc69c7258ef",
+        "upc": "8026575016224",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為「The Sensational Guitars of Dan & Dale」，這是 Tifton 廠牌的虛構團名而非真實樂團；實際演奏者為 Sun Ra（Hammond B-3）與 Arkestra 的 John Gilmore、Pat Patrick，加上 Blues Project 的 Danny Kalb、Steve Katz、Andy Kulberg、Roy Blumenfeld。後續復刻常改掛「Sun Ra & The Blues Project」或「Sun Ra / The Blues Project」，指同一張1966年 Tifton S-78002；與 Neal Hefti 的電視原聲帶《Batman Theme》及其他蝙蝠俠搭車盤無關。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/984e3c0b-03f2-3c66-ac6d-dfc69c7258ef/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；廉價廠牌的蝙蝠俠搭車企劃，本身無樂史份量，但因 Sun Ra 與 Blues Project 同場而成為爵士／迷幻收藏的著名奇品，需要深度愛好者才會追；音樂是好懂的器樂搖滾。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "是靠參與者身分成立的話題性收藏品，不具作品層面的長期正典地位，不符殿堂；音樂平易，也不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Dan & Dale是個虛構團名，代表一群替廉價廠牌錄速食唱片的職業樂手。1966年製作人Tom Wilson為搭蝙蝠俠熱潮臨時召集樂團入棚，樂手錄音前根本不知要錄什麼。當天鍵盤手缺席，Wilson臨時找來太空爵士開創者Sun Ra頂替，還帶上Arkestra兩名薩克斯風手。音樂本身聽不出與Sun Ra的關聯，正因如此「不像Sun Ra」，加上蝙蝠俠封面，反而成了樂迷鍾愛的異色收藏。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DPyrFsOjx1q/",
+          "https://musicbrainz.org/release-group/984e3c0b-03f2-3c66-ac6d-dfc69c7258ef",
+          "https://sunramusic.bandcamp.com/album/batman-and-robin"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e9/ab/86/e9ab8643-0deb-1410-21bd-c143ba668c1e/mzaf_2357921487482578227.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "us 商店 collectionId 342680185，掛名寫成「The Sensational Guitars of Dan and Dale & Sun Ra & The Blues Project」（實際錄音班底就是 Sun Ra 樂團＋The Blues Project，非別張專輯），自動比對因此字面落空。12 曲與 MB Trifton S-78002 原盤完全同序：Batman Theme…The Bat Cave。首曲〈Batman Theme〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "MB first-release 1966-01；Tifton（S-78002）1966年單聲道與立體聲兩版同年推出，取1966。",
+        "mbTitle": "Batman and Robin",
+        "mbArtist": "The Sensational Guitars of Dan & Dale",
+        "mbFirstRelease": "1966-01",
+        "upcNote": "Batman and Robin (2001-05 IT)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Masabumi Kikuchi Quintet",
+      "album": "End For The Beginning",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "041fd338-0b5f-4cf8-848f-459f44e39ed0",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為拉丁轉寫「Masabumi Kikuchi Quintet」，與卡片一致；依店規日籍藝人應以日文本名為準，正名應是「菊地雅章クインテット」（菊地雅章，暱稱 Poo），建議上游評估是否統一改為日文寫法。常見誤植為「菊池雅章」（池）須避免。專輯名日文作《エンド・フォー・ザ・ビギニング》，與 Elvin Jones 樂團時期的《Hollow Out》《Poo-Sun》非同一作，已排除混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/041fd338-0b5f-4cf8-848f-459f44e39ed0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；和ジャズ收藏圈評價高、近年由 Production Dessinée 復刻，但在菊地雅章作品序列中仍次於《Poo-Sun》《Hollow Out》；原盤屬深度愛好者領域，長篇原創modal演奏偏長但可聽。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "和ジャズ領域內受推崇，卻沒有跨來源、跨語系的長期核心共識，未達殿堂門檻；硬蕊 3 亦不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1973年初春，鋼琴家菊地雅章即將定居美國、投入Elvin Jones的樂團，赴美前他召集一支傳統編制的五重奏，找來薩克斯風手峰厚介助陣，在東京的公開錄音留下這張帶著現場熱度的告別作。全碟皆為原創，帶入日本傳統音樂的語彙，細膩如畫，像是對故鄉的鄭重道別。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DLSIbEnvo6R/",
+          "https://musicbrainz.org/release-group/041fd338-0b5f-4cf8-848f-459f44e39ed0",
+          "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/96/9e/f2/969ef2a9-d434-16de-0679-94f93e36d540/mzaf_9179430853668030431.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "jp 商店 collectionId 1443736374《End For the Beginning》（藝人欄寫日文「菊地雅章」故字面比對失敗）。曲目表為日文曲名，與 MB Philips FX-8527 原盤五曲一一對應同序：驟雨=Drizzling Rain／銀界=Gin-Kai／賞賛と嫌悪(ミスター・アウト)=Admire, But Detest／ベル=Bell／グリーン・ダンス=Green Dance。首曲〈驟雨〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1973,
+        "yearNote": "MB first-release 1973；1973年3月於東京ビクター・スタジオ公開錄音，同年由 Philips 日本盤發行。",
+        "mbTitle": "End For The Beginning",
+        "mbArtist": "Masabumi Kikuchi Quintet",
+        "mbFirstRelease": "1973",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Barney Wilen",
+      "album": "Zodiac",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "release-group/?query=artist:\"Barney Wilen\" AND release:Zodiac",
+            "release-group/?query=release:Zodiac AND artist:Wilen",
+            "release/?query=artist:\"Barney Wilen\" AND release:Zodiac",
+            "release-group?artist=4a0f81a8-0e00-4049-a305-33470ea8fc52 (browse 全 32 筆 release-group)"
+          ],
+          "checkedAt": "2026-08-22T01:09:12.168Z",
+          "conclusion": "MusicBrainz 完全沒有這張。Barney Wilen 本人實體 4a0f81a8-0e00-4049-a305-33470ea8fc52 的 32 筆 release-group 逐筆看過，1966 年前後只有 Le Nouveau Jazz(1967)、Jazz Meets India(1967)、Auto Jazz(1968)，沒有任何 Zodiac；release 層級查詢亦為空。但唱片本身可考證：Zodiac 為 Barney Wilen 1966 年 Disques Vogue 原盤，封面由漫畫家 Siné 繪製，2022 年由 We Are Busy Bodies／Souffle Continu 依 Wilen 家族私藏首版做官方授權復刻（限量 1000 張），與店家描述的『母帶佚失、2022 年家族提供私藏首版修復再版』一致，故走人工身分而非退回。"
+        },
+        "manualEvidenceUrls": [
+          "https://barneywilenfr.bandcamp.com/album/zodiac",
+          "https://en.wikipedia.org/wiki/Barney_Wilen",
+          "https://musicbrainz.org/artist/4a0f81a8-0e00-4049-a305-33470ea8fc52"
+        ],
+        "manualRuling": "英文維基百科 Barney Wilen 條目的作品列表明載《Zodiac》（Vogue, 1966），與其1960年代中後期轉向搖滾與自由爵士的敘述吻合；藝人官方 Bandcamp 的 Zodiac 頁面進一步給出原始廠牌 Disques Vogue、1966年、封面繪者 Siné、完整十二首法文星座曲名，以及編制 Barney Wilen（次中音薩克斯風）、Jacques Thollot（鼓）、Karl Berger（顫音琴／鋼琴）、Jean-François Jenny-Clark（低音提琴），並說明2022年 We Are Busy Bodies 是依 Wilen 本人私藏首版修復、限量1000張的官方授權復刻。兩份來源的年份、廠牌、封面繪者與樂手名單互相吻合，且與本卡封面圖上印出的四個名字逐一對得上，足以確認這張唱片確實存在，且就是1966年 Vogue 的 Zodiac 而非同名他作。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名「Barney Wilen」為其通行藝名，本名 Bernard Jean Wilen（1937–1996），法國籍；MusicBrainz 雖有藝人實體 4a0f81a8-0e00-4049-a305-33470ea8fc52，其32筆 release-group 中查無本作，故走人工身分。與同期法國自由爵士的 François Tusques、Jean-François Jenny-Clark 等合作者非同一掛名；專輯名 Zodiac 與 Roy Ayers、Cybotron 等同名作品無關，已排除。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/95/d5/3695d525-e4c9-454a-1b5c-fce53de02b7e/634457097223.png/1000x1000bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "無 rgMbid（MB 查無此盤，已再次覆核 Barney Wilen 名下 40 筆 RG 沒有 Zodiac），CAA 兩層皆不可用；改用 Apple 官方封面 collectionId 1617387593（fr/us/gb/jp/tw 五個商店都是同一筆）。已下載 400x400 目視確認：Siné 繪製的粉紅人體解剖圖、四周框住十二星座圖案，左上印「Barney Wilen」，右側印「COLLECTION LOISIRS」與 MONO-STÉRÉO 標，並列出 Jean-François Jenny-Clark／Jacques Thollot／Karl-Heinz Berger 三位樂手＝Zodiac 原班人馬，即 1966 Disques Vogue 原盤畫面。api.discogs.com 佐證：原盤 1966 France, Disques Vogue / Collection Loisirs, CLVLX 91 30（release 1630086）；此圖來自 2022 We Are Busy Bodies 官方復刻 WABB-118（release 22362574），沿用原封面，非別張專輯。1000x1000bb.jpg 實測 200。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wilen 從bebop轉向自由爵士時期的關鍵冷門盤，1966年 Vogue 原壓銷量極差、母帶佚失，2022年才有官方復刻，屬收藏家／學術領域；十二首短曲以破碎不規則的自由爵士語法寫成，入耳門檻高但仍有主題可循。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "歐洲自由爵士的重要側翼作品，但長期近乎絕跡、缺乏持續的跨來源正典討論，不足以列入殿堂；硬蕊 4 未達異端門檻。本環境無 listeners，流亡不評，惟原盤稀有、2022年前幾無流通，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "法國薩克斯風手Barney Wilen 1966年為好友一部「不存在的電影」——受克蘇魯文學影響、最終只停在分鏡階段的超級英雄動畫——所寫的配樂。電影沒拍成，他們便以「黃道十二宮」概念建構出以音樂為敘事主體的聲音電影；正逢自由爵士盛行，Wilen放棄拿手的悠揚旋律，改以破碎、不規則、極具張力的自由爵士刻畫各星座性格。每首僅兩三分鐘，封面可愛內容卻驚人，當年銷量極差、母帶佚失，直到2022年才由家族提供私藏首版修復再版。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DTc31WpDyRD/",
+          "https://barneywilenfr.bandcamp.com/album/zodiac",
+          "https://en.wikipedia.org/wiki/Barney_Wilen"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1966,
+        "yearNote": "原盤為1966年法國 Disques Vogue 發行（Collection Loisirs 系列），2022年 We Are Busy Bodies／Souffle Continu 依家族私藏首版官方授權復刻，年份取原盤1966。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "辛曉琪",
+      "album": "一夜之間",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "cf53b1c9-0031-4092-93ad-bdbfb91a27d1",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 與卡片同為中文本名「辛曉琪」（簡體作辛晓琪、英文 Winnie Hsin），1962年生於台中，非韓籍或日籍，無跨文字系統爭議。專輯名《一夜之間》與同名主打曲相同，MB 該 release-group 僅一筆1991年台灣官方發行，與她1994年滾石時期的《領悟》《味道》分屬不同公司，未見同名合輯混淆。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/00/c5/41/00c541eb-c96c-e62e-6e68-e687a816c234/70008_cover.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "CAA 的 release-group 與 release 兩層皆 404;改用台灣區 Apple Music 官方封面(collectionId 556505728)。原圖是卡帶版直式掃圖(650x1000),改用 Apple 的 bf 變體取得 1000x1000 方形且完整保留標題「一夜之間,會有多少改變?」(sr 方形裁切變體會切掉下方標題),已下載目視確認為福茂 1991 原盤",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1991年福茂時期的第三張國語專輯，品質整齊但屬她成名前的作品，非首選；相對於1994年後的滾石時期，這批早期錄音在一般聽眾間流通極少；編曲與唱腔直白好入耳。"
+      },
+      "rarity": "common",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "為歌手成名前的商業流行專輯，無跨來源的長期樂史共識，也不具極端聆聽門檻，三個頂點皆不符。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "辛曉琪早期的作品，延續八〇年代國語歌曲的悲壯感編曲；她本攻古典聲樂，唱腔厚實飽滿，與現代流行的輕盈截然不同。最有意思的是名單裡的外國名字Neil Boisen——中文名倪柏聖，八〇年代末來台、曾與庾澄慶等人合作的台灣流行樂壇藏鏡人，〈放棄你〉正出自他手，他也掛名該曲製作。他與辛曉琪錄音時常不照譜、加入爵士即興，那些她以為「唱錯」的NG片段，在他眼裡才最有生命力。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DNVhU5GPohK/",
+          "https://musicbrainz.org/release-group/cf53b1c9-0031-4092-93ad-bdbfb91a27d1",
+          "https://zh.wikipedia.org/zh-tw/%E4%B8%80%E5%A4%9C%E4%B9%8B%E9%96%93"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/23/8f/a9/238fa969-b9c5-803f-48ba-4d6c113307f2/mzaf_9226215728418043171.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "華語盤需用台灣商店(country=tw),jp/us 商店查詢一律落空;首曲〈一夜之間〉試聽實測 200"
+      },
+      "research": {
+        "suggestedYear": 1991,
+        "yearNote": "MB first-release 1991、僅一筆台灣官方版；Apple 版權標示為 1991 Linfair Records Limited、發行日 1991-03-07，與封面 LINFAIR（福茂）廠標一致。",
+        "mbTitle": "一夜之間",
+        "mbArtist": "辛曉琪",
+        "mbFirstRelease": "1991",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Jan Garbarek",
+      "album": "Places",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0d7ed818-c868-3fe5-a53f-06417f049874",
+        "upc": "042282919526",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Jan Garbarek」與卡片一致，挪威籍，拉丁本名無跨文字系統問題。此作實為四重奏（Garbarek 薩克斯風、Bill Connors 吉他、John Taylor 鋼琴／管風琴、Jack DeJohnette 鼓），MB 仍以領銜者掛名，卡片沿用無誤。專輯名 Places 與 Brad Mehldau、Georgie Fame 等人的同名作品不同，已排除；亦非 ECM 後續的《Photo with…》系列。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0d7ed818-c868-3fe5-a53f-06417f049874/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ECM 1118，Penguin Guide 四星並稱其為由一首長曲主導的小型精品，是 Garbarek 七〇年代北歐爵士路線的主要作品之一；屬爵士樂迷領域而非大眾曲目；四首長篇、留白多、色調單一，需要專注。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "是ECM北歐路線的重要作品，但評價分歧（AllMusic 稱其偏於安靜、Rolling Stone 爵士指南僅三星），未形成史上核心的一致共識，不符殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "挪威薩克斯風手Jan Garbarek與ECM廠牌的招牌之作，北歐爵士那種空間感與極簡氛圍的典型。這不是拿來輕鬆聽的背景音樂，而是會讓人放下手邊事、屏息專注的演奏。每首畫面性極強，常與封面風景呼應——〈Going Places〉如風光明媚的清晨出發，〈Passing〉如在濃霧小徑緩行、霧散後目的地就在不遠處。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DMfayZoPqFV/",
+          "https://musicbrainz.org/release-group/0d7ed818-c868-3fe5-a53f-06417f049874",
+          "https://en.wikipedia.org/wiki/Places_(Jan_Garbarek_album)"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/80/b4/6e/80b46e06-5695-f6c8-9b15-41b6f5246cad/mzaf_7265773056002676104.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1442908714,
+        "appleCollectionName": "Places"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB first-release 1978，與1977年12月錄音、1978年由 ECM（ECM 1118）發行的紀錄一致。",
+        "mbTitle": "Places",
+        "mbArtist": "Jan Garbarek",
+        "mbFirstRelease": "1978",
+        "upcNote": "Places (1986-07-08 DE)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "John Coltrane Quartet",
+      "album": "Ballads",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ec33b3fb-1d60-3c15-8990-7aa49e0844f0",
+        "upc": "022925460721",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「John Coltrane Quartet」與卡片一致，也是葛萊美名人堂名冊上的掛名寫法；Apple 與多數再版則簡化為 John Coltrane。實際編制為 Coltrane（次中音薩克斯風）、McCoy Tyner（鋼琴）、Elvin Jones（鼓），低音提琴由 Jimmy Garrison 與 Reggie Workman 分擔，非固定四人。專輯名 Ballads 與 Dexter Gordon、Kenny Burrell 等人的同名合輯不同，已排除；亦非2002年 Deluxe Edition 的雙碟企劃本身。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ec33b3fb-1d60-3c15-8990-7aa49e0844f0/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 1,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Impulse! A-32，2008年入選葛萊美名人堂，是爵士抒情演奏的公認範本、Coltrane 流通量最大的作品之一；入門者最容易遇到的一張，旋律直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "2008年獲葛萊美名人堂（Grammy Hall of Fame）表彰，數十年來被持續視為爵士抒情演奏的標準參照，與經典古典四重奏編制（McCoy Tyner、Jimmy Garrison、Elvin Jones）同列 Coltrane 正典，具跨來源長期共識。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Ballads_(John_Coltrane_album)",
+          "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)"
+        ]
+      },
+      "description": {
+        "text": "在《Giant Steps》《My Favorite Things》《Africa/Brass》等挑戰極限的作品之後，被稱作「最憤怒的薩克斯風手」的Coltrane決定緩下來，證明抒情歌一樣能駕馭。要在緩慢與留白中維持飽滿音色與情感穿透力，考驗的功力不輸技巧派。選曲是樂團沒演奏過的抒情流行歌，錄音當天才挑譜、進棚討論編曲後一次錄成。這是Coltrane最柔情的時刻，能反覆聆聽、感受爵士最純粹的美。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DVD53BFDw_e/",
+          "https://musicbrainz.org/release-group/ec33b3fb-1d60-3c15-8990-7aa49e0844f0",
+          "https://en.wikipedia.org/wiki/Ballads_(John_Coltrane_album)"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/9f/ee/f89fee08-2679-f9a2-67f6-791c47588ae2/mzaf_10345737725243409715.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1452848179,
+        "appleCollectionName": "Ballads (Deluxe Edition)"
+      },
+      "research": {
+        "suggestedYear": 1963,
+        "yearNote": "MB first-release 1963，與 Impulse!（A-32／AS-32）1963年1月發行一致；錄音分1961年12月21日與1962年9月18日、11月13日三次，葛萊美名人堂名冊登錄的1962為錄音年，不採用。",
+        "mbTitle": "Ballads",
+        "mbArtist": "John Coltrane Quartet",
+        "mbFirstRelease": "1963",
+        "upcNote": "Ballads (1987 DE)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "De La Soul",
+      "album": "Art Official Intelligence: Mosaic Thump",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "890ffb8b-1bee-3d47-a961-25af50cb2468",
+        "upc": "016998136928",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「De La Soul」與卡片用名完全一致，無跨文字系統問題。已排除與同系列續作《AOI: Bionix》(2001) 及日本盤（井上三太封面）混淆；本卡指 2000 年 Tommy Boy 發行的三部曲首作。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/890ffb8b-1bee-3d47-a961-25af50cb2468/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；De La Soul 是嘻哈正典團體，但本作非其代表作；曾登 Billboard 200 第九名並獲葛萊美提名，旋律與取樣親人好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂史地位屬該團中段作品，未達殿堂所需的跨來源長期共識；accessibility 亦非 5，不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "千禧年最有趣的嘻哈作品之一。專輯名「AOI」是 Art Official Intelligence 的縮寫，與 Artificial Intelligence（人工智慧）的雙關玩字。在主流嘻哈滿是暴力、金錢與毒品的年代，De La Soul 以正向、幽默、充滿玩心的態度脫穎而出；開場曲那種振奮人心的訊息，正是入手這張的理由。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DOa6lF7jzZQ/",
+          "https://musicbrainz.org/release-group/890ffb8b-1bee-3d47-a961-25af50cb2468",
+          "https://en.wikipedia.org/wiki/Art_Official_Intelligence:_Mosaic_Thump"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/e4/f1/b0e4f1d0-9e39-8eb0-5ec7-4f6f7f4c74e0/mzaf_9055996080241136760.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1674016975,
+        "appleCollectionName": "Art Official Intelligence: Mosaic Thump"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB first-release-date 2000-08-08，與 en.wikipedia 條目所載發行日一致。",
+        "mbTitle": "Art Official Intelligence: Mosaic Thump",
+        "mbArtist": "De La Soul",
+        "mbFirstRelease": "2000-08-08",
+        "upcNote": "Art Official Intelligence: Mosaic Thump (2000 US)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Mystery Kindaichi Band",
+      "album": "金田一耕助の冒険",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b1ebadad-e098-4b73-b431-62e1f13c851f",
+        "upc": "3700604723806",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit 為日文「ミステリー金田一バンド」，卡片用拉丁寫法 The Mystery Kindaichi Band；此為樂團原始拉丁藝名（唱片與 2020 年再版皆用之），非日籍本名藝人，故不套用日文本名規則。專輯名 MB 作「金田一 耕助の冒険」（中間有空格），原盤全名為《横溝正史ＭＭ（ミュージック・ミステリー）の世界 金田一耕助の冒険》，卡片用簡稱。已排除與 1979 年大林宣彦電影同名原聲帶（センチメンタル・シティ・ロマンス／村岡雄治，1979-07-25）混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b1ebadad-e098-4b73-b431-62e1f13c851f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本 1977 年 King Records 企畫盤，在 rare groove／和ジャズ挖掘圈有明確地位但無主流樂史論述；一般玩家幾乎不會撞見，音色卻華麗好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "無跨來源長期共識足列爵士或原聲帶史核心；疑似 pearl（本環境取不到 listeners），待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一張虛構的電影原聲帶，以推理小說家橫溝正史的「名偵探金田一耕助」系列為靈感，神秘樂團 The Mystery Kindaichi Band 以日式 jazz-fusion 演繹〈八つ墓村〉〈犬神家の一族〉〈本陣殺人事件〉等名篇。大膽跳脫沈重恐怖的刻板氛圍，以華麗活潑的音色綴上詭譎神秘的氣氛，重現小説濃厚的異色世界觀，彷彿與金田一一同凝視錯綜複雜的人性黑暗面。此為 2020 年限量 300 張螢光藍版本，昏暗燈光下散發幽幽藍光。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DXrRiH3D6VT/",
+          "https://musicbrainz.org/release-group/b1ebadad-e098-4b73-b431-62e1f13c851f",
+          "https://ja.wikipedia.org/wiki/%E9%87%91%E7%94%B0%E4%B8%80%E8%80%95%E5%8A%A9"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1977,
+        "yearNote": "MB first-release-date 1977，對應原盤 King Records 目錄編號 SKA-187 的日本首發；2000／2020 年條目為再版。",
+        "mbTitle": "金田一 耕助の冒険",
+        "mbArtist": "ミステリー金田一バンド",
+        "mbFirstRelease": "1977",
+        "upcNote": "The Adventures Of Kohsuke Kindaichi (2020 XE)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "The Avalanches",
+      "album": "We Will Always Love You",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ad5a6f0f-3444-4ebd-8a98-ce6dfb1bfabe",
+        "upc": "602508499623",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「The Avalanches」與卡片一致。同名混淆已排查：專輯同名主打單曲（feat. Blood Orange）與 Whitney Houston／Dolly Parton 的〈I Will Always Love You〉皆非本作。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ad5a6f0f-3444-4ebd-8a98-ce6dfb1bfabe/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；取樣名團第三作，樂評與客座陣容俱強但地位不及《Since I Left You》；大牌加持下能見度高，聲響夢幻不刺耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行僅數年，尚無足以列入電子樂史核心的長期跨來源共識，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "The Avalanches 以大量取樣編織出的 concept album，靈感連結 1977 年航海家金唱片（Voyager Golden Record）計畫，以及其創意總監 Ann Druyan——她的腦波被錄進金唱片，她與天文學家 Carl Sagan 的情緣也成為理解這張作品的核心。氛圍夢幻而綿延，首尾相連如一封寄向宇宙的情書。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DTQDwcGjyJ9/",
+          "https://musicbrainz.org/release-group/ad5a6f0f-3444-4ebd-8a98-ce6dfb1bfabe",
+          "https://en.wikipedia.org/wiki/We_Will_Always_Love_You"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/13/c0/a413c0e7-0cf2-3621-942c-2017a3077849/mzaf_16830926980984970477.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "自動配對抓到同名單曲(collectionId 1498158066,單軌);改用 25 曲專輯條目 1529562337(2020-12-11),曲序 Ghost Story/Song For Barbara Payton/We Will Always Love You/The Divine Chord 與原盤相符,首曲試聽實測 200"
+      },
+      "research": {
+        "suggestedYear": 2020,
+        "yearNote": "MB first-release-date 2020-12-11，與 en.wikipedia 條目所載 Modular Recordings 發行日一致。",
+        "mbTitle": "We Will Always Love You",
+        "mbArtist": "The Avalanches",
+        "mbFirstRelease": "2020-12-11",
+        "upcNote": "We Will Always Love You (2020 US)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "ヤプーズ",
+      "album": "Dadada-ism",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e742975d-1db6-4782-ab98-7a3001cf4424",
+        "upc": "4988006098916",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「ヤプーズ」與卡片用名一致；依店規日籍藝人用日文寫法，不改用拉丁 Yapoos，簡介內以括號附註拉丁拼法。專輯名 MB 作「Dadada ism」（無連字號），卡片沿用「Dadada-ism」，同一作品。已排除與 1984 年「戸川純とヤプーズ」現場盤《裏玉姫》及戶川純個人名義作品混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e742975d-1db6-4782-ab98-7a3001cf4424/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；戶川純在日本地下／new wave 的影響力明確，但本作非其最廣為傳頌者；日本以外屬深度愛好者領域，狂吼式唱腔與電子聲響需要一點適應。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "戶川純地位雖高，本作缺乏跨來源長期共識足列日本流行樂史核心；accessibility 未達 5，不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "戶川純組建的樂團「ヤプーズ（Yapoos）」第四張錄音室專輯，團名取自肉體變異科幻小說《家畜人鴉俘》。她的聲線變化萬千——前一秒甜美如孩童，下一秒化為野性粗暴的狂吼，以此表現「肉體變異」的美感。作品延續她對女性在社會中被體制碾壓、異化崩毀後如何自處的探討；平澤進為本作提供〈ヴィールス〉與〈コンドルが飛んでくる〉兩曲，帶入工業化機械與電子聲響，強化穿透力與破壞性。專輯名宣告推翻壓抑體制、解構從眾心理，再建構屬於他們的世界觀。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DT5UXQyj2vp/",
+          "https://musicbrainz.org/release-group/e742975d-1db6-4782-ab98-7a3001cf4424",
+          "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%97%E3%83%BC%E3%82%BA"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/f2/66/c8f26681-0bba-a1bc-9e43-78d254ba80ed/mzaf_18029632522293065540.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 720286706,
+        "appleCollectionName": "Dadada Ism"
+      },
+      "research": {
+        "suggestedYear": 1992,
+        "yearNote": "MB first-release-date 1992-10-28（東芝 EMI／Planet earth，TOCT-6716），與 ja.wikipedia 專輯表所列第四張專輯發售日一致。",
+        "mbTitle": "Dadada ism",
+        "mbArtist": "ヤプーズ",
+        "mbFirstRelease": "1992-10-28",
+        "upcNote": "Dadada ism (1992-10-28 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Cannibale",
+      "album": "Not Easy To Cook",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "42a3dd17-c896-4fd5-8aa7-7245357893ce",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Cannibale」與卡片一致。已排除與同名的義大利食人族電影原聲、以及法國饒舌／金屬圈同名企畫混淆：本卡指 Born Bad Records 旗下諾曼第樂團 2018 年作品，專輯名 MB 作「Not Easy to Cook」（小寫 to），卡片沿用大寫，同一作品。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/42a3dd17-c896-4fd5-8aa7-7245357893ce/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2018 年 Born Bad 出品的當代法國團作，圈內評價好但尚無確立地位；一般玩家難撞見，聲響毛邊卻旋律直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "當代新作，無任何足以支撐殿堂的跨來源史論；accessibility 低，亦不符異端條件。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "一支很特別的法國樂團，成員組團時全是四十多歲的大叔，但早在成團前已在音樂圈打滾二十多年，曾為主流歌手當伴奏、始終紅不起來，這次像是放手一搏。樂團根基於法國諾曼第郊區、含乳牛大約只有 300 人的小鎮，那片風景與他們的音樂氛圍完美契合。風格是毛邊十足的 garage rock，揉進熱帶律動與迷幻聲響，非常容易入耳。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DMNTh3zvQg7/",
+          "https://musicbrainz.org/release-group/42a3dd17-c896-4fd5-8aa7-7245357893ce",
+          "https://fr.wikipedia.org/wiki/Born_Bad_Records"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1d/70/ff/1d70ff6c-eee1-c433-9f72-211e5466962a/mzaf_15138768716939006871.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1436815341,
+        "appleCollectionName": "Not Easy to Cook"
+      },
+      "research": {
+        "suggestedYear": 2018,
+        "yearNote": "MB first-release-date 2018-11-16，該 release 由 Born Bad Records 發行，RG 底下無更早條目。",
+        "mbTitle": "Not Easy to Cook",
+        "mbArtist": "Cannibale",
+        "mbFirstRelease": "2018-11-16",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Mike & Rich",
+      "album": "Expert Knob Twiddlers",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "72a4073d-b1ff-37fb-9b36-75c52802e1c9",
+        "upc": "5027238002724",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Mike & Rich」與卡片一致，係 Mike Paradinas 與 Richard D. James 二人唯一使用過的組合名（en.wikipedia 明載 only release credited to the two as Mike & Rich），不與 μ-Ziq 或 Aphex Twin 個人目錄混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/72a4073d-b1ff-37fb-9b36-75c52802e1c9/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Aphex Twin 與 μ-Ziq 唯一一次合作，於 IDM 圈屬公認要作並在 2016 年由 Planet Mu 增訂再版；樂迷領域知名度高，聲響輕盈易入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "雖為 Rephlex／IDM 的重要文獻，仍缺跨來源長期共識足列電子樂史核心，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "Aphex Twin（Richard D. James）與 μ-Ziq（Mike Paradinas）合作的玩心之作。雛形是 Richard 找三五好友到家裡喝酒、看足球，感覺對了就進工作室隨性做音樂：他即興打一組鼓點，Mike 疊上 bass line，再帶到客廳放給大家投票，好聽才留。幾乎所有曲子都在微醺中完成，卻該雕琢的細節毫不含糊。當時嚴肅 techno 當道，他們反其道把 funky 律動與八〇年代老電視廣告質地帶進來，做出頑皮輕盈的曲風，也是兩人生涯中最親近、最易聆聽的一張。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DOOF5ICjyzW/",
+          "https://musicbrainz.org/release-group/72a4073d-b1ff-37fb-9b36-75c52802e1c9",
+          "https://en.wikipedia.org/wiki/Expert_Knob_Twiddlers"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/90/15/96/9015961a-11d6-fcb0-4c55-79aa86cf0c65/mzaf_10212856108558396706.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1128514715,
+        "appleCollectionName": "Expert Knob Twiddlers"
+      },
+      "research": {
+        "suggestedYear": 1996,
+        "yearNote": "MB first-release-date 1996-06-24，en.wikipedia 亦記為 1996 年 Rephlex Records 發行；2016 年 Planet Mu 版為增收七首的再版。",
+        "mbTitle": "Expert Knob Twiddlers",
+        "mbArtist": "Mike & Rich",
+        "mbFirstRelease": "1996-06-24",
+        "upcNote": "Expert Knob Twiddlers (1996-06-24 GB)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Wagon Christ",
+      "album": "Musipal",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b09836ff-168a-31a2-8414-fdfc3ca8d0bb",
+        "upc": "4820011260011",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Wagon Christ」與卡片一致；Wagon Christ 為 Luke Vibert 別名之一（en.wikipedia 明載 released under the alias Wagon Christ），與其 Plug、Amen Andrews 等其他化名目錄不混。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b09836ff-168a-31a2-8414-fdfc3ca8d0bb/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Luke Vibert 於 Ninja Tune 的代表期作品，Pitchfork 8.0、NME 3.5／5 有明確評價地位；屬樂迷領域，鼓點圓潤不刺耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價良好但無跨來源長期共識足列電子樂史核心，classic 未達 5，亦不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "電子音樂人 Luke Vibert 以 Wagon Christ 名義 2001 年發行的全取樣專輯，素材來自他在慈善商店、二手唱片行挖了五年的廉價唱片，以及生活周遭隨手錄下的聲響。當時 DAW 剛興起，他卻嫌點滑鼠做音樂沒手感，堅持用 Roland S760 取樣機與 Atari 老電腦上工。風格橫跨 downtempo、breakbeat、放克，沒有尖銳或攻擊性的聲音，鼓點與貝斯圓潤而流動，像有機生命體攀爬蔓延。封面那個站在履帶載具旁的兒童機器人，正把它定調為一則充滿童趣的電子科幻童話。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DUGKH9Qjw00/",
+          "https://musicbrainz.org/release-group/b09836ff-168a-31a2-8414-fdfc3ca8d0bb",
+          "https://en.wikipedia.org/wiki/Musipal"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/15/61/ac156176-6943-2a42-ec79-f1cd990a03f4/mzaf_6059873312884387486.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1394403868,
+        "appleCollectionName": "Musipal"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "MB first-release-date 2001-03-06，en.wikipedia 條目亦載 2001 年由 Ninja Tune 發行。",
+        "mbTitle": "Musipal",
+        "mbArtist": "Wagon Christ",
+        "mbFirstRelease": "2001-03-06",
+        "upcNote": "Musipal (2001 UA)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Arms and Sleepers",
+      "album": "What Tomorrow Brings",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e8431c75-ad28-4052-85b6-955ad298d9d6",
+        "upc": "0197189610240",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Arms and Sleepers」與卡片一致。en.wikipedia 記載本團 2006 年由 Max Lewis 與 Mirza Ramic 組成，現由 Ramic 獨力維持，故簡介稱「現任唯一成員」；已排除與同團 2013 年 EP 及其他同名曲目混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e8431c75-ad28-4052-85b6-955ad298d9d6/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2024 年自主發行的當代 trip-hop／ambient 作品，圈外幾無論述，屬深度愛好者領域；編曲情緒明確、旋律直白好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "發行未滿兩年且屬小眾自主出版，完全不具殿堂所需的長期跨來源共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "電子音樂團體 Arms and Sleepers 現任唯一成員 Mirza Ramic，童年親歷最血腥的波士尼亞戰爭，父親喪生、與母親流離失所，最終以難民身分落腳美國。這回不同於以往的戰爭題材，而是把兒時逃難記憶轉化為私密經驗。黑膠四面分別代表 Innocence、Melancholy、Rupture、Reflection 四種心境，編曲從天真漸漸沈重，堆疊到最後再轉為開朗，像終於能順暢呼吸。它不是局外人的反戰宣言，而是親歷者毫不保留地呈現最脆弱一面的真誠之作。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DLzWjM_POiH/",
+          "https://musicbrainz.org/release-group/e8431c75-ad28-4052-85b6-955ad298d9d6",
+          "https://en.wikipedia.org/wiki/Arms_and_Sleepers"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/59/13/cf/5913cf70-d2c4-eb79-3981-f4031ec3112b/mzaf_7646555934270498752.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1710619092,
+        "appleCollectionName": "What Tomorrow Brings"
+      },
+      "research": {
+        "suggestedYear": 2024,
+        "yearNote": "MB first-release-date 2024-03-01，RG 底下僅此一筆 release，無更早版本。",
+        "mbTitle": "What Tomorrow Brings",
+        "mbArtist": "Arms and Sleepers",
+        "mbFirstRelease": "2024-03-01",
+        "upcNote": "What Tomorrow Brings (2024-03-01 XW)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Brian Eno / Jah Wobble",
+      "album": "Spinner",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3e52b0bd-3dad-3e1f-8879-5a792874ef79",
+        "upc": "5023701002314",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Brian Eno / Jah Wobble」與卡片一致；Jah Wobble 本名 John Wardle（en.wikipedia 明載 a.k.a. John Wardle），卡片用其藝名。已排除與 Eno 其他 1990 年代作品、以及 Jah Wobble 個人《The Drop》（收錄本作隱藏軌之改題版〈Iced World〉）混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3e52b0bd-3dad-3e1f-8879-5a792874ef79/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Eno 與 Jah Wobble 唯一一次合作，且源自 Derek Jarman 遺作配樂，有明確特色與文獻價值；屬樂迷領域，長篇 dub 器樂需要耐心。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在 Eno 龐大目錄中屬側翼作品，無跨來源長期共識足列 ambient 史核心，classic 未達 5。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "原是 Brian Eno 為前衛導演 Derek Jarman 遺作《Glitterbug》寫的配樂。Eno 認為脫離影像、音樂就失去意義，決定取消原聲帶發行；但出於對老友的思念，他把母帶交給低音音樂家 Jah Wobble 自由發揮，自己不再參與製作。Wobble 有的原封不動保留、有的疊上自己的演奏、有的只取來當新曲的底色，再以他最擅長的 dub 重低音重塑，讓配樂脫離電影框架、成為能單獨聆聽的 ambient-dub 作品。推薦給喜歡 dub 低音迴響的人。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DNDSazcvG1G/",
+          "https://musicbrainz.org/release-group/3e52b0bd-3dad-3e1f-8879-5a792874ef79",
+          "https://en.wikipedia.org/wiki/Spinner_(album)"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/94/91/6e/94916e89-8252-9404-7174-a3569dcf2411/mzaf_9014522820070997613.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1519143537,
+        "appleCollectionName": "Spinner (Expanded Edition)"
+      },
+      "research": {
+        "suggestedYear": 1995,
+        "yearNote": "MB first-release-date 1995-10-24；en.wikipedia 條目亦記為 1995 年發行，素材來自 1994 年的《Glitterbug》配樂。",
+        "mbTitle": "Spinner",
+        "mbArtist": "Brian Eno / Jah Wobble",
+        "mbFirstRelease": "1995-10-24",
+        "upcNote": "Spinner (1995 GB)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Masahiko Togashi Quartet",
+      "album": "Sketch",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "75ec60df-bc75-3328-a98c-abdd24040a30",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB credit「Masahiko Togashi Quartet」為拉丁寫法，日文本名為富樫雅彥（1940–2007），簡介依店規以日文漢字書寫，卡片藝人欄沿用輸入檔的拉丁團名以維持與 MB 一致。已排除與同期日本樂手 Masahiko Satoh（佐藤允彥）混淆，兩人為不同人且曾多次合作。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/75ec60df-bc75-3328-a98c-abdd24040a30/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；富樫雅彥是日本自由爵士的開創者之一，但本作非其獲獎代表作（《We Now Create》《Spiritual Nature》）；日本盤 free jazz 屬收藏家領域，長篇即興與非慣性結構入耳門檻高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人地位夠但本作缺乏跨來源史論支撐；accessibility 為 4 未達 5，不符異端。疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "店主入坑自由爵士的第一張唱片。free jazz 常讓人卻步，誤以為是一群人亂彈亂吹，但樂手其實都是技巧與樂理深厚的高手——如畢卡索看似亂畫，十四歲卻已能畫出驚人寫實素描，每條聲線都是精密計算。富樫雅彥是日本爵士最重要的樂手之一，從渡邊貞夫樂團的鼓手起家，後與高柳昌行等人開創日本獨特的自由爵士。1977 年的《Sketch》共四首、各依某項樂理延伸解構；其中〈Sketch 3〉以一段固定循環旋律墊底、只有鼓自由即興，像一根繩索指引方向，不哈扣卻能體會 free jazz 之美，是很好的入門曲。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DPgqybaj6vq/",
+          "https://musicbrainz.org/release-group/75ec60df-bc75-3328-a98c-abdd24040a30",
+          "https://ja.wikipedia.org/wiki/%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/3c/36/623c368f-4400-4ebc-844d-ebe45b30cbdb/mzaf_8464300550188473579.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "用日文「富樫雅彦 Sketch」查 jp 商店回不到，改用羅馬字「Masahiko Togashi Sketch」才命中 collectionId 1853786806（jp/us 同一筆，1977-11-25，℗ Nippon Columbia）。四曲與 MB DENON JAZZ YX-7516-ND 原盤同序且同為亂序編號：Sketch 3／Sketch 4／Sketch 2／Sketch 1，可確認是本盤而非重錄。首曲〈Sketch 3〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1977,
+        "yearNote": "MB first-release-date 1977-11，對應 DENON JAZZ 目錄編號 YX-7516-ND 的日本原盤；RG 底下無更早或再版條目。",
+        "mbTitle": "Sketch",
+        "mbArtist": "Masahiko Togashi Quartet",
+        "mbFirstRelease": "1977-11",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Red Garland / Ron Carter / Philly Joe Jones",
+      "album": "Crossings",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "928be0b1-6a86-468f-8d2a-82b418b84bdb",
+        "upc": "025218647229",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名與 MB credit「Red Garland / Ron Carter / Philly Joe Jones」逐字相同。MB 另有重複建檔的 RG 260a7106（credit 作 Red Garland Trio，無 CAA 封面），同一張 Galaxy 盤，已選 928be0b1。已排除 Herbie Hancock 1972 年同名的《Crossings》。三人皆為拉丁字本名，無跨文字系統問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/928be0b1-6a86-468f-8d2a-82b418b84bdb/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Galaxy 1978 年的鋼琴三重奏標準曲盤，被視為 Red Garland 晚期最好的錄音之一，但非爵士正典核心；廠牌小、曲目直白好入耳，玩家多半要翻到 70 年代後期硬派爵士區才會遇到。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "晚期 Galaxy 三重奏作品，樂史地位不足以進殿堂；聽感直白不構成異端，listeners 不可得故流亡不評。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1977 年錄音時，Red Garland 與 Philly Joe Jones 早已是縱橫爵士壇三十年的老將，Ron Carter 也已是名家。難得老友相聚，三人決定以「交流」方式錄製：每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉，讓人難分誰才是主角——其實三個人都是。演奏份量平均分配、達到完美平衡，正呼應專輯名《Crossings》。1978 年由 Galaxy 發行，收錄〈Solar〉〈Oleo〉〈But Not for Me〉等曲，聽感非常直白。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DNf09EQv1R2/",
+          "https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album)",
+          "https://musicbrainz.org/release-group/928be0b1-6a86-468f-8d2a-82b418b84bdb"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/2c/3f/af2c3fff-80d7-8309-6e9a-d28973fb3cec/mzaf_4681739711774572398.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1741387216,
+        "appleCollectionName": "Crossings (Remastered 1990)"
+      },
+      "research": {
+        "suggestedYear": 1978,
+        "yearNote": "MB first-release 1978（Galaxy, US），Wikipedia 記載 1977 年底錄音、隔年發行，兩者一致。",
+        "mbTitle": "Crossings",
+        "mbArtist": "Red Garland / Ron Carter / Philly Joe Jones",
+        "mbFirstRelease": "1978",
+        "upcNote": "Crossings (? US)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Guru",
+      "album": "Jazzmatazz Volume 1",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "cb4db891-330d-394d-af54-3edc37e8416e",
+        "upc": "094632199829",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Guru（Gang Starr 的 Keith Elam），與 MB credit 相同。卡片album 寫作《Jazzmatazz Volume 1》，MB 作《Jazzmatazz, Volume 1》、Wikipedia 條目名為《Guru's Jazzmatazz, Vol. 1》，三者同指 1993 年 Chrysalis 原盤，僅標點與冠名差異。已排除 Vol. 2／Vol. 3／Vol. 4 續作與 Deluxe Edition。Apple 日本商店把藝人譯為「グールー」，僅為在地化寫法。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/cb4db891-330d-394d-af54-3edc37e8416e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認替 jazz rap 立下做法的作品、也是 Guru 個人名下代表作，SPIN 選為 1993 年度第 20 名；曾進 Billboard 200 第 94 名，屬嘻哈樂迷普遍知道但一般聽眾未必碰到的層級，聲響溫潤直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力集中在 jazz rap 一脈，尚未達到跨來源公認的嘻哈史核心共識，故不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "爵士嘻哈（jazz rap）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手與嘻哈音樂人現場合作。陣容囊括 Donald Byrd（小號）、Roy Ayers（鐵琴）、Branford Marsalis（薩克斯風）、Courtney Pine、Lonnie Liston Smith 等人。Guru 先立好電子節拍與 bass line，讓爵士樂手在律動上即興，最後才填詞，做出嘻哈前所未見的有機聲響。1993 年由 Chrysalis 發行，把嘻哈的節奏與爵士的生命力接在一起，三十年後依然鮮活。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DWgtirEjwlW/",
+          "https://en.wikipedia.org/wiki/Guru%27s_Jazzmatazz,_Vol._1",
+          "https://musicbrainz.org/release-group/cb4db891-330d-394d-af54-3edc37e8416e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/ac/68/a6ac68f6-db8b-9133-cce1-f4520ed85814/mzaf_6845301876910627534.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "先前只抓到 22 曲的《Guru's Jazzmatazz, Vol. 1 (Deluxe Edition)》(1362365584)，依配對紀律不採用；改取 us 商店 collectionId 723627224《Jazzmatazz, Vol.1》（12 曲，℗ 1993 Virgin Records America）。曲序與 MB Chrysalis 原盤 12 曲完全一致：Introduction／Loungin'／When You're Near…Sights in the City，且非 Vol. II／Vol. 4。首曲〈Introduction〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1993,
+        "yearNote": "MB first-release 1993-05-18，與 Wikipedia 記載的 1993 年 5 月 18 日 Chrysalis 發行一致。",
+        "mbTitle": "Jazzmatazz, Volume 1",
+        "mbArtist": "Guru",
+        "mbFirstRelease": "1993-05-18",
+        "upcNote": "Jazzmatazz, Volume 1 (1993 CA)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "じゃがたら",
+      "album": "それから",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "646260c1-5cec-4150-858f-f2176c7c3271",
+        "upc": "4547366596717",
+        "aliasesChecked": true,
+        "aliasReview": "店規日籍藝人用日文本名：MB 與串流皆把本作建在假名團名「じゃがたら」底下，卡片沿用；羅馬字「JAGATARA」為同團 1986 年後常用的掛名寫法（《裸の王様》《ニセ予言者ども》等掛在該名下），簡介中保留店主慣用的 JAGATARA。早期還有「エド&じゃがたら」「暗黒大陸じゃがたら」等舊名。同名《それから》已排除松本哲也等其他歌手作品。主唱依日文寫作江戸アケミ。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/646260c1-5cec-4150-858f-f2176c7c3271/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本地下史上的重要團體，本作獲《ミュージック・マガジン》1989 年度日本搖滾類第一名，屬該領域公認主要作品；但日本以外流通極少，加上長段落 funk、生猛嘶吼與雜訊般的自由吹奏，入耳門檻高於一般搖滾。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力主要限於日本地下場景，缺乏跨語圈長期共識，未達殿堂；未到極端結構故非異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "日本地下傳奇樂團 JAGATARA 1989 年在主流廠牌 RCA 出道的錄音室專輯。主唱江戸アケミ擅長把各種曲風攪在一起，團員風格迥異，成品無法用單一標籤概括：濃厚 funk 韻味，節奏帶 Afrobeat 與 reggae dub，吉他有 post-punk 底色，不經意處薩克斯風又以 free jazz 之姿衝出，加上沙啞粗暴的嘶吼將人壓入音浪。即使主流出道也毫不妥協，現成風格只是材料，用來揉出專屬 JAGATARA 的聲音。隔年江戸アケミ離世，樂團隨之解散，核心團員後也相繼凋零。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DRpAj_Aj84j/",
+          "https://ja.wikipedia.org/wiki/じゃがたら",
+          "https://musicbrainz.org/release-group/646260c1-5cec-4150-858f-f2176c7c3271"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/6d/d3/936dd37e-f83f-031e-bf05-e765589664ea/mzaf_14730161328016274897.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "「じゃがたら それから」「JAGATARA それから」在 jp/us 商店都 0 筆（Apple 搜尋索引抓不到這張）；改由團體其他專輯取 artistId 271718295 後 lookup 全目錄，才在 11 張裡找到 collectionId 1537224016《それから》（℗ Sony Music Direct）。8 曲與 MB RCA International R32H-1076 原盤完全同序：Taboo Syndrome いっちゃいけない症候群／Godfather 黒幕／Black Joke 気の効いたセリフ／Cash Card カード時代の幕開け／つながった世界／ある平凡な男の一日／中産階級ハーレム／ヘイ・セイ!(元年のドッジボール)，已排除 BEST OF JAGATARA 合輯。首曲〈Taboo Syndrome〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1989,
+        "yearNote": "MB first-release 1989-04-21（JP，RCA International R32H-1076），與日文維基記載的 1989 年 4 月 BMG ビクター 主流出道一致；同 RG 另有 2023-01-25 再版。",
+        "mbTitle": "それから",
+        "mbArtist": "じゃがたら",
+        "mbFirstRelease": "1989-04-21",
+        "upcNote": "それから (2023-01-25 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Erroll Garner",
+      "album": "Erroll Garner Plays Misty",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ca5c25c8-b738-4e18-8514-a8bf9d0c5b04",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "MB 把本作建成《Plays Misty》（省略開頭藝人名），卡片用店家慣用的完整盤名《Erroll Garner Plays Misty》，同指 Mercury MG-20662。已排除三筆同名《Misty》合輯（1991／2001／2005，皆 secondary Compilation）與 Apple 日本商店 14 曲《Misty》、13 曲《The Original Misty》。藝人名為拉丁字本名，無跨文字系統問題。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ca5c25c8-b738-4e18-8514-a8bf9d0c5b04/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Erroll Garner 本人地位極高，但本作是 1961 年 Mercury 重錄自作名曲的商業企畫盤，不在《Concert by the Sea》那一級的正典位置；發行後少被再版、串流上長期只掛合輯，唯有翻找 Mercury 目錄才會遇到，演奏溫潤好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人夠格但本盤本身缺乏跨來源長期共識，屬重錄企畫盤，不列殿堂；旋律直白亦非異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "圍繞爵士經典〈Misty〉打造的鋼琴專輯，1961 年由 Mercury 發行（MG-20662）。傳說 Erroll Garner 1954 年搭飛機時，望著窗外的彩虹與霧氣，在機上譜出了這段旋律，後來成為傳唱不絕的爵士標準曲，Johnny Burke 補上歌詞後更被 Johnny Mathis、Sarah Vaughan 等人唱紅。整張溫潤悅耳、極易入耳，是放鬆聆聽 mellow jazz 的好選擇。推薦曲目〈Misty〉〈Again〉〈Exactly Like You〉。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DSUhjaBD8Tr/",
+          "https://en.wikipedia.org/wiki/Misty_(song)",
+          "https://musicbrainz.org/release-group/ca5c25c8-b738-4e18-8514-a8bf9d0c5b04"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/64/4b/e5644b85-4364-80a9-34b3-3df230a77685/mzaf_18253393790326018263.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "us 商店 collectionId 1440912155《Plays Misty》（Apple 與 MB 一樣把開頭藝人名省略，故字面比對失敗）。10 曲與 MB Mercury MG 20662 原盤完全同序：Misty／Exactly Like You／You Are My Sunshine／What Is This Thing Called Love／Frantonality／Again／Where or When／Love in Bloom／Through a Long and Sleepless Night／That Old Feeling。已排除 jp 商店的 14 曲合輯《Misty》(1713833816) 與 13 曲《The Original Misty》(1443144342)。首曲〈Misty〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1961,
+        "yearNote": "人工覆寫：MB 該 RG 底下只掛一筆 2022-05 俄羅斯再版，導致 first-release-date 誤顯示 2022；實際原盤為 1961 年 Mercury MG-20662，封面亦印 MERCURY hi-fidelity 與 MG 20662 字樣。",
+        "mbTitle": "Plays Misty",
+        "mbArtist": "Erroll Garner",
+        "mbFirstRelease": "2022-05",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Toshinori Kondo / DJ Krush",
+      "album": "記憶 Ki-Oku",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "6deaea4a-1fff-397e-8e5a-4928a1cbe0c1",
+        "upc": "4988009809397",
+        "aliasesChecked": true,
+        "aliasReview": "卡片沿用 MB／串流通行的羅馬字聯名「Toshinori Kondo / DJ Krush」，店主原寫作「近藤等則 × DJ Krush」；依店規日籍藝人應用日文本名近藤等則，但本作 MB credit 與國際發行皆為羅馬字，且 DJ Krush 官方藝名本即拉丁字，故維持輸入寫法，簡介內以日文本名近藤等則稱之。專輯名日文原題《記憶》、羅馬字 Ki-Oku，已排除 DJ Krush 個人作《軌跡》等同音混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6deaea4a-1fff-397e-8e5a-4928a1cbe0c1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本自由爵士與地下嘻哈跨界的主要成果，2015 年被 Fact 選入史上最佳 trip-hop 專輯第 25 名；但屬日盤起家、國際流通有限的深度愛好者領域，聲響沉穩流暢並不難入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "評價集中在 trip-hop 榜單與日本場景，尚無跨來源公認的史上核心地位，故不列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "爵士與嘻哈之間最受注目的合作之一，1996 年由日本小號手近藤等則與 DJ Krush 聯手，日本 Sony 發行。近藤尖銳穿透的小號，與 Krush 深沈、氛圍感十足的製作形成強烈對比——一個來自實驗自由爵士，一個來自地下嘻哈，兩人因機緣相遇、即興錄下這張《記憶 Ki-Oku》，並深深影響了彼此日後的創作。專輯裡還翻唱了 Bob Marley 的〈Sun Is Shining〉，2015 年被 Fact 雜誌列入史上最佳 trip-hop 專輯名單。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DOEBiCdD9xG/",
+          "https://en.wikipedia.org/wiki/Ki-Oku",
+          "https://musicbrainz.org/release-group/6deaea4a-1fff-397e-8e5a-4928a1cbe0c1"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1996,
+        "yearNote": "MB first-release 1996-08-08，與 Wikipedia 記載 1996 年 8 月 8 日 Sony Music Entertainment 日本發行一致；歐洲 Apollo 盤 1998、美國 Instinct 盤 1999 皆為後續。",
+        "mbTitle": "記憶 Ki-Oku",
+        "mbArtist": "Toshinori Kondo / DJ Krush",
+        "mbFirstRelease": "1996-08-08",
+        "upcNote": "記憶 Ki-Oku (1996-08-08 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Estelle Perrault",
+      "album": "Promises",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "047c9e61-2dd1-4347-8f83-7b21878f088a",
+        "upc": "5051083216609",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名 Estelle Perrault 與 MB credit（e9e219ab，disambiguation「Female Jazz artist」）及 Apple 掛名完全一致，為藝人官方拉丁字藝名，故不改用中文本名；店主稱其中文名為張婷雅，僅於簡介內敘明，未作為卡片藝人名。MB 該藝人名下僅此一筆 release-group，無同名混淆。客席 Hermon Mehari、Rosalba Bujanda-Suárez 皆為獨立藝人實體。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/047c9e61-2dd1-4347-8f83-7b21878f088a/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 5,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2025 年獨立發行的當代人聲爵士新作，合格但尚無樂史評價可言；MB 全站僅此一筆 release-group、廠牌 Quai Son Records 規模極小，屬收藏／在地圈才會遇到，演唱與編曲都相當直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "新發行作品無殿堂資格；疑似 pearl（MB 僅一筆條目、獨立小廠 2025 年發行，聽眾數極可能低於 300），待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "台法混血、與台灣有深厚淵源的爵士歌手張婷雅的第三張專輯，2025 年由 Quai Son Records 發行，邀來法國樂手合作，小號手 Hermon Mehari 也現身〈We Were Once〉與同名曲。她放鬆下來的嗓音變得更慵懶，像午後和煦陽光灑落床邊。封面在高雄拍攝，展現在地台灣風情，背面還藏著一面小小的「藍地黃虎旗」。極易入耳，推薦曲目〈Sunshine〉〈Day By Day〉〈I Know You Wish〉。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DUqNSK2D4iB/",
+          "https://musicbrainz.org/release-group/047c9e61-2dd1-4347-8f83-7b21878f088a",
+          "https://itunes.apple.com/lookup?id=1800348064&entity=song"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/a1/a7/4ca1a7ab-faa1-bb75-cf10-527bd57ccf00/mzaf_16402630709224195059.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "appleCollectionId": 1800348064,
+        "appleCollectionName": "Promises"
+      },
+      "research": {
+        "suggestedYear": 2025,
+        "yearNote": "MB first-release 2025-05-23（XW），與 Apple collectionId 1800348064 的 2025-05-23、℗ 2025 Quai Son Records 一致。",
+        "mbTitle": "Promises",
+        "mbArtist": "Estelle Perrault",
+        "mbFirstRelease": "2025-05-23",
+        "upcNote": "Promises (2025-05-23 XW)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Horace Silver And The Jazz Messengers",
+      "album": "Horace Silver And The Jazz Messengers",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ea8ca1bb-5a93-40d8-aa99-dec4fe715af1",
+        "upc": "4988006602892",
+        "aliasesChecked": true,
+        "aliasReview": "卡片用名沿用店家的《Horace Silver And The Jazz Messengers》，MB credit 為「Horace Silver / The Jazz Messengers」、標題作 Horace Silver and the Jazz Messengers，Apple 作 Horace Silver & The Jazz Messengers，僅連接詞與大小寫差異，同指 Blue Note BLP 1518。已排除同陣容的《At the Cafe Bohemia》現場盤與《Señor Blues》合輯，以及 Art Blakey 名下的 Jazz Messengers 後期作品。皆為拉丁字本名。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/ea8ca1bb-5a93-40d8-aa99-dec4fe715af1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hard bop 成形期的核心文獻，Wikipedia 記其錄音「helped establish the hard bop style」、hard bop 條目直指此風格一般被視為源自 Blakey 領軍的 Jazz Messengers；Blue Note BLP 1518 是長銷正典，爵士入門就會遇到，〈The Preacher〉旋律通俗好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "跨來源長期共識視本次錄音為 hard bop 成形的核心文獻：Blue Note 1500 系列長銷正典、Silver 首張 12 吋，且 Jazz Messengers 由此起家，符合殿堂「該領域史上核心」標準。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
+          "https://en.wikipedia.org/wiki/Hard_bop"
+        ]
+      },
+      "description": {
+        "text": "hard bop 的誕生之作。當 bebop 把爵士門檻拉得太高，兩股勢力起而對抗：一是 Miles Davis 的 cool，放慢節奏追求優美；另一是 Horace Silver 與 Art Blakey 領銜的 fire——保留快節奏，但旋律更通俗、讓人跟著跺腳歡呼。本張收錄替 hard bop 定調的〈The Preacher〉與〈Doodlin'〉，也是 The Jazz Messengers 草創期的首張專輯；這支樂團日後猶如爵士界的「變種人學校」，孕育出 Wayne Shorter、Lee Morgan 等大師。",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DNnsWhVvS6s/",
+          "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
+          "https://musicbrainz.org/release-group/ea8ca1bb-5a93-40d8-aa99-dec4fe715af1"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/60/79/6f/60796f8f-929f-426e-8363-fbbcdb0e0481/mzaf_17143058198802336089.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-22T02:55:01Z",
+        "note": "us 商店 collectionId 1444052680（掛名 Horace Silver & The Jazz Messengers，用 & 而非 And 故字面落空）。8 曲與 MB Blue Note BLP 1518 原盤完全同序：Room 608／Creepin' In／Stop Time／To Whom It May Concern／Hippy／The Preacher／Hankerin'／Doodlin'，非 Café Bohemia 現場盤或 Señor Blues 合輯。首曲〈Room 608〉試聽實測 200。"
+      },
+      "research": {
+        "suggestedYear": 1955,
+        "yearNote": "MB first-release 1955（US）；錄音 1954-11-13 與 1955-02-06，原以 10 吋 BLP 5058／5062 於 1955 年推出，Wikipedia 記 12 吋 BLP 1518 為 1956 年 10 月發行。此處採 MB 與多數目錄慣用的 1955，1956 之說一併記錄供店主決定。",
+        "mbTitle": "Horace Silver and the Jazz Messengers",
+        "mbArtist": "Horace Silver and The Jazz Messengers",
+        "mbFirstRelease": "1955",
+        "upcNote": "Horace Silver and the Jazz Messengers (1986-07-23 JP)",
+        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
+        "curatorRisk": ""
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}

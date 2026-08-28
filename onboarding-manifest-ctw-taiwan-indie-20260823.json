@@ -1,0 +1,3734 @@
+{
+  "schemaVersion": 1,
+  "batch": "c-tw-indie-20260823",
+  "batchNote": "研究層批次（遠端工作階段）：只到 prepare gate，未寫任何線上資料，published 全 false。三軸為人工錨點評定（/album-rating 在本環境不可達）。",
+  "albums": [
+    {
+      "artist": "濁水溪公社",
+      "album": "鄉土．人民．勃魯斯",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "f6013d3a-5253-4e05-ab9e-a3b7849d1e32",
+        "upc": "4717954165476",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：浊水溪公社（簡體）／Loh Tsui Kweh Commune／LTK Commune／LTK／Zhuoshuixi River People's Commune；本卡採繁體中文正名。專輯名的間隔號有三種寫法——卡片與 MB 用「．」(U+FF0E)、中文維基作《鄉土‧人民‧勃魯斯》(U+2027)、另見「·」(U+00B7)，去重時三種都要試。八首曲目在實體上中英並列（如〈中壇元帥 Na Cha The Great〉），英文非另一張碟。與同團 2012《鬼島社會檔案》、2017《亞洲衝擊》無混淆。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/f6013d3a-5253-4e05-ab9e-a3b7849d1e32/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第六屆金音創作獎最佳專輯、最佳樂團、評審團獎三項得獎，是該團獎項最密的一張；台語搖滾語彙生猛但曲式仍在藍調搖滾框架內。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "金音獎三項得獎足以支撐台灣獨立樂史地位，但跨來源的長期正典共識仍集中在該團九〇年代作品，尚不到殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1989 年成軍的濁水溪公社把勞動、農運與政治現場寫進台語搖滾：〈南榕的遺言〉悼鄭南榕，〈留在台西鄉賺錢〉唱西部沿海的離鄉，〈中壇元帥〉把廟會神將搬上電吉他。2014 年禾廣娛樂發行（LTKC008），八首曲目全部中英並列。隔年拿下第六屆金音創作獎最佳專輯、最佳樂團與評審團獎，是柯仁堅這批人二十五年來獎項最密的一次。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/濁水溪公社",
+          "https://musicbrainz.org/release-group/f6013d3a-5253-4e05-ab9e-a3b7849d1e32"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2014,
+        "yearNote": "MB release 2014（TW，禾廣娛樂 LTKC008）與中文維基作品表一致；第六屆金音創作獎是 2015 年頒發，非發行年。",
+        "mbTitle": "鄉土．人民．勃魯斯",
+        "mbArtist": "濁水溪公社",
+        "mbFirstRelease": "2014",
+        "upcNote": "鄉土．人民．勃魯斯 (2014 TW)",
+        "curatorWhy": "店主點名。禾廣娛樂發行。第6屆金音創作獎最佳專輯獎、最佳樂團獎、評審團獎三項得獎（另入圍最佳搖滾專輯、最佳搖滾單曲〈留在台西鄉賺錢〉、最佳風格類型單曲〈中壇元帥〉、最佳樂手），是濁團生涯獎項密度最高的一張。",
+        "curatorRisk": "MB 已建檔（2014）。專輯名中間的間隔號有「．」「‧」「·」多種寫法，鍵值容易對不上。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "刺客",
+      "album": "你家是個動物園",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "9edf9448-2688-4496-b076-38c9b4de9be6",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：刺客樂團（中文維基條目名）／刺客合唱團（友善的狗目錄與 Discogs 用法）／Assassin／Assasin（中文維基 infobox 誤拼，兩種拼法都要 grep）。本卡採最短的「刺客」。已排除歐美同名 Assassin（德國 thrash、法國 hip hop）——比對必須鎖友善的狗編號 6004 或 1993＋台灣。專輯名無英文副標，Apple TW 條目 artist 建成「刺客樂團」，與卡片正名差一個詞而非另一團。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/93/64/5e936493-1bed-fd55-36d4-fa6d09ff80ff/193017209785.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（6803059204）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年成軍、台灣最早一批自行創作的重金屬樂團的首張正式發行，有明確樂史位置但非跨界共識代表作；旋律性重金屬入耳不難。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "台灣早期金屬的起點之一，惟中文維基條目掛無來源模板、第三方樂評稀薄，達不到跨來源長期共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "刺客 1985 年 8 月成軍，是台灣最早一批自行創作的重金屬樂團。首張作品 1993 年由友善的狗製作、博德曼發行（編號 6004-2／6004-4），九首曲目在華語與英語間切換：〈黃河〉開場，第二軌〈My Time Is Coming〉全英語，同名曲排在第五軌。創團元老袁興國（主唱）與袁興緯（鍵盤、貝斯）是不變的核心，隔年他們以重金屬改編的〈無敵鐵金剛〉被更多人聽見。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/刺客樂團",
+          "https://zh.wikipedia.org/wiki/友善的狗",
+          "https://musicbrainz.org/release-group/9edf9448-2688-4496-b076-38c9b4de9be6"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/0f/4e/760f4e9b-99b8-2a66-7296-8c8b789a7074/mzaf_6374058146715235588.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6803059204,
+        "appleCollectionName": "你家是個動物園"
+      },
+      "research": {
+        "suggestedYear": 1993,
+        "yearNote": "MB first-release 1993（TW）、中文維基〈刺客樂團〉與〈友善的狗〉發行目錄（6004-4／6004-2）三方一致。",
+        "mbTitle": "你家是個動物園",
+        "mbArtist": "刺客",
+        "mbFirstRelease": "1993",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "店主點名。1985 年成立，台灣最早的重金屬創作樂團之一。這張是友善的狗製作、博德曼發行的首張專輯（友善的狗編號 6004-4／6004-2），比多數台灣金屬團早了近十年進到正式發行體系。",
+        "curatorRisk": "MB 已建檔（刺客／你家是個動物園／1993）。團名 Discogs／維基寫「刺客合唱團」「刺客樂團」「刺客」三種，英文拼寫 Assasin（維基誤拼）／Assassin 並存，grep 要多寫法。中文維基條目掛著「無來源」與「關注度」模板，敘述須另行查證。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "8mm Sky",
+      "album": "Finders Keepers",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "e1351b4f-8f54-4ae6-9ecf-18317bd85a9b",
+        "upc": "4711769550137",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：八厘米天空（中文維基條目名與中文通行寫法）／8mm sky（Apple、MB 2022 數位版全小寫）／8mm Sky；依店規「只有英文名者用英文」保留 8mm Sky，中文譯名進別名。專輯名 Finders Keepers／finders keepers 兩種大小寫並存（2006 實體大寫、2022 數位版小寫），同屬一個 RG。廠牌別名：默契音樂／Silent Agreement。比對務必鎖 artist，勿用「8mm」關鍵字（會撈到日本 28MM 系列編號）。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/e1351b4f-8f54-4ae6-9ecf-18317bd85a9b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代中期台北 The Wall／地下社會世代後搖滾團的唯一一張專輯，場景內有明確位置；器樂鋪陳的長段落使入耳需要耐心。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "單張作品、資料僅見中文維基與廠牌條目，缺乏跨來源長期共識，且冷門程度尚未到流亡池的門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "八厘米天空 2002 年 4 月在台北成軍，吉他阿隆、貝斯兼主唱孫彼得、鼓手 Zen 的三人編制，常在聖界與地下社會演出，也替 Explosion in the Sky（2002）與 múm（2005）的台北場暖場。2006 年 2 月 21 日默契音樂發行（SACD013），是他們唯一的專輯：十首曲子走後搖滾路線，曲名一律小寫，從〈we don't even shake hands〉起手，收在〈rocket no.7〉。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/八厘米天空",
+          "https://musicbrainz.org/release-group/e1351b4f-8f54-4ae6-9ecf-18317bd85a9b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ba/a4/52/baa45286-7560-4a29-3b73-7a8626cb95e3/mzaf_4481536167802857924.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1618747940,
+        "appleCollectionName": "finders keepers"
+      },
+      "research": {
+        "suggestedYear": 2006,
+        "yearNote": "MB first-release 2006-02-21（TW，Silent Agreement SACD013）；中文維基〈八厘米天空〉記 2006 年默契音樂發行，Apple 標 2006-02-18 為上架日。",
+        "mbTitle": "Finders Keepers",
+        "mbArtist": "8mm Sky",
+        "mbFirstRelease": "2006-02-21",
+        "upcNote": "Finders Keepers (2006-02-21 TW)",
+        "curatorWhy": "店主點名。默契音樂（Silent Agreement）SACD013 發行的唯一一張專輯，2000 年代中期台北 The Wall／地下社會世代的英式吉他團代表；同年另發單曲〈I saw you, a little bit〉。默契音樂同期也發行 1976 的合輯曲目，是那條線的自家廠牌。",
+        "curatorRisk": "MB 已建檔（Finders Keepers 2006-02-21、單曲 2006-12-25）。團名純英文且含 8mm，MB／Discogs 搜尋會被大量日本黑膠編號「28MM 00xx」污染，查詢要鎖 artist 而非關鍵字。封面須本機掃圖。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "1976",
+      "album": "愛的鼓勵",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "3c4843c5-b8c5-341b-8cb4-380caf4c48be",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "藝人名是純數字「1976」，無中英並存問題，但去重時絕不可用全行 grep（會撈到大量 1976 年份欄位與 The 1975 之類雜訊），必須用 artist 欄位精確比對。專輯別名：2008 年再版封面印英文標題「encourage with love」（Apple cid 466776620 用該版美術），本批採 1995–2001 水晶原版標題《愛的鼓勵》。⚠ Apple 另有 FUN4 樂團《夢想。挑戰 愛的鼓勵》單曲同名字串，非本作。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/3c4843c5-b8c5-341b-8cb4-380caf4c48be/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1976 水晶唱片時期的第三張、也是休團前最後一張，同名曲進入《藍色大門》原聲帶，在台灣獨立場景有明確地位但非其代表作。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團代表作公認落在《方向感》與《不合時宜》，本作是轉折點而非正典核心，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1976 成軍於 1996 年夏天，團名取自三位創始團員的出生年，聲音受八〇年代英倫新浪潮與 post-punk 影響。2001 年 7 月 6 日水晶唱片發行的第三張，由貝斯手陳俊熾大力投入製作，新加入的鍵盤手林昱光帶進合成器音色，十二軌從〈解開快樂的密碼〉排到〈循環〉。同名曲收進電影《藍色大門》原聲帶，樂團也在片中飾演海灘樂團；發行後團員入伍，一路休團到 2003 年。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/1976_(樂團)",
+          "https://musicbrainz.org/release-group/3c4843c5-b8c5-341b-8cb4-380caf4c48be"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/06/85/440685cf-9b0a-ca89-edd6-61b366600c1b/mzaf_7991356389591385662.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 466776620,
+        "appleCollectionName": "愛的鼓勵"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "MB release 2001-07-06（TW，Crystal Records）與中文維基〈1976 (樂團)〉「2001 年 7 月發行第三張專輯《愛的鼓勵》」一致；Apple 標的 2008-10-20 是再版年。",
+        "mbTitle": "愛的鼓勵",
+        "mbArtist": "1976",
+        "mbFirstRelease": "2001-07-06",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "店主點名（卡池已有《方向感》《耳機裡的新浪潮》，這張是缺口）。2001 年 7 月 6 日水晶唱片發行的第三張，貝斯手陳俊熾（濁水溪公社前貝斯手）主力製作、鍵盤手阿光加入帶進合成器音色；同名曲〈愛的鼓勵〉收進電影《藍色大門》原聲帶，1976 本人也在片中演海灘樂團。發行後團員入伍，樂團休團到 2003 年。",
+        "curatorRisk": "團名是純數字「1976」，pool-all-keys.txt 裡「1976」會撈到 126 筆年份誤中（Electric Light Orchestra 等），去重必須用 artist 欄位精確比對而不是全行 grep。MB 對 1976 早期水晶時期作品建檔不完整，這張要單獨確認。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "1976",
+      "album": "不合時宜",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7e7c8784-86e9-4c79-a173-f4c970bd978c",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "藝人名純數字「1976」，去重須用 artist 欄位精確比對，不可全行 grep。專輯別名：英文名 Manic Pixie Dream Girl（中文維基與通路並列），實體與 Apple 條目均以中文《不合時宜》為主標，故採中文。廠牌別名：新力博德曼／Sony Music／Sony Music Taiwan。⚠ 勿與同團 2008《1976 這個星球》(Asteroid 1976) 混。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/4d/ee/8d/mzi.iwhojtvz.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（338320177）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第 21 屆金曲獎流行類最佳樂團獎得主，是 1976 由地下走進主流體系的分水嶺，樂迷領域內知名度高、入耳門檻低。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "金曲獎最佳樂團足證台灣樂壇地位，但跨來源長期共識尚未把它列為華語搖滾史核心，維持普卡。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "英文名 Manic Pixie Dream Girl，2009 年 11 月 6 日由 Sony Music 發行（88697608702），是 1976 離開水晶唱片、走進主流體系後的第六張錄音室作品。十首曲子以豐沛的合成聲響鋪底、寫成鮮明的英倫搖滾，第五軌〈地下社會〉指的正是師大路那間小場地——1999 年 1976 是它的第一組演出樂團。隔年以本作拿下第 21 屆金曲獎流行類最佳樂團獎。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/1976_(樂團)",
+          "https://musicbrainz.org/release-group/7e7c8784-86e9-4c79-a173-f4c970bd978c"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/d6/04/d6d6043f-2a0f-b00c-6ea2-de7ac37e4b5e/mzaf_12884886014749965642.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 338320177,
+        "appleCollectionName": "不合時宜"
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "MB release 2009-11-06（TW，Sony Music 88697608702）與中文維基〈1976 (樂團)〉「2009 年 11 月發行第六張錄音室專輯」一致；Apple 標 2009-01-01 為粗略年份。",
+        "mbTitle": "不合時宜",
+        "mbArtist": "1976",
+        "mbFirstRelease": "2009-11-06",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "店主點名。2009 年 11 月 6 日新力博德曼發行，英文名 Manic Pixie Dream Girl。第21屆金曲獎（2010）最佳樂團獎得主——評審語為「用才華和青春看待快速變遷的世界，歌曲中放入豐沛的合成聲響，呈現鮮明的音樂個性，刻劃立體的英倫搖滾樂」。這是 1976 從水晶時代地下團走到主流體系並拿下最高團體獎的分水嶺。",
+        "curatorRisk": "同上，「1976」作為藝人鍵與年份欄位衝突。發行日 2009-11-06（中文維基）與部分通路標 2009-11 有出入。MB 對此張建檔情形需個別確認。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "董事長樂團",
+      "album": "你袂了解",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "109aa97c-4ae5-3f84-9d3e-b98d67b1f753",
+        "upc": "4710736830043",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：The Chairman／CHAIRMAN（封面英文）／董事長；前身團名「1989」樂團不可當本團別名建卡。專輯名的台語「袂」另見寫作「𣍐」與被誤簡化為「不」，《你不了解》是誤寫；比對三種都要試。廠牌別名：華研國際音樂／HIM International Music（Apple ℗ 行）／MB 建成 Grand Music（GMG2002AA，應為後期再版）。⚠ 勿與 1999 年單曲《攏袂歹勢》（角頭音樂）當成同一件商品。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/e6/09/3c/e6093c05-2e4b-a3f1-8843-de95871628ed/asset.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple Music 台灣商店 artistId 645452271 全目錄人工挑（collectionId 645452041，2000-04-01，℗ 2000 HIM International Music，第 2 軌即〈你袂了解〉）。目視：田宮模型盒仿作，白底頂端灰黑字「董事長樂團 CHAIRMAN」與紅框「1:12 SCALE TWN POWERFUL BAND PLASTIC MODEL KIT★SERIES NO.1」，右上角紅藍雙色星標寫 CHAIRMAN；畫面中央一名黑西裝黑皮鞋男子坐在紅色滾輪辦公椅上、雙手交握，頭部換成一顆棕鬃獅頭。原生 1400px，無側標／腰帶／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；董事長樂團編號第 01 張的正規專輯，台語搖滾在 2000 年前後由地下走向通路的樣本，地位明確但獎項落在後續作品。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團的獎項與正典評價集中在《找一個新世界》之後的作品，首張是起點而非史上核心，未達殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "董事長樂團 1997 年 7 月 4 日在女巫店定下團名，前身是冠宇、吳永吉、杜文祥 1989 年組的「1989」樂團。2000 年 3 月由華研國際音樂發行的第一張正規專輯，十首台語歌，同名曲排第二軌，末軌〈攏袂歹勢〉就是 1999 年角頭音樂那支首發單曲、拿過中華音樂人交流協會年度十大單曲。封面把團員做成田宮模型盒，寫著「1:12 SCALE TWN POWERFUL BAND」。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/董事長樂團",
+          "https://musicbrainz.org/release-group/109aa97c-4ae5-3f84-9d3e-b98d67b1f753"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/08/87/f90887bf-7fcb-0e7c-5999-a7e6da72746e/mzaf_5183611952188065644.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 645452041,
+        "appleCollectionName": "你袂了解"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB release 2000-03（TW）、中文維基〈董事長樂團〉「2000 年：發行第 01 張專輯【你袂了解】」、Apple ℗ 2000 三方一致；坊間標的 1999 是前一年單曲《攏袂歹勢》的年份，非本作。",
+        "mbTitle": "你袂了解",
+        "mbArtist": "董事長樂團",
+        "mbFirstRelease": "2000-03",
+        "upcNote": "你袂了解 (2000-03 TW)",
+        "curatorWhy": "店主問的「董事長樂團第一張專輯」正解。中文維基與 MusicBrainz 都記為 2000 年（MB：2000-03），華研國際音樂發行。注意：董事長 1999 年先出的是單曲《攏袂歹勢》（角頭音樂），該單曲拿下第2屆中華音樂人交流協會年度十大單曲；《你袂了解》才是編號第01張的正規專輯。樂團 1997 年 7 月 4 日在女巫店定名，前身是 1989 年的「1989」樂團。",
+        "curatorRisk": "MB 已建檔（董事長樂團／你袂了解／2000-03）。年份最大爭議點：坊間與部分通路把《你袂了解》標成 1999，那其實是單曲《攏袂歹勢》的年份，入庫時要在簡介裡講清楚以免被讀者質疑。台語書寫「袂」有時被寫成「不」或「𣍐」。卡池已有《眾神護台灣》(2010)，不要重複。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "濁水溪公社",
+      "album": "臭死了",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2529bbc7-d39f-43c1-acd8-5831458ab3fa",
+        "upc": "4719672000978",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：浊水溪公社（簡體）／Loh Tsui Kweh Commune／LTK Commune／LTK。專輯《臭死了》無英文副標、無簡體異寫。⚠ 最大混淆源是同年水晶發行、掛英文團名 Loh Tsui Kweh Commune 的影像作品《爛頭殼》(CVD1001，陳德政、毛致新拍攝)，那是紀錄片不是唱片，不得併卡；另 2001 年《1997 春天吶喊 LIVE 2001 REMIX》經團員證實未獲授權，亦不可當本團正規盤。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/2529bbc7-d39f-43c1-acd8-5831458ab3fa/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；濁團唯一掛水晶唱片的專輯，也是「地下團×水晶」這條線末期的重要出版；粗礪唱腔、三段式組曲與猥褻題材使入耳門檻明顯偏高。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在台灣地下音樂史有明確位置，但該團的正典共識多指向 1995《肛門樂慾期作品輯》與 1999《台客的復仇》，本作未達殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "水晶唱片 CIRD1097，2001 年 4 月 4 日發行，是濁水溪公社唯一掛水晶的專輯，落在水晶 1996 年一度關閉國內部到 2006 年歇業之間的末期。十五軌裡〈強姦殺人〉拆成上、中、下三段散置全碟，之間夾著〈台灣獨立軍進行曲〉〈平交道〉〈漏電的插頭〉，粗礪的台語唱腔把那卡西、龐克與噪音攪在一起。同年水晶另發了紀錄該團的影像作品《爛頭殼》。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/濁水溪公社",
+          "https://zh.wikipedia.org/wiki/水晶唱片",
+          "https://musicbrainz.org/release-group/2529bbc7-d39f-43c1-acd8-5831458ab3fa"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "MB release 2001-04-04（TW，CIRD1097）與中文維基〈濁水溪公社〉作品表「2001 年：《臭死了》（水晶唱片）」一致。",
+        "mbTitle": "臭死了",
+        "mbArtist": "濁水溪公社",
+        "mbFirstRelease": "2001-04-04",
+        "upcNote": "臭死了 (2001-04-04 TW)",
+        "curatorWhy": "水晶唱片發行（MB：2001-04-04），濁團唯一一張掛水晶的專輯，正好落在水晶 1996 年一度關閉國內部、2006 年歇業之間的末期，是「地下團 × 水晶」這條線最後幾筆重要出版。同年水晶還出了紀錄濁團的影像作品《爛頭殼》（陳德政、毛致新拍攝，CVD1001）。",
+        "curatorRisk": "MB 已建檔。與同時期《爛頭殼》(VCD) 容易混淆，Discogs 上《爛頭殼》掛的是 Loh Tsui Kweh Commune 英文名。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "零與聲音解放組織",
+      "album": "Z.S.L.O.",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "c653c34d-05c6-47e0-afc7-be22f3607542",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：Z.S.L.O.／ZSLO／Zero and Sound Liberation Organization／零与声音解放组织（簡體）；Discogs 同時有中文 artist「零與聲音解放組織*」與英文 artist「Z.S.L.O.」兩個條目，查詢兩邊都要看。⚠ 同年另有三筆易混的自家出版：卡帶《狂風呢喃 Whisper In Hurricane》（無廠牌自行發行）、《The Extreme Cruel Inhumanity of Impossibly Disappearing Poetry》(ZSLO 1) 與 Vis A Vis Audio Arts 的《Z.S.L.O.1.2.》，三者都不是本卡標的（本卡＝Noise NA 03 那張 CD）。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 5,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣噪音／後工業場景少數留下實體出版的作品，僅壓四百張；母帶做成單一軌約五十一分鐘不斷開，是極端結構與噪音語言的典型。"
+      },
+      "rarity": "legendary",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "heresy",
+        "reason": "全碟母帶做成單一軌、約 51 分鐘不分軌，Discogs 標記 Noise／Experimental／Industrial，段落標題與勞工遊行現場錄音直接嵌入，無旋律與節拍可依附，符合異端的極端入耳難度。",
+        "evidenceUrls": [
+          "https://api.discogs.com/releases/1360708",
+          "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542"
+        ]
+      },
+      "description": {
+        "text": "1994 年由台北的 Noise 廠牌發行（NA 03），只壓四百張。母帶做成單一軌、約五十一分鐘不斷開，內部分成十二個標題段落，其中〈11:15 AM, June 29, 1994. Labor's Demonstration／Police's Declaration in Taipei〉直接嵌入那天台北勞工遊行與警方廣播的現場錄音。噪音、工業與電子器材的持續堆疊是全片唯一的語言，封面自稱 Made in Taiwan Noise Production。",
+        "sourceUrls": [
+          "https://api.discogs.com/releases/1360708",
+          "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542",
+          "https://zh.wikipedia.org/wiki/濁水溪公社"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "MB release 1994（TW，Noise NA 03）與 Discogs 1360708 一致；同年自行發行的卡帶與 VHS 屬不同商品。",
+        "mbTitle": "Z.S.L.O.",
+        "mbArtist": "零與聲音解放組織",
+        "mbFirstRelease": "1994",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "1990 年代台北國際後工業藝術祭一線的噪音／實驗團體，由 Noise 廠牌（NA 03）發行，是台灣噪音場景少數留下實體出版的作品。同年還自行發行卡帶《狂風呢喃 Whisper In Hurricane》與 VHS《Sadness Underground》。這條線與濁水溪公社在後工業藝術祭上的灌腸、燒樂器是同一個場景脈絡。",
+        "curatorRisk": "MB 已建檔（零與聲音解放組織／Z.S.L.O./1994）。廠牌名就叫「Noise」，極難在資料庫裡定位；三種載體（CD／卡帶／VHS）同年並存，容易選錯版本。中文維基無條目。封面須本機掃圖。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "趙一豪",
+      "album": "把我自己掏出來",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=19079df5-f1de-4669-8e59-a88a73297dfc&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=趙一豪&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=把我自己掏出來&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=把我自己收回來&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB 有 artist 趙一豪 = 19079df5-f1de-4669-8e59-a88a73297dfc（country TW），但 **release-group 總數 0**，一張都沒建；以《把我自己掏出來》《把我自己收回來》搜 RG 也只撈到 斯琴格日乐《我自己》一類雜訊。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/趙一豪",
+          "https://api.discogs.com/releases/9586868",
+          "https://api.discogs.com/releases/23437010",
+          "https://zh.wikipedia.org/wiki/水晶唱片"
+        ],
+        "manualRuling": "MB 有 artist 趙一豪（19079df5，country TW）但 release-group 數為 0，以《把我自己掏出來》《把我自己收回來》搜 RG 只得字面雜訊，確認 MB 查無，走人工身分路線。身分由三方釘死：中文維基〈趙一豪〉導言與作品表（1990 年發行、1988 年錄製、遭新聞局查扣，代表作欄即本作）、中文維基〈水晶唱片〉藝人名單列趙一豪、Discogs 水晶編號 CIRD 0005-2／0005-4。本卡只收 1990 原版《把我自己掏出來》；查禁後改題重發的《把我自己收回來》是另一件商品（三首改詞新版），本批未策展，不得由補卡池腳本當成別名自動吸收；Discogs 卡帶條目《把我自己掏回來》與《把我自己收回來》共用 catno CIRD 0005-4，是同一張的建檔錯字，永不開卡。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "藝人別名：Sissey Chao（中文維基英文名欄）／Sissey Zhao（本卡封面拉丁拼音）／赵一豪（簡體）。專輯別名：把我自己收回來（1989 查禁後改版，CIRD 0005-2／0005-4）／把我自己掏回來（Discogs 卡帶錯字條目，同 catno）／pull myself out（封面英文）。⚠ 2014 年 Gold Typhoon《掏出白痴的謊言＝Pull Out The White Lies》是把本作與 Double X《白痴的謊言》合起來的復刻合輯，是第三張碟，不可當本卡再版而合併。Apple TW cid 1525188672 的 12 軌是原版 9 軌＋改詞版 3 軌的合併復刻，標題相同但軌數多於原盤。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ba/24/ea/ba24ea33-e414-7395-87d7-46a9121be25e/Pull_cover.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 1525188672（2020-07-29 水晶數位復刻）artworkUrl100 換 1000x1000bf 取得，實測 200、205,719 bytes、1000×1000，已用 Read 目視。畫面：藍綠色調手繪／粉彩畫，一名赤裸上身男子的軀幹特寫，下半身穿牛仔褲、右手夾著一根冒煙的香菸，左手垂在褲襠前；上緣橫排黑色小寫英文『pull myself out』，左中有毛筆字直書『趙一豪』＋下方小字拉丁拼音『Sissey Zhao』，褲襠處疊一塊白色噴濺色塊、內有黑色手寫『把我自己掏出來』五字。無側標／腰帶／貼紙／盒邊／浮水印／簽名。註：來源檔本身就是『橫幅畫作置中、上下留白邊』的正方檔（1000x1000bb 與 1000x1000bf 下載回來位元組不同但畫面完全一致，且 2000x2000bb 回 2000×2000），白邊是美術原稿的一部分、不是 bf 補出來的。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣出版史最後一張被行政院新聞局查禁的專輯，是解嚴後禁歌史的收尾事件，跨中文維基、聲軌與《造音翻土》多方記載。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主裁定升殿堂（2026-08-23）：台灣出版史最後一張被行政院新聞局查禁的專輯，解嚴後禁歌史的收尾事件；店主本人查閱過查禁的原始文件。中文維基〈趙一豪〉載新聞局以「歌詞粗俗不雅、有違社會善良風俗」為由查扣並發布新聞稿，該條目引用的一手整理是聲軌（soundtraces.tw）〈最後一張查禁專輯〉。研究階段因 soundtraces.tw 在遠端環境被 egress proxy 擋住無法實讀而保守判 false，此處依店主第一手查證改判；第二個證據網址是維基所引之來源，本環境未能親讀，店主已確認。",
+        "evidenceUrls": [
+          "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B8%80%E8%B1%AA",
+          "https://soundtraces.tw/media-publication/%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E6%9F%A5%E7%A6%81%E5%B0%88%E8%BC%AF%E3%80%8A%E6%8A%8A%E6%88%91%E8%87%AA%E5%B7%B1%E6%8E%8F%E5%87%BA%E4%BE%86%E3%80%8B/"
+        ]
+      },
+      "description": {
+        "text": "水晶唱片出版，1988 年錄音、1990 年發行，隨即被行政院新聞局以「歌詞粗俗不雅、有違社會善良風俗」查扣，是台灣出版史最後一張被查禁的專輯——新聞稿還寫下「屬於作者個人的情緒垃圾」。查禁後水晶改題《把我自己收回來》重發，把〈改變〉〈把我自己掏出來〉〈震動〉換成〈這幾天〉〈把我自己收回來〉〈創造〉三首新版。趙一豪同時是 Double X 成員。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/趙一豪",
+          "https://zh.wikipedia.org/wiki/水晶唱片",
+          "https://api.discogs.com/releases/9586868"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/91/be/db/91bedb18-46f2-6f31-d115-b74ca2f9bf94/mzaf_2566473040449330889.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1525188672,
+        "appleCollectionName": "把我自己掏出來"
+      },
+      "research": {
+        "suggestedYear": 1990,
+        "yearNote": "採 1990：中文維基〈趙一豪〉作品表記「1990 年：《把我自己掏出来》(錄製時間：1988 年)」，導言亦記 1990 年遭查扣。Discogs 依水晶編號 CIRD 0005 記 1989，那是編號年／改版年，非原版發行年。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "台灣出版史上最後一張被行政院新聞局查禁的專輯——新聞局以「歌詞粗俗不雅、有違社會善良風俗」查扣，並在新聞稿寫「類此屬於作者個人的情緒垃圾，實應扔進自我反省的焚化爐中予以燒毀」。水晶唱片出版，是解嚴後禁歌史的收尾事件，被《造音翻土：戰後台灣聲響文化的探索》列為關鍵案例。趙一豪同時是 Double X 成員。",
+        "curatorRisk": "MB 查無，須走人工身分路線。**標題有三種**：原版《把我自己掏出來》、查禁後改版的《把我自己收回來》，Discogs 上另有一筆寫《把我自己掏回來》，三者都指同一張，是本批最容易對錯鍵的一筆。年份中文維基寫 1990（查扣年）、Discogs 寫 1989（錄製／首版年），須擇一並在簡介註明。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Double X",
+      "album": "白痴的謊言",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/artist?query=Double X&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=白痴的謊言&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=Lying Idiot&fmt=json",
+            "MB artist 『Double X』前 8 名分別是德國 techno 二人組(DE)、德國 Europop、德國 rapper、挪威電子二人組(NO)、美國 techno、比利時、法國 hip hop、Double XX Posse(US)，**沒有任何一個 country=TW**"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB 查無台灣 Double X：artist 搜尋 8 個同名全是歐美團，沒有 TW；RG 以《白痴的謊言》搜尋撈到的是 司徒兰芳《善意的谎言》、李翊君《誓言谎言》等純字面雜訊。極高誤匹配風險，故完全不釘 MB，走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/水晶唱片",
+          "https://api.discogs.com/releases/6104004",
+          "https://zh.wikipedia.org/wiki/趙一豪"
+        ],
+        "manualRuling": "MB 完全查無台灣的 Double X：artist 搜尋前 8 名全是德、挪、美、比、法的同名團，無一 country=TW；以《白痴的謊言》《Lying Idiot》搜 RG 只得司徒蘭芳《善意的謊言》一類字面雜訊，誤匹配風險極高，故不釘任何 MB id，走人工身分路線。身分由三方釘死：中文維基〈水晶唱片〉「第二屆（1988 年 10 月）參與藝人包括 Double X、Bones & Teeth、阿電與阿草」、中文維基〈趙一豪〉作品表「1988 年：Double X lying idiot《白痴的謊言》(錄製時間：1986 年)」、Discogs 6104004（水晶唱片 CIRD0002-2，1989，CD Reissue，credit「Double X (15)」）。年份採 1988 卡帶首發，1989 為 CD 再版。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：XX 樂團（唱片行與媒體替代寫法）／Double-X／Double X (15)（Discogs 消歧義後綴）。專輯別名：白癡的謊言（Apple 用異體字「癡」）／Lyin.Idiot（1988 卡帶封面實際寫法，本卡封面亦印 lyin. idiot）／Lyin' Idiot／lying idiot（中文維基〈趙一豪〉寫法）。⚠ Apple TW cid 1525320632 把本作 artist 掛成「趙一豪」（他是團員），且只有 7 軌——是實體 9 軌的嚴格子序列，少了翻唱曲 Bye Bye Baby 與 Love For Sale，標題與掛名不同並不代表配錯碟。⚠ 2014 年《掏出白痴的謊言＝Pull Out The White Lies》是本作與趙一豪《把我自己掏出來》的合併復刻，另一張碟。比對必須連 catno（RPC001／CIRD0002-2）一起鎖。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/da/f4/70/daf470e2-f574-f2a9-5803-142f216caf9e/Lyin_cover.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 1525320632（2020-07-29 水晶數位復刻，與趙一豪同一批上架）artworkUrl100 換 1000x1000bf，實測 200、204,124 bytes、1000×1000，已用 Read 目視。畫面：與《把我自己掏出來》同一位畫家的同系列藍綠色手繪，一名赤裸上身男子的背／半側面，頸部以上被畫成一朵藍白色蕈狀雲（核爆雲）取代頭部，雲上用兩個黑色手寫叉叉當眼睛（即團名 Double X 的圖像化）；左下角直排小字『白痴的謊言』，其下橫排大字黑色小寫『lyin. idiot』——與 Discogs 10004411（1988 卡帶 RPC001）封面標題『白痴的謊言 = Lyin.Idiot』寫法一致，可反證這就是本盤美術。無側標／腰帶／貼紙／盒邊／浮水印／簽名。來源檔同樣是橫幅畫作置中、上下白邊的正方檔。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣最早的地下龐克／後龐克樂團之一，1988 年第二屆台北新音樂節與黑名單工作室前身同台，是台北新音樂節→水晶→地下音樂這條系譜的上游；1988 卡帶原版流通極少。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "疑似 pearl，待店主補 listeners 覆核：1988 年卡帶原版、MB 完全查無台灣 Double X、中文維基仍是紅連結，實際聽眾數極可能低於門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "趙一豪所屬的 Double X 是台灣最早的地下龐克／後龐克樂團之一，1988 年 10 月第二屆台北新音樂節，他們與 Bones & Teeth、阿電與阿草（後來的黑名單工作室）同台。原作 1988 年以卡帶問世，隔年水晶唱片再版成 CD（CIRD0002-2）。九首曲子以英語為主，〈Cool Guy〉開場，〈Taipei〉與〈台北〉各留一個版本，〈阿伯的蚵仔麵線和肉圓〉整首台語。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/水晶唱片",
+          "https://zh.wikipedia.org/wiki/趙一豪",
+          "https://api.discogs.com/releases/6104004"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/83/48/a8/8348a8c4-5685-92e2-0b0a-8d3ebe9f074d/mzaf_4516596254195594239.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1525320632,
+        "appleCollectionName": "白癡的謊言"
+      },
+      "research": {
+        "suggestedYear": 1988,
+        "yearNote": "採 1988：中文維基〈趙一豪〉作品表記「1988 年：Double X lying idiot《白痴的謊言》(錄製時間：1986 年)」，中文維基〈水晶唱片〉記第二屆台北新音樂節 1988 年 10 月 Double X 參演。Discogs 6104004 的 1989 是水晶 CD 再版（標記 Reissue）。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "台灣最早的地下龐克／後龐克樂團之一，趙一豪參與。原版 1988 年卡帶（RPC001），1989 年由水晶唱片再版成 CD（CIRD0002-2）。1988 年第二屆台北新音樂節與 Bones & Teeth、阿電與阿草（後改名黑名單工作室）同台，是「台北新音樂節→水晶→地下音樂」這條系譜的最上游。",
+        "curatorRisk": "MB 查無台灣的 Double X（MB 上 Double X 全是歐美同名團），必須走人工身分路線，且極易誤匹配。英文名 Lyin' Idiot / lying idiot 拼法不一。年份 1988（卡帶）vs 1989（CD 再版）要擇一。中文維基「Double X」是紅連結。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "雷光夏",
+      "album": "我是雷光夏",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "999ed395-5550-4255-af3f-6bc44fe3bc6f",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "藝人別名：Summer Lei（官方英文名）／Lei Kwang-hsia（羅馬拼音）；卡池鍵用中文本名雷光夏。專輯名《我是雷光夏》無英文副標、無簡體異寫，惟「我是雷光夏」與藝人名高度重疊，自動比對時勿誤判為自我同名卡。⚠ 2005 年福茂唱片 CIRD10352 是同一作品的再版（多插〈時間 (1)〉至〈時間 (5)〉五段間奏，13 軌），與 1995 水晶原版同屬一個 RG，不另開卡。⚠ 勿與她 2006《黑暗之光》（卡池已有）混。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/999ed395-5550-4255-af3f-6bc44fe3bc6f/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雷光夏首張個人作品、水晶唱片聲音實驗路線在流行邊界上的起點，她日後橫跨電影配樂並三金入圍，作品本身則清簡易入。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "創作者地位有金馬、金曲等跨來源佐證，但首張作品本身的正典共識不足，殿堂門檻未達。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "雷光夏 1968 年生，父親雷驤同是文學與藝術創作者；她的詞曲被形容帶著詩意與畫面感，人稱「音樂詩人」。1995 年水晶唱片發行的首張個人作品收八首歌：〈情節〉〈逝〉〈榜外〉〈媽媽與我〉〈獵小海豹〉〈波斯〉〈冬天不相干的故事〉〈入山〉。2005 年福茂唱片再版（CIRD10352）另插入〈時間〉五段間奏，成為十三軌。她後來以電影《第36個故事》拿下金馬獎最佳原創電影歌曲。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/雷光夏",
+          "https://musicbrainz.org/release-group/999ed395-5550-4255-af3f-6bc44fe3bc6f"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1995,
+        "yearNote": "採 1995：中文維基〈雷光夏〉錄音室專輯表第 1 項「1995 年《我是雷光夏》水晶」，曲目八首與原版相符。MB 唯一 release 標 2005-03-05（福茂唱片 CIRD10352，13 軌）是再版年，非首發年。",
+        "mbTitle": "我是雷光夏",
+        "mbArtist": "雷光夏",
+        "mbFirstRelease": "2005-03-05",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "水晶唱片 CIRD 1035-2，雷光夏首張專輯，是水晶「聲音實驗／氛圍」路線在流行邊界上的代表作，也讓她成為 1990 年代少數從地下廠牌起家、後來橫跨電影配樂的創作者。卡池目前只有 2006 年《黑暗之光》，缺這個起點。",
+        "curatorRisk": "MB 對雷光夏早期水晶作品建檔需個別確認。1995 年水晶盤與後來的再版封面不同。中文維基「水晶唱片」條目列她為個人藝人，但沒有專輯層級的來源。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "夾子電動大樂隊",
+      "album": "夾子電動大樂隊",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=夾子電動大樂隊&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=夾子電動大樂隊&fmt=json",
+            "https://musicbrainz.org/ws/2/artist?query=The Clippers&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB 有 artist 夾子電動大樂隊 = e136f539-98ad-463d-b6fb-691dc9faa3e7（country TW、disambiguation『Taiwanese rock band』、alias The Clippers），但 **release-group 總數 0**。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/夾子電動大樂隊",
+          "https://zh.wikipedia.org/wiki/應蔚民",
+          "https://zh.wikipedia.org/wiki/濁水溪公社"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB artist e136f539-98ad-463d-b6fb-691dc9faa3e7（country TW、disambiguation Taiwanese rock band、alias The Clippers）存在但 release-group 總數 0，已附 mbAbsenceProof。Discogs 亦查無（api.discogs.com 以「夾子電動大樂隊」搜尋只回 2012《地下人》CLIPS-12001 與 2014《情慾教室》Clips14001；以 TCM010 搜尋回的十一筆全是歐美盤）。改以中文維基〈夾子電動大樂隊〉專輯表（2000年12月《夾子電動大樂隊》）＋〈應蔚民〉唱片表（2000-12-15）＋ Apple TW artwork 檔名 TCM010＝角頭音樂編號 010 三方交叉釘定。本批寫作 agent 核可，2026-08-23。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "團名別名：夾子樂團（2003 期）、夾子太硬啦！（2005／2010／2012 期）、夾子綜藝大樂隊（1999 現場盤）、夾子小應、The Clippers（MB artist e136f539 的 alias）。三個時期三個自稱，本卡固定用 2000 年當期的「夾子電動大樂隊」，不與另兩期合併。專輯別名：《轉吧七彩霓虹燈》（Apple TW cid 815489196 的數位改題，封面上緣的副標／主打歌）、《轉吧！七彩霓紅燈》（中文維基用「霓紅」異寫）、⚠《搖滾綜義秀》（中文維基〈應蔚民〉唱片表對同一筆 2000-12-15 發行用的名字，與〈夾子電動大樂隊〉條目的同名寫法衝突，見回報）。主唱本名應蔚民，藝名小應／應朗丰。與 MB 上任何 The Clippers 同名團無關。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b9/30/0a/b9300af4-c38d-a556-0f4e-015696778d80/TCM010_4000x4000.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 815489196，artwork 原始檔名『TCM010_4000x4000.jpg』＝ Taiwan Colors Music（角頭音樂）編號 010，可直接鎖定是 2000 年那張角頭盤。1000x1000bf 實測 200、250,960 bytes、1000×1000，已用 Read 目視。畫面：黑白現場照，一名穿亮片比基尼的舞者在舞台上騰空跳起、雙手高舉握拳，背景有舞台燈與寫著『國際海洋音樂祭』字樣的橫幅，左下角另一名男子在鼓組旁；照片上疊一行極大的粉橘色空心美術字『夾子電動大樂隊』（其中『樂』字為綠色），上緣另有一排以手勢符號拼出的『轉吧！七彩霓虹燈』。**這張封面同時證實了正名問題**：專輯主標題就是團名『夾子電動大樂隊』（＝中文維基所記 2000 年同名首張），『轉吧！七彩霓虹燈』只是封面上的副標／主打歌標語，Apple 拿它當數位版專輯名。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台客搖滾成型期的原型作，〈轉吧！七彩霓虹燈〉是辨識度最高的一首；旋律俗艷直白但作品本身在台灣以外近乎不流通。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂史地位限於台灣本地場景，缺乏跨來源長期共識；accessibility 僅 2 不符異端，listeners 不可得故不判流亡。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "主唱應蔚民（小應）是濁水溪公社前鼓手，眷村長大、不會說台語，卻把電子花車與那卡西的排場整組搬進獨立樂團編制，台上還配兩名熱舞舞者。角頭音樂二○○○年十二月發行，封面主標題就是團名，上緣印著〈轉吧！七彩霓虹燈〉——這首後來成為台客美學辨識度最高的一曲，二○一七年由顏冠希取樣重做成〈再轉吧！七彩霓虹燈〉。同一批人日後還用過夾子樂團與夾子太硬啦兩個名字。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/夾子電動大樂隊",
+          "https://zh.wikipedia.org/wiki/濁水溪公社",
+          "https://zh.wikipedia.org/wiki/應蔚民"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/54/58/bb/5458bba3-169c-0cbb-37ea-234bced1433a/mzaf_15066083130830521542.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 815489196,
+        "appleCollectionName": "轉吧七彩霓虹燈"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "中文維基〈夾子電動大樂隊〉專輯表記「2000年12月」；〈應蔚民〉唱片表記 2000-12-15；Apple TW 記 2000-12-01；artwork 原始檔名 TCM010＝角頭音樂（Taiwan Colors Music）編號 010。四者同指 2000 年 12 月，採 2000。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "主唱應蔚民（小應）是濁水溪公社前鼓手，2000 年 12 月發行的同名首張把電子花車／那卡西直接搬進獨立樂團編制，代表曲〈轉吧！七彩霓紅燈〉成為台客美學最具辨識度的符號（2017 年被顏冠希取樣重製）。與濁水溪公社構成 1990s→2000s 台客搖滾的兩條主幹。",
+        "curatorRisk": "MB 查無，須走人工身分路線；Discogs 也只建檔了 2012《地下人》與 2014《情慾教室》，2000 年首張查無。團名有「夾子電動大樂隊／夾子樂團／夾子太硬啦」三代寫法，同一批人不同時期不同名，分類要小心。中文維基條目掛「無來源」模板。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "脫拉庫",
+      "album": "飛向陽光飛向你",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "828fb325-0cd8-407a-a64a-d578af16dba5",
+        "upc": "4716331002625",
+        "aliasesChecked": true,
+        "aliasReview": "團名英文寫法官方用大寫 TOLAKU（中文維基 infobox「英文名 = TOLAKU」、封面亦印 TOLAKU），另見 Tolaku、Truck（策展 risk 提到的誤譯，實非官方寫法，不可用於比對）。中文只有「脫拉庫」一種寫法。專輯名無異寫，MB 標題與卡片正名完全一致。⚠ 主唱張國璽同時是濁水溪公社前吉他手，去重時不可把兩團互相吸收。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/828fb325-0cd8-407a-a64a-d578af16dba5/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1990 年代末被主流唱片公司簽下的台灣獨立樂團代表之一，解散前的最後一張；旋律直白，但全球數位通路與資料庫幾乎不流通。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "疑似 pearl，待店主補 listeners 覆核：Apple 七國目錄查無此碟、MB 僅建一張、2000 年新力哥倫比亞台版早已絕版，obscurity 判 5，但本環境取不到 Last.fm listeners 有效數值，依規則不得判定。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "脫拉庫一九九六年成軍，主唱兼吉他手張國璽是濁水溪公社前吉他手。一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎，成為當時少數被主流唱片公司簽下的台灣獨立樂團。二○○○年七月由新力哥倫比亞（今台灣索尼音樂）發行的第二張收十二軌，維持直白的旋律線與快節奏編制，曲目包括〈時速78〉〈草履蟲〉〈愛妳Yo〉。兩張專輯之後樂團即解散，直到二○一二年才再合體演出。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/脫拉庫",
+          "https://zh.wikipedia.org/wiki/濁水溪公社",
+          "https://musicbrainz.org/release-group/828fb325-0cd8-407a-a64a-d578af16dba5"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "MB RG 828fb325 first-release-date 2000-07-07，原盤 e478787f（TW, CD, 12 軌, 台灣索尼音樂 SDD0026, barcode 4716331002625）；中文維基〈脫拉庫〉專輯表記 2000 年。兩者一致。",
+        "mbTitle": "飛向陽光飛向你",
+        "mbArtist": "脫拉庫",
+        "mbFirstRelease": "2000-07-07",
+        "upcNote": "飛向陽光飛向你 (2000-07-07 TW)",
+        "curatorWhy": "主唱兼吉他手張國璽是濁水溪公社前吉他手，脫拉庫是 1990 年代末台灣主流化最成功的龐克團之一，第16屆金曲獎（2005）最佳樂團入圍名單裡的常客世代。這張是他們的代表作。",
+        "curatorRisk": "MB 已建檔（脫拉庫／飛向陽光飛向你／2000-07-07），但只有這一張，其餘作品要人工補。團名英文 Truck / Tolaku 寫法不一。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "閃靈",
+      "album": "祖靈之流",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "7fb51ed0-345c-475d-a9e7-46c8abb1efe7",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名：卡片正名「閃靈」，MB artist 主名建成英文 ChthoniC（81a344e9-a8b1-49a6-80b2-2b03d8a25650），中文只在 alias，中文查詢完全撈不到，必須用英文團名反查全目錄——本批「MB 主名不可信」的樣板案例。其他寫法：CHTHONIC（全大寫）、閃靈樂團、闪灵乐团（簡體）。專輯名：MB 與部分通路作《祖靈之流: Where the Ancestors’ Souls Gathered》，卡片去掉英文副標；英文單獨寫法 Where The Ancestors' Souls Gathered（撇號有直體與彎體兩種）。Discogs 的 DVL-000666 與 DVL-000667 是同一張的中／英文版，同屬一個 RG，不分卡。⚠ 排除同年的 Demo 單曲《夢魘》《黑暗閃靈殺手》、1998《越海第二樂章：深耕》單曲，以及 2003 精選《震氣蔓延 1995～2002》與 2006 精選《鬼脈轉生‧帝輪十年經典》。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/7fb51ed0-345c-475d-a9e7-46c8abb1efe7/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一支黑金屬樂團的首張創作專輯，是這條線的起點；嘶吼唱腔、文言文歌詞與近十分鐘的長曲讓入耳門檻偏高，且自主發行早已絕版、未進數位通路。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，樂史地位限於台灣金屬場景的開端，缺乏跨來源長期共識；accessibility 4 不足以判異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "閃靈一九九五年由林昶佐（Freddy）在台北組成，是台灣第一支黑金屬樂團。首張作品一九九八年在台灣錄音，交由曾製作 Illdisposed 的丹麥製作人 Jan Borsing 混音與後期，先由團員與朋友自組的佛銳唱片獨立鋪貨，一九九九年一月在西門町淘兒唱片首賣，二○○○年後發行業務轉由水晶唱片接手。內容以〈越海〉三部曲為主體，寫先民渡海來台開墾；歌詞用文言文寫成，Freddy 在部分段落拉二胡。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/祖靈之流",
+          "https://zh.wikipedia.org/wiki/閃靈樂團",
+          "https://musicbrainz.org/release-group/7fb51ed0-345c-475d-a9e7-46c8abb1efe7"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 1999,
+        "yearNote": "MB RG first-release-date 1999，TW 原盤 19d1f3fc（Fredmosa Records DVL-000667）；中文維基〈祖靈之流〉infobox 記 1999 年，內文記 1999-01-11 於西門町淘兒唱片首賣。⚠ 中文維基〈閃靈樂團〉內文與年表另記「1998 年底由團員與朋友自行全台獨立鋪貨發行」，指的是正式首賣前的獨立鋪貨。採 1999。",
+        "mbTitle": "祖靈之流: Where the Ancestors’ Souls Gathered",
+        "mbArtist": "ChthoniC",
+        "mbFirstRelease": "1999",
+        "upcNote": "releases=5，皆無有效條碼",
+        "curatorWhy": "閃靈首張專輯，Fredmosa Records（DVL-000666/667）發行，中英雙版本（Where the Ancestors' Souls Gathered）。1976 的吉他手大麻曾參與這張與單曲《髮扣帶》的錄製後才離團——是台灣金屬與 indie rock 兩條線交叉的實證。卡池目前只有 2005《賽德克巴萊》與 2011《高砂軍》，缺這個起點。",
+        "curatorRisk": "MB 以「閃靈」查詢撈不到這張（MB 上多掛在 ChthoniC 名下），要用英文團名交叉查。Discogs 上同時有 DVL-000666 與 DVL-000667 兩個編號的中／英版本，選版要決定。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "閃靈",
+      "album": "永劫輪迴",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "a456d342-2863-3506-ae55-4479ddebaecb",
+        "upc": "4719672001333",
+        "aliasesChecked": true,
+        "aliasReview": "團名同前卡：MB 主名 ChthoniC，中文「閃靈」只在 alias；另見 CHTHONIC、閃靈樂團、闪灵乐团。專輯名：MB 的 TW 原盤標題作《永劫輪迴: Relentless Recurrence》，卡片去英文副標；英文單獨寫法 Relentless Recurrence（2007 年 Deathlight 全球英文版沿用）。⚠ 最像的假陽性是同團 2002-11 精選《冥誕七年.加藏: Relentless for 7 Years, Plus》，英文副標同樣帶 Relentless，已明確排除；另排除同年《反中國併吞: Anti China Invasion Live》現場合輯與 EP《鬼王西征》。2006 復刻版與 2007／2008 的 XE／HK 盤同屬一個 RG，不分卡。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/4e/d2/834ed206-d9fe-33a0-7151-7de3bac8c5df/muziu-0569.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "原圖是 CAA 的 500×448 非正方實體照，連塑膠外膜一起拍，左緣多一條白底直式側標宣傳條（印「閃靈 永劫輪迴／揭開古老厲鬼封印／林投姐」）。改用 Apple 台灣商店 6780765232 官方封面（1000×1000bf），已下載目視確認：正方、褐調原盤美術（白紗覆面人形、枯枝、右側直排「永劫輪迴」與 ChthoniC 哥德字體團徽），無側標、無外膜反光、無貼紙"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 4,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金屬樂團首度拿下金曲獎最佳樂團獎的作品，也是水晶唱片在金曲獎上最風光的一次；交響黑金屬編制加全台語嘶吼歌詞，入耳門檻高但已多次跨國發行。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，金曲獎最佳樂團屬區域性指標而非跨來源史上核心共識；accessibility 4 亦不足以判異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "以台灣民間故事林投姐為藍本的概念作，寫林昭娘死後化為厲鬼救子、對抗天庭，最後墮入永劫輪迴。二○○二年初赴丹麥 Borsing Recording 錄音，同年四月由水晶唱片發行（CIRD 1133），隔年拿下第十四屆金曲獎最佳樂團獎。聲響維持 symphonic black metal，但歌詞首度全部以台語寫成，序曲唸台語金剛經，〈悲命格〉走五聲音階旋律；女主唱段落減少，改以女聲低聲吟唸鋪陳女鬼的氣氛。同年展開結合台灣獅鼓的「鬼王遶境」巡迴。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/永劫輪迴",
+          "https://zh.wikipedia.org/wiki/閃靈樂團",
+          "https://musicbrainz.org/release-group/a456d342-2863-3506-ae55-4479ddebaecb"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/41/f8/a041f834-c295-3c01-e7d0-2bcf8e07d6d9/mzaf_1729234052264625906.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6780765232,
+        "appleCollectionName": "永劫輪迴"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB RG first-release-date 2002-04-01，原盤 0293c958（TW, CD, 9 軌, Crystal Records CIRD 1133, barcode 4719672001333）；中文維基〈永劫輪迴〉infobox 記 2002 年 4 月 1 日。兩者一致。",
+        "mbTitle": "永劫輪迴",
+        "mbArtist": "ChthoniC",
+        "mbFirstRelease": "2002-04-01",
+        "upcNote": "永劫輪迴: Relentless Recurrence (2002-04-01 TW)",
+        "curatorWhy": "水晶唱片 CIRD 1133 發行，2003 年第14屆金曲獎最佳樂團獎得獎作——這是金屬樂團第一次拿下金曲最佳樂團，也是水晶唱片旗下作品在金曲獎上最風光的一次（水晶 2006 年歇業）。",
+        "curatorRisk": "MB 建檔情形須個別確認（閃靈作品多掛 ChthoniC）。專輯名英文 Relentless Recurrence，中英版本並存。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "圖騰樂團",
+      "album": "我在那邊唱",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "f1293d91-3da3-4c58-83a7-7e1a13fe9c4a",
+        "upc": "4711479222485",
+        "aliasesChecked": true,
+        "aliasReview": "團名：卡片保留「樂團」二字作 圖騰樂團，避免「圖騰」單用與大量同字條目衝突；其他寫法 圖騰（中文維基 infobox 姓名欄）、Totem（infobox 英文名、Discogs credit）。**英文 Totem 絕不可用於自動比對**，MB／Discogs 上烏拉圭 rock、波蘭 metal 與亞特蘭大歌手等同名條目極多，比對須鎖中文團名＋2006＋彎的音樂。專輯名《我在那邊唱》無異寫，封面另印英文 OVER THERE I SING（僅為封面美術，不作別名主體）。成員別名：舒米恩＝Suming＝舒米恩·魯碧（Suming Rupi）＝漢名姜聖民；查瑪克＝查馬克＝胡祝凱；阿新＝田明新；阿勝＝陳錦勝；阿wei＝阿Wei＝黃俊薳。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5d/c1/49/5dc149f7-f443-fdeb-04a2-1f2c4b298f87/4711479222485.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1411904272）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；海洋音樂祭大賞後的首張，入圍第十八屆金曲獎最佳樂團並獲中華音樂人交流協會年度十大專輯；旋律直白易入耳，但流通僅限台灣獨立市場。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，屬台灣原住民獨立樂團養成路線的重要作品而非跨來源公認史上核心；accessibility 2 不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "團員以台東的原住民青年為主：阿美族的舒米恩、排灣族的查瑪克與阿新、卑南族的阿勝，加上唯一的漢人貝斯手阿wei。二○○五年拿下貢寮國際海洋音樂祭大賞後，二○○六年四月由彎的音樂發行首張。開場〈團結的呼喚〉是舒米恩的直笛序曲，〈父親的話〉全程以母語演唱並接上一九八○年代英語搖滾的曲式，原住民吟唱與雷鬼、bossa nova、饒舌交錯。入圍第十八屆金曲獎最佳樂團，中華音樂人交流協會選為該年十大專輯。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/我在那邊唱",
+          "https://zh.wikipedia.org/wiki/圖騰樂團",
+          "https://musicbrainz.org/release-group/f1293d91-3da3-4c58-83a7-7e1a13fe9c4a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f2/ff/47/f2ff47a2-24b3-e67e-5c3e-0d0a776adc54/mzaf_17513058064982049304.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1411904272,
+        "appleCollectionName": "我在那邊唱"
+      },
+      "research": {
+        "suggestedYear": 2006,
+        "yearNote": "MB RG first-release-date 2006-04-07，原盤 83945164（barcode 4711479222485, Wonder Music）；中文維基〈我在那邊唱〉infobox 與〈圖騰樂團〉經歷表皆記 2006 年 4 月。一致。",
+        "mbTitle": "我在那邊唱",
+        "mbArtist": "圖騰樂團",
+        "mbFirstRelease": "2006-04-07",
+        "upcNote": "我在那邊唱 (2006-04-07 XW)",
+        "curatorWhy": "彎的音樂 2006 年 4 月發行，2007 年第18屆金曲獎最佳樂團入圍。圖騰是「海洋音樂祭→彎的音樂」這條原住民／獨立樂團養成路線的代表，主唱舒米恩後來以個人專輯拿下第22屆金曲獎最佳原住民語專輯。整個成團到第二張的過程被拍成紀錄片《誰在那邊唱》。",
+        "curatorRisk": "MB 已建檔（圖騰樂團／我在那邊唱／2006-04-07）。團名「圖騰」二字在 MB／Discogs 上與英文 Totem 大量同名團衝突。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "圖騰樂團",
+      "album": "放羊的孩子",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=8316d3f4-f747-454c-a348-afceb4945237&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=Totem 圖騰&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=放羊的孩子&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=artist:圖騰樂團 AND release:放羊的孩子&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB artist 圖騰樂團 = 8316d3f4-f747-454c-a348-afceb4945237（country TW）**全目錄只有 1 張**：2006-04-07《我在那邊唱》（已在本批自動配對）。《放羊的孩子》沒有建檔；以 RG 搜尋《放羊的孩子》撈到的是 曾毓蘭《神的孩子》一類雜訊；用英文 Totem 交叉查只找到烏拉圭 rock band(UY)、波蘭 metal(PL)、亞特蘭大歌手，皆非本團。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/圖騰樂團",
+          "https://api.discogs.com/releases/14368995"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB artist 圖騰樂團 = 8316d3f4-f747-454c-a348-afceb4945237（country TW）全目錄只有 2006-04-07《我在那邊唱》一張，本碟未建檔；以 RG 名稱、英文 Totem 交叉查皆只得同名雜訊，已附 mbAbsenceProof。改以中文維基〈圖騰樂團〉作品表與 Discogs release 14368995（Wonder Music 彎的音樂 WM2009-013, Taiwan, 2009, CD Album, barcode 4712755920132）釘定身分，並以該筆曲目表對照 Apple 十二軌全同。本批寫作 agent 核可，2026-08-23。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "團名同前卡：圖騰樂團／圖騰／Totem（Discogs release 14368995 的 credit 即建成 Totem*）。英文 Totem 不可用於自動比對，須鎖中文團名＋2009＋彎的音樂＋WM2009-013。專輯名《放羊的孩子》無異寫；⚠ 中文維基「放羊的孩子」為重定向到寓言條目〈狼來了〉，該詞條不是專輯條目，查證時不可誤引。與同團 2006《我在那邊唱》是兩張不同的碟。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/77/ae/07/77ae0751-9412-4d7f-3d8d-02803ee340ef/4712755920132.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 1607270340（artwork 檔名是條碼 4712755920132）1000x1000bf，實測 200、265,180 bytes、1000×1000，已用 Read 目視。畫面：黃昏／晨霧色調的空曠草原照，左半一棵枝幹稀疏的枯樹（樹幹上垂著一條繩子），中景是一座只剩木構骨架與茅草屋頂的棚屋，遠景山影與另一棵細瘦的樹，前景是大片草地；右上白色標題『放羊的孩子』（『羊』字放大），下方白框內小字『圖騰樂團』；左下角有『彎的音樂 Wonder Music』的小型白色 logo（廠牌 logo 屬封面美術一部分，非貼紙）。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第二十一屆金曲獎最佳樂團的第二張，地位在首張之下但仍是這條原住民獨立樂團路線的主要作品；旋律直白，MB 未建檔、流通有限。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 3 遠低於殿堂門檻；accessibility 2 不符異端；listeners 不可得，且本作仍在數位通路流通，不判流亡。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "彎的音樂二○○九年九月發行的第二張，編號 WM2009-013，十二軌，入圍第二十一屆金曲獎最佳樂團。延續首張以台東原住民青年為班底的編制，舒米恩、查瑪克與吉他手阿新分擔創作，開場同名曲之後接〈瘋狂的Apple〉〈拉千禧〉等曲。封面是黃昏草原上一棵枯樹與一座傾頹的茅草工寮。樂團從二○○二年成軍到這張專輯之前的過程，被阿美族導演龍男·以撒克·凡亞思拍成紀錄片《誰在那邊唱》。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/圖騰樂團",
+          "https://api.discogs.com/releases/14368995"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/1d/d7/bf/1dd7bf77-1b73-8db6-54a6-cbc777ebba47/mzaf_11587045744610807630.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1607270340,
+        "appleCollectionName": "放羊的孩子"
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "MB 未建檔。中文維基〈圖騰樂團〉作品表記「《放羊的孩子》，2009年9月，彎的音樂發行」；Discogs release 14368995（Totem《放羊的孩子》, Taiwan, 2009, CD Album, Wonder Music 彎的音樂 WM2009-013, barcode 4712755920132）同記 2009；Apple TW cid 1607270340 記 2009-09-09。三方一致，採 2009。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "彎的音樂 2009 年 9 月發行，2010 年第21屆金曲獎最佳樂團入圍（同屆得主是 1976《不合時宜》）。",
+        "curatorRisk": "MB 以「圖騰」查詢只撈到第一張，這張須人工確認。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "拷秋勤",
+      "album": "拷！！出來了！！！",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=5c6711d5-7571-4507-b2fd-96dc3750e0e0&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/release-group?artist=8ef9196b-3e4c-46df-ad74-1de18d514e97&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/release-group?query=拷出來了&fmt=json",
+            "https://musicbrainz.org/ws/2/artist?query=Kou Chou Ching&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "雙向都查過：MB 中文 artist 拷秋勤 = 5c6711d5-7571-4507-b2fd-96dc3750e0e0（country TW）全目錄**只有 1 張** 2012-08-31《發生了什麼事？》（已自動配對）；MB 另有一個英文 artist Kou Chou Ching = 8ef9196b-3e4c-46df-ad74-1de18d514e97，**release-group 總數 0**（是一個空殼條目，應與中文條目合併但尚未合併）。2008 這張兩邊都查無，走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/拷！！出來了！！！",
+          "https://api.discogs.com/releases/13536586",
+          "https://zh.wikipedia.org/wiki/拷秋勤"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 中文 artist 5c6711d5 全目錄只有 2012《發生了什麼事？》，英文 artist 8ef9196b 為 0 張 RG 的空殼條目，本碟兩邊皆查無，已附 mbAbsenceProof。改以中文維基專屬條目〈拷！！出來了！！！〉（ISRC 系統：2007 年 12 月、參拾柒度製作）與 Discogs release 13536586（catno 37D07502、參拾柒度製作有限公司、Taiwan、2×CD Limited Edition、barcode 4711457855025，與該維基條目引用的玫瑰大眾商品編號相同）交叉釘定，並以 Discogs 三十四軌曲目表逐首核對 Apple 條目全同。本批寫作 agent 核可，2026-08-23。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "團名：卡片正名「拷秋勤」，英文 Kou Chou Ching（Discogs 與 Apple 只認英文，中文搜尋撈不到）。⚠ **MB 上兩個條目並存且未合併**：中文 5c6711d5-7571-4507-b2fd-96dc3750e0e0（1 張 RG）與英文 Kou Chou Ching 8ef9196b-3e4c-46df-ad74-1de18d514e97（0 張 RG，空殼），查詢時兩個都要看。Apple 另見「拷秋勤樂團」。專輯名：卡池鍵值用**全形**《拷！！出來了！！！》，但**封面實印為半形**「拷!!出來了!!!」（中文維基條目名亦為半形，全形是重定向），Discogs release 13536586 標題作「拷！！出來了！！！/ Kou!! It's Coming out!!!」——全形／半形兩種寫法都必須登記，否則 grep 去重會漏。英文別名：KOU!! It's Coming Out!!!（Apple 條目名）、Kou!! It's Coming out!!!。驚嘆號數量（前二後三）不可正規化壓成單一驚嘆號。成員別名：魚仔林＝fishLIN＝林家鴻；朱皮＝朱品諭；J.CHEN＝陳J威仲＝陳威仲。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/57/74/b7/mzi.zomayelm.tif/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 274776886（Kou Chou Ching《KOU!! It's Coming Out!!!》）。**此筆刻意不用 1000x1000bf**：來源檔原生只有 600×600（600/1200/2000 各尺寸 bb 都只回 600×600），套 1000x1000bf 會把 600px 的圖置中、四周補一圈黑邊（已下載目視確認），故改用 600x600bb 取原生正方全圖。實測 200、81,590 bytes、600×600，已用 Read 目視。畫面：黑底，中央是一雙手由下往上握住一根竹管／麥克風狀長物的特寫照，四周散布十餘枚白色指紋；上方三行標題由上而下為銀灰立體字『KOU CHOU CHING』（右側附一枚方形篆刻印章）、白色粗體『KOU!! It's Coming Out!!!』、灰色中文『拷秋勤 拷!!出來了』，左下角有印在美術裡的 Parental Advisory 標籤。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。註：封面上的中文用的是**半形**驚嘆號『拷!!出來了』，與本批鍵值採全形『拷！！出來了！！！』不同，正規化時請留意。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣母語政治嘻哈的定義性作品，入圍當年金曲獎最佳樂團與最佳台語專輯，〈官逼民反〉後來成為社運現場的固定壓軸曲；節拍直白但語言與傳統器樂素材密度高。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，影響力集中在台灣本地嘻哈與社運場景，缺乏跨來源長期共識；accessibility 3 不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "拷秋勤二○○三年由魚仔林與范姜組成，二○○四年 J.CHEN 加入後定型為兩名 MC 加一名 DJ，再添嗩吶手擴充音色。第二張作品由參拾柒度製作於二○○七年十二月發行，把北管、客家八音、歌仔戲與勸世歌的素材接進 hip hop 節拍，歌詞在台語、客語與華語之間切換。限量版做成雙片：正片十七軌，第二片十七軌全為改作，其中〈Confluent People〉由林強操刀、壓軸的〈Your Name Is Taiwan〉交給濁水溪公社。開場曲〈官逼民反〉日後成為街頭集會的固定壓軸。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/拷！！出來了！！！",
+          "https://zh.wikipedia.org/wiki/拷秋勤",
+          "https://api.discogs.com/releases/13536586"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/b7/0c/4e/mzm.dreosxjo.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 274776886,
+        "appleCollectionName": "KOU!! It's Coming Out!!!"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "**年份更正 2008→2007**（沿用身分裁定 agent 的判定並已複驗）。中文維基專屬條目〈拷！！出來了！！！〉infobox 與內文依 ISRC 系統記「2007 年 12 月、參拾柒度製作發行」，並寫明本作是**第二張專輯**（前作為 2005《復刻》EP 與《無名英雄》）；Apple TW cid 274776886 記 2007。原本的 2008 來自〈拷秋勤〉樂團 infobox 的「出道作(2008)」，該欄位另有「出道作」誤植，不採。⚠ Discogs release 13536586 記 2008，視為鋪貨／建檔年，簡介不引用。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "2003 年成立的台灣本土嘻哈團，把嗩吶、北管、客家八音、歌仔戲、勸世歌直接接進 hip hop，歌詞混用台語／客語／華語。這張（參拾柒度製作，37D07502；同年另有日本 Toy Label 版 TOY-TW1）入圍金曲獎最佳樂團。代表曲〈官逼民反〉是 2013 八一八拆政府、2014 反黑箱服貿晚會的壓軸曲。",
+        "curatorRisk": "MB 查無這張（MB 只有 2012《發生了什麼事？》），須走人工身分路線或用日版對照。Discogs 上以英文團名 Kou Chou Ching 建檔，中文「拷秋勤」搜尋撈不到，雙向查是必要的。標題含多個驚嘆號，鍵值正規化要小心。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "拷秋勤",
+      "album": "發生了什麼事？",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "44c0f335-1023-4b64-ad43-a7e6fd1a747a",
+        "upc": "4717954161522",
+        "aliasesChecked": true,
+        "aliasReview": "團名同前卡：拷秋勤／Kou Chou Ching（MB 兩個未合併條目 5c6711d5 與 8ef9196b）／拷秋勤樂團（Apple TW 條目 credit 作「拷秋勤樂團 & 朱丁順」，多掛了合作的恆春民謠歌手朱丁順）。專輯名：卡池鍵值用**全形問號**《發生了什麼事？》，另見半形《發生了什麼事?》與無問號《發生了什麼事》（Apple TW 條目名即無問號），三種寫法都要登記。英文同碟版標題《What's Happening?》（Apple cid 572205535），依卡片中文正名不另立卡。曲名〈官逼民反 Part.2〉另見〈官逼民反 Pt.2〉（Apple 半形縮寫）。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/51/a0/d8/51a0d806-db2b-0f20-72d3-8512f2a49394/4717954161522.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店，別名 Kou Chou Ching 才搜得到（中文「拷秋勤」只撈到 2024 單曲）；collectionId 572205535，2012-08-31 與 MB first-release 同日，℗ 2012 Kou Chou Ching。目視：純黑底，白色銳角三角形（空拍公路的高反差去背）由左下貫穿到右上，右下另一塊三角形內嵌灰階空拍市街紋理；左上白色細線方框內置白字「WHAT'S HAPPENING?」與下行小字「KOU CHOU CHING」。原生 1425px，無側標／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍二○一二年金曲獎最佳專輯包裝獎與最佳台語專輯獎，是樂團把社運參與與母語嘻哈做得最完整的一張，但地位在前作之下。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 3 遠低於殿堂門檻；accessibility 3 不符異端；listeners 不可得，且本作仍在數位通路流通，不判流亡。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "拷秋勤二○一二年八月三十一日發行的作品，入圍該年金曲獎最佳專輯包裝獎與最佳台語專輯獎。十七軌的結構是正片十二軌加五首改作：〈後生。轟動世界〉走客語饒舌，〈台北蓋都蘭〉把都市與部落並置，〈官逼民反 Part.2〉承接前作那首在街頭被反覆點播的曲子，末段的改作分別交給 Schizyway、BUBBLE-B、Lazy Habits、Duzs 與 Fish the Point。同一套錄音另發過英文版《What's Happening?》，曲目相同。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/拷秋勤",
+          "https://musicbrainz.org/release-group/44c0f335-1023-4b64-ad43-a7e6fd1a747a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/14/8b/09/148b09a5-99c6-953f-84b4-fc54a71b2eb0/mzaf_7116168187277956888.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 978247509,
+        "appleCollectionName": "發生了什麼事"
+      },
+      "research": {
+        "suggestedYear": 2012,
+        "yearNote": "MB RG first-release-date 2012-08-31，原盤 f404c911（TW, CD, 17 軌, 大吉祥整合行銷 DGS-1201, barcode 4717954161522）；Apple TW 條目同記 2012-08-31。一致。",
+        "mbTitle": "發生了什麼事？",
+        "mbArtist": "拷秋勤",
+        "mbFirstRelease": "2012-08-31",
+        "upcNote": "發生了什麼事？ (2012-08-31 TW)",
+        "curatorWhy": "2012 年入圍金曲獎最佳專輯包裝獎與最佳台語專輯獎的作品，是拷秋勤把社運參與與台語嘻哈做到最完整的一張。",
+        "curatorRisk": "MB 已建檔（2012-08-31）。標題含全形問號，鍵值要正規化。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "農村武裝青年",
+      "album": "幸福在哪裡？",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "364c0300-8bc8-4857-ae27-f0d4611fff8a",
+        "upc": "8340120201317",
+        "aliasesChecked": true,
+        "aliasReview": "團名「農村武裝青年」只有一種中文寫法，無英文官方團名（MB artist 主名即中文）。專輯名：卡池鍵值用**全形問號**《幸福在哪裡？》，另見半形《幸福在哪裡?》（Apple TW 條目名）與無問號《幸福在哪裡》（中文維基榮譽欄與部分通路），三種寫法都要登記。曲名有繁體異寫需注意：MB 與中文維基作〈囝仔你咁知〉，Apple 作〈囡仔你甘知〉，同一首曲的兩種台語用字。主唱阿達本名江育達。⚠ 與同團 2011《白海豚之歌EP》不可混——〈白海豚之歌〉同時收在本作第 6 軌。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/0f/0c/820f0c48-a55f-4b2f-382f-cdcd60288950/018736439810.png/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1800753099）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍二○一四年金音創作獎最佳樂團與最佳搖滾專輯，其中〈失去記憶的城市〉拿下最佳民謠單曲；台語民謠搖滾的旋律直白，流通限於台灣獨立市場。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 3 遠低於殿堂門檻；accessibility 2 不符異端；listeners 不可得，且本作仍在數位通路流通，不判流亡。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "主唱阿達（江育達）是彰化田中人，二○○七年在樂生療養院演出時結識楊儒門，因而組團，作品長期跟著台灣的土地議題與社運現場走。二○一三年由浮現音樂發行，十軌，台語演唱，編制以吉他、大提琴與節奏為主。〈白海豚之歌〉是他在國光石化環評會議上當著總經理面唱完的那首；〈失去記憶的城市〉寫二○一二年在台中南屯水碓聚落駐村的所見，拿下二○一四年金音創作獎最佳民謠單曲，同年專輯並入圍最佳樂團與最佳搖滾專輯。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/農村武裝青年",
+          "https://musicbrainz.org/release-group/364c0300-8bc8-4857-ae27-f0d4611fff8a"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/be/c0/a7bec074-ed44-9c03-231c-60ecb284dd9c/mzaf_6072633113259359768.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1800753099,
+        "appleCollectionName": "幸福在哪裡?"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB RG first-release-date 2013，原盤 2236a5bd（TW, CD, 10 軌, 浮現音樂藝文有限公司 EME1301, barcode 8340120201317）；中文維基〈農村武裝青年〉專輯表記 2013 年，曲目與 MB 十軌完全一致。⚠ Apple TW cid 1800753099 的 releaseDate 記 2018-06-22，是數位重上架年，不採。",
+        "mbTitle": "幸福在哪裡？",
+        "mbArtist": "農村武裝青年",
+        "mbFirstRelease": "2013",
+        "upcNote": "幸福在哪裡？ (2013 TW)",
+        "curatorWhy": "2014 年金音創作獎最佳樂團、最佳搖滾專輯提名，其中〈失去記憶的城市〉拿下第5屆金音創作獎最佳民謠單曲。也收錄〈白海豚之歌〉。",
+        "curatorRisk": "MB 已建檔（2013）。中文維基寫《幸福在哪裡？》含問號，MB 也含問號，但部分通路寫《幸福在哪裡》，鍵值要統一。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "甜梅號",
+      "album": "謝謝你提醒我",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d0e83dd8-9de1-45d7-b1bf-cc347f54dabc",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "團名：卡片正名「甜梅號」，英文 Sugar Plum Ferry（MB 主名建成中文，Discogs 兩種都用，雙向查必要）。⚠ 樂團 2014 年更名為「微光群島」（Shimmering Islands），2014 年 3 至 7 月間並短暫用過暫名「四分之三搖籃曲」，2015 年解散——這三個名字都指同一批人，但本卡屬 2007 年，artist 固定寫 甜梅號，不可為統一團名而改。團名典故是 Sugar Plum Fairy 被聽成 Ferry，故英文絕不可寫成 Sugar Plum Fairy。專輯名《謝謝你提醒我》另見英文 Thanks for Reminding Me（中文維基內文所附，非封面主標）。⚠ 與同團 2001《是不是少了什麼》（英文 Lack Of Something，水晶唱片）是兩張不同的碟，不可因英文名混入。成員別名：昆蟲白＝黃建勳；葉子＝李柏曄。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f9/be/b6/f9beb610-5b84-0269-11bb-70c53d315436/195497432356.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1534692702）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣後搖滾定義性樂團隔六年復出的第二張，發行即被後搖專門媒體 The Silent Ballet 選為當週推薦樂團；五首六十三分鐘的長篇器樂，入耳需要耐性。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，是台灣後搖滾的核心作品但缺乏跨來源長期共識；accessibility 3 不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "隔了六年才出的第二張，二○○七年十一月由小白兔唱片發行，五首曲子共六十三分鐘，幾乎全器樂。〈三分之一搖籃曲〉寫於一九九九年九二一地震當晚，原名就叫搖籃曲；〈南方蝶道〉是鄧麗君〈南海姑娘〉大幅改造後的成果；〈新流浪運動〉長二十分二十一秒，用的是昆蟲白在另一個樂團吉朗發展出來的調弦法，也是全片唯一有人聲的曲子，中英文歌詞交疊重唱到聽不清字句。正式盤之前另有與村山小學合作的一百張手工限量版，內容相同。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/謝謝你提醒我",
+          "https://zh.wikipedia.org/wiki/甜梅號",
+          "https://musicbrainz.org/release-group/d0e83dd8-9de1-45d7-b1bf-cc347f54dabc"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fa/f3/41/faf34196-66d4-f1f0-2e26-6d36b480e1f7/mzaf_6064756450253127948.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1534692702,
+        "appleCollectionName": "謝謝你提醒我"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "MB RG first-release-date 2007-11-30，原盤 1ff43307（TW, CD, 5 軌, 小白兔唱片 WWR015）；中文維基〈謝謝你提醒我〉infobox 記 2007 年 11 月 30 日。一致。⚠ 2007-08-25 於這牆首賣的一百張手工限量版早於正式盤，內容相同，不另計年。",
+        "mbTitle": "謝謝你提醒我",
+        "mbArtist": "甜梅號",
+        "mbFirstRelease": "2007-11-30",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "小白兔唱片 WWR-015。甜梅號是台灣後搖滾的定義性樂團，這張是他們在小白兔時期的代表作（卡池已有 2001《是不是少了什麼》與 2010《腦海群島》，中間這張是缺口）。2001 年在水晶唱片還發過英文名 Sugar Plum Ferry 的《Lack Of Something》。",
+        "curatorRisk": "MB 已建檔（2007-11-30）。中英團名 甜梅號／Sugar Plum Ferry 並存，MB 用「甜梅號」，Discogs 兩個都用，雙向查必要。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "阿飛西雅",
+      "album": "失語的鱷魚社會",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "cf97b13f-6d16-33ee-99c9-0992a4fc3739",
+        "upc": "5024545407228",
+        "aliasesChecked": true,
+        "aliasReview": "團名：卡片正名「阿飛西雅」，英文 Aphasia／APHASIA（中文維基 infobox 用全大寫，MB artist 53a30ac2 的 alias 用 Aphasia；Apple 中文團名撈不到，只能用英文別名反查 artistId 549667387）。⚠ **阿飛西雅 ≠ 妮波寺（Nipples）**：妮波寺是前身團名，MB 是兩個獨立 artist（53a30ac2 與 f785e938），各有各的目錄，本批的《詹姆仕的秋天》(2003, 妮波寺) 與本卡是兩張不同的碟、兩張不同的卡，**不可合併**。專輯名：實體（小白兔 WWR019）作「失語的鱷魚社會 = The Crocodile Society Of Aphasia」，中文在前故取中文；MB RG 標題與 Apple 條目名都只建了英文 The Crocodile Society of Aphasia，另見 Crocodile Society of Aphasia（MB release f5faba35 少了 The）與大小寫變體 The Crocodile Society Of Aphasia。中文搜尋在 MB 撈不到，必須列 artist 全目錄。⚠ 排除同團 2007 電影原聲《夏天的尾巴電影原聲帶》與 2012《提去買藥仔》。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/cf97b13f-6d16-33ee-99c9-0992a4fc3739/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣器樂後搖滾在二○○○年代末的標竿之一，小白兔唱片 WWR019；全器樂、無歌詞，靠雙吉他堆疊張力，入耳需要一點耐性但段落清楚。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 未達 5，屬台灣後搖滾場景的核心作品但缺乏跨來源長期共識；accessibility 3 不符異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "前身是妮波寺，二○○七年鼓手 Yonker 加入後改名阿飛西雅——取英文 aphasia（失語症）的音譯，內頁特地解釋了這個詞。二○○八年九月由小白兔唱片發行的首張錄音室作品，八軌全器樂，沒有一句歌詞，靠兩把吉他堆疊張力。封面是美術設計 THOXT 二○○六年在中正紀念堂牌樓拍下的照片：滿牆塗鴉、標語與謾罵之前，一名男子背對鏡頭低頭無語。發行當晚在 The Wall 辦首賣派對，濁水溪公社小柯與閃靈的 Dani、Doris 同台演出。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/失語的鱷魚社會",
+          "https://zh.wikipedia.org/wiki/阿飛西雅",
+          "https://musicbrainz.org/release-group/cf97b13f-6d16-33ee-99c9-0992a4fc3739"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/e7/8e/f9e78e29-8422-b5e4-ac7b-30dcdc9dd387/mzaf_9551350857736135890.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 355622947,
+        "appleCollectionName": "The Crocodile Society of Aphasia"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "MB RG first-release-date 2008-09-12，中文原盤 8e9a7733（TW, CD, 8 軌, 小白兔唱片 WWR019, barcode 5024545407228）；中文維基〈失語的鱷魚社會〉infobox 同記 2008 年 9 月 12 日。XW 英文盤 cd708bfe 記 2008-09-19，是同 RG 的另一版，不改年。",
+        "mbTitle": "The Crocodile Society of Aphasia",
+        "mbArtist": "阿飛西雅",
+        "mbFirstRelease": "2008-09-12",
+        "upcNote": "失語的鱷魚社會 (2008-09-12 TW)",
+        "curatorWhy": "小白兔唱片 WWR019。前身是 Nipples（妮波寺），2007 年加入鼓手 Yonker 後改名阿飛西雅（Aphasia，失語症音譯）。這張是台灣器樂後搖滾／數學搖滾在 2000 年代末的標竿，2007 年他們才剛做完鄭文堂電影《夏天的尾巴》的原聲帶。",
+        "curatorRisk": "MB 已建檔（阿飛西雅／失語的鱷魚社會，須確認 MB 上的年份欄位）。同一批人有 Nipples／妮波寺／阿飛西雅／Aphasia 四個名字，藝人合併關係要先理清楚。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "薄荷葉",
+      "album": "涼",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "ef30d18a-41e4-4fa0-8b23-045dc2f35dbe",
+        "upc": "4710660170017",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名採中文團名「薄荷葉」（裁定表規則 3）。已知別名：Peppermint／the Peppermints（封面實際印的是複數形 the Peppermints，MB artist c6dc316e 的 alias 亦為 The Peppermints）／Discogs 條目名「Peppermint (薄荷葉)」／簡體「薄荷叶」。專輯名《涼》單字無異寫，但中文單字比對雜訊極高，必須連 catno WWR001／wwr01 一起鎖。與同名的食材、飲料條目無關；與 2005 年同團《的士房間》（WWR007）為不同碟。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f4/2b/a0/f42ba089-fd80-36df-e46e-608383731bad/4711508132723.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店 artistId 1550515496 全目錄人工挑（專輯名直接搜「薄荷葉」只回 2005/2009 兩張）；collectionId 1829589083，2002-05-01、℗ 2002 薄荷葉 the Peppermints，第 9 軌即〈涼〉——佐證 identity.json 把年份定在 2002（小白兔 wwr01）是對的，MB 的 2003-02-01 是後壓片日期。目視：泛黃低彩度的近拍照，路邊電線桿與交通標誌前並排三隻絨毛玩偶——左為黃兔、中為戴綠色帽套的棕熊、右為綠青蛙；右上角黑色橫色塊內白字「the Peppermints 涼」。原生 4000px，無側標／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔唱片第一號出版品、廠牌世代的開場，但樂團本身流通極窄；長曲式器樂鋪陳入耳需要一點時間。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "廠牌起點的位置明確，但樂團本身缺乏跨來源的長期史地位論述，不足以進殿堂；listeners 在本環境取不到，流亡一律不評。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "小白兔唱片的第一號出版品（WWR001，2002 年 4 月）。廠牌由阿飛西雅貝斯手葉宛青創辦，在邀來 Explosions in the Sky 訪台的同一年正式成立，首批發行就是薄荷葉《涼》與壞女兒《沒有毛的熊》。全碟十五首，曲名從〈落雪〉〈脆耳垂〉排到〈夢魔入侵綿羊島〉，末尾把〈19歲〉與〈19歲大合唱〉兩個版本並置。封面是路邊三隻絨毛玩偶的泛黃近拍，只壓一條黑底白字「the Peppermints 涼」。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E5%85%94%E5%94%B1%E7%89%87",
+          "https://musicbrainz.org/release-group/ef30d18a-41e4-4fa0-8b23-045dc2f35dbe"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/2f/4e/a32f4e92-5b1c-ba0b-e356-3ca88dadbd51/mzaf_15507885679914947210.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1829589083,
+        "appleCollectionName": "涼"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "採 2002：中文維基〈小白兔唱片〉發行目錄明列 WWR001 薄荷葉《涼》2002.04，與廠牌 2002 年成立、Apple 標 2002-05-01 一致；MB release 的 2003-02-01 應為次年壓片日期，僅作身分依據。",
+        "mbTitle": "涼",
+        "mbArtist": "薄荷葉",
+        "mbFirstRelease": "2003-02-01",
+        "upcNote": "涼 (2003-02-01 TW)",
+        "curatorWhy": "小白兔唱片編號 wwr01——小白兔橘子作為廠牌的第一張出版品，等於整個 2000 年代台灣獨立廠牌世代的開場。薄荷葉是台北後搖滾／慢核路線的早期團。",
+        "curatorRisk": "MB 已建檔但年份寫 2003-02-01，Discogs 寫 2002，**年份有兩說**，須擇一並註明。中英團名 薄荷葉／Peppermint 並存，Discogs 條目名是「Peppermint (薄荷葉)」。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "橙草",
+      "album": "積雨雲",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b6dcdc0b-8665-441b-902b-4d7e0b2e3bb1",
+        "upc": "4712702140019",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名採中文團名「橙草」。已知別名：Orangegrass（封面實際印小寫連寫「orangegrass 橙草」，中文維基英文名欄亦為 Orangegrass）／Orange Grass（分寫，使用不穩定）／綽號「雨團」。專輯名《積雨雲》的英文為 Cumulonimbus，Apple 台灣商店條目名直接用英文 Cumulonimbus，與卡片正名不同但屬同一張。中文「橙草」兩字比對雜訊高（橙天嘉禾、萱草等），比對須連 2008＋有料音樂 ULOUD004 一起鎖。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/fe/ab/90/mzi.dbhjfmue.jpg/600x600bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店，英文專輯名 Cumulonimbus 才對得上（collectionId 373660069，℗ 2009 Uloud Music，第 6 軌 Cumulonimbus）。該資產原生僅 620px，故取 600x600bf 不硬拉 1000。目視：三名團員的多重曝光疊影（中央長瀏海主唱、左右各一名側臉團員），上覆水彩暈染的灰綠／土紅色塊與噴濺白點，中央橫排小寫字「orangegrass 橙草」，右下直排「積雨雲」，左下角淺藍字「CHEI FULI」。無側標／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代末台北 indie rock 世代的固定班底、樂團第一張全長作品，地位清楚但非開創；旋律線明確，長曲式略增門檻。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團有中文維基條目與完整發行沿革，但無任何名榜單或跨來源史地位論述，離殿堂門檻尚遠。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "橙草 2004 年由克拉克（鐘禮學）、阿白、阿湯在台北組成三人編制，先在小白兔唱片出過單曲《Rainbow 4AM》、參與《蘿蔔三代》與《夏天的尾巴電影原聲帶》，2008 年才在有料音樂交出第一張全長作品。十一首裡〈夜盲〉長達七分四十三秒，〈積雨雲〉〈透明紀錄〉也都跨過五、六分鐘，吉他鋪陳拉得長、人聲退在後面，收尾的〈捉迷藏〉才把長度收回三分鐘。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%A9%99%E8%8D%89",
+          "https://musicbrainz.org/release-group/b6dcdc0b-8665-441b-902b-4d7e0b2e3bb1"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/07/c0/2d07c0ca-5e0f-d56a-3561-bd1f696d40cc/mzaf_10179955521265233344.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 373660069,
+        "appleCollectionName": "Cumulonimbus"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "2008 無爭議。MB release 記 2008-12-26（有料音樂 ULOUD004），中文維基〈橙草〉作品表記 2008 年 5 月 25 日、與同日單曲《Goodbye Sunshine》並列；兩說同年，採 2008。",
+        "mbTitle": "積雨雲",
+        "mbArtist": "橙草",
+        "mbFirstRelease": "2008-12-26",
+        "upcNote": "積雨雲 (2008-12-26 TW)",
+        "curatorWhy": "橙草 2006 年以 EP《Rainbow 4AM》（小白兔 WWR011）出道，2008 年《積雨雲》是他們第一張完整專輯，2009 年與 1976、Tizzy Bac、929 同台果實搖滾音樂節，是 2000 年代末台灣 indie rock 世代的固定班底。",
+        "curatorRisk": "MB 已建檔（2008-12-26）。團名「橙草」兩個字太短，中文搜尋雜訊高；英文名 Orange Grass 使用不穩定。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "熊寶貝樂團",
+      "album": "03:53",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "0523b10b-aa38-4cf0-991e-7683bc163c86",
+        "upc": "4719850843113",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「熊寶貝樂團」與 MB artist credit 完全一致。已知別名：熊寶貝（中文維基條目名與 infobox 原名皆為不帶「樂團」的「熊寶貝」）／Bearbabes（封面英文，維基英文名欄同）／簡體「熊宝贝」。⚠ 中文「熊寶貝」單用會撞洗衣柔軟精品牌（維基另有〈熊寶貝 (產品)〉條目），卡片保留「樂團」二字。專輯名「03:53」是純時間格式，鍵值正規化時不可把半形冒號切掉或換成點號，否則會與 Apple／MB 的寫法對不上。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/0523b10b-aa38-4cf0-991e-7683bc163c86/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代台北清新吉他流的代表首作，有明確場景位置但無獎項或榜單背書；雙吉他編寫清亮好入耳。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團史清楚、有完整條目，但這張沒有任何名榜單或獎項紀錄，跨來源共識不足以列史上核心。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "四名國立交通大學星聲社成員 2000 年 12 月組團，2004 年打進海洋音樂祭決賽（當屆大獎由蘇打綠拿走），成軍五年半後才在 2006 年 3 月 31 日推出這張雙碟首作，十六首收攏五年多的存稿。主唱兼貝斯手餅乾說取名 03:53，是因為這是適合凌晨聽的專輯。碟一〈夜間飛行〉〈不來的末班車〉走雙吉他清亮編寫，碟二收〈修補月亮的男人〉與〈38度C〉的 Jazzy 版。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E7%86%8A%E5%AF%B6%E8%B2%9D%E6%A8%82%E5%9C%98",
+          "https://musicbrainz.org/release-group/0523b10b-aa38-4cf0-991e-7683bc163c86"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/de/5a/97de5adf-0fd5-5793-7427-e54b5ea524cb/mzaf_14526172271731521407.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6798241008,
+        "appleCollectionName": "03:53"
+      },
+      "research": {
+        "suggestedYear": 2006,
+        "yearNote": "2006 無爭議。MB release 2006-03-31，中文維基〈熊寶貝樂團〉樂團沿革亦記 2006 年 3 月 31 日發行首張專輯《03:53》。",
+        "mbTitle": "03:53",
+        "mbArtist": "熊寶貝樂團",
+        "mbFirstRelease": "2006-03-31",
+        "upcNote": "03:53 (2006-03-31 TW)",
+        "curatorWhy": "2000 年代台北清新吉他流的代表團之一，同年另出 EP《Everyday Is a Rockable Day》，2010《年年》、2012《美麗混亂》構成完整一線。與 929、橙草、棉花糖同屬「簡單生活節世代」。",
+        "curatorRisk": "MB 已建檔（熊寶貝樂團／03:53／2006-03-31）。專輯名是純時間格式「03:53」，鍵值裡的冒號可能被切分處理，要注意。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "929",
+      "album": "也許像星星",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "fa705e48-8c75-4b08-8136-2a5e022982a1",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「929」與 MB artist credit 一致，無中文團名。已知寫法：929樂團（媒體與中文維基內文慣用，該標題在中文維基查無條目，僅錯誤頁）／929 band（Facebook 專頁名）。⚠ 純數字團名在 pool／MB 比對時極易撞上日期、編號、唱片編碼，自動比對務必關掉模糊匹配並連 2008＋風和日麗唱片行 AGD-009 一起鎖。與吳志寧個人專輯《最想去的地方》(2011) 及 2005 年樂團同名專輯《929》不可混。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/fa705e48-8c75-4b08-8136-2a5e022982a1/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；風和日麗世代的代表作、台灣民謠搖滾接上土地與文學議題的一線，地位明確但非開創；民謠編制入耳無礙。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團無專屬維基條目，資料集中在主唱吳志寧個人條目，缺乏足以列入史上核心的跨來源長期共識。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "929 由吳志寧與黃玠 2004 年在大學時期組成，團名來自團員常去的撞球室名稱。吳志寧是詩人吳晟之子，寫歌習慣把家人的文學作品與台灣時事帶進來。2008 年這張由風和日麗唱片行發行（AGD-009），編制擴成四人，十首歌從同名曲〈也許像星星〉、〈早起去爬山〉這類民謠搖滾，一路走到談核四爭議的〈貢寮你好嗎〉；隔年單曲〈相逢〉之後樂團就暫停運作。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%90%B3%E5%BF%97%E5%AF%A7",
+          "https://musicbrainz.org/release-group/fa705e48-8c75-4b08-8136-2a5e022982a1"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/8b/da/858bdaa4-01ea-31bc-5aed-1eb23159145f/mzaf_421719397378639788.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6768263343,
+        "appleCollectionName": "也許像星星"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "2008 無爭議。MB release 2008-09（風和日麗唱片行 AGD-009），中文維基〈吳志寧〉音樂作品欄亦記「2008年929樂團則以四人的編制出了CD專輯《也許像星星》」。",
+        "mbTitle": "也許像星星",
+        "mbArtist": "929",
+        "mbFirstRelease": "2008-09",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "吳志寧（詩人吳晟之子）的樂團，是台灣民謠搖滾與文學／土地議題連結的一線；濁水溪公社也參與過同一條線的《吳晟詩與歌》（2008，風和日麗）。929 是 2000 年代末風和日麗世代的代表團。",
+        "curatorRisk": "MB 已建檔（929／也許像星星／2008-09），但團名是純數字「929」，MB／pool 比對極易誤中（日期、編號）。中文維基「929樂團」條目是空的（僅 1930 bytes 錯誤頁）。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "傷心欲絕",
+      "album": "我愛您",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "acf9285f-885f-4222-a029-bbcc3ebb749b",
+        "upc": "4717954167913",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「傷心欲絕」與 MB artist credit 一致（MB artist 4ed2a395，country TW，alias Wayne's So Sad）。已知團名別名：Wayne's So Sad／Waynes So Sad（無撇號）／簡體「伤心欲绝」。專輯名別名：《我愛您 | I Love You》（MB RG 標題帶英文副標）／《I Love You》；該 RG 底下 2010 年 TW 版（禾廣娛樂 CNG-003）標題本身就是純中文《我愛您》，故卡片去掉英文副標。⚠「我愛您」三個常用字比對雜訊極高，須連 2010＋長腦筋唱片／禾廣 CNG-003 一起鎖。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/acf9285f-885f-4222-a029-bbcc3ebb749b/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「師大公園四大天王」與絕望世代代表團的首張，場景位置明確；狂躁電吉他與失真破嗓有一定粗礪門檻。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團在台北地下場景的位置清楚，但這張首作沒有獎項或名榜單紀錄，跨來源長期共識不足。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "許正泰早年受 Ramones 影響、在樂團 Spunka 打鼓，不甘只當鼓手而改拿吉他寫歌，2008 年結識黃紹祖與官靖剛後組成傷心欲絕；英文團名 Wayne's So Sad 裡的 Wayne，取自後來加入的吉他手劉暐。他們與透明雜誌、湯湯水水、盪在空中被戲稱「師大公園四大天王」。2010 年這張十首的首作，〈第三個酒鬼〉〈司機！請你載我回家〉〈城市情歌〉全靠狂躁電吉他與失真破嗓推進。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%82%B7%E5%BF%83%E6%AC%B2%E7%B5%95",
+          "https://musicbrainz.org/release-group/acf9285f-885f-4222-a029-bbcc3ebb749b"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/29/8b/5a/298b5af5-2d18-e8e5-2d81-7cbc6c0aee8e/mzaf_4369616448121546151.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1596232128,
+        "appleCollectionName": "我愛您"
+      },
+      "research": {
+        "suggestedYear": 2010,
+        "yearNote": "2010 無爭議。MB 該 RG 下 XW 版記 2010-11-01、TW 版記 2010（禾廣娛樂 CNG-003）；中文維基〈傷心欲絕〉專輯表記 2010 年 12 月、長腦筋唱片，同年。",
+        "mbTitle": "我愛您 | I Love You",
+        "mbArtist": "傷心欲絕",
+        "mbFirstRelease": "2010-11-01",
+        "upcNote": "我愛您 (2010 TW)",
+        "curatorWhy": "「師大公園四大天王」之一（與透明雜誌、湯湯水水、盪在空中並稱），中文維基稱其為「絕望世代」代表，標誌是「義無反顧的狂躁電吉他與激動的失真破嗓」。主唱許正泰早年受 Ramones 影響。這張是他們的首張專輯。",
+        "curatorRisk": "MB 已建檔（傷心欲絕／我愛您 | I Love You／2010-11-01），MB 標題帶英文副標，鍵值要正規化。專輯名「我愛您」三個常用字，搜尋雜訊高。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "陳珊妮",
+      "album": "華盛頓砍倒櫻桃樹",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "8a417886-8563-4b0f-a99e-17f59feda2df",
+        "upc": "4710891799407",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「陳珊妮」與 MB artist credit 一致。已知別名：Sandee Chan（英文名）／簡體「陈珊妮」／綽號「公主」。專輯名《華盛頓砍倒櫻桃樹》MB 與 Apple 寫法相同，無英文副標；簡體寫法為「华盛顿砍倒樱桃树」，繁簡雙向都要查。⚠ 陳珊妮 MB 目錄龐大且版本雜，本卡須鎖 1994 年友善的狗首作，排除精選《精選集 1994~1999》《不能忽略陳珊妮1994-1997作品精選》與 1997 年女巫店現場專輯。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/93/ed/bf/93edbf60-0042-8476-83ad-20bfed3157d6/4710891799407.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1527052356）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；陳珊妮出道作、台灣女性創作者從地下廠牌起步的關鍵樣本，屬公認的藝人代表作之一；歌本身旋律清楚。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "是重要出道作，但史上核心地位的跨來源論述集中在她後來的《完美的呻吟》與《後來 我們都哭了》，這張不足以進殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "陳珊妮因為一場創作比賽的現場錄音被友善的狗老闆沈光遠發掘簽下，1994 年交出這張出道作。公司放手讓她自理，全碟詞、曲、編曲、製作，連內頁插畫與造型都由她一人完成，在當時公式化的華語唱片裡難以歸類。十四首從〈海邊〉〈茫然〉〈生病〉走到收尾的〈最後一班公車〉，中間還放了一首器樂的〈The Entertainer〉。跑宣傳時她是少數自帶吉他、不唱卡拉也不對嘴的歌手。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%8F%8A%E5%A6%AE",
+          "https://musicbrainz.org/release-group/8a417886-8563-4b0f-a99e-17f59feda2df"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/ed/80/eced808c-a09d-0e70-07ea-765c437b437a/mzaf_6810324694048977764.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1527052356,
+        "appleCollectionName": "華盛頓砍倒櫻桃樹"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "1994 無爭議。MB release date 1994（TW），中文維基〈陳珊妮〉生平記「1994年發行首張專輯《華盛頓砍倒櫻桃樹》出道」，作品表同列 1994 年。",
+        "mbTitle": "華盛頓砍倒櫻桃樹",
+        "mbArtist": "陳珊妮",
+        "mbFirstRelease": "1994",
+        "upcNote": "華盛頓砍倒櫻桃樹 (1994 TW)",
+        "curatorWhy": "友善的狗 KC-0006／KD-0006，陳珊妮首張專輯。她 1994 年簽進友善的狗、2000 年才轉魔岩，這六年是台灣女性創作者從地下廠牌出發的關鍵樣本；後來她主持的「陳珊妮熱血音樂對談錄」還專訪過濁水溪公社，是連結主流與地下的樞紐人物。",
+        "curatorRisk": "MB 已建檔（1994）。陳珊妮作品在 MB 上數量多、版本雜（含精選集《精選集 1994~1999》），選版要精確。專輯名很長且含「砍倒」等字，簡繁轉換要小心。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "陳珊妮",
+      "album": "完美的呻吟",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "895cf302-0028-4cae-99c9-97824973fcaf",
+        "upc": "4715122015028",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「陳珊妮／完美的呻吟」與 MB、Apple 寫法一致。已知別名：Sandee Chan（藝人英文名）／A Perfect Moan（樂評文章使用的英譯，非官方標題）／簡體「完美的呻吟」同形、藝人簡體「陈珊妮」。MB 該 release 的廠牌欄建成「滾石唱片 MSD089」，魔岩唱片為滾石旗下廠牌，兩者指同一件商品，不另立卡。⚠ 不可與同名的〈呻吟〉（本碟第 6 軌）或她 2004《後來 我們都哭了》混淆。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ad/a7/31/ada731b7-e5f7-c42e-94d8-ba099dafc258/cover.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1533959284）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列 1993–2005 台灣流行音樂百張最佳專輯、樂評長期高度評價的正典盤；電子搖滾編曲與情慾主題比她早期作品硬一些。"
+      },
+      "rarity": "epic",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "確有名榜單背書（1993–2005 百張最佳專輯）與馬世芳的二十週年回顧特輯，但殿堂需要更廣的跨來源長期共識，本環境可查證的來源仍只集中在中文語境，先不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "友善的狗 2000 年收掉唱片部門時，這批錄音已經完成，改由魔岩唱片在年底推出。主題落在女性情慾與個體意識，也是陳珊妮第一次做電子搖滾：編曲與演奏交給香港電子組合 Minimal（李端嫺、亞里安）和吉他手徐千秀，〈電車上的情侶〉找黃耀明對唱，末曲翻唱薛岳〈你在煩惱些什麼？親愛的〉並收進詩人夏宇的口白。當時市場與獎項反應冷淡，後來被列入 1993–2005 台灣流行音樂百張最佳專輯。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E9%99%B3%E7%8F%8A%E5%A6%AE",
+          "https://musicbrainz.org/release-group/895cf302-0028-4cae-99c9-97824973fcaf"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/82/1e/c0/821ec039-d103-6e3c-e5be-80e7b7bba65f/mzaf_8628414072717883150.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1533959284,
+        "appleCollectionName": "完美的呻吟"
+      },
+      "research": {
+        "suggestedYear": 2000,
+        "yearNote": "2000 無爭議。MB release 2000-12-05，中文維基〈陳珊妮〉生平記 2000 年友善的狗解散唱片部門後，這張已錄製完成的專輯改由魔岩唱片於年底發行。",
+        "mbTitle": "完美的呻吟",
+        "mbArtist": "陳珊妮",
+        "mbFirstRelease": "2000-12-05",
+        "upcNote": "完美的呻吟 (2000-12-05 TW)",
+        "curatorWhy": "陳珊妮離開友善的狗、轉簽魔岩唱片後的作品（MB：2000-12-05），是她創作生涯公認的高點之一，也是台灣獨立製作美學進入主流體系的代表作。",
+        "curatorRisk": "MB 已建檔。魔岩 2001 年結束營運，這張的原始編號與再版狀況要查。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "黃小楨",
+      "album": "賞味期限",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b56d2717-7466-4ce4-b242-be7f68f1192e",
+        "upc": "4711499288386",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「黃小楨」與 MB artist credit 一致。⚠ 用字陷阱：中文維基條目名與 Apple 台灣藝人頁用「黃小楨」（U+6963），但同一份維基的 DEFAULTSORT 與分類鍵誤寫成「黃小禎」（U+798E），兩種寫法都要進去重表。其他別名：berry j.（維基英文名欄）／簡體「黄小桢」。專輯名《賞味期限》無英文副標；⚠ 不可與 2001《黃小楨2》、1997／2009 兩版《No Budget》混淆，後者是同一批 1997 卡帶錄音在 2009 年由風和日麗改以 CD 正式發行。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b56d2717-7466-4ce4-b242-be7f68f1192e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第十屆金曲獎最佳新人、台灣 lo-fi 與臥室民謠的先聲，是後來女聲創作線公認的上游；歌本身輕巧好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "影響力常被提及但缺乏名榜單或名人堂等級的跨來源背書，且中文維基無專輯專屬條目，證據厚度不足以進殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "黃小楨大學時從美國回台大當交換學生，到處旁聽之後決定去參加吉他社。1997 年先和自稱「自我膨脹組織」的朋友 DIY 拷了兩百捲卡帶《No Budget》，同年與友善的狗簽約，1998 年才有這張正式首作，隔年入圍第十屆金曲獎最佳新人獎。十三首中英夾雜，〈complain 抱怨〉當年被拿去當黑松汽水廣告曲，〈#3 歌曲參〉同時收了慢版與快版兩種處理。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E9%BB%83%E5%B0%8F%E6%A5%A8",
+          "https://musicbrainz.org/release-group/b56d2717-7466-4ce4-b242-be7f68f1192e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/59/e0/72/59e072f4-2a72-7af2-d7f0-6f5870de79d5/mzaf_11379455003083090788.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1720694515,
+        "appleCollectionName": "賞味期限"
+      },
+      "research": {
+        "suggestedYear": 1998,
+        "yearNote": "採 1998。MB release 記 1998-01-01（友善的狗），中文維基〈黃小楨〉作品表記 1998 年 10 月 10 日、友善的狗；兩說同年，月日以維基較細但不影響上架年份。",
+        "mbTitle": "賞味期限",
+        "mbArtist": "黃小楨",
+        "mbFirstRelease": "1998-01-01",
+        "upcNote": "賞味期限 (1998-01-01 XW)",
+        "curatorWhy": "友善的狗 FDM9812。黃小楨 1997 年簽進友善的狗，這張是台灣 lo-fi／臥室民謠的先聲，也是 2000 年後張懸、陳綺貞那條女聲創作線的上游。2000 年友善的狗解散唱片部門後她轉簽歌萊美。",
+        "curatorRisk": "MB 已建檔（賞味期限／1998-01-01）。中文維基無專屬條目，敘述須靠友善的狗發行目錄與二手評論。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "廢五金",
+      "album": "廢五金",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "5fcf66a5-9353-4d25-9161-8ab3dbf18b83",
+        "upc": "5099749122826",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名團名／專輯名同為「廢五金」。已知別名：廢五金樂團（中文維基〈台灣索尼音樂娛樂〉簽約藝人表用的寫法）／SCRAP METAL（封面英文團名）／簡體「废五金」。⚠ 專輯名有一筆真實衝突：中文維基〈趙之璧〉把她的出道作寫成《迷路》（那其實是本碟第 1 軌），而〈煉雲〉條目、MB、Apple 與封面本體都作《廢五金》——依實體發行品優先於第三方條目轉述，卡片採《廢五金》，《迷路》登記為別名。⚠「廢五金」在中文是廢金屬回收的日常用語，自動比對務必關掉模糊匹配並鎖 1998＋barcode 5099749122826。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/5fcf66a5-9353-4d25-9161-8ab3dbf18b83/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1998 年新力旗下的一張同名首作、樂團隔年即解散，全部作品只有這張；資料稀薄、流通極窄，但錄音本身並不難入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "疑似 pearl，待店主補 listeners 覆核：樂團 1999 年解散、僅存這一張作品，中文維基無專屬條目，只能從趙之璧與台灣索尼音樂娛樂兩個條目側面查到，冷門程度可能落在流亡門檻內。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "主唱趙之璧的第一支樂團。1997 年與新力音樂（今台灣索尼音樂娛樂）簽下全約，1998 年 4 月推出這張同名首作，封面直接把「SCRAP METAL」與「debut album」壓在紅光舞台照上；1999 年樂團解散、合約終止，留下的作品就只有這一張。十二首從〈迷路〉〈蠕動〉走到〈清心普善咒〉，其中〈Love, Lotus〉由李善豪作曲、趙之璧與祝驪雯填詞，2018 年被安溥挑進現場專輯《煉雲》重唱。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B9%8B%E7%92%A7",
+          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E7%B4%A2%E5%B0%BC%E9%9F%B3%E6%A8%82%E5%A8%9B%E6%A8%82",
+          "https://musicbrainz.org/release-group/5fcf66a5-9353-4d25-9161-8ab3dbf18b83"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cf/c4/c1/cfc4c16f-c255-34c2-c44e-208aac0f9aeb/mzaf_1806445213009074928.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 312510152,
+        "appleCollectionName": "廢五金"
+      },
+      "research": {
+        "suggestedYear": 1998,
+        "yearNote": "1998 無爭議。MB release 1998-04-24，Apple 條目標 1998-04-23；中文維基〈趙之璧〉記她 1998 年 4 月發行第一張專輯、〈台灣索尼音樂娛樂〉記廢五金樂團 1997 年簽約 1999 年因解散而解約，時間軸一致。",
+        "mbTitle": "廢五金",
+        "mbArtist": "廢五金",
+        "mbFirstRelease": "1998-04-24",
+        "upcNote": "廢五金 (1998-04-24 XW)",
+        "curatorWhy": "1990 年代末台灣地下樂團的同名首作，MusicBrainz 有完整建檔日期（1998-04-24），是那一批「地下社會／Vibe 世代」少數在資料庫留下確切發行日的作品。",
+        "curatorRisk": "MB 已建檔（廢五金／廢五金／1998-04-24），但**只有 MB 一個來源**，中文維基與 Discogs 都查無，團史敘述風險最高的一筆，若查不到二手資料建議降級或先不上。團名「廢五金」在中文語境是「廢金屬回收」的日常用語，搜尋雜訊極高。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "滅火器",
+      "album": "海上的人",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b79ab192-ccbe-409d-8ac8-8962a2114121",
+        "upc": "4712702140125",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名採中文團名「滅火器」（裁定表規則 3）。已知團名別名：Fire EX.（官方英文，帶點）／Fire E.X.（Discogs 建檔寫法）／滅火器樂團（中文維基條目名）／簡體「灭火器」——四種寫法一個都不能少，否則 grep 去重會漏。專輯名別名：A Man on the Sea（MB 該 RG 下另掛一筆同名 Pseudo-Release，英文標題）。⚠ 中文維基〈海上的人〉條目的 infobox name 欄誤填成〈站在這裡〉（那是本碟第 12 軌），正文與滅火器條目的專輯表都作《海上的人》，該誤寫不採用、僅登記備查。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/b79ab192-ccbe-409d-8ac8-8962a2114121/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滅火器從高雄地方龐克團走向全國前的關鍵作，收有後來成為社運場合合唱曲的〈晚安台灣〉；龐克編制直白好入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "〈晚安台灣〉的社會傳唱度高，但殿堂看的是整張專輯的跨來源長期共識，這張本身未進任何名榜單，先不列。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "高雄的台語龐克團第二張錄音室作品，2009 年 10 月 1 日由有料音樂發行，Andy Baker 與樂團共同製作，十二首詞曲全出自主唱楊大正之手。第五首〈晚安台灣〉寫在 2008 年立委選舉之後——他因為選舉結果輾轉難眠，抱著吉他亂彈才找到旋律；這首歌後來在洪仲丘事件與太陽花學運的場子被整場合唱。開場〈惡夢9125〉與收尾〈站在這裡〉之間，還夾著只有四十九秒的〈船長〉。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%B5%B7%E4%B8%8A%E7%9A%84%E4%BA%BA",
+          "https://zh.wikipedia.org/wiki/%E6%99%9A%E5%AE%89%E5%8F%B0%E7%81%A3",
+          "https://musicbrainz.org/release-group/b79ab192-ccbe-409d-8ac8-8962a2114121"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/1f/5c/bf1f5c0f-39f7-7240-c721-c8e95df29cc6/mzaf_9019679743908260392.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 375430900,
+        "appleCollectionName": "海上的人"
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "2009 無爭議。MB release 2009-10-01（有料音樂 ULOUD-015），中文維基〈海上的人〉與〈滅火器樂團〉錄音室專輯表同記 2009 年 10 月 1 日、有料音樂。",
+        "mbTitle": "海上的人",
+        "mbArtist": "滅火器",
+        "mbFirstRelease": "2009-10-01",
+        "upcNote": "海上的人 (2009-10-01 TW)",
+        "curatorWhy": "店主提示的「滅火器早期」正解之一。滅火器 2008 年先在小白兔唱片出《我在哪裡》（WWR018），2009 年《海上的人》是他們從高雄龐克團走向全國前的關鍵作。卡池目前只有 2013《再會！青春》與 2016《REBORN》，缺這個早期段。",
+        "curatorRisk": "MB 已建檔（滅火器／海上的人／2009-10-01）。滅火器 MB 條目下作品極多（含大量單曲），選版要鎖 Album。中英名 滅火器／Fire EX./Fire E.X. 三種寫法並存。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "蘇打綠",
+      "album": "蘇打綠",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "6a718178-0e99-39f1-91ef-834cd1b39777",
+        "upc": "4711246231047",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「蘇打綠／蘇打綠」（2005 首張同名專輯）。已知別名：sodagreen（封面英文，封面實印小寫連寫 Sodagreen）／簡體「苏打绿」／《蘇打綠同名專輯》（Apple 台灣商店與中文維基條目 infobox 的 name 欄都用這個加註寫法，Apple collectionName 即為此）。⚠ 樂團 2022 年起以魚丁糸名義推出重錄系列，其中對應本碟的是《不同名專輯》（2022-01-14，環球音樂），MB 另有《同名專輯（蘇打綠版）》d44da7ae——都是不同錄音、不同 RG，任何時候都不可與本卡合併。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/6a718178-0e99-39f1-91ef-834cd1b39777/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第 17 屆金曲獎最佳樂團的首張正式專輯，是蘇打綠公認的起點；樂團後來極為知名，曲目旋律直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "入圍未得獎，且史上核心地位的論述多半落在樂團整體而非這張首作，跨來源共識不足以列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "2005 年 9 月 3 日由林暐哲音樂社發行、林暐哲製作的首張正式專輯，在此之前蘇打綠只出過三張單曲。十一首裡〈漂浮〉與〈頻率〉的詞曲出自鼓手史俊威，其餘全是主唱吳青峰所寫；壓軸的〈窺〉是吳青峰人生中寫下的第一首歌，2001 年就先收進角頭音樂的《少年ㄞ國》合輯。這張讓他們入圍第 17 屆金曲獎最佳樂團獎，但未得獎。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E8%98%87%E6%89%93%E7%B6%A0_(%E5%B0%88%E8%BC%AF)",
+          "https://musicbrainz.org/release-group/6a718178-0e99-39f1-91ef-834cd1b39777"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/15/a5/4d15a567-2441-866b-3b50-c7aa2baf5b6e/mzaf_12546892781542933113.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1443094831,
+        "appleCollectionName": "蘇打綠同名專輯"
+      },
+      "research": {
+        "suggestedYear": 2005,
+        "yearNote": "2005 無爭議。MB release 2005-09-03（Willlin Music＝林暐哲音樂社），中文維基〈蘇打綠 (專輯)〉infobox 亦記 2005 年 9 月 3 日、林暐哲音樂社。",
+        "mbTitle": "蘇打綠",
+        "mbArtist": "蘇打綠",
+        "mbFirstRelease": "2005-09-03",
+        "upcNote": "蘇打綠 (2005-09-03 TW)",
+        "curatorWhy": "林暐哲音樂社發行的同名首張，2006 年第17屆金曲獎最佳樂團入圍（同屆得主董事長《找一個新世界》，同場入圍還有濁水溪公社《天涯棄逃人》、好客樂隊《好客戲》——這一屆的入圍名單本身就是台灣獨立場景的橫切面）。卡池已有《小宇宙》《冬 未了》，缺這個起點。",
+        "curatorRisk": "MB 已建檔（蘇打綠／蘇打綠／2005-09-03）。蘇打綠 MB 條目下有大量「蘇打綠版」重錄（2022 年後），與 2005 原版容易混；另有 2022《同名專輯（蘇打綠版）》會直接撞名。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "大支",
+      "album": "舌粲蓮花",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "a24b5494-1f09-4811-b9ad-becfca7e8f07",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名「大支／舌粲蓮花」。藝人別名：Dwagie（MB artist f1e326c8 的主名）／Dog G（早期藝名）／曾冠榕（本名）／Tseng Kuan-jung。⚠ 專輯名有三種寫法並存，全部要進去重表：(1) 卡片採的繁體《舌粲蓮花》，Apple 台灣商店與 MB release 42d3c910 用此；(2) MB RG 標題與 release 164bad44 的簡體《舌粲莲花》；(3) 中文維基〈大支〉的出道作欄與作品表寫的是《舌燦蓮花》（火部「燦」，非米部「粲」）。另實看封面：括號內實印「[舌粲莲花]」——粲字為繁體字形、蓮字卻是簡體「莲」，混用寫法亦須登記。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/5d/72/d4/5d72d4fa-b943-74cd-af20-f0ff1c958a54/MSD-115.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店 artistId 369613677 全目錄人工挑（42 筆裡才有這張 2002 首作）；collectionId 656107441，2002-08-22、℗ 2002 Rock Records。目視：正紅底，中央一尊卡通化的低頭嘻哈人像——黑色爆炸頭、亮紅色稜面臉、深藍色外套、白背心、黑長褲白球鞋，頸掛黑色念珠、雙手在胸前合十；背後一輪深紅光暈，右側直排白色大字「大支」，下方方括號內「舌粲蓮花」。原生 1400px，是實體內頁掃圖但無側標／腰帶／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣本土嘻哈最早的一批專輯之一、大支的出道作，起點地位明確；台語華語交錯的饒舌與粗口題材有一定門檻。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "大支的獎項與跨國報導集中在 2011 年之後的《人》《硬》，這張出道作沒有名榜單或獎項紀錄，不足以進殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "台南出身的曾冠榕以藝名大支在 2002 年 7 月由滾石唱片推出這張出道作，是台灣本土嘻哈最早的一批專輯之一。他和 MC HotDog 在正式出道前就是好友，地下時期已互相跨刀。十三首從〈Intro〉〈出唱片〉走到〈台灣song〉〈金包銀〉與〈神與人〉上下篇，台語華語交錯，題材已經開始碰政治與宗教——後來他找達賴喇嘛替〈人〉拍 MV 的路數，在這裡就有雛形。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%A4%A7%E6%94%AF",
+          "https://musicbrainz.org/release-group/a24b5494-1f09-4811-b9ad-becfca7e8f07"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/95/ed/3195ed6a-8b1c-9323-05b9-ba4005f9d2ba/mzaf_1948730061508960872.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 656107441,
+        "appleCollectionName": "舌粲蓮花"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "2002 無爭議。MB release 2002-07-31，Apple 標 2002-08-22，中文維基〈大支〉infobox 記出道日期 2002 年 7 月、唱片公司滾石唱片（2002–2003），作品表列「2002年：《舌燦蓮花》」。",
+        "mbTitle": "舌粲莲花",
+        "mbArtist": "Dwagie",
+        "mbFirstRelease": "2002-07-31",
+        "upcNote": "releases=2，皆無有效條碼",
+        "curatorWhy": "台灣本土嘻哈最早的一批專輯之一（MB：2002-07-31），比 MC HotDog《犬》(2001) 晚一年、比《Wake Up》(2006) 早四年。大支後來以《人》《硬》《暗網》持續做政治性嘻哈，卡池目前只有 2013《Refuse to Listen》，缺這個起點。",
+        "curatorRisk": "MB 已建檔，但標題以簡體「舌粲莲花」登錄，繁簡雙向查是必要的。藝名「大支」兩個常用字，中文搜尋雜訊高；英文名 Dwagie 併用。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "豬頭皮",
+      "album": "豬頭皮的笑魁唸歌－我是神經病",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=94ba50df-843f-4531-983b-e3a1f51a0dfc&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=豬頭皮&fmt=json",
+            "https://musicbrainz.org/ws/2/artist?query=朱約信&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=笑魁唸歌&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB artist 豬頭皮 = 94ba50df-843f-4531-983b-e3a1f51a0dfc（country TW、disambiguation『朱頭皮』、alias Jutoupi），**全目錄只有 4 筆**：1999《傲骨人生》、2004《搖滾主耶穌!! Jesus Rocks!!》、2016-12 與 2017-09-29 兩筆《人生半百古來嘻》。1994–95 的「笑魁唸歌」三部曲一張都沒建；RG 搜《笑魁唸歌》全是日文『魁』字雜訊。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%B4%84%E4%BF%A1",
+          "https://itunes.apple.com/lookup?id=158953563&country=tw&entity=album",
+          "https://musicbrainz.org/artist/94ba50df-843f-4531-983b-e3a1f51a0dfc"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線核定。身分裁定 agent 已記錄四組 MusicBrainz 查詢：browse MB artist 94ba50df（country TW、disambiguation『朱頭皮』、alias Jutoupi）的全部 release-group 只回 1999《傲骨人生》、2004《搖滾主耶穌!! Jesus Rocks!!》與 2016／2017 兩筆《人生半百古來嘻》共 4 筆，1994–95 的笑魁唸歌三部曲一張都沒建，RG query《笑魁唸歌》撈到的全是日文『魁』字雜訊，確認 1994 這張 MB 未建檔。外部佐證三份互相吻合：中文維基〈朱約信〉專輯表載「1994年4月16日／豬頭皮的笑魁唸歌-我是神經病／滾石唱片・真言社」；Apple 台灣 collectionId 158953563《我是神經病》(豬頭皮) 的 releaseDate 1994-04-16、℗ 1994 Rock Records 與維基同日同廠；該條目的 collectionTrackCount 11 與 Discogs 14359614（滾石 RD 1252／MW 012, 1994, 11 軌）相同，可取回的前 10 軌曲名曲序 100% 對位。藝人、輯名、年份、廠牌、曲目五項互證，足以認定這張唱片存在且就是 1994 年滾石／真言社的這一張。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "卡片 artist 固定「豬頭皮」（1994 年唱片 credit 的寫法）。已知其他寫法全部登記：朱頭皮（2010 年代之後才改用的自稱，不可回溯套用）、朱約信（本名，中文維基條目名）、猪頭皮（簡體）、Jutoupi／JUTOUPI、Joytopper／JOYTOPPER、Pigheadskin／PIGHEADSKIN、ツー・トーピー，共八種。Apple 台灣把同一人拆成兩個 artistId（368640264 豬頭皮／1036140018 朱約信），去重時兩邊都要看。專輯名別名：我是神經病（Apple 條目名，也是實體副題）、豬頭皮的笑魁唸歌 - 我是神經病（Discogs，半形連字號）、笑魁唸歌 我是神經病。卡池鍵值維持全形破折號「－」。⚠ 系列另有 1995《笑魁唸歌(二)外好汝甘知》(RD-1298) 與 1995-11《笑魁唸歌(三)我家是瘋人院》(魔岩 MSD-010)，是兩張不同的碟；2018 年真言社／滾石的「我是神經病 黑膠+CD 套裝」加了新歌，日後入庫須另判是否同 RG。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/61/fc/6c/61fc6c64-6778-b123-d74b-2b370fea1db3/dj.mrmyvfsv.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 158953563（artist 掛在 368640264『豬頭皮』，與 1036140018『朱約信』是兩個不同 artistId）1000x1000bf，實測 200、418,189 bytes、1000×1000，已用 Read 目視。畫面：深藍夜空＋彎月與山影為底的大型人物拼貼（數十個剪貼人頭），可辨識的有戴眼鏡的西裝男、超人裝、京劇／布袋戲偶、足球、洋娃娃、大型粉紅豬玩偶（豬臉洞裡露出真人的臉）、寫著『豬頭皮罐頭』的紙箱（部分被馬賽克遮住）、下半部是深色水面與漣漪；中央偏下有一枚黃底鋸齒圓標，內含紅／黑毛筆字『豬頭皮的』＋紅色英文『FUNNY RAP』＋『笑魁唸歌』與一隻粉紅豬簡筆畫；最下緣白色大字『我是神經病』。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；華語圈最早成規模的本土說唱專輯之一，台灣唸歌接上 rap 的起點；台語俚俗語密度高、拼貼段落多，入耳需要一點語言門檻，但仍在正常範圍偏上。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "台灣說唱史上的開端之作，地位明確，但跨語區的長期共識不足以列入樂史殿堂；listeners 本環境不可得，流亡線無法判定。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "朱約信在 1994 年 4 月以「豬頭皮」名義交出的滾石／真言社作品（RD-1252），把台灣民間的唸歌說唱掛到 rap 節拍上：〈我是神經病〉〈中華民國萬萬歲〉〈做人的道理〉全用台語押韻連珠砲，語言在台語、國語與英語之間跳接，〈If U 惦惦 Nobody Say U 矮狗〉的曲名本身就是這種混語的樣本。封面把數十張剪貼人頭堆成一片夜景拼貼，與歌裡的戲謔同一路數。隔年續出《笑魁唸歌(二)外好汝甘知》，第三張《我家是瘋人院》改由魔岩發行。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%B4%84%E4%BF%A1",
+          "https://music.apple.com/tw/album/%E6%88%91%E6%98%AF%E7%A5%9E%E7%B6%93%E7%97%85/158953563"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/79/1c/2c791c43-8a2a-d5cb-d74f-3b643e3b1376/mzaf_13749898284545677190.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 158953563,
+        "appleCollectionName": "我是神經病"
+      },
+      "research": {
+        "suggestedYear": 1994,
+        "yearNote": "中文維基〈朱約信〉專輯表記 1994年4月16日（滾石唱片／真言社），Apple 台灣 cid 158953563 的 releaseDate 同為 1994-04-16、℗ 1994 Rock Records，兩者互證，與策展年份 1994 一致。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "滾石／真言社（Mandala Works）RD-1252。朱約信以「豬頭皮」名義做的台語唸歌 rap，是華語圈最早成規模的本土說唱專輯之一，1995 年續有《笑魁唸歌II 外好汝甘知》與魔岩發行的《笑魁唸歌III 我家是瘋人院》。真言社這條地下線（林強、羅百吉、豬頭皮）是店主指定時間軸的核心之一；朱約信本人也列在水晶唱片合作藝人名單裡。",
+        "curatorRisk": "MB 對 1994 這張建檔不完整（MB 上豬頭皮只有 2004 與 2016/2017 兩三筆），須走人工身分路線；Discogs 有完整三張與編號。藝名「豬頭皮／朱頭皮／朱約信／Jutoupi／Pigheadskin」五種寫法並存，是本批同一人別名最多的一筆。專輯名的破折號寫法不一。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "新寶島康樂隊",
+      "album": "新寶島康樂隊",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "4842b5e1-30b5-4a0e-bf2e-7b3ca7a2b9ac",
+        "upc": "4710149911728",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：新寶島康樂隊／New Formosa Band（中文維基 infobox 英文名）。⚠ 專輯名分歧最需注意：MB release e32a335d 的標題是《新寶島康樂隊》（滾石 RD-1172, 1992-07），中文維基作品表把同一張列作《多情兄》（1992年7月31日），Apple 台灣的條目名則是《新寶島康樂隊I - 多情兄》(cid 165681960, 1992-08-07)，出道作欄另寫「新寶島康樂隊多情兄」——四種寫法都要登記，否則 grep 去重必漏。本卡採 MB／實體的同名寫法。因 artist 與 album 同字，鍵值必須 artist|album|year 三欄一起比對，且要與後續《鼓聲若響》《第樹輯》《第舞輯》《第狗張》《新寶島康樂隊(7)衛生紙》《新寶島康樂隊(八)腳開開》《第12張剪剪花》等諧音編號續作分開。",
+        "selfTitledVerified": true
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/63/64/5f/63645f8a-32ee-c1c0-0426-e9838f658fcf/dj.ejnktcpe.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "原圖 250×215 非正方，右緣整條綠底直排側標宣傳條（印「掌聲鼓勵鼓勵!!」＋團員合照）。改用 Apple 台灣商店 165681960《新寶島康樂隊I - 多情兄》官方封面（1000×1000bf），已下載目視確認：正方、褐調台灣公路與鐵道號誌堆疊（通霄 Tunghsiao／梧棲 Wuchi／新竹 17／通霄海水浴場等），中央霓虹燈箱印直排「新寶島康樂隊」，無側標無貼紙"
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；新台語歌運動之後把台語／客語搖滾團體化的第一步，樂團日後兩度拿下金曲最佳演唱組合；陳昇為主流大牌，此作在台灣流通量大、旋律直白。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "對台灣雙語搖滾團的開路作用清楚，但樂團的公認代表作與獲獎作皆在後期，本張未達跨來源長期共識的殿堂層級。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "陳昇與黃連煜 1992 年 7 月在滾石發表的二人組首作（RD-1172）。開場曲〈多情兄〉把台語與客語混在同一首歌裡唱，〈在這恬靜的暗晡頭〉〈河壩唇的阿伯〉整首用客語，在當時的台語唱片裡罕見；〈跑路英雄〉〈水泥山〉〈壞子〉則寫市井人物。排灣族樂手陳世隆（阿Van）要到第四張才加入，此時仍是兩人編制。中文維基以主打歌名把這張列作《多情兄》，卡片沿用與團名同字的正名。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A",
+          "https://musicbrainz.org/release-group/4842b5e1-30b5-4a0e-bf2e-7b3ca7a2b9ac"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1c/a6/56/1ca656de-5616-2048-bdad-453b756a4be5/mzaf_9513556302611615515.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "原本配到 544648922《新寶島康樂隊(八)腳開開》(2011)，是樂團第八張、與原盤曲目零重疊。改配 165681960《新寶島康樂隊I - 多情兄》(1992-08-07, 10 曲)，曲序多情兄／一佰萬／阿妹／在這恬靜的暗晡頭／跑路英雄／河壩唇的阿伯／船長要抓狂／水泥山／理想國／壞子，與 MB release e32a335d（1992-07 滾石 RD-1172）逐首完全相符，取第 1 軌〈多情兄〉，實測 200"
+      },
+      "research": {
+        "suggestedYear": 1992,
+        "yearNote": "MB release e32a335d 記 1992-07（TW，滾石 RD-1172），中文維基作品表記 1992年7月31日，與策展年份 1992 一致。Apple 條目的 1992-08-07 為數位上架日，不採。",
+        "mbTitle": "新寶島康樂隊",
+        "mbArtist": "新寶島康樂隊",
+        "mbFirstRelease": "1992-07",
+        "upcNote": "新寶島康樂隊 (1992-07 TW)",
+        "curatorWhy": "陳昇與黃連煜組的台語／客語搖滾團，滾石發行。1997 年第8屆金曲獎最佳演唱團體入圍（《第樹輯》）。這是「新台語歌運動」（黑名單工作室《抓狂歌》1989、林強《向前走》1990）之後把台語搖滾團體化的第一步，卡池已有黑名單與林強，缺這一環。",
+        "curatorRisk": "MB 已建檔（新寶島康樂隊／新寶島康樂隊／1992-07）。專輯編號規則特殊（第二輯、第樹輯、第舞輯、第狗張），諧音命名容易在資料庫裡對錯。同名團名與同名專輯，鍵值需 artist|album|year 三欄一起比對。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "八十八顆芭樂籽",
+      "album": "肆十肆隻石獅子",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=2452f0f8-bd32-4944-bcb4-50bdd6e00ccd&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=88顆芭樂籽&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=The 44 Stone Lions&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=四十四隻石獅子&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB artist 八十八顆芭樂籽 = 2452f0f8-bd32-4944-bcb4-50bdd6e00ccd（country TW、alias 88 Balaz）**全目錄只有 2 張**：2012《比獸還帥》與 2024《浪漫野球戰士列傳》。2008 這張查無；英文 RG 搜《The 44 Stone Lions》全是 The Black Crowes《Lions》一類雜訊。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%81%E5%85%AB%E9%A1%86%E8%8A%AD%E6%A8%82%E7%B1%BD",
+          "https://itunes.apple.com/lookup?id=728192065&country=tw&entity=album",
+          "https://musicbrainz.org/artist/2452f0f8-bd32-4944-bcb4-50bdd6e00ccd"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線核定。身分裁定 agent 已記錄四組 MusicBrainz 查詢：browse MB artist 2452f0f8（country TW、alias 88 Balaz）的全部 release-group 只回 2012《比獸還帥》與 2024《浪漫野球戰士列傳》兩筆，中英兩種 RG query（The 44 Stone Lions／四十四隻石獅子）皆無命中，確認 2008 這張 MB 未建檔。外部佐證三份互相吻合：中文維基〈八十八顆芭樂籽〉專輯表載 2008 年作品；Apple 台灣 collectionId 728192065《肆十肆隻石獅子》(2008-06-01, 10 軌, artistName 八十八顆芭樂籽) 的曲序與 Discogs 5258228（Taiwan Colors Music 044, 2008, CD Album）的英文曲目表逐首對位、順序完全一致；本機封面圖的原始檔名 TCM044_4000x4000.jpg 即角頭音樂編號 044，與 Discogs 的 catno 直接對上。藝人、輯名、年份、曲目、廠牌編號五項互證，足以認定這張唱片存在且就是 2008 年角頭的這一張。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "artist 四種寫法全部登記：88顆芭樂籽（策展與本卡鍵值，但 Apple／MB 皆搜不到）／八十八顆芭樂籽（中文維基 infobox 原名欄、MB artist 2452f0f8 主名、Apple artistName）／88 Balaz／88balaz／88Balaz（英文三種大小寫）。⚠ 正名爭議：TW_INDIE_NAMING_RULINGS.md 一表判 artist 為「八十八顆芭樂籽」、補訂第 1 條並把 album 改判為《肆十肆隻石獅子》，但本批輸入仍是「88顆芭樂籽／The 44 Stone Lions」，兩者不一致，須由上游擇一。專輯名別名：The 44 Stone Lions／肆十肆隻石獅子（封面實印與 Apple 條目名，大寫數字）／四十四隻石獅子（中文維基作品表的小寫寫法）。⚠ 同團 2010《比獸還壞》與 2012《比獸還帥》是兩張不同專輯，一字之差不可混。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/31/97/86/319786f6-a229-b3ab-af82-329d6616496f/TCM044_4000x4000.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 728192065，artwork 原始檔名『TCM044_4000x4000.jpg』＝角頭音樂編號 044，與 Discogs 5258228（Taiwan Colors Music, 044, 2008）完全對上。1000x1000bf 實測 200、326,982 bytes、1000×1000，已用 Read 目視。畫面：白底＋亮藍與米黃雙色網版印刷風插畫，滿版畫著十幾組纏鬥中的人物（穿背心短褲的角力／摔角動作）與數隻捲毛石獅子，人與獅交錯扭打；右上角一個巨大的藍色『88』字標與其右側橫排『BALAZ』；正上方置中四行小字標題：『八十八顆芭樂籽／肆十肆隻石獅子／88 Balaz／The 44 Stone Lions』。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。**重要發現，與 naming-rulings.md 第 62 條牴觸**：該條裁定寫『這張的實體標題只有英文、沒有並列中文』，但封面實圖上中英四行是並列的，且中文寫法是**《肆十肆隻石獅子》（大寫數字肆）**，不是中文維基所寫的《四十四隻石獅子》。Apple 的數位版專輯名也正是《肆十肆隻石獅子》。建議把『肆十肆隻石獅子』補進 aliasReview，並回頭覆核該條裁定的前提。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角頭 2000 年代廠牌世代裡的長青車庫搖滾團，有海洋大賞與多屆金音獎的明確地位但非場景首選；粗礪的 garage punk 聽感生猛，發行量小、僅台灣流通。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團在台灣獨立場景資歷深厚，但本張未取得跨來源的長期樂史共識；發行量與流通範圍極小，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1996 年成軍的台北搖滾團，2001 年拿下貢寮國際海洋音樂祭的海洋大賞。2008 年由角頭音樂出版的第二張專輯，編號 044 正對上碟名裡的四十四隻石獅子；十首歌以〈花椰菜之歌〉開場，〈說教人〉〈参絞刑〉〈甜蜜酸黃瓜〉一路維持粗礪的 garage punk 手勢。封面是藍與米黃雙色網版印刷的滿版插畫，穿背心的角力人物與捲毛石獅子扭打成一團，上緣四行並列印著八十八顆芭樂籽／肆十肆隻石獅子／88 Balaz／The 44 Stone Lions。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%81%E5%85%AB%E9%A1%86%E8%8A%AD%E6%A8%82%E7%B1%BD",
+          "https://music.apple.com/tw/album/%E8%82%86%E5%8D%81%E8%82%86%E9%9A%BB%E7%9F%B3%E7%8D%85%E5%AD%90/728192065"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/e2/f7/7fe2f7fb-3da9-d947-b076-1c4404f31f89/mzaf_1736943778682584378.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 728192065,
+        "appleCollectionName": "肆十肆隻石獅子"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "中文維基〈八十八顆芭樂籽〉專輯表記「2008年：《四十四隻石獅子》」，Apple 台灣 cid 728192065 的 releaseDate 為 2008-06-01、℗ 2008，Discogs 5258228（Taiwan Colors Music, 044, 2008）同年，三者一致，與策展年份 2008 相符。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "角頭音樂編號 044。88顆芭樂籽是台灣車庫搖滾／garage punk 的長青團，也是金曲獎最佳樂團入圍常客名單上的獨立團之一。角頭這條線（少年ㄞ國、熱浪搖滾、濁水溪《天涯棄逃人》、四分衛《起來》）是店主指定的 2000 年代廠牌世代主軸。",
+        "curatorRisk": "MB 查無，須走人工身分路線。團名寫法有「88顆芭樂籽／八十八顆芭樂籽／88 Balaz／88Balaz」四種，是本批最容易漏 grep 的一筆。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Tizzy Bac",
+      "album": "什麼事都叫我分心",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1eb1fe1b-f367-3da5-b96d-2f7c065dcf95",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：Tizzy Bac（MB credit 與卡片一致，樂團長期無中文團名）／鐵之貝克（2009 年成團十週年起採用的正式中文團名，日後補卡不可用來另立藝人）。專輯名別名：什麼事都叫我分心（MB 與 Apple 條目名）／甚麼事都叫我分心（中文維基曲目表在第 6 軌用「甚」字）／Anything Can Tempt Me（本機封面實圖上手寫的英文副題，本次目視新查到，前此未登記）。⚠ 2023 年《甚麼事都叫平凡人分心 紀念EP》(4 軌, Apple cid 1701571773) 是撞名 EP，任何時候都不可與本卡合併；同期的 EP《查理布朗與露西》(2004)、《夏季熱》(2005) 亦分開。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/1eb1fe1b-f367-3da5-b96d-2f7c065dcf95/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；無吉他的鋼琴三人編制在 2003 年的台灣獨立場景是異數，中華音樂人交流協會年度十大專輯＋金曲最佳樂團入圍；旋律清楚但曲長懸殊，屬樂迷領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "台灣獨立樂團史上的重要起點，但跨來源長期共識不足以列入樂史核心；listeners 本環境不可得，流亡線無法判定。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "成軍三年半後才出的首作，2003 年 3 月由彎的音樂發行。編制裡沒有吉他手：陳惠婷的鋼琴扛住旋律主線，聽來像吉他破音的段落其實是許哲毓的貝斯過效果器做出來的，加上偏爵士的和聲進行，讓這張比日後的作品更接近鋼琴三重奏而不是搖滾團。十首歌長度懸殊，〈Graceful〉近十一分鐘，〈鼓手的辛勞誰人知〉只有四十三秒。同年獲中華音樂人交流協會年度十大專輯，並入圍第 15 屆金曲獎最佳樂團獎。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E4%BB%80%E9%BA%BC%E4%BA%8B%E9%83%BD%E5%8F%AB%E6%88%91%E5%88%86%E5%BF%83",
+          "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+          "https://musicbrainz.org/release-group/1eb1fe1b-f367-3da5-b96d-2f7c065dcf95"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/80/ab/f180ab55-5d45-1e50-ac58-9ba33660ad7d/mzaf_6365654952393833586.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1373202597,
+        "appleCollectionName": "什麼事都叫我分心"
+      },
+      "research": {
+        "suggestedYear": 2003,
+        "yearNote": "MB RG 1eb1fe1b first-release 2003-03-01，中文維基〈什麼事都叫我分心〉infobox 記「2003年3月1日（首版）／2011年10月1日（復刻版）」，與策展年份 2003 一致。",
+        "mbTitle": "什麼事都叫我分心",
+        "mbArtist": "Tizzy Bac",
+        "mbFirstRelease": "2003-03-01",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "Tizzy Bac 首張專輯（MB：2003-03-01），無吉他的鋼琴三人編制在當時的台灣獨立場景是異數。卡池已有 2006《我想你會變成這樣都是我害的》與 2009《如果看見地獄，我就不怕魔鬼》，缺這個起點。",
+        "curatorRisk": "MB 已建檔且資料完整（Tizzy Bac 在 MB 上是本批建檔最完整的藝人之一）。同一時期還有 EP《查理布朗與露西》(2004)、《夏季熱》(2005)，選版要精確。2023 有《甚麼事都叫平凡人分心》EP 會撞名。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "回聲樂團",
+      "album": "感官駕馭",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=025522c5-dc7f-4037-9b81-167cf52b615b&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=回聲樂團 Echo&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=感官駕馭&fmt=json",
+            "MB artist 交叉查『Echo』：回音哥(CN)、The Fabulous Echoes(HK) 皆非本團"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB artist 回聲樂團 = 025522c5-dc7f-4037-9b81-167cf52b615b（country TW、disambiguation『Taiwanese rock band』、alias Echo）**全目錄只有 2 張**：2010-12-03《處女空氣》與 2021《處女秀 (Live)》。2002 這張查無；RG 搜《感官駕馭》只撈到 林宥嘉《感官/世界》等雜訊。因為英文 Echo 在 MB 是超高頻同名詞（Echo & the Bunnymen 等），**不做任何猜測性配對**，走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+          "https://itunes.apple.com/lookup?id=6797394656&country=tw&entity=album",
+          "https://musicbrainz.org/artist/025522c5-dc7f-4037-9b81-167cf52b615b"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線核定。身分裁定 agent 已記錄四組 MusicBrainz 查詢：browse MB artist 025522c5（country TW、disambiguation『Taiwanese rock band』、alias Echo）的全部 release-group 只回 2010-12-03《處女空氣》與 2021《處女秀 (Live)》兩筆，RG query《感官駕馭》只撈到林宥嘉《感官/世界》一類雜訊，並已交叉排除 MB 上以 Echo 為名的 回音哥(CN)、The Fabulous Echoes(HK) 等同名實體，確認 2002 這張 MB 未建檔；因英文 Echo 是超高頻同名詞，不做任何猜測性配對。外部佐證三份互相吻合：中文維基〈回聲樂團〉明載 2002 年 1 月 11 日在台北地下社會辦首張專輯《感官駕馭》發行演唱、並記其為水晶唱片 2002 年最賣座發行品；Apple 台灣 collectionId 6797394656《Sensual Drive》(回聲樂團, 2002-01-11, 10 軌) 的上架日與該場演唱同日；該 10 軌曲名曲序與 Discogs 9992807（Echo《感官駕馭》, 2002, 水晶唱片, catno none, Taiwan CD）100% 吻合。藝人、輯名、年份、廠牌、曲目五項互證，足以認定這張唱片存在且就是 2002 年水晶的這一張。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：回聲樂團 Echo（本批輸入寫法）／回聲樂團（TW_INDIE_NAMING_RULINGS.md 一表的裁定寫法、MB artist 025522c5 主名、Apple artistName）／Echo（MB alias、Discogs 條目名）／回聲。⚠ 正名不一致：裁定表判「回聲樂團」，輸入卻是「回聲樂團 Echo」，須由上游擇一。⚠⚠ 絕對不可用英文 Echo 做自動比對——MB／Discogs 上 Echo 是超高頻同名詞（Echo & the Bunnymen、回音哥(CN)、The Fabulous Echoes(HK) 等），比對一律鎖中文團名＋2002＋水晶唱片。專輯名別名：感官駕馭／Sensual Drive（Apple 台灣的條目名用英文，中文《感官駕馭》在該店是第 3 軌曲名）。同團後續《巴士底之日》(2007)、《處女空氣》(2010)、《獻給生命中的純粹》(2014) 及 EP《少年的最後旅行》(2004) 分開建卡。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/04/84/9c0484b8-da11-a660-d7ed-2406b33d434c/4710243776919.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 6797394656（artwork 檔名是條碼 4710243776919）1000x1000bf，實測 200、189,570 bytes、1000×1000（原生 3000×3000），已用 Read 目視。畫面：舊教室內的偏紅／褐調照片，一整排木製課桌椅，七、八名穿白色短袖制服（其中兩人繫紅領帶）的年輕人分別趴著、癱坐、仰躺在桌上或地上，背景是逆光的大片鐵框玻璃窗與一塊綠色布幕，左上角有一隻懸空的赤腳入鏡；右上有暗紅色小寫襯線字『echo』，其下小字『感官駕馭』。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；水晶唱片末期最賣座的發行品，把 1990 年代地下團接到 2000 年代獨立世代的關鍵一張；英式搖滾旋律直白，但實體早已絕版、屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "在台灣獨立音樂史上的接榫位置清楚，但缺乏跨來源、跨語區的長期共識；本地流通量在當年不算稀少，pearl 亦不宜逕行推定。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "團員來自清華大學迴聲社，1998 年為了到新竹酒吧駐唱臨時組團，被問團名時順口報了社團的英文名 Echo。2000 年〈感官駕馭〉在滾石可樂網站成為年度點播前三名，樂團才開始錄這張專輯；主唱吳柏蒼為了回台發片，放棄紐約大學的學業。2002 年 1 月 11 日在台北地下社會辦發行演唱，觀眾滿到店外，後來成為水晶唱片當年最賣座的出版品。十首英式搖滾從〈It's Time To Sing, It's Time To Get Out〉排到〈競逐孤寂〉。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+          "https://music.apple.com/tw/album/sensual-drive/6797394656"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/51/af/6b51aff7-627e-9528-19f1-3279d45aba93/mzaf_3622421834439014428.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6797394656,
+        "appleCollectionName": "Sensual Drive"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "中文維基〈回聲樂團〉沿革記「2002年1月11日，回聲在台北地下社會進行首張專輯『感官駕馭』的發行演唱」，並記其為水晶唱片 2002 年最賣座的發行品；專輯表亦列「感官駕馭 (2002年)」。Apple 台灣 cid 6797394656 的 releaseDate 恰為 2002-01-11、℗ 2002，與 Discogs（2002, 水晶唱片, catno none）一致，年份 2002 確定。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "水晶唱片時期的回聲樂團首張（中文維基「水晶唱片」把回聲列為合作團體）。卡池目前只有 2007《巴士底之日》，缺水晶時期這張。回聲、甜梅號、1976、閃靈同屬水晶末期那一批把地下團接到 2000 年代的樂團。",
+        "curatorRisk": "MB 以「回聲樂團」查詢只撈到 2010《處女空氣》，這張須人工身分路線或用英文 Echo 交叉查——而 Echo 在 MB／Discogs 上是極高頻同名詞（Echo & the Bunnymen 等）。Discogs 該筆 catno 標 none。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "自然捲",
+      "album": "C'est la vie",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "81742e13-e0fe-3898-b045-f9758e935143",
+        "upc": "9787880777741",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：自然捲（卡片正名）／自然卷（簡體；中文維基的「自然捲」是髮型條目重定向，樂團條目名為「自然捲 (樂團)」，帶消歧義後綴）／Natural Q（中文維基 infobox 英文名，也是封面右上那個大寫 Q 的來源）。專輯名別名：C'est la vie（卡片正名，直引號）／C’est la vie（MB RG 與各 release 用彎引號，鍵值極易對不上）／C'est La Vie（Apple 台灣條目名，大小寫不同）／這就是生活（MB TW release 9d8d3aba 的 disambiguation）／这就是生活（MB CN release 49f3934d）。⚠ 續作《C'est La Vie Vol.2 大捲包小卷》(2005)、《C'est La Vie 2.5 資源回收》(2006) 會連環撞名，比對須鎖 2004-04＋風和日麗 AGD-001。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/81742e13-e0fe-3898-b045-f9758e935143/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；風和日麗唱片行的第一號出品（AGD-001）與 2000 年代台灣輕獨立路線的原型，第 16 屆金曲獎最佳樂團入圍；編曲輕省、旋律直白。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "對風和日麗這條廠牌線的開端意義明確，但作品本身未取得跨來源的長期樂史共識，未達殿堂門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "奇哥（蔡坤奇）寫歌、彈吉他兼唱，魏如萱（娃娃）擔任主唱。2003 年組團後先做了一張手工單曲，隔年這張由風和日麗唱片行發行，編號 AGD-001，是這家廠牌的第一號出品。十一首歌從一段 Intro 進〈99滴眼淚〉，題材都是生活裡的瑣事——〈坐在巷口的那對男女〉〈老處女〉〈明信片〉，編曲輕省。〈Only in My Dream〉〈坐在巷口的那對男女〉與〈自然捲〉後來都被拿去做電視廣告音樂。第 16 屆金曲獎最佳樂團獎入圍，該屆由生祥與瓦窯坑3 的《臨暗》奪得。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E6%8D%B2_(%E6%A8%82%E5%9C%98)",
+          "https://zh.wikipedia.org/wiki/%E7%AC%AC16%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+          "https://musicbrainz.org/release-group/81742e13-e0fe-3898-b045-f9758e935143"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/02/51/eb0251dc-7862-d114-6d88-4cc775592354/mzaf_14566946935355910646.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 6785432871,
+        "appleCollectionName": "C'est La Vie"
+      },
+      "research": {
+        "suggestedYear": 2004,
+        "yearNote": "MB release 9d8d3aba 記 2004-04（TW，風和日麗唱片行 AGD-001），中文維基〈自然捲 (樂團)〉記 2003 年成團、隔年透過風和日麗發行首張，〈第16屆金曲獎〉(2005) 最佳樂團獎入圍名單列「自然捲《C'est La Vie》／風和日麗唱片行」，與策展年份 2004 一致。MB 另有 2005-11 的 CN 版 release，不採。",
+        "mbTitle": "C’est la vie",
+        "mbArtist": "自然捲",
+        "mbFirstRelease": "2004-04",
+        "upcNote": "C’est la vie (2005-11 CN)",
+        "curatorWhy": "風和日麗唱片行發行，2005 年第16屆金曲獎最佳樂團入圍。自然捲（奇哥＋娃娃）是風和日麗這家廠牌的招牌，也是 2000 年代台灣「輕獨立」路線的原型；卡池有風和日麗世代的黃玠，缺這個源頭。",
+        "curatorRisk": "MB 已建檔（自然捲／C’est la vie／2004-04），但 MB 用的是彎引號「’」，Discogs／金曲名單用直引號「'」，鍵值極易對不上。續作《C'est la vie vol.2》《C'est la vie 2.5 資源回收》會連環撞名。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "鄭宜農",
+      "album": "海王星",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "16c9c649-6c92-4d5d-af25-9cefde4bf32e",
+        "upc": "4710660171243",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：鄭宜農（卡片正名）／郑宜农（簡體）／Enno Cheng（官方英文名）／Cheng Yi-Nung（羅馬拼音）。專輯名別名：海王星／Neptune（Apple 台灣的條目名用英文，中文《海王星》在該店完全搜不到，須靠 artistId 981821881 列全目錄才認得出）。⚠ MB RG 16c9c649 底下掛三個 release：2011-07-08 TW 原盤（WWR024）、2020-05-20 TW 再版（小白兔 WWR037／WWR037LP）、2021-07-08 XW，同屬一個 RG 不另開卡。與她領軍的樂團 猛虎巧克力（本批另有一卡《夜工廠》）分屬不同 artist，不可互相吸收。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/16c9c649-6c92-4d5d-af25-9cefde4bf32e/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔本地團出版線上的重要單飛作、鄭宜農個人生涯起點，有 2020 黑膠再版；聲響溫和不刁鑽，屬樂迷領域。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "藝人日後的獲獎作與代表作都在其後，本張的跨來源長期共識不足以列入樂史核心；listeners 本環境不可得。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "鄭宜農在主演父親鄭文堂的電影《夏天的尾巴》四年後交出的首張個人專輯，2011 年 7 月由小白兔唱片發行，編號 WWR024，製作人是阿飛西雅的吳逸駿。十首歌四十分鐘，詞曲都由她自己寫，中文維基把樂風歸在民謠與另類流行，〈大雨城市〉與〈城堡〉是其中最長的兩首。輯名取自海王星——她說那是離太陽最遠、表面結冰而內部熾熱的行星。2020 年 5 月小白兔重新壓製 CD 與黑膠，是台灣獨立作品少見的黑膠再版。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%B5%B7%E7%8E%8B%E6%98%9F_(%E9%84%AD%E5%AE%9C%E8%BE%B2%E5%B0%88%E8%BC%AF)",
+          "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E5%85%94%E5%94%B1%E7%89%87",
+          "https://musicbrainz.org/release-group/16c9c649-6c92-4d5d-af25-9cefde4bf32e"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4c/51/49/4c5149ff-8a5a-c8a4-7f2f-dea7af00a48c/mzaf_3435706115153853090.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 464200556,
+        "appleCollectionName": "Neptune"
+      },
+      "research": {
+        "suggestedYear": 2011,
+        "yearNote": "MB RG 16c9c649 first-release 2011-07-08，中文維基〈海王星 (鄭宜農專輯)〉infobox 記「2011年7月8日（CD）／2020年5月20日（LP）」，小白兔唱片目錄列 WWR024 鄭宜農《海王星》2011.07，三者一致，與策展年份 2011 相符。",
+        "mbTitle": "海王星",
+        "mbArtist": "鄭宜農",
+        "mbFirstRelease": "2011-07-08",
+        "upcNote": "海王星 (2011-07-08 TW)",
+        "curatorWhy": "小白兔唱片 WWR024，鄭宜農首張個人專輯（2020 年由小白兔再發 CD 與黑膠 WWR037/WWR037LP，是台灣獨立作品少見的黑膠再版案例——對唱片行來說是實體可得性最高的一筆）。",
+        "curatorRisk": "MB 已建檔（2011-07-08）。2020 再版與 2011 原版同名，選版要決定（黑膠版本存在，可能反而比 CD 好找）。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "猛虎巧克力",
+      "album": "夜工廠",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "eb7ecd32-0ae0-4fdb-a89d-03de07d69ae6",
+        "upc": "4710660171311",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：猛虎巧克力（卡片正名，MB credit 一致）／Chocolate Tiger（中文維基 infobox 與小白兔目錄的官方英文名）／Fierce Tiger Chocolate（策展 risk 提到的寫法，未見於官方或廠牌目錄，僅登記備查，不採為比對鍵）。專輯名別名：夜工廠／Nighttime Factory（Apple 台灣的條目名用英文，硬搜中文《夜工廠》撈不到；小白兔目錄 WWR031 亦中英並列）。與主唱 鄭宜農 的個人卡（本批另有《海王星》一卡）分屬不同 artist，不可互相吸收；同團 2015《怡君》另立。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/ff/11/24/ff112426-d297-397c-23b2-219d2528a91b/4710660171311.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店 artistId 673852807 全目錄人工挑，該店英文標題 Nighttime Factory（collectionId 663944110，2013-07-16，℗ 2013 White Wabbit Records，第 9 軌即〈夜工廠〉）。目視：奶油米黃底，中央一座亮青藍線條構成的多面體工廠，頂端三支細煙囪冒白煙，面內填細密平行線；工廠下方為灰白色山丘與其投影，藍色顏料自底部滴垂；左上角直排黑色手寫感字體「猛虎巧克力／夜工廠」。原生 1500px，無側標／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔本地團出版線後段的代表作、鄭宜農從單飛轉向樂團的轉折點；噪音與後搖段落生猛粗礪，發行量小、屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團與作品在台灣獨立場景有明確位置，但無跨來源的長期樂史共識；發行量與流通範圍極小，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "鄭宜農發完個人首作《海王星》後在 2012 年組的團，初始編制是她主唱、小白兔唱片店長 William 彈吉他、川秋沙的 Hiko 打鼓、耳孢蟲的 Celine 彈貝斯。2013 年 6 月由小白兔發行（WWR031），九首歌以搖滾為底摻進噪音與後搖段落，比《海王星》生猛許多；〈四百擊〉借了楚浮的片名，〈腦炸症〉的英文題是 Information Overload Syndrome。封面出自設計師小子：奶油米黃底上一座亮青藍線條畫成的多面體工廠，顏料自底部滴垂。隔年樂團受邀赴德州 SXSW 演出。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E7%8C%9B%E8%99%8E%E5%B7%A7%E5%85%8B%E5%8A%9B",
+          "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E5%85%94%E5%94%B1%E7%89%87",
+          "https://musicbrainz.org/release-group/eb7ecd32-0ae0-4fdb-a89d-03de07d69ae6"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/3d/8a/033d8a34-4b37-6a23-8445-e55b44f07555/mzaf_13815933864335488140.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 663944110,
+        "appleCollectionName": "Nighttime Factory"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB RG eb7ecd32 first-release 2013-06-20，中文維基〈猛虎巧克力〉專輯表記《夜工廠》2013 年 6 月 20 日，小白兔唱片目錄列 WWR031 猛虎巧克力《夜工廠 Nighttime Factory》2013.06，三者一致，與策展年份 2013 相符。Apple 條目的 2013-07-16 為數位上架日，不採。",
+        "mbTitle": "夜工廠",
+        "mbArtist": "猛虎巧克力",
+        "mbFirstRelease": "2013-06-20",
+        "upcNote": "夜工廠 (2013-06-20 TW)",
+        "curatorWhy": "小白兔唱片 WWR031。猛虎巧克力是 2010 年代台灣民謠／藍調復古路線的代表，主唱後來成為台語新浪潮的重要人聲。是小白兔本地團出版線的後段代表。",
+        "curatorRisk": "MB 已建檔（2013-06-20）。團名四字，英文名 Fierce Tiger Chocolate 使用不穩定。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Selfkill",
+      "album": "公路白",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "1ec0c23a-fab0-40cc-955b-efa1e5062f35",
+        "upc": "4710660171298",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：Selfkill（卡片正名，MB credit 一致）／SELFKILL（小白兔唱片目錄與 Apple artistName 的全大寫）／selfkill（中文維基條目內文的全小寫）。樂團無中文團名。專輯名別名：公路白／公路白 Highway Dawn（中文維基與小白兔目錄的中英並列）／Highway Dawn（Apple 台灣的條目名用英文）。⚠ 英文單字 selfkill 與 Highway Dawn 都是高頻詞，自動比對必須鎖 小白兔 WWR029＋2012-08-10。⚠ 同團首張的寫法有《雨停了之後》與《雨停了之後？》兩種（中文維基同一條目內兩處不一致），日後補卡兩種都要進別名。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/67/4a/07/674a07da-3d2c-6525-5dbb-d915b3614d28/Cover.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple 台灣商店，英文標題 Highway Dawn（collectionId 551909742，2012-08-10 與 MB first-release 同日，℗ 2012 White Wabbit Records，第 3 軌 Highway Dawn）。目視：畫布紋理的淡藍天空為底，中央是一幅壓克力／水彩插畫——綠黃相間的鳥頭配上裸體人身，背後長出兩片綠色羽翼，雙臂平展、腕上繫黑繩，腳穿淡藍色四輪溜冰鞋單腳滑行，四周飄散綠色葉片。全畫無字。原生 1200px，無側標／貼紙／浮水印。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一支入圍金曲獎最佳樂團的後搖團的第二張，小白兔出版線上的明確一格；長篇器樂結構與單一音色推進，發行量小。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團的歷史位置由 2006 年首張建立，本張未取得跨來源的長期樂史共識；發行量與流通範圍極小，疑似 pearl，待店主補 listeners 覆核。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "2002 年夏天成軍的後搖滾團，雙吉他加貝斯與鼓，2006 年的首張《雨停了之後》讓他們成為台灣第一支入圍金曲獎最佳樂團的後搖團。隔了六年才出的第二張，2012 年 8 月由小白兔唱片發行，編號 WWR029。九首曲子中英文標題交錯，〈公路白〉的英文題 Highway Dawn 與開場的〈Highway Dry〉對照著看，末曲〈Cake on Shit〉回應首張裡的〈Cake on Body〉。封面是一幅無字的壓克力插畫：綠黃鳥頭配裸體人身，背後長出羽翼，腳踩四輪溜冰鞋單腳滑行。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/Selfkill",
+          "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E5%85%94%E5%94%B1%E7%89%87",
+          "https://musicbrainz.org/release-group/1ec0c23a-fab0-40cc-955b-efa1e5062f35"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/f1/d3/a3f1d369-e8d5-489d-348b-1080d5e84b44/mzaf_4680969369757932201.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 551909742,
+        "appleCollectionName": "Highway Dawn"
+      },
+      "research": {
+        "suggestedYear": 2012,
+        "yearNote": "MB RG 1ec0c23a first-release 2012-08-10（TW，release da60eddf），中文維基〈Selfkill〉音樂作品欄記「《公路白 Highway Dawn》，2012年8月10日，小白兔唱片發行」，小白兔目錄列 WWR029 SELFKILL《公路白》2012.08，三者一致，與策展年份 2012 相符。另更正策展 why 欄的一處：中文維基記首張《雨停了之後》為 2006 年發行、2007 年入圍第 18 屆金曲獎最佳樂團，策展寫成「2007 年就以《雨停了之後》入圍」是把發行年與入圍年併在一起。",
+        "mbTitle": "公路白",
+        "mbArtist": "Selfkill",
+        "mbFirstRelease": "2012-08-10",
+        "upcNote": "公路白 (2012-08-10 TW)",
+        "curatorWhy": "小白兔唱片 WWR029。Selfkill 早在 2007 年就以《雨停了之後》（小白兔橘子）入圍第18屆金曲獎最佳樂團——是小白兔這家獨立廠牌第一次把旗下樂團送進金曲最佳樂團入圍名單，也出現在金曲最佳樂團「入圍一次」的樂團總表上。",
+        "curatorRisk": "MB 已建檔（Selfkill／公路白／2012-08-10）。若想改收更具歷史意義的《雨停了之後》(2007)，Discogs 與 MB 都查無該張，年份也未能獨立確認——建議先收 2012 這張。團名英文單字，同名雜訊高。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "棉花糖",
+      "album": "小飛行",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "172d7461-65c5-4db6-a535-22d8d1b3edca",
+        "upc": "4712523870454",
+        "aliasesChecked": true,
+        "aliasReview": "artist 別名：棉花糖（卡片正名，MB credit 一致）／棉花糖 (組合)（中文維基條目名的消歧義後綴，簡體站作「棉花糖 (组合)」）／katncandix2（官方英文名）／棉花糖_katncandix2（官方社群帳號寫法）／katncandix2.0（2021 復團後的寫法，不可回溯套用到 2009 年的卡片）。專輯名《小飛行》無異寫。⚠「棉花糖」是日常詞彙，中文比對雜訊極高，必須鎖 2009-05-01＋亞神音樂（AsiaMuse, catno 3870454）。⚠ 團員 莊鵑瑛（小球）日後的個人作品另立藝人，不可併入。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/e2/29/dc/e229dcb3-b61e-6136-d72d-02a498e30472/dj.onjvmpls.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "原圖左下角有第三方掃圖站浮水印「照片網 nipic.com」（昵圖網）。改用 Apple 台灣商店 683098218 官方封面（1000×1000bf），已下載目視確認：正方、女主唱小球特寫＋左後方吉他手，中央青色水滴標印「小飛行／棉花糖 [katncandix2]」，無浮水印無貼紙"
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 2,
+        "accessibility": 1,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代末簡單生活節世代清新獨立流行的樣本，有新加坡 Freshmusic 年度最佳新音樂團體與 AR 首例的特色，但非場景硬核；旋律直白、當年通路流通量大。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "屬補充性質的一筆，樂史地位遠未達殿堂門檻，跨來源共識僅止於當年的新人獎項與媒體榜單。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "沈聖哲與莊鵑瑛（小球）2007 年 5 月組成的雙人組，先考上台北市街頭藝人執照在街頭唱，2008 年自費發行限量單曲《2375》，再靠行政院的樂團補助金錄成這張首作，2009 年 5 月由亞神音樂發行。十一首歌由沈聖哲寫曲、彈吉他兼製作，莊鵑瑛主唱，〈B612〉取自《小王子》，末曲即是當年那首〈2375〉。實體版附加擴增實境（AR）內容，是台灣第一張這麼做的唱片，同年並獲新加坡 Freshmusic Awards 年度最佳新音樂團體。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/%E6%A3%89%E8%8A%B1%E7%B3%96_(%E7%B5%84%E5%90%88)",
+          "https://musicbrainz.org/release-group/172d7461-65c5-4db6-a535-22d8d1b3edca"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/12/85/eb128537-ed97-317e-2572-c16c0c76f131/mzaf_188372997030867258.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 683098218,
+        "appleCollectionName": "小飛行"
+      },
+      "research": {
+        "suggestedYear": 2009,
+        "yearNote": "MB release 23426b35 記 2009-05-01（TW，AsiaMuse，catno 3870454），中文維基〈棉花糖 (組合)〉年表記「2009年 5月1日，與亞神音樂簽約並正式發行第一張專輯《小飛行》」，與策展年份 2009 一致。",
+        "mbTitle": "小飛行",
+        "mbArtist": "棉花糖",
+        "mbFirstRelease": "2009-05-01",
+        "upcNote": "小飛行 (2009-05-01 TW)",
+        "curatorWhy": "2000 年代末「簡單生活節世代」清新獨立流行的代表，與 929、熊寶貝、橙草同期，是台灣獨立音樂從 live house 走進大眾視野那一波的樣本。",
+        "curatorRisk": "MB 已建檔（棉花糖／小飛行／2009-05-01）。團名「棉花糖」是日常詞彙，中文維基條目名是「棉花糖 (组合)」，簡繁與消歧義後綴都要處理。這筆屬補充性質，非場景硬核。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "昆蟲白",
+      "album": "刺青",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "33b218f1-18d7-4761-9a0d-d38d71bcb4bb",
+        "upc": "193017069730",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 昆蟲白／《刺青》。藝人別名：insecteens（官方英文）、本名 黃建勳／Huang, Jian-Shiun；與其所屬樂團 甜梅號（Sugar Plum Ferry）、微光群島（Shimmering Islands）、錫盤街、絲襪小姐、法蘭黛 皆為不同 artist，不可互相吸收。專輯別名：刺青／電影音樂概念專輯（中文維基與唱片實體寫法）、電影《刺青》音樂概念專輯（Apple TW cid 1638095858）、Spider Lilies（電影英文名，非唱片標題）。MB RG 33b218f1 標題即「刺青」，artist-credit 只掛昆蟲白，但實際創作人為 昆蟲白／陳建騏／張見宇 三人，日後若補建陳建騏、張見宇的卡不可視為同一張。同 RG 下 2007 CD（11 曲）與 2024 好有感覺音樂雙黑膠 IST-001-LP（16 曲）為同一 RG 的兩個 release，不分卡。⚠ 與台灣大量以「刺青」為名的條目（電影、書、其他歌曲）比對時必須鎖 artist。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/33b218f1-18d7-4761-9a0d-d38d71bcb4bb/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣後搖滾要角跨到電影配樂、主題曲入圍金馬獎，地位明確但非樂史核心；器樂配樂盤，樂迷以上領域才會遇到。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "電影配樂作品，金馬獎為入圍非得獎，缺乏跨來源長期共識，不列殿堂；聲響溫和不構成異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "甜梅號吉他手昆蟲白（本名黃建勳）為周美玲電影《刺青》寫的音樂概念專輯，2007年4月由喜瑪拉雅唱片發行，另收陳建騏、張見宇的作品。十一首曲目大半以「茉莉」命名，從〈旭茉莉〉一路排到〈霞茉莉〉，中間夾著〈竹夜青〉〈姊離症〉〈蜘蛛莉莉〉。主題曲〈小茉莉〉由周美玲、林書宇填詞、昆蟲白作曲，入圍第44屆金馬獎最佳原創電影歌曲。2024年好有感覺音樂補進〈刺青三十一號〉等五曲，做成十六曲雙黑膠。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/刺青_(電影)",
+          "https://zh.wikipedia.org/wiki/昆蟲白",
+          "https://musicbrainz.org/release-group/33b218f1-18d7-4761-9a0d-d38d71bcb4bb"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/31/11/38/311138cd-93f1-dc14-a3fa-7d7a8b6b6129/mzaf_13302574872117806444.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1638095858,
+        "appleCollectionName": "電影《刺青》音樂概念專輯"
+      },
+      "research": {
+        "suggestedYear": 2007,
+        "yearNote": "MB first-release 2007-04-27、Apple releaseDate 2007-04-27、中文維基〈刺青 (電影)〉與〈昆蟲白〉皆記 2007 年 4 月 27 日喜瑪拉雅唱片發行，四者一致；策展年 2007 無誤。",
+        "mbTitle": "刺青",
+        "mbArtist": "昆蟲白",
+        "mbFirstRelease": "2007-04-27",
+        "upcNote": "刺青 (2007-04-27 XW)",
+        "curatorWhy": "昆蟲白（白盒子）是台北地下場景裡橫跨詩、噪音與另類民謠的獨立創作者，2007《刺青》、2011《自然人》兩張是台灣「怪奇獨立」路線少數留下完整錄音的作品。",
+        "curatorRisk": "MB 已建檔（昆蟲白／刺青／2007-04-27）。藝名三字、專輯名「刺青」兩字，中文比對雜訊高；中文維基無條目，敘述來源薄弱。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "壞女兒",
+      "album": "沒有毛的熊",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "d2ba68cd-4976-4033-b435-10c0799016d8",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 壞女兒／《沒有毛的熊》，中文單一寫法，未見英文團名（小白兔目錄與中文維基皆只寫中文，Apple 全店無條目、無英文對照可查）。MB artist／RG 均為繁體中文，與卡片一致。可能的簡體誤寫「坏女儿／没有毛的熊」在日後去重時要一併 grep。⚠ 同團另有 2003 年《小太陽》（小白兔 WWR005），是不同一張碟，不可合併。⚠「壞女兒」三字為常用詞，中文比對雜訊高（同名電視劇、歌曲、書名），自動比對務必連 WWR002／小白兔唱片／2002 一起鎖。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/d2ba68cd-4976-4033-b435-10c0799016d8/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 5,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔唱片 WWR002，廠牌史位置明確、當年獲香港《音樂殖民地》年終榜推薦；但 CD 早已絕版、無數位發行、中文維基無條目，屬收藏家領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "listeners 在本環境取不到，依店規 pearl 一律 false。疑似 pearl，待店主補 listeners 覆核：CD 絕版、Apple 全店查無條目、無獨立維基條目，冷門度極高。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "小白兔唱片開張那年的第二號出版品（WWR002），2002年發行，排在薄荷葉《涼》之後。廠牌由後來成為阿飛西雅貝斯手的葉宛青創立，這批早期出版是台北獨立廠牌世代的起點。錄音由吳逸駿（小花）在自建的NOIZ Studio完成，他同時是妮波寺與阿飛西雅的吉他手。十首曲目包括〈天使〉〈上下左右〉〈Cm Dream〉〈溫暖的棉被〉，發行當年獲香港《音樂殖民地》年終榜推薦，CD久已絕版。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/小白兔唱片",
+          "https://zh.wikipedia.org/wiki/吳逸駿",
+          "https://musicbrainz.org/release-group/d2ba68cd-4976-4033-b435-10c0799016d8"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "url": "",
+        "source": "none",
+        "note": "Apple 無可靠配對（本環境 YouTube 不可驗證），留待店主本機補查或維持 unavailable"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB release 2002-11-01（TW，小白兔唱片）；中文維基〈小白兔唱片〉目錄表記 WWR002 為 2002.06，兩者月份不同但同為 2002 年，故年份取 2002。月份差異疑為維基把廠牌成立年的出版排程當發行日，若日後要記月份以 MB 的 11 月為準。",
+        "mbTitle": "沒有毛的熊",
+        "mbArtist": "壞女兒",
+        "mbFirstRelease": "2002-11-01",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "小白兔唱片 WWR002——小白兔的第二號出版品，緊接在薄荷葉《涼》之後，是這家廠牌開張年的兩張本地團作品之一，對「2000 年代獨立廠牌世代」的敘事有結構性意義。",
+        "curatorRisk": "MB 已建檔（壞女兒／沒有毛的熊／2002-11-01）。團名與專輯名都是常用字組合，中文比對雜訊高。這筆是廠牌史意義大於音樂知名度。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "迷幻幼稚園",
+      "album": "Psychedelic Kindergarten",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=3c98139f-03a7-4cf1-87fd-61f4c6e123f9&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=迷幻幼稚園&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=Psychedelic Kindergarten&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=迷幻幼稚園&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB 有 artist 迷幻幼稚園 = 3c98139f-03a7-4cf1-87fd-61f4c6e123f9（disambiguation『Taiwanese rock band』、alias Psychedelic Kindergarten），但 **release-group 總數 0**；RG 搜英文 Psychedelic Kindergarten 撈到的是 Zwecklos／Dutch Interior 等一堆同名《Kindergarten》。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://musicbrainz.org/artist/3c98139f-03a7-4cf1-87fd-61f4c6e123f9",
+          "https://music.apple.com/tw/album/%E8%A9%B1-vol-1/1685767496",
+          "https://music.apple.com/tw/album/words-%E8%A9%B1-vol-2/1669926853"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 走人工身分路線。MB 查證結果：artist 迷幻幼稚園 3c98139f-03a7-4cf1-87fd-61f4c6e123f9 確實存在（type=Group、country=TW、begin-area=Taipei、life-span begin 1995、disambiguation「Taiwanese rock band」、英文 alias「Psychedelic Kindergarten」為 primary），但該 artist 名下 release-group 總數為 0，全庫以中文團名或英文別名查 RG 皆只撈到 Zwecklos、Dutch Interior 等同名《Kindergarten》雜訊，確認 MB 無此碟。改以 Apple TW 三個數位條目定身分：cid 1685767496《話 Vol.1》9 軌、cid 1669926853《Words 話 Vol.2》5 軌、單曲〈短暫的快樂〉，artistName 直接寫作「迷幻幼稚園 Psychedelic Kindergarten」，三者合計 15 軌，與輸入檔記錄的 CIRD 1091 雙碟（碟一 10 軌、碟二 5 軌）完全還原，且 Vol.1 封面美術印的正是「PSYCHEDELIC KINDERGARTEN」，可直接證明是同一張碟的碟一。年份三方一致為 2001。⚠ 廠牌有衝突待店主裁定：輸入檔的 Discogs 查證記為水晶唱片 CIRD 1091，Apple 三個條目的 ℗ 版權行則寫 Scum Records（可能為製作方或現行數位授權方），本卡採「2001 年水晶唱片 CIRD 1091」的實體事實。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 迷幻幼稚園／《Psychedelic Kindergarten》。團名別名：Psychedelic Kindergarten（MB artist 3c98139f 的英文 alias，primary=true；Apple 的 artistName 直接並寫成「迷幻幼稚園 Psychedelic Kindergarten」）、簡體誤寫 迷幻幼稚园。依規則 3 中英並存取中文為主名，但本作專輯名本身就是英文（封面美術只印 PSYCHEDELIC KINDERGARTEN，無並列中文），故 artist 用中文、album 維持英文，兩者不衝突。專輯別名（極重要，全是 Apple 拆碟造成的）：話 Vol.1（Apple TW cid 1685767496，碟一 9 軌）、Words 話 Vol.2（cid 1669926853，碟二 5 軌）、話（合稱）、單曲〈短暫的快樂〉(cid 1767360657)，三者合計還原實體雙碟 15 軌，日後不可各自開卡。⚠ 英文名 Psychedelic Kindergarten／Kindergarten 是高頻詞，MB RG 搜尋會撈到 Zwecklos、Dutch Interior 等同名盤，自動比對必須鎖 MB artist 3c98139f 或 2001＋CIRD 1091。⚠ 廠牌兩說：實體記水晶唱片 CIRD 1091，Apple 版權行寫 Scum Records，兩者皆登記。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/02/4e/85/024e853b-d8cb-5600-3026-e20389285481/732138186935_cover.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 1685767496（掛的專輯名是《話 Vol.1》，見 preview-manual 說明的拆碟原因）1000x1000bf，實測 200、167,472 bytes、1000×1000（原生 3000×3000），已用 Read 目視。畫面：高反差黑白照片，白底上是幾件掛著／垂落的深色布料或衣物剪影（質地粗糙、像過曝翻拍的曬衣或人形），左上隱約有一張人臉的殘影，中間有一撮羽毛狀黑色筆觸；左下角白色無襯線粗體兩行大字『PSYCHEDELIC KINDERGARTEN』。**關鍵確認：Apple 雖然把專輯名改成《話 Vol.1》，封面美術印的卻正是《PSYCHEDELIC KINDERGARTEN》**，可直接證明它就是 CIRD 1091 的碟一封面。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 2,
+        "obscurity": 5,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；水晶唱片晚期目錄裡的補充盤，二手文獻幾近於零、MB 名下零張錄音；作品本身無可查證的樂史地位，但冷門度到收藏家等級。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "listeners 在本環境取不到，依店規 pearl 一律 false。疑似 pearl，待店主補 listeners 覆核：MB 有 artist 但 release-group 為 0，中文維基無條目，實體早已絕版。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1995年成軍於台北的樂團，MusicBrainz只登記了團名與英文別名Psychedelic Kindergarten，名下一張錄音都沒有。實體是2001年水晶唱片編號CIRD 1091的雙碟，十五首歌；數位版被拆成《話 Vol.1》九首、《Words 話 Vol.2》五首與單曲〈短暫的快樂〉三個條目，版權標記為Scum Records。曲名有〈別搞上我〉〈台北〉〈睡覺歌〉〈Hotelu〉〈來世〉，封面是高反差黑白的垂掛衣物翻拍。",
+        "sourceUrls": [
+          "https://musicbrainz.org/artist/3c98139f-03a7-4cf1-87fd-61f4c6e123f9",
+          "https://music.apple.com/tw/album/%E8%A9%B1-vol-1/1685767496",
+          "https://zh.wikipedia.org/wiki/水晶唱片"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/38/b1/12/38b112db-3794-904c-543c-2b88172e5519/mzaf_11120464534111796101.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1685767496,
+        "appleCollectionName": "話 Vol.1"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "Apple 三個數位條目 releaseDate 皆為 2001（Vol.1 2001-04-01、Vol.2 2001-01-01），版權行 ℗ 2001；輸入檔 Discogs 查證亦為 2001 年水晶唱片 CIRD 1091。策展年 2001 無誤。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "水晶唱片 CIRD 1091，水晶最後階段（2001 年）出版的迷幻搖滾團，與同年的 1976《愛的鼓勵》、濁水溪《臭死了》、停看聽《Stop Look Listen》同批，是水晶關門前那一波的橫切面。",
+        "curatorRisk": "MB 查無（以「迷幻幼稚園」查詢無結果），須走人工身分路線；僅 Discogs 水晶目錄一個來源，團史敘述資料極少。屬補充性質，若查不到二手資料可先不上。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "四分衛",
+      "album": "Deep Blue",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "64db7c0f-bf0c-485f-b8eb-a4b415c13c63",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 四分衛／《Deep Blue》。團名別名：四分衛樂團（中文維基條目名）、Quarterback（官方英文名）、前身團名 Hexagon六角形（1993–1995，不同 artist 不可吸收）。⚠「四分衛」同時是美式足球位置，中文維基主條目〈四分衛〉即該位置，樂團在〈四分衛樂團〉；純中文比對雜訊極高，必須鎖 MB artist 或 2001＋動能音樂。專輯別名：Deep Blue 是高頻英文詞組（MB 同名 RG 眾多），比對一律鎖 artist；中文維基另列未經查證的《Deep Blue（全新改版）》(2001-10) 與《四分衛EP》，若日後補卡需另行裁定，不可當本卡再版自動合併。同團 1999《起來》（角頭，2020 年黑膠 TCMLP-202003）為另一張卡。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/0f/66/7d0f660b-d5a0-7bda-dd7c-6eab127028d6/COVER-0103.jpg/600x600bb.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "CAA 的 release-group 與 release 兩層皆無圖；改用已通過配對的 Apple 條目（1446707308）官方封面",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三度入圍金曲獎最佳樂團的台灣搖滾團，本作為第二張、入圍第13屆；旋律直白的國語搖滾，樂迷領域內知名度中上。"
+      },
+      "rarity": "rare",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "金曲獎為入圍非得獎，樂團地位在台灣搖滾史屬主要而非核心，跨來源長期共識不足以列殿堂。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1995年由前身Hexagon六角形改組的四分衛，1999年以《起來》在角頭音樂出道，2001年9月轉到動能音樂發行第二張《Deep Blue》，隔年三月入圍第13屆金曲獎最佳樂團。曲序從〈ㄋㄠ種〉〈魔毯〉〈項鍊〉進入樂團傳唱最久的〈雨和眼淚〉，後半有〈Lizard King〉〈銀河鐵道〉，末尾以〈十月病〉與同名曲收束。2002年1月他們並獲Channel V華語榜中榜「特別推薦新浪潮樂團」。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/四分衛樂團",
+          "https://musicbrainz.org/release-group/64db7c0f-bf0c-485f-b8eb-a4b415c13c63"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/57/66/31576695-7fd8-f231-c46b-58102d0c6474/mzaf_3932451957609621919.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1446707308,
+        "appleCollectionName": "Deep Blue"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "MB first-release 2001-09-01、Apple releaseDate 2001-09-01、中文維基〈四分衛樂團〉沿革記「2001年9月，發行第二張專輯《Deep Blue》」，三方一致。",
+        "mbTitle": "Deep Blue",
+        "mbArtist": "四分衛",
+        "mbFirstRelease": "2001-09-01",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "動能音樂發行，第13屆金曲獎最佳樂團入圍（同屆入圍還有刺客《惡之華》、五月天《人生海海》）。卡池已有 1999《起來》（角頭），這張是四分衛從角頭走向動能後的代表作。2020 年角頭把《起來》做成黑膠 TCMLP-202003，這條線在實體上是有黑膠可對照的。",
+        "curatorRisk": "MB 已建檔（四分衛／Deep Blue／2001-09-01）。專輯名是常見英文詞組，MB 同名極多，要鎖 artist。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "Various Artists",
+      "album": "少年ㄞ國",
+      "identity": {
+        "releaseType": "Compilation",
+        "exceptionReason": "角頭音樂編號 015 的台灣獨立樂團合輯，是 2000 年代本地獨立場景的入口文獻：蘇打綠主唱青峯生平第一首創作〈窺〉、八十八顆芭樂籽、回聲樂團、旺福的早期錄音都只在這張以此形態流通，非促銷拼盤或重複包裝的精選。",
+        "exceptionEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/蘇打綠_(專輯)",
+          "https://zh.wikipedia.org/wiki/回聲樂團",
+          "https://zh.wikipedia.org/wiki/八十八顆芭樂籽"
+        ],
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?query=少年ㄞ國&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=少年ㄞ國 Taiwan Independent Compilation&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=Taiwan Independent Compilation 2001&fmt=json",
+            "MB RG 搜尋前 4 名為 李宇春《少年中国》、R指定《國立少年》、Qwai《少年》、黒夢《少年》，全非本輯"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB 查無。注意 李宇春《少年中国》分數 100，是注音符號『ㄞ』被搜尋引擎丟掉後產生的假陽性，已排除。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/蘇打綠_(專輯)",
+          "https://zh.wikipedia.org/wiki/回聲樂團",
+          "https://zh.wikipedia.org/wiki/八十八顆芭樂籽",
+          "https://music.apple.com/tw/album/%E5%B0%91%E5%B9%B4%E3%84%9E%E5%9C%8B/706739650"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 走人工身分路線。MB 全庫查無：以「少年ㄞ國」「少年ㄞ國 Taiwan Independent Compilation」「Taiwan Independent Compilation 2001」查 RG，前四名為李宇春《少年中国》、R指定《國立少年》等，係注音符號「ㄞ」(U+3116) 被搜尋引擎丟棄後的假陽性，已排除。改以三方交叉定身分：(1) Apple TW cid 706739650《少年ㄞ國》(群星, 2001-10-01, 12 軌)，artwork 原始檔名「TCM015_4000x4000.jpg」＝角頭音樂 Taiwan Colors Music 編號 015；(2) 以 entity=song 拉出的 12 軌逐首藝人為 劉意韻／八十八顆芭樂籽／蘇打綠／So What／強辯樂團／噬菌體／複製人／回聲樂團／雪莉樂／E-Cup／牙套／旺褔，與封面、編號相符；(3) 中文維基〈回聲樂團〉記該團「參加了崩代紀事(水晶唱片)和少年ㄞ國(角頭音樂)兩張合輯的錄製」、收錄曲〈繞〉，〈蘇打綠 (專輯)〉記〈窺〉「在專輯發行前就曾在2001年參加《少年ㄞ國》合輯」，〈八十八顆芭樂籽〉合輯欄記「2001年：《少年ㄞ國》（又名：ㄞ國歌曲2），角頭唱片發行」，三個獨立條目互相印證參與名單與年份。已明確排除角頭 1999 年編號 000 的《Taiwan Independent Compilation (ㄞ國歌曲)》(Apple cid 706576201, 10 軌)。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 Various Artists／《少年ㄞ國》。別名：Taiwan Independent Compilation 2001（封面下緣英文，小寫排版）、ㄞ國歌曲2（中文維基〈八十八顆芭樂籽〉合輯欄的別稱）、少年愛國（注音渲染失敗後的誤寫，絕不可採用）。artist 別名：Apple 掛「群星」，MB／英文語境作 Various Artists，卡片用 Various Artists。⚠ 注音符號「ㄞ」為 U+3116，是作品名的一部分，鍵值正規化不可改寫成「愛」，否則變成另一個作品；封面檔名與 slug 亦要實測。⚠ 角頭另有 1999 年編號 000 的《Taiwan Independent Compilation (ㄞ國歌曲)》(Apple cid 706576201, 10 軌)，是不同一張，不可合併。⚠ 本輯收錄的〈時鐘裡的人〉屬八十八顆芭樂籽，該團同批另有 88顆芭樂籽／88 Balaz／88balaz／88Balaz 四種寫法，去重時要一併 grep。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/14/c7/0d/14c70d91-55e6-e8d6-694b-a04375eb29d7/TCM015_4000x4000.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 706739650（artist 掛『群星』），artwork 原始檔名『TCM015_4000x4000.jpg』＝角頭音樂編號 015，與 Discogs 11942976（Taiwan Colors Music, 015, 2001）完全對上，也同時排除了 1999 年那張編號 000 的《ㄞ國歌曲》(Apple cid 706576201)。1000x1000bf 實測 200、222,763 bytes、1000×1000，已用 Read 目視。畫面：飽和的亮藍色背景，中央是一名赤裸上身、留西瓜皮短髮的小男孩黑白半身照，微低頭斜眼看鏡頭，一支長棍／木棒斜擺過他的臉前，左下另有一把白色帶護手的短劍／木劍指向他；照片上疊白色手寫毛筆大字『少年ㄞ國』（注音符號『ㄞ』是藍色、與其餘三字的白色形成對比），最下緣橫排藍色小寫英文『taiwan independent compilation 2001』。無側標／腰帶／貼紙／盒邊／浮水印／簽名，正方。上架提醒仍然成立：檔名與鍵值含注音『ㄞ』(U+3116)，卡面渲染與搜尋要實測。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角頭音樂編號 015，是 2000 年代台灣獨立樂團的入場合輯，蘇打綠、八十八顆芭樂籽、回聲樂團、旺福的早期錄音皆出於此；資料可查但屬深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "合輯本身在台灣獨立場景有明確位置，但缺乏跨來源長期共識足以列入樂史核心，不列殿堂；曲目為直白的搖滾與流行，也不構成異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "角頭音樂2001年的編號015，封面下緣印著taiwan independent compilation 2001。十二組樂團各出一首：第三軌〈窺〉是蘇打綠主唱青峯寫下的第一首歌，比他們2005年的首張專輯早了四年；第二軌〈時鐘裡的人〉是八十八顆芭樂籽，第八軌〈繞〉是回聲樂團，末軌〈小綿羊趕集〉是旺福。其餘收劉意韻、強辯樂團、噬菌體、複製人、雪莉樂、E-Cup、牙套與So What。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/蘇打綠_(專輯)",
+          "https://zh.wikipedia.org/wiki/回聲樂團",
+          "https://zh.wikipedia.org/wiki/八十八顆芭樂籽"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/4a/34/55/4a34557d-2ca7-8f7a-813f-4018bd5e7aef/mzaf_6185357567482247308.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 706739650,
+        "appleCollectionName": "少年ㄞ國"
+      },
+      "research": {
+        "suggestedYear": 2001,
+        "yearNote": "Apple releaseDate 2001-10-01、版權行 ℗ 2001；中文維基〈八十八顆芭樂籽〉與〈回聲樂團〉皆記 2001 年角頭音樂發行；輸入檔 Discogs 查證亦為 2001。策展年 2001 無誤。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "角頭音樂編號 015，英文名 Taiwan Independent Compilation 2001（1999 年先有編號 000 的《ㄞ國歌曲》）。角頭這一系列合輯是 2000 年代台灣獨立樂團的入場券——四分衛、濁水溪公社、陳建年、88顆芭樂籽、夾子電動大樂隊都出自這條線。",
+        "curatorRisk": "MB 查無，須走人工身分路線。專輯名含注音符號「ㄞ」，字型與輸入在部分環境會出問題，鍵值與封面文字都要測。VA 合輯規則同上。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "甜梅號",
+      "album": "金光之鄉",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "460fb4b4-7407-4ca9-8d15-1bc5ae24a860",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 甜梅號／《金光之鄉》。團名別名：Sugar Plum Ferry（官方英文，早期一度作 Sugar Plum Fairy）、微光群島／Shimmering Islands（2014 年改名，2015 解散）、四分之三搖籃曲（2014 年 3 月至 7 月的暫用團名）。依規則 3 中英並存取中文，英文與後期團名只進別名；⚠ 微光群島名下的出版品若日後補卡屬不同時期自稱，不可與甜梅號併卡。專輯名《金光之鄉》為中文單一寫法，MB 與 Apple 一致，未見英文副標。⚠ 吉他手昆蟲白（黃建勳）另有個人卡（本批《刺青》），是不同 artist。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/460fb4b4-7407-4ca9-8d15-1bc5ae24a860/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一代後搖滾代表團的收尾之作，樂團地位高於本作單張地位；全器樂、長篇鋪陳，屬樂迷以上領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團在台灣後搖滾有明確開創位置，但本作為末期作品且缺乏跨來源長期共識，不足列殿堂；器樂搖滾不構成異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1998年成軍的甜梅號，團名來自約翰．藍儂錄音時連念三次的Sugar Plum Fairy，被瓢蟲樂團鼓手聽成ferry。2013年12月由風和日麗唱片行發行的雙CD九曲，是他們以此團名留下的最後一張錄音室作品——2014年改名微光群島，2015年8月宣告解散。全器樂，曲名如〈關閉罐頭工廠〉〈時區重組工具〉〈月娘總是照著我們〉。台上不擺麥克風、奏完直接走下舞台，是他們一貫的作風。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/甜梅號",
+          "https://musicbrainz.org/release-group/460fb4b4-7407-4ca9-8d15-1bc5ae24a860"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d0/fa/9b/d0fa9b4a-850c-4559-8329-7d9bf66c42d6/mzaf_13738806241894187594.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1534719883,
+        "appleCollectionName": "金光之鄉"
+      },
+      "research": {
+        "suggestedYear": 2013,
+        "yearNote": "MB first-release 2013-12-13、Apple releaseDate 2013-12-13、中文維基〈甜梅號〉專輯表記「2013年12月13日(臺灣)，風和日麗唱片行」，三方一致。",
+        "mbTitle": "金光之鄉",
+        "mbArtist": "甜梅號",
+        "mbFirstRelease": "2013-12-13",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "甜梅號解散前的最後一張錄音室專輯（MB：2013-12-13），為台灣後搖滾第一代收尾。卡池已有 2001 與 2010 兩張，這張補完首尾。",
+        "curatorRisk": "MB 已建檔。中英名 甜梅號／Sugar Plum Ferry 並存。屬補充性質。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "八十八顆芭樂籽",
+      "album": "比獸還帥",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "94a8fd83-d371-4574-993e-b7ac029a1a0d",
+        "upc": "",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 八十八顆芭樂籽／《比獸還帥》，依裁定表改掉策展寫法「88顆芭樂籽」。團名別名共五種寫法必須全部登記以免 grep 漏掉：88顆芭樂籽、88 Balaz、88 balaz、88balaz、88Balaz（中文維基 infobox「原名」欄為八十八顆芭樂籽、「英文名」欄為 88balaz，內文又作 88 balaz；MB artist 2452f0f8 主名為八十八顆芭樂籽、alias 88 Balaz）。專輯別名：Handsome Than An Animal（Discogs 英文副標）。⚠ 最危險的一字之差：同團 2010《比獸還壞》（2011 年第2屆金音創作獎最佳樂團／最佳搖滾專輯入圍）是另一張碟，日後補卡不可重登。⚠ 策展 risk 誤記「MB 查無」，實為 MB 以中文全名建檔（用「88顆芭樂籽」搜不到），本卡已鎖 RG 94a8fd83。"
+      },
+      "cover": {
+        "url": "https://coverartarchive.org/release-group/94a8fd83-d371-4574-993e-b7ac029a1a0d/front",
+        "source": "caa",
+        "httpStatus": 307,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 3,
+        "obscurity": 4,
+        "accessibility": 3,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "樂團在台灣地下場景資歷深，但本作僅獲金音創作獎入圍，跨來源長期共識不足以列殿堂；粗礪但仍屬常規搖滾結構，非異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "1996年成軍、2001年拿下第二屆海洋音樂祭海洋大賞的台北樂團，2012年8月推出的專輯。十首曲目從同名曲〈比獸還帥〉開場，接〈態度〉〈我是狗你是我的母狗〉〈Jimi & Mary〉，收在〈吃一些蘑菇變成大瑪莉歐之類的〉與〈脾氣不好的魚〉的Kingfisher混音。同名曲入圍第3屆金音創作獎最佳搖滾單曲；前一張2010年《比獸還壞》名字只差一字，是另一張碟。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/八十八顆芭樂籽",
+          "https://musicbrainz.org/release-group/94a8fd83-d371-4574-993e-b7ac029a1a0d"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/73/0e/22730ea0-ea35-e46a-b0c0-33320afed5dd/mzaf_6050792638966753717.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 1282870443,
+        "appleCollectionName": "比獸還帥"
+      },
+      "research": {
+        "suggestedYear": 2012,
+        "yearNote": "MB release 2012-08-06 (TW, catno GBR-004)；中文維基〈八十八顆芭樂籽〉專輯表記 2012 年；Apple 條目 releaseDate 2012-06-01 為數位上架日，較實體早，不採。策展年 2012 無誤。",
+        "mbTitle": "比獸還帥",
+        "mbArtist": "八十八顆芭樂籽",
+        "mbFirstRelease": "2012-08-06",
+        "upcNote": "releases=1，皆無有效條碼",
+        "curatorWhy": "禾廣（Hove）發行，英文名 Handsome Than An Animal，母帶在 West West Side Music 做——是台灣獨立團少數送海外做母帶的案例。承接 2008 角頭《The 44 Stone Lions》之後的代表作。",
+        "curatorRisk": "MB 查無，須走人工身分路線。團名四種寫法（88顆芭樂籽／八十八顆芭樂籽／88 Balaz／88Balaz）。Discogs 該筆 catno 為 none。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    },
+    {
+      "artist": "好客樂隊",
+      "album": "愛吃飯",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "",
+        "upc": "",
+        "identitySource": "manual",
+        "mbAbsenceProof": {
+          "queries": [
+            "https://musicbrainz.org/ws/2/release-group?artist=50f0cbe4-7ffe-4944-9281-9a627fd085f7&fmt=json&limit=100",
+            "https://musicbrainz.org/ws/2/artist?query=好客樂隊&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=愛吃飯&fmt=json",
+            "https://musicbrainz.org/ws/2/release-group?query=好客愛吃飯&fmt=json"
+          ],
+          "checkedAt": "2026-08-23T07:50:38.711Z",
+          "conclusion": "MB artist 好客樂隊 = 50f0cbe4-7ffe-4944-9281-9a627fd085f7（country TW，aliases 好客愛吃飯／The Hohak Band）**全目錄只有 1 張**：2020《好客戲》（已自動配對）。2008 這張查無；RG 搜《愛吃飯》只撈到 旅行团《等你吃饭》、赵照《回家吃饭》等雜訊。走人工身分路線。"
+        },
+        "manualEvidenceUrls": [
+          "https://zh.wikipedia.org/wiki/好客樂隊",
+          "https://music.apple.com/tw/album/%E6%84%9B%E5%90%83%E9%A3%AF/657339434",
+          "https://www.taipeitimes.com/News/feat/archives/2005/12/29/2003286549/3"
+        ],
+        "manualRuling": "依 ALBUM_ONBOARDING §1 走人工身分路線。MB 查證結果：artist 好客樂隊 50f0cbe4-7ffe-4944-9281-9a627fd085f7（country TW、aliases 好客愛吃飯／The Hohak Band）確實存在，但名下 release-group 只有一筆 2020《好客戲》，2008 這張查無；以《愛吃飯》《好客愛吃飯》查 RG 只撈到旅行团《等你吃饭》、赵照《回家吃饭》等雜訊，確認 MB 無此碟。改以兩方交叉定身分：(1) 中文維基〈好客樂隊〉「相關出版專輯」欄記《愛吃飯》2008 年由風潮音樂發行／「愛吃飯創作合作社」，曲目表 10 軌（晴時多雲／如果我／焚風(演奏曲)／風／自由飛／暈船／踩下去／萬安晚安／晴時多雲(演奏曲)／驟雨之後(演奏曲)），並記 2009 年 6 月《愛吃飯》獲第 20 屆金曲獎最佳客語流行音樂演唱專輯獎；(2) Apple TW cid 657339434《愛吃飯》10 軌與該曲目表逐首同名同序，版權行 ℗ 2008 WIND MUSIC International Corporation（＝風潮音樂）、artwork 原始檔名 TCD-9193 為風潮編號，封面實圖並印有「The Hohak Band」與「愛吃飯」。artist 一律寫好客樂隊：MB 誤把企劃名「好客愛吃飯」收成 artist alias、Apple 誤把 artist 掛成主唱個人名「陳冠宇」，兩者皆不採。",
+        "coverSourceHint": "manual",
+        "aliasesChecked": true,
+        "aliasReview": "卡片正名 好客樂隊／《愛吃飯》。團名別名：The Hohak Band（官方英文，封面實印）、好客樂團（媒體常見誤寫）、⚠ 好客愛吃飯——這是 2006 年底陳冠宇召集導演、攝影師、音樂家與民謠歌者組成的企劃團體「愛吃飯創作合作社」衍生的稱呼，MB artist 50f0cbe4 誤收為團名 alias，卡片 artist 一律寫好客樂隊。Apple TW 把 artist 掛成主唱個人名「陳冠宇」，亦只進別名。專輯名《愛吃飯》為中文單一寫法，封面另印手寫英文 Rice of Love（版面裝飾，非正式副標）。⚠「愛吃飯」是日常用語，中文比對雜訊極高（旅行团《等你吃饭》等），自動比對必須連 2008＋風潮音樂／TCD-9193 一起鎖。⚠ 同團 2005《好客戲》（角頭音樂，2006 年第 17 屆金曲獎最佳客語專輯、2005 年 Taipei Times 年度十大專輯）為另一張卡，且 MB 該 RG 的 2020 應為再版年，該卡年份請店主一併覆核。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/f1/99/f4/f199f42a-6f88-069b-c52d-c3627e073a9a/TCD-9193.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "Apple TW cid 657339434（Apple 把 artist 掛成主唱『陳冠宇』），artwork 原始檔名『TCD-9193.jpg』＝風潮音樂的 TCD 編號，與中文維基所記『2008 年由風潮音樂發行』相符。1000x1000bf 實測 200、279,962 bytes、1000×1000（原生 1657×1489，約 1.11:1，接近正方），已用 Read 目視。畫面：右側四分之三是一大張彩色稻田照——前景整片翠綠稻浪與田埂，中景農舍與田區，遠景是雲霧繚繞的山脈；左側四分之一是白色直條版面，由上而下依序是 WIND MUSIC（風潮）圓形 logo、一列四格插秧動作的連續小照片、直書手寫英文『Rice of Love』、小字『The Hohak Band』、一雙筷子與一碗白飯的線描插圖、以及棕色毛筆大字『愛吃飯』，最下方另一張團員合照小圖。白色直條是封面版面設計的一部分（不是側標／腰帶／貼紙）。無盒邊／浮水印／簽名。註：封面英文團名印的是『The Hohak Band』，可補進 aliasReview。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第20屆金曲獎最佳客語流行音樂演唱專輯獎得獎作，是客語音樂領域公認的主要作品；曲調明亮好入耳，但客語與獨立發行讓它停在深度愛好者領域。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "金曲獎客語專輯獎為單一體系內的獎項，缺乏跨來源長期共識足以列入樂史核心，故不列殿堂；明亮的民謠編曲亦不構成異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "2003年成軍的好客樂隊，陳冠宇、鍾成達、郭進財三人來自觀子音樂坑與交工樂隊，以客家民謠為骨幹，編制裡有郭進財被稱作「第一支」的嗩吶、蕭詩偉的胡琴與柯智豪的電吉他。2006年底陳冠宇另組「愛吃飯創作合作社」，找來以莉．高露等民謠歌者共唱，2008年11月由風潮音樂發行這張十首（含三首演奏曲）的作品，隔年拿下第20屆金曲獎最佳客語流行音樂演唱專輯獎，並入圍最佳樂團。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/好客樂隊",
+          "https://music.apple.com/tw/album/%E6%84%9B%E5%90%83%E9%A3%AF/657339434"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/21/74/1a/21741a20-4682-e4f9-9a94-bcc1396d64f8/mzaf_16721225856033498288.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T08:52:19Z",
+        "appleCollectionId": 657339434,
+        "appleCollectionName": "愛吃飯"
+      },
+      "research": {
+        "suggestedYear": 2008,
+        "yearNote": "中文維基〈好客樂隊〉曲目表記「發行日期: 2008年11月(臺灣)」、出版列表記 2008 年風潮音樂；Apple releaseDate 2008-11-26、版權行 ℗ 2008 WIND MUSIC。策展年 2008 無誤（獲獎在 2009 年 6 月的第 20 屆金曲獎，非發行年）。",
+        "mbTitle": "",
+        "mbArtist": "",
+        "mbFirstRelease": "",
+        "upcNote": "",
+        "curatorWhy": "風潮音樂發行，2009 年第20屆金曲獎最佳客語專輯獎得獎作（同時入圍最佳樂團），是好客樂隊繼《好客戲》後第二度拿下客語專輯獎。",
+        "curatorRisk": "MB 查無（MB 上好客樂隊只有一筆 2020《好客戲》），須走人工身分路線。專輯名「愛吃飯」是日常用語，中文比對雜訊高。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}

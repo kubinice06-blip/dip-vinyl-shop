@@ -13,7 +13,8 @@ const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
 const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual']);
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
-const EXCEPTION_GENRES = new Set(['electronic']);
+// asia-mini-album（2026-08-23）：日本ミニアルバム與韓國正規 EP，MB 標 EP 但母國市場當專輯發行
+const EXCEPTION_GENRES = new Set(['electronic', 'asia-mini-album']);
 // 外部識別硬規則（2026-07-24 起新開批次適用）：新卡一律記 release-group MBID，
 // 讓「當初指的是哪張碟」不再單點依賴 Apple collectionId。生效日之前的批次不回溯檢查。
 const MBID_RULE_EFFECTIVE = '2026-07-24';
@@ -221,6 +222,14 @@ for (let index = 0; index < albums.length; index++) {
   else {
     if (identity.releaseType === 'Album') {
       // 正規專輯：照原規則
+    } else if (identity.releaseType === 'Compilation') {
+      // 重要合輯／精選集（2026-08-21 店主核定）：全曲風開放、不需 genreException，
+      // 但採精選制——必須舉證歷史重要性（見 ALBUM_ONBOARDING §5.6）
+      if (charCount(identity.exceptionReason) < 12) err(label, 'Compilation 必須在 identity.exceptionReason 說明該合輯的歷史重要性（≥12 字）');
+      const cev = identity.exceptionEvidenceUrls;
+      if (!Array.isArray(cev) || cev.filter(u => isHttps(u)).length < 2) {
+        err(label, 'Compilation 採精選制：identity.exceptionEvidenceUrls 至少需要兩個 HTTPS 證據網址');
+      }
     } else if (EXCEPTION_RELEASE_TYPES.has(identity.releaseType)) {
       // 曲風例外（白名單制）：非 Album 只開放給特定曲風，且走精選制
       if (!EXCEPTION_GENRES.has(identity.genreException)) {
@@ -232,7 +241,7 @@ for (let index = 0; index < albums.length; index++) {
         err(label, '非 Album 例外採精選制：identity.exceptionEvidenceUrls 至少需要兩個 HTTPS 證據網址');
       }
     } else {
-      err(label, `identity.releaseType 必須是 Album，或白名單曲風的例外類型（${[...EXCEPTION_RELEASE_TYPES].join('／')}）`);
+      err(label, `identity.releaseType 必須是 Album、Compilation（重要合輯精選制），或白名單曲風的例外類型（${[...EXCEPTION_RELEASE_TYPES].join('／')}）`);
     }
     if (identity.aliasesChecked !== true) err(label, '必須完成跨文字系統／artist-credit 別名檢查');
     if (charCount(identity.aliasReview) < 10) err(label, 'identity.aliasReview 必須留下人工檢查結論');
