@@ -390,12 +390,23 @@ if (publishedMode && errors.length === 0) {
     }
 
     const overrideResult = await getJson(`${FIRESTORE}/album_overrides/${docId}`, `${label} album_overrides`, { allow404: true });
-    if (overrideResult.data) {
-      const fields = firestoreFields(overrideResult.data);
+    const overrideFields = overrideResult.data ? firestoreFields(overrideResult.data) : null;
+    // tier 與試聽是兩件獨立的事，只是共用同一份文件。
+    // 頂級牌經後台「入庫」寫進來的文件只有 {artist, album, tier, updatedAt}（admin.html:3597／3653），
+    // 完全沒有 preview 欄位——舊寫法一看到文件存在就要求試聽也在裡面，
+    // 於是每一張走靜態試聽路徑的頂級牌都會被誤報成 previewStatus／previewUrl 不符
+    // （2026-08-28 實測：店主匯入頂級牌後，c-29 的三張 hall 卡全中）。
+    // tier 照樣在文件存在時驗；試聽則只有在文件真的帶了 preview 欄位時才以它為準。
+    if (overrideFields && row.published.apexPool && overrideFields.tier !== row.apexAssessment.tier) {
+      err(label, 'album_overrides.tier 不一致');
+    }
+    const overrideHasPreview = !!overrideFields
+      && (clean(overrideFields.previewStatus) || clean(overrideFields.previewUrl));
+    if (overrideHasPreview) {
+      const fields = overrideFields;
       if (fields.previewStatus !== row.preview.status) err(label, `album_overrides.previewStatus 應為 ${row.preview.status}`);
       if (row.preview.status === 'ready' && fields.previewUrl !== row.preview.url) err(label, 'album_overrides.previewUrl 不一致');
       if (row.preview.status !== 'ready' && clean(fields.previewUrl)) err(label, '負面試聽狀態不應留 previewUrl');
-      if (row.published.apexPool && fields.tier !== row.apexAssessment.tier) err(label, 'album_overrides.tier 不一致');
     } else {
       // 靜態路徑（與 album_overrides 等價，見 ALBUM_ONBOARDING.md §6）：
       // ready → data/apple-audio-runtime-v1.json 需有相同 previewUrl；

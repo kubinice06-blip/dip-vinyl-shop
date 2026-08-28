@@ -952,10 +952,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "Dylan 的證言與 Vee-Jay 首作地位都查得到，但本環境查不到名榜單或名人堂級的跨來源長期共識，依預設先作一般卡，殿堂資格留給店主裁定。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：Vee-Jay 廠牌的第一張 12 吋福音 LP（1959，VJLP-5000），收錄 1956–59 年錄音；Bob Dylan 具名稱同名曲是「我聽過最神祕的東西」；Pops Staples 的顫音吉他與 Mavis Staples 的低音被視為後世靈魂樂的源頭之一。不只是結集，是一條廠牌福音線的開端。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Uncloudy_Day_(album)",
+          "https://en.wikipedia.org/wiki/The_Staple_Singers"
+        ]
       },
       "description": {
         "text": "Vee-Jay 於 1959 年以 VJLP 5000 發行，是這個芝加哥家族團體的首張專輯，陣容為父親 Roebuck「Pops」Staples 與子女 Cleotha、Pervis、Mavis。Pops 的電吉他掛著極深的顫音，音符邊緣一直在抖，配上慢到近乎停滯的拍子與 Mavis 異常低的女聲，〈Uncloudy Day〉〈Let Me Ride〉這類傳統聖歌聽起來陰而空。Bob Dylan 在 2015 年說那是他聽過最神祕的東西，並稱 Mavis 的歌聲深而神祕。十二首曲目多為傳統聖歌改編。",
@@ -987,8 +990,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2339,10 +2342,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "跨來源的樂評推崇確實存在（AllMusic、No Depression 等），但本環境查不到名榜單、名人堂或國家錄音登記簿級的正式認定，保守起見暫不列殿堂，建議店主日後補查 Uncut 1950 年代五百大等榜單後重評。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：AllMusic 稱之為 Louvin 兄弟的代表作，是鄉村樂史上最早的概念專輯之一；兄弟倆的和聲影響鏈具名可追——Everly Brothers、Simon & Garfunkel、Eagles、CSNY。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Satan_Is_Real",
+          "https://americana-uk.com/classic-americana-albums-the-louvin-brothers-satan-is-real-capitol-records-1959"
+        ]
       },
       "description": {
         "text": "製作人 Ken Nelson 1958 年 8 月排了連續七天的 session、一口氣錄下二十多首，拆成《Country Love Ballads》與這張聖歌盤，1959 年由 Capitol 以 T1277 發行。Ira 與 Charlie 的近距離兄弟和聲幾乎不留空隙，標題曲三分鐘裡只唱兩段副歌，其餘全是描述撒旦如何逼近的口白。Gram Parsons、Johnny Cash 與 Emmylou Harris 日後都唱過片中的曲子。封面由 Ira 自己設計：兄弟倆穿白西裝站在採石場，身後是十二英尺高的三夾板惡魔與浸過煤油點燃的輪胎。",
@@ -2374,8 +2380,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -3150,10 +3156,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "兩份五星樂評與葛萊美入圍指向殿堂級共識，但本環境無法直接讀取 AllMusic 原頁（網域被擋），證據只有維基轉述，暫不升頂點、留待補證。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：AllMusic 與 Encyclopedia of Popular Music 兩個獨立專業來源同時給滿分五星，1984 年獲葛萊美最佳錄音工程入圍；AllMusic 樂評 Daniel Gioffre 稱其為史上最好的原聲吉他專輯之一。原評估因無法直接讀取 AllMusic 原頁（網域被擋）而暫緩。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Aerial_Boundaries",
+          "https://en.wikipedia.org/wiki/Michael_Hedges"
+        ]
       },
       "description": {
         "text": "1984 年 Windham Hill 發行，Will Ackerman、Steven Miller 與 Hedges 共同製作。多數曲目是不疊軌的一人獨奏：右手點弦、左手搥弦，配上大量開放調弦，同時撐住低音、和聲與旋律三層；〈After the Gold Rush〉與〈Ménage À Trois〉另加 Michael Manring 的無格貝斯，後者再加 Mindy Rosenfeld 的長笛。本作入圍葛萊美最佳非古典錄音工程，英文維基引述的樂評焦點放在寫作而非炫技。",
@@ -3186,8 +3195,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -7809,10 +7818,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "Ellis 的 rocksteady 定義性地位與 2004 年牙買加傑出勳章都有記載，這張也常被視為該樂種代表盤，但本環境（AllMusic、Discogs 網頁皆遭出口封鎖）拿不到兩個以上可追溯的長期樂評共識來源，先列一般卡，建議店主日後補證再升。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：Duke Reid 的 Treasure Isle 1967–70 年錄音，公認是 Ellis 的 Treasure Isle 定義盤，也是 rocksteady 這個樂種的代表作；Ellis 於 2004 年獲頒牙買加傑出勳章。原評估只是因遠端連不上 AllMusic 與 Discogs 而拿不到佐證。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://magazine.waxpoetics.com/rediscovery/alton-ellis-mr-soul-of-jamaica/",
+          "https://en.wikipedia.org/wiki/Mr_Soul_of_Jamaica"
+        ]
       },
       "description": {
         "text": "Duke Reid 在 Treasure Isle 錄下的 Ellis，伴奏固定是 Tommy McCook & The Supersonics——低音線寬鬆、管樂只在句尾補色，正是 rocksteady 把 ska 的急促拆掉後的樣子。這張 Treasure Isle 013 的十二軌收 1967 到 1970 年的單曲，〈Breaking Up〉〈Why Birds Follow Spring〉〈I Can't Stop Now〉都是當年的牙買加暢銷曲。Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品。",
@@ -7844,8 +7856,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -8945,10 +8957,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "U-Roy 開創 DJ 唱片形態的地位在維基條目有明確記載，但本環境查不到針對這張碟的名榜單或跨來源長期樂評共識，暫不升頂點，建議店主日後補查。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：史上第一張全部由 DJ version 構成的專輯。U-Roy 為 Duke Reid 灌錄的 1970 年單曲群引爆整個 toasting 風潮，被記載為永遠改變了雷鬼的聲音，並直接影響美國初生的 rap。一種唱片形態的起點。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://soundsoftheuniverse.com/sjr/product/version-galore-expanded-edition",
+          "https://unitedreggae.com/discographies/1970/u-roy-version-galore;1472/"
+        ]
       },
       "description": {
         "text": "Ewart Beckford 在 King Tubby 的 Hometown Hi-Fi 放音時，把 Duke Reid 的 rocksteady 舊帶抽掉人聲，自己在上面說唱。1970 年〈Wake the Town〉〈Rule the Nation〉〈Wear You to the Ball〉同時佔住牙買加兩家電台排行前三名，Trojan 隨即以 TBL 161 集成這張十二曲，Duke Reid 製作、Byron Smith 錄音，標籤掛名寫作 Hugh Roy。The Paragons 等原唱片段留在混音裡，與口白交替出現。",
@@ -8980,8 +8995,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -11041,10 +11056,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "坎城金棕櫚與兩項奧斯卡入圍都查得到，法國電影音樂地位穩固，但本環境查不到把這份錄音列入名榜單或名人堂級的跨來源長期共識，暫不列殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：同一份配樂在三個奧斯卡音樂類別同時入圍（最佳原創歌曲、最佳原創配樂、最佳改編配樂），影片獲坎城金棕櫚，〈I Will Wait for You〉等曲被 Tony Bennett、Oscar Peterson、Vince Guaraldi 等跨爵士與流行領域大量翻唱。AFI 榜只收美國電影，原否決理由不適用。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Umbrellas_of_Cherbourg",
+          "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Song"
+        ]
       },
       "description": {
         "text": "Jacques Demy 1964 年的《秋水伊人》全片沒有說白，所有對話都用唱的推進，Michel Legrand 以連續不斷的管弦樂把橫跨五年的故事縫成一體；演員多非受過訓練的歌手，歌聲由他人代唱後對嘴。1964 年 Philips 原始 LP（840.533 BY）收十七段。主題〈Devant le garage〉後來配上 Norman Gimbel 的英文詞成為〈I Will Wait for You〉，〈Récit de Cassard〉則成為〈Watch What Happens〉。本片拿下坎城金棕櫚，配樂與歌曲雙雙入圍奧斯卡。",
@@ -11076,8 +11094,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -11580,10 +11598,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "作曲家絕筆與電影的國家影片登記表地位都可查證，但本作未進美國電影學會百年百大配樂，也查不到其他名榜單或名人堂級的跨來源長期共識，暫不列殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：BAFTA 電影音樂獎與洛杉磯影評人協會最佳音樂兩項獨立獲獎（前者為追贈），另有奧斯卡與葛萊美入圍，AllMusic 4.5 星。Herrmann 錄完當日辭世的絕筆之作。原評估誤判為「僅單一獎項」。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Taxi_Driver_(soundtrack)",
+          "https://en.wikipedia.org/wiki/BAFTA_Award_for_Best_Film_Music"
+        ]
       },
       "description": {
         "text": "Bernard Herrmann 為馬丁史柯西斯 1976 年《計程車司機》寫下生前最後一份配樂，錄音完成數小時後他即於 1975 年 12 月 24 日過世，全片獻給他。史柯西斯說 Herrmann 是他的第一也是唯一人選，並認為這份音樂「提供了全片的心理基礎」。音樂在兩極之間擺盪：軍鼓與低音銅管堆出的行進音型對應 Travis 的偏執，慵懶的中音薩克斯風主題則屬於他想像中的城市夜色。1976 年 Arista 原始 LP（AL 4079）收十軌，把配樂片段與 Herrmann 為唱片另行編排的長段落並置。",
@@ -11615,8 +11636,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -11921,10 +11942,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "奧斯卡最佳原創配樂獲獎紀錄明確，但本作未列入美國電影學會百年百大配樂，單一獎項不足以構成殿堂所要求的跨來源長期共識，暫列一般卡並保留日後補證空間。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：奧斯卡最佳原創配樂獲獎，是 Goldsmith 生涯唯一一座；葛萊美入圍；並且確實進入過 AFI 百年百大配樂的提名名單，只是未進最終 25 名——原評估寫「未列入 AFI」與事實不符。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Omen_(soundtrack)",
+          "https://en.wikipedia.org/wiki/AFI%27s_100_Years_of_Film_Scores"
+        ]
       },
       "description": {
         "text": "Jerry Goldsmith 為 1976 年《天魔》寫的配樂替他拿下生涯唯一一座奧斯卡。核心是〈Ave Satani〉：一段以拉丁文倒轉彌撒文的合唱壓在低音弦樂之上——據作曲家妻子 Carol 回憶，他卡關多日後某晚突然宣布「我聽見人聲了」，指的正是這組合唱。歌詞的拉丁文其實有文法錯誤，Ave Versus Christus 一句在拉丁文中並不成立。1976 年 Tattoo Records 原始 LP（BJL1-1888）收十二段，由 Lionel Newman 指揮，把合唱段落與〈The Piper Dreams〉這類安靜的人聲曲交錯排列。",
@@ -11956,8 +11980,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -12125,10 +12149,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "奧斯卡入圍與主題的普及度都可查證，但本作未列入美國電影學會百年百大配樂，本環境亦查不到名人堂級的跨來源長期共識，暫列一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：葛萊美最佳影視配樂獲獎、奧斯卡最佳原創配樂入圍、Saturn Award 最佳音樂，且 AllMusic、Filmtracks、Movie Wave 三個獨立專業樂評同時給滿分。原評估以「未列入 AFI 百年百大配樂」否決，但該榜僅 25 個名額且只收美國電影，落選不構成反證。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark_(soundtrack)",
+          "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Score_Soundtrack_for_Visual_Media"
+        ]
       },
       "description": {
         "text": "John Williams 為 1981 年《法櫃奇兵》寫的配樂由倫敦交響樂團演奏，是 Anvil 錄音室 1980 年關閉後最早在 Abbey Road 錄製的電影配樂之一。〈The Raiders March〉原本是兩段各自寫成的旋律，史匹柏兩段都想要，Williams 於是把它們接成主題與過門。納粹段落刻意壓在音階第七度上製造軍事化的壓迫，法櫃相關的樂段則用合唱團加管弦樂做出宗教感；愛情主題參考了《Now, Voyager》那類舊片的寫法，與全片的詼諧調性形成對照。1981 年 Columbia 原始盤九軌，本作入圍奧斯卡最佳原創配樂。",
@@ -12160,8 +12187,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -12262,10 +12289,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "獎項與銷量都到位，但未見於 AFI 百年百大電影配樂等跨來源長期榜單，本環境查不到殿堂級的長期共識依據，暫列一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：奧斯卡最佳原創配樂、BAFTA 最佳電影音樂、葛萊美最佳影視配樂三獎全拿，Filmtracks 五星、Entertainment Weekly A−、AllMusic 四星。主題小提琴段已成為最廣為辨識的當代電影配樂之一。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Schindler%27s_List_(soundtrack)",
+          "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Score"
+        ]
       },
       "description": {
         "text": "史匹柏 1993 年電影的音樂由 John Williams 作曲並指揮，1993 年 9 至 10 月在洛杉磯 Sony Pictures Studios 與波士頓 Symphony Hall 錄音，Hollywood Studio Symphony 演奏，Itzhak Perlman 擔任獨奏小提琴。主題不走 Williams 慣用的英雄動機，改以小調的單線旋律讓小提琴在弦樂襯底上獨自陳述，〈Jewish Town〉與〈Remembrances〉都由同一素材變形。此作拿下奧斯卡最佳原創配樂、BAFTA 最佳電影音樂與葛萊美最佳影視配樂。",
@@ -12297,8 +12327,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -12329,10 +12359,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "開創地位明確且有奧斯卡提名，但查不到名人堂、國家錄音登記或 AFI 榜單這類跨來源長期共識，依規則不列殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：影史第一張以爵士為主體的電影配樂，由 Shorty Rogers and His Giants 演奏、Shelly Manne 打鼓，也是第一張以唱片形式發行的電影配樂；Jazzwise 評為「最偉大的爵士電影配樂之一」，並獲奧斯卡入圍。開創地位本身即構成跨來源共識。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://www.jazzwise.com/review/elmer-bernstein-the-man-with-the-golden-arm",
+          "https://elmerbernstein.com/articles/the-man-with-the-jazzy-sound/"
+        ]
       },
       "description": {
         "text": "Otto Preminger 1955 年毒癮題材劇情片的配樂，1956 年 2 月中由 Decca 發行（DL 8257）。Elmer Bernstein 以 big band 爵士當敘事語言，銅管用斷奏短句推進場面，取代當年慣用的弦樂情緒鋪陳；Shorty Rogers 吹富魯格號、Shelly Manne 打鼓。十一軌多為組曲式標題，把數個場面接成單軌。AllMusic 評此為五〇年代最好的爵士配樂之一，本片並獲奧斯卡劇情／喜劇片配樂獎提名；片頭與封面的斜臂圖形出自 Saul Bass。",
@@ -12364,8 +12397,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -12466,10 +12499,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "商業與獎項紀錄充分，但殿堂級依據多集中在〈Moon River〉這首單曲而非本張唱片本身，缺少針對此盤的跨來源長期榜單，暫不列殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：Mancini 以本作獲奧斯卡最佳原創配樂——該獎頒給整張配樂而非單曲，〈Moon River〉另獲最佳原創歌曲；唱片本身登上 Billboard Pop Albums 冠軍、在榜逾九十週並獲 RIAA 金唱片。原評估誤以為榮譽集中在單曲。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Breakfast_at_Tiffany%27s:_Music_from_the_Motion_Picture",
+          "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Score"
+        ]
       },
       "description": {
         "text": "Blake Edwards 1961 年電影的唱片，1960 年 12 月至 1961 年 4 月在 RCA 好萊塢錄音室完成，Hollywood Studio Symphony 演奏，同年由 RCA Victor 發行。Mancini 把片中音樂重編成唱片曲目：〈Moon River〉以口琴起頭再交給弦樂與無詞合唱，〈Something for Cat〉是小編制爵士的搖擺段落，〈Moon River Cha Cha〉把同一旋律改成拉丁節奏收尾。原盤十二軌未收奧黛麗赫本的演唱版本。唱片登上 Billboard 流行專輯榜冠軍、在榜超過九十週。",
@@ -12501,8 +12537,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -12673,10 +12709,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "銷量、榜單與獎項都極強，但長期共識依據偏商業榜（Billboard 榜史名單）而非配樂樂評正典，AFI 百年百大電影配樂未收，暫依規則列一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：奧斯卡最佳配樂與葛萊美最佳原創配樂雙獲獎、並入圍葛萊美年度專輯；Billboard 200 冠軍；另有兩份性質不同的獨立榜單收錄——Billboard「史上最偉大 Billboard 200 專輯」第 8（2015）與 ABC Classic FM「Classic 100 Music in the Movies」第 6（2013）。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Doctor_Zhivago_(soundtrack)",
+          "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Score"
+        ]
       },
       "description": {
         "text": "Jarre 帶一百一十人的樂團連錄十天，1965 年 12 月 14 日完工，距電影世界首映只剩八天。MGM 樂團裡沒人會彈巴拉萊卡琴，他從洛杉磯一間俄羅斯東正教教堂找來二十四位琴手，〈Lara's Theme〉的顫音就出自這批人；這個主題原是臨時趕寫的，因為 Lean 原本想用的俄羅斯民謠並非公版。原盤十二軌以序曲、主題與場景段落交替，〈Sventytski's Waltz〉與〈The Funeral〉分屬全片的兩極。唱片 1966 年 11 月 5 日登上 Billboard 200 冠軍，1967 年統計已售出一百四十萬張。",
@@ -12705,8 +12744,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -13139,10 +13178,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "影響力與影展榮譽都有據，但榮譽主體是電影、配樂本身停在 BAFTA 提名層級，缺跨來源長期名單支撐，列一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "BAFTA 最佳配樂入圍；Cooder 以 Blind Willie Johnson〈Dark Was the Night〉為素材寫成的滑音吉他語彙成為此後「荒漠電影音樂」的範型，U2 具名指其啟發《The Joshua Tree》。店主 2026-08-28 逐張複審時裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Paris,_Texas_(film)",
+          "https://en.wikipedia.org/wiki/Ry_Cooder"
+        ]
       },
       "description": {
         "text": "Wim Wenders 1984 年公路片的配樂，整張建立在 Blind Willie Johnson 1927 年〈Dark Was the Night, Cold Was the Ground〉的和聲上——Cooder 稱那是全美國音樂裡最超越的一首。他在 2018 年 BBC Radio 4 訪談裡說，Wenders 錄下的沙漠環境音本身共振在降 E，於是他把所有樂器都調到降 E。瓶頸滑管吉他多半獨奏，靠延音與空拍撐開空間。Warner Bros. 於 1985 年發行，十軌，末軌直接以 Johnson 那首曲名收尾。",
@@ -13174,8 +13216,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -13747,10 +13789,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "奧斯卡與金球獎在手，惟樂評分歧（Metacritic 76、Filmtracks 給最低評等），尚無跨來源長期共識，先列一般卡並提報店主。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：奧斯卡與金球獎最佳原創配樂雙獲獎，另獲波士頓、洛杉磯、拉斯維加斯、聖路易、廣播影評人協會與 AWFJ 六個影評人協會的最佳音樂獎。原評估以「樂評分歧」否決，但六個獨立影評人團體同時給獎本身即是共識證據。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/The_Social_Network_(soundtrack)",
+          "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Original_Score"
+        ]
       },
       "description": {
         "text": "Reznor 與 Ross 2010 年在洛杉磯錄成、同年 9 月 28 日經 The Null Corporation 發行，十九軌。兩人自述做法是以電子為底但盡量保留有機音色，讓聲音在邊緣散開：〈Hand Covers Bruise〉把單薄鋼琴壓在低頻嗡鳴上，〈In Motion〉改用脈衝式音型堆疊。Fincher 另要求把葛利格〈In the Hall of the Mountain King〉改寫成 Wendy Carlos 式的合成器版，兩人花了四週。本作獲第 83 屆奧斯卡與金球獎最佳原創配樂，Billboard 200 最高第 20。",
@@ -13782,8 +13827,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -14560,10 +14605,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "日本國內獲獎與銷售成績明確，但本環境查不到跨來源的長期樂評共識或國際正典名單收錄，暫列一般卡並提報店主。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "製作耗時三年、由東京シティ・フィルハーモニック管弦楽団演奏，大量採用ケーナ與和太鼓等民族樂器，是久石譲從流行取向轉向交響書寫的分水嶺，也是吉卜力配樂中實驗性最突出的一張。店主 2026-08-28 逐張複審時裁定採用。",
+        "evidenceUrls": [
+          "https://ja.wikipedia.org/wiki/%E3%82%82%E3%81%AE%E3%81%AE%E3%81%91%E5%A7%AB_%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF",
+          "https://en.wikipedia.org/wiki/Princess_Mononoke"
+        ]
       },
       "description": {
         "text": "久石讓為宮崎駿 1997 年長片寫的配樂，1997 年 7 月 2 日由徳間ジャパンコミュニケーションズ發行，收錄三十三軌。演奏是東京シティ・フィルハーモニック管弦楽団、熊谷弘指揮，大編制弦樂與銅管承擔〈アシタカ𦻙記〉的主題以及數段戰鬥音樂，打擊樂在〈タタリ神〉一類段落被推到前景。主題歌〈もののけ姫〉由宮崎駿作詞、假聲男高音米良美一演唱——宮崎是 1996 年在廣播裡聽到他的歌聲才決定起用。專輯最高 Oricon 第 9，並獲第 39 屆日本唱片大賞企畫賞。",
@@ -14596,8 +14644,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -14628,10 +14676,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "銷售成績與電影本身的國際獎項清楚，但配樂本身缺乏跨來源的長期樂評共識，暫列一般卡並提報店主。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：毎日映画コンクール音楽賞、東京国際アニメフェア最優秀音楽賞、日本ゴールドディスク大賞アニメーション・アルバム賞三個彼此獨立的獎項認定，主題歌〈いつも何度でも〉另獲日本レコード大賞金賞。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Spirited_Away",
+          "https://en.wikipedia.org/wiki/Japan_Gold_Disc_Award"
+        ]
       },
       "description": {
         "text": "久石讓為宮崎駿 2001 年作品寫的配樂，2001 年 7 月 18 日由徳間ジャパン旗下スタジオジブリ・レコーズ發行，二十一軌約六十分鐘，他自己作曲兼指揮，演奏是新日本フィルハーモニー交響楽団。做法是把甘美朗、琉球音樂與絲路一帶的民族樂器取樣，疊在全編制管弦樂之上。開場〈あの夏へ〉是全片反覆出現的鋼琴主題，第十六軌〈ふたたび〉據宮崎自陳是他最喜歡的一段，末軌〈いつも何度でも〉由木村弓作曲並自唱。專輯銷量逾三十萬張。",
@@ -14664,8 +14715,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -14763,10 +14814,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "文化影響力與原創技術（低音提琴摩擦製造咆哮並成為東寶標準）都有明確記載，但本環境查得到的來源只有作品條目與發行資料，缺少殿堂所需的跨來源長期樂評共識，先作一般卡並列為候選。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：以低音提琴摩擦製造咆哮並成為東寶的標準音效，主題的四音動機決定了其後整個怪獸／特撮電影配樂的方向，另有專書《ゴジラの音楽》（小林淳）以此為研究對象，後世並在 techno 與舞曲脈絡獲重新評價。原評估的否決理由之一是未列入 AFI 百年百大配樂，但該榜只收美國電影，對日本片不適用。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://www.moviecollection.jp/news/69256/",
+          "https://bunshun.jp/bungeishunju/articles/h8297"
+        ]
       },
       "description": {
         "text": "伊福部昭只花一週寫完 1954 年《ゴジラ》的音樂，用低音銅管與低音弦樂堆出後來被稱作哥吉拉主題的進行曲，另有恐怖動機與安魂曲式的〈平和への祈り〉。怪獸叫聲不是動物錄音：他向音樂大學借來低音提琴，鬆開琴弦以皮手套摩擦，錄下後放慢轉速播放，東寶此後把這個做法當成怪獸音效的標準。錄音由 NHK 的管弦樂團擔任，音效與配樂對著投影畫面同步收錄。伊福部自認這是他最好的電影音樂。1954 年並未發行唱片，完整原聲首度成盤要等到 1993 年的 FUTURELAND／東宝 CD。",
@@ -14798,8 +14852,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -14830,10 +14884,13 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "兩個影評／學院獎項與作曲家地位都可查證，但本環境只取得作品條目與發行資料兩類來源，未達殿堂所需的跨來源長期共識舉證，先作一般卡並列為候選。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：洛杉磯影評人協會最佳音樂與日本アカデミー賞最優秀音楽賞兩個分屬不同國家的獨立獲獎，另有具名評述（Craig Lysy）稱其為武満最浪漫的一次嘗試、完美融合東西方感性。AFI 榜只收美國電影，原否決理由不適用。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Ran_(1985_film)",
+          "https://en.wikipedia.org/wiki/Los_Angeles_Film_Critics_Association_Award_for_Best_Music"
+        ]
       },
       "description": {
         "text": "黑澤明《亂》的音樂，武満徹寫得比他其他電影配樂更靠近後期浪漫派：黑澤原本要日本式的聲樂吟唱，拍攝途中改口要求馬勒式的管弦語法。錄音沒有用原訂的倫敦交響樂團，而是找上岩城宏之指揮札幌交響樂團，同一段音樂被要求錄到四十次。武満以日本的「間」解釋自己的做法，說作品像一座庭園，聽者感受到的是光線、圖樣與質地的變化。他事後說仍希望黑澤能多留一些空間給他，但看過成品也就算了。全長超過一小時，武満憑此拿下洛杉磯影評人協會與日本電影學院獎的最佳音樂。",
@@ -14865,8 +14922,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -15574,10 +15631,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "作為 bossa nova 北美傳播節點的地位有清楚記載（Vince Guaraldi 1962 年整張回應即為證），但獎項屬電影而非唱片，本環境查不到唱片層級的跨來源長期共識，先作一般卡並列為候選。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：這份錄音是絕大多數美國人認識 bossa nova 的起點，直接催出全美熱潮並讓 Jobim 與 Bonfá 成名，〈Manhã de Carnaval〉與〈A Felicidade〉自此成為標準曲；影片獲坎城金棕櫚與奧斯卡最佳外語片。一個樂種的國際傳播節點，這層地位在多處來源一致記載。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://www.allmusic.com/album/black-orpheus-original-soundtrack-mw0000207168",
+          "https://en.wikipedia.org/wiki/Black_Orpheus"
+        ]
       },
       "description": {
         "text": "馬歇·卡謬《黑色奧菲斯》的原聲，1959 年由 Epic 發行。Antonio Carlos Jobim 的〈A Felicidade〉開場，Luiz Bonfá 寫的〈Manhã de Carnaval〉與〈Samba de Orfeu〉後來都成了 bossa nova 的標準曲；片中奧菲斯的歌聲由 Agostinho dos Santos 代唱。盤上〈Manhã de Carnaval〉與〈O Nosso Amor〉各出現三次，是同一素材在不同場景的用法。電影拿下坎城金棕櫚與奧斯卡最佳外語片，唱片也成了北美聽眾接觸 bossa nova 的入口。",
@@ -15609,8 +15669,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -15641,10 +15701,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "銷量與文化影響力可查證，但選曲合輯要進殿堂需有唱片層級的跨來源長期正典共識，本環境只取得作品條目與發行資料，先作一般卡並列為候選。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：Rolling Stone「史上最偉大的 25 張原聲帶」第 7 名（2013）；美國三白金（350 萬張），英國、加拿大、澳洲同為三白金；AllMusic 4.5 星、NME 8/10。榜單與銷量兩條線都到位。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Pulp_Fiction_(soundtrack)",
+          "https://www.rollingstone.com/movies/lists/the-25-greatest-soundtracks-of-all-time-20130829/pulp-fiction-1994-19691231"
+        ]
       },
       "description": {
         "text": "昆汀·塔倫提諾沒有找人寫配樂，《黑色追緝令》整張原聲都由既有錄音與片中對白剪成，1994 年 9 月由 MCA 發行。他說選衝浪樂是因為那聽起來像義大利式西部片的搖滾樂：Dick Dale 的〈Misirlou〉開場，接上 Kool & the Gang 的放克、Al Green 與 Dusty Springfield 的靈魂樂，還有 Chuck Berry 與 Urge Overkill 翻唱 Neil Diamond 的版本。四十一分鐘裡有九首歌、四段歌曲與對白的合軌、三段純對白。Billboard 200 最高第二十一名，美加英澳都拿到三白金。",
@@ -15676,8 +15739,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -15708,10 +15771,13 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "兩份媒體榜單與銷售認證都可查證，但選曲合輯進殿堂需要更廣的跨來源長期正典共識，且榜單性質偏媒體回顧，先作一般卡並列為候選。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "本機補證：三家不同刊物、橫跨十二年的榜單收錄——Entertainment Weekly「百大電影原聲帶」第 17（2001）、Vanity Fair「史上第 7 好的電影原聲帶」（2007）、Rolling Stone「25 Greatest Soundtracks」第 13（2013）；英國三白金。是本批最標準的跨來源長期共識案例。店主 2026-08-28 裁定採用。",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Trainspotting_(soundtrack)",
+          "https://www.rollingstone.com/movies/lists/the-25-greatest-soundtracks-of-all-time-20130829/pulp-fiction-1994-19691231"
+        ]
       },
       "description": {
         "text": "丹尼·鮑伊《猜火車》的原聲，1996 年 2 月 19 日由 EMI Premier 發行、美國版走 Capitol，十四軌。選曲把兩代英國青年文化並排：Iggy Pop 的〈Lust for Life〉、Lou Reed 與 Brian Eno 這條老血脈，對上 Underworld、Leftfield、Primal Scream 的當代電子舞曲，中間夾著 Blur、Pulp、Sleeper 與 New Order。〈Born Slippy .NUXX〉靠這張成為全球熱門單曲。英國三白金、美國金唱片，《浮華世界》2007 年把它排在影史原聲帶第七名。",
@@ -15740,8 +15806,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
