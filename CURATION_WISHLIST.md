@@ -67,6 +67,30 @@ DMX《It's Dark and Hell Is Hot》、Common《Like Water for Chocolate》等正�
   這 273 張屬線上資料（KV／Firestore／靜態地圖），依規則本環境未寫入，要你本機處理。
 - 對照組：c-44 搖滾 217 筆掃出 0 筆，確認是嘻哈與部分 R&B 特有，不需全類型重掃。
 
+## c-46 卡住的 12 張：只差封面掃圖（2026-08-28）
+
+研究都做完了（身分、三軸、簡介、頂點評估全備），**只卡在封面拿不到**。
+上傳掃圖就能補上，不用重跑。
+
+**戰前爵士 7 張**：Eddie Lang & Joe Venuti《Stringing the Blues》、
+Bix Beiderbecke《Singin' the Blues》、Bennie Moten《Basie Beginnings》、
+Benny Carter《Symphony in Riffs》、Jack Teagarden《That's a Serious Thing》、
+Earl Hines《Piano Man》、Ethel Waters《An Introduction to Ethel Waters》
+
+**福音 3 張**：The Dixie Hummingbirds《We Love You Like a Rock》、
+Various Artists《Negro Religious Songs and Services》、
+The Pilgrim Travelers《The Best of the Pilgrim Travelers》
+
+**雷鬼 2 張**：Mute Beat《No. 0 Virgin Dub》、
+Delroy Wilson《Better Must Come》（← 這張有圖但**左上壓著後貼的黃底促銷貼紙**
+「MAGNIFICENT 7 FOR '71 FROM DYNAMICS」，蓋住下方印刷字，依判準退件）
+
+**為什麼救不回來**：CAA 逐 release 全試過（不只 release-group 層），Apple 跨
+us/gb/fr/de 多店與各種掛名變體也試過。有四筆是**刻意不硬塞**——Apple 找得到同名結集
+但軌數與廠牌對不上，屬另一個 release group（Bix：Apple 20 軌 vs MB 14 軌；
+Lang & Venuti：18/20 軌 vs 32 軌；Pilgrim Travelers：29 軌重編盤 vs 12 軌原 LP）。
+**配錯結集比沒有封面更糟。** Deezer 在本環境被 egress allowlist 擋掉，不能當備援。
+
 ## 卡住待店主本機處理（封面在本環境取不到）
 
 這些卡的文字、身分、三軸都做好了，卡在**封面在本環境完全找不到可用來源**

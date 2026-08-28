@@ -1,5 +1,89 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-28｜dip-vinyl-shop｜c-46 電影原聲＋跨域 230 張，並修好三個管線缺陷
+
+`onboarding-manifest-c46-soundtrack-cross-20260828.json`：**230 張，0 error、31 warning**
+（全為老盤查無條碼，規則允許留空）。試聽 ready 194／230，封面 caa 212／manual 18，
+稀有度 legendary 2／epic 43／uncommon 152／rare 33，**頂點候選 32（31 hall＋1 heresy）**，
+合輯 64 筆走 §5.6。與現有 12,508 鍵卡池**撞池 0、批內重複 0**。
+
+策展五線：配樂 85、戰前爵士 47、福音 43、雷鬼 40、新世紀 30，共 245 筆候選。
+
+## 一、策展階段最重要的一課：不要相信 brief 對「缺口在哪」的假設
+
+**雷鬼線與新世紀線都推翻了我寫的前提，而且都是對的。**
+- 雷鬼：我假設池內很薄，實際上 c-31 世界線早把 roots 主幹鋪滿了（Burning Spear 3、
+  Culture 3、King Tubby 2、LKJ 2…）。真正的缺口在**兩端**——1960 年代 ska/rocksteady
+  的歌唱線、lovers rock 與英國線、女性 DJ、1985 後數位化。
+- 新世紀：我列的六個方向有四個池內已滿（Eno 12、Basinski 7、Tim Hecker 9，
+  連我以為最薄的**日本環境音樂都有 15 張**）。真正的缺口只有一個但很大：
+  **「新世紀」作為 1970–1995 的商品品類幾乎是零**，Windham Hill 整條線掛零。
+
+兩位 agent 因此重新配置整批重心，成果遠好於照我的方向做。
+**往後策展 brief 應該明寫「先驗證缺口再決定重心」，而不是直接給方向。**
+
+## 二、修好的三個管線缺陷
+
+1. **`scripts/pool-check.mjs`（新增）** —— 策展去重查詢，並偵測掛名分裂。
+   除了「池內已有／可收」，另外兩項輸出是實際踩坑後加的：
+   - 「同藝人池內已有 N 張」→ 戰前爵士線靠它查出 Ellington／Basie／Billie Holiday／
+     Ella／Nat King Cole／Lester Young **六位都是「有一堆但招牌時期整個是空的」**
+   - 「同名專輯但掛名不同」→ 雷鬼線靠它確認並剔除 5 筆同碟
+     （`Toots & The Maytals` vs `Toots and the Maytals`、
+     `Lee "Scratch" Perry & The Upsetters《Super Ape》` vs `The Upsetters`、
+     `Various Artists《The Harder They Come》` vs `Jimmy Cliff`），
+     另抓到 grep 絕對漏掉的《96 Degrees in the Shade》vs《96° in the Shade》、
+     《Police and Thieves》vs《Police & Thieves》
+   - 後補「同藝人題名互為子字串」→ 抓 Yutaka Hirose《Soundscape 2: Nova》
+     vs 池內《Nova》這種簡題／全題的同一張碟
+2. **`scripts/publish-manifest.mjs`（新增）** —— 整份 manifest 的批次上架。
+   repo 原本只有兩支單張卡的一次性腳本，c-44/c-45 這種規模手工跑五個目的地不切實際。
+3. **`ALBUM_ONBOARDING.md` §6 增列 `collectionExplicitness`**（見同日另一筆）。
+
+## 三、iTunes lookup 單次最多回 200 軌，超過會靜默截斷
+
+Billie Holiday《Lady Day: The Complete Billie Holiday on Columbia》是 230 軌，
+直接查會斷在第 9 碟第 15 軌，**不報錯**。救援 agent 另以 trackId 逐段掃描才補回
+第 201–230 軌（trackId 在同一上架批次內近似連號），驗證後無缺號、碟界與 MB 完全對上。
+
+**這很可能是先前幾批「大結集漏帶 trackNames」的真正原因**，我一直當成偶發抓取失敗，
+還為此改過 `merge-preview-fix.mjs`。往後 200 軌以上的盤要特別處理。
+
+## 四、「rgMbid 的最早 release」在本批踩到五次
+
+不能無條件拿 first-release 比對曲序或當發行年：
+- 《The Social Network》最早是 5 軌**宣傳採樣盤**（正式盤 19 軌）
+- 武満徹《Ran》最早是 2002 的 **Pseudo-Release**（61 軌，非實體發行）→ 年份改 1985
+- 《Pulp Fiction》抓到含 14 首澳洲宣傳訪談軌的 30 軌 AU 版
+- Vangelis《Blade Runner》最早的 1993 條目 status 是 **Bootleg** → 年份改 1994
+- Andraé Crouch 的 `2003-05-01` 是後來的黑膠重發 → 年份改 1973
+
+## 五、身分層級的錯誤（比封面問題嚴重，寫作階段才抓到）
+
+- **A. R. Rahman《Bombay》**：綁的 RG 底下唯一 release 是**泰盧固語配唱版**
+  （封面片名是泰盧固文），不是坦米爾語原盤。已換 `d0d4daec`，封面一併換。
+  策展 risk 只寫「有坦米爾語與印地語兩種」，漏了泰盧固語。
+- **Bernard Herrmann《North by Northwest》**：策展要求避開 2007 重錄，
+  **但沒察覺卡片綁的 1980 年那盤本身就是重錄**（Starlog／Varèse SV-95001，
+  Laurie Johnson 指揮，封面實印該行字）。Apple 原配的反而是 1959 原始錄音。
+- **三筆 reject**：Teddy Wilson 綁到 1968 哥本哈根三重奏、Roy Eldridge 綁到
+  Verve 年代精選（1951–60 錄音）——兩筆錄音年代不在戰前，已 drop；
+  Mildred Bailey 綁的 2019 版內容確在戰前範圍，保留卡片、試聽判無來源。
+
+## 六、環境限制壓低了頂點升格率（不是判斷保守）
+
+AllMusic、Discogs 網頁、NPR、grammy.com、christgau 官網、loc.gov、rollingstone
+在本環境全被 egress proxy 擋下，只剩 en.wikipedia、musicbrainz、api.discogs.com 可用。
+**多張 classic=5 的卡因為湊不到兩個獨立網域的證據而未升 hall**：
+Michael Hedges《Aerial Boundaries》、Enya《Watermark》、Alton Ellis《Mr. Soul of Jamaica》、
+Fletcher Henderson《A Study in Frustration》，以及七張配樂（ゴジラ、Ran、Black Orpheus、
+Pulp Fiction、Trainspotting、Easy Rider、Bombay）。**店主本機能連那些站時值得重評。**
+
+**驗證**：`node scripts/verify-album-onboarding.mjs onboarding-manifest-c46-soundtrack-cross-20260828.json --prepare`
+→ **0 error、31 warning**。`seed_cards.json`、`apex_pool.json`、KV、Firestore 全未動，
+published 五旗標全 false。
+
+
 ### 2026-08-23（同日第十二筆）｜dip-vinyl-shop｜c-45 嘻哈 136 張＋淨化版試聽這個從沒被檢查過的條件
 
 `onboarding-manifest-c45-hiphop-20260823.json`：**136 張，0 error、6 warning（皆為老盤查無條碼，
