@@ -73,7 +73,22 @@ for (const line of lines) {
     for (const r of sameAlbum.slice(0, 5)) console.log(`         「${r.a}」[${r.src}]`);
     warn++;
   }
-  if (other) console.log(`       同藝人池內已有 ${other.length} 張：${other.slice(0, 8).join('; ')}${other.length > 8 ? ' …' : ''}`);
+  // 同藝人下、專輯名互為子字串 → 常常是「簡題 vs 全題」的同一張碟。
+  // 2026-08-28 補：新世紀線的 Yutaka Hirose《Soundscape 2: Nova》池內作《Nova》，
+  // artist 相同但 album 鍵不同，上面的等值比對與同名反查都抓不到，是靠人工雙查才發現的。
+  if (other) {
+    const nb = norm(b);
+    const near = other.filter(t => {
+      const na = norm(t.replace(/\s*\[[^\]]*\]\s*$/, ''));
+      return na && na !== nb && (na.includes(nb) || nb.includes(na));
+    });
+    if (near.length) {
+      console.log(`       ⚠ 同藝人有題名互為子字串的碟，可能是簡題／全題的同一張：`);
+      for (const t of near.slice(0, 5)) console.log(`         「${t}」`);
+      warn++;
+    }
+    console.log(`       同藝人池內已有 ${other.length} 張：${other.slice(0, 8).join('; ')}${other.length > 8 ? ' …' : ''}`);
+  }
   else console.log(`       此藝人池內完全沒有`);
 }
 console.log(`\n合計 ${lines.length} 筆：池內已有 ${have}、可收 ${miss}（其中 ${warn} 筆有同名專輯不同掛名的警告，請逐一確認）`);

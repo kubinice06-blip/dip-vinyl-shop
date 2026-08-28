@@ -28,6 +28,34 @@ roadmap §五之 4 早就記過這個反模式（「杭蓋 Hanggai」「当山/�
 `[artist, album, 三軸, genres, year]`，**沒有 rgMbid**，所以既有池內的卡之間
 無法用 rgMbid 互相去重——只有新批次對舊池能用。這是結構性限制，不是疏忽。
 
+## 補訂（2026-08-28）：跨文字系統的掛名分裂，工具摺不掉
+
+c-46 新世紀線發現第七類分裂，`scripts/pool-check.mjs` 的正規化**抓不到**：
+
+| 池內形態 A | 池內／候選形態 B | 說明 |
+|---|---|---|
+| `吉村弘`（漢字） | `Yutaka Hirose`（羅馬拼音） | 兩種掛名慣例在池內並存 |
+| `浜瀬元彦`（漢字） | `Motohiko Hamase`（MB 與再版用） | 同一人 |
+| `喜多郎`（漢字） | `Kitaro`（國際通行） | 池內收《シルクロード》用漢字 |
+
+正規化只摺疊 U+2010–2015 連字號、NFKC 與重音，**摺不了文字系統**——
+漢字與羅馬拼音在任何字串正規化下都不會相等。這在日本、韓國、華語藝人身上
+是通例而非例外（c-41／c-42／c-43 三批都碰過）。
+
+**目前唯一可靠的做法是人工雙查**：漢字一輪、羅馬拼音一輪。
+新世紀線就是這樣才發現 `Yutaka Hirose《Soundscape 2: Nova》` 與池內
+apex:pearl 的 `Yutaka Hirose — Nova` 是同一張碟（池內用簡題）。
+
+**同日已補的工具改良**（能抓到其中一部分，但不能取代人工雙查）：
+1. **同名專輯不同掛名**警告——用專輯名反查，列出池內所有掛名。
+   雷鬼線靠它確認並剔除 5 筆同碟（`Toots & The Maytals` vs `Toots and the Maytals`、
+   `Lee "Scratch" Perry & The Upsetters《Super Ape》` vs `The Upsetters`、
+   `Various Artists《The Harder They Come》` vs `Jimmy Cliff` 等），
+   另抓到 grep 絕對漏掉的《96 Degrees in the Shade》vs《96° in the Shade》
+   與《Police and Thieves》vs《Police & Thieves》。
+2. **同藝人題名互為子字串**警告——抓「簡題 vs 全題」的同一張碟，
+   即 Hirose 那個案例的形態。
+
 ## 建議
 
 1. 第 3、5、6 組是明確要合併的（同一張碟、同一個發行）。第 1、2、4 組建議先確認
