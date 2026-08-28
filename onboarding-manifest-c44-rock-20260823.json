@@ -63,10 +63,10 @@
         "curatorRisk": "MB rgMbid 9fe02f36-1afd-34b5-bc01-752c614371b4，1958-03-01，建檔完整。同名風險低；注意 2012 年 2-in-1 再版盤《One Dozen Berrys Plus Chuck Berry Is On Top》易誤配。年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -130,10 +130,10 @@
         "curatorRisk": "MB rgMbid 12fe4954-04d0-3b95-b961-b0dbd3518ac6，1964，僅一筆正規 album。另有 2008 年與《Berry Is on Top》合併再版，勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -198,10 +198,10 @@
         "curatorRisk": "MB 同名 release-group 至少 6 筆（多為 1994 後合輯），正規盤為 05ce37e4-abe9-4aa2-a4ca-9d9ec4ff0f7e（1958-07）。同名陷阱高：藝人名＝專輯名，抓卡時必須綁 rgMbid，不能靠字串。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -265,10 +265,10 @@
         "curatorRisk": "MB 正規盤 79dabce4-71c2-34ce-9d5d-83f9442fb325（1956-10-19）。同名陷阱嚴重：另有 1973 年同名合輯（48e2926f）與無日期版本；且與池內已有的《Elvis Presley》僅差一字，去重時易誤判為重複。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -332,10 +332,10 @@
         "curatorRisk": "MB rgMbid 25bf4054-cd06-364f-b0da-c2bb3ee671a4，1957-11。注意同名衍生：《Singin' to My Baby Part Three》(EP)、2011 年 2-in-1《Eddie Cochran + Singin' to My Baby》、1993 年雙合輯，皆非本盤。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -399,10 +399,10 @@
         "curatorRisk": "同名陷阱最嚴重的一筆：MB 有 5 個 'Bo Diddley' release-group，1958 首作為 f1cedb26-816f-3815-8489-c317ede4cae0，另有 1962-07 的 Checker 同名專輯 f15ac13d 與 1987/1990/2012 合輯。藝人名＝專輯名，必須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -467,10 +467,10 @@
         "curatorRisk": "MB 有兩個 1964 同名首作：UK Columbia 版 6704f186-f0de-4f7a-8294-ea0469cd9667（1964-09）與 US MGM 版 3131932b-bc2f-3c6a-a08c-23a5ae95ec27（1964-11），曲目不同（US 版含〈House of the Rising Sun〉），須擇一並註明。另有 1965 兩張同名 EP 與多筆同名合輯，以及不相干藝人 McCulloch's \"The Animals\"。定冠詞寫法以 MB credit 'The Animals' 為準。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -534,10 +534,10 @@
         "curatorRisk": "MB rgMbid 67bc0ac7-70e0-3259-885a-61c389217a8a，1965-06-11。版本陷阱：UK 原題《The Angry Young Them》，US Parrot 版直接題為《Them》且曲序不同；池內另有多個含 'them' 字串的專輯名，grep 去重必須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -601,10 +601,10 @@
         "curatorRisk": "MB rgMbid 9e3bff06-c552-345b-a10b-aeb6061e1a8a，1966-10-28，唯一正規盤。注意 1974 年合輯《Lola, Percy & the Apeman Come Face to Face With…》標題含 'Face to Face' 易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -668,10 +668,10 @@
         "curatorRisk": "MB rgMbid a84e8dfd-1492-3377-a6f0-34d324dc49d7，1970-11-27。長標題易被截斷；2014 年與《Percy》的合併再版（0a9ad72c）勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -736,10 +736,10 @@
         "curatorRisk": "版本陷阱嚴重：Small Faces 有兩張同名專輯——1966-05 Decca 首作（rgMbid 59bc2a71-7126-39a1-a990-92e0eee8eda3）與 1967-06 Immediate 第二張（8f9eb990）。本筆指 1966 Decca 版，必須綁 mbid。另有 2012 合輯同名。 credit 不一致：MB credit 為 'Small Faces'（無定冠詞），但池內既有鍵寫作 'The Small Faces|Ogdens' Nut Gone Flake'；上架時須擇一統一，否則同一樂團會分裂成兩個藝人鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -803,10 +803,10 @@
         "curatorRisk": "MB rgMbid 096f6b37-68c9-3bee-a60d-68a27febe8f6，1968-04。專輯名極短（'Move'），字串去重風險高；1972 年《Shazam / Move》合併盤（2a393ffb）勿取。藝人 credit 為 'The Move'，池內既有鍵亦用 'The Move'。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -870,10 +870,10 @@
         "curatorRisk": "MB rgMbid 1f9c2f54-2735-394f-911a-28918e41abf6，1965。版本陷阱：US Parrot 版題為《The Zombies》且曲目不同。註：稽核報告稱 Odessey 已在池——經全池複驗確實在池（此點正確），但當時使用的 keys 檔不含該筆，屬巧合命中。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -937,10 +937,10 @@
         "curatorRisk": "MB rgMbid de208292-8db5-3aed-a14a-b37a84d8c521，1963-03-22，建檔乾淨，同名風險低。mono/stereo 兩版皆 1963，年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1004,10 +1004,10 @@
         "curatorRisk": "MB rgMbid a63dc65f-09f2-359b-a10e-648f00ecd96c，1963-11-22。注意同名衍生盤：《The Alternative With The Beatles》《At Home With The Beatles》皆為非官方／後製，勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1071,10 +1071,10 @@
         "curatorRisk": "MB 正規盤 3be81f5e-9bdd-303a-b9bf-f8eb2059ef9f，1965-07-30。版本陷阱：UK Decca 版與 US London 版曲目差異大（〈Satisfaction〉只在 US 版），另有兩張 1965 同名 EP（b88f0320、44e52243）易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1138,10 +1138,10 @@
         "curatorRisk": "MB rgMbid 72a77b05-0006-3838-a378-c56b65abc733，1967-01-20。UK/US 曲目不同（US 版加入兩首單曲）。2019 年《Between the Buttons Sessions》為非官方，勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1205,10 +1205,10 @@
         "curatorRisk": "MB rgMbid 40a087e8-908a-334d-b520-88a820deb09d，1967-12-08，建檔單一。年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1272,10 +1272,10 @@
         "curatorRisk": "MB rgMbid e82ba8db-3712-3de0-bbe5-0311b89db7e2，1973-08-31。2020 年豪華重發含 3 首未發表曲，屬同一 release-group，取原盤年份。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1339,10 +1339,10 @@
         "curatorRisk": "MB 正規盤 cc0ef7ba-01f1-3faf-8238-b63369ff5d2b，1974-10-16。撇號寫法多樣（'n / 'n' / ’n），字串去重不可靠；同名單曲（8a40b911、f5b76003）與 2019 sessions 盤勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1407,10 +1407,10 @@
         "curatorRisk": "版本陷阱高（稽核已點名）：US 版題為《The Who Sings My Generation》且曲目不同；MB 正規盤 00c3da9f-309b-3f78-ba23-6a753fd6313d（1965-12-03），另有 1991 年同名 live 盤（b2e77472）與 1965 同名單曲（0402ea05）。mono 為原始混音、stereo 為後製，選盤時須註明。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1474,10 +1474,10 @@
         "curatorRisk": "MB rgMbid 475af630-84df-3243-9888-c03c67d54d1a，1966-12-03。US 版題為《Happy Jack》，1973 年與《Sell Out》的合併盤（60d556d0）勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1541,10 +1541,10 @@
         "curatorRisk": "MB rgMbid 60f9782d-f382-3136-88e8-5088df5be69e，1975-10-18，建檔單一，無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1608,10 +1608,10 @@
         "curatorRisk": "MB rgMbid 42f8acce-90fc-3471-a4cd-ace1ab816276，1976-03-31。同名風險低，年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1675,10 +1675,10 @@
         "curatorRisk": "MB rgMbid 06eada6a-7bff-34ef-8311-a0435833061f，1970-03-25，primary-type=Album 但 secondary-type=Live（現場專輯，若卡池對 live 盤有規則須套用）。同名陷阱：另有《Band of Gypsys 2》(1986)、《Volume 3》(1992)、《Rehearsals》。藝人 credit 為 'Jimi Hendrix'，與池內 'The Jimi Hendrix Experience' 是不同 MB 藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1743,10 +1743,10 @@
         "curatorRisk": "同名陷阱：MB 正規盤 810068af-2b3c-3e9c-b2ab-68a3f3e3787d（1973-07-13），另有 1981 年同名合輯（e7ad7dc7）。藝人名＝專輯名，需綁 mbid。註：稽核同時列的《A Day at the Races》經複驗已在池，本批已剔除。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1815,11 +1815,11 @@
         "curatorRisk": "同名陷阱最典型（稽核已點名）：樂團名＝專輯名＝主打曲名。MB 正規盤 826c9743-a3f0-3479-bf06-8df2e140ef1d（1970-02-13），另有 1970 同名合輯（d38fc9a6）與《Black Sabbath 1970–1973》合集。UK Vertigo 與 US Warner 版曲目有差異。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -1882,10 +1882,10 @@
         "curatorRisk": "MB rgMbid c9673ff0-15b5-394d-a5ec-3d2a27dfce83，1977-03-21。版本陷阱：澳洲版與國際版曲目不同（澳版含〈Crabsody in Blue〉）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1949,10 +1949,10 @@
         "curatorRisk": "MB rgMbid d1b829ec-6112-3562-b38f-26949564e106，1978-05-05。版本陷阱：初版與後來的 remix 版曲目有《Cold Hearted Man》之差。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2016,10 +2016,10 @@
         "curatorRisk": "MB 正規盤 f85647ec-a69b-3b0a-ad04-bb6076c4dcf1（1979-07-27）。同名陷阱：同名單曲有兩筆（1979 與 1992 現場版），另有 1996《Ballbreaker / Highway to Hell》合併盤。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2083,10 +2083,10 @@
         "curatorRisk": "MB rgMbid a57a63f0-81be-37cf-9e5b-459ae81b7c93，1970-09-23，建檔單一乾淨。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2150,10 +2150,10 @@
         "curatorRisk": "MB rgMbid e939fa86-d7bc-38a7-b6f9-d12fc3f9f22e，1973-08-01。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2217,10 +2217,10 @@
         "curatorRisk": "MB rgMbid cbff20dc-1ed7-3579-9a60-c705e88bdf19，1974-04-15。無同名風險，年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2284,10 +2284,10 @@
         "curatorRisk": "MB rgMbid 0be2e12c-afe8-3439-ad0f-1167f9009114，1974-09。撇號寫法（Don't）為字串去重風險，其餘乾淨。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2352,10 +2352,10 @@
         "curatorRisk": "MB 正規盤 4cdd4c59-e38f-382b-b01c-e69829faa69c，1973-07-27。藝人名＝專輯名，另有《Actress: Birth of The New York Dolls》(2000 demo 輯)、《20th Century Masters》合輯等易誤配，須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2419,10 +2419,10 @@
         "curatorRisk": "MB rgMbid 797f5c2f-d2ce-3b97-a761-0a946816d792，1974-05，建檔單一。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2486,10 +2486,10 @@
         "curatorRisk": "MB rgMbid 150be579-06f0-3ddf-8b6e-f725dda83e6b，1973-01-28。注意《Left Hand Luke: The Alternate Tanx》(1995)、《Unicorn and Tanx》(2000) 合併／替代盤勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2553,10 +2553,10 @@
         "curatorRisk": "MB rgMbid 8455be77-292b-3699-81c4-c11dd6b9049f，1972-12。專輯名含問號，字串處理需注意。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2620,10 +2620,10 @@
         "curatorRisk": "同名陷阱：MB 正規盤 4f213af5-f4f9-3129-ad7e-d34f1fd8abd1（1973-07-20），與樂團 1969 年首作《Mott the Hoople》(5eba7a23) 名稱高度相近，去重與抓卡都須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2687,10 +2687,10 @@
         "curatorRisk": "MB rgMbid 94862bd6-6a24-3774-b136-860059c6376e，1973-12（部分資料作 1973-12-07）。建檔單一，無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2754,10 +2754,10 @@
         "curatorRisk": "MB rgMbid aa86c6bb-d1c7-3a03-bcb4-3c6f0a469328，1970-10。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2821,10 +2821,10 @@
         "curatorRisk": "MB rgMbid adcc32d7-cb30-3201-84fa-488e35c9c9ed，1976-02。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2889,10 +2889,10 @@
         "curatorRisk": "同名陷阱：藝人名＝專輯名。MB rgMbid 86e88318-dd1e-36e9-bb62-c5d0b8a8b4e5，1970-11。名稱中的 '&' 與 'and' 寫法差異是 grep 去重的已知坑，池內既有鍵用 'Emerson, Lake & Palmer'。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2956,10 +2956,10 @@
         "curatorRisk": "MB rgMbid b1fff2ac-34eb-358b-9bf5-196b2a5fc288，1971-11，primary-type=Album 但 secondary-type=Live（1971-03-26 Newcastle City Hall 現場）。若卡池對現場盤有規則須套用。另注意這是改編作品，勿與古典線的穆索斯基卡片混淆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3023,10 +3023,10 @@
         "curatorRisk": "MB rgMbid a97c5efa-7182-3162-b3f2-9f19dfc35d83，1969-08-01。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3090,10 +3090,10 @@
         "curatorRisk": "MB rgMbid 58986b39-0bf0-38b6-820a-c26fae194540，1977-02-11。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3157,10 +3157,10 @@
         "curatorRisk": "MB rgMbid abe5a8ec-20c9-3d49-bb2d-4c371bf1ef25，1970-12-11。無同名風險。2009 年 Steven Wilson 重混屬同一 release-group。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3224,10 +3224,10 @@
         "curatorRisk": "MB rgMbid 294ffbbb-75bb-3f65-b309-94a99fa3c194，1971-12-03。無同名風險。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3291,10 +3291,10 @@
         "curatorRisk": "MB rgMbid 6f8fa63e-67e7-3b29-8242-db18704429cd，1976-04。注意藝人另有 'Van der Graaf' 簡稱時期（1977–78）為不同 MB credit。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3359,10 +3359,10 @@
         "curatorRisk": "年份兩說：MB first-release-date 作 1973（rgMbid 013c3c70-ff03-3cd6-8907-5c0cfe356b6d），但英文維基與 Virgin 目錄均載 1974-03-01 發行、1973-10 至 1974-01 錄音——MB 的 1973 是錄音年汙染，應採 1974。藝人名＝專輯名，須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3426,10 +3426,10 @@
         "curatorRisk": "MB rgMbid abe660bf-5486-3eef-a479-643c03bd539d，1975-03-07。撇號位置（Rotters'）為字串風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3494,10 +3494,10 @@
         "curatorRisk": "MB rgMbid ab6498ea-3048-36a9-b384-b5aff7d52ecd，1972-04-08。藝人名＝專輯名。第二張《Little Red Record》易混淆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3561,10 +3561,10 @@
         "curatorRisk": "MB rgMbid dfe2d355-73da-3b69-a4c5-86d27773d486，1969-04。標題極通用（'Volume Two'），字串去重風險高，須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3628,10 +3628,10 @@
         "curatorRisk": "同名藝人陷阱（實測）：池內 'Caravan' 鍵下混有泰國 for-life 樂團 คาราวาน 的《คนกับควาย》，去重時該筆不可算作英國 Caravan。MB rgMbid cb851b6d-30c2-3cf3-81ad-9a20a232e050，1973。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3695,10 +3695,10 @@
         "curatorRisk": "MB rgMbid ca079650-526f-3ffd-9fb2-08d0cf9b233a，1969-11。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3763,10 +3763,10 @@
         "curatorRisk": "MB rgMbid 8a3ea51c-ea62-3ebb-9b05-624aec86fae5，1972-01。命名陷阱：樂團全名 'Premiata Forneria Marconi' 與縮寫 'PFM' 在 MB 與各版本封面上並行，池內去重與抓卡須同時檢查兩種寫法。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3831,10 +3831,10 @@
         "curatorRisk": "MB rgMbid 6b2b3082-974b-3e58-b473-a8f19fc60075，1972-11。版本陷阱明確：英語版《Photos of Ghosts》(1973) 是同素材的不同專輯，不可互替。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3899,10 +3899,10 @@
         "curatorRisk": "MB 有兩筆同名：1972 原盤 de54cbbb-070c-32fe-834e-329c33f6d0af 與 1991 重錄版 813c50c5，必須取 1972 版。另有英語版《Darwin》(1973 部分曲目) 流通。標題含驚嘆號，字串處理注意。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3967,10 +3967,10 @@
         "curatorRisk": "MB rgMbid af87af37-2612-3885-a0be-43bf04fcebe5，1973。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4035,10 +4035,10 @@
         "curatorRisk": "版本陷阱明確：同年另有 Hammill 英詞版《Felona and Sorona》，2016 年又有重錄版。MB 原盤 rgMbid f38994d0-fc62-392b-97cd-95527f02c7f4，1973。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4104,10 +4104,10 @@
         "curatorRisk": "同名藝人陷阱高：'Area' 是極常見團名（另有日本、美國多組同名），MB 本盤 rgMbid f0ba546b-b120-3c3b-ac3e-49e6001e8dbb（1975），義大利樂團全稱 'Area (International POPular Group)'。標題含驚嘆號。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4168,10 +4168,10 @@
         "curatorRisk": "MB rgMbid 71447dd9-9a65-37fd-855d-ceb81896cab9，1974-06。重音陷阱（ö）：C locale 下 grep -i 不摺疊重音，去重零結果必須用去重音後的鍵複驗（roadmap 反模式第 5 條）。另有 1974 年現場《Hhaï》與 2004《Köhntarkösz Anteria》易混淆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4236,10 +4236,10 @@
         "curatorRisk": "同名陷阱嚴重：藝人名＝專輯名，且池內既有《Faust IV》《The Faust Tapes》《You Know Faust》會在字串比對時誤判為重複。MB rgMbid cff68c1a-3298-390c-8445-840f8a46bd39，1971。另有德國 thrash 團 Faust 與多組同名藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4304,10 +4304,10 @@
         "curatorRisk": "同名團陷阱最典型：Amon Düül（公社原團）與 Amon Düül II（音樂派分支）是 MB 上兩個不同藝人，混用會抓錯整批目錄。MB rgMbid a9aa820e-1ab9-37dc-8888-7da6ae7e012f，1971。重音 ü 有 locale 陷阱。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4372,10 +4372,10 @@
         "curatorRisk": "MB rgMbid 62ea2fdf-ebcc-3ca5-af22-cad1da0a0269，1972。注意藝人另有 'Ashra'（1977 後）與 Göttsching 個人名義為不同 MB 藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4441,10 +4441,10 @@
         "curatorRisk": "專輯名須修正（稽核作《I Had Too Much to Dream》）：正式盤名為《The Electric Prunes》，副題為《I Had Too Much to Dream (Last Night)》。MB rgMbid 01c812fa-3d8d-4a18-ac9b-b274d4b23952，1967。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4509,10 +4509,10 @@
         "curatorRisk": "同名陷阱極高（實測）：MB 上 'Love' 作為藝人名與專輯名都極常見，直接查詢會被 2024 年多筆同名 EP 淹沒。正確藝人 mbid 34ec9a8d-c65b-48fd-bcdd-aad2f72fdb47（US folk-rock/psych band, 1965），本盤 rgMbid 3d0ee264-579f-3615-8888-1c53c7df9786，1966-04。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4576,10 +4576,10 @@
         "curatorRisk": "同名團陷阱嚴重：Renaissance 有 1969 年 Keith Relf（前 Yardbirds）創立的原編制與 1972 年起的 Haslam 編制，MB 視為同一藝人但音樂完全不同；本盤屬 Haslam 編制。rgMbid 5a2ccc70-8aec-3119-80d7-7b1e8de4140e，1973-10。團名亦為極常見字。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4643,10 +4643,10 @@
         "curatorRisk": "MB rgMbid bc3b5116-300a-3696-919d-bca466a3f143，1977-01-10。版本陷阱：初版含《Carbona Not Glue》，因商標問題後續壓片抽換為《Sheena Is a Punk Rocker》或《Babysitter》。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4710,10 +4710,10 @@
         "curatorRisk": "MB rgMbid dd959091-dba1-32b8-8159-0090959ce75b，1977-11-04。建檔乾淨，無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4777,10 +4777,10 @@
         "curatorRisk": "credit 陷阱：MB 本盤 artist-credit 為 'Patti Smith Group'（rgMbid eb233fd7-0ae3-38c7-b8c2-61f21bc84a35，1976-10），與池內既有鍵 'Patti Smith' 不同。建議沿用池內寫法 'Patti Smith' 以保持目錄聚合，但抓卡須用該 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4844,10 +4844,10 @@
         "curatorRisk": "同上 credit 陷阱：MB artist-credit 'Patti Smith Group'，rgMbid 93e9dc29-9c7b-334a-9765-a6fa0186b1e2，1978-03-03。另有 2008 年《Patti Smith x2: Horses / Easter》合併盤與 2011《Easter Rising (Live)》易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -4915,11 +4915,11 @@
         "curatorRisk": "同名陷阱高：藝人名＝專輯名，且 Suicide 1980 年另有一張同名專輯（Ric Ocasek 製作）。1977 首作 rgMbid 702d4a53-9f00-3f57-a723-e5e267518454（1977-12），抓卡務必綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -4982,10 +4982,10 @@
         "curatorRisk": "MB rgMbid d0a52f62-e66d-34a0-9ff1-c4fce47f517f，1977-09。credit 寫法有 'Richard Hell & the Voidoids' 與 'Richard Hell and the Voidoids' 兩式（& 與 and 的 grep 陷阱）；另有 1976 年同名 EP 與同名單曲。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5049,10 +5049,10 @@
         "curatorRisk": "MB rgMbid ff98aa71-717f-3059-8619-d651e9054ebb，1977-10。標題有無逗號兩式（Young, Loud and Snotty）為字串陷阱。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5116,10 +5116,10 @@
         "curatorRisk": "同名陷阱最危險的一筆：與本批同時收錄的 'Tom Petty and the Heartbreakers' 藝人名高度重疊，字串去重極易誤配。MB 藝人為 'The Heartbreakers'，rgMbid 94058ebd-f1bd-30b9-bbec-231feb448654（1977-10-03）。版本陷阱同樣嚴重：原版混音惡名昭彰，後有《L.A.M.F. Revisited》《The Lost '77 Mixes》《L.A.M.F. Definitive Edition》多版，須指定原盤。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5183,10 +5183,10 @@
         "curatorRisk": "MB rgMbid 13bc9234-9495-3dee-a803-dc6e54386837，1977-02-21。標題含括號與撇號，字串處理易失敗（(I'm) Stranded / I'm Stranded 兩式）。另有同名單曲（1976）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5251,10 +5251,10 @@
         "curatorRisk": "MB 藝人名寫作 'The B‐52s'（使用 U+2010 連字號、無撇號），專輯名寫作 'The B‐52’s'——這是本批最嚴重的字串陷阱，一般 ASCII grep 完全命中不到（實測零結果）。正確藝人 mbid 127f591a-7e27-4435-92db-0780f219f3a1，本盤 rgMbid 68699ffe-f5fd-337a-8bb9-8a196157afa8（1979-07-12）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5318,10 +5318,10 @@
         "curatorRisk": "MB rgMbid 60a754f9-50e1-346a-97db-925a1e2ad7e0，1978-07；MB artist-credit 作全大寫 'DEVO'。標題含冒號、問號、驚嘆號，字串去重幾乎必然失敗，須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5385,10 +5385,10 @@
         "curatorRisk": "MB rgMbid bb889709-d775-3cb1-84c2-1daf4884e165，1980-07-01。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5456,11 +5456,11 @@
         "curatorRisk": "版本陷阱嚴重：UK 版（1977-04-08，rgMbid ca91cb5a-7ecc-3c46-84a0-0d4951889374）與 US 版（1979，抽換四曲、加入《I Fought the Law》等）曲目差異大，須指定 UK 原盤。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -5523,10 +5523,10 @@
         "curatorRisk": "MB rgMbid ff729e76-b7c5-3877-bf7d-bbad4fde43cb，1980-12-12。標題含驚嘆號。三片裝，若卡池對多片專輯有規則須套用。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5590,10 +5590,10 @@
         "curatorRisk": "MB rgMbid b92e2659-2d33-344b-982e-7c4f4201e479，1978-09-22。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5657,10 +5657,10 @@
         "curatorRisk": "年份兩說（已判定）：MB first-release-date 作 1979（rgMbid 8601dff5-2db0-3dbb-aeda-65de9635786e），但英文維基載 1979-10 錄音、1980-01 發行——MB 是錄音年汙染，採 1980。標題含問號。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5724,10 +5724,10 @@
         "curatorRisk": "MB rgMbid 6f0dbdca-67c5-3334-93ab-0b5acd31e7fd，1981-11-11。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5791,10 +5791,10 @@
         "curatorRisk": "MB rgMbid 1b9b202f-27c8-33bb-b14b-8d82e941107b，1983。同名陷阱：Sonic Youth 有同名曲，另有多組藝人使用此標題。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5858,10 +5858,10 @@
         "curatorRisk": "MB rgMbid 0f8fdf38-67a4-3fed-be62-34a9497a88ba，1979。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5925,10 +5925,10 @@
         "curatorRisk": "MB rgMbid 05377095-d486-36a2-ba87-8536b0648517，1980-05-02。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -5992,10 +5992,10 @@
         "curatorRisk": "MB rgMbid e6cf6f53-43a8-3d00-9913-991cd8ae8f53，1978-11。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6060,10 +6060,10 @@
         "curatorRisk": "MB rgMbid 74fdc8c2-2f15-31ac-989a-5848ec9a9e37，1980-02。藝人名＝專輯名。版本陷阱：UK 與 US 首版曲目與混音不同（US 版抽換數曲）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6127,10 +6127,10 @@
         "curatorRisk": "MB rgMbid dd28f081-4d8c-34aa-afe3-a19b833954b5，1981-05-21。同名陷阱：標題與樂團 Talk Talk（池內已有五張）字串高度衝突，去重須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6194,10 +6194,10 @@
         "curatorRisk": "MB rgMbid 56f22288-1033-3f71-8eed-026e8aeabb01，1983。藝人名為三字母縮寫，字串比對誤命中率極高（'esg' 會命中大量無關字串），去重須用完整鍵或 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6261,10 +6261,10 @@
         "curatorRisk": "MB rgMbid 88154914-4f14-355c-8066-b3cecd38c42c，1992-04-17。建檔乾淨，無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6328,10 +6328,10 @@
         "curatorRisk": "MB rgMbid dbde84c8-abd9-3c73-a25c-3acf60754fee，1982。版本陷阱明確：1993 年 Valor 主導的重錄版《The Rage of Angels》使用相同曲目，且 Christian Death 因 Rozz／Valor 分裂長期有兩個並行編制，抓卡須確認為 1982 Frontier 原盤。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6395,10 +6395,10 @@
         "curatorRisk": "MB rgMbid 876288a6-9b52-342b-a998-4d7dc01bc8bf，1983-03。版本陷阱：1991 年 Ocasek 重新排序／重混的再版曲序不同，須註明取原盤。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6462,10 +6462,10 @@
         "curatorRisk": "MB rgMbid 007e8e7c-7c55-3fe6-889e-2d02c9b1f132，1979。雙專輯（一片錄音室、一片現場）。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6529,10 +6529,10 @@
         "curatorRisk": "MB rgMbid 3219729b-5773-3d4f-a32c-99144d6680be，1980-09-12。同名陷阱：'Black Sea' 為常見標題（多組藝人使用），去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6596,10 +6596,10 @@
         "curatorRisk": "MB rgMbid 955bc23e-4ae3-3623-a1ea-0f0ee6043055，1999-02-17。注意《Wasp Star (Apple Venus Volume 2)》(2000) 為不同專輯。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6664,10 +6664,10 @@
         "curatorRisk": "同名陷阱典型：樂團名＝專輯名＝同名曲。MB 正規盤 88a735ad-1f8a-3f96-b410-7e5058dff7f6（1980-04-14），另有 1998、2004 兩筆同名合輯。版本陷阱：1998 remaster 加入《Sanctuary》。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6731,10 +6731,10 @@
         "curatorRisk": "MB rgMbid cf1e9a98-3ea7-33e5-a8b6-8665dd9a206b，1981-02-02。版本陷阱：US 版曲目含《Twilight Zone》，UK 原版無。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6798,10 +6798,10 @@
         "curatorRisk": "MB rgMbid a5fe4d2d-3aab-3e86-91ad-22a3fe16c4f2，1986-06-29。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6865,10 +6865,10 @@
         "curatorRisk": "MB rgMbid 04b8ba32-4b02-3f06-a533-f9938b70b925，1976。無同名風險，但廠牌 Gull 後續多次重製包裝，抓封面須注意。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6932,10 +6932,10 @@
         "curatorRisk": "MB rgMbid 7ce1b3f3-4524-3db3-a228-5624bafec8e0，1977-04-08。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -6999,10 +6999,10 @@
         "curatorRisk": "MB rgMbid a00ff762-f474-39f0-9fa2-b5e24db7fd97，1984-01-04。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7066,10 +7066,10 @@
         "curatorRisk": "MB rgMbid 5e8dc90d-610e-3d85-8884-a1449d74e6cc，1981-11-07。版本陷阱嚴重：2002 年再版把貝斯與鼓全部重錄（法律糾紛所致），2011 年才恢復原始錄音，抓卡須確認為原始版本。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7133,10 +7133,10 @@
         "curatorRisk": "MB rgMbid 798601d4-f28e-3835-b10c-1a00ecf773b8，1984-07-13。credit 陷阱：MB 藝人為 'Dio'，但部分版本標為 'Ronnie James Dio'；另有同名的義大利、韓國藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7200,10 +7200,10 @@
         "curatorRisk": "MB rgMbid a5d145cc-3c7f-31b3-9133-2e9367a47332，1975。命名陷阱：專輯名為《Ritchie Blackmore's Rainbow》而藝人為 'Rainbow'（部分版本藝人亦標為 'Ritchie Blackmore's Rainbow'），字串去重易漏。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7267,10 +7267,10 @@
         "curatorRisk": "MB rgMbid 4dff9404-ada8-34e7-98f2-1bc9a61cda05，1978-04-14。撇號寫法多樣（'n' / 'n / ’n’），字串去重不可靠。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7335,10 +7335,10 @@
         "curatorRisk": "MB rgMbid 4ff7ce7c-43bf-35b3-a543-91ab743c6b07，1982-10-04。無同名風險；藝人名 'Accept' 為常見詞，字串比對誤命中率高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7402,10 +7402,10 @@
         "curatorRisk": "MB rgMbid fd693185-db7f-305d-a38e-3ff8caaa0c57，1983-12-05。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7469,10 +7469,10 @@
         "curatorRisk": "MB rgMbid 8f4ab01b-de0c-37ec-9d1a-5c2adf9977d7，1988-11-01。注意 2014 年重錄版《Kings of Metal MMXIV》為不同 release-group。稽核標為選補（原列 Hail to England 或本張，取本張）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7537,10 +7537,10 @@
         "curatorRisk": "MB rgMbid 1d53b31a-6fed-3dcd-860f-d49be19a0228，1983-09-26。重音陷阱（ö、ü）：C locale grep 不摺疊重音，零結果須以去重音鍵複驗。版本陷阱：1997 與 2003 再版曲目不同。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7604,10 +7604,10 @@
         "curatorRisk": "MB rgMbid 2fc8cf0a-2370-3238-b4f3-0fcea1511c12，1989-08-28。重音陷阱同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7672,10 +7672,10 @@
         "curatorRisk": "MB rgMbid ce11e17f-1c1f-345e-9c41-e5f0010c3b53，1984-05-10。注意 2004 年重錄版《Still Hungry》易混淆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7739,10 +7739,10 @@
         "curatorRisk": "MB rgMbid 691df04f-0c34-3e2f-8f47-537a54cd741d，1984。同名陷阱：樂團另有 1983 年同名 EP《Ratt》；團名極短，字串比對誤命中率高（'ratt' 會命中大量無關字串）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7808,10 +7808,10 @@
         "curatorRisk": "MB rgMbid af1deb9c-f3c3-3624-9760-2fa791be53c7，1984-08-17。藝人名＝專輯名，且含點號（W.A.S.P. / WASP 兩式），字串去重極易失敗。版本陷阱：初版因爭議抽掉《Animal》單曲，後續再版加回。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7876,10 +7876,10 @@
         "curatorRisk": "同名團陷阱嚴重：另有愛爾蘭 Skid Row（1968–，Gary Moore、Phil Lynott 曾在團）也有同名專輯，MB 上是不同藝人。本盤 rgMbid 1c5d2671-9d87-3606-a7c3-0aa73c970644（1989-01-24）。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -7943,10 +7943,10 @@
         "curatorRisk": "MB rgMbid fb0834d5-e8c9-3ae0-b6a2-24510023af01，1987-04-03。無同名風險；注意樂團寫法有 Voivod / Voïvod 兩式（重音陷阱）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8010,10 +8010,10 @@
         "curatorRisk": "MB rgMbid 5198a92a-d7b9-347c-927f-4dea160095b4，1988-06-29。標題含 ö（重音 grep 陷阱），零結果須用去重音鍵複驗。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8077,10 +8077,10 @@
         "curatorRisk": "MB rgMbid 4f8d655b-92ad-3977-a89d-349f2d267880，1985-05-24。藝人名 'Destruction' 為常見詞，字串比對誤命中率高（另有多組同名）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8148,11 +8148,11 @@
         "curatorRisk": "MB 正規盤 a0398241-a842-3593-83b4-a1aa1df23328（1990-07-24），另有 1994 年同名現場盤（e3a21f38）。年份無兩說。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -8219,11 +8219,11 @@
         "curatorRisk": "同名團陷阱嚴重：'Death' 另有底特律 1970s proto-punk 團（《...For the Whole World to See》）及多組同名藝人，MB 上為不同藝人。本盤 rgMbid 4b2378ca-9617-3b4a-bac3-dcc23a0467bf（1987-05-25）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -8286,10 +8286,10 @@
         "curatorRisk": "MB rgMbid 94554b6c-2d9e-3174-89f0-94aec0b285e9，1993-06-22。同名團陷阱同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8353,10 +8353,10 @@
         "curatorRisk": "MB rgMbid 2ba9247a-16f2-3410-b4f4-f704d133fcfb，1993-06-22。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8424,11 +8424,11 @@
         "curatorRisk": "MB rgMbid 675e453b-43c5-3c05-9ac8-dc526471e583，1995-11-14。無同名風險；建檔完整。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -8492,10 +8492,10 @@
         "curatorRisk": "MB rgMbid fd73f60d-e19a-3420-94f7-8d26334989e8，1993-10-01。版本陷阱：因與 Marvel 角色同名，部分版本封面／標題處理不同。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8559,10 +8559,10 @@
         "curatorRisk": "MB rgMbid 007b8b13-b246-3ab4-bd20-d6e3f1fbfc0d，1997-10-15。稽核原列「Whoracle 或 Clayman」二選一，取較接近 melodeath 原型的 Whoracle。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8626,10 +8626,10 @@
         "curatorRisk": "MB rgMbid 06a50231-c772-3766-8f20-54dd144a2421，1995-04-05。標題 'The Gallery' 為常見詞，去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8693,10 +8693,10 @@
         "curatorRisk": "MB rgMbid 10078a3b-c70f-3a1c-b7ee-3540daf7c259，2001-04-25。版本陷阱：日本版與後續再版附加曲目差異大。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8760,10 +8760,10 @@
         "curatorRisk": "MB rgMbid d7326eb6-c9a6-36d6-8657-492f211a8709，2000-10-30。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8827,10 +8827,10 @@
         "curatorRisk": "MB rgMbid 58330435-22c9-3bd4-9d6c-697dca134724，1994-07-12。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8894,10 +8894,10 @@
         "curatorRisk": "MB rgMbid a5b25e78-2c46-3c59-ab07-e022d88699ed，1987-04-21。標題冒號寫法有 'Part I' / ': Part I' 兩式。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -8965,11 +8965,11 @@
         "curatorRisk": "MB rgMbid a2b9a7ac-066f-3fc7-a740-725c4fb5f070，1988-08。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -9033,10 +9033,10 @@
         "curatorRisk": "MB rgMbid 78492dde-c7f7-31cb-a1c6-5d00672748ad，1985-10。版本陷阱：多數再版把 1985 年《Judas》單曲與同年 EP《Helloween》併入，曲目數差異大。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9100,10 +9100,10 @@
         "curatorRisk": "MB rgMbid e0fb41f5-17b2-32e0-ad8c-de40f2a6ed4e，1995-04-05。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9167,10 +9167,10 @@
         "curatorRisk": "MB rgMbid 04bb9023-46de-36fd-9d44-f22edafc7341，1995-05-29。注意 2007《Land of the Free II》為不同專輯。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9234,10 +9234,10 @@
         "curatorRisk": "MB rgMbid f6161cf4-aec7-315a-a248-436f10811a75，1991-10-14。版本陷阱：2001 年《Streets: The Narrated Version》加入旁白，曲目不同。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9301,10 +9301,10 @@
         "curatorRisk": "MB rgMbid ce100933-bf0d-386f-b358-8be5d90559d1，1997-04-23。標題 'Visions' 極常見，去重須綁藝人。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9368,10 +9368,10 @@
         "curatorRisk": "MB rgMbid 3443d8ea-6d7d-3d9e-b613-f9df853438c4，1997-01。標題結尾省略號有 '…' 與 '...' 兩式，字串去重易失敗。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9439,11 +9439,11 @@
         "curatorRisk": "MB rgMbid 2b3b9d3a-af4d-3c29-a46f-3179cccf0f7f，1993-09-09。藝人名有 'Eyehategod' / 'EyeHateGod' 兩式（大小寫），字串去重須不分大小寫。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -9506,10 +9506,10 @@
         "curatorRisk": "MB rgMbid 2c33e8a0-b2be-3224-8748-92e1d8ea948e，2009-05-18。藝人名含括號與右括號序列 'Sunn O)))'，正則比對必須跳脫，是本批最容易寫壞 grep 的一筆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9573,10 +9573,10 @@
         "curatorRisk": "同名藝人陷阱嚴重：'Ghost' 另有日本迷幻民謠團 Ghost（1984–）等多組，且本團 2013 年在美國曾被迫改稱 'Ghost B.C.'。本盤 rgMbid 929528f5-dc81-4e1a-bfdd-aae2842c52d2（2010-10-18）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9640,10 +9640,10 @@
         "curatorRisk": "MB rgMbid 02be3272-739c-46a4-9668-1d7dab9cc17e，2015-08-21。同名藝人陷阱同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9707,10 +9707,10 @@
         "curatorRisk": "MB rgMbid f2f3d37e-7099-37c4-8e94-085b3b4a374a，2002-05-13。版本陷阱：2005 年重混／重母帶版曲目與音色明顯不同。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9777,11 +9777,11 @@
         "curatorRisk": "MB rgMbid efea26d1-a016-30f6-b8e2-bc8c02336b0a，first-release-date 標 2001-01-27（實際國際發行 2001-07-30、美國 2001-10-09；MB 日期偏早）。版本陷阱明確：美版抽掉《New York City Cops》換上《When It Started》，且封面在美國另換一版。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -9845,10 +9845,10 @@
         "curatorRisk": "MB rgMbid 91811b68-aa6e-35b3-a5e1-6a2733eb6ae9，1984-02-20。藝人名＝專輯名。製作爭議：John Porter 重錄了 Troy Tate 的原始版本，坊間流通的 Troy Tate sessions 非官方盤，勿取。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -9915,11 +9915,11 @@
         "curatorRisk": "MB rgMbid de790d3d-a35c-364c-a8fb-adfb73084a45，1983-04-11。藝人名含點號（R.E.M. / REM 兩式）是字串去重的持續風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -9982,10 +9982,10 @@
         "curatorRisk": "MB rgMbid eec55734-1387-3aa3-af3d-ff0ae8083806，1984-04-17。標題 'Reckoning' 常見，去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10049,10 +10049,10 @@
         "curatorRisk": "MB rgMbid 8b6b2628-7bd4-3fed-9d65-cf4e5dc45939，1986-07-28。標題官方無撇號（Lifes，非 Life's），字串比對易被「修正」而漏掉。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10116,10 +10116,10 @@
         "curatorRisk": "MB rgMbid 137385b2-b4cc-385e-9d59-781e7674f5bc，1987-08-31。標題 'Document' 極常見詞。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10183,10 +10183,10 @@
         "curatorRisk": "MB rgMbid 16a9cef3-b470-3ae1-bf10-cc04232d3e21，1988-11-07。標題 'Green' 極常見詞，去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10250,10 +10250,10 @@
         "curatorRisk": "MB rgMbid 7d026b9c-9159-34b5-a40d-14f134718394，1990-08-28。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10317,10 +10317,10 @@
         "curatorRisk": "MB rgMbid 943b191f-616f-4091-8516-0979987b5eef，2014-03-18。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10384,10 +10384,10 @@
         "curatorRisk": "MB rgMbid a08e02b3-f076-42c2-9a6a-374e15eda4fe，2017-08-25。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10451,10 +10451,10 @@
         "curatorRisk": "MB rgMbid 4f8bb33f-9e2d-34dc-8852-5d591cc104d8，1994-03-01。同名藝人陷阱：'Beck' 另有 Jeff Beck（池內可能已有）、Robin Beck、日本動畫樂團 BECK 等，去重須確認為 Beck Hansen。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10518,10 +10518,10 @@
         "curatorRisk": "MB rgMbid df0bfd42-78a9-40c3-a45f-a12e10d446f8，1996-06-17。同名藝人陷阱同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10585,10 +10585,10 @@
         "curatorRisk": "MB rgMbid 5f84e8b9-b8e5-3fbf-b514-0192a62d88b6，2002-09-21。同名藝人陷阱同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10652,10 +10652,10 @@
         "curatorRisk": "MB rgMbid 1a021034-95d1-3a2d-bdca-73b25e455e49，1999-05-17。版本陷阱：UK 版曲序與混音與 US 版不同（UK 版另有數首重混）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10719,10 +10719,10 @@
         "curatorRisk": "MB rgMbid 54b1ad4e-7e86-308d-b053-a0843f6abbdb，2002-05-13。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10786,10 +10786,10 @@
         "curatorRisk": "MB rgMbid 09c61550-5780-3fb4-b5ec-8b873fe4e8a9，1998-09-19。撇號（Deserter's）為字串風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10853,10 +10853,10 @@
         "curatorRisk": "MB rgMbid 7413db7e-163c-4e48-bd8e-c41fd466b2c1，2016-05-20。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10921,10 +10921,10 @@
         "curatorRisk": "版本陷阱嚴重（本批最需注意的一筆）：MB 上共存《Twin Fantasy (Face to Face)》(2018-02-16, rgMbid eeab54c6-ad8d-40c9-b595-87bae6a42397)、《Twin Fantasy (Mirror to Mirror)》(2011 原作)、《Twin Fantasy (Heart to Heart)》(2022)、《(Side to Side)》(2023 remix)、以及兩張 demo 輯。稽核只寫「Twin Fantasy (2018)」不足以定位，本筆已改用完整副題。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -10989,10 +10989,10 @@
         "curatorRisk": "MB rgMbid 90149cca-46f4-3985-8d5f-0d1559daa028，1994-04-27。稽核原列「Foolish 或 No Pocky for Kitty」二選一，取 Foolish。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11056,10 +11056,10 @@
         "curatorRisk": "MB rgMbid 1a366c4d-abb2-4b1f-8301-ba02d562fa98，1993。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11121,10 +11121,10 @@
         "curatorRisk": "MB rgMbid 1feb6a47-2725-3f26-9762-3dc0ecffe4de，2000-05-08。標題刻意拼錯（Sophtware），字串比對易被自動更正而漏掉。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11189,10 +11189,10 @@
         "curatorRisk": "MB rgMbid 209b45b7-8b2f-3e07-b194-efff9cde80dd，1997-04-08。連字號寫法（Sleater-Kinney）須一致。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11257,10 +11257,10 @@
         "curatorRisk": "MB rgMbid b7d0d3f5-8980-32c6-995d-db6f8226f1ca，2005-05-24。標題 'The Woods' 常見，去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11325,10 +11325,10 @@
         "curatorRisk": "MB rgMbid c17055ca-cef5-4edf-bb76-fcfa4c62d53c，2012-08-15。注意 2013 年 What's Your Rupture? 重發，屬同一 release-group。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11393,10 +11393,10 @@
         "curatorRisk": "MB rgMbid 3353a8a0-a5ab-4970-b34e-090afcc2bba7，2016-04-08。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11460,10 +11460,10 @@
         "curatorRisk": "MB rgMbid d147f6f8-1ca1-3df0-acd9-3c81808f2822，2005-09-27。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11527,10 +11527,10 @@
         "curatorRisk": "MB rgMbid 4fb19c93-dc39-3f09-9859-a4a4de2cfa85，2007-05-14。藝人名 'Battles' 為常見詞，標題 'Mirrored' 亦然，去重須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11594,10 +11594,10 @@
         "curatorRisk": "MB rgMbid 61a34a5e-37ea-3f7b-a462-e645b96108df，2000-04-10。無同名風險。註：複驗確認 The White Stripes 池內已有五張，稽核所稱「三團全缺」不成立，但 The Hives 確實零張。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11661,10 +11661,10 @@
         "curatorRisk": "MB rgMbid db966c6a-8a3d-3868-afec-7829914d64e0，1993-10-26。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11728,10 +11728,10 @@
         "curatorRisk": "MB rgMbid dd338401-34df-3e15-8855-c85be96c1a3a，1999-03-30。藝人名 'Low' 是全批最短、最易誤命中的字串（另有多組同名），去重須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11795,10 +11795,10 @@
         "curatorRisk": "MB rgMbid 373f9395-2485-340c-986a-91b2f569b623，2002-09-23。標題 'Trust' 極常見；藝人名同上陷阱。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11863,10 +11863,10 @@
         "curatorRisk": "MB rgMbid b835ce22-736e-4338-8a88-f558daa84d60，2021-09-10。標題官方全大寫（HEY WHAT），大小寫不敏感比對是必要的。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11930,10 +11930,10 @@
         "curatorRisk": "MB rgMbid 3268fd9c-ff8f-36f2-a21f-d53f24332d12，1995-03-28。命名陷阱：樂團有兩張 1993 年同名專輯（俗稱 Rollercoaster 與 Bridge），池內既有鍵已用括號區分，本筆不受影響。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -11997,10 +11997,10 @@
         "curatorRisk": "MB rgMbid 139029f7-5ac9-31bf-a756-016384c6a771，1996-07-23。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12065,10 +12065,10 @@
         "curatorRisk": "MB rgMbid 4162ce38-f5d0-32e8-8f69-d5e49a9c71a8，1990。同名陷阱：Ornette Coleman 有同名專輯《This Is Our Music》(1961)，去重與抓卡須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12132,10 +12132,10 @@
         "curatorRisk": "MB rgMbid 30326d93-f37d-34bb-a697-981054a2183c，1993。標題 'Mercury' 極常見（另有 Longpigs、Madder Rose 等同名盤），去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12199,10 +12199,10 @@
         "curatorRisk": "MB rgMbid 2eaf4eef-f6bb-3fff-a4e2-79d639bde1d0，1989-09-12。無同名風險；注意本盤常被歸為原聲帶，但屬正規個人專輯。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12266,10 +12266,10 @@
         "curatorRisk": "MB rgMbid 689c9051-6047-3999-bbe2-7c6b0b879fc5，1993。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12334,10 +12334,10 @@
         "curatorRisk": "MB rgMbid f1afe4a3-5d81-3112-a048-999ad80db702，1998-01-27。藝人名 'Hum' 極短且為常見字，去重誤命中率高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12398,10 +12398,10 @@
         "curatorRisk": "MB rgMbid fc3cf08c-3273-3af3-84ed-ab9782a72505，2002-11-04。命名陷阱：樂團名歷年在 'Godspeed You Black Emperor!' 與 'Godspeed You! Black Emperor' 之間移動過驚嘆號位置，池內既有鍵用後者。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12465,10 +12465,10 @@
         "curatorRisk": "MB rgMbid 36dff0d7-42b6-3174-88df-71a2fc5ad729，2007-02-12。標題含逗號與撇號，字串處理注意。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12533,10 +12533,10 @@
         "curatorRisk": "年份兩說（已判定）：MB first-release-date 作 1990（rgMbid 278a7d7b-8c72-31dd-8626-347188371ab3），但英文維基載 1990 錄音、1991-03-18 由 One Little Indian 發行——MB 為錄音年汙染，採 1991。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12600,10 +12600,10 @@
         "curatorRisk": "MB rgMbid 80a0451a-d135-3517-96e4-3629dc4f66b9，1994-10-31。credit 陷阱：本盤為 'Tom Petty' 個人名義，與同批的 'Tom Petty and the Heartbreakers' 是不同 MB 藝人，池內兩種鍵並存，去重須分開處理。另注意 2020 年《Wildflowers & All the Rest》為擴充版。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12668,10 +12668,10 @@
         "curatorRisk": "MB rgMbid 59cb1d59-e0c8-37f0-a2af-9bc8df64f6cd，1976-11-09。藝人名＝專輯名。同名陷阱最需注意：與本批同時收錄的 Johnny Thunders 團 'The Heartbreakers'（《L.A.M.F.》）在字串上高度衝突。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12739,11 +12739,11 @@
         "curatorRisk": "MB rgMbid ddaa457c-0b1f-3511-9a4a-e19ae2af0dab，1990。同名陷阱：Carter Family 原曲、以及 2000 年代多筆同名合輯／致敬盤易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -12807,10 +12807,10 @@
         "curatorRisk": "MB rgMbid 639173f4-e6ae-3470-b105-693d1a805e66，1991-09-17。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12875,10 +12875,10 @@
         "curatorRisk": "MB rgMbid 054c4dd8-a36b-32c5-9320-c0aaf10cbb98，1992-09-28。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -12943,10 +12943,10 @@
         "curatorRisk": "MB rgMbid 1ea16c44-6bc9-314e-9c0b-ecb54d549d13，1995-02-14。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13010,10 +13010,10 @@
         "curatorRisk": "MB rgMbid 49e94e1c-ee94-31b8-8266-07cbefd0e965，1988-10-17。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13077,10 +13077,10 @@
         "curatorRisk": "MB rgMbid 5fceac69-fc0e-3275-b289-3365fd4b0ae3，2004-08-24。附帶發現：池內 'Drive-By Truckers|Pizza Deliverance' 與 '|Welcome 2 Club XIII' 各出現兩次，建議一併清理重複鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13144,10 +13144,10 @@
         "curatorRisk": "年份兩說（已判定）：MB first-release-date 作 2000（rgMbid 19bb5680-37ee-310a-a98e-0458d02223c2），但英文維基載 2001-05-22 由 Lost Highway 發行，2000 為完成／原定發行年——採 2001。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13212,10 +13212,10 @@
         "curatorRisk": "MB rgMbid 8df5ff09-5288-3669-8ec4-efb83a2fe76c，1997-06-17。藝人名含撇號與數字（Old 97's），字串去重易失敗。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13279,10 +13279,10 @@
         "curatorRisk": "MB rgMbid 4ae785f1-e986-3909-ab99-30e32024f94a，2000-02-08。標題 'Nixon' 為專有名詞，去重須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13346,10 +13346,10 @@
         "curatorRisk": "MB rgMbid a22417bc-7068-3caa-8572-52af24a486eb，2003-02-10。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13413,10 +13413,10 @@
         "curatorRisk": "MB rgMbid 2478de4b-9470-311b-be17-68fb79388e89，1984。標題含問號。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13480,10 +13480,10 @@
         "curatorRisk": "MB rgMbid cb5c7687-5d54-342d-8a4a-04a5ca10fb7e，1987-05。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13547,10 +13547,10 @@
         "curatorRisk": "credit 陷阱：本盤發行時署名 'John Cougar Mellencamp'，MB 藝人統一為 'John Mellencamp'（mbid 0aad6b52-fd93-4ea4-9c5d-1f66e1bc9f0a），本盤 rgMbid cee6fd05-70e9-3052-b8b0-b71a6d3d5a1c（1987-08-24）；直接以專輯名＋'John Mellencamp' 查詢會零結果（實測）。稽核標為選補。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13614,10 +13614,10 @@
         "curatorRisk": "MB rgMbid 69cc7d7d-4405-3f65-b4e7-e35f216f6191，1977-04-15。標題陷阱：原題《Rattus Norvegicus IV》，多數再版簡作《Rattus Norvegicus》；US 版題為《I.V.》且曲目不同。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13681,10 +13681,10 @@
         "curatorRisk": "MB 正規盤 b39bd261-49e7-3ac0-9fee-baf413ca3c45（1977-09-23），另有 2007 年同名合輯（873a1ca4）易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13748,10 +13748,10 @@
         "curatorRisk": "MB rgMbid 16cc9dfc-594d-3fb9-b789-3e1bfcb6f9f8，1983-05。標題含逗號與 '&'（and 的 grep 陷阱）。版本陷阱：多數 CD 版加入《Blue Monday》《The Beach》，黑膠原版無。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13815,10 +13815,10 @@
         "curatorRisk": "MB rgMbid 38d65202-a589-38ad-bf19-6161193340ee，1966-12-09。版本陷阱：UK 與 US 版曲目不同（US 版加入《I Feel Free》），另有 mono/stereo 兩版。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13883,10 +13883,10 @@
         "curatorRisk": "版本陷阱明確：1966-12 初版與 1967-03 重壓版曲目不同（重壓版抽掉《Baby Don't Scold Me》換入《For What It's Worth》）。MB 正規盤 045b64e4-2bec-3b56-a94c-7a892a5f47c2（1966-12-05），另有 1973 年同名雙合輯（54680b54）。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -13951,10 +13951,10 @@
         "curatorRisk": "版本陷阱嚴重：UK Regal Zonophone 版不含《A Whiter Shade of Pale》（單曲另發），US A&M 版含之且曲序不同。MB 正規盤 59c4b156-e1f6-374c-a5e6-ea0ccd51d433（1967-09-01），另有 1975、1980 兩筆同名合輯。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14018,10 +14018,10 @@
         "curatorRisk": "MB rgMbid 7527bd60-1df3-3f43-8d12-b7a5e8ee265c，1967-12。版本陷阱：US 版題為《Heaven Is in Your Mind》且曲目、封面皆不同。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14086,10 +14086,10 @@
         "curatorRisk": "MB 正規盤 4756061c-110f-381b-a2f0-6dc0588d01f2（1972-01-16），另有 2003 年同名合輯（71d39130）。重音陷阱（Ö）：C locale grep 不摺疊，零結果須以去重音鍵複驗。藝人名＝專輯名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14153,10 +14153,10 @@
         "curatorRisk": "MB rgMbid 8a2be060-2b8d-33a8-9c4b-d484b6a40d7f，1971-11。標題 'Killer' 極常見。註：'Alice Cooper' 1971 年時仍是樂團名而非 Vincent Furnier 個人藝名，MB 統一為同一藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14220,10 +14220,10 @@
         "curatorRisk": "MB rgMbid 9e038b79-8be1-3cf1-bdd6-62f4842ab665，1972-06。撇號（School's）為字串風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14287,10 +14287,10 @@
         "curatorRisk": "MB rgMbid c0787405-1e45-4cb3-b2c4-41cffb1c9ae0，1984-06-24。版本陷阱：原始為 6 曲 EP／mini-LP，US 版加入《Emperor's Return》曲目成 8 曲，各版曲數不一。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14355,10 +14355,10 @@
         "curatorRisk": "MB rgMbid f59748ca-e393-368e-8b7d-abd94791e96f，1984-10-02。藝人名＝專輯名。歷史人物 Elizabeth Báthory 相關的其他藝人／專輯易誤配。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14422,10 +14422,10 @@
         "curatorRisk": "MB rgMbid e8459360-b0d1-331e-a1e7-9717c962d29f，1974-02-15。標題 'Burn' 為極常見字串，去重誤命中率高（實測命中多筆無關專輯），須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14489,10 +14489,10 @@
         "curatorRisk": "MB rgMbid b00fbf7c-ebaf-3ec0-91d6-5eaad124d58f，1982-04-10。同名陷阱高：'Blackout' 為極常見標題（去重時實測命中 Britney Spears 同名盤），須綁藝人。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14556,10 +14556,10 @@
         "curatorRisk": "credit 陷阱：MB artist-credit 為 'Frank Zappa and The Mothers of Invention'（rgMbid 19b7d4eb-0fe2-318f-a1f5-242a2e731b4b，1975-06-25），池內 'Frank Zappa' 與 'The Mothers of Invention' 兩個鍵並存，直接以 'Frank Zappa' 查詢會零結果（實測）。建議掛在 'Frank Zappa' 下並註明合作 credit。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14623,10 +14623,10 @@
         "curatorRisk": "MB rgMbid 664ffb4c-8178-3f99-b0d3-0bab3a51f793，1980-01-01。無同名風險。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14690,10 +14690,10 @@
         "curatorRisk": "MB rgMbid bf543d9f-f0de-3f46-87b4-f9cddf58806b，1989-01-10。標題 'New York' 為極常見字串，去重誤命中率極高，須用完整鍵。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -14757,10 +14757,10 @@
         "curatorRisk": "MB rgMbid d716a4c9-f22c-40d5-9008-749863f61da3，1972-11，primary-type=Album，secondary-types=Compilation,Live（現場＋錄音室補錄），若卡池對現場／合輯有規則須套用。同名陷阱：另有《Europe '72 Volume 2》(2011)、《The Complete Recordings》(2011) 與 22 張分場輯，須綁 mbid。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     }

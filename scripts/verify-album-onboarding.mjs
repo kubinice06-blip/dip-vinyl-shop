@@ -50,7 +50,7 @@ const isHttps = value => typeof value === 'string' && /^https:\/\//i.test(value)
 // 靜態試聽路徑 helper：與 dip-player.js appleAudioKey / card-preview-status.js 鍵一致
 const previewNorm = value => String(value || '').normalize('NFKD').toLowerCase()
   .replace(/[\u0300-\u036f]/g, '')
-  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]+/g, '');
+  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]+/g, '');
 let _staticMap, _staticStatus;
 function staticAudioMap() {
   if (_staticMap !== undefined) return _staticMap;

@@ -48,7 +48,7 @@ const cardIdOf = (artist, album) => `${artist}|${album}`.toLowerCase().replace(/
 // 靜態試聽地圖：見 scripts/build-apple-audio-map.mjs 的 cardKey（NUL 分隔，保留 CJK）
 const normalized = v => String(v || '').normalize('NFKD').toLowerCase()
   .replace(/[̀-ͯ]/g, '')
-  .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
+  .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
 const audioKeyOf = (artist, album) => `${normalized(artist)}\u0000${normalized(album)}`;
 // 去重比對用：與 scripts/pool-keys.mjs 同規則（摺 U+2010–2015 連字號，否則 a-ha 這類必然漏判）
 const poolKeyOf = (a, b) => [a, b].map(s => String(s || '').toLowerCase()
@@ -168,7 +168,11 @@ if (WRITE_PREVIEW) {
   fs.writeFileSync(AUDIO_MAP, JSON.stringify(audioMap, null, 1));
   if (negAdds.length) {
     const lines = negAdds.map(([k, v]) => `  ${JSON.stringify(k)}: ${JSON.stringify(v)},`).join('\n');
-    const next = statusRaw.replace(/\n\}\);\s*$/, `\n${lines}\n});\n`);
+    // 交界防呆（2026-08-28 實踩）：既有檔案的最後一筆可能沒有尾逗號，
+    // 直接往 `});` 前面塞新行會讓整檔語法壞掉。先確保交界處有逗號再附加。
+    const next = statusRaw
+      .replace(/("\s*:\s*"[a-z]+")(\s*\n\}\);\s*)$/, '$1,$2')
+      .replace(/\n\}\);\s*$/, `\n${lines}\n});\n`);
     if (next === statusRaw) {
       console.error('中止：card-preview-status.js 的結尾格式不符預期，未寫入。');
       process.exit(1);

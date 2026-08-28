@@ -62,10 +62,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album**（RG 2b27b487-17b7-49ec-a6ca-1e7573ab9cd0，artist 5fc2615d-f4b5-4de4-acf6-980aefdf316f「Ladybug」，country TW、disambiguation『Taiwanese punk band』、alias 瓢蟲／瓢虫）。該 artist 目錄只有兩筆：1997 Album《Ladybug》與 1998 EP《Let the Spaceman Dance》，所以本團的正規專輯只有這一張。MB 上有兩個 release：TW 1997（[no label]、CD、14 軌）與 US 1998（Shock, shock003、CD、14 軌）。**陷阱一**：MB artist 主名建成英文 Ladybug，中文只在 alias，卡池鍵請用中文「瓢蟲」。**陷阱二**：中文維基〈水晶唱片〉條目第 47 行的內鏈是 [[瓢蟲 (乐队)|瓢虫]]，實際抓取該條目 raw 得到的是「LADY BiRD（レディバード），日本東京澀谷的音樂製作團隊，2007 年由 CLUB ATOM 常駐 dj TEN 及 KAZUHISA HIROTA 組成，隸屬 Ariola Japan」——完全不是本團，任何引用該內鏈的敘述都要丟掉。**Apple TW 無**（itunes search「Ladybug 瓢蟲」「瓢蟲 樂團」皆零命中，撈到的全是《Miraculous Ladybug》卡通歌）；CAA 也無，封面只能靠實體掃圖或不上架。專輯名與藝人名撞名嚴重（The Ladybug Transistor、英國 Ladybug、日本 LADYBUG），入卡池務必綁 MB RG id。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -128,10 +128,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG b039623c-94a1-44e5-8402-216d6ea5dcd5，artist 66dcb8ed-ca1f-4115-b8e0-17e7438e8b0e、country TW、disambiguation『Taiwanese chamber music group』）。MB 有兩個 release：XW 英文標題 Pieces、TW 中文標題《散落的時光》（小白兔 WWR025）；卡池取台灣盤的中文標題，英文 Pieces 進 aliasReview。**Apple TW 有**（artistId 1483724320、collectionId 470381339、9 軌、℗ 2011 White Wabbit Records，但 Apple 上的標題是英文 Pieces 不是中文）。同名團風險：Apple 另有一個 artistId 79382440 的「Cicada」頁面（primaryGenre 舞曲）混雜英國 Critical Mass 舞曲團，抓圖務必鎖 1483724320。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -196,10 +196,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG b51d6d35-5095-4aaa-9d62-ea9d8917fbd2，first release 2012-07-01；MB 有 XW 英文標題 Let’s Go 與 TW 中文標題《一起走吧》兩個 release）。**Discogs 完全查無此盤**（q=Cicada 一起走吧、Cicada Let's Go 皆零命中），廠牌／編號只有 MB 的『StreetVoice』一個來源，無第二方交叉驗證。**Apple TW 有**（artistId 1483724320、collectionId 1594333336、releaseDate 2012-07-07、9 軌、℗ 2012 Cicada）——注意 Apple 日期 07-07 與 MB 的 07-01 差六天。英文標題在 MB 上用的是彎引號 Let’s Go，寫入時別誤打成直引號。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -264,10 +264,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 971b54b3-3e55-4a0a-9e93-afc01ae27ff0，2013-08-02）。**Apple TW 有**（artistId 1483724320、collectionId 1594304688、7 軌、℗ 2013 Cicada）。廠牌兩處來源不一致（Discogs=ULOUD MUSIC / INFRA910，MB TW release=StreetVoice），上架時廠牌欄建議留空或並列。策展指示裡提到的《白色海岸線》查無此盤——正確盤名是《邊境消逝》，「白色」出現在 2017《不在的你們都去了哪裡 White Forest》與 2025《凝視白色的邊界》，不要混。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -332,10 +332,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG c436885a-3e92-4b8d-8f92-1a7b1b110e7d，first release 2015-09-19）。MB 的台灣 release 日期標成 2023-04-25（那是風潮 TCD-9282 再版），首版 2015 的 release 沒有 country，年份請以 RG first-release-date 為準。Discogs 交叉確認：Dear Musik DEAR-013、2015、Taiwan、CD Album。**Apple TW 有**（artistId 1483724320、collectionId 1738175767、9 軌、℗ 2015 Cicada）。策展指示提到的《仰望，星空》查無此盤，正確盤名是《仰望海平面》。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -401,10 +401,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 77c2b371-61d8-4acb-baf9-81a8cde9cd76，2017-11-23）。**標題雙軌**：CD 版在 Discogs／flau 上叫 White Forest，台灣盤與黑膠叫《不在的你們都去了哪裡》，MB 的 TW release 標題是「不在的你們都去了哪裡 White Forest」中英並列。卡池取中文，White Forest 進 aliasReview。**Apple TW 有**（artistId 1483724320、collectionId 1591146762、7 軌、℗ 2017 Cicada，Apple 上標題用中文）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -470,10 +470,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG e4aa3509-8dc7-42eb-a382-814bcc7055eb，2019-10-30，MB 下掛四個 release：XW／US／XW 中英並列／TW 2023 風潮再版）。**Apple TW 有**（artistId 1483724320、collectionId 1483724319、9 軌、℗ 2019 WINDIE Music）。標題同樣中英並列（MB 作「走入有霧的森林 Hiking in the Mist」），卡池取中文。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -539,10 +539,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG f046dc45-66a3-4375-aa9b-f7310eca58d6，first release 2023-01-06）。**年份有爭議**：MB RG 與 Apple 都記 2023-01-06（flau FLAU101 國際版），但 Discogs 的台灣 CD（Windie music TCD-5348）標 2022，黑膠 LP-5348 標 2023-03-10。本欄採 MB／Apple 的 2023；若店主偏好台灣首發年，應改 2022。另注意 MB 上同名的 2022 單曲 RG（primary-type Single）不要誤抓。**Apple TW 有**（artistId 1483724320、collectionId 1659967937、9 軌、℗ 2023 WINDIE Music）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -607,10 +607,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 0d0e4b08-9243-415c-a0e4-d9c2affafd32，first release 2025-01-22；MB 有中英並列 release「凝視白色的邊界 Gazing the Shades of White」Wind Music TCD-5352 與純英文 release）。Discogs 上台灣盤編號打成 TDC-5352（疑似 typo，日本 flau 為 FLAU111）。**Apple TW 有**（artistId 1483724320、collectionId 1845054020、8 軌、℗ 2025 WIND MUSIC，但 Apple 的 releaseDate 標 2025-10-30，與 MB 的 2025-01-22 差近十個月，Apple 應為數位重新上架日）。2026 年另有《Gazing the Shades of White (The Remixes) - EP》，抓封面時別抓成 remix EP。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -681,10 +681,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG d512ded9-2646-4020-87b7-1d7e414b491b，2024-08-20，TW release 風潮 TCD-5350、CD、5 軌）——但 **MB 的 Album 標記可能過寬**：Discogs 把同一筆建成「CD, Mini-Album」，Apple TW 的標題直接寫《回返 (十五週年自選集)》，5 軌的長度也接近 EP。若店內 §5.5 的 EP 規則從嚴，這筆應該被擋下，故列 low。**Apple TW 有**（artistId 1483724320、collectionId 1755135171、5 軌、℗ 2024 WINDIE Music，Apple releaseDate 2024-07-19 早於 MB 的 2024-08-20）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -756,10 +756,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、secondary-type 空**（RG d709f863-c447-4a51-9c64-1b780f2d80f7，2016-03-12，XW、Digital Media、14 軌）——**但 MB 的分類存疑**：Discogs 兩個實體版本的 notes 都明寫「Early works of Cicada」，實質是早期作品輯而非新錄音的正規專輯，故列 low 讓店主決定。**Apple TW 有但掛錯藝人**：搜到的《Farewell》(collectionId 1089108994、14 軌、℗ 2016 Cicada) 掛在 artistId **79382440** 底下，而該頁面 primaryGenre 是「舞曲」、目錄裡九成是英國 Critical Mass 的舞曲團 Cicada（Roulette、One Beat Away、Hit My Ego…），只是混進了本團的 Farewell、Dawn After Darkness、A Man Main Theme 三筆。抓封面可用，但**絕不能用 79382440 當本團的 artistId**。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -824,10 +824,10 @@
         "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 2184dbd1-3083-4f27-b3c5-7d4933c6e2d7，first release 2002-12-24，artist bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c、country TW）。該 artist 在 MB 上只有三筆：1999 Album《Miss Perfect》、2002 Album《她的。發光搖擺》、2005 EP《米》。**廠牌兩說**：中文維基寫嘉瑪音樂，Apple 的 ℗ 卻是「2002 Sony Music Entertainment Taiwan Ltd.」（可能是後來的數位版權方），上架時廠牌欄要擇一或留空。**Apple TW 有**（artistId 767258254、collectionId 1498913444、13 軌，artworkUrl 可取）。藝名 Ciacia／ciacia her／Patricia Ho／Her Sheen Sway 多名並存，卡池鍵沿用 batch-tw 的裁定用中文本名「何欣穗」。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -913,10 +913,10 @@
         "curatorRisk": "**MB 未建檔**——何欣穗的 MB artist（bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c）目錄只有 1999／2002／2005 三筆，這張完全不在 MB 上，因此**沒有 MB primary-type 可查**，只能靠中文維基＋Apple 認定為專輯（非 EP）。**標題兩寫法**：中文維基作《She and Me》，Apple TW 作《She & Me》，需擇一並把另一個放 aliasReview。**軌數與日期不一致**：維基列 9 軌、2013-05-20、風和日麗唱片行；Apple 為 8 軌、2013-05-01、℗ 2013 Dear Musik。**Apple TW 有**（artistId 767258254、collectionId 1534721131，artworkUrl 可取），封面沒問題。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     }

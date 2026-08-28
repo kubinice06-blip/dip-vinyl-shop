@@ -757,10 +757,13 @@
     return null;
   }
 
+  // NFKD 會把韓文音節拆成 Jamo（U+1100 區），保留類必須含 Jamo 區段，
+  // 否則純韓文卡的鍵全被剝成空字串、互相撞鍵（2026-08-28 修）。改這裡要同步改
+  // build-apple-audio-map / publish-manifest / verify-* 與 worker normalizePlayback。
   function normalizePreviewText(value) {
     return String(value || '').normalize('NFKD').toLowerCase()
       .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9㐀-鿿぀-ヿ가-힯]+/g, '');
+      .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
   }
 
   function appleAudioKey(artist, album) {

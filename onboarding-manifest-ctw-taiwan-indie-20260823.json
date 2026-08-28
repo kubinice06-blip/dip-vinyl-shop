@@ -60,10 +60,10 @@
         "curatorRisk": "MB 已建檔（2014）。專輯名中間的間隔號有「．」「‧」「·」多種寫法，鍵值容易對不上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -129,10 +129,10 @@
         "curatorRisk": "MB 已建檔（刺客／你家是個動物園／1993）。團名 Discogs／維基寫「刺客合唱團」「刺客樂團」「刺客」三種，英文拼寫 Assasin（維基誤拼）／Assassin 並存，grep 要多寫法。中文維基條目掛著「無來源」與「關注度」模板，敘述須另行查證。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -196,10 +196,10 @@
         "curatorRisk": "MB 已建檔（Finders Keepers 2006-02-21、單曲 2006-12-25）。團名純英文且含 8mm，MB／Discogs 搜尋會被大量日本黑膠編號「28MM 00xx」污染，查詢要鎖 artist 而非關鍵字。封面須本機掃圖。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -263,10 +263,10 @@
         "curatorRisk": "團名是純數字「1976」，pool-all-keys.txt 裡「1976」會撈到 126 筆年份誤中（Electric Light Orchestra 等），去重必須用 artist 欄位精確比對而不是全行 grep。MB 對 1976 早期水晶時期作品建檔不完整，這張要單獨確認。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -331,10 +331,10 @@
         "curatorRisk": "同上，「1976」作為藝人鍵與年份欄位衝突。發行日 2009-11-06（中文維基）與部分通路標 2009-11 有出入。MB 對此張建檔情形需個別確認。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -399,10 +399,10 @@
         "curatorRisk": "MB 已建檔（董事長樂團／你袂了解／2000-03）。年份最大爭議點：坊間與部分通路把《你袂了解》標成 1999，那其實是單曲《攏袂歹勢》的年份，入庫時要在簡介裡講清楚以免被讀者質疑。台語書寫「袂」有時被寫成「不」或「𣍐」。卡池已有《眾神護台灣》(2010)，不要重複。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -464,10 +464,10 @@
         "curatorRisk": "MB 已建檔。與同時期《爛頭殼》(VCD) 容易混淆，Discogs 上《爛頭殼》掛的是 Loh Tsui Kweh Commune 英文名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -532,11 +532,11 @@
         "curatorRisk": "MB 已建檔（零與聲音解放組織／Z.S.L.O./1994）。廠牌名就叫「Noise」，極難在資料庫裡定位；三種載體（CD／卡帶／VHS）同年並存，容易選錯版本。中文維基無條目。封面須本機掃圖。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -623,11 +623,11 @@
         "curatorRisk": "MB 查無，須走人工身分路線。**標題有三種**：原版《把我自己掏出來》、查禁後改版的《把我自己收回來》，Discogs 上另有一筆寫《把我自己掏回來》，三者都指同一張，是本批最容易對錯鍵的一筆。年份中文維基寫 1990（查扣年）、Discogs 寫 1989（錄製／首版年），須擇一並在簡介註明。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
         "seedCards": false,
-        "apexPool": false
+        "apexPool": true
       }
     },
     {
@@ -710,10 +710,10 @@
         "curatorRisk": "MB 查無台灣的 Double X（MB 上 Double X 全是歐美同名團），必須走人工身分路線，且極易誤匹配。英文名 Lyin' Idiot / lying idiot 拼法不一。年份 1988（卡帶）vs 1989（CD 再版）要擇一。中文維基「Double X」是紅連結。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -774,10 +774,10 @@
         "curatorRisk": "MB 對雷光夏早期水晶作品建檔需個別確認。1995 年水晶盤與後來的再版封面不同。中文維基「水晶唱片」條目列她為個人藝人，但沒有專輯層級的來源。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -862,10 +862,10 @@
         "curatorRisk": "MB 查無，須走人工身分路線；Discogs 也只建檔了 2012《地下人》與 2014《情慾教室》，2000 年首張查無。團名有「夾子電動大樂隊／夾子樂團／夾子太硬啦」三代寫法，同一批人不同時期不同名，分類要小心。中文維基條目掛「無來源」模板。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -927,10 +927,10 @@
         "curatorRisk": "MB 已建檔（脫拉庫／飛向陽光飛向你／2000-07-07），但只有這一張，其餘作品要人工補。團名英文 Truck / Tolaku 寫法不一。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -992,10 +992,10 @@
         "curatorRisk": "MB 以「閃靈」查詢撈不到這張（MB 上多掛在 ChthoniC 名下），要用英文團名交叉查。Discogs 上同時有 DVL-000666 與 DVL-000667 兩個編號的中／英版本，選版要決定。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1060,10 +1060,10 @@
         "curatorRisk": "MB 建檔情形須個別確認（閃靈作品多掛 ChthoniC）。專輯名英文 Relentless Recurrence，中英版本並存。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1129,10 +1129,10 @@
         "curatorRisk": "MB 已建檔（圖騰樂團／我在那邊唱／2006-04-07）。團名「圖騰」二字在 MB／Discogs 上與英文 Totem 大量同名團衝突。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1214,10 +1214,10 @@
         "curatorRisk": "MB 以「圖騰」查詢只撈到第一張，這張須人工確認。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1301,10 +1301,10 @@
         "curatorRisk": "MB 查無這張（MB 只有 2012《發生了什麼事？》），須走人工身分路線或用日版對照。Discogs 上以英文團名 Kou Chou Ching 建檔，中文「拷秋勤」搜尋撈不到，雙向查是必要的。標題含多個驚嘆號，鍵值正規化要小心。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1369,10 +1369,10 @@
         "curatorRisk": "MB 已建檔（2012-08-31）。標題含全形問號，鍵值要正規化。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1437,10 +1437,10 @@
         "curatorRisk": "MB 已建檔（2013）。中文維基寫《幸福在哪裡？》含問號，MB 也含問號，但部分通路寫《幸福在哪裡》，鍵值要統一。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1506,10 +1506,10 @@
         "curatorRisk": "MB 已建檔（2007-11-30）。中英團名 甜梅號／Sugar Plum Ferry 並存，MB 用「甜梅號」，Discogs 兩個都用，雙向查必要。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1574,10 +1574,10 @@
         "curatorRisk": "MB 已建檔（阿飛西雅／失語的鱷魚社會，須確認 MB 上的年份欄位）。同一批人有 Nipples／妮波寺／阿飛西雅／Aphasia 四個名字，藝人合併關係要先理清楚。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1642,10 +1642,10 @@
         "curatorRisk": "MB 已建檔但年份寫 2003-02-01，Discogs 寫 2002，**年份有兩說**，須擇一並註明。中英團名 薄荷葉／Peppermint 並存，Discogs 條目名是「Peppermint (薄荷葉)」。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1710,10 +1710,10 @@
         "curatorRisk": "MB 已建檔（2008-12-26）。團名「橙草」兩個字太短，中文搜尋雜訊高；英文名 Orange Grass 使用不穩定。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1777,10 +1777,10 @@
         "curatorRisk": "MB 已建檔（熊寶貝樂團／03:53／2006-03-31）。專輯名是純時間格式「03:53」，鍵值裡的冒號可能被切分處理，要注意。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1844,10 +1844,10 @@
         "curatorRisk": "MB 已建檔（929／也許像星星／2008-09），但團名是純數字「929」，MB／pool 比對極易誤中（日期、編號）。中文維基「929樂團」條目是空的（僅 1930 bytes 錯誤頁）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1911,10 +1911,10 @@
         "curatorRisk": "MB 已建檔（傷心欲絕／我愛您 | I Love You／2010-11-01），MB 標題帶英文副標，鍵值要正規化。專輯名「我愛您」三個常用字，搜尋雜訊高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -1979,10 +1979,10 @@
         "curatorRisk": "MB 已建檔（1994）。陳珊妮作品在 MB 上數量多、版本雜（含精選集《精選集 1994~1999》），選版要精確。專輯名很長且含「砍倒」等字，簡繁轉換要小心。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2047,10 +2047,10 @@
         "curatorRisk": "MB 已建檔。魔岩 2001 年結束營運，這張的原始編號與再版狀況要查。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2114,10 +2114,10 @@
         "curatorRisk": "MB 已建檔（賞味期限／1998-01-01）。中文維基無專屬條目，敘述須靠友善的狗發行目錄與二手評論。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2183,10 +2183,10 @@
         "curatorRisk": "MB 已建檔（廢五金／廢五金／1998-04-24），但**只有 MB 一個來源**，中文維基與 Discogs 都查無，團史敘述風險最高的一筆，若查不到二手資料建議降級或先不上。團名「廢五金」在中文語境是「廢金屬回收」的日常用語，搜尋雜訊極高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2251,10 +2251,10 @@
         "curatorRisk": "MB 已建檔（滅火器／海上的人／2009-10-01）。滅火器 MB 條目下作品極多（含大量單曲），選版要鎖 Album。中英名 滅火器／Fire EX./Fire E.X. 三種寫法並存。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2319,10 +2319,10 @@
         "curatorRisk": "MB 已建檔（蘇打綠／蘇打綠／2005-09-03）。蘇打綠 MB 條目下有大量「蘇打綠版」重錄（2022 年後），與 2005 原版容易混；另有 2022《同名專輯（蘇打綠版）》會直接撞名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2387,10 +2387,10 @@
         "curatorRisk": "MB 已建檔，但標題以簡體「舌粲莲花」登錄，繁簡雙向查是必要的。藝名「大支」兩個常用字，中文搜尋雜訊高；英文名 Dwagie 併用。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2473,10 +2473,10 @@
         "curatorRisk": "MB 對 1994 這張建檔不完整（MB 上豬頭皮只有 2004 與 2016/2017 兩三筆），須走人工身分路線；Discogs 有完整三張與編號。藝名「豬頭皮／朱頭皮／朱約信／Jutoupi／Pigheadskin」五種寫法並存，是本批同一人別名最多的一筆。專輯名的破折號寫法不一。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2540,10 +2540,10 @@
         "curatorRisk": "MB 已建檔（新寶島康樂隊／新寶島康樂隊／1992-07）。專輯編號規則特殊（第二輯、第樹輯、第舞輯、第狗張），諧音命名容易在資料庫裡對錯。同名團名與同名專輯，鍵值需 artist|album|year 三欄一起比對。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2626,10 +2626,10 @@
         "curatorRisk": "MB 查無，須走人工身分路線。團名寫法有「88顆芭樂籽／八十八顆芭樂籽／88 Balaz／88Balaz」四種，是本批最容易漏 grep 的一筆。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2694,10 +2694,10 @@
         "curatorRisk": "MB 已建檔且資料完整（Tizzy Bac 在 MB 上是本批建檔最完整的藝人之一）。同一時期還有 EP《查理布朗與露西》(2004)、《夏季熱》(2005)，選版要精確。2023 有《甚麼事都叫平凡人分心》EP 會撞名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2780,10 +2780,10 @@
         "curatorRisk": "MB 以「回聲樂團」查詢只撈到 2010《處女空氣》，這張須人工身分路線或用英文 Echo 交叉查——而 Echo 在 MB／Discogs 上是極高頻同名詞（Echo & the Bunnymen 等）。Discogs 該筆 catno 標 none。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2848,10 +2848,10 @@
         "curatorRisk": "MB 已建檔（自然捲／C’est la vie／2004-04），但 MB 用的是彎引號「’」，Discogs／金曲名單用直引號「'」，鍵值極易對不上。續作《C'est la vie vol.2》《C'est la vie 2.5 資源回收》會連環撞名。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2916,10 +2916,10 @@
         "curatorRisk": "MB 已建檔（2011-07-08）。2020 再版與 2011 原版同名，選版要決定（黑膠版本存在，可能反而比 CD 好找）。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -2985,10 +2985,10 @@
         "curatorRisk": "MB 已建檔（2013-06-20）。團名四字，英文名 Fierce Tiger Chocolate 使用不穩定。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3054,10 +3054,10 @@
         "curatorRisk": "MB 已建檔（Selfkill／公路白／2012-08-10）。若想改收更具歷史意義的《雨停了之後》(2007)，Discogs 與 MB 都查無該張，年份也未能獨立確認——建議先收 2012 這張。團名英文單字，同名雜訊高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3121,10 +3121,10 @@
         "curatorRisk": "MB 已建檔（棉花糖／小飛行／2009-05-01）。團名「棉花糖」是日常詞彙，中文維基條目名是「棉花糖 (组合)」，簡繁與消歧義後綴都要處理。這筆屬補充性質，非場景硬核。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3189,10 +3189,10 @@
         "curatorRisk": "MB 已建檔（昆蟲白／刺青／2007-04-27）。藝名三字、專輯名「刺青」兩字，中文比對雜訊高；中文維基無條目，敘述來源薄弱。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3254,10 +3254,10 @@
         "curatorRisk": "MB 已建檔（壞女兒／沒有毛的熊／2002-11-01）。團名與專輯名都是常用字組合，中文比對雜訊高。這筆是廠牌史意義大於音樂知名度。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3341,10 +3341,10 @@
         "curatorRisk": "MB 查無（以「迷幻幼稚園」查詢無結果），須走人工身分路線；僅 Discogs 水晶目錄一個來源，團史敘述資料極少。屬補充性質，若查不到二手資料可先不上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3409,10 +3409,10 @@
         "curatorRisk": "MB 已建檔（四分衛／Deep Blue／2001-09-01）。專輯名是常見英文詞組，MB 同名極多，要鎖 artist。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3503,10 +3503,10 @@
         "curatorRisk": "MB 查無，須走人工身分路線。專輯名含注音符號「ㄞ」，字型與輸入在部分環境會出問題，鍵值與封面文字都要測。VA 合輯規則同上。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3570,10 +3570,10 @@
         "curatorRisk": "MB 已建檔。中英名 甜梅號／Sugar Plum Ferry 並存。屬補充性質。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3637,10 +3637,10 @@
         "curatorRisk": "MB 查無，須走人工身分路線。團名四種寫法（88顆芭樂籽／八十八顆芭樂籽／88 Balaz／88Balaz）。Discogs 該筆 catno 為 none。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     },
@@ -3723,10 +3723,10 @@
         "curatorRisk": "MB 查無（MB 上好客樂隊只有一筆 2020《好客戲》），須走人工身分路線。專輯名「愛吃飯」是日常用語，中文比對雜訊高。"
       },
       "published": {
-        "cardCatalog": false,
-        "descriptionKv": false,
-        "albumOverride": false,
-        "seedCards": false,
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
         "apexPool": false
       }
     }
