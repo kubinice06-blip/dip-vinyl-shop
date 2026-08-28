@@ -1,0 +1,728 @@
+{
+  "domain": "musicals-songbook",
+  "albums": [
+    {
+      "artist": "Rodgers & Hammerstein",
+      "album": "Oklahoma!",
+      "rgMbid": "d6603675-74b0-4a50-9fa8-3cb9e77c476f",
+      "mbArtist": "Rodgers & Hammerstein",
+      "mbTitle": "Oklahoma!",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1943",
+      "suggestedYear": 1943,
+      "yearNote": "1943 original Broadway cast recording，Decca Records 發行；史上第一張以完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」（OCR）這個品類。",
+      "upc": null,
+      "upcNote": "MB 該版本查無條碼（1943 年 78 轉年代，早於 UPC 條碼制度）。",
+      "exceptionReason": null,
+      "aliasReview": "MB release-group 掛名 Rodgers & Hammerstein（作曲／作詞，非卡司）；主演 Alfred Drake、Joan Roberts。disambiguation 明確標「1943 original Broadway cast」，與 1947 倫敦版、1952／1964 錄音室版、1979／1980 重演版等同名 RG 需分辨清楚，已核對只取此版。",
+      "curatorWhy": "音樂劇卡司錄音的起點之作，2003 年入選美國國家錄音登記簿，樂評與音樂劇史料一致公認其開創地位。",
+      "curatorRisk": "MB 上同名 RG 極多（原版、倫敦版、多次重演版、錄音室版），若卡片資料日後被覆寫需重新核對 rgMbid。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "史上第一張完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」品類；2003 年入選美國國家錄音登記簿（National Recording Registry）。",
+        "evidenceUrls": [
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
+          "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Rodgers & Hammerstein",
+      "album": "South Pacific",
+      "rgMbid": "64350a66-c779-3549-b292-7d0a8e18fdae",
+      "mbArtist": "Rodgers & Hammerstein",
+      "mbTitle": "South Pacific",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1949-05-09",
+      "suggestedYear": 1949,
+      "yearNote": "1949 original Broadway cast recording，Columbia Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量；1949 年黑膠版本，條碼制度尚未存在）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Rodgers & Hammerstein；主演 Mary Martin、Ezio Pinza。搜尋僅回傳此單一版本（count=1），未見其他同名年代版本混淆。",
+      "curatorWhy": "R&H 黃金時期代表作，Billboard 專輯榜冠軍達 69 週的紀錄保持者之一，音樂劇史核心正典。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選；若日後查到 Grammy Hall of Fame 或 NRR 記錄可再升級。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Rodgers & Hammerstein",
+      "album": "The King and I",
+      "rgMbid": "14df8b37-cd35-3374-a986-7d34627f7ede",
+      "mbArtist": "Rodgers & Hammerstein",
+      "mbTitle": "The King and I",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1951",
+      "suggestedYear": 1951,
+      "yearNote": "1951 original Broadway cast recording，Decca Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量；老黑膠版本）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Rodgers & Hammerstein；主演 Gertrude Lawrence、Yul Brynner。注意池內已有 Tito Puente《The King and I / El Rey y yo》(1967, seed)——那是拉丁爵士曲名致敬輯，與本張原卡司錄音是完全不同作品，不算重複，但未來同名檢索要分辨清楚。",
+      "curatorWhy": "R&H 代表作之一，Yul Brynner 的暹羅王一角成為其標誌性演出。",
+      "curatorRisk": "同名相似作品（Tito Puente 版）已在池內，卡片顯示時需清楚標示版本避免使用者混淆。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Frank Loesser",
+      "album": "Guys and Dolls",
+      "rgMbid": "c5721ce7-2b69-35b9-81a0-735dd3b032cc",
+      "mbArtist": "Frank Loesser",
+      "mbTitle": "Guys and Dolls",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1950",
+      "suggestedYear": 1950,
+      "yearNote": "1950 original Broadway cast recording，Decca Records 發行。",
+      "upc": null,
+      "upcNote": "查詢時逢 API 暫時性連線失敗，未重試取得條碼（老黑膠版本本來就少見條碼）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Frank Loesser（作曲作詞）；主演 Robert Alda、Vivian Blaine、Sam Levene。同名 RG 另有 1976／1992／1995／2001 等重演版，已核對取 1950 原版（disambiguation：1950 original Broadway cast）。",
+      "curatorWhy": "美國音樂劇喜劇的巔峰之作，2004 年入選美國國家錄音登記簿。",
+      "curatorRisk": "同名重演版本眾多，未來若要收錄其他年代版本需另立獨立 rgMbid，避免覆寫此筆。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "2004 年入選美國國家錄音登記簿，音樂劇喜劇代表作之公認地位。",
+        "evidenceUrls": [
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GuysAndDolls.pdf",
+          "https://en.wikipedia.org/wiki/Guys_and_Dolls_(original_Broadway_cast_recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Jule Styne",
+      "album": "Gypsy",
+      "rgMbid": "7b656d67-81e2-3d74-ab48-48b66cbd11a5",
+      "mbArtist": "Jule Styne",
+      "mbTitle": "Gypsy",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1959",
+      "suggestedYear": 1959,
+      "yearNote": "1959 original Broadway cast recording，Columbia Records 發行，錄音日期 1959-05-24。",
+      "upc": null,
+      "upcNote": "查詢時逢 API 暫時性連線失敗，未重試取得條碼。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名作曲 Jule Styne（詞：Stephen Sondheim）；主演 Ethel Merman（Rose）、Jack Klugman、Sandra Church。同名 RG 另有「final performance」變體版本（808e6afd），已排除只取原版首錄（7b656d67）。",
+      "curatorWhy": "Ethel Merman 的代表演出，1959 年獲 Grammy Best Original Cast Recording，2009 年入選美國國家錄音登記簿。",
+      "curatorRisk": "MB 同名 RG 有近乎重複的「final performance」條目，未來去重需注意勿誤收。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "1959 年 Grammy Best Original Cast Recording 得主，2009 年入選美國國家錄音登記簿，Ethel Merman 代表演出。",
+        "evidenceUrls": [
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gypsy_Flinn.pdf",
+          "https://en.wikipedia.org/wiki/Gypsy_(original_Broadway_cast_recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Jerry Bock & Sheldon Harnick",
+      "album": "Fiddler on the Roof",
+      "rgMbid": "4a172137-632b-30dd-b076-7183783f753a",
+      "mbArtist": "Jerry Bock & Sheldon Harnick",
+      "mbTitle": "Fiddler on the Roof",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1964",
+      "suggestedYear": 1964,
+      "yearNote": "1964 original Broadway cast recording，RCA Victor 發行。",
+      "upc": null,
+      "upcNote": "查詢時逢 API 暫時性連線失敗，未重試取得條碼。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Jerry Bock & Sheldon Harnick（作曲作詞）；主演 Zero Mostel（Tevye）。同名 RG 尚有倫敦版《Fiddler on the Roof (London cast recording)》為獨立條目，未混淆。",
+      "curatorWhy": "Zero Mostel 的招牌演出，2020 年入選美國國家錄音登記簿。",
+      "curatorRisk": "未見 Grammy 得獎紀錄（同年輸給《Funny Girl》），頂點理由僅以 NRR 為據。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "2020 年入選美國國家錄音登記簿，Zero Mostel 主演的經典原卡司錄音。",
+        "evidenceUrls": [
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FiddlerOnTheRoof_Solomon.pdf",
+          "https://en.wikipedia.org/wiki/Fiddler_on_the_Roof_(original_Broadway_cast_recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Kander & Ebb",
+      "album": "Cabaret",
+      "rgMbid": "d8b45c04-bc15-325e-a493-1b77e9695016",
+      "mbArtist": "Kander & Ebb",
+      "mbTitle": "Cabaret",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1966",
+      "suggestedYear": 1966,
+      "yearNote": "1966 original Broadway cast recording，Columbia Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Kander & Ebb（作曲作詞）；主演 Jill Haworth、Joel Grey。搜尋僅回傳此單一版本，未見混淆。",
+      "curatorWhy": "Kander & Ebb 代表作，Joel Grey 的 Emcee 一角奠定其百老匯地位，後續多次重演與電影改編皆以此為源頭。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Galt MacDermot",
+      "album": "Hair: The American Tribal Love-Rock Musical",
+      "rgMbid": "f6c4afe7-1323-3ff3-8cdc-571161f6588f",
+      "mbArtist": "Gerome Ragni, James Rado & Galt MacDermot",
+      "mbTitle": "Hair: The American Tribal Love-Rock Musical",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1968",
+      "suggestedYear": 1968,
+      "yearNote": "1968 original Broadway cast recording，RCA Victor 發行。",
+      "upc": null,
+      "upcNote": "MB 該版本查無條碼。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Gerome Ragni, James Rado & Galt MacDermot（作詞作曲）。此曲目群同名 RG 極多（另有離百老匯版、倫敦版、慕尼黑德語版、兩個未確認卡司的重複條目），已核對只取 disambiguation 明確標「1968 original Broadway cast」且首發年份對應（1968）者。",
+      "curatorWhy": "反文化搖滾音樂劇的開創之作，2018 年入選美國國家錄音登記簿。",
+      "curatorRisk": "MB 建檔品質較差（同名 RG 中有兩筆標「unidentified cast」的疑似重複條目），未來若 MB 合併資料需重新核對 rgMbid 是否仍指向同一實體。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "反文化搖滾音樂劇開創之作，2018 年入選美國國家錄音登記簿。",
+        "evidenceUrls": [
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Hair_OriginalBroadwayCast.pdf",
+          "https://en.wikipedia.org/wiki/Hair_(Original_Broadway_Cast_Recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Lerner & Loewe",
+      "album": "Camelot",
+      "rgMbid": "bd51e8f2-b0ad-370c-9bed-6e340afa0d5a",
+      "mbArtist": "Lerner & Loewe",
+      "mbTitle": "Camelot",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1960",
+      "suggestedYear": 1960,
+      "yearNote": "1960 original Broadway cast recording，Columbia Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Lerner & Loewe（作曲作詞）；主演 Richard Burton、Julie Andrews、Robert Goulet。搜尋僅回傳此單一版本。",
+      "curatorWhy": "Lerner & Loewe 繼《My Fair Lady》後的重要作品，甘迺迪政府時期被賦予「Camelot」政治意象的源頭。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Lerner & Loewe",
+      "album": "My Fair Lady",
+      "rgMbid": "82e96bfb-bcc7-3179-831c-9cf86aa17aaf",
+      "mbArtist": "Lerner & Loewe",
+      "mbTitle": "My Fair Lady",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1956-04",
+      "suggestedYear": 1956,
+      "yearNote": "1956 original Broadway cast recording，Columbia Records 發行，1956-03-25 於 Columbia 30th Street Studio 一次錄畢。",
+      "upc": null,
+      "upcNote": "查得候選 release（0fbe5dd2）但條碼查詢遇連線暫時性失敗，未重試。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Lerner & Loewe（作曲作詞）；主演 Rex Harrison、Julie Andrews、Stanley Holloway。注意池內既有「musicals-by-title」條目 Shelly Manne《My Fair Lady》(1956, seed) 是爵士樂手器樂翻奏該劇曲目的獨立作品，並非原卡司錄音，兩者不重複，但同名易混淆須在卡片標示區分。",
+      "curatorWhy": "百老匯史上最暢銷的原卡司錄音之一，Billboard 200 累積 480 週上榜、15 週冠軍；1977 年入選 Grammy Hall of Fame，2007 年入選美國國家錄音登記簿。",
+      "curatorRisk": "與池內 Shelly Manne 器樂版同名，須在簡介／標籤明確標示「原卡司錄音」避免使用者誤認為重複收錄。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "Grammy Hall of Fame（1977）與美國國家錄音登記簿（2007）雙重殊榮，Billboard 200 累積 480 週上榜的史上最暢銷原卡司錄音之一。",
+        "evidenceUrls": [
+          "https://www.loc.gov/item/2014621183/",
+          "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)"
+        ]
+      }
+    },
+    {
+      "artist": "Claude-Michel Schönberg",
+      "album": "Les Misérables",
+      "rgMbid": "91908df7-d70b-3665-9a4c-e0c0aa0a549e",
+      "mbArtist": "Claude-Michel Schönberg",
+      "mbTitle": "Les Misérables",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1985-01-01",
+      "suggestedYear": 1985,
+      "yearNote": "取 1985 original London cast（英文版首演卡司）而非更早的 1980 法語巴黎 concept 版（ec9969e7），依店主裁定「Les Misérables＝1985 Original London Cast」為正典入口。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Claude-Michel Schönberg（作曲；英文歌詞 Herbert Kretzmer）。主演 Colm Wilkinson（Valjean）、Patti LuPone（Fantine）。同名 RG 極多（1980 法語 concept、1987 百老匯版、多地語言版），已明確核對取 91908df7（1985 original London cast）。",
+      "curatorWhy": "英語音樂劇史上最重要的英倫入口版本，確立此劇後續全球製作的音樂與角色基調。",
+      "curatorRisk": "MB 同名 RG 數量龐大（31 筆），去重時務必核對 disambiguation 與年份，避免誤收巴黎法語版或其他地區版。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據（NRR／Grammy Hall of Fame 均未查得明確記錄），先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Andrew Lloyd Webber",
+      "album": "The Phantom of the Opera",
+      "rgMbid": "a5fd6ff9-0761-3427-befb-22b75a1c222b",
+      "mbArtist": "Andrew Lloyd Webber",
+      "mbTitle": "The Phantom of the Opera",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1987-03-19",
+      "suggestedYear": 1986,
+      "yearNote": "1986 original London cast（disambiguation 標示），舞台首演 1986-10-09；MB 記錄的最早發行日 1987-03-19 為錄音專輯實際上市日期，兩者相差約半年屬正常發行時差。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Andrew Lloyd Webber（作曲；詞 Charles Hart／Richard Stilgoe）。主演 Michael Crawford（Phantom）、Sarah Brightman（Christine）。搜尋僅回傳此單一版本，未見混淆。",
+      "curatorWhy": "史上最長壽的百老匯劇目源頭錄音，Michael Crawford／Sarah Brightman 的原版演出定義了此角色詮釋標準。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Andrew Lloyd Webber & Tim Rice",
+      "album": "Evita",
+      "rgMbid": "88ae0cad-d464-3c29-9beb-51d6cecc47df",
+      "mbArtist": "Andrew Lloyd Webber & Tim Rice",
+      "mbTitle": "Evita",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1976-11-19",
+      "suggestedYear": 1976,
+      "yearNote": "取 1976 concept album（MCA Records）而非 1978 original London cast（c3e168f2）。理由見 curatorWhy：比照池內既有的《Jesus Christ Superstar》裁定（同樣是 Andrew Lloyd Webber／Tim Rice 組合、概念專輯早於舞台版），概念盤才是本作真正的正典入口——1976 版由 Julie Covington（Eva）、Colm Wilkinson（Che）主唱，1978 年舞台首演的 OLC（Elaine Paige 主演）是後續衍生版本。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Andrew Lloyd Webber & Tim Rice。1976 概念盤主唱 Julie Covington、Colm Wilkinson、Paul Jones；1978 original London cast（c3e168f2-6d58-35b6-b4b2-e26f3a4fee8a）主演改為 Elaine Paige，兩者為不同錄音、不同卡司，本筆取概念盤。",
+      "curatorWhy": "與《Jesus Christ Superstar》同屬「概念專輯先於舞台版」的例外案例，本作最初以概念雙專輯形式問世並先在此形態走紅，故取概念盤為正典入口而非其後的舞台 OLC。",
+      "curatorRisk": "與同名 1978 OLC（Elaine Paige 主演）版本容易混淆，簡介與標籤需清楚標示「1976 概念專輯」；若店主認為應以 1978 OLC 為準，需改換 rgMbid 為 c3e168f2。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Andrew Lloyd Webber",
+      "album": "Cats",
+      "rgMbid": "71b82f91-bdc2-3d7c-82b9-1ab756c5a687",
+      "mbArtist": "Andrew Lloyd Webber",
+      "mbTitle": "Cats",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1981-06-30",
+      "suggestedYear": 1981,
+      "yearNote": "取 1981 original London cast（New London Theatre 首演，早於 1982 百老匯版一年），Polydor 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Andrew Lloyd Webber（作曲；詞取自 T. S. Eliot 詩作）。1981 倫敦首演版由 Elaine Paige 主唱〈Memory〉（Grizabella）。搜尋僅回傳此單一版本，未見混淆。",
+      "curatorWhy": "史上最長壽音樂劇之一的源頭錄音，〈Memory〉一曲的原始演繹版本。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Lin-Manuel Miranda",
+      "album": "Hamilton: An American Musical",
+      "rgMbid": "4c615b1c-5af9-432b-9342-e39137ade143",
+      "mbArtist": "Lin-Manuel Miranda",
+      "mbTitle": "Hamilton: An American Musical",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "2015-09-25",
+      "suggestedYear": 2015,
+      "yearNote": "2015 original Broadway cast recording，Atlantic Records 發行。",
+      "upc": "075679922298",
+      "upcNote": "已查得（release id 19e87c02-28df-4a89-ba7e-8f5ef474c36f，US 2015-09-25 版）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Lin-Manuel Miranda（作曲作詞）；主演 Lin-Manuel Miranda、Leslie Odom Jr.、Phillipa Soo。搜尋僅回傳此單一版本，未見混淆。",
+      "curatorWhy": "史上最暢銷原卡司錄音，RIAA 鑽石唱片認證（1000 萬張），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿（NRR 史上第 15 張入選的百老匯卡司錄音、亦是首張 1979 年後首演劇目入選者）。",
+      "curatorRisk": "無重大風險，身分與版本皆單一明確。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "史上最暢銷原卡司錄音（RIAA 鑽石唱片），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿。",
+        "evidenceUrls": [
+          "https://www.grammy.com/news/library-of-congress-2025-national-recording-registry-additions-elton-john-mary-j-blige-hamilton-amy-winehouse/",
+          "https://playbill.com/article/hamilton-broadway-cast-album-inducted-into-national-recording-registry"
+        ]
+      }
+    },
+    {
+      "artist": "Jonathan Larson",
+      "album": "Rent",
+      "rgMbid": "799fe234-9fb0-4e64-bcff-af78ca176c86",
+      "mbArtist": "Jonathan Larson",
+      "mbTitle": "Rent",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1996-08-27",
+      "suggestedYear": 1996,
+      "yearNote": "1996 original Broadway cast recording，Dreamworks Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Jonathan Larson（作曲作詞，1996 首演前夕猝逝）；主演 Adam Pascal、Anthony Rapp、Idina Menzel。搜尋僅回傳此單一版本。",
+      "curatorWhy": "波希米亞式搖滾音樂劇代表作，作曲家 Jonathan Larson 首演前一晚驟逝的背景使其地位更添傳奇性。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Stephen Schwartz",
+      "album": "Wicked",
+      "rgMbid": "76729419-70a3-30d0-b316-515bc24c61e2",
+      "mbArtist": "Stephen Schwartz",
+      "mbTitle": "Wicked",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "2003-12-16",
+      "suggestedYear": 2003,
+      "yearNote": "2003 original Broadway cast recording，Decca Broadway 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Stephen Schwartz（作曲作詞）；主演 Idina Menzel（Elphaba）、Kristin Chenoweth（Glinda）。搜尋僅回傳此單一版本。",
+      "curatorWhy": "21 世紀最賣座音樂劇之一，Idina Menzel 的〈Defying Gravity〉成為當代音樂劇代表曲目。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Stephen Sondheim",
+      "album": "Sweeney Todd: The Demon Barber of Fleet Street",
+      "rgMbid": "2fc0795a-d28b-3d1c-b69d-74ee8d096385",
+      "mbArtist": "Stephen Sondheim; Angela Lansbury, Len Cariou",
+      "mbTitle": "Sweeney Todd: The Demon Barber of Fleet Street",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1984",
+      "suggestedYear": 1979,
+      "yearNote": "1979 original Broadway cast recording（disambiguation 標示），RCA Victor 發行，錄音日期 1979-03-12／13，百老匯開演僅兩週後即進錄音室。MB 此 RG 內帶日期的最早版本是 1984 年精選版（Highlights），完整雙 LP 原版在 MB 未見完整日期標註，屬資料缺漏而非年份錯誤，年份採業界公認的 1979。",
+      "upc": null,
+      "upcNote": "僅查得 1984 年精選版（Highlights）條碼 078635503326，因版本不符（精選版非完整原版雙 LP）故不採用，避免版本錯配；完整版條碼未查得。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Stephen Sondheim（作曲作詞）＋主演 Angela Lansbury、Len Cariou 並列於 artist-credit。同名 RG 另有 2000 New York Philharmonic 音樂會版、2001 San Francisco 音樂會版、2005／2023 百老匯重演版、2007 電影版、2012 倫敦版，已核對取 disambiguation「1979 original Broadway cast」（2fc0795a）。",
+      "curatorWhy": "Sondheim 最重要的音樂劇之一，1980 年 Grammy 最佳原聲音樂劇專輯與最佳古典類錄音工程雙獎，並已入選美國國家錄音登記簿。",
+      "curatorRisk": "MB 資料對 1979 原版日期標註不完整（RG 內最早帶日期版本反而是 1984 精選版），日後若需精確發行日或條碼，建議直接查 RCA Victor 唱片目錄或 Discogs 交叉核對。",
+      "apexCandidate": {
+        "eligible": true,
+        "tier": "hall",
+        "reason": "1980 年 Grammy 最佳原聲音樂劇專輯得主，已入選美國國家錄音登記簿，Angela Lansbury／Len Cariou 主演的公認經典。",
+        "evidenceUrls": [
+          "https://playbill.com/article/library-of-congress-adds-original-sweeney-todd-cast-album-to-national-recording-registry-com-216756",
+          "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SweeneyTodd.pdf"
+        ]
+      }
+    },
+    {
+      "artist": "Stephen Sondheim",
+      "album": "Company",
+      "rgMbid": "46ea34b6-f066-3be5-910a-e73876234342",
+      "mbArtist": "Stephen Sondheim",
+      "mbTitle": "Company",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1970",
+      "suggestedYear": 1970,
+      "yearNote": "1970 original Broadway cast recording，Columbia Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Stephen Sondheim（作曲作詞）；主演 Dean Jones（原始錄音卡司，後於演出期間由 Larry Kert 接演但錄音仍為 Dean Jones 版）。同名 RG 另有 1972 倫敦版、1995／1996 重演版、2006／2018 重演版，已核對取 1970 原版（46ea34b6）。",
+      "curatorWhy": "Sondheim「概念音樂劇」（concept musical）的奠基作，以非線性敘事描寫都會單身男性的婚姻焦慮，開啟音樂劇形式革新。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Stephen Sondheim",
+      "album": "Into the Woods",
+      "rgMbid": "a8c69ef2-8d8a-34a5-8949-aedc456883fb",
+      "mbArtist": "Stephen Sondheim",
+      "mbTitle": "Into the Woods",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1987",
+      "suggestedYear": 1987,
+      "yearNote": "1987 original Broadway cast recording，RCA Victor 發行；百老匯首演 1987-11-05，錄音專輯常見標註為 1988 年上市，MB 記錄首發年份為 1987。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Stephen Sondheim（作曲作詞）；主演 Bernadette Peters（Witch）、Joanna Gleason、Chip Zien。同名 RG 另有 1991 倫敦版、2002／2022 重演版、2014 電影版，已核對取 1987 原版（a8c69ef2）。",
+      "curatorWhy": "Sondheim 融合多則童話、探討「願望實現後果」的重要作品，Bernadette Peters 的巫婆一角成為其代表演出之一。",
+      "curatorRisk": "未查得跨來源頂點證據，暫不列頂點候選。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Harold Arlen",
+      "album": "The Wizard of Oz",
+      "rgMbid": "cda6d83d-628f-3879-8e2a-2750463db9ec",
+      "mbArtist": "Harold Arlen",
+      "mbTitle": "The Wizard of Oz",
+      "releaseType": "Album",
+      "secondaryTypes": [
+        "Soundtrack"
+      ],
+      "firstRelease": "1956",
+      "suggestedYear": 1956,
+      "yearNote": "電影 1939 年上映，但原聲帶要到 1956 年才由 MGM Records 首次以 LP 形式發行（LP 規格本身要到 1948 年才問世，1939 年當下並無商業原聲帶專輯）；MB 上另有一個標示首發日 1939-08-25 的獨立 RG（53297105，僅一筆美版釋出、無其他版本延伸），經核對其後續無任何再版記錄，判斷為 MB 資料誤植或占位條目，故不採用，改取有完整再版歷史（1956 起至 2015 共 19 個版本）的正典 RG。",
+      "upc": null,
+      "upcNote": "未查（節省流量；老黑膠版本，多次再版各有不同條碼）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Harold Arlen（作曲；詞 Yip Harburg），disambiguation 標「1939 film cast」但實際 RG 首發年份為 1956。主演 Judy Garland（Dorothy）。",
+      "curatorWhy": "美國電影音樂史上最重要的原聲帶之一，〈Over the Rainbow〉一曲的原始錄音來源。",
+      "curatorRisk": "MB 對此作有兩個平行 RG（1939-08-25 疑似誤植的孤立條目 vs 1956 起有完整再版歷史的正典條目），已選正典版，但若未來 MB 合併資料需重新核對 rgMbid 是否仍指向同一實體。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源頂點共識證據（Grammy Hall of Fame／NRR 均未查得明確記錄，雖廣為人知但需要進一步查證方可列入），先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the Harold Arlen Song Book",
+      "rgMbid": "845afd12-a118-352c-b214-fda1a89c34cc",
+      "mbArtist": "Ella Fitzgerald",
+      "mbTitle": "Ella Fitzgerald Sings the Harold Arlen Song Book",
+      "releaseType": "Album",
+      "secondaryTypes": [],
+      "firstRelease": "1961",
+      "suggestedYear": 1961,
+      "yearNote": "1961 年 Verve Records 發行，双 LP 裝。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Ella Fitzgerald，MB 上僅此單一版本（count=1），未見混淆。",
+      "curatorWhy": "Ella songbook 系列的重要一冊，補足池內已有 Cole Porter／Ellington／Rodgers and Hart 三部後的缺口；Harold Arlen 同時也是《Wizard of Oz》作曲家，與本批另一張形成曲風呼應。",
+      "curatorRisk": "無重大風險。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the Irving Berlin Song Book",
+      "rgMbid": "13c2976d-5c40-305e-959e-d00f70097b06",
+      "mbArtist": "Ella Fitzgerald",
+      "mbTitle": "Ella Fitzgerald Sings the Irving Berlin Song Book",
+      "releaseType": "Album",
+      "secondaryTypes": [],
+      "firstRelease": "1958-07-04",
+      "suggestedYear": 1958,
+      "yearNote": "1958 年 Verve Records 發行，双 LP 裝。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Ella Fitzgerald。另有 2007 年精選輯《The Very Best of The Irving Berlin Song Book》（de1d6463，Compilation），已排除只取原版雙 LP。",
+      "curatorWhy": "Ella songbook 系列的重要一冊，補足池內既有三部後的缺口。",
+      "curatorRisk": "同名精選輯（The Very Best of...）需注意不要誤收，已在 aliasReview 標明排除。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Fred Astaire",
+      "album": "The Astaire Story",
+      "rgMbid": "390d253f-c50b-3674-8a0f-335a6b0dbeda",
+      "mbArtist": "Fred Astaire",
+      "mbTitle": "The Astaire Story",
+      "releaseType": "Album",
+      "secondaryTypes": [],
+      "firstRelease": "1953",
+      "suggestedYear": 1953,
+      "yearNote": "1953 年 Norman Granz 監製、Clef Records 發行（原版 4x10 吋黑膠套裝）。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名 Fred Astaire。注意 MB 另有獨立 RG《The Astaire Story Vol.2》(1978)，是不同的衍生輯，本筆只取原版四片裝的《The Astaire Story》(390d253f)，不含 Vol.2。",
+      "curatorWhy": "Fred Astaire 罕見以歌手身分為主、Oscar Peterson 領銜爵士樂手伴奏的錄音室專輯，串連舞台標準曲與爵士樂兩個世界。",
+      "curatorRisk": "同名衍生輯《Vol.2》需避免誤收，已在 aliasReview 標明。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    },
+    {
+      "artist": "Rosemary Clooney",
+      "album": "Blue Rose",
+      "rgMbid": "a3ba0ffa-9298-35f9-9621-e685149a2615",
+      "mbArtist": "Rosemary Clooney and Duke Ellington and His Orchestra",
+      "mbTitle": "Blue Rose",
+      "releaseType": "Album",
+      "secondaryTypes": [],
+      "firstRelease": "1956-05-21",
+      "suggestedYear": 1956,
+      "yearNote": "1956 年 Columbia Records 發行。",
+      "upc": null,
+      "upcNote": "未查（節省流量）。",
+      "exceptionReason": null,
+      "aliasReview": "MB 掛名「Rosemary Clooney and Duke Ellington and His Orchestra」（合作掛名，非單純 Clooney 個人名義）。MB 另有一筆疑似重複的同名 RG（457d44c5），已核對取有較完整後續資料的 a3ba0ffa。",
+      "curatorWhy": "Rosemary Clooney 與 Duke Ellington 樂團合作的標準曲專輯，因故 Ellington 本人未能到場錄音室、由 Billy Strayhorn 代為指揮完成，是爵士與流行標準曲交會的重要文獻。",
+      "curatorRisk": "MB 上有近乎重複的同名 RG（457d44c5），未來去重需注意勿誤收兩者。",
+      "apexCandidate": {
+        "eligible": false,
+        "tier": null,
+        "reason": "未查得跨來源共識證據，先作一般卡上架。",
+        "evidenceUrls": []
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "artist": "Leonard Bernstein & Stephen Sondheim",
+      "album": "West Side Story (Original Sound Track Recording)",
+      "why": "已在池內（apex:hall），1961 電影原聲帶。"
+    },
+    {
+      "artist": "Richard Rodgers & Oscar Hammerstein II",
+      "album": "The Sound of Music (An Original Soundtrack Recording)",
+      "why": "已在池內（apex:hall），1965 電影原聲帶。"
+    },
+    {
+      "artist": "Andrew Lloyd Webber",
+      "album": "Jesus Christ Superstar",
+      "why": "已在池內（seed），1970 概念專輯，本域公認的「概念盤早於舞台版」例外先例。"
+    },
+    {
+      "artist": "Various Artists",
+      "album": "Grease: The Original Soundtrack from the Motion Picture",
+      "why": "已在池內（seed），1978 電影原聲帶。"
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the Cole Porter Song Book",
+      "why": "已在池內（seed）。"
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the Duke Ellington Song Book",
+      "why": "已在池內（seed）。"
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the Rodgers and Hart Song Book",
+      "why": "已在池內（seed）。"
+    },
+    {
+      "artist": "Ella Fitzgerald",
+      "album": "Ella Fitzgerald Sings the George and Ira Gershwin Song Book",
+      "why": "資料落差提醒：稽核文件（audit-pop-country-latin.md §7）與派工說明都指此曲缺池，但目前 pool-coverage.json 的 musicals-songbook 鍵顯示此輯已以 apex:hall 收錄（1959, Verve）。以現況池表為準判定為已收錄，故跳過；若此為誤植請店主複核 pool-coverage.json 產生流程或 apex_pool.json 實際內容。"
+    },
+    {
+      "artist": "Shelly Manne & His Friends",
+      "album": "Modern Jazz Performances of Songs From My Fair Lady",
+      "why": "非本域目標——是爵士樂手器樂翻奏《My Fair Lady》曲目的獨立作品，非原卡司錄音，不計入必補清單（但已在對應候選項的 aliasReview 中註記避免未來混淆）。"
+    },
+    {
+      "artist": "Tito Puente",
+      "album": "The King and I / El Rey y yo",
+      "why": "非本域目標——拉丁爵士曲名致敬輯，非《The King and I》原卡司錄音，已在池內（seed），不重複收錄（已在對應候選項的 aliasReview 中註記）。"
+    },
+    {
+      "artist": "Judy Garland",
+      "album": "Judy at Carnegie Hall",
+      "why": "派工說明列為潛在頂點候選，但稽核文件將 Judy Garland 歸屬另一子域（50s-60s 傳統流行世代，子域 1），不在本域（音樂劇與標準曲）的必補清單內，故不在本次候選範圍，留待該子域任務處理。"
+    }
+  ]
+}

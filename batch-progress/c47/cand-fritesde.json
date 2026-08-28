@@ -1,0 +1,1068 @@
+{
+ "domain": "fr-it-es-de",
+ "albums": [
+  {
+   "artist": "Georges Brassens",
+   "album": "Georges Brassens chante les chansons poétiques (… et souvent gaillardes) de… Georges Brassens",
+   "rgMbid": "9b32ec2d-fa6c-31e0-9a18-cd836548df71",
+   "mbArtist": "Georges Brassens",
+   "mbTitle": "Nº1 : Georges Brassens chante… les chansons poétiques (… et souvent gaillardes) de… Georges Brassens",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1952-11",
+   "suggestedYear": 1952,
+   "yearNote": "MB release group first-release-date 1952-11。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "release-group 層級查詢未逐版比對 release barcode，留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對 batch-progress/c47/pool-coverage.json 的 fr-it-es-de 鍵，池內無 Brassens 條目",
+   "curatorWhy": "法語香頌三巨頭之一 Brassens 全池掛零，此曲是其最早期、最具招牌性的代表作之一，用以補齊香頌傳統核心缺口。",
+   "curatorRisk": "選用的是後期重發精選而非原始錄音專輯；MB 對 Brassens 早期作品的 release-group 切分零散，同名版本多個並存，非唯一可能選擇。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Barbara",
+   "album": "Barbara chante Barbara",
+   "rgMbid": "ca88733a-8f84-3759-a082-d536141411b2",
+   "mbArtist": "Barbara",
+   "mbTitle": "Barbara chante Barbara",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1964-09-01",
+   "suggestedYear": 1964,
+   "yearNote": "MB release group first-release-date 1964-09-01。",
+   "upc": "",
+   "upcNote": "release-group 層級查詢未逐版比對 release barcode，留空",
+   "exceptionReason": "",
+   "aliasReview": "單名藝人同名風險已核對：MB artist disambiguation 為 \"French female singer\"，非其他同名歌手；已比對 pool-coverage.json 無重複",
+   "curatorWhy": "Barbara 全池掛零，此為她確立自寫自唱風格的首張個人專輯，法語香頌傳統核心缺口。",
+   "curatorRisk": "低，短名藝人風險已透過 disambiguation 排除。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Barbara",
+   "album": "L'Aigle noir",
+   "rgMbid": "328da428-511e-3cbc-9737-c1984d510a78",
+   "mbArtist": "Barbara",
+   "mbTitle": "L'Aigle noir",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1970-11-01",
+   "suggestedYear": 1970,
+   "yearNote": "MB release group first-release-date 1970-11-01。",
+   "upc": "",
+   "upcNote": "留空，同上",
+   "exceptionReason": "",
+   "aliasReview": "同上已核對 disambiguation \"French female singer\"",
+   "curatorWhy": "Barbara 生涯代表作，同名曲為法語香頌史上最常被引用的作品之一。",
+   "curatorRisk": "低；具備進一步查證 apex 資格的潛力，但本批未查跨源證據，暫列一般卡。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Édith Piaf",
+   "album": "À l'Olympia 1961",
+   "rgMbid": "18f6e911-071a-4cbc-98e0-477c0606efad",
+   "mbArtist": "Édith Piaf",
+   "mbTitle": "À l'Olympia 1961",
+   "releaseType": "Album",
+   "secondaryTypes": [
+    "Live"
+   ],
+   "firstRelease": "1961",
+   "suggestedYear": 1961,
+   "yearNote": "MB release group first-release-date 1961。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對 pool-coverage.json，池內既有 Piaf 僅 1953 年 10 吋非代表版本，本條為不同錄音的新增",
+   "curatorWhy": "補足稽核指出池內 Piaf 僅有非代表性 1953 年 10 吋的缺口，此為她生涯晚期最權威的現場錄音之一，MB 僅此一筆候選，無歧義。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Léo Ferré",
+   "album": "Amour Anarchie",
+   "rgMbid": "c2367ac0-1fed-414f-bf2d-9fe0c1ba9533",
+   "mbArtist": "Léo Ferré",
+   "mbTitle": "Amour Anarchie Vol.1",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1970-05-01",
+   "suggestedYear": 1970,
+   "yearNote": "MB release group first-release-date 1970-05-01。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對池內無 Ferré 條目",
+   "curatorWhy": "Ferré 全池掛零，此曲是法語香頌史上最常被翻唱引用的作品之一。",
+   "curatorRisk": "選用精選輯而非原始 1970 年錄音室專輯，因原專輯 release-group 查詢多次逾時失敗未能核實 MBID；若日後重查得《Amour Anarchie》MBID，建議改用原專輯。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Charles Trenet",
+   "album": "Chansons claires : 10 chansons nouvelles",
+   "rgMbid": "6fc9033d-f901-4259-86f7-2ef067db229e",
+   "mbArtist": "Charles Trenet",
+   "mbTitle": "Chansons claires : 10 chansons nouvelles",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1956",
+   "suggestedYear": 1956,
+   "yearNote": "MB release group first-release-date 1956。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對池內無 Trenet 條目",
+   "curatorWhy": "法語標準曲奠基者，全池掛零。",
+   "curatorRisk": "精選輯而非原始錄音專輯；同名版本多個並存(1992/1997/2004/2021)。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Yves Montand",
+   "album": "À l'Étoile",
+   "rgMbid": "de9d3c17-1ce5-4689-902d-698eaf84058d",
+   "mbArtist": "Yves Montand",
+   "mbTitle": "Yves Montand à l'étoile",
+   "releaseType": "Album",
+   "secondaryTypes": [
+    "Live"
+   ],
+   "firstRelease": "1963",
+   "suggestedYear": 1963,
+   "yearNote": "MB release group first-release-date 1963。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Montand 條目",
+   "curatorWhy": "Montand 1963 年 Étoile 劇院現場錄音，公認為他生涯代表演出紀錄，MB 唯一高分候選。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Juliette Gréco",
+   "album": "Juliette Gréco chante ses derniers succès",
+   "rgMbid": "2bb61325-7af9-4786-8877-f61ed6b2dbc1",
+   "mbArtist": "Juliette Gréco",
+   "mbTitle": "Juliette Gréco chante ses derniers succès",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1952",
+   "suggestedYear": 1952,
+   "yearNote": "MB release group first-release-date 1952。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "MB disambiguation 為 \"French singer and actress\"，已核對池內無重複",
+   "curatorWhy": "存在主義文學圈標誌歌手，全池掛零。",
+   "curatorRisk": "精選輯，同名版本選擇有一定主觀性，其餘年份版本亦可替代。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "France Gall",
+   "album": "Poupée de cire, poupée de son",
+   "rgMbid": "74c0e971-75ba-432c-9218-8de715b98fa7",
+   "mbArtist": "France Gall",
+   "mbTitle": "Poupée de cire, poupée de son",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1965-04",
+   "suggestedYear": 1965,
+   "yearNote": "MB release group first-release-date 1965-04。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 France Gall 條目",
+   "curatorWhy": "1965 年歐洲歌唱大賽冠軍曲目所屬正規錄音室專輯，France Gall 全池掛零，MB 乾淨無歧義。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Véronique Sanson",
+   "album": "Amoureuse",
+   "rgMbid": "213781e6-145a-3c1b-8c6f-82a070c94876",
+   "mbArtist": "Véronique Sanson",
+   "mbTitle": "Amoureuse",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1972-03-20",
+   "suggestedYear": 1972,
+   "yearNote": "MB release group first-release-date 1972-03-20。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Sanson 條目",
+   "curatorWhy": "Sanson 生涯代表作與同名主打曲，法語創作女歌手代表。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Michel Berger",
+   "album": "Starmania",
+   "rgMbid": "688c383b-08e7-4f65-bb9b-8b4a5283d0b8",
+   "mbArtist": "Michel Berger, Luc Plamondon",
+   "mbTitle": "Starmania",
+   "releaseType": "Album",
+   "secondaryTypes": [
+    "Soundtrack"
+   ],
+   "firstRelease": "1978-09-11",
+   "suggestedYear": 1978,
+   "yearNote": "選用 1978 年原始概念專輯版本（非 1988/1990/1994 年重製或現場版），為法語音樂劇史上最重要作品之一的首版錄音。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Starmania／Michel Berger 條目",
+   "curatorWhy": "法語音樂劇經典，Daniel Balavoine、France Gall 等多位重要歌手皆參與原始錄音。",
+   "curatorRisk": "MB 對此 release-group 的藝人 credit 為合併掛名（Michel Berger + Luc Plamondon），非單一藝人專輯，上架時需留意藝人欄位處理方式。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Daniel Balavoine",
+   "album": "Le Chanteur",
+   "rgMbid": "301e72c7-a26b-3cc1-837d-d456d12b30d0",
+   "mbArtist": "Daniel Balavoine",
+   "mbTitle": "Le Chanteur",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1978-06",
+   "suggestedYear": 1978,
+   "yearNote": "MB release group first-release-date 1978-06。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Balavoine 條目",
+   "curatorWhy": "Balavoine 獨唱生涯代表作，同名主打曲確立其風格；查無他以個人身分列名的 Starmania release-group（該作為合輯藝人 credit），故改用此曲代表。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Mylène Farmer",
+   "album": "Ainsi soit je...",
+   "rgMbid": "2ff519b6-3f95-3648-8d75-f5d7ba6b5610",
+   "mbArtist": "Mylène Farmer",
+   "mbTitle": "Ainsi soit je…",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1988-03-14",
+   "suggestedYear": 1988,
+   "yearNote": "MB release group first-release-date 1988-03-14。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Farmer 條目",
+   "curatorWhy": "Farmer 生涯代表作，確立其暗黑流行風格，MB 乾淨無歧義。",
+   "curatorRisk": "低；未查證跨源共識證據，暫不列 apex。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Jean-Jacques Goldman",
+   "album": "Entre gris clair et gris foncé",
+   "rgMbid": "2fa70682-4ba1-365c-b217-aae1852bd171",
+   "mbArtist": "Jean‐Jacques Goldman",
+   "mbTitle": "Entre gris clair et gris foncé",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1987-11-04",
+   "suggestedYear": 1987,
+   "yearNote": "MB release group first-release-date 1987-11-04。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Goldman 條目",
+   "curatorWhy": "Goldman 法國最暢銷創作歌手之一的代表作，全池掛零，MB 乾淨無歧義。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Renaud",
+   "album": "Mistral gagnant",
+   "rgMbid": "d3cdffee-979b-351a-b9a6-1f778cd6e534",
+   "mbArtist": "Renaud",
+   "mbTitle": "Mistral gagnant",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1985",
+   "suggestedYear": 1985,
+   "yearNote": "MB release group first-release-date 1985。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "MB disambiguation 確認為 \"French singer Renaud Séchan\"，已比對池內無重複",
+   "curatorWhy": "Renaud 代表作，法語通俗詩意歌詞傳統的代表。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Téléphone",
+   "album": "Crache ton venin",
+   "rgMbid": "9a0ec323-4106-3f52-8baa-d083697c733c",
+   "mbArtist": "Téléphone",
+   "mbTitle": "Crache ton venin",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1979-04-02",
+   "suggestedYear": 1979,
+   "yearNote": "MB release group first-release-date 1979-04-02。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Téléphone 條目",
+   "curatorWhy": "法國搖滾樂團 Téléphone 代表作，全池掛零，MB 乾淨無歧義。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Indochine",
+   "album": "L'Aventurier",
+   "rgMbid": "de9077c0-2596-3470-895b-06eb25ad1244",
+   "mbArtist": "Indochine",
+   "mbTitle": "L'Aventurier",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1982-11-15",
+   "suggestedYear": 1982,
+   "yearNote": "MB release group first-release-date 1982-11-15。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Indochine 條目",
+   "curatorWhy": "法國新浪潮樂團代表作，全池掛零；稽核建議 Téléphone 或 Indochine 擇一，本次兩者皆收以補足法國搖滾側。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Stromae",
+   "album": "Racine carrée",
+   "rgMbid": "d079dc50-fa9b-4a88-90f4-5e8723accd75",
+   "mbArtist": "Stromae",
+   "mbTitle": "Racine carrée",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "2013-08-16",
+   "suggestedYear": 2013,
+   "yearNote": "MB release group first-release-date 2013-08-16。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Stromae 條目",
+   "curatorWhy": "21 世紀法語流行代表作，全球商業與樂評雙重成功。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "法國 2013 年最暢銷專輯（銷量超越 Daft Punk《Random Access Memories》），法國唱片工會認證 4x 鑽石（200 萬張），樂評公認為 Stromae 突破代表作，常與 Jacques Brel 相提並論。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Racine_carr%C3%A9e",
+     "https://chartmasters.org/an-odyssey-into-france-best-selling-albums-ever-racine-carree-by-stromae-2013/"
+    ]
+   }
+  },
+  {
+   "artist": "Angèle",
+   "album": "Brol",
+   "rgMbid": "f5c122fd-4d97-4948-9f03-6515bd2ec667",
+   "mbArtist": "Angèle",
+   "mbTitle": "Brol",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "2018-10-05",
+   "suggestedYear": 2018,
+   "yearNote": "MB release group first-release-date 2018-10-05。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "MB disambiguation 確認為 \"Belgian female singer, Angèle Van Laeken\"，已比對池內無重複",
+   "curatorWhy": "比利時新生代法語流行代表，全池掛零。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Christine and the Queens",
+   "album": "Chaleur humaine",
+   "rgMbid": "c6589de6-a3bc-490e-b28d-cdd2499203e0",
+   "mbArtist": "Christine and the Queens",
+   "mbTitle": "Chaleur Humaine",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "2014-05-27",
+   "suggestedYear": 2014,
+   "yearNote": "MB release group first-release-date 2014-05-27。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Christine and the Queens 條目",
+   "curatorWhy": "法語當代流行代表，全池掛零，MB 乾淨無歧義。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Jane Birkin",
+   "album": "Di doo dah",
+   "rgMbid": "44ddd2f8-a218-3a51-b1cf-471c5f963b04",
+   "mbArtist": "Jane Birkin",
+   "mbTitle": "Di doo dah",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1973-02",
+   "suggestedYear": 1973,
+   "yearNote": "MB release group first-release-date 1973-02。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Jane Birkin 個人名義條目（既有池內為 Gainsbourg 名下作品）",
+   "curatorWhy": "Birkin 脫離與 Gainsbourg 合唱身分的個人首張獨唱專輯，稽核明確指出「個人名義」全零。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Dalida",
+   "album": "Le Temps des fleurs",
+   "rgMbid": "09d21fba-ad22-42be-b4ca-fcfa9c75f3ab",
+   "mbArtist": "Dalida",
+   "mbTitle": "Le Temps des fleurs",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1968",
+   "suggestedYear": 1968,
+   "yearNote": "MB release group first-release-date 1968。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "重要同名風險已核對：MB disambiguation \"Egyptian-Italian singer and actress\" 確認為正確藝人，另有一筆同名 \"French krautrock\" 樂團(MBID cf1f8d01-3ac6-48d4-8d30-93d4fef72c59)為不同實體已排除，不得誤選。",
+   "curatorWhy": "Dalida 全池掛零，橫跨法、義、埃及三地演藝生涯的代表歌手。",
+   "curatorRisk": "精選輯而非單一時期錄音室專輯；同名藝人風險已透過 disambiguation 排除。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Jacques Brel",
+   "album": "N°4 : La Valse à mille temps",
+   "rgMbid": "7c32d3aa-ce22-35cf-b053-6d7fa20d624e",
+   "mbArtist": "Jacques Brel",
+   "mbTitle": "N°4 : La Valse à mille temps",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1959-11-10",
+   "suggestedYear": 1959,
+   "yearNote": "MB release group first-release-date 1959-11-10（Philips，第 4 張錄音室專輯）。原候選誤釘 1972 年 Barclay 的同名重錄輯（rgMbid 9c89db44，首發 1972）——〈Ne me quitte pas〉的原始收錄專輯正題是本張。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 Brel 3 張（Ces gens-là、Les Marquises、N°2）皆不含此曲所屬版本｜2026-08-28 改釘：卡片題名採 MB 正規題《N°4 : La Valse à mille temps》，避免與 1972 年同名重錄輯混淆。",
+   "curatorWhy": "池內 Brel 已有 3 張但缺其最著名單曲所屬版本；此曲 1999 年法國民調中 31% 受訪者選為「20 世紀最佳歌曲」。",
+   "curatorRisk": "年份標示涉及 1959 年原始創作與 1972 年再版發行的落差，已於 yearNote 說明。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "1999 年法國民調中 31% 受訪者選為 20 世紀最佳歌曲；被視為 Brel「終極經典」，翻唱為多國語言版本（含英語版「If You Go Away」），法語香頌史上最常被引用的作品之一。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Ne_me_quitte_pas",
+     "https://www.franceinfo.fr/culture/musique/chanson-francaise/quand-brel-suppliait-ne-me-quitte-pas-l-histoire-d-une-chanson-incomprise_3367805.html"
+    ]
+   }
+  },
+  {
+   "artist": "Mina",
+   "album": "Studio Uno 66",
+   "rgMbid": "1554ea7b-5a96-3062-884b-6bb22b2d6d3a",
+   "mbArtist": "Mina",
+   "mbTitle": "Studio uno 66",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1966-07",
+   "suggestedYear": 1966,
+   "yearNote": "MB release group first-release-date 1966-07。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "短名藝人重大風險已核對：MB disambiguation 確認為 \"Italian singer Mina Mazzini\"（1940 年生本尊），另兩筆同名分別為 \"Ecuadorian singer\" 與韓國 \"Mina Koo\"，皆非目標藝人，已排除。",
+   "curatorWhy": "Mina 全池掛零，義大利流行史第一人，此為她該時期最具代表性的錄音室專輯之一。",
+   "curatorRisk": "低，身分已核對。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Mina",
+   "album": "Mina® (1974)",
+   "rgMbid": "a7780003-bd0d-417e-895f-29ff2eaaa329",
+   "mbArtist": "Mina",
+   "mbTitle": "Mina®",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1974",
+   "suggestedYear": 1974,
+   "yearNote": "MB release group first-release-date 1974。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "同上已核對 disambiguation \"Italian singer Mina Mazzini\"",
+   "curatorWhy": "Mina 生涯後期代表作之一；鑑於稽核明確標記「Mina＝義大利流行史第一人全零」的最嚴重缺口之一，額外多收一張補強深度。",
+   "curatorRisk": "低，同上已核對身分。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Lucio Battisti",
+   "album": "Il mio canto libero",
+   "rgMbid": "aa853943-7372-3334-8981-6bc87a2179ea",
+   "mbArtist": "Lucio Battisti",
+   "mbTitle": "Il mio canto libero",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1972-11",
+   "suggestedYear": 1972,
+   "yearNote": "MB release group first-release-date 1972-11。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 Battisti 僅《Una donna per amico》(1978)，本條為不同作品的新增",
+   "curatorWhy": "義大利流行音樂轉捩點代表作，補足稽核指出池內 Battisti 缺此最重要作品的缺口。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "1972–73 年義大利銷售冠軍專輯（初期即賣出 45 萬張，1973 年義大利年度最暢銷專輯），樂評公認為義大利流行音樂成熟期的分水嶺代表作，将其推下榜首的正是 Pink Floyd《The Dark Side of the Moon》。",
+    "evidenceUrls": [
+     "https://it.wikipedia.org/wiki/Il_mio_canto_libero_(album_Lucio_Battisti)",
+     "https://www.blogdellamusica.eu/il-mio-canto-libero-di-lucio-battisti-storia-disco-1972/"
+    ]
+   }
+  },
+  {
+   "artist": "Lucio Battisti",
+   "album": "Emozioni",
+   "rgMbid": "aeee8029-d8a4-3017-8aa7-4f245e9cda6c",
+   "mbArtist": "Lucio Battisti",
+   "mbTitle": "Emozioni",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1970-12",
+   "suggestedYear": 1970,
+   "yearNote": "MB release group first-release-date 1970-12。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 Battisti 條目，本條為不同作品",
+   "curatorWhy": "Battisti 早期生涯代表作，稽核允許《Il mio canto libero》或《Emozioni》擇一至二張，本次兩張皆收補強深度。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Fabrizio De André",
+   "album": "Non al denaro non all'amore né al cielo",
+   "rgMbid": "63464ccd-4c09-34b5-88d6-c6c16a5866e9",
+   "mbArtist": "Fabrizio De André",
+   "mbTitle": "Non al denaro non all'amore né al cielo",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1971",
+   "suggestedYear": 1971,
+   "yearNote": "MB release group first-release-date 1971。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 De André：《Sogno nº 1》(2011 遺作合成) 與《Crêuza de mä》(apex:hall)，本條為不同作品的新增",
+   "curatorWhy": "池內 De André 缺此曲，改編自 Edgar Lee Masters《Spoon River 詩選》的概念專輯，義大利音樂與文學跨界代表作。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "樂評公認為 De André 最具野心與大膽的作品之一，將美國《Spoon River Anthology》詩選引介入義大利文化，普遍被評為義大利音樂史上的重要傑作。",
+    "evidenceUrls": [
+     "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
+     "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review"
+    ]
+   }
+  },
+  {
+   "artist": "Fabrizio De André",
+   "album": "La buona novella",
+   "rgMbid": "c5a8368c-8334-3b9c-91d5-421efaeaecf8",
+   "mbArtist": "Fabrizio De André",
+   "mbTitle": "La buona novella",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1970-11",
+   "suggestedYear": 1970,
+   "yearNote": "MB release group first-release-date 1970-11。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 De André 條目，本條為不同作品",
+   "curatorWhy": "De André 另一部重要概念專輯，稽核明確要求此二張補強其資料庫深度。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Franco Battiato",
+   "album": "La voce del padrone",
+   "rgMbid": "8a50a533-81c0-38d8-a0a9-8f78fd009ff3",
+   "mbArtist": "Franco Battiato",
+   "mbTitle": "La voce del padrone",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1981-09-21",
+   "suggestedYear": 1981,
+   "yearNote": "MB release group first-release-date 1981-09-21。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內既有 Battiato 僅《L'era del cinghiale bianco》(1979)，本條為不同作品的新增",
+   "curatorWhy": "池內 Battiato 缺其最重要作品，此為義大利史上首張銷量破百萬的專輯。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "義大利有史以來第一張銷量突破 100 萬張的專輯，1982 年連續（非連續）18 週冠軍；Musica e dischi 調查評為 1980 年代義大利第二佳輕音樂專輯，僅次於 De André《Crêuza de mä》。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/La_voce_del_padrone_(album)",
+     "https://www.lidentita.it/la-voce-del-padrone-del-maestro-franco-battiato-compie-43-anni-una-pietra-miliare-della-musica-italiana/"
+    ]
+   }
+  },
+  {
+   "artist": "Paolo Conte",
+   "album": "Paolo Conte (1984)",
+   "rgMbid": "8e50ab78-e368-3a54-8f49-d84819272002",
+   "mbArtist": "Paolo Conte",
+   "mbTitle": "Paolo Conte",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1984",
+   "suggestedYear": 1984,
+   "yearNote": "MB 有多張同名《Paolo Conte》專輯(1974/1975/1984 等)並存，選用稽核指定的 1984 年版本。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Paolo Conte 條目",
+   "curatorWhy": "Conte 獨特爵士香頌風格代表作，全池掛零。",
+   "curatorRisk": "同名專輯多版並存，選擇有一定主觀性。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Domenico Modugno",
+   "album": "Sings Nel Blu Dipinto di Blu (Volare) And Other Italian Favorites",
+   "rgMbid": "cc98a32f-ff6b-4dd2-b5a5-979d04617f3e",
+   "mbArtist": "Domenico Modugno",
+   "mbTitle": "Volare!",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1958",
+   "suggestedYear": 1958,
+   "yearNote": "MB 未建 1958 年義大利原盤（Fonit LP 261）的 release group；本卡釘同年美國正式發行版（Decca DL 8808，12 軌，〈Nel blu dipinto di blu〉為開場曲，MB 類型 Album 無 Compilation 副型）。原候選釘的是 1990 年精選輯。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對池內無 Modugno 條目",
+   "curatorWhy": "義大利流行史奠基者，全池掛零，「Volare」是義大利流行樂最著名的出口作品。",
+   "curatorRisk": "精選輯而非原始單曲時期錄音室專輯。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Adriano Celentano",
+   "album": "Azzurro / Una carezza in un pugno",
+   "rgMbid": "0569fe9b-a535-3fac-ac89-954ea5f6e71c",
+   "mbArtist": "Adriano Celentano",
+   "mbTitle": "Azzurro / Una carezza in un pugno",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1968",
+   "suggestedYear": 1968,
+   "yearNote": "MB release group first-release-date 1968。原候選釘的是精選輯，2026-08-28 改釘正規原版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對池內無 Celentano 條目",
+   "curatorWhy": "Celentano 全池掛零，義大利流行史重要人物。",
+   "curatorRisk": "精選輯而非原始單曲時期錄音室專輯。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Pino Daniele",
+   "album": "Nero a metà",
+   "rgMbid": "7c311aaa-5aa3-3fbd-830d-b138abbd6d2e",
+   "mbArtist": "Pino Daniele",
+   "mbTitle": "Nero a metà",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1980",
+   "suggestedYear": 1980,
+   "yearNote": "MB release group first-release-date 1980。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Pino Daniele 條目",
+   "curatorWhy": "普遍被視為 Pino Daniele 最重要的傑作，融合那不勒斯歌謠與爵士放克。",
+   "curatorRisk": "低；具 apex 潛力但本批未查跨源證據，暫列一般卡。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Pino Daniele",
+   "album": "Pino Daniele",
+   "rgMbid": "c3a7d267-448e-3356-8470-6fe6ca950270",
+   "mbArtist": "Pino Daniele",
+   "mbTitle": "Pino Daniele",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1979",
+   "suggestedYear": 1979,
+   "yearNote": "MB release group first-release-date 1979。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Pino Daniele 條目",
+   "curatorWhy": "Pino Daniele 錄音室生涯首張同名出道專輯，補強其資料庫深度。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Laura Pausini",
+   "album": "Laura Pausini",
+   "rgMbid": "daeaf3fe-b76c-39f4-8a96-4edb96341fbf",
+   "mbArtist": "Laura Pausini",
+   "mbTitle": "Laura Pausini",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1993-05-18",
+   "suggestedYear": 1993,
+   "yearNote": "MB 另有 1994-06-01 版本（推測為西語版重發），本次選用原始義語 1993 年版。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Pausini 條目",
+   "curatorWhy": "收錄「La solitudine」的出道專輯，補足稽核指出的缺口。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Eros Ramazzotti",
+   "album": "In certi momenti",
+   "rgMbid": "4eed37d7-afcc-3da1-b53d-422583310648",
+   "mbArtist": "Eros Ramazzotti",
+   "mbTitle": "In certi momenti",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1987-10-28",
+   "suggestedYear": 1987,
+   "yearNote": "MB release group first-release-date 1987-10-28。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Ramazzotti 條目",
+   "curatorWhy": "Ramazzotti 全池掛零，早期代表作。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Zucchero",
+   "album": "Oro, incenso & birra",
+   "rgMbid": "3ccbd2c8-7d8e-3bfb-ab21-076bd64231d6",
+   "mbArtist": "Zucchero Sugar Fornaciari",
+   "mbTitle": "Oro, incenso & birra",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1989-06-13",
+   "suggestedYear": 1989,
+   "yearNote": "MB release group first-release-date 1989-06-13。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Zucchero 條目",
+   "curatorWhy": "Zucchero 商業與樂評雙重代表作，全池掛零。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Andrea Bocelli",
+   "album": "Romanza",
+   "rgMbid": "f0643924-9720-3c13-a4b6-d7623c8f74b3",
+   "mbArtist": "Andrea Bocelli",
+   "mbTitle": "Romanza",
+   "releaseType": "Album",
+   "secondaryTypes": [
+    "Compilation"
+   ],
+   "firstRelease": "1996",
+   "suggestedYear": 1996,
+   "yearNote": "MB 標記 secondary type 為 Compilation，但此為 Bocelli 確立聲樂跨界流行地位的關鍵錄音室專輯（含「Con te partirò」），MB 分類可能反映其收錄部分先前單曲的事實；仍依規則以一般 Album 寫法處理，不需額外 exceptionReason。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "彙整前兩張義大利語專輯曲目並加入新曲的國際版，是 Bocelli 打開國際市場的作品，全球銷量逾 2000 萬張，為史上最暢銷的非英語專輯之一，地位明確且非雜牌拼盤。",
+   "aliasReview": "已比對池內無 Bocelli 條目",
+   "curatorWhy": "Bocelli 全池掛零，跨界聲樂流行代表作。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   },
+   "exceptionEvidence": [
+    "https://en.wikipedia.org/wiki/Romanza",
+    "https://www.yahoo.com/entertainment/music/articles/andrea-bocelli-celebrate-1997-album-182316928.html"
+   ]
+  },
+  {
+   "artist": "Nino Bravo",
+   "album": "Nino Bravo (1971)",
+   "rgMbid": "597d8833-3536-4109-850b-51b684b6f522",
+   "mbArtist": "Nino Bravo",
+   "mbTitle": "Nino Bravo",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1971-04",
+   "suggestedYear": 1971,
+   "yearNote": "MB release group first-release-date 1971-04。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Nino Bravo 條目",
+   "curatorWhy": "Nino Bravo 全池掛零，西班牙巴拉德傳統代表歌手。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Raphael",
+   "album": "Raphael (1973)",
+   "rgMbid": "e5765af0-6d9c-44b1-a869-6f28c7a18442",
+   "mbArtist": "Raphael",
+   "mbTitle": "Raphael",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1973",
+   "suggestedYear": 1973,
+   "yearNote": "MB 有多張同名《Raphael》專輯(1965/1973/1981)，選用 1973 年版本。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "MB disambiguation 確認為 \"Spanish balladist\"，已比對池內無重複",
+   "curatorWhy": "西班牙巴拉德代表歌手 Raphael 全池掛零。",
+   "curatorRisk": "同名專輯多版並存，選擇有一定主觀性。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Joaquín Sabina",
+   "album": "19 días y 500 noches",
+   "rgMbid": "6c680692-b561-373d-badb-339ae0120cc1",
+   "mbArtist": "Joaquín Sabina",
+   "mbTitle": "19 días y 500 noches",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1999-09-14",
+   "suggestedYear": 1999,
+   "yearNote": "MB release group first-release-date 1999-09-14。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Sabina 條目",
+   "curatorWhy": "普遍被視為 Sabina 最佳作品，西班牙創作歌手詩意風格代表。",
+   "curatorRisk": "低；具 apex 潛力但本批未查跨源證據，暫列一般卡。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Nena",
+   "album": "Nena (1983)",
+   "rgMbid": "4897a796-fb40-31ae-8b13-d4caf25a1fc4",
+   "mbArtist": "Nena",
+   "mbTitle": "Nena",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1983-01-14",
+   "suggestedYear": 1983,
+   "yearNote": "此為樂團時期(至 1987 年)首張同名專輯，含《99 Luftballons》；池內既有 Nena 條目為 1998 年個人時期冷門專輯，非稽核要求的正確年代版本。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "MB 對「Nena」有兩個不同 disambiguation：\"the band, until 1987\" 與 \"the person, performing solo since 1987\"，已核對選用樂團版本；池內既有 1998 條目屬個人時期，本條為不同作品的新增。",
+   "curatorWhy": "稽核明確指出池內 Nena 缺《99 Luftballons》首張正確年代版本，此為補正。",
+   "curatorRisk": "低，已核對 disambiguation 區分樂團期與個人期。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Herbert Grönemeyer",
+   "album": "4630 Bochum",
+   "rgMbid": "5ff40916-3a5d-3e8c-b6fa-aa454a59f674",
+   "mbArtist": "Herbert Grönemeyer",
+   "mbTitle": "4630 Bochum",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1984",
+   "suggestedYear": 1984,
+   "yearNote": "MB release group first-release-date 1984。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Grönemeyer 條目",
+   "curatorWhy": "德國史上最暢銷專輯之一，Grönemeyer 全池掛零。",
+   "curatorRisk": "低；具 apex 潛力（常見於「德語史上最暢銷專輯」排行）但本批未逐一查證跨源證據，暫列一般卡。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Modern Talking",
+   "album": "The 1st Album",
+   "rgMbid": "8c555763-bc95-3176-a6bb-1c0651e06b41",
+   "mbArtist": "Modern Talking",
+   "mbTitle": "The 1st Album",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "1985-03",
+   "suggestedYear": 1985,
+   "yearNote": "MB release group first-release-date 1985-03。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Modern Talking 條目",
+   "curatorWhy": "德國 Schlager/Euro-disco 代表二人組出道專輯。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Helene Fischer",
+   "album": "Helene Fischer",
+   "rgMbid": "c43c617c-34e5-407f-a5e7-173add3444f2",
+   "mbArtist": "Helene Fischer",
+   "mbTitle": "Helene Fischer",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "firstRelease": "2017-05-12",
+   "suggestedYear": 2017,
+   "yearNote": "MB release group first-release-date 2017-05-12。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": "",
+   "aliasReview": "已比對池內無 Helene Fischer 條目",
+   "curatorWhy": "當代 Schlager 天后代表作，德國商業紀錄保持專輯之一。",
+   "curatorRisk": "低。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  },
+  {
+   "artist": "Marlene Dietrich",
+   "album": "Marlene Dietrich in London",
+   "rgMbid": "a2a09c76-4058-310d-9f7c-a6eac568afa5",
+   "mbArtist": "Marlene Dietrich",
+   "mbTitle": "Marlene Dietrich",
+   "releaseType": "Album",
+   "secondaryTypes": [
+    "Live"
+   ],
+   "firstRelease": "1964",
+   "suggestedYear": 1964,
+   "yearNote": "MB release group first-release-date 1964。原候選釘 1957 年精選輯、研究層一度改釘 Café de Paris（MB 首發 1991），兩者都不符原盤規則，最終改釘本張生前發行的現場專輯。",
+   "upc": "",
+   "upcNote": "留空",
+   "exceptionReason": null,
+   "aliasReview": "已比對池內無 Marlene Dietrich 條目",
+   "curatorWhy": "德語歌壇跨界巨星，全池掛零。",
+   "curatorRisk": "精選輯，同名版本選擇有一定主觀性。",
+   "apexCandidate": {
+    "eligible": false
+   }
+  }
+ ],
+ "skipped": [
+  {
+   "artist": "France Gall",
+   "album": "France Gall (自題精選，1988 等版本)",
+   "why": "與已收錄的《Poupée de cire, poupée de son》(1965) 重複覆蓋同一藝人單一名額，稽核僅要求擇一"
+  },
+  {
+   "artist": "Barbara",
+   "album": "Dis, quand reviendras-tu?",
+   "why": "已收錄 Barbara 兩張（《Barbara chante Barbara》《L'Aigle noir》），此為避免單一藝人過度佔用開放槽位而不再追加的第三張候選；MBID bd4d40b7-3d22-4fc8-87aa-9fad51666cb0 已核實可用，供未來批次參考"
+  },
+  {
+   "artist": "Léo Ferré",
+   "album": "Amour Anarchie",
+   "why": "原希望以此原始 1970 年錄音室專輯取代精選輯，但 MusicBrainz release-group 查詢因網路壅塞連續 3 次逾時失敗，未能取得 MBID；已改用《Avec le temps》精選輯代替，此候選留待下次網路穩定時補查"
+  },
+  {
+   "artist": "Paolo Conte",
+   "album": "Aguaplano",
+   "why": "與已收錄的《Paolo Conte》(1984) 為同一藝人稽核建議的擇一候選，本次選用 1984 年版本，Aguaplano MBID 02931618-107f-3e64-bd2f-73cb43a7a29e 已核實可用，供未來批次參考"
+  },
+  {
+   "artist": "Daniel Balavoine",
+   "album": "Starmania（個人身分）",
+   "why": "Starmania 的 MusicBrainz release-group 藝人 credit 為「Michel Berger, Luc Plamondon」合輯掛名，查無以 Balavoine 個人身分列名的獨立 release-group；改以其獨唱代表作《Le Chanteur》收錄"
+  },
+  {
+   "artist": "Joan Manuel Serrat",
+   "album": "Mediterráneo",
+   "why": "已由拉丁組收錄（稽核 §5 註明「若未列拉丁線」，拉丁組已列）"
+  }
+ ]
+}

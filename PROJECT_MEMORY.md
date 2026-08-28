@@ -1,5 +1,133 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29｜dip-vinyl-shop＋desc-restyle｜c-47 流行／鄉村／拉丁／音樂劇：171 張走完簡介產線（尚未上架）
+
+`audits/audit-pop-country-latin.md`（2026-08-22 稽核）列的七個子域缺口，本機從策展一路做到簡介定稿。
+**171 張的固定簡介已進 Worker KV 並逐字驗證，但卡池與 Firestore 未動、線上還看不到**——
+Firestore 當日持續回 429，上架與 published gate 留待配額恢復。
+
+## 五個子批
+
+| 批名 | 子域 | 張數 | 頂點候選 |
+|---|---|---:|---:|
+| add-20260828 | 鄉村 | 35 | 8 |
+| add-20260828-2 | 美國流行正典＋愛爾蘭北歐 | 37 | 3 |
+| add-20260828-3 | 法語香頌＋義／西／德語 | 47 | 6 |
+| add-20260828-4 | 拉丁流行與搖滾 | 27 | 4 |
+| add-20260828-5 | 音樂劇與標準曲 | 25 | 8 |
+
+合計 **171 張**（策展階段 172 張，Stanley Brothers《Country Pickin' and Singin'》缺封面暫扣）。
+頂點候選 29 張全為 hall，各附兩個獨立證據網址。
+
+## 開工前重驗缺口，擋掉四張白工
+
+稽核是六天前對 10,735 鍵做的，開工時池子已 12,739。先跑 `batch-progress/c47/snapshot-coverage.mjs`
+把稽核點名的每位藝人在**現在的池子**裡的條目全撈出來比對，確認 Enya《Watermark》、5th Dimension、
+Nat King Cole《After Midnight》、Dionne Warwick 四項缺口已被近期批次補掉，策展代理直接跳過。
+另外抓到稽核把 Cranberries 出道專輯的書名寫錯。
+
+## 檢查器的盲點：Compilation 掛在 secondaryTypes
+
+`chk-cand.mjs` 原本只驗 `releaseType !== 'Album'`，但 **MB 的精選輯常是 primary=Album、
+Compilation 掛在 secondaryTypes**，這條檢查等於形同虛設。補上之後一次掃出法義西德批九張精選輯
+（其他四批乾淨）。這九張全部改釘正規原版：
+
+- Brassens《La Mauvaise Réputation》1996 精選 → 1952 年首張 25cm（Polydor 530.011）
+- Ferré《Avec le temps》1972 精選 → 1970《Amour Anarchie》
+- Trenet《La Mer》1992 精選 → 1956《Chansons claires : 10 chansons nouvelles》
+- Gréco 1960 同名精選 → 1952《Juliette Gréco chante ses derniers succès》
+- Dalida 1991 身後精選 → 1968《Le Temps des fleurs》
+- Modugno《Volare!》1990 精選 → 1958 Decca DL 8808 美版（MB 未建義大利原盤 Fonit LP 261）
+- Celentano《Azzurro》1971 彙編 → 1968《Azzurro / Una carezza in un pugno》
+- Dietrich 1957 精選 → 1964《Marlene Dietrich in London》
+- Bocelli《Romanza》→ **不改釘**，依 §5.6 補例外條款＋兩個佐證（地位明確的國際版）
+
+**Brel 那張是兩層錯**：卡單標 1959、但候選釘的 rgMbid 首發是 1972——那是同名重錄輯。
+收〈Ne me quitte pas〉的原始專輯正題是《N°4 : La Valse à mille temps》(1959-11-10)，已改釘。
+**Dietrich 改了兩次**：研究層第一次改釘的 Café de Paris 在 MB 首發標 1991（Sony 後世發行），
+與「原盤首發年」規則衝突，最終定在 1964 年生前發行的倫敦現場輯。
+九張的新 MBID 都由主線逐筆對 MB 覆核類型與年份，不照抄代理回報。
+
+## 研究層擋掉的事實錯誤（問句式特注的價值）
+
+- 〈Como la Flor〉不在 Selena《Amor Prohibido》（屬 1992 年前作）；標題曲故事的主角是**曾祖母**不是祖母
+- Gloria Estefan《Mi Tierra》**不是**她第一張全西語專輯（Miami Sound Machine 時期已有四張）
+- Fito Páez 1986 年遇害的是**祖母、姑婆與幫傭三人**（他生母在他八個月大時已過世），
+  且那起命案催生的是 1987 年《Ciudad de Pobres Corazones》，與本作（1992）只是背景關係
+- Mon Laferte 的選秀是**智利本土《Rojo》**，不是墨西哥節目
+- Los Tigres del Norte **1997 年當時查無電台禁播紀錄**，可寫的是 2025 年墨西哥十州立法罰款
+- 〈El Baile de los Que Sobran〉不在 Los Prisioneros《La Voz de los '80》（屬 1986 年前作）
+- 〈Napule è〉不在 Pino Daniele 這兩張（收於 1977 年首張《Terra mia》）
+- Hair 的 Hot 100 冠軍屬 **5th Dimension 另行灌錄的混唱版**，不是原卡司版
+- Fiddler 的國家錄音登記簿是 **2020 年**（初查誤植 2013）
+- Petula Clark「20 年來首支英國女歌手美國冠軍」不成立（Vera Lynn 1952 就登頂），
+  退成「搖滾樂時代第一位」
+- Fred Astaire《The Astaire Story》的伴奏是**六人編制**，不是 Oscar Peterson 四重奏
+- De André 卡的 Fernanda Pivano 是**作家與翻譯家**，不是精神病學家
+- Dalida 那張**不屬「Orlando 時期」**（該廠牌 1970 才成立，本作是 1968 年 Barclay 時期）
+- Camelot 的甘迺迪「卡美洛時代」典故是該劇**下檔約十個月後**才由 Jackie Kennedy 提出
+
+依規則退階或不寫的宣稱：Oklahoma!「史上第一張卡司專輯」（退成「做成完整商品的先例」）、
+Sinatra《Only the Lonely》「Riddle 自稱最佳作品」、《No One Cares》「自殺歌單」、
+Mecano 的鑽石唱片與金氏紀錄、Maná 的具體銷量（兩篇維基自相矛盾，只寫定性）、
+Irving Berlin「美國歌曲之父」、Sondheim 稱 Sweeney Todd 為「黑色喜劇」。
+
+## 資產
+
+- 封面 **171/172**（CAA 直取 170、Vicente Fernández 逐 release 補救後人工目視確認為 CBS 原版 LP）
+- UPC **160/172**（先補條碼再配試聽，從 53 補到 160）
+- 試聽 **107/172**，零淨化版。缺的多是 1950–70 年代歐陸盤在 Apple 無數位版
+
+**試聽配對的做法要記一下**：第一版走「MB release-group 的 url-rels 找 Apple 連結」，**172 張全數落空**——
+實測 MB 的 relations 只有 AllMusic／Discogs／Last.fm／Genius／RYM，**沒有 Apple**，那條路徑不存在。
+本機 iTunes `/search` 又有長效封鎖，最後改成「UPC 直查 `/lookup?upc=`（命中 107）
+＋已知 artistId 拉藝人目錄補配」。人工覆核時撤掉四筆版本不符的配對：
+Sondheim《Into the Woods》配到 2014 電影原聲、Les Misérables 與 Sweeney Todd 配到 **Highlights 精選版**
+（曲目不全）、Barbara《L'Aigle noir》配到早九年的條目。
+
+## 主要檔案
+
+- `desc-restyle/batches/`：五批的 cards／research／hooks／input／output／kv 檔
+- `desc-restyle/progress.json`（五筆＋status）
+- `dip-vinyl-shop/batch-progress/c47/`：候選檔五份、cand-all、covers、previews、ratings，
+  以及 `snapshot-coverage.mjs`、`chk-cand.mjs`、`resolve-covers.mjs`、`fetch-upc.mjs`、
+  `match-previews.mjs`、`match-previews-round2.mjs`、`fetch-ratings.mjs`
+- Worker KV：`desc2:`／`desc4:` 共 171 筆
+
+## 驗證
+
+- 候選檔 `chk-cand.mjs`：172 張、ERROR 0（含 rgMbid 格式、與現池撞鍵、U+2010 污染、
+  跨檔重複、Compilation 例外條款、頂點證據數）
+- 研究層 `qa-batch.mjs research`：五批全綠、key 與卡單完全一致
+- hook 層 `qa-batch.mjs hooks` 與 `chk-hook-crossgroup.mjs`：五批全綠、跨組零撞頭
+- 寫作層 `qa-batch.mjs out` 與 `qa-check-research.mjs`：五批全綠
+- 逐張人工審稿 171 張，修正 4 處：Garth Brooks《No Fences》最高級宣稱、
+  Sinatra《Where Are You?》把聖誕專輯寫成「稍早才做完」（實際晚於本作）、
+  Cher 卡把電視首播與單曲奪冠寫成因果、Battiato 卡把 His Master's Voice 的來源寫成 RCA Victor
+- `verify-kv.mjs` 五批複驗：35／37／47／27／25，**一致 171、不符 0**
+
+## 尚未完成（Firestore 配額）
+
+Firestore 自 2026-08-28 起持續回 429（RESOURCE_EXHAUSTED），超過 24 小時未恢復。因此：
+
+1. **c-47 未上架**：`card_catalog` 未寫入、`seed_cards.json` 與 `apex_pool.json` 未動、
+   published gate 未跑。簡介雖在 KV，但沒有卡就不會被讀到，線上無影響。
+2. **c-46 的全批 published gate 仍未補跑**（8/28 那筆紀錄已載明）。
+3. 建議評估升 Blaze：目前批次規模（單日數千筆讀寫）已超出 Spark 日配額，
+   這個用量級距的實際費用極低。
+
+## 本機產線的效率觀察（店主 2026-08-29 提出）
+
+店主指出應比照日本那次用遠端跑代理、處理完一大批再帶回本機。實測支持這個判斷：
+研究／hook／寫作三層最耗時且不碰線上資料，適合遠端；封面實測、試聽配對、Firestore／KV 寫入、
+gate 與上架開關只能本機。但遠端模式要先修四件事，否則「帶回本機」那段會很痛：
+
+1. **egress 封鎖會系統性汙染判定**——c-46 那 40 張 classic=5 全因「本環境查不到跨來源證據」
+   被作成普卡，本機補證後 22 張其實夠格。遠端的 apexAssessment 應標「證據待補」而非直接判普卡。
+2. **listeners 全空 = pearl 判定停擺**——遠端擋 last.fm，3,793 張全 null；本機一跑 171/172 有值。
+3. **選輯會混進來**——遠端策展腳本要加上本次補的 secondaryTypes 檢查。
+4. **版本鎖定要在遠端做完**——同名重錄輯、Highlights 精選、電影版與舞台版，本機逐張人工看很吃時間。
+
 ### 2026-08-28（同日第四筆）｜dip-vinyl-shop｜線上嘻哈卡的淨化版試聽：273 張處理掉 249 張
 
 `audits/cleaned-previews-hiphop.md`（2026-08-23 稽核）列出的 273 張，本機處理完成。
