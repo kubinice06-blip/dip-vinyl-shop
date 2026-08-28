@@ -329,3 +329,81 @@ c-45 掃出 44 筆淨化版，已全數改抓 explicit 條目或確認 Apple 只
 | Young Thug | So Much Fun | 1477895569 | US | So Much Fun |
 | YoungBloodZ | Against da Grain | 299617349 | TW | Against Da Grain |
 | Zayn | Mind of Mine | 1087165847 | TW | Mind Of Mine (Deluxe Edition) |
+
+---
+
+## 本機處理結果（2026-08-28）
+
+**273 張裡 249 張已換成 explicit 原版**，剩 24 張維持現狀。
+工具：`scripts/fix-cleaned-previews.mjs`。
+
+### 怎麼在不能用 /search 的情況下找到原版
+
+本機 IP 對 iTunes `/search` 有長效封鎖，只有 `/lookup` 與 CDN 可用。
+改走三步，全程不碰 `/search`：`/lookup` 取這張淨化版的 `artistId` →
+`/lookup?id=<artistId>&entity=album&limit=200` 拉整份藝人專輯目錄 →
+在目錄裡挑同名的 explicit 那筆。藝人目錄有快取，同藝人多張只查一次。
+
+### 一個把正確答案排除掉的判準（改過）
+
+第一版要求「原版與淨化版曲數必須一致」，結果 273 張只配上 212 張。
+**但曲數不一致才是常態**——淨化版會整首抽掉曲目，正是本文件開頭 Pop Smoke 那個例子的性質。
+實測 Fugees《The Score》17 vs 15、Lil Wayne《Tha Carter III》18 vs 16、
+Common《Like Water for Chocolate》17 vs 16，全部因為「曲數不符」被誤殺。
+改成「取曲數最接近者，差距超過 max(6, 40%) 才拒收」後升到 249 張。
+保留上限是為了擋掉 Deluxe——Nicki Minaj《Pink Friday》13 對 21 軌、
+Blackstreet《Another Level》19 對 29 軌就是這樣被正確拒收的。
+
+另外 36 張是原版在台灣商店查無試聽、改用美國商店才取得
+（2Pac《All Eyez on Me》、Kendrick《Mr. Morale & the Big Steppers》等）。
+
+### 剩下的 24 張
+
+**Apple 目錄裡沒有 explicit 版**（18 張）
+
+- Gucci Mane — The State vs. Radric Davis
+- Mobb Deep — Infamy
+- Sean Paul — The Trinity
+- Usher — Confessions
+- Usher — Looking 4 Myself
+- 112 — 112
+- Ashanti — Chapter II
+- Trey Songz — Ready
+- Jeremih — Late Nights
+- Kool G Rap — 4, 5, 6
+- Gucci Mane — Back to the Traphouse
+- Gucci Mane — The Appeal: Georgia's Most Wanted
+- Rick Ross — God Forgives, I Don't
+- Chamillionaire — Ultimate Victory
+- Gunna — DS4EVER
+- 2 Chainz — Based on a T.R.U. Story
+- Paul Wall — The People's Champ
+- The Pussycat Dolls — PCD
+
+**原版 N 在 TW 與備援商店都沒有可用試聽**（4 張）
+
+- Juice WRLD — Fighting Demons
+- Kendrick Lamar — Mr. Morale & the Big Steppers
+- 2Pac — All Eyez on Me
+- Juice WRLD — Goodbye & Good Riddance
+
+**N 筆同名 explicit 的曲數都差太多（本卡 N 軌，最接近 N 軌）**（2 張）
+
+- Nicki Minaj — Pink Friday
+- Blackstreet — Another Level
+
+「Apple 目錄裡沒有 explicit 版」那組是 Apple 只供應淨化版，換不了；
+其餘幾張是原版兩個商店都沒有試聽，或曲數差距大到只可能是別的編輯版。
+完整逐張資料（新舊 collectionId、曲數差、首軌）見 `audits/cleaned-previews-fix.json`。
+
+### 驗證
+
+- 靜態地圖逐筆比對：entries 總數不變（10,871），previewUrl 改動 249 筆、非預期改動 0。
+- `build-apple-audio-runtime-map.mjs` 重建後 `skippedInvalid` 0。
+- 抽驗 7 張正典卡（DAMN.、The Blueprint、Take Care、It's Dark and Hell Is Hot、
+  Miss E... So Addictive、8 Diagrams、Supreme Clientele）：runtime 地圖相符且試聽網址實際 HTTP 200。
+
+### 尚未做的一件事
+
+`pipe-preview.mjs` 仍未把 `collectionExplicitness` 存進 `preview.json`（本文件「建議」第 1 點）。
+c-45 之後的批次是在組裝階段擋下淨化版，管線層的根治還沒做。

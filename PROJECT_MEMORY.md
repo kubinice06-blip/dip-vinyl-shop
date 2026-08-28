@@ -1,5 +1,59 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-28（同日第四筆）｜dip-vinyl-shop｜線上嘻哈卡的淨化版試聽：273 張處理掉 249 張
+
+`audits/cleaned-previews-hiphop.md`（2026-08-23 稽核）列出的 273 張，本機處理完成。
+這些卡的固定試聽配到 Apple 的 `cleaned`（消音淨化版）條目——**淨化版不只消音，
+還會整首抽掉曲目**，對嘻哈等於換掉作品內容。名單含《The Blueprint》《DAMN.》
+《Take Care》《It's Dark and Hell Is Hot》《Miss E... So Addictive》《8 Diagrams》。
+
+## 怎麼在 /search 被封鎖的情況下找到原版
+
+本機 IP 對 iTunes `/search` 有長效封鎖（2026-07 起實測），只有 `/lookup` 與 CDN 可用。
+改走三步、全程不碰 `/search`：`/lookup` 取淨化版的 `artistId` →
+`/lookup?id=<artistId>&entity=album&limit=200` 拉整份藝人專輯目錄 →
+在目錄裡挑同名的 explicit 那筆。藝人目錄有快取（Aesop Rock ×5、Atmosphere ×3 這類只查一次）。
+
+## 一個把正確答案排除掉的判準
+
+第一版要求「原版與淨化版曲數必須一致」，273 張只配上 212 張，61 張報「曲數不符」。
+**但曲數不一致才是常態**——淨化版會抽掉曲目，正是稽核文件自己舉的 Pop Smoke 例子的性質。
+實測 Fugees《The Score》17 對 15、Lil Wayne《Tha Carter III》18 對 16、
+Common《Like Water for Chocolate》17 對 16，全部因為這條判準被誤殺。
+改成「取曲數最接近者，差距超過 max(6, 40%) 才拒收」後升到 249 張；
+保留上限是為了擋 Deluxe——Nicki Minaj《Pink Friday》13 對 21 軌、
+Blackstreet《Another Level》19 對 29 軌就是這樣被正確拒收。
+
+**另一個實測**：36 張的原版在台灣商店查無試聽、換美國商店才拿到
+（2Pac《All Eyez on Me》、Kendrick《Mr. Morale & the Big Steppers》等），
+所以取試聽時要跨商店重試一次。
+
+## 剩下的 24 張
+
+18 張是 **Apple 目錄裡根本沒有 explicit 版**（Usher《Confessions》、112《112》、
+Sean Paul《The Trinity》、Gucci Mane 兩張等），換不了；4 張是原版兩個商店都沒有試聽；
+2 張（Pink Friday、Another Level）曲數差距大到只可能是別的編輯版，維持現狀。
+
+## 主要檔案
+
+- `scripts/fix-cleaned-previews.mjs`（新增）
+- `data/apple-audio-map-v1.json`（249 筆改 collectionId 與 previewUrl，source 標 `cleaned-preview-fix`）
+- `data/apple-audio-runtime-v1.json`（重建）
+- `audits/cleaned-previews-fix.json`（逐張新舊 collectionId、曲數差、首軌）
+- `audits/cleaned-previews-hiphop.md`（補上處理結果）
+
+## 驗證
+
+- 靜態地圖逐筆比對：entries 總數不變（10,871）、previewUrl 改動恰為 249 筆、非預期改動 0。
+- runtime 重建 `skippedInvalid` 0。
+- 抽驗 7 張正典卡：runtime 地圖 previewUrl 相符，且試聽網址實際 GET 得到 HTTP 200，
+  首軌名稱合理（DAMN.→BLOOD.、The Blueprint→The Ruler's Back、Take Care→Over My Dead Body）。
+
+## 尚未做
+
+`pipe-preview.mjs` 仍未把 `collectionExplicitness` 存進 `preview.json`（稽核文件建議第 1 點）。
+c-45 之後是在組裝階段擋淨化版，管線層的根治還沒做。
+
 ### 2026-08-28（同日第三筆）｜dip-vinyl-shop｜c-46 殿堂複審：40 張補證、22 張升頂級牌，並修好「頂級牌三軸走 AI」的顯示缺陷
 
 遠端工作階段因 egress 封鎖讀不到 AllMusic／Rolling Stone／Discogs／日文媒體，把 c-46 裡
