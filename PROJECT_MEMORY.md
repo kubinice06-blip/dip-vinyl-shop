@@ -1,5 +1,39 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29（第三筆）｜dip-vinyl-shop｜備齊雲端工作階段所需檔案，並查出 c-46 證據封鎖的真正原因
+
+要開雲端工作階段跑產線，先確認了一個會直接擋住開工的問題：**skill 與簡介產線工具都不在 repo 內**
+（`.claude/` 被 gitignore、`desc-restyle/` 是版控外的獨立資料夾），雲端只 clone 得到 GitHub 上的
+`dip-vinyl-shop`，開了會發現沒有 `dip-card-create`、也沒有三份 base 派工範本。已全部備齊。
+
+## c-46「查不到證據」的真正原因可能是預設值，不是能力問題
+
+查證官方文件後發現：**雲端環境的網路層級預設是 `Trusted`，只放行套件庫與 GitHub**，
+musicbrainz.org、wikipedia.org、AllMusic、Last.fm 一律連不到。c-46 那 40 張 classic=5
+被作成普卡（本機補證後 22 張夠格升殿堂），極可能就是這個預設造成的。
+建立雲端環境時要把層級改 Full 或 Custom，白名單至少含 musicbrainz／coverartarchive／
+wikipedia／wikidata／last.fm／discogs／allmusic／rollingstone／billboard／loc.gov，
+**且開工第一件事是實測抓一個 MB release-group 與一個維基頁面確認通得到**，
+不通才退回「標 pending-local 不判普卡」的退守規則。`REMOTE_RUNBOOK.md` 的硬規則第 1 條
+已從「egress 一定被擋」改寫成「先設定、設不成才退守」。
+
+## 改動
+
+- `.gitignore`：`.claude/` 改成 `.claude/*` ＋ `!.claude/skills/`
+  （目錄整個被 ignore 時 git 不下探，內層否定規則無效，所以要先改成萬用字元）。
+  settings.json、launch.json、worktrees 仍維持忽略，已用 `git check-ignore -v` 確認。
+- `.claude/skills/` 三個 skill 入版控：dip-card-create、dip-desc-restyle、dip-card-pool-expand。
+  官方文件明載雲端工作階段會載入 repo 內 commit 的 project skill（個人層級 skill 不會帶過去）。
+- 新增 `desc-tools/`：三份 base 派工範本＋雲端段五支腳本（qa-batch、chk-hook-crossgroup、
+  merge-writer-input、qa-check-research、fix-spacing）＋ README 說明目錄約定
+  （cwd 必須是 desc-tools/，產物落 desc-tools/batches/，layout 與本機 desc-restyle 一致）。
+  本機專用的 build-final、verify-kv 等刻意不放。
+- `desc-tools/fix-spacing.mjs`：卡池路徑原本寫死本機絕對路徑，改成本機與雲端（repo 相對）
+  各試一次，讀不到只是保護清單較短、不會出錯。已驗證相對路徑解得到卡池。
+- `REMOTE_RUNBOOK.md` 補「開雲端工作階段的前置設定」一節。
+
+**這份是複本，本機改了 base 範本或那五支腳本要記得同步過來**，否則雲端用的是舊規則。
+
 ### 2026-08-29（第二筆）｜dip-vinyl-shop｜制定雲端／本機分工產線 REMOTE_RUNBOOK.md
 
 店主升級 Firebase Blaze 後指示：日常批次改成兩頭分工——研究／寫作在 claude.ai/code

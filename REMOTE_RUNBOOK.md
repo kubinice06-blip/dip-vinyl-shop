@@ -20,10 +20,41 @@
 | KV 寫入與逐字驗證 | **本機** | 需 CLOUDFLARE_API_TOKEN |
 | Firestore 寫入、published gate、上架開關 | **本機** | 需憑證；且要等配額窗口 |
 
+## 開雲端工作階段的前置設定（第一次必做）
+
+1. **網址 https://claude.ai/code**，用同一組 claude.ai 帳號登入，授權 GitHub，
+   選 `kubinice06-blip/dip-vinyl-shop`。也可以在本機終端機打 `claude --cloud "任務描述"`
+   （沿用當前分支；**雲端 clone 的是遠端分支，所以開之前本機要先 push**）。
+
+2. **把 Cloud environment 的網路層級改成 Full 或 Custom——這是最關鍵的一步。**
+   預設是 `Trusted`，只放行套件庫與 GitHub，**musicbrainz.org、wikipedia.org 等一律連不到**。
+   c-46 那次「查不到跨來源證據，把 40 張 classic=5 全作普卡」極可能就是這個預設造成的，
+   不是模型能力問題。Custom 白名單至少要含：
+
+   ```
+   musicbrainz.org, coverartarchive.org, *.wikipedia.org, wikidata.org,
+   last.fm, www.last.fm, discogs.com, api.discogs.com,
+   allmusic.com, rollingstone.com, billboard.com, loc.gov
+   ```
+
+   設好之後**開工第一件事是實測**：叫代理抓一個 MB release-group 與一個維基頁面，
+   確認真的通得到再派工。不通就退回本文件的「查不到標 pending-local」規則。
+
+3. **skill 走 repo 內的 `.claude/skills/`**（已 commit：dip-card-create、dip-desc-restyle、
+   dip-card-pool-expand）。雲端只讀 repo 內的 project skill，不會帶本機個人 skill 過去。
+
+4. **簡介產線的工具在 `desc-tools/`**，cwd 要設在那裡，產物落 `desc-tools/batches/`。
+   詳見 `desc-tools/README.md`。
+
+其他已知限制：雲端到停頓點會**自動 push 分支**（開 PR 是手動，在網頁按 Create PR）；
+閒置久了 VM 會被回收（重開會用新 VM 還原對話）；用量計入帳號共用額度，平行開多個會等比例吃掉。
+把雲端工作階段拉回本機用 `claude --teleport`。
+
 ## 雲端硬規則（c-46 遠端實跑踩過的坑，一條都不能少）
 
-1. **頂點判定不得因「查不到」降級。** 雲端 egress 擋 AllMusic／Rolling Stone／Discogs／
-   Last.fm／多數日文媒體。查不到跨來源證據時，apexAssessment 一律標
+1. **頂點判定不得因「查不到」降級。** 若上一節的網路層級沒設好，雲端會擋掉 AllMusic／
+   Rolling Stone／Discogs／Last.fm／多數日文媒體（c-46 實測）。**先照上一節開白名單並實測**；
+   仍連不到的來源，其 apexAssessment 一律標
    `"evidence": "pending-local"`（證據待補），**不得判普卡**。
    c-46 有 40 張 classic=5 因此被誤作普卡，本機補證後 22 張夠格升殿堂。
 2. **listeners 一律留 null 並標 `"listeners": "local"`**，不要寫 0、不要猜。
