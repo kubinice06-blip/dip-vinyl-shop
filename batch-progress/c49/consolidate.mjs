@@ -28,7 +28,7 @@ function normalizeApex(ac, label) {
 }
 
 const GROUPS = { D: '時代曲', E: '台語', FG: '原民客語＋華語電影配樂', A: '粵語第二圈', I: '星馬第二圈' };
-let manual = 0, pinned = 0, total = 0;
+let manual = 0, pinned = 0, total = 0, failed = 0;
 
 for (const [g, label] of Object.entries(GROUPS)) {
   const src = load(path.join(DIR, `curation/out-${g}.json`));
@@ -37,7 +37,15 @@ for (const [g, label] of Object.entries(GROUPS)) {
   for (const a of src.albums || []) {
     total++;
     const k = `${a.artist}|${a.album}`;
-    const hits = Array.isArray(mbWork[k]) ? mbWork[k] : [];
+    // 逾時／HTTP 錯誤不是「查無」——把失敗當成缺席會產出假的 mbAbsenceProof，
+    // 而驗證器對人工身分路線的舉證要求正是「證明 MB 真的查過而且查無」。
+    const raw = mbWork[k];
+    if (raw === undefined || (raw && raw._error)) {
+      console.error(`  ✗ ${k}：MB 查詢${raw ? '失敗（' + raw._error + '）' : '未執行'}，不得當作查無，請重跑 mb.mjs 補齊`);
+      failed++;
+      continue;
+    }
+    const hits = Array.isArray(raw) ? raw : [];
     const aHits = Array.isArray(mbArtist[`${a.artist}|(藝人方向)`]) ? mbArtist[`${a.artist}|(藝人方向)`] : [];
 
     const rec = {
@@ -91,3 +99,7 @@ for (const [g, label] of Object.entries(GROUPS)) {
   console.log(`cand-${g}.json：${albums.length} 張（釘 MBID ${albums.filter(x => x.rgMbid).length}、人工身分 ${albums.filter(x => x.identitySource === 'manual').length}）`);
 }
 console.log(`\n合計 ${total} 張｜釘 MBID ${pinned}｜人工身分 ${manual}｜pearl 改標 pending-local ${pearlFixed}`);
+if (failed) {
+  console.error(`\n⚠ 有 ${failed} 張的 MB 查詢失敗或未執行，已從候選檔略過。補跑 mb.mjs 後重跑本腳本。`);
+  process.exit(1);
+}
