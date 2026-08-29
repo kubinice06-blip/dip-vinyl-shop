@@ -53,8 +53,22 @@
   }
  ],
  "qa": {
-  "research": "pending",
-  "hooks": "pending",
-  "out": "pending"
- }
+  "research": "c48a／c48b／c48c 三批 qa-batch research 全部通過：key 與卡單完全一致、字元三掃描零標記。status 共 96 full ＋ 1 thin（嚴良堃《長恨歌》，見 poolIssues）。",
+  "hooks": "chk-hook-crossgroup 三批全綠。c48b 有一項「辭世 ×2」的同構命中，經複核為誤報——兩張分屬不同敘事角色（Lassus 是題獻教宗後三週辭世的時序註記、Purcell 是總譜在他身後散佚的流傳史），兩張 hook 都沒用這個骨架當主軸。hook 加權 20–35.5、note 285–350，全部在上限內。",
+  "out": "qa-batch out 三批合計 97 張與卡單相符、超過 260 字零張、字數 167–240。qa-check-research 15 檔共 2 個標記，複核後皆為誤報：研究稿寫廠牌縮寫（DG 2530 720、RCA Victor Red Seal 的 LSC-2603），寫作層展開或相鄰寫出，比對器認不得縮寫；兩張的發行事實在事實表裡都有據。"
+ },
+ "ownerDecisions": [
+  "【年份口徑】research-base 說 yearVerified.year 取首發年，但 audits/audit-classical.md 風險註 6 與池內慣例（Gould 1955、Richter 1958、Furtwängler 拜魯特 1951）用的是錄音年。本批一律填錄音年，首發年另記在同一欄的 note 裡，本機可一鍵切換。",
+  "【傅聰《Chopin: Nocturnes》】碟面 ℗ 1978／1980 跨兩年。本批取 1978（首張 LP 年、與卡名一致）；若依 research-base「全集取完成年」則應為 1980。",
+  "【Michelangeli《Beethoven / Galuppi / Scarlatti Recital》】MB 標 Compilation 與事實不符——這套曲目 1965 年就以單張原創獨奏會 LP 發行（Decca SXL 6181／LXT 6181，美版 London CS 6446），曲目與 1988 年 CD 完全相同。§5.6 的舉證需求應重估。"
+ ],
+ "poolIssues": [
+  "【嚴良堃《黃自: 長恨歌》】錄音本體五個途徑全查無：MB 條碼 4892440722422 零結果、Discogs 條碼 API 與關鍵字皆無、Apple/iTunes 港台區無、雨果豆瓣目錄無、香港聖樂團官網 1995–2002 大事記無 1999 年紀錄。演出者、日期、編號 HRP 7224-2、發行年全部未證實，facts 一律未寫。不建議移除（原創錄音、作品有明確歷史定位），但實體核實前簡介只能寫作品與人物——已照此執行，該卡正文 167 字元，低於 180 目標下限但屬正確結果。",
+  "【掛名格式】「Tai-Hsiang Li 李泰祥」的中英並列寫法與本批其餘卡不一致，本機請決定統一格式。",
+  "【掛名正規化】本批已用 normalize-artist.mjs 處理 6 處：「Lang Lang 郎朗」→「Lang Lang」（1 處）、「鄧麗君」→「鄧麗君 Teresa Teng」（5 處）。合作卡（A & B、A / B）一律不動，那是多位演奏者不是掛名分裂。"
+ ],
+ "specConflicts": [
+  "【年份口徑】同上 ownerDecisions 第 1 條，research-base 與 audit-classical 互相牴觸。",
+  "【qa-check-hooks.mjs 不在 repo 裡】qa-batch.mjs 的 hooks 階段原本無條件 execSync 這支不存在的腳本，把「檔案不存在」和「檢查不通過」都算成一個標記，雲端每次跑必然多一個假標記。已改為先驗檔案存在與否、缺檔就提示改跑 chk-hook-crossgroup.mjs（字數／禁語／開頭雷同／分數星等這些檢查該支都齊備）。本機若有 qa-check-hooks.mjs，請決定是把它提交進 repo，還是把 qa-batch 的呼叫改掉。"
+ ]
 }
