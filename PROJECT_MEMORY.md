@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29（第二筆）｜dip-vinyl-shop｜制定雲端／本機分工產線 REMOTE_RUNBOOK.md
+
+店主升級 Firebase Blaze 後指示：日常批次改成兩頭分工——研究／寫作在 claude.ai/code
+雲端跑（電腦可關機），封面／試聽／listeners／KV／Firestore／gate 累積一批後本機一次收。
+新增 `REMOTE_RUNBOOK.md` 作為雲端工作階段的開工必讀，內容：分工表、
+雲端四條硬規則（apex 查不到標 pending-local 不判普卡、listeners 留 null、
+策展必查 secondaryTypes、版本鎖定必須雲端做完）、handoff.json 交接格式
+（簡介產物放 shop repo 的 batch-progress/<批名>/desc/，因 desc-restyle 不在版控）、
+本機接手七步清單。串聯以 git branch（remote/<批名>）為主通道，
+對話互傳僅本機→雲端單向、不作依賴。
+
+Firestore 免費額度將於太平洋午夜（台北 15:00）重置，屆時再跑 c-47 上架與 c-46 gate
+（店主指示升 Blaze 後仍優先用免費額度窗口）。
+
 ### 2026-08-29｜dip-vinyl-shop＋desc-restyle｜c-47 流行／鄉村／拉丁／音樂劇：171 張走完簡介產線（尚未上架）
 
 `audits/audit-pop-country-latin.md`（2026-08-22 稽核）列的七個子域缺口，本機從策展一路做到簡介定稿。
