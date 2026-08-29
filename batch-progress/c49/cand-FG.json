@@ -182,7 +182,9 @@
    "versionNote": "鎖 1989 年飛碟唱片台灣首版（卡帶 UC-89108／同內容 1992 年 CD 再版 UFO-89108），七首曲：〈悲情城市（序曲）〉〈寬美之主題曲 1〉〈流れゆく時／流逝的歲月〉〈寬美之主題曲 2〉〈悲情城市（胡琴篇）〉〈文清之主題〉〈悲情城市（主題曲）〉。**要避開三種同名混淆**：(a) S.E.N.S. 日本本地目錄中的自選輯與精選常收錄同名曲，不是本碟；(b) 2014 年前後流出的 SACD／DSD 版是後世高解析再版；(c) 中文網路上把「悲情城市」當電影條目而非唱片條目的資料極多，比對時必須看到廠牌與編號才算數。",
    "namingNote": "掛名維持 **S.E.N.S.**：依 §0.5「官方藝名本身就是拉丁字者保留」，這個日本二人組（深浦昭彥、勝木ゆかり）在 1989 年台灣實體盤上的 credit 就是拉丁字 S.E.N.S.，漢字「神思者」是中文圈慣用譯名，進別名而非主名。**立川直樹不掛主名**：他是日方的音樂統籌／製作方向者，Discogs 把他標成 Music By，但這與「S.E.N.S. 作曲並演奏、Fun House 製作」的其他記載不一致，該掛名的確切分工需本機再覆核；在確認前不把他寫進 artist，也不寫進簡介當作曲者。",
    "releaseType": "Album",
-   "secondaryTypes": [],
+   "secondaryTypes": [
+    "Soundtrack"
+   ],
    "exceptionReason": "",
    "exceptionEvidenceUrls": [],
    "upc": "",
@@ -200,22 +202,11 @@
    },
    "ratings": null,
    "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
-   "identitySource": "manual",
-   "mbAbsenceProof": {
-    "queries": [
-     "release-group/?query=artist:\"S.E.N.S.\" AND releasegroup:\"悲情城市 電影原聲帶\"",
-     "release-group/?query=artist:\"S.E.N.S.\"（藝人全目錄方向）"
-    ],
-    "checkedAt": "2026-08-29",
-    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
-   },
-   "manualEvidenceUrls": [
-    "https://www.discogs.com/release/22004797-SENS-%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
-    "https://www.discogs.com/release/11984204-SENS-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
-    "https://filmaholic.tw/films/63fadcdbfd89780001e11173/",
-    "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
-   ],
-   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+   "rgMbid": "2a2fd94a-dac5-48ae-8c7f-ad35876343e1",
+   "mbTitle": "悲情城市サウンドトラック",
+   "mbCredit": "S.E.N.S.",
+   "mbFirstRelease": "1990-04-25",
+   "mbNote": "2026-08-29 主線以 MB API 核實：RG 2a2fd94a（Album＋Soundtrack、掛 S.E.N.S.）確實存在，其下有 1990-04-25 日本盤、2014 香港盤（A City of Sadness）與 2017-08-21 台灣盤（Memory-Tech 88985459482、7 軌）。**專輯本身在 MB 有 RG，故不適用 §1 的缺席例外**；但本卡鎖定的 1989 年台灣飛碟版未見於 MB 的 release 清單，本機釘版本時請注意 RG 涵蓋範圍與卡片鎖定版本不同一件事。"
   },
   {
    "artist": "陳勳奇",
@@ -419,11 +410,13 @@
    "album": "無間道 電影原聲配樂",
    "suggestedYear": 2002,
    "yearNote": "取原聲帶發行年 2002（中文維基記 2002-12-01 發行、13 首曲），與電影上映年同年（2002-12-12 香港上映），原聲碟略早於上映。無年份落差問題。",
-   "label": "待本機補（中文維基記為 Sony BMG，但該公司 2004 年才成立，2002 年不可能以此名發行，疑為 Sony Music Hong Kong 或寰亞相關廠牌之誤記；未取得可靠一手佐證前不填廠牌名）",
+   "label": "Click Music（香港，CM001）",
    "versionNote": "鎖 2002 年首版實體（13 首，曲目為陳光榮的配樂段落：〈無間〉〈跟他交換〉〈再見…警察〉〈標〉〈三年又三年〉〈我在夢中見過你〉〈他是一個好警察〉〈有內鬼，行動取消〉〈我是警察〉〈我最信的是你〉〈我揀做個好人〉〈再見…警察…再見〉等，另含主題曲）。**同系列同名碟極多，逐一排除**：(a)《無間道II 電影原聲大碟》（新藝寶，含 Beyond）是續集且為歌曲碟，不是本卡；(b)《無間道III 終極無間 電影原聲配樂》為第三集；(c) 2006 年 Click Music《無間道 終極電影原聲配樂》三 CD 盒裝（82876-58992-2）與 2022 年 20 週年盒裝（MSCD10/11/12HK）是三集合輯；(d) 2023 年寰亞黑膠（MSLP14HK）與各色彩膠皆為後世復刻。**本卡的 2002 首版在 Discogs 上尚無條目**，本機需以實體或港版通路資料補齊廠牌、編號與確切盤名。",
    "namingNote": "**推翻種子清單的「金培達 與 Ronald Ng」掛名，兩個都不對**。《無間道》(2002) 的電影配樂作曲者是**陳光榮**（Chan Kwong Wing），Discogs 與 MusicBrainz 上該系列所有原聲條目的 artist 也都是陳光榮。種子寫的 Ronald Ng 對應的中文名是**伍樂城**，他寫的是主題曲〈無間道〉（林夕作詞、劉德華與梁朝偉合唱）的曲與編曲，不是全片配樂；金培達（Peter Kam）則查無參與本片的任何證據，疑為與其他港片配樂混淆。盤名採後續實體與再版一致使用的《無間道 電影原聲配樂》，**2002 年首版的確切盤名待本機看實體覆核**（不排除當年題為「電影原聲大碟」）。",
    "releaseType": "Album",
-   "secondaryTypes": [],
+   "secondaryTypes": [
+    "Soundtrack"
+   ],
    "exceptionReason": "",
    "exceptionEvidenceUrls": [],
    "upc": "",
@@ -441,22 +434,11 @@
    },
    "ratings": null,
    "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
-   "identitySource": "manual",
-   "mbAbsenceProof": {
-    "queries": [
-     "release-group/?query=artist:\"陳光榮\" AND releasegroup:\"無間道 電影原聲配樂\"",
-     "release-group/?query=artist:\"陳光榮\"（藝人全目錄方向）"
-    ],
-    "checkedAt": "2026-08-29",
-    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
-   },
-   "manualEvidenceUrls": [
-    "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93",
-    "https://en.wikipedia.org/wiki/Infernal_Affairs",
-    "https://www.discogs.com/release/10700308",
-    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
-   ],
-   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+   "rgMbid": "189a203a-611b-3258-aeca-b9ab119f131d",
+   "mbTitle": "無間道",
+   "mbCredit": "陳光榮",
+   "mbFirstRelease": "2002",
+   "mbNote": "2026-08-29 主線以 MB API 核實：RG 189a203a（Album＋secondary-type Soundtrack、首發 2002、掛陳光榮），其下 release ecee1377 為 2002 年香港 Official、廠牌 Click Music、編號 CM001、13 軌，與本卡曲目規模相符。原本的 mbAbsenceProof 結論寫「該碟未建檔」不成立——失敗原因是用帶後綴的全名「無間道 電影原聲配樂」做精確比對，MB 標題是裸名「無間道」。**廠牌欄可據此填 Click Music（CM001）**，中文維基的「Sony BMG」為誤記（該公司 2004 年才成立）。本機請覆核 secondaryTypes 應為 [\"Soundtrack\"]。"
   }
  ],
  "skipped": [

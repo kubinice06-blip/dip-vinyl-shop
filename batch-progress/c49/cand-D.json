@@ -129,7 +129,7 @@
      "release-group/?query=artist:\"姚莉\"（藝人全目錄方向）"
     ],
     "checkedAt": "2026-08-29",
-    "conclusion": "作品方向 count=0；藝人方向查得 4 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    "conclusion": "作品方向 count=0；藝人方向查得 4 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔｜【2026-08-29 主線複查】改以「抓藝人全目錄再回頭比對標題」重查，MB 確有一筆同名碟：RG 77767f27「秋的懷念」，但那是 1962 年香港 Pathé CPA 161、10 軌的另一張選輯，與本卡鎖定的 1990 年代名典 25／26 雙 CD 不是同一件。缺席舉證維持成立，本機釘版本時請勿誤用該 RG。"
    },
    "manualEvidenceUrls": [
     "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B825-26-%E7%A7%8B%E7%9A%84%E6%87%B7%E5%BF%B5-%E4%B8%8A%E6%B5%B7%E6%99%82%E6%9C%9F%E6%AD%8C%E6%9B%B2/821631811",
@@ -420,7 +420,9 @@
    "versionNote": "張露在名典系列有第 13《給我一個吻》、14《你真美麗》、35《不許他回家》、50《蘋果花》四集。**鎖定 13**，主標題即種子指定曲目。要特別排除的同名陷阱有三個：(a) 2003 年《百代時代傳奇 Vol.3：張露—再給我一個吻》是後出的第三方重包裝，盤名多一個「再」字；(b) Spotify 上另有標 1975 年的〈給我一個吻〉條目，是晚期重錄或重發；(c)「Give Me A Kiss 2006 Remix」是電子改作。三者都不是本卡要的 1950 年代百代原音。",
    "namingNote": "種子盤名〈給我一個吻〉是曲名；改用實際存在的名典第 13 集盤名。掛名不變。",
    "releaseType": "Compilation",
-   "secondaryTypes": [],
+   "secondaryTypes": [
+    "Compilation"
+   ],
    "exceptionReason": "張露的百代原盤僅有 78 轉單片，本輯是 EMI 授權的個人專輯級整理，收錄華語「中詞西曲」路線最具代表性的成功案例。",
    "exceptionEvidenceUrls": [
     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20",
@@ -442,22 +444,11 @@
    },
    "ratings": null,
    "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
-   "identitySource": "manual",
-   "mbAbsenceProof": {
-    "queries": [
-     "release-group/?query=artist:\"張露\" AND releasegroup:\"百代中國時代曲名典13：張露 給我一個吻\"",
-     "release-group/?query=artist:\"張露\"（藝人全目錄方向）"
-    ],
-    "checkedAt": "2026-08-29",
-    "conclusion": "作品方向 count=0；藝人方向查得 2 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
-   },
-   "manualEvidenceUrls": [
-    "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20",
-    "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
-    "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B850-%E8%98%8B%E6%9E%9C%E8%8A%B1/826533708",
-    "https://open.spotify.com/track/0RMy0MinqEQJCAso2f74Aa"
-   ],
-   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+   "rgMbid": "e0b3dfaf-1aa0-45fb-9bec-1647b48a9709",
+   "mbTitle": "給我一個吻",
+   "mbCredit": "張露",
+   "mbFirstRelease": "1992",
+   "mbNote": "2026-08-29 主線以 MB API 核實：RG e0b3dfaf（Album＋Compilation、首發 1992、掛張露），其下 release 8d1c9b66 為 1992 年香港 Official、廠牌 Pathé 百代唱片、編號 FH81013 2、15 軌、首軌〈給我一個吻〉——與研究層獨立查到的名典 13 規格（FH81013 2、15 軌）完全吻合，確認就是本卡這張碟。原 mbAbsenceProof 不成立，原因同樣是用帶系列前綴的全名做精確比對。"
   },
   {
    "artist": "紫薇",
@@ -1048,22 +1039,11 @@
    },
    "ratings": null,
    "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
-   "identitySource": "manual",
-   "mbAbsenceProof": {
-    "queries": [
-     "release-group/?query=artist:\"蔡琴\" AND releasegroup:\"蔡琴老歌\"",
-     "release-group/?query=artist:\"蔡琴\"（藝人全目錄方向）"
-    ],
-    "checkedAt": "2026-08-29",
-    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
-   },
-   "manualEvidenceUrls": [
-    "https://www.discogs.com/release/14100454-%E8%94%A1%E7%90%B4-%E8%80%81%E6%AD%8C",
-    "https://music.apple.com/tw/album/%E8%94%A1%E7%90%B4%E8%80%81%E6%AD%8C/1114507022",
-    "https://archive.org/details/tsai-chin-10-songs-share",
-    "https://music.douban.com/subject/1462439/"
-   ],
-   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+   "rgMbid": "a59c45da-5e7a-3db2-9cff-39785f2e6bc8",
+   "mbTitle": "老歌",
+   "mbCredit": "蔡琴",
+   "mbFirstRelease": "2007-12-31",
+   "mbNote": "2026-08-29 主線以 MB API 核實：RG a59c45da（Album、掛蔡琴、標題「老歌」）存在，其下三筆 release 為 2007-12-31 加拿大盤（10 軌，首五軌〈痴痴的等〉〈寒雨曲〉〈落花流水〉〈是夢是真〉〈總有一天等到你〉）、2013-12-20 香港盤與一筆無日期盤，皆無廠牌資訊。曲目與本卡相符，**但 MB 收錄的最早版本是 2007 年、查無 1985 年三洋飛碟原盤**。改走 MBID 釘選是因為專輯層在 MB 有 RG、缺席例外不成立；**本機請務必覆核這個 RG 指的是 1985 年原盤所屬的專輯，而不是後世另編的同名選輯**，若確認不是同一張再改回人工身分並重寫舉證。"
   },
   {
    "artist": "蔡琴",
