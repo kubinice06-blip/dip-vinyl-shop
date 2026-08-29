@@ -6,6 +6,20 @@ import path from 'node:path';
 import { ROOT } from './lib.mjs';
 
 const CJK = /[㐀-鿿぀-ヿ가-힯]/;
+
+// 候選檔的 versionNote 會如實記錄 MusicBrainz 的掛名，而古典 RG 的掛名常是西里爾字母
+// （「Модест Петрович Мусоргский」）。那是正當的資料記錄，但送進簡介產線後
+// qa-batch 的行文污染掃描會把它當雜訊標記。卡單改帶拉丁描述、候選檔保留原文。
+const CYRILLIC_NAMES = {
+  'Модест Петрович Мусоргский': 'Modest Petrovich Mussorgsky',
+  'Игорь Фёдорович Стравинский': 'Igor Fyodorovich Stravinsky',
+};
+const deCyrillic = s => {
+  let t = String(s || '');
+  for (const [ru, la] of Object.entries(CYRILLIC_NAMES)) t = t.split(ru).join(`${la}（MB 以西里爾字母登錄）`);
+  // 仍有殘留就整段標明，不留裸露的西里爾字母
+  return t.replace(/[Ѐ-ӿ][Ѐ-ӿ\s]*/g, '［西里爾字母原文，見候選檔］');
+};
 const OUT = path.join(ROOT, 'desc-tools/batches/cards');
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -33,8 +47,8 @@ for (const [batch, files] of Object.entries(BATCHES)) {
         composer: a.composer || '',
         label: a.label || '',
         // 派工特注的素材：策展層查到的版本裁定與風險，研究層要據此查證而非重新猜
-        versionNote: a.versionNote || '', yearNote: a.yearNote || '',
-        curatorWhy: a.curatorWhy || '', curatorRisk: a.curatorRisk || '',
+        versionNote: deCyrillic(a.versionNote), yearNote: deCyrillic(a.yearNote),
+        curatorWhy: deCyrillic(a.curatorWhy), curatorRisk: deCyrillic(a.curatorRisk),
         apex: a.apexCandidate?.eligible ? a.apexCandidate.tier : null,
       });
     }
