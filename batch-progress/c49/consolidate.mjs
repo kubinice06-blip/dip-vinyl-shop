@@ -76,6 +76,13 @@ for (const [g, label] of Object.entries(GROUPS)) {
       pinned++;
     } else {
       rec.identitySource = 'manual';
+      // 藝人方向必須真的查過才能寫進 conclusion——mb-artist.json 缺席時不得宣稱它 count=0
+      const artistQueried = Object.prototype.hasOwnProperty.call(mbArtist, `${a.artist}|(藝人方向)`);
+      if (!artistQueried) {
+        console.error(`  ✗ ${k}：藝人方向查詢未執行，無法組出誠實的 mbAbsenceProof，請先跑 mb.mjs 產生 mb-artist.json`);
+        failed++;
+        continue;
+      }
       rec.mbAbsenceProof = {
         queries: [
           `release-group/?query=artist:"${a.artist}" AND releasegroup:"${a.album}"`,
