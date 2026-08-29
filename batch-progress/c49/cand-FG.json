@@ -1,0 +1,474 @@
+{
+ "domain": "FG 原民客語＋華語電影配樂",
+ "albums": [
+  {
+   "artist": "昊恩家家",
+   "album": "Blue in Love",
+   "suggestedYear": 2006,
+   "yearNote": "取原始發行年 2006（角頭音樂 2006-12-26 發行）。2007 年以本作獲第18屆金曲獎最佳演唱組合獎，得獎年不取；金曲獎報名年度與發行年差一年是台灣獎項常態，本欄一律取發行年。",
+   "label": "角頭音樂（角頭文化事業股份有限公司，Taiwan Colors Music）",
+   "versionNote": "鎖 2006 年角頭音樂台灣原版實體 CD（目錄編號 TCM039，官方 MV 標題即冠此編號）。本作只有這一種實體版本，無日後復刻、無地區盤差異；串流平台的同名條目為同一版本數位上架，不是另一版。注意不要與家家個人 2010 年後的個人專輯、或昊恩個人作品混為同一張。",
+   "namingNote": "「昊恩家家」是陳昊恩（昊恩，卑南族）與紀家盈（家家）的雙人組合團名，第18屆金曲獎官方得獎名單即以團名頒獎、發行公司記為角頭文化事業股份有限公司，故採團名為卡片掛名，不拆成「昊恩／家家」並列，也不用個人本名。盤名採實體與官方通路寫法《Blue in Love》純英文；部分中文媒體加註「藍色情詩篇」為副標，不入主名。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "現池的台灣原住民線集中在桑布伊、阿爆、郭英男、以莉·高露這幾條，缺 2000 年代中期「角頭音樂都會原民民謠」這一格。昊恩家家把卑南族與阿美族的吟唱放進藍調／爵士底的兩人和聲編制，是那個世代少數把原民語音樂做成流行語彙又拿下全國性大獎的作品，補位精準且不與現有卡重疊。",
+   "curatorRisk": "團名「昊恩家家」在中文檢索裡極易被斷成「昊恩」＋「家家」兩個藝人，而家家後來的主流個人事業能見度遠高於這張，串流平台與封面 API 很可能把查詢導向家家個人專輯。曲風標籤與封面查詢務必連「角頭」「TCM039」「2006」一起鎖。另本作以華語與族語混唱，曲風歸類介於 folk／pop／world 之間，需人工定調。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到並逐項比對過名單：本作確實拿下第18屆金曲獎最佳演唱組合獎，但那是**演出者獎而非專輯獎**；同屆最佳國語專輯入圍六張（MC HotDog《Wake Up》、張懸《My Life Will…》、蘇打綠《小宇宙》、彭靖惠、蔡依林等）**沒有這張**。也查無任何把本作論述為台灣原住民音樂史核心作品的跨來源評述。pearl 一路同樣不成立：作品目前仍在 KKBOX、LINE MUSIC、網易雲等主流平台正常流通，家家後續的主流能見度也使聆聽數不太可能落在 300 以下，obscurity 判不到 5。依 §3「預設是一般卡」作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC18%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E7%B4%80%E5%AE%B6%E7%9B%88"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"昊恩家家\" AND releasegroup:\"Blue in Love\"",
+     "release-group/?query=artist:\"昊恩家家\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向與藝人方向皆 count=0，該藝人與該盤在 MusicBrainz 均未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://zh.wikipedia.org/zh-tw/%E7%B4%80%E5%AE%B6%E7%9B%88",
+    "https://zh.wikipedia.org/zh-tw/%E7%AC%AC18%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+    "https://www.hitoradio.com/newweb/6884album"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "檳榔兄弟",
+   "album": "失守獵人",
+   "suggestedYear": 2003,
+   "yearNote": "**推翻種子清單的 1999**。原始發行為 2003-12-16、大大樹音樂圖像 TMCD-328；此與本作入圍 2004 年第15屆金曲獎最佳原住民語演唱人獎（官方名單記「檳榔兄弟／失守獵人／大大樹音樂圖像」）的報名年度相符。種子的 1999 應是誤植該團 1990 年代末在角頭音樂的首張專輯年份——本作是他們第四張，前一張《BuraBuraYan》為 2000 年、同樣由大大樹發行。",
+   "label": "大大樹音樂圖像（Trees Music & Art，發行編號 TMCD-328，風潮音樂通路代理）",
+   "versionNote": "鎖 2003 年大大樹音樂圖像台灣原版 CD（TMCD-328）。**廠牌也一併推翻種子假設**：這張不是角頭音樂盤，角頭是他們早期的東家，大大樹才是《失守獵人》的發行方。錄音是在花蓮牛山由團員親戚的休閒中心大廳改裝的自助式錄音室完成的部落現場錄音，不是棚內重錄版；日後若出現任何「精選」「紀念」「數位修復」版本，均非本卡。",
+   "namingNote": "",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "現池的原民線幾乎都是個人歌手（桑布伊、阿爆、以莉·高露、郭英男），沒有一張是「部落家族樂團自錄」的形態。檳榔兄弟五個人是阿美族花蓮水璉部落的卡車司機、外科醫生、舞團團長、雜貨店老闆，用木鼓竹鼓與傳統曲調唱自己部落的社會現實，是台灣原民音樂裡最接近田野與生活現場的一支，與大大樹的世界音樂策展脈絡（同廠牌另有交工樂隊）互相印證。",
+   "curatorRisk": "團名「檳榔兄弟」在中文檢索裡與檳榔攤、檳榔西施等生活詞高度混淆，自動比對幾乎必然撈到雜訊，必須連 TMCD-328 或「大大樹」一起鎖。專輯已絕版多年，封面與試聽都可能只能靠風潮通路頁或店主掃圖。另外本作是入圍非得獎（第15屆得獎者為撒卡勒《台灣魯凱族百年前歌謠》），簡介與頂點理由不可寫成「金曲獎得獎專輯」。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "走 pearl 而非 hall。hall 明確不成立：第15屆金曲獎最佳原住民語演唱人獎本作只是**入圍**，得獎者是撒卡勒《台灣魯凱族百年前歌謠》，也查無把本作列為族群音樂史核心作品的跨來源論述。pearl 則是形態相符：大大樹音樂圖像 2003 年台灣獨立盤，只在台灣一地發行過實體且早已絕版，英文語系資料庫與國際串流幾無條目，屬部落自錄的阿美族原音文獻。obscurity=5 與 Last.fm listeners<300 這兩個 pearl 硬門檻只能本機實查（listeners 依規定為本機工項），故標 pending-local，不因查不到而降級。",
+    "evidenceUrls": [
+     "https://e-info.org.tw/node/4109",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC15%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+    ],
+    "evidence": "pending-local"
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"檳榔兄弟\" AND releasegroup:\"失守獵人\"",
+     "release-group/?query=artist:\"檳榔兄弟\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://zh.wikipedia.org/zh-tw/%E7%AC%AC15%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+    "https://e-info.org.tw/node/4109",
+    "https://store.windmusic.com.tw/zh/CD/TMCD-328"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "陳永淘",
+   "album": "頭擺个事情",
+   "suggestedYear": 1997,
+   "yearNote": "**推翻種子清單的 1999**。多方中文來源一致記首張專輯發行於 1997：客新聞 2022 年專訪明寫「1997 年發行第一張專輯《頭擺个事情》」；2019 年 4 月 13 日於文水藝文中心辦的是「《頭擺的事情》22 週年音樂會」，回推亦為 1997。創作緣起是 1996 年返鄉照顧祖父，時序也支持 1997 而非 1999。",
+   "label": "待本機補（1997 年原始出版單位在可查的中文來源中均未載明；陳永淘現行作品由水路文化製作出版、風潮音樂代理發行，但那是 2010 年代之後的安排，不可回溯套用到 1997 年）",
+   "versionNote": "鎖 1997 年首版實體（CD／卡帶），十首曲、全客語海陸腔。**這張是本子域版本風險最高的一筆**：出版後不久即絕版，市面流通的多為二手或盜版盤，陳永淘本人 2022 年還公開指出中國有未授權的「精選輯」在賣。另外 2014 年水路文化出版的《細人》是「《頭擺个事情》正版復刻＋新歌」——曲目不同、是另一張碟，**絕不可當成本卡的再版而合併**；封面與試聽比對時若抓到《細人》即為錯配。",
+   "namingNote": "**盤名正名**：種子寫「頭擺的事情」，但客語用字是「个」不是「的」。客家公共傳播基金會旗下客新聞、以及陳永淘本人受訪時的專輯提法均作《頭擺个事情》；「頭擺的事情」是後來媒體與音樂會標題的華語化寫法（連 2019 年 22 週年音樂會的宣傳標題都兩種混用）。卡片採實體與作者自稱的《頭擺个事情》，「頭擺的事情」進別名。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "現池客語線是林生祥／交工／生祥樂隊四五張加上米莎、謝宇威，全是 2000 年後的「新客家音樂」世代。陳永淘 1997 這張比他們早一輪，是解嚴後客語創作歌曲第一批被聽見的作品，也是把海陸腔的原始音韻直接當旋律骨架的吟唱路線源頭。補這一張等於把現池客語線的起點往前接了五年，是結構性的補位而非同質增量。",
+   "curatorRisk": "1997 年原始廠牌查無，封面與 UPC 幾乎確定要靠店主本機掃圖或通路頁補。專輯名兩種寫法（个／的）在 KV 鍵值與串流查詢上會分裂，必須兩種都做別名。最大的實務風險是《細人》復刻盤誤配，以及中國盜版精選輯的曲目污染串流條目——固定試聽務必人工逐曲核對。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "走 pearl 而非 hall。hall 不成立：查無本作的金曲獎得獎紀錄，也查無跨來源把它論述為客語音樂史核心作品的樂評共識（目前找到的是媒體專訪與音樂會報導層級）。pearl 形態相符且證據具體：1997 年發行後不久即絕版，市面流通多為二手或盜版，陳永淘本人 2022 年還須公開呼籲樂迷認明水路文化正版；正版難尋到這種程度正是流亡卡要收的稀有性。obscurity=5 與 listeners<300 兩個硬門檻須本機實查，標 pending-local。",
+    "evidenceUrls": [
+     "https://hakkanews.tw/2022/05/17/chen-yongtao/",
+     "https://www.verse.com.tw/article/taiwanese-folk-music-chhun-Yun-tho"
+    ],
+    "evidence": "pending-local"
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"陳永淘\" AND releasegroup:\"頭擺个事情\"",
+     "release-group/?query=artist:\"陳永淘\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://hakkanews.tw/2022/05/17/chen-yongtao/",
+    "https://pareviews.ncafroc.org.tw/?p=35258",
+    "https://www.verse.com.tw/article/taiwanese-folk-music-chhun-Yun-tho"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "陳明章",
+   "album": "戀戀風塵 電影原聲帶",
+   "suggestedYear": 1993,
+   "yearNote": "**推翻種子清單的 1987，取原聲帶發行年 1993**。電影《戀戀風塵》1986 年上映、1987 年在法國南特影展拿下最佳配樂（台灣電影首度在國際影展獲配樂獎），但那 40 分鐘配樂的母帶被塵封在攝影師陳懷恩的書架上七年，直到 1993 年才由水晶唱片以「音樂紀錄」形式正式發行成專輯。本欄依規定取**原聲帶專輯的發行年 1993**；1986（電影）與 1987（得獎）都不是專輯年。旁證：本作以 1993 年度作品身分在 1994 年第 5 屆金曲獎拿下最佳演奏專輯與最佳錄音，陳明章、許景淳、陳揚共獲最佳演奏專輯製作人。",
+   "label": "水晶唱片",
+   "versionNote": "鎖 1993 年水晶唱片台灣首版實體。**這張的版本層次是本批最複雜的一筆**：(a) 1986 年錄下的原始配樂母帶從未在當年發行；(b) 1993 水晶版才是「專輯」的誕生，且不是純母帶原樣——由陳揚後期製作、並補錄了當年沒錄完的〈無悔〉〈信〉〈雨水〉，故 1993 版在曲目上比電影裡聽到的多；(c) 侯孝賢在片中實際只採用了 40 分鐘配樂中的約 3 分鐘，因此「電影版」與「專輯版」內容差距極大，簡介不可寫成「電影裡的配樂」；(d) 後有陳明章音樂（cmcmusic）自營通路的 CD／卡帶／黑膠復刻與 30 週年周邊套組在售，屬後世再版，非本卡。",
+   "namingNote": "配樂為陳明章（作曲、月琴與吉他）與許景淳（鋼琴與人聲）共同完成，1993 年正式盤另由陳揚擔任後期製作並補錄未完成的三首。主掛名取**陳明章**：他是作曲主體、南特影展得獎與現池既有卡（《下午的一齣戲》）的同一藝人，掛名一致有利去重與曲風流派串接；許景淳、陳揚以合作者記錄於此，不進 artist 欄。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "這是 c-46 交白卷那一格裡最該補、也最補得起來的一張：台灣電影配樂第一次在國際影展得獎的作品，同時是水晶唱片目錄裡最重要的非搖滾發行，也是現池陳明章卡（《下午的一齣戲》1990）的前史。它把侯孝賢新電影、水晶唱片、台灣民謠復振三條線在一張碟上接起來，對卡池的華語配樂空格是關鍵補位。",
+   "curatorRisk": "最大風險是年份：幾乎所有中文電影條目、串流平台與二手通路都會把 1986 或 1987 掛上去，機器 QA 與封面 API 很容易把卡片年份改回電影年。第二是版本：cmcmusic 自營通路的復刻黑膠與 30 週年套組排在搜尋前列，封面解析極可能抓到復刻版而非 1993 水晶版。第三是掛名：許多來源把它記成「陳明章、許景淳」雙掛名或逕記為原聲帶（Various），去重時要能認得同一張。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "本批唯二在**專輯層級**拿到獎的一張，且不只一項：1994 年第 5 屆金曲獎以本輯獲**最佳演奏專輯**與**最佳錄音**兩項得獎，陳明章、許景淳、陳揚三人另共獲**最佳演奏專輯製作人**；配樂本身更早在 1987 年法國南特影展拿下最佳配樂，是台灣電影第一次在國際影展獲配樂獎。這些都是唱片／配樂本體的獎，不是電影的獎；三十餘年來它持續被當作台灣電影配樂與台灣民謠現代化的共同原點被引用，符合「足以列入該領域史上核心作品」。",
+    "evidenceUrls": [
+     "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+     "https://vocus.cc/article/601a699afd89780001367bb8"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"陳明章\" AND releasegroup:\"戀戀風塵 電影原聲帶\"",
+     "release-group/?query=artist:\"陳明章\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+    "https://www.cmcmusic.com.tw/shop/albums/%E9%99%B3%E6%98%8E%E7%AB%A0%E9%85%8D%E6%A8%82%E5%B0%88%E8%BC%AF/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%B8%B6/",
+    "https://vocus.cc/article/601a699afd89780001367bb8"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "S.E.N.S.",
+   "album": "悲情城市 電影原聲帶",
+   "suggestedYear": 1989,
+   "yearNote": "取原聲帶發行年 1989（Discogs 實體條目記 1989 年 10 月，台灣飛碟唱片卡帶 UC-89108）。電影同為 1989 年（1989-09 威尼斯影展金獅獎、1989-10-21 台灣上映），**這是本子域少數專輯年與電影年同年的一張**，原因是原聲帶與電影同檔期上市。注意部分中文來源（含豆瓣）記 1990-04-25，那應是後續版本或再版日期；另有一張 1992 年飛碟 CD（UFO-89108）為同內容再版。若本機查證確認 1989 年只出過卡帶、CD 要到 1992 才有，年份仍取 1989（首次實體發行年）。",
+   "label": "飛碟唱片（台灣；日方製作為 Fun House, Inc.）",
+   "versionNote": "鎖 1989 年飛碟唱片台灣首版（卡帶 UC-89108／同內容 1992 年 CD 再版 UFO-89108），七首曲：〈悲情城市（序曲）〉〈寬美之主題曲 1〉〈流れゆく時／流逝的歲月〉〈寬美之主題曲 2〉〈悲情城市（胡琴篇）〉〈文清之主題〉〈悲情城市（主題曲）〉。**要避開三種同名混淆**：(a) S.E.N.S. 日本本地目錄中的自選輯與精選常收錄同名曲，不是本碟；(b) 2014 年前後流出的 SACD／DSD 版是後世高解析再版；(c) 中文網路上把「悲情城市」當電影條目而非唱片條目的資料極多，比對時必須看到廠牌與編號才算數。",
+   "namingNote": "掛名維持 **S.E.N.S.**：依 §0.5「官方藝名本身就是拉丁字者保留」，這個日本二人組（深浦昭彥、勝木ゆかり）在 1989 年台灣實體盤上的 credit 就是拉丁字 S.E.N.S.，漢字「神思者」是中文圈慣用譯名，進別名而非主名。**立川直樹不掛主名**：他是日方的音樂統籌／製作方向者，Discogs 把他標成 Music By，但這與「S.E.N.S. 作曲並演奏、Fun House 製作」的其他記載不一致，該掛名的確切分工需本機再覆核；在確認前不把他寫進 artist，也不寫進簡介當作曲者。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "《悲情城市》是華語電影史上第一部拿下三大影展最高獎的作品，它的配樂卻是由一支剛成軍五年的日本器樂二人組寫的——這種「台灣電影正典的聲音其實是外借的」錯位，本身就是卡池最值得收的故事。而且這張碟在台灣的後續影響遠超電影本身：霹靂布袋戲早期大量「借」用神思者的音樂，使這批旋律變成兩代台灣人共同的聽覺記憶。現池日系電子與世界音樂線都收得不少，卻沒有這個台日交界點。",
+   "curatorRisk": "掛名分工是最大風險：Discogs 把立川直樹標為 Music By，中文來源則多寫「立川直樹與張弘毅任音樂監製、S.E.N.S. 作曲演奏」，兩說並存且都無一手佐證，本機審稿必須定案後才能寫進簡介。其次是廠牌與年份：1989 卡帶與 1992 CD 同編號尾碼、極易被讀成同一年。第三，S.E.N.S. 目錄龐大且多為新世紀音樂自選輯，封面與試聽 API 幾乎一定會抓錯碟。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。**電影的地位與配樂專輯的地位要分開算**：《悲情城市》是威尼斯金獅獎、華語影史轉捩點之作，但配樂本身在獎項名單裡查無斬獲——1989 年第 26 屆金馬獎最佳原著音樂得主是張弘毅《三個女人的故事》，本片不在得獎之列。專輯層級也查不到跨來源的長期樂評論述（找得到的是影迷與布袋戲配樂考據文章）。文化影響（霹靂布袋戲長期沿用其旋律）確實存在，但那是使用史而非樂評共識。另掛名分工（立川直樹是作曲還是音樂統籌）本身尚未定案，更不宜在此基礎上判頂點。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://filmaholic.tw/films/63fadcdbfd89780001e11173/"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"S.E.N.S.\" AND releasegroup:\"悲情城市 電影原聲帶\"",
+     "release-group/?query=artist:\"S.E.N.S.\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/22004797-SENS-%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
+    "https://www.discogs.com/release/11984204-SENS-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
+    "https://filmaholic.tw/films/63fadcdbfd89780001e11173/",
+    "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+  },
+  {
+   "artist": "陳勳奇",
+   "album": "重慶森林 電影原聲大碟",
+   "suggestedYear": 1995,
+   "yearNote": "**取原聲帶發行年 1995，非電影上映年 1994**。電影 1994 年 7 月在香港上映，但可考的最早實體原聲帶是 1995 年 Cinepoly（新藝寶）香港版 CD（CP 50218，PolyGram 香港發行），同年另有加拿大 Cinepoly 版與日本 Polydor 版《恋する惑星》；Discogs master 的最早年份亦為 1995。查無 1994 年出過任何實體版本的證據。",
+   "label": "Cinepoly（新藝寶，香港；PolyGram Records Ltd. 發行）",
+   "versionNote": "鎖 1995 年 Cinepoly 香港首版 CD（CP 50218）。**同一部片的原聲帶至少有五種形態，逐一排除**：(a) 1995 日本 Polydor 版改題《恋する惑星》（POCP-7047），2002 年另有 UICY-3561 再版，屬日本盤，非本卡；(b) 1995 加拿大 Cinepoly 版（314 532497-2）為同內容外銷盤；(c) 2016 年環球唱片香港的「澤東 25 週年」CD／SACD／黑膠三種（8889691／8889692／8889693）是紀念再版；(d) 2021、2022 年又有多次黑膠與 CD 復刻（3811950／3597420）；(e) 韓國 Cinepoly 版（DG 1446）。以上全部不是本卡。",
+   "namingNote": "實體掛名為「陳勛奇, Roel A. Garcia」雙掛名。卡片主掛名取**陳勳奇**（用「勳」的繁體正寫，中文維基與香港電影獎項名單皆作陳勳奇；Discogs 的「陳勛奇」與英文名 Frankie Chan 進別名），理由是他同時是本片與《東邪西毒》的配樂主導者，統一掛名可讓兩張卡在同一藝人下串起來；Roel A. García 為共同作曲者，不入 artist 欄。盤名採實體標題《重慶森林 電影原聲大碟》，不寫成「電影原聲帶」。",
+   "releaseType": "Compilation",
+   "secondaryTypes": [],
+   "exceptionReason": "本碟不是單一作曲者的配樂集，而是把陳勳奇／García 的九段配樂與王菲〈夢中人〉〈胡思亂想〉等既有歌曲編在一起的電影選輯，Discogs 亦標為 Album, Compilation。它是王家衛電影音樂第一張正式成立的原聲碟，〈夢中人〉（改編自 The Cranberries〈Dreams〉）經此碟成為 1990 年代華語流行文化的標誌性單曲，該片的聲音設計也自此被視為華語電影配樂的分水嶺；此碟是這批錄音唯一的原始發行形態，具不可替代的文獻地位。",
+   "exceptionEvidenceUrls": [
+    "https://www.discogs.com/master/420111-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
+    "https://www.discogs.com/release/8652315-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
+    "https://zh.wikipedia.org/zh-tw/%E9%87%8D%E5%BA%86%E6%A3%AE%E6%9E%97"
+   ],
+   "upc": "",
+   "curatorWhy": "華語電影配樂在卡池裡目前只有譚盾《臥虎藏龍》一張純國際獎項路線的碟，缺的是「香港製造、影響過整代人聽覺」的那一格。《重慶森林》原聲碟正是這一格的入口：它把配樂與流行歌混編的作法定義了此後二十年華語電影原聲碟的形態，也是王家衛／澤東音樂宇宙的起點，後面《東邪西毒》《花樣年華》都能從這張接下去。",
+   "curatorRisk": "版本雜訊是最高風險——2016 之後的環球復刻與各色彩膠在通路與封面 API 上的能見度遠高於 1995 原版，抓錯版的機率極高。其次是掛名：Apple 與 Spotify 都把它列為群星／Various Artists，與卡片掛陳勳奇不一致，去重與試聽比對會分裂。第三，日文盤《恋する惑星》是完全不同的標題字串，跨文字系統比對容易漏。第四，曲目含 The Cranberries 授權改編與外語原曲，試聽配對要避開淨化版與地區下架。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 14 屆香港電影金像獎（1995）最佳電影配樂，陳勳奇與 Roel A. García 以《重慶森林》**只入圍未得獎**；1994 年第 31 屆金馬獎最佳原創電影音樂得主是陳煥昌《紅玫瑰白玫瑰》，亦非本片。電影本身是華語影史正典，但那是電影的地位；就唱片而言，本碟是配樂段落＋王菲翻唱曲的電影選輯，2016 年後的多次紀念復刻反映的是電影 IP 的收藏熱度，不足以證明**專輯**在唱片史上的核心地位。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"陳勳奇\" AND releasegroup:\"重慶森林 電影原聲大碟\"",
+     "release-group/?query=artist:\"陳勳奇\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/8652315-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
+    "https://www.discogs.com/master/420111-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "陳勳奇",
+   "album": "東邪西毒",
+   "suggestedYear": 1994,
+   "yearNote": "取原聲帶發行年 1994，與電影上映年同年——這是本子域少數兩者一致的一張。可考的最早實體是 1994 年台灣滾石唱片（Rock Records & Tapes）數位紙盒版 CD，CHD016，內附 20 頁摺頁；1995 年另有南韓滾石卡帶（RRCC-004）。",
+   "label": "滾石唱片（Rock Records & Tapes，台灣，CHD016）",
+   "versionNote": "鎖 1994 年滾石台灣首版 CD（CHD016，Digipak ＋外書衣＋20 頁摺頁），十五首全器樂曲，自〈Prelude: A Lonely Shadow〉至〈Finale: Gone With The Wind〉。**這張最危險的混淆是 2008 年的《東邪西毒 終極版》**：王家衛重剪版另做了一套原聲，掛名擴充為 Frankie Chan、Roel A. Garcia、吳彤、Eli Marshall、李勳，曲目與編制都不同，2009 Sony（88697495072）、2016 環球（8889462／8889464）、2018 Block 2、2021、2022 各版全屬終極版脈絡，**與本卡是兩張不同的碟，日後不可合併**。此外本卡是台灣盤而非香港盤，注意不要被「王家衛＝香港」的直覺誤導。",
+   "namingNote": "1994 年滾石實體的標題是中英並列「東邪西毒 Ashes Of Time」，依台灣獨立命名裁定的通則（中英並列取中文）取《東邪西毒》，英文 Ashes Of Time 進別名。掛名同《重慶森林》一卡：實體為「Frankie Chan & Roel A. Garcia」雙掛名，主掛名取**陳勳奇**，García 為共同作曲者。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "與《重慶森林》同一組作曲者、同一年、同一位導演，卻是完全相反的聲音策略——《重慶森林》是流行歌拼貼，《東邪西毒》是十五段連續器樂的沙漠敘事，是華語商業片裡罕見的純配樂專輯形態。兩張並收才說得完陳勳奇這條線，也讓卡池的華語配樂格從「插曲合輯」延伸到「純配樂」。",
+   "curatorRisk": "終極版原聲的市場能見度遠高於 1994 原版（2016 之後的彩膠與 CD 復刻全是終極版），封面與試聽 API 幾乎必然抓到終極版，這是本卡最可能出錯的地方。其次，1994 原版曲目全為英文曲名，中文檢索撈不到，比對必須用 CHD016 或英文曲名。第三，陳勳奇的「勛／勳」兩種寫法在資料庫裡分裂，grep 兩種都要做。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 14 屆香港電影金像獎（1995）最佳電影配樂，陳勳奇與 Roel A. García 以《東邪西毒》**入圍未得獎**；第 31 屆金馬獎最佳原創電影音樂得主為陳煥昌《紅玫瑰白玫瑰》。本碟作為十五段連續器樂的純配樂專輯，形態上比同組人的《重慶森林》更完整，但查無跨來源把它獨立論述為配樂史轉折點的樂評共識；2008 年終極版重製是導演對電影的再創作，不能倒推為唱片層級的評價共識。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "rgMbid": "dc4623ed-f217-3ed9-9ccd-fbf2e4214d35",
+   "mbTitle": "東邪西毒 Ashes of Time",
+   "mbCredit": "陳勳奇",
+   "mbFirstRelease": "1994",
+   "mbNote": "MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致"
+  },
+  {
+   "artist": "Various Artists",
+   "album": "花樣年華 電影原聲帶",
+   "suggestedYear": 2000,
+   "yearNote": "取原聲帶發行年 2000，與電影上映年同年（坎城首映 2000-05、香港上映 2000-09）。可考的 2000 年實體同時有香港滾石（ROD5223-S）、日本滾石（RD-1566）與歐美 Virgin 三線並行；2001–2002 年在歐洲另有 More／…And More 等擴充版，2016 年起才是環球香港的紀念再版。",
+   "label": "滾石唱片（Rock Records，香港版 ROD5223-S；歐美同年由 Virgin 發行）",
+   "versionNote": "鎖 2000 年滾石香港首版 CD（ROD5223-S），21 首曲。**這張的版本分裂是本批最嚴重的**：(a) 2000 年同時存在香港／日本滾石版與法國、美國、加拿大、西班牙的 Virgin 版（7243 8 50542 2 8 等），內容大致相同但編號與封面不同；(b) 2001 年 Virgin 出了《More In The Mood For Love》與《In The Mood For Love …And More》，是**加曲的不同碟**，不可當同一張；(c) 2002 年 Virgin 又出合併版《In The Mood For Love / More…》；(d) 2016 以後環球香港與 Mondo 的多種黑膠、SACD、45 轉、圖片碟（8889492、MOND-159、3528016 等）全是紀念再版。封面比對務必認 2000 年香港滾石盤。",
+   "namingNote": "**推翻種子清單的「梅林茂」掛名**。查證結果：〈Yumeji's Theme〉是梅林茂 1991 年為鈴木清順電影《夢二》寫的舊曲，王家衛只是取得授權沿用，梅林茂並未為《花樣年華》創作配樂；本片的原創配樂作曲者是 Michael Galasso（全碟 21 首中他佔 11 首）。而全碟另含 Nat King Cole 三首、周璇、潘迪華、譚鑫培等既有錄音，實體掛名即為 Various，故 artist 取 **Various Artists**（現池已有 30 筆 Various Artists 卡，寫法一致）。若店主日後想收梅林茂本人的王家衛配樂，該收的是《2046》而不是這張。盤名取中文《花樣年華 電影原聲帶》，2000 年首版實體英文標題「In The Mood For Love (Original Soundtrack From The Motion Picture)」與後世香港復刻的《花樣年華》進別名。",
+   "releaseType": "Compilation",
+   "secondaryTypes": [],
+   "exceptionReason": "本碟是把 Michael Galasso 的原創配樂、梅林茂 1991 年舊曲〈Yumeji's Theme〉、Nat King Cole 的西班牙語錄音，以及 1930–60 年代的周璇、潘迪華、京劇與評彈老錄音編在一起的電影選輯，本質是跨時代錄音的策展文獻而非單一創作者專輯。它是華語電影原聲碟中極少數把老唱片考古與新配樂並置成一個完整聽覺論述的作品，二十餘年來被反覆再版與收藏（含 Mondo 的美加限量黑膠），是〈Yumeji's Theme〉在華語世界普及的唯一原始載體，歷史重要性明確。",
+   "exceptionEvidenceUrls": [
+    "https://www.discogs.com/release/1038599-Various-In-The-Mood-For-Love-Original-Soundtrack-From-The-Motion-Picture",
+    "https://en.wikipedia.org/wiki/Shigeru_Umebayashi",
+    "https://en.wikipedia.org/wiki/Yumeji"
+   ],
+   "upc": "",
+   "curatorWhy": "這是華語電影原聲碟裡最被國際樂迷收藏的一張，也是把 1930–60 年代上海與香港流行錄音重新帶回當代耳朵的關鍵載體。對卡池而言它同時補了「華語電影配樂」與「老錄音再策展」兩格，而且與同批的《重慶森林》《東邪西毒》構成完整的王家衛音樂三部曲。",
+   "curatorRisk": "掛名是最大風險：種子清單、多數中文媒體與部分串流都把它記成梅林茂的專輯，若照抄會產生一張事實錯誤的卡；改掛 Various Artists 後，又會與現池其他 Various Artists 卡在字串鍵上擠在一起，去重與 KV 鍵值要特別檢查。其次版本分裂嚴重（見 versionNote），且 More／…And More 兩張加曲版極易被當成同一張收兩次。第三，曲目多為授權老錄音，固定試聽在部分地區可能整首下架。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 20 屆香港電影金像獎（2001）最佳原創電影音樂，Michael Galasso 以《花樣年華》**入圍未得獎**；2000 年第 37 屆金馬獎最佳原創電影音樂得主是譚盾《臥虎藏龍》（該張已在現池）。本碟是老錄音與新配樂的選輯，國際收藏熱度高（Virgin、環球香港、Mondo 三個體系各自復刻），但那反映的是電影 IP 與黑膠市場，不是唱片史層級的樂評共識；且其最著名的旋律〈Yumeji's Theme〉並非為本片所作。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"Various Artists\" AND releasegroup:\"花樣年華 電影原聲帶\"",
+     "release-group/?query=artist:\"Various Artists\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/1038599-Various-In-The-Mood-For-Love-Original-Soundtrack-From-The-Motion-Picture",
+    "https://en.wikipedia.org/wiki/Shigeru_Umebayashi",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址"
+  },
+  {
+   "artist": "黃霑",
+   "album": "黃飛鴻",
+   "suggestedYear": 1993,
+   "yearNote": "**推翻種子清單的 1991，取原聲帶發行年 1993**。電影《黃飛鴻》1991 年上映，但查無任何 1991 年的原聲帶實體；可考最早的實體是 1993 年台灣滾石唱片 CD（CH 46001，條碼 4710149460011），同年另有南韓 Seoul Records 黑膠（SZPR-138）。1998 年新馬有滾石再版《黃飛鴻系列電影原聲精裝版》（GDC 1019），2023 年台灣滾石另出黑膠（RLP154）。",
+   "label": "滾石唱片（Rock Records & Tapes，台灣，CH 46001）",
+   "versionNote": "鎖 1993 年滾石台灣首版 CD（CH 46001），17 首。**收錄範圍需本機確認**：曲目以《黃飛鴻》（1991）的配樂段落為主（〈梁寬初遇十三姨〉〈嚴師傅落魄廣東〉〈寶芝林夜思〉〈黃飛鴻戲棚顯身手〉〈梁寬勇救十三姨〉等），但第 1 軌題為〈男兒當自強獅王爭霸（大合唱）〉、又收〈男兒當自強（成龍主唱）〉，且 1998 年再版直接改題為「黃飛鴻**系列**電影原聲精裝版」，Discogs 亦把本碟格式標為 Compilation——**因此它很可能是跨越黃飛鴻一至三集的系列選輯而非單片原聲**，本欄不擅自斷定，交本機看實體曲目表定案。另注意不要與 2023 年黑膠版（RLP154）混。",
+   "namingNote": "**盤名推翻種子清單的「黃飛鴻 男兒當自強」**：〈男兒當自強〉是主題曲曲名，而《黃飛鴻之二：男兒當自強》是 1992 年的**續集電影**，兩者都不是這張碟的盤名。可考實體的標題是中英並列「黃飛鴻 (Once Upon A Time In China)」，取中文《黃飛鴻》。掛名取**黃霑**：實體 credit 記他為 Composer 兼 Executive Producer，他也是 1992 年第 11 屆香港電影金像獎《黃飛鴻》最佳電影音樂的得主；Discogs 的 artist 欄記為 Various（因收錄成龍主唱曲），編曲另記鮑比達，這兩點與部分中文來源「〈男兒當自強〉由戴樂民編曲、林子祥主唱」的說法並存，**編曲者與演唱版本的分工需本機覆核後才可寫進簡介**。",
+   "releaseType": "Compilation",
+   "secondaryTypes": [],
+   "exceptionReason": "本碟是黃飛鴻電影系列配樂的原始選輯型發行，以古曲〈將軍令〉改編的〈男兒當自強〉為核心，把粵樂〈旱天雷〉、〈十面埋伏〉等傳統素材的電影化改編一次收齊；1990 年代香港武俠片音樂能以完整專輯形態留存下來的極少，這是該批錄音唯一的原始實體載體，對粵樂與香港電影音樂的交界具文獻價值。",
+   "exceptionEvidenceUrls": [
+    "https://www.discogs.com/release/7162107",
+    "https://www.discogs.com/master/1249433",
+    "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+   ],
+   "upc": "",
+   "curatorWhy": "〈男兒當自強〉把清代粵樂〈將軍令〉直接改寫成 1990 年代的民族主義國歌式旋律，是華語通俗音樂裡最成功的一次傳統素材再生，也是黃霑作為華語流行樂關鍵作者最被記得的作品。卡池的華語配樂格若只有文藝片（侯孝賢、王家衛）而沒有武俠與通俗片這一支，就少了半邊；這張是最直接的補位。",
+   "curatorRisk": "三重不確定要在本機收斂：(1) 收錄範圍是單片還是系列選輯（見 versionNote）；(2) 掛名——實體記黃霑為 Composer 但 artist 欄是 Various，且編曲者兩說（鮑比達／戴樂民）；(3) 演唱版本——〈男兒當自強〉粵語版由林子祥唱、國語版由成龍唱，本碟收的是成龍版，簡介若寫成林子祥即為錯。另外「黃飛鴻」在中文檢索裡是超高頻詞（電視劇、遊戲、其他電影），自動比對雜訊極高，必須連 CH 46001 鎖。",
+   "apexCandidate": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "本批唯二在**配樂本體**拿到獎的一張：黃霑以《黃飛鴻》獲 1992 年第 11 屆香港電影金像獎**最佳電影音樂得獎**（不是入圍）。其核心的〈男兒當自強〉把清代粵樂〈將軍令〉改寫成現代電影主題曲，是華語通俗音樂裡傳統素材再生最成功的案例，三十餘年來持續被翻唱、改編與在體育與典禮場合使用，作為粵樂進入現代流行的樣板具長期共識；本碟又是這批錄音唯一的原始實體載體。**但要注意**：得獎的是 1991 年電影的配樂，本卡鎖的是 1993 年滾石的（可能為系列）選輯發行，兩者的涵蓋範圍需本機確認；專輯層級的跨來源樂評文獻亦待本機補齊，故 evidence 標 pending-local，不因此降級。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+    ],
+    "evidence": "pending-local"
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "rgMbid": "fa0c2896-af77-3d67-8365-99bf4e2fd3c7",
+   "mbTitle": "黃飛鴻 (Once Upon a Time in China)",
+   "mbCredit": "黃霑",
+   "mbFirstRelease": "1992",
+   "mbNote": "MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致"
+  },
+  {
+   "artist": "葉麗儀",
+   "album": "上海灘",
+   "suggestedYear": 1980,
+   "yearNote": "取原始發行年 1980（EMI，EMGS 6059，新馬港三地同盤）。TVB 電視劇《上海灘》亦於 1980 年首播，主題曲同年獲 1980 年度十大中文金曲，唱片與劇集同年，無年份落差問題。",
+   "label": "EMI（百代，香港／新馬，EMGS 6059）",
+   "versionNote": "鎖 1980 年 EMI 原版 LP（EMGS 6059，13 首，A1〈上海灘〉，監製朱穗萍）。**同名同題材的碟至少有四張，必須逐一排除**：(a)《上海灘續集．萬般情》1980，EMI EMGS-6066——不同專輯；(b)《上海灘特輯》1981，EMI EMGS 6072——不同專輯；(c) 1996 年 EMI CD（7243854058 2 2）與 2014／2015 年 EMI／環球復刻 CD（8897079、8888794、8897641）——後世再版；(d) 顧嘉煇的演奏／演唱會選輯（如 1987 Crown《Golden Hits》、2013《顧嘉煇大師經典演唱會》）收錄同曲但完全是別的碟。另外本卡是**電視劇主題曲專輯**而非電影原聲帶，曲風與 release type 的歸類要與本子域其他配樂卡分開處理。",
+   "namingNote": "**推翻種子清單的「顧嘉煇」掛名**：顧嘉煇是〈上海灘〉的作曲者（黃霑作詞），不是這張唱片的掛名藝人；實體與 master 的 artist 都是**葉麗儀**（Frances Yip）。盤名另有一層裁定：1980 年 EMI 原版 LP 是**自我同名**《葉麗儀》（A1 即〈上海灘〉），2014 年 EMI／環球復刻時才正式改題《上海灘》，而中文樂迷與後世通稱一向就是《上海灘》。卡片採《上海灘》以符合通稱與可檢索性，《葉麗儀》進別名，並在版本欄鎖定 1980 年原版內容。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "現池完全沒有 1970–80 年代粵語流行曲的黃金期，而顧嘉煇＋黃霑的 TVB 劇集主題曲正是那個時代最具代表性的產物；〈上海灘〉是其中傳播最廣、至今仍是華語世界共同記憶的一首。以葉麗儀這張原版專輯入池，等於一次補進粵語流行曲、TVB 劇集音樂、EMI 香港目錄三條線的起點。",
+   "curatorRisk": "最大風險是掛名與盤名雙重錯位：中文資料多把〈上海灘〉歸在顧嘉煇名下，而 1980 原版封面標題其實是自我同名《葉麗儀》——§1 明列自我同名屬高風險，封面與試聽比對必須連 EMGS 6059 一起鎖。其次《上海灘續集．萬般情》《上海灘特輯》兩張同系列碟極易被當成同一張。第三，Discogs 對〈上海灘〉的作詞者記載有誤（把鄭國江與黃霑混記），簡介不可照抄該欄。第四，這是電視劇而非電影，放在「華語電影配樂」子域裡需店主確認是否接受。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。得獎紀錄查到了，但落在**歌曲**而非專輯：〈上海灘〉入選 1980 年度十大中文金曲，那是單曲獎；專輯層級（1980 EMI EMGS 6059，原題自我同名《葉麗儀》）查無任何獎項或跨來源樂評論述，它在唱片史上的角色是「收錄了一首時代金曲的歌手專輯」，不是被獨立論述的核心作品。EMI／環球至 2015 年仍在復刻，反映的是那首歌的長銷力。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/1980_RTHK_Top_10_Gold_Songs_Awards",
+     "https://www.discogs.com/release/10991412-%E8%91%89%E9%BA%97%E5%84%80-%E4%B8%8A%E6%B5%B7%E7%81%98"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "rgMbid": "4fef7590-0afe-4002-ad86-6cfbe03d2275",
+   "mbTitle": "上海灘",
+   "mbCredit": "葉麗儀",
+   "mbFirstRelease": "2014",
+   "mbNote": "MB 命中 3 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致"
+  },
+  {
+   "artist": "陳光榮",
+   "album": "無間道 電影原聲配樂",
+   "suggestedYear": 2002,
+   "yearNote": "取原聲帶發行年 2002（中文維基記 2002-12-01 發行、13 首曲），與電影上映年同年（2002-12-12 香港上映），原聲碟略早於上映。無年份落差問題。",
+   "label": "待本機補（中文維基記為 Sony BMG，但該公司 2004 年才成立，2002 年不可能以此名發行，疑為 Sony Music Hong Kong 或寰亞相關廠牌之誤記；未取得可靠一手佐證前不填廠牌名）",
+   "versionNote": "鎖 2002 年首版實體（13 首，曲目為陳光榮的配樂段落：〈無間〉〈跟他交換〉〈再見…警察〉〈標〉〈三年又三年〉〈我在夢中見過你〉〈他是一個好警察〉〈有內鬼，行動取消〉〈我是警察〉〈我最信的是你〉〈我揀做個好人〉〈再見…警察…再見〉等，另含主題曲）。**同系列同名碟極多，逐一排除**：(a)《無間道II 電影原聲大碟》（新藝寶，含 Beyond）是續集且為歌曲碟，不是本卡；(b)《無間道III 終極無間 電影原聲配樂》為第三集；(c) 2006 年 Click Music《無間道 終極電影原聲配樂》三 CD 盒裝（82876-58992-2）與 2022 年 20 週年盒裝（MSCD10/11/12HK）是三集合輯；(d) 2023 年寰亞黑膠（MSLP14HK）與各色彩膠皆為後世復刻。**本卡的 2002 首版在 Discogs 上尚無條目**，本機需以實體或港版通路資料補齊廠牌、編號與確切盤名。",
+   "namingNote": "**推翻種子清單的「金培達 與 Ronald Ng」掛名，兩個都不對**。《無間道》(2002) 的電影配樂作曲者是**陳光榮**（Chan Kwong Wing），Discogs 與 MusicBrainz 上該系列所有原聲條目的 artist 也都是陳光榮。種子寫的 Ronald Ng 對應的中文名是**伍樂城**，他寫的是主題曲〈無間道〉（林夕作詞、劉德華與梁朝偉合唱）的曲與編曲，不是全片配樂；金培達（Peter Kam）則查無參與本片的任何證據，疑為與其他港片配樂混淆。盤名採後續實體與再版一致使用的《無間道 電影原聲配樂》，**2002 年首版的確切盤名待本機看實體覆核**（不排除當年題為「電影原聲大碟」）。",
+   "releaseType": "Album",
+   "secondaryTypes": [],
+   "exceptionReason": "",
+   "exceptionEvidenceUrls": [],
+   "upc": "",
+   "curatorWhy": "《無間道》是香港電影在 2000 年代最重要的一次復甦，陳光榮用交響樂團＋電子節拍寫的那套主題，定義了此後港產警匪片的聲音語法，也讓香港電影配樂第一次以「作曲家品牌」被觀眾記住。卡池的華語配樂線目前止於 1990 年代王家衛，補這張才接得上 2000 年代。",
+   "curatorRisk": "本卡是本批資料最薄的一張：2002 首版的廠牌、編號與確切盤名都還沒有可靠一手佐證，Discogs 最早只到 2006 年盒裝，封面與 UPC 幾乎確定要本機處理。掛名雖已確認為陳光榮，但主題曲的伍樂城與演唱的劉德華、梁朝偉在串流條目上常被列為主藝人，試聽與封面 API 極易錯配。三集系列同名碟與各種紀念盒裝的雜訊也很高，比對必須看曲目數與年份。",
+   "apexCandidate": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 22 屆香港電影金像獎（2003）最佳原創電影音樂，陳光榮以《無間道》**入圍未得獎**；同屆得獎的最佳原創電影歌曲〈無間道〉是**伍樂城**作曲的主題曲，不是本碟主體的陳光榮配樂，不能拿來替本卡背書。電影是 2000 年代港片的分水嶺，但那是電影的地位；配樂專輯層級查無跨來源長期樂評共識，且 2002 首版的廠牌與盤名都還沒有一手佐證。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93"
+    ],
+    "evidence": ""
+   },
+   "ratings": null,
+   "ratingsNote": "local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑",
+   "identitySource": "manual",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group/?query=artist:\"陳光榮\" AND releasegroup:\"無間道 電影原聲配樂\"",
+     "release-group/?query=artist:\"陳光榮\"（藝人全目錄方向）"
+    ],
+    "checkedAt": "2026-08-29",
+    "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+   },
+   "manualEvidenceUrls": [
+    "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93",
+    "https://en.wikipedia.org/wiki/Infernal_Affairs",
+    "https://www.discogs.com/release/10700308",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+   ],
+   "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址"
+  }
+ ],
+ "skipped": [
+  {
+   "artist": "黃霑",
+   "album": "倩女幽魂 電影原聲帶",
+   "reason": "**這張碟不存在**。掛名本身沒有問題——1987 年《倩女幽魂》配樂確為黃霑與戴樂民，兩人並以此獲第 7 屆香港電影金像獎最佳電影音樂（第 24 屆金馬獎最佳原著音樂則僅入圍未得獎，英文維基寫成得獎是錯的）——但**當年並未發行電影原聲帶專輯**。查過的來源：(1) 中文維基〈倩女幽魂 (1987年電影)〉與〈倩女幽魂 (歌曲)〉，配樂與獎項齊備，全篇無原聲帶發行紀錄，並載明主題曲是收在張國榮 1987 年個人專輯《Summer Romance '87》（Cinepoly CP-1-0010）裡；(2) 多篇中文影評與黃霑作品討論明確指出黃霑不少配樂（含本片、《人鬼神》《畫中仙》《六指琴魔》《西楚霸王》）從未出過原聲帶；(3) Discogs 全庫搜「倩女幽魂」129 筆，1987–1992 年間與本片相關的只有 1991 年《倩女幽魂 III 道道道》（Alpha，台灣，CD-AD 6466／AD 6466）與雜牌演奏輯，**第一集的原聲帶條目一筆都沒有**；(4) 香港電影資料館頁面只談影片放映，無唱片資料。唯一存在的整合性發行是 2014-05-30 上架的《倩女幽魂三部曲 電影原聲大碟》，但它跨三部片、屬後世合輯，其實體發行廠牌與規格我查不到可靠佐證，依「不確定就不猜」不代填。**建議**：若店主要保住這一格，可改收 1991 年《倩女幽魂 III 道道道》（有台灣 Alpha 實體），或改收張國榮《Summer Romance '87》；兩者都是另一張碟，需重新開卡單。"
+  },
+  {
+   "artist": "李泰祥",
+   "album": "歡顏 電影原聲帶",
+   "reason": "**兩個獨立理由都足以退回**。其一，這張原聲帶不存在：1979 年電影《歡顏》的〈橄欖樹〉與〈歡顏〉並非以電影原聲帶形式發行，而是收在**齊豫 1979 年首張專輯《橄欖樹》**（新格唱片 SYNCO，VS-010）裡——李泰祥是該專輯的作曲與製作人，不是掛名藝人；Discogs 全庫搜「歡顏 李泰祥」也只回到齊豫《橄欖樹》及其 2015 滾石復刻（RLP022），沒有任何《歡顏》原聲帶條目。其二，**去重**：把它正名為齊豫《橄欖樹》(1979) 之後就撞現池——`apex_pool.json` 已收「齊豫／橄欖樹／folk／1979」，依規則已在王牌池者不得再上普卡。種子清單註記「現池李泰祥僅 1 張」的觀察為真（seed 只有『Tai-Hsiang Li 李泰祥／鄉土．民謠 第一輯』1977），但這一張補不了李泰祥的目錄，要補得另外開李泰祥本人掛名的碟。附帶提醒：現池那筆李泰祥的掛名寫成中英並列的『Tai-Hsiang Li 李泰祥』，與本批一律用中文的寫法不一致，屬既有卡池的掛名分裂，建議併入 `audits/pool-artist-name-splits.md` 一起處理。"
+  }
+ ]
+}
