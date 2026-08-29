@@ -27,13 +27,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "周璇是華語流行音樂第一位跨區域的錄音巨星，其百代錄音是整個時代曲樂種的源頭文獻；本輯為 EMI 官方授權系列的第一號，曲目即該樂種的核心正典，符合殿堂「該領域史上核心作品」的定義。",
+    "reason": "依「源頭論述」立論而非知名度：周璇被一致視為華語流行音樂的起點人物，〈天涯歌女〉〈四季歌〉出自 1937 年《馬路天使》，是該樂種形成期的定位性錄音；本輯是 EMI 自家母帶授權系列的第一號，即這批錄音的權威入口。**但把這份錄音寫進回溯型正典的音樂史著作、台灣音樂館／中研院數位典藏的收錄理由，雲端未能連上取得**，故 evidence 標 pending-local，非因查不到而降級。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/wiki/%E5%91%A8%E7%92%87",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
-     "https://music.apple.com/ph/album/the-legendary-chinese-hits-%E5%91%A8%E7%92%87-%E5%A4%A9%E6%B6%AF%E6%AD%8C%E5%A5%B3/724638386"
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits"
     ],
-    "evidence": ""
+    "evidence": "pending-local"
    }
   },
   {
@@ -60,14 +59,10 @@
    "curatorWhy": "白光是七大歌星裡唯一的低音女聲，在一片高亢甜嗓中開出另一條唱法的路，〈如果沒有你〉〈等著你回來〉〈魂縈舊夢〉至今仍是華語歌手翻唱的必修曲。她自陳〈如果沒有你〉是最愛的一首，吉隆坡墓碑上刻的就是這首歌的樂譜。",
    "curatorRisk": "1) **集數編號有硬衝突**：Apple 與 eBay 舊盤標「20」，Spotify／Deezer／Last.fm 標「(十六)」，同一張碟兩個編號並存，字串比對與封面核對都會踩到——本機務必以曲目（17 軌、首軌〈如果沒有你〉、第 6 軌〈魂縈舊夢〉）為準，不要只信編號。2) 〈如果沒有你〉首發年 1942／1947 兩說未決。3) 「白光」二字在中文維基是消歧義頁（另有魯迅小說），純字串檢索雜訊高。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "白光的低音路線在 1940 年代上海歌壇是獨立的一支，七大歌星地位有跨來源共識，本輯是其代表錄音的官方授權復刻，屬時代曲正典核心。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E7%99%BD%E5%85%89_(%E5%BD%B1%E6%98%9F)",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
-     "https://open.spotify.com/album/7lSnFjR0cN6gxSlqFC0JC2"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到的只有歌手層級的定位（1940 年代上海七大歌星之一、獨特低音唱腔）與單曲的流傳度，**沒有查到任何音樂史著作或國家級典藏把這張 EMI 復刻輯（或其中特定錄音）列為華語流行史核心作品**；連〈如果沒有你〉的首發年都還有 1942／1947 兩說未決。歌手很紅、歌人人會唱不構成 hall。冷門度也未達遺珠級——她是七大歌星裡辨識度最高的幾位之一。先作一般卡。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -97,13 +92,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "姚莉的上海時期錄音是時代曲正典，〈玫瑰玫瑰我愛你〉是第一首經改編打入美國排行榜的華語作品，跨語系影響力有長期共識；本輯為該批錄音的官方授權權威整理。",
+    "reason": "依「歷史第一」立論：〈玫瑰玫瑰我愛你〉經 Frankie Laine 改編為 Rose, Rose I Love You 後於 1951 年登上美國排行榜前列，中文維基明載為「第一首打進美國流行榜前段的華語作品」；這是可查證的跨語系歷史第一，不是銷量或知名度。本輯是該批上海時期錄音的官方授權權威整理。跨語系傳播的**學術／音樂史二次論述雲端未能取得**，evidence 標 pending-local。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/zh-hans/%E7%8E%AB%E7%91%B0%E7%8E%AB%E7%91%B0%E6%88%91%E7%88%B1%E4%BD%A0",
-     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89",
-     "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B825-26-%E7%A7%8B%E7%9A%84%E6%87%B7%E5%BF%B5-%E4%B8%8A%E6%B5%B7%E6%99%82%E6%9C%9F%E6%AD%8C%E6%9B%B2/821631811"
+     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89"
     ],
-    "evidence": ""
+    "evidence": "pending-local"
    }
   },
   {
@@ -130,14 +124,10 @@
    "curatorWhy": "吳鶯音的「鼻音歌后」唱法是時代曲裡辨識度最高的一種發聲，〈明月千里寄相思〉七十多年來一路被翻唱到當代，是華語歌本中最穩固的標準曲之一。她也是七大歌星中生涯橫跨上海、香港、洛杉磯三地、2000 年還能開紅館告別演唱會的一位。",
    "curatorRisk": "1) 名典系列在串流端集數用國字（七）與阿拉伯數字（7）混用，且 Apple 把她的藝人名英譯成 Woo Ing Ing、Ying Yin Wu 兩種，跨平台比對必須用曲目而非字串。2) 2005 年電影《長恨歌》讓此曲有一批新錄音與再詮釋版本流通，容易配錯試聽。3) 同系列 6/8/9 集是同一批母帶的姊妹輯，日後補卡要另立不可合併。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "吳鶯音為 1940 年代上海七大歌星之一，〈明月千里寄相思〉是華語流行歌本長期沿用的標準曲，跨代翻唱與地位共識明確；本輯為該批百代錄音的官方授權整理。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/wiki/%E5%90%B3%E9%B6%AF%E9%9F%B3",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
-     "https://tidal.com/browse/album/1496181"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。〈明月千里寄相思〉的標準曲地位與七大歌星身分都查得到，**但查不到把本輯列入回溯型正典的音樂史論述或典藏收錄理由**；標準曲流傳度屬「人人會唱」，依校準規則不構成 hall。她在華語老歌圈仍是熟面孔，冷門度亦未達遺珠級。先作一般卡。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -165,14 +155,10 @@
    "curatorWhy": "〈夜來香〉是華語流行史上被翻唱最多的一首歌之一（中文維基記逾百位歌手、跨粵語／日語／韓語／泰語版本），而李香蘭本人是戰時東亞娛樂政治最複雜的一個身分節點——日本人以中國歌星身分紅遍上海。這張是理解那段歷史唯一必要的錄音入口。",
    "curatorRisk": "1) **掛名分裂風險本批最高**：李香蘭／山口淑子／Yoshiko Yamaguchi／Ri Kōran 四種掛名分屬不同目錄，Last.fm 與串流端各自分散，listeners 與封面查詢都要指定中文名。2) 〈夜來香〉版本極多，鄧麗君 1978、1994 兩版流通度甚至高於原唱，試聽配對務必逐張核對是 1944 原音。3) 本卡與名典 17《蘭閨寂寂》曲目高度重疊，日後不可再收名典 17 當第二張卡。4) 2005 年復刻輯的封面在各平台不一致，需實測。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "〈夜來香〉是華語流行歌本流傳最廣、跨語系翻唱最多的曲目之一，李香蘭原唱是該曲的決定性版本，樂史地位與跨來源共識明確。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E5%A4%9C%E6%9D%A5%E9%A6%99_(%E6%AD%8C%E6%9B%B2)",
-     "https://ja.wikipedia.org/wiki/%E5%A4%9C%E6%9D%A5%E9%A6%99",
-     "https://open.spotify.com/album/2bkyjEjHtXtNaHrcUx1Yxh"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。〈夜來香〉的翻唱規模（逾百位歌手、跨粵日韓泰語）是**曲目層級**的流傳度證據，不是本張 2005 年 EMI 復刻輯的正典地位；查不到任何名單或音樂史著作把這張復刻輯當核心作品。李香蘭的歷史重要性主要落在戰時身分政治的史學論述，屬人物研究而非唱片正典。先作一般卡。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -200,14 +186,10 @@
    "curatorWhy": "葛蘭是 1950 年代華語流行裡最外向的一支——曼波、恰恰、爵士節奏被直接搬進國語歌，《曼波女郎》一片讓「曼波女郎」成了她的代稱。她也是西方影評與後世導演最常引用的華語時代曲歌手，這條「時代曲 × 拉丁舞曲」的線在卡池目前完全沒有。",
    "curatorRisk": "1) 「電影歌曲輯」與「電影原聲帶」性質不同，簡介與 releaseType 都不能寫成 OST。2) 名典 10／11／12 三集是同一批母帶的姊妹輯，重複建卡風險高。3) 葛蘭於 2026 年 8 月逝世，近期新聞與紀念盤會大量湧現，本機接手時要避免配到 2026 年的紀念重包裝封面／試聽。4) 名典 29／30 為雙 CD 單一編號，串流端可能拆成兩張。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "葛蘭是 1950 年代電懋歌舞片時代的代表歌者，《曼波女郎》是華語流行音樂吸收拉丁節奏的標誌性作品，香港電影資料館與黃霑研究計畫皆以專題處理，樂史地位有跨來源共識。",
-    "evidenceUrls": [
-     "https://www.filmarchive.gov.hk/tc/web/hkfa/pe-event-2023-cs-fs-film15.html",
-     "https://www.hkmemory.org/jameswong/text/index.php?p=home&catId=265&photoNo=0",
-     "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/Grace-Chang_c.pdf"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。香港電影資料館與香港記憶「黃霑書房」處理的是**1957 年電影《曼波女郎》**的影史地位，不是這套 1990 年代 EMI 唱片復刻輯；影史正典不能直接移轉給唱片。查不到把本輯列入音樂正典的來源。先作一般卡；**若本機能取得香港電影資料館對該片歌曲的專門論述、或黃霑研究計畫對葛蘭唱片的定位，可重新評估。**",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -235,14 +217,11 @@
    "curatorWhy": "崔萍是 1950 年代末至 1960 年代香港國語時代曲的第二圈核心，〈南屏晚鐘〉〈今宵多珍重〉〈夢裡相思〉三首都成了長期沿用的標準曲，其中〈南屏晚鐘〉的翻唱跨了國語、粵語與四十年世代。上海南遷之後的香港時代曲這一段，卡池目前完全空白。",
    "curatorRisk": "1) 年份爭議已解決但方向與種子相反（1960 非 1958），本機若沿用種子年份會與維基來源直接衝突。2) 同名翻唱版本極多且不少掛在名氣更大的歌手（費玉清、蔡琴、徐小鳳）名下，試聽與 listeners 查詢極易錯配。3) 名典 38／39 是姊妹輯，日後補卡不可合併。4) 崔萍在串流端有多張來源不明的同名短輯。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "香港國語時代曲第二圈的代表錄音：作品品質與樂史份量足夠（〈南屏晚鐘〉為跨語系長期標準曲），但崔萍本人在時代曲圈以外近乎無人認得，串流聆聽量預期極低，符合遺珠級的定義。**pearl 的 listeners < 300 硬門檻雲端無法查證（Last.fm 需本機），冷門軸 5 分亦待主線評分後確認**，故證據標 pending-local，不得因此降為普卡。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F_(%E6%AD%8C%E6%9B%B2)",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/31-40"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "兩條路都不成立。hall：只查到歌手知名度與〈南屏晚鐘〉的翻唱規模（羅文、鳳飛飛、徐小鳳、費玉清、蔡琴皆有版本，另有粵語填詞版），**沒有音樂史著作或典藏名單把本輯列為核心作品**。pearl：〈南屏晚鐘〉至今仍是華語老歌播放清單的常客、翻唱者多為一線歌手，與「專門圈以外近乎無人知曉」直接矛盾——**這是實質判斷，不是因為 listeners 查不到**。先作一般卡。",
+    "evidenceUrls": [],
+    "evidence": ""
    }
   },
   {
@@ -268,14 +247,11 @@
    "curatorWhy": "潘秀瓊是百代香港時期唯一長期灌錄的南洋（澳門出生、馬來亞成長、新加坡發跡）歌手，選曲帶熱帶風情，低音路線與白光遙相呼應；〈情人的眼淚〉是華語歌本裡被翻唱次數最多的姚敏作品之一。她後來還為新加坡廣播機構訓練歌手，是南洋華語歌壇的關鍵節點。",
    "curatorRisk": "1) 翻唱版本（蔡琴、鄧麗君、姚蘇蓉）流通度遠高於原唱，試聽與 listeners 極易配到別人。2) Apple 把此曲掛「電影《小雲雀》插曲」，與 1958 唱片首發年不一致，簡介不可寫成電影插曲首發。3) 名典 44／45 是姊妹輯。4) 她的粵語與南洋曲目另有目錄，掛名相同容易混入。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "香港國語時代曲第二圈的代表錄音，成名作是長期標準曲，但潘秀瓊本人在專門圈以外幾乎無人知曉，串流聆聽量預期極低，符合遺珠級。**pearl 的 listeners < 300 硬門檻與冷門軸 5 分雲端無法查證**，證據標 pending-local，不得降為普卡。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-hant/%E6%BD%98%E7%A7%80%E7%90%BC",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "與崔萍同理，兩條路都不成立。hall：查到的是成名經過與低音歌后稱號，無任何正典名單或音樂史定位涵蓋本輯。pearl：〈情人的眼淚〉被蔡琴、鄧麗君、姚蘇蓉等大量翻唱且流通度高，該曲在華語老歌圈遠稱不上無人知曉——**這是實質判斷，不是 listeners 查不到**。先作一般卡。",
+    "evidenceUrls": [],
+    "evidence": ""
    }
   },
   {
@@ -304,7 +280,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "pearl",
-    "reason": "幕後代唱這一行的代表人物，作品品質與產業份量足夠，但她的名字在電影歌曲研究圈以外幾乎不被認得（聲音被大量歸給銀幕上的明星），串流聆聽量預期極低，符合遺珠級。**pearl 的 listeners < 300 硬門檻與冷門軸 5 分雲端無法查證**，證據標 pending-local，不得降為普卡。",
+    "reason": "幕後代唱這一行的代表人物：她的聲音大量被歸給銀幕上的明星，本人姓名在電影歌曲研究圈以外近乎無人知曉，串流與 Last.fm 曝光極低，符合「專門圈以外近乎無人知曉且品質值得遺珠級」。**pearl 的兩個硬條件（obscurity=5 由主線評分、Last.fm listeners<300 僅本機可查）雲端皆無法取得**，evidence 標 pending-local，依雲端硬規則第 1 條不得因此判普卡。",
     "evidenceUrls": [
      "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/TSIN-Ting_c.pdf",
      "https://time.udn.com/udntime/story/122834/6703516"
@@ -338,10 +314,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "pearl",
-    "reason": "香港時代曲第二圈的代表錄音，中詞西曲路線的樣板作品，品質與樂史份量足夠，但張露在專門圈以外幾乎不被認得，串流聆聽量預期極低，符合遺珠級。**pearl 的 listeners < 300 硬門檻與冷門軸 5 分雲端無法查證**，證據標 pending-local，不得降為普卡。",
+    "reason": "中詞西曲路線的樣板執行者，作品品質與方法論份量足夠，但張露本人今日在時代曲研究圈以外幾乎不被認得（多數人只透過其子杜德偉間接聽過此名），串流曝光極低，符合遺珠級。**pearl 的 obscurity=5 與 listeners<300 兩個硬條件雲端無法查證**，evidence 標 pending-local，不得因此判普卡。",
     "evidenceUrls": [
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20",
-     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits"
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20"
     ],
     "evidence": "pending-local"
    }
@@ -368,13 +344,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "台灣第一首正式灌錄成唱片的華語創作歌曲，四海 1961 版是讓它成為國民歌曲的決定性版本，台灣流行音樂史的起點文獻，跨來源共識明確。",
+    "reason": "依「源頭論述」立論：〈綠島小夜曲〉被記為台灣第一首正式灌錄成唱片的華語創作歌曲，而 1961 年四海重灌版正是該論述指向、也是讓它成為國民歌曲的那一份錄音——這是台灣流行音樂史的起點文獻，不是銷量論。**國家級典藏（台灣音樂館／國家文化記憶庫）對這一版的收錄理由雲端未取得**，evidence 標 pending-local。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/zh-tw/%E7%B6%A0%E5%B3%B6%E5%B0%8F%E5%A4%9C%E6%9B%B2",
-     "https://www.thenewslens.com/article/36861",
-     "https://zh.wikipedia.org/zh-tw/%E7%B4%AB%E8%96%87_(%E6%AD%8C%E6%89%8B)"
+     "https://www.thenewslens.com/article/36861"
     ],
-    "evidence": ""
+    "evidence": "pending-local"
    }
   },
   {
@@ -397,14 +372,10 @@
    "curatorWhy": "美黛是第一位台灣本土出生的國語歌后，《意難忘》一張唱片打破了當時國語歌壇由上海南來歌手主導的結構，也讓合眾唱片成為六〇年代台語／國語跨界的重要廠牌。這張的銷量規模在當時台灣是前所未見的，直接證明本土市場撐得起國語流行唱片。",
    "curatorRisk": "1) 《意難忘》三個字在華語圈同名極多（同名電視劇、同名歌曲、多位歌手翻唱），純字串比對雜訊極高，務必鎖「美黛＋合眾＋1963」。2) 她晚年有《意難忘．重相逢》重錄專輯，錄音完全不同。3) 曲調源自日本〈東京夜曲〉，簡介處理原創性時要謹慎。4) 六〇年代台壓盤的封面在網路上多為二手拍賣翻拍，本機解封面要特別小心版本。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "台灣本土歌手的第一張百萬級國語唱片，改變了國語歌壇的人才結構，是台灣流行音樂產業史的分水嶺；臺北市流行音樂數位典藏與主流媒體回顧皆以此定位。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E7%BE%8E%E9%BB%9B",
-     "https://time.udn.com/udntime/story/122834/8888993",
-     "https://www.pmdb.org.taipei/digcultural?uid=21&pid=40"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到的核心事實是**銷量與市場結構**（近百萬張、第一位台灣本土出生的國語歌后），依校準規則「當年賣得好」不構成 hall；**已查《台灣流行音樂200最佳專輯》完整名單，本張不在內**（該名單涵蓋 1975 年之後，本張 1963 年不在其範圍，也未見其他回溯型名單收錄）。臺北市流行音樂資料庫有她的數位典藏頁，但屬人物典藏，未見對本張的正典論述。先作一般卡。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -428,13 +399,10 @@
    "curatorWhy": "姚蘇蓉是台灣禁歌史的代表人物——〈負心的人〉〈今天不回家〉等多首被查禁，逼得她轉往香港與東南亞發展。《今天不回家》在香港與海山的合約下賣出六十萬張，是台灣流行歌第一次真正意義上的境外市場成功。這張碟同時承載了戒嚴時期的審查機制與台灣唱片工業的外銷起點兩條線。",
    "curatorRisk": "1) 同一張碟有 EP 與 LP 兩種格式並存，Discogs 上至少四筆條目，必須鎖 LP。2) 查禁後改名《今天要回家》的版本流通量不低，容易被當成另一張碟建卡。3) 電影同名，OST 與歌手專輯的界線在當時很模糊，簡介要寫清楚這是歌手專輯。4) 伴奏團「電星樂隊」在部分條目掛進 artist credit，字串比對會漏。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "台灣戒嚴時期禁歌史最具代表性的一張唱片，同時是台灣流行歌外銷東南亞的里程碑（六十萬張），文化史與產業史的雙重份量有跨來源記載（公家策展單位與唱片資料庫）。",
-    "evidenceUrls": [
-     "https://artogo.co/en/exhibition/MandarinAndTaiwanesePopularMusic/work/895efdfd5ea9",
-     "https://www.discogs.com/master/1096987-%E5%A7%9A%E8%98%87%E8%93%89-%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%9B%9E%E5%AE%B6"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到的是查禁史與外銷銷量（六十萬張）——文化史事件與商業成績，不是樂評正典；ARTOGO 的《鄉愁·流轉與禁聲噤語》展覽把它當禁歌史料展示，是**史料收錄**而非把它定位成華語流行史核心作品。先作一般卡；**若本機能取得台灣音樂館或禁歌研究專著對本張的專門定位，可重新評估。**",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -620,7 +588,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Oricon 週榜連續九週第一、約 136 萬枚、日本唱片大賞新人賞——亞洲歌手在日本市場的歷史性突破，日本流行音樂史著作與 Oricon 年榜紀錄皆有明確記載，屬該領域核心事件。",
+    "reason": "唯一有具名音樂史著作背書的一張：日文維基〈雨の御堂筋〉的銷量數字直接引自古茂田信男等《新版 日本流行歌史（下 1960–1994）》（社会思想社，1995，頁 56），另有 Oricon 週榜連續九週第一（亞洲歌手首次）與第 13 屆日本唱片大賞新人賞兩項可查證紀錄。屬日本流行音樂史的核心事件，非單純暢銷。",
     "evidenceUrls": [
      "https://ja.wikipedia.org/wiki/%E9%9B%A8%E3%81%AE%E5%BE%A1%E5%A0%82%E7%AD%8B",
      "https://ja.wikipedia.org/wiki/%E6%AC%A7%E9%99%BD%E8%8F%B2%E8%8F%B2"
@@ -674,13 +642,10 @@
    "curatorWhy": "鄧麗君加盟香港寶麗金的第一張，也是她從台灣本土歌手轉為泛華語圈天后的分水嶺；《島國之情歌》系列此後一年一集連出八集，是華語流行史上最有影響力的專輯系列之一。〈再見！我的愛人〉〈情人的關懷〉至今仍是她最常被點的曲目。",
    "curatorRisk": "1) **掛名分裂**：卡池已有「鄧麗君 Teresa Teng」的《淡淡幽情》。2) 盤名有《島國之情歌》《再見！我的愛人》《島國之情歌第一集》三種寫法，首版並未印「第一集」。3) 系列八集盤名高度相似，容易互相錯配。4) 復刻版本極多（K2HD、彩膠、LP 復刻），封面與試聽都要鎖 1975 原盤。5) 台港兩地發行方不同（香港寶麗金／台灣海山）。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "鄧麗君寶麗金時期的開篇作，開啟華語流行史上影響力最大的專輯系列（島國之情歌八集），跨地區長期共識明確；其後續系列與復刻規模本身即為地位證據。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
-     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "**已查到名單、而本張不在裡面**：《台灣流行音樂200最佳專輯》收錄的鄧麗君作品是《淡淡幽情》（1983，歌林／寶麗金，第 45 名），不是本張；卡池既有的鄧麗君卡也正是《淡淡幽情》。本張的意義在於開啟島國之情歌系列與寶麗金時期，屬產業分期的分水嶺而非樂評正典。先作一般卡——這是查得到名單後的實質判斷，不是 pending-local。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -729,7 +694,7 @@
    "apexCandidate": {
     "eligible": false,
     "tier": null,
-    "reason": "依 §5.6 的「同一批錄音的多種形態只挑最權威的一種」精神，鄧麗君 1984 年這批錄音的頂點名額給日語原版《つぐない》（獎項與榜單紀錄都掛在日語版上）；本卡作為國語版先列一般卡。**這是刻意的取捨，不是因為查不到證據而降級。**",
+    "reason": "維持一般卡，理由不變且與校準一致：依「同一批錄音的多種形態只挑最權威的一種」，1984 年這批錄音的頂點名額給日語原版《つぐない》（獎項與榜單紀錄都掛在日語版上）。另《台灣流行音樂200最佳專輯》的鄧麗君條目為《淡淡幽情》，本張不在內。**這是刻意取捨與名單查證的結果，不是因為查不到證據而降級。**",
     "evidenceUrls": [],
     "evidence": ""
    }
@@ -754,7 +719,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "鄧麗君在日本市場的代表作，是華語歌手打進日本主流歌謡曲體系最深的一次，日語與華語兩邊的長期共識一致；本輯的復刻規模（K2HD、24K Gold、30 週年紀念）本身也反映其正典地位。",
+    "reason": "鄧麗君以本作進入日本歌謡曲主流獎項體系（有線大賞系列），是華語歌手在日本主流論述中走得最深的一次，日語與華語兩邊的長期定位一致。**惟獎項名稱與評審論述雲端未取得一手佐證（日文媒體多數連不上），本卡簡介不得寫入獎項**，evidence 標 pending-local——這是「夠格但來源連不到」，不是查無。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
      "https://ja.wikipedia.org/wiki/%E3%81%A4%E3%81%90%E3%81%AA%E3%81%84"
@@ -780,13 +745,10 @@
    "curatorWhy": "〈我只在乎你〉是鄧麗君生涯後期最具代表性的國語曲，也是她本人最常被引用的自我陳述；這張同時是她寶麗金時期的收尾之作，之後她的錄音大幅減少。日語版《時の流れに身をまかせ》與國語版在兩個市場同時成為長青曲，是她雙語經營最成熟的一次。",
    "curatorRisk": "1) 與 1986 年日語專輯《時の流れに身をまかせ》同源不同碟，容易混。2) 曲名〈我只在乎你〉被大量翻唱。3) 身後精選與卡拉 OK 產品極多，串流上同名條目雜訊高。4) 掛名分裂問題同前（卡池既有「鄧麗君 Teresa Teng」）。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "鄧麗君後期的代表國語專輯，同名曲是華語流行歌本中流通度最高的曲目之一，跨地區與跨世代共識明確。",
-    "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
-     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "**已查到名單、而本張不在裡面**：《台灣流行音樂200最佳專輯》的鄧麗君條目是《淡淡幽情》，本張未入列。同名曲的流通度極高，但依校準規則「人人會唱」不構成 hall；鄧麗君線的頂點名額本批只留給日語原版《つぐない》。先作一般卡。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -812,11 +774,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "依 §0.7 補述的「發燒天碟正典是與詮釋正典並列的有效依據」：本輯自 1985 年起被發燒圈奉為人聲試音天碟，三洋版二手行情長期在港幣二三千元以上，四十年來持續在音響店流通；同時它也是台灣流行樂界第一次有系統重製自身時代曲遺產的作品，兩條線都成立。",
+    "reason": "走 §0.7 明訂的「發燒天碟正典與詮釋正典並列」這條依據：本輯自 1985 年起被發燒圈奉為人聲試音天碟，三洋飛碟版（UFO-8516）二手行情長期在港幣二三千元以上，XRCD2 版另有獨立評價體系——屬「演奏之外，聲音本身成為傳奇」的標準案例，正是店規要求策展時反查的那一類。**惟香港 CD 聖經、TAS 榜等具名發燒名單雲端無法直接取得**，evidence 標 pending-local。註：本輯不在《台灣流行音樂200最佳專輯》內，故不以詮釋正典立論。",
     "evidenceUrls": [
      "https://music.douban.com/subject/1462439/",
-     "https://www.discogs.com/release/14100454-%E8%94%A1%E7%90%B4-%E8%80%81%E6%AD%8C",
-     "https://archive.org/details/tsai-chin-12-songs-share"
+     "https://www.discogs.com/release/14100454-%E8%94%A1%E7%90%B4-%E8%80%81%E6%AD%8C"
     ],
     "evidence": "pending-local"
    }
@@ -843,7 +804,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "《台灣流行音樂200最佳專輯》第 17 名（原百張版即入選），主打曲獲第 21 屆金馬獎最佳原創電影歌曲，跨來源的長期樂評共識明確，屬台灣流行音樂史核心作品。",
+    "reason": "本子域證據最硬的一張，且是唯一命中具名回溯型正典名單者：《台灣流行音樂百張最佳專輯（1975.9–1993.1）》第 17 名（後擴充為 200 張版本仍在列），主打〈最後一夜〉獲第 21 屆金馬獎最佳原創電影歌曲。名單與獎項皆可查證。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
      "https://zh.wikipedia.org/zh-hans/%E6%AD%A4%E6%83%85%E5%8F%AF%E5%BE%85"
