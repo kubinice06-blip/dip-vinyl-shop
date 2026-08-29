@@ -1,5 +1,94 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29｜dip-vinyl-shop｜c-47 上架：170 張寫入 Firestore 與卡池，補回四類被跳過的判定
+
+Firestore 免費配額（讀取 5 萬／日）於太平洋午夜重置後恢復，把 8/28 卡住的 c-47 走完
+ALBUM_ONBOARDING §7–§9。**上架 170 張**（策展 172、簡介 171）。
+
+## 上架前發現產線跳掉的四件事
+
+manifest 是這次才組的，組的過程把前面幾階段漏掉的東西全逼了出來：
+
+1. **九張改釘正規原版的卡，封面與三軸還掛在舊身分下**。8/28 那批把 Brassens、Ferré、Trenet、
+   Gréco、Dalida、Brel、Modugno、Celentano、Dietrich 從後世精選輯改釘到原盤，但 `covers.json`／
+   `ratings.json` 是改釘**之前**抓的，鍵還是舊標題。重跑 `resolve-covers.mjs`（新 rgMbid 命中 6）
+   與 `fetch-ratings.mjs`（補 3 筆）才補齊。**改釘身分之後，所有以 artist|album 為鍵的資產都要重抓。**
+2. **39 張沒做別名檢查**（country 34 張留空、us-pop-nordic 5 張只寫「單一匹配結果」）。
+   本次逐張比對卡片掛名／專輯名 vs MB artist-credit／release-group 標題後補齊：27 張逐字一致；
+   差異都可歸類——彎撇號（U+2019）vs 半形撇號 10 張、MB 把伴奏團一併列進 artist-credit
+   （Buck Owens, His Buckaroos／Stanley Brothers, Clinch Mountain Boys）、MB 把藝人名寫進標題
+   （Johnny Cash With His Hot and Blue Guitar）、Céline vs Celine（**池內既有卡已用 Celine Dion，
+   依掛名分裂防護遷就既有寫法**）。
+3. **64 張的頂點資格評估是空的**（21 張 reason 為 null／""、8 張寫著「非本批範圍，未評估」）。
+   「一次頂點卡資格評估」是完成標準第 3 條，空著等於沒做。
+4. **三張合輯缺例外佐證網址**（Bocelli《Romanza》、Bing Crosby《Merry Christmas》、
+   《Wanted! The Outlaws》），§5.6 要求至少兩個。
+
+## 頂點判定：改用可查證名單，不再靠代理「查不查得到共識」
+
+c-46 那次 40 張 classic=5 因「本環境查不到跨來源證據」被作成普卡、事後補證 22 張其實夠格。
+這次不重蹈覆轍，改成**把全批拿去比對兩份可查證名單**：美國國家錄音登記簿與葛萊美名人堂
+（後者的四頁 A–D／E–I／J–P／Q–Z 清單）。比對出 14 筆命中，逐列核對藝人、廠牌與年份後
+**確認三筆漏判、改判 hall**：
+
+- Fred Astaire《The Astaire Story》— 葛萊美名人堂，Mercury／1953／Vocal Jazz／Album，1999 入選
+- Barbra Streisand《The Barbra Streisand Album》— 葛萊美名人堂，Columbia／1963，2006 入選
+- Rodgers & Hammerstein《South Pacific》— 國家錄音登記簿，原版百老匯卡司錄音
+
+**名單比對會有雜訊要人工濾**：NRR 那頁有「藝人索引」列，一行塞進該藝人所有入選條目，
+於是 The King and I 因為「My Lord and Master」出現在 Streisand《People》那列而假命中；
+Doris Day《Day by Day》撞到〈Lord, Keep Me Day by Day〉。**逐列看過才算數。**
+
+頂點候選最終 **31 張全為 hall**（原 28 ＋ 改判 3）。其中七張基線 classic=4 但已採用為 hall，
+主線把 classic 定案為 5（AI 基線只是起點）：Juan Gabriel、Maná、Héroes del Silencio、Stromae、
+Brel、Patsy Cline、Dixie Chicks。
+
+## 兩張扣下不上架
+
+- **Trisha Yearwood《Trisha Yearwood》**——自我同名卡的規則要求 `selfTitledVerified=true`
+  **且固定試聽 ready**，本卡試聽 unavailable，扣下待補試聽。
+  另三張自我同名卡（Pino Daniele／Laura Pausini／Helene Fischer）已逐筆打 MB 確認
+  title 與 artist-credit 相同、primary-type=Album、無 secondary-type，放行。
+- **The Stanley Brothers《Country Pickin' and Singin'》**——CAA 無封面，待店主掃圖。
+
+## 曲風欄：`build-seed-genres.mjs` 對音樂劇與香頌全數落空
+
+跑完仍有 **11 張曲風欄為空**（首頁「類型挑片」靠這欄過濾，空的抽不到）。
+`build-seed-genres.mjs` 的 KV 命中率在這批是 0，卡司錄音與香頌尤其查不到。
+比照池內同族卡的既有寫法人工補上：音樂劇／卡司錄音九張一律 `classical`
+（Company、Into the Woods、Phantom、Les Misérables、Sweeney Todd 都是這樣標）；
+Gréco 比照同批 Trenet 標 `jazz`+`folk`；《Wanted! The Outlaws》比照 Waylon《Honky Tonk Heroes》
+與 Willie《Red Headed Stranger》標 `folk`（**本池曲風詞彙只有十個 id，沒有 country**）。
+
+## 待店主處理
+
+1. **17 張達 pearl 數值門檻但未採用**（obscurity=5 且 listeners<300），本批依「預設一般卡」
+   先作普卡上架，升不升由店主定：Piaf《À l'Olympia 1961》(15)、Brassens 首張 (3)、
+   Trenet《Chansons claires》(6)、Gréco (8)、Mina®(1974) (1)、Nino Bravo (1)、Nena (8)、
+   Modugno (27)、Rocío Dúrcal (31)、Vicente Fernández (36)、Celentano (111)、Raphael (128)、
+   Jim Reeves (136)、Dietrich (167)、Paolo Conte (184)、Zucchero (253)、Stanley Brothers (64，未上架)。
+   **其中 Fito Páez 與 Yves Montand 的 listeners 回 0，依規則「查無資料不能當成 0」，不列入。**
+2. **後台跑「匯入固定名單」**，把本批 31 張 hall 同步進 Firestore `album_overrides.tier`
+   （連同 c-46 那 22 張仍未同步）。
+3. Stanley Brothers 封面掃圖。
+
+## 驗證
+
+- prepare gate：**170 張 0 error**，11 warning 全為 UPC 缺漏（盡力而為層級）
+- `card_catalog`：PATCH **170／170 成功**，並逐欄回讀比對 **一致 170、不符 0**
+- KV 固定簡介：manifest 170 張對 `desc2:` 鍵 **一致 170、缺 0、不符 0**
+- 靜態試聽：ready 107 寫入 `apple-audio-map-v1.json`、負面狀態 63 寫入 `card-preview-status.js`，
+  重建 runtime map（10,179 筆）
+- 卡池：seed 11,866 → **12,005**（+139）、apex.hall 648 → **679**（+31）；
+  兩檔逐行 diff 確認只動新增列與原最後一列（收尾括號位移）
+- published gate：**170 張 0 error**，11 warning 同上。首跑有 1 error（Doris Day 封面回 429），單獨重打同一網址得 HTTP 200／image-jpeg／11,623 bytes——**是 gate 連掃 170 張 CAA 時被限流，不是封面壞掉**；重跑整批即為 0 error
+
+## 主要檔案
+
+`onboarding-manifest-c47-pop-country-latin-20260829.json`（新增）、`seed_cards.json`、
+`apex_pool.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`、
+`data/apple-audio-runtime-v1.json`、`batch-progress/c47/{cand-all,covers,ratings}.json`
+
 ### 2026-08-29（第三筆）｜dip-vinyl-shop｜備齊雲端工作階段所需檔案，並查出 c-46 證據封鎖的真正原因
 
 要開雲端工作階段跑產線，先確認了一個會直接擋住開工的問題：**skill 與簡介產線工具都不在 repo 內**
