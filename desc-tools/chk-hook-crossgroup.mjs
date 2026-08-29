@@ -81,7 +81,10 @@ flag('note 有校對痕跡風險（會被寫作層原樣寫進正文）',
   r => `[${r.g}] ${r.k}\n        ${r.note.match(TRACE)[0]} … ${r.note.slice(Math.max(0, r.note.search(TRACE) - 12), r.note.search(TRACE) + 40)}`);
 
 // ── 4. 分數星等（hook 與 note 指派句都不得出現） ──────────
-const SCORE = /\d\s*\/\s*10|Metacritic|Pitchfork\s*\d|\d\.\d\s*分|\d\s*顆星|滿分|五星|四星/;
+// 「四星／五星」後面接「期」時是上榜週數不是星等（華語批常見：「商台四星期的叱咤冠軍歌」），
+// 加負向前瞻排除。「滿分」保留為人工複核項——選秀比賽的評判給滿分屬生平事實，
+// 規格禁的是樂評對唱片的評分，機器分不出來。
+const SCORE = /\d\s*\/\s*10|Metacritic|Pitchfork\s*\d|\d\.\d\s*分|\d\s*顆星|滿分|[四五]星(?!期)/;
 flag('分數或星等進入 hook 或 note', all.filter(r => SCORE.test(r.hook + r.note)),
   r => `[${r.g}] ${r.k}  →  ${(r.hook + r.note).match(SCORE)[0]}`);
 
