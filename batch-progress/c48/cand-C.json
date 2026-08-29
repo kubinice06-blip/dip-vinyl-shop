@@ -36,7 +36,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1984,
+    "recorded": 1984,
+    "firstRelease": 1984,
+    "note": "1984 年錄於牛津 Merton College Chapel，Gimell CDGIM 345；Hyperion 記發行為 1984 年 9 月，Discogs 記 1985 年由 Gimell Records Ltd 發行，兩者皆指向 1984 年錄音。MB 的 1993 是後續代理再版。本批依卡池古典慣例採錄音年。"
+   }
   },
   {
    "artist": "The Tallis Scholars",
@@ -73,7 +79,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1990,
+    "recorded": 1990,
+    "firstRelease": 1990,
+    "note": "1990 年錄於倫敦 St John-at-Hackney 教堂，Gimell CDGIM 022，1990 年 9 月發行；錄音年與首發年同為 1990。本批依卡池古典慣例採錄音年。"
+   }
   },
   {
    "artist": "The Tallis Scholars",
@@ -110,7 +122,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1989,
+    "recorded": null,
+    "firstRelease": 1989,
+    "note": "Gimell CDGIM 019，1989 年 11 月首發，錄於 Norfolk 的 Salle、St Peter and St Paul 教堂。Gimell 與 Hyperion 均未公布錄音日期，recorded 查不到故填 null；首發年 1989 與卡單一致，本批依卡池古典慣例採錄音年時兩者同值。"
+   }
   },
   {
    "artist": "Philippe Herreweghe",
@@ -150,7 +168,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1993,
+    "recorded": 1993,
+    "firstRelease": 1994,
+    "note": "1993 年 6 月錄音，1994 年由 Harmonia Mundi 首發（HMC 901483）。MB 的 1994 是發行年。本批依卡池古典慣例採錄音年 1993。"
+   }
   },
   {
    "artist": "The Hilliard Ensemble",
@@ -190,7 +214,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1984,
+    "recorded": 1984,
+    "firstRelease": 1985,
+    "note": "1984 年 9 月 17–19 日錄於倫敦 Temple Church，EMI 於 1985 年首發黑膠，1987 年發行 CD（EMI CDC 7 49213 2）。MB 的 1987 是 CD 年份。本批依卡池古典慣例採錄音年 1984。"
+   }
   },
   {
    "artist": "Diabolus in Musica",
@@ -202,8 +232,8 @@
    "releaseType": "Album",
    "secondaryTypes": [],
    "firstRelease": "2004",
-   "suggestedYear": 2004,
-   "yearNote": "MB first-release-date 2004，已直接查 RG 覆核（primary-type Album、secondary-types 空）。錄音年與發行年同為 2004 年前後，現代錄音兩者差距小，採 2004；若本機查得確切 session 年份不同再修正。",
+   "suggestedYear": 2003,
+   "yearNote": "MB first-release-date 2004，已直接查 RG 覆核（primary-type Album、secondary-types 空）。錄音年與發行年同為 2004 年前後，現代錄音兩者差距小，採 2004；若本機查得確切 session 年份不同再修正。｜【研究層覆核】原策展值 2004，改用 2003（錄音 2003／首發 2004）：2003 年 9 月錄於法國 Collégiale de Champeaux，Alpha ALPHA 051 於 2004 年 5 月 10 日發行。卡單原值 2004 是首發年。本批依卡池古典慣例採錄音年，故 year 改為 2003。",
    "versionNote": "照 README「主線已裁定的替換」第 2 列採用（稽核原本就允許 Binchois Consort／Diabolus in Musica 二擇一）。MB 無 Binchois Consort 的 Missa Se la face ay pale。同曲其他候選逐一排除：8700d054（1996，Early Music Consort of London／David Munrow，不同團）、4ec4487e（1994，Pro Arte Singers／Thomas Binkley）、4a191184（2006，Tölzer Knabenchor／Collegium Aureum，童聲版）、10b7274e（1936，Pro Musica Antiqua de Bruxelles，**primary-type 是 Single**，依 §1 不收）。掛名 Antoine Guerber 指揮的 Diabolus in Musica 是法國本地團唱勃艮第樂派，與作品出身相符。",
    "curatorWhy": "《Se la face ay pale》彌撒是定旋律彌撒（cantus firmus mass）的教科書起點——Dufay 把自己的世俗香頌拉長成彌撒骨幹，這個手法之後統治了整個十五世紀。池內勃艮第樂派掛零，這是把「文藝復興如何開始」補進卡池的那一張。",
    "curatorRisk": "Diabolus in Musica 是法國專門古樂團，Last.fm 掛名數字極低（本機查 listeners 時預期接近 0，不可當 pearl 的 0 判定，依 §0.7 古典 pearl 不適用 listeners 門檻）。2004 年錄音在池內古典區屬相對新的年份，年代分布上是加分。",
@@ -230,7 +260,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 2003,
+    "recorded": 2003,
+    "firstRelease": 2004,
+    "note": "2003 年 9 月錄於法國 Collégiale de Champeaux，Alpha ALPHA 051 於 2004 年 5 月 10 日發行。卡單原值 2004 是首發年。本批依卡池古典慣例採錄音年，故 year 改為 2003。"
+   }
   },
   {
    "artist": "Emma Kirkby & Anthony Rooley",
@@ -242,8 +278,8 @@
    "releaseType": "Album",
    "secondaryTypes": [],
    "firstRelease": "1989",
-   "suggestedYear": 1989,
-   "yearNote": "MB first-release-date 1989，release 7622157a 為 Virgin Classics VC 7 90768-2（barcode 075679076823，單張 CD 20 軌）。錄音年應為 1988–89，**待本機補確認**；稽核假設的「1981／L'Oiseau-Lyre」與此不符（見 versionNote）。",
+   "suggestedYear": 1988,
+   "yearNote": "MB first-release-date 1989，release 7622157a 為 Virgin Classics VC 7 90768-2（barcode 075679076823，單張 CD 20 軌）。錄音年應為 1988–89，**待本機補確認**；稽核假設的「1981／L'Oiseau-Lyre」與此不符（見 versionNote）。｜【研究層覆核】原策展值 1989，改用 1988（錄音 1988／首發 1989）：1988 年 9 月錄於 Somerset 的 Forde Abbey，1989 年由 Virgin Classics 首發（VC 7 90768-2）。卡單原值 1989 是首發年。本批依卡池古典慣例採錄音年，故 year 改為 1988。",
    "versionNote": "**推翻稽核的版本假設，並繞開 Compilation 例外。** 稽核指定 Kirkby & Rooley 的 Dowland「1981 L'Oiseau-Lyre」，MB 查無此條目。自動挑中的 03a05519「Lute Songs」(2004-08-16) **secondaryTypes 含 Compilation**，實體是 Virgin Veritas 7243 5 62410 2 2 的雙 CD 再包裝（Dowland ＋ Robert Jones，20+17 軌），依 §5.6 得補舉證才能收。改釘其原始單張專輯 ebff8671《The English Orpheus》（Virgin Classics 1989，Dowland 單一作曲家，Kirkby 人聲＋Rooley 魯特琴二重奏編制），primary-type Album、secondaryTypes 空，不需 §5.6 例外。另一個可用選項是 c49e8ac7《First Booke of Songes》（release 15f05044 = L'Oiseau-Lyre 421 653-2，1989 CD，21 軌）——那才是 L'Oiseau-Lyre 血統，但 MB 掛名是 The Consort of Musicke feat. Anthony Rooley，**沒有 Kirkby**，與卡片藝人欄不合，故不採；若主線要保留「L'Oiseau-Lyre」的策展意圖，可改用它並把 artist 改成 The Consort of Musicke。",
    "curatorWhy": "Dowland 的魯特琴歌是英國文藝復興唯一輸出到全歐的曲種，Kirkby 的無揉音直聲與 Rooley 的魯特琴是 1980 年代古樂運動最具辨識度的聲音組合，這張全 Dowland 的二重奏獨唱會是把「憂鬱」寫成音樂體裁的入口。",
    "curatorRisk": "池內已有 Paul O'Dette《Dowland: Complete Lute Works》(1997)——那是純器樂全集，本張是歌曲，作品層不衝突，但兩張同作曲家要在卡名上讓玩家分得出來（一為 Lute Works、一為 The English Orpheus）。另 Emma Kirkby 池內已有《Arias for Mrs Arne》(1993)。卡名改動較大（原「Dowland: Lute Songs」→「Dowland: The English Orpheus」），主線評分表需照此對帳。",
@@ -267,7 +303,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1988,
+    "recorded": 1988,
+    "firstRelease": 1989,
+    "note": "1988 年 9 月錄於 Somerset 的 Forde Abbey，1989 年由 Virgin Classics 首發（VC 7 90768-2）。卡單原值 1989 是首發年。本批依卡池古典慣例採錄音年，故 year 改為 1988。"
+   }
   },
   {
    "artist": "Ensemble Organum",
@@ -307,7 +349,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1986,
+    "recorded": null,
+    "firstRelease": 1986,
+    "note": "harmonia mundi France HMC 901218、p1986（Stanford 圖書館目錄）。錄音年多處摘要作 1985 年 8 月但無法以完整書目或官方頁面確認，故不採；本批雖依卡池古典慣例採錄音年，此張因錄音年未能查證而退回首發年 1986，與 README 裁定一致。"
+   }
   },
   {
    "artist": "William Christie",
@@ -346,7 +394,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1999,
+    "recorded": 1999,
+    "firstRelease": 1999,
+    "note": "1999 年 6 月 10／13／16／19／20 日巴黎現場錄音，Erato 8573-80233-2 於同年發行（℗ & © 1999）。錄音年與首發年一致，MusicBrainz 的 2000-01-01 為誤填。"
+   }
   },
   {
    "artist": "John Eliot Gardiner",
@@ -383,7 +437,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1984,
+    "recorded": 1984,
+    "firstRelease": 1985,
+    "note": "1984 年 6 月倫敦錄音（與科隆 WDR 合作、為 1984 年 Göttingen 韓德爾音樂節而作），Philips Digital Classics 412 612-1 三張黑膠於 1985 年首發。本批依卡池古典慣例採錄音年 1984。"
+   }
   },
   {
    "artist": "John Eliot Gardiner",
@@ -420,7 +480,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1981,
+    "recorded": 1981,
+    "firstRelease": 1982,
+    "note": "1981 年 6 月錄於 Göttingen Stadthalle；首發為 1982 年 Archiv Produktion 三張黑膠 2742 001（℗ 1982），CD 版 419 221-2 為 1987 年。本批依卡池古典慣例採錄音年 1981。稽核原寫的 Erato／1982 兩項皆誤。"
+   }
   },
   {
    "artist": "John Eliot Gardiner",
@@ -457,7 +523,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1991,
+    "recorded": 1991,
+    "firstRelease": 1993,
+    "note": "1991 年 5 月錄於倫敦 Henry Wood Hall；Philips 434 093-2 於 1993 年首發（℗ & © 1993 Philips Classics）。本批依卡池古典慣例採錄音年 1991，卡名括註的 (1991) 亦為錄音年。"
+   }
   },
   {
    "artist": "Musica Antiqua Köln",
@@ -494,7 +566,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1979,
+    "recorded": 1979,
+    "firstRelease": 1979,
+    "note": "1979 年 2 月 8–10 日錄於慕尼黑 Herkulessaal der Münchner Residenz，同年由 Archiv Produktion 2533 422 在西德發行黑膠。錄音年與首發年同為 1979。"
+   }
   },
   {
    "artist": "La Venexiana",
@@ -506,8 +584,8 @@
    "releaseType": "Album",
    "secondaryTypes": [],
    "firstRelease": "2008",
-   "suggestedYear": 2008,
-   "yearNote": "MB first-release-date 2008。稽核原寫 2010（Alessandrini／Naïve），改釘 La Venexiana 後年份一併改為 2008。現代錄音發行年與錄音年接近，**確切 session 年份待本機覆核**。",
+   "suggestedYear": 2005,
+   "yearNote": "MB first-release-date 2008。稽核原寫 2010（Alessandrini／Naïve），改釘 La Venexiana 後年份一併改為 2008。現代錄音發行年與錄音年接近，**確切 session 年份待本機覆核**。｜【研究層覆核】原策展值 2008，改用 2005（錄音 2005／首發 2008）：2005 年 3 月在西班牙 Cuenca 的 Iglesia de San Miguel、Semana de Música Religiosa 音樂節現場錄音；Glossa GCD 920914 於 2008 年首發（2019 年再以 GCD 920943 重發）。本批依卡池古典慣例採錄音年 2005，與卡單原填的 2008 差三年，請主線確認。",
    "versionNote": "照 README「主線已裁定的替換」第 3 列採用。MB 查無 Alessandrini／Concerto Italiano 的 Selva morale。同曲其他候選逐一排除：2fa31bef（1995）與 e3a5d83c（1997-02-22）皆為 Michel Corboz／洛桑，屬同一指揮的兩個 RG；2dd568ea（1984-11-01，Taverner Consort／Andrew Parrott——**注意池內已有 Andrew Parrott《Monteverdi: Vespers》1984，同指揮同作曲家同年份，撞卡風險高**）；aa2eb738（2001-09-10，Cantus Cölln／Junghänel）。La Venexiana／Claudio Cavina 是義大利本地團，與作品出身相符。",
    "curatorWhy": "《道德與精神之林》是蒙台威爾第晚年在聖馬可教堂的宗教音樂總結，體量僅次於 1610 晚禱卻長期被冷落；La Venexiana 以義大利語法與牧歌式的字句處理來唱它，是把這部作品當作「戲劇」而非「儀式」的代表演出。",
    "curatorRisk": "池內 Monteverdi 已有五張（Harnoncourt 的 Orfeo 1969 與 Poppea 1974、Gardiner 晚禱 1990、Alessandrini 牧歌第八卷 2006、Parrott Vespers 1984），本張是第六張，**同作曲家密度是本組最高**，主線宜評估是否保留。artist 由 Rinaldo Alessandrini 改為 La Venexiana，評分表請照新名對帳。",
@@ -534,7 +612,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 2005,
+    "recorded": 2005,
+    "firstRelease": 2008,
+    "note": "2005 年 3 月在西班牙 Cuenca 的 Iglesia de San Miguel、Semana de Música Religiosa 音樂節現場錄音；Glossa GCD 920914 於 2008 年首發（2019 年再以 GCD 920943 重發）。本批依卡池古典慣例採錄音年 2005，與卡單原填的 2008 差三年，請主線確認。"
+   }
   },
   {
    "artist": "Zubin Mehta",
@@ -571,7 +655,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1969,
+    "recorded": 1969,
+    "firstRelease": 1970,
+    "note": "1969 年 8 月錄於倫敦 Walthamstow Town Hall，RCA Red Seal 於 1970 年以 LSC-6194 首發。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Herbert von Karajan",
@@ -608,7 +698,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1956,
+    "recorded": 1956,
+    "firstRelease": 1957,
+    "note": "1956 年 6 月錄於倫敦 Kingsway Hall，原盤 copyright 1957；MB first-release-date 1988 是 CD 再版年，不採。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Maria Callas",
@@ -645,7 +741,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1956,
+    "recorded": 1956,
+    "firstRelease": 1957,
+    "note": "1956 年錄於米蘭史卡拉（EMI 錄音室製作），LP 於 1957 年首發。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Claudio Abbado",
@@ -682,7 +784,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1971,
+    "recorded": 1971,
+    "firstRelease": 1972,
+    "note": "1971 年夏天錄於倫敦（DG，London Symphony Orchestra），LP 於 1972 年首發。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Maria Callas",
@@ -719,7 +827,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1957,
+    "recorded": 1957,
+    "firstRelease": 1957,
+    "note": "1957 年錄於米蘭（EMI 錄音室製作），同年首發，錄音年與首發年一致。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Herbert von Karajan",
@@ -759,7 +873,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1965,
+    "recorded": 1965,
+    "firstRelease": 1966,
+    "note": "1965 年錄於米蘭史卡拉，DG 於 1966 年以 139 205/7 SLPM 首發；MB first-release-date 1987 是 CD 再版年，不採。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Richard Bonynge",
@@ -771,8 +891,8 @@
    "releaseType": "Album",
    "secondaryTypes": [],
    "firstRelease": "1986",
-   "suggestedYear": 1972,
-   "yearNote": "Decca 於 1972-01 發行（Decca／London 417 363-2）。錄音 session 一般記為 1971 年日內瓦，但雲端未取得可引用的 session 資料，**錄音年待本機補**；在補齊前依稽核與 Decca 官方發行年採 1972。",
+   "suggestedYear": 1971,
+   "yearNote": "Decca 於 1972-01 發行（Decca／London 417 363-2）。錄音 session 一般記為 1971 年日內瓦，但雲端未取得可引用的 session 資料，**錄音年待本機補**；在補齊前依稽核與 Decca 官方發行年採 1972。｜【研究層覆核】原策展值 1972，改用 1971（錄音 1971／首發 1972）：Wikipedia 的 Tales of Hoffmann discography 把本錄音列於 1971 年，Decca 於 1972 年首發（後續 CD 編號 417 363-2）。本批依卡池古典慣例採錄音年",
    "versionNote": "**這張是本組最需要人工覆核的一筆，請本機優先看。** 稽核提醒的「Highlights 冒充全曲」在 MB 這裡是**反過來的資料錯誤**：整個 RG de12a1af 的**標題**被填成 “Les Contes D'Hoffmann - Highlights”，但它底下只有兩個 release，其中 **d9d68616 是完整全曲**——London Classics 417 363-2、barcode 0028941736321、**2 CD 共 19+16 軌**、掛名 Sutherland／Domingo／Bacquier／Orchestre de la Suisse Romande／Bonynge；另一個 cdd6ac72（1999-05-10）才是 “Les Contes d’Hoffmann (Highlights)”。我以 release 層查詢（artist:\"Bonynge\" AND release:\"Contes d'Hoffmann\"）確認 MB 上 Bonynge 名下**只有這兩個 release、且同屬這一個 RG**，沒有另一個乾淨的全曲 RG 可釘（另查 releasegroup:\"Contes d'Hoffmann\" 全表 15 筆，其餘皆為 Tate／Abravanel／Sills／Shicoff／Cluytens／小澤征爾等他人版本）。因此釘定 RG 正確、mbTitle 誤導。**本機請務必：(1) 封面解析確認抓到的是 2CD 全曲版而非 Highlights；(2) 考慮在 MB 上把 Highlights release 拆到獨立 RG 並修正 RG 標題。**",
    "curatorWhy": "Sutherland 一人分飾 Olympia／Giulietta／Antonia／Stella 四角是這套錄音的賣點，也是 Decca 在 Bonynge 主導下把法語歌劇做成「聲樂展示櫃」的代表；《霍夫曼故事》池內掛零，Offenbach 也掛零。",
    "curatorRisk": "MB 的 RG 標題含 Highlights，任何以標題字串做關鍵字過濾的 QA 腳本都會誤報這張，交接時要特別註明。另 Sutherland 版採 Choudens 傳統版本而非後來的 Oeser／Kaye 校訂版，版本學上非首選，簡介不宜寫成「權威版本」。",
@@ -796,7 +916,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1971,
+    "recorded": 1971,
+    "firstRelease": 1972,
+    "note": "Wikipedia 的 Tales of Hoffmann discography 把本錄音列於 1971 年，Decca 於 1972 年首發（後續 CD 編號 417 363-2）。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Georges Prêtre",
@@ -836,7 +962,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1969,
+    "recorded": "1968–1969",
+    "firstRelease": 1969,
+    "note": "1968 年 11 月與 1969 年 6 月兩段 session 錄於 Salle Wagram，1969 年 EMI 三張黑膠盒裝首發。錄音橫跨兩年，依規則取完成年 1969；本批依卡池古典慣例採錄音年，與首發年恰好同為 1969。MB 的 1991-11-08 是 CD 再版年。"
+   }
   },
   {
    "artist": "Rafael Kubelík",
@@ -876,7 +1008,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1967,
+    "recorded": 1967,
+    "firstRelease": null,
+    "note": "1967 年 10 月 1–8 日錄於慕尼黑 Herkulessaal。首發年未能確認：DG 製作後未發行，1990 年代才由 Calig／Myto／Arts 流出，卡單記 Myto 4CD 為 1992-04，但 Calig 版是否更早無可靠來源。本批依卡池古典慣例採錄音年 1967。"
+   }
   },
   {
    "artist": "Otto Klemperer",
@@ -913,7 +1051,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1968,
+    "recorded": 1968,
+    "firstRelease": null,
+    "note": "1968 年 2 月 19 日至 3 月 14 日錄於倫敦 Abbey Road Studio One。EMI 原始 LP 首發年未查得可靠來源；MB 的 1998-06-24 是 CD 再版年。本批依卡池古典慣例採錄音年 1968。"
+   }
   },
   {
    "artist": "Herbert von Karajan",
@@ -950,7 +1094,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1970,
+    "recorded": 1970,
+    "firstRelease": 1971,
+    "note": "1970 年 11 月錄於維也納 Sofiensaal，1971 年 Decca SET 514-7 首發。本批依卡池古典慣例採錄音年 1970；MB 的 1988 是 CD 再版年。"
+   }
   },
   {
    "artist": "Roger Désormière",
@@ -990,7 +1140,13 @@
     "rarity": "legendary",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "legendary"
+   "rarity": "legendary",
+   "yearVerified": {
+    "year": 1941,
+    "recorded": 1941,
+    "firstRelease": 1942,
+    "note": "1941 年 5 月／10 月／11 月錄於巴黎 Salle du Conservatoire，1942 年由 Pathé-Marconi 以二十張 78 轉出版。本批依卡池古典慣例採錄音年 1941；MB 的 2003 是 CD 復刻年。"
+   }
   },
   {
    "artist": "Herbert von Karajan",
@@ -1027,7 +1183,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1954,
+    "recorded": 1954,
+    "firstRelease": 1955,
+    "note": "1954 年 6 月 30 日與 7 月 1–7 日錄於倫敦 Kingsway Hall；首發 1955（推定，依據《The Gramophone》1955 年 10 月號的評論，未取得原始 LP 發行月份的直接來源）。本批依卡池古典慣例採錄音年 1954；MB 的 1988 是 CD 再版年。"
+   }
   },
   {
    "artist": "John Eliot Gardiner",
@@ -1066,7 +1228,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1990,
+    "recorded": 1990,
+    "firstRelease": 1991,
+    "note": "1990 年現場錄於倫敦 Queen Elizabeth Hall（策展層記為 6 月，本層僅證實到年），1991 年 4 月 2 日由 Archiv Produktion 發行（431 674-2）。本批依卡池古典慣例採錄音年 1990。"
+   }
   },
   {
    "artist": "André Previn",
@@ -1103,7 +1271,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1974,
+    "recorded": 1974,
+    "firstRelease": 1974,
+    "note": "1974 年 4–6 月錄於 Abbey Road 第一錄音室，同年 11 月 EMI 英國首發三張黑膠 SLS 5001；錄音年與首發年一致。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Herbert von Karajan",
@@ -1140,7 +1314,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1961,
+    "recorded": 1961,
+    "firstRelease": 1962,
+    "note": "1961 年 9 月錄於維也納 Sofiensaal，1962 年 Decca 首發 SXL 6002；MB 的 1987 是 CD 再版年。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "Antal Doráti",
@@ -1180,7 +1360,13 @@
     "rarity": "epic",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "epic"
+   "rarity": "epic",
+   "yearVerified": {
+    "year": 1959,
+    "recorded": 1959,
+    "firstRelease": 1960,
+    "note": "1959 年 6 月錄於倫敦近郊 Watford Town Hall，1960 年 Mercury 首發 SR90226 立體聲黑膠。本批依卡池古典慣例採錄音年"
+   }
   },
   {
    "artist": "André Previn",
@@ -1217,7 +1403,13 @@
     "rarity": "uncommon",
     "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
    },
-   "rarity": "uncommon"
+   "rarity": "uncommon",
+   "yearVerified": {
+    "year": 1983,
+    "recorded": 1983,
+    "firstRelease": 1983,
+    "note": "1983 年 4 月錄於倫敦 Abbey Road 第一錄音室，同年 EMI 首發兩張黑膠對開套裝；MB 的 1992-07-07 是 EMI Classics CD 再版年。本批依卡池古典慣例採錄音年"
+   }
   }
  ],
  "skipped": [
