@@ -20,14 +20,14 @@
    "curatorWhy": "現池的台灣原住民線集中在桑布伊、阿爆、郭英男、以莉·高露這幾條，缺 2000 年代中期「角頭音樂都會原民民謠」這一格。昊恩家家把卑南族與阿美族的吟唱放進藍調／爵士底的兩人和聲編制，是那個世代少數把原民語音樂做成流行語彙又拿下全國性大獎的作品，補位精準且不與現有卡重疊。",
    "curatorRisk": "團名「昊恩家家」在中文檢索裡極易被斷成「昊恩」＋「家家」兩個藝人，而家家後來的主流個人事業能見度遠高於這張，串流平台與封面 API 很可能把查詢導向家家個人專輯。曲風標籤與封面查詢務必連「角頭」「TCM039」「2006」一起鎖。另本作以華語與族語混唱，曲風歸類介於 folk／pop／world 之間，需人工定調。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "角頭音樂 2006 年台灣獨立盤，全國性大獎肯定但國際流通幾近於零；英文語系資料庫與串流的累積聆聽極低，屬典型的「得獎但被世界遺忘」的流亡型作品。obscurity 與 Last.fm listeners 需本機以串流拼法實查後才能定案。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到並逐項比對過名單：本作確實拿下第18屆金曲獎最佳演唱組合獎，但那是**演出者獎而非專輯獎**；同屆最佳國語專輯入圍六張（MC HotDog《Wake Up》、張懸《My Life Will…》、蘇打綠《小宇宙》、彭靖惠、蔡依林等）**沒有這張**。也查無任何把本作論述為台灣原住民音樂史核心作品的跨來源評述。pearl 一路同樣不成立：作品目前仍在 KKBOX、LINE MUSIC、網易雲等主流平台正常流通，家家後續的主流能見度也使聆聽數不太可能落在 300 以下，obscurity 判不到 5。依 §3「預設是一般卡」作一般卡。",
     "evidenceUrls": [
      "https://zh.wikipedia.org/zh-tw/%E7%AC%AC18%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
      "https://zh.wikipedia.org/zh-tw/%E7%B4%80%E5%AE%B6%E7%9B%88"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -51,7 +51,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "pearl",
-    "reason": "大大樹小廠牌絕版盤，只有台灣一地發行過實體，英文資料庫與國際串流幾乎沒有紀錄；部落自錄的阿美族原音文獻，流通量極低而文獻價值高，正是流亡卡要收的形態。obscurity 與 listeners 門檻需本機實查。",
+    "reason": "走 pearl 而非 hall。hall 明確不成立：第15屆金曲獎最佳原住民語演唱人獎本作只是**入圍**，得獎者是撒卡勒《台灣魯凱族百年前歌謠》，也查無把本作列為族群音樂史核心作品的跨來源論述。pearl 則是形態相符：大大樹音樂圖像 2003 年台灣獨立盤，只在台灣一地發行過實體且早已絕版，英文語系資料庫與國際串流幾無條目，屬部落自錄的阿美族原音文獻。obscurity=5 與 Last.fm listeners<300 這兩個 pearl 硬門檻只能本機實查（listeners 依規定為本機工項），故標 pending-local，不因查不到而降級。",
     "evidenceUrls": [
      "https://e-info.org.tw/node/4109",
      "https://zh.wikipedia.org/zh-tw/%E7%AC%AC15%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
@@ -80,7 +80,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "pearl",
-    "reason": "1997 年台灣小規模發行、旋即絕版且從未正式全球流通的客語盤，正版難尋到作者本人須公開呼籲勿買盜版的程度；英文語系資料庫幾無條目，國際聆聽紀錄極低而歷史地位明確，符合流亡卡「稀有到近乎失傳」的判準。實際 obscurity 與 listeners 需本機查證。",
+    "reason": "走 pearl 而非 hall。hall 不成立：查無本作的金曲獎得獎紀錄，也查無跨來源把它論述為客語音樂史核心作品的樂評共識（目前找到的是媒體專訪與音樂會報導層級）。pearl 形態相符且證據具體：1997 年發行後不久即絕版，市面流通多為二手或盜版，陳永淘本人 2022 年還須公開呼籲樂迷認明水路文化正版；正版難尋到這種程度正是流亡卡要收的稀有性。obscurity=5 與 listeners<300 兩個硬門檻須本機實查，標 pending-local。",
     "evidenceUrls": [
      "https://hakkanews.tw/2022/05/17/chen-yongtao/",
      "https://www.verse.com.tw/article/taiwanese-folk-music-chhun-Yun-tho"
@@ -109,11 +109,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "台灣第一部在國際影展（1987 南特）獲配樂獎的電影音樂，專輯本身再於 1994 年第 5 屆金曲獎連拿最佳演奏專輯與最佳錄音，並由三位創作者共獲最佳演奏專輯製作人；三十餘年來持續被視為台灣電影配樂與台灣民謠現代化的共同原點，跨來源長期共識明確，具備殿堂資格。",
+    "reason": "本批唯二在**專輯層級**拿到獎的一張，且不只一項：1994 年第 5 屆金曲獎以本輯獲**最佳演奏專輯**與**最佳錄音**兩項得獎，陳明章、許景淳、陳揚三人另共獲**最佳演奏專輯製作人**；配樂本身更早在 1987 年法國南特影展拿下最佳配樂，是台灣電影第一次在國際影展獲配樂獎。這些都是唱片／配樂本體的獎，不是電影的獎；三十餘年來它持續被當作台灣電影配樂與台灣民謠現代化的共同原點被引用，符合「足以列入該領域史上核心作品」。",
     "evidenceUrls": [
      "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
-     "https://vocus.cc/article/601a699afd89780001367bb8",
-     "https://www.cmcmusic.com.tw/shop/albums/%E9%99%B3%E6%98%8E%E7%AB%A0%E9%85%8D%E6%A8%82%E5%B0%88%E8%BC%AF/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%B8%B6/"
+     "https://vocus.cc/article/601a699afd89780001367bb8"
     ],
     "evidence": ""
    }
@@ -132,19 +131,20 @@
    "manualEvidenceUrls": [
     "https://www.discogs.com/release/22004797-SENS-%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
     "https://www.discogs.com/release/11984204-SENS-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
-    "https://filmaholic.tw/films/63fadcdbfd89780001e11173/"
+    "https://filmaholic.tw/films/63fadcdbfd89780001e11173/",
+    "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "《悲情城市》是華語電影史上第一部拿下三大影展最高獎的作品，它的配樂卻是由一支剛成軍五年的日本器樂二人組寫的——這種「台灣電影正典的聲音其實是外借的」錯位，本身就是卡池最值得收的故事。而且這張碟在台灣的後續影響遠超電影本身：霹靂布袋戲早期大量「借」用神思者的音樂，使這批旋律變成兩代台灣人共同的聽覺記憶。現池日系電子與世界音樂線都收得不少，卻沒有這個台日交界點。",
    "curatorRisk": "掛名分工是最大風險：Discogs 把立川直樹標為 Music By，中文來源則多寫「立川直樹與張弘毅任音樂監製、S.E.N.S. 作曲演奏」，兩說並存且都無一手佐證，本機審稿必須定案後才能寫進簡介。其次是廠牌與年份：1989 卡帶與 1992 CD 同編號尾碼、極易被讀成同一年。第三，S.E.N.S. 目錄龐大且多為新世紀音樂自選輯，封面與試聽 API 幾乎一定會抓錯碟。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "威尼斯金獅獎、且為華語電影史轉捩點之作的原聲帶，主題旋律三十餘年來在台灣持續被翻用與再流通（含霹靂布袋戲的長期沿用），在台日兩地的電影配樂敘事裡都是被反覆引用的座標。跨來源的長期樂評共識文獻多為中文與日文媒體，需本機補齊可引用的評論來源。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。**電影的地位與配樂專輯的地位要分開算**：《悲情城市》是威尼斯金獅獎、華語影史轉捩點之作，但配樂本身在獎項名單裡查無斬獲——1989 年第 26 屆金馬獎最佳原著音樂得主是張弘毅《三個女人的故事》，本片不在得獎之列。專輯層級也查不到跨來源的長期樂評論述（找得到的是影迷與布袋戲配樂考據文章）。文化影響（霹靂布袋戲長期沿用其旋律）確實存在，但那是使用史而非樂評共識。另掛名分工（立川直樹是作曲還是音樂統籌）本身尚未定案，更不宜在此基礎上判頂點。依 §3 預設作一般卡。",
     "evidenceUrls": [
-     "https://filmaholic.tw/films/63fadcdbfd89780001e11173/",
-     "https://www.discogs.com/release/22004797-SENS-%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack"
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://filmaholic.tw/films/63fadcdbfd89780001e11173/"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -164,19 +164,20 @@
    ],
    "manualEvidenceUrls": [
     "https://www.discogs.com/release/8652315-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
-    "https://www.discogs.com/master/420111-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F"
+    "https://www.discogs.com/master/420111-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "華語電影配樂在卡池裡目前只有譚盾《臥虎藏龍》一張純國際獎項路線的碟，缺的是「香港製造、影響過整代人聽覺」的那一格。《重慶森林》原聲碟正是這一格的入口：它把配樂與流行歌混編的作法定義了此後二十年華語電影原聲碟的形態，也是王家衛／澤東音樂宇宙的起點，後面《東邪西毒》《花樣年華》都能從這張接下去。",
    "curatorRisk": "版本雜訊是最高風險——2016 之後的環球復刻與各色彩膠在通路與封面 API 上的能見度遠高於 1995 原版，抓錯版的機率極高。其次是掛名：Apple 與 Spotify 都把它列為群星／Various Artists，與卡片掛陳勳奇不一致，去重與試聽比對會分裂。第三，日文盤《恋する惑星》是完全不同的標題字串，跨文字系統比對容易漏。第四，曲目含 The Cranberries 授權改編與外語原曲，試聽配對要避開淨化版與地區下架。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "王家衛電影音樂的原點碟，〈夢中人〉與片中配樂三十年來在華語流行文化裡持續被引用、翻唱與再發行（2016、2021、2022 三度紀念再版即為市場共識的證明）；《重慶森林》本身是公認的華語電影正典，其原聲碟被視為華語電影原聲形態的定義性作品。跨來源長期樂評共識的可引用文獻多為中文媒體，需本機補齊。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 14 屆香港電影金像獎（1995）最佳電影配樂，陳勳奇與 Roel A. García 以《重慶森林》**只入圍未得獎**；1994 年第 31 屆金馬獎最佳原創電影音樂得主是陳煥昌《紅玫瑰白玫瑰》，亦非本片。電影本身是華語影史正典，但那是電影的地位；就唱片而言，本碟是配樂段落＋王菲翻唱曲的電影選輯，2016 年後的多次紀念復刻反映的是電影 IP 的收藏熱度，不足以證明**專輯**在唱片史上的核心地位。依 §3 預設作一般卡。",
     "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-tw/%E9%87%8D%E5%BA%86%E6%A3%AE%E6%9E%97",
-     "https://www.discogs.com/master/420111-%E9%99%B3%E5%8B%9B%E5%A5%87-Roel-A-Garcia-%E9%87%8D%E6%85%B6%E6%A3%AE%E6%9E%97-%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%A4%A7%E7%A2%9F"
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -192,19 +193,20 @@
    "exceptionEvidenceUrls": [],
    "manualEvidenceUrls": [
     "https://www.discogs.com/release/7607970",
-    "https://en.wikipedia.org/wiki/Ashes_of_Time"
+    "https://en.wikipedia.org/wiki/Ashes_of_Time",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "與《重慶森林》同一組作曲者、同一年、同一位導演，卻是完全相反的聲音策略——《重慶森林》是流行歌拼貼，《東邪西毒》是十五段連續器樂的沙漠敘事，是華語商業片裡罕見的純配樂專輯形態。兩張並收才說得完陳勳奇這條線，也讓卡池的華語配樂格從「插曲合輯」延伸到「純配樂」。",
    "curatorRisk": "終極版原聲的市場能見度遠高於 1994 原版（2016 之後的彩膠與 CD 復刻全是終極版），封面與試聽 API 幾乎必然抓到終極版，這是本卡最可能出錯的地方。其次，1994 原版曲目全為英文曲名，中文檢索撈不到，比對必須用 CHD016 或英文曲名。第三，陳勳奇的「勛／勳」兩種寫法在資料庫裡分裂，grep 兩種都要做。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "王家衛《東邪西毒》是華語電影的公認正典（威尼斯影展最佳攝影），其原聲是華語商業片少見的完整純器樂配樂專輯，長年被視為陳勳奇與 García 的代表作，並在 2008 年由導演親自主導重製為終極版原聲——由創作者與片方持續再投資的事實，本身即是長期評價共識的旁證。可引用的樂評來源需本機補齊。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 14 屆香港電影金像獎（1995）最佳電影配樂，陳勳奇與 Roel A. García 以《東邪西毒》**入圍未得獎**；第 31 屆金馬獎最佳原創電影音樂得主為陳煥昌《紅玫瑰白玫瑰》。本碟作為十五段連續器樂的純配樂專輯，形態上比同組人的《重慶森林》更完整，但查無跨來源把它獨立論述為配樂史轉折點的樂評共識；2008 年終極版重製是導演對電影的再創作，不能倒推為唱片層級的評價共識。依 §3 預設作一般卡。",
     "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Ashes_of_Time",
-     "https://www.discogs.com/release/7607970"
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -224,19 +226,20 @@
    ],
    "manualEvidenceUrls": [
     "https://www.discogs.com/release/1038599-Various-In-The-Mood-For-Love-Original-Soundtrack-From-The-Motion-Picture",
-    "https://en.wikipedia.org/wiki/Shigeru_Umebayashi"
+    "https://en.wikipedia.org/wiki/Shigeru_Umebayashi",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "這是華語電影原聲碟裡最被國際樂迷收藏的一張，也是把 1930–60 年代上海與香港流行錄音重新帶回當代耳朵的關鍵載體。對卡池而言它同時補了「華語電影配樂」與「老錄音再策展」兩格，而且與同批的《重慶森林》《東邪西毒》構成完整的王家衛音樂三部曲。",
    "curatorRisk": "掛名是最大風險：種子清單、多數中文媒體與部分串流都把它記成梅林茂的專輯，若照抄會產生一張事實錯誤的卡；改掛 Various Artists 後，又會與現池其他 Various Artists 卡在字串鍵上擠在一起，去重與 KV 鍵值要特別檢查。其次版本分裂嚴重（見 versionNote），且 More／…And More 兩張加曲版極易被當成同一張收兩次。第三，曲目多為授權老錄音，固定試聽在部分地區可能整首下架。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "《花樣年華》是 21 世紀最被反覆列入影史百大的華語電影之一，其原聲碟在全球持續再版超過二十年（Virgin、環球香港、Mondo 三個體系各自復刻），〈Yumeji's Theme〉更因此碟成為跨語系的共同旋律記憶；作為電影音樂選輯，它的長期評價共識與流通廣度都達殿堂級。可直接引用的樂評條目需本機補齊。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 20 屆香港電影金像獎（2001）最佳原創電影音樂，Michael Galasso 以《花樣年華》**入圍未得獎**；2000 年第 37 屆金馬獎最佳原創電影音樂得主是譚盾《臥虎藏龍》（該張已在現池）。本碟是老錄音與新配樂的選輯，國際收藏熱度高（Virgin、環球香港、Mondo 三個體系各自復刻），但那反映的是電影 IP 與黑膠市場，不是唱片史層級的樂評共識；且其最著名的旋律〈Yumeji's Theme〉並非為本片所作。依 §3 預設作一般卡。",
     "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Shigeru_Umebayashi",
-     "https://www.discogs.com/release/1038599-Various-In-The-Mood-For-Love-Original-Soundtrack-From-The-Motion-Picture"
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -256,17 +259,18 @@
    ],
    "manualEvidenceUrls": [
     "https://www.discogs.com/release/7162107",
-    "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+    "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "〈男兒當自強〉把清代粵樂〈將軍令〉直接改寫成 1990 年代的民族主義國歌式旋律，是華語通俗音樂裡最成功的一次傳統素材再生，也是黃霑作為華語流行樂關鍵作者最被記得的作品。卡池的華語配樂格若只有文藝片（侯孝賢、王家衛）而沒有武俠與通俗片這一支，就少了半邊；這張是最直接的補位。",
    "curatorRisk": "三重不確定要在本機收斂：(1) 收錄範圍是單片還是系列選輯（見 versionNote）；(2) 掛名——實體記黃霑為 Composer 但 artist 欄是 Various，且編曲者兩說（鮑比達／戴樂民）；(3) 演唱版本——〈男兒當自強〉粵語版由林子祥唱、國語版由成龍唱，本碟收的是成龍版，簡介若寫成林子祥即為錯。另外「黃飛鴻」在中文檢索裡是超高頻詞（電視劇、遊戲、其他電影），自動比對雜訊極高，必須連 CH 46001 鎖。",
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "黃霑以《黃飛鴻》獲 1992 年第 11 屆香港電影金像獎最佳電影音樂；〈男兒當自強〉三十餘年來是華語世界辨識度最高的電影主題曲之一，並持續被體育賽事、翻唱與再改編使用，作為粵樂傳統進入現代流行的樣板具長期共識。可引用的專輯層級樂評來源需本機補齊。",
+    "reason": "本批唯二在**配樂本體**拿到獎的一張：黃霑以《黃飛鴻》獲 1992 年第 11 屆香港電影金像獎**最佳電影音樂得獎**（不是入圍）。其核心的〈男兒當自強〉把清代粵樂〈將軍令〉改寫成現代電影主題曲，是華語通俗音樂裡傳統素材再生最成功的案例，三十餘年來持續被翻唱、改編與在體育與典禮場合使用，作為粵樂進入現代流行的樣板具長期共識；本碟又是這批錄音唯一的原始實體載體。**但要注意**：得獎的是 1991 年電影的配樂，本卡鎖的是 1993 年滾石的（可能為系列）選輯發行，兩者的涵蓋範圍需本機確認；專輯層級的跨來源樂評文獻亦待本機補齊，故 evidence 標 pending-local，不因此降級。",
     "evidenceUrls": [
-     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)",
-     "https://www.discogs.com/release/7162107"
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
     ],
     "evidence": "pending-local"
    }
@@ -289,14 +293,14 @@
    "curatorWhy": "現池完全沒有 1970–80 年代粵語流行曲的黃金期，而顧嘉煇＋黃霑的 TVB 劇集主題曲正是那個時代最具代表性的產物；〈上海灘〉是其中傳播最廣、至今仍是華語世界共同記憶的一首。以葉麗儀這張原版專輯入池，等於一次補進粵語流行曲、TVB 劇集音樂、EMI 香港目錄三條線的起點。",
    "curatorRisk": "最大風險是掛名與盤名雙重錯位：中文資料多把〈上海灘〉歸在顧嘉煇名下，而 1980 原版封面標題其實是自我同名《葉麗儀》——§1 明列自我同名屬高風險，封面與試聽比對必須連 EMGS 6059 一起鎖。其次《上海灘續集．萬般情》《上海灘特輯》兩張同系列碟極易被當成同一張。第三，Discogs 對〈上海灘〉的作詞者記載有誤（把鄭國江與黃霑混記），簡介不可照抄該欄。第四，這是電視劇而非電影，放在「華語電影配樂」子域裡需店主確認是否接受。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "〈上海灘〉獲 1980 年度十大中文金曲，是粵語流行曲黃金期最具辨識度的作品之一，四十餘年來持續被翻唱、取樣與再發行（EMI／環球至 2015 年仍在復刻本碟），在香港流行音樂史敘事中屬不可略過的座標。專輯層級的跨來源樂評共識需本機補齊。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。得獎紀錄查到了，但落在**歌曲**而非專輯：〈上海灘〉入選 1980 年度十大中文金曲，那是單曲獎；專輯層級（1980 EMI EMGS 6059，原題自我同名《葉麗儀》）查無任何獎項或跨來源樂評論述，它在唱片史上的角色是「收錄了一首時代金曲的歌手專輯」，不是被獨立論述的核心作品。EMI／環球至 2015 年仍在復刻，反映的是那首歌的長銷力。依 §3 預設作一般卡。",
     "evidenceUrls": [
      "https://en.wikipedia.org/wiki/1980_RTHK_Top_10_Gold_Songs_Awards",
      "https://www.discogs.com/release/10991412-%E8%91%89%E9%BA%97%E5%84%80-%E4%B8%8A%E6%B5%B7%E7%81%98"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -313,19 +317,20 @@
    "manualEvidenceUrls": [
     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93",
     "https://en.wikipedia.org/wiki/Infernal_Affairs",
-    "https://www.discogs.com/release/10700308"
+    "https://www.discogs.com/release/10700308",
+    "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
    ],
    "curatorWhy": "《無間道》是香港電影在 2000 年代最重要的一次復甦，陳光榮用交響樂團＋電子節拍寫的那套主題，定義了此後港產警匪片的聲音語法，也讓香港電影配樂第一次以「作曲家品牌」被觀眾記住。卡池的華語配樂線目前止於 1990 年代王家衛，補這張才接得上 2000 年代。",
    "curatorRisk": "本卡是本批資料最薄的一張：2002 首版的廠牌、編號與確切盤名都還沒有可靠一手佐證，Discogs 最早只到 2006 年盒裝，封面與 UPC 幾乎確定要本機處理。掛名雖已確認為陳光榮，但主題曲的伍樂城與演唱的劉德華、梁朝偉在串流條目上常被列為主藝人，試聽與封面 API 極易錯配。三集系列同名碟與各種紀念盒裝的雜訊也很高，比對必須看曲目數與年份。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "《無間道》主題曲獲第 22 屆香港電影金像獎最佳原創電影歌曲、配樂獲同屆最佳原創電影音樂提名，該片被公認為 2000 年代香港電影的分水嶺，其配樂在 2006、2022 兩度以紀念盒裝重新發行、2023 年另出黑膠，二十年來持續被市場與影迷再確認。專輯層級的跨來源樂評共識需本機補齊。",
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 22 屆香港電影金像獎（2003）最佳原創電影音樂，陳光榮以《無間道》**入圍未得獎**；同屆得獎的最佳原創電影歌曲〈無間道〉是**伍樂城**作曲的主題曲，不是本碟主體的陳光榮配樂，不能拿來替本卡背書。電影是 2000 年代港片的分水嶺，但那是電影的地位；配樂專輯層級查無跨來源長期樂評共識，且 2002 首版的廠牌與盤名都還沒有一手佐證。依 §3 預設作一般卡。",
     "evidenceUrls": [
-     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93",
-     "https://en.wikipedia.org/wiki/Infernal_Affairs"
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   }
  ],
