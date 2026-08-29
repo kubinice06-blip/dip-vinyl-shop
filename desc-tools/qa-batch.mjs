@@ -71,8 +71,17 @@ if (stage === 'research') {
 
 if (stage === 'hooks') {
   // 先跑既有 hook 品管（字數/禁語/開頭雷同/箭頭等）
-  try { execSync(`node qa-check-hooks.mjs ${batch}`, { stdio: 'inherit' }); }
-  catch { flags++; }
+  // ⚠ qa-check-hooks.mjs 目前不在 repo 裡（本機有、從未提交，雲端工作階段拿不到）。
+  // 舊寫法把「檔案不存在」和「檢查不通過」都算成一個 flags，於是雲端每次跑 hooks 都必然
+  // 多一個假標記，真正的事實對照結果反而被淹掉。改成先確認檔案在不在：
+  // 不在就明講缺哪支、要改跑哪支，不計標記；在才跑，跑失敗才算標記。
+  if (fs.existsSync('qa-check-hooks.mjs')) {
+    try { execSync(`node qa-check-hooks.mjs ${batch}`, { stdio: 'inherit' }); }
+    catch { flags++; }
+  } else {
+    console.log('（略過 qa-check-hooks.mjs：本 repo 無此檔。字數／禁語／開頭雷同／分數星等');
+    console.log(`  請改跑 node chk-hook-crossgroup.mjs ${batch}，本階段只做事實對照與字元掃描。）`);
+  }
   for (const g of GROUPS) {
     const rp = `batches/research/${batch}-${g}.json`, hp = `batches/hooks/${batch}-hooks-${g}.json`;
     if (!fs.existsSync(hp)) { warn(g, '缺 hook 檔'); continue; }
