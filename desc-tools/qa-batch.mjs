@@ -31,10 +31,20 @@ const GARBAGE = /[Ѐ-ӿऀ-ॿ가-힯]/;
 // 專名本身就用非拉丁文字時合法（例：박효신、가리온《가리온2》）。
 // 從本批卡單的 artist|album 取出所有非拉丁片段當白名單，掃描前連同《》〈〉內的原始標題一併剝除，
 // 剩下的才是真正的行文污染（把 riff 寫成 리프、trip-hop 寫成 трип-hop 之類）。
-const ALLOW = [...new Set(
-  cards.flatMap(x => String(x.key).replace(/^desc2:/, '').split('|'))
-    .flatMap(s => s.match(/[Ѐ-ӿऀ-ॿ가-힯]+/g) || [])
-)].sort((a, b) => b.length - a.length);
+// 除了非拉丁片段，卡單的藝人名與專輯名**全字串**也一併豁免：
+// 規則本來就是「專輯／曲目原標題照官方原文保留」，那些字出現在檔案任何地方都合法，
+// 不只出現在《》裡面時才合法。
+// （2026-08-29 客語卡《頭擺个事情》踩到：「个」是客語的所有格助詞、屬原標題用字，
+//   卻被簡體表當成「個」的簡化字報錯；研究稿講到「个／的」兩種寫法時也會再中一次。
+//   同類誤報在客語線上會反覆出現，靠人工每次複核不划算。）
+// desc4:（CJK）與 desc2:（拉丁）兩種前綴都要剝，舊版只剝 desc2:，
+// 華語批的 key 因此整串進了白名單、反而讓比對失去意義。
+const ALLOW = [...new Set([
+  ...cards.flatMap(x => String(x.key).replace(/^desc[24]:/, '').split('|'))
+    .flatMap(s => s.match(/[Ѐ-ӿऀ-ॿ가-힯]+/g) || []),
+  ...cards.flatMap(x => String(x.key).replace(/^desc[24]:/, '').split('|'))
+    .filter(s => s.length > 1),
+])].sort((a, b) => b.length - a.length);
 const stripLegit = s => {
   let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '');
   for (const a of ALLOW) t = t.split(a).join('');
