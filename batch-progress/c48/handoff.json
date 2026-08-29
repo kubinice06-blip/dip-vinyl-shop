@@ -1,0 +1,60 @@
+{
+ "batch": "c48",
+ "cards": 97,
+ "skipped": 2,
+ "generatedAt": "2026-08-29",
+ "pendingLocal": {
+  "covers": "全部（CAA 逐張 HTTP 驗證與人工目視是本機工項）",
+  "previews": "全部（iTunes /lookup 雲端 egress 不穩，且版本需人工覆核）",
+  "listeners": "全部（Last.fm 為本機工項；本批一律留 null）",
+  "ratings": "無——古典依 §0.7 一律走 manual:classical-rubric 人工錨點制、不用 API，雲端已完成。",
+  "apexEvidence": [
+   "Martha Argerich|Liszt: Piano Sonata in B minor",
+   "The Hilliard Ensemble|Ockeghem: Requiem / Missa Mi-Mi",
+   "Diabolus in Musica|Dufay: Missa Se la face ay pale",
+   "Ensemble Organum|Chants de l'Église de Rome: Période byzantine",
+   "La Venexiana|Monteverdi: Selva morale e spirituale",
+   "Jascha Heifetz|Korngold: Violin Concerto"
+  ],
+  "manualIdentity": [
+   "Yan Liangkun 嚴良堃|黃自: 長恨歌"
+  ],
+  "compilationsNeedingReview": [
+   "Sviatoslav Richter|Schubert: Wanderer Fantasy (EMI 1963)",
+   "Kathleen Ferrier|Brahms: Alto Rhapsody (Krauss 1947)",
+   "Arthur Rubinstein|Chopin: Polonaises (1964)",
+   "Martha Argerich|Saint-Saëns: Le Carnaval des animaux",
+   "Grumiaux Trio|Mozart: Complete String Quintets",
+   "Arturo Benedetti Michelangeli|Beethoven / Galuppi / Scarlatti Recital",
+   "Jascha Heifetz|Korngold: Violin Concerto"
+  ]
+ },
+ "counts": {
+  "apexCandidates": 36,
+  "apexByTier": {
+   "hall": 29,
+   "pearl": 7
+  },
+  "pinnedMbid": 96,
+  "manualIdentity": 1
+ },
+ "skippedDetail": [
+  {
+   "artist": "The Tallis Scholars",
+   "album": "Palestrina: Missa Papae Marcelli",
+   "reason": "MB 沒有 Gimell 的 Palestrina 單獨發行 RG 收《Missa Papae Marcelli》，依 README 硬規則第 3 條放棄硬釘。查過的查詢式與結果：(1) release-group/?query=artist:\"Tallis Scholars\" AND releasegroup:Palestrina（10 筆全覽）；(2) 逐一調 release-group/{id}?inc=releases 覆核 61548997、b47fe5d5、1cbc5344。結論：Tallis Scholars 錄過兩次 Missa Papae Marcelli，兩次都與 Allegri《Miserere》同碟——1980 年 Gimell 首發（RG 6eff5497-8f42-3f81-b1cd-c8cca32ce523「Allegri: Miserere / Palestrina: Missa Papae Marcelli / Mundy: Vox Patris Caelestis」1980-10，另有重複 RG ba47bfbf）**就是池內既有卡『The Tallis Scholars｜Allegri: Miserere』(1980) 的同一張碟**，釘它即同碟收兩張；2007 年重錄（RG 61548997，release d619520e，Gimell，GB，2007-03-20）雖是不同錄音、不同 RG，但內容一樣是 Miserere ＋ Missa Papae Marcelli 的組合盤，與池內既有卡曲目高度重疊，同樣不宜。**建議主線的替代方案**：改收 Gimell 的 Palestrina 單獨盤 RG b47fe5d5-8489-49ab-9d49-9012f1a613be「Palestrina Masses」＝《Missa Assumpta est Maria / Missa Sicut lilium》（release ea312027 1989-02 GB、83593e42 2001-04 GB；primary-type Album、secondaryTypes 空），這張是 Palestrina 單一作曲家、與池內無曲目重疊，且經查證獲 **1991 年 Gramophone 早期音樂獎**，頂點資格也比原目標好證。若採用，卡名建議「Palestrina: Missa Assumpta est Maria」、年份 1989。此替代未經主線裁定，故未逕自放進 albums。",
+   "from": "cand-C.json"
+  },
+  {
+   "artist": "Gothic Voices",
+   "album": "Hildegard von Bingen: A Feather on the Breath of God",
+   "reason": "**與現池重複，依 §1 去重先行退回。** 池內 seed_cards.json 已存在完全相同的卡：[\"Gothic Voices\", \"A Feather on the Breath of God\", 3, 4, 2, [\"classical\"], 1982, \"Hildegard von Bingen\"]——artist 相同、專輯同一張（Hyperion，Christopher Page／Emma Kirkby）、年份同為 1982、作曲家欄也已填 Hildegard von Bingen。稽核把它列進軸線 2 必補清單應是漏查。MB 端資料一併記錄供對帳：RG 247d3e59-801b-373f-8adc-0951f9baed7f「A Feather on the Breath of God」，first-release-date 1985-04，掛名 Abbess Hildegard of Bingen, Gothic Voices, Christopher Page, Emma Kirkby——**若主線想補既有卡的 rgMbid，用這一個**（另一筆候選 b61c6fd1 掛名 Erin Jacobsen，是同名不同人的作品，不可用）。另注意池內另有 Sequentia《Hildegard von Bingen: Canticles of Ecstasy》(1994)，Hildegard 已有兩張，不缺。",
+   "from": "cand-C.json"
+  }
+ ],
+ "qa": {
+  "research": "pending",
+  "hooks": "pending",
+  "out": "pending"
+ }
+}
