@@ -12,6 +12,21 @@ const load = p => fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : nu
 const mbWork = load(path.join(DIR, 'mb-work.json')) || {};
 const mbArtist = load(path.join(DIR, 'mb-artist.json')) || {};
 
+// §3 的 pearl 需要「Last.fm 累積 listeners 有效數值並低於門檻 300」，且明訂「查無資料不能當成 0」。
+// listeners 是本機工項（REMOTE_RUNBOOK 分工表），所以 pearl 在雲端一律無法確立——
+// 不是判它不成立，而是判定所需的那個數字這裡拿不到，故統一標 pending-local 待本機補。
+// （§0.7 那條「pearl 改人工判定＋兩個證據網址」的特例只適用古典卡，c-49 不適用。）
+let pearlFixed = 0;
+function normalizeApex(ac, label) {
+  if (!ac || !ac.eligible) return ac;
+  if (ac.tier === 'pearl' && ac.evidence !== 'pending-local') {
+    pearlFixed++;
+    return { ...ac, evidence: 'pending-local',
+      reason: `${ac.reason || ''}｜【主線補註】pearl 門檻所需的 Last.fm listeners 為本機工項，雲端無法取得且「查無」不得當 0（§3），故標 pending-local 待本機補證。` };
+  }
+  return ac;
+}
+
 const GROUPS = { D: '時代曲', E: '台語', FG: '原民客語＋華語電影配樂', A: '粵語第二圈', I: '星馬第二圈' };
 let manual = 0, pinned = 0, total = 0;
 
@@ -36,7 +51,7 @@ for (const [g, label] of Object.entries(GROUPS)) {
       exceptionEvidenceUrls: a.exceptionEvidenceUrls || [],
       upc: a.upcHint || '',
       curatorWhy: a.curatorWhy || '', curatorRisk: a.curatorRisk || '',
-      apexCandidate: a.apexCandidate,
+      apexCandidate: normalizeApex(a.apexCandidate, `${a.artist}《${a.album}》`),
       // 三軸留空：/album-rating 會寫 rating4: KV，依 REMOTE_RUNBOOK「雲端不碰 KV」不在此執行
       ratings: null,
       ratingsNote: 'local：三軸走 worker /album-rating，該端點會寫入 rating4: KV 快取，依雲端規則不在雲端跑',
@@ -75,4 +90,4 @@ for (const [g, label] of Object.entries(GROUPS)) {
   fs.writeFileSync(path.join(DIR, `cand-${g}.json`), JSON.stringify(out, null, 1));
   console.log(`cand-${g}.json：${albums.length} 張（釘 MBID ${albums.filter(x => x.rgMbid).length}、人工身分 ${albums.filter(x => x.identitySource === 'manual').length}）`);
 }
-console.log(`\n合計 ${total} 張｜釘 MBID ${pinned}｜人工身分 ${manual}`);
+console.log(`\n合計 ${total} 張｜釘 MBID ${pinned}｜人工身分 ${manual}｜pearl 改標 pending-local ${pearlFixed}`);
