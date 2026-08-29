@@ -1,0 +1,72 @@
+[
+ {
+  "key": "desc2:Jascha Heifetz|Bruch: Scottish Fantasy",
+  "artist": "Jascha Heifetz",
+  "album": "Bruch: Scottish Fantasy",
+  "year": 1961,
+  "genre": "classical",
+  "composer": "Bruch",
+  "label": "",
+  "versionNote": "四個候選：461ce65b 與 5a122072 都掛 Compilation 且把《蘇格蘭幻想曲》塞進布拉姆斯／葛拉祖諾夫拼盤（後者甚至混入 Koussevitzky、Monteux 等別的指揮）；d6fa16e1（2015）曲目最接近原始 LP（幻想曲＋Vieuxtemps 5）但 **primary-type 為 None**，依 §1「只收 primary-type=Album」不可用。故取 a118884e——同一批 Sargent／New Symphony Orchestra of London 錄音的正規 Album RG，只多收 1962 年的布魯赫第一號協奏曲。",
+  "yearNote": "錄音年 1961：《蘇格蘭幻想曲》與 Vieuxtemps 第五號協奏曲錄於 1961 年 5 月（倫敦 Walthamstow，Decca 團隊／Kenneth Wilkinson 錄音，RCA 發行 LSC-2603）；同輯的布魯赫第一號協奏曲為 1962 年 5 月加錄。卡片年份用主標曲目的 1961。MB 首發 1987 是 CD 併輯年。",
+  "curatorWhy": "海飛茲晚期立體聲錄音的代表，Analogue Productions 以 RCA Living Stereo 系列重刻 180g 與 SACD，是發燒天碟正典；池內海飛茲四張都是德奧俄協奏曲，缺這條英國／浪漫小品線。",
+  "curatorRisk": "MB 這個 RG 比原始 LP 多一首協奏曲，卡名只寫《蘇格蘭幻想曲》，本機寫簡介要交代整輯；另 1961 與 1962 兩次錄音期混在同一張 CD，年份敘述要精確。",
+  "apex": "hall"
+ },
+ {
+  "key": "desc2:Sergiu Celibidache|Bruckner: Symphony no. 4 (Munich 1988)",
+  "artist": "Sergiu Celibidache",
+  "album": "Bruckner: Symphony no. 4 (Munich 1988)",
+  "year": 1988,
+  "genre": "classical",
+  "composer": "Bruckner",
+  "label": "",
+  "versionNote": "六個候選裡有四筆是別的交響曲（674ace11、edb0f124 為第八號，a8ab0a3f 為第五號，290c462f 為第九號），5d3457fa 更是布拉姆斯第四號——「Symphony no. 4」字串陷阱。只有 b6aee0ec 是布魯克納第四。切利比達克的慕尼黑錄音全部是現場，這點與主線警告的「現場冒充錄音室」不同：EMI Celibidache Edition 本質就是音樂會實況，稽核指定的也正是這一份，故不視為錯配，但已在 album 欄標明 Munich 1988。",
+  "yearNote": "錄音年 1988：1988-10-16 慕尼黑 Philharmonie am Gasteig 現場（1881 年版本），EMI 於 1998 年才在 Celibidache 逝世後的授權系列中發行（MB 首發 1998-10-05 即此）。卡片年份用錄音年 1988，並依 audit 風險提醒第 6 條在 album 欄括註場地與年份。",
+  "curatorWhy": "切利比達克的布魯克納以極慢速度重塑結構，是二十世紀後半最具辨識度的布魯克納詮釋；池內他只有第八號一張，第四號《浪漫》是最容易讓玩家對照速度差異的一首。",
+  "curatorRisk": "極端速度使演奏評價兩極，簡介要寫成詮釋取向而非優劣；另同曲池內已有 Haitink 1966 版，玩家端需靠括註區辨。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Luciano Pavarotti|Donizetti: L'elisir d'amore",
+  "artist": "Luciano Pavarotti",
+  "album": "Donizetti: L'elisir d'amore",
+  "year": 1970,
+  "genre": "classical",
+  "composer": "Donizetti",
+  "label": "",
+  "versionNote": "三個候選各是不同錄音：c253f2d0（1999）掛 Live，是 Pavarotti 與 Freni／Giovaninetti 的現場；ad908d8b（1990）是 Levine／大都會歌劇院與 Kathleen Battle 的 DG 版。稽核指定 Decca／Bonynge／Sutherland 1970 錄音室版，對應 ec72c2bc（掛名含 Sutherland、Bonynge、English Chamber Orchestra、Ambrosian Opera Chorus）。已確認非 Highlights：MB 這個 RG 是全劇，Decca 另有的《Highlights》盤不在候選內，本機補卡時亦不得誤取。",
+  "yearNote": "錄音年 1970：1970 年倫敦 Kingsway Hall 錄音室錄音（Decca，錄音師 Kenneth Wilkinson 團隊），LP 於 1971 年發行。MB 首發 1985 是 CD 再版年。依 audit 風險提醒第 6 條，歌劇全集卡年份用錄音年 1970。",
+  "curatorWhy": "池內帕華洛帝只有精選輯與三大男高音，沒有一部完整歌劇；這份 1970 年 Decca 錄音是他 Nemorino 的定本，也是 Kingsway Hall／Wilkinson 錄音工藝的代表盤，詮釋與發燒兩條線同時成立。",
+  "curatorRisk": "全劇雙碟長度，硬蕊軸的「單張超過兩小時 +1」修正要留意；另 Decca 同批有 Highlights 盤與 Sutherland 掛頭的版位，查重與封面解析都可能撞名。",
+  "apex": null
+ },
+ {
+  "key": "desc4:Yan Liangkun 嚴良堃|黃自: 長恨歌",
+  "artist": "Yan Liangkun 嚴良堃",
+  "album": "黃自: 長恨歌",
+  "year": 1999,
+  "genre": "classical",
+  "composer": "黃自",
+  "label": "",
+  "versionNote": "**走人工身分路線**：MB 全庫查無黃自本人與此曲的可用條目（見 mbAbsenceProof）。收的是十樂章補遺全曲版（黃自 1932 年完成第一、二、三、五、六、八、十樂章，其學生林聲翕 1972 年補作第四、七、九樂章），不是七樂章殘本。另一個流通版本是廣州太平洋影音的《中國合唱極品—清唱劇長恨歌》（中國交響樂團合唱團，同為嚴良堃指揮，2024 年在串流以「清唱劇 長恨歌」重新上架），與本卡不同團體、不同錄音，不可混用。**artist 由稽核的「黃自」改為指揮「Yan Liangkun 嚴良堃」**，理由是古典卡 artist 欄依 §0.6 放演奏者／指揮，且避免再增加作曲家卡形態。",
+  "yearNote": "**卡片年份用錄音年 1999，不是 1932 創作年**（audit 風險提醒第 2 條：作曲家卡形態的創作年會汙染年代統計）。釘定的錄音為 1999 年 10 月香港大會堂音樂廳實況：嚴良堃指揮香港小交響樂團、香港聖樂團與明儀合唱團，女高音任蓉、男中音程路禹；雨果唱片（Hugo Productions）發行，條碼 4892440722422。CD 發行年約 2001（編號經二手來源指為 HRP 7224-2，**編號與確切發行日待本機以實體或雨果官方目錄複核**）。",
+  "curatorWhy": "《長恨歌》是中國第一部清唱劇（1932），黃自是中國近代作曲教育的起點，池內黃自為零。嚴良堃是中國合唱曲目最具權威的指揮，這份 1999 年香港實況又是十樂章補遺全曲版，同時補作曲家、曲種與華人合唱三條線。",
+  "curatorRisk": "無 MBID 表示封面不可能走 CAA（checkManualIdentity 會擋 coverSourceHint=caa），封面與固定試聽都得本機另尋來源；雨果盤在台灣通路稀少，實體核對困難；另發行編號 HRP 7224-2 目前只有二手來源，需複核。錄音為現場實況，簡介不可寫成錄音室製作。",
+  "apex": "pearl"
+ },
+ {
+  "key": "desc4:Tan Dun 譚盾|Water Passion after St. Matthew",
+  "artist": "Tan Dun 譚盾",
+  "album": "Water Passion after St. Matthew",
+  "year": 2000,
+  "genre": "classical",
+  "composer": "譚盾",
+  "label": "",
+  "versionNote": "唯一候選即主線裁定的 f6dc3bd7，掛名 Tan Dun。**secondaryTypes 含 Live**：本作品本來就是斯圖加特國際巴哈學院為巴哈逝世 250 週年委託的四部受難曲之一，Sony 這份即首演製作的實況錄音，不存在「現場冒充錄音室版」問題（該曲沒有錄音室版）；但 Live 標記要照原樣帶進交付欄位。primary-type=Album，非 Compilation。",
+  "yearNote": "**錄音年 2000，不是 2002**：2000-09-07～08 錄於斯圖加特 Liederhalle Beethoven-Saal 現場，Sony Classical 於 2002 年發行（MB 首發 2002 即發行年）。稽核與主線備註寫的 2002 是發行年，依古典慣例卡片年份改用錄音年 2000。",
+  "curatorWhy": "巴哈逝世 250 週年「受難曲 2000」委託案的四部作品之一（與 Golijov《馬可受難曲》同批），用十七只水缽組成「水樂器管弦樂團」，是華人作曲家進入西方宗教曲種正典脈絡最具體的一次；池內譚盾只有《Ghost Opera》一張。",
+  "curatorRisk": "現場錄音含水聲與空間音效，音質評價會分歧；曲目屬當代前衛，硬蕊軸偏高，簡介不要寫成易入門。",
+  "apex": null
+ }
+]

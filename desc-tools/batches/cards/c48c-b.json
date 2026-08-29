@@ -1,0 +1,72 @@
+[
+ {
+  "key": "desc2:Fritz Reiner|Prokofiev: Alexander Nevsky",
+  "artist": "Fritz Reiner",
+  "album": "Prokofiev: Alexander Nevsky",
+  "year": 1959,
+  "genre": "classical",
+  "composer": "Prokofiev",
+  "label": "",
+  "versionNote": "三個候選：6265db26（1986）是把《涅夫斯基》與《基傑中尉》、《魯斯蘭與魯蜜拉》序曲併成的 CD，而池內已有「Fritz Reiner｜Prokofiev: Lieutenant Kijé / Stravinsky: Song of the Nightingale（1958）」，選它會與既有卡曲目重疊；ac53f97f（2000）掛 Compilation 且與 Kogan／Monteux 的哈察都量小提琴協奏曲拼盤。724f737c 是單曲目、掛名含 Rosalind Elias，對應 1959 錄音，取此。英文演唱版（非俄語），本機寫簡介時要交代。",
+  "yearNote": "錄音年 1959：1959-03-07 芝加哥 Orchestra Hall，Rosalind Elias 獨唱、Margaret Hillis 訓練的芝加哥交響合唱團（RCA 與 CSO／CSO Chorus 的首次合作），原盤 RCA Living Stereo LSC-2395（1960 發行）。MB 這個 RG 的 first-release-date 標 2016，是數位／再版建檔造成的錯誤年份，**絕不可拿來當卡片年份**。",
+  "curatorWhy": "RCA 與芝加哥交響合唱團的首次合作，也是 Living Stereo 大編制合唱錄音的示範盤；Analogue Productions 近年重刻 200g 與三聲道 SACD，屬發燒天碟正典。軸線 4 的合唱／電影音樂脈絡缺口靠這張補。",
+  "curatorRisk": "MB 首發年 2016 是錯的，若本機腳本直接吃 MB 年份會把這張排到 2010 年代；另英語演唱版在俄語派聽眾眼中是減分，簡介需說明。",
+  "apex": "hall"
+ },
+ {
+  "key": "desc2:Herbert von Karajan|Shostakovich: Symphony no. 10 (1966)",
+  "artist": "Herbert von Karajan",
+  "album": "Shostakovich: Symphony no. 10 (1966)",
+  "year": 1966,
+  "genre": "classical",
+  "composer": "Shostakovich",
+  "label": "",
+  "versionNote": "**這是主線警告的『同演奏者重錄』陷阱**：卡拉揚的蕭士塔高維契第十有 1966 類比與 1981 數位兩版，都是柏林愛樂／DG。候選 04510c22（首發 1982）在 MB 的 disambiguation 明寫「1981 recordings」，即數位重錄版，稽核要的不是它；b651ee15 是與貝五併的 Compilation。經 release 層覆核，8cbffcfd 唯一的正式 release 765b37eb 為 DG 429 716-2，對應 1966 年 Jesus-Christus-Kirche 錄音，故釘 8cbffcfd。",
+  "yearNote": "錄音年 1966：1966-11-28～30 柏林 Jesus-Christus-Kirche，錄音師 Günter Hermanns、製作 Hans Weber。MB 首發 1990-05-02 是 DG 429 716-2 這張 CD 的發行日，非錄音年。卡片年份用 1966，並在 album 欄括年以與卡拉揚 1981 年的數位重錄區隔。",
+  "curatorWhy": "卡拉揚幾乎不碰蕭士塔高維契，第十號是唯一反覆經營的一首；1966 年版被 Gramophone 的該曲最佳錄音導讀列名，第二樂章的柏林愛樂銅管至今是這首交響曲的聲音範本。",
+  "curatorRisk": "1966 與 1981 兩版封面與標題幾乎相同，本機解封面時極易抓錯；album 欄已括年，若日後補進 1981 版務必同樣括年。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Marc Coppey|Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+  "artist": "Marc Coppey",
+  "album": "Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+  "year": 2007,
+  "genre": "classical",
+  "composer": "Dutilleux",
+  "label": "",
+  "versionNote": "主線已裁定改釘替代盤（MB 查無 Rostropovich／EMI 1975 那份稽核指定錄音的可用 RG）。五個候選中 63e0667a 是 Bertrand／Gaffigan 2015、90228e27 是 Julien-Laferrière 2023、c6005293 是 Queyras／Gimeno 2024、ec92494d 是 Morlot／西雅圖 2014 的 Xavier Phillips——搭檔與樂團全不同即不同錄音。取 ce5dd2ba（Coppey／列日愛樂／Rophé），同碟收 Caplet《Épiphanie》與《Trois Strophes sur le nom de Sacher》，卡名依實際曲目改寫。**artist 由 Mstislav Rostropovich 改為 Marc Coppey**。",
+  "yearNote": "錄音年 2007：2007-07-12～15 錄於列日，Æon 廠牌 2008 年 4 月發行（MB 首發 2008-04-07 與之相符）。卡片年份用錄音年 2007。",
+  "curatorWhy": "《Tout un monde lointain》是二十世紀下半最重要的大提琴協奏曲之一，池內原本零杜提耶。這份把它與 Caplet《Épiphanie》並置的編排，把「法國大提琴與管弦樂」這條線一次交代清楚，是專門廠牌才做得出的曲目設計。",
+  "curatorRisk": "非羅斯托波維奇的首演版，與稽核原始意圖有落差（首演者版本才是史料核心），簡介不可寫成「首演錄音」；另 Æon 是小廠，封面與試聽在本機可能都要另尋來源。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Riccardo Chailly|Schoenberg: Gurre-Lieder",
+  "artist": "Riccardo Chailly",
+  "album": "Schoenberg: Gurre-Lieder",
+  "year": 1985,
+  "genre": "classical",
+  "composer": "Schoenberg",
+  "label": "",
+  "versionNote": "主線已裁定的 MBID，MB 端已覆核：primary-type=Album、無 secondary-type、掛名為 Deutsches Symphonie-Orchester Berlin（＝錄音當時的 Radio-Symphonie-Orchester Berlin 更名後名稱），兩張 release 皆 1990。非現場、非選段、非精選。MB 標題把「Gurrelieder」拼成一個字，卡名沿用池內與稽核的「Gurre-Lieder」寫法（audit 風險提醒第 3 條：拼字變體查重時兩種都要掃）。",
+  "yearNote": "錄音年 1985：1985 年 5／6 月柏林 Jesus-Christus-Kirche 錄音室錄音（Decca），獨唱為 Siegfried Jerusalem、Susan Dunn、Brigitte Fassbaender、Hermann Becht、Peter Haage、Hans Hotter。MB 首發 1990-07-01（日本盤）與 Decca 1990 年 11 月的正式發行都是 CD 發行年，卡片年份用 1985。",
+  "curatorWhy": "《古勒之歌》是荀白克跨越晚期浪漫與表現主義的分水嶺，夏伊這份錄音室版數十年來居評論推薦名單首位，且是少數把巨大編制的織體梳理得清楚又不失重量的版本；池內荀白克只有 Karajan《昇華之夜》、Boulez《月光小丑》、Rosbaud《摩西與亞倫》三張，缺這一端。",
+  "curatorRisk": "全曲近兩小時、雙 CD，硬蕊軸依 §0.7 的「單張超過兩小時 +1」修正要留意；另 MB 掛名用樂團更名後的名字，與唱片封面上的 RSO Berlin 不一致，查重與封面比對時容易對不上。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Maurizio Pollini|Schoenberg: Piano Works",
+  "artist": "Maurizio Pollini",
+  "album": "Schoenberg: Piano Works",
+  "year": 1974,
+  "genre": "classical",
+  "composer": "Schoenberg",
+  "label": "",
+  "versionNote": "唯一候選即主線裁定的 9407609d，MB 標題「Schoenberg: The Piano Music」＝德文原題《Das Klavierwerk》，收 op.11、op.19、op.23、op.25、op.33a/b 的鋼琴獨奏全集。要與後來 DG 把它和《鋼琴協奏曲》、魏本 op.27 併成的雙碟再版（Discogs 4597356 一類）區隔——那是加了阿巴多協奏曲的擴充盤，不是這張獨奏專輯。primary-type=Album、無 secondary-type。",
+  "yearNote": "錄音年 1974：1974 年 5 月慕尼黑 Bayerische Akademie der Wissenschaften 全體會議廳，製作 Rainer Brock，DG 2530 531 於 1975 年發行。MB 首發 1975 是 LP 發行年，卡片年份用 1974。",
+  "curatorWhy": "波里尼這套荀白克鋼琴全集把十二音作品彈成有呼吸的樂句而非解題示範，長期是這批曲目的參照錄音；池內波里尼只有兩張，且荀白克鋼琴線是空的。",
+  "curatorRisk": "曲目本身入耳難度高（無調性、十二音），硬蕊軸會偏高，簡介要寫清楚是「演奏取向」而非「好聽度」；另同名再版擴充盤易混。",
+  "apex": null
+ }
+]

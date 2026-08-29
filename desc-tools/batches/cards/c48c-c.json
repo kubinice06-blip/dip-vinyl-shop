@@ -1,0 +1,72 @@
+[
+ {
+  "key": "desc2:Barbara Hannigan|Abrahamsen: let me tell you",
+  "artist": "Barbara Hannigan",
+  "album": "Abrahamsen: let me tell you",
+  "year": 2015,
+  "genre": "classical",
+  "composer": "Abrahamsen",
+  "label": "",
+  "versionNote": "唯一候選 ef65d609 即目標盤，掛名與錄音團體相符（Hannigan／BRSO／Nelsons）。要與 Hannigan 和 Reinbert de Leeuw 的鋼琴伴奏版（另一張專輯）區隔——那是不同編制的另一份錄音。primary-type=Album、無 secondary-type，非現場標記。",
+  "yearNote": "錄音年 2015：2015-07-01～03 慕尼黑 Herkulessaal，巴伐利亞廣播交響樂團／Nelsons，Winter & Winter 910 232-2 於 2016-01-15 發行。稽核給的 2016 是發行年，依古典慣例卡片年份改用錄音年 2015。",
+  "curatorWhy": "作品本身拿下 2016 年 Grawemeyer 作曲獎，這份錄音拿下 Gramophone 當代類大獎與 Diapason d'Or；Hannigan 是本曲題獻與首演者，等於當代曲目的第一手權威錄音。池內軸線 4 的「當代」端幾乎沒有 2010 年代作品。",
+  "curatorRisk": "極新的當代曲目，玩家辨識度低；Winter & Winter 是小廠，固定試聽與封面在雲端不一定解得到。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Arturo Benedetti Michelangeli|Ravel: Piano Concerto in G / Rachmaninoff: Piano Concerto no. 4",
+  "artist": "Arturo Benedetti Michelangeli",
+  "album": "Ravel: Piano Concerto in G / Rachmaninoff: Piano Concerto no. 4",
+  "year": 1957,
+  "genre": "classical",
+  "composer": "Ravel",
+  "label": "",
+  "versionNote": "主線裁定的 MBID，MB 端已覆核掛名確實是 Michelangeli／Gracis／Philharmonia，五張 release 由 1958 GB 首版到 2022 日本盤，primary-type=Album、無 secondary-type。米凱蘭傑利此二曲僅此一次商業錄音（其餘為現場），無重錄疑慮。MB 用「Rachmaninov」拼法，卡名沿用池內慣用的「Rachmaninoff」（audit 風險提醒第 3 條）。",
+  "yearNote": "**錄音年覆核完成：1957**。1957-03-07、03-08、03-10 錄於倫敦 Abbey Road 第一錄音室，製作 Victor Olof、錄音 Neville Boyling，是拉威爾這首協奏曲的首個立體聲錄音；首版 HMV ASD 255（立體聲）／ALP 1538（單聲道）於 1958 年發行，與 MB 的 first-release 1958-09 相符。卡片年份用錄音年 1957。",
+  "curatorWhy": "EMI「世紀原音（Great Recordings of the Century）」常駐盤，也是拉威爾 G 大調協奏曲的第一份立體聲錄音；米凱蘭傑利池內只有一張德布西，這張是他最被公認的代表作。",
+  "curatorRisk": "1958 首版與 1988／2000 再版封面差很多，本機解封面要指定版位；另 MB 首發年 1958 與錄音年 1957 相差一年，稽核假設的 1957 已獲證實，勿再改回 1958。",
+  "apex": "hall"
+ },
+ {
+  "key": "desc2:Arturo Benedetti Michelangeli|Beethoven / Galuppi / Scarlatti Recital",
+  "artist": "Arturo Benedetti Michelangeli",
+  "album": "Beethoven / Galuppi / Scarlatti Recital",
+  "year": 1965,
+  "genre": "classical",
+  "composer": "Beethoven",
+  "label": "",
+  "versionNote": "兩個候選：c41a34de（1999）是「Michelangeli Vol.7: Bach - Scarlatti - Galuppi」，曲目換了（有巴哈、沒有貝多芬 op.111），是不同節目的合輯；31441c08 才是 1965 Decca 錄音那套曲目。**此 RG 的 secondaryTypes 含 Compilation**（CD 再版把同期單曲目錄音重編成一輯），依 §5.6／README 硬規則第 7 條補舉證。",
+  "yearNote": "錄音年 1965：Decca／London 1965 年倫敦錄音（貝多芬 op.111、Galuppi C 大調第五號奏鳴曲、史卡拉第 K.11／159／322），1965 年即有 7½ ips 開盤帶版本發行。MB 首發 1988 是 CD 再版年。卡片年份用 1965。",
+  "curatorWhy": "米凱蘭傑利的 op.111 是鋼琴迷長期辯論的對象，而 Galuppi 的 C 大調奏鳴曲幾乎是靠他一個人留在曲目裡；這張同時補演奏家深度與冷門曲目兩條線。",
+  "curatorRisk": "1965 年 Decca 的錄音品質評價分歧（多篇樂評指音質配不上演奏），簡介不可只寫美言；另 secondaryTypes 含 Compilation，本機驗證器會要求 exceptionReason 與證據網址齊備。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Jacqueline du Pré & Daniel Barenboim|Brahms: Cello Sonatas nos. 1 & 2",
+  "artist": "Jacqueline du Pré & Daniel Barenboim",
+  "album": "Brahms: Cello Sonatas nos. 1 & 2",
+  "year": 1968,
+  "genre": "classical",
+  "composer": "Brahms",
+  "label": "",
+  "versionNote": "九個候選要排掉三類：(1) 曲目不同——5beeef25 是蕭邦／法朗克、4c8f8cb8 是貝多芬三、五號（且搭檔換成 Stephen Bishop-Kovacevich）、1c575786 是艾爾加協奏曲；(2) 掛 Compilation 的再版包——f593498c、d1cfc4b2、610f2998、b5b90a37；(3) 26a43164（2002）雖是同一份布拉姆斯錄音，但加了《Kol Nidrei》且是 CD 再版形態。取 e9f0aa26＝1968 年 EMI 原盤（德文標題「Sonaten für Violoncello und Klavier Nr. 1 und Nr. 2」）。**album 由「Brahms: Cello Sonatas」改為「Brahms: Cello Sonatas nos. 1 & 2」**，因池內已有 Truls Mørk 的同名卡（1994），依 audit 風險提醒第 1 條加曲號區辨。",
+  "yearNote": "錄音年＝發行年 1968：1968-05-20 與 1968-08-18 錄於倫敦 Abbey Road 第一錄音室（EMI），同年發行 LP。MB 首發 1968 與錄音年一致，無落差。",
+  "curatorWhy": "杜普蕾與巴倫波因婚後盛期的室內樂代表作，第一號 e 小調的低音域音色是她琴聲的標本；池內杜普蕾只有艾爾加協奏曲一張，演奏家線太薄。",
+  "curatorRisk": "同曲目在池內已有 Truls Mørk 版，卡名雖已加曲號，玩家端仍可能混淆；另 MB 這個 RG 用德文標題，字串查重時容易漏。",
+  "apex": null
+ },
+ {
+  "key": "desc2:Jascha Heifetz|Korngold: Violin Concerto",
+  "artist": "Jascha Heifetz",
+  "album": "Korngold: Violin Concerto",
+  "year": 1953,
+  "genre": "classical",
+  "composer": "Korngold",
+  "label": "",
+  "versionNote": "九個候選裡只有 ec333e24 含科恩戈爾德：04a1f7ba、745dc225、b6842d1c 是布拉姆斯／柴可夫斯基協奏曲，ea38e3c6、a9fae2b7、f8c08ec5 是貝多芬，beae778e 只有羅饒與 Benjamin，5b3c294e 是莫札特卷。海飛茲此曲僅此一次錄音（1953），無重錄疑慮。**secondaryTypes 含 Compilation**（The Heifetz Collection Volume 21 為 RCA 的系列整編），依 §5.6 補舉證；MB 上 1988 年的 XE release（ba022b6c）標題即以「Korngold: Violin Concerto」領銜，卡名沿用主標曲目。",
+  "yearNote": "錄音年 1953：科恩戈爾德小提琴協奏曲錄於 1953-01-10，Alfred Wallenstein 指揮洛杉磯愛樂（RCA）。同輯的羅饒協奏曲（1956）、《Tema con variazioni》與 Waxman《卡門幻想曲》錄音年不同，卡片年份以主標曲目的 1953 為準。MB 首發 1988 是《The Heifetz Collection》CD 系列的發行年。",
+  "curatorWhy": "此曲 1947 年由海飛茲首演，1953 年這份錄音等於作品的聲音定義；一張同時補上科恩戈爾德（池內只有電影配樂改編與歌劇）與海飛茲協奏曲線，是稽核所謂「一卡雙補」。",
+  "curatorRisk": "Compilation 身分需 §5.6 舉證才過驗證器；另專輯實際含羅饒與 Waxman 曲目，卡名只寫科恩戈爾德，簡介必須交代整輯內容以免玩家誤解。",
+  "apex": "hall"
+ }
+]
