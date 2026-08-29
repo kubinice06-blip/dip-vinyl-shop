@@ -21,8 +21,8 @@
       "curatorRisk": "此曲屬入門常客曲目，冷門軸偏低；卡拉揚同曲有 1966/67 舊版流通，卡名未括年會與舊版混淆，故album 已帶雙作曲家標示。",
       "apexCandidate": {
         "eligible": false,
-        "tier": "",
-        "reason": "演奏品質高、錄音是 DG 數位初期名片，但無跨來源長期樂評共識把它列為該曲史上核心版本（此曲的正典位置通常給 Marriner／ASMF 或 Barshai）。判普卡，非因查不到證據。",
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 DG 數位初期的招牌錄音與一般好評，非 Gramophone 名人堂／企鵝三星帶花／唱片藝術名曲名盤／傳奇再版系列（GROC、DG The Originals、Decca Legends、Living Stereo／Presence）／發燒榜單（TAS、香港 CD 聖經、AP／Classic Records 復刻）任一項具體收錄。",
         "evidenceUrls": [],
         "evidence": ""
       }
@@ -46,13 +46,10 @@
       "curatorWhy": "奧伊斯特拉夫 1959 年赴美與 Ormandy／費城合作的立體聲柴可夫斯基協奏曲，是俄系弓法與美式管弦光澤結合的標準參照，長年是這首協奏曲的首選版本之一。",
       "curatorRisk": "MB 該 RG 標題只寫 Violin Concertos，不含演奏者，本機比對時容易與其他同名 RG 撞名；卡名已帶 (Ormandy) 括註。此 RG 同碟含西貝流士協奏曲，若日後補西貝流士卡會與本卡指同一 rgMbid，需注意重複。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "奧伊斯特拉夫／Ormandy 1959 費城版是柴可夫斯基小提琴協奏曲錄音史的核心版本之一，Sony 長年以 Great Performances／Masterworks Heritage 系列重發，樂評共識穩定。",
-        "evidenceUrls": [
-          "https://www.discogs.com/master/346906-Oistrakh-OrmandyPhiladelphia-Orchestra-Tchaikovsky-Violin-Concerto-In-D",
-          "https://www.audaud.com/shostakovich-violin-concerto-no-1-in-a-minor-op-99-tchaikovsky-violin-concerto-in-d-major-op-35-david-oistrakh-violin-new-york-philharmonicdimitri-mitropoulos-shostakovich-philadelphi/"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 Sony／CBS 的 Great Performances 與 Masterworks Heritage 再版與樂評好評；Sony 系列不在 §0.7 列名的傳奇再版系列內，亦未查到 Gramophone 名人堂或任一發燒榜單收錄。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -77,10 +74,10 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "佛瑞安魂曲的歷史參照版，EMI 反覆以傳奇再版系列重發，長期被列為該曲首選之一。",
+        "reason": "具體收錄：EMI Great Recordings of the Century 系列（CD 編號 5 66894 2，1998 年發行），屬 §0.7 明列的大廠傳奇再版系列。",
         "evidenceUrls": [
-          "https://www.allmusic.com/album/faur%C3%A9-requiem-debussy-images-mw0001966693",
-          "https://www.discogs.com/release/5332659-Faur%C3%A9-Victoria-De-Los-Angeles-Dietrich-Fischer-Dieskau-Andr%C3%A9-Cluytens-Requiem-Op-48"
+          "https://www.musicweb-international.com/classrev/2003/Jun03/FAURE_req_cluytens_groc.htm",
+          "https://www.amazon.de/Faure-Requiem-Great-Recordings-Century/dp/B00000GCA4"
         ],
         "evidence": ""
       }
@@ -106,7 +103,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "1986 Gramophone 室內樂年度大獎、德國唱片評論家獎、Télérama Événement Exceptionnel，Gramophone 後來以 Classics Reconsidered 專文重估，跨來源長期共識明確。",
+        "reason": "具體上榜：1986 年 Gramophone 年度室內樂大獎，另獲德國唱片評論家獎與 Télérama「Événement Exceptionnel」，Gramophone 後以 Classics Reconsidered 專文重估。（依據是具名的年度大獎而非 §0.7 逐條列出的名人堂／再版系列，請主線覆核是否採計。）",
         "evidenceUrls": [
           "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDA66166",
           "https://www.gramophone.co.uk/features/article/classics-reconsidered-domus-s-recording-of-faure-s-piano-quartets"
@@ -133,11 +130,11 @@
       "curatorWhy": "Collard 的佛瑞是法系鋼琴詮釋的長期參照，13 首夜曲橫跨佛瑞創作四十年，這套 1973 年 Salle Wagram 錄音是他佛瑞全集的核心一環。",
       "curatorRisk": "MB 上這個 RG 只掛美版 Connoisseur Society 一張 release、無 Cover Art Archive 封面（實測 404），本機解封面需另循 EMI／Pathé Marconi 原盤或 Erato 再版；另 Collard 的 EMI 雙 CD 版易被誤取。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Collard 的 EMI 佛瑞鋼琴全集數十年來是這批曲目的參考版本，夜曲集是其核心。惟無法在雲端取得企鵝／Diapason 具體評等頁面，證據待本機補。",
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的只是「Collard 的 EMI 佛瑞是長期參考版」這類代表作敘述，未能指名上列任一具體收錄或上榜（建議本機另查企鵝指南與 Diapason d'or 紙本名單後再定）。",
         "evidenceUrls": [],
-        "evidence": "pending-local"
+        "evidence": ""
       }
     },
     {
@@ -159,13 +156,10 @@
       "curatorWhy": "李希特晚年與鮑羅定四重奏在莫斯科的合作，法朗克鋼琴五重奏那種近乎失控的熱度是這首曲子錄音史上最被談論的一次，Philips 的李希特授權系列核心片目。",
       "curatorRisk": "錄音年與稽核給定值差四年，若本機沿用 1985 會與 MB／Discogs 內頁對不上；另現場／錄音室屬性未定，卡名暫不括年，本機確認後可能要補括註。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "李希特／鮑羅定的法朗克鋼琴五重奏是該曲最常被引為標竿的錄音，Philips 李希特授權系列長期在版。",
-        "evidenceUrls": [
-          "https://www.prestomusic.com/classical/products/8059218--franck-piano-quintet",
-          "https://www.discogs.com/master/1082095-Franck-Liszt-Sviatoslav-Richter-Borodin-Quartet-Piano-Quintet-Pens%C3%83%C2%A9es-Des-Morts-Andante-Lagrimoso-A"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 Philips 李希特授權系列的發行與樂評好評，該系列不在 §0.7 列名的傳奇再版系列內，亦未查到名人堂或發燒榜單收錄。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -178,7 +172,9 @@
       "mbTitle": "Saint-Saëns: Carnaval des Animaux / Alan Ridout: Ferdinand / Little Sad Sound / Frieder Meschwitz: Tier-Gebete",
       "mbCredit": "Saint‐Saëns, Argerich, Friere, Kremer, van Keulen, Maisky",
       "releaseType": "Album",
-      "secondaryTypes": ["Compilation"],
+      "secondaryTypes": [
+        "Compilation"
+      ],
       "firstRelease": "1988-05-02",
       "suggestedYear": 1985,
       "yearNote": "**推翻稽核假設**：稽核寫 1986，實際《動物狂歡節》錄於 1985 年 4 月慕尼黑；同碟 Ridout《Ferdinand》與 Meschwitz《Tier-Gebete》錄於 1981 年 4 月、《Little Sad Sound》錄於 1987 年 1 月維也納，Philips 416 841-2 於 1988 年發行。卡片年份用 1985（主曲目錄音年）。",
@@ -192,8 +188,8 @@
       "curatorRisk": "MB 標題把三位作曲家串在一起、secondaryTypes 掛 Compilation，本機驗證器會攔；已補 §5.6 舉證。另 DG 的同名拼盤（a33fe280）掛名同樣有 Argerich，字串比對極易取錯。",
       "apexCandidate": {
         "eligible": false,
-        "tier": "",
-        "reason": "名家陣容、錄音精緻，但《動物狂歡節》本身是入門曲目，此版未累積到跨來源、把它列為該曲史上核心錄音的長期樂評共識；亦不符 pearl 的「專門圈以外近乎無人知曉」。判普卡，非因查不到證據。",
+        "tier": null,
+        "reason": "未達 §3 門檻，名家陣容與精緻錄音屬「評價很好」層級，未能指名上列任一具體收錄；亦不符 §0.7 古典 pearl 的「專門圈以外近乎無人知曉」。",
         "evidenceUrls": [],
         "evidence": ""
       }
@@ -219,7 +215,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "EMI Great Recordings of the Century 收錄（§0.7 明列的有效依據），且是 du Pré 錄音遺產中長期在版的核心片目。",
+        "reason": "具體收錄：EMI Great Recordings of the Century 系列（1998 年 EMI Classics CD），屬 §0.7 明列的大廠傳奇再版系列。",
         "evidenceUrls": [
           "https://www.discogs.com/release/12070307-Haydn-Boccherini-Jacqueline-du-Pr%C3%A9-Daniel-Barenboim-Sir-John-Barbirolli-Cello-Concertos",
           "https://www.highresaudio.com/en/album/view/e8bhrr/jacqueline-du-pre-daniel-barenboim-haydn-boccherini-cello-concertos-remastered"
@@ -248,7 +244,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "DG The Originals 系列收錄（§0.7 明列的有效依據），且自 1967 年起長期被視為《四季》的參考錄音。",
+        "reason": "具體收錄：DG The Originals 系列（DG 457 713-2），屬 §0.7 明列的大廠傳奇再版系列。",
         "evidenceUrls": [
           "https://www.discogs.com/release/3976224-Joseph-Haydn-Gundula-Janowitz-Peter-Schreier-Martti-Talvela-Wiener-Singverein-Wiener-Symphoniker-Kar",
           "https://www.amazon.de/Originals-Die-Jahreszeiten-Gundula-Janowitz/dp/B00000613Z"
@@ -275,13 +271,10 @@
       "curatorWhy": "史上第一個古樂器《納爾遜彌撒》錄音，銅管與定音鼓咬進 Kyrie 不協和音的做法從此改寫這首曲子的演出習慣，Gramophone 與 ClassicsToday 都以「參考錄音」重估。",
       "curatorRisk": "宗教曲＋古樂器，冷門與硬蕊軸偏高；卡名用通行的 Nelson Mass 而非 MB 的拉丁原題，字串查重時要兩種都掃。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "首個古樂器版，Gramophone 列入 Classics Reconsidered、ClassicsToday 標為 Reference Recording，跨來源共識明確。",
-        "evidenceUrls": [
-          "https://www.gramophone.co.uk/features/article/classics-reconsidered-trevor-pinnock-s-1986-recording-of-haydn-s-nelson-mass",
-          "https://www.classicstoday.com/review/reference-recording-pinnocks-super-haydn-nelson-mass/"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 Gramophone 的 Classics Reconsidered 專文與 ClassicsToday 的 Reference Recording 評語，兩者都是樂評文章而非上列任一具體收錄或榜單（Archiv 亦非列名的傳奇再版系列）。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -304,13 +297,10 @@
       "curatorWhy": "Amadeus Quartet 弦樂加上 de Peyer 的英式單簧管音色，是莫札特單簧管五重奏在立體聲時代最早成形的參考版本之一，DG 至今仍在版。",
       "curatorRisk": "掛名與稽核不同，主線評分表對帳務必用本回報的新舊對照；另池內已有 Amadeus Quartet 的海頓 op.76 與舒伯特弦樂五重奏兩卡，同團三卡的冷門軸需主線平衡。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "DG 立體聲時代的莫札特單簧管五重奏標準版，長期在版並收入 Amadeus Quartet 的 DG 全集紀念套裝。",
-        "evidenceUrls": [
-          "https://www.deutschegrammophon.com/en/catalogue/products/clarinet-quintets-mozart-brahms-amadeus-quartet-127",
-          "https://www.discogs.com/master/1174579-Wolfgang-Amadeus-Mozart-Gervase-de-Peyer-Andreas-Blau-Lothar-Koch-Amadeus-Quartet-Clarinet-Quintet-F"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 DG 長期在版與收入 Amadeus Quartet 的 DG 全集套裝，DG Galleria／Privilege 不等於 DG The Originals，亦未查到名人堂或發燒榜單收錄（本機可另查企鵝三星帶花紙本名單）。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -323,7 +313,9 @@
       "mbTitle": "Complete String Quintets",
       "mbCredit": "Mozart, Grumiaux Trio, Arpad Gérecz, Max Lesueur",
       "releaseType": "Album",
-      "secondaryTypes": ["Compilation"],
+      "secondaryTypes": [
+        "Compilation"
+      ],
       "firstRelease": "2002",
       "suggestedYear": 1973,
       "yearNote": "錄音年 1973（1973 年 1～5 月，瑞士 La Chaux-de-Fonds；同套附帶的 K.563 嬉遊曲錄於 1967 年 6 月阿姆斯特丹）；原始 LP 為 Philips 6747 107。MB 首發 2002 是 Philips 三 CD 再版年，與錄音年差 29 年。卡片年份用 1973。",
@@ -336,13 +328,10 @@
       "curatorWhy": "Grumiaux 的貴族式線條加上 Philips 1970 年代的自然堂音，是莫札特弦樂五重奏（含 K.515、K.516 兩座高峰）最常被列為首選的全集，附贈的 K.563 也是參考級。",
       "curatorRisk": "卡名由單曲改為全集，主線若已按「K.515 & 516」評三軸需重看冷門／硬蕊（全集屬 §0.7 硬蕊 +1 的大部頭）；另團名 Grumiaux Trio 與池內既有 Grumiaux 三卡（Bach／Mozart）須人工查重。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "莫札特弦樂五重奏全集的長期首選版本，ClassicsToday 評為目錄中的珍寶，Philips／Decca 反覆重發至今在版。",
-        "evidenceUrls": [
-          "https://www.classicstoday.com/review/review-8036/",
-          "https://www.prestomusic.com/classical/products/7930340--mozart-the-complete-string-quintets"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是 ClassicsToday「remains among the treasures of the catalog」這類評語，非上列任一具體收錄；Philips／Decca 的一般再版不算傳奇再版系列（本機可另查企鵝三星帶花紙本名單後翻案）。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -367,7 +356,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "Decca Legends 系列收錄（§0.7 明列的有效依據），且屬發燒天碟正典——First Impression Music 以 XRCD 復刻，評論界稱其為錄音史上最好的製作之一，詮釋與錄音工藝雙線都成立。",
+        "reason": "雙重具體依據：Decca Legends 系列收錄（470 258-2），且屬發燒天碟正典——First Impression Music 以 XRCD 復刻此 Decca SXL 6088 錄音（Kenneth Wilkinson 錄音），兩條都在 §0.7 明列的有效依據內。",
         "evidenceUrls": [
           "https://www.audaud.com/mozart-sinfonia-concertante-for-violin-viola-and-orchestra-k-364-duo-for-violin-and-viola-g-k-423-igor-and-david-oistrakh-moscow-philharmonic-kiril-kondrashin-cond-deccafirst-impression-mu/",
           "https://classicalcandor.blogspot.com/2011/02/mozart-sinfonia-concertante-k-364-xrcd.html"
@@ -395,8 +384,8 @@
       "curatorRisk": "錄音年僅有稽核給定值、無可引用來源，本機補證前不宜對外標年；曲目屬管樂編制，冷門軸偏中。",
       "apexCandidate": {
         "eligible": false,
-        "tier": "",
-        "reason": "ASMF 版演奏水準穩定、流通廣，但 K.361 的錄音正典位置一般給 Klemperer、de Waart 或 Orpheus，此版未累積到跨來源的史上核心共識。判普卡，非因查不到證據。",
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是流通度高與演奏水準穩定，未能指名上列任一具體收錄或上榜。",
         "evidenceUrls": [],
         "evidence": ""
       }
@@ -420,13 +409,10 @@
       "curatorWhy": "Jochum 的第一次 DG 布魯克納全集是這位作曲家錄音史的奠基之作，第五號的終樂章賦格層次至今被當成參照；池內已有 Jochum 的布七（1964），此卡補上五號。",
       "curatorRisk": "Jochum 同曲有 EMI／德勒斯登（1980）與 Concertgebouw 多次現場並存，字串比對必錯，只能靠 rgMbid；卡名括年後與池內既有 Jochum 布七（未括年）格式不一致，主線可斟酌是否一併補括。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Jochum 的 DG 布魯克納第一次全集是該作曲家錄音的奠基版本，第五號長期列為首選之一；DG 反覆以傳奇再版系列重發。",
-        "evidenceUrls": [
-          "https://www.classicstoday.com/review/review-5765/",
-          "https://en.wikipedia.org/wiki/Eugen_Jochum"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻——實查 DG The Originals 系列並無此片（1958 年錄音以廉價版流通），且有樂評指其音場承載力不足；查到的只是「Jochum 第一次全集是奠基之作」這類敘述，非上列任一具體收錄。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -451,7 +437,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "DG The Originals 系列收錄（§0.7 明列的有效依據），且是布魯克納 Te Deum 長期的參考錄音。",
+        "reason": "具體收錄：DG The Originals 系列（457 743），屬 §0.7 明列的大廠傳奇再版系列。",
         "evidenceUrls": [
           "https://www.deutschegrammophon.com/de/katalog/produkte/bruckner-te-deum-motets-jochum-4958",
           "https://www.classicstoday.com/review/filling-gaps-jochums-reference-bruckner-1st-te-deum/"
@@ -480,7 +466,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "2007 年 Gramophone 室內樂大獎、《每日電訊報》年度唱片，Supraphon 官方與 The Strad 皆有專文，跨來源長期共識明確。",
+        "reason": "具體上榜：2007 年 Gramophone 年度室內樂大獎（Supraphon 官網專頁記載），並獲《每日電訊報》年度唱片。（依據是具名的年度大獎而非 §0.7 逐條列出的名人堂／再版系列，請主線覆核是否採計。）",
         "evidenceUrls": [
           "https://www.supraphon.com/about-us/102-the-first-gramophone-award-for-the-pavel-haas-quartet",
           "https://www.thestrad.com/janacek-string-quartet-no2-intimate-letters-haas-string-quartet-no2-op7-from-the-monkey-mountains/3219.article"
@@ -507,13 +493,10 @@
       "curatorWhy": "Mackerras 是二十世紀最重要的楊納捷克權威，這張與捷克愛樂在布拉格錄的《格拉哥里彌撒》把作曲家的斯拉夫語настроение與樂團母語傳統對上，是這首曲子最常被引用的錄音。",
       "curatorRisk": "同指揮同曲另有 1994 Chandos 原始版本錄音，兩者是不同版本學決定（標準演出版 vs 1927 原稿復原），卡名未括廠牌，日後若補 Chandos 版必須括註區辨。池內已有三張 Mackerras 楊納捷克歌劇卡，同掛名第四卡需查重。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Mackerras 的楊納捷克錄音系列是該作曲家的公認權威，這張 Supraphon 與捷克愛樂的《格拉哥里彌撒》長期在版並被列為參考版本。",
-        "evidenceUrls": [
-          "https://www.discogs.com/release/1146338-Leo%C5%A1-Jan%C3%A1%C4%8Dek-Sir-Charles-Mackerras-Czech-Philharmonic-Orchestra-S%C3%B6derstr%C3%B6m-Drobkov%C3%A1-Livora-Nov",
-          "https://en.wikipedia.org/wiki/Glagolitic_Mass"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是「Mackerras 是楊納捷克權威」與 Supraphon 長期在版，非上列任一具體收錄；Mackerras 更受注目的其實是 1994 Chandos 的 1927 原始版錄音（本機可另查企鵝三星帶花後再定）。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -536,13 +519,10 @@
       "curatorWhy": "Firkušný 少年時受教於楊納捷克本人，是這批鋼琴曲最直接的傳承者；DG 1971 這次錄音是他盛年的版本，長年被視為楊納捷克鋼琴曲的權威詮釋。",
       "curatorRisk": "同演奏者同曲有 1989/90 RCA 重錄在 MB 上（70115b96），且該 RG 正是自動評分的首選，字串比對必錯；卡名已括年，本機仍須以 rgMbid 認卡。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "作曲家親炙弟子的權威詮釋，DG 反覆重發（429 857-2、449 764-2）並長期列為楊納捷克鋼琴曲的參考錄音。",
-        "evidenceUrls": [
-          "https://www.deutschegrammophon.com/en/catalogue/products/janacek-capriccioconcertino-firkusny-5131",
-          "https://www.prestomusic.com/classical/products/7928777--janacek-piano-works"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻，查到的是「作曲家親炙弟子」與 DG 反覆重發，非上列任一具體收錄或榜單（本機可另查企鵝三星帶花與《唱片藝術》名曲名盤紙本名單後翻案）。",
+        "evidenceUrls": [],
         "evidence": ""
       }
     },
@@ -565,14 +545,11 @@
       "curatorWhy": "Blomstedt／舊金山交響 Decca 時代的開幕作，也是欣德密特兩首最常演管弦作品的數位期標竿；Decca 在 Davies Hall 的錄音長年被當成大編制管弦樂的音響示範。",
       "curatorRisk": "Blomstedt 另有萊比錫的欣德密特錄音併入 Decca 合輯，字串比對可能取到合輯；卡名未標樂團，本機補卡時要確認是舊金山版。錄音工藝面的發燒評價（TAS／CD 聖經）待本機補證。",
       "apexCandidate": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Blomstedt／舊金山交響 Decca 時代的開幕錄音，長年是《畫家馬蒂斯》與《交響變形》的參考版本，且屬 Decca 數位期的錄音示範片；具體榜單（TAS／企鵝）證據待本機補。",
-        "evidenceUrls": [
-          "https://www.discogs.com/release/2913303-Hindemith-San-Francisco-Symphony-Herbert-Blomstedt-Mathis-Der-Maler-Symphonic-Metamorphosis-Trauermu",
-          "https://www.prestomusic.com/classical/products/7930338--hindemith-orchestral-works"
-        ],
-        "evidence": "pending-local"
+        "eligible": false,
+        "tier": null,
+        "reason": "未達 §3 門檻——原判以「Decca 數位期音響示範片」列 hall，但實查未能指名 TAS 榜、香港 CD 聖經或 Analogue Productions／Classic Records 復刻任一具體上榜，亦非列名的傳奇再版系列；改判一般卡。",
+        "evidenceUrls": [],
+        "evidence": ""
       }
     },
     {
@@ -596,7 +573,7 @@
       "apexCandidate": {
         "eligible": true,
         "tier": "hall",
-        "reason": "法語首演原班卡司的作曲家在世錄音，EMI Great Recordings of the Century 系列收錄（§0.7 明列的有效依據），Pristine 另有專業修復發行。",
+        "reason": "具體收錄：EMI Great Recordings of the Century 系列，屬 §0.7 明列的大廠傳奇再版系列；另有 Pristine Classical 的專業修復發行（PACO069）。",
         "evidenceUrls": [
           "https://www.warnerclassics.com/release/poulenc-dialogues-des-carmelites-1",
           "https://www.pristineclassical.com/products/paco069"
