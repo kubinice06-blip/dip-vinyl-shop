@@ -173,9 +173,18 @@ if (stage === 'out') {
     ];
     // 純標記、不豁免（曾試過「附近有拉丁字母就放行」，被曲名《Legion》〈Gloria〉的字母誤觸）；
     // 具名合法者（葛萊美、Billboard、ACM…）由人工複核放行，比照既有 QA 誤報處理原則。
+    //
+    // 2026-08-30：豁免仍然不做，但**標記改帶前後文**。c-50 三批共標了五筆，全部是誤報，
+    // 而且全是同一型態——具名的修飾語就緊貼在裸字串前面（「Pitchfork 的 1990 年代百大專輯」
+    // 「拉丁葛萊美名人堂」「《Village Voice》當年的樂評票選」「A2IM Libera Awards 的年度專輯獎」）。
+    // 只印裸字串等於逼複核者逐筆開檔案找上下文；印出前後各二十餘字，一眼就判得完。
+    // 這不放寬任何判定，只是讓人工複核便宜到不會被跳過——那才是這道檢查真正的失效模式。
     for (const r of o) for (const [re, label] of UNSOURCED) {
       const m = r.desc.match(re);
-      if (m) warn('out', '未具名出處?', label, '→', r.key, '::', m[0]);
+      if (!m) continue;
+      const i = m.index ?? r.desc.indexOf(m[0]);
+      const ctx = r.desc.slice(Math.max(0, i - 24), i + m[0].length + 12).replace(/\s+/g, ' ');
+      warn('out', '未具名出處?', label, '→', r.key, ':: …' + ctx + '…');
     }
     const lens = o.map(r => Array.from(r.desc).length);
     outTotal += o.length;

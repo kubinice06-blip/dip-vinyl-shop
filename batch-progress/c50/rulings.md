@@ -114,3 +114,26 @@ MB 的 1993 是 CD 再版）、Blondie 維持正式版年（1978，MB 的 1977 �
 - **Paco de Lucía《Sólo quiero caminar》**：廠牌 Philips（Phonogram 體系，德國版 6301 030）。
   序數不寫（維基兩處不一致）。「第一張用 cajón 的佛朗明哥唱片」這類最高級宣稱不寫——
   另有研究指 Pepe Ébano 才是把 cajón 引進西班牙佛朗明哥的人，兩說並存。
+
+## 11. 雙掛名一律維持卡池的單藝人寫法（Celia Cruz 比照 Willie Colón）
+
+寫作層問到 Celia Cruz《Celia & Johnny》——MB 的 artist credit 是兩人，
+與第 3 條的 Willie Colón《Siembra》同一類問題。裁定相同：**卡池維持單藝人鍵**
+（卡池的鍵結構就是單藝人，改動會波及全池），正文把 Johnny Pacheco 與 Rubén Blades
+寫成合作者而非客串。寫作層已照此處理。
+
+## 12. Chuck Berry《Chuck Berry Is on Top》：一句沒有來源的定位，追溯鏈是我自己
+
+寫作層交件時指出，正文的「搖滾草創期定位最明確的 LP 之一」只出現在研究層的
+`researchNotes`、**不在 facts** 裡——那是研究層的判斷語，不是來源事實。
+
+追溯下去，這句是**我**從研究註記抄進 hook 派工詞的，一路傳到 note、再進正文。
+產線的防造假機制設計成「正文只寫 facts 裡有的事實」，但那道防線擋不住
+**協調者自己**把 researchNotes 的判斷語當成事實往下派。
+
+已改寫成有來源的版本：facts 第 7 條記有樂評 Cub Koda 形容它「幾乎是一張迷你精選集」，
+依 `writer-base.md` 第 219 行的一般禁令不具名樂評人，寫成「後世樂評把它形容成
+幾乎是一張迷你精選集」。字數 223 → 224，仍在區間內。
+
+**這條要帶進下一批的派工紀律**：從研究稿往下抄素材時，只抄 `facts`，
+`researchNotes` 是給協調者判斷用的，裡面的評價語不得進派工詞。
