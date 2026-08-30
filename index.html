@@ -400,12 +400,17 @@
     .homehub-title { font-size: 18px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 8px; }
     .homehub-sub { font-size: 11px; color: var(--gray); letter-spacing: 0.06em; line-height: 1.7; }
     .homehub-cards { display: flex; flex-direction: column; }
+    /* iOS 的 <button> 預設字色是系統藍：沒有明寫 color 的按鈕，在 iPhone 上文字、箭頭、
+       邊框（currentColor）與像素圖示會整片變藍，桌機 Chrome 看不出來（它的預設是黑）。
+       全站按鈕一律先繼承文字色，個別按鈕再自行覆寫。2026-08-31 由店主的 iPhone 截圖抓到。 */
+    button { color: inherit; }
     .homehub-card {
       position: relative;
       border-bottom: 1px solid var(--line); padding: 28px 44px; cursor: pointer;
       display: flex; align-items: center; justify-content: center; gap: 16px;
       background: #fff; transition: background 0.15s; text-align: center; width: 100%;
       border-left: none; border-right: none; border-top: none; font-family: var(--mono);
+      color: var(--black);
     }
     .homehub-card:hover { background: #111; color: #fff; }
     .homehub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }

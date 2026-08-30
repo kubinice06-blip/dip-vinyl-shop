@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="dip-draw-anim.css?v=1">
 <style>
+  /* iOS 的 <button> 預設字色是系統藍，沒明寫 color 的按鈕在 iPhone 上會整片變藍 */
+  button { color: inherit; }
   :root {
     --black:#111; --gray:#888; --line:#ddd; --bg:#fff; --mono:'Space Mono',monospace;
     --hp:#111; --hp-bg:#eee; --dmg:#c11628; --gold:#b8860b; --qi:#b8860b;

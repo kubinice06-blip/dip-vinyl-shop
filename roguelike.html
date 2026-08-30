@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
+  /* iOS 的 <button> 預設字色是系統藍，沒明寫 color 的按鈕在 iPhone 上會整片變藍 */
+  button { color: inherit; }
   /* 與 battle.html / 商店一致：白底黑字、Space Mono、細邊框、金(b8860b)＋紅(c11628) */
   :root{
     --black:#111; --gray:#888; --line:#ddd; --bg:#fff; --mono:'Space Mono',monospace;

@@ -1,5 +1,27 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-31｜dip-vinyl-shop｜修正 iPhone 上首頁卡片整片變藍（iOS button 預設字色）
+
+店主回報「線上版變成藍色」，附 iPhone 截圖：首頁的「找一張來聽」「品味生死鬥」兩張卡
+文字、箭頭、BETA 外框、像素圖示全是系統藍，但「你的收藏」「搜尋專輯」是正常黑色。
+
+**原因**：`.homehub-card` 從來沒有明寫 `color`。iOS（Safari／iOS Chrome 都是 WebKit）的
+`<button>` 預設字色是系統藍，而桌機 Chrome 的預設是黑——所以這個 bug 在桌機完全看不出來，
+線上、本機、深色模式我全查過都正常，只有 iPhone 會顯示。對照組「你的收藏」是
+`.homehub-group-label`、「搜尋專輯」是 `.homehub-search-label`，兩者都有寫 `color: var(--black)`。
+
+這其實是**既有的問題**（品味生死鬥那張卡、群組內的三張選片卡、唱片櫃／地圖／紀錄小卡
+在 iPhone 上一直都是藍的），只是這次新增的像素圖示用 `currentColor`、跟著變藍才變得刺眼。
+
+**修法**：
+- `index.html`：`.homehub-card` 補 `color: var(--black)`
+- `index.html`／`battle.html`／`roguelike.html`／`pvp.html`：加一條保險
+  `button { color: inherit; }`——全站按鈕先繼承文字色，個別按鈕再自行覆寫，
+  之後新增按鈕忘了寫 color 也不會再中同樣的招。
+
+**查法備忘**：寫了 `scratchpad/check-btn-color.js`，掃出「用在 `<button>` 上、
+但 CSS 沒設 color」的 class。桌機瀏覽器驗不出這個 bug，只能靠靜態掃描或 iPhone 實機。
+
 ### 2026-08-30（第七筆）｜dip-vinyl-shop｜「找一張來聽」獨立 hub 頁＋遊戲頁模式＋首頁四個像素圖示
 
 店主要求：三個選片遊戲玩的時候上方選單不該存在，並比照品味生死鬥給一個獨立 hub 頁。
