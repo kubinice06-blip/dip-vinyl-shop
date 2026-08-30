@@ -1,5 +1,50 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29（第三筆）｜dip-vinyl-shop｜封面改釘版本：CAA release-group front 會抽到別版壓片
+
+店主指出 Ry Cooder《Paris, Texas》線上顯示的是**歐洲版封面**。查證屬實，且原因是結構性的。
+
+## 不是壞圖，是抽錯版
+
+`card_catalog.coverUrl` 存的是 `coverartarchive.org/release-group/<rgMbid>/front`。
+**CAA 的 release-group front 回的是該群組底下「任意一筆」release 的圖**——
+這張抽到 **1985 德版 12"（Warner Bros. 925 270-1）的車牌封面**，
+而美版是劇照拼貼（Kinski／Hunter Carson／Harry Dean Stanton 站鐵軌，疊在德州地圖上）。
+
+該 release-group 底下 9 筆 release，有圖的 6 筆（1985 DE 12"、1988 US、1988 AU CD、
+1988 XE CD、1989 US、1990 US CD）。改釘 **1990 美版 CD**
+（Warner Bros. 9 25270-2，`4ef2780f-9fc1-33ff-80f6-4b4d65c4130a`）——
+同樣是美版視覺，掃圖 831KB／約 1400px，比 1988 美版黑膠那張 46KB／500px 的實體套照乾淨。
+
+**c-46 那筆標了 `visuallyVerified: true`**。教訓是：**目視只驗了「是不是這張專輯」，沒驗版本**。
+這條要寫進日後的封面覆核——同一張專輯的不同壓片視覺可以完全不同。
+
+## 這個坑有多大
+
+掃全部 onboarding manifest：**3,963 張有封面記錄，其中 3,751 張（94.7%）用的是
+release-group front**，只有 34 張釘到指定 release。也就是說**任何一張多壓片的專輯
+都可能顯示非預期版本**，只是多數專輯各版視覺相同才沒被看出來。
+
+尚未做全池掃描（要對每個 rgMbid 列 release 並比對圖片雜湊，量級數千次 CAA 查詢）。
+
+## 修法（單張）
+
+1. `https://musicbrainz.org/ws/2/release?release-group=<rg>&inc=labels+media&fmt=json` 列出各版，
+   逐筆打 `coverartarchive.org/release/<id>` 看哪些有圖
+2. 目視挑版本，取 `coverartarchive.org/release/<id>/front`
+3. PATCH Firestore `card_catalog` 的 `coverUrl`（updateMask 只動這欄）並回讀
+4. 同步本機的 manifest 與 `batch-progress/<批>/cover.json`
+
+**注意快取層級**：`card_catalog` 蓋過 worker KV，所以改 Firestore 就會生效（實測線上已換圖）。
+但**抽卡與唱片櫃走的是另一條路**——`WORKER_URL/spotify-search`，抓到後寫進
+`collections/{uid}/cards/{cardId}.coverUrl` 永久快取，**已經抽到這張卡的使用者不會跟著更新**。
+
+**主要檔案**：Firestore `card_catalog/ry cooder|paris, texas`、
+`onboarding-manifest-c46-soundtrack-cross-20260828.json`、`batch-progress/c46/cover.json`
+
+**驗證**：新網址 HTTP 200／image-jpeg／831,816 bytes；Firestore PATCH 200、回讀一致；
+線上 dipvinyl.tw 搜尋該卡，實際渲染出美版拼貼封面（截圖確認）。
+
 ### 2026-08-29（第二筆）｜dip-vinyl-shop｜搜尋專輯：標點會擋掉命中，接上既有的鬆散比對
 
 店主回報「Paris, Texas 搜尋不到」。查證後**卡池與線上資料都沒問題**——
