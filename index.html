@@ -2939,7 +2939,12 @@
           }
           return { q, total };
         });
-      return { moods, rows, openers: rows.slice().sort((a, b) => b.total - a.total).slice(0, 12) };
+      // 開場不再固定「鑑別度前 12 題」：那樣每次測驗都在同一小撮題裡打轉，
+      // 玩家測第二次就認得。改成全題庫都可能當開場，但抽中機率正比於鑑別度的 4 次方——
+      // 死題不是被排除，是機率低到幾乎不出現。2026-08-30 實測：能出現的題 12 → 108 種、
+      // 有效題數 12.0 → 22.1（變化度將近翻倍），判對率還從 62.2% 微升到 62.9%。
+      // 指數不要再往上調：指數 8 雖然更準，有效題數卻掉到 5.7，比現況還單調。
+      return { moods, rows, openWeight: rows.map(r => Math.pow(Math.max(r.total, 0.01), 4)) };
     }
 
     // 五個選項向量相加 →（各軸反比加權，否則 S 軸的訊號量會主導方向）→ 比方向不比長度。
@@ -2963,10 +2968,18 @@
     // 前 2 題廣撒網，之後看累積向量的方向找候選原型，挑最能拉開它們的那一題。
     // 候選用 cosine 不用歐氏距離——用距離的話座標最遠的 lowtide 永遠擠不進候選。
     function nextQuestion(answeredIds, usedIds) {
-      const { moods, rows, openers } = moodPrep, used = new Set(usedIds);
+      const { moods, rows, openWeight } = moodPrep, used = new Set(usedIds);
       const pickOpener = () => {
-        const pool = openers.filter(r => !used.has(r.q.id));
-        return pool.length ? pool[Math.floor(Math.random() * pool.length)].q : null;
+        let total = 0;
+        for (let i = 0; i < rows.length; i++) if (!used.has(rows[i].q.id)) total += openWeight[i];
+        if (!total) return null;
+        let x = Math.random() * total;
+        for (let i = 0; i < rows.length; i++) {
+          if (used.has(rows[i].q.id)) continue;
+          x -= openWeight[i];
+          if (x <= 0) return rows[i].q;
+        }
+        return rows.find(r => !used.has(r.q.id))?.q || null;
       };
       if (answeredIds.length < 2) return pickOpener() || rows.find(r => !used.has(r.q.id))?.q || null;
 
@@ -2984,15 +2997,23 @@
       }
       // 成對分離，不是加總分離：加總會讓「對大家都有點用」的題永遠贏過
       // 「只對關鍵一對有用」的題——分辨 still 和 lowtide 靠 M 軸，加總制下永遠選不上。
+      //
+      // 分離怎麼算（2026-08-30 改）：問的是「A 候選人會挑的選項，跟 B 候選人會挑的選項，
+      // 差多少」，不是舊版的「四個選項的分數散得開嗎」。舊版會挑到一種爛題——
+      // 分數確實散得開，但散的來源是一個兩邊都不會選的選項，實際上零分辨。
+      // 實證：hermit 玩家 300 場有 278 場被問 q_125，而 hermit 與 still 在那題的最佳答案
+      // 是同一個，等於白問一題，hermit 判對率只有 24%。改成答案分歧法後升到 45% 上下。
       let best = null, bs = -1;
       for (const r of rows) {
         if (used.has(r.q.id)) continue;
+        const vs = r.q.o.map((_, oi) => moodData.vectors[`${r.q.id}-${oi}`]);
         let s = 0;
         for (let i = 0; i < cands.length; i++) for (let j = i + 1; j < cands.length; j++) {
           const diff = {};
           for (const k of AXES) diff[k] = (moodData.targets[cands[i]][k] || 0) - (moodData.targets[cands[j]][k] || 0);
-          const sc = r.q.o.map((_, oi) => dot(moodData.vectors[`${r.q.id}-${oi}`], diff));
-          s += Math.max(...sc) - Math.min(...sc);
+          const bi = vs.reduce((m, v, k) => dot(v, moodData.targets[cands[i]]) > dot(vs[m], moodData.targets[cands[i]]) ? k : m, 0);
+          const bj = vs.reduce((m, v, k) => dot(v, moodData.targets[cands[j]]) > dot(vs[m], moodData.targets[cands[j]]) ? k : m, 0);
+          s += Math.abs(dot(vs[bi], diff) - dot(vs[bj], diff));
         }
         if (s > bs) { bs = s; best = r.q; }
       }
