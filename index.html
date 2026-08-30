@@ -422,6 +422,11 @@
       font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: 0.08em; color: var(--black);
     }
     .homehub-group-label:hover { opacity: 0.6; }
+    /* 首頁四個標題前的像素小圖：與 caret 同一招——絕對定位在文字左外緣，
+       完全不佔寬度，標題文字維持真正置中（改字數也不會被推歪）。
+       圖的黑色部分畫成 currentColor，卡片 hover 反白時圖跟著轉白，不會消失在黑底上。 */
+    .hub-ico-wrap { position: relative; display: inline-block; }
+    .hub-ico { position: absolute; right: calc(100% + 9px); top: 50%; transform: translateY(-50%); line-height: 0; pointer-events: none; }
     /* caret 絕對定位在右側（與卡片箭頭同一條線）：不佔寬度，標題文字才真正置中 */
     .homehub-group-caret { position: absolute; right: 24px; top: 50%; font-size: 9px; font-weight: 400; letter-spacing: 0; color: var(--gray); transform: translateY(-50%); transition: transform 0.2s; }
     .homehub-group-label[aria-expanded="false"] .homehub-group-caret { transform: translateY(-50%) rotate(-90deg); }
@@ -476,6 +481,32 @@
       position: sticky; top: 0; z-index: 20; transition: color 0.15s;
     }
     .hub-back-btn:hover { color: var(--black); }
+
+    /* ── 遊戲頁模式（心情選歌／類型挑片／直接來一張）──
+       玩這三個時，站頂 logo、頂欄、主分頁列整組收起，畫面只剩遊戲本身，
+       視覺上等同 battle.html 那種獨立頁。登入與自動試聽開關不是藏掉，
+       是被搬進遊戲自己的頂欄（setActiveTab → moveGameChrome），免得玩到一半沒得登入。 */
+    body.game-page .logo-hero,
+    body.game-page .topbar,
+    body.game-page .main-tabs,
+    body.game-page > footer { display: none; }
+    /* 客服泡泡在遊戲畫面同樣是雜訊，但它的 iframe 是隨機 id、沒有 title，
+       CSS 選擇器抓不到（上面 app-mode 那組其實也沒作用），只能走 Tawk_API → applyTawkVisibility() */
+    /* 沒有站頂那幾層之後，遊戲區塊自己就是整頁，左右框線拿掉才不會像浮在頁面裡 */
+    body.game-page .quiz-inner { border-left: none; border-right: none; }
+    .game-topbar { display: none; }
+    body.game-page .game-topbar {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: rgba(255,255,255,0.98); border-bottom: 1px solid var(--line);
+      padding: 8px 14px 8px 20px; min-height: 40px;
+      position: sticky; top: 0; z-index: 20;
+    }
+    .game-back-btn {
+      background: none; border: none; padding: 0; font-family: var(--mono); font-size: 11px;
+      letter-spacing: 0.08em; color: var(--gray); cursor: pointer; transition: color 0.15s;
+    }
+    .game-back-btn:hover { color: var(--black); }
+    .game-top-slot { display: flex; align-items: center; gap: 12px; }
 
     /* 會員狀態（頂欄） */
     .auth-status { display: flex; align-items: center; gap: 8px; }
@@ -716,40 +747,21 @@
     <div class="homehub-sub">不知道從何聽起？<br>沾記幫你挖出屬於你的那張。</div>
   </div>
   <div class="homehub-cards">
-    <button type="button" class="homehub-group-label" data-group="find" aria-expanded="false">
-      找一張來聽<span class="homehub-group-caret">▼</span>
+    <!-- 三個選片遊戲移到獨立的 hub 頁 find.html（與品味生死鬥同格式），首頁只留一張入口卡 -->
+    <button class="homehub-card homehub-solo" data-go="find">
+      <div>
+        <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="pick">找一張來聽</span></div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
     </button>
-    <div class="homehub-group-body">
-      <button class="homehub-card" data-go="quiz">
-        <div>
-          <div class="homehub-card-name">心情選歌</div>
-          <div class="homehub-card-desc">回答幾個問題，讓心情帶你找到一張唱片。</div>
-        </div>
-        <span class="homehub-card-arrow">→</span>
-      </button>
-      <button class="homehub-card" data-go="genre">
-        <div>
-          <div class="homehub-card-name">類型挑片</div>
-          <div class="homehub-card-desc">選個領域，透過三位藝人的品味挖出那張。</div>
-        </div>
-        <span class="homehub-card-arrow">→</span>
-      </button>
-      <button class="homehub-card" data-go="random">
-        <div>
-          <div class="homehub-card-name">直接來一張</div>
-          <div class="homehub-card-desc">不想選？隨機抽一張你沒聽過的。</div>
-        </div>
-        <span class="homehub-card-arrow">→</span>
-      </button>
-    </div>
     <button class="homehub-card homehub-solo" data-go="pvp">
       <div>
-        <div class="homehub-card-name">品味生死鬥<span class="homehub-beta">BETA</span></div>
+        <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="battle">品味生死鬥</span><span class="homehub-beta">BETA</span></div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
     <button type="button" class="homehub-group-label" data-group="mine" aria-expanded="false">
-      你的收藏<span class="homehub-group-caret">▼</span>
+      <span class="hub-ico-wrap" data-hubico="crate">你的收藏</span><span class="homehub-group-caret">▼</span>
     </button>
     <div class="homehub-group-body">
       <div class="homehub-small-grid">
@@ -773,7 +785,7 @@
         </button>
       </div>
     </div>
-    <div class="homehub-search-label">搜尋專輯</div>
+    <div class="homehub-search-label"><span class="hub-ico-wrap" data-hubico="lens">搜尋專輯</span></div>
     <form class="homehub-search" id="homehubSearchForm">
       <select id="homehubSearchField" aria-label="搜尋範圍">
         <option value="all">全部</option>
@@ -886,7 +898,10 @@
 <!-- 類型挑片 modal -->
 <div class="quiz-modal" id="genreModal">
   <div class="quiz-inner">
-    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
+    <div class="game-topbar">
+      <button class="game-back-btn" data-game-back>↩ 找一張來聽</button>
+      <span class="game-top-slot"></span>
+    </div>
     <div id="genreContent"></div>
   </div>
 </div>
@@ -902,7 +917,10 @@
 <!-- 心理測驗 modal -->
 <div class="quiz-modal" id="quizModal">
   <div class="quiz-inner">
-    <button class="hub-back-btn" data-hub-back>← 返回首頁</button>
+    <div class="game-topbar">
+      <button class="game-back-btn" data-game-back>↩ 找一張來聽</button>
+      <span class="game-top-slot"></span>
+    </div>
     <div id="quizContent"></div>
   </div>
 </div>
@@ -2556,9 +2574,130 @@
   let activeTab = 'used';
   let currentView = 'home'; // 目前所在分頁（含非 main-tab 的唱片櫃／紀錄等）
 
+  // ── 首頁四個標題前的像素小圖（12×12 手刻，畫法與調色沿用 roguelike 的 pixArtHTML）──
+  // 黑色格子畫成 currentColor：卡片 hover 反白時圖跟著轉白；金色是共同的點綴色。
+  // 24×24：站上顯示 24px 時剛好一格一像素，邊緣最利（縮放會讓格線糊掉）。
+  // 幾何部分由 scratchpad/gen-icons.js 產生，改圖請改那支再回寫，不要手打格子。
+  // 32×32：站上顯示 32px 時剛好一格一像素，邊緣最利（縮放會讓格線糊掉）。
+  // 幾何部分由 scratchpad/gen-icons.js 產生，改圖請改那支再回寫，不要手打格子。
+  const HUB_PIX = {
+    // 直接照抄店主提供的 find_a_record.jpg：由 scratchpad/trace.js 逐格讀取原圖像素轉成，
+    // 不是憑印象重畫（憑印象畫了六版都不像，這點別再重蹈覆轍）
+    pick: [
+      '................................', '.................kkkkkkkkkk.....', '..............kkkkssssssssk.....',
+      '...........kkkksssssssssssk.....', '..........kkssssssssssssssk.....', '.........kksssssssssssssssk.....',
+      '........kkssssssssssssskkkk.....', '........kssskkkssssssskk........', '.......kssskwwkkssssskk.........',
+      '.......ksskkkkkksssssk..........', '.......kskkkkkkksssskk..........', '.......kkkkkkkkkssskk...........',
+      '.......kkkkskkkssskkkk..........', '......kkksskkkssskkkkkk.........', '......kkskkkkksskkkkkkkk........',
+      '.....kkskkkskksskkkkkkkkk.......', '.....kskkkskkkkkkkkkkkkkk.......', '....kkskkskkkwwwkkkkkkkkkk......',
+      '....kkkkkkkkwwwwwkkkkkkkkk......', '....kkkkkkkkwwwwwkkkkkkkkk......', '....kkkkkkkkwwkwwkkkkkkkkk......',
+      '....kkkkkkkkwwwwwkkkkkkkkk......', '....kkkkkkkkkwwwkkkkskskkk......', '.....kkkkkkkkkkkkkkskkskk.......',
+      '.....kkkkkkkkkkkksskkskkk.......', '......kkkkkkkkkkkkkkskkk........', '.......kkkkkkkkkkkkskkk.........',
+      '........kkkkkkkkksskkk..........', '........kkkkkkkkkkkkk...........', '..........kkkkkkkkk.............',
+      '................................', '................................',
+    ],
+    // 交叉雙劍（品味生死鬥）：刀身 2 格寬、金護手與刀身垂直、握把與金劍柄頭。
+    // 刀身畫 3 格寬會讓交叉處糊成一團；45 度斜線要沿軸鋪實心方塊，用垂直位移會變點狀虛線
+    // 兩張唱片對撞（品味生死鬥）：直接照抄店主提供的 battle.jpg，
+    // 由 scratchpad/trace2.js 逐格讀取原圖像素轉成（原圖就是 49 格見方）
+    battle: [
+      '.................................................', '.................................................', '.................................................',
+      '.................................................', '..............kkkkkkkk...........................', '............kkkkkkkkkkkk.........k...............',
+      '..........kkkkkkkkkkkkkkkk......kkk...k..........', '.........kkkkkkkkkkkkkkkkkk.....kkk...k..........', '........kkkkkkkkkkkkkkkkkkkk.....kk..k...........',
+      '.......kkkkkkkkkkkkkkkkkkkkkk....k...k.....k.....', '......kkkkkkkkkkkkkkkkkkkkkkkk......k.....k......', '.....kkkkkkkkkkkkkkkkkkkkkkkkkk....k.....k.......',
+      '.....kkkkkkkkkkkkkkkkkkkkkkkkkk....k....k........', '.....kkkkkkkkkkrrrrrrkkkkkkkkkk...k....k.........', '....kkkkkkkkkkrrrrrrrrkkkkkkkkkk..k...k..........',
+      '....kkkkkkkkkrrrrrrrrrrkkkkkkkkk....k....kkgk....', '....kkkkkkkkkrrrrrrrrrrkkkkkkkkk.........kggk....', '....kkkkkkkkkrrrrrrrrrrkkkkkkkkk.....kk..kkk.....',
+      '....kkkkkkkkkrrrrrrrrrrkkkkkkkkwkkkk.............', '....kkkkkkkkkkrrrrrrrrkkkkkkkkwkkwwwkkk..........', '.....kkkkkkkkkkrrrrrrkkkkkkkwwkwwwkkwwwk.........',
+      '.....kkkkkkkkkkkkkkkkkkkkkkwwkkkkkwwwwwwk........', '......kkkkkkkkkkkkkkkkkkkkkwkkkkwwwkkwwwwk.......', '......kkkkkkkkkkkkkkkkkkkkwkwkwwkwwwwwwwwwk......',
+      '.......kkkkkkkkkkkkkkkkkkwkwwwwwwkkwwwwwwwk......', '........kkkkkkkkkkkkkkkkwkwwwwwwwwwwwwwwwwwk.....', '.........kkkkkkkkkkkkkkwkwkwwkkkkkwwwwwwwwwk.....',
+      '..........kkkkkkkkkkkkwwkwkwkgggggkwwwwwwwwwk....', '............kkkkkkkkkwwkwwwkgggggggkwwwwwwwwk....', '..............kkkkkwwwkkwwkgggggggggkwwwwwwwk....',
+      '......kk...k......kkwwwwwwkggggkggggkwwwwwwwk....', '.....kkkk.....k...kkwkwwkwkgggggggggkwwwwwwwk....', '.....kkkk........kkwwkwwkwkgggggggggkwwwwwwwk....',
+      '...........k.....kwwkwwkwwkggggggggkwwwwwwwwk....', '..........kk.....kwkkwwkwwwkggggggkkwwwwwwwwk....', '.........k......k.kkwwwkwwwwkgggggkwwwwwwwwk.....',
+      '.............k.....kwwwwwwwwwkkkkwwwwwwwwwwk.....', '............k.......kwwwwwwwwwwwwwwwwwwwwwk......', '...........k........kwwwwwwwwwwwwwwwwwwwwwk......',
+      '..........k.....kk...kwwwwwwwwwwwwwwwwwwwk.......', '.........k.....k.k....kwwwwwwwwwwwwwwwwwk........', '........k......k.k.....kwwwwwwwwwwwwwwwk.........',
+      '.......k.........k......kkwwwwwwwwwwwkk..........', '..........................kkwwwwwwwkk............', '............................kkkkkkk..............',
+      '.................................................', '.................................................', '.................................................',
+      '.................................................',
+    ],
+    // 兩層唱片櫃（你的收藏），上層一張金色的是你的招牌盤。
+    // 刻意畫小：墨水佔滿畫布時，跟其他圖示並排會顯得特別大
+    crate: [
+      '................................', '................................', '................................',
+      '................................', '....kkkkkkkkkkkkkkkkkkkkkkkkkk..', '....k........................k..',
+      '....k.k..k..k..g..k..k..k..k.k..', '....k.k..k..k..g..k..k..k..k.k..', '....k.k..k..k..g..k..k..k..k.k..',
+      '....k.k..k..k..g..k..k..k..k.k..', '....k.k..k..k..g..k..k..k..k.k..', '....k.k..k..k..g..k..k..k..k.k..',
+      '....k.k..k..k..g..k..k..k..k.k..', '....k.k..k..k..g..k..k..k..k.k..', '....k........................k..',
+      '....kkkkkkkkkkkkkkkkkkkkkkkkkk..', '....k........................k..', '....k.k..k..k..k..k..k..k..k.k..',
+      '....k.k..k..k..k..k..k..k..k.k..', '....k.k..k..k..k..k..k..k..k.k..', '....k.k..k..k..k..k..k..k..k.k..',
+      '....k.k..k..k..k..k..k..k..k.k..', '....k.k..k..k..k..k..k..k..k.k..', '....k.k..k..k..k..k..k..k..k.k..',
+      '....k.k..k..k..k..k..k..k..k.k..', '....kkkkkkkkkkkkkkkkkkkkkkkkkk..', '......k....................k....',
+      '......k....................k....', '................................', '................................',
+      '................................', '................................',
+    ],
+    // 放大鏡（搜尋專輯）：刻意畫小一圈——墨水佔滿畫布時，跟其他圖示並排會顯得特別大
+    lens: [
+      '................................', '................................', '................................',
+      '................................', '..........kkk...................', '........kkkkkkk.................',
+      '......kkk.....kkk...............', '......kk.......kk...............', '.....kkggg......kk..............',
+      '.....k.ggg.......k..............', '....kk...........kk.............', '....kk...........kk.............',
+      '....kk...........kk.............', '.....k...........k..............', '.....kk.........kk..............',
+      '......kk.......kkk..............', '......kkk.....kkkkk.............', '........kkkkkkkkkkkk............',
+      '..........kkk...kkkkk...........', '.................kkkkk..........', '..................kkkkk.........',
+      '...................kkkk.........', '....................kkk.........', '................................',
+      '................................', '................................', '................................',
+      '................................', '................................', '................................',
+      '................................', '................................',
+    ],
+  };
+  function hubPixSvg(rows, size) {
+    const pal = { k: 'currentColor', g: '#b8860b', s: '#e8b48c', r: '#c11628', w: '#fff', d: '#888', e: '#d8d8d8' };
+    const w = rows[0].length, h = rows.length;
+    let rects = '';
+    rows.forEach((row, y) => {
+      for (let x = 0; x < row.length; x++) {
+        const c = pal[row[x]];
+        if (c) rects += `<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`;
+      }
+    });
+    return `<svg width="${size}" height="${Math.round(size * h / w)}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
+  }
+  function mountHubIcons() {
+    document.querySelectorAll('[data-hubico]').forEach(el => {
+      const rows = HUB_PIX[el.dataset.hubico];
+      if (!rows || el.querySelector('.hub-ico')) return;
+      el.insertAdjacentHTML('afterbegin', `<span class="hub-ico">${hubPixSvg(rows, 44)}</span>`);
+    });
+  }
+
+  // 遊戲頁模式：把全站唯一的自動試聽開關與登入區搬進遊戲頂欄，離開遊戲再搬回站頂。
+  // 搬的是同一組 DOM 節點（不是複製）：事件與狀態都跟著走，updateAuthUI 之後照樣找得到 #authStatus。
+  function moveGameChrome(modalId) {
+    const slot = modalId ? document.querySelector('#' + modalId + ' .game-top-slot') : null;
+    const home = document.querySelector('.topbar-right');
+    const target = slot || home;
+    if (!target) return;
+    ['dipAutoplaySlot', 'authStatus'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.parentElement !== target) target.appendChild(el);
+    });
+  }
+
+  // 客服泡泡：App 模式與遊戲頁模式都收起來。它的 iframe 是隨機 id，只能靠 Tawk_API；
+  // 腳本可能比第一次呼叫還晚到，所以 onLoad 也綁同一支（見 bootstrapView）。
+  function applyTawkVisibility() {
+    const hide = window.__APP_MODE__ || document.body.classList.contains('game-page');
+    try {
+      const T = window.Tawk_API;
+      if (!T) return;
+      if (hide) { if (T.hideWidget) T.hideWidget(); }
+      else if (T.showWidget) T.showWidget();
+    } catch (e) {}
+  }
+
   function setActiveTab(tab) {
     // 卡牌對戰為獨立頁面，直接導向
     if (tab === 'pvp') { location.href = 'pvp.html'; return; }
+    if (tab === 'find') { location.href = 'find.html'; return; }   // 三個選片遊戲的 hub 頁
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
@@ -2568,6 +2707,11 @@
     // gpStopPreview 內部會檢查 gpPreviewStarted，沒在播就不動作。
     if (tab !== currentView) gpStopPreview({ fade: true });
     currentView = tab;
+    // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
+    const gameModal = tab === 'quiz' ? 'quizModal' : (tab === 'genre' || tab === 'random') ? 'genreModal' : null;
+    document.body.classList.toggle('game-page', !!gameModal);
+    moveGameChrome(gameModal);
+    applyTawkVisibility();
     // tab 高亮
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
@@ -5450,6 +5594,8 @@ ${seenList}
     const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
     const target = hash || path;
 
+    mountHubIcons();
+
     // 首頁 hub 卡片（網站與 App 共用）
     document.querySelectorAll('#homeHub .homehub-card').forEach((card) => {
       card.addEventListener('click', () => setActiveTab(card.dataset.go));
@@ -5483,16 +5629,19 @@ ${seenList}
     // 遊戲畫面「返回首頁」
     document.addEventListener('click', (e) => {
       if (e.target.closest('[data-hub-back]')) setActiveTab('home');
+      // 三個選片遊戲的上一層是 find.html 這個 hub，不是首頁
+      if (e.target.closest('[data-game-back]')) location.href = 'find.html';
     });
 
     if (window.__APP_MODE__) {
-      // App 模式：改頂欄標題、隱藏 Tawk 客服泡泡
+      // App 模式：改頂欄標題
       const logo = document.querySelector('.topbar-logo');
       if (logo) logo.textContent = 'dip 選歌';
-      window.Tawk_API = window.Tawk_API || {};
-      window.Tawk_API.onLoad = function () { try { window.Tawk_API.hideWidget(); } catch (e) {} };
-      try { if (window.Tawk_API.hideWidget) window.Tawk_API.hideWidget(); } catch (e) {}
     }
+    // 客服泡泡的顯隱：App 模式與遊戲頁模式都收起。腳本晚到時由 onLoad 再套一次。
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_API.onLoad = applyTawkVisibility;
+    applyTawkVisibility();
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
