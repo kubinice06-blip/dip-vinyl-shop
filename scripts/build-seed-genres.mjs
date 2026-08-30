@@ -1,4 +1,4 @@
-// 為 seed_cards.json 補第 6 欄、apex_pool.json 補第 3 欄曲風標籤（音樂地圖 10 類 id 陣列）。
+// 為 seed_cards.json 補第 6 欄曲風標籤（音樂地圖 10 類 id 陣列）。王牌與一般卡同一份檔，一起處理。
 // 來源：worker /album-genres（Spotify→Last.fm，KV 永久快取；onboarding 已預播種，幾乎全 KV-HIT）。
 // 可重複執行：已有曲風欄的列直接跳過——onboarding 追加新卡後重跑一次即可補齊。
 // 用法：node scripts/build-seed-genres.mjs [--force] [--fix-only]
@@ -59,7 +59,6 @@ function applySoulFix(artist, genres, album) {
 const fixOnly = process.argv.includes('--fix-only');
 
 const SEED = new URL('../seed_cards.json', import.meta.url);
-const APEX = new URL('../apex_pool.json', import.meta.url);
 const WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 const MAP_GENRES = new Set(['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues']);
 const CONCURRENCY = 8;
@@ -117,26 +116,6 @@ console.log(`seed done ${done}: KV-HIT ${hits}, empty-genre ${empty}, failed(kep
 const tagged = rows.filter(r => Array.isArray(r[5])).length;
 console.log(`seed rows with genre column: ${tagged}/${rows.length}`);
 
-// apex_pool：三分類各列補第 3 欄曲風（前端 pickApexCard 靠它在類型挑片挑同曲風王牌）
-const apex = JSON.parse(fs.readFileSync(APEX, 'utf8'));
-let apexDone = 0, apexFailed = 0;
-for (const tier of ['hall', 'pearl', 'heresy']) {
-  const list = apex[tier] || [];
-  for (let i = 0; i < list.length; i++) {
-    if (!fixOnly && (force || !Array.isArray(list[i][2]))) {
-      const out = await fetchGenres(list[i][0], list[i][1]);
-      // 只覆寫第 3 欄，其餘欄位（第 4 欄的發行年份）必須原封不動——
-      // 原本這裡是重建成三元素陣列，會把年份整批洗掉。
-      if (out) { list[i][2] = out.genres; apexDone++; }
-      else apexFailed++;
-    }
-    // 人工覆寫（含 --fix-only）
-    const g = applySoulFix(list[i][0], list[i][2], list[i][1]);
-    if (Array.isArray(g) && JSON.stringify(g) !== JSON.stringify(list[i][2])) { list[i][2] = g; apexDone++; }
-  }
-}
-if (apexDone || apexFailed) {
-  // 與現行 apex_pool.json 的格式（indent=1）逐字一致，避免腳本一跑整檔重排產生假 diff
-  fs.writeFileSync(APEX, JSON.stringify(apex, null, 1));
-}
-console.log(`apex tagged ${apexDone}, failed ${apexFailed}`);
+// 2026-08-30 卡池合併後，王牌就是同一份檔裡第 9 欄有 tier 的列，曲風一樣在第 6 欄，
+// 上面那個主迴圈已經全部涵蓋——原本這裡有一整段「apex_pool 各分類補第 3 欄」的重複邏輯，
+// 連同「只覆寫第 3 欄、別把第 4 欄年份洗掉」這種容易寫錯的注意事項，一起消失了。

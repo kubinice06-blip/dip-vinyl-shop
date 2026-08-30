@@ -4,7 +4,9 @@ import fs from 'node:fs';
 const R = 'C:/Users/User/dip-vinyl-home/dip-vinyl-shop';
 const MBID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const seed = JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'));
-const apex = JSON.parse(fs.readFileSync(`${R}/apex_pool.json`, 'utf8'));
+// 2026-08-30 卡池合併：王牌不再另存 apex_pool.json，改成 seed_cards.json 第 9 欄 tier。
+// 這裡就地重建成舊的 {hall,pearl,heresy} 結構，下游用法完全不必改。
+const apex = (() => { const _r = JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8')); const _a = { hall: [], pearl: [], heresy: [] }; for (const _x of _r) if (_x[8] && _a[_x[8]]) _a[_x[8]].push([_x[0], _x[1], _x[5], _x[6]]); return _a; })();
 const fold = s => String(s || '').replace(/[‐-―－]/g, '-').normalize('NFKD')
   .replace(/[\u0300-\u036f]/g, '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
 const poolKeys = new Set([

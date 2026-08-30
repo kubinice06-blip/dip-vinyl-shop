@@ -11,25 +11,26 @@
 //   node check.mjs "Ennio Morricone|The Good, the Bad and the Ugly"
 //   node check.mjs --file list.txt      # 每行一筆 artist|album
 //   echo "A|B" | node check.mjs --stdin
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
-const R = '/home/user/dip-vinyl-shop';
+// 路徑相對於本腳本，本機與雲端都能跑（原本寫死 /home/user/dip-vinyl-shop，只有雲端環境能用）
+const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const norm = s => String(s || '').toLowerCase()
   .replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
 const key = (a, b) => norm(a) + '|' + norm(b);
 
 const pool = new Map();                       // key → 來源說明
 const add = (a, b, src) => { const k = key(a, b); if (!pool.has(k)) pool.set(k, `${src}｜${a} — ${b}`); };
-for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) add(r[0], r[1], 'seed');
-const apex = JSON.parse(fs.readFileSync(`${R}/apex_pool.json`, 'utf8'));
-for (const t of Object.keys(apex)) for (const r of apex[t]) add(r[0], r[1], `apex:${t}`);
+// 2026-08-30 起單一卡池檔：每列第 9 欄有 tier 的就是王牌（合併前王牌另存 apex_pool.json）
+for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) add(r[0], r[1], r[8] ? `apex:${r[8]}` : 'seed');
 for (const f of fs.readdirSync(R).filter(x => /^onboarding-manifest-.*json$/.test(x)))
   for (const a of (JSON.parse(fs.readFileSync(`${R}/${f}`, 'utf8')).albums || [])) add(a.artist, a.album, f.replace(/^onboarding-manifest-|\.json$/g, ''));
 
 // 同藝人的其他作品：判斷「這位藝人池裡有沒有、有的話收了哪幾張」
 const byArtist = new Map();
 const addArt = (a, b, src) => { const n = norm(a); if (!byArtist.has(n)) byArtist.set(n, []); byArtist.get(n).push(`${b} [${src}]`); };
-for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) addArt(r[0], r[1], 'seed');
-for (const t of Object.keys(apex)) for (const r of apex[t]) addArt(r[0], r[1], `apex:${t}`);
+for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) addArt(r[0], r[1], r[8] ? `apex:${r[8]}` : 'seed');
 for (const f of fs.readdirSync(R).filter(x => /^onboarding-manifest-.*json$/.test(x)))
   for (const a of (JSON.parse(fs.readFileSync(`${R}/${f}`, 'utf8')).albums || [])) addArt(a.artist, a.album, 'manifest');
 
@@ -37,8 +38,7 @@ for (const f of fs.readdirSync(R).filter(x => /^onboarding-manifest-.*json$/.tes
 const byAlbum = new Map();
 {
   const push = (a, b, src) => { const n = norm(b); if (!byAlbum.has(n)) byAlbum.set(n, []); byAlbum.get(n).push({ a, src }); };
-  for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) push(r[0], r[1], 'seed');
-  for (const t of Object.keys(apex)) for (const r of apex[t]) push(r[0], r[1], `apex:${t}`);
+  for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) push(r[0], r[1], r[8] ? `apex:${r[8]}` : 'seed');
   for (const f of fs.readdirSync(R).filter(x => /^onboarding-manifest-.*json$/.test(x)))
     for (const a of (JSON.parse(fs.readFileSync(`${R}/${f}`, 'utf8')).albums || [])) push(a.artist, a.album, 'manifest');
 }

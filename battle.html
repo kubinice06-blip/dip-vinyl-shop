@@ -811,7 +811,7 @@ const ULT_FLAVOR = ['⚡ 氣勢滿溢，殺氣騰騰','⚡ 渾身散發要輾壓
 const pick = a => a[rnd(a.length)];
 
 // ===== 內建備援卡池（對戰 stats 1–5；王牌單軸 7）=====
-// 正式池在下方 poolReady 從 seed_cards.json / apex_pool.json 載入後整份覆蓋；這裡只在 fetch 失敗時墊檔
+// 正式池在下方 poolReady 從 seed_cards.json 載入後整份覆蓋；這裡只在 fetch 失敗時墊檔
 const POOL = [
   ['Radiohead','Kid A',5,2,4], ['The Velvet Underground','White Light/White Heat',4,4,5],
   ['Slint','Spiderland',3,4,4], ['My Bloody Valentine','Loveless',5,3,4],
@@ -917,22 +917,23 @@ const ACE_STATS = {
   heresy: { classic:1, obscurity:1, accessibility:7 },
 };
 
-// ===== 正式卡池：seed_cards.json（約 5,500 張精選普卡含三圍，已逐張驗過為真實正式專輯）＋ apex_pool.json（殿堂400/流亡100/異端100 王牌）=====
-// 開場先載入、抽牌全走這份；上面的內建小池只當 fetch 失敗時的備援
+// ===== 正式卡池：seed_cards.json 單一檔（普卡含三圍，王牌是多帶第 9 欄 tier 的同一種列）=====
+// 開場先載入、抽牌全走這份；上面的內建小池只當 fetch 失敗時的備援。
+// 2026-08-30 合併前是 seed_cards.json ＋ apex_pool.json 兩份，王牌那份沒有三軸，
+// 升降級得回頭去 Firestore 撈值才組得出列——所以併成一份。
 const poolReady = (async()=>{
   try{
-    const [seed, apex] = await Promise.all([
-      fetch('seed_cards.json').then(r=>r.ok?r.json():Promise.reject(r.status)),
-      fetch('apex_pool.json').then(r=>r.ok?r.json():Promise.reject(r.status)),
-    ]);
-    if(Array.isArray(seed) && seed.length){
+    const rows = await fetch('seed_cards.json').then(r=>r.ok?r.json():Promise.reject(r.status));
+    if(Array.isArray(rows) && rows.length){
       POOL.length = 0;
-      // seed 第 7 欄／apex 第 4 欄是發行年份（可能沒有，缺的就是 undefined，顯示端自己略過）
-      for(const [artist,album,c,o,a,g,year] of seed) POOL.push({artist,album,classic:c,obscurity:o,accessibility:a,year,ace:null});
+      const aces = [];
+      // 第 7 欄是發行年份（可能沒有，缺的就是 undefined，顯示端自己略過）；第 9 欄是 tier
+      for(const [artist,album,c,o,a,g,year,composer,tier] of rows){
+        if(tier && ACE_STATS[tier]) aces.push({artist,album,year,...ACE_STATS[tier],ace:tier});
+        else POOL.push({artist,album,classic:c,obscurity:o,accessibility:a,year,ace:null});
+      }
+      if(aces.length){ ACES.length = 0; ACES.push(...aces); }
     }
-    const aces = [];
-    for(const t of ['hall','pearl','heresy']) for(const [artist,album,g,year] of (apex&&apex[t])||[]) aces.push({artist,album,year,...ACE_STATS[t],ace:t});
-    if(aces.length){ ACES.length = 0; ACES.push(...aces); }
   }catch(e){ /* 讀不到 → 用內建備援池，照樣能玩 */ }
 })();
 

@@ -15,12 +15,11 @@ const outPath = process.argv[4] || inPath.replace(/\.json$/, '-ranked.json');
 if (!inPath || !keepN) { console.error('用法: node 2b-rate-and-rank.mjs <步驟1輸出檔> <保留張數> [輸出檔]'); process.exit(1); }
 
 const SEED = 'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/seed_cards.json';
-const APEX = 'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/apex_pool.json';
 const norm = s => s.toLowerCase().replace(/[^a-z0-9ぁ-ヿ一-鿿]/g, '');
 const seed = JSON.parse(fs.readFileSync(SEED, 'utf-8'));
-const apexPool = JSON.parse(fs.readFileSync(APEX, 'utf-8'));
-// apex_pool 也算「已有」：王牌卡不在 seed 裡，漏比會一卡兩身分（2026-07-22 工業批踩過）
-const seedKeys = new Set([...seed, ...Object.values(apexPool).flat()].map(([a, b]) => norm(a) + '|' + norm(b)));
+// 2026-08-30 卡池合併：王牌就是同一份檔裡第 9 欄有 tier 的列，一次比完
+// （合併前王牌另存 apex_pool.json，漏比會一卡兩身分，2026-07-22 工業批踩過）
+const seedKeys = new Set(seed.map(([a, b]) => norm(a) + '|' + norm(b)));
 
 let rows = JSON.parse(fs.readFileSync(inPath, 'utf-8'));
 const before = rows.length;

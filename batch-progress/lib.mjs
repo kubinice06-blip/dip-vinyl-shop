@@ -11,12 +11,9 @@ export const fold = s => String(s || '').replace(/[‐-―－]/g, '-').normalize
 export const key = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 
 export function loadPool() {
+  // 2026-08-30 起單一卡池檔：每列第 9 欄有 tier 的就是王牌（合併前王牌另存 apex_pool.json）
   const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
-  const apex = JSON.parse(fs.readFileSync(path.join(ROOT, 'apex_pool.json'), 'utf8'));
-  const rows = [
-    ...seed.map(r => ({ artist: r[0], album: r[1], where: 'seed', year: r[6] })),
-    ...['hall', 'pearl', 'heresy'].flatMap(t => apex[t].map(r => ({ artist: r[0], album: r[1], where: `apex:${t}`, year: r[3] }))),
-  ];
+  const rows = seed.map(r => ({ artist: r[0], album: r[1], where: r[8] ? `apex:${r[8]}` : 'seed', year: r[6] }));
   // 未上架 manifest 也要納入去重範圍（c-47 的 171 張還卡在 Firestore 配額沒進池）
   const manifestRows = [];
   for (const f of fs.readdirSync(ROOT).filter(f => /^onboarding-manifest-.*\.json$/.test(f))) {

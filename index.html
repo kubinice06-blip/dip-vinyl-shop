@@ -1391,7 +1391,7 @@
     gc.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">抽「${labelMap[tier]}」卡中…</div></div>`;
 
     try {
-      // 從固定卡池 apex_pool.json 抽（與對戰同一份、已逐張人工驗證），不再走 AI 推薦
+      // 從卡池的王牌列抽（與對戰同一份、已逐張人工驗證），不再走 AI 推薦
       const pool = await loadCardPool();
       const rows = pool.apex[tier] || [];
       if (!rows.length) throw new Error('一時抽不到合適的卡，回唱片櫃再點一次');
@@ -2886,27 +2886,18 @@
     return YEAR_MAP.get(yearKeyOf(artist, album)) || '';
   }
   // 古典特例（2026-08-14 店主指定）：卡片 artist 欄依慣例放演奏者／指揮，
-  // 作曲家另存卡池第 8 欄（apex 第 5 欄），與年份同一套載入路徑，零額外請求。
+  // 作曲家存卡池第 8 欄，與年份同一套載入路徑，零額外請求。
   const COMPOSER_MAP = new Map();
   function composerOf(artist, album) {
     const c = COMPOSER_MAP.get(yearKeyOf(artist, album));
     return c ? `作曲：${c}` : '';
   }
-  // 年份就存在卡池本體（seed 第 7 欄／apex 第 4 欄），這兩個檔開場本來就會載入，
-  // 同一個 URL 會走瀏覽器快取 → 實質零額外請求，也不會有另開一份檔案的同步問題。
-  Promise.all([
-    fetch('seed_cards.json').then(r => r.ok ? r.json() : []),
-    fetch('apex_pool.json').then(r => r.ok ? r.json() : {})
-  ]).then(([seed, apex]) => {
-    for (const row of (seed || [])) {
+  // 年份就存在卡池本體第 7 欄。2026-08-30 起頂級牌也在同一個檔（第 9 欄是 tier），
+  // 所以這裡不必再分兩份掃。同一個 URL 走瀏覽器快取 → 實質零額外請求。
+  fetch('seed_cards.json').then(r => r.ok ? r.json() : []).then(rows => {
+    for (const row of (rows || [])) {
       if (row[6]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[6]);
       if (row[7]) COMPOSER_MAP.set(yearKeyOf(row[0], row[1]), row[7]);
-    }
-    for (const tier of ['hall', 'pearl', 'heresy']) {
-      for (const row of ((apex || {})[tier] || [])) {
-        if (row[3]) YEAR_MAP.set(yearKeyOf(row[0], row[1]), row[3]);
-        if (row[4]) COMPOSER_MAP.set(yearKeyOf(row[0], row[1]), row[4]);
-      }
     }
   }).catch(() => { /* 拿不到就當沒有年份，不影響其他功能 */ });
 
@@ -4349,21 +4340,26 @@ ${seenList}
     },
   };
 
-  // ── 正式卡池：seed_cards.json（[藝人,專輯,經典,冷門,硬蕊,曲風陣列]）＋ apex_pool.json（殿堂/流亡/異端）──
+  // ── 正式卡池：seed_cards.json 單一檔。每列 [藝人,專輯,經典,冷門,硬蕊,曲風陣列,年份,作曲家,tier]，
+  //    第 9 欄 tier（殿堂/流亡/異端）有值的就是王牌，載入時拆成 { cards, apex } 兩份記憶體結構 ──
   // 與對戰／Roguelike 同一份資料。卡池持續擴充中：一切以檔案當下內容為準，程式不得假設張數。
   let _cardPoolPromise = null;
   function loadCardPool() {
     if (!_cardPoolPromise) {
       _cardPoolPromise = (async () => {
-        const [seed, apex] = await Promise.all([
-          fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗，請重試'); return r.json(); }),
-          fetch('apex_pool.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗，請重試'); return r.json(); }),
-        ]);
-        const cards = (Array.isArray(seed) ? seed : []).map(([artist, album, classic, obscurity, accessibility, genres, year]) => ({
-          artist, album, classic, obscurity, accessibility, genres: Array.isArray(genres) ? genres : [], year: year || 0,
-        }));
+        // 2026-08-30 起單一卡池檔：頂級牌就是多了第 9 欄 tier 的普通列。
+        // 這裡把它拆回原本的 { cards, apex } 記憶體結構，下游抽卡邏輯一行都不用改。
+        const rows = await fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗，請重試'); return r.json(); });
+        const cards = [], apex = { hall: [], pearl: [], heresy: [] };
+        for (const row of (Array.isArray(rows) ? rows : [])) {
+          const [artist, album, classic, obscurity, accessibility, genres, year, , tier] = row;
+          const g = Array.isArray(genres) ? genres : [];
+          // 有 tier 的不進一般卡池——漏了這道濾網，Abbey Road 會被當普卡抽出來
+          if (tier && apex[tier]) { apex[tier].push([artist, album, g, year]); continue; }
+          cards.push({ artist, album, classic, obscurity, accessibility, genres: g, year: year || 0 });
+        }
         if (!cards.length) throw new Error('卡池載入失敗，請重試');
-        return { cards, apex: apex || {} };
+        return { cards, apex };
       })().catch(e => { _cardPoolPromise = null; throw e; });
     }
     return _cardPoolPromise;
@@ -4581,7 +4577,7 @@ ${seenList}
     return pick;
   }
 
-  // 從 apex_pool 抽指定 tier；類型挑片時只挑同曲風的王牌（第 3 欄曲風），沒有就回 null 退回一般池
+  // 從王牌堆抽指定 tier；類型挑片時只挑同曲風的王牌（拆出來的列第 3 欄是曲風），沒有就回 null 退回一般池
   function pickApexCard(pool, tier) {
     const rows = pool.apex[tier] || [];
     if (!rows.length) return null;

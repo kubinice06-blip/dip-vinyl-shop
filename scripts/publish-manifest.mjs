@@ -104,47 +104,34 @@ const negAdds = negative
   .map(a => [cardIdOf(a.artist, a.album), a.preview.status]);
 
 // --- 3. seed_cards / apex_pool（上架開關）------------------------------------
+// 2026-08-30 卡池合併：只剩 seed_cards.json 一份，王牌是第 9 欄帶 tier 的同一種列。
 const SEED = path.join(ROOT, 'seed_cards.json');
-const APEX = path.join(ROOT, 'apex_pool.json');
 const seedRaw = fs.readFileSync(SEED, 'utf8');
 const seedRows = JSON.parse(seedRaw);
-const apexRaw = fs.readFileSync(APEX, 'utf8');
-const apexPool = JSON.parse(apexRaw);
 
 // 防呆：seed_cards.json 是「一列一行」的自訂排版，不是 JSON.stringify(o,null,1)。
-// 用標準 JSON 寫回會把 8,314 行整個重排，diff 會爆掉。先驗重建方式逐字相同再動手。
+// 用標準 JSON 寫回會把 12,909 行整個重排，diff 會爆掉。先驗重建方式逐字相同再動手。
 const renderSeed = rows => '[' + rows.map(r => JSON.stringify(r)).join(',\n') + ']';
 if (renderSeed(seedRows) !== seedRaw) {
   console.error('中止：seed_cards.json 的排版與本腳本的重建方式不符，貿然寫回會重排整檔。');
   console.error('請先確認排版規則是否改過，再調整 renderSeed()。');
   process.exit(1);
 }
-if (JSON.stringify(apexPool, null, 1) !== apexRaw) {
-  console.error('中止：apex_pool.json 的排版與 JSON.stringify(obj, null, 1) 不符。');
-  process.exit(1);
-}
 
 const existing = new Set();
 for (const r of seedRows) existing.add(poolKeyOf(r[0], r[1]));
-for (const t of Object.keys(apexPool)) for (const r of apexPool[t]) existing.add(poolKeyOf(r[0], r[1]));
 
 const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
   const year = a.research?.suggestedYear ?? null;
   const tier = a.apexAssessment?.eligible ? a.apexAssessment.tier : null;
-  if (tier) {
-    // apex 列：[artist, album, genres[], year, composer?]；第 3 欄留 null 讓 build-seed-genres 補
-    const row = [a.artist, a.album, null, year];
-    if (a.composer) row.push(a.composer);
-    apexAdds.push([tier, row]);
-  } else {
-    // seed 列：[artist, album, classic, obscurity, accessibility, genres[], year, composer?]
-    // 第 6 欄留 null：build-seed-genres.mjs 用 !Array.isArray(r[5]) 判斷缺欄，會自動補上
-    const row = [a.artist, a.album, a.ratings.classic, a.ratings.obscurity, a.ratings.accessibility, null, year];
-    if (a.composer) row.push(a.composer);
-    seedAdds.push(row);
-  }
+  // 一般卡與王牌現在是同一種列，差別只在第 9 欄 tier：
+  //   [artist, album, classic, obscurity, accessibility, genres[], year, composer|null, tier?]
+  // 第 6 欄留 null：build-seed-genres.mjs 用 !Array.isArray(r[5]) 判斷缺欄，會自動補上
+  const row = [a.artist, a.album, a.ratings.classic, a.ratings.obscurity, a.ratings.accessibility, null, year, a.composer || null];
+  if (tier) { row.push(tier); apexAdds.push([tier, row]); }
+  else { if (!a.composer) row.length = 7; seedAdds.push(row); }
 }
 
 // --- 輸出 --------------------------------------------------------------------
@@ -158,8 +145,8 @@ console.log(`manifest: ${path.basename(manifestPath)}　${albums.length} 張`);
 console.log(`  card_catalog  payload ${catalogPatches.length} 筆 -> ${rel}/card-catalog-patches.json`);
 console.log(`  靜態試聽      新增 ${audioAdds.length}、已存在略過 ${audioSkips.length}`);
 console.log(`  負面試聽狀態  新增 ${negAdds.length}`);
-console.log(`  seed_cards    待追加 ${seedAdds.length}`);
-console.log(`  apex_pool     待追加 ${apexAdds.length}${apexAdds.length ? '（' + [...new Set(apexAdds.map(x => x[0]))].join('／') + '）' : ''}`);
+console.log(`  卡池待追加    一般卡 ${seedAdds.length}`);
+console.log(`  其中王牌      ${apexAdds.length}${apexAdds.length ? '（' + [...new Set(apexAdds.map(x => x[0]))].join('／') + '）' : ''}`);
 console.log(`  已在池中略過  ${poolSkips.length}`);
 
 if (WRITE_PREVIEW) {
@@ -183,12 +170,12 @@ if (WRITE_PREVIEW) {
   console.log(`\n已寫入靜態試聽 ${audioAdds.length} 筆、負面狀態 ${negAdds.length} 筆。`);
   console.log('接著請跑： node scripts/build-apple-audio-runtime-map.mjs');
 } else if (WRITE_POOL) {
+  // 一般卡與王牌都追加進同一份檔（王牌的列尾多一個 tier 欄）
   for (const r of seedAdds) seedRows.push(r);
+  for (const [, row] of apexAdds) seedRows.push(row);
   fs.writeFileSync(SEED, renderSeed(seedRows));
-  for (const [tier, row] of apexAdds) (apexPool[tier] ||= []).push(row);
-  if (apexAdds.length) fs.writeFileSync(APEX, JSON.stringify(apexPool, null, 1));
   changed = true;
-  console.log(`\n已追加 seed_cards ${seedAdds.length} 列、apex_pool ${apexAdds.length} 列。`);
+  console.log(`\n已追加卡池 ${seedAdds.length + apexAdds.length} 列（一般卡 ${seedAdds.length}、王牌 ${apexAdds.length}）。`);
   console.log('接著請跑： node scripts/build-seed-genres.mjs   （補曲風欄，缺欄的卡首頁抽不到）');
 } else {
   console.log('\n（乾跑，未動任何檔案）');

@@ -3381,7 +3381,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
     pearl:  { label: '流亡', emoji: '🛢️' },
   };
   let apexTier = 'hall';
-  let apexDocs = [];          // 目前載入的整個 apex_pool（三分類都在）
+  let apexDocs = [];          // 目前載入的整個 apex_pool（三分類都在，含已降級的）
+  let apexLoadOk = false;     // 上一次 loadApexPool 是否真的讀到集合（匯入的前置條件）
+  let apexPoolFileKeys = new Set();  // 卡池檔裡還掛著 tier 的卡（判斷降級是否已同步進卡池檔）
   let apexCovers = {};        // 已入庫卡的封面（card_catalog where apex==true）
   let apexEditingId = null;   // 編輯中的 docId（null = 新增模式）
 
@@ -3404,19 +3406,34 @@ ${discogs ? '- Discogs：' + discogs : ''}
       apexCovers = {};
       catSnap.docs.forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
       apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      apexLoadOk = true;
+      // 卡池檔裡「還掛著 tier」的卡＝前台仍當它是頂級牌。
+      // 2026-08-30 合併後只有 seed_cards.json 一份，第 9 欄是 tier。
+      try {
+        const rows = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+        apexPoolFileKeys = new Set((rows || []).filter(r => r[8]).map(r => ovCardId(r[0], r[1])));
+      } catch (e) { apexPoolFileKeys = new Set(); }
       renderApexList();
-    } catch (e) { if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
+    } catch (e) { apexLoadOk = false; if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
   }
 
   function renderApexList() {
     const list = document.getElementById('apexList');
     const stat = document.getElementById('apexStat');
     if (!list) return;
-    const items = apexDocs.filter(d => d.tier === apexTier)
+    // 已降級的不列在頂級牌清單裡，但**仍留在 apexDocs**——「匯入固定名單」靠 apexDocs 判斷
+    // 「已存在就跳過」，濾掉的話下次匯入會把降級過的又塞回來。
+    const items = apexDocs.filter(d => d.tier === apexTier && !d.demoted)
       .sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
     const done = items.filter(d => d.generatedAt).length;
     const dead = items.filter(d => d.noCover).length;
-    if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張 · 已入庫 ${done} · 無封面 ${dead}`;
+    // 「待同步」＝已標降級、但卡池檔那一列還掛著 tier（前台仍當它是頂級牌）。
+    // 不用 Firestore 旗標記錄同步狀態，因為 apex_pool 的規則是 isAdmin() 才能寫，
+    // 本機腳本用公開 key 打 PATCH 會 403（2026-08-30 實測）。改看卡池檔最準，
+    // 部署後這個提示會自己消失。
+    const pendingDemote = apexDocs.filter(d => d.demoted && apexPoolFileKeys.has(d.id)).length;
+    if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張 · 已入庫 ${done} · 無封面 ${dead}`
+      + (pendingDemote ? ` ⚠ 另有 ${pendingDemote} 張已降級，待跑本機 scripts/apply-apex-demotions.mjs 同步卡池檔` : '');
     if (!items.length) { list.className = ''; list.textContent = '此分類還沒有牌，按上方「匯入固定名單」或手動新增。'; return; }
     list.className = 'cardgrid';
     list.innerHTML = items.map(d => {
@@ -3432,7 +3449,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         <div class="cardgrid-actions">
           ${d.generatedAt ? '' : `<button class="apex-gen-one" data-id="${esc(d.id)}" title="產出這張入庫">⚡ 入庫</button>`}
           <button class="apex-edit" data-id="${esc(d.id)}" title="編輯">✎</button>
-          <button class="apex-del" data-id="${esc(d.id)}" title="從卡池刪除">✕</button>
+          <button class="apex-demote" data-id="${esc(d.id)}" title="降級成一般卡">⬇ 降級</button>
         </div>
       </div>`;
     }).join('');
@@ -3445,11 +3462,24 @@ ${discogs ? '- Discogs：' + discogs : ''}
       document.getElementById('apexCancelEditBtn').style.display = '';
       document.getElementById('apexEditMsg').textContent = `編輯中：${d.artist} — ${d.album}`;
     }));
-    list.querySelectorAll('.apex-del').forEach(b => b.addEventListener('click', async () => {
+    // 降級成一般卡。原本這顆是「✕ 從卡池刪除」，但只刪 apex_pool 那筆等於什麼都沒做——
+    // **前台判定殿堂看的是 seed_cards.json 這個 git 檔的第 9 欄 tier**（loadCardPool 直接 fetch），
+    // Firestore 只影響唱片櫃與 gate。刪完卡片照樣是殿堂，下次按「匯入固定名單」還會被加回來。
+    // 所以這裡改成：Firestore 該清的欄位一次清乾淨，並在 apex_pool 那筆留 demoted 旗標，
+    // 讓本機的 scripts/apply-apex-demotions.mjs 據以拿掉卡池檔那一列的 tier 欄。
+    // 留著文件而不是刪掉，是為了讓「匯入固定名單」的跳過判斷仍認得它，不會又被塞回來。
+    list.querySelectorAll('.apex-demote').forEach(b => b.addEventListener('click', async () => {
       const d = apexDocs.find(x => x.id === b.dataset.id); if (!d) return;
-      if (!confirm(`從卡池刪除「${d.artist} — ${d.album}」？（不影響已入庫的 card_catalog）`)) return;
-      try { await deleteDoc(doc(db, 'apex_pool', d.id)); apexDocs = apexDocs.filter(x => x.id !== d.id); renderApexList(); }
-      catch (e) { alert('刪除失敗：' + (e.message || e)); }
+      if (!confirm(`把「${d.artist} — ${d.album}」降級成一般卡？\n\n`
+        + `後台這邊會立刻清掉 card_catalog.apex／tier 與 album_overrides.tier。\n`
+        + `但卡池檔（seed_cards.json）在 git 裡，要另外跑本機同步才會真的變成一般卡。`)) return;
+      try {
+        await setDoc(doc(db, 'apex_pool', d.id), { demoted: true, demotedAt: Date.now() }, { merge: true });
+        await setDoc(doc(db, 'card_catalog', d.id), { apex: false, tier: deleteField(), updatedAt: Date.now() }, { merge: true });
+        await updateDoc(doc(db, 'album_overrides', d.id), { tier: deleteField(), updatedAt: Date.now() }).catch(() => {});
+        d.demoted = true; d.demotedAt = Date.now();
+        renderApexList();
+      } catch (e) { alert('降級失敗：' + (e.message || e)); }
     }));
     // 背景補抓還沒有封面的牌（不改變入庫狀態，只是顯示 + 快取回 apex_pool）
     fillApexCovers(items, apexTier);
@@ -3487,17 +3517,24 @@ ${discogs ? '- Discogs：' + discogs : ''}
     await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   }
 
-  // 匯入固定名單 apex_pool.json（三分類各 100 張；已存在的跳過）
+  // 匯入固定名單：從卡池檔 seed_cards.json 撈出帶 tier 的列（已存在的跳過）
   document.getElementById('apexImportBtn')?.addEventListener('click', async () => {
     const msg = document.getElementById('apexImportMsg');
     const btn = document.getElementById('apexImportBtn');
     btn.disabled = true; msg.textContent = '讀取名單…';
     try {
-      const data = await (await fetch('apex_pool.json?v=' + Date.now())).json();
+      // 讀取失敗時 apexDocs 會保持舊值（剛開頁就是空陣列），那時匯入會把整份名單當成新的，
+      // 加上下面原本沒帶 merge 的 set()，會**把每一張的 generatedAt 一起抹掉**、全部退回「未入庫」。
+      // 2026-08-30 店主遇到「903 張又要重新入庫」就是這條路徑。所以先擋住這種狀態。
+      if (!apexLoadOk) { msg.textContent = '中止：apex_pool 還沒成功載入，此時匯入會誤判成全部都是新的。請先重新整理。'; btn.disabled = false; return; }
+      // 2026-08-30 起頂級牌就住在 seed_cards.json，第 9 欄有 tier 的就是
+      const rows = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+      const byTier = { hall: [], pearl: [], heresy: [] };
+      for (const r of (rows || [])) if (r[8] && byTier[r[8]]) byTier[r[8]].push([r[0], r[1]]);
       const existing = new Set(apexDocs.map(d => d.id));
       const toAdd = [];
       for (const tier of ['hall', 'pearl', 'heresy']) {
-        for (const [artist, album] of (data[tier] || [])) {
+        for (const [artist, album] of byTier[tier]) {
           const id = ovCardId(artist, album);
           if (existing.has(id)) continue;
           existing.add(id);
@@ -3507,7 +3544,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
       if (!toAdd.length) { msg.textContent = '名單全部已存在，無需匯入'; btn.disabled = false; return; }
       for (let i = 0; i < toAdd.length; i += 400) {
         const batch = writeBatch(db);
-        toAdd.slice(i, i + 400).forEach(d => batch.set(doc(db, 'apex_pool', d.id), { artist: d.artist, album: d.album, tier: d.tier, addedAt: d.addedAt }));
+        // 一定要帶 merge：不帶的話 set() 是整份覆蓋，會清掉 generatedAt 與 noCover，
+        // 讓已經入庫的牌全部退回「未入庫」。
+        toAdd.slice(i, i + 400).forEach(d => batch.set(doc(db, 'apex_pool', d.id), { artist: d.artist, album: d.album, tier: d.tier, addedAt: d.addedAt }, { merge: true }));
         await batch.commit();
         msg.textContent = `匯入中… ${Math.min(i + 400, toAdd.length)}/${toAdd.length}`;
       }
@@ -3622,8 +3661,8 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('apexGenAllStopBtn')?.addEventListener('click', () => { apexAllStop = true; });
   document.getElementById('apexGenAllBtn')?.addEventListener('click', async () => {
     if (apexAllBusy || apexGenBusy) return;
-    // noCover 的也納入重試：封面鏈為 card_catalog → Spotify → Bandcamp
-    const pending = apexDocs.filter(d => !d.generatedAt)
+    // noCover 的也納入重試：封面鏈為 card_catalog → Spotify → Bandcamp。已降級的不再入庫。
+    const pending = apexDocs.filter(d => !d.generatedAt && !d.demoted)
       .sort((a, b) => (!!a.noCover - !!b.noCover));
     if (!pending.length) { document.getElementById('apexGenMsg').textContent = '沒有待入庫的牌（先匯入名單或全部都已入庫）'; return; }
     if (!confirm(`把 ${pending.length} 張未入庫的頂級牌全部入庫？（先讀既有封面、查無才打 Spotify/Bandcamp，約需幾分鐘）`)) return;

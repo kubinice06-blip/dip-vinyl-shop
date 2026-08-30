@@ -64,12 +64,9 @@ async function musicbrainz(artist, album) {
 
 // 卡池裡還沒有年份的卡
 const seed = await readJson(path.join(root, 'seed_cards.json'));
-const apex = await readJson(path.join(root, 'apex_pool.json'));
+// 2026-08-30 卡池合併：王牌已在 seed_cards.json 內（第 9 欄 tier），不再另讀 apex_pool.json
 const missing = [];
 for (const row of seed) if (!row[6]) missing.push({ artist:row[0], album:row[1] });
-for (const tier of ['hall', 'pearl', 'heresy']) {
-  for (const row of (apex[tier] || [])) if (!row[3]) missing.push({ artist:row[0], album:row[1] });
-}
 
 const aliases = await readJson(path.join(root, 'data', 'query-aliases.json'), { entries:[] });
 const aliasOf = new Map((aliases.entries || []).map(entry => [`${entry.artist} ${entry.album}`, entry]));

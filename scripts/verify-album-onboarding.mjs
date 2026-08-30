@@ -346,38 +346,42 @@ for (let index = 0; index < albums.length; index++) {
 }
 
 if (!publishedMode && errors.length === 0) {
-  const seeds = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
-  const existing = new Set(seeds.map(row => keyOf(row[0], row[1])));
-  for (const row of albums) if (existing.has(keyOf(row.artist, row.album))) err(`${row.artist} — ${row.album}`, 'prepare gate 發現已存在 seed_cards.json，請先釐清是重跑或重複卡');
-  // apex_pool 也要查：2026-07-22 批次1有 5 張與 apex_pool.heresy 撞名仍被上架成普卡（一卡兩身分）
-  const apexPool = JSON.parse(fs.readFileSync(path.join(ROOT, 'apex_pool.json'), 'utf8'));
+  // 2026-08-30 卡池合併：王牌就是同一份檔裡第 9 欄有 tier 的列。
+  const pool = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
+  const existing = new Set(pool.filter(r => !r[8]).map(row => keyOf(row[0], row[1])));
+  for (const row of albums) if (existing.has(keyOf(row.artist, row.album))) err(`${row.artist} — ${row.album}`, 'prepare gate 發現已存在卡池（一般卡），請先釐清是重跑或重複卡');
+  // 王牌也要查：2026-07-22 批次1有 5 張與 heresy 撞名仍被上架成普卡（一卡兩身分）
   const apexExisting = new Map();
-  for (const [tier, list] of Object.entries(apexPool)) for (const [a, b] of list) apexExisting.set(keyOf(a, b), tier);
+  for (const r of pool) if (r[8]) apexExisting.set(keyOf(r[0], r[1]), r[8]);
   for (const row of albums) {
     const tier = apexExisting.get(keyOf(row.artist, row.album));
-    if (tier && row.published?.apexPool !== true) err(`${row.artist} — ${row.album}`, `已存在 apex_pool.${tier}（王牌），不得再以普卡上架；若確為同一張請改走 apexPool 入口或自本批移除`);
+    if (tier && row.published?.apexPool !== true) err(`${row.artist} — ${row.album}`, `已存在卡池且 tier=${tier}（王牌），不得再以普卡上架；若確為同一張請改走 apexPool 入口或自本批移除`);
   }
 }
 
 if (publishedMode && errors.length === 0) {
-  const seeds = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
-  const apexPool = JSON.parse(fs.readFileSync(path.join(ROOT, 'apex_pool.json'), 'utf8'));
+  // 2026-08-30 卡池合併：一般卡與王牌同在 seed_cards.json，差別只在第 9 欄 tier。
+  const pool = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
   for (const row of albums) {
     const label = `${row.artist} — ${row.album}`;
-    const seedMatches = seeds.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
+    const all = pool.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
     if (row.published.seedCards) {
-      if (seedMatches.length !== 1) err(label, `seed_cards.json 應恰好 1 筆，目前 ${seedMatches.length}`);
+      const seedMatches = all.filter(x => !x[8]);
+      if (seedMatches.length !== 1) err(label, `卡池的一般卡應恰好 1 筆，目前 ${seedMatches.length}`);
       else {
-        if (seedMatches[0].slice(2, 5).some((value, i) => value !== [row.ratings.classic, row.ratings.obscurity, row.ratings.accessibility][i])) err(label, 'seed_cards.json 三軸與 manifest 不一致');
+        if (seedMatches[0].slice(2, 5).some((value, i) => value !== [row.ratings.classic, row.ratings.obscurity, row.ratings.accessibility][i])) err(label, '卡池三軸與 manifest 不一致');
         // 第 6 欄曲風陣列（類型挑片靠它過濾；追加後跑 scripts/build-seed-genres.mjs 補齊）
-        if (!Array.isArray(seedMatches[0][5])) err(label, 'seed_cards.json 缺第 6 欄曲風陣列，請跑 scripts/build-seed-genres.mjs');
+        if (!Array.isArray(seedMatches[0][5])) err(label, '卡池缺第 6 欄曲風陣列，請跑 scripts/build-seed-genres.mjs');
       }
     }
     if (row.published.apexPool) {
-      const list = apexPool[row.apexAssessment.tier] || [];
-      const matches = list.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
-      if (matches.length !== 1) err(label, `apex_pool.${row.apexAssessment.tier} 應恰好 1 筆，目前 ${matches.length}`);
-      else if (!Array.isArray(matches[0][2])) err(label, `apex_pool.${row.apexAssessment.tier} 缺第 3 欄曲風陣列（類型挑片的特殊模式靠它過濾）`);
+      const tier = row.apexAssessment.tier;
+      const matches = all.filter(x => x[8] === tier);
+      if (matches.length !== 1) err(label, `卡池中 tier=${tier} 的列應恰好 1 筆，目前 ${matches.length}`);
+      else {
+        if (matches[0].slice(2, 5).some((value, i) => value !== [row.ratings.classic, row.ratings.obscurity, row.ratings.accessibility][i])) err(label, '王牌三軸與 manifest 不一致');
+        if (!Array.isArray(matches[0][5])) err(label, `王牌缺第 6 欄曲風陣列（類型挑片的特殊模式靠它過濾）`);
+      }
     }
 
     const docId = encodeURIComponent(keyOf(row.artist, row.album));

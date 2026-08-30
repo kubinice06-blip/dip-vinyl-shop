@@ -815,21 +815,28 @@ async function fillDynamicPool(n=14){
 }
 function maybeTopUpDynPool(){ if(DYNAMIC_POOL.length < 140) fillDynamicPool(14); }
 
-// ---------- 正式卡池：seed_cards.json（約 5,500 張精選普卡含三圍）＋ apex_pool.json（殿堂/流亡/異端 600 張王牌）----------
-// 開場載入直接併進 POOL / 覆蓋 ACES；內建小池與動態池只是離線備援與額外加料
+// ---------- 正式卡池：seed_cards.json 單一檔（普卡含三圍，王牌是多帶第 9 欄 tier 的同一種列）----------
+// 開場載入直接併進 POOL / 覆蓋 ACES；內建小池與動態池只是離線備援與額外加料。
+// 2026-08-30 合併前是 seed_cards.json ＋ apex_pool.json 兩份。
 const seedReady = (async()=>{
   const _k = c => (c.artist+'|'+c.album).toLowerCase();
   try{
-    const [seedRes, apexRes] = await Promise.all([fetch('seed_cards.json'), fetch('apex_pool.json')]);
-    if(seedRes.ok){
-      const seed = await seedRes.json();
-      if(Array.isArray(seed) && seed.length){
+    const res = await fetch('seed_cards.json');
+    if(res.ok){
+      const rows = await res.json();
+      if(Array.isArray(rows) && rows.length){
         const have = new Set(POOL.map(_k));
         const byKey = new Map(POOL.map(x => [_k(x), x]));
-        // seed 第 7 欄是發行年份（可能沒有，缺的就是 undefined，顯示端自己略過）。
+        const aces=[];
+        // 第 7 欄是發行年份（可能沒有，缺的就是 undefined，顯示端自己略過）。
         // 開頭那批內建備援池的卡（Kid A、Spiderland…）本來就在 POOL 裡，會走 continue 而拿不到
         // 年份 → 這裡補上，否則那 100 多張知名盤抽到時偏偏不顯示年份。
-        for(const [artist,album,c,o,a,g,year] of seed){
+        for(const [artist,album,c,o,a,g,year,composer,tier] of rows){
+          if(tier && NEO_ACE_STATS[tier]){
+            const s=NEO_ACE_STATS[tier];
+            aces.push({artist,album,year,classic:s[0],obscurity:s[1],accessibility:s[2],ace:tier});
+            continue;
+          }
           const key = (artist+'|'+album).toLowerCase();
           if(have.has(key)){
             const existing = byKey.get(key);
@@ -838,21 +845,13 @@ const seedReady = (async()=>{
           }
           POOL.push(applyNeoAce({artist,album,classic:c,obscurity:o,accessibility:a,year,ace:null}));
         }
+        if(aces.length){ ACES.length=0; ACES.push(...aces); }
+        // 內建備援池那批（Kid A、Spiderland、Loveless…）是王牌、不在一般卡列裡，
+        // 上面補年份時涵蓋不到 → 用王牌清單再回頭補一次，否則這些知名盤偏偏不顯示年份。
+        const yearByKey = new Map();
+        for(const c of aces) if(c.year) yearByKey.set(_k(c), c.year);
+        for(const c of POOL) if(!c.year){ const y = yearByKey.get(_k(c)); if(y) c.year = y; }
       }
-    }
-    if(apexRes.ok){
-      const apex = await apexRes.json();
-      const aces=[];
-      for(const t of ['hall','pearl','heresy']) for(const [artist,album,g,year] of (apex&&apex[t])||[]){
-        const s=NEO_ACE_STATS[t];
-        aces.push({artist,album,year,classic:s[0],obscurity:s[1],accessibility:s[2],ace:t});
-      }
-      if(aces.length){ ACES.length=0; ACES.push(...aces); }
-      // 內建備援池那批（Kid A、Spiderland、Loveless…）不在 seed 而在 apex，
-      // 上面補年份時涵蓋不到 → 用王牌清單再回頭補一次，否則這些知名盤偏偏不顯示年份。
-      const yearByKey = new Map();
-      for(const c of aces) if(c.year) yearByKey.set(_k(c), c.year);
-      for(const c of POOL) if(!c.year){ const y = yearByKey.get(_k(c)); if(y) c.year = y; }
     }
   }catch(e){ /* 離線 / 讀不到 → 內建池照玩 */ }
 })();

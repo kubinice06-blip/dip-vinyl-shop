@@ -1,4 +1,6 @@
 // 楊祖珺《楊祖珺》上架開關：把卡片追加進 apex_pool.json 的 pearl 池。已於 2026-08-16 執行完畢。
+// ⚠ 2026-08-30 卡池合併後 apex_pool.json 已刪除，這支**不能再跑**（只作歷史紀錄保留）。
+//   現在的作法：seed_cards.json 追加一列，列尾第 9 欄放 tier。
 //
 // 這支之所以獨立成一檔：原本規劃的固定試聽是 YouTube Music album playlist，依
 // ALBUM_ONBOARDING §6 只能走後台路徑（album_overrides 規則 allow write: if isAdmin()，

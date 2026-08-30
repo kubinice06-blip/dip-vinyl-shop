@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -18,7 +19,9 @@ const normalized = value => String(value || '').normalize('NFKD').toLowerCase()
 const cardKey = ([artist, album]) => `${normalized(artist)}\u0000${normalized(album)}`;
 
 const seed = JSON.parse(await fs.readFile(path.join(root, 'seed_cards.json'), 'utf8'));
-const apexByTier = JSON.parse(await fs.readFile(path.join(root, 'apex_pool.json'), 'utf8'));
+// 2026-08-30 卡池合併：王牌不再另存 apex_pool.json，改成 seed_cards.json 第 9 欄 tier。
+// 這裡就地重建成舊的 {hall,pearl,heresy} 結構，下游用法完全不必改。
+const apexByTier = (() => { const _r = JSON.parse(fsSync.readFileSync(path.join(root, 'seed_cards.json'), 'utf8')); const _a = { hall: [], pearl: [], heresy: [] }; for (const _x of _r) if (_x[8] && _a[_x[8]]) _a[_x[8]].push([_x[0], _x[1], _x[5], _x[6]]); return _a; })();
 const catalog = [
   ...seed,
   ...Object.values(apexByTier).flat()

@@ -1,5 +1,88 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-30（第四筆）｜dip-vinyl-shop｜卡池合併：刪掉 apex_pool.json，王牌改成 seed_cards.json 的 tier 欄
+
+店主看到「降級一張殿堂卡要動四個地方」後直接問「為何頂級卡要跟一般卡分開存檔」，
+選了徹底方案。`apex_pool.json` **已刪除**，卡池只剩一份。
+
+## 為什麼一定要合併
+
+真正的痛點不是「兩個檔」，是**兩個檔的列形狀不一樣**——apex 列 `[artist, album, genres, year]`
+**沒有三軸**（tier 直接蓋過稀有度，當初就沒存）。於是：
+
+- 降級成一般卡不是搬一列，得回頭去 Firestore 撈三軸才組得出 seed 列
+- 同一張卡可能兩邊都在（gate 有一條專門擋這個，2026-07-22 工業批踩過 5 張）
+- 曲風欄在兩邊是不同索引（seed 第 6 欄／apex 第 3 欄），兩支寫檔腳本排版還必須同調，
+  不然交替跑會整檔重排產生假 diff
+- 上架要分岔成 seedCards XOR apexPool
+
+## 新格式（純追加，這是改動幅度可控的關鍵）
+
+```
+[藝人, 專輯, 經典, 冷門, 硬蕊, 曲風[], 年份, 作曲家, tier]
+  0     1     2     3     4     5      6      7      8
+```
+
+**前 8 欄與舊格式逐欄相同**，所以讀 `row[0]`–`row[7]` 的舊程式一行都不用改。
+第 9 欄 `tier`（hall／pearl／heresy）有值就是王牌。
+**唯一必改的是「把 seed 當一般卡池」的地方**——現在得濾掉有 tier 的列，
+漏了這道濾網 Abbey Road 會被當普卡抽出來。
+
+seed 12,005 ＋ apex 904 = **12,909 列**。
+
+## 補三軸：904 張零失敗
+
+581 張取自 Firestore `card_catalog`（onboarding 上架時寫入的定案值）、
+**323 張取自 worker `/album-rating`**。那 323 張是後台入庫路徑產生的——
+`produceApexCard` 只寫 coverUrl／tier／apex，**不寫三軸**，所以 Firestore 也沒有。
+前台本來就是每次抽到就打 `/album-rating` 現算（KV 快取），
+所以凍結進檔案後畫面數值不變，而且**每次抽王牌少一個請求**。
+
+## 最重要的安全驗證
+
+把合併後的檔案還原回舊的 `{hall, pearl, heresy}` 結構，**與原 apex_pool.json 逐字一致**。
+三個前台頁也都是在載入時就拆回這個結構，所以下游抽卡邏輯完全沒動。
+
+## 改了 18 個檔
+
+前台三頁（`index`／`battle`／`roguelike`）、`admin.html`（匯入與降級都改讀新格式）、
+`verify-album-onboarding`（prepare 與 published 兩段的池檢查）、`publish-manifest`（上架開關）、
+`build-seed-genres`、`write-years-to-pool`、`pool-check`、`pool-keys`、`batch-progress/lib.mjs`、
+`c47/chk-cand`、`c47/snapshot-coverage`、`cover-audit/1-collect-cards`、`build-apple-audio-map`、
+`build-release-years`、`fill-missing-years`、`verify-apple-audio-map`、`desc-tools/fix-spacing`、
+兩支 `dip-card-pool-expand` skill 腳本。新增 `scripts/pool.mjs`（共用讀寫）。
+
+`publish-add-20260816.mjs` 是跑完就沒再用的一次性腳本，只加註記說明不能再跑。
+
+**合併帶來的實際簡化**：`build-seed-genres` 刪掉一整段 apex 專用邏輯（連同「只覆寫第 3 欄、
+別把第 4 欄年份洗掉」那條注意事項）；`write-years-to-pool` 刪掉「兩支寫檔腳本排版必須同調」
+那個坑；降級腳本從「跨檔搬列＋回 Firestore 撈三軸」變成「把第 9 欄拿掉」。
+
+## 順手修掉三個既有的壞東西
+
+1. `pool-check.mjs`／`pool-keys.mjs` 的根目錄寫死 `/home/user/dip-vinyl-shop`（雲端工作階段留下的），
+   **本機根本跑不起來**；改成相對於腳本自身。
+2. `pool-keys.mjs` 的輸出路徑寫死某次雲端工作階段的 `/tmp/claude-0/...`；改成 repo 內的 gitignore 目錄。
+3. `desc-tools/fix-spacing.mjs` 的 `/^/([A-Za-z]:)/` 少了跳脫反斜線，**整支載入即拋錯**。
+
+## 驗證
+
+- 還原比對：合併後重建的 apex 結構與原 `apex_pool.json` 逐字一致
+- 卡池檔：12,909 列、王牌 904（679/108/117）、**混入一般池的王牌 0**、缺曲風 0
+- 18 支腳本逐支 `node --check` 通過；`pool-check` 實測正確認出王牌
+- **published gate 在新格式下 170 張 0 error**（c-47 manifest）
+- 瀏覽器實測三個頁面（`apex_pool.json` 已刪除的狀態下）：
+  index 搜尋 Paris, Texas 顯示「殿堂」；roguelike 王牌 904／tier 分布正確；
+  battle 正常開局、牌庫 15 張、手牌裡出現標「流亡」的王牌
+
+## 提交注意
+
+`index.html` 當時**另一個工作階段正在改**（遊戲頁 chrome，未提交）。
+整檔 `git add` 會把對方未完成的改動一起提交，所以 staged 版本比照 PROJECT_MEMORY 的做法：
+以 `git show HEAD:index.html` 為底、只套本次的 5 處改動，經 `git hash-object -w` ＋
+`git update-index --cacheinfo` 進索引（`git status` 顯示 `MM`）。
+工作區保留雙方內容。**日後多階段同改一個檔都該這樣處理。**
+
 ### 2026-08-30（第七筆）｜dip-vinyl-shop｜選題改「答案分歧法」、開場改全題庫加權，順手修掉連點卡死
 
 店主要求解決 hermit／keeper／seeker 三個判定弱點，並指出開場只有 12 題太少。

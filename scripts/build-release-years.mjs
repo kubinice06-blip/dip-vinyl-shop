@@ -75,12 +75,9 @@ async function writeJsonAtomically(file, value) {
 
 // ── 卡池 ──
 const seed = await readJson(path.join(root, 'seed_cards.json'));
-const apex = await readJson(path.join(root, 'apex_pool.json'));
+// 2026-08-30 卡池合併：王牌已在 seed_cards.json 內（第 9 欄 tier），不再另讀 apex_pool.json
 const cards = [];
 for (const [artist, album] of seed) cards.push({ artist, album, pool:'seed' });
-for (const tier of ['hall', 'pearl', 'heresy']) {
-  for (const [artist, album] of (apex?.[tier] || [])) cards.push({ artist, album, pool:tier });
-}
 
 // 抽樣：sha256 排序 → 確定性、可重跑、分散全池。CJK 另外分層，因為那是已知的高風險區
 // （華語盤在各家資料庫的收錄與命名都比較亂），混在隨機樣本裡會被稀釋到看不出來。

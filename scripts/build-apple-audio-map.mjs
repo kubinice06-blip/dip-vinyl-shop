@@ -203,10 +203,9 @@ async function writeJson(file, value) {
 }
 
 const seed = await readJson(path.join(root, 'seed_cards.json'), []);
-const apexByTier = await readJson(path.join(root, 'apex_pool.json'), {});
+// 2026-08-30 卡池合併：王牌已在 seed_cards.json 內（第 9 欄 tier），不再另讀 apex_pool.json
 const cards = [
   ...seed.map(([artist, album]) => ({ artist, album, pool:'seed' })),
-  ...Object.entries(apexByTier).flatMap(([tier, list]) => list.map(([artist, album]) => ({ artist, album, pool:`apex:${tier}` })))
 ].sort((a, b) => stableRank(a).localeCompare(stableRank(b)) || cardKey(a).localeCompare(cardKey(b)));
 const uniqueCards = [...new Map(cards.map(card => [cardKey(card), card])).values()];
 

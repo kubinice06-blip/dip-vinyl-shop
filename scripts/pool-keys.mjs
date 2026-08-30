@@ -5,9 +5,13 @@
 //      舊版用 for..of 直接迭代會拋錯，被 try/catch 吞掉 → 634 張王牌從未進入去重集。
 //   2) 正規化沒有摺 U+2010–2015 連字號，a‐ha／Drive‐By Truckers／B‐52s 這類
 //      在 ASCII grep 下必然零命中，會被誤判為「池內沒有」。
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
-const R = '/home/user/dip-vinyl-shop';
-const OUT = '/tmp/claude-0/-home-user-dip-vinyl-shop/aa6a484f-781a-53fb-8821-e33e901fb76d/scratchpad/pool-data';
+// 路徑相對於本腳本，本機與雲端都能跑（原本寫死 /home/user/dip-vinyl-shop，只有雲端環境能用）
+const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// 原本寫死某次雲端工作階段的 /tmp 路徑，本機跑必然失敗。改成 repo 內的 gitignore 目錄。
+const OUT = path.join(R, 'batch-progress', 'pool-data');
 
 export const norm = s => String(s || '').toLowerCase()
   .replace(/[‐-―－]/g, '-')       // U+2010..U+2015 與全形連字號
@@ -19,10 +23,12 @@ const raw = [];   // 原字，供人工閱讀
 const keys = new Set();
 const add = (a, b, src) => { raw.push(`${a}|${b}`); keys.add(key(a, b)); };
 
-for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) add(r[0], r[1], 'seed');
-const apex = JSON.parse(fs.readFileSync(`${R}/apex_pool.json`, 'utf8'));
+// 2026-08-30 起單一卡池檔：每列第 9 欄有 tier 的就是王牌（合併前王牌另存 apex_pool.json）
 let apexN = 0;
-for (const tier of Object.keys(apex)) for (const r of apex[tier]) { add(r[0], r[1], `apex:${tier}`); apexN++; }
+for (const r of JSON.parse(fs.readFileSync(`${R}/seed_cards.json`, 'utf8'))) {
+  add(r[0], r[1], r[8] ? `apex:${r[8]}` : 'seed');
+  if (r[8]) apexN++;
+}
 let manN = 0;
 for (const f of fs.readdirSync(R).filter(x => /^onboarding-manifest-.*json$/.test(x)))
   for (const a of (JSON.parse(fs.readFileSync(`${R}/${f}`, 'utf8')).albums || [])) { add(a.artist, a.album, f); manN++; }

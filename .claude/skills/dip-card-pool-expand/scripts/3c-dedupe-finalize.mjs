@@ -28,12 +28,11 @@ const internalDrop = rows.length - byAlbum.size;
 let kept = [...byAlbum.values()];
 
 // 2) 對現有卡池：專輯名相同 + 藝人名有共同字詞（處理 "X" vs "X Trio" 這種尾綴差異）
-//    apex_pool.json 也要比——王牌卡不在 seed 裡，漏比會造成一卡兩身分（2026-07-22 工業批實際踩到 5 張）
-const APEX = SEED.replace(/seed_cards\.json$/, 'apex_pool.json');
+//    2026-08-30 卡池合併後王牌與一般卡同一份檔，一次比完就涵蓋
+//    （合併前王牌另存 apex_pool.json，漏比會造成一卡兩身分，2026-07-22 工業批實際踩到 5 張）
 const seed = JSON.parse(fs.readFileSync(SEED, 'utf-8'));
-const apexPool = JSON.parse(fs.readFileSync(APEX, 'utf-8'));
 const seedByAlbum = new Map();
-for (const [artist, album] of [...seed, ...Object.values(apexPool).flat()]) {
+for (const [artist, album] of seed) {
   const k = norm(album);
   if (!seedByAlbum.has(k)) seedByAlbum.set(k, []);
   seedByAlbum.get(k).push(artist);

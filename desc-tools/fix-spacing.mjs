@@ -16,11 +16,12 @@ const CJK = '㐀-鿿぀-ヿ';
 const EXTRA_PROTECTED = ['さんピンCAMP'];
 // 保護清單的來源卡池：本機在 dip-vinyl-shop 下、雲端則與本腳本同 repo（desc-tools/ 的上一層）。
 // 兩邊都試，讀不到就略過（下面的 try/catch 會 continue，只是保護清單較短）。
+// 2026-08-30：王牌已併進 seed_cards.json（第 9 欄 tier），不再有 apex_pool.json。
+// 另修一個先前就存在的語法錯誤：/^/([A-Za-z]:)/ 少了跳脫的反斜線，整支載入即拋錯。
+const winPath = url => new URL(url, import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 const POOL = [
   'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/seed_cards.json',
-  'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/apex_pool.json',
-  new URL('../seed_cards.json', import.meta.url).pathname.replace(/^/([A-Za-z]:)/, '$1'),
-  new URL('../apex_pool.json', import.meta.url).pathname.replace(/^/([A-Za-z]:)/, '$1'),
+  winPath('../seed_cards.json'),
 ];
 const adjacent = new RegExp(`[${CJK}][A-Za-z0-9]|[A-Za-z0-9][${CJK}]`);
 const protectedTokens = (() => {

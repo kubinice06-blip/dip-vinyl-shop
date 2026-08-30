@@ -1,6 +1,6 @@
 // 把 release-years-v1.json 的年份寫進卡池本體：
 //   seed_cards.json  第 7 欄（[artist, album, classic, obscurity, accessibility, genres, year]）
-//   apex_pool.json   第 4 欄（[artist, album, genres, year]）
+//   （2026-08-30 起王牌與一般卡同一份檔，不再有另一種列格式）
 //
 //   node scripts/write-years-to-pool.mjs --dry-run   # 只報告不寫檔
 //   node scripts/write-years-to-pool.mjs             # 只補「卡池尚未有年份」的列
@@ -33,7 +33,6 @@ const cardKey = (artist, album) => `${normalized(artist)}\u0000${normalized(albu
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 
 const seedPath = path.join(root, 'seed_cards.json');
-const apexPath = path.join(root, 'apex_pool.json');
 const years = (await readJson(path.join(root, 'data', 'release-years-v1.json'))).entries;
 
 // ── seed_cards.json ──
@@ -54,34 +53,13 @@ for (const row of seed) {
   seedFilled++;
 }
 
-// ── apex_pool.json ──
-const apex = await readJson(apexPath);
-let apexFilled = 0, apexMissing = 0;
-for (const tier of ['hall', 'pearl', 'heresy']) {
-  for (const row of (apex[tier] || [])) {
-    const year = years[cardKey(row[0], row[1])];
-    if (!year) { apexMissing++; continue; }
-    if (!Array.isArray(row[2])) row[2] = [];
-    if (typeof row[3] === 'number') {
-      if (row[3] !== year) {
-        conflicts.push({ pool: 'apex', artist: row[0], album: row[1], now: row[3], dataset: year });
-        if (overwrite) row[3] = year;
-      }
-      continue;
-    }
-    row[3] = year;
-    apexFilled++;
-  }
-}
+// 2026-08-30 卡池合併後，王牌就是上面那份檔裡第 9 欄有 tier 的列，年份一樣在第 7 欄，
+// 上面的迴圈已經全部涵蓋——原本這裡有一段結構不同的 apex 版本（年份在第 4 欄），
+// 連同「兩支寫檔腳本排版必須同調、否則交替跑會整檔重排」那個坑，一起消失了。
 
 if (!dryRun) {
   // 保持既有的一列一卡格式（與 build-seed-genres.mjs 寫出的格式一致，diff 才看得懂）
   await fs.writeFile(seedPath, '[' + seed.map(row => JSON.stringify(row)).join(',\n') + ']', 'utf8');
-  // apex 與 build-seed-genres.mjs:140 同樣用 indent=1，才與現行 apex_pool.json 逐位元組一致。
-  // （原本這裡是手工組字串的一列一卡格式，2026-08-14 起與另一支寫檔腳本不同調——
-  //  兩支交替跑就會整檔重排、產生跟資料無關的假 diff，正是那次提交要斷根的問題。
-  //  日後若要改 apex 的排版，**兩支必須一起改**。）
-  await fs.writeFile(apexPath, JSON.stringify(apex, null, 1), 'utf8');
 }
 
 if (conflicts.length) {
@@ -92,15 +70,12 @@ console.log(JSON.stringify({
   mode:dryRun ? 'dry-run' : 'write',
   policy:overwrite ? 'overwrite' : 'fill-only',
   conflicts:conflicts.length,
-  seed:{ total:seed.length, filled:seedFilled, missing:seedMissing, changed:seedChanged },
-  apex:{ filled:apexFilled, missing:apexMissing },
+  pool:{ total:seed.length, filled:seedFilled, missing:seedMissing, changed:seedChanged,
+         apex:seed.filter(r => r[8]).length },
   // 覆蓋率＝跑完之後卡池裡實際有年份的比例（改成 fill-only 之後 filled 多半是 0，
   // 沿用舊算式會誤報 0.0%，所以直接數卡池現況）。
   coverage:(() => {
-    const hasYear = seed.filter(r => typeof r[6] === 'number').length
-      + ['hall', 'pearl', 'heresy'].reduce((n, t) => n + (apex[t] || []).filter(r => typeof r[3] === 'number').length, 0);
-    const total = seed.length
-      + ['hall', 'pearl', 'heresy'].reduce((n, t) => n + (apex[t] || []).length, 0);
-    return `${(100 * hasYear / total).toFixed(1)}%（${hasYear}/${total}）`;
+    const hasYear = seed.filter(r => typeof r[6] === 'number').length;
+    return `${(100 * hasYear / seed.length).toFixed(1)}%（${hasYear}/${seed.length}）`;
   })()
 }, null, 1));
