@@ -60,7 +60,15 @@ function charScan(label, s) {
   // （崔健《新长征路上的摇滚》），照原文保留是規定，不該報錯。整份寫成簡體的情況
   // （w2-121 e 組）仍會被抓到，因為那種錯誤絕大多數落在標題之外。
   if (SIMP.test(t)) warn(label, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join(''));
-  if (/[㐀-鿿],|,[㐀-鿿]/.test(s)) warn(label, '半形逗號貼中文');
+  // 這條原本掃的是未剝除專名的原文，於是林憶蓮《都市觸覺, Part II: Fuir la ville》
+  // 這種官方標題本身就帶半形逗號的卡必然誤報。掃 t（已剝除《》〈〉與卡單全字串）才對。
+  if (/[㐀-鿿],|,[㐀-鿿]/.test(t)) warn(label, '半形逗號貼中文');
+  // 千分位逗號。行文一律寫 281948 不寫 281,948，但這條規則只寫在提示詞裡、
+  // 沒有任何機器檢查，於是 c50a-c 有五張卡整批寫成千分位，是我逐檔用一次性
+  // 指令掃出來的。掃描用剝除專名後的文字，免得專輯標題裡的數字誤報。
+  // 樣式要求逗號後恰好三位數字且其後不再接數字，「1975,1980」這種連寫年份不會中。
+  const kilo = t.match(/\d{1,3}(?:,\d{3})+(?!\d)/g);
+  if (kilo) warn(label, '千分位逗號:', [...new Set(kilo)].slice(0, 8).join('、'));
 }
 
 if (stage === 'research') {
@@ -73,7 +81,17 @@ if (stage === 'research') {
     if (!Array.isArray(r) && r && typeof r === 'object' && stage === 'research') r = Object.values(r);
     console.log(g, r.length, r.map(x => x.status).join(','));
     charScan('research-' + g, s);
-    r.forEach(x => { all.push(x.key); if (!cardKeys.has(x.key)) warn(g, 'key 不在卡單:', JSON.stringify(x.key)); });
+    r.forEach(x => {
+      all.push(x.key);
+      if (!cardKeys.has(x.key)) warn(g, 'key 不在卡單:', JSON.stringify(x.key));
+      // 來源必須是完整可開啟的 https 網址。研究層唯一的防造假機制就是逐條附源，
+      // 少一條源就等於少一條可查核的事實，這裡不容忍裸網域或 http。
+      const noSrc = (x.facts || []).filter(f => !/^https:\/\/\S+$/.test(String(f.src || '')));
+      if (noSrc.length) warn(g, `${x.key}：${noSrc.length} 條事實的 src 不是完整 https 網址`);
+      // hookCandidates 上限 2。多給不會更好——hook 層本來就要自己挑，
+      // 候選一多就變成研究層在越權定調。
+      if ((x.hookCandidates || []).length > 2) warn(g, `${x.key}：hookCandidates ${x.hookCandidates.length} 條，上限 2`);
+    });
   }
   if (JSON.stringify([...all].sort()) !== JSON.stringify([...cardKeys].sort())) warn('key 集合與卡單不一致');
   else console.log('key 與卡單完全一致 ✓');
