@@ -29,7 +29,7 @@ let hits = 0, n = 0;
 for (const batch of batches) {
   const dir = path.join(ROOT, 'batch-progress', batch);
   for (const f of fs.readdirSync(dir)) {
-    if (!f.startsWith('cand-')) continue;
+    if (!/^cand(-.*)?\.json$/.test(f)) continue;   // c50 起單一候選檔叫 cand.json，早期批次是 cand-A.json
     for (const a of JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')).albums || []) {
       n++;
       const k = key(a.artist) + '|' + key(a.album);

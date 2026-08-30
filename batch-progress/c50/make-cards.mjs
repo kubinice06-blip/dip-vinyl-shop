@@ -75,3 +75,26 @@ names.forEach(n => JSON.parse(fs.readFileSync(path.join(OUT, `${n}-cards.json`),
   .forEach(c => { if (!artistBin.has(c.artist)) artistBin.set(c.artist, new Set()); artistBin.get(c.artist).add(n); }));
 const split = [...artistBin].filter(([, s]) => s.size > 1);
 console.log(split.length ? `⚠ 同藝人跨批：${split.map(([a, s]) => a + ' → ' + [...s].join('/')).join('；')}` : '同藝人同批檢查：通過');
+
+// ── 研究小組切分 ────────────────────────────────────────────────
+// 每批再切五組派給研究子代理。原本是臨時指令做的，沒進版本控制；
+// 2026-08-30 修 MBID 時得重出卡單，才發現小組檔沒有腳本可以重生，
+// 只能反推出「照卡單順序連續切」才敢覆蓋。切分規則寫進來，下次直接重跑。
+// 順序切分是刻意的：卡單已按藝人成塊排好，連續切能讓同藝人的卡盡量落在同一組，
+// 研究層才看得到彼此、寫得出排除條款。
+const NG = 5;
+for (const batch of names) {
+  const cards = JSON.parse(fs.readFileSync(path.join(OUT, `${batch}-cards.json`), 'utf8'));
+  const per = Math.ceil(cards.length / NG);
+  let pos = 0;
+  const sizes = [];
+  for (let i = 0; i < NG; i++) {
+    const g = String.fromCharCode(97 + i);
+    const chunk = cards.slice(pos, pos + per);
+    pos += chunk.length;
+    fs.writeFileSync(path.join(OUT, `${batch}-${g}.json`), JSON.stringify(chunk, null, 1));
+    sizes.push(`${g}:${chunk.length}`);
+  }
+  if (pos !== cards.length) throw new Error(`${batch} 小組切分漏卡：${pos}/${cards.length}`);
+  console.log(`${batch} 小組切分 ${sizes.join('、')}`);
+}
