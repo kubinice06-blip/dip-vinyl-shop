@@ -20,13 +20,47 @@ const DIR = path.join(ROOT, 'batch-progress/c50');
 const write = process.argv.includes('--write');
 const props = JSON.parse(fs.readFileSync(path.join(DIR, 'prop-all.json'), 'utf8'));
 const mb = JSON.parse(fs.readFileSync(path.join(DIR, 'mb-raw.json'), 'utf8'));
+// 補查結果（藝人目錄法）：主查零候選的那批在這裡有解，且其中四筆是主線逐張定點查證後
+// 手動修正的——寬鬆比對曾把 Santana III 配到 1997 精選、Weezer 綠專配到 2026 年同名作、
+// Ray Charles 第二集配到第一集。這些的 `_note` 記了為什麼卡名不照抄 MB 標題。
+const rq = fs.existsSync(path.join(DIR, 'requery-out.json'))
+  ? JSON.parse(fs.readFileSync(path.join(DIR, 'requery-out.json'), 'utf8')) : {};
 
 const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 const BAD_SECONDARY = ['Compilation', 'Live', 'Soundtrack', 'Remix', 'DJ-mix', 'Demo', 'Interview'];
 
+const mkCard = (p, c, extraNote) => ({
+  artist: p.artist, album: p.album,
+  rgMbid: c.id,
+  mbTitle: c.title,
+  mbCredit: c.credit || (c['artist-credit'] || []).map(x => x.name).join(', '),
+  mbFirstRelease: c['first-release-date'] || '',
+  releaseType: c['primary-type'] || '',
+  secondaryTypes: c['secondary-types'] || [],
+  suggestedYear: p.year,
+  yearNote: p.year && String(c['first-release-date'] || '').slice(0, 4) !== String(p.year)
+    ? `策展層取 ${p.year}，MB 首發標 ${c['first-release-date'] || '未載'}。本批為正規錄音室專輯，年份取原盤首發年；兩者不一致時本機以碟面為準。`
+    : `策展層與 MB 首發年一致（${p.year}）。`,
+  label: p.label || '',
+  genres: p.genres,
+  curatorWhy: p.why,
+  curatorRisk: p.risk || '',
+  mbNote: [p.mbNote || '', extraNote || ''].filter(Boolean).join('｜'),
+  selfTitled: !!p.selfTitled,
+  group: p.g,
+});
+
 const out = [], skipped = [], failed = [];
 for (const p of props) {
   const k = `${p.artist}|${p.album}`;
+  // 補查已解出的直接採用（含主線手動修正的四筆）
+  const fixed = rq[k];
+  if (fixed && fixed.id) {
+    out.push(mkCard(p, fixed, fixed._note || ''));
+    continue;
+  }
+  if (fixed && fixed._http !== undefined) { failed.push({ ...p, reason: `補查失敗 ${fixed._http}` }); continue; }
+
   const raw = mb[k];
   // 沒查過或查詢失敗 → 不得當成查無，整張留待重查
   if (raw === undefined) { failed.push({ ...p, reason: '未查詢' }); continue; }

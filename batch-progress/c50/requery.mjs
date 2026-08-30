@@ -29,6 +29,7 @@ async function mb(url) {
   return { _http: '重試耗盡：' + last };
 }
 
+// 目標需帶 year，否則年份把關失效（見上方註解）
 const targets = JSON.parse(fs.readFileSync(path.join(DIR, 'requery-targets.json'), 'utf8'));
 const out = fs.existsSync(path.join(DIR, 'requery-out.json'))
   ? JSON.parse(fs.readFileSync(path.join(DIR, 'requery-out.json'), 'utf8')) : {};
@@ -50,8 +51,15 @@ for (const t of targets) {
     const groups = rg['release-groups'] || [];
     catalogue.push(...groups.map(g => ({ id: g.id, title: g.title, date: g['first-release-date'] || '', pt: g['primary-type'], st: g['secondary-types'] || [], credit: ar.name })));
     const want = core(t.album);
-    const hit = groups.find(g => core(g.title) === want)
-      || groups.find(g => { const c = core(g.title); return c && want && (c.includes(want) || want.includes(c)); });
+    // ⚠ 寬鬆比對必須設防，否則會配到別張。2026-08-30 實踩三次：
+    //   Santana III → 剝掉後 santanaiii 包含 santana，配到 1997 年的精選；
+    //   Weezer (Green Album) → 括號被剝掉，配到 2026 年的另一張同名作；
+    //   Modern Sounds… Volume Two → Volume 被剝掉，配到第一集。
+    // 三個共通點：**寬鬆比對命中時，年份與形態就是唯一的把關**。
+    const okYear = g => !t.year || Math.abs((+String(g['first-release-date'] || '').slice(0, 4) || 0) - t.year) <= 1;
+    const okType = g => !(g['secondary-types'] || []).some(x => ['Compilation', 'Live', 'Remix', 'Soundtrack'].includes(x));
+    const hit = groups.find(g => core(g.title) === want && okYear(g) && okType(g))
+      || groups.find(g => { const c = core(g.title); return c && want && (c.includes(want) || want.includes(c)) && okYear(g) && okType(g); });
     if (hit) { found = { ...hit, artistName: ar.name, artistId: ar.id }; break; }
   }
   if (out[k] && out[k]._http) { fs.writeFileSync(path.join(DIR, 'requery-out.json'), JSON.stringify(out, null, 1)); console.log(`✖ ${k}：目錄查詢失敗`); continue; }

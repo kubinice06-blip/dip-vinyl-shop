@@ -56,13 +56,47 @@
   "credit": "James Taylor"
  },
  "Santana|Santana III": {
-  "id": "3f70e2a2-0e55-4625-a4c4-4c2b75ff360e",
+  "id": "6258df90-78c7-3395-8830-e7b4328a002c",
   "title": "Santana",
-  "first-release-date": "1997",
+  "first-release-date": "1971-09",
   "primary-type": "Album",
-  "secondary-types": [
-   "Compilation"
-  ],
-  "credit": "Santana"
+  "secondary-types": [],
+  "credit": "Santana",
+  "_note": "MB 標題是裸名 Santana，但池裡已有 1969 出道作同名，卡名維持通用的《Santana III》避免撞鍵（比照 Weezer (Blue Album) 的做法）"
+ },
+ "Weezer|Weezer (Green Album)": {
+  "id": "923d5ba6-7eee-3bce-bcb2-c913b2bd69d4",
+  "title": "Weezer",
+  "first-release-date": "2001-05-07",
+  "primary-type": "Album",
+  "secondary-types": [],
+  "credit": "Weezer",
+  "_note": "MB 標題是裸名 Weezer；池裡已有 Weezer (Blue Album)，卡名沿用池中括號註記慣例"
+ },
+ "Beyond|猶豫": {
+  "id": "aa6e12b8-9c21-364c-a938-c2634f561f77",
+  "title": "Deliberate 猶豫",
+  "first-release-date": "1991",
+  "primary-type": "Album",
+  "secondary-types": [],
+  "credit": "Beyond",
+  "_note": "MB 標題為雙語 Deliberate 猶豫，定點查證確認即 1991 年那張"
+ },
+ "Amália Rodrigues|Gostava de ser quem era": {
+  "id": "e63be136-18a8-4c8f-b002-2333aea06a0b",
+  "title": "Gostava de ser quem era",
+  "first-release-date": "1980",
+  "primary-type": "Album",
+  "secondary-types": [],
+  "credit": "Amália Rodrigues"
+ },
+ "Ray Charles|Modern Sounds in Country and Western Music, Volume Two": {
+  "id": "9eb4aa79-d407-3201-869a-76202cc6b149",
+  "title": "Modern Sounds in Country and Western Music, Volume 2",
+  "first-release-date": "1962-10",
+  "primary-type": "Album",
+  "secondary-types": [],
+  "credit": "Ray Charles",
+  "_note": "MB 用阿拉伯數字 Volume 2，提案寫 Volume Two，卡名改用 MB 寫法"
  }
 }
