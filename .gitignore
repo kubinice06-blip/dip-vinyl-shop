@@ -8,3 +8,7 @@ scripts/cover-audit/data/auto-refresh.log
 
 # publish-manifest.mjs 產生的上架 payload（每次可重新產生，不入版控）
 publish-stage/
+
+# 封面版本覆核接觸表：本機用的暫存頁，repo 根目錄會被 Cloudflare Pages 部署，不可提交
+cover-edition-sheet-*.html
+cover-edition-thumbs/
