@@ -35,11 +35,10 @@ const rq = fs.existsSync(path.join(DIR, 'requery-out.json'))
 const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 // 少數卡的 secondary type 是作品本質、不是配錯碟。ALBUM_ONBOARDING §5.6 明訂
 // 「primary-type 為 Album 但 secondary-type 含 Compilation 者，照一般 Album 寫法即可」，
-// 這裡把同樣道理套到 Live／Soundtrack：逐張具名放行，不做整類開放。
-const ACCEPT_SECONDARY = {
-  'Jackson Browne|Running on Empty': '本作就是巡演途中在舞台、旅館房間與巴士上錄成的，Live 是作品形式本身而非誤配；策展層已按代表作收錄並記過風險。',
-  'Henry Mancini|Charade': 'Mancini 的正典輸出就是電影配樂，Soundtrack 是其創作形態；本張為 1963 年原始配樂盤，非後製精選。',
-};
+// 這裡把同樣道理套到 Live／Soundtrack：逐張具名，不做整類開放。
+// 清單放在獨立檔而不是寫死在這裡，因為 verify-mbid.mjs 也要用同一份；
+// 各寫一份遲早走樣，到時放行的卡在一支腳本過、另一支不過，誰對誰錯還得再查一輪。
+const ACCEPT_SECONDARY = JSON.parse(fs.readFileSync(path.join(DIR, 'accept-secondary.json'), 'utf8'));
 const BAD_SECONDARY = ['Compilation', 'Live', 'Soundtrack', 'Remix', 'DJ-mix', 'Demo', 'Interview'];
 
 // 上游兩種命名一律正規化成同一組欄位；缺欄位回 undefined 而非空字串，
