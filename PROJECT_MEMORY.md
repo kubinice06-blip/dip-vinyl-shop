@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-30（第二筆）｜dip-vinyl-shop＋mood-quiz｜再補五題救低能量叢：整體判對 54%→58%
+
+店主指示「可以適當新增多一點題目」。延續 q_120–123，這次打混淆矩陣裡最弱的
+still／lowtide／drift 叢與題庫最餓的 O−（懷舊）方向。全程用 `sim-lab.mjs`
+先驗證再上線（patch json 覆寫、seed 固定、看混淆矩陣＋產出分佈）。
+
+**新增 q_124–q_128**（兩條線逐字一致，題庫 104→109）：
+- q_124 換了新手機（O−2S+1／S+2／S−2／O+2 四向，anchor/keeper/drift/seeker 各有家）
+- q_125 假日下午三點（**still 與 lowtide 的 M 軸分離器**：亮閒 E−2M+1 vs 暗沉 E−1M−2）
+- q_126 逛唱片行或書店（O±，「逛一圈沒買也賺到」E−1M+1 給亮閒）
+- q_127 鬧鐘響第一聲（restless 專屬選項「鬧鐘沒響就醒、事情在腦子排隊」E+1M−1S−1）
+- q_128 歌單長什麼樣子（O±/S± 四向）
+
+**兩個測出來有害、棄用的版本（重要教訓）**：
+1. 散步題初版：鑑別度 60 分搶進開場池第三名，但它對 O 軸零訊號——
+   seeker/anchor/keeper 玩家一開場就浪費一題（65/58/63 → 55/47/53）；
+   「夜市」選項又帶 X+2，flame 再度被推向 crowd（69→54）。**高鑑別度但
+   單軸失聰的題目會傷害那個軸上的所有心情**，整題棄用。
+2. 下午三點的暗選項初版標 E−2M−1：E−2 比亮選項的 E−1 更吸低能量玩家，
+   still/hermit 全被拐去 lowtide（hermit 誤判 lowtide 51%）。改成
+   **亮選項 E−2（發呆本來就沒力）、暗選項 E−1M−2（重的是心情不是體力）**才分開。
+   另試過亮閒選項加 X−1 給 hermit 出口：反而整體掉 2.4，棄用。
+
+**三個 seed × 每心情 1000 場（30% 雜訊）**：
+整體判對 53.8~54.4% → 57.5~58.0%，有關聯持平約 80~81%。
+still 26%→64%、lowtide 42%→63%、drift 31%→45%、flame 69%→77%。
+hermit 判對 33%→26%（誤判幾乎全落在鄰居 still，有關聯維持 87%）；
+seeker/keeper 小跌但有關聯可接受。產出分佈最大 still 17%（原本 crowd 21%），
+沒有心情低於 5%（balance 除外，設計如此）。
+
+體檢：死題 0、弱題 0、好題 53→58。O− 訊號 34→37、M+ 44→48、E− 46→53。
+**線上實測**：still 取向作答被問到 q_125，判到 still，
+抽到 Cat Stevens《Tea for the Tillerman》配 still 段落。
+
+改動：`questions.json`、`mood-quiz.json`（上線，commit 653869d）；
+`mood-quiz/banks/questions-v2.json`、`mood-vectors-v2.json`（不在 git）。
+備份：`banks/*.backup-before-q124.json`。
+
 ### 2026-08-30｜dip-vinyl-shop＋mood-quiz｜心情選歌三項待辦一次結清：flame 救回、AI 線換 v2 題庫、balance 定案
 
 店主指示「三個依序執行」，指的是離線版上線時留下的三筆待辦。
