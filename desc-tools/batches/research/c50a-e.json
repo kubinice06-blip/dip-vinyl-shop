@@ -119,7 +119,7 @@
    "All I Really Want to Do"
   ],
   "status": "full",
-  "notes": "【推翻主線】卡單的 rgMbid dda9ce86-7b6a-335d-9296-61eb86718433 是錯釘：經 MB API 查證，該 release-group 的 primary-type 雖為 Album，但帶 secondary-type「Compilation」且沒有 first-release-date，是合輯而非 1965 原盤。正解為 2b83d3e4-d461-31d6-9e2a-c99b69421e28（1965-06-21、Album、無 secondary-type、artist credit 為 The Byrds）。有趣的是 mbNote 自己寫的篩選條件（鎖 1965-06-21、primary-type=Album 且無 secondary-type）正好排除掉卡單釘上的那一筆。建議主線改釘。本作為原創錄音室專輯，非選輯。"
+  "notes": "【推翻主線】卡單的 rgMbid dda9ce86-7b6a-335d-9296-61eb86718433 是錯釘：經 MB API 查證，該 release-group 的 primary-type 雖為 Album，但帶 secondary-type「Compilation」且沒有 first-release-date，是合輯而非 1965 原盤。正解為 2b83d3e4-d461-31d6-9e2a-c99b69421e28（1965-06-21、Album、無 secondary-type、artist credit 為 The Byrds）。有趣的是 mbNote 自己寫的篩選條件（鎖 1965-06-21、primary-type=Album 且無 secondary-type）正好排除掉卡單釘上的那一筆。主線已於 2026-08-30 改釘（收斂器欄位命名修好後重出卡單），現行卡單即為此正解。本作為原創錄音室專輯，非選輯。"
  },
  {
   "key": "desc2:Built to Spill|There's Nothing Wrong With Love",
@@ -237,7 +237,7 @@
    "Trouble No More"
   ],
   "status": "full",
-  "notes": "【推翻主線】卡單的 rgMbid 764e134e-7b29-3695-89ce-bfb16e46e2e7 是錯釘：經 MB API 查證，該 release-group 帶 secondary-type「Compilation」、first-release-date 為 1995，正是 mbNote 自己提醒要避開的同名合輯。正解為 6aff3ef9-c1c1-333b-b61d-8c55ef08dcca（1969-11-04、Album、無 secondary-type、artist credit 為 The Allman Brothers Band）。建議主線改釘。廠牌宣稱已降級處理：查證只支持「Atco 發行、唱片上另有一行 Capricorn」與「Walden 把樂團設定為 Capricorn 的核心」，未寫成「Capricorn 的第一張唱片」這類無法反查的說法。金唱片認證 1973 年是給《Beginnings》合輯（本作與 Idlewild South 的合體），不是給本作，facts 因此未寫。"
+  "notes": "【推翻主線】卡單的 rgMbid 764e134e-7b29-3695-89ce-bfb16e46e2e7 是錯釘：經 MB API 查證，該 release-group 帶 secondary-type「Compilation」、first-release-date 為 1995，正是 mbNote 自己提醒要避開的同名合輯。正解為 6aff3ef9-c1c1-333b-b61d-8c55ef08dcca（1969-11-04、Album、無 secondary-type、artist credit 為 The Allman Brothers Band）。主線已於 2026-08-30 改釘（收斂器欄位命名修好後重出卡單），現行卡單即為此正解。廠牌宣稱已降級處理：查證只支持「Atco 發行、唱片上另有一行 Capricorn」與「Walden 把樂團設定為 Capricorn 的核心」，未寫成「Capricorn 的第一張唱片」這類無法反查的說法。金唱片認證 1973 年是給《Beginnings》合輯（本作與 Idlewild South 的合體），不是給本作，facts 因此未寫。"
  },
  {
   "key": "desc2:Beyoncé|Dangerously in Love",
