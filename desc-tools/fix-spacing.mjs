@@ -13,14 +13,21 @@ const CJK = '㐀-鿿぀-ヿ';
 // 中文夾拉丁的**專名**不可拆——頑童MJ116 是卡池藝人欄、さんピンCAMP 是活動名，
 // 補了空格就跟卡片標題或原始寫法對不上。（2026-08-11 cjk-06 實測）
 // 保護清單＝卡池裡「中文與拉丁直接相鄰」的藝人欄與專輯名，加上手動補的活動／廠牌名。
-const EXTRA_PROTECTED = ['さんピンCAMP'];
+// 這裡放「中文或假名與拉丁字母直接相鄰、但官方寫法就沒有空格」的專名。
+// 保護清單的主體是從卡池的藝人與專輯欄自動抓的，但行文裡提到的樂團、活動、廠牌
+// 不在卡池裡，只能手動補。2026-08-30 補入大事MANブラザーズバンド：
+// 李克勤〈紅日〉的原曲〈それが大事〉出自該團，官方團名無空格，加空格等於改壞專名。
+const EXTRA_PROTECTED = ['さんピンCAMP', '大事MANブラザーズバンド', '大事MANブラザーズ'];
 // 保護清單的來源卡池：本機在 dip-vinyl-shop 下、雲端則與本腳本同 repo（desc-tools/ 的上一層）。
 // 兩邊都試，讀不到就略過（下面的 try/catch 會 continue，只是保護清單較短）。
 const POOL = [
   'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/seed_cards.json',
   'C:/Users/User/dip-vinyl-home/dip-vinyl-shop/apex_pool.json',
-  new URL('../seed_cards.json', import.meta.url).pathname.replace(/^/([A-Za-z]:)/, '$1'),
-  new URL('../apex_pool.json', import.meta.url).pathname.replace(/^/([A-Za-z]:)/, '$1'),
+  // Windows 上 pathname 會是 /C:/Users/⋯，要把前導斜線去掉；Linux 的 /home/⋯ 不符合
+  // 這個樣式所以原樣通過。斜線必須跳脫——沒跳脫的話 /^/ 就把常規表示式收掉了，
+  // 後面的 ([A-Za-z]:) 被當成運算式，整支腳本 SyntaxError、一行都跑不了。
+  new URL('../seed_cards.json', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'),
+  new URL('../apex_pool.json', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'),
 ];
 const adjacent = new RegExp(`[${CJK}][A-Za-z0-9]|[A-Za-z0-9][${CJK}]`);
 const protectedTokens = (() => {
