@@ -81,3 +81,36 @@ A 面是 Firebird Suite 四段、**B 面是德布西〈牧神的午後前奏曲�
 留卡：重錄者就是原作曲者本人，且原盤有 Billboard 流行專輯榜第 6 名的成績、
 歷史定位明確。〈Charade〉是第 36 屆奧斯卡最佳原創歌曲**入圍未得獎**。
 本張的 Soundtrack 型別放行見第 2 條。
+
+## 9. Blondie《Plastic Letters》年份定 1978（2026-08-30 定案，第 4 條結案）
+
+第 4 條列的三張年份衝突至此全部有解。MB 首發標的 1977 是**曲序重排的日本先行版**，
+正式發行是 1978 年 2 月的 Chrysalis 版，策展層原填的 1978 才對。
+候選檔的 mbNote 原本要求「以 MB 的 1977 為準」，該句作廢。
+
+三張的處理各不相同，但用的是同一條原則——**具體的實體或版本證據勝過欄位上的數字**：
+Ayler 改成首發年（1965，ESP-1002）、Tito Puente 維持原盤年（1956，RCA Victor LPM-1312，
+MB 的 1993 是 CD 再版）、Blondie 維持正式版年（1978，MB 的 1977 是日本先行版）。
+
+## 10. c-50 其餘逐張裁決（研究層推翻主線，主線照單採納）
+
+- **Sylvester 同名作**：策展層說「Two Tons o' Fun 與 Patrick Cowley 班底成形的起點」——
+  Cowley 部分不成立，他是 1978 年《Step II》製作期間才進錄音班底。Two Tons o' Fun 屬實。
+  序數不寫（維基正文稱第三張、導言稱第一張個人專輯，兩處不一致）。
+- **Hole《Pretty on the Inside》**：製作是 **Kim Gordon 與 Don Fleming 兩人**，
+  而且 Gordon 是以「要讓 Fleming 一起做」為條件才答應的。發行採 1991 年 9 月
+  （卡單帶的 MB 1991-07-01 是某一筆美國版 release 的日期，與其他來源不合）。
+  Caroline Records 是 Virgin 體系下的獨立廠牌，不寫成「首度登上大廠」。
+- **George Harrison《Cloud Nine》**：正確說法是這張**本身就是他生前發行的最後一張錄音室專輯**
+  （《Brainwashed》2002 年才發行、屬遺作），不是策展層寫的「最後幾張裡最成功的那張」。
+- **Aerosmith 同名首作**：〈Dream On〉1973 年首發只到第 59 名，是 1975 年底重發、
+  1976 年 4 月才進到第 6 名，專輯也是 1976 年才上到 Billboard 200 第 21 名。
+  不得把 1973 年寫成當年就紅。
+- **Blondie《Plastic Letters》曲名**：策展層寫的〈(I'm Always Touched by Your) Presto, Darling〉
+  是錯的，正解是〈(I'm Always Touched by Your) Presence, Dear〉。
+- **Mercedes Sosa**：「流亡前最後一批阿根廷錄音」不成立（1973 距她 1979 年離開還有六年）。
+- **梅艷芳〈飛躍舞台〉**：不是「第一首真正意義上的個人代表作」——前一年〈赤的疑惑〉
+  已同時拿下十大中文金曲與第一屆十大勁歌金曲。
+- **Paco de Lucía《Sólo quiero caminar》**：廠牌 Philips（Phonogram 體系，德國版 6301 030）。
+  序數不寫（維基兩處不一致）。「第一張用 cajón 的佛朗明哥唱片」這類最高級宣稱不寫——
+  另有研究指 Pepe Ébano 才是把 cajón 引進西班牙佛朗明哥的人，兩說並存。
