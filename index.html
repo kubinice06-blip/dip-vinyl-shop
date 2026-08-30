@@ -3022,9 +3022,11 @@
       const variants = moodBank.passages[key][m] || [];
       if (!variants.length) return null;
       // 同一張卡同一種心情再抽到時輪替變體，不要每次都同一段
+      // 用 localStorage 不用 sessionStorage：分頁一關就歸零的話，同一張卡隔天再抽到
+      // 又是第一段，寫好的第二個變體永遠沒人看得到（2026-08-30 模擬：常客 100% 只看到第一段）。
       const seq = `dip_mv_${key}_${m}`;
       let n = 0;
-      try { n = parseInt(sessionStorage.getItem(seq) || '0', 10) || 0; sessionStorage.setItem(seq, String(n + 1)); } catch (e) {}
+      try { n = parseInt(localStorage.getItem(seq) || '0', 10) || 0; localStorage.setItem(seq, String(n + 1)); } catch (e) {}
       const c = moodBank.cards[key];
       return { key, mood: m, artist: c.a, album: c.b, year: c.y, tier: c.t, passage: variants[n % variants.length] };
     }
@@ -3050,12 +3052,18 @@
   let quizAnotherCount = 0;
   const QUIZ_ANOTHER_MAX = 3;
   let lastQuizResult = null;
+  // 已看清單改存 localStorage，隔天回來才不會又拿到同一張專輯。
+  // 上限 200 筆（FIFO）是必要的：不設上限時重度使用者會把某個心情的卡池抽乾，
+  // 有 54.9% 的抽卡掉進 pickCard 的「全看過了就重複抽」退路；設 200 之後是 0%。
+  const SEEN_MAX = 200;
   let seenAlbums = (() => {
-    try { const s = sessionStorage.getItem('dip_seen'); return s ? new Set(JSON.parse(s)) : new Set(); }
+    try { const s = localStorage.getItem('dip_seen'); return s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { return new Set(); }
   })();
   function _saveSeenAlbums() {
-    try { sessionStorage.setItem('dip_seen', JSON.stringify([...seenAlbums])); } catch(e) {}
+    // Set 保留插入順序，slice(-N) 就是「留最近的 N 筆」
+    if (seenAlbums.size > SEEN_MAX) seenAlbums = new Set([...seenAlbums].slice(-SEEN_MAX));
+    try { localStorage.setItem('dip_seen', JSON.stringify([...seenAlbums])); } catch(e) {}
   }
 
   // Track distinctive words used in reason texts to avoid repetition within session
@@ -3086,7 +3094,7 @@
     if (e.target.closest('[data-quiz-action="retry"]')) {
       // 離開這張結果就把試聽收掉，別讓音樂一路播到重新作答的畫面。
       gpStopPreview({ fade: true });
-      sessionStorage.removeItem('dip_seen'); seenAlbums = new Set();
+      localStorage.removeItem('dip_seen'); seenAlbums = new Set();
       sessionStorage.removeItem('dip_reason_words'); seenReasonWords = new Set();
       startQuiz();
     }
@@ -3162,7 +3170,7 @@
     quizAnswers = {};
     quizIdx = 0;
     quizAnotherCount = 0;
-    try { const s = sessionStorage.getItem('dip_seen'); seenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
+    try { const s = localStorage.getItem('dip_seen'); seenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { seenAlbums = new Set(); }
 
     if (quizMode === 'offline' && DipMood.ready) {
