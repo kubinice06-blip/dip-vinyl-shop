@@ -1,5 +1,36 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-29（第二筆）｜dip-vinyl-shop｜搜尋專輯：標點會擋掉命中，接上既有的鬆散比對
+
+店主回報「Paris, Texas 搜尋不到」。查證後**卡池與線上資料都沒問題**——
+`apex_pool.hall` 有這張，Firestore `card_catalog`（`apex:true`／`tier:hall`）、
+`album_overrides.tier`、`apex_pool` 三處都在，線上 `apex_pool.json` 也是最新的 679 筆。
+
+**真正的原因是比對方式**：`doAlbumSearch()` 用 `_asNorm`（只做 NFKC＋小寫＋trim，
+**不去標點**）做 `includes`，於是：
+
+| 打法 | 修正前 |
+|---|---|
+| `Paris, Texas`（逐字相同） | 1 筆 |
+| `paris texas`（沒逗號） | **0 筆** |
+| `Paris,Texas`（逗號後沒空格） | **0 筆** |
+| `ry  cooder`（多一個空格） | **0 筆** |
+
+程式裡本來就有 `_asLoose`（去括號內容、去 remaster／edition 等再版字樣、
+把所有標點換成空白），但**只接在「拍封面搜尋」那條路徑上，打字搜尋沒用到**。
+
+改法：`doAlbumSearch` 改成兩層比對——先 `_asNorm` 逐字命中，再 `_asLoose` 鬆散命中當退路；
+排序時逐字命中（rank 0–2）一律排在鬆散命中（rank 3–5）之前，打得越精準結果越前面。
+鬆散層加 `_asShortLimit` 護欄（拉丁字串至少 4 字、CJK 至少 2 字），
+否則「a」這種短字會經由去標點命中整個卡池。`rank()` 的未比對欄位 fallback 由 3 改為 9，
+免得和新的「鬆散完全一致＝3」撞號。
+
+**驗證**（本機 8901 起站，實際操作 UI 而非只看程式）：
+`Paris, Texas`／`paris texas`／`Paris,Texas` 三種打法都回 1 筆且標「殿堂」；
+`ry  cooder` 回 5 筆；`kind of blue` 仍是 2 筆、Miles Davis 那張排第一（精準度未犧牲）。
+
+**主要檔案**：`index.html`（`doAlbumSearch`）
+
 ### 2026-08-29｜dip-vinyl-shop｜c-47 上架：170 張寫入 Firestore 與卡池，補回四類被跳過的判定
 
 Firestore 免費配額（讀取 5 萬／日）於太平洋午夜重置後恢復，把 8/28 卡住的 c-47 走完
