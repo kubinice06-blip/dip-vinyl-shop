@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-30（第三筆）｜dip-vinyl-shop＋mood-quiz｜卡池擴充 25 張名盤（b7）：補 still／crowd／flame 三池
+
+店主指示「有需要再擴充專輯解答嗎？如果要的話只挑一些有名的專輯」。
+先用數據回答「需不需要」：以新題庫的產出分佈算**每 1% 產出配幾張卡**，
+最緊的是 still 3.1、crowd 3.8、flame 5.3，其餘全在 6.6 以上——結論是只補這三池。
+
+**選卡原則**：名盤、**只挑 seed_cards 既有專輯**（不觸發 dip-card-create 上架流程）、
+不與現有 300 張重複。25 張：still 11（Norah Jones／Sigur Rós／Köln Concert／Enya／
+Moon Safari／The xx／Cigarettes After Sex／Chet Baker Sings／Sounds of Silence／
+Sleep／Diamond Life）、crowd 10（EWF／Arrival／C'est Chic／Like a Prayer／Whitney
+首張／Travelling Without Moving／Random Access Memories／24K Magic／B-52's 首張／
+Wild and Peaceful）、flame 4（Licensed to Ill／Fat of the Land／Here's Little
+Richard／Eye of the Tiger）。tier 誠實照 seed 三軸填「經典3／4／5」
+（本批沒有 hall——名氣與店裡的經典度是兩回事，Norah Jones 只有經典3）。
+
+**產線（照 b1–b6 規格走）**：
+1. KV 抓 desc2 當事實底稿（25/25；抽查三筆全文身分無誤——粗檢「desc 沒提到藝人名」
+   全是誤報，desc-restyle 後的簡介本來就用「Jones」「樂團」代稱不重複團名）
+2. 人稱表補 22 筆；**Sade、Jamiroquai 是領銜掛名**，標「他們」＋備註
+   （個人事實用「主唱」「他們裡面有人」處理，b7 寫手都照辦了）
+3. 兩組 Sonnet 研究代理寫「已驗證的聲音描述」各 2 句（省流量規格）
+4. shortlist 325 張、build-batch b7 派三份、**手動注入主心情＋副心情候選**
+   （副心情限主心情的鄰居，寫手按專輯聲音自選一個）
+5. 三個 Opus 寫手：9／9／7 張，各 4 段（主×2＋副×2）＝100 段
+6. 機器 QA：僅 1 處**跨份撞開場**（兩寫手互不知情撞「捷運末班車上人不」，預期內），手修
+7. 逐段人工審稿：修 1 處事實走樣——**Beastie Boys 被公司打回票的是專輯標題，
+   寫手寫成「被要求換過名字」會被讀成團名**；其餘 desc2 事實比對全過
+   （Whitney 被晾兩年、B-52's 沒貝斯手拿鍵盤頂、Madonna 不肯剪鏡頭、
+   Prodigy 舞者變主唱、Sade 主唱窮到領不回送洗衣物、S&G 拆夥後被人偷偷疊軌）
+
+**結果**：300 → 325 張、1272 → 1372 段；每 1% 產出配卡 still 3.1→3.7、
+crowd 3.8→4.5、flame 5.3→6.3。全庫總驗零問題（字數 68–126 中位 94、破折號 18%）。
+sim-shipped 端到端 59%／81%。mood-bank.json 404KB→436KB（不預快取，載入無影響）。
+commit 9f8b443，線上已驗：325/1372、新卡逐鍵可抽（各 2 心情 × 2 變體）。
+
+**取樣教訓**：線上「再一張」連抽驗證時，8 秒等待會讀到抽卡動畫期間的舊 DOM，
+看起來像同一張卡抽四次——其實有在輪替（按鈕用罄、最後停在別張）。
+下次驗抽卡輪替要等動畫結束或直接驗資料層。
+
+改動：`mood-bank.json`（上線）；mood-quiz/ 的 `banks/shortlist.json`（+25 含素材）、
+`banks/artist-pronoun.json`（+22）、`banks/desc2-cache.json`（+25）、
+`banks/passage-batches/b7-in*.json`／`b7-out*.json`（mood-quiz/ 不在 git）。
+備份：`banks/shortlist.backup-before-b7.json`。
+
 ### 2026-08-30（第二筆）｜dip-vinyl-shop＋mood-quiz｜再補五題救低能量叢：整體判對 54%→58%
 
 店主指示「可以適當新增多一點題目」。延續 q_120–123，這次打混淆矩陣裡最弱的
