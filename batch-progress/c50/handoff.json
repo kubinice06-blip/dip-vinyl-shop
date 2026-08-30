@@ -1,0 +1,52 @@
+{
+ "batch": "c50",
+ "cards": 127,
+ "skipped": 0,
+ "generatedAt": "2026-08-30",
+ "pendingLocal": {
+  "covers": "全部（CAA 逐張 HTTP 驗證與人工目視是本機工項）",
+  "previews": "全部（iTunes /lookup 雲端 egress 不穩，且版本需人工覆核）",
+  "listeners": "全部（Last.fm 為本機工項；本批一律留 null）",
+  "ratings": "全部——worker /album-rating 會把 AI 基線寫進 rating4: KV 快取，依 REMOTE_RUNBOOK「雲端不碰 KV」不在雲端執行。已確認該端點在雲端可達（回 200），是規則問題不是可達性問題。",
+  "apexEvidence": "不適用——本批候選不做頂點評估，整項留給本機（見 counts.apexCandidates 註）",
+  "manualIdentity": [],
+  "compilationsNeedingReview": []
+ },
+ "counts": {
+  "apexCandidates": "未評估（本機工項）",
+  "apexByTier": {},
+  "pinnedMbid": 127,
+  "manualIdentity": 0
+ },
+ "skippedDetail": [],
+ "qa": {
+  "research": "c50a／c50b／c50c 三批 qa-batch research 全部通過：key 與卡單完全一致，127 張全數 full、零 thin。本批另補了三道機器檢查（千分位逗號、src 必須是完整 https、hookCandidates 上限 2），第一項就抓到 c50a 的 c、d 兩組整批把銷量寫成「281,948 張」這類千分位寫法——那條規則原本只寫在提示詞裡、沒有任何機器檢查。",
+  "hooks": "chk-hook-crossgroup 三批全綠、qa-batch hooks 全部通過。note 131–349、hook 加權 16–36，全部在上限內。過程中 c50a 兩組被退：a 組九張全部超過 350 字元上限（最長 490）、d 組八張（最長 455），成因都是把研究稿的事實複述進 note。hook 層自己糾正了兩處派工詞的錯，兩次都依 hook-base.md 的既有定案：note 一律正面表述（否定句會被寫作層原樣寫進正文），以及評分不得進 note 指派句。",
+  "out": "qa-batch out 三批合計 127 張與卡單相符、超過 260 字零張、字數 199–240。qa-check-research 六檔全部標記 0、fix-spacing 六檔全部待補 0。qa-batch out 的「未具名出處」共 5 個標記，逐一核對後**全部是誤報**，且全是同一型態——具名修飾語就緊貼在裸字串前面（「Pitchfork 的 1990 年代百大專輯」「入選拉丁葛萊美名人堂」「《Village Voice》當年的樂評票選」「A2IM Libera Awards 的年度專輯獎」「隔年的葛萊美拿下年度專輯獎」）。判定沒有放寬，標記改成自帶前後文，逐筆理由見 batch-progress/c50/qa-notes.md。"
+ },
+ "rulings": [
+  "【裁決全文另存 batch-progress/c50/rulings.md】店主 2026-08-29 授權這批的判斷由主線自己做。授權不等於不留痕：十二條裁決各自寫明理由與可推翻的條件，本機審稿時可逐條覆蓋。以下只摘要，細節見該檔。",
+  "【年份三張，同一原則不同結論】用的都是「具體的實體或版本證據勝過欄位上的數字」：Albert Ayler《Spiritual Unity》1964 → 1965（1964 是錄音年，首發是 ESP-1002 的 1965 年 5 月；本批取原盤首發年，古典取錄音年是 c-48 另外的裁定、不適用）；Tito Puente《Puente Goes Jazz》維持 1956（MB 的 1993 是 CD 再版年，Discogs 有 RCA Victor LPM-1312 原盤）；Blondie《Plastic Letters》維持 1978（MB 的 1977 是曲序重排的日本先行版，正式發行是 1978 年 2 月的 Chrysalis 版，候選檔 mbNote 原本要求「以 MB 的 1977 為準」的那句作廢）。",
+  "【版本型別具名放行兩張】Jackson Browne《Running on Empty》帶 Live、Henry Mancini《Charade》帶 Soundtrack，查證後判定型別是**作品性質**而非配錯碟：前者整張就是巡演途中在舞台、旅館房間與巴士上錄成的，後者是電影配樂作曲家的原始配樂盤。作法比照 ALBUM_ONBOARDING §5.6 對 Album+Compilation 的處理：逐張具名、不做整類開放，理由寫進 accept-secondary.json 並帶進卡片 mbNote。",
+  "【雙掛名一律維持卡池的單藝人寫法】Willie Colón《Siembra》（MB 掛 + Rubén Blades）與 Celia Cruz《Celia & Johnny》（MB 掛 Johnny Pacheco）。卡池的鍵結構就是單藝人，改動會波及全池。正文把對方寫成合作者而非客串。",
+  "【Frank Zappa《Sheik Yerbouti》留卡，但不得寫成純錄音室製作】英文維基歸為 live album with studio elements（基本音軌多為 1977–78 年現場錄音再大量疊錄），MB 標 Album 無 secondary type。留卡的理由：本批要排除的是沒有創作增量的再包裝，而這張全是當時未發表的新作、也是 Zappa 銷量最高的唱片。正面用「現場骨架加錄音室疊錄」這個事實。",
+  "【Henry Mancini《Charade》：1963 年原盤是原作曲者本人的重錄版】不是電影裡使用的原始錄音（完整電影版 2012 年才由 Intrada 發行），依規則屬「重錄須主動標記」。留卡，因為重錄者就是原作曲者本人且原盤有 Billboard 流行專輯榜第 6 名的成績。",
+  "【研究層推翻策展層、主線照單採納者】冨田勲《Firebird》不是純 Stravinsky 專輯（原盤 B 面是德布西〈牧神的午後前奏曲〉與穆索斯基〈荒山之夜〉，與策展理由所稱「卡池已有這兩位、缺史特拉汶斯基」相反）；Amália Rodrigues《Gostava de ser quem era》的十首歌詞**全由她本人所寫**，Ary dos Santos 與 Oulman 都未參與；Wynton Marsalis 同名首作不是「第一座爵士葛萊美」（首座是 1984 年頒的《Think of One》），且 Hancock／Carter／Williams 只在東京錄的四首上、紐約那三首是另一組年輕陣容；Sylvester 同名作沒有 Patrick Cowley（他 1978 年《Step II》才進班底）；Hole《Pretty on the Inside》是 Kim Gordon 與 Don Fleming **共同**製作、發行在 9 月不是 MB 標的 7 月；George Harrison《Cloud Nine》本身就是他生前發行的最後一張錄音室專輯；Aerosmith 首作的〈Dream On〉1973 年只到第 59 名、要到 1976 年才紅；Mercedes Sosa 那張不是流亡前最後錄音（1973 距她 1979 年離開還有六年）；梅艷芳〈飛躍舞台〉不是第一首個人代表作（前一年〈赤的疑惑〉已拿下十大中文金曲與第一屆十大勁歌金曲）。"
+ ],
+ "ownerDecisions": [],
+ "poolIssues": [
+  "【收斂器欄位命名錯配，造成十張卡釘到錯的碟——本批最重要的一件事】mb.mjs 產 camelCase（primaryType／secondaryTypes／firstRelease），requery.mjs 產 MB 原生的 kebab-case，consolidate.mjs 只讀後者。後果：主查那條路上合輯／現場／單曲的扣分**從未生效**、mbFirstRelease 全批空白、而我先前回報的「帶 secondary type 的 0 張」是在讀一個永遠 undefined 的欄位，那次驗證等於沒做。修好後十張改釘正確 release group：RHCP《By the Way》、McCartney《Tug of War》、Oldfield《Ommadawn》原本釘到同名**單曲**；The Byrds《Mr. Tambourine Man》、Allman Brothers 同名作、Aerosmith 同名作釘到同名**合輯**；AC/DC《Dirty Deeds》、Blondie 同名作釘到**現場盤**；Alice in Chains 同名作釘到 **1989 年宣傳盤**（兩筆都是 Album 且無 secondary type，靠年份加分才分得開）；Patti Smith《Wave》釘到**未定型的重複條目**（那筆掛名精確等於藝人名而贏過正解，正解掛名是 Patti Smith Group）。",
+  "【身分層有兩道互相獨立的證據】新增 batch-progress/c50/verify-mbid.mjs：拿每張的 rgMbid **直接向 MB 取碟**，比對版本類型、secondary type、標題與首發日期。mb-raw.json 只是搜尋結果的快取、收斂器是在快取上挑；用 ID 直接取問的是「這個 ID 現在到底是什麼」。127 張覆核結果：查詢失敗 0、與卡片不符 0，primary-type 全是 Album、全有首發日期，唯二帶 secondary type 的就是具名放行的兩張。過程中 14 張次回 503，腳本把 HTTP 錯誤記進 errors 並以非零狀態碼結束、不當成通過也不當成查無，隔一陣重跑即補齊。結果與研究層獨立打 API 的查證互相印證。",
+  "【去重】對線上池 12,906 鍵撞卡 0；對尚未上架的兄弟批次 c-48／c-49 候選（183 張），字串鍵與 rgMbid 兩種比對都是撞卡 0。",
+  "【廠牌回填五筆】研究層查證時順手查到、已補進候選檔並在 mbNote 註明來源組別：林憶蓮《蓋亞》環球唱片、《都市觸覺, Part II》華納唱片、許冠傑《天才與白痴》Polydor（中文名各來源不一，只寫拉丁原文）、Motörhead《1916》WTG Records、Amália Rodrigues《Fado português》Columbia。仍留空三筆：Helloween《The Time of the Oath》、Amália《Gostava de ser quem era》、Paco de Lucía《Sólo quiero caminar》（後者研究層查得 Philips／Phonogram、德國版 6301 030，本機可逕行回填）。",
+  "【選題的自我修正】原訂補「≥5 張卡的藝人」，實測後推翻：那一層已經平均 7.1 張、在目標值上。真正的缺口與路線圖反模式 #1（代表作缺席）風險落在**有頂點卡但總卡數只有 3–5 張**的 179 位藝人，127 張全部瞄準這一層。順帶更新一個過時數字：前 1500 名藝人的平均卡數已是 4.93（不是 8/22 的 3.8），補到 6 需要 +2539 張而非 +3500。"
+ ],
+ "specConflicts": [
+  "【fix-spacing.mjs 有 SyntaxError，從進版控起一行都跑不了】寫作層子代理自查時抓到的。POOL 陣列裡的 .replace(/^/([A-Za-z]:)/, '$1') 少了跳脫，/^/ 直接把常規表示式收掉。這支是 SKILL 規定 QA 階段要跑的，缺陷從 8d4da20 就存在，也就是**整個 c-48／c-49 從來沒有機器檢查過中英間距**。修好後回頭掃那 25 個舊輸出檔，只有一張命中：c49b-out-3 的李克勤〈紅日〉提到原曲出自日本的大事MANブラザーズバンド。那張**不能**照腳本建議加空格——官方團名沒有空格，加了等於改壞專名；正解是補進 EXTRA_PROTECTED（原本只有さんピンCAMP 一筆）。26 個檔重掃全部乾淨。",
+  "【協調者自己會污染防造假機制】寫作層指出 Chuck Berry 那張正文的「搖滾草創期定位最明確的 LP 之一」只出現在研究層的 researchNotes、**不在 facts**——那是研究層的判斷語。追溯下去，這句是主線從研究註記抄進 hook 派工詞的，一路傳到 note 再進正文。產線的防造假機制設計成「正文只寫 facts 裡有的事實」，但那道防線擋不住協調者把 researchNotes 的判斷語當成事實往下派。已改用 facts 裡有來源的版本。**紀律**：從研究稿往下抄素材時只抄 facts。",
+  "【hook 的內容也需要來源】寫作層另外抓到 A Tribe Called Quest 的 hook 寫「一個底特律來的新人」，但研究稿 facts 只寫了 Jay Dee 加入 The Ummah 並經手五首、沒有地點。它照規定逐字保留 hook、正文也沒有延伸，但把問題報上來。已改寫成「一個剛進製作團體的新人」，hook 檔、寫作層輸入與輸出三處同步。**hook 就是正文的第一句**，只驗正文是不夠的。",
+  "【qa-batch 的「未具名出處」標記改帶前後文】c-50 五筆誤報全是具名修飾語緊貼裸字串。判定沒有放寬——該處註解記著上一次嘗試豁免失敗的原因（「附近有拉丁字母就放行」被曲名《Legion》〈Gloria〉誤觸），那個決定維持。改的是印出前後各二十餘字。這道檢查的真正失效模式不是判錯，而是人工複核太貴所以被跳過。",
+  "【研究小組的切分規則原本沒有腳本】重出卡單時才發現小組檔（c50a-a…e）是臨時指令做的、沒有東西能重生，只能反推出「照卡單順序連續切」才敢覆蓋。規則已寫進 batch-progress/c50/make-cards.mjs。",
+  "【四個子代理在 API 內容過濾下中止】三次發生在產出最終回報時、檔案已完整寫出並通過全部檢查（c50b 研究 a-b、c50c 研究 e、c50c 研究 c-d）；一次發生在改稿中途（c50c 寫作 1），但實測檔案也已改完。**不是資料問題**，四份產出都逐一驗過才入庫。若本機重跑同批遇到相同中止，先驗檔案再決定要不要重派。"
+ ]
+}
