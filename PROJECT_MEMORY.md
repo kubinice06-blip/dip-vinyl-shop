@@ -1,5 +1,79 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-30（第六筆）｜dip-vinyl-shop｜封面版本覆核：最可疑的 225 張全數判完，208 張已換
+
+依店主裁定的四條規則逐張目視判定 `edition-review.json` 排序最前的 225 張
+（國別不同＋數位重發那一層），**208 張換成正確版本、17 張維持現狀**，
+全部已 PATCH 進 Firestore `card_catalog.coverUrl` 並逐筆回讀一致。
+
+## 選片規則（依序套用）
+
+0. **封面真的分岔時，取廣為流傳、大家認得的那一套**（店主：「邏輯跟 Paris, Texas 一樣」）
+1. 同一套視覺內，**以發行國的封面為主**
+2. **年代版本越早越好**
+3. 太模糊就挑清晰的
+
+## 判定分布
+
+| 動作 | 張數 |
+|---|---:|
+| 換成該群組最早且有圖的那筆 | 159 |
+| 指定特定 release（多為發行國決勝） | 49 |
+| 維持現狀 | 17 |
+
+**規則 1 用掉 49 次**，遠超原本預期——它實務上是「同年並列時的決勝條件」：
+滾石／Iron Maiden／Queen 取英版、Billy Joel／Foreigner／Madonna／Devo／R.E.M. 取美版、
+Mecano 取西版、Mylène Farmer 取法版、Roxette 取瑞典版、TWICE／f(x) 取韓版、
+Stromae 取比利時版。
+
+**維持現狀的 17 張**多數是「現用版本本來就是發行國那一版」（YOASOBI 2021 JP、
+YG 2014 US、Yerin Baek 2019 KR、Cicada 2013 TW…），另有一張是規則 3
+（Ray Charles 1957 美版原版掃圖泛黃褪色，現用 2005 版同視覺但清晰得多）。
+
+## 真正的封面分岔（規則 0 派上用場的）
+
+- **AC/DC《Highway to Hell》**：1979 澳版（Albert Productions）是火焰設計，國際版是樂團合照 → 取合照
+- **滾石《Out of Our Heads》**：英美版曲目與封面都不同、1965 MX 又是第三套 →
+  收錄〈Satisfaction〉的美版才是流傳版，取 1965-07-30 US London
+- **Selena《Amor Prohibido》**：瓜地馬拉壓片是玫瑰邊框、2024 版重排字體 →
+  取 1994 EMI Latin 美版原版排版
+- **Gordon Lightfoot《Sit Down Young Stranger》**：現用是改題後《If You Could Read
+  My Mind》的封面，與卡片題名對不上 → 取 1970 CA 原題版
+- **Hailu Mergia《Wede Harer Guzo》**：2016 Awesome Tapes From Africa 再版改洋紅／黃配色 →
+  取 1978 ET 原發行國版
+- **Billy Ocean《Suddenly》**、**London Elektricity《Pull the Plug》**：現用版換了照片／另一套設計
+- **Culture Club《Kissing to Be Clever》**、**Booka Shade《Movements》**：
+  最早那筆才是變體，現用已是流傳版 → 維持
+
+## 工具
+
+- `14-edition-audit-sheet.mjs`：主線截圖判讀用的密集對照表
+- `15-apply-edition-picks.mjs`：套用判定。**寫入前先確認新網址可讀**
+- `16-pick-by-country.mjs`：查指定國別下最早的候選
+
+**兩個實測修正**：
+1. `16` 的同國別排序要**把卡帶排最後、優先取有完整日期的**——
+   Billy Joel《The Nylon Curtain》否則會挑到「1982 US Cassette」而非「1982-09-23 US 12" Vinyl」，
+   卡帶封面常被裁成方形或另作排版。
+2. `15` 的網址檢查**一定要重試再判死**——CAA 轉 archive.org 那層間歇回 500，
+   單次判定會讓整批被一個暫時性錯誤擋下（連續兩次踩到，重試同一網址馬上 200）。
+
+## 一個工具上的坑
+
+瀏覽器窗格的 `resize_window` 模擬視窗會讓頁面被縮到極小且無法還原，
+**必須用窗格原生尺寸**；而原生尺寸在不同呼叫間會變（778×662 ↔ 800×450），
+所以對照表的 CSS 尺寸要抓大（縮圖 170px），並限制每張卡只列 3 個候選，
+否則會換行成兩排、一屏能判的卡數砍半。
+
+## 驗證
+
+新網址可讀 **208／208**；Firestore PATCH 後逐筆回讀 **一致 208／208**。
+
+## 剩餘
+
+`review` 共 830 張，已處理最可疑的 225 張。剩下 605 張屬「只有國別不同」
+與「只差年份」兩層，可疑度較低，待店主決定要不要續做。
+
 ### 2026-08-30（第五筆）｜dip-vinyl-shop｜封面版本覆核開跑：規則定案，前 21 張已套用
 
 店主給了選片規則，主線據此逐張目視判定。新增 `scripts/cover-audit/14`（主線用的密集對照表）

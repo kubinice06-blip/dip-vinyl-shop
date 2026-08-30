@@ -58,14 +58,24 @@ if (!WRITE) { console.log('\n（乾跑，未動 Firestore。加 --write 實際�
 if (!plan.length) process.exit(0);
 
 // 先確認每個新網址都真的讀得到，再寫——換成一個 404 比留著舊版本更糟
+// **一定要重試再判死**：CAA 轉去 archive.org 那層會間歇回 500，
+// 單次就判定的話，整批會被一個暫時性錯誤擋下來（2026-08-30 連續兩次踩到，
+// 重試同一個網址馬上就 200）。
 let cur = 0; const dead = [];
 await Promise.all(Array.from({ length: 6 }, async () => {
   while (cur < plan.length) {
     const p = plan[cur++];
-    try {
-      const r = await fetch(p.url, { redirect: 'follow', signal: AbortSignal.timeout(30000) });
-      if (!r.ok) dead.push(`#${p.i} ${p.artist} — ${p.album}：HTTP ${r.status}`);
-    } catch (e) { dead.push(`#${p.i} ${p.artist} — ${p.album}：${e.message}`); }
+    let last = '';
+    for (let i = 0; i < 3; i++) {
+      try {
+        const r = await fetch(p.url, { redirect: 'follow', signal: AbortSignal.timeout(30000) });
+        if (r.ok) { last = ''; break; }
+        last = `HTTP ${r.status}`;
+        if (r.status < 500 && r.status !== 429) break;   // 4xx 是真的沒有，不重試
+      } catch (e) { last = e.message; }
+      await new Promise(s => setTimeout(s, 2000 * (i + 1)));
+    }
+    if (last) dead.push(`#${p.i} ${p.artist} — ${p.album}：${last}`);
   }
 }));
 if (dead.length) { console.error(`\n中止：${dead.length} 個新網址讀不到`); dead.forEach(d => console.error('  ' + d)); process.exit(1); }
