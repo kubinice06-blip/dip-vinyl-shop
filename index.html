@@ -2329,12 +2329,29 @@
     btn.disabled = false; btn.textContent = '搜尋';
     if (currentView !== 'album-search') return; // 等待期間已離開此頁
     const nqq = _asNorm(q);
+    // 標點寬鬆的第二層比對：_asNorm 只做 NFKC＋小寫，逗號、破折號與多餘空白都會擋掉命中
+    // （2026-08-29 實測：卡池寫「Paris, Texas」，打「paris texas」回 0 筆）。
+    // _asLoose 會去掉括號內容、再版字樣與所有標點，本來只給拍封面搜尋用，這裡接上當退路。
+    const lqq = _asLoose(q);
+    const looseOk = lqq.length >= _asShortLimit(lqq);   // 太短的鬆散字串會命中整個卡池
     const matchArtist = field !== 'album', matchAlbum = field !== 'artist';
+    const hitExact = text => _asNorm(text).includes(nqq);
+    const hitLoose = text => looseOk && _asLoose(text).includes(lqq);
     const hits = rows.filter(c =>
-      (matchArtist && _asNorm(c.artist).includes(nqq)) || (matchAlbum && _asNorm(c.album).includes(nqq)));
+      (matchArtist && (hitExact(c.artist) || hitLoose(c.artist))) ||
+      (matchAlbum && (hitExact(c.album) || hitLoose(c.album))));
     // 排序：命中欄位「完全一致 > 開頭 > 內含」取較佳者；同分再依經典度高→低
-    const fieldRank = (text) => { const v = _asNorm(text); return v === nqq ? 0 : v.startsWith(nqq) ? 1 : v.includes(nqq) ? 2 : 3; };
-    const rank = c => Math.min(matchArtist ? fieldRank(c.artist) : 3, matchAlbum ? fieldRank(c.album) : 3);
+    // 逐字命中一律排在鬆散命中之前，打得越精準結果越前面
+    const fieldRank = (text) => {
+      const v = _asNorm(text);
+      if (v === nqq) return 0;
+      if (v.startsWith(nqq)) return 1;
+      if (v.includes(nqq)) return 2;
+      if (!looseOk) return 6;
+      const w = _asLoose(text);
+      return w === lqq ? 3 : w.startsWith(lqq) ? 4 : w.includes(lqq) ? 5 : 6;
+    };
+    const rank = c => Math.min(matchArtist ? fieldRank(c.artist) : 9, matchAlbum ? fieldRank(c.album) : 9);
     hits.sort((x, y) => rank(x) - rank(y) || (y.classic || 0) - (x.classic || 0));
     const total = hits.length;
     if (!total) {
