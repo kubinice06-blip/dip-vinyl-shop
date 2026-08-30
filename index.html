@@ -3262,13 +3262,23 @@
       </div>
     `;
 
+    // 280ms 內連點兩個選項會排到兩個計時器，quizIdx 被加兩次卻只推了一題，
+    // 於是 quizSelected[quizIdx] 變 undefined，renderQuizQ 拋錯、畫面就此卡死
+    //（2026-08-30 自動化測試時踩到；手機上雙擊也會）。用旗標擋掉第二次。
+    let advancing = false;
     document.querySelectorAll('.quiz-option').forEach(btn => {
       btn.addEventListener('click', () => {
+        if (advancing) return;
         quizAnswers[q.id] = parseInt(btn.dataset.idx);
         quizAdvance();
         if (!isLast) {
+          advancing = true;
           btn.classList.add('selected');
-          setTimeout(() => { quizIdx++; renderQuizQ(); }, 280);
+          setTimeout(() => {
+            // 保險：萬一 quizAdvance 沒推出下一題（理論上不會），寧可停在原地也不要拋錯卡死
+            if (quizIdx + 1 < quizSelected.length) quizIdx++;
+            renderQuizQ();
+          }, 280);
         } else {
           renderQuizQ();
         }
