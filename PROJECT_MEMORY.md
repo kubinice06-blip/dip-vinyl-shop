@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-31｜dip-vinyl-shop｜c-SEA 印尼組策展提案：55 張候選（`batch-progress/csea/prop-id.json`）
+
+回應 `CURATION_WISHLIST.md` 2026-08-31「東南亞搖滾與印尼爵士」點名，先做印尼那一格。
+只做策展層，未動卡池、未跑上架流程。
+
+**產出**：`batch-progress/csea/prop-id.json`，55 張、43 位藝人。正規盤 49、合輯 6（10.9%，
+遠低於 §5.6 的三分之一上限）。欄位含 `why`／`risk`／`mbNote`／`releaseType`／
+`exceptionReason`／`exceptionEvidenceUrls`／`selfTitled`／`g:"id"`。
+
+**策展骨幹**：Rolling Stone Indonesia《150 Album Indonesia Terbaik》（2007 年 12 月號）
+＋ MusicBrainz 實查（約 100 條 artist／release-group 查詢）。55 張裡 32 張在該榜單上，
+含第 1（Chrisye《Badai Pasti Berlalu》）、第 2（Guruh Gipsy）、第 7、第 10、第 13。
+
+**分佈**：1960–70s 搖滾／迷幻／放克 20 張、prog／fusion 與 1980s 都會流行 15 張、
+印尼爵士 10 張、dangdut／keroncong 4 張、合輯 6 張。
+
+**MB 覆蓋率實測**：55 張中 44 張查得到 release-group（已寫進各筆 `mbNote`），
+11 張查無需走人工身分路線（Koes Plus Vol. 4、Panbers 原盤、Barong's Band、
+Benyamin S.《Si Djampang》、Bubi Chen《Fabulous 5》、Karimata《Pasti》、
+simakDialog《Baur》、Yockie《Musik Saya Adalah Saya》等）。比預期好，
+Now-Again／Strawberry Rain 這批再發廠牌確實把不少原盤建了檔。
+
+**已知掛名陷阱**（寫進 `risk`）：AKA 與德國同名電子藝人撞名（必須用 release-group 反查）、
+Gombloh《Kebyar Kebyar》在 MB 掛樂團 Lemon Tree's Anno '69、Rhoma Irama 的原盤掛
+O.M. Soneta（本提案沿用卡池既有的 Rhoma Irama 掛名）、The Rollies《Dansa Yok Dansa》
+被 MB 誤標 Audiobook 次類型。
+
+**驗證**：自寫 checker 檢查欄位完整性、十個合法 genre id、非 ASCII 連字號、
+與 `seed_cards.json`（13,178 張）去重、合輯比例上限 —— 0 error，7 筆自我同名待主線覆核。
+與線上池零撞卡；池中原有的四張印尼卡（Koes Plus《Dheg Dheg Plas》、Dara Puspita
+《Jang Pertama》、Rhoma Irama《Begadang》、Harry Roesli《Titik Api》）皆已避開。
+
+**查不到可靠資料所以沒提**：Ireng Maulana 與 Benny Likumahuwa 的個人領銜盤（只查到
+Ireng Maulana All Stars 1978 年成軍與《Jazz Tempo Doeloe》1982 的單一出處，
+盤名與年份無法交叉確認）、Leo Kristi《Nyanyian Fajar》、Prambors
+《Lomba Cipta Lagu Remaja 1978》、Sublime Frequencies 的印尼系列（《Sumatran Folk
+Cinema》在 MB 與英文資料上都確認不了唱片形態）。
+
 ### 2026-08-31｜dip-vinyl-shop｜c-48／c-49／c-50 本機接手並上架：310 張裡上架 269 張
 
 雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 104 筆）帶著三批的
