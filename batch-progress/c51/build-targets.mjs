@@ -23,8 +23,16 @@ const ENS = /\s+(Trio|Quartet|Quintet|Sextet|Septet|Octet|Orchestra|Band|Group|E
 // 主名 ＋ and／& ／with ＋ 樂團（Tom Petty and the Heartbreakers → Tom Petty）
 const WITH = /\s+(and|&|with|featuring|feat\.?)\s+.+$/i;
 
-const raw = new Set(rows.map(r => r[0]));
+// 引號與連字號的字形差異也會造成分裂，而且**看起來完全一樣**：
+// 卡池裡 `Jane's Addiction`（直撇，1 張 hall）與 `Jane’s Addiction`（彎撇，2 張）
+// 是兩位藝人，`Guns N' Roses`／`Guns N’ Roses`、`The O'Jays`／`The O’Jays`、
+// `Booker T. & the MG's`／`MG’s` 同理，共 7 組。
+// 2026-08-31 實踩：沒正規化的第一版名單把 Jane's Addiction 記成「只有 1 張」，
+// 策展層據此提了《Nothing's Shocking》——那張其實已經在池裡，只是掛在彎撇那個名字底下。
+const glyph = s => String(s).replace(/[‘’ʼ´`]/g, "'").replace(/[“”]/g, '"').replace(/[‐‑‒–—―－]/g, '-');
+const raw = new Set(rows.map(r => glyph(r[0])));
 function canon(name) {
+  name = glyph(name);
   for (const re of [ENS, WITH]) {
     const m = name.match(re);
     if (m) { const base = name.slice(0, m.index).trim(); if (raw.has(base)) return base; }
@@ -34,7 +42,7 @@ function canon(name) {
 
 const byArtist = new Map();
 for (const r of rows) {
-  const a = canon(r[0]);
+  const a = canon(r[0]);   // r[0] 原寫法保留在 e.names 裡
   if (!byArtist.has(a)) byArtist.set(a, { n: 0, apex: [], names: new Set(), albums: [], genres: new Set() });
   const e = byArtist.get(a);
   e.n++; e.names.add(r[0]); e.albums.push({ album: r[1], year: r[6], tier: r[8] || null });
