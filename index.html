@@ -3188,7 +3188,12 @@
       return _residDir[ck] = d;
     }
 
-    function pickCard(mood, seen, vec) {
+    // 場景域 → 向量方向（隱形連結第二層用）。玩家答案幾乎不明講場所（436 個選項只有
+    // 14 個有具體場景），所以主要靠向量的 E/X/S 軸推「今天比較像在家還是在外面」，
+    // 明講場所的那 14 個選項才用 scenes 直接加成。
+    const SCENE_DIR = { h: { E: -0.6, X: -1 }, s: { E: 0.5, X: 0.5 }, c: { X: 1 }, t: { E: 0.5 }, w: { S: 1 } };
+
+    function pickCard(mood, seen, vec, scenes) {
       const cardsFor = m => Object.keys(moodBank.passages).filter(k => moodBank.passages[k][m]);
       const fresh = list => list.filter(k => {
         const c = moodBank.cards[k];
@@ -3229,8 +3234,27 @@
       const seq = `dip_mv_${key}_${m}`;
       let n = 0;
       try { n = parseInt(localStorage.getItem(seq) || '0', 10) || 0; localStorage.setItem(seq, String(n + 1)); } catch (e) {}
+      // 隱形連結第二層（2026-08-31）：變體不再純輪替。三個變體的開場場景域本來就
+      // 互不相同（第三變體計畫的硬規則），挑「跟玩家今天的方向最合」的開場——
+      // E−X− 的玩家翻開的是房間開場，X+ 的玩家翻開的是店家或街上開場。
+      // 明講場所的答案（在家、咖啡廳…）用 scenes 直接加成 2.5——向量分最大約 ±1.2，
+      // 同分照舊輪替；整組沒場景標籤 → 全同分 → 行為與純輪替完全一致。
+      let idxs = variants.map((_, i) => i);
+      const tags = moodBank.scenes?.[key]?.[m] || '';
+      if (tags.length === variants.length && (vec || scenes?.size)) {
+        const vn2 = vec ? mag(vec) : 0;
+        const sc = idxs.map(i => {
+          const t = tags[i], d = SCENE_DIR[t];
+          if (!d) return 0;   // n 或未知標籤＝中性零分
+          let s2 = vn2 > 1e-9 ? dot(vec, d) / vn2 : 0;
+          if (scenes?.has(t)) s2 += 2.5;   // 明講的場所永遠贏推測的方向
+          return s2;
+        });
+        const mx = Math.max(...sc);
+        idxs = idxs.filter(i => sc[i] >= mx - 1e-9);
+      }
       const c = moodBank.cards[key];
-      return { key, mood: m, artist: c.a, album: c.b, year: c.y, tier: c.t, passage: variants[n % variants.length] };
+      return { key, mood: m, artist: c.a, album: c.b, year: c.y, tier: c.t, passage: variants[idxs[n % idxs.length]] };
     }
 
     async function load() {
@@ -3542,7 +3566,8 @@
         .filter(q => quizAnswers[q.id] !== undefined)
         .map(q => `${q.id}-${quizAnswers[q.id]}`);
       const mood = DipMood.classify(optionIds);
-      const pick = DipMood.pickCard(mood, seenAlbums, DipMood.vectorOf(optionIds));
+      const scenes = new Set(optionIds.map(id => moodData.scenes?.[id]).filter(Boolean));
+      const pick = DipMood.pickCard(mood, seenAlbums, DipMood.vectorOf(optionIds), scenes);
       if (!pick) throw new Error('這個心情的卡都抽過了，再測一次換個心情吧');
 
       const cover = await fetchSpotifyCover(pick.artist, pick.album).catch(() => ({}));
