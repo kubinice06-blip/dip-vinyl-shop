@@ -46,14 +46,18 @@ for (const [i, a] of albums.entries()) {
   if (!rec.cover) {
     try {
       const j = await (await fetch(`${W}/spotify-search?artist=${encodeURIComponent(a.artist)}&album=${encodeURIComponent(a.album)}`, { signal: AbortSignal.timeout(20000) })).json();
-      if (j && j.coverUrl) rec.cover = { url: j.coverUrl, source: 'spotify', note: j.albumName || '' };
+      // worker 回的欄位是 imageUrl，不是 coverUrl。原本只讀 coverUrl，這條後備從寫下來
+      // 就沒生效過——c-47 因為 178 張裡 177 張都在 CAA 命中而沒露出來，c-49 才炸開。
+      const img = j && (j.imageUrl || j.coverUrl);
+      if (img) rec.cover = { url: img, source: 'spotify', note: j.spotifyUrl || j.albumName || '' };
     } catch { /* next */ }
   }
   // 3) Bandcamp（這批命中率低，聊備一格）
   if (!rec.cover) {
     try {
       const j = await (await fetch(`${W}/bandcamp-search?artist=${encodeURIComponent(a.artist)}&album=${encodeURIComponent(a.album)}`, { signal: AbortSignal.timeout(20000) })).json();
-      if (j && j.coverUrl) rec.cover = { url: j.coverUrl, source: 'bandcamp', note: j.albumName || '' };
+      const img = j && (j.imageUrl || j.coverUrl);       // 同上：欄位是 imageUrl
+      if (img) rec.cover = { url: img, source: 'bandcamp', note: j.bandcampUrl || j.albumName || '' };
     } catch { /* miss */ }
   }
   out.push(rec);
