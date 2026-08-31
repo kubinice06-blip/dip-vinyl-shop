@@ -1,0 +1,3949 @@
+{
+ "schemaVersion": 1,
+ "batch": "c49-20260831",
+ "albums": [
+  {
+   "artist": "周璇",
+   "album": "百代中國時代曲名典一：周璇 天涯歌女",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子的《周璇之歌（百代原音）》查無此發行品，是通稱不是盤名；改用實際存在的 EMI (HK) 復刻輯正式盤名。藝人維持中文本名「周璇」（原名蘇璞），與卡池既有華語卡的中文掛名慣例一致。注意串流端同一張碟有「百代中國時代曲名典一」與「百年中國時代曲名典一」兩種標題（Spotify／Amazon／Deezer 用「百年」，Apple 英文標題用 The Legendary Chinese Hits），本機比對封面與試聽時兩種寫法都要試。；時代曲不存在原始「專輯」——周璇的百代錄音只以 78 轉蟲膠單片發行，所以必須以復刻輯為建檔單位。周璇的復刻包裝至少有四套並存：(a) EMI (HK) 1992–97 的《百代中國時代曲名典》一至五集；(b) 2005 年《百代百年系列13：採檳榔》；(c) 2003 年《Flying Shining Flowers》這類 remix／再詮釋盤；(d) Denon Mastersonic、東方經典、Ladies of Chinese Song 等第三方拼盤。**本卡鎖定 (a) 的第一集《天涯歌女》**：它是 EMI 自家母帶授權、系列編號第一號、曲目就是周璇最核心的十五首（天涯歌女、四季歌、月圓花好、永遠的微笑、拷紅、何日君再來前後段），是這批錄音最權威的單一入口。明確排除 (c) 的 Ian Widgery／So Poetic remix 版本——那是 2003–2007 年的電子改作，不是周璇的原音。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"周璇\" AND releasegroup:\"百代中國時代曲名典一：周璇 天涯歌女\"",
+      "release-group/?query=artist:\"周璇\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 4 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/ph/album/the-legendary-chinese-hits-%E5%91%A8%E7%92%87-%E5%A4%A9%E6%B6%AF%E6%AD%8C%E5%A5%B3/724638386",
+     "https://www.deezer.com/us/album/4067371",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://zh.wikipedia.org/wiki/%E5%91%A8%E7%92%87"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionReason": "1930–40 年代上海百代 78 轉蟲膠原盤不存在專輯形態，此系列是 EMI 以自家母帶授權整理的唯一權威復刻，為華語流行音樂起源期最重要的錄音文獻入口。",
+    "exceptionEvidenceUrls": [
+     "https://music.apple.com/ph/album/the-legendary-chinese-hits-%E5%91%A8%E7%92%87-%E5%A4%A9%E6%B6%AF%E6%AD%8C%E5%A5%B3/724638386",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://open.spotify.com/album/2n4h4HsqMITUnajEGvbtvS"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/74/d2/b5/74d2b5fb-c8ea-b121-6b8c-d131e615f390/00077776651552.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。套用『藝人地位 vs 這張碟』的分辨後仍保留，理由不是周璇很紅，而是**這張碟本身是該批錄音唯一的權威形態**：周璇的百代母帶不存在任何原始專輯，EMI (HK) 的《中國時代曲名典》是唯一由版權方授權整理的完整系列，本輯又是該系列的第一號、曲目即該樂種的定位性錄音（〈天涯歌女〉〈四季歌〉出自 1937《馬路天使》），實務上被當成研究這個時期的標準文獻入口。**惟把它明文列入回溯型正典的音樂史著作、台灣音樂館／中研院數位典藏的收錄理由，雲端未能連上取得**，evidence 標 pending-local——屬「夠格但來源連不到」，非查無。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/wiki/%E5%91%A8%E7%92%87",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits"
+    ]
+   },
+   "description": {
+    "text": "一種官定讀音早已停用，卻在〈天涯歌女〉裡一直唱到今天。這首 1937 年電影《馬路天使》的插曲由賀綠汀作曲、田漢作詞、周璇原唱，歌詞多依老國音發音，與今天的國語讀法並不相同。周璇原名蘇璞，人稱金嗓子，是 1940 年代上海歌壇七大歌星之一，1951 年拍《和平鴿》時因病息影，1957 年短暫復出後病逝，得年 37 歲。本輯是 1992 年 EMI 在香港發行的五片裝復刻選輯，收的是 78 轉時期的錄音，第一張碟 15 軌以〈天涯歌女〉開場，另收〈四季歌〉與〈月圓花好〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%A4%A9%E6%B6%AF%E6%AD%8C%E5%A5%B3",
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%AC%E8%B7%AF%E5%A4%A9%E4%BD%BF",
+     "https://zh.wikipedia.org/zh-tw/%E5%91%A8%E7%92%87",
+     "https://musicbrainz.org/release/ff3d0d6c-c437-44b8-9da8-013789d9d1ec",
+     "https://zh.wikipedia.org/zh-tw/%E4%BD%95%E6%97%A5%E5%90%9B%E5%86%8D%E4%BE%86",
+     "https://music.apple.com/ph/album/the-legendary-chinese-hits-%E5%91%A8%E7%92%87-%E5%A4%A9%E6%B6%AF%E6%AD%8C%E5%A5%B3/724638386",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://open.spotify.com/album/2n4h4HsqMITUnajEGvbtvS",
+     "https://www.deezer.com/us/album/4067371",
+     "https://zh.wikipedia.org/wiki/%E5%91%A8%E7%92%87"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/b7/7a/e4b77a73-9456-2711-4855-058ba3ed5ab6/mzaf_17352712763030280670.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724638386",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "姚莉",
+   "album": "百代中國時代曲名典25／26：姚莉 秋的懷念（上海時期歌曲）",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**種子曲名寫錯**：〈玫瑰玫瑰我要你〉應為〈玫瑰玫瑰我愛你〉，且該曲名下並無姚莉的原始同名專輯。改用實際存在、且收錄該曲的復刻輯盤名。姚莉本名姚秀雲，掛名用藝名「姚莉」。；姚莉的復刻輯在名典系列裡就有三種切法：25／26《秋的懷念》收上海時期（1930s 末–1949）、27《一曲難忘》收中詞西曲、48《電影歌曲精選》收影歌。**鎖定 25／26 上海時期**，理由是〈玫瑰玫瑰我愛你〉屬上海百代時期錄音，且種子的策展意圖是時代曲源頭而非她的香港時期。明確排除：2005《百代百年系列3：姚莉 玫瑰玫瑰我愛你》（盤名雖與種子最接近，但屬後出重包裝）、2019《想你想你 銀嗓子姚莉紀念專集》（身後精選）、2013《姚莉．玫瑰傳奇．精選作品集》、以及 Apple 上標 1970 年的〈玫瑰玫瑰我愛你〉——那是香港時期重錄，**與 1940 年上海原唱不是同一份錄音**。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"姚莉\" AND releasegroup:\"百代中國時代曲名典25／26：姚莉 秋的懷念（上海時期歌曲）\"",
+      "release-group/?query=artist:\"姚莉\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 4 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔｜【2026-08-29 主線複查】改以「抓藝人全目錄再回頭比對標題」重查，MB 確有一筆同名碟：RG 77767f27「秋的懷念」，但那是 1962 年香港 Pathé CPA 161、10 軌的另一張選輯，與本卡鎖定的 1990 年代名典 25／26 雙 CD 不是同一件。缺席舉證維持成立，本機釘版本時請勿誤用該 RG。"
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B825-26-%E7%A7%8B%E7%9A%84%E6%87%B7%E5%BF%B5-%E4%B8%8A%E6%B5%B7%E6%99%82%E6%9C%9F%E6%AD%8C%E6%9B%B2/821631811",
+     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89",
+     "https://zh.wikipedia.org/zh-hans/%E7%8E%AB%E7%91%B0%E7%8E%AB%E7%91%B0%E6%88%91%E7%88%B1%E4%BD%A0",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/21-30"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionReason": "姚莉上海時期錄音只有 78 轉單片，此雙輯是 EMI 授權、按時期切分的權威整理，收錄華語流行史上第一首打進美國排行榜的曲目。",
+    "exceptionEvidenceUrls": [
+     "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B825-26-%E7%A7%8B%E7%9A%84%E6%87%B7%E5%BF%B5-%E4%B8%8A%E6%B5%B7%E6%99%82%E6%9C%9F%E6%AD%8C%E6%9B%B2/821631811",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/21-30",
+     "https://zh.wikipedia.org/zh-hans/%E7%8E%AB%E7%91%B0%E7%8E%AB%E7%91%B0%E6%88%91%E7%88%B1%E4%BD%A0"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/4d/50/a9/4d50a9ec-eaa4-3c52-a089-fea079931807/00077777827550.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "**套用『藝人／曲目地位 vs 這張碟』的分辨後改判一般卡。** 我原本用〈玫瑰玫瑰我愛你〉經 Frankie Laine 改編後於 1951 年登上美國排行榜前列當 hall 依據，但那是**曲目層級的跨語系事件**，功勞落在陳歌辛的旋律與英文改編版上，不是姚莉這張 1992 年 EMI 復刻雙輯的正典地位；姚莉本人是源頭級歌手（七大歌星、銀嗓子）也屬**藝人層級**。查不到任何名單、音樂史著作或典藏論述把本輯當成華語流行史核心作品，且她同一批母帶另有名典 27／48、百代百年3、玫瑰傳奇、紀念專集等至少六套包裝，本輯只是其中之一，不符「該歌手唯一權威的錄音形態」。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "玫瑰那條旋律漂到美國，變成告示牌排行榜第 3 名的英文歌。〈玫瑰玫瑰我愛你〉由吳村作詞、陳歌辛以筆名林玫作曲，姚莉 1940 年錄下，唱片出版落在 1940 至 1941 年；78 轉原盤編號 35500 的另一面正是〈秋的懷念〉，也就是本輯的主標題。1951 年 Frankie Laine 錄下英語版 Rose, Rose, I Love You，同期 Columbia 也在美英發行了姚莉的國語原版。本輯是 1992 年彙整這批 78 轉錄音的雙 CD 復刻選輯。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%A7%9A%E8%8E%89",
+     "https://zh.wikipedia.org/zh-tw/%E7%8E%AB%E7%91%B0%E7%8E%AB%E7%91%B0%E6%88%91%E6%84%9B%E4%BD%A0",
+     "https://www.discogs.com/release/29741044",
+     "https://en.wikipedia.org/wiki/Rose%2C_Rose%2C_I_Love_You",
+     "https://www.discogs.com/release/5614624",
+     "https://music.apple.com/tw/album/%E7%99%BE%E4%BB%A3-%E4%B8%AD%E5%9C%8B%E6%99%82%E4%BB%A3%E6%9B%B2%E5%90%8D%E5%85%B825-26-%E7%A7%8B%E7%9A%84%E6%87%B7%E5%BF%B5-%E4%B8%8A%E6%B5%B7%E6%99%82%E6%9C%9F%E6%AD%8C%E6%9B%B2/821631811",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/21-30",
+     "https://zh.wikipedia.org/zh-hans/%E7%8E%AB%E7%91%B0%E7%8E%AB%E7%91%B0%E6%88%91%E7%88%B1%E4%BD%A0",
+     "https://zh.wikipedia.org/wiki/%E5%A7%9A%E8%8E%89"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/8f/30/798f30d8-35e3-2648-98f9-b091e4b522c3/mzaf_12010086987421140058.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "821631811",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "吳鶯音",
+   "album": "百代中國時代曲名典七：吳鶯音之二 明月千里寄相思",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子盤名〈明月千里寄相思〉是曲名，實際存在的發行品是名典第七集，盤名含「吳鶯音之二」。吳鶯音本名吳劍秋，掛名用藝名。；吳鶯音在名典系列裡佔第 6–9 共四集：6《我有一段情》、7《明月千里寄相思》、8《岷江夜曲》、9《斷腸紅》。**鎖定第七集**，因為它的主標題就是她最具代表性的曲目，也是種子指定的那一首。排除 2005《百代百年系列9：我想忘了你》（後出重包裝）與各家群星拼盤。注意 Apple 上另有一首標為「明月千里寄相思（電影《長恨歌》歌曲）」的條目——《長恨歌》是關錦鵬 2005 年電影借用此曲當插曲，**不是 1948 年錄音的原始出處**，比對時不可拿它當版本依據。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"吳鶯音\" AND releasegroup:\"百代中國時代曲名典七：吳鶯音之二 明月千里寄相思\"",
+      "release-group/?query=artist:\"吳鶯音\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://tidal.com/browse/album/1496181",
+     "https://www.deezer.com/us/album/308513",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://zh.wikipedia.org/wiki/%E5%90%B3%E9%B6%AF%E9%9F%B3"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionReason": "吳鶯音的百代原盤僅有 78 轉單片形態，本輯是 EMI 授權、以她個人為單位切分的權威復刻，收錄華語歌本中流傳最廣的思鄉標準曲之一。",
+    "exceptionEvidenceUrls": [
+     "https://tidal.com/browse/album/1496181",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://www.deezer.com/us/album/308513"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/53/55/dd/5355ddf5-a620-9142-d4eb-4a5ff048a30c/00077777829554.tif/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。〈明月千里寄相思〉的標準曲地位與七大歌星身分都查得到，**但查不到把本輯列入回溯型正典的音樂史論述或典藏收錄理由**；標準曲流傳度屬「人人會唱」，依校準規則不構成 hall。她在華語老歌圈仍是熟面孔，冷門度亦未達遺珠級。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "被指為間諜的那把鼻音，三十多年後在紅磡唱了告別場。吳鶯音原名吳劍秋，有鼻音歌后之稱，抗戰勝利後出道，1949 年憑〈我想忘了你〉一舉成名，後世將她與白光、姚莉、周璇等人合稱七大歌星。文革時她被當作間諜批鬥，1984 年舉家移居洛杉磯，1992 年起重新在香港、台灣、新加坡與加拿大登台，2000 年在紅磡體育館舉行告別演唱會。1948 年面世的〈明月千里寄相思〉出自劉如曾之手；本輯是 1992 年 Pathé／EMI 四片裝復刻裡的第七集，11 軌，首軌即此曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%90%B3%E9%B6%AF%E9%9F%B3",
+     "https://zh.wikipedia.org/zh-tw/%E5%8A%89%E5%A6%82%E6%9B%BE",
+     "https://www.discogs.com/release/9625729",
+     "https://tidal.com/browse/album/1496181",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/1-9-2",
+     "https://www.deezer.com/us/album/308513",
+     "https://zh.wikipedia.org/wiki/%E5%90%B3%E9%B6%AF%E9%9F%B3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/12/2e/62/122e62b8-f86d-3a21-f8b2-d6f45f9dfb87/mzaf_3327412620398739338.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724481278",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "崔萍",
+   "album": "百代中國時代曲名典37：崔萍 南屏晚鐘",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子盤名〈南屏晚鐘〉是曲名；改用實際存在的名典第 37 集盤名。掛名不變。；崔萍在名典系列佔第 37–39 三集：37《南屏晚鐘》、38《夢裡相思》、39《今宵多珍重》。**鎖定 37**，因為種子指定的曲目就是它的主標題。此曲翻唱極多（羅文、鳳飛飛、徐小鳳、費玉清、蔡幸娟、蔡琴皆有版本，另有多個粵語填詞版），**本卡鎖定 1960 年崔萍原唱的百代天使錄音**，不收任何後世翻唱或她本人的晚期重錄。排除 Apple 上另一張同名短輯《南屏晚鐘》（曲目與來源不明）——本機比對時以名典 37 的 16 軌曲目為準。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"崔萍\" AND releasegroup:\"百代中國時代曲名典37：崔萍 南屏晚鐘\"",
+      "release-group/?query=artist:\"崔萍\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 2 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F_(%E6%AD%8C%E6%9B%B2)",
+     "https://music.apple.com/tw/album/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%90%98/723985064",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/31-40",
+     "https://music.apple.com/hk/album/%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D/724457936"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionReason": "崔萍的百代天使原盤僅有 78／45 轉單片，本輯是 EMI 授權的個人專輯級整理，收錄戰後香港國語時代曲流傳最廣的標準曲之一。",
+    "exceptionEvidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/31-40",
+     "https://music.apple.com/tw/album/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%90%98/723985064",
+     "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F_(%E6%AD%8C%E6%9B%B2)"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ec/cf/e3/eccfe3be-6c7c-e506-fb95-ef686bbe696b/00077779725250.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "兩條路都不成立。hall：只查到歌手知名度與〈南屏晚鐘〉的翻唱規模（羅文、鳳飛飛、徐小鳳、費玉清、蔡琴皆有版本，另有粵語填詞版），**沒有音樂史著作或典藏名單把本輯列為核心作品**。pearl：〈南屏晚鐘〉至今仍是華語老歌播放清單的常客、翻唱者多為一線歌手，與「專門圈以外近乎無人知曉」直接矛盾——**這是實質判斷，不是因為 listeners 查不到**。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "二十年後〈上海灘〉那兩句唱腔，是刻意繞回這首歌的旋律。顧嘉煇在其中兩句沿用了〈南屏晚鐘〉的旋律，藉以做出海派風格並向此曲致敬。這首歌由王福齡作曲、陳蝶衣以筆名方達填詞、崔萍原唱，1960 年 8 月由香港百代旗下的天使廠牌發行，B 面是〈夜來香〉；當時香港的單曲已以 45 轉為主，這一張仍另出過 78 轉版本。崔萍 1953 年 15 歲時在大華飯店夜總會被聽見而簽約出道，1959 年轉投百代，1971 年為照顧家庭退出歌壇。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%90%98_%28%E6%AD%8C%E6%9B%B2%29",
+     "https://www.discogs.com/release/9515525",
+     "https://www.discogs.com/release/4764112",
+     "https://zh.wikipedia.org/zh-tw/%E5%B4%94%E8%90%8D_%281938%E5%B9%B4%29",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/31-40",
+     "https://music.apple.com/tw/album/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%90%98/723985064",
+     "https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F_(%E6%AD%8C%E6%9B%B2)",
+     "https://music.apple.com/hk/album/%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D/724457936"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/04/9f/61/049f61eb-a959-d80f-7f75-cdd77e53fd00/mzaf_17593588262503904028.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723985064",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "潘秀瓊",
+   "album": "百代中國時代曲名典43：潘秀瓊 情人的眼淚",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子盤名〈情人的眼淚〉是曲名；改用實際存在的名典第 43 集盤名。掛名不變。；潘秀瓊在名典系列佔第 43–45 三集：43《情人的眼淚》、44《愛情像氣球》、45《家家有本難念的經》。**鎖定 43**，主標題即種子指定曲目。此曲後來被蔡琴、姚蘇蓉、鄧麗君等大量翻唱，串流上高流量版本幾乎都不是潘秀瓊原唱，**本卡明確鎖 1958 年潘秀瓊的百代原音**。排除 2016《潘秀瓊國語精選》與《百代百年系列21：南洋風(二)》等後出拼盤。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"潘秀瓊\" AND releasegroup:\"百代中國時代曲名典43：潘秀瓊 情人的眼淚\"",
+      "release-group/?query=artist:\"潘秀瓊\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E6%BD%98%E7%A7%80%E7%90%BC",
+     "https://www.hkmemory.org/jameswong/text/index.php?p=home&catId=485&photoNo=0",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionReason": "潘秀瓊的百代原盤僅有單片形態，本輯為 EMI 授權的個人專輯級整理，收錄她奠定低音歌后地位、且成為華語標準曲的成名作。",
+    "exceptionEvidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50",
+     "https://zh.wikipedia.org/zh-hant/%E6%BD%98%E7%A7%80%E7%90%BC",
+     "https://www.hkmemory.org/jameswong/text/index.php?p=home&catId=485&photoNo=0"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/76/8a/63/768a63f1-fce5-2754-0ebb-8cb63b0e9c1b/00724359848051.tif/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "與崔萍同理，兩條路都不成立。hall：查到的是成名經過與低音歌后稱號，無任何正典名單或音樂史定位涵蓋本輯。pearl：〈情人的眼淚〉被蔡琴、鄧麗君、姚蘇蓉等大量翻唱且流通度高，該曲在華語老歌圈遠稱不上無人知曉——**這是實質判斷，不是 listeners 查不到**。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "澳門出生、馬來亞長大、新加坡發跡，一條南洋路走出這把低音。潘秀瓊 1935 年生於澳門、在馬來半島長大，1950 年代由新加坡轉往香港發展並擔任電影幕後代唱，1958 年錄下陳蝶衣作詞、姚敏作曲的〈情人的眼淚〉而成名，從此被譽為低音歌后。這首歌目前可查最早的實體之一，是 1959 年香港天使廠牌的十吋群星輯《精選電影插曲及流行歌曲》，1969 年百代又以 7 吋 EP 的形式單獨發行。她的其他代表曲還有〈家家有本難念的經〉與〈梭羅河之戀〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%BD%98%E7%A7%80%E7%93%8A",
+     "https://zh.wikipedia.org/zh-tw/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B7%9A",
+     "https://www.discogs.com/release/23774243",
+     "https://www.discogs.com/release/9563080",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50",
+     "https://zh.wikipedia.org/zh-hant/%E6%BD%98%E7%A7%80%E7%90%BC",
+     "https://www.hkmemory.org/jameswong/text/index.php?p=home&catId=485&photoNo=0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/32/58/0a3258c2-4306-181f-ddf7-54614fb79104/mzaf_13364829493467287986.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "727602190",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "靜婷",
+   "album": "百代中國時代曲名典42：靜婷 痴痴地等",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**這是本子域最大的一筆改判**。種子的「靜婷／不了情」是掛名誤植：1961 年邵氏電影《不了情》的主題曲〈不了情〉（王福齡曲、陶秦詞）由**顧媚**幕後代唱，唱片由寶石唱片以 45 轉發行；《百代中國時代曲名典》裡〈不了情〉也明確是**第 33 集：顧媚 不了情**，不是靜婷。靜婷在同系列有第 21《待嫁女兒》、22《一曲難忘》、23《愛你愛你》、42《痴痴地等》四集。為保住種子「邵氏電影幕後代唱」的策展意圖，本卡改收靜婷本人的名典第 42 集《痴痴地等》；原本的「靜婷／不了情」組合另列進 skipped 存查。靜婷原名郭大姝、後隨母姓席，掛名用藝名「靜婷」。；靜婷的名典四集（21《待嫁女兒》／22《一曲難忘》／23《愛你愛你》／42《痴痴地等》）內容切法未查到公開說明，**鎖定 42《痴痴地等》**的理由是：〈痴痴地等〉是她最常被引用的個人代表曲，主標題明確、辨識度最高，也是 1985 年蔡琴《蔡琴老歌》重唱的曲目之一，本批內部即形成一組對照。要排除的同名陷阱有三：(a) **1982 年永恆唱片的靜婷重錄專輯《痴痴地等》**——同名同人不同錄音，最容易錯配；(b) Discogs 上的「靜婷 – 電影歌選 / 痴痴地等」（另一個編輯盤）；(c) Amazon 上的《百代時代曲傳奇 Vol.7：靜婷》是後出的第三方重包裝。她大量的黃梅調代唱（《江山美人》〈戲鳳〉〈扮皇帝〉）屬電影原聲脈絡，是另一條目錄，本卡不涵蓋。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"靜婷\" AND releasegroup:\"百代中國時代曲名典42：靜婷 痴痴地等\"",
+      "release-group/?query=artist:\"靜婷\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 3 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50",
+     "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/TSIN-Ting_c.pdf",
+     "https://time.udn.com/udntime/story/122834/6703516",
+     "https://www.discogs.com/release/11475234-%E9%9D%99%E5%A9%B7-%E9%9B%BB%E5%BD%B1%E6%AD%8C%E9%81%B8-%E7%97%B4%E7%97%B4%E5%9C%B0%E7%AD%89"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionReason": "靜婷是香港電影全盛期最重要的幕後代唱者，其百代錄音只有單片與電影歌集形態，本輯是 EMI 授權的個人專輯級整理，為理解華語電影歌曲產業的關鍵文獻。",
+    "exceptionEvidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50",
+     "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/TSIN-Ting_c.pdf",
+     "https://www.filmarchive.gov.hk/documents/18995340/19057017/Tsin+Ting_c.pdf"
+    ]
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/a1/83/04/a183041a-f48b-8230-6604-0d8b1fe79315/00724383080250.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 pearl，但 obscurity=4、listeners=查無，未同時滿足 obscurity=5 與 listeners<300（查無不可當 0），依 §3 退回一般卡。幕後代唱這一行的代表人物：她的聲音被大量歸給銀幕上的明星（林黛、于素秋、丁瑩等），本人姓名在電影歌曲研究圈以外近乎無人知曉，品質與份量卻足以列為遺珠——判斷為夠格。**pearl 門檻所需的 Last.fm 累積 listeners（<300）是本機工項，雲端一律查不到，另一個硬條件 obscurity=5 也要等主線三軸評分才成立**；§0.7 那條「pearl 改人工判定」的特例只適用古典卡，時代曲不適用，故本卡不以人工判定取代數字門檻。evidence 標 pending-local，本機要補的就是這兩項；依雲端硬規則第 1 條不得因此判普卡。",
+    "evidenceUrls": [
+     "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/TSIN-Ting_c.pdf",
+     "https://time.udn.com/udntime/story/122834/6703516"
+    ]
+   },
+   "description": {
+    "text": "先錄好的那一版被丟掉，位置才空出來給她。顧媚原本為邵氏的《藍與黑》和〈痴痴地等〉錄過音，卻因灌錄《白蛇傳》時被要求吊高嗓子而一度聲啞，那批錄音遭到棄用，改由靜婷頂上。這首插曲由陶秦作詞、王福齡作曲，隨 1966 年的《藍與黑》面世；該片由陶秦導演，林黛與關山主演，改編自王藍的同名小說，林黛在影片未拍完時逝世，此片後來獲亞洲影展最佳影片獎。靜婷原名郭大姝，1957 年出道後專任電影幕後代唱，有黃梅調歌后之稱。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E8%97%8D%E8%88%87%E9%BB%91_%28%E9%9B%BB%E5%BD%B1%29",
+     "https://www.discogs.com/release/9516419",
+     "https://www.discogs.com/release/6650548",
+     "https://zh.wikipedia.org/zh-tw/%E9%9D%9C%E5%A9%B7",
+     "https://zh.wikipedia.org/zh-tw/%E9%A1%A7%E5%AA%9A",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/41-50",
+     "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/TSIN-Ting_c.pdf",
+     "https://www.filmarchive.gov.hk/documents/18995340/19057017/Tsin+Ting_c.pdf",
+     "https://time.udn.com/udntime/story/122834/6703516",
+     "https://www.discogs.com/release/11475234-%E9%9D%99%E5%A9%B7-%E9%9B%BB%E5%BD%B1%E6%AD%8C%E9%81%B8-%E7%97%B4%E7%97%B4%E5%9C%B0%E7%AD%89"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/af/5d/d8/af5dd8c7-1fd1-13ea-6215-c6a4fd20807a/mzaf_14025587886574907838.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724878177",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張露",
+   "album": "百代中國時代曲名典13：張露 給我一個吻",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子盤名〈給我一個吻〉是曲名；改用實際存在的名典第 13 集盤名。掛名不變。；張露在名典系列有第 13《給我一個吻》、14《你真美麗》、35《不許他回家》、50《蘋果花》四集。**鎖定 13**，主標題即種子指定曲目。要特別排除的同名陷阱有三個：(a) 2003 年《百代時代傳奇 Vol.3：張露—再給我一個吻》是後出的第三方重包裝，盤名多一個「再」字；(b) Spotify 上另有標 1975 年的〈給我一個吻〉條目，是晚期重錄或重發；(c)「Give Me A Kiss 2006 Remix」是電子改作。三者都不是本卡要的 1950 年代百代原音。；2026-08-29 主線以 MB API 核實：RG e0b3dfaf（Album＋Compilation、首發 1992、掛張露），其下 release 8d1c9b66 為 1992 年香港 Official、廠牌 Pathé 百代唱片、編號 FH81013 2、15 軌、首軌〈給我一個吻〉——與研究層獨立查到的名典 13 規格（FH81013 2、15 軌）完全吻合，確認就是本卡這張碟。原 mbAbsenceProof 不成立，原因同樣是用帶系列前綴的全名做精確比對。",
+    "rgMbid": "e0b3dfaf-1aa0-45fb-9bec-1647b48a9709",
+    "exceptionReason": "張露的百代原盤僅有 78 轉單片，本輯是 EMI 授權的個人專輯級整理，收錄華語「中詞西曲」路線最具代表性的成功案例。",
+    "exceptionEvidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
+     "https://open.spotify.com/artist/5OSr1J92YEsVUjPmA20puE"
+    ]
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e0b3dfaf-1aa0-45fb-9bec-1647b48a9709/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 pearl，但 obscurity=3、listeners=查無，未同時滿足 obscurity=5 與 listeners<300（查無不可當 0），依 §3 退回一般卡。中詞西曲路線的樣板執行者，方法論份量足夠，但張露今日在時代曲研究圈以外幾乎不被認得（多數人只透過其子杜德偉間接聽過此名），判斷為夠格遺珠。**pearl 門檻所需的 Last.fm 累積 listeners（<300）是本機工項，雲端一律查不到，obscurity=5 亦待主線三軸評分**；§0.7 的 pearl 人工判定特例只適用古典卡，時代曲不適用。evidence 標 pending-local，本機要補的就是這兩項；不得因此判普卡。",
+    "evidenceUrls": [
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20"
+    ]
+   },
+   "description": {
+    "text": "美國榜上一首唱七天寂寞的歌，過了一年在香港變成國語金曲。Georgia Gibbs 於 1952 年 12 月錄下 Seven Lonely Days，隔年 2 月發行後登上美國排行榜第 5 名；1954 年這條旋律成了國語時代曲〈給我一個吻〉的基礎，唱到家傳戶曉，讓張露享有中國歌后的美譽。張露原名張秀英，1948 年因〈你真美麗〉紅遍上海，1952 年遷居香港，1975 年退出歌壇。本輯是 1992 年 Pathé 百代在香港發行的復刻選輯，15 軌，首軌即主打曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%BC%B5%E9%9C%B2",
+     "https://en.wikipedia.org/wiki/Seven_Lonely_Days",
+     "https://musicbrainz.org/release/8d1c9b66-32a2-4bdd-89c1-1d71a669429a",
+     "https://musicbrainz.org/release-group/e0b3dfaf-1aa0-45fb-9bec-1647b48a9709",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits/10-20",
+     "https://sites.google.com/site/rickysting/Home/chinesehits/thelegendarychinesehits",
+     "https://open.spotify.com/artist/5OSr1J92YEsVUjPmA20puE"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "紫薇",
+   "album": "綠島小夜曲",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。；**這張的版本鎖定是本批台灣線最關鍵的一筆**，三個版本必須分清楚：(a) 1957 年紀露霞在華僑電影公司《阿美娜》中的錄音，是目前查到最早的錄音；(b) 1958 年鳴鳳唱片的紫薇版（中廣錄音轉製，未走紅）；(c) **1961 年四海唱片的紫薇重灌版**——重新編曲、高規格錄音，是真正讓此曲成為國民歌曲的那一版，Apple 上的紫薇《綠島小夜曲》專輯（7 曲）即對應這條線。**本卡鎖定 (c)**。另需排除 1987 年瑪莉亞（肥媽）的粵語改編〈友誼之光〉——那是同旋律不同作品，不可當本卡的試聽或封面來源。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "95323140-01fd-478f-9140-41b98146446d",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/95323140-01fd-478f-9140-41b98146446d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 19,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "**改判一般卡，理由是查證後發現我原本的 hall 依據對錯了版本。** 「台灣第一首正式灌錄成唱片的華語創作歌曲」這個源頭論述指向的是**1958 年鳴鳳唱片那一版**（甚至更早有紀露霞 1957 年在《阿美娜》的錄音），而本卡鎖定的是**1961 年四海的重灌版**——它是讓歌曲紅遍台灣的那一版，但那屬於流行度與商業操作，不是歷史第一。依校準規則「當年賣得好、人人會唱」不構成 hall。先作一般卡。**若主線要在此處放一張頂點，正確的對象是 1958 年鳴鳳版，那是另一張碟、要另外做身分確認與收得到與否的評估。**",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一首歌灌了兩次，第一次沒紅，第二次成了國民歌曲。1958 年鳴鳳唱片把紫薇在中廣的錄音製成唱片出版，市場反應平平；1961 年四海唱片重新灌錄、仍由紫薇演唱，配合廣播放送才在台灣流行起來。〈綠島小夜曲〉1954 年由周藍萍作曲、潘英傑填詞，是第一首在台灣正式灌製成唱片的華語創作歌曲，歌名裡的綠島指的是台灣本島。同年四海老闆廖乾元又以鉅資灌錄紫薇主唱的〈回想曲〉當主打，並指定為歌唱比賽的比賽曲，奠定了她在歌唱界的地位。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E7%B6%A0%E5%B3%B6%E5%B0%8F%E5%A4%9C%E6%9B%B2",
+     "https://zh.wikipedia.org/zh-tw/%E7%B4%AB%E8%96%87_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/release-group/95323140-01fd-478f-9140-41b98146446d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "美黛",
+   "album": "意難忘",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。；這是美黛的首張唱片，也是**本子域少數真正以 LP 專輯形態原生發行**的一張，不必走復刻輯路線。需要排除的是後世大量的重出：陽光唱片《意難忘／三個愛唱歌的女人—美黛、孔蘭薰、吳靜嫻》是三人合輯，不是本卡；Mojim 上的《意難忘．重相逢》是她晚年的重錄專輯，**旋律相同但錄音完全不同**，試聽務必鎖 1963 年合眾版。另注意〈意難忘〉曲調源自日本歌〈東京夜曲〉，日語原曲不可當本卡來源。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"美黛\" AND releasegroup:\"意難忘\"",
+      "release-group/?query=artist:\"美黛\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 2 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E7%BE%8E%E9%BB%9B",
+     "https://time.udn.com/udntime/story/122834/8888993",
+     "https://www.pmdb.org.taipei/digcultural?uid=21&pid=40",
+     "https://www.epochtimes.com/b5/18/2/23/n10166005.htm"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/47/c2/91/47c2914a-2e8a-5b1e-3876-a7a263f99b9a/4710776810098.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到的核心事實是**銷量與市場結構**（近百萬張、第一位台灣本土出生的國語歌后），依校準規則「當年賣得好」不構成 hall；**已查《台灣流行音樂200最佳專輯》完整名單，本張不在內**（該名單涵蓋 1975 年之後，本張 1963 年不在其範圍，也未見其他回溯型名單收錄）。臺北市流行音樂資料庫有她的數位典藏頁，但屬人物典藏，未見對本張的正典論述。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "桃園龜山出身的電台助理，唱出台壓國語唱片最早的暢銷曲之一。美黛本名熊美黛，1939 年生於新竹州桃園郡龜山庄，也就是今天的桃園市龜山區，1956 年到民本電台當助理，隔年參加康樂隊的勞軍活動而展開歌唱生涯。她 1962 年灌錄生平第一張唱片《意難忘》，1963 年 1 月發表，主打曲由慎芝填詞，深受台灣歌迷喜愛而傳唱全台。她 1960 年代的台壓唱片都出自合眾唱片，1964 年的十吋 LP《壽喜燒》也是這家公司的出品。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E7%BE%8E%E9%BB%9B",
+     "https://zh.wikipedia.org/zh-tw/%E6%84%8F%E9%9B%A3%E5%BF%98",
+     "https://www.discogs.com/release/6806643",
+     "https://www.discogs.com/release/6807048",
+     "https://time.udn.com/udntime/story/122834/8888993",
+     "https://www.pmdb.org.taipei/digcultural?uid=21&pid=40",
+     "https://www.epochtimes.com/b5/18/2/23/n10166005.htm"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/97/e5/8e97e59b-acac-9ab7-9da7-0f8a109e9bdd/mzaf_13179212417462109311.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "952564832",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "姚蘇蓉",
+   "album": "今天不回家",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。；**版本陷阱有兩層**。第一層是格式：1969 年同時存在 7 吋 45 轉 EP 與 LP 兩種發行（Discogs 上 EP 有 r3009901、r11120009 等多筆，LP 為「姚蘇蓉 和 電星樂隊 – 今天不回家」r4368813）；**本卡鎖定 LP 版**，因為 EP 不進一般卡池，且 LP 的伴奏掛名「電星樂隊」是六〇年代台灣現場樂隊參與唱片的重要紀錄。第二層是查禁：此曲因「不回家」的暗示被新聞局查禁，唱片公司隨後改名《今天要回家》重新發行，**兩者是同一批錄音的不同包裝**，卡片只收原始的《今天不回家》，《今天要回家》不另立卡。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"姚蘇蓉\" AND releasegroup:\"今天不回家\"",
+      "release-group/?query=artist:\"姚蘇蓉\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/4368813-%E5%A7%9A%E8%98%87%E8%93%89-%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%9B%9E%E5%AE%B6-",
+     "https://artogo.co/en/exhibition/MandarinAndTaiwanesePopularMusic/work/895efdfd5ea9",
+     "https://www.discogs.com/master/1096987-%E5%A7%9A%E8%98%87%E8%93%89-%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%9B%9E%E5%AE%B6",
+     "https://open.spotify.com/album/3WDitMajp3IbGCtCsiYvyT"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b273b5076248f52201548240abd8",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2484,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到的是查禁史與外銷銷量（六十萬張）——文化史事件與商業成績，不是樂評正典；ARTOGO 的《鄉愁·流轉與禁聲噤語》展覽把它當禁歌史料展示，是**史料收錄**而非把它定位成華語流行史核心作品。先作一般卡；**若本機能取得台灣音樂館或禁歌研究專著對本張的專門定位，可重新評估。**",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "歌名裡的一個字被換掉，同一批錄音就重新上了架。〈今天不回家〉被認為會形成不回家的不良示範而遭禁唱，唱片公司隨後改以《今天要回家》為名發行；姚蘇蓉多首走紅的歌都碰上禁唱，她因而轉往香港與東南亞發展。這首歌是 1969 年白景瑞執導、甄珍與武家麒主演的同名電影主題曲，作曲者左宏元此後又與她合作出一系列所謂姚派唱法的歌。本輯是海山唱片 1969 年的台壓 LP，掛名姚蘇蓉和電星樂隊，共 10 軌，主打曲排在 A1。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%A7%9A%E8%98%87%E8%93%89",
+     "https://artogo.co/en/exhibition/MandarinAndTaiwanesePopularMusic/work/895efdfd5ea9",
+     "https://www.discogs.com/release/4368813",
+     "https://www.discogs.com/release/3009901",
+     "https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E7%A6%81%E6%AD%8C%E5%88%97%E8%A1%A8",
+     "https://www.discogs.com/release/4368813-%E5%A7%9A%E8%98%87%E8%93%89-%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%9B%9E%E5%AE%B6-",
+     "https://www.discogs.com/master/1096987-%E5%A7%9A%E8%98%87%E8%93%89-%E4%BB%8A%E5%A4%A9%E4%B8%8D%E5%9B%9E%E5%AE%B6",
+     "https://open.spotify.com/album/3WDitMajp3IbGCtCsiYvyT"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "青山",
+   "album": "淚的小花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "掛名維持「青山」。與日本歌手青山テルマ（Thelma Aoyama，卡池已有《DIARY》一卡）為完全不同的兩人，去重時**不可只比對「青山」二字**；本卡建議在 aliasReview 註明本名張鐵嶽（1945 年生，台灣男歌手）。盤名見 versionNote 的保留意見。；**本張是本子域版本最不確定的一張，理由要寫清楚**。(a) Discogs 上 1969 年的 LP 條目標題是「青山臨港演唱專集 / 淚的小花」——無法確定《淚的小花》是獨立盤名還是該 LP 的主打曲副標，**盤名待本機以實體封面確認**。(b) **同名不同人**：陳芬蘭 1969 年也有一張 LP 就叫《淚的小花》（Discogs r6107568、master 1068913），兩張碟同年同名，去重時極易撞車。(c) Apple 上的「淚的小花（國語懷念精選1）」是 2022 年的後世精選，不是本卡。本卡鎖定 1969 年麗歌的青山原盤。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "442bda57-e660-47ac-b7ea-ec2e469248d7",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ea/f3/94/eaf394cf-42ac-f25f-0b8a-37993cac4135/cover.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "成名曲與歌手地位明確，但這張碟本身的樂史論述、跨來源長期評價與唱片身分（盤名、曲目）都不足以支撐殿堂；冷門度也未達遺珠級（他在華語老歌圈仍是熟面孔）。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "退伍那年簽進麗歌，成名曲後來全部留在那家公司。青山本名張鐵嶽，1965 年高中畢業後考入幸福合唱團，1966 年入伍成為憲兵司令部憲光藝工隊的一員，1968 年 5 月退伍後與麗歌唱片簽約，隨即由慎芝引介上台視《群星會》；他大部分的成名曲都在麗歌灌錄，之後才轉往生產量更大的海山唱片，成績不如麗歌時期。本輯是麗歌 1969 年的台壓 LP，全名《淚的小花 / 情難守 / 第4集》，10 軌，A1 即〈淚的小花〉，另收〈太湖船〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%9D%92%E5%B1%B1_%28%E6%AD%8C%E6%89%8B%29",
+     "https://www.discogs.com/release/7021201",
+     "https://www.discogs.com/release/7022800",
+     "https://www.discogs.com/release/6107568",
+     "https://musicbrainz.org/release-group/442bda57-e660-47ac-b7ea-ec2e469248d7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/05/e6/6a/05e66a97-c27a-939d-89a7-fb4e829af3d9/mzaf_1588970947626679731.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1623776301",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鳳飛飛",
+   "album": "祝你幸福",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。鳳飛飛本名林秋鸞。；鎖定 1972 年 3 月海山的 **LP 原盤（12 曲、33 分鐘）**。要排除兩個東西：(a) 同期的卡帶版收 22 軌並混入下一張專輯曲目，曲目對不上；(b) 黑膠封面當年就發行了**三種不同版本**，本機解封面時任一種皆可，但必須在 manifest 註明取的是哪一種，日後不要因為封面不同而誤判成不同碟。後世另有大量精選與復刻（含環球復刻黑膠），一律不取代原盤身分。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"鳳飛飛\" AND releasegroup:\"祝你幸福\"",
+      "release-group/?query=artist:\"鳳飛飛\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E7%A5%9D%E4%BD%A0%E5%B9%B8%E7%A6%8F",
+     "https://zh.wikipedia.org/zh-tw/%E9%B3%B3%E9%A3%9B%E9%A3%9B",
+     "https://www.books.com.tw/products/0020205981",
+     "https://music.apple.com/us/album/%E7%A5%9D%E4%BD%A0%E5%B9%B8%E7%A6%8F/1679514017?l=zh-Hant-TW"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 4 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b27375fca0112c67859658952043",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 273,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "首張專輯的產業意義清楚，但《台灣流行音樂200最佳專輯》收的是鳳飛飛的《浮世情懷》(1991) 與《想要彈同調》(1992)，不是本張；長期樂評共識並未把這張列為她的核心作品。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "改名到出唱片只隔四個月，這位新人幾乎沒有摸索期。1971 年 11 月她參演華視開台大戲《燕雙飛》並演唱同名主題曲，也在這時採納製作人張宗榮的建議，把藝名改為鳳飛飛；1972 年 1 月加盟海山唱片，3 月便推出首張個人專輯，唱片編號 LS-2216，共 12 軌，〈祝你幸福〉排在 A2，同輯另收〈落花淚〉與〈可愛的陌生人〉。這首歌此後與〈流水年華〉〈我是一片雲〉同列她的代表作。首張專輯發行四年半後，她與海山爆發合約糾紛而跳槽歌林。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%B3%B3%E9%A3%9B%E9%A3%9B",
+     "https://www.discogs.com/release/16540788",
+     "https://zh.wikipedia.org/zh-hant/%E7%A5%9D%E4%BD%A0%E5%B9%B8%E7%A6%8F",
+     "https://www.books.com.tw/products/0020205981",
+     "https://music.apple.com/us/album/%E7%A5%9D%E4%BD%A0%E5%B9%B8%E7%A6%8F/1679514017?l=zh-Hant-TW"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b1/cb/63/b1cb639b-a246-cd85-45f3-5aa86d9b7a03/mzaf_8442719862989180794.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1679514017",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鳳飛飛",
+   "album": "掌聲響起",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。；鎖定 1986 年 9 月歌林的原盤（10 曲、41 分鐘）。要排除的是本曲後來大量的精選收錄：《鳳飛飛精選》《金賞輯7》《珍藏系列》等都以〈掌聲響起〉當主打，串流上與原專輯同名同曲極易錯配；本機比對務必用 10 軌曲目而非曲名。另外〈掌聲響起〉在 1986 年也有現場演唱版本流通，不是本卡。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "b469150d-9bab-45f3-951e-08337f7c2d99",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2735613b1c13fb0565423542d73",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 553,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "單曲的國民度極高，但專輯層級未見長期樂評共識，《台灣流行音樂200最佳專輯》收錄的鳳飛飛作品是《浮世情懷》與《想要彈同調》而非本張。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩任總統的就職典禮，收尾都用了同一首寫舞台人生的歌。1996 年鳳飛飛受邀在時任總統李登輝的就職典禮擔任演唱嘉賓，唱的正是〈掌聲響起〉；2008 年 5 月 20 日她又獲邀在第十二任正副總統馬英九、蕭萬長的就職典禮擔任壓軸嘉賓，演唱〈做個快樂歌手〉與這首歌。它由陳桂芬作詞、陳進興作曲，收在 1986 年 9 月由歌林發行的同名專輯裡，唱片編號 KLQA-1322，台灣壓製，共 10 軌，主打曲排在 B1，同輯另收〈就是不一樣〉與〈玉山〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%8E%8C%E8%81%B2%E9%9F%BF%E8%B5%B7",
+     "https://www.discogs.com/release/11853713",
+     "https://zh.wikipedia.org/zh-tw/%E9%B3%B3%E9%A3%9B%E9%A3%9B",
+     "https://www.discogs.com/release/22074058",
+     "https://musicbrainz.org/release-group/b469150d-9bab-45f3-951e-08337f7c2d99"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d1/50/32/d1503223-5f02-ad12-3e98-9dc95ee6dbb3/mzaf_89346505015728807.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1694467554",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "劉文正",
+   "album": "諾言",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名沿用通行的《諾言》。**注意實體唱片上的全名是《劉文正之歌：諾言》**（國家文化記憶庫著錄的歌林編號 KL-1047 即用此全名），本機比對封面與 catno 時要用全名。；鎖定 1975 年歌林的原盤（10 曲：A 面〈諾言〉〈邂逅〉〈再相見〉〈雨戀〉〈信任〉；B 面〈尋〉〈如果〉〈綠色大地〉〈珊珊〉〈詩意〉）。主打〈諾言〉由劉家昌操刀。要排除後世的大量精選與復刻——劉文正的目錄在他退隱後被反覆重包裝，串流上同名條目多為精選；本機以上述十軌曲序核對。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "d795044a-b762-4c8e-a52a-cc05ef6eaca0",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2737b233fa2e8912b91b2ea4816",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 50,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "產業史意義清楚（華語偶像模式的起點），但這張碟本身未見跨來源的長期樂評共識，也未進《台灣流行音樂200最佳專輯》。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片與電影同一年推出，退伍後的第一張就造成轟動。實體盤全名《劉文正之歌：諾言》，1975 年 5 月由歌林唱片發行，編號 KL-1047，12 吋 33 轉黑膠，藏品現由國立臺灣歷史博物館典藏。這是劉文正退伍後簽入歌林的首張個人專輯，主打歌〈諾言〉由劉家昌製作、孫儀作詞，全輯十曲在深情抒情曲與校園民歌風之間取平衡。同一年他演出第一部電影《門裡門外》；到 1978 年為止他在歌林共發行十二張專輯，1977 年並進入華視主持個人歌唱節目《劉文正時間》。",
+    "sourceUrls": [
+     "https://tcmb.culture.tw/zh-tw/detail?id=11000037716&indexCode=MOCCOLLECTIONS",
+     "https://zh.wikipedia.org/wiki/%E5%8A%89%E6%96%87%E6%AD%A3",
+     "https://musicbrainz.org/release-group/d795044a-b762-4c8e-a52a-cc05ef6eaca0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8a/c1/9a/8ac19a91-b613-7ade-8732-a503fb20601f/mzaf_15773074641295531021.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1693762581",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "費玉清",
+   "album": "長江水",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻種子盤名**：〈一剪梅〉是曲名不是盤名。該曲首版收錄於費玉清 1983 年 4 月的國語專輯**《長江水》**（東尼機構），1983 年並沒有一張叫《一剪梅》的費玉清專輯；同名電視劇《一剪梅》是 1984 年才播出的。掛名不變。；鎖定 1983 年 4 月東尼的原盤《長江水》（Discogs master 2012665、release r15561504 為 1983 台壓 LP）。要排除三類東西：(a) 後世以《一剪梅》為名的費玉清精選輯（此曲 2020 年因網路迷因全球爆紅後，重包裝更多）；(b) 1984 年中視同名連續劇的相關發行；(c) 他本人多次重錄的〈一剪梅〉。本卡要的是 1983 原盤裡的那一版。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "4878a9dd-08a3-4657-ad4b-8099679f01fa",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4878a9dd-08a3-4657-ad4b-8099679f01fa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 20,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "〈一剪梅〉單曲的國際傳播是罕見案例，但《長江水》這張專輯本身未見長期樂評共識；《台灣流行音樂200最佳專輯》收的費玉清作品是《變色的長城》(1981) 與《夢駝鈴》(1984)，不是本張。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原本要給另一部連續劇的主題曲，四十年後成了歐美網路上的流行語。〈一剪梅〉收錄於費玉清 1983 年 4 月由東尼機構發行的《長江水》，由陳信義以筆名陳怡作曲、陳玉貞以筆名娃娃作詞、陳志遠編曲；它原定是中視連續劇《邊城夢回》的主題曲，最後成了 1984 年中視八點檔《一剪梅》的片頭曲。發行三十七年後，2020 年 1 月演員張愛欽在雪地演唱這首歌的片段被上傳到中國影音平台，3 月起被大量改作成迷因，同年 6 月登上 Spotify 挪威與紐西蘭的排行榜榜首。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E4%B8%80%E5%89%AA%E6%A2%85_(%E6%AD%8C%E6%9B%B2)",
+     "https://baike.baidu.com/item/%E4%B8%80%E5%89%AA%E6%A2%85/2983558",
+     "https://musicbrainz.org/release-group/4878a9dd-08a3-4657-ad4b-8099679f01fa"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "甄妮",
+   "album": "誓言",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名沿用《誓言》。**臺北市流行音樂資料庫著錄的全名是《甄妮專輯第一集（誓言）》**，本機比對封面與 catno 時要用全名。掛名不變（本名甄淑詩）。；鎖定海山 1972 年的原盤 LP（LS-2241）。要排除：(a) Apple 上掛「甄妮 & 劉家昌」的《誓言》條目——那是後世把作曲人一併掛進 artist credit 的重編條目，不是原盤掛名；(b) 各種以《誓言》為名的後世精選；(c) 她的另一張同期名曲專輯《海誓山盟》，盤名相近極易混。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "52340aa3-b852-41af-933b-bf0420da4bd5",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/97/1f/78971f9e-b8c1-5b7b-e951-b2afef93572d/cover.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "歌手地位與產業角色清楚，但這張碟本身缺乏跨來源的長期樂評共識，年份與版本資料也尚未穩固。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首歌裡有兩首由作曲家親自開嗓，1972 年的台灣唱片還這麼做。《誓言》1972 年由海山唱片發行，編號 LS-2241，全輯十二曲，其中〈白屋之戀〉與〈陶醉在春風裡〉都由劉家昌演唱，雙掛名在原盤上就有依據。甄妮 1953 年生於葡屬澳門，出道時待在銀河唱片，1972 年被挖角轉簽海山，進來之後便與作曲家劉家昌合作，唱了多首國語電影主題曲。六年後的 1978 年 10 月，她推出首張個人粵語專輯《奮鬥》，打破香港開埠以來的唱片銷售紀錄。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E7%94%84%E5%A6%AE",
+     "https://music.douban.com/subject/5245095/",
+     "https://musicbrainz.org/release-group/52340aa3-b852-41af-933b-bf0420da4bd5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/25/52/612552a6-c0ea-8db9-9724-5a9a4c56718a/mzaf_14704214134080731061.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1864923351",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鄧麗君 Teresa Teng",
+   "album": "島國之情歌第一集",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**掛名要統一**：卡池既有的《淡淡幽情》一卡是用「鄧麗君 Teresa Teng」建的（舊批遺留），而 c-41 華語批的慣例是純中文名。本批四張全部用純中文「鄧麗君」，**請主線一併決定是否回頭把《淡淡幽情》改名，否則同一位歌手會在卡池裡分裂成兩個掛名、抽牌與去重都會出錯**。盤名方面：首版封套實際印的是《島國之情歌　再見！我的愛人》（Discogs r6158420），「第一集」是系列後來回溯編號時的稱呼，兩種寫法都要進 aliasReview。｜掛名改用池內既有寫法「鄧麗君 Teresa Teng」（原擬「鄧麗君」），避免同一位藝人因寫法不同在卡池裂成兩個鍵。；鎖定 1975 年香港寶麗金的原盤。這是《島國之情歌》八集系列（1975–1984）的第一集，內容是把她的日語專輯曲目改成國語版。要排除：(a) 2009 年起的黑膠復刻與 2013 年《島國之情歌全集 K2HD 8 片套裝》；(b) 2015 年「島國之情歌 40 週年及逝世 20 週年紀念」的彩色圖案唱片（Picture Vinyl LP）；(c) 台灣海山同期的發行版本（台港兩地發行方不同）。日後若補收第二至八集，必須各自立卡、不可與本卡合併。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\" AND releasegroup:\"島國之情歌第一集\"",
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://www.discogs.com/release/6158420-%E9%84%A7%E9%BA%97%E5%90%9B-%E5%B3%B6%E5%9C%8B%E4%B9%8B%E6%83%85%E6%AD%8C-%E5%86%8D%E8%A6%8B-%E6%88%91%E7%9A%84%E6%84%9B%E4%BA%BA-",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/57/67/6657674f-6abd-4afc-144f-15ad3670b5de/10UMGIM12379.rgb.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "**已查到名單、而本張不在裡面**：《台灣流行音樂200最佳專輯》收錄的鄧麗君作品是《淡淡幽情》（1983，歌林／寶麗金，第 45 名），不是本張；卡池既有的鄧麗君卡也正是《淡淡幽情》。本張的意義在於開啟島國之情歌系列與寶麗金時期，屬產業分期的分水嶺而非樂評正典。先作一般卡——這是查得到名單後的實質判斷，不是 pending-local。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "簽進香港寶麗多的開山作，把整張日語專輯改成國語重唱一次。本輯 1975 年 9 月 10 日發行，唱片編號 MRM-1001，另有卡帶版 MRMT-1001，發行公司是香港的寶麗多；系列名裡的「島國」指的是日本，不是香港或台灣。A 面從〈情人的關懷〉開場，B 面首軌〈再見 我的愛人〉由平尾昌晃作曲、文采作詞。日本歌謡曲的編曲骨架套上國語詞，弦樂、電風琴與慢搖擺節奏底下，她的唱法已從民歌式的直白轉向氣聲控制。同一批內容在台灣另由海山唱片發行。",
+    "sourceUrls": [
+     "https://iteresateng.com/albums/mrm-1001.html",
+     "https://zh.wikipedia.org/zh-hant/%E5%86%8D%E8%A6%8B%E6%88%91%E7%9A%84%E6%84%9B%E4%BA%BA_(%E9%84%A7%E9%BA%97%E5%90%9B%E6%AD%8C%E6%9B%B2)",
+     "https://musicbrainz.org/release-group/17676937-a2d8-48f4-81dd-84e356ddb027",
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://www.discogs.com/release/6158420-%E9%84%A7%E9%BA%97%E5%90%9B-%E5%B3%B6%E5%9C%8B%E4%B9%8B%E6%83%85%E6%AD%8C-%E5%86%8D%E8%A6%8B-%E6%88%91%E7%9A%84%E6%84%9B%E4%BA%BA-",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "命中 復黑王: 島國之情歌 第一集 - 再見我的愛人 但該碟無 previewUrl"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鄧麗君 Teresa Teng",
+   "album": "一封情書",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻種子盤名**：1978 年沒有一張叫《何日君再來》的鄧麗君專輯。〈何日君再來〉是 1978 年香港寶麗金專輯**《一封情書》**的曲目（該輯同時收〈雲河〉〈夜來香〉）；同年的《島國之情歌第五集》主打是〈使愛情更美麗〉〈又見炊煙〉，也不是它。名為《何日君再來》的發行品是 1995 年日本 Taurus 的身後 CD（TACL-2404）與 1992 年的〈夜來香／何日君再來〉單曲，都不是 1978 年的碟。掛名同上，用純中文「鄧麗君」。｜掛名改用池內既有寫法「鄧麗君 Teresa Teng」（原擬「鄧麗君」），避免同一位藝人因寫法不同在卡池裂成兩個鍵。；鎖定 1978 年香港寶麗金的《一封情書》原盤。要排除：(a) 1995 年 Taurus 的《何日君再來》CD（TACL-2404，身後發行）；(b) 1992 年 Taurus 的〈夜來香／何日君再來〉單曲、1993 年的〈何日君再來〉中日文雙版本單曲（TADL-7359）、1996 年的 Remake Single（TADL-7920）——這些都是日本市場的後期重錄或重發；(c) 周璇 1930 年代的百代原唱〈何日君再來〉，那是本批周璇卡（名典一）第 14／15 軌，**與本卡是完全不同的錄音，兩張卡不可互相吸收**。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\" AND releasegroup:\"一封情書\"",
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 2 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2732dd452fde84c1407274b287f",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "專輯本身是重唱時代曲的優秀作品，但主要曲目為翻唱，長期樂評共識集中在原唱（周璇、李香蘭）與 1983 年的《淡淡幽情》；依「多版本只取最權威一張」的原則，鄧麗君線的頂點名額留給《島國之情歌第一集》《つぐない》《我只在乎你》。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四段詞刪成兩段，只留下開頭、結尾與中間那段唸白。鄧麗君 1978 年為《一封情書》重新詮釋〈何日君再來〉時，就是這樣處理的。這首歌 1937 年首度出現在電影《三星伴月》，原唱是周璇，詞出自黃嘉謨、曲出自劉雪庵，兩人當年都用筆名；它後來在海峽兩邊都被禁過。專輯由香港寶麗金發行，全輯十二曲；同一批錄音在台灣由歌林以《無情荒地有情天》為名發行，曲序不同，〈何日君再來〉與〈夜色〉兩軌只收在香港版裡。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://www.discogs.com/master/1318889-%E9%84%A7%E9%BA%97%E5%90%9B-%E4%B8%80%E5%B0%81%E6%83%85%E6%9B%B8",
+     "https://zh.wikipedia.org/zh-tw/%E4%BD%95%E6%97%A5%E5%90%9B%E5%86%8D%E4%BE%86",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/9c/9e/d99c9ec6-10bf-eed6-8f38-016d155dc694/mzaf_17514058982191123924.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1821473821",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鄧麗君 Teresa Teng",
+   "album": "償還",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變（掛名用純中文「鄧麗君」，日本盤封面同時印テレサ・テン與鄧麗君，日文名進 aliasReview）。｜掛名改用池內既有寫法「鄧麗君 Teresa Teng」（原擬「鄧麗君」），避免同一位藝人因寫法不同在卡池裂成兩個鍵。；這是日語專輯《つぐない》的國語版本，**與本批的《つぐない》卡是同一批錄音的不同語言版**，兩張卡必須各自獨立、簡介要互相交代清楚，不可寫成同一張碟。鎖定 1984 年 12 月 Taurus 的中國語盤首發。要排除：(a) 1985 年 12 月〈愛人／償還（つぐない）〉的中國語盤 BEST SELECTION 單曲（07TR-1110）；(b) 1992 年《難忘的 Teresa Teng：償還、愛人》精選；(c) 2013 年 K2HD、2014 年 XRCD 與復刻黑膠（環球音樂台灣／鄧麗君文教基金會授權）。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\" AND releasegroup:\"償還\"",
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 2 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b27360fca70da90efb69f380a741",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "維持一般卡，理由不變且與校準一致：依「同一批錄音的多種形態只挑最權威的一種」，1984 年這批錄音的頂點名額給日語原版《つぐない》（獎項與榜單紀錄都掛在日語版上）。另《台灣流行音樂200最佳專輯》的鄧麗君條目為《淡淡幽情》，本張不在內。**這是刻意取捨與名單查證的結果，不是因為查不到證據而降級。**",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日語版拿下東西兩座有線大賞，國語版跟著在同一年壓片。日語版〈つぐない〉的詞出自荒木とよひさ、曲出自三木たかし，先後獲得第 17 屆日本有線大賞的大賞與第 17 屆全日本有線放送大賞的大賞，兩座都由這個日語版本拿下，單曲在 Oricon 週榜最高第 6 名、統計銷量 44.2 萬枚。國語版《償還》則由日本 Taurus 以中國語盤的形式壓成 LP，1984 年 12 月 1 日發行，編號 28TR-2057，附腰帶與插頁。",
+    "sourceUrls": [
+     "https://setagayarecords.co/product/%E3%83%86%E3%83%AC%E3%82%B5%E3%83%BB%E3%83%86%E3%83%B3%EF%BC%88%E9%84%A7%E9%BA%97%E5%90%9B%EF%BC%89-%E5%84%9F%E9%82%84%EF%BC%88%E3%81%A4%E3%81%90%E3%81%AA%E3%81%84%EF%BC%89%E4%B8%AD%E5%9B%BD%E8%AA%9E/",
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://ja.wikipedia.org/wiki/%E3%81%A4%E3%81%90%E3%81%AA%E3%81%84_(%E3%83%86%E3%83%AC%E3%82%B5%E3%83%BB%E3%83%86%E3%83%B3%E3%81%AE%E6%9B%B2)",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/01/e1/6201e11e-7492-6a5b-8ad3-e560c70ace07/mzaf_11110726152932856206.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444132165",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鄧麗君 Teresa Teng",
+   "album": "我只在乎你",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變（掛名用純中文「鄧麗君」）。｜掛名改用池內既有寫法「鄧麗君 Teresa Teng」（原擬「鄧麗君」），避免同一位藝人因寫法不同在卡池裂成兩個鍵。；鎖定 1987 年香港寶麗金的國語專輯。要排除：(a) 1986 年的日語專輯《時の流れに身をまかせ》（另一張碟，日後若補要另立卡）；(b) 1986 年 12 月 Taurus 的〈我只在乎你（時の流れに身をまかせ）／心路過黃昏（黃昏）〉中國語盤單曲（07TR-1142）；(c) 1997 年〈夢立ちぬ／我只在乎你〉單曲（TADL-7501）；(d) 各種身後精選與卡拉 OK DVD。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\" AND releasegroup:\"我只在乎你\"",
+      "release-group/?query=artist:\"鄧麗君 Teresa Teng\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 2 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b27383ce9f50a676383703ee4b2c",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 1,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "**已查到名單、而本張不在裡面**：《台灣流行音樂200最佳專輯》的鄧麗君條目是《淡淡幽情》，本張未入列。同名曲的流通度極高，但依校準規則「人人會唱」不構成 hall；鄧麗君線的頂點名額本批只留給日語原版《つぐない》。先作一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日語原曲在日本先發，國語版單曲等到年底，專輯拖到隔年 4 月。〈時の流れに身をまかせ〉1986 年 2 月 21 日在日本推出，Oricon 最高第 6 名，並獲第 28 屆日本レコード大賞的金賞；國語版單曲 1986 年 12 月 20 日由日本的金牛宮（Taurus）先發，同名國語專輯要到 1987 年 4 月 1 日才由香港寶麗金發行，是鄧麗君最後一張國語專輯。〈我只在乎你〉的國語詞出自慎芝，日語原曲詞出自荒木とよひさ、曲出自三木たかし，碟上另收〈愛人〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%88%91%E5%8F%AA%E5%9C%A8%E4%B9%8E%E4%BD%A0",
+     "https://musicbrainz.org/release-group/d979349f-ac96-48d1-9195-388a0e8e8652",
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%BA%97%E5%90%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-hant/%E9%84%A7%E9%BA%97%E5%90%9B"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蔡琴",
+   "album": "蔡琴老歌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名正名為《蔡琴老歌》（實體與復刻黑膠皆用此四字；種子的《老歌》是簡稱）。副標「癡癡的等」在部分再版封面上出現，一併進 aliasReview。掛名不變；卡池既有蔡琴《出塞曲》一卡，掛名寫法相同，無分裂問題。；**這張的版本差異直接影響它的價值，必須鎖死**。同一份錄音至少有三種流通壓片：(a) 1985 年**三洋飛碟版（UFO-8516）**——發燒圈公認音色最甜、流通量低，二手行情長期在港幣二、三千元以上；(b) 後來的 **XRCD2 版**——聲音較通透、中低頻厚實，多數發燒友認為全頻平衡更佳；(c) New Century 等後世復刻黑膠。三者不是不同專輯，但**在黑膠行的語境裡是三種不同的商品**。本卡以 1985 年飛碟原盤為身分基準，本機解封面與試聽時建議優先取原盤或 XRCD2，並在 manifest 註明取的是哪一種。另需與她 1980 年海山的《出塞曲》（卡池已有）明確分開。；2026-08-29 主線以 MB API 核實：RG a59c45da（Album、掛蔡琴、標題「老歌」）存在，其下三筆 release 為 2007-12-31 加拿大盤（10 軌，首五軌〈痴痴的等〉〈寒雨曲〉〈落花流水〉〈是夢是真〉〈總有一天等到你〉）、2013-12-20 香港盤與一筆無日期盤，皆無廠牌資訊。曲目與本卡相符，**但 MB 收錄的最早版本是 2007 年、查無 1985 年三洋飛碟原盤**。改走 MBID 釘選是因為專輯層在 MB 有 RG、缺席例外不成立；**本機請務必覆核這個 RG 指的是 1985 年原盤所屬的專輯，而不是後世另編的同名選輯**，若確認不是同一張再改回人工身分並重寫舉證。",
+    "rgMbid": "a59c45da-5e7a-3db2-9cff-39785f2e6bc8",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a59c45da-5e7a-3db2-9cff-39785f2e6bc8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 708,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。走 §0.7 明訂的「發燒天碟正典與詮釋正典並列」這條依據，且該正典的對象**就是這張碟本身、甚至細到壓片版位**（1985 三洋飛碟 UFO-8516 與 XRCD2 版在發燒圈有各自的評價與行情，三洋版二手長期在港幣二三千元以上），完全符合『這張碟是核心作品』而非『歌手很紅』。店規也明講黑膠行必須用這條反查，否則會系統性漏掉「聲音成為傳奇」的整類唱片。**惟香港 CD 聖經、TAS 榜等具名發燒名單雲端無法直接取得**，evidence 標 pending-local。註：本輯不在《台灣流行音樂200最佳專輯》內，故不以詮釋正典立論。",
+    "evidenceUrls": [
+     "https://music.douban.com/subject/1462439/",
+     "https://www.discogs.com/release/14100454-%E8%94%A1%E7%90%B4-%E8%80%81%E6%AD%8C"
+    ]
+   },
+   "description": {
+    "text": "同一份母帶壓成三種盤，在二手行裡就是三種價錢。日本三洋壓片、編號 UFO-8516 的那一版被發燒圈公認音色最甜，流通量低，二手行情長期在港幣二、三千元以上；XRCD2 版被多數發燒友認為較通透、全頻平衡更佳；後世 New Century Workshop 的黑膠復刻由德國 Stockfisch 擔綱母帶後期，以 DMM 直刻製成 180 克黑膠。原盤名為《老歌》，1985 年由飛碟唱片推出，陳志遠編曲，十曲全是 1930 至 50 年代國語電影歌曲的重唱。",
+    "sourceUrls": [
+     "https://www.retrophonicrecords.com/product/%E8%94%A1%E7%90%B4-%E8%94%A1%E7%90%B4%E8%80%81%E6%AD%8C-%E9%BB%91%E8%86%A0%E5%94%B1%E7%89%87-new-century/",
+     "https://archive.org/details/tsai-chin-10-songs-share",
+     "https://zh.wikipedia.org/zh-tw/%E8%94%A1%E7%90%B4",
+     "https://musicbrainz.org/release-group/a59c45da-5e7a-3db2-9cff-39785f2e6bc8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/00/00/7c00006e-fd9c-1319-943b-951e13659c3e/mzaf_16476204873667332768.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1114507022",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蔡琴",
+   "album": "此情可待",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "盤名與掛名不變。部分再版封面標《此情可待 最後一夜》，進 aliasReview。；鎖定 1984 年 11 月飛碟的原盤（Discogs r5652535 為 1984 台壓 LP；另有 1984 日本三洋壓片版流通）。要排除：(a) 後世以《此情可待 最後一夜》為名的 CD 再版與精選；(b) 〈最後一夜〉單曲在各種金馬／電影歌曲合輯中的收錄；(c) 與《蔡琴老歌》(1985) 為連續兩年的兩張碟，不可混。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "2b6597ce-067f-4f75-aaf4-89a043add061",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2b6597ce-067f-4f75-aaf4-89a043add061/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 278,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。本子域唯一命中具名回溯型正典名單、且證據完全在碟的層級：《台灣流行音樂百張最佳專輯（1975.9–1993.1）》第 17 名（擴充為 200 張版本仍在列），主打〈最後一夜〉獲第 21 屆金馬獎最佳原創電影歌曲。名單與獎項皆可查證，非知名度或銷量。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://zh.wikipedia.org/zh-hans/%E6%AD%A4%E6%83%85%E5%8F%AF%E5%BE%85"
+    ]
+   },
+   "description": {
+    "text": "離開海山、轉進飛碟的第一張，詞交給了慎芝、梁弘志與李宗盛。〈最後一夜〉由慎芝填詞、陳志遠譜曲，〈讀你〉與〈油麻菜籽〉則分別是梁弘志與李宗盛的詞曲。碟 1984 年 11 月 17 日由飛碟唱片發行，製作人吳楚楚、編曲陳志遠，輯名取自李商隱〈錦瑟〉的「此情可待成追憶」。〈最後一夜〉同時是電影《金大班的最後一夜》主題曲，拿下第 21 屆金馬獎最佳原創電影歌曲；本輯後來獲選《台灣流行音樂百張最佳專輯 1975.9-1993.1》第 17 名。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E6%AD%A4%E6%83%85%E5%8F%AF%E5%BE%85",
+     "https://zh.wikipedia.org/zh-tw/%E8%94%A1%E7%90%B4",
+     "https://musicbrainz.org/release-group/2b6597ce-067f-4f75-aaf4-89a043add061"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳明章",
+   "album": "戀戀風塵 電影原聲帶",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "配樂為陳明章（作曲、月琴與吉他）與許景淳（鋼琴與人聲）共同完成，1993 年正式盤另由陳揚擔任後期製作並補錄未完成的三首。主掛名取**陳明章**：他是作曲主體、南特影展得獎與現池既有卡（《下午的一齣戲》）的同一藝人，掛名一致有利去重與曲風流派串接；許景淳、陳揚以合作者記錄於此，不進 artist 欄。；鎖 1993 年水晶唱片台灣首版實體。**這張的版本層次是本批最複雜的一筆**：(a) 1986 年錄下的原始配樂母帶從未在當年發行；(b) 1993 水晶版才是「專輯」的誕生，且不是純母帶原樣——由陳揚後期製作、並補錄了當年沒錄完的〈無悔〉〈信〉〈雨水〉，故 1993 版在曲目上比電影裡聽到的多；(c) 侯孝賢在片中實際只採用了 40 分鐘配樂中的約 3 分鐘，因此「電影版」與「專輯版」內容差距極大，簡介不可寫成「電影裡的配樂」；(d) 後有陳明章音樂（cmcmusic）自營通路的 CD／卡帶／黑膠復刻與 30 週年周邊套組在售，屬後世再版，非本卡。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"陳明章\" AND releasegroup:\"戀戀風塵 電影原聲帶\"",
+      "release-group/?query=artist:\"陳明章\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+     "https://www.cmcmusic.com.tw/shop/albums/%E9%99%B3%E6%98%8E%E7%AB%A0%E9%85%8D%E6%A8%82%E5%B0%88%E8%BC%AF/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%B8%B6/",
+     "https://vocus.cc/article/601a699afd89780001367bb8"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/c9/c5/91/c9c5918f-b1f0-63b5-432e-5c8af15d6ca7/4582116556405_cover.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。本批唯二在**專輯層級**拿到獎的一張，且不只一項：1994 年第 5 屆金曲獎以本輯獲**最佳演奏專輯**與**最佳錄音**兩項得獎，陳明章、許景淳、陳揚三人另共獲**最佳演奏專輯製作人**；配樂本身更早在 1987 年法國南特影展拿下最佳配樂，是台灣電影第一次在國際影展獲配樂獎。這些都是唱片／配樂本體的獎，不是電影的獎；三十餘年來它持續被當作台灣電影配樂與台灣民謠現代化的共同原點被引用，符合「足以列入該領域史上核心作品」。",
+    "evidenceUrls": [
+     "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+     "https://vocus.cc/article/601a699afd89780001367bb8"
+    ]
+   },
+   "description": {
+    "text": "母帶被消磁，七捲從垃圾桶撿回的盤帶在架上放了六七年。撿回盤帶的是攝影師陳懷恩：1986 年他在陳明章家借住三天三夜，三人邊聊邊把整部電影的配樂勾勒出來，陳明章與許景淳隨後在錄音室花兩整天錄完四十多分鐘。這批錄音到 1993 年才由水晶唱片出版，許景淳引介陳揚做後期製作，並補錄〈無悔〉〈信〉〈雨水〉三曲。電影 1987 年在南特影展得最佳配樂獎，本作則得第 5 屆金曲獎最佳演奏專輯獎與最佳錄音獎。",
+    "sourceUrls": [
+     "https://www.mirrormedia.mg/story/20180718cul002",
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0",
+     "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+     "https://www.cmcmusic.com.tw/shop/albums/%E9%99%B3%E6%98%8E%E7%AB%A0%E9%85%8D%E6%A8%82%E5%B0%88%E8%BC%AF/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%B8%B6/",
+     "https://vocus.cc/article/601a699afd89780001367bb8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a4/66/c5/a466c51e-c401-37f4-313a-c0f03272cdc4/mzaf_11229551674021796240.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1091448966",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "S.E.N.S.",
+   "album": "悲情城市 電影原聲帶",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "掛名維持 **S.E.N.S.**：依 §0.5「官方藝名本身就是拉丁字者保留」，這個日本二人組（深浦昭彥、勝木ゆかり）在 1989 年台灣實體盤上的 credit 就是拉丁字 S.E.N.S.，漢字「神思者」是中文圈慣用譯名，進別名而非主名。**立川直樹不掛主名**：他是日方的音樂統籌／製作方向者，Discogs 把他標成 Music By，但這與「S.E.N.S. 作曲並演奏、Fun House 製作」的其他記載不一致，該掛名的確切分工需本機再覆核；在確認前不把他寫進 artist，也不寫進簡介當作曲者。；鎖 1989 年飛碟唱片台灣首版（卡帶 UC-89108／同內容 1992 年 CD 再版 UFO-89108），七首曲：〈悲情城市（序曲）〉〈寬美之主題曲 1〉〈流れゆく時／流逝的歲月〉〈寬美之主題曲 2〉〈悲情城市（胡琴篇）〉〈文清之主題〉〈悲情城市（主題曲）〉。**要避開三種同名混淆**：(a) S.E.N.S. 日本本地目錄中的自選輯與精選常收錄同名曲，不是本碟；(b) 2014 年前後流出的 SACD／DSD 版是後世高解析再版；(c) 中文網路上把「悲情城市」當電影條目而非唱片條目的資料極多，比對時必須看到廠牌與編號才算數。；2026-08-29 主線以 MB API 核實：RG 2a2fd94a（Album＋Soundtrack、掛 S.E.N.S.）確實存在，其下有 1990-04-25 日本盤、2014 香港盤（A City of Sadness）與 2017-08-21 台灣盤（Memory-Tech 88985459482、7 軌）。**專輯本身在 MB 有 RG，故不適用 §1 的缺席例外**；但本卡鎖定的 1989 年台灣飛碟版未見於 MB 的 release 清單，本機釘版本時請注意 RG 涵蓋範圍與卡片鎖定版本不同一件事。",
+    "rgMbid": "2a2fd94a-dac5-48ae-8c7f-ad35876343e1",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a2fd94a-dac5-48ae-8c7f-ad35876343e1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。**電影的地位與配樂專輯的地位要分開算**：《悲情城市》是威尼斯金獅獎、華語影史轉捩點之作，但配樂本身在獎項名單裡查無斬獲——1989 年第 26 屆金馬獎最佳原著音樂得主是張弘毅《三個女人的故事》，本片不在得獎之列。專輯層級也查不到跨來源的長期樂評論述（找得到的是影迷與布袋戲配樂考據文章）。文化影響（霹靂布袋戲長期沿用其旋律）確實存在，但那是使用史而非樂評共識。另掛名分工（立川直樹是作曲還是音樂統籌）本身尚未定案，更不宜在此基礎上判頂點。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://filmaholic.tw/films/63fadcdbfd89780001e11173/"
+    ]
+   },
+   "description": {
+    "text": "威尼斯金獅獎那部電影的聲音，出自一支出道才一年多的日本二人組。S.E.N.S.（神思者）1988 年成軍，成員是深浦昭彦與勝木ゆかり，團名取自 Sound. Earth. Nature. Spirit。電影在威尼斯影展首映，拿下第 46 屆金獅獎最佳影片，是第一部在世界三大影展奪得首獎的台灣電影，也是第一部正面觸及二二八事件的劇情長片。台灣首版是 1989 年 10 月飛碟唱片的卡帶，七首器樂曲；1995 年之後霹靂布袋戲的配樂大量取用這批旋律。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/22004797-SENS-%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82-A-City-Of-Sadness-Original-Motion-Picture-Soundtrack",
+     "https://ja.wikipedia.org/wiki/S.E.N.S.",
+     "https://zh.wikipedia.org/wiki/%E6%82%B2%E6%83%85%E5%9F%8E%E5%B8%82",
+     "https://filmaholic.tw/films/63fadcdbfd89780001e11173/",
+     "https://musicbrainz.org/release-group/2a2fd94a-dac5-48ae-8c7f-ad35876343e1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳勳奇",
+   "album": "東邪西毒",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "1994 年滾石實體的標題是中英並列「東邪西毒 Ashes Of Time」，依台灣獨立命名裁定的通則（中英並列取中文）取《東邪西毒》，英文 Ashes Of Time 進別名。掛名同《重慶森林》一卡：實體為「Frankie Chan & Roel A. Garcia」雙掛名，主掛名取**陳勳奇**，García 為共同作曲者。；鎖 1994 年滾石台灣首版 CD（CHD016，Digipak ＋外書衣＋20 頁摺頁），十五首全器樂曲，自〈Prelude: A Lonely Shadow〉至〈Finale: Gone With The Wind〉。**這張最危險的混淆是 2008 年的《東邪西毒 終極版》**：王家衛重剪版另做了一套原聲，掛名擴充為 Frankie Chan、Roel A. Garcia、吳彤、Eli Marshall、李勳，曲目與編制都不同，2009 Sony（88697495072）、2016 環球（8889462／8889464）、2018 Block 2、2021、2022 各版全屬終極版脈絡，**與本卡是兩張不同的碟，日後不可合併**。此外本卡是台灣盤而非香港盤，注意不要被「王家衛＝香港」的直覺誤導。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "dc4623ed-f217-3ed9-9ccd-fbf2e4214d35",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc4623ed-f217-3ed9-9ccd-fbf2e4214d35/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 34,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 14 屆香港電影金像獎（1995）最佳電影配樂，陳勳奇與 Roel A. García 以《東邪西毒》**入圍未得獎**；第 31 屆金馬獎最佳原創電影音樂得主為陳煥昌《紅玫瑰白玫瑰》。本碟作為十五段連續器樂的純配樂專輯，形態上比同組人的《重慶森林》更完整，但查無跨來源把它獨立論述為配樂史轉折點的樂評共識；2008 年終極版重製是導演對電影的再創作，不能倒推為唱片層級的評價共識。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E9%A6%AC%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82"
+    ]
+   },
+   "description": {
+    "text": "拍到一半資金燒盡，導演請人用同一批演員先拍了一部賀歲片。開拍一個多月後王家衛進度緩慢、預算嚴重超支，只好讓劉鎮偉帶同一批班底拍出賀歲片《東成西就》來補救資金，他自己掛監製。電影 1994 年 9 月 17 日在香港與台灣同日上映，杜可風以本片得該年威尼斯影展最佳攝影的 Osella 獎。原聲 1994 年由台灣滾石唱片出首版、編號 CHD016，Digipak 外加外書衣與 20 頁摺頁照片集，作曲掛陳勳奇與 Roel A. García 兩人，十五首全是器樂。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7607970-Frankie-Chan-Roel-A-Garcia-%E6%9D%B1%E9%82%AA%E8%A5%BF%E6%AF%92-Ashes-Of-Time-",
+     "https://zh.wikipedia.org/wiki/%E4%B8%9C%E9%82%AA%E8%A5%BF%E6%AF%92",
+     "https://www.discogs.com/master/1466135-Various-%E6%9D%B1%E9%82%AA%E8%A5%BF%E6%AF%92-Music-From-The-Motion-Picture-Ashes-Of-Time-Redux",
+     "https://musicbrainz.org/release-group/dc4623ed-f217-3ed9-9ccd-fbf2e4214d35"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/0f/05/a40f051b-bc30-1989-de11-de51e85203ea/mzaf_6320473610869073135.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1301145141",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "黃霑",
+   "album": "黃飛鴻",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**盤名推翻種子清單的「黃飛鴻 男兒當自強」**：〈男兒當自強〉是主題曲曲名，而《黃飛鴻之二：男兒當自強》是 1992 年的**續集電影**，兩者都不是這張碟的盤名。可考實體的標題是中英並列「黃飛鴻 (Once Upon A Time In China)」，取中文《黃飛鴻》。掛名取**黃霑**：實體 credit 記他為 Composer 兼 Executive Producer，他也是 1992 年第 11 屆香港電影金像獎《黃飛鴻》最佳電影音樂的得主；Discogs 的 artist 欄記為 Various（因收錄成龍主唱曲），編曲另記鮑比達，這兩點與部分中文來源「〈男兒當自強〉由戴樂民編曲、林子祥主唱」的說法並存，**編曲者與演唱版本的分工需本機覆核後才可寫進簡介**。；鎖 1993 年滾石台灣首版 CD（CH 46001），17 首。**收錄範圍需本機確認**：曲目以《黃飛鴻》（1991）的配樂段落為主（〈梁寬初遇十三姨〉〈嚴師傅落魄廣東〉〈寶芝林夜思〉〈黃飛鴻戲棚顯身手〉〈梁寬勇救十三姨〉等），但第 1 軌題為〈男兒當自強獅王爭霸（大合唱）〉、又收〈男兒當自強（成龍主唱）〉，且 1998 年再版直接改題為「黃飛鴻**系列**電影原聲精裝版」，Discogs 亦把本碟格式標為 Compilation——**因此它很可能是跨越黃飛鴻一至三集的系列選輯而非單片原聲**，本欄不擅自斷定，交本機看實體曲目表定案。另注意不要與 2023 年黑膠版（RLP154）混。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "fa0c2896-af77-3d67-8365-99bf4e2fd3c7",
+    "exceptionReason": "本碟是黃飛鴻電影系列配樂的原始選輯型發行，以古曲〈將軍令〉改編的〈男兒當自強〉為核心，把粵樂〈旱天雷〉、〈十面埋伏〉等傳統素材的電影化改編一次收齊；1990 年代香港武俠片音樂能以完整專輯形態留存下來的極少，這是該批錄音唯一的原始實體載體，對粵樂與香港電影音樂的交界具文獻價值。",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/release/7162107",
+     "https://www.discogs.com/master/1249433",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+    ]
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa0c2896-af77-3d67-8365-99bf4e2fd3c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。本批唯二在**配樂本體**拿到獎的一張：黃霑以《黃飛鴻》獲 1992 年第 11 屆香港電影金像獎**最佳電影音樂得獎**（不是入圍）。其核心的〈男兒當自強〉把清代粵樂〈將軍令〉改寫成現代電影主題曲，是華語通俗音樂裡傳統素材再生最成功的案例，三十餘年來持續被翻唱、改編與在體育與典禮場合使用，作為粵樂進入現代流行的樣板具長期共識；本碟又是這批錄音唯一的原始實體載體。**但要注意**：得獎的是 1991 年電影的配樂，本卡鎖的是 1993 年滾石的（可能為系列）選輯發行，兩者的涵蓋範圍需本機確認；專輯層級的跨來源樂評文獻亦待本機補齊，故 evidence 標 pending-local，不因此降級。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+    ]
+   },
+   "description": {
+    "text": "古琵琶曲〈將軍令〉改寫成的主題曲，替黃霑拿下金馬獎最佳原創電影歌曲。得獎的是第 29 屆，〈男兒當自強〉隔年另得第一屆新加坡金曲獎最佳電影主題曲。這張碟是滾石為黃霑替黃飛鴻系列電影所寫的配樂做的彙整選輯，1993 年發行、編號 CH 46001，十七軌裡同一個旋律出現三種形態，第十軌的人聲版由成龍主唱，編曲掛 Chris Babida（鮑比達）。配樂段落的曲名全部取自古典詩句，括號裡才標對應的戲，如〈試拂鐵衣如雪色（黃飛鴻戲棚顯身手）〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7162107",
+     "https://zh.wikipedia.org/wiki/%E7%94%B7%E5%85%92%E7%95%B6%E8%87%AA%E5%BC%B7_(%E6%AD%8C%E6%9B%B2)",
+     "https://musicbrainz.org/release-group/fa0c2896-af77-3d67-8365-99bf4e2fd3c7",
+     "https://www.discogs.com/master/1249433",
+     "https://zh.wikipedia.org/wiki/%E9%BB%83%E9%A3%9B%E9%B4%BB_(1991%E5%B9%B4%E9%9B%BB%E5%BD%B1)"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "葉麗儀",
+   "album": "上海灘",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻種子清單的「顧嘉煇」掛名**：顧嘉煇是〈上海灘〉的作曲者（黃霑作詞），不是這張唱片的掛名藝人；實體與 master 的 artist 都是**葉麗儀**（Frances Yip）。盤名另有一層裁定：1980 年 EMI 原版 LP 是**自我同名**《葉麗儀》（A1 即〈上海灘〉），2014 年 EMI／環球復刻時才正式改題《上海灘》，而中文樂迷與後世通稱一向就是《上海灘》。卡片採《上海灘》以符合通稱與可檢索性，《葉麗儀》進別名，並在版本欄鎖定 1980 年原版內容。；鎖 1980 年 EMI 原版 LP（EMGS 6059，13 首，A1〈上海灘〉，監製朱穗萍）。**同名同題材的碟至少有四張，必須逐一排除**：(a)《上海灘續集．萬般情》1980，EMI EMGS-6066——不同專輯；(b)《上海灘特輯》1981，EMI EMGS 6072——不同專輯；(c) 1996 年 EMI CD（7243854058 2 2）與 2014／2015 年 EMI／環球復刻 CD（8897079、8888794、8897641）——後世再版；(d) 顧嘉煇的演奏／演唱會選輯（如 1987 Crown《Golden Hits》、2013《顧嘉煇大師經典演唱會》）收錄同曲但完全是別的碟。另外本卡是**電視劇主題曲專輯**而非電影原聲帶，曲風與 release type 的歸類要與本子域其他配樂卡分開處理。｜【2026-08-29 主線裁決：改歸粵語流行，不歸電影配樂】本作是 1980 年 TVB 電視劇《上海灘》的主題曲專輯，不是電影原聲帶。卡片本身成立且值得收（粵語流行黃金期、顧嘉煇＋黃霑的 TVB 劇集音樂、EMI 香港目錄三條線的起點），僅子域歸類需由本機改掛。；MB 命中 3 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "4fef7590-0afe-4002-ad86-6cfbe03d2275",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4fef7590-0afe-4002-ad86-6cfbe03d2275/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 650,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。得獎紀錄查到了，但落在**歌曲**而非專輯：〈上海灘〉入選 1980 年度十大中文金曲，那是單曲獎；專輯層級（1980 EMI EMGS 6059，原題自我同名《葉麗儀》）查無任何獎項或跨來源樂評論述，它在唱片史上的角色是「收錄了一首時代金曲的歌手專輯」，不是被獨立論述的核心作品。EMI／環球至 2015 年仍在復刻，反映的是那首歌的長銷力。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/1980_RTHK_Top_10_Gold_Songs_Awards",
+     "https://www.discogs.com/release/10991412-%E8%91%89%E9%BA%97%E5%84%80-%E4%B8%8A%E6%B5%B7%E7%81%98"
+    ]
+   },
+   "description": {
+    "text": "唱片封面印的是她自己的名字，〈上海灘〉只是 A 面第一首。那是 1980 年 EMI 的 LP、編號 EMGS 6059，新馬與香港同一版，共十三首，封面標題就是自我同名的《葉麗儀》。〈上海灘〉是同年無線電視劇《上海灘》的主題曲，顧嘉煇作曲兼編曲、黃霑填詞，也是她的第一首原創粵語歌——在此之前她唱的是英文歌：1969 年她在無線電視的《聲寶之夜》歌唱比賽以兩首英文歌出線，評判顧嘉煇給了滿分，1974 年簽進 EMI 倫敦。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10991412",
+     "https://zh.wikipedia.org/zh-hant/%E8%91%89%E9%BA%97%E5%84%80",
+     "https://musicbrainz.org/release-group/4fef7590-0afe-4002-ad86-6cfbe03d2275"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳光榮",
+   "album": "無間道 電影原聲配樂",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻種子清單的「金培達 與 Ronald Ng」掛名，兩個都不對**。《無間道》(2002) 的電影配樂作曲者是**陳光榮**（Chan Kwong Wing），Discogs 與 MusicBrainz 上該系列所有原聲條目的 artist 也都是陳光榮。種子寫的 Ronald Ng 對應的中文名是**伍樂城**，他寫的是主題曲〈無間道〉（林夕作詞、劉德華與梁朝偉合唱）的曲與編曲，不是全片配樂；金培達（Peter Kam）則查無參與本片的任何證據，疑為與其他港片配樂混淆。盤名採後續實體與再版一致使用的《無間道 電影原聲配樂》，**2002 年首版的確切盤名待本機看實體覆核**（不排除當年題為「電影原聲大碟」）。；鎖 2002 年首版實體（13 首，曲目為陳光榮的配樂段落：〈無間〉〈跟他交換〉〈再見…警察〉〈標〉〈三年又三年〉〈我在夢中見過你〉〈他是一個好警察〉〈有內鬼，行動取消〉〈我是警察〉〈我最信的是你〉〈我揀做個好人〉〈再見…警察…再見〉等，另含主題曲）。**同系列同名碟極多，逐一排除**：(a)《無間道II 電影原聲大碟》（新藝寶，含 Beyond）是續集且為歌曲碟，不是本卡；(b)《無間道III 終極無間 電影原聲配樂》為第三集；(c) 2006 年 Click Music《無間道 終極電影原聲配樂》三 CD 盒裝（82876-58992-2）與 2022 年 20 週年盒裝（MSCD10/11/12HK）是三集合輯；(d) 2023 年寰亞黑膠（MSLP14HK）與各色彩膠皆為後世復刻。**本卡的 2002 首版在 Discogs 上尚無條目**，本機需以實體或港版通路資料補齊廠牌、編號與確切盤名。；2026-08-29 主線以 MB API 核實：RG 189a203a（Album＋secondary-type Soundtrack、首發 2002、掛陳光榮），其下 release ecee1377 為 2002 年香港 Official、廠牌 Click Music、編號 CM001、13 軌，與本卡曲目規模相符。原本的 mbAbsenceProof 結論寫「該碟未建檔」不成立——失敗原因是用帶後綴的全名「無間道 電影原聲配樂」做精確比對，MB 標題是裸名「無間道」。**廠牌欄可據此填 Click Music（CM001）**，中文維基的「Sony BMG」為誤記（該公司 2004 年才成立）。本機請覆核 secondaryTypes 應為 [\"Soundtrack\"]。",
+    "rgMbid": "189a203a-611b-3258-aeca-b9ab119f131d",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/189a203a-611b-3258-aeca-b9ab119f131d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。查到名單且本作不在裡面：第 22 屆香港電影金像獎（2003）最佳原創電影音樂，陳光榮以《無間道》**入圍未得獎**；同屆得獎的最佳原創電影歌曲〈無間道〉是**伍樂城**作曲的主題曲，不是本碟主體的陳光榮配樂，不能拿來替本卡背書。電影是 2000 年代港片的分水嶺，但那是電影的地位；配樂專輯層級查無跨來源長期樂評共識，且 2002 首版的廠牌與盤名都還沒有一手佐證。依 §3 預設作一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E%E6%9C%80%E4%BD%B3%E5%8E%9F%E5%89%B5%E9%9B%BB%E5%BD%B1%E9%9F%B3%E6%A8%82",
+     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93"
+    ]
+   },
+   "description": {
+    "text": "十三段配樂的曲名全部來自電影台詞，最後一首只叫〈道〉。前面依序經過〈無間〉〈三年又三年〉〈有內鬼，行動取消〉這些句子，十三軌全部掛陳光榮一人，2002 年在香港由 Click Music 發行、編號 CM001。電影同年 12 月 12 日上映，以 5505 萬港幣成為該年香港票房冠軍。陳光榮以本片入圍第 22 屆香港電影金像獎最佳原創電影音樂但未得獎，該獎由譚盾的《英雄》拿下；同屆最佳原創電影歌曲頒給主題曲〈無間道〉，那首是伍樂城作曲、林夕填詞。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/ecee1377-437a-4f17-bae4-710c315907c0",
+     "https://zh.wikipedia.org/zh-hant/%E7%84%A1%E9%96%93%E9%81%93",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC22%E5%B1%86%E9%A6%99%E6%B8%AF%E9%9B%BB%E5%BD%B1%E9%87%91%E5%83%8F%E7%8D%8E",
+     "https://www.discogs.com/release/10700308",
+     "https://musicbrainz.org/release-group/189a203a-611b-3258-aeca-b9ab119f131d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "葉啟田",
+   "album": "愛拚才會贏",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持《愛拚才會贏》（教育部台語推薦用字「拚」，亦為中文維基條目寫法）。**實體盤印的是「愛拼才會贏」（拼）**——1988 年吉馬唱片黑膠 Discogs release 16150834 的標題是《愛拼才會贏／浪子的心情》，串流平台亦多作「愛拼才會贏」。「愛拼才會贏」「愛拼才會贏(浪子的心情)」「浪子的心情」三種寫法全部登記為別名，缺一去重會漏。；**種子提示的「單曲紅了之後的重編輯」確有其事，本卡明確鎖 1988 年吉馬原盤。** 該盤 Discogs 條目標題為《愛拼才會贏／浪子的心情》，維基曲目表第 1 首是〈浪子的心情〉、第 2 首才是〈愛拼才會贏〉——顯示這張原是以〈浪子的心情〉領銜，〈愛拚才會贏〉爆紅後才被改以該曲為主打重新包裝上市，市面因此存在同內容不同封面／不同主標題的多個批次。**卡片鎖 1988 年吉馬那批錄音，不分批次另立卡**；但封面實測時要注意抓到的封面可能是後期重包裝版，須在 manifest 註記。另排除：葉啟田 1990 年代以後的重錄版、大量「愛拚才會贏」同名精選拼盤，以及其他歌手的翻唱盤。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"葉啟田\" AND releasegroup:\"愛拚才會贏\"",
+      "release-group/?query=artist:\"葉啟田\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E8%91%89%E5%95%9F%E7%94%B0",
+     "https://www.discogs.com/release/16150834-%E8%91%89%E5%95%9F%E7%94%B0-%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F-%E6%B5%AA%E5%AD%90%E7%9A%84%E5%BF%83%E6%83%85"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 2 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b273ad440a0310ce3f20c8f0da3e",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 4,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1988 年發行，完全落在《百張最佳專輯》(1975-1993) 的評選範圍內，評審逾 150 人，**名單已查、本張不在其中**，屬「查到了名單而該張不在裡面」而非查不到證據。〈愛拚才會贏〉的極高傳唱度與國民歌曲地位依 §3 明文不構成 hall（「三軸 5 分或 legendary 都不等於頂點卡」）；葉啟田本人亦無金曲獎專輯級得獎紀錄。以一般卡上架。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "作曲人用新台幣 2.5 萬元賣斷的旋律，後來被唱成一句格言。寫詞作曲的陳百潭受吉馬唱片邀請創作，版權就這樣一次買斷，原唱歌手是葉啟田。戒嚴時期這首歌因「拚」字被認為帶有暴力意涵，送新聞局審查未過；解嚴後新聞局取消流行歌曲送審制度，它才得以問世，1988 年 3 月 1 日由吉馬唱片發行。此曲後來廣受台灣各階層、中國大陸與海外華人喜愛，改編版超過十個語言，粵語版《勝志雙手創》由葉振棠主唱。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F",
+     "https://zh.wikipedia.org/zh-tw/%E8%91%89%E5%95%9F%E7%94%B0",
+     "https://www.discogs.com/release/16150834-%E8%91%89%E5%95%9F%E7%94%B0-%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F-%E6%B5%AA%E5%AD%90%E7%9A%84%E5%BF%83%E6%83%85"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "洪榮宏",
+   "album": "行船人的愛",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "種子寫《一支小雨傘》，那是曲名（該盤第 4 首）。這張碟至少有三個並行寫法：《行船人的愛》（中文維基專輯表、Discogs master 2044954）、《洪榮宏台語專輯3 行船人的愛．一支小雨傘》（滾石再版與各串流平台）、《洪榮宏專輯3》（台灣流行音樂 200 大榜單寫法）。依「實體發行品 > 第三方轉述」取 Discogs master 標題《行船人的愛》為卡片正名，其餘三種與〈一支小雨傘〉全部登記為別名。；鎖 1982 年光美唱片原盤。**廠牌是本卡最容易寫錯的一欄**：串流與 Discogs 常直接標「滾石唱片」，那是滾石取得目錄後的代理與再版身分，原始發行是光美文化事業（光美唱片）。排除：滾石購物網在售的《行船人的愛．一支小雨傘》CD 再版（同一張碟的後期商品，不另立卡，但封面與曲序可能異動）、洪榮宏 1990 年代改信基督教後的福音時期重錄版、以及父子（洪一峰．洪榮宏）合輯。〈一支小雨傘〉原曲為橋幸夫〈雨の中の二人〉（利根一郎曲），黃敏填台語詞，翻唱盤與同名歌極多。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"洪榮宏\" AND releasegroup:\"行船人的愛\"",
+      "release-group/?query=artist:\"洪榮宏\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 3 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%B4%AA%E6%A6%AE%E5%AE%8F",
+     "https://www.discogs.com/master/2044954-%E6%B4%AA%E6%A6%AE%E5%AE%8F-%E8%A1%8C%E8%88%B9%E4%BA%BA%E7%9A%84%E6%84%9B-",
+     "https://andyliao1960.pixnet.net/blog/posts/5005175220"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/7b/7b/45/7b7b4587-ae6e-5551-3fc2-436450ecdcbb/KAA611_Cover.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=3 未達 5，依 §3 硬門檻退回一般卡。達 §3 門檻：**入選《台灣流行音樂200最佳專輯》第 99 名**（榜上作「洪榮宏專輯3」，1983），為該回溯型正典名單中僅有的六張台語作品之一，與陳小霞《大腳姐仔》、陳明章《下午的一齣戲》、江蕙《酒後的心聲》同列。這是名單層級的硬證據，非傳唱度或銷量推論。名單＋中文維基專輯表＋Discogs master 三方交叉。",
+    "evidenceUrls": [
+     "https://andyliao1960.pixnet.net/blog/posts/5005175220",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://zh.wikipedia.org/zh-tw/%E6%B4%AA%E6%A6%AE%E5%AE%8F"
+    ]
+   },
+   "description": {
+    "text": "橋幸夫 1966 年唱的電影主題歌，十六年後換成一把台語的小雨傘。日語原曲〈雨の中の二人〉由宮川哲夫作詞、利根一郎作曲，1966 年 1 月 15 日發行，是橋幸夫的第 75 張單曲。接手的洪榮宏 1963 年生於日本東京，臺南鹽水人，5 歲起與父親洪一峰同台演唱，13 歲赴日學習歌唱；1982 年他發行這張專輯，收錄〈一支小雨傘〉。他日後在 1990 年獲金曲獎最佳男演唱人獎，1993 與 1996 年兩度獲最佳方言歌曲男演唱人獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%B4%AA%E6%A6%AE%E5%AE%8F",
+     "https://ja.wikipedia.org/wiki/%E9%9B%A8%E3%81%AE%E4%B8%AD%E3%81%AE%E4%BA%8C%E4%BA%BA",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://zh.wikipedia.org/zh-tw/%E6%B4%AA%E4%B8%80%E5%B3%B0",
+     "https://www.discogs.com/master/2044954-%E6%B4%AA%E6%A6%AE%E5%AE%8F-%E8%A1%8C%E8%88%B9%E4%BA%BA%E7%9A%84%E6%84%9B-",
+     "https://andyliao1960.pixnet.net/blog/posts/5005175220"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/29/50/00/29500044-94df-820e-ce93-39aa0e789090/mzaf_4586683109054552957.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1469170562",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳小雲",
+   "album": "舞女",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持《舞女》，但這是全批**盤名確定性最低**的一張（見 versionNote）：可查到的同期實體是 Discogs release 18329983《舞女的夢》（1985，8 軌卡帶），與《舞女》是不同標題。《舞女的夢》登記為待覆核的候補盤名。；**同曲多版本的極端案例，本卡的版本鎖定只能做到一半，其餘必須本機補。** 1984 年陳小雲與唱片公司無約，同一首〈舞女〉在同一年為三家公司（其一為靈波唱片）分別灌錄，等於一開始就有三個合法並行的錄音；解嚴（1987）前該曲因描寫舞廳酒色被警備總部與新聞局列為禁歌，解嚴後才重見天日，期間又有多次重壓。線上查不到任何一張標題確為《舞女》、可覆核廠牌編號的 1984 年原盤，最接近的實體是 1985 年 8 軌卡帶《舞女的夢》（Discogs 18329983，不同標題）。**裁定：卡片暫鎖 1984 年靈波版錄音，盤名維持《舞女》，並在 handoff 標為必須本機以實體盤覆核的第一順位。** 明確排除：她 1987 年正式加盟吉馬唱片後的作品（含 1986《免失志》與本批另一卡《愛情恰恰》）、以及原唱俞隆華版本。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"陳小雲\" AND releasegroup:\"舞女\"",
+      "release-group/?query=artist:\"陳小雲\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 2 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E5%B0%8F%E9%9B%B2",
+     "https://udn.com/news/story/120910/8765484",
+     "https://www.discogs.com/release/18329983-%E9%99%B3%E5%B0%8F%E9%9B%B2-%E8%88%9E%E5%A5%B3%E7%9A%84%E5%A4%A2"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2735f98eb04477b22f958b39c59",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 81,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1984 年發行，落在《百張最佳專輯》評選範圍內，**名單已查、本張不在其中**。查禁史（警備總部與新聞局列為禁歌、1987 解嚴後解禁）確有中文維基專條與聯合報系報時光專文，但那是社會史／出版審查史的論述，未進入台語流行史的作品正典討論（可對照現池的黑名單工作室《抓狂歌》、林強《向前走》屬新台語歌運動史論核心，本張不在該脈絡）；且百萬銷量依 §3 明文不構成 hall。另本張的原盤身分本身尚未鎖定（1984 年同時為三家公司灌錄），更不宜先給頂點。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "手上沒有合約的那一年，她替三家唱片公司錄了同一首歌。那是 1984 年，其中一家是靈波唱片，〈舞女〉推出後廣受歡迎，陳小雲憑它一炮而紅，自此加盟吉馬唱片成為合約歌星。這首詞曲皆出自俞隆華的歌，因為寫的是台灣酒館與舞廳的夜生活，被戒嚴時期的臺灣警備總司令部與行政院新聞局認定會敗壞社會風氣而遭封禁，同題材的〈可憐酒家女〉〈為著十萬元〉一併被封，直到 1987 年解嚴後，逾千首禁歌才一起解禁。1988 年此曲用作電影《大頭仔》的插曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E5%B0%8F%E9%9B%B2",
+     "https://zh.wikipedia.org/zh-tw/%E8%88%9E%E5%A5%B3_(%E6%AD%8C%E6%9B%B2)",
+     "https://udn.com/news/story/120910/8765484",
+     "https://www.discogs.com/release/18329983-%E9%99%B3%E5%B0%8F%E9%9B%B2-%E8%88%9E%E5%A5%B3%E7%9A%84%E5%A4%A2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/bd/be/fcbdbec3-b72f-a905-786f-2acc6d44ec4b/mzaf_5471798514286246276.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1831421887",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳小雲",
+   "album": "愛情恰恰",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。串流上另有《陳小雲 愛情恰恰（台語暢銷輯）》這種加副標的上架寫法，登記為別名。；鎖 1992 年吉馬唱片原盤（Discogs master 2084875）。排除：(一) 同名精選拼盤與「台語暢銷輯」等後期上架版；(二) 1993 年《苦戀夢》——與本作同為金曲得獎作、常被一起包裝販售，是不同碟不可合併；(三) 1999 年她退出歌壇前在雷根唱片的末期作品。她的廠牌軌跡為吉馬（1984–1993）→ 上揚（1994）→ 雷根（1999），比對時廠牌可作為分期依據。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "d4696404-2e8d-41d3-8098-c35fa5256cd5",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d4696404-2e8d-41d3-8098-c35fa5256cd5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1992 年發行，落在《百張最佳專輯》評選範圍內，**名單已查、本張不在其中**。第 4 屆金曲獎最佳方言女演唱人是**演唱人獎（藝人層級）不是專輯獎**，依 §3 不足以構成 hall；首位以舞曲得獎與首位連霸的紀錄屬獎項史趣聞，非作品正典論述。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "電子節奏機打出來的恰恰，連著兩屆搬走同一座金曲獎。陳小雲 1958 年生於臺中，1984 年以〈舞女〉一炮而紅後加盟吉馬唱片成為合約歌星；1992 年她推出這張專輯，並以它在同年 11 月 21 日舉行的第 4 屆金曲獎拿下最佳方言歌曲女演唱人獎。翌年她再以另一張《苦戀夢》，在 1993 年 11 月 20 日舉行的第 5 屆金曲獎奪得同一個獎項。1999 年她推出由雷群將唱片發行的《愛卡慘死》，是她迄今最後一張專輯，其後正式退隱。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E5%B0%8F%E9%9B%B2",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://musicbrainz.org/release-group/d4696404-2e8d-41d3-8098-c35fa5256cd5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b0/22/1b/b0221b3f-517e-9811-0714-70f513fbbe21/mzaf_4993310758338908519.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1513136604",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "江蕙",
+   "album": "酒後的心聲",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。；鎖 1992 年點將唱片首發盤。**種子提示的「《酒後的心聲》系列有續作同名混淆」，經查中文維基完整作品表後可以澄清：江蕙並無《酒後的心聲 2》之類的續作**，容易混淆的其實是同為點將時期、酒字系列的《苦酒的探戈》(1994-03-21) 與《悲情歌聲》(1994-12-22)，以及後續的《感情放一邊》(1993-05-06)，四張都是點將時期、封面風格相近，不可互相吸收。另排除：Apple Music 上的《酒後的心聲 (Remastered)》(2018) 與博客來在售的 NEW XRCD 版——同一錄音的後期母帶處理再版，不另立卡但封面不同。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "16993743-cf1a-4591-aa14-84d471b2b882",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16993743-cf1a-4591-aa14-84d471b2b882/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 303,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=3 未達 5，依 §3 硬門檻退回一般卡。達 §3 門檻，本批證據最完整的一張：**入選《台灣流行音樂200最佳專輯》第 28 名**（回溯型正典名單），**並獲第 5 屆金曲獎最佳演唱專輯獎（得獎，且是專輯層級獎項而非演唱人獎）**。兩項硬證據之外另有其「以國語專輯製作規格重寫台語盤標準」的長期媒體與樂評論述，以及台灣官方銷量紀錄中唯一破百萬張台語專輯的地位（銷量僅為佐證、不作為判準）。名單＋專輯級金曲得獎＋長期論述三方交叉。",
+    "evidenceUrls": [
+     "https://andyliao1960.pixnet.net/blog/posts/5005175220",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://www.fountmedia.io/topic_article/73221"
+    ]
+   },
+   "description": {
+    "text": "官方銷量破百萬張的台語專輯，到今天還是只有這一張。《酒後的心聲》1992 年 10 月 2 日由點將唱片發行，是江蕙從揚聲唱片轉入點將後的第一張；點將為它集合了當時國語歌壇數一數二的製作班底，何慶清領軍、羅文聰擔任執行製作，休養兩年的她不再扮演苦情女，歌路轉為溫暖明亮。臺灣銷量 116 萬張，兩岸三地累計賣破 300 萬張；1993 年 11 月 20 日舉行的第 5 屆金曲獎，她以本作獲最佳演唱專輯獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99",
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://www.thenewslens.com/article/39162",
+     "https://musicbrainz.org/release-group/16993743-cf1a-4591-aa14-84d471b2b882"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/f2/38/f3f2383a-1902-d3fe-7504-198216a6c700/mzaf_7522464686175766431.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "908194976",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "江蕙",
+   "album": "半醉半清醒",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。串流另有《半醉半清醒（原版）》的上架寫法（用以與後期重製區隔），登記為別名。；鎖 1999 年 1 月大信唱片首發盤（DSC9901）。排除：Apple Music 上的《半醉半清醒(原版)》(2020 上架) 這類後期數位重製；以及大信時期其餘三張《我愛過》(2000-01)、《台灣紅歌》(2000-11)、《江蕙同名專輯》(2001-06)——尤其《江蕙同名專輯》是種子年份誤植的可能來源，去重時要分清。〈落雨聲〉是周杰倫作曲、方文山作詞，兩人成名前賣出的第一首知名作品；該曲另有 2009《初登場》演唱會版因版權問題無法收錄的插曲，演唱會版不另立卡。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "d26f7422-a227-36a5-afc0-61315c632a99",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d26f7422-a227-36a5-afc0-61315c632a99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 377,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1999 年發行，落在《200最佳專輯》1993-2005 段的評選範圍內，**名單已查、本張不在其中**。〈落雨聲〉的傳唱度與周杰倫／方文山成名前首作的掌故屬單曲層級趣聞，依 §3 不構成 hall；本張亦無專輯級金曲得獎。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "周杰倫與方文山賣出的第一首知名作品，是一首台語歌。那首歌是〈落雨聲〉，周杰倫作曲、方文山作詞，收在江蕙 1999 年 1 月由大信唱片發行的這張專輯裡，也是她大信時期的第一張。此曲在 KTV 的點播紀錄超過 500 萬次，除臺灣外也廣受新加坡、馬來西亞等地的閩南語社群歡迎，並曾用作電影《白鷺鷥的願望》的配樂。2009 年她辦《初登場》演唱會時，因版權人不願鬆手，這首歌未能收進去。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-tw/%E8%90%BD%E9%9B%A8%E8%81%B2",
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99",
+     "https://musicbrainz.org/release-group/d26f7422-a227-36a5-afc0-61315c632a99"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/ca/f9/f0caf998-ea58-7336-e695-f40e104b824a/mzaf_5343438290523091189.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1524231107",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "江蕙",
+   "album": "紅線",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。；鎖 2002 年 12 月亞律音樂首發盤。排除：亞律／阿爾發時期其餘各張，尤其《風吹的願望》(2003-11) 與《愛著啊》(2004-12)——後者正是種子年份誤植的可能來源。另注意 2009 年《初登場》演唱會 DVD 因〈落雨聲〉版權未談成而改收〈紅線〉，那是現場版，不另立卡。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "e65c764a-5a56-3d94-9c90-71086314bbad",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e65c764a-5a56-3d94-9c90-71086314bbad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 662,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 2002 年發行，落在《200最佳專輯》1993-2005 段的評選範圍內，**名單已查、本張不在其中**。第 14 屆金曲獎最佳台語女演唱人是**演唱人獎（藝人層級）不是專輯獎**，依 §3 不足以構成 hall。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第四家唱片公司的第一張，交出來就是連續第四座金曲獎。江蕙的唱片公司軌跡依序是揚聲、點將、大信與亞律音樂，《紅線》2002 年 12 月由亞律音樂發行，是她亞律時期的第一張專輯。她以本作獲最佳台語女演唱人獎，那一屆第 14 屆金曲獎因 SARS 疫情延期，改在 2003 年 8 月 2 日舉行；連同第 11、12、13 屆，她已是連續四屆拿下這個台語女歌手獎項。亞律時期後續的《風吹的願望》與《愛著啊》則是另外兩張碟。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-tw/%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E6%B1%9F%E8%95%99",
+     "https://musicbrainz.org/release-group/e65c764a-5a56-3d94-9c90-71086314bbad"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/36/51/83/365183e2-a1fb-b63d-d4c6-25f0162258dd/mzaf_5424796243575525034.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1444575647",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鳳飛飛",
+   "album": "想要彈同調",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。**但必須與 1997 年 6 月同廠牌的《想要彈同調精選輯》嚴格區分**（後者是本張發行五年後推出的精選再包裝，另有華納在售的《想要彈同調 最精選》典藏雙黑膠），三者同名而不同碟，全部登記為必須排除的別名。；鎖 1992 年 8 月 25 日科藝百代原盤。**本卡的同名陷阱是全批最典型的一組**：(一) 1997 年 6 月科藝百代《想要彈同調精選輯》——同廠牌、同名、五年後的精選再包裝，是第二張碟；(二) 華納音樂在售的《想要彈同調 最精選》典藏雙黑膠——第三種商品；(三) 博客來在售的《【想要彈同調】最精選》。三者皆不可與本卡合併，補卡腳本也不可當作再版自動吸收。另注意標題曲〈想要彈同調〉的曲源是鄧雨賢 1934 年與陳君玉合作、原名〈單思調〉的作品，簡介寫作時不可把 1934 年當成本專輯年份。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "d62c87ea-e4b6-4e69-8dac-a1c5657160b3",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2733ec4b2ec426911bf1f3fa19b",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1992 年發行，落在《百張最佳專輯》評選範圍內，**名單已查、本張不在其中**（同期入榜的台語作品是陳小霞《大腳姐仔》#16 與江蕙《酒後的心聲》#28）。〈心肝寶貝〉的傳唱度屬單曲層級；本張未獲任何專輯級獎項；加以語種歸屬尚待本機逐曲確認，更不宜先給頂點。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鄧雨賢 1934 年寫的曲子，周添旺重填詞改了名，六十年後成了盤名。原作〈單思調〉的詞出自鄧雨賢本人，他 1933 年經陳君玉邀請進古倫美亞唱片任專職作曲，在該公司發表至少 85 首唱片流行歌，代表作是並稱「四月望雨」的四首。這張台語民謠創作專輯 1992 年由科藝百代發行，是鳳飛飛加盟該公司的第一張、個人的第 72 張，製作人為何慶清與羅大佑；碟中〈心肝寶貝〉由李坤城與羅大佑作詞、羅大佑作曲，鳳飛飛唱的是重唱版。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%B3%B3%E9%A3%9B%E9%A3%9B%E9%9F%B3%E6%A8%82%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8",
+     "https://zh.wikipedia.org/zh-tw/%E6%83%B3%E8%A6%81%E5%BD%88%E5%90%8C%E8%AA%BF",
+     "https://zh.wikipedia.org/zh-tw/%E9%84%A7%E9%9B%A8%E8%B3%A2",
+     "https://musicbrainz.org/release-group/d62c87ea-e4b6-4e69-8dac-a1c5657160b3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伍佰 & China Blue",
+   "album": "雙面人",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法，與伍佰官方網站作品年表一致。；鎖 2005 年 1 月 7 日愛貝克思原盤（AVCCD90060，MusicBrainz release 08360d3a、Discogs release 15723951 皆有著錄）。**這是伍佰的第二張全台語創作專輯**，前有 1998《樹枝孤鳥》、後有 2016《釘子花》，三張構成台語三部曲。去重確認：現池已有《愛情的盡頭》《樹枝孤鳥》《白鴿》《浪人情歌》四張，本卡不重複。排除：同期的《淚橋》(2003, AVCCD90045，國語)、以及 25 週年紀念性重製與現場版。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "609df1ac-2e6c-3df5-afba-a7e06c3a7b08",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/609df1ac-2e6c-3df5-afba-a7e06c3a7b08/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 122,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 2005 年發行，落在《200最佳專輯》1993-2005 段的評選範圍內（該段收了伍佰的作品，但不是本張），**名單已查、本張不在其中**。金曲獎最佳台語男演唱人是**演唱人獎（藝人層級）不是專輯獎**。伍佰台語線進入正典討論的是 1998《樹枝孤鳥》，現池已收。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "台語三部曲的中間那張，交給十三年沒換過人的同一支樂隊。伍佰 & China Blue 自 1992 年成軍以來，主唱兼主音吉他手伍佰、團長朱劍輝、鍵盤手余紀墉與鼓手 Dino Zavolta 四人從未更換。《雙面人》2005 年 1 月 7 日由愛貝克思發行，伍佰以它拿下 2006 年第 17 屆金曲獎最佳台語男演唱人獎。三部曲的首張《樹枝孤鳥》1998 年由滾石發行，獲第 10 屆最佳演唱專輯獎；第三張《釘子花》2016 年由環球發行，獲第 28 屆最佳台語專輯獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E4%BC%8D%E4%BD%B0",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://musicbrainz.org/release-group/609df1ac-2e6c-3df5-afba-a7e06c3a7b08"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伍佰 & China Blue",
+   "album": "釘子花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法，與伍佰官方網站作品年表一致。；鎖 2016 年 12 月 28 日正式發行版。**排除 2016 年 12 月 13 日的「預購版」**——博客來同時掛《釘子花 預購版 (CD)》(0020195949) 與《釘子花 (CD)》(0020196197) 兩個商品編號，是同一張碟的兩個銷售批次，附加物不同、**不另立卡**，但封面實測時可能抓到預購版的特殊包裝，須在 manifest 註記取的是哪一版。這是伍佰的第三張全台語創作專輯，距《雙面人》近十二年；全 11 首以釘子花為第一人稱演唱、用了 Afrobeat 元素。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "5053ce87-3b52-42c0-9882-2b76a29f73ed",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5053ce87-3b52-42c0-9882-2b76a29f73ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 62,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。本張 2016 年發行，晚於現有回溯型名單的評選範圍，且發行僅十年、尚未累積長期樂評共識；查無任何名單、史論或典藏論述以本張為對象，亦無專輯級獎項。概念專輯的藝術野心依 §3 不等於頂點資格。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一首歌全由一朵花以第一人稱唱出。伍佰小時候把台語的 ting-á-hue 聽成「釘子花」，寫這張專輯前幾年才發現正字是「燈仔花」，也就是朱槿；歌詞幾乎全採教育部頒定的台灣閩南語常用漢字，由他親自逐字查線上字典校對。專輯 2016 年 12 月 28 日由環球唱片發行，是伍佰 & China Blue 的第三張全台語創作專輯，編曲裡放進 Afrobeat 的節奏元素。第 28 屆金曲獎頒給它最佳台語專輯獎，同屆的年度專輯獎、最佳台語男歌手獎與〈蹦孔〉的年度歌曲獎則都只入圍。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/釘子花",
+     "https://musicbrainz.org/release-group/5053ce87-3b52-42c0-9882-2b76a29f73ed"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/04/3a/c3/043ac383-e734-5339-824e-8537871d40bf/mzaf_12037244428131161317.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443156439",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "龍千玉",
+   "album": "鄉愁",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**這是替換卡，不是種子原卡。** 種子開的是《傷心的所在》(1994)，但中文維基〈龍千玉〉的完整目錄裡沒有這張——她 1993 年的是《傷痕》、1994 年的是《鄉愁》（皆豪記唱片）；**《傷心的所在》實際是江蕙 1986 年 8 月田園唱片的專輯**，種子極可能是把江蕙的盤名安到龍千玉頭上（已列 skipped）。卡片改掛她 1994 年確有其物的《鄉愁》，並請主線確認是否採用本替換。；鎖 1994 年豪記唱片《鄉愁》。她的豪記時期目錄密集且盤名多為兩字情緒詞，去重風險高：1993《傷痕》、1994《鄉愁》、1995《細挑輯》與《精選輯》、1996《追情》——**《精選輯》是 Compilation，若日後補要走 §5.6**。另排除：她 1987 年改名龍千玉後的首張台語專輯《不如甭熟悉》（另一張碟，若店主要收她的代表作應考慮這張）、以及豪記官方 YouTube 頻道近年重製的 MV 版。她 1993 年曾以《愛你無惜代價》入圍第 5 屆金曲獎最佳方言女演唱人。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"龍千玉\" AND releasegroup:\"鄉愁\"",
+      "release-group/?query=artist:\"龍千玉\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 1 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E9%BE%8D%E5%8D%83%E7%8E%89",
+     "https://www.discogs.com/artist/6421873-%E9%BE%8D%E5%8D%83%E7%8E%89"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 2 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2738793ec5252060f063cc6b60d",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1994 年發行，落在《200最佳專輯》1993-2005 段的評選範圍內，**名單已查、本張不在其中**。龍千玉的金曲紀錄是 1993 年以《愛你無惜代價》**入圍**第 5 屆最佳方言女演唱人（入圍非得獎，且非本張），查無任何以本張為對象的樂評或典藏論述。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1990 年代台語唱片的曝光戰場，在中午十二點。台視綜藝節目《天天開心》自 1991 年初把片頭開放給唱片公司打歌，改播各家台語歌手當時的最新主打歌第一段，成了那十年爭取曝光的固定管道。龍千玉這張 1994 年由豪記唱片發行的《鄉愁》，同名曲正是該節目的片頭曲，〈紅塵〉則是《乳母》的主題曲，全碟 14 軌並附這兩首的卡拉版。豪記 1988 年由吳東龍創辦，專發台語流行唱片，在吉馬唱片退出市場後成為業界最大的一家。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/龍千玉",
+     "https://zh.wikipedia.org/wiki/天天開心",
+     "https://zh.wikipedia.org/wiki/豪記唱片",
+     "https://zh.wikipedia.org/zh-tw/%E9%BE%8D%E5%8D%83%E7%8E%89",
+     "https://www.discogs.com/artist/6421873-%E9%BE%8D%E5%8D%83%E7%8E%89"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳雷",
+   "album": "歡喜就好",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持種子寫法。；鎖 1994 年 6 月龍吟／金圓首發盤（Discogs master 2034751）。**兩家廠牌並列不是錯誤**——該盤由兩家共同發行，manifest 兩者都要登記，只填其一日後會對不上。排除：陳雷 2000 年代以後在華特國際音樂、乾坤影視等廠牌的重錄版與精選拼盤（他 1988 年出道至今三十餘張，同曲重錄極多）；另注意他早期藝名為「陳朝雄」，去重時要一併登記。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "7643c7e9-a7ae-4917-b07a-0b4bcb495bb0",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7643c7e9-a7ae-4917-b07a-0b4bcb495bb0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 399,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻，判一般卡。已實查《台灣流行音樂百張最佳專輯》(1975-1993) 與《台灣流行音樂200最佳專輯》兩份回溯型正典名單，本張**不在榜上**（該時期的台語入榜者為 沈文程《心事誰人知》#81、洪榮宏 洪榮宏專輯3 #99、江蕙《酒後的心聲》#28、陳小霞《大腳姐仔》#16、陳明章《下午的一齣戲》#36、陳芬蘭《楊三郎紀念專輯》#49）。 本張 1994 年發行，落在《200最佳專輯》1993-2005 段的評選範圍內，**名單已查、本張不在其中**。百萬銷量與「兩岸十大閩南語經典歌曲」的入選依 §3 明文不構成 hall（銷量與傳唱度非判準，且後者是歌曲票選非專輯正典論述）；本張無任何專輯級獎項。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "帽子眼鏡短褲白長襪，這身打扮賣了一百萬張。陳雷本名陳武雄，1963 年生於彰化縣大城鄉，國中畢業就出社會，早年當過空調風管工人，1988 年被愛莉亞唱片董事長蔡振南發掘，以藝名陳昭雄發行首張台語專輯《免悲哀》；1991 年金圓唱片再度發掘他，那身造型加上鄉村草根性與台灣國語，讓他成為家喻戶曉的歌星。《歡喜就好》1994 年 6 月由龍吟唱片與金圓唱片發行，2022 年 4 月同名曲又在抖音爆紅，距原盤已近二十八年。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/陳雷_(歌手)",
+     "https://musicbrainz.org/release/a9d3342c-abd2-4b7e-8d03-9da7307f8be7",
+     "https://musicbrainz.org/release-group/7643c7e9-a7ae-4917-b07a-0b4bcb495bb0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/f7/27/2ff727f7-103f-96e4-6a0f-1e542edc1343/mzaf_10196151747537494668.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1580892100",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "關淑怡",
+   "album": "冬戀",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 1989 年寶麗金原盤（黑膠／卡帶／CD 同步推出，10 曲、41:05）。市面另有 2007 環球「復黑王」再版與 2019 SACD／『冬戀 (Remastered 2019)』數位版，兩者皆為後期再版、非新錄音，不採用。非新曲＋精選，全碟為當時新錄（多首改編自德、日等地原曲）。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "e205975d-4c22-4514-a458-b28d24df212c",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e205975d-4c22-4514-a458-b28d24df212c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 108,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中關淑怡入選的是 1990 年的《夜迷宮》。《冬戀》查得的佐證止於出道金唱片銷量與新人定位，屬當年度商業成績，未見跨來源、長期地把它論述為粵語流行史核心作品，未達 §3 的跨來源長期共識門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "出道碟的兩首主打，原曲來自同一個人。那人是德國歌手 Nicole：第一主打快歌〈叛逆漢子〉改編自她的《Andy》，潘源良填詞、盧東尼編曲，一推出就讓媒體注意到關淑怡這個新人；同名曲〈冬戀〉則改編自她的《Lass Mich Einfach Geh'n》，簡寧填詞、杜自持編曲。這張首張個人粵語大碟 1989 年 3 月 1 日由寶麗金發行，收 10 曲、41 分 05 秒，1988 年 9 月至 1989 年 1 月錄音，監製葉廣權，以新人身分取得金唱片銷量。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/冬戀",
+     "https://musicbrainz.org/release/add7495d-346c-4225-8b51-78534371476e",
+     "https://musicbrainz.org/release-group/e205975d-4c22-4514-a458-b28d24df212c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e2/e8/2a/e2e82af4-955b-35fb-ac2b-50a9f2a01f6e/mzaf_9356702418913762749.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1488064295",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "盧冠廷",
+   "album": "1989",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "卡單寫的《世事何曾是絕對》是歌名不是專輯正題：該曲為電影《1／2 段情》主題曲，收在 1985 年的《第一階段作曲、演譯、精品集》，本身是精選性質，且與卡單標的 1989 年不符。盧冠廷 1989 年的正規大碟正題為《1989》，故改寫。；鎖定 1989 年 EMI 原盤。此碟因六四題材長期絕版，直到 2013 年才隨「百代珍藏套裝」重見天日；該套裝為再版合輯，不採用。全碟為盧冠廷新作（受泰迪羅賓、吳宇森之邀而寫的整張民主題材概念碟），非精選、非新曲＋精選。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "579497a7-103f-4345-a802-228903903464",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/25/8d/0d/258d0d3b-47f8-9494-c7fb-c23ff3590853/20UMGIM47668.rgb.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 55,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。進入兩份回溯型正典名單：蘋果日報「香港必聽 50 經典唱片」第 11 位，以及馮禮慈 2008 年於《明報周刊》「香港樂壇 40 年：40 張經典唱片」專題的入選碟；評論界並長期與達明一派《神經》並列為六四後最完整的兩張概念大碟。屬跨來源、跨年份的長期共識，非單年度工業獎或銷量。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://zh.wikipedia.org/wiki/1989_(%E7%9B%A7%E5%86%A0%E5%BB%B7%E5%B0%88%E8%BC%AF)",
+     "https://comebacktolove.blogspot.com/2015/08/1989-1989.html"
+    ]
+   },
+   "description": {
+    "text": "一張碟因為題材，在再版名單上缺席了二十四年。1989 年 5 月盧冠廷為支聯會寫下聲援中國民運的〈為自由〉，泰迪羅賓與徐克接著建議參與演唱的歌手推出民運題材的專輯，那一年只有這張《1989》以整張專輯的形式面世，同年 11 月 23 日由百代唱片發行，是他的第七張粵語大碟，主打歌為〈漆黑將不再面對〉。全碟作曲由他一人包辦，並指定 Roel A. Garcia 編曲。此碟長期絕跡於再版之列，直到 2013 年的《百代珍藏套裝》才重新面世。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/1989_(盧冠廷專輯)",
+     "https://musicbrainz.org/release/23580231-88d6-4a9e-99ae-b71d12dc9026",
+     "https://musicbrainz.org/release-group/579497a7-103f-4345-a802-228903903464"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/3a/82/d8/3a82d825-b363-851e-8dad-0eaf57163ca0/mzaf_16319563451252433637.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1524437078",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "太極",
+   "album": "迷",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "太極沒有任何一張唱片正題叫《太極 II》；卡單的「II」應是指第二張大碟。中文維基《迷 (太極樂隊專輯)》明載此為太極第二張粵語專輯，故正題改寫為《迷》。掛名依發行品用「太極」（Taichi），非條目名「太極樂隊」。；鎖定 1986 年新藝寶原盤（曲序：吶喊(序)／迷途／Celia／緣／控訴／犧牲多一次／2030／冷血人／計時炸彈／So Lonely／吶喊）。市面流通的《復黑王：迷》為環球後期復刻 CD，封面與母帶皆非原盤，不採用。與 1986 年 1 月的《紅色跑車》為不同碟，務必勿混。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "de3f4355-3f41-48d6-8ee2-8671d8ed4bc5",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de3f4355-3f41-48d6-8ee2-8671d8ed4bc5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 26,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=3 未達 5，依 §3 硬門檻退回一般卡。入選蘋果日報「香港必聽 50 經典唱片」第 45 位（五人樂評團評選，豆列版可交叉對照）。太極是香港樂隊潮三大之一，此碟長期被當作該潮流的核心文獻而非單純的暢銷品。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "同一聲吶喊被拆成兩半，擺在整張碟的頭和尾。《迷》1986 年 9 月 26 日發行，是太極樂隊的第二張粵語大碟，同年 6 月錄音，新藝寶推出的原盤共 11 軌，歌詞主要由因葵包辦，作曲以雷有曜、雷有輝兄弟為主。樂隊 1984 年 10 月 15 日成立，原本只有 4 位成員，後來與 Trinity 樂隊合併成 7 人編制，實際的編曲人是鄧建明與唐奕聰。1986 年度第九屆十大中文金曲頒給太極最有前途新人獎金獎，同年度無綫十大勁歌金曲也把最佳樂隊組合頒給他們。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/迷_(太極樂隊專輯)",
+     "https://musicbrainz.org/release/64b3394b-1138-464e-be65-c53143f6ff6d",
+     "https://zh.wikipedia.org/wiki/太極樂隊",
+     "https://musicbrainz.org/release-group/de3f4355-3f41-48d6-8ee2-8671d8ed4bc5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/0d/ba/d60dbae2-250c-cefc-daee-c20a6865d5dc/mzaf_15994328101805260533.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443339360",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "草蜢",
+   "album": "Grasshopper III",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "唱片正題為拉丁寫法《Grasshopper III》（首張《Grasshopper》、第二張《烈火快車》、第三張《Grasshopper III》），卡單的「草蜢 III」為中文俗稱。依 §0.5「看正式發行品掛名」原則採用官方拉丁正題；藝人掛名維持中文「草蜢」。；鎖定 1989 年寶麗金原盤（曲序：ABC／邦女郎／過眼雲煙／今晚停了電／歲月燃燒／也許跟你變一雙／愛情來了／Reiko／紅唇的吻／黃昏都市人）。同期的《Grasshopper The Best》（1990）是精選、《Grasshopper》（1990-12，副題「物質女郎」）是另一張碟，三者名稱相近極易誤鎖。此張為正規錄音室大碟，非新曲＋精選。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "57362c10-ca7a-439c-b3ae-42ae2acdaa28",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/7c/65/21/7c6521c4-2637-604e-000c-81f300f1991d/00602527101859.rgb.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 56,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=3 未達 5，依 §3 硬門檻退回一般卡。入選蘋果日報「香港必聽 50 經典唱片」第 29 位（名單作「草蜢《Grasshopper 3》」，豆列版作「GRASSHOPPER III」，兩處標註的年份分別為 1988／2006，應為轉錄時帶入的再版年，碟名指涉無歧義）。此碟被樂評團當作粵語 dance-pop 的代表文獻，而非僅以銷量入選。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "新秀大賽決賽落敗，評判席上的梅艷芳把他們挑去當舞伴。三人當時還叫草蜢仔，1986 年正式簽約、由梅艷芳出任經理人，1987 年簽進香港寶麗金，1988 年出完第一張粵語專輯後才正名草蜢。這張 1989 年 6 月 21 日由 Philips 發行的 10 軌大碟，三首派台歌全是改編曲：〈紅唇的吻〉出自中森明菜的〈Heartbreak〉，登上香港電台中文歌曲龍虎榜與無綫勁歌金榜雙冠；〈歲月燃燒〉則出自 Laura Allan 的《Slip And Slide》。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/草蜢_(組合)",
+     "https://musicbrainz.org/release/6c97652e-cf0d-4730-9290-2ee9c23997a0",
+     "https://musicbrainz.org/release-group/57362c10-ca7a-439c-b3ae-42ae2acdaa28"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/89/bc/cc/89bccc62-8653-6831-7bfb-a60a4fc917b3/mzaf_10399080565772839509.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442519790",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "楊千嬅",
+   "album": "Single",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 2005 年金牌娛樂原盤（12 曲）。同期另有加送 AVCD（收電影《千杯不醉》主題曲與五首 MV）的特別版，屬同一發行的加料版本，不另立卡。專輯名 Single 指「單身」主題而非單曲唱碟——這是本張最大的誤判點，releaseType 必須是 Album 而非 Single。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "9360b9cd-39ac-4732-8872-4a76aa1089d6",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/01/85/7c/01857ce9-2fa9-644b-9c5d-f72ba7698edc/dj.ibzmuooy.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2983,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單 2000 年代入選的是 Twins《愛情當入樽》(2001) 與陳奕迅《The Line-Up》(2002)，無楊千嬅作品。《Single》查得的佐證是四台冠軍歌、四台歌曲獎與當年十大暢銷唱片，屬單年度工業成績，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "拿齊四台歌曲獎項的女歌手，2005 年只有她一個。《Single》2005 年 4 月 22 日由金牌娛樂發行，收 12 曲、47 分 46 秒，碟名指的是單身。第一主打〈長信不如短訊〉在商台 903 專業推介、香港電台中文歌曲龍虎榜、新城勁爆本地榜與無綫勁歌金榜同時登頂，是楊千嬅該年首支四台冠軍歌；第二主打、百威廣告歌〈烈女〉再讓她第四度在同年奪得四台歌曲獎項，得獎包括十大勁歌金曲與十大中文金曲的金曲獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/Single_(專輯)",
+     "https://musicbrainz.org/release/f45a986c-419e-423b-b257-11010f621267",
+     "https://musicbrainz.org/release-group/9360b9cd-39ac-4732-8872-4a76aa1089d6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/20/ac/1e20ac22-15c1-1bbb-2477-56141db7b91a/mzaf_13935472151274251821.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "905173853",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "容祖兒",
+   "album": "我的驕傲",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "版本判定：坊間常把這張 20 軌的碟當成新曲＋精選，實際逐軌核對後為正規錄音室大碟——20 軌中有 6 軌是串場（Geminian Theme／Joey's Clock／Some Time／Meows Greeting／Clubbin'／Lesson One），實際歌曲 14 首，包含〈習慣失戀〉〈神魂顛倒〉〈心淡〉〈我的驕傲〉〈他都不愛我〉及國語版〈揮著翅膀的女孩〉，並非舊曲重新包裝，故判 Album。另有 SACD 版屬後期再版，鎖定 2003 CD 原盤。；MB 命中 2 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "45dd9aed-2575-3b64-90a6-fd8338eb1d62",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/45dd9aed-2575-3b64-90a6-fd8338eb1d62/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3935,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單無容祖兒作品。《我的驕傲》查得的佐證是 2003 年 IFPI 十大銷量廣東唱片與十大勁歌金曲、新城勁爆，全為銷量榜與單年度工業獎，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "唱這首歌的人，是地產商用民意調查選出來的。〈我的驕傲〉由陳光榮作曲、黃偉文填詞，改編自西九龍泓景臺的地產廣告主題曲；廣告第一個版本用的是馮曦妤主唱的《Proud of You》，第二個版本才由容祖兒唱國語版，派台的粵語版〈我的驕傲〉本身從未在廣告裡出現過。專輯 2003 年 3 月 25 日由英皇娛樂發行，歌曲之間夾了多段過場音樂與獨白短句，如 Joey's Clock 與 Lesson One。此曲是四台冠軍歌，並拿下該年度十大勁歌金曲金獎與十大中文金曲的全球華人至尊金曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/我的驕傲_(容祖兒專輯)",
+     "https://musicbrainz.org/release/035d5af7-4364-4429-82f0-6438c86409ee",
+     "https://musicbrainz.org/release-group/45dd9aed-2575-3b64-90a6-fd8338eb1d62"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "李克勤",
+   "album": "紅日",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "查證後確認《紅日》既是主打歌名也是專輯正題，卡單無誤，不改寫。；鎖定 1992 年寶麗金原盤（11 曲，含〈紅日〉與周慧敏合唱的〈萬千寵愛在一身〉）。此碟為正規錄音室大碟，非新曲＋精選；後續有環球復黑王等 CD 再版（封面與母帶不同），不採用。；MB 命中 2 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "2492e790-3718-415e-b7ec-ef181fb9e61d",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2492e790-3718-415e-b7ec-ef181fb9e61d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1385,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單無李克勤任何作品。〈紅日〉單曲的傳唱度確屬跨世代，但那是曲目層級；專輯《紅日》查不到任何把它當成粵語流行史核心唱片的回溯論述，單曲經典不等於專輯頂點，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "三十年來的勵志標準曲，發行那年一個獎都沒拿到。〈紅日〉是無綫電視劇《他來自天堂》的主題曲，李克勤親自填詞、方樹樑編曲，原曲是日本大事MANブラザーズバンド的〈それが大事〉；它在同年度的三大頒獎禮全部落空，卻一路被當成勵志代表傳唱下來，2013 年的中國電影《致青春》仍引用此曲。專輯 1992 年 10 月 13 日由 Philips 發行，收 11 首，黃祖輝監製，是李克勤在寶麗金時期的最後一張大碟，其後他轉投星光唱片。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/紅日_(專輯)",
+     "https://musicbrainz.org/release/5d1b9b41-3882-40f7-aa13-ca4f6eb69d45",
+     "https://musicbrainz.org/release-group/2492e790-3718-415e-b7ec-ef181fb9e61d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "黃耀明",
+   "album": "信望愛",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 1992 年滾石原盤。此碟為正規錄音室大碟、非精選；黃耀明個人線的後續為《借借你的愛》（1993 滾石）與《明明不是天使》（1994 滾石），三張常在再版套裝中被合併發行，不得誤鎖。注意：中文維基「信望愛」條目是神學詞條（三超德），不是這張唱片，查證時勿引錯。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "03db9b14-24a8-4093-9e10-fae4976490c7",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03db9b14-24a8-4093-9e10-fae4976490c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 215,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單收有達明一派《石頭記》與劉以達《麻木》，但無黃耀明個人作品。《信望愛》連獨立條目都沒有，可得佐證僅 Discogs 發行資料；黃耀明個人線被較常論述的是《愈夜愈美麗》與《人山人海》。未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "達明一派拆夥後的第一張個人碟，只有商台 903 上過榜。1990 年首次演唱會之後，黃耀明與劉以達宣布拆夥，1991 年 1 月轉為個人發展並簽進音樂工廠，1992 年 1 月 23 日交出這張 10 曲的大碟，編號 MFCR 9201 2。〈淫紅塵〉1991 年在商台 903 專業推介最高到第 5，〈過日辰〉與〈你真偉大〉隔年分別到第 7 與第 8，四台之中只有 903 留下上榜紀錄。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/黃耀明",
+     "https://musicbrainz.org/release/2d13c775-be49-4a99-8a64-7e12f9171f9c",
+     "https://musicbrainz.org/release-group/03db9b14-24a8-4093-9e10-fae4976490c7"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "彭羚",
+   "album": "如夢初醒",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "卡單的《讓我跟你走》是歌名不是專輯正題。該曲的正題唱片是 1994-07-28 的《未完的小說》，而那張是新曲加精選（3 首新歌＋8 首舊曲），正落在粵語盤最常見的陷阱上；為避免以精選當正規專輯入池，改鎖她 1995 年的正規錄音室大碟《如夢初醒》。；鎖定 1995-01-19 百代原盤。務必與同年 11 月的《窗外》、1994 年的新曲＋精選《未完的小說》、1996 年的混合精選《完全因你》分清——後兩者皆非正規大碟。此碟主打〈如夢初醒〉〈等得太久〉〈喜歡最喜歡你〉，全為新錄。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "87b31a8b-c245-4081-b96b-d2ce7b64bc5e",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/87b31a8b-c245-4081-b96b-d2ce7b64bc5e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 265,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單無彭羚任何作品。《如夢初醒》查得的佐證是 IFPI 銷量榜三週冠軍、四白金與同名主打的十大中文金曲，皆為銷量與單年度工業獎，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "整張碟的選曲往台灣搬，連唱腔也改得更字正腔圓。1994 年使彭羚走紅的〈讓我跟你走〉與〈仍然是最愛你〉之後，這張碟的風格作出改變，選曲大多交給台灣創作人：〈等得太久〉改編自伍思凱的〈愛與愁〉，〈誰為我等〉改編自許景淳的〈玫瑰人生（前世來世）〉。1995 年 1 月 19 日百代唱片（香港）發行，10 曲。它拿下 IFPI 唱片銷量榜三星期冠軍、在榜十一星期，本地賣出四白金，同名主打獲 1995 年度香港電台十大中文金曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/如夢初醒",
+     "https://zh.wikipedia.org/wiki/彭羚",
+     "https://musicbrainz.org/release-group/87b31a8b-c245-4081-b96b-d2ce7b64bc5e"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "杜麗莎",
+   "album": "The Magic of Teresa Carpio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "卡單的《Teresa Carpio》（1978）查無此碟：杜麗莎的同名專輯有 1975、1977、1979 三張、全為 EMI 時期的英語碟，自我同名重複三次屬 §1 明列的高風險，且都不是粵語作品。改鎖她 1983 年的粵語大碟《The Magic of Teresa Carpio》，正題採唱片封面的拉丁寫法，掛名維持中文「杜麗莎」。；鎖定 1983 年 TVR 原盤（13 軌，含〈當天〉〈窗〉〈她似炸彈〉〈今宵且進酒〉〈假如〉〈真愛〉〈You And I〉等，粵語為主、夾英語）。與 1975／1977／1979 三張 EMI 英語同名碟、以及 1981 年的粵語碟《杜麗莎》皆為不同發行品，去重時要用曲序核對。廠牌代號 TVR 的中文全名未能在雲端可靠佐證，待本機補。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "a4bf2778-4eeb-4037-ad72-8ee4596924f0",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4bf2778-4eeb-4037-ad72-8ee4596924f0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單無杜麗莎作品。原判 pearl 已撤回：§3 的 pearl 需 obscurity=5 且 Last.fm listeners 有效數值低於 300，而 listeners 在雲端不可得，「查無資料」不能當成 0；亦查不到足以支撐「專門圈以外近乎無人知曉」的強證據——杜麗莎本人在香港樂壇的能見度並不低（EMI 時期六張金唱片、後為多位天王天后的聲樂老師），低流通的是這張唱片的實體版本而非藝人本身。她的歷史意義集中在「英語流行過渡到粵語流行」的個人角色，不等於這張碟是史上核心作品，未達 §3 hall 門檻，改判一般卡。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://en.wikipedia.org/wiki/Teresa_Carpio"
+    ]
+   },
+   "description": {
+    "text": "同一年在紅館賠掉一筆錢，她說原因是沒有唱粵語歌。1970 年代末杜麗莎在當紅時放棄香港事業遠嫁美國，1981 年舉家回流時本地已是粵語歌的天下，她才開始轉唱粵語。1983 年她斥巨資在香港體育館舉辦演唱會，票房失利、嚴重虧蝕，後來受報章訪問時把失敗歸因於台上沒有唱粵語歌、沒能迎合潮流大勢。同年香港發行的這張 12 吋黑膠收 13 軌，廠牌 TVR、編號 TVR 108。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/cbbbebcb-3cf9-4e85-bf16-0f5b22563af9",
+     "https://zh.wikipedia.org/wiki/杜麗莎",
+     "https://musicbrainz.org/release-group/a4bf2778-4eeb-4037-ad72-8ee4596924f0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/b9/bc/b7b9bce3-edf7-d17e-e871-100b872873c6/mzaf_7257944391760636274.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442590632",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "林子祥",
+   "album": "愛到發燒",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "卡單的《十分十二吋》不是專輯：正題為《10 分 12 吋》，是 1985 年華納發行的 12 吋黑膠單曲（A、B 面同為一首約十分鐘、拼接 20 首歌的串燒曲），依 §1「只收 primary-type=Album，Single／EP 不進一般卡池」不得入池。改鎖林子祥 1984 年的粵語正規大碟《愛到發燒》，以維持卡單原本的 1984 年目錄深度意圖。；鎖定 1984 年 WEA 原盤（12 軌：愛到發燒／芭莎路華／哎烏婆／邁步向前／重溫舊夢／我愛你(清唱)／逝如風／貼身舞／我偷望、你偷看／石像／獨腳戲／我愛你）。此碟為正規錄音室大碟，非新曲＋精選、非串燒碟。另註記：卡單原指的《10 分 12 吋》仍是林子祥最具史料價值的發行品（1989 年獲 IFPI 香港白金認證、掀起香港串燒歌熱潮），但其格式為 12 吋單曲，若店主要收需另循曲風 release type 例外處理。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "7dc070f4-66d8-307d-b7e5-6e4a69dd41f9",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7dc070f4-66d8-307d-b7e5-6e4a69dd41f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 102,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中林子祥入選的是《十分十二吋》(1985) 與《活色生香》(1981，已在池內)。《愛到發燒》查得的佐證僅止於 Discogs／Apple Music 的發行資料與「帶起粵語快歌潮」的一般性描述，無獨立維基條目、無回溯名單紀錄，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "以唱功聞名的人，在這張碟裡自己填了三首詞。〈邁步向前〉〈我偷望你偷看〉與〈石像〉的詞都出自林子祥，其中〈邁步向前〉同時是 1984 年電影《英倫琵琶》的歌曲。這張 12 軌的大碟 1984 年 4 月由華納音樂（香港）發行，是他的第 12 張粵語大碟；同名主打〈愛到發燒〉改編自 Dazz Band 的《Let It Whip》，登上香港電台中文歌曲龍虎榜冠軍，並為他拿下 1984 年香港電台十大中文金曲的歌手獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/林子祥",
+     "https://musicbrainz.org/release/a88ca9c3-9db1-44c4-a4e7-e4264a996036",
+     "https://musicbrainz.org/release-group/7dc070f4-66d8-307d-b7e5-6e4a69dd41f9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d8/a6/c5/d8a6c524-3b6f-c891-e200-0782371eca35/mzaf_12537307401027234405.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "201526019",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳百強",
+   "album": "一生何求",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "查證後確認《一生何求》既是主打歌名也是專輯正題，卡單無誤，不改寫。；鎖定 1989-06-07 華納原盤（10 軌、41:52，雙封套設計）。此碟為正規錄音室大碟、非新曲＋精選——陳百強身後的《一生何求》同名精選極多，字串比對時最容易誤鎖到那些包裝。監製杜自持、陳志康。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "5fa16875-b3bd-3efc-85a2-589bd1401aa4",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5fa16875-b3bd-3efc-85a2-589bd1401aa4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 899,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中陳百強入選的是 1985 年的《深愛著你》。《一生何求》查得的佐證是 1989 年三台流行榜冠軍與當年度十大金曲、最佳填詞，皆為單年度工業獎且集中在同名單曲；專輯層級未見長期樂評共識，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "在台灣朋友的車上聽到一卷卡帶，回香港就去買版權。卡帶裡是王傑唱的國語歌〈惦記這一些〉，陳百強在 1989 年度十大勁歌金曲頒獎典禮上說，自己回港後想盡辦法拿版權來改編；成品由潘偉源填詞、蘇德華編曲，成為無綫劇《義不容情》的主題曲。為配合劇集，潘偉源與監製韋家輝會面後不願重寫已完成的詞，最後只割捨並改寫了副歌的一句。1989 年 6 月 7 日華納唱片（香港）發行，收 10 曲，〈一生何求〉獲當年度十大中文金曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/一生何求_(陳百強專輯)",
+     "https://musicbrainz.org/release-group/5fa16875-b3bd-3efc-85a2-589bd1401aa4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/65/a7/b3/65a7b3eb-5ec3-1d9b-6fa9-4efc20d23237/mzaf_17856238824865854218.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "726959040",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "葉蒨文",
+   "album": "珍重",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "卡單的《瀟灑走一回》經查是葉蒨文第六張國語專輯（1991-10-28、飛碟唱片發行，非華納），屬台灣國語盤而不是粵語作品，與本子域「粵語 Canto-pop 第二圈」不符。改鎖她 1990 年的粵語大碟《珍重》。；鎖定 1990-04-20 華納粵語原盤（三首主打〈珍重〉〈焚心以火〉〈諾言〉）。與 1991 年飛碟的國語碟《瀟灑走一回》、1988 年的《祝福》（已在池內）、1989 年的新曲加精選《祝福經典十三首》、1992 年的《葉蒨文影視金曲》精選皆為不同發行品，去重時要一併排除。此碟為正規錄音室大碟。；MB 命中 2 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "8830fa40-a962-4185-bc6c-b12cbaf876c3",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8830fa40-a962-4185-bc6c-b12cbaf876c3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 66,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中葉蒨文入選的是 1991 年的《瀟灑走一回》（即本卡原先的卡單標的，因屬台灣國語盤而被本次策展換掉，見 curatorRisk）。《珍重》查得的佐證為四白金、叱咤樂壇大碟 IFPI 大獎與〈焚心以火〉的金曲金獎，全屬銷量與單年度工業獎，未達 §3 的跨來源長期共識門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "一首唱移民潮的歌，二十五年後進了《山河故人》。〈珍重〉改編自王傑的〈說聲珍重〉，潘偉源填詞，1990 年年初一上榜就佔住各大流行榜冠軍，做了商台四星期的叱咤冠軍歌，並隨當時香港人移民外國的風潮深入民心；2015 年導演賈樟柯把它用作電影《山河故人》的插曲，說這首歌自己一直在聽。專輯 1990 年 4 月 20 日由華納唱片發行，10 軌、四白金，第二主打〈焚心以火〉是電影《秦俑》主題曲，獲同年度無綫十大勁歌金曲的金曲金獎。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/69839e5e-1f6b-4c60-874d-811ef6791bf6",
+     "https://zh.wikipedia.org/wiki/葉蒨文",
+     "https://musicbrainz.org/release-group/8830fa40-a962-4185-bc6c-b12cbaf876c3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/f4/9d/e0f49d10-b9ee-fb90-e2f5-ccd91ca7cabb/mzaf_988460263711618418.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1741534922",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "陳慧嫻",
+   "album": "嫻情",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 1988-01-15 寶麗金原盤（10 軌、36:36，含與張學友的合唱曲）。此碟為正規錄音室大碟、非新曲＋精選；〈傻女〉因被收進大量精選與紀念碟（如《金曲精選 26 首》等），字串比對極易誤鎖到精選包裝。後期環球復黑王與 SACD 復刻皆不採用。與池內已有的《永遠是你的朋友》（1989）為不同碟。；MB 命中 2 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "4f352001-c478-4ab1-ad94-516d3717edee",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4f352001-c478-4ab1-ad94-516d3717edee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 306,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中陳慧嫻入選的是 1986 年的《反叛》。《嫻情》查得的佐證為雙白金與 1988 年 IFPI 本地白金唱片，加上〈傻女〉單曲層級的經典地位；唱片本身未見進入回溯型正典名單，單曲經典不等於專輯頂點，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "上一張碟的造型不受歡迎，監製把她整個形象改成復古。1987 年的《變、變、變》縱使仍有白金銷量、聲勢卻稍微回落，同年 7 月的首張精選只得金唱片，歐丁玉於是改變策略，替陳慧嫻做出這張 1988 年 1 月 15 日由寶麗金發行的第五張粵語專輯，收 10 曲。1987 年年底先推出的〈傻女〉跨年成為 1988 年的大熱作品，改編自 Maria Conchita Alonso 的《La Loca》，林振強填詞、盧東尼編曲，拿下該年度的十大中文金曲；專輯銷量衝破雙白金。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/嫻情",
+     "https://musicbrainz.org/release-group/4f352001-c478-4ab1-ad94-516d3717edee"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "許冠傑",
+   "album": "財神到",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 1978 年寶麗金原盤（12 軌：財神到／伺處覓蓬萊／錢會繼續黎／為你／麻雀耍樂／柔情淚／我愛你（與陳秋霞）／佛跳牆／往事／今宵／咪當我老襯／愛）。12 軌中有 7 首改編曲、其中 6 首改編自貓王，是許冠傑原創比例最低的一張，寫作層不可把全碟當原創。與同為 1978 年的《賣身契》（已在池內）為不同碟，須明確區分。此碟為正規大碟，非賀歲拼盤合輯。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "2a80cbb0-fa07-4621-8824-f1156fab6bb1",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a80cbb0-fa07-4621-8824-f1156fab6bb1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 173,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已逐張比對蘋果日報「香港必聽 50 經典唱片」全單（評選團：馮禮慈、袁智聰、黃志淙、芝See菇Bi、仰止），本張不在名單內——該名單中許冠傑入選的是 1974 年的《鬼馬雙星》（已在池內）。《財神到》查得的佐證是第二屆香港金唱片頒獎典禮成績與〈財神到〉的長壽傳唱；但那是單曲的節令生命力，唱片本身 12 軌中 7 首為改編（6 首改編貓王），是許冠傑原創比例最低的一張，未見被論述為其核心作品，未達 §3 門檻。",
+    "evidenceUrls": [
+     "https://www.douban.com/group/topic/5962167/",
+     "https://www.douban.com/doulist/305866/"
+    ]
+   },
+   "description": {
+    "text": "農曆新年還在播的那首賀歲歌，是少數成功的原創粵語節日歌。〈財神到〉的曲出自許冠傑，詞由他與黎彼得共同填寫，趕在 1978 年 2 月的農曆新年隨這張寶麗多（Polydor）發行的第四張粵語專輯推出。碟上另有〈何處覓蓬萊〉〈今宵〉等原創曲，但 12 首裡有 7 首是改編，其中 6 首來自他的偶像 Elvis Presley。本碟在 1978 年度香港金唱片頒獎典禮同時拿下百週年紀念大獎與白金唱片，勝過早二十多天發售的羅文《小李飛刀》。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/財神到_(專輯)",
+     "https://musicbrainz.org/release/510f00f1-512f-4f53-af58-062a9c0fd2e3",
+     "https://zh.wikipedia.org/wiki/小李飛刀_(專輯)",
+     "https://musicbrainz.org/release-group/2a80cbb0-fa07-4621-8824-f1156fab6bb1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/33/fc/a833fc0d-298a-5699-dde9-b3b7fd39b9a9/mzaf_4236982368749125258.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443339658",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張國榮",
+   "album": "Salute",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "類型裁定（§3a）：《Salute》是翻唱致敬專輯，不是精選、也不是新曲加精選——全碟 10 首（童年時／但願人長久／紙船／明星／從不知／滴汗／漫天風雨／這是愛／雪中情'89／似水流年）皆為張國榮重新錄唱他人原曲，碟名 salute 即向原唱、作曲與作詞者致敬，故 releaseType 判 Album。版本鎖定 1989 新藝寶原盤：此碟是港樂史上再版次數最多的專輯之一（復黑王、24K 金碟、SACD、多次黑膠復刻），封面與曲序在再版間有差異，本機解封面與試聽必須對回 1989 原版。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "3350921c-b701-3186-89ec-308f7459eadc",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3350921c-b701-3186-89ec-308f7459eadc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 470,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=4 未達 5，依 §3 硬門檻退回一般卡。列於「香港流行音樂 40 年 粵語百佳唱片」第 045 位；中文維基並記述其為粵語流行史上首張叫好又叫座的翻唱專輯、且是港樂史上再版次數最多的唱片之一，屬對其歷史地位的回溯性論述而非當年度成績。保留一項待核：蘋果日報 50 經典唱片名單中張國榮入選的是《Leslie》與《全賴有你夏日精選》而非本碟，且「粵語百佳唱片」名單的評選單位與全單在雲端無法取得（該系列貼文未載來源）。夠格但關鍵名單來源連不到，依雲端硬規則第 1 條維持 eligible 並標 pending-local，請本機補證。",
+    "evidenceUrls": [
+     "https://www.dupingzu.com/thread-28204-1-1.html",
+     "https://zh.wikipedia.org/wiki/Salute",
+     "https://www.douban.com/group/topic/5962167/"
+    ]
+   },
+   "description": {
+    "text": "十首歌全部是別人的原唱，碟名就是向那些原主人敬禮。1989 年 8 月 23 日由新藝寶唱片發行，是張國榮的第十七張錄音室專輯，梁榮駿任製作人、他本人掛監製；壓軸的〈似水流年〉原唱是梅艷芳，前段的〈明星〉原唱是張瑪莉。唱片的全部收益捐給香港演藝學院。同一年年底，他宣布退出樂壇，並在紅磡體育館開了三十三場告別演唱會。本碟獲 1990 年 IFPI 香港唱片銷量大獎的本地白金唱片。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-hk/Salute",
+     "https://www.leslie.org.cn/music/album/1989-salute.html",
+     "https://zh.wikipedia.org/zh-tw/%E5%BC%B5%E5%9C%8B%E6%A6%AE",
+     "https://musicbrainz.org/release-group/3350921c-b701-3186-89ec-308f7459eadc"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/c5/b2/e6c5b24e-0e42-e4d3-d7f7-3f531ddb252a/mzaf_14411517592697705395.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442422781",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "品冠",
+   "album": "疼你的責任",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "藝人維持「品冠」（本名黃品冠，滾石時期正式掛名即為品冠，不改為羅馬拼音 Victor Wong）。專輯名維持《疼你的責任》：Apple Music／LINE MUSIC 標題作《疼妳的責任》（女字旁），中文維基與滾石通路多作《疼你的責任》，兩者為同一張碟的用字差異，採通行的「你」字，別名〈疼妳的責任〉登記於去重表。；鎖定 2001-03-28 滾石原盤、10 曲／約 44 分。關鍵陷阱：滾石在五天前（2001-03-23）另發《自創品牌》，中文維基將其列為品冠「首張個人精選專輯」，兩者同期同廠牌、常被一起稱作「單飛首張」，封面與試聽務必對到 3/28 的正規創作專輯而非該精選。查無慶功版、改版或新歌加精選型再版。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group/?query=artist:\"品冠\" AND releasegroup:\"疼你的責任\"",
+      "release-group/?query=artist:\"品冠\"（藝人全目錄方向）"
+     ],
+     "checkedAt": "2026-08-29",
+     "conclusion": "作品方向 count=0；藝人方向查得 5 筆但無此盤，該藝人在 MB 有建檔、這張碟未建檔"
+    },
+    "manualEvidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%93%81%E5%86%A0",
+     "https://www.kiss.com.tw/music/album.php?id=1800",
+     "https://music.apple.com/tw/album/%E7%96%BC%E5%A6%B3%E7%9A%84%E8%B2%AC%E4%BB%BB/163242366"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING.md §1 的 MBID 窄例外（2026-08-15 店主核定）走人工身分路線；策展層已附 3 個可追溯佐證網址",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/75/ce/a6/75cea6ff-6e71-21a7-1da1-de5885e6b792/dj.iscadcfo.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 72,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。本張的價值集中在產業史（無印良品拆夥後的另一條個人線、滾石核心製作群），但查無任何正典名單收錄：未進《台灣流行音樂200最佳專輯》，查無中華音樂人交流協會年度十大，亦查無金曲獎入圍或得獎。製作陣容豪華與藝人知名度不構成「該領域史上核心作品」，依 §3 預設判一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%93%81%E5%86%A0",
+     "https://www.kiss.com.tw/music/album.php?id=1800"
+    ]
+   },
+   "description": {
+    "text": "四組製作人分掉十首歌，小蟲替他量身寫了片頭曲。小蟲詞曲的〈陪妳一起老〉是台視《人間四月天》的片頭曲，主打〈疼妳的責任〉則是同一部戲的片尾曲；另外三組製作人是李宗盛、劉志弘與劉思銘、陳建寧與于光彥。生於馬來西亞吉隆坡的品冠 1995 年與滾石簽約，之後與光良組成無印良品，組合 2000 年解散，這張 2001 年 3 月 28 日發行的十首，是他單飛後的首張個人創作專輯；滾石在它之前五天另發了個人精選《自創品牌》。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/%E7%96%BC%E5%A6%B3%E7%9A%84%E8%B2%AC%E4%BB%BB/163242366",
+     "https://zh.wikipedia.org/zh-tw/%E5%93%81%E5%86%A0",
+     "https://www.hitoradio.com/newweb/196album",
+     "https://www.youtube.com/watch?v=YeadWTlCMsE",
+     "https://www.youtube.com/watch?v=YEcWFT2zNbs",
+     "https://www.kiss.com.tw/music/album.php?id=1800"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/97/70/01/9770017b-7b2b-95b2-0143-0d0c3e8e2663/mzaf_6547391491100651052.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "163242366",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "戴佩妮",
+   "album": "Penny",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持「戴佩妮／Penny」。已查證她 12 張錄音室專輯中僅 2000 年出道作以藝名為題，種子清單提示的「後來的同名作」不存在——最接近的是 2006 年《iPenny》，字面近似但為不同專輯。故本張身分唯一，無同名歧義。；鎖定 2000-02-25 科藝百代原盤，13 首詞曲創作＋片尾隱藏軌「Penny In Studio」（部分版本計為 14 軌）。查無慶功版、改版或新歌加精選。須避開她後續環球（2009）、種子（2011、2016）、索尼（2013）時期的重製與選輯，以及 2006 年《iPenny》。；MB 命中 2 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "ad27d456-5973-3e32-b026-744e8a851a33",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/54/b1/b3/54b1b3ad-25ad-c6d0-bf5c-04519c638fd8/dj.sgkbkeaa.jpg/600x600bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1497,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。已查得的肯定是出道當時的獎項紀錄——台灣第 12 屆金曲獎最佳新人「入圍」、馬來西亞第二屆中文 AIM 大獎最佳專輯／最佳新人／最佳演繹女歌手——屬同一時點的產業獎項，而非長期樂評共識；未進《台灣流行音樂200最佳專輯》，查無中華音樂人交流協會年度十大收錄。戴佩妮的正典地位主要建立在後續作品（2006〈愛瘋了〉最佳作曲人、2014《純屬意外》金曲歌后），本張作為起點作仍以一般卡收錄。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/Penny",
+     "https://zh.wikipedia.org/zh-tw/%E6%88%B4%E4%BD%A9%E5%A6%AE"
+    ]
+   },
+   "description": {
+    "text": "唱片最後一軌收的是她在錄音室裡的一段實況。那軌〈Penny In Studio〉排在第十四位，前面十三首由製作人陳子鴻與黃怡花約三個月，從戴佩妮的數十首 demo 裡篩出來，刻意保留 demo 的實驗質地再往上編曲；詞曲幾乎由她一人包辦，只有〈第十五個耳洞〉的曲出自吳家昌。專輯 2000 年 2 月 25 日由喜歡音樂製作與科藝百代發行。隔年的第 2 屆馬來西亞音樂工業獎（AIM）把最佳專輯、最佳新人與最佳演繹女歌手都給了她。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/Penny",
+     "https://zh.wikipedia.org/zh-tw/%E6%88%B4%E4%BD%A9%E5%A6%AE",
+     "https://musicbrainz.org/release-group/ad27d456-5973-3e32-b026-744e8a851a33"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/da/d5/08dad59b-069d-95ab-1b06-e3c5db8611f2/mzaf_1035408292859216811.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "905224289",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "曹格",
+   "album": "Superman",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "維持「曹格／Superman」。英文藝名 Gary Chaw 為對外使用名，台灣正式發行掛名為曹格，依 §0.5「看正式發行品掛名」原則採中文。；鎖定 2006-12-27 滾石原盤，10 曲／約 41 分。首發即同時推出兩種包裝——CLASSIC 限量典藏版（精裝）與 MODERN 進化私藏版（平裝），曲目相同、僅美術與贈品不同，封面解析要擇一並在 manifest 註明採用哪一版視覺。非 2006 年 1 月的出道作《格格 Blue》、非 2008 年得獎作《Super Sunshine》，亦非後續精選。查無新歌加精選型改版。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "e05cb346-3436-30df-a9fe-44fefe87005a",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e05cb346-3436-30df-a9fe-44fefe87005a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6799,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。本張在金曲獎是「入圍」第 18 屆最佳國語男歌手而非得獎，曹格真正封王的是兩年後的《Super Sunshine》（2008 第 19 屆）；未進《台灣流行音樂200最佳專輯》，查無中華音樂人交流協會年度十大。〈背叛〉被廣泛翻唱是單曲層級的流通度，不等於專輯被當成華語流行史核心作品，依 §3 預設判一般卡。",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Superman_(Gary_Chaw_album)",
+     "https://zh-yue.wikipedia.org/wiki/Superman_(%E6%9B%B9%E6%A0%BC%E5%B0%88%E8%BC%AF)"
+    ]
+   },
+   "description": {
+    "text": "封面上他一件衣服都沒穿，文案寫的是「完全無設限」。滾石替這張碟定的調是歌壇大改造與音樂新品種，全裸入鏡取意看見最真實的曹格。2006 年 1 月出道、生於馬來西亞沙巴州的曹格，同年 12 月 27 日交出這張收十首的第二張專輯，包裝分 CLASSIC 精裝與 MODERN 平裝兩種、曲目相同，首波主打是節奏強烈的〈3_7_20_1〉，第四軌則是〈背叛〉。2007 年 5 月 4 日公布的第 18 屆金曲獎名單中，他以本張首度入圍最佳國語男歌手。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E6%9B%B9%E6%A0%BC",
+     "https://www.hitoradio.com/newweb/6902album",
+     "https://shop.rockmall.com.tw/product_view.php?id=52026",
+     "https://en.wikipedia.org/wiki/Superman_(Gary_Chaw_album)",
+     "https://musicbrainz.org/release-group/e05cb346-3436-30df-a9fe-44fefe87005a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蔡健雅",
+   "album": "呼吸",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "同一張碟有四種流通標題：中文維基作《呼吸》、Discogs 作《Tanya》、《台灣流行音樂200最佳專輯》名單列為《蔡健雅》（同名專輯）、近年黑膠再版標「蔡健雅同名專輯」。卡片採 zh-TW 最通行的《呼吸》，其餘三者一律登記為別名。注意卡池既有「孫燕姿同名專輯」這種同名作命名慣例，日後若有人以《蔡健雅同名專輯》開卡會造成重複，去重表務必收錄。；鎖定 1999-01-08 寶麗金原盤，10 曲。限量再版加贈第 11 軌〈My Colour TV Set〉，曲數不同須註明採用哪一版；另有 1999 年《繼續呼吸》雙 CD 限量 Box Set（Discogs r10129467）屬加值改版，不採。同廠牌次作《記念》(2000) 另有明確的「慶功版」，顯示此廠牌／時期慣出改版，本張的封面與試聽務必逐項對回原盤。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "36445b82-5f0f-42db-88f1-eb8d21ce1196",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/36445b82-5f0f-42db-88f1-eb8d21ce1196/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 788,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 hall，但 classic=3 未達 5，依 §3 硬門檻退回一般卡。跨來源長期共識明確：《台灣流行音樂200最佳專輯》新百大（1993–2005）第 97 名、中華音樂人交流協會 1999 年度十大專輯與十大單曲雙榜、第 11 屆金曲獎最佳新人入圍。同時是華語市場罕見「新人自寫整張、廠牌以不露臉 MV 推主打」的製作決策案例，並為四屆金曲歌后的起點作。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E5%91%BC%E5%90%B8_(%E8%94%A1%E5%81%A5%E9%9B%85%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF"
+    ]
+   },
+   "description": {
+    "text": "主打歌的 MV 從頭到尾沒有她的臉，畫面只有飄過去的字。唱片公司把新人的臉拿掉，改用像螢幕保護程式般流動的文字，等於讓作品自己出面。蔡健雅 1997 年已在新加坡以英語專輯《Bored》出道，單曲〈My Colour TV Set〉登上當地電台榜第 2 名；1999 年 1 月寶麗金發行的這張首張國語專輯收十首，她譜了其中七首的曲，歌詞全交給娃娃、林夕、姚謙等台灣詞人，〈呼吸〉本身是徐世珍填詞、陳偉作曲。本張獲中華音樂人交流協會 1999 年度十大專輯。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%91%BC%E5%90%B8_(%E8%94%A1%E5%81%A5%E9%9B%85%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/zh-tw/%E8%94%A1%E5%81%A5%E9%9B%85",
+     "https://musicbrainz.org/release-group/36445b82-5f0f-42db-88f1-eb8d21ce1196"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "孫燕姿",
+   "album": "克卜勒",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 2014-02-27 環球原盤，10 曲。同期另有預購版與平裝／精裝包裝差異，曲目相同；2015-01-13 另發限量 1,500 套黑膠，為同內容再版而非另一作品——本店是黑膠行，黑膠版易被誤當主體，年份與封面仍應鎖 2014 CD 原盤，黑膠資訊寫進 versionNote 供顧客參考即可。查無新歌加精選型改版。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "6058fccb-7940-44f0-a99f-b300b62b1405",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6058fccb-7940-44f0-a99f-b300b62b1405/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3256,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "【2026-08-29 店主裁決：不進殿堂】協會 2014 年度十大專輯與十大單曲雙榜、第 19 屆新加坡金曲獎最佳專輯皆查證屬實，但本作未進回溯型正典名單、亦無獨立樂評來源，依 §3 的跨來源長期共識門檻判為一般卡。原查證內容保留於 evidenceUrls 供日後覆核。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%85%8B%E5%8D%9C%E5%8B%92_(%E5%AD%AB%E7%87%95%E5%A7%BF%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/zh-tw/%E5%AD%99%E7%87%95%E5%A7%BF%E8%8E%B7%E5%A5%96%E4%B8%8E%E6%8F%90%E5%90%8D%E5%88%97%E8%A1%A8"
+    ]
+   },
+   "description": {
+    "text": "同名曲的詞曲全交給 Hush，製作人一欄則是她自己。整張的製作分工橫跨新加坡與台灣，孫燕姿與李偲菘、李偉菘、Kenn C、王治平各負責不同曲目，〈比較幸福〉的曲則出自蔡健雅。2014 年 2 月 27 日環球音樂（台灣）發行，收十首，是她的第十二張錄音室專輯，在台灣的五大唱片、G-Music 與香港 IFPI、新加坡 HMV Asia 等榜都拿下冠軍。第 19 屆新加坡金曲獎把最佳專輯頒給它，〈克卜勒〉另入圍第 26 屆金曲獎最佳單曲製作人。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%85%8B%E5%8D%9C%E5%8B%92_(%E5%AD%AB%E7%87%95%E5%A7%BF%E5%B0%88%E8%BC%AF)",
+     "https://musicbrainz.org/release-group/6058fccb-7940-44f0-a99f-b300b62b1405"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/90/ed/d390ed74-de75-742c-5952-207a43a36521/mzaf_1914051124016254712.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443147411",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "林俊傑",
+   "album": "學不會",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鎖定 2011-12-31 華納原盤，12 曲／46:05（含〈獨奏 Prologue〉開場）。2012-02-14 另發《學不會 Lost N Found one＋one 情人節限定版》CD+DVD（同 12 曲＋7 首 MV 之 DVD），華納官網與滾石購物網皆有售，市面流通量大，是本張最容易抓錯的版本；另有中國「影音增值版」。皆屬同一專輯的加值改版而非新作，一律不採。2012-01-09 華納在台北慶功記者會頒 15 座金唱片，屬銷售慶功活動，非另出慶功版唱片。；MB 命中 1 筆，取最高分者；本機請覆核掛名與版本是否與 versionNote 一致",
+    "rgMbid": "db16e474-6a4c-4999-b72f-eb87f8c994a8",
+    "exceptionEvidenceUrls": []
+   },
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/db16e474-6a4c-4999-b72f-eb87f8c994a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7556,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 的跨來源長期共識門檻。肯定全部集中在銷售榜與商業性頒獎（空降 18 個榜冠軍、Hito、全球流行音樂金榜、新城國語力等），維基獲獎列表中本張查無金曲獎入圍或得獎，亦查無任何樂評正典名單或中華音樂人交流協會年度十大收錄。轉場作的敘事價值與商業成績都不構成 §3 所要求的長期樂評共識，依預設判一般卡。",
+    "evidenceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%AD%B8%E4%B8%8D%E6%9C%83",
+     "https://zh.wikipedia.org/zh-hant/%E6%9E%97%E4%BF%8A%E5%82%91%E7%8D%B2%E7%8D%8E%E8%88%87%E6%8F%90%E5%90%8D%E5%88%97%E8%A1%A8"
+    ]
+   },
+   "description": {
+    "text": "換了東家的第一張，開場留給一首 54 秒的純音樂。〈獨奏(Prologue)〉由林俊傑自己作曲編曲，接在後面的十二首作曲也全出自他本人，作詞則分派給姚若龍、方文山、林夕、吳青峰等人；第六軌〈靈魂的共鳴〉請來郎朗客串，素材取自 Sergei Rachmaninoff 的《帕格尼尼主題狂想曲》。專輯 2011 年 12 月 31 日由華納音樂（台灣）發行，是他的第九張錄音室專輯，發行後空降十八個榜的冠軍，另有 2012 年 3 月 9 日的黑膠限定版。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%AD%B8%E4%B8%8D%E6%9C%83",
+     "https://www.warnermusic.com.tw/products/%E5%AD%B8%E4%B8%8D%E6%9C%83lost-n-found-one-one%E6%83%85%E4%BA%BA%E7%AF%80%E9%99%90%E5%AE%9A%E7%89%88cddvd",
+     "https://musicbrainz.org/release-group/db16e474-6a4c-4999-b72f-eb87f8c994a8"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

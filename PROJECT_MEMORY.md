@@ -1,5 +1,72 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-31｜dip-vinyl-shop｜c-48／c-49／c-50 本機接手並上架：310 張裡上架 269 張
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 104 筆）帶著三批的
+簡介產線成果，本機接手做完 REMOTE_RUNBOOK 的七步。
+
+**合併**：分支沒動 `seed_cards.json` 或任何頁面檔，三處衝突——`apex_pool.json`（main
+已把王牌併進 seed 第 9 欄，維持刪除；分支對該檔唯一改動是店主 8/29 裁決的「陶喆只留
+同名專輯」，改為在 seed 清掉兩張的 tier）、`fix-spacing.mjs`（兩邊各修同一個
+SyntaxError，取 main 的路徑寫法＋分支新增的保護專名）、`.gitignore`（取聯集）。
+
+**逐張審稿 310 張**只有兩處要改：崔萍〈南屏晚鐘〉正文逐字引了〈上海灘〉六字歌詞
+（黃霑 2004 年才過世），改寫成不引原句；James Taylor 同名專輯 hook 寫「披頭四」、
+正文寫 The Beatles，統一成拉丁原名並同步 hook 與 input。機器掃描其餘 16 處全是誤報。
+
+**上架結果**
+
+| | 卡數 | 上架 | 留置 | 頂點 |
+|---|---|---|---|---|
+| c-48 古典 | 97 | 85 | 12 | hall 16 |
+| c-49 華語 | 86 | 62 | 24 | 0 |
+| c-50 | 127 | 122 | 5 | 0 |
+
+三批 published gate 全數 0 error。卡池 12,909 → 13,178（hall 677 → 693）。
+
+**三個查到的缺陷／過時記載**
+
+1. **Spotify／Bandcamp 封面後備從來沒生效過**：`resolve-covers.mjs` 讀 `j.coverUrl`，
+   但 worker 兩個端點回的欄位叫 `imageUrl`。c-47 因為 178 張裡 177 張都在 CAA 命中而
+   沒露出來，c-49 有 52 張華語老唱片不在 CAA 才炸開。已修。
+2. **iTunes `/search` 的本機 IP 封鎖已解除**（實測回 200）。備忘錄記的「只有 /lookup
+   可用」已過時；試聽配對因此不必再依賴 UPC 或已知 artistId。
+3. **Apple 台灣區把古典演奏家名字在地化成中文**（Jacqueline du Pré → 賈桂琳・杜普蕾），
+   卡片藝人欄是拉丁原名，只查 tw 會整批比不到——c-48 第一輪 97 張只配到 2 張試聽。
+   改成 tw 沒命中就退到 us 之後變成 34 張。
+
+**留置 41 張的原因**（依 ALBUM_ONBOARDING「任一項缺失就留在待處理批次」）
+
+- **封面查無 30 張**：c-49 的 24 張是 1950–80 年代華語／台語老盤（百代中國時代曲名典
+  系列、亞洲唱片典藏集系列、蕭煌奇《真情歌》、鄭秀文《放不低》、羅文《小李飛刀》等），
+  CAA／Spotify／Bandcamp／iTunes 四個來源都查無，唱片本身沒有數位授權；c-48 有 4 張、
+  c-50 有 2 張（佐野元春與井上陽水的日盤）。
+- **c-48 三軸對不到 9 張**：雲端的人工錨點三軸是在策展定名之前跑的，標題後來改過。
+- **自我同名卡缺 ready 試聽 3 張**（Motörhead、Wynton Marsalis、Dirty Projectors）：
+  驗證器規定同名碟必須有試聽才能上架，因為那是唯一能當場驗版本的證據。
+
+**兩件要店主裁示的**
+
+1. **c-49 有 14 張帶著證據的頂點提案被 AI 基線三軸擋下**。例如蔡琴《此情可待》
+   （入選《台灣流行音樂百張最佳專輯》第 17 名）、陳明章《戀戀風塵》（第 5 屆金曲獎
+   最佳演奏專輯＋最佳錄音）、黃霑《黃飛鴻》（第 11 屆香港電影金像獎）、洪榮宏
+   《行船人的愛》（《台灣流行音樂200最佳專輯》第 99 名）——證據都在碟的層級，
+   但 `/album-rating` 給的 classic 只有 3–4，卡在 §3 的 classic=5 硬門檻。
+   這與 §0.7 當初為古典開人工錨點制的理由完全同構（該領域的 API 分數系統性偏低），
+   **但華語要不要比照開一條人工錨點制，是店主的裁定，我沒有自作主張改分**。
+   全部先以一般卡上架（§3 明訂「可先作一般卡上架」），證據保留在 manifest 的
+   `apexAssessment.reason` 與 `evidenceUrls`。
+2. **c-50 的頂點評估雲端整項留給本機**，127 張裡有 31 張 classic=5、7 張達 pearl 門檻、
+   4 張 accessibility=5。本次未逐張蒐證，一律先列一般卡並在 reason 寫明門檻現況。
+
+**主要檔案**：`onboarding-manifest-c4{8,9}-20260831.json`、`onboarding-manifest-c50-20260831.json`、
+`batch-progress/{build-cand,fetch-ratings,fill-covers,itunes-covers,itunes-previews,apple-from-evidence,build-manifest,review-scan}.mjs`、
+各批的 `cand-all/covers/ratings/previews/held.json`。
+
+**驗證**：三批 prepare gate 與 published gate 皆 0 error；card_catalog 269 筆全部成功；
+KV bulk put 三次都看到 Success!；`build-apple-audio-runtime-map` 最終 skippedInvalid=0
+（第一次 83 筆因 manifest 漏帶 `appleCollectionId` 被丟掉，補回後重建）。
+
 ### 2026-08-31｜dip-vinyl-shop＋mood-quiz｜隱形連結兩層：答案暗地決定抽哪張卡、播哪個開場
 
 店主的訴求：「最後的解答能跟他回答的五個答案有關」，但**連結要隱晦**——

@@ -30,14 +30,22 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const norm = s => String(s || '').toLowerCase()
   .replace(/[（）()【】\[\]・·,，。.\s'’"”:：!！?？\-–—_/／]/g, '');
 
+// 兩個 storefront 都要試。**Apple 台灣區會把古典演奏家的名字在地化成中文**
+// （Jacqueline du Pré → 賈桂琳・杜普蕾、Rostropovich → 羅斯托波維奇），
+// 卡片的藝人欄是拉丁原名，只查 tw 會整批比不到——c-48 第一輪 97 張只配到 2 張
+// 就是這個原因。美國區保留拉丁原名，所以 tw 沒命中就退到 us。
+// 試聽網址是 CDN 連結、跨區可用，manifest 只把實際命中的區記在 storefront。
+const STORES = ['tw', 'us'];
+
 async function itunes(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
       const r = await fetch(url, { signal: AbortSignal.timeout(25000) });
-      if (r.ok) return await r.json();
+      // 空 body 是限流的表現之一（HTTP 200 但沒有內容），要當成失敗重試而非查無
+      if (r.ok) { const t = await r.text(); if (t.trim()) return JSON.parse(t); }
       if (r.status === 403) return null;              // 被擋就別重試
     } catch { /* retry */ }
-    await sleep(1500 * (i + 1));
+    await sleep(2000 * (i + 1));
   }
   return null;
 }
@@ -58,16 +66,17 @@ for (const a of cand) {
   const k = a.artist + '|' + a.album;
   if (prev[k]) { done++; if (prev[k].status === 'ready') ready++; else un++; continue; }
 
-  let col = known.get(k) || null;
-  if (!col) {
-    const j = await itunes(`https://itunes.apple.com/search?term=${encodeURIComponent(a.artist + ' ' + a.album)}&entity=album&country=tw&limit=25`);
+  let col = known.get(k) || null, store = 'tw';
+  for (const st of STORES) {
+    if (col) break;
+    const j = await itunes(`https://itunes.apple.com/search?term=${encodeURIComponent(a.artist + ' ' + a.album)}&entity=album&country=${st}&limit=25`);
     const hit = pickAlbum(j?.results, a.artist, a.album);
-    if (hit) col = { collectionId: hit.collectionId, collectionName: hit.collectionName, artistName: hit.artistName };
-    await sleep(350);
+    if (hit) { col = { collectionId: hit.collectionId, collectionName: hit.collectionName, artistName: hit.artistName }; store = st; }
+    await sleep(500);
   }
-  if (!col) { prev[k] = { status: 'unavailable', note: 'iTunes 查無對得上的專輯' }; un++; done++; continue; }
+  if (!col) { prev[k] = { status: 'unavailable', note: 'iTunes 台灣與美國區都查無對得上的專輯' }; un++; done++; continue; }
 
-  const lk = await itunes(`https://itunes.apple.com/lookup?id=${col.collectionId}&entity=song&country=tw&limit=60`);
+  const lk = await itunes(`https://itunes.apple.com/lookup?id=${col.collectionId}&entity=song&country=${store}&limit=60`);
   const songs = (lk?.results || []).filter(r => r.wrapperType === 'track' && r.previewUrl);
   if (!songs.length) {
     prev[k] = { status: 'unavailable', note: `命中 ${col.collectionName} 但該碟無 previewUrl` };
@@ -76,7 +85,7 @@ for (const a of cand) {
     songs.sort((x, y) => (x.trackNumber || 99) - (y.trackNumber || 99));
     const t = songs[0];
     prev[k] = {
-      status: 'ready', source: 'apple', storefront: 'TW', url: t.previewUrl,
+      status: 'ready', source: 'apple', storefront: store.toUpperCase(), url: t.previewUrl,
       appleCollectionId: String(col.collectionId), appleCollectionName: col.collectionName,
       appleArtistName: col.artistName, firstTrack: t.trackName,
       explicitness: t.trackExplicitness || '', matchedVia: 'search',
