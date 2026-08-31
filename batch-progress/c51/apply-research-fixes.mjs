@@ -69,6 +69,10 @@ const FIX = {
     label: 'Capitol Records Nashville',
     why: '研究層查證：卡單寫 Liberty。英文維基 infobox 與內文皆記 Capitol Records Nashville，且明寫本作是該廠牌名下的最後一張錄音室專輯。Capitol Nashville 在 1991–1995 年間才改名 Liberty，MB 上 1991-09-10 的美版同時存在兩種壓片標示，Liberty 屬改名後再壓。',
   },
+  'Bernard Parmegiani|La Création du monde': {
+    year: 1986,
+    why: '主線裁定：卡單的 1984 是三樂章完成並完整首演的年份，唱片首發是 1986 年的 INA C 1002（研究層查無 1984 年 LP）。本批一貫取原盤首發年（Machito 1958→1959、Benny Goodman 1963→1964 同此）。古典批那條「年份取錄音年」的例外不套用到這張——那條例外是為「同一作品有許多次演奏、錄音才是這張卡的識別」而設，但電聲作品的母帶本身就是作品，沒有另一次演奏可以標年。卡片顯示的是唱片，取唱片的年。hook 層已把完成／首演與發行分開寫，改年不影響正文。',
+  },
   'Univers Zero|Ceux du dehors': {
     label: 'Recommended Records',
     why: '研究層查證：卡單的 Cryonic 查無支持。維基資訊框、Bandcamp 與唱片行均指向 Recommended Records；MB 的 release 清單裡 1981 年法版掛 Atem、1982 年英版掛 Recommended Records，完全沒有 Cryonic。',
