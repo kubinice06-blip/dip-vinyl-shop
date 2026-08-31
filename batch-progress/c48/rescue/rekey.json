@@ -1,0 +1,7 @@
+[
+ {
+  "from": { "artist": "Lang Lang", "album": "Bach: Goldberg Variations (2020)" },
+  "to":   { "artist": "Lang Lang 郎朗", "album": "Bach: Goldberg Variations (2020)" },
+  "why": "ratings.json 的錨點鍵掛在「Lang Lang 郎朗」，卡片掛「Lang Lang」。同一張碟、同一個專輯名，純掛名寫法差異，是這九張裡唯一真的只需改鍵的。既有錨點值 classic 3／obscurity 2／accessibility 3、rarity uncommon 可直接沿用。"
+ }
+]
