@@ -34,12 +34,24 @@ for (const r of rows) {
   // 研究稿常混用中文數字年份（一九八六年），轉阿拉伯數字併入 blob 再比對，避免誤報
   const CN = { 〇: '0', 零: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
   blobRaw += ' ' + blobRaw.replace(/[一二][〇零一二三四五六七八九]{3}/g, m => [...m].map(c => CN[c]).join(''));
+  // 綽號夾在名與姓中間是常見寫法（Lee "Scratch" Perry、Stevie Ray Vaughan 那類），
+  // 而正文用短形式（Lee Perry）完全正當。檢查器比對的是連續字串，事實表裡的
+  // leescratchperry 不含 leeperry，於是把正當簡寫報成編造專名。
+  // 2026-08-31 c51a 實踩。把去掉引號綽號的版本一併併入 blob。
+  blobRaw += ' ' + blobRaw.replace(/\s*[「"'"'"'][^」"'"'"']{1,20}[」"'"'"']\s*/g, ' ');
   const blob = norm(blobRaw);
   for (const m of (r.desc || '').matchAll(/〈([^〉]+)〉/g)) if (!blob.includes(norm(m[1]))) e.push('編造曲名?〈' + m[1] + '〉');
   const names = new Set([...(r.desc || '').matchAll(/[A-Z][a-zA-Z.'"]+(?: [A-Z][a-zA-Z.'"&]+)*/g)].map(x => x[0]).filter(x => x.length > 5));
   for (const nm of names) if (!blob.includes(norm(nm))) e.push('編造專名?' + nm);
   for (const y of (r.desc || '').matchAll(/(19|20)\d{2}/g)) if (!blobRaw.includes(y[0])) e.push('編造年份?' + y[0]);
-  if (e.length) { issues++; console.log('⚠', r.artist, '-', r.album, '→', e.join(' | ')); }
+  // 輸出檔只有 key 與 desc 兩個欄位，r.artist／r.album 永遠是 undefined，
+  // 標記會印成「undefined - undefined」而指認不出是哪張卡，複核時得逐張翻檔案。
+  // 改用輸入檔（研究稿）的掛名，取不到再退回從 key 解析。
+  if (e.length) {
+    issues++;
+    const [ka, kb] = String(r.key || '').replace(/^desc[24]:/, '').split('|');
+    console.log('⚠', src.artist || ka || '?', '-', src.album || kb || '?', '→', e.join(' | '));
+  }
 }
 console.log('QA 完成｜', rows.length, '張｜標記', issues);
 process.exit(issues ? 1 : 0);
