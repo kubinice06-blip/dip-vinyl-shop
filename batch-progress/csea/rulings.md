@@ -233,3 +233,32 @@ label EM Records、`releaseType: "Compilation"`、走 §5.6 合輯例外，
 
 《บ้านนอกในกรุง》的 rgMbid `6a10cb46` 在 MB 上就是 1980 年那筆，
 **年份與身分都對得上，只有廠牌錯**——與上一條那張不同型，不必動身分。
+
+## 16. Soman Loebis ＝ Soman Lubis？兩批之間唯一的實質交叉點
+
+cseac 的 hook 層跨組讀稿時發現：**c 組 Shark Move 的鍵盤手 `Soman Loebis`
+與 b 組 God Bless 的鍵盤手 `Soman Lubis` 極可能是同一人**——Loebis／Lubis
+是印尼舊、新拼寫的同一個姓，兩人同樂器、同年代、同一個萬隆／雅加達場景。
+
+這件事牽動 c 組研究稿裡**一條已被標為未採用的說法**：英文樂評稱 Shark Move
+「1970 年底鍵盤手辭世導致樂團中止」。而 b 組的印尼文維基來源明載
+**Soman Lubis 死於 1974 年 6 月**南雅加達 Pancoran 的交通事故（與 God Bless
+鼓手 Fuad Hassan 同一場），樂團還以「Fuad Hasan 與 Soman Lubis 百日」
+為題在 Taman Ismail Marzuki 演出、把棺材抬上舞台。
+
+**若是同一人，那條英文說法就是把 1974 年的事故錯記成 1970 年。**
+
+**裁定：兩張卡的成品不必改，因為它們沒有打架。** hook 層的處置正確——
+Shark Move 那張只寫 gilanada 版的「成員各自散往別的樂團」（沒有採用那條英文
+說法），God Bless 那張寫 1974 年 6 月。兩邊各自有來源、互不矛盾。
+
+**留給本機**：這是 99 張裡唯一的跨批人物交叉點。若要確認同一人，
+印尼文維基的 God Bless 條目是較強的一邊。**確認之後值得回頭在 Shark Move
+那張補一句**——「同一位鍵盤手四年後死於車禍」是很好的素材，
+但現在沒有可開啟的來源把兩個拼法連起來，所以這批不寫。
+
+**這是拼寫變體的第四類。** 先前記過的三類是：領銜者 vs 領銜者＋Trio／Quartet、
+只差大小寫（BOREDOMS／Boredoms）、彎引號 vs 直引號。
+**第四類是同一語言的新舊正字法**（印尼文 1972 年拼寫改革：oe→u、dj→j、tj→c）。
+這一類在東南亞卡池會反覆出現，本機做去重與 KV 鍵結時要留意——
+`Djanger Bali`、`Koes Bersaudara`、`Waldjinah` 這些卡名本身就帶著舊拼寫。
