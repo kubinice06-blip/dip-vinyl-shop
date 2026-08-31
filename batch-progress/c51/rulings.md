@@ -36,3 +36,21 @@ hook 層提出：本卡 artist 欄是作曲家，按 `hook-base.md` 的作曲家
 
 （Hugh Mundell 與 Fania 兩張我在裁定前已先各砍一格到 207／196，維持該版本，
 比同批其他 thin 卡略緊，無妨。）
+
+## Dorival Caymmi《Caymmi Visita Tom》：卡池維持單藝人寫法（2026-08-31）
+
+MB 的 artist-credit 是 Jobim 與 Caymmi 雙掛名，研究層據此要求正文不得寫成
+Caymmi 個人領銜作；寫作層照辦寫成「合作盤」，但指出這與卡單「一律歸
+Dorival Caymmi」的掛名有落差，請主線裁示。
+
+**裁定：卡池維持 `Dorival Caymmi`，正文寫明是與 Jobim 的合作盤。**
+
+理由與 c-50 的 Willie Colón《Siembra》完全相同（MB 掛「Willie Colón + Rubén
+Blades」）：卡池的鍵結構就是單藝人，改成雙掛名會動到鍵格式，影響遠超過一張卡；
+而正文寫清楚合作關係就不會失真。兩張採同一處理，不另立特例。
+
+## 附記：三張年份更正已同步，不需再動
+
+寫作層提醒 Parmegiani、Janko Nilovic、Machito 三張的卡片 year 欄要跟著更正，
+否則之後跑 qa-check-research 會被誤標成編造。實測：候選檔與卡單都已是更正後的值
+（1986／1975／1959），寫作層讀到的就是正確版本。那是預防性提醒，不是實際不一致。
