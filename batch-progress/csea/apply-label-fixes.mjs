@@ -64,6 +64,12 @@ const FIXES = [
   { batch: "cseac", artist: "Abbhama", album: "Alam Raya",
     from: "", to: "Tala & Co Record",
     why: "卡單原本留空。原盤為卡帶，工業許可證日期 1978-02-16（這條物證壓過印尼文維基的 1979 年說法，年份維持卡單的 1978）；錄音在 Tala & Co 自家錄音室。" },
+  { batch: "cseac", artist: "พุ่มพวง ดวงจันทร์", album: "บ้านนอกในกรุง",
+    from: "Asona Promotion", to: "Sake San Tape Records",
+    why: "泰文維基本傳明載她 2525（1982）才進 อโซน่า，作品表把本作歸在「สังกัดอื่นๆ」。1980 年泰國原盤的廠牌是 เสกสรรเทป-แผ่นเสียง，拉丁登記名 Sake San Tape Records (1980) Co. Ltd.。" },
+  { batch: "cseac", artist: "Onuma Singsiri", album: "สาวอิสานรอรัก",
+    from: "不詳（1970 年代末泰國本地盤）", to: "เอื้ออารีย์เจ้าเก่า",
+    why: "卡單原本寫「不詳」。MusicBrainz 的 1979 年泰國盤（12 軌）登記廠牌為 เอื้ออารีย์เจ้าเก่า。" },
 ];
 
 
