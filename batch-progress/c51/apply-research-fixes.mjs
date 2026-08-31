@@ -25,6 +25,14 @@ const FIX = {
     year: 1983, label: 'Shanachie',
     why: '研究層查證：卡單的 1978／Message 查無支持，United Reggae 與 reggaerecord 均記 1983 年、Shanachie，MB 底下兩個 release 也都是 Shanachie。1978 年的 Message 盤是 Mundell 首作《Africa Must Be Free by 1983》（卡池已有），卡單極可能從那張誤帶。另註：本作是 1978–1980 年錄音的彙整，不是一次錄完的錄音室專輯，寫作層要標明。',
   },
+  'Machito|With Flute to Boot': {
+    year: 1959,
+    why: '研究層查證：卡單的 1958 是錄音年（1958 年 11 月錄於紐約 Metropolitan Studios），Roulette R／SR 52026 的發行年是 1959，MusicBrainz 與 Discogs 三筆原版一致。本產線取原盤首發年。',
+  },
+  'Janko Nilovic|Soul Impressions': {
+    year: 1975,
+    why: '研究層查證：卡單的 1971 查無任何來源。Discogs 上 Editions Montparnasse 2000（MP 43）原版三筆全標 1975，EX-YU Music 專文同樣寫 1975（MusicBrainz 標 1974）。另：策展層說的「被取樣頻率遠高於其他作品」方向錯了——JAY-Z〈D.O.A.〉取樣的〈In the Space〉出自《Psyc Impressions》（MP 06, 1969）、Dr. Dre《Compton》取樣的是〈Underground Session〉，兩首都不在本張的十二首曲目裡。',
+  },
   'Univers Zero|Ceux du dehors': {
     label: 'Recommended Records',
     why: '研究層查證：卡單的 Cryonic 查無支持。維基資訊框、Bandcamp 與唱片行均指向 Recommended Records；MB 的 release 清單裡 1981 年法版掛 Atem、1982 年英版掛 Recommended Records，完全沒有 Cryonic。',
@@ -47,7 +55,10 @@ for (const [k, f] of Object.entries(FIX)) {
   const before = { year: c.suggestedYear, label: c.label };
   if (f.year) c.suggestedYear = f.year;
   if (f.label) c.label = f.label;
-  c.mbNote = [c.mbNote, `【研究層更正】${f.why}`].filter(Boolean).join('｜');
+  // 可重複執行：**先把舊的更正註記整段剝掉再重寫**，不能只做 includes 比對——
+  // 註記文字改過之後 includes 就抓不到，會把新舊兩份都留著。2026-08-31 實踩，六張中招。
+  const stripped = String(c.mbNote || '').split('｜').filter(x => !x.startsWith('【研究層更正】')).join('｜');
+  c.mbNote = [stripped, `【研究層更正】${f.why}`].filter(Boolean).join('｜');
   console.log(`${artist} —《${album}》`);
   if (f.year) console.log(`   年份 ${before.year} → ${f.year}`);
   if (f.label) console.log(`   廠牌 ${before.label || '（空）'} → ${f.label}`);
