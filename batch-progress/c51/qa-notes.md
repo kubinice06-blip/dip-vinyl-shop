@@ -49,3 +49,43 @@
 葛萊美名人堂」，主辦者就在前面兩個字。`qa-batch.mjs` 第 198 行的註解已寫明這道
 檢查**刻意不做豁免**，具名合法者由人工複核放行；而標記帶前後文的改動讓這種判斷
 一眼就完成。屬設計內行為，不是缺陷。
+
+## c51c／c51d 的輸出標記，四筆全是同一型的誤報
+
+具名的修飾語就緊貼在裸字串前面——這正是 `qa-batch.mjs` 第 198–205 行註解
+記載的型態，該處已寫明這道檢查**刻意不做豁免**，具名合法者由人工複核放行。
+
+| 卡 | 標記 | 正文實際寫法 |
+|---|---|---|
+| Marty Robbins《More Gunfighter Ballads》 | 票選 | 「《Billboard》1960 年鄉村電台 DJ 的年度票選」 |
+| Lambert, Hendricks & Ross《The Hottest New Group in Jazz》 | 票選 | 「該刊讀者票選」——先行詞《DownBeat》寫在同一張的第二句 |
+| はっぴいえんど《風街ろまん》 | 百大名單 | 「《Rolling Stone》日本版 2007 年 9 月的日本搖滾史上百大專輯」 |
+| MC5《Back in the USA》 | 年份?1950 | **這筆我改稿了**，見下 |
+
+MC5 那筆不是誤報：hook 原寫「剃成 1950 年代的樣子」，而研究稿的原句是
+「偏愛 50 年代直來直往的搖滾樂」——來源裡沒有那個四位數年份。改成與來源
+相同的寫法後標記消失，語意不變。**這道檢查抓對了。**
+
+## 年份佐證在 c-51 是寫在 notes 散文裡，不在結構化欄位
+
+c-SEA 三批的研究層有 `yearVerified: {year, note}` 欄位，c-51 四批沒有——
+c-51 的研究層把年份覆核寫進 `notes` 的散文。**這是批次間的 schema 差異，
+不是 c-51 漏做年份覆核。** 155 張裡 notes／facts 完全沒提年份佐證的只有 10 張：
+
+- Jule Styne《Funny Girl》、Lambert, Hendricks & Ross《The Swingers!》
+- 非常階段《King of Noise》
+- Peter Gabriel《Car》《Security》、Mazzy Star《Among My Swan》、
+  Dio《Sacred Heart》、Lightning Bolt《Hypermagic Mountain》、
+  The Specials《More Specials》——皆為文獻充分且已 MBID 釘選的西方盤
+- Milton Wright《Spaced》——**這張其實已覆核**，1977 這個更正寫在卡片的
+  `mbNote`（研究層更正註記）而不是研究稿裡
+
+本機審稿時若要一致化，方向是把 c-51 的散文佐證抽成欄位，不是回頭重查。
+
+## 兩筆研究稿的內部矛盾，寫作層已迴避，建議本機回查
+
+1. **Piero Umiliani《To-Day's Sound》**：同一個來源（soundohm）同時寫
+   「1973 年 6 月發行」與「1973 年夏天錄音」，發行早於錄音。矛盾在來源本身。
+   寫作層的處置正確——只寫年份與發行月、迴避季節。年份 1973 兩說皆同，卡片安全。
+2. **《Passion, Grace & Fire》廠牌**：研究稿採 Philips（維基），卡單為 Columbia
+   （美版）。寫作層依研究稿寫 Philips。兩者可能都對（歐版／美版），本機可決定取哪個。
