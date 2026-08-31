@@ -14,15 +14,14 @@ import { key, ROOT } from './lib.mjs';
 const batches = process.argv.slice(2);
 if (!batches.length) { console.error('用法: node batch-progress/dedup-vs-live.mjs c48 c49'); process.exit(1); }
 
-const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
-const apex = JSON.parse(fs.readFileSync(path.join(ROOT, 'apex_pool.json'), 'utf8'));
+// 2026-08-30 卡池合併：apex_pool.json 已刪除，王牌是 seed_cards.json 裡多帶第 9 欄
+// tier 的普通列。**「線上池」的定義沒有變**——一般卡與王牌都算，撞到哪一種都是撞卡，
+// 所以這裡照樣讀整份 seed，只是改從 tier 欄判斷該列屬於哪一池。
+const rows = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
 
 const live = new Map();
 const add = (a, b, src) => { const k = key(a) + '|' + key(b); if (!live.has(k)) live.set(k, `${a} — ${b} [${src}]`); };
-for (const r of (Array.isArray(seed) ? seed : Object.values(seed))) {
-  if (Array.isArray(r)) add(r[0], r[1], 'seed'); else add(r.artist, r.album, 'seed');
-}
-for (const tier of ['hall', 'pearl', 'heresy']) for (const r of apex[tier]) add(r[0], r[1], 'apex:' + tier);
+for (const r of rows) add(r[0], r[1], r[8] ? `apex:${r[8]}` : 'seed');
 console.log(`線上池去重鍵：${live.size}`);
 
 let hits = 0, n = 0;
