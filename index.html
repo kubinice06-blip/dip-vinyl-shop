@@ -3087,13 +3087,21 @@
       return { moods, rows, openWeight: rows.map(r => Math.pow(Math.max(r.total, 0.01), 4)) };
     }
 
+    // 玩家的加權累積向量（與 classify 同一套軸權重）。單獨抽出來是因為判定完不能再丟掉——
+    // 向量裡除了「最近的心情」還有殘餘方向（判成 still 的人偏 hermit 還是偏 lowtide），
+    // pickCard 的隱形連結要靠它。
+    function vectorOf(optionIds) {
+      const w = moodData.targets._axisWeight || {};
+      const raw = { E: 0, M: 0, X: 0, O: 0, S: 0 };
+      for (const id of optionIds) { const v = moodData.vectors[id]; if (v) for (const k of AXES) raw[k] += (v[k] || 0); }
+      return Object.fromEntries(AXES.map(k => [k, raw[k] * (w[k] ?? 1)]));
+    }
+
     // 五個選項向量相加 →（各軸反比加權，否則 S 軸的訊號量會主導方向）→ 比方向不比長度。
     // 訊號太弱就走 balance 保底，不要硬從噪音裡挑一個原型。
     function classify(optionIds) {
-      const t = moodData.targets, w = t._axisWeight || {};
-      const raw = { E: 0, M: 0, X: 0, O: 0, S: 0 };
-      for (const id of optionIds) { const v = moodData.vectors[id]; if (v) for (const k of AXES) raw[k] += (v[k] || 0); }
-      const sum = Object.fromEntries(AXES.map(k => [k, raw[k] * (w[k] ?? 1)]));
+      const t = moodData.targets;
+      const sum = vectorOf(optionIds);
       const m0 = Math.hypot(...AXES.map(k => sum[k]));
       if (m0 < (t._minMagnitude ?? 1.8)) return 'balance';
       const scale = 2.4 / m0;
@@ -3163,7 +3171,24 @@
     // 抽卡：先抽同心情沒看過的，抽光了才借鄰居心情的卡（判錯落在鄰居，玩家不會覺得突兀）。
     // balance 在鄰居表裡是孤島（座標全零跟誰都等距），借不到也不該借——
     // flame 的段落開頭「你現在有火」給一個沒有傾向的玩家看會很突兀。
-    function pickCard(mood, seen) {
+    // 殘餘指紋：卡在「本池心情以外」掛的心情 target 相加後正規化。
+    // 池內人人都掛本池心情，把它算進去只是共同項，分不出誰跟誰。
+    const _residDir = {};
+    function residDirOf(key, mood) {
+      const ck = `${key}@@${mood}`;
+      if (_residDir[ck]) return _residDir[ck];
+      const d = { E: 0, M: 0, X: 0, O: 0, S: 0 };
+      for (const m2 of Object.keys(moodBank.passages[key])) {
+        if (m2 === mood) continue;
+        const t = moodData.targets[m2];
+        if (t) for (const k of AXES) d[k] += t[k] || 0;
+      }
+      const n = mag(d);
+      if (n > 1e-9) for (const k of AXES) d[k] /= n;
+      return _residDir[ck] = d;
+    }
+
+    function pickCard(mood, seen, vec) {
       const cardsFor = m => Object.keys(moodBank.passages).filter(k => moodBank.passages[k][m]);
       const fresh = list => list.filter(k => {
         const c = moodBank.cards[k];
@@ -3179,7 +3204,23 @@
       if (!pool.length) { m = mood; pool = cardsFor(mood); }   // 全看過了就重複抽，總比抽不到好
       if (!pool.length) return null;
 
-      const key = pool[Math.floor(Math.random() * pool.length)];
+      // 隱形連結第一層（2026-08-31）：同池不再均勻抽。判成 still 的兩個玩家，
+      // 一個偏 hermit、一個偏 lowtide——這個殘餘方向以前判定完就丟掉了。
+      // 改成按「玩家向量 × 卡片殘餘指紋」加權：偏 hermit 的 still 玩家，
+      // 更容易抽到同時掛 hermit 的那批卡。介面零洩漏，玩家只會覺得比較準。
+      // k=8＋均勻保底 0.25 是 card-sim.mjs 掃出來的取捨：貼合率（抽到的卡也掛
+      // 玩家第二近心情）23%→59%、有效卡數 55→37（一趟最多抽 4 張，感覺不到差），
+      // 保底保證每張卡都有機率，不會有整批卡餓死。
+      let key;
+      const vn = vec ? mag(vec) : 0;
+      if (vn > 1e-9) {
+        let w = pool.map(k => Math.exp(8 * dot(vec, residDirOf(k, m)) / vn));
+        const S = w.reduce((a, b) => a + b, 0);
+        w = w.map(x => 0.75 * x / S + 0.25 / pool.length);   // 加權後總和為 1
+        let x = Math.random(), i = 0;
+        for (; i < pool.length - 1; i++) { x -= w[i]; if (x <= 0) break; }
+        key = pool[i];
+      } else key = pool[Math.floor(Math.random() * pool.length)];
       const variants = moodBank.passages[key][m] || [];
       if (!variants.length) return null;
       // 同一張卡同一種心情再抽到時輪替變體，不要每次都同一段
@@ -3202,7 +3243,7 @@
       return true;
     }
 
-    return { load, prepare, classify, nextQuestion, pickCard, get ready() { return !!(moodData && moodBank && moodPrep); } };
+    return { load, prepare, classify, vectorOf, nextQuestion, pickCard, get ready() { return !!(moodData && moodBank && moodPrep); } };
   })();
 
   let quizQs = [];
@@ -3501,7 +3542,7 @@
         .filter(q => quizAnswers[q.id] !== undefined)
         .map(q => `${q.id}-${quizAnswers[q.id]}`);
       const mood = DipMood.classify(optionIds);
-      const pick = DipMood.pickCard(mood, seenAlbums);
+      const pick = DipMood.pickCard(mood, seenAlbums, DipMood.vectorOf(optionIds));
       if (!pick) throw new Error('這個心情的卡都抽過了，再測一次換個心情吧');
 
       const cover = await fetchSpotifyCover(pick.artist, pick.album).catch(() => ({}));
