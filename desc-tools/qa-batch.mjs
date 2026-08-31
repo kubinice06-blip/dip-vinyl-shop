@@ -45,8 +45,29 @@ const ALLOW = [...new Set([
   ...cards.flatMap(x => String(x.key).replace(/^desc[24]:/, '').split('|'))
     .filter(s => s.length > 1),
 ])].sort((a, b) => b.length - a.length);
+// 研究稿的 keyTracks 依定義就是**原文曲名**，照規則要照官方原文保留。
+// 但它們常常不被《》〈〉包起來（欄位本身就是曲名陣列），也不在卡單的
+// artist|album 白名單裡，於是每一批都會誤報：崔健〈一无所有〉的官方簡體字、
+// はっぴいえんど〈風来坊〉的日文原題、Verbal Jint 的本名 김진태 與曲名 좋아보여。
+// 2026-08-31 三批各中一次，全是誤報。掃描前把 keyTracks 的值一併剝除。
+let KEYTRACKS = [];
+const collectKeyTracks = obj => {
+  const out = [];
+  const walk = v => {
+    if (Array.isArray(v)) v.forEach(walk);
+    else if (v && typeof v === 'object') {
+      for (const [k, x] of Object.entries(v)) {
+        if (k === 'keyTracks' && Array.isArray(x)) x.forEach(t => typeof t === 'string' && out.push(t));
+        else walk(x);
+      }
+    }
+  };
+  walk(obj);
+  return out;
+};
 const stripLegit = s => {
   let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '');
+  for (const a of KEYTRACKS) t = t.split(a).join('');
   for (const a of ALLOW) t = t.split(a).join('');
   return t;
 };
@@ -80,7 +101,10 @@ if (stage === 'research') {
     let r; try { r = JSON.parse(s); } catch (e) { warn(g, 'JSON 損壞:', e.message); continue; }
     if (!Array.isArray(r) && r && typeof r === 'object' && stage === 'research') r = Object.values(r);
     console.log(g, r.length, r.map(x => x.status).join(','));
+    // 曲名可能含引號、括號等字元，長的先剝以免短的把長的切斷
+    KEYTRACKS = collectKeyTracks(r).filter(x => x.length > 1).sort((a, b) => b.length - a.length);
     charScan('research-' + g, s);
+    KEYTRACKS = [];
     r.forEach(x => {
       all.push(x.key);
       if (!cardKeys.has(x.key)) warn(g, 'key 不在卡單:', JSON.stringify(x.key));
