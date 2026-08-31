@@ -1,0 +1,74 @@
+{
+ "batch": "c48",
+ "cards": 97,
+ "skipped": 2,
+ "generatedAt": "2026-08-29",
+ "pendingLocal": {
+  "covers": "全部（CAA 逐張 HTTP 驗證與人工目視是本機工項）",
+  "previews": "全部（iTunes /lookup 雲端 egress 不穩，且版本需人工覆核）",
+  "listeners": "全部（Last.fm 為本機工項；本批一律留 null）",
+  "ratings": "無——古典依 §0.7 一律走 manual:classical-rubric 人工錨點制、不用 API，雲端已完成。",
+  "apexEvidence": [
+   "Martha Argerich|Liszt: Piano Sonata in B minor",
+   "The Hilliard Ensemble|Ockeghem: Requiem / Missa Mi-Mi",
+   "Diabolus in Musica|Dufay: Missa Se la face ay pale",
+   "Ensemble Organum|Chants de l'Église de Rome: Période byzantine",
+   "La Venexiana|Monteverdi: Selva morale e spirituale",
+   "Jascha Heifetz|Korngold: Violin Concerto"
+  ],
+  "manualIdentity": [
+   "Yan Liangkun 嚴良堃|黃自: 長恨歌"
+  ],
+  "compilationsNeedingReview": [
+   "Sviatoslav Richter|Schubert: Wanderer Fantasy (EMI 1963)",
+   "Kathleen Ferrier|Brahms: Alto Rhapsody (Krauss 1947)",
+   "Arthur Rubinstein|Chopin: Polonaises (1964)",
+   "Martha Argerich|Saint-Saëns: Le Carnaval des animaux",
+   "Grumiaux Trio|Mozart: Complete String Quintets",
+   "Jascha Heifetz|Korngold: Violin Concerto"
+  ]
+ },
+ "counts": {
+  "apexCandidates": 36,
+  "apexByTier": {
+   "hall": 29,
+   "pearl": 7
+  },
+  "pinnedMbid": 96,
+  "manualIdentity": 1
+ },
+ "skippedDetail": [
+  {
+   "artist": "The Tallis Scholars",
+   "album": "Palestrina: Missa Papae Marcelli",
+   "reason": "MB 沒有 Gimell 的 Palestrina 單獨發行 RG 收《Missa Papae Marcelli》，依 README 硬規則第 3 條放棄硬釘。查過的查詢式與結果：(1) release-group/?query=artist:\"Tallis Scholars\" AND releasegroup:Palestrina（10 筆全覽）；(2) 逐一調 release-group/{id}?inc=releases 覆核 61548997、b47fe5d5、1cbc5344。結論：Tallis Scholars 錄過兩次 Missa Papae Marcelli，兩次都與 Allegri《Miserere》同碟——1980 年 Gimell 首發（RG 6eff5497-8f42-3f81-b1cd-c8cca32ce523「Allegri: Miserere / Palestrina: Missa Papae Marcelli / Mundy: Vox Patris Caelestis」1980-10，另有重複 RG ba47bfbf）**就是池內既有卡『The Tallis Scholars｜Allegri: Miserere』(1980) 的同一張碟**，釘它即同碟收兩張；2007 年重錄（RG 61548997，release d619520e，Gimell，GB，2007-03-20）雖是不同錄音、不同 RG，但內容一樣是 Miserere ＋ Missa Papae Marcelli 的組合盤，與池內既有卡曲目高度重疊，同樣不宜。**建議主線的替代方案**：改收 Gimell 的 Palestrina 單獨盤 RG b47fe5d5-8489-49ab-9d49-9012f1a613be「Palestrina Masses」＝《Missa Assumpta est Maria / Missa Sicut lilium》（release ea312027 1989-02 GB、83593e42 2001-04 GB；primary-type Album、secondaryTypes 空），這張是 Palestrina 單一作曲家、與池內無曲目重疊，且經查證獲 **1991 年 Gramophone 早期音樂獎**，頂點資格也比原目標好證。若採用，卡名建議「Palestrina: Missa Assumpta est Maria」、年份 1989。此替代未經主線裁定，故未逕自放進 albums。",
+   "from": "cand-C.json"
+  },
+  {
+   "artist": "Gothic Voices",
+   "album": "Hildegard von Bingen: A Feather on the Breath of God",
+   "reason": "**與現池重複，依 §1 去重先行退回。** 池內 seed_cards.json 已存在完全相同的卡：[\"Gothic Voices\", \"A Feather on the Breath of God\", 3, 4, 2, [\"classical\"], 1982, \"Hildegard von Bingen\"]——artist 相同、專輯同一張（Hyperion，Christopher Page／Emma Kirkby）、年份同為 1982、作曲家欄也已填 Hildegard von Bingen。稽核把它列進軸線 2 必補清單應是漏查。MB 端資料一併記錄供對帳：RG 247d3e59-801b-373f-8adc-0951f9baed7f「A Feather on the Breath of God」，first-release-date 1985-04，掛名 Abbess Hildegard of Bingen, Gothic Voices, Christopher Page, Emma Kirkby——**若主線想補既有卡的 rgMbid，用這一個**（另一筆候選 b61c6fd1 掛名 Erin Jacobsen，是同名不同人的作品，不可用）。另注意池內另有 Sequentia《Hildegard von Bingen: Canticles of Ecstasy》(1994)，Hildegard 已有兩張，不缺。",
+   "from": "cand-C.json"
+  }
+ ],
+ "qa": {
+  "research": "c48a／c48b／c48c 三批 qa-batch research 全部通過：key 與卡單完全一致、字元三掃描零標記。status 共 96 full ＋ 1 thin（嚴良堃《長恨歌》，見 poolIssues）。",
+  "hooks": "chk-hook-crossgroup 三批全綠。c48b 有一項「辭世 ×2」的同構命中，經複核為誤報——兩張分屬不同敘事角色（Lassus 是題獻教宗後三週辭世的時序註記、Purcell 是總譜在他身後散佚的流傳史），兩張 hook 都沒用這個骨架當主軸。hook 加權 20–35.5、note 285–350，全部在上限內。",
+  "out": "qa-batch out 三批合計 97 張與卡單相符、超過 260 字零張、字數 167–240。qa-check-research 15 檔共 2 個標記，複核後皆為誤報：研究稿寫廠牌縮寫（DG 2530 720、RCA Victor Red Seal 的 LSC-2603），寫作層展開或相鄰寫出，比對器認不得縮寫；兩張的發行事實在事實表裡都有據。"
+ },
+ "rulings": [
+  "【年份口徑：定為錄音年】research-base 說 yearVerified.year 取首發年，audits/audit-classical.md 風險註 6 與池內慣例（Gould 1955、Richter 1958、Furtwängler 拜魯特 1951）用錄音年。**以池內慣例為準，取錄音年**——既有卡片已經那樣填，改成首發年反而會讓同一批古典卡前後不一致。首發年一律另記在 yearVerified.note，本機若要翻案可一鍵切換、不必重跑。",
+  "【傅聰《Chopin: Nocturnes》：定為 1978】碟面 ℗ 1978／1980 跨兩年。依上一條的錄音年口徑，取首張 LP 年 1978，亦與卡名一致。",
+  "【Michelangeli《Beethoven / Galuppi / Scarlatti Recital》：不是選輯】MB 的 Compilation 標記與事實不符——這套曲目 1965 年就以單張原創獨奏會 LP 發行（Decca SXL 6181／LXT 6181，美版 London CS 6446／CM 9446），曲目與 1988 年 CD 完全相同。已移除 secondaryTypes 的 Compilation 與 §5.6 舉證欄，原舉證網址移入 versionNote 供覆核。"
+ ],
+ "ownerDecisions": [],
+ "poolIssues": [
+  "【嚴良堃《黃自: 長恨歌》：只有本機能解】錄音本體五個途徑全查無：MB 條碼 4892440722422 零結果、Discogs 條碼 API 與關鍵字皆無、Apple/iTunes 港台區無、雨果豆瓣目錄無、香港聖樂團官網 1995–2002 大事記無 1999 年紀錄。演出者、日期、編號 HRP 7224-2、發行年全部未證實，facts 一律未寫。不建議移除（原創錄音、作品有明確歷史定位）。**需要實體碟才能往下走**，在那之前簡介只寫作品與人物——已照此執行，該卡正文 167 字元，低於 180 目標下限但屬正確結果。",
+  "【掛名格式：Tai-Hsiang Li 李泰祥】中英並列的寫法與本批其餘卡不一致。本批未動它——統一格式牽涉卡池既有卡的一致性，屬本機的全池決定，不宜由單一批次片面改。",
+  "【2026-08-29 對線上池重驗去重】c-47 上架後（seed 11,866 → 12,005、apex hall +31），以 batch-progress/dedup-vs-live.mjs 對本批 97 張重跑撞卡檢查：線上去重鍵 12,906，**撞卡 0 張**。本批當初是對 c-47 的未發布候選檔去重的，該批真的進池後必須再驗一次才算數；日後任一兄弟批次上架，都應重跑這支。",
+  "【掛名正規化：已處理 6 處】「Lang Lang 郎朗」→「Lang Lang」（1 處）、「鄧麗君」→「鄧麗君 Teresa Teng」（5 處）。合作卡（A & B、A / B）一律不動，那是多位演奏者不是掛名分裂。"
+ ],
+ "specConflicts": [
+  "【qa-check-hooks.mjs 不在 repo 裡】qa-batch.mjs 的 hooks 階段原本無條件 execSync 這支不存在的腳本，把「檔案不存在」和「檢查不通過」都算成一個標記，雲端每次跑必然多一個假標記。已改為先驗檔案存在與否、缺檔就提示改跑 chk-hook-crossgroup.mjs（字數／禁語／開頭雷同／分數星等這些檢查該支都齊備）。**這條要本機決定**：本機那支要提交進 repo，還是把 qa-batch 的呼叫改掉——雲端看不到本機檔案，無從代決。"
+ ]
+}

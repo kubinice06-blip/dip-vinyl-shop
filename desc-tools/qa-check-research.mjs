@@ -17,8 +17,11 @@ for (const r of rows) {
   if (!src) { console.log('⚠ 找不到輸入資料：', r.key); issues++; continue; }
   const n = Array.from(r.desc || '').length;
   if (n < 80 || n > 280) e.push('字數' + n);
-  // 《》內是原始標題（書名／專輯名），禁語只約束自己的行文、不約束專名
-  const proseR = String(r.desc).replace(/《[^》]*》/g, '');
+  // 《》與〈〉內是原始標題，禁語只約束自己的行文、不約束專名。
+  // 舊版只剝《》漏了〈〉，而本專案的**曲名一律用〈〉**——華語批的曲名極常帶「你」
+  // （〈我只在乎你〉〈讀你〉），每批都會誤報一輪。禁「你」擋的是第二人稱稱呼讀者，
+  // 不是標題用字。
+  const proseR = String(r.desc).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '');
   if (BANNED.test(proseR)) e.push('禁語:' + (proseR.match(BANNED) || [''])[0]);
   if (/^這張專輯/.test(r.desc)) e.push('「這張專輯」開頭');
   // hook 前綴比對：忽略半形空格差異（審稿層的中英空格補丁不算改動 hook）

@@ -14,3 +14,6 @@ cover-edition-sheet-*.html
 cover-edition-thumbs/
 batch-progress/pool-data/
 cover-audit-sheet-*.html
+# MB 覆核的中途快取。verify-mbid.mjs 每查一張就落一次檔以便續跑，
+# 跑到一半的版本進版控只會製造沒有意義的 diff；跑完的結論寫進 handoff。
+batch-progress/*/verify-mbid-out.json

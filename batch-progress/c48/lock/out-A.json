@@ -19,10 +19,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "跨來源長期樂評共識：Gramophone 的貝多芬 50 大錄音專題收錄，發行當時即被譽為「錄音史的榮光之一」，Warner/EMI 持續以傳奇再版形態維持在目錄內。",
+    "reason": "具體收錄：EMI《Great Recordings of the Century》。已向 MusicBrainz 的 GROC 系列實體（096c110a）逐筆核對 150 筆成員，該系列收有 Klemperer／Philharmonia 的《Fidelio》；EMI 亦以 GROC 版號單獨發行（EMI Classics 5 67361 2 / 5 67364 2）。",
     "evidenceUrls": [
-     "https://www.gramophone.co.uk/review/beethoven-fidelio-11",
-     "https://www.gramophone.co.uk/features/article/the-50-best-ludwig-van-beethoven-recordings"
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+     "https://www.amazon.com/Beethoven-Fidelio-Great-Recordings-Century/dp/B00004VVZB"
     ],
     "evidence": ""
    },
@@ -48,10 +48,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "EMI 收入 Great Recordings of the Century 傳奇再版系列（§0.7 明列為 classic=5 的有效依據），且為古典錄音史上最著名的一次巨星集結，Warner Classics 官方目錄仍以此定位維護。",
+    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Beethoven: Triple Concerto / Brahms: Double Concerto」，即本 1969 錄音的 GROC 版（與 Szell／Cleveland 的布拉姆斯雙重協奏曲同碟發行）。",
     "evidenceUrls": [
-     "https://www.warnerclassics.com/release/beethoven-triple-concerto-violin-cello-and-piano-c-major-op-56",
-     "https://www.audaud.com/beethoven-triple-concerto-brahms-violin-concerto-double-concerto-david-oistrakh-violin-mstislav-rostropovich-cello-sviatoslav-richter-pianoberlin-philharmonic-herbert-von-karajan-beethov/"
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+     "https://www.amazon.com/Beethoven-Triple-Concerto-Brahms-Double/dp/B00000I7VO"
     ],
     "evidence": ""
    },
@@ -75,14 +75,11 @@
    "curatorWhy": "費雪迪斯考與 Gerald Moore 的 DG 舒伯特三大套曲是 20 世紀藝術歌曲錄音的基準線，《天鵝之歌》是三者中最晚錄、也是 Moore 引退前的收尾之作。卡池已有 DFD 的《冬之旅》與《美麗的磨坊少女》，獨缺《天鵝之歌》，補上即補齊舒伯特套曲三部曲。",
    "curatorRisk": "卡池既有 DFD《冬之旅》標 1985、《美麗的磨坊少女》標 1962，年份體系混雜（不同年代不同搭檔），三張並列時玩家不易分辨是同一套計畫；主線若要統一，需另行檢查那兩張的版本歸屬。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "DFD／Moore 的 DG 舒伯特歌曲全集是藝術歌曲錄音的公認正典，DG 至今以「Complete Lieder Recordings」形態維護；本張為該計畫的《天鵝之歌》定本。線上僅能取得 DG 官方目錄與 Presto 產品頁，未查到 Gramophone／企鵝的逐張評等原文，證據待本機補。",
-    "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/artists/dietrichfischerdieskau/dietrich-fischer-dieskau-complete-lieder-recordings-on-deutsche-grammophon-2322",
-     "https://www.prestomusic.com/classical/products/7924325--schubert-schwanengesang"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 DG「The Originals」系列（252 筆成員），DFD／Moore 的《天鵝之歌》不在其中；EMI GROC 與 Decca Legends 不適用（本張為 DG）。查到的是「DG 舒伯特歌曲全集的定本」這類演奏者代表作定位，而非上述任一具體收錄或上榜。",
+    "evidenceUrls": [],
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -106,10 +103,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone 明確定位為錄音室內樂最早的經典之一；三人組合本身即是演奏史地標，Pristine 等修復廠牌持續以「historic recordings」正典形態發行。",
+    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Beethoven: Piano Trio in B-flat, op. 97 'Archduke' / Schubert: Piano Trio no. 1 in B-flat, D 898」，即 Cortot／Thibaud／Casals 這批 78 轉母帶的 GROC 版；本卡釘的 f08bd9c3 是同一份 1926 錄音的單曲修復盤。",
     "evidenceUrls": [
-     "https://www.gramophone.co.uk/reviews/cortot-thibaud-casals-trio-historic-recordings",
-     "https://www.pristineclassical.com/products/pacm021"
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+     "https://www.gramophone.co.uk/reviews/cortot-thibaud-casals-trio-historic-recordings"
     ],
     "evidence": ""
    },
@@ -131,7 +128,7 @@
    "firstRelease": "2004",
    "suggestedYear": 1963,
    "yearNote": "錄音年 1963（1963 年 2 月 11–13、16、18 日，巴黎 Salle Wagram，EMI）。MB first-release 2004 是 EMI Classics 7243 5 62960 2 2 這次傳奇系列再版的年份（release 層已確認），非錄音年。同碟的舒曼《幻想曲》為 1961 年錄音，故本卡年份以主曲目《流浪者幻想曲》的 1963 為準，並在專輯名括註廠牌年份區辨。",
-   "versionNote": "李希特的《流浪者幻想曲》只有 EMI 1963 這一份錄音室版，要處理的是曲目編成與掛名污染。821061f2 把它與 1976 年 Kleiber／巴伐利亞廣播的德弗札克鋼琴協奏曲併碟，掛名帶進指揮與樂團，對一張獨奏卡是錯誤身分；702ab18b 是貝多芬奏鳴曲＋舒曼《維也納狂歡節》的大雜燴；14c39d61 掛 Borodin Quartet，主曲目是《鱒魚》五重奏。4b9e1129 是 EMI 以李希特獨奏舒伯特／舒曼為主軸的單碟編成，最貼近稽核意圖。",
+   "versionNote": "李希特的《流浪者幻想曲》只有 EMI 1963 這一份錄音室版，要處理的是曲目編成與掛名污染。702ab18b 是貝多芬奏鳴曲＋舒曼《維也納狂歡節》的大雜燴；14c39d61 掛 Borodin Quartet、主曲目是《鱒魚》五重奏，都排除。真正的取捨在另外兩筆同樣承載 1963 母帶的 RG：821061f2「Dvořák: Piano Concerto / Schubert: “Wanderer” Fantasy」是 **EMI Great Recordings of the Century 的發行編成**（已向 MB 的 GROC 系列實體核對到），且 secondaryTypes 為空、不需 §5.6 舉證；但它的掛名帶進 Carlos Kleiber 與巴伐利亞廣播交響樂團、頭牌曲目是 1976 年的德弗札克鋼琴協奏曲，對一張獨奏卡會造成身分與封面雙重誤導。因此卡片改釘 4b9e1129（EMI Classics 7243 5 62960 2 2，李希特獨奏舒伯特／舒曼單碟），接受它帶 Compilation secondary type 並依 §5.6 補舉證；頂點依據則引用同一份母帶的 GROC 收錄事實。",
    "curatorWhy": "李希特的《流浪者幻想曲》長年被視為此曲的參照版本，EMI 將其收入世紀傳奇系列（Great Artists of the Century）再版。卡池的李希特已有貝多芬《熱情》、舒伯特 D 960、舒曼幻想曲、普羅高菲夫七號與索菲亞獨奏會，唯獨缺這張他最著名的舒伯特炫技曲。",
    "curatorRisk": "**同碟重疊風險**：卡池已有「Sviatoslav Richter | Schumann: Fantasie op. 17 | 1959」，而本 RG 的第二套曲目正是舒曼《幻想曲》（EMI 1961）。兩張卡不會撞 key，但實體上有部分曲目重複，主線需決定是否接受；本卡專輯名已刻意限定在《流浪者幻想曲》以降低混淆。另本 RG 帶 Compilation secondary type，已依 §5.6 補舉證。",
    "exceptionReason": "EMI 世紀傳奇再版系列的李希特舒伯特／舒曼單碟，是此二曲目最通行的正典入口，非促銷拼盤；1963 年 Salle Wagram 母帶的權威編成僅此一種。",
@@ -142,10 +139,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "收入 EMI 大廠傳奇再版系列（Great Artists of the Century），符合 §0.7 所列 classic=5 有效依據；此錄音長年被列為《流浪者幻想曲》的首選之一。",
+    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Dvořák: Piano Concerto / Schubert: “Wanderer” Fantasy」，承載的正是李希特 1963 年 Salle Wagram 的《流浪者幻想曲》母帶（見 versionNote 說明為何卡片改釘獨奏編成的 4b9e1129 而非該 GROC 併碟）。",
     "evidenceUrls": [
-     "https://www.allmusic.com/album/schubert-wanderer-fantasy-mw0001840629",
-     "https://www.discogs.com/release/21101926-Sviatoslav-Richter-Schubert-Schumann-Schubert-Wanderer-Fantasy-Schumann-Fantasy-Papillons"
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+     "https://www.allmusic.com/album/schubert-wanderer-fantasy-mw0001840629"
     ],
     "evidence": ""
    },
@@ -167,14 +164,11 @@
    "curatorWhy": "布拉姆斯晚期單簧管五重奏的德系標準版本：Leister 的柏林愛樂首席音色與 Amadeus 的維也納式樂句，是 DG 布拉姆斯室內樂全集的核心單張。卡池的單簧管五重奏（布拉姆斯與莫札特皆然）目前完全空白，Leister 掛名為 0 張，一卡補兩個缺口。",
    "curatorRisk": "MB 該 RG 僅一筆條目、無 release 層細節與封面來源，封面解析可能落空需本機補；Amadeus Quartet 在卡池已有兩張（海頓 op.76、舒伯特弦樂五重奏），第三張需確認不造成單一團體過度集中。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "DG 布拉姆斯室內樂全集的定本單張，長年被列為本曲的德系首選之一（多方推薦清單並列 Leister／Amadeus 為三大推薦版本）。線上僅取得 Discogs 原盤資料與樂迷推薦串，未能取得 Gramophone／企鵝的原始評等，證據待本機補。",
-    "evidenceUrls": [
-     "https://www.discogs.com/release/2201005-Brahms-Amadeus-Quartett-Karl-Leister-Klarinettenquintett-H-Moll-Op-115",
-     "https://archive.org/details/lp_klarinettenquintett-h-moll_johannes-brahms-amadeus-quartett-karl-leis"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 DG「The Originals」系列（252 筆成員），Leister／Amadeus 的布拉姆斯單簧管五重奏不在其中。查到的是 Discogs 原盤資料與樂迷推薦清單並列，而非上述任一具體收錄或上榜。",
+    "evidenceUrls": [],
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -198,10 +192,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone 年度室內樂唱片獎（1981 年 3 月號公布），屬跨來源長期樂評共識；DG 官方目錄至今以代表作定位維護。",
+    "reason": "具體收錄：DG《The Originals》。已向 MB 的 DG/Archiv「The Originals」系列實體（3eec5213）核對 252 筆成員，其中列有「Klavierquintett, op. 34」即本張；另有 Gramophone 1981 年度室內樂唱片獎（1981 年 3 月號公布）為第二項具名依據。",
     "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/catalogue/products/brahms-piano-quintet-op-34-pollini-3593",
-     "https://www.prostudiomasters.com/album/page/10808"
+     "https://musicbrainz.org/series/3eec5213-6e04-4982-8a54-4539ab469f11",
+     "https://www.deutschegrammophon.com/en/catalogue/products/brahms-piano-quintet-op-34-pollini-3593"
     ],
     "evidence": ""
    },
@@ -227,10 +221,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "ClassicsToday 以 Reference Recording 專題定位，Decca 收入 Legends 傳奇再版系列（§0.7 明列為有效依據），Eloquence 亦以「Katchen — The Brahms Recordings」全集形態持續發行。",
+    "reason": "具體收錄：Decca《Legends》傳奇再版系列，版號 466 393-2（Decca Legends：Katchen — Brahms Violin Sonatas），2001 年發行。",
     "evidenceUrls": [
-     "https://www.classicstoday.com/review/review-5742/",
-     "https://www.eloquenceclassics.com/releases-archive/julius-katchen-the-brahms-recordings/"
+     "https://pianistdiscography.com/discography/pianistLabel.php?cdnum=1741",
+     "https://www.prestomusic.com/classical/products/7931908--brahms-violin-sonatas-nos-1-3"
     ],
     "evidence": ""
    },
@@ -254,14 +248,11 @@
    "curatorWhy": "華爾特晚年為立體聲重錄的哥倫比亞交響樂團布拉姆斯全集，是這套曲目最溫暖也最常被引用的老派讀法；第二號《田園交響曲》性格的作品尤其被視為他的本命。卡池已有華爾特的布拉姆斯第四號與貝多芬《田園》，補上第二號可讓同一套錄音計畫在卡池內成對。",
    "curatorRisk": "哥倫比亞交響樂團是為華爾特錄音臨時編組的樂團，樂評對其編制與音響厚度長期有保留；同一批母帶有 1959／1960 多次錄音日期記載，本機接手時仍宜以 Sony 官方 booklet 覆核。卡池已有華爾特四張，需注意單一指揮集中度。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "華爾特／哥倫比亞交響樂團的立體聲布拉姆斯全集是 Sony 長年以「Bruno Walter Edition」維護的正典錄音，本張為該全集核心單張。線上僅取得 Discogs 原盤與高解析重製資料，未能取得 Gramophone／企鵝逐張評等，證據待本機補。",
-    "evidenceUrls": [
-     "https://www.discogs.com/master/716571-Brahms-Columbia-Symphony-Orchestra-Bruno-Walter-Symphony-No-2-In-D-Op-73",
-     "https://www.highdeftapetransfers.ca/products/brahms-symphony-no-2-bruno-walter-conducts-the-columbia-symphony-orchestra-pure-dsd"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：CBS／Sony 母帶，EMI GROC、DG The Originals、Decca Legends 三個系列均不適用，Living Stereo 為 RCA 亦不適用；Sony 的華爾特再版走「Bruno Walter Edition」，不在 README 所列名單內。查到的是「立體聲布拉姆斯全集核心單張」這類代表作定位。",
+    "evidenceUrls": [],
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -290,13 +281,10 @@
     "https://www.eloquenceclassics.com/releases-archive/clemens-krauss-complete-decca-recordings/"
    ],
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Decca 官方以費莉亞布拉姆斯專輯形態長期維護，Eloquence 的 Krauss 全集文案直接稱其為「famous account of the Alto Rhapsody」；本錄音為費莉亞演唱史的代表作之一。",
-    "evidenceUrls": [
-     "https://www.deccaclassics.com/en/catalogue/products/kathleen-ferrier-brahms-2186",
-     "https://www.eloquenceclassics.com/releases-archive/clemens-krauss-complete-decca-recordings/"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 Decca Legends 系列（79 筆成員），費莉亞的《女低音狂想曲》不在其中（該系列的 Alto Rhapsody 是另一張指揮盤）；本卡釘定的 RG 實為 Naxos Historical 復刻，非大廠傳奇系列。查到的是 Decca 官方與 Eloquence 文案的「famous account」定位。",
+    "evidenceUrls": [],
     "evidence": ""
    },
    "genreFamily": "classical"
@@ -319,10 +307,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone 評為「unsurpassed liquid beauty」，DG 至今以溫德利希／Giesen 專屬系列維護，是抒情男高音演唱《詩人之戀》的跨世代參照版本。",
+    "reason": "具體收錄：DG《The Originals》。MB 的 DG「The Originals」系列成員清單中列有「Schumann: Dichterliebe / Schubert, Beethoven: Lieder」，標題與本卡釘定的 RG 完全一致。",
     "evidenceUrls": [
-     "https://www.prestomusic.com/classical/products/7930711--schumann-dichterliebe",
-     "https://store.deutschegrammophon.com/en-en/collections/fritz-wunderlich-hubert-giesen"
+     "https://musicbrainz.org/series/3eec5213-6e04-4982-8a54-4539ab469f11",
+     "https://www.prestomusic.com/classical/products/7930711--schumann-dichterliebe"
     ],
     "evidence": ""
    },
@@ -348,9 +336,9 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "EMI Great Recordings of the Century 收錄，企鵝指南帶花（Rosette）評等，長年被稱為蕭邦圓舞曲的最高標準——三項獨立依據均符合 §0.7 的 classic=5 條件。",
+    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Waltzes nos. 1-14 / Barcarolle op. 60 / Nocturne op. 27 no. 2 / Mazurka op. 50 no. 3」，即本卡 RG 的 EMI 再版編成；李帕第基金會亦以 GROC 專頁列出。另有企鵝指南帶花評等。",
     "evidenceUrls": [
-     "https://www.gramophone.co.uk/reviews/dinu-lipatti-plays-chopin",
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
      "https://www.dinulipatti.org/great-recordings-of-the-century-chopin-fr-a110"
     ],
     "evidence": ""
@@ -382,13 +370,10 @@
     "https://www.discogs.com/release/8068670-Chopin-Arthur-Rubinstein-7-Polonaises"
    ],
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "魯賓斯坦的波蘭舞曲被廣泛列為此曲目的參照版本（「no performance surpasses Rubinstein's readings」），RCA 以《The Chopin Collection》大廠正典系列長期維護。",
-    "evidenceUrls": [
-     "https://www.discogs.com/release/10461707-Chopin-Artur-Rubinstein-The-Chopin-Collection-Polonaises",
-     "https://en.wikipedia.org/wiki/Arthur_Rubinstein"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 RCA「Living Stereo」系列（82 筆成員），魯賓斯坦 1964 年波蘭舞曲不在其中（該系列命中的是 Heifetz 的布魯赫《蘇格蘭幻想曲》）；RCA《The Chopin Collection》不在 README 所列的名單內。查到的是「no performance surpasses Rubinstein's readings」這類評價，而非具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    },
    "genreFamily": "classical"
@@ -411,12 +396,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone「Top 15 Liszt recordings」專題收錄並以最高規格評述，屬跨來源長期樂評共識；DG 持續以傳奇錄音形態再版。",
+    "reason": "正面依據：Gramophone「Top 15 Liszt recordings」專題收錄，評語為最高規格。已逐筆核對 MB 的 DG「The Originals」系列（252 筆），**本張不在其中**；Gramophone 名人堂亦無法線上確認收錄名單。真正可能收錄本張的是**企鵝指南帶花**與**《唱片藝術》名曲名盤**這兩份紙本名單，雲端連不到，依硬規則 1 不因此降級，evidence 標 pending-local，請本機以這兩份名單覆核。",
     "evidenceUrls": [
      "https://www.gramophone.co.uk/features/article/top-15-liszt-recordings",
      "https://www.prestomusic.com/classical/products/7990554--liszt-sonata-in-b-minor"
     ],
-    "evidence": ""
+    "evidence": "pending-local"
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -439,8 +424,8 @@
    "curatorRisk": "MB 掛名寫「Academy Chamber Ensemble」（簡稱），卡片採用完整團名，去重時兩種寫法都要掃。另同團 1989 Chandos 版流通量也高，日後若補入需以廠牌括註區辨。",
    "apexCandidate": {
     "eligible": false,
-    "tier": "",
-    "reason": "查得到的樂評定位是「bracing, warmly expressive」「pleasing immediacy and freshness」等中上評價，未見 Gramophone 獎項、企鵝帶花、名人堂或大廠傳奇系列收錄；判定依據是已取得的評論內容而非查不到資料，故按 §3 預設為一般卡。",
+    "tier": null,
+    "reason": "未達 §3 門檻：查得到的定位是「bracing, warmly expressive」「pleasing immediacy and freshness」等中上評價；EMI GROC 與 Decca Legends 均不適用（Philips 母帶），亦無獎項或名人堂紀錄。",
     "evidenceUrls": [],
     "evidence": ""
    },
@@ -464,13 +449,10 @@
    "curatorWhy": "克倫培勒與 Philharmonia 的孟德爾頌劇樂被 ClassicsToday 稱為「classics among the classics」，Harper 與 Janet Baker 的演唱段落是這份錄音的定音之筆；緩慢而重視聲部平衡的讀法，與後世輕盈派形成對照。卡池的孟德爾頌《仲夏夜之夢》為 0，Janet Baker 早期錄音亦罕見。",
    "curatorRisk": "克倫培勒的速度偏慢，樂評對「仙境輕盈感不足」始終有兩派意見，簡介不宜寫成單向盛讚。卡池已有克倫培勒七張，加上本批的《費黛里奧》將達九張，單一指揮集中度需主線裁定。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "ClassicsToday 以「classics among the classics」定位，Warner/EMI 長期以 Klemperer Legacy 傳奇系列維護（§0.7 明列大廠傳奇再版系列為有效依據）。",
-    "evidenceUrls": [
-     "https://www.classicstoday.com/review/review-3255/",
-     "https://www.discogs.com/master/309462-Otto-Klemperer-Philharmonia-Chorus-Philharmonia-Orchestra-Mendelssohn-A-Midsummer-Nights-Dream"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 EMI GROC 系列（150 筆成員），克倫培勒名下只命中《Fidelio》與布拉姆斯交響曲全集，**孟德爾頌《仲夏夜之夢》不在其中**；Decca Legends 中的《A Midsummer Night's Dream》是 Decca 的另一份錄音，非本張。查到的是 ClassicsToday 的「classics among the classics」評語。",
+    "evidenceUrls": [],
     "evidence": ""
    },
    "genreFamily": "classical",
@@ -493,14 +475,11 @@
    "curatorWhy": "孟德爾頌《無言歌》全集的長期標準錄音，被視為巴倫波因鋼琴獨奏生涯最好的成果之一；FonoForum 與 International Record Review 都以「旋律自然流動、孟德爾頌式的親密感」定位。卡池的巴倫波因只有一張（貝多芬鋼琴協奏曲，1968），且《無言歌》為 0。",
    "curatorRisk": "全集共 48 首＋附曲，單張時長偏長，硬蕊軸需依 §0.7「單張超過兩小時 +1」檢查是否觸發修正。MB 條目資訊極少（無日期、無 release 層細節），封面與 UPC 大機率解不到，需本機補；年份採 1973 與稽核 seed 的 1974 不同，主線評分表請以本欄為準。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "《無言歌》全集的長年參照錄音，DG 以旗艦形態維護並於 2022 年再以 180g 三片黑膠復刻。線上取得的是 DG 官方目錄與 FonoForum／IRR 轉引評語，未能取得 Gramophone／企鵝原始評等，證據待本機補。",
-    "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/catalogue/products/mendelssohn-songs-without-words-barenboim-3811",
-     "https://store.deutschegrammophon.com/en-en/collections/daniel-barenboim/products/daniel-barenboim-mendelssohn-lieder-ohne-worte"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：已逐筆核對 MB 的 DG「The Originals」系列（252 筆成員），巴倫波因的《無言歌》全集不在其中。查到的是 FonoForum 與 International Record Review 的好評，以及 DG 2022 年為其 80 歲生日所做的黑膠復刻，均非上述任一具體收錄或上榜。",
+    "evidenceUrls": [],
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -522,14 +501,11 @@
    "curatorWhy": "帕諾哈四重奏的德弗札克是 Supraphon 的招牌，1982 年這批錄音獲 Supraphon 金唱片，其德弗札克四重奏全集後續拿下 1995 年 Midem Classical Award；「美國」四重奏由捷克本土團體演奏，是這首作品最具語法說服力的一種讀法。卡池的德弗札克弦樂四重奏為 0，帕諾哈掛名為 0。",
    "curatorRisk": "獎項多掛在「帕諾哈的德弗札克四重奏全集」而非這張單碟，直接以獎項當本張的頂點依據有過度延伸之虞，已在 apex 標 pending-local 交由本機裁定。另 MB 標題有錯字，日後任何以 mbTitle 對帳的腳本都會對不上卡名，需留意。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1982 年 Supraphon 金唱片，其德弗札克四重奏錄音獲 1995 年 Midem Classical Award，是捷克本土團體詮釋本曲的代表性文獻。但獎項證據指向的是全集／樂團而非這張單碟，故不以「查不到」降級、改標 pending-local 由本機確認獎項是否可歸屬本張。",
-    "evidenceUrls": [
-     "https://www.supraphon.com/artists/486-panocha-quartet",
-     "https://www.classicstoday.com/review/review-11993/"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：Supraphon 金唱片與 1995 年 Midem Classical Award 都不在 README 所列的五類名單內，且獎項指向的是帕諾哈的德弗札克四重奏全集／樂團而非這張單碟；EMI GROC、DG The Originals、Decca Legends、Living Stereo 均不適用。",
+    "evidenceUrls": [],
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -551,13 +527,10 @@
    "curatorWhy": "塞爾與克里夫蘭的斯拉夫舞曲是這套曲目數十年來未曾退出目錄的參照版本，被視為塞爾錄音中最具詮釋光彩的一批；節奏的稜角與聲部透明度至今仍是後來者的對照組。卡池的德弗札克管弦樂只有第八、第九號交響曲，斯拉夫舞曲為 0。",
    "curatorRisk": "樂評普遍指出 Columbia 當年的錄音音響未跟上演奏水準（「sonics have never matched its artistic value」），對黑膠行顧客在乎的錄音工藝軸是負面因素，簡介不宜以音質為賣點。卡池已有塞爾兩張（貝九、德弗札克第八），需注意重複度。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "塞爾錄音中的詮釋代表作，五十餘年未離開目錄，Sony 持續以重製與 SACD 形態維護，屬跨來源的長期樂評共識。",
-    "evidenceUrls": [
-     "https://www.classicstoday.com/review/review-8876/",
-     "https://www.highresaudio.com/en/review/the-cleveland-orchestra-george-szell-dvork-the-slavonic-dances-remastered"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻：CBS／Sony 母帶，四個大廠傳奇系列均不適用（MB 的 Decca Legends 中雖有「Slavonic Dances, op. 46 & 72」，但那是 Decca 的另一份錄音，不是塞爾／克里夫蘭）。查到的是「五十餘年未離開目錄」這類長銷定位；且樂評普遍指出其錄音音響未及演奏水準，發燒天碟路線亦不成立。",
+    "evidenceUrls": [],
     "evidence": ""
    },
    "genreFamily": "classical",
@@ -582,7 +555,7 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone 1998 年度唱片大獎（Record of the Year，11/98），並獲 2000 年葛萊美最佳歌劇錄音提名——單一錄音層級的最高規格獎項，符合 §3 的跨來源共識要求。",
+    "reason": "具名獎項：Gramophone 1998 年度唱片大獎（Record of the Year，11/98），並獲 2000 年葛萊美最佳歌劇錄音提名。屬單一錄音層級可指名的最高規格認定。",
     "evidenceUrls": [
      "https://www.gramophone.co.uk/reviews/dvor%C3%A1k-rusalka-4",
      "https://www.deccaclassics.com/en/catalogue/products/dvorak-rusalka-renee-flemingben-heppner-5621"
@@ -611,12 +584,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "發燒天碟正典路線：Decca SXL 2092-3 ED1 首版有明確黑膠市場行情，Speakers Corner 以 180g 雙片復刻，樂評形容為「one of the all-time greats from Decca/London」。但我無法線上確認它是否列於 TAS Super LP List 或香港 CD 聖經，依硬規則 1 不因此降級，evidence 標 pending-local 交由本機以榜單原文覆核。",
+    "reason": "發燒天碟正典路線的具體依據：**首版黑膠市場行情**。Decca SXL 2000 系列被黑膠收藏圈列為 Holy Grail 級，安塞美此盤 ED1／WBg 首版拍賣成交達 £170、ED2 盒裝仍掛 $99，Speakers Corner 亦以 180g 雙片復刻。§0.7／README 明列「首版黑膠行情」與詮釋正典並列有效。**已查 TAS Super LP List 各年度版本，本盤不在榜上**，故不以 TAS 為依據。",
     "evidenceUrls": [
-     "https://www.discogs.com/Tchaikovsky-Ansermet-The-Nutcracker-Casse-Noisette-Complete-Ballet/master/433676",
+     "https://www.popsike.com/Decca-SXL-20923-Tchaikovsky-The-Nutcracker-Ansermet/4856928497.html",
      "https://kingswayhallclassics.com/en-us/products/tchaikovsky-the-nutcracker-ansermet-suisse-romande-2lp-sxl-2092-3"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    },
    "genreFamily": "classical",
    "exceptionReason": "",
@@ -639,8 +612,8 @@
    "curatorRisk": "Gramophone 對詮釋有明確保留（「romantic personal impulse rarely comes through」），俄系樂評更普遍偏好本土製作；三小時歌劇全集，硬蕊軸依 §0.7 需 +1 修正。掛名字串極長，前端版面需留意。",
    "apexCandidate": {
     "eligible": false,
-    "tier": "",
-    "reason": "Gramophone 評語為「精準、清晰、有活力，但浪漫的個人衝動少見」「這個版本有不少值得推薦之處」——屬公認的主要版本之一而非跨來源正典共識，亦未見獎項、名人堂或傳奇再版系列收錄。判定依據為已取得的評論內容，非查不到資料，故按 §3 預設為一般卡。",
+    "tier": null,
+    "reason": "未達 §3 門檻：Decca 母帶但不在 MB 的 Decca Legends 系列（79 筆成員）內。Gramophone 評語為「精準、清晰、有活力，但浪漫的個人衝動少見」「這個版本有不少值得推薦之處」，屬公認主要版本之一而非具體收錄或上榜。",
     "evidenceUrls": [],
     "evidence": ""
    },

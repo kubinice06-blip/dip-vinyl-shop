@@ -1,0 +1,30 @@
+[
+ {
+  "key": "desc2:Lang Lang|Bach: Goldberg Variations (2020)",
+  "artist": "Lang Lang",
+  "album": "Bach: Goldberg Variations (2020)",
+  "year": 2020,
+  "genre": "classical",
+  "composer": "J.S. Bach",
+  "label": "",
+  "versionNote": "三個候選：217c7287 是 2021-02-12 的「Goldberg Variations (extended edition)」擴充版，主線已明示不要選；4a5f9bd2（2020，無日）是同一發行的重複建檔，資料較少。取 2162703b＝2020-09-04 的正式發行。album 欄依 audit 風險提醒第 1 條括年——池內《郭德堡變奏曲》已有 Gould 1955／1981、Landowska 1945、陳必先 1988、Hantaï 1993、Ólafsson 2023 共六張，不括年必混。**池內既有兩張郎朗卡掛名為「Lang Lang」（New York Rhapsody、Liszt: My Piano Hero），本卡依派工指示與池內雙語慣例採「Lang Lang 郎朗」，兩者不一致需主線裁示。**",
+  "yearNote": "錄音年 2020：錄音室版 2020-03-15～18 錄於柏林 Jesus-Christus-Kirche；同批另有 2020 年 3 月初在萊比錫聖多馬教堂一次不剪接的現場演奏。DG 於 2020-09-04 同時發行兩種演奏（MB 首發即此日）。錄音年與發行年同為 2020，無落差。",
+  "curatorWhy": "郎朗池內只有跨界與李斯特精選，缺硬曲目代表作；這是他第一次錄製巴哈大部頭，且以「錄音室＋教堂現場」雙演奏同日發行的形式，本身是唱片工業少見的企劃。",
+  "curatorRisk": "詮釋（速度與裝飾）在樂評端評價分歧，簡介不可寫成公認名演；另 2021 extended edition 與四片豪華版容易在封面解析時抓錯版位。",
+  "apex": null
+ },
+ {
+  "key": "desc4:Fou Ts'ong 傅聰|Chopin: Nocturnes (1978)",
+  "artist": "Fou Ts'ong 傅聰",
+  "album": "Chopin: Nocturnes (1978)",
+  "year": 1978,
+  "genre": "classical",
+  "composer": "Chopin",
+  "label": "",
+  "versionNote": "主線已裁定改釘 Chopin: Nocturnes（MB 查無傅聰的德布西《前奏曲》）。已覆核傅聰在 MB 的十二個 RG：夜曲只有 ccf17096 一筆（1993 Sony 雙碟），另有 Preludes（1980）、Etudes（1980）、Mazurkas（1993-05-18）、Ballades（1983）等各自獨立，b838f466 則是 2021 年的 CBS 全集盒（掛 Compilation，不取）。池內已有「Fou Ts'ong 傅聰｜Chopin: Mazurkas（1986）」，曲目不同不衝突。primary-type=Album、無 secondary-type。｜卡名補錄音年括註：池內同曲已有 Rubinstein (1967)、Novaes (1957)、Đặng Thái Sơn (1986) 三版，依 audit 古典風險提醒第 1 條「同演奏者同曲目不同年份務必括年」補上。",
+  "yearNote": "**推翻 README「MB 沒有首發日期」**：此 RG 在 MB 上有 first-release-date 1993，其唯一 release（8c239870）為 Sony Classical SB2K 53249 雙碟、條碼 074645324920——那是 Essential Classics 系列的再版年，不是錄音年。錄音年查證結果為 **1978／80 的 CBS 錄音**（classical-music.com 該再版的唱片資料頁記為「1978/80」，Sony 2021 年《Fou Ts'ong plays Chopin – The Complete CBS Album Collection》即收此批 CBS 錄音）。卡片年份採 1978（錄音期起始年），**確切錄音日期與 CBS 原始 LP 發行編號待本機補**。",
+  "curatorWhy": "傅聰是華人蕭邦詮釋的起點（1955 年蕭邦大賽瑪祖卡獎），CBS 時期的夜曲全集是他最完整的一套錄音；池內傅聰只有瑪祖卡一張，補上夜曲才撐得起「華人古典演奏家」這條軸線。",
+  "curatorRisk": "錄音年僅有再版資料頁的「1978/80」單一來源，卡片年份 1978 是錄音期起始年的推定，**本機務必以 Sony 2021 全集 booklet 複核**；另 MB 藝人條目用中文「傅聰」建檔，字串查重時要兩種寫法都掃。",
+  "apex": null
+ }
+]

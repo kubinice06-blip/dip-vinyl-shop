@@ -31,10 +31,20 @@ const GARBAGE = /[Ѐ-ӿऀ-ॿ가-힯]/;
 // 專名本身就用非拉丁文字時合法（例：박효신、가리온《가리온2》）。
 // 從本批卡單的 artist|album 取出所有非拉丁片段當白名單，掃描前連同《》〈〉內的原始標題一併剝除，
 // 剩下的才是真正的行文污染（把 riff 寫成 리프、trip-hop 寫成 трип-hop 之類）。
-const ALLOW = [...new Set(
-  cards.flatMap(x => String(x.key).replace(/^desc2:/, '').split('|'))
-    .flatMap(s => s.match(/[Ѐ-ӿऀ-ॿ가-힯]+/g) || [])
-)].sort((a, b) => b.length - a.length);
+// 除了非拉丁片段，卡單的藝人名與專輯名**全字串**也一併豁免：
+// 規則本來就是「專輯／曲目原標題照官方原文保留」，那些字出現在檔案任何地方都合法，
+// 不只出現在《》裡面時才合法。
+// （2026-08-29 客語卡《頭擺个事情》踩到：「个」是客語的所有格助詞、屬原標題用字，
+//   卻被簡體表當成「個」的簡化字報錯；研究稿講到「个／的」兩種寫法時也會再中一次。
+//   同類誤報在客語線上會反覆出現，靠人工每次複核不划算。）
+// desc4:（CJK）與 desc2:（拉丁）兩種前綴都要剝，舊版只剝 desc2:，
+// 華語批的 key 因此整串進了白名單、反而讓比對失去意義。
+const ALLOW = [...new Set([
+  ...cards.flatMap(x => String(x.key).replace(/^desc[24]:/, '').split('|'))
+    .flatMap(s => s.match(/[Ѐ-ӿऀ-ॿ가-힯]+/g) || []),
+  ...cards.flatMap(x => String(x.key).replace(/^desc[24]:/, '').split('|'))
+    .filter(s => s.length > 1),
+])].sort((a, b) => b.length - a.length);
 const stripLegit = s => {
   let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '');
   for (const a of ALLOW) t = t.split(a).join('');
@@ -50,7 +60,15 @@ function charScan(label, s) {
   // （崔健《新长征路上的摇滚》），照原文保留是規定，不該報錯。整份寫成簡體的情況
   // （w2-121 e 組）仍會被抓到，因為那種錯誤絕大多數落在標題之外。
   if (SIMP.test(t)) warn(label, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join(''));
-  if (/[㐀-鿿],|,[㐀-鿿]/.test(s)) warn(label, '半形逗號貼中文');
+  // 這條原本掃的是未剝除專名的原文，於是林憶蓮《都市觸覺, Part II: Fuir la ville》
+  // 這種官方標題本身就帶半形逗號的卡必然誤報。掃 t（已剝除《》〈〉與卡單全字串）才對。
+  if (/[㐀-鿿],|,[㐀-鿿]/.test(t)) warn(label, '半形逗號貼中文');
+  // 千分位逗號。行文一律寫 281948 不寫 281,948，但這條規則只寫在提示詞裡、
+  // 沒有任何機器檢查，於是 c50a-c 有五張卡整批寫成千分位，是我逐檔用一次性
+  // 指令掃出來的。掃描用剝除專名後的文字，免得專輯標題裡的數字誤報。
+  // 樣式要求逗號後恰好三位數字且其後不再接數字，「1975,1980」這種連寫年份不會中。
+  const kilo = t.match(/\d{1,3}(?:,\d{3})+(?!\d)/g);
+  if (kilo) warn(label, '千分位逗號:', [...new Set(kilo)].slice(0, 8).join('、'));
 }
 
 if (stage === 'research') {
@@ -63,7 +81,17 @@ if (stage === 'research') {
     if (!Array.isArray(r) && r && typeof r === 'object' && stage === 'research') r = Object.values(r);
     console.log(g, r.length, r.map(x => x.status).join(','));
     charScan('research-' + g, s);
-    r.forEach(x => { all.push(x.key); if (!cardKeys.has(x.key)) warn(g, 'key 不在卡單:', JSON.stringify(x.key)); });
+    r.forEach(x => {
+      all.push(x.key);
+      if (!cardKeys.has(x.key)) warn(g, 'key 不在卡單:', JSON.stringify(x.key));
+      // 來源必須是完整可開啟的 https 網址。研究層唯一的防造假機制就是逐條附源，
+      // 少一條源就等於少一條可查核的事實，這裡不容忍裸網域或 http。
+      const noSrc = (x.facts || []).filter(f => !/^https:\/\/\S+$/.test(String(f.src || '')));
+      if (noSrc.length) warn(g, `${x.key}：${noSrc.length} 條事實的 src 不是完整 https 網址`);
+      // hookCandidates 上限 2。多給不會更好——hook 層本來就要自己挑，
+      // 候選一多就變成研究層在越權定調。
+      if ((x.hookCandidates || []).length > 2) warn(g, `${x.key}：hookCandidates ${x.hookCandidates.length} 條，上限 2`);
+    });
   }
   if (JSON.stringify([...all].sort()) !== JSON.stringify([...cardKeys].sort())) warn('key 集合與卡單不一致');
   else console.log('key 與卡單完全一致 ✓');
@@ -71,8 +99,17 @@ if (stage === 'research') {
 
 if (stage === 'hooks') {
   // 先跑既有 hook 品管（字數/禁語/開頭雷同/箭頭等）
-  try { execSync(`node qa-check-hooks.mjs ${batch}`, { stdio: 'inherit' }); }
-  catch { flags++; }
+  // ⚠ qa-check-hooks.mjs 目前不在 repo 裡（本機有、從未提交，雲端工作階段拿不到）。
+  // 舊寫法把「檔案不存在」和「檢查不通過」都算成一個 flags，於是雲端每次跑 hooks 都必然
+  // 多一個假標記，真正的事實對照結果反而被淹掉。改成先確認檔案在不在：
+  // 不在就明講缺哪支、要改跑哪支，不計標記；在才跑，跑失敗才算標記。
+  if (fs.existsSync('qa-check-hooks.mjs')) {
+    try { execSync(`node qa-check-hooks.mjs ${batch}`, { stdio: 'inherit' }); }
+    catch { flags++; }
+  } else {
+    console.log('（略過 qa-check-hooks.mjs：本 repo 無此檔。字數／禁語／開頭雷同／分數星等');
+    console.log(`  請改跑 node chk-hook-crossgroup.mjs ${batch}，本階段只做事實對照與字元掃描。）`);
+  }
   for (const g of GROUPS) {
     const rp = `batches/research/${batch}-${g}.json`, hp = `batches/hooks/${batch}-hooks-${g}.json`;
     if (!fs.existsSync(hp)) { warn(g, '缺 hook 檔'); continue; }
@@ -136,9 +173,18 @@ if (stage === 'out') {
     ];
     // 純標記、不豁免（曾試過「附近有拉丁字母就放行」，被曲名《Legion》〈Gloria〉的字母誤觸）；
     // 具名合法者（葛萊美、Billboard、ACM…）由人工複核放行，比照既有 QA 誤報處理原則。
+    //
+    // 2026-08-30：豁免仍然不做，但**標記改帶前後文**。c-50 三批共標了五筆，全部是誤報，
+    // 而且全是同一型態——具名的修飾語就緊貼在裸字串前面（「Pitchfork 的 1990 年代百大專輯」
+    // 「拉丁葛萊美名人堂」「《Village Voice》當年的樂評票選」「A2IM Libera Awards 的年度專輯獎」）。
+    // 只印裸字串等於逼複核者逐筆開檔案找上下文；印出前後各二十餘字，一眼就判得完。
+    // 這不放寬任何判定，只是讓人工複核便宜到不會被跳過——那才是這道檢查真正的失效模式。
     for (const r of o) for (const [re, label] of UNSOURCED) {
       const m = r.desc.match(re);
-      if (m) warn('out', '未具名出處?', label, '→', r.key, '::', m[0]);
+      if (!m) continue;
+      const i = m.index ?? r.desc.indexOf(m[0]);
+      const ctx = r.desc.slice(Math.max(0, i - 24), i + m[0].length + 12).replace(/\s+/g, ' ');
+      warn('out', '未具名出處?', label, '→', r.key, ':: …' + ctx + '…');
     }
     const lens = o.map(r => Array.from(r.desc).length);
     outTotal += o.length;

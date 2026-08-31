@@ -22,10 +22,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "跨來源長期共識：Living Stereo 傳奇再版系列常駐、Analogue Productions 200g 與 XRCD 復刻目錄收錄，樂評普遍視為該曲基準版，符合殿堂『領域史上核心』門檻。",
+    "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo 的 release-group series (9eb05f3c) 成員清單直接含本卡釘定的 RG 7b903784；同系列的 release 端另有三張同一 1955 年 Reiner 錄音的併盤（4c27a568、b28928e5、36bd301c）。另命中「發燒天碟正典」條款：Analogue Productions 200g 與 SACD 復刻目錄在售。",
     "evidenceUrls": [
-     "https://store.acousticsounds.com/d/91387/Fritz_Reiner-Bartok_Concerto_For_Orchestra-200_Gram_Vinyl_Record",
-     "https://www.classicstoday.com/review/review-10805/"
+     "https://musicbrainz.org/series/9eb05f3c-7fa5-494e-b8ee-c81ff17feba2",
+     "https://store.acousticsounds.com/d/91387/Fritz_Reiner-Bartok_Concerto_For_Orchestra-200_Gram_Vinyl_Record"
     ],
     "evidence": ""
    }
@@ -49,13 +49,10 @@
    "curatorWhy": "作曲家自指是《詩篇交響曲》最具權威的文本依據；哥倫比亞這套自指錄音是二十世紀作曲家親自留下的最完整演奏文獻之一，軸線 4「20 世紀與當代」少了它就等於缺一份第一手證言。",
    "curatorRisk": "MB 這個 RG 是 CD 再版形態（曲目與 1963 原始 LP 不同：LP 配《C 大調交響曲》，CD 換成《三樂章交響曲》），本機寫簡介與曲目時要以 CD 內容為準；另掛名同時列 CBC 與 Columbia 兩個樂團，封面解析可能抓到不同再版封面。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "作曲家親自指揮的權威錄音，長期作為該曲的參照文本，Sony 的 Stravinsky 自指全集反覆再版，屬 20 世紀錄音史核心文獻。",
-    "evidenceUrls": [
-     "https://www.discogs.com/release/5328365-Stravinsky-Conducts-The-CBC-Symphony-Orchestra-The-Festival-Singers-Of-Toronto-Elmer-Iseler-Symphony",
-     "https://www.discogs.com/release/29087524-Stravinsky-Stravinsky-Conducts-Stravinsky-The-Complete-Columbia-Recordings"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無（本錄音為 Columbia／Sony 系統，不在這四份名單涵蓋範圍）。查到的是『作曲家自指的權威文本』與 Sony 反覆再版，屬地位轉述而非上述任一具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -80,7 +77,7 @@
    "apexCandidate": {
     "eligible": false,
     "tier": null,
-    "reason": "演奏評價良好但未見跨來源長期共識推為該曲史上核心版本，依「三軸高分不等於頂點」原則維持普卡。",
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 DG The Originals 252 筆成員中無此盤。查到的是演奏評價良好，而非上述任一具體收錄。",
     "evidenceUrls": [],
     "evidence": ""
    }
@@ -106,10 +103,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "DG 目錄長銷、樂評長期列為該曲主要推薦版本之一，且為卡拉揚俄國曲目的代表錄音。",
+    "reason": "具體收錄：**DG The Originals**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 The Originals series (3eec5213) 成員 1ec87c9c（2000-03-01，DG 463 613-2，掛名 Berliner Philharmoniker／Herbert von Karajan）即本卡釘定的同一份 1968 錄音（該 release 掛在 RG 56e1e8c8，與本卡 RG aa49bce3 為同錄音的不同建檔）。",
     "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/catalogue/products/prokofiev-symphonie-no-5-karajan-10026",
-     "https://classicalcandor.blogspot.com/2015/04/prokofiev-symphony-no-5-cd-review.html"
+     "https://musicbrainz.org/series/3eec5213-6e04-4982-8a54-4539ab469f11",
+     "https://www.deutschegrammophon.com/en/catalogue/products/prokofiev-symphonie-no-5-karajan-10026"
     ],
     "evidence": ""
    }
@@ -135,7 +132,7 @@
    "apexCandidate": {
     "eligible": false,
     "tier": null,
-    "reason": "演奏形態特殊但未達跨來源長期共識的史上核心地位，維持普卡。",
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無。查到的是無指揮室內樂團的演奏形態特殊，非上述任一具體收錄。",
     "evidenceUrls": [],
     "evidence": ""
    }
@@ -161,10 +158,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Living Stereo 傳奇再版系列與 Analogue Productions 復刻目錄雙重收錄，兼具詮釋地位（RCA／CSO 合唱團首錄）與發燒正典地位。",
+    "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo release series (5281b5ef) 成員 b354485d（2000-09-12《Prokofiev: Alexander Nevsky / Khachaturian: Violin Concerto》）即本卡釘定的同一份 1959 Reiner／Elias／CSO 錄音（該 release 掛在 RG ac53f97f，與本卡 RG 724f737c 為同錄音的不同建檔）。另命中發燒天碟正典：Analogue Productions CAPC2395SA 三聲道 SACD 與 200g 復刻。",
     "evidenceUrls": [
-     "https://store.acousticsounds.com/d/91657/Reiner_Chicago_Symphony_Orchestra-Prokofiev_Alexander_Nevsky-Hybrid_3-Channel_Stereo_SACD",
-     "https://cso.org/experience/article/8425/125-moments-027-prokofievs-alexander-nevsky"
+     "https://musicbrainz.org/series/5281b5ef-b864-4cb9-b55b-18fb8bdff562",
+     "https://store.acousticsounds.com/d/91657/Reiner_Chicago_Symphony_Orchestra-Prokofiev_Alexander_Nevsky-Hybrid_3-Channel_Stereo_SACD"
     ],
     "evidence": ""
    }
@@ -188,13 +185,10 @@
    "curatorWhy": "卡拉揚幾乎不碰蕭士塔高維契，第十號是唯一反覆經營的一首；1966 年版被 Gramophone 的該曲最佳錄音導讀列名，第二樂章的柏林愛樂銅管至今是這首交響曲的聲音範本。",
    "curatorRisk": "1966 與 1981 兩版封面與標題幾乎相同，本機解封面時極易抓錯；album 欄已括年，若日後補進 1981 版務必同樣括年。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Gramophone 該曲最佳錄音導讀列名，DG 目錄長期常駐，屬蕭士塔高維契錄音史核心版本之一。",
-    "evidenceUrls": [
-     "https://www.gramophone.co.uk/features/article/the-best-recordings-of-shostakovich-s-symphony-no-10",
-     "https://www.deutschegrammophon.com/en/catalogue/products/shostakovich-10-symphonie-karajan-1966-430"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，且此處有關鍵反證。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 DG The Originals 確實收了一張卡拉揚的蕭十（成員 release e1e70891，2006-02-01，DG 00289 477 5909），但經 release 端覆核，它掛在 RG 04510c22——MB disambiguation 明寫『1981 recordings』，即**數位重錄版**，不是本卡釘定的 1966 錄音。系列另一張蕭十（4a608b4c）是 Ančerl／捷克愛樂，與卡拉揚無關。線上另查到的 Gramophone『最佳錄音』導讀屬評論文章，非名人堂。故 1966 版無具體收錄可指名。（版本鎖定仍依稽核意圖維持 1966；若主線改以頂點資格為優先，可考慮改釘 04510c22。）",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -217,14 +211,11 @@
    "curatorWhy": "《Tout un monde lointain》是二十世紀下半最重要的大提琴協奏曲之一，池內原本零杜提耶。這份把它與 Caplet《Épiphanie》並置的編排，把「法國大提琴與管弦樂」這條線一次交代清楚，是專門廠牌才做得出的曲目設計。",
    "curatorRisk": "非羅斯托波維奇的首演版，與稽核原始意圖有落差（首演者版本才是史料核心），簡介不可寫成「首演錄音」；另 Æon 是小廠，封面與試聽在本機可能都要另尋來源。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "重要 20 世紀協奏曲的專門廠牌錄音，演奏者非明星、廠牌流通有限，在專門圈以外近乎無人知曉，符合古典 pearl 的人工判定路徑（§0.7 古典不適用 listeners<300 門檻）。",
-    "evidenceUrls": [
-     "https://www.qobuz.com/fr-fr/album/dutilleux-tout-un-monde-lointain-trois-strophes-caplet-epiphanie-marc-coppey-orchestre-philharmonique-royal-de-liege-and-pascal-rophe/o918hudekb3yb",
-     "https://www.resmusica.com/2008/04/27/la-belgique-accueille-henri-dutilleux/"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，pearl 亦不成立。hall：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無（2008 年新錄音，不適用歷史再版系列）。pearl：§0.7 要求舉證『在專門圈以外近乎無人知曉』，但我只能證明它是小廠（Æon）發行、無大廠再版，無法正面舉證其無人知曉程度；且此曲的一般認知版本是羅斯托波維奇首演版，本盤的低知名度更接近『版本之一不被注意』而非遺珠級。依判準改列一般卡。",
+    "evidenceUrls": [],
+    "evidence": ""
    }
   },
   {
@@ -246,13 +237,10 @@
    "curatorWhy": "《古勒之歌》是荀白克跨越晚期浪漫與表現主義的分水嶺，夏伊這份錄音室版數十年來居評論推薦名單首位，且是少數把巨大編制的織體梳理得清楚又不失重量的版本；池內荀白克只有 Karajan《昇華之夜》、Boulez《月光小丑》、Rosbaud《摩西與亞倫》三張，缺這一端。",
    "curatorRisk": "全曲近兩小時、雙 CD，硬蕊軸依 §0.7 的「單張超過兩小時 +1」修正要留意；另 MB 掛名用樂團更名後的名字，與唱片封面上的 RSO Berlin 不一致，查重與封面比對時容易對不上。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "長期居該曲評論推薦首選，Decca 目錄常駐再版，屬荀白克錄音史核心。",
-    "evidenceUrls": [
-     "https://interclassical.com/the-essential-recordings-of-schonbergs-gurre-lieder/",
-     "https://www.prestomusic.com/classical/products/7923942--schoenberg-gurrelieder"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Decca Legends 79 筆成員中無此盤（系列以 1950–60 年代錄音為主，1985 年錄音不在其中）。查到的是『數十年居評論推薦首位』這類地位轉述，非上述任一具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -275,13 +263,10 @@
    "curatorWhy": "波里尼這套荀白克鋼琴全集把十二音作品彈成有呼吸的樂句而非解題示範，長期是這批曲目的參照錄音；池內波里尼只有兩張，且荀白克鋼琴線是空的。",
    "curatorRisk": "曲目本身入耳難度高（無調性、十二音），硬蕊軸會偏高，簡介要寫清楚是「演奏取向」而非「好聽度」；另同名再版擴充盤易混。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "DG 目錄長銷的荀白克鋼琴全集參照版，跨來源長期作為該批曲目的首選推薦。",
-    "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/catalogue/products/schoenberg-the-works-for-piano-pollini-9629",
-     "https://www.discogs.com/master/263485-Arnold-Schoenberg-Maurizio-Pollini-Das-Klavierwerk-The-Piano-Music"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 DG The Originals 252 筆成員逐筆看過，兩筆標題為《Klavierwerke》的分別是 Janáček／Firkušný（beb4b247）與 Liszt／Vásáry（6f77f0c4），皆非波里尼的荀白克。查到的是 DG 目錄長銷與樂評好評，非上述任一具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -304,13 +289,10 @@
    "curatorWhy": "作品本身拿下 2016 年 Grawemeyer 作曲獎，這份錄音拿下 Gramophone 當代類大獎與 Diapason d'Or；Hannigan 是本曲題獻與首演者，等於當代曲目的第一手權威錄音。池內軸線 4 的「當代」端幾乎沒有 2010 年代作品。",
    "curatorRisk": "極新的當代曲目，玩家辨識度低；Winter & Winter 是小廠，固定試聽與封面在雲端不一定解得到。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Gramophone 當代類年度獎與 Diapason d'Or 得獎錄音，作品同年獲 Grawemeyer 獎，是當代聲樂曲目的權威首錄。",
-    "evidenceUrls": [
-     "https://www.harrisonparrott.com/news/2016-08-23/barbara-hannigans-let-me-tell-you-wins-contemporary-gramophone",
-     "https://www.wisemusicclassical.com/news/3582/Winter--Winter-CD-let-me-tell-you-receives-Diapason-dOr-award/"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆為歷史再版系列，2015 年錄音不適用。查到的是 2016 年 Gramophone **年度大獎（當代類）** 與 Diapason d'Or——獎項不等於 Gramophone 名人堂，不在本次判準列出的任一具體名單內。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -335,9 +317,9 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "EMI Great Recordings of the Century 收錄，長期被列為拉威爾／拉赫曼尼諾夫協奏曲的核心錄音，並常見於「入門必備古典唱片」清單。",
+    "reason": "具體收錄：**EMI Great Recordings of the Century**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 GROC series (096c110a) 成員含 abced449（2000-02-07 XE）與 94853b56（2000-03-14 US），兩張都是本卡釘定 RG 917841c6 底下的 release，系列收錄與本卡身分完全對齊。",
     "evidenceUrls": [
-     "https://www.classical-music.com/features/recordings/rachmaninov-piano-concerto-no-4-ravel-piano-concerto",
+     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
      "https://www.arkivmusic.com/classical/album.jsp?album_id=2936"
     ],
     "evidence": ""
@@ -369,7 +351,7 @@
    "apexCandidate": {
     "eligible": false,
     "tier": null,
-    "reason": "op.111 詮釋受推崇，但錄音評價分歧、未見跨來源長期共識推為該曲史上核心版本，維持普卡。",
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Decca Legends 79 筆與 GROC 150 筆成員中皆無此盤。查到的是 op.111 詮釋受推崇但錄音品質評價分歧，屬評價轉述而非具體收錄。",
     "evidenceUrls": [],
     "evidence": ""
    }
@@ -393,13 +375,10 @@
    "curatorWhy": "杜普蕾與巴倫波因婚後盛期的室內樂代表作，第一號 e 小調的低音域音色是她琴聲的標本；池內杜普蕾只有艾爾加協奏曲一張，演奏家線太薄。",
    "curatorRisk": "同曲目在池內已有 Truls Mørk 版，卡名雖已加曲號，玩家端仍可能混淆；另 MB 這個 RG 用德文標題，字串查重時容易漏。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "EMI 目錄長期常駐、反覆再版的布拉姆斯大提琴奏鳴曲參照錄音，也是杜普蕾錄音遺產的核心之一。",
-    "evidenceUrls": [
-     "https://www.thestrad.com/playing/group-therapy-jacqueline-du-pre/13690.article",
-     "https://thelistenersclub.com/2019/11/06/brahms-cello-sonata-no-1-jacqueline-du-pre-and-daniel-barenboim/"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 GROC 150 筆成員逐筆看過：杜普蕾的**艾爾加大提琴協奏曲**（bfeedd6a《Cello Concerto / Sea Pictures / Cockaigne》）確實在 GROC 內，但**布拉姆斯大提琴奏鳴曲不在**。查到的是 EMI 長期再版與演奏者代表作地位，非上述任一具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -429,12 +408,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Gramophone「Classics reconsidered」專文重估的錄音，題獻者兼首演者的唯一商業錄音，長期被視為該曲的定義版本。",
+    "reason": "**pending-local**：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無本錄音（1953 年 RCA 單聲道，不在 Living Stereo 範圍；EMI／Decca 兩系列不適用）。線上唯一查到的是 Gramophone 的『Classics reconsidered』專文重估——那是評論文章，不是 Gramophone 名人堂，依本次判準不足以單獨支撐。判定 eligible 的依據落在**企鵝三星帶花與《唱片藝術》名曲名盤**這兩份紙本名單（此曲題獻並由海飛茲首演、且是他唯一商業錄音，長期為該曲基準版），雲端無法核對，依 lock/README 硬規則第 1 條維持 eligible 並標 pending-local，請本機以紙本名單覆核後定案。",
     "evidenceUrls": [
      "https://www.gramophone.co.uk/content/features/classics-reconsidered-heifetzs-recording-of-korngolds-violin-concerto",
      "https://www.laphil.com/musicdb/pieces/4517/violin-concerto"
     ],
-    "evidence": ""
+    "evidence": "pending-local"
    }
   },
   {
@@ -458,10 +437,10 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "hall",
-    "reason": "Analogue Productions RCA Living Stereo 復刻目錄收錄，長期被列為該曲首選錄音，兼具詮釋與發燒正典地位。",
+    "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo release series 成員 6be30ef2（2006-02-07，RCA Red Seal 82876 71622 2）經 release 端覆核，其 release-group 正是本卡釘定的 a118884e，掛名 Heifetz／New Symphony Orchestra of London／Sargent——系列收錄與本卡身分完全對齊。另有 Analogue Productions 的 Living Stereo 復刻版位。",
     "evidenceUrls": [
-     "https://www.musicdirect.com/music/vinyl/bruch-scottish-fantasy-heifetz-sargent-new-symphony-orchestra-of-london-180g-vinyl-lp/",
-     "https://thelistenersclub.com/2022/09/21/bruchs-scottish-fantasy-two-legendary-heifetz-recordings/"
+     "https://musicbrainz.org/series/5281b5ef-b864-4cb9-b55b-18fb8bdff562",
+     "https://www.musicdirect.com/music/vinyl/bruch-scottish-fantasy-heifetz-sargent-new-symphony-orchestra-of-london-180g-vinyl-lp/"
     ],
     "evidence": ""
    }
@@ -485,13 +464,10 @@
    "curatorWhy": "切利比達克的布魯克納以極慢速度重塑結構，是二十世紀後半最具辨識度的布魯克納詮釋；池內他只有第八號一張，第四號《浪漫》是最容易讓玩家對照速度差異的一首。",
    "curatorRisk": "極端速度使演奏評價兩極，簡介要寫成詮釋取向而非優劣；另同曲池內已有 Haitink 1966 版，玩家端需靠括註區辨。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "EMI／Warner Classics 的 Celibidache 授權系列常駐盤，該指揮的布魯克納長期被視為獨立成派的核心錄音文獻。",
-    "evidenceUrls": [
-     "https://www.warnerclassics.com/release/bruckner-4-celibidache",
-     "https://www.mphil.de/en/label/sergiu-celibidache"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無（EMI／Warner 的 Celibidache Edition 不在判準名單內；DG The Originals 那張《Symphonie No. 4 »Romantische«》2d3e6a05 是 DG 系統的別份錄音，與切利比達克無關）。查到的是『該指揮的布魯克納自成一派』這類地位轉述。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -514,13 +490,10 @@
    "curatorWhy": "池內帕華洛帝只有精選輯與三大男高音，沒有一部完整歌劇；這份 1970 年 Decca 錄音是他 Nemorino 的定本，也是 Kingsway Hall／Wilkinson 錄音工藝的代表盤，詮釋與發燒兩條線同時成立。",
    "curatorRisk": "全劇雙碟長度，硬蕊軸的「單張超過兩小時 +1」修正要留意；另 Decca 同批有 Highlights 盤與 Sutherland 掛頭的版位，查重與封面解析都可能撞名。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Decca 目錄長期常駐的《愛情靈藥》參照全曲錄音，帕華洛帝與蘇莎蘭盛期的代表演出，兼具 Kingsway Hall 錄音工藝地位。",
-    "evidenceUrls": [
-     "https://www.deccaclassics.com/en/catalogue/products/donizetti-lelisir-damore-sutherland-pavarotti-6616",
-     "https://www.prestomusic.com/classical/products/7923478--donizetti-lelisir-damore"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Decca Legends 79 筆成員逐筆看過，內有蘇莎蘭的《Lucia di Lammermoor》與《The Art of the Prima Donna》，但**沒有這套《愛情靈藥》**。查到的是 Decca 目錄長銷與 Kingsway Hall／Wilkinson 的錄音工藝，屬評價轉述而非具體收錄（TAS／CD 聖經等發燒榜單亦未查到指名此盤）。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -563,12 +536,12 @@
    "apexCandidate": {
     "eligible": true,
     "tier": "pearl",
-    "reason": "中國第一部清唱劇的權威全曲錄音，指揮為該曲種公認權威，但發行侷限於香港小廠與華語市場，在專門圈以外近乎無人知曉，符合古典 pearl 的人工判定路徑（§0.7 不適用 listeners<300 門檻）。",
+    "reason": "古典 pearl 依 §0.7 走人工判定（不看 listeners）。**近乎無人知曉的正面證據**：MusicBrainz 全庫對作曲家黃自（artist:\"Huang Tzu\" count=0）、對此曲任何錄音（releasegroup／release:\"長恨歌\" 僅回 2005 年同名電影原聲帶）、對雨果盤條碼 4892440722422（count=0）皆為零筆——世界最大音樂資料庫完全沒有這份錄音的建檔，而它同時是中國第一部清唱劇的十樂章補遺全曲權威版本（嚴良堃／香港小交響樂團，1999 香港大會堂實況，雨果唱片）。發行侷限香港小廠與華語市場，品質與史料地位足以構成遺珠級。",
     "evidenceUrls": [
      "https://music.douban.com/subject/2080924/",
      "https://sin80.com/work/huang-zi-song-eternal-lament"
     ],
-    "evidence": "pending-local"
+    "evidence": ""
    }
   },
   {
@@ -592,13 +565,10 @@
    "curatorWhy": "巴哈逝世 250 週年「受難曲 2000」委託案的四部作品之一（與 Golijov《馬可受難曲》同批），用十七只水缽組成「水樂器管弦樂團」，是華人作曲家進入西方宗教曲種正典脈絡最具體的一次；池內譚盾只有《Ghost Opera》一張。",
    "curatorRisk": "現場錄音含水聲與空間音效，音質評價會分歧；曲目屬當代前衛，硬蕊軸偏高，簡介不要寫成易入門。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "巴哈逝世 250 週年國際巴哈學院委託案的四部受難曲之一，首演製作的權威錄音，屬當代宗教曲種的核心文獻。",
-    "evidenceUrls": [
-     "https://www.wisemusicclassical.com/work/33598/Water-Passion-After-St-Matthew--Tan-Dun/",
-     "https://www.classical.net/music/recs/reviews/s/sny89927a.php"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份皆為歷史再版系列，2000 年錄音不適用。查到的是巴哈逝世 250 週年委託案的作品地位與樂評好評，非上述任一具體收錄。",
+    "evidenceUrls": [],
     "evidence": ""
    }
   },
@@ -623,7 +593,7 @@
    "apexCandidate": {
     "eligible": false,
     "tier": null,
-    "reason": "發行年代新、樂評共識未成形，不符殿堂「跨來源長期共識」要求，維持普卡。",
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份皆為歷史再版系列，2020 年錄音不適用。查到的是發行企劃特殊與樂評分歧，非上述任一具體收錄。",
     "evidenceUrls": [],
     "evidence": ""
    },
@@ -632,7 +602,7 @@
   },
   {
    "artist": "Fou Ts'ong 傅聰",
-   "album": "Chopin: Nocturnes",
+   "album": "Chopin: Nocturnes (1978)",
    "composer": "Chopin",
    "genreFamily": "classical",
    "rgMbid": "ccf17096-50c5-4508-9be2-a2e3c1501337",
@@ -643,20 +613,17 @@
    "firstRelease": "1993",
    "suggestedYear": 1978,
    "yearNote": "**推翻 README「MB 沒有首發日期」**：此 RG 在 MB 上有 first-release-date 1993，其唯一 release（8c239870）為 Sony Classical SB2K 53249 雙碟、條碼 074645324920——那是 Essential Classics 系列的再版年，不是錄音年。錄音年查證結果為 **1978／80 的 CBS 錄音**（classical-music.com 該再版的唱片資料頁記為「1978/80」，Sony 2021 年《Fou Ts'ong plays Chopin – The Complete CBS Album Collection》即收此批 CBS 錄音）。卡片年份採 1978（錄音期起始年），**確切錄音日期與 CBS 原始 LP 發行編號待本機補**。",
-   "versionNote": "主線已裁定改釘 Chopin: Nocturnes（MB 查無傅聰的德布西《前奏曲》）。已覆核傅聰在 MB 的十二個 RG：夜曲只有 ccf17096 一筆（1993 Sony 雙碟），另有 Preludes（1980）、Etudes（1980）、Mazurkas（1993-05-18）、Ballades（1983）等各自獨立，b838f466 則是 2021 年的 CBS 全集盒（掛 Compilation，不取）。池內已有「Fou Ts'ong 傅聰｜Chopin: Mazurkas（1986）」，曲目不同不衝突。primary-type=Album、無 secondary-type。",
+   "versionNote": "主線已裁定改釘 Chopin: Nocturnes（MB 查無傅聰的德布西《前奏曲》）。已覆核傅聰在 MB 的十二個 RG：夜曲只有 ccf17096 一筆（1993 Sony 雙碟），另有 Preludes（1980）、Etudes（1980）、Mazurkas（1993-05-18）、Ballades（1983）等各自獨立，b838f466 則是 2021 年的 CBS 全集盒（掛 Compilation，不取）。池內已有「Fou Ts'ong 傅聰｜Chopin: Mazurkas（1986）」，曲目不同不衝突。primary-type=Album、無 secondary-type。｜卡名補錄音年括註：池內同曲已有 Rubinstein (1967)、Novaes (1957)、Đặng Thái Sơn (1986) 三版，依 audit 古典風險提醒第 1 條「同演奏者同曲目不同年份務必括年」補上。",
    "exceptionReason": "",
    "exceptionEvidenceUrls": [],
    "curatorWhy": "傅聰是華人蕭邦詮釋的起點（1955 年蕭邦大賽瑪祖卡獎），CBS 時期的夜曲全集是他最完整的一套錄音；池內傅聰只有瑪祖卡一張，補上夜曲才撐得起「華人古典演奏家」這條軸線。",
    "curatorRisk": "錄音年僅有再版資料頁的「1978/80」單一來源，卡片年份 1978 是錄音期起始年的推定，**本機務必以 Sony 2021 全集 booklet 複核**；另 MB 藝人條目用中文「傅聰」建檔，字串查重時要兩種寫法都掃。",
    "apexCandidate": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "華人蕭邦詮釋的奠基錄音，但 CBS 原盤長期絕版、僅以廉價再版與 2021 年全集盒流通，在專門圈以外近乎無人知曉，符合古典 pearl 的人工判定路徑。",
-    "evidenceUrls": [
-     "https://www.classical-music.com/reissues/chopin-47",
-     "https://www.prestomusic.com/classical/products/9328576--fou-tsong-plays-chopin-nocturnes"
-    ],
-    "evidence": "pending-local"
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，pearl 亦不成立。hall：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無。pearl：§0.7 要求正面舉證『在專門圈以外近乎無人知曉』；我能證明的只有 CBS 原盤絕版、MB 僅存一張 1993 年 Sony 廉價再版建檔，但傅聰本人在華語圈知名度高（1955 蕭邦大賽瑪祖卡獎），無法據此主張這份錄音近乎無人知曉。改列一般卡；若本機評分冷門軸給到 5 並找得到流通稀缺的正面證據，可再議。",
+    "evidenceUrls": [],
+    "evidence": ""
    }
   }
  ],
