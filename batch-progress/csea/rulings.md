@@ -110,3 +110,78 @@ curatorWhy 寫「觀光化景觀的諷刺／社會批判路線的另一支柱」
 
 **這三筆都是我在派工詞裡給的假設被推翻。** 派工詞的特注是「指派與提問」不是
 已查證的事實，這條 `research-base.md` 的方法論條款在這批確實生效了。
+
+---
+
+# 追加裁定（cseac 研究層交件後）
+
+## 9. 廠牌再六筆，全數採用
+
+`apply-label-fixes.mjs` 已擴充到十六筆（冪等）。cseac 這六筆：
+
+| 卡 | 原值 | 改為 |
+|---|---|---|
+| Rien Djamain《Api Asmara》 | （空） | Hidayat |
+| Wings《Belenggu Irama》 | Warner Music Malaysia | ASP (Antarctic Sound Production) |
+| Yano《Yano》 | BMG Records Pilipinas | Alpha Records |
+| Harry Roesli Gang《Philosophy Gang》 | （空） | Lion Records |
+| Benny Soebardja《Gimme a Piece of Gut Rock》 | （空） | SM Recording |
+| Abbhama《Alam Raya》 | （空） | Tala & Co Record |
+
+**Yano 那筆與 Koes Plus／Dara Puspita 是第三個同型錯**，但方向相反：前兩筆是把
+**前一張**的廠牌沿用過來，Yano 是把**後來的重發廠牌**（1998 BMG）當成首發廠牌。
+兩個方向的錯都源自同一件事——策展層拿到的是「某處看到的廠牌」而不是「原盤的廠牌」。
+
+## 10. Joey Ayala《Panganay ng Umaga》：卡片維持 1991，但正文要交代它是重發
+
+研究層建議把年份從 1991 改成 1985，理由充分：1991／1992 是 WEA-Universal 的
+重發，原始版是達沃 NGO「DEMS」少量製作的地下卡帶。
+
+**但這張改不動，因為 §1 的 MBID 硬規則會被違反。** 我逐一查過 MB 上 Joey Ayala
+名下的全部 release-group：**沒有 1985 年原盤的條目**，只有 1991 的兩筆
+（`5bccaba9`、`83ea45e8`，互為重複）。卡片現在的三個值是自洽的——
+year 1991 ＋ label WEA Philippines ＋ rgMbid 指向 1991 那個 group，
+它誠實地描述了那個重發版。**只改年份會讓 1985 配上 WEA Philippines，反而不自洽。**
+
+**裁定：卡片三值維持不動。改由 hook 層指派正文寫清楚**——這張最初是 1980 年代
+中期獨立製作的卡帶，1992 年 WEA 三張齊發的重發才把它帶到大眾面前。
+年份指的是卡片釘住的那個版本，作品的來歷寫在正文裡。
+
+**留給本機的選項**：若願意去 MB 建 1985 年原盤的 release-group，這張就能改釘
+原盤、年份改 1985、廠牌改 DEMS。那是比較好的終局，但不是雲端段能做的。
+
+**順帶回報三組 MB 重複條目**（本機可考慮提報合併）：
+Joey Ayala《Panganay ng Umaga》`5bccaba9`／`83ea45e8`、
+《Magkabilaan》`ea22ae35`(1987)／`21903dea`(1991)、
+Paradise Bangkok《Planet Lam》`1d391140`／`7cc6c3dc`。
+
+## 11. Shark Move《Ghede Chokra's》年份維持 1970——這條已經裁過了
+
+cseac-d 的研究層跨批提醒「Discogs 印尼原盤標 1973，c 組那張若沿用 1970 請覆核」。
+
+**覆核結果：c 組的研究層已經查過而且查得更全。** 它的 `yearVerified` 記下了
+三方分歧——1970（echoesanddust 與成軍年，兩份可開啟來源）、MusicBrainz 1971、
+Discogs 與 Rolling Stone Indonesia 1973——並據此取 1970。d 組看到的是這個分歧的
+一個分支，不是新證據。
+
+**裁定：維持 1970。** 記在這裡是為了讓本機不要因為 d 組的提醒再開一輪。
+
+## 12. 兩條「主線設想被推翻」值得記住
+
+- **Bhaskara ↔ Indra Lesmana 查無關係**。我在派工詞裡把兩者連起來，印尼文維基
+  的 Bhaskara 條目全文未提及他，1985 與 1986 兩份編制名單也沒有。真正與
+  Lesmana 家族相關的是同組另一張 Rien Djamain《Api Asmara》的 Jack Lesmana。
+- **Ian Antono 不是《Cermin》才加入 God Bless**，他 1974 年重建時就進團、1976 年
+  首輯就是他彈的。我給三張 God Bless 劃的分工因此有一格站不住，研究層自行把
+  《Cermin》改成「Jockie 出、Abadi Soesman 進＋路線前衛化＋最差銷量」，
+  仍與另兩張不重疊。**下游自行修好分工並說明，這正是分層要的效果。**
+
+## 13. Dick Lee《The Mad Chinaman》：我給的主軸被反向證據推翻
+
+我在派工詞裡寫「這張在日本賣得比新加坡好，這個落差是本卡核心」。
+研究層查到的反向證據較強：新加坡國家圖書館 BiblioAsia 明載本作在新加坡
+**四個月內白金**；日本方面只有「得過獎」與 1990 年移居兩件事。
+
+**裁定：以來源為準，主軸改用〈Rasa Sayang〉的 Singlish 禁播爭議與同名曲的身分
+困惑。** 這是我這批第四次派工詞的假設被推翻（另三次：Rolling Stone Indonesia
+榜、Bhaskara、Ian Antono）。**四次都是下游查證後推翻主線，四次主線都採納。**
