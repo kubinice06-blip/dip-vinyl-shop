@@ -57,6 +57,18 @@ const FIX = {
     label: 'Liuto',
     why: '研究層查證：卡單寫 Omicron，1973 年 6 月原版是雙 LP、廠牌 Liuto（編號 LRS 0053-0054）。Omicron 是 Umiliani 目錄裡另一個 library 廠牌。年份 1973-06 正確。',
   },
+  '非常階段|King of Noise': {
+    year: 1985,
+    why: '研究層查證：卡單 year 寫 1982，MB first-release-date 是 1985-05（Alchemy Records ARLP-006），Discogs 另載錄音是 1985 年 2 月大阪與 3 月東京。1982 年的非常階段作品是《蔵六の奇病》。連帶推翻 curatorWhy 的「比卡池已有的 1984 年作更根本」——本作晚於那張一年，寫作層不得寫「起點盤／更早／最初」。',
+  },
+  'Benny Goodman|Together Again!': {
+    year: 1964,
+    why: '研究層查證：卡單的 1963 是錄音年（AllMusic 記 1963-02-13 起錄音），MB 首發年是 1964（RCA Victor LSP-2698／LPM-2698，1964 年 1 月發行）。主線裁定：本批一貫取原盤首發年（Machito《With Flute to Boot》同樣把 1958 錄音年改成 1959 首發年），故改 1964。寫作層仍可寫「1963 年重聚錄音」。',
+  },
+  "Garth Brooks|Ropin' the Wind": {
+    label: 'Capitol Records Nashville',
+    why: '研究層查證：卡單寫 Liberty。英文維基 infobox 與內文皆記 Capitol Records Nashville，且明寫本作是該廠牌名下的最後一張錄音室專輯。Capitol Nashville 在 1991–1995 年間才改名 Liberty，MB 上 1991-09-10 的美版同時存在兩種壓片標示，Liberty 屬改名後再壓。',
+  },
   'Univers Zero|Ceux du dehors': {
     label: 'Recommended Records',
     why: '研究層查證：卡單的 Cryonic 查無支持。維基資訊框、Bandcamp 與唱片行均指向 Recommended Records；MB 的 release 清單裡 1981 年法版掛 Atem、1982 年英版掛 Recommended Records，完全沒有 Cryonic。',
