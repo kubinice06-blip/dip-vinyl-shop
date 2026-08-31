@@ -1,5 +1,61 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-31｜dip-vinyl-shop｜封面版本覆核全部做完：830 張判定完畢、439 張換版
+
+**背景**：CAA 的 `release-group/<rg>/front` 會從該群組裡隨便挑一版的圖，全池 94.7% 的卡
+都吃這條路徑，所以「封面是對的專輯、但版本不對」是結構性問題（Paris, Texas 抓到歐洲版
+就是這樣來的）。步驟 10–11 掃過 3,750 個 release group、分成六桶，
+其中 **review 桶 830 張**要人工逐張判。
+
+**這次把 830 張全部判完**（先前只做到 #260）。判定分布：
+維持現狀 391、換成最早版 314、指定特定版 125 → **實際換掉 439 張，寫入並回讀一致 439／439**。
+
+**方法換了**：原本走「產 HTML → 瀏覽器截圖」，但瀏覽器窗格原生尺寸只有約 778×450，
+一屏最多塞 3 張卡，830 張要判就要近 280 次截圖。改成**本機用 System.Drawing 合成單張 JPEG**
+（2 欄 × 8 列 × 4 候選＝16 卡／張），一次讀完 16 張、判定張數不變、來回次數少五倍，
+而且比縮到 28% 的網頁清楚得多。
+
+- `scripts/cover-audit/17-montage.mjs` ＋ `17-montage.ps1`：合成對照圖。
+  缺的縮圖先補抓（重試 3 次），圖上只畫 ASCII（年份／國別／NOW、ORG 標記），
+  中文卡名印在終端機——PS 5.1 畫 CJK 要挑字型，不值得為此冒險。
+- `scripts/cover-audit/18-record-picks.mjs`：用圖上的 a/b/c/d 記錄判定，
+  候選排序與步驟 17 **完全一致**（改一邊就要改另一邊），免得主線手抄 UUID。
+  格式 `<idx>:<a-d|keep|orig>[#理由]`，**理由不能有空白**（token 以空白切）。
+
+**PowerShell 5.1 兩個坑**（已寫進腳本註解）：
+1. `param([string]$Spec)` 與 `$spec` 是同一個變數（變數名不分大小寫），
+   把陣列指派給 `$spec` 會被型別約束轉成字串，`.Count` 讀成 1、整張圖塌成一列。
+2. `ConvertFrom-Json` 在 5.1 把頂層陣列當**單一物件**送出管線，
+   `@(Get-Content … | ConvertFrom-Json)` 會包成一元陣列。必須先賦值再 `@()` 展開。
+
+**判定規則**（沿用店主 2026-08-30 的裁定，優先序）：
+0. 封面真的分岔時取廣為流傳的那套 → 1. 同視覺內取發行國 → 2. 年代越早越好 → 3. 太模糊取清晰的。
+
+實作時補了一條**規則 1 的適用界線**：規則 1 原本是給「同年並列」決勝用的
+（腳本註解本來就這樣寫），所以當發行國版本晚了十幾二十年（例如 Paco de Lucía《Siroco》
+1987 歐版 vs 2014 西版）就不適用，改由規則 2 決定。
+
+**規則 0 這次攔下的幾張**（不照最早／發行國就會拿到錯的那套視覺）：
+AC/DC《Let There Be Rock》取國際版舞台合照而非澳版指板、
+Jesus Christ Superstar 取棕底金天使原版而非黃底、
+Peter Green《In the Skies》取夜空明月、
+Dreamfish 取魚圖而非 FAX 月亮版、Technotronic 取剪影舞者、
+Art of Noise 取雙面具、Coltrane《Both Directions at Once》取錄音室黑白照。
+
+**另外抓到的資料錯誤**：#592 Nino Bravo 同名專輯的「現用美版」其實是另一張專輯
+《Puerta de Amor》；#748 Tom Petty《Wildflowers》現用歐版掃圖近乎空白；
+#598 Orbital《The Middle of Nowhere》現用英版同樣近乎全白；
+#422 Duke Ellington《New Orleans Suite》最早與現用兩筆都是劣掃圖，改取 1990 US。
+
+**主要檔案**：`scripts/cover-audit/17-montage.mjs`、`17-montage.ps1`、`18-record-picks.mjs`、
+`scripts/cover-audit/data/edition-picks.json`（830 筆）。
+**驗證**：`15-apply-edition-picks.mjs --write` 先確認 439 個新網址全部可讀（439／439），
+再逐筆 PATCH `card_catalog.coverUrl` 並回讀比對，**439／439 一致**。
+
+**還沒做完的兩件**（做不了，不是漏掉）：
+Stanley Brothers《Country Pickin' and Singin'》全網查無正面圖，要實體掃；
+Firestore `apex_pool` 那 13 筆孤兒要後台登入才能清（REST 寫入回 403）。
+
 ### 2026-08-31｜dip-vinyl-shop｜修正 iPhone 上首頁卡片整片變藍（iOS button 預設字色）
 
 店主回報「線上版變成藍色」，附 iPhone 截圖：首頁的「找一張來聽」「品味生死鬥」兩張卡
