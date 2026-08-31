@@ -51,7 +51,15 @@ const get = async url => {
 };
 
 // 標題與掛名的比對。寬鬆到能吃掉副標與掛名後綴，嚴格到不會配到同名的別張。
+// Apple 會把單曲與 EP 的條目標成「某某 - Single」「某某 - EP」。摺疊後那個後綴
+// 只多出 6–7 個字元，剛好落在下面的長度差容忍範圍內，於是**單曲條目會冒充專輯**。
+// 2026-08-31 實測抓到兩筆：Elvy Sukaesih《Menghitung Bintang》配到一軌的單曲、
+// f(x)《4 Walls》配到四軌的日本 EP《4 Walls / COWBOY - EP》而不是十一軌的正規盤。
+// 卡片本身若就是 EP（§5.5 的 asia-mini-album 白名單）則卡名自己也會帶那個字，
+// 所以比對的是「Apple 有、卡片沒有」才擋。
+const SUFFIX = /[-–—]\s*(Single|EP)\s*$/i;
 const titleOk = (want, got) => {
+  if (SUFFIX.test(got) && !SUFFIX.test(want)) return false;
   const a = norm(want), b = norm(got);
   if (a === b) return true;
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
