@@ -1,5 +1,41 @@
 # dip vinyl 專案備忘錄
 
+### 2026-08-31｜dip-vinyl-shop｜c-SEA 菲律賓／星馬組策展提案：35 張候選（`batch-progress/csea/prop-ph.json`）
+
+`CURATION_WISHLIST.md` 2026-08-31 東南亞點名的第三格（菲律賓、馬來西亞、新加坡）。
+只做策展層，未動卡池、未跑上架流程。星馬的華語線由既有「星馬第二圈」處理過，
+本組只收馬來語、英語與菲律賓語作品。
+
+**產出**：`batch-progress/csea/prop-ph.json`，35 張、31 位藝人。正規盤 32、合輯 3（8.6%，
+遠低於 §5.6 的三分之一上限）。`node batch-progress/csea/chk-prop.mjs` 三組合計 124 張、標記 0。
+
+**方法**：MusicBrainz 逐藝人抓 release-group 完整目錄（約 90 位藝人查詢），
+再以英文維基、Discogs、NLB Singapore、Sublime Frequencies 廠牌頁交叉驗年份與正名。
+
+**分佈**：菲律賓 22 張（Pinoy rock 5、Manila sound 4、社會派民謠 4、爵士 1、
+1990s 替代搖滾與 world 8）、馬來西亞／新加坡 13 張（rock kapak 6、
+馬來語流行與爵士 4、六〇年代星馬 1、合輯 2）。
+
+**pop yeh-yeh 誠實面對**：該世代（The Rhythm Boys、Orkes Nirwana、A. Ramlie、Jefridin、
+M. Osman、Roziah Latiff、Halim Yatim、Zaleha Hamid、Fatimah Amin、The Siglap Five）
+MB 上的原始發行**全部是四曲 EP**，本批不收 EP，因此這條線只以三張走 §5.6 的合輯代表：
+Sublime Frequencies《Pop Yeh Yeh 1964-1970》、Adnan Othman《Bershukor》回顧盤、
+The Crescendos《The Complete Crescendos》。少數例外是 Sanisah Huri《Senada Hati》(1974)，
+MB 標為 Album，已收。
+
+**查無而未提**：Maria Cafra（MB 有藝人條目但零 release-group）、Jefridin／Kassim Slamat／
+M. Osman（MB 無條目）、Blues Gang（MB 只有希臘與葡萄牙同名團）、
+Freddie Aguilar（《Anak》線上已有，其餘目錄年份在 MB 上多筆無日期，暫不提）。
+
+**最高身分風險三筆**：Wings（星馬 rock kapak 團與 Paul McCartney 的 Wings 完全撞名，
+線上已有三張 McCartney Wings 卡，必須用 MBID 212ce99e-bfdc-4bd2-a3d9-d44de2ec2679）、
+Cinderella（與美國 hair metal 團撞名，須用 MBID 7c4c0164-1fc9-45fc-9e51-bd3c0e6b0de5）、
+Hotdog（菲律賓 Manila sound 團與線上四張台灣 MC HotDog 熱狗同鍵）。
+
+**已在提案內修正的 MB 資料錯誤**：Hotdog《Unang Kagat》MB 記 2005（實為 1974 原盤）、
+Zainal Abidin 1991 自我同名專輯 MB 標題誤作《Hijau》（那是單曲名）、
+Cinderella 1975 盤 MB 標題作《Cinderella》而實體盤為《Ang Boyfriend Kong Baduy》。
+
 ### 2026-08-31｜dip-vinyl-shop｜c-SEA 印尼組策展提案：55 張候選（`batch-progress/csea/prop-id.json`）
 
 回應 `CURATION_WISHLIST.md` 2026-08-31「東南亞搖滾與印尼爵士」點名，先做印尼那一格。
