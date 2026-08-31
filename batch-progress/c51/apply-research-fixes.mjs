@@ -33,6 +33,30 @@ const FIX = {
     year: 1975,
     why: '研究層查證：卡單的 1971 查無任何來源。Discogs 上 Editions Montparnasse 2000（MP 43）原版三筆全標 1975，EX-YU Music 專文同樣寫 1975（MusicBrainz 標 1974）。另：策展層說的「被取樣頻率遠高於其他作品」方向錯了——JAY-Z〈D.O.A.〉取樣的〈In the Space〉出自《Psyc Impressions》（MP 06, 1969）、Dr. Dre《Compton》取樣的是〈Underground Session〉，兩首都不在本張的十二首曲目裡。',
   },
+  'X JAPAN|DAHLIA': {
+    label: 'Atlantic',
+    why: '研究層查證：卡單寫 Polydor，1996 年原盤是 Atlantic 唱片日本分支發行（英文維基 infobox 標 Atlantic Records，原盤型號 AMCM-4271）。Polydor 只出現在後續單曲再版的脈絡。年份 1996-11-04 與 rgMbid 正確。',
+  },
+  'THE BLUE HEARTS|BUST WASTE HIP': {
+    label: 'GARLAND',
+    why: '研究層查證：卡單寫 Meldac，那是他們 1987–1989 的廠牌；本作原盤是 East West Japan 體系的 GARLAND（MB：GARLAND／AMCW-4077）。年份 1990-09-10 正確。',
+  },
+  'Milton Wright|Spaced': {
+    year: 1977,
+    why: '研究層查證：卡單 year 寫 1976，MB 原盤是 1977 US Alston 4407，WBUR 報導與唱片行商品說明皆寫 1977（1975 是首張《Friends and Buddies》）。卡單自己的 mbFirstRelease 也是 1977，是 year 欄沒跟上。',
+  },
+  'The Mighty Diamonds|Deeper Roots (Back to the Channel)': {
+    year: 1979,
+    why: '研究層查證：rgMbid 正確，但該 release-group 底下只掛 2002 年再版、沒有 1979 原盤，所以 mbFirstRelease 顯示 2002。年份要用原盤的 1979（Front Line FLD 6001，Virgin 旗下）。本作是人聲 LP 加同曲目 dub LP 的雙唱片原創作，不是精選包裝。',
+  },
+  'Michael Stearns|Encounter': {
+    label: 'Hearts of Space Records',
+    why: '研究層查證：卡單寫 Sonic Atmospheres，1988 年原始發行廠牌是 Hearts of Space Records。Sonic Atmospheres 是他另一張《Planetary Unfolding》1985 年再版的廠牌，被誤植過來。',
+  },
+  "Piero Umiliani|To-Day's Sound": {
+    label: 'Liuto',
+    why: '研究層查證：卡單寫 Omicron，1973 年 6 月原版是雙 LP、廠牌 Liuto（編號 LRS 0053-0054）。Omicron 是 Umiliani 目錄裡另一個 library 廠牌。年份 1973-06 正確。',
+  },
   'Univers Zero|Ceux du dehors': {
     label: 'Recommended Records',
     why: '研究層查證：卡單的 Cryonic 查無支持。維基資訊框、Bandcamp 與唱片行均指向 Recommended Records；MB 的 release 清單裡 1981 年法版掛 Atem、1982 年英版掛 Recommended Records，完全沒有 Cryonic。',
