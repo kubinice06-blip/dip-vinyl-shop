@@ -277,3 +277,57 @@ The Revolutionaries、Dennis Alcapone、Tappa Zukie、Josey Wales 九位是 0 �
 四張卡分裂在兩個鍵下。屬線上資料（`seed_cards.json`），留本機處理。
 與 `audits/pool-artist-name-splits.md` 記的六組、以及先前抓到的 Kraftwerk
 《Trans Europa Express》／《Trans-Europe Express》是同一類。
+
+---
+
+## ⚠ 2026-09-01：深掘線的診斷是錯的——`obscurity=5` 只有 3 張是**評分**問題，不是選片問題
+
+c-58 策展代理實掃卡池後回報：**池中的 soul 根本不是只有正典。**
+Universal Togetherness Band、Otis G. Johnson、Willie Wright、Shira Small、Junei、
+Skull Snaps、24-Carat Black、Black Heat、Starcrost、Faze-O、RAMP 全都在池裡，
+Black Jazz 廠牌更已收了五張（Bayete、Calvin Keys、Rudolph Johnson、The Awakening、
+Doug Carn ×2）。
+
+**逐張查它們的三軸，答案就出來了**（格式 `classic/accessibility/obscurity`）：
+
+| 卡 | 三軸 |
+|---|---|
+| Otis G. Johnson《Everything - God Is Love '78》 | 2/5/**2** |
+| Junei《Let's Ride》 | 2/5/**2** |
+| Starcrost《Starcrost》 | 2/5/**2** |
+| Black Heat《Black Heat》 | 2/4/**2** |
+| Calvin Keys《Shawn-Neeq》 | 2/5/**2** |
+| Rudolph Johnson《Spring Rain》 | 2/5/**2** |
+| The Awakening《Hear, Sense and Feel》 | 2/5/**2** |
+
+Otis G. Johnson 那張是私壓冷門盤裡最有名的一張（Numero Group 再發過），
+**冷門度給 2**。同時 electronic 有 124 張、classical 有 114 張拿到 5。
+
+### 機制：再發本身會把冷門度壓下去
+
+`ALBUM_ONBOARDING.md` **沒有寫 obscurity 1–5 的文字定義**——它只出現在稀有度公式
+（§2）與 pearl 流亡卡的門檻（§3），而 §3 明文把 pearl 綁在 **Last.fm 累積 listeners
+低於 300**。也就是說這個軸實質上是聽眾數驅動的。
+
+於是出現一個結構性的反諷：**考古廠牌的再發會製造聽眾數。**
+Numero Group 把 Otis G. Johnson 挖出來、放上串流，那張碟就有了聽眾——
+而那正是我要求 c-58 用來舉證「這張冷門盤確實重要」的證據。
+**「證明它重要」的東西，同時把它的冷門度分數壓下去。**
+
+electronic 與 classical 之所以能有一百多張滿分，是因為那兩塊的冷門作品多半
+**沒有被考古廠牌商業化再發**，聽眾數就真的接近零。
+
+### 這對深掘線的意義
+
+**再加 45 張冷門靈魂盤，不會讓 `obscurity=5` 從 3 張變多**——新卡會拿到同樣的 2 分。
+
+但這**不表示深掘線白做**：c-58 的 45 張本身是好卡（44/45 有考古廠牌再發舉證、
+45 位藝人零重複、與池中零撞卡），它們補的是**曲風的實質深度**，
+只是不會反映在那個特定的數字上。
+
+**留給店主的決定**（雲端不動線上資料，不自行處理）：
+1. 深掘線照跑（c-58 已完成、c-59 進行中、c-60 待開），當成補實質深度；
+2. **另外**決定要不要重新校準 obscurity 軸——目前它在不同曲風之間不可比，
+   一張 Numero 再發的私壓靈魂盤（2 分）與一張沒人再發的電子作品（5 分）
+   在「有多少人聽過」上或許真的有差，但在「這張碟有多冷門」的直覺上並不合理。
+   若要校準，`audits/` 應該先做一份「同等冷門程度、不同曲風」的對照樣本。
