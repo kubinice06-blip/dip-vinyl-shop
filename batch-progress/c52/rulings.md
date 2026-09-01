@@ -1,0 +1,106 @@
+# c-52 主線裁定（2026-09-01）
+
+這批是 c-SEA 的收尾：策展層當初提了 124 張，管線只收了有 rgMbid 的 99 張，
+剩下 26 張因為「MusicBrainz 查無 release-group」被擱置。本批把它們撿回來，
+並替 9/1 上架時因缺封面而留置的 11 張補跑封面線。
+
+---
+
+## 1. 策展層 `mbNote` 記的 MBID 不能照抄——裡面混了藝人 MBID
+
+`prop-*.json` 的 `mbNote` 欄記了不少 MBID，看起來像是現成的身分。但逐個回問
+MusicBrainz 之後發現**混了兩種實體**：Panbers、Barong's Band、Angkanang Kunchai、
+Dao Bandon、Cinderella 那五筆記的是**藝人 MBID**，不是 release-group MBID
+（Barong's Band 那筆的 mbNote 自己就寫明「有藝人條目但底下沒有任何 release-group」）。
+
+§1 要的是 release-group MBID。照抄會釘出一個「指向藝人而非碟」的假身分，
+而且格式合法、驗證器擋不下來。
+
+**裁定：所有 mbNote 來的 MBID 一律回問 MB 判定實體類型後才採用**
+（`verify-noted.mjs`）。結果：12 張釘得住 release-group、14 張走 §1 的
+`identitySource: "manual"` 人工身分路線。
+
+## 2. 用 1972 拼寫改革的變體重查，沒有額外收穫，但值得記錄
+
+上一批發現印尼／馬來語有 1972 年的拼寫改革（oe→u、dj→j、tj→c、nj→ny、sj→sy），
+猜想當初的「查無」有一部分是拼法不對造成的。這批用雙向變體重查了一輪
+（`requery.mjs`），**結論是沒有**：26 張裡只多找到 1 張（Hoàng Oanh 那筆，
+而且是越南文不是印尼文）。
+
+**裁定：拼寫變體不是這批查無的主因**，真正的原因是這些 1970 年代印尼原盤
+根本沒進 MusicBrainz。這條線以後不必再試，除非遇到明確以舊拼法印在封面上的碟。
+
+## 3. 封面：worker 的搜尋回的是「最像的東西」，不是「同一張碟」
+
+c-SEA 當初只跑了 CAA，這批補跑 §4 規定的 Bandcamp → Spotify。37 個目標
+（26 張新卡 ＋ 11 張留置卡）拿到 12 個「命中」，但照 §4 逐一核對藝人／專輯／版本後，
+**其中 5 個是錯的**：
+
+| 卡 | 配到什麼 | 判定 |
+|---|---|---|
+| Gombloh《Kebyar Kebyar》 | 1985 年的**一軌單曲** | **否決** |
+| Elvy Sukaesih《Menghitung Bintang》 | 1980 年的**一軌單曲** | **否決** |
+| Koes Plus《Volume 4》 | 《Pop Melayu Volume 4》(1976)，**另一個編號系列** | **否決** |
+| Panbers《Volume 1》 | 英國廠牌的《Tom Shorterz - Chav Bangers Volume 1》 | **否決** |
+| Zainal Abidin《Zainal Abidin》 | 43 軌的 2013 年合集 | **否決** |
+
+前兩筆與 2026-08-31 在 Apple 試聽探測抓到的是**同一個病**（單曲條目與專輯同名，
+只比對標題與掛名分不出來）。來源換了，病沒換。
+
+**裁定：封面一律要把來源端的作品名、掛名、年份、軌數抓回來核對**，
+不接受「worker 回了圖就算數」。`probe-covers.mjs` 抓 og 中繼資料、
+`adjudicate-covers.mjs` 做判定。
+
+### 3b. 但「軌數少」不能當否決理由——這是我自己先寫錯的規則
+
+第一版的判定把「≤2 軌」列為硬否決。拿線上卡池 2,173 張有 Spotify 中繼資料的卡
+回頭驗證，11 張 ≤2 軌的裡面**有 6 張是正確配對**：Klaus Schulze《Timewind》
+《Moondawn》、Miles Davis《In a Silent Way》《A Tribute to Jack Johnson》《Pangaea》、
+Pharoah Sanders《Black Unity》——這些本來就是整面一首的碟。
+
+**裁定：可靠的訊號是 Spotify 自己標的 `albumType === 'single'` 或標題帶
+「- Single」，不是軌數。** 軌數少降為軟旗標。規則已修，並把線上真正錯配的
+5 張寫進 `audits/spotify-single-covers.md` 留給本機。
+
+## 4. 改走 CAA 拿版本釘得住的封面，解掉三個裁決案
+
+12 張釘住 rgMbid 的卡改用 CAA 重解（CAA 以 release-group MBID 為鍵，版本釘得住），
+**8 張有圖**。其中三張直接解掉上面的年份爭議：
+
+- **Chrisye《Badai Pasti Berlalu》**：Spotify 給的是 1999 年再發，CAA 給的是
+  釘在 1977 release-group 上的圖。**採 CAA。**
+- **Gombloh《Kebyar Kebyar》**：Spotify 給的是 1985 單曲，CAA 給的是
+  1979 release-group 的圖。**採 CAA**，單曲那筆否決。
+- **Rhoma Irama《Santai》**：CAA 有圖，Spotify 那筆「Soneta Group: Santai, Vol. 7」
+  的長度旗標因此不必再判。**採 CAA。**
+
+## 5. Rhoma Irama《Darah Muda》：卡片年份是對的，但封面是再發版
+
+Spotify 標 1976、卡片記 1975，看起來像卡片錯。但 MusicBrainz 的 release-group
+`first-release-date` 是 **1975**，與卡片一致——所以是 **Spotify 那筆為再發**。
+
+CAA 在這張沒有圖，於是唯一拿得到的封面就是那張再發版的。依 §4「封面必須核對
+版本」與 2026-08-29 的「封面改釘版本」裁示，再發版的圖不該無聲當成原盤的圖。
+
+**裁定：這張標記為「有候選封面但版本存疑」，交本機決定**——本機有掃圖能力，
+也看得到圖本身，比雲端適合做這個判斷。卡片年份維持 1975。
+
+## 6. Karimata《Pasti》：兩個獨立來源都說 1985，卡片記 1986
+
+Spotify 記 1985，Apple 印尼 storefront 也記 1985，MusicBrainz 查無。
+兩個獨立來源一致指向 1985。
+
+**裁定：待研究層裁決**（已寫進 b 組的懸案清單）。若研究層也找不到 1986 的來源，
+卡片年份應改為 1985。這是本批唯一「卡片年份可能有錯」的一筆。
+
+## 7. 試聽：26 張只有 2 張 ready，是這批的常態不是異常
+
+多國 storefront（id／ph／th／vn／my／sg／us／gb／jp）全試過，只有
+Karimata《Pasti》與《Music of Indonesia, Vol. 20》命中。c-SEA 正編是 25/99（25%），
+這批是 2/26（8%）——更低是合理的，因為這 26 張正是當初「連 MusicBrainz 都沒有」
+的那一批，數位發行的機率本來就更低。
+
+**裁定：不因試聽率低而縮減本批。** §6 的固定試聽是「查得到就釘、查不到記
+unavailable」，不是上架門檻。但**自我同名卡例外**——Barong's Band《Barong's Band》
+與 Zainal Abidin《Zainal Abidin》兩張若最後既無試聽又無封面，依 §1
+「自我同名屬高風險」應由本機決定是否留置（c-SEA 已有 14 張同類留置的先例）。
