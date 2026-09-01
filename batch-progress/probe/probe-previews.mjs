@@ -33,12 +33,20 @@ const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 // c-SEA 三批先試在地目錄再回退國際；c-51 是西方與東亞盤，us 命中率最高。
 const SEA = ['id', 'ph', 'th', 'vn', 'my', 'sg', 'us', 'gb', 'jp'];
 const GEN = ['us', 'gb', 'jp', 'tw', 'de', 'fr'];
+// c-53 蘇聯／俄語圈：Apple 2022 年退出俄國市場，ru 不存在。抽驗時命中的四張都在 us，
+// 代表這些錄音有國際數位發行；另補後蘇聯各國與 Leo Records 的歐洲市場。
+const SOV = ['us', 'gb', 'de', 'lt', 'ee', 'lv', 'kz', 'am', 'fr'];
+// c-54 南斯拉夫：先試各繼承國，再回退到德奧（大量前南移民市場）與國際。
+const YUG = ['hr', 'si', 'rs', 'ba', 'mk', 'de', 'at', 'us', 'gb'];
 
 const cards = [];
 for (const b of BATCHES)
   for (const c of JSON.parse(fs.readFileSync(path.join(ROOT, `desc-tools/batches/cards/${b}-cards.json`), 'utf8')))
     // c52 是 c-SEA 的收尾批（印尼／泰／越／菲／星馬），同樣要先試在地 storefront
-    cards.push({ ...c, batch: b, fronts: (b.startsWith('csea') || b.startsWith('c52')) ? SEA : GEN });
+    cards.push({ ...c, batch: b, fronts:
+      (b.startsWith('csea') || b.startsWith('c52')) ? SEA
+      : b.startsWith('c53') ? SOV
+      : b.startsWith('c54') ? YUG : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
