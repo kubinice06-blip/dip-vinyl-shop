@@ -235,3 +235,25 @@ release 標題 `Jazz Compositions`，無目錄號），兩筆同為 1979／Album
 
 **裁定：記錄下來，不要在後續批次重查。** Голощёкин 那條線在 MB 上做不到，
 要收只能走人工身分路線。
+
+---
+
+## 16. 多藝人拼盤的掛名：用 " / " 斜線，卡池早有先例（2026-09-01 店主裁示）
+
+c-54 的策展代理把《Paket aranžman》(1981) 擱置，理由是「卡片的 artist 只能放一個
+字串，三團聯名沒有穩定寫法」，並建議主線先定規則。**那個判斷是對的**——不自己編
+一個掛名慣例是正確的克制。
+
+**店主指出卡池早有先例。** 實查 `seed_cards.json`：多藝人掛名用 **" / " 斜線分隔**，
+已有三人（`John Abercrombie / Dave Holland / Jack DeJohnette`、
+`Red Garland / Ron Carter / Philly Joe Jones`）與四人
+（`Oistrakh / Rostropovich / Richter / Karajan`）的例子。
+
+**裁定：多藝人拼盤／split album 一律用 " / " 分隔，依原始發行的掛名順序。**
+《Paket aranžman》因此掛 `Šarlo Akrobata / Idoli / Električni Orgazam`——
+而 MusicBrainz 的 artist-credit 恰好是同一個字串，兩邊對得上，不需要 `queryAlias`。
+已補回 c-54，該批 40 → 41 張。
+
+（順帶：` & ` 在池中有 518 筆，是最常見的分隔符，但那多半是**團名本身就含 &**
+（Booker T. & the M.G.'s）或雙人組固定搭檔，與「幾個獨立的團共用一張碟」不同。
+斜線是後者的寫法。）
