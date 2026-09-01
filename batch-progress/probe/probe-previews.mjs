@@ -37,9 +37,12 @@ const GEN = ['us', 'gb', 'jp', 'tw', 'de', 'fr'];
 const cards = [];
 for (const b of BATCHES)
   for (const c of JSON.parse(fs.readFileSync(path.join(ROOT, `desc-tools/batches/cards/${b}-cards.json`), 'utf8')))
-    cards.push({ ...c, batch: b, fronts: b.startsWith('csea') ? SEA : GEN });
+    // c52 是 c-SEA 的收尾批（印尼／泰／越／菲／星馬），同樣要先試在地 storefront
+    cards.push({ ...c, batch: b, fronts: (b.startsWith('csea') || b.startsWith('c52')) ? SEA : GEN });
 
-const OUT = path.join(DIR, 'previews.json');
+// 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
+// 免得覆寫本機已經取用過的那份。
+const OUT = process.env.PREVIEWS_OUT ? path.resolve(process.env.PREVIEWS_OUT) : path.join(DIR, 'previews.json');
 const out = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
 
 const get = async url => {

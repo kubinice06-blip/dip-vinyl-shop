@@ -38,8 +38,13 @@ for (const r of rows) {
   const isSingle = /·\s*single\s*·/i.test(desc) || /\bSingle by\b/i.test(c.srcTitle);
   const trackM = desc.match(/(\d+)\s+(songs?|track)/i);
   const tracks = trackM ? Number(trackM[1]) : null;
+  // 「軌數少」不能當否決理由：長篇作品本來就一到兩軌。拿線上 2,173 張有 Spotify
+  // 中繼資料的卡實測，≤2 軌的 11 張裡有 6 張是正確配對——Klaus Schulze《Timewind》、
+  // Miles Davis《In a Silent Way》《A Tribute to Jack Johnson》《Pangaea》、
+  // Pharoah Sanders《Black Unity》都是整面一首的碟。可靠的訊號是 Spotify 自己標的
+  // albumType=single 或標題帶「- Single」，不是軌數。
   if (isSingle) reasons.push('來源是單曲，不是專輯');
-  if (tracks !== null && tracks <= 2) reasons.push(`來源只有 ${tracks} 軌`);
+  else if (tracks !== null && tracks <= 2) reasons.push(`來源只有 ${tracks} 軌（長篇作品可能正常，需確認）`);
   if (tracks !== null && tracks >= 25) reasons.push(`來源 ${tracks} 軌，像合集不像原盤`);
 
   // (2)(3) 作品名比對：來源作品名必須「等於」或「以卡片名結尾」（容許 Soneta: X, Vol. N 這種前後綴）
@@ -60,7 +65,7 @@ for (const r of rows) {
   // 硬否決＝可證明是別的東西；其餘旗標只代表「要人看」，不代表錯
   //（Rhoma Irama《Santai》的來源名是「Soneta Group: Santai, Vol. 7」，
   //  長度旗標會誤殺，但那就是同一張碟——所以長度與藝人差異一律落到 ruling）
-  const HARD = [/單曲/, /只有 \d+ 軌/, /像合集不像原盤/, /作品名對不上/, /圖檔 HTTP/];
+  const HARD = [/來源是單曲/, /像合集不像原盤/, /作品名對不上/, /圖檔 HTTP/];
   const hard = reasons.filter(x => HARD.some(re => re.test(x)));
   const verdict = hard.length ? 'reject' : (reasons.length || c.yearMismatch ? 'ruling' : 'accept');
   verdicts.push({ ...r, verdict, reasons, srcWork: work, srcArtist: artist, tracks });
