@@ -104,3 +104,85 @@ Karimata《Pasti》與《Music of Indonesia, Vol. 20》命中。c-SEA 正編是 
 unavailable」，不是上架門檻。但**自我同名卡例外**——Barong's Band《Barong's Band》
 與 Zainal Abidin《Zainal Abidin》兩張若最後既無試聽又無封面，依 §1
 「自我同名屬高風險」應由本機決定是否留置（c-SEA 已有 14 張同類留置的先例）。
+
+---
+
+## 8. Duo Kribo《Duo Kribo》(1978)：與線上池撞卡，剔除
+
+研究層查出池中已有 `["Duo Kribo", "Duo Kribo (Original Soundtrack)", …, 1978]`，
+**就是同一張碟**。我當初的去重（`build-cand.mjs`）用 `artist|album` 完全字串比對，
+尾綴不同就漏了——這正是 §1 明文警告的那類：「除了 artist+album 完全相同，
+必須人工檢查：不同 artist-credit、團名尾綴、`Vol.`／`Volume`、重音符號、
+特殊符號、譯名」。
+
+**裁定：剔除，本批 26 → 25 張。** 並補寫 `dedup-loose.mjs` 做鬆散去重
+（剝括號內容、soundtrack／remaster 等尾綴、Vol./Volume 正規化後再比對），
+全批重跑只有這一筆命中，其餘 25 張乾淨。
+
+**沒有順手換成別張。** 研究層指出 Duo Kribo 的自我同名首作其實是 **1977 年
+Irama Tara** 那張（8 軌，〈Neraka Jahanam〉排 Rolling Stone Indonesia 歌曲榜第 18），
+並給了可用的身分來源。但那是一張**沒有走過策展層檢查**的新卡，臨時塞進來
+等於繞過流程。記在這裡當未來批次的候選，本批不收。
+
+## 9. Koes Plus《Volume 4》：年份 1971 → 1972
+
+策展層記 1971。研究層查到：印尼文維基（引 Asriat Ginting《Musisiku》p.59）
+與 Discogs 的原盤條目都記 **1972**，而 1971 只出現在 Rolling Stone Indonesia 150
+的表列與無來源的 Wikidata，且 **1971 是錄音年不是發行年**。
+
+**裁定：改 1972。** 這張走人工身分路線、沒有釘 MBID，改年份不會與 MusicBrainz
+產生內部矛盾（對比下面第 10 條）。
+
+順帶解除策展層留的「廠牌待確認」：正編《Volume 4: Bunga Ditepi Djalan》的廠牌是
+**Mesra，編號 LP 50**。研究層另確認「Volume」與「Pop Melayu」確實是兩條獨立的
+編號線，曲目零重疊——第 3 條裡否決那張《Pop Melayu Volume 4》(1976) 的判斷成立。
+
+## 10. Rhoma Irama《Darah Muda》與 Indra Lesmana《No Standing》：維持卡單年份
+
+兩張都有「MusicBrainz 與實體盤各執一詞」的年份爭議：
+
+- **《Darah Muda》**：MB 與 Wikidata 記 1975，印尼文維基與 Discogs 原盤
+  （Yukawi IMR-90056）記 1976。
+- **《No Standing》**：卡單、MB release-group 與 Discogs 的三個實體版本
+  （Zebra ZEB-5711／ZRC-5005、Jackson Record JR-068404）全部記 1984，
+  但 Australia Awards 的專訪與英文維基作品年表記 1982，說 Zebra 那版是
+  「1984 年在美國發行」。研究層查不到 1982 年澳洲盤的實體條目。
+
+**裁定：兩張都維持卡單年份（1975／1984），行文把另一說寫成有據的異說。**
+理由與 c-SEA 裁定 #2（越南卡年份維持卡單值、行文寫成區間）一致，
+再加一層：這兩張的 `rgMbid` 都釘在 MB 那個年份的 release-group 上，
+只改年份而不動 MBID 會讓卡片自己內部矛盾——這正是 Joey Ayala 那筆的教訓。
+
+## 11. Karimata《Pasti》：四組來源三個答案，維持 1986
+
+- **1985**：WartaJazz 專文、英文維基 discography、Apple 與 Spotify 的數位版 metadata
+- **1986**：Rolling Stone Indonesia 150 的年份欄（也是策展來源，即卡單值）
+- **1987**：印尼文維基 infobox（但同條目的分類掛「Album tahun 1985」，自相矛盾）
+  與 Discogs master 底下最早的實體版本
+
+沒有任何一方握有能推翻其他兩方的物證。Discogs 的 1987 只證明「現存最早被建檔的
+實體是 1987 年版」；Irama Nusantara 查無此片，無法用實體掃描裁決。
+
+**裁定：維持 1986，行文照 facts 的區間寫，不在簡介裡單寫某一年。**
+理由不是「1986 落在爭議區間正中」（那不是理由，那是折衷），而是**沒有來源
+足以推翻策展來源**，而串流平台的 metadata 常記的是再發年，單憑它改年份太弱。
+
+研究層建議「若主線要收斂到單一年，改採 1985」——記在這裡，但本批不採用。
+
+## 12. 三個策展理由查無來源，已從卡片移除或標記不得入稿
+
+研究層對三筆的 `curatorWhy` 提出反證或查無：
+
+| 卡 | 策展理由說了什麼 | 查證結果 |
+|---|---|---|
+| Barong's Band | 與巴里島 barong 面具舞的關聯 | **查無任何來源**。可證實的是樂團在**德國科隆**組成（前身 Kopfjaeger）、本作編曲取材 J.S. Bach（唱片背面明載）。`curatorWhy` 已直接改寫 |
+| Indra Lesmana《No Standing》 | 「印尼爵士第一次以本地樂手身分打進國際發行的錄音」 | 最高級宣稱，查無來源支撐，未寫入 facts。可寫的是 Zebra 在美國發行與上 Billboard 爵士榜 |
+| Karimata《Pasti》 | 節奏設計與 Erwin Gutawa 的低音線是「教科書級的參照」 | 評價性說法，查無來源，未寫入 facts。可寫的是他在本作擔任貝斯手與主要作曲者之一 |
+
+**裁定：三筆都照研究層的處理。** Barong's Band 那筆之所以要直接改 `curatorWhy`
+（而不只是記在 notes），是因為 `curatorWhy` 會餵給 hook 層——留著錯的說法，
+下游就會照著寫錯。
+
+另外兩個事實更正：Panbers《Volume 1》的廠牌是 **Mesra Records** 不是 Dimita
+（樂團條目誤寫）；Gombloh《Kebyar Kebyar》**確定是專輯**（13 軌、65:52，
+1979 Golden Hand），MB 的 primary-type 留空只是建檔未填，第 4 條採 CAA 封面的判斷成立。
