@@ -323,7 +323,7 @@
    "world"
   ],
   "label": "Мелодия",
-  "why": "亞塞拜然鋼琴家 Мустафазаде 把木卡姆（muğam）的旋法與即興邏輯接進爵士鋼琴，開出被稱為 jazz-mugham 的一路；這張 Мелодия LP 是他生前最主要的一張正式發行。這條把中亞／高加索古典傳統與爵士接起來的線，在西方爵士書寫裡幾乎完全缺席。",
+  "why": "亞塞拜然的 jazz-mugham 代表人物，本作是鋼琴三重奏加人聲（Эльза Мустафа-заде），曲目並置兩首亞塞拜然民歌與 Monk 的〈Bemsha Swing〉。注意：Мелодия 有三張同名的《Джазовые композиции》（1974／1975／1979），只有目錄號能區分，不得稱本張為「生前最主要的一張正式發行」。",
   "risk": "同名雙胞胎 release-group：MB 有 ad1a0c07（credit 西里爾「Вагиф Мустафа-заде」，release 標題《Джазовые Композиции》）與 2b02a6d8（credit 拉丁「Vaqif Mustafazadə」，標題《Джазовые Композиции (Jazz Compositions)》，release 標題《Jazz Compositions》），兩筆 first-release-date 都是 1979、primary-type 都是 Album，極可能是同一張碟被建成兩筆。本卡釘 ad1a0c07（帶目錄號 Мелодия С60–12279-80 者）。姓氏另有 Мустафа-заде 的連字號寫法。",
   "mbNote": "查詢 artist:\"Вагиф Мустафазаде\" AND releasegroup:\"Джазовые Композиции\" 零命中；改用 credit 字串 artist:\"Вагиф Мустафа-заде\" 命中 score 100。release-group ad1a0c07-9ee0-4d4a-9598-07a055440ed9，標題 Джазовые Композиции，first-release-date 1979，primary-type Album，secondary-types 無。轄下唯一 release：1979 SU Мелодия С60–12279-80 12\" 黑膠。雙胞胎 2b02a6d8-a32b-46ad-8b8a-ca5740f5637f（同 1979／Album，credit Vaqif Mustafazadə，release 無目錄號）非本卡所指。MB 藝人實體為拉丁文 Vaqif Mustafazadə（1aeb03ff-0fce-4186-999d-8443d3af5f2f，AZ），共 8 個 release-group。",
   "releaseType": "Album",
@@ -428,10 +428,10 @@
   "album": "Melodija, improvizācija, ritms",
   "year": 1975,
   "genres": [
-   "jazz"
+   "pop"
   ],
   "label": "Мелодия",
-  "why": "Pauls 在蘇聯以流行歌曲作曲家聞名，但他的起點是里加的爵士鋼琴三重奏；這張標題直白寫著「旋律、即興、節奏」的專輯是他爵士面向唯一完整的一張唱片。它讓拉脫維亞那條把爵士和聲寫進 estrada 的路徑有了可查證的源頭。",
+  "why": "拉脫維亞 estrada 的代表作，封面副標印「Estrādes melodiju popūrijs」（流行旋律組曲），由拉脫維亞電視廣播綜藝管弦樂團演出。注意：原策展理由稱本作是「他爵士面向唯一完整的一張唱片」不成立——碟上沒有爵士三重奏編制，曲風實為 estrada 與輕音樂，曲風欄因此由 jazz 改為 pop。",
   "risk": "同一目錄號 Мелодия С60-05369-70 底下同時有拉脫維亞文《Melodija, improvizācija, ritms》與俄文《Мелодия, импровизация, ритм》兩種盤名，且俄文盤名的第一個詞與廠牌名 Мелодия 完全相同——字串搜尋會被廠牌條目吃掉。1981 年另有同目錄號再版。Pauls 名下 96 個 release-group 絕大多數是流行與配樂，曲風若從藝人層級推斷必定誤判。",
   "mbNote": "查詢 artist:\"Raimonds Pauls\" AND releasegroup:\"Melodija, improvizācija, ritms\" 命中 score 100。release-group 50d5c446-005c-4b27-a17c-efed4122a822，標題 Melodija, improvizācija, ritms，first-release-date 1975，primary-type Album，secondary-types 無。轄下 3 個 release，皆 SU Мелодия С60-05369-70 12\" 黑膠：1975《Мелодия, импровизация, ритм》、1975《Melodija, improvizācija, ritms》、1981《Melodija, improvizācija, ritms》。",
   "releaseType": "Album",
@@ -444,12 +444,12 @@
  {
   "artist": "Архангельск",
   "album": "Portrait",
-  "year": 1991,
+  "year": 1992,
   "genres": [
    "jazz"
   ],
   "label": "Leo Records",
-  "why": "Владимир Резицкий 在北方港城阿爾漢格爾斯克組建的樂團，把自由即興與俄羅斯北方的民間素材、劇場化的舞台行為混在一起，是蘇聯即興音樂裡最不像西方 free jazz 的一支。1991 年由 Leo Records（CD LR 180）發行，是這條線在西方唯一有分量的發行。",
+  "why": "蘇聯／後蘇聯自由即興的代表錄音之一，1991 年 11 月 28 日錄於英國 Leicester，Leo Records 發行。注意：MusicBrainz 把錄音日填進了 first-release-date，1991 是錄音年不是發行年；也不能寫成「北方港城的現場」——錄音地在英國。",
   "risk": "團名「Архангельск」同時是城市名，字串搜尋會大量誤配地名條目；西方目錄多用拉丁轉寫 Arkhangelsk，但 MB 藝人實體與 credit 都是西里爾，兩種文字都要試。發行日 1991-11-28 已在蘇聯解體前一個月，若下游依年份把它歸入後蘇聯時期會與本批的敘事脫節。MB 上該團僅 2 個 release-group。",
   "mbNote": "查詢 artist:\"Архангельск\" AND releasegroup:\"Portrait\" 命中 score 100。release-group a684ef73-653e-4039-8764-5db05289bcca，標題 Portrait，first-release-date 1991-11-28，primary-type Album，secondary-types 無。轄下唯一 release：1991-11-28 GB Leo Records CD LR 180。MB 藝人 MBID ff6deadb-d29f-4c75-bf11-30411f69ce01，共 2 個 release-group（另一筆為 1992 年的《Live in Japan》）。",
   "releaseType": "Album",
