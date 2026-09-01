@@ -1,5 +1,123 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 36 筆）帶著 c-51（155 張，
+補「已有王牌卡的藝人卻缺其餘招牌作」）與 c-SEA（99 張，印尼／菲律賓／泰／越／馬／星）
+的雲端段成果，本機接手做完 REMOTE_RUNBOOK 的後四項。合併是 fast-forward，零衝突。
+
+**上架結果**
+
+| | 候選 | 上架 | 留置 | 頂點 | 試聽 ready／unavailable |
+|---|---:|---:|---:|---|---|
+| c-51 | 155 | 149 | 6 | 0 | 100／49 |
+| c-SEA | 99 | 81 | 18 | 0 | 31／50 |
+| c-48／c-50 救援 | 10 | 10 | 0 | 0 | 3／7 |
+
+四份 manifest 的 prepare 與 published gate 全數 0 error；card_catalog 240 筆全部成功；
+KV bulk put 四次都看到 `Success!`；`build-apple-audio-runtime-map` 兩次 skippedInvalid=0。
+卡池 13,178 → 13,418，**無年份 0、無曲風 0**（13,418/13,418 都有第 6 欄）。
+
+**修掉上一批留下的兩個上架管線缺陷**
+
+1. **`build-manifest.mjs` 從來沒把 year 與 genres 帶進 manifest**——這就是 8/31 那 269 張
+   年份全空、29 張曲風空白的根因。已補 `research.suggestedYear` 與 `genres`，
+   並讓 `publish-manifest.mjs` 優先採用 manifest 的曲風（策展層給的是音樂地圖十類 id，
+   比 worker 的 Spotify／Last.fm 對東南亞與華語老盤可靠得多；查無時才留 null 交給
+   `build-seed-genres`）。兩支腳本另相容兩套欄名（c-51／c-SEA 用 `suggestedYear`／`genres[]`，
+   c-48 至 c-50 用 `year`／`genre` 字串），否則同一支腳本重跑舊批仍會寫出空欄。
+   本次 240 列全部一次寫對，沒有事後補。
+2. **`publish-manifest.mjs` 的排版自檢把換行寫死成 LF**。雲端在 Linux 寫的 seed_cards
+   是 LF，本機 checkout 之後是 CRLF（core.autocrlf），自檢因此必然失敗、直接中止上架。
+   改成跟著檔案現況走。
+
+**逐張審稿 254 張，改了 5 處**
+
+- **X JAPAN《Jealousy》hook 前提來源不可靠**：英文維基寫「1991 年 6 月返日時 500 名
+  自衛隊員在機場維持秩序」，但自衛隊在日本沒有民間機場群眾管制的職權，日文維基同一條目
+  也沒有這段。刪掉該 fact、改用同一份來源裡沒有爭議的「錄音地點五人投票、YOSHIKI 四比一
+  輸掉」當軸，research／hooks／input／output 四層同步。
+- **Koes Plus《Volume 2》與 Koes Bersaudara《To The So Called The Guilties》同構**：
+  兩張都以「1965 年因唱 The Beatles 入獄、出獄隔天政變、〈Di Dalam Bui〉」開場。
+  那條軸留給坐完牢直接錄下的首作（Koes Bersaudara），Koes Plus 改用「團名裡的 Plus
+  就是那個外姓鼓手」。**`chk-hook-crossgroup.mjs` 只查單一子批內的五組**，c-51 四個子批、
+  c-SEA 三個子批之間沒有工具在把關，這組就是這樣漏掉的——本次另寫了跨子批的相似度掃描。
+- 人名拉丁原文：The Residents 與 The Quests 兩張的「披頭四」改回 The Beatles，
+  並把四層檔案裡的 31 處一併統一（否則 `qa-check-research` 會把改過的正文判成編造專名）。
+- Derek Bailey《Ballads》的「死前必聽的 1000 張專輯」觸到禁語表的「必聽」，
+  改成「死前該聽」（與同批 Banyen Rakkaen 那張的寫法一致）。
+- คาราบาว《เมด อิน ไทยแลนด์》的「2020 年東京奧運」去掉年份——Tokyo 2020 是賽事名稱，
+  比賽實際在 2021 年舉行，中文寫成年份會誤讀。
+
+**封面：雲端 224／254，本機補到 243**
+
+Spotify／Bandcamp 後備補回 15 張（c-51 兩張、c-SEA 十三張），人工覆核 Apple 候選再補 5 張。
+20 張新補的非 CAA 封面全部拼成一張圖目視過，**退掉 1 張**：Elvy Sukaesih
+《Menghitung Bintang》拿到的是 Spotify 自動產生的佔位圖（黃底＋紅圈波形圖示＋藝人名），
+不是封面，依「配錯封面比沒有封面更糟」退回留置。
+
+探測器自動比對否決、人工推翻的 4 筆都記了理由：The Rollies 掛「New Rollies」（樂團後期改名）、
+Duo Kribo 的 13 軌與 MB rg 一致、Ebiet G. Ade 在 Apple 作「Album Camellia 1」、
+คาราบาว 的泰文標題中間有空格「เวลคัม ทู ไทยแลนด์」——探測器的正規化沒吃掉空格才落空。
+
+**published gate 抓到兩張封面在一天之內腐爛，以及一條 CJK 卡的 KV 讀取順序缺陷**
+
+- **封面腐爛 2 張**：Koes Plus《Volume 2》與蘇芮《驀然回首》的 CAA 封面，雲端 8/31 探測時
+  HTTP 200，9/1 回 404；蘇芮那張連 release-group 底下四個 release 全部 404，Spotify 與
+  Bandcamp 也查無。兩張都改用 Apple 同碟並目視確認是原盤封面（Koes Plus 那張封面上就印著
+  `Mesra Record LP-44`，與正文寫的編號相符；蘇芮那張是飛碟原盤，第二軌正是正文點名的
+  〈是不是這樣〉）。**CAA 圖會腐爛這件事只有 published gate 的實際 HTTP 檢查抓得到**
+  ——探測與上架之間隔一天就足以失效，這一步不能省。
+- **CJK 卡的固定簡介只寫 desc4 會被 CURATED_DESCS 蓋掉**。worker `/album-desc` 的讀取順序是
+  神作人工簡介 → `desc2`（CJK 專屬的 restyledFirst 分支）→ CURATED_DESCS → `desc4`，
+  但 `from_onboarding_manifest.mjs` 對 CJK 卡只寫 `desc4`。落在 CURATED_DESCS 那 75 筆
+  過渡稿裡的卡，上架的簡介因此**永遠不會被讀到**——gate 抓到王菲《浮躁》與崔健
+  《新长征路上的摇滚》兩張。index.js 自己的註解就寫著「desc2 是產線成品，不分 CJK 一律
+  最優先讀」。本次把 16 張 CJK 卡補寫進 `desc2`，並把轉檔器改成 CJK 卡雙寫 desc2＋desc4
+  （`dip-vinyl-worker/scripts/desc-gen/from_onboarding_manifest.mjs`，只改腳本、不必部署 worker）。
+
+**自我同名卡的試聽：17 張裡救回 4 張**
+
+探測器用「藝人 + 專輯」當查詢字串，同名碟等於把同一個詞打兩次，而 Apple 的標題常帶副標，
+自動比對必然落空。改用多組查詢字串逐張看候選，並以曲目逐首比對確認版本後採用：
+Peter Gabriel《Car》（Apple 標 Peter Gabriel 1: Car，9 軌相符）、《Security》（8 軌相符）、
+Kantata Takwa（10 軌含〈Kesaksian〉〈Paman Doblang〉）、Sampaguita（9 軌含〈Bonggahan〉〈Tao〉）。
+其餘 13 張是那些碟真的不在 Apple 上（Garth Brooks 全目錄未上架、God Bless 1976 首作、
+Mr. Bungle 同名作皆然），維持留置。
+
+**c-48／c-50 救援 10 張：更正雲端的一個評分方向錯誤**
+
+雲端替 7 張古典重評的錨點裡，**硬蕊（accessibility）那一軸方向反了**——柴可夫斯基弦樂
+小夜曲與莫札特單簧管五重奏被記成 4，但池中 Vivaldi《四季》是 1、Xenakis／Stockhausen／
+Ligeti 才是 5，硬蕊是「入耳難度」，數字越大越難。照 §0.7 的定標與現有 1,350 張古典卡
+重評 accessibility（其餘兩軌沿用雲端判斷），逐筆寫進 `accessibilityNote`：
+Karajan 弦樂小夜曲 4→2、de Peyer 莫札特五重奏 4→2、Tallis Scholars 2→3、
+Diabolus in Musica 2→3、La Venexiana 2→3、Marc Coppey（杜提尤）2→4，Grumiaux 維持 3。
+
+**兩件要店主裁示的**
+
+1. **c-SEA 有 51／81 張打到 pearl 的硬門檻**（obscurity=5 且 Last.fm listeners<300）。
+   Waldjinah、Chế Linh、Koes Bersaudara、Iwan Fals 在自己國家都是家喻戶曉，
+   **listeners<300 量的是「在英語圈 Last.fm 用戶裡有多冷門」，不是這些唱片真的冷門**。
+   若照門檻放行，池中 pearl 會從 108 暴增到 159（+47%）。這與 §0.7 當初為古典開特例的
+   理由同構（該領域的 API 指標系統性偏移），**要不要為非英語圈的區域目錄比照開一條，
+   是店主的裁定**。本次全部先以一般卡上架，門檻現況寫在 `apexAssessment.reason`。
+2. **c-51 有 20 張 classic=5、22 張 accessibility=5，全部先列一般卡。**
+   逐張反查後發現**這 42 張的藝人在池中全部已經有王牌卡**——這正是 c-51 的設計
+   （補的是同一位藝人的「其餘招牌作」），所以一般卡是合理結果。唯一值得回頭看的是
+   はっぴいえんど《風街ろまん》：《Rolling Stone》日本版 2007 年的日本搖滾百大排第 1，
+   而目前佔著 hall 位置的是同團的同名作。
+
+**順帶查到的既有問題**：Throbbing Gristle 同一張專輯有兩張重複卡
+（`D.o.A: The Third and Final Report` 與 `D.o.A. The Third and Final Report`，只差標點），
+**兩張在 KV 都有各自不同的簡介**，不能直接刪一列了事，已另開工作項目，本次未動。
+
+**主要檔案**：`onboarding-manifest-{c51,csea}-20260901.json`、
+`onboarding-manifest-{c48,c50}-rescue-20260901.json`、
+`batch-progress/probe/stage-local.mjs`（雲端探測結果轉成本機管線的三份檔）、
+`batch-progress/{c51,csea}/{cand-all,covers,ratings,previews,held}.json`、
+`batch-progress/build-manifest.mjs`、`scripts/publish-manifest.mjs`、`seed_cards.json`。
+
 ### 2026-08-31｜dip-vinyl-shop｜c-SEA 菲律賓／星馬組策展提案：35 張候選（`batch-progress/csea/prop-ph.json`）
 
 `CURATION_WISHLIST.md` 2026-08-31 東南亞點名的第三格（菲律賓、馬來西亞、新加坡）。

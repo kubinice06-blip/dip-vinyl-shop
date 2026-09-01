@@ -1,0 +1,133 @@
+{
+ "schemaVersion": 1,
+ "batch": "c50-rescue-20260901",
+ "albums": [
+  {
+   "artist": "Motörhead",
+   "album": "Motörhead",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "好查但需加年份限縮（單以標題查會被藝人名與大量精選盤淹沒）。MB 命中 Motörhead / 1977-08-21 / Album，無 secondary type。藝人名與專輯名的 ö 照抄 MB。",
+    "selfTitledVerified": true,
+    "rgMbid": "43b4c679-bb92-3479-8763-501fd5173d3d"
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/01/a4/c4/01a4c44f-9aed-b6c0-9c08-2df4584fc7ae/196626712028.jpg/1200x1200bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 68758,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "告別演出結束，唱片行老闆給了他們兩天錄音室時間。樂團原本打算在 1977 年 4 月之後解散，Chiswick 的老闆 Ted Carroll 早就認識 Lemmy，唱片由 Lemmy、Eddie Clarke 與 Phil Taylor 錄成。曲目大半重錄自 1975 至 1976 年那批 United Artists 錄音，原始版本 1979 年才以《On Parole》問世。同年 8 月發行後登上英國專輯榜第 43 名，封面首度出現獠牙頭骨 Snaggletooth。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mot%C3%B6rhead_(album)",
+     "https://musicbrainz.org/release-group/43b4c679-bb92-3479-8763-501fd5173d3d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/98/cf/5c/98cf5c56-898c-0438-9f15-84d7dcea4970/mzaf_10460007543305418539.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1621362513",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wynton Marsalis",
+   "album": "Wynton Marsalis",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "預期好查；美版掛 Columbia、國際版掛 CBS，屬同一 release group。",
+    "selfTitledVerified": true,
+    "rgMbid": "b794790b-1aa6-3b59-be8c-4cdb20513cb9"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/05/b7/84/05b78468-c7cd-6323-d63f-190dea24812a/mzi.woffkowd.jpg/1200x1200bb.jpg",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7249,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "東京錄一半，紐約錄另一半，製作人自己坐下來彈了鋼琴。那位製作人是 Herbie Hancock：東京錄的幾首由他彈鋼琴，搭 Ron Carter 的貝斯與 Tony Williams 的鼓；紐約那幾首換成 Branford Marsalis 與 Kenny Kirkland 一輩的年輕陣容。1982 年 1 月由 Columbia Records 發行，七首曲目裡有三首出自這位當時二十歲的小號手之手。美國告示牌爵士專輯榜第 9 名，當年就有樂評說他已經留下了印記。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Wynton_Marsalis_(album)",
+     "https://en.wikipedia.org/wiki/Think_of_One",
+     "https://musicbrainz.org/release-group/b794790b-1aa6-3b59-be8c-4cdb20513cb9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/7c/58/4e7c589f-bfba-5631-5dc1-3e14919eec49/mzaf_14336140844690641136.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "202281520",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

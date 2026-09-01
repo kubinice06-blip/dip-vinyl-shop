@@ -1,0 +1,514 @@
+{
+ "schemaVersion": 1,
+ "batch": "c48-rescue-20260901",
+ "albums": [
+  {
+   "artist": "Herbert von Karajan",
+   "album": "Tchaikovsky / Dvořák: Serenades for Strings",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "packet 給的唯一候選 88600044（Prokofiev 古典交響曲／柴可夫斯基弦樂小夜曲／花之圓舞曲／韋伯邀舞）secondaryTypes 含 Compilation，是 DG 拼盤，不收。改釘 DG 原盤 RG「Streicherserenaden／String Serenades」（柴可夫斯基 op.48＋德弗札克 op.22，柏林愛樂，DG 400 038-2），非合輯。另需與卡拉揚 1966/67 年的舊錄音（RG 88df0ac3「Streicherserenade - Nussknacker-Suite」，DG 1968 首發，搭配胡桃鉗組曲）區辨——稽核指定 1980，故取 3e351dcd。",
+    "rgMbid": "3e351dcd-d43e-4b69-8637-b6e2d1d5529f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3e351dcd-d43e-4b69-8637-b6e2d1d5529f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，查到的是 DG 數位初期的招牌錄音與一般好評，非 Gramophone 名人堂／企鵝三星帶花／唱片藝術名曲名盤／傳奇再版系列（GROC、DG The Originals、Decca Legends、Living Stereo／Presence）／發燒榜單（TAS、香港 CD 聖經、AP／Classic Records 復刻）任一項具體收錄。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "柏林愛樂廳的那四天，正趕上數位錄音的最初階段。1980 年 9 月的 21、23、28、30 日，Karajan 與 Berliner Philharmoniker 在這座廳裡錄下同碟的兩首弦樂小夜曲，Tchaikovsky 的 op. 48 與 Dvořák 的 op. 22，德文原盤標題就叫《Streicherserenaden》。母帶進了 Deutsche Grammophon 剛開的數位系列，1981 年以 LP 發行。弦樂群厚實均質，長線條拉得寬而從容。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/374536-Tschaikowsky-Dvo%C5%99%C3%A1k-Berliner-Philharmoniker-Herbert-von-Karajan-Streicherserenaden-String-Serenade",
+     "https://www.prestomusic.com/classical/products/7941495--tchaikovsky-dvorak-serenades-for-strings",
+     "https://musicbrainz.org/release-group/3e351dcd-d43e-4b69-8637-b6e2d1d5529f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gervase de Peyer & Amadeus Quartet",
+   "album": "Mozart: Clarinet Quintet",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻稽核假設（掛名錯誤）**：稽核把這張掛在 Karl Leister 名下，但 DG 1968 年與 Amadeus Quartet 錄莫札特單簧管五重奏的獨奏是 **Gervase de Peyer**，不是 Leister；Leister 與 Amadeus Quartet 合作的是**布拉姆斯**單簧管五重奏（同一張 DG 雙曲目盤《Klarinettenquintette》裡莫札特掛 de Peyer、布拉姆斯掛 Leister）。MB 兩層皆可證：DG 439 460-2（release 3e2ac18d）與 DG 429 819-2（release 4222b9ba）的掛名都是 de Peyer＋Amadeus Quartet；Karl Leister 的莫札特單簧管五重奏是與 **Brandis Quartett** 合作的 Nimbus NI 5487（1996，RG cb2c8ffb），即主線警告的自動誤選。故 artist 改掛 Gervase de Peyer & Amadeus Quartet。RG 選 a64085bf（單簧管五重奏＋G 小調弦樂五重奏 K.516，Aronowitz 加入中提琴）而非 1efb06ba（併長笛四重奏／雙簧管四重奏的管樂雜錦盤），因前者標題以單簧管五重奏領銜、曲目較貼卡片主旨。另 ac9c1403 是 BBC Legends 的現場（secondaryTypes=Live），不收。",
+    "rgMbid": "a64085bf-d084-3a58-af70-7c0c07e21d19",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a64085bf-d084-3a58-af70-7c0c07e21d19/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，查到的是 DG 長期在版與收入 Amadeus Quartet 的 DG 全集套裝，DG Galleria／Privilege 不等於 DG The Originals，亦未查到名人堂或發燒榜單收錄（本機可另查企鵝三星帶花紙本名單）。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Amadeus-Quartett 的四把弦樂中間，坐著單簧管家 Gervase de Peyer。Mozart 在 1789 年 9 月 29 日完成 K.581，寫給單簧管家 Anton Stadler，同年 12 月 22 日於維也納首演，由 Stadler 吹單簧管、作曲家本人拉中提琴。第二樂章 Larghetto 讓單簧管一路獨唱在弦樂的持續音上，兩邊幾乎等重。錄音由 Deutsche Grammophon 於 1976 年發行，原始黑膠編號 2530 720。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/738885",
+     "https://www.discogs.com/release/7074651-Wolfgang-Amadeus-Mozart-Gervase-De-Peyer-Lothar-Koch-Amadeus-Quartett-Quintett-F%C3%BCr-Klarinette-Und-S",
+     "https://www.discogs.com/release/10233575",
+     "https://www.discogs.com/release/12324597",
+     "https://archive.org/details/lp_quintet-in-a-major-for-clarinet-and-string_wolfgang-amadeus-mozart-gervase-de-peyer-m",
+     "https://en.wikipedia.org/wiki/Clarinet_Quintet_(Mozart)",
+     "https://musicbrainz.org/release-group/a64085bf-d084-3a58-af70-7c0c07e21d19"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grumiaux Trio",
+   "album": "Mozart: Complete String Quintets",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "採 README 已裁定的替換：packet 對「Grumiaux Ensemble｜Mozart: String Quintets K. 515 & 516」查無候選（mbCandidates 為空），改釘 Grumiaux Trio 的莫札特弦樂五重奏全集 07f23c2c，掛名 Grumiaux Trio＋Arpad Gérecz＋Max Lesueur 與 1973 年 Philips 錄音人員相符。artist 依此由「Grumiaux Ensemble」改為「Grumiaux Trio」；album 依 MB 實際標題由「Mozart: String Quintets K. 515 & 516」改為「Mozart: Complete String Quintets」（此 RG 收全部六首，K.515／K.516 含在內）。此 RG secondaryTypes 含 Compilation，依 §5.6 補舉證。",
+    "rgMbid": "07f23c2c-d5fb-4d30-9e41-a595e3f30890",
+    "exceptionReason": "此為 Grumiaux 與 Gérecz／Lesueur 1973 年一次錄成的莫札特弦樂五重奏全集（Philips 6747 107 三 LP 原盤），不是事後拼湊的精選；MB 標 Compilation 係因 CD 再版把六首全集與 1967 年的 K.563 嬉遊曲併為一套。此全集是莫札特弦樂五重奏錄音史上長期在版的權威版本，ClassicsToday 稱其「remains among the treasures of the catalog」。",
+    "exceptionEvidenceUrls": [
+     "https://www.classicstoday.com/review/review-8036/",
+     "https://www.prestomusic.com/classical/products/7930340--mozart-the-complete-string-quintets"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07f23c2c-d5fb-4d30-9e41-a595e3f30890/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，查到的是 ClassicsToday「remains among the treasures of the catalog」這類評語，非上列任一具體收錄；Philips／Decca 的一般再版不算傳奇再版系列（本機可另查企鵝三星帶花紙本名單後翻案）。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三個人的三重奏要錄五重奏，Grumiaux 補進兩位樂手，一口氣錄完六首。弦樂五重奏要兩把小提琴、兩把中提琴與一把大提琴，而這個三重奏只有小提琴、中提琴與大提琴各一，於是找來第二小提琴 Arpad Gérecz 與第二中提琴 Max Lesueur 補齊編制。1973 年 1 月至 5 月，五個人在瑞士 La Chaux-de-Fonds 錄完全部六首。兩把中提琴讓中聲部變厚，Grumiaux 的線條乾淨而不重壓。Philips 最初以三張黑膠分開發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9020310-Mozart-Grumiaux-Trio-Arpad-G%C3%A9recz-Max-Lesueur-Complete-String-Quintets",
+     "https://www.discogs.com/release/11810396-Mozart-Grumiaux-Trio-The-String-Quintets",
+     "https://www.discogs.com/release/14514357",
+     "https://www.classicstoday.com/review/review-8036/",
+     "https://musicbrainz.org/release-group/07f23c2c-d5fb-4d30-9e41-a595e3f30890",
+     "https://www.prestomusic.com/classical/products/7930340--mozart-the-complete-string-quintets"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Tallis Scholars",
+   "album": "Josquin: L'homme armé Masses",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "**推翻 README「主線已裁定的替換」第 1 列。** README 認為 MB 查無 Tallis Scholars 的 Josquin L'homme armé，改釘 e8ad0f95（Missa Sine nomine / Missa Ad fugam, 2008）。實際上該條目存在，只是被自動流程放進了「Byrd: The Three Masses」那張的候選清單裡：f118e56b「L’homme armé Masses」，掛名 Josquin des Prez; The Tallis Scholars, Peter Phillips，1989。已直接查 RG 覆核，底下三個 release（7dfa84e6 XE 1989、a9c4ceca GB 1989、c0c8639d GB 2001）全數指向 Gimell CDGIM 019，就是稽核要的那張。故改釘原目標，不採替代盤。內容為 Missa L'homme armé super voces musicales ＋ Missa L'homme armé sexti toni 兩首，卡名依 MB 與 Gimell 官方寫成複數「L'homme armé Masses」。",
+    "rgMbid": "f118e56b-b645-35a1-9ed6-40bf2ba7076c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f118e56b-b645-35a1-9ed6-40bf2ba7076c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已查證：Gimell Josquin 系列拿下 1987 年 Gramophone 年度唱片的是首張《Missa Pange lingua》（該張已在池內），CDGIM 019 本身不在任何已查得的名單中；Gimell／Hyperion 頁面屬廠牌自家目錄，不算 §3 依據。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一條誰都會唱的世俗曲調，在文藝復興撐起了至少三十一首彌撒。這個數字出自 Peter Phillips 為本張寫的解說，而 Josquin des Prez 一人就佔掉其中兩首，都由 Petrucci 在 1502 年印行，寫作年代推測落在他的中期。1989 年 11 月 Gimell 發行本張，錄音在英格蘭 Norfolk 的 Salle 教堂完成；同年的年度 Diapason d'Or 有兩座頒給 The Tallis Scholars，其中一座就是這兩首彌撒。",
+    "sourceUrls": [
+     "https://www.hyperion-records.co.uk/dc.asp?dc=D_CDGIM019",
+     "https://www.gimell.com/the-tallis-scholars",
+     "https://www.gimell.com/josquin-masses",
+     "https://www.discogs.com/release/5630414-JosquinTallis-Scholars-Peter-Phillips-LHomme-Arm%C3%A9-Masses",
+     "https://musicbrainz.org/release-group/f118e56b-b645-35a1-9ed6-40bf2ba7076c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Diabolus in Musica",
+   "album": "Dufay: Missa Se la face ay pale",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "照 README「主線已裁定的替換」第 2 列採用（稽核原本就允許 Binchois Consort／Diabolus in Musica 二擇一）。MB 無 Binchois Consort 的 Missa Se la face ay pale。同曲其他候選逐一排除：8700d054（1996，Early Music Consort of London／David Munrow，不同團）、4ec4487e（1994，Pro Arte Singers／Thomas Binkley）、4a191184（2006，Tölzer Knabenchor／Collegium Aureum，童聲版）、10b7274e（1936，Pro Musica Antiqua de Bruxelles，**primary-type 是 Single**，依 §1 不收）。掛名 Antoine Guerber 指揮的 Diabolus in Musica 是法國本地團唱勃艮第樂派，與作品出身相符。",
+    "rgMbid": "d76a6bcc-a532-3a82-901f-b1a0aa1b4e52",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d76a6bcc-a532-3a82-901f-b1a0aa1b4e52/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 pearl，但 obscurity=4、listeners=查無，未同時滿足 obscurity=5 與 listeners<300（查無不可當 0），依 §3 退回一般卡。依 §0.7 判定。法國專門古樂團 Diabolus in Musica 2004 年錄音，發行規模極小，勃艮第樂派定旋律彌撒在專門圈以外近乎零能見度；作品本身是文藝復興作曲技術的起點，演出有學術根據，屬遺珠級。可引用的評鑑（Diapason 等紙本／付費來源）雲端查不到，證據標 pending-local。",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/d76a6bcc-a532-3a82-901f-b1a0aa1b4e52",
+     "https://en.wikipedia.org/wiki/Missa_Se_la_face_ay_pale"
+    ]
+   },
+   "description": {
+    "text": "彌撒之外，三一主日的整套專用經文也一併排進了這張唱片。素歌部分取自一份當時的康布雷主教座堂彌撒書，複音部分則相信同樣出自 Dufay 之手。這首彌撒是他四首成熟期定旋律彌撒的第一首，作法是把自己一首香頌的 cantus 旋律抽出來、以長音值交給男高音聲部，當成每個樂章的結構骨幹，影響其後整個十五世紀。2003 年 9 月，Antoine Guerber 帶八名歌手分成四部，錄於法國的 Collégiale de Champeaux。",
+    "sourceUrls": [
+     "https://www.prestomusic.com/classical/products/7929124--dufay-missa-se-la-face-ay-pale",
+     "https://www.medieval.org/emfaq/cds/alp051.htm",
+     "https://en.wikipedia.org/wiki/Diabolus_in_Musica_(ensemble)",
+     "https://musicbrainz.org/release-group/d76a6bcc-a532-3a82-901f-b1a0aa1b4e52"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "La Venexiana",
+   "album": "Monteverdi: Selva morale e spirituale",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "照 README「主線已裁定的替換」第 3 列採用。MB 查無 Alessandrini／Concerto Italiano 的 Selva morale。同曲其他候選逐一排除：2fa31bef（1995）與 e3a5d83c（1997-02-22）皆為 Michel Corboz／洛桑，屬同一指揮的兩個 RG；2dd568ea（1984-11-01，Taverner Consort／Andrew Parrott——**注意池內已有 Andrew Parrott《Monteverdi: Vespers》1984，同指揮同作曲家同年份，撞卡風險高**）；aa2eb738（2001-09-10，Cantus Cölln／Junghänel）。La Venexiana／Claudio Cavina 是義大利本地團，與作品出身相符。",
+    "rgMbid": "3f2896c0-cd94-4ecc-acb4-4af1a648a39a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3f2896c0-cd94-4ecc-acb4-4af1a648a39a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "原提案 pearl，但 obscurity=4、listeners=查無，未同時滿足 obscurity=5 與 listeners<300（查無不可當 0），依 §3 退回一般卡。依 §0.7 判定。蒙台威爾第晚期宗教巨作，錄音由義大利小廠發行，作品本身在《1610 晚禱》陰影下長期被冷落，專門圈以外近乎無人知曉；La Venexiana 的義大利語法處理在古樂圈評價高，屬遺珠級。可引用評鑑雲端查不到，證據標 pending-local。",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/3f2896c0-cd94-4ecc-acb4-4af1a648a39a",
+     "https://en.wikipedia.org/wiki/Selva_morale_e_spirituale"
+    ]
+   },
+   "description": {
+    "text": "指揮席上的人同時在唱：Claudio Cavina 一邊帶團一邊唱 alto 聲部。《Selva morale e spirituale》是 Monteverdi 就任聖馬可教堂樂長之後最重的一部宗教曲集，出版時他已 74 歲，收錄約四十首、題獻給皇后 Eleonora Gonzaga。La Venexiana 不照原曲集的次序走，把樂曲重組成兩套完整晚禱與一套莊嚴彌撒，每個聲部只用一人；錄音是 2005 年 3 月西班牙 Cuenca 一場宗教音樂節的教堂現場。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15061824-Claudio-Monteverdi-La-Venexiana-Claudio-Cavina-Selva-Morale-E-Spirituale",
+     "https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/",
+     "https://en.wikipedia.org/wiki/Selva_morale_e_spirituale",
+     "https://en.wikipedia.org/wiki/La_Venexiana",
+     "https://www.lavenexiana.net/about-us/",
+     "https://musicbrainz.org/release-group/3f2896c0-cd94-4ecc-acb4-4af1a648a39a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/18/4d/a2/mzm.btepsrcn.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "316668332",
+    "storefront": "TW"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marc Coppey",
+   "album": "Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "主線已裁定改釘替代盤（MB 查無 Rostropovich／EMI 1975 那份稽核指定錄音的可用 RG）。五個候選中 63e0667a 是 Bertrand／Gaffigan 2015、90228e27 是 Julien-Laferrière 2023、c6005293 是 Queyras／Gimeno 2024、ec92494d 是 Morlot／西雅圖 2014 的 Xavier Phillips——搭檔與樂團全不同即不同錄音。取 ce5dd2ba（Coppey／列日愛樂／Rophé），同碟收 Caplet《Épiphanie》與《Trois Strophes sur le nom de Sacher》，卡名依實際曲目改寫。**artist 由 Mstislav Rostropovich 改為 Marc Coppey**。",
+    "rgMbid": "ce5dd2ba-0ed6-4152-9d6b-0a38932e467b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ce5dd2ba-0ed6-4152-9d6b-0a38932e467b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻，pearl 亦不成立。hall：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無（2008 年新錄音，不適用歷史再版系列）。pearl：§0.7 要求舉證『在專門圈以外近乎無人知曉』，但我只能證明它是小廠（Æon）發行、無大廠再版，無法正面舉證其無人知曉程度；且此曲的一般認知版本是羅斯托波維奇首演版，本盤的低知名度更接近『版本之一不被注意』而非遺珠級。依判準改列一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五個樂章，五句 Baudelaire——連曲名都是從一首詩裡撈出來的。那句取自《惡之華》中的〈頭髮〉。這首協奏曲是為 Mstislav Rostropovich 而寫，1970 年由他在 Aix-en-Provence 音樂節首演；這一份則是 2007 年 7 月 Marc Coppey 獨奏、Pascal Rophé 指揮列日愛樂錄下的。Æon 於 2008 年發成雙碟，另收 Caplet 的《Épiphanie》與一段訪問 Dutilleux 本人的錄音。",
+    "sourceUrls": [
+     "https://www.oprl.be/fr/caplet-dutilleux",
+     "https://en.wikipedia.org/wiki/Tout_un_monde_lointain...",
+     "https://musicbrainz.org/release-group/ce5dd2ba-0ed6-4152-9d6b-0a38932e467b"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lang Lang",
+   "album": "Bach: Goldberg Variations (2020)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "掛名改用池內既有寫法「Lang Lang」（原擬「Lang Lang 郎朗」），避免同一位藝人因寫法不同在卡池裂成兩個鍵。；三個候選：217c7287 是 2021-02-12 的「Goldberg Variations (extended edition)」擴充版，主線已明示不要選；4a5f9bd2（2020，無日）是同一發行的重複建檔，資料較少。取 2162703b＝2020-09-04 的正式發行。album 欄依 audit 風險提醒第 1 條括年——池內《郭德堡變奏曲》已有 Gould 1955／1981、Landowska 1945、陳必先 1988、Hantaï 1993、Ólafsson 2023 共六張，不括年必混。**池內既有兩張郎朗卡掛名為「Lang Lang」（New York Rhapsody、Liszt: My Piano Hero），本卡依派工指示與池內雙語慣例採「Lang Lang 郎朗」，兩者不一致需主線裁示。**",
+    "rgMbid": "2162703b-3d66-4b5d-9cb8-72e0cfff87c2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2162703b-3d66-4b5d-9cb8-72e0cfff87c2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "未達 §3 門檻。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份皆為歷史再版系列，2020 年錄音不適用。查到的是發行企劃特殊與樂評分歧，非上述任一具體收錄。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天發行兩份演奏：一份柏林錄音室，一份萊比錫聖多馬教堂。後者是巴哈自己任職的教堂，收在 2020 年 9 月 4 日同步推出的四片豪華版裡；錄音室版錄於同年 3 月 15 至 18 日的柏林 Jesus-Christus-Kirche，以雙 CD 為標準版。郎朗說他二十多年前就開始接觸這部作品。樂評對他的處理看法分歧：反覆時大量加裝飾與力度變化，第 13 與第 25 變奏比一般慢，部分宣敘性質的變奏被認為強調得過頭。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15931949-Lang-Lang-Goldberg-Variations",
+     "https://theclassicreview.com/album-reviews/review-bach-goldberg-variations-lang-lang-piano/",
+     "https://store.deutschegrammophon.com/en-en/products/lang-lang-bach-goldberg-variations",
+     "https://musicbrainz.org/release-group/2162703b-3d66-4b5d-9cb8-72e0cfff87c2"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 台灣與美國區都查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

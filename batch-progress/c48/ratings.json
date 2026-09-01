@@ -998,5 +998,87 @@
   "rubricNote": "傅聰的蕭邦夜曲；池內傅聰僅《Chopin: Mazurkas》1 張",
   "rarity": "uncommon",
   "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）"
+ },
+ "Lang Lang|Bach: Goldberg Variations (2020)": {
+  "classic": 3,
+  "obscurity": 2,
+  "accessibility": 3,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rubricNote": "郎朗的硬曲目代表作，補其跨界形象之外的一面；池內郎朗僅跨界與李斯特精選",
+  "rarity": "uncommon",
+  "listenersNote": "local（Last.fm 雲端不查；古典另適用 §0.7 pearl 特例）",
+  "_rekeyedFrom": "Lang Lang 郎朗|Bach: Goldberg Variations (2020)",
+  "_why": "ratings.json 的錨點鍵掛在「Lang Lang 郎朗」，卡片掛「Lang Lang」。同一張碟、同一個專輯名，純掛名寫法差異，是這九張裡唯一真的只需改鍵的。既有錨點值 classic 3／obscurity 2／accessibility 3、rarity uncommon 可直接沿用。"
+ },
+ "Herbert von Karajan|Tchaikovsky / Dvořák: Serenades for Strings": {
+  "classic": 4,
+  "obscurity": 2,
+  "accessibility": 2,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "uncommon",
+  "rubricNote": "卡拉揚與柏林愛樂的 DG 弦樂小夜曲耦合盤，兩曲都是弦樂團核心曲目、旋律性極高。長年推薦盤之一，但非唯一參考版（Barbirolli、Marriner 並列）",
+  "accessibilityNote": "弦樂小夜曲，全然調性、旋律直白、編制正常規模：§0.7 的 2（主流曲目正常規模）。雲端記 4 是把「好入耳」寫成高分，方向相反。"
+ },
+ "Gervase de Peyer & Amadeus Quartet|Mozart: Clarinet Quintet": {
+  "classic": 4,
+  "obscurity": 3,
+  "accessibility": 2,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "uncommon",
+  "rubricNote": "de Peyer 與阿瑪迪斯四重奏的英國名盤。K. 581 是室內樂裡最好入口的作品之一，親和度高於同曲的其他室內樂",
+  "accessibilityNote": "莫札特室內樂、約 30 分鐘、全然調性：2。雲端記 4，同一個方向錯誤。"
+ },
+ "Grumiaux Trio|Mozart: Complete String Quintets": {
+  "classic": 5,
+  "obscurity": 3,
+  "accessibility": 3,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "epic",
+  "rubricNote": "Philips 葛魯米歐的莫札特弦樂五重奏全集，長期被當作這套曲目的基準錄音。全集多碟、份量大",
+  "accessibilityNote": "全集盤屬 §0.7 的「大部頭／全集」：3。"
+ },
+ "The Tallis Scholars|Josquin: L'homme armé Masses": {
+  "classic": 5,
+  "obscurity": 4,
+  "accessibility": 3,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "epic",
+  "rubricNote": "Gimell 廠牌的塔利斯學者代表作之一，文藝復興複音錄音史的里程碑。無伴奏拉丁彌撒，屬專門領域",
+  "accessibilityNote": "無伴奏宗教複音、單一音色長時間：§0.7 的 3。"
+ },
+ "Diabolus in Musica|Dufay: Missa Se la face ay pale": {
+  "classic": 4,
+  "obscurity": 4,
+  "accessibility": 3,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "uncommon",
+  "rubricNote": "Alpha 廠牌的杜飛彌撒，法國古樂團的代表錄音之一。同曲另有 Binchois Consort 版並列，非唯一參考",
+  "accessibilityNote": "十五世紀宗教複音、單一音色：3。"
+ },
+ "La Venexiana|Monteverdi: Selva morale e spirituale": {
+  "classic": 4,
+  "obscurity": 4,
+  "accessibility": 3,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "uncommon",
+  "rubricNote": "La Venexiana 的蒙台威爾第系列在古樂圈評價甚高。《道德與精神的森林》是大部頭宗教曲集，需要時間",
+  "accessibilityNote": "大部頭宗教曲集：3。"
+ },
+ "Marc Coppey|Dutilleux: Tout un monde lointain / Caplet: Épiphanie": {
+  "classic": 3,
+  "obscurity": 5,
+  "accessibility": 4,
+  "listeners": null,
+  "source": "manual:classical-rubric",
+  "rarity": "epic",
+  "rubricNote": "二十世紀法國大提琴協奏曲的專門盤。杜提尤該曲是為羅斯托波維奇所寫、其首演錄音仍是參考版，本張是當代替代版本",
+  "accessibilityNote": "杜提尤是二十世紀不協和語彙、音色取向：§0.7 的 4。雲端記 2 偏低。"
  }
 }

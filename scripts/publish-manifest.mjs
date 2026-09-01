@@ -111,7 +111,10 @@ const seedRows = JSON.parse(seedRaw);
 
 // 防呆：seed_cards.json 是「一列一行」的自訂排版，不是 JSON.stringify(o,null,1)。
 // 用標準 JSON 寫回會把 12,909 行整個重排，diff 會爆掉。先驗重建方式逐字相同再動手。
-const renderSeed = rows => '[' + rows.map(r => JSON.stringify(r)).join(',\n') + ']';
+// 換行字元跟著檔案走：雲端在 Linux 寫的是 LF，本機 checkout 之後是 CRLF（core.autocrlf），
+// 寫死 LF 會讓下面那道排版自檢在本機必然失敗——2026-09-01 實際擋下了 c-51 的上架。
+const seedEol = seedRaw.includes('],\r\n[') ? ',\r\n' : ',\n';
+const renderSeed = rows => '[' + rows.map(r => JSON.stringify(r)).join(seedEol) + ']';
 if (renderSeed(seedRows) !== seedRaw) {
   console.error('中止：seed_cards.json 的排版與本腳本的重建方式不符，貿然寫回會重排整檔。');
   console.error('請先確認排版規則是否改過，再調整 renderSeed()。');
@@ -121,6 +124,7 @@ if (renderSeed(seedRows) !== seedRaw) {
 const existing = new Set();
 for (const r of seedRows) existing.add(poolKeyOf(r[0], r[1]));
 
+const MAP_GENRES = new Set(['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues']);
 const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
@@ -128,8 +132,11 @@ for (const a of albums) {
   const tier = a.apexAssessment?.eligible ? a.apexAssessment.tier : null;
   // 一般卡與王牌現在是同一種列，差別只在第 9 欄 tier：
   //   [artist, album, classic, obscurity, accessibility, genres[], year, composer|null, tier?]
-  // 第 6 欄留 null：build-seed-genres.mjs 用 !Array.isArray(r[5]) 判斷缺欄，會自動補上
-  const row = [a.artist, a.album, a.ratings.classic, a.ratings.obscurity, a.ratings.accessibility, null, year, a.composer || null];
+  // 第 6 欄曲風：manifest 若帶了策展層的 genres 就直接寫進去（音樂地圖十類 id），
+  // 沒帶才留 null 交給 build-seed-genres 問 worker。2026-08-31 有 29 張因為只能靠
+  // worker 的 Spotify／Last.fm、而那些華語老盤在兩處都查無，留下空曲風欄。
+  const g = Array.isArray(a.genres) && a.genres.length && a.genres.every(x => MAP_GENRES.has(x)) ? a.genres.slice() : null;
+  const row = [a.artist, a.album, a.ratings.classic, a.ratings.obscurity, a.ratings.accessibility, g, year, a.composer || null];
   if (tier) { row.push(tier); apexAdds.push([tier, row]); }
   else { if (!a.composer) row.length = 7; seedAdds.push(row); }
 }

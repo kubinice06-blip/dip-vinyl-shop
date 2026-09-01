@@ -52,6 +52,14 @@ for (const f of fs.readdirSync(`${DT}/research`)) {
   }
 }
 
+const MAP_GENRES = new Set(['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues']);
+const candYear = a => [a.suggestedYear, a.year].map(Number).find(Number.isInteger) ?? null;
+const candGenres = a => {
+  const g = Array.isArray(a.genres) && a.genres.length ? a.genres
+    : (typeof a.genre === 'string' && a.genre ? [a.genre] : []);
+  const ok = g.filter(x => MAP_GENRES.has(x));
+  return ok.length ? ok : null;
+};
 const RARITY = s => s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
 
 // c-48 的人工三軸是在策展定名之前跑的，之後不少卡把耦合曲目補進標題
@@ -169,7 +177,16 @@ for (const a of cand) {
   if (cur.exceptionEvidenceUrls) identity.exceptionEvidenceUrls = cur.exceptionEvidenceUrls;
 
   albums.push({
+    // year 與 genres 一定要帶出來。publish-manifest 讀 research.suggestedYear 寫卡池第 7 欄、
+    // 讀 genres 寫第 6 欄。2026-08-31 的 c-48／49／50 就是因為這裡漏了 year，269 張年份全空
+    // （雲端事後補回）；genres 若不帶，build-seed-genres 只能問 worker 的 Spotify／Last.fm，
+    // 東南亞與華語老盤在那兩處查無，會留下空曲風欄——首頁「類型挑片」就抽不到這些卡。
+    // 策展層的 genres 已是音樂地圖十類 id，比 Last.fm 對這些地區的標籤可靠。
     artist: a.artist, album: a.album, identity,
+    // 欄名兩套：c-51／c-SEA 的策展檔用 suggestedYear／genres[]，c-48 至 c-50 用 year／genre（字串）。
+    // 兩套都收，否則同一支腳本重跑舊批就會把年份與曲風寫成空的。
+    research: { suggestedYear: candYear(a), yearNote: a.yearNote || '' },
+    genres: candGenres(a),
     cover: { url: cov.cover.url, source: cov.cover.source, httpStatus: 200, checkedAt: now },
     ratings: {
       classic: rt.classic, obscurity: rt.obscurity, accessibility: rt.accessibility,
