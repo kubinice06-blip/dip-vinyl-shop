@@ -243,3 +243,37 @@ classical 與 electronic 兩塊已經挖得很深，**靈魂與放克 2,279 張�
   Last.fm 累積 listeners 有效數值低於 300，「查無資料」不能當成 0。
   策展層不要預先假設這些卡都會是 pearl。
 - **MB／CAA 覆蓋預期比正典差**，但比全球南方好——考古廠牌的再發把不少原盤建了檔。
+
+---
+
+## ⚠ 2026-09-01（第三次修訂的更正）：牙買加的 29 張是取樣低估，實際 130+ 張
+
+c-57 策展代理實掃卡池後回報：我用 20 位藝人取樣算出的「牙買加 29 張」嚴重低估，
+**光是它列得出名字的牙買加藝人就有 130 張以上**。抽驗確認：我取樣的 20 位得到 29 張，
+它列的 21 個掛名就有 56 張。
+
+**而且簡報要它「補深」的藝人裡有一半已經到 3 張上限**：Burning Spear、Culture、
+Gregory Isaacs、The Skatalites、The Mighty Diamonds、Yellowman、Steel Pulse、
+Buju Banton 各 3 張，Bob Marley 10 張、The Upsetters 5 張、Black Uhuru 4 張。
+「Burning Spear 補深」「Gregory Isaacs 補深」這兩條指令**根本無法執行**。
+
+代理正確地改變了策略：重心從「補深頭部藝人」移到**補上池中完全空白的位置**
+（Delroy Wilson、Hopeton Lewis、Derrick Harriott、The Itals、Mikey Dread、
+The Revolutionaries、Dennis Alcapone、Tappa Zukie、Josey Wales 九位是 0 張）。
+
+### 這是我第二次犯同一類錯
+
+第一次是韓國：用羅馬拼音查原文字掛名的卡，把 97 張讀成 11 張。
+第二次是牙買加：**取樣 20 位就當成該區的全部**。兩次的形狀不同但根源相同——
+**我用一個便宜的近似當成了量測**。
+
+**往後排批次的規則**：取樣只能用來**排除**（「這 20 位都不在，這區大概是空的」），
+**不能用來確認數量**（「命中 29 張，所以這區有 29 張」）。要確認數量就得用
+文字系統偵測、或請策展代理實掃後回報——後者這次證明有效。
+
+### 順帶抓到一組掛名分裂
+
+**`Toots and the Maytals` ×3 與 `Toots & The Maytals` ×1** 是同一個團的兩種寫法，
+四張卡分裂在兩個鍵下。屬線上資料（`seed_cards.json`），留本機處理。
+與 `audits/pool-artist-name-splits.md` 記的六組、以及先前抓到的 Kraftwerk
+《Trans Europa Express》／《Trans-Europe Express》是同一類。
