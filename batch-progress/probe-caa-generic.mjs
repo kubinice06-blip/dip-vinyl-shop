@@ -12,10 +12,18 @@ const OUT = `batch-progress/${batch}/caa.json`;
 const prev = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : [];
 const done = new Map(prev.map(r => [r.artist + '|' + r.album, r]));
 
+// 503 是速率限制，不是「查無」。c-56 的策展代理實測發現：MB 在 503 時回的
+// 空結果，與真正的查無在程式裡長得一模一樣——沒印錯誤碼就會把「暫時打不通」
+// 記成「這張碟不存在」。所以 503 一律退避重試，重試耗盡才算失敗。
 const head = async url => {
-  try { const r = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-        return r.ok ? { ok: true, status: r.status } : { ok: false, status: r.status }; }
-  catch (e) { return { _err: String(e.name || e).slice(0, 40) }; }
+  for (let i = 0; i < 4; i++) {
+    try {
+      const r = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(20000) });
+      if (r.status === 503) { await sleep(2000 * (i + 1)); continue; }
+      return r.ok ? { ok: true, status: r.status } : { ok: false, status: r.status };
+    } catch (e) { if (i === 3) return { _err: String(e.name || e).slice(0, 40) }; await sleep(1500); }
+  }
+  return { _err: '503x4' };
 };
 const out = [];
 for (const c of cards) {
@@ -28,8 +36,14 @@ for (const c of cards) {
     const h = await head(u); await sleep(900);
     if (h.ok) rec.art = { url: u, source: 'caa', rgMbid: c.rgMbid };
     else if (h.status === 404) {
-      const rel = await fetch(`https://musicbrainz.org/ws/2/release?release-group=${c.rgMbid}&fmt=json&limit=25`,
-        { headers: UA, signal: AbortSignal.timeout(25000) }).then(x => x.json()).catch(() => null);
+      let rel = null;
+      for (let i = 0; i < 4 && !rel; i++) {
+        const r = await fetch(`https://musicbrainz.org/ws/2/release?release-group=${c.rgMbid}&fmt=json&limit=25`,
+          { headers: UA, signal: AbortSignal.timeout(25000) }).catch(() => null);
+        if (r && r.status === 503) { await sleep(2000 * (i + 1)); continue; }
+        rel = r && r.ok ? await r.json().catch(() => null) : null;
+        if (!r || !r.ok) break;
+      }
       await sleep(1100);
       for (const x of (rel?.releases || [])) {
         const ru = `https://coverartarchive.org/release/${x.id}/front`;
