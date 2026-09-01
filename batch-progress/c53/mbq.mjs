@@ -2,6 +2,8 @@
 // 或 node mbq.mjs --file queries.json
 const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const _f = globalThis.fetch;
+globalThis.fetch = async (u, o) => { for (let i=0;i<5;i++){ const r= await _f(u,o); if(r.status!==503) return r; await sleep(2500*(i+1)); } return _f(u,o); };
 
 async function q(artist, album, limit = 8) {
   const query = `artist:"${artist}" AND releasegroup:"${album}"`;
