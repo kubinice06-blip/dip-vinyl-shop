@@ -61,6 +61,10 @@ const FOLKB = ['gb', 'us', 'ie', 'pt', 'es', 'uy', 'cl', 'ca', 'fr', 'de'];
 // （Dust-to-Digital、Sublime Frequencies）與法國（前殖民地的檔案），最後才是海外華越社群所在的 au／ca。
 // 依第 75 條：storefront 賣的是發行權涵蓋的地區，不是聽眾在哪裡，所以移民市場放最後。
 const INDOCH = ['kh', 'vn', 'us', 'fr', 'gb', 'th', 'sg', 'au', 'ca'];
+// c-65 深掘電子與實驗：私壓電子與圖書館音樂的再發權多在英美（Trunk、Finders Keepers、
+// Dark Entries、RVNG、Music From Memory 在荷）與法德（INA-GRM、Bureau B），日本盤在
+// 環境／電子再發史上份量重（Light in the Attic 的 Kankyō 系列反而是美國發行）。
+const ELEC = ['us', 'gb', 'de', 'fr', 'nl', 'jp', 'it', 'be', 'ca'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -78,7 +82,8 @@ for (const b of BATCHES)
       : b.startsWith('c61') ? EUR
       : b.startsWith('c62') ? GRC
       : b.startsWith('c63') ? FOLKB
-      : b.startsWith('c64') ? INDOCH : GEN });
+      : b.startsWith('c64') ? INDOCH
+      : b.startsWith('c65') ? ELEC : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
