@@ -110,21 +110,60 @@ const artistOk = (want, got) => {
   return a === b || a.includes(b) || b.includes(a);
 };
 
+// 非拉丁文字的搜尋回退（2026-09-02，c-62 希臘批發現）。
+// 卡片的掛名與盤名依裁定第 6、70 條用原文字，MB 要的正是原文字；
+// 但 Apple 反過來只認羅馬轉寫——c-62 用原文字查只中 4/38，
+// 策展層自己用轉寫查是 17/38。這個轉寫**只用於查詢、不寫進任何資料**，
+// 所以不違反裁定第 26 條（別名只填外部服務認得的字串、不自創）。
+const GR = { α:'a', β:'v', γ:'g', δ:'d', ε:'e', ζ:'z', η:'i', θ:'th', ι:'i', κ:'k', λ:'l',
+  μ:'m', ν:'n', ξ:'x', ο:'o', π:'p', ρ:'r', σ:'s', ς:'s', τ:'t', υ:'y', φ:'f', χ:'ch',
+  ψ:'ps', ω:'o', ά:'a', έ:'e', ή:'i', ί:'i', ό:'o', ύ:'y', ώ:'o', ϊ:'i', ϋ:'y', ΐ:'i', ΰ:'y' };
+const CY = { а:'a', б:'b', в:'v', г:'g', д:'d', е:'e', ё:'e', ж:'zh', з:'z', и:'i', й:'y',
+  к:'k', л:'l', м:'m', н:'n', о:'o', п:'p', р:'r', с:'s', т:'t', у:'u', ф:'f', х:'kh',
+  ц:'ts', ч:'ch', ш:'sh', щ:'shch', ъ:'', ы:'y', ь:'', э:'e', ю:'yu', я:'ya', і:'i', ї:'yi', є:'ye', ґ:'g' };
+const hasNonLatin = s => /[\u0370-\u03ff\u1f00-\u1fff\u0400-\u04ff]/.test(String(s || ''));
+const translit = s => Array.from(String(s || '')).map(ch => {
+  const lo = ch.toLowerCase();
+  const t = GR[lo] ?? CY[lo];
+  if (t === undefined) return ch;
+  return ch === lo ? t : (t.charAt(0).toUpperCase() + t.slice(1));
+}).join('');
+
+// 一張卡要試的查詢字串，依序：原文 → 別名＋原盤名 → 全轉寫。重複的去掉。
+function termsFor(c) {
+  const list = [`${c.artist} ${c.album}`];
+  if (c.queryAlias) list.push(`${c.queryAlias} ${c.album}`);
+  if (hasNonLatin(c.artist) || hasNonLatin(c.album))
+    list.push(`${c.queryAlias || translit(c.artist)} ${translit(c.album)}`);
+  return [...new Set(list.map(x => x.trim()).filter(Boolean))];
+}
+
 let n = 0;
 for (const c of cards) {
   const k = `${c.artist}|${c.album}`;
   if (out[k] && !out[k]._err) { n++; continue; }
   const rec = { batch: c.batch, tried: [] };
 
+  const terms = termsFor(c);
   for (const front of c.fronts) {
-    const j = await get(`https://itunes.apple.com/search?term=${
-      encodeURIComponent(`${c.artist} ${c.album}`)}&entity=album&country=${front}&limit=12`);
-    await sleep(700);                                   // Apple 沒公告限制，保守節流
-    if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
-    const hits = (j.results || []).filter(r =>
-      titleOk(c.album, r.collectionName || '') && artistOk(c.artist, r.artistName || '') &&
-      (!c.year || Math.abs(Number(String(r.releaseDate || '').slice(0, 4)) - c.year) <= 3));
-    rec.tried.push(`${front}:${(j.results || []).length}→${hits.length}`);
+    // 比對用的候選名：原文與轉寫都算數，否則轉寫查到了也會被 titleOk 擋掉。
+    const albumCands = [c.album, translit(c.album)];
+    const artistCands = [c.artist, c.queryAlias, translit(c.artist)].filter(Boolean);
+    let hits = [];
+    let raw = 0;
+    for (const term of terms) {
+      const j = await get(`https://itunes.apple.com/search?term=${
+        encodeURIComponent(term)}&entity=album&country=${front}&limit=12`);
+      await sleep(700);                                 // Apple 沒公告限制，保守節流
+      if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
+      raw = (j.results || []).length;
+      hits = (j.results || []).filter(r =>
+        albumCands.some(a => titleOk(a, r.collectionName || '')) &&
+        artistCands.some(a => artistOk(a, r.artistName || '')) &&
+        (!c.year || Math.abs(Number(String(r.releaseDate || '').slice(0, 4)) - c.year) <= 3));
+      if (hits.length) break;                           // 命中就不再試下一種寫法
+    }
+    rec.tried.push(`${front}:${raw}→${hits.length}`);
     if (!hits.length) continue;
 
     // 同名雙胞胎：explicit 優先，其次 notExplicit，最後才 cleaned。
