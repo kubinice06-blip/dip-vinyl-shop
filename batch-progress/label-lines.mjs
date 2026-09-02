@@ -22,6 +22,7 @@ export const LINES = {
   c63: { lineType: '深掘', scene: { a: '民謠的冷門硬蕊', b: '藍調的冷門硬蕊' } },
   c64: { lineType: '廣度', scene: '柬埔寨與越南 1960–70s' },
   c65: { lineType: '深掘', scene: { a: '私壓電子與磁帶實驗', b: '圖書館音樂與早期電腦音樂' } },
+  c66: { lineType: '廣度', scene: { a: '寶萊塢黃金期與印度流行', b: '印度古典與民俗' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。

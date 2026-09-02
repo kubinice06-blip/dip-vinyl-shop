@@ -65,6 +65,10 @@ const INDOCH = ['kh', 'vn', 'us', 'fr', 'gb', 'th', 'sg', 'au', 'ca'];
 // Dark Entries、RVNG、Music From Memory 在荷）與法德（INA-GRM、Bureau B），日本盤在
 // 環境／電子再發史上份量重（Light in the Attic 的 Kankyō 系列反而是美國發行）。
 const ELEC = ['us', 'gb', 'de', 'fr', 'nl', 'jp', 'it', 'be', 'ca'];
+// c-66 印度：本地 storefront 先試（in），Saregama／HMV India 的目錄在 in 最全；
+// 再發權在英美（Finders Keepers、Bombay Connection、Light in the Attic）與英國的南亞社群發行；
+// 古典線的 ECM／Navras／Nimbus 在 gb／de。依第 75 條，移民市場（gb／ca／ae）放在發行權之後。
+const INDIA = ['in', 'us', 'gb', 'de', 'fr', 'ca', 'ae', 'sg', 'au'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -83,7 +87,8 @@ for (const b of BATCHES)
       : b.startsWith('c62') ? GRC
       : b.startsWith('c63') ? FOLKB
       : b.startsWith('c64') ? INDOCH
-      : b.startsWith('c65') ? ELEC : GEN });
+      : b.startsWith('c65') ? ELEC
+      : b.startsWith('c66') ? INDIA : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
