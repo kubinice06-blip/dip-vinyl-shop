@@ -815,3 +815,93 @@ Silver Apples、Robbie Basho ×2、The Millennium，**Bruce Haack ×3 已達藝�
 
 第 27 條的規則再次成立：**取樣只能用來排除，不能用來確認數量。**
 若要開 c-60 的續批，可用名單得先扣掉這批的 26 位與上列 16 位。
+
+## 49.（c-60）跨文字系統的撞卡，字串去重完全看不見——這批抓到一張
+
+b 組提了 **灰野敬二《わたしだけ？》(1981)**，`chk-prop` 與我自己補跑的鬆散去重
+（去括號、去 remaster／reissue 尾綴、NFKD 正規化）**兩道都判定沒撞卡**。
+
+實際上池中早就有這張碟：**`Keiji Haino`《Watashi Dake?》**。
+兩邊一個用原文字、一個用羅馬拼音，**在任何字串比對下都是兩個不同的東西**。
+
+**裁定：這張剔除**（c-60 的 b 組因此從 24 張降為 23 張，全批 49 張）。
+
+**規則：東亞（以及任何非拉丁文字）的卡，去重必須同時比對原文字與羅馬拼音兩種形式，
+而且要比對到「盤名」層級，不能只比對藝人名。**
+現行 `queryAlias` 只裝得下藝人的別名（欄位是藝人層級的），
+所以盤名的羅馬拼音在去重時無處可取——**這是現行去重管線的結構性缺口，不是誰漏看**。
+
+補救方式：策展層在提案任何非拉丁文字的卡時，**要在 `risk` 欄自己寫出盤名的羅馬拼音**，
+下游去重才有東西可比。往後批次照此執行。
+
+（這是同一個文字系統陷阱的第三種形狀。第一種：我用羅馬拼音抽測原文字掛名的卡池，
+把韓國的 97 張讀成 11 張。第二種：裁定第 2、8 條，MB 的標題語言不跟著藝人語言走。
+第三種就是這個——**池子自己兩種文字都用**。）
+
+### 順帶抓到一筆線上卡池的缺陷（留給本機）
+
+`Keiji Haino`《Watashi Dake?》這張卡**年份記 2017**，但那是 Black Editions 的再發年，
+**原盤是 1981 年 Pinakotheca 的盤**。依既有的年份政策（第 1 條、c-52 對
+Keenan Nasution 的處理）應改記 1981。
+
+同時，池中另有一張 **`不失者`《不失者 (Double Live)》(1989)** 用原文字掛名，
+與 `Keiji Haino` 的羅馬拼音掛名並存。**這兩個不該合併**——不失者是灰野敬二領軍的
+樂團，不是他的別名，與 Selda／Selda Bağcan（同一人兩種拼法）不同類，
+藝人張數上限應分開計。但**同一個池子裡一個用原文字、一個用羅馬拼音，本身就該統一**。
+
+兩件都屬線上資料（`seed_cards.json`），雲端不動，記在
+`audits/pool-artist-name-splits.md`。
+
+## 50.（c-60）標點與重音的微變體：一律採原盤封面的寫法，且不必上呈
+
+b 組回報兩張處理不一致：The Outsiders 採了 MB／串流的《CQ》，
+Heldon 卻採了原盤的《Electronique Guerilla》。它問第 6 條有沒有涵蓋標點與重音的微變體。
+
+**裁定：涵蓋，而且答案就是第 6 條的答案——採原盤封面的寫法。**
+The Outsiders 那張已改回 **《C.Q.》**（Discogs master 177693 的 1968 原盤作 C.Q.，
+MB 的 release-group 與所有再發、串流才是 CQ）。Heldon 的處理原本就對。
+
+**這類差異不必上呈**，理由是它與第 45 條（Debris' 改名）**根本不同**：
+標點與重音的差異在外部服務的搜尋裡會被正規化掉，**命中率不受影響**，
+所以沒有第 45 條那個「照原名收就查不到、就變成 §1 要避免的無試聽自我同名卡」的代價。
+第 45 條處理的是**兩個不同的盤名**，第 50 條處理的是**同一個盤名的兩種寫法**——
+前者要權衡，後者照第 6 條走就好。
+
+## 51.（c-60）Group 1850 年份採 1968、Pekka Streng 採合併掛名
+
+- **Group 1850《Agemo's Trip to Mother Earth》**：MB 的 release-group 記 1969，
+  Discogs 的原盤（Philips 844 083 PY）記 1968-12。**採 1968**，
+  照既有的年份政策（卡片年份記原盤年，不跟著 MB 的 first-release-date 走）。
+- **Pekka Streng《Magneettimiehen kuolema》**：MB 的藝人實體是單人，
+  但 artist-credit 與 Discogs 都作「Pekka Streng & Tasavallan Presidentti」
+  （原盤首版封面無藝人名，後貼此貼紙）。**採合併掛名**，
+  `queryAlias` 填「Pekka Streng」給外部服務。這正是第 10 條的正面應用——
+  **MB 的 artist-credit 就是外界實際使用的掛名**。
+
+## 52.（c-60）歐洲團名的大小寫有系統性三分歧——卡池採樂團與廠牌的現行寫法
+
+b 組回報：MB 遵循原盤（`Träd, gräs och stenar`、`Älgarnas trädgård` 全小寫）、
+Discogs 一律 title case、樂團與廠牌近年用第三種。
+
+**裁定：採樂團與廠牌的現行寫法**（b 組已經這樣做，`Träd, Gräs och Stenar`、
+`Älgarnas Trädgård`）。理由是這一項與第 6 條的管轄範圍不同：
+第 6 條講的是**盤名**（那是一件作品的名字，有原始發行可依），
+**團名則是一個持續存在的主體的名字**，會隨主體自己的用法演變，
+現行寫法才是讀者查得到、樂團自己也認的那一個。
+
+大小寫差異同第 50 條，在外部服務的搜尋裡會被正規化，命中率不受影響。
+
+## 53.（c-60）深掘線的空洞在哪裡：義大利 prog、北歐 progg、荷蘭、澳紐
+
+b 組實掃卡池後回報一個與 a 組相反的結果：**krautrock、UK acid folk、
+日本 underground、industrial／noise 在池中其實已相當完整**
+（Comus、Trees、Mellow Candle、Bröselmaschine、Emtidi、Annexus Quam、
+Throbbing Gristle、非常階段、村八分 都在）。
+
+**真正整片為零的是四塊：義大利 prog、北歐 progg、荷蘭、澳紐。**
+已查證資料齊全、可各再出 4–6 張的名單：Alphataurus、Museo Rosenbach、
+Biglietto per l'Inferno、Trúbrot、Wigwam、Burnin Red Ivanhoe、Supersister、
+Q65、Tamam Shud、Company Caine。
+
+**這是 c-61 的現成起點**（若店主要繼續往下開）。與第 48 條記的北美私壓可用名單
+（要先扣掉本批的 26 位與已在池中的 16 位）合起來看，深掘搖滾這條線還有一批的量。
