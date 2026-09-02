@@ -155,3 +155,11 @@ c-52 對 Keenan Nasution 的處理）**應改記 1981**。
 3. 這批 38 張新卡都在藝人上限內，不會與這 5 張立刻衝突，**可以先上架再處理正規化**
 
 屬**線上資料**（`seed_cards.json`），依 REMOTE_RUNBOOK 雲端未修改，留店主本機處理。
+
+---
+
+## 2026-09-02 追加（obscurity 校準時發現）：Junei《Let's Ride》年份記再發年
+
+`Junei`《Let's Ride》卡片年份 **2014**，那是 Numero Group 的再發年，原盤是 1980 年代的私壓盤。
+與 `Keiji Haino`《Watashi Dake?》（記 2017、應為 1981）同形。
+屬線上資料（`seed_cards.json`），雲端未修改，留本機處理。

@@ -1,0 +1,60 @@
+樣本 525 張，其中有曲風 345 張
+
+## 一、與現行絕對門檻不相容的卡：0 張
+（obscurity 不是 listeners 算出來的值——代表當年 worker 查到別的實體、或事後人工改過。要複核。）
+
+## 二、各曲風的 listeners 分位數（同一個絕對門檻對不同曲風意味著不同的稀有程度）
+曲風            n      P10      P30      P60      P85   絕對o5%   絕對o≥4%
+rock        124     8996    52067   189609   733042        4%        15%
+chinese      63        1       19      209      788       94%       100%
+electronic   32      587     5147    17093    75249       22%        66%
+jazz         31      387      850     9085    32926       42%        71%
+folk         26      142     3866    27364   179057       23%        54%
+pop          26       78      922    13994   207779       38%        62%
+world        17      159     1338    10988   107013       41%        71%
+soul         10      142     1317    12324    24960       50%        80%
+classical     7        3      167     3497     4023       57%       100%
+hiphop        6     7184    67399   118983  1018320        0%        17%
+blues         3     1335     1335    23538    29402       33%        33%
+
+## 三、絕對分級 vs 曲風相對分級（分位點 10/30/60/85）——會變動的卡
+  [chinese] 紫薇|綠島小夜曲  listeners=19  絕對 5 → 相對 4
+  [chinese] 姚蘇蓉|今天不回家  listeners=2484  絕對 5 → 相對 1
+  [chinese] 青山|淚的小花  listeners=7  絕對 5 → 相對 4
+  [chinese] 鳳飛飛|掌聲響起  listeners=553  絕對 5 → 相對 2
+  [chinese] 鳳飛飛|祝你幸福  listeners=273  絕對 5 → 相對 2
+  [chinese] 劉文正|諾言  listeners=50  絕對 5 → 相對 3
+  [chinese] 費玉清|長江水  listeners=20  絕對 5 → 相對 3
+  [chinese] 歐陽菲菲|雨の御堂筋  listeners=11  絕對 5 → 相對 4
+  [chinese] 劉文正|三月裡的小雨  listeners=5  絕對 5 → 相對 4
+  [chinese] 甄妮|誓言  listeners=25  絕對 5 → 相對 3
+  [chinese] 蔡琴|此情可待  listeners=278  絕對 5 → 相對 2
+  [chinese] 蔡琴|蔡琴老歌  listeners=708  絕對 5 → 相對 2
+  [chinese] 檳榔兄弟|失守獵人  listeners=7  絕對 5 → 相對 4
+  [chinese] 昊恩家家|Blue in Love  listeners=434  絕對 5 → 相對 2
+  [chinese] 陳勳奇|東邪西毒  listeners=34  絕對 5 → 相對 3
+  [chinese] 葉麗儀|上海灘  listeners=650  絕對 5 → 相對 2
+  [chinese] 黃霑|黃飛鴻  listeners=7  絕對 5 → 相對 4
+  [chinese] 葉啟田|愛拚才會贏  listeners=4  絕對 5 → 相對 4
+  [chinese] 沈文程|心事誰人知  listeners=43  絕對 5 → 相對 3
+  [chinese] 陳小雲|舞女  listeners=81  絕對 5 → 相對 3
+  [chinese] 陳小雲|愛情恰恰  listeners=19  絕對 5 → 相對 4
+  [chinese] 江蕙|酒後的心聲  listeners=303  絕對 5 → 相對 2
+  [chinese] 江蕙|紅線  listeners=662  絕對 5 → 相對 2
+  [chinese] 黃乙玲|講什麼山盟海誓  listeners=7  絕對 5 → 相對 4
+  [chinese] 詹雅雯|人生公路  listeners=55  絕對 5 → 相對 3
+  [chinese] 江蕙|半醉半清醒  listeners=377  絕對 5 → 相對 2
+  [chinese] 蕭煌奇|真情歌  listeners=75  絕對 5 → 相對 3
+  [chinese] 鳳飛飛|想要彈同調  listeners=9  絕對 5 → 相對 4
+  [chinese] 伍佰 & China Blue|雙面人  listeners=122  絕對 5 → 相對 3
+  [chinese] 伍佰 & China Blue|釘子花  listeners=62  絕對 5 → 相對 3
+  [chinese] 陳雷|歡喜就好  listeners=399  絕對 5 → 相對 2
+  [chinese] 關淑怡|冬戀  listeners=108  絕對 5 → 相對 3
+  [chinese] 盧冠廷|1989  listeners=55  絕對 5 → 相對 3
+  [chinese] 太極|迷  listeners=26  絕對 5 → 相對 3
+  [chinese] 草蜢|Grasshopper III  listeners=56  絕對 5 → 相對 3
+  [chinese] 楊千嬅|Single  listeners=2983  絕對 5 → 相對 1
+  [chinese] 容祖兒|我的驕傲  listeners=3935  絕對 4 → 相對 1
+  [chinese] 李克勤|紅日  listeners=1385  絕對 5 → 相對 1
+  [chinese] 黃耀明|信望愛  listeners=215  絕對 5 → 相對 2
+  [chinese] 鄭秀文|放不低  listeners=439  絕對 5 → 相對 2
