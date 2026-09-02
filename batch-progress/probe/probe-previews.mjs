@@ -49,6 +49,11 @@ const DIG = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'br'];
 // c-60 深掘搖滾與迷幻：北美私壓的再發多由美國考古廠牌操刀（us／ca），
 // 歐陸地下走 gb／de／fr／it／se／nl，日本 underground 走 jp。
 const PSY = ['us', 'ca', 'gb', 'de', 'fr', 'it', 'se', 'nl', 'jp'];
+// c-61 深掘搖滾迷幻續批：義法地下 prog ＋ 北歐 progg ＋ 荷比澳紐。
+// 先試各國本地，日本盤在 prog 的再發史上份量很重（Arcàngelo、Belle Antique、Strange Days）。
+const EUR = ['it', 'fr', 'se', 'dk', 'no', 'fi', 'is', 'nl', 'be', 'au', 'nz', 'jp', 'de', 'gb', 'us'];
+// c-62 希臘：先試希臘與賽普勒斯，再回退德澳（大量希臘移民市場）與國際。
+const GRC = ['gr', 'cy', 'de', 'au', 'us', 'gb', 'ca', 'se'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -62,7 +67,9 @@ for (const b of BATCHES)
       : b.startsWith('c56') ? CEU
       : b.startsWith('c57') ? JAM
       : (b.startsWith('c58') || b.startsWith('c59')) ? DIG
-      : b.startsWith('c60') ? PSY : GEN });
+      : b.startsWith('c60') ? PSY
+      : b.startsWith('c61') ? EUR
+      : b.startsWith('c62') ? GRC : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。

@@ -17,7 +17,8 @@ export const LINES = {
   c59: { lineType: '深掘', scene: '爵士' },
   c60: { lineType: '深掘', scene: { a: '北美私壓搖滾與迷幻', b: '歐日地下搖滾與迷幻' } },
   c61: { lineType: '深掘', scene: { a: '義大利與法國地下 prog', b: '北歐 progg 與荷比澳紐' } },
-  c62: { lineType: '廣度', scene: { a: '希臘 rebetiko', b: '希臘 έντεχνο 與地下' } },
+  // c-62 是單組（一位代理涵蓋 rebetiko／έντεχνο／地下三線），所以 scene 用單一字串。
+  c62: { lineType: '廣度', scene: '希臘 rebetiko 與 έντεχνο' },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
