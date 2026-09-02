@@ -67,11 +67,9 @@
  "Moğollar|Anadolu Pop": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
-   "sa:3→1"
+   "tr:3→1"
   ],
-  "front": "sa",
+  "front": "tr",
   "collectionId": 665879797,
   "appleTitle": "Anadolu Pop Moğollar",
   "appleArtist": "Moğollar",
@@ -85,28 +83,29 @@
  "Moğollar|Moğollar": {
   "batch": "c55",
   "tried": [
-   "tr:12→0",
-   "ae:12→0",
-   "sa:12→0",
-   "eg:11→0",
-   "lb:12→0",
-   "ma:12→0",
-   "dz:429",
-   "de:12→0",
-   "fr:12→0",
-   "us:12→0",
-   "gb:12→0"
+   "tr:12→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 1449693123,
+  "appleTitle": "Moğollar'94",
+  "appleArtist": "Moğollar",
+  "appleYear": "2009",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f2/89/6c/f2896cad-ba60-ba49-3508-c312bd031b8f/mzaf_15888186441073410789.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 33,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Erkin Koray|Erkin Koray": {
   "batch": "c55",
   "tried": [
    "tr:12→0",
    "ae:12→0",
-   "sa:429",
+   "sa:11→0",
    "eg:11→0",
-   "lb:429",
+   "lb:11→0",
    "ma:12→0",
    "dz:12→0",
    "de:12→0",
@@ -119,19 +118,20 @@
  "Erkin Koray|Erkin Koray Tutkusu": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
-   "sa:1→0",
-   "eg:1→0",
-   "lb:429",
-   "ma:1→0",
-   "dz:1→0",
-   "de:1→0",
-   "fr:1→0",
-   "us:429",
-   "gb:1→0"
+   "tr:1→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 1805182524,
+  "appleTitle": "Erkin Koray Tutkusu (2025 Remastered)",
+  "appleArtist": "Erkin Koray",
+  "appleYear": "2025",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/2d/8f/032d8fa0-abe1-e59c-4458-215e381372d0/mzaf_2839375793019654451.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 48,
+  "reissueTitle": true,
+  "status": "ready"
  },
  "Barış Manço|Sakla Samanı Gelir Zamanı": {
   "batch": "c55",
@@ -145,7 +145,7 @@
    "dz:0→0",
    "de:0→0",
    "fr:0→0",
-   "us:403",
+   "us:0→0",
    "gb:0→0"
   ],
   "status": "unavailable"
@@ -153,109 +153,111 @@
  "Barış Manço|Sarı Çizmeli Mehmet Ağa": {
   "batch": "c55",
   "tried": [
-   "tr:403",
+   "tr:1→0",
    "ae:1→0",
    "sa:1→0",
-   "eg:403",
+   "eg:1→0",
    "lb:1→0",
-   "ma:403",
-   "dz:2→0",
-   "de:3→0",
-   "fr:3→0",
-   "us:2→0",
-   "gb:3→0"
+   "ma:2→1"
   ],
-  "status": "unavailable"
+  "front": "ma",
+  "collectionId": 1158931075,
+  "appleTitle": "Sarı Çizmeli Mehmet Ağa",
+  "appleArtist": "Barış Manço",
+  "appleYear": "1993",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": null,
+  "cleanedOnly": false,
+  "yearDrift": 16,
+  "reissueTitle": false,
+  "status": "no-preview"
  },
  "Selda Bağcan|Türkülerimiz 1": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:7→0",
-   "sa:7→0",
-   "eg:403",
-   "lb:7→0",
-   "ma:7→0",
-   "dz:7→0",
-   "de:7→0",
-   "fr:429",
-   "us:403",
-   "gb:403"
+   "tr:7→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 1567064120,
+  "appleTitle": "Türkülerimiz 1",
+  "appleArtist": "Selda Bağcan",
+  "appleYear": "1995",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/42/42/064242b9-e3e0-d628-6c36-36bacbe68df2/mzaf_18145284637604959371.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 21,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Selda Bağcan|Yuh Yuh": {
   "batch": "c55",
   "tried": [
    "tr:8→0",
-   "ae:429",
+   "ae:8→0",
    "sa:8→0",
-   "eg:429",
+   "eg:8→0",
    "lb:8→0",
    "ma:8→0",
-   "dz:403",
-   "de:429",
-   "fr:429",
+   "dz:8→0",
+   "de:9→0",
+   "fr:9→0",
    "us:8→0",
-   "gb:429"
+   "gb:9→0"
   ],
   "status": "unavailable"
  },
  "Edip Akbayram|Edip Akbayram": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:403",
+   "tr:12→0",
+   "ae:12→0",
    "sa:11→0",
-   "eg:429",
-   "lb:429",
+   "eg:11→0",
+   "lb:9→0",
    "ma:12→0",
    "dz:12→0",
    "de:12→0",
-   "fr:429",
-   "us:429",
-   "gb:429"
+   "fr:12→0",
+   "us:12→0",
+   "gb:12→0"
   ],
   "status": "unavailable"
  },
  "3 Hür-El|3 Hür-El": {
   "batch": "c55",
   "tried": [
-   "tr:12→0",
-   "ae:429",
-   "sa:429",
-   "eg:429",
-   "lb:429",
-   "ma:429",
-   "dz:429",
-   "de:429",
-   "fr:429",
-   "us:429",
-   "gb:429"
+   "tr:12→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 896876466,
+  "appleTitle": "1953 Hürel",
+  "appleArtist": "3 Hürel",
+  "appleYear": "1999",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/8f/f9/2b8ff904-4215-ec8a-54dd-2f12bc76dbf0/mzaf_8966207979562336944.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 26,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Bülent Ortaçgil|Benimle Oynar mısın": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
-   "sa:429",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:3→1"
+   "tr:3→1"
   ],
-  "front": "dz",
+  "front": "tr",
   "collectionId": 588439087,
   "appleTitle": "Benimle Oynar Mısın",
   "appleArtist": "Bülent Ortaçgil",
   "appleYear": "1974",
   "explicitness": "notExplicit",
   "trackCount": 14,
-  "previewUrl": null,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/78/b2/9f78b21f-c73b-42fc-d682-60daf1ae072e/mzaf_11184269624252998662.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "no-preview"
+  "status": "ready"
  },
  "Mazhar ve Fuat|Türküz Türkü Çağırırız!": {
   "batch": "c55",
@@ -276,44 +278,42 @@
  "Modern Folk Üçlüsü|40 Yıl Sonra": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:429",
-   "us:403",
-   "gb:403"
+   "tr:1→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 1226966432,
+  "appleTitle": "40 Yıl Sonra",
+  "appleArtist": "Modern Folk Üçlüsü",
+  "appleYear": "1974",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bb/55/77/bb557733-17af-c1f5-2328-a4f7d0cd1997/mzaf_3315486686250598316.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  },
  "Ayten Alpman|Memleketim": {
   "batch": "c55",
   "tried": [
    "tr:4→0",
-   "ae:403",
-   "sa:403",
+   "ae:4→0",
+   "sa:4→0",
    "eg:4→0",
-   "lb:403",
-   "ma:403",
+   "lb:3→0",
+   "ma:4→0",
    "dz:4→0",
-   "de:429",
+   "de:4→0",
    "fr:4→0",
    "us:4→0",
-   "gb:403"
+   "gb:4→0"
   ],
   "status": "unavailable"
  },
  "Fikret Kızılok|Zaman Zaman": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:2→2"
+   "tr:2→2"
   ],
-  "front": "ae",
+  "front": "tr",
   "collectionId": 256896978,
   "appleTitle": "Zaman Zaman",
   "appleArtist": "Fikret Kızılok",
@@ -327,17 +327,17 @@
  "Ruhi Su|Seferberlik Türküleri Ve Kuvayi Milliye Destanı": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
+   "tr:2→0",
+   "ae:2→0",
    "sa:2→0",
-   "eg:429",
-   "lb:429",
-   "ma:429",
-   "dz:429",
-   "de:429",
+   "eg:2→0",
+   "lb:1→0",
+   "ma:2→0",
+   "dz:2→0",
+   "de:2→0",
    "fr:2→0",
    "us:2→0",
-   "gb:429"
+   "gb:2→0"
   ],
   "status": "unavailable"
  },
@@ -345,16 +345,16 @@
   "batch": "c55",
   "tried": [
    "tr:1→0",
-   "ae:429",
-   "sa:429",
-   "eg:429",
-   "lb:429",
-   "ma:429",
-   "dz:429",
-   "de:429",
-   "fr:429",
-   "us:429",
-   "gb:403"
+   "ae:1→0",
+   "sa:1→0",
+   "eg:1→0",
+   "lb:0→0",
+   "ma:1→0",
+   "dz:1→0",
+   "de:1→0",
+   "fr:1→0",
+   "us:1→0",
+   "gb:1→0"
   ],
   "status": "unavailable"
  },
@@ -363,15 +363,15 @@
   "tried": [
    "tr:1→0",
    "ae:1→0",
-   "sa:429",
-   "eg:429",
+   "sa:1→0",
+   "eg:1→0",
    "lb:0→0",
-   "ma:429",
-   "dz:429",
-   "de:429",
-   "fr:429",
-   "us:429",
-   "gb:429"
+   "ma:1→0",
+   "dz:1→0",
+   "de:1→0",
+   "fr:1→0",
+   "us:1→0",
+   "gb:1→0"
   ],
   "status": "unavailable"
  },
@@ -394,17 +394,9 @@
  "Orhan Gencebay|Hatasız Kul Olmaz": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
-   "sa:429",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:5→1"
+   "tr:4→2"
   ],
-  "front": "fr",
+  "front": "tr",
   "collectionId": 605661045,
   "appleTitle": "Hatasız Kul Olmaz",
   "appleArtist": "Orhan Gencebay",
@@ -418,7 +410,7 @@
  "Orhan Gencebay|Batsın Bu Dünya": {
   "batch": "c55",
   "tried": [
-   "tr:5→1"
+   "tr:5→2"
   ],
   "front": "tr",
   "collectionId": 646989212,
@@ -434,53 +426,43 @@
  "Zeki Müren|Kahır Mektubu": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:2→0",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "tr:1→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 1631124142,
+  "appleTitle": "Kahır Mektubu",
+  "appleArtist": "Zeki Müren",
+  "appleYear": "1991",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/1e/8c/e21e8c63-9441-7042-5cd4-e3db77e603ff/mzaf_3034196911054455936.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 11,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Müzeyyen Senar|Bir Bahar Akşamı": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "tr:5→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 321547557,
+  "appleTitle": "Bir Bahar Akşamı",
+  "appleArtist": "Müzeyyen Senar",
+  "appleYear": "1977",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/11/b7/8e/11b78e1d-23b8-0c69-2070-0661d75c46e0/mzaf_10305916140485171367.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  },
  "Neşet Ertaş|Kendim Ettim Kendim Buldum": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:429",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:429",
-   "fr:429",
-   "us:429",
-   "gb:2→1"
+   "tr:2→1"
   ],
-  "front": "gb",
+  "front": "tr",
   "collectionId": 900667282,
   "appleTitle": "Kendim Ettim Kendim Buldum",
   "appleArtist": "Neşet Ertaş",
@@ -494,13 +476,9 @@
  "Neşet Ertaş|Zahidem": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:403",
-   "sa:429",
-   "eg:429",
-   "lb:2→1"
+   "tr:2→2"
   ],
-  "front": "lb",
+  "front": "tr",
   "collectionId": 903301772,
   "appleTitle": "Zahidem",
   "appleArtist": "Neşet Ertaş",
@@ -514,71 +492,70 @@
  "Zülfü Livaneli|Nazım Türküsü": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:429",
-   "sa:429",
-   "eg:403",
+   "tr:2→0",
+   "ae:2→0",
+   "sa:2→0",
+   "eg:2→0",
    "lb:2→0",
-   "ma:429",
+   "ma:2→0",
    "dz:2→0",
    "de:2→0",
-   "fr:429",
+   "fr:2→0",
    "us:2→0",
-   "gb:429"
+   "gb:2→0"
   ],
   "status": "unavailable"
  },
  "Zülfü Livaneli|Ada": {
   "batch": "c55",
   "tried": [
-   "tr:429",
+   "tr:1→0",
    "ae:429",
+   "ae:0→0",
    "sa:429",
+   "sa:0→0",
    "eg:429",
+   "eg:0→0",
    "lb:1→0",
    "ma:429",
-   "dz:429",
-   "de:429",
-   "fr:429",
-   "us:429",
-   "gb:429"
+   "ma:0→0",
+   "dz:1→0",
+   "de:1→0",
+   "fr:3→0",
+   "us:1→0",
+   "gb:1→0"
   ],
   "status": "unavailable"
  },
  "Ahmet Kaya|Şafak Türküsü": {
   "batch": "c55",
   "tried": [
-   "tr:429",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:2→1"
+   "tr:2→1"
   ],
-  "front": "ma",
+  "front": "tr",
   "collectionId": 402648666,
   "appleTitle": "Şafak Türküsü",
   "appleArtist": "Ahmet Kaya",
   "appleYear": "1986",
   "explicitness": "notExplicit",
   "trackCount": 11,
-  "previewUrl": null,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/46/45/d4/4645d450-a007-bca6-f3aa-c160cf3d8182/mzaf_14976838102883487476.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "no-preview"
+  "status": "ready"
  },
  "Abdel Halim Hafez|Mawoud": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
+   "tr:1→0",
+   "ae:0→0",
+   "sa:0→0",
    "eg:0→0",
    "lb:0→0",
    "ma:0→0",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
+   "dz:0→0",
+   "de:1→0",
+   "fr:1→0",
+   "us:1→0",
    "gb:1→0"
   ],
   "status": "unavailable"
@@ -586,119 +563,139 @@
  "Abdel Halim Hafez|Ya Malekan Kalby": {
   "batch": "c55",
   "tried": [
-   "tr:1→0",
-   "ae:1→0",
-   "sa:1→0",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:1→0",
-   "de:1→0",
-   "fr:1→0",
-   "us:403",
-   "gb:403"
+   "tr:1→1"
   ],
-  "status": "unavailable"
+  "front": "tr",
+  "collectionId": 843513496,
+  "appleTitle": "Ya Malekan Kalby",
+  "appleArtist": "Abdel Halim Hafez",
+  "appleYear": "1991",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e3/ae/ec/e3aeeced-d846-f1e4-cc33-aed96e7b9465/mzaf_10231486106984808672.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 18,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Abdel Halim Hafez|La Takzebi": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
+   "tr:0→0",
+   "ae:0→0",
    "sa:0→0",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "eg:0→0",
+   "lb:0→0",
+   "ma:0→0",
+   "dz:0→0",
+   "de:1→1"
   ],
-  "status": "unavailable"
+  "front": "de",
+  "collectionId": 843069789,
+  "appleTitle": "La Takzeby",
+  "appleArtist": "Abdel Halim Hafez",
+  "appleYear": "1962",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/6c/31/f76c313e-2f22-cb3e-8f0a-803ead9766f8/mzaf_14987842023481547074.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 13,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Farid El Atrache|Nagham Fi Hayati": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:0→0",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
-  ],
-  "status": "unavailable"
- },
- "Nass El Ghiwane|Nass El Ghiwane": {
-  "batch": "c55",
-  "tried": [
-   "tr:403",
-   "ae:12→0",
-   "sa:12→0",
-   "eg:9→0",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:12→0",
-   "us:12→0",
-   "gb:403"
-  ],
-  "status": "unavailable"
- },
- "Nass El Ghiwane|Hommage à Boudjemaa": {
-  "batch": "c55",
-  "tried": [
-   "tr:403",
-   "ae:2→0",
-   "sa:2→0",
-   "eg:2→0",
-   "lb:2→0",
-   "ma:403",
-   "dz:3→0",
-   "de:403",
-   "fr:4→0",
-   "us:4→0",
-   "gb:4→0"
-  ],
-  "status": "unavailable"
- },
- "Munir Bashir|Iraq: Ud Classique Arabe": {
-  "batch": "c55",
-  "tried": [
-   "tr:4→0",
-   "ae:3→0",
-   "sa:3→0",
-   "eg:2→0",
-   "lb:1→0",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:4→0",
-   "us:403",
-   "gb:403"
-  ],
-  "status": "unavailable"
- },
- "Munir Bashir|Babylon Mood": {
-  "batch": "c55",
-  "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
+   "tr:0→0",
+   "ae:0→0",
+   "sa:0→0",
+   "eg:0→0",
    "lb:0→0",
    "ma:0→0",
    "dz:0→0",
    "de:0→0",
    "fr:0→0",
    "us:0→0",
-   "gb:403"
+   "gb:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Nass El Ghiwane|Nass El Ghiwane": {
+  "batch": "c55",
+  "tried": [
+   "tr:12→1"
+  ],
+  "front": "tr",
+  "collectionId": 1734429440,
+  "appleTitle": "Nass El Ghiwane",
+  "appleArtist": "Nass El Ghiwane",
+  "appleYear": "2000",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/53/87/08/53870822-3f6a-4565-bb59-2121458471e2/mzaf_16172048287521408720.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 27,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Nass El Ghiwane|Hommage à Boudjemaa": {
+  "batch": "c55",
+  "tried": [
+   "tr:3→0",
+   "ae:2→0",
+   "sa:2→0",
+   "eg:2→0",
+   "lb:2→0",
+   "ma:3→0",
+   "dz:3→0",
+   "de:3→0",
+   "fr:4→1"
+  ],
+  "front": "fr",
+  "collectionId": 945351913,
+  "appleTitle": "Hommage à Boudjemma",
+  "appleArtist": "Nass El Ghiwane",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/07/65/1b/07651bcb-ae92-13c9-20cb-1a6933d55a57/mzaf_11732684224401035725.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 38,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Munir Bashir|Iraq: Ud Classique Arabe": {
+  "batch": "c55",
+  "tried": [
+   "tr:4→1"
+  ],
+  "front": "tr",
+  "collectionId": 431802891,
+  "appleTitle": "Iraq: Ûd Classique Arabe",
+  "appleArtist": "Munir Bashir",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/f3/5c/8ef35c3a-e3a0-72bc-17fd-aeb9eff2513a/mzaf_12771759460986739880.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 40,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Munir Bashir|Babylon Mood": {
+  "batch": "c55",
+  "tried": [
+   "tr:0→0",
+   "ae:0→0",
+   "sa:0→0",
+   "eg:0→0",
+   "lb:0→0",
+   "ma:0→0",
+   "dz:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "us:0→0",
+   "gb:0→0"
   ],
   "status": "unavailable"
  },
@@ -707,50 +704,55 @@
   "tried": [
    "tr:1→0",
    "ae:1→0",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "sa:1→0",
+   "eg:0→0",
+   "lb:1→0",
+   "ma:1→0",
+   "dz:1→0",
+   "de:1→1"
   ],
-  "status": "unavailable"
+  "front": "de",
+  "collectionId": 713299551,
+  "appleTitle": "Bennesbeh Labokra Chou",
+  "appleArtist": "Ziad Rahbani",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bd/b1/1b/bdb11b98-f692-3702-06ab-d6e8ecad7644/mzaf_7025319583371910493.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 32,
+  "reissueTitle": false,
+  "status": "ready"
  },
  "Ziad Rahbani|Ana Moush Kafer": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "tr:2→0",
+   "ae:2→0",
+   "sa:2→0",
+   "eg:1→0",
+   "lb:2→0",
+   "ma:2→0",
+   "dz:2→0",
+   "de:2→2"
   ],
-  "status": "unavailable"
+  "front": "de",
+  "collectionId": 1203379091,
+  "appleTitle": "Ana Moush Kafer",
+  "appleArtist": "Ziad Rahbani & Sami Hawat",
+  "appleYear": "1985",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/86/00/94/86009401-9148-70e1-9f39-14fad9f47728/mzaf_5671609904272443310.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  },
  "Khaled|Khaled": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:10→1"
+   "tr:12→2"
   ],
-  "front": "us",
+  "front": "tr",
   "collectionId": 1566382464,
   "appleTitle": "Khaled",
   "appleArtist": "Khaled",
@@ -764,28 +766,28 @@
  "Idir|Ay Arrac Nneɣ...": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
-   "ma:403",
-   "dz:403",
-   "de:403",
-   "fr:403",
-   "us:403",
-   "gb:403"
+   "tr:0→0",
+   "ae:0→0",
+   "sa:0→0",
+   "eg:0→0",
+   "lb:0→0",
+   "ma:0→0",
+   "dz:0→0",
+   "de:0→0",
+   "fr:1→0",
+   "us:1→0",
+   "gb:0→0"
   ],
   "status": "unavailable"
  },
  "Ilham Al Madfai|Ilham Al Madfai": {
   "batch": "c55",
   "tried": [
-   "tr:403",
-   "ae:403",
-   "sa:403",
-   "eg:403",
-   "lb:403",
+   "tr:12→0",
+   "ae:12→0",
+   "sa:12→0",
+   "eg:12→0",
+   "lb:12→0",
    "ma:12→0",
    "dz:12→0",
    "de:12→0",
