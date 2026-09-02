@@ -1709,3 +1709,28 @@ Blind Willie Davis 那一線）在 MB 上**只剩這一種形態**：
 Υπάρχω 併輯誤放）後才重跑。這是本次第一次在改比對規則前先寫驗證再跑批——
 前三次（4→6→8→12）都是改完直接跑、跑完再看哪裡不對，每輪 40 分鐘。
 **規則改動要先過已知實例，再拿去跑批。**
+
+## 91.（c-63）release-group 標題是再發的長名、卡片用原盤短名——`fix-rgmbid` 的「標題對不上」在這個形狀是誤報
+
+`fix-rgmbid` 對 Tommy Jarrell《Sail Away Ladies》報「mbNote 的 release-group 標題都對不上，未更動」。
+直接回問 MB（HTTP 200）：release-group `31126a0c…` 的標題是
+**《The Legacy of Tommy Jarrell, Volume 1: Sail Away Ladies》**，轄下兩個 release：
+**1976 US《Sail Away Ladies》（County 756，原盤）** 與 1999 US 的 Legacy 系列重發。
+artist-credit「Tommy Jarrell」、primary-type Album、first-release-date 1976，全部相符。
+
+**MB 把 release-group 命名成 1999 年再發的長標題**，而卡片依第 6 條採原盤的《Sail Away Ladies》。
+**rgMbid 是對的，卡片標題也是對的，兩者本來就不必相等**——release-group 的名字是 MB 編輯的選擇，
+卡片的名字是原盤印的。
+
+**裁定：`fix-rgmbid` 在「RG 標題 ≠ 卡片標題、但轄下有一個 release 的標題＝卡片標題」時
+不應報警。** 這條與第 12／12b 條（《Ancora da Capo》年份與所釘 RG 脫鉤）、第 84 條
+（合輯年份不跟 RG 走）是同一個道理的第三面：**釘 RG 是為了身分，不是為了抄它的中繼資料。**
+腳本這次沒有改動任何值（它的保守預設是對的），所以不改腳本、只記裁定；
+下次有人看到同樣的警告，先查轄下 release 的標題再說。
+
+順帶記一件：MB 給這個 RG 標了 secondary-type **Compilation**（因為 Legacy 系列的定位），
+但 1976 年的原盤是 Jarrell 一人的錄音 LP，卡片的 `releaseType` 為「Album」。
+**MB 的 secondary-type 反映的是它為 RG 選的那個命名版本的性質，不是原盤的性質**——
+這張不走 §5.6，維持原判。
+
+c-63 全批 52 張：51 張原本就對、修正 0、1 張（本條）人工確認正確。**連續三批零修正。**
