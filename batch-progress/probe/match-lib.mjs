@@ -54,8 +54,14 @@ export const translit = s => Array.from(String(s || '')).map(ch => {
 // 再發尾綴常帶年份或序數（「Remastered 2013」「30th Anniversary Edition」），
 // 那些數字要跟著尾綴一起剝掉，否則會被下面的「數字殘餘」規則誤擋成別張碟。
 // 年份可能在尾綴前（「2025 Remastered」）也可能在後（「Remastered 2013」），兩邊都吸收。
+// 原聲帶尾綴要先剝掉（2026-09-02，c-66 印度批發現）：
+// 印度電影原聲帶在 Apple 上一律叫「X (Original Motion Picture Soundtrack)」，
+// 卡片用的是電影名。不剝掉的話，canon 後長度差 31 個字元，被 titleOk 的 ≤8 上限擋死——
+// c-66 的 40 張因此只配到 3 張，而 in storefront 其實 31 張都有回結果。
+// 這一條對所有配樂線都適用，不只印度。
+export const OST = /\s*[（(\[]?\s*(original\s+)?(motion\s+picture\s+)?(sound\s*track|ost)\s*[）)\]]?\s*/gi;
 export const DECO = /\b(\d{4}\s+)?(\d{1,3}(st|nd|rd|th)\s+)?(digitally\s+)?(remaster(ed)?|reissue|deluxe|expanded|edition|anniversary|bonus\s+tracks?|version)(\s*\d{4})?\b/gi;
-export const canon = s => norm(translit(String(s || '').replace(DECO, ' ')))
+export const canon = s => norm(translit(String(s || '').replace(OST, ' ').replace(DECO, ' ')))
   .replace(/ph/g, 'f').replace(/kh/g, 'h').replace(/ch/g, 'h')
   .replace(/mp/g, 'b').replace(/nt/g, 'd').replace(/gk/g, 'g')
   .replace(/ou/g, 'u').replace(/ei/g, 'i').replace(/oi/g, 'i').replace(/ai/g, 'e')   // 希臘雙母音的通行轉寫

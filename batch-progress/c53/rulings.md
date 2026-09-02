@@ -2460,3 +2460,51 @@ c-64 的 b 組做過（8 張）。**這是店主的決定，雲端不自行開�
 `S. Balachander` 那筆特別值得記：**MB 的搜尋把它糊到 Bach**——
 這是「假查無」的第四種形狀，**不是回空、不是回不完整，是回了完全不相干的東西**。
 前三種見第 28（503）、98（403）、116（分頁上限）條。
+
+## 123.（c-66）原聲帶尾綴要在 canon 剝掉——印度批 3/40 的真正原因
+
+c-66 首跑只配到 3/40，策展層估 27/40。**依第 77 條的方法教訓「逐張攤開對齊」**，
+不去猜參數，直接看 `tried` 記錄：**37 張未配的裡有 31 張，`in` storefront 其實有回結果，
+是被過濾掉的**。挑一張直接查 Apple：
+
+```
+卡片   S.D. Burman 《Guide》 1965
+Apple  S.D. Burman 《Guide (Original Motion Picture Soundtrack)》 1965
+```
+
+**藝人相符、年份完全相符**，卻沒配上。原因在長度：
+`canon("Guide")` = `guide`（5）對上 `canon("Guide (Original Motion Picture Soundtrack)")` = 36，
+差 31，被 `titleOk` 的 ≤8 上限擋死。`DECO` 剝了 remaster／reissue／deluxe／edition／anniversary／version，
+**唯獨沒有原聲帶尾綴**。
+
+裁定：`match-lib.mjs` 加 `OST` 正規式，在 `DECO` 之前套用。
+**這條對所有配樂線都適用**，不只印度——只是印度電影歌是「盤名＝片名」的重災區
+（Apple 上一律標成「X (Original Motion Picture Soundtrack)」）。
+
+依第 90 條「規則改動要先過已知實例再跑批」：`test-match.mjs` 既有 20/20 全過，
+另加 5 例（Guide 對 OST 版 → 真；Guide 對《Guide - Jhankar Beats》→ 假；
+對「- Single」remix → 假；Mother India 對其 OST → 真；
+Moğollar 對 Moğollar'94 → 假，第 90 條的防迴歸樁還在）全過後才重跑。
+
+**結果 3 → 25**（unavailable 15，全是印度古典那半批，Apple 上本來就沒有）。
+
+## 124.（c-66）Alla Rakha《Tabla!》→《Tabla Beats》是誤配，剔除
+
+第 123 條放寬之後，依第 90 條的前例（放寬必然帶出迴歸）逐張複檢 25 張，抓到一張：
+
+```
+卡片   Alla Rakha 《Tabla!》
+配到   Alla Rakha & Zakir Hussain 《Tabla Beats》 1991 六軌
+```
+
+`canon` 後 `tabla` ⊂ `tablabeats`，差 5，過得了 ≤8。但把 `in` storefront 名下
+Alla Rakha 的條目全部攤開看過，**《Tabla!》那張根本不在 Apple 上**，
+`Tabla Beats` 是另一份 1991 年的六軌選輯。
+
+**卡片標題只有一個常見通名時，子字串比對特別脆弱**——`tabla`、`raga`、`blues` 這類。
+但這次不改規則：`Tabla Beats` 這種形狀沒有可靠的通則能擋（殘餘不含數字、不是「- Single」、
+不是自我同名），硬收緊會傷到大量真配對。**改成卡層剔除**，
+在 `previews.json` 該筆記 `rejected` 原因，狀態改 `unavailable`。
+
+**判準沿用第 90 條的分工**：能寫成通則的（自我同名、數字殘餘、單曲尾綴、原聲帶尾綴）進 `match-lib.mjs`；
+只在單張成立的，留在卡層並寫進裁定，不要為了一張碟去動全批的比對規則。
