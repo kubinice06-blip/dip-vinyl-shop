@@ -197,16 +197,87 @@ Discogs 上同名廠牌帶括號序號的實體很常見。
 《Don》**（池中皆有），以及 Ravi Shankar 名下的《Sound of the Sitar》
 ——**Alla Rakha 名下也有一張同名的 1967 年 RG，那是同一張碟的另一個 credit**，本批不收。
 
-## 規模：維持 30–40 張
+## 規模：實交 40 張（a 21 ＋ b 19），32 個掛名
 
 MB 對目標年代原盤的覆蓋遠高於五成（16/16 位藝人、12/12 抽驗卡），
-**不觸發簡報裡「降到 20–25 張」的條款**。兩組各 17–20 張、合計 35 張為目標。
+**不觸發簡報裡「降到 20–25 張」的條款**，目標維持 30–40 張，實交 40 張。
 
-| 線 | 目標 |
+| | a 組 | b 組 | 合計 |
+|---|---|---|---|
+| 張數 | **21** | **19** | **40** |
+| 掛名 | 13 | 19 | 32 |
+| MB release-group 釘住（全部回問過端點） | 21/21 | 19/19 | **40/40** |
+| CAA 封面 | **21/21** | 17/19 | **38/40（95%）** |
+| Apple 試聽（**扣掉粗形比對的錯配之後**） | **21/21** | **6/19** | **27/40（68%）** |
+| `releaseType: Compilation` | 0 | 0 | **0** |
+| 探測錯誤 | 0 | 0 | **0** |
+
+| 線 | 實交 |
 |---|---|
-| a：1950–60s filmi 黃金期（S.D. Burman／Shankar–Jaikishan／Naushad／O.P. Nayyar／Madan Mohan／Roshan／C. Ramchandra／Vasant Desai／Salil Chowdhury／Hemant Kumar） | 12–14 |
-| a：1970s Bollywood funk／disco 與晚期 filmi（Laxmikant-Pyarelal／Kalyanji-Anandji／Bappi Lahiri／Khayyam） | 4–6 |
-| b：Hindustani 器樂（sitar／sarod／sarangi／shehnai／rudra veena／tabla） | 9–11 |
-| b：聲樂 khayal／dhrupad | 3–4 |
-| b：Carnatic | 3–4 |
-| b：Bengali／Marathi 與 Bollywood 以外的地方電影音樂 | 3–4 |
+| a：1950–60s filmi 黃金期 | 17（S.D. Burman ×3、Shankar Jaikishan ×3、Naushad ×3、O.P. Nayyar ×3、Madan Mohan、Roshan、Salil Chowdhury、Hemant Kumar、C. Ramchandra、Vasant Desai） |
+| a：1970s 晚期 filmi 與 Bollywood funk／disco | 4（Laxmikant-Pyarelal《Amar Akbar Anthony》、Kalyanji-Anandji《Qurbani》、Bappi Lahiri《Chalte Chalte》，以及 S.D. Burman《Aradhana》這個交接點） |
+| b：Hindustani 器樂 | 9（sarod ×2、sitar ×2、surbahar、sarangi、shehnai、rudra veena、tabla） |
+| b：聲樂 khayal | 4（Amir Khan／Bhimsen Joshi／Mallikarjun Mansur／Kishori Amonkar，四個 gharana） |
+| b：Carnatic | 3（M.S. Subbulakshmi、Ramnad Krishnan、Lalgudi Jayaraman） |
+| b：Bollywood 以外的地方電影音樂 | 3（孟加拉語 Satyajit Ray、泰盧固語 Ghantasala、坦米爾語 M.S. Viswanathan） |
+
+**本批 0 張 Compilation**，是本次擴充以來唯一一批完全不需要 §5.6 舉證的——
+filmi 的 OST 在 MB 上是 `primary-type=Album` ＋ `secondary-type=Soundtrack`，
+印度古典的錄音室 LP 也全是 Album。因此「印度目錄未授權重刊極多」這件事
+**不影響任何一張卡的收錄舉證**，只影響 `reissuedBy` 欄怎麼填。
+
+## 策展層自己下的六個裁定（依簡報授權自決）
+
+1. **掛名一律用 MB 藝人實體的拉丁寫法，天城體不入 `queryAlias`。**
+   依據見上（拉丁 16/16、原文 5/16，且命中的那 5 筆實體名本身也是拉丁）。
+   與池中既有 8 個印度掛名一致，不製造新的分裂鍵。
+
+2. **filmi 一律走作曲者掛名，不走 §5.6。**
+   MB、Apple 與池中既有的 `R.D. Burman`《Sholay》《Kalyanji-Anandji`《Don》都是這樣掛的。
+   依裁定第 103 條：作曲者主導的專輯不是合輯，歌手寫進 facts。
+
+3. **filmi 卡的年份＝電影／唱片問世那一年，不照抄 MB 的 `first-release-date`。**
+   依裁定第 95 條（rgMbid 是身分鍵不是年份來源）。本批有 5 張脫鉤：
+   Salil Chowdhury《Madhumati》（MB 1976／原盤 1958）、
+   S.D. Burman《Guide》（所釘 Album RG 1966／原盤 1965）、
+   Kalyanji-Anandji《Qurbani》（MB 1979／電影 1980）、
+   Bappi Lahiri《Chalte Chalte》（MB 1974／電影 1976）、
+   Satyajit Ray《Goopy Gyne & Bagha Byne》（MB 1970／電影 1969）。
+   每一張的兩個年份都寫進 `risk` 與 `mbNote`。
+
+4. **S.D. Burman《Guide》的同名雙胞胎釘 Album 那一筆。**
+   1b58b2a6 是 1965 EP/Soundtrack、49763754 是 1966 Album/Soundtrack；
+   §1 只收 primary-type=Album，所以釘後者、年份仍記 1965。
+   這與裁定第 3／73 條（同名雙胞胎釘不住就不收）不同：**這一組釘得住**，
+   兩筆的 primary-type 不同，判準明確。
+
+5. **Hemant Kumar 與 Hemanta Mukherjee 是同一人，本批只收一個鍵。**
+   他在印地語影壇掛 Hemant Kumar、在孟加拉語影壇掛 Hemanta Mukherjee，
+   **MB 為此建了兩個獨立實體**（3b6a3029／97856f7d）。原本 a 組要收
+   《Sahib Bibi Aur Ghulam》(1962)、b 組要收《Harano Sur》(1957)，
+   那會在池中製造第三組 `Selda`／`Selda Bağcan` 形狀的分裂鍵（裁定第 27、49 條）。
+   **裁定：只收 a 組那張（掛 Hemant Kumar），b 組的《Harano Sur》剔除**，
+   孟加拉語那一格改由 Satyajit Ray《Goopy Gyne & Bagha Byne》代表。
+   `queryAlias` 填 `Hemanta Mukherjee` 給外部服務。
+
+6. **Roshan《Taj Mahal》(1963) 剔除，改收《Barsaat Ki Raat》(1960)。**
+   《Taj Mahal》與**池中既有的 `Taj Mahal`《Taj Mahal》(1968)** 盤名完全相同，
+   雖然掛名不同、`chk-prop` 不會判撞卡，但那會讓池中出現兩張盤名一模一樣的碟，
+   下游任何以盤名為鍵的比對（封面、試聽、去重）都會互相污染。
+   《Barsaat Ki Raat》的分量不亞於它（十二分鐘的 qawwali〈Na To Caravan Ki Talash Hai〉），
+   換掉的成本比留著低。
+
+## 查過但做不到的四塊，記給日後
+
+- **Bengali 與 Punjabi 民俗**：簡報列了這一條，**MB 上做不到**。
+  Nirmalendu Chowdhury（RG 1、目標年代 0）、Purna Das Baul（RG 2、0）、
+  Asa Singh Mastana（RG 2、0）、Kuldip Manak（RG 10、0）都是「實體在、名下沒有那個年代的碟」，
+  正是裁定第 94 條的形狀；唯一一筆 Surinder Kaur 1979 年的《Tulsi Ramayan, Volume 3》
+  是**分卷式出版**，依第 87 條不收。這一格本批交白卷。
+- **S. Balachander（維納琴）**：`S. Balachander` 與 `S Balachander` 兩種寫法
+  在 MB 都回 **Johann Sebastian Bach**（縮寫被當成 Bach 的別名，RG 6130 筆）。
+  要收得先用其他途徑取得他的藝人 MBID。
+- **T. N. Krishnan（卡納提克小提琴）**：查到的是 `N. S. Krishnan`（RG 0），非同一人。
+- **Gangubai Hangal／Kesarbai Kerkar／Palghat Mani Iyer**：實體在，名下無目標年代條目。
+
+以上四塊與《Taj Mahal》《Harano Sur》兩張剔除卡，記進 `CURATION_WISHLIST.md`。
