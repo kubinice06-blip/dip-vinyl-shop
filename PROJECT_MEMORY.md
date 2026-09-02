@@ -23,7 +23,9 @@
 **驗證**：兩段 script 過 `node --check`；Playwright 390×844——序章 18 段對話走完（站位／音符／💢 特效狀態逐段核對）、三張王牌各走一次並用腳本照課表打完兩場
 （四套含 legacy 都在第五手收尾）、教學後三圍換成耳朵、直接開打起手＝五張、⏩ 快轉落在三選一。沙盒無外網，封面與 Firebase 被擋，頁面靠既有 fallback 照常。
 
-**待店主決定**：流亡與異端的王牌要換成更具代表性的（候選名單已列在對話中）；十二張推薦盤推薦語與對話台詞請過一遍；
+店主已從頂點卡名單挑定：流亡＝Bobb Trimble《Iron Curtain Innocence》、異端＝Swans《Cop》（殿堂維持《OK Computer》）；異端那套的墊牌 Swans《Soundtracks for the Blind》換成 Sunn O)))《Monoliths & Dimensions》避免同藝人。
+
+**待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；
 既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）。
 
 ### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
