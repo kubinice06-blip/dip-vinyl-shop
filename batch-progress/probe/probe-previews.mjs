@@ -38,6 +38,14 @@ const GEN = ['us', 'gb', 'jp', 'tw', 'de', 'fr'];
 const SOV = ['us', 'gb', 'de', 'lt', 'ee', 'lv', 'kz', 'am', 'fr'];
 // c-54 南斯拉夫：先試各繼承國，再回退到德奧（大量前南移民市場）與國際。
 const YUG = ['hr', 'si', 'rs', 'ba', 'mk', 'de', 'at', 'us', 'gb'];
+// c-55 土耳其與阿拉伯世界：先試土耳其與海灣各國，再回退歐美。
+const TRAB = ['tr', 'ae', 'sa', 'eg', 'lb', 'ma', 'dz', 'de', 'fr', 'us', 'gb'];
+// c-56 中東歐：各繼承國 ＋ 德奧（大量移民市場）＋ 國際。
+const CEU = ['cz', 'sk', 'hu', 'pl', 'ro', 'bg', 'de', 'at', 'us', 'gb'];
+// c-57 牙買加：牙買加自身 ＋ 英國（Trojan／Island 的主場）＋ 美加。
+const JAM = ['jm', 'gb', 'us', 'ca', 'de', 'jp'];
+// c-58／c-59 深掘線：歐美原盤為主，日本盤在爵士與放克的再發史上份量很重。
+const DIG = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'br'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -46,7 +54,11 @@ for (const b of BATCHES)
     cards.push({ ...c, batch: b, fronts:
       (b.startsWith('csea') || b.startsWith('c52')) ? SEA
       : b.startsWith('c53') ? SOV
-      : b.startsWith('c54') ? YUG : GEN });
+      : b.startsWith('c54') ? YUG
+      : b.startsWith('c55') ? TRAB
+      : b.startsWith('c56') ? CEU
+      : b.startsWith('c57') ? JAM
+      : (b.startsWith('c58') || b.startsWith('c59')) ? DIG : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
