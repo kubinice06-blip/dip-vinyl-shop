@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：唱片行序章（捏角色＋老闆推薦三張盤決定三圍），與老闆帶打教學銜接
+
+雲端工作階段（分支 `claude/card-game-character-creation-xpgz1f`，**未合併 main、未部署**，店主要求先調整好再更新）。
+
+**做了什麼**：新玩家（樂歷 Lv.3 出師前且 `META.profile` 為空）進 `roguelike.html` 不再直接落到新手首頁，
+改走「巷子裡的唱片行」序章：推門三拍旁白 → **捏角色**（名字 ≤8 字、像素造型：頭型 10／髮帽色 11／膚色 4／上衣 12／褲子 8，
+沿用既有 16×16 `sprRows` 零件、頭型以 `H` 標髮帽色）→ 老闆問「今天想找哪種」（經典／冷門／硬蕊／你決定）→
+從 34 張候選架 `STARTER_SHELF` 抽三張（每張一句老闆口吻推薦語；避開教學十張盤）→ 可看介紹、可請老闆換（共 3 次，可指定換成哪一軸）→
+**三張盤三軸星數加總，最高軸決定「耳朵」**（老派耳朵／挖盤狂／噪音信徒＝三流派輕量版，決定出師前三圍與專長；HP 緩衝沿用守舊派 +3）→
+結帳：三張盤永久進收藏、寫 `META.name／avatar／profile` → 老闆帶你打兩場（既有教學）或直接開打。
+
+**與教學的銜接**：教學兩場的數值是用守舊派攻 1 防 2 算死的（攻 2 會在第一場第 4 手打死對手、上不到輾壓那課），
+所以 `startTutorialRun` 先鎖回守舊派三圍、第二場打完 `winFight` 才 `applyRookieProfile()` 換回耳朵，老闆在結業語宣告；
+三張盤從第三場起併入牌組；`autoSeeds()` 三張盤必在起手；`?tutorial=1` 遇新玩家先走序章。戰鬥中我方小人改用自己的造型
+（`playerSprRows()`）、名牌「你」改成名字；死亡畫面／續玩盒／規則／專長 log 改讀 `roleNameOf()`（出師前顯示耳朵、之後顯示流派）。
+新手首頁與出師後選流派畫面都有角色卡（✏️ 捏角色；出師前另可 🏪 再逛唱片行換三張盤）。`mergeMeta` 併 name／avatar／profile；
+訪客捏過角色後首次登入且雲端沒 profile 會帶進帳號。
+
+**主要檔案**：`roguelike.html`（+495/−20：CSS `.shop*`／`.charcard`／`.tally`、`PIX_PAL` 補四色、`SPR.owner`、`AVATAR_HEADS`／`AVATAR_COLORS`／`avatarRows`、
+`ROOKIE_PROFILES`／`STARTER_SHELF`、`renderShopIntro`→`renderCharCreate`→`renderShopAsk`→`renderShopPicks`→`shopCheckout`→`renderShopDone`、
+`applyRookieProfile`／`roleOf`、`loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`startTutorialRun`／`winFight`／`mountSprites`／`renderBattle`／
+`renderDeath`／`autoSeeds`／`bootstrap` 掛勾）、`ROGUELIKE_DESIGN.md`（新增 §2.0）、`pvp.html`（試煉卡文案）。
+
+**驗證**：兩段 script 各過 `node --check`；Playwright（390×844）本機 http.server 全流程走一遍——序章三拍、捏角色（含 `<b>` 名字被正確跳脫）、
+硬蕊問答抽到 WL/WH＋Suicide＋Treasure（加總 10/11/11，平手照問答判硬蕊）、換一張成經典後翻成老派耳朵、介紹彈窗、結帳寫入 META（收藏 8→11）、
+教學第一場 `RUN.stats` 鎖 1/2/1、`_profilePending=true`、牌組 13 張含三張盤、名牌顯示名字、`#sprP` 為自訂造型；直接開打起手 5 張含三張盤且三圍＝耳朵；
+Lv.3 選流派畫面角色卡正常、`chooseClass('heretic')` 後 `profileKey` 為空、三圍照流派；再逛唱片行入口正常；`?tutorial=1` 新訪客先進序章且 `after=tutorial`。
+沙盒無外網，Firebase／字型／封面 fetch 全被擋，頁面照常運作（既有 fallback）；線上封面與簡介尚未在真環境看過。
+
+**未做／待店主決定**：候選架 34 張的推薦語是我照公開常識寫的老闆口吻，上線前建議店主過一遍；三張盤只在 `STARTER_SHELF`（沒接 KV 卡池），
+重逛唱片行不限次數（收藏只增不減，最多多幾張候選架的盤）；既有 Lv.1～2 的舊訪客下次進來會被帶進序章一次。
+
 ### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
 
 雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 36 筆）帶著 c-51（155 張，

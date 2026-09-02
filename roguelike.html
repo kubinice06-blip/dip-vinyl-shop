@@ -92,6 +92,51 @@
   .seedbar .dots i.on{background:var(--gold);border-color:var(--gold);}
   .seedbar .btn{margin-left:auto;}
 
+  /* ===== 🏪 唱片行開場（捏角色＋老闆推薦三張盤）===== */
+  .shop{border:1px solid var(--black);background:#fff;padding:14px;margin:8px 0 12px;}
+  .shop-head{font-weight:700;letter-spacing:0.08em;font-size:12px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .shop-scene{display:flex;gap:12px;align-items:flex-start;}
+  .owner{flex:none;width:60px;text-align:center;font-size:9px;color:var(--gray);letter-spacing:0.08em;line-height:1.2;}
+  .owner svg{display:block;margin:0 auto 3px;}
+  .bubble{flex:1;min-width:0;border:1px solid var(--black);background:#fffbe9;padding:10px 12px;position:relative;line-height:1.85;font-size:12px;}
+  .bubble::before{content:'';position:absolute;left:-7px;top:18px;border:6px solid transparent;border-left:0;border-right-color:var(--black);}
+  .bubble::after{content:'';position:absolute;left:-5px;top:19px;border:5px solid transparent;border-left:0;border-right-color:#fffbe9;}
+  .bubble .narr{color:var(--gray);font-size:11px;}
+  .bubble .say{color:#4a3a08;font-weight:700;}
+  .avwrap{display:flex;gap:14px;align-items:center;margin:12px 0 6px;}
+  .avbig{flex:none;border:1px solid var(--line);padding:8px;line-height:0;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f6f6f6 5px,#f6f6f6 10px);}
+  .avopt{margin:8px 0;}
+  .avopt .lab{font-size:10px;color:var(--gray);letter-spacing:0.1em;margin-bottom:5px;}
+  .sw{display:flex;gap:6px;flex-wrap:wrap;}
+  .sw button{width:26px;height:26px;border:1px solid var(--line);padding:0;background:#fff;line-height:0;}
+  .sw button.on{outline:2px solid var(--black);outline-offset:1px;}
+  .sw button.head{width:36px;height:36px;display:flex;align-items:center;justify-content:center;}
+  .nameinp{flex:1;min-width:0;font-family:var(--mono);font-size:14px;padding:8px 10px;border:1px solid var(--black);border-radius:0;background:#fff;color:var(--black);}
+  .nameinp:focus{outline:2px solid var(--gold);outline-offset:0;}
+  .charcard{display:flex;gap:12px;align-items:center;border:1px solid var(--black);padding:10px 12px;margin:8px 0 6px;}
+  .shop-picks{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 6px;}
+  .shop-picks .card{transition:transform .18s,border-color .18s;}
+  .shop-picks .card.fresh{animation:pop .3s;}
+  .pitch{font-size:10px;line-height:1.6;color:#5a4a10;background:#fffbe9;border:1px dashed var(--gold);padding:5px 7px;margin-top:6px;min-height:52px;}
+  .pickbtns{display:flex;gap:4px;margin-top:6px;}
+  .pickbtns .btn{flex:1;padding:6px 4px;font-size:10px;text-transform:none;letter-spacing:0;}
+  .swapask{grid-column:1/-1;border:1px dashed var(--gold);background:#fffbe9;padding:8px 10px;font-size:11px;}
+  .swapask .row{flex-wrap:wrap;gap:6px;margin-top:6px;}
+  .swapask .btn{flex:1;font-size:10px;padding:7px 6px;text-transform:none;letter-spacing:0;}
+  .tally{border:1px solid var(--line);padding:10px 12px;margin:8px 0;}
+  .tally .tr{display:flex;align-items:center;gap:8px;font-size:11px;margin:4px 0;}
+  .tally .tr .lab{width:34px;font-weight:700;}
+  .tally .tr .bar{flex:1;height:10px;background:var(--hp-bg);border:1px solid var(--line);position:relative;overflow:hidden;}
+  .tally .tr .bar i{position:absolute;inset:0 auto 0 0;transition:width .35s;}
+  .tally .tr.classic .lab{color:var(--classic);} .tally .tr.classic .bar i{background:var(--classic);}
+  .tally .tr.obscurity .lab{color:var(--obscurity);} .tally .tr.obscurity .bar i{background:var(--obscurity);}
+  .tally .tr.accessibility .lab{color:var(--accessibility);} .tally .tr.accessibility .bar i{background:var(--accessibility);}
+  .tally .tr .n{width:22px;text-align:right;font-weight:700;}
+  .tally .tr.top .lab::after{content:' ★';}
+  .tally .verdict{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;line-height:1.8;font-size:11px;}
+  .player-zone .nameplate .who{max-width:44%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  @media (max-width:400px){ .shop-picks{grid-template-columns:repeat(2,1fr);} }
+
   /* battle */
   .fighter{border:1px solid var(--line);background:#fff;border-radius:0;padding:10px 12px;margin-bottom:8px;}
   .fighter .who{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:0.06em;}
@@ -876,6 +921,65 @@ let CLASSES = {
 const STAT_ZH = { atk:'攻擊', def:'防禦', qir:'氣勢率' };
 const STAT_NOTE = { atk:'打中時多扣血', def:'受擊減傷（最低仍扣1）', qir:'充氣勢更快→更常輾壓' };
 
+// ---------- 🏪 唱片行開場：新手「耳朵」（出師前的準流派）＋老闆推薦盤的候選架 ----------
+// 老闆推薦三張盤 → 三張的三軸星數加總，最高的那一軸決定你是哪種耳朵（＝出師前的三圍與專長）。
+// 三種耳朵都是對應流派的「輕量版」：只差一點三圍與專長，起始 HP 一律沿用守舊派的 +3 緩衝（新手耐死）。
+// 樂歷 Lv.3 出師後改由自選流派決定，這裡的設定就只剩造型與名字跟著走。
+const ROOKIE_PROFILES = {
+  classic:       { name:'老派耳朵', tag:'經典 · 守', stats:{atk:1,def:2,qir:1}, affinity:'classic', affBuff:{hp:1},
+                   affDesc:'打【經典】牌：額外回 +1 聲望(HP)', desc:'你相信經得起時間的東西。防禦厚一點，扛得住。',
+                   line:'「這三張你會一聽再聽。老東西不會騙人。」' },
+  obscurity:     { name:'挖盤狂', tag:'冷門 · 挖', stats:{atk:1,def:1,qir:2}, affinity:'obscurity', affBuff:{qi:1},
+                   affDesc:'打【冷門】牌：額外 +1 氣勢', desc:'你伸手去拿的都是沒人翻過的那格。氣勢充得快一點。',
+                   line:'「這幾張我放很久了，終於有人要。」' },
+  accessibility: { name:'噪音信徒', tag:'硬蕊 · 攻', stats:{atk:2,def:1,qir:1}, affinity:'accessibility', affBuff:{dmg:1},
+                   affDesc:'打【硬蕊】且該回合打贏：額外 +1 傷害', desc:'越難聽你越想聽完。攻擊高一點，打得痛。',
+                   line:'「這些放出來客人會跑光。你確定？……好，我喜歡。」' },
+};
+const AXIS_STAT = { classic:'def', obscurity:'qir', accessibility:'atk' };
+// 老闆的候選架：[藝人, 專輯, 經典, 冷門, 硬蕊, 架別, 老闆一句話]。
+// 刻意避開老闆帶打教學用到的十張盤（Revolver／Kind of Blue／Long Season／Untrue／The Money Store／
+// Ruins／Dummy／Discovery／Rumours／Mezzanine），教學後牌組合併時不會重複。
+const STARTER_SHELF = [
+  // 經典架
+  ['Michael Jackson','Thriller',4,1,1,'classic','「賣最多的那張。你以為你聽過了，其實你只聽過單曲。」'],
+  ['Prince','Purple Rain',4,1,1,'classic','「電影可以不看，唱片一定要。最後那首獨奏聽完再說。」'],
+  ['David Bowie','Low',4,3,3,'classic','「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」'],
+  ['Joy Division','Unknown Pleasures',4,3,3,'classic','「封面你八成在 T 恤上看過。裡面的東西比 T 恤冷得多。」'],
+  ['Nick Drake','Pink Moon',4,3,2,'classic','「一個人、一把吉他、不到半小時。他生前沒幾個人買。」'],
+  ['Television','Marquee Moon',4,3,2,'classic','「兩把吉他在講話，沒有一句廢話。標題曲十分鐘，不會覺得長。」'],
+  ['Kraftwerk','Trans-Europe Express',4,3,2,'classic','「四個德國人打著領帶做出來的火車聲。後來一半的舞曲都欠它。」'],
+  ['Pixies','Surfer Rosa',4,2,2,'classic','「小聲、大聲、小聲、大聲。九〇年代一大票樂團都是這樣學會的。」'],
+  ['Black Sabbath','Paranoid',4,2,2,'classic','「重的源頭之一。放出來鄰居會來敲門，那是正常反應。」'],
+  ['Sonic Youth','Daydream Nation',4,3,3,'classic','「雙碟，吉他調成你沒聽過的音。年輕人的噪音教科書。」'],
+  ['Slowdive','Souvlaki',4,3,3,'classic','「整張像泡在水裡聽。瞪鞋這種東西，這張就夠了。」'],
+  ['Pavement','Slanted and Enchanted',4,3,3,'classic','「走音走得剛剛好。懶散是裝的，歌是真的好。」'],
+  ['Cocteau Twins','Treasure',3,3,2,'classic','「歌詞聽不懂是正常的，她本來就不是在唱字。」'],
+  ['Stereolab','Emperor Tomato Ketchup',3,3,2,'classic','「復古電子琴加法文喃喃。放在店裡一下午都不膩。」'],
+  // 冷門架
+  ['Duster','Stratosphere',2,5,3,'obscurity','「慢到像快睡著，錄音糊得剛好。冷了二十年才有人翻出來。」'],
+  ['Codeine','Frigid Stars',2,5,3,'obscurity','「每個音都拖到極限。急性子的人聽不完，聽得完的會上癮。」'],
+  ['Vashti Bunyan','Just Another Diamond Day',3,5,2,'obscurity','「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」'],
+  ['Karen Dalton','In My Own Time',3,5,3,'obscurity','「她不寫歌，唱別人的歌卻比原唱還像自己的。」'],
+  ['Judee Sill','Judee Sill',3,5,3,'obscurity','「巴哈式的和聲配民謠吉他。當年沒人聽，是唱片行老闆之間的暗號。」'],
+  ['Bark Psychosis','Hex',2,5,4,'obscurity','「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」'],
+  ['Broadcast','Tender Buttons',2,4,3,'obscurity','「兩個人、一堆舊合成器、一個冷冷的女聲。放在深夜。」'],
+  ['John Fahey','The Transfiguration of Blind Joe Death',2,5,3,'obscurity','「一把鋼弦木吉他，沒有人聲。他還替自己編了一個假的藍調樂手當化名。」'],
+  ['Big Star','Third/Sister Lovers',3,4,3,'obscurity','「錄完沒人敢發，擱了好幾年。崩潰的人做出來的美。」'],
+  ['Talk Talk','Laughing Stock',3,4,4,'obscurity','「從流行樂團變成這樣。整張留白比音還多。」'],
+  // 硬蕊架
+  ['The Velvet Underground','White Light/White Heat',4,4,5,'accessibility','「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」'],
+  ['Scott Walker','Tilt',3,4,5,'accessibility','「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」'],
+  ['Swans','Soundtracks for the Blind',3,4,5,'accessibility','「兩張 CD 塞滿。聽完像走了一趟很長的路。」'],
+  ['This Heat','Deceit',2,5,5,'accessibility','「冷戰末日的焦慮，在一間冷凍庫改的錄音室裡做的。」'],
+  ['Sunn O)))','Monoliths & Dimensions',2,5,5,'accessibility','「低到肚子會震。音量開小等於沒聽。」'],
+  ['Converge','Jane Doe',3,4,4,'accessibility','「四十幾分鐘的吼。封面那張臉你一定看過。」'],
+  ['Public Image Ltd','Metal Box',3,5,4,'accessibility','「原版裝在金屬圓罐裡，三張 45 轉。龐克死了以後的樣子。」'],
+  ['Can','Tago Mago',4,4,4,'accessibility','「雙碟。日本主唱是在慕尼黑街頭被他們撿到的。」'],
+  ['Suicide','Suicide',3,4,4,'accessibility','「一台鼓機、一台琴、一個人在吼。1977 年的觀眾拿東西丟他們。」'],
+  ['The Fall','Hex Enduction Hour',2,5,4,'accessibility','「兩個鼓手、一個永遠在碎唸的主唱。聽不懂沒關係，他本來就不打算讓你懂。」'],
+].map(([artist,album,c,o,a,lean,pitch])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null,lean,pitch}));
+
 // ---------- 發燒配件（每 5 場擊敗傳說藏家掉落三選一；效果純資料、後台可覆寫）----------
 // fx 效果鍵（程式已掛勾）：counterQi 相剋+氣勢 / startQi 開局氣勢 / winHeal 勝利多回血 /
 //   valueDmg 比星勝+傷 / counterGuard 被剋減傷 / aceQi 出王牌+氣勢 / ultDmg 輾壓+傷 /
@@ -1067,7 +1171,7 @@ function fireRelic(){ if(!G) return; if(!G._fired) G._fired=new Set(); for(let i
 function isBossDepth(d){ return d>0 && d%5===0; }
 
 // ---------- 像素風發燒配件圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
-const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c',c:'#3fb6c9'};
+const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c',c:'#3fb6c9',t:'#c68642',u:'#8d5524',v:'#f6dcc4',m:'#e75480'};
 const PIX_ICONS = {
   stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
   sleeve:['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
@@ -1291,6 +1395,44 @@ const SPR = {
 SPR.brokenrec = [
   '............','...kk.kkk...','..kkk.kkkk..','.kkkk.kkkkk.','.kkkkg.kkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkk.gkkkk.','.kkkk.kkkkk.','..kkk.kkkk..','...kkkkkk...','............',
 ];
+// 唱片行老闆（開場序章／捏角色／推薦三張盤的那位；與 depth 8～9 的「二手店老闆」對手不是同一人）：
+// 灰髮＋眼鏡＋鬍子、白上衣、綠圍裙
+SPR.owner = sprRows([
+  '................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....',
+],'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'});
+
+// ---------- 🧑‍🎤 捏角色：像素小人零件（頭型用 H 標髮／帽色、s 標膚色；組裝時換色） ----------
+const AVATAR_HEADS = {
+  neat:   { name:'西裝頭', rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  bob:    { name:'妹妹頭', rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HHHHHHHH....','....HskssksH....','....HssssssH....','.....ssssss.....'] },
+  spike:  { name:'刺蝟頭', rows:['....H.H..H.H....','....HHHHHHHH....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  long:   { name:'長髮',   rows:['................','.....HHHHHH.....','....HHHHHHHH....','...HHssssssHH...','...HHskssksHH...','...HssssssssH...','.....ssssss.....'] },
+  cap:    { name:'反戴帽', rows:['................','.....HHHHHH.....','..HHHHHHHHHH....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  ballcap:{ name:'棒球帽', rows:['................','.....HHHHHH.....','....HHHHHHHHHH..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  beanie: { name:'毛帽',   rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  beret:  { name:'貝雷帽＋眼鏡', rows:['................','......HHHH......','....HHHHHHHH....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....'] },
+  fedora: { name:'紳士帽', rows:['................','.....HHHHHH.....','.....HHHHHH.....','...HHHHHHHHHH...','....ssksskss....','....ssssssss....','.....ssssss.....'] },
+  phones: { name:'耳機',   rows:['.....gggggg.....','.....HHHHHH.....','....HHHHHHHH....','...gHssssssHg...','...gssksskssg...','....ssssssss....','.....ssssss.....'] },
+};
+// 可選色（值＝PIX_PAL 的鍵）：髮／帽、膚色、上衣、褲子
+const AVATAR_COLORS = {
+  hair: ['k','d','o','y','r','b','n','p','c','m','w'],
+  skin: ['v','s','t','u'],
+  shirt:['b','r','n','p','o','y','c','m','w','e','d','k'],
+  pants:['k','d','b','n','p','o','e','w'],
+};
+const AVATAR_DEFAULT = { head:'neat', hair:'k', shirt:'b', pants:'k', skin:'s' };
+function avatarRows(av){
+  av = Object.assign({}, AVATAR_DEFAULT, av||{});
+  const h = AVATAR_HEADS[av.head] || AVATAR_HEADS.neat;
+  const ok = (v,d)=> (typeof v==='string' && PIX_PAL[v]) ? v : d;
+  const hr=ok(av.hair,'k'), sk=ok(av.skin,'s'), sh=ok(av.shirt,'b'), pt=ok(av.pants,'k');
+  const head = h.rows.map(r=>r.replace(/H/g,hr));
+  const rows = head.concat(SPR_BODY.map(r=>r.replace(/T/g,sh).replace(/L/g,pt)));
+  return rows.map(r=>r.replace(/s/g,sk));   // 膚色最後換（頭與身體的 s 一起）
+}
+// 我方小人：捏過角色就用自己的造型，否則沿用流派預設
+function playerSprRows(){ return (META && META.avatar) ? avatarRows(META.avatar) : (SPR[RUN&&RUN.classKey]||SPR.guard); }
 function enemySprKey(){ return (G&&G.E&&G.E.boss) ? 'boss' : ('e'+Math.min(7, Math.floor((RUN?RUN.depth:0)/2))); }
 
 // ---------- 小人掛載/定位/動畫（絕對定位疊在牌桌卡位角落，不佔版面） ----------
@@ -1303,7 +1445,7 @@ function mountSprites(){
     se.innerHTML=`<div class="sprin">${pixArtHTML(SPR[enemySprKey()]||SPR.e0, SPR_W)}</div>`; app.appendChild(se); }
   let sp=document.getElementById('sprP');
   if(!sp){ sp=document.createElement('div'); sp.id='sprP'; sp.className='spr p';
-    sp.innerHTML=`<div class="sprin">${pixArtHTML(SPR[RUN&&RUN.classKey]||SPR.guard, SPR_W)}</div>`; app.appendChild(sp); }
+    sp.innerHTML=`<div class="sprin">${pixArtHTML(playerSprRows(), SPR_W)}</div>`; app.appendChild(sp); }
   ['stkE','stkP'].forEach(id=>{ if(!document.getElementById(id)){ const d=document.createElement('div'); d.id=id; d.className='spr'; app.appendChild(d); } });
   updateStacks();
   placeSprites();
@@ -1438,6 +1580,9 @@ function loadMeta(){
   if(typeof m.tickets!=='number' || !isFinite(m.tickets)) m.tickets = 0;  // 中繼票：從頭打到第 MID.depth 場才賺得到
   if(!m.midBuild || typeof m.midBuild!=='object') m.midBuild = null;      // 中繼點 build 快照（照上次配置用）
   if(!m.tips || typeof m.tips!=='object') m.tips = {};                    // 老闆一次性提示（各機制首次發生時教一句）
+  if(typeof m.name!=='string') m.name = '';                                // 🏪 唱片行開場：名字
+  if(!m.avatar || typeof m.avatar!=='object') m.avatar = null;            // 像素造型（null＝還沒捏過，沿用流派預設小人）
+  if(!m.profile || typeof m.profile!=='object' || !ROOKIE_PROFILES[m.profile.axis]) m.profile = null;   // 老闆看出來的耳朵＋推薦的三張盤（null＝還沒逛過唱片行）
   if(!Array.isArray(m.collection) || m.collection.length<8){
     // 新玩家：給 8 張起始收藏（之後靠樂歷升級「抽專輯」擴充）
     m.collection = m.collection || [];
@@ -1478,6 +1623,9 @@ function mergeMeta(a,b){
     tutorialDone:!!(a.tutorialDone||b.tutorialDone),   // 老闆帶打教學：任一份做過就不再重跑
     classIntroSeen:!!(a.classIntroSeen||b.classIntroSeen),   // 出師（Lv.3 解鎖流派）的儀式畫面看過一次就好
     tips:Object.assign({}, a.tips||{}, b.tips||{}),    // 一次性提示看過的聯集
+    name: hi.name || lo.name || '',                    // 🏪 名字／造型／耳朵：以樂歷較高那份為主，缺了才拿另一份的
+    avatar: hi.avatar || lo.avatar || null,
+    profile: hi.profile || lo.profile || null,
   };
   const owned = new Set(m.collection.map(keyOf));
   for(const c of (lo.collection||[])) if(!owned.has(keyOf(c))){ m.collection.push(c); owned.add(keyOf(c)); }
@@ -1503,6 +1651,8 @@ async function bindMetaToAccount(u){
     // 首次在這台裝置登入這個帳號：訪客進度併入帳號
     // 全新開頁的空白訪客檔（只有系統送的起始 8 張）→ 直接用雲端，別把隨機起始卡灌進帳號
     const pristine = !(local.xp||0) && !(local.runsPlayed||0) && !(local.pending||[]).length;
+    // 空白訪客檔若已在唱片行捏過角色、雲端卻還沒有 → 名字／造型／耳朵帶進帳號（別讓序章白走）
+    if(pristine && cloud && !cloud.profile && local.profile){ cloud.profile=local.profile; cloud.name=cloud.name||local.name; cloud.avatar=cloud.avatar||local.avatar; }
     META = cloud ? (pristine ? cloud : mergeMeta(cloud, local)) : local;
     try{ localStorage.removeItem(META_KEY); }catch(e){}   // 訪客進度已併入帳號，登出後等級不再跟著裝置走
     _cloudUid = u.uid;
@@ -1511,6 +1661,7 @@ async function bindMetaToAccount(u){
   META.talents = Object.assign({atk:0,def:0,qir:0}, META.talents||{});
   if(!Array.isArray(META.collection)) META.collection = [];
   if(!Array.isArray(META.pending)) META.pending = [];
+  mergeStarterIntoCollection(META);   // 老闆推薦的三張盤跟著帳號走
   // 一次性樂歷歸零（本人帳號；換新升級曲線後重新開始）：xp 與天賦點清空、唱片櫃與紀錄保留
   if(u.email==='kubinice06@gmail.com' && !META.curveResetV1){
     META.xp = 0;
@@ -1755,7 +1906,7 @@ function homeBoxesHTML(){
   const resumeBox = (sv && !_midMode) ? `
     <div style="border:1px solid var(--gold);background:#fffbe9;padding:10px 12px;margin:6px 0 10px;line-height:1.8">
       <b style="color:var(--gold)">⏸ 上一趟還在進行中</b>
-      <div class="muted" style="font-size:11px;margin:2px 0 6px">${CLASSES[sv.run.classKey]?CLASSES[sv.run.classKey].name:''}・第 ${sv.run.depth} 場・連勝 ${sv.run.streak}・HP ${sv.run.hp}/${sv.run.maxHp}${sv.run.backup?`・💿 備份盤第 ${sv.run.backupAt} 場`:''}</div>
+      <div class="muted" style="font-size:11px;margin:2px 0 6px">${roleNameOf(sv.run)}・第 ${sv.run.depth} 場・連勝 ${sv.run.streak}・HP ${sv.run.hp}/${sv.run.maxHp}${sv.run.backup?`・💿 備份盤第 ${sv.run.backupAt} 場`:''}</div>
       <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="resumeRun()">▶ 接著打（第 ${sv.run.depth} 場）</button>
       <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="if(confirm('放棄上一趟？進度會直接消失、不結算樂歷。')){clearRunSave();renderClassSelect();}">🗑 放棄那一趟，重新開始</button>
     </div>` : '';
@@ -1794,10 +1945,10 @@ function renderRookieHome(){
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button>${dexBtn}</div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
-    ${homeBoxesHTML()}
+    ${homeBoxesHTML()}${charCardHTML()}
     <div id="rookieHome" style="border:2px solid var(--gold);background:#fffbe9;padding:14px 14px 12px;margin:8px 0 10px;line-height:1.9">
       <b style="color:var(--gold);font-size:15px">🎁 老闆的入門套裝</b>
-      <div class="muted" style="font-size:12px;margin:2px 0 10px">第一次來？不用先讀規則——老闆幫你把牌配好了，上桌<b>邊打邊學</b>。</div>
+      <div class="muted" style="font-size:12px;margin:2px 0 10px">不用先讀規則——老闆把你抱走的三張盤配上幾張店裡的雜牌，上桌<b>邊打邊學</b>。</div>
       ${startBtns}
       <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="rookieCustomSeeds()">想自己挑專輯出戰 →</button>
     </div>
@@ -1807,6 +1958,292 @@ function renderRookieHome(){
     </div>
     ${adminPanelHTML()}`;
 }
+
+// =========================================================================
+//  🏪 唱片行開場（新玩家序章）：推門 → 捏角色 → 老闆問你想找哪種 → 老闆抽三張盤（可請他換）
+//  → 三張星數加總決定你的「耳朵」（三圍＋專長）→ 老闆帶打教學／直接開打
+//  全程不動 RUN；結帳時才把名字、造型、耳朵與三張盤寫進樂歷（META.name／avatar／profile）。
+// =========================================================================
+const escHtml = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const NAME_MAX = 8;
+const RANDOM_NAMES = ['黑膠新手','B面控','唱針','內圈溝','試聽機','翻箱客','壓片師','封套派','慢轉33','七吋魂','靜電內套','跳針王'];
+const SHOP_INTRO = [
+  '<span class="narr">下著雨。你躲進巷子裡一間小唱片行，門上的鈴鐺響了一聲。</span>',
+  '<span class="narr">櫃台後面的老闆抬起頭，隔著眼鏡看了你三秒。</span><br><span class="say">「第一次來？」</span>',
+  '<span class="say">「我這裡不賣排行榜。」</span><span class="narr">他把眼鏡推上去。</span><br><span class="say">「先說說——你是誰？」</span>',
+];
+const SHOP_ASK_LINES = {
+  classic:'<span class="say">「經典啊……」</span><span class="narr">老闆從最上層抽了兩張，又從櫃台底下摸出一張。</span><span class="say">「這三張。」</span>',
+  obscurity:'<span class="say">「冷門？」</span><span class="narr">老闆眼睛亮了一下，蹲到最底層翻了半天。</span><span class="say">「這幾張，我放很久了。」</span>',
+  accessibility:'<span class="say">「硬的喔。」</span><span class="narr">老闆看了看店裡沒別的客人，從裡面的房間拿出三張。</span><span class="say">「別在店裡放。」</span>',
+  any:'<span class="say">「隨我？」</span><span class="narr">老闆想了三秒，一個架子抽一張。</span><span class="say">「這樣才公平。」</span>',
+};
+const SHOP_SWAP_LINES = ['<span class="say">「挑剔喔。」</span>','<span class="say">「這張不合？好，換。」</span>','<span class="say">「行，我再拿。」</span>'];
+const SHOP_SWAP_LAST = '<span class="say">「最後一次了，後面有人在等。」</span>';
+let _shop=null;
+function shopState(after){
+  if(!_shop) _shop = { after:after||null, back:null, ask:null, picks:[], shown:[], swaps:3, swapIdx:-1, line:'',
+    av:Object.assign({}, AVATAR_DEFAULT, META.avatar||{}), name:META.name||'' };
+  else if(after) _shop.after=after;
+  return _shop;
+}
+function ownerHTML(size){ return `<div class="owner">${pixArtHTML(SPR.owner, size||56)}老闆</div>`; }
+function shopShellHTML(inner, head){
+  return topbarHTML() + `
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button></div>
+    <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
+    <div class="shop"><div class="shop-head">🏪 巷子裡的唱片行 <span class="pill">${head||'序章'}</span></div>${inner}</div>`;
+}
+// 1. 推門（三拍旁白，可跳過）
+function renderShopIntro(after, beat){
+  document.body.classList.remove('in-battle');
+  shopState(after); beat=beat||0;
+  const last = beat>=SHOP_INTRO.length-1;
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble">${SHOP_INTRO[beat]}</div></div>
+    <div class="row" style="margin-top:12px">
+      ${last ? `<button class="btn primary" style="flex:1" onclick="renderCharCreate()">先說說你是誰 ▸</button>`
+             : `<button class="btn primary" style="flex:1" onclick="renderShopIntro(null,${beat+1})">繼續 ▸</button><button class="btn" onclick="renderCharCreate()">跳過</button>`}
+    </div>`);
+}
+// 2. 捏角色：名字＋像素造型（back='home' 時只改名字／造型，存完回首頁；序章裡則接著往下走）
+function renderCharCreate(back){
+  document.body.classList.remove('in-battle');
+  const s=shopState(); s.back = back||null;
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble">${s.back
+      ? '<span class="say">「換個造型？隨你。常客的臉我都記得。」</span>'
+      : '<span class="say">「叫什麼？長什麼樣？」</span><span class="narr">他從抽屜拿出一本會員簿。</span><span class="say">「我要記住常客的臉。」</span>'}</div></div>
+    <div class="avopt"><div class="lab">名字（最多 ${NAME_MAX} 字）</div>
+      <div class="row"><input class="nameinp" id="charName" maxlength="${NAME_MAX}" placeholder="黑膠新手" value="${escHtml(s.name)}" oninput="_shop.name=this.value"><button class="btn" title="隨機取名" onclick="charRandomName()">🎲</button></div></div>
+    <div class="avwrap">
+      <div class="avbig" id="avPreview">${pixArtHTML(avatarRows(s.av), 96)}</div>
+      <div style="flex:1;min-width:0"><div class="muted">對戰時站在牌桌旁的就是這個人。頭型、髮帽色、膚色、上衣、褲子都能換。</div>
+        <button class="btn" style="margin-top:8px" onclick="charRandomLook()">🎲 隨機造型</button></div>
+    </div>
+    <div id="avBuilder">${avatarBuilderHTML()}</div>
+    <div class="row" style="margin-top:14px">
+      ${s.back?`<button class="btn" onclick="_shop=null;renderClassSelect()">取消</button>`:''}
+      <button class="btn primary" style="flex:1" onclick="charConfirm()">${s.back?'存好了':'就是我 ▸'}</button>
+    </div>`, s.back?'捏角色':'序章 · 捏角色');
+}
+function avatarBuilderHTML(){
+  const av=_shop.av;
+  const swatch=(k,c)=>`<button class="${av[k]===c?'on':''}" style="background:${PIX_PAL[c]}" title="${c}" onclick="avSet('${k}','${c}')"></button>`;
+  const heads=Object.entries(AVATAR_HEADS).map(([k,h])=>`<button class="head ${av.head===k?'on':''}" title="${h.name}" onclick="avSet('head','${k}')">${pixArtHTML(avatarRows(Object.assign({},av,{head:k})).slice(0,8), 26)}</button>`).join('');
+  return `
+    <div class="avopt"><div class="lab">頭型：${AVATAR_HEADS[av.head]?AVATAR_HEADS[av.head].name:''}</div><div class="sw">${heads}</div></div>
+    <div class="avopt"><div class="lab">髮／帽色</div><div class="sw">${AVATAR_COLORS.hair.map(c=>swatch('hair',c)).join('')}</div></div>
+    <div class="avopt"><div class="lab">膚色</div><div class="sw">${AVATAR_COLORS.skin.map(c=>swatch('skin',c)).join('')}</div></div>
+    <div class="avopt"><div class="lab">上衣</div><div class="sw">${AVATAR_COLORS.shirt.map(c=>swatch('shirt',c)).join('')}</div></div>
+    <div class="avopt"><div class="lab">褲子</div><div class="sw">${AVATAR_COLORS.pants.map(c=>swatch('pants',c)).join('')}</div></div>`;
+}
+function avSet(k,v){
+  if(!_shop) return;
+  if(k==='head'){ if(!AVATAR_HEADS[v]) return; } else if(!PIX_PAL[v]) return;
+  _shop.av[k]=v;
+  const p=document.getElementById('avPreview'); if(p) p.innerHTML=pixArtHTML(avatarRows(_shop.av), 96);
+  const b=document.getElementById('avBuilder'); if(b) b.innerHTML=avatarBuilderHTML();
+}
+function charRandomLook(){
+  if(!_shop) return;
+  _shop.av={ head:pick(Object.keys(AVATAR_HEADS)), hair:pick(AVATAR_COLORS.hair), skin:pick(AVATAR_COLORS.skin), shirt:pick(AVATAR_COLORS.shirt), pants:pick(AVATAR_COLORS.pants) };
+  avSet('head', _shop.av.head);
+}
+function charRandomName(){
+  if(!_shop) return;
+  const cur=(_shop.name||'').trim();
+  let n=pick(RANDOM_NAMES); if(n===cur) n=pick(RANDOM_NAMES.filter(x=>x!==cur));
+  _shop.name=n; const el=document.getElementById('charName'); if(el) el.value=n;
+}
+function charConfirm(){
+  const s=shopState();
+  const el=document.getElementById('charName'); if(el) s.name=el.value;
+  const name=(s.name||'').replace(/\s+/g,' ').trim().slice(0,NAME_MAX);
+  META.name = name || '黑膠新手';
+  META.avatar = Object.assign({}, AVATAR_DEFAULT, s.av);
+  saveMeta();
+  if(s.back){ _shop=null; renderClassSelect(); return; }
+  renderShopAsk();
+}
+function playerLabel(){ return (META && META.name) ? escHtml(META.name) : '你'; }
+// 3. 老闆問你今天想找哪種
+function renderShopAsk(){
+  document.body.classList.remove('in-battle');
+  const s=shopState();
+  const revisit = !!META.profile;
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble">${revisit
+      ? `<span class="say">「又來了，${playerLabel()}。」</span><span class="narr">老闆把抹布放下。</span><span class="say">「這次想找哪種的？」</span>`
+      : `<span class="say">「${playerLabel()}是吧。」</span><span class="narr">老闆把手上的抹布放下。</span><span class="say">「今天想找哪種的？」</span>`}</div></div>
+    <div class="muted" style="margin:10px 0 6px">老闆會照你的回答抽<b>三張盤</b>當你的起始專輯；三張的星數加總決定你是哪種耳朵。</div>
+    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--classic)" onclick="shopAsk('classic')">🏛 <b style="color:var(--classic)">大家都聽過的經典</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 經得起時間的名盤</span></button>
+    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--obscurity)" onclick="shopAsk('obscurity')">🔦 <b style="color:var(--obscurity)">沒什麼人聽過的冷門</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 底層架子的私盤</span></button>
+    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--accessibility)" onclick="shopAsk('accessibility')">🔥 <b style="color:var(--accessibility)">越難聽越好的硬蕊</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 前衛、噪音、實驗</span></button>
+    <button class="btn" style="width:100%;text-align:left;margin-top:6px" onclick="shopAsk('any')">🎲 老闆你決定<span class="muted" style="text-transform:none;letter-spacing:0"> ── 三個架子各一張</span></button>
+    ${revisit?`<div class="row" style="margin-top:12px"><button class="btn" style="flex:1" onclick="_shop=null;renderClassSelect()">算了，先不換</button></div>`:''}`, revisit?'再逛一次':'序章 · 櫃台');
+}
+function shopCandidates(lean, exclude){
+  const ex=new Set(exclude||[]);
+  return STARTER_SHELF.filter(c=>!ex.has(keyOf(c)) && (!lean || lean==='any' || c.lean===lean));
+}
+function shopAsk(axis){
+  const s=shopState();
+  s.ask = axis; s.swaps = 3; s.swapIdx = -1;
+  let picks=[];
+  if(axis==='any'){
+    for(const lean of ATTRS){ const c=pick(shopCandidates(lean)); if(c) picks.push(c); }
+  } else {
+    const main=shuffle(shopCandidates(axis)).slice(0,2);
+    const others=shopCandidates(null).filter(c=>c.lean!==axis);
+    picks=main.concat([pick(others)]);
+  }
+  s.picks = shuffle(picks).map(c=>({...c}));
+  s.shown = s.picks.map(keyOf);
+  s.line = SHOP_ASK_LINES[axis]||SHOP_ASK_LINES.any;
+  renderShopPicks();
+}
+function shopTally(picks){
+  const t={classic:0,obscurity:0,accessibility:0};
+  for(const c of picks) for(const a of ATTRS) t[a]+=c[a]||0;
+  return t;
+}
+// 最高軸；平手時先看你跟老闆說想找哪種，再照 經典→冷門→硬蕊 的順序
+function shopDominant(picks, ask){
+  const t=shopTally(picks); const mx=Math.max(t.classic,t.obscurity,t.accessibility);
+  const tied=ATTRS.filter(a=>t[a]===mx);
+  if(ask && tied.includes(ask)) return ask;
+  return tied[0];
+}
+function shopTallyHTML(){
+  const s=_shop; const t=shopTally(s.picks); const top=shopDominant(s.picks,s.ask); const p=ROOKIE_PROFILES[top];
+  const mx=Math.max(1,t.classic,t.obscurity,t.accessibility);
+  const rows=ATTRS.map(a=>`<div class="tr ${a}${a===top?' top':''}"><span class="lab">${ATTR_ZH[a]}</span><div class="bar"><i style="width:${t[a]/15*100}%"></i></div><span class="n">${t[a]}</span></div>`).join('');
+  return `<div class="tally"><div class="muted" style="font-size:10px;letter-spacing:.08em;margin-bottom:4px">三張盤的星數加總（滿分各 15）</div>${rows}
+    <div class="verdict">老闆看你抱走這三張——你是 <b style="color:var(--gold)">【${p.name}】</b>（${p.tag}）<br>
+      <span class="s-atk">攻 <b>${p.stats.atk}</b></span> · <span class="s-def">防 <b>${p.stats.def}</b></span> · <span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span> · 起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}<br>
+      <span style="color:var(--gold)">★ ${p.affDesc}</span></div></div>`;
+}
+// 4. 櫃台上三張盤：看介紹、請老闆換、看加總 → 結帳
+function renderShopPicks(){
+  document.body.classList.remove('in-battle');
+  const s=shopState();
+  const cards=s.picks.map((c,i)=>`<div id="shopPick${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">
+      ${cardHTML(c,{cover:true}).replace('class="card','class="card fresh')}
+      <div class="pitch">${c.pitch||''}</div>
+      <div class="pickbtns"><button class="btn" onclick="openCardInfo(_shop.picks[${i}])">👁 介紹</button><button class="btn" ${s.swaps>0?'':'disabled'} onclick="shopSwapAsk(${i})">🔁 換</button></div>
+    </div>`).join('');
+  const swapAsk = s.swapIdx>=0 ? `<div class="swapask">🎙 老闆：「第 ${s.swapIdx+1} 張換哪種的？」
+      <div class="row">
+        <button class="btn" style="border-color:var(--classic)" onclick="shopSwap(${s.swapIdx},'classic')">經典的</button>
+        <button class="btn" style="border-color:var(--obscurity)" onclick="shopSwap(${s.swapIdx},'obscurity')">冷門的</button>
+        <button class="btn" style="border-color:var(--accessibility)" onclick="shopSwap(${s.swapIdx},'accessibility')">硬蕊的</button>
+        <button class="btn" onclick="shopSwap(${s.swapIdx},'any')">你隨便拿</button>
+        <button class="btn" onclick="_shop.swapIdx=-1;renderShopPicks()">不換了</button>
+      </div></div>` : '';
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble">${s.line}</div></div>
+    <div class="muted" style="margin:10px 0 0">點「👁 介紹」看專輯簡介與試聽；不合胃口可請老闆換（還能換 <b style="color:var(--gold)">${s.swaps}</b> 次）。</div>
+    <div class="shop-picks">${cards}${swapAsk}</div>
+    ${shopTallyHTML()}
+    <div class="row" style="margin-top:10px"><button class="btn primary" style="flex:1;border-color:var(--gold);background:var(--gold);font-size:13px;padding:12px" onclick="shopCheckout()">💳 就這三張，結帳 ▸</button></div>`, s.after==='tutorial'||!META.profile?'序章 · 櫃台':'再逛一次');
+  shopLazyCovers();
+}
+function shopLazyCovers(){
+  const s=_shop; if(!s) return;
+  s.picks.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
+    const slot=document.getElementById('shopPick'+i); if(!slot || slot.dataset.ck!==ck) return;
+    const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+}
+function shopSwapAsk(i){ const s=shopState(); if(s.swaps<=0) return; s.swapIdx = (s.swapIdx===i) ? -1 : i; renderShopPicks(); }
+function shopSwap(i, lean){
+  const s=shopState(); if(s.swaps<=0 || !s.picks[i]) return;
+  let cand=shopCandidates(lean, s.shown);
+  if(!cand.length) cand=shopCandidates(null, s.shown);   // 那一架翻完了 → 老闆隨便拿
+  if(!cand.length){ seedToast('老闆：「架上沒別的了。」'); s.swapIdx=-1; renderShopPicks(); return; }
+  const c={...pick(cand)};
+  s.picks[i]=c; s.shown.push(keyOf(c));
+  s.swaps--; s.swapIdx=-1;
+  s.line = s.swaps>0 ? pick(SHOP_SWAP_LINES) : SHOP_SWAP_LAST;
+  renderShopPicks();
+}
+function starterCards(){
+  return ((META && META.profile && META.profile.albums)||[]).map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null}));
+}
+// 老闆推薦的三張盤直接進收藏（永久；重逛唱片行只會補進還沒有的）
+function mergeStarterIntoCollection(m){
+  if(!m || !m.profile || !Array.isArray(m.profile.albums)) return;
+  if(!Array.isArray(m.collection)) m.collection=[];
+  const owned=new Set(m.collection.map(keyOf));
+  for(const c of m.profile.albums){ if(owned.has(keyOf(c))) continue;
+    m.collection.push({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null}); owned.add(keyOf(c)); }
+}
+function shopCheckout(){
+  const s=shopState(); if(s.picks.length!==3) return;
+  const axis=shopDominant(s.picks, s.ask);
+  META.profile = { axis, ask:s.ask, at:Date.now(),
+    albums:s.picks.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
+  mergeStarterIntoCollection(META);
+  saveMeta();
+  renderShopDone();
+}
+// 5. 結帳：老闆宣告你的耳朵 → 教學或直接開打
+function renderShopDone(){
+  document.body.classList.remove('in-battle');
+  const s=shopState(); const pf=META.profile; const p=ROOKIE_PROFILES[pf.axis];
+  const wantTut = s.after==='tutorial' || !META.tutorialDone;
+  const tutBtn = `<button class="btn ${wantTut?'primary':''}" style="width:100%;${wantTut?'border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px':'margin-top:6px;font-size:10px'}" onclick="shopLeave('tutorial')">🎓 ${META.tutorialDone?'再上一次老闆的課（教學兩場）':'老闆帶你打兩場（教學）'}</button>`;
+  const playBtn = `<button class="btn ${wantTut?'':'primary'}" style="width:100%;${wantTut?'margin-top:6px;font-size:10px':'border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px'}" onclick="shopLeave('play')">${wantTut?'⏭ 我自己來，直接開打':'▶ 抱著這三張直接開打'}</button>`;
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">${p.line}</span><br>
+      <span class="narr">老闆把三張盤裝進紙袋，在會員簿上寫了幾個字：</span><br>
+      <b style="color:var(--gold)">${playerLabel()}——${p.name}</b><span class="narr">。${p.desc}</span></div></div>
+    <div class="charcard" style="margin-top:12px">
+      <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 56)}</div>
+      <div style="flex:1;min-width:0">
+        <div><b style="font-size:13px">${playerLabel()}</b> <span class="pill" style="color:var(--gold);border-color:var(--gold)">${p.name}</span> <span class="muted">${p.tag}</span></div>
+        <div class="statline" style="margin:4px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span><span class="muted">起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}</span></div>
+        <div class="muted" style="font-size:10px;color:var(--gold)">★ ${p.affDesc}</div>
+      </div>
+    </div>
+    <div class="muted" style="font-size:10px;margin:2px 0 8px">🛍 紙袋裡：${pf.albums.map(a=>`<b>${escHtml(a.album)}</b>`).join('・')}——已收進你的收藏，開局會直接發到手上。</div>
+    ${wantTut?tutBtn+playBtn:playBtn+tutBtn}
+    <div class="muted" style="font-size:10px;line-height:1.9;margin-top:10px">
+      🎧 老闆帶打的兩場照他的套路走（借你他的盤）；第三場起換回你自己的三圍與專長。<br>
+      🔒 樂歷 <b>Lv.3「出師」</b>後改為自選流派（守舊／挖掘／異端）；名字與造型會一直跟著你。</div>`, '結帳');
+}
+function shopLeave(how){
+  _shop=null;
+  if(how==='tutorial'){ startTutorialGuarded(); return; }
+  rookieQuickStart();
+}
+function shopRevisit(){ _shop=null; shopState(); renderShopAsk(); }
+// 首頁的角色卡（新手首頁＋出師後的選流派畫面共用）
+function charCardHTML(){
+  const p = META.profile && ROOKIE_PROFILES[META.profile.axis];
+  const rookie = !hasUnlock('classes');
+  if(!META.avatar && !p) return `<div class="row" style="margin:4px 0 8px"><button class="btn" style="font-size:10px;padding:5px 9px" onclick="renderCharCreate('home')">✏️ 捏角色（名字與像素造型）</button></div>`;
+  const statLine = (rookie && p) ? `<div class="statline" style="margin:3px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span></div><div class="muted" style="font-size:10px;color:var(--gold)">★ ${p.affDesc}</div>` : '';
+  const shelf = (rookie && p) ? `<div class="muted" style="font-size:10px;margin-top:2px">🏪 老闆推薦：${META.profile.albums.map(a=>escHtml(a.album)).join('・')}</div>` : '';
+  return `<div class="charcard">
+      <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 48)}</div>
+      <div style="flex:1;min-width:0">
+        <div><b style="font-size:13px">${playerLabel()}</b> ${p&&rookie?`<span class="pill" style="color:var(--gold);border-color:var(--gold)">${p.name}</span>`:''}</div>
+        ${statLine}${shelf}
+      </div>
+    </div>
+    <div class="row" style="gap:6px;margin:0 0 10px"><button class="btn" style="font-size:10px;padding:6px 10px" onclick="renderCharCreate('home')">✏️ 捏角色</button>${rookie?`<button class="btn" style="font-size:10px;padding:6px 10px" onclick="shopRevisit()">🏪 再逛唱片行（換三張盤）</button>`:''}</div>`;
+}
+// 出師前：耳朵決定三圍與專長（流派仍掛守舊派，HP 緩衝沿用）；出師後由自選流派決定
+function applyRookieProfile(){
+  const p = META.profile && ROOKIE_PROFILES[META.profile.axis]; if(!p || !RUN) return;
+  RUN.profileKey = META.profile.axis;
+  RUN.stats = { atk:p.stats.atk+META.talents.atk, def:p.stats.def+META.talents.def, qir:p.stats.qir+META.talents.qir };
+  RUN.affinity = p.affinity; RUN.affBuff = Object.assign({}, p.affBuff);
+  RUN._profilePending = false;
+}
+function roleOf(run){ run=run||RUN; if(run && run.profileKey && ROOKIE_PROFILES[run.profileKey]) return ROOKIE_PROFILES[run.profileKey]; return (run && CLASSES[run.classKey]) || null; }
+function roleNameOf(run){ const r=roleOf(run); return r ? r.name : ''; }
 // ---------- 🧪 管理員測試面板（僅 kubinice06 帳號可見；沙盒中永遠可見以便離開） ----------
 function isAdminUser(){ const u=window.__rogueUser&&window.__rogueUser(); return !!(u&&u.email==='kubinice06@gmail.com'); }
 function adminPanelHTML(){
@@ -1864,7 +2301,10 @@ function rookieCustomSeeds(){
 // 老闆自動配牌：收藏裡挑總星最高的 5 張（不含王牌）；不足就從卡池補
 function autoSeeds(){
   const sum=c=>(c.classic||0)+(c.obscurity||0)+(c.accessibility||0);
-  const seeds=(META.collection||[]).filter(c=>!c.ace).sort((a,b)=>sum(b)-sum(a)).slice(0,5).map(c=>({...c}));
+  // 🏪 老闆推薦的三張盤一定在起手，其餘用收藏裡總星最高的補
+  const seeds=starterCards().slice(0,5);
+  const _sk=new Set(seeds.map(keyOf));
+  for(const c of (META.collection||[]).filter(c=>!c.ace && !_sk.has(keyOf(c))).sort((a,b)=>sum(b)-sum(a))){ if(seeds.length>=5) break; seeds.push({...c}); _sk.add(keyOf(c)); }
   if(seeds.length<5){
     const have=new Set(seeds.map(keyOf));
     for(const c of shuffle(allPool().filter(x=>!x.ace))){
@@ -1877,7 +2317,10 @@ function autoSeeds(){
 
 let _gradShown=false;   // 出師橫幅：本次開頁期間持續顯示，下次進來就收
 function renderClassSelect(){
-  if(!hasUnlock('classes')){ renderRookieHome(); return; }
+  if(!hasUnlock('classes')){
+    if(!META.profile){ renderShopIntro(); return; }   // 🏪 還沒逛過唱片行 → 先走序章（捏角色＋老闆推薦三張盤）
+    renderRookieHome(); return;
+  }
   document.body.classList.remove('in-battle');
   const free=freeTalents();
   const talentNote = (spentTalents()>0||free>0)
@@ -1909,7 +2352,7 @@ function renderClassSelect(){
   $app.innerHTML = topbarHTML() + `
     <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><button class="btn" onclick="openRelicDex()">🏺 發燒配件</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
-    ${gradBox}${homeBoxesHTML()}
+    ${gradBox}${homeBoxesHTML()}${charCardHTML()}
     <div class="muted" style="margin:4px 0 4px">選流派 → 挑${seedMax()}張專輯 → 一場接一場越打越強，撐到死。每趟結束累積<b style="color:var(--gold)">樂歷</b>升級。</div>
     ${unlockLine}
     ${talentNote}${tBtns}
@@ -2264,12 +2707,18 @@ function startTutorialRun(){
   META.tutorialDone=true;   // 開場就記下：中途關頁也不會被卡在教學圈
   initRun('guard');
   RUN._tutorial=true;
+  // 🏪 兩場帶打照老闆的套路走：劇本的傷害／氣勢是用守舊派數值（攻1 防2 勢1）算死的，耳朵的三圍等第三場再換回來
+  if(RUN.profileKey){ RUN._profilePending=true; const g=CLASSES.guard; RUN.stats={atk:g.stats.atk+META.talents.atk,def:g.stats.def+META.talents.def,qir:g.stats.qir+META.talents.qir}; RUN.affinity=g.affinity; RUN.affBuff=Object.assign({},g.affBuff); }
   RUN.seedsPicked=[TUT_CORE.revolver,TUT_CORE.kob,TUT_CORE.longseason,TUT_CORE.moneystore,TUT_CORE.untrue].map(c=>({...c}));
   // 這趟之後（第 3 場起）用的牌組＝兩場教學用到的全部盤（割捨掉的 Untrue 會被 removeFromRunDeck 真的移除）
-  RUN.deck=TUT1_PDECK.concat([TUT_CORE.ruins]).map(c=>copyCard(c));
+  // ＋老闆推薦、你抱走的三張盤（候選架已避開教學十張，這裡再保險去重一次）
+  const _tutKeys=new Set(TUT1_PDECK.concat([TUT_CORE.ruins]).map(keyOf));
+  const _starters=starterCards().filter(c=>!_tutKeys.has(keyOf(c)));
+  RUN.deck=TUT1_PDECK.concat([TUT_CORE.ruins]).concat(_starters).map(c=>copyCard(c));
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
+  // 「同流派再戰」沿用：你的三張盤優先，補上老闆借的兩張核心
   META.lastLoadout={ classKey:'guard', relics:[],
-    seeds:RUN.seedsPicked.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
+    seeds:_starters.concat(RUN.seedsPicked).slice(0,seedMax()).map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
   saveMeta();
   // 老闆借的盤若收藏還沒有 → 一樣列入趟末「挑 1 張永久收藏」名單（打完老闆送你一張）
   const _owned=new Set(META.collection.map(keyOf));
@@ -2320,6 +2769,8 @@ function initRun(key){
     _keptOne:false,
   };
   RUN.maxHp = RUN.baseMaxHp; RUN.hp = RUN.maxHp;
+  // 🏪 出師前：老闆看出來的耳朵決定三圍與專長（流派仍掛守舊派，HP 緩衝沿用）
+  if(!hasUnlock('classes') && META.profile) applyRookieProfile();
 }
 function chooseClass(key){
   // 上一趟還沒打完 → 開新的一趟等於放棄它，先問一聲（避免手滑洗掉進度）
@@ -3072,7 +3523,7 @@ function closeHistView(){ const m=document.getElementById('histMask'); if(m) m.r
 // ----- 規則彈窗（相生相剋表旁的「規則？」；含怎麼剋品味輾壓）-----
 function openRules(){
   if(document.getElementById('rulesMask')) return;
-  const aff = (RUN && CLASSES[RUN.classKey]) ? `<li><b style="color:var(--gold)">派系專長</b>：${CLASSES[RUN.classKey].affDesc}</li>` : '';
+  const aff = roleOf(RUN) ? `<li><b style="color:var(--gold)">派系專長</b>：${roleOf(RUN).affDesc}</li>` : '';
   const mask=document.createElement('div'); mask.className='drawmask'; mask.id='rulesMask';
   mask.innerHTML=`<div class="drawcard" style="max-width:420px;text-align:left">
     <div class="lab">玩法規則</div>
@@ -3171,7 +3622,7 @@ function renderBattle(){
       <div class="callout" id="callout"></div>
     </div></div>
     <div class="player-zone">
-      ${sideHTML(G.p, '你', 'p')}
+      ${sideHTML(G.p, playerLabel(), 'p')}
       <div class="cheat">${RUN.relics.length?`<div class="cheat-relics">${relicBarHTML()}</div>`:''}${REL_RING_SVG}<div class="legend">相剋命中（氣勢 <em>+3</em>）：傷害＝<b>該招星數</b><br>純比星：高星扣血＝星數差，氣勢 +1<br>被擊氣勢 <b>-1</b>，被【硬蕊】<b>-2</b>；派系專長觸發 <em>buff</em></div><button class="pill" style="cursor:pointer;background:#fff;flex:none" onclick="openRules()">規則</button></div>
       <div class="hint${_tstep?' coach':''}" id="hint">${_tstep?_tstep.txt:hintTxt}</div>
       <div class="tilepop" id="tilePop"></div>
@@ -3390,7 +3841,7 @@ async function play(uid, pAttr){
       if(ab.qi){ G.p.qi=clampQi(G.p.qi+ab.qi); notes.push(`氣勢+${ab.qi}`); }
       if(wonRound && ab.foeQi){ G.e.qi=clampQi(G.e.qi-ab.foeQi); notes.push(`削對手氣勢${ab.foeQi}`); }
       if(wonRound && ab.dmg){ const d=applyDef(applyAtk(ab.dmg,st.atk),est.def); G.e.hp-=d; notes.push(`額外傷害−${d}`); }
-      if(notes.length) pushLog(`★ ${CLASSES[RUN.classKey].name}專長（${ATTR_ZH[pAttr]}）：${notes.join('、')}`,'good');
+      if(notes.length) pushLog(`★ ${roleNameOf(RUN)}專長（${ATTR_ZH[pAttr]}）：${notes.join('、')}`,'good');
     }
     G.p.last=pAttr; G.e.last=eAttr;
     // 訊息
@@ -3507,8 +3958,13 @@ function winFight(){
   // 🎙 老闆帶打：兩場各有結業語；第二場打完教學正式結束，之後正常連打（進階機制首次發生時 coachTip 再各教一句）
   if(G.tut){
     const sc=TUT_SCRIPT[G.tut.fight];
-    if(sc) setTimeout(()=>coachToast(sc.outro), 700);
-    if(G.tut.fight>=2) RUN._tutorial=false;
+    let outro = sc ? sc.outro : '';
+    if(G.tut.fight>=2){
+      RUN._tutorial=false;
+      // 🏪 課上完了：換回老闆看出來的耳朵（三圍＋專長），第三場起生效
+      if(RUN._profilePending){ applyRookieProfile(); const p=roleOf(RUN); if(p&&RUN.profileKey) outro += `<br>🎙 老闆：接下來換回你自己的打法——<b>【${p.name}】</b>：${p.affDesc}。`; }
+    }
+    if(outro) setTimeout(()=>coachToast(outro), 700);
     G.tut=null;
   }
   RUN._lastWasBoss = !!(G.E && G.E.boss);              // 剛打贏藏家 → 勝利畫面給壓備份盤的機會
@@ -4256,7 +4712,7 @@ function renderDeath(){
       <div style="margin-bottom:6px">${pixArtHTML(SPR.brokenrec, 44)}</div>
       <div class="muted">試煉終結</div>
       <div class="big">第 ${RUN.depth} 場</div>
-      <div class="muted">連勝 ${RUN.streak}・流派 ${CLASSES[RUN.classKey].name}・局內 Lv.${RUN.runLevel}${relicNote}</div>
+      <div class="muted">連勝 ${RUN.streak}・${RUN.profileKey?'耳朵':'流派'} ${roleNameOf(RUN)}・局內 Lv.${RUN.runLevel}${relicNote}</div>
       ${RUN.baseDepth?`<div class="muted" style="font-size:10px;margin-top:2px">🎫 中繼票開局（第 ${RUN.baseDepth+1} 場起）・實際打了 ${fought} 場，樂歷只算這幾場</div>`:''}
       ${RUN.rewound?`<div class="muted" style="font-size:10px;margin-top:2px">💿 這趟用過備份盤倒帶 ${RUN.rewound} 次</div>`:''}
       <div style="margin-top:8px;min-height:16px">${recordLine}</div>
@@ -4279,9 +4735,9 @@ function renderDeath(){
       </div>`}
       <div class="sp"></div>
       ${META.lastLoadout && CLASSES[META.lastLoadout.classKey] ? `
-      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="quickRestart()">⚡ 同流派再戰（${CLASSES[META.lastLoadout.classKey].name}・同批種子）</button>
+      <button class="btn primary" style="width:100%;border-color:var(--gold);background:var(--gold)" onclick="quickRestart()">⚡ ${hasUnlock('classes')?'同流派再戰':'再戰一趟'}（${(!hasUnlock('classes')&&META.profile&&ROOKIE_PROFILES[META.profile.axis])?ROOKIE_PROFILES[META.profile.axis].name:CLASSES[META.lastLoadout.classKey].name}・同批種子）</button>
       <div class="sp"></div>` : ''}
-      <button class="btn ${META.lastLoadout?'':'primary'}" style="width:100%" onclick="renderClassSelect()">重新選流派 →</button>
+      <button class="btn ${META.lastLoadout?'':'primary'}" style="width:100%" onclick="renderClassSelect()">${hasUnlock('classes')?'重新選流派':'回試煉首頁'} →</button>
       <div class="sp"></div>
       <button class="btn" style="width:100%" onclick="location.href='index.html'">← 回主選單</button>
     </div>`;
@@ -4357,7 +4813,8 @@ async function bootstrap(){
   // 把參數洗掉，之後死亡重來／重新整理不會又被拉回教學
   const _wantTut = new URLSearchParams(location.search).get('tutorial')==='1';
   if(_wantTut){ try{ history.replaceState(null,'',location.pathname); }catch(e){} }
-  if(_wantTut && guardRunSave()){ startTutorialRun(); }
+  // 還沒逛過唱片行的新玩家：先走序章（結帳畫面會把教學當主打按鈕），不直接跳進老闆帶打
+  if(_wantTut && guardRunSave()){ if(!hasUnlock('classes') && !META.profile) renderShopIntro('tutorial'); else startTutorialRun(); }
   else renderClassSelect();
   // 背景抓「全世界」真實專輯擴充卡池（不擋畫面；離線就跳過、用內建 POOL）
   fillDynamicPool(16);
