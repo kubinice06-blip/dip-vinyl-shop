@@ -129,6 +129,30 @@ const translit = s => Array.from(String(s || '')).map(ch => {
   return ch === lo ? t : (t.charAt(0).toUpperCase() + t.slice(1));
 }).join('');
 
+// 羅馬轉寫沒有單一標準，Apple 用的那一種不必然是我們算出來的那一種
+// （實例：Θεοδωράκης《Ρωμιοσύνη》在 Apple 上是 Romiosini，我們的表算出 Romiosyni）。
+// 比對前把兩邊都收斂成同一個粗形，只吸收希臘文轉寫最常見的幾組分歧。
+// 這只影響比對，不影響任何存下來的資料。
+// 再版尾綴要先拿掉，否則 titleOk 的長度差上限（8）會把
+// 「Ρωμιοσύνη」與「Romiosini (Remastered)」判成不同（差 10）。
+const DECO = /\b(digitally\s+)?(remaster(ed)?|reissue|deluxe|expanded|edition|anniversary|bonus\s+tracks?|version)\b/gi;
+const canon = s => norm(translit(String(s || '').replace(DECO, ' ')))
+  .replace(/ph/g, 'f').replace(/kh/g, 'h').replace(/ch/g, 'h')
+  .replace(/mp/g, 'b').replace(/nt/g, 'd').replace(/gk/g, 'g')
+  .replace(/ou/g, 'u').replace(/y/g, 'i').replace(/v/g, 'b')
+  .replace(/(.)\1+/g, '$1');
+const looseTitleOk = (want, got) => {
+  if (SUFFIX.test(got) && !SUFFIX.test(want)) return false;
+  const a = canon(want), b = canon(got);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
+};
+const looseArtistOk = (want, got) => {
+  const a = canon(want), b = canon(got);
+  return !!a && !!b && (a === b || a.includes(b) || b.includes(a));
+};
+
 // 一張卡要試的查詢字串，依序：原文 → 別名＋原盤名 → 全轉寫。重複的去掉。
 function termsFor(c) {
   const list = [`${c.artist} ${c.album}`];
@@ -158,8 +182,10 @@ for (const c of cards) {
       if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
       raw = (j.results || []).length;
       hits = (j.results || []).filter(r =>
-        albumCands.some(a => titleOk(a, r.collectionName || '')) &&
-        artistCands.some(a => artistOk(a, r.artistName || '')) &&
+        (albumCands.some(a => titleOk(a, r.collectionName || '')) ||
+         looseTitleOk(c.album, r.collectionName || '')) &&
+        (artistCands.some(a => artistOk(a, r.artistName || '')) ||
+         looseArtistOk(c.artist, r.artistName || '')) &&
         (!c.year || Math.abs(Number(String(r.releaseDate || '').slice(0, 4)) - c.year) <= 3));
       if (hits.length) break;                           // 命中就不再試下一種寫法
     }
