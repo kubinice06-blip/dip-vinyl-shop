@@ -1,89 +1,9 @@
 // 試聽比對的純函式集合（2026-09-02 自 probe-previews.mjs 抽出）。
 // 抽出來的理由是裁定第 90 條：規則改動要先過已知實例再跑批——
-// 比對邏輯留在主程式頂層時測不到，只能改完直接跑 40 分鐘的批次再看。
-// 這裡不做任何網路請求、不讀任何檔案，test-match.mjs 直接 import 驗證。
+// 比對邏輯留在主程式頂層時測不到。這裡不做網路請求、不讀檔案，test-match.mjs 直接 import。
 import { fold } from '../lib.mjs';
 
 export const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
-// c-SEA 三批先試在地目錄再回退國際；c-51 是西方與東亞盤，us 命中率最高。
-const SEA = ['id', 'ph', 'th', 'vn', 'my', 'sg', 'us', 'gb', 'jp'];
-const GEN = ['us', 'gb', 'jp', 'tw', 'de', 'fr'];
-// c-53 蘇聯／俄語圈：Apple 2022 年退出俄國市場，ru 不存在。抽驗時命中的四張都在 us，
-// 代表這些錄音有國際數位發行；另補後蘇聯各國與 Leo Records 的歐洲市場。
-const SOV = ['us', 'gb', 'de', 'lt', 'ee', 'lv', 'kz', 'am', 'fr'];
-// c-54 南斯拉夫：先試各繼承國，再回退到德奧（大量前南移民市場）與國際。
-const YUG = ['hr', 'si', 'rs', 'ba', 'mk', 'de', 'at', 'us', 'gb'];
-// c-55 土耳其與阿拉伯世界：先試土耳其與海灣各國，再回退歐美。
-const TRAB = ['tr', 'ae', 'sa', 'eg', 'lb', 'ma', 'dz', 'de', 'fr', 'us', 'gb'];
-// c-56 中東歐：各繼承國 ＋ 德奧（大量移民市場）＋ 國際。
-const CEU = ['cz', 'sk', 'hu', 'pl', 'ro', 'bg', 'de', 'at', 'us', 'gb'];
-// c-57 牙買加：牙買加自身 ＋ 英國（Trojan／Island 的主場）＋ 美加。
-const JAM = ['jm', 'gb', 'us', 'ca', 'de', 'jp'];
-// c-58／c-59 深掘線：歐美原盤為主，日本盤在爵士與放克的再發史上份量很重。
-const DIG = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'br'];
-// c-60 深掘搖滾與迷幻：北美私壓的再發多由美國考古廠牌操刀（us／ca），
-// 歐陸地下走 gb／de／fr／it／se／nl，日本 underground 走 jp。
-const PSY = ['us', 'ca', 'gb', 'de', 'fr', 'it', 'se', 'nl', 'jp'];
-// c-61 深掘搖滾迷幻續批：義法地下 prog ＋ 北歐 progg ＋ 荷比澳紐。
-// 先試各國本地，日本盤在 prog 的再發史上份量很重（Arcàngelo、Belle Antique、Strange Days）。
-const EUR = ['it', 'fr', 'se', 'dk', 'no', 'fi', 'is', 'nl', 'be', 'au', 'nz', 'jp', 'de', 'gb', 'us'];
-// c-62 希臘：先試希臘與賽普勒斯，再回退德澳（大量希臘移民市場）與國際。
-const GRC = ['gr', 'cy', 'de', 'au', 'us', 'gb', 'ca', 'se'];
-// c-63 深掘民謠與藍調：英國民謠復振與美國 old-time／藍調為兩大宗，
-// 再加愛爾蘭與伊比利、拉美 nueva canción 的發行國。依裁定第 75 條照發行國排。
-const FOLKB = ['gb', 'us', 'ie', 'pt', 'es', 'uy', 'cl', 'ca', 'fr', 'de'];
-// c-64 柬埔寨與越南：本地 storefront 先試（kh／vn），再發權多在美國考古廠牌
-// （Dust-to-Digital、Sublime Frequencies）與法國（前殖民地的檔案），最後才是海外華越社群所在的 au／ca。
-// 依第 75 條：storefront 賣的是發行權涵蓋的地區，不是聽眾在哪裡，所以移民市場放最後。
-const INDOCH = ['kh', 'vn', 'us', 'fr', 'gb', 'th', 'sg', 'au', 'ca'];
-// c-65 深掘電子與實驗：私壓電子與圖書館音樂的再發權多在英美（Trunk、Finders Keepers、
-// Dark Entries、RVNG、Music From Memory 在荷）與法德（INA-GRM、Bureau B），日本盤在
-// 環境／電子再發史上份量重（Light in the Attic 的 Kankyō 系列反而是美國發行）。
-const ELEC = ['us', 'gb', 'de', 'fr', 'nl', 'jp', 'it', 'be', 'ca'];
-// c-66 印度：本地 storefront 先試（in），Saregama／HMV India 的目錄在 in 最全；
-// 再發權在英美（Finders Keepers、Bombay Connection、Light in the Attic）與英國的南亞社群發行；
-// 古典線的 ECM／Navras／Nimbus 在 gb／de。依第 75 條，移民市場（gb／ca／ae）放在發行權之後。
-const INDIA = ['in', 'us', 'gb', 'de', 'fr', 'ca', 'ae', 'sg', 'au'];
-
-const cards = [];
-for (const b of BATCHES)
-  for (const c of JSON.parse(fs.readFileSync(path.join(ROOT, `desc-tools/batches/cards/${b}-cards.json`), 'utf8')))
-    // c52 是 c-SEA 的收尾批（印尼／泰／越／菲／星馬），同樣要先試在地 storefront
-    cards.push({ ...c, batch: b, fronts:
-      (b.startsWith('csea') || b.startsWith('c52')) ? SEA
-      : b.startsWith('c53') ? SOV
-      : b.startsWith('c54') ? YUG
-      : b.startsWith('c55') ? TRAB
-      : b.startsWith('c56') ? CEU
-      : b.startsWith('c57') ? JAM
-      : (b.startsWith('c58') || b.startsWith('c59')) ? DIG
-      : b.startsWith('c60') ? PSY
-      : b.startsWith('c61') ? EUR
-      : b.startsWith('c62') ? GRC
-      : b.startsWith('c63') ? FOLKB
-      : b.startsWith('c64') ? INDOCH
-      : b.startsWith('c65') ? ELEC
-      : b.startsWith('c66') ? INDIA : GEN });
-
-// 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
-// 免得覆寫本機已經取用過的那份。
-// 預設寫進「該批自己的」previews.json，不再落到 probe/ 底下的共用累積檔。
-// 2026-09-02：c-60 那次沒帶 PREVIEWS_OUT，49 筆就直接混進了共用檔
-// （該檔的基準內容只有 c51 與 c-SEA），事後得手動挑出來再還原。
-// 單批執行時預設就該落在 batch-progress/<批>/previews.json；
-// 一次跑多批或要匯總時再用 PREVIEWS_OUT 指定。
-const OUT = process.env.PREVIEWS_OUT ? path.resolve(process.env.PREVIEWS_OUT)
-  : BATCHES.length === 1 ? path.join(ROOT, `batch-progress/${BATCHES[0]}/previews.json`)
-  : path.join(DIR, 'previews.json');
-const out = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
-
-const get = async url => {
-  try {
-    const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
-    if (!r.ok) return { _http: r.status };
-    return await r.json();
-  } catch (e) { return { _err: String(e.name || e).slice(0, 30) }; }
-};
 
 // 標題與掛名的比對。寬鬆到能吃掉副標與掛名後綴，嚴格到不會配到同名的別張。
 // Apple 會把單曲與 EP 的條目標成「某某 - Single」「某某 - EP」。摺疊後那個後綴
@@ -176,4 +96,3 @@ export function termsFor(c) {
     list.push(`${c.queryAlias || translit(c.artist)} ${translit(c.album)}`);
   return [...new Set(list.map(x => x.trim()).filter(Boolean))];
 }
-
