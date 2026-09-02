@@ -119,6 +119,7 @@ for (const c of cards) {
   const rec = { batch: c.batch, tried: [] };
 
   const terms = termsFor(c);
+  let fallback = null;                                   // 配到碟但該 storefront 無試聽時的保底
   for (const front of c.fronts) {
     // 比對用的候選名：原文與轉寫都算數，否則轉寫查到了也會被 titleOk 擋掉。
     const albumCands = [c.album, translit(c.album)];
@@ -169,8 +170,14 @@ for (const c of cards) {
     const yd = c.year ? Math.abs(Number(rec.appleYear) - c.year) : 0;
     if (yd > 3) { rec.yearDrift = yd; rec.reissueTitle = isReissue; }
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
-    break;
+    // 同一張碟在不同 storefront 的試聽授權不一樣（2026-09-02，c-53 實測）：
+    // Матвеева《Какой большой ветер》的 collectionId 1509982713 在 de 有 .m4a、在 us 沒有。
+    // 所以配對成功但拿不到試聽時，不要停——把它記下來當保底，繼續試剩下的 storefront。
+    if (rec.status === 'ready') break;
+    fallback = fallback || { ...rec };
+    rec.front = undefined; rec.status = undefined;      // 讓下一輪重新填
   }
+  if (!rec.status && fallback) Object.assign(rec, fallback);
   if (!rec.status) rec.status = 'unavailable';
   out[k] = rec;
   n++;
