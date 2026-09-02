@@ -1771,3 +1771,22 @@ Apple 那筆可能是兩張併輯。第 13 條已記 MB 對這張碟本身就有
 這裡再加一層：**Apple 的條目也可能把同一位藝人的兩張碟併成一筆**。
 比對規則放行它是對的（盤名子字串、藝人相符、無數字殘餘），但 `trackCount=12`
 與原盤要對——已在 `previews.json` 留 yearDrift 標記，本機上架前核。
+
+### 第 75 條補記：c-63 試聽 32/52（62%），30 張在 `gb`
+
+策展層交件時預測「這批有 6 張連 CD 再發都沒有，Apple 命中率會遠低於 c-60 的 49%／c-61 的 61%」。
+實測 **62%**，與 c-61 持平——那 6 張確實在 unavailable 那 20 張裡，但其餘 32 張幾乎全在 `gb`（30 張），
+`us` 只有 2 張。**英國民謠復振與戰前藍調的考古再發權在英國廠牌手上**（Topic 自家、Trunk、
+Sunbeam、Earth、以及藍調線的 Ace／Kent、Document 以外的英國整理者），美國 storefront 反而不是主場——
+連美國 old-time 田野錄音與芝加哥電氣藍調都在 `gb` 命中。
+
+第 75 條的判準（storefront 賣的是發行權涵蓋的地區）再次成立，而且這次的教訓是**「碟是哪國的」
+與「再發權在哪國」可以完全脫鉤**：美國藍調的數位再發權在英國。策展層用「碟的產地」推 storefront
+會低估。
+
+32 張逐筆核對零錯配：三張自我同名（Fuzzy Mountain String Band、Skara Brae、Jo Ann Kelly）都是完全相等才放行，
+五張合輯（Mountain Music of Kentucky、Bo Carter、Frank Stokes、Memphis Jug Band、Cannon's Jug Stompers）
+盤名對得上且 trackCount 可供本機核版本，yearDrift 標記 8 張。
+
+c-55 的 Erkin Koray《Erkin Koray Tutkusu》單卡補查成功（「(2025 Remastered)」年份前置已能剝掉），
+c-55 定案 **26/45（58%）**。
