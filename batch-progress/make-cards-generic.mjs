@@ -2,6 +2,7 @@
 // 策展層把實查的 release-group MBID 記在 mbNote 裡，這裡抽出來當 rgMbid。
 // 只抽「第一個」MBID——策展層被要求把對照組 MBID 另外標明，抽第一個才是主鍵。
 import fs from 'node:fs';
+import { lineOf } from './label-lines.mjs';
 const [batch, ...groups] = process.argv.slice(2);
 if (!batch || !groups.length) { console.error('用法: node make-cards-generic.mjs <批名> <組別...>'); process.exit(1); }
 const MBID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/;
@@ -20,6 +21,9 @@ for (const g of groups) {
       releaseType: r.releaseType, exceptionReason: r.exceptionReason || '',
       exceptionEvidenceUrls: r.exceptionEvidenceUrls || [],
       selfTitled: !!r.selfTitled, apex: null, group: g,
+      // 類型標示（2026-09-02 店主指示）：深掘／廣度＋場景，未來好分類。
+      // 查表在 label-lines.mjs 的 LINES；新開批次要先在那裡登記。
+      ...(lineOf(batch, g) || (() => { throw new Error(`${batch} 的組別 ${g} 尚未在 label-lines.mjs 的 LINES 登記類型`); })()),
       queryAlias: r.queryAlias || '', republic: r.republic || '', cover: null,
     });
   }
