@@ -46,6 +46,9 @@ const CEU = ['cz', 'sk', 'hu', 'pl', 'ro', 'bg', 'de', 'at', 'us', 'gb'];
 const JAM = ['jm', 'gb', 'us', 'ca', 'de', 'jp'];
 // c-58／c-59 深掘線：歐美原盤為主，日本盤在爵士與放克的再發史上份量很重。
 const DIG = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'br'];
+// c-60 深掘搖滾與迷幻：北美私壓的再發多由美國考古廠牌操刀（us／ca），
+// 歐陸地下走 gb／de／fr／it／se／nl，日本 underground 走 jp。
+const PSY = ['us', 'ca', 'gb', 'de', 'fr', 'it', 'se', 'nl', 'jp'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -58,7 +61,8 @@ for (const b of BATCHES)
       : b.startsWith('c55') ? TRAB
       : b.startsWith('c56') ? CEU
       : b.startsWith('c57') ? JAM
-      : (b.startsWith('c58') || b.startsWith('c59')) ? DIG : GEN });
+      : (b.startsWith('c58') || b.startsWith('c59')) ? DIG
+      : b.startsWith('c60') ? PSY : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
