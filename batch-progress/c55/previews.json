@@ -114,23 +114,6 @@
   ],
   "status": "unavailable"
  },
- "Erkin Koray|Erkin Koray Tutkusu": {
-  "batch": "c55",
-  "tried": [
-   "tr:1→0",
-   "ae:1→0",
-   "sa:1→0",
-   "eg:1→0",
-   "lb:1→0",
-   "ma:1→0",
-   "dz:1→0",
-   "de:1→0",
-   "fr:1→0",
-   "us:1→0",
-   "gb:1→0"
-  ],
-  "status": "unavailable"
- },
  "Barış Manço|Sakla Samanı Gelir Zamanı": {
   "batch": "c55",
   "tried": [
@@ -789,5 +772,23 @@
    "gb:12→0"
   ],
   "status": "unavailable"
+ },
+ "Erkin Koray|Erkin Koray Tutkusu": {
+  "batch": "c55",
+  "tried": [
+   "tr:1→1"
+  ],
+  "front": "tr",
+  "collectionId": 1805182524,
+  "appleTitle": "Erkin Koray Tutkusu (2025 Remastered)",
+  "appleArtist": "Erkin Koray",
+  "appleYear": "2025",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/2d/8f/032d8fa0-abe1-e59c-4458-215e381372d0/mzaf_2839375793019654451.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 48,
+  "reissueTitle": true,
+  "status": "ready"
  }
 }
