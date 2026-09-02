@@ -1095,3 +1095,92 @@ Aksak Maboul 改由 hook 的「開場那首只有二十二秒」承接長度分�
 依第 41 條不寫曲長、只寫兩首的對照。**同樣正確**——
 第 41 條說 `sound` 與 facts 衝突以 facts 為準，這裡是更弱的情況
 （`sound` 有、facts 沒有），一樣不能用。
+
+## 65.（c-61）「廠牌名＋目錄號」不足以識別一次再發——要指到 Discogs 的 version 頁
+
+**a 組與 b 組各自獨立撞到同一個形狀，這是強訊號。**
+
+第 57 條說授權的判定單位是「這一次再發」不是「這家廠牌」。**還不夠。**
+這條線的盜版**直接盜用正牌廠牌的名字與原始目錄號**：
+
+| 卡 | 冒名者 | 沿用的編號 |
+|---|---|---|
+| Biglietto per l'Inferno | 「Trident (7)」 | TRI 1005 |
+| Metamorfosi | 「Vedette Records (3)」 | VPA 8162 |
+| Museo Rosenbach | 「Ricordi (2)」 | SMRL 6113 |
+| Campo di Marte | 「Mellow Records (4)」 | MMP 181 |
+| Maxophone | 「AMS (4)」 | AMS 138CD |
+| Corte dei Miracoli | 「Seven Seas (3)」 | KICP 2003 |
+| Young Flowers | 「Sonet」的 2013 年盤 | — |
+| Ruphus | 俄羅斯的「Pan Records (14)」 | PACD012 |
+| Irish Coffee | 義大利的「Triangle (26)」 | BE 920321 |
+| Icecross | 「Icecross Records (2)」 | 原廠名與編號 |
+
+**廠牌名對、編號也對，仍然可能是盜版。** 分辨依據是 Discogs 廠牌實體後面的
+括號序號（`(7)`、`(3)`、`(14)`）——那是 Discogs 給同名不同實體的消歧義編號。
+
+**裁定：往後任何以再發舉證授權狀態的批次，都必須指到 Discogs 的 version 頁
+（或至少記下國別與 Discogs 的 entity 編號）。**
+`reissuedBy` 或 `why` 裡只寫「Vinyl Magic VM 006」，在這條線上會指到兩筆相反的東西。
+
+（第 43 → 57 → 65 是同一個問題逐層收緊：
+43 說看授權狀態、57 說判定單位是這一次再發、65 說連廠牌名加編號都識別不了那一次。）
+
+## 66.（c-61）MB 與 Discogs 的授權狀態打架時，採 Discogs 的 version 頁、且不採為背書
+
+**Komintern** 的 2014 年澳洲 Great Barrier 盤：**MB 標 Official、Discogs 標 Unofficial。**
+第 43 條沒說兩邊打架時聽誰的。
+
+**裁定：採 Discogs 的 version 頁，且該筆不採為背書。** 兩個理由：
+
+1. **Discogs 的授權標記是靠實體盤的證據維護的**（壓片編號、母帶來源、
+   版權標示），MB 的 Official 旗標則常是建檔者的預設值，兩者的證據強度不同。
+2. **背書的舉證責任在提案方。** 有爭議就代表舉不出乾淨的證據，
+   這時該做的是另找一筆沒爭議的再發，或改用樂評／參考書條目來舉證，
+   不是挑對自己有利的那個資料庫。
+
+a 組的處理正確，已把爭議寫進該卡的 `risk`。
+
+## 67.（c-61）Opus Avantra 收《Introspezione》——第 45 條的第二個實例，兩張要走同一條規則
+
+a 組原本剔除 Opus Avantra，理由是「第 45 條還列在待店主確認事項」。**這個顧慮我駁回了。**
+
+事實：1974 年 Trident TRI 1006 的原盤封面**沒有獨立盤名**，
+Discogs 主條目就叫「Opus Avantra Donella Del Monaco」（雙掛名）；
+《Introspezione》是 2001 年 Trident 重刻起才通行的名字，
+MB 的 release-group 標題作「Introspezione - Donella Del Monaco」。
+
+**這正是第 45 條寫明的適用範圍**：原盤自我同名、後來被再發正式改名、
+改名後的盤名已成為 MB 與流通的通行名。
+
+**裁定：收《Introspezione》，與 Debris'《Static Disposal》走同一條規則。**
+
+**「待店主確認」的意思是這條規則現在有效、店主若不同意會回頭改，
+不是「先擱著別用」。** 擱置反而會讓兩張同形狀的碟走不同的規則——
+那才是真正難以回頭收拾的狀態。店主日後若決定原名優先，兩張一起改回去即可：
+rgMbid 不變、封面走 CAA 不受影響，只會掉試聽。
+
+## 68.（c-61）Trúbrot《....Lifun》的四個前置句點保留；Kebnekajse 的 j／i 不一致是規則的正確結果
+
+**兩件都是第 50、52 條套用後的樣子，記下來免得日後被人「修正」掉。**
+
+1. **Trúbrot《....Lifun》**：MB 的 release-group 與 Discogs 1971 原盤
+   （master 508759）標題都作 `....Lifun`，冰島本地與串流通常只寫 `Lifun`。
+   依第 50 條（盤名採原盤封面的寫法）**保留四個前置句點**。
+   這是卡池第一張以標點開頭的盤名。`Lifun` 的寫法要寫進 `risk` 供下游去重與查詢用。
+2. **Kebnekajse《Kebnekaise II》**：**團名是 j、盤名是 i，刻意不一致。**
+   團名依第 52 條採樂團與廠牌的現行寫法（`Kebnekajse`），
+   盤名依第 50 條採原盤（`Kebnekaise II`）。
+   **這不是打錯字。** `Fläsket Brinner`／《Fläsket brinner》的大小寫不一致同理。
+
+## 69.（c-61）Bo Hansson 不進深掘線，但池中零張是廣度線該補的洞
+
+b 組刻意沒收 **Bo Hansson《Sagan om ringen》**，理由是它進過英國 Charisma 全球發行、
+屬正典那一端，與第 47 條的深掘判準（非正典）相衝。**這個判斷正確，維持。**
+
+但實掃確認：**池中 Bo Hansson 零張**。這是真的缺口，只是它是**廣度**的缺口不是深掘的。
+第 47 條把深掘線定義成「非正典那一端」，所以它不能靠深掘批補進來——
+硬塞會讓 `lineType` 的標示失去意義（2026-09-02 才剛建立的分類）。
+
+**記進 `CURATION_WISHLIST.md`，留給往後的廣度批。** 同一份名單也該記
+Silence 廠牌其他進過國際發行的旗艦盤。
