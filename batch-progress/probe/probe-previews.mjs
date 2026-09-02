@@ -66,7 +66,14 @@ for (const b of BATCHES)
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
-const OUT = process.env.PREVIEWS_OUT ? path.resolve(process.env.PREVIEWS_OUT) : path.join(DIR, 'previews.json');
+// 預設寫進「該批自己的」previews.json，不再落到 probe/ 底下的共用累積檔。
+// 2026-09-02：c-60 那次沒帶 PREVIEWS_OUT，49 筆就直接混進了共用檔
+// （該檔的基準內容只有 c51 與 c-SEA），事後得手動挑出來再還原。
+// 單批執行時預設就該落在 batch-progress/<批>/previews.json；
+// 一次跑多批或要匯總時再用 PREVIEWS_OUT 指定。
+const OUT = process.env.PREVIEWS_OUT ? path.resolve(process.env.PREVIEWS_OUT)
+  : BATCHES.length === 1 ? path.join(ROOT, `batch-progress/${BATCHES[0]}/previews.json`)
+  : path.join(DIR, 'previews.json');
 const out = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
 
 const get = async url => {
