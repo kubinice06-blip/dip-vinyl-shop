@@ -614,3 +614,55 @@ let blobRaw = [src.artist, src.album, src.hook, src.note, src.sound,
 
 **四、檢查器該怎麼改，留給本機決定**：把 `researchNotes` 從 blob 拿掉是一行的事，
 但拿掉之後所有既有批次都會冒出新標記，要有人審。屬工具變更，不急。
+
+## 35.（c-58）策展層的 `curatorWhy` 出現五處**會直接寫進簡介的事實錯誤**
+
+這是第四批遇到「研究層推翻策展理由」，但這次的量級不同：**12 處被修正，其中 5 處是硬錯**。
+
+| 卡 | 策展層說什麼 | 實查 |
+|---|---|---|
+| **Nolan Porter《No Apologies》** | 〈If I Could Only Be Sure〉與〈Keep On Keeping On〉是本碟賣點 | **兩首都不在這張 LP 上**（都是 45 轉單曲）。另「Joy Division 現場翻唱」實為借用吉他樂句寫成〈Interzone〉 |
+| **The Voices of East Harlem《Right On Be Free》** | 〈Cashing In〉是本碟固定曲目 | **不在這張碟上**，是 1973 年 Just Sunshine 的單曲 |
+| **Purple Image** | 〈Living in the Ghetto〉佔掉整個 A 面 | 該曲只有 6:32；佔整面的是 B2〈Marching to a Different Drummer〉15:24。且 2004 Radioactive 那版 Discogs 標為 **Unofficial Release** |
+| **Doris Duke《I'm a Loser》** | 錄於 Muscle Shoals 一帶 | **錄於喬治亞州梅肯的 Capricorn Sound Studios** |
+| **Sandra Wright《Wounded Woman》** | 與前兩張同一錄音據點 | 那兩張在梅肯，這張在 Sheffield 的 Broadway Sound——**是兩地** |
+
+**五處都已直接改寫 `curatorWhy`**（那欄餵給 hook 層，留著就會被寫進簡介）。
+
+### 為什麼這批特別嚴重
+
+深掘線的卡**沒有維基條目可以自我校正**。地理批的策展層若寫錯，研究層一查維基就會發現；
+但私壓靈魂盤的資訊只在 Discogs 內頁、再發廠牌的說明頁與收藏文獻裡，
+**策展層很容易把「這位藝人的名曲」與「這張碟的曲目」混為一談**——
+上面前兩筆正是這個形狀：那兩首歌確實是該藝人的代表作，只是不在這張 LP 上。
+
+**裁定：深掘線的策展提示要加一條——
+`why` 若提到具體曲目，必須確認那首曲子在**這張碟的曲目表**上，不是該藝人的名曲清單。**
+c-59 與往後的深掘批照此辦理。
+
+### 研究層補進來的材料比再發史更有料
+
+策展層漏掉、但研究層查到並寫進 facts 的：Chocolate Milk 由 **Allen Toussaint
+與 Marshall Sehorn 製作、錄於 Sea-Saint**；Voices of East Harlem 錄於 **Electric Lady、
+Eddie Kramer 收音**，跨年夜替 Hendrix 暖場；Quazar 是 **Glenn Goins 領軍並在完成前
+過世（24 歲）、Jerome Brailey 接手收尾**；Hyldon 的伴奏是 **Azymuth 全員**；
+Sarah Webster Fabio 的伴奏是**她自己的三個孩子**；Ollie & The Nightingales 的前身團裡
+有少年時期的 **David Ruffin**。
+
+**這印證了 c-58 開批時的判準是對的**：要求 `why` 舉出「可查證的地位來源」逼出了
+再發史，但**真正好的材料是研究層從原盤內頁挖出來的**。往後深掘批的研究層提示
+應明說：再發史是入場券，`facts` 的重心要放在唱片本身。
+
+## 36.（c-58）變音符號：兩張巴西盤統一保留 ç
+
+策展層一張保留 ç（Dom Salvador《Som, Sangue e Raça》）、一張去掉
+（Banda Black Rio《Maria Fumaca》），自承是「避免下游字串處理出錯」，
+但沒說明為何另一張不比照。研究層查到：**MB 原題、Discogs 原盤標題、
+葡文維基條目名都作《Maria Fumaça》。**
+
+**裁定：兩張都保留原文，ASCII 形式歸 `queryAlias`。** 規則早已定案（裁定第 6 條）：
+**盤名採原始發行的寫法**。「怕下游出錯」不是改盤名的理由——那正是 `queryAlias` 存在的目的
+（裁定第 25 條：alias 填外部服務認得的字串）。卡片記的是這張碟叫什麼，
+不是這張碟在某支腳本裡好不好處理。
+
+改名後同步了研究稿的 `key` 與 `album`，`qa-batch research c58` 重跑「key 與卡單完全一致 ✓」。
