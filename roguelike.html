@@ -134,6 +134,54 @@
   .tally .tr .n{width:22px;text-align:right;font-weight:700;}
   .tally .tr.top .lab::after{content:' ★';}
   .tally .verdict{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;line-height:1.8;font-size:11px;}
+  /* ===== 🎮 序章 RPG 場景：上半唱片行舞台、下半勇者鬥惡龍式黑底白框對話窗 ===== */
+  .rpg{border:2px solid var(--black);background:#000;margin:6px 0 12px;}
+  .rpg-stage{position:relative;height:190px;overflow:hidden;background:#efe8d8;}
+  .rpg-wall{position:absolute;inset:0 0 40px 0;background:repeating-linear-gradient(0deg,#efe8d8 0 14px,#e6dfcc 14px 16px);}
+  .rpg-shelf{position:absolute;left:22%;top:30px;width:40%;height:38px;border:2px solid #4a3620;background:
+    repeating-linear-gradient(90deg,#2b2b2b 0 4px,#b8860b 4px 6px,#1f5fae 6px 10px,#111 10px 12px,#c11628 12px 15px,#333 15px 19px,#6a3fa0 19px 21px,#e8e8e8 21px 23px);box-shadow:0 4px 0 #4a3620;}
+  .rpg-shelf.s2{top:84px;width:34%;left:24%;}
+  .rpg-door{position:absolute;left:2%;top:18px;width:14%;height:132px;border:2px solid #4a3620;background:linear-gradient(#cfe3ee,#b9d3e2);}
+  .rpg-door::after{content:'';position:absolute;right:6px;top:60px;width:5px;height:5px;background:#b8860b;}
+  .rpg-floor{position:absolute;left:0;right:0;bottom:0;height:40px;background:repeating-linear-gradient(90deg,#b58a5a 0 22px,#a87d4f 22px 24px);border-top:2px solid #6b4a2b;}
+  .rpg-counter{position:absolute;left:64%;bottom:10px;width:32%;height:46px;background:#6b4a2b;border:2px solid #3f2a16;border-top:8px solid #8d6a45;z-index:3;}
+  .rpg-speaker{position:absolute;left:10px;top:-30px;width:20px;height:24px;background:#111;border:1px solid #444;}
+  .rpg-speaker i{position:absolute;left:5px;width:8px;height:8px;border-radius:50%;background:#555;border:1px solid #888;}
+  .rpg-speaker i:first-child{top:3px;} .rpg-speaker i:last-child{top:13px;}
+  .rpg-tt{position:absolute;right:10px;top:-14px;width:34px;height:8px;background:#222;border:1px solid #555;}
+  .rpg-tt::after{content:'';position:absolute;left:8px;top:-7px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle,#c11628 0 3px,#111 3px 8px);}
+  .rpg-spr{position:absolute;bottom:14px;left:10%;z-index:4;line-height:0;transition:left .9s ease,bottom .9s ease;}
+  .rpg-spr svg{display:block;}
+  .rpg-spr.o.behind{z-index:2;}
+  .rpg-spr.o.busy svg{animation:rpgBusy 1.1s steps(1,end) infinite;}
+  @keyframes rpgBusy{0%,100%{transform:translateY(0);}50%{transform:translateY(2px);}}
+  .rpg-spr.p svg{animation:sprBob 1.3s steps(1,end) infinite;}
+  .rpg-spr.p.shake{animation:rpgShake .5s steps(2,end) 3;}
+  @keyframes rpgShake{0%,100%{transform:translateX(0);}50%{transform:translateX(-4px);}}
+  .rpg-anger{position:absolute;left:30px;top:-16px;font-size:16px;line-height:1;opacity:0;transition:opacity .2s;}
+  .rpg-anger.on{opacity:1;animation:rpgPop .5s steps(3,end) infinite;}
+  @keyframes rpgPop{0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}
+  .rpg-notes{position:absolute;left:66%;bottom:88px;width:60px;height:70px;z-index:5;pointer-events:none;opacity:0;transition:opacity .3s;}
+  .rpg-notes.on{opacity:1;}
+  .rpg-notes span{position:absolute;left:8px;bottom:0;font-size:16px;font-weight:700;color:#111;}
+  .rpg-notes.on span{animation:rpgNote 1.8s ease-out infinite;}
+  .rpg-notes.on span:nth-child(2){left:24px;animation-delay:.6s;} .rpg-notes.on span:nth-child(3){left:40px;animation-delay:1.2s;}
+  @keyframes rpgNote{0%{transform:translateY(0) scale(.7);opacity:0;}15%{opacity:1;}100%{transform:translateY(-56px) translateX(8px) scale(1.1);opacity:0;}}
+  .rpg-panel{background:#fff;padding:10px 10px 8px;border-top:2px solid var(--black);}
+  .rpg-win{position:relative;background:#000;color:#fff;border:4px double #fff;margin:0;padding:16px 16px 22px;min-height:104px;cursor:pointer;user-select:none;-webkit-user-select:none;}
+  .rpg-win.foe{border-color:#ff6b7a;}
+  .rpg-name{position:absolute;left:12px;top:-12px;background:#000;color:#fff;border:2px solid #fff;padding:1px 10px;font-size:11px;font-weight:700;letter-spacing:.1em;}
+  .rpg-name.foe{border-color:#ff6b7a;color:#ff6b7a;}
+  .rpg-text{font-size:13px;line-height:1.95;letter-spacing:.04em;min-height:52px;white-space:pre-wrap;}
+  .rpg-next{position:absolute;right:12px;bottom:6px;font-size:12px;color:#fff;animation:rpgBlink 1s steps(1,end) infinite;visibility:hidden;}
+  @keyframes rpgBlink{0%,100%{opacity:1;}50%{opacity:0;}}
+  .rpg-skip{position:absolute;right:10px;top:-12px;background:#000;color:#aaa;border:2px solid #666;padding:0 8px;font-size:11px;line-height:18px;cursor:pointer;}
+  .rpg-skip:hover{color:#fff;border-color:#fff;}
+  .rpg-menu{margin-top:10px;display:none;}
+  .rpg-opt{padding:6px 8px;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;border:1px solid transparent;}
+  .rpg-opt:hover{border-color:#fff;background:#111;}
+  .rpg-opt.dim{color:#aaa;font-weight:400;}
+
   /* 三張頂點卡三選一（一列＝封面＋該軸介紹）＋嗆聲客人的紅框對話 */
   .acepick{display:flex;gap:10px;align-items:stretch;border:1px solid var(--line);padding:8px;margin:6px 0;cursor:pointer;position:relative;transition:border-color .15s,box-shadow .15s;}
   .acepick:hover{border-color:var(--black);}
@@ -1945,11 +1993,6 @@ function renderRookieHome(){
 const escHtml = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const NAME_MAX = 8;
 const RANDOM_NAMES = ['黑膠新手','B面控','唱針','內圈溝','試聽機','翻箱客','壓片師','封套派','慢轉33','七吋魂','靜電內套','跳針王'];
-const SHOP_INTRO = [
-  '<span class="narr">下著雨。你躲進巷子裡一間小唱片行，門上的鈴鐺響了一聲。</span>',
-  '<span class="narr">櫃台後面的老闆抬起頭，隔著眼鏡看了你三秒。</span><br><span class="say">「第一次來？」</span>',
-  '<span class="say">「我這裡不賣排行榜。」</span><span class="narr">他把眼鏡推上去。</span><br><span class="say">「先說說——你是誰？」</span>',
-];
 // 三張頂點卡的介紹：一張卡＝一個軸（順便把三軸的文化定位、相剋方向、王牌被動講完）
 const SHOP_ACE_INFO = {
   classic:       { title:'殿堂', axisZh:'經典', what:'大家都聽過、被時間驗證的名盤。', star:'這張經典衝到 <b>7 星</b>。',
@@ -1973,26 +2016,16 @@ function shopShellHTML(inner, head){
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
     <div class="shop"><div class="shop-head">🏪 巷子裡的唱片行 <span class="pill">${head||'序章'}</span></div>${inner}</div>`;
 }
-// 1. 推門（三拍旁白，可跳過）
-function renderShopIntro(after, beat){
-  document.body.classList.remove('in-battle');
-  shopState(after); beat=beat||0;
-  const last = beat>=SHOP_INTRO.length-1;
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble">${SHOP_INTRO[beat]}</div></div>
-    <div class="row" style="margin-top:12px">
-      ${last ? `<button class="btn primary" style="flex:1" onclick="renderCharCreate()">先說說你是誰 ▸</button>`
-             : `<button class="btn primary" style="flex:1" onclick="renderShopIntro(null,${beat+1})">繼續 ▸</button><button class="btn" onclick="renderCharCreate()">跳過</button>`}
-    </div>`);
-}
+// 1. 序章入口：先捏角色（RPG 開場先問你是誰），接著進唱片行的 RPG 場景
+function renderShopIntro(after){ shopState(after); renderCharCreate(); }
 // 2. 捏角色：名字＋像素造型（back='home' 時只改名字／造型，存完回首頁；序章裡則接著往下走）
 function renderCharCreate(back){
   document.body.classList.remove('in-battle');
   const s=shopState(); s.back = back||null;
   $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble">${s.back
+    <div class="shop-scene">${s.back?ownerHTML():'<div class="owner">'+pixArtHTML(avatarRows(s.av),56)+'你</div>'}<div class="bubble">${s.back
       ? '<span class="say">「換個造型？隨你。常客的臉我都記得。」</span>'
-      : '<span class="say">「叫什麼？長什麼樣？」</span><span class="narr">他從抽屜拿出一本會員簿。</span><span class="say">「我要記住常客的臉。」</span>'}</div></div>
+      : '<span class="narr">冒險開始之前——先決定你是誰。名字，還有樣子。</span>'}</div></div>
     <div class="avopt"><div class="lab">名字（最多 ${NAME_MAX} 字）</div>
       <div class="row"><input class="nameinp" id="charName" maxlength="${NAME_MAX}" placeholder="黑膠新手" value="${escHtml(s.name)}" oninput="_shop.name=this.value"><button class="btn" title="隨機取名" onclick="charRandomName()">🎲</button></div></div>
     <div class="avwrap">
@@ -2043,7 +2076,7 @@ function charConfirm(){
   META.avatar = Object.assign({}, AVATAR_DEFAULT, s.av);
   saveMeta();
   if(s.back){ _shop=null; renderClassSelect(); return; }
-  renderShopAces();
+  renderShopScene(0);
 }
 function playerLabel(){ return (META && META.name) ? escHtml(META.name) : '你'; }
 // 卡片＋懶載封面（唱片行三個畫面共用）
@@ -2052,11 +2085,10 @@ function shopCardsLazy(cards, prefix){
     const slot=document.getElementById(prefix+i); if(!slot || slot.dataset.ck!==ck) return;
     const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
 }
-// 3. 三張頂點卡三選一：老闆把櫃子最裡面那格的三張拿出來，一張＝一個軸
-function renderShopAces(){
-  document.body.classList.remove('in-battle');
+// ---------- 三張頂點卡三選一的卡列（嵌在 RPG 場景的面板裡） ----------
+function acePickRowsHTML(){
   const s=shopState();
-  const rows = ATTRS.map(a=>{
+  return ATTRS.map(a=>{
     const set=TUT_SETS[a], c=set.ace, info=SHOP_ACE_INFO[a], p=ROOKIE_PROFILES[a];
     return `<div class="acepick ${s.axis===a?'on':''}" id="acePick_${a}" data-ck="${keyOf(c)}" onclick="shopPickAce('${a}')">
       <div class="acecard">${cardHTML(c,{cover:true})}</div>
@@ -2069,15 +2101,19 @@ function renderShopAces(){
       <div class="acecheck">${s.axis===a?'✓':''}</div>
     </div>`;
   }).join('');
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">「${playerLabel()}是吧。」</span><span class="narr">老闆把抹布放下，從櫃子最裡面那格抽出三張。</span><br>
-      <span class="say">「先看這三張——店裡最貴的三張，各是一種極端。挑一張，看你是哪種耳朵。」</span></div></div>
-    <div class="muted" style="margin:10px 0 2px">每張盤有<b style="color:var(--classic)">經典</b>／<b style="color:var(--obscurity)">冷門</b>／<b style="color:var(--accessibility)">硬蕊</b>三軸星數（一般 1～5）。這三張各把一軸衝到 <b>7</b>，是<b style="color:var(--gold)">王牌</b>：不會被相剋，對手要放品味輾壓時打出它＝<b>七星回擊</b>。</div>
-    <div class="muted" style="margin:0 0 6px;font-size:10px">相剋一圈：冷門剋經典 → 經典剋硬蕊 → 硬蕊剋冷門。點卡片選，長按或點封面看介紹。</div>
-    <div id="acePicks">${rows}</div>
-    <div class="row" style="margin-top:10px"><button class="btn primary" id="aceGo" style="flex:1;font-size:13px;padding:12px;${s.axis?'border-color:var(--gold);background:var(--gold)':''}" ${s.axis?'':'disabled'} onclick="shopConfirmAce()">${s.axis?`就這張：${escHtml(TUT_SETS[s.axis].ace.album)} ▸`:'先挑一張'}</button></div>`, '序章 · 櫃台');
+}
+function acePanelHTML(){
+  const s=shopState();
+  return `<div class="rpg-panel" id="rpgPanel">
+    <div class="muted" style="margin:0 0 4px">每張盤有<b style="color:var(--classic)">經典</b>／<b style="color:var(--obscurity)">冷門</b>／<b style="color:var(--accessibility)">硬蕊</b>三軸星數（一般 1～5）。這三張各把一軸衝到 <b>7</b>，是<b style="color:var(--gold)">王牌</b>：不會被相剋，對手要放品味輾壓時打出它＝<b>七星回擊</b>。</div>
+    <div class="muted" style="margin:0 0 6px;font-size:10px">相剋一圈：冷門剋經典 → 經典剋硬蕊 → 硬蕊剋冷門。點卡片選，點封面看介紹。</div>
+    <div id="acePicks">${acePickRowsHTML()}</div>
+    <div class="row" style="margin-top:8px"><button class="btn primary" id="aceGo" style="flex:1;font-size:13px;padding:12px;${s.axis?'border-color:var(--gold);background:var(--gold)':''}" ${s.axis?'':'disabled'} onclick="rpgAceConfirm()">${s.axis?`就是這張：${escHtml(TUT_SETS[s.axis].ace.album)} ▸`:'先挑一張'}</button></div>
+  </div>`;
+}
+function acePanelWire(){
   ATTRS.forEach(a=>{ const el=document.querySelector(`#acePick_${a} .acecard`); if(el){ el.onclick=(e)=>{ e.stopPropagation(); openCardInfo(TUT_SETS[a].ace); }; } });
-  ATTRS.forEach((a,i)=>{ const c=TUT_SETS[a].ace; if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
+  ATTRS.forEach(a=>{ const c=TUT_SETS[a].ace; if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
     const slot=document.getElementById('acePick_'+a); if(!slot || slot.dataset.ck!==ck) return;
     const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
 }
@@ -2085,42 +2121,28 @@ function shopPickAce(axis){
   const s=shopState(); if(!TUT_SETS[axis]) return;
   s.axis = axis;
   ATTRS.forEach(a=>{ const el=document.getElementById('acePick_'+a); if(el){ el.classList.toggle('on', a===axis); const ck=el.querySelector('.acecheck'); if(ck) ck.textContent = a===axis?'✓':''; } });
-  const go=document.getElementById('aceGo'); if(go){ go.disabled=false; go.style.borderColor='var(--gold)'; go.style.background='var(--gold)'; go.textContent=`就這張：${TUT_SETS[axis].ace.album} ▸`; }
+  const go=document.getElementById('aceGo'); if(go){ go.disabled=false; go.style.borderColor='var(--gold)'; go.style.background='var(--gold)'; go.textContent=`就是這張：${TUT_SETS[axis].ace.album} ▸`; }
 }
-function shopConfirmAce(){ const s=shopState(); if(!s.axis) return; renderShopRecs(); }
-// 4. 老闆「內行喔」→ 再推四張走同一條路的盤（固定四張＝教學課表用的那四張）
-function renderShopRecs(){
-  document.body.classList.remove('in-battle');
-  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set){ renderShopAces(); return; }
-  const info=SHOP_ACE_INFO[s.axis], p=ROOKIE_PROFILES[s.axis];
+// 老闆推的四張（嵌在面板裡；固定四張＝教學課表用的那四張）
+function recsPanelHTML(){
+  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set) return '';
   const cards=set.recs.map((c,i)=>`<div id="shopRec${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">
       ${cardHTML(c,{cover:true}).replace('class="card','class="card fresh')}
       <div class="pitch">${set.pitch[i]||''}</div>
       <div class="pickbtns"><button class="btn" onclick="openCardInfo(TUT_SETS['${s.axis}'].recs[${i}])">👁 介紹</button></div>
     </div>`).join('');
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">${info.pick}</span><br>
-      <span class="narr">他轉身在架上抽了四張，疊在【${escHtml(set.ace.album)}】上面。</span><br>
-      <span class="say">「那這四張你一定也要——走的是同一條路，都偏${ATTR_ZH[s.axis]}。」</span></div></div>
-    <div class="charcard" style="margin-top:12px">
-      <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 48)}</div>
-      <div style="flex:1;min-width:0">
-        <div><b style="font-size:13px">${playerLabel()}</b> <span class="pill" style="color:var(--gold);border-color:var(--gold)">${p.name}</span> <span class="muted">${p.tag}</span></div>
-        <div class="statline" style="margin:3px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span><span class="muted">起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}</span></div>
-        <div class="muted" style="font-size:10px;color:var(--gold)">★ ${p.affDesc}</div>
-      </div>
-    </div>
-    <div class="muted" style="margin:6px 0 0">王牌＋這四張＝你的起始牌組（開局直接發到手上）。點「👁 介紹」看簡介與試聽。</div>
+  return `<div class="rpg-panel" id="rpgPanel">
+    <div class="muted" style="margin:0 0 4px">四張都偏<b style="color:var(--${s.axis})">${ATTR_ZH[s.axis]}</b>，跟【${escHtml(set.ace.album)}】走同一條路。王牌＋這四張＝你的起始牌組，開局直接發到手上。</div>
     <div class="shop-picks four">${cards}</div>
-    <div class="row" style="margin-top:10px"><button class="btn" onclick="renderShopAces()">← 換一張王牌</button><button class="btn primary" style="flex:1;border-color:var(--gold);background:var(--gold);font-size:13px;padding:12px" onclick="shopCheckout()">💳 結帳（1 張王牌＋4 張）▸</button></div>`, '序章 · 櫃台');
-  shopCardsLazy(set.recs, 'shopRec');
+    <div class="row" style="margin-top:8px"><button class="btn primary" style="flex:1;border-color:var(--gold);background:var(--gold);font-size:13px;padding:12px" onclick="rpgRecsAccept()">🛍 收下這四張 ▸</button></div>
+  </div>`;
 }
 function starterCards(){
   const pf=META && META.profile; if(!pf) return [];
   const norm=c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
   return (pf.ace?[pf.ace]:[]).concat(pf.albums||[]).map(norm);
 }
-// 老闆賣你的五張直接進收藏（永久；重逛只補還沒有的）
+// 老闆給你的五張直接進收藏（永久；只補還沒有的）
 function mergeStarterIntoCollection(m){
   if(!m || !m.profile) return;
   if(!Array.isArray(m.collection)) m.collection=[];
@@ -2130,31 +2152,140 @@ function mergeStarterIntoCollection(m){
     m.collection.push({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null}); owned.add(keyOf(c)); }
 }
 function shopCheckout(){
-  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set) return;
+  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set) return false;
   const norm=c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
   META.profile = { axis:s.axis, at:Date.now(), ace:norm(set.ace), albums:set.recs.map(norm) };
   mergeStarterIntoCollection(META);
   saveMeta();
-  renderShopCustomer();
+  return true;
 }
-// 5. 結完帳，一個客人進來嗆你品味差 → 老闆：要比就用盤比（＝老闆帶打教學，第一場的對手就是他）
-function renderShopCustomer(){
+
+// =========================================================================
+//  🎮 唱片行序章的 RPG 場景（勇者鬥惡龍式：上半場景、下半黑底白框對話窗，點一下進下一段，右下角 ▼ 閃爍）
+//  beats＝一段段對話；stage 只寫「這一段有變化的站位／特效」，其餘沿用上一段。ui＝這一段要玩家操作的面板。
+// =========================================================================
+const RPG_POS = {   // 站位（left%／bottom px），舞台 100%×190px；櫃台在右側，老闆站櫃台後面（腳被櫃台擋住）
+  p:{ door:[9,14], shelf:[36,14], mid:[50,14], leave:[22,14] },
+  o:{ counter:[71,44], floor:[58,14], between:[40,14] },
+  f:{ out:[-30,14], door:[5,14] },
+};
+const RPG_BEATS = [
+  { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out'} },
+  { who:'', text:'櫃台後面的老闆抬頭看了你一眼——又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
+  { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'shelf'} },
+  { who:'', text:'這時候，店裡的音響傳出一段旋律。', stage:{notes:true,oBusy:false} },
+  { who:'', text:'……很迷人。你停下腳步，不自覺跟著點起頭來。' },
+  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤——櫃台上，還攤著兩張剛拆封的。', stage:{p:'mid'} },
+  { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段——你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
+  { who:'老闆', text:'「……你眼光真不錯。」老闆終於抬起頭來，看著你。', stage:{notes:false} },
+  { who:'老闆', text:'「這張是我的私人收藏。今天——讓給你。」' },
+  { who:'', text:'老闆走出櫃檯，在店裡翻翻找找。', stage:{o:'floor'} },
+  { who:'老闆', text:'「這四張也很適合你。跟你有緣——收下吧。」', ui:'recs', prompt:'（老闆把四張盤遞給你。）' },
+  { who:'', text:'你抱著五張唱片，心滿意足，正準備離開。', stage:{p:'leave',o:'counter'} },
+  { who:'', text:'這時，門開了。', stage:{f:'door'} },
+  { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
+  { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
+  { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
+  { who:'老闆', text:'「兩位、兩位。」老闆從櫃台後面走了出來。', stage:{o:'between',anger:false} },
+  { who:'老闆', text:'「既然雙方都不服氣——不如，來一場品味對決如何？」', ui:'choice' },
+];
+let _rpg=null;
+function renderShopScene(beat){
   document.body.classList.remove('in-battle');
-  const s=shopState(); const pf=META.profile; const p=ROOKIE_PROFILES[pf.axis];
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="narr">老闆把五張盤裝進紙袋，在會員簿上寫下：</span><b style="color:var(--gold)">${playerLabel()}——${p.name}</b><span class="narr">。${p.desc}</span></div></div>
-    <div class="shop-scene" style="margin-top:12px"><div class="owner">${pixArtHTML(SPR.e0, 56)}客人</div><div class="bubble foe">
-      <span class="narr">門上的鈴鐺又響了。一個戴著耳機的客人走進來，眼睛掃過你手上的紙袋。</span><br>
-      <span class="say">「${escHtml(pf.ace.album)}？」</span><span class="narr">他笑了一聲。</span><span class="say">「裝內行喔。這種品味也敢在這家店結帳？」</span></div></div>
-    <div class="shop-scene" style="margin-top:12px">${ownerHTML()}<div class="bubble"><span class="say">「……別在我店裡吵。要比就用盤比。」</span><span class="narr">老闆看了你一眼。</span><span class="say">「我在旁邊講，你照做。」</span></div></div>
-    <button class="btn primary" style="width:100%;margin-top:14px;border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px" onclick="shopLeave('tutorial')">⚔ 跟他比（老闆帶打・教學兩場）</button>
-    <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="shopLeave('play')">⏭ 不理他，直接開打</button>
-    <div class="muted" style="font-size:10px;line-height:1.9;margin-top:10px">
-      🎧 帶打兩場用的就是紙袋裡這五張；老闆講的兩場照他的套路走，第三場起換回你自己的三圍與專長。<br>
-      🔒 樂歷 <b>Lv.3「出師」</b>後改為自選流派（守舊／挖掘／異端）；名字與造型會一直跟著你。</div>`, '結帳');
+  shopState();
+  if(_rpg && _rpg.timer) clearInterval(_rpg.timer);
+  _rpg = { beat:beat||0, typing:false, timer:null, stage:{p:'door',o:'counter',f:'out',notes:false,anger:false,oBusy:false}, shown:'' };
+  const pl = avatarRows(META.avatar);
+  $app.innerHTML = topbarHTML() + `
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><span class="pill" style="margin-left:auto">🏪 巷子裡的唱片行 · 序章</span></div>
+    <div class="rpg" id="rpg">
+      <div class="rpg-stage" id="rpgStage">
+        <div class="rpg-wall"></div><div class="rpg-shelf"></div><div class="rpg-shelf s2"></div><div class="rpg-door"></div>
+        <div class="rpg-spr o" id="rpgO">${pixArtHTML(SPR.owner, 40)}</div>
+        <div class="rpg-counter"><div class="rpg-speaker"><i></i><i></i></div><div class="rpg-tt"></div></div>
+        <div class="rpg-notes" id="rpgNotes"><span>♪</span><span>♫</span><span>♪</span></div>
+        <div class="rpg-spr p" id="rpgP">${pixArtHTML(pl, 40)}<div class="rpg-anger" id="rpgAnger">💢</div></div>
+        <div class="rpg-spr f" id="rpgF">${pixArtHTML(SPR.e0, 40)}</div>
+        <div class="rpg-floor"></div>
+      </div>
+      <div id="rpgPanelWrap"></div>
+      <div class="rpg-win" id="rpgWin" onclick="rpgTap()">
+        <div class="rpg-name" id="rpgName"></div>
+        <button class="rpg-skip" title="快轉到下一個要你選的地方" onclick="event.stopPropagation();rpgSkip()">⏩</button>
+        <div class="rpg-text" id="rpgText"></div>
+        <div class="rpg-menu" id="rpgMenu"></div>
+        <div class="rpg-next" id="rpgNext">▼</div>
+      </div>
+    </div>`;
+  rpgShow(_rpg.beat, true);
 }
+function rpgApplyStage(st){
+  Object.assign(_rpg.stage, st||{});
+  const S=_rpg.stage;
+  const put=(id,key,pos)=>{ const el=document.getElementById(id); const p=RPG_POS[key][pos]; if(el&&p){ el.style.left=p[0]+'%'; el.style.bottom=p[1]+'px'; } };
+  put('rpgP','p',S.p); put('rpgO','o',S.o); put('rpgF','f',S.f);
+  const o=document.getElementById('rpgO'); if(o){ o.classList.toggle('busy', !!S.oBusy); o.classList.toggle('behind', S.o==='counter'); }
+  const n=document.getElementById('rpgNotes'); if(n) n.classList.toggle('on', !!S.notes);
+  const a=document.getElementById('rpgAnger'); if(a) a.classList.toggle('on', !!S.anger);
+  const p=document.getElementById('rpgP'); if(p){ p.classList.toggle('shake', !!S.anger); }
+}
+function rpgShow(i, instant){
+  const b=RPG_BEATS[i]; if(!b){ return; }
+  _rpg.beat=i;
+  rpgApplyStage(b.stage);
+  const name=document.getElementById('rpgName'); if(name){ name.textContent=b.who||''; name.style.display=b.who?'':'none'; name.className='rpg-name'+(b.who==='男子'?' foe':''); }
+  const menu=document.getElementById('rpgMenu'); if(menu){ menu.innerHTML=''; menu.style.display='none'; }
+  const wrap=document.getElementById('rpgPanelWrap'); if(wrap) wrap.innerHTML='';
+  const win=document.getElementById('rpgWin'); if(win) win.classList.toggle('foe', b.who==='男子');
+  rpgType(b.text, ()=>{ if(b.ui) rpgOpenUI(b); });
+}
+// 逐字出現；點一下直接跑完
+function rpgType(text, done){
+  const el=document.getElementById('rpgText'); const nx=document.getElementById('rpgNext'); if(!el) return;
+  if(_rpg.timer) clearInterval(_rpg.timer);
+  _rpg.typing=true; _rpg.full=text; _rpg.onDone=done||null; let n=0; el.textContent=''; if(nx) nx.style.visibility='hidden';
+  _rpg.timer=setInterval(()=>{ n++; el.textContent=text.slice(0,n); if(n>=text.length) rpgTypeDone(); }, 34);
+}
+function rpgTypeDone(){
+  if(_rpg.timer){ clearInterval(_rpg.timer); _rpg.timer=null; }
+  const el=document.getElementById('rpgText'); if(el) el.textContent=_rpg.full||'';
+  _rpg.typing=false;
+  const b=RPG_BEATS[_rpg.beat];
+  const nx=document.getElementById('rpgNext'); if(nx) nx.style.visibility=(b&&b.ui)?'hidden':'visible';
+  if(_rpg.onDone){ const f=_rpg.onDone; _rpg.onDone=null; f(); }
+}
+function rpgTap(){
+  if(!_rpg) return;
+  if(_rpg.typing){ rpgTypeDone(); return; }
+  const b=RPG_BEATS[_rpg.beat];
+  if(b && b.ui) return;   // 等玩家在面板／選單上操作
+  rpgShow(_rpg.beat+1);
+}
+function rpgSkip(){
+  if(!_rpg) return;
+  let i=_rpg.beat; if(RPG_BEATS[i] && RPG_BEATS[i].ui && !_rpg.typing) return;
+  // 把中間略過的站位變化一次套上，跳到下一個要操作的段落
+  while(i<RPG_BEATS.length-1 && !RPG_BEATS[i].ui){ i++; rpgApplyStage(RPG_BEATS[i].stage); }
+  if(_rpg.timer) clearInterval(_rpg.timer);
+  rpgShow(i); rpgTypeDone();
+}
+function rpgOpenUI(b){
+  const wrap=document.getElementById('rpgPanelWrap'); const el=document.getElementById('rpgText');
+  if(b.ui==='aces'){ if(wrap){ wrap.innerHTML=acePanelHTML(); acePanelWire(); } if(el) el.textContent=b.text+' '+(b.prompt||''); }
+  else if(b.ui==='recs'){ if(wrap){ wrap.innerHTML=recsPanelHTML(); shopCardsLazy(TUT_SETS[shopState().axis].recs,'shopRec'); } if(el) el.textContent=b.text+' '+(b.prompt||''); }
+  else if(b.ui==='choice'){
+    const menu=document.getElementById('rpgMenu'); if(!menu) return;
+    menu.style.display='block';
+    menu.innerHTML=`<div class="rpg-opt" onclick="event.stopPropagation();rpgChoose('tutorial')">▶ 接受對決（老闆帶打・教學兩場）</div>
+      <div class="rpg-opt dim" onclick="event.stopPropagation();rpgChoose('play')">▶ 轉身離開（跳過教學，直接開打）</div>`;
+  }
+  if(wrap && wrap.firstElementChild){ try{ wrap.firstElementChild.scrollIntoView({block:'nearest'}); }catch(e){} }
+}
+function rpgAceConfirm(){ const s=shopState(); if(!s.axis) return; rpgShow(_rpg.beat+1); }
+function rpgRecsAccept(){ if(!shopCheckout()) return; rpgShow(_rpg.beat+1); }
+function rpgChoose(how){ if(!META.profile) return; shopLeave(how); }
 function shopLeave(how){
-  _shop=null;
+  _shop=null; if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
   if(how==='tutorial'){ startTutorialGuarded(); return; }
   rookieQuickStart();
 }
@@ -2578,19 +2709,19 @@ const _tc=(artist,album,c,o,a,ace)=>({artist,album,classic:c,obscurity:o,accessi
 // f1＝第一場四手用的牌（比星數／冷剋經／經剋硬／硬剋冷），f2＝第二場五手（經／冷／擋大絕／經／冷）；'ace' 指頂點卡、數字指 recs 索引。
 // legacy＝沒逛過唱片行（舊玩家、出師後重玩教學）的原版固定牌組：沒王牌 → 第二場第 3 手教割捨防禦。
 const TUT_SETS = {
-  classic: { who:['嗆你的客人','客人的朋友'],
+  classic: { who:['嗆你的男子','男子的朋友'],
     ace:_tc('Radiohead','OK Computer',7,1,1,'hall'),
     recs:[ _tc('David Bowie','Low',4,3,3), _tc('Joy Division','Unknown Pleasures',4,3,3), _tc('Sonic Youth','Daydream Nation',4,3,3), _tc('Nick Drake','Pink Moon',4,3,2) ],
     pitch:['「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」','「封面你八成在 T 恤上看過。裡面的東西比 T 恤冷得多。」','「雙碟，吉他調成你沒聽過的音。年輕人的噪音教科書。」','「一個人、一把吉他、不到半小時。他生前沒幾個人買。」'],
     fillers:[ _tc('Television','Marquee Moon',4,3,2), _tc('Kraftwerk','Trans-Europe Express',4,3,2), _tc('Pixies','Surfer Rosa',4,2,2), _tc('Black Sabbath','Paranoid',4,2,2) ],
     f1:['ace',0,1,2], f2:[0,1,'ace',2,3] },
-  obscurity: { who:['嗆你的客人','客人的朋友'],
+  obscurity: { who:['嗆你的男子','男子的朋友'],
     ace:_tc('Midori Takada','Through the Looking Glass',1,7,1,'pearl'),
     recs:[ _tc('Vashti Bunyan','Just Another Diamond Day',3,5,2), _tc('Karen Dalton','In My Own Time',3,5,3), _tc('Bark Psychosis','Hex',2,5,4), _tc('Big Star','Third/Sister Lovers',3,4,3) ],
     pitch:['「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」','「她不寫歌，唱別人的歌卻比原唱還像自己的。」','「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」','「錄完沒人敢發，擱了好幾年。崩潰的人做出來的美。」'],
     fillers:[ _tc('Duster','Stratosphere',2,5,3), _tc('Codeine','Frigid Stars',2,5,3), _tc('Judee Sill','Judee Sill',3,5,3), _tc('Broadcast','Tender Buttons',2,4,3) ],
     f1:['ace',0,1,2], f2:[1,0,'ace',3,2] },
-  accessibility: { who:['嗆你的客人','客人的朋友'],
+  accessibility: { who:['嗆你的男子','男子的朋友'],
     ace:_tc('Merzbow','Pulse Demon',1,1,7,'heresy'),
     recs:[ _tc('The Velvet Underground','White Light/White Heat',4,4,5), _tc('Scott Walker','Tilt',3,4,5), _tc('Can','Tago Mago',4,4,4), _tc('Suicide','Suicide',3,4,4) ],
     pitch:['「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」','「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」','「雙碟。日本主唱是在慕尼黑街頭被他們撿到的。」','「一台鼓機、一台琴、一個人在吼。1977 年的觀眾拿東西丟他們。」'],

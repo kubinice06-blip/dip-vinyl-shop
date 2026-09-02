@@ -1,33 +1,30 @@
 # dip vinyl 專案備忘錄
 
-### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：唱片行序章（捏角色 → 三張頂點卡三選一 → 老闆再推四張 → 客人嗆聲 → 老闆帶打）
+### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：RPG 序章（捏角色 → 三張頂點卡三選一 → 老闆送四張 → 男子嗆聲 → 品味對決＝老闆帶打）
 
-雲端工作階段（分支 `claude/card-game-character-creation-xpgz1f`、草稿 PR #12，**未合併 main、未部署**，店主要求先調整好再更新）。
-第一版是「老闆依問答抽三張、星數加總決定耳朵」，店主改成現在這條流程，第一版已整段換掉。
+雲端工作階段（分支 `claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main、未部署**；Cloudflare 有分支預覽站）。
 
-**流程**：新玩家（Lv.3 出師前且 `META.profile` 為空）進 `roguelike.html` 先走序章：推門三拍旁白 → **捏角色**（名字 ≤8 字、像素造型：
-頭型 10／髮帽色 11／膚色 4／上衣 12／褲子 8，沿用 16×16 `sprRows` 零件）→ **三張頂點卡三選一**（殿堂《OK Computer》／流亡《Through the Looking Glass》／
-異端《Pulse Demon》，每張旁邊寫該軸定位、王牌被動、相剋方向與「選它你是哪種耳朵」）→ 老闆「選這張？內行喔」再推**固定四張**同軸的盤（附推薦語）→
-結帳（五張進收藏、寫 `META.profile={axis,ace,albums}`）→ **一個戴耳機的客人進來嗆你品味差** → 老闆「要比就用盤比」→ 老闆帶打教學（第一場對手就是他）或直接開打。
+**做了什麼**：新玩家（Lv.3 出師前且 `META.profile` 為空）進 `roguelike.html` 先走序章：捏角色（名字 ≤8 字、像素造型五項可換）→
+勇者鬥惡龍式 RPG 場景（上半唱片行舞台、下半黑底白雙框對話窗，逐字出現、點一下下一段、右下 ▼ 閃爍、⏩ 快轉）：
+推門 → 老闆看一眼繼續做事 → 自己逛 → 音響傳出旋律 → 抬頭見老闆在放唱片 → **三張頂點卡三選一**（殿堂／流亡／異端各附三軸介紹）→
+「你眼光真不錯，這張是我的私人收藏，今天讓給你」→ 老闆走出櫃台翻找 → 「這四張也很適合你，收下吧」（固定四張）→ 準備離開 →
+男子進門「這品味也敢出來丟臉？」→ 💢 → 老闆緩頰「來一場品味對決如何？」→ 接受對決（教學兩場，第一場對手＝那名男子）／轉身離開。
+選的王牌決定耳朵（老派耳朵／挖盤狂／噪音信徒＝三流派輕量版，決定出師前三圍與專長）。
 
-**教學改成依牌組生成**：`TUT_SETS` 四套（三套唱片行＋ `legacy` 原版固定牌組給沒逛過唱片行的舊玩家），`tutBuild(setKey, atk)` 生兩場課表；
-課還是原本那些（比星數／三種相剋／輾壓；連段／被剋痛／擋大絕／收尾），差別在有王牌的三套第二場第 3 手改教**七星回擊**（反傷 7＋攻）而不是割捨。
-敵方 HP 由課表用到的牌反推，**含敵方出經典那幾手各回 1 滴**（第一次漏算這一滴，殿堂那套第二場差一滴沒收掉，實測抓到才補）。
-教學兩場鎖守舊派三圍（攻 2 會在第一場第 4 手打死對手），第二場打完 `applyRookieProfile()` 換回耳朵；教學後牌組＝五張＋雜牌。
-`autoSeeds()` 五張必在起手；`?tutorial=1` 遇新玩家先走序章。戰鬥小人用自訂造型、名牌顯示名字；死亡／續玩／規則／專長 log 走 `roleNameOf()`。
-不做「再逛唱片行」（重逛等於免費集滿三張王牌）。
+**教學改成依牌組生成課表**（`TUT_SETS`／`tutBuild`）：三套「王牌＋四張」＋ legacy 原版固定牌組。有王牌的三套第二場第 3 手改教七星回擊。
+敵方 HP 由課表反推——**實測抓到敵方每出一手經典會回 1 滴（屬性效果在扣血之後才回），第一版漏算，殿堂那套第二場差一滴沒收掉**；補上後四套兩場都在第五手收尾。
+教學兩場鎖守舊派三圍、第二場打完換回耳朵；教學後牌組＝五張＋雜牌；`autoSeeds()`＝那五張；戰鬥小人用自訂造型、名牌顯示名字。
 
-**主要檔案**：`roguelike.html`（CSS `.shop*`／`.acepick`／`.bubble.foe`、`PIX_PAL` 補四色、`SPR.owner`、`AVATAR_*`／`avatarRows`、`ROOKIE_PROFILES`、
-`SHOP_ACE_INFO`、`renderShopIntro`→`renderCharCreate`→`renderShopAces`→`renderShopRecs`→`shopCheckout`→`renderShopCustomer`、
-`TUT_SETS`／`tutBuild`／`tutScript`／`startTutorialRun`，以及 `loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`winFight`／`nextFight`／`mountSprites`／
-`renderBattle`／`renderDeath`／`autoSeeds`／`bootstrap` 掛勾）、`ROGUELIKE_DESIGN.md`（§2.0）、`pvp.html`（試煉卡文案）。
+**主要檔案**：`roguelike.html`（CSS `.rpg*`／`.acepick`／`.shop*`、`PIX_PAL` 補四色、`SPR.owner`、`AVATAR_*`／`avatarRows`、`ROOKIE_PROFILES`／`SHOP_ACE_INFO`、
+`TUT_SETS`／`tutBuild`／`tutScript`、`RPG_BEATS`／`renderShopScene`／`rpg*`、`renderCharCreate`、`applyRookieProfile`／`roleOf`，
+以及 `loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`startTutorialRun`／`winFight`／`mountSprites`／`renderBattle`／`renderDeath`／`bootstrap` 掛勾）、
+`ROGUELIKE_DESIGN.md` §2.0、`pvp.html`（試煉卡文案）。
 
-**驗證**：兩段 script 各過 `node --check`；Playwright（390×844、本機 http.server）三張王牌各走一次完整序章，並用腳本照課表把老闆帶打兩場打完：
-四套（含 legacy）**兩場都在第五手收尾**（第 4 手打完敵方剩 2、第 5 手打死），第二場王牌七星回擊反傷 8、被剋那手玩家掉 3；教學結束後
-`RUN._tutorial=false`、三圍換成耳朵（噪音信徒攻 2、挖盤狂勢 2）、老闆結業語有宣告；教學後牌組＝五張＋五張雜牌；直接開打起手＝五張。
-沙盒無外網，封面與 Firebase 都被擋，頁面靠既有 fallback 照常運作；線上封面與簡介尚未在真環境看過。
+**驗證**：兩段 script 過 `node --check`；Playwright 390×844——序章 18 段對話走完（站位／音符／💢 特效狀態逐段核對）、三張王牌各走一次並用腳本照課表打完兩場
+（四套含 legacy 都在第五手收尾）、教學後三圍換成耳朵、直接開打起手＝五張、⏩ 快轉落在三選一。沙盒無外網，封面與 Firebase 被擋，頁面靠既有 fallback 照常。
 
-**待店主決定**：十二張推薦盤的老闆推薦語與客人嗆聲台詞請過一遍；既有 Lv.1～2 舊訪客下次進來會被帶進序章一次（會白拿一張王牌）。
+**待店主決定**：流亡與異端的王牌要換成更具代表性的（候選名單已列在對話中）；十二張推薦盤推薦語與對話台詞請過一遍；
+既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）。
 
 ### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
 
