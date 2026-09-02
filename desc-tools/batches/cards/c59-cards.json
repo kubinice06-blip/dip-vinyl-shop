@@ -613,7 +613,7 @@
    "jazz"
   ],
   "label": "URC",
-  "rgMbid": "404e6f08-fc84-4b89-86c6-64a72d57d018",
+  "rgMbid": "eda8736c-0f54-48b9-adc9-40e8ea165cce",
   "identitySource": "pinned",
   "curatorWhy": "1969 年夏在早稻田大學封鎖中的校園裡錄下的現場，山下洋輔、中村誠一、森山威男的三重奏首作。它同時是日本自由爵士的起點錄音與那個時期學運現場的直接紀錄，Super Fuji Discs 於 2022 年重發黑膠。池中山下只有 1976 年的《Chiasma》，1969 年這張不在。",
   "curatorRisk": "標題混用拉丁字母與漢字（Dancing 古事記），外部服務常寫成 DANCING KOJIKI 或《ダンシング古事記》，字串比對要備多種寫法。掛名為樂團名（山下洋輔トリオ）而非個人，池中既有卡掛的也是樂團名，去重無虞但下游若正規化掉「トリオ」會與山下個人名下作品混淆。MB 只登錄 1969 JP 一個 release。",
@@ -626,7 +626,9 @@
   "group": "a",
   "queryAlias": "Yosuke Yamashita Trio Dancing Kojiki",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Dancing 古事記",
+  "mbFirstRelease": "1969"
  },
  {
   "key": "desc4:佐藤允彦とサウンド・ブレイカーズ|Amalgamation",
@@ -639,7 +641,7 @@
    "rock"
   ],
   "label": "Liberty",
-  "rgMbid": "30e75564-cea0-4e26-821a-4bf40fadca09",
+  "rgMbid": "06c0e7e9-af07-4c43-bd84-36046570eea4",
   "identitySource": "pinned",
   "curatorWhy": "佐藤允彦與 Sound Breakers 的一次性編制，把電氣化爵士、噪音拼貼與 Teo Macero 式剪接混在一起。Julian Cope 的專書《Japrocksampler》把它排進 Top 50 第七名，Phoenix Records 於 2010-12-06 重發 CD。池中佐藤允彦名下零張，這是他 1970 年代初實驗期最常被寫到的一張。",
   "curatorRisk": "MB 的 release-group 標題是全大寫加日文副標《AMALGAMATION 恍惚の昭和元禄》，卡片採通行短名《Amalgamation》，字串比對必須備長標題。掛名在 MB 是樂團實體 佐藤允彦とサウンド・ブレイカーズ（MBID 30e75564），與佐藤個人實體（04bbec22）分開建檔，用個人名查 release-group 會零命中。外部服務多寫作 Masahiko Satoh & Soundbreakers。",
@@ -652,7 +654,9 @@
   "group": "a",
   "queryAlias": "Masahiko Satoh & Soundbreakers",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "AMALGAMATION 恍惚の昭和元禄",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Jemeel Moondoc & Muntu|The Evening of the Blue Men",
@@ -664,7 +668,7 @@
    "jazz"
   ],
   "label": "Muntu",
-  "rgMbid": "1cc7aca1-5699-4db0-80ed-77a4be9d1135",
+  "rgMbid": "9ac3dc33-3cc1-488b-b215-0c57d8139376",
   "identitySource": "pinned",
   "curatorWhy": "1979 年錄於紐約 St. Mark's Church，由 Moondoc 自營的 Muntu 廠牌發行；四重奏是 Moondoc、Roy Campbell、William Parker、Rashid Bakr，等於 1980 年代紐約下城即興圈的預告。NoBusiness Records 於 2009 年把 Muntu 全部錄音做成三 CD 盒裝《Muntu Recordings》，附一百一十五頁專書、論文、照片與完整 sessionography，是這條線最完整的考古出版。",
   "curatorRisk": "掛名為個人加樂團（MB artist-credit 為 Jemeel Moondoc & Muntu），外部服務多半只掛 Jemeel Moondoc；MB 另有多筆 Moondoc 名下的 Quartet／Trio／Quintet 實體，用團名查會分散。MB 只有 1979 US 一個 release，NoBusiness 盒裝未建成本 RG 的 release。",
@@ -677,7 +681,9 @@
   "group": "a",
   "queryAlias": "Jemeel Moondoc",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "The Evening of the Blue Men",
+  "mbFirstRelease": "1979"
  },
  {
   "key": "desc2:Charles Tyler|Saga of the Outlaws",
@@ -689,7 +695,7 @@
    "jazz"
   ],
   "label": "Nessa",
-  "rgMbid": "c690e1ca-87d7-4d4e-99ca-74b7b77f2ec8",
+  "rgMbid": "b25fcb90-edd9-4cbe-bb37-0fcb17d2704d",
   "identitySource": "pinned",
   "curatorWhy": "1976-05-20 錄於 Sam Rivers 的 Studio Rivbea，與《Wildflowers》那批 loft jazz 錄音出自同一段時期的同一個場地，1978 年由 Nessa Records 發行。維基百科有獨立條目；All About Jazz 的 Clifford Allen 與 Dusted Magazine 都寫過樂評，通常被視為 Tyler 最好的一張。樂手含 Earl Cross、Ronnie Boykins、John Ore 與 Steve Reid。",
   "curatorRisk": "掛名 Charles Tyler 在 MB 上有三個同名藝人實體（爵士薩克斯風手 c690e1ca、路易斯安那藍調歌手 70f02e73、大提琴手 2b06e6ab），字串搜尋必定歧義，必須鎖 MBID。MB 另有 Charles Tyler Ensemble 與 Charles Tyler Quartet 兩個團體實體，本作掛在個人實體下。",
@@ -702,7 +708,9 @@
   "group": "a",
   "queryAlias": "Charles Tyler Ensemble",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Saga of the Outlaws",
+  "mbFirstRelease": "1978"
  },
  {
   "key": "desc2:Chico Freeman|Kings of Mali",

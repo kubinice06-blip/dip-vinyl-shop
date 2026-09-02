@@ -10,7 +10,7 @@
    "folk"
   ],
   "label": "Yavuz Plak",
-  "rgMbid": "802247cc-77a2-4671-a02d-ad25bf90e23c",
+  "rgMbid": "b6b7491e-66c2-4c34-8db5-8e59ea227eb7",
   "identitySource": "pinned",
   "curatorWhy": "Cem Karaca 與 Dervişan 時期的代表作，也是 Anadolu rock 從迷幻搖滾轉向社會題材民謠搖滾的分水嶺；卡池此前完全沒有 Cem Karaca，而他與 Moğollar 是這條線最不可省略的兩個名字。MB 三個標籤同時給 folk rock／psychedelic rock／rock，正好描述這張的位置。",
   "curatorRisk": "MB 上有兩個同名 release-group：19588a8d（first-release 1975-01-01，secondary-types Album/Compilation+Demo，含 2014 西班牙 Pharaway／Guerssen 再版）與本卡所釘的 b6b7491e（1975-10-01，secondary 僅 Compilation，唯一 release 為 1975 土耳其原盤 Yavuz Plak LP. 1012）。依 c-53 裁定第 3 條避開帶 Demo 的那筆，改以帶土耳其原盤目錄號的為準。標題尾端的問號在部分資料庫被省略成「Nem Kaldı」，去重時要摺掉標點。此盤由 45 轉單曲集結而成，MB 因此掛 secondary Compilation，依 ALBUM_ONBOARDING §5.6 末段照一般 Album 處理。",
@@ -23,7 +23,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Nem Kaldı?",
+  "mbFirstRelease": "1975-10-01"
  },
  {
   "key": "desc2:Cem Karaca|Yoksulluk Kader Olamaz",
@@ -86,7 +88,7 @@
    "folk"
   ],
   "label": "Concert Hall",
-  "rgMbid": "76693ade-bd4a-4338-b2b7-3a494b1fb5fe",
+  "rgMbid": "28af8126-1279-326d-aead-5a4770a8e2f7",
   "identitySource": "pinned",
   "curatorWhy": "Moğollar 旅法時期在法國錄製並發行的專輯，是 Anadolu rock 第一次以整張唱片的形式在西歐正式出版，也把土耳其民謠素材與搖滾編制的結合帶到土耳其以外的聽眾面前。卡池此前完全沒有 Moğollar，而這張是他們最常被引用的一張。",
   "curatorRisk": "身分風險本批最高的一筆之一。MB 的 artist-credit 是法文藝名「Les Mogol」而非「Moğollar」——用團名去打字串搜尋必定落空，只能靠 artist MBID browse 或 rgMbid（呼應 c-53 裁定第 10 條）。盤名為法文，依 c-53 裁定第 6 條「採原始發行的寫法」保留法文；標題中的 à 帶重音符，與 MB 標題一致；串流平台常見去重音的 a，兩種寫法都要試。掛名依裁定第 11 條用通行名 Moğollar，credit 變體歸 queryAlias。",
@@ -99,7 +101,9 @@
   "group": "a",
   "queryAlias": "Les Mogol",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Danses et rythmes de la Turquie d'hier à aujourd'hui",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Moğollar|Anadolu Pop",
@@ -163,7 +167,7 @@
    "rock"
   ],
   "label": "İstanbul Plak",
-  "rgMbid": "779fce7e-c99e-4d0c-bfb1-af7aa1c34e80",
+  "rgMbid": "820a63a3-44a7-3fa1-9b7f-71442276ed13",
   "identitySource": "pinned",
   "curatorWhy": "Erkin Koray 的第一張長片，把他 1960 年代末以來的 45 轉錄音整合成一張唱片，是聽眾接觸 Anadolu rock 電吉他語彙最早的完整入口。卡池已有 1974 年《Elektronik Türküler》，這張補的是它之前的階段。",
   "curatorRisk": "自我同名卡；MB 上另有 1993 年同名 release-group 06df941e-56ac-32e1-b7f6-edee36d28a9d（Album/[Compilation]），兩筆都掛 Erkin Koray、都是合輯性質，只能靠年份與 İstanbul Plak 目錄號 SS LP 8 區分。此 release-group 唯一另一個 release 是 2006 韓國 World Psychedelia 的 bootleg。",
@@ -176,7 +180,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Erkin Koray",
+  "mbFirstRelease": "1973"
  },
  {
   "key": "desc2:Erkin Koray|Erkin Koray Tutkusu",
@@ -214,7 +220,7 @@
    "folk"
   ],
   "label": "Yavuz ve Burç Plakçılık",
-  "rgMbid": "33736d61-e2a2-4070-88dd-ad2e173d174c",
+  "rgMbid": "081773e0-de8c-4a41-911c-02e6f5f0472f",
   "identitySource": "pinned",
   "curatorWhy": "Barış Manço 與 Kurtalan Ekspres 合作期的核心專輯之一，把土耳其諺語式的歌名與民謠旋律接到搖滾編制上，是他日後成為全國性人物的音樂基礎。2012 年由西班牙 Guerssen Records 完整再版，是 Anadolu rock 在歐洲收藏市場的標準品項。",
   "curatorRisk": "MB 標 secondary-type Compilation（1970 年代土耳其長片多由 45 轉集結），依 ALBUM_ONBOARDING §5.6 末段照一般 Album 處理。專輯名長且含 ı（無點小寫 i）與 ğ，MB 與串流平台常見去符號寫法「Sakla Samani Gelir Zamani」，兩種都要試。卡池已有《2023》(1975)，本批加兩張後 Barış Manço 共三張，達到單一藝人上限。",
@@ -227,7 +233,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Sakla Samanı Gelir Zamanı",
+  "mbFirstRelease": "1976"
  },
  {
   "key": "desc2:Barış Manço|Sarı Çizmeli Mehmet Ağa",
@@ -266,7 +274,7 @@
    "rock"
   ],
   "label": "",
-  "rgMbid": "5e51e09d-0713-4595-b858-d7e887238825",
+  "rgMbid": "332319cd-2bdc-41b5-b430-f6496c7188fb",
   "identitySource": "pinned",
   "curatorWhy": "Selda Bağcan 的第一張長片，也是她把 Anadolu 民謠曲目以電聲編制重新錄製的起點；卡池已有的兩張（1976 年兩張）都在這之後，這張補的是源頭。MB 給的標籤 folk／folk rock／pop 正好描述她跨在民謠與流行之間的位置。",
   "curatorRisk": "MB 的 artist-credit 是「Selda」而非「Selda Bağcan」——卡片依 c-53 裁定第 11 條掛通行名 Selda Bağcan，credit 變體歸 queryAlias。卡池同時存在「Selda」與「Selda Bağcan」兩種掛名（《Selda (1976)》與《Vurulduk ey halkım unutma bizi》），本卡未與任一撞名，但下游合併掛名時要注意這是同一人。1974 年原盤在 MB 上沒有廠牌資料，label 留空；1995 年再版為 Majör Müzik Yapım CD 05。",
@@ -279,7 +287,9 @@
   "group": "a",
   "queryAlias": "Selda",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Türkülerimiz 1",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:Selda Bağcan|Yuh Yuh",
@@ -318,7 +328,7 @@
    "folk"
   ],
   "label": "",
-  "rgMbid": "b5587a67-0655-4470-80f0-41ad1937b32b",
+  "rgMbid": "66460714-7145-463f-a8ce-b6b5a91a020b",
   "identitySource": "pinned",
   "curatorWhy": "Edip Akbayram 與 Dostlar 的自我同名首張長片，是 Anadolu rock 把 Alevi 民謠傳統接到重吉他上的代表作，MB 的標籤直接給了 anatolian rock。2013 年由西班牙 Pharaway Sounds 完整再版，與 Cem Karaca、Selda 同屬歐洲重新發掘這條線的核心目錄。",
   "curatorRisk": "自我同名卡。MB 上另有 2006-06-20 的同名 release-group d8ad01bf（Album/[Compilation]），兩筆都掛 Edip Akbayram、標題完全相同，只能靠年份與 rgMbid 區分。1974 原盤在 MB 上沒有廠牌資料，label 留空。",
@@ -331,7 +341,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Edip Akbayram",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:3 Hür-El|3 Hür-El",
@@ -344,7 +356,7 @@
    "folk"
   ],
   "label": "Diskotür",
-  "rgMbid": "6ccbe964-a897-4da8-8d44-1be62d1ec87e",
+  "rgMbid": "24d41399-9610-362a-89dd-3a2f35471f6f",
   "identitySource": "pinned",
   "curatorWhy": "Hürel 三兄弟的首張長片，是 Anadolu rock 少數以家庭樂團形式留下完整作品的一組；與 Moğollar 的自我同名盤同屬 Diskotür 目錄，兩者一起代表該廠牌在 1970 年代中期的角色。卡池已有他們 1974 年的《Hürel Arşivi》，這張補的是前一年的起點。",
   "curatorRisk": "掛名分裂本批最嚴重的一筆。MB 的藝人實體與 artist-credit 都是「3 Hürel」（無連字號），卡池既有卡與原盤封面用的是「3 Hür-El」（帶 ASCII 連字號），另有「Üç Hürel」的全寫法。本卡依卡池既有掛名寫 3 Hür-El、queryAlias 存 MB／串流用的 3 Hürel，三種寫法在下游都要試。自我同名卡，藝人名與專輯名相同。專輯名中的連字號已確認為 ASCII U+002D。",
@@ -357,7 +369,9 @@
   "group": "a",
   "queryAlias": "3 Hürel",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "3 Hürel",
+  "mbFirstRelease": "1973"
  },
  {
   "key": "desc2:Bülent Ortaçgil|Benimle Oynar mısın",
@@ -370,7 +384,7 @@
    "rock"
   ],
   "label": "1 Numara Plakçılık",
-  "rgMbid": "fda2967c-cfbe-43f9-8e16-0a78ad5cea83",
+  "rgMbid": "6301af19-25c1-3750-a3bf-04fd84e7ec63",
   "identitySource": "pinned",
   "curatorWhy": "土耳其創作歌手傳統的起點作品，與同期 Anadolu rock 的重編制路線相反，走的是吉他與人聲為主的室內感書寫；MB 的標籤同時給 folk rock、jazz、soft rock，正說明它在土耳其唱片史上難以歸類的位置。",
   "curatorRisk": "專輯名大小寫在 MB 內部就不一致：release-group 標題與 1974 原盤寫「Benimle Oynar mısın」（小寫 m），1993 年 release 寫「Benimle Oynar Mısın」（大寫 M）。土耳其語的 ı／i 與 I／İ 是不同字母，去符號比對會把兩者混掉，去重時四種組合都要試。",
@@ -383,7 +397,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Benimle Oynar mısın",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:Mazhar ve Fuat|Türküz Türkü Çağırırız!",
@@ -396,7 +412,7 @@
    "folk"
   ],
   "label": "Yonca",
-  "rgMbid": "099a7cff-09a8-421b-80f2-d82f9ea0c2be",
+  "rgMbid": "d0072798-e411-4721-aad0-ab7fbee05605",
   "identitySource": "pinned",
   "curatorWhy": "Mazhar Alanson 與 Fuat Güner 在組成 MFÖ 之前的唯一一張長片，時間點早於本批多數 Anadolu rock 專輯，是這條線 1971 年的少數完整作品之一。2014 年由德國 Shadoks Music 再版，該廠牌專門處理這類難以取得的迷幻搖滾原盤。",
   "curatorRisk": "樂團只有這一張長片，掛名在後期常被追溯寫成「MFÖ」或「Mazhar Fuat Özkan」——但 1971 年時 Özkan 尚未加入，兩者不是同一個對象，下游不得合併。專輯名結尾的驚嘆號在部分資料庫被省略。",
@@ -409,7 +425,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Türküz Türkü Çağırırız!",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Modern Folk Üçlüsü|40 Yıl Sonra",
@@ -422,7 +440,7 @@
    "rock"
   ],
   "label": "1 Numara Plakçılık",
-  "rgMbid": "50a25f73-8073-4f63-8170-3812469834b9",
+  "rgMbid": "a8f08725-7b78-4bcd-aa82-e536d9e1b886",
   "identitySource": "pinned",
   "curatorWhy": "Anadolu pop 的合唱／木吉他支線代表團體的第一張長片，與 Bülent Ortaçgil 同屬 1 Numara Plakçılık 目錄（相鄰的 A.K. 0002 與 0003），兩張一起呈現 1974 年伊斯坦堡這條非重搖滾路線的樣貌。MB 的標籤 folk rock／jazz／rock 說明其編曲取向。",
   "curatorRisk": "團名含 Ü 與 ç，去符號寫法「Modern Folk Uclusu」在串流平台常見。專輯名為常見短語，字串搜尋易撞；辨識靠 1 Numara Plakçılık 目錄號 A.K. 0003。MB 另有 1975 年德國 Minareci 3171 發行的自我同名專輯（989666ce），與本卡不同。",
@@ -435,7 +453,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "40 Yıl Sonra",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:Ayten Alpman|Memleketim",
@@ -448,7 +468,7 @@
    "folk"
   ],
   "label": "Ses Plak Yapım",
-  "rgMbid": "2cbd56d8-afe3-483e-bd9e-348b7880738b",
+  "rgMbid": "c1fed099-f4b9-4a4d-b21b-18bfedec6aef",
   "identitySource": "pinned",
   "curatorWhy": "Ayten Alpman 是 1960 至 70 年代土耳其少數以爵士與流行唱腔起家的女歌手，這張以她最知名的〈Memleketim〉為題，是她留下的完整長片；本批 Anadolu 這條線幾乎全是男性樂團，這張補的是同時期女性歌手在流行側的位置。",
   "curatorRisk": "資料最薄的一筆之一：MB 此 release-group 只有一個 release（1974 TR Ses Plak Yapım LP 001），無再版、無標籤資料，僅 tag pop。專輯名「Memleketim」是常見詞（我的家鄉），土耳其歌曲與專輯同名者眾多，MB 上 Selda Bağcan 名下就有 1985 年的同名專輯 a583d862，去重必須連藝人一起比對。",
@@ -461,7 +481,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Memleketim",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:Fikret Kızılok|Zaman Zaman",
@@ -474,7 +496,7 @@
    "folk"
   ],
   "label": "",
-  "rgMbid": "bdcfb781-68cd-4178-b10c-e9f6fb01da18",
+  "rgMbid": "7a33903b-85e6-37dc-8315-7efa76c7762e",
   "identitySource": "pinned",
   "curatorWhy": "Fikret Kızılok 1960 年代末即以 45 轉參與 Anadolu pop 的成形，但他名下第一張被完整記錄的長片是這張；MB 的標籤 art rock／folk rock／ballad 說明它已從早期的民謠搖滾走向更個人化的書寫。是這條線由 1970 年代跨進 1980 年代的一個接點。",
   "curatorRisk": "年份與廠牌都有疑點：MB 把 1983 年的兩個 release 都掛在 Kalan Müzik／Kalan Ses Görüntü 名下，但該廠牌成立於 1990 年代初，1983 年不可能是原始發行方——極可能是把再版廠牌回填到原盤 release 上。因此 label 留空、年份仍取 MB 的 first-release-date 1983，但下游若要引用廠牌必須另行查證。專輯名為疊字常見詞，字串搜尋易撞。",
@@ -487,7 +509,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Zaman Zaman",
+  "mbFirstRelease": "1983"
  },
  {
   "key": "desc2:Ruhi Su|Seferberlik Türküleri Ve Kuvayi Milliye Destanı",
@@ -500,7 +524,7 @@
    "world"
   ],
   "label": "İmece",
-  "rgMbid": "8237c155-fc42-4462-af0b-3423dcdba256",
+  "rgMbid": "b698eee8-c3c5-4a24-884e-12328256c58a",
   "identitySource": "pinned",
   "curatorWhy": "Ruhi Su 受過歌劇訓練的低音與土耳其民謠曲目的結合，是二十世紀土耳其民謠演唱最具辨識度的一種聲音；這張是他 İmece 系列的第一張（目錄號 İM - 17），該系列構成他最重要的一批錄音。",
   "curatorRisk": "專輯名極長且含 ü、ı、İ 三種土耳其專有字母；MB 標題把連接詞寫成大寫「Ve」，土耳其正字法通常小寫 ve，兩種寫法都要試。此 release-group 只有一個 release（1971 TR İmece İM - 17），無再版可交叉驗證，辨識依賴 İmece 目錄號。",
@@ -513,7 +537,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Seferberlik Türküleri Ve Kuvayi Milliye Destanı",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Ruhi Su|Yunus Emre",
@@ -578,7 +604,7 @@
    "pop"
   ],
   "label": "Harika Plak",
-  "rgMbid": "9e758958-7b3d-4112-aa1f-dd0cecb59971",
+  "rgMbid": "1fe67b2f-ce11-463c-b294-0cc3744afc3b",
   "identitySource": "pinned",
   "curatorWhy": "土耳其 arabesk 的起點作品：Orhan Gencebay 以 bağlama 為核心、加上弦樂團編制與阿拉伯式旋律走向，開出一條與 Anadolu rock 平行、但聽眾規模大得多的路線。卡池此前完全沒有 arabesk，這張是這個樂種最該先收的一張。",
   "curatorRisk": "此 release-group 只有一個 release（1972 TR Harika Plak），且 MB 未記目錄號。同名曲後來被多位歌手翻唱並以此為專輯名，字串搜尋易撞。MB 上 Orhan Gencebay 名下另有 1971 年掛 primary-type 空白／secondary Compilation 的自我同名條目 3043c5df，兩者不得混淆。",
@@ -591,7 +617,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Bir Teselli Ver",
+  "mbFirstRelease": "1972"
  },
  {
   "key": "desc2:Orhan Gencebay|Hatasız Kul Olmaz",
@@ -656,7 +684,7 @@
    "classical"
   ],
   "label": "",
-  "rgMbid": "9fcda3ab-a467-4ea9-8569-ae975de0f473",
+  "rgMbid": "183f4f33-ab66-38b9-890e-95233fcc5747",
   "identitySource": "pinned",
   "curatorWhy": "Zeki Müren 是土耳其古典藝術音樂（Türk sanat müziği）二十世紀最具代表性的歌手，這張是他名下標題明確、且與大量自我同名條目區隔得開的一張；MB 給的標籤即為 turkish classical。卡池此前沒有任何 TSM 的卡。",
   "curatorRisk": "Zeki Müren 在 MB 上有超過九十個 release-group，其中至少五筆單純掛「Zeki Müren」為題（1969、1970、1972、1973 各一），另有數十筆《Dünden Bugüne》《Pırlanta》《İşte Benim》系列精選——這是本批同名／撞號風險最高的藝人。本卡刻意選標題唯一的一張。1980 年原盤在 MB 上無廠牌資料，label 留空；2013 年 XW 再版掛 Türküola。",
@@ -669,7 +697,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Kahır Mektubu",
+  "mbFirstRelease": "1980"
  },
  {
   "key": "desc2:Müzeyyen Senar|Bir Bahar Akşamı",
@@ -682,7 +712,7 @@
    "classical"
   ],
   "label": "Coşkun Plak",
-  "rgMbid": "6fa6cab0-1197-4d00-b451-275fc6b4caf5",
+  "rgMbid": "4f856d39-f460-43e3-8fa3-d238d351ee43",
   "identitySource": "pinned",
   "curatorWhy": "Müzeyyen Senar 是土耳其古典藝術音樂從 78 轉時代跨到黑膠時代的關鍵歌手，這張以她最著名的曲目為題；2020 年再版由 Coşkun Plak 與 Sahibinin Sesi（HMV 土耳其分支）共同掛名，顯示曲目來源可追到早期唱片工業的目錄。",
   "curatorRisk": "1977 年的 release 國別標為 XW 而非 TR，原盤地位不如同批其他卡明確；label 依 MB 的 Coşkun Plak 填入，但原始發行方仍待查證。〈Bir Bahar Akşamı〉是土耳其歌曲標準曲目，同名專輯遍及多位歌手，字串搜尋必須連藝人一起比對。MB 上 Müzeyyen Senar 名下另有 1973–74 年的《40.Sanat Yılında Veda》系列四張，編號相近易混。",
@@ -695,7 +725,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Bir Bahar Akşamı",
+  "mbFirstRelease": "1977"
  },
  {
   "key": "desc2:Neşet Ertaş|Kendim Ettim Kendim Buldum",
@@ -708,7 +740,7 @@
    "world"
   ],
   "label": "Bey Plak",
-  "rgMbid": "9e42d92e-a2b4-426b-9b3f-51c36f86b785",
+  "rgMbid": "20ea5067-c733-4b0b-b130-a333583c9fb9",
   "identitySource": "pinned",
   "curatorWhy": "Neşet Ertaş 是 Kırşehir 一帶 abdal 樂人傳統的最後一位大師，以 bozlak 唱法與 bağlama 演奏著稱；MB 上他名下的作品幾乎都在 1984 年之後，這張是其中發行資料最完整、且標題與曲目對得上的一張。",
   "curatorRisk": "他 1960–70 年代的錄音在 MB 上完全沒有 release-group（只有後期的卡帶／CD 專輯），因此本卡的年份 1988 是唱片年份而非其音樂生涯的重心年代，下游行文不宜寫成代表作年份。1988 年另有一個 release 標題加了副題「- Mapushanelere Güneş Doğmuyor」，比對時要摺掉副題。專輯名為土耳其諺語式短語，MB 上 Cem Karaca 1970 年單曲亦名〈Kendim Ettim Kendim Buldum〉（88d71b5b），去重要連藝人比對。",
@@ -721,7 +753,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Kendim Ettim Kendim Buldum",
+  "mbFirstRelease": "1988-10-03"
  },
  {
   "key": "desc2:Neşet Ertaş|Zahidem",
@@ -760,7 +794,7 @@
    "world"
   ],
   "label": "",
-  "rgMbid": "8fc03fdd-6b12-4c52-b4af-2b8a6a49051e",
+  "rgMbid": "fef9d467-0aa5-3d85-bcc9-3b49e693603e",
   "identitySource": "pinned",
   "curatorWhy": "以詩人 Nâzım Hikmet 的詩作譜曲的專輯，是 Zülfü Livaneli 把土耳其詩歌傳統與現代民謠編曲結合的代表作；1980 年由西德 Ariola 發行，是這條線少數進入西歐主流唱片公司目錄的作品。",
   "curatorRisk": "MB 的 release-group 標題寫「Nazım」（無揚抑符），詩人本名的正式寫法是 Nâzım，兩種寫法都要試。1978 年原盤的廠牌 MB 記為「ŞAT Müzik」，但 1980 德國盤掛 Ariola、2001 土耳其盤掛 Ada Müzik，原始發行方尚不足以定案，label 留空。2002 年另有一個 release 把標題改成《Bütüneserleri, Vol. 4 (Nazim Türküsü)》，去重要摺掉全集編號。",
@@ -773,7 +807,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Nazım Türküsü",
+  "mbFirstRelease": "1978"
  },
  {
   "key": "desc2:Zülfü Livaneli|Ada",
@@ -812,7 +848,7 @@
    "folk"
   ],
   "label": "Gam Production",
-  "rgMbid": "8fe27e3a-82b3-4002-a885-8c521a1bec14",
+  "rgMbid": "6f4b3d4d-0879-3d24-bdb3-7866e55ec3bc",
   "identitySource": "pinned",
   "curatorWhy": "Ahmet Kaya 是 1980 年代土耳其「özgün müzik」（原創音樂）路線最具代表性的歌手，把 arabesk 的編制與抗議民謠的題材接在一起；這張是他早期發行資料完整的一張，補上本批從 1970 年代 Anadolu rock 到 1980 年代之間的空缺。",
   "curatorRisk": "MB 上有兩個「Ahmet Kaya」藝人實體（8fe27e3a 與 3c555d1c「Neyzen Ahmet Kaya」），同名不同人，browse 前必須確認 MBID。此 release-group 只有一個 release（1986-05 TR Gam Production），無再版可交叉驗證。專輯名含 Ş 與 ü，去符號寫法「Safak Turkusu」在串流平台常見。",
@@ -825,7 +861,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Şafak Türküsü",
+  "mbFirstRelease": "1986-05"
  },
  {
   "key": "desc2:Abdel Halim Hafez|Mawoud",
@@ -837,7 +875,7 @@
    "world"
   ],
   "label": "Soutelphan",
-  "rgMbid": "9c22e6c5-56a0-4559-b017-5b4e305141a2",
+  "rgMbid": "164f156a-f8de-4a6f-8dce-4f4eaf7c7278",
   "identitySource": "pinned",
   "curatorWhy": "Abdel Halim Hafez 是 Umm Kulthum 之後埃及最重要的歌手，卡池此前完全沒有他的卡。〈Mawoud〉是他 1970 年代長篇曲目中錄音發行最完整的一首，由 Soutelphan（埃及 EMI 體系的本地廠牌）發行，是該時期埃及唱片工業的標準管道。",
   "curatorRisk": "MB 的藝人實體名是阿拉伯文「عبد الحليم حافظ」，用羅馬轉寫查藝人才找得到（disambiguation 無），且同一位歌手在不同 release-group 上的 artist-credit 有「Abdel Halim Hafez」「عبد الحليم حافظ」「عبد الحليم حافظ (Abdel Halim Hafez)」三種寫法——這正是 c-53 裁定第 10 條描述的 credit 逐盤不一致。本卡沿用卡池既有阿拉伯卡的羅馬轉寫慣例掛名。MB 上另有一個標題僅為羅馬字「Mawood」的 release-group 7ff2f40a（無年份），與本卡可能是同一作品的重複建檔，轉寫 Mawoud／Mawood 兩種都要試。",
@@ -850,7 +888,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "موعود (Mawoud)",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Abdel Halim Hafez|Ya Malekan Kalby",
@@ -912,7 +952,7 @@
    "world"
   ],
   "label": "Voice of Lebanon",
-  "rgMbid": "810c7829-2e33-4dd9-876b-77a3d0ce1c2d",
+  "rgMbid": "add05a81-093f-4135-b923-d98a3e8dc7ad",
   "identitySource": "pinned",
   "curatorWhy": "Farid El Atrache 兼歌手、作曲家與 oud 演奏者三重身分，是二十世紀阿拉伯流行音樂與電影音樂的核心人物之一，卡池此前完全沒有他的卡。〈Nagham Fi Hayati〉是他最著名的曲目之一，這張由貝魯特的 Voice of Lebanon 發行，帶完整目錄號。",
   "curatorRisk": "MB 的藝人實體是阿拉伯文「فريد الأطرش」，此 release-group 的 artist-credit 為阿拉伯文與羅馬並列的「فريد الأطرش (Farid el Atrache)」，小寫 el 與大寫 El 兩種寫法都存在；另有常見轉寫 Farid al-Atrash。此 release-group 只有一個 release，無再版可交叉驗證。",
@@ -925,7 +965,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "نغم في حياتي (Nagham Fi Hayati)",
+  "mbFirstRelease": "1974"
  },
  {
   "key": "desc2:Nass El Ghiwane|Nass El Ghiwane",
@@ -938,7 +980,7 @@
    "folk"
   ],
   "label": "Polydor",
-  "rgMbid": "cbcd5eaa-0d67-4269-b0d5-05f2988d7c69",
+  "rgMbid": "609a2f29-9053-4f4b-b0b2-b888f377e1b2",
   "identitySource": "pinned",
   "curatorWhy": "摩洛哥現代音樂最具影響力的樂團，把 Gnawa 與 Aissawa 的節奏、民間詩歌與集體合唱形態帶進商業唱片，成為北非往後數十年的參照點；這張自我同名首作由 Polydor 摩洛哥發行，帶完整目錄號。卡池此前沒有任何摩洛哥的卡。",
   "curatorRisk": "MB 的 artist-credit 是小寫 el 的「Nass el Ghiwane」，1980 年那筆卻是大寫「Nass El Ghiwane」，同團兩種寫法並存；卡片依 c-53 裁定第 11 條掛通行名（大寫 El，也是串流平台的寫法）。自我同名卡，藝人名與專輯名相同。此 release-group 的 2011 年再版把標題改成《Disque d'or》，去重要注意這是同一張。另有法文轉寫 Nas El Ghiwane。",
@@ -951,7 +993,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Nass el Ghiwane",
+  "mbFirstRelease": "1973"
  },
  {
   "key": "desc2:Nass El Ghiwane|Hommage à Boudjemaa",
@@ -990,7 +1034,7 @@
    "classical"
   ],
   "label": "Ocora",
-  "rgMbid": "842267e2-bffd-40df-a28f-46a27cd3ee18",
+  "rgMbid": "6e6cbdb3-2c24-4c51-9ebe-792a76ed0a9a",
   "identitySource": "pinned",
   "curatorWhy": "Munir Bashir 是二十世紀把 oud 獨奏從伴奏樂器提升為獨立藝術形式的關鍵人物，這張由法國國家廣播的 Ocora 廠牌發行，是他最早進入西方民族音樂學正典目錄的錄音之一。卡池此前沒有任何 oud 獨奏的卡。",
   "curatorRisk": "MB 的 artist-credit 是阿拉伯文「منير بشير」，但同一位藝人的其他 release-group（如 Babylon Mood）用拉丁「Munir Bashir」——同批兩張卡的 credit 文字不同，MB 端一律吃 rgMbid。此 release-group 的後續 release 標題全改為法文《L'art du 'ûd》（1998、2001），與 1971 原盤標題完全不同，取封面時要確認版本。轉寫變體 Mounir Bachir 在法語資料中極常見。",
@@ -1003,7 +1047,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Iraq: Ud Classique Arabe",
+  "mbFirstRelease": "1971"
  },
  {
   "key": "desc2:Munir Bashir|Babylon Mood",
@@ -1028,7 +1074,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Babylon Mood",
+  "mbFirstRelease": "1972"
  },
  {
   "key": "desc2:Ziad Rahbani|Bennesbeh Labokra... Chou?",
@@ -1041,7 +1089,7 @@
    "world"
   ],
   "label": "Zida",
-  "rgMbid": "854d133d-771b-4776-ad66-6768f4f848e9",
+  "rgMbid": "1dcb5b33-62d1-443a-8b96-bed00bf41b96",
   "identitySource": "pinned",
   "curatorWhy": "Ziad Rahbani 把爵士與 bossa nova 的和聲語彙帶進黎巴嫩劇場音樂的代表作，MB 給的標籤直接是 bossa nova／jazz／latin——這正是他與父輩 Rahbani 兄弟路線分道的一張。卡池已有他 1985 年的《Houdou Nisbi》，這張補的是更早、也更常被引用的一張。",
   "curatorRisk": "MB 的 artist-credit 是「Ziad Rahbani & Joseph Sacre」（雙人聯名），另一筆 1985 年作品的 credit 又寫成「Ziad Al Rahbani」——同一位作者三種 credit 寫法。卡片依 c-53 裁定第 11 條掛通行名 Ziad Rahbani，並與卡池既有卡的掛名一致。標題為阿拉伯文與羅馬並列，本卡取羅馬側；羅馬側的省略號在 MB 內部就有「... 」與「...」兩種間距寫法，去重要摺掉標點。此 release-group 只有一個 release、status 未標 Official。",
@@ -1054,7 +1102,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "بالنسبة لبكرا ... شو؟ = Bennesbeh Labokra... Chou?",
+  "mbFirstRelease": "1978"
  },
  {
   "key": "desc2:Ziad Rahbani|Ana Moush Kafer",
@@ -1093,7 +1143,7 @@
    "pop"
   ],
   "label": "Barclay",
-  "rgMbid": "b4a479aa-4384-4acf-88b0-dee9188faeb5",
+  "rgMbid": "d34aac50-01d1-3614-bffc-d6e9d9c165e2",
   "identitySource": "pinned",
   "curatorWhy": "raï 從奧蘭的地方樂種走向國際唱片市場的分水嶺，由 Barclay 在法國發行、隔年在美國推出；卡池已有 1988 年的《Kutché》與 1996 年的《Sahra》，這張補的正是兩者之間最關鍵的一張。",
   "curatorRisk": "自我同名卡，且藝人名是單一常見的阿拉伯人名——MB 上光是 score 80 以上的「Khaled」就有四個不同實體（含 DJ Khaled 與西班牙／摩洛哥饒舌歌手）。卡池同時存在「Khaled」與「Cheb Khaled & Safy Boutella」兩種掛名，下游要知道那是同一人。早期他掛名為 Cheb Khaled，這張起改掛 Khaled，年代前後的掛名不同。",
@@ -1106,7 +1156,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Khaled",
+  "mbFirstRelease": "1991-08"
  },
  {
   "key": "desc2:Idir|Ay Arrac Nneɣ...",
@@ -1119,7 +1171,7 @@
    "world"
   ],
   "label": "Azwaw",
-  "rgMbid": "e6e4079d-ecf9-477f-8ac2-25b4ce17709b",
+  "rgMbid": "845dd932-a178-40dc-b3cb-32b63687aae9",
   "identitySource": "pinned",
   "curatorWhy": "Idir 在《A Vava Inou Va》之後的第二張專輯，同樣以卡拜爾語（Kabyle）演唱，是柏柏語族音樂在法國唱片工業中留下的少數完整作品之一。卡池已有 1976 年那張，這張補的是緊接其後的一張。",
   "curatorRisk": "身分風險本批最高的三筆之一。MB 標題為「Ay Arrac Nneɣ...」，其中 ɣ 是拉丁小寫 gamma（U+0263），屬柏柏拉丁字母表，在 NFKD 正規化後不會被摺掉，也幾乎不會出現在串流平台的目錄裡；依 c-53 裁定第 6 條「採原始發行的寫法」，本卡保留原字母 ɣ 與 MB 標題一致；但下游封面／評分／試聽三條線必須同時試「Ay Arrac Nneɣ」與標準轉寫「Ay Arrac Nnegh」兩種寫法，MB 端一律吃 rgMbid。此 release-group 只有一個 release。",
@@ -1132,7 +1184,9 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Ay Arrac Nneɣ...",
+  "mbFirstRelease": "1979"
  },
  {
   "key": "desc2:Ilham Al Madfai|Ilham Al Madfai",
@@ -1145,7 +1199,7 @@
    "rock"
   ],
   "label": "Edenways",
-  "rgMbid": "1fea7ea9-d5b9-4fc7-901e-85606a5af91c",
+  "rgMbid": "45080232-b2a2-4b59-9374-0f9bb5007f13",
   "identitySource": "pinned",
   "curatorWhy": "Ilham Al Madfai 以西式吉他重編伊拉克傳統歌曲，是這條線少數被國際廠牌完整收錄的伊拉克音樂人；這張自我同名專輯由比利時的 Edenways 發行，帶完整目錄號，是他進入國際流通的起點。卡池此前沒有任何伊拉克流行音樂的卡。",
   "curatorRisk": "自我同名卡。MB 的 artist-credit 寫成大寫 AL 的「Ilham AL Madfai」，藝人實體名寫「Ilham Al Madfai」、disambiguation 為阿拉伯文「إلهام المدفعي」，另有常見轉寫 Ilham al-Madfai（帶連字號）。此 release-group 只有一個 release，MB 上他名下總共只有四筆條目，資料基礎偏薄。",
@@ -1158,6 +1212,8 @@
   "group": "a",
   "queryAlias": "",
   "republic": "",
-  "cover": null
+  "cover": null,
+  "mbTitle": "Ilham Al Madfai",
+  "mbFirstRelease": "1999"
  }
 ]
