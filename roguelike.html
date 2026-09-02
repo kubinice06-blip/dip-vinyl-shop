@@ -134,6 +134,25 @@
   .tally .tr .n{width:22px;text-align:right;font-weight:700;}
   .tally .tr.top .lab::after{content:' ★';}
   .tally .verdict{margin-top:8px;border-top:1px solid var(--line);padding-top:8px;line-height:1.8;font-size:11px;}
+  /* 三張頂點卡三選一（一列＝封面＋該軸介紹）＋嗆聲客人的紅框對話 */
+  .acepick{display:flex;gap:10px;align-items:stretch;border:1px solid var(--line);padding:8px;margin:6px 0;cursor:pointer;position:relative;transition:border-color .15s,box-shadow .15s;}
+  .acepick:hover{border-color:var(--black);}
+  .acepick.on{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset;background:#fffbe9;}
+  .acepick .acecard{flex:none;width:104px;}
+  .acepick .acecard .card{padding:6px;}
+  .acepick .aceinfo{flex:1;min-width:0;font-size:10px;line-height:1.7;}
+  .acepick .acettl{font-size:12px;font-weight:700;margin-bottom:2px;}
+  .acepick .acewhat{color:#444;}
+  .acepick .acefx{color:var(--gold);margin-top:2px;}
+  .acepick .aceyou{margin-top:4px;padding-top:4px;border-top:1px dashed var(--line);color:var(--gray);}
+  .acepick .acecheck{position:absolute;top:6px;right:8px;width:18px;height:18px;line-height:18px;text-align:center;font-weight:700;font-size:11px;color:#fff;}
+  .acepick.on .acecheck{background:var(--gold);}
+  .bubble.foe{background:#fff2f2;border-color:var(--dmg);}
+  .bubble.foe::before{border-right-color:var(--dmg);} .bubble.foe::after{border-right-color:#fff2f2;}
+  .bubble.foe .say{color:var(--dmg);}
+  .shop-picks.four{grid-template-columns:repeat(2,1fr);}
+  @media (min-width:430px){ .shop-picks.four{grid-template-columns:repeat(4,1fr);} .shop-picks.four .pitch{min-height:84px;} }
+
   .player-zone .nameplate .who{max-width:44%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   @media (max-width:400px){ .shop-picks{grid-template-columns:repeat(2,1fr);} }
 
@@ -937,48 +956,6 @@ const ROOKIE_PROFILES = {
                    line:'「這些放出來客人會跑光。你確定？……好，我喜歡。」' },
 };
 const AXIS_STAT = { classic:'def', obscurity:'qir', accessibility:'atk' };
-// 老闆的候選架：[藝人, 專輯, 經典, 冷門, 硬蕊, 架別, 老闆一句話]。
-// 刻意避開老闆帶打教學用到的十張盤（Revolver／Kind of Blue／Long Season／Untrue／The Money Store／
-// Ruins／Dummy／Discovery／Rumours／Mezzanine），教學後牌組合併時不會重複。
-const STARTER_SHELF = [
-  // 經典架
-  ['Michael Jackson','Thriller',4,1,1,'classic','「賣最多的那張。你以為你聽過了，其實你只聽過單曲。」'],
-  ['Prince','Purple Rain',4,1,1,'classic','「電影可以不看，唱片一定要。最後那首獨奏聽完再說。」'],
-  ['David Bowie','Low',4,3,3,'classic','「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」'],
-  ['Joy Division','Unknown Pleasures',4,3,3,'classic','「封面你八成在 T 恤上看過。裡面的東西比 T 恤冷得多。」'],
-  ['Nick Drake','Pink Moon',4,3,2,'classic','「一個人、一把吉他、不到半小時。他生前沒幾個人買。」'],
-  ['Television','Marquee Moon',4,3,2,'classic','「兩把吉他在講話，沒有一句廢話。標題曲十分鐘，不會覺得長。」'],
-  ['Kraftwerk','Trans-Europe Express',4,3,2,'classic','「四個德國人打著領帶做出來的火車聲。後來一半的舞曲都欠它。」'],
-  ['Pixies','Surfer Rosa',4,2,2,'classic','「小聲、大聲、小聲、大聲。九〇年代一大票樂團都是這樣學會的。」'],
-  ['Black Sabbath','Paranoid',4,2,2,'classic','「重的源頭之一。放出來鄰居會來敲門，那是正常反應。」'],
-  ['Sonic Youth','Daydream Nation',4,3,3,'classic','「雙碟，吉他調成你沒聽過的音。年輕人的噪音教科書。」'],
-  ['Slowdive','Souvlaki',4,3,3,'classic','「整張像泡在水裡聽。瞪鞋這種東西，這張就夠了。」'],
-  ['Pavement','Slanted and Enchanted',4,3,3,'classic','「走音走得剛剛好。懶散是裝的，歌是真的好。」'],
-  ['Cocteau Twins','Treasure',3,3,2,'classic','「歌詞聽不懂是正常的，她本來就不是在唱字。」'],
-  ['Stereolab','Emperor Tomato Ketchup',3,3,2,'classic','「復古電子琴加法文喃喃。放在店裡一下午都不膩。」'],
-  // 冷門架
-  ['Duster','Stratosphere',2,5,3,'obscurity','「慢到像快睡著，錄音糊得剛好。冷了二十年才有人翻出來。」'],
-  ['Codeine','Frigid Stars',2,5,3,'obscurity','「每個音都拖到極限。急性子的人聽不完，聽得完的會上癮。」'],
-  ['Vashti Bunyan','Just Another Diamond Day',3,5,2,'obscurity','「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」'],
-  ['Karen Dalton','In My Own Time',3,5,3,'obscurity','「她不寫歌，唱別人的歌卻比原唱還像自己的。」'],
-  ['Judee Sill','Judee Sill',3,5,3,'obscurity','「巴哈式的和聲配民謠吉他。當年沒人聽，是唱片行老闆之間的暗號。」'],
-  ['Bark Psychosis','Hex',2,5,4,'obscurity','「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」'],
-  ['Broadcast','Tender Buttons',2,4,3,'obscurity','「兩個人、一堆舊合成器、一個冷冷的女聲。放在深夜。」'],
-  ['John Fahey','The Transfiguration of Blind Joe Death',2,5,3,'obscurity','「一把鋼弦木吉他，沒有人聲。他還替自己編了一個假的藍調樂手當化名。」'],
-  ['Big Star','Third/Sister Lovers',3,4,3,'obscurity','「錄完沒人敢發，擱了好幾年。崩潰的人做出來的美。」'],
-  ['Talk Talk','Laughing Stock',3,4,4,'obscurity','「從流行樂團變成這樣。整張留白比音還多。」'],
-  // 硬蕊架
-  ['The Velvet Underground','White Light/White Heat',4,4,5,'accessibility','「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」'],
-  ['Scott Walker','Tilt',3,4,5,'accessibility','「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」'],
-  ['Swans','Soundtracks for the Blind',3,4,5,'accessibility','「兩張 CD 塞滿。聽完像走了一趟很長的路。」'],
-  ['This Heat','Deceit',2,5,5,'accessibility','「冷戰末日的焦慮，在一間冷凍庫改的錄音室裡做的。」'],
-  ['Sunn O)))','Monoliths & Dimensions',2,5,5,'accessibility','「低到肚子會震。音量開小等於沒聽。」'],
-  ['Converge','Jane Doe',3,4,4,'accessibility','「四十幾分鐘的吼。封面那張臉你一定看過。」'],
-  ['Public Image Ltd','Metal Box',3,5,4,'accessibility','「原版裝在金屬圓罐裡，三張 45 轉。龐克死了以後的樣子。」'],
-  ['Can','Tago Mago',4,4,4,'accessibility','「雙碟。日本主唱是在慕尼黑街頭被他們撿到的。」'],
-  ['Suicide','Suicide',3,4,4,'accessibility','「一台鼓機、一台琴、一個人在吼。1977 年的觀眾拿東西丟他們。」'],
-  ['The Fall','Hex Enduction Hour',2,5,4,'accessibility','「兩個鼓手、一個永遠在碎唸的主唱。聽不懂沒關係，他本來就不打算讓你懂。」'],
-].map(([artist,album,c,o,a,lean,pitch])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null,lean,pitch}));
 
 // ---------- 發燒配件（每 5 場擊敗傳說藏家掉落三選一；效果純資料、後台可覆寫）----------
 // fx 效果鍵（程式已掛勾）：counterQi 相剋+氣勢 / startQi 開局氣勢 / winHeal 勝利多回血 /
@@ -1948,7 +1925,7 @@ function renderRookieHome(){
     ${homeBoxesHTML()}${charCardHTML()}
     <div id="rookieHome" style="border:2px solid var(--gold);background:#fffbe9;padding:14px 14px 12px;margin:8px 0 10px;line-height:1.9">
       <b style="color:var(--gold);font-size:15px">🎁 老闆的入門套裝</b>
-      <div class="muted" style="font-size:12px;margin:2px 0 10px">不用先讀規則——老闆把你抱走的三張盤配上幾張店裡的雜牌，上桌<b>邊打邊學</b>。</div>
+      <div class="muted" style="font-size:12px;margin:2px 0 10px">不用先讀規則——老闆賣你的那五張（1 張王牌＋4 張）配上幾張店裡的雜牌，上桌<b>邊打邊學</b>。</div>
       ${startBtns}
       <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="rookieCustomSeeds()">想自己挑專輯出戰 →</button>
     </div>
@@ -1960,9 +1937,10 @@ function renderRookieHome(){
 }
 
 // =========================================================================
-//  🏪 唱片行開場（新玩家序章）：推門 → 捏角色 → 老闆問你想找哪種 → 老闆抽三張盤（可請他換）
-//  → 三張星數加總決定你的「耳朵」（三圍＋專長）→ 老闆帶打教學／直接開打
-//  全程不動 RUN；結帳時才把名字、造型、耳朵與三張盤寫進樂歷（META.name／avatar／profile）。
+//  🏪 唱片行開場（新玩家序章）：推門 → 捏角色 → 三張頂點卡三選一（順便認識三軸）
+//  → 老闆「選這張內行喔」再推四張同路的盤 → 結帳 → 一個客人進來嗆你品味差 → 老闆帶打教學（跟他比）
+//  全程不動 RUN；結帳時才把名字、造型、耳朵與五張盤寫進樂歷（META.name／avatar／profile）。
+//  三套「頂點卡＋四張」就是教學牌組 TUT_SETS（課表的數值是照這幾張算的，所以四張是固定的、不隨機）。
 // =========================================================================
 const escHtml = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const NAME_MAX = 8;
@@ -1972,17 +1950,18 @@ const SHOP_INTRO = [
   '<span class="narr">櫃台後面的老闆抬起頭，隔著眼鏡看了你三秒。</span><br><span class="say">「第一次來？」</span>',
   '<span class="say">「我這裡不賣排行榜。」</span><span class="narr">他把眼鏡推上去。</span><br><span class="say">「先說說——你是誰？」</span>',
 ];
-const SHOP_ASK_LINES = {
-  classic:'<span class="say">「經典啊……」</span><span class="narr">老闆從最上層抽了兩張，又從櫃台底下摸出一張。</span><span class="say">「這三張。」</span>',
-  obscurity:'<span class="say">「冷門？」</span><span class="narr">老闆眼睛亮了一下，蹲到最底層翻了半天。</span><span class="say">「這幾張，我放很久了。」</span>',
-  accessibility:'<span class="say">「硬的喔。」</span><span class="narr">老闆看了看店裡沒別的客人，從裡面的房間拿出三張。</span><span class="say">「別在店裡放。」</span>',
-  any:'<span class="say">「隨我？」</span><span class="narr">老闆想了三秒，一個架子抽一張。</span><span class="say">「這樣才公平。」</span>',
+// 三張頂點卡的介紹：一張卡＝一個軸（順便把三軸的文化定位、相剋方向、王牌被動講完）
+const SHOP_ACE_INFO = {
+  classic:       { title:'殿堂', axisZh:'經典', what:'大家都聽過、被時間驗證的名盤。', star:'這張經典衝到 <b>7 星</b>。',
+                   passive:'打出時對手氣勢 −2', beats:'經典剋硬蕊（大眾共鳴）', pick:'「選這張？內行喔。敢在我店裡拿這張的人不多——多數人只會說『聽過』。」' },
+  obscurity:     { title:'流亡', axisZh:'冷門', what:'沒人翻過的地下私盤，靠的是資訊差。', star:'這張冷門衝到 <b>7 星</b>。',
+                   passive:'相剋成功時多充 1 氣勢', beats:'冷門剋經典（品味突襲）', pick:'「選這張？內行喔。這張我放在最裡面那格，就是在等有人伸手。」' },
+  accessibility: { title:'異端', axisZh:'硬蕊', what:'入耳的難度——越前衛、越解構，星數越高。', star:'這張硬蕊衝到 <b>7 星</b>。',
+                   passive:'打出時直接歸零對手氣勢', beats:'硬蕊剋冷門（降維打擊）', pick:'「選這張？內行喔。這張放出來客人會跑光……我喜歡。」' },
 };
-const SHOP_SWAP_LINES = ['<span class="say">「挑剔喔。」</span>','<span class="say">「這張不合？好，換。」</span>','<span class="say">「行，我再拿。」</span>'];
-const SHOP_SWAP_LAST = '<span class="say">「最後一次了，後面有人在等。」</span>';
 let _shop=null;
 function shopState(after){
-  if(!_shop) _shop = { after:after||null, back:null, ask:null, picks:[], shown:[], swaps:3, swapIdx:-1, line:'',
+  if(!_shop) _shop = { after:after||null, back:null, axis:null,
     av:Object.assign({}, AVATAR_DEFAULT, META.avatar||{}), name:META.name||'' };
   else if(after) _shop.after=after;
   return _shop;
@@ -2064,152 +2043,114 @@ function charConfirm(){
   META.avatar = Object.assign({}, AVATAR_DEFAULT, s.av);
   saveMeta();
   if(s.back){ _shop=null; renderClassSelect(); return; }
-  renderShopAsk();
+  renderShopAces();
 }
 function playerLabel(){ return (META && META.name) ? escHtml(META.name) : '你'; }
-// 3. 老闆問你今天想找哪種
-function renderShopAsk(){
-  document.body.classList.remove('in-battle');
-  const s=shopState();
-  const revisit = !!META.profile;
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble">${revisit
-      ? `<span class="say">「又來了，${playerLabel()}。」</span><span class="narr">老闆把抹布放下。</span><span class="say">「這次想找哪種的？」</span>`
-      : `<span class="say">「${playerLabel()}是吧。」</span><span class="narr">老闆把手上的抹布放下。</span><span class="say">「今天想找哪種的？」</span>`}</div></div>
-    <div class="muted" style="margin:10px 0 6px">老闆會照你的回答抽<b>三張盤</b>當你的起始專輯；三張的星數加總決定你是哪種耳朵。</div>
-    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--classic)" onclick="shopAsk('classic')">🏛 <b style="color:var(--classic)">大家都聽過的經典</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 經得起時間的名盤</span></button>
-    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--obscurity)" onclick="shopAsk('obscurity')">🔦 <b style="color:var(--obscurity)">沒什麼人聽過的冷門</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 底層架子的私盤</span></button>
-    <button class="btn" style="width:100%;text-align:left;margin-top:6px;border-color:var(--accessibility)" onclick="shopAsk('accessibility')">🔥 <b style="color:var(--accessibility)">越難聽越好的硬蕊</b><span class="muted" style="text-transform:none;letter-spacing:0"> ── 前衛、噪音、實驗</span></button>
-    <button class="btn" style="width:100%;text-align:left;margin-top:6px" onclick="shopAsk('any')">🎲 老闆你決定<span class="muted" style="text-transform:none;letter-spacing:0"> ── 三個架子各一張</span></button>
-    ${revisit?`<div class="row" style="margin-top:12px"><button class="btn" style="flex:1" onclick="_shop=null;renderClassSelect()">算了，先不換</button></div>`:''}`, revisit?'再逛一次':'序章 · 櫃台');
-}
-function shopCandidates(lean, exclude){
-  const ex=new Set(exclude||[]);
-  return STARTER_SHELF.filter(c=>!ex.has(keyOf(c)) && (!lean || lean==='any' || c.lean===lean));
-}
-function shopAsk(axis){
-  const s=shopState();
-  s.ask = axis; s.swaps = 3; s.swapIdx = -1;
-  let picks=[];
-  if(axis==='any'){
-    for(const lean of ATTRS){ const c=pick(shopCandidates(lean)); if(c) picks.push(c); }
-  } else {
-    const main=shuffle(shopCandidates(axis)).slice(0,2);
-    const others=shopCandidates(null).filter(c=>c.lean!==axis);
-    picks=main.concat([pick(others)]);
-  }
-  s.picks = shuffle(picks).map(c=>({...c}));
-  s.shown = s.picks.map(keyOf);
-  s.line = SHOP_ASK_LINES[axis]||SHOP_ASK_LINES.any;
-  renderShopPicks();
-}
-function shopTally(picks){
-  const t={classic:0,obscurity:0,accessibility:0};
-  for(const c of picks) for(const a of ATTRS) t[a]+=c[a]||0;
-  return t;
-}
-// 最高軸；平手時先看你跟老闆說想找哪種，再照 經典→冷門→硬蕊 的順序
-function shopDominant(picks, ask){
-  const t=shopTally(picks); const mx=Math.max(t.classic,t.obscurity,t.accessibility);
-  const tied=ATTRS.filter(a=>t[a]===mx);
-  if(ask && tied.includes(ask)) return ask;
-  return tied[0];
-}
-function shopTallyHTML(){
-  const s=_shop; const t=shopTally(s.picks); const top=shopDominant(s.picks,s.ask); const p=ROOKIE_PROFILES[top];
-  const mx=Math.max(1,t.classic,t.obscurity,t.accessibility);
-  const rows=ATTRS.map(a=>`<div class="tr ${a}${a===top?' top':''}"><span class="lab">${ATTR_ZH[a]}</span><div class="bar"><i style="width:${t[a]/15*100}%"></i></div><span class="n">${t[a]}</span></div>`).join('');
-  return `<div class="tally"><div class="muted" style="font-size:10px;letter-spacing:.08em;margin-bottom:4px">三張盤的星數加總（滿分各 15）</div>${rows}
-    <div class="verdict">老闆看你抱走這三張——你是 <b style="color:var(--gold)">【${p.name}】</b>（${p.tag}）<br>
-      <span class="s-atk">攻 <b>${p.stats.atk}</b></span> · <span class="s-def">防 <b>${p.stats.def}</b></span> · <span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span> · 起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}<br>
-      <span style="color:var(--gold)">★ ${p.affDesc}</span></div></div>`;
-}
-// 4. 櫃台上三張盤：看介紹、請老闆換、看加總 → 結帳
-function renderShopPicks(){
-  document.body.classList.remove('in-battle');
-  const s=shopState();
-  const cards=s.picks.map((c,i)=>`<div id="shopPick${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">
-      ${cardHTML(c,{cover:true}).replace('class="card','class="card fresh')}
-      <div class="pitch">${c.pitch||''}</div>
-      <div class="pickbtns"><button class="btn" onclick="openCardInfo(_shop.picks[${i}])">👁 介紹</button><button class="btn" ${s.swaps>0?'':'disabled'} onclick="shopSwapAsk(${i})">🔁 換</button></div>
-    </div>`).join('');
-  const swapAsk = s.swapIdx>=0 ? `<div class="swapask">🎙 老闆：「第 ${s.swapIdx+1} 張換哪種的？」
-      <div class="row">
-        <button class="btn" style="border-color:var(--classic)" onclick="shopSwap(${s.swapIdx},'classic')">經典的</button>
-        <button class="btn" style="border-color:var(--obscurity)" onclick="shopSwap(${s.swapIdx},'obscurity')">冷門的</button>
-        <button class="btn" style="border-color:var(--accessibility)" onclick="shopSwap(${s.swapIdx},'accessibility')">硬蕊的</button>
-        <button class="btn" onclick="shopSwap(${s.swapIdx},'any')">你隨便拿</button>
-        <button class="btn" onclick="_shop.swapIdx=-1;renderShopPicks()">不換了</button>
-      </div></div>` : '';
-  $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble">${s.line}</div></div>
-    <div class="muted" style="margin:10px 0 0">點「👁 介紹」看專輯簡介與試聽；不合胃口可請老闆換（還能換 <b style="color:var(--gold)">${s.swaps}</b> 次）。</div>
-    <div class="shop-picks">${cards}${swapAsk}</div>
-    ${shopTallyHTML()}
-    <div class="row" style="margin-top:10px"><button class="btn primary" style="flex:1;border-color:var(--gold);background:var(--gold);font-size:13px;padding:12px" onclick="shopCheckout()">💳 就這三張，結帳 ▸</button></div>`, s.after==='tutorial'||!META.profile?'序章 · 櫃台':'再逛一次');
-  shopLazyCovers();
-}
-function shopLazyCovers(){
-  const s=_shop; if(!s) return;
-  s.picks.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
-    const slot=document.getElementById('shopPick'+i); if(!slot || slot.dataset.ck!==ck) return;
+// 卡片＋懶載封面（唱片行三個畫面共用）
+function shopCardsLazy(cards, prefix){
+  cards.forEach((c,i)=>{ if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
+    const slot=document.getElementById(prefix+i); if(!slot || slot.dataset.ck!==ck) return;
     const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
 }
-function shopSwapAsk(i){ const s=shopState(); if(s.swaps<=0) return; s.swapIdx = (s.swapIdx===i) ? -1 : i; renderShopPicks(); }
-function shopSwap(i, lean){
-  const s=shopState(); if(s.swaps<=0 || !s.picks[i]) return;
-  let cand=shopCandidates(lean, s.shown);
-  if(!cand.length) cand=shopCandidates(null, s.shown);   // 那一架翻完了 → 老闆隨便拿
-  if(!cand.length){ seedToast('老闆：「架上沒別的了。」'); s.swapIdx=-1; renderShopPicks(); return; }
-  const c={...pick(cand)};
-  s.picks[i]=c; s.shown.push(keyOf(c));
-  s.swaps--; s.swapIdx=-1;
-  s.line = s.swaps>0 ? pick(SHOP_SWAP_LINES) : SHOP_SWAP_LAST;
-  renderShopPicks();
-}
-function starterCards(){
-  return ((META && META.profile && META.profile.albums)||[]).map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null}));
-}
-// 老闆推薦的三張盤直接進收藏（永久；重逛唱片行只會補進還沒有的）
-function mergeStarterIntoCollection(m){
-  if(!m || !m.profile || !Array.isArray(m.profile.albums)) return;
-  if(!Array.isArray(m.collection)) m.collection=[];
-  const owned=new Set(m.collection.map(keyOf));
-  for(const c of m.profile.albums){ if(owned.has(keyOf(c))) continue;
-    m.collection.push({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null}); owned.add(keyOf(c)); }
-}
-function shopCheckout(){
-  const s=shopState(); if(s.picks.length!==3) return;
-  const axis=shopDominant(s.picks, s.ask);
-  META.profile = { axis, ask:s.ask, at:Date.now(),
-    albums:s.picks.map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
-  mergeStarterIntoCollection(META);
-  saveMeta();
-  renderShopDone();
-}
-// 5. 結帳：老闆宣告你的耳朵 → 教學或直接開打
-function renderShopDone(){
+// 3. 三張頂點卡三選一：老闆把櫃子最裡面那格的三張拿出來，一張＝一個軸
+function renderShopAces(){
   document.body.classList.remove('in-battle');
-  const s=shopState(); const pf=META.profile; const p=ROOKIE_PROFILES[pf.axis];
-  const wantTut = s.after==='tutorial' || !META.tutorialDone;
-  const tutBtn = `<button class="btn ${wantTut?'primary':''}" style="width:100%;${wantTut?'border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px':'margin-top:6px;font-size:10px'}" onclick="shopLeave('tutorial')">🎓 ${META.tutorialDone?'再上一次老闆的課（教學兩場）':'老闆帶你打兩場（教學）'}</button>`;
-  const playBtn = `<button class="btn ${wantTut?'':'primary'}" style="width:100%;${wantTut?'margin-top:6px;font-size:10px':'border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px'}" onclick="shopLeave('play')">${wantTut?'⏭ 我自己來，直接開打':'▶ 抱著這三張直接開打'}</button>`;
+  const s=shopState();
+  const rows = ATTRS.map(a=>{
+    const set=TUT_SETS[a], c=set.ace, info=SHOP_ACE_INFO[a], p=ROOKIE_PROFILES[a];
+    return `<div class="acepick ${s.axis===a?'on':''}" id="acePick_${a}" data-ck="${keyOf(c)}" onclick="shopPickAce('${a}')">
+      <div class="acecard">${cardHTML(c,{cover:true})}</div>
+      <div class="aceinfo">
+        <div class="acettl"><b style="color:var(--${a})">${ATTR_ZH[a]}</b>軸 · <span style="color:var(--gold)">${info.title}王牌</span></div>
+        <div class="acewhat">${ATTR_ZH[a]}＝${info.what}${info.star}</div>
+        <div class="acefx">★ ${info.passive}<br>⚔ ${info.beats}</div>
+        <div class="aceyou">選它 → 你是<b>【${p.name}】</b>：<span class="s-atk">攻${p.stats.atk}</span> <span class="s-def">防${p.stats.def}</span> <span class="s-qir">勢${p.stats.qir}</span></div>
+      </div>
+      <div class="acecheck">${s.axis===a?'✓':''}</div>
+    </div>`;
+  }).join('');
   $app.innerHTML = shopShellHTML(`
-    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">${p.line}</span><br>
-      <span class="narr">老闆把三張盤裝進紙袋，在會員簿上寫了幾個字：</span><br>
-      <b style="color:var(--gold)">${playerLabel()}——${p.name}</b><span class="narr">。${p.desc}</span></div></div>
+    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">「${playerLabel()}是吧。」</span><span class="narr">老闆把抹布放下，從櫃子最裡面那格抽出三張。</span><br>
+      <span class="say">「先看這三張——店裡最貴的三張，各是一種極端。挑一張，看你是哪種耳朵。」</span></div></div>
+    <div class="muted" style="margin:10px 0 2px">每張盤有<b style="color:var(--classic)">經典</b>／<b style="color:var(--obscurity)">冷門</b>／<b style="color:var(--accessibility)">硬蕊</b>三軸星數（一般 1～5）。這三張各把一軸衝到 <b>7</b>，是<b style="color:var(--gold)">王牌</b>：不會被相剋，對手要放品味輾壓時打出它＝<b>七星回擊</b>。</div>
+    <div class="muted" style="margin:0 0 6px;font-size:10px">相剋一圈：冷門剋經典 → 經典剋硬蕊 → 硬蕊剋冷門。點卡片選，長按或點封面看介紹。</div>
+    <div id="acePicks">${rows}</div>
+    <div class="row" style="margin-top:10px"><button class="btn primary" id="aceGo" style="flex:1;font-size:13px;padding:12px;${s.axis?'border-color:var(--gold);background:var(--gold)':''}" ${s.axis?'':'disabled'} onclick="shopConfirmAce()">${s.axis?`就這張：${escHtml(TUT_SETS[s.axis].ace.album)} ▸`:'先挑一張'}</button></div>`, '序章 · 櫃台');
+  ATTRS.forEach(a=>{ const el=document.querySelector(`#acePick_${a} .acecard`); if(el){ el.onclick=(e)=>{ e.stopPropagation(); openCardInfo(TUT_SETS[a].ace); }; } });
+  ATTRS.forEach((a,i)=>{ const c=TUT_SETS[a].ace; if(c.coverUrl) return; const ck=keyOf(c); ensureCover(c).then(url=>{ if(!url) return;
+    const slot=document.getElementById('acePick_'+a); if(!slot || slot.dataset.ck!==ck) return;
+    const cov=slot.querySelector('.cover'); if(cov){ cov.classList.remove('noimg'); cov.innerHTML=''; cov.style.backgroundImage=`url('${String(url).replace(/'/g,'%27')}')`; } }); });
+}
+function shopPickAce(axis){
+  const s=shopState(); if(!TUT_SETS[axis]) return;
+  s.axis = axis;
+  ATTRS.forEach(a=>{ const el=document.getElementById('acePick_'+a); if(el){ el.classList.toggle('on', a===axis); const ck=el.querySelector('.acecheck'); if(ck) ck.textContent = a===axis?'✓':''; } });
+  const go=document.getElementById('aceGo'); if(go){ go.disabled=false; go.style.borderColor='var(--gold)'; go.style.background='var(--gold)'; go.textContent=`就這張：${TUT_SETS[axis].ace.album} ▸`; }
+}
+function shopConfirmAce(){ const s=shopState(); if(!s.axis) return; renderShopRecs(); }
+// 4. 老闆「內行喔」→ 再推四張走同一條路的盤（固定四張＝教學課表用的那四張）
+function renderShopRecs(){
+  document.body.classList.remove('in-battle');
+  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set){ renderShopAces(); return; }
+  const info=SHOP_ACE_INFO[s.axis], p=ROOKIE_PROFILES[s.axis];
+  const cards=set.recs.map((c,i)=>`<div id="shopRec${i}" data-ck="${keyOf(c).replace(/"/g,'&quot;')}">
+      ${cardHTML(c,{cover:true}).replace('class="card','class="card fresh')}
+      <div class="pitch">${set.pitch[i]||''}</div>
+      <div class="pickbtns"><button class="btn" onclick="openCardInfo(TUT_SETS['${s.axis}'].recs[${i}])">👁 介紹</button></div>
+    </div>`).join('');
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="say">${info.pick}</span><br>
+      <span class="narr">他轉身在架上抽了四張，疊在【${escHtml(set.ace.album)}】上面。</span><br>
+      <span class="say">「那這四張你一定也要——走的是同一條路，都偏${ATTR_ZH[s.axis]}。」</span></div></div>
     <div class="charcard" style="margin-top:12px">
-      <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 56)}</div>
+      <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 48)}</div>
       <div style="flex:1;min-width:0">
         <div><b style="font-size:13px">${playerLabel()}</b> <span class="pill" style="color:var(--gold);border-color:var(--gold)">${p.name}</span> <span class="muted">${p.tag}</span></div>
-        <div class="statline" style="margin:4px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span><span class="muted">起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}</span></div>
+        <div class="statline" style="margin:3px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span><span class="muted">起始HP ${CFG.startHp+CLASSES.guard.maxHpBonus}</span></div>
         <div class="muted" style="font-size:10px;color:var(--gold)">★ ${p.affDesc}</div>
       </div>
     </div>
-    <div class="muted" style="font-size:10px;margin:2px 0 8px">🛍 紙袋裡：${pf.albums.map(a=>`<b>${escHtml(a.album)}</b>`).join('・')}——已收進你的收藏，開局會直接發到手上。</div>
-    ${wantTut?tutBtn+playBtn:playBtn+tutBtn}
+    <div class="muted" style="margin:6px 0 0">王牌＋這四張＝你的起始牌組（開局直接發到手上）。點「👁 介紹」看簡介與試聽。</div>
+    <div class="shop-picks four">${cards}</div>
+    <div class="row" style="margin-top:10px"><button class="btn" onclick="renderShopAces()">← 換一張王牌</button><button class="btn primary" style="flex:1;border-color:var(--gold);background:var(--gold);font-size:13px;padding:12px" onclick="shopCheckout()">💳 結帳（1 張王牌＋4 張）▸</button></div>`, '序章 · 櫃台');
+  shopCardsLazy(set.recs, 'shopRec');
+}
+function starterCards(){
+  const pf=META && META.profile; if(!pf) return [];
+  const norm=c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
+  return (pf.ace?[pf.ace]:[]).concat(pf.albums||[]).map(norm);
+}
+// 老闆賣你的五張直接進收藏（永久；重逛只補還沒有的）
+function mergeStarterIntoCollection(m){
+  if(!m || !m.profile) return;
+  if(!Array.isArray(m.collection)) m.collection=[];
+  const owned=new Set(m.collection.map(keyOf));
+  const all=(m.profile.ace?[m.profile.ace]:[]).concat(m.profile.albums||[]);
+  for(const c of all){ if(owned.has(keyOf(c))) continue;
+    m.collection.push({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null}); owned.add(keyOf(c)); }
+}
+function shopCheckout(){
+  const s=shopState(); const set=TUT_SETS[s.axis]; if(!set) return;
+  const norm=c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null});
+  META.profile = { axis:s.axis, at:Date.now(), ace:norm(set.ace), albums:set.recs.map(norm) };
+  mergeStarterIntoCollection(META);
+  saveMeta();
+  renderShopCustomer();
+}
+// 5. 結完帳，一個客人進來嗆你品味差 → 老闆：要比就用盤比（＝老闆帶打教學，第一場的對手就是他）
+function renderShopCustomer(){
+  document.body.classList.remove('in-battle');
+  const s=shopState(); const pf=META.profile; const p=ROOKIE_PROFILES[pf.axis];
+  $app.innerHTML = shopShellHTML(`
+    <div class="shop-scene">${ownerHTML()}<div class="bubble"><span class="narr">老闆把五張盤裝進紙袋，在會員簿上寫下：</span><b style="color:var(--gold)">${playerLabel()}——${p.name}</b><span class="narr">。${p.desc}</span></div></div>
+    <div class="shop-scene" style="margin-top:12px"><div class="owner">${pixArtHTML(SPR.e0, 56)}客人</div><div class="bubble foe">
+      <span class="narr">門上的鈴鐺又響了。一個戴著耳機的客人走進來，眼睛掃過你手上的紙袋。</span><br>
+      <span class="say">「${escHtml(pf.ace.album)}？」</span><span class="narr">他笑了一聲。</span><span class="say">「裝內行喔。這種品味也敢在這家店結帳？」</span></div></div>
+    <div class="shop-scene" style="margin-top:12px">${ownerHTML()}<div class="bubble"><span class="say">「……別在我店裡吵。要比就用盤比。」</span><span class="narr">老闆看了你一眼。</span><span class="say">「我在旁邊講，你照做。」</span></div></div>
+    <button class="btn primary" style="width:100%;margin-top:14px;border-color:var(--gold);background:var(--gold);font-size:14px;padding:12px" onclick="shopLeave('tutorial')">⚔ 跟他比（老闆帶打・教學兩場）</button>
+    <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="shopLeave('play')">⏭ 不理他，直接開打</button>
     <div class="muted" style="font-size:10px;line-height:1.9;margin-top:10px">
-      🎧 老闆帶打的兩場照他的套路走（借你他的盤）；第三場起換回你自己的三圍與專長。<br>
+      🎧 帶打兩場用的就是紙袋裡這五張；老闆講的兩場照他的套路走，第三場起換回你自己的三圍與專長。<br>
       🔒 樂歷 <b>Lv.3「出師」</b>後改為自選流派（守舊／挖掘／異端）；名字與造型會一直跟著你。</div>`, '結帳');
 }
 function shopLeave(how){
@@ -2217,22 +2158,21 @@ function shopLeave(how){
   if(how==='tutorial'){ startTutorialGuarded(); return; }
   rookieQuickStart();
 }
-function shopRevisit(){ _shop=null; shopState(); renderShopAsk(); }
 // 首頁的角色卡（新手首頁＋出師後的選流派畫面共用）
 function charCardHTML(){
   const p = META.profile && ROOKIE_PROFILES[META.profile.axis];
   const rookie = !hasUnlock('classes');
   if(!META.avatar && !p) return `<div class="row" style="margin:4px 0 8px"><button class="btn" style="font-size:10px;padding:5px 9px" onclick="renderCharCreate('home')">✏️ 捏角色（名字與像素造型）</button></div>`;
   const statLine = (rookie && p) ? `<div class="statline" style="margin:3px 0"><span class="s-atk">攻 <b>${p.stats.atk}</b></span><span class="s-def">防 <b>${p.stats.def}</b></span><span class="s-qir">氣勢率 <b>${p.stats.qir}</b></span></div><div class="muted" style="font-size:10px;color:var(--gold)">★ ${p.affDesc}</div>` : '';
-  const shelf = (rookie && p) ? `<div class="muted" style="font-size:10px;margin-top:2px">🏪 老闆推薦：${META.profile.albums.map(a=>escHtml(a.album)).join('・')}</div>` : '';
+  const bag = (rookie && p) ? `<div class="muted" style="font-size:10px;margin-top:2px">🛍 老闆賣你的：<b style="color:var(--gold)">${escHtml(META.profile.ace?META.profile.ace.album:'')}</b>・${(META.profile.albums||[]).map(a=>escHtml(a.album)).join('・')}</div>` : '';
   return `<div class="charcard">
       <div class="avbig">${pixArtHTML(avatarRows(META.avatar), 48)}</div>
       <div style="flex:1;min-width:0">
         <div><b style="font-size:13px">${playerLabel()}</b> ${p&&rookie?`<span class="pill" style="color:var(--gold);border-color:var(--gold)">${p.name}</span>`:''}</div>
-        ${statLine}${shelf}
+        ${statLine}${bag}
       </div>
     </div>
-    <div class="row" style="gap:6px;margin:0 0 10px"><button class="btn" style="font-size:10px;padding:6px 10px" onclick="renderCharCreate('home')">✏️ 捏角色</button>${rookie?`<button class="btn" style="font-size:10px;padding:6px 10px" onclick="shopRevisit()">🏪 再逛唱片行（換三張盤）</button>`:''}</div>`;
+    <div class="row" style="gap:6px;margin:0 0 10px"><button class="btn" style="font-size:10px;padding:6px 10px" onclick="renderCharCreate('home')">✏️ 捏角色</button></div>`;
 }
 // 出師前：耳朵決定三圍與專長（流派仍掛守舊派，HP 緩衝沿用）；出師後由自選流派決定
 function applyRookieProfile(){
@@ -2626,104 +2566,162 @@ function afterLevelQueue(){
 
 // =========================================================================
 //  🎙 老闆帶打（第一趟前兩場的腳本化教學）＋一次性提示
-//  兩場課表——上：比星數＋三種相剋各用一次＋品味輾壓；下：相生連段＋被剋會痛＋割捨防禦擋大絕。
+//  兩場課表——上：比星數＋三種相剋各用一次＋品味輾壓；下：相生連段＋被剋會痛＋擋下大絕
+//  （手上有王牌＝七星回擊；沒有＝割捨防禦）。
 //  引導方式＝「指出正確的按鈕」而非藏掉其他按鈕：介面照常，該按的發金光，按錯老闆出聲糾正。
-//  數值全程確定（守舊派 攻1、敵三圍0）：每回合傷害／氣勢都算死，兩場都照劇本收尾、玩家最多痛 1 滴。
+//  數值全程確定（守舊派 攻1 防2、敵三圍0、雙方牌庫不洗）：每回合傷害都算得出來，
+//  敵方 HP 由課表實際用到的牌反推（tutBuild，含敵方出經典回血），所以 🏪 唱片行三套牌組與舊版固定牌組都照劇本收尾。
 // =========================================================================
-const _tc=(artist,album,c,o,a)=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null});
-// 劇本核心五張（兩場共用；drawCard 從陣列尾端抽 → 排尾端的一定進起手）
-const TUT_CORE = {
-  revolver:_tc('The Beatles','Revolver',5,1,3),
-  kob:_tc('Miles Davis','Kind of Blue',5,2,3),
-  longseason:_tc('Fishmans','Long Season',2,5,3),
-  untrue:_tc('Burial','Untrue',3,4,4),
-  moneystore:_tc('Death Grips','The Money Store',3,4,5),
-  ruins:_tc('Grouper','Ruins',2,4,3),
+const _tc=(artist,album,c,o,a,ace)=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:ace||null});
+// 教學牌組：唱片行開場的「1 張頂點卡＋老闆推的 4 張」各一套（key 對齊 ATTRS）；
+// 四張推薦盤都走該軸的路，但另外兩軸至少 3 星——課表才有牌可以示範三種相剋。
+// f1＝第一場四手用的牌（比星數／冷剋經／經剋硬／硬剋冷），f2＝第二場五手（經／冷／擋大絕／經／冷）；'ace' 指頂點卡、數字指 recs 索引。
+// legacy＝沒逛過唱片行（舊玩家、出師後重玩教學）的原版固定牌組：沒王牌 → 第二場第 3 手教割捨防禦。
+const TUT_SETS = {
+  classic: { who:['嗆你的客人','客人的朋友'],
+    ace:_tc('Radiohead','OK Computer',7,1,1,'hall'),
+    recs:[ _tc('David Bowie','Low',4,3,3), _tc('Joy Division','Unknown Pleasures',4,3,3), _tc('Sonic Youth','Daydream Nation',4,3,3), _tc('Nick Drake','Pink Moon',4,3,2) ],
+    pitch:['「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」','「封面你八成在 T 恤上看過。裡面的東西比 T 恤冷得多。」','「雙碟，吉他調成你沒聽過的音。年輕人的噪音教科書。」','「一個人、一把吉他、不到半小時。他生前沒幾個人買。」'],
+    fillers:[ _tc('Television','Marquee Moon',4,3,2), _tc('Kraftwerk','Trans-Europe Express',4,3,2), _tc('Pixies','Surfer Rosa',4,2,2), _tc('Black Sabbath','Paranoid',4,2,2) ],
+    f1:['ace',0,1,2], f2:[0,1,'ace',2,3] },
+  obscurity: { who:['嗆你的客人','客人的朋友'],
+    ace:_tc('Midori Takada','Through the Looking Glass',1,7,1,'pearl'),
+    recs:[ _tc('Vashti Bunyan','Just Another Diamond Day',3,5,2), _tc('Karen Dalton','In My Own Time',3,5,3), _tc('Bark Psychosis','Hex',2,5,4), _tc('Big Star','Third/Sister Lovers',3,4,3) ],
+    pitch:['「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」','「她不寫歌，唱別人的歌卻比原唱還像自己的。」','「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」','「錄完沒人敢發，擱了好幾年。崩潰的人做出來的美。」'],
+    fillers:[ _tc('Duster','Stratosphere',2,5,3), _tc('Codeine','Frigid Stars',2,5,3), _tc('Judee Sill','Judee Sill',3,5,3), _tc('Broadcast','Tender Buttons',2,4,3) ],
+    f1:['ace',0,1,2], f2:[1,0,'ace',3,2] },
+  accessibility: { who:['嗆你的客人','客人的朋友'],
+    ace:_tc('Merzbow','Pulse Demon',1,1,7,'heresy'),
+    recs:[ _tc('The Velvet Underground','White Light/White Heat',4,4,5), _tc('Scott Walker','Tilt',3,4,5), _tc('Can','Tago Mago',4,4,4), _tc('Suicide','Suicide',3,4,4) ],
+    pitch:['「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」','「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」','「雙碟。日本主唱是在慕尼黑街頭被他們撿到的。」','「一台鼓機、一台琴、一個人在吼。1977 年的觀眾拿東西丟他們。」'],
+    fillers:[ _tc('Swans','Soundtracks for the Blind',3,4,5), _tc('This Heat','Deceit',2,5,5), _tc('Converge','Jane Doe',3,4,4), _tc('Public Image Ltd','Metal Box',3,5,4) ],
+    f1:['ace',0,2,1], f2:[0,1,'ace',2,3] },
+  legacy: { who:['音樂小白','文青同好'],
+    ace:null,
+    recs:[ _tc('The Beatles','Revolver',5,1,3), _tc('Miles Davis','Kind of Blue',5,2,3), _tc('Fishmans','Long Season',2,5,3), _tc('Death Grips','The Money Store',3,4,5), _tc('Burial','Untrue',3,4,4), _tc('Grouper','Ruins',2,4,3) ],
+    fillers:[ _tc('Portishead','Dummy',4,2,2), _tc('Daft Punk','Discovery',4,1,1), _tc('Fleetwood Mac','Rumours',4,1,1), _tc('Massive Attack','Mezzanine',4,3,3) ],
+    hand1:[0,1,2,3,4], hand2:[0,1,2,5,4], draw2:[3],
+    f1:[0,2,1,3], f2:[0,2,4,1,5] },
 };
-// 玩家牌庫（前段＝墊牌，供每回合抽；尾端五張＝起手手牌）
-const TUT1_PDECK = [ _tc('Portishead','Dummy',4,2,2), _tc('Daft Punk','Discovery',4,1,1),
-  _tc('Fleetwood Mac','Rumours',4,1,1), _tc('Massive Attack','Mezzanine',4,3,3),
-  TUT_CORE.untrue, TUT_CORE.moneystore, TUT_CORE.longseason, TUT_CORE.kob, TUT_CORE.revolver ];
-const TUT2_PDECK = [ _tc('Massive Attack','Mezzanine',4,3,3), _tc('Portishead','Dummy',4,2,2),
-  _tc('Daft Punk','Discovery',4,1,1), _tc('Fleetwood Mac','Rumours',4,1,1), TUT_CORE.moneystore,
-  TUT_CORE.untrue, TUT_CORE.ruins, TUT_CORE.longseason, TUT_CORE.kob, TUT_CORE.revolver ];
-// 敵方牌庫（不洗牌；尾端五張＝敵方起手）。第一場：經×2＋硬＋冷（供三種相剋各上一課）；
-// 第二場：經典牌牆＋一張硬蕊 4★（剋玩家 5★ 不會被數值輾壓翻盤擋掉）。
-const TUT1_EDECK = [ _tc('Ed Sheeran','÷',1,1,1), _tc('Maroon 5','Songs About Jane',1,1,1),
-  _tc('Bruno Mars','Doo-Wops & Hooligans',1,1,1), _tc('Rihanna','Loud',1,1,1),
-  _tc('Justin Bieber','Purpose',1,1,1),
-  _tc('Cigarettes After Sex','Cigarettes After Sex',1,2,1),   // 冷 2（第四課：被硬蕊拆穿）
-  _tc('Linkin Park','Hybrid Theory',1,1,2),                   // 硬 2（第三課：被經典壓過）
-  _tc('Coldplay','Parachutes',2,1,1), _tc('Taylor Swift','1989',2,1,1) ];
-const TUT2_EDECK = [ _tc('Ed Sheeran','÷',1,1,1), _tc('Bruno Mars','Doo-Wops & Hooligans',1,1,1),
-  _tc('Rihanna','Loud',1,1,1), _tc('Maroon 5','Songs About Jane',1,1,1),
-  // 剋你冷門的那張硬蕊要「經典壓到 1」：不然它會在第 1 手就被 AI 當最高經典牌打掉、整個課表歪掉
-  _tc('Adele','21',2,1,1), _tc('Merzbow','Pulse Demon',1,3,5),
-  _tc('Coldplay','Parachutes',2,1,1), _tc('Coldplay','A Rush of Blood to the Head',2,1,1),
-  _tc('Taylor Swift','1989',2,1,1) ];
-// 課表：eAttr＝敵方這回合出的牌型（誠實露氣場）、eUlt＝敵方放大絕；want/attr＝要引導玩家按的那一手
-const TUT_SCRIPT = {
-  1:{ who:'音樂小白', hp:23, startQi:0, pdeck:TUT1_PDECK, edeck:TUT1_EDECK,
-      intro:'🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓',
-      steps:{
-        1:{ eAttr:'classic', want:'the beatles|revolver', attr:'classic',
-            txt:'🎙 老闆：每張盤有<b style="color:var(--classic)">經典</b>／<b style="color:var(--obscurity)">冷門</b>／<b style="color:var(--accessibility)">硬蕊</b>三軸星數（點牌就看得到）。點【Revolver】按發光的「經」——沒相剋就<b>比星數</b>，差幾星扣幾滴血。' },
-        2:{ eAttr:'classic', want:'fishmans|long season', attr:'obscurity',
-            txt:'🎙 老闆：相剋第一課【<b>冷門剋經典</b>】——他又要出經典，點【Long Season】按「冷」戳他：剋中照你整張的星數扣血、氣勢大漲。' },
-        3:{ eAttr:'accessibility', want:'miles davis|kind of blue', attr:'classic',
-            txt:'🎙 老闆：第二課【<b>經典剋硬蕊</b>】——他改走前衛硬蕊，用【Kind of Blue】按「經」正面壓過去。（⚡氣勢滿了？先留著，最後有用）' },
-        4:{ eAttr:'obscurity', want:'death grips|the money store', attr:'accessibility',
-            txt:'🎙 老闆：第三課【<b>硬蕊剋冷門</b>】——他挖冷門裝神祕，用【The Money Store】按「硬」拆穿他：稀有不等於厲害。' },
-        5:{ eAttr:'classic', want:null, attr:'__ult__',
-            txt:'🎙 老闆：三種相剋都會了！氣勢滿 6 可以放大絕——點任一張牌、按「<b>⚡ 品味輾壓</b>」收下這場。' },
-      },
-      outro:'🎙 老闆：基本功成了！選個獎勵喘口氣——下一場教你連段充氣勢、還有怎麼擋對手的大絕。' },
-  2:{ who:'文青同好', hp:9, startQi:5, pdeck:TUT2_PDECK, edeck:TUT2_EDECK,
-      intro:'🎙 老闆帶打（下）· 進階——相生連段、擋下品味輾壓',
-      steps:{
-        1:{ eAttr:'classic', want:'the beatles|revolver', attr:'classic',
-            txt:'🎙 老闆：這位有備而來（看他氣勢條！）。進階課【<b>相生連段</b>】：照 經典→冷門→硬蕊 的順序接招會多充氣勢。先出【Revolver】的「經」開頭。' },
-        2:{ eAttr:'accessibility', want:'fishmans|long season', attr:'obscurity',
-            txt:'🎙 老闆：接【Long Season】的「冷」＝<b>2 連</b>多充氣勢。欸，他氣場偏硬蕊——硬剋冷，這手會痛一下，但連段值得，忍著。' },
-        3:{ eAttr:'classic', eUlt:true, want:'burial|untrue', attr:'__sac__',
-            txt:'🎙 老闆：他氣勢滿了、要放大絕！手上沒王牌就<b>用牌擋</b>——點【Untrue】按「<b>🛡 割捨防禦</b>」：犧牲那張牌抵傷（有王牌時打出王牌更猛，直接反彈）。' },
-        4:{ eAttr:'classic', want:'miles davis|kind of blue', attr:'classic',
-            txt:'🎙 老闆：剛才被剋痛了一下吧？<b>相剋是雙向的</b>，讀氣場防著點。重鋪連段——出【Kind of Blue】的「經」。' },
-        5:{ eAttr:'classic', want:'grouper|ruins', attr:'obscurity', alt:'__ult__',
-            txt:'🎙 老闆：收尾——【Ruins】的「冷」既接連段<b>又剋他的經典</b>，一石二鳥！（氣勢滿了想直接 ⚡輾壓 也行）' },
-      },
-      outro:'🎙 老闆：出師前的課都教完了！之後每贏一場挑個獎勵、每五場有位大人物在等你——剩下的牌桌上學。' },
+// 敵方牌組：第一場起手＝比星數那軸 2 星 ×2＋另外兩軸各一張 2 星＋一張 1 星（三種相剋各上一課）；
+// 第二場＝經典牌牆＋一張硬蕊 5★（剋你冷門那手要痛一下；經典壓到 1，不然第 1 手就被 AI 當最高經典牌打掉）。
+const TUT_E_FILL=[ _tc('Ed Sheeran','÷',1,1,1), _tc('Maroon 5','Songs About Jane',1,1,1), _tc('Bruno Mars','Doo-Wops & Hooligans',1,1,1), _tc('Rihanna','Loud',1,1,1) ];
+const TUT_E_HAND1 = {
+  classic:      [ _tc('Justin Bieber','Purpose',1,1,1), _tc('Cigarettes After Sex','Cigarettes After Sex',1,2,1), _tc('Linkin Park','Hybrid Theory',1,1,2), _tc('Coldplay','Parachutes',2,1,1), _tc('Taylor Swift','1989',2,1,1) ],
+  obscurity:    [ _tc('Justin Bieber','Purpose',1,1,1), _tc('Cigarettes After Sex','Cigarettes After Sex',1,2,1), _tc('Linkin Park','Hybrid Theory',1,1,2), _tc('Coldplay','Parachutes',2,1,1), _tc('Mac DeMarco','Salad Days',1,2,1) ],
+  accessibility:[ _tc('Justin Bieber','Purpose',1,1,1), _tc('Cigarettes After Sex','Cigarettes After Sex',1,2,1), _tc('Linkin Park','Hybrid Theory',1,1,2), _tc('Coldplay','Parachutes',2,1,1), _tc('Bring Me the Horizon','Sempiternal',1,1,2) ],
 };
-function tutStep(){ return (G && G.tut && TUT_SCRIPT[G.tut.fight]) ? TUT_SCRIPT[G.tut.fight].steps[G.tut.step] : null; }
+const TUT_E_HAND2 = [ _tc('Adele','21',2,1,1), _tc('Wolf Eyes','Burned Mind',1,3,5), _tc('Coldplay','Parachutes',2,1,1), _tc('Coldplay','A Rush of Blood to the Head',2,1,1), _tc('Taylor Swift','1989',2,1,1) ];
+// 牌庫排法：drawCard 從陣列尾端 pop → 尾端五張＝起手；前段＝墊牌（越後面越先抽到）
+const _tutDeck=(draws,hand)=>draws.slice().reverse().concat(hand);
+// 依牌組把兩場課表生出來（含敵方 HP：第一場＝四手傷害＋1 讓輾壓收尾；第二場＝撐過王牌反傷／割捨後剩 2 滴，第五手收）
+function tutBuild(setKey, atk){
+  const set=TUT_SETS[setKey]||TUT_SETS.legacy;
+  const axis = set.ace ? ATTRS.find(a=>set.ace[a]>5) : 'classic';
+  const cardOf=i=> i==='ace' ? set.ace : set.recs[i];
+  const seeds = set.ace ? [set.ace].concat(set.recs) : set.recs.slice(0,5);
+  const hand1 = set.hand1 ? set.hand1.map(i=>set.recs[i]) : seeds;
+  const hand2 = set.hand2 ? set.hand2.map(i=>set.recs[i]) : seeds;
+  const draw2 = (set.draw2||[]).map(i=>set.recs[i]).concat(set.fillers);
+  const B=s=>`<b style="color:var(--${s})">${ATTR_ZH[s]}</b>`;
+  const cmp=(p,e)=> p>e ? (p-e)+atk : 0;   // 純比星：差幾星扣幾滴（＋攻擊）
+  const hit=p=> p+atk;                     // 相剋命中：該招星數（＋攻擊）
+  // ── 第一場：比星數（敵方出同軸 2★）→ 冷剋經 → 經剋硬 → 硬剋冷 → 品味輾壓
+  const c1=cardOf(set.f1[0]), c2=cardOf(set.f1[1]), c3=cardOf(set.f1[2]), c4=cardOf(set.f1[3]);
+  // 敵方出【經典】那幾手會回 1 滴（屬性效果〔守〕，在扣血之後才回）：第 2 手固定經典，第 1 手若比星軸也是經典再加一次
+  const heal1 = 1 + (axis==='classic'?1:0);
+  const hp1 = cmp(c1[axis],2) + hit(c2.obscurity) + hit(c3.classic) + hit(c4.accessibility) - heal1 + 2;   // 第 4 手打完剩 2 滴 → 輾壓（不回血的回合）收尾
+  const aceIntro = set.ace
+    ? `你的【${c1.album}】是<b style="color:var(--gold)">${ACE_ZH[set.ace.ace]}王牌</b>，${B(axis)} 7 星——點它按發光的「${ATTR_ZH[axis].charAt(0)}」：`
+    : `點【${c1.album}】按發光的「${ATTR_ZH[axis].charAt(0)}」——`;
+  const f1 = { who:set.who[0], hp:hp1, startQi:0,
+    pdeck:_tutDeck(set.fillers, hand1), edeck:_tutDeck(TUT_E_FILL, TUT_E_HAND1[axis]||TUT_E_HAND1.classic),
+    intro: set.ace ? '🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓。把他打回去。' : '🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓',
+    steps:{
+      1:{ eAttr:axis, card:c1, attr:axis,
+          txt:`🎙 老闆：每張盤有${B('classic')}／${B('obscurity')}／${B('accessibility')}三軸星數（點牌就看得到）。${aceIntro}沒相剋就<b>比星數</b>，差幾星扣幾滴血。` },
+      2:{ eAttr:'classic', card:c2, attr:'obscurity',
+          txt:`🎙 老闆：相剋第一課【<b>冷門剋經典</b>】——他要出經典，點【${c2.album}】按「冷」戳他：剋中照你那一軸的星數扣血、氣勢大漲。` },
+      3:{ eAttr:'accessibility', card:c3, attr:'classic',
+          txt:`🎙 老闆：第二課【<b>經典剋硬蕊</b>】——他改走前衛硬蕊，用【${c3.album}】按「經」正面壓過去。（⚡氣勢滿了？先留著，最後有用）` },
+      4:{ eAttr:'obscurity', card:c4, attr:'accessibility',
+          txt:`🎙 老闆：第三課【<b>硬蕊剋冷門</b>】——他挖冷門裝神祕，用【${c4.album}】按「硬」拆穿他：稀有不等於厲害。` },
+      5:{ eAttr:'classic', card:null, attr:'__ult__',
+          txt:'🎙 老闆：三種相剋都會了！氣勢滿 6 可以放大絕——點任一張牌、按「<b>⚡ 品味輾壓</b>」收下這場。' },
+    },
+    outro: set.ace ? '🎙 老闆：基本功成了！選個獎勵喘口氣——他不服氣，把朋友叫來了。下一場教你連段充氣勢、還有怎麼用王牌擋大絕。'
+                   : '🎙 老闆：基本功成了！選個獎勵喘口氣——下一場教你連段充氣勢、還有怎麼擋對手的大絕。' };
+  // ── 第二場：經（開連段）→ 冷（2 連，被硬蕊剋會痛）→ 敵放大絕：王牌七星回擊／割捨防禦 → 經（重鋪）→ 冷（連段＋剋經典收尾）
+  const d1=cardOf(set.f2[0]), d2=cardOf(set.f2[1]), d3=cardOf(set.f2[2]), d4=cardOf(set.f2[3]), d5=cardOf(set.f2[4]);
+  const block = set.ace ? (7+atk) : 0;   // 七星回擊反傷＝王牌最高星＋攻擊；割捨不反傷
+  // 第 1、4 手敵方出經典各回 1 滴；第 3 手是輾壓回合不回血；第 4 手打完剩 2 滴，第 5 手冷門剋經典至少 4 傷（回 1 滴也救不回）
+  const hp2 = (cmp(d1.classic,2)-1) + block + (cmp(d4.classic,2)-1) + 2;
+  const step3 = set.ace
+    ? { eAttr:'classic', eUlt:true, card:d3, attr:axis,
+        txt:`🎙 老闆：他氣勢滿了、要放大絕！你手上有<b>王牌</b>——點【${d3.album}】按「${ATTR_ZH[axis].charAt(0)}」：<b>七星回擊</b>，他的輾壓無效，還反傷他 ${block}。王牌不會被消耗。` }
+    : { eAttr:'classic', eUlt:true, card:d3, attr:'__sac__',
+        txt:`🎙 老闆：他氣勢滿了、要放大絕！手上沒王牌就<b>用牌擋</b>——點【${d3.album}】按「<b>🛡 割捨防禦</b>」：犧牲那張牌抵傷（有王牌時打出王牌更猛，直接反彈）。` };
+  const f2 = { who:set.who[1], hp:hp2, startQi:5,
+    pdeck:_tutDeck(draw2, hand2), edeck:_tutDeck(TUT_E_FILL, TUT_E_HAND2),
+    intro: set.ace ? '🎙 老闆帶打（下）· 進階——相生連段、用王牌擋下品味輾壓' : '🎙 老闆帶打（下）· 進階——相生連段、擋下品味輾壓',
+    steps:{
+      1:{ eAttr:'classic', card:d1, attr:'classic',
+          txt:`🎙 老闆：這位有備而來（看他氣勢條！）。進階課【<b>相生連段</b>】：照 經典→冷門→硬蕊 的順序接招會多充氣勢。先出【${d1.album}】的「經」開頭。` },
+      2:{ eAttr:'accessibility', card:d2, attr:'obscurity',
+          txt:`🎙 老闆：接【${d2.album}】的「冷」＝<b>2 連</b>多充氣勢。欸，他氣場偏硬蕊——硬剋冷，這手會痛一下，但連段值得，忍著。` },
+      3:step3,
+      4:{ eAttr:'classic', card:d4, attr:'classic',
+          txt:`🎙 老闆：剛才被剋痛了一下吧？<b>相剋是雙向的</b>，讀氣場防著點。重鋪連段——出【${d4.album}】的「經」。` },
+      5:{ eAttr:'classic', card:d5, attr:'obscurity', alt:'__ult__',
+          txt:`🎙 老闆：收尾——【${d5.album}】的「冷」既接連段<b>又剋他的經典</b>，一石二鳥！（氣勢滿了想直接 ⚡輾壓 也行）` },
+    },
+    outro:'🎙 老闆：出師前的課都教完了！之後每贏一場挑個獎勵、每五場有位大人物在等你——剩下的牌桌上學。' };
+  for(const f of [f1,f2]) for(const k in f.steps){ const st=f.steps[k]; st.want = st.card ? keyOf(st.card) : null; }
+  return { 1:f1, 2:f2, seeds, axis };
+}
+let _tutCache={};
+function tutScript(){
+  const key=(RUN && RUN.tutSet) || 'legacy';
+  const atk=(RUN && RUN.stats && RUN.stats.atk) || 1;
+  const ck=key+':'+atk;
+  if(!_tutCache[ck]) _tutCache[ck]=tutBuild(key, atk);
+  return _tutCache[ck];
+}
+function tutStep(){ if(!(G && G.tut)) return null; const sc=tutScript()[G.tut.fight]; return sc ? sc.steps[G.tut.step] : null; }
 // 按錯時的糾正語：把該做的動作再講一次
 function tutRedirect(st){
-  const name = st.want ? TUT_SCRIPT[G.tut.fight].pdeck.concat(Object.values(TUT_CORE)).find(c=>keyOf(c)===st.want) : null;
+  const name = st.card ? st.card.album : '';
   const act = st.attr==='__ult__' ? '按「⚡ 品味輾壓」'
-    : st.attr==='__sac__' ? `點【${name?name.album:''}】按「🛡 割捨防禦」`
-    : `點【${name?name.album:''}】出「${ATTR_ZH[st.attr]}」`;
+    : st.attr==='__sac__' ? `點【${name}】按「🛡 割捨防禦」`
+    : `點【${name}】出「${ATTR_ZH[st.attr]}」`;
   coachToast('🎙 老闆：這一手先照我說的——'+act+'。出完這場隨你打！');
 }
 function startTutorialRun(){
   META.tutorialDone=true;   // 開場就記下：中途關頁也不會被卡在教學圈
   initRun('guard');
   RUN._tutorial=true;
-  // 🏪 兩場帶打照老闆的套路走：劇本的傷害／氣勢是用守舊派數值（攻1 防2 勢1）算死的，耳朵的三圍等第三場再換回來
+  // 🏪 兩場帶打照老闆的套路走：課表的傷害／氣勢是用守舊派數值（攻1 防2 勢1）算的，耳朵的三圍等第三場再換回來
   if(RUN.profileKey){ RUN._profilePending=true; const g=CLASSES.guard; RUN.stats={atk:g.stats.atk+META.talents.atk,def:g.stats.def+META.talents.def,qir:g.stats.qir+META.talents.qir}; RUN.affinity=g.affinity; RUN.affBuff=Object.assign({},g.affBuff); }
-  RUN.seedsPicked=[TUT_CORE.revolver,TUT_CORE.kob,TUT_CORE.longseason,TUT_CORE.moneystore,TUT_CORE.untrue].map(c=>({...c}));
-  // 這趟之後（第 3 場起）用的牌組＝兩場教學用到的全部盤（割捨掉的 Untrue 會被 removeFromRunDeck 真的移除）
-  // ＋老闆推薦、你抱走的三張盤（候選架已避開教學十張，這裡再保險去重一次）
-  const _tutKeys=new Set(TUT1_PDECK.concat([TUT_CORE.ruins]).map(keyOf));
-  const _starters=starterCards().filter(c=>!_tutKeys.has(keyOf(c)));
-  RUN.deck=TUT1_PDECK.concat([TUT_CORE.ruins]).concat(_starters).map(c=>copyCard(c));
+  // 教學牌組：逛過唱片行 → 你抱走的那套（1 張頂點卡＋4 張）；沒逛過 → 老闆借的原版固定牌組
+  RUN.tutSet = (META.profile && TUT_SETS[META.profile.axis]) ? META.profile.axis : 'legacy';
+  const sc=tutScript();
+  RUN.seedsPicked = sc.seeds.map(c=>({...c}));
+  if(RUN.tutSet==='legacy'){
+    // 這趟之後（第 3 場起）用的牌組＝兩場教學用到的全部盤（割捨掉的 Untrue 會被 removeFromRunDeck 真的移除）
+    RUN.deck = _tutDeck(TUT_SETS.legacy.fillers, TUT_SETS.legacy.recs).map(c=>copyCard(c));
+  } else {
+    // 你的 5 張＋店裡的雜牌（同一般開局）；教學裡抽到的墊牌只是老闆順手塞的，不跟進牌組
+    let junk=makeJunk(); if(hasUnlock('junk4')) junk=junk.slice(0,4);
+    RUN.deck = RUN.seedsPicked.map(c=>copyCard(c)).concat(junk);
+  }
   RUN.depth=0; RUN.streak=0; RUN.hp=RUN.maxHp;
-  // 「同流派再戰」沿用：你的三張盤優先，補上老闆借的兩張核心
   META.lastLoadout={ classKey:'guard', relics:[],
-    seeds:_starters.concat(RUN.seedsPicked).slice(0,seedMax()).map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null})) };
+    seeds:RUN.seedsPicked.slice(0,seedMax()).map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null})) };
   saveMeta();
-  // 老闆借的盤若收藏還沒有 → 一樣列入趟末「挑 1 張永久收藏」名單（打完老闆送你一張）
+  // 老闆借的盤若收藏還沒有 → 一樣列入趟末「挑 1 張永久收藏」名單（打完老闆送你一張）；唱片行那套已在收藏，這裡自然是空的
   const _owned=new Set(META.collection.map(keyOf));
   RUN.drawnCards=RUN.seedsPicked.filter(c=>!_owned.has(keyOf(c)))
-    .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:null,uid:newUid()}));
+    .map(c=>({artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null,uid:newUid()}));
   nextFight();
 }
 // 老闆金框提示（教學外的一次性教學吐司）：coachTip 每個 id 一輩子只跳一次
@@ -3233,7 +3231,7 @@ function nextFight(){
   ensureRelicState();     // 相容舊存檔＋補齊出戰欄
   const E = enemyForDepth(RUN.depth);
   // 🎙 老闆帶打：教學趟前兩場換成腳本敵人（三圍 0、指定牌庫不洗牌 → 每回合數值完全可控）
-  const _tut = (RUN._tutorial && TUT_SCRIPT[RUN.depth]) || null;
+  const _tut = (RUN._tutorial && tutScript()[RUN.depth]) || null;
   if(_tut) Object.assign(E, { who:_tut.who, emoji:'🎧', diff:'easy', stats:{atk:0,def:0,qir:0},
     hp:_tut.hp, maxHp:_tut.hp, startQi:_tut.startQi, boss:false, deck:_tut.edeck.map(c=>copyCard(c)) });
   // 起手保證抽到自己選的牌：非雜牌洗勻放牌庫上層、雜牌沉底——好牌抽完才輪到雜牌充數
@@ -3957,7 +3955,7 @@ function winFight(){
   G.over=true; RUN.streak++; RUN._drewThisWin=false;   // 每場勝利重置：可局末抽一張盤
   // 🎙 老闆帶打：兩場各有結業語；第二場打完教學正式結束，之後正常連打（進階機制首次發生時 coachTip 再各教一句）
   if(G.tut){
-    const sc=TUT_SCRIPT[G.tut.fight];
+    const sc=tutScript()[G.tut.fight];
     let outro = sc ? sc.outro : '';
     if(G.tut.fight>=2){
       RUN._tutorial=false;
