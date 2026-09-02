@@ -296,7 +296,6 @@
   "tried": [
    "us:0→0",
    "gb:0→0",
-   "de:429",
    "de:0→0",
    "lt:0→0",
    "ee:0→0",
@@ -438,8 +437,7 @@
   "batch": "c53",
   "tried": [
    "us:0→0",
-   "gb:429",
-   "gb:3→0",
+   "gb:0→0",
    "de:0→0",
    "lt:0→0",
    "ee:0→0",
@@ -457,15 +455,11 @@
    "gb:0→0",
    "de:0→0",
    "lt:0→0",
-   "ee:429",
-   "ee:1→0",
-   "lv:429",
-   "lv:1→0",
-   "kz:429",
+   "ee:0→0",
+   "lv:0→0",
    "kz:0→0",
    "am:0→0",
-   "fr:429",
-   "fr:3→0"
+   "fr:0→0"
   ],
   "status": "unavailable"
  },
@@ -473,10 +467,8 @@
   "batch": "c53",
   "tried": [
    "us:1→0",
-   "gb:429",
    "gb:1→0",
-   "de:429",
-   "de:1→0",
+   "de:0→0",
    "lt:0→0",
    "ee:0→0",
    "lv:0→0",
@@ -533,7 +525,6 @@
    "lt:0→0",
    "ee:0→0",
    "lv:0→0",
-   "kz:429",
    "kz:0→0",
    "am:0→0",
    "fr:0→0"
@@ -582,9 +573,7 @@
    "ee:0→0",
    "lv:0→0",
    "kz:0→0",
-   "am:429",
    "am:0→0",
-   "fr:429",
    "fr:0→0"
   ],
   "status": "unavailable"
@@ -592,9 +581,7 @@
  "Ансамбль электромузыкальных инструментов п/у Вячеслава Мещерина|Easy USSR": {
   "batch": "c53",
   "tried": [
-   "us:429",
    "us:0→0",
-   "gb:429",
    "gb:0→0",
    "de:0→0",
    "lt:0→0",
@@ -641,175 +628,15 @@
  "Муслим Магомаев|Муслим Магомаев": {
   "batch": "c53",
   "tried": [
-   "us:12→2"
-  ],
-  "front": "us",
-  "collectionId": 1584208341,
-  "appleTitle": "Муслим Магомаев. Лирика",
-  "appleArtist": "Muslim Magomaev",
-  "appleYear": "1974",
-  "explicitness": "notExplicit",
-  "trackCount": 9,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c4/90/42/c4904227-fdb0-1d0b-1516-cec821768f07/mzaf_15976887910709042292.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "yearDrift": 4,
-  "reissueTitle": false,
-  "status": "ready"
- },
- "Валерий Ободзинский|Поёт Валерий Ободзинский": {
-  "batch": "c53",
-  "tried": [
-   "us:1→1"
-  ],
-  "front": "us",
-  "collectionId": 1714590090,
-  "appleTitle": "Поёт Валерий Ободзинский",
-  "appleArtist": "Valeriy Obodzinskiy",
-  "appleYear": "2023",
-  "explicitness": "notExplicit",
-  "trackCount": 15,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/f3/42/ad/f342ad04-e0b0-a2ff-ce71-05fe14aec76c/mzaf_10094923007352938551.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "yearDrift": 53,
-  "reissueTitle": false,
-  "status": "ready"
- },
- "Песняры|Гусляр": {
-  "batch": "c53",
-  "tried": [
-   "us:0→0",
-   "gb:0→0",
-   "de:0→0",
-   "lt:0→0",
-   "ee:0→0",
-   "lv:0→0",
-   "kz:0→0",
-   "am:0→0",
-   "fr:0→0"
-  ],
-  "status": "unavailable"
- },
- "Ялла|Три колодца": {
-  "batch": "c53",
-  "tried": [
-   "us:2→1"
-  ],
-  "front": "us",
-  "collectionId": 1534734981,
-  "appleTitle": "Три колодца",
-  "appleArtist": "Yalla",
-  "appleYear": "1981",
-  "explicitness": "notExplicit",
-  "trackCount": 8,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/37/d4/b937d41f-0c91-bc7c-71b5-a71bf6058226/mzaf_7930780703338669824.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
- },
- "Иверия|Аргонавты": {
-  "batch": "c53",
-  "tried": [
-   "us:0→0",
-   "gb:0→0",
-   "de:0→0",
-   "lt:0→0",
-   "ee:0→0",
-   "lv:0→0",
-   "kz:0→0",
-   "am:0→0",
-   "fr:0→0"
-  ],
-  "status": "unavailable"
- },
- "Ganelin Trio|Con Anima": {
-  "batch": "c53",
-  "tried": [
-   "us:0→0",
-   "gb:0→0",
-   "de:0→0",
-   "lt:0→0",
-   "ee:0→0",
-   "lv:0→0",
-   "kz:0→0",
-   "am:0→0",
-   "fr:0→0"
-  ],
-  "status": "unavailable"
- },
- "Ganelin Trio|Live in East Germany": {
-  "batch": "c53",
-  "tried": [
-   "us:0→0",
-   "gb:0→0",
-   "de:0→0",
-   "lt:0→0",
-   "ee:0→0",
-   "lv:0→0",
-   "kz:0→0",
-   "am:0→0",
-   "fr:0→0"
-  ],
-  "status": "unavailable"
- },
- "Ganelin Trio|Ancora da Capo": {
-  "batch": "c53",
-  "tried": [
-   "us:1→1"
-  ],
-  "front": "us",
-  "collectionId": 105039094,
-  "appleTitle": "Ancora Da Capo",
-  "appleArtist": "The Ganelin Trio",
-  "appleYear": "1980",
-  "explicitness": "notExplicit",
-  "trackCount": 2,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cb/47/63/cb47639f-9755-c9aa-bf93-e0d45eb54fb3/mzaf_1212998500013882550.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
- },
- "Сергей Курёхин|The Ways of Freedom": {
-  "batch": "c53",
-  "tried": [
-   "us:1→1"
-  ],
-  "front": "us",
-  "collectionId": 1516439380,
-  "appleTitle": "The Ways of Freedom",
-  "appleArtist": "Sergey Kuryokhin",
-  "appleYear": "1981",
-  "explicitness": "notExplicit",
-  "trackCount": 10,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/aa/a4/67/aaa4673c-ab68-b472-0d43-3298162accbb/mzaf_1021673094366266480.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
- },
- "Сергей Курёхин|Introduction In Pop Mechanics": {
-  "batch": "c53",
-  "tried": [
-   "us:1→1"
-  ],
-  "front": "us",
-  "collectionId": 1570664806,
-  "appleTitle": "Introduction in Pop Mechanics",
-  "appleArtist": "Sergey Kuryokhin",
-  "appleYear": "1987",
-  "explicitness": "notExplicit",
-  "trackCount": 13,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ea/f4/e2/eaf4e273-61a3-2c7a-74a0-484aa8d5e55f/mzaf_7133134942991988577.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
- },
- "Владимир Чекасин|Nomen Nescio (Некое Лицо)": {
-  "batch": "c53",
-  "tried": [
-   "us:0→0",
-   "gb:0→0",
-   "de:0→0",
-   "lt:0→0",
-   "ee:0→0",
-   "lv:0→0",
-   "kz:0→0",
-   "am:0→0",
-   "fr:0→0"
+   "us:12→0",
+   "gb:11→0",
+   "de:11→0",
+   "lt:10→0",
+   "ee:10→0",
+   "lv:10→0",
+   "kz:11→0",
+   "am:10→0",
+   "fr:10→0"
   ],
   "status": "unavailable"
  }
