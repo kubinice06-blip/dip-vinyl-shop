@@ -214,6 +214,15 @@
 - 依 Bandcamp → Spotify → Cover Art Archive／release-group 再版補救解析。
 - 封面必須核對藝人、專輯與版本，並實際 GET 得到 HTTP 2xx／3xx。
 - iTunes 模糊搜尋不可作封面來源；抓不到可靠封面就停止該筆。
+- **例外：人工身分卡的 `coverSourceHint: "apple-verified-collection"`**（2026-09-02，c-64 增列）。
+  §1 的人工身分卡沒有 release-group MBID，**CAA 這條路在定義上就走不通**（CAA 以 RG MBID 為鍵），
+  Bandcamp 與 Spotify 對 1960–70 年代的東南亞錄音帶也幾乎全空。
+  這種卡可用**人工核對過的 Apple 專輯頁**當封面來源，但要件有二，缺一不可：
+  1. **記下確切的 `collectionId`**（不是搜尋字串）——這樣本機可以直接 lookup 覆核；
+  2. `manualEvidenceUrls` 裡要有**那一頁的 HTTPS 網址**。
+  **這與被禁的「iTunes 模糊搜尋」是兩件事**：禁的是拿搜尋結果的第一筆當封面
+  （c-52 實測 12 個命中有 5 個可證明是錯的），允許的是人工開過、確認過藝人／盤名／版本的
+  那一個具體條目。**沒有 collectionId 就退回「抓不到可靠封面」，停止該筆。**
 
 ### 5. 固定簡介
 
