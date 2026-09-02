@@ -1,4 +1,4 @@
-// c-c60 提案檢查。用法：node batch-progress/c60/chk-prop.mjs [組別…]
+// c-60 提案檢查。用法：node batch-progress/c60/chk-prop.mjs [組別…]
 // 卡池合併後「線上池」＝ seed_cards.json 全部（一般卡與王牌都算，撞到哪種都是撞卡）。
 import fs from 'node:fs';
 import path from 'node:path';
