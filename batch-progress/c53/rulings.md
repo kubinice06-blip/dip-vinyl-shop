@@ -948,3 +948,60 @@ c-60 的 a 組研究代理回報：我的簡報要 3–5 個 `hookCandidates`，
 這是 `keyTracks` 第一次因為「作品本身沒有曲名」而留空
 （先前的空值都是查不到）。**兩者要分清楚**：查不到是 `status: thin` 的理由，
 本來就沒有不是——這張仍是 `full`。
+
+## 57.（c-60）第 43 條的新形狀：同一家考古廠牌，在不同碟上的授權狀態相反
+
+b 組研究層回報：**Sunbeam Records** 在 Fresh Maggots 那張是正式授權的復刻方，
+在 The Human Instinct《Stoned Guitar》的三筆卻被 Discogs 標為 **Unofficial Release**。
+
+**裁定：第 43 條的判定單位是「這一次再發」，不是「這家廠牌」。**
+不存在「可信的考古廠牌」白名單——**每一筆再發都要各自看授權狀態**。
+兩張的 `notes` 都已標明「不得把 Sunbeam 一概當背書」。
+
+全批授權狀態分歧的有 7 張（Dark、Fresh Maggots、Kalacakra、Xhol Caravan、
+Human Instinct、Taj Mahal Travellers、Tolerance），其餘 16 張的再發在 Discogs 上
+零筆未授權。
+
+（把這條與第 55 條並讀：第 43 條可能往兩個方向誤用——把未授權當背書，
+或把有授權的誤標成未授權。兩種都會誤判一張碟的分量，所以授權狀態要逐筆實查、寫進 fact。）
+
+## 58.（c-60）Nurse With Wound 名單：23 張裡 8 張在名單上，只讓兩張引用
+
+b 組本批最大的同調風險：**Nurse With Wound 1979 年首作內附的名單**
+（俗稱 NWW list）在 b 組 23 張裡涵蓋 8 張——Älgarnas Trädgård、Aksak Maboul、
+Lard Free／Gilbert Artman、Samla Mammas Manna、Taj Mahal Travellers、Tolerance、
+Xhol Caravan、以及 International Harvester（＝Träd, Gräs och Stenar 的前身）。
+
+若八張都寫「這張碟在 NWW 名單上」，行文會全批一個樣，而且那句話對讀者
+幾乎不帶資訊——名單有近三百個條目。
+
+**裁定：研究層的處理正確。** 只把 NWW 名單做成 fact 給
+**Tolerance 與 Lard Free 兩張**，其餘六張的 facts 刻意不提供、`notes` 明令不得引用。
+Tolerance 那張之所以留，是因為它有硬來源撐起因果、不只是「名列其中」：
+**NWW 1980 年的《To the Quiet Men from a Tiny Girl》標題就取自《Anonym》封套的題獻**。
+
+**規則：一個橫跨多張卡的共同標籤（名單、廠牌、場景、參考書），
+只能給少數幾張「能就它講出獨有因果」的卡使用，其餘卡的研究層應主動不供料。**
+這與 a 組的互斥條款是同一個做法（Allied 客壓流水號判給 The Plastic Cloud、
+Nurse With Wound 名單判給 Debris'、「長曲佔整面」判給 Josefus、
+「示範帶」判給 Kenneth Higney、「未授權盤氾濫」判給 Music Emporium）。
+
+## 59.（c-60）b 組研究層推翻策展層三處
+
+| 卡 | 策展層寫什麼 | 實查 |
+|---|---|---|
+| Dark《Round the Edges》 | 諾丁罕 | **Northampton**（英文維基錄音室欄 S.I.S. Studios, Northampton 與 Discogs 樂團條目一致）。已禁用「諾丁罕」 |
+| Aksak Maboul | Kamikaze 是 Hollander **自資的廠牌** | 是製作人 **Marc Moulin** 的短命廠牌，Moulin **委託** Hollander 做這張碟。Hollander 自己的廠牌是 1980 年的 Crammed Discs。已禁用「自資發行／自己的廠牌」 |
+| Brainticket | 在**瑞士組成** | 收緊為「以瑞士為據點的跨國團」（Discogs 原文 Switzerland-based，核心是比利時人 Vandroogenbroeck） |
+
+加上 a 組的四處，**c-60 一批就推翻了策展層七處會直接寫進簡介的說法**。
+第 35 條的形狀至此連續四批出現（c-57 兩處、c-58 五處、c-60 七處）。
+**這已經不是偶發，是私壓／地下這條線的結構特性**：
+二手資料轉抄率高、原始文件（內頁、廠牌檔案、當事人訪談）散落且不易檢索。
+往後開這條線的批次，**研究層的簡報一律要明文授權它推翻策展層**。
+
+## 60.（c-60）Taj Mahal Travellers《August 1974》的 `keyTracks` 也留空
+
+原盤四面皆無標題，同第 56 條（Charlie Tweddle）。一批出現兩張，
+**「作品本身沒有曲名」在這條線上不是特例**——即興與長篇作品的私壓盤經常如此。
+`notes` 已註明不得編造曲名，兩張仍是 `full`。
