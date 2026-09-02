@@ -1,32 +1,35 @@
 # dip vinyl 專案備忘錄
 
-### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：RPG 序章（捏角色 → 三張頂點卡三選一 → 老闆送四張 → 男子嗆聲 → 品味對決＝老闆帶打）
+### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：RPG 序章（從品味生死鬥主選單開始、角色跨頁共用）＋教學尾聲（老闆送設備）
 
 雲端工作階段（分支 `claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main、未部署**；Cloudflare 有分支預覽站）。
 
-**做了什麼**：新玩家（Lv.3 出師前且 `META.profile` 為空）進 `roguelike.html` 先走序章：捏角色（名字 ≤8 字、像素造型五項可換）→
-勇者鬥惡龍式 RPG 場景（上半唱片行舞台、下半黑底白雙框對話窗，逐字出現、點一下下一段、右下 ▼ 閃爍、⏩ 快轉）：
-推門 → 老闆看一眼繼續做事 → 自己逛 → 音響傳出旋律 → 抬頭見老闆在放唱片 → **三張頂點卡三選一**（殿堂／流亡／異端各附三軸介紹）→
-「你眼光真不錯，這張是我的私人收藏，今天讓給你」→ 老闆走出櫃台翻找 → 「這四張也很適合你，收下吧」（固定四張）→ 準備離開 →
-男子進門「這品味也敢出來丟臉？」→ 💢 → 老闆緩頰「來一場品味對決如何？」→ 接受對決（教學兩場，第一場對手＝那名男子）／轉身離開。
-選的王牌決定耳朵（老派耳朵／挖盤狂／噪音信徒＝三流派輕量版，決定出師前三圍與專長）。
+**流程**：第一次進品味生死鬥主選單（`pvp.html`）讀不到角色 → 轉 `roguelike.html?prologue=1`：捏角色（名字 ≤8 字、像素造型五項）→
+勇者鬥惡龍式 RPG 場景（唱片行舞台＋黑底白雙框對話窗，逐字、點一下下一段、▼ 閃爍、⏩ 快轉）：推門 → 老闆看一眼繼續做事 → 自己逛 → 音響傳出旋律 →
+抬頭見老闆在放唱片 → **三張頂點卡三選一**（殿堂《OK Computer》／流亡 Bobb Trimble《Iron Curtain Innocence》／異端 Swans《Cop》，附三軸介紹）→
+「你眼光真不錯，這張是我的私人收藏，今天讓給你」→ 老闆走出櫃台翻找 → 「這四張也很適合你，收下吧」（固定四張）→ 準備離開 → 男子「這品味也敢出來丟臉？」→ 💢 →
+老闆「來一場品味對決如何？」→ 接受對決＝老闆帶打兩場（第一場對手就是那名男子）→ **尾聲**：男子「搵休督欸丟！」離開 → 老闆「你對音樂脈絡很有天份，被我淘汰的設備挑一個帶回去」
+＝發燒配件三選一 → 「有空再來走走，與大家交流音樂」→ 又有人踢館 → 「應戰」→ 無止盡品味試煉第 3 場起。
+要玩家選東西的段落**不自動彈面板**，字跑完亮 ▼、再點一下才展開。選的王牌決定耳朵（老派耳朵／挖盤狂／噪音信徒＝三流派輕量版，決定出師前三圍與專長）。
+
+**角色跨頁**：像素零件與角色讀取抽成 `dip-character.js`（`PIX_PAL`／`pixArtHTML`／`SPR_BODY`／`sprRows`／`AVATAR_*`／`avatarRows`＋`DipChar`），
+`roguelike.html`／`pvp.html`／`battle.html` 三頁共用；主選單標題下顯示角色卡（點了 `?char=1` 改造型、存完回主選單），`battle.html` 我方名牌改成小人＋名字＋耳朵。
+資料仍存樂歷（本機 `dipRogueMeta_v2[:uid]`、雲端 `rogueMeta`）；`?prologue=1`／`?char=1` 先等登入與樂歷綁定（`__rogueBindP`），雲端已有角色不重走序章。
 
 **教學改成依牌組生成課表**（`TUT_SETS`／`tutBuild`）：三套「王牌＋四張」＋ legacy 原版固定牌組。有王牌的三套第二場第 3 手改教七星回擊。
 敵方 HP 由課表反推——**實測抓到敵方每出一手經典會回 1 滴（屬性效果在扣血之後才回），第一版漏算，殿堂那套第二場差一滴沒收掉**；補上後四套兩場都在第五手收尾。
-教學兩場鎖守舊派三圍、第二場打完換回耳朵；教學後牌組＝五張＋雜牌；`autoSeeds()`＝那五張；戰鬥小人用自訂造型、名牌顯示名字。
+教學兩場鎖守舊派三圍、第二場打完換回耳朵；教學後牌組＝五張＋雜牌；`autoSeeds()`＝那五張；尾聲的木箱取代該場抽盤；`saveRun('epilogue')` 可續玩。
 
-**主要檔案**：`roguelike.html`（CSS `.rpg*`／`.acepick`／`.shop*`、`PIX_PAL` 補四色、`SPR.owner`、`AVATAR_*`／`avatarRows`、`ROOKIE_PROFILES`／`SHOP_ACE_INFO`、
-`TUT_SETS`／`tutBuild`／`tutScript`、`RPG_BEATS`／`renderShopScene`／`rpg*`、`renderCharCreate`、`applyRookieProfile`／`roleOf`，
-以及 `loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`startTutorialRun`／`winFight`／`mountSprites`／`renderBattle`／`renderDeath`／`bootstrap` 掛勾）、
-`ROGUELIKE_DESIGN.md` §2.0、`pvp.html`（試煉卡文案）。
+**主要檔案**：`dip-character.js`（新）、`roguelike.html`（CSS `.rpg*`／`.acepick`／`.shop*`、`SPR.owner`、`ROOKIE_PROFILES`／`SHOP_ACE_INFO`、`TUT_SETS`／`tutBuild`／`tutScript`、
+`RPG_BEATS`／`rpgStart`／`rpg*`／`tutEpilogueBeats`／`renderTutEpilogue`／`relicPanelHTML`、`renderCharCreate`／`charCancel`、`applyRookieProfile`／`roleOf`，
+以及 `loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`startTutorialRun`／`winFight`／`resumeRun`／`mountSprites`／`renderBattle`／`renderDeath`／`bootstrap` 掛勾）、
+`pvp.html`（角色卡、無角色轉序章、試煉卡副標題「你的品味禁得起考驗？」）、`battle.html`（名牌）、`ROGUELIKE_DESIGN.md` §2.0。
 
-**驗證**：兩段 script 過 `node --check`；Playwright 390×844——序章 18 段對話走完（站位／音符／💢 特效狀態逐段核對）、三張王牌各走一次並用腳本照課表打完兩場
-（四套含 legacy 都在第五手收尾）、教學後三圍換成耳朵、直接開打起手＝五張、⏩ 快轉落在三選一。沙盒無外網，封面與 Firebase 被擋，頁面靠既有 fallback 照常。
+**驗證**：三頁腳本與 `dip-character.js` 過 `node --check`；Playwright 390×844——主選單無角色轉序章、三選一段落 ▼ 亮但面板未開、點一下才開、
+序章走完接教學兩場（腳本照課表打，四套含 legacy 都在第五手收尾）、尾聲階段存檔為 `epilogue` 且重開後可續、木箱三選一拿到配件並裝上、「應戰」後第 3 場正常對手且 `RUN.relics` 1 件、
+主選單顯示角色卡、`battle.html` 名牌顯示小人＋名字＋耳朵、`?char=1` 改名存檔回主選單。沙盒無外網，封面與 Firebase 被擋，頁面靠既有 fallback 照常。
 
-店主已從頂點卡名單挑定：流亡＝Bobb Trimble《Iron Curtain Innocence》、異端＝Swans《Cop》（殿堂維持《OK Computer》）；異端那套的墊牌 Swans《Soundtracks for the Blind》換成 Sunn O)))《Monoliths & Dimensions》避免同藝人。
-
-**待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；
-既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）。
+**待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）；沒做「再逛唱片行」。
 
 ### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
 

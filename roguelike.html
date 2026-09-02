@@ -686,6 +686,7 @@
 
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=40"></script>
+<script src="dip-character.js?v=1"></script>
 <script>
 'use strict';
 /* =========================================================================
@@ -1196,7 +1197,6 @@ function fireRelic(){ if(!G) return; if(!G._fired) G._fired=new Set(); for(let i
 function isBossDepth(d){ return d>0 && d%5===0; }
 
 // ---------- 像素風發燒配件圖示（12×12 手刻，SVG rect 內嵌、免外部圖檔）----------
-const PIX_PAL = {k:'#111',g:'#b8860b',r:'#c11628',b:'#1f5fae',w:'#fff',e:'#d8d8d8',d:'#888',n:'#2e7d52',p:'#6a3fa0',o:'#e0851c',y:'#f0c75e',s:'#e8b48c',c:'#3fb6c9',t:'#c68642',u:'#8d5524',v:'#f6dcc4',m:'#e75480'};
 const PIX_ICONS = {
   stylus:['............','.........kk.','........kkk.','.......kk.k.','......kk....','.....kk.....','....kk......','...kk.......','..kkk.......','.kkkk.......','.kkgg.......','............'],
   sleeve:['............','..kkkkkkk...','..kwwwwwkk..','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkkk.','..kwwwwwkk..','..kkkkkkk...','............','............'],
@@ -1339,12 +1339,6 @@ const PIX_ICONS_LV = {
   ],
 };
 // 通用像素圖轉 SVG（任意寬高的格子字串；發燒配件 12×12、小人 16×16 都走這裡）
-function pixArtHTML(rows, size, cls){
-  const w=rows[0].length, h=rows.length;
-  let rects='';
-  rows.forEach((row,y)=>{ for(let x=0;x<row.length;x++){ const c=PIX_PAL[row[x]]; if(c) rects+=`<rect x="${x}" y="${y}" width="1" height="1" fill="${c}"/>`; } });
-  return `<svg class="pixicon ${cls||''}" width="${size}" height="${Math.round(size*h/w)}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${rects}</svg>`;
-}
 // 發燒配件圖示＝該等級的專屬像素圖（升級看得見：材質與細節整張換新）：
 //   Lv.1 陽春/磨舊 → Lv.2 標準 → Lv.3 進階材質 → Lv.4 鍍金精品 → Lv.5 傳說（發光＋星光）。
 //   優先取 PIX_ICONS_LV[icon][lv-1]；缺此表（後台自訂件）退回 PIX_ICONS；再無 → emoji/文字。
@@ -1359,23 +1353,6 @@ function relicIconHTML(r, size, lvOverride){
 }
 
 // ---------- 像素小人（16×16 手刻：對手 8 階＋藏家＋三流派；動畫走 CSS class） ----------
-// 身體模板：T=上衣、L=下身（組裝時換色），s=皮膚、k=鞋
-const SPR_BODY = [
-  '....TTTTTTTT....',
-  '...TTTTTTTTTT...',
-  '...sTTTTTTTTs...',
-  '...sTTTTTTTTs...',
-  '....TTTTTTTT....',
-  '....LLLLLLLL....',
-  '....LLL..LLL....',
-  '....kkk..kkk....',
-  '................',
-];
-function sprRows(head, shirt, pants, patch){
-  const rows = head.concat(SPR_BODY.map(r=>r.replace(/T/g,shirt).replace(/L/g,pants)));
-  if(patch) Object.keys(patch).forEach(i=>{ rows[+i]=patch[i]; });
-  return rows;
-}
 const SPR = {
   // 對手（依場次深度 0~7 階：小白→之神）
   e0: sprRows([   // 音樂小白：耳機
@@ -1426,36 +1403,6 @@ SPR.owner = sprRows([
   '................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....',
 ],'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'});
 
-// ---------- 🧑‍🎤 捏角色：像素小人零件（頭型用 H 標髮／帽色、s 標膚色；組裝時換色） ----------
-const AVATAR_HEADS = {
-  neat:   { name:'西裝頭', rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  bob:    { name:'妹妹頭', rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HHHHHHHH....','....HskssksH....','....HssssssH....','.....ssssss.....'] },
-  spike:  { name:'刺蝟頭', rows:['....H.H..H.H....','....HHHHHHHH....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  long:   { name:'長髮',   rows:['................','.....HHHHHH.....','....HHHHHHHH....','...HHssssssHH...','...HHskssksHH...','...HssssssssH...','.....ssssss.....'] },
-  cap:    { name:'反戴帽', rows:['................','.....HHHHHH.....','..HHHHHHHHHH....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  ballcap:{ name:'棒球帽', rows:['................','.....HHHHHH.....','....HHHHHHHHHH..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  beanie: { name:'毛帽',   rows:['................','.....HHHHHH.....','....HHHHHHHH....','....HssssssH....','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  beret:  { name:'貝雷帽＋眼鏡', rows:['................','......HHHH......','....HHHHHHHH....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....'] },
-  fedora: { name:'紳士帽', rows:['................','.....HHHHHH.....','.....HHHHHH.....','...HHHHHHHHHH...','....ssksskss....','....ssssssss....','.....ssssss.....'] },
-  phones: { name:'耳機',   rows:['.....gggggg.....','.....HHHHHH.....','....HHHHHHHH....','...gHssssssHg...','...gssksskssg...','....ssssssss....','.....ssssss.....'] },
-};
-// 可選色（值＝PIX_PAL 的鍵）：髮／帽、膚色、上衣、褲子
-const AVATAR_COLORS = {
-  hair: ['k','d','o','y','r','b','n','p','c','m','w'],
-  skin: ['v','s','t','u'],
-  shirt:['b','r','n','p','o','y','c','m','w','e','d','k'],
-  pants:['k','d','b','n','p','o','e','w'],
-};
-const AVATAR_DEFAULT = { head:'neat', hair:'k', shirt:'b', pants:'k', skin:'s' };
-function avatarRows(av){
-  av = Object.assign({}, AVATAR_DEFAULT, av||{});
-  const h = AVATAR_HEADS[av.head] || AVATAR_HEADS.neat;
-  const ok = (v,d)=> (typeof v==='string' && PIX_PAL[v]) ? v : d;
-  const hr=ok(av.hair,'k'), sk=ok(av.skin,'s'), sh=ok(av.shirt,'b'), pt=ok(av.pants,'k');
-  const head = h.rows.map(r=>r.replace(/H/g,hr));
-  const rows = head.concat(SPR_BODY.map(r=>r.replace(/T/g,sh).replace(/L/g,pt)));
-  return rows.map(r=>r.replace(/s/g,sk));   // 膚色最後換（頭與身體的 s 一起）
-}
 // 我方小人：捏過角色就用自己的造型，否則沿用流派預設
 function playerSprRows(){ return (META && META.avatar) ? avatarRows(META.avatar) : (SPR[RUN&&RUN.classKey]||SPR.guard); }
 function enemySprKey(){ return (G&&G.E&&G.E.boss) ? 'boss' : ('e'+Math.min(7, Math.floor((RUN?RUN.depth:0)/2))); }
@@ -1900,7 +1847,7 @@ function initRoguePlayer(){
   while(!window.__rogueAuthReady && Date.now()-t0<8000) await new Promise(r=>setTimeout(r,100));
   if(!window.__rogueAuthReady) return;
   const u = await window.__rogueAuthReady;
-  if(u){ bindMetaToAccount(u); }
+  if(u){ window.__rogueBindP = bindMetaToAccount(u); }
   else if(_cloudUid){
     _cloudUid=null; try{ localStorage.removeItem(META_UID_KEY); }catch(e){}
     META=loadMeta();
@@ -2012,7 +1959,7 @@ function shopState(after){
 function ownerHTML(size){ return `<div class="owner">${pixArtHTML(SPR.owner, size||56)}老闆</div>`; }
 function shopShellHTML(inner, head){
   return topbarHTML() + `
-    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button></div>
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='pvp.html'">← 回品味生死鬥</button></div>
     <h1>無止盡品味試煉 <span class="pill">beta</span></h1>
     <div class="shop"><div class="shop-head">🏪 巷子裡的唱片行 <span class="pill">${head||'序章'}</span></div>${inner}</div>`;
 }
@@ -2035,7 +1982,7 @@ function renderCharCreate(back){
     </div>
     <div id="avBuilder">${avatarBuilderHTML()}</div>
     <div class="row" style="margin-top:14px">
-      ${s.back?`<button class="btn" onclick="_shop=null;renderClassSelect()">取消</button>`:''}
+      ${s.back?`<button class="btn" onclick="charCancel()">取消</button>`:''}
       <button class="btn primary" style="flex:1" onclick="charConfirm()">${s.back?'存好了':'就是我 ▸'}</button>
     </div>`, s.back?'捏角色':'序章 · 捏角色');
 }
@@ -2075,8 +2022,11 @@ function charConfirm(){
   META.name = name || '黑膠新手';
   META.avatar = Object.assign({}, AVATAR_DEFAULT, s.av);
   saveMeta();
+  if(s.back==='hub'){ _shop=null; location.href='pvp.html'; return; }
   if(s.back){ _shop=null; renderClassSelect(); return; }
   renderShopScene(0);
+}
+function charCancel(){ const b=_shop&&_shop.back; _shop=null; if(b==='hub') location.href='pvp.html'; else renderClassSelect();
 }
 function playerLabel(){ return (META && META.name) ? escHtml(META.name) : '你'; }
 // 卡片＋懶載封面（唱片行三個畫面共用）
@@ -2190,14 +2140,14 @@ const RPG_BEATS = [
   { who:'老闆', text:'「既然雙方都不服氣——不如，來一場品味對決如何？」', ui:'choice' },
 ];
 let _rpg=null;
-function renderShopScene(beat){
+// 起一段 RPG 場景：beats＝對話陣列、stage＝起始站位、beat＝從第幾段開始（續玩用）
+function rpgStart(beats, stage, beat){
   document.body.classList.remove('in-battle');
-  shopState();
   if(_rpg && _rpg.timer) clearInterval(_rpg.timer);
-  _rpg = { beat:beat||0, typing:false, timer:null, stage:{p:'door',o:'counter',f:'out',notes:false,anger:false,oBusy:false}, shown:'' };
+  _rpg = { beats, beat:beat||0, typing:false, timer:null, uiOpen:false, stage:Object.assign({p:'door',o:'counter',f:'out',fSpr:'e0',notes:false,anger:false,oBusy:false}, stage||{}), shown:'' };
   const pl = avatarRows(META.avatar);
   $app.innerHTML = topbarHTML() + `
-    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='index.html'">← 回主選單</button><span class="pill" style="margin-left:auto">🏪 巷子裡的唱片行 · 序章</span></div>
+    <div class="row" style="margin:2px 0 6px"><button class="btn" onclick="location.href='pvp.html'">← 回品味生死鬥</button><span class="pill" style="margin-left:auto">🏪 巷子裡的唱片行</span></div>
     <div class="rpg" id="rpg">
       <div class="rpg-stage" id="rpgStage">
         <div class="rpg-wall"></div><div class="rpg-shelf"></div><div class="rpg-shelf s2"></div><div class="rpg-door"></div>
@@ -2205,7 +2155,7 @@ function renderShopScene(beat){
         <div class="rpg-counter"><div class="rpg-speaker"><i></i><i></i></div><div class="rpg-tt"></div></div>
         <div class="rpg-notes" id="rpgNotes"><span>♪</span><span>♫</span><span>♪</span></div>
         <div class="rpg-spr p" id="rpgP">${pixArtHTML(pl, 40)}<div class="rpg-anger" id="rpgAnger">💢</div></div>
-        <div class="rpg-spr f" id="rpgF">${pixArtHTML(SPR.e0, 40)}</div>
+        <div class="rpg-spr f" id="rpgF">${pixArtHTML(SPR[_rpg.stage.fSpr]||SPR.e0, 40)}</div>
         <div class="rpg-floor"></div>
       </div>
       <div id="rpgPanelWrap"></div>
@@ -2217,67 +2167,76 @@ function renderShopScene(beat){
         <div class="rpg-next" id="rpgNext">▼</div>
       </div>
     </div>`;
-  rpgShow(_rpg.beat, true);
+  rpgApplyStage({});
+  rpgShow(_rpg.beat);
 }
+// 序章（推門 → 三選一 → 四張 → 男子嗆聲 → 對決）
+function renderShopScene(beat){ shopState(); rpgStart(RPG_BEATS, {p:'door',o:'counter',f:'out'}, beat||0); }
 function rpgApplyStage(st){
   Object.assign(_rpg.stage, st||{});
   const S=_rpg.stage;
   const put=(id,key,pos)=>{ const el=document.getElementById(id); const p=RPG_POS[key][pos]; if(el&&p){ el.style.left=p[0]+'%'; el.style.bottom=p[1]+'px'; } };
   put('rpgP','p',S.p); put('rpgO','o',S.o); put('rpgF','f',S.f);
   const o=document.getElementById('rpgO'); if(o){ o.classList.toggle('busy', !!S.oBusy); o.classList.toggle('behind', S.o==='counter'); }
+  const f=document.getElementById('rpgF'); if(f && st && st.fSpr){ f.innerHTML=pixArtHTML(SPR[st.fSpr]||SPR.e0, 40); }
   const n=document.getElementById('rpgNotes'); if(n) n.classList.toggle('on', !!S.notes);
   const a=document.getElementById('rpgAnger'); if(a) a.classList.toggle('on', !!S.anger);
   const p=document.getElementById('rpgP'); if(p){ p.classList.toggle('shake', !!S.anger); }
 }
-function rpgShow(i, instant){
-  const b=RPG_BEATS[i]; if(!b){ return; }
-  _rpg.beat=i;
+function rpgShow(i){
+  const b=_rpg.beats[i]; if(!b){ return; }
+  _rpg.beat=i; _rpg.uiOpen=false;
   rpgApplyStage(b.stage);
-  const name=document.getElementById('rpgName'); if(name){ name.textContent=b.who||''; name.style.display=b.who?'':'none'; name.className='rpg-name'+(b.who==='男子'?' foe':''); }
+  const foe = b.who==='男子' || b.who==='？？？';
+  const name=document.getElementById('rpgName'); if(name){ name.textContent=b.who||''; name.style.display=b.who?'':'none'; name.className='rpg-name'+(foe?' foe':''); }
   const menu=document.getElementById('rpgMenu'); if(menu){ menu.innerHTML=''; menu.style.display='none'; }
   const wrap=document.getElementById('rpgPanelWrap'); if(wrap) wrap.innerHTML='';
-  const win=document.getElementById('rpgWin'); if(win) win.classList.toggle('foe', b.who==='男子');
-  rpgType(b.text, ()=>{ if(b.ui) rpgOpenUI(b); });
+  const win=document.getElementById('rpgWin'); if(win) win.classList.toggle('foe', foe);
+  rpgType(b.text);
 }
-// 逐字出現；點一下直接跑完
-function rpgType(text, done){
+// 逐字出現；點一下直接跑完。跑完一律亮 ▼（要選東西的段落也是：再點一下才展開面板，不自動彈）
+function rpgType(text){
   const el=document.getElementById('rpgText'); const nx=document.getElementById('rpgNext'); if(!el) return;
   if(_rpg.timer) clearInterval(_rpg.timer);
-  _rpg.typing=true; _rpg.full=text; _rpg.onDone=done||null; let n=0; el.textContent=''; if(nx) nx.style.visibility='hidden';
+  _rpg.typing=true; _rpg.full=text; let n=0; el.textContent=''; if(nx) nx.style.visibility='hidden';
   _rpg.timer=setInterval(()=>{ n++; el.textContent=text.slice(0,n); if(n>=text.length) rpgTypeDone(); }, 34);
 }
 function rpgTypeDone(){
   if(_rpg.timer){ clearInterval(_rpg.timer); _rpg.timer=null; }
   const el=document.getElementById('rpgText'); if(el) el.textContent=_rpg.full||'';
   _rpg.typing=false;
-  const b=RPG_BEATS[_rpg.beat];
-  const nx=document.getElementById('rpgNext'); if(nx) nx.style.visibility=(b&&b.ui)?'hidden':'visible';
-  if(_rpg.onDone){ const f=_rpg.onDone; _rpg.onDone=null; f(); }
+  const nx=document.getElementById('rpgNext'); if(nx) nx.style.visibility=_rpg.uiOpen?'hidden':'visible';
 }
 function rpgTap(){
   if(!_rpg) return;
   if(_rpg.typing){ rpgTypeDone(); return; }
-  const b=RPG_BEATS[_rpg.beat];
-  if(b && b.ui) return;   // 等玩家在面板／選單上操作
+  const b=_rpg.beats[_rpg.beat];
+  if(b && b.ui){ if(!_rpg.uiOpen) rpgOpenUI(b); return; }   // 第一下展開面板；展開後等玩家在面板／選單上操作
   rpgShow(_rpg.beat+1);
 }
 function rpgSkip(){
   if(!_rpg) return;
-  let i=_rpg.beat; if(RPG_BEATS[i] && RPG_BEATS[i].ui && !_rpg.typing) return;
-  // 把中間略過的站位變化一次套上，跳到下一個要操作的段落
-  while(i<RPG_BEATS.length-1 && !RPG_BEATS[i].ui){ i++; rpgApplyStage(RPG_BEATS[i].stage); }
+  let i=_rpg.beat; if(_rpg.beats[i] && _rpg.beats[i].ui && !_rpg.typing) return;
+  // 把中間略過的站位變化一次套上，跳到下一個要操作的段落（面板仍要點一下才展開）
+  while(i<_rpg.beats.length-1 && !_rpg.beats[i].ui){ i++; rpgApplyStage(_rpg.beats[i].stage); }
   if(_rpg.timer) clearInterval(_rpg.timer);
   rpgShow(i); rpgTypeDone();
 }
 function rpgOpenUI(b){
+  _rpg.uiOpen=true;
   const wrap=document.getElementById('rpgPanelWrap'); const el=document.getElementById('rpgText');
-  if(b.ui==='aces'){ if(wrap){ wrap.innerHTML=acePanelHTML(); acePanelWire(); } if(el) el.textContent=b.text+' '+(b.prompt||''); }
-  else if(b.ui==='recs'){ if(wrap){ wrap.innerHTML=recsPanelHTML(); shopCardsLazy(TUT_SETS[shopState().axis].recs,'shopRec'); } if(el) el.textContent=b.text+' '+(b.prompt||''); }
-  else if(b.ui==='choice'){
+  const nx=document.getElementById('rpgNext'); if(nx) nx.style.visibility='hidden';
+  if(el && b.prompt) el.textContent=b.text+' '+b.prompt;
+  if(b.ui==='aces'){ if(wrap){ wrap.innerHTML=acePanelHTML(); acePanelWire(); } }
+  else if(b.ui==='recs'){ if(wrap){ wrap.innerHTML=recsPanelHTML(); shopCardsLazy(TUT_SETS[shopState().axis].recs,'shopRec'); } }
+  else if(b.ui==='relic'){ if(wrap){ const h=relicPanelHTML(); if(!h){ rpgShow(_rpg.beat+1); return; } wrap.innerHTML=h; } }
+  else if(b.ui==='choice' || b.ui==='go'){
     const menu=document.getElementById('rpgMenu'); if(!menu) return;
     menu.style.display='block';
-    menu.innerHTML=`<div class="rpg-opt" onclick="event.stopPropagation();rpgChoose('tutorial')">▶ 接受對決（老闆帶打・教學兩場）</div>
-      <div class="rpg-opt dim" onclick="event.stopPropagation();rpgChoose('play')">▶ 轉身離開（跳過教學，直接開打）</div>`;
+    menu.innerHTML = b.ui==='choice'
+      ? `<div class="rpg-opt" onclick="event.stopPropagation();rpgChoose('tutorial')">▶ 接受對決（老闆帶打・教學兩場）</div>
+         <div class="rpg-opt dim" onclick="event.stopPropagation();rpgChoose('play')">▶ 轉身離開（跳過教學，直接開打）</div>`
+      : `<div class="rpg-opt" onclick="event.stopPropagation();rpgEpilogueEnd()">▶ 應戰</div>`;
   }
   if(wrap && wrap.firstElementChild){ try{ wrap.firstElementChild.scrollIntoView({block:'nearest'}); }catch(e){} }
 }
@@ -2288,6 +2247,59 @@ function shopLeave(how){
   _shop=null; if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
   if(how==='tutorial'){ startTutorialGuarded(); return; }
   rookieQuickStart();
+}
+
+// =========================================================================
+//  🎮 教學打完的尾聲（唱片行那套牌組才有）：男子放話 → 老闆送淘汰設備（發燒配件三選一）→ 又有人踢館 → 試煉開始
+//  由 winFight 在第二場打完時接手（RUN._tutEpilogue）；關頁續玩走 saveRun('epilogue')。
+// =========================================================================
+function tutEpilogueBeats(){
+  const p=roleOf(RUN); const ear = p && RUN.profileKey ? `【${p.name}】——${p.affDesc}。` : '';
+  return [
+    { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
+    { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
+    { who:'男子', text:'「搵休督欸丟！」' },
+    { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
+    { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
+    { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
+    { who:'老闆', text:'「我這邊有一些被我淘汰的設備——你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃台底下拖出一個木箱。）' },
+    { who:'老闆', text:`「往後的每一場，都是你自己的打法了。」${ear}` },
+    { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
+    { who:'', text:'你正要道謝——門，又開了。', stage:{f:'door',fSpr:'e1'} },
+    { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
+    { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
+  ];
+}
+function renderTutEpilogue(){
+  saveRun('epilogue');
+  rpgStart(tutEpilogueBeats(), {p:'leave',o:'between',f:'door',fSpr:'e0'}, 0);
+}
+// 老闆的木箱：從已解鎖池隨機三件（撞到已持有的同款＝升一級並整新，同藏家掉落）；池空就跳過
+function relicPanelHTML(){
+  const pool=relicPool(); if(!pool.length) return '';
+  _relicChoices = shuffle(pool.slice()).slice(0,3);
+  return `<div class="rpg-panel" id="rpgPanel">
+    <div class="muted" style="margin:0 0 6px">木箱裡的<b>發燒配件</b>：整趟生效、耗損跨趟保留。選一件帶走。</div>
+    <div id="relicChoices">${_relicChoices.map((r,i)=>{
+      const dup=isOwnedRelic(r.id), lv=relicLvOf(r.id);
+      return `<div class="relic-card" onclick="rpgPickRelic(${i})">
+        <div class="ric">${relicIconHTML(r,36, dup?lv+1:null)}</div>
+        <div><h3>${r.name}${dup?` <span class="pill" style="color:var(--gold);border-color:var(--gold)">⬆ 升級 Lv.${lv}→${lv+1} · 整新</span>`:''}</h3>
+        <div class="muted">${relicDescOf(r)}</div></div>
+      </div>`;}).join('')}</div>
+  </div>`;
+}
+function rpgPickRelic(i){
+  const r=_relicChoices && _relicChoices[i]; if(!r) return;
+  if(isOwnedRelic(r.id)){ upgradeRelic(r.id, true); if(!RUN.relics.includes(r.id)) carryRelic(r.id); seedToast(`⬆ ${r.name} 升級到 Lv.${relicLvOf(r.id)}，並整新到全新！`); }
+  else { grantRelic(r.id); seedToast(`🎁 收下了「${r.name}」`); }
+  _relicChoices=null; saveMeta(); saveRun('epilogue');
+  rpgShow(_rpg.beat+1);
+}
+function rpgEpilogueEnd(){
+  if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
+  RUN._drewThisWin=true;   // 這一場的獎勵是老闆的木箱，不再抽盤
+  if(RUN.lvlQueue>0) renderLevelUp(); else nextFight();
 }
 // 首頁的角色卡（新手首頁＋出師後的選流派畫面共用）
 function charCardHTML(){
@@ -2544,6 +2556,7 @@ function resumeRun(){
     return;
   }
   G = null;
+  if(ph==='epilogue'){ renderTutEpilogue(); return; }
   if(ph==='rewind'){ renderRewindOffer(); return; }
   if(ph==='middraft'){ renderMidDraft(); return; }
   if(ph==='relic'){ renderRelicChoice((s.relicIds||[]).map(relicById).filter(Boolean)); return; }
@@ -4092,6 +4105,8 @@ function winFight(){
       RUN._tutorial=false;
       // 🏪 課上完了：換回老闆看出來的耳朵（三圍＋專長），第三場起生效
       if(RUN._profilePending){ applyRookieProfile(); const p=roleOf(RUN); if(p&&RUN.profileKey) outro += `<br>🎙 老闆：接下來換回你自己的打法——<b>【${p.name}】</b>：${p.affDesc}。`; }
+      // 唱片行那套牌組：接 RPG 尾聲（男子放話、老闆送設備、又有人踢館），老闆的話在尾聲裡講，不疊吐司
+      if(RUN.tutSet && RUN.tutSet!=='legacy'){ RUN._tutEpilogue=true; outro=''; }
     }
     if(outro) setTimeout(()=>coachToast(outro), 700);
     G.tut=null;
@@ -4118,6 +4133,7 @@ function winFight(){
   let lv=0; while(RUN.runXp >= runXpNeed()){ RUN.runXp -= runXpNeed(); RUN.runLevel++; lv++; }
   RUN.lvlQueue = lv;
   // 擊敗傳說藏家 → 發燒配件三選一（之後才接升級佇列）＋ 本場局末抽盤王牌率大增
+  if(RUN._tutEpilogue){ RUN._tutEpilogue=false; renderTutEpilogue(); return; }   // 🏪 教學尾聲（木箱三選一在裡面）
   if(G.E && G.E.boss){ RUN._aceLuck=true; renderRelicChoice(); return; }
   if(lv>0) renderLevelUp(); else renderWinContinue();
 }
@@ -4940,10 +4956,23 @@ async function bootstrap(){
   applyConfig(cfg);
   // 品味生死鬥頁的「教學關卡」入口：?tutorial=1 直接開教學（可無限重玩）；
   // 把參數洗掉，之後死亡重來／重新整理不會又被拉回教學
-  const _wantTut = new URLSearchParams(location.search).get('tutorial')==='1';
-  if(_wantTut){ try{ history.replaceState(null,'',location.pathname); }catch(e){} }
-  // 還沒逛過唱片行的新玩家：先走序章（結帳畫面會把教學當主打按鈕），不直接跳進老闆帶打
-  if(_wantTut && guardRunSave()){ if(!hasUnlock('classes') && !META.profile) renderShopIntro('tutorial'); else startTutorialRun(); }
+  const _q = new URLSearchParams(location.search);
+  const _wantTut = _q.get('tutorial')==='1', _wantPro = _q.get('prologue')==='1', _wantChar = _q.get('char')==='1';
+  if(_wantTut||_wantPro||_wantChar){ try{ history.replaceState(null,'',location.pathname); }catch(e){} }
+  // 🏪 從品味生死鬥主選單來的序章／捏角色：先等登入狀態與樂歷綁定（雲端已有角色的人不該再走一次序章）
+  if(_wantPro||_wantChar){
+    try{
+      const t0=Date.now();
+      while(!window.__rogueAuthReady && Date.now()-t0<2500) await new Promise(r=>setTimeout(r,80));
+      if(window.__rogueAuthReady) await Promise.race([ window.__rogueAuthReady, new Promise(r=>setTimeout(r,2500)) ]);
+      await new Promise(r=>setTimeout(r,50));
+      if(window.__rogueBindP) await Promise.race([ window.__rogueBindP, new Promise(r=>setTimeout(r,3000)) ]);
+    }catch(e){}
+  }
+  if(_wantChar){ renderCharCreate('hub'); }
+  else if(_wantPro){ if(META.profile){ location.replace('pvp.html'); return; } renderShopIntro(); }
+  // 還沒逛過唱片行的新玩家：先走序章，不直接跳進老闆帶打
+  else if(_wantTut && guardRunSave()){ if(!hasUnlock('classes') && !META.profile) renderShopIntro('tutorial'); else startTutorialRun(); }
   else renderClassSelect();
   // 背景抓「全世界」真實專輯擴充卡池（不擋畫面；離線就跳過、用內建 POOL）
   fillDynamicPool(16);

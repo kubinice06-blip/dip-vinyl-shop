@@ -50,6 +50,18 @@
 
 **教學課表依牌組生成**（`TUT_SETS`／`tutBuild`）：三套「王牌＋四張」＋ legacy 原版固定牌組（沒逛過唱片行的舊玩家、出師後重玩）。四張推薦盤是固定的（都走該軸、另外兩軸至少 3 星，課表才有牌示範三種相剋）。課：第一場 用王牌同軸比星數 → 冷剋經 → 經剋硬 → 硬剋冷 → 品味輾壓；第二場 連段 → 被剋痛一下 → **有王牌＝七星回擊擋大絕**（legacy 教割捨防禦）→ 重鋪 → 冷門剋經典收尾。敵方 HP 由課表用到的牌反推（含敵方出經典回 1 滴、第 4 手打完剩 2），四套都在第五手收尾。教學兩場鎖守舊派三圍，第二場打完 `applyRookieProfile()` 換回耳朵；教學後牌組＝五張＋雜牌；直接開打時 `autoSeeds()`＝那五張。
 
+**入口與角色共用**（2026-09-02 晚）：序章從**品味生死鬥主選單**（`pvp.html`）開始——主選單載入時讀不到角色（`DipChar.load()` 無 `profile`）就轉到 `roguelike.html?prologue=1`；有角色則在標題下顯示角色卡（像素小人＋名字＋耳朵，點了走 `?char=1` 改造型、存完回主選單）。
+角色資料仍存在品味試煉的樂歷（本機 `dipRogueMeta_v2[:uid]`、雲端 `users/{uid}.rogueMeta`），共用讀取與像素零件抽到 **`dip-character.js`**（`PIX_PAL`／`pixArtHTML`／`SPR_BODY`／`sprRows`／`AVATAR_*`／`avatarRows`＋`DipChar.load／avatarSVG／profileName／esc`），
+`roguelike.html`、`pvp.html`、`battle.html` 三頁載入；`battle.html` 的我方名牌改成小人＋名字＋耳朵。之後新增的挑戰頁照樣載這支就能帶著角色。
+`?prologue=1`／`?char=1` 進來會先等登入狀態與樂歷綁定（`window.__rogueBindP`），雲端已有角色的人不會再走一次序章。
+
+**對話窗的操作規則**：要玩家選東西的段落（三選一／四張／木箱／選單）不自動彈面板——字跑完一樣亮 ▼，**再點一下才展開**；⏩ 只快轉到那一段，仍要點一下。
+
+**教學尾聲（`tutEpilogueBeats`，唱片行三套牌組才有；legacy 沒有）**：第二場打完由 `winFight` 接手（`RUN._tutEpilogue`）：
+男子「搵休督欸丟！」離開 → 老闆「我看你對音樂脈絡很有天份」→ 「被我淘汰的設備，挑一個帶回去」＝**發燒配件三選一**（`relicPool()` 隨機三件，撞同款升級整新，同藏家掉落）→
+老闆宣告往後換回你自己的耳朵 → 「有空再來走走，與大家交流音樂」→ 又有人進門「聽說這裡有個新來的？」→ 選單「應戰」→ 第 3 場（這一場不再抽盤，`_drewThisWin=true`；有升級佇列先處理）。
+關頁續玩：`saveRun('epilogue')`，`resumeRun` 的 `epilogue` 階段重開尾聲。
+
 **其他**：`?tutorial=1` 遇新玩家先走序章；新手首頁與出師後選流派畫面有角色卡（✏️ 捏角色）。沒做「再逛唱片行」（重逛等於免費集滿三張王牌）。`mergeMeta` 併 name／avatar／profile；訪客捏過角色後首次登入且雲端沒 profile 會帶進帳號。
 
 ### 2.1 選流派（＝選角色 / class）
