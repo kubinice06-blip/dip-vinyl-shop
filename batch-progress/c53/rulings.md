@@ -2405,3 +2405,58 @@ c-65 的封面探測跑出 **Smegma《Glamour Girl 1941》** 時我覺得眼熟�
   `qa-batch out c59` 重跑與卡單相符，HANDOFF 已修訂）
 - **c-65：47 → 44 張**（只在策展階段，成本最低）
 - 全部 14 批合計 **625 張、跨批撞卡 0**
+
+## 120.（c-66）印度批的掛名用**拉丁**——與西里爾／希臘文兩批相反，而且理由一致
+
+c-66 抽驗：拉丁查藝人實體 **16/16**，天城體／坦米爾文只有 **5/16**，
+**而且那 5 筆命中的實體名本身也是拉丁**（查 `लता मंगेशकर` 回 `Lata Mangeshkar`）。
+
+**裁定：掛名用 MB 實體的拉丁寫法，天城體不入 `queryAlias`。**
+
+**表面上與第 70 條（希臘文用原文）相反，實際上是同一條規則的兩個結果**：
+兩批都是**「用 MB 藝人實體實際使用的那一種」**。
+希臘的 MB 實體用希臘文，印度的 MB 實體用拉丁——**規則沒變，答案不同**。
+
+天城體不入 alias 的理由是第 25 條的判準：**alias 填了會拉高還是拉低命中率**。
+MB 不認、Apple 不認，填了只會讓封面與試聽落空。
+與池中既有 8 個印度掛名一致，**不製造分裂鍵**（第 49 條的預防）。
+
+**Apple 全部落在 `in`**，其他八個 storefront 零命中——
+**移民市場的假設第三次證實不成立**（第 75 條；前兩次是 c-54 的德奧、c-62 的德澳）。
+
+## 121.（c-66）filmi 走作曲者掛名，年份取電影問世年
+
+**掛名**：filmi 在 MB 上**掛作曲者不掛歌手**——Lata 名下目標年代 Album 只有 10 張、
+Asha 3、Rafi 2、Kishore 6，而 S.D. Burman 有 44、Shankar Jaikishan 76、Naushad 27、O.P. Nayyar 31。
+**a 組整條線走作曲者掛名**，與池中既有的 `R.D. Burman`《Sholay》、`Kalyanji-Anandji`《Don》同例。
+（這正是第 103 條的形狀：作曲者主導的專輯不是合輯，**不走 §5.6**。本批合輯 0 張。）
+
+**年份**：**取電影問世年，不照抄 MB 的 `first-release-date`**——5 張脫鉤：
+《Madhumati》MB 1976／原盤 1958、《Guide》1966／1965、《Qurbani》1979／1980、
+《Chalte Chalte》1974／1976、《Goopy Gyne Bagha Byne》1970／1969。
+依第 95 條（`rgMbid` 是身分鍵不是年份來源）。
+
+**兩張剔除，理由都是「避免製造分裂鍵」**：
+- **Hemant Kumar ＝ Hemanta Mukherjee 是同一人**，MB 建了兩個實體。只收一個鍵，
+  剔除 b 組《Harano Sur》——不然就是第三組 `Selda`／`Selda Bağcan` 形狀。
+- **Roshan《Taj Mahal》剔除**（與池中 `Taj Mahal`《Taj Mahal》**盤名完全相同**），
+  改收《Barsaat Ki Raat》。
+
+## 122.（c-66）Bengali 與 Punjabi 民俗這條線交白卷——資料面做不到，記下來不要重查
+
+MB 上做不到的，逐項記清楚，**免得日後有人再花一次時間**：
+
+| 對象 | 症狀 |
+|---|---|
+| Nirmalendu Chowdhury／Purna Das Baul／Asa Singh Mastana／Kuldip Manak | **實體在、名下無目標年代條目**（第 94 條形狀） |
+| Surinder Kaur | 唯一一筆是**分卷出版**（第 87 條不收） |
+| **S. Balachander** | **兩種寫法在 MB 都回 Johann Sebastian Bach** |
+| T. N. Krishnan | 查到的是 `N. S. Krishnan`（RG 0） |
+| Gangubai Hangal／Kesarbai Kerkar／Palghat Mani Iyer | 名下無目標年代條目 |
+
+**要補只能走 §1 人工身分路線**——那需要 `mbAbsenceProof` 的實際查詢紀錄與外部佐證，
+c-64 的 b 組做過（8 張）。**這是店主的決定，雲端不自行開。**
+
+`S. Balachander` 那筆特別值得記：**MB 的搜尋把它糊到 Bach**——
+這是「假查無」的第四種形狀，**不是回空、不是回不完整，是回了完全不相干的東西**。
+前三種見第 28（503）、98（403）、116（分頁上限）條。
