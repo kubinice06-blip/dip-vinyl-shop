@@ -784,6 +784,17 @@ Transsylvania Phoenix 之於羅馬尼亞的 Phoenix。**策展層不得自己編
 **這算是新開的一款規則，列為待店主確認事項。** 若店主認為原名優先，
 本卡改回《Debris'》即可（rgMbid 不變，封面走 CAA 不受影響，試聽會掉）。
 
+### 2026-09-02 定案（第三個實例出現後）
+
+這條連續三批各出一個實例：**Debris'《Static Disposal》(c-60)、
+Opus Avantra《Introspezione》(c-61)、Ed Askew《Ask the Unicorn》(c-63)**。
+每批的策展代理都得在提案裡重寫一次「這條列為待確認但我照用」，
+**成本已經高過裁定本身**。
+
+**定案：這是生效中的規則，不再標「待確認」。**
+店主若要改回原名優先，三張一起改即可——`rgMbid` 不變、封面走 CAA 不受影響，
+只會掉試聽。**推翻的成本很低，而讓三批走不同規則的成本很高**（第 67 條已論證過）。
+
 ## 46.（c-60）兩張年份與 MB 脫鉤，照第 18 條處理
 
 - **Mystic Siva《Mystic Siva》**：卡單 1971（Discogs 原盤）／MB 1972／坊間常寫 1970。
@@ -1508,3 +1519,51 @@ c-61 b 組三處）。第 59 條「這條線的研究層簡報一律明文授權
 - **授權狀態逐筆實查**：13 張零未授權，其餘 14 張的冒名廠牌實體序號
   （Trident (7)、Vedette Records (3)、Ricordi (2)、Mellow Records (4)、
   AMS (4)、Seven Seas (3) 等）**都寫進 fact 了**——第 65 條要求的「指到 entity 編號」已落實。
+
+## 81.（c-63）第 10 條的新形狀：MB 把雙人／團體作品掛在**單人實體**底下
+
+c-63 的 a 組發現：**Dave & Toni Arthur** 的雙人實體（`2d865fd0…`）名下
+**零 release-group**，兩張碟全掛在單人實體「Toni Arthur」（`9b2b2fc7…`），
+artist-credit 才是「Dave Arthur, Toni Arthur」。
+
+**這不是第 10 條原本說的「credit 字串與實體名不同」，是實體掛錯層級**——
+用團名查 release-group、用團名走 `artist/<MBID>?inc=release-groups` browse，
+**兩條路都會零命中**，而第 10 條給的正確做法（走 browse）在這裡也救不了。
+
+**裁定：補進第 10 條——雙人組合或「A & B」形式的掛名查無時，
+一律再拆開，用各自的單人名 browse 一次。**
+
+（第 15 條記過「三位藝人在 MB 上零 release-group，這個空缺本身是結論」。
+本條是它的反例前提：**在斷定「零 release-group」之前，先確認自己查的是對的實體層級。**
+兩條要一起讀。）
+
+## 82.（c-63）沒有任何再發的碟，可以靠檔案與樂評文獻舉證
+
+a 組有 **3 張完全沒有授權再發**（Dave & Toni Arthur、Ray Fisher、Almeda Riddle），
+分量靠檔案與文獻：英文維基專條、Mainly Norfolk、Tobar an Dualchais、
+Smithsonian 的 Rinzler 檔案。
+
+**裁定：收。第 43 條本來就明文允許這條路**——那條說的是
+「若一張碟的所有再發都是未授權，就得另外找樂評或參考書條目來舉證」，
+**「完全沒有再發」比「只有未授權再發」更乾淨**，不是更差。
+
+深掘線的判準從頭到尾都是「**有可查證的地位證據**」，
+再發只是最常見的一種證據形態，不是唯一的、也不是必要的。
+**民謠與田野錄音這條線尤其如此**——它的權威來源是檔案館與民俗學文獻，不是再發廠牌。
+
+## 83.（c-63）田野錄音與 old-time 在 MB 上建檔太薄，這塊的深度有上限
+
+a 組回報：多數 County／Rounder／Folkways 的關鍵條目**在 MB 上零 release-group**
+——Nimrod Workman《Mother Jones' Will》、Rounder《High Atmosphere》查無；
+Frank Proffitt 的 Folk-Legacy FSA-1 只以自我同名建檔，**且 1962 年有兩張同年碟，
+身分釘不住**（第 3、73 條的形狀）。
+
+這塊因此只做得出 **4 張**。
+
+**裁定：接受這個上限，不勉強補。** 要把它補深只有兩條路，兩條都有代價：
+1. **收更多 VA 合輯卡**——可以，但每張都要過 §5.6（第 72 條），而且 VA 卡不受藝人上限保護；
+2. **走 §1 的人工身分路線**——需要 `mbAbsenceProof`（≥2 組實際下過的查詢）、
+   ≥2 個 HTTPS 佐證網址、`manualRuling`，且 `rgMbid` 必須留空。
+
+**這是留給店主的選擇，不是雲端自行決定的。**
+現況 4 張已寫進卡單，其餘候選記在研究稿的 `notes` 裡供日後取用。

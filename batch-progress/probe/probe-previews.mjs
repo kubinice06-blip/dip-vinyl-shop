@@ -54,6 +54,9 @@ const PSY = ['us', 'ca', 'gb', 'de', 'fr', 'it', 'se', 'nl', 'jp'];
 const EUR = ['it', 'fr', 'se', 'dk', 'no', 'fi', 'is', 'nl', 'be', 'au', 'nz', 'jp', 'de', 'gb', 'us'];
 // c-62 希臘：先試希臘與賽普勒斯，再回退德澳（大量希臘移民市場）與國際。
 const GRC = ['gr', 'cy', 'de', 'au', 'us', 'gb', 'ca', 'se'];
+// c-63 深掘民謠與藍調：英國民謠復振與美國 old-time／藍調為兩大宗，
+// 再加愛爾蘭與伊比利、拉美 nueva canción 的發行國。依裁定第 75 條照發行國排。
+const FOLKB = ['gb', 'us', 'ie', 'pt', 'es', 'uy', 'cl', 'ca', 'fr', 'de'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -69,7 +72,8 @@ for (const b of BATCHES)
       : (b.startsWith('c58') || b.startsWith('c59')) ? DIG
       : b.startsWith('c60') ? PSY
       : b.startsWith('c61') ? EUR
-      : b.startsWith('c62') ? GRC : GEN });
+      : b.startsWith('c62') ? GRC
+      : b.startsWith('c63') ? FOLKB : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
