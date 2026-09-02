@@ -185,16 +185,18 @@ for (const c of cards) {
         (albumCands.some(a => titleOk(a, r.collectionName || '')) ||
          looseTitleOk(c.album, r.collectionName || '')) &&
         (artistCands.some(a => artistOk(a, r.artistName || '')) ||
-         looseArtistOk(c.artist, r.artistName || '')) &&
-        (!c.year || Math.abs(Number(String(r.releaseDate || '').slice(0, 4)) - c.year) <= 3));
+         looseArtistOk(c.artist, r.artistName || '')));
+      // 年份不再當門檻（裁定第 77 條）：Apple 記的常是數位重製日不是原盤年。
+      // 主閘是藝人＋盤名的粗形比對；年份只用來排序與標記。
       if (hits.length) break;                           // 命中就不再試下一種寫法
     }
     rec.tried.push(`${front}:${raw}→${hits.length}`);
     if (!hits.length) continue;
 
-    // 同名雙胞胎：explicit 優先，其次 notExplicit，最後才 cleaned。
+    // 排序：年份接近的優先（不是門檻，只是偏好），再來 explicit 優先。
+    const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
-    hits.sort((x, y) => rank(x) - rank(y));
+    hits.sort((x, y) => (drift(x) - drift(y)) || (rank(x) - rank(y)));
     const best = hits[0];
 
     const lk = await get(`https://itunes.apple.com/lookup?id=${best.collectionId}&entity=song&country=${front}&limit=60`);
@@ -210,6 +212,12 @@ for (const c of cards) {
     rec.previewUrl = prev?.previewUrl || null;
     // 整份候選只剩淨化版時要讓本機看得到，§6 明訂「可收但要在備註寫明」。
     rec.cleanedOnly = hits.every(x => x.collectionExplicitness === 'cleaned');
+    // 年份漂移：Apple 的日期與卡片差超過 3 年就標記交人工看，但不擋。
+    // 標題自己寫著再發字樣的（remaster／anniversary／deluxe／edition）視為再發，年份不計。
+    const isReissue = DECO.test(best.collectionName || '');
+    DECO.lastIndex = 0;                                 // 全域旗標的正規式要自己歸零
+    const yd = c.year ? Math.abs(Number(rec.appleYear) - c.year) : 0;
+    if (yd > 3) { rec.yearDrift = yd; rec.reissueTitle = isReissue; }
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
     break;
   }
