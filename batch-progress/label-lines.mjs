@@ -20,6 +20,7 @@ export const LINES = {
   // c-62 是單組（一位代理涵蓋 rebetiko／έντεχνο／地下三線），所以 scene 用單一字串。
   c62: { lineType: '廣度', scene: '希臘 rebetiko 與 έντεχνο' },
   c63: { lineType: '深掘', scene: { a: '民謠的冷門硬蕊', b: '藍調的冷門硬蕊' } },
+  c64: { lineType: '廣度', scene: '柬埔寨與越南 1960–70s' },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。

@@ -57,6 +57,10 @@ const GRC = ['gr', 'cy', 'de', 'au', 'us', 'gb', 'ca', 'se'];
 // c-63 深掘民謠與藍調：英國民謠復振與美國 old-time／藍調為兩大宗，
 // 再加愛爾蘭與伊比利、拉美 nueva canción 的發行國。依裁定第 75 條照發行國排。
 const FOLKB = ['gb', 'us', 'ie', 'pt', 'es', 'uy', 'cl', 'ca', 'fr', 'de'];
+// c-64 柬埔寨與越南：本地 storefront 先試（kh／vn），再發權多在美國考古廠牌
+// （Dust-to-Digital、Sublime Frequencies）與法國（前殖民地的檔案），最後才是海外華越社群所在的 au／ca。
+// 依第 75 條：storefront 賣的是發行權涵蓋的地區，不是聽眾在哪裡，所以移民市場放最後。
+const INDOCH = ['kh', 'vn', 'us', 'fr', 'gb', 'th', 'sg', 'au', 'ca'];
 
 const cards = [];
 for (const b of BATCHES)
@@ -73,7 +77,8 @@ for (const b of BATCHES)
       : b.startsWith('c60') ? PSY
       : b.startsWith('c61') ? EUR
       : b.startsWith('c62') ? GRC
-      : b.startsWith('c63') ? FOLKB : GEN });
+      : b.startsWith('c63') ? FOLKB
+      : b.startsWith('c64') ? INDOCH : GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。
