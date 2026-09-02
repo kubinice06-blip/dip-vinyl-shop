@@ -667,6 +667,11 @@ Sarah Webster Fabio 的伴奏是**她自己的三個孩子**；Ollie & The Night
 
 改名後同步了研究稿的 `key` 與 `album`，`qa-batch research c58` 重跑「key 與卡單完全一致 ✓」。
 
+## 37–39．（編號跳號說明）
+
+這三個號碼沒有對應的裁定，是我寫第 40 條時記錯了上一條的號碼。
+**沒有裁定遺失**，也不重新編號——編號一旦改動，其他檔案裡引用的號碼就會指錯。
+
 ## 40.（c-55）「未具名出處」的誤報又出現一次，形狀與 2026-08-30 記錄的相同
 
 `qa-batch out c55` 標了一筆：
@@ -685,3 +690,40 @@ Sarah Webster Fabio 的伴奏是**她自己的三個孩子**；Ollie & The Night
 **c-55 因此結案**：45 張（out-1 full 20 張 204–234／thin 3 張 160–179，
 out-2 full 18 張 211–234／thin 4 張 172–177），`qa-check-research` 與
 `fix-spacing` 兩份各 0 標記，`qa-batch out` 的唯一標記為已查核的誤報。
+
+## 41.（c-57）研究層的 `sound` 欄把班底寫錯人——寫作層照 facts 覆蓋，是對的
+
+Bunny Wailer《Protest》的 `sound` 欄寫「Barrett 一路的節奏組把 one drop 打得深」，
+但同一筆的 facts 明載貝斯是 Robbie Shakespeare、鼓是 Leroy「Horsemouth」Wallace
+與 Michael Richards——**Barrett 兄弟不在這張碟上**。同欄的「自製自混」也不準確：
+facts 說製作與混音是 Bunny Wailer 與 Sylvan Morris 兩人。
+
+（會寫錯不難理解：Barrett 兄弟是 the Wailers 的節奏組，而 Bunny Wailer 正是
+the Wailers 的成員。同批的 Max Romeo《Revelation Time》陣容裡也確實有
+Aston 與 Carlton Barrett，兩筆很容易串。）
+
+**裁定：`sound` 欄與 facts 衝突時，一律以 facts 為準，寫作層直接覆蓋、事後回報。**
+c-57 writer-1 就是這樣做的，並主動要求回頭修來源檔以免下批再誤用——照辦，
+`batches/research/c57-a.json` 與 `batches/input/c57-writer-1.json` 兩份的
+`sound` 欄都已改寫成 facts 的陣容與製作掛名。
+
+推論：`sound` 是研究層的**歸納**，不是逐條有 src 的 facts。歸納出錯不會被
+`qa-check-research` 抓到（它比對的是行文用詞有沒有出現在 blob 裡，而 `sound`
+本身就在 blob 裡，等於自己給自己背書）。**這一欄只能靠寫作層人眼對照 facts。**
+
+## 42.（c-57）note 的禁令引用了 facts 裡沒有的人名——寫作層不硬寫，是對的
+
+Max Romeo《Revelation Time》的 note 寫「禁令：執行製作是 Geoffrey Chung、
+Perry 只掛工程與打擊，不要寫成 Perry 製作的專輯」。但 Geoffrey Chung
+**只出現在 `researchNotes` 的策展理由更正段，不在 facts 裡**——facts 完全沒有
+這個人與這條製作掛名。
+
+寫作層沒有硬把 Chung 寫進行文，改成只依 facts 寫「Perry 在這張碟上掛的是
+打擊與工程」，達到同樣的防錯效果。**裁定：這個處理正確。**
+
+這是裁定第 33 條與第 34 條的合流實例：禁令的**目的**（別誤寫成 Perry 製作）
+可以照做，但禁令**順帶提供的事實**（執行製作是誰）沒有 facts 支撐就不能寫進行文。
+`qa-check-research` 不會擋——第 34 條已記錄它把 `researchNotes` 也放進比對 blob，
+所以「只出現在 note 裡的人名」在檢查器眼中是合法的。**這一關同樣只有寫作層守得住。**
+
+要把 Chung 寫進行文，得由研究層補一條帶 src 的 fact；本批不補，維持現行行文。
