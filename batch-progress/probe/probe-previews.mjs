@@ -103,10 +103,12 @@ const get = async url => {
 // 卡片本身若就是 EP（§5.5 的 asia-mini-album 白名單）則卡名自己也會帶那個字，
 // 所以比對的是「Apple 有、卡片沒有」才擋。
 const SUFFIX = /[-–—]\s*(Single|EP)\s*$/i;
-const titleOk = (want, got) => {
+const titleOk = (want, got, selfTitled = false) => {
   if (SUFFIX.test(got) && !SUFFIX.test(want)) return false;
   const a = norm(want), b = norm(got);
   if (a === b) return true;
+  if (selfTitled) return false;                        // 自我同名：只接受完全相等
+  if (/\d/.test(a) !== /\d/.test(b) && (a.includes(b) || b.includes(a))) return false; // 數字殘餘
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
 const artistOk = (want, got) => {
@@ -139,17 +141,35 @@ const translit = s => Array.from(String(s || '')).map(ch => {
 // 這只影響比對，不影響任何存下來的資料。
 // 再版尾綴要先拿掉，否則 titleOk 的長度差上限（8）會把
 // 「Ρωμιοσύνη」與「Romiosini (Remastered)」判成不同（差 10）。
-const DECO = /\b(digitally\s+)?(remaster(ed)?|reissue|deluxe|expanded|edition|anniversary|bonus\s+tracks?|version)\b/gi;
+// 再發尾綴常帶年份或序數（「Remastered 2013」「30th Anniversary Edition」），
+// 那些數字要跟著尾綴一起剝掉，否則會被下面的「數字殘餘」規則誤擋成別張碟。
+const DECO = /\b(\d{1,3}(st|nd|rd|th)\s+)?(digitally\s+)?(remaster(ed)?|reissue|deluxe|expanded|edition|anniversary|bonus\s+tracks?|version)(\s*\d{4})?\b/gi;
 const canon = s => norm(translit(String(s || '').replace(DECO, ' ')))
   .replace(/ph/g, 'f').replace(/kh/g, 'h').replace(/ch/g, 'h')
   .replace(/mp/g, 'b').replace(/nt/g, 'd').replace(/gk/g, 'g')
-  .replace(/ou/g, 'u').replace(/y/g, 'i').replace(/v/g, 'b')
+  .replace(/ou/g, 'u').replace(/ei/g, 'i').replace(/oi/g, 'i').replace(/ai/g, 'e')   // 希臘雙母音的通行轉寫
+  .replace(/y/g, 'i').replace(/v/g, 'b')
   .replace(/(.)\1+/g, '$1');
-const looseTitleOk = (want, got) => {
+// 年份不再當門檻之後（第 77 條），子字串比對會放進兩種錯配（c-55 實測）：
+//   Moğollar《Moğollar》 → 《Moğollar'94》（1994 年的復出盤，不是 1976 那張）
+//   3 Hür-El《3 Hür-El》 → 《1953 Hürel》（回顧合輯）
+// 共同點是「Apple 標題＝卡片標題＋一段帶數字的殘餘」。再發尾綴（remastered 等）全是字母，
+// 帶數字的殘餘幾乎一定是另一張碟（年份、Vol.、續作）。所以：殘餘含數字就擋。
+// 自我同名卡更嚴：標題必須完全相等——「藝人名＋任何東西」都是別張碟。
+const digitResidual = (a, b) => {
+  const [short, long] = a.length <= b.length ? [a, b] : [b, a];
+  const i = long.indexOf(short);
+  if (i < 0) return false;
+  const rest = long.slice(0, i) + long.slice(i + short.length);
+  return /\d/.test(rest);
+};
+const looseTitleOk = (want, got, selfTitled = false) => {
   if (SUFFIX.test(got) && !SUFFIX.test(want)) return false;
   const a = canon(want), b = canon(got);
   if (!a || !b) return false;
   if (a === b) return true;
+  if (selfTitled) return false;
+  if (digitResidual(a, b)) return false;
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
 const looseArtistOk = (want, got) => {
@@ -186,8 +206,8 @@ for (const c of cards) {
       if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
       raw = (j.results || []).length;
       hits = (j.results || []).filter(r =>
-        (albumCands.some(a => titleOk(a, r.collectionName || '')) ||
-         looseTitleOk(c.album, r.collectionName || '')) &&
+        (albumCands.some(a => titleOk(a, r.collectionName || '', !!c.selfTitled)) ||
+         looseTitleOk(c.album, r.collectionName || '', !!c.selfTitled)) &&
         (artistCands.some(a => artistOk(a, r.artistName || '')) ||
          looseArtistOk(c.artist, r.artistName || '')));
       // 年份不再當門檻（裁定第 77 條）：Apple 記的常是數位重製日不是原盤年。
