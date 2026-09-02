@@ -905,3 +905,46 @@ Q65、Tamam Shud、Company Caine。
 
 **這是 c-61 的現成起點**（若店主要繼續往下開）。與第 48 條記的北美私壓可用名單
 （要先扣掉本批的 26 位與已在池中的 16 位）合起來看，深掘搖滾這條線還有一批的量。
+
+## 54.（c-60）`hookCandidates` 上限是 2——我的簡報寫成 3–5，是我錯
+
+c-60 的 a 組研究代理回報：我的簡報要 3–5 個 `hookCandidates`，
+但 `qa-batch.mjs` 對超過 2 個的直接報標記，註解寫的理由是
+**「候選一多就變成研究層在越權定調」**——範本 `c58-a.json` 也是每張 2 個。
+
+**裁定：以檢查器為準，上限 2 個，不改檢查器。** 那條註解講的分層是對的：
+研究層的職責是把材料查齊，挑哪個角度切入是 hook 層的判斷。
+給五個候選等於研究層先把選項篩到只剩自己中意的那幾個。
+
+**多挖出來的切角不要丟**——照 a 組的做法，以「備用切角：」一行放進 `notes`
+給 hook 層挑，但那些錨點一樣必須有對應的 fact 撐著（第 42 條）。
+兩者的差別在於 `hookCandidates` 是**推薦**、`notes` 的備用切角是**素材**。
+
+已把更正發給 b 組的研究代理。往後開研究層簡報時，這一欄一律寫「2 個」。
+
+## 55.（c-60）a 組研究層推翻策展層四處事實錯誤、兩處無據的 risk
+
+**第 35 條的形狀第三次出現**（c-58 五處、c-57 兩處、這次四處）。
+私壓盤的網路二手資料充滿轉抄，策展層的 `curatorWhy` 不能當事實用。
+
+| 卡 | 策展層寫什麼 | 實查 |
+|---|---|---|
+| Music Emporium | 含**女性**風琴手 Casey Cosby | Casey Cosby 是團長 Bill「Casey」Cosby，**男性**；碟上的女性是貝斯 Carolyn Lee 與鼓手 Dora Wahl |
+| Music Emporium | 在**自設廠牌** Sentinel 壓 | Sentinel 是剛被 Liberty 開除的製作人 **Jack Ames** 的獨立廠牌 |
+| Michael Angelo | 透過**德州**客壓廠 Guinn Records | Guinn 在**密蘇里州北堪薩斯市**；壓片是俄亥俄州的 Rite Record Productions |
+| Mystic Siva | 底特律的**三人團** | 四人（Mascarin／Tozzi／Heckert／Thienel） |
+
+另更正兩處 `risk`：**The Bachs** 的壓量不是「轉抄互相矛盾」
+（Discogs 與樂團訪談一致寫 150 張，訪談另給 750 美元）；
+**Stone Harbour** 的 1991 奧地利 IS 610 在 Discogs 上**沒有**標 Unofficial，
+策展層說它未授權是無據的——這一條特別要記，因為第 43 條剛立下
+「未授權再發不算背書」，**反過來把有授權的再發誤標成未授權，一樣會誤判一張碟的分量**。
+
+## 56.（c-60）Charlie Tweddle《Fantastic Greatest Hits》沒有曲名，`keyTracks` 留空
+
+原盤與 2014 年復刻的四面唱片**全部沒有曲名**，Discogs 逐軌登錄 Untitled。
+`keyTracks` 留空，`notes` 已明令寫作層不得自行編造曲名。
+
+這是 `keyTracks` 第一次因為「作品本身沒有曲名」而留空
+（先前的空值都是查不到）。**兩者要分清楚**：查不到是 `status: thin` 的理由，
+本來就沒有不是——這張仍是 `full`。
