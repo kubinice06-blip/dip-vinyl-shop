@@ -736,5 +736,429 @@
    "note": "MusicBrainz release-group 記 first-release-date 1968，Discogs 的 HMV ECLP-2384 條目也記 1968，兩處一致，卡單年份無誤。"
   },
   "notes": "**糾錯（第 13／91／114 條）**：卡單 curatorRisk 說「同一位藝人名下另有 1968 年的《Mallikarjun Mansur》（自我同名）與《Hindi Classical》兩筆，**同年三張碟**，須靠 MBID 區分」——**實測不是三張碟，是同一張碟在 MusicBrainz 上被建了三筆**。三個 release-group 底下的 release 目錄號都是 His Master's Voice ECLP-2384、曲目都是〈Ye Mahadev Devan Pate〉與〈Man Na Kariye Ri〉。這是裁定第 13 條（MB 重複建檔）的形狀，不是第 49 條的撞卡。另外，**Discogs 那一筆的標題是自我同名的《Mallikarjun Mansur》**（封面只印名字），卡片用 MB 的描述性標題——這是第 91 條的形狀（RG 標題與卡片標題不必相等），**不是錯配**。\n**互斥條款（第 58 條）**：**Jaipur-Atrauli gharana 與罕用 raga 的曲目表**判給本卡；同批 Kishori Amonkar 同樣出身 Jaipur-Atrauli，**那張寫的是她自己的取徑，不重述門派的曲目表**。**卡納提克起手、後轉北印**這條線只給本卡。\n**第 33 條提醒**：卡單說這一派被稱為「raga 的博物館」——**facts 沒有任何來源這樣寫，不得寫**。卡單說「他在西方的知名度遠低於 Bhimsen Joshi」——facts 無來源，不得寫。\n**第 64／108 條提醒**：facts 逐字有「九歲」「1855–1946」「19 分 11 秒」「18 分 6 秒」「三筆」與三個 Padma 年份；**罕用 raga 名單的「幾個」沒有寫出數字**。"
+ },
+ {
+  "key": "desc2:Kishori Amonkar|Classical Vocal",
+  "artist": "Kishori Amonkar",
+  "album": "Classical Vocal",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1971、主類型 Album、無次類型，掛名「Kishori Amonkar」，底下只有一個 release：1971 年印度發行、狀態 Official。",
+    "src": "https://musicbrainz.org/release-group/6a72e4c0-0eba-4fd0-82c2-ef14de99bcc3"
+   },
+   {
+    "f": "Discogs 的印度盤條目標題作《(Classical) Vocal》，廠牌 His Master's Voice、目錄號 ECSD 2702、1971 年印度發行；曲目一面一首：〈Raga Bhoop〉與〈Raga Bageshri〉。",
+    "src": "https://www.discogs.com/release/3986239"
+   },
+   {
+    "f": "同一條目的參與者掛名：Kishori Amonkar 掛人聲，tabla 是 Narayanrao Indorkar，設計是 Mohan Wagh；唱片標籤上的分類欄印「Hindi classical」。條目另記部分版本的封面與中心標籤上，HMV 的「Nipper」狗商標被貼上金箔貼紙蓋住——那是因為該商標在某些外銷地區有版權限制，貼紙是出廠後才加的，這些版本仍算 HMV 盤。",
+    "src": "https://www.discogs.com/release/3986239"
+   },
+   {
+    "f": "英文維基的 Kishori Amonkar 條目記她 1932 年生、2017 年過世，屬 Jaipur gharana，唱 khyal，也唱 thumri 與 bhajan 這類輕古典體裁；她的第一位老師是同屬 Jaipur gharana 的母親、古典聲樂家 Mogubai Kurdikar。她說母親要求嚴格，一開始的教法是唱一句、要她跟著複述一句；出道初期她隨母親四處演出，在台上替母親按 tanpura。",
+    "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+   },
+   {
+    "f": "同一條目記 1940 年代初起她另向 Bhendibazaar gharana 的 Anjanibai Malpekar 學唱，之後又受教於數個 gharana 的老師——Agra gharana 的 Anwar Hussain Khan、Gwalior gharana 的 Sharadchandra Arolkar 與 Balkrishnabuwa Parwatkar；她把 meend（音與音之間的滑行）技法特別歸功於 Anjanibai。",
+    "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+   },
+   {
+    "f": "同一條目記她修改了自己的 Jaipur gharana 唱法、把別的 gharana 的特徵接進來，因此既被稱讚也被批評把 Jaipur 傳統推得太遠；她本人反對「gharana 決定或限制歌者技法」這個觀念，並公開說 Jaipur 的技法只是她的底，她在上面做了不少變化，包括採用 alapchaari——把節奏與音之間的連結放鬆。",
+    "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+   },
+   {
+    "f": "同一條目記她的古典演唱事業在 1960 至 70 年代成長起來；在那之前她曾因一場影響發聲能力的病短暫停止演出，她說自己利用那段空檔思考並發展出一套跨越 gharana 的唱法。她也談過女性演出者的處境，並曾因觀眾行為不端而拒絕上台。",
+    "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+   },
+   {
+    "f": "同一條目記她強調情感與靈性是歌唱的必要成分：「對我而言音樂是與神的對話，是與那個終極他者專注而強烈的溝通。」她常說音樂是 sadhana（媒介）以抵達 sadhya（目的地）；2010 年她出版了馬拉提語著作《Swaraartha Ramani》闡述她的樂理與實踐觀點。",
+    "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+   },
+   {
+    "f": "英文維基的 Bhoopali 條目記 Bhoop（又作 Bhupali）屬 Kalyan thaat、是五音階，不用 Ma 與 Ni；有一說是 Ni 代表肉身的愉悅、Ma 代表愛戀，兩者皆不用意味著這個 raga 講的是不執著。卡納提克的對應是 Mohanam。Bhoopali 與 Yaman、Bhairav 是 Hindustani 學生最先學的三個基本 raga。",
+    "src": "https://en.wikipedia.org/wiki/Bhupali"
+   },
+   {
+    "f": "英文維基的 Bageshri 條目記這個 raga 要表現的是等待與愛人重逢的情緒，屬 Kaafi thaat、是夜半（madhya raatri）的 raga，vadi 為 Ma、samvadi 為 Sa，對應的情感範疇是 Hasya rasa。",
+    "src": "https://en.wikipedia.org/wiki/Bageshri"
+   }
+  ],
+  "hookCandidates": [
+   "她反對「門派決定歌者技法」這件事，而她自己就是門派掌門的女兒",
+   "一面是初學者最先學的三個 raga 之一，一面是等待重逢的夜半 raga"
+  ],
+  "sound": "一面一個 raga。Bhoop 是 Kalyan thaat 的五音階，Ma 與 Ni 都不用，被歸在初學者最先學的那三個之列；Bageshri 屬 Kaafi thaat，是夜半的 raga，要表現的是等待重逢。她的底是 Jaipur gharana 的技法，但在上面做過不少變動——把 Bhendibazaar 學來的 meend 接進來，也採用 alapchaari 把節奏與音之間的連結放鬆。伴奏只有 Narayanrao Indorkar 的 tabla，唱片標籤的分類欄寫「Hindi classical」。",
+  "keyTracks": [
+   "Raga Bhoop",
+   "Raga Bageshri"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1971,
+   "note": "MusicBrainz release-group 記 first-release-date 1971，Discogs 的 HMV ECSD 2702 條目也記 1971，兩處一致，卡單年份無誤。Discogs 上另有 1982、1986、1998 三筆同樣叫《Classical Vocal》的 HMV 卡帶／唱片，**那些是不同的錄音、不是本碟再版**，下游比對時要靠目錄號區分。"
+  },
+  "notes": "**互斥條款（第 58 條）**：**Jaipur-Atrauli／Jaipur gharana 的門派曲目表**判給同批的 Mallikarjun Mansur；本卡寫的是**她反對門派決定技法、以及跨門派的師承**，兩張不得互換。**Bhendibazaar gharana** 這個詞已判給同批的 Amir Khan（他父親出身該派）——本卡只在「向 Anjanibai Malpekar 學 meend」那一句裡出現，**不得展開該門派的敘事**。\n**第 33 條提醒**：卡單 curatorWhy 說「她把 Kirana 的長音與 bhakti 詩歌的抒情併進 khayal」——**facts 沒有 Kirana、也沒有 bhakti 詩歌這條線，不得寫**；維基寫的是她受 Bhendibazaar、Agra、Gwalior 三派老師的教導。卡單說這張比她「1980 年代廣為流傳的 Meera bhajan 專輯早了十餘年」——**facts 未收該碟，不得寫**（同批另有 M.S. Subbulakshmi 的《Meera Bhajans》，兩者無關，行文更不能混淆）。卡單說「她是本批四張 Hindustani 聲樂卡裡唯一的女性演唱者」——**那是卡池內部事實，不是唱片事實，不得寫進行文**。\n**第 64 條提醒**：facts 逐字有「1932」「2017」「1940 年代初」「五音階」「三個基本 raga」「2010」；其餘數量詞未寫出。\n備用切角：HMV 的 Nipper 狗商標在部分外銷版本上被金箔貼紙蓋住。"
+ },
+ {
+  "key": "desc2:M.S. Subbulakshmi|Meera Bhajans",
+  "artist": "M.S. Subbulakshmi",
+  "album": "Meera Bhajans",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1965、主類型 Album、無次類型，掛名「M.S. Subbulakshmi」，底下三個 release：1965 年印度原盤（廠牌 His Master's Voice、目錄號 EALP 1297，十軌）、1999 年印度再版與一筆無日期的印度版，三筆狀態皆 Official。",
+    "src": "https://musicbrainz.org/release-group/a1d3dbe5-849d-4eef-9f8f-459a166b55cb"
+   },
+   {
+    "f": "Discogs 的印度原盤條目記廠牌 His Master's Voice、目錄號 EALP 1297、1965 年印度發行，封面掛名作「Smt. M. S. Subbulakshmi」；同年另有一筆 Odeon 的 MOAE 133。",
+    "src": "https://www.discogs.com/release/3920769"
+   },
+   {
+    "f": "曲目十首、兩面各五首：A 面〈Mere To Giridhar〉〈Pag Ghunghru Bandh〉〈Mai Haricharan Ki〉〈Hari Awan Ki Awaz〉〈Kunjan Bana Chhadi〉；B 面〈Baso More〉〈Pyare Darshan〉〈Daras Bina〉〈Chakar Rakho Ji〉〈Hari Tum Haro〉。每首都在三分多到五分多鐘之間，最長的〈Chakar Rakho Ji〉5 分 11 秒、最短的〈Hari Tum Haro〉3 分 18 秒。",
+    "src": "https://musicbrainz.org/release/e1b0624d-b5aa-40d3-8169-08876fdc809c"
+   },
+   {
+    "f": "Discogs 同一條目的參與者掛名：mridangam 是 T.K. Murthy，小提琴是 V.V. Subramaniam，攝影是 Balkishan。",
+    "src": "https://www.discogs.com/release/3920769"
+   },
+   {
+    "f": "英文維基的 M. S. Subbulakshmi 條目記她 1916 年生於馬杜賴、2004 年過世，是南印卡納提克歌者；她是史上第一位獲頒印度最高平民榮譽 Bharat Ratna 的音樂家，1974 年也是第一位獲得拉蒙·麥格塞塞獎的印度音樂家，1966 年更是第一位在聯合國大會演出的印度人。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+   },
+   {
+    "f": "同一條目記她母親是 veena 演奏者、祖母是小提琴手；她的卡納提克音樂師從 Semmangudi Srinivasa Iyer，之後又向 Narayanrao Vyas 學北印度斯坦音樂。1927 年、十一歲時她在蒂魯吉拉伯利岩堡神廟的百柱廳首度公開演出，1929 年十三歲時首次登上馬德拉斯音樂學院的舞台，唱的正是 bhajan——那家學院以嚴格的選人著稱，卻破例邀了一個小女孩當主要演出者。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+   },
+   {
+    "f": "同一條目記她唱過 Tyagaraja、Muthuswami Dikshitar、Adi Shankaracharya、Meera Bai 與 Purandara Dasa 等聖者的讚頌詩；1963 年 6 月 21 日她在 The Gramophone Company of India 錄下那份代表性的《Venkateswara Suprabhatam》。她與 D.K. Pattammal、M.L. Vasanthakumari 並稱「卡納提克音樂的女性三傑」，把女歌者確立為能夠承擔嚴謹複雜的古典音樂會結構的主唱。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+   },
+   {
+    "f": "同一條目記她以印度文化大使的身分走過倫敦、紐約、加拿大與遠東，1963 年愛丁堡音樂與戲劇節、紐約卡內基廳、1966 年聯合國日的聯大、1982 年倫敦皇家亞伯特廳與 1987 年莫斯科印度節，都是她生涯的重要節點；1997 年丈夫過世後她停止所有公開演出，音樂會收入與版稅多半捐給了各種慈善用途。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+   },
+   {
+    "f": "英文維基的 Mirabai 條目記 Meera 是十六世紀的印度教神秘主義詩人、克里希那的信徒，在北印度傳統中是受尊崇的 Bhakti 聖者；她出身 Rathore 拉吉普特王族，1516 年嫁給梅瓦爾的王儲 Bhoj Raj，1521 年丈夫傷重身亡。傳說裡她無視社會與家族成規、因對克里希那的虔敬而遭夫家迫害——夫家最不能忍的正是她用來表達虔敬的音樂。",
+    "src": "https://en.wikipedia.org/wiki/Mirabai"
+   },
+   {
+    "f": "同一條目記印度傳統把數以百萬計讚頌克里希那的虔敬詩歌歸在 Meera 名下，但學者認為只有數百首可信；除了兩首之外，最早的書面紀錄顯示絕大多數是十八世紀才被寫下來的，許多歸在她名下的詩很可能是後人所作。這些讚歌就稱作 bhajan，在印度各地都很有名。",
+    "src": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "hookCandidates": [
+   "夫家最不能忍的，正是 Meera 用來表達虔敬的那個東西：音樂",
+   "十三歲那年馬德拉斯音樂學院破例讓一個小女孩當主唱，她唱的就是 bhajan"
+  ],
+  "sound": "十首短曲、兩面各五首，每首落在三分多到五分多鐘之間——不是 raga 鋪陳型的大部頭，是一首接一首的 bhajan。詞是歸在十六世紀詩人 Meera 名下的克里希那讚歌，伴奏只有 T.K. Murthy 的 mridangam 與 V.V. Subramaniam 的小提琴，兩件都是卡納提克音樂會的標準配置。她十三歲第一次登上馬德拉斯音樂學院唱的也是 bhajan。",
+  "keyTracks": [
+   "Mere To Giridhar",
+   "Chakar Rakho Ji",
+   "Hari Tum Haro"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1965,
+   "note": "MusicBrainz release-group 記 first-release-date 1965，Discogs 上六筆以上的 HMV EALP 1297 印度盤與同年的 Odeon MOAE 133 全部記 1965，兩處一致，卡單年份無誤。1998、1999、2001 的 HMV 版本都是再版，不影響原盤年。"
+  },
+  "notes": "**互斥條款（第 58 條）**：**Bharat Ratna** 這個獎已在同批的 Bismillah Khan 卡出現過（他是第三位獲獎的古典樂手）——本卡可以寫她是**第一位**，這是不同的事實，但**不得重述得獎者名單**。**聯合國大會演出**這條線只給本卡。同批另有兩張南印卡納提克卡（Ramnad Krishnan、Lalgudi Jayaraman）：**「卡納提克是什麼」的通則說明判給 Ramnad Krishnan 那張**，本卡只寫 bhajan 這個體裁與 Meera 的詩。\n**第 33 條提醒**：卡單 curatorWhy 說她 1945 年主演過同名電影《Meera》——**facts 未收**（維基只提到 1938 年的《Sevasadan》），不得寫。卡單說這批 1965 年的錄音是「流傳最廣的定本」「印度家庭裡最常被播放的一張古典唱片」——**兩個說法都沒有來源，不得寫**。\n**第 49／71 條提醒**：MusicBrainz 上另有 Lata Mangeshkar 1968 年的同名《Meera Bhajans》，**盤名完全相同、演唱者不同**；本稿所有 facts 都取自釘住的 a1d3dbe5 這一支（HMV EALP 1297），**行文不得出現 Lata Mangeshkar**。\n**第 64／108 條提醒**：facts 逐字有「十軌」「兩面各五首」「5 分 11 秒」「3 分 18 秒」「十一歲」「十三歲」「1516」「1521」；其餘數量詞未寫出。"
+ },
+ {
+  "key": "desc2:Ramnad Krishnan|Vidwan: Music of South India - Songs of the Carnatic Tradition",
+  "artist": "Ramnad Krishnan",
+  "album": "Vidwan: Music of South India - Songs of the Carnatic Tradition",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1968、主類型 Album、無次類型，掛名「Ramnad Krishnan」，底下三個 release：1968 年美國版（標題作《Vidwan (Songs of The Carnatic Tradition)》）、1991 年美國版（用 release-group 的長標題）與一筆無日期版本，三筆狀態皆 Official。",
+    "src": "https://musicbrainz.org/release-group/4cd1b3ae-97f5-379b-9a8d-3d235a7e605d"
+   },
+   {
+    "f": "Discogs 的 1968 年美國原盤條目記廠牌是 Nonesuch、目錄號 HB-72023，說明欄寫「以跨頁對開封套發行」；曲目分四面，是一套雙唱片。",
+    "src": "https://www.discogs.com/release/2857198"
+   },
+   {
+    "f": "曲目共六段，涵蓋卡納提克音樂會的幾種體裁：A1 kriti〈Ninnādanelā〉4 分 1 秒、A2 kriti〈Pālincu Kāmāksi〉15 分 35 秒；B1 kriti〈Abhimānamennadu〉13 分 6 秒、B2 tarangam〈Gōvardhana〉3 分 50 秒；C1 是 rāgam-tānam-pallavi〈Tāmarasadala Nētri, Tyāgarājuni Mitri〉20 分 17 秒；D1 是「Pallavi Niraval - Svara Kalpana - Drum Solo」18 分 15 秒。",
+    "src": "https://www.discogs.com/release/2857198"
+   },
+   {
+    "f": "同一條目的參與者掛名：Ramnad Krishnan 人聲、V. Thyagarajan 小提琴、Tanjore Ranganathan（T. Ranganathan）mridangam、V. Nagarajan kanjira、Puvalur Srinivasan tambura；製作人 Peter K. Siegel、錄音工程 David B. Jones、統籌 Teresa Sterne、美術指導 William S. Harvey、內頁文字由 Jon B. Higgins 撰寫。",
+    "src": "https://www.discogs.com/release/2857198"
+   },
+   {
+    "f": "英文維基的 Nonesuch Records 條目記 Teresa Sterne 自 1965 至 1979 年主導這家廠牌，Explorer Series 就是她開創的，並說這個系列「為世界音樂這個領域打下了基礎」。Nonesuch 由 Jac Holzman 於 1964 年創立，宗旨是「用一本平裝書的價錢做出好唱片」，售價約為一般 LP 的一半。",
+    "src": "https://en.wikipedia.org/wiki/Nonesuch_Records"
+   },
+   {
+    "f": "英文維基的 Ramnad Krishnan 條目記他 1918 年生、1973 年過世，是卡納提克傳統的聲樂家，在馬德拉斯的政府卡納提克音樂學院任教，也曾任衛斯理大學的客座教授；他的 rakti raga（尤其是 Begada 與 Sahana）以及 Madhyamavathi、Shankarabaranam 等 raga 的演唱無人能及。他為 Nonesuch 的 Explorer Series 錄過兩張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Ramnad_Krishnan"
+   },
+   {
+    "f": "同一條目記他出身音樂世家：兄長是歌者兼小提琴家 V. Lakshminarayana、弟弟是 mridangam 手 Ramnad Raghavan（在衛斯理大學任教），小提琴家 L. Vaidyanathan、L. Subramaniam 與 L. Shankar 都是他的姪輩；他也是克里夫蘭 Thyagaraja 音樂節的創辦組織者之一。",
+    "src": "https://en.wikipedia.org/wiki/Ramnad_Krishnan"
+   },
+   {
+    "f": "英文維基的 Jon B. Higgins 條目記這位內頁文字作者 1939 年生、1984 年過世，是美國音樂家、學者與教師，被認為是第一位能以高水準演唱南印度卡納提克音樂的非印度人，在印度被冠以「Higgins Bhagavatar」的敬稱。他在衛斯理大學修 Robert E. Brown 與 T. Ranganathan 的課而入門，後以傅爾布萊特獎學金赴印度隨 Ranganathan 的兄弟 T. Viswanathan 學習。",
+    "src": "https://en.wikipedia.org/wiki/Jon_B._Higgins"
+   },
+   {
+    "f": "同一條目記 Higgins 1962 年於衛斯理大學取得音樂與歷史雙主修學士、1964 年音樂學碩士、1973 年民族音樂學博士，1971 年與 Trichy Sankaran 在多倫多的約克大學創立印度音樂學程，1978 年回到衛斯理任音樂系教授兼藝術中心主任。",
+    "src": "https://en.wikipedia.org/wiki/Jon_B._Higgins"
+   }
+  ],
+  "hookCandidates": [
+   "寫內頁文字的是第一位能唱好卡納提克音樂的美國人，印度人給了他一個敬稱",
+   "整套四面唱片的第三面只有一首，二十分鐘的 rāgam-tānam-pallavi"
+  ],
+  "sound": "雙唱片四面，把一場卡納提克音樂會的幾種體裁攤開來排：先是三首 kriti 與一首 tarangam，再以整整一面演一首二十分鐘的 rāgam-tānam-pallavi，最後一面是 pallavi niraval、svara kalpana 與一段鼓獨奏。人聲之外的班底是卡納提克音樂會的標準編制——V. Thyagarajan 的小提琴、Tanjore Ranganathan 的 mridangam、V. Nagarajan 的 kanjira、Puvalur Srinivasan 的 tambura。Nonesuch 用跨頁對開封套發行，內頁文字由 Jon B. Higgins 撰寫。",
+  "keyTracks": [
+   "Rāgam-Tānam-Pallavi: Tāmarasadala Nētri, Tyāgarājuni Mitri",
+   "Kriti: Pālincu Kāmāksi",
+   "Pallavi Niraval - Svara Kalpana - Drum Solo"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1968,
+   "note": "MusicBrainz release-group 記 first-release-date 1968，Discogs 的 Nonesuch HB-72023 美國原盤（以及同年的英國、加拿大版）也全部記 1968，兩處一致，卡單年份無誤。1988 年 Elektra Nonesuch 的 CD（972 023-2／9 72023-2）與 1996 年日本版是後續再發，不影響原盤年。卡單已註明 Apple `in` 的條目 releaseDate 記 1988，依第 77 條那只是訊號。"
+  },
+  "notes": "**互斥條款（第 58 條）**：**Nonesuch Explorer Series 的定位（Sterne 開創、為世界音樂打下基礎）與廠牌的廉價古典起源**判給本卡；同批 Ram Narayan《Sarangi / The Voice of a Hundred Colors》只寫 Teresa Sterne 的統籌掛名，**不寫 Explorer Series**。**Jon B. Higgins** 這個人只出現在本卡。**卡納提克體裁的通則說明（kriti、rāgam-tānam-pallavi、niraval、svara kalpana）判給本卡**；同批 M.S. Subbulakshmi 那張只寫 bhajan、Lalgudi Jayaraman 那張只寫小提琴與該碟自己的曲式。\n**第 91／100 條提醒**：MusicBrainz 的 release-group 用的是 1991 年再發那版的長標題《Vidwan: Music of South India - Songs of the Carnatic Tradition》，**1968 年原盤封面印的是《Vidwan (Songs of The Carnatic Tradition)》**——兩者不必相等，這不是錯配。行文若要引標題，兩種寫法擇一即可，**不要把「Music of South India」說成原盤標題**。\n**第 33 條提醒**：卡單說「Vidwan 是坦米爾語對音樂大師的稱謂」——**facts 沒有來源解釋這個詞，不得寫**（維基的 Higgins 條目只解釋了 Bhagavatar 是「有學問的樂人」）。卡單說這是 Explorer 系列裡「最常被引用的南印度錄音」、「由民族音樂學者在美國錄製」——**兩者都無來源**；facts 只能支持「Explorer Series 的一張」與掛名的製作／工程／內頁文字班底。\n**第 64 條提醒**：facts 逐字有六段的時長與「四面」「兩張專輯」「1962／1964／1973」等；**「六段」這個數字沒有逐字出現在來源，是本稿的敘述**——行文若要用請改成列舉。"
+ },
+ {
+  "key": "desc2:Lalgudi Jayaraman|Violin Solos of Carnatic Music",
+  "artist": "Lalgudi Jayaraman",
+  "album": "Violin Solos of Carnatic Music",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1970、主類型 Album、無次類型，掛名「Lalgudi G. Jayaraman & G. Srimathi」，底下只有一個 release：1970 年印度發行、狀態 Official。",
+    "src": "https://musicbrainz.org/release-group/a9ae736d-912a-4016-a3e9-943dae78981c"
+   },
+   {
+    "f": "Discogs 的印度盤條目標題作《Violin Solos Of Carnatic Music By Lalgudi G. Jayaraman & G. Srimathi》，廠牌 His Master's Voice、目錄號 ECSD 2435，1970 年印度發行的 LP。",
+    "src": "https://www.discogs.com/release/5324490"
+   },
+   {
+    "f": "曲目四段，每一段都標出 raga 與 taal：A 面〈Naa Jeevadhara〉（Bilahari，Adi）；B 面〈Nadhaloludai〉（Kalyanavasantham，Roopakam）、〈Theeradha Vilayattu Pillai〉（raagamalikai——依序 Sindhubhairavi、Kamas、Shanmukhapriya 與 Maund 四個 raga）與〈Thillana〉（Thilang，Adi）。",
+    "src": "https://www.discogs.com/release/5324490"
+   },
+   {
+    "f": "同一條目的參與者掛名：小提琴是 Lalgudi Jayaraman 與 G. Srimathi 兩人，mridangam 是 Umayalpuram K. Sivaraman，ghatam 是 Alangudi Ramachandran，tambura 是 R. Krishnan。",
+    "src": "https://www.discogs.com/release/5324490"
+   },
+   {
+    "f": "英文維基的 Lalgudi Jayaraman 條目記他 1930 年生、2013 年過世，是卡納提克小提琴家、歌者兼作曲者，一般與 M.S. Gopalakrishnan、T.N. Krishnan 並稱卡納提克小提琴的三傑；2001 年獲頒 Padma Bhushan。",
+    "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+   },
+   {
+    "f": "同一條目記他出身「音樂三聖」（Muthuswami Dikshitar、Shyama Shastri、Thyagaraja）弟子的一脈，音樂由父親 V. R. Gopala Iyer 親授；父親治學極嚴，連削鉛筆都不准他做，認為他的手指太寶貴。他十二歲起以伴奏小提琴手出道，後來才成為獨奏者。",
+    "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+   },
+   {
+    "f": "同一條目記他發明了一套適合印度古典音樂需求的小提琴技法，形成了被稱為 Lalgudi Bani 的風格；他把聲樂的路子帶進小提琴，演奏中看得出他對曲詞內容的掌握，並創作了大量 kriti、tillana、varnam 與舞蹈曲。他有系統地自我檢討，每場音樂會結束後都寫下詳盡的檢討——那是父親兼師父養成的習慣。",
+    "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+   },
+   {
+    "f": "同一條目記他極少在獨奏會上即興實驗、幾乎總是把每個細節都事先規劃好，因此有評論者說他的獨奏會偏智性而非情感；但他替一流歌者伴奏時，臨場的自發與天分就會顯露出來。他曾被父親禁止替女性演出者伴奏，而他一輩子守住了這個承諾。",
+    "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+   },
+   {
+    "f": "同一條目記他是第一位讓卡納提克小提琴受到國際注目的人，1966 年提出小提琴、venu（笛）與 veena 的新合奏編制；1965 年 Yehudi Menuhin 邀他到愛丁堡音樂節，聽了他的技法與演出後把自己的義大利小提琴送給了他，Menuhin 訪印時他則回贈一尊象牙的舞王濕婆像。",
+    "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+   }
+  ],
+  "hookCandidates": [
+   "Menuhin 聽完他在愛丁堡的演出，把自己那把義大利小提琴送給了他",
+   "他父親連削鉛筆都不准他做，說他的手指太寶貴"
+  ],
+  "sound": "四段曲子，每一段都標明 raga 與 taal：A 面整面是 Bilahari 的〈Naa Jeevadhara〉，B 面依序是 Kalyanavasantham 的〈Nadhaloludai〉、一首 raagamalikai——同一首曲子裡連換 Sindhubhairavi、Kamas、Shanmukhapriya 與 Maund 四個 raga——最後收在 Thilang 的〈Thillana〉。小提琴是兩把：他與 G. Srimathi；打擊是 Umayalpuram K. Sivaraman 的 mridangam 與 Alangudi Ramachandran 的 ghatam。他的路數是把聲樂的走法帶進小提琴，那套技法後來被稱作 Lalgudi Bani。",
+  "keyTracks": [
+   "Naa Jeevadhara",
+   "Theeradha Vilayattu Pillai",
+   "Thillana"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1970,
+   "note": "MusicBrainz release-group 記 first-release-date 1970，Discogs 的 HMV ECSD 2435 條目也記 1970（另有一筆同目錄號但無年份的版位），兩處一致，卡單年份無誤。"
+  },
+  "notes": "**互斥條款（第 58 條）**：**卡納提克體裁的通則說明**已判給同批的 Ramnad Krishnan《Vidwan》——本卡只寫這張碟自己的曲式（raagamalikai 在一首裡換四個 raga、以 thillana 收尾），**不重述 kriti／RTP 那一套**。**Yehudi Menuhin** 這個名字在本批只出現在本卡（同批 Ali Akbar Khan 那張的 facts 也提到 Menuhin 邀他訪美，**那張不寫這條，判給本卡**）。\n**第 33 條提醒**：卡單 curatorWhy 說小提琴「在十九世紀進入南印度後成為 Carnatic 的核心樂器」——**facts 沒有這條，不得寫**。卡單說 Lalgudi Bani「以歌唱式的 gamaka 與明亮音色著稱」——facts 支持「把聲樂的路子帶進小提琴」，但**沒有 gamaka、也沒有「明亮音色」，不得寫**。\n**第 42 條提醒**：卡單提到 T.N. Krishnan 在 MB 上查無正確實體——那是工具面的紀錄，**不是唱片事實，不得寫進行文**；facts 裡的「小提琴三傑」倒是有來源，可用。\n**第 64 條提醒**：facts 逐字有「十二歲」「四個 raga」「1965」「1966」「2001」；**「四段」「兩把小提琴」這些數字沒有逐字出現**，行文請列舉或改用不帶數字的說法。\n備用切角：他被父親禁止替女性演出者伴奏，一輩子守住；每場音樂會後寫檢討。"
+ },
+ {
+  "key": "desc2:Satyajit Ray|Goopy Gyne & Bagha Byne",
+  "artist": "Satyajit Ray",
+  "album": "Goopy Gyne & Bagha Byne",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1970、主類型 Album、次類型 Soundtrack，掛名「Satyajit Ray」一人，底下只有一個 release：1970 年印度發行、狀態 Official。",
+    "src": "https://musicbrainz.org/release-group/ef102f62-22f5-4375-b93f-a94e62523800"
+   },
+   {
+    "f": "Discogs 的原聲帶 LP 條目記廠牌是 Regal、目錄號 ELRZ 46、1970 年印度發行；曲目跨兩面共二十一段，配樂與歌交錯——配樂段落包括〈Title Music〉〈Goopy Theme〉〈Dance Of The Ghosts〉〈King Of The Ghosts Gives Three Bones〉〈Entry Of The Halla King〉〈Borfi Theme〉與〈Camel March〉。",
+    "src": "https://www.discogs.com/release/4656561"
+   },
+   {
+    "f": "同一條目的掛名：Satyajit Ray 同時掛「Music By」與「Film Director」，樂團由 Alok Dey 指揮；歌的主唱是 Anup Ghosal（封面拼作 Anup Kumar Ghoshal），〈Bhuter Raja Dilo Bor〉〈Maharaja, Tomoaray Shelam〉〈Oray Bagharay〉〈O Montrimoshai〉〈Ak Je Chhilo Raja〉幾首由 Anup Ghosal 與 Robi Ghosh 合唱，〈Halla Cholechhay Juddhay〉則掛 Kamu Mukherji、Jahar Roy 與片中的樂手群。",
+    "src": "https://www.discogs.com/release/4656561"
+   },
+   {
+    "f": "1969 年印度 Angel Records 另發過這部片的 7 吋 45 轉 EP（TAE. 4029），收〈Maharaja, Tomoaray Selam〉〈Ore Baghare, Ore Gopire〉〈Ore Baba Dekh Cheye〉〈Ek Je Chhilo Raja〉四首；那張 EP 上 Satyajit Ray 同時掛作曲、作詞與封面設計。",
+    "src": "https://www.discogs.com/release/18654313"
+   },
+   {
+    "f": "英文維基的 Goopy Gyne Bagha Byne 條目記這是 1969 年的孟加拉語諷刺超級英雄片，由 Satyajit Ray 編劇與執導，改編自他祖父 Upendrakishore Ray Chowdhury 的故事；這是一部奇幻歌舞片，**音樂與歌詞都由 Ray 本人作曲與填詞**。這兩個角色 1915 年首次出現在《Sandesh》雜誌上，插畫正是他祖父畫的。",
+    "src": "https://en.wikipedia.org/wiki/Goopy_Gyne_Bagha_Byne"
+   },
+   {
+    "f": "同一條目記本片是孟加拉語電影連續放映最久的紀錄保持者，連續上映五十一週；它在第十六屆印度國家電影獎拿下最佳劇情片與最佳導演，另得四個國際獎項（阿德萊德銀十字、奧克蘭最佳導演、墨爾本最佳影片、東京優異獎），並入圍柏林影展金熊獎。2003 年美國電影藝術與科學學院的電影資料館為本片做了保存。",
+    "src": "https://en.wikipedia.org/wiki/Goopy_Gyne_Bagha_Byne"
+   },
+   {
+    "f": "同一條目詳述全片的樞紐段落——森林裡群鬼在 Goopy 與 Bagha 面前跳的那場舞：長六分半、分成四段。Ray 依印度教社會的四個階層設定四類鬼（國王與武士、洋大人、胖子、平民），說「既然我們有這麼多階級劃分，鬼也該有」。他要音樂「有秩序、有形式、有精確度」，而不是「毛絨絨、沒有形狀的東西」，於是想起在德里影展聽過的一種南印度古典形式——那種形式用十二件樂器，他從中挑了四件；他刻意迴避旋律，因為「旋律會帶來某種世故」。四類鬼裡只有洋大人是用降格拍攝的皮影演的，其餘由演員扮演。舞的收尾把四個階級垂直排開，祭司在底、平民在頂，與傳統階序相反。",
+    "src": "https://en.wikipedia.org/wiki/Goopy_Gyne_Bagha_Byne"
+   },
+   {
+    "f": "同一條目記本片的緣起：1967 年前後 Ray 原想拍一部外星生物的片子、劇本已寫好，馬龍·白蘭度與彼得·謝勒本要主演，但他與哥倫比亞影業談不攏而擱置；在好萊塢拍不成奇幻片，他改在印度拍。前作票房平平使投資更難找，1967 年底 Purnima Pictures 的 Nepal Dutta 與 Asim Dutta 才答應出一部分錢——因為不夠拍全彩，他決定用黑白拍攝、只讓最後一場戲上色。",
+    "src": "https://en.wikipedia.org/wiki/Goopy_Gyne_Bagha_Byne"
+   },
+   {
+    "f": "同一條目引 Ray 後來寫給 Marie Seton 的信：「它變成流行文化的一部分之快，實在不可思議。真的沒有一個小孩不知道、不會唱裡面的歌。」",
+    "src": "https://en.wikipedia.org/wiki/Goopy_Gyne_Bagha_Byne"
+   }
+  ],
+  "hookCandidates": [
+   "群鬼那場舞他刻意不寫旋律，說旋律會帶來某種世故",
+   "四類鬼對應印度教社會的四個階層——他說既然我們有那麼多階級，鬼也該有"
+  ],
+  "sound": "跨兩面二十一段，配樂與歌交錯：〈Title Music〉〈Goopy Theme〉〈Dance Of The Ghosts〉〈Entry Of The Halla King〉〈Camel March〉這些是純器樂段落，歌則由 Anup Ghosal 主唱，幾首與飾演 Bagha 的 Robi Ghosh 對唱。群鬼那場舞是全片的樞紐——六分半、分四段，音樂取法他在德里影展聽過的一種南印度古典形式，那形式用十二件樂器，他挑了四件，並刻意迴避旋律。樂團由 Alok Dey 指揮，作曲、作詞與導演都是同一個人。",
+  "keyTracks": [
+   "Dance Of The Ghosts",
+   "Bhuter Raja Dilo Bor",
+   "Ak Je Chhilo Raja"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1969,
+   "note": "**卡單填 1969，與 MusicBrainz 的 1970 不符，但 1969 有獨立證據。** 英文維基記電影是 1969 年上映；Discogs 上 1969 年印度 Angel Records 已發過本片的 7 吋 EP（TAE. 4029，另有 45-AE. 4002、45-AE. 4003 兩筆），而 1970 年的 Regal ELRZ 46 才是完整的 LP。依裁定第 121 條（filmi 取電影問世年）與第 95 條（rgMbid 是身分鍵不是年份來源），**1969 成立，卡單無誤**；1970 是 LP 版的年份。行文依第 18／46 條不正面斷言發行年。"
+  },
+  "notes": "**互斥條款（第 58 條）**：本批唯一的孟加拉語卡，**群鬼之舞的製作細節（四類鬼、十二件樂器挑四件、刻意迴避旋律）只給本卡**。同批另兩張原聲帶（Ghantasala《Mayabazar》、M.S. Viswanathan《Apoorva Raagangal》）寫的是各自的作曲者掛名與播唱歌手，**不重述「導演自己作曲」這個角度**——那是本卡獨有的。\n**第 33 條提醒**：卡單 curatorWhy 說 Ray「從 1961 年起替自己的電影作曲」——**facts 沒有這個年份與這條通則，不得寫**；facts 只支持「這部片的音樂與歌詞都是他自己寫的」。卡單說他在配樂裡「並置了 Baul 的旋律、Hindustani 的節奏循環與他自己寫的兒歌式主題」——**Baul 與 Hindustani 兩個詞在 facts 裡都沒有來源，不得寫**；有來源的是「南印度古典形式的十二件樂器挑四件」與「刻意迴避旋律」。卡單說〈Bhooter Raja Dilo Bor〉的鬼王之舞是「印度電影最著名的節奏段落之一」——**無來源，不得寫**；facts 能支持的是 Ray 自己說「沒有一個小孩不會唱裡面的歌」。\n**第 64／108 條提醒**：facts 逐字有「二十一段」「六分半」「四段」「四類」「十二件」「四件」「五十一週」「1915」；**facts 未給配樂與歌各佔幾段的數字，行文請改為列舉曲名**。\n備用切角：因為錢不夠拍全彩，全片黑白、只有最後一場戲上色；1969 年的 Angel EP 上 Ray 連封面設計都掛名。"
+ },
+ {
+  "key": "desc2:Ghantasala|Mayabazar",
+  "artist": "Ghantasala",
+  "album": "Mayabazar",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 標題作《Mayabazar (Original Motion Picture Soundtrack)》，記首度發行年 1957、主類型 Album、次類型 Soundtrack，掛名「Ghantasala」，底下只有一個 release：1957 年印度、狀態 Official、廠牌欄記 Saregama India Ltd.，十五軌。",
+    "src": "https://musicbrainz.org/release-group/78acd009-d2c3-47bd-be9a-61fe7ef89a90"
+   },
+   {
+    "f": "MusicBrainz 的 release 曲目依序是〈Neekosame〉〈Choopulu Kalisina Subhavela〉〈Lahiri Lahiri〉〈Srikarulu Devathalu〉〈Neeve Naa〉〈Aha Naa Pelliyanta〉〈Sundari〉〈Vivaha Bhojanambu〉〈Vinnava Yesodhamma〉〈Dayacheyandi〉〈Bhali Bhali〉〈Lalli Lalla〉〈Ashtadhikkum〉〈Jai Sathya Sangalpa〉與〈Aanandham Aanandham Aanandhame〉。",
+    "src": "https://musicbrainz.org/release/79510912-6d4e-443a-ba64-1aced2950a1b"
+   },
+   {
+    "f": "英文維基的 Mayabazar 條目記這是 1957 年的印度神話片，K. V. Reddy 執導、Vijaya Productions 的 Nagi Reddi 與 Chakrapani 監製，以泰盧固語與坦米爾語同時開拍、兩版卡司略有不同；故事改編自民間傳說 Sasirekha Parinayam，取材自梵文史詩《摩訶婆羅多》的人物。泰盧固語版 1957 年 3 月 27 日上映，坦米爾語版兩週後的 4 月 12 日上映。",
+    "src": "https://en.wikipedia.org/wiki/Mayabazar"
+   },
+   {
+    "f": "同一條目記原聲帶共十二首歌：S. Rajeswara Rao 寫完〈Srikarulu Devathalu〉〈Lahiri Lahiri〉〈Choopulu Kalasina Subhavela〉與〈Neekosame〉四首後離開了本片，**Ghantasala 接手把他的作品編曲錄音，其餘的配樂則由 Ghantasala 作曲**。泰盧固語歌詞出自 Pingali Nagendrarao，坦米爾語歌詞出自 Thanjai N. Ramaiah Dass。〈Lahiri Lahiri〉建立在 Mohanam raga 上。",
+    "src": "https://en.wikipedia.org/wiki/Mayabazar"
+   },
+   {
+    "f": "同一條目記〈Lahiri Lahiri〉在清奈的 Adyar 河邊拍攝，外景只拍了十到十五秒，攝影師 Marcus Bartley 隨後做出月光的幻覺——那是印度電影裡的第一次。〈Vivaha Bhojanambu〉整首以定格動畫拍攝，光是 Ghatotkacha 大口吞 laddoo 的那幾個鏡頭就花了四天。",
+    "src": "https://en.wikipedia.org/wiki/Mayabazar"
+   },
+   {
+    "f": "同一條目追溯〈Vivaha Bhojanambu〉的來歷：歌詞大量取自 Surabhi Nataka Samajam 1950 年代的舞台劇，那些劇又受 B. Nagarajakumari 1940 年代的 Janaki Sapadham harikatha 唱片影響；Nagarajakumari 的靈感來自 Gali Penchala Narasimha Rao 為 1936 年的《Sasirekha Parinayam》所寫的一首歌，而那首歌的旋律又源自 Charles Penrose 1922 年的〈The Laughing Policeman〉。",
+    "src": "https://en.wikipedia.org/wiki/Mayabazar"
+   },
+   {
+    "f": "同一條目記本片在二十四家戲院連映一百天、成為銀禧片，兩個語言版本的膠卷長度都是 5,888 公尺；2013 年印度電影百年時 CNN-IBN 把它列入「史上百大印度電影」，並在針對那一百部片所做的網路民調中被公眾票選為「史上最偉大的印度電影」。它也是第一部經數位修復並上色的泰盧固語電影，2010 年重新上映。",
+    "src": "https://en.wikipedia.org/wiki/Mayabazar"
+   },
+   {
+    "f": "英文維基的 Ghantasala 條目記他 1922 年生、1974 年過世，是以泰盧固語與坎納達語電影為主的播唱歌手兼電影作曲家，1970 年獲頒 Padma Shri。他成名前已是有成就的卡納提克歌者；早年在牢裡待過十八個月（1942 年參與退出印度運動被捕），出獄後經作詞人 Samudrala Sr. 引介進入馬德拉斯影壇。",
+    "src": "https://en.wikipedia.org/wiki/Ghantasala_(musician)"
+   },
+   {
+    "f": "同一條目記他導入了「隨演唱的演員改變音高與咬字」的技法；製片 Chittajallu Krishnaveni 給了他第一份全職音樂總監的工作（《Mana Desam》），確立了他作曲兼播唱歌手的雙重身分。到 1970 年代中期為止，他是泰盧固電影裡產量最高的作曲家與播唱歌手，《Patala Bhairavi》《Mayabazar》《Lava Kusa》《Gundamma Katha》等片的音樂都出自他手。",
+    "src": "https://en.wikipedia.org/wiki/Ghantasala_(musician)"
+   },
+   {
+    "f": "同一條目記他曾任 Tirumala Tirupati Devasthanams 的宮廷歌者（Aasthana Gaayaka），自導自唱的《Bhagavad Gita》錄音至今每天在 Tirumala 神廟播放；作曲家 Pendyala Nageswara Rao 與播唱歌手 P. Susheela 說「Ghantasala 是播唱歌手裡唯一擁有完整、有力而優美的音域、能均勻涵蓋三個八度的人」。",
+    "src": "https://en.wikipedia.org/wiki/Ghantasala_(musician)"
+   }
+  ],
+  "hookCandidates": [
+   "婚宴那首歌的旋律一路追下去，源頭是 1922 年一首英國的〈笑警察〉",
+   "月夜船歌的外景只拍了十到十五秒，月光是攝影師做出來的——印度電影第一次"
+  ],
+  "sound": "十五軌的原聲帶，歌與配樂都掛在同一個作曲者名下。前作曲者寫完〈Srikarulu Devathalu〉〈Lahiri Lahiri〉〈Choopulu Kalasina Subhavela〉〈Neekosame〉四首就離開，Ghantasala 接手把那批編曲錄音、其餘全部自己寫。〈Lahiri Lahiri〉建在 Mohanam raga 上，配的是那段用十到十五秒外景做出來的月光；〈Vivaha Bhojanambu〉整首以定格動畫拍攝，旋律的來歷則一路可以追到 1922 年的〈The Laughing Policeman〉。泰盧固語歌詞出自 Pingali Nagendrarao、坦米爾語版出自 Thanjai N. Ramaiah Dass。",
+  "keyTracks": [
+   "Lahiri Lahiri",
+   "Vivaha Bhojanambu",
+   "Srikarulu Devathalu"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1957,
+   "note": "MusicBrainz release-group 記 first-release-date 1957，英文維基記電影泰盧固語版 1957 年 3 月 27 日上映、坦米爾語版同年 4 月 12 日上映，兩處一致，卡單年份無誤（依裁定第 121 條 filmi 取電影問世年，本卡兩個口徑同年）。Discogs 上以「Mayabazar」搜尋只回一筆 1995 年的英國拼盤 CD，查無這張原聲帶本身的條目，唱片實物的壓片證據缺席，年份的舉證來自 MB 與電影上映日。**卡單已註記 CAA 無圖、須掃圖。**"
+  },
+  "notes": "**糾錯（第 55／114 條）**：卡單 curatorWhy 說「Ghantasala 的配樂是南印度電影音樂在 1950 年代的頂點」「Ghantasala 同時是作曲者與男聲主唱」——**兩點都要修**。(1) 這張原聲帶**不是他一個人寫的**：維基明載 S. Rajeswara Rao 先寫了四首才離開，Ghantasala 接手編曲錄音並補完其餘，行文必須照這個實情寫。(2) **facts 沒有任何來源說他在本片中演唱**；他的播唱歌手身分有來源（是他的通行身分），但**「他唱了這張碟」這件事沒有來源，不得寫**。卡單說他「地位相當於印地語的 Naushad」——**無來源，不得寫**。\n**互斥條款（第 58 條）**：**「作曲者掛名、播唱歌手另計、作詞人有名有姓」這個 filmi 的通則說明**判給本卡與同批的 M.S. Viswanathan《Apoorva Raagangal》各寫一半：**本卡寫作曲權的轉手與雙語歌詞的兩位作詞人**，Viswanathan 那張寫**三位播唱歌手各唱一首**。同批 Satyajit Ray 那張的「導演自己作曲」是第三種形狀，三張不重複。\n**第 33 條提醒**：〈Lahiri Lahiri〉的「月夜船歌」與〈Vivaha Bhojanambu〉的「婚宴喜劇曲」是卡單的描述，**facts 只支持「Adyar 河邊拍攝＋月光幻覺」與「婚禮」的情境**（Vivaha 即婚禮，但 facts 未這樣定義），行文請照 facts 的字面寫。\n**第 64／108 條提醒**：facts 逐字有「十五軌」「十二首」「四首」「十到十五秒」「四天」「一百天」「二十四家戲院」「5,888 公尺」「十八個月」「三個八度」「1922」。"
+ },
+ {
+  "key": "desc2:M.S. Viswanathan|Apoorva Raagangal",
+  "artist": "M.S. Viswanathan",
+  "album": "Apoorva Raagangal",
+  "facts": [
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行年 1975、主類型 Album、次類型 Soundtrack，掛名「M. S. Viswanathan」，底下只有一個 release：1975 年，無國別登錄、status 未登錄。",
+    "src": "https://musicbrainz.org/release-group/01bee973-1519-4b40-af5a-9ae9de08bff6"
+   },
+   {
+    "f": "Discogs 上這部片的唱片是 7 吋 45 轉 EP，廠牌 His Master's Voice、目錄號 7EPE. 13019、1975 年印度發行，封套上寫「From The Original Soundtrack」與「Tamil Film : Apoorva Raagangal」；曲目 A1〈Athisaya Raagam〉由 Yesudas 唱、A2〈Kaikotti Sirippaargal〉由 Sheik Salamad 唱、B 面〈Yezhu Swarangalukkul〉由 Vani Jairam 唱，作曲 M. S. Viswanathan、作詞 Kannadasan。",
+    "src": "https://www.discogs.com/release/8787032"
+   },
+   {
+    "f": "英文維基的 Apoorva Raagangal 條目記本片原聲帶由 M. S. Viswanathan 作曲、Kannadasan 作詞，以 LP 形式在 His Master's Voice 發行。其中兩首是 ragamalika（同一首歌的不同段落各配不同 raga）：〈Yezhu Swarangalukkul〉走 Panthuvarali、Kambhoji、Sindhu Bhairavi 與 Ranjani；〈Athisaya Raagam〉起於 Mahati，唱到「Oru Puram Paarthaal」那句轉入 Bhairavi。〈Kelviyin Nayagane〉則只用一個 raga：Darbari Kanada。",
+    "src": "https://en.wikipedia.org/wiki/Apoorva_Raagangal"
+   },
+   {
+    "f": "同一條目引歌者 M. Balamuralikrishna 在 2006 年受訪時的話：「我在全印廣播電台碰到他，他正在為那部片配樂。因為故事講的是奇特的關係，音樂總監想引進新的 raga 來配合整體氛圍。我把我的『Mahati』音階給了他，當時錄下的唱片如今已成歷史。」條目並記〈Yezhu Swarangalukkul〉當時「到處風行」，也是主唱 Vani Jairam 的突破之作。",
+    "src": "https://en.wikipedia.org/wiki/Apoorva_Raagangal"
+   },
+   {
+    "f": "同一條目記本片是 1975 年的坦米爾語愛情劇情片，K. Balachander 編劇兼導演，Kamal Haasan、Sundarrajan、Srividya 與 Jayasudha 主演，Nagesh 與首度演出劇情長片的 Rajinikanth 演配角；片名意為「罕見的旋律」，主題取自印度民間故事集《Vetala Panchavimshati》裡的一則謎題。1975 年 8 月 15 日上映，與《Sholay》同日，仍在票房上成功並連映一百天。",
+    "src": "https://en.wikipedia.org/wiki/Apoorva_Raagangal"
+   },
+   {
+    "f": "同一條目記因為主要角色之一是卡納提克歌者，全片用卡納提克音樂術語當敘事的接榫：開頭是「sarali varisai」（初學者的基本練習），Prasanna 墜入情網時出現「mohanam」（意為著迷），結尾是「mangalam」（katcheri 的收場段落）；兩位女主角的名字 Bhairavi 與 Ranjani 都取自卡納提克的 raga，Pandiyan 首度出場時打出的字是「Sruthi Bedham」（變調）。",
+    "src": "https://en.wikipedia.org/wiki/Apoorva_Raagangal"
+   },
+   {
+    "f": "同一條目記 Kamal Haasan 為了角色花七個月學 mridangam；史家 G. Dhananjayan 認為全片的故事都藏在〈Kelviyin Nayagane〉這首歌裡。片中最後一場 katcheri，Bhairavi 唱的正是「Kelviyin Nayagane, Indha Kelvikku Badhil Edhayya?」（提問的英雄啊，這個問題的答案是什麼？），而 Prasanna 就在台上打 mridangam。",
+    "src": "https://en.wikipedia.org/wiki/Apoorva_Raagangal"
+   },
+   {
+    "f": "英文維基的 M. S. Viswanathan 條目記他 1928 年生於喀拉拉的 Palakkad、2015 年過世，是以坦米爾語影壇為主的電影音樂總監、歌者與演員，綽號「Mellisai Mannar」（旋律之王），為超過八百部印度電影寫過歌；1950 年代到 1965 年他與小提琴家 T. K. Ramamoorthy 以「Viswanathan–Ramamoorthy」聯名替一百部片子配樂，1965 至 2015 年獨立完成七百部。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Viswanathan"
+   },
+   {
+    "f": "同一條目記他父親在他三歲時過世、妹妹半年後也走了；母親一度打算帶著他投池自盡，最後一刻被他外祖父救下。他童年在戲院裡免費賣點心，只為了聽片中的音樂；常翹課站在當地音樂老師 Neelakanta Bhagavathar 家門外聽人上課，學會了風琴，Bhagavathar 聽過他彈唱後在坎努爾市政廳替他辦了一場三小時的音樂會。1940 年代他在 Jupiter Pictures 當跑腿，月薪三盧比。",
+    "src": "https://en.wikipedia.org/wiki/M._S._Viswanathan"
+   }
+  ],
+  "hookCandidates": [
+   "歌者把自己的音階借給了他，那首歌就從那個音階起頭",
+   "他童年在戲院裡免費賣點心，只為了聽片子裡的音樂"
+  ],
+  "sound": "唱片上的歌不多，卻幾乎每一首都在換 raga。〈Yezhu Swarangalukkul〉是 ragamalika，一首歌裡走過 Panthuvarali、Kambhoji、Sindhu Bhairavi 與 Ranjani；〈Athisaya Raagam〉起於 Mahati——那是歌者 M. Balamuralikrishna 借給他的音階——唱到「Oru Puram Paarthaal」那句轉進 Bhairavi；片中收場那首〈Kelviyin Nayagane〉則從頭到尾只用 Darbari Kanada。三首歌各由不同的播唱歌手擔任：Yesudas、Sheik Salamad 與 Vani Jairam，詞全部出自 Kannadasan。",
+  "keyTracks": [
+   "Athisaya Raagam",
+   "Yezhu Swarangalukkul",
+   "Kelviyin Nayagane"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "MusicBrainz release-group 記 first-release-date 1975，Discogs 的 HMV 7EPE. 13019 也記 1975，英文維基記電影 1975 年 8 月 15 日上映，三處一致，卡單年份無誤（依裁定第 121 條 filmi 取電影問世年，本卡三個口徑同年）。**版本要注意**：MB 的 release 沒有國別也沒有 status，是本批佐證最薄的一筆；Discogs 上只查得到 7 吋 EP（三首）與另一筆 45 轉單曲，維基則說原聲帶「以 LP 形式在 His Master's Voice 發行」——**LP 版在 Discogs 上沒有條目**。卡單已註記 Apple `in` 命中的也是 EP（四軌），**上架前要確認版本**。**卡單另註記 CAA 無圖、須掃圖。**"
+  },
+  "notes": "**互斥條款（第 58 條）**：**filmi 的「作曲者掛名、播唱歌手另計、作詞人有名有姓」這個通則**與同批 Ghantasala《Mayabazar》分工——**本卡寫三位播唱歌手各唱一首與單一作詞人 Kannadasan**，Ghantasala 那張寫作曲權轉手與雙語兩位作詞人。**Darbari Kanada 這個 raga 的來歷（Tansen、阿克巴、波斯語 darbar）已判給同批的 Amjad Ali Khan《Raga Darbari》**——本卡只寫「〈Kelviyin Nayagane〉只用 Darbari Kanada 一個 raga」這個事實，**不得展開該 raga 的歷史**。\n**第 33 條提醒**：卡單 curatorWhy 說「Viswanathan 因此把 Carnatic 的 raga 名直接寫進歌名與結構（〈Kelviyin Nayagane〉《Athisaya Raagam》）」——**「因此」這層因果沒有來源**；facts 支持的是「片中用卡納提克術語當敘事接榫」（那是導演 K. Balachander 的手法，不是作曲者的）與「這幾首歌各自用了哪些 raga」。卡單說他「產量與 Naushad、Shankar–Jaikishan 同級卻幾乎不為外界所知」——**無來源，不得寫**；有來源的是「超過八百部」與「一百部聯名＋七百部獨立」。\n**第 42 條提醒**：Rajinikanth 的銀幕首作、Kamal Haasan 學了七個月 mridangam 都有來源可用，但**這是電影的事、不是唱片的事**，若要寫請與音樂扣住（Prasanna 在最後那場 katcheri 上打 mridangam）。\n**第 64／108 條提醒**：facts 逐字有「八百部」「一百部」「七百部」「七個月」「一百天」「三小時」「三盧比」「三歲」；**「三首歌」「四個 raga」需照曲名或 raga 名列舉**——facts 有列出 Yezhu Swarangalukkul 的四個 raga 名，但沒有寫出「四個」這個數字。"
  }
 ]

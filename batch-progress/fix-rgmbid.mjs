@@ -47,6 +47,15 @@ for (const c of cards) {
     if (a && b === a) s += 10; else if (a && (b.includes(a) || a.includes(b))) s += 4;
     const isComp = (x.sec || []).includes('Compilation');
     s += (isComp === wantComp) ? 3 : -6;
+    // primary-type 要進計分（2026-09-03，c-66 的 S.D. Burman《Guide》發現）。
+    // MB 上同名雙胞胎很常見：1965 的 EP 與 1966 的 Album 都叫《Guide》，
+    // 策展層在 mbNote 明寫「本卡釘 Album 那個、EP 那個刻意不釘」，
+    // 這支腳本卻因為 EP 的年份剛好等於卡片年份（+2）而把它換掉——
+    // 標題同分、合輯同分，年份就成了決勝項，等於用年份推翻了 §1 的型別要求。
+    // §1 只收 primary-type=Album；EP 只在 §5.5 的 asia-mini-album 白名單卡才允許。
+    const epOk = c.genreException === 'asia-mini-album' || c.releaseTypeException === 'asia-mini-album';
+    if (x.type === 'Album') s += 5;
+    else if (x.type === 'EP' || x.type === 'Single') s += epOk ? 5 : -12;
     if (x.date && c.year && String(x.date).slice(0, 4) === String(c.year)) s += 2;
     return s;
   };

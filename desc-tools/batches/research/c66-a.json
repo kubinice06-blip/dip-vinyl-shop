@@ -56,7 +56,7 @@
    "year": 1965,
    "note": "卡單 1965 與可查證來源不完全一致，維持卡單值不改（第 18／46 條），但行文不得正面斷言發行年。四個數字並存：(a) 英文維基原聲帶資訊欄記「1965（印度）」、錄音 1964；(b) 同一頁的電影資訊欄記印度上映 1966-04-02，1965-02 在美國上映的是英語版本；(c) MusicBrainz 的 Album RG（49763754）first-release-date 1966，1965 那筆（1b58b2a6）是 EP；(d) Discogs 原盤 LP（Angel 3AEX 5074）記 1966。可用的敘事錨點是「1964 年錄音」與「第 14 屆 Filmfare」兩個有明確出處的時間點。"
   },
-  "notes": "**卡層資料問題，必須回報主線（第 114 條）**：卡單的 `rgMbid` 欄填的是 **1b58b2a6-9030-48c7-a305-795da7973d4e**，但同一張卡的 `curatorRisk` 與 `mbNote` 都明寫「本卡釘後者（49763754-…）」「同名雙胞胎 1b58b2a6 為 1965 EP/Soundtrack，本卡刻意不釘」。已回問 MusicBrainz 確認：**1b58b2a6 的 primary-type 是 EP**（1965、1 筆 IN release），49763754 才是 Album／Soundtrack（1966、3 筆 release）。**卡單釘住的是 EP，違反 §1「只收 primary-type=Album」**，且與策展層自己寫的判斷相反。研究層不改卡單（禁令），請主線把 `rgMbid` 改成 49763754-47f4-43d9-aca7-2ab0d7dac117。\n**互斥條款（第 58／109 條）**：(1)「作曲者掛名、唱的是播放歌手」這個體制性落差全批**只判給本卡**——這張碟上作曲者自己唱了兩首，落差最具體；其餘 20 張只寫具體人名，不重述體制。(2)「拉格標註」這條也判給本卡（曲目表逐首標）。(3) Filmfare 落敗那條與同批《Sangam》《Mera Naam Joker》的 Shankar Jaikishan 線互相呼應，但**只有本卡可以寫**，那三張不得提 Filmfare 對決。\n**推翻策展層一處（第 59／80 條）**：策展 `why` 寫「同名電影 1965 年上映」，英文維基的電影資訊欄記**印度上映是 1966-04-02**，1965-02 上映的是美國的英語版本。行文不得寫成「電影 1965 年上映」。\n**備用切角**：Rafi 原錄的〈Hum Hi Mein Thi Na Koi Baat〉被換掉這件事；S. D. Burman 自己寫 sleeve notes。"
+  "notes": "**卡層資料問題，必須回報主線（第 114 條）**：卡單的 `rgMbid` 欄填的是 **1b58b2a6-9030-48c7-a305-795da7973d4e**，但同一張卡的 `curatorRisk` 與 `mbNote` 都明寫「本卡釘後者（49763754-…）」「同名雙胞胎 1b58b2a6 為 1965 EP/Soundtrack，本卡刻意不釘」。已回問 MusicBrainz 確認：**1b58b2a6 的 primary-type 是 EP**（1965、1 筆 IN release），49763754 才是 Album／Soundtrack（1966、3 筆 release）。**卡單釘住的是 EP，違反 §1「只收 primary-type=Album」**，且與策展層自己寫的判斷相反。研究層不改卡單（禁令），請主線把 `rgMbid` 改成 49763754-47f4-43d9-aca7-2ab0d7dac117。 **互斥條款（第 58／109 條）**：(1)「作曲者掛名、唱的是播放歌手」這個體制性落差全批**只判給本卡**——這張碟上作曲者自己唱了兩首，落差最具體；其餘 20 張只寫具體人名，不重述體制。(2)「拉格標註」這條也判給本卡（曲目表逐首標）。(3) Filmfare 落敗那條與同批《Sangam》《Mera Naam Joker》的 Shankar Jaikishan 線互相呼應，但**只有本卡可以寫**，那三張不得提 Filmfare 對決。 **推翻策展層一處（第 59／80 條）**：策展 `why` 寫「同名電影 1965 年上映」，英文維基的電影資訊欄記**印度上映是 1966-04-02**，1965-02 上映的是美國的英語版本。行文不得寫成「電影 1965 年上映」。 **備用切角**：Rafi 原錄的〈Hum Hi Mein Thi Na Koi Baat〉被換掉這件事；S. D. Burman 自己寫 sleeve notes。"
  },
  {
   "key": "desc2:S.D. Burman|Bandini",
@@ -115,7 +115,7 @@
    "year": 1963,
    "note": "1963 三方一致，無爭議：英文維基的電影資訊欄記 1963、MusicBrainz release-group 的 first-release-date 記 1963、Discogs 的 Angel 3AE 1029 與 TAE 1115 兩筆原盤也都記 1963。"
   },
-  "notes": "**互斥條款（第 58／109 條）**：(1)「Gulzar 的作詞出道」全批只判給本卡。(2)「原盤形態不是獨立 LP，而是十吋合刊／七吋 EP」這條**只判給本卡**——同批其他碟的原盤多為十二吋 LP，這條在本卡才有具體證據（3AE 1029 的 A/B 面分屬兩部片）。(3)「S. D. Burman 自己唱」的體制落差已判給同批的《Guide》，**本卡只寫〈O Mere Majhi〉這一首的事實，不得寫成「作曲家自己也唱歌」這種通則**。\n**行文注意（第 92 條）**：同一首歌在不同來源有兩種寫法——英文維基的內文作〈Mere Sajan Hain Us Paar〉，同頁曲目表與 Discogs 原盤標籤作〈O Mere Majhi〉／〈O Mazi Mere Sajan〉。**兩者指的是同一首**，但研究層不替來源裁決，寫作層請擇一並避開歧義；建議用曲目表的〈O Mere Majhi〉。\n**推翻策展層一處（第 59 條）**：策展 `why` 寫「另一面的〈Mere Saajan Hai Us Paar〉是 S.D. Burman 自己以 Bengali 民謠腔唱的」——維基把「Bhatiyali」這個孟加拉船夫調歸給的是 **Mukesh 唱的〈O Jaanewale Ho Sake〉**，不是 Burman 自己唱的那首；Burman 那首維基只寫「吟遊般的嗓音」。兩件事不得合併。\n**備用切角**：〈Ab Ke Baras Bhej〉的反諷式歌曲擺位（新嫁娘思鄉的民謠語法由女囚唱出）。"
+  "notes": "**互斥條款（第 58／109 條）**：(1)「Gulzar 的作詞出道」全批只判給本卡。(2)「原盤形態不是獨立 LP，而是十吋合刊／七吋 EP」這條**只判給本卡**——同批其他碟的原盤多為十二吋 LP，這條在本卡才有具體證據（3AE 1029 的 A/B 面分屬兩部片）。(3)「S. D. Burman 自己唱」的體制落差已判給同批的《Guide》，**本卡只寫〈O Mere Majhi〉這一首的事實，不得寫成「作曲家自己也唱歌」這種通則**。 **行文注意（第 92 條）**：同一首歌在不同來源有兩種寫法——英文維基的內文作〈Mere Sajan Hain Us Paar〉，同頁曲目表與 Discogs 原盤標籤作〈O Mere Majhi〉／〈O Mazi Mere Sajan〉。**兩者指的是同一首**，但研究層不替來源裁決，寫作層請擇一並避開歧義；建議用曲目表的〈O Mere Majhi〉。 **推翻策展層一處（第 59 條）**：策展 `why` 寫「另一面的〈Mere Saajan Hai Us Paar〉是 S.D. Burman 自己以 Bengali 民謠腔唱的」——維基把「Bhatiyali」這個孟加拉船夫調歸給的是 **Mukesh 唱的〈O Jaanewale Ho Sake〉**，不是 Burman 自己唱的那首；Burman 那首維基只寫「吟遊般的嗓音」。兩件事不得合併。 **備用切角**：〈Ab Ke Baras Bhej〉的反諷式歌曲擺位（新嫁娘思鄉的民謠語法由女囚唱出）。"
  },
  {
   "key": "desc2:S.D. Burman|Aradhana",
@@ -174,7 +174,7 @@
    "year": 1969,
    "note": "1969 三方一致：英文維基記電影 1969-11-07 上映、原聲帶資訊欄記 1969；MusicBrainz release-group first-release-date 1969（其下含 1969 年印度兩筆與美國一筆）；Discogs 原盤 Angel 3AEX 5248 亦記 1969。無爭議。"
   },
-  "notes": "**推翻策展層一處（第 59／80 條）**：策展 `why` 寫「S.D. Burman 病中由兒子 R.D. Burman 代為完成部分編曲」。英文維基專條的說法**相反**——R. D. Burman 掛的是助理音樂總監，負責編曲、配樂與替歌手改調，而且該頁明寫「所有曲調都是 Sachin Dev Burman 寫的」；**「病中」這個說法在可查證來源裡找不到**。已依 facts 改寫。**明令：行文不得寫『S.D. Burman 生病』『由兒子代為完成』**，只能寫父子分工（父作曲、子編曲與配樂）。策展 `risk` 自己也已寫「不得斷言哪幾首由 R.D. Burman 完成」，兩者一致。\n**互斥條款（第 58 條）**：(1)「Kishore Kumar 由此變成 1970 年代最紅的男聲」「Rajesh Khanna 成為第一位 superstar」這兩句**查無來源、不得寫**；可寫的只有維基明載的「把 Kishore Kumar 推給 Rajesh Khanna 的是 S. D. Burman 本人」。(2)「1960 年代銷量第三」這條**只判給本卡**；同批《Sangam》若要寫銷量，須自行找該卡的來源，本卡的 fact 刻意不寫出排在前面的是哪兩張（避免跨卡取事實，第 33 條）。(3) 樂手名單（Kersi Lord／Homi Mullan／Manohari Singh／Buji Lord）是本卡獨有的具體材料，優先用。\n**備用切角**：孟加拉語版本的存在（同一批歌兩種語言各出一份）。"
+  "notes": "**推翻策展層一處（第 59／80 條）**：策展 `why` 寫「S.D. Burman 病中由兒子 R.D. Burman 代為完成部分編曲」。英文維基專條的說法**相反**——R. D. Burman 掛的是助理音樂總監，負責編曲、配樂與替歌手改調，而且該頁明寫「所有曲調都是 Sachin Dev Burman 寫的」；**「病中」這個說法在可查證來源裡找不到**。已依 facts 改寫。**明令：行文不得寫『S.D. Burman 生病』『由兒子代為完成』**，只能寫父子分工（父作曲、子編曲與配樂）。策展 `risk` 自己也已寫「不得斷言哪幾首由 R.D. Burman 完成」，兩者一致。 **互斥條款（第 58 條）**：(1)「Kishore Kumar 由此變成 1970 年代最紅的男聲」「Rajesh Khanna 成為第一位 superstar」這兩句**查無來源、不得寫**；可寫的只有維基明載的「把 Kishore Kumar 推給 Rajesh Khanna 的是 S. D. Burman 本人」。(2)「1960 年代銷量第三」這條**只判給本卡**；同批《Sangam》若要寫銷量，須自行找該卡的來源，本卡的 fact 刻意不寫出排在前面的是哪兩張（避免跨卡取事實，第 33 條）。(3) 樂手名單（Kersi Lord／Homi Mullan／Manohari Singh／Buji Lord）是本卡獨有的具體材料，優先用。 **備用切角**：孟加拉語版本的存在（同一批歌兩種語言各出一份）。"
  },
  {
   "key": "desc2:Shankar Jaikishan|Shree 420",
@@ -198,7 +198,7 @@
     "src": "https://www.discogs.com/release/13303725"
    },
    {
-    "f": "這些歌在蘇聯也壓成 78 轉發行：Мелодия 的 27750／27751 一面是〈Русский снег〉、另一面是〈Мои японские ботинки〉（即〈Mera Joota Hai Japani〉），唱片註記寫明出自《Shree 420》且以印地語演唱。",
+    "f": "這些歌在蘇聯也壓成 78 轉發行：Melodiya 的 27750／27751 一面是〈Русский снег〉、另一面是〈Мои японские ботинки〉（即〈Mera Joota Hai Japani〉），唱片註記寫明出自《Shree 420》且以印地語演唱。",
     "src": "https://www.discogs.com/release/7797513"
    },
    {
@@ -233,7 +233,7 @@
    "year": 1955,
    "note": "1955 三方一致：英文維基記電影 1955-09-06 上映；MusicBrainz release-group first-release-date 1955（其下 1955 年印度 Official 一筆）；Discogs 的兩張 HMV 78 轉蟲膠原盤（N.51316、N. 51317）也都記 1955。但要注意：**Discogs 上沒有 1955 年的 LP**，這批歌的十二吋 LP 形態要到 1970 年代才出現（1971 Odeon EMOE 2141 是七吋 EP、1979 HMV ECLP 5648 才是 LP）；行文若提到「唱片」請用 78 轉單片這個形態，不要寫成 1955 年就有專輯。"
   },
-  "notes": "**掛名拼法（第 92 條）**：本卡的組合名在來源之間有四種寫法——MusicBrainz 藝人實體與卡片作「Shankar Jaikishan」（空格）、英文維基作「Shankar–Jaikishan」（連接號）、Discogs 作「Shankar-Jaikishan」（ASCII 連字號）、Apple 的印度目錄作「Shankar - Jaikishan」。**建議下游統一採卡片與 MB 的「Shankar Jaikishan」**，行文直接寫這個字串、不要出現連字號變體，同批《Sangam》《Mera Naam Joker》兩張比照。\n**互斥條款（第 58 條）**：(1)「78 轉蟲膠原盤形態」「標籤三種文字」全批**只判給本卡**——同批只有這張的 1955 年原盤形態查得到具體證據。(2)「蘇聯發行」也只判給本卡（有兩筆蘇聯壓片的 Discogs 條目可指）；同批《Mera Naam Joker》雖然也在蘇聯賣得好，那張改寫票房數字，不寫唱片發行。(3) Filmfare／國家電影獎的獎項線本卡只寫攝影與剪輯（音樂沒得獎），**「Filmfare 最佳音樂總監」這條判給同批的《Mera Naam Joker》**。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Mera Joota Hai Japani〉在蘇聯與東歐長年傳唱」——可查證的是「這首歌長年是印度國內的愛國歌曲」，以及「本片在蘇聯、羅馬尼亞、以色列受歡迎」；**在以色列被重錄的是〈Ichak Dana Beechak Dana〉不是〈Mera Joota Hai Japani〉**，兩件事不得合併。(b) 策展 `why` 寫「主唱 Lata Mangeshkar 與 Mukesh」——曲目表上實際有五位演唱者，另含 Manna Dey、Asha Bhosle 與 Mohammed Rafi。\n**備用切角**：〈Ramaiya Vastavaiya〉一首用了三位歌手（Lata、Rafi、Mukesh）。"
+  "notes": "**掛名拼法（第 92 條）**：本卡的組合名在來源之間有四種寫法——MusicBrainz 藝人實體與卡片作「Shankar Jaikishan」（空格）、英文維基作「Shankar–Jaikishan」（連接號）、Discogs 作「Shankar-Jaikishan」（ASCII 連字號）、Apple 的印度目錄作「Shankar - Jaikishan」。**建議下游統一採卡片與 MB 的「Shankar Jaikishan」**，行文直接寫這個字串、不要出現連字號變體，同批《Sangam》《Mera Naam Joker》兩張比照。 **互斥條款（第 58 條）**：(1)「78 轉蟲膠原盤形態」全批只有本卡與《Baiju Bawra》兩張查得到具體證據，兩張走**不同角度**：**本卡寫的是『標籤同時印天城體、烏爾都文與羅馬字』與蘇聯壓片**，《Baiju Bawra》寫的是「一首對唱佔滿整張唱片」。本卡不得重述後者。(2)「蘇聯發行」也只判給本卡（有兩筆蘇聯壓片的 Discogs 條目可指）；同批《Mera Naam Joker》雖然也在蘇聯賣得好，那張改寫票房數字，不寫唱片發行。(3) Filmfare／國家電影獎的獎項線本卡只寫攝影與剪輯（音樂沒得獎），**「Filmfare 最佳音樂總監」這條判給同批的《Mera Naam Joker》**。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Mera Joota Hai Japani〉在蘇聯與東歐長年傳唱」——可查證的是「這首歌長年是印度國內的愛國歌曲」，以及「本片在蘇聯、羅馬尼亞、以色列受歡迎」；**在以色列被重錄的是〈Ichak Dana Beechak Dana〉不是〈Mera Joota Hai Japani〉**，兩件事不得合併。(b) 策展 `why` 寫「主唱 Lata Mangeshkar 與 Mukesh」——曲目表上實際有五位演唱者，另含 Manna Dey、Asha Bhosle 與 Mohammed Rafi。 **備用切角**：〈Ramaiya Vastavaiya〉一首用了三位歌手（Lata、Rafi、Mukesh）。 **廠牌名寫法**：那筆蘇聯 78 轉在 Discogs 上的廠牌名以西里爾登錄，本稿統一寫成該廠牌自己在出口盤上使用的拉丁寫法 Melodiya，行文照用、不要改回西里爾（會踩 qa-batch 的非拉丁掃描）。"
  },
  {
   "key": "desc2:Shankar Jaikishan|Sangam",
@@ -292,7 +292,7 @@
    "year": 1964,
    "note": "1964 三方一致：英文維基記電影 1964-06-18 上映、Binaca Geetmala 1964 年度榜；MusicBrainz release-group first-release-date 1964（其下 1964 年印度 Official 一筆、1964 無國別一筆）；Discogs 原盤 Angel 3AEX 5036 亦記 1964。**卡層記錄的 Apple 印度目錄 releaseDate 1953（collectionId 1327741173）與所有來源不符**，依第 77 條只當訊號、不採。"
   },
-  "notes": "**掛名拼法（第 92 條）**：同《Shree 420》——來源有「Shankar Jaikishan」（MB／卡片）、「Shankar–Jaikishan」（維基）、「Shankar-Jaikishan」（Discogs）、「Shankar - Jaikishan」（Apple）四種寫法，行文一律用卡片的「Shankar Jaikishan」。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「Vyjayanthimala 那段長達數分鐘的〈Main Kya Karoon Ram〉」——曲目表上這首的**演唱者是 Lata Mangeshkar**、長度 3 分 45 秒，Vyjayanthimala 唱的是〈Bol Radha Bol〉。**明令不得把〈Main Kya Karoon Ram〉寫成 Vyjayanthimala 唱的、也不得寫成長曲。**(b) 策展 `why` 說這是 Raj Kapoor「第一部有海外實景的印度賣座片」——維基的說法更強也更精確：**第一部完全在海外實景拍攝的印度電影**，另外「第一部全彩」是相對於 Raj Kapoor 自己而非全印度。\n**互斥條款（第 58 條）**：(1)「1960 年代銷量最高」只判給本卡；同批《Aradhana》寫的是「銷量第三」，兩張都不得提對方的名次（第 33 條，不跨卡取事實）。(2)「Binaca Geetmala 年度榜」只判給本卡。(3)「海外實景／彩色」屬電影事實，只在本卡以一句帶過，同批其他卡不得引用電影規格。\n**備用切角**：以色列與巴基斯坦都有授權盤（IND 1044、LKDA-195）。"
+  "notes": "**掛名拼法（第 92 條）**：同《Shree 420》——來源有「Shankar Jaikishan」（MB／卡片）、「Shankar–Jaikishan」（維基）、「Shankar-Jaikishan」（Discogs）、「Shankar - Jaikishan」（Apple）四種寫法，行文一律用卡片的「Shankar Jaikishan」。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「Vyjayanthimala 那段長達數分鐘的〈Main Kya Karoon Ram〉」——曲目表上這首的**演唱者是 Lata Mangeshkar**、長度 3 分 45 秒，Vyjayanthimala 唱的是〈Bol Radha Bol〉。**明令不得把〈Main Kya Karoon Ram〉寫成 Vyjayanthimala 唱的、也不得寫成長曲。**(b) 策展 `why` 說這是 Raj Kapoor「第一部有海外實景的印度賣座片」——維基的說法更強也更精確：**第一部完全在海外實景拍攝的印度電影**，另外「第一部全彩」是相對於 Raj Kapoor 自己而非全印度。 **互斥條款（第 58 條）**：(1)「1960 年代銷量最高」只判給本卡；同批《Aradhana》寫的是「銷量第三」，兩張都不得提對方的名次（第 33 條，不跨卡取事實）。(2)「Binaca Geetmala 年度榜」只判給本卡。(3)「海外實景／彩色」屬電影事實，只在本卡以一句帶過，同批其他卡不得引用電影規格。 **備用切角**：以色列與巴基斯坦都有授權盤（IND 1044、LKDA-195）。"
  },
  {
   "key": "desc2:Shankar Jaikishan|Mera Naam Joker",
@@ -328,7 +328,7 @@
     "src": "https://www.discogs.com/release/13344547"
    },
    {
-    "f": "英文維基的資訊欄估計這部片在蘇聯的票房約 2,200 萬美元；唱片另有秘魯 Odeon 盤（ELD 2188）與以色列 His Master's Voice 盤（IND 1010）。",
+    "f": "英文維基的資訊欄估計這部片在蘇聯的票房約兩千兩百萬美元；唱片另有秘魯 Odeon 盤（ELD 2188）與以色列 His Master's Voice 盤（IND 1010）。",
     "src": "https://www.discogs.com/release/8264500"
    },
    {
@@ -351,7 +351,7 @@
    "year": 1970,
    "note": "1970 三方一致：英文維基記電影 1970-12-18 上映；MusicBrainz release-group first-release-date 1970（其下 1970 年印度 Official 一筆）；Discogs 的 Angel D/3AEX 5299 原盤記 1970。唯一雜訊是 Discogs 另有一筆同編號、標題作《Mera Naam Joker (Original Soundtrack Recording)》而年份填 1968 的條目（release 3723935），與其他所有來源不符，未採。"
   },
-  "notes": "**掛名拼法（第 92 條）**：同組合的另兩張卡，四種寫法並存，行文一律用卡片與 MB 的「Shankar Jaikishan」。\n**未採用的策展說法（查無來源）**：策展 `why` 寫「這是 Shankar–Jaikishan 在 Jaikishan 1971 年過世前最後一張大規模作品」——**Jaikishan 的卒年在本卡查得到的來源裡沒有出現**，依第 33／64 條不得寫入行文。同一句的「原始發行是雙片」也未證實：Discogs 的 D/3AEX 5299 條目 format 標的是單張 LP、九軌（維基曲目表為十首），**行文不得寫成雙片**。\n**互斥條款（第 58 條）**：(1)「Filmfare 最佳音樂總監」這條全批只判給本卡（同批《Guide》寫的是 S. D. Burman 在同一個獎項上落敗，兩張都不得提對方）。(2)「曲長極端分布」判給本卡。(3)「蘇聯」這條——唱片在蘇聯的發行判給同批《Shree 420》，**本卡只能寫票房估計數字，不得寫唱片在蘇聯發行**。\n**備用切角**：拍了六年、抵押全部資產、上映時慘敗後來翻案；第三章最先開拍。"
+  "notes": "**掛名拼法（第 92 條）**：同組合的另兩張卡，四種寫法並存，行文一律用卡片與 MB 的「Shankar Jaikishan」。 **未採用的策展說法（查無來源）**：策展 `why` 寫「這是 Shankar–Jaikishan 在 Jaikishan 1971 年過世前最後一張大規模作品」——**Jaikishan 的卒年在本卡查得到的來源裡沒有出現**，依第 33／64 條不得寫入行文。同一句的「原始發行是雙片」也未證實：Discogs 的 D/3AEX 5299 條目 format 標的是單張 LP、九軌（維基曲目表為十首），**行文不得寫成雙片**。 **互斥條款（第 58 條）**：(1)「Filmfare 最佳音樂總監」這條全批只判給本卡（同批《Guide》寫的是 S. D. Burman 在同一個獎項上落敗，兩張都不得提對方）。(2)「曲長極端分布」判給本卡。(3)「蘇聯」這條——唱片在蘇聯的發行判給同批《Shree 420》，**本卡只能寫票房估計數字，不得寫唱片在蘇聯發行**。 **備用切角**：拍了六年、抵押全部資產、上映時慘敗後來翻案；第三章最先開拍。"
  },
  {
   "key": "desc2:Naushad|Baiju Bawra",
@@ -410,7 +410,7 @@
    "year": 1952,
    "note": "1952 三方一致：英文維基記電影 1952-10-05 上映、原聲帶資訊欄記 1952；MusicBrainz release-group first-release-date 1952；Discogs 的 HMV 78 轉蟲膠原盤（N. 50191、N. 50193、N. 50323）皆記 1952。**卡層記錄的 Apple 印度目錄 releaseDate 1953 與上述不符**，依第 77 條只當訊號、不採。另注意 Discogs 上 1966 年的 Angel TAE 1265 是七吋 EP、1975 年的 HMV EALP 4069 才是 LP。"
   },
-  "notes": "**互斥條款（第 58／109 條）**：(1)「1952 年以 78 轉蟲膠單片發行」這個形態，全批只有本卡與《Shree 420》兩張有具體證據，兩張走**不同角度**——《Shree 420》寫的是「標籤三種文字」與蘇聯壓片，**本卡只寫 N. 50323 那張『一首對唱佔滿整張唱片、切成兩面』**，不得重述三種文字或形態通則。(2)「古典聲樂家進商業電影」這條全批只判給本卡；同批《Mughal-E-Azam》有 Bade Ghulam Ali Khan，那張改寫**酬勞與拒演**的具體事件，兩張不得共用「把古典大師請進電影」這個說法。(3)「Filmfare 最佳音樂總監唯一一次得獎」判給本卡。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈O Duniya Ke Rakhwale〉讓 Mohammed Rafi 唱到嗓子受損」——**查無來源，不得寫**。維基只寫這首與〈Man Tarpat Hari Darshan Ko Aaj〉都成了熱門曲、並讓 Rafi 站穩頭號播放歌手的位置。(b) 策展 `why` 說 Naushad「找來 Amir Khan 與 D.V. Paluskar 唱片中的 jugalbandi 段落」——維基用的詞是 bandish（拉格 Desi），而且 Amir Khan 另外還擔任這部片的音樂顧問；行文用「對唱」即可，不要用 jugalbandi 這個未見於來源的詞。\n**備用切角**：〈Man Tarpat Hari Darshan Ko Aaj〉這首 Malkauns 的曲子由穆斯林作曲家、穆斯林作詞者與穆斯林歌手共同做成一首印度教的祈禱歌——**此說本卡查無來源，不得寫**，這裡只記下它是坊間常見說法以便下游辨識。"
+  "notes": "**互斥條款（第 58／109 條）**：(1)「1952 年以 78 轉蟲膠單片發行」這個形態，全批只有本卡與《Shree 420》兩張有具體證據，兩張走**不同角度**——《Shree 420》寫的是「標籤三種文字」與蘇聯壓片，**本卡只寫 N. 50323 那張『一首對唱佔滿整張唱片、切成兩面』**，不得重述三種文字或形態通則。(2)「古典聲樂家進商業電影」這條全批只判給本卡；同批《Mughal-E-Azam》有 Bade Ghulam Ali Khan，那張改寫**酬勞與拒演**的具體事件，兩張不得共用「把古典大師請進電影」這個說法。(3)「Filmfare 最佳音樂總監唯一一次得獎」判給本卡。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈O Duniya Ke Rakhwale〉讓 Mohammed Rafi 唱到嗓子受損」——**查無來源，不得寫**。維基只寫這首與〈Man Tarpat Hari Darshan Ko Aaj〉都成了熱門曲、並讓 Rafi 站穩頭號播放歌手的位置。(b) 策展 `why` 說 Naushad「找來 Amir Khan 與 D.V. Paluskar 唱片中的 jugalbandi 段落」——維基用的詞是 bandish（拉格 Desi），而且 Amir Khan 另外還擔任這部片的音樂顧問；行文用「對唱」即可，不要用 jugalbandi 這個未見於來源的詞。 **備用切角**：〈Man Tarpat Hari Darshan Ko Aaj〉這首 Malkauns 的曲子由穆斯林作曲家、穆斯林作詞者與穆斯林歌手共同做成一首印度教的祈禱歌——**此說本卡查無來源，不得寫**，這裡只記下它是坊間常見說法以便下游辨識。"
  },
  {
   "key": "desc2:Naushad|Mother India",
@@ -469,7 +469,7 @@
    "year": 1957,
    "note": "1957 為主流說法，維持卡單值：英文維基記電影 1957-10-25 在印度上映、原聲帶資訊欄同記 1957-10-25；MusicBrainz release-group first-release-date 1957。**唯一的落差在 Discogs**：Angel 3AEX 5001 那筆原盤 LP 標的是 **1958**（封套自己寫「Selections From Film Mother India (1957)」，即唱片晚於電影）。依第 18／46 條維持 1957、行文不得正面斷言唱片發行年；可用的錨點是「1957 年 10 月 25 日上映」與「1958 年送件奧斯卡」兩個有確切日期的事件。"
   },
-  "notes": "**互斥條款（第 58 條）**：(1)「西式交響管弦進印地語電影」這條全批**只判給本卡**——同批《Mughal-E-Azam》的來源也提到管弦與合唱，但那張的獨有材料是 Bade Ghulam Ali Khan 的酬勞與浴室錄音，**不得寫管弦編制**。(2)「奧斯卡」這條只判給本卡。(3)「當年評價不佳、後來翻案」判給本卡（同批《Mera Naam Joker》寫的是電影票房慘敗後翻案，兩者不同層次，但行文請避開同一句型）。\n**推翻策展層三處（第 59 條）**：(a) 策展 `why` 寫「Shakeel Badayuni 作詞、Lata Mangeshkar 主唱」——**演唱者共四位**（Rafi、Shamshad Begum、Lata、Manna Dey），另有 Meena 與 Usha Mangeshkar 參與一首合唱，不得寫成 Lata 一人主唱。(b) 策展 `why` 把〈Duniya Mein Hum Aaye Hain〉與〈Nagri Nagri Dware Dware〉說成「一面是農村勞動歌的節奏、另一面是為 Nargis 的悲劇線寫的長篇弦樂」——**查無來源**；曲目表只給了拉格與時長（〈Nagari Nagari Dware Dware〉7:29 是全碟最長的一首）。(c) 策展 `why` 說配樂「把民謠曲式與大編制管弦樂並置」方向對，但要照 facts 的具體措辭寫，不得自行擴寫成分水嶺論述。\n**盤名注意**：本卡盤名《Mother India》原本就是英文片名，不是轉寫。\n**備用切角**：Mehboob Khan 與 Naushad 此前已合作八部片；錄音在 Mehboob Studios。"
+  "notes": "**互斥條款（第 58 條）**：(1)「西式交響管弦進印地語電影」這條全批**只判給本卡**——同批《Mughal-E-Azam》的來源也提到管弦與合唱，但那張的獨有材料是 Bade Ghulam Ali Khan 的酬勞與浴室錄音，**不得寫管弦編制**。(2)「奧斯卡」這條只判給本卡。(3)「當年評價不佳、後來翻案」判給本卡（同批《Mera Naam Joker》寫的是電影票房慘敗後翻案，兩者不同層次，但行文請避開同一句型）。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 寫「Shakeel Badayuni 作詞、Lata Mangeshkar 主唱」——**演唱者共四位**（Rafi、Shamshad Begum、Lata、Manna Dey），另有 Meena 與 Usha Mangeshkar 參與一首合唱，不得寫成 Lata 一人主唱。(b) 策展 `why` 把〈Duniya Mein Hum Aaye Hain〉與〈Nagri Nagri Dware Dware〉說成「一面是農村勞動歌的節奏、另一面是為 Nargis 的悲劇線寫的長篇弦樂」——**查無來源**；曲目表只給了拉格與時長（〈Nagari Nagari Dware Dware〉7:29 是全碟最長的一首）。(c) 策展 `why` 說配樂「把民謠曲式與大編制管弦樂並置」方向對，但要照 facts 的具體措辭寫，不得自行擴寫成分水嶺論述。 **盤名注意**：本卡盤名《Mother India》原本就是英文片名，不是轉寫。 **備用切角**：Mehboob Khan 與 Naushad 此前已合作八部片；錄音在 Mehboob Studios。"
  },
  {
   "key": "desc2:Naushad|Mughal-E-Azam",
@@ -481,11 +481,11 @@
     "src": "https://en.wikipedia.org/wiki/Mughal-e-Azam_(soundtrack)"
    },
    {
-    "f": "這部片一共寫了 20 首歌、每首成本約 3,000 盧比（1960 年約合 629 美元），因為片長問題有不少被剪掉，最後留在片裡的是 12 首。",
+    "f": "這部片一共寫了 20 首歌、每首成本約 3000 盧比（1960 年約合 629 美元），因為片長問題有不少被剪掉，最後留在片裡的是 12 首。",
     "src": "https://en.wikipedia.org/wiki/Mughal-e-Azam_(soundtrack)"
    },
    {
-    "f": "Asif 與 Naushad 去找印度斯坦古典聲樂家 Bade Ghulam Ali Khan 灌唱，他拒絕、說自己不喜歡替電影工作；Asif 堅持要他，請他開價，Khan 開出一首 25,000 盧比——當時全印度酬勞最高的播放歌手 Mohammed Rafi 與 Lata Mangeshkar 一首才 300 到 400 盧比——本意是想把 Asif 嚇走。Asif 一口答應，還先付了五成訂金，Khan 因此沒有理由再拒絕。",
+    "f": "Asif 與 Naushad 去找印度斯坦古典聲樂家 Bade Ghulam Ali Khan 灌唱，他拒絕、說自己不喜歡替電影工作；Asif 堅持要他，請他開價，Khan 開出一首 25000 盧比——當時全印度酬勞最高的播放歌手 Mohammed Rafi 與 Lata Mangeshkar 一首才 300 到 400 盧比——本意是想把 Asif 嚇走。Asif 一口答應，還先付了五成訂金，Khan 因此沒有理由再拒絕。",
     "src": "https://en.wikipedia.org/wiki/Mughal-e-Azam_(soundtrack)"
    },
    {
@@ -528,7 +528,7 @@
    "year": 1960,
    "note": "1960 三方一致：英文維基記電影 1960-08-05 上映、原聲帶條目資訊欄記 1960；MusicBrainz release-group first-release-date 1960（其下 1960 年印度 Official 一筆）；Discogs 原盤 Angel 3AEX 5003 亦記 1960。無爭議。"
   },
-  "notes": "**1960 原盤 vs 2004 上色版，務必切開（本批專屬風險）**：2004 年上色重映時原聲帶也重做過——Naushad 由 Uttam Singh 協助，音軌整修並轉成 Dolby Digital、**管弦部分用真人樂手重錄**，只保留原本的獨唱人聲。**這些全部不屬於 1960 年的原盤，行文一字不得引用。** MusicBrainz 的 f952c58a 轄下就有 2004-12-31 的《Mughal - E - Azam (Colour)》那一筆。\n**盤名寫法（第 92 條）**：卡片與 MB 的 release-group 標題用 ASCII 連字號《Mughal-E-Azam》；但同一個 RG 底下 2009 與 2013 年的英美 release 標題用的是 U+2010（《Mughal‐E‐Azam》），英文維基的條目名則作小寫的《Mughal-e-Azam》。**建議下游一律採卡片的 ASCII 大寫寫法**，行文不要出現另外兩種。\n**互斥條款（第 58 條）**：(1)「Bade Ghulam Ali Khan」全批只判給本卡，寫法限定在**酬勞與拒演**這個具體事件；「把古典大師請進商業電影」這個通則已判給同批《Baiju Bawra》，本卡不得使用。(2)「西式管弦／合唱」的音樂學論述已判給同批《Mother India》，本卡只能寫〈Ae Mohabbat Zindabad〉那一首的合唱團人數爭議，**不得寫成 Naushad 的管弦寫法**。(3)「浴室殘響」判給本卡。\n**推翻策展層三處（第 59 條）**：(a) 策展 `why` 寫「Naushad 用了上百人的樂隊」——來源說的是**〈Ae Mohabbat Zindabad〉一首歌的合唱團**，而且人數本身有一百與一千兩種說法，不得寫成整張碟的樂隊規模。(b) 策展 `why` 寫「〈Pyar Kiya To Darna Kya〉在鏡宮場景裡加了人工回聲」——**方向相反**：來源說的是當時**沒有**製造殘響的技術，所以讓 Lata 進浴室唱，取的是天然殘響，不是後製加的。(c) 策展 `why` 稱「配樂規模在 filmi 史上沒有第二張」——無來源的最高級說法，不得寫。\n**備用切角**：20 首寫好、只留 12 首；歌曲佔掉將近三分之一片長。"
+  "notes": "**1960 原盤 vs 2004 上色版，務必切開（本批專屬風險）**：2004 年上色重映時原聲帶也重做過——Naushad 由 Uttam Singh 協助，音軌整修並轉成 Dolby Digital、**管弦部分用真人樂手重錄**，只保留原本的獨唱人聲。**這些全部不屬於 1960 年的原盤，行文一字不得引用。** MusicBrainz 的 f952c58a 轄下就有 2004-12-31 的《Mughal - E - Azam (Colour)》那一筆。 **盤名寫法（第 92 條）**：卡片與 MB 的 release-group 標題用 ASCII 連字號《Mughal-E-Azam》；但同一個 RG 底下 2009 與 2013 年的英美 release 標題用的是 U+2010（《Mughal‐E‐Azam》），英文維基的條目名則作小寫的《Mughal-e-Azam》。**建議下游一律採卡片的 ASCII 大寫寫法**，行文不要出現另外兩種。 **互斥條款（第 58 條）**：(1)「Bade Ghulam Ali Khan」全批只判給本卡，寫法限定在**酬勞與拒演**這個具體事件；「把古典大師請進商業電影」這個通則已判給同批《Baiju Bawra》，本卡不得使用。(2)「西式管弦／合唱」的音樂學論述已判給同批《Mother India》，本卡只能寫〈Ae Mohabbat Zindabad〉那一首的合唱團人數爭議，**不得寫成 Naushad 的管弦寫法**。(3)「浴室殘響」判給本卡。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 寫「Naushad 用了上百人的樂隊」——來源說的是**〈Ae Mohabbat Zindabad〉一首歌的合唱團**，而且人數本身有一百與一千兩種說法，不得寫成整張碟的樂隊規模。(b) 策展 `why` 寫「〈Pyar Kiya To Darna Kya〉在鏡宮場景裡加了人工回聲」——**方向相反**：來源說的是當時**沒有**製造殘響的技術，所以讓 Lata 進浴室唱，取的是天然殘響，不是後製加的。(c) 策展 `why` 稱「配樂規模在 filmi 史上沒有第二張」——無來源的最高級說法，不得寫。 **備用切角**：20 首寫好、只留 12 首；歌曲佔掉將近三分之一片長。"
  },
  {
   "key": "desc2:O.P. Nayyar|C.I.D.",
@@ -587,7 +587,7 @@
    "year": 1956,
    "note": "1956 各來源一致，但**同一年裡有三個不同日期**，行文不得正面斷言唱片發行日：英文維基記電影 1956-11-02 上映、原聲帶資訊欄卻記 1956-12-30 發行；MusicBrainz release-group 的 first-release-date 是 1956-07-30，而那一筆 release 標 **Withdrawn**（同 RG 下 1979 年印度那筆才是 Official）。Discogs 目前查得到的 Angel TAE 1358 EP 是 1967 年、標籤自寫「Recording first published 1967」。可用的錨點是「1956 年錄音」與「1956 年 11 月 2 日電影上映」。"
   },
-  "notes": "**互斥條款（第 58 條）**：(1)「O. P. Nayyar 從未與 Lata Mangeshkar 合作」這條全批**只判給本卡**（本卡是他三張裡最早的一張，而且 Asha Bhosle 正是在這張被引進他的班底）；同批《Naya Daur》《Kashmir Ki Kali》不得重述。(2)「Milon Gupta 的口琴與〈Oh My Darling, Clementine〉」判給本卡。(3)「Guru Dutt」這個名字全批只在本卡出現（他是本片製片）；同批《Sahib Bibi Aur Ghulam》也與 Guru Dutt 有關，那張改寫 Geeta Dutt 的演唱，**兩張不得共用 Guru Dutt 這條線**。\n**盤名（第 50 條）**：《C.I.D.》三個字母帶句點，是 §1 明列的高風險短盤名；行文務必連句點一起寫，並注意同一位作曲者名下另有 1967 年的《C.I.D. 909》（Angel 3AEX-5137／TAE 1388），**兩者不是同一張碟**。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Aankhon Hi Aankhon Mein〉的口哨與貝斯線」與「〈Yeh Hai Bombay Meri Jaan〉的城市速寫」是「後來 Bollywood 都會歌的原型」——**兩句都查無來源**，具體樂器只查得到口琴那一項，**不得寫口哨或貝斯線**。(b) 策展 `why` 說 Nayyar 在此「把爵士樂隊編制與孟買街頭節奏接在一起」——查無來源，不得寫。\n**備用切角**：〈Leke Pehla Pehla Pyaar〉6 分 45 秒是六首裡最長的一首，且一次動用三位歌手。"
+  "notes": "**互斥條款（第 58 條）**：(1)「O. P. Nayyar 從未與 Lata Mangeshkar 合作」這條全批**只判給本卡**（本卡是他三張裡最早的一張，而且 Asha Bhosle 正是在這張被引進他的班底）；同批《Naya Daur》《Kashmir Ki Kali》不得重述。(2)「Milon Gupta 的口琴與〈Oh My Darling, Clementine〉」判給本卡。(3)「Guru Dutt」這個名字全批只在本卡出現（他是本片製片）；同批《Sahib Bibi Aur Ghulam》也與 Guru Dutt 有關，那張改寫 Geeta Dutt 的演唱，**兩張不得共用 Guru Dutt 這條線**。 **盤名（第 50 條）**：《C.I.D.》三個字母帶句點，是 §1 明列的高風險短盤名；行文務必連句點一起寫，並注意同一位作曲者名下另有 1967 年的《C.I.D. 909》（Angel 3AEX-5137／TAE 1388），**兩者不是同一張碟**。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Aankhon Hi Aankhon Mein〉的口哨與貝斯線」與「〈Yeh Hai Bombay Meri Jaan〉的城市速寫」是「後來 Bollywood 都會歌的原型」——**兩句都查無來源**，具體樂器只查得到口琴那一項，**不得寫口哨或貝斯線**。(b) 策展 `why` 說 Nayyar 在此「把爵士樂隊編制與孟買街頭節奏接在一起」——查無來源，不得寫。 **備用切角**：〈Leke Pehla Pehla Pyaar〉6 分 45 秒是六首裡最長的一首，且一次動用三位歌手。"
  },
  {
   "key": "desc2:O.P. Nayyar|Naya Daur",
@@ -646,7 +646,7 @@
    "year": 1957,
    "note": "1957 三方一致：英文維基記電影與原聲帶同為 1957-08-15；MusicBrainz release-group first-release-date 1957。但要注意兩件事：(a) MB 的 1957 那筆 release **既無國別也無 status**，同 RG 下 1976 年印度那筆才明確標 Official；(b) Discogs 上查不到 1957 年的實體盤，最早可指認的是 Angel 的七吋 EP TAE 1008（無年份）與 1976 年的 HMV ECLP 5500 LP。行文不得正面斷言唱片發行年，可用「1957 年 8 月 15 日上映」與「1958 年 Filmfare」兩個確切錨點。"
   },
-  "notes": "**互斥條款（第 58 條）**：(1)「Filmfare 最佳音樂總監」在 O. P. Nayyar 三張卡裡**只判給本卡**（他以本片得獎）。(2)「全碟一位作詞者」判給本卡（Sahir Ludhianvi 一人包辦；同批《Mera Naam Joker》寫的是相反的四位作詞者，兩張可對照但不得互引）。(3)「上色重映」判給本卡；同批《Mughal-E-Azam》的 2004 上色版已在該卡列為**禁止引用**的材料，兩張都不要把上色說成音樂上的事。\n**推翻策展層三處（第 59 條）**：(a) 策展 `why` 稱整張碟「建立在馬蹄與趕車節奏上」、〈Ude Jab Jab Zulfen Teri〉的鼓點與〈Maang Ke Saath Tumhara〉的行進感是他招牌的「tanga 節奏」——**查無來源，全部不得寫**。曲目表能證明的只有拉格 Dhani 與 Bhairav 兩項。(b) 策展 `why` 說「這是他與 Sahir 少數的合作」——**查無來源**，不得寫成罕見合作。(c) 策展 `why` 說 Apple 目錄以 15 軌在架、是「本批曲目最完整的 1950 年代條目」——那是 Apple 側的資料，不是唱片事實，行文不得引用。\n**曲名拼法（第 92 條）**：同一首歌在維基作〈Uden Jab Jab Zulfen Teri〉、Discogs 的 EP 標籤作〈Uden Jab Jab Zulfen Teri〉、策展層寫〈Ude Jab Jab Zulfen Teri〉（少一個 n）。**採前者**。另〈Maang Ke Saath Tumhara〉在維基內文作〈Mangke Saath Tumhara〉，同指一首。\n**備用切角**：《Filmfare》1957 年那則當期評論的原文。"
+  "notes": "**互斥條款（第 58 條）**：(1)「Filmfare 最佳音樂總監」在 O. P. Nayyar 三張卡裡**只判給本卡**（他以本片得獎）。(2)「全碟一位作詞者」判給本卡（Sahir Ludhianvi 一人包辦；同批《Mera Naam Joker》寫的是相反的四位作詞者，兩張可對照但不得互引）。(3)「上色重映」判給本卡；同批《Mughal-E-Azam》的 2004 上色版已在該卡列為**禁止引用**的材料，兩張都不要把上色說成音樂上的事。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 稱整張碟「建立在馬蹄與趕車節奏上」、〈Ude Jab Jab Zulfen Teri〉的鼓點與〈Maang Ke Saath Tumhara〉的行進感是他招牌的「tanga 節奏」——**查無來源，全部不得寫**。曲目表能證明的只有拉格 Dhani 與 Bhairav 兩項。(b) 策展 `why` 說「這是他與 Sahir 少數的合作」——**查無來源**，不得寫成罕見合作。(c) 策展 `why` 說 Apple 目錄以 15 軌在架、是「本批曲目最完整的 1950 年代條目」——那是 Apple 側的資料，不是唱片事實，行文不得引用。 **曲名拼法（第 92 條）**：同一首歌在維基作〈Uden Jab Jab Zulfen Teri〉、Discogs 的 EP 標籤作〈Uden Jab Jab Zulfen Teri〉、策展層寫〈Ude Jab Jab Zulfen Teri〉（少一個 n）。**採前者**。另〈Maang Ke Saath Tumhara〉在維基內文作〈Mangke Saath Tumhara〉，同指一首。 **備用切角**：《Filmfare》1957 年那則當期評論的原文。"
  },
  {
   "key": "desc2:O.P. Nayyar|Kashmir Ki Kali",
@@ -705,7 +705,7 @@
    "year": 1964,
    "note": "1964 三方一致：英文維基記電影 1964-11-20 上映、原聲帶資訊欄記 1964 年在印度發行（錄音 1963）；MusicBrainz release-group first-release-date 1964（其下 1964 年印度 Official 一筆）；Discogs 原盤 Angel 3AEX 5035 亦記 1964。無爭議。"
   },
-  "notes": "**互斥條款（第 58 條）**：(1)「換掉原定作曲者」這條全批只判給本卡——**而且被換掉的正是同批的 Shankar Jaikishan**，這個對照只有本卡能寫，那三張不得提。(2)「錄音年早於發行年」判給本卡（1963 年錄、1964 年出）。(3)「歌被剪掉但留在碟上」判給本卡（同批《Naya Daur》有一首『既不在片裡也不在碟上』的曲子，形狀不同，兩張可各寫各的，但不要用同一句型）。(4)「O. P. Nayyar 從未與 Lata Mangeshkar 合作」已判給同批《C.I.D.》，**本卡不得寫**。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 稱「整張碟把喀什米爾的 santoor 與 rabab 音色接進他一貫的西式節奏組」——**查無來源，不得寫任何樂器**。可查證的樂器資訊本卡是零。(b) 策展 `why` 把〈Taarif Karoon Kya Uski〉與〈Deewana Hua Badal〉說成「至今仍是 Rafi–Asha 對唱的標準曲目」——**〈Taarif Karoon Kya Uski〉是 Rafi 的獨唱**，不是對唱，見曲目表。\n**作詞者要點名**：本片作詞是 S. H. Bihari，與同批 Nayyar 另兩張的 Majrooh Sultanpuri／Sahir Ludhianvi 都不同，值得寫。\n**備用切角**：喀什米爾外景遇雨停擺 21 天、放晴後 25 天不雨一口氣拍完。"
+  "notes": "**互斥條款（第 58 條）**：(1)「換掉原定作曲者」這條全批只判給本卡——**而且被換掉的正是同批的 Shankar Jaikishan**，這個對照只有本卡能寫，那三張不得提。(2)「錄音年早於發行年」判給本卡（1963 年錄、1964 年出）。(3)「歌被剪掉但留在碟上」判給本卡（同批《Naya Daur》有一首『既不在片裡也不在碟上』的曲子，形狀不同，兩張可各寫各的，但不要用同一句型）。(4)「O. P. Nayyar 從未與 Lata Mangeshkar 合作」已判給同批《C.I.D.》，**本卡不得寫**。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 稱「整張碟把喀什米爾的 santoor 與 rabab 音色接進他一貫的西式節奏組」——**查無來源，不得寫任何樂器**。可查證的樂器資訊本卡是零。(b) 策展 `why` 把〈Taarif Karoon Kya Uski〉與〈Deewana Hua Badal〉說成「至今仍是 Rafi–Asha 對唱的標準曲目」——**〈Taarif Karoon Kya Uski〉是 Rafi 的獨唱**，不是對唱，見曲目表。 **作詞者要點名**：本片作詞是 S. H. Bihari，與同批 Nayyar 另兩張的 Majrooh Sultanpuri／Sahir Ludhianvi 都不同，值得寫。 **備用切角**：喀什米爾外景遇雨停擺 21 天、放晴後 25 天不雨一口氣拍完。"
  },
  {
   "key": "desc2:Madan Mohan|Mera Saaya",
@@ -764,7 +764,7 @@
    "year": 1966,
    "note": "1966 三方一致：英文維基記電影 1966-06-10 上映；MusicBrainz release-group first-release-date 1966（其下 1966 年印度 Official 一筆）；Discogs 原盤 Angel 3AEX 5092 亦記 1966。無爭議。"
   },
-  "notes": "**曲名兩種寫法（第 92 條）**：卡層與坊間常用的〈Tu Jahan Jahan Chalega〉，與英文維基曲目表、Discogs 原盤標籤上的〈Mera Saaya Saath〉／〈Mera Saaya Sath Hoga〉**是同一首歌**（歌詞第一句是 Tu jahan jahan chalega）。研究層不替來源裁決；**建議行文採曲目表的〈Mera Saaya Saath〉**，或直接寫「同名主題曲」避開。\n**互斥條款（第 58 條）**：(1)「合刊 LP、一面一部片」這個形態已判給同批《Bandini》，**本卡不得寫成形態通則**；本卡的獨有角度是**同一首主題曲的兩個版本、同一個拉格**。(2)「作曲者的 ghazal 專長」判給本卡（全批只有 Madan Mohan 這一張）。(3)「後世翻唱／改寫」判給本卡（〈What Jhumka?〉）。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Tu Jahan Jahan Chalega〉是他與 Lata Mangeshkar 合作中最常被引用的一首」——**查無來源的最高級說法，不得寫**。(b) 策展 `why` 說「他是把 ghazal 的旋律結構寫進商業電影歌而不簡化它的那個人」——維基能支持的只到「他特別因為替電影寫的 ghazal 被記住」這個層次，**不得升級成獨一無二的斷言**。另注意：**本卡六首歌的曲目表上沒有任何一首被標為 ghazal**，行文若要提 ghazal，只能寫成作曲者的整體風格，不能寫成這張碟的曲式。\n**備用切角**：西塔琴是他編曲的常見元素、在他多部片裡由 Raees Khan 演奏（**注意：來源沒說這張碟上有西塔琴**，不得寫成本碟的樂器）。"
+  "notes": "**曲名兩種寫法（第 92 條）**：卡層與坊間常用的〈Tu Jahan Jahan Chalega〉，與英文維基曲目表、Discogs 原盤標籤上的〈Mera Saaya Saath〉／〈Mera Saaya Sath Hoga〉**是同一首歌**（歌詞第一句是 Tu jahan jahan chalega）。研究層不替來源裁決；**建議行文採曲目表的〈Mera Saaya Saath〉**，或直接寫「同名主題曲」避開。 **互斥條款（第 58 條）**：(1)「合刊 LP、一面一部片」這個形態已判給同批《Bandini》，**本卡不得寫成形態通則**；本卡的獨有角度是**同一首主題曲的兩個版本、同一個拉格**。(2)「作曲者的 ghazal 專長」判給本卡（全批只有 Madan Mohan 這一張）。(3)「後世翻唱／改寫」判給本卡（〈What Jhumka?〉）。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 寫「〈Tu Jahan Jahan Chalega〉是他與 Lata Mangeshkar 合作中最常被引用的一首」——**查無來源的最高級說法，不得寫**。(b) 策展 `why` 說「他是把 ghazal 的旋律結構寫進商業電影歌而不簡化它的那個人」——維基能支持的只到「他特別因為替電影寫的 ghazal 被記住」這個層次，**不得升級成獨一無二的斷言**。另注意：**本卡六首歌的曲目表上沒有任何一首被標為 ghazal**，行文若要提 ghazal，只能寫成作曲者的整體風格，不能寫成這張碟的曲式。 **備用切角**：西塔琴是他編曲的常見元素、在他多部片裡由 Raees Khan 演奏（**注意：來源沒說這張碟上有西塔琴**，不得寫成本碟的樂器）。"
  },
  {
   "key": "desc2:Roshan|Barsaat Ki Raat",
@@ -823,7 +823,7 @@
    "year": 1960,
    "note": "1960 三方一致：英文維基記電影 1960-12-09 上映、原聲帶資訊欄記 1960；MusicBrainz release-group first-release-date 1960（其下 1960 年印度 Official 一筆）。Discogs 上目前查得到的最早實體是 1967 年的 Angel EP（TAE 1344），沒有 1960 年的條目，行文不得正面斷言唱片發行年。"
   },
-  "notes": "**盤名（第 8／91 條）**：MusicBrainz 的 1960 年印度 release 標題存的是天城體，release-group 標題才是拉丁《Barsaat Ki Raat》。卡片依第 6 條採拉丁寫法，兩種寫法在下游做標題比對時都要試。\n**互斥條款（第 58 條）**：(1)「qawwali」這條線全批**只判給本卡**——同批《Amar Akbar Anthony》也有一首 qawwali，那張改寫三種信仰／三種曲式的結構，**不得把 qawwali 當敘事主軸**。(2)「向巴基斯坦原作者取得同意卻沒有掛名」是本卡最強的獨有材料，優先用。(3)「1960 年銷量第二、僅次於《Mughal-e-Azam》」——這句提到同批另一張卡的碟名，**行文可以寫「僅次於同年那張蒙兀兒史詩」之類的迴避寫法，或乾脆只寫『該年銷量第二』**，避免兩張卡互相指涉（第 33 條）。(4) Binaca Geetmala 年度榜已判給同批《Sangam》，**本卡不得提 Binaca**。\n**推翻策展層兩處（第 59 條）**：(a) 策展 `why` 說〈Na To Caravan Ki Talash Hai〉「長達十二分鐘」——曲目表是 **11 分 48 秒**，依第 112 條不得四捨五入成十二分鐘。(b) 策展 `why` 說「Roshan 本人出身 Lucknow 的音樂家庭、學過 esraj，是 filmi 作曲者中少數真正受過 Hindustani 訓練的」——**本卡查不到來源，不得寫**。\n**備用切角**：〈Zindagi Bhar Nahi Bhoolegi〉在碟上有兩個版本（Rafi 獨唱 4:05 與 Rafi 加 Lata Mangeshkar 的 3:18）。"
+  "notes": "**盤名（第 8／91 條）**：MusicBrainz 的 1960 年印度 release 標題存的是天城體，release-group 標題才是拉丁《Barsaat Ki Raat》。卡片依第 6 條採拉丁寫法，兩種寫法在下游做標題比對時都要試。 **互斥條款（第 58 條）**：(1)「qawwali」這條線全批**只判給本卡**——同批《Amar Akbar Anthony》也有一首 qawwali，那張改寫三種信仰／三種曲式的結構，**不得把 qawwali 當敘事主軸**。(2)「向巴基斯坦原作者取得同意卻沒有掛名」是本卡最強的獨有材料，優先用。(3)「1960 年銷量第二、僅次於《Mughal-e-Azam》」——這句提到同批另一張卡的碟名，**行文可以寫「僅次於同年那張蒙兀兒史詩」之類的迴避寫法，或乾脆只寫『該年銷量第二』**，避免兩張卡互相指涉（第 33 條）。(4) Binaca Geetmala 年度榜已判給同批《Sangam》，**本卡不得提 Binaca**。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 說〈Na To Caravan Ki Talash Hai〉「長達十二分鐘」——曲目表是 **11 分 48 秒**，依第 112 條不得四捨五入成十二分鐘。(b) 策展 `why` 說「Roshan 本人出身 Lucknow 的音樂家庭、學過 esraj，是 filmi 作曲者中少數真正受過 Hindustani 訓練的」——**本卡查不到來源，不得寫**。 **備用切角**：〈Zindagi Bhar Nahi Bhoolegi〉在碟上有兩個版本（Rafi 獨唱 4:05 與 Rafi 加 Lata Mangeshkar 的 3:18）。"
  },
  {
   "key": "desc2:Salil Chowdhury|Madhumati",
@@ -882,6 +882,360 @@
    "year": 1958,
    "note": "**這是本組年份與所釘 RG 脫鉤的第一張**。1958 有兩個獨立來源：英文維基記電影 1958-09-12 上映，同頁並記「1958 年銷量最高的印地語電影原聲帶」與 Salil Chowdhury 該年的 Filmfare 得獎。**MusicBrainz 的 first-release-date 是 1976**，而該 RG 底下三筆 release 只有 1976 年印度盤帶日期，另兩筆無日期——依第 95 條，rgMbid 是身分鍵、不是年份來源，1976 是再版年。Discogs 上最早可指認的實體是 Angel 的七吋 EP TAE 1006（無年份），LP 形態要到 1976 年的 HMV ECLP 5490。**維持卡單 1958，行文不得正面斷言唱片發行年**，可用「1958 年 9 月 12 日上映」與「該年的 Filmfare」當錨點。"
   },
-  "notes": "**互斥條款（第 58 條）**：(1)「跨國民謠素材」（阿薩姆茶園＋西利西亞）是本卡最強的獨有材料，全批只此一張。(2)「Filmfare 播放歌手獎首度設立、Lata 第一個拿到」判給本卡。(3)「先曲後詞」判給本卡。(4) Shailendra 作詞這條在本批出現於《Guide》《Bandini》《Shree 420》《Mera Naam Joker》與本卡，**行文不得把 Shailendra 當敘事主軸**，只當一條 credit。\n**推翻策展層三處（第 59 條）**：(a) 策展 `why` 說〈Aaja Re Pardesi〉替 Lata「拿下她第一座 Filmfare **最佳女歌手**獎」——**不精確**：該獎當年男女不分、只有一座「播放歌手獎」，而且那是這個獎項本身第一次頒發。(b) 策展 `why` 說〈Suhana Safar〉的合唱鋪陳「直接來自他的合唱團經驗」——查無來源，不得寫。(c) 策展 `why` 稱他「在加爾各答左翼文化運動（IPTA）出身，寫過合唱曲與管弦樂，把賦格式的對位與孟加拉民謠一起帶進印地語電影」——**本卡查不到來源，全部不得寫**；可查證的跨界證據是阿薩姆茶園民謠與西利西亞民謠這兩項具體素材。\n**備用切角**：〈Chadh Gayo Papi Bichhua〉5 分 54 秒，在原盤 EP 上獨佔一整面。"
+  "notes": "**互斥條款（第 58 條）**：(1)「跨國民謠素材」（阿薩姆茶園＋西利西亞）是本卡最強的獨有材料，全批只此一張。(2)「Filmfare 播放歌手獎首度設立、Lata 第一個拿到」判給本卡。(3)「先曲後詞」判給本卡。(4) Shailendra 作詞這條在本批出現於《Guide》《Bandini》《Shree 420》《Mera Naam Joker》與本卡，**行文不得把 Shailendra 當敘事主軸**，只當一條 credit。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 說〈Aaja Re Pardesi〉替 Lata「拿下她第一座 Filmfare **最佳女歌手**獎」——**不精確**：該獎當年男女不分、只有一座「播放歌手獎」，而且那是這個獎項本身第一次頒發。(b) 策展 `why` 說〈Suhana Safar〉的合唱鋪陳「直接來自他的合唱團經驗」——查無來源，不得寫。(c) 策展 `why` 稱他「在加爾各答左翼文化運動（IPTA）出身，寫過合唱曲與管弦樂，把賦格式的對位與孟加拉民謠一起帶進印地語電影」——**本卡查不到來源，全部不得寫**；可查證的跨界證據是阿薩姆茶園民謠與西利西亞民謠這兩項具體素材。 **備用切角**：〈Chadh Gayo Papi Bichhua〉5 分 54 秒，在原盤 EP 上獨佔一整面。"
+ },
+ {
+  "key": "desc2:Hemant Kumar|Sahib Bibi Aur Ghulam",
+  "artist": "Hemant Kumar",
+  "album": "Sahib Bibi Aur Ghulam",
+  "facts": [
+   {
+    "f": "《Sahib Bibi Aur Ghulam》是 Abrar Alvi 執導、Guru Dutt 製片並主演的印地語片，1962 年 7 月 29 日上映，另主演 Meena Kumari、Rehman 與 Waheeda Rehman，片長 152 分鐘，改編自 1956 年的孟加拉語電影《Saheb Bibi Golam》；歌曲段落由 Guru Dutt 親自執導。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "音樂由 Hemant Kumar 作曲、Shakeel Badayuni 作詞，人聲只有 Geeta Dutt 與 Asha Bhosle 兩位女歌手；原聲帶共八軌、全長 31 分 11 秒，其中一軌是 3 分 03 秒的同名器樂主題。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "曲目與時長：〈Meri Baat Rahi Meri Man Men〉4:10、〈Meri Jaan O Meri Jaan〉3:38、〈Sakhiya Aaj Mujhe Neend Nahin〉5:46、〈Bhanwara Bada Nadan〉4:29 由 Asha Bhosle 唱；〈Chale Aao Chale Aao〉1:43、〈Na Jao Saiyan Chhuda Ke Baiyan〉4:07、〈Piya Aiso Jiya Men Samaya Gao〉4:15 由 Geeta Dutt 唱。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "〈Bhanwara Bada Nadan〉那場戲拍攝時 Guru Dutt 不在現場，由 Abrar Alvi 代拍；Dutt 回來看了十遍仍不滿意，加入喜劇元素重拍。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "電影上映後，Dutt 把片尾的〈Sahil Ki Taraf〉刪掉——那場戲是女主角把頭靠在男主角腿上，被觀眾批評；Hemant Kumar 後來把這首曲子改用成 1966 年電影《Anupama》裡的〈Ya Dil Ki Suno Duniyawalo〉。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "這位作曲者的本名是 Hemanta Mukhopadhyay（1920 年生於貝拿勒斯，1989 年卒於加爾各答），在專業上同時用 Hemanta Mukherjee 與 Hemant Kumar 兩個名字；他既是音樂總監也是播放歌手，主要以孟加拉語和印地語演唱，本身的樂器是簧風琴。",
+    "src": "https://en.wikipedia.org/wiki/Hemant_Kumar"
+   },
+   {
+    "f": "Discogs 上 1962 年印度 Angel Records 的原盤（目錄號 3AE 1024）是一張 10 吋 LP，收七軌，封套標「From The Original Soundtrack」，作詞掛 Shakeel Badayuni、作曲掛 Hemant Kumar；〈Sakhiya Aaj Mujhe Neend Nahi〉一軌另掛《Sahib Bibi Aur Ghulam》合唱團。",
+    "src": "https://www.discogs.com/release/11856965"
+   },
+   {
+    "f": "這部片拿下四項 Filmfare 獎（含最佳影片、最佳導演、最佳女主角）與印地語最佳劇情片的國家電影獎，並代表印度參加第 13 屆柏林影展、獲金熊獎提名但未得獎；1963 年 6 月 26 日劇組抵達東柏林，隔晚放映時在場的二十五人對這部片反應冷淡。",
+    "src": "https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 83fe54a9-095e-4596-b1ba-10397e2132f8《Sahib Bibi Aur Ghulam》記 first-release-date 1962、primary-type Album、secondary-type Soundtrack，artist-credit 為「Hemant Kumar & Shakeel Badayuni」；其下 1962 那筆 release 既無國別也無 status。",
+    "src": "https://musicbrainz.org/release-group/83fe54a9-095e-4596-b1ba-10397e2132f8"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡只有兩個聲音在唱歌，其餘那一軌沒有人聲",
+   "被剪掉的那首歌四年後出現在另一部電影裡"
+  ],
+  "sound": "八軌 31 分鐘，人聲只有 Geeta Dutt 與 Asha Bhosle 兩位；最短的一首 1 分 43 秒、最長的 5 分 46 秒，另有一段 3 分 03 秒的同名器樂主題。",
+  "keyTracks": [
+   "Na Jao Saiyan Chhuda Ke Baiyan",
+   "Piya Aiso Jiya Men Samaya Gao",
+   "Bhanwara Bada Nadan"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1962,
+   "note": "1962 三方一致：英文維基記電影 1962-07-29 上映；MusicBrainz release-group first-release-date 1962（該筆 release 無國別無 status，同 RG 另一筆無日期）；Discogs 原盤 Angel 3AE 1024 亦記 1962。無爭議。"
+  },
+  "notes": "**同一人兩個 MB 實體（第 27／49 條）**：作曲者的本名是 Hemanta Mukhopadhyay，專業上兼用 Hemanta Mukherjee 與 Hemant Kumar；MusicBrainz 為此建了兩個獨立實體。卡片只掛 Hemant Kumar 這一個鍵，**行文可以寫他兩個名字並用這件事**（有維基來源），但不要暗示池中另有一個掛名。 **互斥條款（第 58 條）**：(1)「Guru Dutt」這條線已判給同批《C.I.D.》（他在那部是製片）；**本卡寫的是他親自執導歌曲段落、以及〈Bhanwara Bada Nadan〉重拍那件事**，兩張的角度不同、都可用，但本卡不得把 Guru Dutt 當人物介紹寫。(2)「柏林影展」在同批《Do Ankhen Barah Haath》也會出現（那張得的是銀熊），**本卡只寫『放映時二十五個人反應冷淡』這個具體場面**，不寫影展地位。(3)「被剪掉的歌後來被再利用」判給本卡。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 說「Hemant Kumar 的配樂因此整張壓在低音區」——**查無來源，不得寫**；可查證的音色資訊本卡是零。(b) 策展 `why` 說〈Na Jao Saiyan〉與〈Piya Aiso Jiya Mein〉是 Geeta Dutt「生涯後期最被推崇的兩次錄音」——**查無來源的最高級說法，不得寫**。(c) 策展 `why` 稱他「同時是作曲者與男高音歌手」——維基寫的是「音樂總監兼播放歌手」，**沒有『男高音』這個聲部說法**，且**這張碟上完全沒有他的演唱**（只有 Geeta Dutt 與 Asha Bhosle）。 **備用切角**：碟上有一軌純器樂的同名主題（3:03），在本批 21 張裡是唯一一軌不含人聲的曲目。"
+ },
+ {
+  "key": "desc2:C. Ramchandra|Navrang",
+  "artist": "C. Ramchandra",
+  "album": "Navrang",
+  "facts": [
+   {
+    "f": "《Navrang》是 V. Shantaram 共同編劇並執導、由 Rajkamal Kalamandir 出品的 1959 年印地語片，1959 年 9 月 18 日上映，主演 Mahipal 與 Sandhya，故事出自 G. D. Madgulkar；音樂由 C. Ramchandra 作曲，全部歌詞出自 Bharat Vyas。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "播放歌手 Mahendra Kapoor 就是以這張碟上的〈Aadha Hai Chandramaa, Raat Aadhi〉出道演唱的。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "曲目表逐首標了拉格：〈Aa Dil Se Dil Mila Le〉用 Khamaj、〈Aadha Hai Chandramaa〉用 Malkauns（在南印度的卡納提克體系裡叫 Hindolam）、〈Are Ja Re Hat Natkhat〉用 Pahadi、〈Shyamal Shyamal Baran〉用 Manj Khamaj。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "這張碟上唱歌的不只歌手：作曲者 C. Ramchandra 本人唱了〈Kaari Kaari Kaari Andhiyari Thi Raat〉（與 Asha Bhosle 對唱）與〈Dono Ka Mel Na Milta Hai〉，作詞者 Bharat Vyas 本人則唱了〈Kaviraja Kavita Ke Mat Ab〉。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "十二首歌裡 Asha Bhosle 參與八首、Mahendra Kapoor 參與四首，其餘由 Manna Dey、C. Ramchandra 與 Bharat Vyas 分攤。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "作曲者的本名是 Ramchandra Narhar Chitalkar（1918–1982），作曲時多用 C. Ramchandra，也用過 Annasaheb、Ram Chitalkar 與 Shyamoo 等名字；當播放歌手時他只用姓氏 Chitalkar，並與 Lata Mangeshkar 錄過〈Kitna Haseen Hai Mausam〉〈Shola Jo Bhadke〉等對唱。",
+    "src": "https://en.wikipedia.org/wiki/C._Ramchandra"
+   },
+   {
+    "f": "Discogs 上 1959 年印度 Angel Records 的原盤 LP（目錄號 3AEX 5002）收七軌，A 面三首、B 面四首，封套標「Soundtrack from Hindustani movie - Navrang (1959)」，作詞掛 Bharat Vyas、作曲掛 C. Ramchandra，製片與導演掛 V. Shantaram。",
+    "src": "https://www.discogs.com/release/3324907"
+   },
+   {
+    "f": "這部片在 Filmfare 拿下 1959 年的最佳剪輯（Chintaman Borkar）與 1960 年的最佳音效（A. K. Parmar），V. Shantaram 另獲最佳導演提名。",
+    "src": "https://en.wikipedia.org/wiki/Navrang"
+   },
+   {
+    "f": "MusicBrainz 的 release-group c8aef4b0-a224-4f6d-a2a3-6fa6baec404f《Navrang》記 first-release-date 1959、primary-type Album、secondary-type Soundtrack，artist-credit 為「C. Ramachandra & Bharat Vyas」（MB 實體名多一個 a）；其下 1959 那筆印度 release 未登錄 status。",
+    "src": "https://musicbrainz.org/release-group/c8aef4b0-a224-4f6d-a2a3-6fa6baec404f"
+   }
+  ],
+  "hookCandidates": [
+   "寫曲的人唱了兩首，寫詞的人唱了一首",
+   "有位歌手的第一次錄音，就在這張碟上"
+  ],
+  "sound": "十二首歌以 Asha Bhosle 為主聲部，Mahendra Kapoor 分掉四首；曲目表上標出的拉格是 Khamaj、Malkauns、Pahadi 與 Manj Khamaj。",
+  "keyTracks": [
+   "Aadha Hai Chandramaa, Raat Aadhi",
+   "Shyamal Shyamal Baran",
+   "Are Ja Re Hat Natkhat"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1959,
+   "note": "1959 三方一致：英文維基記電影 1959-09-18 上映；MusicBrainz release-group first-release-date 1959；Discogs 原盤 Angel 3AEX 5002 亦記 1959。無爭議。"
+  },
+  "notes": "**掛名拼法（第 92 條）**：MusicBrainz 的藝人實體名是「C. Ramachandra」（多一個 a），卡片與 Discogs 原盤、Apple 目錄用的是「C. Ramchandra」。**下游一律採卡片寫法**，行文不要出現 MB 那個變體；他另有本名 Ramchandra Narhar Chitalkar 與藝名 Chitalkar，那是可寫的材料，不是拼法問題。 **來源內部不一致（第 92 條）**：〈Tu Chhupi Hai Kahan〉的拉格，英文維基**同一頁自相矛盾**——內文寫 Chandrakauns、曲目表寫 Malkauns；同一首的演唱者，維基寫 Asha Bhosle 與 Manna Dey、Discogs 原盤標籤寫 Asha Bhosle 與 Mahendra Kapoor。**這首歌的拉格與演唱者一律不得寫進行文**，facts 已刻意避開。 **互斥條款（第 58 條）**：(1)「作曲者本人也唱歌」在同批《Guide》已判給體制層次的說法，**本卡寫的是不同的事——作曲者與作詞者兩人都唱了**，這是本卡獨有，可用。(2)「歌手出道」判給本卡。(3) V. Shantaram 這個名字在本卡與同批《Do Ankhen Barah Haath》都出現，**導演生平判給那張**，本卡只當一條 credit。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 稱他是「1940 年代末最早把搖擺樂節奏與拉丁打擊帶進印地語電影的作曲者之一」——**查無來源，不得寫**。(b) 策展 `why` 說這部片「以九種顏色為結構」、〈Shyamal Shyamal Baran〉「整首建立在 raga 的框架上」——前者查無來源不得寫；後者能查證的只到「曲目表標它用 Manj Khamaj」這個層次。 **備用切角**：Filmfare 的兩座獎都不是音樂類（剪輯與音效）。"
+ },
+ {
+  "key": "desc2:Vasant Desai|Do Ankhen Barah Haath",
+  "artist": "Vasant Desai",
+  "album": "Do Ankhen Barah Haath",
+  "facts": [
+   {
+    "f": "《Do Ankhen Barah Haath》是 V. Shantaram 自製自導自演的 1957 年印地語片，由 Rajkamal Kalamandir 出品，片長 143 分鐘，音樂由 Vasant Desai 作曲、Bharat Vyas 作詞。",
+    "src": "https://en.wikipedia.org/wiki/Do_Ankhen_Barah_Haath"
+   },
+   {
+    "f": "這部片拿下第 8 屆柏林影展的銀熊特別評審獎（1958）與第 16 屆金球獎的 Samuel Goldwyn 國際影片獎（1959），並在第 5 屆國家電影獎拿下最佳劇情片與印地語最佳劇情片兩項。",
+    "src": "https://en.wikipedia.org/wiki/Do_Ankhen_Barah_Haath"
+   },
+   {
+    "f": "原聲帶只有五首歌，其中四首是 Lata Mangeshkar 的獨唱：〈Ae Malik Tere Bande Hum〉（拉格 Bhairav）、〈Main Gaun, Tu Chup Ho Ja〉、〈Saiyan Jhuthon Ka Bada〉、〈Tak Tak Dhum Dhum〉；第五首〈Umad Ghumadkar Aayi Re Ghata〉是她與 Manna Dey 的對唱，用拉格 Megh Malhar。",
+    "src": "https://en.wikipedia.org/wiki/Do_Ankhen_Barah_Haath"
+   },
+   {
+    "f": "Discogs 上印度 Angel／Odeon 的七吋 45 轉 EP（目錄號 TAE 1024）把〈Ae Malik Tere Bande Hum〉收了兩次：A 面第一首是 Lata Mangeshkar 的版本，B 面第二首標為〈Ae Malik Tere Bande Hum - Prarthana〉（祈禱），由《Do Aankhen Bara Haath》合唱團演唱；製片方掛 Rajkamal Kalamandir。",
+    "src": "https://www.discogs.com/release/9417851"
+   },
+   {
+    "f": "1959 年義大利的 La Voce Del Padrone 發過一張七吋 45 轉（目錄號 7 MQ 1252），A 面〈Main Jagoon Tu Soja〉、B 面〈Aye Malik Tere Bande Hum〉，唱片註記寫明出自電影《Due occhi, dodici mani》，編曲與指揮掛 Vasant Desai、詞掛 Bharat Vyas。",
+    "src": "https://www.discogs.com/release/12646989"
+   },
+   {
+    "f": "電影的靈感來自一次真實的「開放監獄」實驗——位於 Aundh 土邦、薩塔拉附近的 Swatantrapur，由編劇 G. D. Madgulkar 講給 V. Shantaram 聽。",
+    "src": "https://en.wikipedia.org/wiki/Do_Ankhen_Barah_Haath"
+   },
+   {
+    "f": "實驗的推動者 Maurice Frydman 拒絕在片尾掛名，甚至告訴 V. Shantaram：只要他的名字出現在任何字幕上，就要告他。",
+    "src": "https://en.wikipedia.org/wiki/Do_Ankhen_Barah_Haath"
+   },
+   {
+    "f": "作曲者 Vasant Desai（1912–1975）從 Prabhat Film Company 開始拍有聲片時就在那裡，早年在《Dharmatma》《Sant Dnyaneshwar》等 Prabhat 電影裡演過戲、唱過歌、有時也寫曲，1940 年代起才專做作曲；V. Shantaram 離開 Prabhat 自組製片廠後，他替 Shantaram 的多數電影配樂。",
+    "src": "https://en.wikipedia.org/wiki/Vasant_Desai"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 27a72be4-4b48-433e-acaa-03ce4fcf8b66《Do Ankhen Barah Haath》記 first-release-date 1957、primary-type Album、secondary-type Soundtrack，artist-credit 為「Vasant Desai & Bharat Vyas」；其下四筆 release 含一筆 2013-11-01 的印度再版。",
+    "src": "https://musicbrainz.org/release-group/27a72be4-4b48-433e-acaa-03ce4fcf8b66"
+   }
+  ],
+  "hookCandidates": [
+   "同一首歌在原盤上出現兩次：一次是獨唱，一次是合唱團的祈禱版",
+   "1959 年義大利也發了一張，唱片上印的片名是《Due occhi, dodici mani》"
+  ],
+  "sound": "只有五首歌，四首是同一位女聲的獨唱，第五首才加進男聲對唱；兩首標了拉格——開場那首用 Bhairav，對唱那首用雨季的 Megh Malhar。",
+  "keyTracks": [
+   "Ae Malik Tere Bande Hum",
+   "Umad Ghumadkar Aayi Re Ghata",
+   "Main Gaun, Tu Chup Ho Ja"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1957,
+   "note": "1957 兩方一致：英文維基記電影 1957 年上映（該頁只給年、無確切日期）；MusicBrainz release-group first-release-date 1957。**卡層記錄的 Apple 印度目錄 releaseDate 2013（collectionId 1344841014）是數位上架年**，MB 同一個 RG 底下也有一筆 2013-11-01 的印度再版——依第 77 條只當訊號，不採。Discogs 上的 Angel／Odeon EP（TAE 1024）沒有年份，義大利 La Voce Del Padrone 那張記 1959。行文不得正面斷言唱片發行年，可用「第 8 屆柏林影展（1958）」與「第 16 屆金球獎（1959）」兩個確切錨點。"
+  },
+  "notes": "**互斥條款（第 58 條）**：(1)「柏林影展」在同批《Sahib Bibi Aur Ghulam》也出現（那張是入圍未得獎、放映反應冷淡），**得獎這一面判給本卡**。(2)「歐洲發行的實體唱片」判給本卡（義大利 7 MQ 1252，唱片上印義大利片名）；同批《Shree 420》的海外壓片線是蘇聯，兩張不衝突。(3)「V. Shantaram」的生平與製片廠背景判給本卡，同批《Navrang》只當 credit。 **推翻策展層兩處（第 59 條）**：(a) 策展 `why` 說〈Ae Malik Tere Bande Hum〉「後來被印度各地的學校當成晨禱歌傳唱數十年」——**查無來源，不得寫**。可查證的相近事實是**原盤 EP 上這首歌另收了一個標為 Prarthana（祈禱）的合唱團版本**，這才是可用的材料。(b) 策展 `why` 說 Vasant Desai「與 Hindustani 聲樂界關係密切，後來替 Kishori Amonkar 與 Vasantrao Deshpande 製作過非電影錄音」——**查無來源，不得寫**；可查證的是他在 Prabhat 出身、早年演過戲也唱過歌。(c) 策展 `why` 說這是「印度第一部拿下柏林影展銀熊與金球獎的電影」——來源只寫它拿下這兩個獎，**沒有『第一部』**，不得加。 **備用切角**：Maurice Frydman 拒絕掛名並揚言告人；電影靈感來自 Aundh 土邦的開放監獄實驗。"
+ },
+ {
+  "key": "desc2:Laxmikant-Pyarelal|Amar Akbar Anthony",
+  "artist": "Laxmikant-Pyarelal",
+  "album": "Amar Akbar Anthony",
+  "facts": [
+   {
+    "f": "《Amar Akbar Anthony》是 Manmohan Desai 的印地語片，1977 年 5 月 27 日上映；原聲帶由 Laxmikant-Pyarelal 作曲、Anand Bakshi 作詞，英文維基的資訊欄記唱片 1977 年 1 月 7 日發行、製作人是 Manmohan Desai——**唱片比電影早了四個多月**。",
+    "src": "https://en.wikipedia.org/wiki/Amar_Akbar_Anthony"
+   },
+   {
+    "f": "人聲分派是按角色走的：Kishore Kumar 替 Amitabh Bachchan 唱，Mukesh 與 Mahendra Kapoor 替 Vinod Khanna 唱，Mohammed Rafi 與 Shailendra Singh 替 Rishi Kapoor 唱，Lata Mangeshkar 替 Parveen Babi、Neetu Singh 與 Shabana Azmi 唱。",
+    "src": "https://en.wikipedia.org/wiki/Amar_Akbar_Anthony"
+   },
+   {
+    "f": "〈Humko Tumse Ho Gaya Hai Pyar〉（7 分 33 秒）把 Mukesh、Kishore Kumar、Mohammed Rafi 與 Lata Mangeshkar 四個人放進同一首歌——那是他們四人職業生涯裡唯一一次同台。",
+    "src": "https://en.wikipedia.org/wiki/Amar_Akbar_Anthony"
+   },
+   {
+    "f": "〈Parda Hai Parda〉是一首帶喜劇性的 filmi qawwali，長 7 分 59 秒、用拉格 Darbari，由 Mohammed Rafi 演唱，其中替 Amitabh Bachchan 唱的那一句出自未掛名的 Amit Kumar（Kishore Kumar 的兒子）。",
+    "src": "https://en.wikipedia.org/wiki/Amar_Akbar_Anthony"
+   },
+   {
+    "f": "七首的曲目與時長：〈My Name Is Anthony Gonsalves〉5:32（Kishore Kumar、Amitabh Bachchan 與一個未掛名的女聲）、〈Amar Akbar Anthony〉5:52、〈Humko Tumse Ho Gaya Hai Pyar〉7:33、〈Taiyabali Pyar Ka Dushman〉4:40、〈Parda Hai Parda〉7:59、〈Shirdi Wale Sai Baba〉5:52（拉格 Bilawal）、〈Ye Sach Hai Koi Kahani Nahin〉2:22。",
+    "src": "https://en.wikipedia.org/wiki/Amar_Akbar_Anthony"
+   },
+   {
+    "f": "Discogs 上 1977 年印度 Polydor 的原盤 LP（目錄號 2392 127）收六軌，A 面三首、B 面三首，封面外層有一片可翻開的摺頁，翻開才是內側的對開封套；唱片版權標記為 1977 年 Polydor Of India Ltd.。",
+    "src": "https://www.discogs.com/release/4862204"
+   },
+   {
+    "f": "同一張唱片的中央標籤上印著：「所有藝人由 The Gramophone Company of India Limited 提供，Amitabh Bachchan 除外」——他是碟上唯一不屬於那家公司的演出者。",
+    "src": "https://www.discogs.com/release/4862204"
+   },
+   {
+    "f": "同年 Polydor 另發了一張《Amar Akbar Anthony - Dialogues》（目錄號 2392 134），整張是電影對白，A 面五段、B 面六段，配音掛 Amitabh Bachchan、Vinod Khanna、Rishi Kapoor、Parveen Babi、Nirupa Roy 等人。",
+    "src": "https://www.discogs.com/release/10002510"
+   },
+   {
+    "f": "MusicBrainz 的 release-group df193c0c-0881-3a62-a1a8-028c36bdbbae《Amar Akbar Anthony》記 first-release-date 1977、primary-type Album、secondary-type Soundtrack，artist-credit 為「Laxmikant Pyarelal & Anand Bakshi」；其下 1977 年印度那筆 release 的標題帶逗號作《Amar, Akbar, Anthony》，1981 年那筆才是無逗號的寫法。",
+    "src": "https://musicbrainz.org/release-group/df193c0c-0881-3a62-a1a8-028c36bdbbae"
+   }
+  ],
+  "hookCandidates": [
+   "四位歌手一輩子只在這一首歌裡同台過",
+   "唱片比電影早四個多月上市"
+  ],
+  "sound": "七首歌長度多在五分半以上，最長的兩首都超過七分半——一首是四人輪唱的情歌，一首是拉格 Darbari 的 qawwali；另有一首用拉格 Bilawal。",
+  "keyTracks": [
+   "Humko Tumse Ho Gaya Hai Pyar",
+   "Parda Hai Parda",
+   "My Name Is Anthony Gonsalves"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1977,
+   "note": "1977 三方一致：英文維基記電影 1977-05-27 上映、原聲帶資訊欄記 1977-01-07 發行；MusicBrainz release-group first-release-date 1977；Discogs 原盤 Polydor 2392 127 記 1977、版權標記 ℗1977。**卡層記錄的 Apple 印度目錄 releaseDate 1981（collectionId 1442238953）是 MB 上第二筆 release 的年份**，依第 77 條只當訊號、不採。"
+  },
+  "notes": "**盤名逗號（第 50／92 條）**：MusicBrainz 的 1977 年印度 release 與 Discogs 原盤標籤都作《Amar, Akbar, Anthony》（帶逗號），release-group 標題、1981 年那筆 release 與 Apple 目錄則是無逗號的《Amar Akbar Anthony》。卡片採無逗號寫法，**行文請跟著卡片走**，兩種寫法在下游比對時都要試。 **掛名拼法（第 92 條）**：MB 藝人實體名作「Laxmikant Pyarelal」（無連字號），卡片與 Apple、Discogs 用連字號。行文採卡片寫法。 **互斥條款（第 58 條）**：(1)「qawwali」的敘事主軸已判給同批《Barsaat Ki Raat》，**本卡只寫〈Parda Hai Parda〉的長度、拉格與那句未掛名的代唱**，不得把 qawwali 當主題。(2)「唱片早於電影上市」判給本卡。(3)「四位歌手唯一一次同台」判給本卡。 **推翻策展層兩處，並擋掉一處無來源的唱片史說法（第 59／80 條）**：(a) 策展 `why` 說〈My Name Is Anthony Gonsalves〉「是帶銅管與電貝斯的 funk 段落」、〈Shirdi Wale Sai Baba〉「則是 bhajan」——**兩句都查無來源，不得寫任何樂器或曲式標籤**；可查證的只有〈Shirdi Wale Sai Baba〉用拉格 Bilawal。(b) 策展 `why` 說三首曲式「擺在同一張碟上是理解 1970 年代 Bollywood 為什麼會長出 funk 的最短路徑」——查無來源，不得寫。(c) **英文維基另寫「Polydor 發行的這張黑膠是第一張粉紅色膠的 LP」，但該句自己標了 citation needed**——依第 80 條（來源自承沒有出處等同查無），**不得寫**，facts 刻意不收。 **備用切角**：同年另發一張純對白 LP（Polydor 2392 134）。"
+ },
+ {
+  "key": "desc2:Kalyanji-Anandji|Qurbani",
+  "artist": "Kalyanji-Anandji",
+  "album": "Qurbani",
+  "facts": [
+   {
+    "f": "《Qurbani》是 Feroz Khan 自製自導自演的印地語動作片，1980 年 6 月 20 日上映，另主演 Vinod Khanna 與 Zeenat Aman，片長 160 分鐘；音樂掛兩組人——Kalyanji-Anandji 與 Biddu。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "英文維基的原聲帶資訊欄記：1979 年發行、1979 年錄音、全長 25 分 17 秒，語言為印地語與烏爾都語，曲風標為 Bollywood 原聲帶、disco 與 filmi qawwali，製作人是 Biddu 與 Kalyanji-Anandji。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "Biddu 替《Qurbani》錄的第一首歌是一首 Boney M. 作品的印地語版；Nazia Hassan 與 Zoheb Hassan 聽了拒唱，說不想唱翻版、堅持要一首原創曲。Biddu 半推半就地問他們想要什麼，〈Aap Jaisa Koi〉就是這樣來的。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "Feroz Khan 是在英國一場朋友辦的派對上認識 Biddu 與 Nazia Hassan 的，Nazia 的父母堅持要他聽她唱歌，他聽了非常欣賞；Biddu 原本不願替印度電影配樂，Feroz Khan 一再遊說、還搬出他住在印度的母親與兩人同為班加羅爾出身的鄉情。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "包括原本的音樂總監 Kalyanji-Anandji 在內，許多作曲者都反對 Feroz Khan 找 Biddu 來寫其中一首歌，理由是把他當外人；幾番討論後 Feroz Khan 仍堅持己見。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "曲目、作曲與演唱：〈Qurbani Qurbani〉4:46（Kalyanji-Anandji 曲、Faruk Kaiser 詞，Kishore Kumar、Anwar 與 Aziz Nazan 唱）、〈Aap Jaisa Koi〉4:06（Biddu 曲、Indeevar 詞，Nazia Hassan 唱）、〈Laila Ho Laila〉4:31（Amit Kumar、Kanchan 與合唱團）、〈Kya Dekhte Ho〉4:37（Mohammed Rafi 與 Asha Bhosle）、〈Hum Tumhain Chahte Hain〉7:17。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "Discogs 上印度 Polydor 的原盤 LP（目錄號 2392 195、立體聲）收六軌，比英文維基的曲目多一首——B 面最後的〈Baat Ban Jaye〉由 Biddu 本人演唱；唱片註記寫明 **A2 與 B3 兩軌是在倫敦錄的**，版權標記為 1979 年 Polydor Of India Ltd.。",
+    "src": "https://www.discogs.com/release/1609076"
+   },
+   {
+    "f": "這是 1980 年印度銷量最高的原聲帶專輯，也是 1980 年代寶萊塢原聲帶銷量第六高的一張；銷量突破五十萬張時 Faruk Kaiser 獲頒金唱片，唱片並在七個月內轉白金，在當時是印度唱片業的紀錄。",
+    "src": "https://en.wikipedia.org/wiki/Qurbani_(film)"
+   },
+   {
+    "f": "MusicBrainz 的 release-group fa13c875-cd67-33ed-98d3-7d440de7c93a《Qurbani》記 first-release-date 1979、primary-type Album、secondary-type Soundtrack，artist-credit 只有「Kalyanji Anandji」一人；其下三筆 release 為 1979 年印度、2003 年印度與一筆無日期。",
+    "src": "https://musicbrainz.org/release-group/fa13c875-cd67-33ed-98d3-7d440de7c93a"
+   }
+  ],
+  "hookCandidates": [
+   "兩個歌手拒唱那首翻版，於是有了這張碟最紅的一首",
+   "六軌裡有兩軌是在倫敦錄的"
+  ],
+  "sound": "五到六首歌、二十五分鐘出頭，一端是掛在原作曲組名下的 qawwali，另一端是在倫敦錄的兩軌；碟上同時標著 disco 與 filmi qawwali 兩種曲風。",
+  "keyTracks": [
+   "Aap Jaisa Koi",
+   "Qurbani Qurbani",
+   "Laila Ho Laila"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1980,
+   "note": "**卡單 1980 與唱片來源不符，維持卡單值但行文不得斷言發行年（第 18／46／121 條）。** 唱片側的三個來源一致指向 **1979**：MusicBrainz release-group first-release-date 1979（其下 1979 年印度 Official 一筆）、英文維基原聲帶資訊欄記 1979 年發行與錄音、Discogs 原盤 Polydor 2392 195 記 1979 且版權標記 ℗1979。電影側則是 1980-06-20 上映。卡單依本批「年份取電影問世年」的原則（裁定第 121 條）填 1980，該裁定已把本卡列為五張脫鉤卡之一。可用的錨點是「1979 年錄音」與「1980 年 6 月 20 日上映」。"
+  },
+  "notes": "**互斥條款（第 58 條）**：(1)「Biddu／Nazia Hassan／倫敦錄音」是本卡獨有，全批只此一張。(2)「銷量紀錄」判給本卡（金唱片、七個月轉白金）；同批已有《Sangam》寫 1960 年代銷量第一、《Aradhana》寫第三、《Madhumati》寫 1958 年第一、《Barsaat Ki Raat》寫 1960 年第二——**銷量這個角度在本批已經用了五次，行文請把重量放在 Biddu 那條線，銷量最多一句帶過。**(3) 池中已有同組合的《Don》(1978)，本卡是第 2 張。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 說〈Aap Jaisa Koi〉的銷量「把『印度也能出 disco 單曲』這件事變成事實，也直接催生了 1982 年的《Disco Dancer》」——**查無來源，不得寫**；可查證的是這張碟本身的銷量紀錄與維基所說的「掀起南亞的 disco 熱潮並持續到 1980 年代中期」。(b) 策展 `why` 說〈Laila O Laila〉「保留了兄弟倆一貫的電子風琴與弦樂編制」——**查無來源，不得寫任何樂器**。(c) 策展 `why` 說 Nazia Hassan 當時十五歲——**本卡查不到年齡來源，不得寫**。 **曲名與曲數（第 92 條）**：〈Laila Ho Laila〉在維基作 Ho、Discogs 原盤標籤作〈Laila O Laila〉；曲數也不一致（維基 5 首、Discogs 原盤 6 首）。行文若要提曲數請照 Discogs 原盤的六軌，或乾脆不提。 **備用切角**：Kalyanji-Anandji 自己也在反對名單裡，卻仍與 Biddu 同掛一張碟。"
+ },
+ {
+  "key": "desc2:Bappi Lahiri|Chalte Chalte",
+  "artist": "Bappi Lahiri",
+  "album": "Chalte Chalte",
+  "facts": [
+   {
+    "f": "《Chalte Chalte》是 Sunder Dar 執導、Bhisham Kohli 製片的印地語音樂驚悚片，1976 年 10 月 22 日上映，片長 117 分鐘，主演 Vishal Anand（即製片 Bhisham Kohli 的藝名）與 Simi Garewal。",
+    "src": "https://en.wikipedia.org/wiki/Chalte_Chalte_(1976_film)"
+   },
+   {
+    "f": "原聲帶收七首歌，全部由 Bappi Lahiri 作曲、Amit Khanna 作詞；同名主題曲由 Kishore Kumar 演唱，進了 1976 年的 Binaca Geetmala 年度榜。",
+    "src": "https://en.wikipedia.org/wiki/Chalte_Chalte_(1976_film)"
+   },
+   {
+    "f": "七首的曲目、演唱者與時長：〈Chalte Chalte〉5:18（Kishore Kumar）、〈Chalte Chalte (Sad)〉2:24（Kishore Kumar）、〈Dur Dur Tum Rahe〉5:24（Lata Mangeshkar）、〈Jaana Kahan Hai〉6:38（Bappi Lahiri 與 Sulakshana Pandit）、〈Pyar Mein Kabhi Kabhi〉5:20（Shailendra Singh 與 Lata Mangeshkar）、〈Sapnon Ka Raja〉5:57（Shailendra Singh 與 Sulakshana Pandit）、〈Chalte Chalte (Instrumental)〉2:52。",
+    "src": "https://en.wikipedia.org/wiki/Chalte_Chalte_(1976_film)"
+   },
+   {
+    "f": "作曲者 Bappi Lahiri 自己也唱了〈Jaana Kahan Hai〉，並掛名那首 2 分 52 秒的器樂版〈Chalte Chalte〉。",
+    "src": "https://en.wikipedia.org/wiki/Chalte_Chalte_(1976_film)"
+   },
+   {
+    "f": "同名主題曲的一句歌詞成了 2006 年電影《Kabhi Alvida Naa Kehna》的片名來源。",
+    "src": "https://en.wikipedia.org/wiki/Chalte_Chalte_(1976_film)"
+   },
+   {
+    "f": "Discogs 上印度 Polydor 的原盤 LP（目錄號 2392 056）收六軌，把同名曲拆成 A 面第一首的 Part 1 與 B 面最後一首的 Part 2，兩段都由 Kishore Kumar 演唱；封套印「A Bhisham Kohli Film」，製片公司掛 Kailashpati Pictures，作詞掛 Amit Khanna、音樂總監掛 Bappi Lahiri。",
+    "src": "https://www.discogs.com/release/3091647"
+   },
+   {
+    "f": "這張碟另有馬來西亞 India Record 的授權盤（目錄號 LP 9127）。",
+    "src": "https://www.discogs.com/release/10599204"
+   },
+   {
+    "f": "印度 Polydor 同時發過兩種較小的形態：目錄號 2221 128 與 2221 168 兩張。",
+    "src": "https://www.discogs.com/release/6298828"
+   },
+   {
+    "f": "MusicBrainz 的 release-group ef62692e-f816-4827-a792-701d29d4e10f《Chalte Chalte》記 primary-type Album、secondary-type Soundtrack，artist-credit 為「Bappi Lahiri & Amit Khanna」，其下兩筆印度 release；但 first-release-date 記的是 **1974**。",
+    "src": "https://musicbrainz.org/release-group/ef62692e-f816-4827-a792-701d29d4e10f"
+   }
+  ],
+  "hookCandidates": [
+   "主題曲在原盤上被切成兩半，一半放在 A 面開頭、一半放在 B 面結尾",
+   "寫曲的人自己唱了其中一首，還掛了器樂版"
+  ],
+  "sound": "七首歌裡五首都在五分鐘以上，只有兩首短的——一首是同名主題曲的悲傷版 2 分 24 秒，一首是它的器樂版 2 分 52 秒；主題曲在原盤上被拆成兩段，分置 A、B 兩面的頭尾。",
+  "keyTracks": [
+   "Chalte Chalte",
+   "Jaana Kahan Hai",
+   "Dur Dur Tum Rahe"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1976,
+   "note": "**卡單 1976 與唱片來源不符，維持卡單值但行文不得斷言發行年（第 18／46／121 條）。** 唱片側兩個獨立來源都指向 **1974**：MusicBrainz release-group first-release-date 1974，Discogs 上印度 Polydor 的原盤 LP（2392 056）與另外三筆較小形態（2221 128、2221 168、2067 226）以及馬來西亞授權盤（LP 9127）**全部記 1974**。電影側則是英文維基記 1976-10-22 上映。卡單依本批「年份取電影問世年」的原則（裁定第 121 條）填 1976，該裁定已把本卡列為五張脫鉤卡之一。**這是本組落差最一致的一張——唱片側五筆全指 1974，沒有任何一筆支持 1976**，下游若要重新裁定，這是最該重看的一筆。可用的錨點是「1976 年 10 月 22 日上映」。"
+  },
+  "notes": "**盤名極常見（§1 高風險）**：《Chalte Chalte》另有 2003 年的同名印度電影與多首同名歌曲；卡層另記 Apple 的印度目錄把這張碟掛在 **Various Artists** 名下（collectionId 1443470268），與 MB 的 artist-credit「Bappi Lahiri & Amit Khanna」不一致——這是裁定第 71 條「兩邊掛的不是同一個對象」的形狀，下游藝人閘會擋掉、須人工放行。 **互斥條款（第 58 條）**：(1)「同名曲被拆成兩段分置兩面」判給本卡。(2)「作曲者自己唱」在本批已用於《Guide》（體制層次）與《Navrang》（作曲者與作詞者都唱），**本卡只寫〈Jaana Kahan Hai〉這一首的事實，不得寫成通則**。(3) Binaca Geetmala 年度榜已判給同批《Sangam》，**本卡不得提 Binaca**（facts 保留該條僅供辨識）。 **推翻策展層三處（第 59 條）**：(a) 策展 `why` 寫「〈Dur Se Koi Aaye〉則已經帶著後來《Disco Dancer》那套鼓機與弦樂的雛形」——**這首歌不在曲目表上**（碟上是〈Dur Dur Tum Rahe〉），而且鼓機與弦樂的說法查無來源，**整句不得寫**。(b) 策展 `why` 說他「出身孟加拉的音樂家庭（母親是 Bansuri 與古典聲樂出身）」——本卡查不到來源，不得寫。(c) 策展 `why` 說這是「他第一張真正賣開的原聲帶」、他是「1970 年代末把合成器、電貝斯與四四拍舞曲節奏全面帶進 Bollywood 的人」——**兩句皆查無來源，不得寫**；本卡完全沒有可查證的樂器或音色資訊。 **備用切角**：印度 Polydor 同時出了大小四種形態，另有馬來西亞授權盤。"
  }
 ]
