@@ -4,51 +4,126 @@
   "artist": "The Willard",
   "album": "Good Evening Wonderful Fiend",
   "facts": [
-   {"f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0001-L，release 1447375）記發行日 1985 年 9 月 25 日，製造掛 Captain Records 與 JICC出版局；錄於 Sound Sky Studio 與 Box Studio，附帶與 B5 尺寸 14 頁小冊（歌詞與現場照片），封套印著「Listen!! In The Nasty Night Only」。", "src": "https://www.discogs.com/release/1447375"},
-   {"f": "同一條目的 credit：JUN（Jun Obiga）主唱兼作詞、YOU 吉他、KLAN 貝斯、KYOYA（Kyoya Sugiki）鼓；作曲與 sound producer 掛 The Willard 整團，co-producer 是 Toshinao Tanaka，設計 Takashi Miyanaga、封套與小冊攝影 Yutaka Onaga。", "src": "https://www.discogs.com/release/1447375"},
-   {"f": "原盤 12 首：A1〈Jolly Rogers〉、A2〈Borecide Boys〉、A3〈Good Evening Wonderful Fiend〉、A4〈Nightmare〉、A5〈Vanguard〉、A6〈Too Much Love Like Hell〉、B1〈The End〉、B2〈Born In The Far East End〉、B3〈Lay To Rest〉、B4〈Vain For You (Congratulation)〉、B5〈Bondage Dream〉、B6〈C'mon Whips〉；2006 年 Solid 版標的時長裡〈Nightmare〉6:12 最長，其餘多在三到四分鐘。", "src": "https://www.discogs.com/release/3676763"},
-   {"f": "CDJournal 的報導寫：這張 1985 年的首張專輯由「從雜誌《宝島》誕生的傳說性獨立廠牌」Captain Records 發行，以獨立盤而言賣出約兩萬張是破格的數字，「一舉擴大了 indies 的可能性、讓場景活性化」；發行 40 週年的黑膠復刻於 2025 年 7 月 23 日推出，由主唱 JUN 監修最新重製並撰寫新的解說，7 月 12 日在澀谷 Spotify O-WEST 辦紀念公演。", "src": "https://www.cdjournal.com/main/news/the-willard/118674"},
-   {"f": "BARKS 的報導記 2025 年 7 月 23 日的 40 週年黑膠為限定生產、33 1/3 轉、A 式封套、附歌詞與帶，定價 4950 日圓（含稅）；並重述當年「約兩萬張」的銷售數字對獨立發行來說是破例的成績。", "src": "https://barks.jp/news/548557/"},
-   {"f": "Discogs 的 2025 年 Solid Records 黑膠（SOLID-1037，release 35770207）記發行日 2025 年 7 月 23 日、註記「40th anniversary reissue」，條碼 4526180714095。", "src": "https://www.discogs.com/release/35770207"},
-   {"f": "Discogs master 447168 共 7 個版本：1985 年 Captain 黑膠、1989 年 Captain CD（CAP-1008-CD）、2006 年 Solid Records 重製 CD（CDSOL-1122）、2011 年 Solid（CDSOL-1420）、2019 年 Ultra-Vybe（UVPR-20009）、2024 年 Ultra-Vybe 重製（UVPR-60016）、2025 年 Solid 黑膠——沒有任何一筆標 Unofficial Release。", "src": "https://www.discogs.com/master/447168"},
-   {"f": "Discogs 的 1989 年 Captain CD 條目（CAP-1008-CD，release 5772559）比原盤多出第 13 首〈Search And Destroy〉。", "src": "https://www.discogs.com/release/5772559"},
-   {"f": "Tower 的 Solid Records CDSOL-1122 商品頁把樂團的聲音形容為「帶著 pop 疾走感的 hard punk」，這版 CD＋DVD 追加 1986 年 EP《WILL》的四首（Search and Destroy、3 Years、D-Day or Lost Day、Slow Down），DVD 收〈PUNX Sing A Gloria〉影片與 1985 年日本青年館的〈3 Years〉現場，重製由原成員 KLAN 負責，小冊含樂團史與 2006 年訪談。", "src": "https://tower.jp/item/1880930"},
-   {"f": "MusicBrainz 的 release-group 掛名 The Willard、primary-type Album、無 secondary type，first-release-date 空白，轄下只有一筆日本 Official 發行（無日期）。", "src": "https://musicbrainz.org/release-group/6174915b-79cd-463b-8ab1-5c15b6e62793"}
+   {
+    "f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0001-L，release 1447375）記發行日 1985 年 9 月 25 日，製造掛 Captain Records 與 JICC出版局；錄於 Sound Sky Studio 與 Box Studio，附帶與 B5 尺寸 14 頁小冊（歌詞與現場照片），封套印著「Listen!! In The Nasty Night Only」。",
+    "src": "https://www.discogs.com/release/1447375"
+   },
+   {
+    "f": "同一條目的 credit：JUN（Jun Obiga）主唱兼作詞、YOU 吉他、KLAN 貝斯、KYOYA（Kyoya Sugiki）鼓；作曲與 sound producer 掛 The Willard 整團，co-producer 是 Toshinao Tanaka，設計 Takashi Miyanaga、封套與小冊攝影 Yutaka Onaga。",
+    "src": "https://www.discogs.com/release/1447375"
+   },
+   {
+    "f": "原盤 12 首：A1〈Jolly Rogers〉、A2〈Borecide Boys〉、A3〈Good Evening Wonderful Fiend〉、A4〈Nightmare〉、A5〈Vanguard〉、A6〈Too Much Love Like Hell〉、B1〈The End〉、B2〈Born In The Far East End〉、B3〈Lay To Rest〉、B4〈Vain For You (Congratulation)〉、B5〈Bondage Dream〉、B6〈C'mon Whips〉；2006 年 Solid 版標的時長裡〈Nightmare〉6:12 最長，其餘多在三到四分鐘。",
+    "src": "https://www.discogs.com/release/3676763"
+   },
+   {
+    "f": "CDJournal 的報導寫：這張 1985 年的首張專輯由「從雜誌《宝島》誕生的傳說性獨立廠牌」Captain Records 發行，以獨立盤而言賣出約兩萬張是破格的數字，「一舉擴大了 indies 的可能性、讓場景活性化」；發行 40 週年的黑膠復刻於 2025 年 7 月 23 日推出，由主唱 JUN 監修最新重製並撰寫新的解說，7 月 12 日在澀谷 Spotify O-WEST 辦紀念公演。",
+    "src": "https://www.cdjournal.com/main/news/the-willard/118674"
+   },
+   {
+    "f": "BARKS 的報導記 2025 年 7 月 23 日的 40 週年黑膠為限定生產、33 1/3 轉、A 式封套、附歌詞與帶，定價 4950 日圓（含稅）；並重述當年「約兩萬張」的銷售數字對獨立發行來說是破例的成績。",
+    "src": "https://barks.jp/news/548557/"
+   },
+   {
+    "f": "Discogs 的 2025 年 Solid Records 黑膠（SOLID-1037，release 35770207）記發行日 2025 年 7 月 23 日、註記「40th anniversary reissue」，條碼 4526180714095。",
+    "src": "https://www.discogs.com/release/35770207"
+   },
+   {
+    "f": "Discogs master 447168 共 7 個版本：1985 年 Captain 黑膠、1989 年 Captain CD（CAP-1008-CD）、2006 年 Solid Records 重製 CD（CDSOL-1122）、2011 年 Solid（CDSOL-1420）、2019 年 Ultra-Vybe（UVPR-20009）、2024 年 Ultra-Vybe 重製（UVPR-60016）、2025 年 Solid 黑膠——沒有任何一筆標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/447168"
+   },
+   {
+    "f": "Discogs 的 1989 年 Captain CD 條目（CAP-1008-CD，release 5772559）比原盤多出第 13 首〈Search And Destroy〉。",
+    "src": "https://www.discogs.com/release/5772559"
+   },
+   {
+    "f": "Tower 的 Solid Records CDSOL-1122 商品頁把樂團的聲音形容為「帶著 pop 疾走感的 hard punk」，這版 CD＋DVD 追加 1986 年 EP《WILL》的四首（Search and Destroy、3 Years、D-Day or Lost Day、Slow Down），DVD 收〈PUNX Sing A Gloria〉影片與 1985 年日本青年館的〈3 Years〉現場，重製由原成員 KLAN 負責，小冊含樂團史與 2006 年訪談。",
+    "src": "https://tower.jp/item/1880930"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 掛名 The Willard、primary-type Album、無 secondary type，first-release-date 空白，轄下只有一筆日本 Official 發行（無日期）。",
+    "src": "https://musicbrainz.org/release-group/6174915b-79cd-463b-8ab1-5c15b6e62793"
+   }
   ],
   "hookCandidates": [
    "一家從雜誌生出來的廠牌，第一號唱片就據稱賣了兩萬張",
    "封套上印著一句指示：只准在惡夜裡聽"
   ],
   "sound": "Tower 文案的說法是「帶著 pop 疾走感的 hard punk」，Discogs 標 Punk；十二首多在三到四分鐘，四人編制只有主唱、吉他、貝斯、鼓，沒有客席樂手的 credit。",
-  "keyTracks": ["Good Evening Wonderful Fiend", "Jolly Rogers", "Born In The Far East End", "Vanguard"],
+  "keyTracks": [
+   "Good Evening Wonderful Fiend",
+   "Jolly Rogers",
+   "Born In The Far East End",
+   "Vanguard"
+  ],
   "status": "full",
-  "yearVerified": {"year": 1985, "note": "1985 維持卡單原值：Discogs 原盤記 1985-09-25，CDJournal／BARKS 皆寫 1985 年，MusicBrainz 無日期；日文維基寫 1985-10-05 但整條無引註（第 80 條）。行文寫「一九八五年」即可，不要指定月份。"},
-  "notes": "本卡分到的獨有錨點：**Captain Records 的成立線判給本卡**——「從雜誌《宝島》誕生的廠牌」「目錄第一號 CAP-0001-L」「製造掛 JICC出版局」三點都在本卡 facts；同批其餘 Captain 卡（吉野大作、パパイヤ・パラノイア、Lip Cream、メトロファルス、JUN SKY WALKER(S)）**禁用「Captain 怎麼成立／宝島」這條線**，只能寫「東京的 Captain Records」；遠藤ミチロウ卡走的是「宝島的卡帶書」那條，與本卡不重疊。**兩萬張**：CDJournal 與 BARKS 都寫「約 2 萬枚」，日文維基另記這是 DOLL 1989 年的「公称」——行文寫「據稱約兩萬張」並掛出處，不寫成確數。日文維基整條無引註（第 80 條）：新宿 8000 人免費演唱會、NHK 報導、發行延期三次、16 頁小冊等**全部不供料、不得寫**；小冊頁數採 Discogs 的 14 頁。**不要用「日本搖滾史上的名盤」「劃時代」這類報導套語**（CDJournal 原文有，但那是宣傳文案）。人名：JUN 在 Discogs 作 Jun Obiga，Toshinao Tanaka 查無漢字寫法，行文用羅馬字。掛名：卡片「The Willard」，日文來源作 THE WILLARD，`queryAlias` ウィラード。備用切角：1989 年 CD 多了一首 Stooges 的〈Search And Destroy〉（Discogs 有 fact，但「那是 Stooges 的歌」facts 沒寫，不得補）。**第 61／110 條**：`sound` 只有 Tower 那句與 Discogs 的 Punk 標籤有來源，「沒有客席」是從 credit 讀的。"
+  "yearVerified": {
+   "year": 1985,
+   "note": "1985 維持卡單原值：Discogs 原盤記 1985-09-25，CDJournal／BARKS 皆寫 1985 年，MusicBrainz 無日期；日文維基寫 1985-10-05 但整條無引註（第 80 條）。行文寫「一九八五年」即可，不要指定月份。"
+  },
+  "notes": "本卡分到的獨有錨點：**Captain Records 的「第一號」這一端判給本卡**——「從雜誌《宝島》誕生的廠牌」（CDJournal 一句帶過即可）、「目錄第一號 CAP-0001-L」、「製造掛 JICC出版局」、「據稱兩萬張」都在本卡 facts；**「Captain 的創立資金來自遠藤ミチロウ《ベトナム伝説》的收益」那一端判給遠藤卡**，本卡不寫、也不得反推「所以第一號才是我們」。同批其餘 Captain 卡（吉野大作、パパイヤ・パラノイア、Lip Cream、メトロファルス、JUN SKY WALKER(S)）**禁用「Captain 怎麼成立／宝島」這條線**，只能寫「東京的 Captain Records」。**兩萬張**：CDJournal 與 BARKS 都寫「約 2 萬枚」，日文維基另記這是 DOLL 1989 年的「公称」——行文寫「據稱約兩萬張」並掛出處，不寫成確數。日文維基整條無引註（第 80 條）：新宿 8000 人免費演唱會、NHK 報導、發行延期三次、16 頁小冊等**全部不供料、不得寫**；小冊頁數採 Discogs 的 14 頁。**不要用「日本搖滾史上的名盤」「劃時代」這類報導套語**（CDJournal 原文有，但那是宣傳文案）。人名：JUN 在 Discogs 作 Jun Obiga，Toshinao Tanaka 查無漢字寫法，行文用羅馬字。掛名：卡片「The Willard」，日文來源作 THE WILLARD，`queryAlias` ウィラード。備用切角：1989 年 CD 多了一首 Stooges 的〈Search And Destroy〉（Discogs 有 fact，但「那是 Stooges 的歌」facts 沒寫，不得補）。**第 61／110 條**：`sound` 只有 Tower 那句與 Discogs 的 Punk 標籤有來源，「沒有客席」是從 credit 讀的。"
  },
  {
   "key": "desc4:吉野大作＆プロスティテュート|後ろ姿の素敵な僕たち",
   "artist": "吉野大作＆プロスティテュート",
   "album": "後ろ姿の素敵な僕たち",
   "facts": [
-   {"f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0005-L，release 1541353）：黑膠 LP，錄音與混音都在 Studio Free 2nd，工程師 Yoshinori Takayanagi；Discogs 的藝人實體名是拉丁的「Daisuck & Prostitute」。", "src": "https://www.discogs.com/release/1541353"},
-   {"f": "同一條目的 credit：吉野大作主唱、電吉他、木吉他並包辦全部詞曲；東条A機電吉他、トッキン薩克斯風、高橋ヨーカイ貝斯、横山コージ鼓。", "src": "https://www.discogs.com/release/1541353"},
-   {"f": "原盤八首：A1〈Fozzdelic Farm〉、A2〈十二番目のジャガー〉、A3〈後ろ姿の素敵な僕たち〉、A4〈心の中の楕円形〉、B1〈エグゾポタミーの悪霊たち〉、B2〈冷たい十字路〉、B3〈Missing〉、B4〈皮膚と骨の隙き間に〉。", "src": "https://www.discogs.com/release/1541353"},
-   {"f": "宝島社官網至今仍留著這張唱片的商品頁：掛名「吉野大作＆プロスティテュート」，發售日 1985 年 11 月 1 日，定價 2508 日圓（含稅），品號 CAP-0005-L，狀態為售罄。", "src": "https://tkj.jp/book/?cd=30000511&path=&s1="},
-   {"f": "CDJournal 的資料頁記 1991 年 7 月 21 日由アライズ以 CRCR-6020 出 CD（已廢盤），介紹文寫這是「先前由 Captain Records 發行的第二張專輯的 CD 化」，「以怪異的薩克斯風為主的迷幻聲響，但比第一張更容易入耳」，「吉野大作咬字清楚的歌唱留下強烈印象」。", "src": "https://artist.cdjournal.com/d/-/1291090603"},
-   {"f": "Discogs master 1197271 只有 2 個版本：1985 年 Captain 黑膠與 1991 年 Nippon Crown 的 CD（CRCR-6020），兩筆都沒有標 Unofficial Release；沒有任何黑膠復刻。", "src": "https://www.discogs.com/master/1197271"},
-   {"f": "Tower 的《死ぬまで踊りつづけて》商品頁寫：吉野大作 1973 年以《吉野大作の少年時代》出道、在橫濱帶領民謠搖滾樂團，1980 年組成プロスティテュート，成員東条A機（吉他）、時岡篤（薩克斯風）、高橋ヨーカイ（貝斯，出身裸のラリーズ）、横山孝二（鼓），文案形容為「噪音而怪異的吉他與薩克斯風」。", "src": "https://tower.jp/item/2723196/"},
-   {"f": "Discogs 記義大利 Spittle Made In Japan 於 2025 年 10 月 10 日把 1981 年的首張《死ぬまで踊りつづけて》以《Dance Till You Die》為題重製上黑膠（SPITTLEJ509），文案稱之為「1980 年代初日本最不妥協的 post-punk 樂團之一」。", "src": "https://www.discogs.com/release/35381080"},
-   {"f": "Disk Union 的藝人商品列表另記 2025 年 Super Fuji Discs 出了《LIVE 1980-85》現場合輯 CD，與 1985 年 Captain 黑膠原盤並列在同一頁。", "src": "https://diskunion.net/latin/ct/list/0/72207333"},
-   {"f": "MusicBrainz 的 release-group 記首度發行 1985 年、artist-credit「吉野大作＆プロスティテュート」（全形＆）、primary-type Album，轄下只有 1985 年日本 Official 一筆；藝人實體名則是拉丁的 Daisuck & Prostitute。", "src": "https://musicbrainz.org/release-group/7a4acdf2-cd0a-481d-8f99-7c00d8563bd5"}
+   {
+    "f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0005-L，release 1541353）：黑膠 LP，錄音與混音都在 Studio Free 2nd，工程師 Yoshinori Takayanagi；Discogs 的藝人實體名是拉丁的「Daisuck & Prostitute」。",
+    "src": "https://www.discogs.com/release/1541353"
+   },
+   {
+    "f": "同一條目的 credit：吉野大作主唱、電吉他、木吉他並包辦全部詞曲；東条A機電吉他、トッキン薩克斯風、高橋ヨーカイ貝斯、横山コージ鼓。",
+    "src": "https://www.discogs.com/release/1541353"
+   },
+   {
+    "f": "原盤八首：A1〈Fozzdelic Farm〉、A2〈十二番目のジャガー〉、A3〈後ろ姿の素敵な僕たち〉、A4〈心の中の楕円形〉、B1〈エグゾポタミーの悪霊たち〉、B2〈冷たい十字路〉、B3〈Missing〉、B4〈皮膚と骨の隙き間に〉。",
+    "src": "https://www.discogs.com/release/1541353"
+   },
+   {
+    "f": "宝島社官網至今仍留著這張唱片的商品頁：掛名「吉野大作＆プロスティテュート」，發售日 1985 年 11 月 1 日，定價 2508 日圓（含稅），品號 CAP-0005-L，狀態為售罄。",
+    "src": "https://tkj.jp/book/?cd=30000511&path=&s1="
+   },
+   {
+    "f": "CDJournal 的資料頁記 1991 年 7 月 21 日由アライズ以 CRCR-6020 出 CD（已廢盤），介紹文寫這是「先前由 Captain Records 發行的第二張專輯的 CD 化」，「以怪異的薩克斯風為主的迷幻聲響，但比第一張更容易入耳」，「吉野大作咬字清楚的歌唱留下強烈印象」。",
+    "src": "https://artist.cdjournal.com/d/-/1291090603"
+   },
+   {
+    "f": "Discogs master 1197271 只有 2 個版本：1985 年 Captain 黑膠與 1991 年 Nippon Crown 的 CD（CRCR-6020），兩筆都沒有標 Unofficial Release；沒有任何黑膠復刻。",
+    "src": "https://www.discogs.com/master/1197271"
+   },
+   {
+    "f": "Tower 的《死ぬまで踊りつづけて》商品頁寫：吉野大作 1973 年以《吉野大作の少年時代》出道、在橫濱帶領民謠搖滾樂團，1980 年組成プロスティテュート，成員東条A機（吉他）、時岡篤（薩克斯風）、高橋ヨーカイ（貝斯，出身裸のラリーズ）、横山孝二（鼓），文案形容為「噪音而怪異的吉他與薩克斯風」。",
+    "src": "https://tower.jp/item/2723196/"
+   },
+   {
+    "f": "Discogs 記義大利 Spittle Made In Japan 於 2025 年 10 月 10 日把 1981 年的首張《死ぬまで踊りつづけて》以《Dance Till You Die》為題重製上黑膠（SPITTLEJ509），文案稱之為「1980 年代初日本最不妥協的 post-punk 樂團之一」。",
+    "src": "https://www.discogs.com/release/35381080"
+   },
+   {
+    "f": "Disk Union 的藝人商品列表另記 2025 年 Super Fuji Discs 出了《LIVE 1980-85》現場合輯 CD，與 1985 年 Captain 黑膠原盤並列在同一頁。",
+    "src": "https://diskunion.net/latin/ct/list/0/72207333"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行 1985 年、artist-credit「吉野大作＆プロスティテュート」（全形＆）、primary-type Album，轄下只有 1985 年日本 Official 一筆；藝人實體名則是拉丁的 Daisuck & Prostitute。",
+    "src": "https://musicbrainz.org/release-group/7a4acdf2-cd0a-481d-8f99-7c00d8563bd5"
+   }
   ],
   "hookCandidates": [
    "出版社的官網到現在還掛著這張唱片的商品頁：一九八五年十一月一日，兩千五百零八圓，售罄",
    "薩克斯風在間奏裡亂跑，主唱卻把每個字都咬得清清楚楚"
   ],
   "sound": "CDJournal 的形容是「以怪異的薩克斯風為主的迷幻聲響」、比首張更易入耳、主唱咬字清楚；Discogs 標 Alternative Rock／Avantgarde。編制是雙吉他、薩克斯風、貝斯、鼓的五人。",
-  "keyTracks": ["Fozzdelic Farm", "後ろ姿の素敵な僕たち", "冷たい十字路"],
+  "keyTracks": [
+   "Fozzdelic Farm",
+   "後ろ姿の素敵な僕たち",
+   "冷たい十字路"
+  ],
   "status": "full",
-  "yearVerified": {"year": 1985, "note": "1985 維持卡單原值：Discogs 原盤、MusicBrainz、宝島社官網（1985-11-01）三方一致，可寫「一九八五年十一月」。"},
+  "yearVerified": {
+   "year": 1985,
+   "note": "1985 維持卡單原值：Discogs 原盤、MusicBrainz、宝島社官網（1985-11-01）三方一致，可寫「一九八五年十一月」。"
+  },
   "notes": "本卡分到的獨有錨點：**宝島社官網仍留著的商品頁（日期、價格、售罄）**、Studio Free 2nd、薩克斯風主導、1991 年 Crown CD 之後再無復刻。互斥條款：Captain 成立史（宝島、JICC）判給 The Willard，本卡**只能寫「東京的 Captain Records」**，宝島社那條 fact 只用來講「出版社官網還掛著商品頁」這個現況，不得推成「Captain 是宝島的廠牌」。**成員名字兩套寫法**：本碟 Discogs credit 作トッキン／横山コージ，Tower 文案作時岡篤／横山孝二——行文以**本碟 credit** 為準（トッキン、横山コージ），Tower 的寫法只在這裡記；「高橋ヨーカイ出身裸のラリーズ」是 Tower 文案的說法，可寫但掛出處。**1981 年首張是 Japan Record 的盤，不是 Captain**，Spittle 2025 年復刻的是那張不是本碟——行文提到時要分清楚，不得寫成本碟被復刻。日文維基整條無引註（第 80 條）：1951 年群馬出生、河合塾講師、橫濱國大等**不供料**。掛名：卡片「吉野大作＆プロスティテュート」（全形＆，與 MB credit 一致）；CDJournal 作プロスティチュート、Discogs／MB 實體作 Daisuck & Prostitute，`queryAlias` Daisuck & Prostitute。**第 61／110 條**：`sound` 的聲音描述全出自 CDJournal，「五人編制」數自完整 credit（第 108 條可數）。"
  },
  {
@@ -56,23 +131,291 @@
   "artist": "パパイヤ・パラノイア",
   "album": "もはやこれまで",
   "facts": [
-   {"f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0010-L，release 4591856）：錄音與混音在 Star Ship Studio，製作與發售掛「JICC・キャプテンレコード」，版權掛キャプテンミュージック與ヤマハ音楽振興会，定價 2500 日圓，附帶與小冊；製作人 Toshinao Tanaka、工程師 Hideki Ishii。", "src": "https://www.discogs.com/release/4591856"},
-   {"f": "同一條目的 credit：石嶋由美子主唱、貝斯、全部作詞並畫插圖；Kinuko Maki 吉他與和聲、Harumi Enomoto 鍵盤與和聲、Chiaki Kishida 鼓與和聲；作曲與編曲掛パパイヤ・パラノイア整團。B1〈ダンスがスンダ〉另有製作人 Toshinao Tanaka 彈鍵盤與三位 S.E. 演出者，A6〈鬼の好物アニマルプリント〉由 Kishida 與石嶋各彈一部鋼琴。", "src": "https://www.discogs.com/release/4591856"},
-   {"f": "曲目 11 首（時長取自 1989 年 CD 版）：〈ゴーゴンズ〉4:05、〈夏が終わる〉5:51、〈極楽コレクション〉1:51、〈月のうさぎ〉4:45、〈貴婦人の散歩〉3:28、〈鬼の好物アニマルプリント〉2:22、〈ダンスがスンダ〉6:11、〈シュールアンダースタンド〉2:48、〈わがままな肉食〉5:19、〈あなたに会いたい〉3:12、〈もはやこれまで〉3:41。", "src": "https://www.discogs.com/release/7316480"},
-   {"f": "Discogs 的 1989 年 Captain CD（CAP-1012-CD，release 7316480）記發行日 1989 年 1 月 21 日，比原盤多出第 12 首〈リンス〉3:54。", "src": "https://www.discogs.com/release/7316480"},
-   {"f": "MusicBrainz 的 release-group 記首度發行 1985 年 12 月 21 日、掛名パパイヤ・パラノイア、primary-type Album，轄下兩筆皆日本 Official：1985-12-21 的原盤與 1989-01-21 的 CD。", "src": "https://musicbrainz.org/release-group/82f071e3-ab3d-44e5-a42b-449102db5ac6"},
-   {"f": "CDJournal 的報導（2010 年）把樂團寫成「以『和製パティ・スミス』石嶋由美子為中心的 girls punk 樂團」，「至今仍收到熱烈的 love call」；Solid Records 2010 年 6 月 16 日的《キャプテン・イヤーズ〜もはやこれまで／WAR3》（CDSOL-1355/56，2 CD 30 曲，2940 日圓）收錄《もはやこれまで》（1985）、《WAR WAR WAR》（1986）、單曲〈リンス〉、合輯《都に雨が降るごとく》（1985，巻上公一製作）與《子供たちのCity》（1987）的曲目，加 10 首初期 demo 與現場，小冊有石嶋自繪的插畫與解說。", "src": "https://www.cdjournal.com/main/news/papaya-paranoia/31445"},
-   {"f": "Disk Union 的新聞頁記同一套 2010 年 6 月 16 日的 2CD（CDSOL1355/56）涵蓋 1985 到 1987 年的 indies 時期錄音，附 10 首「初期デモ音源」與現場，先到者贈未發表影像 DVD-R。", "src": "https://diskunion.net/jp/ct/news/article/1/15754"},
-   {"f": "二手店 ticro 的 1985 年黑膠商品頁把這張碟形容為混合了 shout、fusion、實驗、放克、ska-punk 與 new wave 的「ミクスチャーサウンド」，是石嶋由美子領軍的 girls punk 樂團的紀錄，附小冊與帶。", "src": "https://ticro.com/products/p00004597"}
+   {
+    "f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0010-L，release 4591856）：錄音與混音在 Star Ship Studio，製作與發售掛「JICC・キャプテンレコード」，版權掛キャプテンミュージック與ヤマハ音楽振興会，定價 2500 日圓，附帶與小冊；製作人 Toshinao Tanaka、工程師 Hideki Ishii。",
+    "src": "https://www.discogs.com/release/4591856"
+   },
+   {
+    "f": "同一條目的 credit：石嶋由美子主唱、貝斯、全部作詞並畫插圖；Kinuko Maki 吉他與和聲、Harumi Enomoto 鍵盤與和聲、Chiaki Kishida 鼓與和聲；作曲與編曲掛パパイヤ・パラノイア整團。B1〈ダンスがスンダ〉另有製作人 Toshinao Tanaka 彈鍵盤與三位 S.E. 演出者，A6〈鬼の好物アニマルプリント〉由 Kishida 與石嶋各彈一部鋼琴。",
+    "src": "https://www.discogs.com/release/4591856"
+   },
+   {
+    "f": "曲目 11 首（時長取自 1989 年 CD 版）：〈ゴーゴンズ〉4:05、〈夏が終わる〉5:51、〈極楽コレクション〉1:51、〈月のうさぎ〉4:45、〈貴婦人の散歩〉3:28、〈鬼の好物アニマルプリント〉2:22、〈ダンスがスンダ〉6:11、〈シュールアンダースタンド〉2:48、〈わがままな肉食〉5:19、〈あなたに会いたい〉3:12、〈もはやこれまで〉3:41。",
+    "src": "https://www.discogs.com/release/7316480"
+   },
+   {
+    "f": "Discogs 的 1989 年 Captain CD（CAP-1012-CD，release 7316480）記發行日 1989 年 1 月 21 日，比原盤多出第 12 首〈リンス〉3:54。",
+    "src": "https://www.discogs.com/release/7316480"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行 1985 年 12 月 21 日、掛名パパイヤ・パラノイア、primary-type Album，轄下兩筆皆日本 Official：1985-12-21 的原盤與 1989-01-21 的 CD。",
+    "src": "https://musicbrainz.org/release-group/82f071e3-ab3d-44e5-a42b-449102db5ac6"
+   },
+   {
+    "f": "CDJournal 的報導（2010 年）把樂團寫成「以『和製パティ・スミス』石嶋由美子為中心的 girls punk 樂團」，「至今仍收到熱烈的 love call」；Solid Records 2010 年 6 月 16 日的《キャプテン・イヤーズ〜もはやこれまで／WAR3》（CDSOL-1355/56，2 CD 30 曲，2940 日圓）收錄《もはやこれまで》（1985）、《WAR WAR WAR》（1986）、單曲〈リンス〉、合輯《都に雨が降るごとく》（1985，巻上公一製作）與《子供たちのCity》（1987）的曲目，加 10 首初期 demo 與現場，小冊有石嶋自繪的插畫與解說。",
+    "src": "https://www.cdjournal.com/main/news/papaya-paranoia/31445"
+   },
+   {
+    "f": "Disk Union 的新聞頁記同一套 2010 年 6 月 16 日的 2CD（CDSOL1355/56）涵蓋 1985 到 1987 年的 indies 時期錄音，附 10 首「初期デモ音源」與現場，先到者贈未發表影像 DVD-R。",
+    "src": "https://diskunion.net/jp/ct/news/article/1/15754"
+   },
+   {
+    "f": "二手店 ticro 的 1985 年黑膠商品頁把這張碟形容為混合了 shout、fusion、實驗、放克、ska-punk 與 new wave 的「ミクスチャーサウンド」，是石嶋由美子領軍的 girls punk 樂團的紀錄，附小冊與帶。",
+    "src": "https://ticro.com/products/p00004597"
+   }
   ],
   "hookCandidates": [
    "被寫成「和製 Patti Smith」的人，唱片版權欄卻掛著山葉音樂振興會",
    "四個女生，錄音室裡多出三個人專門負責音效"
   ],
   "sound": "Discogs 標 Punk／New Wave，ticro 的形容是 shout、fusion、放克、ska-punk 混在一起的「ミクスチャーサウンド」；四人編制有鍵盤，〈ダンスがスンダ〉六分多鐘塞進 S.E. 音效，〈極楽コレクション〉不到兩分鐘。",
-  "keyTracks": ["もはやこれまで", "ダンスがスンダ", "ゴーゴンズ"],
+  "keyTracks": [
+   "もはやこれまで",
+   "ダンスがスンダ",
+   "ゴーゴンズ"
+  ],
   "status": "full",
-  "yearVerified": {"year": 1985, "note": "1985 維持卡單原值：Discogs 原盤 1985、MusicBrainz 1985-12-21、CDJournal 亦寫 1985。可寫「一九八五年十二月」。"},
+  "yearVerified": {
+   "year": 1985,
+   "note": "1985 維持卡單原值：Discogs 原盤 1985、MusicBrainz 1985-12-21、CDJournal 亦寫 1985。可寫「一九八五年十二月」。"
+  },
   "notes": "本卡分到的獨有錨點：**「和製パティ・スミス」的稱號、女性四人組、版權欄的ヤマハ音楽振興会、Star Ship Studio、〈ダンスがスンダ〉的 S.E. 班底**。互斥條款：Captain 成立史判給 The Willard，本卡只寫「東京的 Captain Records」；Discogs 的「JICC・キャプテンレコード」字樣可以照抄當發售者，但不得展開成「宝島的廠牌」。**製作人是 Toshinao Tanaka（Discogs credit），巻上公一製作的是 1985 年那張合輯《都に雨が降るごとく》，不是本碟**——CDJournal 那條 fact 兩件事並列，行文不得寫成「巻上公一製作的專輯」。日文維基整條無引註（第 80 條）：1983 年以ねこおどり成軍、1984 年 Yamaha Popcon 關東甲信越大會、新宿 ALTA 8000 人、與有頂天／The Willard 同台等**全部不供料**；成員漢字（牧絹子、榎本春美、岸田千明）只在維基成員欄有，Discogs 用羅馬字——行文採 Discogs 的羅馬字，或只寫石嶋由美子一人。「與ナゴム系樂團交流」查無可引的句子，**不寫**（池中有有頂天、筋肉少女帯，第 33 條）。「和製パティ・スミス」寫時要掛「被寫成」。人數：credit 是完整陳述（四個名字各配樂器），「四人」可數（第 108 條）；S.E. 演出者三人也是完整列舉。掛名：卡片「パパイヤ・パラノイア」，Apple 作「パパイヤ パラノイア」，`queryAlias` Papaya Paranoia。**第 61／110 條**：`sound` 的曲風形容全出自 ticro 與 Discogs 標籤，時長從 CD 版曲目表讀的。"
+ },
+ {
+  "key": "desc2:Lip Cream|Kill Ugly Pop",
+  "artist": "Lip Cream",
+  "album": "Kill Ugly Pop",
+  "facts": [
+   {
+    "f": "Discogs 的 1986 年原盤條目（Captain Records CAP-0016L，同時掛 Dynamite Records 的 002 號、註記「Produced For Dynamite Records」，release 1792522）記：1985 年 10 月 8、10–11、24–31 日錄於新宿的 Jam Studio，工程師 Hamazuka，製作掛 Lip Cream 整團，封面美術ヤギヤスオ（Yasuo Yagi）；初版黑膠沒有附歌詞單，要另外寫信到 Captain 索取。",
+    "src": "https://www.discogs.com/release/1792522"
+   },
+   {
+    "f": "同一條目的 credit：Jha Jha（Jhaja Iwaki）主唱、Naoki 吉他、Minoru（Minoru Ogawa）貝斯、Pill 鼓；曲目 14 首，A 面〈Shangri-La〉〈Fight In The Street (Teenage Warning)〉〈Stop The City〉〈Give Us The Truth〉〈The Pusher〉〈夕焼け〉〈Kill Ugly Pop!!〉，B 面〈No Rules'〉〈For My Life〉〈Fareless Drunker〉〈Kill The Hincty〉〈Back In The Anger〉〈赤羽線バイオレンス (Violence In Red Wing Line No.2)〉〈Suicidal〉。",
+    "src": "https://www.discogs.com/release/1792522"
+   },
+   {
+    "f": "Relapse 的官方 Bandcamp 頁標的時長：〈Shangri-La〉2:23、〈Fight In The Street〉1:49、〈Stop The City〉1:42、〈Give Us The Truth〉2:11、〈The Pusher〉1:24、〈夕焼け〉4:17、〈Kill Ugly Pop〉2:17、〈No Rules〉2:28、〈For My Life〉2:11、〈Fareless Drunker〉1:46、〈Kill The Hincty〉2:40、〈Back In The Anger〉1:44、〈赤羽線バイオレンス〉2:05、〈Suicidal〉1:39。",
+    "src": "https://lipcream.bandcamp.com/album/kill-ugly-pop"
+   },
+   {
+    "f": "同一頁的文案寫：這張首張全長專輯在日本 hardcore／punk 場景是「劃時代（epoch-making）」的，樂團把美國 hardcore 的影響混進 1980–81 年受英國影響的日本 hardcore；主唱 JhaJha 日英混用的歌詞被特別點出；Relapse 版經數位重製，歌詞單完整復刻並附英譯，原始封面是攝影師 Jin Sato 與畫家 Yasuo Yagi 的合作。",
+    "src": "https://lipcream.bandcamp.com/album/kill-ugly-pop"
+   },
+   {
+    "f": "Bandcamp Daily 的 Lip Cream 導讀（John Gentile，2026 年 1 月 12 日）寫：這是樂團在 1985 年與 Chaos UK 巡迴全國、反應熱烈之後做的第一張正式 LP，聲音明顯往 thrash metal 的美學靠，開場的〈Shangri-La〉把「Crass Records 式的環境威脅感」接上金屬的攻擊性；Jha Jha 從這張開始在英文之外寫日文歌詞，他說「在歌詞裡混用日文和英文對我來說很自然」；文章稱它是「引導樂團後續唱片方向的避雷針」。",
+    "src": "https://daily.bandcamp.com/lists/lip-cream-guide"
+   },
+   {
+    "f": "Relapse 官網的 Lip Cream 專頁寫：樂團 1984 年成軍、1990 年解散，六年間出了三張 EP、一捲卡帶與四張專輯；起點是前 COMES 成員 Minoru 受邀替一張合輯錄音、順手找了吉他手 Naoki 與鼓手 Maru 組團，Maru 離開後 Pill 加入成為固定陣容；1985 年替 Chaos U.K. 的日本巡迴助陣、自辦全國性的「DYNAMITE TOURS」；《Kill Ugly Pop》是他們在 CAPTAIN Records 出的首張全長作，Naoki 於 2021 年、Pill 於 2024 年過世。",
+    "src": "https://www.relapse.com/pages/lip-cream-official-re-issues"
+   },
+   {
+    "f": "Decibel 的報導（2025 年 12 月 17 日）記 Relapse 首次取得完整授權重發 Lip Cream 全部目錄，實體品 2025 年 12 月 19 日推出，全部重新重製，Relapse 直接與在世的原始成員 Minoru 合作、做了訪談與檔案整理；另有限量 900 套、夜光黑膠的 Lonely Rock 套裝。",
+    "src": "https://www.decibelmagazine.com/2025/12/17/catalog-reissue-alert-lip-cream/"
+   },
+   {
+    "f": "Discogs master 326035 共 16 個版本：1986 年 Captain 黑膠、1989 年 Captain CD（CAP-1014-CD）、1996 與 2010 年 Oni 的 CD（ONI-3）、2025 年 Relapse 的黑膠／CD／卡帶／數位（RR7610）為正規發行；另有 3 筆標 Unofficial Release——2017 年「Rats Records (2)」的編號限量黑膠（RAT-001）與兩筆 Not On Label 的黑膠復刻。",
+    "src": "https://www.discogs.com/master/326035"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行 1986 年、掛名 Lip Cream、primary-type Album，轄下一筆 1986 年 Official 發行與一筆 Pseudo-Release。",
+    "src": "https://musicbrainz.org/release-group/55ddde5a-a73f-38c8-a5ec-cee2cd3c04c8"
+   }
+  ],
+  "hookCandidates": [
+   "初版黑膠沒附歌詞單，想要的人得寫信去廠牌索取",
+   "十四首裡十三首不到三分鐘，唯一一首四分多的叫〈夕焼け〉"
+  ],
+  "sound": "Discogs 標 Hardcore／Punk；Bandcamp Daily 的說法是這張把聲音推向 thrash metal 的美學，開場曲有 Crass 式的陰冷鋪陳再接金屬 riff。十四首多在兩分半以內，〈夕焼け〉4:17 是唯一的長曲，四人編制沒有客席。",
+  "keyTracks": [
+   "Kill Ugly Pop!!",
+   "Shangri-La",
+   "Give Us The Truth",
+   "夕焼け"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "note": "1986 維持卡單原值：Discogs 原盤、MusicBrainz 皆 1986；Bandcamp 頁標 1986-01-01。錄音是 1985 年 10 月（Discogs 內頁），行文提錄音年與發行年要分開。"
+  },
+  "notes": "本卡分到的獨有錨點：**Jam Studio 1985 年 10 月的錄音日期、初版沒附歌詞單要寫信索取、Dynamite Records 的雙掛名、Chaos UK 巡迴之後、日英混用歌詞、Relapse 2025 年全目錄授權重發**。互斥條款：Captain 成立史判給 The Willard、「收益創立 Captain」判給遠藤ミチロウ，本卡只寫「東京的 Captain Records」。**池中已有 Gauze**（同批 a 組《Fuck Heads》）——Bandcamp Daily 原文提到 Gauze 一起巡迴，**本卡 facts 刻意不收那句，行文不得提 Gauze**（第 33 條）。**Relapse 專頁把 Minoru 寫成 vocals/bass，與 Discogs credit（Jha Jha 主唱、Minoru 貝斯）不一致——採 Discogs**。曲名寫法：原盤作〈Kill Ugly Pop!!〉（雙驚嘆號）、Bandcamp 作〈Kill Ugly Pop〉，行文提曲名用原盤寫法。人名：成員只有藝名（Jha Jha、Naoki、Minoru、Pill），Discogs 的本名括注可用可不用；ヤギヤスオ用片假名。**授權**：3 筆未授權版本已列在 fact，舉證只用 Captain 1989、Oni、Relapse。**第 61／110 條**：`sound` 的 thrash／Crass 比喻出自 Bandcamp Daily，時長從 Bandcamp 曲目表讀的。"
+ },
+ {
+  "key": "desc4:遠藤ミチロウ|ベトナム伝説",
+  "artist": "遠藤ミチロウ",
+  "album": "ベトナム伝説",
+  "facts": [
+   {
+    "f": "日文維基專輯條目引遠藤ミチロウ自著《ザ・スターリン伝説》（2004）記：本作 1984 年 4 月 10 日由 JICC出版以「カセットブック」（書與卡帶一體）的形態發行，是遠藤在ザ・スターリン活動暫停期間的首張個人專輯；卡帶音源後來才被做成 LP 與 CD 再發。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E4%BC%9D%E8%AA%AC"
+   },
+   {
+    "f": "同一條目引同書第 168 頁：宝島社以本作賺得的收益為本，創立了キャプテン・レコード。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E4%BC%9D%E8%AA%AC"
+   },
+   {
+    "f": "同一條目依《ザ・スターリン伝説》所載的 credit 記：附冊收錄攝影家石垣章的照片、漫畫家蛭子能収的漫畫〈ベトナム伝説〉與遠藤和糸井重里的對談（出自月刊《宝島》1983 年 10 月號）；參與樂手有當時在ザ・スターリン的 JUN-BLEED（吉他）、乾純（只在〈渚の天婦羅ロック〉打鼓）與 P-MODEL 的平沢進（只在〈カノン〉彈鍵盤與吉他）。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E4%BC%9D%E8%AA%AC"
+   },
+   {
+    "f": "同一條目引同書第 166–168 頁的遠藤自述：〈仰げば尊し〉是「一直想做的曲子」，合唱是找來一群龐克少女合唱的；〈ワイルドで行こう〉不是向嬉皮致敬而是當成「鄉下與農民萬歲的歌」；〈おまえの犬になる〉原本要翻唱 Stooges 的〈I Wanna Be Your Dog〉，最後變成他自己寫的原創曲；〈カノン〉的原型是他組團前寫的民謠〈ビンの中から〉，因為在咖啡店聽到帕海貝爾的卡農和弦進行完全相同才改題；〈おかあさん…〉是獻給 Bob Dylan 的歌，原本想試日語 rap、改成刻意用福島腔的說話語調。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E4%BC%9D%E8%AA%AC"
+   },
+   {
+    "f": "同一條目引《宝島》1984 年 4 月號的發行時評語：遠藤說「都會已經什麼都生不出來了。不是過熱，只是單純磨損了而已」（もう都会からは何も出てこない。オーバーヒートしてるどころか、単にすりきれてしまってるだけだ）。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E4%BC%9D%E8%AA%AC"
+   },
+   {
+    "f": "Discogs 的 1986 年 Captain Records 黑膠再發條目（CAP-0015-L，release 1457198，定價 2800 日圓）credit：遠藤ミチロウ主唱，Jun Obiga（June Bleed）吉他，Teruya Ogata 貝斯，Takeshi Tsuchida 鼓（A1–A5、B1–B3、B5），乾純在 B4 打鼓，平沢進在 B3〈カノン (ビンの中から)〉彈鍵盤與 Tokai Talbo 吉他，製作人加藤正文，工程師 Eiji Makino；曲目 10 首，B5 是〈仰げば尊し〉的器樂版。",
+    "src": "https://www.discogs.com/release/1457198"
+   },
+   {
+    "f": "同一條目的曲目與作者：A1〈仰げば尊し〉2:45、A2〈ワイルドで行こう〉3:18（Mars Bonfire 曲）、A3〈好きさ・好きさ・好きさ〉3:25（Chris White 曲、漣健児詞）、A4〈おまえの犬になる〉4:38、A5〈割れた鏡の中から〉4:20（早川義夫詞曲）、B1〈おかあさん、いい加減あなたの顔は忘れてしまいました〉6:05、B2〈ハロー・アイ・ラブ・ユー〉2:35（The Doors 曲）、B3〈カノン (ビンの中から)〉5:20（帕海貝爾曲）、B4〈渚の天婦羅ロック〉3:55、B5〈仰げば尊し・Instrumental〉2:45。",
+    "src": "https://www.discogs.com/release/1457198"
+   },
+   {
+    "f": "Tower 的商品頁記 2019 年 11 月 6 日北極バクテリア以 NB1007 再發 CD（2750 日圓），文案稱之為「1984 年發表的夢幻首張個人專輯」的復刻；11 首裡〈渚の天婦羅ロック〉標為 Bonus Track，另收〈仰げば尊し -TOUCH-ME Version 2002-〉與 Karaoke 版。",
+    "src": "https://tower.jp/item/4972619/"
+   },
+   {
+    "f": "Disk Union 的商品頁把同一張 2019 年 CD 寫成「1984 年發表、難以入手的首張個人專輯」的再版，並註明遠藤是 1980–90 年代活動的龐克樂團ザ・スターリン的創立者兼主唱。",
+    "src": "https://diskunion.net/jp/ct/detail/IND041174"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行 1984 年 4 月 10 日、掛名遠藤ミチロウ、primary-type Album，轄下只有 1984-04-10 日本 Official 一筆。",
+    "src": "https://musicbrainz.org/release-group/1f74a295-e0d8-4158-8a28-7daf07c76966"
+   }
+  ],
+  "hookCandidates": [
+   "一捲夾在書裡賣的卡帶，賺到的錢讓出版社開了一家唱片公司",
+   "把畢業歌〈仰げば尊し〉唱成龐克，合唱團是找來的一群龐克少女"
+  ],
+  "sound": "翻唱為主：學校唱歌、Steppenwolf、The Doors、帕海貝爾卡農都配上日文詞用龐克編制唱，〈カノン〉有平沢進的鍵盤；原創的〈おかあさん…〉六分鐘用福島腔說話語調唱。Discogs 標 Hardcore／Punk。",
+  "keyTracks": [
+   "仰げば尊し",
+   "おかあさん、いい加減あなたの顔は忘れてしまいました",
+   "カノン (ビンの中から)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "note": "1984 維持卡單原值：MusicBrainz 1984-04-10，日文維基引《ザ・スターリン伝説》記同日；Discogs 只建了 1986 年 Captain 黑膠再發（第 95 條：那是再發不是原盤）。可寫「一九八四年四月」。"
+  },
+  "notes": "**形態要寫準：原盤是 JICC出版（宝島）的カセットブック，不是黑膠；1986 年 Captain 的 LP 是再發**（Discogs 那筆就是 1986 版，引它的 credit 時要說是 1986 年 LP 的資料）。本卡分到的獨有錨點：**「本作收益創立 Captain Records」這條線只判給本卡**（日文維基有引註到遠藤自著第 168 頁）——同批 The Willard 卡寫的是「Captain 目錄第一號、據稱兩萬張」那一端，兩張不互相引用；其餘 Captain 卡都不碰廠牌成立。**JUN-BLEED（Jun Obiga）就是 The Willard 的 JUN，但本卡 facts 只寫他「當時在ザ・スターリン」，不得寫成「The Willard 的 JUN 來彈吉他」**（第 33 條跨卡）。池中已有ザ・スターリン（a 組另收《trash》）——本卡只能寫「ザ・スターリン活動暫停期間的首張個人專輯」，不得寫《虫》之後的暴動、後樂園等維基段落。日文維基專輯條目有引註的段落才進 facts（Sfn 到 2004／2007 年自著），無引註的「動脈硬化」比喻、筋肉少女帯〈元祖高木ブー伝説〉的關聯（那句有引 natalie 但涉及池中的筋肉少女帯，第 33 條不供料）**都不寫**。人名：平沢進、乾純、加藤正文、糸井重里、蛭子能収、石垣章都用漢字；Teruya Ogata、Takeshi Tsuchida 查無漢字，行文可略。掛名：卡片「遠藤ミチロウ」，Discogs 作 Michiro Endo／遠藤みちろう（平假名），`queryAlias` Michiro Endo。**第 61／110 條**：`sound` 的「福島腔說話語調」「龐克少女合唱」出自維基引的自述，其餘從 credit 與曲目作者讀的。"
+ },
+ {
+  "key": "desc4:メトロファルス|STANDS",
+  "artist": "メトロファルス",
+  "album": "STANDS",
+  "facts": [
+   {
+    "f": "Discogs 的 1987 年原盤條目（Captain Records CAP-0047-L，release 5786184）記發行 1987 年 2 月，錄於 Mod Studio，錄音期間 1986 年 11 月到 1987 年 1 月；製作掛 Metrofarce 整團，directed by Tohru Shimizu，工程師 Atsushi Hoshino，A1 與 A2 兩曲時長合併計算。",
+    "src": "https://www.discogs.com/release/5786184"
+   },
+   {
+    "f": "同一條目的 credit：伊藤ヨタロウ（Yotaro Ito）主唱並包辦全部作詞；光永「GUN」巌（Gun Mitsunaga）吉他與和聲；Vagabond Suzuki 貝斯、Chapman Stick、曼陀林與和聲；ライオン・メリィ（Lion Merry）鍵盤與 tape；岩瀬「チャバネ」雅彦（Masahiko Iwase）鼓。客席：Chu-Ya 在 A2 唱、小玉和文（Kazufumi Kodama）在 B2 吹小號、白井良明（Ryomei Shirai）在 B3 彈西塔琴、Nav Katze 與另兩位女聲在 B3 合唱。",
+    "src": "https://www.discogs.com/release/5786184"
+   },
+   {
+    "f": "曲目七首：A1〈Portend〉7:01（與 A2〈光のオベリスク〉連奏合計）、A3〈Harvest Moon〉5:51、A4〈ダモクレスの剣〉5:39、B1〈鉄錆廃園〉5:24、B2〈Aktis (海泡石の寝台)〉6:19、B3〈僕のジャイロスコオプ〉5:39；作曲掛 GUN（A1、A2、B2）、Lion Merry（B1）、樂團（A3、B1、B2）與伊藤ヨタロウ（A4、B3）。",
+    "src": "https://www.discogs.com/release/5786184"
+   },
+   {
+    "f": "メトロファルス官方網站的《STANDS》頁寫：CD 版品號 CAP-1036、2280 日圓（未稅），錄於六本木 MOD Studio、1986 年 11 月到 1987 年 1 月；因為排程困難，錄音以「晚上九點到早上九點」的強行軍進行；概念是「プログレ」，與前作的色調大幅轉變；這是創團成員鼓手チャバネ參加的最後一張專輯；封套照片在伊豆半島拍攝，因為是日出時面向海拍的，每個人都一臉寒冷、一臉刺眼。",
+    "src": "https://metrofarce.jimdofree.com/%E6%9D%B1%E6%B4%8B%E3%83%AB%E3%83%8A%E3%83%91%E3%83%BC%E3%82%AF/stands/"
+   },
+   {
+    "f": "同一頁列出的客席：DELAX 的 Chuya、MUTE BEAT 的小玉和文（小號）、MOON RIDERS 的白井良明（西塔琴）、NAV KATZE 的成員（和聲）。",
+    "src": "https://metrofarce.jimdofree.com/%E6%9D%B1%E6%B4%8B%E3%83%AB%E3%83%8A%E3%83%91%E3%83%BC%E3%82%AF/stands/"
+   },
+   {
+    "f": "ライオン・メリィ官網的作品年表把《STANDS》記為 1987 年 2 月、CAPTAIN RECORDS CAP-0047-L 的 LP，與 1986 年《PAST FUTURE ANIMATORS》、1988 年《GAIA》並列為 Captain 時期三張；三張於 2010 年 12 月以 SOLID RECORDS 的 CDSOL-1385～1387（CD 36 曲＋DVD）合輯再發。",
+    "src": "http://lionmerry.com/discography.html"
+   },
+   {
+    "f": "Tower 的《PAST FUTURE ANIMATORS STAND ON GAIA METRO FARCE CAPTAIN YEARS ANTHOLOGY 1986～1988》商品頁記 2011 年 1 月 12 日發行、Solid Records／Captain Records、CDSOL-1385，3CD＋DVD 四片組、附 60 頁小冊，三張專輯重製並追加未發表現場與 demo，由伊藤ヨタロウ全面監修，DVD 收未發表現場影像與成員訪談。",
+    "src": "https://tower.jp/item/2823262"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記首度發行 1987 年、artist-credit「METRO FARCE」（藝人實體名メトロファルス）、primary-type Album，轄下只有 1987 年日本 Official 一筆。",
+    "src": "https://musicbrainz.org/release-group/db2301dd-f98f-400b-bcbe-015feb09a1a0"
+   }
+  ],
+  "hookCandidates": [
+   "排不到錄音室，只好每天晚上九點錄到早上九點",
+   "封套上每個人都一臉冷、一臉刺眼：日出時在伊豆半島面對海拍的"
+  ],
+  "sound": "樂團自己的說法是這張的概念是「プログレ」；七首都在五到七分鐘，貝斯手兼彈 Chapman Stick 與曼陀林，鍵盤手掛 tape，客席加進小號與西塔琴。Discogs 標 New Wave。",
+  "keyTracks": [
+   "Portend",
+   "Harvest Moon",
+   "僕のジャイロスコオプ"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "note": "1987 維持卡單原值：Discogs 原盤 1987-02、官網與ライオン・メリィ年表皆 1987 年 2 月、MusicBrainz 1987。可寫「一九八七年二月」。"
+  },
+  "notes": "本卡分到的獨有錨點：**九點到九點的強行軍、伊豆日出封套、「プログレ」概念、鼓手チャバネ的最後一張、客席小號與西塔琴**——全出自樂團官網（當事人自述，第 128 條：寫「樂團自己的說法」即可）。互斥條款：Captain 成立史判給 The Willard、收益線判給遠藤ミチロウ，本卡只寫「東京的 Captain Records」。日文維基メトロファルス條目掛「出典の明記」且零引註（第 80 條），**不供料**；伊藤ヨタロウ與ライオン・メリィ的其他經歷本卡 facts 沒有，不得展開。**人名寫法**：卡片與官網用「光永「GUN」巌」「岩瀬「チャバネ」雅彦」「バカボン鈴木」，Discogs 作 Gun Mitsunaga／Masahiko Iwase／Vagabond Suzuki——行文採官網的日文寫法；白井良明在 Discogs 作 Ryomei Shirai、官網英文版誤作 Yoshiaki，採漢字。**曲名兩套**：Discogs 作〈鉄錆廃園〉、官網作〈鋼鉄廃園〉——採原盤 Discogs 的〈鉄錆廃園〉，差異只在這裡記。「Captain 時期三張」可寫（ライオン・メリィ年表是完整列舉），但「從龐克擴到劇場式搖滾」是策展層的比較，不寫。掛名：卡片「メトロファルス」，MB credit METRO FARCE、Discogs Metrofarce，`queryAlias` Metrofarce。**第 61／110 條**：`sound` 的樂器清單從 credit 讀，「プログレ」是官網原話。"
+ },
+ {
+  "key": "desc2:JUN SKY WALKER(S)|J(S)W",
+  "artist": "JUN SKY WALKER(S)",
+  "album": "J(S)W",
+  "facts": [
+   {
+    "f": "Discogs 的 1987 年原盤條目（Captain Records CAP-0059-M，release 10579405）：12 吋 45 轉 Mini-Album，發行日 1987 年 8 月 29 日，定價 2000 日圓，錄音與混音在六本木的 Mod Studio；製作人 Akio Kasahara，sound supervisor 兼 director 是 Koichi Ando，工程師 Hiroshi Matsuo。",
+    "src": "https://www.discogs.com/release/10579405"
+   },
+   {
+    "f": "同一條目的 credit：宮田和弥（Kazuya Miyata）主唱兼作曲、森純太（Junta Mori）吉他、和聲兼作曲、伊藤毅（Tsuyoshi Ito）貝斯與和聲、小林雅之（Masayuki Kobayashi）鼓；六首：A1〈カギは誰が...〉、A2〈My Generation〉、A3〈ガラスの街〉、B1〈Suicide Day〉、B2〈Hey, Hey, Hey〉、B3〈Bad Morning〉。",
+    "src": "https://www.discogs.com/release/10579405"
+   },
+   {
+    "f": "Discogs 的 1988 年 9 月 5 日 Captain CD（CAP-1003-CD，release 6016343）比原盤多兩首：第 7 首〈No-No Boy〉與第 8 首〈言葉につまる〉。",
+    "src": "https://www.discogs.com/release/6016343"
+   },
+   {
+    "f": "Discogs master 835085 共 5 個版本：1987 年 Captain 12 吋、1988 年 Captain CD、1998 年 Captain／Teichiku 編號的 CD（TECN-20396）、2006 年 Solid Records CD（CDSOL-1134）、2023 年 Solid Records 45 轉黑膠（OTS-323）——沒有任何一筆標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/835085"
+   },
+   {
+    "f": "Tower 的 2006 年 7 月 8 日 Solid Records CD＋DVD（CDSOL-1134）商品頁寫：這是樂團「唯一的 indies 廠牌錄音」、等同出道專輯，被寫成「beat 系樂團永遠的聖經」，收〈My Generation〉〈Hey Hey Hey〉等 8 首；DVD 收 1987–89 年在澀谷 La Mama 與新宿 Loft 的現場與成員訪談，音源由原成員伊藤毅監修重製。",
+    "src": "https://tower.jp/item/2072502"
+   },
+   {
+    "f": "JUN SKY WALKER(S) 官方網站公告：首張專輯《J(S)W》於 2023 年 11 月 3 日發行黑膠，3800 日圓，A 面〈カギは誰が〉〈MY GENERATION〉〈ガラスの街〉〈言葉につまる〉、B 面〈SUICIDE DAY〉〈HEY HEY HEY〉〈BAD MORNING〉〈NO NO BOY〉。",
+    "src": "http://junskywalkers.jp/information/2000.html"
+   },
+   {
+    "f": "レコードの日的商品頁記 2023 年黑膠為 SOLID RECORDS OTS-323、JAN 4526180666776、3800 日圓（未稅），文案寫這是樂團出道 35 週年、原由 Captain Records 發行的首張專輯，「80's punk rock 的金字塔」。",
+    "src": "https://record-day.jp/item/ots-323/"
+   },
+   {
+    "f": "日文維基引宮田和弥自著《生業 NARIWAI》第 52 頁記 LP 發行日 1987 年 8 月 29 日、CD 1988 年 9 月 5 日；另引 Ultra-Vybe 官網記 2006 年 7 月 8 日的再發由伊藤毅監修最新母帶並附初期現場影像；樂團的主流出道日 1988 年 5 月 21 日後來被日本記念日協會登錄為「JUN SKY WALKER(S) 的日」。",
+    "src": "https://ja.wikipedia.org/wiki/JUN_SKY_WALKER(S)"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 記 first-release-date 1988 年 9 月（只建了 CD 版）、掛名 JUN SKY WALKER(S)、primary-type Album，轄下一筆 1988-09 日本 Official；1987 年的 12 吋原盤未建檔。",
+    "src": "https://musicbrainz.org/release-group/23de539e-5e69-460d-ad15-9dcb65edfc21"
+   }
+  ],
+  "hookCandidates": [
+   "主流出道前唯一的一張，六首歌、十二吋、四十五轉",
+   "貝斯手隔年就離團，二十年後回來替這張唱片重做母帶"
+  ],
+  "sound": "四人編制的直線龐克，Discogs 標 Punk（2023 年黑膠另標 Power Pop）；Tower 文案形容為「直球的聲音與強烈的訊息」。六首都是三四分鐘上下的快歌，沒有客席。",
+  "keyTracks": [
+   "My Generation",
+   "Hey, Hey, Hey",
+   "Suicide Day"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "note": "1987 維持卡單原值：Discogs 原盤 1987-08-29、日文維基引宮田自著同日；MusicBrainz 的 1988-09 是 CD 版（第 95 條：rgMbid 是身分鍵不是年份來源）。可寫「一九八七年八月」。"
+  },
+  "notes": "**形態要寫準：12 吋 45 轉、六首的ミニアルバム**（Discogs 標 Mini-Album、MB 標 Album）；若本機改判 EP 走 §5.5 asia-mini-album。本卡分到的獨有錨點：**主流出道前唯一的 indies 錄音、六首→CD 八首、伊藤毅離團後回來監修重製、2023 年 35 週年黑膠**。互斥條款：Captain 成立史判給 The Willard、收益線判給遠藤ミチロウ，本卡只寫「東京的 Captain Records」。**「伊藤毅 1988 年 2 月離團」在日文維基無引註**——facts 只有「2006 年由伊藤毅監修重製」與「主流出道 1988-05-21」，**hook 若寫「隔年就離團」撐不住，寫作層要改成「原成員伊藤毅後來回來監修重製」**（第 110 條）。樂團 1980 年由自由学園學生組成、ホコ天出身等段落維基無引註，**不供料**；「街頭出身」是 record-day 文案的說法，可掛出處寫。「唯一的 indies 錄音」是 Tower 文案的說法，寫時掛出處。Tower 的「永遠のバイブル」是宣傳語，不要照用。人名：宮田和弥、森純太、伊藤毅、小林雅之用漢字（Discogs 有羅馬字對照）。掛名：卡片「JUN SKY WALKER(S)」，官網文字同；`queryAlias` 留空。**第 61／110 條**：`sound` 的「直球」出自 Tower 文案，其餘從 credit 讀。"
  }
 ]
