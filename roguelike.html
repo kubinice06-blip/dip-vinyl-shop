@@ -1920,7 +1920,7 @@ function renderRookieHome(){
     ${homeBoxesHTML()}${charCardHTML()}
     <div id="rookieHome" style="border:2px solid var(--gold);background:#fffbe9;padding:14px 14px 12px;margin:8px 0 10px;line-height:1.9">
       <b style="color:var(--gold);font-size:15px">🎁 老闆的入門套裝</b>
-      <div class="muted" style="font-size:12px;margin:2px 0 10px">不用先讀規則——老闆賣你的那五張（1 張王牌＋4 張）配上幾張店裡的雜牌，上桌<b>邊打邊學</b>。</div>
+      <div class="muted" style="font-size:12px;margin:2px 0 10px">不用先讀規則，老闆賣你的那五張（1 張王牌＋4 張）配上幾張店裡的雜牌，上桌<b>邊打邊學</b>。</div>
       ${startBtns}
       <button class="btn" style="width:100%;margin-top:6px;font-size:10px" onclick="rookieCustomSeeds()">想自己挑專輯出戰 →</button>
     </div>
@@ -1953,10 +1953,10 @@ const RANDOM_NAMES = [
 // 三張頂點卡的介紹：一張卡＝一個軸（順便把三軸的文化定位、相剋方向、王牌被動講完）
 const SHOP_ACE_INFO = {
   classic:       { title:'殿堂', axisZh:'經典', what:'大家都聽過、被時間驗證的名盤。', star:'這張經典衝到 <b>7 星</b>。',
-                   passive:'打出時對手氣勢 −2', beats:'經典剋硬蕊（大眾共鳴）', pick:'「選這張？內行喔。敢在我店裡拿這張的人不多——多數人只會說『聽過』。」' },
+                   passive:'打出時對手氣勢 −2', beats:'經典剋硬蕊（大眾共鳴）', pick:'「選這張？內行喔。敢在我店裡拿這張的人不多，多數人只會說『聽過』。」' },
   obscurity:     { title:'流亡', axisZh:'冷門', what:'沒人翻過的地下私盤，靠的是資訊差。', star:'這張冷門衝到 <b>7 星</b>。',
                    passive:'相剋成功時多充 1 氣勢', beats:'冷門剋經典（品味突襲）', pick:'「選這張？內行喔。這張我放在最裡面那格，就是在等有人伸手。」' },
-  accessibility: { title:'異端', axisZh:'硬蕊', what:'入耳的難度——越前衛、越解構，星數越高。', star:'這張硬蕊衝到 <b>7 星</b>。',
+  accessibility: { title:'異端', axisZh:'硬蕊', what:'入耳的難度：越前衛、越解構，星數越高。', star:'這張硬蕊衝到 <b>7 星</b>。',
                    passive:'打出時直接歸零對手氣勢', beats:'硬蕊剋冷門（降維打擊）', pick:'「選這張？內行喔。這張放出來客人會跑光……我喜歡。」' },
 };
 let _shop=null;
@@ -1982,7 +1982,7 @@ function renderCharCreate(back){
   $app.innerHTML = shopShellHTML(`
     <div class="shop-scene">${s.back?ownerHTML():'<div class="owner">'+pixArtHTML(avatarRows(s.av),56)+'你</div>'}<div class="bubble">${s.back
       ? '<span class="say">「換個造型？隨你。常客的臉我都記得。」</span>'
-      : '<span class="narr">冒險開始之前——先決定你是誰。名字，還有樣子。</span>'}</div></div>
+      : '<span class="narr">冒險開始之前，先決定你是誰。名字，還有樣子。</span>'}</div></div>
     <div class="avopt"><div class="lab">名字（最多 ${NAME_MAX} 字）</div>
       <div class="row"><input class="nameinp" id="charName" maxlength="${NAME_MAX}" placeholder="黑膠新手" value="${escHtml(s.name)}" oninput="_shop.name=this.value"><button class="btn" title="隨機取名" onclick="charRandomName()">🎲</button></div></div>
     <div class="avwrap">
@@ -2131,23 +2131,23 @@ const RPG_POS = {   // 站位（left%／bottom px），舞台 100%×190px；櫃�
 };
 const RPG_BEATS = [
   { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out'} },
-  { who:'', text:'櫃台後面的老闆抬頭看了你一眼——又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
+  { who:'', text:'櫃台後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
   { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'shelf'} },
   { who:'', text:'這時候，店裡的音響傳出一段旋律。', stage:{notes:true,oBusy:false} },
   { who:'', text:'……很迷人。你停下腳步，不自覺跟著點起頭來。' },
-  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤——櫃台上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
-  { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段——你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
+  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃台上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
+  { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
   { who:'老闆', text:'「……你眼光真不錯。」老闆終於抬起頭來，看著你。', stage:{notes:false} },
-  { who:'老闆', text:'「這張是我的私人收藏。今天——讓給你。」' },
+  { who:'老闆', text:'「這張是我的私人收藏。今天讓給你。」' },
   { who:'', text:'老闆走出櫃檯，在店裡翻翻找找。', stage:{o:'floor'} },
-  { who:'老闆', text:'「這四張也很適合你。跟你有緣——收下吧。」', ui:'recs', prompt:'（老闆把四張盤遞給你。）' },
+  { who:'老闆', text:'「這四張也很適合你。跟你有緣，收下吧。」', ui:'recs', prompt:'（老闆把四張盤遞給你。）' },
   { who:'', text:'你抱著五張唱片，心滿意足，正準備離開。', stage:{p:'leave',o:'counter'} },
   { who:'', text:'這時，門開了。', stage:{f:'door'} },
   { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
   { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
   { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
   { who:'老闆', text:'「兩位、兩位。」老闆從櫃台後面走了出來。', stage:{o:'between',anger:false} },
-  { who:'老闆', text:'「既然雙方都不服氣——不如，來一場品味對決如何？」', ui:'choice' },
+  { who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」', ui:'choice' },
 ];
 let _rpg=null;
 // 起一段 RPG 場景：beats＝對話陣列、stage＝起始站位、beat＝從第幾段開始（續玩用）
@@ -2271,9 +2271,9 @@ function tutEpilogueBeats(){
     { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
     { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
     { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
-    { who:'老闆', text:'「我這邊有一些被我淘汰的設備——你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃台底下拖出一個木箱。）' },
+    { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃台底下拖出一個木箱。）' },
     { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
-    { who:'', text:'你正要道謝——門，又開了。', stage:{f:'door',fSpr:'e1'} },
+    { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1'} },
     { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
     { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
   ];
@@ -2788,25 +2788,25 @@ function tutBuild(setKey, atk){
   const heal1 = 1 + (axis==='classic'?1:0);
   const hp1 = cmp(c1[axis],2) + hit(c2.obscurity) + hit(c3.classic) + hit(c4.accessibility) - heal1 + 2;   // 第 4 手打完剩 2 滴 → 輾壓（不回血的回合）收尾
   const aceIntro = set.ace
-    ? `你的【${c1.album}】是<b style="color:var(--gold)">${ACE_ZH[set.ace.ace]}王牌</b>，${B(axis)} 7 星——點它按發光的「${ATTR_ZH[axis].charAt(0)}」：`
-    : `點【${c1.album}】按發光的「${ATTR_ZH[axis].charAt(0)}」——`;
+    ? `你的【${c1.album}】是<b style="color:var(--gold)">${ACE_ZH[set.ace.ace]}王牌</b>，${B(axis)} 7 星。點它按發光的「${ATTR_ZH[axis].charAt(0)}」：`
+    : `點【${c1.album}】按發光的「${ATTR_ZH[axis].charAt(0)}」：`;
   const f1 = { who:set.who[0], hp:hp1, startQi:0,
     pdeck:_tutDeck(set.fillers, hand1), edeck:_tutDeck(TUT_E_FILL, TUT_E_HAND1[axis]||TUT_E_HAND1.classic),
-    intro: set.ace ? '🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓。把他打回去。' : '🎙 老闆帶打（上）· 基本功——比星數、三種相剋、品味輾壓',
+    intro: set.ace ? '🎙 老闆帶打（上）· 基本功：比星數、三種相剋、品味輾壓。把他打回去。' : '🎙 老闆帶打（上）· 基本功：比星數、三種相剋、品味輾壓',
     steps:{
       1:{ eAttr:axis, card:c1, attr:axis,
           txt:`🎙 老闆：每張盤有${B('classic')}／${B('obscurity')}／${B('accessibility')}三軸星數（點牌就看得到）。${aceIntro}沒相剋就<b>比星數</b>，差幾星扣幾滴血。` },
       2:{ eAttr:'classic', card:c2, attr:'obscurity',
-          txt:`🎙 老闆：相剋第一課【<b>冷門剋經典</b>】——他要出經典，點【${c2.album}】按「冷」戳他：剋中照你那一軸的星數扣血、氣勢大漲。` },
+          txt:`🎙 老闆：相剋第一課【<b>冷門剋經典</b>】。他要出經典，點【${c2.album}】按「冷」戳他：剋中照你那一軸的星數扣血、氣勢大漲。` },
       3:{ eAttr:'accessibility', card:c3, attr:'classic',
-          txt:`🎙 老闆：第二課【<b>經典剋硬蕊</b>】——他改走前衛硬蕊，用【${c3.album}】按「經」正面壓過去。（⚡氣勢滿了？先留著，最後有用）` },
+          txt:`🎙 老闆：第二課【<b>經典剋硬蕊</b>】。他改走前衛硬蕊，用【${c3.album}】按「經」正面壓過去。（⚡氣勢滿了？先留著，最後有用）` },
       4:{ eAttr:'obscurity', card:c4, attr:'accessibility',
-          txt:`🎙 老闆：第三課【<b>硬蕊剋冷門</b>】——他挖冷門裝神祕，用【${c4.album}】按「硬」拆穿他：稀有不等於厲害。` },
+          txt:`🎙 老闆：第三課【<b>硬蕊剋冷門</b>】。他挖冷門裝神祕，用【${c4.album}】按「硬」拆穿他：稀有不等於厲害。` },
       5:{ eAttr:'classic', card:null, attr:'__ult__',
-          txt:'🎙 老闆：三種相剋都會了！氣勢滿 6 可以放大絕——點任一張牌、按「<b>⚡ 品味輾壓</b>」收下這場。' },
+          txt:'🎙 老闆：三種相剋都會了！氣勢滿 6 可以放大絕：點任一張牌、按「<b>⚡ 品味輾壓</b>」收下這場。' },
     },
-    outro: set.ace ? '🎙 老闆：基本功成了！選個獎勵喘口氣——他不服氣，把朋友叫來了。下一場教你連段充氣勢、還有怎麼用王牌擋大絕。'
-                   : '🎙 老闆：基本功成了！選個獎勵喘口氣——下一場教你連段充氣勢、還有怎麼擋對手的大絕。' };
+    outro: set.ace ? '🎙 老闆：基本功成了！選個獎勵喘口氣。他不服氣，把朋友叫來了。下一場教你連段充氣勢、還有怎麼用王牌擋大絕。'
+                   : '🎙 老闆：基本功成了！選個獎勵喘口氣。下一場教你連段充氣勢、還有怎麼擋對手的大絕。' };
   // ── 第二場：經（開連段）→ 冷（2 連，被硬蕊剋會痛）→ 敵放大絕：王牌七星回擊／割捨防禦 → 經（重鋪）→ 冷（連段＋剋經典收尾）
   const d1=cardOf(set.f2[0]), d2=cardOf(set.f2[1]), d3=cardOf(set.f2[2]), d4=cardOf(set.f2[3]), d5=cardOf(set.f2[4]);
   const block = set.ace ? (7+atk) : 0;   // 七星回擊反傷＝王牌最高星＋攻擊；割捨不反傷
@@ -2814,24 +2814,24 @@ function tutBuild(setKey, atk){
   const hp2 = (cmp(d1.classic,2)-1) + block + (cmp(d4.classic,2)-1) + 2;
   const step3 = set.ace
     ? { eAttr:'classic', eUlt:true, card:d3, attr:axis,
-        txt:`🎙 老闆：他氣勢滿了、要放大絕！你手上有<b>王牌</b>——點【${d3.album}】按「${ATTR_ZH[axis].charAt(0)}」：<b>七星回擊</b>，他的輾壓無效，還反傷他 ${block}。王牌不會被消耗。` }
+        txt:`🎙 老闆：他氣勢滿了、要放大絕！你手上有<b>王牌</b>：點【${d3.album}】按「${ATTR_ZH[axis].charAt(0)}」：<b>七星回擊</b>，他的輾壓無效，還反傷他 ${block}。王牌不會被消耗。` }
     : { eAttr:'classic', eUlt:true, card:d3, attr:'__sac__',
-        txt:`🎙 老闆：他氣勢滿了、要放大絕！手上沒王牌就<b>用牌擋</b>——點【${d3.album}】按「<b>🛡 割捨防禦</b>」：犧牲那張牌抵傷（有王牌時打出王牌更猛，直接反彈）。` };
+        txt:`🎙 老闆：他氣勢滿了、要放大絕！手上沒王牌就<b>用牌擋</b>：點【${d3.album}】按「<b>🛡 割捨防禦</b>」：犧牲那張牌抵傷（有王牌時打出王牌更猛，直接反彈）。` };
   const f2 = { who:set.who[1], hp:hp2, startQi:5,
     pdeck:_tutDeck(draw2, hand2), edeck:_tutDeck(TUT_E_FILL, TUT_E_HAND2),
-    intro: set.ace ? '🎙 老闆帶打（下）· 進階——相生連段、用王牌擋下品味輾壓' : '🎙 老闆帶打（下）· 進階——相生連段、擋下品味輾壓',
+    intro: set.ace ? '🎙 老闆帶打（下）· 進階：相生連段、用王牌擋下品味輾壓' : '🎙 老闆帶打（下）· 進階：相生連段、擋下品味輾壓',
     steps:{
       1:{ eAttr:'classic', card:d1, attr:'classic',
           txt:`🎙 老闆：這位有備而來（看他氣勢條！）。進階課【<b>相生連段</b>】：照 經典→冷門→硬蕊 的順序接招會多充氣勢。先出【${d1.album}】的「經」開頭。` },
       2:{ eAttr:'accessibility', card:d2, attr:'obscurity',
-          txt:`🎙 老闆：接【${d2.album}】的「冷」＝<b>2 連</b>多充氣勢。欸，他氣場偏硬蕊——硬剋冷，這手會痛一下，但連段值得，忍著。` },
+          txt:`🎙 老闆：接【${d2.album}】的「冷」＝<b>2 連</b>多充氣勢。欸，他氣場偏硬蕊，硬剋冷，這手會痛一下，但連段值得，忍著。` },
       3:step3,
       4:{ eAttr:'classic', card:d4, attr:'classic',
-          txt:`🎙 老闆：剛才被剋痛了一下吧？<b>相剋是雙向的</b>，讀氣場防著點。重鋪連段——出【${d4.album}】的「經」。` },
+          txt:`🎙 老闆：剛才被剋痛了一下吧？<b>相剋是雙向的</b>，讀氣場防著點。重鋪連段，出【${d4.album}】的「經」。` },
       5:{ eAttr:'classic', card:d5, attr:'obscurity', alt:'__ult__',
-          txt:`🎙 老闆：收尾——【${d5.album}】的「冷」既接連段<b>又剋他的經典</b>，一石二鳥！（氣勢滿了想直接 ⚡輾壓 也行）` },
+          txt:`🎙 老闆：收尾：【${d5.album}】的「冷」既接連段<b>又剋他的經典</b>，一石二鳥！（氣勢滿了想直接 ⚡輾壓 也行）` },
     },
-    outro:'🎙 老闆：出師前的課都教完了！之後每贏一場挑個獎勵、每五場有位大人物在等你——剩下的牌桌上學。' };
+    outro:'🎙 老闆：出師前的課都教完了！之後每贏一場挑個獎勵、每五場有位大人物在等你。剩下的牌桌上學。' };
   for(const f of [f1,f2]) for(const k in f.steps){ const st=f.steps[k]; st.want = st.card ? keyOf(st.card) : null; }
   return { 1:f1, 2:f2, seeds, axis };
 }
@@ -2850,7 +2850,7 @@ function tutRedirect(st){
   const act = st.attr==='__ult__' ? '按「⚡ 品味輾壓」'
     : st.attr==='__sac__' ? `點【${name}】按「🛡 割捨防禦」`
     : `點【${name}】出「${ATTR_ZH[st.attr]}」`;
-  coachToast('🎙 老闆：這一手先照我說的——'+act+'。出完這場隨你打！');
+  coachToast('🎙 老闆：這一手先照我說的，'+act+'。出完這場隨你打！');
 }
 function startTutorialRun(){
   META.tutorialDone=true;   // 開場就記下：中途關頁也不會被卡在教學圈
@@ -4116,7 +4116,7 @@ function winFight(){
     if(G.tut.fight>=2){
       RUN._tutorial=false;
       // 🏪 課上完了：換回老闆看出來的耳朵（三圍＋專長），第三場起生效
-      if(RUN._profilePending){ applyRookieProfile(); const p=roleOf(RUN); if(p&&RUN.profileKey) outro += `<br>🎙 老闆：接下來換回你自己的打法——<b>【${p.name}】</b>：${p.affDesc}。`; }
+      if(RUN._profilePending){ applyRookieProfile(); const p=roleOf(RUN); if(p&&RUN.profileKey) outro += `<br>🎙 老闆：接下來換回你自己的打法，<b>【${p.name}】</b>：${p.affDesc}。`; }
       // 唱片行那套牌組：接 RPG 尾聲（男子放話、老闆送設備、又有人踢館），老闆的話在尾聲裡講，不疊吐司
       if(RUN.tutSet && RUN.tutSet!=='legacy'){ RUN._tutEpilogue=true; outro=''; }
     }
