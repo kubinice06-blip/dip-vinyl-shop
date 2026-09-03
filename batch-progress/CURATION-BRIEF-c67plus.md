@@ -44,6 +44,9 @@ Johnny's Disk 是什麼樣的廠牌：岩手縣陸前高田的爵士喫茶「開
 - **實掃 `seed_cards.json` 全檔**（13,913 列），每位候選藝人查「名下已有幾張」——**同一藝人池中上限 3 張**，達到就不收。
   日文藝人要三種寫法都查（假名／漢字／羅馬拼音）。
 - 跑 `node batch-progress/c<批>/chk-prop.mjs` 到**標記 0**（它會查線上池、批內跨組、其他未上傳批次）。
+  **`dedup-crossbatch.mjs` 現在兩種來源都掃**（2026-09-03 修，裁定第 132 條）：已建卡單的批次讀
+  `desc-tools/batches/cards/`，**策展定稿但卡單未建的批次讀 `batch-progress/c<批>/prop-*.json`**。
+  報告末行會標明有幾批是讀 prop 的。二十批並行時這一點很重要——修之前有六批彼此看不見。
 - **`batch-progress/c67～c86` 這 20 批是同時在跑的**，別批的 `prop-*.json` 若已存在也會被 `dedup-crossbatch.mjs` 比到，撞了就換。
 
 ## 四、`why` 與 `risk` 要寫什麼
