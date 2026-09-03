@@ -1939,7 +1939,17 @@ function renderRookieHome(){
 // =========================================================================
 const escHtml = s => String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const NAME_MAX = 8;
-const RANDOM_NAMES = ['黑膠新手','B面控','唱針','內圈溝','試聽機','翻箱客','壓片師','封套派','慢轉33','七吋魂','靜電內套','跳針王'];
+const RANDOM_NAMES = [
+  // 器材與規格梗
+  '跳針王','慢轉33','七吋魂','內圈溝','B面控','針壓強迫症','除塵刷','靜電剋星','唱針殺手','原盤至上',
+  // 收藏行為梗
+  '買了沒拆','又敗一張','月底吃土','剁手黨','整箱扛回家','折扣區之王','特價箱撿寶','二手店幽靈','跳蚤市場王','唱片行釘子戶',
+  '初回限定','限量編號','再版也買','雙碟主義','封套派',
+  // 聽法梗
+  '只聽前奏','副歌之前','試聽三分鐘','一次聽完','A面就睡','邊聽邊睡','聽過但忘了','我早就聽過','沒聽過欸','那張我有',
+  // 品味梗
+  '金耳朵','木耳朵','冷門仙人','地下鼴鼠','排行榜絕緣','名盤守門員','低頻怪','音場派','退燒中','燒不完',
+];
 // 三張頂點卡的介紹：一張卡＝一個軸（順便把三軸的文化定位、相剋方向、王牌被動講完）
 const SHOP_ACE_INFO = {
   classic:       { title:'殿堂', axisZh:'經典', what:'大家都聽過、被時間驗證的名盤。', star:'這張經典衝到 <b>7 星</b>。',
@@ -2254,7 +2264,6 @@ function shopLeave(how){
 //  由 winFight 在第二場打完時接手（RUN._tutEpilogue）；關頁續玩走 saveRun('epilogue')。
 // =========================================================================
 function tutEpilogueBeats(){
-  const p=roleOf(RUN); const ear = p && RUN.profileKey ? `【${p.name}】——${p.affDesc}。` : '';
   return [
     { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
     { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
@@ -2263,7 +2272,6 @@ function tutEpilogueBeats(){
     { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
     { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
     { who:'老闆', text:'「我這邊有一些被我淘汰的設備——你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃台底下拖出一個木箱。）' },
-    { who:'老闆', text:`「往後的每一場，都是你自己的打法了。」${ear}` },
     { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
     { who:'', text:'你正要道謝——門，又開了。', stage:{f:'door',fSpr:'e1'} },
     { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
@@ -2274,10 +2282,14 @@ function renderTutEpilogue(){
   saveRun('epilogue');
   rpgStart(tutEpilogueBeats(), {p:'leave',o:'between',f:'door',fSpr:'e0'}, 0);
 }
-// 老闆的木箱：從已解鎖池隨機三件（撞到已持有的同款＝升一級並整新，同藏家掉落）；池空就跳過
+// 老闆的木箱：固定這三件（守／攻／續三個方向，都是 tier 1）——序章走完就是新手，
+// 不會有已持有的重複；「再玩一次教學」時撞到同款仍照藏家規則升一級並整新。
+const TUT_GIFT_RELICS = ['dustcover','stylus','cleaner'];
 function relicPanelHTML(){
-  const pool=relicPool(); if(!pool.length) return '';
-  _relicChoices = shuffle(pool.slice()).slice(0,3);
+  const gift = TUT_GIFT_RELICS.map(relicById).filter(Boolean);
+  const pool = gift.length ? gift : shuffle(relicPool().slice()).slice(0,3);   // 後台把這幾件改掉／刪掉時的後備
+  if(!pool.length) return '';
+  _relicChoices = pool;
   return `<div class="rpg-panel" id="rpgPanel">
     <div class="muted" style="margin:0 0 6px">木箱裡的<b>發燒配件</b>：整趟生效、耗損跨趟保留。選一件帶走。</div>
     <div id="relicChoices">${_relicChoices.map((r,i)=>{
