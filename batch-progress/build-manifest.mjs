@@ -19,7 +19,11 @@ const now = new Date('2026-08-31T00:00:00Z').toISOString();
 const cand = JSON.parse(fs.readFileSync(`${dir}/cand-all.json`, 'utf8'));
 const covers = new Map(JSON.parse(fs.readFileSync(`${dir}/covers.json`, 'utf8')).map(c => [c.artist + '|' + c.album, c]));
 const ratings = JSON.parse(fs.readFileSync(`${dir}/ratings.json`, 'utf8'));
-const previews = fs.existsSync(`${dir}/previews.json`) ? JSON.parse(fs.readFileSync(`${dir}/previews.json`, 'utf8')) : {};
+// c-52 起雲端的 previews.json 是探測原始輸出（previewUrl／collectionId／front，
+// 且含 no-preview 這個驗證器不認的狀態）。stage-cloud-batch.mjs 轉出的
+// previews.local.json 才是本機格式；有它就用它，並保留雲端原檔的原始證據不被蓋掉。
+const pvPath = fs.existsSync(`${dir}/previews.local.json`) ? `${dir}/previews.local.json` : `${dir}/previews.json`;
+const previews = fs.existsSync(pvPath) ? JSON.parse(fs.readFileSync(pvPath, 'utf8')) : {};
 
 // 策展檔：identity 欄位（別名檢查、人工身分舉證、合輯例外）都在這裡
 const curated = new Map();
@@ -105,7 +109,7 @@ for (const a of cand) {
     ...(srcs.get(a.key) || []),
     ...(a.rgMbid ? [`https://musicbrainz.org/release-group/${a.rgMbid}`] : []),
     ...(cur.exceptionEvidenceUrls || []),
-    ...(cur.manualEvidenceUrls || []),
+    ...(cur.manualEvidenceUrls || a.manualEvidenceUrls || []),
   ].filter(u => /^https:\/\//.test(u)))];
 
   const lack = [];
@@ -167,9 +171,11 @@ for (const a of cand) {
   }
   if (manual) {
     identity.identitySource = 'manual';
-    identity.mbAbsenceProof = cur.mbAbsenceProof;
-    identity.manualEvidenceUrls = cur.manualEvidenceUrls || [];
-    identity.manualRuling = cur.manualRuling || '';
+    // 人工身分的舉證可能來自策展檔，也可能是本機補的（<批>/identity-manual.json 疊進卡單）。
+    // 兩邊都收——c-52 那兩張是本機才補齊 MB 查無舉證的。
+    identity.mbAbsenceProof = cur.mbAbsenceProof || a.mbAbsenceProof;
+    identity.manualEvidenceUrls = cur.manualEvidenceUrls || a.manualEvidenceUrls || [];
+    identity.manualRuling = cur.manualRuling || a.manualRuling || '';
   } else {
     identity.rgMbid = a.rgMbid;
   }
@@ -187,7 +193,12 @@ for (const a of cand) {
     // 兩套都收，否則同一支腳本重跑舊批就會把年份與曲風寫成空的。
     research: { suggestedYear: candYear(a), yearNote: a.yearNote || '' },
     genres: candGenres(a),
-    cover: { url: cov.cover.url, source: cov.cover.source, httpStatus: 200, checkedAt: now },
+    cover: {
+      url: cov.cover.url, source: cov.cover.source, httpStatus: 200, checkedAt: now,
+      // §4 的 apple-verified-collection 例外要件：記下確切的 collectionId 供本機 lookup 覆核
+      ...(cov.appleCollectionId ? { appleCollectionId: String(cov.appleCollectionId) } : {}),
+      ...(cov.cover.note ? { note: cov.cover.note } : {}),
+    },
     ratings: {
       classic: rt.classic, obscurity: rt.obscurity, accessibility: rt.accessibility,
       listeners, source: rt.source || 'worker:/album-rating', checkedAt: now,
