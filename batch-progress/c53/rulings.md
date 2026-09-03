@@ -2557,3 +2557,31 @@ c-66 的 a 組研究代理回報：**S.D. Burman《Guide》釘的是 EP**，而�
 （第一種是第 99 條：`make-cards-generic.mjs` 從舉證敘述裡抽藝人 MBID 當 rgMbid）。
 兩次都是**腳本比策展層「更聰明」**。往後任何會改寫 `rgMbid` 的腳本，
 都要先問一句：策展層有沒有明說過釘哪個？有的話，改之前得先解釋為什麼它錯了。
+
+## 127.（c-66）Vilayat Khan 改 1962、Amjad Ali Khan 改 1979——Discogs 原盤直記的年份覆蓋 MB
+
+c-66 的 b 組研究層報了四筆年份分歧，依第 86／103 條的判準（**「有來源直接寫出的年份」
+才能覆蓋卡單值，「依目錄號推斷」的不行**）逐筆處理，並回問 Discogs API 親自核過：
+
+| 卡 | 卡單 | 改成 | 證據 |
+|---|---|---|---|
+| **Vilayat Khan《The Genius of Vilayat Khan》** | 1966 | **1962** | master 900353 年份 1962；底下三筆印度原盤（HMV EALP 1266 兩筆、Odeon MOAE 109）**全部直記 1962**。MB 的 1966 無佐證 |
+| **Amjad Ali Khan《Raga Darbari》** | 1975 | **1979** | master 1018264 年份 1979；底下**六筆**印度原盤（HMV ECSD 2824 四筆、STCS 04B 1115、Odeon）**全部直記 1979**，最早的再版才 1996。MB 的 1975 無佐證 |
+| Bismillah Khan《Raga Todi • Mishra Thumri》 | 1962 | **維持** | MB 與 Discogs master 都記 1962，只有兩筆 HMV EALP 1254 標 1961。差一年、master 與卡單一致 → 依第 18／46 條維持，`notes` 禁斷言發行年 |
+| Satyajit Ray《Goopy Gyne & Bagha Byne》 | 1969 | **維持** | **卡單對、MB 錯**。1969 有 Angel EP（TAE. 4029 等三筆）＋電影上映日兩重證據；MB 的 1970 是 Regal LP 那版 |
+
+前兩筆的共同形狀：**MB 給一個沒有佐證的年份，Discogs 上一整排同目錄號的原盤壓片一致地記另一個年份。**
+這正是第 86 條 Robert Nighthawk 與 Big Joe Williams 那兩張的形狀，照先例走。
+第 103 條（Μητσάκης 維持 1966）不適用——那次 Discogs 的年份是**依目錄號推斷**出來的，
+這次是六筆實體條目各自直記。
+
+已改 `c66-cards.json` 與 `prop-b.json` 兩處。**年份是 manifest 欄位、可逆**，
+依裁定權下放的三條判準直接定，不上呈。
+
+### 附帶：`qa-batch` 的「非拉丁亂碼」對天城體是誤報
+
+`research-b` 被標了 `शहनाईगतरोडीमि्ठु`。逐條看過，那是 Bismillah Khan 那張的事實在
+**照實引用唱片上並列印出的天城體曲名**（A 面「शहनाई गत राग तोडी = Shehanai Gat Raga Todi」），
+不是編碼壞掉。掃描器把跨欄位的非拉丁字元接在一起才看起來像亂碼。
+**印度、希臘、西里爾這幾條線都會踩到這個誤報，看到要逐條核對，不要直接照著「修」。**
+同批的「千分位逗號 5,888」是真的，已清掉。
