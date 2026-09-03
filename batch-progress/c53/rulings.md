@@ -2682,3 +2682,39 @@ hook 層交件前要自己把整組 hook 排在一起讀一遍，問的不是「
 同批另一處由同一支代理處理：研究稿把「團名出自 Mervyn Peake《Gormenghast》」
 同時派給 Titus Groan 與 Fuchsia，前者已用掉——依第 58／107 條讓給先到的那張，
 後者改走「只登過一則《Melody Maker》廣告」。**先到先得，後到的換錨點。**
+
+## 132.（c-73）跨批去重只掃卡單，看不見「策展定稿、卡單未建」的批次；順帶修掉括號誤剝
+
+c-73 的策展層回報：**共用簡報第三節說 `dedup-crossbatch.mjs` 會掃 `prop-*.json`，
+但程式碼只掃 `desc-tools/batches/cards/*-cards.json`。** 它自己另外手跑了 46 個 prop 檔比對。
+
+**這是第 119 條那個縫隙的第二層。** 第 119 條補的是「chk-prop 不比對其他待上架批次」，
+但補法是掃**卡單**——而卡單要等策展定稿、`make-cards-generic` 跑過才存在。
+**二十批並行時，「prop 有、cards 沒有」的批次彼此完全看不見**：c-73 交件當下就有六批處於這個狀態。
+
+**裁定：`dedup-crossbatch.mjs` 兩種來源都掃。** 卡單優先（已建卡單的以卡單為準），
+沒有卡單就回退讀該批的所有 `prop-*.json`；報告末行標明有幾批是讀 prop 的。
+
+**改完立刻抓到一個一直都在的誤報**：
+
+```
+⚠ c51 Peter Gabriel《Peter Gabriel (Security)》1982  ←→  c51 Peter Gabriel《Peter Gabriel (Car)》1977
+```
+
+`strip` 無條件剝掉所有括號內容，兩張都變成 `petergabriel|petergabriel`。
+**括號裡正是區別兩張碟的東西**——自我同名系列（Peter Gabriel 四張、Weezer 的顏色盤、
+Led Zeppelin）全是這個形狀。
+
+**裁定：括號只在裡面是再版裝飾詞時才剝。** 新增 `DECOR` 白名單
+（remaster／reissue／deluxe／expanded／edition／anniversary／version／mono／stereo／
+bonus tracks／soundtrack／ost，前面可帶年份、original、digitally、motion picture），
+不在名單上的括號原樣保留。回歸測試 10/10：
+`Guide (Original Motion Picture Soundtrack)` → `guide`、
+`Qurbani (Original Motion Picture Soundtrack / Remastered)` → `qurbani`、
+`Peter Gabriel (Car)` 與 `(Security)` 分得開。
+
+**這兩個錯的共同點與第 129 條一樣：工具的正規化比它該做的更用力。**
+剝掉的東西越多，越容易把不同的碟壓成同一個鍵。**正規化要剝的是「同一張碟的不同版本標記」，
+不是「所有看起來像附註的東西」。**
+
+改完全庫重跑：**24 批（其中 3 批讀 prop）、1259 張、跨批撞卡 0。**
