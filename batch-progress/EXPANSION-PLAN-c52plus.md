@@ -526,3 +526,45 @@ a 組只做得出 14 張，原因不是策展問題而是**基建問題**：柬�
    c-65 的 44 張與 c-66 的 40 張都這樣做，跨組撞句式 0。
 3. **代理落檔續跑**：容器會不定時重啟，派工一律要求「每做完 N 筆就落檔」
    與「輸出檔已有部分內容就接續補完」。這一輪至少救回四次。
+
+---
+
+## 2026-09-03：店主指示續開 c-67～c-86（「繼續策展 20 批次，回到日本、英國、美國等地的深度小眾有趣的專輯，比如 Johnny's Disk 這種廠牌」）
+
+**全部走深掘線，以廠牌與場景為單位，日／英／美輪替。** 共用簡報在 `batch-progress/CURATION-BRIEF-c67plus.md`。
+
+開批前實掃 `seed_cards.json`（13,913 列）的結果決定了每個場景要挖的層：
+- **整片為零**：日本自主爵士小廠（池中只有中山英二 2 張）、日本 prog 私家版（0）、沖繩（1）、
+  美國 Xian 私壓（1）、英國 neo-prog 自主制作（只有 Marillion）。
+- **核心在池、要挖二線**：美國福音（30 張核心四重唱與唱詩班都在）、美國 old-time／bluegrass（12 張核心）、
+  美國 1980s 地下（45 張，全是 SST／Twin/Tone 的 A 面）、英國 1990s 微廠（48 張，Stereolab 到 BoC 都在）、
+  英國雷鬼（25 張核心）、美國私壓 SSW（30 張，Bill Fay 到 Sixto 都在）、英國 1980s indie pop（Sarah 3 張）。
+- **要特別小心撞卡**：日本 1980s indie（Phew、INU、有頂天、筋肉少女帯、たま在池）、日本環境音樂（吉村弘到小久保隆 8 張在池，
+  只剩窄縫，故與沖繩合成一批）。
+
+| 批 | 地 | 場景 | 目標 |
+|---|---|---|---|
+| c-67 | 日 | 自主爵士小廠 1975–88（Johnny's Disk、Aketa's Disk、Union、Frasco、Nadja／Trio、ALM Uranus、Offbeat、Whynot、爵士喫茶自主盤） | 30–45 |
+| c-68 | 英 | 私壓與小廠 prog／psych 1969–75（Deroy、SRT、Holyground、Dawn／Neon 二線） | 30–45 |
+| c-69 | 美 | 私壓 SSW 與 loner folk 二線 1968–80（Numero、Tompkins Square、Drag City、Light in the Attic 挖出的那一層） | 30–45 |
+| c-70 | 日 | a 1979–84 地下 new wave 廠牌（ピナコテカ／テレグラフ／ヴァニティ）、b 1984–90 indie 廠牌（ナゴム／キャプテン／Wax／Transistor） | 30–45 |
+| c-71 | 英 | 自主爵士與即興廠牌 1969–85（Ogun、Incus 二線、Cadillac、Turtle、Spotlite、Bead、Mosaic） | 30–45 |
+| c-72 | 美 | 耶穌搖滾與 Xian 私壓 1969–80 | 30–45 |
+| c-73 | 日 | prog 私家版與小廠 1978–90（Made in Japan、Belle Antique、King's Nexus、自主盤） | 30–45 |
+| c-74 | 英 | 1980s indie pop 微廠（él、Sarah 二線、Subway、Fierce、53rd & 3rd、Fast Forward） | 30–45 |
+| c-75 | 美 | 黑人福音小廠二線 1955–80（Nashboro、Savoy、Peacock、HOB、Jewel、Creed） | 30–45 |
+| c-76 | 日 | a 沖繩民謡與島唄 1960–95、b 環境音樂與ニューエイジ二線 1982–92 | 25–40 |
+| c-77 | 英 | DIY post-punk 與卡帶文化 1978–84（Messthetics、Fuck Off、Deleted、Object、Falling A、Absurd） | 30–45 |
+| c-78 | 美 | old-time 與 bluegrass 小廠二線（County、Rounder 早期、Kanawha、Puritan、Davis Unlimited、Old Homestead） | 30–45 |
+| c-79 | 日 | SSW 與 folk 私家版／小廠二線 1971–80（URC／Bellwood／Elec 二線、自主制作） | 25–40 |
+| c-80 | 英 | neo-prog 自主制作 1980–86 | 25–40 |
+| c-81 | 美 | 1980s 地下廠牌 B 面（Homestead、Twin/Tone 二線、Ruthless、Frontier、New Alliance、Enigma、Coyote） | 30–45 |
+| c-82 | 日 | 1990s 地下 techno／ambient 廠牌（Sublime、Frogman、Transonic、Reel Musiq、Syzygy） | 30–45 |
+| c-83 | 英 | 1990s 微廠二線（Wurlitzer Jukebox、Ochre、Earworm、Enraptured、Rocket Girl、Duophonic、Too Pure B 面） | 30–45 |
+| c-84 | 美 | 1990s lo-fi 卡帶與微廠（Shrimper、Union Pole、Teen-Beat、Simple Machines、Catsup Plate） | 30–45 |
+| c-85 | 英 | a lovers rock 與 UK roots 小廠 1975–88（Ariwa、Fashion、Cha Cha、Arawak、Burning Sounds）、b 1990s UK dub 小廠 | 30–45 |
+| c-86 | 美 | 自主爵士廠牌 1969–82（Nimbus West、Tribe、Black Jazz、India Navigation、Survival、Adelphi、Saturn 二線） | 30–45 |
+
+**管線與上一輪相同**：策展 → `make-cards-generic` → `fix-rgmbid` → `probe-caa-generic` → `probe-previews`
+→ 研究（兩組）→ hook（兩組）→ `merge-writer-input` → 寫作（兩組）→ HANDOFF。
+併行上限四支、每層落檔續跑、check-in 25 分鐘一次。**這 20 批不開 §1 人工身分路線**。
