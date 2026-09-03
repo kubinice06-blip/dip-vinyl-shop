@@ -763,7 +763,7 @@
   function normalizePreviewText(value) {
     return String(value || '').normalize('NFKD').toLowerCase()
       .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
+      .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
   }
 
   function appleAudioKey(artist, album) {

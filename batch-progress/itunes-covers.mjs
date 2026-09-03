@@ -27,15 +27,23 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const norm = s => String(s || '').toLowerCase()
   .replace(/[（）()【】\[\]・·,，。.\s'’"”:：!！?？\-–—_/／]/g, '');
 
+// storefront 要跟著唱片的產地走。台灣店面查不到希臘 rebetiko 與蘇聯 Мелодия 的盤，
+// 這不是「Apple 沒有這張碟」，是查錯了店面——c-62 的 7 張全空就是這樣來的。
+// 用 --country=gr,us 指定，預設仍是 tw。
+const ci = process.argv.findIndex(a => a.startsWith('--country='));
+const COUNTRIES = ci >= 0 ? process.argv[ci].split('=')[1].split(',').filter(Boolean) : ['tw'];
+
 async function search(term, entity = 'album') {
-  const u = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=${entity}&country=tw&limit=25`;
-  for (let i = 0; i < 3; i++) {
-    try {
-      const r = await fetch(u, { signal: AbortSignal.timeout(25000) });
-      if (r.ok) return (await r.json()).results || [];
-      if (r.status === 403) return [];                 // 又被擋就別重試，直接回空
-    } catch { /* retry */ }
-    await sleep(1500 * (i + 1));
+  for (const country of COUNTRIES) {
+    const u = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=${entity}&country=${country}&limit=25`;
+    for (let i = 0; i < 3; i++) {
+      try {
+        const r = await fetch(u, { signal: AbortSignal.timeout(25000) });
+        if (r.ok) { const res = (await r.json()).results || []; if (res.length) return res; break; }
+        if (r.status === 403) break;                   // 又被擋就別重試，換下一個店面
+      } catch { /* retry */ }
+      await sleep(1500 * (i + 1));
+    }
   }
   return [];
 }

@@ -45,5 +45,12 @@ for (const g of groups) {
     if (/live|現場/i.test(r.risk || '')) { console.log(`  ？ ${tag}：risk 提到現場盤，待主線覆核`); warn++; }
   }
 }
+// 跨批去重（2026-09-02 新增，裁定第 119 條）：chk-prop 原本只比「線上池」與「批內跨組」，
+// 漏掉「其他待上架批次」。這裡在結尾串跑共用的 dedup-crossbatch.mjs。
+import { execFileSync } from 'node:child_process';
+try {
+  execFileSync(process.execPath, [path.join(ROOT, 'batch-progress/dedup-crossbatch.mjs')], { stdio: 'inherit' });
+} catch { bad++; console.log('  ⚠ 跨批去重未通過（見上）'); }
+
 console.log(`\n合計 ${total} 張｜ERROR ${err}｜待覆核 ${warn}`);
 process.exit(err ? 1 : 0);

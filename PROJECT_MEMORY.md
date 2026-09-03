@@ -58,6 +58,130 @@
 
 **待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）；沒做「再逛唱片行」。
 
+### 2026-09-03｜dip-vinyl-shop＋dip-vinyl-worker｜c-52 至 c-64 十三批本機上架 504 張，並清掉卡池九張重複卡
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（216 筆提交）快轉合併，
+把 c-52 到 c-64 全部走完本機段。合併前先 stash 另一個工作階段未提交的
+`PROJECT_MEMORY.md` 改動，合併後 pop 回來。
+
+**上架結果：候選 581 張、上架 504 張、留置 77 張、頂點 0 張。**
+卡池 13,418 → 13,913（其中先移除 9 張重複卡），無年份 0、無曲風 0。
+card_catalog 504/504 成功、KV 504 筆逐字回讀一致、四道 published gate 全部 0 error。
+
+| 批 | 候選 | 上架 | 留置 | 留置原因 |
+|---|---:|---:|---:|---|
+| c-52 東南亞收尾 | 25 | 14 | 11 | 封面 10、自我同名缺試聽 1 |
+| c-53 蘇聯／俄語圈 | 69 | 63 | 6 | 封面 6 |
+| c-54 南斯拉夫 | 41 | 31 | 10 | 自我同名缺試聽 10 |
+| c-55 土耳其與阿拉伯 | 45 | 38 | 7 | 自我同名缺試聽 4、封面 3 |
+| c-56 中東歐地下 | 38 | 32 | 6 | 封面 3、自我同名缺試聽 3 |
+| c-57 牙買加 | 50 | 46 | 4 | 封面 4 |
+| c-58 深掘靈魂放克 | 45 | 39 | 6 | 自我同名缺試聽 4、封面 1、試聽 1 |
+| c-59 深掘爵士 | 46 | 43 | 3 | 封面 3 |
+| c-60 深掘搖滾迷幻 | 49 | 47 | 2 | 自我同名缺試聽 1、封面 1 |
+| c-61 深掘搖滾續批 | 51 | 46 | 5 | 自我同名缺試聽 5 |
+| c-62 希臘 | 38 | 32 | 6 | 封面 6 |
+| c-63 深掘民謠與藍調 | 52 | 44 | 8 | 封面 8 |
+| c-64 柬埔寨與越南 | 32 | 29 | 3 | 封面 3 |
+
+## 一、抓到並修好一個會讓非拉丁文字卡全部撞鍵的缺陷
+
+固定試聽的鍵規則（`normalizePreviewText`）只保留 `a-z0-9` 與 CJK／韓文，
+**其餘文字系統整段被剝成空字串**。後果不是「查不到」而是「全部撞在同一個鍵上」：
+西里爾、希臘、泰、阿拉伯、希伯來、天城體、高棉的卡共用一格，先寫的被後寫的蓋掉。
+
+c-53 的 published gate 當場抓到：`Кино《Группа крови》` 讀到的是泰文卡
+`คาราบาว《เวลคัมทูไทยแลนด์》`（09-01 上架的 c-SEA）的試聽網址。
+`Кино` 與 `Группа крови` 兩段都被剝空，鍵變成 `" "`。
+
+**這與 2026-08-28 修韓文 Jamo 是同一個病**，只是缺的文字系統不同。
+補上希臘、西里爾、希伯來、阿拉伯、天城體、孟加拉、泰、寮、緬、喬治亞、
+亞美尼亞、衣索比亞、高棉。**鍵規則有六份拷貝，必須同時改**：
+`dip-player.js`、`scripts/publish-manifest.mjs`、`scripts/build-apple-audio-map.mjs`、
+`scripts/verify-album-onboarding.mjs`、`scripts/fix-cleaned-previews.mjs`、
+worker 的 `normalizePlayback`（commit `765872e`，已部署）。
+另把 `data/apple-audio-map-v1.json` 依各筆自存的 artist／album 重算鍵（8 筆改變，
+含 μ‐Ziq 兩張——希臘字母 μ 也在被剝之列），再重跑 `--write-preview` 補回 35 筆。
+
+## 二、冷門軸首次套用 §0.8 錨點制
+
+雲端 09-02 立的 §0.8（店主核可）規定「深掘線」與「非拉丁文字的廣度批」冷門軸改人工錨點。
+新寫 `batch-progress/anchor-obscurity.mjs`：依策展層記的原盤形態（私壓／小廠／磁帶）、
+是否有考古再發、是否已進串流，逐張對到 §0.8 表格的哪一列，並把依據寫進
+`ratings.obscurityNote`；**只產提案不自動寫回**，`--write` 才落檔。
+
+實測後把適用範圍從「非拉丁文字」擴到**所有非英語圈的區域批**（c-52／54／55／56 一併套），
+理由是 listeners 中位數說明了問題：c-62 希臘 13、c-64 柬越 34、c-53 蘇聯 217——
+Σωτηρία Μπέλλου 在希臘家喻戶曉，Last.fm 上 13 個聽眾。
+c-57 牙買加改套 depth（英語圈、國際流通，機器值不失真，但這批收的是 dub 與 rocksteady 深盤）。
+
+結果：全 13 批冷門軸 `{2:5, 3:268, 4:304, 5:4}`，機器原本給 267 張 5 分。
+**錨點 5 分的 15 張逐張複核，只留 4 張**——關鍵字判到的「私壓／地下」有一半是誤判，
+原盤其實是 Мелодия、Supraphon、Panton、Qualiton、RCA Italiana、PGP-RTB 這些國營或大廠
+（Высоцкий、Karel Kryl、Blue Effect、Illés、Il Rovescio della Medaglia、Buldožer）。
+
+## 三、封面補救四層，逐張裁決退回 11 張
+
+雲端交來 507/581 有封面。四層補救：iTunes 搜尋（+10）、
+**試聽探測已釘到 collectionId 的直接 lookup 取官方圖**（+12，新腳本
+`apple-cover-from-preview.mjs`，走 §4 的 apple-verified-collection 例外）、
+Spotify／Bandcamp（+18）、希臘與蘇聯改用當地 storefront 重查（+0）。
+
+**逐張核對後退回 11 張**：`Пop Melayu Volume 4` 冒充 Koes Plus《Volume 4》、
+英國廠牌的《Chav Bangers Volume 1》冒充 Panbers《Volume 1》、Ruhi Su 兩張二合一再發、
+John Holt 1 軌單曲、Mr. Fox 後期選輯、《The Return Of...》續集輯、Lobi Traoré 另一張現場碟、
+Магомаев 選輯輯次、Иверия「音樂劇片段」、Tõnu Naissoo 的 collectionName 只回一個字母「R」。
+另有三張是**正確的碟但用數位再發的模板圖**，照 §4 放行並記在
+`batch-progress/COVER-TEMPLATE-NOTES.md`，日後掃到原盤可換。
+
+最終 48 張因封面留置。**Spotify／Bandcamp 命中一律要看 og／embed 的實際作品名再定**，
+八張裡有五張是錯的——這比率與 2026-09-01 那次一致。
+
+## 四、卡池移除九張重複卡、改名兩張（店主 09-03 指示「移除卡的事情可以在這邊做」）
+
+雲端稽核累積下來的「留本機處理」清單，逐筆查池核實後處理：
+
+- **普卡與王牌同碟**（規則明定已在王牌池的不得再以普卡上架，組裝器比對字串鍵擋不下來）：
+  Weezer《Weezer》vs hall《Weezer (Blue Album)》、The Velvet Underground & Nico vs hall、
+  Ms. Lauryn Hill vs hall、Kraftwerk《Trans Europa Express》vs hall《Trans-Europe Express》、
+  The Police《Reggatta de Blanc》vs hall。
+- **兩張普卡同碟**：`Ryuichi Sakamoto 坂本龍一`《async》vs `坂本龍一`《async`；
+  `The Oscar Peterson Trio`《Night Train》vs `Oscar Peterson`。
+- **王牌池內重複**：Throbbing Gristle《D.o.A》冒號版與句點版，留 MB 正規的冒號版。
+- **改名兩張**：王牌 `John Coltrane Quartet`《Ballads》→`John Coltrane`、
+  王牌 The Police《Regatta de Blanc》→《Reggatta de Blanc》（樂團自創的仿法文拼寫，雙 g）。
+  **只在「目標鍵已經在池中存在」時才改名**——這樣 KV 與 card_catalog 都是現成的，
+  改完直接承接，不會弄丟封面與簡介。
+
+同步刪掉 9 個孤兒 `desc2:` 鍵，並以 bulk get 驗證（**不是** `/album-desc`，那會觸發重新生成回寫）。
+
+**還沒動的同類問題**（目標鍵在池中不存在，改名會弄丟封面，需要另做遷移）：
+`Toots & The Maytals`(1)／`Toots and the Maytals`(3)、
+`Smashing Pumpkins`(3)／`The Smashing Pumpkins`(3)、
+`Ryuichi Sakamoto 坂本龍一` 剩下兩張、希臘五張羅馬轉寫掛名、
+`Keiji Haino`《Watashi Dake?》年份記 2017（應為 1981 原盤）。
+
+## 五、管線另外補的三處
+
+1. **`apple-verified-collection` 沒進驗證器的封面來源白名單**——§4 的例外 09-02 寫進文件了，
+   驗證器沒跟著改，13 批裡有 6 批被擋。補進白名單，並加一道「必須附 `cover.appleCollectionId`」
+   的檢查，讓例外的要件真的被驗到。
+2. **`published` 旗標沒有工具可翻**——新寫 `scripts/mark-manifest-published.mjs`。
+   它不是橡皮圖章：`seedCards`／`apexPool` 是**實際查卡池**得到的結果，查不到就留 false 讓 gate 擋下。
+3. **雲端與本機的檔案形狀不一樣**——新寫 `batch-progress/stage-cloud-batch.mjs` 當接縫
+   （cards→cand-all、caa＋apple-art＋卡單自帶→covers、探測輸出→previews.local），
+   並保留雲端原檔不被蓋掉。`build-manifest.mjs` 改成優先讀 `previews.local.json`。
+
+## 六、逐張機械掃描修了 8 處文字
+
+`review-scan.mjs` 掃 581 張：榜單名次用中文數字 7 處（池中既有 186 處都是「第 N 名」）、
+「滾石樂團」1 處（人名一律拉丁原文）。Hot 100 年代錯置、千分位逗號、最高級宣稱皆 0 命中。
+剩下的命中（引號 87、「並非」1）逐一看過都是誤報。
+
+**驗證**：13 份 manifest 的 prepare gate 全部 0 error（504 張）；
+published gate 全部 0 error；`build-apple-audio-runtime-map` skippedInvalid=0；
+KV bulk get 逐字比對 504 筆 0 不符；卡池 13,913 列、無年份 0、無曲風 0。
+
 ### 2026-09-01｜dip-vinyl-shop｜c-51／c-SEA 本機上架 230 張，並解除 c-48／c-50 留置 10 張
 
 雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 36 筆）帶著 c-51（155 張，

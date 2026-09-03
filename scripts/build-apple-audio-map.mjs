@@ -19,7 +19,7 @@ const deep = args.has('deep');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const normalized = value => String(value || '').normalize('NFKD').toLowerCase()
   .replace(/[\u0300-\u036f]/g, '')
-  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]+/g, '');
+  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
 const hasCjk = value => /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/.test(value || '');
 const albumCore = value => normalized(String(value || '')
   .replace(/[\(\[\{][^\)\]\}]*(?:remaster(?:ed)?|deluxe|expanded|anniversary|reissue|edition|live)[^\)\]\}]*[\)\]\}]/gi, ' ')
