@@ -18,6 +18,9 @@
    清的是預覽網域自己的 localStorage 與 `firebaseLocalStorageDb`（預覽站與正式站是不同來源，資料本來就各自獨立）。
    另給右下角「🧪 重置」鈕（`body.in-battle` 時隱藏，免得壓到手牌）與首次進站的提示條（15 秒內跨頁仍會顯示，因為主選單會馬上轉去序章）。
 
+5. 序章第 6 句改寫：櫃台上那兩張從「剛拆封的」改成「封套邊緣磨得毛毛的，一看就塵封很久了」——
+   老闆待會要說「這是我的私人收藏」，剛拆封與私藏矛盾。
+
 **主要檔案**：`roguelike.html`、`dip-character.js`、`pvp.html`／`battle.html`（`?v=2`）、`ROGUELIKE_DESIGN.md` §2.0。
 
 **驗證**：腳本過 `node --check`；Playwright 390×844 重跑整條——隨機取名連按 8 次全不重複且都在字數內；
