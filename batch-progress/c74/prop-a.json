@@ -363,5 +363,85 @@
   "queryAlias": "",
   "reissuedBy": "Midi Inc.／Clairecords／The Subway Organization",
   "g": "a"
+ },
+ {
+  "artist": "The Chesterfields",
+  "album": "Kettle",
+  "year": 1987,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "The Subway Organization",
+  "why": "Yeovil 的 The Chesterfields 是 Subway Organization 的第二支主力團，《Kettle》是廠牌的第三號專輯編號（SUBORG 3，1987-06-16，Discogs release 1078156）。Discogs 上這支團的實體名寫成「The Chesterf!elds」——封面把 i 印成驚嘆號，那是他們自己的寫法。地位證據是兩次授權再發：1993 年倫敦的 Vinyl Japan 以 ASKCD 30 出 CD 版（Discogs release 1394455，標 RE），以及 NOR 1 編號的黑膠再壓（release 5391968）；同期西班牙另有 D-LP-1037 的授權壓片（release 9195358）。1994 年日本 Midi Inc. 買下整套 Subway 目錄授權時，也把廠牌史整理成《\"Whole Wide World\" (The Subway Organisation Label 1986-1990)》兩輯（MDCP-4009／4010）。池中實掃 seed_cards.json 全 13,913 列，The Chesterfields 與 Subway 這條線皆零張。",
+  "risk": "掛名分歧：Discogs 實體名是「The Chesterf!elds」（驚嘆號代替 i），MB 實體名與 2022 年復出專輯用「The Chesterfields」。本卡採無驚嘆號的通行寫法（裁定第 11 條：credit 變體歸 queryAlias），驚嘆號寫法已填 queryAlias；帶驚嘆號的字串在多數 API 上會被吃掉，兩種都要試。MB 上另有 2003 年的自我同名專輯《The Chesterfields》(48cd474c…) 與 1994 年的《Flood》，去重要看 rgMbid。MB 轄下有一筆 1999-08-17 的美國 release 沒有廠牌資訊，來源不明、不引用。封面預估：Discogs 有原盤封面圖；試聽預估：中，1993 年 CD 版之後有數位流通。",
+  "mbNote": "釘 ad941d52-8b01-3bf7-b29c-bfea3a12009c《Kettle》，artist-credit「The Chesterfields」，first-release-date 1987-06-16，primary-type Album、secondary-types 空。轄下 2 個 release 皆 Official：1987-06-16 GB（Subway Organization SUBORG 3）、1999-08-17 US（無廠牌資訊）。已回問 release-group 端點確認實體類型與標題。同藝人的 847d0946-07fa-3266-8e3d-7dac2f0c0695《Crocodile Tears》(1988, Household)、48cd474c-2194-3208-a37b-667876964b2c《The Chesterfields》(2003，自我同名)、0b2145b6-458a-3eb0-973a-fc3aba5781d0《Electric Guitars in Their Hearts: The Best of the Chesterfields》(2006, Compilation) 皆刻意不釘。藝人 MBID f2f231ab-8d1b-4207-8b13-513787b1ba10，名下 11 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Chesterf!elds",
+  "reissuedBy": "Vinyl Japan",
+  "g": "a"
+ },
+ {
+  "artist": "The Groove Farm",
+  "album": "Alvin Is King!",
+  "year": 1988,
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "label": "The Subway Organization",
+  "why": "Bristol 的 The Groove Farm 在 Subway Organization 的唯一一張專輯，SUBORG 9（1988-12，Discogs master 361010，另有一張 test pressing release 7040396）。這支團其餘的出版品全是 EP 與 7 吋（Subway 的《Going Bananas With...》SUBWAY 15T、《The Big Black Plastic Explosion!》、《Driving In Your New Car》），《Alvin Is King!》是唯一一張 LP。地位證據是 1994 年日本 Midi Inc. 買下 Subway 整套目錄授權時的 CD 再發 MDCP-4013（Discogs release 3048371，與同批 The Flatmates 的 MDCP-4014、The Charlottes 的 MDCP-4012 是同一次授權）。master 361010 的 3 個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，The Groove Farm 與 Subway 這條線皆零張。",
+  "risk": "盤名分歧：MB 標題作《Alvin Is King》、Discogs 的原盤與所有版本作《Alvin Is King!》（帶驚嘆號）。本卡採原盤寫法（裁定第 50 條），因此卡片盤名與所釘 release-group 的標題不完全相等——這是裁定第 91／95 條允許的形狀，下游腳本不得據此改釘。驚嘆號在部分 API 的字串搜尋會被吃掉，去驚嘆號的寫法已填 queryAlias。MB 上另有 a0d9c416-436a-4467-a90c-adf4c619db76《Plug (The Story of Pop So Far)》(1989) primary-type 為空，不釘。封面預估：Discogs master 有圖；試聽預估：低，1994 年日本 CD 之後沒有數位再發紀錄。",
+  "mbNote": "釘 54861231-0809-3abe-a7bb-aa4e561c1cde《Alvin Is King》，artist-credit「The Groove Farm」，first-release-date 1988-12，primary-type Album、secondary-types 空。轄下 1 個 release：1988-12 GB（Subway Organization SUBORG 9），Official。已回問 release-group 端點確認實體類型與標題。卡片盤名採原盤的《Alvin Is King!》，與 release-group 標題差一個驚嘆號，刻意如此。同藝人的 c79e78f6-47e0-3a67-accc-1a2d92d38e5f《The Best Parts... Volume 1》(2001, Album/Compilation)、0f5ba5b7-6397-497a-b58e-4a701c0a5b3a《I Know It's Only Indiepop...But I Like It》(2011, Album/Compilation) 刻意不釘。藝人 MBID f35db0a7-782e-41b4-b496-0b6694125640，名下 9 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alvin Is King",
+  "reissuedBy": "Midi Inc.",
+  "g": "a"
+ },
+ {
+  "artist": "14 Iced Bears",
+  "album": "14 Iced Bears",
+  "year": 1988,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Thunderball Records",
+  "why": "Brighton 的 14 Iced Bears 從 1985 年起在 Frank 與 Sarah 之外的一連串小廠出 EP，這張自我同名首張專輯 1988-11-07 由 Thunderball Records 發行（TBLP 1，經 The Cartel 配銷，Discogs master 1206566，另有一張 test pressing release 17906197）。這支團在 MB 上留下兩次 John Peel session 的建檔（1986-11-26 與 1987-07-27），是當年 Peel 節目常客的直接紀錄。地位證據是 2017 年 Optic Nerve Recordings 的授權黑膠重製 OPT4.023（Discogs release 10540131，另有 2016 年的宣傳 CD 12531659 與一張 test pressing 10655248）。master 1206566 的 5 個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，14 Iced Bears 零張。",
+  "risk": "自我同名卡（盤名＝藝人名），依簡報第二節已實查 Apple：英國區有條目「14 Iced Bears — 14 Iced Bears」，releaseDate 1988-09-19、collectionId 437494009，與 1991 年的《Wonder》(437510652) 是不同條目，可以收。Apple 標的 1988-09-19 與 MB／Discogs 的 1988-11-07 差兩個月，依裁定第 77 條 Apple 的 releaseDate 只當訊號、不當版本門檻，年份仍取 1988。團名以數字開頭，字串排序與搜尋容易失準；另有 2013 年的《Hold On Inside》(a539239a…) 是完整錄音合輯、曲目涵蓋本卡，去重與封面比對不可混用。封面預估：CAA 與 Apple 皆可得；試聽預估：高，Apple 有完整條目。",
+  "mbNote": "釘 84bc0715-0dfd-3ddd-9d64-31df10e13e9c《14 Iced Bears》，artist-credit「14 Iced Bears」，first-release-date 1988-11-07，primary-type Album、secondary-types 空。轄下 1 個 release：1988-11-07 GB（Thunderball Records TBLP 1），Official。已回問 release-group 端點確認實體類型與標題。同藝人的 addd6917-6ad5-3086-a44c-8ed0aadc17d7《Wonder》(1991, Borderline Productions)、9ca002ae-4e3e-4b1f-be18-c586422b301c《Precision (Singles 1986 - 1989)》(1990, Compilation)、a539239a-1aaf-4dc8-b064-acde66a5ac02《Hold On Inside》(2013, Compilation)、fd139c63-f2b3-3886-bba1-91bdcecf38f0《The Inside EP》(1986, EP) 皆刻意不釘。另有兩筆 Peel Session 的 primary-type=Broadcast 條目（040663f2…、690fef7c…），非收錄對象。藝人 MBID 1e3c9033-7eb3-4543-af92-5e8c9b778318，名下 15 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "",
+  "reissuedBy": "Optic Nerve Recordings",
+  "g": "a"
+ },
+ {
+  "artist": "The Pooh Sticks",
+  "album": "Orgasm",
+  "year": 1988,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "53rd & 3rd",
+  "why": "Swansea 的 The Pooh Sticks 出道時把六張 7 吋裝進一個袋子當作品集賣，這張首張專輯由愛丁堡的 53rd & 3rd 發行（AGAMC 5，1988-12-19，Discogs master 369812 底下有十筆同編號的英國壓次）。53rd & 3rd 是 Stephen Pastel 與 Sandy McLean、David Keegan 1985 年開的廠牌，名字取自 Ramones 的曲名，目錄裡還有 The Vaselines、BMX Bandits、Talulah Gosh 與 The Shop Assistants。地位證據是 1991 年 Fierce Recordings 的授權再發《Multiple Orgasm》（Fright 047／Fright 047 CD，Discogs release 1091601、4562801、1413905）——Fierce 是 Steve Gregory 在 Swansea 開的廠牌，也是這支團自己的出版基地。master 369812 與 68530 的版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，The Pooh Sticks 與 53rd & 3rd 這條線皆零張。",
+  "risk": "改題再發：1991 年 Fierce 那次把盤名改成《Multiple Orgasm》並增補曲目，MB 把它併進同一個 release-group（本卡所釘的 4530dc47…），Discogs 則另立 master 68530。卡片盤名採原盤的《Orgasm》，封面與試聽比對時不可用《Multiple Orgasm》那版。年份分歧：MB 記 1988-12-19、Discogs master 記 1989（1988 年那筆是 test pressing release 3115834），本卡採 MB 的完整日期，行文不得正面斷言發行年。盤名《Orgasm》是常見單字，Apple 與 Bandcamp 搜尋會撈回大量無關結果，必須用 rgMbid；也可能觸發部分服務的內容過濾。封面預估：Discogs master 有圖；試聽預估：中。",
+  "mbNote": "釘 4530dc47-1bc1-4c75-9f55-48861799f29a《Orgasm》，artist-credit「The Pooh Sticks」，first-release-date 1988-12-19，primary-type Album、secondary-types 空。轄下 2 個 release 全 Official：1988-12-19 GB（53rd & 3rd Records AGAMC 5）、1991 GB（Fierce Recordings Fright047CD，盤名《Multiple Orgasm》）。已回問 release-group 端點確認實體類型與標題。同藝人的 5fb40f65-246c-3a87-9246-b9ae5dfdc99e《Formula One Generation》(1990)、13a0a06f-9a68-321a-95e0-bfb7b7460a24《The Great White Wonder》(1991)、11ac08d0-9f64-3b77-b3ab-72fc02b014ba《Alan McGee》(1988, EP)、3f7a3886-b786-4a2c-94a0-3aa7fe1fea13《The Peel Sessions》(1991, Album/Live) 皆刻意不釘。藝人 MBID 1cd4d60a-3e66-4a62-8505-36551a8930fe，名下 26 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Fierce Recordings",
+  "g": "a"
  }
 ]
