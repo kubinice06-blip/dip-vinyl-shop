@@ -10,7 +10,10 @@ const WORKER = process.env.DIP_ONBOARD_WORKER_BASE || 'https://dip-vinyl-worker.
 const RARITY = score => score >= 10 ? 'legendary' : score >= 8 ? 'epic' : score >= 6 ? 'uncommon' : score >= 4 ? 'rare' : 'common';
 const TIERS = new Set(['hall', 'pearl', 'heresy']);
 const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
-const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual']);
+// apple-verified-collection 是 ALBUM_ONBOARDING §4 於 2026-09-02（c-64）增列的例外：
+// 人工身分卡沒有 release-group MBID，CAA 這條路在定義上走不通，改用人工核對過的
+// Apple 專輯頁，但必須記下確切的 collectionId 才算數（下面另有一道檢查）。
+const COVER_SOURCES = new Set(['bandcamp', 'spotify', 'caa', 'manual', 'apple-verified-collection']);
 // 曲風 release type 例外（白名單制）：非 Album 只開放給有 12 吋／mix 文化的曲風，見 ALBUM_ONBOARDING.md
 const EXCEPTION_RELEASE_TYPES = new Set(['EP', 'Single', 'DJ-mix']);
 // asia-mini-album（2026-08-23）：日本ミニアルバム與韓國正規 EP，MB 標 EP 但母國市場當專輯發行
@@ -50,7 +53,7 @@ const isHttps = value => typeof value === 'string' && /^https:\/\//i.test(value)
 // 靜態試聽路徑 helper：與 dip-player.js appleAudioKey / card-preview-status.js 鍵一致
 const previewNorm = value => String(value || '').normalize('NFKD').toLowerCase()
   .replace(/[\u0300-\u036f]/g, '')
-  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]+/g, '');
+  .replace(/[^a-z0-9\u3400-\u9fff\u3040-\u30ff\u1100-\u11ff\u3130-\u318f\uac00-\ud7af\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
 let _staticMap, _staticStatus;
 function staticAudioMap() {
   if (_staticMap !== undefined) return _staticMap;
@@ -266,6 +269,10 @@ for (let index = 0; index < albums.length; index++) {
     if (!COVER_SOURCES.has(cover.source)) err(label, `cover.source 不支援：${cover.source}`);
     if (!Number.isInteger(cover.httpStatus) || cover.httpStatus < 200 || cover.httpStatus >= 400) err(label, 'cover.httpStatus 必須是 2xx/3xx');
     if (!validIso(cover.checkedAt)) err(label, 'cover.checkedAt 必須是 ISO 日期');
+    // §4 例外的要件：光說「來自 Apple」不算，要記下確切的 collectionId，本機才能 lookup 覆核
+    if (cover.source === 'apple-verified-collection' && !/^\d{5,}$/.test(String(cover.appleCollectionId || ''))) {
+      err(label, 'cover.source=apple-verified-collection 必須附 cover.appleCollectionId（§4 例外的要件）');
+    }
   }
 
   const ratings = row?.ratings;

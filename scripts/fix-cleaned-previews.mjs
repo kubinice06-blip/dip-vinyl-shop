@@ -143,7 +143,7 @@ if (!WRITE) { console.log('\n（未寫檔。確認報告無誤後加 --write）'
 // 鍵規則與 build-apple-audio-map.mjs 一致（NFKD、保留 CJK 與韓文 Jamo、NUL 分隔）
 const normKey = v => String(v || '').normalize('NFKD').toLowerCase()
   .replace(/[̀-ͯ]/g, '')
-  .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
+  .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
 const SEP = String.fromCharCode(0);   // 分隔字元是 NUL，不是空白
 const MAP = path.join(ROOT, 'data', 'apple-audio-map-v1.json');
 const map = JSON.parse(fs.readFileSync(MAP, 'utf8'));

@@ -1,0 +1,960 @@
+{
+ "schemaVersion": 1,
+ "batch": "c52-20260903",
+ "albums": [
+  {
+   "artist": "Panbers",
+   "album": "Indonesian City Sound: Panbers Psychedelic Rock and Funk, 1971-1974",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MusicBrainz 尚未建檔（Panbers 藝人條目只有一張後期合輯）；Discogs release 26993535 與 Bandcamp 官方頁可作身分依據，廠牌 Elevation Records，編號 ELE034。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Panbers&limit=5&fmt=json → HTTP 200，count=1，score 100 命中 MB 藝人實體 Panbers（9637009a-7d80-4e29-bcff-0dc731e52420，country=ID）",
+      "release-group?artist=9637009a-7d80-4e29-bcff-0dc731e52420&limit=100&fmt=json（藝人 browse）→ HTTP 200，release-group-count=1，名下唯一一筆是無日期的《Tembang Kenangan Volume 1》，本碟未建檔",
+      "release-group?query=releasegroup%3A%22Indonesian%20City%20Sound%22&limit=10&fmt=json → HTTP 200，count=0",
+      "release-group?query=artist%3A%22Panbers%22%20AND%20releasegroup%3A%22Indonesian%20City%20Sound%22&limit=10&fmt=json → HTTP 200，count=0"
+     ],
+     "checkedAt": "2026-09-03",
+     "conclusion": "藝人實體查得到（score 100）但名下只有一筆後期合輯，本碟以盤名查與藝人＋盤名合併查皆 count=0。四次查詢全部 HTTP 200，沒有 503 偽裝成查無的情形。"
+    },
+    "manualEvidenceUrls": [
+     "https://panbers.bandcamp.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971-1974",
+     "https://www.discogs.com/release/26993535-Panbers-Indonesian-City-Sound-Panbers-Psychedelic-Rock-and-Funk-1971-1974",
+     "https://www.allmusic.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971--1974-mw0004084813"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線收錄：MusicBrainz 未建檔（四次查詢全 200、count=0），身分改以樂團官方 Bandcamp 發行頁、Discogs release 26993535 與 AllMusic 條目三者互相對照釘定，廠牌 Elevation Records ELE034。本機主線 2026-09-03 核可。",
+    "exceptionReason": "印尼最重要的 1970 年代樂團之一，其黃金期錄音在原盤絕版後唯一經授權整理的形態，由樂團官方 Bandcamp 發行，是這批曲目目前可得的權威版本。",
+    "exceptionEvidenceUrls": [
+     "https://panbers.bandcamp.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971-1974",
+     "https://www.discogs.com/release/26993535-Panbers-Indonesian-City-Sound-Panbers-Psychedelic-Rock-and-Funk-1971-1974",
+     "https://www.allmusic.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971--1974-mw0004084813"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3348209730_16.jpg",
+    "source": "bandcamp",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "限量三百張，把樂團手最順的那四年剪成十三首排進一張碟。那四年是 1971 到 1974，選曲全部取自 Panbers 與 Mesra Dimita Records 合作期間的錄音。2023 年 5 月 6 日發行，實體是 300 張 12 吋黑膠，由樂團官方的 Bandcamp 頁面販售；十三軌裡有四首來自 1971 年的首作。〈Rock And The Sea〉到〈Jakarta City Sound〉，破音吉他與 Hammond 風琴都推在最前，越往後段放克的切分越明顯。",
+    "sourceUrls": [
+     "https://panbers.bandcamp.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971-1974",
+     "https://www.discogs.com/release/26993535",
+     "https://id.wikipedia.org/wiki/Volume_1_(Album_Panbers)",
+     "https://id.wikipedia.org/wiki/Panbers",
+     "https://www.discogs.com/release/26993535-Panbers-Indonesian-City-Sound-Panbers-Psychedelic-Rock-and-Funk-1971-1974",
+     "https://www.allmusic.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971--1974-mw0004084813"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gombloh",
+   "album": "Kebyar Kebyar",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group fc9e8f28-ae57-4acb-8a53-c16c7e0e4fad（1979, artist-credit：Lemon Tree's Anno '69，primary-type 未填）；本提案取 Gombloh 為掛名，請主線覆核。",
+    "rgMbid": "fc9e8f28-ae57-4acb-8a53-c16c7e0e4fad",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fc9e8f28-ae57-4acb-8a53-c16c7e0e4fad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六十五分鐘、十三首歌的一張碟，後來只剩開頭那一首被記得。〈Kebyar & Kebyar〉在 1998 年印尼的改革運動期間被大量傳唱，Rolling Stone Indonesia 的 150 大歌曲排第 2 名，專輯排第 28 名。1979 年由 Golden Hand 發行，掛的是 Gombloh 領軍的 Lemon Tree's Anno '69，十三首裡十二首出自他手，題材從〈Bendera & Bendera〉的國旗唱到移民政策。木吉他與人聲起手，鍵盤與弦樂疊進。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Kebyar_%26_Kebyar",
+     "https://id.wikipedia.org/wiki/Gombloh",
+     "https://musicbrainz.org/release-group/fc9e8f28-ae57-4acb-8a53-c16c7e0e4fad"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rhoma Irama",
+   "album": "Darah Muda",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 9d11e1b3-0e36-4ee6-90b8-bd83314bb97a（1975, Album, artist-credit：O.M. Soneta）；同年另有 Volume 3: Rupiah，勿混。",
+    "rgMbid": "9d11e1b3-0e36-4ee6-90b8-bd83314bb97a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b273b1f661d24a461482ed6da0c8",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "https://open.spotify.com/album/4iScMmvOENJQErhmwI68zq"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Rita Sugiarto 站進 Soneta 的隊伍，就從這張碟的四首歌開始。〈Apa Kabar〉與〈Cuma Kamu〉是她與 Rhoma Irama 的對唱，〈Biduan〉〈Pria Idaman〉由她獨唱，也是她第一次參與 Soneta。《Soneta Volume 4 - Darah Muda》的廠牌是 Yukawi；發行年的來源分成兩邊，只能寫成 1975 或 1976 年。電吉他、爵士鼓與 gendang 正式合編，男女對唱佔了近半數曲目，速度中等偏快。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Soneta_Volume_4_-_Darah_Muda",
+     "https://www.discogs.com/release/8292618",
+     "https://musicbrainz.org/release-group/9d11e1b3-0e36-4ee6-90b8-bd83314bb97a",
+     "https://www.wikidata.org/wiki/Q19752832",
+     "https://id.wikipedia.org/wiki/Soneta_Group"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rhoma Irama",
+   "album": "Santai",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 34e37a17-ddce-4635-b0b0-14d7130a84e0（1977, Album, artist-credit：O.M. Soneta）。",
+    "rgMbid": "34e37a17-ddce-4635-b0b0-14d7130a84e0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/34e37a17-ddce-4635-b0b0-14d7130a84e0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲目表上有兩首直接標著電影《Gitar Tua》的片名。〈Santai〉與〈Do Mi Sol〉都是 1977 年這部片的插曲。同年發行的這張碟是 Soneta 編號系列的第七輯，末曲〈Bercanda〉交給 Rita Sugiarto 唱。Rhoma Irama 偏好把這套音樂叫作 irama Melayu 而不是 dangdut，他與 Soneta 前後拿過十一座 Golden Record。gendang 的滾奏仍在，電吉他的 riff 與貝斯的切分明顯往放克靠。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Soneta_Volume_7_-_Santai",
+     "https://www.discogs.com/release/15190791",
+     "https://musicbrainz.org/release-group/34e37a17-ddce-4635-b0b0-14d7130a84e0",
+     "https://www.wikidata.org/wiki/Q25456535",
+     "https://id.wikipedia.org/wiki/Rhoma_Irama"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chrisye",
+   "album": "Badai Pasti Berlalu",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 5ff8136b-d7ca-39e0-96a5-abc6347b6061（1977, Album/Soundtrack, 掛 Chrisye）；另有 Noah 2021 年同名單曲與 1999 年重錄版，勿取。",
+    "rgMbid": "5ff8136b-d7ca-39e0-96a5-abc6347b6061",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ff8136b-d7ca-39e0-96a5-abc6347b6061/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 11779,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Eros Djarot 抱著母帶跑遍唱片公司，最後接手的是錄音室老闆本人。那是 Irama Mas 的 In Chung，1977 年 9 月拆帳簽約。導演 Teguh Karya 不喜歡 Chrisye 的嗓音，電影版改由 Broery Pesulima 唱。上市後停滯三個月，隨電影賣座翻轉；Kompas 引 ASIRI 稱它賣了 9 百萬份。他細高的男聲對上 Berlian Hutauruk 的厚嗓。印尼版 Rolling Stone 的 150 大專輯排第 1 名。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Badai_Pasti_Berlalu_(album_1977)",
+     "https://id.wikipedia.org/wiki/150_Album_Indonesia_Terbaik",
+     "https://musicbrainz.org/release-group/5ff8136b-d7ca-39e0-96a5-abc6347b6061"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Keenan Nasution",
+   "album": "Di Batas Angan Angan",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB 藝人 5bde6c08 系列下有 2015 年再版 Dibatas Angan-Angan（4ac3bef6-2d7a-45f1-bb99-5f4ddc7ee787），1978 原盤條目需另尋或補建。",
+    "rgMbid": "4ac3bef6-2d7a-45f1-bb99-5f4ddc7ee787",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4ac3bef6-2d7a-45f1-bb99-5f4ddc7ee787/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 61,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Gipsy 的鼓手放下鼓棒走到麥克風前，開場第一首是〈Nuansa Bening〉。他 1969 年起在 Gipsy 打鼓，1975 年回國與 Guruh Soekarnoputra 做出《Guruh Gipsy》。《Di Batas Angan-Angan》是他 1978 年 11 月的首作，唱片印著發行許可證號 077/PEND/78。那首歌由他自己作，在 Rolling Stone 的 150 大歌曲排第 27 名，專輯排第 44 名。曲子短，鼓乾淨不搶拍。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Di_Batas_Angan-Angan",
+     "https://iramanusantara.org/release/4773",
+     "https://www.discogs.com/release/10257355",
+     "https://id.wikipedia.org/wiki/Keenan_Nasution",
+     "https://id.wikipedia.org/wiki/150_Album_Indonesia_Terbaik",
+     "https://musicbrainz.org/release-group/4ac3bef6-2d7a-45f1-bb99-5f4ddc7ee787"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Karimata",
+   "album": "Pasti",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MusicBrainz 查無此團的 1980 年代印尼條目（只有同名的日本即興團體），需人工身分路線。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Karimata&limit=5&fmt=json → HTTP 200，count=2，score 100 的 Karimata（316c586f-4680-4d26-b9b2-95ff9762a1fc）無國別與說明，另一筆 score 86 是日本即興樂手 Karimata Michio",
+      "release-group?artist=316c586f-4680-4d26-b9b2-95ff9762a1fc&limit=100&fmt=json（藝人 browse）→ HTTP 200，release-group-count=0，該實體名下一張碟都沒有",
+      "release-group?query=releasegroup%3A%22Pasti%22&limit=10&fmt=json → HTTP 200，count=13，最高分的是 Citra Scholastika《Pasti Bisa》、Anti-Pasti《Anti-Pasti》、Various Artists《Pasti Hits》，沒有一筆是本碟",
+      "release-group?query=artist%3A%22Karimata%22%20AND%20releasegroup%3A%22Pasti%22&limit=10&fmt=json → HTTP 200，count=0"
+     ],
+     "checkedAt": "2026-09-03",
+     "conclusion": "MB 有一個空的 Karimata 實體（名下 0 個 release-group），以盤名查回的 13 筆全是別的作品，藝人＋盤名合併查 count=0。四次查詢全部 HTTP 200。撞名的日本即興樂手 Karimata Michio 是不同實體，已排除。"
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/id/album/pasti/1555572704",
+     "https://id.wikipedia.org/wiki/Pasti_(album)",
+     "https://id.wikipedia.org/wiki/Karimata_(grup_musik)"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線收錄：MusicBrainz 未建檔（四次查詢全 200，藝人實體為空殼），身分改以 Apple Music 印尼店面的專輯頁（collectionId 1555572704，與固定試聽釘到的是同一筆）與印尼文維基的專輯條目、樂團條目對照釘定。本機主線 2026-09-03 核可。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e5/6e/d5/e56ed592-7b21-3fa5-23c5-d43f42fd86aa/194690463969_cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1555572704",
+    "note": "試聽探測釘定的 collectionId 1555572704（id）：Karimata — Pasti"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1734,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首曲子找了五組客席歌手，剩下四首全是器樂。Embong Rahardjo 的薩克斯風另外出現在兩首，含〈Take Off〉。樂團 1985 年成軍，雙鍵盤加上 Erwin Gutawa 的貝斯，這張首作的廠牌與錄音室都是 Pro-Sound。首發年各來源不一，落在 1985 至 1987 年之間。1986 年 7 月 12 日登上 North Sea Jazz Festival；Rolling Stone Indonesia 的 150 大專輯把本作排在第 79 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Karimata_(band)",
+     "https://id.wikipedia.org/wiki/Pasti_(album)",
+     "https://wartajazz.com/profile/2023/09/23/karimata-band-fusion-legendaris-indonesia/",
+     "https://www.discogs.com/release/13324419",
+     "https://music.apple.com/id/album/pasti/1555572704",
+     "https://id.wikipedia.org/wiki/Karimata_(grup_musik)"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/3e/02/2f3e02d1-097e-41fd-ed27-2da6fba5aff5/mzaf_3630404667361450662.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1555572704",
+    "storefront": "ID"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Music of Indonesia, Vol. 20: Indonesian Guitars",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 6fadc45b-d1c5-34d1-a70c-e03db5763d82（1999-10-19，primary Album + secondary Compilation）。",
+    "rgMbid": "6fadc45b-d1c5-34d1-a70c-e03db5763d82",
+    "exceptionReason": "Smithsonian Folkways 印尼調查系列的最終卷，記錄了在商業唱片工業之外幾乎無其他錄音形態存在的各地吉他傳統，屬田野錄音正典。",
+    "exceptionEvidenceUrls": [
+     "https://folkways.si.edu/music-of-indonesia-vol-20-indonesian-guitars/album/smithsonian",
+     "https://musicbrainz.org/release-group/6fadc45b-d1c5-34d1-a70c-e03db5763d82"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6fadc45b-d1c5-34d1-a70c-e03db5763d82/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 619,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "南 Sumatra 人把這類吉他歌叫 lagu Batang Hari Sembilan，那是九條河的流域。1999 年由 Smithsonian Folkways 發行，12 首 1990 年代的田野錄音由 Philip Yampolsky 錄音、編選與解說，為這 20 卷系列收尾。素材跨南 Sulawesi、Lampung、Palembang、Sumba 與 Timor。Yampolsky 原以為那名稱是卡帶的行銷用語，人類學家 William Collins 指正了他。",
+    "sourceUrls": [
+     "https://smithsonianfolkways.bandcamp.com/album/music-of-indonesia-vol-20-indonesian-guitars",
+     "https://folkways-media.si.edu/docs/folkways/artwork/SFW40447.pdf",
+     "https://www2.umbc.edu/eol/7/brinner/concl.html",
+     "https://musicbrainz.org/release-group/6fadc45b-d1c5-34d1-a70c-e03db5763d82",
+     "https://folkways.si.edu/music-of-indonesia-vol-20-indonesian-guitars/album/smithsonian"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/54/b2/6854b248-34b0-01b7-616c-6c3bbaacb89a/mzaf_5830341481515092835.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "151047829",
+    "storefront": "ID"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Music from the Morning of the World",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 7f1dabe5-32b6-3d1f-b16a-2f2f92b418eb（1967，掛 David Lewiston，primary Album + secondary Compilation）；副標 The Balinese Gamelan 在部分版本出現。",
+    "rgMbid": "7f1dabe5-32b6-3d1f-b16a-2f2f92b418eb",
+    "exceptionReason": "Nonesuch Explorer 系列的創始錄音，把巴里島甘美朗帶進西方唱片市場並直接影響此後數十年的世界音樂出版，是這個樂種在國際上最具歷史地位的單張錄音。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/7f1dabe5-32b6-3d1f-b16a-2f2f92b418eb",
+     "https://www.allmusic.com/album/music-from-the-morning-of-the-world-mw0000273056"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7f1dabe5-32b6-3d1f-b16a-2f2f92b418eb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1966 年，一個倫敦人帶著剛剛變輕的錄音機去了峇里島。David Lewiston 生於倫敦，讀過 Trinity College of Music，這批錄音是他田野生涯的起點。成果 1967 年由 Nonesuch 發行，是 Explorer 系列的第一張唱片。演出的是峇里島各樂團，他只拿麥克風：〈Baris〉一側是甘美朗的青銅鍵盤，〈Ketjak Dance〉換成男聲的節奏牆。2007 年入選美國國會圖書館的 National Recording Registry。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/David_Lewiston",
+     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-artist.pdf",
+     "https://www.npr.org/2014/09/30/352542137/latitudes-50-years-of-nonesuch-10-essential-recordings",
+     "https://archive.org/details/lewiston-david-1967-bali-music-from-the-morning-of-the-world-explorer-series-blp-cr-06",
+     "https://musicbrainz.org/release-group/7f1dabe5-32b6-3d1f-b16a-2f2f92b418eb",
+     "https://www.allmusic.com/album/music-from-the-morning-of-the-world-mw0000273056"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Angkanang Kunchai With Ubon-Pattana Band",
+   "album": "Isan Lam Plearn",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB 藝人建檔為泰文「อังคนางค์ คุณไชย」（2189aa25-0786-49f6-9919-aea9bdb9c86b），release-group 標題為「อิสานลำเพลิน」、first-release-date 記 2014-05-27（復刻日）。查詢要用泰文名或別名 Angkanang Kunchai，直接用拉丁名查 artist 欄會落空。",
+    "rgMbid": "a2cf6586-73bb-46f6-a2c1-470fd75359c2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a2cf6586-73bb-46f6-a2c1-470fd75359c2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 135,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十六歲那年她唱紅〈Isan Lam Phloen〉，molam 就此接上曼谷的節奏。那是 1971 年的錄音，第一次把 Isan 的 molam 與 luk thung 接成 luk thung Isan。四年後它成了她首張專輯的同名曲，原盤 1975 年發行，Ubon-Pattana Band 伴奏、Surin Phaksiri 製作。他的做法把 molam 班子改裝成搖滾樂隊般的編制，底下是鼓、貝斯與電吉他，khaen 仍在。EM Records 2014 年做過復刻。",
+    "sourceUrls": [
+     "https://emrecords.bandcamp.com/album/isan-lam-phloen",
+     "https://emrecords.ocnk.net/product/13",
+     "https://meditations.jp/en/products/angkanang-kunchai-with-ubon-pattana-band-isan-lam-plearn-cd",
+     "https://musicbrainz.org/release-group/a2cf6586-73bb-46f6-a2c1-470fd75359c2"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai? Dai! The Heavier Side of the Luk Thung Underground",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB release-group 7c57cbac-5f6d-4f47-9de4-87fc1c327ef0，2011-01-24，Album/Compilation，標題僅「Thai? Dai!」；比對時勿因副標差異判為不同碟。",
+    "rgMbid": "7c57cbac-5f6d-4f47-9de4-87fc1c327ef0",
+    "exceptionReason": "Finders Keepers 挖掘泰國 luk thung underground 重口味支線的代表輯，多數曲目連泰國本地都未曾以專輯形式發行，是 Sroeng Santi 這類只留下單曲的藝人唯一可得的錄音形態。",
+    "exceptionEvidenceUrls": [
+     "https://zudrangmarecords.com/product/lp-thai-dai/",
+     "https://www.dustygroove.com/item/548556/Various:Thai-Dai-The-Heavier-Sound-Of-The-Luk-Thung-Underground",
+     "https://www.finderskeepersrecords.com/shop/sroeng-santi-iron-man/"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7c57cbac-5f6d-4f47-9de4-87fc1c327ef0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一下針就是〈Iron Man〉的 riff，唱的人是泰國的 Sroeng Santi。開場的〈Khuen khuen long long〉進本輯前少有人聽過。〈Jai Ten〉走 Motown 式後拍，〈Ngun Pad Baht〉走放克，吉他一路破音。2011 年 Finders Keepers 發行，Andy Votel、Chris Menist 與 Maft Sai 編選，素材是 1960 至 1970 年代中期、luk thung 與 luk krung 交會的曼谷。",
+    "sourceUrls": [
+     "https://recordcollectormag.com/reviews/album/thai-dai-theheavier-side-of-theluk-thungunderground",
+     "https://ethnomusicologyreview.ucla.edu/content/when-non-western-music-sounds-psychedelic-producing-thai-marching-band%E2%80%99s-cover-black-sabbath",
+     "https://www.soundohm.com/product/thai-dai-the-heavier-side",
+     "https://www.songlines.co.uk/review/thai-dai-the-heavier-side-of-the-luk-thung-underground",
+     "https://musicbrainz.org/release-group/7c57cbac-5f6d-4f47-9de4-87fc1c327ef0",
+     "https://zudrangmarecords.com/product/lp-thai-dai/",
+     "https://www.dustygroove.com/item/548556/Various:Thai-Dai-The-Heavier-Sound-Of-The-Luk-Thung-Underground",
+     "https://www.finderskeepersrecords.com/shop/sroeng-santi-iron-man/"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dao Bandon",
+   "album": "Kon Kee Lang Kwai (Man on a Water Buffalo): Essential Dao Bandon",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB 藝人「ดาว บ้านดอน」（554063c0-d631-417e-b77a-b07e3653e3bd），release-group 標題「คนขี่หลังควาย / Kon kee lang kwai (Man on a Water Buffalo): Essential Dao Bandon」、Album/Compilation。",
+    "rgMbid": "cc245537-a24f-4459-b8c8-6e81d1943b58",
+    "exceptionReason": "EM Records 為 Dao Bandon 1970 年代單曲錄音所做的權威精選，附完整內頁考證，是這位 Isan 男聲代表在泰國境外唯一可得的成盤形態。",
+    "exceptionEvidenceUrls": [
+     "https://emrecords.bandcamp.com/album/man-on-a-water-buffalo-essential-dao-bandon",
+     "https://www.allmusic.com/album/kon-kee-lang-kwai-man-on-a-water-buffalo-essential-dao-bandon-mw0002750040",
+     "https://spectrumculture.com/2015/01/20/dao-bandon-kon-kee-lang-kwai-man-water-buffalo-essential-dao-bandon/"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cc245537-a24f-4459-b8c8-6e81d1943b58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 27,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "少年時當過僧侶，廠牌說那幾年的誦經還留在他的唱腔裡。Dao Bandon 出身泰國東北 Isan 的貧農家庭，廠牌說明把務農接到他歌詞裡的土味，把誦經接到唱腔的共鳴。他唱情慾、愛情、大麻與窮人的掙扎，語氣卻始終輕快，khaen 在人聲背後穿梭。這張精選 2014 年由日本的 EM Records 與 Paradise Bangkok、Soi48 合作推出，12 首全部取自他 1970 年代的錄音。標題曲〈Kon Kee Lang Kwai〉的意思是騎在水牛背上的人。",
+    "sourceUrls": [
+     "https://emrecords.ocnk.net/product/4",
+     "https://emrecords.bandcamp.com/album/man-on-a-water-buffalo-essential-dao-bandon",
+     "https://meditations.jp/en/products/dao-bandon-kon-kee-lang-kwai-essential-dao-bandon-lp",
+     "https://musicbrainz.org/release-group/cc245537-a24f-4459-b8c8-6e81d1943b58",
+     "https://www.allmusic.com/album/kon-kee-lang-kwai-man-on-a-water-buffalo-essential-dao-bandon-mw0002750040",
+     "https://spectrumculture.com/2015/01/20/dao-bandon-kon-kee-lang-kwai-man-water-buffalo-essential-dao-bandon/"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hoàng Oanh",
+   "album": "Tiếng hát Hoàng Oanh 2 (Rừng xưa)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB 藝人 Hoàng Oanh，release-group「Tiếng hát Hoàng Oanh 2 (Rừng xưa)」first-release-date 1974-12、primary-type=None——這是本批唯一型別未定的一筆，需人工判定。",
+    "rgMbid": "a9a31140-e0d1-414f-a17b-bc8ffd82f39d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a9a31140-e0d1-414f-a17b-bc8ffd82f39d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "先吟一段詩，再進 bolero：這個開場方式跟了她一輩子。那段吟誦叫 ngâm thơ，是她歌唱生涯的標誌，這一卷的段落之間就靠它串起來。她本名 Huỳnh Kim Chi，1946 年生於 Mỹ Tho，到 1975 年為止錄過超過 200 張唱片，不上夜總會與茶室。第一卷 1974 年由 Duy Khánh 製作，這第二卷是她自己做的，收 18 首，開場的〈Rừng xưa〉也是主題。發行落在 1974 至 1975 年之間，可確定是 1975 年 4 月前的西貢盤帶。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/Ho%C3%A0ng_Oanh",
+     "https://thanhhaaudio.com/nghe-lai-nhung-ban-nhac-thu-am-truoc-nam-1975-hay-nhat-cua-hoang-oanh-cap-nhat-thanhhaaudio/",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%C4%A9a_nh%E1%BA%A1c_c%E1%BB%A7a_Ho%C3%A0ng_Oanh",
+     "https://bangcoinhacxua.com/Cua-hang-Bang-coi/Hoang-Oanh-2--chu-de-rung-xua",
+     "https://musicbrainz.org/release-group/a9a31140-e0d1-414f-a17b-bc8ffd82f39d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Pop Yeh Yeh: Psychedelic Rock From Singapore and Malaysia 1964-1970",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "MB 為 Various Artists 掛名、2013、primary-type=Album 且 secondary-type=Compilation；副標另有 Vol. 1 的寫法（2014 RSD 雙黑膠）。",
+    "rgMbid": "1cbf2b70-eccf-4e72-baaf-e4f9e97069e5",
+    "exceptionReason": "pop yeh-yeh 世代的原始發行幾乎全是四曲 EP，正規專輯極少；這張是第一份專門整理該樂種的國際發行考古合輯，附學術性小冊，是這個樂種目前唯一可得的正典入口。",
+    "exceptionEvidenceUrls": [
+     "https://www.sublimefrequencies.com/products/576398-pop-yeh-yeh-psychedelic-rock-from-singapore-and-malaysia-1964-1970",
+     "https://www.songlines.co.uk/review/pop-yeh-yeh-psychedelic-rock-from-singapore-and-malaysia-1964-1970"
+    ]
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1cbf2b70-eccf-4e72-baaf-e4f9e97069e5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "那個世代的錄音全是一張四曲的 EP，沒有留下可以收的專輯。新加坡國家圖書館的專文載明，pop yeh yeh 的錄音一律是 4 首一張的 EP；貝斯手 Ali Taib 說當時沒有多軌，出錯就重來。編制叫 kugiran，是 Kumpulan Gitar Rancak 的縮寫，三吉他一鼓。2013 年由 Sublime Frequencies 發行，收 26 首 1964 至 1970 年的錄音，Carl Hamm 編了近八年。吉他多用 The Shadows 式顫音。",
+    "sourceUrls": [
+     "https://www.popmatters.com/172416-various-pop-yeh-yeh-2495749414.html",
+     "https://www.sublimefrequencies.com/products/576398-pop-yeh-yeh-psychedelic-rock-from-singapore-and-malaysia-1964-1970",
+     "https://www.nlb.gov.sg/main/api/MusicDetailPage/ViewPdf?resourceUuid=134d0357-edd8-49b9-b0e8-5784bb4c2546",
+     "https://musicbrainz.org/release-group/1cbf2b70-eccf-4e72-baaf-e4f9e97069e5",
+     "https://www.songlines.co.uk/review/pop-yeh-yeh-psychedelic-rock-from-singapore-and-malaysia-1964-1970"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

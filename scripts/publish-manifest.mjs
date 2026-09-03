@@ -48,7 +48,7 @@ const cardIdOf = (artist, album) => `${artist}|${album}`.toLowerCase().replace(/
 // 靜態試聽地圖：見 scripts/build-apple-audio-map.mjs 的 cardKey（NUL 分隔，保留 CJK）
 const normalized = v => String(v || '').normalize('NFKD').toLowerCase()
   .replace(/[̀-ͯ]/g, '')
-  .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯]+/g, '');
+  .replace(/[^a-z0-9㐀-鿿぀-ヿᄀ-ᇿ㄰-㆏가-힯\u0370-\u03ff\u1f00-\u1fff\u0400-\u052f\u0530-\u058f\u0590-\u05ff\u0600-\u06ff\u0750-\u077f\u0900-\u097f\u0980-\u09ff\u0e00-\u0e7f\u0e80-\u0eff\u1000-\u109f\u10a0-\u10ff\u1200-\u137f\u1780-\u17ff]+/g, '');
 const audioKeyOf = (artist, album) => `${normalized(artist)}\u0000${normalized(album)}`;
 // 去重比對用：與 scripts/pool-keys.mjs 同規則（摺 U+2010–2015 連字號，否則 a-ha 這類必然漏判）
 const poolKeyOf = (a, b) => [a, b].map(s => String(s || '').toLowerCase()
