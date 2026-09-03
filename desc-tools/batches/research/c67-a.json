@@ -698,5 +698,178 @@
    "note": "1984 維持卡單原值：Discogs 原盤 AD-19 與 MusicBrainz first-release-date 一致。**但錄音日期與發行年之間有張力**：diskunion 記錄音是 1984 年 11 月 3 日，而發行年也記 1984——兩者只差不到兩個月，且沒有任何來源寫出發行月份。依第 18／86 條，**行文不得斷言錄音與發行的先後間隔**，可以寫「一九八四年」，也可以寫錄音日期，但不要把兩者組成因果或時間差。"
   },
   "notes": "本卡分到的互斥條款：**「2022 年重壓黑膠時掛回 Aketa's Disk 名義」這條判給本卡**——這是本組唯一一張再發時把廠牌名掛回去的碟（Discogs master 的版本清單直接看得到）。本卡**禁用**：廠牌成立史與アケタの店（判給《Aketa's Erotical…》）、DEEP JAZZ REALITY 全目錄 CD 化（判給《外はいい天気》）、BBE《J Jazz》系列本身（判給《Topology》）。**河野康弘的生平（矢沢永吉、中村雅俊、Richard Davis、Mal Waldron）判給本卡**——同組另兩張河野的碟（《Song Of Island》《Peace》）不得重述；《Song Of Island》寫它自己的「第三張」與 BBE 訪談，《Peace》寫它自己的錄音與 CD 化。**漢字與羅馬拼音不一致要處理**：Discogs 只給羅馬拼音（Masahiro Kanno、Terumichi Yamada、Hironobu Fujisawa），diskunion 給的漢字是菅野正洋、山田晃路、藤沢博延——**兩份都在 facts 裡，行文擇一即可，不得混用**。**曲長 facts 完全沒有**（Discogs 原盤條目沒有標時長），**不得寫任何曲子的長度**（第 64 條）。錄音地點只有 diskunion 一個來源，Discogs 原盤條目是空的，**寫進行文要說明是唱片行的商品說明這樣記**（第 128 條：歸屬也要有據）。掛名：卡片用日文「河野康弘」，`queryAlias` Yasuhiro Kohno。盤名：卡片用片假名《ローマ・イン・ザ・レイン》，Discogs 主標題是英文 Roma In The Rain——**行文不要並列**。**第 61／110 條**：`sound` 的兩句形容照抄 diskunion 用語並標明出處，其餘由 credit 與作曲欄構成。"
+ },
+ {
+  "key": "desc2:Yasuhiro Kohno Trio + 1|Song Of Island",
+  "artist": "Yasuhiro Kohno Trio + 1",
+  "album": "Song Of Island",
+  "facts": [
+   {
+    "f": "Discogs 的 1986 年原盤條目：廠牌是 A.S. Cap Record、編號 JR-1001，發行日 1986 年 3 月 31 日；製造由小島録音（Kojima Recordings, Inc.）承接、銷售由 DIW Records 經手，定價 2,800 円。",
+    "src": "https://www.discogs.com/release/10042385"
+   },
+   {
+    "f": "同一筆條目的內頁註記兩句：「Recorded live on August 28th and 29th 1985 at \"Live House Again\"」與「Special Thanks to Shoji Aketagawa」——現場錄音，並在封套上向明田川荘之致謝。",
+    "src": "https://www.discogs.com/release/10042385"
+   },
+   {
+    "f": "同一筆條目的 credit：河野康弘鋼琴兼製作、Tsutomu Numagami 貝斯、Hironobu Fujisawa 鼓、Masahiro Kanno 顫音琴；內頁由樂評家岩浪洋三（Yozo Iwanami）執筆，錄音 Sinsuke Kohchi，封面設計 Yukimi Natori。",
+    "src": "https://www.discogs.com/release/10042385"
+   },
+   {
+    "f": "原盤五首、每首都長：A1〈Song Of Island〉10:45、A2〈Time For Peace〉7:39、A3〈Love For Sale〉8:29（Cole Porter 作）、B1〈Mr. Nilson〉13:20、B2〈Village Festival〉12:16；除了〈Love For Sale〉全部由河野康弘寫。",
+    "src": "https://www.discogs.com/release/10042385"
+   },
+   {
+    "f": "BBE 的商品說明寫：這是一張「few know of」的私壓稀盤，是河野康弘三重奏的**第三張**專輯，1985 年 8 月在爵士俱樂部兼 live house「Again」現場錄下；在 2022 年 BBE 這次之前**從未有過任何再發**。",
+    "src": "https://bbemusic.com/product/yasuhiro-kohno-trio-one-song-of-island"
+   },
+   {
+    "f": "同一份 BBE 說明：這次復刻是原作的完整複製，附原內頁、原內頁文字的英譯，外加新寫的內頁、照片，以及 **Tony Higgins 對河野康弘本人的訪談**；Bandcamp 頁記發行日 2022 年 11 月 18 日，並標明屬「J Jazz Masterclass Series curated by Tony Higgins and Mike Peden」。",
+    "src": "https://bbemusic.bandcamp.com/album/song-of-island"
+   },
+   {
+    "f": "BBE 的 Bandcamp 頁另寫：這張碟捕捉的是「日本爵士的一段特殊時光——1980 年代中期合成器流行樂當道之際，仍有投入而有本事的樂手在演奏與錄製上乘的原音爵士」；曲目欄記五首，其中〈Love For Sale〉是唯一一首翻奏的爵士標準曲。",
+    "src": "https://bbemusic.bandcamp.com/album/song-of-island"
+   },
+   {
+    "f": "Discogs master 2891308 只有 3 個版本：1986 年 JR-1001 原盤、2022 年 BBE 的 45 轉 12 吋黑膠（BBE665ALP）與同年的 CD（BBE665ACD）；三筆都沒有標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/2891308"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 標題《Song Of Island》、first-release-date 精確到 1986-03-31、primary-type Album、**secondary-type 標 Live**；**artist-credit 寫「Yasuhiro Kohno Trio + One」，藝人實體名卻是「Yasuhiro Kohno Trio + 1」**；轄下 3 個 release 全部 Official，2022 年那兩筆在英國。",
+    "src": "https://musicbrainz.org/release-group/3b7ca78e-40e1-42f5-9123-f903ee60edde"
+   },
+   {
+    "f": "Discogs 原盤條目的社群統計：29 人登記持有、224 人登記想要。",
+    "src": "https://www.discogs.com/release/10042385"
+   }
+  ],
+  "hookCandidates": [
+   "封套上寫著向明田川荘之致謝，唱片本身卻不是他那家廠牌出的",
+   "一九八五年八月兩個晚上，在一家叫 Again 的店裡錄完"
+  ],
+  "sound": "鋼琴三重奏加顫音琴的現場，五首從七分半到十三分二十秒，四首自作、一首是〈Love For Sale〉。BBE 的說明把它放在「1980 年代中期合成器流行樂當道時仍在演奏與錄製的原音爵士」這個位置上。",
+  "keyTracks": [
+   "Song Of Island",
+   "Mr. Nilson",
+   "Village Festival"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "note": "1986 維持卡單原值：Discogs 原盤 JR-1001 與 MusicBrainz 的 first-release-date 1986-03-31 一致，BBE 也把錄音記為 1985 年 8 月、原盤為稍後發行。**錄音年是 1985、發行年是 1986，行文必須分開寫，不得混成一個**。"
+  },
+  "notes": "本卡的獨有錨點：**發行者不是明田川的廠牌，封套上卻寫著向他致謝**（Discogs 原盤註記直接可引），以及 **BBE 這次復刻裡有 Tony Higgins 對河野康弘本人的訪談**。互斥條款：**「BBE 的 J Jazz Masterclass 系列是什麼、Tony Higgins 與 Mike Peden 是誰」這條線判給《Topology》**——本卡只能寫「2022 年 BBE 出了復刻、裡面有訪談」這件自己的事，**不得介紹系列本身或寫「日本爵士被重新發現」的敘事**。**河野康弘的生平（矢沢永吉、中村雅俊、Richard Davis、Mal Waldron）判給《ローマ・イン・ザ・レイン》**，本卡不寫。「這是第三張」由 BBE 的說明直接寫出，可用；但**不得由此推出前兩張是哪兩張**（BBE 說明另有一句提到 Peace 與 Roma in the Rain，本次未收進 facts，**所以不能寫**——第 33 條）。掛名：卡片用 MB 實體的「Yasuhiro Kohno Trio + 1」，MB 的 artist-credit 與 BBE、Apple 都作「Trio + One」，Discogs 原盤並列「河野康弘トリオ+ワン」，**行文不要並列多種寫法**。**第 64 條**：五首的曲長 facts 逐首有，可以引用；但**不得算總長或平均**。**第 61／110 條**：`sound` 的最後一句照 BBE Bandcamp 的說法轉述，其餘由 credit 與曲目表構成，沒有樂評描述演奏質地。"
+ },
+ {
+  "key": "desc2:Yasuhiro Kohno Trio + 1|Peace",
+  "artist": "Yasuhiro Kohno Trio + 1",
+  "album": "Peace",
+  "facts": [
+   {
+    "f": "Discogs 的 1983 年原盤條目（Aketa's Disk AD-14）註記：「Recorded and remixed at Take I Sound Studio on November 30, 1982」——錄音與混音都在同一天、同一間錄音室完成；壓片是 JVC。",
+    "src": "https://www.discogs.com/release/8162168"
+   },
+   {
+    "f": "同一筆條目的 credit：河野康弘掛製作與鋼琴、Terumichi Yamada 貝斯、Hironobu Fujisawa 鼓，另有 **Mami Mishina 只在 B3 唱人聲**；錄音師 Keiji Tsukuda，攝影 Hiroshi Nishikawa。",
+    "src": "https://www.discogs.com/release/8162168"
+   },
+   {
+    "f": "原盤六首：A1〈Like McCoy〉7:06、A2〈Fuji〉6:31、A3〈Good Friday Blues〉6:47、B1〈J.C.Blues〉4:23、B2〈Dancing Dolls〉12:41、B3〈Peace〉3:33；作曲欄把 A3 到 B2 掛給河野康弘，**末曲〈Peace〉是 Horace Silver 的曲子**——唱片用它當標題，而它是全碟最短的一首、也是唯一有人聲的一首。",
+    "src": "https://www.discogs.com/release/8162168"
+   },
+   {
+    "f": "Discogs 給這張的曲風標籤是 Contemporary Jazz、Post Bop 與 Free Jazz。",
+    "src": "https://www.discogs.com/release/8162168"
+   },
+   {
+    "f": "Discogs master 1248409 有 5 個版本：1983 年 AD-14 原盤、2006 年 Solid Records 的 CD（CDSOL-1150，另有一筆同編號宣傳盤）、2019 年 12 月 11 日的 Octave Lab CD（OTLCD2440）與 2021 年 Ultra-Vybe 的 CD（UVWA-1025）；沒有任何一筆標 Unofficial Release。**原盤之後隔了二十三年才有第一次 CD 化。**",
+    "src": "https://www.discogs.com/master/1248409"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 標題《Peace》、掛名「Yasuhiro Kohno Trio + 1」、primary-type Album、無 secondary type，但轄下只建了 2006-10-21 的 Solid CD 與 2019-12-11 的全球數位版兩筆 Official release——**原盤沒有建檔，first-release-date 因此記成 2006-10-21，不是原盤年**。",
+    "src": "https://musicbrainz.org/release-group/1e5273b0-4f48-4d41-b6db-7b2157e5f556"
+   },
+   {
+    "f": "2019 年那筆全球數位版在 MusicBrainz 上的標題是片假名《ピース》，與 release-group 用的英文《Peace》不同。",
+    "src": "https://musicbrainz.org/release-group/1e5273b0-4f48-4d41-b6db-7b2157e5f556"
+   },
+   {
+    "f": "Discogs 原盤條目的社群統計：40 人登記持有、194 人登記想要。",
+    "src": "https://www.discogs.com/release/8162168"
+   }
+  ],
+  "hookCandidates": [
+   "十一月三十日一天之內錄完又混完，隔年就出片",
+   "標題曲是全碟最短的一首，三分三十三秒，還是唯一有人唱的一首"
+  ],
+  "sound": "鋼琴三重奏，六首從四分二十三秒到十二分四十一秒；曲名裡有〈Like McCoy〉與〈J.C.Blues〉，四首自作，末尾以 Horace Silver 的〈Peace〉收場、加進一位女聲。Discogs 給的曲風標籤是 Contemporary Jazz、Post Bop 與 Free Jazz。",
+  "keyTracks": [
+   "Dancing Dolls",
+   "Peace",
+   "Like McCoy"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "note": "1983 為原盤年，依裁定第 95 條（rgMbid 只當身分鍵、年份另找）：Discogs 原盤 Aketa's Disk AD-14 記 1983，內頁記錄音為 1982-11-30。MusicBrainz 的 first-release-date 2006-10-21 是它只建了 Solid CD 那一筆造成的，不採。**錄音年是 1982、發行年是 1983，行文必須分開寫。**"
+  },
+  "notes": "本卡的獨有錨點有兩個，擇一即可：**（一）錄音與混音在同一天完成**（Discogs 註記逐字寫「Recorded and remixed … on November 30, 1982」）；**（二）標題曲的身分**——〈Peace〉是 Horace Silver 的曲子、是全碟最短的一首、也是唯一有人聲的一首，三件事都在同一份 credit 與曲目表上。互斥條款：廠牌成立史與アケタの店判給《Aketa's Erotical…》、DEEP JAZZ REALITY 全目錄 CD 化判給《外はいい天気》、**河野康弘的生平判給《ローマ・イン・ザ・レイン》**、**BBE 系列判給《Topology》**——本卡四條全部禁用。「隔了二十三年才有第一次 CD 化」這句**可以寫**：facts 直接給了 1983 與 2006 兩個年份，但**「二十三年」這個數字是我從兩個年份算出來的，facts 沒有逐字寫**——依第 64 條，**行文要寫就寫「一九八三年的碟，到二○○六年才第一次做成 CD」，不得寫成「隔了二十三年」**。**A1〈Like McCoy〉與 A2〈Fuji〉的作曲者 facts 沒有**（Discogs 的作曲欄只涵蓋 A3 到 B2 與 B3），**不得寫成「六首裡五首自作」或指名這兩首是誰寫的**。掛名：卡片用「Yasuhiro Kohno Trio + 1」，Discogs 原盤作「河野康弘ピアノトリオ+1」。**單字盤名《Peace》**：行文提到盤名時最好帶上藝人名或年份，避免讀起來像泛指。**第 61／110 條**：`sound` 全由曲目表、作曲欄與 Discogs 曲風標籤構成，沒有樂評描述演奏，不得補。"
+ },
+ {
+  "key": "desc2:Makoto Terashita|Topology",
+  "artist": "Makoto Terashita",
+  "album": "Topology",
+  "facts": [
+   {
+    "f": "Discogs 的 1984 年原盤條目（Aketa's Disk AD-16）有兩句註記：「500 copies pressed.」與「Recorded June 11, 1984.」——只壓了 500 張，錄音在一天之內；錄音地點是 Victor Studio，經銷 Disk Union，定價 2,700 円。",
+    "src": "https://www.discogs.com/release/5731669"
+   },
+   {
+    "f": "同一筆條目的 credit：Makoto Terashita（寺下誠）鋼琴、**Harold Land 次中音薩克斯**、Yasushi Yoneki 貝斯、Mike Reznikoff 鼓、Takayuki Koizumi 打擊；統籌 Yukio Ehara，混音 Goro Kudo 與 Masa Marumo，內頁 池上比沙之（Hisayuki Ikegami），製作欄掛的是「Shiny Stockings」。",
+    "src": "https://www.discogs.com/release/5731669"
+   },
+   {
+    "f": "原盤六首，五首由寺下誠寫、一首由 Harold Land 寫：A1〈Dragon Dance〉12:35、A2〈World Peace〉7:47（Land 作）、A3〈Dear Friends〉3:50、B1〈Takeuma〉7:49、B2〈Ī•Ha•Tō•Bo〉6:17、B3〈Crossing〉9:04。Discogs 的曲風標籤是 Modal、Hard Bop 與 Spiritual Jazz。",
+    "src": "https://www.discogs.com/release/5731669"
+   },
+   {
+    "f": "BBE 的 Bandcamp 頁寫：這是他們「J Jazz Masterclass Series」的第四張，把它形容為一位年輕日本鋼琴手與一位美國爵士老將之間「令人意外卻引人入勝」的合作；發行日 2019 年 9 月 13 日，系列由 Tony Higgins 與 Mike Peden 策劃。",
+    "src": "https://bbemusic.bandcamp.com/album/makoto-terashita-meets-harold-land-topology"
+   },
+   {
+    "f": "BBE 這次復刻的規格：45 轉、180 克雙碟黑膠，封面、腰帶（obi）與內頁都照原盤複製，原內頁文字全部英譯，另加一篇 Tony Higgins 新寫的 3,700 字長文，同時發行 CD 與數位版。",
+    "src": "https://bbemusic.com/product/topology"
+   },
+   {
+    "f": "Discogs master 1581355 有 7 個版本：1984 年 AD-16 原盤、2019 年 Octave Lab CD（OTLCD2408）、2019 年 BBE 的英國黑膠（BBE504ALP）、CD（BBE504ACD）與歐洲數位（FLAC）、2021 年 Ultra-Vybe CD（UVWA-1033）、2024 年 Solid Records CD（SGJZ-2198）；沒有任何一筆標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/1581355"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 標題《Topology》、**artist-credit 只掛「Makoto Terashita」一人**（Discogs 與 BBE 都用「Makoto Terashita meets Harold Land」雙掛名）、首度發行 1984 年、primary-type Album、無 secondary type；轄下 2 個 release 都是 Official——1984 年日本盤與 2019-09-13 的英國 BBE 盤。",
+    "src": "https://musicbrainz.org/release-group/09ebde3b-1712-4cca-92ea-89ac0191503b"
+   },
+   {
+    "f": "Discogs 原盤條目的社群統計：65 人登記持有、697 人登記想要——是本組想要人數最高的一張。",
+    "src": "https://www.discogs.com/release/5731669"
+   }
+  ],
+  "hookCandidates": [
+   "只壓五百張，錄音只花了一天，吹薩克斯的是 Harold Land",
+   "六首曲子五首是那位日本鋼琴手寫的，剩下一首叫〈World Peace〉，作者是那位美國人"
+  ],
+  "sound": "五人編制：鋼琴、次中音薩克斯、貝斯、鼓、打擊。六首從三分五十秒到十二分三十五秒，開場最長。Discogs 給的曲風標籤是 Modal、Hard Bop 與 Spiritual Jazz；BBE 把它描述成年輕日本鋼琴手與美國老將之間的合作，強調兩人世代與經歷的落差。",
+  "keyTracks": [
+   "Dragon Dance",
+   "World Peace",
+   "Ī•Ha•Tō•Bo"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "note": "1984 維持卡單原值：Discogs 原盤 AD-16（錄音 1984-06-11）與 MusicBrainz first-release-date 一致。**BBE 的商品說明把原盤寫成 1983 年，與壓片證據不符**——依第 86 條（年份採壓片證據，不採引用來源說的那一年）不採，並依第 18／46 條**行文不得正面斷言發行年**，但錄音日 1984 年 6 月 11 日可以寫。"
+  },
+  "notes": "本卡分到的互斥條款：**「BBE 的 J Jazz Masterclass 系列是什麼、Tony Higgins 與 Mike Peden 是誰、復刻做了哪些工」這條線判給本卡**——同組另兩張走 BBE 的碟（《Song Of Island》《At the Room 427》）只能寫自己那一筆的年份與內容，不得介紹系列。本卡**禁用**：廠牌成立史與アケタの店（判給《Aketa's Erotical…》）、DEEP JAZZ REALITY 全目錄 CD 化（判給《外はいい天気》）、河野康弘那一條線（不同人）。本卡的獨有錨點是**只壓五百張、一天錄完、而吹薩克斯的是 Harold Land**——三件事都在同一份 Discogs 條目上。**掛名的落差要處理乾淨**：卡片依 MB 實體只掛「Makoto Terashita」，但 Discogs 原盤與 BBE 都是雙掛名——**Harold Land 一定要寫進行文**（他在 facts 裡是薩克斯手兼〈World Peace〉的作者），但**不得把卡片掛名寫成雙掛名**。**貝斯、鼓、打擊三人的漢字寫法 facts 沒有**（Discogs 只給 Yasushi Yoneki、Mike Reznikoff、Takayuki Koizumi），要提就照羅馬拼音。**〈Ī•Ha•Tō•Bo〉這個曲名的來歷 facts 沒有**——不得寫成與宮沢賢治或岩手有關（第 33／110 條）。製作欄的「Shiny Stockings」facts 只寫它掛在製作欄上，**不得推測那是誰或是什麼**。**第 64 條**：「3,700 字」與「500 張」都是來源逐字寫的數字，可以用；**版本數 7 不要換算成「被重發七次」**。**第 61／110 條**：`sound` 的最後一句照 BBE Bandcamp 的說法轉述，其餘由 credit、曲目時長與 Discogs 曲風標籤構成。"
  }
 ]
