@@ -12,11 +12,20 @@
 3. **名字產生器 12 → 45 組**，改成台灣樂迷梗四類：器材規格（跳針王、針壓強迫症、慢轉33）、收藏行為（買了沒拆、月底吃土、唱片行釘子戶）、
    聽法（只聽前奏、A面就睡、我早就聽過）、品味（金耳朵、木耳朵、冷門仙人、排行榜絕緣）。全部 ≤8 字（`NAME_MAX`），程式檢查過無超長。
 
-**主要檔案**：`roguelike.html`、`ROGUELIKE_DESIGN.md` §2.0。
+4. **分支預覽站每開新分頁就重置成全新玩家**（店主要求：手機上清網站資料很麻煩）。做在共用的 `dip-character.js` 最上面，
+   以主機名 `/^[a-z0-9-]+\.dip-vinyl-shop\.pages\.dev$/` 開關——正式站是裸網域 `dip-vinyl-shop.pages.dev`（比不中）與自訂網域，
+   本機開發也比不中，全部 inert。旗標用 `sessionStorage`：**同分頁重整保留進度**（才測得到續玩），**關掉分頁再進就整份清空**。
+   清的是預覽網域自己的 localStorage 與 `firebaseLocalStorageDb`（預覽站與正式站是不同來源，資料本來就各自獨立）。
+   另給右下角「🧪 重置」鈕（`body.in-battle` 時隱藏，免得壓到手牌）與首次進站的提示條（15 秒內跨頁仍會顯示，因為主選單會馬上轉去序章）。
+
+**主要檔案**：`roguelike.html`、`dip-character.js`、`pvp.html`／`battle.html`（`?v=2`）、`ROGUELIKE_DESIGN.md` §2.0。
 
 **驗證**：腳本過 `node --check`；Playwright 390×844 重跑整條——隨機取名連按 8 次全不重複且都在字數內；
 序章 → 教學兩場（腳本照課表打，兩場都第五手收尾）→ 尾聲 11 段（原 12 段少一句）→ 木箱固定顯示防塵套／黑膠唱針／洗碟水 →
 選了裝上（`RUN.relics=["dustcover"]`、`equipped` 同步）→「應戰」進第 3 場正常對手。console 無錯誤。
+預覽重置另以 Chromium `--host-resolver-rules` 把 `claude-card-game-character-c.dip-vinyl-shop.pages.dev` 與裸網域 `dip-vinyl-shop.pages.dev`
+都指到本機測——預覽站首次進站清空並顯示提示條、同分頁重整角色還在、另開分頁又變全新、「🧪 重置」鈕按下去回到空白捏角畫面、
+戰鬥中按鈕隱藏；**裸網域（模擬正式站）不清、沒有按鈕、預先寫入的 xp 999 原封不動**。
 
 ### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：RPG 序章（從品味生死鬥主選單開始、角色跨頁共用）＋教學尾聲（老闆送設備）
 
