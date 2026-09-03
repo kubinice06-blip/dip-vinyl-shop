@@ -398,8 +398,13 @@
   "risk": "自我同名卡，且 MB 依 6 軌把它標成 primary-type EP；本卡依 §5.5 asia-mini-album 白名單收錄（Discogs 原盤格式明標 Album、母國以專輯發行與評論、2017 年 TAL 重製亦以專輯形態出版），`releaseType` 照 MB 實填 EP。Apple 條目標題為「Non Band - EP」，尾綴「- EP」正規化後剝除即可與自我同名的完全相等規則相容。",
   "mbNote": "MB release-group 172fa4a4-e02b-4163-9fa9-b833293379a2《Non Band》，artist-credit「Non Band」，first-release-date 1982，primary-type EP，secondary-types 空——§5.5 asia-mini-album 白名單依據：Discogs master 491543 原盤格式 10\" Album、TAL 2017 重製為 12\" Album。轄下 4 個 release 皆 Official：1982 JP（Telegraph 原盤）、1990-06-25 JP（4988008115536，Wax）、2007-10-25 JP（4948722336778，SS）、2017-04-07 XW（880918226958，TAL）。對照組 c4406206…《Non Bandin' Live + 1982 Live》(2007，Album/Live) 刻意不釘。藝人 MBID 3637d502-e3bc-461c-8f69-94891c3ec402，名下 3 個 release-group。已回問 release-group 端點確認實體類型與標題。",
   "releaseType": "EP",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
+  "genreException": "asia-mini-album",
+  "exceptionReason": "§5.5 asia-mini-album：MB 依 6 軌標 EP，但 1982 年 Telegraph 原盤（NON 001）Discogs 格式直記 10\" Album，2017 年 TAL 授權重製（TAL004）亦以 12\" Album 形態出版，母國以專輯發行與評論",
+  "exceptionEvidenceUrls": [
+   "https://www.discogs.com/release/3584833",
+   "https://www.discogs.com/release/10110615",
+   "https://musicbrainz.org/release-group/172fa4a4-e02b-4163-9fa9-b833293379a2"
+  ],
   "selfTitled": true,
   "queryAlias": "",
   "reissuedBy": "TAL／SS Recordings",
