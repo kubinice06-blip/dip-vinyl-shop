@@ -769,5 +769,169 @@
    "note": "1986 維持卡單原值：Discogs 原盤、MusicBrainz、CDJournal 三方一致（CDJournal 明寫「1986 年的首張全長專輯」）；Discogs 內頁記錄音是 1986 年 2、3 月，**行文提錄音月份與發行年要分開**（第 86 條）。可寫「一九八六年」。"
   },
   "notes": "本卡分到的獨有錨點：**Transrecords 這條線判給本卡**——「《FOOL'S MATE》初代總編輯北村昌士在 1980 年代前半設立的廠牌」「這張是廠牌目錄的 TRANS 07／唱片上印 TRANS 007」「2015 年 TRANS RECORDS 復刻系列第一彈、從原始母帶重製、掟ポルシェ 寫解說」都在本卡 facts（互斥條款，第 58 條）；另有**三人編制的多重掛名、「Composed, Decomposed」、三間錄音室兩個月、《ドグママグラ》EP 併進 2015 年 CD**。**同批的 Asylum、Z.O.A 與黒百合姉妹 禁用這條線**：Asylum 與 Z.O.A 只能寫「Transrecords」廠牌名（Asylum 另分到 2015 復刻的 Gazelle 監修那一端），黒百合姉妹 只能寫「北村昌士掛本碟製作」與「《FOOL'S MATE》刊出後才受注意」。**日文維基〈YBO2〉條目整篇掛「出典の明記」且零引註（第 80 條），完全不供料**——「イボイボ 的讀法」「複雜的變拍」「與 This Heat 相通」「トランスギャル」「1988 年廠牌關閉」「1989 年由 Victor 主流出道」**全部不得寫**；本卡可用的廠牌敘述只有〈TRANS RECORDS〉條目那一句有引註的（fact 4）。**吉田達也與 K.K. Null 的其他樂團（Ruins、Zeni Geva）facts 沒有，不得補**（第 33 條；池中的 Transrecords 卡目前只有 Ruins《Pallaschtom》，更不能跨卡取事實）。**「首張全長專輯」照 CDJournal 的原話寫**，不要自行寫成「出道作」——他們同年另有 12 吋單曲，facts 只寫到《ドグママグラ》這一張。**時長只能引 2015 年 CD 版標的**（第 12b 條：原盤條目沒有時長），行文要說明那是再發版標的，或乾脆只做長短對照不掛數字。**編號**：TRANS 07／TRANS 007 兩種寫法都在 fact 裡，**不得寫成「第七張出版品」**（第 125 條）。掛名：卡片「YBO²」帶上標，Apple 掛「YBO2」，`queryAlias` YBO2；盤名卡片採 Discogs 原盤的《Alienation》，MB 標題全大寫。人名：北村昌士、吉田達也用漢字，K.K. Null、掟ポルシェ 照來源寫法，Shuhei Karl Masuno 查無確定漢字。**第 61／110 條**：`sound` 的每一項掛名與長度對照都直接讀自 credit 與曲目表，曲風句引自 Discogs。"
+ },
+ {
+  "key": "desc2:Asylum|Crystal Days",
+  "artist": "Asylum",
+  "album": "Crystal Days",
+  "facts": [
+   {
+    "f": "Discogs 的 1987 年原盤條目（Transrecords TRANS 21，release 2908268）：日本盤黑膠 LP，藝人實體作「Asylum (13)」；曲風標 Rock，風格欄一次掛了四個——New Wave、Punk、Prog Rock 與 Post-Punk。",
+    "src": "https://www.discogs.com/release/2908268"
+   },
+   {
+    "f": "同一條目的 credit：Gazelle 掛主唱、吉他、鋼琴與作詞；Aki 電吉他、木吉他與和聲；Masayuki Ariga 貝斯、吉他與和聲；Kishizawa Mitsumasa 鼓、打擊與和聲；另有 S. Nishizawa 吉他、Hiroshi 掛「吉他編排」、Joseph「K」掛 Mellotron。詞曲欄掛 Asylum 全團。",
+    "src": "https://www.discogs.com/release/2908268"
+   },
+   {
+    "f": "同一條目還有兩筆不尋常的演出掛名：Kazu 掛的是「Performer [Smile]」（微笑），Nobuo Nakamura 掛的是「Performer [Turbo Driver]」；和聲另掛一個團體名「A.U Sisters & Brado Dandies」。",
+    "src": "https://www.discogs.com/release/2908268"
+   },
+   {
+    "f": "原盤十三軌，日文與英文曲名交錯：A1〈煩悩〉、A2〈Chasing Shadows〉、A3〈Ain't No Crime〉、A4〈イカロスの翼〉、A5〈自虐者〉、A6〈Crystal Days〉、A7〈Communicate War〉、A8〈Dead Line〉、B1〈Illusion Of The Empty Room〉、B2〈Tight Rope〉、B3〈Remember Tomorrow (N.G)〉、B4〈In Your Dreams〉、B5〈円舞曲〉；條目未登錄時長。",
+    "src": "https://www.discogs.com/release/2908268"
+   },
+   {
+    "f": "CDJournal 2015 年 10 月 30 日的報導：TRANS RECORDS 名作復刻系列的第一彈於 11 月 25 日推出三張，其中 ASYLUM《Crystal Days [+]》(FJSP-243～4，雙 CD，3200 日圓未稅) 是在 1987 年的《CRYSTAL DAYS》上追加大量稀有音源，並收錄前身樂團「SICK BOYS」的音源；監修與解說由 Gazelle 執筆，附家族樹。三張全部是「從原始母帶做的復刻」，由現在的 FOOL'S MATE 協力製作。",
+    "src": "https://www.cdjournal.com/main/news/-/68976"
+   },
+   {
+    "f": "Discogs 的 2015 年再發條目（Super Fuji Discs FJSP-243，release 10622758，2015-11-25）：兩張 CD，第一張是原盤十三軌之後接十二首附加曲，第二張整張都是另外的曲目（〈哀願〉〈エサ〉〈Incest〉〈夢宴〉〈Come Together〉等），沿用與原盤相同的一組 credit。",
+    "src": "https://www.discogs.com/release/10622758"
+   },
+   {
+    "f": "Discogs 的 master 371017 共五個版本——1987 年 Transrecords 的 LP、1989 年 J.A.P. Records 的 CD（JPD-402）、1993 年 SSE Communications 的 CD（SSE 8012CD）、2007 年 Still Life Records 的重製 CD（SL-1002）、2015 年 Super Fuji Discs 的雙 CD——沒有任何一筆標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/371017"
+   },
+   {
+    "f": "MusicBrainz 的 release-group：credit 作全大寫「ASYLUM」、first-release-date 1987、primary-type Album、無 secondary type；轄下三筆日本 Official——1987 年原盤、1989-06-21（條碼 4988007045773）與 1993-05-20。",
+    "src": "https://musicbrainz.org/release-group/5cdc044e-effd-4055-9c74-1ab4b6c81b5f"
+   }
+  ],
+  "hookCandidates": [
+   "唱片內頁上有一個人掛的職稱是「微笑」，另一個是「渦輪駕駛」",
+   "二十八年後由主唱自己監修的再發，附了一張樂團的家族樹"
+  ],
+  "sound": "Discogs 一次掛了 New Wave、Punk、Prog Rock 與 Post-Punk 四個風格。編制是主唱兼吉他與鋼琴、兩把吉他、貝斯、鼓，另有一位掛 Mellotron、一位掛「吉他編排」，和聲則掛在一個團體名下；四個人都掛了和聲。十三首的曲名日文與英文交錯，收尾是〈円舞曲〉。",
+  "keyTracks": [
+   "Crystal Days",
+   "煩悩",
+   "イカロスの翼",
+   "円舞曲"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1987,
+   "note": "1987 維持卡單原值：Discogs 原盤、MusicBrainz 與 CDJournal（明寫「1987 年的《CRYSTAL DAYS》」）三方一致，沒有分歧，也沒有月份資料。行文寫「一九八七年」即可。"
+  },
+  "notes": "本卡分到的獨有錨點：**「Performer [Smile]」與「Performer [Turbo Driver]」這兩個怪職稱、A.U Sisters & Brado Dandies 這個和聲團名、四個風格標籤並列、日英交錯的十三首、2015 年由主唱 Gazelle 自己監修解說並附家族樹、雙 CD 裡收了前身樂團 SICK BOYS 的音源**。互斥條款（第 58 條）：**Transrecords 的廠牌史（北村昌士、《FOOL'S MATE》、目錄編號、後改名 SSE）判給同批的 YBO²**——本卡只能寫「Transrecords」這個廠牌名，**不得寫廠牌是誰開的、也不得寫廠牌沿革**；**2015 年復刻系列本身也判給 YBO²**（它拿「第一彈、從原始母帶、掟ポルシェ 解說」那一端），**本卡只能用 Gazelle 監修與 SICK BOYS 這兩項**，不得重述「系列第一彈」。**日文維基沒有 ASYLUM 的可用條目資料進 facts；〈TRANS RECORDS〉條目那句「トランスギャル」與「與ナゴム、キャプテン 並列」無引註（第 80 條），不供料。** **前身樂團 SICK BOYS 只有 CDJournal 那一句**——可以寫「再發收了前身樂團的音源」，**不得寫 SICK BOYS 是什麼樣的團、何時活動**（第 33 條）。**人數不要數**：credit 列了七個演出者加一個和聲團體，**沒有任何一條 fact 說「幾人編制」**（第 108 條），行文寫「兩把吉他」「一位掛 Mellotron」這種讀得出來的即可。**「Remember Tomorrow (N.G)」的 (N.G) 是曲目表原樣**，不要解釋它是什麼。掛名：卡片「Asylum」，MB credit 全大寫、Discogs 實體帶序號「Asylum (13)」（引用時要帶序號），`queryAlias` 留空；池中另有 `Soul Asylum`，是不同字串、不同對象。人名：Gazelle、Aki、Joseph「K」是藝名，Masayuki Ariga、Kishizawa Mitsumasa、S. Nishizawa、Nobuo Nakamura 查無確定漢字寫法，**一律照 Discogs 的羅馬字寫**。**第 61／110 條**：`sound` 的每一項都直接讀自 credit、風格欄與曲目表。"
+ },
+ {
+  "key": "desc2:Z.O.A|Humanical Garden",
+  "artist": "Z.O.A",
+  "album": "Humanical Garden",
+  "facts": [
+   {
+    "f": "Discogs 的 1988 年原盤條目（Transrecords TRANS 37，release 1427264）：日本盤黑膠 LP，內頁註記「錄於 MIB、Mod（目黑）與 Take Studio，1988 年 4 月至 6 月，於 Mod Studio 混音」，並附一張單面 A4 內頁印曲目與歌詞；曲風標 Rock，風格欄掛 Alternative Rock、Hard Rock、Prog Rock、New Wave 與 Post-Punk。",
+    "src": "https://www.discogs.com/release/1427264"
+   },
+   {
+    "f": "同一條目的 credit：Seiichiroh Morikawa（森川誠一郎）主唱與作詞、Shinji Kuroki（黒木真司）吉他、Kansuke Nakagawa 貝斯、Masao Nojima 鼓，另有 Kazuyoshi Kimoto 的**電小提琴**與 Akiko Yokota 的鍵盤；Tadashi Satoh 掛 directed by，錄音與混音都是 Hiroshi Kuramochi。",
+    "src": "https://www.discogs.com/release/1427264"
+   },
+   {
+    "f": "原盤八軌並附時長：A1〈Man Caged At The Zoo〉3:18、A2〈Wall〉7:52、A3〈Over The Trap〉5:00、A4〈Red People In Disorder〉3:12、B1〈Gazing At The Earth〉6:29、B2〈Taste Of Black〉2:53、B3〈Hatred〉8:09、B4〈In The Head〉5:04。",
+    "src": "https://www.discogs.com/release/1427264"
+   },
+   {
+    "f": "Discogs 的 1992 年再發條目（SSE Communications SSE8003CD，release 2531235）：CD，沿用原盤同一組 credit 與同一段錄音註記，第九軌〈Mind (Demo Track)〉標明是 CD 的附加曲。",
+    "src": "https://www.discogs.com/release/2531235"
+   },
+   {
+    "f": "Discogs 的 master 285773 只有兩個版本——1988 年 Transrecords 的 LP 與 1992 年 SSE Communications 的 CD——都沒有標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/285773"
+   },
+   {
+    "f": "DOMMUNE 2024 年〈Z.O.A 1984-2024 \"Ride the snake to the lake\"〉解散特別節目的介紹頁記：Z.O.A 1984 年結成；中心人物森川誠一郎「82 年前後起主辦『MORE records』（現 Grand Fish/Lab）」，之後專心於樂團活動；他們在トランス・レコード 發表第二張 12 吋 EP《OFF BLACK》，隔年 1988 年發表第一張專輯《HUMANICAL GARDEN》，其後在キャプテン・レコード 發表第二張專輯；1992 年起幾乎停止活動，2015 與 2019 年辦過再結成演出，2024 年在成軍四十週年的節點由團員決定結束活動。",
+    "src": "https://www.dommune.com/streamings/2024/080101/"
+   },
+   {
+    "f": "MusicBrainz 的 release-group：credit「Z.O.A」、標題《Humanical Garden》、first-release-date 1988、primary-type Album、無 secondary type，轄下只有 1988 年一筆日本 Official 發行；MB 的藝人實體名寫作「ZOA」。",
+    "src": "https://musicbrainz.org/release-group/1178fbfa-969d-4b5b-8c8e-d549c0b9fe01"
+   }
+  ],
+  "hookCandidates": [
+   "四月到六月，三間錄音室，八首歌：最長的一首叫〈Hatred〉",
+   "唱片的 credit 上多出一把電小提琴與一台鍵盤"
+  ],
+  "sound": "Discogs 一次掛了 Alternative Rock、Hard Rock、Prog Rock、New Wave 與 Post-Punk 五個風格。核心是主唱、吉他、貝斯、鼓，credit 另外列了電小提琴與鍵盤兩個聲部；八首的長度落差很大——最短的〈Taste Of Black〉2:53，最長的〈Hatred〉8:09，〈Wall〉7:52 也接近八分鐘。曲名幾乎都是關在籠裡、牆、陷阱、憎恨這類意象，主唱同時掛作詞。",
+  "keyTracks": [
+   "Man Caged At The Zoo",
+   "Hatred",
+   "Wall",
+   "Gazing At The Earth"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1988,
+   "note": "1988 維持卡單原值：Discogs 原盤、MusicBrainz 與 DOMMUNE 的介紹（「隔年 1988 年發表第一張專輯」）三方一致；Discogs 內頁記錄音是 1988 年 4 至 6 月，**行文提錄音期與發行年要分開**（第 86 條）。可寫「一九八八年」。"
+  },
+  "notes": "本卡分到的獨有錨點：**四到六月分在三間錄音室錄、單面 A4 的歌詞內頁、credit 裡的電小提琴與鍵盤、八首的長度落差、1992 年 CD 多出的 demo〈Mind〉、森川誠一郎 從 1982 年前後就自己主辦 MORE records、2024 年在四十週年收攤**。互斥條款（第 58 條）：**Transrecords 的廠牌史判給同批的 YBO²**，本卡只能寫「Transrecords」這個廠牌名，**不得寫北村昌士、不得寫廠牌沿革或改名 SSE**（1992 年的再發廠牌是 SSE Communications，這是 fact 上的廠牌名，可寫，但不得解釋兩者的關係）。同批的 Asylum 也只能寫廠牌名。**日文維基〈Z.O.A〉條目的來歷各段沒有行內引註（第 80 條），全部不供料**——「森川的自傷演出」「1986 年成員被 SODOM 挖走、森川轉去 YBO² 彈吉他」「トランスギャル」「1989 年在宝島的キャプテン 出第二張」**都不得寫**；第二張專輯只能照 DOMMUNE 那句寫「其後在キャプテン・レコード 發表第二張」，**不得帶出 Captain 的廠牌史**（判給 The Willard 與遠藤ミチロウ）。**同批的 YBO² 不得寫 Z.O.A，本卡也不得寫 YBO²**。**人數不要數**（第 108 條）：credit 列了六個演出者，**沒有任何 fact 說「四人編制」或誰是正式團員誰是客席**——行文不得寫「四人團」，也不得把電小提琴與鍵盤寫成「客席」，只能照 credit 平鋪。**漢字**：森川誠一郎、黒木真司 有 DOMMUNE 的日文寫法可依；Kansuke Nakagawa、Masao Nojima、Kazuyoshi Kimoto、Akiko Yokota、Tadashi Satoh、Hiroshi Kuramochi **查無可引的漢字寫法，行文用羅馬字或直接略去人名**。掛名：卡片「Z.O.A」（Discogs 原盤與 MB 的 credit 都是 Z.O.A），MB 藝人實體名是「ZOA」，`queryAlias` ZOA。**第 61／110 條**：`sound` 的長度對照與聲部都直接讀自曲目表與 credit，曲名意象那句是讀曲名本身。"
+ },
+ {
+  "key": "desc4:カーネーション|Gong Show",
+  "artist": "カーネーション",
+  "album": "Gong Show",
+  "facts": [
+   {
+    "f": "Discogs 的 1988 年原盤條目（Wax Records 28WXL-3004，release 13450041）：日本盤黑膠 LP，條碼 4988008038811，製造掛 Tokuma Japan Corporation、經銷掛 Tokuma Communications；製作人是鈴木博文（Hirobumi Suzuki）。十軌為 A1〈Gong Show〉、A2〈Halleluyah Kalleluyah〉、A3〈Holiday〉、A4〈Jenny Jet〉、A5〈3丁目の夏〉、B1〈Walk On〉、B2〈Drive Inn〉、B3〈愛しのリボンちゃん〉、B4〈Rich Man〉、B5〈Surfin Life〉。",
+    "src": "https://www.discogs.com/release/13450041"
+   },
+   {
+    "f": "MusicBrainz 的 release-group：credit 作拉丁的「Carnation」、標題全大寫《GONG SHOW》、first-release-date 1988-08-25、primary-type Album、無 secondary type；轄下三筆日本 Official——1988-08-25（條碼 4988008061437）、1994 年與 1997-09-25（條碼 4948722011927）。",
+    "src": "https://musicbrainz.org/release-group/d7ab1463-ba68-4f6b-a70f-cbc6999a152b"
+   },
+   {
+    "f": "Discogs 的 master 1101026 共五個版本——1988 年 Wax 的 LP（28WXL-3004）與同年的 CD（32WXD-111）、1994 年 Metrotron Records 的兩筆 CD 再發（compactron-28 與 compactron-52）、2016 年 Wax 的限量黑膠（TKJA-10076）——沒有任何一筆標 Unofficial Release。",
+    "src": "https://www.discogs.com/master/1101026"
+   },
+   {
+    "f": "Tower Records 的 2016 年黑膠商品頁（Wax Records TKJA-10076，2016 年 7 月 13 日）：完全限定生產，180 克重量盤、EP 式 PP 貼封套，收錄時間標為 41 分 5 秒，製作人欄記鈴木博文。",
+    "src": "https://tower.jp/item/4266472"
+   },
+   {
+    "f": "Disk Union 的 SHM-CD 商品頁（徳間コミュニケーションズ TKCA10135，2015 年 7 月 15 日）寫：本作屬於「徳間ジャパン 引以為傲的日本第一家龐克／另類專門廠牌」WAX RECORDS 的再發企劃，內容是「カーネーション 一九八八年由メトロトロン・レコード 發表的第二張專輯」的完全限定生產紙盒高音質 SHM-CD 復刻；該版收十二曲，比黑膠多出〈地球はまわる〉與〈夜の煙突〉。",
+    "src": "https://diskunion.net/jp/ct/detail/1006703598"
+   },
+   {
+    "f": "日文維基〈カーネーション (バンド)〉來歷一節有引註的一筆（引《ロック画報 24》ブルース・インターアクションズ 2006 年 6 月 30 日第 14 頁）記：1984 年ケラ 對他們產生興趣，由ナゴムレコード 發行了第一張 7 吋單曲〈夜の煙突〉（耳鼻咽喉科時期的曲子），而那是「ナゴム 的歷史裡倒數第二賣不出去的唱片」。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)"
+   },
+   {
+    "f": "同一節另一筆有引註的（引官方網站 2009 年 8 月 31 日的介紹文）記：1981 年他們以「耳鼻咽喉科」之名成軍，1983 年 12 月改名為カーネーション，理由是音樂性變得偏 pop、而且叫耳鼻咽喉科這個名字賣不掉票；團名出自耳鼻咽喉科的曲子〈花の運河で溺れたい〉的副歌。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)"
+   },
+   {
+    "f": "Discogs 的藝人目錄裡，掛在 Carnation 名下最早的一筆正是 1984 年ナゴムレコード 的 7 吋《夜の煙突》，其後依序是 1986 年的《Duck Boat》、1988 年的《Young Wise Men》與本碟《Gong Show》。",
+    "src": "https://www.discogs.com/artist/1082560"
+   }
+  ],
+  "hookCandidates": [
+   "改名以前他們叫「耳鼻咽喉科」，改掉的理由是這名字賣不掉票",
+   "出道單曲是那家廠牌歷史上倒數第二賣不出去的唱片"
+  ],
+  "sound": "Discogs 把曲風欄同時填了 Rock 與 Pop，沒有填任何次類型。原盤 credit 上只登錄了一位製作人鈴木博文，樂手沒有逐一列出；十首曲名一半英文一半日文（〈3丁目の夏〉〈愛しのリボンちゃん〉〈Surfin Life〉），Tower 記的全碟收錄時間是 41 分 5 秒。",
+  "keyTracks": [
+   "Gong Show",
+   "愛しのリボンちゃん",
+   "Walk On",
+   "3丁目の夏"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1988,
+   "note": "1988 維持卡單原值：Discogs 原盤、MusicBrainz（1988-08-25）、Disk Union 與 Tower 都記 1988；MB 給到日的日期 1988-08-25。可寫「一九八八年八月」。"
+  },
+  "notes": "**先處理策展層一處**：`curatorWhy` 寫「第三張專輯」，但 **Disk Union 的文案寫「第二張專輯」**（日文維基的專輯條目也寫 2 枚目，但那頁掛「出典の明記」且零引註，不採）。兩說並存、只有一邊有可引來源，**行文一律不要寫序數**（同第 18／46 條的處理方式）；要寫先後只能用 fact 8 的目錄順序（1984 單曲→1986《Duck Boat》→1988《Young Wise Men》→本碟）。**Disk Union 那句「1988 年由メトロトロン・レコード 發表」與原盤條目的廠牌（Wax Records，徳間製造）對不上**——Discogs 上 Metrotron 是 1994 年的再發方；**行文不得寫成「由 Metrotron 發行」**，只寫 Wax／徳間。本卡分到的獨有錨點：**1984 年ケラ 找上門、ナゴム 的第一張單曲〈夜の煙突〉是「廠牌歷史上倒數第二賣不出去的唱片」、樂團原名「耳鼻咽喉科」與改名的理由、鈴木博文 製作、2016 年 180 克重量盤完全限定生產**。互斥條款（第 58 條）：**ナゴムレコード 的廠牌史判給木魚、ケラ 的招攬故事判給人生**——本卡寫的是**這支樂團自己在ナゴム的那一張單曲賣得多差**這個因果，**不得寫ナゴム 是哪一年成立的、目錄怎麼排、也不得提木魚或人生**。**Wax Records 是什麼樣的廠牌（徳間旗下、日本第一家龐克／另類專門廠牌）與 2016 年的復刻企劃整體，判給同批的 FRICTION**——本卡只能寫「Wax Records」廠牌名與 2016 年這一張的規格（180 克、EP 式 PP 貼封套、完全限定生產、41 分 5 秒），**不得寫廠牌性質、不得寫「二十二張復刻企劃」**。**鈴木博文**：facts 只說他掛製作人，**「moonriders 的貝斯手」沒有 fact 支撐，不得寫**（第 110 條）。**〈夜の煙突〉**：1984 年的單曲曲名與 2015 年 SHM-CD 版的附加曲同名，兩件各自有 fact，但**「是同一首歌」是推論，不得斷言**（第 33 條）。**日文維基〈GONG SHOW〉專輯條目整篇掛「出典の明記」且零引註（第 80 條）**：「封面以地球為主題」「サラリーマン・ロック」「吉他手坂東次郎參加的最後一張」「〈ジェニー・ジェット〉的主唱是棚谷祐一」**全部不供料、不得寫**。掛名：卡片「カーネーション」，MB 的 release credit 是拉丁「Carnation」（第 10 條形狀），`queryAlias` Carnation；池中的 `The For Carnation` 是另一團。人名：ケラ（ケラリーノ・サンドロヴィッチ）、鈴木博文 用漢字。**第 61／110 條**：`sound` 的每一項都讀自 Discogs 曲風欄、credit、曲目表與 Tower 的收錄時間；**全碟時間不得換算成每首平均長度**（第 64 條），只能照抄「四十一分五秒」。"
  }
 ]
