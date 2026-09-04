@@ -76,9 +76,14 @@ const INDIA = ['in', 'us', 'gb', 'de', 'fr', 'ca', 'ae', 'sg', 'au'];
 const JPN = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
 const UKB = ['gb', 'us', 'jp', 'de', 'fr', 'ie', 'ca', 'au'];
 const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
+// c-88 電影原聲補遺（2026-09-04）：原聲帶的發行權跟著**電影的製片國**走，不是跟著作曲家。
+// 好萊塢大片在 us；歐洲作者電影的原盤在 it／fr／de（Morricone、Rota、Delerue、Legrand 的
+// 原廠目錄至今仍由義法的廠牌持有）；日本電影在 jp（且 MB／Apple 的日本原聲覆蓋率明顯偏低）；
+// 蘇聯與東歐在 ru／pl。gb 放在 us 之後是因為大量歐洲片的英語版發行權落在英國。
+const OST = ['us', 'gb', 'it', 'fr', 'de', 'jp', 'ru', 'pl', 'es', 'ca', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
-  c87: JPN };
+  c87: JPN, c88: OST };
 
 const cards = [];
 for (const b of BATCHES)
