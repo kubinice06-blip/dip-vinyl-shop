@@ -1,0 +1,586 @@
+[
+ {
+  "artist": "小栗均トリオ",
+  "album": "みどりいろの渓流",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "岩手縣陸前高田的爵士喫茶「開運橋のジョニー」老闆照井顕自營的 Johnny's Disk 第六號（JD-06）。照井掛製作，鋼琴小栗均、貝斯沖山達司、鼓大隅寿夫的三重奏，七首全是〈But Not For Me〉〈Satin Doll〉〈Doxy〉〈Shiny Stockings〉這類標準曲，是這條廠牌線裡最貼近「店裡現場例行演奏」的一張。原盤只在店內與同好間流通，至今沒有任何再發：Discogs 該廠牌目錄裡 JD-01 至 JD-05 都有 2010 年代的 Solid／Studio Mule 授權復刻，JD-06 一筆都沒有，Discogs 上登錄的持有數是 37 份。池中 Johnny's Disk 已有中山英二兩張與 c-67 收的三張（坂元輝トリオ、上野好美、片山光明），全部落在 JD-01～JD-05。",
+  "risk": "MusicBrainz 上藝人實體「小栗均トリオ」存在（cf152acf-524f-4751-988b-6c315eaccf45）但名下 release-group 為 0，走 §1 人工身分、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：盤名羅馬拼音 Midoriirono Keiryu，藝人羅馬拼音 Hitoshi Oguri Trio；Discogs 該盤的另一個 ANV 寫 Ogushi Hitori Trio（拼寫有誤，實為 Oguri Hitoshi），三種寫法都比對過池中無撞卡。掛名依 Discogs 原盤條目 JD-06 的日文寫法（第 6／70／120 條，本批無 MB 實體可依）。年份 1981 由 Discogs 原盤條目直記，無再發可交叉。封面與試聽預估：Apple 的 jp／us 兩區搜尋皆 0 筆，本盤無數位發行，**封面要本機掃圖、試聽必然缺**。曲目七首全為標準曲，撞名風險在曲目層不在盤名層。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=小栗均&limit=5 → count>0，score 100 命中藝人實體「小栗均トリオ」cf152acf-524f-4751-988b-6c315eaccf45（另有小栗ひとし 158119b6、小栗アキ 061c4478，皆 score 45 的不同人）",
+    "release-group?artist=cf152acf-524f-4751-988b-6c315eaccf45&limit=100&offset=0（依第 116 條用 release-group browse 分頁，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）→ 回 200、release-groups 陣列長度 0，名下零個 release-group",
+    "release-group?query=releasegroup:\"みどりいろの渓流\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"Midoriirono Keiryu\"&limit=15 → count=0",
+    "release-group?query=artist:\"小栗均\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "藝人實體「小栗均トリオ」在 MB 上存在但名下 release-group browse 回 0 筆；盤名以日文與羅馬拼音兩種寫法查皆 count=0，artist 字串查也是 count=0。五次查詢全部回 HTTP 200，無 503／403（第 28／98 條），browse 走的是分頁端點而非 25 筆上限的 inc 端點（第 116 條），回傳內容都對得上所查對象、沒有回不相干的實體（第 122 條）。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/11844039",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Hitoshi Oguri Trio",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "板倉克行",
+  "album": "海猫の島",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第七號（JD-07），鋼琴獨奏盤。六首裡五首是板倉自作自編，曲名〈噂のやまびこ〉〈種山ヶ原の羊〉〈三陸縦貫鉄道の夜〉直接取自岩手的地名與宮澤賢治的場景，最後一首才回到〈朝日の如くさわやかに〉。1982 年 6 月 3 日錄音，照井顕自己製作、自己錄，唱片封面的題字出自書家菅原成雨。原盤無任何再發，Discogs 持有數 30 份；同一位鋼琴手兩年後又替這家廠牌做了 JD-12《ハニー・サンバ》，是 Johnny's Disk 目錄裡少數出過兩張的人。",
+  "risk": "MusicBrainz 上「板倉克行」（a96ca787-ee37-4bcd-b35f-df240da26c01）與「板倉克行トリオ」（82c3d598）兩個實體都在、名下 release-group 都是 0；另有一個 Katsuyuki Itakura Trio（04bb0d8c）名下只有 1994 年與 Keshavan Maslak 合作的《Excuse Me, Mr. Satie》，與本盤無關（第 122 條的反向確認）。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重：盤名羅馬拼音 Uminekono Shima，藝人羅馬拼音 Katsuyuki Itakura，三種寫法比對池中皆無撞卡；同一藝人本批另收 JD-12，合計 2 張、未達 3 張上限。掛名與盤名依 Discogs 原盤條目 JD-07 的日文寫法。封面與試聽預估：Apple jp／us 皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=板倉克行&limit=5 → score 100「板倉克行」a96ca787-ee37-4bcd-b35f-df240da26c01、score 89「板倉克行トリオ」82c3d598-08a0-4056-b1ef-2a3101794ff2",
+    "release-group?artist=a96ca787-ee37-4bcd-b35f-df240da26c01&limit=100&offset=0 → 0 筆；同法查 82c3d598 → 0 筆；查 04bb0d8c（Katsuyuki Itakura Trio）→ 1 筆，是 1994 年的《Excuse Me, Mr. Satie》",
+    "release-group?query=releasegroup:\"海猫の島\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"Uminekono Shima\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩個板倉克行相關的 MB 藝人實體名下 release-group 皆為 0；第三個實體只有一張 1994 年的合作盤，與 1982 年的《海猫の島》不是同一張碟。盤名以日文與羅馬拼音查皆 count=0。全部查詢回 HTTP 200，非 503／403，browse 走分頁端點，回傳實體與所查對象相符。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/11716782",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Katsuyuki Itakura",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "園田まゆみ",
+  "album": "午後3時の秋",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第八號（JD-08），女聲與杉野喜知郎三重奏（鋼琴杉野喜知郎、貝斯坂井紅介、鼓高山光明），1982 年 8 月 30 日一天錄完，十一首全是〈Bye Bye Blackbird〉〈All of Me〉〈Fly Me to the Moon〉這類歌本曲目。這張是 Johnny's Disk 少數被外面挖出來的：東京的 Studio Mule 在 2019 年 3 月 1 日以 STUDIO MULE 15 授權復刻黑膠（Discogs release 13281724，版本頁未標 Unofficial Release），復刻版的 Discogs 持有數 135 份、原盤只有 30 份，這個落差本身就是「當年沒人看見、後來被挖出來」的形狀。",
+  "risk": "MusicBrainz 上「園田まゆみ」（89485cc2-ac48-4585-bdcc-5b79d1839150）與「杉野喜知郎」（bb984ecb，標註 Japanese jazz pianist）、「杉野喜知郎トリオ」（581bd829）三個實體都在，名下 release-group 全部是 0。走 §1、rgMbid 留空、封面不可走 CAA。掛名：Discogs 原盤把杉野喜知郎トリオ併進掛名（「園田まゆみ* With 杉野喜知郎トリオ*」），卡片依第 11 條只掛主唱園田まゆみ，三重奏寫進行文。盤名：Discogs 原盤用全形數字寫「午後３時の秋」，卡片用半形「午後3時の秋」，兩種寫法在去重時是不同字串，本機比對要兩種都看（第 49 條）；羅馬拼音 Gogo Sanji no Aki，Discogs 的英譯是 Autumn 3:00 P.M。再發背書：Studio Mule 2019 年版在 Discogs 版本頁上未標 Unofficial Release，Studio Mule 是 Mule Musiq 的子廠、日本在地經營，廠牌條目上無爭議記載（第 43／57／65／78 條四層都查過）。封面與試聽預估：Studio Mule 是黑膠限定、未上數位平台，Apple jp／us 搜尋皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=園田まゆみ&limit=5 → score 100「園田まゆみ」89485cc2-ac48-4585-bdcc-5b79d1839150；artist?query=杉野喜知郎 → score 100「杉野喜知郎」bb984ecb-8c7b-47cc-8b91-a8559fb9282b（Japanese jazz pianist）、score 90「杉野喜知郎トリオ」581bd829",
+    "release-group?artist=89485cc2-ac48-4585-bdcc-5b79d1839150&limit=100&offset=0 → 0 筆；同法查 bb984ecb → 0 筆；查 581bd829 → 0 筆",
+    "release-group?query=releasegroup:\"午後３時の秋\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"Autumn 3:00 P.M\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "主唱與伴奏三重奏共三個 MB 藝人實體，名下 release-group browse 全部回 0 筆；盤名以全形日文與 Discogs 的英譯兩種寫法查皆 count=0。Studio Mule 2019 年的授權復刻也沒有替這張碟在 MB 上建出 release-group。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/8826798",
+   "https://www.discogs.com/release/13281724"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Mayumi Sonoda",
+  "reissuedBy": "Studio Mule（STUDIO MULE 15，2019-03-01，Discogs release 13281724，未標 Unofficial）"
+ },
+ {
+  "artist": "キングコングパラダイス",
+  "album": "あつさもさむさも",
+  "year": 1984,
+  "genres": [
+   "jazz",
+   "rock"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第九號（JD-09），是這家爵士廠牌目錄裡最不像爵士的一張：Discogs 把它同時歸在 Jazz、Rock 與 Reggae，六首曲名〈フジヤマ〉〈レゲエ ヴドゥ〉〈オマエハ ハート ブレーカー〉，編制是三把吉他加貝斯、康加與人聲。1983 年 7 月 5 至 9 日錄音，照井顕製作兼錄音。與 JD-08 同一批被 Studio Mule 挖出來：2019 年 3 月 22 日以 STUDIO MULE 16 授權復刻黑膠、限量 500 張（Discogs release 13383313，版本頁未標 Unofficial Release，credit 仍列 Ken Terui 為 Producer），復刻版持有數 133 份對原盤 42 份。",
+  "risk": "MusicBrainz 上藝人實體登錄為中黑分隔的「キング・コング・パラダイス」（840c561d-cbda-4c2b-9244-5042066ae2ca），名下只有 1 個 release-group《1000⁄1 青い空になれ》（1979），不是本盤——這是「實體在、名下無目標條目」的形狀，不是查無實體。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統與分隔符去重（第 49 條）：卡片依 Discogs 原盤條目寫不帶中黑的「キングコングパラダイス」，MB 與部分資料寫「キング・コング・パラダイス」，羅馬拼音 King Kong Paradise，Studio Mule 版把盤名英譯為 Atsusa Mo Samusamo…，四種寫法比對池中皆無撞卡。曲風：本盤跨爵士與搖滾，genres 填 jazz＋rock（雷鬼未進十類白名單，寫進行文）。封面與試聽預估：Studio Mule 黑膠限定未上數位，Apple jp／us 皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=キングコングパラダイス&limit=5 → score 100 命中「キング・コング・パラダイス」840c561d-cbda-4c2b-9244-5042066ae2ca；artist?query=King Kong Paradise → 同一實體 score 100（另有 Louisville 的 King Kong 樂團與雷鬼歌手 King Kong，score 60，均非本團）",
+    "release-group?artist=840c561d-cbda-4c2b-9244-5042066ae2ca&limit=100&offset=0 → 1 筆：《1000⁄1 青い空になれ》1979，非本盤；1984 年的《あつさもさむさも》不在名下",
+    "release-group?query=releasegroup:\"あつさもさむさも\"&limit=15 → count=0",
+    "release-group?query=artist:\"キングコングパラダイス\"&limit=15 → count=0；artist:\"King Kong Paradise\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下只有一個 1979 年的 release-group，本盤不在其中；盤名直接查 count=0，藝人字串以日文與羅馬拼音查也都 count=0。Studio Mule 2019 年的授權復刻同樣未在 MB 建檔。查詢全部 HTTP 200，browse 走分頁端點，回傳的是所查團名本身而非不相干實體。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/7458106",
+   "https://www.discogs.com/release/13383313"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "King Kong Paradise",
+  "reissuedBy": "Studio Mule（STUDIO MULE 16，2019-03-22，限量 500 張，Discogs release 13383313，未標 Unofficial）"
+ },
+ {
+  "artist": "中村ヨシミツ",
+  "album": "魂のギター",
+  "year": 1984,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第十號（JD-10），整張只有一把吉他、沒有第二件樂器。1983 年 9 月 8 至 9 日錄於山梨縣大泉高原的民宿「ペンション糸車」，錄音者與製作人都是照井顕本人，內頁註明企畫出自陸前高田的爵士喫茶ジョニー。七首自作曲裡有〈津軽三味線〉〈雷鐘〉〈雷雨〉，Discogs 把風格標成 Free Jazz／Avant-garde／Modal 並在註記裡寫這張的部分段落「與後來 Off Site 咖啡館那種對靜默的處理相通」。無任何再發，Discogs 持有數 20 份，是 Johnny's Disk 目錄裡持有數最低的幾張之一。",
+  "risk": "MusicBrainz 上「中村ヨシミツ」（ebc37ecb-49a1-438b-aae3-36632238f763）實體存在但名下 release-group 為 0。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重：盤名羅馬拼音 Tamashii no Guitar，藝人羅馬拼音 Yoshimitsu Nakamura，另有漢字寫法「中村良光」的可能性（Discogs 只登片假名，未見漢字，故不臆測）；池中另有兩位同姓不同人的中村達也（c-67 的《LOCUS》與 b 組本批的《ソング・オブ・パット》），與本人無關，本機比對時要看清是哪一位。封面與試聽預估：以「中村ヨシミツ 魂のギター」查 Apple jp／us 回的是古典吉他曲集（David Russell、村治佳織）等完全不相干的條目，**Apple 上無此盤，封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=中村ヨシミツ&limit=5 → score 100「中村ヨシミツ」ebc37ecb-49a1-438b-aae3-36632238f763（其餘為中村あゆみ／中村中，score 44–45 的不同人）；artist?query=Yoshimitsu Nakamura → 同一實體 score 100",
+    "release-group?artist=ebc37ecb-49a1-438b-aae3-36632238f763&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"魂のギター\"&limit=15 → count=0",
+    "release-group?query=artist:\"中村ヨシミツ\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名與藝人字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 release-group?artist= 的分頁端點而非 25 筆上限的 inc 端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/15944151",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Yoshimitsu Nakamura",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "平岡睦男とナチュラル・ブギー",
+  "album": "ジョニー・マイ・ハウス",
+  "year": 1984,
+  "genres": [
+   "blues",
+   "rock"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第十一號（JD-11）。盤名裡的 Johnny 就是廠牌所出的那家爵士喫茶「開運橋のジョニー」，但這張不是爵士盤：Discogs 把它歸在 Blues 與 Folk, World & Country，八首全是平岡睦男自己唱、自己彈電吉他，配上電貝斯、鼓與電鋼琴，曲名〈まぬけなサム〉〈ミスター ブルース〉〈ハートブレイク シティ〉。原盤附插頁與意見回函卡，無任何再發，Discogs 持有數 18 份。這是這家爵士喫茶廠牌唯一一張純藍調搖滾盤，也是它把「店裡有人想出唱片就替他出」這件事做到最外緣的一次。",
+  "risk": "MusicBrainz 上「平岡睦男とナチュラル・ブギー」（772aa68d-43ed-4ef7-bc4d-f76b9ea1c94c）實體存在但名下 release-group 為 0；以羅馬拼音 Mutsuo Hiraoka 查回的是 TAK HIRAOKA、Hiraoka Kotaro、Ryan Hiraoka 等不同人（第 122 條的形狀，這些不能當成命中）。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重：藝人另一個 Discogs ANV 寫 M. Hiraoka And Natural Boogie，羅馬拼音 Mutsuo Hiraoka And Natural Boogie；盤名羅馬拼音 Johnny My House，Discogs 原盤同時印日英兩名。曲風：blues＋rock，非爵士，與本批其餘各張形狀不同，簡介不要寫成同一種故事。封面與試聽預估：Apple jp／us 皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=平岡睦男&limit=5 → score 100「平岡睦男とナチュラル・ブギー」772aa68d-43ed-4ef7-bc4d-f76b9ea1c94c；artist?query=Mutsuo Hiraoka → 回 TAK HIRAOKA d90eabc7、Hiraoka Kotaro 14fea76a、Ryan Hiraoka 15637a6f，皆非本人（第 122 條：回了不相干的東西不算命中）",
+    "release-group?artist=772aa68d-43ed-4ef7-bc4d-f76b9ea1c94c&limit=100&offset=0 → 0 筆；另查 d90eabc7（TAK HIRAOKA）→ 0 筆、14fea76a → 1 筆《Atuy》2020，皆與本盤無關",
+    "release-group?query=releasegroup:\"Johnny My House\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"ジョニー・マイ・ハウス\"&limit=15 → count=0；artist:\"平岡睦男\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體「平岡睦男とナチュラル・ブギー」存在但名下 release-group browse 回 0 筆；盤名以日英兩種寫法查皆 count=0。羅馬拼音的 artist 搜尋回的是同姓的其他人（TAK HIRAOKA 等），依第 122 條不計為命中，並已逐一 browse 確認名下沒有本盤。查詢全部 HTTP 200。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/12434389",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Mutsuo Hiraoka And Natural Boogie",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "板倉克行トリオ",
+  "album": "ハニー・サンバ",
+  "year": 1984,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第十二號（JD-12），同一位鋼琴手替這家廠牌做的第二張，這次帶三重奏並找來藤川正雄的長笛。六首裡有〈密林サンバ〉〈海の床屋〉〈デューク・ジョニー〉，末曲〈三陸鉄道リアス線の旅 又は銀河鉄道の夜〉把在地鐵道與宮澤賢治接在一起——與他兩年前那張 JD-07 的曲名脈絡是同一條。內頁執筆者除了照井顕還有民謠歌手友部正人。無再發，Discogs 持有數 22 份。",
+  "risk": "MusicBrainz 上「板倉克行トリオ」（82c3d598-08a0-4056-b1ef-2a3101794ff2）實體存在但名下 release-group 為 0；另一個 Katsuyuki Itakura Trio（04bb0d8c）名下的《Excuse Me, Mr. Satie》是 1994 年與 Keshavan Maslak 的合作盤，與本盤無關。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重：藝人 ANV 另有 Itakura Katsuyuki Trio，羅馬拼音 Katsuyuki Itakura Trio；盤名羅馬拼音 Honey Sanba（Discogs 原盤把 A1 曲名〈密林サンバ〉英譯成 Honey Sanba，與盤名同字，是同一張碟的內部一致，不是雙胞胎）。本批同一位鋼琴手另收 JD-07《海猫の島》，掛名分別是「板倉克行」與「板倉克行トリオ」、合計 2 張，未達 3 張上限；但兩張是同一人，簡介不要寫成同一篇。封面與試聽預估：Apple jp／us 皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=板倉克行トリオ&limit=5 → score 100「板倉克行トリオ」82c3d598-08a0-4056-b1ef-2a3101794ff2；artist?query=Itakura Katsuyuki Trio → 同一實體 score 100",
+    "release-group?artist=82c3d598-08a0-4056-b1ef-2a3101794ff2&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"Honey Sanba\"&limit=15 → count=0；releasegroup:\"Honey Samba\" → count=0",
+    "release-group?query=releasegroup:\"ハニー・サンバ\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體「板倉克行トリオ」名下 release-group browse 回 0 筆；盤名以片假名與兩種羅馬拼寫（Sanba／Samba）查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9265825",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Katsuyuki Itakura Trio",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "リー・ウォンヒーイ＋菊他コージ",
+  "album": "グロー",
+  "year": 1985,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第十三號（JD-13），薩克斯與鼓的二重奏，1985 年 6 月 1 至 3 日錄音。十首曲子有一半是自作（〈バグワン〉〈コーリャン〉〈サーカス I／II〉〈チリもつもればヤマとなり〉），另一半拆自別人：孟克的〈Epistrophy〉、艾靈頓的〈Caravan〉、史提夫・雷西的〈Bone〉（碟上寫〈レインボーン・スティーブ〉），A6〈アイルランド・フォーク〉實際上是英格蘭民謠 The Grenadier and the Lady。照井顕自己錄音、製作並寫內頁，妻子照井由紀子寫了配詩。無再發，Discogs 持有數 25 份。",
+  "risk": "MusicBrainz 上薩克斯手的實體以「リーウォンヒー」登錄（5ecbe2eb-6eff-4ff8-aec9-af300cc1352a，不帶中黑）、名下 release-group 0；鼓手以「菊地コージ」登錄（6b9613b9-fbc8-4f60-8496-5ccab2d0dfaa，土偏「地」）、名下 0。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法分歧要往下游傳（第 49 條）：Discogs 原盤條目寫「リー・ウォンヒーイ＊ ＋ 菊他コージ＊」（含中黑、字尾多一個イ、鼓手用「他」字），Discogs 的英文實體名是 Lee Won Hui 與 Koji Kikuchi，MB 用「リーウォンヒー」與「菊地コージ」；卡片依 Discogs 原盤寫法，四種變體本機去重都要比對。另注意：以「リー・ウォンヒー」查 MB artist 會回 Jerry Lee Lewis 與 Brenda Lee（score 100／98），那是第 122 條「回了完全不相干的東西」的形狀，不得當成命中。Discogs 的 credit 另列 Mototeru Takagi 為 Leader，與封面掛名不一致，來源單一、不寫進行文。封面與試聽預估：Apple jp／us 皆 0 筆，**封面要本機掃圖、試聽缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Lee Won Hui&limit=5 → score 100「リーウォンヒー」5ecbe2eb-6eff-4ff8-aec9-af300cc1352a；artist?query=菊他コージ／菊池コージ → score 100「菊地コージ」6b9613b9-fbc8-4f60-8496-5ccab2d0dfaa。（artist?query=リー・ウォンヒー 回的是 Jerry Lee Lewis b59ac58d 與 Brenda Lee 6ca4886a，依第 122 條不計為命中）",
+    "release-group?artist=5ecbe2eb-6eff-4ff8-aec9-af300cc1352a&limit=100&offset=0 → 0 筆；release-group?artist=6b9613b9-fbc8-4f60-8496-5ccab2d0dfaa&limit=100&offset=0 → 0 筆；另 browse b59ac58d（Jerry Lee Lewis，453 筆）與 6ca4886a（Brenda Lee，139 筆）確認名下無 1985 年的《グロー》",
+    "release-group?query=releasegroup:\"Grow\" AND artist:\"Lee Won Hui\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"グロー\"&limit=15 → count=1，回的是 TAROLIN《スラッシュ・クロー》(2024)，非本盤；artist:\"リー・ウォンヒー\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩位當事人的 MB 實體都在（リーウォンヒー、菊地コージ），名下 release-group browse 皆為 0；盤名以英文與片假名查，一個 count=0、一個只回 2024 年 TAROLIN 的不相干條目。羅馬拼音的 artist 搜尋被 MB 糊到 Jerry Lee Lewis／Brenda Lee，屬第 122 條的假查無形狀，已逐一 browse 排除。查詢全部 HTTP 200，browse 走分頁端點（Jerry Lee Lewis 名下 453 筆確實分了五頁掃完，第 116 條）。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/3828868",
+   "https://www.discogs.com/label/643384-Johnnys-Disk-Record"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Lee Won Hui + Koji Kikuchi",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "三上寛・古澤良治郎",
+  "album": "職業",
+  "year": 1987,
+  "genres": [
+   "blues",
+   "jazz"
+  ],
+  "label": "Johnny's Disk Record",
+  "why": "Johnny's Disk 第十六號（JD-16），也是這批裡再發次數最多的一張。1979 年 6 月 9 日在岩手縣陸前高田市民会館的現場錄音，1987 年才由照井顕壓成限量 1000 張的單聲道黑膠，封套插畫出自黒田征太郎。三上寛的吉他與人聲對上古澤良治郎的鼓，七首全是三上自己作詞作曲，包括〈青森北津軽郡東京村〉與〈このレコードを私に下さい〉。2010 年 10 月 20 日 Solid Records／Ultra-Vybe 以 CDSOL-1375 首次做成 CD（Discogs release 2536086，「渋谷ジャズ維新」系列，附 12 頁內頁與三上的新訪談，版本頁未標 Unofficial Release），同版本上了 Apple Music（collectionId 397066340）。池中已有三上寛兩張（《ひらく夢などあるじゃなし》《1972／コンサートライブ零狐徒》），加這張剛好到 3 張上限。",
+  "risk": "MusicBrainz 上三上寛（8a131bcb-3f37-4e60-a143-c0e233e72c8b）名下有 55 個 release-group、古澤良治郎（ffd93b6d-2440-4e57-b9b4-0dbed3b226e9）有 5 個，兩邊都沒有《職業》——這是「實體在、名下無此條目」的形狀。走 §1、rgMbid 留空、封面不可走 CAA。掛名與盤名依 Discogs 原盤條目 JD-16 的日文寫法；Apple 的掛名寫成「三上寛 & 古澤良治郎」，2010 年 CD 版的盤名寫「職業 Syokugyo」，本機比對三種寫法（第 49 條）。年份：卡片填 1987（原盤發行年，Discogs 原盤條目直記），錄音是 1979 年 6 月 9 日，落差八年，行文不得把 1979 說成發行年。曲目分歧：CD 版實際曲序把〈海男〉拆成兩軌、另有一段未命名的鼓獨奏，與封底印的七首不符，Discogs 註記已寫明；Apple 版依封底的七首。再發背書：CDSOL-1375 在 Discogs 版本頁上未標 Unofficial Release，Solid Records／Ultra-Vybe 是日本正規再發廠、廠牌條目無爭議記載（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 397066340**（https://music.apple.com/jp/album/職業/397066340 ，三上寛 & 古澤良治郎、2010-10-20、7 軌，七軌皆有 previewUrl），封面走 §4 的 apple-verified-collection 例外、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=三上寛&limit=5 → score 100「三上寛」8a131bcb-3f37-4e60-a143-c0e233e72c8b（Japanese avant-garde singer-songwriter and actor）；artist?query=古澤良治郎 → score 100「古澤良治郎」ffd93b6d-2440-4e57-b9b4-0dbed3b226e9（Japanese jazz drummer）",
+    "release-group?artist=8a131bcb-3f37-4e60-a143-c0e233e72c8b&limit=100&offset=0 → 55 個 release-group，逐筆比對無《職業》／Syokugyo；release-group?artist=ffd93b6d-2440-4e57-b9b4-0dbed3b226e9&limit=100&offset=0 → 5 個（Vier Tiere 1994、Live At The Pitt Inn 1997、At the Room 427 1976、インフィニティ 1990、Ano Koro 1981），無《職業》",
+    "release-group?query=releasegroup:\"職業\" AND artist:\"三上寛\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"Syokugyo\"&limit=15 → count=0；releasegroup:\"職業\" → count=10，全部是《職業かわいい》《Lv.1 職業：人間》《ありふれた職業で世界最強》等 2008–2026 年的動漫與流行條目，無一相關"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩位掛名者的 MB 實體都在、名下 release-group 分別有 55 與 5 筆，逐頁掃完都沒有《職業》；盤名加藝人的交叉查 count=0，單查盤名回的十筆全是同名不同物的動漫與流行條目（第 122 條的形狀）。2010 年 Solid Records 的 CD 再發也未在 MB 建檔。查詢全部 HTTP 200，非 503／403，browse 走 release-group?artist= 分頁端點（第 116 條）。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/1128527",
+   "https://www.discogs.com/release/2536086",
+   "https://music.apple.com/jp/album/397066340"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Kan Mikami + Ryojiro Furusawa",
+  "reissuedBy": "Solid Records／Ultra-Vybe（CDSOL-1375，2010-10-20，渋谷ジャズ維新系列，Discogs release 2536086，未標 Unofficial）"
+ },
+ {
+  "artist": "小田切一巳・トリオ",
+  "album": "突撃神風特攻隊",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "荻窪的爵士喫茶「アケタの店」老闆明田川荘之自營的 Aketa's Disk 第二號（AD-2），也是這家廠牌在自家店裡錄的第一批唱片之一：1976 年 8 月 1 至 15 日錄於アケタの店，明田川掛製作並寫內頁。薩克斯手小田切帶貝斯山崎弘一、鼓亀山賢一，五首裡〈イントラピット・フォックス〉錄了 Take I 與 Take II 分置兩面。2019 年 7 月 24 日被 Octave Lab（Ultra-Vybe 子廠）做成數位再發上架 Apple Music（collectionId 1472326799，封面資產檔名 OTLCD2402），Discogs 原盤持有數 22 份。池中同場景已有 c-67 收的 Aketa's Disk 八張（明田川荘之三張、明田川荘之トリオ、生活向上委員会、宮坂高史、渋谷毅、河野康弘），但 AD-2 至今未被收。",
+  "risk": "MusicBrainz 上「小田切一巳・トリオ」（aa88ad24-baa1-4b30-9958-74374fcf8651）名下 release-group 為 0。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法分歧（第 49 條）：Discogs 原盤條目寫帶中黑的「小田切一巳・トリオ」，Apple 寫不帶中黑的「小田切一巳トリオ」，羅馬拼音 Kazumi Odagiri Trio；另 Discogs 的 credit 欄把本人拼成 Katsumi Odagiri（與 artist 欄的 Kazumi 不一致），來源分歧、行文不得斷言讀音。盤名羅馬拼音 Totsugeki Kamikaze Tokkotai。年份 1976 由 Discogs 原盤條目與錄音日期共同支撐。封面與試聽預估：**Apple collectionId 1472326799**（https://music.apple.com/jp/album/突撃神風特攻隊/1472326799 ，小田切一巳トリオ、2019-07-24、5 軌），封面走 §4 的 apple-verified-collection 例外、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=小田切一巳&limit=5 → score 100 命中「小田切一巳・トリオ」（次名為戸高一生，score 45 的不同人）；artist?query=Kazumi Odagiri → 同一實體 score 100",
+    "release-group?artist=aa88ad24-baa1-4b30-9958-74374fcf8651&limit=100&offset=0（依第 116 條走分頁 browse）→ 0 筆",
+    "release-group?query=releasegroup:\"突撃神風特攻隊\"&limit=15 → count=0",
+    "release-group?query=artist:\"小田切一巳\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名與藝人字串查皆 count=0。2019 年 Octave Lab 的數位再發也未在 MB 建檔。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10040207",
+   "https://music.apple.com/jp/album/1472326799"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Kazumi Odagiri Trio",
+  "reissuedBy": "Octave Lab／Ultra-Vybe（2019-07-24 數位再發，Apple collectionId 1472326799）"
+ },
+ {
+  "artist": "初山博",
+  "album": "スマイル",
+  "year": 1977,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第四號（AD-4），顫音琴手初山博的領銜作，1977 年 6 月 7 日錄於アケタの店。七首裡有〈Bags' Groove〉〈In a Sentimental Mood〉這樣的標準曲，也有同名自作曲〈Smile〉；鋼琴席位一張碟上換了三個人——板橋文夫、元岡一英、都築腸都以 Guest 身分各彈幾首，其中元岡一英七年後也替這家廠牌做了 AD-18《ドサンコ・ウォーク》（本批同組另收）。封面設計出自明田川荘之本人。2019 年 7 月 24 日由 Octave Lab 數位再發（Apple collectionId 1472329766，封面資產檔名 OTLCD2403），Discogs 原盤持有數 26 份。",
+  "risk": "MusicBrainz 上「初山博」（score 100 命中的唯一實體）名下 release-group 為 0。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：藝人 Discogs ANV 另有 Hatsuyama Hiroshi，羅馬拼音 Hiroshi Hatsuyama；盤名片假名「スマイル」對應羅馬拼音 Smile，Discogs 原盤同時印日英兩名——「Smile」是極常見的盤名，本機比對時務必連藝人一起比，不可只比盤名。年份 1977 由 Discogs 原盤條目與錄音日期支撐。封面與試聽預估：**Apple collectionId 1472329766**（https://music.apple.com/jp/album/スマイル/1472329766 ，初山博、2019-07-24、7 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=初山博&limit=5 → score 100「初山博」；artist?query=Hiroshi Hatsuyama → 同一實體 score 100",
+    "release-group?artist=b526d7fb-aa7c-45e1-af8d-0e05bb79b998&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"スマイル\" AND artist:\"初山博\"&limit=15 → count=0",
+    "release-group?query=artist:\"初山博\"&limit=15 → count=0；artist:\"Hiroshi Hatsuyama\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名加藝人的交叉查與藝人字串查皆 count=0（日文與羅馬拼音兩種寫法都下過）。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10040776",
+   "https://music.apple.com/jp/album/1472329766"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hiroshi Hatsuyama",
+  "reissuedBy": "Octave Lab／Ultra-Vybe（2019-07-24 數位再發，Apple collectionId 1472329766）"
+ },
+ {
+  "artist": "チコ本田",
+  "album": "Chiko",
+  "year": 1979,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第九號（AD-9），女聲盤，九首全是〈Fly Me to the Moon〉〈But Not for Me〉〈I'm a Fool to Want You〉〈Stand by Me〉這類歌本與流行曲。Discogs 原盤條目上一欄 credit 都沒有——連伴奏是誰都沒登錄，這在同廠牌其他碟上很少見，也說明這張當年流通的範圍有多小（持有數 32 份）。2019 年 7 月 24 日 Octave Lab 以 OTLCD2405 做成限量 CD 再發（Discogs release 14456478，版本頁未標 Unofficial Release），同版本上了 Apple Music（collectionId 1472333099，盤名寫片假名「チコ」）。",
+  "risk": "MusicBrainz 上查無「チコ本田」實體：以日文查回的是「チコ・本間」（0 個 release-group）、以 Chiko Honda 查回的是 CHIKO、Chiko、ちこ 等不同人，屬第 122 條「回了不相干的東西」的形狀，已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統與盤名去重（第 49 條）：Discogs 原盤盤名寫拉丁「Chiko」、Apple 寫片假名「チコ」，藝人羅馬拼音 Chiko Honda，三種寫法都要比對；池中另有本田竹曠《This Is Honda》，同姓不同人。**盤名「Chiko」與藝人名高度相近（自我同名的近似形狀）**，本機核版本時要用 collectionId 直查、不可用模糊搜尋。再發背書：OTLCD2405 在 Discogs 版本頁未標 Unofficial Release，Octave Lab 是 Ultra-Vybe 子廠、廠牌條目無爭議記載（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1472333099**（https://music.apple.com/jp/album/チコ/1472333099 ，チコ本田、2019-07-24、9 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=チコ本田&limit=5 → 回「チコ・本間」score 100 等不同人，無「チコ本田」實體；artist?query=Chiko Honda → 回 CHIKO、Chiko、ちこ 等 score 100 的不同對象（第 122 條形狀，不計為命中）",
+    "release-group?artist=2a966b07-2e26-4e30-94ff-67133ca9ab9e&limit=100&offset=0 → 0 筆；同法 browse CHIKO → 0 筆、Chiko → 0 筆、ちこ → 1 筆（與本盤無關）",
+    "release-group?query=releasegroup:\"Chiko\" AND artist:\"Chiko Honda\"&limit=15 → count=0",
+    "release-group?query=artist:\"チコ本田\"&limit=15 → count=0；artist:\"Chiko Honda\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上根本沒有「チコ本田」這個藝人實體，搜尋回的是チコ・本間／CHIKO／ちこ 等同音不同人，逐一 browse 名下也沒有本盤；盤名加藝人的交叉查與兩種藝人字串查皆 count=0。2019 年 Octave Lab 的 CD 再發同樣未建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9434340",
+   "https://www.discogs.com/release/14456478",
+   "https://music.apple.com/jp/album/1472333099"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Chiko Honda",
+  "reissuedBy": "Octave Lab（OTLCD2405，2019-07-24，限量 CD，Discogs release 14456478，未標 Unofficial）"
+ },
+ {
+  "artist": "丸山繁雄",
+  "album": "A Young Father's Song",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第十一號（AD-11），副標直接寫「20 Musicians For A Singer」——一位歌手，二十名樂手。丸山繁雄自己作曲、編曲、指揮兼製作，陣容裡有中音薩克斯澤井原兒與大友義雄、單簧管梅津和時、次中音松風鉱一、鼓宮坂高史，另有四人合唱與一位葡萄牙語旁白 Marlene Rosa。七首裡有十三分四十五秒的〈Malaika〉（東非史瓦希里語名曲）與披頭四的〈Here There and Everywhere〉，Discogs 把風格標成 Contemporary Jazz／Swing／African。2019 年 12 月 11 日 Octave Lab 以 OTLCD2438 做成限量 CD 再發（Discogs release 14559449，未標 Unofficial Release），Apple 版另加三首（collectionId 1490070900，盤名寫「ア・ヤング・ファーザーズ・ソング +3」）。",
+  "risk": "MusicBrainz 上查無「丸山繁雄」實體：以日文查回「丸山泰雄」、以 Shigeo Maruyama 查回「丸山茂雄」（Sony Music 的創辦人，同音不同人），皆屬第 122 條的形狀，已 browse 確認名下皆 0 筆且無本盤。走 §1、rgMbid 留空、封面不可走 CAA。盤名寫法分歧（第 49 條）：Discogs 原盤全名是「A Young Father's Song (20 Musicians For A Singer)」，卡片取不含副標的主名；Apple 版加了三首 bonus、盤名寫成片假名加「+3」，本機核版本時三種寫法都要比對，且要知道 Apple 版曲數（10）多於原盤（7）。同一藝人本批另收 AD-22《Yu Yu》，合計 2 張、未達 3 張上限，兩張簡介不要寫成同一篇。再發背書：OTLCD2438 在 Discogs 版本頁未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1490070900**（https://music.apple.com/jp/album/1490070900 ，丸山繁雄、2019-12-11、10 軌），封面走 apple-verified-collection、試聽可期，但**要注意 Apple 版是加曲版**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=丸山繁雄&limit=5 → 回「丸山泰雄」score 100 等不同人，無「丸山繁雄」實體；artist?query=Shigeo Maruyama → 回「丸山茂雄」score 100（同音不同人，第 122 條形狀）",
+    "release-group?artist=1ea26ecc-0f49-4b7a-9fff-6a4cb640566f&limit=100&offset=0 → 0 筆；同法 browse 264878a0（丸山茂雄） → 0 筆、SHIGEO → 0 筆",
+    "release-group?query=releasegroup:\"A Young Father's Song\"&limit=15 → count=0",
+    "release-group?query=artist:\"丸山繁雄\"&limit=15 → count=0；artist:\"Shigeo Maruyama\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有「丸山繁雄」這個藝人實體，搜尋回的丸山泰雄／丸山茂雄是同姓或同音的不同人，逐一 browse 名下皆 0 筆；盤名直接查 count=0，兩種藝人字串查也都 count=0。2019 年 Octave Lab 的 CD 再發未建檔。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/11989421",
+   "https://www.discogs.com/release/14559449",
+   "https://music.apple.com/jp/album/1490070900"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Shigeo Maruyama",
+  "reissuedBy": "Octave Lab（OTLCD2438，2019-12-11，限量 CD，Discogs release 14559449，未標 Unofficial）"
+ },
+ {
+  "artist": "清水末敏メレンゲ",
+  "album": "ホット・ケーキ・ミックス",
+  "year": 1984,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第十七號（AD-17），1984 年 5 月 3 日錄於アケタの店。次中音薩克斯清水末敏帶自己的樂團「メレンゲ」（鋼琴澤田夏美、貝斯池田芳夫、鼓小山彰太、打擊池田智），明田川荘之掛共同製作並在碟上吹口哨。七首裡有歐涅・柯曼的〈Ramblin'〉、日本童謠改編的〈げんこつ山のホタルさん〉，以及〈滅びゆくインディオの哀歌〉。無任何再發，Discogs 持有數 23 份——本批 Aketa's Disk 七張裡唯一一張連數位再發都沒有的。",
+  "risk": "MusicBrainz 上查無「清水末敏」實體：以日文查回「清水末寿」（0 個 release-group）、以 Suetoshi Shimizu 查回同一個；以團名「清水末敏メレンゲ」查回的是另一支叫「メレンゲ」的日本樂團（18 個 release-group，2000 年代的搖滾團，與本盤無關）。全屬第 122 條的形狀，已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：Discogs 原盤同時印「Shimizu Suetoshi Melangé」與「清水末敏メレンゲ」，團名的法文拼寫 Melangé 帶重音符號、羅馬拼音另有 Merengue／Melange 兩種可能，本機比對要含重音與不含重音兩式；盤名羅馬拼音 Hot Cake Mix。**貝斯池田芳夫與鼓小山彰太在池中另有掛名卡的可能，但本卡掛名是清水末敏メレンゲ，不重複計數。**封面與試聽預估：Apple jp／us 搜尋皆 0 筆，本盤無數位發行、無 CD 再發，**封面要本機掃圖、試聽必然缺**——本批 Aketa's Disk 七張裡唯一缺封面的一張。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=清水末敏&limit=5 → 回「清水末寿」score 100 等不同人，無「清水末敏」實體；artist?query=清水末敏メレンゲ → 回「メレンゲ」score 100（2000 年代日本搖滾團，第 122 條形狀）",
+    "release-group?artist=36855be4-c3fe-4a23-8c33-78d77f3ec781&limit=100&offset=0 → 0 筆；browse ce14b513（メレンゲ） → 18 筆，全部是 2000 年後的日本搖滾條目，無 1984 年的《ホット・ケーキ・ミックス》",
+    "release-group?query=releasegroup:\"Hot Cake Mix\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"ホット・ケーキ・ミックス\"&limit=15 → count=0；artist:\"清水末敏\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有「清水末敏」這個藝人實體，搜尋回的清水末寿名下 0 筆；同名團「メレンゲ」名下 18 筆全是 2000 年後的搖滾條目、無本盤（第 122 條的不相干回傳）。盤名以日英兩種寫法查皆 count=0，藝人字串查 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10214314",
+   "https://www.discogs.com/label/91323-Aketas-Disk"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Shimizu Suetoshi Melange",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "元岡一英",
+  "album": "ドサンコ・ウォーク",
+  "year": 1984,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第十八號（AD-18），鋼琴獨奏盤，而且不是在荻窪錄的：1984 年 2 月 5 日錄於北海道富良野的「クローバー」、隔天 2 月 6 日錄於同地的「くるみ割り」，兩家店各錄一半。八首裡有孟克的〈Well You Needn't〉〈Blue Monk〉〈Eronel〉〈Rhythm-a-ning〉四首，其餘是自作，末曲同名〈ドサンコ・ウォーク〉——「ドサンコ」是北海道人的自稱。田中一光掛製作、封底照片與版面，元岡自己也寫了一段內頁。2019 年 7 月 24 日 Octave Lab 數位再發（Apple collectionId 1472477723，封面資產檔名 OTLCD2410），Discogs 原盤持有數 21 份。同一位鋼琴手七年前以 Guest 身分彈過本批同組的 AD-4《スマイル》。",
+  "risk": "MusicBrainz 上查無「元岡一英」實體：以日文查回「岡部啓一」（59 個 release-group，NieR 系列作曲家）、以 Kazuhide Motooka 查回「Kazuhide Isomura」與「崎元仁」，全是完全不相干的人——這是第 122 條最典型的形狀（S. Balachander 查出 Bach 的同型），已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：Discogs 原盤把姓名中間空一格寫成「元岡 一英」，卡片去空格寫「元岡一英」，羅馬拼音 Kazuhide Motooka；盤名羅馬拼音 Dosanko Walk，Discogs 原盤同時印日英兩名。年份 1984 由 Discogs 原盤條目與兩天的錄音日期支撐。封面與試聽預估：**Apple collectionId 1472477723**（https://music.apple.com/jp/album/ドサンコ-ウォーク/1472477723 ，元岡一英、2019-07-24、8 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=元岡一英&limit=5 → 回「岡部啓一」score 100 等不相干對象，無「元岡一英」實體；artist?query=Kazuhide Motooka → 回 Kazuhide Isomura score 100、Kazuhide Omori，皆非本人（第 122 條形狀）",
+    "release-group?artist=d82df34a-a1ff-45fa-ac50-c0b7454b201e&limit=100&offset=0 → 59 筆，全部是遊戲配樂，無本盤；browse 53a2cda4（崎元仁） → 90 筆（分頁掃完，第 116 條），同樣無本盤；browse f6de6473（Kazuhide Isomura） → 0 筆",
+    "release-group?query=releasegroup:\"Dosanko Walk\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"ドサンコ・ウォーク\"&limit=15 → count=0；artist:\"元岡一英\" → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有「元岡一英」這個藝人實體，日文與羅馬拼音兩種搜尋都回了完全不相干的遊戲配樂作曲家（第 122 條），已逐一分頁 browse 確認名下沒有本盤；盤名以日英兩種寫法查與藝人字串查皆 count=0。2019 年 Octave Lab 的數位再發未建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10248726",
+   "https://music.apple.com/jp/album/1472477723"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Kazuhide Motooka",
+  "reissuedBy": "Octave Lab／Ultra-Vybe（2019-07-24 數位再發，Apple collectionId 1472477723）"
+ },
+ {
+  "artist": "丸山繁雄",
+  "album": "Yu Yu",
+  "year": 1987,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Aketa's Disk",
+  "why": "Aketa's Disk 第二十二號（AD-22），丸山繁雄替這家廠牌做的第二張，也是這條 AD 編號線上最後幾張黑膠之一。六首裡五首自作，另一首是孟克的〈Straight No Chaser〉；曲名〈タックル・ダウン〉與〈楕円球のゆくへ〉都指向橄欖球，長笛與短笛是上野好美（與 c-67 收的 Johnny's Disk《Sea Sound》為同一人）。丸山自己掛 Leader、主唱、口哨與作曲。2019 年 12 月 11 日 Octave Lab 以 OTLCD2444 做成限量 CD 再發（Discogs release 14525793，版本頁未標 Unofficial Release），Apple 版另加兩首（collectionId 1490236580，盤名寫「YU YU +2」）。Discogs 原盤持有數 20 份。",
+  "risk": "MusicBrainz 上查無「丸山繁雄」實體（詳見同一位藝人 AD-11 那張的舉證，兩張共用同一組 browse 結果）。走 §1、rgMbid 留空、封面不可走 CAA。盤名去重風險最高的一張（第 49 條）：Discogs 原盤與 CD 再發寫拉丁「Yu Yu」、內頁另印片假名「ユー・ユー」、Apple 寫全大寫加曲數「YU YU +2」，三種寫法本機都要比對；**「Yu Yu」是極短且高度通用的字串，比對務必連藝人一起比**。同一藝人本批另收 AD-11《A Young Father's Song》，合計 2 張、未達 3 張上限，兩張簡介不要寫成同一篇（AD-11 是二十人大編制、這張是七人小編制加合唱）。再發背書：OTLCD2444 在 Discogs 版本頁未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1490236580**（https://music.apple.com/jp/album/yu-yu-2/1490236580 ，丸山繁雄、2019-12-11、8 軌），封面走 apple-verified-collection、試聽可期，但**Apple 版是加曲版**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=丸山繁雄&limit=5 → 回「丸山泰雄」score 100 等不同人，無「丸山繁雄」實體；artist?query=Shigeo Maruyama → 回「丸山茂雄」score 100（同音不同人）",
+    "release-group?artist=1ea26ecc-0f49-4b7a-9fff-6a4cb640566f&limit=100&offset=0 → 0 筆；browse 264878a0（丸山茂雄） → 0 筆、SHIGEO → 0 筆",
+    "release-group?query=releasegroup:\"Yu Yu\" AND artist:\"Maruyama\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"遊悠\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有「丸山繁雄」這個藝人實體，搜尋回的是丸山泰雄／丸山茂雄等不同人，逐一 browse 名下皆 0 筆；盤名加藝人的交叉查與可能的漢字寫法查皆 count=0。2019 年 Octave Lab 的 CD 再發未建檔。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/12016235",
+   "https://www.discogs.com/release/14525793",
+   "https://music.apple.com/jp/album/1490236580"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Shigeo Maruyama",
+  "reissuedBy": "Octave Lab（OTLCD2444，2019-12-11，限量 CD，Discogs release 14525793，未標 Unofficial）"
+ }
+]
