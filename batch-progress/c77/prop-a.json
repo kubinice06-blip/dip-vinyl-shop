@@ -1,0 +1,411 @@
+[
+ {
+  "artist": "Spherical Objects",
+  "album": "Past and Parcel",
+  "year": 1978,
+  "genres": [
+   "rock"
+  ],
+  "label": "Object Music",
+  "why": "曼徹斯特的 Steve Solamar 自己開 Object Music、自己出的第一張 LP，目錄號 OBJ 001（Discogs master 575659，1978 年英國盤 release 與 1979 年同編號重刻各一筆）。Object Music 是曼城「音樂人合作社」（Manchester Musicians Collective）周邊最早自營的廠牌之一，整個目錄只有十幾號 LP，全部由 Solamar 一人選片與發行；本張是 OBJ 系列的第一號，也是這條線的起點。地位證據：LTM 在 2003 年授權重發同廠的 The Passage《Pindrop》（ltmcd 2356）、Boutique 在 2008 年把本團的四張 LP 兩兩併成 CD 重發（BOUCD 6614／6616），兩家都是有授權的整理者，Discogs 上零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Spherical Objects 零張，整條 Object Music 線零張。",
+  "risk": "掛名是通用詞組合（裁定第 124 條），字串搜尋會撈到大量無關條目，只能靠 rgMbid 鎖定。MB 名下 5 個 release-group，其中 329df29b《Further Ellipses / No Man's Land》是 2008 年 Boutique 的二合一 CD，依裁定第 129 條身分不釘、封面不用、試聽不採。封面已實測 CAA release-group front 回 200；Apple 實測 gb／us／de／nl／fr／be／ca／au／jp 九個 storefront 皆無此碟，試聽預估 unavailable。廠牌名在 Discogs 有多個同名實體（Object Music 74200 才是曼城這家，另有 233219「Object Music (3)」與 228210「Object Music (2)」），舉證要指到 74200（裁定第 65 條）。",
+  "mbNote": "釘 57518956-9932-4066-99ee-6d51c2aadec7《Past and Parcel》，artist-credit「Spherical Objects」，first-release-date 1978，primary-type Album、secondary-types 空，轄下 1 個 release：1978 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 741a6a87-fc02-465f-895e-00c8b95e4ac1，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 5 個 release-group。對照組 7af904ec-b1dc-4ff8-91bb-d586774fb102《Eliptical Optimism》(1979)、43389a38-9f9a-4e78-8667-e0c193fb0fd8《No Man's Land》(1981)、5ed73250-1284-4be0-823c-42882a016b5c《Further Ellipses》(無年份)、329df29b-ea69-4dea-8677-f1d8261bf397《Further Ellipses / No Man's Land》(2008 二合一) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Boutique",
+  "g": "a"
+ },
+ {
+  "artist": "The Passage",
+  "album": "Pindrop",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Object Music",
+  "why": "Dick Witts（前哈雷管弦樂團打擊樂手、曼城音樂人合作社的發起人之一）帶的樂團，第一張 LP 出在 Spherical Objects 自營的 Object Music，目錄號 OBJ 011（Discogs master 177478，1980 年英國原盤 release，錄音在 Graveyard Studios）。地位證據是 LTM 2003 年的授權重發 ltmcd 2356（master 177478 的版本頁，三筆皆標 Reissue／Remastered，含一筆 promo 與一筆 repress），LTM 是專門整理 Factory 與曼城周邊目錄的英國廠牌；master 177478 的版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Passage 零張。",
+  "risk": "掛名「The Passage」是通用詞（裁定第 124 條）；MB 名下另有大量 Single 與 EP（1978 年的《New Love Songs》EP、1979 年《About Time》EP 等），以字串搜尋極易配到單曲。年份：MB 記 1980-11，Discogs 原盤記 1980，卡單取 1980，兩者不衝突。Apple 實測 gb 命中 collectionId 189944427《Pindrop》(1980)，試聽預估 ready，本機上架前仍要核版本（LTM 的 CD 重發比原盤多曲）。封面 CAA release-group front 實測 404，需走 Apple 那筆的封面。",
+  "mbNote": "釘 572b6ec6-fb5b-4cb1-bdd5-c859bf91d367《Pindrop》，artist-credit「The Passage」，first-release-date 1980-11，primary-type Album、secondary-types 空，轄下 3 個 release：1980-11 GB Official 與 2003 GB Official ×2。已回問 release-group 端點確認實體類型與標題。藝人 MBID fcfacf73-74cf-4480-8305-4d6f5113fe16，分頁 browse 得名下 16 個 release-group。對照組 a42d7dd0-3544-466e-9b62-4bafa836d061《Pindrop + Degenerates》(2020，二合一合輯) 依裁定第 129 條刻意不釘；d56c7211-c137-32bb-aff1-2489889a8789《For All and None》(1981)、e86d672e-d5a7-38d2-9d93-3f8f1b85065e《Degenerates》(1982)、682a39af-c949-31b5-9e71-3de1a5749838《Enflame》(1983) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "LTM",
+  "g": "a"
+ },
+ {
+  "artist": "Grow-Up",
+  "album": "The Best Thing",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Object Music",
+  "why": "Object Music 的第五號 LP（OBJ 005，Discogs release 1114138，1979 年英國盤），樂團先在同廠出過 OM 05 與 OM 12 兩張七吋才做整張。這是 Object Music 目錄裡除 Spherical Objects 與 The Passage 以外唯一一組出過兩張 LP 的團（另一張是 1982 年的《(Without Wings)》）。地位證據是 2008 年 Boutique 的授權 CD 重發《The Best Thing + Without Wings》（Discogs release 1568222，標 Compilation／兩張併一），與同廠 Spherical Objects 兩張 CD 同一批整理；Discogs 上兩筆原盤零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Grow-Up 零張。",
+  "risk": "掛名帶連字號、且是通用詞（裁定第 124 條），Discogs 上寫作「Grow-Up」、MB 實體名同；外部服務用「Grow Up」查會撈到大量無關條目，`queryAlias` 刻意留空（裁定第 31 條：自編別名不會提高命中率）。MB 名下另有 58a722af《Grow-Up》(1979-04) 是七吋 EP、與樂團同名，屬 EP／Album 雙胞胎（裁定第 126 條），本卡明確不釘它。bfc927af《The Best Thing + Without Wings》(2008) 是二合一 CD，依裁定第 129 條不釘、封面不用、試聽不採。封面 CAA 實測 404、Apple 九個 storefront 全空，封面與試聽都要本機另尋，是本組風險最高的一張。",
+  "mbNote": "釘 187a4e19-71bd-429d-9abb-9c8eb980f668《The Best Thing》，artist-credit「Grow-Up」，first-release-date 1979，primary-type Album、secondary-types 空，轄下 1 個 release：1979 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3bb03cbe-2cc6-4ef0-9bd1-fefd220eabdf，分頁 browse 得名下 4 個 release-group。對照組 58a722af-1a60-46bc-95c1-1b48986013f2《Grow-Up》(1979-04，EP，自我同名)、c6370a9f-5d7d-4ad6-98ff-51823549ce27《(Without Wings)》(1982)、bfc927af-8dca-4b05-8626-f3838238e31a《The Best Thing + Without Wings》(2008 二合一) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Boutique",
+  "g": "a"
+ },
+ {
+  "artist": "Indiscreet Music",
+  "album": "Dubious Collaberations",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Object Music",
+  "why": "Object Music 的第二號 LP（OBJ 002，Discogs release 1114120，1979 年英國盤，標 Limited Edition，錄音在 Graveyard Studios），是這家廠牌唯一一張不屬於旗下常設樂團的作品——掛名本身就是「不謹慎的音樂」，盤名把「collaborations」拼成「Collaberations」，原盤封面即如此。MB 上這個藝人實體名下只有這一個 release-group，Discogs 上也只有這一筆 release，沒有任何再發：依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨，分量靠它在 Object Music 目錄中的位置與同廠其他號的整理史舉證。池中實掃 seed_cards.json 全 13,913 列，Indiscreet Music 零張。",
+  "risk": "盤名的拼法要照原盤保留「Collaberations」（裁定第 50 條：盤名採原盤封面的寫法；這不是裁定第 117 條那種「再發訂正錯字」的情況，因為根本沒有再發訂正過它）。正確拼法「Collaborations」要寫進下游查詢用的備援字串。掛名與盤名都是通用詞組合（裁定第 124 條）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 全空，試聽預估 unavailable。無再發代表本機做三軸時 listeners 幾乎必定查無，依 §0.8 錨點制人工評分（原盤極小廠、無串流授權再發 → 冷門軸 5）。",
+  "mbNote": "釘 daa405ec-1174-4c1c-aca1-943e007b6854《Dubious Collaberations》，artist-credit「Indiscreet Music」，first-release-date 1979，primary-type Album、secondary-types 空，轄下 1 個 release：1979 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID bce1437b-e177-4823-9141-7d6c577fbab5，分頁 browse 得名下 1 個 release-group（即本卡），無對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Maximum Joy",
+  "album": "Station M.X.J.Y.",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Y Records",
+  "why": "布里斯托的 Maximum Joy 唯一一張 LP，出在 Dick O'Dell 的 Y Records，目錄號 Y17（Discogs master 428887，1982 年英國原盤 release 110406，另有同年 Base Record 的一筆 3846764）。Y Records 是 The Pop Group 解散後那批人各自延伸出去的據點，目錄很短、多半是 12 吋，整張 LP 只有幾張；Maximum Joy 之後就沒有再出過第二張。地位證據是 2020 年英國「1972」廠牌的授權黑膠再發（Discogs release 14790356，標 Limited Edition／Reissue）與 2005 年德國 Crippled Dick Hot Wax! 的回顧輯《Unlimited (1979-1983)》（master 69356）；原盤的版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Maximum Joy 零張，池中 The Pop Group 只有 1 張、Y Records 這條線零張。",
+  "risk": "盤名《Station M.X.J.Y.》全是縮寫加句點，`chk-prop` 的 key 函式會壓成 stationmxjy，去重沒問題，但 Apple 的比對會因為句點被正規化而與《Station MXJY》這類寫法混同，下游要兩種都試。MB 名下 7 個 release-group，其中三筆 primary-type 是 null（86640fb8《In the Air》1982、75a5b283《Unlimited (1979-1983)》2005、187825ac《I Can't Stand It Here On Quiet Nights》2017），依 §1 都不符收錄條件、也刻意不釘。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無乾淨命中，試聽預估 unavailable。",
+  "mbNote": "釘 6d177868-02eb-3687-8709-13440baa72d1《Station M.X.J.Y.》，artist-credit「Maximum Joy」，first-release-date 1982-09-10，primary-type Album、secondary-types 空，轄下 4 個 release。已回問 release-group 端點確認實體類型與標題。藝人 MBID d6d718da-f5c1-46ef-b0b9-159f11b9a7e7，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse 得名下 7 個 release-group。對照組 86640fb8-9454-4dc8-8a94-d1c6fe13284d《In the Air》(1982，primary-type null)、75a5b283-0c57-39e0-abff-91eeba29945f《Unlimited (1979-1983)》(2005，primary-type null)、187825ac-099c-4f8e-a801-9aa7d72de846《I Can't Stand It Here On Quiet Nights: Singles 1981-82》(2017，null/Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "1972",
+  "g": "a"
+ },
+ {
+  "artist": "The Diagram Brothers",
+  "album": "Some Marvels of Modern Science",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "New Hormones",
+  "why": "曼徹斯特四兄弟團在 New Hormones 出的唯一一張 LP，目錄號 ORG 17（Discogs master 1714379，1981 年英國原盤，錄音在 Cargo Studios）。地位證據是 2007 年 LTM 的授權重發 LTMCD 2480《Some Marvels Of Modern Science + Singles》（Discogs 版本頁標 Album／Remastered，另有一筆 promo），LTM 是專做曼城獨立目錄的整理廠牌；master 1714379 的三個版本零筆標 Unofficial Release。MB 另建了 2011 年的 Peel Sessions 合輯，說明這張碟在 BBC 那條線上也有紀錄。池中實掃 seed_cards.json 全 13,913 列，The Diagram Brothers 零張，New Hormones 線零張。",
+  "risk": "MB 的 release-group 標題大小寫作《Some Marvels Of Modern Science》（Of 大寫），卡單用原盤的《Some Marvels of Modern Science》，屬裁定第 50／52 條的大小寫微差，外部搜尋會正規化掉、命中率不受影響。同藝人另有 a0c32460《Some Marvels of Modern Science + Singles》(2007) 是加曲版，Apple 上架的正是這一版（實測 gb 命中 collectionId 305310378《Some Marvels of Modern Science + Singles (Remastered)》1981），試聽可用但本機上架前要標版本差異（原盤 LP 不含 singles）。封面 CAA release-group front 實測 404，走 Apple 那筆。MB 轄下唯一 release 的 status 欄為空（不是 Official 也不是別的），不影響身分判定。",
+  "mbNote": "釘 a869e457-01a4-4e4f-a08a-81e6539e1ae5《Some Marvels Of Modern Science》，artist-credit「The Diagram Brothers」，first-release-date 1981-11-20，primary-type Album、secondary-types 空，轄下 1 個 release：1981-11-20 GB（status 空）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 2dc34f9c-f325-4ddf-a812-db242cb90f57，分頁 browse 得名下 3 個 release-group。對照組 a0c32460-e434-47cb-9090-74b95fea319d《Some Marvels of Modern Science + Singles》(2007，Album/Compilation 加曲版) 與 403b8d8d-8ff3-4ef4-828f-c3a2aaaf7bd9《The Peel Sessions》(2011，primary-type null) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "LTM",
+  "g": "a"
+ },
+ {
+  "artist": "Ludus",
+  "album": "The Seduction",
+  "year": 1981,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "New Hormones",
+  "why": "Linder Sterling（Buzzcocks《Orgasm Addict》拼貼封面的作者）主唱的曼城樂團，在 New Hormones 出的第一張整張作品，目錄號 Org 16（Discogs master 4198962，1981 年英國原盤，12 吋 45 轉，錄音在 Pennine Sound Studios，另掛 Incidental Music）。同廠的卡帶 CAT 1《Pickpocket》與 1982 年的 Org 20《Danger Came Smiling》構成這條線的前後作。地位證據是 2026 年義大利 Lantern Rec. 的授權黑膠重發 LANR065（Discogs 版本頁標 Album／Record Store Day／Reissue），master 4198962 的兩個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Ludus 零張。",
+  "risk": "掛名「Ludus」是拉丁通用詞（裁定第 124 條），MB 上另有多個同名實體的風險，只能靠 rgMbid 鎖定。MB 名下 7 個 release-group 裡有三筆是 2002 年 LTM 的二合一 CD（dadd5bbd《The Visit / The Seduction》、b3b7b82e《Pickpocket / Danger Came Smiling》、09e45c81《The Damage》），依裁定第 129 條三筆都刻意不釘、封面不用、試聽不採——這也代表 Apple 上若出現「The Visit / The Seduction」要一律擋掉。實測 Apple 九個 storefront 無乾淨命中，試聽預估 unavailable。封面已實測 CAA release-group front 回 200。原盤是 12 吋 45 轉六曲，MB 判為 Album，卡單照 MB 走。",
+  "mbNote": "釘 270eb46d-9dba-4db3-85d9-e41d4a31f437《The Seduction》，artist-credit「Ludus」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 2 個 release：1981 GB Official 與 2026-04-18 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 81a3daeb-dfad-4ff3-80dc-0fcf793e2db7，分頁 browse 得名下 7 個 release-group。對照組 dadd5bbd-557f-37bb-8339-b5c93efc2c30《The Visit / The Seduction》(2002 二合一)、b3b7b82e-f431-3525-9a31-a42fac4ab2f1《Pickpocket / Danger Came Smiling》(2002 二合一)、09e45c81-c5f7-3082-81e6-4b4fe38b49b5《The Damage》(2002 合輯)、a4d91ba3-720a-4b10-8fa1-c4ce9fac92e2《The Visit》(1980，EP) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Lantern Rec.",
+  "g": "a"
+ },
+ {
+  "artist": "The Deep Freeze Mice",
+  "album": "My Geraniums Are Bulletproof",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mole Embalming Records",
+  "why": "萊斯特的 Alan Jenkins 自己開 Mole Embalming Records、自己出的第一張 LP，目錄號 MOLE 1（Discogs master 84992，1979 年英國原盤兩筆 release：767556 與 8086085，錄音在 Rainbow Sound Studios）。這家廠牌後來演化成 Cordelia Records（Discogs 廠牌實體 40631），是英國 DIY 郵購網絡裡少數活過三十年的自營廠牌。地位證據是三次授權再發：1984 年 Cordelia 同編號重刻（release 820399，標 Reissue）、1991 年比利時 Madagascar 的 MADA017、2011 年 Cordelia 自家的 CD052（標 Reissue／Remastered）；master 84992 的七個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Deep Freeze Mice 零張。",
+  "risk": "同一批母帶另有 1984 年的 MOLE C 2 卡帶《My Geraniums Are Bulletproof / Live At Abbey Park》，是二合一（裁定第 129 條），身分不釘、封面不用、試聽不採。本團 MB 名下 13 個 release-group，同批另收《Teenage Head in My Refrigerator》一張，兩張合計 2 張、未達藝人上限 3。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 470281689《My Geraniums Are Bulletproof》(1979)，試聽預估 ready。廠牌名在 Discogs 有兩個實體（Mole Embalming Records 與 Cordelia Records），舉證要分清楚哪一次再發是哪一家（裁定第 57／65 條）。",
+  "mbNote": "釘 5af60dfe-31cf-4e4e-aab8-e4185bf2b12a《My Geraniums Are Bulletproof》，artist-credit「The Deep Freeze Mice」，first-release-date 1979，primary-type Album、secondary-types 空，轄下 2 個 release：1979 GB Official 與 1991 BE Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID ebdc100f-5f89-44b0-a482-a893744c800c，分頁 browse 得名下 13 個 release-group。對照組 a16dde68-9648-44da-8b91-cd21b6adf193《The Best of The Deep Freeze Mice》(2014 合輯)、c02f3322-7341-46d5-9a12-c504b31a5670《Luton Conversion》(2013 珍稀曲輯) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Cordelia Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Deep Freeze Mice",
+  "album": "Teenage Head in My Refrigerator",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mole Embalming Records",
+  "why": "Mole Embalming 的第二號 LP（MOLE 2，Discogs master 84997，1981 年英國原盤 release），與 MOLE 1 同一段自營期的前後作。這張的流通形態能直接示範 DIY 郵購廠牌的做法：同一批母帶除了黑膠，還在 1982 與 1984 年各出過一捲二合一卡帶（MOLE C 1《Teenage Head In My Refrigerator / Led Zeppelin 2》、MOLE C 3《… / Out-takes》），卡帶與黑膠並行是這條線的常態。地位證據是三次授權再發：1985 年 Cordelia 同編號重刻（標 Reissue）、1991 年比利時 Madagascar MADA019、2013 年 Cordelia CD054（標 Reissue／Remastered）；master 84997 的七個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Deep Freeze Mice 零張。",
+  "risk": "兩捲卡帶版都是二合一（裁定第 129 條），身分不釘、封面不用、試聽不採；Apple 實測 gb 命中的是 collectionId 1226194462《Teenage Head in My Refrigerator (2013 Edition)》(1981)，那是 Cordelia 2013 年的 CD 重製版，盤名帶「2013 Edition」尾綴、可能含 out-takes，試聽可用但本機上架前要核曲數與版本（裁定第 77 條 yearDrift／reissueTitle 的形狀）。封面已實測 CAA release-group front 回 200。本團本批第二張，合計 2 張、未達藝人上限。",
+  "mbNote": "釘 ada2f752-d745-4117-8eea-1f9c1600d97d《Teenage Head in My Refrigerator》，artist-credit「The Deep Freeze Mice」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 2 個 release：1981 GB Official 與 1991 BE Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID ebdc100f-5f89-44b0-a482-a893744c800c（同上一張），名下 13 個 release-group。對照組 06bad012-bf5f-4b8d-997a-91460686e210《The Gates of Lunch》(1982)、edcc7cfd-acb1-41b0-a2d4-129e3aa61caa《Saw a Ranch House Burning Last Night》(1983)、c02f3322《Luton Conversion: Rare Tracks From the Teenage Head in My Refrigerator Period》(2013) 皆刻意不釘——最後一筆的標題含本卡盤名，是去重與 Apple 比對的高風險項。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Cordelia Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Door and the Window",
+  "album": "Detailed Twang",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "NB Records",
+  "why": "倫敦的 Nag（Bendle）／Mark Perry 周邊自壓線的代表作，目錄號 NB 5（Discogs master 174627，1980 年英國原盤 release 1412008，另有同年 NB 6 的一筆與一捲同名卡帶 release 24813110）。NB Records 是樂團自己的廠牌，整個目錄不到十號。地位證據是 Overground Records 的兩次授權再發：2002 年 CD（OVER99VPCD，標 Reissue）與 2015 年黑膠（OVER 146LP，標 Limited Edition／Reissue）；Overground 同年也重發同一圈子的 The Cravats。master 174627 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Door and the Window 零張。",
+  "risk": "掛名含兩個定冠詞與連接詞，`chk-prop` 的 key 函式會把它壓成 doorandthewindow，與任何含「door」「window」的盤名不會相撞，但英國線的定冠詞有無是已知的分裂形狀（見 audits/pool-artist-name-splits.md），下游要同時試「Door and the Window」與「The Door and the Window」。Discogs 的廠牌實體是「NB Records (4)」，舉證要指到括號序號（裁定第 65 條）。封面 CAA release-group front 實測 404；Apple 九個 storefront 全空，封面與試聽都要本機另尋。",
+  "mbNote": "釘 cb97ad72-d6de-4480-9fe3-a235fb6024a2《Detailed Twang》，artist-credit「The Door and the Window」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 2 個 release：1980 GB Official 與 2002 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID a6eb824e-1a86-4699-aa4b-a1638b47e32b，分頁 browse 得名下 3 個 release-group。對照組 f7719c64-ffe4-4052-aff6-7a13f0b5e402《Permanent Transience》(1979-07)、fc51748b-d847-4e40-9c58-71e41a1ef6db《Production Line》(1979，EP) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Overground Records",
+  "g": "a"
+ },
+ {
+  "artist": "Androids of Mu",
+  "album": "Blood Robots",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Fuck Off Records",
+  "why": "拉德布羅克格羅夫（Ladbroke Grove）自由音樂節圈子的全女子樂團，唯一一張 LP 出在 Here & Now 一夥人自營的 Fuck Off Records，目錄號 FLP 001（Discogs master 544967，1980 年英國原盤 release 1525458，錄音在 Street Level Studios）。Fuck Off Records 是英國 DIY 裡少數把「不透過唱片業」寫進廠牌名的一家，目錄只有個位數。地位證據是 2013 年美國 Water Wing Records 的授權黑膠再發 WW08（Discogs 版本頁標 Album／Reissue）；master 544967 的兩個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Androids of Mu 零張，整條 Fuck Off Records 線零張。",
+  "risk": "MB 名下另有 4440eb5b《Fuck Off Demo Tape》(1979，secondary-type Demo) 與 37e2c0ff《A Tribute to Bert Weedon》(1982，Album/Compilation)，兩筆都刻意不釘：前者是 Demo、後者是廠牌拼盤。Discogs 廠牌實體有三個同名（16862 Fuck Off Records、68359「(2)」、155334「(3)」），本卡的原盤掛的是 68359，舉證要指到括號序號（裁定第 65 條）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 329f94f2-6921-3d7e-96bf-40ece8dbbcf2《Blood Robots》，artist-credit「Androids of Mu」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release：1980 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID cf06c368-2b95-465e-a647-98f50275c53e，分頁 browse 得名下 3 個 release-group。對照組 4440eb5b-db1e-443c-9819-fb669b57cb4b《Fuck Off Demo Tape》(1979，Album/Demo)、37e2c0ff-21ac-49bd-a2bd-fda7eaee514c《A Tribute to Bert Weedon》(1982，Album/Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Water Wing Records",
+  "g": "a"
+ },
+ {
+  "artist": "Metabolist",
+  "album": "Hansten Klork",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Drömm Records",
+  "why": "英格蘭中部樂團在自營的 Drömm Records 出的唯一一張 LP，目錄號 Drö 2（Discogs master 83031，1980 年英國原盤 release 200551，錄音在自家的 Metabolist Studio、壓片 Nimbus）。廠牌名與目錄號都用了自造的變音符號，整個目錄只有幾張七吋加這一張 LP。地位證據是 2007 年 Vinyl Japan 的授權 CD 再發（JASKCD194，Discogs 版本頁標 Album／Reissue），Vinyl Japan 是專門重發英國 post-punk 的日本廠牌；2026 年另有 Analogue Pulse 的 PULSE01 黑膠重刻。反面證據要一併記：master 83031 的版本頁另有 2017 年墨西哥 Eye Of The Storm (2) 的 EOS-443，**明確標 Unofficial Release**，依裁定第 43 條那一筆不算背書。池中實掃 seed_cards.json 全 13,913 列，Metabolist 零張。",
+  "risk": "MB 上有兩個同名 Album release-group：9fcddff2（1980，原盤）與 72ffb843（2007，Vinyl Japan 再發），兩者 search score 都是 100，只看分數會抓錯（裁定第 3／126 條的形狀）。本卡釘 1980 那筆，72ffb843 刻意不釘——這一點下游腳本改 rgMbid 前必須先解釋為什麼原判錯（裁定第 129 條）。廠牌名 Drömm 含 ö，外部服務要同時試 Dromm。封面 CAA release-group front 實測 404；Apple 九個 storefront 全空，封面與試聽都要本機另尋。",
+  "mbNote": "釘 9fcddff2-8cb2-4dee-acd7-eaad6fb367d9《Hansten Klork》，artist-credit「Metabolist」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release：1980 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 05a08666-1eb1-4d7d-8eef-bf212cba59f2，分頁 browse 得名下 7 個 release-group。對照組 72ffb843-80c8-411b-a1c2-bcd85e92c63b《Hansten Klork》(2007，同名 Album，Vinyl Japan 再發) **刻意不釘**；65e4f886《Goatmanaut》(1979，EP)、67cf61de《Drömm》(1979，EP)、75027272《Stagmanaut!》(1981，EP)、3493d1e6《Le Grand Prique …》(1981，EP)、9ad662c1《Identify》(1980，Single) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Vinyl Japan",
+  "g": "a"
+ },
+ {
+  "artist": "Family Fodder",
+  "album": "Monkey Banana Kitchen",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Fresh Records",
+  "why": "Alig Fodder 主導的倫敦集體，第一張 LP 出在 Fresh Records，目錄號 FRESH LP 3（Discogs master 635232，1980 年英國原盤 release，1982 年同編號 Repress 一筆）。Fresh 是 1979–82 年間靠郵購與 Rough Trade 配銷網撐起來的小廠，同廠也出 The Lines 的《Therapy》，兩張在本組並列。地位證據是 2014 年德國 Staubgold 的授權再發（staubgold 130，Discogs 版本頁兩筆分標 LP／Album／Reissue 與 Album／Compilation／Reissue）；master 635232 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Family Fodder 零張。",
+  "risk": "MB 名下 44 個 release-group（樂團 2000 年代復出後持續發片），分頁 browse 才拿得到完整清單（裁定第 116 條）；以字串搜尋極易配到後期作品。原盤目錄號在 Discogs 上寫成「FRESH LP 3」與「FRESH LP∃」兩種（封面把 3 印成鏡像的 ∃），下游若以目錄號查要兩種都試。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 793212894《Monkey Banana Kitchen》(1980)，試聽預估 ready，但 Staubgold 版是加曲版，本機上架前要核曲數。",
+  "mbNote": "釘 5bf301d4-e3e8-46f5-90da-ab30333b295c《Monkey Banana Kitchen》，artist-credit「Family Fodder」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 3 個 release：1980 GB Official、2014-01-31 DE Official、2014-01-31 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4f6ba639-f179-4431-8797-7b018a667eda，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse 得名下 44 個 release-group。對照組 d9b84626-4718-4778-9e6c-508cc24b266e《ScHiZoPhReNiA pArTy !》(1981，EP) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Staubgold",
+  "g": "a"
+ },
+ {
+  "artist": "The Cravats",
+  "album": "In Toytown",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Small Wonder Records",
+  "why": "雷迪奇（Redditch）樂團的第一張 LP，出在 Pete Stennett 開在倫敦沃爾瑟姆斯托一家唱片行後面的 Small Wonder Records，目錄號 CRAVAT 1（Discogs master 457851，1980 年英國原盤 release，錄音在 Outlaw Studios）。Small Wonder 是英國 DIY 郵購廠牌的原型之一，1980 年前後幾乎只靠店面與郵購出貨。地位證據是 Overground Records 的兩次授權再發：2012 年 CD（OVER129CD，與《Double Volume》併成一張）與 2015 年黑膠（OVER 129LP，標 Reissue／Remastered，盤名回到《In Toytown》）；master 457851 的三個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Cravats 零張。",
+  "risk": "盤名有兩種寫法：原盤封面作《In Toytown》，MB 轄下的 2012 年 release 與 Overground 的 CD 作《The Cravats in Toytown》（把團名併進盤名）。依裁定第 50 條採原盤寫法《In Toytown》，另一種寫法要留給下游查詢與去重用——這也是 Apple 那筆的比對關鍵。Apple 實測 gb 命中 collectionId 1551671414《In Toytown》(1980-12-31)，試聽預估 ready，年份為 Apple 的上架日期不是原盤日期（裁定第 77 條），卡單維持 1980。封面已實測 CAA release-group front 回 200。MB 名下 17 個 release-group，多數是七吋單曲，字串搜尋高風險。",
+  "mbNote": "釘 6a761780-def6-3b64-b9e2-f02d1a14f453《In Toytown》，artist-credit「The Cravats」，first-release-date 1980-10，primary-type Album、secondary-types 空，轄下 2 個 release：1980-10 GB Official（標題 In Toytown）與 2012 GB Official（標題 The Cravats in Toytown）。已回問 release-group 端點確認實體類型與標題。**release-group 標題與卡片盤名相同、但轄下再發的 release 標題不同**，屬裁定第 91 條的已知形狀，fix-rgmbid 若報標題對不上是誤報。藝人 MBID 821c07ac-f85f-49c8-84ab-73065390799a，分頁 browse 得名下 17 個 release-group；1983 年的《The Colossal Tunes Out》(19b40d2a-a679-386d-ba6c-4cc80aefb2a1) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Overground Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Astronauts",
+  "album": "Peter Pan Hits the Suburbs",
+  "year": 1981,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Bugle Records",
+  "why": "沃特福德（Watford）自由音樂節圈子的樂團，第一張 LP 出在自營的 Bugle Records，原盤沒有正式目錄號（Discogs master 283222，1981 年英國原盤 release 標「none, Genius 001」，錄音在 Street Level Studios——與同組 Androids of Mu 同一間）。地位證據是 La Vida Es Un Mus 的三次授權再發（2011 年 MUS44 兩筆、2019 年同編號 Repress，Discogs 版本頁皆標 Album／Reissue），那是倫敦的無政府龐克廠牌；另有 1994 年希臘 Lazy Dog 的 CD。master 283222 的五個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Astronauts 零張。",
+  "risk": "掛名嚴重撞名：Discogs 把本團標為「The Astronauts (5)」，MB 上也有多個同名實體（美國衝浪團等），字串搜尋只能靠 rgMbid 鎖定（裁定第 65 條的消歧義編號形狀）。MB 名下 27 個 release-group，且 1989 年另有 master 2994161《Peter Pan Hits The Suburbs / All Done By Mirrors》二合一 CD（Acid Stings ASR 5），依裁定第 129 條身分不釘、封面不用、試聽不採。Apple 實測 gb 命中 collectionId 985729472《Peter Pan Hits the Suburbs》，但 Apple 標的日期是 2015-02-19（數位上架日，裁定第 77 條），卡單維持 1981。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 fa36eb05-1814-3991-bc78-17760cf241bd《Peter Pan Hits the Suburbs》，artist-credit「The Astronauts」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 4 個 release：1981 GB Official ×2、1994 GR Official、2011-03-03 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 9993b1b5-4925-42b1-ab9f-6627f9be65fd，分頁 browse 得名下 27 個 release-group（不是 artist?inc=release-groups 的 25 筆上限，裁定第 116 條）。Discogs 上的二合一《Peter Pan Hits The Suburbs / All Done By Mirrors》在 MB 上未見對應 release-group，若日後出現一律不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "La Vida Es Un Mus",
+  "g": "a"
+ },
+ {
+  "artist": "The Lines",
+  "album": "Therapy",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Red Records",
+  "why": "倫敦樂團的第一張 LP，同時掛 Fresh Records 與樂團自己的 Red Records 兩組編號（Discogs master 1587640，1981 年英國原盤三筆 release，catno 一律作「FRESH LP7, ROUGE 2」，錄音在 Blackwing Studios，其中一筆是白標）。與同組 Family Fodder 的《Monkey Banana Kitchen》同屬 Fresh 的配銷網。MB 名下 5 個 release-group，1983 年的《Ultramarine》是同一條線的續作。地位證據是 2008 年 Acute／Water Wing 一系的整理再發（MB 建有 edf57c0a《Flood Bank》與 fdb3bc4a《Memory Span》兩張 2008 年合輯，皆為 Album/Compilation），以及 2013 年 Medical Records 的《Electroconvulsive Therapy Vol. 1》收錄；master 1587640 的三個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Lines 零張。",
+  "risk": "掛名與盤名都是通用詞（裁定第 124 條）：「The Lines」在 Discogs 與 MB 上都有多個同名實體，「Therapy」在 Apple 上會撈到 Therapy? 等大量無關條目——這正是裁定第 85 條說的「單字盤名幾乎必定拿不到固定試聽」的形狀，Apple 九個 storefront 實測無乾淨命中，試聽預估 unavailable。封面 CAA release-group front 實測 404，需本機另尋。兩個目錄號（FRESH LP7 與 ROUGE 2）並存，舉證要兩個都寫。",
+  "mbNote": "釘 251750db-ee64-4c30-bc03-5aef6858f04c《Therapy》，artist-credit「The Lines」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 2bb987a7-90b8-497b-940b-2510d5ad9c5b，分頁 browse 得名下 5 個 release-group。對照組 eab09900-a58a-4b0f-b69b-7c749fd8ec7c《Ultramarine》(1983-03)、edf57c0a-be56-3d1a-aaa1-7d199aa99386《Flood Bank》(2008，Album/Compilation)、fdb3bc4a-3825-3473-a73f-4d2299dbd673《Memory Span》(2008，Album/Compilation)、811943fa-6051-461e-a75c-b9da921158f8《Hull Down》(2016) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Acute Records",
+  "g": "a"
+ },
+ {
+  "artist": "L. Voag",
+  "album": "The Way Out",
+  "year": 1979,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Not On Label",
+  "why": "The Homosexuals 的 Jim Welton 用 L. Voag 這個化名做的唯一一張個人 LP，**完全沒有廠牌**：Discogs master 79032 的原盤 release（957974）廠牌欄就寫 Not On Label，目錄號只有一個手寫的「No 9」，母帶在 Strawberry Mastering、壓片 Orlake。這是「自壓七吋世代」把同一套做法用在整張 LP 上的極端例子。地位證據是兩次授權再發：1997 年英國 Alcohol 的 CD（ALLVCD）與 2015 年美國 Superior Viaduct 的黑膠 SV083（Discogs 版本頁標 LP／Album／Reissue），Superior Viaduct 是舊金山專做 post-punk 與實驗音樂授權復刻的廠牌；master 79032 的三個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，L. Voag 零張。",
+  "risk": "年份分歧：MB 的 release-group first-release-date 記 1980，Discogs master 79032 與其下的原盤 release 都直記 1979。依裁定第 86／127 條（有來源直接寫出的年份覆蓋 MB 的無佐證值）卡單取 1979，行文不得正面斷言發行年（裁定第 18／46 條）。掛名在 Discogs 上寫作「L.voag」（無空格、小寫 v），MB 實體名作「L. Voag」，兩種寫法下游都要試。盤名《The Way Out》是通用詞組（裁定第 124 條）。封面 CAA release-group front 實測 404；Apple 九個 storefront 全空，封面與試聽都要本機另尋。",
+  "mbNote": "釘 5100a147-9b79-3de3-85f2-78fa71dd5a5f《The Way Out》，artist-credit「L. Voag」，first-release-date 1980（**卡單年份不採此值**，見 risk），primary-type Album、secondary-types 空，轄下 2 個 release：1980 GB Official 與 1997 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 1a1cd443-fe04-4407-8adb-1aaf3afb698e，分頁 browse 得名下 1 個 release-group（即本卡），無對照組。rgMbid 是身分鍵不是年份來源（裁定第 95 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Superior Viaduct",
+  "g": "a"
+ },
+ {
+  "artist": "Lemon Kittens",
+  "album": "We Buy a Hammer for Daddy",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "United Dairies",
+  "why": "Karl Blake 與 Danielle Dax 的雙人組，第一張 LP 是 United Dairies 的第二號發行（UD 02，Discogs master 79147，1980 年英國原盤 release，catno 另寫作 U.D.02.）。United Dairies 是 Nurse With Wound 的 Steven Stapleton 自己開的廠牌，1979–80 年間只出了幾號，本張是外團在這家廠牌的最早幾張之一。地位證據是 1993 年 Biter Of Thorpe 的授權 CD 再發（BOT 131-03 CD，Discogs 版本頁標 Album／Reissue／Remastered）；master 79147 的兩個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Lemon Kittens 零張；池中 Nurse With Wound 已有 5 張（含 1979 年的 United Dairies 首作），本卡是同一家廠牌的另一面，不與之重複。",
+  "risk": "MB 名下 4 個 release-group，其中 f1bcccff《The Big Dentist》(1982) 是同團第二張 LP，以 `releasegroup:\"The Big Dentist\"` 查 count=0（掛名寫成「The Lemon Kittens」時查無），本批不收。Danielle Dax 後來的個人作品在 Apple 上與本團條目混排，字串搜尋要以團名為準。封面已實測 CAA release-group front 回 200。United Dairies 的 Discogs 廠牌條目要看有無爭議記載再引為背書（裁定第 78 條）。",
+  "mbNote": "釘 4252c402-ee1b-3ee4-af7e-3c58db726731《We Buy a Hammer for Daddy》，artist-credit「Lemon Kittens」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 2 個 release：1980 GB Official 與 1993 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID bc34c0c9-2d5d-4d97-a178-0e5eecb8d75d，分頁 browse 得名下 4 個 release-group。對照組 f1bcccff-619f-3307-aa89-ac21ef4f88c1《The Big Dentist》(1982)、1bc58f14-40a8-3d49-b3ea-7b5b13328696《Cake Beast》(1980，EP)、c008a459-fff3-3873-b905-8e0c0b6eecc7《Spoonfed and Writhing》(1979-12-07，EP) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Biter Of Thorpe",
+  "g": "a"
+ },
+ {
+  "artist": "Alternative TV",
+  "album": "Vibing Up the Senile Man (Part One)",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Deptford Fun City Records",
+  "why": "Mark Perry（《Sniffin' Glue》同人誌的作者）與 Deptford Fun City 這條線的第二張 LP，目錄號 DLP03（Discogs master 10414，1979 年英國原盤 release，catno 另寫作 DLP 03）。Deptford Fun City 是 Miles Copeland 與 Perry 一夥人開的小廠，同一號系列出的都是自己人的碟。這張在當年被視為「把樂團拆掉重來」的一次，也是 Perry 從龐克轉向即興與電子的轉折點。地位證據是兩次授權黑膠再發：2002 年義大利 Get Back 的 get88 與 2021 年義大利 Spittle Records 的 SPITTLE110LP（Discogs 版本頁標 LP／Album／Reissue），另有 1996 年 Anagram 的 CD 選輯；master 10414 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Alternative TV 零張。",
+  "risk": "年份分歧：MB 的 release-group first-release-date 記 1978，Discogs master 10414 與其下的原盤 release 都直記 1979。依裁定第 86／127 條卡單取 1979，行文不得正面斷言發行年（裁定第 18／46 條）。盤名分歧：MB 的 release-group 標題只寫《Vibing Up the Senile Man》，原盤封面與 Discogs 都作《Vibing Up The Senile Man (Part One)》。依裁定第 50 條卡單採原盤的括號全名，屬裁定第 91 條「RG 標題 ≠ 卡片盤名」的已知形狀，fix-rgmbid 報標題對不上是誤報；同時要注意 `chk-prop`／`dedup-crossbatch` 的 DECOR 白名單不含「Part One」，括號會被保留，去重不受影響（裁定第 132 條）。MB 名下 34 個 release-group，字串搜尋高風險。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 8e69fb39-7b6e-3b7c-a586-d7467c4996ef《Vibing Up the Senile Man》，artist-credit「Alternative TV」，first-release-date 1978（**卡單年份不採此值**，見 risk），primary-type Album、secondary-types 空，轄下 1 個 release：1978 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 9d0bc0f2-a4d9-4eb6-89d4-a25c066f1f7e，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse 得名下 34 個 release-group（超過 artist?inc=release-groups 的 25 筆上限，裁定第 116 條）。同藝人 1978 年的《The Image Has Cracked》與後期大量作品皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Spittle Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Work",
+  "album": "Slow Crimes",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Woof Records",
+  "why": "Tim Hodgkinson（Henry Cow）與 Bill Gilonis 組的樂團，唯一一張錄音室 LP 出在自營的 Woof Records，目錄號 WOOF 003（Discogs master 87568，1982 年英國原盤兩筆 release，壓片 Nimbus）。同年另有 Recommended Records Japan 的 RRJ 002 與德國 Normal 的 NORM 1 兩個授權地區盤，那正是 Recommended 郵購網絡的運作方式——一張自營廠牌的碟靠各國同好廠牌分頭發行。地位證據是四次授權再發：1992 年 Megaphone Records 001、2006 年 Ad Hoc Records 15（標 Reissue／Remastered）、2014 年 Megaphone 的兩套黑膠、2019 年義大利 Spittle Records（Spittle 91，沿用 Woof 003 編號）；master 87568 的九個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Work 零張。",
+  "risk": "掛名「The Work」是極端通用詞（裁定第 124 條），任何字串搜尋都會失準，只能靠 rgMbid 鎖定；Discogs 上的 Megaphone Records 有括號序號「(3)」，舉證要指到它（裁定第 65 條）。MB 名下 10 個 release-group，其中 7e560de3《Live in Japan》(1982，Album/Live) 與本卡同年，容易混。封面已實測 CAA release-group front 回 200。Apple 九個 storefront 實測無乾淨命中，試聽預估 unavailable。",
+  "mbNote": "釘 cbd04267-d7c8-4716-8066-e89edde1bb69《Slow Crimes》，artist-credit「The Work」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 3 個 release：1982 GB Official、1992 US Official、2006 US Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID edd6f4e7-6604-459b-9242-4369fb50bc19，分頁 browse 得名下 10 個 release-group。對照組 7e560de3-89b5-4605-971a-519da9fcea7e《Live in Japan》(1982，Album/Live)、5dfa3a9b-b635-4ab2-9c27-9bb842e9d61d《The Worst Of Everywhere》(1982)、6c737ffa-7e83-42c6-9a70-f441d65a8f4e《WOOF 7 Inches》(2004，合輯) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Ad Hoc Records",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Bouquet of Steel",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Aardvark Records",
+  "why": "雪菲爾一地的場景合輯，1980 年由當地的 Aardvark Records 發行（Discogs master 50779，1980 年英國原盤兩筆 release：1625350 與 871094）。這張是英國地方城市 DIY 場景「自己替自己造一份名冊」的標準做法——把一座城市當年在演的團一次收進一張雙碟，收錄的多半是只留下一兩首錄音的樂團。它同時是 c-77 這條線的橫向索引：雪菲爾後來被記住的是 Cabaret Voltaire 與 Clock DVA（本批 b 組收 Clock DVA 的 1980 年卡帶），但這張碟證明那座城市當時的密度遠不只那兩團。池中實掃 seed_cards.json 全 13,913 列，`Various Artists` 已有 80 張（依裁定第 72 條不計入藝人上限），英國 DIY 場景合輯零張。",
+  "risk": "VA 卡不受藝人上限保護，依裁定第 72 條必須過 §5.6 的門檻，本卡已備 exceptionReason 與兩個 HTTPS 證據網址。MB 的 primary-type 是 Album、secondary-type 為 Compilation，依 §5.6 的說明本可照一般 Album 寫法處理，但為了讓下游看得出它是合輯，`releaseType` 明填 Compilation。年份依裁定第 84 條取該編輯版本首度問世年 1980（Discogs master 與 MB 一致，無分歧）。廠牌名 Aardvark 在 Discogs 上有多個同名實體，舉證要指到括號序號（裁定第 65 條）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 全空，試聽預估 unavailable——場景合輯的數位授權幾乎不可能整理得出來，這是可預期的。",
+  "mbNote": "釘 44f0e628-6f75-4668-be93-8a7992414112《Bouquet of Steel》，artist-credit「Various Artists」，first-release-date 1980，primary-type Album、secondary-types Compilation，轄下 1 個 release：1980 GB Official。已回問 release-group 端點確認實體類型與標題。掛名為 Various Artists，藝人 browse 不適用（裁定第 94 條：合輯掛 Various Artists 時藝人 browse 必然落空，本卡是以盤名查到的）。",
+  "releaseType": "Compilation",
+  "exceptionReason": "雪菲爾 1980 年的城市場景合輯，收錄當地大量只留下一兩首錄音的樂團，是該城 post-punk 場景唯一一份同時期的整體紀錄。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/44f0e628-6f75-4668-be93-8a7992414112",
+   "https://www.discogs.com/master/50779"
+  ],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
