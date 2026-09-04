@@ -633,7 +633,10 @@
     "cleanedOnly": false,
     "yearDrift": 4,
     "reissueTitle": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 12,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核**：collectionId 299714823 是 **Darla 再發**（℗ 2000 Darla、releaseDate 2000-02-14），**逐軌與 1996 Harriet CD 同名同序** → **試聽與軌數（12）可用，年份不可用**。探測層的 `yearDrift: 4` 標對了。另：2024 Darla《…+ Singles》是另一個 master（28 軌），不在本 release-group。"
   },
   "Allen Clapp and His Orchestra|One Hundred Percent Chance of Rain": {
     "batch": "c84",
@@ -649,7 +652,10 @@
     "trackCount": 11,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/20/68/b9/2068b911-0ea6-136d-b937-bd72451f0a82/mzaf_9312966711262253516.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 11,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 補正探測層的漏標**：探測層標 ready 且**沒標 `yearDrift`**，但 collectionId 1511658028 的 copyright 是 **℗ 2020 Mystery Lawn Music**（藝人 2009 年自建的 imprint）——**這是 2020 年的數位再發**，`appleYear: 1994` 與 releaseDate 1994-04-19 **都不可用**。**年份另有實質爭議**：Discogs 的 CD 與 LP 條目與 MB 都記 **1993**；AllMusic 記 1994，而英文維基那句的引註**正是同一個 AllMusic 頁、不是獨立來源**。**卡單 1993 不動，行文只能寫到年、必須帶出處，不得寫 1994、不得寫 2000 再發年。**"
   },
   "Lorelei|Everyone Must Touch the Stove": {
     "batch": "c84",
