@@ -1,0 +1,245 @@
+[
+ {
+  "artist": "Condition Green",
+  "album": "Life of Change",
+  "year": 1978,
+  "genres": [
+   "rock"
+  ],
+  "label": "See･Saw",
+  "why": "1978 年沖繩本島的樂團在「See･Saw」WX-9001 出的唯一一張原盤（Discogs master 643986，1978 年日本盤兩筆：release 5305582 與宣傳盤 15887955）。Condition Green 是 1970 年代コザ（現沖繩市）美軍基地周邊酒吧圈養出的樂團之一，與同一條街上的紫是同代人；那條街的樂團多半只留下一兩張唱片，這是其中之一。地位證據是三次日本國內的授權再版：1988 年 Pony Canyon 20P2530 與 D25P6282（Discogs release 34784309、4688423，皆標 Reissue／Stereo）、1994 年 PCCA-00681（7624650）、2012 年 Showboat SWAX-322（4158003）；同年另有奧地利 Austria Record Finder ARF 115（6404546）。master 643986 的八個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Condition Green 零張，整條沖繩線只有喜納昌吉&チャンプルーズ《BLOOD LINE》一張。",
+  "risk": "本卡是 a 組唯一的搖滾卡，也是唯一一張不屬於民謡／島唄體例的碟——收它的理由是同一個場景的另一面（コザ 的基地酒吧），策展層自行裁定納入，`why` 已把它與紫、與那條街的關係寫清楚，不得在行文裡把它說成民謡。年份分歧：MB 與 Discogs 原盤都記 1978，Apple 條目記 1977（實測 jp 命中 collectionId 1341260541「CONDITION GREEN」《Life of change》(1977)），依裁定第 77 條年份只當訊號，卡單維持 1978，行文不得正面斷言發行年。掛名 Condition Green 是通用詞組合（裁定第 124 條），MB 上另有同名的美國 hardcore punk 團體，字串搜尋高風險，只能靠 rgMbid 與 collectionId 鎖定。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 406dd492-1a78-4ecc-b102-0c69c9fda242《Life of Change》，artist-credit「Condition Green」，first-release-date 1978，primary-type Album、secondary-types 空，轄下 3 個 release：1978 JP Official（See‐SAW WX-9001，8 軌）、2012 JP Official、2013 AT Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6dc2ecf6-2339-4876-ad0c-fcc0983fd24a，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 2 個 release-group。對照組 e47d9989-2563-4bb5-907b-bd096b611e70《Mixed-Up》(2012) 刻意不釘。MB 另有藝人實體「Condition」aab150cd-3fc0-4b9c-ab79-d75eab090247（US hardcore punk），不是本卡的掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Pony Canyon／Showboat",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "沖縄民謡名選集",
+  "year": 1989,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "マルフクレコード",
+  "why": "マルフクレコード自己編的十六曲選集，1989 年目錄號 ACD-3（MB release 1e844fcf-6364-4c43-8802-eab22589be51，1989 JP Official，16 軌）。マルフク是沖繩民謡唱片最根本的一家：Discogs 廠牌條目 680249 的簡介寫明它 1927 年由普久原朝喜在大阪創立、專門出沖繩民謡，戰後才把據點搬回那霸；戰前沖繩移民在大阪的錄音、戰後本島與離島的民謡幾乎都經過這家的目錄。MB 上這家廠牌名下只登錄了五筆 release，本張是其中唯一一張 1960–95 年間的整張選集，另一筆同廠的《おきなわはうたう》連年份都沒有。這張因此是本批唯一能代表「島內小廠自己的目錄」的卡。池中實掃 seed_cards.json 全 13,913 列，Various Artists 有 86 張、沖繩相關零張。",
+  "risk": "VA 卡不受藝人上限保護，依裁定第 72 條必須過 §5.6 的門檻，本卡已備 exceptionReason 與三個 HTTPS 證據網址。舉證來源偏薄：Discogs 上查不到 ACD-3 這一筆（該廠在 Discogs 只有零星的 ACD 系列條目，如 ACD-21、ACD-35、ACD-3002），只能以廠牌條目與 MB 的 release 互相佐證，`why` 沒有引用任何未查證的沿革敘述。封面已實測 CAA release-group front 回 200；Apple 實測 jp／us／gb 三個 storefront 皆無條目，固定試聽預估 unavailable。盤名《沖縄民謡名選集》的羅馬拼音為 Okinawa Min'yō Meisenshū；マルフク在 Discogs 另有《沖縄民謡名選集８》(ACD-21) 等續編，去重時要看編號不能只看盤名（裁定第 124／125 條：ACD-3 是型錄編號，不代表它是第三集）。",
+  "mbNote": "釘 a497b55d-a6dc-4a24-b97e-46f7f60383ef《沖縄民謡名選集》，artist-credit「Various Artists」，first-release-date 1989，primary-type Album、**secondary-types 含 Compilation**，轄下 1 個 release（1989 JP Official，マルフクレコード ACD-3，16 軌）。已回問 release-group 端點確認實體類型與標題。以 release?label=ef1945bd-3109-4b48-8723-3a869ed2febf（MB 的マルフクレコード）分頁 browse，該廠名下 5 筆 release：本張、《おきなわはうたう》(無年份)、玉代勢長伝《八重山の歌》三卷、嘉手苅林昌《嘉手苅林昌》(1965)。同廠的玉代勢長伝分卷依裁定第 87 條不收。",
+  "releaseType": "Compilation",
+  "exceptionReason": "マルフクレコード是 1927 年創立、專出沖繩民謡的島內小廠，本張是它在 MusicBrainz 上唯一一張 1960–95 年間的整張選集，也是本批唯一能代表島內自營目錄的條目。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/a497b55d-a6dc-4a24-b97e-46f7f60383ef",
+   "https://www.discogs.com/label/680249",
+   "https://musicbrainz.org/label/ef1945bd-3109-4b48-8723-3a869ed2febf"
+  ],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "りんけんバンド",
+  "album": "なんくる",
+  "year": 1990,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "WAVE",
+  "why": "照屋林賢帶的樂團在 1990 年 12 月 25 日的唱片，WAVE EVA 4004 黑膠與 WWCP-4004 CD（Discogs master 1483882，1990 年日本盤兩筆：release 15999565 與 13059458，廠牌實體是 Discogs 的「Wave (7)」）。照屋林賢是漫才藝人照屋林助的兒子，樂團把三線與エイサー的節奏放進電子編曲，主唱是上原知子。地位證據是 1997 年 Sony SRCL 3955 的正式再版（Discogs release 9489808），master 1483882 的三個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，りんけんバンド零張、上原知子零張、照屋林賢零張。",
+  "risk": "**廠牌實體要指到 Discogs 的括號序號（裁定第 65 條）**：「WAVE」是通用詞，Discogs 上有多個同名廠牌，本張是「Wave (7)」；`why` 已記下 entity 序號與兩個目錄號。掛名跨文字系統：MB 藝人實體與卡片都用假名「りんけんバンド」，Discogs 與英文資料用「Rinken Band」，去重時兩種都要比（裁定第 49 條）。盤名《なんくる》的羅馬拼音為 Nankuru（Discogs 標題就是《なんくる = Nankuru》）。Apple 實測 jp 命中 collectionId 78595730 りんけんバンド《なんくる》(1990)。封面已實測 CAA release-group front 回 200。同批另收《チェレン》，本藝人本批 2 張、池中 0 張，未達上限。MB 上りんけんバンド只有 3 個 release-group，但 Apple 的 jp 目錄有《カラハーイ》(1991)、《アジマァ》(1992)、《ゴンゴン》(1994) 等在 MB 上查無的碟——這些是 MB 建檔不足，不是不存在。",
+  "mbNote": "釘 33f0d693-47df-4546-98db-92bdb41ae18c《なんくる》，artist-credit「りんけんバンド」，first-release-date 1990-12-25，primary-type Album、secondary-types 空，轄下 1 個 release（1990-12-25 JP Official，WAVE EVA 4004，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6e5c43c-54ca-4eac-9900-995c327877db，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 3 個 release-group。**對照組 5006d7eb-b2b2-4d46-8dfe-9e1c91836cc0《りんけんバンド》(1993, Album/Compilation) 刻意不釘**——那是自我同名的精選集，收它會造出 §1 明文要避免的高風險卡。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rinken Band",
+  "reissuedBy": "Sony Records",
+  "g": "a"
+ },
+ {
+  "artist": "喜納昌吉&チャンプルーズ",
+  "album": "Earth Spirit",
+  "year": 1991,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Planet Earth",
+  "why": "1991 年 9 月 20 日東芝 EMI 旗下「Planet Earth」目錄的 TOCP 6850（Discogs master 1639088，只有 1991 年日本盤兩筆：release 5798611 與宣傳盤 14422998，十四年間沒有第三個版本）。喜納昌吉 1977 年那張自我同名首作是沖繩戰後音樂被引用最多的一張，本店刻意不收那一張而收 1990 年代這幾張——它們是同一個團在〈ハイサイおじさん〉之後、被國際樂評忽略的十年，唱片在日本本土也早已絕版。地位證據是原盤兩種型號與同目錄的連續發行（1990《ニライカナイ Paradise》TOCP-6270、1992《チャンプルーズ・ルネッサンズ》TOCT-6441、1992《イン・ラヴ》TOCT-6688，皆已在 MB 逐一回問確認）。master 1639088 的兩個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，喜納昌吉&チャンプルーズ已有《BLOOD LINE》一張。",
+  "risk": "**掛名寫法刻意跟隨池中既有卡**：MB 的 artist-credit 用全形「喜納昌吉＆チャンプルーズ」，池中既有的《BLOOD LINE》用半形「喜納昌吉&チャンプルーズ」。本卡採池中寫法以免造出第二個鍵（裁定第 121 條）；去重的 key 函式會把兩種符號都剝掉，字串比對層面等價，但顯示層不一致，本機正規化時三張要一起看。藝人上限：池中 1 張＋本批 2 張＝3 張，剛好到上限，本批不得再收本團。封面實測 CAA release-group front 回 **404**——本卡封面要走 Apple：實測 jp 命中 collectionId 715470166「喜納昌吉 & チャンプルーズ」《Earth Spirit》(1991)，注意 Apple 掛名的 & 前後有空格。MB 唯一的 release 國別記 XW（全球）而非 JP，與 Discogs 的日本盤有出入，本機核版本時要注意。",
+  "mbNote": "釘 78f979dd-d0a5-4e38-88bd-6110f073ac35《Earth Spirit》，artist-credit「喜納昌吉＆チャンプルーズ」，first-release-date 1991-09-20，primary-type Album、secondary-types 空，轄下 1 個 release（1991-09-20 XW Official，EMI Music Japan Inc.，11 軌，barcode 00094631313554）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c0d82761-5ed3-4a3d-9112-71bfe751bc45，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 12 個 release-group。**d7e70811-e942-4b64-95fe-30fd0a1a1664《喜納昌吉＆チャンプルーズ》(1977) 刻意不釘**（自我同名的代表作，本線刻意避開已被反覆挑走的名盤）；dc5c07a2-1efb-47e4-baeb-04f2267f5317《BLOOD LINE》(2003) **已在池中**、刻意不釘；2dc7f06b-85f6-400d-82b8-1e203526fdb4《ニライカナイ Paradise》(1990) 與 cb607b8e-9b61-4513-ab28-45c30ce9dbea《イン・ラヴ》(1992) 因藝人上限刻意不釘。另有藝人實體「喜納昌吉」13f8dc4f-8b2c-4bba-9585-5b6999171bc2（個人名義，名下 9 個 release-group），不是本卡的掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shoukichi Kina & Champloose",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "喜納昌吉&チャンプルーズ",
+  "album": "チャンプルーズ・ルネッサンズ",
+  "year": 1992,
+  "genres": [
+   "world",
+   "rock"
+  ],
+  "label": "Planet Earth",
+  "why": "《Earth Spirit》的隔年作，1992 年 3 月 25 日 Planet Earth TOCT-6441（Discogs master 1639097，1992 年日本盤兩筆：release 7508886 與宣傳盤 14423020，廠牌實體是 Discogs 的「Planet Earth (3)」）。地位證據是 1996 年東芝 EMI 以 TOCT-9555 做的正式再版（Discogs release 35395603，標 Reissue），master 1639097 的三個版本零筆標 Unofficial。這張與《Earth Spirit》是同一目錄連著兩年的兩張，兩張都在日本本土絕版、在國際考古再發熱潮裡完全沒被碰過——與 1977 年那張自我同名首作被反覆復刻的處境正好相反。池中實掃 seed_cards.json 全 13,913 列，本團已有《BLOOD LINE》一張。",
+  "risk": "**廠牌實體序號**：Discogs 的「Planet Earth (3)」才是東芝 EMI 這個目錄，同名廠牌另有他家，舉證要指到 entity 序號（裁定第 65／101 條）。掛名同前一張採池中既有的半形寫法「喜納昌吉&チャンプルーズ」。藝人上限：池中 1＋本批 2＝3，到上限。盤名跨文字系統：日文《チャンプルーズ・ルネッサンズ》、Apple 與 Discogs 用羅馬寫法《Champloose Renaissance》，去重與查詢兩種都要比（裁定第 49 條）；羅馬拼音為 Champloose Renaissance。封面實測 CAA release-group front 回 **404**——封面走 Apple：實測 jp 命中 collectionId 720455698「喜納昌吉 & チャンプルーズ」《Champloose Renaissance》(1992)。",
+  "mbNote": "釘 c16ee765-e1de-45c9-9775-71e6d03f982a《チャンプルーズ・ルネッサンズ》，artist-credit「喜納昌吉＆チャンプルーズ」，first-release-date 1992-03-25，primary-type Album、secondary-types 空，轄下 1 個 release（1992-03-25 JP Official，Planet earth TOCT-6441，11 軌，barcode 4988006092389）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c0d82761-5ed3-4a3d-9112-71bfe751bc45，名下 12 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。b7f8949b-37e8-418f-8e44-73e4e496205b《Shoukichi Kina & Champloose – Introducing》(1992, Album/Compilation)、0510dd85-d170-4920-a171-f00d4f706c4a《ザ・ニュー・ベスト・オブ》(2000, Compilation)、7b0b3c1a-4099-3d1f-bc19-b71aa062566a《Champloo!》(1995, Album/Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shoukichi Kina & Champloose",
+  "reissuedBy": "東芝EMI",
+  "g": "a"
+ },
+ {
+  "artist": "Diamantes",
+  "album": "OKINAWA LATINA",
+  "year": 1993,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Bad News Records",
+  "why": "**一家獨立廠牌的第一號出品**：1993 年 6 月 21 日 Bad News Records BN-001（MB release，10 軌）——樂團的第一張唱片同時是這家廠牌的第一張唱片，隔年他們才被 Mercury Japan 簽走（1994《ESPERANZA》PHCL-5008、1995《Conquista》PHCL-5016，兩筆已在 MB 逐一回問確認）。Diamantes 是沖繩的日系秘魯人 Alberto Shiroma 帶的樂團，把沖繩民謡的旋律放進南美舞曲編制；這個組合在沖繩以外幾乎沒有被寫過。地位證據是原盤在 MB 上登錄的兩筆 1993 年日本盤，以及樂團隨後被大廠簽下的三張唱片所構成的連續目錄。池中實掃 seed_cards.json 全 13,913 列，Diamantes 零張。",
+  "risk": "**舉證比本批其他卡薄**：Discogs 上查不到 Diamantes 的任何 master 或 release（以 type=master 與 type=release 兩種查詢、日文與拉丁兩種掛名各試過，回的都是無關條目），因此 `why` 沒有 Discogs 的版本頁可指，授權狀態無從逐筆核（裁定第 65 條要求的 entity 序號在此不適用，因為根本沒有再發）。本卡的證據只有 MB 的 release 與 Apple 的條目，研究層要把這一點當「待驗證的線索」而不是「已驗證的事實」（裁定第 114 條）。盤名全大寫《OKINAWA LATINA》，Apple 寫成《Okinawa Latina》，大小寫差異在搜尋會被正規化，不影響命中（裁定第 50／52 條）。Apple 實測 jp 命中 collectionId 264698003「DIAMANTES」《Okinawa Latina》(2007，數位上架年不是原盤年，裁定第 77 條的形狀)。封面已實測 CAA release-group front 回 200。掛名 Diamantes 是拉丁字的官方團名，依 §0.5 保留拉丁寫法，不用片假名「ディアマンテス」；但 Apple 的 jp 目錄同時有兩種掛名，探測時兩種都要試。",
+  "mbNote": "釘 737799d6-3152-4c23-83e9-94463369e327《OKINAWA LATINA》，artist-credit「Diamantes」，first-release-date 1993-06-21，primary-type Album、secondary-types 空，轄下 2 個 release：1993-06-21 JP Official（Bad News Records BN-001，10 軌）與 1993-09-23 JP Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 99a38e74-c56b-4e4e-bb74-d4bc95cf6745，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 28 個 release-group。ba8fe949-61e5-4275-92d6-9801eeb59089《ESPERANZA》(1994, Mercury Japan PHCL-5008) 與 40f9aeaf-2d4a-4db6-94cf-4f3898cb6d9d《Conquista》(1995, Mercury Japan PHCL-5016) 刻意不釘——兩張都已是大廠盤，與本線「深掘」的判準不合；a1a25a3d-16a7-4065-a04c-fea6a0ccd9a7《ロ・メジャー・デ・ディアマンテス1993-1997》(1997, Compilation) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ディアマンテス",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "ネーネーズ",
+  "album": "あしび",
+  "year": 1993,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Ki/oon",
+  "why": "知名定男找四位女聲組成的團體在 1993 年 9 月 9 日的唱片，Ki/oon KSC2-48（Discogs master 2260075，1993 年日本盤兩筆含宣傳盤 32198646）。值得記的是它有一個歐洲版：1994 年 Columbia COL 476824 2（Discogs release 19895572），把沖繩民謡以「Ashibi」這個羅馬拼音盤名放進歐洲的世界音樂通路——同一批沖繩唱片裡少數走出去過的一張。四人分別是古謝美佐子、宮里奈美子、比嘉恵美子、下地暁；古謝美佐子在 MB 上另有獨立的藝人實體但名下最早的 release-group 是 2001 年，1990 年代的錄音只能經由本團查到。池中實掃 seed_cards.json 全 13,913 列，ネーネーズ零張、古謝美佐子零張、知名定男零張。",
+  "risk": "掛名跨文字系統：MB 藝人實體用片假名「ネーネーズ」，Discogs 用「Nenes (2)」與「Nēnēs*」（帶長音符），歐洲盤用「Nenes」，去重與查詢至少三種寫法要比（裁定第 49 條）；羅馬拼音為 Nenes。**MB 的 artist 搜尋用「Nenes」會撈到西班牙語圈的 Nenes Bian 等別的實體**，字串搜尋高風險，只能靠 rgMbid。盤名《あしび》的羅馬拼音為 Ashibi（歐洲盤標題就是《Ashibi》）。Apple 實測 jp 命中 collectionId 1536980004 ネーネーズ《あしび》(1993)。封面已實測 CAA release-group front 回 200。同批另收《コザ dabasa》與《なーらび》，本藝人本批 3 張、池中 0 張，剛好到上限。",
+  "mbNote": "釘 ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9《あしび》，artist-credit「ネーネーズ」，first-release-date 1993-09-09，primary-type Album、secondary-types 空，轄下 2 個 release：1993-09-09 JP Official（Ki/oon KSC2-48，10 軌，barcode 4988009004808）與一筆無日期的 Pseudo-Release《Ashibi》（轉寫用的假發行，不是另一張碟）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 8 個 release-group。1264b05d-1d13-4ce5-be7a-751e0fbdc030《コザ～ネーネーズ・ベスト・コレクション》(1996, Other/Compilation)、bee5a10d-d3ad-4f66-93da-6ec9b14ba9c8《オキナワ〜メモリアル・ネーネーズ》(2000, Compilation)、c7231ab3-e9fa-4c85-a0a6-e387665d4fd6《Akemodoro Unai》(1998) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nenes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "大工哲弘",
+  "album": "ゆんた とぅ じらば",
+  "year": 1993,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "DISC AKABANA",
+  "why": "八重山（石垣島）的唄者大工哲弘在 1993 年 6 月 13 日的唱片，DISC AKABANA APCD-1002（Discogs release 15467416，標題作《ゆんた とぅ じらば = Yunta & Jiraba》，公司欄記 Meta Company Limited、GOK Sound 與コジマ録音）。盤名裡的「ゆんた」與「じらば」是八重山民謡的兩種曲體，整張唱片就是照這兩種體例編的——這是他離開大廠、隔年才與東京的 off note 合作《ウチナージンタ》(ON-1) 之前的自營期作品。他 1982 年在 CBS/Sony 出過《ゆんたしょーら》(25AG 806, Discogs release 12094337)，1996 年在 off note 出《ジンターナショナル》(ON-12, Discogs release 15375289)——本張夾在兩段之間，是三段裡通路最小的一張。DISC AKABANA 在 MB 上名下只有兩筆 release，本張是其中唯一一張 1960–95 年間的。池中實掃 seed_cards.json 全 13,913 列，大工哲弘零張。",
+  "risk": "Discogs 的該筆 release 沒有填年份（欄位為空），年份取自 MB 的 1993-06-13 與同筆 release 的目錄號；依裁定第 97 條，年份必須有來源，本卡的來源是 MB 的 release 日期，`risk` 已標明 Discogs 那側查不到年份。Apple 實測 jp／us／gb 三個 storefront 皆無條目（以漢字掛名、假名盤名與羅馬拼音 Tetsuhiro Daiku / Yunta Tu Jiraba 各試過），固定試聽預估 unavailable；封面已實測 CAA release-group front 回 200，是唯一的封面來源。盤名含空格與濁點假名，羅馬拼音為 Yunta tu Jiraba（Discogs 寫 Yunta & Jiraba），去重兩種都要比（裁定第 49 條）。掛名用漢字「大工哲弘」（MB 藝人實體名），羅馬拼音入 queryAlias。",
+  "mbNote": "釘 08de40a3-de49-4f30-8b1f-4550245650ce《ゆんた とぅ じらば》，artist-credit「大工哲弘」，first-release-date 1993-06-13，primary-type Album、secondary-types 空，轄下 1 個 release（1993-06-13 JP Official，DISC AKABANA APCD-1002，11 軌，barcode 4571258153023）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 056c1b35-fc3d-45b7-acc6-49fff6f3fef6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 4 個 release-group。3d1c9169-3c36-4168-bf1d-713403d899dc《ウチナージンタ》(1994, off note ON-1) **刻意不釘**——實測 CAA release-group front 回 404 且 Apple 三個 storefront 皆無條目，封面解不出來，依 §4 停止該筆；473fa59e-eaf3-448e-ad75-cd367b2b3141《ジンターナショナル》(1996) 超出本組年限，7e0858f9-b033-4ccf-9b53-7fc286f5fa81《ガムラン‐ユンタ》(2009) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tetsuhiro Daiku",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "ネーネーズ",
+  "album": "コザ dabasa",
+  "year": 1994,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Ki/oon",
+  "why": "第二張，1994 年 7 月 21 日 Ki/oon KSC2 83（Discogs master 1678509，1994 年日本盤兩筆：release 12377672 與宣傳盤 14747437，四十年來沒有第三個版本、也沒有任何再發）。盤名的「コザ」是本島中部那座圍著嘉手納基地長出來的城市（現沖繩市），也是本批 Condition Green 那條酒吧線的所在地——同一批卡裡兩張碟指向同一個地名，一張是民謡團體、一張是基地搖滾。依裁定第 82 條，「完全沒有再發」比「只有未授權再發」乾淨，分量靠原盤兩種型號與同團連續三張的目錄舉證。池中實掃 seed_cards.json 全 13,913 列，ネーネーズ零張。",
+  "risk": "盤名混寫片假名與拉丁字《コザ dabasa》，且 Discogs 把它寫成《コザ Dabasa》（首字大寫），MB 用小寫。大小寫差異在搜尋會被正規化（裁定第 50／52 條），本卡採 MB 的原樣；羅馬拼音為 Koza Dabasa。**「コザ」這個地名與同團 1996 年的精選集《コザ～ネーネーズ・ベスト・コレクション》共用，去重時只比「コザ」會撞，要比完整盤名**。Apple 實測 jp 命中 collectionId 1536980453 ネーネーズ《コザ dabasa》(1994)。封面已實測 CAA release-group front 回 200。本藝人本批 3 張，剛好到上限。**互斥條款提醒**：本卡與 Condition Green《Life of Change》都可以講「コザ」，研究層只能給其中一張講（裁定第 58／109 條）。",
+  "mbNote": "釘 af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5《コザ dabasa》，artist-credit「ネーネーズ」，first-release-date 1994-07-21，primary-type Album、secondary-types 空，轄下 1 個 release（1994-07-21 JP Official，Ki/oon KSC2 83，11 軌，barcode 4988009008301）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，名下 8 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。**對照組 1264b05d-1d13-4ce5-be7a-751e0fbdc030《コザ～ネーネーズ・ベスト・コレクション》(1996, primary-type Other／secondary Compilation) 刻意不釘**——盤名開頭同為「コザ」，是下游最容易換錯的形狀。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nenes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "ネーネーズ",
+  "album": "なーらび",
+  "year": 1995,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Ki/oon",
+  "why": "第三張，1995 年 3 月 24 日 Ki/oon KSC2 112，十四軌（Discogs master 1682186，1995 年日本盤兩筆：release 3281796 與宣傳盤 14778530，零筆再發、零筆標 Unofficial）。三張連著三年、同一個目錄號系列（KSC2-48／83／112），本批把這三張一起收，讓卡池第一次有一組完整的 1990 年代沖繩民謡團體錄音。依裁定第 82 條，沒有再發的碟以原盤本身與同系列的連續編號舉證。池中實掃 seed_cards.json 全 13,913 列，ネーネーズ零張。",
+  "risk": "封面實測 CAA release-group front 回 **404**——本卡封面要走 Apple：實測 jp 命中 collectionId 1536979813 ネーネーズ《なーらび》(1995)，本機解封面時用 collectionId 反查、不要用模糊搜尋（§4 的 apple-verified 路線）。盤名《なーらび》全平假名且只有四個音，字串比對極脆弱（裁定第 124 條），羅馬拼音為 Naarabi／Nārabi，兩種都要進去重比對。本藝人本批 3 張，剛好到藝人上限，本批不得再收ネーネーズ。",
+  "mbNote": "釘 744a63a0-e9ad-4ace-9b82-f628454a5929《なーらび》，artist-credit「ネーネーズ」，first-release-date 1995-03-24，primary-type Album、secondary-types 空，轄下 1 個 release（1995-03-24 JP Official，Ki/oon KSC2 112，14 軌，barcode 4988009011202）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，名下 8 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。17167fac-544d-4740-b823-a682039f607e《明けもどろ ～うない～》(1997) 與 c7231ab3-e9fa-4c85-a0a6-e387665d4fd6《Akemodoro Unai》(1998) 是同一張碟的日文與羅馬拼音兩筆建檔，兩筆皆超出本組年限、刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nenes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "りんけんバンド",
+  "album": "チェレン",
+  "year": 1995,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "",
+  "why": "1995 年 11 月 21 日的唱片，MB release 78c9c191-e717-3be8-839a-5aa03d1af858（1995-11-21 JP Official，12 軌）。它是照屋林賢這條線在 MusicBrainz 上僅有的三筆 release-group 之一，另外兩筆是 1990 年的《なんくる》（本批同收）與 1993 年那張自我同名精選。樂團在 1990 年代的其餘唱片（《カラハーイ》1991、《アジマァ》1992、《ゴンゴン》1994）在 Apple 的 jp 目錄查得到，但 MusicBrainz 完全沒有建檔——本批因此只能收 MB 釘得住的這兩張。依裁定第 82 條，沒有再發的碟以原盤本身舉證；本卡另有 Apple 的數位條目佐證它仍在流通。池中實掃 seed_cards.json 全 13,913 列，りんけんバンド零張。",
+  "risk": "**本卡舉證最薄**：MB 的 release 沒有登錄廠牌與目錄號（`label` 欄因此留空），Discogs 上以盤名、以樂團名兩種查詢都找不到任何條目。研究層要把它當「待驗證的線索」處理（裁定第 114 條），行文不得斷言廠牌。年份採 MB 的 1995-11-21，行文不得正面斷言發行年（裁定第 18／46 條）。封面實測 CAA release-group front 回 **404**——封面走 Apple：實測 jp 命中 collectionId 1537345079 りんけんバンド《チェレン》(1995)。盤名《チェレン》只有三個片假名，字串比對極脆弱（裁定第 124 條），羅馬拼音為 Cheren。本藝人本批 2 張、池中 0 張。",
+  "mbNote": "釘 78c9c191-e717-3be8-839a-5aa03d1af858《チェレン》，artist-credit「りんけんバンド」，first-release-date 1995-11-21，primary-type Album、secondary-types 空，轄下 1 個 release（1995-11-21 JP Official，12 軌，**MB 未登錄廠牌與目錄號**）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6e5c43c-54ca-4eac-9900-995c327877db，名下 3 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。**對照組 5006d7eb-b2b2-4d46-8dfe-9e1c91836cc0《りんけんバンド》(1993, Album/Compilation) 刻意不釘**（自我同名精選集）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rinken Band",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "我如古より子",
+  "album": "恋の花",
+  "year": 1995,
+  "genres": [
+   "world",
+   "folk"
+  ],
+  "label": "vap",
+  "why": "她在 MusicBrainz 上唯一的一張唱片：1995 年 4 月 1 日 vap VPCC-81075（Discogs release 18747697，1995 年日本盤，公司欄同時列出 Sound Inn Studio、Onkio Haus、Avaco Creative Studios 與**英國的 Real World Studios**——一張沖繩民謡唱片的錄音橫跨東京與 Peter Gabriel 的錄音室）。我如古より子是「オキナワチャンズ」出身的唄者，MB 的藝人條目就是這樣註記的；她另在 Apple 的 jp 目錄與吉川忠英合作的《Uta Asobi》(2002)、《Utaashibi II》(2004)，那兩張在 MB 查無。依裁定第 82 條，本張零筆再發，以原盤條目與錄音室名單舉證。池中實掃 seed_cards.json 全 13,913 列，我如古より子零張。",
+  "risk": "Discogs 的該筆 release 有年份 1995，與 MB 的 1995-04-01 一致，年份無爭議。Apple 實測 jp／us／gb 三個 storefront 皆無本張條目（以漢字掛名、羅馬拼音 Yoriko Ganeko 與盤名 Koi no Hana 各試過；jp 目錄有她 2002／2004 年與吉川忠英的兩張，不是本張），固定試聽預估 unavailable；封面已實測 CAA release-group front 回 200，是唯一的封面來源。盤名《恋の花》是通用詞（裁定第 124 條），羅馬拼音 Koi no Hana，同名曲在沖繩民謡與日本歌謡曲都常見，去重與查詢只能靠掛名加盤名的組合。掛名用漢字「我如古より子」（MB 藝人實體名），羅馬拼音入 queryAlias。**注意 Discogs 的搜尋會把「我如古より子 恋の花」誤導到 1965 年 Columbia 的 16 片裝《沖縄音楽総攬》(release 15586766)，那是另一件東西**（裁定第 122 條的形狀），已排除。",
+  "mbNote": "釘 d0666c83-5df6-43a0-9386-7c30be20351d《恋の花》，artist-credit「我如古より子」，first-release-date 1995-04-01，primary-type Album、secondary-types 空，轄下 1 個 release（1995-04-01 JP Official，vap VPCC-81075，11 軌，barcode 4988021810753）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 68703a1a-940f-4f43-92bb-2ea0f2389e26（disambiguation「オキナワチャンズ」），以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 1 個 release-group，無對照組可混淆。MB 另有藝人實體「我如古盛栄」0ad0f6cf-2c6a-40d0-9a65-47a23adc909e，不是本卡的掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoriko Ganeko",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
