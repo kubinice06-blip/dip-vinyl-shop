@@ -55,7 +55,9 @@
   "trackCount": 7,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/d6/83/73/d68373bf-9295-27db-2afd-43d918267729/mzaf_12794320229291304056.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "originalTrackCountDisputed": true,
+  "note": "**原盤軌數兩說、兩個都不填**：Discogs 與 Apple 記 7 軌、MB 記 8 軌（MB 多出一筆重複的〈Fire in the Sky〉）。依第 141 條行文不得寫原盤有幾軌。"
  },
  "Airbridge|Paradise Moves": {
   "batch": "c80",
@@ -88,9 +90,10 @@
   "yearDrift": 24,
   "reissueTitle": false,
   "status": "ready",
-  "note": "Apple 顯示 2006、**℗ 2006 New Horizons Music Ltd**（卡片 1982）。8 軌連號、無別張專輯的同名曲、非二合一。**Apple 的 2006 是復刻年，不得寫成發行年。**",
+  "note": "**2026-09-04 主線更正**：先前把 `originalTrackCount` 填成 8，**那是從 Apple 的軌數推的、不是原盤**。MB 的 1982 原盤是 **7 軌**。Apple 的 8 軌是 2006 NHM 重製版（改了曲名、併軌，多出〈The Flea〉與〈Variations On a Theme By Iain Carnegie〉）。℗ 2006，Apple 年份不得寫成發行年。",
   "appleYearIsReissue": true,
-  "originalTrackCount": 8
+  "originalTrackCount": 7,
+  "expandedReissue": true
  },
  "Voltz|Knight's Fall": {
   "batch": "c80",
@@ -106,7 +109,8 @@
   "trackCount": 8,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/58/35/42/583542ca-c18b-c9a5-6a8d-7aaf90e08df8/mzaf_5782063148386609773.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**yearDrift 是假象**：Apple 顯示 1980-01-01 是佔位日期，但 ℗ 欄寫「℗ 1982 Voltz」，**與卡單 1982 一致**——不是漂移。"
  },
  "Red Summer|Release": {
   "batch": "c80",
@@ -180,7 +184,11 @@
   "trackCount": 9,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/27/a9/71/27a971de-b5ea-bcac-9909-707d8d7e00fe/mzaf_10089862906631409627.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "originalTrackCount": 7,
+  "note": "**2026-09-04 主線更正**：先前標 ready 卻**沒標 `expandedReissue`**。MB 的 1982 原盤是 **7 軌**；Apple 9 軌是 2006 那版，第 8、9 軌 Apple 自己標「Extra Track Taken from *Salome*」、℗ 2002 Inner Sanctum。行文不得把那兩軌當原盤曲目。**另年份兩說**：Discogs 原盤 1983-02 與全部 12 個版本記 1983 vs MB 記 1982——依第 127 條附錄標註爭議、不得斷言發行年。",
+  "appleYearIsReissue": true
  },
  "National Health|D.S. al Coda": {
   "batch": "c80",
@@ -273,9 +281,10 @@
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ca/d7/32/cad73281-ff7f-6a7c-1b4c-d814cdb19a85/mzaf_9770907929362955350.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready",
-  "note": "Apple 16 軌、**℗ 2020 Purple Pyramid**（Apple 顯示 1981 是佔位年）。第 13–16 軌明標 (Rough Demo)／(Alternate Version)／(Instrumental Demo)／(Demo)，第 11–12 軌〈Greenfly and the Rose〉〈Lord of the Hornets〉是同期單曲兩面。非二合一（無別張專輯的同名曲）、依第 77 條接受，但**原盤軌數待研究層查**（依第 140 條附錄不憑印象填），行文不得把 demo 與單曲當原盤曲目，Apple 年份不得寫成發行年。",
+  "note": "**2026-09-04 主線更正**：先前的 note 寫「第 11–12 軌〈Greenfly and the Rose〉〈Lord of the Hornets〉是同期單曲兩面」——**寫錯了，那兩首就是原盤 B5／B6**。原盤 **12 軌**（Discogs 原盤 release 3146349、英文維基曲目表、MB 最早的 1989 FR CD 三份一致）。Apple 16 軌＝原盤 12 ＋ 4 首 demo／alternate，屬加曲版；℗ 2020 Purple Pyramid，Apple 顯示的 1981 是佔位年。",
   "appleYearIsReissue": true,
-  "expandedReissue": true
+  "expandedReissue": true,
+  "originalTrackCount": 12
  },
  "Gothique|Face of Ages": {
   "batch": "c80",
