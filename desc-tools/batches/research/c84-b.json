@@ -388,5 +388,194 @@
    "note": "1994 維持卡單原值，無爭議，而且**日期有三個獨立來源且完全一致**：Discogs 黑膠條目 2875633 與 CD 條目 3224794 的 released 欄都是 1994-11-28、MB release-group 的 first-release-date 與 MB 唯一那筆 release 的 date 也是 1994-11-28、Apple 那筆的 releaseDate 同樣是 1994-11-28（copyright ℗ 1994 Teen-Beat）。**行文可以寫到日：1994 年 11 月 28 日。**日本 100 Guitar Mania 那筆加曲版的 released 欄只有年份 1994，**它是同年的另一個版本，不影響本作問世日**。"
   },
   "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：四人編制與錄音地；日本 100 Guitar Mania 加曲版這件事（含它多出來的四軌另掛製作與錄音者）；黑膠與 CD 曲目表不一致這件事。\n**禁令**：(1) **Teenbeat 廠牌史整條禁用**（分派給〈Bruiser〉）——本卡可以寫「廠牌叫 Teenbeat、編號 Teenbeat 144-LP 與 TEENBEAT 144CD」，不得展開廠牌來歷。**Mark Robinson 與 Rob Christiansen 只出現在日本版第 11–14 軌的掛名裡，只能寫成「日本版多出來的四軌另外掛了製作與錄音者」，不得寫他們是誰**（分派分別歸〈Me. Me. Me.〉與〈Bruiser〉）。(2) **原盤軌數只能寫 10**——Discogs 美國黑膠、Discogs 美國 CD、MB 唯一那筆 release、Apple 那筆，四個來源一致 10 軌（第 140／141 條已用 release?release-group=&inc=recordings 逐版比對）。**日本版的 14 軌與那四首（〈Comet Song〉〈Far Out Law〉〈What Gives?〉〈Lonsome Johnson〉）不得寫進本張的曲目、也不得當關鍵曲。**(3) **黑膠 B4〈To The Moon!〉與 CD 第 9 軌〈Demon School Dropout〉的差異，只能寫成「兩份 Discogs 條目在同一個位置登記了不同的曲名」**——**不得說成「黑膠換掉了一首」或「CD 加了一首」**，因為沒有任何來源說明是哪一邊改的（第 136 條）。**〈To The Moon!〉不得當關鍵曲。**(4) **本卡沒有署名樂評可引**（Trouser Press 沒有這個樂團的條目，我查過站內搜尋也沒有），**行文不得引任何評語，也不得自行給音樂性的形容**——能寫的只有 facts 裡的原始值。(5) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(6) **不得由曲名推論出處**（第 110 條）——〈Monkey Wrench〉〈Demon School Dropout〉〈Mayonnaise Rainbow〉都沒有來源說明它們寫的是什麼；**特別注意〈Monkey Wrench〉與另一個知名樂團的同名曲無關，沒有任何來源把兩者接在一起**。(7) 日本版只能寫成「Discogs 上另有一筆 country 欄記 Japan、廠牌 100 Guitar Mania Records 的 CD 條目」；**其授權關係沒有任何來源說明，不得推論**（策展層留空的 `reissuedBy` 我確認**查不到授權關係，維持留空**）。\n**探測層核對**：previews.json 標 ready、collectionId 1183642318、trackCount 10、us 店面一搜即中。**我逐軌核對過**：Apple 那十軌與 MB 1994 年 CD 逐項同名同序、逐軌長度也吻合，**不是日本那個 14 軌的加曲版**，也不是二合一，**試聽可用、軌數可用**。Apple 的 releaseDate 1994-11-28 與 ℗ 1994 Teen-Beat 都落在原盤日，沒有版本漂移。**CAA 那一側本卡是 NO ART**，封面線要另外處理。"
+ },
+ {
+  "key": "desc2:Air Miami|Me. Me. Me.",
+  "artist": "Air Miami",
+  "album": "Me. Me. Me.",
+  "facts": [
+   {
+    "f": "Discogs 英國 CD 條目 632361 的欄位：藝人「Air Miami」、標題《Me. Me. Me.》、country UK、格式 CD 1 [Album]、year 1995、**released 欄 1995-09-12**、廠牌欄同時列 4AD「CAD 5011 CD」／「CAD 5011CD」與 Teenbeat「TEENBEAT 177」、master 4659；註記欄逐句寫「Recorded in May of 1995.」「Mixed in May of 1995.」「Recorded on 24 track 2-inch analog audio tape.」「Reprise (\"Bubble Shield Reprise\") is listed as track 14 but is part of track 12. There is no track 13.」「℗ & © 1995 4 AD. ℗ & © 1995 Teenbeat.」「Manufactured in England.」",
+    "src": "https://www.discogs.com/release/632361"
+   },
+   {
+    "f": "同一條目的 credit 欄：Vocals, Guitar, Bass, Mixed By: Mark Robinson／Vocals, Guitar, Bass, Mixed By, Design: Bridget Cross／**Drums: Gabriel Stout**／Producer, Mixed By, Engineer: Guy Fixsen／Engineer [Assistant]: Mark Dobson (2)、Mark Gruber／**Executive-Producer: Ivo Watts-Russell**／Illustration [Cover]: Hideaki Kodama／Design: Teenbeat Graphica／Written-By: Air Miami；companies 欄 Recorded At: Criteria Recording Studios、Mixed At: First Protocol、Mastered At: Masterpiece、Glass Mastered At: Nimbus。",
+    "src": "https://www.discogs.com/release/632361"
+   },
+   {
+    "f": "Discogs 美國 CD 條目 445110（4AD／Teenbeat「9 46000-2」與 Teenbeat「177」，country US，released 1995-09-12）的註記欄把錄音地寫得更完整：「Recorded on 24-track 2-inch analog audio tape at Criteria Studios, Miami, Florida, USA, in May of 1995.」「Mixed at First Protocol Studios, London, England, in May of 1995.」「Mastering at Masterpiece, London, England.」「4•A•D, manufactured and distributed by Warner Bros. Records, Inc., a Time Warner Company.」「Packaged in a jewel case with a transparent tray and a 12-page booklet.」；**同一欄另列出「Printed durations that differ」的八筆**——第 2 軌印 1:56、第 3 軌 4:23、第 4 軌 4:18、第 5 軌 2:20、第 6 軌 3:01、第 10 軌 2:25、第 12 軌 3:35、第 13 軌 2:28，也就是唱片上印的長度與實際登記的長度對不上。",
+    "src": "https://www.discogs.com/release/445110"
+   },
+   {
+    "f": "Discogs 英國黑膠條目 642157（4AD「CAD 5011」，country UK，**released 欄 1995-11-06**，Vinyl 1 [LP, Album]）的註記欄抄了唱片標籤與封面上的字：「℗&© 1995 4 AD. ℗&© 1995 Teenbeat. all songs written by (Cross/Robinson)/BMI/ ©1995 Teenbeat. manufactured in England」與封面上的「recorded in Miami in may of 1995.」「\"World Cup Fever\" title by Esther Oliver.」；companies 欄 Pressed By: MPO、Mixed At: First Protocol、Mastered At: Copymasters；兩面 runout 蝕刻「CAD 5011 A¹」與「CAD 5011 B¹」。",
+    "src": "https://www.discogs.com/release/642157"
+   },
+   {
+    "f": "MusicBrainz release-group 00225395 的欄位：title《Me. Me. Me.》、**first-release-date 1995-09-12**、primary-type Album、secondary-types 空陣列、artist-credit「Air Miami」（藝人 fdc1eb7c-3ad2-4c4a-abf7-81b42f56b989，country US）；genres 欄 indie rock 2 票、lo-fi 1 票、rock 1 票；url 關聯四條，指向 AllMusic mw0000120441、Discogs master 4659、Genius 的歌詞頁與 Wikidata Q109536050。**AllMusic 與 Genius 那兩條我沒有開過，不得引用其內容。**",
+    "src": "https://musicbrainz.org/release-group/00225395-64a9-4644-938f-e9786f6f9915"
+   },
+   {
+    "f": "以 release?release-group=00225395…&inc=recordings+labels+media 逐版比對：MB 轄下四筆 release——(a) 5dd9af30，1995、GB、Official、Teenbeat「117」＋4AD「CAD 5011 CD」、CD、**12 軌**（第 12 軌〈Definitely Beachy〉登記 6:20）；(b) 721bbcfa，1995-09-12、US、Official、Warner Bros. Records「9 46000-2」、CD、**13 軌**（第 12 軌 3:42、第 13 軌〈Reprise〉2:38）；(c) d2fdc050，1995-11-06、GB、Official、4AD「CAD 5011」、12\" Vinyl、**13 軌**；(d) f1e2e262，2023-07-28、Official、4AD、Digital Media、**16 軌**、disambiguation 欄「Deluxe Edition」。**(a) 與 (b)/(c) 的差別不是內容差別**：英國 CD 把〈Reprise〉索引在第 12 軌之內（Discogs 632361 的註記欄與曲目表 12.1／12.2／12.3 都這樣記），美國 CD 與黑膠把它獨立成一軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=00225395-64a9-4644-938f-e9786f6f9915&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆 1995-09-12 美國 CD 登記的逐軌長度：I Hate Milk 2:15、World Cup Fever 2:12、Seabird 4:33、Special Angel 4:10、Afternoon Train 2:33、Dolphin Expressway 3:35、Sweet as a Candy Bar 1:32、You Sweet Little Heartbreaker 1:44、Neely 1:56、Bubble Shield 2:37、The Event Horizon 2:51、Definitely Beachy 3:42、Reprise 2:38；十三軌相加 36 分 16 秒，最短的〈Sweet as a Candy Bar〉1 分 32 秒、最長的〈Seabird〉4 分 33 秒，**十三軌裡有九軌不到三分鐘**。",
+    "src": "https://musicbrainz.org/release/721bbcfa-be16-4a72-8f6e-d423f41a9930"
+   },
+   {
+    "f": "Discogs 條目 27783660（2023-07-28，UK/Europe/US，兩張 12 吋 45 轉，All Media [Album, Deluxe Edition, Reissue, Remastered]，廠牌欄 Teenbeat「TEENBEAT 177」＋4AD「4AD 0515LP」）的註記欄寫「For this reissue, the album has been expanded to feature all sixteen recordings from the studio session. A4 and an edited version of D1 were previously only released on the [Fuck You, Tiger] EP. C2 is a previously unreleased version…」；同欄另抄下封面設計的一項細節——**十六軌的每一軌都在正背面封面美術裡印了一句副歌與一個每分鐘拍數**，例如 A1「Please Please Someone Kill Me Soon」(191)、A3「Seabird Fly Away, To The Sea」(147)、C2「If I Like Her」(84)、D1「I Love Your Hands, Your Face, Your Mind」(88)。該版多出來的三軌是〈Warm Miami May〉〈Pucker〉〈See-Through Plastic〉。",
+    "src": "https://www.discogs.com/release/27783660"
+   },
+   {
+    "f": "Discogs 的 4AD 廠牌頁（label 634）簡介欄寫：「The influential 4AD label was started in 1980 by music enthusiasts Ivo Watts-Russell and Peter Kent with financial help from Beggars Banquet, whose record store chain the pair worked for.」同頁另完整說明 4AD 的編號規則——字母部分代表載體（「CAD - LP」「BAD - 12\"/CD single and EP」「AD - 7\" single」），數字部分「From 1990 to 1999, the numbers became four digits, with the first digit again representing the year」；並記「In 1992… 4AD entered a highly publicized Stateside distribution deal with Warner Bros. Records」。",
+    "src": "https://www.discogs.com/label/634"
+   },
+   {
+    "f": "Trouser Press 的 Unrest 條目（文末署名 Deborah Sprague）在唱片列表裡把 Air Miami 的作品獨立列出（「Fourteen Songs [tape] (TeenBeat) 1994」「Sixteen Songs [tape] (TeenBeat) 1994」「Fuck You, Tiger EP (TeenBeat/4AD) 1995」「Me. Me. Me. (TeenBeat/4AD) 1995」），本文對本張的原句：「Robinson and Cross went on to form Air Miami with drummer Gabriel Stout; the new trio doesn’t stray far from the path blazed by Unrest. The bubblegum aftertaste left by segments of Me. Me. Me. is a bit too strong when Robinson indulges his propensity for creating inconsequential chantalongs like “World Cup Fever,” but he offsets that with reams of bracing, Fire Engines-styled guitar and a guileless new wave sensibility (see “Dolphin Expressway”) that should sway all but the most diehard Anglophobe. Cross takes more vocal turns (most notably the creamy, Casio-flecked “Afternoon Train”)…」",
+    "src": "https://trouserpress.com/reviews/unrest/"
+   }
+  ],
+  "hookCandidates": [
+   "唱片上印的曲長有八處和實際對不上，Discogs 的條目把那八個數字一條條列了出來",
+   "在邁阿密錄的，錄在兩吋二十四軌的類比磁帶上"
+  ],
+  "sound": "Discogs 的 styles 欄在不同條目上給了不同的字：英國黑膠是 Lo-Fi 與 Indie Rock，英國 CD 是 Abstract 與 Indie Rock，美國 CD 是 Lo-Fi 與 Indie Rock。編制在 credit 欄上是三個人——兩人各掛人聲、吉他與貝斯（其中一人在 2023 年那版的條目上另掛 Mellotron），鼓一位；製作、錄音與混音同掛一位團外的人，另有兩位助理錄音師，執行製作掛廠牌的創辦人之一。錄音方式寫在註記欄裡：兩吋二十四軌類比磁帶，1995 年 5 月錄於邁阿密，同月在倫敦混音。曲子偏短——MB 那筆美國 CD 的十三軌相加 36 分 16 秒，十三軌裡有九軌不到三分鐘。（本欄由 Discogs 三份 1995 年條目的 credit、註記與 styles 欄、MB 那筆美國 CD 的逐軌長度歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "I Hate Milk",
+   "Seabird",
+   "Afternoon Train"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，無爭議。**日期要分版本說**：Discogs 英國 CD 條目 632361 與美國 CD 條目 445110 的 released 欄都是 **1995-09-12**，MB release-group 的 first-release-date 與 MB 那筆美國 CD 的 date 也是 1995-09-12；**但 Discogs 英國黑膠條目 642157 與 MB 那筆黑膠 release 的日期是 1995-11-06**。**行文若要寫到日，只能寫「CD 記在 1995 年 9 月 12 日、英國黑膠記在 11 月 6 日」，不得只挑一個當成「這張碟的發行日」**（第 136 條）。另有一個**不同性質**的時間可用：註記欄的錄音與混音月份「1995 年 5 月」——那是錄音月，不是發行日（第 135 條）。**2023-07-28 是 4AD／Teenbeat 擴充重製版的日期，不是本作問世年。**"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：**4AD 這家廠牌**（Discogs 廠牌頁 634 簡介欄與編號規則說明——依第 128 條**只能寫成「Discogs 的 4AD 廠牌頁簡介欄說」**）；Mark Robinson 與 Bridget Cross 這條線；Ivo Watts-Russell 掛執行製作這件事；2023 年擴充重製版與它封面上的副歌／拍數設計；Trouser Press 的 Unrest 條目對**本張**的段落（Deborah Sprague 署名）。\n**禁令**：(1) **Teenbeat 廠牌史整條禁用**（分派給〈Bruiser〉）——本卡可以寫「兩家廠牌共掛（4AD 與 Teenbeat）」與各自的編號，**廠牌來歷只能寫 4AD 那一家**。(2) **Unrest 這個團只能寫成 Trouser Press 條目上的一句掛名**（「Robinson and Cross went on to form Air Miami with drummer Gabriel Stout」），**不得展開 Unrest 的作品或歷史**——Trouser Press 那篇條目九成在寫 Unrest，**只有「Robinson and Cross went on to form Air Miami…」開頭的那一段是本卡可用的**，其餘整篇禁用。**同理，2023 年黑膠條目註記欄裡那段貼紙文案（「rose from the ashes of DC's legendary Unrest」云云）是宣傳文案，若要引必須寫成「該條目抄下的貼紙上寫」，且不得用它來展開 Unrest**（第 128 條）。(3) **原盤軌數不得給單一總數**——同一年三個版本兩種數字：**英國 CD 12 軌**（〈Reprise〉索引在第 12 軌之內），**美國 CD 與英國黑膠 13 軌**（〈Reprise〉獨立成軌）。差別的原因有來源（Discogs 632361 註記欄「Reprise… is listed as track 14 but is part of track 12. There is no track 13.」）。**行文若要提軌數，必須連版本一起寫**（第 135／141 條）。**2023 年那版的 16 軌與多出來的三軌（〈Warm Miami May〉〈Pucker〉〈See-Through Plastic〉）不得寫進本張的曲目、也不得當關鍵曲**（第 140 條的加曲版）。(4) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(5) **不得由曲名推論出處**（第 110 條）——〈I Hate Milk〉〈Dolphin Expressway〉〈Neely〉都沒有來源說明它們寫的是什麼；**〈World Cup Fever〉的標題由 Esther Oliver 命名這件事，只能照 Discogs 註記欄的原句寫，不得推論那個人是誰**。(6) 「Printed durations that differ」那八筆只能寫成「Discogs 條目列出唱片上印的曲長與登記值有八處不同」，**不得說成「唱片印錯了」**（第 136 條）。(7) 4AD 的編號規則可以引，但**若要拿它去對照本卡的 CAD 5011，必須寫成「依該廠牌頁說明的規則」**——那是照規則對照，不是來源直接說的（第 128／136 條）。\n**探測層核對（第 152 條的回搜）**：previews.json 標 `unavailable`（us 1→0、gb 1→0、jp 12→0、ca 1→0、de 1→0、fr 10→0、au 1→0）。**我依第 152 條另外查了兩條路徑**：(a) 美國店面 `search?term=Air Miami`、`term=Air Miami Me Me Me`、`term=Me. Me. Me. Air Miami`；(b) 英國店面同樣三組關鍵詞。**兩個店面都確實有 Air Miami 這位藝人的東西**——〈Airplane Rider / Stop Sign〉單曲（collectionId 1186515964，℗ 1994 Teen-Beat）、《Fourteen Songs》（1173137245，℗ 2007 Teen-Beat，14 軌）、《World Cup Fever》EP（1201091445）、《F**k You Tiger》EP（1540671701，℗ 1995 4AD Ltd）、〈Pucker (2023 Remaster)〉單曲（1695396397，℗ 2023 4AD Ltd）——**但沒有任何一筆的 collectionName 是《Me. Me. Me.》**。**確認 Apple 兩個店面真的沒有這張專輯，主線不必回補**（這是「藝人在、專輯不在」的形狀，不是第 139 條的查無假象）。CAA 那一側本卡有封面（release-group 00225395 的 front）。"
+ },
+ {
+  "key": "desc2:Tsunami|Deep End",
+  "artist": "Tsunami",
+  "album": "Deep End",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 1639338 的欄位：藝人「Tsunami (6)」、標題《Deep End》、country US、格式 CD 1 [Album]（格式文字欄「Digipak」）、year 與 released 兩欄都是 1993、廠牌 Simple Machines「SMR 013 CD」、master 22416、genres Rock、styles Indie Rock；註記欄只有兩句：「Recorded at Catbox Studios, Lancaster, PA, July 1992.」「All songs © Tsunami 1992 except track 5 by Mark Edwards.」；identifiers 欄 Barcode 718751841321、Label Code LC 7861、Matrix / Runout「SMR013 9/92 1DA2」。",
+    "src": "https://www.discogs.com/release/1639338"
+   },
+   {
+    "f": "同一條目的 credit 欄：Guitar, Vocals: Jenny Toomey／Guitar, Vocals: Kristin Thomson／Bass, Vocals: Andrew Webster／Drums: John Pamer／Recorded By: Jay Sorrentino、Ken Heitmueller／Layout: Kristin Thomson、Steve Raskin／Photography By [B & W]: Jim Saah／Photography By [Color]: Charles Steck／Songwriter: Tsunami (6) [1 to 4, 6 to 13]、Mark Edwards (9) [5]；companies 欄 Recorded At: Catbox Studios、Manufactured By 與 Distributed By: Southern Studios、Distributed By: EFA。",
+    "src": "https://www.discogs.com/release/1639338"
+   },
+   {
+    "f": "**同年三種載體的曲目表不一樣**：Discogs CD 條目 1639338 是 **13 軌**（第 2 軌〈The Spook〉0:22、第 8 軌〈Sniffy〉0:06 是其中兩軌）；Discogs 黑膠條目 2110143（Simple Machines「smr13v」，country 欄「USA, Canada & Europe」）的曲目表是 **12 軌**（A1–A7 加 B1–B5，**沒有〈Sniffy〉**）；Discogs 卡帶條目 10403715（「smr13c」，US）列了 13 軌，但註記欄寫「A2 & B1 are short interludes which are listed on the sleeve but not on the cassette」，同欄另寫「Mark Edwards is credited on the inlay card for writing a song marked * but the asterisk doesn't appear anywhere else」。",
+    "src": "https://www.discogs.com/release/10403715"
+   },
+   {
+    "f": "MusicBrainz release-group 266a700a 的欄位：title《Deep End》、first-release-date 1993（年精度）、primary-type Album、secondary-types 空陣列、artist-credit「Tsunami」（藝人 fea43e99-c4d5-4dac-9c27-868e864c6dc2，country US，**disambiguation 欄「US indie rock group」**）；genres 欄 indie rock 1 票、rock 1 票；url 關聯四條，指向 AllMusic mw0000102155、Discogs master 22416、RateYourMusic 與 Wikidata Q5250176。**AllMusic 與 RateYourMusic 那兩條我沒有開過，不得引用其內容。**",
+    "src": "https://musicbrainz.org/release-group/266a700a-4541-3fac-8b09-62c87731e3c1"
+   },
+   {
+    "f": "以 release?release-group=266a700a…&inc=recordings+labels+media 逐版比對：MB 轄下兩筆 release，都記 1993、US、Official——(a) 664482f9，Simple Machines「smr13v」、**12\" Vinyl、12 軌**、Cardboard/Paper Sleeve、barcode 718751841314；(b) 7f9ab5b2，Simple Machines「smr13cd」、**CD、13 軌**、barcode 718751841321。**兩筆的差別與 Discogs 兩份條目一致：黑膠那筆沒有〈Sniffy〉。**沒有任何一筆是別張專輯的曲目（第 140 條的二合一形狀不成立）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=266a700a-4541-3fac-8b09-62c87731e3c1&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆 CD 登記的逐軌長度：In a Name 3:03、The Spook 0:22、Slugger 3:29、Lucky 3:45、Water's Edge 3:00、Genius of Crack 4:17、460 3:46、Sniffy 0:07、Valentine 4:25、Skinny 3:27、Waxed 2:38、Writing Letters 3:26、**Stupid Like a Fox 10:46**；十三軌相加 46 分 30 秒。**最長的一軌（10:46）比最短的〈Sniffy〉（0:07）長九十二倍**，而且最長那一軌一個人就佔掉全碟長度的將近四分之一。",
+    "src": "https://musicbrainz.org/release/7f9ab5b2-1f1d-44df-a2a8-0a86f910a823"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1683173032 的欄位：collectionName《Deep End》、artistName「Tsunami」、trackCount 13、releaseDate 1992-01-01、**copyright「℗ 2023 Numero Group」**、primaryGenreName「Indie Rock」。十三軌逐軌核對，曲名、曲序與逐軌長度都與 MB 那筆 1993 年 CD 一致（含〈Sniffy〉0:07 與〈Stupid Like a Fox〉10:46）；沒有多出來的軌，也沒有別張專輯的曲目。**但 copyright 欄落在 2023 年、releaseDate 是 1992-01-01 的佔位形狀——那一筆是後來的再發，不是 1993 年的原盤條目。**",
+    "src": "https://music.apple.com/us/album/deep-end/1683173032"
+   },
+   {
+    "f": "Trouser Press 的 Tsunami 條目（文末署名 Fred Mills）對本張的原句：「Tsunami made its longplaying debut in mid-’93. Deep End not only reaffirms the band’s indie-to-the-marrow ethics (assorted answering machine messages from scenesters appear), but also reveals a combo unwilling to fashion crude, scratchy documents merely for the sake of street cred. Toomey and Thomson’s vocal harmonies approach choir-like complexity on “Lucky” and “Valentine”; furthermore, the group’s thick, layered arrangements — an intoxicating blur of strummed/dirty guitars, sonorous basslines and catchy melodic hooks — mark Tsunami as pop experimentalists, not ossifying punk rockers.」該條目把鼓手的名字拼成「John Palmer」，Discogs 三份條目都拼「John Pamer」。",
+    "src": "https://trouserpress.com/reviews/tsunami/"
+   },
+   {
+    "f": "Discogs 上以「Simple Machines Working Holiday」查詢，回到一整組同一年的七吋：SMWH 01《January》(Scrawl／Versus，release 536572)、SMWH 02《February》(Lungfish／The Tinklers，432975)、SMWH 03《March》(Codeine／The Coctails，1122222)、SMWH 04《April》(Eggs／Jonny Cohen And The Shoe Trees，1202179)、SMWH05《May》(Bratmobile／Veronica Lake，1577938)、SMWH 06《June》(My Dad Is Dead／Rastro!，1535473)、SMWH 07《July》(Nothing Painted Blue／Lois，778414)、SMWH08《August》(**Small Factory／Tsunami**，762862)、SMWH 09《September》(Jawbox／Crackerbash，2423852)、SMWH10《October》(The Grifters／Crain，1726501)、SMWH 11《November》(Pitchblende／Swirlies，964556)、SMWH 12《December》(Superchunk／Caterpillar，2397990)——**十二個月各一張分軌七吋，全部標 1993 年**；同系列另有整套的盒裝（release 3898651，編號 SMWH）與 1994 年的 CD 合輯《Working Holiday》（SMR 26 CD，release 1130338）。",
+    "src": "https://www.discogs.com/release/762862"
+   },
+   {
+    "f": "Discogs 的 Simple Machines 廠牌頁（label 439590）簡介欄只有兩句：「Arlington, Virginia based label run by Jenny Toomey and Kristin Thomson.」「The label existed from 1990 - 1998.」——**與本張 Discogs 條目 credit 欄上兩位吉他兼人聲的名字（Jenny Toomey、Kristin Thomson）是同兩個名字**。",
+    "src": "https://www.discogs.com/label/439590"
+   }
+  ],
+  "hookCandidates": [
+   "十三首歌裡最短的七秒，最長的十分四十六秒",
+   "同一年出的黑膠比 CD 少一首，少掉的那首只有七秒"
+  ],
+  "sound": "Discogs 的 styles 欄在 CD 與卡帶條目上是 Indie Rock，黑膠條目多掛一個 Post Rock。編制在 credit 欄上是四個人：兩位吉他兼人聲、一位貝斯兼人聲、一位鼓；錄音掛兩位團外的人，錄音地與時間寫在註記欄裡（賓州蘭卡斯特的 Catbox Studios，1992 年 7 月），製造與經銷掛 Southern Studios。長度分佈是本組最極端的一張——MB 那筆 CD 的十三軌相加 46 分 30 秒，其中兩軌是二十二秒與七秒的短插段，收尾那一軌 10 分 46 秒，一軌就佔掉全碟將近四分之一。曲目的作者欄十二軌掛樂團自己，只有第 5 軌掛給別人。（本欄由 Discogs 三份 1993 年條目的 credit、註記與 styles 欄、MB 那筆 CD 的逐軌長度歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "In a Name",
+   "Lucky",
+   "Stupid Like a Fox"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1993,
+   "note": "1993 維持卡單原值。**三個資料庫記 1993，Apple 那一筆記 1992，但 Apple 那筆不是原盤條目**：Discogs 的 CD（1639338）、黑膠（2110143）、卡帶（10403715）三份條目的 year 欄都是 1993，MB release-group first-release-date 1993、MB 兩筆 release 的 date 也都是 1993，Trouser Press 條目的唱片列表同樣記「Deep End (Simple Machines) 1993」、本文並寫「Tsunami made its longplaying debut in mid-’93」。**Apple 那筆的 releaseDate 1992-01-01 是 YYYY-01-01 的佔位形狀，而它的 copyright 是 ℗ 2023 Numero Group——整筆指向 2023 年的再發，年份不可用**（第 140 附第 2 點）。**行文只能寫到年（1993）**：Discogs 的卡帶條目有一個 released 欄 1993-11-19，但那是**卡帶那一版**的日期，其他兩種載體都只到年，**不得拿去當這張碟的發行日**（第 136 條）。另有一個**不同性質**的時間可用：註記欄的錄音時間「1992 年 7 月」與著作權欄的「© Tsunami 1992」——**那是錄音年與著作權年，不是這張碟的問世年**，行文要說清楚是哪一件事（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：**Simple Machines 的 Working Holiday! 十二個月七吋系列**（本組唯一取得這條線的卡）；本團四人編制與錄音地；Trouser Press 的 Tsunami 條目對**本張**的段落（Fred Mills 署名）。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用——這條線我已讓給 a 組的〈A Bedroom Community〉**（見〈Bruiser〉的總表）。本卡**可以寫**「Discogs 廠牌頁把廠牌記成由 Jenny Toomey 與 Kristin Thomson 經營，而這兩個名字也出現在本張的 credit 欄上」這**一句對照**（策展層那條「樂團與廠牌經營者的關係」的推論，經 Discogs 廠牌頁與本張 credit 欄兩處查證後成立），**但寫完就停**：不得寫廠牌怎麼起家、起訖年、經營方式、發過誰。(2) **Working Holiday! 系列只寫「這是同一家廠牌同一年做的十二個月分軌七吋」與系列本身的形狀**；名單裡出現的 Scrawl、Versus、Eggs 都是本批其他卡的樂團，**若要點名只能點名系列裡的參與者，不得順手描述那些樂團或它們的碟**（第 146 條）。(3) **原盤軌數不得給單一總數**——CD 13 軌、黑膠 12 軌（沒有〈Sniffy〉）、卡帶條目列 13 軌但註記說其中兩軌「listed on the sleeve but not on the cassette」。**行文若要提軌數必須連載體一起寫**（第 135／141 條）；**也不得說「黑膠拿掉了一首」**，沒有來源說明是哪一邊改的（第 136 條）。(4) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(5) **不得由曲名推論出處**（第 110 條）——〈Genius of Crack〉〈460〉〈Sniffy〉〈Stupid Like a Fox〉都沒有來源說明它們寫的是什麼；**第 5 軌〈Water's Edge〉的作者是 Mark Edwards 這件事只能照 Discogs 註記欄與 credit 欄的原句寫，不得推論他是誰、也不得說那是翻唱**。(6) 「answering machine messages」這個說法**只在 Trouser Press 那一句裡**，引用時要寫成「Trouser Press 的條目說」，**不得把它接到〈The Spook〉或〈Sniffy〉這兩個具體軌上**——沒有任何來源這樣對應（第 110／128 條）。(7) 鼓手姓名兩個來源拼法不同（Discogs 三份條目「John Pamer」、Trouser Press「John Palmer」），**只能寫成「兩個來源拼法不同」，不得挑一個說成正確**（第 136 條）。(8) Trouser Press 該條目談《The Heart's Tremolo》《World Tour》《Liquorice》與 Jenny Toomey 其他計畫的段落**全部不得使用**（不是這張碟）；**其中 Grenadine 那一條線歸〈Goya〉**。\n**探測層核對（我推翻探測層的地方）**：previews.json 把本卡標 ready、collectionId 1683173032、trackCount 13、appleYear「1992」，**沒有標任何 drift、也沒有標 reissue**。**逐軌核對後確認**：Apple 那十三軌與 MB 1993 年 CD 逐項同名同序、逐軌長度也吻合，**不是加曲版也不是二合一，試聽可用、軌數可用（但只能說成「CD 版十三軌」）**；**但那一筆的 copyright 是「℗ 2023 Numero Group」、releaseDate 是 1992-01-01 的佔位值，年份與日期都不可用**。**previews.json 之所以把 appleYear 記成 1992，正是因為那個佔位日期。建議主線在 previews.json 補標 `reissueEdition: true`（2023 Numero Group）並修正 appleYear 的可信度標記。**CAA 那一側本卡有封面（release-group 266a700a 的 front）。"
+ },
+ {
+  "key": "desc2:Scrawl|Velvet Hammer",
+  "artist": "Scrawl",
+  "album": "Velvet Hammer",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 1696890 的欄位：藝人「Scrawl」、標題《Velvet Hammer》、country US、格式 CD 1 [Album]、year 與 released 兩欄都是 1993、廠牌 Simple Machines「smr 20CD」／「smr 20 CD」、master 33044、genres Rock、styles Indie Rock；註記欄只有兩句：「Recorded and mixed in Chicago, IL 1993.」「Manufactured & distributed by Southern Studios.」；identifiers 欄 Barcode 718751882027、Label Code LC 7861、Matrix / Runout「MAYKING RECORDS SMR20CD 10259001 01 %」。",
+    "src": "https://www.discogs.com/release/1696890"
+   },
+   {
+    "f": "同一條目的 credit 欄：Guitar, Vocals: Marcy Mays／Bass, Vocals: Sue Harshe／Drums: Dana Marshall／**Recorded By [Uncredited]: Steve Albini**／Layout: Kristin Thomson／Cover [Front]: Marcy Mays／Photography By: Chas Krider；作詞作曲逐軌拆開——Lyrics By: Marcy Mays [1 to 3, 5 to 10]、Sue Harshe [2, 4, 5, 8]；Music By: Marcy Mays [1, 3, 6, 9]、Scrawl [2, 5, 7, 8, 10]、Sue Harshe [4]。companies 欄 Manufactured By 與 Distributed By: Southern Studios、Distributed By: EFA、Made By: Mayking Records、Glass Mastered At: PDO, UK。",
+    "src": "https://www.discogs.com/release/1696890"
+   },
+   {
+    "f": "**同一個人的角色在兩份條目上掛法不同**：Discogs CD 條目 1696890 把 Steve Albini 記成「Recorded By [Uncredited]」，**Discogs 黑膠條目 647794 卻把他記成「Producer」**；黑膠條目（Simple Machines「smr 20 v」，country 欄「UK, Europe & US」，Vinyl 1 [LP, Album]）的註記欄另寫「Printed violet lyric sheet included」「made in France [On cover and label]」「Manufactured & Distributed By Southern Studios Chicago * London [on back cover]」，companies 欄 Pressed By: Damont，兩面 runout 蝕刻「SMR 20 V A2 2 D DAMONT」與「SMR 20 V B1 G I DAMONT」。",
+    "src": "https://www.discogs.com/release/647794"
+   },
+   {
+    "f": "MusicBrainz release-group 2631313f 的欄位：title《Velvet Hammer》、**first-release-date 1993-01**（月精度）、primary-type Album、secondary-types 空陣列、artist-credit「Scrawl」（藝人 c5e3744d-b321-4cc9-976a-4d4d9d0ee73a，country US）；genres 欄 indie rock 1 票、rock 1 票；url 關聯一條，指向 Discogs master 33044。",
+    "src": "https://musicbrainz.org/release-group/2631313f-a2d0-32b4-96a3-382e3058100c"
+   },
+   {
+    "f": "以 release?release-group=2631313f…&inc=recordings+labels+media 逐版比對：MB 轄下兩筆 release，**都是 10 軌、曲名與曲序完全相同**——(a) 802d6f5a，1993-01、US、Official、Simple Machines「SMR 20」、CD、barcode 718751882027；(b) 5dddf8f7，1993、**XE**（歐洲）、Official、Simple Machines「smr 20 v」、12\" Vinyl、Cardboard/Paper Sleeve、barcode 718758820107。**Discogs 的卡帶條目 8134061（「SMR 20 C」，released 欄 1993-11-19）同樣是十軌同序**，三種載體軌數一致，沒有加曲版也沒有二合一。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2631313f-a2d0-32b4-96a3-382e3058100c&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆 CD 登記的逐軌長度：Your Mother Wants to Know 3:21、Take a Swing 3:55、Disappear Without a Trace 6:11、See 3:18、Face Down 4:01、Tell Me Now, Boy 3:08、Drunken Fool 3:45、Prize 2:41、Blue Green Sea 2:51、Remember That Day 3:59；**十軌相加 37 分 08 秒**，最短的〈Prize〉2 分 41 秒、最長的〈Disappear Without a Trace〉6 分 11 秒，**十軌裡只有兩軌不到三分鐘、兩軌超過四分鐘，其餘六軌都落在三到四分鐘之間**。",
+    "src": "https://musicbrainz.org/release/802d6f5a-dd14-4819-8ec8-2215a6963d77"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 145402172 的欄位：collectionName《Velvet Hammer》、artistName「Scrawl」、trackCount 10、releaseDate 1993-05-01、**copyright「℗ 1993 Spunky Monkey Music」**、primaryGenreName「Rock」。十軌逐軌核對，曲名、曲序與逐軌長度都與 MB 那筆 1993 年 CD 一致；沒有多出來的軌，也沒有別張專輯的曲目。**Apple 的 copyright 掛的是「Spunky Monkey Music」，與 Discogs 兩份條目上的 ℗／© 欄（Scrawl 與 Cripes Music）以及廠牌欄（Simple Machines）都不是同一個名字。**",
+    "src": "https://music.apple.com/us/album/velvet-hammer/145402172"
+   },
+   {
+    "f": "Trouser Press 的 Scrawl 條目（文末署名 Ira Robbins）對本張的原句：「Dana Marshall replaced O’Leary in 1992; the following year, Scrawl recorded Velvet Hammer, a great-sounding modern-rock record (credit uncredited engineer Steve Albini) delivered straight from the jaws of hell. “Drunken Fool,” “Your Mother Wants to Know,” “Tell Me Now, Boy,” “Take a Swing” and “Prize” are only some of the blunt, raw, conversational songs of first-person failings and ruined romance. Singing in an unsure voice that aptly reflects the mood of this poignant and unnerving album, Mays (effectively harmonized, and spelled with little emotional improvement on “See” and part of “Remember That Day,” by Harshe) rips herself apart…」該條目並把樂團記為「Columbus, Ohio’s Scrawl」、「began rocking out in 1985」。",
+    "src": "https://trouserpress.com/reviews/scrawl/"
+   },
+   {
+    "f": "Discogs 條目 1696956：同團 1996 年的《Travel On, Rider》，廠牌 **Elektra「61934-2」**，US，CD，12 軌；註記欄逐句列出四個錄音地（法國 Noyant La Gravoyere 的 Studio Black Box、明尼蘇達 Cannon Falls 的 Pachyderm Studio、曼菲斯的 Ardent Studios、俄亥俄州哥倫布的 Musicol Recording Studios），credit 欄把 Steve Albini 記成「Recorded By [2, 5 to 7, 9 to 12]」、Bob Ludwig 記成 Mastered By，companies 欄記「Phonographic Copyright (p): Elektra Entertainment」。",
+    "src": "https://www.discogs.com/release/1696956"
+   },
+   {
+    "f": "Discogs 條目 2305113：同一張《Travel On, Rider》的黑膠版，**廠牌卻是 Simple Machines「SMR-50 LP」**，US，released 欄 1997-01-00，Vinyl 1 [LP, Album]（格式文字欄「Dark Blue Translucent」），曲目與 Elektra 那版的十二軌同名同序，註記欄仍寫「℗© 1996 Elektra Entertainment Group, a division of Warner Communications Inc.」。",
+    "src": "https://www.discogs.com/release/2305113"
+   }
+  ],
+  "hookCandidates": [
+   "錄音的人在 CD 條目上寫著「未掛名」，在黑膠條目上卻掛成製作人",
+   "十首歌裡有六首落在三到四分鐘之間"
+  ],
+  "sound": "Discogs 的 styles 欄在 CD 與黑膠條目上是 Indie Rock，卡帶條目上是 Alternative Rock。編制在 credit 欄上是三個人：吉他兼人聲、貝斯兼人聲、鼓；錄音／製作那一欄掛的是同一個團外的名字，但兩份條目給他的角色不同。作詞作曲的欄位拆得很細——十軌裡有四軌的詞掛兩個人、四軌的曲掛其中一位、五軌的曲掛樂團自己。曲長集中：MB 那筆 CD 的十軌相加 37 分 08 秒，只有兩軌不到三分鐘、兩軌超過四分鐘，其餘六軌落在三到四分鐘之間，最長的〈Disappear Without a Trace〉6 分 11 秒。錄音地與時間只寫在註記欄的一句話裡（1993 年，芝加哥）。（本欄由 Discogs CD 與黑膠條目的 credit、註記與 styles 欄、MB 那筆 CD 的逐軌長度歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Your Mother Wants to Know",
+   "Disappear Without a Trace",
+   "Drunken Fool"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1993,
+   "note": "1993 維持卡單原值，年份沒有爭議（Discogs CD／黑膠／卡帶三份條目、MB release-group 與兩筆 release、Apple 那筆、Trouser Press 的唱片列表，全部記 1993）。**有爭議的是「哪一個月」，而且三個來源各給一個**：MB 的 first-release-date 與 MB 那筆 CD 的 date 是 **1993-01**、Apple 那筆的 releaseDate 是 **1993-05-01**、Discogs 的卡帶條目 8134061 的 released 欄是 **1993-11-19**（Discogs 的 CD 與黑膠條目只到年）。**依第 141 附「兩個來源各有一筆具體記載且互相矛盾」的處理，行文只能寫到年（1993），不得寫月或日。**Apple 的 copyright ℗ 1993 落在原盤年，沒有版本漂移。**1996 是《Travel On, Rider》的年份、1997-01 是它黑膠版的日期，兩者都與本作問世年無關。**"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：Marcy Mays／Sue Harshe／Dana Marshall 的分工與逐軌詞曲拆分；Steve Albini 在兩份條目上角色不同這件事；**Elektra 1996 年簽下這個團、而 Simple Machines 隔年才做那張碟的黑膠版**這條發行路徑；Trouser Press 的 Scrawl 條目對**本張**的段落（Ira Robbins 署名）。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用**（已讓給 a 組的〈A Bedroom Community〉）；**Working Holiday! 系列禁用**（分派給〈Deep End〉）——雖然 SMWH 01 的其中一面就是這個團，本卡**不得寫那個系列**。Kristin Thomson 在本張只掛 Layout，**只能寫成「排版欄掛了 Kristin Thomson」，不得展開她是誰**。(2) **原盤軌數只能寫 10**——Discogs CD、Discogs 黑膠、Discogs 卡帶、MB 兩筆 release、Apple 那筆，六個來源一致 10 軌，沒有加曲版也沒有二合一（第 140／141 條已用 release?release-group=&inc=recordings 逐版比對）。(3) **Steve Albini 只能寫成兩份條目上的兩種掛法**（CD 條目「Recorded By [Uncredited]」、黑膠條目「Producer」），**不得挑一個說成他實際做了什麼、不得展開他是誰**（第 136 條）。Trouser Press 那句「credit uncredited engineer Steve Albini」可以引，但要寫成「Trouser Press 的條目說」。(4) **《Travel On, Rider》只能寫成發行事實**（Elektra 1996 年的 CD、Simple Machines 1997 年的黑膠、兩者曲目相同），**不得描述那張碟的音樂、也不得寫成「這個團後來紅了」之類的評價**（第 43／57／146 條）。**同批的〈The Pink Album〉也有 Elektra 這條線，那是另一個團的另一件事，兩張都不得互相引用或並列**（第 146 條）。(5) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(6) **不得由曲名推論出處**（第 110 條）——〈Drunken Fool〉〈Blue Green Sea〉〈460〉一類的曲名都沒有來源說明它們寫的是什麼；**Trouser Press 引的那段歌詞可以照引，但只能寫成「該條目引了幾句歌詞」，不得由歌詞推論樂手的生平**。(7) Trouser Press 條目談《Plus, Also, Too》《He's Drunk》《Smallmouth》《Bloodsucker》的段落**全部不得使用**（不是這張碟）；**也不得寫「這是他們第幾張」這類序數框架**（第 125 條）。(8) Apple 的 copyright「Spunky Monkey Music」與資料庫上的 ℗／© 欄不同名，**只能寫成「幾份條目上的權利欄名字不同」，不得推論權利歸屬的過程**（第 136 條）。\n**探測層核對**：previews.json 標 ready、collectionId 145402172、trackCount 10、us 店面一搜即中、沒有標 drift。**我逐軌核對過**：Apple 那十軌與 MB 1993 年 CD 逐項同名同序、逐軌長度也吻合，**不是加曲版也不是二合一，試聽可用、軌數可用**；Apple 的 copyright ℗ 1993 落在原盤年。**唯一要注意的是 Apple 的 releaseDate 1993-05-01 與 MB 的 1993-01 互相矛盾，兩者都不得當成發行日引用**（見 yearVerified）。CAA 那一側本卡有封面（release-group 2631313f 的 front）。"
  }
 ]
