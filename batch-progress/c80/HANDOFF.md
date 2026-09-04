@@ -112,3 +112,8 @@ Freq 的罷工糾察線訪談、Wobbly 目錄那二十九年空窗）**全部照
 3. **四處寫入與回讀**（`seed_cards.json`／`apex_pool.json`／KV／Firestore），雲端不碰。
 4. **上架前逐張讀 `previews.json` 的 `note`**——本批三張的軌數與分類有限定語，
    尤其 **Castanarc 不得照 Apple 的八軌曲序敘述原盤**、**Freq 寫任何軌數都要註明是哪一種來源**。
+5. **`node scripts/build-genre-tree.mjs --write`**（2026-09-04 店主新增的檢查）——
+   **要排在 seed 上架之後**，否則本批的卡還不在 `seed_cards.json` 裡、算不進曲風樹。
+   `data/rawgenres-cache.json` 過期就先跑一次 `--pull`。**這一步雲端做不到**
+   （快取不在 git 裡，重建它要碰 KV），已寫進 `REMOTE_RUNBOOK.md` 的本機接手清單第 6 步。
+

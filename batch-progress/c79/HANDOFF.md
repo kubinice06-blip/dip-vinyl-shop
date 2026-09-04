@@ -104,3 +104,8 @@ fix-spacing（兩檔各一次）                        待補 0
 4. 上架前**逐張核對 `previews.json` 的 `originalTrackCount` 與 `note`**——
    本線探測層自 c-81 起已不填該欄（第 141 條附二），c-79 的殘值由研究層覆核過，
    但仍以 note 裡寫的限定語為準。
+5. **`node scripts/build-genre-tree.mjs --write`**（2026-09-04 店主新增的檢查）——
+   **要排在 seed 上架之後**，否則本批的卡還不在 `seed_cards.json` 裡、算不進曲風樹。
+   `data/rawgenres-cache.json` 過期就先跑一次 `--pull`。**這一步雲端做不到**
+   （快取不在 git 裡，重建它要碰 KV），已寫進 `REMOTE_RUNBOOK.md` 的本機接手清單第 6 步。
+

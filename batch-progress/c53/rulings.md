@@ -3294,3 +3294,37 @@ c-80 b 組寫作層回報一處 `researchNotes` 互相打架：
    並把該禁令直接寫進分派句裡。**只在下游擋是不夠的**——同一句分派會被下一批當範本抄走。
 
 **通則**：**分派是路標，不是內容。** 路標上多寫的每一個字，都會被當成已經查證過的事實運走。
+
+---
+
+## 147.（管線）`build-genre-tree.mjs --write` 是**本機**步驟——雲端跑不了，也不該跑
+
+店主 2026-09-04 指出收尾多了一道檢查：`node scripts/build-genre-tree.mjs --write`
+（類型挑片 v2 的曲風樹，重建 `genre-tree.json` 與 `card-subgenres.json`）。
+主線的分支落後 `main` 十一筆、沒有這支腳本，先無衝突合併 `origin/main` 取得它，**然後實測**：
+
+```
+$ node scripts/build-genre-tree.mjs
+找不到 /home/user/dip-vinyl-shop/data/rawgenres-cache.json，請先跑一次 --pull
+```
+
+**兩層原因讓它注定是本機的：**
+
+1. **它的輸入不在 git 裡。** `data/rawgenres-cache.json` 沒有被版控，
+   重建它唯一的方法是 `--pull`——那是從 Cloudflare KV 拉 `mapgenre3` 的 `rawGenres`，
+   需要 `CLOUDFLARE_API_TOKEN`。**`REMOTE_RUNBOOK.md` 明文寫雲端不碰 KV。**
+2. **它的另一個輸入是 `seed_cards.json`，而雲端的批次根本還沒進去。**
+   曲風樹是從已上架的卡算出來的；本批的卡要等本機跑完第 6 步的 seed 上架才存在。
+   **就算快取拿得到，在雲端跑出來的樹也只是舊池子的樹，跟這批一點關係都沒有。**
+
+**裁定**：
+1. **這道檢查寫進 `REMOTE_RUNBOOK.md` 的本機接手清單第 6 步**（已做），
+   位置在 `build-seed-genres` **之後**——**必須排在 seed 上架之後**，否則新卡算不進樹。
+   分工表也補了一列，理由欄寫明是哪兩層依賴擋住雲端。
+2. **每批的 `HANDOFF.md`「本機還要做的事」都要列這一條**（c-79、c-80 已補；c-81 起照寫）。
+3. **雲端不要為了「跑過檢查」而去湊輸入**——不要 `--pull`、不要手造 cache、
+   更不要在雲端 `--write` 出一份基於舊 `seed_cards.json` 的 `genre-tree.json` 推上去。
+   **那會是一份看起來通過、實際上漏掉整批新卡的產物。**
+
+**通則**：**一道檢查跑不起來時，先問它的輸入是什麼、那些輸入什麼時候才會齊。**
+「在錯的時間跑出一個綠燈」比「紅燈」危險得多——紅燈會被追，綠燈不會。
