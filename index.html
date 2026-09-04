@@ -900,14 +900,14 @@
   </div>
 </div>
 
-<!-- 類型挑片 modal -->
-<div class="quiz-modal" id="genreModal">
+<!-- 猜你喜歡 modal（舊「類型挑片」機制：選類型 → 三位藝人 → 抽一張）-->
+<div class="quiz-modal" id="guessModal">
   <div class="quiz-inner">
     <div class="game-topbar">
       <button class="game-back-btn" data-game-back>↩ 找一張來聽</button>
       <span class="game-top-slot"></span>
     </div>
-    <div id="genreContent"></div>
+    <div id="guessContent"></div>
   </div>
 </div>
 
@@ -1405,11 +1405,11 @@
       : rawTier;
     const labelMap = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
     const collModal = document.getElementById('collectionModal');
-    const genreModal = document.getElementById('genreModal');
+    const guessModal = document.getElementById('guessModal');
     if (collModal) collModal.classList.remove('open');
-    if (genreModal) genreModal.classList.add('open');
-    currentView = 'genre';
-    const gc = document.getElementById('genreContent');
+    if (guessModal) guessModal.classList.add('open');
+    currentView = 'guess';
+    const gc = document.getElementById('guessContent');
     gpStopPreview();
     gc.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">抽「${labelMap[tier]}」卡中…</div></div>`;
 
@@ -1438,11 +1438,11 @@
         ...(tier === 'pearl' ? { pearl: true } : {}),
         ...(tier === 'heresy' ? { heresy: true } : {}),
       });
-      const collectBtn = document.querySelector('#genreContent [data-collect]');
+      const collectBtn = document.querySelector('#guessContent [data-collect]');
       if (collectBtn) { const note = document.createElement('div'); note.className = 'quiz-result-label'; note.style.marginTop = '6px'; note.textContent = '✓ 已自動收進唱片櫃'; collectBtn.replaceWith(note); }
       const reason = await fillGpDesc({ artist, album }, assets.ov);
       if (lastGpResult) lastGpResult.reason = reason;
-      saveToHistory({ type: 'genre', artist, album, reason, coverUrl: assets.coverUrl }).catch(() => {});
+      saveToHistory({ type: 'guess', artist, album, reason, coverUrl: assets.coverUrl }).catch(() => {});
       return true;
     } catch (e) {
       gc.innerHTML = `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button class="welcome-hall-btn" data-back-to-collection>回我的唱片櫃</button></div>`;
@@ -2713,7 +2713,7 @@
     if (tab !== currentView) gpStopPreview({ fade: true });
     currentView = tab;
     // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
-    const gameModal = tab === 'quiz' ? 'quizModal' : (tab === 'genre' || tab === 'random') ? 'genreModal' : null;
+    const gameModal = tab === 'quiz' ? 'quizModal' : (tab === 'guess' || tab === 'random') ? 'guessModal' : null;
     document.body.classList.toggle('game-page', !!gameModal);
     moveGameChrome(gameModal);
     applyTawkVisibility();
@@ -2721,7 +2721,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'genreModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'guessModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -2753,14 +2753,14 @@
       (quizQs.length ? Promise.resolve() : loadQuizData()).then(() => startQuiz());
       return;
     }
-    if (tab === 'genre') {
-      document.getElementById('genreModal').classList.add('open');
-      (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startGenrePick());
+    if (tab === 'guess') {
+      document.getElementById('guessModal').classList.add('open');
+      (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startGuess());
       return;
     }
     if (tab === 'random') {
-      // 直接來一首：沿用類型挑片結果 UI，但不選類型、不選歌手
-      document.getElementById('genreModal').classList.add('open');
+      // 直接來一張：沿用猜你喜歡的結果 UI，但不選類型、不選歌手
+      document.getElementById('guessModal').classList.add('open');
       (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startRandomPick());
       return;
     }
@@ -4377,7 +4377,7 @@ ${seenList}
                   : `<div class="history-thumb-placeholder">♪</div>`}
                 <div class="history-item-info">
                   <div class="history-item-meta">
-                    <span class="history-item-badge">${r.type === 'genre' ? 'Genre' : 'Quiz'}</span>
+                    <span class="history-item-badge">${r.type === 'guess' ? '猜你喜歡' : r.type === 'genre' ? 'Genre' : 'Quiz'}</span>
                     <span class="history-item-date">${r.date}</span>
                   </div>
                   <div class="history-item-artist">${r.artist || ''}</div>
@@ -4626,7 +4626,7 @@ ${seenList}
   // 把使用者點的三位藝人對回 seed 卡池：名字正規化成 token 集合做子集比對，
   // 吃得下「Beethoven／Ludwig van Beethoven」「Rakim／Eric B. & Rakim」這類異名。
   // 全程本地計算，抽卡結果從此真的跟著選擇走。
-  let gpPoolCache = null;   // startGenrePick 預載，供選項小註記使用
+  let gpPoolCache = null;   // startGuess 預載，供選項小註記使用
   let gpMatchInfo = null;   // 本次抽卡的「為什麼是這張」素材（pickSeedCard 填）
   const GP_TAG_ZH = { rock: '搖滾', blues: '藍調', folk: '民謠', pop: '流行', classical: '古典', jazz: '爵士', soul: '靈魂放克', electronic: '電子', world: '世界音樂', hiphop: '嘻哈' };
   function _gpTokens(name) {
@@ -4710,7 +4710,7 @@ ${seenList}
   }
   // 卡池載到手後把還空著的小註記補上（round 可能比卡池先渲染）
   function gpFillOptMetas() {
-    document.querySelectorAll('#genreContent [data-gp-meta]').forEach(el => {
+    document.querySelectorAll('#guessContent [data-gp-meta]').forEach(el => {
       if (!el.textContent) el.textContent = gpArtistMetaLine(el.dataset.gpMeta);
     });
   }
@@ -4857,12 +4857,12 @@ ${seenList}
     }
   });
 
-  document.getElementById('genreContent').addEventListener('click', e => {
+  document.getElementById('guessContent').addEventListener('click', e => {
     if (e.target.closest('[data-gp-action="retry"]')) {
       // 離開這張結果就把試聽收掉，別讓上一張的音樂繼續播到選類型的畫面。
       gpStopPreview({ fade: true });
       sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
-      if (gpIsRandom) startRandomPick(); else startGenrePick();
+      if (gpIsRandom) startRandomPick(); else startGuess();
     }
     if (e.target.closest('[data-gp-action="view-item"]')) {
       const id = e.target.closest('[data-gp-action="view-item"]').dataset.id;
@@ -4880,7 +4880,7 @@ ${seenList}
     }
   });
 
-  function startGenrePick() {
+  function startGuess() {
     gpIsRandom = false;
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
@@ -4902,7 +4902,7 @@ ${seenList}
   }
 
   function renderGpGenreSelect() {
-    document.getElementById('genreContent').innerHTML = `
+    document.getElementById('guessContent').innerHTML = `
       <div style="padding:28px 20px 0;">
         <div class="quiz-question">你想探索哪個領域？</div>
         <div style="font-size:11px;color:var(--gray);line-height:1.7;margin-bottom:20px;">選一種音樂類型，透過三位藝人的品味，找到屬於你的專輯。</div>
@@ -4931,7 +4931,7 @@ ${seenList}
       });
     });
     document.getElementById('gpShareBtn')?.addEventListener('click', () => {
-      shareUrl('https://dipvinyl.tw/genre', '類型挑片 — dip vinyl shop');
+      shareUrl('https://dipvinyl.tw/guess', '猜你喜歡 — dip vinyl shop');
     });
   }
 
@@ -4952,7 +4952,7 @@ ${seenList}
     const main = shuffle(available.filter(a => list.indexOf(a) >= list.length / 2)).slice(0, 2);
     const rest = shuffle(available.filter(a => !deep.includes(a) && !main.includes(a)));
     gpRoundOptions = shuffle([...deep, ...main, ...rest].slice(0, 4));
-    document.getElementById('genreContent').innerHTML = `
+    document.getElementById('guessContent').innerHTML = `
       <div class="quiz-progress">
         <div class="quiz-progress-track"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
         <div class="quiz-progress-label">${gpRound + 1} / ${total}</div>
@@ -4997,7 +4997,7 @@ ${seenList}
       }
     });
     document.getElementById('gpShareBtn')?.addEventListener('click', () => {
-      shareUrl('https://dipvinyl.tw/genre', '類型挑片 — dip vinyl shop');
+      shareUrl('https://dipvinyl.tw/guess', '猜你喜歡 — dip vinyl shop');
     });
   }
 
@@ -5023,7 +5023,7 @@ ${seenList}
   // 專輯簡介一律用現成資料，不再現場請 AI 寫：
   // 後台校正 > 殿堂神作人工簡介 > 店家/IG 自寫介紹 > /album-desc（KV 預生成、與卡片詳情同一套）
   async function fillGpDesc(card, ov, presetDesc = '') {
-    const el = document.querySelector('#genreContent .quiz-result-reason');
+    const el = document.querySelector('#guessContent .quiz-result-reason');
     let desc = (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
@@ -5039,7 +5039,7 @@ ${seenList}
   let gpPreviewStarted = false;
   let gpPreviewManual = false; // 手動點擊才在失敗時 toast；自動播放被瀏覽器擋就安靜停在 ▶
   let gpPlayerState = { status: 'stopped' };
-  // 這一套控制器同時服務類型挑片／直接來一張（#genreContent）與心情選歌（#quizContent）。
+  // 這一套控制器同時服務類型挑片／直接來一張（#guessContent）與心情選歌（#quizContent）。
   // 兩邊的結果頁不會同時出現，所以按鈕用全域選取、比對對象記在 activePreviewResult。
   let activePreviewResult = null;
   function _gpSetPreviewIcon(playing) {
@@ -5143,7 +5143,7 @@ ${seenList}
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
   document.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.homehub-card, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
+    if (e.target.closest('.homehub-card, #guessContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
   }, true);
 
   function gpPlayPreview(manual = true, result = null) {
@@ -5218,14 +5218,14 @@ ${seenList}
     gpMatchInfo = null;
     // 類型挑片與直接來一張都走抽卡動畫（取代等待 spinner；抽卡／封面解析在背景並行跑）
     const gpAnim = await DipDrawAnim.start({
-      host: document.getElementById('genreContent'), profile: 'front',
+      host: document.getElementById('guessContent'), profile: 'front',
       fullscreen: true,     // 動畫期間蓋滿視窗（含站頂選單），揭曉接軌時才還原
-      alive: () => document.getElementById('genreModal')?.classList.contains('open'),
+      alive: () => document.getElementById('guessModal')?.classList.contains('open'),
     }).catch(() => null);
-    if (!gpAnim) document.getElementById('genreContent').innerHTML =
+    if (!gpAnim) document.getElementById('guessContent').innerHTML =
       `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">挖掘中…</div></div>`;
 
-    // 卡池先到手（startGenrePick 已預熱、靜態檔有快取）：口味比對與店內/reel 類型過濾都要用。
+    // 卡池先到手（startGuess 已預熱、靜態檔有快取）：口味比對與店內/reel 類型過濾都要用。
     // 這裡吞錯：拿不到就讓店內/reel 分支不過濾照舊跑，正式抽卡在 try 裡會再取一次並正確報錯。
     let pool = null;
     try { pool = await loadCardPool(); } catch (e) {}
@@ -5250,13 +5250,13 @@ ${seenList}
         await gpAnim.done;
       }
       await showGpResult({ type: 'stock', id: pick.id, artist: pick.artist, album: pick.name || '', reason: '', _matchNote: gpStockNote, _streaming: true });
-      daHandoffTo('#genreContent');
+      daHandoffTo('#guessContent');
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.name || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
-      saveToHistory({ type: 'genre', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastGpResult._coverUrl })
-        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      saveToHistory({ type: 'guess', artist: pick.artist, album: pick.name || '', reason, coverUrl: lastGpResult._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('guessContent')));
       return;
     }
 
@@ -5269,8 +5269,8 @@ ${seenList}
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
-      saveToHistory({ type: 'genre', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
-        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      saveToHistory({ type: 'guess', artist: pick.artist, album: pick.title || '', reason, coverUrl: lastGpResult._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('guessContent')));
       return;
     }
 
@@ -5318,18 +5318,18 @@ ${seenList}
         _streaming: true,
         _hall: isApex && classicMode, _pearl: isApex && obscureMode, _heresy: isApex && heresyMode,
       });
-      daHandoffTo('#genreContent');
+      daHandoffTo('#guessContent');
       const reason = await fillGpDesc(pick, assets.ov);
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
-      saveToHistory({ type: 'genre', artist: pick.artist, album: pick.album, reason, coverUrl: assets.coverUrl })
-        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      saveToHistory({ type: 'guess', artist: pick.artist, album: pick.album, reason, coverUrl: assets.coverUrl })
+        .then(() => renderHistorySection(document.getElementById('guessContent')));
       return;
     } catch (e) {
       if (gpAnim) gpAnim.state.fail = true;   // 錯誤頁蓋掉舞台後，閃卡迴圈會因 isConnected=false 靜默收工
       DipDrawAnim.cancel();
-      document.getElementById('genreContent').innerHTML =
+      document.getElementById('guessContent').innerHTML =
         `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}<br><br><button data-gp-action="retry" style="padding:8px 20px;cursor:pointer;font-family:var(--mono);">再試一次</button></div>`;
       return;
     }
@@ -5400,7 +5400,7 @@ ${seenList}
     _saveGpSeen();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
-    document.getElementById('genreContent').innerHTML = `
+    document.getElementById('guessContent').innerHTML = `
       <div class="quiz-result">
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
@@ -5421,20 +5421,20 @@ ${seenList}
       </div>
     `;
     if (!result._streaming) {
-      saveToHistory({ type: 'genre', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
-        .then(() => renderHistorySection(document.getElementById('genreContent')));
+      saveToHistory({ type: 'guess', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+        .then(() => renderHistorySection(document.getElementById('guessContent')));
     }
     // seed 卡自帶三軸直接畫，省一次請求；apex／stock／reel 沿用 /album-rating（KV 快取）
     const special = result._hall ? 'hall' : (result._pearl ? 'pearl' : (result._heresy ? 'heresy' : false));
     if (result.ratings) {
-      const slot = document.querySelector('#genreContent .album-ratings-slot');
+      const slot = document.querySelector('#guessContent .album-ratings-slot');
       if (slot) slot.innerHTML = albumRatingsHtml(result.ratings, special);
-      paintResultTier('genreContent', result, null);
+      paintResultTier('guessContent', result, null);
     } else {
-      renderAlbumRatings(result.artist, result.album, document.getElementById('genreContent'), special)
-        .then(r => { if (lastGpResult === result) paintResultTier('genreContent', result, r); });
+      renderAlbumRatings(result.artist, result.album, document.getElementById('guessContent'), special)
+        .then(r => { if (lastGpResult === result) paintResultTier('guessContent', result, r); });
     }
-    resolveBandcampBtn(result.artist, result.album, document.getElementById('genreContent'));
+    resolveBandcampBtn(result.artist, result.album, document.getElementById('guessContent'));
     // 抽到即自動播放試聽（跟對戰一樣）。沒開自動播放就安靜停下，圖示停在 ▶，
     // 玩家可以按試聽鈕聽這一張，或按開關讓之後每張都自動播。
     if (!result.type && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
@@ -5445,7 +5445,7 @@ ${seenList}
     const { artist, album, reason } = lastGpResult;
     // 分享網址依模式分流：兩條線的 OG 縮圖不同（/genre → og-genre-v3、/random → og-random），
     // 各自是 genre/index.html、random/index.html 這種只帶 OG meta 再轉回 /#hash 的樁頁
-    const gpShareUrl = gpIsRandom ? 'https://dipvinyl.tw/random' : 'https://dipvinyl.tw/genre';
+    const gpShareUrl = gpIsRandom ? 'https://dipvinyl.tw/random' : 'https://dipvinyl.tw/guess';
     const gpShareLabel = gpIsRandom ? '直接來一張' : '類型挑片';
     const btn = document.querySelector('[data-gp-action="share"]');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
@@ -5744,9 +5744,11 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'genre', 'random', 'history', 'collection', 'album-search']
-      : ['home', 'used', 'new', 'quiz', 'genre', 'random', 'history', 'archive', 'collection', 'album-search'];
-    setActiveTab(valid.includes(target) ? target : 'home');
+      ? ['home', 'quiz', 'guess', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'used', 'new', 'quiz', 'guess', 'random', 'history', 'archive', 'collection', 'album-search'];
+    // P1 過渡：舊網址 #genre 先落在猜你喜歡（P2 接上類型挑片 v2 後改掉）
+    const routed = target === 'genre' ? 'guess' : target;
+    setActiveTab(valid.includes(routed) ? routed : 'home');
   })();
 
   // 註冊 service worker（離線後備 + 靜態快取；線上內容仍即時更新）
