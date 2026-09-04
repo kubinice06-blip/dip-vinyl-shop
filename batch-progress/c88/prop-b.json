@@ -1,0 +1,232 @@
+[
+ {
+  "artist": "Эдуард Артемьев",
+  "album": "Solaris / The Mirror / Stalker",
+  "year": 1990,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Wave / Toshiba EMI",
+  "why": "塔可夫斯基三部曲（《Солярис》1972、《Зеркало》1975、《Сталкер》1979）的配樂首次合成一張唱片發行，1990-09-25 由日本 Wave 廠出版，其後 1990 年德國版、1999 與 2002 年俄羅斯版皆為 Official（MB release-group d0cc69d5 轄下 5 個 release，4 個 Official、1 個 Pseudo-Release）。池中實掃結果：Артемьев 名下已有《Солярис》(1978)、《Метаморфозы》(1980)、《Картины-настроения》(1984)、《Ода доброму вестнику》(1984) 四張，**《Сталкер》與《Зеркало》兩片的音樂在池中完全沒有**——這張是唯一一個把兩者一次補齊、且轄下有 Official release 的 release-group。店主 2026-09-04 點名要《索拉利星》這一路的經典老電影。",
+  "risk": "**年份三段要分清**：三部電影分別是 1972／1975／1979 上映，本卡的 1990 是這張合輯唱片首次問世的年份，不是任何一部電影的上映年，也不是錄音年。**跨文字系統撞卡**：池中既有 `Эдуард Артемьев`《Солярис》(1978，西里爾) 與 `Cliff Martinez`《Solaris》(2002，Soderbergh 重拍版配樂) 兩張，三者是三張不同的碟；本卡盤名為拉丁「Solaris / The Mirror / Stalker」，俄文寫法為《Солярис / Зеркало / Сталкер》，羅馬轉寫為 Solyaris / Zerkalo / Stalker，去重時三種寫法都要比。掛名採 MB 實體的西里爾寫法 `Эдуард Артемьев`（與池中既有四張一致，避免製造分裂鍵，第 49／120 條），但**本 release-group 的 artist-credit 是拉丁的「Edward Artemiev」**，`queryAlias` 填 Edward Artemiev 供 Apple／CAA 使用。**刻意不釘** 4d76e85b《Andrey Tarkovsky, Volume 4: Zerkalo / Stalker》(1995)——它轄下唯一的 release 標 Bootleg，依第 43／57 條不採。封面：CAA 以 rgMbid 為鍵，日本 Wave 盤有機會；試聽在西里爾掛名下命中率低，`queryAlias` 是唯一指望。",
+  "mbNote": "釘住 release-group **d0cc69d5-a0a7-495f-a520-b071eafc27ca**《Solaris / The Mirror / Stalker》，artist-credit「Edward Artemiev」（藝人實體 0d512eb7-93b7-4cda-8e97-dcd9a80ebfad `Эдуард Артемьев`，名下 33 個 release-group），first-release-date 1990-09-25，primary-type **Album**，secondary-types [Compilation, Soundtrack]（依 §5.6，primary=Album 者照一般 Album 寫法）。轄下 5 個 release：1990-09-25 JP Official、1990 DE Official、1999 RU Official、2002 RU Official、1 筆 Pseudo-Release。已回問 release-group 端點確認實體類型與標題。對照組：**4d76e85b-7f1e-3e63-80dd-bb89ee11ba29《Andrey Tarkovsky, Volume 4: Zerkalo / Stalker》(1995, Album[Soundtrack])，唯一 release 標 Bootleg，刻意不釘**；16e6a4c2-ecbb-47b6-b0bb-c0ab4f2b8c58《Solaris: Original Soundtrack from Mosfilm \"Solaris\"》(1978-05) 是池中既有那張，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Edward Artemiev",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "早坂文雄",
+  "album": "七人の侍 / 羅生門",
+  "year": 1978,
+  "genres": [
+   "classical"
+  ],
+  "label": "Victor",
+  "why": "黑澤明《七人の侍》(1954) 與《羅生門》(1950) 的配樂，1978 年由 Victor 在日本首次以 LP 合成一張發行，1991-07-03 再發（MB release-group c5461038 轄下 3 個 release，1978 JP 與 1991 JP 兩筆皆 Official）。池中實掃：黑澤明線只有 `武満徹`《Ran》(1985) 一張，早坂文雄名下 0 張（漢字「早坂文雄」與羅馬拼音「Hayasaka」兩種寫法都查過，只命中無關的 `早坂紗知 & Stir Up`《Free Fight》1988）——**日本影史最常被引用的兩部片，池中一直是空的**。",
+  "risk": "**年份三段要分清**：兩部電影 1950／1954 上映，錄音同年，但這張唱片 1978 才首次問世；本卡的 year 記唱片首次問世年 1978，行文不得把它寫成電影年或錄音年。**跨文字系統撞卡**：掛名漢字「早坂文雄」、羅馬拼音「Fumio Hayasaka」；盤名漢字「七人の侍 / 羅生門」、羅馬轉寫「Shichinin no samurai / Rashomon」、英文流通名「Seven Samurai / Rashomon」——三種寫法實掃池中皆 0 筆（另有 `Ka`《Honor Killed the Samurai》2016，是另一張碟）。掛名採 MB 實體的日文寫法（第 6／70 條），`queryAlias` 填 Fumio Hayasaka。**刻意不釘** 945f4af7《七人の侍》(2001-10-01, Album[Soundtrack]) 與 f820f7de《Rashomon / Seven Samurai (Symphonic Suites)》(2017，後世重錄的管弦組曲，非原盤錄音)。封面：1978 年 Victor LP，CAA 有無不確定；試聽：日文盤名在 `jp` storefront 較可能命中（第 137 條），要帶 `country=jp` 查。",
+  "mbNote": "釘住 release-group **c5461038-3477-4f07-8771-25216cec119a**《七人の侍 / 羅生門》，artist-credit「早坂文雄」（藝人實體 a3abc2c9-b36c-43fb-bc3b-abb05dfcc9ec），first-release-date 1978，primary-type **Album**，secondary-types [Compilation, Soundtrack]（§5.6：primary=Album 照一般 Album 寫法）。轄下 3 個 release：1978 JP Official、1991-07-03 JP Official、1 筆 Pseudo-Release。已回問 release-group 端點確認實體類型與標題。對照組：**945f4af7-45f9-3204-86c8-265c84633a89《七人の侍》(2001-10-01, Album[Soundtrack]，只有《七人の侍》一片) 刻意不釘**；**f820f7de-90c0-4cc8-aba8-7c71f612c498《Rashomon / Seven Samurai (Symphonic Suites)》(2017-04-28, Fumio Hayasaka & National Symphony Orchestra，後世重錄組曲) 刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fumio Hayasaka",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "武満徹",
+  "album": "Film Music by Toru Takemitsu - Volume 1",
+  "year": 1990,
+  "genres": [
+   "classical"
+  ],
+  "label": "JVC",
+  "why": "Victor 1980 年推出的《武満徹 映画音楽》LP 系列（KVX-1062〜1070，依導演分冊：第 1 集小林正樹篇、第 3 集大島渚篇、第 9 集勅使河原宏篇，Discogs release 2307271／4610516／2576985），1990 年起由 JVC 轉成 CD 重新發行，本卡釘的是 CD 系列第一集（JVC VICG-5124，Discogs release 5202127）。池中實掃：武満徹名下只有《Ran》(1985) 一張，羅馬拼音「Takemitsu」另有 `小澤征爾 Seiji Ozawa`《Takemitsu: November Steps》(1968) 與 `Peter Serkin`《Takemitsu: Piano Works》(1996) 兩張演奏者掛名的碟——**武満徹自己掛名的電影音樂，池中只有一張。**",
+  "risk": "**這張是「作曲家自選的電影音樂輯」，不是單一部片的原聲帶**，行文要講清楚是哪一種（本批三個陷阱之一）。**店主點名的《砂の女》(1964, 勅使河原宏) 不在這張裡**：含《砂の女》的是同系列 CD 第 4 集《武満徹映画音楽 [Film Music By Toru Takemitsu] 4: 勅使河原宏 監督作品篇》(JVC VICG-5127, 1991, Discogs release 1141673)，**MB 上查無該冊的 release-group**，所以本批釘不住；《砂の女》單獨的 release-group 在 MB 上也查無（`release:\"砂の女\" AND artist:\"武満徹\"` count=0、`release:\"Woman in the Dunes\"` 只回 Steven Severin 的同名碟、release 層級搜尋亦無），已列入未收清單並註明可進 §1 補遺批。**年份**：LP 系列 1980、本卡的 CD 第一集 1990，兩者不同版，year 記 1990。**跨文字系統**：掛名漢字「武満徹」、羅馬拼音「Toru Takemitsu」／「Tōru Takemitsu」（MB 上三種寫法都出現過），盤名為拉丁；`queryAlias` 填 Toru Takemitsu。封面：JVC CD，CAA 命中不確定；試聽要帶 `country=jp`。",
+  "mbNote": "釘住 release-group **dab1a527-a024-465a-a5b7-83f90d86dd08**《Film Music By Toru Takemitsu - Volume 1》，artist-credit「武満徹」（藝人實體 4e871dff-df89-45f5-857f-28067cdc9d5e，名下 133 個 release-group），first-release-date 1990，primary-type **Album**，secondary-types 空。轄下 1 個 release：1990 JP Official。已回問 release-group 端點確認實體類型與標題。對照組：**a6b60602-b3fa-3a33-a62a-3baa95047d7a《The Film Music of Toru Takemitsu》(1997-07-01 US, Album[Compilation]) 與 72e5f7f4-ce7f-4d10-8629-3312e51d07d9《Film Music of Toru Takemitsu》(2006-06-20, Album[Compilation,Soundtrack]) 皆為別的選輯，刻意不釘**；**8de56b70-e51b-4649-bc1e-63a7deb1a22f《Dodes' Kaden (Original Motion Picture Soundtrack)》(2002-11-14) 唯一 release 標 Pseudo-Release，刻意不釘**；89654a36-3925-3d35-a459-7397a3caa667《Ran》是池中既有那張，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Toru Takemitsu",
+  "reissuedBy": "JVC",
+  "g": "b"
+ },
+ {
+  "artist": "Georges Delerue",
+  "album": "Le Mépris",
+  "year": 1963,
+  "genres": [
+   "classical"
+  ],
+  "label": "Disques Vogue",
+  "why": "高達《Le Mépris》(1963) 的配樂。原始發行是 1963 年 Disques Vogue 的 45 轉 EP（MB release-group a7284c86，primary-type EP），完整的專輯形態要到 1991-04-22 才由 Disques Vogue 在法國出版 CD，2002-09-16 再發，兩筆皆 Official。池中實掃：Delerue 名下只有《Jules et Jim》(2011) 一張，**高達線在池中是零張**（Michel Legrand 名下 5 張皆非高達片、Antoine Duhamel 0 張）。",
+  "risk": "**年份與 rgMbid 脫鉤，這是刻意的**（第 91／95 條：rgMbid 是身分鍵不是年份來源）：本卡 year 記 **1963**，是這份錄音首次問世的年份（Disques Vogue 的 45 轉 EP），而釘住的 release-group first-release-date 是 1991（同一份錄音第一次以專輯形態出版）。電影亦為 1963 年，兩者恰好同年，但理由不同——year 記的是唱片不是電影。**釘的是哪一版**：1991 年的 CD 是把 1963 年錄音補齊成專輯，MB 因此掛了 Compilation 的 secondary-type；本卡不是後世重錄，也不是擴充版（第 140／141 條）。**撞卡**：盤名《Le Mépris》的英文流通名為《Contempt》，池中兩種寫法皆 0 筆；`Georges Delerue`《Jules et Jim》(2011) 是同一位作曲家的另一張碟，不相撞。封面：Disques Vogue CD，CAA 有機會；試聽以法文盤名在 `fr` storefront 較可能命中。",
+  "mbNote": "釘住 release-group **6691c1e2-6f4b-3c80-80de-a00d0f2f5b8f**《Le Mépris》，artist-credit「Georges Delerue」（藝人實體 3e46f4da-eee2-455f-bb72-9ca83887e9e4），first-release-date 1991-04-22，primary-type **Album**，secondary-types [Compilation, Soundtrack]（§5.6：primary=Album 照一般 Album 寫法）。轄下 2 個 release：1991-04-22 FR Official、2002-09-16 FR Official。已回問 release-group 端點確認實體類型與標題。對照組：**a7284c86-729f-4851-bb2a-5201157bebf5《Le mépris》(1963) 是 primary-type EP，依 §1 只收 Album，刻意不釘**（第 126 條的形狀：同名 EP／Album 雙胞胎，下游腳本不得以年份接近為由改釘 EP）；**dd8b705c-34b0-4003-9318-057dc7d5679d《Le Mépris / Pierrot le Fou》(2018, Delerue & Duhamel 二合一) 刻意不釘**；c60d5734-adf4-4b46-aaeb-0fbd57b84b25《Jules et Jim, Le Farceur, Hiroshima mon amour…》(2021) 與池中既有卡重疊，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Antoine Duhamel",
+  "album": "Pierrot le Fou / Week-End",
+  "year": 2001,
+  "genres": [
+   "classical"
+  ],
+  "label": "Universal Music France",
+  "why": "高達《Pierrot le fou》(1965) 與《Week-end》(1967) 的配樂合成一張，2001 年在法國首次以專輯形態發行（MB release-group b6897406，轄下 1 個 release，2001 FR Official）。原始發行只有 1965 年那張 45 轉 EP《Bande originale du film \"Pierrot le fou\"》（Anna Karina & Antoine Duhamel，MB a2525374/83525374，primary-type EP）。池中實掃：Antoine Duhamel 名下 0 張、高達線 0 張；本批另收 `Georges Delerue`《Le Mépris》，兩張分屬不同作曲家、不同影片，不相撞。",
+  "risk": "**年份**：兩部電影 1965／1967 上映，本卡 year 記 2001，是這張專輯首次問世的年份；**1965 年的 EP 是另一個 release-group、另一種型別**，不可混用。**這張是兩片合輯**（第 140 條的形狀）：曲目來自兩部不同的電影，去重與封面比對時不能當成單片原聲帶。**撞卡**：盤名含「Week-End」，池中以子字串比對會撈到 `Vampire Weekend` 系列、`Bloc Party`《A Weekend in the City》等十餘張，**逐筆人眼核對皆為不相干的碟**；完整盤名《Pierrot le Fou / Week-End》池中 0 筆。掛名 Antoine Duhamel 在池中 0 筆。封面：Universal France CD，CAA 有機會；試聽以法文盤名在 `fr` storefront 較可能命中。",
+  "mbNote": "釘住 release-group **b6897406-7d70-3d49-8cab-05f56bfd27d9**《Pierrot le Fou / Week-End》，artist-credit「Antoine Duhamel」（藝人實體 b21a0efc-9ae8-4af4-b836-824e34a5ff23），first-release-date 2001，primary-type **Album**，secondary-types [Soundtrack]。轄下 1 個 release：2001 FR Official。已回問 release-group 端點確認實體類型與標題。對照組：**83525374-1d5e-496d-acd6-23fee58c5502《Bande originale du film \"Pierrot le fou\"》(1965) 是 primary-type EP，刻意不釘**；**c0d7f4b5-3e03-4270-a50a-12baff360517《Pierrot le fou (bande originale du film)》(2006-08-01, Antoine Duhamel & Anna Karina) 是另一個 release-group，掛名不同，刻意不釘**；dd8b705c《Le Mépris / Pierrot le Fou》(2018) 為 Delerue 與 Duhamel 的二合一，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Zbigniew Preisner",
+  "album": "La Double Vie de Véronique",
+  "year": 1991,
+  "genres": [
+   "classical"
+  ],
+  "label": "Sideral / Virgin",
+  "why": "奇士勞斯基《La Double Vie de Véronique》(1991) 的配樂，1991 年在法國與泛歐同步發行（MB release-group 71818081 轄下 8 個 release 全為 Official：1991 XE、1991 FR ×3、1998 XE、2011 PL、2015 FR、1 筆 XW）。池中實掃：Preisner 名下只有《Trois couleurs : Bleu》(1993) 一張，**奇士勞斯基最常被引用的另外兩部（《Véronique》與《Trois couleurs : Rouge》）都不在池中**。本批把這條線補成三張。",
+  "risk": "電影與唱片同為 1991 年，year 無分歧，但仍要注意本卡記的是唱片。**掛名與盤名的重音**：MB 實體 `Zbigniew Preisner`；盤名《La Double Vie de Véronique》含重音字母，英文流通名為《The Double Life of Veronique》，波蘭文為《Podwójne życie Weroniki》——三種寫法實掃池中皆 0 筆（去重音比對只撈到 `Véronique Sanson`《Amoureuse》1972，是無關的碟）。**與池中既有的 `Zbigniew Preisner`《Trois couleurs : Bleu》(1993) 不相撞**，是同一作曲家的不同碟。虛構作曲家 Van den Budenmayer 的曲目常被誤標為古典曲目，行文不得把它寫成真實作曲家。封面：CAA 以 rgMbid 為鍵，8 個 release 命中機會高；試聽以法文盤名在 `fr` storefront 較可能命中。",
+  "mbNote": "釘住 release-group **71818081-4518-3606-bca7-0ae809e85e37**《La Double Vie de Véronique》，artist-credit「Zbigniew Preisner」（藝人實體 d229ee11-fc4e-4a1c-8e0a-1e8f84950532），first-release-date 1991，primary-type **Album**，secondary-types [Soundtrack]。轄下 8 個 release 全為 Official：1991 XE、1991 FR ×3、1998 XE、2011 PL、2015 FR、1 筆 XW。已回問 release-group 端點確認實體類型與標題。對照組：bcc66c2f-406a-468c-967b-f825b9512425《Trois Couleurs: Bleu, Blanc, Rouge》(2015 三合一套裝) 刻意不釘；53ae0c76-3483-371c-8255-ee7df1aa20c3《Trois couleurs : Bleu》(1993) 為池中既有那張，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Zbigniew Preisner",
+  "album": "Trois couleurs : Rouge",
+  "year": 1994,
+  "genres": [
+   "classical"
+  ],
+  "label": "Virgin France",
+  "why": "奇士勞斯基三色三部曲的最後一部《Trois couleurs : Rouge》(1994) 的配樂，1994 年在法國與美國發行（MB release-group 57eeb824 轄下 5 個 release 全為 Official：1994 FR ×2、1994 US、2002-11-04 FR、2003 FR）。池中實掃：三部曲只有《Bleu》(1993) 一張在池中，《Blanc》與《Rouge》皆缺；本卡補《Rouge》。",
+  "risk": "**三部曲同名系列的撞卡**：池中既有 `Zbigniew Preisner`《Trois couleurs : Bleu》(1993)，本卡《Trois couleurs : Rouge》只差最後一個字，**任何以前綴或子字串比對的去重都會把兩者判成同一張**——實際上是兩部電影、兩張唱片、兩個 release-group（Bleu 為 53ae0c76）。盤名的英文流通名為《Three Colors: Red》、波蘭文《Trzy kolory: Czerwony》，池中皆 0 筆。**刻意不收《Blanc》**（3e70b115），避免同批塞進三張標題只差一個字的碟。**不可與 2015 年的三合一套裝 bcc66c2f 混用**（第 140 條）。年份：電影與唱片同為 1994 年。封面：CAA 命中機會高；試聽在 `fr` storefront。",
+  "mbNote": "釘住 release-group **57eeb824-88d4-36ff-819c-f4beef3914dd**《Trois couleurs : Rouge》，artist-credit「Zbigniew Preisner」（藝人實體 d229ee11-fc4e-4a1c-8e0a-1e8f84950532），first-release-date 1994，primary-type **Album**，secondary-types [Soundtrack]。轄下 5 個 release 全為 Official：1994 FR ×2、1994 US、2002-11-04 FR、2003 FR。已回問 release-group 端點確認實體類型與標題。對照組：**3e70b115-a15b-3a89-bc07-70d086647d3c《Trois couleurs : Blanc》(1994) 與 53ae0c76-3483-371c-8255-ee7df1aa20c3《Trois couleurs : Bleu》(1993) 皆為同系列不同碟，刻意不釘**；**bcc66c2f-406a-468c-967b-f825b9512425《Trois Couleurs: Bleu, Blanc, Rouge》(2015 三合一) 刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Michael Nyman",
+  "album": "The Draughtsman's Contract",
+  "year": 1982,
+  "genres": [
+   "classical"
+  ],
+  "label": "Charisma",
+  "why": "Peter Greenaway《The Draughtsman's Contract》(1982) 的配樂，1982 年由 Charisma 在英國發行 LP，1989 年在英國、泛歐與美國三地再發，2004-03-22 與 2005-10 又各出一次（MB release-group 86fd1b5f 轄下 6 個 release 全為 Official）。池中實掃：Nyman 名下只有《The Piano》(1993) 一張，**Greenaway 這條線在池中是零張**——而 Nyman 與 Greenaway 的合作正是他被認識的起點。",
+  "risk": "年份無分歧：電影與 LP 同為 1982 年。**撞卡**：盤名含所有格撇號，池中以去標點比對會撈到 `Vampire Weekend`《Contra》(2010)，**人眼核對為不相干的碟**；完整盤名池中 0 筆。掛名 `Michael Nyman` 與池中既有《The Piano》同一人，是同一作曲家的不同碟，不相撞。**本卡是作曲家寫的配樂（score），不是收錄既有歌曲的合輯**，行文要寫清楚。Nyman 後來多次重錄同一批曲目（Michael Nyman Band 的音樂會版本），**本卡釘的是 1982 年 Charisma 的原盤 release-group，不是任何後世重錄或擴充版**（第 140／141 條）。封面：Charisma LP，CAA 有機會；試聽以英文盤名在 `gb` storefront 較可能命中。",
+  "mbNote": "釘住 release-group **86fd1b5f-5711-3949-b178-521c8ae8eccb**《The Draughtsman's Contract》，artist-credit「Michael Nyman」（藝人實體 c3161cf7-cab1-4409-9b1f-876561dd7716），first-release-date 1982，primary-type **Album**，secondary-types [Soundtrack]。轄下 6 個 release 全為 Official：1982 GB、1989 XE、1989 GB、1989 US、2004-03-22 GB、2005-10 GB。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Michael Nyman",
+  "album": "Drowning by Numbers",
+  "year": 1988,
+  "genres": [
+   "classical"
+  ],
+  "label": "Venture / Virgin",
+  "why": "Peter Greenaway《Drowning by Numbers》(1988) 的配樂，1988 年在英國發行三個版本、美國一個版本（MB release-group d676427f 轄下 4 個 release 全為 Official：1988 GB ×3、1988 US）。與本批另一張《The Draughtsman's Contract》一起，把池中完全空白的 Nyman／Greenaway 線補成兩張。",
+  "risk": "**同名雙胞胎**：MB 上另有 4987460a《Drowning By Numbers》(2006)，標題只差大小寫（By／by），**是另一個 release-group**，本卡刻意不釘 2006 那個（第 50／52 條：大小寫在外部服務會被正規化，但 rgMbid 是兩個）。年份：電影與唱片同為 1988 年。**撞卡**：完整盤名池中 0 筆；掛名 `Michael Nyman` 池中已有《The Piano》(1993)，本批另加《The Draughtsman's Contract》，三張是三張不同的碟。**本卡是作曲家寫的配樂（score）**，非歌曲合輯、非擴充版。封面：Venture／Virgin CD，CAA 有機會；試聽在 `gb` storefront。",
+  "mbNote": "釘住 release-group **d676427f-a288-3329-af1c-9acb993e70dc**《Drowning by Numbers》，artist-credit「Michael Nyman」（藝人實體 c3161cf7-cab1-4409-9b1f-876561dd7716），first-release-date 1988，primary-type **Album**，secondary-types [Soundtrack]。轄下 4 個 release 全為 Official：1988 GB ×3、1988 US。已回問 release-group 端點確認實體類型與標題。對照組：**4987460a-b243-4560-9f53-40505ac50e58《Drowning By Numbers》(2006, Album[Soundtrack]) 是標題大小寫不同的另一個 release-group，刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gato Barbieri",
+  "album": "Last Tango in Paris",
+  "year": 1972,
+  "genres": [
+   "jazz"
+  ],
+  "label": "United Artists",
+  "why": "貝托魯奇《Ultimo tango a Parigi》(1972) 的配樂，由阿根廷薩克斯風手 Gato Barbieri 寫成，1972 年在義大利發行原盤，2004 年台灣、2015 年西班牙、2021-02-17 全球數位再發，四筆皆 Official（MB release-group 2180f03f）。池中實掃：Gato Barbieri 名下 0 張（池中的 `Caterina Barbieri` 是另一個人），**貝托魯奇線在池中是零張**。",
+  "risk": "**撞名**：池中既有 `Caterina Barbieri`《Ecstatic Computation》(2019)，與本卡的 Gato Barbieri **是兩個不同的人**（第 139 條附記的形狀）——字串去重不會判成相撞，但任何以「Barbieri」單一姓氏查詢的下游都會撈錯人。**盤名跨語言**：義大利文原名《Ultimo tango a Parigi》、英文流通名與 MB 標題《Last Tango in Paris》、法文《Le Dernier Tango à Paris》，三種寫法實掃池中皆 0 筆（第 49／71 條）。年份：電影與唱片同為 1972 年。**這張是作曲家寫的配樂**，非歌曲合輯。封面：United Artists LP，CAA 有機會；試聽：2021 年有全球數位版，`us` storefront 命中機會高。",
+  "mbNote": "釘住 release-group **2180f03f-85d1-3e07-8b65-ba41cab05036**《Last Tango in Paris》，artist-credit「Gato Barbieri」（藝人實體 406160eb-24ad-4880-83e0-5f48f077004b），first-release-date 1972，primary-type **Album**，secondary-types [Soundtrack]。轄下 4 個 release 全為 Official：1972 IT、2004 TW、2015 ES、2021-02-17 XW。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mihály Víg",
+  "album": "Music From the Film Sátántangó",
+  "year": 2021,
+  "genres": [
+   "classical"
+  ],
+  "label": "Sacred Bones",
+  "why": "塔爾貝拉《Sátántangó》(1994，七個半小時) 的配樂，由匈牙利樂手兼演員 Mihály Víg 所作，2021-03-05 由美國廠牌 Sacred Bones 首次以獨立專輯發行（MB release-group aef2b37f 轄下 1 個 release，2021-03-05 US Official）。此前這批音樂只出現在 2009-10-30 的選輯《Filmzenék Tarr Béla Filmjeihez》(MB 11f57e3d, Album[Compilation,Soundtrack])。池中實掃：Mihály Víg 名下 0 張，**塔爾貝拉線在池中是零張**。",
+  "risk": "**年份落差 27 年**：電影 1994 上映、錄音同期，但這張唱片 2021 才首次問世；本卡 year 記 2021，行文不得把它寫成電影年（本批第二個陷阱）。**掛名的重音與詞序**：MB 實體 `Mihály Víg`，匈牙利語慣用姓在前的 `Víg Mihály`（MB 上另有以此寫法掛的 release-group），去重要兩種詞序都比；去重音後的 `Vig` 在池中會撈到 `Avril Lavigne`《Let Go》與 `Daniel Viglietti`——**人眼核對皆為不相干的碟**，完整掛名池中 0 筆。**盤名**：MB 標題《Music From The Film Sátántangó》，電影名單獨寫作《Sátántangó》，去重音為 Satantango；池中三種寫法皆 0 筆。封面：Sacred Bones 2021 年新發行，CAA 與 Apple 命中機會都高；試聽 `us` storefront。",
+  "mbNote": "釘住 release-group **aef2b37f-f59e-45c5-9e42-13ba71425bfd**《Music From The Film Sátántangó》，artist-credit「Mihály Víg」（藝人實體 3dd0f366-23da-4d79-8221-f2cc9b40e7a5），first-release-date 2021-03-05，primary-type **Album**，secondary-types 空。轄下 1 個 release：2021-03-05 US Official。已回問 release-group 端點確認實體類型與標題。對照組：**11f57e3d-646b-4269-8626-d5f24e555b4c《Filmzenék Tarr Béla Filmjeihez》(2009-10-30, Album[Compilation,Soundtrack]) 是跨多部塔爾貝拉電影的選輯，刻意不釘**；1796c18d-a6c6-444e-a436-858426ccb9a5《Turin Horse》(2011) 為 primary-type Single，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vig Mihaly",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Michael Galasso",
+  "album": "In the Mood for Love",
+  "year": 2000,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Virgin France",
+  "why": "王家衛《花樣年華》(2000) 的原聲帶，2000-11 在法國與台灣同步發行，2001-04-10 美國版、2016-08-05 香港版，四筆皆 Official（MB release-group d54dc390）。MB 的 artist-credit 掛美國作曲家 Michael Galasso。池中實掃：王家衛線在池中是零張（《重慶森林》《春光乍洩》《2046》皆無），華語作者電影只有 `S.E.N.S.`《悲情城市 電影原聲帶》(1989)、`陳明章`《戀戀風塵 電影原聲帶》(1993)、`陳光榮`《無間道 電影原聲配樂》(2002)、`盧律銘`《返校 電影原聲帶》(2019) 與 `Tan Dun 譚盾`《Crouching Tiger, Hidden Dragon》(2000) 五張。",
+  "risk": "**掛名要看清楚**：這張原聲帶的內容包含 Michael Galasso 所寫的曲子、梅林茂（Shigeru Umebayashi）既有的〈Yumeji's Theme〉與 Nat King Cole 的舊錄音三種來源，**MB 把 artist-credit 掛在 Galasso 一人身上**，本卡照 MB 實體走（第 20 條：artist: 比對的是 artist-credit 字串）；行文不得把整張說成 Galasso 一人的作品。**盤名跨語言**：中文《花樣年華》（繁）／《花样年华》（簡）、英文《In the Mood for Love》，三種寫法實掃池中皆 0 筆（第 49／71 條）。MB 上另有多張同名但無關的碟（Nat King Cole、Brenda Lee、Geoff Love 的選輯），**去重時掛名是唯一的區辨依據**。年份：電影與唱片同為 2000 年。封面：Virgin France CD，CAA 有機會；試聽以英文盤名查，`fr`／`hk`／`tw` 都要試。",
+  "mbNote": "釘住 release-group **d54dc390-e141-3acc-b02b-c4ae058911a2**《In the Mood for Love》，artist-credit「Michael Galasso」（藝人實體 16fb4202-acba-4d8c-9b17-4c7c68129ae1），first-release-date 2000-11，primary-type **Album**，secondary-types [Soundtrack]。轄下 4 個 release 全為 Official：2000-11 FR、2000-11 TW、2001-04-10 US、2016-08-05 HK。已回問 release-group 端點確認實體類型與標題。對照組：**db6df49b-cb09-41f0-b96e-802ca9a7137c《In The Mood For Love Original Motion Picture Soundtrack》(2021-06-18, Various Artists, Album[Compilation]) 是後出的另一版，刻意不釘**；85ae6291（Nat King Cole）、31c7028a（Brenda Lee）、9e283e9d／07c4c33f（Various Artists）等同名碟皆與本片無關，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
