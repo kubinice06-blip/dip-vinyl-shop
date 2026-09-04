@@ -291,6 +291,23 @@
     .quiz-option { background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; padding: 14px 16px; cursor: pointer; text-align: left; transition: all 0.15s; color: var(--black); line-height: 1.5; width: 100%; }
     .quiz-option:hover { border-color: var(--black); }
     .quiz-option.selected { background: var(--black); color: #fff; border-color: var(--black); }
+    /* 類型挑片 v2：一路往下選的晶片式選單 */
+    .gt-head { padding: 28px 20px 4px; }
+    .gt-sub { font-size: 11px; color: var(--gray); line-height: 1.7; margin-top: 8px; }
+    .gt-crumb { font-size: 10px; color: var(--gray); letter-spacing: 0.1em; margin-bottom: 10px; }
+    .gt-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 20px 4px; }
+    .gt-chip {
+      flex: 1 1 auto; min-width: calc(50% - 4px); background: none; border: 1px solid var(--line);
+      font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; padding: 15px 12px;
+      cursor: pointer; color: var(--black); transition: all 0.15s; text-align: center;
+    }
+    .gt-chip:hover { border-color: var(--black); background: var(--black); color: #fff; }
+    .gt-nav { padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 8px; }
+    .gt-any, .gt-back {
+      background: none; border: 1px dashed var(--line); font-family: var(--mono); font-size: 10px;
+      letter-spacing: 0.1em; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s;
+    }
+    .gt-any:hover, .gt-back:hover { border-color: var(--black); color: var(--black); }
     /* 類型挑片：選項下的年代／副曲風小註記（由卡池本地推導）、換一批鈕、結果頁「為什麼是這張」 */
     .gp-opt-meta { display: block; font-size: 9px; color: var(--gray); letter-spacing: 0.08em; margin-top: 3px; }
     .gp-opt-meta:empty { display: none; }
@@ -911,6 +928,17 @@
   </div>
 </div>
 
+<!-- 類型挑片 v2 modal（十大類 → 子類型 → 抽一張；引擎在 dip-genre-tree.js）-->
+<div class="quiz-modal" id="genreModal">
+  <div class="quiz-inner">
+    <div class="game-topbar">
+      <button class="game-back-btn" data-game-back>↩ 找一張來聽</button>
+      <span class="game-top-slot"></span>
+    </div>
+    <div id="genreContent"></div>
+  </div>
+</div>
+
 <!-- 我的紀錄 modal -->
 <div class="quiz-modal" id="historyModal">
   <div class="quiz-inner">
@@ -972,6 +1000,7 @@
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=40"></script>
 <script src="dip-draw-anim.js?v=2"></script>
+<script src="dip-genre-tree.js?v=1"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, limit, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -2713,7 +2742,9 @@
     if (tab !== currentView) gpStopPreview({ fade: true });
     currentView = tab;
     // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
-    const gameModal = tab === 'quiz' ? 'quizModal' : (tab === 'guess' || tab === 'random') ? 'guessModal' : null;
+    const gameModal = tab === 'quiz' ? 'quizModal'
+      : (tab === 'guess' || tab === 'random') ? 'guessModal'
+      : tab === 'genre' ? 'genreModal' : null;
     document.body.classList.toggle('game-page', !!gameModal);
     moveGameChrome(gameModal);
     applyTawkVisibility();
@@ -2721,7 +2752,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'guessModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'guessModal', 'genreModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -2751,6 +2782,11 @@
     if (tab === 'quiz') {
       document.getElementById('quizModal').classList.add('open');
       (quizQs.length ? Promise.resolve() : loadQuizData()).then(() => startQuiz());
+      return;
+    }
+    if (tab === 'genre') {
+      document.getElementById('genreModal').classList.add('open');
+      DipGenreTree.start();
       return;
     }
     if (tab === 'guess') {
@@ -4626,6 +4662,8 @@ ${seenList}
   // 把使用者點的三位藝人對回 seed 卡池：名字正規化成 token 集合做子集比對，
   // 吃得下「Beethoven／Ludwig van Beethoven」「Rakim／Eric B. & Rakim」這類異名。
   // 全程本地計算，抽卡結果從此真的跟著選擇走。
+  // 結果頁由猜你喜歡與類型挑片 v2 共用，容器不同：呼叫端在渲染前設定這個 id
+  let gpResultHost = 'guessContent';
   let gpPoolCache = null;   // startGuess 預載，供選項小註記使用
   let gpMatchInfo = null;   // 本次抽卡的「為什麼是這張」素材（pickSeedCard 填）
   const GP_TAG_ZH = { rock: '搖滾', blues: '藍調', folk: '民謠', pop: '流行', classical: '古典', jazz: '爵士', soul: '靈魂放克', electronic: '電子', world: '世界音樂', hiphop: '嘻哈' };
@@ -4881,6 +4919,7 @@ ${seenList}
   });
 
   function startGuess() {
+    gpResultHost = 'guessContent';
     gpIsRandom = false;
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
@@ -4893,6 +4932,7 @@ ${seenList}
 
   // 「直接來一首」：不選類型、不選歌手，直接用類型挑片的批次邏輯隨機送一張
   function startRandomPick() {
+    gpResultHost = 'guessContent';
     gpIsRandom = true;
     gpGenre = null; gpArtists = []; gpRound = 0;
     gpUsed = new Set(); gpAnotherCount = 0;
@@ -5023,7 +5063,7 @@ ${seenList}
   // 專輯簡介一律用現成資料，不再現場請 AI 寫：
   // 後台校正 > 殿堂神作人工簡介 > 店家/IG 自寫介紹 > /album-desc（KV 預生成、與卡片詳情同一套）
   async function fillGpDesc(card, ov, presetDesc = '') {
-    const el = document.querySelector('#guessContent .quiz-result-reason');
+    const el = document.querySelector('#' + gpResultHost + ' .quiz-result-reason');
     let desc = (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
@@ -5143,7 +5183,7 @@ ${seenList}
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
   document.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.homehub-card, #guessContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
+    if (e.target.closest('.homehub-card, #guessContent, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
   }, true);
 
   function gpPlayPreview(manual = true, result = null) {
@@ -5202,6 +5242,50 @@ ${seenList}
       return arr;
     },
   });
+  // ── 類型挑片 v2 接線（引擎在 dip-genre-tree.js）───────────────────────
+  // 模組只管「選單與抽卡」，抽到之後交還這裡渲染——結果頁（封面／三軸／試聽／收藏／
+  // 分享）與猜你喜歡完全共用 showGpResult，差別只在 gpResultHost 與 _mode。
+  DipGenreTree.configure({
+    host: () => document.getElementById('genreContent'),
+    loadCardPool,
+    onError: (e) => console.warn('[genre-tree]', e),
+    onResult: async ({ card, path, pathZh, anim }) => {
+      gpResultHost = 'genreContent';
+      gpStopPreview();
+      // 抽到就開始暖試聽，跟封面查詢並行（同猜你喜歡的做法）
+      const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
+      if (st !== 'unavailable' && st !== 'disabled') {
+        gpEnsurePlayer();
+        void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
+      }
+      const assets = await resolveCardAssets(card.artist, card.album);
+      const ratings = card.classic ? {
+        classic: assets.ov?.classic || card.classic,
+        obscurity: assets.ov?.obscurity || card.obscurity,
+        accessibility: assets.ov?.accessibility || card.accessibility,
+      } : null;
+      if (anim) {
+        if (assets.coverUrl) { anim.state.cover = assets.coverUrl; anim.state.ready = true; }
+        else anim.state.fail = true;
+        await anim.done;
+      }
+      await showGpResult({
+        artist: card.artist, album: card.album, reason: '', ratings,
+        _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl,
+        _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
+        _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
+        _matchNote: pathZh, _mode: 'tree', _path: path, _streaming: true,
+      });
+      daHandoffTo('#genreContent');
+      const reason = await fillGpDesc(card, assets.ov);
+      lastGpResult.reason = reason;
+      recordDrawnCard(lastGpResult);
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'genre', artist: card.artist, album: card.album, reason, coverUrl: assets.coverUrl })
+        .then(() => renderHistorySection(document.getElementById('genreContent')));
+    },
+  });
+
   // 載入後預熱：設定與封面池先進快取（含封面預載），使用者點下去就零等待起跑
   setTimeout(() => DipDrawAnim.preload('front'), 1500);
 
@@ -5400,7 +5484,7 @@ ${seenList}
     _saveGpSeen();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
-    document.getElementById('guessContent').innerHTML = `
+    document.getElementById(gpResultHost).innerHTML = `
       <div class="quiz-result">
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
@@ -5416,25 +5500,28 @@ ${seenList}
         ${stockRecoHtml}
         <button class="quiz-collect-btn" data-collect${result._hall ? ' data-hall="1"' : ''}${result._pearl ? ' data-pearl="1"' : ''}${result._heresy ? ' data-heresy="1"' : ''} data-artist="${(result.artist || '').replace(/"/g, '&quot;')}" data-album="${(result.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
         <button class="quiz-share-btn" data-gp-action="share">✈ 分享結果</button>
-        ${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
-        <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>
+        ${result._mode === 'tree'
+          ? `<button class="quiz-another-btn" data-gt-again>再抽一張</button>
+             <button class="quiz-retry-btn" data-gt-restart>換個類型</button>`
+          : `${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
+             <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>`}
       </div>
     `;
     if (!result._streaming) {
-      saveToHistory({ type: 'guess', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
-        .then(() => renderHistorySection(document.getElementById('guessContent')));
+      saveToHistory({ type: result._mode === 'tree' ? 'genre' : 'guess', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
+        .then(() => renderHistorySection(document.getElementById(gpResultHost)));
     }
     // seed 卡自帶三軸直接畫，省一次請求；apex／stock／reel 沿用 /album-rating（KV 快取）
     const special = result._hall ? 'hall' : (result._pearl ? 'pearl' : (result._heresy ? 'heresy' : false));
     if (result.ratings) {
-      const slot = document.querySelector('#guessContent .album-ratings-slot');
+      const slot = document.querySelector('#' + gpResultHost + ' .album-ratings-slot');
       if (slot) slot.innerHTML = albumRatingsHtml(result.ratings, special);
-      paintResultTier('guessContent', result, null);
+      paintResultTier(gpResultHost, result, null);
     } else {
-      renderAlbumRatings(result.artist, result.album, document.getElementById('guessContent'), special)
-        .then(r => { if (lastGpResult === result) paintResultTier('guessContent', result, r); });
+      renderAlbumRatings(result.artist, result.album, document.getElementById(gpResultHost), special)
+        .then(r => { if (lastGpResult === result) paintResultTier(gpResultHost, result, r); });
     }
-    resolveBandcampBtn(result.artist, result.album, document.getElementById('guessContent'));
+    resolveBandcampBtn(result.artist, result.album, document.getElementById(gpResultHost));
     // 抽到即自動播放試聽（跟對戰一樣）。沒開自動播放就安靜停下，圖示停在 ▶，
     // 玩家可以按試聽鈕聽這一張，或按開關讓之後每張都自動播。
     if (!result.type && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
@@ -5744,11 +5831,9 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'guess', 'random', 'history', 'collection', 'album-search']
-      : ['home', 'used', 'new', 'quiz', 'guess', 'random', 'history', 'archive', 'collection', 'album-search'];
-    // P1 過渡：舊網址 #genre 先落在猜你喜歡（P2 接上類型挑片 v2 後改掉）
-    const routed = target === 'genre' ? 'guess' : target;
-    setActiveTab(valid.includes(routed) ? routed : 'home');
+      ? ['home', 'quiz', 'genre', 'guess', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'used', 'new', 'quiz', 'genre', 'guess', 'random', 'history', 'archive', 'collection', 'album-search'];
+    setActiveTab(valid.includes(target) ? target : 'home');
   })();
 
   // 註冊 service worker（離線後備 + 靜態快取；線上內容仍即時更新）
