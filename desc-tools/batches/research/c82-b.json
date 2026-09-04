@@ -358,5 +358,191 @@
   "status": "full",
   "yearVerified": "1995 站得住，而且 MB 給到日：MB first-release-date 1995-03-20、MB 那筆日本原盤 release 的 date 也是 1995-03-20；Discogs released 欄只寫 1995。兩處不衝突（一個較粗、一個較細），行文可以斷言 1995，要寫到日的話以 MB 的 1995-03-20 為準並註明來源。**Apple 是本卡的年份陷阱**：collectionId 449098077 的 releaseDate 是 2011-07-20、軌數 11、copyright 欄「℗ TRANSONIC DATA ARCHIVES」，那是後來的數位版。",
   "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。ExT 後世重出線歸 Mushroom Now!《Traveller's Light》，本卡只能寫自己那筆 EXT-0040／2023 的具體值。**「Koji Takahashi 與 Kiyoshi Hazemoto 合開 Microbe Recordings、兩人在對方的碟上互掛混音」這條線歸本卡**；Interferon《Seance-Room Music》那張禁用，只能寫它自己 credit 欄上「第 8 軌 Remix 掛 Palomatic」這一項。\n【本卡特有限制】(1) **原盤九軌**（Discogs 與 MB 的 1995 年那筆一致）。第 141 條的直接實例：Apple 給 11、2023 年 ExT 版給 16，**行文給軌數只能給九**。(2) 第 7 軌的曲名兩種拼法（Discogs〈Polomatica〉／MB 與 Apple〈Palomatica〉）**兩邊都不要當成定本**：若要寫進 keyTracks 或行文，請避開這一首，或明寫「資料庫拼法不一」。本卡 keyTracks 已刻意避開它。(3) 曲名〈Flutter〉〈Halo〉〈Foaming Waves〉〈Soar〉全是抽象詞，不得由曲名推論主題、場景或出處（第 110 條）。(4) master 版本頁上「德國黑膠」「無損檔」等格式值可以寫，但**不得寫壓量、份數、稀有度或二手價**（第 109 條）——版本頁上也沒有這些值。\n【推翻策展層】策展層 curatorRisk 未提 Apple 那筆是 2011 年數位版；研究層補上，並判定它**不能**當本卡的軌數或年份依據（第 141 條）。\n【缺口】原盤沒有錄音室與錄音日期的登錄（只有母帶室）。第 136 條：條目上沒有不等於唱片上沒有。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Nina-Noho|Ambient Classics 1990-1992",
+  "artist": "Nina-Noho",
+  "album": "Ambient Classics 1990-1992",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25014，日本，CD 一張，格式欄的 descriptions 是空的、沒有標 Album，發行年 1996）內註只有一句：「Released without an obi strip.」曲目十五軌，軌號用兩位數 01–15：01.〈Opening〉2:08／02.〈Ending〉2:43／03.〈Dream〉1:12／04.〈Last Scene〉3:17／05.〈Maskman〉0:39／06.〈Deko Boko〉7:14／07.〈Highlights Scene〉1:32／08.〈Tokyo〉5:52／09.〈DAT From Bangkok〉2:12／10.〈Plastic House〉4:29／11.〈Neighbor〉9:14／12.〈Tempura〉7:24／13.〈Stairs〉0:36／14.〈Suna No Hito〉5:51／15.〈Shinjuku〉0:54。",
+    "src": "https://api.discogs.com/releases/345035"
+   },
+   {
+    "f": "同一份原盤 credit 欄：TMZ 與 Merumo (3) 兩人各掛 Written-By [All Tracks]、Performer 與 Mixed By；Nina-Noho 掛 Producer；**Kazunao Nagata 掛的是 Co-producer 與 Compiled By [Selected By]**；SLP Designs 掛 Art Direction, Design。公司欄記母帶製作於 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。",
+    "src": "https://api.discogs.com/releases/345035"
+   },
+   {
+    "f": "MusicBrainz release-group 64853cf2-71cd-4811-ab70-06a752568be7：標題《AMBIENT CLASSICS 1990–1992》（年份區間用的是 U+2013 短破折號），artist-credit「NINA‐NOHO」（中間是 U+2010 連字號），first-release-date 1996，primary-type Album，**secondary-types 是空的**（MB 沒有把它標成 Compilation）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/64853cf2-71cd-4811-ab70-06a752568be7?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目：轄下只有一筆 release，1996／JP／TRANSONIC RECORDS／TRS-25014，共十五軌，曲名在 MB 全大寫，第 6 軌 MB 寫成漢字〈凸凹〉而 Discogs 寫成羅馬拼音〈Deko Boko〉；曲長依序 128／163／72／197／39／434／92／352／132／269／554／444／36／351／54 秒。兩個資料庫都給十五軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=64853cf2-71cd-4811-ab70-06a752568be7&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 244993（Nina-Noho）的 members 欄有兩個人：Tmz 與 Merumo (3)；profile 欄是空的。",
+    "src": "https://api.discogs.com/artists/244993"
+   },
+   {
+    "f": "Discogs 藝人頁 2275419（Tmz）的 profile 欄只有兩行，都是團籍與起訖年：「Nina-Noho (1990-1993)」「Organization (1991-1993)」；groups 欄同樣列 Organization 與 Nina-Noho 兩項。",
+    "src": "https://api.discogs.com/artists/2275419"
+   },
+   {
+    "f": "Discogs 藝人頁 4117077（Merumo (3)）的 groups 欄只有 Nina-Noho 一項，realname、別名與 profile 三欄都是空的。",
+    "src": "https://api.discogs.com/artists/4117077"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）記本張編號 TRS-25014 的前後號：TRS-25013 Suzukiski《Waiting》（1995）與 TRS-25015 Transonic Jokers《Transonic Jokers》（1996）；同一份目錄裡另有一筆早於本張的整理型碟 TRS-25004《The Roots Of Transonic (Trigger Label 1990-1993)》（Various，1994，格式標 Comp）。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（64853cf2-…）實測回 200，封面有圖。",
+    "src": "https://coverartarchive.org/release-group/64853cf2-71cd-4811-ab70-06a752568be7/front"
+   },
+   {
+    "f": "Apple 日本店面以「Nina-Noho」查專輯，resultCount 回 24，但逐筆看過去全是 Kotak Musik Bayi《Nina Bobo》、Bob Marley & The Wailers、Israel Kamakawiwo'ole 之類的無關結果，沒有一筆是本張或本掛名。這是第 139 條講的「MB／Apple 回了不相干的東西」那一種假形狀，不是命中。",
+    "src": "https://itunes.apple.com/search?term=Nina-Noho&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡有四軌不到一分鐘，最短的〈Stairs〉只有 36 秒，最長的〈Neighbor〉9:14——長短差了十五倍。",
+   "credit 欄上廠牌主理人掛的不只是 co-producer，還有一項 Compiled By [Selected By]：這張碟的曲目是被人挑出來的。",
+   "兩位成員在 Discogs 上的 profile 只寫了團籍的起訖年，1990 到 1993；碟是 1996 年出的。",
+   "內註只有一句話，講的是這張碟沒有腰帶。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十五軌的二人組電子作品，曲長極不均勻：〈Stairs〉0:36、〈Maskman〉0:39、〈Shinjuku〉0:54、〈Dream〉1:12 這幾首都在一分多鐘以內，而〈Neighbor〉9:14、〈Tempura〉7:24、〈Deko Boko〉7:14 三首各自超過七分鐘。credit 記兩人各自掛全碟的寫作、演奏與混音。Discogs 給的曲風標記是 Electronic，風格標記 Techno 與 Ambient。",
+  "keyTracks": [
+   "Deko Boko",
+   "Neighbor",
+   "Tempura"
+  ],
+  "status": "full",
+  "yearVerified": "發行年 1996 站得住：Discogs released 欄 1996、MB first-release-date 1996、MB 唯一一筆 release 的 date 1996，三處一致。**盤名裡的「1990-1992」不是發行年**，而是標題的一部分，行文必須把兩者分開，絕不能寫成「1990–1992 年出版」。無月份資料，不得給月份。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。\n【本卡最重要的一條：這是不是「舊作整理」？】策展層 curatorRisk 說「行文不得斷言它是新錄音或舊作整理，MB 條目上沒有這一欄」。**研究層部分推翻：MB 的 secondary-types 確實是空的，但 Discogs 原盤 credit 欄上 Kazunao Nagata 掛了 Compiled By [Selected By]，這是唱片自己印的 credit，不是資料庫的型別欄；再加上 Discogs 藝人頁把 Tmz 的 Nina-Noho 團籍寫成 1990-1993（早於 1996 年的發行年），以及盤名本身帶「1990-1992」。**\n**裁定（可逆、有先例、不決定就卡住行文，依第 149 條下放的三條判準當場定）**：行文**可以**寫「credit 欄上有一項 Compiled By（選曲）」與「盤名標的年份區間是 1990–1992」這兩個原始值，**但不得**由它們推導出「這是一張舊作合輯」「這些錄音都做於 1990–92」之類的斷言——MB 沒有標 Compilation，Discogs 也沒有標 Comp（本張格式欄的 descriptions 是空的），沒有任何來源直說「本張收的是舊錄音」。**第 136 條**：資料庫的缺席只是缺席的證據。\n【本卡特有限制】(1) 原盤十五軌，兩個資料庫一致，可以斷言。(2) 第 6 軌兩種寫法（MB 漢字〈凸凹〉／Discogs 羅馬拼音〈Deko Boko〉）是同一首，不得寫成兩首。(3) 曲名〈Tokyo〉〈Shinjuku〉〈DAT From Bangkok〉〈Tempura〉是地名與名詞，**不得由曲名推論旅行、城市主題或任何出處**（第 110 條，本批 ambient 線的高風險點）。(4) 「四軌不到一分鐘、三軌超過七分鐘」這個歸納已逐軌數過十五個曲長值（第 135 條）。(5) 內註的「Released without an obi strip.」是包裝陳述，**不得**由它推論壓量、版本稀有度或二手價（第 109 條）。\n【缺口】兩位成員除了團籍起訖年之外挖不到任何有引註的生平；原盤沒有錄音室、錄音日期的登錄。行文不得補。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Suzukiski|Kamakura",
+  "artist": "Suzukiski",
+  "album": "Kamakura",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-001，日本，CD 一張標 Album，發行年 1996）共十六軌，是本組軌數最多的碟之一：1.〈Office Love〉1:59／2.〈Pivot〉4:18／3.〈Shito〉3:39／4.〈Everblue〉1:41／5.〈Norimono〉3:22／6.〈Yacht〉4:30／7.〈Gateball〉2:14／8.〈Fruitsbasket〉4:42／9.〈Citylights〉4:10／10.〈Good Night〉0:31／11.〈Doubt〉0:40／12.〈Joy〉3:37／13.〈Pan-Space Interpretation〉2:18／14.〈Off Shore〉4:34／15.〈Each Other〉5:48／16.〈Fortified〉2:33。",
+    "src": "https://api.discogs.com/releases/326406"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Takahiro Suzuki 掛 Written-By、Mixed By 與 Producer，Kazunao Nagata 掛 Producer 與 Mastered By，SLP Designs 掛 Artwork。公司欄記母帶製作於 Transonic Studio，**℗ 掛 Transonic Records、© 掛 Zero Gravity**——同一張碟上兩個廠牌名並存。",
+    "src": "https://api.discogs.com/releases/326406"
+   },
+   {
+    "f": "MusicBrainz release-group dbe1aa32-95ff-4dc1-ae32-058e895238f6：標題在 MB 寫成全大寫的《KAMAKURA》，artist-credit「Suzukiski」，first-release-date 1996，primary-type Album，secondary-types 空；轄下只有一筆 release，1996／JP／Zero Gravity／ZGV-001，共十六軌，曲長依序 119／258／219／101／202／270／134／282／250／31／40／217／138／274／348／153 秒。兩個資料庫都給十六軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbe1aa32-95ff-4dc1-ae32-058e895238f6&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 廠牌頁 304258（Zero Gravity (3)）：profile 欄只有一個字「Japan」，**parent label 欄填的是 Transonic Records (4)**，urls 欄只有一條 zerogravity1996.blogspot.com。",
+    "src": "https://api.discogs.com/labels/304258"
+   },
+   {
+    "f": "Discogs 廠牌頁 785343（Transonic Records (4)）的 sublabels 欄反向印證同一件事：Zero Gravity (3) 列在 Transonic 的子廠牌名單裡，同列的還有 Beautiful Challenge、Transonic Archives、Trinity Label、Trip Out Tapes。",
+    "src": "https://api.discogs.com/labels/785343"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/304258/releases，依 catno 排序）記 ZGV 編號線 1996 年的開頭九號：ZGV-001 本張、ZGV-002 Pacific 231《Tropical Songs》（CD, Maxi）、ZGV-003 Temdendam Suay《Sounzer Paranoun (Sound Tracks Of Some Films)》、ZGV-004 Strange Garden《For Speaker System》、ZGV-005 Kazunao Nagata《The World Of Electronic Sound》、ZGV-006 Utah Kawasaki《Static Pulse》、ZGV-007 Tagomago《Flower Instrumental》、ZGV-008 Tamaru《Karmaless》、ZGV-009 Various《Electronic Music Festival》，全部年份欄都是 1996。同一份目錄裡這條編號線一路排到 ZGV-030《Zero Gravity Festival 2016》（2017，四張 CD 合輯）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "以廠牌反查 MusicBrainz（release?query=label:\"Zero Gravity\"&limit=100）回 count=34；再加上日期條件 date:[1996 TO 2000] 回 count=18。查詢本身有回值、不是空結果，也不是 503／403 或分頁上限造成的假查無。",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Zero%20Gravity%22&limit=100&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 110877：條目名「Suzukiski」，realname 欄「Takahiro Suzuki」，profile 欄記「Stage name of electronic producer T. Suzuki」。",
+    "src": "https://api.discogs.com/artists/110877"
+   },
+   {
+    "f": "Apple 日本店面以「Suzukiski Kamakura」查專輯，resultCount 回 0，沒有任何一筆結果。",
+    "src": "https://itunes.apple.com/search?term=Suzukiski%20Kamakura&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（dbe1aa32-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/dbe1aa32-95ff-4dc1-ae32-058e895238f6/front"
+   }
+  ],
+  "hookCandidates": [
+   "十六首曲子裡有兩首不到一分鐘（31 秒與 40 秒），最長的一首也只有 5:48。",
+   "碟上兩個廠牌名並存：錄音版權掛母廠牌，著作權掛子廠牌，母帶也在母廠牌的錄音室做。",
+   "這是新開的那條編號線的第一號；同一年這條線就出到第九號。",
+   "曲名一路是〈Office Love〉〈Gateball〉〈Norimono〉〈Fruitsbasket〉這種日常詞。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十六軌的獨奏電子作品，是本組曲目最碎的一張：兩首不到一分鐘（〈Good Night〉0:31、〈Doubt〉0:40），最長的〈Each Other〉5:48，其餘多半在兩到四分半之間。credit 記全碟由一人寫作與混音，廠牌主理人並列製作人並負責母帶。Discogs 給的曲風標記是 Electronic、風格標記 Techno。",
+  "keyTracks": [
+   "Pivot",
+   "Citylights",
+   "Each Other"
+  ],
+  "status": "full",
+  "yearVerified": "1996 站得住。Discogs released 欄 1996、MB first-release-date 1996、MB 唯一一筆 release 的 date 1996，三處一致，無分歧。無月份資料，不得給月份。",
+  "notes": "【互斥分派——Zero Gravity 廠牌線歸本卡】本組有十一張 Zero Gravity 卡（本卡、Strange Garden、Temdendam Suay、Tagomago《Flower Instrumental》、Masaaki Kikuchi、Trio Rakant、Nerve Net Noise、Tamaru 兩張、永田一直《The World of Electronic Sound 4》、Toshimaru Nakamura）。**「Zero Gravity 是 Transonic 的子廠牌、ZGV 編號線從哪一年開到哪一年、目錄上有哪些鄰居」這條廠牌線只准本卡寫**；其餘十張禁用，只能寫自己那張卡的編號與 credit 欄具體值。\n【互斥分派——本卡不能寫的】Transonic 廠牌史歸 松前公高《Space Ranch》，**本卡只能寫「Zero Gravity 的 parent label 欄填 Transonic Records」這個欄位值**，不得展開 Transonic 的創立年、創辦人、承接 Trigger 或收攤年。同掛名的身分線（本名、藝名、Fantastic Explosion 團籍）歸 Suzukiski《Waiting》，**本卡禁用**，只能寫 Discogs 藝人頁 realname 欄那一項。\n【本卡特有限制】(1) 原盤十六軌，兩個資料庫一致，可以斷言。(2) **盤名是地名（鎌倉）**，曲名〈Enoshima〉之類的地名在同掛名前一張碟上也出現過——**嚴禁把盤名或曲名讀成地方誌、旅行紀錄或任何場所的描寫**（第 110 條，本批 ambient 線的最高風險點）。(3) ℗／© 分屬兩個廠牌是版權欄的原始值，可以照寫；**不得**由它推論兩家公司的從屬關係之外的任何事（從屬關係另有 Discogs 廠牌頁的 parent label 欄可依）。(4) Kazunao Nagata 在本卡掛的是 Producer 與 Mastered By，與別卡的職務不同，不得跨卡混用。\n【第 149 條的方法紀錄】本卡與整條 ZGV 線都是靠「以廠牌反查」撈出來的：MB `release?query=label:\"Zero Gravity\"` 回 count=34、Discogs `labels/304258/releases` 回 56 筆；以藝人名「Suzukiski」查 Apple 則兩張碟都回乾淨的 0。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Strange Garden|For Speaker System",
+  "artist": "Strange Garden",
+  "album": "For Speaker System",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-004，日本，CD 一張標 Album，發行年 1996）十三軌與曲長：1.〈Check Your Speaker System〉3:29／2.〈Sweep〉5:15／3.〈Jagul〉2:58／4.〈Apollo96〉4:29／5.〈Indian On The Warpath〉4:17／6.〈Psychic Rally In Heaven〉6:21／7.〈Moon Drum〉3:31／8.〈Nude Cave Breaks〉5:29／9.〈Dad〉8:06／10.〈Spy Licensed Kill〉3:57／11.〈An Islamic Boat Song〉1:56／12.〈Jipang Walik〉4:29／13.〈Synchro Screw〉8:51。",
+    "src": "https://api.discogs.com/releases/322559"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Akaiwa 掛 Recorded By 與 Mixed By；**Naka Tomizawa 掛 Programmed By [Assistance] 並標明軌號 (3, 7, 8, 12)**；Kazunao Nagata 掛 Mastered By 與 Executive-Producer；SLP Designs 掛 Artwork。公司欄記錄音與混音都在 Dub Restaurant Studio、母帶在 Transonic Studio，℗ 掛 Transonic Records、© 掛 Zero Gravity。",
+    "src": "https://api.discogs.com/releases/322559"
+   },
+   {
+    "f": "MusicBrainz release-group cbbbd5a7-d9e8-443d-b980-0f98f92e2ca0：標題《For Speaker System》，artist-credit「STRANGE GARDEN」（全大寫），first-release-date 1996，primary-type Album，secondary-types 空；轄下只有一筆 release，1996／JP／Zero Gravity／ZGV-004，共十三軌，曲長依序 209／315／178／269／257／381／211／329／486／237／116／269／531 秒。兩個資料庫都給十三軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cbbbd5a7-d9e8-443d-b980-0f98f92e2ca0&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 166050（Strange Garden）的 members 欄有兩個人：Ryo Suda 與 Yusuke Aikawa；name variations 欄另有一筆「Kikuchi Playing Strange Garden」；profile 欄是空的。",
+    "src": "https://api.discogs.com/artists/166050"
+   },
+   {
+    "f": "Discogs 藝人頁 166051（Akaiwa）的別名欄列 Pacific Child、**Yusuke Aikawa**、Stone Free (16) 三項——本張 credit 上的 Akaiwa 與藝人頁 members 欄上的 Yusuke Aikawa 是同一個 Discogs 實體的兩個寫法。",
+    "src": "https://api.discogs.com/artists/166051"
+   },
+   {
+    "f": "同掛名在同一條編號線上的下一張是 ZGV-017《Mumbo Jumbo (Riutal Of The Back Yard)》（1997），只有三軌（〈音霊　I〉12:38／〈音霊　II〉11:27／〈音霊　III〉18:50），credit 欄多出一批演奏者：Masahiko Okura 中音薩克斯風、Die Uchiyama 與 Ryo Suda 電貝斯、Naka Tomizawa 打擊與拇指琴、Nagatoman \"F\" 的 EMS 合成器；Akaiwa 在那張掛 Electronics、Effects、Sampler、Tape、Percussion、Kazoo 與 Mixed By、Edited By、Producer。",
+    "src": "https://api.discogs.com/releases/1033661"
+   },
+   {
+    "f": "同掛名再下一張換回母廠牌的編號：Transonic Records TRS-25022《Mumbo Jumbo: Multiple Beat Maniacs》（1998，十二軌），內註寫「Recorded at Dub Restaurant. 97 June - 98 January / Mastered at Transonic Studio. 98.1.11-12」——與本張同一間錄音室。",
+    "src": "https://api.discogs.com/releases/2973773"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/304258/releases）記本張編號 ZGV-004 的前後號：ZGV-003 Temdendam Suay《Sounzer Paranoun》（1996）與 ZGV-005 Kazunao Nagata《The World Of Electronic Sound》（1996）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Apple 日本店面以「Strange Garden For Speaker System」查專輯，resultCount 回 0，沒有任何一筆結果。",
+    "src": "https://itunes.apple.com/search?term=Strange%20Garden%20For%20Speaker%20System&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（cbbbd5a7-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/cbbbd5a7-d9e8-443d-b980-0f98f92e2ca0/front"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡最短 1:56、最長 8:51，尾軌與第九軌各佔八分半以上，前面十一首都收在六分半以內。",
+   "credit 上有一項「Programmed By [Assistance]」，而且精確標到四個軌號。",
+   "同一個掛名的下一張碟只剩三軌，每軌十一到十九分鐘，還多出一整排管樂、貝斯與打擊樂手。",
+   "錄音與混音都在同一間工作室，母帶則送到廠牌自己的錄音室做。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十三軌的電子作品，曲長跨度大：〈An Islamic Boat Song〉1:56 與〈Jagul〉2:58 最短，〈Synchro Screw〉8:51 與〈Dad〉8:06 兩首收尾段最長。credit 記全碟由一人錄音與混音，另有一人在四首曲子上掛程式協力。Discogs 給的曲風標記是 Electronic，風格標記 Techno 與 Experimental。",
+  "keyTracks": [
+   "Check Your Speaker System",
+   "Psychic Rally In Heaven",
+   "Synchro Screw"
+  ],
+  "status": "full",
+  "yearVerified": "1996 站得住。Discogs released 欄 1996、MB first-release-date 1996、MB 唯一一筆 release 的 date 1996，三處一致，無分歧。無月份資料，不得給月份。",
+  "notes": "【互斥分派】Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，本卡禁用（不得寫 Zero Gravity 是誰的子廠牌、ZGV 編號線的範圍）。Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。**本卡分到的線是「同掛名在 ZGV-004 → ZGV-017 → TRS-25022 三張之間的編制變化」**（十三軌的電子碟 → 三軌長篇加真人演奏 → 回到母廠牌的十二軌），這條線其他卡不得用。\n【本卡特有限制】(1) 原盤十三軌，兩個資料庫一致，可以斷言。(2) **曲名是本卡最大的地雷**：〈Indian On The Warpath〉〈An Islamic Boat Song〉〈Jipang Walik〉〈Moon Drum〉〈Psychic Rally In Heaven〉全是異國／宗教／神祕學詞彙，**嚴禁由曲名推論翻奏、取樣、致敬、宗教主題或任何出處**（第 110 條）。特別提醒下游：〈Psychic Rally In Heaven〉與既有的實驗電影同名，**沒有任何來源說兩者有關**，不得連結。(3) 「Programmed By [Assistance] (3, 7, 8, 12)」是 credit 欄照抄的軌號，已逐項數過是四軌（第 135 條）。(4) Akaiwa／Yusuke Aikawa 是同一個 Discogs 實體的兩種寫法（藝人頁別名欄直記），不得寫成兩個人；但**也不得**推論 Strange Garden 只有他一人——members 欄還有 Ryo Suda。\n【與其他卡的交集】Akaiwa 同時是 Trio Rakant《Kokorosususu》（ZGV-012）credit 上的作曲／編輯／混音／錄音者，Ryo Suda 也在那張掛貝斯。**「Akaiwa 這個人跨掛名」這條線歸 Trio Rakant 那張**（那裡的 credit 更完整），本卡只寫本張 credit 欄上的職務。\n【缺口】原盤沒有錄音日期（只有錄音室名稱）；兩位成員挖不到有引註的生平。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
  }
 ]
