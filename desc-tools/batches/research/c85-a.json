@@ -406,5 +406,597 @@
    "note": "1978 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1978、MB 轄下唯一那筆 release 的 date 欄 1978、Discogs 原盤 1801497 的 released 欄 1978、Discogs master 410723 的 year 欄 1978。**只能寫到年**：四個來源都沒有月與日。Apple 的 releaseDate 1978-01-01 是佔位日期、該條目的 ℗ 年是 2018，**不得拿它當年份佐證**（第 141 條附二）。"
   },
   "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：本卡沒有分到跨卡的線。**Burning Sounds 廠牌史歸〈Star Wars Dub〉，本卡禁用**——只能寫自己這張的編號 BS 1029。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 10**——MB 唯一那筆 release 的 track-count 是 10、Discogs 原盤條目的曲目表也是 10 個曲位，兩庫一致。\n(2) **探測層標 `ready` 成立，但要加限定語。** 已逐軌核對 Apple collectionId 1451727441：10 軌、曲序與原盤逐項相同、無多曲無缺曲、無別張專輯的曲目——**是同一張碟，不是加曲版也不是二合一**。但盤名寫成複數的《Majority Rules》、℗ 年是 2018，**它是 2018 年那次復刻的數位版**。行文引用曲長時必須寫成「Apple 那一版登錄的曲長」（1978 年原盤兩庫的曲長欄都是空的，第 136 條）。\n(3) **盤名的三種寫法只能寫成「哪個來源怎麼記」**：原盤兩庫作《Majority Rule》、Apple 作《Majority Rules》、Discogs 版本欄裡美國 Makossa 那兩筆作《Majority Rule For Africa》、美國 Camille 那筆作《Reggae Super Star》。**不得寫成「這張碟改過名」或「美國版叫什麼」之外的因果**——版本欄只說標題欄寫了什麼，沒說是誰改的、為什麼改（第 136 條）。**尤其不得推論這幾版共用母帶或內容相同**：facts 沒有任何一條比對過它們的曲目（第 110 條，比照第 110 條裡 Silas Hogan 那個案例）。\n(4) 第 9 軌〈Channell One Crash〉：**兩庫的原盤都是雙 l，Apple 是單 l**——要指名這一軌必須照原盤寫，或寫明兩種拼法。**不得由這個曲名推論這張碟在 Channel One 錄音**（第 110 條）；本張的 Discogs 條目公司欄是空的，**沒有任何錄音室來源**。\n(5) **生年兩說，兩個都要帶著寫或都不寫**：MusicBrainz 藝人實體的 life-span begin 是 **1954-05-22**，英文維基〈Jimmy Riley〉條目記 **1947 年 5 月 22 日**，並自帶一條註腳說明「過世時有些來源記 1954，後來更正為 1947」。**行文禁止斷言單一生年**（第 141 條末段的處置方式）；卒年 2016-03-23 兩邊一致，可以寫。維基的敘述一律寫成「英文維基百科的 Jimmy Riley 條目說」（第 128 條），且只採帶行內引註的段落（第 40／80 條）。\n(6) 1979 年那筆 Burning Vibrations 的 Repress：**只能寫成「Discogs 版本欄有一筆廠牌寫 Burning Vibrations、格式欄標 Repress」**，不得推論兩家廠牌的關係（同樣的形狀也出現在〈Mysterious〉那張，**兩張都不得展開**）。\n(7) 策展層提到 Pressure Sounds 2015 年的合輯《Live It To Know It》與 2016 年 BSRCD991 二合一 CD——**Pressure Sounds 這條線歸〈Kool Roots〉，本卡禁用**；那張二合一 CD 依第 129／140 條也不得當本卡的版本來源。"
+ },
+ {
+  "key": "desc2:Phil Pratt|Star Wars Dub",
+  "artist": "Phil Pratt",
+  "album": "Star Wars Dub",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1093433 的欄位：標題《Star Wars Dub》、artists 欄「Phil Pratt」而 anv 欄「Phill Pratt」（雙 l）；廠牌欄 Burning Sounds、編號 BS 1019；國別 UK；released 欄 1978；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，style 欄只有 Dub 一項。註記欄是空的。",
+    "src": "https://www.discogs.com/release/1093433"
+   },
+   {
+    "f": "同一條目的 credit 欄只有兩條：Producer「Phil Pratt」（anv Phill Pratt）、Sleeve, Design「Standard Man」；公司欄只有一條 Distributed By「Burning Sounds」。Matrix／Runout 兩欄皆標 etched：A 面「BS 1019-A」、B 面「BS 1019-B」。",
+    "src": "https://www.discogs.com/release/1093433"
+   },
+   {
+    "f": "同一條目的曲目表共 9 個曲位、**而且曲長欄有值**：A 面〈African Communication〉3:55、〈Which Clapp〉3:34、〈Star Wars〉3:59、〈Side Walk Rider〉2:56、〈Tower Dub〉4:47；B 面〈Stay Loose〉3:50、〈Con-Man〉4:04、〈Concertman〉3:56、〈Roffa Yet〉2:58。",
+    "src": "https://www.discogs.com/release/1093433"
+   },
+   {
+    "f": "MusicBrainz release-group d8c6f2df 的欄位：title《Star Wars Dub》、first-release-date 1978、primary-type Album、secondary-types 空陣列、**artist-credit「Phil Pratt」（單 l）**、annotation 為 null；genre 欄 dub 與 reggae 各 1 票。",
+    "src": "https://musicbrainz.org/release-group/d8c6f2df-f909-4a84-be88-08b78aadfddd"
+   },
+   {
+    "f": "MusicBrainz 轄下 1978 GB 那筆 release（11b5239e）：status Official、廠牌欄 Burning Sounds、編號 BS 1019、一張 12\" Vinyl、track-count **9**，逐軌曲長 3:55、3:34、3:59、2:56、4:47、3:50、4:04、3:56、2:58（與 Discogs 原盤條目逐項相同）；**但這筆 release 的 artist-credit 欄寫的是「Phill Pratt」（雙 l），與同一個 release-group 的 artist-credit「Phil Pratt」不一致。**",
+    "src": "https://musicbrainz.org/release/11b5239e-c084-426a-9183-d48ecea6c79d"
+   },
+   {
+    "f": "同 release-group 另一筆 release（b4e181d7）：2024、GB、status Official、廠牌欄「Burning Sounds Recordings Ltd.」、編號 BSRLP831、barcode 5036436152025、packaging Slipcase、artist-credit 同樣寫「Phill Pratt」；載體兩片——12\" Vinyl 9 軌與 CD 9 軌，兩片曲序相同、曲長各自略長於 1978 那筆（如〈African Communication〉3:59、〈Tower Dub〉4:52）；兩片對第 8 軌的寫法不同，黑膠那片寫〈Concert Man〉、CD 那片寫〈Concertman〉。",
+    "src": "https://musicbrainz.org/release/b4e181d7-71f3-439b-ae07-49bc9665e64a"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 34ad451c 的欄位：name「Phil Pratt」、sort-name「Pratt, Phil」、type Person、gender Male、**country GB**、area United Kingdom、begin-area Kingston、life-span begin **1950**、end **2026-02-25**、ended true；aliases 欄只有一筆「George Philips」，標 Legal name。",
+    "src": "https://musicbrainz.org/artist/34ad451c-81ce-4e4d-a850-841b97f6fef6"
+   },
+   {
+    "f": "英文維基百科〈Phil Pratt〉條目（帶行內引註、註腳全部指向 Dave Thompson 2002《Reggae & Caribbean Music》Backbeat Books 第 316 頁）說：本名 **George Phillips**（雙 l）、**1942 年生於金斯敦**，是牙買加雷鬼歌手與唱片製作人；條目說他在 rocksteady 時期於 Coxsone Dodd 的 Studio One 當搬箱工，1960 年代初移居英國，1965 年回牙買加，1967 年在自己的 Wiggle Spoon 廠牌與 Hemsley Morris 錄〈Safe Travel〉；1966 年起轉做製作，在 Caltone 錄下年輕的 Horace Andy，之後製作 Ken Boothe、John Holt、Pat Kelly 等人，作品先出現在 Caltone、Wiggle Spoon 與 WIRL，之後才自立 Jon Tom 廠牌。該條目頁首掛著「BLP one source」的維護標籤。",
+    "src": "https://en.wikipedia.org/wiki/Phil_Pratt"
+   },
+   {
+    "f": "Discogs master 507864 的 versions 共 10 筆，全部掛 Burning Sounds 系的廠牌名：1978 UK 黑膠三筆（BS 1019／BS1019）、1978 UK **卡帶一筆**（編號 BSC 1019，release 12593483）；2016 UK CD BSRCD988 與黑膠 BSRLP988（後者格式欄標 LP, Limited Edition, Reissue）；2020 UK BSRLP988R／BSRLP988（格式欄標 LP, Limited Edition, Reissue）；2024 UK BSRLP831，**標題欄誤植成《Stars Wars Dub》**；2025「UK & Ireland」BSRLP831PIC，格式欄標 LP, Album, Record Store Day, Limited Edition, Picture Disc, Reissue；2026 UK BSRLP831PT。**十筆中零筆標 Unofficial Release。**",
+    "src": "https://www.discogs.com/master/507864"
+   },
+   {
+    "f": "Apple 逐條查證：以「Phil Pratt Star Wars Dub」與「Star Wars Dub」兩組關鍵詞分別搜英國與美國店面。掛 Phil Pratt 的唯一專輯條目是 collectionId 1357796473《The War is On Dub Style》，12 軌、copyright 欄「℗ 2018 Pressure Sounds」；逐軌核對其曲名（〈The War Is On〉〈Danger Zone〉〈Easy Street Special〉…〈My Time (12\" Mix)〉），**與本張 9 軌的曲目表無一軌相同**。其餘命中都是同名詞的誤配（Easy Star All-Stars 的《Dub Side of the Moon》、Star Wars 電影配樂的翻奏單曲等）。",
+    "src": "https://itunes.apple.com/lookup?id=1357796473&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌把這張碟壓了半個世紀：1978 年的黑膠與卡帶，一路到 2026 年的新編號",
+   "同一個資料庫裡，專輯層寫 Phil、單張碟上寫 Phill",
+   "製作人欄與封套設計欄——整張碟的 credit 只有這兩條"
+  ],
+  "sound": "九首分兩面，A 面五首、B 面四首。Discogs 原盤條目與 MusicBrainz 那筆 1978 release 登錄的曲長逐軌相同：最短的一軌 2:56、最長的一軌 4:47。style 欄只掛 Dub 一項，credit 欄裡沒有任何演奏或工程掛名，只有製作人與封套設計。（本欄由 Discogs 原盤條目與 MB 1978 release 的曲長表、以及該條目的 style／credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "African Communication",
+   "Star Wars",
+   "Tower Dub"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "note": "1978 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1978、MB 轄下 1978 GB release 的 date 欄 1978、Discogs 原盤 1093433 的 released 欄 1978、Discogs master 507864 的 year 欄 1978。**只能寫到年**：四個來源都沒有月與日。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：**Burning Sounds 這條線**（〈Impressions of Leroy Smart〉〈Mysterious〉〈Majority Rule〉〈Diamonds〉四張禁用，只能寫自己那張的編號）。**但這條線的 facts 只撐得住一件事**：Discogs master 507864 版本欄顯示這張碟由 Burning Sounds 系的廠牌在 1978、2016、2020、2024、2025、2026 各出過版本、載體含黑膠、卡帶、CD 與 picture disc。**廠牌的成立、經營者、目錄規模、與 Burning Vibrations 的關係——全部沒有來源，一律不得寫**（第 138 條：分到的線撐不住就讓它閒置）。\n\n**⚠ 身分：兩層不一致，兩層都要寫成資料庫的欄位（第 136 條），行文禁止斷言。**\n(1) **掛名層**：MB 的 release-group artist-credit 是「Phil Pratt」（單 l），**但它轄下兩筆 release 的 artist-credit 都是「Phill Pratt」（雙 l）**；Discogs 原盤條目的 artists 欄是「Phil Pratt」、anv 欄是「Phill Pratt」。卡片依第 6／120 條採 MB 藝人實體的「Phil Pratt」，**要提雙 l 只能寫成「唱片上／條目的 anv 欄寫的是 Phill」**。\n(2) **本名與生年層**：MB 藝人實體的 Legal name alias 是「**George Philips**」（單 l）、life-span begin **1950**、country **GB**；英文維基〈Phil Pratt〉條目寫本名「**George Phillips**」（雙 l）、**1942 年生於金斯敦**。**四個值裡三個對不上。行文禁止給本名的單一拼法、禁止給生年。**\n(3) **卒年只有一個來源**：MB 藝人實體的 life-span end 是 **2026-02-25**、ended true；**英文維基那個條目仍列在 Living people 分類、沒有 death_date**。**因此不得寫他過世**——只能寫成「MusicBrainz 的藝人條目把 life-span 記到 2026-02-25」，而且**建議下游乾脆不寫這一項**（單一來源、兩邊矛盾，第 136 條）。\n(4) **製作人／藝人身分**：Discogs 原盤條目的 Producer 欄是他自己，**這是本張唯一的 credit 依據**。**不得把 MB 的 artist-credit 當成演奏者名單**（策展層已提醒），也**不得寫他「主要以製作人身分為人所知」**——那是策展層的判斷，不是 facts（第 142 條）。維基那段製作生涯**可以寫，但一律寫成「英文維基百科的 Phil Pratt 條目說」**（第 128 條），且**只採帶行內引註的段落**——條目第三、四段（Channel One、Terminal 廠牌、搬去倫敦開餐廳）與整個 Discography 清單**沒有任何行內引註，禁止採用**（第 40／80 條）。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 9**——MB 1978 release 的 track-count 是 9、Discogs 原盤條目的曲目表也是 9 個曲位，兩庫一致；曲長也兩庫逐軌相同，**可以直接寫**（本組少數曲長有雙來源的卡）。\n(2) **第 8 軌不得指名**：Discogs 原盤與 MB 1978 那筆寫〈Concertman〉，MB 2024 那筆的黑膠片寫〈Concert Man〉、CD 片寫〈Concertman〉——同一筆 release 裡兩片就不一致。其餘 8 軌一致，可以指名。\n(3) **2024 年那筆的《Stars Wars Dub》是 Discogs 標題欄的誤植**，只能寫成「版本欄上那一筆的標題欄多了一個 s」，**不得寫成這張碟改過名**。\n(4) Limited Edition／Record Store Day／Picture Disc 這些字樣**只能當版本欄的字樣引用，不得展開成稀有度、限量或收藏價值**（第 109 條，全組共用禁令第 1 條）。\n(5) **試聽：Apple 上查無，確認是真的沒有。** 已依第 152 條做兩路查詢（掛名＋盤名、單獨盤名，英美兩店面各一次），掛 Phil Pratt 的唯一專輯條目是另一張碟《The War is On Dub Style》（℗ 2018 Pressure Sounds，12 軌，曲名與本張無一相同）。**探測層的 `unavailable` 判定成立，但理由要改寫**：不是「搜不到」，是「搜到的是同一人的另一張碟」。**《The War is On Dub Style》不得寫進行文。**\n(6) **不得由曲名〈Star Wars〉推論任何與電影的關係**（第 110 條）。"
+ },
+ {
+  "key": "desc2:Al Campbell|Diamonds",
+  "artist": "Al Campbell",
+  "album": "Diamonds",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1522216 的欄位：標題《Diamonds》、artists 欄「Al Campbell」；廠牌欄 Burning Sounds、編號 BS 1036；國別 UK；released 欄 1979；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，**style 欄是空的**；註記欄也是空的。",
+    "src": "https://www.discogs.com/release/1522216"
+   },
+   {
+    "f": "同一條目的 credit 欄五條：Producer「Linval Thompson」、Lacquer Cut By「Kevin Metcalfe」（anv Kev）、Sleeve, Design「Art In Heaven」、**Written-By「Al Campbell」其 tracks 欄寫「A1 to B3, B5」、Written-By「Linval Thompson」其 tracks 欄寫「B4」**。公司欄四條：Marketed By 與 Manufactured By 都是「Burning Sounds Ltd.」、Printed By「Robor Ltd.」、Published By「Burning Music (3)」。",
+    "src": "https://www.discogs.com/release/1522216"
+   },
+   {
+    "f": "同一條目的曲目表共 10 個曲位：A 面〈Show Me The Way〉〈Honey Come Back〉〈Jah Is Light〉〈Stay By My Side〉〈Send Love Oh Jah〉；B 面〈Mr Wicked Man〉〈Diamonds〉〈Hey Little Girl〉〈It's Love〉〈Cornal Mind〉。曲長欄 10 軌全部空白。Matrix／Runout 兩欄：A 面「BS1036-A KEV」、B 面「BS1036-B」——A 面的刻紋裡有母帶師的簽名縮寫。",
+    "src": "https://www.discogs.com/release/1522216"
+   },
+   {
+    "f": "把 credit 欄的 tracks 欄對回曲目表逐項數過：作曲欄 A1 to B3 涵蓋 A1–A5 與 B1–B3 共八個曲位，加上 B5 共九個曲位掛 Al Campbell；掛 Linval Thompson 的只有 B4，也就是曲目表上的〈It's Love〉。",
+    "src": "https://www.discogs.com/release/1522216"
+   },
+   {
+    "f": "MusicBrainz release-group 958b4a37 的欄位：title《Diamonds》、first-release-date 1979、primary-type Album、secondary-types 空陣列、artist-credit「Al Campbell」、annotation 為 null；genre 欄只有 reggae 一票；url-rels 為空。",
+    "src": "https://musicbrainz.org/release-group/958b4a37-631e-477a-b21b-afac50aa411a"
+   },
+   {
+    "f": "MusicBrainz 轄下唯一那筆 release（bd8b9d5d）：1979、GB、status Official、廠牌欄 Burning Sounds、編號 BS 1036、packaging Cardboard/Paper Sleeve、barcode 欄是空字串、一張 12\" Vinyl、track-count **10**；逐軌曲長 2:49、4:05、3:30、3:42、2:46、3:03、2:06、2:51、3:26、2:58，曲名與曲序與 Discogs 原盤逐項相同（MB 的〈Cornal Mind〉拼法亦同）。",
+    "src": "https://musicbrainz.org/release/bd8b9d5d-af8f-4fac-94fa-fda7016c011c"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 dcb7e5af 的欄位：name「Al Campbell」、sort-name「Campbell, Al」、type Person、gender Male、country JM、area Jamaica、begin-area Kingston、life-span begin **1954-08-31**、ended false、**disambiguation 欄寫「Alphonso Campbell」**；aliases 欄只有一筆「Al Cambell」（拼寫變體，無類型）。",
+    "src": "https://musicbrainz.org/artist/dcb7e5af-86dd-4c2f-bed1-12b14b32a783"
+   },
+   {
+    "f": "Discogs master 686357 的 versions 只有 3 筆：1979 UK Burning Sounds BS 1036 兩筆黑膠（release 1522216 與 5681947）、2017 UK Burning Sounds BSRLP947 黑膠（格式欄標 LP, Album, Reissue）。**三筆中零筆標 Unofficial Release，也沒有任何 CD 版本收在這個 master 底下。**",
+    "src": "https://www.discogs.com/master/686357"
+   },
+   {
+    "f": "Apple 英國店面 collectionId 1274199535 的欄位：collectionName《**Diamonds + Rainy Days**》、artistName「Al Campbell」、trackCount **19**、releaseDate 2017-09-01、copyright 欄「℗ 2017 Burning Sounds」、primaryGenreName Reggae。",
+    "src": "https://itunes.apple.com/lookup?id=1274199535&entity=song&country=gb"
+   },
+   {
+    "f": "逐軌核對那 19 軌：第 1–10 軌〈Show Me the Way〉2:53、〈Honey Come Back〉4:10、〈Jah Is Light〉3:32、〈Stay By My Side〉3:44、〈Send Love Oh Jah〉2:48、〈Mr Wicked Man〉3:07、〈Diamonds〉2:09、〈Hey Little Girl〉2:54、〈It's Love〉3:29、〈Cornal Mind〉3:00，**與本張原盤 10 軌逐項對應、曲序相同**；第 11–19 軌〈Give the People〉〈Words of Wisdom〉〈You've Got Soul〉〈Don't Cry〉〈Rainy Days〉〈I Want You Around〉〈Never Let You Down〉〈When Spring Is Around〉〈My Whole World〉共九軌，**沒有一首在本張的曲目表上，而且沒有任何 (Bonus Track) 之類的標記**——第 140 條說的二合一形狀。",
+    "src": "https://itunes.apple.com/lookup?id=1274199535&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌，九首的作曲欄是他自己，剩下那一首掛製作人的名字",
+   "A 面的刻紋裡刻著母帶師的三個字母：KEV",
+   "同名曲排在 B 面第二首，兩分零六秒"
+  ],
+  "sound": "十首分兩面，各五首。MusicBrainz 那筆 1979 年 Burning Sounds release 登錄的曲長最短 2:06、最長 4:05——最短的那一首正是同名曲〈Diamonds〉。Discogs 原盤條目的 credit 欄裡沒有任何演奏掛名，只有製作人 Linval Thompson、刻紋師 Kevin Metcalfe、封套設計，以及兩條作曲欄。（本欄由 MB 1979 release 的曲長表與 Discogs 原盤條目的 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Show Me The Way",
+   "Diamonds",
+   "It's Love"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1979,
+   "note": "1979 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1979、MB 轄下唯一那筆 release 的 date 欄 1979、Discogs 原盤 1522216 的 released 欄 1979、Discogs master 686357 的 year 欄 1979。**只能寫到年**：四個來源都沒有月與日。Apple 的 releaseDate 2017-09-01 與 ℗ 2017 是那筆二合一 CD 的年份，**與本張無關**。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：本卡沒有分到跨卡的線。**Burning Sounds 廠牌線歸〈Star Wars Dub〉、Linval Thompson 的製作人線歸〈Mysterious〉，本卡兩條都禁用**——只能寫成「本張的 Producer 欄是 Linval Thompson」這一句單筆引用。\n\n**⚠ 本卡推翻探測層：`previews.json` 標 `ready` 是錯的（第 129／140／141 條）。**\nApple collectionId 1274199535《Diamonds + Rainy Days》**是二合一，不是本張**：19 軌裡第 1–10 軌是本張、第 11–19 軌整段是另一張專輯的曲目、一首都不在本張曲目表上、而且**完全沒有 Bonus 標記**；盤名自己用「+」把兩張碟串起來；℗ 2017 Burning Sounds。**建議下游把本卡的固定試聽改判為無來源。** 若管線仍要用這個 collectionId，**行文一律不得引用它的軌數、曲長，也不得提第 11–19 軌或另一張碟的盤名。** 策展層在 `curatorRisk` 已預判這一點（「那是 BSRCD953 那張二合一 CD……固定試聽不得直接採用」），**研究層逐軌核對後確認策展層是對的，是探測層漏標。**\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 10**——MB 唯一那筆 release 的 track-count 是 10、Discogs 原盤條目的曲目表也是 10 個曲位，兩庫一致；十軌的曲名兩庫也逐項相同，**可以指名任何一軌**。\n(2) **曲長只能引 MB 那筆 1979 release**（Discogs 原盤條目的曲長欄是空的）；**不得引用 Apple 那一版的曲長**（見上），兩者逐軌相差二到五秒。\n(3) **作曲欄的分佈可以寫，但必須照 facts 數過的結果寫**：九個曲位掛 Al Campbell、一個曲位（B4〈It's Love〉）掛 Linval Thompson（第 154 條要求的逐項數過已做，見 facts 第四條）。**不得寫成「幾乎全是自己寫的」這類沒有數過的歸納。**\n(4) 藝人的本名「Alphonso Campbell」是 MB 的 disambiguation 欄、生日 1954-08-31 是 life-span 欄——**只能寫成「MusicBrainz 藝人條目的欄位這樣記」**（第 136 條），本卡沒有第二個來源可以交叉驗證。\n(5) **不得寫池中撞卡的事**（策展層提到 Lil Peep 那張同名碟）——那是管線內部狀態。\n(6) **不得寫這張碟很難買到、沒有 CD 版本、或它在 Al Campbell 目錄裡的位置**（第 109／142 條）。"
+ },
+ {
+  "key": "desc2:Prince Jazzbo|Kick Boy Face",
+  "artist": "Prince Jazzbo",
+  "album": "Kick Boy Face",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 6870402 的欄位：標題《Kick Boy Face》、artists 欄「Prince Jazzbo」；廠牌欄 Third World、編號 TWLP 109；國別 UK；released 欄 1976；格式 Vinyl ×1［LP］（格式描述欄只有 LP，**沒有 Album**）；genre 欄 Reggae，style 欄 Toasting 與 Roots Reggae。",
+    "src": "https://www.discogs.com/release/6870402"
+   },
+   {
+    "f": "同一條目的註記欄逐句：「Front sleeve says: \"Starring : DJ Galore\".」「This sleeve - w/ the Stokenewington-adress on the back - was concepted for a Various Artists-album. The backside of the sleeve has the original line up w/ titles covered by a sticker which made this sleeve a \"Prince Jazzbo\"-record.」；並記封底另印「Mixed At King Tubby Studio Kingston, Jamaica／Distributed By Third World Recording Co.Ltd／113A Stokenewington Road London N 16／Tyrone Whyte: Freelance Graphics」。",
+    "src": "https://www.discogs.com/release/6870402"
+   },
+   {
+    "f": "同一條目的註記欄還逐條列出封套與曲目表對不上的三處：「A4 has it \"Nigger Is A Winner\" on sleeve.」「B2 has it \"Church Is A Rome\" on sleeve.」「B4 has it \"Rello\" on sleeve.」——也就是封套上的這三個曲名與條目採用的曲名不同。",
+    "src": "https://www.discogs.com/release/6870402"
+   },
+   {
+    "f": "同一條目的 credit 欄五條：Producer「Bunny Lee」與「Prince Jazzbo」、Arranged By「Bunny Lee」與「Prince Jazzbo」、Artwork [Graphics]「Tyrone Whyte」。公司欄三條：Marketed By「Third World Recording Co. Ltd.」、Published By「Third World Music」、Mixed At「King Tubby's Studio」。Matrix／Runout 兩欄：A 面「TW LP 109 A」、B 面「TW LP 109 B」。",
+    "src": "https://www.discogs.com/release/6870402"
+   },
+   {
+    "f": "同一條目的曲目表共 10 個曲位：A 面〈Kick Boy Face〉〈I And I〉〈Hand Of Babylon〉〈Nigger A Winner〉〈Virgin〉；B 面〈Rebel Boy〉〈Church Is A Home〉〈For Star〉〈Hello〉〈Youth In Service〉。曲長欄 10 軌全部空白。",
+    "src": "https://www.discogs.com/release/6870402"
+   },
+   {
+    "f": "MusicBrainz release-group aa08c5cb 的欄位：title《Kick Boy Face》、first-release-date 1976、primary-type Album、secondary-types 空陣列、artist-credit「Prince Jazzbo」、annotation 為 null；genre 欄 reggae 與 roots reggae 各 1 票；url-rels 為空。",
+    "src": "https://musicbrainz.org/release-group/aa08c5cb-3173-44ab-8988-cb85decc4af4"
+   },
+   {
+    "f": "MusicBrainz 轄下唯一那筆 release（4333bdc5）：1976、GB、status Official、廠牌欄 Third World、編號 TWLP 109、一張 12\" Vinyl、track-count **10**，曲名與曲序與 Discogs 原盤逐項相同；曲長欄 10 軌全部空白。",
+    "src": "https://musicbrainz.org/release/4333bdc5-1124-43fd-b493-66087e2ce78d"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 1751fa84 的欄位：name「Prince Jazzbo」、sort-name「Prince Jazzbo」、type Person、gender Male、country JM、area Jamaica、begin-area **Clarendon**、life-span begin **1951-09-03**、end **2013-09-11**、ended true；aliases 欄只有一筆「Linval Roy Carter」，標 Legal name、locale en_JM。url-rels 裡掛了**兩個**不同的 Discogs 藝人頁（artist/589565 與 artist/94504）。",
+    "src": "https://musicbrainz.org/artist/1751fa84-9e85-4c71-8330-2c7075dff06e"
+   },
+   {
+    "f": "Discogs master 820477 的 versions 只有 3 筆：1976 UK Third World TWLP 109 黑膠（原盤）；2016 **Germany** Third World TWLP 109 黑膠，格式欄標 LP, Reissue；以及一筆 released 欄為 0（無年份）的 UK Third World TWLP 109，格式欄標 LP, Repress。**三筆都用同一個目錄號，且零筆標 Unofficial Release。**",
+    "src": "https://www.discogs.com/master/820477"
+   },
+   {
+    "f": "英文維基百科〈Prince Jazzbo〉條目（帶行內引註的段落）說：本名 Linval Roy Carter，1951 年 9 月 3 日生於牙買加 Clarendon 教區、在金斯敦長大，2013 年 9 月 11 日過世（註腳掛 2013 年《Jamaica Observer》的兩篇報導）；條目說他從 Spanish Town 的 The Whip 等 sound system 起家，1970 年代初開始在 Coxsone Dodd 的 Studio One 以 Prince Jazzbo 之名錄音，也替 Glen Brown 與 Lee \"Scratch\" Perry 錄過，之後與 Bunny Lee 合作自己的發行、並經營自己的廠牌 Ujama；另記他 1975 年與另一位 toaster I-Roy 有一場「在唱片上互相回嗆」的著名對打（註腳掛 AllMusic 的 I-Roy 傳記）。",
+    "src": "https://en.wikipedia.org/wiki/Prince_Jazzbo"
+   },
+   {
+    "f": "Apple 逐條查證：以「Prince Jazzbo Kick Boy Face」與「Kick Boy Face」兩組關鍵詞分別搜英國與美國店面。掛 Prince Jazzbo 的條目**一筆都沒有**（前一組兩個店面都回 0 筆）；後一組回的全部是同名詞誤配（Phil Collins《Face Value》、KIDZ BOP 系列等）。",
+    "src": "https://itunes.apple.com/search?term=Prince%20Jazzbo%20Kick%20Boy%20Face&entity=album&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "這個封套原本是為一張合輯做的——貼一張貼紙，就變成他的個人專輯",
+   "封面上印的是「Starring : DJ Galore」",
+   "封套上的三個曲名，跟曲目表上的三個對不起來"
+  ],
+  "sound": "十首分兩面，各五首（Discogs 條目 6870402 的曲目表）。條目的 style 欄掛 Toasting 與 Roots Reggae，製作與編曲欄各掛兩個名字——Bunny Lee 與他自己；公司欄的 Mixed At 寫 King Tubby's Studio。**曲長無從引用**：Discogs 與 MusicBrainz 兩邊的曲長欄 10 軌全部是空的。（本欄由 Discogs 原盤條目的曲目表、style 欄與 credit／公司欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Kick Boy Face",
+   "Hand Of Babylon",
+   "Youth In Service"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1976,
+   "note": "1976 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1976、MB 轄下唯一那筆 release 的 date 欄 1976、Discogs 原盤 6870402 的 released 欄 1976、Discogs master 820477 的 year 欄 1976。**只能寫到年**：四個來源都沒有月與日。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：**Third World Records 這條線**（〈Forward on the Scene〉與〈No Dread Can't Dead〉禁用，只能寫自己那張的編號）。**這條線的 facts 只撐得住兩件事**：本張條目的公司欄與封底字樣給出「Third World Recording Co. Ltd.，113A Stokenewington Road London N 16」這個地址、以及 Publisher 欄「Third World Music」。**廠牌的成立年、經營者、目錄規模一律沒有來源，不得寫**（第 138 條）。\n**取得（第二條）**：**封套設計師 Tyrone Whyte 這條線**——他同時出現在〈Impressions of Leroy Smart〉的 credit 欄，**那張禁止展開他**，只能寫「本張的封套設計欄是 Tyrone Whyte」；本卡可以引用封底把他寫成「Freelance Graphics」這個字樣。\n**本卡禁用**：Scientist／King Tubby's 的混音線（歸〈In Nah Disco Style〉）——本卡只能寫成「本張條目的 Mixed At 欄寫 King Tubby's Studio」這一句單筆引用，**不得展開那間錄音室**。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 10**——MB 唯一那筆 release 的 track-count 是 10、Discogs 原盤條目的曲目表也是 10 個曲位，兩庫一致。\n(2) **封套那段（貼紙、原本是合輯封套、Starring : DJ Galore）是 Discogs 條目註記欄寫的，一律寫成「Discogs 的原盤條目註記說」**（第 128 條）；**不得寫成「我們看到的封套是這樣」，也不得推論廠牌為什麼這麼做**（第 110／136 條）。\n(3) **A4／B2／B4 三軌不得指名**：Discogs 註記欄明寫封套上的曲名與條目採用的曲名不同（〈Nigger Is A Winner〉／〈Nigger A Winner〉、〈Church Is A Rome〉／〈Church Is A Home〉、〈Rello〉／〈Hello〉）。要提這三軌只能寫成「封套與曲目表的寫法不同」。其餘 7 軌兩庫與封套一致，可以指名。**另外，A4 那個曲名帶有今日不宜直接引用的字眼，行文請避開，改寫成「封套與曲目表在這一軌的寫法不同」即可。**\n(4) **不得寫壓量、稀有度或版本少**（第 109 條）——master 只有三筆這件事**不得寫成任何稀有度陳述**。\n(5) 藝人的本名、生卒、出生教區只能寫成「MusicBrainz 藝人條目與英文維基〈Prince Jazzbo〉條目記」（第 128／136 條），維基只採帶行內引註的段落（第 40／80 條）。\n(6) **試聽：Apple 上查無，確認是真的沒有。** 已依第 152 條做兩路查詢（掛名＋盤名、單獨盤名，英美兩店面各一次），**Apple 上完全沒有掛 Prince Jazzbo 的專輯條目**。**探測層的 `unavailable` 判定成立。**\n(7) 策展層提到 Pressure Sounds 2000 年的《Mr Funny》與 1974 年的 7 吋單曲版本——**Pressure Sounds 這條線歸〈Kool Roots〉，本卡禁用**；那些單曲本卡沒有查證，一律不得提。"
+ },
+ {
+  "key": "desc2:Owen Gray|Forward on the Scene",
+  "artist": "Owen Gray",
+  "album": "Forward on the Scene",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 2872169 的欄位：標題《Forward On The Scene》、artists 欄「Owen Gray」；廠牌欄 Third World、編號 TWLP 4；國別 UK；released 欄 1975；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，style 欄也只寫 Reggae。**註記欄整句只有一行：「Record label says \"Owen Grey\"」**（圓標上的拼法是 Grey，條目採用的是 Gray）。",
+    "src": "https://www.discogs.com/release/2872169"
+   },
+   {
+    "f": "同一條目的 credit 欄只有一條：Producer「Bunny Lee」；公司欄也只有一條：Printed By「Rema Reproductions Ltd.」；identifiers 欄（Matrix／Runout 那一類）**是空的**。",
+    "src": "https://www.discogs.com/release/2872169"
+   },
+   {
+    "f": "同一條目的曲目表共 12 個曲位：A 面〈When Will I Find My Way〉〈Will You Still Love Me Tomorrow〉〈Come To Me Darling〉〈Pick Your Choice〉〈Look What You've Done〉〈Cry Me A River〉；B 面〈Bongo Natty〉〈Give Me A Helping Hand〉〈Time After Time〉〈I Wonder Why〉〈Let The Music Roll On〉〈C.C. Rider〉。曲長欄 12 軌全部空白。",
+    "src": "https://www.discogs.com/release/2872169"
+   },
+   {
+    "f": "同一條目的曲位層 extraartists 欄只掛在 A 面六軌上：A1、A3、A4、A5 的 Written-By 欄寫「Owen Gray」；A2 的 Written-By 欄寫「Goffin And King」並標 Uncredited；A6 的 Written-By 欄寫「Jackie Opel」。**B 面六軌一條作曲掛名都沒有。**",
+    "src": "https://www.discogs.com/release/2872169"
+   },
+   {
+    "f": "MusicBrainz release-group c0e96770 的欄位：title《Forward on the Scene》、first-release-date 1975、primary-type Album、secondary-types 空陣列、artist-credit「Owen Gray」、annotation 為 null；genre 欄只有 reggae 一票；url-rels 為空。",
+    "src": "https://musicbrainz.org/release-group/c0e96770-86fd-4a08-98ea-afa09a49f7e0"
+   },
+   {
+    "f": "MusicBrainz 轄下唯一那筆 release（c34103ae）：1975、GB、status Official、廠牌欄 Third World、編號 TWLP 4、一張 Vinyl、track-count **12**，曲名與曲序與 Discogs 原盤逐項相同；曲長欄 12 軌全部空白。",
+    "src": "https://musicbrainz.org/release/c34103ae-6629-4b1e-904d-06df7f3f8a09"
+   },
+   {
+    "f": "Discogs master 805085 的欄位與版本：master 的 year 欄 1975、**main_release 指向的是 6727921（牙買加 Total Sounds TSL 103 那一筆），不是英國 Third World 那一筆**；master 的 style 欄寫 Roots Reggae 與 Rocksteady（與 release 2872169 的 style 欄「Reggae」不同）；master 曲目表的 A2 寫〈Will You Still Love Me〉（少了 Tomorrow）、B6 寫〈C.C.Rider〉（沒有空格）。versions 共 4 筆：1975 UK Third World TWLP 4 兩筆（release 2872169 與 12403868）、1975 Jamaica Total Sounds TSL 103 一筆、以及一筆 released 欄為 0 的 Canada Monica's Records RG 1002。",
+    "src": "https://www.discogs.com/master/805085"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 ee11baba 的欄位：name「Owen Gray」、sort-name「Gray, Owen」、type Person、gender Male、country JM、area Jamaica、begin-area Kingston、life-span begin **1939-07-05**、end **2025-07-20**、ended true、disambiguation「Jamaican reggae/ska/rocksteady musician」；aliases 欄只有一筆「Owen Grey」（拼寫變體，無類型）。",
+    "src": "https://musicbrainz.org/artist/ee11baba-0b24-428b-9fec-396662f40db9"
+   },
+   {
+    "f": "英文維基百科〈Owen Gray〉條目（帶行內引註的段落）說：1939 年 7 月 5 日生、2025 年 7 月 20 日過世，享年 86；條目說他九歲贏得第一次歌唱比賽、十二歲已公開演出並會打鼓、彈吉他與鍵盤，念過 Alpha Boys School、十九歲轉職業（註腳掛 Colin Larkin《The Virgin Encyclopedia of Reggae》與 AllMusic 的 Bruce Eder 傳記）。條目另說他是第一個在唱片上頌讚 sound system 的歌手——1959 年的〈On the Beach〉唱的是 Clement Dodd 的 Sir Coxsone Downbeat，也是 Dodd 的 Studio One 廠牌最早的發行之一；他也是最早由 Chris Blackwell 製作的藝人之一（1960 年），而他的單曲〈Patricia〉「是 Island Records 發行的第一張唱片」（註腳掛 Larkin 與 Dave Thompson 2002）。2023 年 8 月他獲頒牙買加的 Order of Distinction。",
+    "src": "https://en.wikipedia.org/wiki/Owen_Gray"
+   },
+   {
+    "f": "Apple 逐條查證：以「Owen Gray Forward on the Scene」與「Forward on the Scene」兩組關鍵詞分別搜英國與美國店面。前者兩個店面都回 0 筆；後者回的全部是同名詞誤配（Harry Potter 電影配樂、John Williams 作品集等），**沒有任何一筆掛 Owen Gray 或 Owen Grey**。",
+    "src": "https://itunes.apple.com/search?term=Owen%20Gray%20Forward%20on%20the%20Scene&entity=album&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "圓標上印的是 Grey，條目採用的是 Gray",
+   "A 面六首都有作曲掛名，B 面六首一條都沒有",
+   "同一批曲目在英國、牙買加、加拿大各出過一次"
+  ],
+  "sound": "十二首分兩面，各六首（Discogs 條目 2872169 的曲目表）。A 面六軌都有作曲掛名——四軌掛他自己、一軌掛 Goffin And King 並標 Uncredited、一軌掛 Jackie Opel；B 面六軌的作曲欄是空的。整張的 credit 欄只有一條製作人 Bunny Lee。**曲長無從引用**：Discogs 與 MusicBrainz 兩邊的曲長欄 12 軌全部是空的。（本欄由 Discogs 原盤條目的曲目表與曲位層 extraartists 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "When Will I Find My Way",
+   "Bongo Natty",
+   "C.C. Rider"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "1975 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1975、MB 轄下唯一那筆 release 的 date 欄 1975、Discogs 原盤 2872169 的 released 欄 1975、Discogs master 805085 的 year 欄 1975（master 底下三筆有年份的版本全部記 1975）。**只能寫到年**：四個來源都沒有月與日。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：本卡沒有分到跨卡的線。**Third World Records 廠牌線歸〈Kick Boy Face〉、Scientist／King Tubby's 混音線歸〈In Nah Disco Style〉，本卡兩條都禁用**——只能寫自己這張的編號 TWLP 4。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 12**——MB 唯一那筆 release 的 track-count 是 12、Discogs 原盤條目的曲目表也是 12 個曲位，兩庫一致。\n(2) **A2 與 B6 不得逐字指名**：Discogs 的 release 條目寫〈Will You Still Love Me Tomorrow〉與〈C.C. Rider〉，同一個 Discogs 的 **master** 卻寫〈Will You Still Love Me〉與〈C.C.Rider〉。要提這兩軌只能寫成「release 條目與 master 條目的寫法不同」。其餘 10 軌 release、master 與 MB 三處一致，可以指名。\n(3) **翻奏／作者只能照 Written-By 欄寫，不得由曲名推論**（第 110 條）。本卡可以寫的只有三件事：A2 的 Written-By 欄寫「Goffin And King」**而且標了 Uncredited**、A6 的 Written-By 欄寫「Jackie Opel」、A1/A3/A4/A5 的 Written-By 欄寫他自己。**不得寫這幾首是誰的原曲、不得寫〈C.C. Rider〉或〈Cry Me A River〉是翻唱**——那兩軌的 Written-By 欄一個是空的、一個掛的是 Jackie Opel，facts 撐不住任何「原曲是誰」的敘述。「Uncredited」這個標記本身可以寫，但要寫成「Discogs 的作曲欄標 Uncredited」（第 136 條）。\n(4) **B 面沒有作曲掛名這件事，只能寫成「Discogs 這個條目的 B 面六軌作曲欄是空的」**，不得寫成「唱片上沒印」（第 136 條）。\n(5) **三地發行只能寫成 Discogs 版本欄的內容**：版本欄有英國 Third World TWLP 4、牙買加 Total Sounds TSL 103、加拿大 Monica's Records RG 1002（**released 欄是 0，沒有年份**）。**不得寫成「同年在三地同時發行」**——加拿大那筆沒有年份（策展層寫成「三地各一次原始發行」，那是策展層的推論，第 142 條）。廠牌欄依第 85 條採原始廠牌 Third World。\n(6) **master 的 main_release 指向牙買加那筆**這件事可以寫成「Discogs master 的 main_release 欄指向的是 Total Sounds 那一版」，**不得由此推論哪一版才是原盤**。\n(7) 掛名的兩種拼法（Gray／Grey）可以寫，但**要寫成「Discogs 條目的註記欄說圓標上印的是 Owen Grey」**（第 128 條）。\n(8) 生卒年寫成「MusicBrainz 藝人條目與英文維基〈Owen Gray〉條目記」（兩邊一致：1939-07-05 生、2025-07-20 歿）；維基只採帶行內引註的段落（第 40／80 條）。\n(9) **試聽：Apple 上查無，確認是真的沒有。** 已依第 152 條做兩路查詢（掛名＋盤名、單獨盤名，英美兩店面各一次），**兩個店面都沒有任何掛 Owen Gray／Owen Grey 的命中**。**探測層的 `unavailable` 判定成立。**"
+ },
+ {
+  "key": "desc2:Jah Stitch|No Dread Can't Dead",
+  "artist": "Jah Stitch",
+  "album": "No Dread Can't Dead",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 2782515 的欄位：標題《No Dread Can't Dead》、artists 欄「Jah Stitch」；廠牌欄 Third World、編號 TWS 401；**國別 UK**；released 欄 1976；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，style 欄 Roots Reggae 與 Toasting；註記欄與 identifiers 欄都是空的。",
+    "src": "https://www.discogs.com/release/2782515"
+   },
+   {
+    "f": "同一條目的公司欄兩條：Mixed At「King Tubby's Studio」、Distributed By「Third World Recording Co. Ltd.」。",
+    "src": "https://www.discogs.com/release/2782515"
+   },
+   {
+    "f": "同一條目的 credit 欄共 17 條，而且**幾乎每一條都附了一個不同的 anv（唱片上的實際寫法）**：Producer 與 Arranged By「Bunny Lee」；Composed By「Jah Stitch」（anv Jah Stittch）；Bass「Lloyd Parks」（anv Lloyd Sparks）與「Robbie Shakespeare」（anv Robert Shakespear Alias Rabby）；Drums「Carlton \"Santa\" Davis」（anv Carlton Davies Alias Santa）與「Sly Dunbar」；Lead Guitar「Earl \"Chinna\" Smith」（anv Earl Smith Alias Chinner）；Rhythm Guitar「Boofa」（anv Doepea）與「Tony Chin」（anv Tony Chinn）；Organ「Ansel Collins」與「Bernard \"Touter\" Harvey」（anv Burnard Harvey Alias Stouter）；Piano「Johnny Clarke」（anv Johnie Clarke）、「Ossie Hibbert」（anv Aussie Hebert Alias Nogo）與「Tarzan Nelson」（anv Tarzan Alias Cripple）；Percussion「Barnabas」（anv Barny Bass）與「Noel \"Scully\" Simms」（anv Skulli）。",
+    "src": "https://www.discogs.com/release/2782515"
+   },
+   {
+    "f": "同一條目的曲目表共 12 個曲位：A 面〈Two Roads Before You〉〈Grey Etopian〉〈Let Love Stay〉〈See And Blind〉〈Bawl For The Rootes〉〈No Dread Can't Dead〉；B 面〈Watch Your Step〉〈Every Wicked Have To Crawl〉〈It Dread In A Rome〉〈Reggae Muffin Style〉〈Heavy Heavy Stuff〉〈Sinners Repent Your Soul〉。曲長欄 12 軌全部空白。",
+    "src": "https://www.discogs.com/release/2782515"
+   },
+   {
+    "f": "MusicBrainz release-group 79730891 的欄位：title《No Dread Can't Dead》、first-release-date 1976、primary-type Album、secondary-types 空陣列、artist-credit「Jah Stitch」、annotation 為 null；genre 欄 reggae 與 roots reggae 各 1 票；url-rels 為空。",
+    "src": "https://musicbrainz.org/release-group/79730891-969e-3b03-a608-3b79c7239c00"
+   },
+   {
+    "f": "MusicBrainz 轄下唯一那筆 release（56a8fb7f）：1976、**country JM**、status Official、廠牌欄 Third World、編號 TWS 401、packaging Cardboard/Paper Sleeve、barcode 欄是空字串、一張 12\" Vinyl、track-count **12**；曲長欄 12 軌全部空白。",
+    "src": "https://musicbrainz.org/release/56a8fb7f-ae45-497f-afcf-4383c47d58c2"
+   },
+   {
+    "f": "兩庫曲目表逐項比對：軌數都是 12、A 面六軌對應相同（只有拼法差異：MB〈Grey Ethiopian〉／Discogs〈Grey Etopian〉，MB〈Bawl for the Roots〉／Discogs〈Bawl For The Rootes〉）；**B 面的曲序兩庫不同**——MB 記〈Watch Your Step〉〈Every Wicked Have to Crawl〉〈Reggae Muffin Style〉〈Heavy Heavy Stuff〉〈Sinners Repent Your Soul〉〈It Dread in a Rome〉，Discogs 記〈Watch Your Step〉〈Every Wicked Have To Crawl〉〈It Dread In A Rome〉〈Reggae Muffin Style〉〈Heavy Heavy Stuff〉〈Sinners Repent Your Soul〉。",
+    "src": "https://musicbrainz.org/release/56a8fb7f-ae45-497f-afcf-4383c47d58c2"
+   },
+   {
+    "f": "Discogs master 321897 的 versions 只有 2 筆，兩筆都是 1976 年 UK、廠牌 Third World、編號 TWS 401 的黑膠（release 2782515 與 2729707）。**沒有任何一筆是復刻，也沒有任何一筆標 Unofficial Release。**master 的 year 欄 1976，曲目表與 release 2782515 逐項相同。",
+    "src": "https://www.discogs.com/master/321897"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 3e995ad6 的欄位：name「Jah Stitch」、sort-name「Jah Stitch」、type Person、gender Male、country JM、area Jamaica、begin-area Kingston、life-span begin **1949-07-27**、end **2019-04-28**、ended true、disambiguation 欄是空的；aliases 欄只有一筆「Jah Stich」（少一個 t 的拼寫變體）。url-rels 只有兩條：Discogs 藝人頁與 Wikidata。",
+    "src": "https://musicbrainz.org/artist/3e995ad6-51aa-4733-a8ea-bd7944ef9fbe"
+   },
+   {
+    "f": "Apple 英國店面 collectionId 1800033922（探測層採用的那一筆）的欄位：collectionName《No Dread Can't Dead》、artistName「Jah Stitch」、trackCount **16**、releaseDate 2007-11-28、copyright 欄「**℗ 2021 Gorgon Music**」、primaryGenreName Reggae。",
+    "src": "https://itunes.apple.com/lookup?id=1800033922&entity=song&country=gb"
+   },
+   {
+    "f": "逐軌核對那 16 軌與 1976 年原盤的 12 軌：Apple 那筆的第 1、3、4、5、8、9、10、11、12、13、14、16 軌（〈Give the Glory〉〈Greedy Girl〉〈Make a Joyful Noise〉〈African People〉〈King of the Arena〉〈Militant Man〉〈War Is Ugly〉〈Real Born African〉〈Cool Down Youthman〉〈The Killer〉〈Autumn Season〉〈Crazy Joe〉）**一首都不在原盤的曲目表上**；只有第 2〈Ragga Muffin Style〉、第 7〈Sinners Repent Your Soul〉、第 15〈No Dread Can't Dead〉三軌與原盤曲名對得上（第 6〈Watch You're Step Youthman〉與原盤的〈Watch Your Step〉是不同的字串），**而且曲序完全不同、沒有任何 Bonus 標記**。",
+    "src": "https://itunes.apple.com/lookup?id=1800033922&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "十七條 credit，幾乎每一條都附一個唱片上的別種寫法",
+   "同一個名字在唱片上是 Lloyd Sparks，在條目裡是 Lloyd Parks",
+   "一個資料庫把它記成英國盤，另一個記成牙買加盤"
+  ],
+  "sound": "十二首分兩面，各六首（Discogs 條目 2782515 的曲目表）。條目的 style 欄掛 Roots Reggae 與 Toasting，公司欄的 Mixed At 寫 King Tubby's Studio，credit 欄列出的樂手多達十幾位、分佈在貝斯、鼓、吉他、風琴、鋼琴與打擊各聲部。**曲長無從引用**：Discogs 與 MusicBrainz 兩邊的曲長欄 12 軌全部是空的，而 Apple 上那筆有曲長的條目不是這張碟（見 notes）。（本欄由 Discogs 原盤條目的曲目表、style 欄與 credit／公司欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Two Roads Before You",
+   "No Dread Can't Dead",
+   "Every Wicked Have To Crawl"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1976,
+   "note": "1976 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1976、MB 轄下唯一那筆 release 的 date 欄 1976、Discogs 原盤 2782515 的 released 欄 1976、Discogs master 321897 的 year 欄 1976（master 底下兩筆都記 1976）。**只能寫到年**：四個來源都沒有月與日。Apple 那筆的 releaseDate 2007-11-28 與 ℗ 2021 屬於另一張碟（見 notes），**不得拿來當年份佐證**。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：本卡沒有分到跨卡的線。**Third World Records 廠牌線歸〈Kick Boy Face〉、Scientist／King Tubby's 混音線歸〈In Nah Disco Style〉，本卡兩條都禁用**——只能寫成「本張條目的 Mixed At 欄寫 King Tubby's Studio」這一句單筆引用。**本卡實際可寫的獨有材料是那 17 條 credit 與其 anv 欄**（本組沒有第二張卡有這種形狀）。\n\n**⚠ 本卡推翻探測層：`previews.json` 標 `ready` 是錯的（第 129／140／141 條）。**\nApple collectionId 1800033922 **不是 1976 年的原盤**：16 軌裡有 12 軌不在原盤曲目表上、曲序與原盤完全不同、沒有任何 Bonus 標記，℗ 年是 2021 Gorgon Music、releaseDate 2007-11-28。**它只是沿用了本張的盤名。** 策展層在 `curatorRisk` 已預判會踩到這一類（它看到的是另一筆 50 軌的合輯 1798950864），**研究層逐軌核對後確認：探測層挑中的 1800033922 同樣不是原盤。建議下游把本卡的固定試聽改判為無來源。** 若管線仍要用這個 collectionId，**行文一律不得引用它的軌數、曲長、曲名或年份。**\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 12**——MB 唯一那筆 release 的 track-count 是 12、Discogs 原盤條目的曲目表也是 12 個曲位，兩庫一致。\n(2) **B 面的曲序不得敘述、B 面各軌不得指名「第幾首」**：兩庫對 B 面六軌的排序不同（見 facts 第七條）。要提 B 面只能寫「B 面有這六首」，不能寫順序。A 面的〈Grey Etopian／Grey Ethiopian〉與〈Bawl For The Rootes／Bawl for the Roots〉兩軌**拼法兩庫不同，不得逐字指名**；A 面其餘四軌一致，可以指名。\n(3) **國別兩說**：MB 那筆 release 的 country 是 **JM**、Discogs 原盤條目的國別是 **UK**，而編號 TWS 401 掛的是 Third World。**行文禁止斷言這是哪一國的盤**，要提只能寫成「兩個資料庫記的國別不同」。廠牌欄依第 85 條採原始廠牌 Third World。\n(4) **那 17 條 credit 的 anv 欄可以逐條引用**（這是本卡最有力的材料），但**一律寫成「Discogs 這個條目的 anv 欄寫的是⋯⋯」**，不得寫成「唱片上印的是⋯⋯」——anv 是 Discogs 投稿者填的欄位（第 128／136 條）。**尤其不得推論這些拼法是為什麼出現的。**\n(5) 生卒年寫成「MusicBrainz 藝人條目記」（1949-07-27 生、2019-04-28 歿）——**本卡沒有第二個來源**，英文維基上沒有可用的條目（第 136 條）。\n(6) **不得寫這張碟沒有被復刻過、很少見、只有兩筆條目**（第 109 條）。策展層提到的 Attack 2007 年 CD 與 Blood & Fire 1996 年合輯《Original Ragga Muffin》——**Attack／Blood & Fire 這條線本來就分派給本卡，但 facts 撐不住**（Discogs master 321897 的版本欄裡兩筆都沒有），**因此讓它閒置，一律不得提**（第 138 條）。"
+ },
+ {
+  "key": "desc2:Johnny Clarke|Yard Style",
+  "artist": "Johnny Clarke",
+  "album": "Yard Style",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1976568 的欄位：標題《Yard Style》、artists 欄「Johnny Clarke」；廠牌欄兩筆都寫 Ariwa，編號欄一筆 ARI 007、一筆 ARI 007 LP；國別 UK；released 欄 1983；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，style 欄 Roots Reggae 與 Dub。Matrix／Runout 兩欄皆標 etched：A 面「LP-007-A-1 MT.」、B 面「LP-007-B-1 MT.」。",
+    "src": "https://www.discogs.com/release/1976568"
+   },
+   {
+    "f": "同一條目的公司欄七條：Recorded At 與 Mixed At 都是「Ariwa Sound Studio」、Published By「Ariwa Music」、Phonographic Copyright (p) 與 Copyright (c) 都是「Ariwa Sounds」、Plated At「Musitech」、Produced For「Ariwa Music Ltd.」。",
+    "src": "https://www.discogs.com/release/1976568"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Producer 三條——「Mad Professor」（同一條還掛 Percussion）、「Jah Dave」、「Johnny Clarke」；Written-By 三條——「Johnny Clarke」「Mad Professor」「The Sane Inmates」；Bass「Deuce (6)」「Michael Gayle」「Preacher (3)」與「Larry Silvera」（同條掛 Guitar）；Drums「Benbow」「Billy Cross」「Errol Francis」（anv Errol The General）「Terry Crooks」；Keyboards「Johnny Clarke」「King Asher」「Sgt. Pepper」；Guitar「Patrick Donegan」；Flute「Kate Holmes」；Horns「Tabanko & Roger」；Synthesizer「Errol Reid (2)」；Percussion, Marimba「Jah Dave」；Photography「Jon Futrell」。",
+    "src": "https://www.discogs.com/release/1976568"
+   },
+   {
+    "f": "同一條目的曲目表共 9 個曲位、**曲長欄有值**：A 面〈You`re All I Want〉3:01、〈Do I Do I〉4:14、〈Party〉6:39、〈Truth And Rights〉4:40；B 面〈Nuclear Weapon〉3:11、〈Mount Zion〉6:35、〈We Want To Be Free〉5:38、〈Dread Like A Lion〉2:12、〈Top Fight〉4:21。",
+    "src": "https://www.discogs.com/release/1976568"
+   },
+   {
+    "f": "MusicBrainz release-group 07c4b909 的欄位：title《Yard Style》、first-release-date 1983、primary-type Album、secondary-types 空陣列、artist-credit「Johnny Clarke」、annotation 為 null；genre 欄 dub、reggae、roots reggae 各 1 票。",
+    "src": "https://musicbrainz.org/release-group/07c4b909-dca8-3a54-8f6b-2f48bbdd09bc"
+   },
+   {
+    "f": "MusicBrainz 轄下 1983 GB 那筆 release（b7ab5bf1）：status Official、廠牌欄 Ariwa、**編號寫 ARILP 007**（Discogs 原盤條目寫的是 ARI 007／ARI 007 LP）、一張 Vinyl、track-count **9**，曲名與曲序與 Discogs 原盤逐項相同；曲長欄 9 軌全部空白。",
+    "src": "https://musicbrainz.org/release/b7ab5bf1-735d-4b43-bb70-a19dfcf6842d"
+   },
+   {
+    "f": "同 release-group 另兩筆 release：2006-07-18 status Official（廠牌欄 Ariwa、編號欄空、barcode 803680762653、Digital Media 9 軌、逐軌曲長 3:06、4:19、7:03、4:57、3:15、6:37、5:42、2:16、4:49）；2004 NL status **Bootleg**（Corn-Fed Productions CF 301、CD-R **12 軌**，第 10–12 軌是〈Nuclear Weapon (UK 12\")〉〈Reggae Music (UK 12\")〉〈Do de Dub (UK 12\")〉，而且它把第 9 軌記成〈Top Flight〉而非〈Top Fight〉）。",
+    "src": "https://musicbrainz.org/release-group/07c4b909-dca8-3a54-8f6b-2f48bbdd09bc"
+   },
+   {
+    "f": "Discogs master 1449710 的 versions 共 4 筆：1983 UK Ariwa ARI 007／ARI 007 LP 黑膠（原盤）；2004 荷蘭 Corn-Fed Productions CF 301 CDr，格式欄標「Album, Reissue, Unofficial Release」；2026 UK Ariwa 黑膠，編號欄同時列 ARI 007 LP 與 ARILP 007、格式欄標 LP, Album, Reissue；以及一筆 released 欄為 0（無年份）的 UK Ariwa 黑膠，編號與格式欄同前。",
+    "src": "https://www.discogs.com/master/1449710"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 3c79e3ff 的欄位：name「Johnny Clarke」、sort-name「Clarke, Johnny」、type Person、gender Male、country JM、area Jamaica、life-span begin **1955-01-12**、ended false、disambiguation「Jamaican reggae musician, also known as Shy Tony」；aliases 欄共 **13 筆**，其中「Shy Tony」與「Johhny Clarke」標 Artist name，其餘 11 筆（Janny Clark、Jhonny Clarke、John Clarke、Johney Clark、Johnie Clarke、Johnney Clarke、Johnnie 'Studio Idler' Clarke、Johnny Clare、Johnny Clark、Johnny Clarkel、Jonny Clarke）標 Search hint。",
+    "src": "https://musicbrainz.org/artist/3c79e3ff-f41b-45d8-af26-40151798056b"
+   },
+   {
+    "f": "Apple 英國店面 collectionId 187684676 的欄位：collectionName《Yard Style》、artistName「Johnny Clarke」、trackCount **9**、releaseDate 1983-07-01、copyright 欄「**℗ 1983 Ariwa Sounds**」、primaryGenreName Reggae。逐軌〈You're All I Want〉3:06、〈Do I Do I〉4:19、〈Party〉7:03、〈Truth and Rights〉4:57、〈Nuclear Weapon〉3:15、〈Mount Zion〉6:37、〈We Want to Be Free〉5:42、〈Dread Like a Lion〉2:16、〈Top Fight〉4:49——**軌數、曲序與原盤逐項相同，無多曲無缺曲、無別張專輯的曲目**，曲長與 MB 那筆 2006 年數位版逐軌相同。",
+    "src": "https://itunes.apple.com/lookup?id=187684676&entity=song&country=gb"
+   },
+   {
+    "f": "英文維基百科上「Ariwa」導向〈Mad Professor〉條目；該條目（帶行內引註、註腳掛 Colin Larkin 的百科）說：Mad Professor 本名 Neil Joseph Stephen Fraser，1955 年 3 月 27 日生於蓋亞那喬治敦，十三歲移居倫敦；1979 年他在 Thornton Heath 自宅的客廳開了自己的**四軌**錄音室 Ariwa Sounds，1982 年搬到 Peckham 換成八軌、後來擴到十六軌，之後又搬到 South Norwood，條目稱那是「英國最大的黑人擁有錄音室園區」。條目並說廠牌早期發行在雷鬼買家之間銷量不佳，到 1980 年代中期因 Sandra Cross、**Johnny Clarke**、Peter Culture、Pato Banton 與 Macka B 的作品而改觀。",
+    "src": "https://en.wikipedia.org/wiki/Mad_Professor"
+   }
+  ],
+  "hookCandidates": [
+   "製作人欄有三個名字，其中一個是唱歌的人自己",
+   "鍵盤欄也是他自己",
+   "MusicBrainz 替這個名字收了十三種拼法"
+  ],
+  "sound": "九首分兩面，A 面四首、B 面五首。Discogs 原盤條目登錄的曲長最短 2:12、最長 6:39；Apple 那一版與 MB 那筆 2006 年數位版登錄的曲長逐軌相同，最短 2:16、最長 7:03。錄音與混音欄都寫 Ariwa Sound Studio，演奏 credit 分佈在貝斯四人、鼓四人、鍵盤三人，另有長笛、管樂與合成器各一欄。（本欄由 Discogs 原盤條目與 Apple 條目的曲長表、以及該條目的公司欄與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Party",
+   "Nuclear Weapon",
+   "Mount Zion"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "note": "1983 維持卡單原值，五方一致無爭議：MB release-group first-release-date 1983、MB 轄下那筆 GB release 的 date 欄 1983、Discogs 原盤 1976568 的 released 欄 1983、Discogs master 1449710 的 year 欄 1983、Apple 條目的 copyright 欄 ℗ 1983 Ariwa Sounds。**Apple 的 releaseDate 是 1983-07-01**——月與日的部分依第 141 條附二視為佔位值，**只能寫到年**。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：**Ariwa 廠牌線與 Mad Professor 的角色**（〈Something Fishy Going On〉禁用這兩條，那張只能寫自己條目上的 Producer, Arranged By 欄與逐軌 credit）。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 9**——MB 那筆 1983 GB release 的 track-count 是 9、Discogs 原盤條目的曲目表也是 9 個曲位，兩庫一致。\n(2) **探測層標 `ready` 成立、而且是本組少數完全乾淨的一筆。** 已逐軌核對 Apple collectionId 187684676：9 軌、曲序與原盤逐項相同、無多曲無缺曲、無別張專輯的曲目，且 copyright 欄是 ℗ 1983 Ariwa Sounds（不是後來的復刻年）。**這是本組唯一一張 Apple 條目與原盤軌數、曲序、℗ 年三項全對的卡。**\n(3) **曲長有兩組值，引用時必須指明是哪一組**：Discogs 原盤條目（黑膠）記 3:01／4:14／6:39／4:40／3:11／6:35／5:38／2:12／4:21；Apple 與 MB 那筆 2006 數位版記 3:06／4:19／7:03／4:57／3:15／6:37／5:42／2:16／4:49。**兩組逐軌都不一樣，不得混用、不得取其一當唯一值**（第 141 條的「加限定語」處置）。\n(4) **目錄號兩種寫法都要帶著寫**：Discogs 原盤條目寫 ARI 007／ARI 007 LP，MB 那筆 release 寫 ARILP 007。**不得只寫一種**。\n(5) **不得寫 Corn-Fed 那筆 CF 301**（標 Unofficial／Bootleg，全組共用禁令第 2 條）；它多出來的三軌 12 吋版本也不得提。\n(6) 維基那段一律寫成「英文維基百科的 Mad Professor 條目說」（**「Ariwa」在維基上是導向 Mad Professor 的重定向，沒有獨立條目**，第 128 條），且只採帶行內引註的段落（第 40／80 條）——條目中「他因為小時候迷電子而被叫 Mad Professor」那句掛的是 {{fact}} 標籤（無來源），**禁止採用**。條目說 South Norwood 那處是「英國最大的黑人擁有錄音室園區」，那是條目的措辭，**要寫就照寫成條目說的，不得自己改成別的最高級**。\n(7) **不得寫這張碟是 Ariwa「開張頭十張 LP 之一」或「少數不掛 Mad Professor 名字的專輯」**——那是策展層的說法，facts 裡沒有任何一條支持（第 142 條）。編號 ARI 007／ARILP 007 這個數字**不得推論成出版序數**（第 125 條）。\n(8) MB 藝人條目那 13 筆 aliases **可以寫成「MusicBrainz 的藝人條目替這個名字收了十三筆別名，其中十一筆標 Search hint」**，但**不得寫成「他用過十三個名字」**——Search hint 是資料庫的查詢輔助欄位，不是藝名（第 136 條）。「Shy Tony」標 Artist name，這一筆可以寫成藝名。"
+ },
+ {
+  "key": "desc2:Ranking Ann|Something Fishy Going On",
+  "artist": "Ranking Ann",
+  "album": "Something Fishy Going On",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1225163 的欄位：標題《Something Fishy Going On》、artists 欄「Ranking Ann」；廠牌欄 Ariwa、編號 ARILP010；國別 UK；released 欄 1984；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae，style 欄 Reggae、Dub、Toasting；公司欄與 identifiers 欄**都是空的**。",
+    "src": "https://www.discogs.com/release/1225163"
+   },
+   {
+    "f": "同一條目的註記欄整段：「Side One has 5 tracks on cover and on center label but plays 6 tracks. Track 6 is A dub version to Hot! Hot! Hot!」——條目自己說封面與圓標上的 A 面只列五首、實際播出六首。",
+    "src": "https://www.discogs.com/release/1225163"
+   },
+   {
+    "f": "同一條目的曲目表登錄 9 個曲位：A 面〈Something Fishy Going On〉〈Call Me Ranking Ann〉〈Fifty Ways〉〈Stop Romance Inna Dance〉〈Hot! Hot! Hot!〉；B 面〈Dangerous M.C.〉〈Immigration Plan〉〈A Wa Do Men〉〈The Man Is Mine〉。曲長欄 9 軌全部空白。",
+    "src": "https://www.discogs.com/release/1225163"
+   },
+   {
+    "f": "同一條目的 credit 欄，**多數掛名帶曲位標記**：Producer, Arranged By「Mad Professor」；Bass「Bernard Cumberbatch」［A2, A4, A5, B1, B3］、「Preacher (3)」［A1, A3, B2］、「Brian Campbell (2)」［B1］；Drums「Billy Cross」（anv Billy \"Animal\" Cross）［A2, A5 to B3］、「Leroy \"Horsemouth\" Wallace」［A1, A3］、「Sgt. Pepper」［B4］；Keyboards「Sgt. Pepper」［A2, A5 to B3］、「Cleveland Neunie」［A1, A3］、「Flea (5)」［A4］、「Brian Campbell (2)」［B4］；Guitar「Rudy Dixon」［A5, B1］、「Tony Benjamin」［A4］、「Patrick Donegan」［B4］；Flute「Kate Holmes」［B3］；Steel Drums「Tamla」［B2］；Synthesizer「Errol Reid (2)」［B2］與「Mad Professor」［B2］；Percussion「Mad Professor」［A4, B1, B2］、「Alan King Pin」［A4］、「Tony Benjamin」［A4］；Horns「Tabanko & Roger」（無曲位標記）；Artwork By「Tony & Michael McDermott」。",
+    "src": "https://www.discogs.com/release/1225163"
+   },
+   {
+    "f": "同一條目的合唱與客席欄：Backing Vocals「Johnny Clarke」［B1］、「Bobby Davidson」［B1］、「Davina Stone」［B2］、「Jah Bunny」［B2］、「Jah Shaka」［B2］；Vocals [Guest] 兩條——「Mother Nature」與一條以 anv「Kojak」登錄的掛名（該筆的主名稱含今日不宜引用的字眼）。",
+    "src": "https://www.discogs.com/release/1225163"
+   },
+   {
+    "f": "MusicBrainz release-group e4ef6df4 的欄位：title《Something Fishy Going On》、first-release-date 1984、primary-type Album、secondary-types 空陣列、artist-credit「Ranking Ann」、annotation 為 null；genre 欄 dub 與 reggae 各 1 票；url-rels 一條，指向 Discogs master 235198。",
+    "src": "https://musicbrainz.org/release-group/e4ef6df4-6b1f-46b8-87c4-258a56d4b1c0"
+   },
+   {
+    "f": "MusicBrainz 轄下 1984 GB 那筆 release（e3f67076）：status Official、廠牌欄 Ariwa、編號 ARILP010、packaging Cardboard/Paper Sleeve、一張 12\" Vinyl、track-count **9**，曲名與 Discogs 原盤逐項相同（MB 寫〈Dangerous MC〉、Discogs 寫〈Dangerous M.C.〉）；曲長欄全空。同 release-group 另一筆 release（e4cccdf9）：date 欄是空字串、GB、status Official、廠牌 Ariwa、編號 ARICD 010、barcode 5020145800100、CD 一片 track-count **10**——多的那一軌排在第 6 位，是〈Hot! Hot! Hot! (Dub)〉，逐軌曲長 3:19、4:07、4:11、3:58、3:29、3:55、4:28、4:59、5:26、4:19。",
+    "src": "https://musicbrainz.org/release/e3f67076-18c5-4e8e-9e04-b1b4abf1c450"
+   },
+   {
+    "f": "Discogs master 235198 的 versions 共 7 筆，全部掛 Ariwa：1984 UK ARILP010 兩筆黑膠（release 1225163，以及 release 2196557，格式欄標 LP, Album, **White Label**）；2023 UK ARILP 010 黑膠標 LP, Album, Reissue；另有四筆 released 欄為 0（無年份）——兩筆 ARICD 010 的 CD（一筆標 Album, Reissue、一筆只標 Album）與兩筆 ARILP 010 的黑膠 Reissue。**七筆中零筆標 Unofficial Release。**",
+    "src": "https://www.discogs.com/master/235198"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 b383756f 的欄位：name「Ranking Ann」、sort-name「Ranking Ann」；**type、gender、country、area、life-span 全部是 null 或空**，disambiguation 欄是空的，aliases 欄是空的。url-rels 只有兩條：Discogs 藝人頁與 Wikidata。",
+    "src": "https://musicbrainz.org/artist/b383756f-8274-4304-aefb-2d38a67de884"
+   },
+   {
+    "f": "Apple 英國店面 collectionId 65866661 的欄位：collectionName《Something Fishy Going On》、artistName「Ranking Ann」、trackCount **10**、releaseDate 2000-12-04、copyright 欄「**℗ 1984 Ariwa Sounds Ltd.**」、primaryGenreName Reggae。逐軌〈Something Fishy Going On〉3:15、〈Call Me Ranking Ann〉4:04、〈Fifty Ways〉4:08、〈Stop Romance Inna Dance〉3:55、〈Hot! Hot! Hot!〉3:29、〈Hot! Hot! Hot! (Dub)〉3:52、〈Dangerous MC〉4:25、〈Immigration Plan〉4:55、〈A Wa Do Men〉5:22、〈The Man Is Mine〉4:19。",
+    "src": "https://itunes.apple.com/lookup?id=65866661&entity=song&country=gb"
+   },
+   {
+    "f": "逐軌核對 Apple 那 10 軌與 MB 那筆 ARICD 010 的 CD：曲名、曲序、以及〈Hot! Hot! Hot! (Dub)〉插在第 6 位這件事**逐項相同**，曲長逐軌相差二到四秒；**沒有任何一軌是別張專輯的曲目，也沒有多出來的 Bonus 軌**（第 140 條的兩項檢查都過）。Apple 那筆的 ℗ 年是 1984，與原盤同年。",
+    "src": "https://itunes.apple.com/lookup?id=65866661&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "封面與圓標上，A 面只列了五首；唱針走下去是六首",
+   "多出來的那一首，是前一首的 dub",
+   "credit 欄逐軌標到底：哪一首誰打鼓、哪一首誰彈貝斯"
+  ],
+  "sound": "貝斯、鼓、鍵盤、吉他的掛名在 Discogs 條目上是**逐曲位分派**的（例如鼓有兩位分別掛在不同的曲位上），另有長笛、鋼鼓、合成器、打擊與管樂各自的欄位；製作與編曲欄只有一個名字。曲長只能引 CD／數位那一版：MusicBrainz 那筆 ARICD 010 登錄的曲長最短 3:19、最長 5:26——**1984 年黑膠原盤的曲長欄在兩個資料庫都是空的**。（本欄由 Discogs 原盤條目的 credit 欄與 MB 那筆 CD release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Something Fishy Going On",
+   "Immigration Plan",
+   "A Wa Do Men"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1984,
+   "note": "1984 維持卡單原值，五方一致無爭議：MB release-group first-release-date 1984、MB 轄下那筆 GB 黑膠 release 的 date 欄 1984、Discogs 原盤 1225163 的 released 欄 1984、Discogs master 235198 的 year 欄 1984、Apple 條目的 copyright 欄 ℗ 1984 Ariwa Sounds Ltd.。**只能寫到年**：沒有任何來源給月與日。**Apple 的 releaseDate 2000-12-04 是上架日、不是發行日**，探測層記的 `appleYear` 2000 因此不是這張碟的年份（第 141 條附二）。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：本卡可以逐條寫**自己條目上的逐曲位 credit**（本組唯一有這種形狀的卡）。**Ariwa 廠牌線與 Mad Professor 的角色歸〈Yard Style〉，本卡禁用**——只能寫成「本張的 Producer, Arranged By 欄是 Mad Professor」以及他在幾個曲位上掛 Percussion／Synthesizer 這種單筆引用。\n\n**⚠ 本卡的原盤軌數兩說，依第 141 條末段：兩個都不填、行文禁止給總數。**\n- **9 一側**：Discogs 原盤條目的曲目表登錄 9 個曲位、MB 那筆 1984 黑膠 release 的 track-count 是 9。\n- **10 一側**：同一個 Discogs 條目的**註記欄自己說** A 面「封面與圓標列五首、實際播六首」，第六首是〈Hot! Hot! Hot!〉的 dub；MB 那筆 ARICD 010 的 CD 是 10 軌，多的正是插在第 6 位的〈Hot! Hot! Hot! (Dub)〉；Apple 那筆也是 10 軌、同樣的位置。\n**兩個數字各有來源、彼此不衝突**（一個是曲目表印出來的曲數、一個是實際收錄的曲數），依第 127 條附錄不得拿一個換另一個。**下游要提軌數就必須帶限定語**（「曲目表印九首」或「實際收十首」，擇一並註明是哪一種），**不得給一個沒有限定語的總數**。\n\n**本卡禁令**：\n(1) **探測層標 `ready` 成立。** 已逐軌核對 Apple collectionId 65866661 與 MB 那筆 ARICD 010：曲名、曲序、dub 軌的位置逐項相同，無別張專輯的曲目、無 Bonus 軌，℗ 年 1984 與原盤同年。**但它對應的是含 dub 軌的那一版（10 軌），不是曲目表上的九首**——引用曲長一律寫成「CD／數位那一版登錄的曲長」（第 136 條）。\n(2) **B1 那一軌不得逐字指名**：Discogs 寫〈Dangerous M.C.〉、MB 與 Apple 寫〈Dangerous MC〉。其餘各軌一致，可以指名。\n(3) **逐曲位 credit 可以寫，但一律照 facts 的曲位標記寫**，**不得歸納成「幾首歌有誰」這類計數句**（第 154 條）。要形容分佈就寫具體的曲位（「A1 與 A3 的鼓掛 Leroy \"Horsemouth\" Wallace」），不要寫「多少軌」。\n(4) **客席人聲欄那筆以 anv「Kojak」登錄的掛名，主名稱含今日不宜引用的字眼——行文一律只寫 anv「Kojak」，或整條不提。** 同理，任何曲名／掛名帶類似字眼的（本組另有〈Kick Boy Face〉那張的 A4）都比照辦理。\n(5) **不得寫這個人是誰、哪裡人、是不是首張專輯**——MB 藝人實體的 type／country／area／life-span 全空，aliases 是空的，**英文維基上沒有 Ranking Ann 條目**（查過，回 MISS）。策展層說這是「倫敦女性 deejay 的首張專輯」，**facts 撐不住，不得入文**（第 142／136 條）。\n(6) **不得寫日本 Octave Lab／Ultra-Vybe 的那兩張合輯**——策展層自己也註明那是合輯不是本張的復刻；本卡沒有查證，一律不得提。\n(7) 「White Label」那筆**只能當版本欄的字樣引用，不得展開成稀有度或宣傳盤敘事**（第 109／136 條）。\n(8) **女性 deejay／lovers rock 場景的整體敘事**：本卡與〈Feelings〉各寫自己那張，**不得重複同一段場景描述**；而本卡實際上**沒有任何場景敘事的來源**，因此這條線在本卡閒置（第 138 條）。"
+ },
+ {
+  "key": "desc2:Sylvia Tella|Will You Still Want Me",
+  "artist": "Sylvia Tella",
+  "album": "Will You Still Want Me",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 10308307 的欄位：標題《Will You Still Want Me》、artists 欄「Sylvia Tella」；廠牌欄「Body Music (2)」（Discogs 用括號序號與同名廠牌區隔）、編號 SYLVIA 01；國別 UK；released 欄 1986；格式 Vinyl ×1［LP, Album］；genre 欄 Reggae 與 Pop，style 欄 Reggae-Pop 與 Vocal。**註記欄整句只有：「Reggae vocal LP. UK original」**；公司欄與 identifiers 欄都是空的。",
+    "src": "https://www.discogs.com/release/10308307"
+   },
+   {
+    "f": "同一條目的 credit 欄只有兩條，而且掛的是同一個人：Producer「Lloyd Charmers」（anv L. Charmers）、Arranged By「Lloyd Charmers」（anv L. Charmers）。**沒有任何演奏、工程或封套掛名。**",
+    "src": "https://www.discogs.com/release/10308307"
+   },
+   {
+    "f": "同一條目的曲目表登錄 **11** 個曲位：A 面〈Will You Still Want Me〉〈Tasty Love〉〈Love Is A Dangerous Game〉〈Sometimes〉〈When Will You Be Mine〉；B 面〈Once Upon A Time〉〈Bob Marley And Marvin Gaye〉〈Peace And Love〉〈Ain't Nothing Like A Family〉〈Time After Time〉〈Crying Over You〉。曲長欄 11 軌全部空白。",
+    "src": "https://www.discogs.com/release/10308307"
+   },
+   {
+    "f": "MusicBrainz release-group 32db4584 的欄位：title《Will You Still Want Me》、first-release-date 1986、primary-type Album、secondary-types 空陣列、artist-credit「Sylvia Tella」、annotation 為 null；genre 欄 pop、reggae、reggae-pop 各 1 票；url-rels 為空。",
+    "src": "https://musicbrainz.org/release-group/32db4584-6349-44aa-898a-24b378d45c47"
+   },
+   {
+    "f": "MusicBrainz 轄下唯一那筆 release（d5b413fa）：1986、GB、status Official、廠牌欄 Body Music、編號 SYLVIA 01、一張 12\" Vinyl、track-count **10**；它登錄的曲名依序是〈Will You Still Want Me〉〈Tasty Love〉〈Love Is a Dangerous Game〉〈Sometimes〉〈When Will You Be Mine〉〈Once Upon a Time〉〈Bob Marley and Marvin Gaye〉〈Peace and Love〉〈Ain't Nothing Like a Family〉〈Crying Over You〉——**與 Discogs 的 11 個曲位相比，少的正是 Discogs 排在 B5 的〈Time After Time〉**；曲長欄 10 軌全部空白。",
+    "src": "https://musicbrainz.org/release/d5b413fa-103c-4401-988a-ce3940f5a6a4"
+   },
+   {
+    "f": "Discogs master 1999507 的 versions **只有 2 筆**，兩筆都是 1986 年 UK、廠牌「Body Music (2)」、編號 SYLVIA 01 的黑膠（release 10308307 與 17611105）。**沒有任何一筆是 CD、卡帶或復刻，也沒有任何一筆標 Unofficial Release。**master 的 year 欄 1986，曲目表與 release 10308307 逐項相同（同樣是 11 個曲位）。",
+    "src": "https://www.discogs.com/master/1999507"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 8ca0c42b 的欄位：name「Sylvia Tella」、sort-name「Tella, Sylvia」、type Person、gender Female、**country GB**、area United Kingdom、**begin-area Manchester**、life-span begin **1961**、ended false、disambiguation 欄是空的；aliases 欄是空的。url-rels 掛了 AllMusic、Discogs、Spotify、Deezer、IMDb、Last.fm、Myspace、RateYourMusic、Apple Music 與 Wikidata。",
+    "src": "https://musicbrainz.org/artist/8ca0c42b-e4fc-4c3e-addc-7e1a21cd5a94"
+   },
+   {
+    "f": "英文維基百科〈Sylvia Tella〉條目（帶行內引註、註腳掛 Colin Larkin《The Encyclopedia of Popular Music》與 Steve Barrow／Peter Dalton《The Rough Guide to Reggae》第 400 頁）說：本名 Silifatu Mornii Wehabie Tella、1961 年生於英國曼徹斯特、父母是奈及利亞人，是英國 lovers rock 歌手；條目說她的職涯始於 Black Beautiful Circus——1977 至 1979 年間替 Boney M. 現場演出伴唱的樂團；該團解散後她轉為獨唱，「起初在資深雷鬼樂手 Lloyd Charmers 的指導下」錄音。",
+    "src": "https://en.wikipedia.org/wiki/Sylvia_Tella"
+   },
+   {
+    "f": "同一條目說她 1981 年的首張專輯《Spell》「成為史上最暢銷的 lovers rock 專輯之一」（該句註腳掛《The Rough Guide to Reggae》第 400 頁）；條目另記她 1983 年替 Alton Ellis 的專輯《Daydreaming》唱和聲，1989 年與 the Blow Monkeys 合作的〈Choice〉進入英國單曲榜第 22 名，1990–91 年為 Pop Will Eat Itself 的〈92 °F〉獻聲、單曲版 1991 年同樣到第 22 名（榜單那幾筆的註腳掛 Official Charts）。",
+    "src": "https://en.wikipedia.org/wiki/Sylvia_Tella"
+   },
+   {
+    "f": "Apple 逐條查證：以「Sylvia Tella Will You Still Want Me」與「Will You Still Want Me」兩組關鍵詞分別搜英國與美國店面。前者兩個店面都回 0 筆；後者回的二十幾筆全部是同名句子的誤配（Markvard、Mokita、The Roonze 等的單曲），**沒有任何一筆掛 Sylvia Tella**。",
+    "src": "https://itunes.apple.com/search?term=Sylvia%20Tella%20Will%20You%20Still%20Want%20Me&entity=album&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟的 credit 只有兩條，而且是同一個人：製作與編曲",
+   "廠牌名就是她的名字，編號是 SYLVIA 01",
+   "B 面有一首歌叫〈Bob Marley And Marvin Gaye〉"
+  ],
+  "sound": "Discogs 條目把這張碟的 genre 欄記成 Reggae 與 Pop、style 欄記成 Reggae-Pop 與 Vocal，註記欄只有一句「Reggae vocal LP. UK original」。整張的 credit 欄只有製作與編曲兩條，掛的是同一個名字。**曲長無從引用**：Discogs 與 MusicBrainz 兩邊的曲長欄全部是空的，Apple 上也沒有這張碟。（本欄由 Discogs 原盤條目的 genre／style／註記欄與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Will You Still Want Me",
+   "Once Upon A Time",
+   "Bob Marley And Marvin Gaye"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1986,
+   "note": "1986 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1986、MB 轄下唯一那筆 release 的 date 欄 1986、Discogs 原盤 10308307 的 released 欄 1986、Discogs master 1999507 的 year 欄 1986（master 底下兩筆都記 1986）。**只能寫到年**：四個來源都沒有月與日。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：**Body Music 廠牌線**——但**這條線 facts 只撐得住兩件事**：Discogs 把廠牌記成帶括號序號的「Body Music (2)」、編號是 SYLVIA 01。**廠牌的成立、經營者、目錄（策展層提到的 Janet Kay JANET 01／02 與 Roots Radics BMZ LP 12）全部沒有查證，一律不得寫**（第 138／142 條）。\n\n**⚠ 本卡的原盤軌數兩說，依第 141 條末段：兩個都不填、行文禁止給總數。**\n- **11 一側**：Discogs 原盤條目 10308307 與 master 1999507 的曲目表都登錄 11 個曲位（A 面五、B 面六）。\n- **10 一側**：MB 轄下唯一那筆 1986 GB release 的 track-count 是 10。\n**差的是 Discogs 排在 B5 的〈Time After Time〉**——MB 那筆完全沒有這一軌。兩邊都沒有第三個來源可以裁決，**行文禁止給總數、禁止寫「一共幾首」**。\n\n**本卡禁令**：\n(1) **〈Time After Time〉這一軌不得指名、也不得用在 `keyTracks`**（只有一個資料庫有它）。其餘 10 軌兩庫都有、曲序一致，可以指名。**同時注意本組另一張〈Forward on the Scene〉的曲目表上也有一首〈Time After Time〉——兩張卡都不得把這個曲名寫成同一首歌**（第 110 條，不得由曲名推論出處）。\n(2) **不得由曲名〈Bob Marley And Marvin Gaye〉推論這首歌在講誰、是不是致敬**（第 110 條）；要提只能寫成「B 面有一首曲名是〈Bob Marley And Marvin Gaye〉」。\n(3) **試聽：Apple 上查無，確認是真的沒有。** 已依第 152 條做兩路查詢（掛名＋盤名、單獨盤名，英美兩店面各一次），**掛 Sylvia Tella 的命中一筆都沒有**。**探測層的 `unavailable` 判定成立。**\n(4) **不得寫這張碟從未被復刻、只有黑膠、或很難買到**（第 109 條）。策展層說地位證據走「作品被選輯收錄」——**Trojan 2022 那張選輯與 Union Square 的《Forgotten Hits》本卡沒有查證，一律不得提。**\n(5) 維基的敘述一律寫成「英文維基百科的 Sylvia Tella 條目說」（第 128 條），且**只採帶行內引註的段落**（第 40／80 條）——條目裡「1979 年短暫參加四重唱 Anderson 唱愛爾蘭的歐洲歌唱大賽初選」那一段**沒有行內引註，禁止採用**。\n(6) **《Spell》的年份與廠牌在兩處不一致**：維基條目說《Spell》是 1981 年的首張專輯、Discography 欄記 Sarge 廠牌，策展層則寫成「1996 年 Sarge 廠牌的合輯《Spell》(JAS CD2)」。**兩者都不是本卡查證過的碟，行文一律不得提《Spell》。**\n(7) **廠牌名 Body Music 與電子樂用語「body music」的混淆**是查詢層面的提醒，**不入文**。\n(8) 本卡與〈Something Fishy Going On〉〈Feelings〉同屬女歌手線，**不得寫同一段「英國 lovers rock 場景」敘事**；本卡可寫的是維基給的個人經歷（Boney M. 伴唱團出身、Lloyd Charmers 指導），**這條個人線歸本卡獨占**。"
+ },
+ {
+  "key": "desc2:Count Ossie & The Rasta Family|Man From Higher Heights",
+  "artist": "Count Ossie & The Rasta Family",
+  "album": "Man From Higher Heights",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 2936268 的欄位：標題《Man From Higher Heights》、**artists 欄「Count Ossie」而 anv 欄「Count Ossie & The Rasta Family」**；廠牌欄 Vista Sounds、編號 VSLP 4060；國別 UK；released 欄 1983；格式 Vinyl ×1［LP］（格式描述欄只有 LP，**沒有 Album**）；genre 欄 Reggae，**style 欄是空的**；註記欄與 identifiers 欄也都是空的。",
+    "src": "https://www.discogs.com/release/2936268"
+   },
+   {
+    "f": "同一條目的 credit 欄只有一條：Mixed By [Remixed By]「**Webster Shrowder**」；公司欄也只有一條：Licensed From「**Meter Music Ltd.**」。**沒有製作人、沒有任何演奏掛名。**",
+    "src": "https://www.discogs.com/release/2936268"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位：A 面〈Mystic Memories〉〈Drums For Wise Man〉〈Chanting Higher Heights〉；B 面〈Africa We Want Fe Go〉〈Cruising Down The Line〉〈Misfits〉〈Crossing River Jordan〉。曲長欄 7 軌全部空白。",
+    "src": "https://www.discogs.com/release/2936268"
+   },
+   {
+    "f": "MusicBrainz release-group dbaf9b70 的欄位：title《Man From Higher Heights》、first-release-date 1983、primary-type Album、secondary-types 空陣列、annotation 為 null；genre 欄只有 reggae 一票。**artist-credit 的顯示字串是「Count Ossie & The Rasta Family」，但它連到的藝人實體只有一個，名稱是「Count Ossie」**（MBID 217e2df6）。",
+    "src": "https://musicbrainz.org/release-group/dbaf9b70-ab0b-4b4a-b54f-9ba1ccd43686"
+   },
+   {
+    "f": "MusicBrainz 藝人實體 217e2df6 的欄位：name「Count Ossie」、sort-name「Count Ossie」、type **Person**、gender Male、country JM、area Jamaica、life-span begin **1926**、**end 1976-10-18**、ended true、disambiguation 欄是空的；aliases 欄只有一筆日文藝名「カウント・オジー」。",
+    "src": "https://musicbrainz.org/artist/217e2df6-61be-4ff5-b62c-4c8642d396c5"
+   },
+   {
+    "f": "英文維基百科〈Count Ossie〉條目（帶行內引註的段落）說：本名 Oswald Williams、1926 年 3 月 26 日生、**1976 年 10 月 18 日過世，享年 50**（生年註腳指向 Ancestry 的牙買加民事登記資料庫，卒年註腳指向 David V. Moskowitz 2006《Caribbean Popular Music》第 317–8 頁），是牙買加的 Rastafari 鼓手與樂團領班；條目說他 1950 年代初在金斯敦東側 Wareika Hill 附近的 Rockfort 建立了一個 Rasta 社群，1950 年代末與其他打擊樂手組成 Count Ossie Group。",
+    "src": "https://en.wikipedia.org/wiki/Count_Ossie"
+   },
+   {
+    "f": "MusicBrainz 轄下 1983 GB 那筆 release（d3f4b60c）：status Official、廠牌欄 Vista Sounds、編號 VSLP 4060、barcode 欄是空字串、一張 Vinyl、track-count **7**，artist-credit 顯示「Count Ossie & The Rasta Family」；曲名與曲序與 Discogs 原盤逐項相同（〈Mystic Memories〉排第一）；曲長欄 7 軌全部空白。",
+    "src": "https://musicbrainz.org/release/d3f4b60c-35de-4f89-b8f8-87b7059422a5"
+   },
+   {
+    "f": "同 release-group 另兩筆 release 都掛 Soul Jazz Records、都是 7 軌、**而且曲序與 1983 原盤不同**：2016-05-20 GB Official（SJR CD331，CD）與 2016-05-27 Official（無國別、barcode 5026328403311、Digital Media）。兩筆的曲序都是〈Africa We Want Fe Go〉1:29、〈Cruising Down the Line〉3:18、〈Misfits〉3:04、〈Crossing River Jordan〉2:53、〈Mystic Memories〉3:20、〈Drums for Wise Man〉4:34、〈Chanting Higher Heights〉6:42——**等於把 1983 原盤的 A 面與 B 面對調**。這兩筆的 artist-credit 字串是「Count OssieThe Rasta Family」（連接詞掉了）。",
+    "src": "https://musicbrainz.org/release/546239f1-2120-420c-8610-bd20e20c0bd2"
+   },
+   {
+    "f": "Discogs master 1007865 的 versions 共 6 筆：1983 UK Vista Sounds VSLP 4060 黑膠（原盤）；1983 一筆**沒有國別、廠牌欄寫 Not On Label、編號 none**的黑膠，格式欄標 LP, White Label；2016 UK Soul Jazz Records 黑膠 SJR LP331（LP, Reissue）與 CD SJR CD331（Album, Reissue, Remastered）；一筆 released 為 0 的 SJR CD331（多標 Repress）；以及一筆 released 為 0 的 **Canada Micron Music Limited、編號 none**，格式欄標 12\", 33 ⅓ RPM, Album, White Label。**六筆中零筆標 Unofficial Release。**",
+    "src": "https://www.discogs.com/master/1007865"
+   },
+   {
+    "f": "Apple 英國店面 collectionId 1086445656 的欄位：collectionName《Man from Higher Heights》、artistName「Count Ossie & The Rasta Family」、trackCount **7**、releaseDate 2016-05-06、copyright 欄「**℗ 2016 Soul Jazz Records Ltd**」、primaryGenreName Reggae。逐軌曲名、曲序與曲長與 MB 那兩筆 Soul Jazz release **逐項相同**（〈Africa We Want Fe Go〉1:29 起、〈Chanting Higher Heights〉6:42 收尾）；**七軌全部對得上 1983 原盤的七個曲名，沒有多曲、沒有缺曲、沒有別張專輯的曲目**（第 140 條的兩項檢查都過），**只有曲序與原盤不同**。",
+    "src": "https://itunes.apple.com/lookup?id=1086445656&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟的 credit 只有兩條：一條混音，一條授權來源",
+   "2016 年那一版把 A 面與 B 面對調了",
+   "封面掛的名字，指向一個 1976 年就過世的人"
+  ],
+  "sound": "七首分兩面，A 面三首、B 面四首（Discogs 條目 2936268 的曲目表）。**1983 年原盤的曲長欄在兩個資料庫都是空的**；有曲長的是 2016 年 Soul Jazz 那一版，最短的一軌 1:29、最長的一軌 6:42。Discogs 原盤條目的 credit 欄只有一條「Mixed By [Remixed By]: Webster Shrowder」，公司欄只有一條授權來源。（本欄由 Discogs 原盤條目的曲目表與 credit 欄、以及 MB／Apple 那兩筆 2016 年版本的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Mystic Memories",
+   "Drums For Wise Man",
+   "Chanting Higher Heights"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1983,
+   "note": "1983 維持卡單原值，四方一致無爭議：MB release-group first-release-date 1983、MB 轄下那筆 Vista Sounds release 的 date 欄 1983、Discogs 原盤 2936268 的 released 欄 1983、Discogs master 1007865 的 year 欄 1983。**只能寫到年**：四個來源都沒有月與日。**注意這是「發行年」而不是「錄音年」——沒有任何來源給錄音日期**（見 notes 的身分段）。Apple 的 releaseDate 2016-05-06 與 ℗ 2016 屬於 Soul Jazz 那一版。"
+  },
+  "notes": "**分派與禁令見〈Kool Roots〉那張的總表。**\n\n**取得**：**Vista Sounds 廠牌線**（本組只有這一張 Vista Sounds，但 facts 只給得出廠牌名與編號 VSLP 4060，**廠牌史沒有來源，讓它閒置**，第 138 條）；**Soul Jazz Records 的復刻線**（本組獨占）。\n\n**⚠ 身分：策展層要求核的那一點，核完了——結論是「不得寫成他本人的錄音」，而且理由要寫得比策展層更保守。**\n- MB 的 artist-credit 顯示字串是「Count Ossie & The Rasta Family」，**但它連到的藝人實體只有一個、名稱是「Count Ossie」、type 是 Person、life-span end 是 1976-10-18**；Discogs 的 artists 欄同樣是「Count Ossie」、把團名寫在 anv 欄。**也就是說：兩個資料庫都把這張 1983 年的碟掛在一個 1976 年就過世的個人實體上。**\n- **行文一律不得寫成「Count Ossie 本人的錄音」、不得寫成「他錄了這張碟」、也不得寫成「這是他過世後才發的遺作」**——後者同樣是推論：**沒有任何來源給這張碟的錄音日期**（Discogs 條目的公司欄只有一條 Licensed From，沒有 Recorded At）。可以寫的只有兩件事：唱片掛的名字是「Count Ossie & The Rasta Family」、以及維基與 MB 都記 Count Ossie 本人 1976 年過世（第 110／136 條）。\n- **「Rasta Family 班底延續下來」這個說法是策展層寫的，facts 撐不住，不得入文**（第 142 條）。\n\n**本卡禁令**：\n(1) **原盤軌數只能寫 7**——MB 那筆 1983 release 的 track-count 是 7、Discogs 原盤條目的曲目表也是 7 個曲位，兩庫一致；七個曲名兩庫也逐項相同，**可以指名任何一軌**。\n(2) **曲序有兩種，行文提到順序時必須指明是哪一版**：1983 原盤是〈Mystic Memories〉開場、〈Crossing River Jordan〉收尾；2016 Soul Jazz 那一版（含 Apple）是〈Africa We Want Fe Go〉開場、〈Chanting Higher Heights〉收尾，等於**兩面對調**。**不得混用、不得寫成「這張碟從哪一首開始」而不註明版本。**\n(3) **探測層標 `ready` 成立，但要加限定語。** 已逐軌核對 Apple collectionId 1086445656：7 軌、曲名全部對得上原盤、無多曲無缺曲、無別張專輯的曲目——**是同一張碟**；但 ℗ 年是 2016 Soul Jazz、**而且曲序被重排過**。引用曲長一律寫成「2016 年那一版登錄的曲長」（1983 原盤兩庫的曲長欄都是空的，第 136 條）。\n(4) **授權欄可以寫成「Discogs 原盤條目的公司欄寫 Licensed From: Meter Music Ltd.」**，但**不得寫成「Soul Jazz 那一版的版權欄也掛 Meter Music、所以兩版對得上」**——那是策展層的說法，本卡沒有查證 Soul Jazz 那一版的版權欄（第 142 條）。\n(5) 那兩筆白標壓片（Not On Label 與加拿大 Micron Music，編號都是 none、released 欄都空）**只能寫成「Discogs 版本欄有兩筆廠牌欄空白、編號寫 none 的白標壓片」**，**不得推論它們是不是授權版本、不得寫成盜版**（第 136 條）。\n(6) **不得寫壓量、稀有度、白標的收藏意義**（第 109 條）。\n(7) 維基〈Count Ossie〉的敘述一律寫成「英文維基百科的 Count Ossie 條目說」（第 128 條），且只採帶行內引註的段落（第 40／80 條）——條目中引述 Hélène Lee《The First Rasta》那一整段（Margarita Mahfood、Ward Theater、Vere John Jr.）**沒有行內引註，禁止採用**。"
  }
 ]
