@@ -766,5 +766,194 @@
    "note": "1995 維持卡單原值——**這正是第 127 條的形狀：Discogs 有具體的原壓年、MB 那一側是空的**。Discogs 黑膠條目 1709543 與測試壓片條目 30708278 的 year 與 released 欄都是 1995；**MB 只建了一筆 1996 GB 的 CD release，first-release-date 也因此記成 1996，MB 這一側沒有任何 1995 年的記載**。Discogs 的 CD 條目 3919559 記 1996，與 MB 那一筆是同一件事（CD 那一版）。**行文只能寫到年**——沒有任何來源給出月或日。**必須寫清楚哪個年份是哪一件事：1995 是黑膠原盤年，1996 是 CD 版的年份。**MB 的國別欄 GB **不得寫進行文、也不得用來推論這張碟在哪裡發行**（美國原壓在 MB 這一側根本沒建，第 75／136 條）。Apple 那一側查無，沒有第三個年份來源。"
   },
   "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：五人編制與逐軌客座掛名；**黑膠十八軌與 CD 十六軌的差異**這條線；1995 年的測試壓片條目。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用**（已讓給 a 組的〈A Bedroom Community〉）；**Working Holiday! 系列禁用**（分派給〈Deep End〉）——她 1994 年那張七吋 SMR 27 只能寫成「同一家廠牌前一年還出過她一張七吋《Frog》」，**不得把它接到系列上、也不得展開廠牌**。(2) **原盤軌數不得給單一總數，而且要說清楚哪個數字屬於哪一版**：**1995 年黑膠 18 軌、1996 年 CD 16 軌**，差的兩軌是〈Blue Halo〉與〈Still In Love With You〉。**卡片年份取 1995（黑膠），所以「原盤」是那十八軌的黑膠**；但**逐軌長度只有 CD 那一版有登記**，行文若要引長度必須寫明「CD 版登記的長度」（第 135／136／141 條）。**〈Blue Halo〉與〈Still In Love With You〉不得當關鍵曲**（沒有任何長度或評語來源）。**也不得說成「CD 版拿掉了兩首」——沒有來源說明是哪一邊改的。**(3) **本卡沒有署名樂評可引**（Trouser Press 沒有她的條目，我查過站內搜尋也沒有），**行文不得引任何評語，也不得自行給音樂性的形容**——能寫的只有 facts 裡的原始值。(4) **不得寫壓量、份數、稀有度、二手價**（第 109 條）——**測試壓片那一筆最容易踩**：它只能寫成「Discogs 上另有一筆格式欄標 Test Pressing、標籤空白、白色封套的條目」，**不得由它推論份數或收藏價值**。(5) **不得由曲名推論出處**（第 110 條）——〈Parakeet Protest Song〉〈Soft White China Patterns On His Teeth〉〈Red Candles〉都沒有來源說明它們寫的是什麼。(6) **客座只能寫成曲目表上的掛名**：**Tara Jane O'Neil 這個人分派給〈Egg Fusion〉、Daniel Littleton 分派給〈Tales of Brave Ida〉、Geoff Turner 在本批另出現在〈The Pink Album〉的製作欄**——本卡對這三個名字**只能寫「哪一軌掛了誰、掛什麼樂器」，一律不得展開他們是誰、來自哪個團**（第 138／146 條）。(7) **錄音地與錄音時間沒有來源，行文不得寫**（第 136 條）。\n**探測層核對（第 152 條的回搜）**：previews.json 標 `unavailable`，而且**七個店面全部回 0 筆**（us／gb／jp／ca／de／fr／au 都是 0→0）——依第 139 條，乾淨的空結果本身就要複查。**我依第 152 條另外查了兩條路徑**：(a) 美國店面 `search?term=Danielle Howle About to Burst`、`term=About to Burst Howle`、`term=Danielle Howle`；(b) 英國店面同樣三組關鍵詞。**兩個店面都確實有這位藝人的東西**——《Catalog》（collectionId 314113436，1999）、《Current》（1881552245，℗ 2023 Kill Rock Stars Nashville）、《Live from the Home Team》（1465823286）、《Swamp Sessions》（1500102685）等八筆——**但沒有任何一筆的 collectionName 是《About to Burst》**。**確認 Apple 兩個店面真的沒有這張碟，主線不必回補**（「藝人在、專輯不在」）。CAA 那一側本卡有封面（release-group 391415a3 的 front）。"
+ },
+ {
+  "key": "desc2:The Raymond Brake|Piles of Dirty Winters",
+  "artist": "The Raymond Brake",
+  "album": "Piles of Dirty Winters",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 1761164 的欄位：藝人「The Raymond Brake」、標題《Piles Of Dirty Winters》、country US、格式 CD 1 [Album]、year 1995、**released 欄 1995-10-30**、廠牌 Simple Machines「SMR 41CD」、master 747931、genres Rock、styles Indie Rock；identifiers 欄 Barcode 7 18751 88412 0、Matrix / Runout「L384 9550 SORECDD0010 FAILSAFE B50906-32」、Mastering SID L384、Mould SID IFPI6100。",
+    "src": "https://www.discogs.com/release/1761164"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「All songs © The Raymond Brake 1995 ℗ Bowl Of Fruit Music 1995」「**Recorded illegally at WGNS, Washington DC, Jan. 1995. Mixed legally at WGNS, Washington DC, May 1995.** Tracks 7 and 12.1 recorded on Wilson St.」「Manufactured and Distributed by Southern Records, Inc. P.O. Box 25529, Chicago, IL 60625. Made in USA.」",
+    "src": "https://www.discogs.com/release/1761164"
+   },
+   {
+    "f": "同一條目的 credit 欄：Guitar, Vocals: Andy Cabic／Guitar, Vocals: Ryan Stewart／Bass: Peder Hollinghurst／Drums: Joel Darden／Mixed By: Geoff Turner／Recorded By: Geoff Turner [1 to 6, 8 to 11, 12.2]、Andy Cabic [7, 12.1]／Layout: Kristin Thomson／Photography [Band Photo]: Amelia Burch；companies 欄 Recorded At 與 Mixed At: WGNS Studios、Manufactured By 與 Distributed By: Southern Records, Inc.、Manufactured By: Failsafe Media、Glass Mastered At 與 Pressed By: Cinram, Richmond, IN、Published By: Bowl Of Fruit Music。",
+    "src": "https://www.discogs.com/release/1761164"
+   },
+   {
+    "f": "MusicBrainz release-group a645e9ea 的欄位：title《Piles of Dirty Winters》、**first-release-date 1995-10-30**、primary-type Album、secondary-types 空陣列、artist-credit「The Raymond Brake」（藝人 f189c7ca-b76e-4ffc-a17e-f316cdaadf8a，country US）；genres 欄 indie rock 1 票、rock 1 票；url 關聯一條，指向 Discogs master 747931。",
+    "src": "https://musicbrainz.org/release-group/a645e9ea-4ae1-44b5-8c27-8752fd96b409"
+   },
+   {
+    "f": "以 release?release-group=a645e9ea…&inc=recordings+labels+media 逐版比對：MB 轄下兩筆 release，**都是 12 軌**——(a) 601f4db6，1995-10-30、US、**Official**、Simple Machines「SMR 41CD」、CD、Jewel Case、barcode 718751884120；(b) 500bcac8，1995、US、**Promotion**、Simple Machines「41」、CD、無 barcode、無登記長度。Discogs 對應的宣傳片條目 5686848（格式欄標 [Album, Promo]，註記欄只有一句「Promotional CD」）同樣是十二軌，**但它的第 3 軌拼成〈Shooting In The Park〉，正式版條目與 MB 都拼〈Shooting In The Dark〉**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a645e9ea-4ae1-44b5-8c27-8752fd96b409&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "**兩個資料庫把同一組長度配給了不同的曲名**：MB 那筆 1995-10-30 的 CD 登記為 Philistine 3:48、Filthy Lucre 3:01、Shooting in the Dark 3:40、New Wave Dream 3:25、Funeral Bride 0:52、Laying Down 5:28、The Long Sleep 2:11、Dolley Madison 3:14、Slink Moss 3:37、Never Felt Better 3:36、Whistler 2:21、Visit to Bedlam 8:37；**Discogs 同一張碟的曲目表則是**前四軌相同，第 5 軌記成〈[untitled]〉0:52、第 6 軌〈Funeral Bride〉5:28、第 7 軌〈Laying Down〉2:11、第 8 軌〈The Long Sleep〉3:14、第 9 軌〈Dolley Madison〉3:37、第 10 軌〈Slink Moss〉3:36、第 11 軌〈Never Felt Better〉2:21，最後一軌不編號、標題寫成〈Whistler / Visit To Bedlam〉8:37。**十二個長度數值兩邊完全相同，配給的曲名從第 5 軌起整個錯開一位。**",
+    "src": "https://www.discogs.com/release/1761164"
+   },
+   {
+    "f": "MB 那筆正式 CD 的十二軌長度相加 43 分 50 秒；十二個數值裡最小的是 0:52、最大的是 8:37，**最長那一軌一軌就佔掉全碟長度的將近五分之一**，另有三軌不到三分鐘。（**哪個曲名對應哪個長度在兩個資料庫上不一致，見上一條。**）",
+    "src": "https://musicbrainz.org/release/601f4db6-145b-42b7-bdb6-f500ceaf7aeb"
+   },
+   {
+    "f": "Trouser Press 沒有 The Raymond Brake 的條目：以 trouserpress.com/reviews/the-raymond-brake/ 與 /raymond-brake/ 取回的分別是「The Good, the Bad & the Queen」與一個 404 頁；站內搜尋「Raymond Brake」回到的是 Aqua Velvets、Archers of Loaf、Cheap Trick 等不相干的條目。**本卡沒有署名樂評可引。**",
+    "src": "https://trouserpress.com/reviews/raymond-brake/"
+   },
+   {
+    "f": "Discogs 的 Simple Machines 廠牌頁（label 439590）簡介欄只有兩句：「Arlington, Virginia based label run by Jenny Toomey and Kristin Thomson.」「The label existed from 1990 - 1998.」；本張的編號 SMR 41CD 落在該廠牌 1995 年的目錄裡，而 Kristin Thomson 這個名字同時出現在本張 credit 欄的 Layout 一項。",
+    "src": "https://www.discogs.com/label/439590"
+   },
+   {
+    "f": "Discogs master 747931 底下共列兩筆版本：1995 年的正式 CD（SMR 41CD）與同年的宣傳 CD（編號 41），**兩筆的格式欄都沒有出現 Unofficial 標記**；MB 那一側同樣只有這兩筆，其中一筆的 status 是 Promotion。",
+    "src": "https://www.discogs.com/master/747931"
+   }
+  ],
+  "hookCandidates": [
+   "條目上寫著：一月在 WGNS「非法地」錄音，五月在同一間「合法地」混音",
+   "同一張碟，兩個資料庫從第五軌起把曲名和曲長整個錯開一位"
+  ],
+  "sound": "Discogs 的 styles 欄只掛一個字：Indie Rock。編制在 credit 欄上是四個人：兩把吉他各兼人聲、貝斯一位、鼓一位；混音掛一位團外的人，錄音則由那位與團內的一位吉他手分軌掛名（大部分軌歸前者，兩處歸後者）。錄音地與時間寫在註記欄裡（華盛頓特區的 WGNS，1995 年 1 月錄、5 月混），另有兩處註明是在一條街上錄的。長度分佈很陡：MB 那筆正式 CD 的十二軌相加 43 分 50 秒，最短的一軌 52 秒、最長的一軌 8 分 37 秒，另有三軌不到三分鐘——**但哪個曲名對應哪個長度在兩個資料庫上不一致**。（本欄由 Discogs 原盤 CD 條目的 credit 與註記欄、MB 那筆 CD 的逐軌長度歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Philistine",
+   "Filthy Lucre",
+   "New Wave Dream"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，無爭議，而且**日期有兩個獨立來源且一致**：Discogs 原盤 CD 條目 1761164 的 released 欄 1995-10-30，MB release-group 的 first-release-date 與 MB 那筆 Official release 的 date 也都是 1995-10-30。**行文可以寫到日：1995 年 10 月 30 日。**另有兩個**不同性質**的時間可用：註記欄的「1995 年 1 月」（錄音）與「1995 年 5 月」（混音）——**那是製作過程的兩個月份，不是發行日**，行文要說清楚是哪一件事（第 135／136 條）。MB 那筆 status 為 Promotion 的 release 只記到年（1995）。Apple 那一側查無，沒有第三個年份來源。"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：「非法錄音／合法混音」那條註記；兩個資料庫曲名與曲長錯開一位這件事；四人編制與逐軌錄音掛名。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用**（已讓給 a 組的〈A Bedroom Community〉）；**Working Holiday! 系列禁用**（分派給〈Deep End〉）。Kristin Thomson 在本張只掛 Layout，**只能寫成「排版欄掛了 Kristin Thomson」**。(2) **原盤軌數只能寫 12**——Discogs 正式 CD、Discogs 宣傳 CD、MB 兩筆 release，四個來源一致 12 軌（第 140／141 條已用 release?release-group=&inc=recordings 逐版比對）。**但行文絕對不得把某個曲長配給第 5 軌以後的任何一個曲名**——兩個資料庫的對應方式不同（見 facts 第 6 條），依第 141 附「兩個資料庫互相矛盾」的處理，**只能寫「最短的一軌 52 秒、最長的一軌 8 分 37 秒」這種不指名的說法，或寫明「MB 把 8 分 37 秒那一軌記成〈Visit to Bedlam〉、Discogs 把它記成〈Whistler / Visit To Bedlam〉一軌」**。**也因此〈Funeral Bride〉〈Whistler〉〈Visit to Bedlam〉都不宜當關鍵曲。**(3) **宣傳片那一筆只能寫成「MB 上另有一筆 status 標 Promotion、Discogs 上格式欄標 Promo 的同編號 CD」**；**封面與試聽的探測若配到那一筆要排除**（第 43／57 條），**且不得由它推論發行規模或收藏價值**（第 109 條）。(4) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(5) **不得由曲名推論出處**（第 110 條）——〈Dolley Madison〉〈Slink Moss〉〈Visit to Bedlam〉都沒有來源說明它們寫的是什麼，**尤其不得把〈Dolley Madison〉接到那位美國歷史人物身上**。(6) **本卡沒有署名樂評可引**（Trouser Press 沒有這個樂團的條目，我查過兩個網址與站內搜尋），**行文不得引任何評語，也不得自行給音樂性的形容**——能寫的只有 facts 裡的原始值。**四位團員的名字只能寫成 credit 欄上的掛名，不得寫他們後來去了哪裡**（沒有來源）。(7) 「Recorded illegally」這句是**條目上的原句**，引用時要寫成「Discogs 條目的註記欄這樣寫」，**不得推論那是什麼意思、也不得寫成「他們偷用錄音室」之類的解釋**（第 128 條）。(8) 〈Shooting In The Dark〉／〈Shooting In The Park〉是**兩份條目上的拼法差異**，只能寫成「不同條目拼法不同」（第 136 條）。\n**探測層核對（第 152 條的回搜）**：previews.json 標 `unavailable`，而且**七個店面全部回 0 筆**（us／gb／jp／ca／de／fr／au 都是 0→0）。**我依第 152 條另外查了兩條路徑**：(a) 美國店面 `search?term=Raymond Brake Piles of Dirty Winters`、`term=Piles of Dirty Winters`、`term=The Raymond Brake`；(b) 英國店面同樣三組關鍵詞。**兩個店面都沒有這位藝人的任何東西**——美國店面「The Raymond Brake」只回到一筆不相干的單曲，英國店面回的全是 Claude VonStroke、Thaï Break 之類的斷詞誤配，**盤名關鍵詞在兩個店面都是 0 筆**。**確認 Apple 兩個店面真的沒有這位藝人與這張碟，主線不必回補。**CAA 那一側本卡有封面（release-group a645e9ea 的 front）——**但要注意 MB 轄下有一筆 Promotion release，封面若是從那一筆來的要排除**。"
+ },
+ {
+  "key": "desc2:The Mommyheads|Coming Into Beauty",
+  "artist": "The Mommyheads",
+  "album": "Coming Into Beauty",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 2856580 的欄位：藝人「The Mommyheads」、標題《Coming Into Beauty》、country US、格式 CD 1 [Album]、year 與 released 兩欄都是 1992、廠牌 Simple Machines「12」、master 667634、genres Rock 與 Pop、**styles Power Pop 與 Experimental**；identifiers 欄 Rights Society BMI、Matrix / Runout「AMERICAN HELIX *CD03345* DTI#117397-D1-2212-2」。",
+    "src": "https://www.discogs.com/release/2856580"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「All tracks recorded at 6/8 Studios, NYC, October 89-April 91 except for 2, 6 and 14 which were recorded at Cloud 9 Studios, Chico, CA, July 90.」「Compiled at Lowdown Studios.」「Manufactured by Simple Machine Records.」「Published by Mommyhead Music, BMI (c)1992」「(c)1992 Simple Machines Records」「**Thanks to the Metropolitan Museum of Art for financial stability during the recording of this album.**」",
+    "src": "https://www.discogs.com/release/2856580"
+   },
+   {
+    "f": "同一條目的 credit 欄：Performer [The Mommyheads Are]: Adam Cohen (2)、Dan Fisherman、Jan Kotik、Matt Patrick、Michael Holt（**五個名字，條目沒有標各自的樂器**）／Recorded By: Gerald McCollam、Perkin Barnes、Rich Cavanaugh／Mixed By: Dan Rathbun、Perkin Barnes、Rich Cavanaugh／Compiled By: Greg Freeman／Songwriter: The Mommyheads／Design [Design-While-U-Wait]: Pete Friedrix／Photography By: Kelly Yon／Booking [U.S.]: Black Widow Booking；companies 欄 Recorded At: 6/8 Studios 與 Cloud Nine Studios、Manufactured By: Simple Machines 與 American Helix、Glass Mastered At: Disctronics Texas, Inc.。",
+    "src": "https://www.discogs.com/release/2856580"
+   },
+   {
+    "f": "Discogs 條目 5381968：同年同廠牌的**宣傳卡帶**（Simple Machines，編號欄「none」，US，1992，Cassette 1 [Album, **Promo**]），credit 欄與 CD 條目相同，曲序 A1–A8 加 B1–B7，**十五軌同名同序**。",
+    "src": "https://www.discogs.com/release/5381968"
+   },
+   {
+    "f": "MusicBrainz release-group 7ee8ed54 的欄位：title《Coming Into Beauty》、first-release-date 1992（年精度）、primary-type Album、secondary-types 空陣列、artist-credit「The Mommyheads」（藝人 f2578144-0644-4dbc-ae93-e6237aaf9cd4，country US）；genres 欄空、url 關聯欄空。",
+    "src": "https://musicbrainz.org/release-group/7ee8ed54-ce94-379a-b2cb-ec77fcc2dd0c"
+   },
+   {
+    "f": "以 release?release-group=7ee8ed54…&inc=recordings+labels+media 逐版比對：MB 轄下只有一筆 release（d89bff9e-87dd-4d29-9b21-d2af5f651df3），1992、US、Official、Simple Machines「12」、CD、**15 軌**；**Discogs 的宣傳卡帶與 2020 年的重製 CD 在 MB 這一側都沒有建 release**。MB 那筆與 Discogs 原盤 CD 十五軌同名同序，**只有末軌拼法不同：Discogs 1992 年條目拼〈Hersaba's Compass〉，MB 拼〈Hepsaba's Compass〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7ee8ed54-ce94-379a-b2cb-ec77fcc2dd0c&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆 CD 登記的逐軌長度：Wedding Day 2:36、Coming Into Beauty 4:22、Nino Wrote a Tune 2:22、I Started Breathing 2:55、Blind Like a Camera 3:44、Catbird 2:39、Like a Brick 2:25、Sunfish, Sunflower 3:33、Grace 3:49、Pigeon in Your Tongue 2:26、Today 2:36、Swimming 1:59、I Dreamed 4:46、I'm Not Real 3:42、Hepsaba's Compass 4:37；十五軌相加 48 分 30 秒，最短的〈Swimming〉1 分 59 秒、最長的〈I Dreamed〉4 分 46 秒，**十五軌裡有八軌不到三分鐘、三軌超過四分鐘，沒有任何一軌到五分鐘**。",
+    "src": "https://musicbrainz.org/release/d89bff9e-87dd-4d29-9b21-d2af5f651df3"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1536849604 的欄位：collectionName《Coming into Beauty》、**artistName「Mommyheads」（沒有 The）**、trackCount 15、releaseDate 1991-01-01、**copyright「℗ 2021 Mommyheads」**、primaryGenreName「Rock」。十五軌逐軌核對，曲名與曲序與 MB 那筆 1992 年 CD 一致（末軌拼〈Hepsaba's Compass〉，第 8 軌 Apple 拼〈Sunfish Sunflower〉、無逗號），**但逐軌長度成批地與 MB 那筆不同**（〈Sunfish Sunflower〉3:17 對 3:33、〈I'm Not Real〉3:26 對 3:42、〈Catbird〉2:35 對 2:39）；**這一組長度與 Discogs 2020 年重製條目 24326597 的曲目表逐項相同。**",
+    "src": "https://music.apple.com/us/album/coming-into-beauty/1536849604"
+   },
+   {
+    "f": "Discogs 條目 24326597：2020-12-18、US、CD 1 [Album, **Remastered**]（格式文字欄「Digipak」）、廠牌欄 **Not On Label (The Mommyheads Self-released)**、編號「none」、barcode 843563133224；註記欄兩句：「Bonus track version available on their Bandcamp page.」「2020 Remaster of 1992 album.」；credit 欄比 1992 年那份多出樂器與逐軌作者——Vocals, Guitar: Adam Cohen (2)／Vocals, Bass: Matt Patrick／Drums, Vocals: Dan Fisherman／Drums: Jan Kotik／Remastered By: Fred Kevorkian／**Written By: Adam Cohen (2) [1, 4, 6, 7, 10, 12, 14, 15]、Matt Patrick [2, 5, 8, 9, 11, 13]、Michael Holt [3]**。曲目仍是十五軌同序。",
+    "src": "https://www.discogs.com/release/24326597"
+   },
+   {
+    "f": "Trouser Press 沒有 The Mommyheads 的條目：以 trouserpress.com/reviews/mommyheads/ 與 /the-mommyheads/ 取回的分別是 404 頁與「The Good, the Bad & the Queen」；站內搜尋「Mommyheads」回到 0 筆。**本卡沒有署名樂評可引。**（本團另一件與同一家廠牌有關的東西是 1992 年 Tool 卡帶系列第 6 號《Swiss Army Knife》，Discogs release 4470080——**那條系列線分派給〈Pocketwatch〉，本卡不寫。**）",
+    "src": "https://trouserpress.com/reviews/mommyheads/"
+   }
+  ],
+  "hookCandidates": [
+   "致謝欄裡感謝了大都會藝術博物館——理由寫的是「錄這張唱片期間的經濟穩定」",
+   "十五首歌錄了一年半，其中三首是在加州另一間錄音室錄的"
+  ],
+  "sound": "Discogs 的 styles 欄給了兩個字：Power Pop 與 Experimental（2020 年重製條目改成 Indie Rock）。1992 年的條目把樂團寫成五個名字，**但沒有標各自的樂器**——要到 2020 年那份重製條目才逐項拆開（人聲兼吉他、人聲兼貝斯、鼓兼人聲、鼓）。錄音掛三位、混音掛三位、另有一位掛「Compiled By」；錄音期間寫在註記欄裡（紐約的 6/8 Studios，1989 年 10 月到 1991 年 4 月），其中三軌另在加州奇科的 Cloud 9 Studios 錄於 1990 年 7 月。曲子多而短：MB 那筆 CD 的十五軌相加 48 分 30 秒，八軌不到三分鐘、三軌超過四分鐘，沒有任何一軌到五分鐘。（本欄由 Discogs 1992 年與 2020 年兩份條目的 credit、註記與 styles 欄、MB 那筆 CD 的逐軌長度歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Wedding Day",
+   "Coming Into Beauty",
+   "I Dreamed"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1992,
+   "note": "1992 維持卡單原值。**三個來源記 1992，Apple 那一筆記 1991，但 Apple 那筆不是原盤條目**：Discogs 原盤 CD 條目 2856580 與宣傳卡帶條目 5381968 的 year 與 released 欄都是 1992、註記欄的兩行著作權也都寫 1992、MB release-group first-release-date 1992、MB 唯一那筆 release 的 date 也是 1992。**Apple 那筆的 releaseDate 1991-01-01 是 YYYY-01-01 的佔位形狀，而它的 copyright 是 ℗ 2021 Mommyheads——整筆指向 2020／2021 年樂團自己的重製版，年份不可用**（第 140 附第 2 點）。**行文只能寫到年（1992）**——三個來源都沒有月或日。另有一個**不同性質**的時間可用：註記欄的錄音期間「1989 年 10 月到 1991 年 4 月」與「1990 年 7 月」——**那是錄音期間，不是發行年**，行文要說清楚是哪一件事（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：大都會藝術博物館那句致謝；橫跨一年半、兩間錄音室的錄音期間；1992 年條目沒有標樂器、2020 年重製條目才拆開這件事。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用**（已讓給 a 組的〈A Bedroom Community〉）；**Tool 卡帶系列禁用**（分派給〈Pocketwatch〉）——本團在那個系列裡也有一捲（SM TOOL 6《Swiss Army Knife》），**本卡不得提**。(2) **2020 年那筆是樂團自行發行（廠牌欄 Not On Label），不是廠牌授權重發**，依第 43／57 條不算第三方背書，**行文不得寫成「被重新發掘」或「後來被重視」**。**它的註記欄提到 Bandcamp 上有「bonus track version」——那個加曲版本身沒有任何條目可查，行文一律不得提**（第 136 條）。(3) **原盤軌數只能寫 15**——Discogs 1992 年 CD、Discogs 宣傳卡帶、MB 唯一那筆 release、Apple 那筆、Discogs 2020 年重製，五個來源一致 15 軌（第 140／141 條已用 release?release-group=&inc=recordings 逐版比對）。(4) **逐軌長度要說明是哪一版**：MB／Discogs 1992 年條目是一組，Apple／Discogs 2020 年重製條目是另一組，**兩組成批地不同**。行文若要引長度，**只能引 MB 那筆 1992 年 CD 的數值，並寫明是資料庫登記值**（第 135／136 條）。(5) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；宣傳卡帶只能寫成「Discogs 上另有一筆格式欄標 Promo 的同年卡帶條目」。(6) **不得由曲名推論出處**（第 110 條）——〈Nino Wrote a Tune〉〈Catbird〉〈Hepsaba's Compass〉都沒有來源說明它們寫的是什麼。(7) **本卡沒有署名樂評可引**（Trouser Press 沒有這個樂團的條目，我查過兩個網址與站內搜尋），**行文不得引任何評語，也不得自行給音樂性的形容**。(8) 逐軌作者的拆分（Adam Cohen 八軌、Matt Patrick 六軌、Michael Holt 一軌）**只出現在 2020 年那份重製條目上**，引用時必須寫明「2020 年重製條目的 credit 欄」，**不得說成 1992 年唱片上的掛名**（第 136 條）。(9) 末軌〈Hersaba's Compass〉／〈Hepsaba's Compass〉是**不同條目上的拼法差異**，只能寫成「不同條目拼法不同」；**Apple 把掛名寫成「Mommyheads」（沒有 The）也是同一類差異**。(10) 「感謝大都會藝術博物館」那句只能照註記欄的原句寫，**不得推論那是什麼關係、也不得推論誰在那裡工作**（第 128 條）。\n**探測層核對（我推翻探測層的地方）**：previews.json 把本卡標 ready、collectionId 1536849604、trackCount 15、appleYear「1991」，**沒有標任何 drift、也沒有標 reissue**。**逐軌核對後確認**：Apple 那十五軌與 MB 1992 年 CD 逐項同名同序，**不是加曲版也不是二合一，試聽可用、軌數可用**；**但那一筆的 copyright 是「℗ 2021 Mommyheads」、releaseDate 是 1991-01-01 的佔位值，而且它的逐軌長度與 Discogs 2020 年重製條目逐項相同、與 1992 年原盤那組成批地不同——那是 2020 年的重製版，年份與逐軌長度都不可用**。**這是本組第四張同型的卡（另三張是〈The Pink Album〉〈Deep End〉〈Tales of Brave Ida〉）。建議主線在 previews.json 補標 `reissueEdition: true`（2020 Mommyheads self-released remaster）並修正 appleYear 的可信度標記。**CAA 那一側本卡是 NO ART，封面線要另外處理。"
+ },
+ {
+  "key": "desc2:Late!|Pocketwatch",
+  "artist": "Late!",
+  "album": "Pocketwatch",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1542262 的欄位：藝人「Late!」、標題《Pocketwatch》、country US、格式 **Cassette 1 [Album]**、year 與 released 兩欄都是 1992、廠牌 Simple Machines「**SM TOOL 3**」、master 590401、genres Rock、styles Alternative Rock；identifiers 欄空（無 barcode）。",
+    "src": "https://www.discogs.com/release/1542262"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「Side A and the first song on side B recorded December 23, 1990 at Upland Studios Arlington, VA」「Side B (minus the first song) recorded July 27, 1991 at WGNS Studios Arlington, VA」「\"Tool 3\" in the Simple Machines Tool Cassette series. **Tool cassettes were hand duplicated on-order.** Because of this there were a variety of Late! cassettes and covers released, including the following covers: black on yellow cover with no overlay, black on yellow cover with red overlay, red on yellow with black overlay, and red on white with no overlay.」",
+    "src": "https://www.discogs.com/release/1542262"
+   },
+   {
+    "f": "同一條目的 credit 欄只有三條：**Music By, Words By, Instruments: Dave Grohl**／Recorded By: Barrett Jones [A1 to B1]／Engineer, Producer: Geoff Turner [B2 to B5]；曲目表另在 A2〈Petrol CB〉掛一條 Backing Vocals: Barrett Jones。companies 欄 Recorded At: Upland Studios 與 WGNS Studios。曲序與登記長度：A1 Pokey The Little Puppy 4:15、A2 Petrol CB 4:44、A3 Friend Of A Friend 3:06、A4 Throwing Needles 3:21、A5 Just Another Story About Skeeter Thompson 2:06、B1 Color Pictures Of A Marigold 3:13、B2 Hell's Garden 3:18、B3 Winnebago 4:11、B4 Bruce 3:52、B5 Milk 2:35。",
+    "src": "https://www.discogs.com/release/1542262"
+   },
+   {
+    "f": "MusicBrainz release-group e25d41fa 的欄位：title《Pocketwatch》、first-release-date 1992（年精度）、**primary-type Album**、secondary-types 空陣列、artist-credit「Late!」（藝人 2486bb60-2ccd-4792-bdd4-4c760d610616，country US，**disambiguation 欄「Dave Grohl project」**）；genres 欄 alternative rock 1 票、mainstream rock 1 票、rock 1 票；url 關聯兩條，指向 Wikidata Q1934371 與英文維基百科的 Pocketwatch (album) 條目。",
+    "src": "https://musicbrainz.org/release-group/e25d41fa-a6e3-3075-b61b-3fa8a0b38bcd"
+   },
+   {
+    "f": "以 release?release-group=e25d41fa…&inc=recordings+labels+media 逐版比對：MB 轄下只有一筆 release（5820bfb7-ad67-4e0d-b655-92804e7175cb），1992、US、Official、Simple Machines「SM TOOL 3」、**Cassette**、Cassette Case、**10 軌**，無 barcode。**MB 這一側完全沒有任何 CD 或黑膠 release**；Discogs 那一側同 master 底下也只有卡帶條目。十軌的曲名與曲序兩個資料庫完全一致。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e25d41fa-a6e3-3075-b61b-3fa8a0b38bcd&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆卡帶登記的逐軌長度：Pokey the Little Puppy 4:20、Petrol CB 4:49、Friend of a Friend 3:09、Throwing Needles 3:23、Just Another Story About Skeeter Thompson 2:06、Color Pictures of a Marigold 3:10、Hell's Garden 3:20、Winnebago 4:14、Bruce 3:51、Milk 2:33；十軌相加 34 分 54 秒，最短的〈Just Another Story About Skeeter Thompson〉2 分 06 秒、最長的〈Petrol CB〉4 分 49 秒，**十軌裡有三軌超過四分鐘、只有兩軌不到三分鐘**。（英文維基條目的曲目表另給一組略有出入的長度，A 面合計 17:36、B 面合計 17:09。）",
+    "src": "https://musicbrainz.org/release/5820bfb7-ad67-4e0d-b655-92804e7175cb"
+   },
+   {
+    "f": "英文維基百科 Pocketwatch (album) 條目的**資訊框**（欄位皆有行內引註，引的是唱片本身的內頁說明 {{Cite AV media notes}}）：type 欄記 **demo**、artist 欄「Late!」、released 1992、recorded 欄兩個日期「December 23, 1990」與「July 27, 1991」、studio 欄「Upland and WGNS (Arlington, Virginia)」、length 34:45、label「Simple Machines」、producer「Geoff Turner」。同條目的 Personnel 一節（同一條引註）列：「Dave Grohl – all instruments and music」「Barrett Jones – backing vocals on \"Petrol CB\", recording (tracks 1–6)」「Geoff Turner – engineering and production (tracks 7–10)」。**注意：MB 把 primary-type 記成 Album，維基資訊框記 demo。**",
+    "src": "https://en.wikipedia.org/wiki/Pocketwatch_(album)"
+   },
+   {
+    "f": "同一條英文維基條目的 Background 一節（**該段有行內引註**，引的是 simplemachines.net 的 Tool Cassette Series 頁與 Time Out Chicago）逐句說：「The Tool Cassette Series started around 1991 as an experiment and as a way of keeping music \"in print\" on an as-needed basis without having to finance vinyl or CD pressings, since Simple Machines dubbed the cassettes as the orders came in.」「With multiple cassette decks and a lot of volunteer help, this was a manageable project for the label.」；同段另說錄音的來歷：「In the summer of 1991, Dave Grohl went into WGNS Studios and recorded four songs, playing all the instruments himself. The recording was combined with six songs from a previous Upland Studios session recorded in late 1990.」以及化名的由來——條目引 Grohl 的話「because I'm an idiot and I thought it would be funny to say to everybody, 'Sorry, we're Late!'」。",
+    "src": "https://en.wikipedia.org/wiki/Pocketwatch_(album)"
+   },
+   {
+    "f": "同一條英文維基條目**另一段有引註**的內容：「With minimal help and deteriorating master cassettes, Simple Machines got in touch with Grohl about releasing the Late! album as a CD, to keep up with demand. However, Grohl preferred to keep it as a cassette-only release, which the label honored.」「When the two master cassettes for Pocketwatch came to the end of their useful lives, and with some of the other artists' masters in the same condition, Simple Machines decided to discontinue the Tool Cassette Series from their mailorder, putting the over-half-decade experiment to an end.」；另一段（引 livenirvana.com）說〈Petrol CB〉曾以〈There's That Song〉之名收在 Simple Machines 1992 年的七吋盒裝合輯《Neapolitan Metropolitan》裡。",
+    "src": "https://en.wikipedia.org/wiki/Pocketwatch_(album)"
+   },
+   {
+    "f": "以 Discogs 查「Simple Machines SM TOOL」，回到同一系列的八捲卡帶，**全部是卡帶、全部標 1992–94 年**：SM TOOL 1 Geek《Hammer》(release 4470017)、SM TOOL 2 Slack《Bates Stamper》(3120677，格式標 Single Sided)、**SM TOOL 3 Late!《Pocketwatch》(1542262)**、SM TOOL 4 Hated《Awl》(4470059)、SM TOOL 5 Saturnine《Roto Chipper Paint Remover》(1810104)、SM TOOL 6 The Mommyheads《Swiss Army Knife》(4470080)、SM TOOL 7 My New Boyfriend《Super Saw》(2510249，Single Sided)、SM TOOL 8 Tuff Skool《Skuff Tool》(8135349，1994)——**八個編號的專輯名全部是工具名**。",
+    "src": "https://www.discogs.com/release/1542262"
+   }
+  ],
+  "hookCandidates": [
+   "一整個系列的卡帶都是照訂單一捲一捲手工轉錄的，所以封面有四種顏色組合",
+   "A 面加 B 面第一首錄於一九九〇年十二月二十三日，B 面其餘錄於一九九一年七月二十七日"
+  ],
+  "sound": "Discogs 的 styles 欄只掛一個字：Alternative Rock。編制在 credit 欄上只有一個名字——詞、曲與樂器三欄全掛同一個人；另外兩位分別掛前六軌的錄音與後四軌的錄音兼製作，其中前者還在 A2 掛了一條和聲。錄音分兩次、兩間錄音室、相隔七個月，兩個日期都精確到日。載體只有一種：卡帶。曲長平均——MB 那筆登記的十軌相加 34 分 54 秒，三軌超過四分鐘、兩軌不到三分鐘，最長與最短相差 2 分 43 秒。（本欄由 Discogs 原盤條目的 credit 與註記欄、MB 那筆卡帶的逐軌長度、英文維基條目資訊框與 Personnel 一節歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Pokey the Little Puppy",
+   "Petrol CB",
+   "Winnebago"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1992,
+   "note": "1992 維持卡單原值，三方一致無爭議：Discogs 原盤卡帶條目 1542262 的 year 與 released 欄都是 1992、MB release-group first-release-date 1992、MB 唯一那筆 release 的 date 也是 1992、英文維基條目資訊框的 released 欄同樣是 1992（引註是唱片內頁）。**行文只能寫到年**——沒有任何來源給出發行的月或日。**依第 1 條，磁帶原盤即算原盤：本作只有卡帶一種載體，MB 與 Discogs 兩邊都沒有任何 CD 或黑膠 release，所以 1992 就是問世年，沒有「後來才變成唱片」的那一年可以爭。**另有兩個**不同性質**、而且精確到日的時間可用：註記欄與維基資訊框一致的兩個錄音日「1990 年 12 月 23 日」（A 面與 B 面第一首）與「1991 年 7 月 27 日」（B 面其餘）——**那是錄音日，不是發行日**，行文要說清楚是哪一件事（第 135／136 條）。**策展層點名的對照組 RG a3bd6ea8（artist-credit「Late! / Foo Fighters」、1995、Album/Compilation,Live,Demo）我沒有釘、也沒有引用它的任何欄位。**"
+  },
+  "notes": "**【互斥分派見〈Bruiser〉那張的總表；本卡只列自己這一份】**\n**取得**：**Simple Machines 的 Tool 卡帶系列**（本組唯一取得這條線的卡：八個編號、全部是卡帶、專輯名全是工具名、照訂單手工轉錄）；**Dave Grohl 用 Late! 這個化名**這件事；兩次錄音的日期與分工。\n**禁令**：(1) **Simple Machines 的創辦敘事整條禁用**（已讓給 a 組的〈A Bedroom Community〉）——本卡寫的是**這個卡帶系列怎麼運作**（照訂單轉錄、不必先付黑膠或 CD 的壓片費），**不是廠牌怎麼創辦、由誰創辦、起訖哪一年**。**Working Holiday! 七吋系列禁用**（分派給〈Deep End〉）。(2) **不得寫壓量、份數、稀有度、二手價**（第 109 條）——**本卡是全批最容易踩的一張**：英文維基條目裡「its current status as a highly sought collectible」與 Grohl 那句「wanted to drive up the price of cassettes to $3,000」**兩處整句不得使用**；「label became flooded with orders」與「創造更高需求」一類的句子同樣不得使用（那是需求／稀有度的敘事）。**「Tool cassettes were hand duplicated on-order」與「四種封面顏色組合」是製作方式，可寫，但不得由它推論「只做了幾捲」「很難找」。**(3) **原盤軌數只能寫 10**——Discogs 原盤卡帶、MB 唯一那筆 release、英文維基的曲目表，三個來源一致 10 軌（第 140／141 條已用 release?release-group=&inc=recordings 逐版比對）。(4) **維基那條的引用規矩**：能用的只有**有行內引註的段落**——資訊框、Personnel 一節、Background 一節、以及那兩段引 simplemachines.net 與 Time Out Chicago 的敘述；**「Other releases」一節裡談〈Marigold〉被重錄成 Nirvana B 面、〈Winnebago〉與〈Friend of a Friend〉後來被重錄、以及〈Skeeter〉收進 Melvins EP 的那幾句都沒有行內引註，整段不得使用**（第 40／80 條）。**可用的部分引用時一律寫成「英文維基百科的 Pocketwatch 條目說」**（第 128 條）。**盜版 CD 那一段也不得使用**（涉及非官方發行與流通，且與本卡形狀無關）。(5) **MB 把 primary-type 記成 Album、維基資訊框記 demo——只能寫成「兩個來源給的類型不同」，不得挑一個說成正確**（第 136 條）。(6) **不得由曲名推論出處**（第 110 條）——〈Pokey the Little Puppy〉〈Bruce〉〈Winnebago〉〈Hell's Garden〉都沒有來源說明它們寫的是什麼；**〈Just Another Story About Skeeter Thompson〉的曲名裡有人名，維基那段沒有引註解釋那是誰，不得補**。(7) **化名的由來只能照維基引的那句 Grohl 原話寫**，並寫明「維基條目引了他的話」（第 128 條）。(8) **不得寫「這是他在成名前的碟」「後來他成了誰」這類事後框架**——本卡能寫的只有 credit 欄上的名字與維基有引註的敘述；**與 Nirvana、Foo Fighters 有關的段落一律不寫**。(9) 同批的〈Coming Into Beauty〉那個團在同一個系列裡也有一捲（SM TOOL 6），**本卡列系列時可以照 Discogs 的結果列出八個編號與名稱，但不得順手描述那些樂團或它們別的碟**（第 146 條）。\n**探測層核對（第 152 條的回搜）**：previews.json 標 `unavailable`，而且**七個店面全部回 0 筆**（us／gb／jp／ca／de／fr／au 都是 0→0）。**我依第 152 條另外查了兩條路徑**：(a) 美國店面 `search?term=Late Pocketwatch`、`term=Pocketwatch Late`、`term=Dave Grohl Pocketwatch`；(b) 英國店面同樣三組關鍵詞。**六次查詢全部回 0 筆，沒有任何近似的東西**。**確認 Apple 兩個店面真的沒有這張碟，主線不必回補**——這與資料庫那一側互相印證：MB 與 Discogs 都只有卡帶、沒有任何數位或 CD release。CAA 那一側本卡有封面（release-group e25d41fa 的 front）。"
  }
 ]
