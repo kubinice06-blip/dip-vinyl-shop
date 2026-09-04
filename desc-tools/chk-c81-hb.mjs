@@ -1,0 +1,32 @@
+// 臨時：c-81 b 組 hook 自檢（加權字數、note 字數、key/順序、開頭四字、禁語）
+import fs from 'node:fs';
+const R = JSON.parse(fs.readFileSync('batches/research/c81-b.json', 'utf8'));
+const H = JSON.parse(fs.readFileSync('batches/hooks/c81-hooks-b.json', 'utf8'));
+const w = s => Array.from(s).reduce((n, c) => n + (/[\x00-\x7F]/.test(c) ? 0.5 : 1), 0);
+const TRACE = /卡池|查無|並非|而非|無從查證|不得寫|禁補|未能查證|兩者是完全不同|標錯|有出入/;
+const BAN = /這張專輯|傑作|必聽|里程碑|獨樹一格|融合多種元素|具有代表性|層次豐富|你|我們/;
+const NEG = /不是|卻不是|並非|而不是/;
+const SKELETON = ['離開原樂團','另起爐灶','自己當起領班','皈依伊斯蘭','改名','錄完擱置','塵封多年','多年後才發行','母帶擱','生前最後','遺作','辭世','晚年','首度以自己的名字','第一張領銜','同一場錄音','同一夜','拆成兩張','拆成三張','首度加入','首次合作','唯一一次','最後一次合作','無鋼琴','沒有鼓','不設貝斯','無伴奏','一人包辦'];
+console.log(`研究 ${R.length} 張｜hook ${H.length} 張`);
+const heads = new Map();
+H.forEach((h, i) => {
+  const r = R[i];
+  const msgs = [];
+  if (!r || r.key !== h.key) msgs.push(`✗ key/順序不符（研究稿=${r ? r.key : '無'}）`);
+  const hw = w(h.hook), nl = Array.from(h.note).length;
+  if (hw > 50) msgs.push(`✗ hook 加權 ${hw}`);
+  if (nl > 350) msgs.push(`✗ note ${nl} 字`);
+  if (!/[。？！]$/.test(h.hook)) msgs.push('✗ hook 句末缺全形標點');
+  if (BAN.test(h.hook)) msgs.push('✗ hook 禁語 ' + h.hook.match(BAN)[0]);
+  if (NEG.test(h.hook)) msgs.push('✗ hook 否定句 ' + h.hook.match(NEG)[0]);
+  if (TRACE.test(h.note)) msgs.push('✗ note 校對痕跡 ' + h.note.match(TRACE)[0]);
+  const head = Array.from(h.hook).slice(0, 4).join('');
+  if (!heads.has(head)) heads.set(head, []); heads.get(head).push(i);
+  console.log(`${String(i).padStart(2)} ${h.key.replace('desc2:', '').padEnd(52)} hook ${String(hw).padStart(5)}｜note ${String(nl).padStart(3)}｜「${head}」 ${msgs.join(' ')}`);
+});
+[...heads].filter(([, v]) => v.length > 1).forEach(([k, v]) => console.log(`✗ 組內開頭四字重複「${k}」 → ${v.join(',')}`));
+const hits = new Map();
+H.forEach((h, i) => SKELETON.forEach(s => { if ((h.hook + h.note).includes(s)) { if (!hits.has(s)) hits.set(s, []); hits.get(s).push(i); } }));
+[...hits].forEach(([s, v]) => console.log(`${v.length > 1 ? '✗' : '·'} 骨架詞「${s}」×${v.length} → ${v.join(',')}`));
+const hw = H.map(h => w(h.hook)), nl = H.map(h => Array.from(h.note).length);
+console.log(`hook 加權 ${Math.min(...hw)}–${Math.max(...hw)}｜note ${Math.min(...nl)}–${Math.max(...nl)}`);
