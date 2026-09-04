@@ -1,0 +1,363 @@
+[
+ {
+  "artist": "Ted Lundy, Bob Paisley and The Southern Mountain Boys",
+  "album": "Slipping Away",
+  "year": 1976,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0055）",
+  "why": "Rounder 0055、1976 年十四軌（MB release 1976 US Official，Rounder 0055，14 軌）。Lundy 與 Paisley 替 Rounder 連錄三張（1972 年的同名盤、本張 0055、1978 年的 0107），構成 Rounder 早期目錄裡少見的同一組人連續三張。地位證據是廠牌的連續發行本身，以及三張都留在 Rounder 的正式目錄裡（MB 三筆 release-group 皆為 Album、皆標 Official，無任何第三方復刻，因此不存在授權爭議）。池中實掃 seed_cards.json 全 13,913 列：Ted Lundy 零張、Bob Paisley 零張、Southern Mountain Boys 零張。",
+  "risk": "**掛名極長且有兩種寫法**：MB 的 artist-credit 是「Ted Lundy, Bob Paisley and The Southern Mountain Boys」，英文資料常寫成「Ted Lundy, Bob Paisley & the Southern Mountain Boys」（and 對 &）。兩種都要比（裁定第 71 條）。封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable——Rounder 早期黑膠只有一部分進了串流，本批 b 組多張都是這個狀態。盤名《Slipping Away》是通用詞組（第 124 條）。同批另收 1978 年的《Lovesick and Sorrow》，本聯名本批 2 張、池中 0 張，未達上限；**1972 年的自我同名盤（RG 9bf904b8-5990-43bd-a43e-f4b642b7b82d）刻意不收**，理由是盤名＝掛名的高風險卡且 Apple 查無。",
+  "mbNote": "釘 dfbd23e3-6bd8-48fc-b4b4-e3ee865f9f2f《Slipping Away》，artist-credit「Ted Lundy, Bob Paisley and The Southern Mountain Boys」，first-release-date 1976，primary-type Album、secondary-types 空，轄下 1 個 release（1976 US Official，Rounder 0055，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Ted Lundy 與 Bob Paisley 兩個 MBID 各以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），兩人名下都是同樣的 3 個 release-group——這是裁定第 81 條的形狀（雙人組合的作品同時掛在兩位單人實體底下）。**對照組 9bf904b8-5990-43bd-a43e-f4b642b7b82d《Ted Lundy, Bob Paisley & The Southern Mountain Boys》(1972) 刻意不釘**（自我同名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ted Lundy, Bob Paisley and The Southern Mountain Boys",
+  "album": "Lovesick and Sorrow",
+  "year": 1978,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0107）",
+  "why": "同一組人替 Rounder 錄的第三張也是最後一張，0107、1978 年十二軌（MB release 1978 US Official，Rounder 0107，12 軌）。0107 這個號碼落在 Rounder 目錄從自家車庫轉向較正規經營的交界處（0100 是 Byron Berline《Dad's Favorites》、0119 是 Dry Branch Fire Squad，兩張本批也在候選之列），本張是那一段裡少數還完全屬於「週末樂手」形態的碟。三張連號發行本身就是地位證據；MB 上這個 release-group 只有一筆 release、無任何再版，Discogs 上亦無第三方復刻，授權狀態乾淨。池中實掃 seed_cards.json 全 13,913 列，本聯名零張。",
+  "risk": "掛名問題同《Slipping Away》（and／& 兩種寫法）。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名《Lovesick and Sorrow》辨識度中等，「and」與「&」兩種寫法都要試。藝人上限：本聯名本批 2 張，未達上限，但本批不得再收本聯名的第三張（1972 年那張已因自我同名排除）。",
+  "mbNote": "釘 34baff16-e1e1-4b06-999c-29e0a708206b《Lovesick and Sorrow》，artist-credit「Ted Lundy, Bob Paisley and The Southern Mountain Boys」，first-release-date 1978，primary-type Album、secondary-types 空，轄下 1 個 release（1978 US Official，Rounder 0107，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 browse 同前一張，兩人名下各 3 個 release-group；1972 年的自我同名盤刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Del McCoury",
+  "album": "Livin' on the Mountain",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Grasshound",
+  "why": "Del McCoury 在 MusicBrainz 上最早的一個 release-group，1971 年由 **Grasshound** 發行十三軌（MB release 1971 US Official，Grasshound，13 軌）——那是一家只留下極少幾筆紀錄的小廠。地位證據是它後來被 Rebel Records 兩次接手：1992 年的 CD-1709（MB release 1992 US Official，Rebel Records CD-1709，13 軌）與 2005 年的全球數位發行（MB release 2005-04-19 XW Official，Rebel Records），兩筆都標 Official，等於一家正規廠牌在二十年後回頭把這張小廠盤收進自己的目錄。Apple 實測 us storefront collectionId 1766156419《Livin' On The Mountain》(1971)，日期與原盤相符。池中實掃 seed_cards.json 全 13,913 列，Del McCoury 零張。",
+  "risk": "**盤名的撇號有兩種**：MB 的 release-group 標題用彎撇號（Livin’ on the Mountain），Apple 用直撇號（Livin' On The Mountain）。卡片採 ASCII 直撇號，以免下游比對失準（裁定第 50 條：同一個盤名的兩種寫法，標點差異在外部搜尋會被正規化掉）。封面實測 CAA release-group front 回 200；試聽預估 ready。**年份與 MB 一致（1971），但要注意 MB 那筆 1971 Grasshound release 沒有目錄號**，本機核版本時只能靠廠牌名與軌數（13 軌）辨識。同批另收《Our Kind of Grass》(1978)，本藝人本批 2 張、池中 0 張，未達上限。**《High on a Mountain》(1973, Rounder 0019) 刻意不收**：它的 artist-credit 是「Del McCoury & The Dixie Pals」（另一個掛名字串），且盤名與本張只差三個字母、去重時極易互相污染。",
+  "mbNote": "釘 5c9c476c-cffc-4f86-b35a-75f48cc76752《Livin’ on the Mountain》，artist-credit「Del McCoury」，first-release-date 1971，primary-type Album、secondary-types 空，轄下 3 個 release（1971 US Official，Grasshound，13 軌；1992 US Official，Rebel Records CD-1709，13 軌；2005-04-19 XW Official，Rebel Records，13 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Del McCoury MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 24 個 release-group。**對照組 2bd73c5b-28dc-47b4-8ba5-4bccd2cec75c《High on a Mountain》(1973, Rounder 0019, credit「Del McCoury & The Dixie Pals」) 刻意不釘**；0568caf3《Best of Del McCoury and The Dixie Pals》(1983) 與 c1c72a82《Classic Bluegrass》(1990) 皆為 Album/Compilation，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Rebel Records",
+  "g": "b"
+ },
+ {
+  "artist": "Del McCoury",
+  "album": "Our Kind of Grass",
+  "year": 1978,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rebel Records（SLP 1569）",
+  "why": "Rebel SLP 1569、1978 年十二軌（Discogs master 1416956；MB release 1978 US Official，Rebel Records SLP 1569，12 軌）。Rebel 的 SLP 1500 系列是它 1970 年代的主力目錄（Discogs 廠牌條目 125938 可見同系列的 1498 Curly Ray Cline、1524 Cliff Waldron、1533 II Generation、1538 Jimmy Arnold、1545 Curly Ray Cline、1569 本張）。MB 該 release-group 只有這一筆 release、無任何再版，Discogs 亦無第三方復刻。池中實掃 seed_cards.json 全 13,913 列，Del McCoury 零張。",
+  "risk": "封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable——同人的《Livin' on the Mountain》有 Apple 條目、本張沒有，本機不要因為兄弟盤有就假設這張也有（裁定第 93 條：同一位藝人的不同碟在同一個 storefront 的授權狀態可以完全不同）。盤名《Our Kind of Grass》是通用詞組（第 124 條）。藝人上限：本批 2 張、池中 0 張。",
+  "mbNote": "釘 94446c39-016a-4e07-9e11-df327b815872《Our Kind of Grass》，artist-credit「Del McCoury」，first-release-date 1978，primary-type Album、secondary-types 空，轄下 1 個 release（1978 US Official，Rebel Records SLP 1569，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 browse 同前一張（24 個 release-group）；《High on a Mountain》與兩張 Compilation 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Don Stover",
+  "album": "Things in Life",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0014）",
+  "why": "Rounder 0014、1972 年十四軌（Discogs master 627039；MB release 1972 US Official，Rounder 0014，14 軌）。0014 這個號碼屬於 Rounder 還是麻州幾個人自宅經營時期的目錄，同段還有 0003 Joe Val、0006 Country Cooking、0007 Frank Wakefield、0019 Del McCoury——本批 b 組收了其中五張，構成該廠創業期的一個切片。地位證據是 Rounder 的數位發行（Apple 實測 us storefront collectionId 1460208424《Things In Life》(1972)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Don Stover 零張、Lilly Brothers 零張。",
+  "risk": "封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名《Things in Life》是極通用的詞組**（第 124 條），字串比對必然撈到別的東西，只能靠 rgMbid 與 collectionId 鎖定。MB 的藝人實體「Don Stover」沒有 country 標記，同名風險存在，但名下 8 個 release-group 全部是藍草盤，實體正確。同人的《West Virginia Coal Miner's Blues》(1973) 與《Don Stover and the White Oak Mountain Boys》(1974) 本批未收（後者是自我同名形態）。",
+  "mbNote": "釘 d96fbcc2-3725-37a5-9fe9-abd9f01008bd《Things in Life》，artist-credit「Don Stover」，first-release-date 1972，primary-type Album、secondary-types 空，轄下 1 個 release（1972 US Official，Rounder 0014，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Don Stover MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 8 個 release-group。對照組 bf81c4e1《West Virginia Coal Miner's Blues》(1973) 與 bf36a38d《Don Stover and the White Oak Mountain Boys》(1974) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Country Cooking",
+  "album": "14 Bluegrass Instrumentals",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0006）",
+  "why": "Rounder 0006、1971 年十四軌（Discogs master 857198；MB release 1971 US Official，Rounder 0006，14 軌）。這是 Rounder 目錄的第六號——廠牌創立的頭一年——也是這個團的第一張。本批 b 組另收 Tony Trischka 的個人盤 Rounder 0048，兩張同屬 Rounder 早期的器樂線。地位證據是 Rounder 在 1982 年把該團的兩張碟編成《Country Cooking: 26 Bluegrass Instrumentals》再發（MB RG f92697c5-b78d-3b29-a688-121b1b90186a，Album/Compilation），由原廠自己做。池中實掃 seed_cards.json 全 13,913 列，Country Cooking 零張。",
+  "risk": "**掛名「Country Cooking」是通用詞組，撞名風險極高**（裁定第 124 條）：MB 的藝人實體沒有 country 標記，同字串在流行與烹飪類條目上都可能出現，只能靠 rgMbid 鎖定。**盤名以數字開頭**（14 Bluegrass Instrumentals），下游若有「殘餘含數字就擋」這類比對規則（裁定第 90 條）要注意本卡的數字是盤名本體不是版本殘餘。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。**1982 年的 26 曲合輯是二合一形態**（把 0006 與 0033 兩張併起來），依裁定第 129 條身分不釘、封面不用、試聽不採。同批另收《Frank Wakefield with Country Cooking》(1972, Rounder 0007)，但那張的 artist-credit 是另一個字串，不佔本團的藝人額度。",
+  "mbNote": "釘 a9a3e56c-da65-425d-8921-dea05598d5ef《14 Bluegrass Instrumentals》，artist-credit「Country Cooking」，first-release-date 1971，primary-type Album、secondary-types 空，轄下 1 個 release（1971 US Official，Rounder 0006，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Country Cooking MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group。**對照組刻意不釘**：f92697c5-b78d-3b29-a688-121b1b90186a《Country Cooking: 26 Bluegrass Instrumentals》(1982, Album/Compilation) 是 0006 與 0033 的二合一；d37ef8f1《Barrel of Fun》(1974, Rounder 0033) 因 CAA 與 Apple 皆查無封面而本批不收；0061e6a6《Country Cooking With the Fiction Brothers》(1976) 本批未收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Frank Wakefield with Country Cooking",
+  "album": "Frank Wakefield with Country Cooking",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0007）",
+  "why": "Rounder 0007、1972 年十六軌（MB release 1972 US Official，Rounder 0007，16 軌）。掛名把 Wakefield 與前一號（Rounder 0006）的同一個團並列；MusicBrainz 上 Wakefield 與 Red Allen 另有一張 1964 年的共掛盤《Bluegrass》，兩人的合作早於本張。地位證據是 Rounder 的目錄連續性（0003、0006、0007、0014、0019 在 MB 上皆可逐筆回問確認為 Official）以及該廠至今仍在營運。MB 該 release-group 只有這一筆 release、無再版，授權狀態乾淨。池中實掃 seed_cards.json 全 13,913 列，Frank Wakefield 零張、Country Cooking 零張。",
+  "risk": "**自我同名卡（盤名＝掛名）**，§1 高風險。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，依 c-67 共用簡報「自我同名的碟若 Apple 上查不到就不要收」，本卡屬邊界情況——收它的理由是**封面不靠 Apple**：CAA release-group front 實測回 200。若本機認為自我同名＋無試聽不可接受，本卡是 b 組第一個該被拿掉的。**掛名本身就是一句話**（Frank Wakefield with Country Cooking），下游若只用「Frank Wakefield」查 MB 的 release-group 未必列得到它（裁定第 10 條：MB 的 artist: 比對的是 artist-credit 字串）。Wakefield 名下另有大量 1960 年代的現場錄音 release-group（多為 Album/Live 且無日期），去重時要注意不要誤配。",
+  "mbNote": "釘 6719caa1-4ced-4a0b-bbbc-3e99e8226ee7《Frank Wakefield with Country Cooking》，artist-credit「Frank Wakefield with Country Cooking」，first-release-date 1972，primary-type Album、secondary-types 空，轄下 1 個 release（1972 US Official，Rounder 0007，16 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Frank Wakefield MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 27 個 release-group，其中大量為無日期的 Album/Live（1962–66 年的電台與現場錄音），**全部刻意不釘**——那些沒有可查證的發行年，依裁定第 97 條不得填年份。1011d7cc《Bluegrass》(1964, 與 Red Allen 共掛) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Frank Wakefield",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Buzz Busby and Leon Morris",
+  "album": "Honkytonk Bluegrass",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0031）",
+  "why": "兩位樂手在 Rounder 的合作盤，0031、1974 年十四軌（MB release 1974 US Official，Rounder 0031，14 軌）。MusicBrainz 上 Buzz Busby 名下九個 release-group 裡只有四張 Album，其餘是單曲；本張是四張 Album 裡最早的一張。MB 該 release-group 只有這一筆 release、無再版，Discogs 上亦無第三方復刻。池中實掃 seed_cards.json 全 13,913 列，Buzz Busby 零張、Leon Morris 零張。",
+  "risk": "**掛名是雙人聯名**：MB 的 artist-credit 是「Buzz Busby and Leon Morris」，但 MB 的藝人實體只有「Buzz Busby」——以「Leon Morris」查 artist 得實體但名下作品要另外 browse（裁定第 81 條的形狀）。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。**掛名的拼法在 MB 內部就不一致**：同一位藝人在另一張 release-group 上被拼成「Buzz Buzby」（b292eff3-c089-4cf1-b2c9-b69515617691《Songs by Buck Owens Sung by Buzz Buzby》1965），去重與查詢兩種拼法都要試。盤名《Honkytonk Bluegrass》另有連字寫法「Honky Tonk Bluegrass」，Discogs 以該寫法搜尋零命中，兩種都要試。",
+  "mbNote": "釘 45900388-1cf3-4580-a37d-af5485926725《Honkytonk Bluegrass》，artist-credit「Buzz Busby and Leon Morris」，first-release-date 1974，primary-type Album、secondary-types 空，轄下 1 個 release（1974 US Official，Rounder 0031，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Buzz Busby MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 9 個 release-group（其中 354dcad5 與 9c5831e7 為 Single、刻意不釘）。對照組 c44445cc《A Pioneer of Traditional Bluegrass》(1981) 與 ce90fc31《Frank Necessary, Al Jones and Buzz Busby》(1981) 本批未收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Joe Val and The New England Bluegrass Boys",
+  "album": "One Morning in May",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0003）",
+  "why": "Rounder 目錄的第三號、1971 年十三軌（Discogs master 729268；MB release 1971 US Official，Rounder 0003，13 軌）。這是 Joe Val 在 MusicBrainz 上唯一一個以自己樂團名義掛名的 release-group，也是 Rounder 創業第一年僅有的幾張之一。地位證據是 Rounder 在 1996 年以 CD 0003 重發（MB release 1996 US Official，Rounder CD 0003，16 軌，多三軌），以及數位發行（Apple 實測 us storefront collectionId 1443183304《One Morning In May》(1971)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Joe Val 零張。",
+  "risk": "封面實測 CAA release-group front 回 200；試聽預估 ready。**版本差異要記**：1996 年 CD 為 16 軌、比 1971 年原盤多三軌，卡片年份取 1971（裁定第 84／95 條），本機核版本時要知道多出來的三軌不屬於原盤。**掛名長且含「The」**，Apple 用「&」（Joe Val & The New England Bluegrass Boys）、MB 用「and」，兩種都要比。盤名《One Morning in May》是一首傳統曲名，通用度高（第 124 條）。MB 的藝人實體「Joe Val」名下只有 1 個 release-group——他其餘的碟掛在樂團 credit 底下，這是第 81／94 條的形狀，本機不要據此判定他只有一張碟。",
+  "mbNote": "釘 68554836-1fc8-424a-8c0b-a7ff7b4faeb7《One Morning in May》，artist-credit「Joe Val and The New England Bluegrass Boys」，first-release-date 1971，primary-type Album、secondary-types 空，轄下 2 個 release（1971 US Official，Rounder 0003，13 軌；1996 US Official，Rounder CD 0003，16 軌）。以 release-group/?query=artist:\"Joe Val\" AND releasegroup:\"One Morning in May\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。以藝人 MBID browse 只回 1 個 release-group（credit 掛樂團名，第 10／81 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joe Val & The New England Bluegrass Boys",
+  "reissuedBy": "Rounder Records（1996 CD）",
+  "g": "b"
+ },
+ {
+  "artist": "Tony Trischka",
+  "album": "Bluegrass Light",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0048）",
+  "why": "Rounder 0048、1974 年十三軌（Discogs master 3373777；MB release 1974 US Official，Rounder 0048，13 軌）。本張是 Trischka 在 MusicBrainz 上最早的一個 release-group；同一段 Rounder 目錄裡還有 0006 Country Cooking 的器樂盤（本批 b 組同收）。他後續在同廠連出多張（0062《Heartlands》、1977《Banjoland》、1981《Fiddle Tunes for Banjo》，皆見 MB 名下的 28 個 release-group）。MB 該 release-group 只有這一筆 release、無再版，Discogs master 3373777 亦只有 Rounder 一家。池中實掃 seed_cards.json 全 13,913 列，Tony Trischka 零張。",
+  "risk": "封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable。以 release-group/?query=artist:\"Tony Trischka\" AND releasegroup:\"Bluegrass Light\" 實查只回一筆（score 100，即本卡所釘的 390f1a14），**沒有同名雙胞胎**，身分乾淨。盤名《Bluegrass Light》辨識度中等，「Bluegrass」是本批最常出現的詞、單靠盤名比對風險高（裁定第 124 條）。同人的《Heartlands》(1975, Rounder 0062，RG 87bc5900-c0b7-4eb7-9829-194cadd7805e) 釘得住且 CAA 回 200，本批因批次張數而未收，已列入未收清單。",
+  "mbNote": "釘 390f1a14-d9c2-4e27-b7c7-55fa880ab5bb《Bluegrass Light》，artist-credit「Tony Trischka」，first-release-date 1974，primary-type Album、secondary-types 空，轄下 1 個 release（1974 US Official，Rounder 0048，13 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Tony Trischka MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 28 個 release-group。對照組 87bc5900-c0b7-4eb7-9829-194cadd7805e《Heartlands》(1975, Rounder 0062) 本批未收、刻意不釘；f42b8423《Fiddle Tunes for Banjo》(1981) 與 Bill Keith 共掛，亦不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Alan Munde",
+  "album": "The Banjo Kid Picks Again",
+  "year": 1980,
+  "genres": [
+   "folk"
+  ],
+  "label": "Ridge Runner Records（RRR0022）",
+  "why": "德州 Ridge Runner Records 的 RRR0022、1980 年十二軌（Discogs master 1566705，記 Ridge Runner RRR-0022；MB release 1980 US Official，Ridge Runner Records RRR0022，12 軌）。Ridge Runner 的目錄從 RRR 0001（Munde 的《Banjo Sandwich》，1975）編到 RRR0035，Discogs 廠牌條目 187645 可逐號查；Munde 一人就佔了該廠六筆條目——那正是「樂手與廠牌是同一個圈子」的形狀。MB 該 release-group 只有這一筆 release、無再版。池中實掃 seed_cards.json 全 13,913 列，Alan Munde 零張（池中的「Hugh Mundell」是牙買加 roots reggae 歌手，不同人）。",
+  "risk": "**掛名子字串撞名**：池中已有 Hugh Mundell 兩張，「Munde」是「Mundell」的子字串，任何以子字串做的疑似分裂檢查都會誤報（`audits/pool-artist-name-splits.md` 記的正是這種形狀）。兩者是完全不同的人，本卡不得與之合併。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable——Ridge Runner 的整份目錄沒有進串流。**目錄號有兩種寫法**（RRR0022 與 RRR-0022），MB 用無連字號、Discogs 用有連字號，下游以目錄號比對兩種都要試。Discogs 上該廠另有一筆同編號的 RRR0021 混編（該站標「RRR-0022, RRR0022, RRR0021」），本機核版本時以 MB 的 RRR0022、12 軌為準。",
+  "mbNote": "釘 9fe2cf81-f6ff-42d1-981d-51d5182f01e1《The Banjo Kid Picks Again》，artist-credit「Alan Munde」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release（1980 US Official，Ridge Runner Records RRR0022，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Alan Munde MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group，其餘四筆（含 Festival Favorites 系列）皆為 1980 年代後期分卷或無日期，依裁定第 87／97 條刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Charlie Moore",
+  "album": "Avery County",
+  "year": 1979,
+  "genres": [
+   "folk"
+  ],
+  "label": "Old Homestead Records（OHS 90102）",
+  "why": "Charlie Moore 在 Old Homestead 出的碟，OHS 90102、1979 年十二軌（Discogs master 3316018；MB release 1979 US Official，Old Homestead OHS 90102，12 軌）。Old Homestead 是密西根的小廠，目錄分成 90000 系列（新錄音）與 OHCS 系列（1930–50 年代電台錄音的整理輯），前者正是本張所在的那一段（Discogs 廠牌條目 116771 可逐號查）。MusicBrainz 上他名下七個 release-group 分散在 Vetco、Old Homestead 等小廠之間，沒有一家是主流公司。地位證據是數位發行（Apple 實測 us storefront collectionId 1578980184《Avery County》(1979)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Charlie Moore 零張。",
+  "risk": "**掛名「Charlie Moore」是極常見的人名**（裁定第 124 條）：MB 上該實體標有 disambiguation「bluegrass artist from South Carolina」，但外部服務沒有這個標記，Apple 上的同名藝人不只一位。本卡靠 rgMbid 與 collectionId 鎖定，下游不得用掛名字串比對。封面實測 CAA release-group front 回 200；試聽預估 ready。盤名《Avery County》是北卡一個郡名，辨識度中等。同人的《The Vetco Sessions》(MB 記 1973，但轄下 release 是 Vetco CD 3011\\13、24 軌的後編 CD) **刻意不收**——那是編輯輯而非原盤，年份與形態都對不上（裁定第 84／100 條）。",
+  "mbNote": "釘 6df248fe-8bc0-4145-8db3-2e3294b028a4《Avery County》，artist-credit「Charlie Moore」，first-release-date 1979，primary-type Album、secondary-types 空，轄下 1 個 release（1979 US Official，Old Homestead OHS 90102，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Charlie Moore MBID（disambiguation「bluegrass artist from South Carolina」，非同名他人）以 release-group?artist=<MBID>&limit=100 分頁 browse 得 7 個 release-group。**對照組 fcb1beb3-99d3-44cd-b429-d58fc44429b2《The Vetco Sessions》刻意不釘**（轄下唯一 release 是 24 軌 CD，屬後編輯輯）；0aedafe9《Sings Good Bluegrass》(1972) 與 e0d2ec16《The \"Original\" Rebel Soldier》(1972) 本批未收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Red Allen & The Allen Brothers",
+  "album": "Allengrass",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Lemco（612）",
+  "why": "Lemco 612、1973 年十二軌（Discogs master 1062118，該站掛名登「Red Allen (2) & The Allen Bros.」，廠牌 Lemco 612；MB release 1973 US Official，Lemco 612，12 軌）。Lemco 的目錄極短，Discogs 上只有零星條目。MusicBrainz 上 Red Allen 的藝人實體名是「Harley “Red” Allen」，名下三十七個 release-group 裡有 1964 年與 Frank Wakefield 共掛的《Bluegrass》與 1976 年與 Osborne Brothers 共掛的合輯；本張是他改以 The Allen Brothers 為聯名的階段。MB 該 release-group 只有這一筆 release、無任何再版，Discogs master 1062118 亦只有 Lemco 一家，授權狀態乾淨。池中實掃 seed_cards.json 全 13,913 列，Red Allen 零張、Allen Brothers 零張。",
+  "risk": "**MB 的藝人實體名是「Harley \"Red\" Allen」、artist-credit 是「Red Allen & The Allen Brothers」——兩者不同**（裁定第 10 條的標準形狀）。卡片採 artist-credit。**「Red Allen」另有一位同名的紐奧良爵士小號手**（Henry \"Red\" Allen），是撞名高風險（第 29／44 條）；本卡的聯名字串含 The Allen Brothers，與爵士那位不會相等，但下游任何以「Red Allen」單獨查詢的地方都會撈到錯的人。**Discogs 的掛名縮寫成「Allen Bros.」**，MB 用全稱「Allen Brothers」，兩種都要比。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。**同批不收《Bluegrass Country》(1966, County 704)**：那張的 artist-credit 是「Red Allen & The Kentuckians」，與本張只差樂團名，去重時極易互相污染，且本批 County 廠牌的份額已由 a 組佔滿。",
+  "mbNote": "釘 387833a8-b72e-45b0-b641-a0c78948e27f《Allengrass》，artist-credit「Red Allen & The Allen Brothers」，first-release-date 1973，primary-type Album、secondary-types 空，轄下 1 個 release（1973 US Official，Lemco 612，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人實體「Harley \"Red\" Allen」MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 37 個 release-group，其中大量為 1950–60 年代的 Single 與無日期的 Album/Live，**全部刻意不釘**（無可查證的發行年，裁定第 97 條）。**對照組 38d23343-f7e5-4bdc-9626-f047ddbf9311《Bluegrass Country》(1966, County 704, credit「Red Allen & The Kentuckians」) 刻意不釘**；d764d3f0《The Osborne Brothers & Red Allen》(1976) 為 Album/Compilation，亦不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jim Eanes",
+  "album": "A Statesman of Bluegrass Music",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Jessup Records（MB 152）",
+  "why": "Jessup Records MB 152、1977 年十二軌（MB release 1977 US Official，Jessup Records MB 152，12 軌）。Jessup 的碟以 MB 系列編號。MusicBrainz 上 Eanes 名下十八個 release-group 橫跨 Rural Rhythm、Jessup、County 等小廠，沒有一家是主流公司。地位證據是數位發行（Apple 實測 us storefront collectionId 1877627296《A Statesman of Bluegrass Music》，Apple 記 1971 年、與原盤的 1977 有落差，見 risk）。池中實掃 seed_cards.json 全 13,913 列，Jim Eanes 零張。",
+  "risk": "**年份分歧，卡片取 1977**：MB 的 release-group first-release-date 與其唯一一筆 release（Jessup Records MB 152）都記 1977，Apple 的條目記 1971。依裁定第 77 條，Apple 的 releaseDate 只是訊號不是門檻（它記的常是數位上架或重製版日期），卡片維持 MB 與壓片證據的 1977，**行文不得正面斷言發行年**（第 18／46 條）。封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名是一句稱號式的長句**，Apple 與 MB 寫法一致。**廠牌目錄號「MB 152」的前綴恰好是 MusicBrainz 的縮寫**，下游做文字處理時不要誤剝。同人的《Shenandoah Valley Quartet with Jim Eanes》(1970, County 726) 與其餘十六張本批未收。",
+  "mbNote": "釘 0eb07ed6-6b10-417b-91d6-0ef69ec56b77《A Statesman of Bluegrass Music》，artist-credit「Jim Eanes」，first-release-date 1977，primary-type Album、secondary-types 空，轄下 1 個 release（1977 US Official，Jessup Records MB 152，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Jim Eanes MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 18 個 release-group（1968–1989），全部確認過標題與年份後只取本張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Curly Ray Cline",
+  "album": "Chicken Reel",
+  "year": 1971,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rebel Records（SLP-1498）",
+  "why": "Curly Ray Cline 在 Rebel 的碟，SLP-1498、1971 年十二軌（Discogs master 1835432；MB release 1971 US Official，Rebel Records SLP-1498，12 軌）。他以自己的名義在 Rebel 連出八張（MB 名下八個 release-group，1971–79，見 mbNote），其中 1977 年那張的盤名《Clinch Mountain Boy Jailed!!!》直接指向他同時期的樂團身分。這一整批碟是「樂團裡的側手在自家廠牌另開一條個人目錄」的典型。地位證據是數位發行（Apple 實測 us storefront collectionId 1766018658《Chicken Reel》(1971)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Curly Ray Cline 零張、Lonesome Pine Fiddlers 零張。",
+  "risk": "**掛名的引號寫法在 MB 與外界不同**：MB 的藝人實體名是「“Curly” Ray Cline」（帶彎引號），artist-credit 與 Discogs、Apple 都作「Curly Ray Cline」。卡片採無引號的通行寫法（裁定第 11 條：卡片掛名要的是這個對象的通行名）。封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名《Chicken Reel》是一首公版傳統曲名**，通用度極高（第 124 條），字串比對必然撈到大量別的錄音，只能靠 rgMbid 與 collectionId 鎖定。**MB 上這個 release-group 轄下有兩筆一模一樣的 release**（皆 1971 US Official、Rebel SLP-1498、12 軌），是重複建檔，本機核版本時任取一筆即可。同批另收《Why Me, Ralph?》(1975)，本藝人本批 2 張、池中 0 張，未達上限。",
+  "mbNote": "釘 cb70d214-70bc-480a-bde8-a768f35c662f《Chicken Reel》，artist-credit「Curly Ray Cline」，first-release-date 1971，primary-type Album、secondary-types 空，轄下 2 個 release（皆 1971 US Official，Rebel Records SLP-1498，12 軌——MB 上的重複建檔）。已回問 release-group 端點確認實體類型與標題。藝人實體「“Curly” Ray Cline」MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 8 個 release-group（1971 Chicken Reel、1971 They Cut Down The Old Pine Tree、1972 My Little Home In West Virginia、1974 Fishing For Another Hit、1975 Why Me, Ralph?、1977 Clinch Mountain Boy Jailed!!!、1979 Who's Gonna Mow My Grass?，另一筆無日期的《Together Again at Their Best》**依裁定第 97 條刻意不釘**）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Curly Ray Cline",
+  "album": "Why Me, Ralph?",
+  "year": 1975,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rebel Records（SLP 1545）",
+  "why": "Rebel SLP 1545、1975 年十二軌（MB release 1975 US Official，Rebel Records SLP 1545，12 軌）。這是 Cline 在 Rebel 個人系列裡的第五張（依 MB 名下 release-group 的年份排序）。Rebel 的 SLP 1500 系列在 1971–80 年間同時容納了本張、1498 與 1524、1533、1538、1569 等（Discogs 廠牌條目 125938 可逐號查），是本批 b 組廠牌集中度最高的一條線。MB 該 release-group 只有這一筆 release、無再版，Discogs 上亦無第三方復刻。池中實掃 seed_cards.json 全 13,913 列，Curly Ray Cline 零張。",
+  "risk": "**盤名含問號與逗號**，下游做檔名或 URL 處理時要注意跳脫；Apple 若有條目通常會把問號吃掉。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable——同人的《Chicken Reel》有 Apple 條目、本張沒有，不要因為兄弟盤有就假設這張也有（裁定第 93 條）。掛名的彎引號問題同《Chicken Reel》。藝人上限：本批 2 張、池中 0 張。**盤名提到 Ralph Stanley，但本卡與 Stanley Brothers 的正典是兩回事**——行文不得把它寫成 Stanley 的作品。",
+  "mbNote": "釘 ea3614f3-674a-4e17-a6a6-0b064a1f956a《Why Me, Ralph?》，artist-credit「Curly Ray Cline」，first-release-date 1975，primary-type Album、secondary-types 空，轄下 1 個 release（1975 US Official，Rebel Records SLP 1545，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 browse 同《Chicken Reel》那張（8 個 release-group），無日期的《Together Again at Their Best》刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The II Generation",
+  "album": "Head Cleaner",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rebel Records（SLP-1533）",
+  "why": "這個樂團在 Rebel 的第三張，SLP-1533、1974 年十二軌（MB release 1974 US Official，Rebel Records SLP-1533，12 軌）。這個團在 1972–76 年間連出五張（MB 名下五個 release-group：1972《The IInd Generation》、1974 本張、1975《We Call It Grass》、1976《Second Impression》、1976《State of Mind》），全部在 Rebel。團名本身就是宣言——第二代。MB 該 release-group 只有這一筆 release、無再版。池中實掃 seed_cards.json 全 13,913 列，II Generation 零張、Eddie Adcock 零張、Country Gentlemen 零張。",
+  "risk": "**團名有至少三種寫法**：MB 的 artist-credit 是「The II Generation」（羅馬數字二），同團首張的盤名寫成「The IInd Generation」，英文資料也常寫「II Generation」與「2nd Generation」。四種都要比（裁定第 71 條），本卡採 MB 的 artist-credit。**羅馬數字在正規化後會變成拉丁字母 ii**，與英文縮寫的碰撞風險高。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名《Head Cleaner》辨識度尚可，但同名的電子與搖滾唱片存在，仍應以 rgMbid 鎖定。**1972 年的《The IInd Generation》是自我同名形態，刻意不收。**",
+  "mbNote": "釘 22b6be94-f15e-4216-8f95-afba3f1fd95e《Head Cleaner》，artist-credit「The II Generation」，first-release-date 1974，primary-type Album、secondary-types 空，轄下 1 個 release（1974 US Official，Rebel Records SLP-1533，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 II Generation MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group。**對照組 268bdd46-d473-4795-8173-4d0a0d32e151《The IInd Generation》(1972) 刻意不釘**（自我同名）；38087a00《We Call It Grass》(1975)、265fe675《Second Impression》(1976)、c8ed7165《State of Mind》(1976) 本批未收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "II Generation",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jimmy Arnold",
+  "album": "Strictly Arnold",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rebel Records（SLP 1538）",
+  "why": "Jimmy Arnold 在 MusicBrainz 上最早的一個 release-group，Rebel SLP 1538、1974 年十二軌（MB release 1974 US Official，Rebel Records SLP 1538，12 軌）。他名下只有五個 release-group：1974 本張、1977《Guitar》、1982《Rainbow Ride》、1983《Southern Soul》，另一筆無日期。地位證據是數位發行（Apple 實測 us storefront collectionId 1766018867《Strictly Arnold》(1974)，年份與原盤相符）與 Rebel SLP 1500 系列的連續編號（Discogs 廠牌條目 125938）。池中實掃 seed_cards.json 全 13,913 列，Jimmy Arnold 零張。",
+  "risk": "封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名《Strictly Arnold》含掛名的姓**，去重時若有「盤名含藝人名即視為自我同名」的規則會誤判——本卡不是自我同名（掛名是 Jimmy Arnold、盤名是 Strictly Arnold），但裁定第 90 條那條「自我同名卡的標題必須完全相等」的比對規則要注意不要誤套。**掛名「Jimmy Arnold」是常見人名**（第 124 條），MB 的實體有 disambiguation「banjo, fiddle, lead guitar, rhythm guitar, & harmonica」，外部服務沒有這個標記。同人的《Guitar》(1977) 盤名是單字通用詞、風險更高，本批不收。",
+  "mbNote": "釘 310f6f5f-a74a-4445-9c19-daa0df4237dd《Strictly Arnold》，artist-credit「Jimmy Arnold」，first-release-date 1974，primary-type Album、secondary-types 空，轄下 1 個 release（1974 US Official，Rebel Records SLP 1538，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Jimmy Arnold MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group。對照組 9b631d47《Guitar》(1977)、480b34cf《Rainbow Ride》(1982)、e9daaca6《Southern Soul》(1983) 本批未收、刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Snuffy Jenkins and the Hired Hands",
+  "album": "Carolina Bluegrass",
+  "year": 1962,
+  "genres": [
+   "folk"
+  ],
+  "label": "Folk-Lyric Records（FL 123）",
+  "why": "Snuffy Jenkins 與樂團的碟，原盤是 1962 年 Folk-Lyric FL 123 十八軌（Discogs master 755996，記 Folk-Lyric FL 123、1962 年美國盤；MB release 1962 US Official，Folk Lyric FL 123，18 軌）。Folk-Lyric 的目錄極短。地位證據是它兩次被 Arhoolie 接手：1972 年的 Arhoolie 5011 黑膠與 1998 年的 Arhoolie CD 9027（MB 該 RG 轄下兩筆皆 US Official、皆 18 軌），Arhoolie 把一張 1962 年的小廠盤留在自己的目錄裡三十六年，本身就是背書。池中實掃 seed_cards.json 全 13,913 列，Snuffy Jenkins 零張、Hired Hands 零張。",
+  "risk": "**本卡是本批年份最早的一張（1962），也是唯一一張跨到 1960 年代前半的**。年份無爭議：MB、Discogs 都記 1962，三個 release 的軌數都是 18，版本一致。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable。**廠牌名有兩種寫法**：MB 記「Folk Lyric」（無連字號）、Discogs 記「Folk-Lyric」（有連字號），下游以廠牌名查詢兩種都要試（裁定第 20 條的形狀）。**掛名「Snuffy Jenkins」是綽號＋姓**，本名 DeWitt Jenkins，MB 與 Discogs 都用綽號形式；池中另有 Mick Jenkins（嘻哈）一張，姓氏子字串會誤報。盤名《Carolina Bluegrass》是通用詞組（第 124 條）。",
+  "mbNote": "釘 2b1de655-a509-4605-ade5-6aecf29389e2《Carolina Bluegrass》，artist-credit「Snuffy Jenkins and the Hired Hands」，first-release-date 1962，primary-type Album、secondary-types 空，轄下 3 個 release（1962 US Official，Folk Lyric FL 123，18 軌；1972 US Official，Arhoolie 5011，18 軌；1998 US Official，Arhoolie CD 9027，18 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Snuffy Jenkins MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse，名下只有這 1 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Arhoolie Records",
+  "g": "b"
+ }
+]
