@@ -1,0 +1,337 @@
+[
+ {
+  "key": "desc2:Air|Air Time",
+  "artist": "Air",
+  "album": "Air Time",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e8b7dc42 的欄位：title《Air Time》、first-release-date 1978、primary-type Album、secondary-types 空陣列、artist-credit「Air」；genre 欄只有一個標籤 jazz（1 票）；url-rels 五條——allmusic 指向 mw0000798110、discogs 指向 master/164506、rateyourmusic 的 air_f1/air_time、jazzmusicarchives 的 air-new-air/air-time、wikidata 指向 Q4698212。掛名實體是 Air（MBID 14b22b4b-06d5-4b82-8284-29d29b58945f，**type Group，country US，disambiguation 欄「70s–80s US jazz trio」**——法國二人組 Air 是另一個實體）。",
+    "src": "https://musicbrainz.org/release-group/e8b7dc42-3b53-4a06-b262-429e5081c309"
+   },
+   {
+    "f": "MB 轄下 1978 US 那筆 release（92a73422）：status Official、title《Air Time》、artist-credit「Air」、廠牌欄 Nessa Records、編號欄 N-12、一張 12\" Vinyl、track-count 5、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈I'll Be Right Here Waiting…〉2:37、2〈No. 2〉12:01、3〈G.v.E.〉7:09、4〈Subtraction〉13:35、5〈Keep Right On Playing Thru the Mirror Over the Water〉9:17。 同一 release-group 轄下另四筆 release，**五筆全部是 5 軌、曲名與曲序逐項相同**：1996 US（0dc55b47，Nessa ncd-12，CD）、1997 JP（52621263，Bomba Records BOM 22044，CD）、2010 US（69eb99a3，Nessa ncd-12，CD，barcode 827020001226）、2017 US（d7a7a146，Nessa N-12，12\" Vinyl）。以 release?release-group=…&inc=recordings 逐版比對：**沒有任何一筆多出或抽換曲目**；前四筆的曲長逐項相同（2:37、12:01、7:09、13:35、9:17），**只有 2017 那筆整體略短（2:29、11:46、6:59、13:20、9:04）——那組數字與 Discogs 原盤條目上的曲長完全一致。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e8b7dc42-3b53-4a06-b262-429e5081c309&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1091748 的欄位：title《Air Time》、year 與 released 欄皆 1978、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、**廠牌欄兩條（Nessa Records N-12 與 Nessa Records n-12）**、genre 欄 Jazz、style 欄 Free Jazz。公司欄八條：Phonographic Copyright (p) 與 Copyright (c) 皆「Nessa Records」、Published By「Big Mac (2)」「Dubra」「Frederic」、**Distributed By「Flying Fish Records, Inc.」**、**Recorded At「Streeterville Studios」**、Lacquer Cut At「Masterdisk」、Pressed By「All Disc Records, Inc.」。identifiers 欄三條：Rights Society「BMI」、Matrix / Runout「N-12-AS MASTERDISK DC 77」與「N [M]-12-BS MASTERDISK 77」（**B 面刻紋上的 M 被劃掉**）。",
+    "src": "https://www.discogs.com/release/1091748"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Alto Saxophone, Tenor Saxophone, Flute, Bass Flute, Performer [Hubkaphone]「Henry Threadgill」**（最後那項是條目上的樂器名 Hubkaphone）；Bass「Fred Hopkins」；Percussion「Steve McCall」；**Producer「Chuck Nessa」**；Engineer「Mark Rubenstein」；Liner Notes「John Litweiler」；Lacquer Cut By「Dave Crawford (2)」；Art Direction, Design「Arnold A. Martin」；Photography By [Cover]「Bobbie Kingsley」。**三位樂手。**",
+    "src": "https://www.discogs.com/release/1091748"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈I'll Be Right Here Waiting...〉2:29（Written-By: **Steve McCall**）、A2〈No.2〉11:46（**Henry Threadgill**）、A3〈G.v.E.〉6:59（**Fred Hopkins**）、B1〈Subtraction〉13:20（Henry Threadgill）、B2〈Keep Right On Playing Thru The Mirror Over The Water〉9:04（Henry Threadgill）。**五軌的作者是三比一比一——三位團員各有作品。** 註記欄的出版商歸屬與作者欄對得上：「A1 Big Mac／A2, B1, B2 Dubra／A3 Frederic」。",
+    "src": "https://www.discogs.com/release/1091748"
+   },
+   {
+    "f": "同一條目的註記欄其餘各行：**「Recorded 17,18 November 1977 (A2/A3 and A1/B1/B2).」**（**兩天分別錄了哪幾軌，條目上就寫著**）、「\"77\" in runouts denotes All Disc Records Inc. pressing.」、「Runout data: etched, M on side B is scratched out.」。",
+    "src": "https://www.discogs.com/release/1091748"
+   },
+   {
+    "f": "Discogs master 164506 的 versions 共 7 筆，**零筆標 Unofficial**：1978 US Nessa N-12／n-12 兩筆（皆 LP, Album, Stereo）；**1982 US Nessa N-12／n-12（版本欄 LP, Album, Repress）**；1996 US Nessa ncd-12（CD, Album, Reissue）；1997 Japan Bomba Records (4) BOM 22044（CD, Album）；2010 US Nessa ncd-12（CD, Album, Reissue）；2017 US Nessa「Nessa N-12」（Vinyl，版本欄 LP, Album, Limited Edition, Reissue）。",
+    "src": "https://www.discogs.com/master/164506"
+   },
+   {
+    "f": "Discogs 2017 年那筆美國黑膠 10201316 的欄位：year 與 released 欄皆 2017、廠牌欄 Nessa Records「Nessa N-12」、格式欄 Vinyl ×1［LP, Album, Limited Edition, Reissue］、公司欄三條（版權兩欄皆 Nessa Records、**Distributed By 仍寫「Flying Fish Records, Inc.」**）、credit 欄與原盤相同（Threadgill、Hopkins、McCall、Chuck Nessa、Mark Rubenstein、John Litweiler、Arnold A. Martin、Bobbie Kingsley）、identifiers 欄只有 Rights Society「BMI」。**曲目表 5 個曲位、曲名曲序與逐軌 Written-By 欄與原盤逐項相同，曲長也是原盤那一組（2:29、11:46、6:59、13:20、9:04）。**",
+    "src": "https://www.discogs.com/release/10201316"
+   },
+   {
+    "f": "Apple 試聽複檢：**探測層配上的那一筆不是這張碟——是同名的另一張專輯，掛名完全不同的人。** 探測層在 us 店面搜到 12 筆、配上 collectionId **792998267**；以 collectionId 直查：collectionName《Air Time》、**artistName「Fiodhna Gardiner」**、trackCount **11**、releaseDate 2013-12-05、copyright 欄「℗ 2013 Fiodhna Gardiner」，十一軌的曲名是〈An Raibh Tu Ar an G-Carraig〉〈Easter Snow〉〈An Buachaillin Donn〉〈Gra Mo Chroi〉〈Amhran Na Leabhar〉〈Hector the Hero〉〈Mall of Lismore〉〈The Boy from Aughdarra〉〈An Ghorta〉〈The Banks of Sullane〉〈The Dreams of Old Pa Fogerty〉——**一整張愛爾蘭傳統曲目，與本張五軌沒有任何一軌相同。** **探測層標的 `ready` 是誤判，必須推翻為 `unavailable`。**",
+    "src": "https://itunes.apple.com/lookup?id=792998267&entity=song&country=us"
+   },
+   {
+    "f": "**回補查證（三條路徑，全部落空）**：路徑一 us 店面 `term=Air Henry Threadgill Air Time` 回 1 筆，是 Henry Threadgill《X-75, Vol. 1 (Expanded)》(RCA/Sony, 7 軌)——**另一張碟**；路徑二 us 店面 `term=Air Air Time Nessa`，resultCount **0**；路徑三 jp 店面 `term=Air Air Time` 回 25 筆，全部是別的藝人（PLAVE、aespa、Sault《Air》、法國團 Air 的《Moon Safari》等），**沒有一筆是本張**。**對照組**：這個三人組在 Apple 上並非完全缺席——us 店面 `term=Air Lore` 回到 collectionId 878050237《Air Lore》、artistName「Air」、5 軌、℗ 1979 RCA Records，**那是另一張碟（RCA 發行，池中已有）**。**結論：Apple 上有這個團的別張碟，但沒有這張 Nessa 的《Air Time》。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Air%20Air%20Time%20Nessa&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Air (free jazz trio)〉條目帶行內引註的第一句說：**Air 是 1971 年由薩克斯風手 Henry Threadgill、低音提琴手 Fred Hopkins 與鼓手 Steve McCall 成立的自由爵士三人組**（引註 Howard Mandel 撰、Barry Kernfeld 編《The New Grove Dictionary of Jazz》第二版第 1 卷第 20–21 頁的「Air」條，以及 Scott Yanow 撰《All Music Guide to Jazz》1998 年第三版第 12 頁）；條目接著說 Threadgill 曾受芝加哥 Columbia College 之邀改編一批 Scott Joplin 的曲子（引註同一條 All Music Guide），三人因此有了不用鋼琴演奏這些曲子的機會。**條目的 infobox 另把 Andrew Cyrille 與 Pheeroan Aklaff 列為 past members，那是 infobox 欄位、不是帶引註的段落。**",
+    "src": "https://en.wikipedia.org/wiki/Air_(free_jazz_trio)"
+   }
+  ],
+  "hookCandidates": [
+   "五軌的作者欄剛好把三個人都算上：三軌、一軌、一軌",
+   "Discogs 註記欄連哪一天錄了哪幾軌都寫著——1977 年 11 月 17、18 日，A2/A3 一天，A1/B1/B2 另一天"
+  ],
+  "sound": "五軌兩面（Discogs 1091748 的 A1–A3、B1–B2；MB 五筆 release 拉平成 1–5，曲名曲序逐項一致）。原盤最短的一軌是 A1〈I'll Be Right Here Waiting...〉2:29、最長的一軌是 B1〈Subtraction〉13:20（曲長引 Discogs 原盤條目那一組；**MB 前四筆 release 記的是另一組略長的數字，只有 2017 那筆與 Discogs 一致**）。編制照 Discogs credit 欄是三人：中音與次中音薩克斯風、長笛與低音長笛（外加條目上寫作 Hubkaphone 的一項）、低音提琴、打擊。（本欄由 Discogs 1091748 的曲目表、credit 欄與 MB 五筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "No. 2",
+   "Subtraction",
+   "Keep Right On Playing Thru the Mirror Over the Water"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "note": "**只能寫到年。** 兩庫一致寫 1978：MB release-group first-release-date 1978、MB 那筆 Nessa 原盤 release 的 date 欄 1978（只有年）、Discogs 1091748 的 year 與 released 欄皆 1978。**錄音日 1977 年 11 月 17、18 日**（Discogs 原盤註記欄）——**錄音年與發行年差一年，兩者不得互換。** **本卡沒有可用的 Apple 紀錄**（探測層配上的是別人的碟，見 facts 第 10 條），**探測層記下的 appleYear 2013 與 `yearDrift 35` 全部作廢。**"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Air 團史（Threadgill／Hopkins／McCall 1971 年組團，維基〈Air (free jazz trio)〉條目那句帶引註的內容，facts 第 12 條）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 5**——MB 那筆 1978 US release 的 track-count 是 5，Discogs 1091748 的曲目表也是 5 個曲位（A1–A3、B1–B2），**同 release-group 的另四筆 release（1996、1997、2010、2017）全部也是 5 軌、曲名曲序逐項相同——這張碟沒有任何一個加曲版。** 面別分法只能引 Discogs 的 A／B 編號。\n(2) **試聽：探測層標的 `ready` 是誤判，必須推翻為 `unavailable`。** 探測層配上的 collectionId 792998267 是**愛爾蘭傳統音樂歌手 Fiodhna Gardiner 的同名專輯，11 軌、與本張沒有任何一軌相同**（facts 第 10 條）。**三條回補路徑全部落空**（facts 第 11 條）。**行文不得提到試聽或串流；下游必須把 previews.json 這一筆的 collectionId 與 previewUrl 整筆作廢，不得沿用。**\n(3) **掛名撞名極高**：池中另有法國二人組 Air 的多張碟，MB 用 disambiguation「70s–80s US jazz trio」區分；且本團四張碟的盤名都以「Air」開頭。**封面與試聽（若日後回補）一律靠 rgMbid，行文不得使用只有「Air」的指稱句。**\n(4) **Nessa Records 廠牌史歸卡 17，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Nessa Records、編號欄 N-12／n-12」與公司欄那幾條；**Chuck Nessa 在本卡只能寫成 credit 欄上的製作人。** **AACM 組織史歸卡 20，本卡禁用**——**維基那句裡的三個人名只能寫成組團成員，不得寫他們的組織背景。**\n(5) **團史只能寫維基那一句帶引註的成立敘述，並照第 128 條寫成「維基〈Air (free jazz trio)〉條目說（引註 New Grove 與 All Music Guide to Jazz）……」。** **Scott Joplin 那段可以引，但必須寫成該條目說的、且與本張無關**——**本卡 facts 沒有任何一條把這張碟連到那批改編**（改編的成果是另一張碟）。**infobox 裡的 past members 是欄位、不是帶引註的段落，不得展開。**\n(6) **曲長要分清楚哪一份**：Discogs 原盤與 MB 2017 那筆是一組（2:29、11:46、6:59、13:20、9:04），MB 前四筆 release 是另一組（2:37、12:01、7:09、13:35、9:17）。**行文引原盤曲長只能引 Discogs 那一組並註明來源，不得混用、也不得判定哪一份對**（第 136 條）。\n(7) **五軌的作者只能照 Discogs 的 Written-By 欄逐軌寫**（Steve McCall 一軌、Henry Threadgill 三軌、Fred Hopkins 一軌），出版商的分軌可照註記欄引用。**不得由曲名〈Keep Right On Playing Thru the Mirror Over the Water〉推論任何題旨**（第 110 條）。\n(8) **池中已有本團另三張碟（《Air Song》《Air Lore》《Air Mail》），行文不得提到那些碟、也不得寫「三張之間的另一張」這類需要排序的句子**（第 146 條）——**唯一的例外是 facts 第 11 條記錄的查證事實（Apple 上有《Air Lore》），那只能用在試聽判定的說明裡，不得寫進簡介。**\n(9) **不得寫壓量、份數、稀有度**（第 109 條）：2017 那筆 Discogs 註記欄有明確的份數數字，**facts 已刻意不收，寫作層也不得補**；版本欄的 Limited Edition 只能當版本欄字樣。"
+ },
+ {
+  "key": "desc2:Roscoe Mitchell|Nonaah",
+  "artist": "Roscoe Mitchell",
+  "album": "Nonaah",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5879e3f5 的欄位：title《Nonaah》、first-release-date 1977、primary-type Album、secondary-types 空陣列、artist-credit「Roscoe Mitchell」；genre 欄只有一個標籤 jazz（1 票）；url-rels 四條——allmusic 指向 mw0000797665、discogs 指向 master/278373、rateyourmusic 的 roscoe-mitchell/nonaah、wikidata 指向 Q7049164。掛名實體是 Roscoe Mitchell（MBID 56f33083-6014-4f4e-9c43-b9652cde55be，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/5879e3f5-9f7f-4af5-8fc4-051196021e3f"
+   },
+   {
+    "f": "MB 轄下 1977 US 那筆 release（3496d3dc）：status Official、title《Nonaah》、artist-credit「Roscoe Mitchell」、**廠牌欄兩條（Nessa Records n-9/10 與 Nessa Records N-9/10）**、**兩張 12\" Vinyl、track-count 5＋4＝9**、barcode 欄 null、date 欄只有年。逐片逐軌：第一片 1〈Nonaah〉21:52、2〈Ericka〉7:57、3〈Nonaah〉1:15、4〈Off Five Dark Six〉6:26、5〈A1 TAL 2LA〉8:44；第二片 1〈Tahquemenon〉5:47、2〈Improvisation 1〉12:53、3〈Ballad〉4:46、4〈Nonaah〉17:34。**〈Nonaah〉這個曲名在九個曲位裡出現三次，三軌的長度分別是 21:52、1:15、17:34——三段不同的錄音。** 同一 release-group 轄下另一筆 release：2008 US（6ac4405b，status Official、廠牌欄 Nessa Records、編號欄 ncd-9/10、**兩張 CD、track-count 6＋8＝14**、barcode 827020091029）。以 release?release-group=…&inc=recordings **逐軌比對整份曲目表**：第一片 1〈Nonaah〉22:39、2〈Ericka〉8:15、3〈Nonaah〉1:24、4〈Off Five Dark Six〉4:53、5〈A1 TAL 2LA〉8:46、**6〈Tahquemenon〉5:47**（原盤第二片的第一軌被移到第一片末尾）；第二片 1〈Improvisation 1〉13:13、2〈Ballad〉4:43、3〈Nonaah〉17:46、**4〈Sing〉6:12、5〈Improvisation 2〉3:42、6〈Sing〉7:42、7〈Chant〉9:15、8〈Off Five Dark Six〉7:23**。**多出來的五軌是第二片的第 4 到 8 軌，全部排在原盤九軌之後；原盤九軌的曲名與相對曲序完全保留，只有片別分界移動了一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5879e3f5-9f7f-4af5-8fc4-051196021e3f&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1128507 的欄位：title《Nonaah》、year 與 released 欄皆 1977、國別 US、**格式欄 Vinyl ×2［LP, Album］**、廠牌欄兩條（Nessa Records N-9/10 與 n-9/10）、genre 欄 Jazz、style 欄 Free Jazz。公司欄六條：**Recorded At 三條——「Sound Studios, Chicago」「Jazz Festival Willisau」「Mapenzi, Berkeley, CA」**、Plated At 兩條與 Pressed By 皆「Wakefield Manufacturing」。identifiers 欄四條：Rights Society「ASCAP」、四個面的 Matrix / Runout（「JB N9-A #2 [(W) logo] 31772」等，**B 面刻紋上的 N-10 被劃掉改成 N-9B**）。",
+    "src": "https://www.discogs.com/release/1128507"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Alto Saxophone, Composed By「Roscoe Mitchell」**；Liner Notes「Chuck Nessa」與「Terry Martin (2)」；Producer「Chuck Nessa」；Mastered By「John Bittner」；**Recorded By [Chicago]「Stu Black」、Recorded By [Willisau]「Walter Troxler」、Recorded By [Berkeley]「Roscoe Mitchell」**（三個錄音地各有各的錄音者，掛名者自己錄了柏克萊那一場）；MC [Uncredited]「Niklaus Troxler」；Art Direction, Design「Arnold A. Martin」；Photography By [Cover]「Roberto Masotti」。**另有四位客座樂手掛在個別曲位上，見曲目表。**",
+    "src": "https://www.discogs.com/release/1128507"
+   },
+   {
+    "f": "同一條目的曲目表共 9 個曲位、分四面，**逐軌帶客座樂手**：A〈Nonaah〉21:52、B1〈Ericka〉7:57、B2〈Nonaah〉1:15、**B3〈Off Five Dark Six〉6:26（Sopranino Saxophone: Anthony Braxton）**、**B4〈A1 Tal 2La〉8:44（Bass: Malachi Favors）**、**C1〈Tahquemnon〉5:47（Piano: Muhal Richard Abrams；Trombone: George Lewis）**、C2〈Improvisation 1〉12:53、D1〈Ballad〉4:46、**D2〈Nonaah〉17:34（Alto Saxophone 三條：Henry Threadgill、Joseph Jarman、Wallace McMillan）**。**A、B1、B2、C2、D1 五個曲位沒有客座樂手。**",
+    "src": "https://www.discogs.com/release/1128507"
+   },
+   {
+    "f": "同一條目的註記欄把每一個曲位的錄音日期與地點逐項列出：「Side A and B1, B2 recorded live on 23 August 1976 in Willisau, Switzerland (solo concert).」、「B3, C1 recorded on 17 January 1977 in Chicago, IL.」、「B4, D1 recorded on 22 February 1977 in Chicago, IL.」、「C2 recorded live on 15 January 1977 at Mapenzi, Berkeley, CA (solo concert).」、「D2 recorded on 22 January 1977 in Chicago, IL.」、「Chicago recordings at Sound Studios」、「Printed in USA」、「Runout information is etched, except tulip symbol stamped」。**九個曲位分屬五個不同的錄音場次，橫跨 1976 年 8 月到 1977 年 2 月。**",
+    "src": "https://www.discogs.com/release/1128507"
+   },
+   {
+    "f": "Discogs master 278373 的 versions **只有 3 筆，零筆標 Unofficial**：1977 US Nessa Records N-9/10／n-9/10（Vinyl ×2，LP, Album）；2008 US Nessa Records ncd-9/10（CD, Album, Reissue）；另有一筆年份欄為 0 的 Nessa ncd-9/10（CD, Album, Reissue）。",
+    "src": "https://www.discogs.com/master/278373"
+   },
+   {
+    "f": "Discogs 2008 年那筆美國 CD 2469559 的欄位：year 與 released 欄皆 2008、廠牌欄 Nessa Records ncd-9/10、**格式欄 CD ×2［Album, Reissue］**。公司欄六條，新增 **Remixed At「Riverside Studio, Chicago」**與 Manufactured By「The ADS Group」。credit 欄新增 Mixed By [Remix], Transferred By [Digital Transfers]「Steve Wagner」與 Art Direction, Design「Carla Nessa」。**註記欄把每一軌的場次重新列了一次，並明寫「Tracks 2.4-2.8 previously unreleased.」——也就是第二片的第 4 到 8 軌是先前未發表的**；另寫「CD reissue of the double LP」與「(p) (c) 1977 & 2008 Nessa Records」。**曲目表 14 個曲位，與 MB 那筆 2008 CD 逐軌相同。**",
+    "src": "https://www.discogs.com/release/2469559"
+   },
+   {
+    "f": "Apple 試聽複檢：**三條路徑都沒有這張碟。** 路徑一（掛名＋盤名）us 店面 `term=Roscoe Mitchell Nonaah` 回 1 筆，是《Live At \"A Space\" 1975》(Delmark Records, 2013, 8 軌)——**另一張碟**；路徑二 gb 店面 `term=Roscoe Mitchell Nonaah` 回同樣那一筆；路徑三（只用盤名）jp 店面 `term=Nonaah` 回 25 筆，**全部是與盤名毫無關係的流行專輯（Coldplay、Kanye West、Cyndi Lauper 等），沒有一筆掛 Roscoe Mitchell**；另跑 us 店面 `term=Roscoe Mitchell solo saxophone Nonaah`，resultCount **0**。探測層另跑過七個 storefront，`tried` 欄全部記 `1→0`。**確認 Apple 上沒有這張碟；命中的《Live At \"A Space\" 1975》是同一位掛名者的另一張碟，不得誤配。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Roscoe%20Mitchell%20Nonaah&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Nonaah〉條目有兩則帶行內引註的評價：**AllMusic 給 4.5／5**（引註 allmusic.com 的 r144031 評論頁）、**《The Rolling Stone Jazz Record Guide》給 4／5**（引註 J. Swenson 編、Random House/Rolling Stone 1985 年版第 143 頁）；「Reception」段落引 Clifford Allen 2008 年在 All About Jazz 的評論說：「Nonaah is extraordinarily confrontational music--it presents instrument, composer and materials in a profoundly naked light. Perhaps more important than opening up one's preconceptions about the saxophone, it also complicates the AACM aesthetic.」（引註 allaboutjazz.com 的該篇評論，日期 2008 年 9 月 28 日）。**該條目其後那段描述第一軌演出現場觀眾反應的文字沒有行內引註，依第 40／80 條不採用。**",
+    "src": "https://en.wikipedia.org/wiki/Nonaah"
+   },
+   {
+    "f": "英文維基〈Association for the Advancement of Creative Musicians〉條目帶行內引註的第一句說：**AACM 是一個美國非營利組織，1965 年在芝加哥由鋼琴手 Muhal Richard Abrams、鋼琴手 Jodie Christian、鼓手 Steve McCall 與作曲家 Phil Cohran 創辦**（引註 Richard Cook 的爵士百科）；條目的 infobox 另把宗旨欄寫成「Support and encourage jazz performers, composers and educators」、前身欄寫「Experimental Band」、關鍵人物欄列 Henry Threadgill、Anthony Braxton 與 Roscoe Mitchell。**（infobox 是欄位、不是帶引註的段落。）**",
+    "src": "https://en.wikipedia.org/wiki/Association_for_the_Advancement_of_Creative_Musicians"
+   }
+  ],
+  "hookCandidates": [
+   "九個曲位分屬五個錄音場次，從 1976 年 8 月的維利紹到 1977 年 2 月的芝加哥，Discogs 註記欄一軌一軌列著",
+   "同一個曲名在四面之間出現三次，長度分別是 21:52、1:15 與 17:34"
+  ],
+  "sound": "雙黑膠、九個曲位分四面（Discogs 1128507 的 A、B1–B4、C1–C2、D1–D2；MB 那筆 1977 release 分成 5＋4 兩片，曲名曲序一致）。最短的一軌是 B2〈Nonaah〉1:15、最長的一軌是 A〈Nonaah〉21:52。編制以中音薩克斯風獨奏為主——Discogs credit 欄的樂手只有掛名者一人，另有四位客座分別掛在四個曲位上：一軌加高音薩克斯風、一軌加低音提琴、一軌加鋼琴與長號、一軌另加三支中音薩克斯風；其餘五個曲位沒有客座。（本欄由 MB 1977 release 的曲長表與 Discogs 1128507 的曲目表、credit 欄、註記欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Nonaah",
+   "Ericka",
+   "Off Five Dark Six"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1977,
+   "note": "**只能寫到年。** 兩庫一致寫 1977：MB release-group first-release-date 1977、MB 那筆 Nessa 原盤 release 的 date 欄 1977（只有年）、Discogs 1128507 的 year 與 released 欄皆 1977，2008 年那筆 CD 的註記欄另寫「(p) (c) 1977 & 2008 Nessa Records」。**錄音場次橫跨 1976 年 8 月 23 日到 1977 年 2 月 22 日**（Discogs 註記欄逐軌列出）——**那些是錄音日、不是發行日。** 本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**AACM 組織史**（維基 AACM 條目那句帶引註的創辦敘述，facts 第 12 條）。**b 組其餘各卡一律禁用這條線**（含卡 19 的 Threadgill 與 McCall、卡 21 的 Wadada Leo Smith）。\n**本卡禁令**：\n(1) **原盤曲位數只能寫 9（雙黑膠、四面）**——MB 那筆 1977 US release 是 5＋4＝9，Discogs 1128507 的曲目表也是 9 個曲位（A、B1–B4、C1–C2、D1–D2）。**2008 年那筆雙 CD 是 14 軌，多出來的五軌（第二片第 4 到 8 軌）在 Discogs 註記欄上就寫明是「previously unreleased」；行文不得把那五軌當成這張碟的曲目、也不得寫任何以 14 為基礎的軌數敘述**（第 140／141 條）。**另外：2008 那筆把原盤第二片的第一軌〈Tahquemenon〉移到第一片末尾，片別分界與原盤不同——不得用 CD 的片別去描述黑膠的面別**（第 129 條的邊界：本張的雙碟是**單一作品的原始形態**，不是把兩張專輯併成一片的二合一，可以收）。\n(2) **同名曲不得混寫**：〈Nonaah〉在原盤出現三次（21:52、1:15、17:34），〈Off Five Dark Six〉在原盤與 CD 版各出現一次但長度不同（6:26 與 7:23）。**曲名相同不足以判定是同一段錄音**（第 140 條附二）——**行文提到〈Nonaah〉時必須指明是哪一個曲位。**\n(3) **AACM 只能寫維基那一句帶引註的創辦敘述，並照第 128 條寫成「維基〈Association for the Advancement of Creative Musicians〉條目說（引註 Richard Cook 的爵士百科）……」。** **infobox 的宗旨、前身與關鍵人物欄是欄位，不得展開；也不得把本卡 credit 欄上的客座樂手一一連到那個組織**——**本卡 facts 沒有任何一條說明他們與 AACM 的關係**（第 110 條）。\n(4) **評價只能照第 128 條寫成「維基〈Nonaah〉條目說（引註 AllMusic／《The Rolling Stone Jazz Record Guide》／All About Jazz）……」**（第 143 條的「未具名出處」規則靠這個寫法滿足）。**條目那段描述現場觀眾反應的文字沒有行內引註，禁止採用**（第 40／80 條）——**連帶：不得寫任何關於第一軌演出當下情境的敘述。**\n(5) **Nessa Records 廠牌史歸卡 17，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Nessa Records、編號欄 n-9/10」與 credit 欄的 Producer／Liner Notes「Chuck Nessa」。\n(6) **三個錄音地與五個場次只能照 Discogs 註記欄逐項照抄**，**不得歸納成「巡演途中錄的」或「橫跨半年的計畫」這類敘事**（第 110 條）。\n(7) **不得由曲名〈Nonaah〉〈A1 Tal 2La〉〈Tahquemnon〉推論字義、語源或題旨**（第 110 條）；作者只能寫 credit 欄的「Composed By: Roscoe Mitchell」。**注意 Discogs 的 C1 曲名拼成〈Tahquemnon〉、MB 拼成〈Tahquemenon〉，兩個字串都只能照各自的條目寫。**\n(8) **試聽：Apple 三條路徑都沒有這張碟，`unavailable` 成立**（facts 第 10 條）。**命中的《Live At \"A Space\" 1975》是同一位掛名者的另一張碟（Delmark, 2013），不得誤配。** 行文不得提到試聽或串流。\n(9) **不得寫壓量、稀有度**（第 109 條）。**池中另有他 2007 年那張碟與 Art Ensemble of Chicago 掛名的碟，行文不得提到**（第 146 條）。"
+ },
+ {
+  "key": "desc2:Leo Smith|Spirit Catcher",
+  "artist": "Leo Smith",
+  "album": "Spirit Catcher",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 83cb9111 的欄位：title《Spirit Catcher》、first-release-date 1979、primary-type Album、secondary-types 空陣列、**artist-credit 名寫「Leo Smith」、但實體本名欄寫「Wadada Leo Smith」**（MBID 11ce83c2-1ae1-4958-a28a-b58e61a6fb60，type Person，country US，disambiguation 欄空）；genre 欄兩個標籤 free jazz 與 jazz（各 1 票）；**url-rels 是空陣列。** **同一個 MB 實體上，credit 名與實體名是兩個不同的字串**（第 45／151 條的形狀）。",
+    "src": "https://musicbrainz.org/release-group/83cb9111-0ade-4177-9783-a967c4f598f7"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1979 US release（ba322fa7）：status Official、title《Spirit Catcher》、artist-credit「Leo Smith」、廠牌欄 Nessa Records、編號欄 N-19、一張 12\" Vinyl、**track-count 3**、barcode 欄 null、date 欄只有年。**三個曲位的 length 欄全部是空的**——逐軌只有曲名：1〈Images〉、2〈The Burning Of Stones〉、3〈Spirit Catcher〉。**MB 這個 release-group 底下只有這一筆——Discogs 上那筆 2009 年 CD MB 沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/release/ba322fa7-e3c4-45c7-adfe-10e9289c6d85"
+   },
+   {
+    "f": "Discogs 原盤條目 1571287 的欄位：title《Spirit Catcher》、year 與 released 欄皆 1979、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Nessa Records n-19、genre 欄 Jazz、style 欄 Free Jazz。公司欄四條：Phonographic Copyright (p) 與 Copyright (c) 皆「Nessa Records」、**Recorded At「Van Gelder Studio, Englewood Cliffs, New Jersey」**、Pressed By「Wakefield Manufacturing」。identifiers 欄兩條 Matrix / Runout：「(^^) 36389 N 19 A Mo#2 (^^) GF」與「(^^) 36389 N 19 B Mo#2」。",
+    "src": "https://www.discogs.com/release/1571287"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條（括號內是條目自己標的適用軌）：**Trumpet, Flugelhorn「Wadada Leo Smith」——Discogs 這份 1979 年原盤條目寫的是加了 Wadada 的那個名字，MB 的 artist-credit 寫的是「Leo Smith」**；Clarinet, Tenor Saxophone, Flute [Wooden Flute]「Dwight Andrews」(A, B2)；Bass, Flute [Wooden Flute]「Wes Brown」(A, B2)；Vibraphone [Vibraharp]「Bobby Naughton」(A, B2)；Drums「Pheeroan Aklaff」(A, B2)；**Conductor「Dwight Andrews」(B1)**；**Harp 三條「Carol Emanuel」「Irene Smith (2)」「Ruth Emanuel」(B1)**；**Engineer「Rudy Van Gelder」**；Producer, Photography By「Chuck Nessa」；Liner Notes「Robert Palmer (3)」；Lacquer Cut By「Greg Fulginiti」。**B1 那一軌是完全不同的編制：三把豎琴加一位指揮。**",
+    "src": "https://www.discogs.com/release/1571287"
+   },
+   {
+    "f": "同一條目的曲目表共 3 個曲位、分兩面，**三個曲位的 duration 欄全部是空的**：A〈Images〉、B1〈The Burning Of Stones〉、B2〈Spirit Catcher〉。**逐軌曲長在 1979 年原盤這一層，兩庫都沒有**（第 136 條：兩份紀錄上都沒填，不是唱片上沒有）。註記欄兩行：「Recorded May 21, 1979 Van Gelder Studio.」、「℗ ©1979 Nessa Records/5404 N. Kimball/Chicago, Illinois 60625」。",
+    "src": "https://www.discogs.com/release/1571287"
+   },
+   {
+    "f": "Discogs master 357883 的 versions **只有 2 筆，零筆標 Unofficial**：1979 US Nessa Records n-19（LP, Album）；2009 US Nessa Records ncd-19（CD, Album, Reissue）。**整條版本線只有一次再發，而且是廠牌自己做的。**",
+    "src": "https://www.discogs.com/master/357883"
+   },
+   {
+    "f": "Discogs 2009 年那筆美國 CD 3025660 的欄位：released 欄 2009-10-20、廠牌欄 Nessa Records ncd-19、格式欄 CD ×1［Album, Reissue］、公司欄三條（版權兩欄皆 Nessa Records、Recorded At 仍寫「Van Gelder Studio, Englewood Cliffs, New Jersey」）。credit 欄把適用軌改用 CD 軌號重標（1、3 對應原盤的 A 與 B2；2、4 對應豎琴編制），新增 **Composed By「Wadada Leo Smith」**、Mastered By「Steve Wagner」、Transferred By [Digital Transfer], Mixed By「Glenn Brown」、Art Direction, Design「Carla Nessa」。註記欄一行：「Recorded May 21, 1979.」。**曲目表 4 個曲位、而且這一筆有填曲長**：1〈Images〉19:09、2〈The Burning Of Stones〉9:42、3〈Spirit Catcher〉9:43、**4〈The Burning Of Stones - First Version〉11:13**。**多出來的第 4 軌排在最後，曲名帶「First Version」尾綴。**",
+    "src": "https://www.discogs.com/release/3025660"
+   },
+   {
+    "f": "Apple 試聽複檢：**三條路徑都沒有這張碟。** 路徑一（掛名＋盤名）us 店面 `term=Leo Smith Spirit Catcher`，resultCount **0**；路徑二（改名後的掛名＋盤名）us 店面 `term=Wadada Leo Smith Spirit Catcher`，resultCount **0**；路徑三（只用盤名）us 店面 `term=Spirit Catcher` 回 **25 筆，沒有任何一筆掛 Leo Smith 或 Wadada Leo Smith**——「Spirit Catcher」在 Apple 上是一個電子樂團名（《Night Vision》《Voo Doo Knight》《Blast from the Past》等多筆掛在這個名字底下），其餘是 E-Mantra、redCola、HiLau 等人各自的同名專輯或單曲。探測層另跑過 us／gb／jp／ca／de／fr／au 七個 storefront，`tried` 欄全部記 `0→0`。**確認 Apple 上沒有這張碟；同名的是一個完全不同的樂團。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Spirit%20Catcher&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Wadada Leo Smith〉條目帶行內引註的段落說：Ishmael Wadada Leo Smith（生於 1941 年 12 月 18 日，引註《The Guinness Who's Who of Jazz》1992 年第一版第 371–2 頁）是美國小號手與作曲家，主要活動於 creative music 領域（引註 AllMusic 小傳）；他生於密西西比州 Leland（同引 Guinness）；**他以《Ten Freedom Summers》入圍 2013 年普立茲音樂獎決選三人之一**（引註普立茲獎官網的 citation 頁）。**條目的標題與內文一律用「Wadada Leo Smith」——本卡的 MB artist-credit 與卡單值則是「Leo Smith」。**",
+    "src": "https://en.wikipedia.org/wiki/Wadada_Leo_Smith"
+   },
+   {
+    "f": "**掛名字串的四處對照（本卡取得）**：**MB release-group 的 artist-credit 名寫「Leo Smith」，同一筆的實體本名欄寫「Wadada Leo Smith」**；**Discogs 1979 年原盤條目的 credit 欄寫「Wadada Leo Smith」**（不是「Leo Smith」）；**Discogs 2009 年 CD 條目的 credit 欄同樣寫「Wadada Leo Smith」，並多一條 Composed By 也掛這個名字**；**英文維基的條目名是「Wadada Leo Smith」**。**四處裡只有 MB 的 artist-credit 欄是「Leo Smith」。**",
+    "src": "https://www.discogs.com/release/1571287"
+   },
+   {
+    "f": "**Van Gelder Studio 這條線（本卡取得）**：本卡 Discogs 兩筆條目的公司欄都寫 Recorded At「Van Gelder Studio, Englewood Cliffs, New Jersey」，credit 欄的 Engineer 欄寫「Rudy Van Gelder」，註記欄寫錄音日 1979 年 5 月 21 日。**本組其餘二十二張的公司欄上沒有這個錄音室**（本組出現過的錄音室是 Glaser Productions、Sound Ideas、Minot Sound、Blue Rock、Studio 77、Watts Studios、The East、Bendiksen、Streeterville、Sound Studios Chicago、Blank Tape Studios、India Navigation Studio）。",
+    "src": "https://www.discogs.com/release/3025660"
+   }
+  ],
+  "hookCandidates": [
+   "B 面第一軌是另一組人：三把豎琴加一位指揮，其餘兩軌才是五重奏",
+   "Discogs 條目的錄音室欄寫著 Englewood Cliffs，工程師欄寫著那間錄音室主人的名字"
+  ],
+  "sound": "三個曲位、分兩面（Discogs 1571287 的 A、B1、B2；MB 那筆 1979 release 拉平成 1–3，曲名曲序一致）。**原盤這一層兩庫都沒有填曲長**——只有 2009 年那筆 CD 條目有（19:09、9:42、9:43，另加一軌 11:13）。編制照 Discogs 逐軌 credit 欄分成兩組：A 與 B2 是小號與翼號、單簧管／次中音薩克斯風／木笛、貝斯兼木笛、鐵琴與鼓；B1 那一軌換成三把豎琴加一位指揮。（本欄由 Discogs 1571287 的曲目表、credit 欄與 2009 年那筆條目的曲長欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Images",
+   "The Burning Of Stones",
+   "Spirit Catcher"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1979,
+   "note": "**只能寫到年。** 兩庫一致寫 1979：MB release-group first-release-date 1979、MB 那筆 Nessa 原盤 release 的 date 欄 1979（只有年）、Discogs 1571287 的 year 與 released 欄皆 1979，註記欄另寫「℗ ©1979 Nessa Records」。**錄音日 1979 年 5 月 21 日**（Discogs 兩筆註記欄）——**與發行年同一年，但那是錄音日、不是發行日。** 本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**掛名改名與身分這條線**（facts 第 9、10 條）；**Van Gelder Studio 這條錄音室線**（facts 第 11 條）。\n**本卡禁令**：\n(1) **原盤曲位數只能寫 3**——MB 那筆 1979 US release 的 track-count 是 3，Discogs 1571287 的曲目表也是 3 個曲位（A、B1、B2）。**2009 年那筆 CD 是 4 軌，多出來的〈The Burning Of Stones - First Version〉排在最後、曲名帶版本尾綴；行文不得把那一軌當成這張碟的曲目、也不得寫任何以 4 為基礎的軌數敘述**（第 140／141 條）。面別分法只能引 Discogs 的 A／B 編號。\n(2) **原盤曲長兩庫都沒有，只能引 2009 年那筆 CD 條目的值並註明來源**，**不得寫成原盤的曲長**（第 136 條）。\n(3) **掛名的兩種寫法要照四處欄位分別交代**（facts 第 10 條）：**行文採卡單值「Leo Smith」（與 MB 的 artist-credit 一致），但必須註明 Discogs 兩筆條目的 credit 欄與維基條目名寫的都是「Wadada Leo Smith」。** **不得寫「他 1970 年代叫 Leo Smith、後來才改成 Wadada Leo Smith」**——**本卡 facts 恰恰反證了這個時序：1979 年那份原盤條目的 credit 欄就已經寫「Wadada Leo Smith」**（第 110 條：沒有來源的時序推論一律禁止）。**維基那一段也沒有說明改名的時間。**\n(4) **Nessa Records 廠牌史歸卡 17、AACM 組織史歸卡 20，本卡皆禁用。** 本卡只能寫自己條目上的「廠牌欄 Nessa Records、編號欄 n-19」與 credit 欄的 Producer／Photography By「Chuck Nessa」。\n(5) **維基那段只能照第 128 條寫成「維基〈Wadada Leo Smith〉條目說（引註《The Guinness Who's Who of Jazz》／普立茲獎官網）……」。** **普立茲決選那一項與這張碟相隔三十餘年，若要寫必須明說那是 2013 年另一部作品的事，不得寫成這張碟的背書**（第 146 條）。\n(6) **B1 那一軌的豎琴編制只能照 credit 欄的適用軌標記寫**，**不得推論為什麼換編制、也不得寫成「室內樂段落」這類分類**（第 110 條）。\n(7) **不得由曲名〈Images〉〈The Burning Of Stones〉〈Spirit Catcher〉推論題旨**（第 110 條）；作者只能寫 2009 年那筆條目的 Composed By 欄（**原盤條目沒有 Composed By 欄**，第 136 條）。\n(8) **試聽：Apple 三條路徑都沒有這張碟，`unavailable` 成立**（facts 第 8 條）。**要寫進交接的是：以盤名搜尋會撈回一整排電子樂團 Spirit Catcher 的碟——下游若用盤名比對必然誤配。** 行文不得提到試聽或串流。\n(9) **池中已有他 1979 年在 ECM 的《Divine Love》，行文不得提到那張碟、也不得寫「同年在自主廠牌的另一張」**（第 146 條：本卡 facts 沒有那張碟的任何欄位）。**不得寫壓量、稀有度**（第 109 條）。"
+ },
+ {
+  "key": "desc2:Ensemble Muntu|First Feeding",
+  "artist": "Ensemble Muntu",
+  "album": "First Feeding",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9e4949c2 的欄位：title《First Feeding》、**first-release-date 1977-04-17（有月有日）**、primary-type Album、secondary-types 空陣列、artist-credit「Ensemble Muntu」；genre 欄只有一個標籤 jazz（1 票）；url-rels 三條——rateyourmusic 的 ensemble-muntu/first-feeding、jazzmusicarchives 的 jemeel-moondoc/ensemble-muntu-first-feeding、wikidata 指向 Q19892769。**掛名實體的 artist-credit 名寫「Ensemble Muntu」、實體本名欄卻只寫「Muntu」**（MBID 511c35a6-d7e2-45a9-a8a7-1bd54af0ec7d，**type Group**，country US，disambiguation 欄「improvisational music/free jazz group」）。",
+    "src": "https://musicbrainz.org/release-group/9e4949c2-bbd6-44b7-a2b5-86764b7f2899"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（f1ba09f7）：status Official、title《First Feeding》、artist-credit「Ensemble Muntu」、廠牌欄 Muntu Records、編號欄 1001、一張 12\" Vinyl、track-count 3、barcode 欄空字串、**date 欄 1977-04-17**。逐軌軌號與曲長：1〈First Feeding〉5:26、2〈Flight (From the Yellow Dog)〉14:01、3〈Theme for Milford (Mr. Body & Soul)〉20:23。",
+    "src": "https://musicbrainz.org/release/f1ba09f7-8d0c-45a1-857e-94e010febc12"
+   },
+   {
+    "f": "Discogs 原盤條目 5373730 的欄位：title《First Feeding》、year 與 released 欄皆 1977、國別 US、格式欄 Vinyl ×1［LP, Album］、**廠牌欄兩條（Muntu Records 1001 與 Moon-Jem Publishing Co.）**、genre 欄 Jazz、style 欄 Free Jazz。公司欄兩條：Published By「Moon-Jem Publishing Co.」、**Recorded At「Blank Tape Studios」**。**identifiers 欄是空的**（第 136 條）。**註記欄第一行寫「Recorded April 17, 1977 at Bob Blank Studios, New York City.」——與 MB 的 first-release-date 1977-04-17 是同一個日期。**",
+    "src": "https://www.discogs.com/release/5373730"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Saxophone, Composed By「Jemeel Moondoc」**；Trumpet「Arthur Williams (5)」；Piano「Mark Hennen」；**Bass, Cello「William Parker」**；Drums「Rashid Bakr」；**Producer 兩條「Muntu Ensemble」與「Piano Magic (2)」**（製作人欄寫的是團名與另一個實體，不是個人）；Layout [Front Cover]「Jemeel Moondoc」；Layout [Back Cover]「C. Liebowitz」與「Jemeel Moondoc」；Photography By [Front Cover]「T. Tashijan」；Photography By [Back Cover]「C. Picco」。**五位樂手。**",
+    "src": "https://www.discogs.com/release/5373730"
+   },
+   {
+    "f": "同一條目的曲目表共 3 個曲位、分兩面：A1〈First Feeding〉5:26、A2〈Flight (From The Yellow Dog)〉14:01、**B〈Theme For Milford (Mr. Body & Soul)〉20:23（B 面一整面一軌）**。**曲目表沒有逐軌 Written-By 欄**——作者只出現在 credit 欄的「Composed By: Jemeel Moondoc」與公司欄的 Published By「Moon-Jem Publishing Co.」。",
+    "src": "https://www.discogs.com/release/5373730"
+   },
+   {
+    "f": "同一條目的註記欄第二段是一則題獻：「First Feeding is dedicated to: Cecil Taylor, Sam Rivers, Jimmy Lyons, Andrew Cyrille, Milford Graves, Bill Dixon and Rashid Ali, whose feedings have been vital to the growth of this music.」**（七個名字，條目上就是這樣逐一列著；末位的拼法是「Rashid Ali」。）**",
+    "src": "https://www.discogs.com/release/5373730"
+   },
+   {
+    "f": "以 Discogs 搜尋反查這條線只回兩筆相關結果：**本張（5373730，1977 US，Muntu Records／Moon-Jem Publishing Co.，編號 1001）**，以及 **2009 年立陶宛的《Muntu Recordings》（2538218，掛名寫「Jemeel Moondoc」，NoBusiness Records／MAMAstudios，編號 NBCD 7-8-9，格式欄 CD ×3 加 Box Set，版本欄 Compilation, Limited Edition, Numbered）**。**Muntu Records 這個廠牌名在 Discogs 上除了 1001 與 1002 之外沒有更多的碟出現在這次反查裡。**",
+    "src": "https://www.discogs.com/release/5373730"
+   },
+   {
+    "f": "Discogs 2009 年那筆 NoBusiness 盒裝 2538218 的欄位：year 與 released 欄皆 2009、國別 Lithuania、格式欄 CD ×3［Compilation, Limited Edition, Numbered］＋Box Set、廠牌欄 NoBusiness Records NBCD 7-8-9 與 MAMAstudios、genre 欄 Jazz、style 欄 Free Jazz。credit 欄：Producer「Jemeel Moondoc」、Executive-Producer「Danas Mikailionis」、Co-producer「Valerij Anosov」、Composed By「Jemeel Moondoc」、Mastered By「Arūnas Zujus」、Design「Oskaras Anosovas」。**註記欄逐項說明三片的來源**：本張「recorded April 17, 1977 at Bob Blank Studios, New York City. Originally released in 1977 on Muntu Records 1001.」；《The Evening Of The Blue Men》「recorded March 30, 1979 live at Saint Marks Church in New York City. Originally released in 1979 on Muntu Records 1002.」；**「Live At Ali's Alley」recorded April 20, 1975 live at Ali's Alley. Previously unreleased session**；另寫「In box with a separate 116 pages booklet.」。**曲目表把本張的三軌列為第一片（掛名寫「Muntu Ensemble」，曲長 5:09／13:57／20:37），第二片掛名寫「Jemeel Moondoc & Muntu」。**",
+    "src": "https://www.discogs.com/release/2538218"
+   },
+   {
+    "f": "Apple 試聽複檢：**三條路徑都沒有這張碟。** 路徑一（掛名＋盤名）us 店面 `term=Ensemble Muntu First Feeding`，resultCount **0**；路徑二（領班名＋團名）us 店面 `term=Jemeel Moondoc Muntu` 回 1 筆，是 Jemeel Moondoc Quintet《Nostalgia In Times Square》(Soul Note, 1986, 4 軌)——**另一張碟、另一個掛名**；路徑三（盒裝標題）us 店面 `term=Muntu Recordings`，resultCount **0**。探測層另跑過 us／gb／jp／ca／de／fr／au 七個 storefront，`tried` 欄全部記 `0→0`。**確認 Apple 上沒有這張碟，也沒有那套考古盒裝。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Jemeel%20Moondoc%20Muntu&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Jemeel Moondoc〉條目帶行內引註的第一句說：Jemeel Moondoc（1946 年 8 月 5 日–2021 年 8 月 29 日）是吹中音薩克斯風的爵士薩克斯風手（生卒年引註 WBGO 2021 年 9 月 9 日的〈Jemeel Moondoc, Intrepid Saxophonist and Composer Who Carved a Path Through the Avant-Garde, Is Dead at 76〉與《The Guinness Who's Who of Jazz》1992 年版第 291–2 頁；樂器一項另引 David Glen Such《Avant-garde jazz musicians: performing \"out there\"》1993 年 University of Iowa Press 版第 67–70 頁）。**該條目沒有任何一段帶引註地說明 Muntu Records 是誰開的，本卡因此不寫這件事。**",
+    "src": "https://en.wikipedia.org/wiki/Jemeel_Moondoc"
+   },
+   {
+    "f": "**掛名與撞卡的複檢（本卡取得）**：本張在 MB 的 artist-credit 是「Ensemble Muntu」、實體本名是「Muntu」；在 Discogs 條目上掛名寫「Ensemble Muntu*」；在 2009 年盒裝的曲目表裡，本張三軌掛「Muntu Ensemble」、**同廠牌 1002 號的《The Evening Of The Blue Men》掛「Jemeel Moondoc & Muntu」**。**池中既有卡掛的是「Jemeel Moondoc & Muntu」（1002 號那張），本卡是 1001 號，兩者是不同的碟、不同的 release-group、不同的編號**——**四種掛名字串指的是同一批人，字串比對看不見這件事**（第 151 條的團體名 vs 領班名形狀）。",
+    "src": "https://www.discogs.com/release/2538218"
+   }
+  ],
+  "hookCandidates": [
+   "B 面一整面就一軌，二十分二十三秒",
+   "Discogs 註記欄上的題獻列了七個名字，最後一句寫著「他們的餵養對這音樂的成長至關重要」"
+  ],
+  "sound": "三個曲位、分兩面（Discogs 5373730 的 A1、A2 與 B；MB 那筆 release 拉平成 1–3，兩庫曲名曲序與三軌曲長逐項一致）。最短的一軌是 A1〈First Feeding〉5:26、最長的一軌是 B〈Theme For Milford (Mr. Body & Soul)〉20:23——B 面一整面就這一軌。編制照 Discogs credit 欄是五人：薩克斯風（作曲者）、小號、鋼琴、貝斯兼大提琴、鼓。（本欄由 MB release 的曲長表與 Discogs 5373730 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "First Feeding",
+   "Flight (From the Yellow Dog)",
+   "Theme for Milford (Mr. Body & Soul)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1977,
+   "note": "**只能寫到年——這一張特別要小心。** MB 的 release-group first-release-date 與那筆 release 的 date 欄都寫 **1977-04-17（有月有日）**，但 **Discogs 原盤條目的註記欄寫「Recorded April 17, 1977 at Bob Blank Studios」、2009 年那套盒裝的註記欄也寫「recorded April 17, 1977 … Originally released in 1977 on Muntu Records 1001」——同一個日期在 Discogs 兩處都是錄音日，不是發行日。** **MB 那個帶月日的欄位極可能是把錄音日填進了發行日欄位，本卡不判定原因，但行文一律只寫 1977 年、不得寫月與日，也不得寫「4 月 17 日發行」**（第 136 條）。Discogs 的 year 與 released 欄都只寫 1977。本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Muntu Records 這條廠牌線與 NoBusiness 2009 年考古盒裝的側寫。\n**本卡禁令**：\n(1) **原盤曲位數只能寫 3**——MB 那筆 release 的 track-count 是 3，Discogs 5373730 的曲目表也是 3 個曲位（A1、A2、B）。面別分法只能引 Discogs 的 A／B 編號，**並且要寫明 B 面只有一個曲位**。\n(2) **年份只能寫到年，不得寫月日**（見 yearVerified）。**這是本組唯一一張 MB 把帶月日的日期填在發行日欄位、而 Discogs 兩處都把同一個日期記成錄音日的卡。**\n(3) **2009 年那套 NoBusiness 是三 CD 的合輯盒裝（版本欄 Compilation），依第 129 條身分不釘、封面不用、試聽不採**——**只能當背書證據與註記欄的引用來源**。**盒裝裡那套「Live At Ali's Alley」是先前未發表的另一場錄音，與本張無關，行文不得提到。**\n(4) **掛名有四種字串**（MB artist-credit「Ensemble Muntu」／MB 實體本名「Muntu」／Discogs 條目「Ensemble Muntu*」／盒裝曲目表「Muntu Ensemble」），**池中既有卡掛的是「Jemeel Moondoc & Muntu」、指的是同廠牌 1002 號的另一張碟**。**行文採卡單值，並且必須寫清楚本卡是 Muntu Records 1001、與池中那張 1002 號是兩張不同的碟；不得把兩張寫成同一張，也不得寫「第一張／第二張」這類排序**（第 151 條）——**唯一能寫的排序依據是編號字串本身，而編號不等於出版序數**（第 125 條）。\n(5) **禁止寫「Muntu Records 是 Jemeel Moondoc 自營的廠牌」。** 策展層的 `curatorWhy` 這樣寫；**本卡查過維基〈Jemeel Moondoc〉全文，沒有任何一段帶引註地說明這件事**（第 142 條）。**能寫的只有欄位層次的東西**：Discogs 的廠牌欄同時列「Muntu Records 1001」與「Moon-Jem Publishing Co.」、公司欄的 Published By 也寫 Moon-Jem Publishing Co.、credit 欄的 Producer 欄寫「Muntu Ensemble」與「Piano Magic (2)」。\n(6) **題獻的七個名字只能照註記欄照抄**，**不得展開成那七個人與這個團的關係、也不得寫「他們是他的老師」這類敘述**（第 110 條）。**注意末位在條目上的拼法是「Rashid Ali」，與本批卡 12–14 那位掛「Rashied Ali」的鼓手是不同的字串——本卡不判定是否同一人，行文一律照抄條目字串，不得連結。**\n(7) **Blank Tape Studios（Bob Blank）這條跨張錄音室線歸卡 23，本卡只能寫自己公司欄與註記欄上的那兩行**（「Recorded At: Blank Tape Studios」「Recorded April 17, 1977 at Bob Blank Studios, New York City.」，**兩處的名字寫法不同，只能各自照抄**）。\n(8) **不得由曲名〈Theme for Milford (Mr. Body & Soul)〉〈Flight (From the Yellow Dog)〉推論指涉的人事物**（第 110 條）；作者只能寫 credit 欄的「Composed By: Jemeel Moondoc」。\n(9) **不得寫壓量、份數、稀有度**（第 109 條）：2009 那筆版本欄的 Limited Edition 與 Numbered、註記欄的份數與頁數數字**一律只能當欄位字樣，facts 已刻意不收份數，寫作層也不得補**。\n(10) **試聽：Apple 三條路徑都沒有這張碟，`unavailable` 成立**（facts 第 9 條）。**行文不得提到試聽或串流。**"
+ },
+ {
+  "key": "desc2:Black Arthur Blythe|Bush Baby",
+  "artist": "Black Arthur Blythe",
+  "album": "Bush Baby",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0da538cb 的欄位：title《Bush Baby》、first-release-date 1978、primary-type Album、secondary-types 空陣列、**artist-credit 名寫「Black Arthur Blythe」、但實體本名欄寫「Arthur Blythe」**（MBID 91652f18-ce2d-40e1-b6ab-07179a82fb12，type Person，country US，disambiguation 欄空）；genre 欄兩個標籤 free jazz 與 jazz（各 1 票）；**url-rels 是空陣列。** **同一個 MB 實體上，credit 名與實體名是兩個不同的字串**（第 151 條）。",
+    "src": "https://musicbrainz.org/release-group/0da538cb-d51b-42c5-ac00-020dc034489d"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1978 US release（34ab5100）：status Official、title《Bush Baby》、artist-credit「Black Arthur Blythe」、廠牌欄 Adelphi Records、編號欄 AD 5008、一張 12\" Vinyl、track-count 4、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈Mamie Lee〉10:32、2〈For Fats〉8:43、3〈Off the Top〉8:20、4〈Bush Baby〉9:07。**MB 這個 release-group 底下只有這一筆——Discogs 上那兩筆（另一個 1978 壓次與 1985 年英國 Echo Jazz 再發）MB 都沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/release/34ab5100-edbe-4ace-8461-9e21e6bc6dea"
+   },
+   {
+    "f": "Discogs 原盤條目 1387003 的欄位：title《Bush Baby》、year 與 released 欄皆 1978、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Adelphi Records AD 5008、genre 欄 Jazz、style 欄 Free Jazz。公司欄四條：**Phonographic Copyright (p)「Adelphi Records Inc.」、Copyright (c)「Arthur Blythe」（版權欄一條掛廠牌、一條掛樂手本人）**、**Recorded At「Blank Tape Studios」**、Mastered At「Sterling Sound」。identifiers 欄三條：Matrix / Runout 蝕刻「AD-5008-A」與「AD-5008-B」、以及兩面都壓著的「STERLING」。",
+    "src": "https://www.discogs.com/release/1387003"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Alto Saxophone, Arranged By, Composed By, Producer「Arthur Blythe」**（**Discogs 這份條目的 credit 欄寫的是不帶 Black 的「Arthur Blythe」，MB 的 artist-credit 才是「Black Arthur Blythe」**）；**Tuba「Bob Stewart」**；**Congas「Ahkmed Abdullah」**；Producer 另一條「Dan Doyle」；**Mixed By 兩條「Dan Doyle」與「Gene Rosenthal」**；Recorded By「Bob Blank」；Photography By「Gene Rosenthal」；Liner Notes「W. A. Brower」；Illustration [Cover], Design「Ron Warwell」；Design [Rear Cover], Layout「Candace (2)」。**三位樂手：中音薩克斯風、低音號、康加——沒有貝斯、沒有鋼琴、沒有鼓。**",
+    "src": "https://www.discogs.com/release/1387003"
+   },
+   {
+    "f": "同一條目的曲目表共 4 個曲位、分兩面：A1〈Mamie Lee〉10:32、A2〈For Fats〉8:43、B1〈Off The Top〉8:20、B2〈Bush Baby〉9:07。**曲目表沒有逐軌 Written-By 欄**——作者只出現在 credit 欄的「Composed By: Arthur Blythe」與註記欄的「All compositions and arrangements © 1977 Arthur Blythe」。註記欄另兩行：「Recorded at Blank Tapes Recording Studio, New York City, December 1977.」（**條目正文寫 Blank Tapes、公司欄寫 Blank Tape Studios，兩處字串不同**）、「℗ 1978 Adelphi Record, Inc.」。",
+    "src": "https://www.discogs.com/release/1387003"
+   },
+   {
+    "f": "Discogs master 254746 的 versions **只有 3 筆，零筆標 Unofficial**：1978 US Adelphi Records AD 5008 兩筆（皆 LP, Album）；**1985 UK Echo Jazz (2) ECJ404（LP, Album, Reissue）**。**整條版本線只有一次授權再發，而且是黑膠、沒有 CD。**",
+    "src": "https://www.discogs.com/master/254746"
+   },
+   {
+    "f": "Discogs 1985 年那筆英國黑膠 2207711 的欄位：year 與 released 欄皆 1985、廠牌欄 Echo Jazz (2) ECJ404、格式欄 Vinyl ×1［LP, Album, Reissue］。公司欄六條：Phonographic Copyright (p)「Echo Music (10)」、**Copyright (c) 仍寫「Arthur Blythe」**、**Licensed From「Adelphi Records Inc.」**、Recorded At「Blank Tape Studios」、Marketed By「Culture Press」、Pressed By「MPO」。credit 欄與原盤大致相同（Arthur Blythe 的中音薩克斯風、編曲、作曲與製作，Bob Stewart 的低音號，Ahkmed Abdullah 的康加，Dan Doyle 與 Gene Rosenthal 的混音，Bob Blank 的錄音，W. A. Brower 的內頁），新增 Design「Slane & Michelot」。註記欄一行：「Recorded at Blank Tapes Recording Studio, New York City, December 1977.」。**曲目表 4 個曲位、曲名曲序與曲長與原盤逐項相同。**",
+    "src": "https://www.discogs.com/release/2207711"
+   },
+   {
+    "f": "Apple 試聽複檢：**四條路徑都沒有這張碟。** 路徑一（本名式掛名＋盤名）us 店面 `term=Arthur Blythe Bush Baby`，resultCount **0**；路徑二（卡單掛名）us 店面 `term=Black Arthur Blythe`，resultCount **0**；路徑三 gb 店面 `term=Blythe Bush Baby`，resultCount **0**；路徑四（掛名＋第一軌曲名）us 店面 `term=Arthur Blythe Mamie Lee`，resultCount **0**。探測層另跑過 us／gb／jp／ca／de／fr／au 七個 storefront，`tried` 欄除了 gb 有一次 429 之外全部記 `0→0`。**確認 Apple 上沒有這張碟，也沒有配錯的碟。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Black%20Arthur%20Blythe&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Adelphi Records〉條目帶行內引註的段落說：**Adelphi Records 是 1968 年成立、1970 年由 Gene Rosenthal 正式登記的美國獨立廠牌**（引註《Washington City Paper》2006 年 7 月 7 日 David Dunlap Jr. 的〈The Cosmos Club〉存檔版，以及 Edward Komara 編《The Routledge Encyclopedia of the Blues》）；**廠牌名是 Rosenthal 取的，同時指向希臘德爾菲神諭、鄰近的馬里蘭州 Adelphi、以及向 John Fahey 一首〈The Downfall of the Adelphi Rolling Grist Mill〉致意**（同引《Washington City Paper》）。**（Gene Rosenthal 這個名字也出現在本卡 Discogs 條目的 Mixed By 與 Photography By 欄上。）** 條目其後關於田野錄音、1970 年代轉做民謠／爵士／藍調搖滾、以及 1980 年代子廠牌 Sunsplash Records 的段落**沒有行內引註，依第 40／80 條不採用**。",
+    "src": "https://en.wikipedia.org/wiki/Adelphi_Records"
+   },
+   {
+    "f": "英文維基〈Arthur Blythe〉條目帶行內引註的第一段說：Arthur Murray Blythe（1940 年 7 月 5 日–2017 年 3 月 27 日）是美國爵士中音薩克斯風手與作曲家；樂評 Chris Kelsey 形容他有「爵士樂裡最容易辨認的中音薩克斯風音色之一，大而圓，帶著快速寬闊的顫音與一種進取、精準的樂句處理方式」，並說他橫跨前衛與傳統，樂團常用不尋常的編制（生卒年與這段形容都引註 AllMusic 上 Chris Kelsey 撰寫的 Arthur Blythe 小傳）。",
+    "src": "https://en.wikipedia.org/wiki/Arthur_Blythe"
+   },
+   {
+    "f": "**Blank Tape Studios（Bob Blank）這條跨張錄音室線（本卡取得）**：本卡 Discogs 兩筆條目的公司欄都寫 Recorded At「Blank Tape Studios」、credit 欄的 Recorded By 欄寫「Bob Blank」、註記欄寫「Blank Tapes Recording Studio, New York City, December 1977」；**本批卡 22《First Feeding》（Discogs 5373730、Muntu Records 1001）的公司欄同樣寫 Recorded At「Blank Tape Studios」、註記欄寫「Bob Blank Studios, New York City」，錄音日 1977 年 4 月 17 日。** **同一間錄音室的名字在本組四份條目上出現三種字串（Blank Tape Studios／Blank Tapes Recording Studio／Bob Blank Studios），只能各自照抄。** 兩張碟是不同的 release-group、不同的廠牌與編號。",
+    "src": "https://www.discogs.com/release/5373730"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄上只有三件樂器：中音薩克斯風、低音號、康加——沒有貝斯，也沒有鼓",
+   "兩條版權欄分屬兩邊：錄音版權掛廠牌，作品版權掛樂手本人"
+  ],
+  "sound": "四軌兩面（Discogs 1387003 的 A1–A2、B1–B2；MB 那筆 1978 release 拉平成 1–4，兩庫曲名曲序與四軌曲長逐項一致）。最短的一軌是 B1〈Off The Top〉8:20、最長的一軌是 A1〈Mamie Lee〉10:32。編制照 Discogs credit 欄只有三位樂手：中音薩克斯風（兼作曲、編曲與製作）、低音號、康加。（本欄由 MB 1978 release 的曲長表與 Discogs 1387003 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Mamie Lee",
+   "Off the Top",
+   "Bush Baby"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "note": "**只能寫到年。** 兩庫一致寫 1978：MB release-group first-release-date 1978、MB 那筆 Adelphi 原盤 release 的 date 欄 1978（只有年）、Discogs 1387003 的 year 與 released 欄皆 1978，註記欄另寫「℗ 1978 Adelphi Record, Inc.」。**錄音期是 1977 年 12 月**（Discogs 兩筆註記欄），**作品版權字樣寫「© 1977 Arthur Blythe」**——**1977 是錄音年與作品版權年，不是發行年，三者不得互換**（第 136 條）。本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Adelphi Records 廠牌史（Gene Rosenthal）**（維基〈Adelphi Records〉條目那兩句帶引註的內容，facts 第 9 條）；**Blank Tape Studios（Bob Blank）這條跨張錄音室線**（卡 22 只能寫自己公司欄與註記欄那兩行）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 4**——MB 那筆 1978 US release 的 track-count 是 4，Discogs 1387003 的曲目表也是 4 個曲位（A1–A2、B1–B2），1985 年那筆英國再發同樣 4 軌、曲名曲序與曲長逐項相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **廠牌史只能寫維基那兩句帶引註的內容，並照第 128 條寫成「維基〈Adelphi Records〉條目說（引註《Washington City Paper》與《The Routledge Encyclopedia of the Blues》）……」。** **條目其後關於田野錄音、1970 年代曲風轉向與子廠牌的段落沒有行內引註，禁止採用**（第 40／80 條）——**連帶：不得寫「這家以藍調與民謠為主的華府廠牌」或「AD 5000 是它的爵士線」**，策展層的 `curatorWhy` 這樣寫，但那是線索不是事實（第 142 條），**本卡查到的來源裡沒有任何一句帶引註地支持這兩個說法。**\n(3) **Gene Rosenthal 出現在兩處**（維基那句的創辦人、本卡 credit 欄的 Mixed By 與 Photography By）。**可以逐處照抄，但不得寫「廠牌老闆親自下海混音」這類把兩件事連成因果的句子**（第 110 條）。\n(4) **掛名的兩種寫法要交代清楚**：**MB 的 artist-credit 是「Black Arthur Blythe」（卡單值），但同一個 MB 實體的本名欄、Discogs 兩筆條目的 credit 欄、以及維基條目名都是「Arthur Blythe」。** **行文採卡單值，並註明其他欄位寫的是不帶 Black 的寫法；不得寫「他那時用這個藝名」或推論改名的時間與原因**——沒有來源（第 110／151 條）。\n(5) **池中已有他 1977 年在 India Navigation 的《The Grip》，行文不得提到那張碟、也不得寫「次年在另一家廠牌」這類需要兩個發行年的句子**（第 146 條：本卡 facts 沒有那張碟的任何欄位）。**India Navigation 廠牌史歸卡 9，本卡完全不得提到那家廠牌。**\n(6) **維基〈Arthur Blythe〉那段音色形容只能照第 128 條寫成「維基〈Arthur Blythe〉條目引 AllMusic 上 Chris Kelsey 的說法……」，不得改寫成本站對這張碟的音色描述**——**那段講的是他這個人的一般音色，不是這張碟**（第 61／110 條）。\n(7) **編制的陳述只能照 credit 欄數**：中音薩克斯風、低音號、康加三件。**可以寫「credit 欄上沒有貝斯與鼓」，但要寫成欄位層次的陳述**（第 136 條），**不得推論這是刻意的編制選擇或某種美學**（第 110 條）。\n(8) **不得由曲名〈For Fats〉〈Mamie Lee〉〈Bush Baby〉推論致敬對象或題旨**（第 110 條）；曲目表沒有逐軌 Written-By 欄，作者只能寫 credit 欄的「Composed By: Arthur Blythe」與註記欄的作品版權字樣。\n(9) **試聽：Apple 四條路徑都沒有這張碟，`unavailable` 成立**（facts 第 8 條）。**行文不得提到試聽或串流。**\n(10) **不得寫壓量、稀有度**（第 109 條）。**Adelphi 的 AD 5000 系列其他碟（David Murray、Steve Lacy 的那兩張）本批未收，行文不得提到**（第 146 條）。"
+ }
+]

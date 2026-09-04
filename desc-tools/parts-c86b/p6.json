@@ -1,0 +1,203 @@
+[
+ {
+  "key": "desc2:Steve Lacy & Michael Smith|Sidelines",
+  "artist": "Steve Lacy & Michael Smith",
+  "album": "Sidelines",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 42cfb91a 的欄位：title《Sidelines》、first-release-date 1977、primary-type Album、secondary-types 空陣列、**artist-credit 是兩個實體併起來的**——Steve Lacy（MBID ca9766a0-1c30-43e6-a213-bac1334efc4a，type Person，country US，disambiguation「jazz saxophonist and composer 1934–2004」）與 Michael Smith（MBID cde2f7fd-eadf-44f2-a86d-0ce3c3bc9d5d，type Person，**country SE**，**disambiguation 只有一個字「piano」**）；genre 欄兩個標籤 free jazz 與 jazz（各 1 票）；**url-rels 是空陣列。**",
+    "src": "https://musicbrainz.org/release-group/42cfb91a-ec89-4b2e-afb2-1e26a8d531bb"
+   },
+   {
+    "f": "MB 轄下 1977 US 那筆 release（385159e8）：status Official、title《Sidelines》、artist-credit「Steve Lacy」＋「Michael Smith」、廠牌欄 Improvising Artists Inc.、編號欄 IAI 37.38.47、一張 12\" Vinyl、track-count 7、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Existence〉7:12、2〈Utah〉4:57、3〈Austin Stream〉2:56、4〈Sideline〉9:26、5〈Beeline〉7:24、6〈Time 2〉3:44、7〈Worms〉11:38。**注意第 4 軌的曲名是單數〈Sideline〉，盤名是複數《Sidelines》。**",
+    "src": "https://musicbrainz.org/release/385159e8-4604-40c5-a199-51385fb28ffd"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 release：1992 IT（f8f2000f，status Official、廠牌欄 Improvising Artists Inc.、編號欄 123847-2、CD、track-count 7、barcode 027312384727）。以 release?release-group=…&inc=recordings 逐版比對，**兩筆的曲名、曲序與七軌曲長逐項完全相同，沒有多出、抽換或二合一。** MB 這個 release-group 底下只有這兩筆——**Discogs 上那兩筆（1977 日本盤 RJ-7412、2004 日本 CD KMCJ-1004）MB 沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42cfb91a-ec89-4b2e-afb2-1e26a8d531bb&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1278857 的欄位：title《Sidelines》、year 與 released 欄皆 1977、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、**廠牌欄兩條（Improvising Artists Inc. IAI 37.38.47 與 Improvising Artists Inc. IAI 37·38·47——同一個編號，一條用點號、一條用中間點）**、genre 欄 Jazz、style 欄 Free Jazz、Avant-garde Jazz。公司欄八條：**Recorded At「Arne Bendiksen Studio」**、Phonographic Copyright (p) 與 Copyright (c) 皆「Improvising Artists Inc.」、**另一條 Copyright (c)「Goss (5)」**、Published By「Cyla Music」與「Merion Music」、**Pressed By「Wakefield Manufacturing」**。identifiers 欄三條：Rights Society「BMI」、Matrix / Runout「IAI-373847-A 1 [(W) logo] 30757 JB」與「IAI-373847-B 1 [(W) logo] 30757 JB」。",
+    "src": "https://www.discogs.com/release/1278857"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Soprano Saxophone「Steve Lacy」**；**Piano 與 Producer 皆「Michael Smith (14)」**（Discogs 用括號序號 14 區分同名者）；**Artwork [Jacket]「Carol Goss」**；Photography By [Photo]「Roberto Masotti」；Recorded By [Recording Engineer], Mixed By [Mixing Engineer]「Bjørn Lillehagen」；Lacquer Cut By「John Bittner」。**整張碟的 credit 欄上只有兩位樂手，鋼琴手同時是製作人。**",
+    "src": "https://www.discogs.com/release/1278857"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈Existence〉7:12（Steve Lacy）、A2〈Utah〉4:57（Steve Lacy）、**A3〈Austin Stream〉2:56（Michael Smith (14)）**、A4〈Sideline〉9:26（Steve Lacy）、B1〈Beeline〉7:24（Steve Lacy）、**B2〈Time 2〉3:44（Michael Smith (14)）**、B3〈Worms〉11:38（Steve Lacy）。**七軌的作者是五比二。** 註記欄的出版商歸屬與作者欄對得上：「A1, A2, A4, B1, B3 Cyla Music / BMI」「A3, B2 Merion Music / BMI」。",
+    "src": "https://www.discogs.com/release/1278857"
+   },
+   {
+    "f": "同一條目的註記欄其餘各行：**「Recorded on 1 September 1976 at Bendiksen Studio, Oslo, Norway.」**、封底印的「℗ & © 1977 Improvising Artists Inc. ®」、**封面印的「© Goss 1977」**、「Runouts are etched, except for the Wakefield (W) logo, which is stamped.」。**錄音地在奧斯陸，錄音日 1976 年 9 月 1 日，比發行年早一年。**",
+    "src": "https://www.discogs.com/release/1278857"
+   },
+   {
+    "f": "Discogs master 351102 的 versions **只有 4 筆，零筆標 Unofficial**：1977 US Improvising Artists Inc. IAI 37.38.47／IAI 37·38·47（LP, Album, Stereo）；**1977 Japan Improvising Artists Inc. RJ-7412（LP, Album）**；1992 Italy Improvising Artists Inc. 123847-2（CD, Album, Reissue）；2004 Japan Improvising Artists Inc. KMCJ-1004（CD, Album, Reissue）。**四筆的廠牌欄都是 IAI 自己，沒有任何一次由第三方廠牌授權復刻。**",
+    "src": "https://www.discogs.com/master/351102"
+   },
+   {
+    "f": "Discogs 1992 年那筆義大利 CD 2981225 的欄位：year 與 released 欄皆 1992、廠牌欄 Improvising Artists Inc. 123847-2、格式欄 CD ×1［Album, Reissue］。公司欄七條，其中 **Manufactured By 與 Distributed By 皆「IREC Milano」、另一條 Manufactured By「PhonoComp」**、Recorded At 仍寫「Arne Bendiksen Studio」、Published By「Cyla Music」與「Merion Music」。credit 欄六條，與原盤相同（Carol Goss 的 Artwork [Jacket]、Roberto Masotti 的攝影、Bjørn Lillehagen 的錄音與混音、Michael Smith (14) 的鋼琴與製作、Steve Lacy 的高音薩克斯風）。註記欄寫「Recorded on 1 September 1976 at Bendiksen Studio, Oslo, Norway.」與兩組版權年（插頁背面「© & ℗ 1992」、標籤面「© 1977 I.A.I. ℗ 1977 I.A.I.」）。**曲目表 7 個曲位、曲名曲序與逐軌 Written-By 欄與原盤逐項相同。**",
+    "src": "https://www.discogs.com/release/2981225"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1529011428，us 店面）：collectionName《Sidelines》、**artistName「Michael Smith & Steve Lacy」——兩截倒置：Apple 把鋼琴手排在前面，MB 與卡單都是「Steve Lacy & Michael Smith」**、trackCount 7、releaseDate 1977-01-01、copyright 欄「℗ 1977 Improvising Artists aka IAI Records」。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Existence〉440827ms＝7:20、2〈Utah〉298907ms＝4:58、3〈Austin Stream〉179560ms＝2:59、4〈Sideline〉570973ms＝9:30、5〈Beeline〉447227ms＝7:27、6〈Time 2〉226107ms＝3:46、7〈Worms〉692400ms＝11:32。**七軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。** **試聽判定（回補，第 152 條附錄的形狀）**：探測層把本張判 `unavailable`，七個 storefront 的 `tried` 欄記的是 `1→0` 與 `2→0`（**搜到了卻沒配上**，不是搜到 0 筆）。**回補的路徑**：把掛名拆到只剩核心 ASCII 字再搜一次——us 店面 `term=Steve Lacy Michael Smith Sidelines` 與 `term=Steve Lacy Sidelines` 兩次都回同一筆 collectionId 1529011428，**被擋掉的原因是 Apple 的 artistName 把兩位樂手的順序倒過來寫成「Michael Smith & Steve Lacy」**（第 152 條附錄列的「盤名／掛名兩截倒置」形狀）。以 collectionId 直查逐軌核對通過（facts 第 10 條）。**判定：`unavailable` 是誤判，應回補為 `ready`（collectionId 1529011428，us 店面）。**",
+    "src": "https://itunes.apple.com/lookup?id=1529011428&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Improvising Artists〉條目帶行內引註的第一句說：**Improvising Artists Inc.（IAI）是 1974 年由爵士鋼琴手 Paul Bley 與錄像藝術家 Carol Goss 成立的製作公司，目的是錄製即興音樂與錄像藝術**（引註 Sunnyside Records 的 Paul Bley 藝人頁，該頁已存檔於 Wayback Machine）。**（Carol Goss 這個名字也出現在本卡 Discogs 條目的 Artwork [Jacket] 欄與封面版權字樣「© Goss 1977」上；公司欄那條 Copyright (c)「Goss (5)」是 Discogs 的實體序號寫法。）** 該條目其後的目錄表格沒有行內引註，依第 40／80 條不採用。",
+    "src": "https://en.wikipedia.org/wiki/Improvising_Artists"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌編號在同一份條目上出現兩種寫法——IAI 37.38.47 與 IAI 37·38·47，一個用點號、一個用中間點",
+   "封底的版權字樣寫廠牌，封面的版權字樣只寫一個姓：© Goss 1977"
+  ],
+  "sound": "七軌兩面（Discogs 1278857 的 A1–A4、B1–B3；MB 兩筆 release 拉平成 1–7，曲名曲序與七軌曲長逐項一致）。最短的一軌是 A3〈Austin Stream〉2:56、最長的一軌是 B3〈Worms〉11:38。編制照 Discogs credit 欄只有兩位樂手：高音薩克斯風與鋼琴（鋼琴手同時掛製作人）。公司欄與註記欄都寫錄音地在奧斯陸的 Bendiksen 錄音室。（本欄由 MB 兩筆 release 的曲長表與 Discogs 1278857 的曲目表、credit 欄、註記欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Existence",
+   "Sideline",
+   "Worms"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1977,
+   "note": "**只能寫到年。** 三個來源一致寫 1977：MB release-group first-release-date 1977、MB 那筆 IAI 原盤 release 的 date 欄 1977（只有年）、Discogs 1278857 的 year 與 released 欄皆 1977，註記欄另寫封底的「℗ & © 1977 Improvising Artists Inc.」與封面的「© Goss 1977」，1992 年那筆 CD 的標籤面也印「© 1977 I.A.I. ℗ 1977 I.A.I.」。**錄音日 1976 年 9 月 1 日**（Discogs 兩筆註記欄）——**錄音年與發行年差一年，兩者不得互換。** **Apple 的 releaseDate 1977-01-01 不得當原盤發行日**（第 140 條附二：月日補 01-01 的佔位形狀）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Improvising Artists Inc. 廠牌史（Paul Bley 與 Carol Goss）**（維基〈Improvising Artists〉條目那句帶引註的成立敘述，facts 第 12 條）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 7**——MB 那筆 1977 US release 的 track-count 是 7，Discogs 1278857 的曲目表也是 7 個曲位（A1–A4、B1–B3），1992 年那筆義大利 CD 與 Apple 那筆同樣 7 軌、曲名曲序相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號（**A 面四軌、B 面三軌**）。\n(2) **試聽：`unavailable` 是誤判，應回補為 `ready`（collectionId 1529011428，us 店面）**（facts 第 10、11 條）。**這是本組最重要的一筆推翻**：探測層的 `tried` 欄記 `1→0`／`2→0`——**搜到了卻沒配上，被擋的原因是 Apple 把掛名的兩截倒置寫成「Michael Smith & Steve Lacy」**（第 152 條附錄）。**回補後的禁令**：Apple 的曲長（7:20／4:58／2:59／9:30／7:27／3:46／11:32）與兩庫原盤的（7:12／4:57／2:56／9:26／7:24／3:44／11:38）逐軌都不同，**不得引作原盤曲長**。\n(3) **廠牌史只能寫維基那一句帶引註的內容，並照第 128 條寫成「維基〈Improvising Artists〉條目說（引註 Sunnyside Records 的藝人頁）……」。** **條目的目錄表格沒有引註，禁止採用**（第 40／80 條）。**Paul Bley 本人沒有出現在本卡任何一個 credit 欄上，行文不得暗示他參與了這張碟。**\n(4) **Carol Goss 出現在三處**（維基那句的共同創辦人、本卡 credit 欄的 Artwork [Jacket]、封面版權字樣「© Goss 1977」與公司欄的 Copyright (c)「Goss (5)」）。**可以逐處照抄，但不得寫「廠牌共同創辦人親自畫了封套」這種把兩件事連成因果的句子**（第 110 條的一步推論）。\n(5) **掛名歧異**：MB 的 artist-credit 是「Steve Lacy & Michael Smith」、Discogs 的條目標題是「Steve Lacy / Michael Smith (14)」、**Apple 是倒過來的「Michael Smith & Steve Lacy」**。**行文採卡單值，提到別的寫法時要說明是哪個服務上的字串。** **Michael Smith 是極常見的英文名（Discogs 用括號序號 14 區分、MB 的 disambiguation 只有「piano」一個字），封面與試聽一律靠 rgMbid 與 collectionId 1529011428。**\n(6) **編號兩種寫法（IAI 37.38.47 與 IAI 37·38·47）只能照抄，不得擇一斷言，也不得由編號推論出版序數**（第 125 條）。\n(7) **七軌的作者只能照 Discogs 的 Written-By 欄逐軌寫**（五軌 Steve Lacy、兩軌 Michael Smith），**出版商的分軌（Cyla Music／Merion Music）可以照註記欄引用**。**不得由曲名〈Sideline〉與盤名《Sidelines》的單複數差異推論任何關係**（第 110 條）。\n(8) **池中已有 Steve Lacy 的其他碟，行文不得提到那些碟、也不得寫「他在這家廠牌的唯一一張」**——本卡 facts 沒有清點過 IAI 的目錄，也沒有清點過他的作品（第 154 條）。\n(9) **不得寫壓量、稀有度**（第 109 條）。"
+ },
+ {
+  "key": "desc2:Von Freeman|Have No Fear",
+  "artist": "Von Freeman",
+  "album": "Have No Fear",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 26540cc4 的欄位：title《Have No Fear》、first-release-date 1975、primary-type Album、secondary-types 空陣列、artist-credit「Von Freeman」；genre 欄只有一個標籤 jazz（1 票）；**url-rels 是空陣列。** 掛名實體是 Von Freeman（MBID be025726-954d-4712-b7fb-c4aa6d206188，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/26540cc4-e460-4080-93d0-e47665adbdff"
+   },
+   {
+    "f": "MB 轄下 1975 US 那筆 release（3daa36aa）：status Official、title《Have No Fear》、artist-credit「Von Freeman」、廠牌欄 Nessa Records、編號欄 n-6、**格式欄只寫「Vinyl」（沒有寫 12\"）**、**track-count 4**、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈Mr. Lucky〉11:53、2〈Swinging The Blues〉9:56、3〈Polka Dots And Moonbeams〉11:37、4〈Have No Fear, Soul Is Here〉12:34。 同一 release-group 轄下另一筆 release：2011 US（2ad401d4，status Official、廠牌欄 Nessa Records、編號欄 ncd-6、CD、**track-count 5**、barcode 欄 null）。以 release?release-group=…&inc=recordings **逐軌比對整份曲目表**：1〈Mr. Lucky〉11:50、2〈Swinging The Blues〉9:54、3〈Polka Dots And Moonbeams〉11:34、4〈Have No Fear, Soul Is Here〉12:50、**5〈Boomerang〉5:59**。**原盤四軌的曲名與曲序在 2011 那筆裡完全保留，多出來的那一軌排在最後。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=26540cc4-e460-4080-93d0-e47665adbdff&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 2800336 的欄位：title《Have No Fear》、year 與 released 欄皆 1975、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、**廠牌欄兩條（Nessa Records N-6 與 Nessa Records n-6——大小寫兩種寫法）**、genre 欄 Jazz、style 欄 Post Bop。公司欄兩條：Phonographic Copyright (p) 與 Copyright (c) 皆「Nessa Records」。identifiers 欄六條：Rights Society「BMI」與「ASCAP」、標籤面的 Matrix / Runout「26952」（兩面相同）、刻紋「NESSA N-6-A 1(ᵛᵛ)26952 JB」與「NESSA N-6 B M° #2 (ᵛᵛ)26952 (#1) JB」。",
+    "src": "https://www.discogs.com/release/2800336"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Tenor Saxophone「Von Freeman」；Piano「John Young (16)」；Bass「David Shipp」；Drums「Wilbur Campbell」；**Producer「Chuck Nessa」**；Recorded By「Stu Black」；Liner Notes「Terry Martin (2)」；Art Direction「TanenbaumDesign」；Graphics [Cover]「Pamela Rice」；Photography By「Anne Benolken」與「Terry Martin (2)」。**四位樂手，製作人欄寫的就是廠牌名字所本的那個人名。**",
+    "src": "https://www.discogs.com/release/2800336"
+   },
+   {
+    "f": "同一條目的曲目表共 4 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈Mr. Lucky〉11:53（Written-By: **Henry Mancini**）、A2〈Swinging The Blues〉9:56（**Count Basie 與 Eddie Durham**）、B1〈Polka Dots And Moonbeams〉11:37（**Jimmy Van Heusen And Johnny Burke**——條目上就是這樣寫成一串）、B2〈Have No Fear, Soul Is Here〉12:34（**Von Freeman**）。**四軌只有最後一軌、也就是與盤名同名的那一軌，作者欄是掛名者自己。**",
+    "src": "https://www.discogs.com/release/2800336"
+   },
+   {
+    "f": "同一條目的註記欄逐行：標籤面印「℗ 1975 / Von Freeman Quartet」（**唱片標籤上的掛名帶「Quartet」，條目標題與 MB 的 artist-credit 都沒有**）、封面印「Recorded June 11, 1975」與「℗ © 1975 Nessa Records」、**「Distributed by Flying Fish Records」**，另一行說明同一版另有標籤顏色、資訊與排版略有不同的一筆（Discogs 條目 16225184）。",
+    "src": "https://www.discogs.com/release/2800336"
+   },
+   {
+    "f": "Discogs master 653997 的 versions **只有 4 筆，零筆標 Unofficial**：1975 US Nessa Records N-6／n-6 兩筆（皆 LP, Album, Stereo，標籤細節不同）；**1997 Japan Bomba Records (4) BOM22025（CD, Album, Reissue）**；2011 US Nessa Records ncd-6（CD, Album, Reissue）。",
+    "src": "https://www.discogs.com/master/653997"
+   },
+   {
+    "f": "Discogs 2011 年那筆美國 CD 6429673 的欄位：year 與 released 欄皆 2011、廠牌欄 Nessa Records ncd-6、格式欄 CD ×1［Album, Reissue］、公司欄只有一條 **Recorded At「Sound Studios, Chicago」**（原盤條目沒有這一條）、credit 欄只有四位樂手。註記欄一行：「Recorded June 11, 1975 at Sound Studios, Chicago.」。**曲目表 6 列——四軌原盤曲目之後有一列標題列寫著「Bonus Track」，接著才是第 5 軌〈Boomerang〉5:59（Written-By: Von Freeman）。條目自己就把那一軌標成 bonus track。**",
+    "src": "https://www.discogs.com/release/6429673"
+   },
+   {
+    "f": "Apple 試聽複檢：**三條路徑都沒有這張碟。** 路徑一（掛名＋盤名核心 ASCII 字）us 店面 `term=Von Freeman Have No Fear`，resultCount **0**；路徑二（掛名＋廠牌）us 店面 `term=Von Freeman Nessa`，resultCount **0**；路徑三（盤名＋與盤名同名那一軌的全名）us 店面 `term=Have No Fear Soul Is Here` 回 15 筆，**沒有任何一筆是本張、也沒有任何一筆掛 Von Freeman**（回來的是福音與流行單曲）。探測層另跑過 us／gb／jp／ca／de／fr／au 七個 storefront，`tried` 欄全部記 `0→0`。**確認 Apple 上沒有這張碟，也沒有配錯的碟。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Von%20Freeman%20Have%20No%20Fear&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Nessa Records〉條目帶行內引註的段落說：**Nessa Records 是 1967 年由製作人 Chuck Nessa 在芝加哥創辦的美國爵士廠牌**；他先在 Delmark Records 工作了一年，**是在 Roscoe Mitchell 與 Lester Bowie 的力促之下開的這家廠牌，而第一張專輯掛的是 Bowie 的名字，因為 Mitchell 當時與 Delmark 有約在身**（引註 Delmark Records 網站上的 Chuck Nessa 訪談）；**1980 年代中期之後廠牌設在密西根州 Whitehall**（引註 AllAboutJazz 頁的存檔版與廠牌自己的 About 頁）。**該條目其後的目錄清單沒有行內引註，依第 40／80 條不採用**（清單裡對本張的註記與 2011 年那筆 CD 的 bonus track 說法，本卡改以 MB 與 Discogs 的欄位為準）。",
+    "src": "https://en.wikipedia.org/wiki/Nessa_Records"
+   },
+   {
+    "f": "英文維基〈Von Freeman〉條目帶行內引註的段落說：Earle Lavon「Von」Freeman Sr.（1923 年 10 月 3 日–2012 年 8 月 11 日）是美國 hard bop 爵士次中音薩克斯風手，生於芝加哥；他的父親 George 是一名市警（引註《紐約時報》2012 年 8 月 18 日 Margalit Fox 的〈Von Freeman, Fiery Tenor Saxophonist, Dies at 88〉），與 Louis Armstrong 交好——Armstrong 初到芝加哥時就住在 Freeman 家（同段另引一篇西班牙文報導）。",
+    "src": "https://en.wikipedia.org/wiki/Von_Freeman"
+   }
+  ],
+  "hookCandidates": [
+   "唱片標籤上印的是「Von Freeman Quartet」，條目標題與 MusicBrainz 的掛名都只寫了名字",
+   "四軌裡只有與盤名同名的那一軌，作者欄寫的是他自己"
+  ],
+  "sound": "四軌兩面（Discogs 2800336 的 A1–A2、B1–B2；MB 那筆 1975 release 拉平成 1–4，兩庫曲名曲序與四軌曲長逐項一致）。最短的一軌是 A2〈Swinging The Blues〉9:56、最長的一軌是 B2〈Have No Fear, Soul Is Here〉12:34。編制照 Discogs credit 欄是四人：次中音薩克斯風、鋼琴、貝斯、鼓。（本欄由 MB 1975 release 的曲長表與 Discogs 2800336 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Mr. Lucky",
+   "Polka Dots And Moonbeams",
+   "Have No Fear, Soul Is Here"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "**只能寫到年。** 三個來源一致寫 1975：MB release-group first-release-date 1975、MB 那筆 Nessa 原盤 release 的 date 欄 1975（只有年）、Discogs 2800336 的 year 與 released 欄皆 1975，註記欄另寫標籤面的「℗ 1975」與封面的「℗ © 1975 Nessa Records」。**錄音日 1975 年 6 月 11 日**（Discogs 原盤註記欄與 2011 年那筆 CD 的註記欄）——**與發行年同一年，但那是錄音日、不是發行日。** 本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Nessa Records 廠牌史（Chuck Nessa）**（維基〈Nessa Records〉條目那段帶引註的內容，facts 第 10 條）。**卡 19、20、21 一律禁用。**\n**本卡禁令**：\n(1) **原盤軌數只能寫 4**——MB 那筆 1975 US release 的 track-count 是 4，Discogs 2800336 的曲目表也是 4 個曲位（A1–A2、B1–B2）。**2011 年那筆 CD 是 5 軌，多出來的〈Boomerang〉在 Discogs 條目上就被標成「Bonus Track」、排在原盤四軌之後**（第 140 條的加曲版形狀，但**本卡的 Apple 查無，這一項不涉及試聽判定**）。**行文不得把那一軌當成這張碟的曲目、也不得寫任何以 5 為基礎的軌數敘述**（第 140／141 條）。面別分法只能引 Discogs 的 A／B 編號。\n(2) **廠牌史只能寫維基那一段帶引註的內容，並照第 128 條寫成「維基〈Nessa Records〉條目說（引註 Delmark 網站的 Chuck Nessa 訪談等）……」。** **條目的目錄清單沒有引註，禁止採用**（第 40／80 條）——清單上對本張與 2011 年 CD 的註記也不採用，該用的欄位在 MB 與 Discogs 上都查得到。\n(3) **Chuck Nessa 出現在兩處**（維基那段的創辦人、本卡 credit 欄的 Producer）。**可以逐處照抄，但不得寫「廠牌老闆親自製作」這類把兩件事連成因果的句子**（第 110 條）。\n(4) **AACM 組織史歸卡 20、Air 團史歸卡 19、Wadada Leo Smith 的身分線歸卡 21，本卡三者皆禁用。** **維基那段裡的 Roscoe Mitchell 與 Lester Bowie 只能寫成該條目說的「力促他開廠牌的人」，不得展開成他們的團史或組織背景。**\n(5) **掛名的「Quartet」**：唱片標籤印「Von Freeman Quartet」（Discogs 註記欄），MB 的 artist-credit 與卡單值都只寫「Von Freeman」。**行文採卡單值，提到標籤上的寫法時要說明那是註記欄記下的標籤字樣**（第 151 條）。\n(6) **四軌的作者只能照 Discogs 的 Written-By 欄逐軌寫**（Henry Mancini；Count Basie 與 Eddie Durham；Jimmy Van Heusen And Johnny Burke；Von Freeman）。**可以寫「四軌只有與盤名同名的那一軌是他自己寫的」這種回 facts 數得出來的陳述**（第 108／110 條），**但不得寫「這是一張標準曲專輯」或推論選曲用意**。\n(7) **與本批卡 11 的掛名（Chico Freeman）不得寫成親屬關係敘事**——那條線的來源在卡 11 的維基條目上，**與本卡這張碟無關**（第 146 條）。**兩張卡的行文都只能各寫各的碟。**\n(8) **試聽：Apple 三條路徑都沒有這張碟，`unavailable` 成立**（facts 第 9 條）。**行文不得提到試聽或串流。**\n(9) **不得寫壓量、稀有度**（第 109 條）。**「Distributed by Flying Fish Records」只能照抄成註記欄的一行，不得展開成發行體系敘事**（本組另有卡 19 的公司欄也有這個名字，**那也只是欄位**）。"
+ },
+ {
+  "key": "desc2:John Gordon|Erotica Suite",
+  "artist": "John Gordon",
+  "album": "Erotica Suite",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2b14d653 的欄位：title《Erotica Suite》、first-release-date 1978、primary-type Album、secondary-types 空陣列、artist-credit「John Gordon」；genre 欄只有一個標籤 jazz（1 票）；**url-rels 是空陣列。** 掛名實體是 John Gordon（MBID e4405ddf-9ea6-4b1e-8d45-56f4fcbc2b08，type Person，country US，**disambiguation 欄「US jazz trombonist」**——同名者不只一位，這個欄位就是用來分辨的）。",
+    "src": "https://musicbrainz.org/release-group/2b14d653-44b9-4dd7-a9a5-e47526b8cff1"
+   },
+   {
+    "f": "MB 轄下 1978 US 那筆 release（503f4094）：status Official、title《Erotica Suite》、artist-credit「John Gordon」、廠牌欄 Strata-East、編號欄 SES-19780、一張 12\" Vinyl、track-count 7、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈1st Movement - Desire〉6:54、2〈2nd Movement - Fulfillment〉6:13、3〈3rd Movement - Aftermath〉1:28、4〈4th Movement - Consequences〉8:06、5〈Ora Lee Tingle〉4:26、6〈Neleh〉6:30、7〈Blue Na〉8:19。**前四軌的曲名帶「1st／2nd／3rd／4th Movement」的編號與副標。**",
+    "src": "https://musicbrainz.org/release/503f4094-9dc3-492d-859d-a9ca1ec14f57"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 release：2017 FR（9f4f2675，status Official、廠牌欄 Superfly Records、編號欄 SRLP026、12\" Vinyl、track-count 7、barcode 欄 null）。以 release?release-group=…&inc=recordings 逐版比對，**兩筆的曲名、曲序與七軌曲長逐項完全相同，沒有多出、抽換或二合一。** MB 這個 release-group 底下只有這兩筆——**Discogs 上那三筆（2017 荷蘭 Everland、2021 英國 Strata-East 兩筆）MB 沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b14d653-44b9-4dd7-a9a5-e47526b8cff1&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1518297 的欄位：title《Erotica Suite》、year 與 released 欄皆 1978、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-19780、genre 欄 Jazz、style 欄 Modal、Soul-Jazz、Spiritual Jazz。公司欄四條：**Phonographic Copyright (p)「Strata-East Records, Inc.」（只有這一條版權欄，沒有 Copyright (c)、也沒有 Made By）**、Published By「Brook YMA Publishing」、**Recorded At 與 Mixed At 皆「Sound Ideas Studios」**。identifiers 欄三條：Matrix / Runout「SES 19780 A-1」與「SES 19780 B」、Rights Society「BMI」。**註記欄是空的。**",
+    "src": "https://www.discogs.com/release/1518297"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Trombone, Composed By, Producer「John Gordon」**；**Alto Saxophone, Flute「James Spaulding」**；**Trumpet, Flugelhorn「Waymon Reed」**；Piano, Synthesizer, Strings [Stringmen]「John Miller (3)」；Bass「Lisle Atkinson」；Drums, Bell Tree「Frank Derrick」；Engineer [Recording]「Neal Ceppos」；Design「Frank Vails」；Photography By「Betsy Herzog」。**六位樂手，掛名者同時是作曲者與製作人。**",
+    "src": "https://www.discogs.com/release/1518297"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分兩面：A1〈1st Movement - Desire〉6:54、A2〈2nd Movement - Fulfillment〉6:13、A3〈3rd Movement - Aftermath〉1:28、A4〈4th Movement - Consequences〉8:06、B1〈Ora Lee Tingle〉4:26、B2〈Neleh〉6:30、B3〈Blue Na〉8:19。**曲目表沒有逐軌 Written-By 欄**——作者只出現在 credit 欄的「Composed By: John Gordon」與公司欄的 Published By「Brook YMA Publishing」（第 136 條）。**A 面四軌是帶編號的四個樂章，B 面三軌是另外命名的曲子。**",
+    "src": "https://www.discogs.com/release/1518297"
+   },
+   {
+    "f": "Discogs master 1247622 的 versions 共 5 筆，**零筆標 Unofficial**：1978 US Strata-East SES-19780（LP, Album）；**2017 Netherlands Everland Jazz「Everland Jazz 006 LP／ELJ006」（LP, Album, Reissue）**；**2017 France Superfly Records (2) SRLP026／SES-19780／SRLP-026（Vinyl，版本欄 LP, Album, Limited Edition, Reissue, Remastered, Stereo）**；**2021 UK & Ireland Strata-East SES-19780／5060149623312 兩筆**（一筆 LP, Album，一筆版本欄 LP, Album, Reissue, Test Pressing, White Label）。**同一年（2017）有荷蘭與法國兩家不同的廠牌各做了一次復刻。**",
+    "src": "https://www.discogs.com/master/1247622"
+   },
+   {
+    "f": "Discogs 2017 年那筆法國黑膠 10991434 的欄位：year 與 released 欄皆 2017、**廠牌欄三條（Superfly Records (2) SRLP026、Strata-East SES-19780、Strata-East SRLP-026）**、格式欄 Vinyl ×1［LP, Album, Limited Edition, Reissue, Remastered, Stereo］、genre 欄 Jazz、style 欄 Modal。公司欄九條：Published By「Brookyma Publ.」（**與原盤條目的「Brook YMA Publishing」是不同的字串**）、**Record Company 與 Licensed From 皆「Strata-East Records, Inc.」**、版權兩欄皆「Superfly Records (2)」、Recorded At 與 Mixed At 皆「Sound Ideas Studios」、Distributed By「Disques Dessinee Distribution」、**Remastered At「Studio Djoke」**。credit 欄與原盤大致相同，新增 **Remastered By, Restoration「Masao Maruyama」**。曲目表 7 個曲位、曲名曲序與曲長與原盤逐項相同。",
+    "src": "https://www.discogs.com/release/10991434"
+   },
+   {
+    "f": "Apple 試聽複檢：**兩條路徑都沒有這張碟。** 路徑一（掛名＋盤名核心 ASCII 字）us 店面 `term=John Gordon Erotica Suite`，resultCount **0**；路徑二（只用盤名）us 店面 `term=Erotica Suite` 回 **10 筆，沒有任何一筆是本張**——回來的是 Martin Denny 與 Si Zentner 的《Exotica Suite》(Blue Note/Capitol, 1962)、David Chesworth Ensemble 的《Exotica Suite》(2006)、幾張《Erotic Stories》合輯、Erotic Lounge 的《Temptation Suite》、以及 José Serebrier 作品集裡帶「Erotica」字樣的兩筆古典錄音；**其中兩筆《Exotica Suite》是拼字只差一個字母的另一張碟（Exotica 對 Erotica），特別容易誤配。** 另跑路徑三（掛名＋樂器）us 店面 `term=John Gordon trombone` 回 2 筆，是「John Gordon's Trombones Unlimited & Slide Hampton」的《Live in Concert》(Mons Records, 2007) 與一張古典專輯，**都不是本張、也不是同一個掛名實體**。探測層另跑過 us／gb／jp 三個 storefront（策展層記載）與七個 storefront（探測層 `tried` 欄），全部記 `0→0`。**確認 Apple 上沒有這張碟。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Erotica%20Suite&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Strata-East Records〉條目的目錄表格把 SES 19780 那一列列給本張。**該表格沒有行內引註，依第 40／80 條不採用為敘述來源**；此處只記錄查證過程——**編號欄的值以 MB release 與 Discogs 條目的 SES-19780 為準，兩庫一致。** 另記：**維基上沒有這位長號手的個人條目**（英文維基〈John Gordon〉是消歧義頁，本卡查過的兩筆同名對象都不是他）。",
+    "src": "https://en.wikipedia.org/wiki/Strata-East_Records"
+   },
+   {
+    "f": "**歐洲復刻線（本卡取得）**：本張在 2017 年由兩家不同的歐洲廠牌各做了一次授權復刻——荷蘭 Everland Jazz（ELJ006）與法國 Superfly Records (2)（SRLP026，公司欄的 Licensed From 欄寫「Strata-East Records, Inc.」、封套同時印原編號 SES-19780）；**2021 年則由 Strata-East 自己在英國與愛爾蘭再壓兩筆（SES-19780，其中一筆的版本欄是 Test Pressing, White Label）**。**四筆再發的廠牌欄裡都有 Strata-East 這個字串，形式各不相同（授權、共掛、自家發行），只能各自照抄欄位，不得歸納成單一敘事。**",
+    "src": "https://www.discogs.com/master/1247622"
+   }
+  ],
+  "hookCandidates": [
+   "A 面是四個帶編號的樂章，B 面三軌各有各的名字——同一張碟上兩種命名方式",
+   "2017 年同一年，荷蘭與法國兩家不同的廠牌各自復刻了這張碟"
+  ],
+  "sound": "七軌兩面（Discogs 1518297 的 A1–A4、B1–B3；MB 兩筆 release 拉平成 1–7，曲名曲序與七軌曲長逐項一致）。最短的一軌是 A3〈3rd Movement - Aftermath〉1:28、最長的一軌是 B3〈Blue Na〉8:19。編制照 Discogs credit 欄是六人：長號（掛名者，另兼作曲與製作）、中音薩克斯風兼長笛、小號兼翼號、鋼琴與合成器、貝斯、鼓兼鈴樹。（本欄由 MB 兩筆 release 的曲長表與 Discogs 1518297 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "1st Movement - Desire",
+   "Ora Lee Tingle",
+   "Blue Na"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "note": "**只能寫到年。** 兩個來源一致寫 1978：MB release-group first-release-date 1978、MB 那筆 Strata-East 原盤 release 的 date 欄 1978（只有年）、Discogs 1518297 的 year 與 released 欄皆 1978。**Discogs 那份原盤條目的註記欄是空的，沒有 ℗ 或 © 的年份字樣可以佐證**（第 136 條：這是條目上沒有，不是唱片上沒印）。本卡沒有 Apple 紀錄可比對（查無）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Everland Jazz／Superfly Records／2021 年英國 Strata-East 的歐洲復刻線**（facts 第 11 條）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 7**——MB 那筆 1978 US release 的 track-count 是 7，Discogs 1518297 的曲目表也是 7 個曲位（A1–A4、B1–B3），2017 年那筆法國復刻同樣 7 軌、曲名曲序與曲長逐項相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-19780」與公司欄那一條 Phonographic Copyright (p)。\n(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。**Superfly 那筆 Discogs 條目的註記欄有明確的份數與封套材質分配數字，facts 已刻意不收，寫作層也不得補**；版本欄的 Limited Edition、Test Pressing、White Label **只能當版本欄字樣引用**。\n(4) **A 面「四個樂章」只能照曲名字串寫**（曲名本身就帶「1st／2nd／3rd／4th Movement」與副標）。**不得由曲名或盤名《Erotica Suite》推論組曲的題旨、敘事或內容**（第 110 條）——曲目表沒有逐軌 Written-By 欄，作者只能寫 credit 欄的「Composed By: John Gordon」。\n(5) **掛名撞名**：MB 實體的 disambiguation 欄寫「US jazz trombonist」；**維基上沒有這位長號手的個人條目**，Apple 上以掛名搜到的兩筆是別人。**封面與試聽一律靠 rgMbid，行文不得引用任何以「John Gordon」為名的外部敘述。**\n(6) **試聽：Apple 兩條路徑都沒有這張碟，`unavailable` 成立**（facts 第 9 條）。**要寫進交接的是：以盤名搜尋會撈回兩筆《Exotica Suite》——拼字只差一個字母，下游若用字串比對極易誤配。** 行文不得提到試聽或串流。\n(7) **出版商欄在兩份條目上是兩個字串**（原盤「Brook YMA Publishing」、2017 年那筆「Brookyma Publ.」）。**只能各自照抄，不得擇一斷言、也不得寫成同一家**（第 136 條）。\n(8) **同藝人另有 1976 年《Step by Step》(SES-19760) 在同廠牌，本批未收——行文不得提到那張碟**（第 146 條：本卡 facts 沒有它的任何欄位）。"
+ }
+]
