@@ -1,0 +1,427 @@
+[
+ {
+  "artist": "Andrew Cox",
+  "album": "Arioch",
+  "year": 1980,
+  "genres": [
+   "electronic"
+  ],
+  "label": "YHR Tapes",
+  "why": "赫爾（Hull）的 Andrew Cox 自己經營的卡帶廠牌 YHR Tapes 的第三號發行（YHR 003，1980，Discogs 廠牌條目 63284 的目錄裡列為 Cass, Album）。YHR 從 YHR 001 到 YHR 022 只用了兩年，全部是 C45／C60／C90 卡帶、靠郵購與同好交換流通，目錄裡混著英國本地人（Cox 自己、MFH、Paul Nagle、Nik Lumsden）與歐陸的通信對象（Asmus Tietchens《Musik Aus Der Grauzone》、Cluster And Farnbauer 的維也納現場、M.B. 的兩捲）——這正是 1980 年前後卡帶網絡「一個人的廠牌就能把兩三個國家串起來」的樣子。地位證據是比利時 Forced Nostalgia 在 2014–15 年的授權整理輯《Past Imperfect》（Discogs master 668846，四個版本皆標 Compilation／Remastered，含 CD 與數位）。池中實掃 seed_cards.json 全 13,913 列，Andrew Cox 零張，整條 YHR Tapes 線零張。",
+  "risk": "掛名「Andrew Cox」是極常見的英文姓名（裁定第 124 條），MB 與 Apple 上都可能撞到別人，只能靠 rgMbid 鎖定。原盤是卡帶，依裁定第 1 條卡帶原盤即算原盤，年份取 1980（MB 的 first-release-date 與 Discogs 目錄一致，無分歧）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront（gb／us／de／nl／fr／be／ca／au／jp）實測無命中，試聽預估 unavailable——這是本組多數卡的預期狀態。本批同藝人另收《Hydra》一張，合計 2 張、未達藝人上限 3。",
+  "mbNote": "釘 7be66c4b-0ea8-488d-a05e-7d5235839f77《Arioch》，artist-credit「Andrew Cox」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release：1980 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6c3496c8-d086-41b7-8b57-3567c30f6836，以 release-group?artist=<MBID>&limit=100&offset= 查（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 4 個 release-group。對照組 656750c5-ec92-469d-9034-956c6be0cd61《Hydra》(1981) 是本批同組的另一張卡，其餘同藝人條目刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Forced Nostalgia",
+  "g": "b"
+ },
+ {
+  "artist": "Andrew Cox",
+  "album": "Hydra",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "YHR Tapes",
+  "why": "YHR Tapes 的第十七號（YHR 017，Discogs release 1340983，1981 年英國 C60 卡帶），與《Arioch》同一段自營期的前後作，中間隔了 Cox 自己的 YHR 008《Methods》與整條目錄的歐陸通信號。這捲的位置能說明卡帶廠牌的運作節奏：同一個人在兩年內出了二十二號，其中三號是自己的作品，其餘全是交換來的。地位證據同《Arioch》，是 Forced Nostalgia 2014–15 年的授權整理輯《Past Imperfect》（Discogs master 668846，四個版本皆標 Compilation／Remastered）。池中實掃 seed_cards.json 全 13,913 列，Andrew Cox 零張。",
+  "risk": "掛名撞名風險同《Arioch》；盤名《Hydra》是單字通用詞，依裁定第 85 條的觀察「單字盤名幾乎必定拿不到固定試聽」，Apple 九個 storefront 實測無命中，試聽預估 unavailable。原盤是卡帶，年份依裁定第 1 條取 1981（MB 與 Discogs 一致）。封面已實測 CAA release-group front 回 200。與同組《Arioch》要一起看藝人張數：本批 2 張，未達上限。",
+  "mbNote": "釘 656750c5-ec92-469d-9034-956c6be0cd61《Hydra》，artist-credit「Andrew Cox」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6c3496c8-d086-41b7-8b57-3567c30f6836（同《Arioch》），名下 4 個 release-group。對照組 7be66c4b-0ea8-488d-a05e-7d5235839f77《Arioch》(1980) 是本批同組的另一張卡。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Forced Nostalgia",
+  "g": "b"
+ },
+ {
+  "artist": "MFH",
+  "album": "Ground Zero",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "YHR Tapes",
+  "why": "MFH 是 YHR Tapes 目錄裡出現次數最多的名字：YHR 001《First Move》、YHR 002《Within 30 Miles》、YHR 009《Masks》、YHR 016《Ground Zero》，等於這家廠牌開張的第一號與中段的骨幹都是同一個人（Discogs 廠牌條目 63284 的目錄，本捲為 release 1349147，1981 年英國卡帶）。這是英國卡帶網絡的典型結構：廠牌主人與一兩個固定作者互相供稿，其餘靠交換。地位證據靠 YHR 目錄本身在卡帶考古文獻裡的位置與 Forced Nostalgia 對同廠 Andrew Cox 的授權整理；本捲本身沒有授權再發，依裁定第 82 條「完全沒有再發」不比「只有未授權再發」差。池中實掃 seed_cards.json 全 13,913 列，MFH 零張。",
+  "risk": "掛名是三個字母的縮寫，字串搜尋在任何服務上都會失準（裁定第 124 條的極端形態），只能靠 rgMbid 鎖定；`chk-prop` 的 key 函式壓成 mfh，與池中任何三字母掛名都可能相撞，交件前已以盤名為主鍵掃過全池、無撞卡。原盤是卡帶，年份依裁定第 1 條取 1981。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。無授權再發代表本機做三軸時 listeners 幾乎必定查無，依 §0.8 錨點制人工評分（原盤極小廠、無串流授權再發 → 冷門軸 5）。",
+  "mbNote": "釘 f83da9cb-f99f-42f2-b0ee-02aceeb5d245《Ground Zero》，artist-credit「MFH」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 32fc9e5f-3118-46ab-8ca5-c1cf06cc5f60，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 6 個 release-group。同藝人的其餘 YHR 捲（《First Move》《Within 30 Miles》《Masks》）刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Paul Nagle",
+  "album": "The Soft Room",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "YHR Tapes",
+  "why": "YHR Tapes 的第十八號（YHR 018，1981，Discogs 廠牌條目 63284 目錄列為 Cass, Album），Nagle 同年另有 YHR 021／SR07《Tree And Leaf》——那個雙編號本身就是卡帶網絡的證據：同一捲同時掛 YHR 與他自己的 Soft Room 編號，兩家一起出。地位證據是德國 Vinyl-on-demand 在 2013 年做的授權黑膠回顧《The Soft Room 1980–85》（Discogs master 573866，VOD115.10，兩個版本皆標 LP／Compilation）；VOD 是專門把 1980 年代卡帶目錄轉成黑膠盒裝的德國廠牌，同一批也做過 Bourbonese Qualk、Portion Control 與 Sema。池中實掃 seed_cards.json 全 13,913 列，Paul Nagle 零張。",
+  "risk": "年份要分清楚兩件事：卡單記原捲 1981（MB 的 first-release-date 與 YHR 目錄一致），VOD 的《The Soft Room 1980–85》是 2013 年的**另一個編輯版本**（標題與收錄年限都不同），依裁定第 84／104 條不採其年份、也不釘其 release-group。掛名「Paul Nagle」是常見英文姓名（裁定第 124 條），撞名風險高；同名者另有一位英國合成器評論作者，下游查詢要小心。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。",
+  "mbNote": "釘 ca5f26cf-0bfa-433e-b498-eb8367b83d8a《The Soft Room》，artist-credit「Paul Nagle」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3c39ec92-931c-40bc-a812-fc6bb3221411，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 32 個 release-group。Discogs 上的《The Soft Room 1980–85》(2013，VOD115.10) 若在 MB 另建 release-group，一律**刻意不釘**——它是另一個編輯版本，不是本卡的再發。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Vinyl-on-demand",
+  "g": "b"
+ },
+ {
+  "artist": "Storm Bugs",
+  "album": "A Safe Substitute",
+  "year": 1980,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Snatch Tapes",
+  "why": "Philip Sanderson 與 Steven Ball 的雙人組，作品出在自營的 Snatch Tapes，本捲目錄號 tch 110（Discogs master 341692，1980 年英國卡帶兩筆 release：560114 與同年的 SS1）。Snatch Tapes 的目錄（Discogs 廠牌條目 24789）從 1979 年的《Snatch Tapes 1》C30 合輯開始，1980–81 年間出了 Storm Bugs 自己、David Jackman（後來的 Organum）的三捲單曲卡帶與 Claire Thomas & Susan Vezey，全部是 C30／C45／C46 規格、郵購流通。地位證據是兩次授權再發：2011 年英國 Harbinger Sound 的黑膠 HARBINGER096（與 Goldsmiths College 合作，Discogs release 2919095 標 LP／Reissue，另有一筆試壓）與 2020 年奧地利 Klanggalerie 的 CD gg337（release 15999445，標 Album／Reissue／Remastered）。反面證據一併記：master 341692 的版本頁另有 2022 年 Rodent Tapes 的數位版**明確標 Unofficial Release**，依裁定第 43 條那一筆不算背書。池中實掃 seed_cards.json 全 13,913 列，Storm Bugs 零張。",
+  "risk": "年份與所釘 release-group 脫鉤：MB 的 release-group first-release-date 記 **2011**（轄下只建了 Harbinger 的黑膠再發那一筆），原捲是 1980 年 Snatch Tapes 的 tch 110。依裁定第 1 條（卡帶原盤即算原盤）與第 95 條（rgMbid 是身分鍵不是年份來源）卡單取 1980，行文不得正面斷言發行年（裁定第 18／46 條）。**本機上架時要注意**：CAA 的封面會來自 2011 年 Harbinger 盤，與 1980 年原捲的封套未必相同，比照 c-52 的做法標 coverVersionDoubt。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。",
+  "mbNote": "釘 d78484e2-a66d-405d-a5da-7270a03c1a38《A Safe Substitute》，artist-credit「Storm Bugs」，first-release-date **2011**（**卡單年份不採此值**，見 risk），primary-type Album、secondary-types 空，轄下 1 個 release：2011 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID b84bed9f-ed16-4f66-9484-d41506c924a2，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 6 個 release-group。MB 未建 1980 年原捲的 release-group，本卡以這一筆當身分鍵。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Harbinger Sound",
+  "g": "b"
+ },
+ {
+  "artist": "Nocturnal Emissions",
+  "album": "Fruiting Body",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Sterile Records",
+  "why": "Nigel Ayers 一夥人自營的 Sterile Records 出的第二張 LP，目錄號 ION2（Discogs master 26364，1981 年英國原盤兩筆 release，其中一筆是白標）。Sterile 的目錄（Discogs 廠牌條目 9411）除了自家的 LP 與錄影帶，還出過 Lustmørd 1981 年的第一捲卡帶與 1983 年的《Meridians 2》C60 合輯——那捲合輯正是英國卡帶網絡把各家串起來的形式。地位證據是奧地利 Klanggalerie 的兩次授權再發：2006 年 gg55（Discogs 標 Album／Limited Edition／Reissue／Remastered）與 2025 年 gg55-2 豪華版；master 26364 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Nocturnal Emissions 零張。",
+  "risk": "掛名有兩種寫法：Discogs 的原盤標「The Nocturnal Emissions」（帶定冠詞），MB 的 artist-credit 在本 release-group 上也是「The Nocturnal Emissions」，但藝人實體名是「Nocturnal Emissions」。卡單依裁定第 11 條採通行名「Nocturnal Emissions」，credit 變體屬查詢資料——這正是英國線最容易分裂的形狀（定冠詞有無，見 audits/pool-artist-name-splits.md），下游兩種都要試。封面 CAA release-group front 實測 404，需走 Apple 那筆：Apple 實測 gb 命中 collectionId 1891812677《Fruiting Body》，但 Apple 記的日期是 2025-11-07（Klanggalerie 豪華版的上架日，裁定第 77 條），卡單維持 1981，本機上架前要核曲數與版本。同廠的《Tissue of Lies》(EMISS 001，1981) **已由 c-65 收走**（chk-prop 的跨批去重實測），本批不收；本卡與之不重複，兩批合計本藝人 2 張、未達上限 3。",
+  "mbNote": "釘 84ae96ed-baae-47d1-accc-b76f815d54eb《Fruiting Body》，artist-credit「The Nocturnal Emissions」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 76c0b2da-a2ab-45a5-8166-889feadcb9a7，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 65 個 release-group（遠超過 artist?inc=release-groups 的 25 筆上限，裁定第 116 條）。對照組 220b7d6a-2c5a-463a-a064-6bcaafb0bb8e《Fruiting Body》(2006-06-19，**同名雙胞胎 release-group**) 刻意不釘；b2d65309-6f96-4349-b1a5-dd252ad7622e《Tissue of Lies》(1980)、7e557159-404f-3ec3-87bc-e8998732035a《Drowning in a Sea of Bliss》(1983) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Nocturnal Emissions",
+  "reissuedBy": "Klanggalerie",
+  "g": "b"
+ },
+ {
+  "artist": "Clock DVA",
+  "album": "White Souls in Black Suits",
+  "year": 1980,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Industrial Records",
+  "why": "雪菲爾的 Clock DVA 第一張作品，是 Throbbing Gristle 的 Industrial Records 少數幾捲**卡帶**發行之一，目錄號 IRC 31（Discogs master 5365，1980 年英國卡帶，錄在自家的 DVAtion Studio）。Industrial Records 的 IRC 系列是英國工業／卡帶文化的原點之一：黑膠給自家團，卡帶給外圍。地位證據是 1982 年義大利 Italian Records 的授權黑膠 EX 24（標 LP／Album／Reissue／Stereo）與 1990 年 Contempo Records 的一整批授權版本（Conte 157 黑膠、Contape 157 卡帶、CONTE 157CD），2025 年另有歐洲版再發。反面證據一併記：master 5365 的版本頁有一筆 1980 年德國「Not On Label」**明確標 Unofficial Release**，依裁定第 43 條那一筆不算背書。池中實掃 seed_cards.json 全 13,913 列，Clock DVA 已有 1 張（《Thirst》1981），本卡是第 2 張、未達藝人上限 3。",
+  "risk": "**與池中既有卡同藝人**：`Clock DVA`《Thirst》(1981) 已在池，本卡是不同碟（1980 年的卡帶、Industrial Records），盤名與年份都不同，交件前已以盤名為主鍵掃過全池、無撞卡。盤名大小寫兩說：MB 的 release-group 標題作《White Souls in Black Suits》，轄下 1980-12 那筆 release 與 Discogs 都作《White Souls In Black Suits》（In 大寫），依裁定第 50／52 條屬同一盤名的兩種寫法，命中率不受影響。封面 CAA release-group front 首次探測回 500、重測兩次皆回 200，記為 200（依裁定第 28／98 條，暫時性錯誤不得記成查無）。Apple 實測 gb 命中 collectionId 1827489310《White Souls In Black Suits》，日期 2025-12-05 是再發上架日（裁定第 77 條），卡單維持 1980。",
+  "mbNote": "釘 74009735-211d-32c4-8aa8-205ea775769f《White Souls in Black Suits》，artist-credit「Clock DVA」，first-release-date 1980-12，primary-type Album、secondary-types 空，轄下 4 個 release：1980-12 GB（status 空，標題 White Souls In Black Suits）、1980 GB Official、1990 IT Official、2025-11-07 XE Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID f1f2b1fd-e570-4ca6-9244-51a0f78ecd0a，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 58 個 release-group。池中既有的《Thirst》(1981，Fetish Records) 是另一張碟，本卡刻意不釘它。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Contempo Records",
+  "g": "b"
+ },
+ {
+  "artist": "Bladder Flask",
+  "album": "One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling",
+  "year": 1981,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Orgel Fesper Music",
+  "why": "英國 DIY 拼貼線裡最極端的一張：1981 年由 Orgel Fesper Music 發行的限量黑膠 AP162（Discogs master 120608，1981 年英國原盤 release，標 LP／Limited Edition），錄音成員與 Nurse With Wound 那一圈重疊。盤名本身有 78 個字元，是這條線「把唱片當成一個物件而不是商品」的做法的一部分。地位證據是三次授權再發：2001 年波蘭 Sonaria 的 SON 5.01（標 Album／Limited Edition／Reissue）、2022 年法國 Sonoris 的 CD SNS-21CD 與 2023 年同廠黑膠 SNS-21LP（皆標 Reissue／Remastered）；master 120608 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Bladder Flask 零張；池中 Nurse With Wound 已有 5 張，本卡是同一圈子的另一面、不與之重複。",
+  "risk": "盤名長度是本批最大的技術風險：78 字元、含 `&`，`chk-prop` 的 key 函式會壓成一長串，去重沒問題，但 Apple 的標題比對幾乎必定失效（殘餘長度遠超 8 字元的門檻）——Apple 九個 storefront 實測無命中，試聽預估 unavailable，這是可預期的。卡單的盤名採 MB／Discogs 一致的全名，不縮寫（裁定第 6／50 條）；下游若需要短形式，用「One Day I Was So Sad…」但**不得寫進卡片盤名欄**。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 615a2058-eb79-4376-b0b3-2527b69ba412《One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling》，artist-credit「Bladder Flask」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 3 個 release：1981 GB Official、2001 PL Official、2022 FR Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID fbab6273-f403-4296-b2c5-69de35e195c3，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 3 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Sonoris",
+  "g": "b"
+ },
+ {
+  "artist": "The Legendary Pink Dots",
+  "album": "Brighter Now",
+  "year": 1982,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "In Phaze Records",
+  "why": "樂團的第一張黑膠，出在英國的卡帶廠牌 In Phaze，目錄號 IPNER 1（Discogs master 43233，1982 年英國原盤，另掛 New European Recordings 與 Rough Trade 配銷）；同一份材料在同年先以 In Phaze 的 004 號 C30 卡帶出過（Discogs 廠牌條目 12679 的目錄）。In Phaze 是 1981–84 年間把卡帶與黑膠並行的典型小廠：目錄裡有 Portion Control 的 CP007 與 TMT07、Legendary Pink Dots 的三張 LP、Edward Ka-Spel 的個人作，以及 Marine Girls 的 002½ 卡帶。地位證據是多次授權再發：1986 與 1988 年比利時盤、1996 年美國盤、2009 年波蘭盤、2012 年荷蘭盤與 2025 年的全球數位（MB 轄下 8 個 release 全部標 Official）。池中實掃 seed_cards.json 全 13,913 列，The Legendary Pink Dots 零張。",
+  "risk": "本團 MB 名下 release-group 數量極大（1980 年代至今持續發片），以字串搜尋極易配到後期作品，只能靠 rgMbid 鎖定。卡帶版（In Phaze 004，1982）與黑膠版（IPNER 1，1982）同年，年份無分歧，依裁定第 1 條卡帶原盤即算原盤，兩者都指向 1982。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 179634775《Brighter Now》(1982)，試聽預估 ready。本批同藝人另收《Curse》一張，合計 2 張、未達藝人上限 3。",
+  "mbNote": "釘 907220af-102b-3e1d-b7a3-021edfff1647《Brighter Now》，artist-credit「The Legendary Pink Dots」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 8 個 release：1982 GB Official ×2、1986 BE、1988 BE、1996 US、2009 PL、2012-06-03 NL、2025-08-02 XW，全部 Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 38f0dd4f-bcbb-4e7a-afae-a41a2bbf9d74，以 release-group?artist=<MBID>&limit=100&offset= 分頁查得名下 181 個 release-group。對照組 dffdeae9-2ebd-386f-a024-e8648ea4b716《Curse》(1983) 是本批同組的另一張卡；dd0dbd2c-5ee7-46af-90a4-893e99da9484《The Curse of Marie Antoinette》(2013) 標題含「Curse」，是去重與 Apple 比對的高風險項，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Play It Again Sam",
+  "g": "b"
+ },
+ {
+  "artist": "The Legendary Pink Dots",
+  "album": "Curse",
+  "year": 1983,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "In Phaze Records",
+  "why": "In Phaze 的 PHA 2（Discogs master 43199，1983 年英國原盤，標 LP／Album／Limited Edition），是廠牌從 IPNER 編號換到 PHA 編號之後的第一張，隔年的 PHA 3《The Tower》與 PHA6《Laugh China Doll》構成同一段。地位證據是多次授權再發：1986 與 1988 年比利時盤、1996 年美國與波蘭盤、2002 年波蘭盤、2012 年荷蘭盤與 2021 年全球數位（MB 轄下 8 個 release 全部標 Official）。池中實掃 seed_cards.json 全 13,913 列，The Legendary Pink Dots 零張。",
+  "risk": "盤名《Curse》是單字通用詞（裁定第 124 條），且同藝人 2013 年另有《The Curse of Marie Antoinette》（MB dd0dbd2c），子字串比對會把兩者混同——Apple 的比對必須用「完全相等」而不是子字串（本卡實測 gb 命中的是 collectionId 179631344《Curse》(1983)，盤名完全相等，判定乾淨）。封面已實測 CAA release-group front 回 200，試聽預估 ready。本批同藝人第 2 張，未達藝人上限。",
+  "mbNote": "釘 dffdeae9-2ebd-386f-a024-e8648ea4b716《Curse》，artist-credit「The Legendary Pink Dots」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 8 個 release：1983 GB、1986 BE、1988 BE、1996 PL、1996 US、2002 PL、2012-06-03 NL、2021-07-16 XW，全部 Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 38f0dd4f-bcbb-4e7a-afae-a41a2bbf9d74（同《Brighter Now》），名下 181 個 release-group。對照組 dd0dbd2c-5ee7-46af-90a4-893e99da9484《The Curse of Marie Antoinette》(2013-10-16) **刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Play It Again Sam",
+  "g": "b"
+ },
+ {
+  "artist": "Portion Control",
+  "album": "I Staggered Mentally",
+  "year": 1982,
+  "genres": [
+   "electronic"
+  ],
+  "label": "In Phaze Records",
+  "why": "倫敦三人組的第一張黑膠，出在同一家 In Phaze，目錄號 CP007（Discogs master 336345，1982 年英國原盤兩筆：試壓與正式盤）；同廠隔年另出他們的 C35 卡帶 TMT07《Shot In The Belly》與 12 吋 EZ2《Hit The Pulse》——卡帶、12 吋、LP 三種規格同時在一家小廠的目錄裡，正是這條線的樣子。地位證據是兩次授權再發：2014–15 年美國 Dark Entries 的 DE-085（Discogs 版本頁標 LP／Album／Reissue／Remastered，含一筆試壓）與 2026 年 Artoffact 的數位版；master 336345 的五個版本零筆標 Unofficial Release。另有德國 Vinyl-On-Demand 的 VOD73《Progress Report 1980-1983》盒裝把他們的早期卡帶整理成黑膠。池中實掃 seed_cards.json 全 13,913 列，Portion Control 零張。",
+  "risk": "MB 名下另有 68139197《Simulate Sensual》(1983，Album/Compilation) 與 387a0860《Hit the Pulse》(1983，EP)，都刻意不釘；ca8f0a38《1983-86 - Hit the Pulse to Purge…》(2026) 是整理輯，同樣不釘。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 1849657751《I Staggered Mentally》(1982)，盤名完全相等，試聽預估 ready。Dark Entries 的再發是 Remastered，本機上架前要核曲數。",
+  "mbNote": "釘 b279d125-fc2d-3257-82b1-c1e399cab301《I Staggered Mentally》，artist-credit「Portion Control」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 2 個 release：1982 GB Official 與 2015-02-24 US Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID fb5d85d1-558e-409e-a69d-84d59a8b0b8e，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 42 個 release-group。對照組 68139197-f284-3bc1-9043-04563e389aae《Simulate Sensual》(1983，Album/Compilation)、387a0860-1c5e-365f-a525-6bb46cce3fdf《Hit the Pulse》(1983，EP)、ca8f0a38-4dde-4834-9c9a-6e0f6adb394b《1983-86 - Hit the Pulse to Purge…》(2026，Album/Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Dark Entries",
+  "g": "b"
+ },
+ {
+  "artist": "The Living Daylights",
+  "album": "Any Way You Want",
+  "year": 1984,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "In Phaze Records",
+  "why": "In Phaze 目錄裡最不為人知的一張 LP：PHA 4（Discogs release 1118607，1984 年英國盤），與同廠的 Legendary Pink Dots PHA 2／PHA 3 只差一兩號。這個團在 In Phaze 只留下這張 LP 與一張 12 吋《Heart Of Gold》（HAZ 5／In Phaze Haz 5，Discogs master 1035483），此後沒有任何再發——依裁定第 82 條，「完全沒有再發」不比「只有未授權再發」差，分量靠它在 In Phaze 目錄裡的位置舉證。收它的理由正是這條線的重點：同一家小廠的目錄裡，有的號後來被整個世界挖出來，有的號沒有，而兩者當年是同一批郵購貨。池中實掃 seed_cards.json 全 13,913 列，The Living Daylights 零張。",
+  "risk": "掛名撞名嚴重：Discogs 把本團標為「The Living Daylights (3)」（消歧義編號，裁定第 65 條），且「The Living Daylights」同時是 1987 年 007 電影名，任何字串搜尋都會被電影原聲帶淹沒——只能靠 rgMbid 鎖定，Apple 九個 storefront 實測無命中，試聽預估 unavailable。盤名《Any Way You Want》也是通用詞組。封面已實測 CAA release-group front 回 200。無再發代表本機做三軸時 listeners 幾乎必定查無或查到別的實體，依 §0.8 錨點制人工評分並做機器抽查（人工 5 但 listeners 高 → 極可能是查到電影原聲）。",
+  "mbNote": "釘 7ada39f4-3805-4584-a2f4-6dce400719ff《Any Way You Want》，artist-credit「The Living Daylights」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release：1984 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 79b17da9-1b0e-4d87-ab7a-36803a8f331e，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 2 個 release-group。Discogs 的 12 吋《Heart Of Gold》(1984，HAZ 5) 若在 MB 另建 release-group，一律刻意不釘（非 Album）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Attrition",
+  "album": "Death House",
+  "year": 1982,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Attrition Cassette",
+  "why": "考文垂的 Attrition 自己出的第一捲卡帶，目錄號 AC 001（Discogs master 41306，1982 年英國卡帶，錄在 Black Prince Studio），廠牌名直接就叫「Attrition Cassette」。隔年由 Adventures In Reality Recordings 以 ARR 11／AC 001 雙編號再出一次——那是英國卡帶網絡的標準做法：同一捲同時掛作者與同好廠牌的編號。地位證據是四次授權再發：1987 年 Hamster Records And Tapes 的黑膠 HAM 18（標 Reissue／Remastered）、1997 年美國 Relic 的 R 1、2007 年 Two Gods 的 8GodsCD、2013 年挪威 Sub Culture 的 SUBCULTURE 067；master 41306 的版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Attrition 零張。",
+  "risk": "盤名在各次再發之間改過：原捲作《Death House》，1987 年 Hamster 版作《Death House: ...Step Inside This Nightmare.》，1997 年起的美國版一律作《...This Death House》。依裁定第 50 條卡單採原捲的《Death House》——這**不是**裁定第 45 條那種「原盤自我同名、再發正式命名」的情況，原捲本來就有名字。Apple 實測 gb 命中 collectionId 599144665《This Death House (Remastered)》，盤名與卡單不同、殘餘含「This」與「Remastered」，屬再發改名（裁定第 91 條），試聽可用但本機上架前要核版本與曲數。封面已實測 CAA release-group front 回 200。本批同藝人另收《The Attrition of Reason》一張，合計 2 張、未達藝人上限。",
+  "mbNote": "釘 dffe38cc-1a7c-3301-95ba-be80b465081b《Death House》，artist-credit「Attrition」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 5 個 release：1982 GB Official（Death House）、1987-06 GB Official（Death House: ...Step Inside This Nightmare.）、1997 US Official（...This Death House: Incidental Musics, Volume I）、2012-07-11 XW Official、2021-04-26 XW Official（This Death House）。已回問 release-group 端點確認實體類型與標題。**release-group 標題與轄下再發的 release 標題不同**，屬裁定第 91 條的已知形狀，fix-rgmbid 報標題對不上是誤報。藝人 MBID 4ab82b62-184c-4d2e-bb7b-390a0e89dde7，以 release-group?artist=<MBID>&limit=100&offset= 分頁查得名下 83 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Hamster Records And Tapes",
+  "g": "b"
+ },
+ {
+  "artist": "Attrition",
+  "album": "The Attrition of Reason",
+  "year": 1984,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Third Mind Records",
+  "why": "從自營卡帶走到廠牌黑膠的那一步：Third Mind Records 的 TMLP 06（Discogs master 3313，1984 年英國原盤兩筆：試壓與正式盤，同樣錄在 Black Prince Studio、壓片 MPO）。Third Mind 1980 年代前期是英國工業與卡帶場景的主要出口之一（同廠 1983 年出 we·be·echo 的《Ceza·Evi》），到 1990 年代才轉型成 Front Line Assembly 那條線的北美廠牌——本卡屬前一個時期。地位證據是四次授權再發：1989 年歐洲版、1998 年美國 Relic 的 R2／ARCHIVE 2、2007 年 Two Gods 的 5GodsCD（標 Reissue／Remastered）、2013 年挪威 Sub Culture 的 SUBCULTURE 065；master 3313 的版本頁零筆標 Unofficial Release。另有德國 Vinyl-on-demand 的 VOD 90《Demonstro 1981-86》把他們的卡帶期整理成盒裝。池中實掃 seed_cards.json 全 13,913 列，Attrition 零張。",
+  "risk": "盤名與掛名高度重疊（《The Attrition of Reason》含團名 Attrition），子字串比對會把它與團名或別張碟混同，Apple 的比對必須看完整殘餘：實測 gb 命中 collectionId 596757576《The Attrition of Reason (Remastered w/Bonus Tracks)》(1984)，是加曲版，試聽可用但本機上架前要核曲數（原盤 LP 不含 bonus tracks）。封面已實測 CAA release-group front 回 200。Third Mind 在 Discogs 上有多個同名實體（2746 Third Mind Records、323840 Third Mind Music 等），舉證要指到 2746（裁定第 65 條）。本批同藝人第 2 張，未達藝人上限。",
+  "mbNote": "釘 c3be17aa-cba1-32e8-b4fb-ff885f47eb1f《The Attrition of Reason》，artist-credit「Attrition」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 5 個 release：1984 GB Official、1989 GB Official、1995 US Official、2017-09-11 XW Official、2017-09-21 AF Official（The Attrition of Reason - Redux）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4ab82b62-184c-4d2e-bb7b-390a0e89dde7（同《Death House》），名下 83 個 release-group。轄下 2017 年的「- Redux」版屬同一 release-group，不另釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Two Gods",
+  "g": "b"
+ },
+ {
+  "artist": "we·be·echo",
+  "album": "Ceza·Evi",
+  "year": 1983,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Cause For Concern",
+  "why": "英國工業／卡帶場景裡少見的單人計畫，唯一一張同期 LP 出在 Cause For Concern，目錄號 CFC 023（Discogs master 332085，1983 年英國原盤）；同年另有一個編號 WE·BE 001 的自製特別版（Discogs 上兩筆，標 Numbered／Special Edition，廠牌欄寫 Not On Label（We Be Echo Self-released））——一張碟同時有小廠版與自製版，正是這條線的流通方式。地位證據是三次授權再發：2008 年加拿大 DCCD 的 DCCD002（標 Album／Reissue／Remastered）、2020 年 SoundOv 的 SOV001（標 Album／Limited Edition／Numbered／Reissue）與 2022 年英國 Cold Spring 的 CSR311CD《Ceza Evi - Compleat Edition》；master 332085 的版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，we·be·echo 零張。",
+  "risk": "**掛名與盤名都用了間隔號 U+00B7**（we·be·echo／Ceza·Evi），這是本批唯一一組非 ASCII 標點的卡。`chk-prop` 只擋非 ASCII 連字號（U+2010–2015 那一組），間隔號不在反模式裡，實測不觸發標記；但下游的字串比對要同時試三種寫法：`we·be·echo`／`we be echo`／`webeecho`，盤名同理試 `Ceza·Evi`／`Ceza Evi`／`CezaEvi`。掛名與盤名依裁定第 6／50 條採 MB 實體與原盤封面的寫法，不改成 ASCII。Apple 實測 gb 命中 collectionId 1631384060《Ceza Evi - Compleat Edition》(2022)，那是 Cold Spring 的**擴充版**，盤名帶尾綴、曲數與原盤不同，試聽可用但本機上架前必須核版本（裁定第 77 條的 reissueTitle 形狀）。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 4b86379d-5e48-4dde-9e38-8c97a299c9cd《Ceza·Evi》，artist-credit「we·be·echo」，first-release-date 1983-06-06，primary-type Album、secondary-types 空，轄下 1 個 release：1983-06-06 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6c5571b-9930-4d33-b2ee-56611e47cf40，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 7 個 release-group。Discogs 上的《Ceza Evil Unleashed And Revisited》(2008)、《Ceza Evi Unleashed & Revisited (25th Anniversary Reissue)》(2009) 與《Ceza Evi - Compleat Edition》(2022) 若在 MB 另建 release-group，皆屬另一個編輯版本，一律刻意不釘（裁定第 84／104 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "We Be Echo",
+  "reissuedBy": "Cold Spring",
+  "g": "b"
+ },
+ {
+  "artist": "Bourbonese Qualk",
+  "album": "Laughing Afternoon",
+  "year": 1983,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Recloose Organisation",
+  "why": "倫敦的 Bourbonese Qualk 自己開的 Recloose Organisation 出的第一張全長 LP，目錄號 LOOSE 004（Discogs master 1553665，1983 年英國原盤，錄在自家的 Recloose Studios）。Recloose 的目錄（Discogs 廠牌條目 13231）從 1982 年的 LOOSE 001《Sudden Departure》合輯開始，一路做到 1986 年，中間出過 Muslimgauze 的第一張 LP（LOOSE 008）、義大利與其他國家寄來的 C60 三捲盒裝（LOOSE 003）、以及 1984／1986 兩捲《Live Series》合輯卡帶——這是英國郵購廠牌裡少數同時做黑膠、卡帶與錄影帶的一家。地位證據是三次授權再發：2019 年 Platform 23／Mannequin 的黑膠 PLA030／MNQ111（標 Album／Reissue／Remastered）、同年的數位版與 2019 年奧地利 Klanggalerie 的 GG312；master 1553665 的四個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Bourbonese Qualk 零張。",
+  "risk": "MB 名下另有 91250879《Bourbonese Qualk》(1987) 是**自我同名**專輯、671d86dd《Bourbonese Qualk 1983-1987》(2015) 是合輯，兩筆都刻意不釘；自我同名那張依 §1 屬高風險，本批不收。廠牌名 Recloose 在 Discogs 上另有 1233602「The Recloose Organisation Live Series」與 17089「New International Recordings」兩個相關實體，舉證要指到 13231（裁定第 65 條）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。 **跨批**：c-65 已收同藝人的《The Spike》(1985，Dossier)，兩批合計 2 張、未達藝人上限 3；chk-prop 的跨批去重實測本卡無撞卡。同廠的《Hope》(1984，LOOSE 007) 為控制單一藝人張數本批不收。",
+  "mbNote": "釘 72712c4f-2a30-45a7-8d8c-4759c4cb98ab《Laughing Afternoon》，artist-credit「Bourbonese Qualk」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 2 個 release：1983 GB Official 與 2018-04-09 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 253b0433-075d-475e-806d-793c6ea8ea45，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 20 個 release-group。對照組 a07ff804-7687-44c4-a359-91ed6a4fef24《Hope》(1984)、ff7656f0-2302-46c0-9277-7c9e9d340c86《Preparing for Power》(1986)、91250879-b265-4edf-9196-1412245a58d8《Bourbonese Qualk》(1987，自我同名)、671d86dd-927e-4bfc-b274-d7aeb0d03ee2《Bourbonese Qualk 1983-1987》(2015，合輯) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Mannequin",
+  "g": "b"
+ },
+ {
+  "artist": "Muslimgauze",
+  "album": "Buddhist on Fire",
+  "year": 1984,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Recloose Organisation",
+  "why": "曼徹斯特的 Bryn Jones 以 Muslimgauze 名義出的第一張 LP，出在 Bourbonese Qualk 的 Recloose Organisation，目錄號 LOOSE 008（Discogs master 18884，1984 年英國原盤，另有 1985 年一筆試壓）——同一家廠牌的 LOOSE 004／007 是 Bourbonese Qualk 自己的兩張，兩人是郵購網絡裡的直接對口。Jones 在此之前以 E.g Oblique Graph 的名義在同廠出過 1982 年的 LOOSE 002 七吋。地位證據是 2016 年德國 Vinyl-on-demand 的授權黑膠再發 VOD121.4RE（Discogs 版本頁標 LP／Album／Limited Edition／Reissue），以及同廠 2014 年的盒裝《Chasing The Shadow Of Bryn Jones 1983-1988》（master 684425）；master 18884 的三個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Muslimgauze 零張。",
+  "risk": "Muslimgauze 名下的 release-group 數量在 MB 上極大（Jones 生前與身後合計數百張），以字串搜尋幾乎必然配到別張碟，只能靠 rgMbid 鎖定；`release-group?artist=<MBID>&limit=100&offset=` 必須分頁，`artist?inc=release-groups` 的 25 筆上限會直接造成假查無（裁定第 116 條）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。年份 1984 由 MB（1984-12）與 Discogs 原盤一致支持，1985 年那筆是試壓。 **跨批**：c-65 已收同藝人的《Kabul》(1983，Product Kinematograph)，兩批合計 2 張、未達藝人上限 3；chk-prop 的跨批去重實測本卡無撞卡。",
+  "mbNote": "釘 6de72edc-0577-3fec-921a-b40e7a2a0d6e《Buddhist on Fire》，artist-credit「Muslimgauze」，first-release-date 1984-12，primary-type Album、secondary-types 空，轄下 2 個 release：1984-12 GB Official 與 2016-01-20 DE Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 06fc1189-d7cd-4344-b09a-51cd82cfefe5，以 release-group?artist=<MBID>&limit=100&offset= 分頁查得名下 225 個 release-group（遠超 25 筆上限，裁定第 116 條）。E.g Oblique Graph 名義的作品屬另一個藝人實體，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Vinyl-on-demand",
+  "g": "b"
+ },
+ {
+  "artist": "Zoviet France",
+  "album": "Norsch",
+  "year": 1983,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Red Rhino Records",
+  "why": "紐卡索的 :zoviet*france: 第一張作品，出在約克的 Red Rhino，目錄號 RED 23（Discogs master 26349，1983 年英國原盤，12 吋 45 轉）。這條線值得收的是它的物件形式：這個團的早期發行以手工封套聞名（麻布、瀝青紙、金屬片），每一份都不完全一樣，等於把 DIY 的做法推到包裝本身。Red Rhino 同時是英格蘭東北獨立配銷網 The Cartel 的一角，本批 b 組的 Hula《Cut From Inside》也在同廠。地位證據是 1990 年 Charrm 的授權 CD 再發 CHARRMCD3（Discogs 版本頁標 Reissue）；master 26349 的兩個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Zoviet France 與 :zoviet*france: 兩種寫法都零張；c-65 已收同團的《Mohnomishe》(1983)，本卡與之不重複。",
+  "risk": "**掛名依裁定：改掛 `Zoviet France`**。MB 實體名是 `:zoviet*france:`（前後冒號、中間星號），Discogs 上另有「: Zoviet : France :」與「:zoviet-france:」兩種寫法。但 c-65（先到的批次）已經以 `Zoviet France` 收過同團的《Mohnomishe》，若本批照 MB 實體名收，卡池會出現兩個指同一個對象的鍵（裁定第 49／115 條的分裂形狀，且第 29 條明文禁止讓兩個寫法各佔一個鍵）。依先到先得（裁定第 119 條）採 c-65 的寫法，MB 實體名只寫進 mbNote 供下游查詢；`queryAlias` 留空，因為卡片掛名本身就是外部服務認得的形式（裁定第 25 條）。原盤是 12 吋 45 轉四曲，MB 判為 Album，卡單照 MB 走。封面已實測 CAA release-group front 回 200；Apple 九個 storefront（gb／us／de／nl／fr／be／ca／au／jp）實測無命中，試聽預估 unavailable。**同團的《Mohnomishe》(1983) 已被 c-65 收走，本批不收**（chk-prop 的跨批去重實測撞卡，已剔除）。",
+  "mbNote": "釘 78979602-d027-3b6f-88e7-4d28fc9f42e3《Norsch》，artist-credit「:zoviet*france:」（**MB 實體名，與卡片掛名刻意不同，見 risk**），first-release-date 1983，primary-type Album、secondary-types 空，轄下 2 個 release：1983 GB Official 與 1990 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 491244a7-ed6c-4fe5-a19a-0170a014f7ea，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse 得名下 53 個 release-group（超過 artist?inc=release-groups 的 25 筆上限，裁定第 116 條）。對照組 c589f887-45a9-4dae-8c95-aaf76b3464ea《:$oviet:France: / Norsch》(2019-09，Album/Compilation，二合一) 依裁定第 129 條刻意不釘；a3199567-4191-38e4-95bb-1316bb6de090《Mohnomishe》(1983) 已由 c-65 收走，本批刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Charrm",
+  "g": "b"
+ },
+ {
+  "artist": "Sema",
+  "album": "Notes From Underground",
+  "year": 1982,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Le Rey Records",
+  "why": "Robert Haigh 以 Sema 名義做的第一張 LP，出在他自己的 Le Rey Records（Discogs release 1783811，1982 年英國原盤，母帶 Ellie Jay (Productions) Ltd.）。Le Rey 的目錄極短，Haigh 後來在 Nurse With Wound 的 United Dairies 也出過作品，1990 年代改以 Omni Trio 之名做 drum'n'bass——同一個人橫跨兩個完全不同的地下網絡，而 Sema 這一段幾乎沒有被 drum'n'bass 那邊的敘述提過。地位證據是 2012 年德國 Vinyl-on-demand 的授權盒裝《Time Will Say Nothing 1982-1984》（Discogs release 3688749，四張黑膠、標 Box Set／Compilation／Limited Edition／Numbered），把 Sema 全部的作品一次整理出來。反面證據一併記：Discogs 上另有一筆年份不明的卡帶《Notes From Underground / Extract From Rosa Silber》**明確標 Unofficial Release**，依裁定第 43 條那一筆不算背書，且它是二合一（裁定第 129 條），身分不釘、封面不用、試聽不採。池中實掃 seed_cards.json 全 13,913 列，Sema 零張。",
+  "risk": "掛名「Sema」是四字母通用詞（裁定第 124 條），Discogs 搜尋實測會回 Christopher Young《Pet Sematary》這種完全不相干的結果——這正是裁定第 122 條「回了完全不相干的東西」那種假象在 Discogs 側的版本，必須以廠牌名 Le Rey 一起查才定得住。盤名《Notes From Underground》是杜斯妥也夫斯基小說的英譯名，池中另有 Thelonious Monk《Underground》與 Goran Bregović《Underground》兩張，以盤名為主鍵掃全池時會被標記，逐筆核對後確認是不同碟（不同藝人、不同盤名）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。",
+  "mbNote": "釘 28177306-07a3-4a66-a71b-5d74473c439a《Notes From Underground》，artist-credit「Sema」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 28b927d3-fe49-4216-ad26-d380d403159a，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 6 個 release-group。Robert Haigh 與 Omni Trio 是另外的藝人實體，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Vinyl-on-demand",
+  "g": "b"
+ },
+ {
+  "artist": "Metgumbnerbone",
+  "album": "Ligeliahorn",
+  "year": 1983,
+  "genres": [
+   "electronic",
+   "folk"
+  ],
+  "label": "A-Mission Records",
+  "why": "利物浦一帶的集體，唯一一張同期 LP 出在 A-Mission Records，目錄號 REV 13:18（Discogs master 631766，1983 年英國原盤，經 SRT Productions 壓片）——目錄號本身是《啟示錄》13 章 18 節的引用。這條線在英國卡帶／工業場景裡屬於用田野採集、金屬與骨頭當樂器的那一支，與同期的電子路線並行。地位證據是多次授權再發：2002 年 Ploughmyth International 的《Ligeliahorn (Redux)》、2024 年奧地利 Infinite Fog Productions 的兩筆（含數位與限量實體）、2025 年德國 Minimalkombinat 的 mk175 三筆（標 LP／Album／Reissue／Remastered，含試壓與白標）、2026 年義大利 Old Europa Cafe 的 OECD 366；master 631766 的版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Metgumbnerbone 零張。",
+  "risk": "MB 名下另有 d4e4d0be《Ligeliahorn / Dreun》(2010，Album/Compilation) 是**二合一**，依裁定第 129 條身分不釘、封面不用、試聽不採；2002 年的《Ligeliahorn (Redux)》是同一 release-group 轄下的 release，不另釘。掛名是自造詞，去重與搜尋反而乾淨。轄下 2024 AT 與 2026 IT 兩筆 release 的 status 欄為空（不是 Official 也不是別的），不影響身分判定，但引為授權背書時要另查 Discogs 的版本頁（裁定第 66 條：兩邊打架時採 Discogs、且該筆不採為背書）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront 實測無命中，試聽預估 unavailable。",
+  "mbNote": "釘 ad97c0ef-03fe-41a5-bcc3-54ef841d6dec《Ligeliahorn》，artist-credit「Metgumbnerbone」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 4 個 release：1983 GB Official、2002 GB Official（Ligeliahorn (Redux)）、2024-03-01 AT（status 空）、2026 IT（status 空）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 14d2e21a-e0cf-4134-9ab2-93cd11c7a03d，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 10 個 release-group。對照組 d4e4d0be-a25e-48ae-aa4b-65bf42569566《Ligeliahorn / Dreun》(2010，二合一) **刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Minimalkombinat",
+  "g": "b"
+ },
+ {
+  "artist": "Hula",
+  "album": "Cut From Inside",
+  "year": 1983,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "Red Rhino Records",
+  "why": "雪菲爾的 Hula 第一張 LP，出在約克的 Red Rhino，目錄號 RED 35（Discogs master 1463145，1983 年英國原盤兩筆：試壓與正式盤，版本欄標 Special Cut）。Red Rhino 是英格蘭東北獨立配銷網 The Cartel 的一角，同年也出 Zoviet France 的《Norsch》與《Mohnomishe》——本批 b 組的 Zoviet France 就在同一家。Hula 這條線是雪菲爾在 Cabaret Voltaire 與 Clock DVA 之後的下一層，當年靠 Red Rhino 的郵購與獨立店面流通，之後幾乎沒有被任何一份雪菲爾場景敘述提到。地位證據是 2018 年奧地利 Klanggalerie 的授權 CD 再發 gg272（Discogs 版本頁標 Album／Reissue／Remastered）；master 1463145 的三個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Hula 零張；本批 a 組的《Bouquet of Steel》(1980) 是同一座城市早三年的場景合輯，兩張可互相對照。",
+  "risk": "掛名「Hula」是通用詞（裁定第 124 條），Discogs 上標為「Hula (2)」的消歧義編號，舉證要指到它（裁定第 65 條）；字串搜尋會撈到大量夏威夷音樂與健身類條目，只能靠 rgMbid 鎖定。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 120918842《Cut from Inside》(1983)，盤名大小寫差一個字母（from／From，裁定第 50／52 條的微差，正規化後相等），試聽預估 ready，本機上架前要核版本（Apple 那筆可能是 Klanggalerie 的 remaster）。",
+  "mbNote": "釘 b2270b9b-bcfd-4c46-8dc4-7f73c3bc8a42《Cut From Inside》，artist-credit「Hula」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 2 個 release：1983 GB Official 與 2018-11-30 AT Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 5b699afc-08ba-4bb9-aeee-f8107f98fd97，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 18 個 release-group。同藝人的其餘作品刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Klanggalerie",
+  "g": "b"
+ },
+ {
+  "artist": "Danielle Dax",
+  "album": "Pop-Eyes",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "The Initial Recording Company",
+  "why": "Lemon Kittens 解散後 Danielle Dax 的第一張個人作，出在 The Initial Recording Company，目錄號 IRC 009（Discogs master 56720，1983 年英國原盤兩筆：白標與正式盤）。這張與本批 a 組的 Lemon Kittens《We Buy a Hammer for Daddy》(1980，United Dairies) 是同一條線的前後段：從 Steven Stapleton 的自營廠牌走到一家郵購小廠，兩張都由她包辦封面美術。地位證據是四次授權再發：1985 年 Awesome Records (2) 的 AOR 2（標 LP／Album／Reissue，含一筆試壓）、1992 年 Biter Of Thorpe 的 BOT 131-01 CD（與同廠重發 Lemon Kittens 那張是同一批）、2012 年日本 Birdsong 的 HYCA-2057；master 56720 的八個版本零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Danielle Dax 零張。",
+  "risk": "盤名《Pop-Eyes》帶連字號，是 ASCII 的 U+002D，不觸發 `chk-prop` 的非 ASCII 連字號反模式（實測無標記）；但下游要同時試 `Pop-Eyes`／`Pop Eyes`／`Popeyes` 三種寫法。與本批 a 組的 Lemon Kittens 是同一個人不同掛名，**兩者不合併、藝人張數分開計**（同裁定第 49 條對灰野敬二／不失者的處理：樂團不是個人的別名）。封面已實測 CAA release-group front 回 200；Apple 九個 storefront（gb／us／de／nl／fr／be／ca／au／jp）實測無命中，試聽預估 unavailable。Awesome Records 在 Discogs 上有括號序號「(2)」，舉證要指到它（裁定第 65 條）。",
+  "mbNote": "釘 81891912-85d1-3874-9579-f53252c4f73f《Pop-Eyes》，artist-credit「Danielle Dax」，first-release-date 1983-04-22，primary-type Album、secondary-types 空，轄下 3 個 release：1983-04-22 GB Official、1985-10 GB Official、1993-11-18 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID f76e8c74-ed01-49fd-89d4-fba41d900c49，以 release-group?artist=<MBID>&limit=100&offset= 查得名下 20 個 release-group。對照組 ab26b79f-530c-3d6f-baa3-9e5d298e0e04《Jesus Egg That Wept》(1984)、4b5d7c2f-6791-3bd8-a7f0-094e2ce7de6b《The Chemical Wedding》(1987-10，Album/Compilation)、6629cc5f-f416-3f66-b85d-0b9e04a0fa3c《Up Amongst the Golden Spires》(1986，Album/Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Biter Of Thorpe",
+  "g": "b"
+ }
+]
