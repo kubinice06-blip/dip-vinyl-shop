@@ -45,7 +45,7 @@
    "electronic"
   ],
   "label": "Sublime Records",
-  "why": "Sublime Records 1995 年的 SBLCD5009（Discogs release 119349），是廠牌少數的雙掛名合作盤，兩位當事人各自都還有獨走的線：Okihide 隔年在 Syzygy 出《A boy in picca season》（SZY008CD），Sublime 這一側則同年出了 Ringo《Plantation》與 Prism《Metronome Melody》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1119412137，掛名字串「AKIO / OKIHIDE」），CAA 也有 release-group front——這在本批四十餘張裡是少數兩者都有的。池中實掃：Akio 與 Okihide 兩個掛名名下皆 0 張。",
+  "why": "Sublime Records 1995 年的 SBLCD5009（Discogs release 119349），是廠牌少數的雙掛名合作盤，兩位當事人各自都還有獨走的線：Okihide 隔年在 Syzygy 出《A boy in picca season》（SZY008CD），Sublime 這一側則同年出了 Ringo《Plantation》與 Prism《Metronome Melody》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1119412137，掛名字串「AKIO / OKIHIDE」），CAA release-group front 亦實測 200。池中實掃：Akio 與 Okihide 兩個掛名名下皆 0 張。",
   "risk": "掛名是一組斜線串接的雙人字串，Discogs 寫「Akio* / Okihide*」（帶星號的別名標記）、MB artist-credit 寫「AKIO/OKIHIDE」（無空格）、Apple 寫「AKIO / OKIHIDE」（有空格）——三種寫法在去符號正規化後會坍成同一個鍵，但任何逐字元比對的下游都會分歧，queryAlias 已把三種都填上。第 139 條的空格陷阱在此適用：用「AKIOOKIHIDE」去 MB 搜尋會回一個乾淨的空結果。以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Kenny Barron《Scratch》、The Crusaders《Scratch》），皆為不同的碟。",
   "mbNote": "釘 release-group b30f9e18-1d4f-4265-90b3-c1dd0bc2d43d《SCRATCHES》，artist-credit「AKIO/OKIHIDE」，first-release-date 1995-11-20，primary-type Album，secondary-types 空，轄下 1 個 release：1995-11-20／JP／Official。卡片盤名採 Title Case《Scratches》，MB 實體全大寫是日本 CD 目錄的排版慣例，大小寫在外部服務會被正規化（第 50／52 條）。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -103,7 +103,7 @@
   ],
   "label": "Syzygy Records",
   "why": "Syzygy 從限量黑膠轉進 CD 的第一張（SZY008CD，Discogs release 104166），編號緊接在 SZY007LP 之後。同一位當事人前一年才在 Sublime 出過雙掛名的《Scratches》（SBLCD5009），兩家廠牌在 1995–96 年之間共用了同一批人——這是本批選件的主軸：不是挖一家廠牌，是挖一張目錄表上互相搭橋的名字。池中實掃：Okihide 名下 0 張（本批另收其雙掛名的《Scratches》，兩者 artist 字串不同）。",
-  "risk": "MB 實體標題是全小寫的《A boy in picca season》，卡片採 Title Case，大小寫在外部服務會被正規化（第 50／52 條）。Discogs 掛名寫「Okihide*」（帶別名星號），MB 寫「Okihide」。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落，是本批風險最高的幾張之一。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "risk": "MB 實體標題是全小寫的《A boy in picca season》，卡片採 Title Case，大小寫在外部服務會被正規化（第 50／52 條）。Discogs 掛名寫「Okihide*」（帶別名星號），MB 寫「Okihide」。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
   "mbNote": "釘 release-group 36cfcb96-cec4-445a-98b7-c670fca95da7《A boy in picca season》，artist-credit「Okihide」，first-release-date 1996-08，primary-type Album，secondary-types 空，轄下 1 個 release：1996-08／JP／Official。已回問 release-group 端點確認型別與標題。與本批 b30f9e18（AKIO/OKIHIDE《SCRATCHES》）是不同的 artist-credit，兩張互不為對照組。",
   "releaseType": "Album",
   "exceptionReason": "",
@@ -140,7 +140,7 @@
    "electronic"
   ],
   "label": "Syzygy Records",
-  "why": "Syzygy 的 SZY012CD（Discogs release 325500），廠牌 CD 期最後幾張之一。地位證據是它在二十五年後被重新出版：MB 該 release-group 轄下另有兩筆 2022-11-17 的 release，一筆 FR／Official、一筆 XW／Official（數位），也就是這張 1997 年的日本 CD 在 2022 年由法國一側重新發行。這在本批的 Syzygy 五張裡是唯一一張有後續版本的。池中實掃：Takayuki Shiraishi 名下 0 張。",
+  "why": "Syzygy 的 SZY012CD（Discogs release 325500），廠牌 CD 期最後幾張之一。地位證據是它在二十五年後被重新出版：MB 該 release-group 轄下另有兩筆 2022-11-17 的 release，一筆 FR／Official、一筆 XW／Official（數位），也就是這張 1997 年的日本 CD 在 2022 年由法國一側重新發行。這是它在 Syzygy 目錄裡與其他幾筆最明顯的差別。池中實掃：Takayuki Shiraishi 名下 0 張。",
   "risk": "掛名是常見的日本姓名羅馬拼音，MB 只有羅馬寫法、沒有漢字實體名；第 49 條的跨文字系統撞卡在此看不見，日後若有人以「白石隆之」之類的漢字建卡，字串比對不會相等。盤名《Photon》是單一常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。CAA release-group front 實測 200，封面有著落；Apple 三店面皆未命中，試聽預估拿不到。2022 年那兩筆 release 的曲目是否與 1997 原盤相同未查證，行文不得斷言。",
   "mbNote": "釘 release-group d7a37819-e8d8-4a46-a07c-6739a14b3ab9《Photon》，artist-credit「Takayuki Shiraishi」，first-release-date 1997，primary-type Album，secondary-types 空，轄下 3 個 release：1997／JP／Official、2022-11-17／FR／Official、2022-11-17／XW／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -178,7 +178,7 @@
    "electronic"
   ],
   "label": "Frogman Records",
-  "why": "Frogman 的 FROG012CD（Discogs release 91617）。Kagami 是廠牌目錄裡編號跨度最長的一個掛名：1995 年的 Y EP（frog 3f2ec713 那筆）、1996 年 Beatbang EP、1998 年本張、2000 年《The Repaired Sequencer》、2001–02 的四張 EP，一路排到 2003 年的《STAR ARTS》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 205394630，掛名字串「KAGAMI」），且 CAA release-group front 實測 200——封面與試聽在本批四十餘張裡同時有著落的少數之一。池中實掃：Kagami 名下 0 張。",
+  "why": "Frogman 的 FROG012CD（Discogs release 91617）。Kagami 是廠牌目錄裡編號跨度最長的一個掛名：1995 年的 Y EP（frog 3f2ec713 那筆）、1996 年 Beatbang EP、1998 年本張、2000 年《The Repaired Sequencer》、2001–02 的四張 EP，一路排到 2003 年的《STAR ARTS》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 205394630，掛名字串「KAGAMI」），且 CAA release-group front 實測 200，封面與試聽兩邊都有著落。池中實掃：Kagami 名下 0 張。",
   "risk": "掛名「Kagami」去符號後的鍵是六個字母，與池中既有的短掛名不相撞，但它是常見的日文姓氏羅馬拼音（鏡／各務），第 49 條的跨文字系統撞卡在此看不見。Apple 的掛名字串是全大寫「KAGAMI」，已填 queryAlias。同一位當事人 2000 年的《The Repaired Sequencer》Discogs 標「CD, MiniAlbum, Mixed」而 MB 登記為 Album，兩邊型別相左，本批不收那張。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
   "mbNote": "釘 release-group c41ab607-3aef-4150-84e2-a85ec2eb027e《The Broken Sequencer》，artist-credit「Kagami」，first-release-date 1998，primary-type Album，secondary-types 空，轄下 1 個 release：1998／JP／Official。**對照組 e3e56eae-800d-4554-94bd-76dc145913cd《The Repaired Sequencer》（2000-06-06，primary-type Album）刻意不釘**——盤名只差一個字、Discogs 標 MiniAlbum 且標 Mixed，下游以盤名比對極易抓錯。同掛名的 af62843b《The Repaired Sequencer EP》、d75e541c《The Romantic Storm EP》等 EP 亦不釘。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -292,7 +292,7 @@
    "electronic"
   ],
   "label": "Soup-Disk",
-  "why": "Soup-Disk 的 soup 012CD（Discogs release 198636），是本批四十餘張裡流通最遠的一張：MB 該 release-group 轄下除了 1999-08 的日本原盤，另有 2003-10-27 的 GB／Official 與 2016-12-13 的 XW／Official 兩筆，也就是它先被英國一側重發、十七年後又出了全球數位版。Apple Music 日本店面亦有整張原盤（collectionId 969911983，掛名字串「riow arai」）。池中實掃：Riow Arai 名下 0 張（本批同組另收其 1998 年《Circuit '72》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "why": "Soup-Disk 的 soup 012CD（Discogs release 198636），是這條線流通得最遠的一筆：MB 該 release-group 轄下除了 1999-08 的日本原盤，另有 2003-10-27 的 GB／Official 與 2016-12-13 的 XW／Official 兩筆，也就是它先被英國一側重發、十七年後又出了全球數位版。Apple Music 日本店面亦有整張原盤（collectionId 969911983，掛名字串「riow arai」）。池中實掃：Riow Arai 名下 0 張（本批同組另收其 1998 年《Circuit '72》，兩張合計 2 張，在同一藝人上限 3 張內）。",
   "risk": "Apple 與部分再發把掛名寫成全小寫「riow arai」，MB 實體是「Riow Arai」，大小寫在外部服務會被正規化但逐字元比對會分歧。2003 年的英國版與 2016 年的數位版曲目是否與 1999 原盤相同未查證，行文不得斷言軌數或曲序（第 141 條）。盤名《Mind Edit》兩個字皆為英文常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。CAA release-group front 實測 200、Apple 命中在 jp 店面，封面與試聽兩邊都有著落。",
   "mbNote": "釘 release-group 4dde2586-f578-389d-9ef0-02d58f83c976《Mind Edit》，artist-credit「Riow Arai」，first-release-date 1999-08，primary-type Album，secondary-types 空，轄下 3 個 release：1999-08／JP／Official、2003-10-27／GB／Official、2016-12-13／XW／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -331,7 +331,7 @@
   ],
   "label": "Frogman Records",
   "why": "Frogman 的 frog bf015cd（Discogs release 1073359），編號中間的 bf 是廠牌 Break-Fast 系列的縮寫——那條系列 1998 年出過合輯 frog 008cd《Break-Fast, First-Break》（Discogs release 458484），本張是它延伸出的個人專輯。Frogman 從 1997 年的 Kagami & Friends 起就把海外投稿收進目錄，本張的當事人是這條路上最遠的一位。池中實掃：Andrei Zueff 名下 0 張。",
-  "risk": "掛名在 Discogs 上寫「Andrei Zueff*」（帶別名星號），西里爾原名未在 MB 建立實體；第 49 條的跨文字系統撞卡在此看不見，日後若有人以西里爾寫法建卡不會相等。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落，是本批風險最高的幾張之一。盤名《Kitchen Works》以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "risk": "掛名在 Discogs 上寫「Andrei Zueff*」（帶別名星號），西里爾原名未在 MB 建立實體；第 49 條的跨文字系統撞卡在此看不見，日後若有人以西里爾寫法建卡不會相等。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。盤名《Kitchen Works》以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
   "mbNote": "釘 release-group 768133b8-e897-49aa-b700-0d5e5e8e79e5《Kitchen Works》，artist-credit「Andrei Zueff」，first-release-date 1999-08，primary-type Album，secondary-types 空，轄下 1 個 release：1999-08／JP／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
   "exceptionReason": "",

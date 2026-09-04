@@ -45,7 +45,7 @@
    "electronic"
   ],
   "label": "Transonic Records",
-  "why": "Transonic 創始年的 TRS-25005（Discogs release 401962）。這張是本批少數有明確二次出版紀錄的碟：MB 該 release-group 轄下除 1994 年的日本原盤，另有兩筆 2021-10-06 的 JP／Official release，Apple Music 日本店面上架的版本標題帶「DELUXE EDITION」（collectionId 1588849258）——同一張 1994 年的日本 CD 在二十七年後被整理成加值版重出。池中實掃：Mushroom Now! 名下 0 張。",
+  "why": "Transonic 創始年的 TRS-25005（Discogs release 401962）。這張有明確的二次出版紀錄：MB 該 release-group 轄下除 1994 年的日本原盤，另有兩筆 2021-10-06 的 JP／Official release，Apple Music 日本店面上架的版本標題帶「DELUXE EDITION」（collectionId 1588849258）——同一張 1994 年的日本 CD 在二十七年後被整理成加值版重出。池中實掃：Mushroom Now! 名下 0 張。",
   "risk": "MB 實體標題《TRAVELLER’S LIGHT》用的是 U+2019 彎引號，卡片採 ASCII 直撇號，逐字元比對的下游會分歧（c-79 三補與 c-81 第 6 條的同形異碼形狀）；掛名末尾的驚嘆號在去符號正規化後會消失。2021 年那兩筆 release 標「DELUXE EDITION」，曲目與 1994 原盤是否相同未查證，行文不得斷言軌數，也不得拿 Apple 的軌數反推原盤（第 141 條）。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Chris Stapleton《Traveller》2015），為不同的碟。",
   "mbNote": "釘 release-group 0734ffd3-0ad9-4620-aaf2-39486c72d485《TRAVELLER’S LIGHT》，artist-credit「MUSHROOM NOW!」，first-release-date 1994，primary-type Album，secondary-types 空，轄下 3 個 release：1994／JP／Official 與兩筆 2021-10-06／JP／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -64,7 +64,7 @@
    "electronic"
   ],
   "label": "Transonic Records",
-  "why": "Transonic 創始年的 TRS-25006（Discogs release 318679）。地位證據是它整張留在 Apple Music 日本店面上（collectionId 449098282，掛名字串「INTERFERON」、盤名「SEANCE-ROOM MUSIC」）——本批四十餘張裡只有十來張有這個待遇，而它是最早的一張 1994 年原盤。廠牌同年另出四張 TRS-250xx 與兩張合輯（《Transonic 2 (Feedback)》《Transonic 3 (Range)》），本張是那份創始名單的一員。池中實掃：Interferon 名下 0 張。",
+  "why": "Transonic 創始年的 TRS-25006（Discogs release 318679）。地位證據是它整張留在 Apple Music 日本店面上（collectionId 449098282，掛名字串「INTERFERON」、盤名「SEANCE-ROOM MUSIC」）——這是廠牌創始年那批碟裡少數還留在數位店面上的一張。廠牌同年另出四張 TRS-250xx 與兩張合輯（《Transonic 2 (Feedback)》《Transonic 3 (Range)》），本張是那份創始名單的一員。池中實掃：Interferon 名下 0 張。",
   "risk": "MB 實體標題《SEANCE‐ROOM MUSIC》中間那一橫是 U+2010 連字號，不是 ASCII hyphen——`chk-prop.mjs` 對 U+2010 有反模式檢查，卡片必須採 ASCII 寫法，MB 原字串已填 queryAlias。掛名「Interferon」是生物學名詞，以單一藝人名查詢會撈到大量無關結果。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Carole King《Music》、Playboi Carti《MUSIC》），皆為不同的碟。",
   "mbNote": "釘 release-group f2c30922-4c34-4edb-8c29-e31d62bc1d92《SEANCE‐ROOM MUSIC》（MB 原字串含 U+2010），artist-credit「INTERFERON」，first-release-date 1994-10，primary-type Album，secondary-types 空，轄下 1 個 release：1994-10／JP／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -273,7 +273,7 @@
    "electronic"
   ],
   "label": "Zero Gravity",
-  "why": "Zero Gravity 的 ZGV-012（Discogs release 322554），編號緊接在 Masaaki Kikuchi《Formula》之後。這個掛名在 Discogs 與 MB 上都只有這一筆條目。CAA release-group front 實測 200——在本批四十餘張只有二十來張有封面的情形下，這是少數自帶封面的碟。池中實掃：Trio Rakant 名下 0 張。",
+  "why": "Zero Gravity 的 ZGV-012（Discogs release 322554），編號緊接在 Masaaki Kikuchi《Formula》之後。這個掛名在 Discogs 與 MB 上都只有這一筆條目。CAA release-group front 實測 200，封面有著落。池中實掃：Trio Rakant 名下 0 張。",
   "risk": "掛名以「Trio」起頭，池中爵士側有大量「... Trio」的掛名，以單一藝人名做寬鬆比對會誤命中；盤名《Kokorosususu》是羅馬拼音的自造字串，任何斷詞變體（Kokoro Sususu、Kokoro-Sususu）都會查無而不回錯誤碼（第 139 條）。MB 掛名全大寫「TRIO RAKANT」，卡片採 Title Case。Apple 三店面皆未命中，試聽預估拿不到。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
   "mbNote": "釘 release-group a8b3fb92-e005-4211-975f-b9501235f12b《Kokorosususu》，artist-credit「TRIO RAKANT」，first-release-date 1997-03，primary-type Album，secondary-types 空，轄下 1 個 release：1997-03／JP／Official。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
@@ -370,7 +370,7 @@
   ],
   "label": "Daisyworld Discs",
   "why": "細野晴臣 的 Daisyworld Discs 的 SYDW-0006（Discogs release 387339），廠牌開張兩年內的第六個編號。MB 該 release-group 轄下有兩筆 release：1997-08-21／JP／Official 與 1997／US／Official——一張日本小廠的碟同年在美國也發了。地位證據另有 Apple Music 日本店面的整張原盤（collectionId 296501444，掛名字串寫成片假名「ワールドスタンダード」）。同掛名 1999 年再出 RDW-2002《Mountain Ballad》。池中實掃：World Standard 名下 0 張。",
-  "risk": "掛名跨兩種文字系統：MB 實體全大寫羅馬「WORLD STANDARD」、Apple 寫片假名「ワールドスタンダード」，第 49 條的跨文字系統撞卡在此看不見，兩種寫法已填 queryAlias。盤名《Country Gazette》與 1970 年代美國同名 bluegrass 樂團的團名完全相同，任何以盤名查外部服務的下游都會撈到那個樂團的唱片——這是本批盤名撞名最嚴重的一張。曲風欄取 folk／pop 而非 electronic：本張在廠牌目錄裡與同期的 HAT、Datacide 屬不同路數，但實際編制未查證，行文不得描述樂器。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "risk": "掛名跨兩種文字系統：MB 實體全大寫羅馬「WORLD STANDARD」、Apple 寫片假名「ワールドスタンダード」，第 49 條的跨文字系統撞卡在此看不見，兩種寫法已填 queryAlias。盤名《Country Gazette》與 1970 年代美國同名 bluegrass 樂團的團名完全相同，任何以盤名查外部服務的下游都會撈到那個樂團的唱片——盤名撞名的風險比本卡其他欄位都高。曲風欄取 folk／pop 而非 electronic：本張在廠牌目錄裡與同期的 HAT、Datacide 屬不同路數，但實際編制未查證，行文不得描述樂器。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
   "mbNote": "釘 release-group 50b2a568-92f4-3035-94bb-7b6ad9b9bf76《COUNTRY GAZETTE》，artist-credit「WORLD STANDARD」，first-release-date 1997-08-21，primary-type Album，secondary-types 空，轄下 2 個 release：1997-08-21／JP／Official 與 1997／US／Official。同掛名的 e94283b9《Mountain Ballad》（1999-12-05）與 d2eb775b《Jump for Joy》（2002）本批不收，**刻意不釘**。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
   "exceptionReason": "",
@@ -426,7 +426,7 @@
    "electronic"
   ],
   "label": "Transonic Records",
-  "why": "Transonic 的 TRS-25025（Discogs release 1020829，條目盤名寫成「Music For Myxomycetes = 変形菌のための音楽」）。這是本批唯一一位池中已有卡的掛名：池中實掃 Inoyama Land 名下 1 張（《Danzindan-Pojidon》1983），本張與該卡相距十五年、廠牌完全不同——1980 年代初的那張出自另一個世代的日本環境音樂線，本張則是 1990 年代地下廠牌把同一組人請回來出的新碟。地位證據是 MB 該 release-group 轄下另有一筆 2018-05-23／JP／Official release，且 Apple Music 日本店面上架的版本標題帶「[Deluxe Edition]」（collectionId 1387412460）。加上本卡與同期 TRS-25028《1984 Pithecanthropus》，這位在池中將達 2 張，仍在同一藝人上限 3 張內。",
+  "why": "Transonic 的 TRS-25025（Discogs release 1020829，條目盤名寫成「Music For Myxomycetes = 変形菌のための音楽」）。池中實掃 Inoyama Land 名下 1 張（《Danzindan-Pojidon》1983），本張與該卡相距十五年、廠牌完全不同——1980 年代初的那張出自另一個世代的日本環境音樂線，本張則是 1990 年代地下廠牌把同一組人請回來出的新碟。地位證據是 MB 該 release-group 轄下另有一筆 2018-05-23／JP／Official release，且 Apple Music 日本店面上架的版本標題帶「[Deluxe Edition]」（collectionId 1387412460）。加上本卡與同期 TRS-25028《1984 Pithecanthropus》，這位在池中將達 2 張，仍在同一藝人上限 3 張內。",
   "risk": "掛名的空格擺法在兩邊不一致：MB 實體是一個字的「INOYAMALAND」、池中既有卡與 Discogs 是兩個字的「Inoyama Land」——這是第 139 條的正面形狀，卡片採池中既有寫法以保持同一藝人可被數到，MB 寫法已填 queryAlias。2018 年那筆標 Deluxe Edition，曲目與 1998 原盤是否相同未查證，行文不得斷言軌數，也不得拿 Apple 的軌數反推原盤（第 141 條）。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Carole King《Music》、Playboi Carti《MUSIC》），皆為不同的碟。",
   "mbNote": "釘 release-group e6798f9f-aab0-4f6a-b6ec-575569f13090《Music for Myxomycetes》，artist-credit「INOYAMALAND」，first-release-date 1998-08-05，primary-type Album，secondary-types 空，轄下 2 個 release：1998-08-05／JP／Official 與 2018-05-23／JP／Official。同掛名的 0a9bea5e-129c-4a0c-b35f-efb36ea0ab09《1984 PITHECANTHROPUS》（1999-01，primary-type Album）本批不收，**刻意不釘**——它的盤名帶 1984 而 first-release-date 是 1999，年份與內容的關係未查證。已回問 release-group 端點確認型別與標題。",
   "releaseType": "Album",
