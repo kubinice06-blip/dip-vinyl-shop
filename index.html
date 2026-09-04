@@ -1878,8 +1878,8 @@
     const album = btn.dataset.album || '';
     const resultEl = btn.closest('.quiz-result');
     let cover = resultEl?.querySelector('.quiz-result-cover')?.getAttribute('src') || '';
-    // reel 結果是 IG iframe、沒有 .quiz-result-cover img → 改用結果物件的 _coverUrl
-    //（reel 封面或 Spotify/Bandcamp 封面都存在這，且涵蓋 render 後才非同步抓到的封面）
+    // 沒有 .quiz-result-cover img 就改用結果物件的 _coverUrl（涵蓋 render 後才非同步抓到的封面；
+    // reel 自 2026-09-04 起也有正式封面了，只有連 Spotify 都查不到的那幾張才會退回 IG 嵌入）
     if (!cover && lastQuizResult && (lastQuizResult.artist || '') === artist && (lastQuizResult.album || '') === album) {
       cover = lastQuizResult._coverUrl || '';
     }
@@ -3675,8 +3675,15 @@
 
       if (rand < 0.30 && freshReels.length) {
         const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
-        if (qzAnim) { qzAnim.state.fail = true; await qzAnim.done; }   // IG 嵌入無封面可翻，跳過動畫
-        await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true });
+        // reel 也走正式卡那條資產鏈：封面、串流連結、固定試聽、三軸都用現成資料（見 reelAssetsOf）
+        const reelFields = await reelAssetsOf(pick);
+        if (qzAnim) {
+          if (reelFields._coverUrl) { qzAnim.state.cover = reelFields._coverUrl; qzAnim.state.ready = true; }
+          else qzAnim.state.fail = true;   // 連 Spotify 都查不到封面才跳過動畫（結果頁會退回 IG 嵌入）
+          await qzAnim.done;
+        }
+        await showQuizResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _streaming: true, ...reelFields });
+        if (reelFields._coverUrl) daHandoffTo('#quizContent');
         const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
         const reason = await getAiReason(pick.artist, pick.title || '', qaText, reasonEl);
         lastQuizResult.reason = reason;
@@ -3854,20 +3861,22 @@ ${seenList}
     } else if (result.type === 'reel') {
       const reel = quizReels.find(r => r.id === result.id);
       if (reel) {
-        const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
-        const shortcode = scMatch?.[2];
-        if (shortcode) {
-          coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
+        // 店主 2026-07-23 裁定：抽到 IG reel 顯示的是**專輯封面**，不是 IG 縮圖。
+        // 封面在抽卡流程就對回卡池備妥（reelAssetsOf）；真的一張都查不到才退回 IG 嵌入。
+        if (!result._coverUrl && reel.coverUrl) result._coverUrl = reel.coverUrl;
+        if (result._coverUrl) {
+          const reelLink = result._spotifyUrl || result._bandcampUrl || result._ytUrl;
+          coverHtml = reelLink
+            ? `<a class="quiz-result-cover-link" href="${reelLink}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
+            : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
+        } else {
+          const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
+          const shortcode = scMatch?.[2];
+          if (shortcode) {
+            coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
+          }
         }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
-        // Use coverUrl field from Firestore if present, else try Spotify
-        if (reel.coverUrl) {
-          result._coverUrl = reel.coverUrl;
-        } else {
-          fetchSpotifyCover(reel.artist, reel.title || '').then(({ imageUrl }) => {
-            if (imageUrl) result._coverUrl = imageUrl;
-          });
-        }
       }
     } else {
       // _coverUrl/_spotifyUrl pre-populated by Spotify Recommendations flow
@@ -3909,9 +3918,14 @@ ${seenList}
       }
     }
 
+    // reel 顯示的藝人／專輯是店主寫 IG 時的寫法，凡是拿名字去查現成資料的地方
+    //（年份、三軸、試聽）一律改用對回卡池的正式卡名；一般卡 _card 是空的，行為不變。
+    const qzDataArtist = result._card?.artist || result.artist;
+    const qzDataAlbum = result._card?.album || result.album;
     // 試聽來源：與類型挑片同一條規則——固定連結優先，人工標記無來源的就不顯示試聽鈕。
-    // reel／店內商品不是專輯卡，沒有試聽。
-    const qzCanPreview = result.type !== 'reel' && result.type !== 'stock' && !!result.artist && !!result.album;
+    // reel 對得回卡池就跟一般卡一樣有試聽；店內商品不是專輯卡，沒有。
+    const qzCanPreview = result.type !== 'stock' && !!result.artist && !!result.album
+      && (result.type !== 'reel' || !!result._card);
     // 「專輯介紹」小按鈕：只要有藝人＋專輯就給。店內商品／IG reel 的介紹是店家自己寫的，
     // 那是另一回事，這顆按鈕拿的一律是事實型專輯簡介（見 openAlbumIntro）。
     const qzHasIntro = !!result.artist && !!result.album;
@@ -3937,7 +3951,7 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        <div class="quiz-result-year">${releaseYearOf(result.artist, result.album) || ''}</div>
+        <div class="quiz-result-year">${releaseYearOf(qzDataArtist, qzDataAlbum) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
@@ -3958,7 +3972,7 @@ ${seenList}
       saveToHistory({ type: 'quiz', artist: result.artist, album: result.album, reason: result.reason, coverUrl: result._coverUrl })
         .then(() => renderHistorySection(document.getElementById('quizContent')));
     }
-    renderAlbumRatings(result.artist, result.album, document.getElementById('quizContent'))
+    renderAlbumRatings(qzDataArtist, qzDataAlbum, document.getElementById('quizContent'))
       .then(r => paintResultTier('quizContent', result, r));
     resolveBandcampBtn(result.artist, result.album, document.getElementById('quizContent'));
     // 抽到即自動試聽，與類型挑片一致；串流中的結果等文字跑完再播，免得邊打字邊出聲。
@@ -4616,6 +4630,84 @@ ${seenList}
     return _cardPoolPromise;
   }
 
+  // ── IG reel 也當正式卡看待：封面／三軸／試聽全走現成資料 ────────────────
+  // 店主 2026-07-23 的裁定是「封面 介紹 三屬性等等全都使用現有 kv 資料庫內容 包含試聽播放」，
+  // 當時只做了機率與介紹，封面漏掉了，結果頁一直拿 IG 嵌入當封面（2026-09-04 補做）。
+  // 難處在對名字：Firestore 的 reel 文件沒有 coverUrl 欄，藝人欄是店主寫 IG 時的寫法
+  //（「菊地雅章 Quintet」「Eno / Wobble」「森下登喜彥 水木しげる」），與卡池的正式卡名對不起來。
+  // 作法：專輯名收候選、藝人名當裁判，藝人對不上就回 null 不硬猜——同名專輯很容易撞到別人的盤
+  //（reel 的 Attica Blues 是 90 年代英國 trip-hop 團，卡池的同名專輯是 Archie Shepp 的；
+  //  張婷雅《Promise》會撞到 Sade）。線上 36 篇實測對回 30 張、零誤判，其餘退 Spotify。
+  const _reelNorm = s => String(s || '').toLowerCase().normalize('NFKC')
+    .replace(/[\s\u3000]/g, '')
+    .replace(/[\u2018\u2019\u201c\u201d'"·・,，.。:：;；!！?？&＆_\-()（）\[\]「」『』\/／]/g, '');
+  const _reelToks = s => (String(s).toLowerCase().match(/[a-z0-9]{4,}/g) || []);
+  const _reelCjk = s => {
+    const m = String(s).match(/[\u3040-\u30ff\u4e00-\u9fff]/g) || [];
+    const out = [];
+    for (let i = 0; i + 1 < m.length; i++) out.push(m[i] + m[i + 1]);
+    return out;   // 兩字一組：「森下登喜彥 水木しげる」與「森下登喜彦」靠這個對上
+  };
+  // 0＝完全對不上；3＝一模一樣、2＝一方包含另一方、1＝共用一個英數詞或一組兩字漢字
+  function _reelNameScore(a, b) {
+    const x = _reelNorm(a), y = _reelNorm(b);
+    if (!x || !y) return 0;
+    if (x === y) return 3;
+    if (x.includes(y) || y.includes(x)) return 2;
+    if (_reelToks(a).some(t => _reelToks(b).includes(t))) return 1;
+    if (_reelCjk(a).some(t => _reelCjk(b).includes(t))) return 1;
+    return 0;
+  }
+  const _reelCardCache = new Map();
+  async function reelCardOf(reel) {
+    const key = `${reel.artist}||${reel.title || ''}`;
+    if (_reelCardCache.has(key)) return _reelCardCache.get(key);
+    let found = null;
+    try {
+      const pool = await loadCardPool();
+      const rows = pool.cards.concat(
+        ...Object.values(pool.apex).map(list => list.map(([artist, album]) => ({ artist, album })))
+      );
+      const want = _reelNorm(reel.title);
+      let best = 0;
+      if (want.length >= 2) {
+        for (const c of rows) {
+          const ak = _reelNorm(c.album);
+          let as = 0;
+          if (ak === want) as = 3;
+          else if (ak.length >= 4 && want.length >= 4 && (ak.includes(want) || want.includes(ak))) as = 2;
+          else if (_reelToks(reel.title).filter(t => _reelToks(c.album).includes(t)).length >= 2) as = 1;
+          if (!as) continue;                                  // 專輯名先過
+          const ns = _reelNameScore(reel.artist, c.artist);
+          if (!ns) continue;                                  // 藝人名再過，缺一不可
+          if (as * 10 + ns > best) { best = as * 10 + ns; found = c; }
+        }
+      }
+    } catch (e) {}
+    _reelCardCache.set(key, found);
+    return found;
+  }
+  // 抽到 reel 時一次備齊封面／串流連結／固定試聽／三軸。對得回卡池就用正式卡名查
+  //（card_catalog 校正圖、album_overrides、KV 都以正式卡名為鍵），對不上就退用 IG 的寫法查
+  // Spotify；連 Spotify 都查不到才讓結果頁退回 IG 嵌入。顯示的藝人／專輯仍維持店主的寫法，
+  // 卡冊的「看 IG 貼文」連結靠它對回 reel（reelUrlFor），改掉會斷。
+  async function reelAssetsOf(reel) {
+    const card = await reelCardOf(reel);
+    const idn = card || { artist: reel.artist, album: reel.title || '' };
+    const a = await resolveCardAssets(idn.artist, idn.album).catch(() => ({}));
+    return {
+      _card: card ? { artist: card.artist, album: card.album } : null,
+      _coverUrl: a.coverUrl || null,
+      _spotifyUrl: a.spotifyUrl || '', _bandcampUrl: a.bandcampUrl || '', _ytUrl: a.ytUrl || '',
+      _previewUrl: a.previewUrl || '', _previewUnavailable: !!a.previewUnavailable,
+      ratings: (card && card.classic) ? {
+        classic: a.ov?.classic || card.classic,
+        obscurity: a.ov?.obscurity || card.obscurity,
+        accessibility: a.ov?.accessibility || card.accessibility,
+      } : null,
+    };
+  }
+
   // 三個品味錨點的「深度」：名單前半是深挖名字、後半是主流名字；
   // 錨點越靠前半，抽卡越往高冷門度偏。純本地計算，取代原本的 AI 提示詞錨點。
   function gpDeepness() {
@@ -5200,7 +5292,8 @@ ${seenList}
     gpPreviewManual = manual;
     audioDebugSnapshot(manual ? 'play(manual)' : 'play(auto)');
     void window.DipPlayer.playAlbum({
-      artist: r.artist, album: r.album, prefer: 'itunes',
+      // reel 的 r.artist 是店主寫 IG 的寫法，找 iTunes 要用對回卡池的正式卡名（_card）
+      artist: r._card?.artist || r.artist, album: r._card?.album || r.album, prefer: 'itunes',
       previewUrl: r._previewUrl || '',
       cover: r._coverUrl || '',
       fixedOnly: !!r._previewUrl || !!r._previewUnavailable,
@@ -5355,8 +5448,15 @@ ${seenList}
     // IG reel 10%：介紹用 IG 貼文內文（店家自寫），沒有才退 /album-desc
     if (rand < 0.20 && freshReels.length) {
       const pick = freshReels[Math.floor(Math.random() * freshReels.length)];
-      if (gpAnim) { gpAnim.state.fail = true; await gpAnim.done; }   // IG 嵌入無封面可翻，跳過動畫
-      await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _matchNote: gpStockNote ? `IG 介紹過、也對上你選類型的一張` : '', _streaming: true });
+      // reel 也走正式卡那條資產鏈：封面、串流連結、固定試聽、三軸都用現成資料（見 reelAssetsOf）
+      const reelFields = await reelAssetsOf(pick);
+      if (gpAnim) {
+        if (reelFields._coverUrl) { gpAnim.state.cover = reelFields._coverUrl; gpAnim.state.ready = true; }
+        else gpAnim.state.fail = true;   // 連 Spotify 都查不到封面才跳過動畫（結果頁會退回 IG 嵌入）
+        await gpAnim.done;
+      }
+      await showGpResult({ type: 'reel', id: pick.id, artist: pick.artist, album: pick.title || '', reason: '', _matchNote: gpStockNote ? `IG 介紹過、也對上你選類型的一張` : '', _streaming: true, ...reelFields });
+      if (reelFields._coverUrl) daHandoffTo('#artistContent');
       const reason = await fillGpDesc({ artist: pick.artist, album: pick.title || '' }, null, pick.description || '');
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
@@ -5444,13 +5544,22 @@ ${seenList}
     } else if (result.type === 'reel') {
       const reel = quizReels.find(r => r.id === result.id);
       if (reel) {
-        const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
-        const shortcode = scMatch?.[2];
-        if (shortcode) {
-          coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
+        // 店主 2026-07-23 裁定：抽到 IG reel 顯示的是**專輯封面**，不是 IG 縮圖。
+        // 封面在抽卡流程就對回卡池備妥（reelAssetsOf）；真的一張都查不到才退回 IG 嵌入。
+        if (!result._coverUrl && reel.coverUrl) result._coverUrl = reel.coverUrl;
+        if (result._coverUrl) {
+          const reelLink = result._spotifyUrl || result._bandcampUrl || result._ytUrl;
+          coverHtml = reelLink
+            ? `<a class="quiz-result-cover-link" href="${reelLink}" target="_blank" rel="noopener"><img class="quiz-result-cover" src="${result._coverUrl}" alt="" style="cursor:pointer;"></a>`
+            : `<img class="quiz-result-cover" src="${result._coverUrl}" alt="">`;
+        } else {
+          const scMatch = reel.url.match(/instagram\.com\/(p|reel|tv)\/([^\/\?]+)/);
+          const shortcode = scMatch?.[2];
+          if (shortcode) {
+            coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
+          }
         }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
-        if (reel.coverUrl) result._coverUrl = reel.coverUrl;
       }
     } else {
       if (!result._coverUrl && !result._streaming) {
@@ -5486,6 +5595,12 @@ ${seenList}
       </div>`;
     }
 
+    // reel 顯示的藝人／專輯是店主寫 IG 時的寫法，凡是拿名字去查現成資料的地方
+    //（年份、三軸、試聽）一律改用對回卡池的正式卡名；一般卡 _card 是空的，行為不變。
+    const gpDataArtist = result._card?.artist || result.artist;
+    const gpDataAlbum = result._card?.album || result.album;
+    // 試聽：一般卡都給，reel 對得回卡池也給（用正式卡名找 iTunes），店內商品不是專輯卡沒有
+    const gpCanPreview = !result.type || (result.type === 'reel' && !!result._card);
     lastGpResult = result;
     recordDrawnCard(result);
     gpSeenAlbums.add(`${result.artist}||${result.album || ''}`.toLowerCase());
@@ -5498,10 +5613,10 @@ ${seenList}
         ${coverHtml}
         <div class="quiz-result-artist">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
-        <div class="quiz-result-year">${releaseYearOf(result.artist, result.album) || ''}</div>
+        <div class="quiz-result-year">${releaseYearOf(gpDataArtist, gpDataAlbum) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
-        ${result.type ? '' : gpPreviewBtnHtml(result)}
+        ${gpCanPreview ? gpPreviewBtnHtml(result) : ''}
         ${result._matchNote ? `<div class="gp-match-note">${result._matchNote}</div>` : ''}
         <div class="quiz-result-reason">${result._streaming ? '介紹載入中…' : (result.reason || '')}</div>
         ${ctaHtml}
@@ -5526,13 +5641,13 @@ ${seenList}
       if (slot) slot.innerHTML = albumRatingsHtml(result.ratings, special);
       paintResultTier(gpResultHost, result, null);
     } else {
-      renderAlbumRatings(result.artist, result.album, document.getElementById(gpResultHost), special)
+      renderAlbumRatings(gpDataArtist, gpDataAlbum, document.getElementById(gpResultHost), special)
         .then(r => { if (lastGpResult === result) paintResultTier(gpResultHost, result, r); });
     }
     resolveBandcampBtn(result.artist, result.album, document.getElementById(gpResultHost));
     // 抽到即自動播放試聽（跟對戰一樣）。沒開自動播放就安靜停下，圖示停在 ▶，
     // 玩家可以按試聽鈕聽這一張，或按開關讓之後每張都自動播。
-    if (!result.type && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
+    if (gpCanPreview && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
   }
 
   async function shareGpResult() {

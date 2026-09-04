@@ -1,5 +1,62 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-04（五）｜dip-vinyl-shop｜抽到 IG reel 顯示專輯封面（補做 07-23 的裁定）
+
+店主：「我之前說要修改，如果抽到 ig reels 的話也要顯示專輯封面而不是 ig 縮圖，不知為何沒改。」
+回查工作階段紀錄，原始指示在 **2026-07-23**：「5% stock、15% reel 兩條改成各 10%／
+**封面 介紹 三屬性等等全都使用現有 kv 資料庫內容 包含試聽播放**」。當時只做了機率與介紹，
+封面／三軸／試聽三件沒做——`showQuizResult`／`showGpResult` 的 reel 分支一直把
+**IG 嵌入 iframe 當封面**，抽卡動畫也因為「沒有封面可翻」被 `state.fail` 直接跳過。
+
+## 為什麼一直沒被補上
+
+程式裡本來有一條 `if (reel.coverUrl)` 的路，看起來像已經支援封面——但**線上 Firestore 的
+`reels` 集合根本沒有 `coverUrl` 這個欄位**（36 篇實查，欄位只有 mood／title／id／url／
+genre／artist／description），所以那條永遠是 false，另一條 `fetchSpotifyCover` 又只寫進
+`result._coverUrl` 供收藏用，不會回頭改畫面。
+
+## 作法：把 reel 對回卡池的正式卡
+
+c-35／c-36 已經把這些 reel 專輯都上架成正式卡了，所以缺的只是「名字對不起來」：
+reel 的藝人欄是店主寫 IG 時的寫法（「菊地雅章 Quintet」「Eno / Wobble」「JAGATARA」
+「森下登喜彥 水木しげる」），卡池用的是正式卡名。新增 `reelCardOf()`：
+**專輯名收候選（完全相同／互相包含／兩個以上共同英數詞）、藝人名當裁判**
+（相同 3、包含 2、共用英數詞或一組兩字漢字 1），**藝人對不上就回 null 不硬猜**。
+
+這條「不硬猜」是必要的，同名專輯很容易撞到別人的盤：reel 的 Attica Blues 是 90 年代英國
+trip-hop 團的同名作，卡池那張是 **Archie Shepp** 的《Attica Blues》；張婷雅的《Promise》
+會撞到 **Sade**。線上 36 篇實測**對回 30 張、零誤判**，剩下 6 張（モア、洞氤、Attica Blues、
+JAGATARA それから、The Trinity《Smile》、Mal Waldron）退用 IG 的寫法查 Spotify，
+再查不到才退回原本的 IG 嵌入——所以最壞情況也只是回到現況，不會變成空白框。
+
+對回卡池之後，`reelAssetsOf()` 走的就是一般卡那條資產鏈（`resolveCardAssets`）：
+card_catalog 校正圖 → worker KV 的 Spotify/Bandcamp/YT，外加 album_overrides 的固定試聽，
+三軸直接用 seed 卡自帶數值。**顯示的藝人／專輯仍維持店主的 IG 寫法**——卡冊的
+「看 IG 貼文」連結是靠 `reelUrlFor(artist, album)` 逐字比對回 reel 的，改掉會斷；
+只有「拿名字去查現成資料」的地方（年份、三軸、試聽找 iTunes）改用正式卡名（`result._card`）。
+
+順帶跟著回來的三件：**抽卡翻牌動畫**（有封面就不再跳過）、**三軸星等**、**試聽鍵與自動播放**。
+店內在售（stock）維持不變，它本來就顯示商品實拍照、也沒有試聽。
+
+## 也順手釐清
+
+**心情選歌目前抽不到 reel**：`submitQuiz` 預設走 `submitQuizOffline`（離線心情池，另一個
+工作階段在做的雲端題庫線），reel 分支在 `submitQuizOnline` 裡。這次兩條路都改了，
+gameConfig 把 quiz 切回 online 時行為一致。實際會抽到 reel 的是類型挑片／直接來一張各 10%。
+
+## 主要檔案與驗證
+
+`index.html`（新增 `reelCardOf`／`reelAssetsOf`／`_reelNameScore`；`submitQuiz` 與
+`submitGenrePick` 的 reel 分支；`showQuizResult`／`showGpResult` 的 reel 封面與試聽開關；
+`gpPlayPreview` 改用正式卡名）。
+
+- 對照器直接從 `index.html` 切出來跑真正上線的那份程式碼：36 篇 → 30 張、零誤判。
+- 本機 8903 用臨時副本把亂數釘死在 reel 分支實抽：直接來一張抽到《田園に死す》
+  （封面 CAA、年份 1974、三軸五星列、IG 內文簡介、iframe 0 個）、《妖怪幻想》同樣有封面；
+  心情選歌強制走 online 抽到 De La Soul《AOI: Mosaic Thump》（封面 500px、年份 2000、
+  試聽鍵出現、「在 Instagram 上看」保留）。抽到沒對上的《洞氤》如設計退回 IG 嵌入。
+- 四段內嵌 script 全數 `node --check` 通過。localhost 只有 worker CORS 的預期錯誤。
+
 ### 2026-09-04（五）｜dip-vinyl-shop｜Reggae / Dub 節點名改回原樣
 
 店主裁示：**`world/reggae` 維持原本的「Reggae / Dub」，不要改成「Reggae / 加勒比」。**
