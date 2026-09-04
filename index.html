@@ -3875,6 +3875,10 @@ ${seenList}
           if (shortcode) {
             coverHtml = `<iframe src="https://www.instagram.com/p/${shortcode}/embed/captioned/?cr=1&v=14&wp=480" width="100%" height="560" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="border:none;display:block;margin-bottom:20px;"></iframe>`;
           }
+          // 畫面維持 IG 嵌入，但背景仍查一張給「收進唱片櫃」用（與 2026-09-04 之前同行為）
+          fetchSpotifyCover(reel.artist, reel.title || '').then(({ imageUrl }) => {
+            if (imageUrl) result._coverUrl = imageUrl;
+          });
         }
         ctaHtml = `<a class="quiz-result-cta" href="${reel.url}" target="_blank" rel="noopener">在 Instagram 上看 →</a>`;
       }
@@ -4658,6 +4662,11 @@ ${seenList}
     if (_reelCjk(a).some(t => _reelCjk(b).includes(t))) return 1;
     return 0;
   }
+  // 規則猜不出來、但人工確認過是同一張的：羅馬字對假名這種寫法差太遠，靠比對永遠對不上，
+  // 也不該讓程式亂猜（同名專輯撞車的代價太大）。直接列出來，key 是 reel 的「藝人|專輯」。
+  const REEL_CARD_ALIAS = {
+    'JAGATARA|それから': ['じゃがたら', 'それから'],
+  };
   const _reelCardCache = new Map();
   async function reelCardOf(reel) {
     const key = `${reel.artist}||${reel.title || ''}`;
@@ -4665,10 +4674,13 @@ ${seenList}
     let found = null;
     try {
       const pool = await loadCardPool();
+      const alias = REEL_CARD_ALIAS[`${reel.artist}|${reel.title || ''}`];
       const rows = pool.cards.concat(
         ...Object.values(pool.apex).map(list => list.map(([artist, album]) => ({ artist, album })))
       );
-      const want = _reelNorm(reel.title);
+      const wantTitle = alias ? alias[1] : (reel.title || '');
+      const wantArtist = alias ? alias[0] : reel.artist;
+      const want = _reelNorm(wantTitle);
       let best = 0;
       if (want.length >= 2) {
         for (const c of rows) {
@@ -4676,9 +4688,9 @@ ${seenList}
           let as = 0;
           if (ak === want) as = 3;
           else if (ak.length >= 4 && want.length >= 4 && (ak.includes(want) || want.includes(ak))) as = 2;
-          else if (_reelToks(reel.title).filter(t => _reelToks(c.album).includes(t)).length >= 2) as = 1;
+          else if (_reelToks(wantTitle).filter(t => _reelToks(c.album).includes(t)).length >= 2) as = 1;
           if (!as) continue;                                  // 專輯名先過
-          const ns = _reelNameScore(reel.artist, c.artist);
+          const ns = _reelNameScore(wantArtist, c.artist);
           if (!ns) continue;                                  // 藝人名再過，缺一不可
           if (as * 10 + ns > best) { best = as * 10 + ns; found = c; }
         }
@@ -4687,20 +4699,24 @@ ${seenList}
     _reelCardCache.set(key, found);
     return found;
   }
-  // 抽到 reel 時一次備齊封面／串流連結／固定試聽／三軸。對得回卡池就用正式卡名查
-  //（card_catalog 校正圖、album_overrides、KV 都以正式卡名為鍵），對不上就退用 IG 的寫法查
-  // Spotify；連 Spotify 都查不到才讓結果頁退回 IG 嵌入。顯示的藝人／專輯仍維持店主的寫法，
-  // 卡冊的「看 IG 貼文」連結靠它對回 reel（reelUrlFor），改掉會斷。
+  // 抽到 reel 時一次備齊封面／串流連結／固定試聽／三軸，用的是正式卡名
+  //（card_catalog 校正圖、album_overrides、KV 都以正式卡名為鍵）。
+  // 顯示的藝人／專輯仍維持店主的 IG 寫法，卡冊的「看 IG 貼文」靠 reelUrlFor 逐字比對，改掉會斷。
+  //
+  // **對不回卡池就什麼都不給，畫面維持 IG 嵌入**：拿 IG 上的寫法去查 Spotify 會撈到別張盤——
+  // The Trinity《Smile》查回來的是別人的《When The Smile Dissapears》。寧可顯示 IG 影片，
+  // 也不要掛一張錯的封面。這五張（モア、洞氤、Attica Blues、The Trinity、Mal Waldron）
+  // 是 c-36 當時因缺封面／規則退回而沒上架的，等卡片補上就會自動接回來。
   async function reelAssetsOf(reel) {
     const card = await reelCardOf(reel);
-    const idn = card || { artist: reel.artist, album: reel.title || '' };
-    const a = await resolveCardAssets(idn.artist, idn.album).catch(() => ({}));
+    if (!card) return { _card: null };
+    const a = await resolveCardAssets(card.artist, card.album).catch(() => ({}));
     return {
-      _card: card ? { artist: card.artist, album: card.album } : null,
+      _card: { artist: card.artist, album: card.album },
       _coverUrl: a.coverUrl || null,
       _spotifyUrl: a.spotifyUrl || '', _bandcampUrl: a.bandcampUrl || '', _ytUrl: a.ytUrl || '',
       _previewUrl: a.previewUrl || '', _previewUnavailable: !!a.previewUnavailable,
-      ratings: (card && card.classic) ? {
+      ratings: card.classic ? {
         classic: a.ov?.classic || card.classic,
         obscurity: a.ov?.obscurity || card.obscurity,
         accessibility: a.ov?.accessibility || card.accessibility,

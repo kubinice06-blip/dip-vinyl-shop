@@ -46,9 +46,28 @@ reel 的藝人欄是店主寫 IG 時的寫法（「菊地雅章 Quintet」「Eno
 
 這條「不硬猜」是必要的，同名專輯很容易撞到別人的盤：reel 的 Attica Blues 是 90 年代英國
 trip-hop 團的同名作，卡池那張是 **Archie Shepp** 的《Attica Blues》；張婷雅的《Promise》
-會撞到 **Sade**。線上 36 篇實測**對回 30 張、零誤判**，剩下 6 張（モア、洞氤、Attica Blues、
-JAGATARA それから、The Trinity《Smile》、Mal Waldron）退用 IG 的寫法查 Spotify，
-再查不到才退回原本的 IG 嵌入——所以最壞情況也只是回到現況，不會變成空白框。
+會撞到 **Sade**。線上 36 篇實測**對回 31 張、零誤判**。
+
+## 對不上的那 5 張，以及我一開始講錯的話
+
+店主質疑「怎麼可能查不到，之前全都建立成專輯卡了」——**這個質疑是對的，我第一版只確認
+「用這個名字對不上卡池」就下結論，沒回頭查上架紀錄**。查完的實情：
+
+- **JAGATARA《それから》確實有卡**（c-36 上架，卡名是假名「じゃがたら」）。羅馬字對假名
+  靠規則永遠對不上，也不該讓程式猜，所以加了一張**人工確認過的對照表** `REEL_CARD_ALIAS`
+  （目前 1 筆）。這是唯一一張「有卡卻沒對上」的。
+- 其餘 4 張**當初就沒上架**，c-36 的紀錄寫得很清楚：Mal Waldron《Mal: Live 4 to 1》、
+  Kenny Drew & Red Mitchell《洞氤》、The Trinity《Smile》三張**有身分有簡介、缺封面**，
+  留給店主後台上傳；Attica Blues 同名盤因「自我同名卡必須有固定試聽」退回；
+  モア《モア》MB 與外部皆查無（店主原文自陳「連歌手是誰都無從得知」）而退回。
+  **這四張補上卡片之後，前台會自動接回來，不用再改程式。**
+  （附帶一提：自我同名卡的規則 2026-09-04 已放寬成 rgMbid／§1 舉證等同試聽，
+  worker 查 Attica Blues 同名盤有 rgMbid `68dc1f49`，值得重跑一次上架。）
+
+**Spotify 退路已經移除**：原本對不上就退用 IG 的寫法查 Spotify，實測發現這會掛錯封面——
+The Trinity《Smile》查回來的是別人的《When The Smile Dissapears》。現在的規則是
+**對不回卡池就什麼都不給、畫面維持 IG 嵌入**（等同 2026-09-04 之前的樣子），
+寧可放 IG 影片也不要一張錯的封面。收進唱片櫃時仍會背景查一張封面，與舊行為相同。
 
 對回卡池之後，`reelAssetsOf()` 走的就是一般卡那條資產鏈（`resolveCardAssets`）：
 card_catalog 校正圖 → worker KV 的 Spotify/Bandcamp/YT，外加 album_overrides 的固定試聽，
@@ -71,7 +90,9 @@ gameConfig 把 quiz 切回 online 時行為一致。實際會抽到 reel 的是�
 `submitGenrePick` 的 reel 分支；`showQuizResult`／`showGpResult` 的 reel 封面與試聽開關；
 `gpPlayPreview` 改用正式卡名）。
 
-- 對照器直接從 `index.html` 切出來跑真正上線的那份程式碼：36 篇 → 30 張、零誤判。
+- 對照器直接從 `index.html` 切出來跑真正上線的那份程式碼：36 篇 → 31 張、零誤判。
+- 對不上的《洞氤》實抽：如設計退回 IG 嵌入、無封面圖、無試聽鍵，「收進唱片櫃」照常。
+  《それから》經對照表對回じゃがたら卡，封面（CAA）、年份 1989、試聽鍵都正常。
 - 本機 8903 用臨時副本把亂數釘死在 reel 分支實抽：直接來一張抽到《田園に死す》
   （封面 CAA、年份 1974、三軸五星列、IG 內文簡介、iframe 0 個）、《妖怪幻想》同樣有封面；
   心情選歌強制走 online 抽到 De La Soul《AOI: Mosaic Thump》（封面 500px、年份 2000、
