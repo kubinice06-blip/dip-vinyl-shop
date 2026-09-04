@@ -355,3 +355,7 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
    （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
    子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，
    會先靠「同藝人傳播」落位，之後重跑即可補上。
+   ⚠ 兩份人工資料要一起維護：標籤推不出來的藝人寫進 `genre-artist-map.json`
+   （`{大類:{藝人:節點}}`，只在標籤落空時生效）；**新上架的台灣流行卡要把藝人加進
+   `tw-pop-artists.json`**，否則會留在「華語流行」而不是「台灣流行」——
+   c-pop 這個標籤分不出台港中星馬，只能靠出產地名單切。

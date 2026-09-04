@@ -1,5 +1,38 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-04（五）｜dip-vinyl-shop｜類型挑片補 12 個節點：台灣流行獨立、UK／亞洲嘻哈、東南亞等
+
+店主裁示兩件：**c-pop 之中所有台灣出產的一律歸 t-pop**、**其他缺少的桶直接補上**。
+
+- **台灣流行 t-pop**（新增 `tw-pop-artists.json`，46 位）：從 c-pop 切出 **77 張**，
+  c-pop 剩 57 張。判準是**唱片的出產地**（企劃／製作／發行市場）不是藝人國籍——
+  所以在台灣廠牌發片的星馬歌手（孫燕姿、林俊傑、梁靜茹、光良、蔡健雅…）算台灣出產；
+  香港粵語流行、上海與香港時代曲、王菲留在 c-pop。
+  ⚠ **這是唯一會覆蓋標籤規則的清單**（c-pop 標籤分不出台港中星馬）。
+  ⚠ 第一版只在 `classify()` 裡覆寫，t-pop 只有 52 張——**因為步驟 2 的同藝人傳播
+  跑在後面，還會再發 c-pop**，同一位歌手一半 t-pop 一半 c-pop。補了「步驟 3」全域再掃
+  一次才對得上（改判 25 張）。**日後任何「覆寫既有落位」的規則都要放在步驟 2 之後。**
+- **新增／填滿 12 個節點**（涵蓋 96.3%，未落位 861 → 540）：
+  `pop/t-pop`(77)、`pop/india` 印度與寶萊塢(23)、`pop/sea-pop` 東南亞(23)、
+  `pop/chanson` 法語香頌(20)、`hiphop/uk-euro` 英國與歐陸(49)、`hiphop/asia-rap` 亞洲嘻哈(49)、
+  `electronic/trance` Trance/Goa(54)、`folk/world-folk` 各地傳統民謠(83)、
+  `folk/tw-folk` 東亞民謠(30)、`world/asia` 亞洲(41)、`classical/musical` 音樂劇(19)、
+  `blues/desert` 沙漠藍調(14)。另 `world/med`→「地中海與巴爾幹」、`world/reggae`→「Reggae / 加勒比」。
+  ⚠ **先查標籤再決定要不要人工名單**：trance 光靠標籤就有 54 張（代理只找到 6 位無標籤的 Goa 團）、
+  uk grime 34 張、chanson 19 張、desert blues 14 張——**人工名單只該補標籤照不到的部分**。
+  印度與東南亞流行則相反，標籤幾乎掛零（`bollywood` 只有 7 張且全是 world 主類型），
+  只能靠對照表逐位指定。對照表從 1,207 位擴到 1,437 位。
+- **節點門檻可逐節點放寬**：`RULES` 的節點定義新增 `min` 欄，音樂劇與沙漠藍調設 10
+  （全域 `MIN_NODE` 仍是 20）。這兩類資料天生就少但值得存在。
+- 驗證：**節點 103 → 115，無節點消失**；125 個節點（含十大類）各抽 200 次，
+  空節點 0、主類型不符 0、路徑不符 0。張數減少的節點全部有解釋：
+  techno/house −6（Goa 團移去 trance）、opera −14（音樂劇標籤改成優先於歌劇）、
+  art-pop −6 與 east-coast／underground −3（同藝人傳播的落點被新桶接走）。
+- **還缺的桶（資料不足，沒硬做）**：未落位仍有 jazz 158、rock 98、soul 83、classical 47。
+  soul 缺巴西 soul、拉丁 boogaloo、UK blue-eyed soul；classical 缺印度古典演奏（Ravi Shankar
+  等 4 位就 20 張，可考慮開 `raga`）；jazz 那 158 張多是非洲／衣索比亞、library music、
+  電影配樂等**本來就不該進爵士第二層**的卡。
+
 ### 2026-09-04（五）｜dip-vinyl-shop｜分頁改名 artist、兩個回報 bug、og-artist.png、藝人級分桶補到 94%
 
 四筆提交：`dd08a30`（改名＋兩個 bug）／`d945f2e`（OG 圖）／本筆（分桶）。

@@ -258,7 +258,7 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 444,
+     "count": 439,
      "children": []
     },
     {
@@ -276,13 +276,13 @@
     {
      "id": "house",
      "zh": "House",
-     "count": 291,
+     "count": 290,
      "children": []
     },
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 255,
+     "count": 253,
      "children": []
     },
     {
@@ -301,6 +301,12 @@
      "id": "noise",
      "zh": "實驗與噪音",
      "count": 107,
+     "children": []
+    },
+    {
+     "id": "trance",
+     "zh": "Trance / Goa",
+     "count": 54,
      "children": []
     },
     {
@@ -386,13 +392,13 @@
     {
      "id": "east-coast",
      "zh": "東岸 / Boom Bap",
-     "count": 345,
+     "count": 342,
      "children": []
     },
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 285,
+     "count": 282,
      "children": []
     },
     {
@@ -423,6 +429,18 @@
      "id": "pop-rap",
      "zh": "Pop Rap",
      "count": 68,
+     "children": []
+    },
+    {
+     "id": "uk-euro",
+     "zh": "英國與歐陸",
+     "count": 49,
+     "children": []
+    },
+    {
+     "id": "asia-rap",
+     "zh": "亞洲嘻哈",
+     "count": 49,
      "children": []
     }
    ]
@@ -471,7 +489,13 @@
     {
      "id": "opera",
      "zh": "歌劇與聲樂",
-     "count": 70,
+     "count": 56,
+     "children": []
+    },
+    {
+     "id": "musical",
+     "zh": "音樂劇",
+     "count": 19,
      "children": []
     }
    ]
@@ -484,7 +508,7 @@
     {
      "id": "songwriter",
      "zh": "創作歌手",
-     "count": 473,
+     "count": 499,
      "children": []
     },
     {
@@ -524,9 +548,21 @@
      "children": []
     },
     {
+     "id": "world-folk",
+     "zh": "各地傳統民謠",
+     "count": 83,
+     "children": []
+    },
+    {
      "id": "bluegrass",
      "zh": "Bluegrass",
-     "count": 45,
+     "count": 48,
+     "children": []
+    },
+    {
+     "id": "tw-folk",
+     "zh": "東亞民謠",
+     "count": 30,
      "children": []
     }
    ]
@@ -545,19 +581,13 @@
     {
      "id": "art-pop",
      "zh": "藝術流行",
-     "count": 167,
+     "count": 161,
      "children": []
     },
     {
      "id": "synth",
      "zh": "合成器流行",
      "count": 139,
-     "children": []
-    },
-    {
-     "id": "c-pop",
-     "zh": "華語流行",
-     "count": 134,
      "children": []
     },
     {
@@ -573,9 +603,39 @@
      "children": []
     },
     {
+     "id": "t-pop",
+     "zh": "台灣流行",
+     "count": 77,
+     "children": []
+    },
+    {
+     "id": "c-pop",
+     "zh": "華語流行",
+     "count": 57,
+     "children": []
+    },
+    {
      "id": "k-pop",
      "zh": "韓國流行",
      "count": 50,
+     "children": []
+    },
+    {
+     "id": "india",
+     "zh": "印度與寶萊塢",
+     "count": 23,
+     "children": []
+    },
+    {
+     "id": "sea-pop",
+     "zh": "東南亞流行",
+     "count": 23,
+     "children": []
+    },
+    {
+     "id": "chanson",
+     "zh": "法語香頌",
+     "count": 20,
      "children": []
     }
    ]
@@ -587,8 +647,8 @@
    "children": [
     {
      "id": "reggae",
-     "zh": "Reggae / Dub",
-     "count": 205,
+     "zh": "Reggae / 加勒比",
+     "count": 209,
      "children": []
     },
     {
@@ -604,15 +664,21 @@
      "children": []
     },
     {
+     "id": "med",
+     "zh": "地中海與巴爾幹",
+     "count": 59,
+     "children": []
+    },
+    {
      "id": "arabic",
      "zh": "中東與土耳其",
      "count": 58,
      "children": []
     },
     {
-     "id": "med",
-     "zh": "佛朗明哥與地中海",
-     "count": 50,
+     "id": "asia",
+     "zh": "亞洲",
+     "count": 41,
      "children": []
     },
     {
@@ -668,6 +734,12 @@
      "id": "piano",
      "zh": "鋼琴與 Boogie",
      "count": 25,
+     "children": []
+    },
+    {
+     "id": "desert",
+     "zh": "沙漠藍調",
+     "count": 14,
      "children": []
     }
    ]

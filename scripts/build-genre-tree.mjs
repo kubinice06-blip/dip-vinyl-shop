@@ -124,6 +124,7 @@ const RULES = {
     bass: { zh: 'Dub / Bass', re: /^(dubstep|uk garage|jungle|drum and bass|dnb|breakbeat|dub techno|dub)$/ },
     noise: { zh: '實驗與噪音', re: /^(noise|musique concrete|sound collage|plunderphonics|lowercase)$/ },
     'nu-disco': { zh: 'Disco / Nu-Disco', re: /^(disco|nu-disco|disco house|french house)$/ },
+    trance: { zh: 'Trance / Goa', re: /^(trance|psytrance|psy-trance|psychedelic trance|goa|goa trance|progressive trance|uplifting trance|hard trance)$/ },
     'jp-electronic': { zh: '日系電子', re: /^(city pop|japanese electronic|kankyo ongaku|environmental music)$/ },
   },
 
@@ -148,7 +149,8 @@ const RULES = {
     gangsta: { zh: 'Gangsta', re: /^(gangsta rap|hardcore rap|mafioso rap)$/ },
     rnb: { zh: '當代 R&B', re: /^(contemporary rnb|alternative rnb|alt rnb|neo-soul|neo soul|rnb)$/ },
     'pop-rap': { zh: 'Pop Rap', re: /^(pop rap|pop rnb)$/ },
-    'asia-rap': { zh: '亞洲嘻哈', re: /^(japanese hip-hop|j-rap|k-hip hop|taiwanese hip hop|mandarin rap|c-rap)$/ },
+    'uk-euro': { zh: '英國與歐陸', re: /^(grime|uk rap|uk hip hop|uk hip-hop|british hip hop|uk drill|road rap|french hip hop|french rap|rap francais|rap français)$/ },
+    'asia-rap': { zh: '亞洲嘻哈', re: /^(japanese hip-hop|japanese hip hop|j-rap|jrap|k-hip hop|korean hip hop|k-rap|taiwanese hip hop|mandarin rap|c-rap|chinese hip hop)$/ },
   },
 
   folk: {
@@ -160,12 +162,18 @@ const RULES = {
     bluegrass: { zh: 'Bluegrass', re: /^(bluegrass|old time|appalachian)$/ },
     'folk-rock': { zh: '民謠搖滾', re: /^(folk rock|progressive folk)$/ },
     songwriter: { zh: '創作歌手', re: /^(singer-songwriter|singer songwriter)$/ },
-    'tw-folk': { zh: '台灣與華語民謠', re: /^(campus folk|taiwanese folk|mandarin folk|c-folk)$/ },
+    'tw-folk': { zh: '東亞民謠', re: /^(campus folk|taiwanese folk|mandarin folk|c-folk|japanese folk|min'yo|minyo|korean folk|shakuhachi|tsugaru shamisen)$/, min: 10 },
+    'world-folk': { zh: '各地傳統民謠', re: /^(nueva cancion|nueva canción|gypsy|romani|klezmer|throat singing|kora|griot|fado|rebetiko|hawaiian|slack-key|slack key|sean-nós|joik|yoik|cante jondo)$/ },
   },
 
   pop: {
     'jp-pop': { zh: '日本流行 / City Pop', re: /^(j-pop|jpop|city pop|japanese city pop|shibuya-kei|kayokyoku)$/ },
     'c-pop': { zh: '華語流行', re: /^(c-pop|cpop|cantopop|mandopop|canto-pop)$/ },
+    // t-pop 無標籤可依，靠 tw-pop-artists.json 從 c-pop 切出來
+    't-pop': { zh: '台灣流行' },
+    chanson: { zh: '法語香頌', re: /^(chanson|chanson francaise|chanson française|french pop|ye-ye|yé-yé|nouvelle chanson)$/, min: 10 },
+    india: { zh: '印度與寶萊塢', re: /^(bollywood|filmi|playback singer|indian pop)$/ },
+    'sea-pop': { zh: '東南亞流行', re: /^(dangdut|luk thung|molam|mor lam|keroncong|v-pop|opm|pinoy pop)$/ },
     'k-pop': { zh: '韓國流行', re: /^(k-pop|kpop)$/ },
     synth: { zh: '合成器流行', re: /^(synthpop|electropop|synth pop|dance-pop|dance pop)$/ },
     'art-pop': { zh: '藝術流行', re: /^(art pop|baroque pop|chamber pop|psychedelic pop|sophisti-pop)$/ },
@@ -174,12 +182,13 @@ const RULES = {
   },
 
   world: {
-    reggae: { zh: 'Reggae / Dub', re: /^(roots reggae|dub|dancehall|ska|rocksteady|dancehall reggae)$/ },
+    reggae: { zh: 'Reggae / 加勒比', re: /^(roots reggae|dub|dancehall|ska|rocksteady|dancehall reggae)$/ },
     african: { zh: '非洲', re: /^(african|afrobeat|highlife|ethiopian|nigeria|south africa|desert blues|afro-pop|soukous)$/ },
     latin: { zh: '拉丁 / 古巴', re: /^(latin|salsa|cuban|son cubano|mambo|cumbia|tango)$/ },
     brazil: { zh: '巴西 / Bossa', re: /^(bossa nova|mpb|brazilian|samba|tropicalia|tropicália)$/ },
     india: { zh: '印度與南亞', re: /^(indian|indian classical|hindustani|carnatic|raga|bollywood)$/ },
-    med: { zh: '佛朗明哥與地中海', re: /^(flamenco|fado|portuguese|greek|rebetiko)$/ },
+    med: { zh: '地中海與巴爾幹', re: /^(flamenco|fado|portuguese|greek|rebetiko|balkan|klezmer|sevdah|romani brass)$/ },
+    asia: { zh: '亞洲', re: /^(gamelan|dangdut|luk thung|molam|mor lam|okinawan|min'yo|gagaku|throat singing|uzbek|mongolian|tuvan|khmer|keroncong)$/ },
     arabic: { zh: '中東與土耳其', re: /^(arabic|turkish|persian|middle east|anatolian rock|rai)$/ },
   },
 
@@ -191,6 +200,7 @@ const RULES = {
     piano: { zh: '鋼琴與 Boogie', re: /^(piano blues|boogie woogie|barrelhouse)$/ },
     'classic-blues': { zh: '古典藍調', re: /^(classic blues|classic female blues|vaudeville blues)$/ },
     soulblues: { zh: 'Soul Blues', re: /^(soul blues|swamp blues)$/ },
+    desert: { zh: '沙漠藍調', re: /^(desert blues|tuareg|tishoumaren|tuareg blues)$/, min: 10 },
   },
 
   // 古典：不用標籤（覆蓋僅 23%），改用作曲家欄＋年份，見 classifyClassical()
@@ -202,6 +212,7 @@ const RULES = {
     contemporary: { zh: '當代與極簡' },
     film: { zh: '電影配樂' },
     opera: { zh: '歌劇與聲樂' },
+    musical: { zh: '音樂劇', min: 10 },
   },
 };
 
@@ -232,7 +243,8 @@ function classifyClassical(card) {
   const out = new Set();
   const tags = card.tags;
   if (tags.some(t => FILM_RE.test(t))) out.add('film');
-  if (tags.some(t => OPERA_RE.test(t))) out.add('opera');
+  if (tags.some(t => /^(musical|musicals|show tunes|showtunes|showtune|broadway|west end)$/.test(t))) out.add('musical');
+  else if (tags.some(t => OPERA_RE.test(t))) out.add('opera');
   if (tags.some(t => /^(baroque|early music|renaissance|medieval|gregorian)$/.test(t))) out.add('baroque');
   if (tags.some(t => /^(minimalism|minimal|post-minimalism|neoclassical|post-classical|modern classical|contemporary classical|neo-classical|new age)$/.test(t))) out.add('contemporary');
   if (tags.some(t => /^(20th century classical|serialism|twelve-tone|atonal|musique concrete)$/.test(t))) out.add('modern');
@@ -253,6 +265,10 @@ const rockMap = JSON.parse(fs.readFileSync(path.join(ROOT, 'rock-subgenre-map.js
 // 只在標籤規則落空時才採用，不覆蓋既有落位。
 const artistMap = fs.existsSync(path.join(ROOT, 'genre-artist-map.json'))
   ? JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-artist-map.json'), 'utf8')) : {};
+// 「台灣出產」的流行藝人：落到 c-pop 的卡改記 t-pop。這是唯一會覆蓋標籤規則的清單——
+// c-pop 標籤分不出台港中星馬，只能靠出產地名單切。
+const TW_POP = new Set((fs.existsSync(path.join(ROOT, 'tw-pop-artists.json'))
+  ? JSON.parse(fs.readFileSync(path.join(ROOT, 'tw-pop-artists.json'), 'utf8')).artists : []) || []);
 
 async function pullRawGenres() {
   const TOKEN = process.env.CLOUDFLARE_API_TOKEN;
@@ -340,6 +356,10 @@ function classify(card) {
     if (!def.re) continue;
     if (card.tags.some(t => def.re.test(t))) paths.add(`${g}/${id}`);
   }
+  if (g === 'pop' && paths.has('pop/c-pop') && TW_POP.has(card.artist)) {
+    paths.delete('pop/c-pop');
+    paths.add('pop/t-pop');
+  }
   if (!paths.size && over) {
     const [l2, l3] = over.split('/');
     if (RULES[g][l2]) {
@@ -383,6 +403,16 @@ for (const c of cards) {
   step2++;
 }
 
+// 步驟 3：台灣流行正規化。步驟 2 的同藝人傳播也會發 c-pop，跑在 classify() 的覆寫之後，
+// 所以要在這裡再掃一次，否則同一位台灣歌手會一半 t-pop 一半 c-pop。
+let step3 = 0;
+for (const [k, paths] of assign) {
+  const artist = k.slice(0, k.lastIndexOf('|'));
+  if (!TW_POP.has(artist) || !paths.includes('pop/c-pop')) continue;
+  assign.set(k, paths.map(p => (p === 'pop/c-pop' ? 'pop/t-pop' : p)));
+  step3++;
+}
+
 // ── 統計與樹輸出 ──────────────────────────────────────────────────────
 const counts = new Map();
 for (const paths of assign.values()) for (const p of paths) counts.set(p, (counts.get(p) || 0) + 1);
@@ -395,7 +425,7 @@ for (const [gid, zh] of L1) {
   for (const [cid, def] of Object.entries(RULES[gid] || {})) {
     const p = `${gid}/${cid}`;
     const n = counts.get(p) || 0;
-    if (n < MIN_NODE) continue;
+    if (n < (def.min || MIN_NODE)) continue;   // def.min：資料天生就少但值得存在的桶
     const child = { id: cid, zh: def.zh, count: n, children: [] };
     for (const [gcid, gdef] of Object.entries(def.children || {})) {
       const gn = counts.get(`${p}/${gcid}`) || 0;
@@ -424,7 +454,7 @@ for (const [k, paths] of assign) {
 
 // ── 報告 ──────────────────────────────────────────────────────────────
 console.log(`\n卡池 ${cards.length} 張｜有標籤 ${cards.filter(c => c.tags.length).length}｜`
-  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜剪枝後覆蓋 ${covered}`
+  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜步驟3 台灣流行改判 ${step3}｜剪枝後覆蓋 ${covered}`
   + ` (${(covered / cards.length * 100).toFixed(1)}%)`);
 console.log(`節點門檻 ${MIN_NODE} 張\n`);
 for (const g of tree.genres) {
