@@ -1,0 +1,199 @@
+[
+  {
+    "artist": "Eggs",
+    "album": "Bruiser",
+    "year": 1992,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Teenbeat",
+    "why": "華盛頓特區的 Eggs 在 Teenbeat 的第一張專輯（TEENBEAT 76，Discogs release 1400995 為 1992 年 CD；1994 年才出黑膠，Discogs release 1428734）。Teenbeat 的目錄在 1992–94 年同時容納 Unrest、Grenadine、Versus、Tuscadero 與 Eggs，本批另收其中四張。Discogs 四筆版本零筆標 Unofficial。池中 Eggs 掛名零張（實掃 seed_cards.json 全檔）。",
+    "risk": "盤名《Bruiser》為常見英文詞，以盤名為主鍵掃全池完全相等 0 筆；掛名「Eggs」極短，去重掃描器必須維持 `length>=4` 守衛（c-79 教訓）並以「掛名｜盤名」複合鍵比對。MB 該 release-group 只有一筆 1992 US release，1994 年黑膠未建 release，行文不得斷言只有 CD 版。封面預估中等，試聽預估中等。",
+    "mbNote": "MB release-group a8772fc6-2732-3fdc-acb7-af6fa0f435fe《Bruiser》，artist-credit「Eggs」，first-release-date 1992，primary-type Album，secondary-types 空；轄下 1 筆 1992 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Grenadine",
+    "album": "Goya",
+    "year": 1992,
+    "genres": [
+      "pop",
+      "rock"
+    ],
+    "label": "Shimmy Disc",
+    "why": "Shimmy Disc 與 Teenbeat 共掛編號的一張（黑膠 No. 59，Discogs release 651361；CD Shimmy Disc No. 59／TeenBeat No. 99，release 1667648；卡帶 Shimmy 059，release 6250207），三種載體同年出齊。Discogs 上這三筆零筆標 Unofficial。池中 Grenadine 掛名零張。",
+    "risk": "盤名《Goya》四字元、與畫家同名，以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Oumou Sangaré《Mogoya》，不同碟）。廠牌欄採 Shimmy Disc（黑膠條目的第一順位廠牌），Teenbeat 是共掛；第 85 條的原盤廠牌在這張有兩家，行文不得斷言只有一家。**策展層推論（未查證）**：Grenadine 由本批其他卡的樂手交叉組成，研究層須回 Discogs 該條目的 credits 欄核對後再用。封面預估中等，試聽預估低。",
+    "mbNote": "MB release-group f301ee74-f147-3053-b3a9-65fd37a65c34《Goya》，artist-credit「Grenadine」，first-release-date 1992，primary-type Album，secondary-types 空；轄下 1 筆 1992 US Official。已回問 release-group 端點確認實體類型與標題。同藝人另有 RG 4eee7575《Nopalitos》(1994)，本批一併收，兩者刻意分開釘。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Grenadine",
+    "album": "Nopalitos",
+    "year": 1994,
+    "genres": [
+      "pop",
+      "rock"
+    ],
+    "label": "Simple Machines",
+    "why": "Simple Machines 與 Teenbeat 共掛編號的第二張（CD SMR23CD，Discogs release 1162866；黑膠 TEENBEAT 155／SMR 023 V，Discogs release 1272449，EFA 經銷）。MB 該 release-group 轄下的兩筆 release 分別掛 XW 與 GB，皆 Official。池中 Grenadine 掛名零張。",
+    "risk": "MB 沒有建美國原壓的 release（只有 XW 與 GB 兩筆），封面與試聽的 storefront 判斷不可照 MB 的國別推論（第 75 條）。首發日期 MB 記 1994-01-01，是常見的佔位日期形狀（第 140 附／141 條），行文不得斷言確切發行日。與同藝人《Goya》同批，去重時兩張是不同的碟。封面預估中等，試聽預估低。",
+    "mbNote": "MB release-group 4eee7575-e4f1-397b-b54b-c30921b9d053《Nopalitos》，artist-credit「Grenadine」，first-release-date 1994-01-01，primary-type Album，secondary-types 空；轄下 2 筆 Official（1994-01-01 XW、1994 GB）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Versus",
+    "album": "The Stars Are Insane",
+    "year": 1994,
+    "genres": [
+      "rock"
+    ],
+    "label": "Teenbeat",
+    "why": "紐約的 Versus 首張專輯，Teenbeat 同年出 CD（TeenBeat 142-cd，Discogs release 1666630）、黑膠（TEENBEAT 142，release 766072）與卡帶（142-cs，release 8147632）。地位證據是 Teenbeat 自己 2026 年的重壓與豪華重製黑膠（Discogs release 36831094 與 36831787，後者標 Remastered），以及 1995 年丹麥 Cloudland 的授權 CD（RAIN 011 CD，Discogs release 2032707）——MB 該 release-group 轄下也有一筆 1995 DK Official。池中 Versus 掛名零張（同名字串命中的 Casino Versus Japan 是另一位藝人）。",
+    "risk": "掛名「Versus」是常見英文詞，池中已有 Casino Versus Japan 一張，**兩者不是同一位藝人**；任何以單一藝人名查詢的下游都會撈錯（第 139 條的撞名陷阱）。盤名以盤名為主鍵掃全池完全相等 0 筆。封面預估高，試聽預估中等。",
+    "mbNote": "MB release-group 6db4d229-4e80-3d21-a296-3d80969ef484《The Stars Are Insane》，artist-credit「Versus」，first-release-date 1994，primary-type Album，secondary-types 空；轄下 2 筆 Official（1994 US、1995 DK）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Teenbeat",
+    "g": "b"
+  },
+  {
+    "artist": "Tuscadero",
+    "album": "The Pink Album",
+    "year": 1994,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Teenbeat",
+    "why": "華盛頓特區的 Tuscadero 首張專輯，1994 年由 Teenbeat 出 CD（teenbeat 159 cd，Discogs release 1887683）、黑膠（teenbeat 159-lp，release 9614436）與卡帶（TEENBEAT 159 CASSETTE，release 19298626）。地位證據是 Elektra 1996 年的授權重發 CD（61918-2，Discogs release 2387249，條目標 Reissue 並共掛 Teenbeat）與同年的卡帶版（61918-4，release 16857582）；MB 該 release-group 轄下也有一筆 1996 US Official。池中 Tuscadero 掛名零張。",
+    "risk": "Elektra 1996 年版是否加曲未查，逐張複檢必須開 release?release-group=<id>&inc=recordings 對原盤軌數再判（第 141 條），不得照 Apple 的軌數反推。1995 年另有 Matador 經銷的黑膠重壓（Discogs release 2773626）。封面預估高（大廠重發有商業封面），試聽預估高。",
+    "mbNote": "MB release-group 1860c193-9ac8-3451-b692-3cd609cde026《The Pink Album》，artist-credit「Tuscadero」，first-release-date 1994-11-28，primary-type Album，secondary-types 空；轄下 2 筆 US Official（1994-11-28、1996）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Elektra",
+    "g": "b"
+  },
+  {
+    "artist": "Blast Off Country Style",
+    "album": "Rainbow Mayonnaise Deluxe",
+    "year": 1994,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Teenbeat",
+    "why": "Teenbeat 1994 年的黑膠（Teenbeat 144-LP，Discogs release 2875633）與 CD（TEENBEAT 144CD，release 3224794）；同年另有 100 Guitar Mania Records 的 CD 版（100GM-05，Discogs release 1816437）。Discogs 三筆版本零筆標 Unofficial。池中 Blast Off Country Style 掛名零張。",
+    "risk": "MB 該 release-group 只有一筆 1994-11-28 US release，另外兩筆 Discogs 版本未建，行文不得斷言版本數。100 Guitar Mania 那筆的國別與授權關係未查，`reissuedBy` 留空待研究層補。盤名很長且含商品化字眼，外部 API 的模糊比對容易落空。封面預估中等，試聽預估低。",
+    "mbNote": "MB release-group 04acc6e9-9e25-3da5-8b3e-5b6a0ca27b76《Rainbow Mayonnaise Deluxe》，artist-credit「Blast Off Country Style」，first-release-date 1994-11-28，primary-type Album，secondary-types 空；轄下 1 筆 1994-11-28 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Air Miami",
+    "album": "Me. Me. Me.",
+    "year": 1995,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "4AD",
+    "why": "Unrest 解散後由 Mark Robinson 與 Bridget Cross 組成的 Air Miami 唯一一張專輯，1995 年由 4AD 與 Teenbeat 共同發行（CAD 5011，Discogs release 642157；CD CAD 5011 CD，release 632361；美國版 9 46000-2，release 445110）。地位證據是 4AD 2023 年的重製版（Discogs release 28517563，標 Deluxe Edition／Remastered）與 Teenbeat 同年的 12 吋重發（TEENBEAT 177，Discogs release 27783660）；MB 該 release-group 轄下有一筆 2023-07-28 Official。池中 Air Miami 掛名零張。",
+    "risk": "這張的廠牌歸屬有兩家（4AD 與 Teenbeat 共掛，各國版本的第一順位不同），廠牌欄採英美版條目的 4AD，行文不得斷言只有一家。2023 年重製版是否加曲未查，逐張複檢須開 release?release-group=<id>&inc=recordings 對原盤軌數（第 141 條）。MB 轄下有 US 與 GB 兩地 release，試聽的 storefront 要兩邊都試（第 75 條）。封面預估高，試聽預估高。",
+    "mbNote": "MB release-group 00225395-64a9-4644-938f-e9786f6f9915《Me. Me. Me.》，artist-credit「Air Miami」，first-release-date 1995-09-12，primary-type Album，secondary-types 空；轄下 4 筆 Official（1995-09-12 US、1995-11-06 GB、1995 GB、2023-07-28 國別未填）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "4AD",
+    "g": "b"
+  },
+  {
+    "artist": "Vomit Launch",
+    "album": "Dogeared",
+    "year": 1992,
+    "genres": [
+      "rock"
+    ],
+    "label": "Teenbeat",
+    "why": "加州 Chico 的 Vomit Launch 在 Teenbeat 的 CD（TEENBEAT 85，Discogs release 2515036）與卡帶（Teenbeat 85C，release 8182766，共掛 Mad Rover Records、Enharmonik Studios）。Teenbeat 兩年後又出了他們的《Not Even Pretty +》（TEENBEAT 128，Discogs 該廠牌頁 1994 年條目）。Discogs 兩筆版本零筆標 Unofficial。池中 Vomit Launch 掛名零張。",
+    "risk": "Discogs 上沒有任何授權再發可引為地位證據，分量依據只有 Teenbeat 目錄本身與同廠牌的第二張；研究層若查不到署名樂評或館藏，這張要優先剔除（稀有度不得寫進 why）。掛名含粗俗字眼，部分商業 API 會過濾。封面預估中等，試聽預估低。",
+    "mbNote": "MB release-group 4abbf31c-fa53-36fa-81a8-ee9ed15a9547《Dogeared》，artist-credit「Vomit Launch」，first-release-date 1992-07-20，primary-type Album，secondary-types 空；轄下 1 筆 1992-07-20 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Bells Of",
+    "album": "11:11",
+    "year": 1992,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Teenbeat",
+    "why": "Teenbeat 1992 年的 CD（teenbeat 93，Discogs release 2105873，由 Disc Manufacturing, Inc. 壓片）。這是 Teenbeat 在 1992 年一口氣出的幾張長片之一，同年目錄還有 Eggs《Bruiser》、Vomit Launch《Dogeared》、Sexual Milkshake 與 Grenadine《Goya》。Teenbeat 1994 年又出了同團的《Two Dos Or Not 2?》（TEENBEAT 143）。池中 Bells Of 掛名零張。",
+    "risk": "**掛名寫法有分歧**：MB 的 artist-credit 是「Bells Of..」（結尾兩個句點），Discogs 與 Teenbeat 目錄寫「Bells Of」。本卡採無句點的「Bells Of」以利外部服務查詢（第 25 條，比照 c-81 第 4／6 項的處理），`queryAlias` 填 MB 寫法供比對。盤名《11:11》含冒號、且是純數字，字串正規化後會變成 `1111`，去重與 API 查詢都要注意。無授權再發可引，分量依據薄弱。封面與試聽預估皆低。",
+    "mbNote": "MB release-group b01926c7-d207-4cd5-a54f-1fda93582c8f《11:11》，artist-credit「Bells Of..」，first-release-date 1992，primary-type Album，secondary-types 空；轄下 1 筆 1992 US Official。已回問 release-group 端點確認實體類型與標題。卡片掛名採「Bells Of」，與 artist-credit 的「Bells Of..」不相等——這是刻意的，理由見 risk。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "Bells Of..",
+    "reissuedBy": "",
+    "g": "b"
+  },
+  {
+    "artist": "Tsunami",
+    "album": "Deep End",
+    "year": 1993,
+    "genres": [
+      "rock"
+    ],
+    "label": "Simple Machines",
+    "why": "Simple Machines 老闆 Jenny Toomey 自己樂團的首張專輯，1993 年 CD（SMR 013 CD，Discogs release 1639338）、黑膠（smr13v，release 2110143）與卡帶（smr13c，release 10403715）同步發行，Southern Studios 母帶。同一家廠牌同年還發了 Scrawl《Velvet Hammer》與整套《Working Holiday》十二張月份七吋，本批另收其中兩張。Discogs 六筆版本零筆標 Unofficial。池中 Tsunami 掛名零張。",
+    "risk": "MB 該 release-group 轄下兩筆 release 都記 1993 US Official，但沒有註明載體，行文不得斷言原盤是黑膠或 CD。掛名「Tsunami」是常見英文詞，MB 上另有多個同名實體（Discogs 標為 Tsunami (6)），下游以字串查詢極易撈錯（第 139 條）。封面預估中等，試聽預估中等。",
+    "mbNote": "MB release-group 266a700a-4541-3fac-8b09-62c87731e3c1《Deep End》，artist-credit「Tsunami」，first-release-date 1993，primary-type Album，secondary-types 空；轄下 2 筆 release 皆 1993 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "b"
+  }
+]
