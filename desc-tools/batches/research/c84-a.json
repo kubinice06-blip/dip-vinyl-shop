@@ -187,5 +187,194 @@
    "note": "1993 維持卡單原值，三方一致無爭議：Discogs 原卡帶條目 1669853 的 released 欄 1993（年精度）、MB release-group first-release-date 1993、MB 唯一那筆 release 的 date 也是 1993，Trouser Press 條目的唱片列表同樣記 1993。**行文只能寫到年**——沒有任何來源給出月或日。2012-06-26 是那張二合一 CD 的日期，與本作的問世年無關。"
   },
   "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：Bright Mountain Choir 的**五位參與者名單**（Amy Piatt、John Darnielle、Rachel Ware、Rosanne Lindley、Sarah Arslanian，來自本卡 Discogs 條目的 credit 欄）；Ennius 那句拉丁題詞；**末軌是別人寫的曲**這件事。\n**禁令**：(1) **Shrimper 廠牌史整條禁用**（分派給〈How You Continue Dreaming〉）。(2) **Darnielle 的家用錄音法、boombox、Trouser Press 那兩句評語整條禁用**（分派給〈The Hound Chronicles〉）。(3) **2012 年那張二合一 CD 的敘事禁用**（分派給〈The Hound Chronicles〉）；本卡引 SHR163 只能用來取「Hot Garden Stomp recorded in Norwalk, Claremont, and Irvine.」這一句錄音地，**不得把「兩張併成一張 CD 重發」寫進行文**。(4) **原盤軌數只能寫 16**（Discogs 原卡帶與 MB 唯一那筆 release 一致）。**絕對不得寫 32。**(5) **末軌〈Tell Me on a Sunday〉是翻唱這件事，只能依 Discogs 曲目表的作者欄寫成「該條目把這一軌的作者記為 Andrew Lloyd Webber 與 Don Black」**——**不得寫它出自哪一齣音樂劇、不得描述原曲、不得說這是「意外的選曲」之類的評價**（第 110／128 條：由曲名或作者名推論出處與動機都不行）。(6) 拉丁題詞只能寫成「原盤註記欄有一句標了出處 Ennius 的拉丁文」，**不得翻譯、不得解釋它的意思**——沒有任何來源提供譯文。(7) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；Discogs 格式欄的「Limited Edition」是**格式描述欄的一個標記**，可寫成「該條目的格式欄標了 Limited Edition」，**不得由它推論份數或稀有度**。(8) 兩位 Mountain Goats 的姊妹卡（〈The Hound Chronicles〉〈Nothing for Juice〉）同批，**不得寫「這是他第幾張」「接在哪一張之後」這類序數或編年框架**（第 125／145 條）。\n**探測層核對**：previews.json 標 `unavailable`（us／gb／jp／ca／de／fr／au 七個店面搜到 0 筆）。我依第 152 條用盤名關鍵詞回搜過 Apple，**回的是二合一 531581049（32 軌）**，依第 129／140 條不可採——**這是「搜到了但不該採」，主線不要回補**。封面與試聽兩條線本卡都要當作沒有。"
+ },
+ {
+  "key": "desc2:The Mountain Goats|Nothing for Juice",
+  "artist": "The Mountain Goats",
+  "album": "Nothing for Juice",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 630261 記：廠牌「Ajax Records (2)」，編號 AJAX 056-2，country US，released 欄 1996，格式 CD x1 [Album]；barcode「7 91071 00562 8」，matrix 欄「DADR 0TPV1<769>AJAX056」，Mastering SID Code 欄 IFPI L481、Mould SID Code 欄寫 none；companies 欄只有一條 Made By: Disque Americ；註記欄寫「Printed in Canada」與「Tracks duration from a media player.」。",
+    "src": "https://www.discogs.com/release/630261"
+   },
+   {
+    "f": "同一條目的註記欄第一句寫「'Moon And Sand' is from a recording by Chet Baker.」；曲目表上只有第 4 軌〈Hellhound On My Trail〉另掛 Written-By: Robert Johnson——這兩軌是該條目上僅有的兩處外部作者／出處標註。",
+    "src": "https://www.discogs.com/release/630261"
+   },
+   {
+    "f": "Discogs CD 條目登錄的 18 軌曲長：Then The Letting Go 1:51、Heights 2:27、Alpha Double Negative: Going To Catalina 2:33、Hellhound On My Trail 2:45、Blueberry Frost 1:43、Alabama Nova 1:45、Moon And Sand 3:32、I Will Grab You By The Ears 1:50、It Froze Me 2:07、Full Flower 2:12、Million 2:23、Going To Bogotá 2:47、Orange Ball Of Pain 3:24、Going To Kansas 3:54、Waving At You 2:28、Going To Reykjavák（該條目的拼法）2:45、I Corinthians 13:8-10 2:16、Going To Scotland 2:06。",
+    "src": "https://www.discogs.com/release/630261"
+   },
+   {
+    "f": "同一張碟的黑膠條目 744810（Ajax Records (2)，編號 AJAX 056-1，1996，Vinyl LP）把曲目排成 A1–A9／B1–B9 共 18 軌，barcode 791071005611，A 面 runout 刻「AJAX 056A SR 702.1( )」；該條目的曲目表逐軌掛客座——B1〈Full Flower〉掛 Guitar: Graeme Jefferies 與 Violin: Stefanie Böhm，B5〈Going To Kansas〉與 B7〈Going To Reykjavík〉各掛 Guitar: Graeme Jefferies。",
+    "src": "https://www.discogs.com/release/744810"
+   },
+   {
+    "f": "Discogs 另有一筆同編號的宣傳卡帶 5989074（Ajax Records (2)，AJAX 056，1996，Cassette [Album, Promo]），曲目同 18 軌，註記欄寫「Black and white art. Unlabeled cassette.」。",
+    "src": "https://www.discogs.com/release/5989074"
+   },
+   {
+    "f": "Discogs 重發條目 433676（3 Beads Of Sweat，3BOS 1007.2，released 欄 2005-03-29，CD [Album, Reissue]）的註記欄寫「Originally released by Ajax Records in August 1996.」；companies 欄 Manufactured By: Bellwether Manufacturing、Glass Mastered At: Disque Americ；曲長與 1996 年 CD 逐軌相同（僅第一軌 1:50 對 1:51 的一秒差），第 16 軌的拼法回到〈Going To Reykjavík〉。",
+    "src": "https://www.discogs.com/release/433676"
+   },
+   {
+    "f": "MusicBrainz release-group cb9cb54a 的欄位：title《Nothing for Juice》、first-release-date 1996-08、primary-type Album、secondary-types 空陣列、artist-credit「The Mountain Goats」；url 關聯共五條，分別指向 AllMusic mw0000091598、Discogs master 104292、RateYourMusic、Wikidata Q7062863 與英文維基百科條目。",
+    "src": "https://musicbrainz.org/release-group/cb9cb54a-0114-34b6-8239-3f9248757421"
+   },
+   {
+    "f": "以 release?release-group=cb9cb54a…&inc=recordings 逐版比對：MB 轄下三筆 release **全部都是 18 軌、一片**——1996-08 US Official（Ajax／AJAX 056-2、CD、barcode 791071005628）、2005-03-29 XW Official（3 Beads of Sweat、Digital Media、barcode 791071100729）、2005-03-29 US Official（3 Beads of Sweat／3BOS 1007.2、CD、同 barcode）。三筆的曲名與曲序逐項相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cb9cb54a-0114-34b6-8239-3f9248757421&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 263632188 的欄位：collectionName《Nothing for Juice》、trackCount 18、releaseDate 1996-08-19、copyright「℗ 2005 3 Beads Of Sweat」；十八個曲名與曲序與 Discogs 1996 年 CD 逐項相同。英文維基百科該條目的資訊框把 Released 欄填為 1996 年 8 月 19 日，Release history 表則列 1996-08-19 Ajax Records（CD、LP、AJAX 056）與 2005-03-29 3 Beads of Sweat（CD、3BOS 1007）。",
+    "src": "https://music.apple.com/us/album/nothing-for-juice/263632188"
+   },
+   {
+    "f": "Trouser Press 的 Mountain Goats 條目（署名 Deborah Sprague／Jay Pattyn）給本作一整段：「Graeme Jefferies of Cakekitchen guests on several Nothing for Juice tracks, adding distorted electric guitar to the mid-fi mishmash and leaving his distinctive mark on the album as a whole (check 'Going to Kansas' for 'I Feel Fine' feedback). The slight increase in production values on 'Then the Letting Go' sets this one apart from previous releases.」同段並寫「Darnielle more often than not puts himself in the first-person narrative here, a storytelling mode that becomes monotonous through songs that nearly all begin with 'I saw,' 'I watched,' 'I went' or 'I hear.'」，結語是「Not bad.」。",
+    "src": "https://trouserpress.com/reviews/mountain-goats/"
+   }
+  ],
+  "hookCandidates": [
+   "十八首歌裡，兩首不是他寫的——一首標了 Robert Johnson，一首標了 Chet Baker",
+   "同一個曲名在三個版本上有三種拼法"
+  ],
+  "sound": "十八軌都在 1:43 到 3:54 之間，總長不到四十五分鐘；最長的〈Going To Kansas〉3:54 與〈Orange Ball Of Pain〉3:24，最短的〈Blueberry Frost〉1:43。黑膠條目的曲目表顯示客座只出現在 B 面：三軌掛同一位客座吉他，其中一軌另掛小提琴——十八軌裡有十五軌在條目上完全沒有第二個人的名字。曲名有兩組重複命名法：四首以「Going to ⋯」起頭（Catalina、Bogotá、Kansas、Reykjavík），另有〈Alpha Double Negative: Going to Catalina〉把兩組接在一起。Discogs 三筆條目的 styles 欄各給不同標籤——黑膠 Indie Rock、CD Folk Rock、2005 年重發 Alternative Rock／Lo-Fi／Indie Rock。（本欄由 Discogs 三筆條目的曲目表、曲長與客座掛名歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Going to Kansas",
+   "Then the Letting Go",
+   "Going to Scotland"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1996,
+   "note": "1996 維持卡單原值，無爭議，而且**這是本組唯一能寫到日的卡**：MB release-group first-release-date 1996-08（月精度）、MB 那筆 Ajax release 的 date 也是 1996-08、Discogs 三筆 1996 年條目的 released 欄都只到年；**日的來源有兩個且一致**——Apple 那筆的 releaseDate 1996-08-19，以及英文維基條目資訊框與 Release history 表的 1996 年 8 月 19 日。**行文可寫到日：1996 年 8 月 19 日**（若求穩，寫到「1996 年 8 月」是三方都直接支持的）。2005-03-29 是 3 Beads of Sweat 重發日，不是本作問世日。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：Graeme Jefferies 客串這條線與 Trouser Press 對**本張**的整段評語；Ajax 的宣傳卡帶與 3 Beads of Sweat 重發這兩件事實。\n**禁令**：(1) **Ajax Records 的廠牌史整條禁用**（分派給〈Shining Hours in a Can〉）——本卡可以寫「廠牌叫 Ajax Records、編號 AJAX 056」，**不得寫它是誰開的、在哪座城市、怎麼起家**。(2) **Darnielle 的家用錄音法與 boombox 敘事禁用**（分派給〈The Hound Chronicles〉）；**Bright Mountain Choir 的參與者名單禁用**（分派給〈Hot Garden Stomp〉）。(3) **Peter Hughes 這個人禁用**（分派給〈Placeholders〉）。(4) **英文維基百科那段本文（「third studio album」「last Mountain Goats release to feature Rachel Ware」「Graeme Jefferies plays guitar on three of the songs」）整段不得採用——它沒有行內引註**（第 40／80 條）。**能用的只有兩處帶引註的東西**：資訊框的 Released 欄（1996-08-19）與 Release history 表，以及評分表引的 Alternative Press 1997 年 3 月號（Laurel Bowman 撰，vol. 11 no. 104，p. 72，ISSN 1065-1667，標記 favourable）。**引用時只能寫成「維基條目的評分表引了 Alternative Press 那篇」**（第 128 條），**不得轉述那篇評論的內容**——我沒有讀到原文。**同時注意：「Graeme Jefferies 彈了三軌」這件事在維基那段沒有引註，但 Discogs 黑膠條目 744810 的曲目表逐軌掛了名，可以改引 Discogs 那個來源寫。**(5) **〈Moon And Sand〉與 Chet Baker 的關係、〈Hellhound On My Trail〉與 Robert Johnson 的關係，只能照 Discogs 條目的原句寫**（一句在註記欄、一句在曲目表的 Written-By 欄）；**不得描述原曲、不得說這是致敬或翻唱策略**（第 110 條）。(6) **原盤軌數只能寫 18**——Discogs 黑膠／CD／宣傳卡帶／2005 重發四筆與 MB 三筆 release 全部一致 18 軌，Apple 也是 18，沒有加曲版也沒有二合一（第 140／141 條已逐版比對）。(7) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；那捲 Promo 卡帶只能寫成「Discogs 上另有一筆同編號、格式欄標 Promo 的卡帶條目」，**不得由它推論發行規模或收藏價值**。(8) 〈Going To Reykjavík〉在 Discogs 的 CD 與宣傳卡帶條目上拼成「Reykjavák」、黑膠與 2005 重發拼成「Reykjavík」——**這是資料庫的拼寫差異，只能寫成「不同條目上拼法不同」，不得說成唱片上印錯了**（第 136 條）。\n**探測層核對**：previews.json 標 ready、collectionId 263632188、trackCount 18。**我逐軌核對過**：Apple 那十八軌與 Discogs 1996 年 CD 逐項同名同序，不是加曲版也不是二合一，試聽可用、軌數可用。要注意的是 Apple 的 copyright 欄寫 ℗ 2005 3 Beads Of Sweat（那是重發方），**releaseDate 1996-08-19 才是可用的年份佐證**。"
+ },
+ {
+  "key": "desc2:Linda Smith|Nothing Else Matters",
+  "artist": "Linda Smith",
+  "album": "Nothing Else Matters",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1438613 記：廠牌 Feel Good All Over，編號 F7005，country US，released 欄 1995，格式 CD x1 [Album]；barcode「0 70567 70052 1」，matrix 欄「F7005 :MASTERED: :BY NIMBUS:」，Mastering SID Code 欄 IFPI L124；companies 欄兩條——Mixed At: Track-In-The-Box、Glass Mastered At: Nimbus；註記欄寫「Mixed at Track In the Box Studio, Baltimore, MD.」與「Lyrics inside.」。",
+    "src": "https://www.discogs.com/release/1438613"
+   },
+   {
+    "f": "同一條目的 credit 欄共五條：Written-By: Linda Smith；Mixed By [Mix Engineer], Producer [Production Adviser]: George Hagegeorge；Artwork [Cover Painting]: Joanne Wolfe；Photography By [Inside]: Laure Drogoul；Other [Typist, Word Processing And General Secretary To Miss Smith]: Peggy Bitzer——最後這條的角色說明就是條目上的原文。",
+    "src": "https://www.discogs.com/release/1438613"
+   },
+   {
+    "f": "原盤條目登錄的 12 軌曲長，以及曲目表上逐軌掛的客座：1 The Answer To Your Question 4:49／2 In No Uncertain Terms 2:47／3 I'll Never See You Again 4:09（Percussion: Peggy Bitzer）／4 For Here Or To Go 3:07（Violin: Nancy Andrews）／5 In The Hospital 2:03（Vocals: Emma Elizabeth Downing）／6 Bright Side 4:14／7 All Of The Blue 6:34（Guitar: Peggy Bitzer；Vocals: Emma Elizabeth Downing）／8 Only A Moment 2:30／9 I See Your Face 2:55／10 It Seems To Me 2:23／11 Little To Be Won 2:48／12 Nothing Else Matters 3:04。",
+    "src": "https://www.discogs.com/release/1438613"
+   },
+   {
+    "f": "Discogs 重發條目 29950885（Captured Tracks，編號 CT-370，released 欄 2024-03-01，Vinyl LP [Album, Limited Edition, Reissue]）的曲目排成 A1–A6／B1–B7 共 **13 軌**：前十二軌與 1995 年 CD 同名同序，多出來的是末軌 B7〈Salad Days〉，其 Written-By 欄掛 Alison Statton 與 Stuart Moxham；註記欄另寫「Includes double-sided 24\" × 12\" insert.」，companies 欄 Pressed By: Precision Record Pressing、Mastered At: GZ Media。",
+    "src": "https://www.discogs.com/release/29950885"
+   },
+   {
+    "f": "同一筆 2024 年重發的 credit 欄比 1995 年原盤多出三條：Performer [All Other Vocals And Instruments], Recorded By: Linda Smith；Mastered By [Uncredited]: Jamie Harley (2)；Layout: Patrick Fernandes；並把 Written-By 的涵蓋範圍標成「Linda Smith (A1 to A5, B1 to B6)」——**剛好把末軌 B7 排除在外**。Joanne Wolfe 的封面畫、George Hagegeorge 的混音、Laure Drogoul 的照片三條沿用。",
+    "src": "https://www.discogs.com/release/29950885"
+   },
+   {
+    "f": "Discogs 另有一筆 32457861：廠牌欄回到 Feel Good All Over（編號欄 none），released 欄同樣 2024-03-01，格式「File x13 [FLAC, Album, Reissue]」——與 Captured Tracks 的黑膠同日、同 13 軌。",
+    "src": "https://www.discogs.com/release/32457861"
+   },
+   {
+    "f": "MusicBrainz release-group 249c1f52 的欄位：title《Nothing Else Matters》、first-release-date 1995、primary-type Album、secondary-types 空陣列、artist-credit「Linda Smith」；url 關聯只有一條，指向 AllMusic mw0000187532。",
+    "src": "https://musicbrainz.org/release-group/249c1f52-183b-4981-9562-140b18db5912"
+   },
+   {
+    "f": "以 release?release-group=249c1f52…&inc=recordings 逐版比對：MB 轄下兩筆 release 的**軌數不同**——1995 US Official（Feel Good All Over／F7005、CD、barcode 070567700521）是 **12 軌**；2024-03-01 Official（Captured Tracks、Digital Media、國別欄空）是 **13 軌**。多出來的一軌就是 Discogs 2024 年條目上的〈Salad Days〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=249c1f52-183b-4981-9562-140b18db5912&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MusicBrainz 藝人 297d61a3-e5fd-4881-8deb-d043114166f0 的欄位：name「Linda Smith」、sort-name「Smith, Linda」、type Person、country US、**disambiguation 欄寫「singer songwriter active 1986-」**；url 關聯裡掛了**兩個不同的 Discogs 藝人頁**（artist/275947 與 artist/7587121）、一個 Bandcamp、一個 Wikidata（Q106462773），以及一條 interview 關聯指向 Don Campau 的 Living Archive 頁面。以 artist?query=name:\"Linda Smith\" 查 MB，第二筆就是另一位掛同名的英國喜劇演員（163f6734，disambiguation 欄「English comedian」）。",
+    "src": "https://musicbrainz.org/artist/297d61a3-e5fd-4881-8deb-d043114166f0"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 6789811324 的欄位：collectionName《Nothing Else Matters》、artistName「Linda Smith」、trackCount 13、releaseDate 2024-03-01、copyright「℗ 2024 Captured Tracks」；**逐軌核對**：第 1 至 12 軌與 1995 年 CD 同名同序，第 13 軌是〈Salad Days〉4:08——**Apple 上架的是 2024 年那個多一軌的版本，不是 1995 年原盤**。Discogs 藝人頁 275947 的簡介欄只有五個字：「Baltimore, MD.」。",
+    "src": "https://music.apple.com/us/album/nothing-else-matters/6789811324"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄上有一個角色叫「打字員、文書處理，兼史密斯小姐的總務秘書」",
+   "二十九年後重發時多了一首歌，而那首不是她寫的"
+  ],
+  "sound": "十二軌的獨作專輯：credit 欄只有一條 Written-By，掛同一個名字；三位客座各只出現在一到兩軌上（一軌打擊、一軌小提琴、兩軌和聲、一軌吉他），其餘七軌在條目上沒有第二個人。曲長分佈很開——最長的〈All Of The Blue〉6:34 是最短的〈In The Hospital〉2:03 的三倍多，另有兩首過四分鐘。混音掛在同一個人名下，錄音室寫在註記欄裡（巴爾的摩的 Track In the Box），2024 年重發的 credit 欄才補上「所有其他人聲與樂器」與錄音都由本人擔任這一條。（本欄由 Discogs 1995 年原盤與 2024 年重發兩份 credit 欄、以及原盤曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "All Of The Blue",
+   "The Answer To Your Question",
+   "Nothing Else Matters"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，無爭議：Discogs 原盤條目 1438613 的 released 欄 1995（年精度）、MB release-group first-release-date 1995、MB 那筆 Feel Good All Over release 的 date 也是 1995。**行文只能寫到年**——三個來源都沒有月或日。**2024-03-01 是重發日，不是本作問世日**，而 Apple 那筆的 releaseDate 與 ℗ 都落在 2024，`previews.json` 也因此標了 `yearDrift: 29`——**那個 29 是版本落差，不是年份爭議**，行文不得把 2024 寫成與本作有關的年份。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：Feel Good All Over 與 Captured Tracks 兩家廠牌；家庭錄音者的自製編制這條線（本組唯一一張以「一人寫、一人錄、客座只出現在單軌」為 credit 形狀的卡）。\n**禁令**：(1) **不得寫壓量、份數、稀有度、二手價**（第 109 條，全批禁用）——**本卡最容易踩**：Discogs 2024 年重發條目的註記欄第一句就是壓量數字，**那一句整句不得使用**，能用的只有第二句（雙面內頁）。格式欄的「Limited Edition」只能寫成「該條目的格式欄標了 Limited Edition」。(2) **原盤軌數只能寫 12**，**行文不得寫 13**。Apple 那筆 trackCount 13 是 **2024 年 Captured Tracks 的加曲版**：前十二軌與原盤同名同序，第十三軌〈Salad Days〉是原盤沒有的，且 Discogs 與 MB 兩邊都把它的作者記成別人（第 140／141 條）。**〈Salad Days〉不得寫進本張的曲目、也不得當關鍵曲。**(3) **〈Salad Days〉是翻唱這件事，只能寫成「2024 年重發條目的 Written-By 欄把這一軌掛給 Alison Statton 與 Stuart Moxham」**——**不得寫它原本出自哪個團、哪張碟**（第 110 條；我沒有查到把這兩個名字接到某張唱片上的來源）。(4) **掛名撞名的處理**（第 139 條）：「Linda Smith」是常見英文姓名，MB 上另有一位英國喜劇演員同名，MB 這位本人的條目底下還掛了**兩個不同的 Discogs 藝人頁**。行文若要說「這是哪一位」，**只能寫 MB disambiguation 欄那句「singer songwriter active 1986-」與 Discogs 藝人頁的「Baltimore, MD.」**，不得自行補生平。(5) 「Typist, Word Processing And General Secretary To Miss Smith」這個角色欄很搶眼，可以寫，但**只能寫成「條目上的角色欄這樣寫」**，**不得推論那是玩笑、自嘲或某種製作方式**（第 128 條）。(6) 那條 interview 關聯（Don Campau 的 Living Archive）我**沒有開過**，**不得引用其內容**；能寫的只有「MB 藝人條目掛了一條 interview 關聯」這件事本身。(7) AllMusic mw0000187532 我**沒有開過**，**不得引用其評語或評分**。\n**探測層核對（我推翻探測層的地方）**：previews.json 把本卡標 ready、collectionId 6789811324、trackCount 13、`yearDrift: 29`、`reissueTitle: false`，**但沒有標 `expandedReissue`**。逐軌核對後確認 Apple 那筆比 1995 年原盤多一軌（末軌〈Salad Days〉），依第 140 條這是**加曲版**（多出來的排在最後、且是別人的作品，不是別張專輯的曲目），依第 77 條**試聽可用、軌數不可用**。**建議主線在 previews.json 補標 `expandedReissue: true`、`originalTrackCount: 12`。**"
+ },
+ {
+  "key": "desc2:East River Pipe|Shining Hours in a Can",
+  "artist": "East River Pipe",
+  "album": "Shining Hours in a Can",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1090227 記：廠牌「Ajax Records (2)」，編號 AJAX 041，country US，released 欄 1994，格式 CD x1 [**Compilation**]；barcode「7 91071 00412 6」，matrix 欄「[logo] DISQUE AMERIC 09473<769>AJAX041」，Rights Society 欄 BMI。",
+    "src": "https://www.discogs.com/release/1090227"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「'These songs were recorded and mixed in a small apartment in Queens, NYC, on a Tascam 388 mini-studio'」「Released in a standard jewel case, with a folded 8-panel inlay (square if unfolded).」「Track 14 printed duration differs: 4:02」「All songs © 1991-1993 Hawk Be Out Music (BMI)」「℗ 1994 Hell Gate Productions」「© 1994 Ajax Records」「Made In Canada」。",
+    "src": "https://www.discogs.com/release/1090227"
+   },
+   {
+    "f": "同一條目的 credit 與 companies 欄：Songwriter [Songs], Noises: F.M. Cornog；Mastered By: Danny Caccavo；Photography By: Barbara Powers 與 F.M. Cornog；Licensed From: Hell Gate Productions；Phonographic Copyright (p): Hell Gate Productions；Copyright (c): Hawk Be Out Music 與 Ajax Records (2)；Pressed By: Disque Americ；Mastered At: This Way Productions。",
+    "src": "https://www.discogs.com/release/1090227"
+   },
+   {
+    "f": "原盤條目登錄的 15 軌曲長：Make A Deal With The City 2:54、My Life Is Wrong 3:17、Helmet On 4:02、Happytown 2:36、Axl Or Iggy 5:20、Psychic Whore 2:50、Firing Room 2:43、Silhouette Town 3:14、Dogman 3:04、When Will Your Friends All Disappear? 2:53、Bernie Shaw 2:48、40 Miles 7:05、Times Square Go-Go Boy 3:16、She's A Real Good Time 4:08、Woody's Car 1:02——最長的〈40 Miles〉7:05 是最短的〈Woody's Car〉1:02 的近七倍。",
+    "src": "https://www.discogs.com/release/1090227"
+   },
+   {
+    "f": "Discogs 重發條目 605102（Merge Records，編號 MRG203CD，released 欄 2002，CD [Compilation, **Reissue**]，barcode 036172950324）的曲目是 **17 軌**：前十五軌與 1994 年原盤同名同序（曲長各差一到四秒），多出來的是第 16 軌〈Hide My Life Away From You〉3:06 與第 17 軌〈Miracleland〉2:48；註記欄寫「All-new artwork.」與「Recorded and mixed in a small apartment in Queens, NYC.　Originally mastered in 1994.」。",
+    "src": "https://www.discogs.com/release/605102"
+   },
+   {
+    "f": "同一筆重發的 credit 欄與原盤不同：Mastered By [Originally Mastered]: Danny Caccavo 之外多出 Mastered By [Additional Mastering]: John Golden，掛名改成 Performer [Songs & Noises]: F.M. Cornog，並多一條 Producer [Organizer Of Chaos]: Barbara Powers；companies 欄的 Phonographic Copyright (p) 從 Hell Gate Productions 改成「Big Ed's Moon Ride」，另列 Published By: Bug Music、Mastered At: Golden Mastering。",
+    "src": "https://www.discogs.com/release/605102"
+   },
+   {
+    "f": "MusicBrainz release-group ef8d1bc2 的欄位：title《Shining Hours in a Can》、first-release-date 1994、primary-type Album、**secondary-types 只有一個 Compilation**、artist-credit「East River Pipe」；url 關聯只有一條，指向 Discogs master 477168。",
+    "src": "https://musicbrainz.org/release-group/ef8d1bc2-1032-3cf9-a9f1-ec3684648974"
+   },
+   {
+    "f": "以 release?release-group=ef8d1bc2…&inc=recordings 逐版比對：MB 轄下兩筆 release 的**軌數不同**——1994 US Official（Ajax／AJAX 041、CD、barcode 791071004126）是 **15 軌**；2002-03-19 US Official（Merge Records／MRG203CD、CD、barcode 036172950324）是 **17 軌**。多出來的兩軌與 Discogs 2002 年條目上多出來的兩軌相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ef8d1bc2-1032-3cf9-a9f1-ec3684648974&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1839133884 的欄位：collectionName《Shining Hours in a Can》、artistName「East River Pipe」、trackCount 17、releaseDate 2002-03-19、copyright「℗ 2002 Merge Records」；**逐軌核對**：第 1 至 15 軌與 1994 年原盤同名同序，第 16 軌〈Hide My Life Away from You〉3:07、第 17 軌 Apple 拼成〈Miracle Land〉（Discogs 與 MB 作〈Miracleland〉）——**Apple 上架的是 2002 年那個多兩軌的 Merge 版，不是 1994 年 Ajax 原盤**。",
+    "src": "https://music.apple.com/us/album/shining-hours-in-a-can/1839133884"
+   },
+   {
+    "f": "Trouser Press 的 East River Pipe 條目（署名 Deborah Sprague）寫：「The fifteen-song Shining Hours in a Can, which collects several years' worth of singles released on Hell Gate, a label operated out of an Astoria, Queens, apartment by Cornog and his companion, Barbara Powers, can be seen as either an unbroken wash of melancholy beauty or an elaborate construct of pop impressions, each more soul-stirring than the one before.」，同段並標出兩軌的年份「The autumnal 'Make a Deal With the City' (1993) exudes eloquent resignation; 'Axl or Iggy' (1991) brings genuine pathos to the notion of pursuing the rock-star myth.」，並形容作者是「New York's Fred M. Cornog, who records under the nom de 8-track East River Pipe」、這些歌是「crafted these songs alone in a 'studio' that takes up one corner of his living room」。該條目的唱片列表把本作記為「Shining Hours in a Can (Ajax) 1994」。",
+    "src": "https://trouserpress.com/reviews/east-river-pipe/"
+   }
+  ],
+  "hookCandidates": [
+   "十五首歌的著作權年份寫的是 1991 到 1993——這張碟把三年份的單曲收在一起",
+   "最長的一首七分零五秒，最短的一首一分零二秒"
+  ],
+  "sound": "十五軌，曲長分佈是本組最開的一張：〈40 Miles〉7:05、〈Axl Or Iggy〉5:20 與〈She's A Real Good Time〉4:08 三首撐開上緣，〈Woody's Car〉1:02 是下緣，其餘多在兩分半到三分半之間。credit 欄上整張碟只有一個演奏／創作掛名，角色欄寫的是「Songs, Noises」；除此之外的名字都在製作端——母帶、攝影、授權方。註記欄用引號引了一句關於錄音的說明，點名了機器（Tascam 388 mini-studio）與地點（皇后區的一間小公寓）。著作權欄寫「All songs © 1991-1993」，跨三個年份。（本欄由 Discogs 原盤條目的 credit、註記與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Make A Deal With The City",
+   "Axl Or Iggy",
+   "40 Miles"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，無爭議：Discogs 原盤條目 1090227 的 released 欄 1994、註記欄的「℗ 1994 Hell Gate Productions」與「© 1994 Ajax Records」、MB release-group first-release-date 1994、MB 那筆 Ajax release 的 date 1994、Trouser Press 唱片列表的「(Ajax) 1994」——五處一致。**行文只能寫到年**：沒有任何來源給出 1994 年的月或日。**2002-03-19 是 Merge 重發日**，Apple 那筆的 releaseDate 與 ℗ 都落在 2002，`previews.json` 因此標 `yearDrift: 8`——那是版本落差，不是年份爭議。另有一個**不同性質**的年份可用：著作權欄的「All songs © 1991-1993」與 Trouser Press 標的兩軌年份（1993、1991），**那是曲子的年份，不是這張碟的年份**，行文要說清楚是哪一件事（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Ajax Records 的廠牌史**（Discogs 廠牌頁 58017 的簡介欄寫「1980s-1990s indie rock label from Chicago, Illinois, owned by Tim Adams (11). See also 3 Beads Of Sweat. Tim was a pioneer of sorts in the independent world, combining the label with a wider business (also called Ajax) that began at home as a mail order one-stop for small and micro-label indie, and became a record store.」；同頁的 urls 欄掛了一條 Chicago Reader 的報導連結——**我沒有開那篇報導，不得引用其內容**，只能寫「廠牌頁掛了一條連結」。依第 128 條**只能寫成「Discogs 的 Ajax 廠牌頁簡介欄說」**）；Hell Gate 這條自營支線；Merge 2002 年重發。**同批的〈Nothing for Juice〉也是 Ajax 的碟，那張禁用廠牌史。**\n**禁令**：(1) **§5.6 例外要在行文上守住**：MB 該 release-group 的 secondary-types 是 **Compilation**，Discogs 原盤與重發的格式欄也都標 Compilation，Trouser Press 說它「collects several years' worth of singles」——**行文不得把它寫成一次錄出來的專輯**；年份取合輯首次出版年 1994（卡單原值），這一點已由五個來源確認。(2) **原盤軌數只能寫 15**，**行文不得寫 17**。Apple 那筆是 2002 年 Merge 的加曲版（多出來的兩軌排在最後、且不是別張專輯的曲目，依第 140 條屬加曲版而非二合一，依第 77 條可收）——**〈Hide My Life Away from You〉與〈Miracleland〉不得寫進本張的曲目、也不得當關鍵曲**。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) **Trouser Press 那段裡的傳記內容（無家可歸、酗酒、住在霍博肯車站）整段不得使用**——那是**藝人生平**，與本張碟的關係在該條目裡是「colors much of Cornog's work」這種概括，寫進 180–240 字的碟介會變成寫人不寫碟，而且第 146 條要求分派只寫線、不寫評價。**能用的是那段裡對這張碟本身的敘述**：十五軌、收單曲、Hell Gate 是誰在哪裡經營、兩軌的年份、以及「客廳一角的錄音間」這個說法。(5) **不得由曲名推論翻奏、人物或出處**（第 110 條）——〈Axl Or Iggy〉〈Bernie Shaw〉〈Times Square Go-Go Boy〉都沒有來源說明它們寫的是誰。(6) 「Tascam 388 mini-studio」這句在 Discogs 註記欄裡是**帶引號的引文**（條目沒有標出處），**只能寫成「原盤條目的註記欄引了一句話，說這些歌在皇后區的一間小公寓、用一台 Tascam 388 錄成」**，不得寫成「他說」。(7) 2002 年重發把 ℗ 從 Hell Gate Productions 改成「Big Ed's Moon Ride」——這只能寫成「兩份條目上的欄位不同」，**不得推論權利易手的過程**（第 136 條）。\n**探測層核對（我推翻探測層的地方）**：previews.json 把本卡標 ready、collectionId 1839133884、trackCount 17、`yearDrift: 8`、`reissueTitle: false`，**但沒有標 `expandedReissue`**。逐軌核對後確認 Apple 那筆比 1994 年原盤多兩軌，是 2002 年 Merge 版。試聽可用、軌數不可用。**建議主線在 previews.json 補標 `expandedReissue: true`、`originalTrackCount: 15`。**"
  }
 ]
