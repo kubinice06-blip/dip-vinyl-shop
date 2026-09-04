@@ -43,7 +43,7 @@ add(
 
 // 7
 add(
-  '這份條目把 Inspiration 也編成一個 credit 角色，欄位上寫著 Charles Butler。',
+  'Inspiration 在 credit 欄上也是一個角色，欄位裡寫著 Charles Butler。',
   '重心是 credit 欄那個被編成角色的欄位，與五軌的兩層作者。開頭止於那個名字→接編制：管風琴、次中音薩克斯風 Harold Vick 與鼓 Billy Higgins，A2 另加 Jimmy Hopps 的牛鈴，B3 的掛名者改彈美樂特朗→接五軌 Written-By 欄的三比二，註記欄兩家出版商的分軌與作者欄對得上→接公司欄那兩行錄音室只寫自己條目上的→接 2020 年那筆再發的 Liner Notes 與 Reissue Producer 都掛 Maxine Gordon→曲目點 A1〈What Makes Harold Sing?〉8:53 與 B2〈Big George〉5:22。Harold Vick 只寫成本卡欄位上的三個位置。'
 );
 
@@ -85,7 +85,7 @@ add(
 
 // 14
 add(
-  '整份 credit 欄只有三條：拉小提琴的、打鼓的，與寫內頁文的那一位。',
+  '整份 credit 欄只有三條：小提琴、鼓，以及內頁文那一條。',
   '重心是那三條 credit，與 Studio 77 的地址。開頭止於三條的內容→接鼓那一條同時掛錄音與混音工程師、小提琴那一條同時是四軌的作者，內頁文那條只寫成欄位上的一個名字→接註記欄逐行：錄音 9/18/75、混音 9/19/75、地址寫 Studio 77, 77 Greene Street, N.Y.C. 10012→接公司欄的 Printed By 與 Published By→接 1999 年那筆 Knit Classics 把三條擴成十三條，封面攝影欄寫 Unknown Artist→曲目點 A1〈Past〉7:26 與 B2〈The Stomp〉5:00。發行年兩庫各執一詞，全篇不給發行年的斷言句；掛名的四種字串各自照抄。'
 );
 
@@ -123,6 +123,24 @@ add(
 add(
   '九個曲位分屬五個錄音場次，註記欄把每一場的日期與地點列著。',
   '重心是五個場次拼成的四面，與兩則帶引註的評價。開頭止於場次與曲位的對應→接註記欄：A 與 B1、B2 錄在 1976 年 8 月 23 日的維利紹，B3、C1 與 B4、D1 錄在 1977 年 1 月與 2 月的芝加哥，C2 錄在柏克萊的 Mapenzi，D2 也在芝加哥→接三個錄音地各有錄音者，柏克萊那場掛的是掛名者自己→接四個曲位有客座：一軌加高音薩克斯風、一軌加低音提琴、一軌加鋼琴與長號、一軌另加三支中音薩克斯風→接維基〈Nonaah〉條目說 AllMusic 與《The Rolling Stone Jazz Record Guide》各給的評等，並引 Clifford Allen 那篇評論的原句→曲目點 A〈Nonaah〉21:52 與 B1〈Ericka〉，同名曲指明曲位。'
+);
+
+// 21
+add(
+  'B 面第一軌換上另一組人：三把豎琴加一位指揮，其餘兩軌是五個人。',
+  '重心是那一軌的另一組編制，與 Van Gelder Studio。開頭止於豎琴與指揮，三個豎琴名字與指揮 Dwight Andrews 都標在 credit 欄的適用軌上→接另兩軌的五人編制：小號與翼號、單簧管與次中音薩克斯風兼木笛、貝斯兼木笛、鐵琴、鼓→接公司欄 Recorded At 寫 Van Gelder Studio, Englewood Cliffs, New Jersey，Engineer 欄寫 Rudy Van Gelder，註記欄寫錄音在 1979 年 5 月 21 日→曲目只點 A〈Images〉與 B1〈The Burning Of Stones〉。原盤兩庫都沒填曲長，要給秒數就寫明引的是 2009 年那筆條目。掛名四處字串各自照抄，時序推論一律避開。'
+);
+
+// 22
+add(
+  '題獻列在註記欄上，一共七個名字，末位那個的拼法是 Rashid Ali。',
+  '重心是那則題獻，與 B 面整面的那一個曲位。開頭止於七個名字→接 B〈Theme For Milford (Mr. Body & Soul)〉20:23 佔滿一面，A 面兩軌 5:26 與 14:01→接編制五人：薩克斯風兼作曲、小號 Arthur Williams (5)、鋼琴 Mark Hennen、貝斯兼大提琴 William Parker、鼓 Rashid Bakr→接 Producer 欄寫的是團名與另一個實體，Published By 寫 Moon-Jem Publishing Co.，廠牌欄同時列這兩者→接公司欄與註記欄兩處錄音室字串各自照抄→接 2009 年那套三 CD 盒裝的註記欄逐項說明每一片的來源。年份只寫到年，月與日避開；掛名四種字串照卡單值走。'
+);
+
+// 23
+add(
+  'credit 欄上的樂手只有三位：中音薩克斯風、低音號與康加。',
+  '重心是那三件樂器，與這家廠牌的創辦敘述。開頭止於三位樂手，掛名者那一條同時掛編曲、作曲與製作→接低音號 Bob Stewart 與康加 Ahkmed Abdullah 兩條→接兩條版權欄分屬兩邊：錄音版權掛廠牌、作品版權掛樂手本人→接維基〈Adelphi Records〉條目說（引註《Washington City Paper》）該廠牌 1968 年成立、1970 年由 Gene Rosenthal 登記，廠牌名同時指向德爾菲神諭、馬里蘭州的 Adelphi 與 John Fahey 那首曲子；他在本卡掛 Mixed By 與 Photography By，兩件事之間留白→接錄音室名字在條目上有三種字串→曲目點 A1〈Mamie Lee〉10:32 與 B1 8:20。'
 );
 
 const out = E.map((e, i) => ({ key: R[i].key, hook: e.hook, note: e.note }));
