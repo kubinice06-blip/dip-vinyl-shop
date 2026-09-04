@@ -8,7 +8,7 @@
   ],
   "label": "Black Jazz Records",
   "why": "Black Jazz Records 目錄 BJQD/17，是貝斯手 Henry Franklin 在該廠牌的第二張，原盤同年另有日本 Black Jazz YX-7016 壓片。地位證據是連續四十年不斷線的授權再發：P-Vine 1997 年黑膠 PLP-6732 與 1998 年 CD PCD-5286、Black Jazz 自家 2002 年 CD BJ/17、P-Vine 2005 年 PCD-22102、2013 年日本重製 SDGBJ1217，以及 Real Gone Music 2021 年起的黑膠與 CD 復刻 RGM-1264／RGM-1266（2024、2026 兩度再壓）。Discogs master 506942 的 17 個版本零筆標 Unofficial。池中已有同藝人 1972 年的《The Skipper》(BJ/7)，本張是同一條線的下一張、不是同一張碟。",
-  "risk": "撞卡風險：池中的《The Skipper》(1972) 與本張《The Skipper at Home》(1974) 盤名互為子字串，任何用子字串比對的去重都會誤判為同一張，實掃已確認是兩張不同的碟。Black Jazz 原盤是四聲道（Quadraphonic）壓片，日後 CD 多為立體聲混音，行文不得把兩種混音當同一版本。封面預估可從 CAA 或 Apple 取得（Real Gone 復刻已進串流）；試聽預估中等。",
+  "risk": "撞卡風險：池中的《The Skipper》(1972) 與本張《The Skipper at Home》(1974) 盤名互為子字串，任何用子字串比對的去重都會誤判為同一張，實掃已確認是兩張不同的碟。Black Jazz 原盤是四聲道（Quadraphonic）壓片，日後 CD 多為立體聲混音，行文不得把兩種混音當同一版本。**CAA 實測無封面（本批 45 張裡只有 3 張如此）**，封面要走 Apple 那條線——實測 us 店面有這張碟（collectionId 1509131569）。",
   "mbNote": "MB release-group 52e06de4-4e3b-309f-9165-bc57393b3f4f《The Skipper at Home》，artist-credit「Henry Franklin」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1974 US（Black Jazz 原盤）、2002 US、2013-03-27 JP。已回問 release-group 端點確認實體類型與標題。藝人另有 1972 年《The Skipper》的獨立 release-group（池中已有），刻意不釘。",
   "releaseType": "Album",
   "exceptionReason": "",
@@ -203,7 +203,7 @@
   ],
   "label": "Nimbus West Records",
   "why": "Nimbus West Records 目錄 Nimbus #791，鋼琴手 Linda Hill 名下唯一的專輯，同屬洛杉磯 UGMAA 圈子。地位證據是 Nimbus West 自家 2012 年 CD（NS791C）、2019 年黑膠再壓（NS-791），以及 2019 年 UGMAA 掛名的復刻版（NIMBUS #791）；Discogs 版本頁 5 筆零筆標 Unofficial。池中 Linda Hill 零張。",
-  "risk": "掛名是兩個極常見的英文名，且盤名裡又出現同一個名字（Linda），字串比對兩邊互相干擾，下游一律要靠 rgMbid。「名下唯一專輯」依 MB 與 Discogs 查詢結果，屬推論。封面預估中等（CAA 有無待實測），試聽預估偏低——Nimbus West 目錄進串流的比例不高。",
+  "risk": "掛名是兩個極常見的英文名，且盤名裡又出現同一個名字（Linda），字串比對兩邊互相干擾，下游一律要靠 rgMbid。「名下唯一專輯」依 MB 與 Discogs 查詢結果，屬推論。封面與試聽的實測結果：CAA 有圖，**Apple 只在 jp 店面命中**（collectionId 1101405649），us／gb 皆空，下游查詢一定要帶 country 參數（裁定第 137 條）。",
   "mbNote": "MB release-group b595a473-7adc-40d0-83d0-b51dcfa940b0《Lullaby for Linda》，artist-credit「Linda Hill」，first-release-date 1981，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1981 US（Nimbus West 原盤）、2012 US、2014-07-31 XW、2019 GB。已回問 release-group 端點確認實體類型與標題。",
   "releaseType": "Album",
   "exceptionReason": "",
@@ -326,6 +326,104 @@
   "selfTitled": true,
   "queryAlias": "Maulawi Nururdin",
   "reissuedBy": "Universal Sound／180 Proof Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Contemporary Jazz Quintet",
+  "album": "Location",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 1001-73，是這家廠牌編號最前面的一張。地位證據是 2018 年 BBE 與 Strata 合作的授權復刻：BBE 的 CD（BBE430ACD）與數位版，以及 Strata Records 自家的限量黑膠再壓（SRI 1001-73／OEP 1006）。Discogs master 1338288 的 4 個版本零筆標 Unofficial。池中 The Contemporary Jazz Quintet 零張。",
+  "risk": "掛名由四個常見英文字組成，Discogs 實體為「The Contemporary Jazz Quintet (2)」，字串搜尋會撈回大量無關結果；盤名《Location》是單一常見詞，掃池以盤名為主鍵時務必連掛名一起比（完全相等 0 筆）。MB 轄下只有 1 個 release 且 status 為 null（不是 Official 也不是 Bootleg），本卡的背書依據改採 2018 年 BBE 與 Strata 的授權復刻，不引用該筆 status。**CAA 實測無封面**，封面要走 Apple 那條線（實測 us 店面有這張碟）。",
+  "mbNote": "MB release-group de2e8401-1b14-49a8-b1bd-49a768643947《Location》，artist-credit「The Contemporary Jazz Quintet」，first-release-date 1973，primary-type Album、secondary-types 空。轄下僅 1 個 release：1973 US，**status 為 null**。已回問 release-group 端點確認 primary-type 為 Album 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Contemporary Jazz Quintet (2)／CJQ",
+  "reissuedBy": "BBE／180 Proof Records",
+  "g": "a"
+ },
+ {
+  "artist": "Sphere",
+  "album": "Inside Ourselves",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 103-74。地位證據是 180 Proof Records 2019 年的授權黑膠復刻（OEP 1007，含測試壓片）、Octave Lab 2022 年的日本 CD（OTLCD2601），以及 BBE 2023 年的德國黑膠（BBE714ALP，封套同時印上 SRI 103-74 與 OEP 1007 兩組編號）。Discogs master 1591566 的 5 個版本零筆標 Unofficial。池中 Strata（底特律）這條線在本批之前只有一張。",
+  "risk": "掛名撞名是本卡最大的風險：1980 年代另有一個由 Charlie Rouse、Kenny Barron、Buster Williams、Ben Riley 組成、同樣叫 Sphere 的四重奏（Elektra／Verve 出片），與底特律這個 Sphere 不是同一團；Discogs 用「Sphere (19)」區分。任何以單一藝人名查詢的下游都會撈錯團，封面與試聽務必靠 rgMbid。MB 標 secondary-type Live，行文要寫成現場錄音。",
+  "mbNote": "MB release-group 24b19429-df70-47c7-9c5f-d59ca4460c1e《Inside Ourselves》，artist-credit「Sphere」，first-release-date 1974，primary-type Album、secondary-types **Live**。轄下 3 個 release 全為 Official：1974 US（Strata 原盤）、2023-05-19 XW ×2。已回問 release-group 端點確認實體類型與標題。1980 年代同名四重奏的各張碟為完全不同的 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sphere (19)",
+  "reissuedBy": "180 Proof Records／BBE",
+  "g": "a"
+ },
+ {
+  "artist": "Oneness of Juju",
+  "album": "Space Jungle Luv",
+  "year": 1976,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19754。地位證據橫跨三十年：Black Fire 自家 1993／1994 兩次 CD、Strut 2002 年的英國授權黑膠與 CD（STRUTLP 028）、以及 Strut 2021 年重啟 Black Fire 目錄時的再版；Discogs master 的 15 個版本中 13 筆為再發，零筆標 Unofficial。池中已有本團 1975 年的《African Rhythms》(BF19751)，本張是次年的另一張碟；同一批人以「Juju」掛名的《A Message From Mozambique》與《Chapter Two: Nia》池中也已有。",
+  "risk": "掛名歧異密集，正是裁定第 151 條說的形狀：同一批人先後用「Juju」「Oneness of Juju」「Plunky and Oneness of Juju」「Plunky & Oneness of Juju」發片，池中三張分屬前兩種寫法，去重時四種都要比（本卡與池中三張皆非同一張碟，已逐一核對）。另 1994 年 Black Fire 曾以《Chapter Two: Nia》沿用 Strata-East 的編號 SES-7420 重發，跨廠牌重出的情形在這條線上很常見，年份引用要看清楚是哪一次。",
+  "mbNote": "MB release-group 007ce1bd-2321-37dd-b511-57a5ae447af1《Space Jungle Luv》，artist-credit「Oneness of Juju」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1976 US（Black Fire 原盤）、2002-04-30 GB（Strut）、2021-05-21 XW。已回問 release-group 端點確認實體類型與標題。《African Rhythms》《A Message From Mozambique》《Chapter Two: Nia》各有獨立 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Juju／Plunky and Oneness of Juju",
+  "reissuedBy": "Strut",
+  "g": "a"
+ },
+ {
+  "artist": "Wayne Davis",
+  "album": "Wayne Davis",
+  "year": 1976,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19752，Wayne Davis 的自我同名專輯。地位證據是 Strut 2022 年的授權黑膠復刻（STRUT244LP）——Strut 從 2020 年的《Soul Love Now: The Black Fire Records Story 1975-1993》開始系統性重發這家廠牌的目錄，本張是該系列的其中一張。Discogs 版本頁 3 筆零筆標 Unofficial。池中 Wayne Davis 零張。",
+  "risk": "自我同名卡（盤名＝掛名），依 §1 屬高風險，`selfTitledVerified` 必填；實測 Apple us 店面有這張碟（collectionId 1524569657），CAA 也有封面，身分證據充足。掛名由兩個極常見的英文名組成，同名的人在資料庫裡不只一個，下游一律要靠 rgMbid。「Strut 系統性重發 Black Fire 目錄」是依 Discogs 版本頁與該合輯歸納，屬推論，研究層要另行核對 Strut 官方頁。",
+  "mbNote": "MB release-group 43c8595c-060f-471b-8b88-9153de107c03《Wayne Davis》，artist-credit「Wayne Davis」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1976 US（Black Fire 原盤）、2022-05-13 XW（Strut）。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "",
+  "reissuedBy": "Strut",
+  "g": "a"
+ },
+ {
+  "artist": "Experience Unlimited",
+  "album": "Free Yourself",
+  "year": 1977,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19757，是後來以 go-go 聞名的 E.U. 最早的一張 LP。地位證據是 Black Fire 自家 1994 年的重發（BF19757）與 Now-Again Records 2019–20 年的授權黑膠復刻（NA 5176、NA 5176-LP-ST），後者同時作為 Vinyl Me, Please Essentials 的選盤發行。Discogs 上這張碟的各版本零筆標 Unofficial。池中 Experience Unlimited 零張。",
+  "risk": "掛名歧異：Discogs 記為「Experience Unlimited*」並指向 E.U. 這個實體，同一團日後多以「E.U.」發片，兩種寫法都要進 queryAlias，否則去重與查詢會漏。曲風歸類要小心：這張碟在爵士廠牌上發行，但團體本身屬華府 go-go 一脈，卡上填 soul 與 jazz 兩個標籤是策展層的判斷，不是外部資料庫的分類。MB 轄下的 1977 那筆 country 為 null。",
+  "mbNote": "MB release-group e79f3e9f-2c24-4940-bd9a-c87fb53834f4《Free Yourself》，artist-credit「Experience Unlimited」，first-release-date 1977，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1977（country null，Black Fire 原盤）、2019-05 US（Now-Again）、2021-02-05 XW。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "E.U.",
+  "reissuedBy": "Now-Again Records",
   "g": "a"
  }
 ]
