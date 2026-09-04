@@ -212,5 +212,120 @@
   "queryAlias": "",
   "reissuedBy": "Nimbus West Records／UGMAA",
   "g": "a"
+ },
+ {
+  "artist": "Pan Afrikan Peoples Arkestra",
+  "album": "Flight 17",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 NIMBUS-135，是這家廠牌成立後最早發行的作品之一，掛的是樂團本身而不是指揮 Horace Tapscott。地位證據是 Nimbus West 1997 年的 CD（NS 135 C）、2019 年 UGMAA 與 Outernational Sounds 合作的授權黑膠復刻（NIMBUS-135／OTR-010）與 2021 年再壓（NS-135）。Discogs 版本頁 5 筆中有 1 筆 2019 年英國盤被標為 Bootleg，其餘為授權版。池中已有 Horace Tapscott 掛名的《The Call》(1978, NS-246) 與《The Giant Is Awakened》(1969)，樂團本身掛名的碟則零張。",
+  "risk": "掛名歧異是本卡最大的風險，且正是裁定第 151 條說的「團體名 vs 領班名」：同一個樂團在不同碟上寫成「Pan Afrikan Peoples Arkestra」「Pan-Afrikan Peoples Arkestra」（帶連字號）與「Horace Tapscott with the Pan-Afrikan Peoples Arkestra」，池中既有卡用的是第三種。三種寫法都要進 queryAlias，否則去重與封面查詢都會漏。另 MB 轄下有一筆 2019 GB release 標 Bootleg，考古再發的背書判定要以 1997 年 Nimbus West 自家 CD 與 2019 年 UGMAA 版為準，不得引用那一筆。",
+  "mbNote": "MB release-group 595b6884-1253-4fec-8415-f577b6a4c623《Flight 17》，artist-credit「Pan Afrikan Peoples Arkestra」，first-release-date 1978，primary-type Album、secondary-types 空。轄下 4 個 release：1978 US Official（Nimbus West 原盤）、1997 US Official、2019 GB **Bootleg**、2021-10 DE Official。已回問 release-group 端點確認實體類型與標題。Horace Tapscott 掛名的《The Call》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pan-Afrikan Peoples Arkestra／Horace Tapscott with the Pan-Afrikan Peoples Arkestra",
+  "reissuedBy": "Outernational Sounds／UGMAA",
+  "g": "a"
+ },
+ {
+  "artist": "Horace Tapscott with The Pan-Afrikan Peoples Arkestra",
+  "album": "Live at I.U.C.C.",
+  "year": 1979,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 NIMBUS No. 357，錄於洛杉磯 Immanuel United Church of Christ 的現場雙碟。地位證據是 Nimbus West 2006 年的 CD（NS 357 C）、Soul Jazz Records 2019 年的授權 CD（SJR CD424）與 UGMAA 2023 年的限量重製黑膠。Discogs 上另有 Outernational Sounds 2019 年的黑膠 OTR-007，該筆被標為 Partially Unofficial，背書判定不採該筆、改以 Nimbus West 自家 CD 與 Soul Jazz 版為準（裁定第 43／57／65／78 條：判定單位是「這一次再發」）。池中已有 Tapscott 的《The Call》與《The Giant Is Awakened》，本張是他名下的現場錄音、不是同一張碟。",
+  "risk": "MB 標 secondary-type Live，是現場盤而非錄音室盤，行文要寫清楚。掛名歧異同《Flight 17》那張，三種寫法都要備查。Nimbus West 近年另出了一整套《Live at I.U.C.C.》加日期的分冊（ns-7901c 至 ns-7911c，2023–24 年），盤名與本張互為子字串，去重與封面比對時極易混淆，本卡釘的是 1979 年那張原始雙碟。另 MB 轄下有一筆 2019-03-26 GB release 標 Bootleg，不得引用。",
+  "mbNote": "MB release-group e5e3143e-1016-4ddf-9b43-b05f5d889ce9《Live at I.U.C.C.》，artist-credit「Horace Tapscott with The Pan-Afrikan Peoples Arkestra」，first-release-date 1979，primary-type Album、secondary-types **Live**。轄下 6 個 release：1979 US Official（Nimbus West 原盤）、2006 US Official、2014-07-31 XW Official、2019-03-22 AF Official、2019-03-26 GB **Bootleg**、2019 GB Official。已回問 release-group 端點確認實體類型與標題。2023–24 年 Nimbus West 的《Live at I.U.C.C. 2/25/79》等分冊各有獨立 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Horace Tapscott／Pan-Afrikan Peoples Arkestra",
+  "reissuedBy": "Soul Jazz Records／UGMAA",
+  "g": "a"
+ },
+ {
+  "artist": "Phil Ranelin",
+  "album": "The Time Is Now!",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 TRCD 4006，長號手 Phil Ranelin 名下的作品。地位證據是 Hefty Records 2001 年與 Tribe 合作的授權再發（HEFTY32／TRCD 4006）與 P-Vine 2009 年的日本 CD PCD-22332；Discogs master 的 11 個版本中 10 筆為再發，零筆標 Unofficial。池中已有他 1976 年的《Vibes from the Tribe》(TRCD4008)，本張是兩年前的另一張碟，Tribe 這條線在本批之前池中只有那一張。",
+  "risk": "盤名帶驚嘆號，字串正規化後與不帶驚嘆號的寫法相同，但外部服務的精確比對會分歧，queryAlias 要備一份不帶驚嘆號的。掛名另有「Phillip Ranelin」的寫法（同廠牌 1973 年《A Message From the Tribe》即用此寫法），是裁定第 151 條說的同一人兩種掛名，去重時要一起比。Tribe 廠牌在 Discogs 上的實體是「Tribe (3)」，與英國、挪威的同名廠牌不是同一家，引用時要帶括號序號。",
+  "mbNote": "MB release-group 7c6b1237-1783-4246-844e-af0c6fa6fdd5《The Time Is Now!》，artist-credit「Phil Ranelin」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1974 US（Tribe 原盤）、2001 US（Hefty）。已回問 release-group 端點確認實體類型與標題。同藝人《Vibes From the Tribe》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Phillip Ranelin／The Time Is Now",
+  "reissuedBy": "Hefty Records／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Harold McKinney",
+  "album": "Voices and Rhythms of the Creative Profile",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 PRSD 2233。地位證據是 P-Vine 2004 年 CD PCD-23571 與 2009 年 PCD-22334、Tribe 自家 2018 年的黑膠再壓（PRSD 2233）；Discogs master 517353 的 15 個版本中 11 筆為再發，零筆標 Unofficial。池中 Harold McKinney 零張。",
+  "risk": "盤名在 Discogs 上寫成《Voices & Rhythms Of The Creative Profile》（用 &），MB 寫成 and，正是裁定第 151 條「比對兩邊時先問用的是不是同一套命名」的形狀；兩種寫法都要進 queryAlias，否則封面與試聽的精確比對會落空。Tribe 廠牌實體為 Discogs 的「Tribe (3)」。",
+  "mbNote": "MB release-group a6553d49-f502-48e8-a5a5-ba42d392d82a《Voices and Rhythms of the Creative Profile》，artist-credit「Harold McKinney」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1974 US（Tribe 原盤）、2004 JP。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Voices & Rhythms of the Creative Profile",
+  "reissuedBy": "P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Mixed Bag",
+  "album": "Mixed Bag's First Album",
+  "year": 1976,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 TRCD4010。地位證據橫跨三十年：Soul Jazz Records 1992 年的英國授權黑膠（SJC 0001／TRCD 4010，是 Soul Jazz 目錄的第一號）、P-Vine 2004 年 PCD-23570 與 2009 年 PCD-22336、Octave Lab 2021 年的日本 CD 與黑膠（OTLCD2559／OTS 244），以及 Tidal Waves Music 2023 年的美國黑膠復刻 TWM103。Discogs master 595982 的 9 個版本零筆標 Unofficial。池中 Mixed Bag 零張。",
+  "risk": "掛名「Mixed Bag」是常見詞組，池中另有 Richie Havens《Mixed Bag》(1967) 這張盤名相同的碟——**掛名與盤名剛好對調**，任何以單一欄位比對的去重都會誤判，已人眼核對為不同的碟與不同的藝人。MB 實體標題用 U+2019 撇號《Mixed Bag’s First Album》，本卡一律採 ASCII 撇號，兩種寫法都要備查。「Soul Jazz 目錄第一號」是依 Discogs 編號 SJC 0001 歸納，屬推論，研究層要另行核對。",
+  "mbNote": "MB release-group a941d763-312f-4d7f-abd7-1bf0d10d7721《Mixed Bag’s First Album》（MB 用 U+2019），artist-credit「Mixed Bag」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1976 US（Tribe 原盤）、2004-10-15 JP。已回問 release-group 端點確認實體類型與標題。MB 上另有一個同名同碟的 release（5b4e23ce，country US、status undefined），非 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mixed Bag’s First Album",
+  "reissuedBy": "Tidal Waves Music／Soul Jazz Records",
+  "g": "a"
+ },
+ {
+  "artist": "Maulawi",
+  "album": "Maulawi",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 104-74，薩克斯風手 Maulawi Nururdin 的自我同名專輯。地位證據是 Universal Sound（Soul Jazz 旗下考古廠牌）2005 年的黑膠與 CD 授權復刻（US LP 26／US CD 26），以及 Strata Records 2020 年自家的黑膠重製（SRI 104-74／OEP1009）——後者屬 180 Proof Records 從 2018 年起系統性重發 Strata 目錄的那一批。Discogs master 183381 的 5 個版本零筆標 Unofficial。池中 Maulawi 零張，Strata（底特律）這條線在本批之前池中只有 The Lyman Woodard Organization《Saturday Night Special》一張。",
+  "risk": "自我同名卡（盤名＝掛名），依 §1 屬高風險，`selfTitledVerified` 必填。**實測 Apple 三個 storefront（us／gb／jp／ca）都查不到這張**，身分證據改採 release-group MBID（依 2026-09-04 店主放寬的三選一），CAA 實測有封面。掛名只有一個單字且是常見的阿拉伯語人名，外部服務的字串搜尋會撈回大量無關結果；藝人全名「Maulawi Nururdin」要進 queryAlias。Strata 廠牌實體為 Discogs 的「Strata Records (4)」，與同名的其他 Strata 不是同一家。",
+  "mbNote": "MB release-group d2b5c40a-8637-3055-b75f-fad1104ae0f0《Maulawi》，artist-credit「Maulawi」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1974 US（Strata 原盤）、2005-04-18 GB ×2（Universal Sound）、2020-12-01 XW。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Maulawi Nururdin",
+  "reissuedBy": "Universal Sound／180 Proof Records",
+  "g": "a"
  }
 ]
