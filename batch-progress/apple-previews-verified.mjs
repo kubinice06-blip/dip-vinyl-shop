@@ -17,7 +17,17 @@ if (!batch || !key || !cid) {
   console.error('用法：node batch-progress/apple-previews-verified.mjs <批> "<artist>|<album>" <collectionId> [理由]');
   process.exit(1);
 }
-const FRONTS = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
+// storefront 順序照該條線的既有設定（與 probe/probe-previews.mjs 的 LINE_FRONTS 一致）。
+// 硬寫成 jp 優先會讓 `front` 欄記錯——碟在 jp 也上架時，一支美國線的卡會被記成 jp。
+const JPN = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
+const UKB = ['gb', 'us', 'jp', 'de', 'fr', 'ie', 'ca', 'au'];
+const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
+const LINE_FRONTS = {
+  c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
+  c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB,
+  c85: UKB, c86: USB, c87: JPN,
+};
+const FRONTS = LINE_FRONTS[String(process.argv[2] || '').slice(0, 3)] || JPN;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const P = path.join(ROOT, `batch-progress/${batch}/previews.json`);
 const prev = JSON.parse(fs.readFileSync(P, 'utf8'));
