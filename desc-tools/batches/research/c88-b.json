@@ -61,7 +61,7 @@
   ],
   "status": "full",
   "yearVerified": "卡片 `year` 1990 = **這張唱片首次問世的年份**（MB release-group first-release-date 1990-09-25，JP WAVE 盤同日；Discogs 兩筆 Torso Kino 版的 released 欄也是 1990）。**三部電影的上映年是 1972、1975、1979**（英文維基〈Eduard Artemyev〉條目的片單），**與唱片年是四個不同的數字，行文若要提到必須分開講，不得把任何一個電影年寫成唱片年**。另：Apple 那一筆的 releaseDate 是 1999，那是同一個 release-group 內 Electroshock 版的年份，**也不是本卡的 1990**。",
-  "notes": "**這一張是哪一種原聲帶**：不是單一部電影的配樂盤，也不是收錄既有錄音的歌曲合輯，而是**把同一位導演三部片的配樂集成一張的合輯盤**（MB secondary-types 明列 Compilation 與 Soundtrack）。**行文必須寫清楚它一次收了三部片**，**禁止寫成「《索拉利星》的原聲帶」**。依 §5.6，primary-type 是 Album，照一般 Album 寫法。\n**軌數**：MB 五筆 release、Discogs 兩筆、Apple 一筆全部都是 **13 軌**，可寫。\n**互斥分派——本張獨占「多片併盤時，曲名前綴標示每一軌屬於哪一部片」這條線**（Stalker／Solaris／The Mirror 三種前綴的分佈、以及末軌不帶前綴）。同一批另有兩張也是多片併盤（早坂文雄那張、Antoine Duhamel 那張），**它們分到的是別的線，不得寫成本張這種句子**。本張**禁用**：委託與相遇經過、錄音場地與樂團編制（Studio Le Roy 與 Studio Moscow **只能當一句事實列出，不得展開成錄音故事**）、獨奏者與非西方樂器、版本史（1999／2002 Electroshock 版一律不寫）、獎項、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司——**以上全部是 c-88 a 組已宣告獨占的線**。\n**第 110 條**：第 5 軌的 Bach 掛名是 Discogs 的 Written-By 欄，**只能寫成「那一軌的作曲欄裡另外列了 Bach」**，不得由曲名推論它是誰的改編、翻奏或引用了哪一首曲子。\n**第 109 條**：母模編號只能寫成「唱片上刻著」，不得推論版本先後、壓量或稀有度。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 1 筆、配上 0 筆」——那是**用拉丁盤名去搜一張在俄國店面掛俄文盤名的碟**（第 151 條的形狀）。本層改用**俄文原題**在 ru storefront 搜「Артемьев Солярис」，命中 collectionId **1069370714**，以 `lookup?id=1069370714&country=ru&entity=song` 逐軌核對：**13 軌、曲序與逐軌曲長與 MB 的 DE／RU 版逐項相同**，掛名是作曲者本人，collectionName 沒有「Karaoke」「Instrumental」「Tribute」「Performed by」「Made Famous by」任何一種尾綴（第 153 條附錄的固定動作已做）。**判可用**；`previews.json` 若採用，須註明它是同 release-group 內的 **1999 Electroshock 版**（℗ 1999），**下游不得引用它的 releaseDate 當作本卡年份**。"
+  "notes": "**這一張是哪一種原聲帶**：不是單一部電影的配樂盤，也不是收錄既有錄音的歌曲合輯，而是**把同一位導演三部片的配樂集成一張的合輯盤**（MB secondary-types 明列 Compilation 與 Soundtrack）。**行文必須寫清楚它一次收了三部片**，**禁止寫成「《索拉利星》的原聲帶」**。依 §5.6，primary-type 是 Album，照一般 Album 寫法。\n**軌數**：MB 五筆 release、Discogs 兩筆、Apple 一筆全部都是 **13 軌**，可寫。\n**互斥分派——本張獨占「多片併盤時，曲名前綴標示每一軌屬於哪一部片」這條線**（Stalker／Solaris／The Mirror 三種前綴的分佈、以及末軌不帶前綴）。同一批另有兩張也是多片併盤（早坂文雄那張、Antoine Duhamel 那張），**它們分到的是別的線，不得寫成本張這種句子**。本張**禁用**：委託與相遇經過、錄音場地與樂團編制（Studio Le Roy 與 Studio Moscow **只能當一句事實列出，不得展開成錄音故事**）、獨奏者與非西方樂器、版本史（1999／2002 Electroshock 版一律不寫）、獎項、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司——**以上全部是 c-88 a 組已宣告獨占的線**。\n**第 110 條**：第 5 軌的 Bach 掛名是 Discogs 的 Written-By 欄，**只能寫成「那一軌的作曲欄裡另外列了 Bach」**，不得由曲名推論它是誰的改編、翻奏或引用了哪一首曲子。\n**第 109 條**：母模編號只能寫成「唱片上刻著」，不得推論版本先後、壓量或稀有度。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 1 筆、配上 0 筆」——那是**用拉丁盤名去搜一張在俄國店面掛俄文盤名的碟**（第 151 條的形狀）。本層改用**俄文原題**在 ru storefront 以掛名加《Солярис》為關鍵字搜，命中 collectionId **1069370714**，以 `lookup?id=1069370714&country=ru&entity=song` 逐軌核對：**13 軌、曲序與逐軌曲長與 MB 的 DE／RU 版逐項相同**，掛名是作曲者本人，collectionName 沒有「Karaoke」「Instrumental」「Tribute」「Performed by」「Made Famous by」任何一種尾綴（第 153 條附錄的固定動作已做）。**判可用**；`previews.json` 若採用，須註明它是同 release-group 內的 **1999 Electroshock 版**（℗ 1999），**下游不得引用它的 releaseDate 當作本卡年份**。"
  },
  {
   "key": "desc4:早坂文雄|七人の侍 / 羅生門",
@@ -761,5 +761,709 @@
   "status": "full",
   "yearVerified": "卡片 `year` 2000 = **這張唱片首次問世的年份**（MB release-group first-release-date 2000-11、法國版與台灣版同為 2000-11；Discogs 2319399 released 欄 2000），**與電影上映年同年**。同 release-group 底下另有 2001-04-10 的美國版與 2016-08-05 的香港 SACD，**那兩個年份不是本卡年份**；**Apple 那一筆的 releaseDate 2016 也不是**。",
   "notes": "**這一張是哪一種原聲帶**：是**混合體**——一部分是作曲者為本片寫的器樂，一部分是二十世紀中葉既有的歌曲錄音（Nat King Cole、周璇、鄧白英、潘迪華等）與戲曲錄音，另有幾軌是電影對白，還有一軌主題曲掛在另一位作曲者名下。**行文必須寫清楚它同時收了原創器樂與既有錄音**，**禁止整張寫成「配樂」**，也**禁止整張寫成「歌曲合輯」**。注意 **MB 的 release 層 artist-credit 是 Various Artists、release-group 層才是 Michael Galasso**——依第 136 條，兩者都只能寫成「某某層的欄位這樣記」。\n**軌數（第 140／141 條，本組風險最高的三張之一）**：同一個 release-group 底下**歐美版 21 軌、亞洲版 25 軌**，而且**兩者曲序完全不同**（亞洲版把作曲者的曲目集中在後段）；**連 21 軌的歐版本身都至少有兩個換過第 13 軌的版本**（MB 記〈Shuang Ma Hui〉、Discogs 記〈Zhuang Tai Bao Xi〉）。**行文一律不得寫「本張有幾軌」而不指版本**，也**不得說「這張碟以某某曲開場或收尾」而不指版本**。\n**互斥分派——本張獨占「同一批曲目在不同地區版本上用兩套書寫系統（歐版全羅馬拼音、亞洲版與 Apple 全漢字，連盤名也是）」這條線**。**其餘 22 張禁用這條線。** 注意與本組《Trois couleurs : Rouge》的區隔：**那張分到的是「同一首歌的兩種語言版本各錄一次」（兩批不同的錄音）**，**本張是同一批錄音的兩套寫法**——**兩張都不得寫成對方那一種句子。**\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、**獨奏者與非西方樂器**（小提琴、大提琴、**都哈鼓**、吉他那組掛名**只能當事實列出，不得展開**，該線歸 a 組的 The Lion King 與 Gladiator）、版本史、獎項、榜單與銷售認證、**逐軌授權**（那八家出版商與逐軌的 Published By／Courtesy of **只能當一句事實列出，不得展開**，該線歸 a 組的 The Matrix）、**對白軌**（三軌對白**只能當事實列出，不得展開成結構分析**，該線歸 a 組的 Reservoir Dogs）、歌與角色的對應、選曲原則、**選曲的既有出處**（哪幾軌取自更早的錄音**只能當事實列出，不得展開**，該線歸 a 組的 Amélie）、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、**內頁執筆者**（Liner Notes 那兩條掛名**只能當事實列出**，該線歸本組早坂那張）、曲名裡的電影年份、掛名與逐軌作曲者不一致（該線歸本組 Delerue 那張）、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲。\n**第 151 條的注意事項**：**羅馬拼音與漢字兩套曲名的對應關係，只有 Apple 那一筆與 MB 的 25 軌版可以逐軌對得起來（曲序與曲長逐項相同）**；**歐版那 21 軌不得拿去跟漢字曲名硬配**。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 全是「搜到 0 筆」——那是**用英文盤名去搜一張在亞洲店面掛拼音盤名的碟**（第 151／152 條的形狀）。本層改用漢字「花樣年華 原聲」在 tw storefront 搜，命中 collectionId **1443329967**，以 `lookup?id=1443329967&country=tw&entity=song` 逐軌核對：**25 軌、曲序與逐軌曲長與 MB 的 25 軌版逐項相同**。**第 153 條附錄的固定動作已做**：collectionName《Hua Yang Nian Hua ( Dian Ying Yuan Sheng Da Die )》**沒有** Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴；**逐軌曲名上確實出現「(Instrumental)」，但那只掛在作曲者那幾軌器樂上，人聲軌與對白軌都在、曲長也與 MB 逐項相同，因此不是伴奏版**。**判可用，`previews.json` 應改標 ready 並填 1443329967（tw）**，同時註明它是 **25 軌的亞洲版配置、℗ 2016**，**下游不得用它的軌數、曲序或漢字曲名去敘述 21 軌的歐版**。"
+ },
+ {
+  "key": "desc4:趙季平|Farewell My Concubine",
+  "artist": "趙季平",
+  "album": "Farewell My Concubine",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 454d2196 的欄位：title《Farewell My Concubine》、artist-credit「趙季平」（藝人實體 67c42a83-eb74-4da2-967f-c7519493cdf4，type 欄 Person）、first-release-date **1993**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 3 筆 release。",
+    "src": "https://musicbrainz.org/release-group/454d2196-3238-355d-8ebd-b0325bc12f75"
+   },
+   {
+    "f": "MB 該 release-group 三筆 release 的欄位：1993 US Official，廠牌欄 Varèse Sarabande、編號 VSD-5454、barcode 030206545425、**5 軌**；1993 XE Official，同一組廠牌與編號、barcode 4005939545420、**5 軌**；2003 HK Official，廠牌欄 **滾石唱片**、title 欄寫成漢字《霸王别姬》、**46 軌**——**同一個 release-group 底下有 5 軌與 46 軌兩種完全不同的切法**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=454d2196-3238-355d-8ebd-b0325bc12f75&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1993 US Varèse 那筆（97445f70）的五軌是**三段組曲夾著兩首歌**：〈Farewell My Concubine Suite, Part 1〉11:35、〈Can't Understand〉3:01、〈Farewell My Concubine Suite, Part 2〉9:44、〈Bygone Love〉4:38、〈Farewell My Concubine Suite, Part 3〉9:23——三段組曲每一段都超過九分鐘，兩首歌都在五分鐘以內。",
+    "src": "https://musicbrainz.org/release/97445f70-e845-4dbe-933c-9321c1a014d6"
+   },
+   {
+    "f": "MB 2003 HK 滾石那筆（010af64a）的四十六軌**全部用漢字的場景標題當曲名**（〈啟幕〉1:12、〈斷指〉2:11、〈冬夜〉0:31、〈識情〉1:20、〈粉墨登場〉1:46、〈文革〉0:39、〈自刎〉0:31、〈幕落〉2:35…），其中**三軌標明是戲曲**：〈京劇：霸王別姬〉8:19、〈京劇：貴妃醉酒〉4:51、〈崑曲：牡丹亭（遊園）〉5:57；逐軌 artist-credit 幾乎都是 趙季平，**只有第 42 軌〈不懂〉掛 李宗盛、第 46 軌〈當愛已成往事〉掛 李宗盛＋林憶蓮**。",
+    "src": "https://musicbrainz.org/release/010af64a-a2d3-4c4a-bb15-3304209b0753"
+   },
+   {
+    "f": "Discogs release 3829033（US、1993、CD Album、Varèse Sarabande VSD-5454）的公司欄：**Licensed From「Rock Records & Tapes Co., Ltd.」**、Phonographic Copyright (p) 與 Copyright (c) 都是「Varèse Sarabande Records, Inc.」、Distributed By「Uni Distribution Corp.」；credit 欄只有三條：Composed By「Zhao Jiping」、Executive-Producer [Album]「Bruce Kimmel」、Producer「Jonathan Lee」。",
+    "src": "https://www.discogs.com/release/3829033"
+   },
+   {
+    "f": "**同一條目的註記欄寫著「Originally released in 1992 in Taiwan.」**，另寫「from Chen Kaige Film \"Farewell My Concubine\"」「Ⓟ © 1993 Varèse Sarabande Records Inc.」「Printed in the U.S.A.」；它的五個曲目位置一個曲長都沒有登錄，逐軌欄則記〈Can't Understand〉的 Music By, Lyrics By 與 Performed By 都是「Jonathan Lee」，〈Bygone Love〉的演唱者是「Jonathan Lee」與「Sandy Lam」兩位。",
+    "src": "https://www.discogs.com/release/3829033"
+   },
+   {
+    "f": "Discogs release 14845095（**Taiwan、released 欄 1992-12**、CD Album、Rock Records & Tapes RD-1189、barcode 4710149911896、title 作《霸王別姬電影原聲帶 = Farewell To My Concubine Original Motion Picture Soundtrack》）的曲目表是 **46 個位置**，曲名與曲長與 MB 那筆 46 軌逐項相同（〈啓幕〉1:12、〈斷指〉2:11、〈冬夜〉0:31…）。",
+    "src": "https://www.discogs.com/release/14845095"
+   },
+   {
+    "f": "同一條目的 credit 欄：Composed By [配樂]「Zhao Jiping」、Conductor「Hu Bing Xu」、Orchestra「Beijing Central Philharmonic Orchestra」、Producer 兩位「Jonathan Lee」與「Zhao Jiping」、Mixed By 兩位「Jiro Ishii」與「Tao Jing」、Recorded By 兩位「Tao Jing」與「Zhang Zheng De」、Mastered By「Jim Lee」；genre 欄 Pop、Folk, World, & Country、Stage & Screen，style 欄 Chinese Classical、Soundtrack、Score、Ballad、Mandopop。",
+    "src": "https://www.discogs.com/release/14845095"
+   },
+   {
+    "f": "英文維基百科〈Zhao Jiping〉條目首段（該段帶行內引註，來源記為香港中樂團網站）說：趙季平 1945 年 8 月生於甘肅平涼、是陝西的中國作曲家，最為人知的是為第五代導演張藝謀寫的電影配樂，現任中國音樂家協會名譽主席；同條目下一句說他在北京的中央音樂學院就讀。",
+    "src": "https://en.wikipedia.org/wiki/Zhao_Jiping"
+   },
+   {
+    "f": "英文維基百科〈Farewell My Concubine (film)〉條目的 short description 欄寫「1993 Chinese-Hong Kong film by Chen Kaige」，首段並記漢字片名《霸王别姬》與字面直譯「The Hegemon-King Bids Farewell to His Concubine」。",
+    "src": "https://en.wikipedia.org/wiki/Farewell_My_Concubine_(film)"
+   },
+   {
+    "f": "Apple Music：以英文盤名在 us storefront 查「Farewell My Concubine soundtrack」，回 1 筆、是 The City of Prague Philharmonic Orchestra 的《Farewell My Concubine: Great Film Themes from Modern Chinese Cinema》（14 軌、Decca 2000 年的後世重錄選輯，**不是本片原聲**）；改以漢字「霸王別姬 電影原聲」在 tw storefront 查，命中 collectionId **1499314597**《霸王別姬電影原聲帶》、掛名「李宗盛 & 林憶蓮」、**46 軌**、releaseDate 1993-12-15、℗ 1993 Rock Records Co., Ltd.，**逐軌曲名、曲序、逐軌曲長與逐軌掛名都與 MB 那筆 46 軌逐項相同**（第 42 軌〈不懂〉掛 趙季平／李宗盛，第 46 軌〈當愛已成往事〉掛 林憶蓮 & 李宗盛）。",
+    "src": "https://music.apple.com/tw/album/1499314597"
+   }
+  ],
+  "hookCandidates": [
+   "同一份配樂，一邊切成四十六段場景，一邊併成三段組曲",
+   "三段組曲每段都超過九分鐘，中間夾著兩首五分鐘不到的歌"
+  ],
+  "sound": "國際版那五軌的長度落差極大：三段組曲分別是 11:35、9:44 與 9:23，夾在中間的兩首歌是 3:01 與 4:38。中文原盤那邊則相反，四十六段大多不到兩分鐘，最短的〈冬夜〉0:31，只有三段標明是戲曲的軌超過四分半。掛名欄記樂團是北京的中央樂團，指揮另有其人。（本欄由 MB release 97445f70 與 010af64a 的逐軌曲長、Discogs release 14845095 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Farewell My Concubine Suite, Part 1",
+   "Bygone Love",
+   "Can't Understand"
+  ],
+  "status": "full",
+  "yearVerified": "**本卡年份要分三層講。** 卡片 `year` 1993 = **MB release-group 的 first-release-date**，也是那兩筆 Varèse Sarabande 國際版的年份，**與電影同年**（英文維基〈Farewell My Concubine (film)〉條目的 short description 寫「1993 Chinese-Hong Kong film」）。**但同一份錄音在台灣更早就出過**：Discogs 14845095 的 released 欄寫 **1992-12**，而美國版自己的註記欄也寫「Originally released in 1992 in Taiwan.」——**1992 是那份四十六軌原盤的年份，1993 是國際版的年份**，行文若要提到必須分開講。MB 的 2003 是香港再發的年份，**Apple 那一筆的 releaseDate 1993-12-15 是它自己的欄位值**，兩者都不是本卡年份。",
+  "notes": "**這一張是哪一種原聲帶**：是**作曲家為單一一部電影寫的配樂盤（score）**，末尾另有兩首掛在別人名下的歌；中文原盤那一版還收了三段標明是京劇與崑曲的唱段。**行文必須寫清楚它以器樂配樂為主、另有兩首歌**，**禁止整張寫成「歌曲合輯」**。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數（第 140／141 條，本組風險最高的三張之一）**：同一個 release-group 底下**國際版 5 軌、中文原盤 46 軌**。**行文一律不得寫「本張有幾軌」而不指版本**；要寫必須寫成「Varèse 那版五軌」或「滾石那版四十六軌」，並註明是哪一筆。**國際版的曲長只有 MB 有登錄（Discogs 那筆一個都沒填），引用時要註明來源。**\n**廠牌欄不一致（請主線注意）**：卡片 `label` 欄寫「Milan」，但 **MB 三筆的廠牌欄是 Varèse Sarabande 與 滾石唱片**、Discogs 兩筆是 Varèse Sarabande 與 Rock Records & Tapes，**沒有任何一筆是 Milan**。依第 127 條附錄本層不建議直接改值，但**行文一律不得寫「Milan」**。\n**互斥分派——本張獨占「同一份配樂在兩個市場被切成完全不同的段落數（一邊四十六段場景標題、一邊三段組曲夾兩首歌）」這條線**。**其餘 22 張禁用這條線。** 注意與 a 組《Back to the Future》《Dances With Wolves》的區隔：**那兩張分到的是版本史（原盤與後來的擴充版之別，講的是時間上的代際）**；**本張講的是同一份音樂在同一時期被切成兩種形狀**，**兩邊都不得寫成對方那一種句子**，本張尤其**不得把 1992 中文盤與 1993 國際盤寫成「原盤與擴充版」**。\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（樂團、指揮、錄音與混音掛名**只能當事實列出，不得展開**，該線歸 a 組的 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、**獎項**（本片的坎城金棕櫚一律不寫，該線歸 a 組三張）、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲、兩套書寫系統（該線歸本組《In the Mood for Love》——**本張的漢字／英文兩套曲名只能當事實列出，不得展開**）。\n**第 110 條**：〈京劇：霸王別姬〉〈崑曲：牡丹亭（遊園）〉那三軌的曲名裡雖然寫了劇種與劇目，**只能寫成「曲名上標著劇種」**，不得推論那是誰的唱段、出自哪一個版本、或與片中哪一場戲對應。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 1 筆、配上 0 筆」——那是**用英文盤名去搜一張在台灣店面掛漢字盤名、而且掛名是兩位歌手而非作曲者的碟**（第 151／152 條的形狀）。本層改用漢字「霸王別姬 電影原聲」在 tw storefront 搜，命中 collectionId **1499314597**，逐軌核對：**46 軌、曲序、逐軌曲長與逐軌掛名與 MB 那筆 46 軌逐項相同**。**第 153 條附錄的固定動作已做**：collectionName《霸王別姬電影原聲帶》**沒有** Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴；**逐軌曲名上的「(Instrumental)」只掛在器樂配樂那些軌上，兩首人聲曲（〈不懂〉〈當愛已成往事〉）都在且沒有這個標記，曲長也逐項相同，因此不是伴奏版**。**判可用，`previews.json` 應改標 ready 並填 1499314597（tw）**，同時註明它是 **46 軌的中文盤配置**，**下游不得用它的軌數或曲名去敘述那個五軌的國際版**。"
+ },
+ {
+  "key": "desc4:趙季平|Raise the Red Lantern",
+  "artist": "趙季平",
+  "album": "Raise the Red Lantern",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e7ead805 的欄位：title《Raise the Red Lantern》、artist-credit「趙季平」（藝人實體 67c42a83-eb74-4da2-967f-c7519493cdf4，type 欄 Person）、first-release-date **1994-05-10**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 2 筆 release。",
+    "src": "https://musicbrainz.org/release-group/e7ead805-17c2-3319-b9ba-049401afe84f"
+   },
+   {
+    "f": "MB 該 release-group 兩筆 release 的欄位：1994-05-10 US Official，廠牌欄 Milan、編號 73138 35670 2、barcode 731383567025；1994-05-23 XE Official，Milan 40071 9 887 952、barcode 4007198879520。**兩筆的 track-count 欄都是 18**；**兩筆 release 層的 artist-credit 寫成拉丁的「Zhao Jiping」，而 release-group 層寫的是漢字「趙季平」**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e7ead805-17c2-3319-b9ba-049401afe84f&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1994-05-10 US 那筆（af0aad7d）的曲目表**有五軌是用斜線把好幾段場景串成一個曲名的**：第 1 軌〈Opening Credits / Prologue / Zhouyun / Lanterns〉3:06 串了四段、第 2 軌〈First Night with Master / Alone on First Night / Second Night / Third Night〉3:20 也串了四段，另有〈Births / The Peking Theme〉1:31、〈Pregnancy / Yan’er’s Punishment〉0:42、〈Young Master Returns / Meishan’s Punishment〉0:57 與末軌〈Songlian’s Madness / End Credits〉3:11。",
+    "src": "https://musicbrainz.org/release/af0aad7d-f63a-4ead-8f62-161b9898ea0d"
+   },
+   {
+    "f": "**同一份曲目表上，四季各自佔一軌，而且都極短**：〈Summer〉0:29（第 3 軌）、〈Autumn〉0:25（第 6 軌）、〈Winter〉0:43（第 12 軌）、〈The Seasons〉**0:11**（第 14 軌）、〈Next Summer〉2:44（第 15 軌）——**碟上沒有一軌叫〈Spring〉**。",
+    "src": "https://musicbrainz.org/release/af0aad7d-f63a-4ead-8f62-161b9898ea0d"
+   },
+   {
+    "f": "同一筆 release 的曲長端點：最短的是〈The Seasons〉0:11，最長的是〈Meishan Sings〉3:22；十八軌裡另有〈Flute Solo〉3:12 與〈The Record〉3:10 兩軌超過三分鐘。",
+    "src": "https://musicbrainz.org/release/af0aad7d-f63a-4ead-8f62-161b9898ea0d"
+   },
+   {
+    "f": "Discogs release 1182702（US、1994、CD Album、Milan 73138 35670-2、barcode 7 3138-35670-2 5）的曲目表十八個位置的曲名與曲序與 MB 逐項相同，**但它用連字號取代斜線**（〈Opening Credits - Prologue - Zhouyun - Lanterns〉）；**曲長有幾軌與 MB 差一到三秒**：〈Autumn〉Discogs 0:23／MB 0:25、〈Winter〉0:44／0:43、〈Fifth Mistress〉1:02／1:05、〈Songlian's Madness - End Credits〉3:12／3:11。",
+    "src": "https://www.discogs.com/release/1182702"
+   },
+   {
+    "f": "同一條目的公司欄：**Mixed At「Sunrise Studio, Tokyo」、Edited At 兩處「Mixer's Lab」與「On Air Azabu Studio」**、Phonographic Copyright (p) 與 Copyright (c) 記「ERA International」與「Milan Entertainment, Inc.」、Manufactured By 與 Distributed By「BMG Music」、Published By「Warner/Chappell」、Produced For「Era International (Hk) Ltd」。",
+    "src": "https://www.discogs.com/release/1182702"
+   },
+   {
+    "f": "同一條目的 credit 欄：Composed By「Zhao Jiping」、Producer「Ian Hierons」、Mixed By「Jiro Ishii」（另有兩位助理）、Edited By「Boddy Hata」、**Liner Notes「Wade Major」**、Art Direction「Judy Kaganowich」、Directed By [Milan Executive Direction] 兩位；註記欄只有一句「Music to Zhang Yimou's film \"Raise The Red Lantern\".」。",
+    "src": "https://www.discogs.com/release/1182702"
+   },
+   {
+    "f": "Discogs release 2722658（Europe、1994、CD Album、**廠牌欄寫 Milan East**、編號 887 952）的欄位與美國版不同：Phonographic Copyright (p) 記「ERA (2)」、Copyright (c) 記「Éditions Milan Music」、Distributed By「BMG Distribution」，credit 欄只剩 Composed By 與 Producer 兩條。",
+    "src": "https://www.discogs.com/release/2722658"
+   },
+   {
+    "f": "英文維基百科〈Raise the Red Lantern〉條目的 short description 欄寫「**1991** Chinese-Hong Kong film directed by Zhang Yimou」；同條目的 About 模板另註明它改編自 Su Tong 1990 年的同名中篇小說。",
+    "src": "https://en.wikipedia.org/wiki/Raise_the_Red_Lantern"
+   },
+   {
+    "f": "Apple Music：以「Raise the Red Lantern soundtrack」在 us storefront 查，回 **0 筆**；改以漢字「大紅燈籠高高掛 原聲」在 tw storefront 查，回 3 筆，兩筆是 2025 年的同名單曲，另一筆是 collectionId 1473493288《Electric Shadows: Film Music by Zhao Jiping》（掛名 Hu Bing Xu & China Symphony Orchestra、13 軌、℗ 2000 Teldec Classics），**那是後世重錄的作曲家作品選輯，不是本片原聲**。",
+    "src": "https://itunes.apple.com/search?term=Raise%20the%20Red%20Lantern%20soundtrack&country=us&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "四季各佔一軌，其中一軌只有十一秒，而春天不在碟上",
+   "一個曲名用斜線串起四段場景"
+  ],
+  "sound": "十八軌大多極短：最短的〈The Seasons〉只有 0:11，四季那幾軌都在半分鐘上下，最長的〈Meishan Sings〉也才 3:22。有五軌的曲名是用斜線（Discogs 那邊是連字號）把好幾段場景串成一條。掛名欄記混音在東京的錄音室完成，剪輯另在兩處。（本欄由 MB release af0aad7d 的逐軌曲長與 Discogs release 1182702 的公司欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Flute Solo",
+   "Meishan Sings",
+   "Songlian’s Madness / End Credits"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1994 = **這張唱片首次問世的年份**（MB release-group first-release-date 1994-05-10、兩筆 release 分別是 1994-05-10 與 1994-05-23；Discogs 兩筆的 released 欄都是 1994）。**電影是 1991 年的**（英文維基〈Raise the Red Lantern〉條目的 short description 欄）——**片年與盤年差了三年，行文若要提到必須分開講，不得把 1991 寫成唱片年**。",
+  "notes": "**這一張是哪一種原聲帶**：是**作曲家為單一一部電影所寫的器樂配樂盤（score）**，全碟十八軌都掛在同一位作曲者名下，沒有歌、沒有既有錄音、也不是後來的擴充版。行文寫「配樂」即可。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數**：MB 兩筆 release 與 Discogs 兩筆全部都是 **18 軌**，可寫。**但曲長有四軌兩庫對不起來（〈Autumn〉〈Winter〉〈Fifth Mistress〉與末軌），那四軌的曲長禁止入文**；其餘各軌兩庫一致或只差在同一秒內，引用時註明來源。\n**互斥分派——本張獨占「曲目表的分段方式：四季各佔一軌極短的段落（而春天不在碟上），以及用斜線把好幾段場景串成一個曲名」這條線**。**其餘 22 張禁用這條線。** 注意與同一位作曲家那張《Farewell My Concubine》的區隔：**那張分到的是「同一份配樂在兩個市場被切成完全不同的段落數」（兩個版本之間的比較）**，**本張講的是同一份曲目表內部的分段方式**——**兩張都不得寫成對方那一種句子。**\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（東京的混音室與兩處剪輯室**只能當事實列出，不得展開成錄音故事**，該線歸 a 組的 Titanic 與 Batman）、**獨奏者與非西方樂器**（〈Flute Solo〉這個曲名**不得拿去推論任何樂器或演奏者**——見下方第 110 條——該線也歸 a 組）、版本史、**獎項**（維基提到的威尼斯銀獅、奧斯卡外語片提名與 BAFTA 一律不寫，該線歸 a 組三張）、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、**內頁執筆者**（Liner Notes 那條掛名**只能當事實列出**，該線歸本組早坂那張）、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法。\n**第 110 條**：〈Flute Solo〉〈The Peking Theme〉這類曲名**只能寫成曲名本身**，**不得由它推論碟上用了什麼樂器、哪一段是什麼戲曲、或哪一軌對應片中哪一場戲**——本張的 credit 欄裡沒有任何演奏者掛名。\n**第 136 條**：release 層寫拉丁「Zhao Jiping」、release-group 層寫漢字「趙季平」，**兩者都只能寫成「某某層的欄位這樣記」**。\n**第 145 條**：不得寫「本批有幾張是同一位作曲家」這類跨卡統計。\n**試聽**：探測層標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 2 筆、配上 0 筆」。本層依第 151／152 條再查兩條路徑（英文盤名在 us、漢字片名在 tw），**確認 Apple 上沒有本卡這張碟**；tw 那條命中的三筆各是什麼已寫進 facts，其中那張 Teldec 的作曲家選輯是**後世重錄**，**絕不可採為本卡試聽**。**維持 unavailable。**"
+ },
+ {
+  "key": "desc2:Alejandro Jodorowsky|El Topo",
+  "artist": "Alejandro Jodorowsky",
+  "album": "El Topo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f676fbdd 的欄位：title《El Topo》、artist-credit「Alejandro Jodorowsky」（藝人實體 5a7ac986-0e4b-4223-ab54-d3a1878c9de2，type 欄 Person）、first-release-date **1971-12-27**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 5 筆 release。",
+    "src": "https://musicbrainz.org/release-group/f676fbdd-4740-3853-b628-79dce9b36083"
+   },
+   {
+    "f": "MB 該 release-group 五筆 release 的欄位：1971-12-27 US Official，廠牌欄 **Apple Records**、編號 SWAO-3388、載體 Vinyl、title 欄作《El topo》；2010-03-30 US ABKCO、**Digital Media**、barcode 018771032823；2015 GB Finders Keepers FKR075LP、**12\" Vinyl**；2020-08-24 GB ABKCO／Arrow Video FCD1932/C、CD；另一筆無日期無國別的 CD。**五筆的 track-count 欄全部都是 18。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f676fbdd-4740-3853-b628-79dce9b36083&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1971-12-27 US Apple 那筆（d1fb1c7d）的曲目表十八軌**全是西班牙文曲名**：〈Entierro del primer juguete〉2:26、〈Bajo tierra〉1:42、〈La catedral de los puercos〉1:33、〈Los mendigos sangrados〉2:32、〈La muerte es un nacimiento〉2:18、〈Curios Mexicano〉2:38、〈El agua viva〉1:18、〈Vals fantasma〉3:16、〈El alma nace en la sangre〉2:45、〈Topo triste〉2:43…最短的是〈Conocimiento a través de la música〉**0:37**，最長的是末軌〈La primera flor después del diluvio〉**3:26**。",
+    "src": "https://musicbrainz.org/release/d1fb1c7d-559e-4f74-81f0-64c7fe37f391"
+   },
+   {
+    "f": "Discogs release 963720（US、released 欄 1971-12-27、Vinyl LP Stereo、Apple Records SWAO 3388）的曲目表按 A／B 兩面編號，而且**每一個西班牙文曲名後面都跟著一個英文的括號翻譯**：〈Entierro Del Primer Juguete (Burial Of The First Toy)〉、〈La Catedral De Los Puercos (The Pigs Monastery)〉、〈Las Flores Nacen En El Barro (Flowers Born In The Mud)〉、〈300 Conejos (300 Rabbits)〉……**十八軌裡只有兩軌沒有附譯**：A8〈Vals Fantasma〉與 B2〈Topo Triste〉。",
+    "src": "https://www.discogs.com/release/963720"
+   },
+   {
+    "f": "同一條目的 credit 欄：Composed By「Alejandro Jodorowsky」、**Composed By [Additional Music]「John Barham」**、**Conductor「John Barham」**、Engineer [Recording]「Brian Humphries」、Engineer [Re-mix] 三位「Jack Douglas」「Jay Messina」「Roy Cicala」、Lacquer Cut By「Bob Ludwig」、**Presenter「Allen Klein」**、Producer [Produced For Records By]「Allan Steckler」、Design「Michael Gross」。",
+    "src": "https://www.discogs.com/release/963720"
+   },
+   {
+    "f": "同一條目的公司欄：Manufactured By「Apple Records, Inc.」、Pressed By「Capitol Records Pressing Plant, Winchester」、Mastered At「Sterling Sound」；Rights Society 欄 BMI；註記欄寫「Gatefold sleeve with extra 4-pages bound in.」，並記下**封面與標籤上的編號寫法不同**（封面作 SWAO 3388、標籤作 SWAO-3388），Matrix／Runout 欄則刻著「SWAO-1-3388-Z-1 ─◁ STERLING RL」這一類字樣。",
+    "src": "https://www.discogs.com/release/963720"
+   },
+   {
+    "f": "**同一份曲目表的西班牙文拼法，MB 與 Discogs 有四處不一致**：MB 作〈Los mendigos sangrados〉／Discogs 作〈Los Mendigos Sagrados〉；MB 作〈Los disóses de azúcar〉／Discogs 作〈Los Dióses De Azúcar〉；MB 作〈Marchga de los ojos en el triángulos〉／Discogs 作〈Marcha De Los Ojos En El Triángulos〉；MB 作〈La miel del dolor〉／Discogs 作〈Le Miel Del Dolor〉。",
+    "src": "https://www.discogs.com/release/963720"
+   },
+   {
+    "f": "英文維基百科〈El Topo〉條目的 short description 欄寫「1970 film」；同條目另一段（該段帶行內引註，來源記為 Rosenbaum 與 Hoberman《Midnight Movies》第 93 頁、以及 Allan Havis《Cult Films: Taboo and Transgression》第 59 頁）說：本片 1970-12-18 首映，之後一週七天連演到 1971 年六月底；在美國由 **ABKCO Films 發行，該公司的所有人是披頭四的經紀人 Allen Klein**。",
+    "src": "https://en.wikipedia.org/wiki/El_Topo"
+   },
+   {
+    "f": "同條目再下一段有一句寫：「John Barham re-recorded the score for release on Apple Records at the request of John Lennon.」——**該段整體帶有行內引註，但這一句本身沒有掛任何引註**。",
+    "src": "https://en.wikipedia.org/wiki/El_Topo"
+   },
+   {
+    "f": "Apple Music（us storefront）collectionId 1443937812：collectionName《El Topo (Original Motion Picture Soundtrack)》、artistName「Alejandro Jodorowsky」、trackCount 18、copyright 欄「**This Compilation ℗ 2010 ABKCO Music & Records, Inc.**」。逐軌清單 18 首，曲序與 1971 黑膠逐項相同、曲長各差一到三秒，**而且同樣保留了西班牙文加英文括號的雙語曲名，也同樣只有〈Vals Fantasma〉與〈Topo Triste〉兩軌沒有附譯**。",
+    "src": "https://music.apple.com/us/album/1443937812"
+   },
+   {
+    "f": "同一筆 Apple 條目的 **releaseDate 欄寫的是 1970-01-01**，與它自己 ℗ 欄的 2010、與 MB 那筆黑膠的 1971-12-27 都對不上；它的曲名拼法又是第三種（〈Los Mendigos Sangrados〉但〈Los Dioses De Azucar〉、〈Marcha De Los Ojos En El Triangulos〉、〈La Miel Del Dolor〉）。",
+    "src": "https://music.apple.com/us/album/1443937812"
+   }
+  ],
+  "hookCandidates": [
+   "每個西班牙文曲名後面都跟著一個英文的括號，只有兩軌例外",
+   "同一份曲目表，三個地方有三種西班牙文拼法"
+  ],
+  "sound": "十八軌都很短，最短的〈Conocimiento a través de la música〉0:37，最長的是收尾那軌 3:26。掛名欄除了作曲者本人之外，另有一位掛「追加音樂」並兼任指揮，錄音掛一位工程師、重混掛三位。（本欄由 MB release d1fb1c7d 的逐軌曲長與 Discogs release 963720 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Entierro del primer juguete",
+   "Vals fantasma",
+   "La primera flor después del diluvio"
+  ],
+  "status": "full",
+  "yearVerified": "**本卡有三個年份在打架，行文必須分開講。** 卡片 `year` 1971 = **這張唱片首次問世的年份**（MB release-group first-release-date **1971-12-27**、Apple Records 黑膠同日；Discogs 963720 的 released 欄也是 1971-12-27）。**電影是 1970 年的**（英文維基〈El Topo〉條目 short description 欄寫「1970 film」，另一段說 1970-12-18 首映）。**而 Apple Music 那一筆的 releaseDate 欄寫 1970-01-01、℗ 欄卻寫 2010**——**那個 1970 既不是唱片年、也不是任何錄音年，一律不得引用**。",
+  "notes": "**這一張是哪一種原聲帶**：是**作曲者兼導演為單一一部電影所寫的配樂盤（score）**（Discogs 的 style 欄就只寫 Score），不是歌曲合輯。**但它是不是片中的那份聲軌，本層無法確認**：Discogs 的掛名欄記有一位掛「Composed By [Additional Music]」並兼任指揮的人，還有一位錄音工程師與三位重混工程師；英文維基有一句說那個人「應 John Lennon 之請為 Apple Records 重錄了這份配樂」，**但那一句本身沒有掛引註**。**處置（第 136／144 條）**：**行文只能寫到掛名欄上的事實**（有人另寫追加音樂並擔任指揮、有一位錄音與三位重混工程師），**不得斷言整張是重錄版，也不得斷言它就是片中的原聲**；要提維基那句話必須寫成「英文維基百科的條目有一句這樣說，但那一句沒有附出處」。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數**：MB 五筆 release、Discogs 與 Apple 全部都是 **18 軌**，可寫。**曲長三處各差一到三秒，引用時要註明是哪一庫的哪一筆。**\n**曲名拼法（第 136 條，本張踩到）**：**同一份曲目表在 MB、Discogs 與 Apple 三處有三種西班牙文拼法**（四個曲名各不相同）。**`keyTracks` 已一律採 MB 那筆 1971 黑膠的寫法**；行文若要引用其他曲名，**必須註明是照哪一庫寫的，不得自行「訂正」拼字**。\n**互斥分派——本張獨占「曲目表上西班牙文曲名與英文括號翻譯並列（而且只有兩軌沒有附譯）」這條線**。**其餘 22 張禁用這條線。** 與本組另外兩張的區隔：《Trois couleurs : Rouge》分到的是**同一首歌的兩種語言版本各錄一次**（兩批不同的錄音），《In the Mood for Love》分到的是**同一批錄音在不同地區版本用兩套書寫系統**；**本張是同一行曲名上的雙語並列**——**三張都不得寫成對方那一種句子。**\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史（2010／2015／2020 各版一律不寫）、獎項、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、**廠牌歸屬與母公司**（Apple Records、ABKCO 與 Allen Klein 那幾筆**只能當事實列出，不得展開成廠牌沿革或披頭四的關聯**，該線歸 a 組的 Rocky）、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存（該線歸本組 Duhamel 那張）、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、**寫音樂的人也在片中演戲**（該線歸本組 Sátántangó 那張——**本張不得寫「導演自己寫音樂又自己主演」這種句子**）、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段。\n**第 109 條**：母模刻字、gatefold 內頁與封面／標籤編號寫法不同，**只能寫成「唱片上刻著／註記欄寫」**，不得推論壓次先後、壓量或稀有度。\n**試聽（探測層標 ready，本層複核通過並加限定語）**：collectionId 1443937812 的 18 軌曲序與 1971 黑膠逐項相同、曲長差在三秒內、雙語曲名的結構也一致（同樣只有兩軌沒附譯）；掛名是作曲者本人，collectionName 沒有「Karaoke」「Instrumental」「Tribute」「Performed by」「Made Famous by」任何一種尾綴（第 153 條附錄的固定動作已做）。**判可用**；但它的 ℗ 欄寫「This Compilation ℗ 2010 ABKCO」，**對應的是同 release-group 內 2010-03-30 的數位版**，`previews.json` 須註明這一點，**下游不得引用它的 releaseDate 1970 當作任何年份**。"
+ },
+ {
+  "key": "desc2:Various Artists|Zabriskie Point",
+  "artist": "Various Artists",
+  "album": "Zabriskie Point",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 10fedc67 的欄位：title《Zabriskie Point》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377，type 欄 **Other**、disambiguation 欄「add compilations to this artist」）、first-release-date **1970-05-29**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 **13 筆** release。",
+    "src": "https://musicbrainz.org/release-group/10fedc67-1a27-3d41-8012-f27e7bef1801"
+   },
+   {
+    "f": "**MB 這十三筆 release 的 title 欄一路在變**：1970 年那三筆黑膠（1970-05-29 GB MGM 2315 002、1970 GB MGM 2354 040、1970 US MGM SE 4668ST）寫的是**一整句《Music From the Motion Picture Sound Track Zabriskie Point》**；1990 年的 EMI CDP 7 94217 2 與 CBS CDCBS 70279 只寫《Zabriskie Point》；1997-09-16 US Rhino Movie Music R272462、2010-02 Sony Classical、2010-10-01 Music on Vinyl MOVLP150 與 2019-03-15 XW WaterTower 都寫《Zabriskie Point: Original Motion Picture Soundtrack》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=10fedc67-1a27-3d41-8012-f27e7bef1801&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "同一份清單的 track-count 欄也分成三種：**1970 年三筆黑膠與 1990 年幾筆 CD 都是 11 軌**；1997／2010 那幾筆是 **11＋8 的雙碟**；2019-03-15 那筆 Digital Media 是 **19 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=10fedc67-1a27-3d41-8012-f27e7bef1801&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1970 US 黑膠那筆（688fae4f，MGM Records SE 4668ST、packaging 欄 Cardboard/Paper Sleeve）的曲目表：A1〈Heart Beat, Pig Meat〉3:09、A2〈Brother Mary〉2:38、A3〈Excerpt From “Dark Star”〉2:30、A4〈Crumbling Land〉4:12、A5〈Tennessee Waltz〉3:02、A6〈Sugar Babe〉2:10；B1〈Love Scene〉7:04、B2〈I Wish I Was a Single Girl Again〉1:53、B3〈Mickey’s Tune〉1:38、B4〈Dance of Death〉2:39、B5〈Come in Number 51, Your Time Is Up〉4:57。最短 1:38、最長 7:04。",
+    "src": "https://musicbrainz.org/release/688fae4f-dfc1-423b-8b9c-d2a2aff76dbf"
+   },
+   {
+    "f": "同一筆 release 的逐軌 artist-credit 分屬八組演出者，**而 MB 在其中兩組前面加了定冠詞**：〈Heart Beat, Pig Meat〉〈Crumbling Land〉〈Come in Number 51, Your Time Is Up〉掛「**The** Pink Floyd」、〈Brother Mary〉〈Mickey’s Tune〉掛「**The** Kaleidoscope」、〈Excerpt From “Dark Star”〉掛「The Grateful Dead」，另有 Patti Page、The Youngbloods、Jerry Garcia、Roscoe Holcomb、John Fahey 各一軌。",
+    "src": "https://musicbrainz.org/release/688fae4f-dfc1-423b-8b9c-d2a2aff76dbf"
+   },
+   {
+    "f": "Discogs release 1320533（US、1970、Vinyl LP Album Compilation Stereo、MGM Records SE-4668ST，title 作《Music From The Motion Picture Sound Track Zabriskie Point》）的曲目表十一個位置與 MB 逐項相同、曲長也逐項相同，**但掛名寫法不一樣**：它記「Pink Floyd」「Kaleidoscope (3)」「The Grateful Dead」，**沒有 MB 那兩個定冠詞**。",
+    "src": "https://www.discogs.com/release/1320533"
+   },
+   {
+    "f": "同一條目的 credit 欄只有兩條：**Compiled By「Don Hall」、Liner Notes「Mike Curb」**；公司欄記 Record Company「Metro-Goldwyn-Mayer, Inc.」、Manufactured By「MGM Records Division」、Pressed By「MGM Record Manufacturing Division」，Published By 一口氣列七家（Leo Feist, Inc.、Hastings Music、Ice Nine Publishing、Acuff-Rose Pub.、Jesse Colin Young、Stormking Music、Hodolog Music）。",
+    "src": "https://www.discogs.com/release/1320533"
+   },
+   {
+    "f": "同一條目的逐軌 Written-By 欄：三軌 Pink Floyd 的作曲欄各列四個人名（David Gilmour、Nick Mason、Richard Wright、Roger Waters）；〈Brother Mary〉與〈Mickey's Tune〉記 David Lindley；〈Excerpt From \"Dark Star\"〉記 Jerry Garcia 與 Robert Hunter；〈Tennessee Waltz〉記 Pee Wee King 與 Redd Stewart；〈I Wish I Was A Single Girl Again〉的欄位不是 Written-By 而是 **Arranged By「Roscoe Holcomb」**。",
+    "src": "https://www.discogs.com/release/1320533"
+   },
+   {
+    "f": "Discogs 上還有另一筆同年同編號的美國盤 6478871（US、1970、Vinyl LP Compilation、MGM Records SE 4668 ST），**它的 title 欄寫的是《Zabriskie Point (Original Motion Picture Soundtrack)》**——**同一張碟在同一個資料庫裡就有兩種盤名寫法**。",
+    "src": "https://www.discogs.com/release/6478871"
+   },
+   {
+    "f": "Apple Music（us storefront）collectionId 1455569469：collectionName《Zabriskie Point (Original Motion Picture Soundtrack) [**Extended Edition**]》、artistName「Various Artists」、**trackCount 欄寫 20，但逐軌清單只回 19 首**、releaseDate 1970-03-28、copyright 欄「℗ 1997 This compilation WaterTower Music as licensee for Turner Entertainment Co.」。**前 11 首的曲序與 1970 黑膠逐項相同、曲長各差二到四秒**，第 12 首以後另有八首黑膠上沒有的曲目，曲名都帶「Outtake」字樣（四首〈Love Scene (Outtake Improvisations Version 1–4)〉、〈Country Song (Outtake)〉、〈Unknown Song (Outtake)〉與兩首 Pink Floyd 的〈Love Scene (Outtake Version 6／4)〉）。",
+    "src": "https://music.apple.com/us/album/1455569469"
+   },
+   {
+    "f": "同一筆 Apple 條目**把第 3 軌的曲名寫得比黑膠詳細**：黑膠與 Discogs 都作〈Excerpt From \"Dark Star\"〉，Apple 作〈**Dark Star (Live at the Fillmore West 1969) [Excerpt]**〉；它的掛名也一律不帶定冠詞（Pink Floyd、Kaleidoscope、Grateful Dead）。",
+    "src": "https://music.apple.com/us/album/1455569469"
+   }
+  ],
+  "hookCandidates": [
+   "原盤的盤名是一整句話，後來的版本一路把它縮短",
+   "同一張一九七〇年的碟，在同一個資料庫裡有兩種盤名寫法"
+  ],
+  "sound": "十一軌分屬八組演出者，長度從最短的〈Mickey’s Tune〉1:38 到最長的〈Love Scene〉7:04；B 面開頭那一軌就佔了七分鐘，其餘大多在兩到四分鐘之間。掛名欄上唱片只有兩條人名：一位負責編選，一位寫內頁。（本欄由 MB release 688fae4f 的逐軌曲長與 Discogs release 1320533 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Heart Beat, Pig Meat",
+   "Love Scene",
+   "Come in Number 51, Your Time Is Up"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1970 = **這張唱片首次問世的年份**（MB release-group first-release-date 1970-05-29、三筆 1970 年的 MGM 黑膠；Discogs 1320533 released 欄 1970），**與電影同年**。**Apple 那一筆的 releaseDate 欄寫 1970-03-28、℗ 欄卻寫 1997**——那是一九九七年編出來的擴充版，**它的 1970 不能拿來當本卡的發行日**。",
+  "notes": "**這一張是哪一種原聲帶**：是**收錄既有錄音的歌曲／器樂合輯**（MB 掛名 Various Artists、Discogs 的 format 描述欄就寫 Compilation，credit 欄有 Compiled By 一條），**不是作曲家的配樂盤**。**行文必須寫成「多組演出者的合輯」**，**禁止寫成「配樂」或「某某人的作品」**。依 §5.6，MB primary-type 是 Album，照一般 Album 寫法。\n**軌數（第 140／141 條）**：同一個 release-group 底下有 **11 軌（1970 原盤與 1990 那幾筆 CD）、11＋8 的雙碟（1997／2010）、19 軌（2019 數位版）**，而 **Apple 那一筆的 trackCount 欄寫 20、逐軌清單卻只有 19**——**依第 136 條，那個 20 是欄位值與清單不符，不得引用**。**行文一律不得寫「本張有幾軌」而不指版本**；要寫只能寫「一九七〇年原盤十一軌」。\n**互斥分派——本張獨占「盤名在各版之間一路改寫（原盤是一整句說明，後來縮短、又再加上副標與版本註記；連同一年同編號的碟在 Discogs 上都有兩種寫法）」這條線**。**其餘 22 張禁用這條線。**\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史（**盤名的變化只能寫成盤名，不得展開成「原盤與擴充版的沿革」**，該線歸 a 組的 Back to the Future 與 Dances With Wolves）、獎項、榜單與銷售認證、**逐軌授權**（七家出版商與 Rights Society 欄把各軌分成 ASCAP／BMI 兩組這件事**只能當一句事實列出，不得展開**，該線歸 a 組的 The Matrix）、對白軌、歌與角色的對應、**選曲原則**（Compiled By 那條掛名**只能當事實列出，不得展開成「他怎麼挑」**，該線歸 a 組的 Forrest Gump）、**選曲的既有出處**（第 3 軌曲名裡的現場出處**只能當事實列出，不得展開**，該線歸 a 組的 Amélie）、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、**內頁執筆者**（Liner Notes 那條掛名**只能當事實列出**，該線歸本組早坂那張）、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、**同一個曲名的重複與誤植**（擴充版上那五個都叫〈Love Scene〉的軌**不得展開**，該線歸本組《Last Tango in Paris》）、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列。\n**第 136／139 條**：**三處對同兩組演出者的寫法不同**（MB 作「The Pink Floyd」「The Kaleidoscope」、Discogs 作「Pink Floyd」「Kaleidoscope (3)」、Apple 作「Pink Floyd」「Kaleidoscope」）。**每一種寫法都只能寫成「某某庫的欄位這樣記」**，**不得自行判定哪一個才是團名的正確寫法**。\n**第 109 條**：母模刻字與各種 variant 只能寫成「唱片上刻著」，不得推論壓次先後、壓量或稀有度。\n**試聽（探測層標 ready，本層加限定語）**：collectionId 1455569469 的**前 11 軌與 1970 原盤對得起來**，**但整筆是掛「Extended Edition」的擴充版**（多的八軌全帶 Outtake 標記），℗ 欄寫 1997。collectionName 沒有「Karaoke」「Instrumental」「Tribute」「Performed by」「Made Famous by」任何一種尾綴（第 153 條附錄的固定動作已做），逐軌掛名都是原演出者。**判可用，但 `previews.json` 須註明它是 1997 年編成的擴充版**；**下游一律不得引用它的軌數、trackCount 欄、releaseDate 或第 12 軌以後的曲目來敘述 1970 原盤。**"
+ },
+ {
+  "key": "desc2:Giovanni Fusco|L'Avventura",
+  "artist": "Giovanni Fusco",
+  "album": "L'Avventura",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ad2151a4 的欄位：title《L’Avventura》（**MB 的標題用的是 U+2019 右單引號，不是 ASCII 的撇號**）、artist-credit「Giovanni Fusco」（藝人實體 591631e6-ff4c-42f3-881a-7e4c83789e4e，type 欄 Person、disambiguation 欄「pianist, conductor and film score composer」）、first-release-date **2016**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下只有 **1 筆** release。",
+    "src": "https://musicbrainz.org/release-group/ad2151a4-9d41-49c2-9d44-8f758466e367"
+   },
+   {
+    "f": "MB 該 release-group 唯一那筆 release（80d43f0b）的欄位：2016、**country 欄空白**、status Official、廠牌欄 **Doxy Cinematic**、編號 DOC132、載體 **12\" Vinyl**、track-count 16、barcode 889397381325。",
+    "src": "https://musicbrainz.org/release/80d43f0b-72a3-4f02-8a86-eccbf3fa1c36"
+   },
+   {
+    "f": "同一筆 release 的曲目表十六軌，**曲名全部是音樂的體裁或功能標籤，沒有一個是場景名或人名**：〈Titoli〉〈Tema dramatico〉〈Valzer〉〈Slow a〉〈Slow b〉〈Tema grottesco〉〈Notturno (II)〉〈Bolero avventura〉〈Tema romantico〉〈Swing〉〈Tema romantico (III)〉〈Finale〉〈Titoli (Versione alternativa)〉〈Valzer〉〈Notturno〉〈Finale (Versione alternativa)〉；**MB 這一筆一個曲長都沒有登錄**。",
+    "src": "https://musicbrainz.org/release/80d43f0b-72a3-4f02-8a86-eccbf3fa1c36"
+   },
+   {
+    "f": "**同一份曲目表的後四軌，是前面幾軌的另一個版本**：〈Titoli〉對〈Titoli (Versione alternativa)〉、〈Valzer〉出現兩次、〈Notturno (II)〉對〈Notturno〉、〈Finale〉對〈Finale (Versione alternativa)〉；另有兩軌的曲名只差一個小寫字母（〈Slow a〉與〈Slow b〉）。",
+    "src": "https://musicbrainz.org/release/80d43f0b-72a3-4f02-8a86-eccbf3fa1c36"
+   },
+   {
+    "f": "Discogs release 9329268（2016、Vinyl LP Album、Doxy Cinematic DOC132、barcode 889397381325、**country 欄同樣是空的**）的曲目表十六個位置與 MB 逐項相同，**同樣一個曲長都沒有登錄**；它的 companies、credits 與 notes 三欄全部是空的，**genre 欄寫的是「Folk, World, & Country」、style 欄則完全空白**。",
+    "src": "https://www.discogs.com/release/9329268"
+   },
+   {
+    "f": "Discogs 上另有一筆 7320401《Antonioni Suoni Del Silenzio (L'Avventura / La Notte / L'Eclisse / Il Deserto Rosso) (Complete Original Motion Picture Soundtracks)》（Spain、2015、CD Album Compilation Limited Edition Remastered Box Set、Quartet Records QR192、掛名「Giovanni Fusco / Giorgio Gaslini」），**那是一套涵蓋四部安東尼奧尼電影的套裝，不是本卡這張單片黑膠**。",
+    "src": "https://www.discogs.com/release/7320401"
+   },
+   {
+    "f": "英文維基百科〈L'avventura〉條目的 short description 欄寫「**1960** film by Michelangelo Antonioni」，infobox 的 music 欄寫「Giovanni Fusco」、released 欄記三個日期（1960-05-15 坎城、1960-09-14 法國、1960-09-29 義大利）、runtime 欄 143 分鐘。",
+    "src": "https://en.wikipedia.org/wiki/L%27avventura"
+   },
+   {
+    "f": "同條目第二段（該段帶行內引註）說：《L'Avventura》獲得多項提名，並在 1960 年的坎城影展得到評審團獎；同段並說這部片讓 Monica Vitti 成為國際影星。",
+    "src": "https://en.wikipedia.org/wiki/L%27avventura"
+   },
+   {
+    "f": "Apple Music（us storefront）collectionId 1541254085：collectionName《L'avventura (Original Motion Picture Soundtrack)》、artistName「Giovanni Fusco」、**trackCount 33**、releaseDate **1960-01-01**、copyright 欄「Distributed by Decca Records…；℗ **1960** Creazioni Artistiche Musicali C.A.M. Srl」。",
+    "src": "https://music.apple.com/us/album/1541254085"
+   },
+   {
+    "f": "同一筆 Apple 條目的三十三軌**用的是另一套完全不同的編號式曲名**：〈Titoli 1〉2:03、〈Tema drammatico 1〉1:26、〈Valzer 1〉2:57、〈Titoli: Atmosfera tensiva〉2:50、〈Slow A〉2:42、〈Tensione〉1:20、〈Tema attesa 1〉到〈Tema attesa 5〉、〈Atmosfera suspence 1／2〉、〈Titoli 2〉到〈Titoli 6〉、〈Finale 1／2／3〉……**碟上有六軌都叫 Titoli、五軌都叫 Tema attesa**；MB 那十六軌的〈Versione alternativa〉寫法在這裡一次都沒出現。",
+    "src": "https://music.apple.com/us/album/1541254085"
+   },
+   {
+    "f": "**逐版比對的結果**：MB 那個 release-group 底下只有一筆 release（16 軌、2016、Doxy Cinematic），**Apple 那一筆的 33 軌曲目表與它對不起來**——軌數不同、曲名體系不同、而且 Apple 那筆的 ℗ 年是 1960、MB 那筆是 2016。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ad2151a4-9d41-49c2-9d44-8f758466e367&inc=labels+media&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "十六個曲名全是體裁的名字——圓舞曲、慢板、搖擺、夜曲",
+   "同一份配樂，一邊十六軌，一邊三十三軌"
+  ],
+  "sound": "曲名本身就是這張碟能說的大部分——十六軌全用音樂體裁與功能命名（片頭、戲劇主題、圓舞曲、兩段慢板、怪誕主題、夜曲、波麗露、浪漫主題、搖擺、終曲），後四軌是前面幾軌的另一個版本。**MB 與 Discogs 兩處都沒有登錄任何一軌的曲長**，Discogs 的掛名與公司欄也是空的，演奏編制無從查起。（本欄由 MB release 80d43f0b 與 Discogs release 9329268 的曲目表與欄位歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Titoli",
+   "Tema romantico",
+   "Notturno (II)"
+  ],
+  "status": "full",
+  "yearVerified": "**本卡的片年與盤年差了五十六年，而 Apple 那一筆又給出第三個數字。** 卡片 `year` 2016 = **這張黑膠首次問世的年份**（MB release-group first-release-date 2016、唯一那筆 release 也是 2016；Discogs 9329268 released 欄 2016）。**電影是 1960 年的**（英文維基〈L'avventura〉條目的 short description 欄與 infobox 的 released 欄）。**Apple 那一筆的 releaseDate 與 ℗ 都寫 1960，那是另一個版本的年份，絕不可當作本卡年份。**",
+  "notes": "**這一張是哪一種原聲帶**：是**電影上映半個世紀之後才發行的配樂盤（score）**，收的是作曲家為單一一部電影寫的器樂；不是歌曲合輯。**行文必須寫清楚「電影很早、這張黑膠很晚」**，**禁止寫成「一九六〇年的原聲帶」**。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數（第 140／141 條，本組風險最高的三張之一）**：本卡釘住的那個 release-group **底下只有一筆 release，16 軌**（MB 與 Discogs 一致，**16 可寫**）。**Apple 上那一筆是 33 軌、曲名體系完全不同的另一個版本，它的軌數與曲名絕不可寫成本張的**。**曲長兩庫都沒有登錄，一律不得寫任何一軌多長。**\n**廠牌欄不一致（請主線注意）**：卡片 `label` 欄寫「Quartet Records」，但 **MB 與 Discogs 兩筆的廠牌欄都是 Doxy Cinematic（編號 DOC132）**。Quartet Records 對得上的是**另一張碟**——2015 年那套涵蓋四部安東尼奧尼電影的西班牙套裝（Discogs 7320401、QR192）。依第 127 條附錄本層不建議直接改值，但**行文一律不得寫「Quartet Records」**。\n**互斥分派——本張獨占「曲名全是音樂體裁與功能的標籤（片頭、圓舞曲、慢板、搖擺、夜曲、波麗露），沒有一個是場景名或人名」這條線**。**其餘 22 張禁用這條線。** 與本組另外幾張的區隔：《Raise the Red Lantern》分到的是**場景名與四季分段**，《Farewell My Concubine》分到的是**同一份配樂被切成兩種段落數**，《Last Tango in Paris》分到的是**同一個曲名的重複與誤植**——**本張講的是曲名的命名方式本身**，**四張都不得寫成對方那一種句子**；本張的〈Versione alternativa〉那幾軌**只能當事實列出，不得展開成「同一個曲名重複」那種句子**。\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、**獎項**（坎城評審團獎一律不寫，該線歸 a 組三張）、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、盤名在各版之間的改寫。\n**第 110 條**：〈Bolero avventura〉〈Valzer〉〈Swing〉〈Notturno〉這些曲名**只能寫成曲名本身**，**不得由它們推論那幾軌實際上是什麼舞曲、用了什麼樂器、或引用了誰的作品**——這張碟的掛名欄是空的，沒有任何演奏或編制的來源。\n**第 136 條**：Discogs 的 genre 欄寫「Folk, World, & Country」，**那只是那個資料庫的欄位值**，**不得寫成這張碟的曲風**。\n**試聽（本層推翻探測層）**：`previews.json` 標 **ready** 並配上 collectionId 1541254085（appleTitle 與盤名字面相近、yearDrift 56）。**逐版比對後那不是本卡釘住的那張碟**：**33 軌對 16 軌、曲名體系完全不同、℗ 年 1960 對 2016**，而且**本卡的 release-group 底下只有那一筆 2016 年的黑膠**，Apple 這一筆不屬於它。**依第 140／141 條，本層判不採用，建議改回 unavailable**（比照 a 組《Dances With Wolves》那一筆的處置）；**若主線仍決定採用，`previews.json` 必須註明它是 33 軌的另一個版本，且下游一律不得引用它的軌數、曲名、曲長與年份。**"
+ },
+ {
+  "key": "desc2:David Lynch & Alan R. Splet|Eraserhead",
+  "artist": "David Lynch & Alan R. Splet",
+  "album": "Eraserhead",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4e8b3439 的欄位：title《Eraserhead》、artist-credit 是兩個人**「David Lynch」（藝人實體 752d58e6-d33f-4dcd-b40c-37acc14242f2，disambiguation 欄「filmmaker」）＋「Alan R. Splet」（29768c58-358f-474e-adab-3b96677511d4，disambiguation 欄「sound designer/editor」）**、first-release-date **1982**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 6 筆 release。",
+    "src": "https://musicbrainz.org/release-group/4e8b3439-6552-3ec4-92ca-3990730c7eff"
+   },
+   {
+    "f": "MB 該 release-group 六筆 release 的欄位與 track-count：1982 US I.R.S. Records SP70027、**12\" Vinyl、2 軌**、title 作《Eraserhead: Original Soundtrack》；1989-08-04 US I.R.S. Records CD 70027（barcode 044797002724）、CD、**2 軌**；2003 US Absurda ERA109、CD、**3 軌**、title 作《Eraserhead: Original Soundtrack Plus》；2012-08-07 US Sacred Bones SBR-3008／SBR-3008B、**12\" Vinyl 2 軌＋7\" Vinyl 2 軌**；2012-08-07 XW Sacred Bones、Digital Media、**4 軌**；2014 US Sacred Bones SBR-3008CD、CD、**4 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4e8b3439-6552-3ec4-92ca-3990730c7eff&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "**MB 1982 I.R.S. 黑膠那筆（396a44e6）的曲目表只有兩軌，而且曲名就是唱片的兩面**：〈**Side A** (includes excerpts from: Digah’s Stomp / Lenox Avenue Blues / Stompin’ the Bug / Messin’ Around With the Blues)〉**19:30**、〈**Side B** (includes excerpts from: In Heaven (Lady in the Radiator Song))〉**18:23**——括號裡列的是那一面收進了哪幾段既有的曲子。",
+    "src": "https://musicbrainz.org/release/396a44e6-c8c3-49c5-aa95-636fc8a9c596"
+   },
+   {
+    "f": "Discogs release 261863（US、released 欄 **1982-06-15**、Vinyl LP Album、I.R.S. Records SP70027）**對同一張碟的曲目表切法完全不同**：它列 **5 個位置**，A 面拆成四軌〈Digah's Stomp〉〈Lenox Avenue Blues〉〈Stompin' The Bug〉〈Messin' Around With The Blues〉、B 面一軌〈In Heaven (Lady In The Radiator Song)〉，而且**五個位置一個曲長都沒有登錄**；逐軌 Written-By 欄記〈Digah's Stomp〉〈Lenox Avenue Blues〉〈Messin' Around With The Blues〉是 Fats Waller，〈Stompin' The Bug〉是 Mercedes Gilbert 與 Phil Worde。",
+    "src": "https://www.discogs.com/release/261863"
+   },
+   {
+    "f": "同一條目的 B 面那一軌逐軌欄記：Composed By, Vocals [Sung By]「Peter Ivers」、Lyrics By「David Lynch」、**Organ [Pipe]「Fats Waller」**；註記欄把同一件事再寫一次：「\"In Heaven (Lady in the Radiator Song)\" composed and sung by Peter Ivers. Lyrics by David Lynch. Pipe Organ by \"Fats\" Waller. © 1976 Ivers Song & O.K. Paul Music.」。",
+    "src": "https://www.discogs.com/release/261863"
+   },
+   {
+    "f": "同一條目的 credit 欄：**Producer, Design [Original Soundtrack] 兩位「Alan R. Splet」與「David Lynch」**、Concept By, Design 兩位「David Lynch」與「Douglas Brian Martin」、Photography By [Cover]「Frederick Elmes」、Lacquer Cut By「Frank DeLuna」、Coordinator [Business]「Steven M. Martin」。",
+    "src": "https://www.discogs.com/release/261863"
+   },
+   {
+    "f": "同一條目的公司欄：Phonographic Copyright (p) 兩條「International Record Syndicate, Inc.」與「I.R.S., Inc.」、Copyright (c) 三條「Peer International Corp.」「Ivers Song」「O.K. Paul Music」、Manufactured By 與 Distributed By「A&M Records, Inc.」、Pressed By「RCA Records Pressing Plant, Indianapolis」；genre 欄 Electronic 與 Stage & Screen，style 欄 Soundtrack、Abstract、Noise、Experimental。",
+    "src": "https://www.discogs.com/release/261863"
+   },
+   {
+    "f": "同一條目的註記欄還記下唱片本身的幾件事：唱片附「The Baby」的小海報與印刷內袋；**封套是從上方開口的（書背在下緣），不是一般的右側開口**；並印著一行「DEDICATED TO THE MAN IN THE PLANET'S SISTER」。Matrix／Runout 兩面刻的是「AM IRSP 070027-A RCA 3. ⚇ F」與「IR SP 070027-B RCA2∙∙ ⚇ B」，Rights Society 欄 BMI。",
+    "src": "https://www.discogs.com/release/261863"
+   },
+   {
+    "f": "英文維基百科〈Eraserhead〉條目的 short description 欄寫「**1977** film by David Lynch」；infobox 的 music 欄列三個人，並各加了註腳：David Lynch、Peter Ivers（註腳寫他是〈The Lady in the Radiator Song〉的作者）、Fats Waller（註腳寫他是那首歌裡管風琴的演奏者）。",
+    "src": "https://en.wikipedia.org/wiki/Eraserhead"
+   },
+   {
+    "f": "同條目〈Soundtrack〉那一小節（該節句句帶行內引註，來源記為 AllMusic 與 Sacred Bones Records 的頁面）說：本片的原聲帶由 I.R.S. Records 在 **1982** 年發行，**專輯上的那兩軌**收進了 Fats Waller 的管風琴演奏片段，以及 Peter Ivers 為本片寫的歌〈In Heaven〉；這份原聲帶在 **2012-08-07** 由 Sacred Bones Records 再度發行。",
+    "src": "https://en.wikipedia.org/wiki/Eraserhead"
+   },
+   {
+    "f": "Apple Music（us storefront）collectionId 549513352：collectionName《Eraserhead》、artistName「David Lynch & Alan R. Splet」、trackCount **4**、releaseDate 1982-01-01、copyright 欄「**℗ 2012 Sacred Bones Records**」。逐軌清單四首：〈Side A〉**20:08**、〈Side B〉18:22、〈In Heaven (Lady in the Radiator Song)〉1:38、〈Pete's Boogie〉3:58——**後兩軌不在 1982 黑膠上，而〈Side A〉的曲長比 MB 記的 19:30 多了三十八秒**。",
+    "src": "https://music.apple.com/us/album/549513352"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有兩軌，名字就叫「A 面」和「B 面」",
+   "封套從上緣開口，書背在底下"
+  ],
+  "sound": "一九八二年那張黑膠上只有兩個位置，一面一軌，各將近二十分鐘（MB 記 19:30 與 18:23），曲名後面的括號裡列著那一面收進了哪幾段既有的曲子。唱片的掛名欄沒有樂手，只有兩位掛「Producer, Design [Original Soundtrack]」；B 面那一軌另有作者、演唱者與管風琴三條掛名。（本欄由 MB release 396a44e6 的曲目表與 Discogs release 261863 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Side A",
+   "Side B",
+   "In Heaven (Lady in the Radiator Song)"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1982 = **這張唱片首次問世的年份**（MB release-group first-release-date 1982、I.R.S. Records 黑膠；Discogs 261863 的 released 欄寫 1982-06-15；英文維基〈Eraserhead〉條目的〈Soundtrack〉節也說 1982 年由 I.R.S. 發行）。**電影是 1977 年的**（同條目 short description 欄）——**片年與盤年差了五年，行文若要提到必須分開講**。**Apple 那一筆的 releaseDate 欄雖然寫 1982，℗ 欄卻寫 2012**，內容也是 2012 年那個四軌版，**它的年份不得引用**。",
+  "notes": "**這一張是哪一種原聲帶**：**既不是作曲家寫的配樂盤，也不是歌曲合輯**——它是**電影聲音本身的錄音**（掛名的兩個人在 MB 上的 disambiguation 欄分別是「filmmaker」與「sound designer/editor」，Discogs 的掛名欄也只有「Producer, Design [Original Soundtrack]」而沒有任何樂手；style 欄寫 Abstract、Noise、Experimental），裡面收進了幾段既有的管風琴錄音與一首為本片寫的歌。**行文必須寫清楚這一點**，**禁止寫成「配樂」或「作曲」**。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數（第 141 條，本張踩到）**：**同一張 1982 黑膠，MB 記 2 軌（一面一軌）、Discogs 記 5 個位置（A 面拆成四軌、B 面一軌）**；同一個 release-group 底下另有 3 軌（2003 Absurda）與 4 軌（2012／2014 Sacred Bones）兩種。**兩庫的數字都不採用，行文一律不得寫本張有幾軌**；要講規模只能寫「一面一軌、兩面各將近二十分鐘」（**這一點 MB 與英文維基〈Soundtrack〉節一致**）。**曲長只有 MB 有登錄，Discogs 一個都沒填，引用時要註明。**\n**互斥分派——本張獨占「唱片上唯一的兩軌就叫『Side A』與『Side B』（曲名就是唱片的兩個面），括號裡再列出那一面收了哪幾段既有的曲子」這條線**。**其餘 22 張禁用這條線。**\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史（2003／2012／2014 各版一律不寫）、獎項（維基提到的國家影片登記表不寫）、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、**選曲的既有出處**（那四段管風琴曲的作者掛名**只能當事實列出，不得展開成「哪幾軌取自更早的唱片」**，該線歸 a 組的 Amélie）、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、**唱片上多出來的文字**（「DEDICATED TO THE MAN IN THE PLANET'S SISTER」與母模刻字**只能當事實列出，不得展開**，該線歸本組《The Draughtsman's Contract》）、唱片上的數字、同一個曲名的重複與誤植、**寫音樂的人也在片中演戲**（該線歸本組 Sátántangó——**本張不得寫「導演自己做聲音」這種一人分飾多角的句子**，只能照掛名欄寫他掛了哪幾條）、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、盤名在各版之間的改寫、曲名是體裁標籤。\n**第 109 條（本張踩到）**：英文維基〈Soundtrack〉節提到 2012 年那版的**壓製數量**，**依第 109 條不得入文，本層刻意不採為 fact**；小海報、印刷內袋與上緣開口封套只能寫成「Discogs 的註記欄寫」，**不得推論稀有度或二手價**。\n**第 110 條**：〈Digah's Stomp〉〈Pete's Boogie〉這些曲名**只能照 facts 裡的掛名欄寫**，不得自行推論它們是誰的錄音、哪一年錄的、或與片中哪一場對應。\n**試聽（探測層標 ready，本層加限定語）**：collectionId 549513352 的前兩軌曲名與 1982 黑膠相同，**但整筆是 2012 年 Sacred Bones 的四軌版**（多出〈In Heaven〉與〈Pete's Boogie〉兩軌單獨成軌），**而且〈Side A〉的曲長比 MB 記的多三十八秒**。collectionName 沒有「Karaoke」「Instrumental」「Tribute」「Performed by」「Made Famous by」任何一種尾綴（第 153 條附錄的固定動作已做），掛名與卡片一致。**判可用，但 `previews.json` 須註明它是 2012 年的四軌版**；**下游不得引用它的軌數、曲長或後兩軌來敘述 1982 黑膠。**"
+ },
+ {
+  "key": "desc2:Angelo Badalamenti|Mulholland Drive",
+  "artist": "Angelo Badalamenti",
+  "album": "Mulholland Drive",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 32530b76 的欄位：title《Mulholland Drive》、artist-credit「Angelo Badalamenti」（藝人實體 5894dac5-0260-4175-b36e-e34680a859d6，type 欄 Person、disambiguation 欄「American score composer」）、first-release-date **2001-10-08**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 6 筆 release。",
+    "src": "https://musicbrainz.org/release-group/32530b76-bb42-3b3f-80e7-35f1c5de6f0a"
+   },
+   {
+    "f": "MB 該 release-group 六筆 release 的欄位：2001-10-08 FR Milan 74321 89823 2、2001-10-09 US Milan 73138-35971-2、2001-10 XE、2001 XE Milan 198 500-2、2001 DE Milan／Warner Strategic Marketing——**這五筆 CD 的 track-count 都是 17**；另有 2008 US Milan DOT0-36370，**兩張 12\" Vinyl、9＋8 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=32530b76-bb42-3b3f-80e7-35f1c5de6f0a&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 2001-10-09 US 那筆（5f3e4b09，packaging 欄 Jewel Case）的逐軌 artist-credit **分成四種**：掛作曲者一人的有〈Jitterbug〉1:27、〈Mulholland Drive〉4:16、〈Rita Walks / Sunset Boulevard / Aunt Ruth〉1:55、〈Mr. Roque / Betty’s Theme〉4:06、〈Diane and Camilla〉4:48、〈Dinner Party Pool Music〉1:26、〈Mulholland Drive / Love Theme〉5:40；掛作曲者＋導演兩人的有〈Diner〉4:16、〈Dwarfland / Love Theme〉12:14、〈Silencio〉4:27；掛導演＋另一人的有〈Pretty 50s〉3:02、〈Go Get Some〉7:09、〈Mountains Falling〉8:15；另有三軌各掛一位別的演出者（Milt Buckner、Sonny Boy Williamson、Linda Scott）與一軌掛 Rebekah Del Rio。",
+    "src": "https://musicbrainz.org/release/5f3e4b09-8f3a-3f1a-bd4a-e886c9fbb4e8"
+   },
+   {
+    "f": "同一筆 release 的曲長端點：最短的是〈Dinner Party Pool Music〉1:26，最長的是〈Dwarfland / Love Theme〉**12:14**；另有〈Mountains Falling〉8:15 與〈Go Get Some〉7:09 兩軌超過七分鐘。",
+    "src": "https://musicbrainz.org/release/5f3e4b09-8f3a-3f1a-bd4a-e886c9fbb4e8"
+   },
+   {
+    "f": "Discogs release 9234306（US、2001、CD［Album, Compilation］、Milan 73138-35971-2、barcode 731383597121）**的 title 欄與 MB 不同——它寫的是《David Lynch's Mulholland Dr.》**（盤名前面加了導演的名字、Drive 縮成 Dr.），**掛名欄也記成 Various**；曲目表十七個位置與 MB 逐項相同、曲長只有一軌差一秒（〈Go Get Some〉Discogs 7:08／MB 7:09）。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "**同一條目的逐軌掛名欄裡有幾個少見的職稱**：第 11 軌〈Llorando (Crying)〉除了 Performer「Rebekah Del Rio」與 Written-By「Joe Melson」「Roy Orbison」之外，還列了一條 **Translated By [Spanish Translation]「Thania Sanz」**；第 1 軌〈Jitterbug〉列了兩條 **Arranged By [Additional Arrangement]**（「David Lynch」與「John Neff」）。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "同一條目的專輯層 credit 欄也用了不常見的寫法：**Compiled By [Assembled By], Mixed By 兩位「David Lynch」與「John Neff」**、**Recorded By [Digital Audio Recordist]「John Neff」**、Engineer「John Neff」、Mastered By「Tom Baker」、Art Direction [Album Art Direction]「Ianthe Zevos」、Executive-Producer [Milan Executive Album Producer] 兩位「Emmanuel Chamboredon」與「Keith Walner」。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "同一條目的逐軌欄裡，**Orchestra「The City of Prague Philharmonic Orchestra」掛在第 1、2、3、4、10、14、17 共七軌上**（我逐項數過），而第 5、15 兩軌只掛 Composed By, Performer「Angelo Badalamenti」、沒有樂團欄。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "同一條目那三軌既有錄音的 Written-By 欄各自不同：〈The Beast〉記「David Cavanaugh」、〈Bring It On Home〉記「Willie Dixon」、〈I've Told Every Little Star〉記「Jerome Kern」與「Oscar Hammerstein II」；三軌的 Performer 欄則分別是 Milt Buckner、Sonny Boy Williamson (2) 與 Linda Scott。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "同一條目的公司欄與註記欄：Phonographic Copyright (p) 與 Copyright (c)「Milan Entertainment, Inc.」、另一條 Copyright (c)「Universal Studios」、Manufactured By 與 Distributed By「BMG Distribution」、Pressed By「Sonopress USA」；註記欄寫「Assembled and mixed at Asymmetrical Studio, Hollywood.」與「Mastered at Precision Mastering, Hollywood, CA.」，Matrix／Runout 刻「73138359712 + + B2728-01 SONOPRESS USA」。",
+    "src": "https://www.discogs.com/release/9234306"
+   },
+   {
+    "f": "Apple Music：以「Mulholland Drive Badalamenti」（us）、「David Lynch Mulholland Dr」（us）與「Mulholland Dr soundtrack」（fr）三條路徑各查一次，**都沒有本卡這張 17 軌的碟**。us 那條回兩筆：collectionId 6773186877《Mulholland Drive (Original Motion Picture Soundtrack) - **EP**》、掛名「Angelo Badalamenti, The City of Prague Philharmonic Orchestra & Rebekah Del Rio」、**只有 5 軌**、℗ 2001 DLM；以及 1889870256 的**同名單曲、1 軌**。",
+    "src": "https://itunes.apple.com/search?term=Mulholland%20Drive%20Badalamenti&country=us&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "有一軌的掛名欄裡，列著一位西班牙文翻譯",
+   "十七軌分屬四種不同的掛名組合"
+  ],
+  "sound": "十七軌的長度落差很大：最短的〈Dinner Party Pool Music〉1:26，最長的〈Dwarfland / Love Theme〉12:14，另有兩軌超過七分鐘。掛名欄顯示樂團段落與非樂團段落是分開的——有七軌掛著同一支管弦樂團，有兩軌只掛作曲者本人，另有三軌是別人的既有錄音。（本欄由 MB release 5f3e4b09 的逐軌曲長與 Discogs release 9234306 的逐軌掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Mulholland Drive",
+   "Dwarfland / Love Theme",
+   "Diane and Camilla"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 2001 = **這張唱片首次問世的年份**（MB release-group first-release-date 2001-10-08、五筆 2001 年的 release；Discogs 9234306 released 欄 2001），**與電影上映年同年**。同 release-group 底下另有 2008 年的雙黑膠，**那不是本卡年份**。Apple 上那兩筆的 releaseDate 雖然也寫 2001-10-16，**但它們是 5 軌的 EP 與 1 軌的單曲，不是本卡這張碟**。",
+  "notes": "**這一張是哪一種原聲帶**：是**混合體**——多數軌是作曲者為本片寫的器樂（其中幾軌與導演共同掛名），另有三軌是二十世紀中葉既有的錄音、一軌是別人演唱的西班牙文版本、三軌掛在導演與錄音師兩人名下。**行文必須說清楚它同時收了原創器樂與既有錄音**，**禁止整張寫成「配樂」**，也**禁止整張寫成「歌曲合輯」**。注意 **MB 掛作曲者一人、Discogs 掛 Various**——依第 136 條，兩者都只能寫成「某某庫的欄位這樣記」。依 §5.6，MB primary-type 是 Album，照一般 Album 寫法。\n**軌數**：MB 五筆 2001 年的 CD 與 Discogs 都是 **17 軌**，可寫（2008 年那套雙黑膠是 9＋8，**同樣是十七個位置但分成兩張碟，行文若要提到必須註明版本**）。**曲長 MB 與 Discogs 只有〈Go Get Some〉差一秒，該軌曲長引用時要註明來源。**\n**互斥分派——本張獨占「逐軌掛名欄裡出現的少見職稱」這條線**（某一軌列了一位「西班牙文翻譯」、另一軌列了兩條「追加編曲」，專輯層還把導演的角色寫成「組裝與混音」、把錄音師寫成「數位錄音師」）。**其餘 22 張禁用這條線。**\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（那支管弦樂團與兩間錄音室**只能當事實列出，不得展開成錄音故事**，該線歸 a 組的 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、獎項、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、**選曲的既有出處**（那三軌既有錄音的 Written-By 與 Performer **只能當事實列出，不得展開**，該線歸 a 組的 Amélie）、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、**掛名與逐軌作曲者不一致**（MB 掛一人、Discogs 掛 Various 這件事**只能當一句事實列出，不得展開**，該線歸本組 Delerue 那張）、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、**兩種語言的同一首歌**（〈Llorando (Crying)〉那一軌**只能寫掛名欄上的翻譯職稱，不得展開成「同一首歌的兩個語言版本」**，該線歸本組《Trois couleurs : Rouge》）、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、**盤名在各版之間的改寫**（Discogs 那個《David Lynch's Mulholland Dr.》**只能當一句事實列出**，該線歸本組《Zabriskie Point》）、曲名是體裁標籤、Side A／Side B。\n**第 110 條**：不得由〈Llorando (Crying)〉這個曲名自行推論它是誰的歌的翻唱或改編——**能寫的只有 Discogs 逐軌欄上的 Written-By 與 Translated By 兩條掛名**。\n**第 154 條**：facts 裡「Orchestra 掛在七軌上」這個數字是**本層逐項數過的**（第 1、2、3、4、10、14、17 軌），寫作層若要用請回 facts 再數一次。\n**試聽**：探測層標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 3 筆、配上 0 筆」。本層依第 151／152 條再查三條路徑（掛名＋盤名、Discogs 那個帶導演名與縮寫的盤名、以及縮寫盤名在 fr），**確認 Apple 上沒有這張 17 軌的碟**；命中的是**同名的 5 軌 EP 與 1 軌單曲**，**兩者都不是本卡釘住的那張，絕不可採為固定試聽**。**維持 unavailable。**"
+ },
+ {
+  "key": "desc2:Peer Raben|Querelle - Ein Pakt mit dem Teufel",
+  "artist": "Peer Raben",
+  "album": "Querelle - Ein Pakt mit dem Teufel",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 20cca7d6 的欄位：title《Querelle - Ein Pakt mit dem Teufel》、artist-credit「Peer Raben」（藝人實體 8251cb46-9273-4af2-820e-250316d89836，type 欄 Person）、first-release-date **1982**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 3 筆 release。",
+    "src": "https://musicbrainz.org/release-group/20cca7d6-2647-4057-8778-b7c86277c7a2"
+   },
+   {
+    "f": "MB 該 release-group 三筆 release 的欄位：1982 DE Official，廠牌欄 Jupiter Records、編號 6.25306、載體 **12\" Vinyl**；1982 DE Official，Jupiter Records 4.25306 CR、載體 **Cassette**；1995 DE Official，Prudence 398.6509.2、CD、barcode 4015307650922，**而且它的 title 欄只寫《Querelle》，沒有那段德文副標**。**三筆的 track-count 欄都是 12。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=20cca7d6-2647-4057-8778-b7c86277c7a2&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1982 DE 黑膠那筆（19402cab）的曲目表：A1〈The Tears of the Lady〉2:16、A2〈Each Man Kills the Thing He Loves〉3:30、A3〈**Each Man Kills the Thing He Loves**〉2:50、A4〈Men at Peace〉3:15、A5〈**Men Are at Peace**〉3:15、A6〈Sailor's Accordion〉2:12、A7〈The Cross-Road〉1:30；B1〈A Ship for the Bandits〉3:25、B2〈The Self-Extradition〉3:28、B3〈Young and Joyful Bandit〉2:31、B4〈With a Bitter Look〉6:18、B5〈The Ship and the Seaman〉2:38。最短 1:30、最長 6:18。",
+    "src": "https://musicbrainz.org/release/19402cab-5811-4854-9565-7afaa6ca57e5"
+   },
+   {
+    "f": "Discogs release 3026018（Germany、1982、Vinyl LP Album Stereo、Jupiter Records 6.25306）**的掛名欄裡有三位不是音樂人的名字**：**Photography By [Coverphoto]「Andy Warhol」**、**Written-By「Oscar Wilde」並註明範圍是 A3 與 A5 兩軌**、**Written-By「Jeanne Moreau」並註明範圍是 B3**；另有 Written-By 兩位「Peer Raben」與「David Ambach」、Performer「Orchester Peer Raben」。",
+    "src": "https://www.discogs.com/release/3026018"
+   },
+   {
+    "f": "同一條目的逐軌欄記人聲掛名：A3〈Each Man Kills The Thing He Loves〉與 A5〈Men Are At Peace〉的 Vocals 欄都寫「**Jeanne Moreau**」，B3〈Young And Joyful Bandit〉的 Vocals 欄寫「**Günther Kaufmann**」；**其餘九軌沒有人聲掛名**——碟上同名的那兩軌（A2／A3）與近似名的那兩軌（A4／A5），差別就在有沒有人唱。",
+    "src": "https://www.discogs.com/release/3026018"
+   },
+   {
+    "f": "同一條目的公司欄：Record Company「TELDEC »Telefunken-Decca« Schallplatten GmbH」、Phonographic Copyright (p) 與 Licensed From「Schlicht Musikverlage」、Copyright (c) 兩條「Schlicht Musikverlage」與「Edition Meridian」、**Recorded At「Meilhaus Sound Studio」**；Label Code 欄 LC 3379、Rights Society 欄 GEMA；Matrix／Runout 兩面刻「6.25306 - 01 - 1 ℋ1」與「6.25306 - 01 - 2 ℋ1」。",
+    "src": "https://www.discogs.com/release/3026018"
+   },
+   {
+    "f": "同一條目的註記欄只有一句：「Querelle is a film by Rainer Werner Fassbinder featuring Brad Davis, Franco Nero, Jeanne Moreau.」；genre 欄列 Jazz、Pop、Classical、Stage & Screen，style 欄列 Soundtrack、Smooth Jazz、Chanson、Contemporary。",
+    "src": "https://www.discogs.com/release/3026018"
+   },
+   {
+    "f": "Discogs 上同年的卡帶版 4628862（Germany、1982、Cassette Album、Jupiter Records 4.25306 CR）**的 title 欄比黑膠那筆多了一段尾綴**：《Querelle - Ein Pakt Mit Dem Teufel - Original Soundtrack》。",
+    "src": "https://www.discogs.com/release/4628862"
+   },
+   {
+    "f": "英文維基百科〈Querelle〉條目的 About 模板寫「the 1982 film directed by R. W. Fassbinder」，條目首句並記德文片名就是《Querelle - Ein Pakt mit dem Teufel》、英譯作「Querelle – A Pact with the Devil」，故事改編自 Jean Genet 1947 年的小說《Querelle of Brest》。",
+    "src": "https://en.wikipedia.org/wiki/Querelle"
+   },
+   {
+    "f": "Apple Music（de storefront）collectionId **1579057817**：collectionName《**Querelle (Original Motion Picture Soundtrack)**》（**沒有那段德文副標**）、artistName「**Peer Raben & David Ambach**」、trackCount 12、releaseDate 1995-08-07、copyright 欄「℗ 2021 Prudence」。逐軌清單 12 首，**曲名與曲序與 1982 黑膠逐項相同**，曲長各差一到六秒（2:17／3:31／2:52／3:20／3:17／2:12／1:31／3:30／3:33／2:35／6:24／2:42）。",
+    "src": "https://music.apple.com/de/album/1579057817"
+   },
+   {
+    "f": "同一筆 Apple 條目**把人聲那三軌的演唱者提到了 artist 欄**：第 3 軌與第 5 軌掛「Jeanne Moreau」、第 10 軌掛「Jeanne Moreau & Günther Kaufmann」，其餘九軌掛「Peer Raben & David Ambach」；而且**它在第 3 軌的曲名後面加了「(with vocals)」**，用來區分那兩個同名的軌。",
+    "src": "https://music.apple.com/de/album/1579057817"
+   }
+  ],
+  "hookCandidates": [
+   "封面照片的掛名是一位普普藝術家",
+   "同一個曲名收了兩次，差別是第二次有人唱"
+  ],
+  "sound": "十二軌由作曲者自己的樂團演出，只有三軌有人聲掛名，其餘九軌是器樂。長度從最短的〈The Cross-Road〉1:30 到最長的〈With a Bitter Look〉6:18，其餘大多在兩到三分半之間。Discogs 的 style 欄列的是 Smooth Jazz、Chanson 與 Contemporary。（本欄由 MB release 19402cab 的逐軌曲長與 Discogs release 3026018 的掛名與欄位歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Each Man Kills the Thing He Loves",
+   "Young and Joyful Bandit",
+   "With a Bitter Look"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1982 = **這張唱片首次問世的年份**（MB release-group first-release-date 1982、1982 DE Jupiter Records 黑膠與同年的卡帶；Discogs 3026018 released 欄 1982），**與電影同年**（英文維基〈Querelle〉條目的 About 模板寫「the 1982 film directed by R. W. Fassbinder」）。同 release-group 底下另有 **1995** 年的 Prudence CD；**Apple 那一筆的 releaseDate 寫 1995-08-07、℗ 欄卻寫 2021**——**那兩個年份都不是本卡年份。**",
+  "notes": "**這一張是哪一種原聲帶**：是**作曲家為單一一部電影寫並由自己的樂團演出的配樂盤（score）**，其中三軌有人聲。**行文寫「配樂」即可**，但**必須說清楚有三軌是唱的**；**禁止整張寫成「歌曲合輯」**。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數**：MB 三筆 release、Discogs 與 Apple 全部都是 **12 軌**，可寫。**曲長 MB 與 Apple 差一到六秒（Apple 那筆是 1995 CD 版），引用時要註明是哪一筆。Discogs 那筆的曲長與 MB 逐項相同。**\n**互斥分派——本張獨占「掛名欄裡的非音樂人」這條線**（封面攝影掛一位美術家、兩軌的作詞掛一位十九世紀作家、片中的一位女演員同時掛作詞與演唱）。**其餘 22 張禁用這條線。** 與本組另外兩張的區隔：《The Draughtsman's Contract》分到的是**收溝裡手刻的句子與掛名欄上那個「音樂顧問」的職稱**，《Mulholland Drive》分到的是**逐軌掛名欄裡的少見職稱**，《Music From the Film Sátántangó》分到的是**寫音樂的人去片中演戲**——**四張都不得寫成對方那一種句子。**\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（錄音室與「Orchester Peer Raben」**只能當事實列出，不得展開**，該線歸 a 組的 Titanic 與 Batman）、獨奏者與非西方樂器、版本史（1995 CD 一律不寫）、獎項（維基提到的威尼斯金獅提名不寫）、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、**同一個曲名的重複與誤植**（A2／A3 同名與 A4／A5 近似名**只能當事實列出，不得展開**，該線歸本組《Last Tango in Paris》）、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、**盤名在各版之間的改寫**（黑膠帶德文副標、卡帶多一段尾綴、1995 CD 與 Apple 都只寫《Querelle》——**只能當事實列出**，該線歸本組《Zabriskie Point》）、曲名是體裁標籤、Side A／Side B、逐軌掛名的少見職稱。\n**第 110 條**：Oscar Wilde 掛在 A3／A5 兩軌的 Written-By 欄，**只能寫成「那兩軌的作詞欄上寫著這個名字」**，**不得推論歌詞出自他的哪一部作品、也不得推論那是引用或改編**。同理，封面攝影那條掛名只能寫成掛名。\n**第 128 條**：維基那一筆要寫成「英文維基百科的條目說」。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 全是「搜到 0 筆」——那是**用卡片那個帶德文長副標的盤名去搜**（第 152 條明列的形狀：卡片帶長副標）。本層改用短盤名＋掛名（「Peer Raben Querelle」）在 de storefront 搜，命中 collectionId **1579057817**，以 `lookup?id=1579057817&country=de&entity=song` 逐軌核對：**12 軌、曲名與曲序與 1982 黑膠逐項相同**，曲長差在六秒內。**第 153 條附錄的固定動作已做**：collectionName 沒有 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴，掛名是作曲者與另一位共同作者。**判可用，`previews.json` 應改標 ready 並填 1579057817（de）**，同時註明它對應的是同 release-group 內的 **1995 Prudence CD 版（℗ 2021）**，**下游不得引用它的 releaseDate 或 ℗ 年當作本卡年份，也不得照它把人聲軌的掛名寫成本張的專輯掛名。**"
+ },
+ {
+  "key": "desc2:Various Artists|Wings of Desire (Der Himmel über Berlin)",
+  "artist": "Various Artists",
+  "album": "Wings of Desire (Der Himmel über Berlin)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9b4af73d 的欄位：title《Wings of Desire (Der Himmel über Berlin)》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377，type 欄 Other、disambiguation 欄「add compilations to this artist」）、first-release-date **1988-07-23**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 4 筆 release。",
+    "src": "https://musicbrainz.org/release-group/9b4af73d-6885-3bfa-8ce4-1291dee411a2"
+   },
+   {
+    "f": "MB 該 release-group 四筆 release 的欄位：1988 GB The Fine Line IONIC 2、載體 Vinyl；1988-07-23 GB The Fine Line CD IONIC 2、CD、barcode 5016025660025；1989 US Elektra Nonesuch 79210-2、CD；另一筆無日期的 XE Milan、CD，**title 欄寫的是法文《Les Ailes Du Désir (Bande Original Du Film)》**。**MB 這四筆的 track-count 欄都填 21。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9b4af73d-6885-3bfa-8ce4-1291dee411a2&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 1988-07-23 GB CD 那筆（3fc17527）的曲目表**曲名全是德文**，而且**碟從中間切成兩半**：第 1 到 13 軌掛在作曲者 Jürgen Knieper 與片中演員名下（〈Der Himmel über Berlin〉4:49、〈Lied Vom Kindsein〉0:45／0:54／0:50／1:23 四次掛 Bruno Ganz、〈Die Kathedral der Bücher〉4:45、〈Der Sterbende Auf Der Brücke〉2:31、〈Potsdamerplatz〉1:28、〈Urstromtal〉4:04、〈Der Alte Mercedes〉2:32、〈Der Paranoide Engel〉0:47、〈Marions Liebeserklärung〉5:45 掛 Solveig Dommartin、〈Schlusswort〉0:25 掛 Curt Bois）；第 14 到 21 軌則各掛一組樂團（Nick Cave & the Bad Seeds 兩軌、Laurent Petitgand、Laurie Anderson、Crime & the City Solution、Tuxedomoon、Sprung aus den Wolken、Minimal Compact）。",
+    "src": "https://musicbrainz.org/release/3fc17527-d56b-3a4b-8e67-d0369300451e"
+   },
+   {
+    "f": "同一筆 release 的曲長端點：最短的是〈Schlusswort〉**0:25**，最長的是〈The Carny〉**8:00**；前十三軌裡有六軌不到一分半，後八軌則沒有一軌短於 2:26。",
+    "src": "https://musicbrainz.org/release/3fc17527-d56b-3a4b-8e67-d0369300451e"
+   },
+   {
+    "f": "Discogs release 201470（UK、released 欄 1988-07-23、CD Compilation、The Fine Line cd ionic 2、barcode 5016025660025，title 作《Wings Of Desire (A Film By Wim Wenders)》）的曲目表同樣是 21 個位置、曲序與曲長與 MB 逐項對得起來，**但曲名全部寫成英文**：〈The Sky Over Berlin〉〈Song Of Childhood〉〈The Cathedral Of Books〉〈The Dying Of The Bridge〉……",
+    "src": "https://www.discogs.com/release/201470"
+   },
+   {
+    "f": "**同一條目的 credit 欄按軌號把碟切成兩半**：Composed By, Producer「Jürgen Knieper」與 Written-By「Jürgen Knieper」兩條的範圍都寫 **1 to 13**；另有 Written-By「**Peter Handke**」，範圍寫 **2, 3, 7, 11 to 13**；第 14 軌以後沒有任何專輯層的作曲或製作掛名。",
+    "src": "https://www.discogs.com/release/201470"
+   },
+   {
+    "f": "同一條目的公司欄：Recorded At 與 Engineered At 都是「Hansa Tonstudios」、Licensed From「Milan」、Phonographic Copyright (p) 與 Copyright (c)「Mute Records Ltd.」、Published By 三家「Dying Art Ltd.」「Wenders Music」「Argos Films」、Glass Mastered At「Nimbus」；genre 欄列 Electronic、Rock、**Non-Music**、Classical、Stage & Screen，style 欄列 Soundtrack、Modern Classical、**Spoken Word**、Alternative Rock、Art Rock、Experimental。",
+    "src": "https://www.discogs.com/release/201470"
+   },
+   {
+    "f": "**Discogs 上同年的黑膠 620383（UK、1988、Vinyl LP Compilation、廠牌欄寫 Mute、編號 IONIC 2）只有 14 個位置**，而且**兩面各裝一種東西**：A1 到 A9 全掛 Jürgen Knieper（〈The Sky Over Berlin〉〈Song Of Childhood〉〈The Cathedral Of Books〉〈The Dying Of The Bridge〉〈Potsdamer Square〉〈The Old Mercedes〉〈The Paranoid Angel〉〈Marion's Declaration Of Love〉〈The Final Word〉），B1 到 B5 全是別的樂團（Nick Cave & The Bad Seeds ×2、Laurent Petitgand、Laurie Anderson、Crime & The City Solution）——**與 MB 給這一筆填的 21 軌對不上**。",
+    "src": "https://www.discogs.com/release/620383"
+   },
+   {
+    "f": "**同一筆黑膠的 credit 欄把製作掛名也按軌號分派**：Composed By, Producer「Jürgen Knieper」範圍寫 A1 to A9、Words By「Peter Handke」範圍同樣寫 A1 to A9；而 B 面那幾軌各有自己的一組——Co-producer 三條「Flood」「Nick Cave & The Bad Seeds」「Tony Cohen」範圍寫 B1, B5，Producer 三條「Crime & The City Solution」「Flood」「Tony Cohen」範圍寫 B4，Engineer「Flood」寫 B1, B4、「Tony Cohen」寫 B5。",
+    "src": "https://www.discogs.com/release/620383"
+   },
+   {
+    "f": "英文維基百科〈Wings of Desire〉條目的 short description 欄寫「**1987** film by Wim Wenders」，首句記德文片名《Der Himmel über Berlin》與字面直譯「The Heaven/Sky over Berlin」，infobox 的 music 欄寫「Jürgen Knieper」、writer 欄列 Wim Wenders、**Peter Handke** 與 Richard Reitinger 三人，starring 欄列 Bruno Ganz、Solveig Dommartin、Otto Sander、Curt Bois、Peter Falk。",
+    "src": "https://en.wikipedia.org/wiki/Wings_of_Desire"
+   },
+   {
+    "f": "Apple Music：以三條路徑各查一次，**都沒有本卡這張碟**——(1) gb storefront 搜「Wings of Desire Wenders soundtrack」回 **0 筆**；(2) de storefront 改用德文片名「Der Himmel über Berlin」回 13 筆，全是同名的德語饒舌專輯、實驗音樂專輯與華語單曲；(3) fr storefront 改用法文片名「Les Ailes du desir bande originale」回 **0 筆**。",
+    "src": "https://itunes.apple.com/search?term=Wings%20of%20Desire%20Wenders%20soundtrack&country=gb&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "碟從中間切成兩半，前半的掛名只有一個人，後半每一軌各有各的班底",
+   "黑膠一面裝配樂，一面裝樂團"
+  ],
+  "sound": "前半是短段落：最短的〈Schlusswort〉只有 0:25，其中六軌不到一分半；後半換成樂團錄音，沒有一軌短於 2:26，最長的〈The Carny〉8:00。掛名欄也照這條界線分派——前十三軌的作曲與製作只有一個名字，後面那幾軌各有各的製作人與錄音師。（本欄由 MB release 3fc17527 的逐軌曲長與 Discogs release 201470／620383 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Der Himmel über Berlin",
+   "The Carny",
+   "Six Bells Chime"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1988 = **這張唱片首次問世的年份**（MB release-group first-release-date 1988-07-23；Discogs 201470 released 欄 1988-07-23、620383 released 欄 1988）。**電影是 1987 年的**（英文維基〈Wings of Desire〉條目的 short description 欄）——**片年與盤年差了一年，行文若要提到必須分開講**。同 release-group 底下另有 1989 年的美國版與一筆無日期的法文版，**那些都不是本卡年份**。",
+  "notes": "**這一張是哪一種原聲帶**：是**混合體**——前半是作曲者為本片寫的器樂，中間夾著幾軌片中演員的口白錄音，後半是幾組樂團各自的錄音（Discogs 的 genre 欄因此同時掛 Non-Music、style 欄掛 Spoken Word）。**行文必須說清楚這三種東西並存**，**禁止整張寫成「配樂」，也禁止整張寫成「歌曲合輯」**。依 §5.6，MB primary-type 是 Album，照一般 Album 寫法。\n**軌數（第 141 條，本張踩到）**：**MB 給四筆 release 一律填 21 軌，但 Discogs 那筆 1988 年的黑膠只有 14 個位置**（A 面九軌、B 面五軌）。**兩個數字都不採用，行文一律不得寫本張有幾軌**；要講規模只能寫「碟分成兩半：前半是配樂與口白、後半是樂團錄音」（**這一點兩庫一致**），或明確寫成「Discogs 那筆黑膠的 A 面九軌、B 面五軌」。\n**互斥分派——本張獨占「碟從中間切成兩半（前半配樂與口白、後半各自獨立的樂團錄音），而掛名欄按軌號把作曲、作詞與製作分派給不同的人」這條線**。**其餘 22 張禁用這條線。** 與本組《Pierrot le Fou / Week-End》的區隔：**那張分到的是「同一張碟上原始錄音與後來的重錄並存」（時間上的界線）**，**本張是內容種類上的界線**——**兩張都不得寫成對方那一種句子。**\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（Hansa Tonstudios **只能當一句事實列出，不得展開**，該線歸 a 組的 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、獎項、榜單與銷售認證、逐軌授權、**對白軌**（那幾軌口白**只能當事實列出，不得展開成結構分析**，該線歸 a 組的 Reservoir Dogs）、歌與角色的對應、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、**同一個曲名的重複與誤植**（〈Lied Vom Kindsein〉在 CD 上出現四次這件事**只能當事實列出，不得展開**，該線歸本組《Last Tango in Paris》）、寫音樂的人也在片中演戲、**兩套書寫系統**（MB 記德文曲名、Discogs 記英文曲名這件事**只能當事實列出，不得展開**，該線歸本組《In the Mood for Love》）、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、**盤名在各版之間的改寫**（英／德／法三種盤名**只能當事實列出**，該線歸本組《Zabriskie Point》）、曲名是體裁標籤、Side A／Side B、逐軌掛名的少見職稱、掛名欄裡的非音樂人（**Peter Handke 那條 Written-By 掛名只能當事實列出，不得展開**，該線歸本組《Querelle》）。\n**第 136 條**：曲名有德文與英文兩套寫法，**`keyTracks` 已採 MB 那筆 CD 的寫法**；行文引用曲名必須註明是照哪一庫寫的，**不得自行翻譯或混用**。\n**第 154 條**：facts 裡「前十三軌有六軌不到一分半」是**本層逐項數過的**（0:45、0:54、1:28、0:50、0:47、1:23、0:25 之中嚴格小於 1:30 的那幾軌），寫作層若要用請回 facts 再數一次。\n**試聽**：探測層標 `unavailable`，`tried` 顯示各 storefront 搜到 0 筆（gb 那次還回過一次 429）。本層依第 151／152 條再查三條路徑（**英文片名＋導演、德文原題、法文譯名**），**確認 Apple 上沒有本卡這張碟**；de 那條命中的十三筆各是什麼已寫進 facts。**維持 unavailable。**"
+ },
+ {
+  "key": "desc2:Zdenek Liska|Marketa Lazarová Soundtrack",
+  "artist": "Zdenek Liska",
+  "album": "Marketa Lazarová Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0a53a0ac 的欄位：title《Marketa Lazarová Soundtrack》、artist-credit **「Zdenek Liska」（沒有捷克文變音符號），但它指向的藝人實體 518ddec9-0dea-4a0c-853f-77521494ebc8 的 name 欄是「Zdeněk Liška」**、type 欄 Person、first-release-date **1996**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下只有 1 筆 release。",
+    "src": "https://musicbrainz.org/release-group/0a53a0ac-d32c-43ed-be54-86b9ab9dba0f"
+   },
+   {
+    "f": "MB 該 release-group 唯一那筆 release（1382903f）的欄位：1996、CZ、status Official、廠牌欄 Zóna、編號 71 0448-2、載體 CD、track-count **17**、barcode 8596972104485。",
+    "src": "https://musicbrainz.org/release/1382903f-7a90-4fec-8bad-51819324293c"
+   },
+   {
+    "f": "同一筆 release 的曲目表十七軌**曲名全是捷克文**：〈Prolog〉3:22、〈Říšská Cesta〉3:03、〈Pan Lazar〉4:36、〈Na Roháčku〉3:55、〈Rajská Sonáta〉3:37、〈Kozlík〉3:13、〈Dcera Lazarova〉6:35、〈Hejtman Pivo〉2:42、〈V Klášteře〉3:07、〈Únos〉4:24、〈Straba〉6:22、〈Pod Šancí〉2:38、〈Dubový Háj〉7:15、〈Návrat Na Obořiště〉3:19、〈Boží Milost〉8:05、〈Marketina Svatba〉3:32、〈Epilog〉2:40。最短 2:38、最長 8:05。",
+    "src": "https://musicbrainz.org/release/1382903f-7a90-4fec-8bad-51819324293c"
+   },
+   {
+    "f": "Discogs release 3878975（Czech Republic、1996、CD［Album, **Mixed**］、廠牌欄 Zóna 與 Bonton、同一組編號與 barcode）的曲目表十七個位置與 MB 逐項相同、曲長也逐項相同；它的 **genre 欄列 Non-Music、Classical、Stage & Screen**，**style 欄列 Soundtrack、Dialogue、Religious、Medieval、Spoken Word、Experimental**。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "**同一條目的捷克文註記欄說明了這張碟的聲音是怎麼來的**：由於電影年代久遠，AB Barrandov 的片庫裡**沒有保存下所謂的「國際聲帶」（mezinárodní pás）**，因此聲音只能**直接從電影拷貝的聲軌上取下來再加以重建**；也正因為如此，**製作這張原聲帶時無法把音樂與聲軌裡的對白和音效分開**，成品的音質就是這個方法的結果——註記欄並寫明那是當時唯一能讓這張原聲帶問世的辦法。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "同一條目的註記欄另記：這是 Zóna 與 Bonton Music a.s. 合辦的原聲帶系列裡的**第二張**；**Total Time: 72:32**；「℗ originální nahrávka Filmové studio Barrandov」；**Remastering 由 Michal Pekárek 於 1996 年六月在 Rudolfinum 錄音室完成**；小冊裡用了導演與編劇手稿與打字稿的節錄、以及導演分鏡筆記的複製；末尾寫「Věnováno Františkovi Vláčilovi」（獻給 František Vláčil）。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "同一條目的公司欄：Phonographic Copyright (p) 三條「Zóna」「Bonton Music a.s.」「FS Barrandov」、Recorded At 與 Mixed At「Smecky Music Studios」、Mastered At「Rudolfinum Studio」、Pressed By「DADC Austria」；Label Code 欄 LC 5668，Matrix／Runout 刻「A0100193953-0101 12 A1 [Logo] DADC AUSTRIA」。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "同一條目的 credit 欄裡，音樂端的掛名是 Music By [Hudba] 與 Sound Designer [Dramaturgie Zvuku]（後者標 Uncredited）「Zdeněk Liška」、Orchestra「Filmový Symfonický Orchestr」、Conductor「František Belfín」（另有一位標 Uncredited 的「Štěpán Koníček」）、Chorus [Zpívá]「Kühn Mixed Choir」、Chorus Master [Uncredited]「Pavel Kühn」、Narrator [Vypravěč]「Zdeněk Štěpánek」、Remastered By「Michal Pekárek」。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "**同一份 credit 欄裡另有十八條 Voice Actor 掛名，每一條後面都用方括號標出角色名**：Adam、Alexandra、Bernard、Drahuše、Kateřina、Kozlík、Lazar、Marketa（標 Uncredited）、Mikoláš、Ml. Kristián、Mnich、Pivo、Převorka、Reiner、Simon、Smil、Sovička、St. Kristián（我逐項數過，共十八條）——**一張原聲帶的掛名欄上列著整份配音表**。",
+    "src": "https://www.discogs.com/release/3878975"
+   },
+   {
+    "f": "英文維基百科〈Zdeněk Liška〉條目的 short description 欄寫「Czech composer (**1922–1983**)」，首句記他生於 1922-03-16、卒於 1983-08-13，是捷克作曲家，一九五〇年代起寫了大量電影配樂；〈Marketa Lazarová〉條目的 short description 欄則寫「**1967** Czechoslovak New Wave epic historical drama film by František Vláčil」，首段（該段帶行內引註）說本片改編自 Vladislav Vančura 1931 年的小說，並在 1998 年一次捷克影評人與媒體人的票選中被選為捷克影史最佳影片。",
+    "src": "https://en.wikipedia.org/wiki/Zden%C4%9Bk_Li%C5%A1ka"
+   },
+   {
+    "f": "Apple Music：以「Marketa Lazarova Liska」（us）與「Marketa Lazarová」（cz）兩條路徑各查一次，**都沒有本卡這張 1996 年的碟**。命中的 collectionId **1488541444**《Marketa Lazarová》掛名 Various Artists、**21 軌**、℗ 2018 Animal Music，逐軌核對後**是另一批人在二〇一〇年代重新演出的錄音**（每一軌的 artist 欄都是同一串在世演出者：Kateřina Kněžiková、Josef Moravec、Martinů Voices、Baborak Ensemble 等），曲名也多出〈Vlci〉〈Nanebevzetí〉〈Kantiléna〉〈Bitva〉等 1996 年碟上沒有的段落——**對應的是 Discogs 13087596 那張 2018 年 Animal Music 的碟，不是本卡釘住的那一張**。",
+    "src": "https://music.apple.com/us/album/1488541444"
+   }
+  ],
+  "hookCandidates": [
+   "母帶沒留下來，這張碟的聲音是從電影拷貝上取下來的",
+   "原聲帶的掛名欄上，列著十八位配音員與他們的角色"
+  ],
+  "sound": "十七軌從 2:38 到 8:05，其中三軌超過六分半。掛名欄上有電影交響樂團、一個混聲合唱團、一位指揮與一位旁白，另有十八條標著角色名的配音掛名——因為聲音是從電影拷貝的聲軌取下的，音樂與對白、音效沒有被分開（Discogs 的 style 欄同時掛 Soundtrack、Dialogue 與 Spoken Word）。（本欄由 MB release 1382903f 的逐軌曲長與 Discogs release 3878975 的註記與掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Prolog",
+   "Boží Milost",
+   "Rajská Sonáta"
+  ],
+  "status": "full",
+  "yearVerified": "**本卡有三個年份，行文必須分開講。** 卡片 `year` 1996 = **這張唱片首次問世的年份**（MB release-group first-release-date 1996、唯一那筆 release 也是 1996；Discogs 3878975 released 欄 1996，註記欄並寫重製是 1996 年六月做的）。**電影是 1967 年的**（英文維基〈Marketa Lazarová〉條目的 short description 欄）。**而作曲者 1983-08-13 就過世了**（英文維基〈Zdeněk Liška〉條目 short description 欄與首句）——**唱片問世時他已不在世**。Discogs 的補充註記另記錄音期是 1967-01-24 到 1967-03-03，**那是錄音日期，不是發行年**。**Apple 那一筆的 2018 是另一張碟的年份，一律不得引用。**",
+  "notes": "**這一張是哪一種原聲帶**：是**電影上映近三十年後才發行的配樂盤**，**而且它不是從音樂母帶做出來的**——依 Discogs 的捷克文註記欄，片庫裡沒有保存下國際聲帶，聲音是直接從電影拷貝的聲軌取下再重建的，因此**音樂與對白、音效沒有被分開**。**行文必須寫清楚這一點**，**禁止寫成「一九六〇年代的原聲帶」，也禁止寫成乾淨的音樂專輯**。依 §5.6，primary-type 是 Album、secondary-types 只有 Soundtrack，照一般 Album 寫法。\n**軌數**：MB 與 Discogs 都是 **17 軌**、逐軌曲長也逐項相同，**17 可寫**。全碟總長只能寫成「唱片的註記欄印著 72:32」（第 136 條），**不得寫成我們自己算出來的總長**。\n**互斥分派——本張獨占「這張碟的聲音來源：母帶不存，直接從電影拷貝的聲軌取下並重建，因此音樂與對白、音效分不開；掛名欄上也因此列著整份配音表」這條線**。**其餘 22 張禁用這條線。** **重要區隔**：a 組《Reservoir Dogs》分到的是**對白軌與虛構電台的結構**（哪幾軌是對白、怎麼編排）；**本張不得寫成那種句子**——本張講的是**聲音從哪裡來**，對白之所以在裡面是因為分不開，不是因為被編排進去。**本張也不得寫成「版本史」或「修復版與原盤之別」**（那條線歸 a 組兩張）。\n本張**禁用**：委託與相遇經過、**錄音場地與樂團編制**（錄音室、電影交響樂團、合唱團與指揮**只能當事實列出，不得展開成錄音故事**，該線歸 a 組的 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、**獎項**（維基那個 1998 年票選一律不寫，該線歸 a 組三張）、榜單與銷售認證、逐軌授權、對白軌、**歌與角色的對應**（那十八條配音掛名**只能寫成「掛名欄上列著角色名」，不得展開成哪一軌對應哪一個角色**，該線歸 a 組的 The Big Lebowski）、選曲原則、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、**內頁執筆者**（Compiled By／Liner Notes 那幾條掛名**只能當事實列出**，該線歸本組早坂那張）、曲名裡的電影年份、掛名與逐軌作曲者不一致、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、唱片上多出來的文字、唱片上的數字、同一個曲名的重複與誤植、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、盤名在各版之間的改寫、曲名是體裁標籤、Side A／Side B、逐軌掛名的少見職稱、掛名欄裡的非音樂人、碟從中間切成兩半。\n**第 109 條**：註記欄裡的專利／實用新型編號與壓片廠只能寫成「唱片上印著」，**不得推論稀有度或二手價**。\n**第 136 條**：MB 的 artist-credit 寫「Zdenek Liska」（無變音符號）、藝人實體與 Discogs 寫「Zdeněk Liška」。**兩種寫法都只能寫成「某某庫的欄位這樣記」**（第 152 條附錄那個同形異碼／去變音符號的形狀），**卡片掛名沿用無變音符號那個寫法，不要改**。\n**第 154 條**：facts 裡「十八條 Voice Actor」是**本層逐項數過的**，寫作層若要用請回 facts 再數一次。\n**試聽**：探測層標 `unavailable`（`tried` 顯示各 storefront 搜到 1 筆、配上 0 筆，ru 與 ca 各回過一次 429）。本層依第 151／152 條再查兩條路徑（去變音符號的拉丁寫法＋掛名、帶變音符號的原題在 cz），**確認 Apple 上沒有本卡這張 1996 年的碟**；命中的那一筆**是 2018 年由另一批在世演出者重新錄製的版本**，**依第 140／141 條絕不可採為本卡試聽**。**維持 unavailable。**"
+ },
+ {
+  "key": "desc2:François de Roubaix|Le Samouraï",
+  "artist": "François de Roubaix",
+  "album": "Le Samouraï",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3e5e7676 的欄位：title《Le Samouraï》、artist-credit「François de Roubaix」（藝人實體 7119d597-5bda-4360-8b2b-892000e3d781，type 欄 Person、disambiguation 欄「French film composer」）、first-release-date **2018-04-05**、primary-type **Album**、secondary-types **[Soundtrack]**，轄下 3 筆 release。",
+    "src": "https://musicbrainz.org/release-group/3e5e7676-b4fd-4172-bd1e-10b84886e152"
+   },
+   {
+    "f": "MB 該 release-group 三筆 release 的欄位：2018-04-05 FR Official，廠牌欄 Decca Records 與 Universal Music France、編號 672 978-1、載體 **12\" Vinyl**、**18 軌**、barcode 602567297819；2018-04-05 FR Official，同一組編號，**兩張 CD、各 9 軌**；2024-10-04 XW Official，Decca Records France、**Digital Media、21 軌**、barcode 0602475316794、title 欄作《Le samouraï》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3e5e7676-b4fd-4172-bd1e-10b84886e152&inc=labels+media&fmt=json"
+   },
+   {
+    "f": "MB 2018 黑膠那筆（05a9eeb5）的曲目表按面編號：A1〈Le Samouraï〉2:03、A2〈Valérie〉1:29、A3〈Martey's〉2:01、A4〈Costello dans la ville〉2:09、A5〈Pour Cathy〉2:51、A6〈Le destin de Costello (version Film)〉1:02、A7〈Jeff et Jeanne〉2:15、A8〈Hôtel sandwich〉0:53、A9〈Regards croisés〉2:02；B1〈La Blessure〉4:12、B2〈Deux heures du mat〉1:41、B3〈Nocturne〉2:16、B4〈La blessure (version alternative)〉2:23、B5〈Jeff et Valérie〉1:38、B6〈Après minuit〉1:43、B7〈Fatalité〉1:49、B8〈Martey's (version alternative)〉1:54、B9〈Le destin de Costello (version alternative)〉1:02。",
+    "src": "https://musicbrainz.org/release/05a9eeb5-489e-420c-b801-a4a8578b4af6"
+   },
+   {
+    "f": "同一筆 release 的曲長端點：最短的是〈Hôtel sandwich〉**0:53**，最長的是〈La Blessure〉**4:12**；十八軌裡有十四軌不到兩分半（我逐項數過：2:03、1:29、2:01、2:09、1:02、2:15、0:53、2:02、1:41、2:16、2:23、1:38、1:43、1:49、1:54、1:02 之中不到 2:30 的那幾軌）。",
+    "src": "https://musicbrainz.org/release/05a9eeb5-489e-420c-b801-a4a8578b4af6"
+   },
+   {
+    "f": "Discogs release 11928890（France、released 欄 2018-04-05、Vinyl LP Album、Decca 672 978-1 與 Universal Music France 672 978-1、barcode 602567297819）的曲目表十八個位置的曲名、曲序與逐軌曲長與 MB **逐項相同**；genre 欄只寫 Stage & Screen、style 欄只寫 Soundtrack。",
+    "src": "https://www.discogs.com/release/11928890"
+   },
+   {
+    "f": "同一條目的 credit 欄：Composed By「François De Roubaix」、**Orchestrated By, Directed By「Eric Demarsan」**、**Film Director「Jean-Pierre Melville」**、Producer [Conception Et Réalisation]「Stéphane Lerouge」、Mastered By「Vincent Malet」、Design Concept「Jérôme Witz」，另有六條 Coordinator（兩位掛 Sido Music、四位掛 Universal Music France）。",
+    "src": "https://www.discogs.com/release/11928890"
+   },
+   {
+    "f": "同一條目的公司欄：Phonographic Copyright (p) 三條「Sido Music」「Hortensia」「Decca Records France」、Copyright (c)「Decca Records France」、Published By「Editions Sido Music」、Mastered At「Studio Universal Music France」、Designed At「Element-S」、Pressed By「GZ Media」；Rights Society 欄 SACEM SACD SDRM SGDL；註記欄只有一句「Compilation ℗ & © 2018 Decca Records France, un label Universal Music France」。",
+    "src": "https://www.discogs.com/release/11928890"
+   },
+   {
+    "f": "**同一條目的 Matrix／Runout 兩欄，字母與面別是反的**：Side A 的收溝壓印「169741E1/**B**」、Side B 的收溝壓印「169741E1/**A**」。",
+    "src": "https://www.discogs.com/release/11928890"
+   },
+   {
+    "f": "MB 2024-10-04 那筆數位版（85123a02）**與 2018 黑膠不是同一份曲目表**：它是 21 軌、曲序不同（〈La blessure〉排到第 9、〈Regards croisés〉排到第 12），而且多出三軌——第 11 軌〈Un scotch au bar〉1:34 的 artist-credit 是「**Éric Demarsan**」、第 20 與 21 軌〈Le samouraï se remixe (Partie 1／2)〉1:54 與 4:16 的 artist-credit 是「**Nicolas Errèra**」；黑膠上那三個「version Film／version alternative」的括號標記，在這一版的 MB 曲名裡也沒有出現。",
+    "src": "https://musicbrainz.org/release/85123a02-48df-46a2-a97e-ba612a91fded"
+   },
+   {
+    "f": "英文維基百科〈Le Samouraï〉條目的 short description 欄寫「**1967** neo-noir crime film」，首段（該段帶行內引註，來源記為 AllMovie）說本片由 Jean-Pierre Melville 編劇並執導、主演為 Alain Delon、François Périer、Nathalie Delon 與 Cathy Rosier，是法義合製；下一段（帶行內引註）說本片於 **1967-10-25** 上映。",
+    "src": "https://en.wikipedia.org/wiki/Le_Samoura%C3%AF"
+   },
+   {
+    "f": "Apple Music（fr storefront）collectionId **1770529523**：collectionName《Le samouraï (Bande originale du film)》、artistName「François de Roubaix」、trackCount 21、releaseDate 2024-10-04、copyright 欄「℗ 2024 Sidomusic/Hortensia」。逐軌核對：**21 軌的曲序、逐軌曲長與逐軌掛名與 MB 那筆 2024 數位版逐項相同**（第 11 軌掛 Eric Demarsan、第 20／21 軌掛 Nicolas Errèra），**但 Apple 在每一個曲名後面都串上了一段「(Bande originale du film \"Le samouraï\")」**。同一次搜尋回的另一筆 1442857834《Le samouraï / Les aventuriers》、23 軌、℗ 2005 Universal Music Jazz France，**正是策展層 `mbNote` 寫明刻意不釘的 2dba257c 那個二合一實體**。",
+    "src": "https://music.apple.com/fr/album/1770529523"
+   }
+  ],
+  "hookCandidates": [
+   "十八軌裡最長的一首才四分十二秒",
+   "收溝上壓的字母，兩面標反了"
+  ],
+  "sound": "十八軌都很短：最短的〈Hôtel sandwich〉0:53，最長的〈La Blessure〉4:12，其餘大多在一到兩分半之間。掛名欄上作曲只有一條，配器與指揮是另一位，其餘全是製作與協調的名字——唱片沒有留下任何演奏者掛名。（本欄由 MB release 05a9eeb5 的逐軌曲長與 Discogs release 11928890 的掛名欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Le Samouraï",
+   "La Blessure",
+   "Nocturne"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 2018 = **這張唱片首次問世的年份**（MB release-group first-release-date 2018-04-05、黑膠與雙 CD 同日；Discogs 11928890 released 欄 2018-04-05）。**電影是 1967 年的**（英文維基〈Le Samouraï〉條目 short description 欄，該條目並說本片 1967-10-25 上映）——**片年與盤年差了五十一年，行文若要提到必須分開講，不得把 1967 寫成唱片年**。同 release-group 底下另有 **2024-10-04** 的數位版；**Apple 那一筆的 releaseDate 與 ℗ 都是 2024，也不是本卡年份。**",
+  "notes": "**這一張是哪一種原聲帶**：是**電影上映半世紀之後才發行的配樂盤（score）**，收的是作曲者為單一一部電影寫的器樂；不是歌曲合輯。**Discogs 的註記欄把它記為「Compilation ℗ & © 2018」**——依第 136 條，那只能寫成「Discogs 的註記欄這樣寫」，**不得據此把本張說成合輯**（MB 的 secondary-types 只有 Soundtrack）。**行文必須寫清楚「電影很早、唱片很晚」**，**禁止寫成「一九六〇年代的原聲帶」**。依 §5.6，primary-type 是 Album，照一般 Album 寫法。\n**軌數（第 140／141 條）**：同日發行的兩種載體切法不同——**黑膠 18 軌（一面九軌）、雙 CD 9＋9**；**2024 年的數位版是 21 軌、曲序不同、還多了三軌**。**卡片對應的是 18 軌的黑膠**，MB 與 Discogs 對這一筆完全一致（曲名、曲序、逐軌曲長），**18 可寫但必須註明是 2018 黑膠**；**21 這個數字一律不得寫成本張的軌數**。\n**廠牌欄不一致（請主線注意）**：卡片 `label` 欄寫「Play Time / Dialogo」，但 **MB 三筆與 Discogs 那筆的廠牌欄都是 Decca Records／Universal Music France（2024 那筆是 Decca Records France）**，Discogs 的 ℗ 欄另有 Sido Music 與 Hortensia。依第 127 條附錄本層不建議直接改值，但**行文一律不得寫「Play Time」或「Dialogo」**。\n**互斥分派——本張不佔任何一條敘事線（第 138 條：分派是許可不是義務）**。本組其他二十二張的線都已分派完畢，本張手上的素材（短曲長、括號版本標記、母模刻字、掛名欄）**每一種都與別張已分到的線同形**，因此**本層刻意讓它閒置**：寫作層請只用本卡自己的 facts（曲名、曲長、掛名欄與年份），**不要為它發明一條與別張同形的句子**。\n本張**禁用**：委託與相遇經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史（**黑膠／雙 CD／2024 數位版之間的差別只能當限定語用在軌數上，不得展開成版本沿革**，該線歸 a 組的 Back to the Future 與 Dances With Wolves）、獎項、榜單與銷售認證、逐軌授權、對白軌、歌與角色的對應、選曲原則（Producer [Conception Et Réalisation] 那條掛名**只能當事實列出**）、選曲的既有出處、作曲者對主題的自述、現場錄音條件、廠牌歸屬與母公司、內頁執筆者、**曲名裡的電影年份與片盤年份差的發揮**（該線歸本組《Film Music by Toru Takemitsu - Volume 1》；**本張的五十一年落差只能寫進 `yearVerified` 的分辨句，不得在行文裡發展成主題**）、**掛名與逐軌作曲者不一致**（2024 版第 11、20、21 軌掛別人這件事**只能當事實列出，不得展開**，該線歸本組 Delerue 那張）、原始錄音與重錄並存、多片併盤的曲名前綴、曲目表上的虛構作曲家、兩種語言的同一首歌、**唱片上多出來的文字**（母模刻字**只能寫成「唱片上壓著」，不得展開**，該線歸本組《The Draughtsman's Contract》）、唱片上的數字、**同一個曲名的重複與誤植**（三組帶「version Film／version alternative」括號的軌**只能當事實列出，不得展開**，該線歸本組《Last Tango in Paris》）、寫音樂的人也在片中演戲、兩套書寫系統、同一份配樂的兩種切法、曲目表的四季分段、雙語曲名並列、盤名在各版之間的改寫、曲名是體裁標籤、Side A／Side B、逐軌掛名的少見職稱、**掛名欄裡的非音樂人**（Film Director 那條掛名**只能當事實列出**，該線歸本組《Querelle》）、碟從中間切成兩半、聲音來源與母帶不存。\n**第 109 條**：母模壓字只能寫成「唱片上壓著」，**不得推論壓次先後、壓量或稀有度**。\n**第 154 條**：facts 裡「十四軌不到兩分半」是**本層逐項數過的**，寫作層若要用請回 facts 再數一次。\n**試聽（本層推翻探測層）**：`previews.json` 標 `unavailable`，十一個 storefront 的 `tried` 都是「搜到 1–2 筆、配上 0 筆」。本層依第 152 條在 fr storefront 再查兩條路徑，命中 collectionId **1770529523**，以 `lookup?id=1770529523&country=fr&entity=song` 逐軌核對：**21 軌的曲序、逐軌曲長與逐軌掛名與 MB 那筆 2024-10-04 的數位版逐項相同**——**那一筆在本卡釘住的 release-group 之內**。原本配不上的原因是 **Apple 把「(Bande originale du film \"Le samouraï\")」串進了每一個曲名、盤名也帶著這段尾綴**（第 152 條那個「系列名／說明串成一個字串」的形狀）。**第 153 條附錄的固定動作已做**：collectionName 沒有 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴，掛名是作曲者本人。**判可用，`previews.json` 應改標 ready 並填 1770529523（fr）**，同時註明它是 **2024 年的 21 軌數位版，不是 2018 年的 18 軌黑膠**；**下游一律不得引用它的軌數、曲序或帶尾綴的曲名來敘述黑膠**。**另一筆 1442857834 絕不可採用**：那是策展層寫明「刻意不釘」的二合一對照組（第 153 條附錄那個形狀的又一例）。"
  }
 ]
