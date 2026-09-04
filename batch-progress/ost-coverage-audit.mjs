@@ -1,6 +1,11 @@
 // 電影原聲覆蓋掃描（2026-09-04 店主指示）：拿一份正典片單去比對 seed_cards.json，
 // 印出「池中已有」與「缺」。用法：node batch-progress/ost-coverage-audit.mjs
-// ⚠ 比對是模糊的（子字串），會有誤判（E.T.→Tony Williams、Titanic→Weyes Blood），
+// ⚠ 比對是模糊的（子字串），兩種誤判都會有：
+//   偽陽性——E.T.→Tony Williams、Titanic→Weyes Blood（下游會擋掉，不致命）；
+//   偽陰性——**片單寫英文譯名、卡池存原題**，例如 Once Upon a Time in the West
+//   在池中是《C'era una volta il West》、A Fistful of Dollars 是《Per un pugno di dollari》。
+//   **偽陰性才是致命的那一種**：它會讓我們重複收碟、或跟店主報一個不存在的缺口（裁定第 151 條）。
+//   **每一部片都要把原題與常見譯名一起列進 WANT，任一個比中就算命中。**
 //   輸出只能當**候選清單**，每一張都要人眼確認。片單要擴充就直接改 WANT 陣列。
 import fs from 'fs';
 const s = JSON.parse(fs.readFileSync('seed_cards.json', 'utf8'));
