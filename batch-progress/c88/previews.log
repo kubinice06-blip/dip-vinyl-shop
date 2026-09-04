@@ -1,17 +1,47 @@
-node:fs:440
-    return binding.readFileUtf8(path, stringToFlags(options.flag));
-                   ^
+✗ [c88] Various Artists《Woodstock: Music From the Original Soundtrack and More》 各 storefront 皆無
+✓ [c88] Richard O'Brien《The Rocky Horror Picture Show》 us notExplicit 1995
+✓ [c88] Alan Silvestri《Back to the Future: Original Motion Picture Score》 us notExplicit 1985
+✓ [c88] James Horner《Titanic: Music From the Motion Picture》 us notExplicit 1997
+✓ [c88] Bill Conti《Rocky: Original Motion Picture Score》 us notExplicit 1976
+✓ [c88] Marvin Hamlisch《The Sting: Original Motion Picture Soundtrack》 us notExplicit 1974
+✓ [c88] Anton Karas《The Third Man》 us notExplicit 2012
+✗ [c88] Various Artists《Midnight Cowboy: Original Motion Picture Score》 各 storefront 皆無
+✓ [c88] Justin Hurwitz《La La Land: Original Motion Picture Score》 us notExplicit 2016
+✗ [c88] Yann Tiersen《Le Fabuleux Destin d'Amélie Poulain》 各 storefront 皆無
+✓ [c88] The Dust Brothers《Fight Club: Original Motion Picture Score》 us notExplicit 1999
+✗ [c88] Various Artists《Forrest Gump: The Soundtrack》 各 storefront 皆無
+✗ [c88] Various Artists《The Matrix: Music From the Motion Picture》 各 storefront 皆無
+✗ [c88] Various Artists《O Brother, Where Art Thou? Music From a Film by Joel Coen & Ethan Coen》 各 storefront 皆無
+✓ [c88] Various Artists《Guardians of the Galaxy: Awesome Mix, Vol. 1: Original Motion Picture Soundtrack》 us notExplicit 2014
+✓ [c88] Various Artists《The Big Lebowski: Original Motion Picture Soundtrack》 us notExplicit 1998
+✗ [c88] Various Artists《Reservoir Dogs: Music From the Original Motion Picture Soundtrack》 各 storefront 皆無
+✗ [c88] John Williams《Jurassic Park: Music From the Original Motion Picture Soundtrack》 各 storefront 皆無
+✓ [c88] Elton John, Tim Rice & Hans Zimmer《The Lion King: Original Motion Picture Soundtrack》 us notExplicit 1994
+✓ [c88] Danny Elfman《Batman: Original Motion Picture Score》 us notExplicit 1989
+✓ [c88] Hans Zimmer & Lisa Gerrard《Gladiator: Music From the Motion Picture》 us notExplicit 2012
+✓ [c88] John Barry《Dances With Wolves: Original Motion Picture Soundtrack》 us notExplicit 1990
+✗ [c88] Эдуард Артемьев《Solaris / The Mirror / Stalker》 各 storefront 皆無
+✗ [c88] 早坂文雄《七人の侍 / 羅生門》 各 storefront 皆無
+✗ [c88] 武満徹《Film Music by Toru Takemitsu - Volume 1》 各 storefront 皆無
+✓ [c88] Georges Delerue《Le Mépris》 us notExplicit 2001
+✗ [c88] Antoine Duhamel《Pierrot le Fou / Week-End》 各 storefront 皆無
+✓ [c88] Zbigniew Preisner《La Double Vie de Véronique》 us notExplicit 2021
+✗ [c88] Zbigniew Preisner《Trois couleurs : Rouge》 各 storefront 皆無
+✗ [c88] Michael Nyman《The Draughtsman's Contract》 各 storefront 皆無
+✗ [c88] Michael Nyman《Drowning by Numbers》 各 storefront 皆無
+✓ [c88] Gato Barbieri《Last Tango in Paris》 us notExplicit 2014
+✗ [c88] Mihály Víg《Music From the Film Sátántangó》 各 storefront 皆無
+✗ [c88] Michael Galasso《In the Mood for Love》 各 storefront 皆無
+✗ [c88] 趙季平《Farewell My Concubine》 各 storefront 皆無
+✗ [c88] 趙季平《Raise the Red Lantern》 各 storefront 皆無
+✓ [c88] Alejandro Jodorowsky《El Topo》 us notExplicit 1970
+✓ [c88] Various Artists《Zabriskie Point》 us notExplicit 1970
+✓ [c88] Giovanni Fusco《L'Avventura》 us notExplicit 1960
+✓ [c88] David Lynch & Alan R. Splet《Eraserhead》 us notExplicit 1982
+✗ [c88] Angelo Badalamenti《Mulholland Drive》 各 storefront 皆無
+✗ [c88] Peer Raben《Querelle - Ein Pakt mit dem Teufel》 各 storefront 皆無
+✗ [c88] Various Artists《Wings of Desire (Der Himmel über Berlin)》 各 storefront 皆無
+✗ [c88] Zdenek Liska《Marketa Lazarová Soundtrack》 各 storefront 皆無
+✗ [c88] François de Roubaix《Le Samouraï》 各 storefront 皆無
 
-Error: ENOENT: no such file or directory, open '/home/user/dip-vinyl-shop/desc-tools/batches/cards/c88-cards.json'
-    at Object.readFileSync (node:fs:440:20)
-    at file:///home/user/dip-vinyl-shop/batch-progress/probe/probe-previews.mjs:90:33
-    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
-    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
-    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
-  errno: -2,
-  code: 'ENOENT',
-  syscall: 'open',
-  path: '/home/user/dip-vinyl-shop/desc-tools/batches/cards/c88-cards.json'
-}
-
-Node.js v22.22.2
+共 45 張｜ready 21｜有碟無預覽 0｜unavailable 24｜只有淨化版 0
