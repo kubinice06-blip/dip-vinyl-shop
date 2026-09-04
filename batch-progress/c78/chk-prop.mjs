@@ -1,4 +1,4 @@
-// c-78 提案檢查。用法：node batch-progress/c78/chk-prop.mjs [組別…]
+// c-76 提案檢查。用法：node batch-progress/c78/chk-prop.mjs [組別…]
 // 卡池合併後「線上池」＝ seed_cards.json 全部（一般卡與王牌都算，撞到哪種都是撞卡）。
 import fs from 'node:fs';
 import path from 'node:path';
@@ -31,7 +31,7 @@ for (const g of groups) {
       const urls = (x.exceptionEvidenceUrls || []).filter(u => /^https:\/\/\S+$/.test(String(u)));
       if (urls.length < 2) say(`合輯的證據網址不足兩個：${x.artist} — ${x.album}`);
     } else if (x.releaseType === 'EP' && x.genreException === 'asia-mini-album') {
-      // §5.5 asia-mini-album 白名單卡（2026-09-03 c-78 加）：EP 要收就得帶與 §5.6 同等的舉證，
+      // §5.5 asia-mini-album 白名單卡（2026-09-03 c-76 加）：EP 要收就得帶與 §5.6 同等的舉證，
       // `genreException` 供 fix-rgmbid.mjs 放行、`exceptionReason`／`exceptionEvidenceUrls` 供驗證器檢查。
       if (!x.exceptionReason || Array.from(String(x.exceptionReason)).length < 12)
         say(`§5.5 EP 缺 exceptionReason（≥12 字）：${x.artist} — ${x.album}`);
