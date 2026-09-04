@@ -16,6 +16,121 @@
 - 節點生成門檻改為單一條件「卡數 ≥20」（原「冷門 ≥15」作廢），L3 是否開放同樣只看卡數。
 - 仍未動工：P0 建樹腳本與兩份 JSON、P1 猜你喜歡搬家、P2 類型挑片 v2、P3 OG 圖。
 
+### 2026-09-04｜dip-vinyl-shop｜c-65 至 c-76 ＋ c-87 上架 470 張，並依店主新裁定解除 41 張自我同名留置
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（207 筆提交）快轉合併。
+合併前先 stash 另一個工作階段未提交的 `PROJECT_MEMORY.md` 與 `index.html`，合併後 pop 回來。
+
+**上架結果：候選 524 張、上架 470 張、留置 54 張（全部是缺封面）、頂點 0 張。**
+另依同一條裁定回頭解除舊批留置 41 張。卡池 13,913 → **14,424**，無年份 0、無曲風 0。
+card_catalog 511/511 成功、KV 602 筆逐字回讀一致、**23 道 published gate 全部 0 error**。
+
+| 批 | 場景 | 候選 | 上架 | 留置 |
+|---|---|---:|---:|---:|
+| c-65 | 私壓電子、磁帶實驗、圖書館音樂 | 44 | 44 | 0 |
+| c-66 | 印度：寶萊塢黃金期與幕後歌手 | 40 | 40 | 0 |
+| c-67 | 日本自主爵士小廠 1975–88 | 36 | 30 | 6 |
+| c-68 | 英國私壓與小廠 prog／psych | 45 | 44 | 1 |
+| c-69 | 美國私壓 SSW 與 loner folk 二線 | 38 | 38 | 0 |
+| c-70 | 日本 1980s 地下與 indie 廠牌 | 46 | 41 | 5 |
+| c-71 | 英國自主爵士與即興 1969–85 | 45 | 37 | 8 |
+| c-72 | 美國耶穌搖滾與 Xian 私壓 | 42 | 37 | 5 |
+| c-73 | 日本前衛搖滾自主／小廠 | 41 | 36 | 5 |
+| c-74 | 英國 1980s indie pop 微廠 | 45 | 43 | 2 |
+| c-75 | 美國黑人福音小廠二線 | 37 | 30 | 7 |
+| c-76 | 沖繩民謡＋日本環境音樂二線 | 33 | 33 | 0 |
+| c-87 | §1 人工身分補遺（日本自主爵士） | 32 | 17 | 15 |
+
+## 一、店主裁定：自我同名卡的身分證據不限固定試聽
+
+雲端在 c-76 交接留了一張「店主可決定的」：**嘉手苅林昌《嘉手苅林昌》(1965, マルフク F-8)**，
+資料完整、CAA 有封面，但 Apple 三個 storefront 全空，踩到「自我同名 ＋ 固定試聽必須 ready」
+而未收，雲端註明這是整條沖繩線最該收的一張。**店主 09-04 裁定「這種狀況就是要收錄」。**
+
+改法不是開特例，是修規則本身（`ALBUM_ONBOARDING.md` §1）：這條規則要證明的是
+**「配到的是哪一張碟」**，試聽只是其中一種證據，而且對非英美發行系統性失效。
+改為 `identity.selfTitledVerified=true` 必填，身分證據則
+**ready 試聽 ／ `identity.rgMbid` ／ §1 人工身分舉證三者任一**即可。
+同步改 `scripts/verify-album-onboarding.mjs` 與 `batch-progress/build-manifest.mjs`。
+
+**連帶把舊批的 41 張撿回來**——這條規則從 c-50 起累積了一批受害者，
+逐批重建 manifest、濾掉已在池中的列後單獨走完管線：
+Moğollar／Erkin Koray／Edip Akbayram（土耳其 Anadolu 三張同名首作）、
+YU Grupa／Korni Grupa／Azra／Haustor／Ekatarina Velika／Partibrejkers／Leb i Sol
+（南斯拉夫十張）、God Bless／Guruh Gipsy／Krakatau／Asin（東南亞八張）、
+Mr. Bungle／La Düsseldorf／Maxophone／Biglietto per l'Inferno 等。
+**這些全是各自場景的正典**，卡了三個月只因為 Apple 沒上架。
+
+嘉手苅林昌那張則是本機從零補起來的：MB release-group `1a68fd15`（1965 JP Official、
+マルフク F-8、12 吋 10 軌、無條碼）、CAA front、三軸走 §0.8 regional 錨點（3/3/3）、
+研究檔與簡介本機補寫（JVC 藝人檔案：1920 年生於越來村，現址在嘉手納基地內）。
+
+## 二、`wrangler kv bulk put` 預設已改成寫本機，必須加 `--remote`
+
+**這次差點整批簡介沒上去。** 前六批照舊例不加旗標跑，13 次全印 `Success!`，
+但輸出多了一行 `Use --remote if you want to access the remote instance.`——
+bulk get API 回讀證實**遠端一筆都沒有**。09-03 那次的「`--remote` 不是合法旗標」已經過時。
+
+**教訓：`Success!` 只證明命令沒出錯，不證明寫到哪裡。**
+回讀一律走 bulk get API，不要拿命令的退出碼當驗證。全部重跑加 `--remote` 後，
+561 ＋ 41 筆逐字一致。
+
+## 三、`publish-manifest` 的 seed 排版自檢被檔尾換行擋下
+
+另一個工作階段的曲風修正（`03ad782`，370 張摘除 rock）寫回 `seed_cards.json` 時
+多留了一個檔尾 `\n`，其餘逐字相同，自檢卻整批擋下。改成**檔尾換行跟著檔案走**
+（比照 2026-09-01 對 CRLF 的處理），不要順手改掉別人的檔尾。
+
+## 四、封面補救三層，逐張裁決退回 4 張
+
+雲端交來 406/523。三層補救：**試聽探測已釘 collectionId 的直接 lookup（+56，最有效的一層）**、
+Spotify／Bandcamp（+9）、iTunes 多 storefront 搜尋（+2），到 473。
+84 張非 CAA 逐張看圖，退回 4 張（明細見 `batch-progress/COVER-TEMPLATE-NOTES.md`）：
+Company《Company 1》配到 Maranatha! Kids' Praise **Company**、
+Stan Tracey《Captain Adventure》配到續作《**The Return Of** Captain Adventure》、
+Hope of Glory 配到華語敬拜碟《向祢》、Social Tension《Macbethia》配到二合一形態的封面。
+**`apple-verified-collection` 那層零誤配**，錯的全在模糊搜尋兩層——與 09-03 的比率一致。
+
+## 五、冷門軸第二次套用 §0.8，適用範圍用 listeners 中位數判
+
+12 批走 depth、c-66 印度走 regional。判準是中位數而非文字系統：
+c-66 印度 25（《Mughal-E-Azam》《Mother India》這種國民級電影原聲只有三、四位數聽眾）
+→ regional；c-70 日本地下最高才 8,408、JUN SKY WALKER(S) 那張只有 154 → 是真地下，走 depth。
+
+**機器給 5 分 428 張，錨點提案 10 張，逐張查證後只留 1 張**（Wilson McKinley《On Stage》
+1970 年無廠牌自壓、套封手工刷印，後世只有選輯型再發）。被打掉的九張全部查到唱片本身的
+授權再發：Mannequin（Nocturnal Emissions、Bourbonese Qualk）、Vinyl-on-Demand（Zoviet France）、
+Off Note ＋ Aguirre（生活向上委員会）、Doubt Music（沖至）、Sebastian Speaks（Vernon Wray）、
+Light In The Attic（The Trees），另兩張根本不是私壓（Zoviet France 原盤是 Red Rhino、
+Jessy Dixon 是正規福音廠牌且 Apple 三區在架）。
+
+## 六、`build-manifest` 漏帶 `genreException`
+
+c-70 的 Non Band《Non Band》被 prepare gate 擋下：MB 依 6 軌標 EP，策展層照 §5.5 寫了
+`exceptionReason: "§5.5 asia-mini-album…"` 與三個佐證網址，但驗證器認的欄位叫
+`genreException`，`build-manifest` 從來沒帶過它。補上：兩個欄位都收，缺欄時才從理由字串
+取白名單名。
+
+## 主要檔案
+
+`ALBUM_ONBOARDING.md`（§1 自我同名放寬）、`scripts/verify-album-onboarding.mjs`、
+`scripts/publish-manifest.mjs`、`batch-progress/build-manifest.mjs`、
+`seed_cards.json`（14,424 列）、`data/apple-audio-map-v1.json`、
+`data/apple-audio-runtime-v1.json`（10,999 筆、skippedInvalid 0）、
+23 份 `onboarding-manifest-*.json`、`batch-progress/c*/{cand-all,covers,previews.local,ratings,held}.json`。
+
+## 驗證
+
+23 道 prepare gate ＋ 23 道 published gate 全部 0 error；card_catalog 511/511；
+KV 602 筆 bulk get 逐字一致；`build-apple-audio-runtime-map` skippedInvalid 0；
+卡池 14,424 列、無年份 0、無曲風 0；線上 dipvinyl.tw 回讀確認。
+
+## 尚未處理
+
+- 留置 54 張全是缺封面（c-87 佔 15 張——§1 批的碟連 CAA 都沒有，只能掃圖）。
+- c-77 至 c-81 雲端還在跑，c-82 至 c-86 只有腳手架，本次不碰（店主指示「還在研究的不碰」）。
+- c-73 的 Social Tension 兩張同團碟要一起確認封面歸屬，不能只補一張。
+
 ### 2026-09-04（三）｜dip-vinyl-shop｜對調計畫定稿：類型挑片＝新細分機制、舊機制改名「猜你喜歡」（待店主過目）
 
 店主釐清：不是另開「類型遊戲」，而是**把「類型挑片」這個名字與 /genre 入口留給新的細分類型機制**，
@@ -10183,7 +10298,8 @@ Big K.R.I.T.《4eva Is a Mighty Long Time》(6670)；
    （「再一張」走 `submitGenrePick`，開頭本來就有停，不受影響。）
    注意 `gpStopPreview` 內部以 `gpPreviewStarted` 為條件——**不可改成無條件停**，
    否則切主分頁會把唱片櫃／搜尋的播放一起停掉（三處共用同一個 DipPlayer 實例）。
-3. **文案**：「依你選的 X 校準口味挑出」→「順著你選的 X 的口味挑的」。
+3. **文案**：「依你選的 X 校準口味挑出」→ 店主定稿為「**依你所選 X 挑出的**」
+   （中途曾改成「順著你選的 X 的口味挑的」，店主再指定成現行版本）。
 
 **驗證侷限（要記住的工具限制）**：合成點擊不會產生 user activation，所以在自動化環境裡
 抽卡的自動試聽起不了播，「播放中 → 換類型 → 停止」這條轉換無法在瀏覽器工具裡真的觀察到。
