@@ -33,13 +33,30 @@ for (const c of cards) {
   // 標題與卡片盤名吻合者優先，其次才看順序；且合輯只在卡片本身就是合輯時才採用。
   const norm = x => String(x || '').toLowerCase().normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\u4e00-\u9fff]/g, '');
-  const found = [];
+  let found = [];
   for (const id of ids) {
     const j = await get(`https://musicbrainz.org/ws/2/release-group/${id}?fmt=json`);
     await sleep(1100);
     if (j.title) found.push({ id, title: j.title, date: j['first-release-date'] || '',
                               type: j['primary-type'], sec: j['secondary-types'] || [] });
   }
+  // 2026-09-04（c-88 早坂文雄《七人の侍 / 羅生門》）：**策展層明寫「刻意不釘」的對照組要排除。**
+  // 那張卡的 mbNote 寫得清清楚楚——釘 c5461038《七人の侍 / 羅生門》（1978 Victor 的合成 LP，
+  // primary=Album、secondary=[Compilation, Soundtrack]），並註明「945f4af7《七人の侍》刻意不釘」。
+  // 這支腳本還是把它換掉了，因為計分 12 比 11 高一分，而那一分來自 **wantComp 的比法本身是錯的**：
+  // `releaseType` 鏡射的是 **primary-type**，拿它去比 **secondary-types** 裡的 Compilation，
+  // 等於用兩個不同層級的欄位互相檢查——原聲帶合輯天生就是 primary=Album ＋ secondary=[Compilation]，
+  // 於是每一張都先被扣 6 分。這是第 99／126 條要防的那件事第三次發生
+  // （前兩次：c-66 的《Guide》EP／Album 雙胞胎、c-69 的 Collie Ryan 三合一套裝），
+  // 前兩次都是加防線去救，這次改成**直接聽策展層的話**：他已經指名不要哪一個了。
+  const noPin = new Set();
+  for (const m of String(c.mbNote || '').matchAll(MBID)) {
+    // 取這個 MBID 之後、到下一個 MBID 之前（最多 200 字）的那段話，看有沒有「不釘」
+    const tail = String(c.mbNote).slice(m.index + m[0].length, m.index + m[0].length + 200)
+      .split(MBID)[0];
+    if (/不釘/.test(tail)) noPin.add(m[0]);
+  }
+  if (noPin.size) found = found.filter(x => !noPin.has(x.id));
   const wantComp = c.releaseType === 'Compilation';
   const score = x => {
     const a = norm(c.album), b = norm(x.title);
