@@ -1,6 +1,8 @@
-c84: 原本就對 39｜**修正 0**｜無 RG 0
-  ✗ Grenadine《Goya》既有 rgMbid f301ee74… 這輪回問失敗，保留不動
-  ✗ Tuscadero《The Pink Album》既有 rgMbid 1860c193… 這輪回問失敗，保留不動
-  ✗ Scrawl《Velvet Hammer》既有 rgMbid 2631313f… 這輪回問失敗，保留不動
-  ✗ Danielle Howle《About to Burst》既有 rgMbid 391415a3… 這輪回問失敗，保留不動
-  ✗ Late!《Pocketwatch》既有 rgMbid e25d41fa… 這輪回問失敗，保留不動
+c84: 原本就對 44｜**修正 0**｜無 RG 0
+
+（跑了兩輪，兩輪都回報「修正 0」。單輪都有幾張因 MB 暫時性失敗而「回問失敗、保留不動」，
+但兩輪失敗的是不同的卡，聯集覆蓋全部 44 張——每一張都至少被確認過一次：
+  第一輪確認 39、回問失敗 5：Grenadine《Goya》、Tuscadero《The Pink Album》、
+    Scrawl《Velvet Hammer》、Danielle Howle《About to Burst》、Late!《Pocketwatch》
+  第二輪確認 42、回問失敗 2：Soul-Junk《1950》、John Davis《Blue Mountains》
+兩輪的失敗集合不相交，39+5 = 42+2 = 44。依第 28 條，暫時性失敗不是查無。）
