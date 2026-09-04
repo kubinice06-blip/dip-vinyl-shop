@@ -453,7 +453,8 @@
     "trackCount": 15,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/e3/70/6f/e3706f6e-b2e5-a329-1dc5-c2a5990b40ab/mzaf_1275744123480660824.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "note": "**2026-09-04 研究層 b 覆核**：⚠ **固定試聽取首軌會取到錯的開場。** Apple 592187720 的 **15 個曲名一一對應、曲長逐軌相符**，看起來完全正確——**但曲序只有第 2、14 軌在原位，其餘十三軌全部錯位**：Apple 第 1 軌是〈Absolute Motion〉，**原盤第 1 軌是〈Higher Dimensions〉**。**試聽可用（碟是對的），但 Apple 的軌號一律不可用**——本機取固定試聽時**不能取 Apple 的第 1 軌，要按曲名取原盤的開場曲**。行文也不得照 Apple 的曲序敘述。"
   },
   "Armagideon|Through the Haze": {
     "batch": "c85",
@@ -543,7 +544,10 @@
     "trackCount": 14,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b7/7f/29/b77f2990-aead-3066-dca4-f8d953852385/mzaf_20068798889384344.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "expandedReissue": true,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核**：Apple 112517808 那 14 軌是 **2005 重製版 WWLP001R**（℗ 欄自寫 2005、曲長與 MB 2005 那筆逐項相符到毫秒），與 1993 黑膠對不上（〈Shining Light Steppers〉6:15 對 4:12、〈Earthrush〉6:58 對 3:28、〈Burning Indica〉1:57 對 4:52），**且六軌在 1993 曲目表上根本不存在**。**試聽可用但必須標版本，禁用它的軌數、曲長與曲序。**另：本張**三份紀錄三個軌數**（1993 黑膠 8／1993 CD 5，每軌是串成的一段／2005 雙黑膠 8+6）——**「這張碟有幾首」沒有唯一答案，行文禁止給總數**。"
   },
   "Zion Train|Great Sporting Moments in Dub!": {
     "batch": "c85",
@@ -639,7 +643,9 @@
     "trackCount": 12,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3a/87/52/3a875217-bf1e-d89f-cada-732b4a2ae5c9/mzaf_7666861086909611214.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核**：Apple 312372487 **標題掛著「(Original Version)」，但它不是**：12 軌的曲長對上的是 **2003 日本 Beat Records BRC-86 重製版**（第 1 軌 3:27 對 1995 的 2:41、第 3 軌 5:32 對 6:40、第 8 軌 4:57 對 5:06），℗ 欄掛 Beat Records。**禁止把「Original Version」寫進盤名，也不得據此寫成原盤。**"
   },
   "Dread & Fred|Iron Works Pt. 2 : On High": {
     "batch": "c85",
@@ -653,7 +659,8 @@
       "ca:2→0",
       "au:2→0"
     ],
-    "status": "unavailable"
+    "status": "unavailable",
+    "note": "**2026-09-04 研究層 b 覆核**：維持 unavailable，**但理由要改寫**：Apple 上**有**命中——603573327《Iron Works, Pt. 1 & 2 on High》20 軌，**第 11–20 軌正是本張 SHAKA 915 的十軌全部、曲序逐項相同**，第 1–10 軌是 1989 年 SHAKA 875《Iron Works》。**那是二合一，不是這張碟**（第 140 條）。不得寫成「這些服務上查不到」，要寫成「查到的是二合一那版」。"
   },
   "Willi Williams|Natty With a Cause": {
     "batch": "c85",
@@ -681,7 +688,8 @@
       "ca:0→0",
       "au:0→0"
     ],
-    "status": "unavailable"
+    "status": "unavailable",
+    "note": "**2026-09-04 研究層 b 覆核**：維持 unavailable，**但理由要改寫**：Apple 上**有**命中——419657355《Watch & Pray - Overstanding》20 軌，**第 11–20 軌是本張十軌全部**（曲長與 MB 2020 數位版相符到毫秒，末軌差 13ms），第 1–10 軌是同年的《Overstanding》。**那是二合一，不是這張碟**（第 140 條）。"
   },
   "Black Roots|Natural Reaction": {
     "batch": "c85",
