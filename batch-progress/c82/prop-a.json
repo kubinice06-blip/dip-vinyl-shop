@@ -1,0 +1,382 @@
+[
+ {
+  "artist": "Yoshihiro Sawasaki",
+  "album": "Perfumed Garden",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Sublime Records",
+  "why": "Sublime Records 的第一張專輯編號（SBLCD 5000），廠牌 1994 年在東京成立（Discogs 廠牌頁 https://www.discogs.com/label/1328-Sublime-Records-3 記「Japanese label founded in 1994」），同年以 Srcd.001／Srcd.101 兩張把 ケン イシイ 與 ススム ヨコタ 送出日本。本張原盤是 Discogs release 161187，封面掛名印的是縮寫「YS」，MB 實體則登記全名 Yoshihiro Sawasaki。地位證據是 MB 該 release-group 轄下的第二筆 2019-05-15 日本 release：同一張碟在二十五年後重新出版，Apple Music 日本店面上架的版本標題帶「2019 Remaster」（collectionId 1464183231）。池中實掃：Sawasaki 名下 0 張，Sublime／Frogman／Transonic／Syzygy 四家廠牌在池中皆 0 張，只有 Susumu Yokota 5 張與 Ken Ishii 3 張兩位已經溢出這條線。",
+  "risk": "掛名分歧是本張最大的風險：Discogs 原盤印「YS*」、MB 實體寫「Yoshihiro Sawasaki」、同人另有「Meditation Y.S.」與「Doctor YS & The Cosmic Drunkards」兩個 Sublime 掛名（SBLEP-005、SBLCD5013），四種寫法在任何 toLowerCase＋去符號的正規化下都不相等。Apple 日本店面的藝人字串是「YoshihiroSawasaki」（無空格），已填進 queryAlias。CAA release-group front 實測 200，封面有著落；Apple 命中在 jp 店面、us／gb 皆零。盤名《Perfumed Garden》在英美搖滾曲目中是常見詞組，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 03f864aa-9806-4ec8-af37-149d76c30bba《Perfumed Garden》，artist-credit「Yoshihiro Sawasaki」，first-release-date 1994-11-25，primary-type Album，secondary-types 空，轄下 2 個 release 皆 JP／Official（1994-11-25、2019-05-15）。已回問 release-group/<id>?inc=artist-credits+releases 確認型別與標題。藝人的另外兩個掛名 Meditation Y.S. 與 Doctor YS & The Cosmic Drunkards 在 MB 是各自獨立的 artist-credit，其 release-group 刻意不釘（後者是 EP）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "YS; YoshihiroSawasaki; 澤崎善弘; Meditation Y.S.",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Blind Light",
+  "album": "The Absence of Time",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Music Mine",
+  "why": "東京的 Music Mine 1994 年 6 月成立（Discogs 廠牌頁 https://www.discogs.com/label/31212-Music-Mine 記其為 Media Factory 旗下的一個 division，2001 年 7 月被轉讓給 70Drums），這張是它 ALDA 編號線的第一張（ALDA-001，Discogs release 136922）。Music Mine 後來成為 Sublime Records 在日本的發行母體：Sublime 1998 年之後的 MKCS 編號（Co-Fusion《Co-Fu》MKCS-1012、Max Brennan MKCS-1006）都掛在同一家公司名下，本張因此是這條線最早的一筆。池中實掃：Blind Light 名下 0 張，Music Mine 廠牌在池中 0 張。",
+  "risk": "MB 上有兩個同名 release-group 且掛名相同：1994 年這張（釘住）與 2022-12-30 的《The Absence Of Time》，後者字面只差大小寫，字串正規化後完全相等，下游若用盤名比對會抓錯。CAA release-group front 實測 404，封面要走 Apple 或人工；Apple 三個店面（jp／us／gb）搜尋皆未命中，試聽預估拿不到。掛名 Blind Light 是兩個英文常用字的組合，以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Dälek《Absence》、Electric Light Orchestra《Time》），逐筆核對皆為不同的碟。",
+  "mbNote": "釘 release-group 54088894-66b3-3280-8df6-dc7a91b13255《The Absence of Time》，artist-credit「Blind Light」，first-release-date 1994，primary-type Album，secondary-types 空，轄下 1 個 release：1994／JP／Official。**對照組 e650b5a8-e4cb-465d-864d-87809b65957d《The Absence Of Time》（2022-12-30）刻意不釘**——同名同掛名的後出碟，年份與本卡不符。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "AKIO / OKIHIDE",
+  "album": "Scratches",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Sublime Records",
+  "why": "Sublime Records 1995 年的 SBLCD5009（Discogs release 119349），是廠牌少數的雙掛名合作盤，兩位當事人各自都還有獨走的線：Okihide 隔年在 Syzygy 出《A boy in picca season》（SZY008CD），Sublime 這一側則同年出了 Ringo《Plantation》與 Prism《Metronome Melody》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1119412137，掛名字串「AKIO / OKIHIDE」），CAA 也有 release-group front——這在本批四十餘張裡是少數兩者都有的。池中實掃：Akio 與 Okihide 兩個掛名名下皆 0 張。",
+  "risk": "掛名是一組斜線串接的雙人字串，Discogs 寫「Akio* / Okihide*」（帶星號的別名標記）、MB artist-credit 寫「AKIO/OKIHIDE」（無空格）、Apple 寫「AKIO / OKIHIDE」（有空格）——三種寫法在去符號正規化後會坍成同一個鍵，但任何逐字元比對的下游都會分歧，queryAlias 已把三種都填上。第 139 條的空格陷阱在此適用：用「AKIOOKIHIDE」去 MB 搜尋會回一個乾淨的空結果。以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Kenny Barron《Scratch》、The Crusaders《Scratch》），皆為不同的碟。",
+  "mbNote": "釘 release-group b30f9e18-1d4f-4265-90b3-c1dd0bc2d43d《SCRATCHES》，artist-credit「AKIO/OKIHIDE」，first-release-date 1995-11-20，primary-type Album，secondary-types 空，轄下 1 個 release：1995-11-20／JP／Official。卡片盤名採 Title Case《Scratches》，MB 實體全大寫是日本 CD 目錄的排版慣例，大小寫在外部服務會被正規化（第 50／52 條）。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "AKIO/OKIHIDE; Akio / Okihide; AKIO・OKIHIDE",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Dan Curtin",
+  "album": "Deception",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Sublime Records",
+  "why": "克里夫蘭的 Dan Curtin 是 Sublime Records 唯一長期簽下的非日本藝人：1994 年廠牌第三張 12 吋（SBLEP.003《Voices From Another Age》，Discogs release 51657）就是他的，本張則是 1996 年的 SBLCD5010（Discogs release 97509，英國同步版 SBLCD5010UK 為 release 43658），另有 SBLLP002 雙黑膠（release 71056）。這條線說明 1990 年代日本地下廠牌不只出口、也進口：Sublime 把底特律／克里夫蘭一側的作品簽進日本目錄，同一份目錄裡是 Ken Ishii 與 Susumu Yokota。池中實掃：Dan Curtin 名下 0 張。",
+  "risk": "本張是美國藝人在日本廠牌的發行，MB 轄下兩筆 release 分屬 JP（status 未標）與 GB（Official），行文不得把它寫成日本藝人的碟。同名風險：Deception 是英文常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。CAA release-group front 實測 200，封面有著落；Apple 三店面搜尋皆未命中，試聽預估拿不到。掛名兩個字皆為常見英文人名，跨批去重時要連盤名一起比。",
+  "mbNote": "釘 release-group 54cede5d-a16a-4219-ac8c-293eda6ca7ce《Deception》，artist-credit「Dan Curtin」，first-release-date 1996，primary-type Album，secondary-types 空，轄下 2 個 release：1996／JP（status 未標）與 1996／GB／Official。同藝人在 Sublime 的兩張 EP（682bfacb-2af6-4e6a-aac1-983acf5be577《Voices From Another Age》、851c8202-78f5-33de-bb4e-a927a5522d0f《I'll Take You There Remixes EP》，皆 primary-type EP）**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Web",
+  "album": "Ivory Tower",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Syzygy Records",
+  "why": "Syzygy Records 由 Ken Inaoka 於 1993 年創立，Discogs 廠牌頁（https://www.discogs.com/label/11820-Syzygy-Records）稱它是「one of the first independent techno labels in Japan」。廠牌前四年的目錄是一條從限量彩膠走到 CD 的線：SZY002LP 到 SZY007LP 全是編號限量的 MiniAlbum 黑膠，1996 年起才轉成 SZY008CD 之後的 CD 專輯。Web 是這條線上出現次數最多的掛名（SZY002LP《Romance LP》、SZY005LP《Web Classics LP》、SZY011CD 本張，Discogs release 294267）。池中實掃：Web 名下 0 張，Syzygy 廠牌在池中 0 張。",
+  "risk": "掛名「Web」是三個字母的英文常用字，MB 實體在 Discogs 上被標成「Web (2)」以與同名者區隔；任何以單一藝人名查詢的下游都會撈錯人（第 139 條附記的形狀）。以盤名為主鍵掃全池完全相等 0 筆；掛名去符號後的鍵長度只有 3，掃描器的 length>=4 守衛會跳過它的子字串比對，撞卡要靠盤名這一側。CAA release-group front 實測 404；Apple 搜尋在 gb 店面回的是 Adept《The Ivory Tower - Single》，不是本張，判為未命中，封面與試聽兩邊都沒有著落。",
+  "mbNote": "釘 release-group c0b99d3a-ab40-4059-a3c7-213e8c616b8e《Ivory Tower》，artist-credit「Web」，first-release-date 1996，primary-type Album，secondary-types 空，轄下 1 個 release：1996／JP（status 未標）。同掛名的 060ed108-30a1-4ee4-98e4-3ebbdf9f9a49《Web Classics LP》（1995，primary-type Album）**刻意不釘**——Discogs 那筆標 MiniAlbum 且盤名帶「Classics」，型別與內容的性質與 MB 登記不一致，本批不收。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Web (2)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Okihide",
+  "album": "A Boy in Picca Season",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Syzygy Records",
+  "why": "Syzygy 從限量黑膠轉進 CD 的第一張（SZY008CD，Discogs release 104166），編號緊接在 SZY007LP 之後。同一位當事人前一年才在 Sublime 出過雙掛名的《Scratches》（SBLCD5009），兩家廠牌在 1995–96 年之間共用了同一批人——這是本批選件的主軸：不是挖一家廠牌，是挖一張目錄表上互相搭橋的名字。池中實掃：Okihide 名下 0 張（本批另收其雙掛名的《Scratches》，兩者 artist 字串不同）。",
+  "risk": "MB 實體標題是全小寫的《A boy in picca season》，卡片採 Title Case，大小寫在外部服務會被正規化（第 50／52 條）。Discogs 掛名寫「Okihide*」（帶別名星號），MB 寫「Okihide」。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落，是本批風險最高的幾張之一。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 36cfcb96-cec4-445a-98b7-c670fca95da7《A boy in picca season》，artist-credit「Okihide」，first-release-date 1996-08，primary-type Album，secondary-types 空，轄下 1 個 release：1996-08／JP／Official。已回問 release-group 端點確認型別與標題。與本批 b30f9e18（AKIO/OKIHIDE《SCRATCHES》）是不同的 artist-credit，兩張互不為對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "OKIHIDE; 沖秀",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ura Ura",
+  "album": ".,. (Ten-Chong-Ten)",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Syzygy Records",
+  "why": "Syzygy 的 SZY009CD（Discogs release 294250），編號夾在 Okihide 與 Takayuki Shiraishi 兩張之間，是廠牌 CD 期三張連號專輯的中間一張。盤名本身是這條線的標本：唱片名寫成三個標點符號「.,.」，括號裡的「Ten-Chong-Ten」是它的唸法——這種只在小廠目錄裡成立的命名方式，正是本批要留下的形狀。池中實掃：Ura Ura 名下 0 張。",
+  "risk": "盤名以三個標點符號起頭，去符號正規化後只剩「tenchongten」，任何以盤名為鍵的比對都會把標點整段丟掉；c-79 的短盤名教訓（《( )》《+》）在此適用，掃描器的 length>=4 守衛必須開著。括號段是唸法而非再版註記，第 132 條修過的括號剝除規則不得把它剝掉。CAA release-group front 實測 404、Apple 三店面皆未命中。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 12ddff22-f064-36ae-89d7-b7843c62afda《.,. (Ten-Chong-Ten)》，artist-credit「Ura Ura」，first-release-date 1996-08，primary-type Album，secondary-types 空，轄下 1 個 release：1996-08／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ten-Chong-Ten; ウラウラ",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Takayuki Shiraishi",
+  "album": "Photon",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Syzygy Records",
+  "why": "Syzygy 的 SZY012CD（Discogs release 325500），廠牌 CD 期最後幾張之一。地位證據是它在二十五年後被重新出版：MB 該 release-group 轄下另有兩筆 2022-11-17 的 release，一筆 FR／Official、一筆 XW／Official（數位），也就是這張 1997 年的日本 CD 在 2022 年由法國一側重新發行。這在本批的 Syzygy 五張裡是唯一一張有後續版本的。池中實掃：Takayuki Shiraishi 名下 0 張。",
+  "risk": "掛名是常見的日本姓名羅馬拼音，MB 只有羅馬寫法、沒有漢字實體名；第 49 條的跨文字系統撞卡在此看不見，日後若有人以「白石隆之」之類的漢字建卡，字串比對不會相等。盤名《Photon》是單一常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。CAA release-group front 實測 200，封面有著落；Apple 三店面皆未命中，試聽預估拿不到。2022 年那兩筆 release 的曲目是否與 1997 原盤相同未查證，行文不得斷言。",
+  "mbNote": "釘 release-group d7a37819-e8d8-4a46-a07c-6739a14b3ab9《Photon》，artist-credit「Takayuki Shiraishi」，first-release-date 1997，primary-type Album，secondary-types 空，轄下 3 個 release：1997／JP／Official、2022-11-17／FR／Official、2022-11-17／XW／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "白石隆之",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Quadra",
+  "album": "Sketch From a Moment",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Frogman Records",
+  "why": "Frogman Records 1993 年在東京成立，Discogs 廠牌頁（https://www.discogs.com/label/414-Frogman-Records）記下它的起點：一群人在西麻布十字路口等夜店開門時偶然結識，廠牌名取自「第一種發出聲音的生物」青蛙；1993-12-31 在澀谷辦第一場活動約 700 人到場，五個月後才出第一張黑膠 FRG001R。本張是廠牌轉做 CD 專輯後的 frog 006cd（Discogs release 113703）。地位證據是 Apple Music 日本店面上架的《Quadra Complete Selection 95-07》——一張把本作標題掛在合輯名裡的回顧盤（collectionId 1124763712，掛名字串「QUADRA a.k.a. Hiroshi Watanabe」）。池中實掃：Quadra 名下 0 張，Frogman 廠牌在池中 0 張。",
+  "risk": "Apple 那筆是 2016 年的回顧合輯而非本張原盤，盤名以子字串方式包含本卡盤名，逐張複檢時不可拿它的曲目去反推原盤（第 141 條）；試聽因此判為未命中。掛名「Quadra」與其本名 Hiroshi Watanabe 在 MB 是兩個實體，以本名查詢會落空。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Masahiko Togashi Quartet《Sketch》1977），為不同的碟。",
+  "mbNote": "釘 release-group d4548b61-ade5-3c79-9260-6e1b6345c136《Sketch From a Moment》，artist-credit「Quadra」，first-release-date 1997，primary-type Album，secondary-types 空，轄下 1 個 release：1997／JP／Official。同掛名在 Frogman 的三張 EP（51981371《Sky EP》、a828cacc《White E.P.》、a3d103f5《Day Light EP》，primary-type 分別為 EP／EP／Single）**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "QUADRA a.k.a. Hiroshi Watanabe; 渡辺博文",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Kagami",
+  "album": "The Broken Sequencer",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Frogman Records",
+  "why": "Frogman 的 FROG012CD（Discogs release 91617）。Kagami 是廠牌目錄裡編號跨度最長的一個掛名：1995 年的 Y EP（frog 3f2ec713 那筆）、1996 年 Beatbang EP、1998 年本張、2000 年《The Repaired Sequencer》、2001–02 的四張 EP，一路排到 2003 年的《STAR ARTS》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 205394630，掛名字串「KAGAMI」），且 CAA release-group front 實測 200——封面與試聽在本批四十餘張裡同時有著落的少數之一。池中實掃：Kagami 名下 0 張。",
+  "risk": "掛名「Kagami」去符號後的鍵是六個字母，與池中既有的短掛名不相撞，但它是常見的日文姓氏羅馬拼音（鏡／各務），第 49 條的跨文字系統撞卡在此看不見。Apple 的掛名字串是全大寫「KAGAMI」，已填 queryAlias。同一位當事人 2000 年的《The Repaired Sequencer》Discogs 標「CD, MiniAlbum, Mixed」而 MB 登記為 Album，兩邊型別相左，本批不收那張。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group c41ab607-3aef-4150-84e2-a85ec2eb027e《The Broken Sequencer》，artist-credit「Kagami」，first-release-date 1998，primary-type Album，secondary-types 空，轄下 1 個 release：1998／JP／Official。**對照組 e3e56eae-800d-4554-94bd-76dc145913cd《The Repaired Sequencer》（2000-06-06，primary-type Album）刻意不釘**——盤名只差一個字、Discogs 標 MiniAlbum 且標 Mixed，下游以盤名比對極易抓錯。同掛名的 af62843b《The Repaired Sequencer EP》、d75e541c《The Romantic Storm EP》等 EP 亦不釘。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "KAGAMI",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Co-Fusion",
+  "album": "Co-fu",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Music Mine",
+  "why": "Co-Fusion 是 Sublime 體系裡橫跨 12 吋與 CD 兩條線的雙人組：1995 年的 RLEP03《Frontier》掛在 Sublime 的姊妹廠 Reel Musiq（Discogs 廠牌頁 https://www.discogs.com/label/1532-Reel-Musiq 記其為 sub-label of Sublime Records），1997 年的 RLEP-008《Dir.r》與 Flare 對分一張 12 吋，本張則是 1998 年轉進 Music Mine 的 MKCS-1012（Discogs release 65986）。地位證據是它在 2001 年還有續作 IDCS-1008《Co-Fu2》，同一個掛名撐過廠牌三次改編號。池中實掃：Co-Fusion 名下 0 張。",
+  "risk": "MB 的 artist-credit 寫成「Co‐Fusion」，中間那一橫是 U+2010（連字號），不是 ASCII 的 hyphen-minus——任何 toLowerCase＋去符號的正規化都判不出兩者相同，逐字元比對的下游則會分成兩個掛名。卡片採 ASCII 寫法，U+2010 版本已填 queryAlias。盤名同樣要小心：MB 是《Co-fu》、Discogs 是《Co-Fu》、2001 年的續作是《Co-Fu2》，Apple 日本店面搜尋回的正是續作《Co-Fu 2》（collectionId 337924766），不是本張，試聽判為未命中。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 1f8e1d64-f110-34ad-999c-89119c22cc23《Co-fu》，artist-credit「Co‐Fusion」（U+2010 連字號），first-release-date 1998-09-03，primary-type Album，secondary-types 空，轄下 1 個 release：1998-09-03／JP／Official。**對照組 f652a77f-c4f3-302d-8a07-dbdee9f672af《Co-Fu 2》（2001-12-19，primary-type Album）刻意不釘**。同掛名的 EP（MKCS-1017《Strutin' Remixes EP》）亦不釘。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Co‐Fusion; Co Fusion; コフュージョン",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Captain Funk",
+  "album": "Tatsuya Oe Presents An Encounter With Captain Funk",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Reel Musiq",
+  "why": "Sublime 的姊妹廠 Reel Musiq 的第一張 CD 專輯（RLCD-01，Discogs release 946504；同年另出雙黑膠 RLLP01，Discogs release 247753），並由母體 Music Mine 以 MKCS-1008 同步發行（Discogs release 149629）。Reel Musiq 的整份目錄只有六筆，本張是其中唯一一張 1990 年代的原盤專輯——挖這條線挖到的就是這種只出過幾張就收攤的姊妹廠。池中實掃：Captain Funk 名下 0 張，Reel Musiq 廠牌在池中 0 張。",
+  "risk": "盤名分歧極大：MB 實體名是《Tatsuya Oe Presents An Encounter With Captain Funk》（把本名 Tatsuya Oe 寫進標題），Discogs 的 CD 版寫《Encounter With ...》、黑膠版寫《Encounter With...》，三者在盤名比對上完全不相等。卡片採 MB 實體名（第 6／120 條），Discogs 兩種寫法已填 queryAlias。Apple 三店面以「Captain Funk An Encounter With Captain Funk」搜尋皆未命中，試聽預估拿不到；CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Michael Stearns《Encounter》1988），為不同的碟。",
+  "mbNote": "釘 release-group c6fd1c85-7c32-37a6-b06f-e64cc875515d《Tatsuya Oe Presents An Encounter With Captain Funk》，artist-credit「Captain Funk」，first-release-date 1998-04-22，primary-type Album，secondary-types 空，轄下 1 個 release：1998-04-22／JP／Official。同掛名的 b321c2b9《O.Y.M. (Remixes)》與 753575d9《Bustin' Loose EP》皆 primary-type EP，**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Encounter With ...; Encounter With...; Tatsuya Oe; 大江達也",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Max Brennan",
+  "album": "Alien to Whom?",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Sublime Records",
+  "why": "Sublime 1998 年同時發了英國版 SBLCD-5025UK（Discogs release 39879）與日本版 MKCS-1006（Discogs release 579884），前一年還先出過 12 吋 SBLEP 23（Discogs release 138250）——那張 12 吋的封面把盤名誤印成《Alien To Whome?》，多了一個 e。Sublime 在 1996–98 年間開了一條掛 UK 尾碼的編號線（SBLCD5006US、SBLCD5010UK、SBLCD5011UK、SBLCD5012UK、SBLCD-5025UK），本張是這條線上少數的非日籍藝人原盤。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1460351144）。池中實掃：Max Brennan 名下 0 張。",
+  "risk": "MB 轄下唯一一筆 release 標 GB，本張雖屬日本廠牌目錄卻不是日本壓片，行文不得把它寫成日本盤。12 吋版的誤印盤名《Alien To Whome?》在 Discogs 上是另一個字串，去重時會被當成另一張碟（第 117 條的形狀）。掛名「Max Brennan」兩個字皆為常見英文人名。CAA release-group front 實測 200、Apple 命中在 jp 店面，封面與試聽兩邊都有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 3 筆（Strapping Young Lad／Larry Heard／Jerry Goldsmith 的《Alien》），皆為不同的碟。",
+  "mbNote": "釘 release-group 1953ba6f-d34c-31dc-90fd-d9b830565b57《Alien to Whom?》，artist-credit「Max Brennan」，first-release-date 1998，primary-type Album，secondary-types 空，轄下 1 個 release：1998／GB／Official。已回問 release-group 端點確認型別與標題。同掛名 2000 年的《We Are Part Of Us And So Are You》（Sublime MKCS-1026）本批不收，未在 MB 釘任何對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alien To Whome?",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Riow Arai",
+  "album": "Circuit '72",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Soup-Disk",
+  "why": "Soup-Disk 是 1990 年代東京的地下 breaks 廠牌，Discogs 廠牌頁（https://www.discogs.com/label/5423-Soup-Disk）把它的座標寫成 shi-ra-nui、360 records、bagdad night works、transonic 這一串同代小廠。本張是它 silverstone 支線的第三號（soup silverstone 03，Discogs release 264096），也是 Riow Arai 在這家廠牌的第一張專輯，後續是 1999 年的 soup 012CD《Mind Edit》與 2001 年的 SOUP 015 CD《Beat Bracelet》。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 978238155，盤名寫成「Circuit' 72」）。池中實掃：Riow Arai 名下 0 張。",
+  "risk": "盤名裡的撇號位置在三個來源各不相同：MB 是《Circuit '72》、Apple 是《Circuit' 72》、Discogs 是《Circuit '72》，逐字元比對會分歧，已填 queryAlias。Frogman 目錄裡另有一位「Ryo Arai」（frog 003cd《Again》，Discogs release 315362），與本人是不同的掛名字串，以「Ryo Arai」查 MB 兩個方向都 count=0，不得混為一談。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 09844ab4-d8fb-3533-8786-33dd89956144《Circuit '72》，artist-credit「Riow Arai」，first-release-date 1998-06-22，primary-type Album，secondary-types 空，轄下 1 個 release：1998-06-22／JP／Official。同掛名的 4dde2586-f578-389d-9ef0-02d58f83c976《Mind Edit》亦為本批收錄卡（同組），兩者互不為對照組。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "riow arai; Circuit' 72; 新井亮",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Cappablack",
+  "album": "The State of the Night",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Soup-Disk",
+  "why": "Soup-Disk 主編號線的 SOUP 007 CD（Discogs release 248213），排在 Montage《Mixology》與 Kitta《14 Compositions Of New Jazz》之間。這家廠牌的主線與 silverstone／silverworld 兩條支線在 1996–2001 年間交錯出片，本張屬主線編號，是廠牌把它的 breaks 路數收進單一藝人專輯的少數幾筆之一。池中實掃：Cappablack 名下 0 張，Soup-Disk 廠牌在池中 0 張。",
+  "risk": "掛名「Cappablack」在 MB 只有一個實體、沒有別名，Discogs 亦無別名標記，但它是拼寫獨特的自造字，任何拼寫變體（Cappa Black、Capablack）都會查無而不回錯誤碼（第 139 條）。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 47ac7dbe-042a-362c-acd4-f02968fd194f《The State of the Night》，artist-credit「Cappablack」，first-release-date 1998-03-31，primary-type Album，secondary-types 空，轄下 1 個 release：1998-03-31／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Cappa Black; Capablack",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Riow Arai",
+  "album": "Mind Edit",
+  "year": 1999,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Soup-Disk",
+  "why": "Soup-Disk 的 soup 012CD（Discogs release 198636），是本批四十餘張裡流通最遠的一張：MB 該 release-group 轄下除了 1999-08 的日本原盤，另有 2003-10-27 的 GB／Official 與 2016-12-13 的 XW／Official 兩筆，也就是它先被英國一側重發、十七年後又出了全球數位版。Apple Music 日本店面亦有整張原盤（collectionId 969911983，掛名字串「riow arai」）。池中實掃：Riow Arai 名下 0 張（本批同組另收其 1998 年《Circuit '72》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "risk": "Apple 與部分再發把掛名寫成全小寫「riow arai」，MB 實體是「Riow Arai」，大小寫在外部服務會被正規化但逐字元比對會分歧。2003 年的英國版與 2016 年的數位版曲目是否與 1999 原盤相同未查證，行文不得斷言軌數或曲序（第 141 條）。盤名《Mind Edit》兩個字皆為英文常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。CAA release-group front 實測 200、Apple 命中在 jp 店面，封面與試聽兩邊都有著落。",
+  "mbNote": "釘 release-group 4dde2586-f578-389d-9ef0-02d58f83c976《Mind Edit》，artist-credit「Riow Arai」，first-release-date 1999-08，primary-type Album，secondary-types 空，轄下 3 個 release：1999-08／JP／Official、2003-10-27／GB／Official、2016-12-13／XW／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "riow arai; 新井亮",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Mfon",
+  "album": "A Day Trip to Chicago",
+  "year": 1999,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Frogman Records",
+  "why": "Frogman 的 frog 014cd（Discogs release 1079337），與同年的 frog 013cd、frog bf015cd 一起構成廠牌 1999 年的三張專輯。Frogman 從 1994 年的 12 吋起家（FRG001R），1996 年起才轉出 CD 專輯，這條 frog 0xxcd 編號線總共不到二十筆，本張是其中之一。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 36005923，掛名字串「MFON」）。池中實掃：Mfon 名下 0 張。",
+  "risk": "掛名「Mfon」只有四個字母且無別名，是查無型陷阱的高風險字串。CAA release-group front 實測 404，封面沒有著落，要靠 Apple 那筆 collectionId 反查。盤名含地名 Chicago，以盤名為主鍵掃全池完全相等 0 筆、子字串 3 筆（Jhené Aiko《Trip》、Chicago《Chicago》、Chic《Chic》），皆為不同的碟。",
+  "mbNote": "釘 release-group 433eeaf0-628b-4ff0-b074-af003370a797《A Day Trip To Chicago》，artist-credit「Mfon」，first-release-date 1999，primary-type Album，secondary-types 空，轄下 1 個 release：1999／JP／Official。卡片盤名採 Title Case《A Day Trip to Chicago》，與 MB 實體僅差介系詞大小寫（第 50／52 條）。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "MFON",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Andrei Zueff",
+  "album": "Kitchen Works",
+  "year": 1999,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Frogman Records",
+  "why": "Frogman 的 frog bf015cd（Discogs release 1073359），編號中間的 bf 是廠牌 Break-Fast 系列的縮寫——那條系列 1998 年出過合輯 frog 008cd《Break-Fast, First-Break》（Discogs release 458484），本張是它延伸出的個人專輯。Frogman 從 1997 年的 Kagami & Friends 起就把海外投稿收進目錄，本張的當事人是這條路上最遠的一位。池中實掃：Andrei Zueff 名下 0 張。",
+  "risk": "掛名在 Discogs 上寫「Andrei Zueff*」（帶別名星號），西里爾原名未在 MB 建立實體；第 49 條的跨文字系統撞卡在此看不見，日後若有人以西里爾寫法建卡不會相等。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落，是本批風險最高的幾張之一。盤名《Kitchen Works》以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 768133b8-e897-49aa-b700-0d5e5e8e79e5《Kitchen Works》，artist-credit「Andrei Zueff」，first-release-date 1999-08，primary-type Album，secondary-types 空，轄下 1 個 release：1999-08／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Andrey Zueff; Андрей Зуев",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Taichi",
+  "album": "Am I",
+  "year": 1999,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Soup-Disk",
+  "why": "Soup-Disk 主編號線的 SOUP 013 CD（Discogs release 1580403），是廠牌 1999 年的第三張專輯，排在 Riow Arai《Mind Edit》與 2001 年 Suzukiski《Utopia》之間。Soup-Disk 主線在 1996–2002 年間只出到 soup016CD，本張的編號位置說明它是廠牌後期為數不多的新掛名。CAA release-group front 實測 200，封面有著落。池中實掃：Taichi 名下 0 張。",
+  "risk": "盤名《Am I》去符號後只有三個字元，短到掃描器的 length>=4 守衛會直接跳過子字串比對（c-79 教訓），撞卡只能靠掛名這一側；掛名「Taichi」同樣是六個字母的日文名羅馬拼音，兩側都薄。以盤名為主鍵掃全池完全相等 0 筆。Apple 三店面皆未命中，試聽預估拿不到；MB 只有羅馬寫法、無漢字實體，第 49 條的跨文字系統撞卡看不見。",
+  "mbNote": "釘 release-group 5ced8e00-060a-3557-a701-583131ce9d6f《Am I》，artist-credit「Taichi」，first-release-date 1999-09-15，primary-type Album，secondary-types 空，轄下 1 個 release：1999-09-15／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TAICHI; 太一",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Hirofumi Goto",
+  "album": "Geo Rhythm",
+  "year": 2001,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Frogman Records",
+  "why": "Frogman 的 FROG019CD（Discogs release 1079348），是廠牌 frog 0xxcd 專輯線最後幾張之一——同年的 frog 021cd 已經是回顧合輯《U.S.B. -United Sounds Of Blue-》，而 United Sounds Of Blue 正是 Frogman 的姊妹廠（Discogs 廠牌頁 https://www.discogs.com/label/16875-United-Sounds-Of-Blue 記其為 sublabel of Frogman Records/Frognation）。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 182611146）。池中實掃：Hirofumi Goto 名下 0 張。",
+  "risk": "年份落在 2001，已經在本批「1990 年代地下廠牌」場景的邊緣，收它的理由是廠牌編號線的收尾位置而非年代；行文不得把它寫成 1990 年代的碟。掛名是常見的日本姓名羅馬拼音（後藤宏文等寫法），MB 只有羅馬實體，第 49 條的跨文字系統撞卡看不見。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Frank Bretschneider《Rhythm》2007），為不同的碟。",
+  "mbNote": "釘 release-group 26347d9a-7bff-4086-b6b5-cc3a8b59caec《Geo Rhythm》，artist-credit「Hirofumi Goto」，first-release-date 2001，primary-type Album，secondary-types 空，轄下 1 個 release：2001／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "後藤宏文",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

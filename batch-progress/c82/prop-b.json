@@ -1,0 +1,325 @@
+[
+ {
+  "artist": "松前公高",
+  "album": "Space Ranch",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic Records 1994 年 4 月由 永田一直 創立，接手他先前的 Trigger 廠牌（Discogs 廠牌頁 https://www.discogs.com/label/785343-Transonic-Records-4 記「formed in April 1994 by Kazunao Nagata as a successor to the Trigger label」，2004 年收攤）。廠牌開張第一年就一口氣出了八張 TRS-250xx，本張是其中的 TRS-25007（Discogs release 463724），與同批的 Mind Design、Mushroom Now!、Interferon 三張構成 Transonic 的創始名單。MB 該 release-group 轄下另有一筆同年的 JP／Promotion release，是當年宣傳盤與市售盤並存的紀錄。池中實掃：松前公高 與 Kimitaka Matsumae 兩種寫法名下皆 0 張，Transonic 廠牌在池中 0 張。",
+  "risk": "本張是第 49 條與第 139 條的直接實例：MB 的 artist-credit 是漢字「松前公高」，而 Discogs 用羅馬拼音「Kimitaka Matsumae」——以羅馬拼音去 MB 下 release-group 搜尋，藝人與作品兩個方向都回乾淨的 count=0、不回錯誤碼，差點整位漏掉。卡片掛名採 MB 實體的漢字（第 6／120 條），羅馬拼音已填 queryAlias。CAA release-group front 實測 200，封面有著落；Apple 三店面（jp／us／gb）皆未命中，試聽預估拿不到。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 2ef68b68-7fd3-34d3-b61c-fab08327b364《Space Ranch》，artist-credit「松前公高」，first-release-date 1994，primary-type Album，secondary-types 空，轄下 2 個 release：1994／JP／Official 與 1994／JP／Promotion。已回問 release-group/<id>?inc=artist-credits+releases 確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kimitaka Matsumae; マツマエキミタカ",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mind Design",
+  "album": "View From the Edge",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 創始年的 TRS-25008（Discogs release 313589），與 TRS-25005 到 TRS-25007 三張同屬廠牌開張第一批。這個掛名在 Transonic 的目錄裡橫跨了整整七年：2000-12-28 廠牌又替它出了回顧盤《1991–1994》（MB release-group 11dd294d-f2d4-4095-b64e-fb6d14a3b5c9，primary-type Album、secondary-type Compilation），把它在本張之前的東西整理成一張碟——這是 Transonic 在 2000–01 年做的一整批回顧（同期還有 Tagomago《1996–1998》、Unreal《1994–1997》、Hair Stylistics《1996–1999》），也是判斷這條線後來被自己人重新看待的證據。池中實掃：Mind Design 名下 0 張。",
+  "risk": "MB 實體全大寫寫成《VIEW FROM THE EDGE》、掛名亦全大寫「MIND DESIGN」，卡片採 Title Case，大小寫在外部服務會被正規化（第 50／52 條）。掛名是兩個英文常用字的組合，以單一藝人名查詢的下游有撈錯人的風險。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 95a34dc5-22e4-443f-8376-f38b51901646《VIEW FROM THE EDGE》，artist-credit「MIND DESIGN」，first-release-date 1994，primary-type Album，secondary-types 空，轄下 1 個 release：1994／JP／Official。**對照組 11dd294d-f2d4-4095-b64e-fb6d14a3b5c9《1991–1994》（2000-12-28，primary-type Album、secondary-types Compilation）刻意不釘**——那是同掛名的回顧合輯，不是本卡。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "MIND DESIGN",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mushroom Now!",
+  "album": "Traveller's Light",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 創始年的 TRS-25005（Discogs release 401962）。這張是本批少數有明確二次出版紀錄的碟：MB 該 release-group 轄下除 1994 年的日本原盤，另有兩筆 2021-10-06 的 JP／Official release，Apple Music 日本店面上架的版本標題帶「DELUXE EDITION」（collectionId 1588849258）——同一張 1994 年的日本 CD 在二十七年後被整理成加值版重出。池中實掃：Mushroom Now! 名下 0 張。",
+  "risk": "MB 實體標題《TRAVELLER’S LIGHT》用的是 U+2019 彎引號，卡片採 ASCII 直撇號，逐字元比對的下游會分歧（c-79 三補與 c-81 第 6 條的同形異碼形狀）；掛名末尾的驚嘆號在去符號正規化後會消失。2021 年那兩筆 release 標「DELUXE EDITION」，曲目與 1994 原盤是否相同未查證，行文不得斷言軌數，也不得拿 Apple 的軌數反推原盤（第 141 條）。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Chris Stapleton《Traveller》2015），為不同的碟。",
+  "mbNote": "釘 release-group 0734ffd3-0ad9-4620-aaf2-39486c72d485《TRAVELLER’S LIGHT》，artist-credit「MUSHROOM NOW!」，first-release-date 1994，primary-type Album，secondary-types 空，轄下 3 個 release：1994／JP／Official 與兩筆 2021-10-06／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "MUSHROOM NOW!; TRAVELLER’S LIGHT",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Interferon",
+  "album": "Seance-Room Music",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 創始年的 TRS-25006（Discogs release 318679）。地位證據是它整張留在 Apple Music 日本店面上（collectionId 449098282，掛名字串「INTERFERON」、盤名「SEANCE-ROOM MUSIC」）——本批四十餘張裡只有十來張有這個待遇，而它是最早的一張 1994 年原盤。廠牌同年另出四張 TRS-250xx 與兩張合輯（《Transonic 2 (Feedback)》《Transonic 3 (Range)》），本張是那份創始名單的一員。池中實掃：Interferon 名下 0 張。",
+  "risk": "MB 實體標題《SEANCE‐ROOM MUSIC》中間那一橫是 U+2010 連字號，不是 ASCII hyphen——`chk-prop.mjs` 對 U+2010 有反模式檢查，卡片必須採 ASCII 寫法，MB 原字串已填 queryAlias。掛名「Interferon」是生物學名詞，以單一藝人名查詢會撈到大量無關結果。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 2 筆（Carole King《Music》、Playboi Carti《MUSIC》），皆為不同的碟。",
+  "mbNote": "釘 release-group f2c30922-4c34-4edb-8c29-e31d62bc1d92《SEANCE‐ROOM MUSIC》（MB 原字串含 U+2010），artist-credit「INTERFERON」，first-release-date 1994-10，primary-type Album，secondary-types 空，轄下 1 個 release：1994-10／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "INTERFERON; SEANCE‐ROOM MUSIC",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Suzukiski",
+  "album": "Waiting",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 的 TRS-25013（Discogs release 263906），是 Suzukiski 的第一張專輯，也是他橫跨三家小廠十年的起點：1996 年轉到 Zero Gravity 的 ZGV-001《Kamakura》、1997 年到 Soup-Disk 的 silverstone 02《Joy Of Running》、1999 年 soup011CD《Message》、2001 年 SOUP 014 CD《Utopia》。同一個掛名接連做了三家廠牌的開場或收尾編號，是這條 1990 年代日本地下線互相搭橋的典型。池中實掃：Suzukiski 名下 0 張（本批同組另收《Kamakura》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "risk": "MB 實體標題是全小寫的《waiting》，卡片採 Title Case；盤名是英文最常用的進行式動詞之一，以盤名為主鍵掃全池完全相等 0 筆、子字串 4 筆（New Order《Waiting for the Sirens' Call》、The Doors《Waiting for the Sun》、Tina Brooks《The Waiting Game》、Resurrection Band《Awaiting Your Reply》），皆為不同的碟。掛名「Suzukiski」是自造字，拼寫變體（Suzuki Ski、Suzuki-ski）都會查無而不回錯誤碼。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。",
+  "mbNote": "釘 release-group 3e84f6d0-fc32-472e-a7e2-5cd8624af023《waiting》，artist-credit「Suzukiski」，first-release-date 1995，primary-type Album，secondary-types 空，轄下 1 個 release：1995／JP／Official。同掛名的 dbe1aa32-95ff-4dc1-ae32-058e895238f6《KAMAKURA》亦為本批收錄卡（同組），兩者互不為對照組；2ff7922e《joy of running》（1997）與 1ba582d1《Message》（1999）本批不收，**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Suzuki Ski; スズキスキー",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Palomatic",
+  "album": "Trill",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 的 TRS-25010（Discogs release 923781）。地位證據與 Mushroom Now! 同型：MB 該 release-group 轄下除 1995-03-20 的日本原盤，另有一筆 2023-05 的 JP／Official release，Apple Music 日本店面上架的版本標題帶「[DELUXE EDITION]」（collectionId 1684873557）——1995 年的碟在二十八年後被重出。Transonic 在 2021–23 年間對這批 1990 年代目錄做了一連串加值版重發，本張與 Mushroom Now! 是其中兩筆。池中實掃：Palomatic 名下 0 張。",
+  "risk": "盤名《Trill》在池中有一筆完全相等的碟：Bun B《Trill》（2005），另有子字串 3 筆（Rick Ross《Trilla》、Bun B《II Trill》《Trill O.G.》）——逐筆人眼核對皆為不同的碟，掛名不同故去重鍵不相撞，但任何只看盤名的下游都會抓錯。MB 實體標題全大寫《TRILL》、掛名全大寫「PALOMATIC」，卡片採 Title Case。2023 年那筆標 DELUXE EDITION，曲目與原盤是否相同未查證，行文不得斷言軌數（第 141 條）。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。",
+  "mbNote": "釘 release-group 92d83d1e-aa77-4159-bb30-2506b0cf0dfc《TRILL》，artist-credit「PALOMATIC」，first-release-date 1995-03-20，primary-type Album，secondary-types 空，轄下 2 個 release：1995-03-20／JP／Official 與 2023-05／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "PALOMATIC",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nina-Noho",
+  "album": "Ambient Classics 1990-1992",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Transonic Records",
+  "why": "Transonic 的 TRS-25014（Discogs release 345035）。盤名本身就是這條線的自我定位：一張 1996 年出版、把 1990–92 年的東西整理出來的碟，出現在一家 1994 年才成立的廠牌目錄裡——Transonic 從創始年就同時做新作與翻箱底（開張第一批就有 TRS-25004《The Roots Of Transonic (Trigger Label 1990-1993)》，整理的是永田一直前一家廠牌 Trigger 的東西）。CAA release-group front 實測 200，封面有著落。池中實掃：Nina-Noho 名下 0 張。",
+  "risk": "兩處 Unicode 同形異碼：MB 掛名「NINA‐NOHO」與盤名《AMBIENT CLASSICS 1990–1992》分別用 U+2010 連字號與 U+2013 短破折號，卡片一律採 ASCII hyphen（`chk-prop.mjs` 對這一族符號有反模式檢查），MB 原字串已填 queryAlias。盤名帶「Classics 1990-1992」的形狀容易被下游誤判為合輯，但 MB 該 release-group 的 secondary-types 是空的，本卡以 Album 收；行文不得斷言它是新錄音或舊作整理，MB 條目上沒有這一欄（第 136 條）。Apple 三店面皆未命中。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Model 500《Classics》1993），為不同的碟。",
+  "mbNote": "釘 release-group 64853cf2-71cd-4811-ab70-06a752568be7《AMBIENT CLASSICS 1990–1992》（MB 原字串含 U+2013），artist-credit「NINA‐NOHO」（含 U+2010），first-release-date 1996，primary-type Album，secondary-types 空，轄下 1 個 release：1996／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "NINA‐NOHO; Nina Noho; AMBIENT CLASSICS 1990–1992",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Suzukiski",
+  "album": "Kamakura",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 這條 ZGV 編號線的第一號（ZGV-001，Discogs release 326406）。ZGV 的唱片在 Discogs 上同時掛在 Zero Gravity（https://www.discogs.com/label/304258-Zero-Gravity-3）與 Transonic Records 兩個廠牌條目底下，兩份目錄有大量重疊——這條支線 1996–2000 年間出了二十六個編號，本批的 Strange Garden、Tagomago、Masaaki Kikuchi、Trio Rakant、Nerve Net Noise、Tamaru、永田一直、Toshimaru Nakamura 都在其中。以第一號開場的是 Suzukiski，他前一年才在母廠 Transonic 出過 TRS-25013。池中實掃：Suzukiski 名下 0 張（本批同組另收《Waiting》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "risk": "盤名《Kamakura》在池中有一筆完全相等的碟：サザンオールスターズ《KAMAKURA》（1985）——逐筆人眼核對為不同的碟，掛名不同故去重鍵不相撞，但任何只看盤名的下游都會抓錯，且該筆是日文掛名，第 49 條的跨文字系統撞卡在此看不見。MB 實體標題全大寫《KAMAKURA》，卡片採 Title Case。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。",
+  "mbNote": "釘 release-group dbe1aa32-95ff-4dc1-ae32-058e895238f6《KAMAKURA》，artist-credit「Suzukiski」，first-release-date 1996，primary-type Album，secondary-types 空，轄下 1 個 release：1996／JP／Official。同掛名的 3e84f6d0-fc32-472e-a7e2-5cd8624af023《waiting》亦為本批收錄卡（同組），兩者互不為對照組。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Suzuki Ski; スズキスキー",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Strange Garden",
+  "album": "For Speaker System",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-004（Discogs release 322559），與同年的 ZGV-001 到 ZGV-009 一起構成這條支線的開張名單。同一個掛名隔年再出 ZGV-017《Mumbo Jumbo (Riutal Of The Back Yard)》（Discogs release 1033661），1998 年又在母廠 Transonic 出 TRS-25022《Mumbo Jumbo: Multiple Beat Maniacs》（Discogs release 2973773）——同一張碟名在兩家廠牌的兩個編號下各出現一次，是這條線編號與名稱互相纏繞的樣本。池中實掃：Strange Garden 名下 0 張。",
+  "risk": "同掛名的《Mumbo Jumbo》在 Discogs 上有兩筆不同編號、副標不同的條目（ZGV-017 與 TRS-25022），本卡不涉及它們，但下游若以掛名查目錄會撞上這組雙胞胎。掛名「Strange Garden」是兩個英文常用字的組合。MB 實體掛名全大寫「STRANGE GARDEN」，卡片採 Title Case。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group cbbbd5a7-d9e8-443d-b980-0f98f92e2ca0《For Speaker System》，artist-credit「STRANGE GARDEN」，first-release-date 1996，primary-type Album，secondary-types 空，轄下 1 個 release：1996／JP／Official。同掛名的《Mumbo Jumbo》兩筆在 MB 未建立對應的 release-group，**刻意不釘**任何對照組。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "STRANGE GARDEN",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Temdendam Suay",
+  "album": "Sounzer Paranoun (Sound Tracks of Some Films)",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-003（Discogs release 322548），廠牌開張年九張裡的第三張。這個掛名在 Discogs 與 MB 上都只有這一筆條目——一家 1996 年開張的支線，替一個此後再無其他出版紀錄的名字出了一張 CD，這正是本批要留下的形狀。池中實掃：Temdendam Suay 名下 0 張。",
+  "risk": "掛名與盤名都是自造字串，任何拼寫變體都會查無而不回錯誤碼（第 139 條）；MB 掛名全大寫「TEMDENDAM SUAY」，卡片採 Title Case。盤名帶括號副標「(Sound Tracks of Some Films)」，第 132 條修過的括號剝除規則不得把它當再版註記剝掉；副標裡出現 Sound Tracks 字樣，但 MB 該 release-group 的 secondary-types 是空的、沒有 Soundtrack，行文不得把它寫成原聲帶（第 136 條：條目上沒有的欄位不能當成唱片上的事實）。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group c703493e-c19f-4064-9b7e-9a59645fb163《Sounzer Paranoun (Sound Tracks of Some Films)》，artist-credit「TEMDENDAM SUAY」，first-release-date 1996，primary-type Album，secondary-types 空（**沒有 Soundtrack**），轄下 1 個 release：1996／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TEMDENDAM SUAY",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Tagomago",
+  "album": "Flower Instrumental",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-007（Discogs release 326007）。地位證據是 MB 該 release-group 轄下另有一筆 2016-07-08 的 XW／Official release（全球數位），且 Apple Music 日本店面有整張原盤（collectionId 1130937477，掛名字串寫成「TagoMago」）。同一個掛名 1997 年在母廠 Transonic 出 TRS-25019《Prelude For Afternoon》、1998 年出 TRS25026《Kogarashi No Etude》，2000-12-26 又被廠牌整理成回顧盤《1996–1998》（MB release-group 4e3a064f-e1b3-4329-bd7c-0a417f161996，secondary-type Compilation）——三張原盤加一張自家回顧，是這條線少見的完整弧線。池中實掃：Tagomago 名下 0 張（本批同組另收《Prelude for Afternoon》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "risk": "掛名有三種大小寫寫法：MB 實體「TAGOMAGO」、Apple「TagoMago」、Discogs「Tagomago」，卡片採 Discogs 寫法，另外兩種已填 queryAlias。掛名同時是 Can 1971 年專輯《Tago Mago》的名字（分寫兩字），以單一藝人名或盤名查詢的下游有撈錯的風險。CAA release-group front 實測 200，封面有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Jessie Montgomery《Strum》2006），為不同的碟。",
+  "mbNote": "釘 release-group ed52616f-361a-4493-bd07-86cf3a061177《FLOWER INSTRUMENTAL》，artist-credit「TAGOMAGO」，first-release-date 1996-10，primary-type Album，secondary-types 空，轄下 2 個 release：1996-10／JP／Official 與 2016-07-08／XW／Official。**對照組 4e3a064f-e1b3-4329-bd7c-0a417f161996《1996–1998》（2000-12-26，secondary-types Compilation）刻意不釘**。同掛名的 0cad2272-20a4-4990-8d9f-abe8ae6999b6《PRELUDE FOR AFTERNOON》亦為本批收錄卡（同組），兩者互不為對照組。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TAGOMAGO; TagoMago",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Montage",
+  "album": "Anthropologie",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Soup-Disk",
+  "why": "Soup-Disk 主編號線的 SOUP 003 CD（Discogs release 190729），是這家東京地下 breaks 廠牌第一張單一藝人專輯——它前兩個編號 soup001CD《Silverlization -銀化-》與 SOUP 002 CD《Silver World》都是合輯。Discogs 廠牌頁（https://www.discogs.com/label/5423-Soup-Disk）把它的座標寫成 shi-ra-nui、360 records、bagdad night works、transonic 這一串同代小廠。同掛名 1998 年再出 soup 006 CD《Mixology》。池中實掃：Montage 名下 0 張。",
+  "risk": "掛名「Montage」是英法文常用字，以單一藝人名查詢會撈到大量無關結果；盤名《Anthropologie》是法文常用字，且與 Charlie Parker 的名曲〈Anthropology〉只差一個字母的拼法，下游模糊比對有撈錯的風險。CAA release-group front 實測 404、Apple 三店面皆未命中，封面與試聽兩邊都沒有著落。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group a5b4c588-c76f-456a-80cc-38c10d4ae0a5《Anthropologie》，artist-credit「Montage」，first-release-date 1996，primary-type Album，secondary-types 空，轄下 1 個 release：1996／JP／Official。同掛名 1998 年的《Mixology》在 MB 未建立 release-group，**刻意不釘**任何對照組。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "HAT",
+  "album": "Tokyo - Frankfurt - New York",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Daisyworld Discs",
+  "why": "Daisyworld Discs 是 細野晴臣 主持的廠牌，Discogs 廠牌頁（https://www.discogs.com/label/4518-Daisyworld-Discs）記「Haruomi Hosono (co-founder of Yellow Magic Orchestra) directs this label. It ran from 1996 to 2013」。本張是廠牌開張年的 SYDW-0002（Discogs release 618589），編號緊接在第一張合輯《Daisy World Tour》之後。MB 該 release-group 轄下有兩筆 release：1996-05-29 的 DE／Official 先出，1996-12-21 的 JP／Official 後出——同一張碟先在德國、半年後才在日本廠牌目錄裡落地。Apple Music 日本店面亦有整張（collectionId 1743794451）。池中實掃：HAT 名下 0 張，Daisyworld 廠牌在池中 0 張。",
+  "risk": "掛名只有三個字母，去符號後的鍵長度是 3，掃描器的 length>=4 守衛會跳過它的子字串比對；池中以「HAT」做寬鬆子字串比對會命中 Foghat、Donny Hathaway、Waxahatchee 等二十餘筆，全是誤命中，撞卡判斷只能靠盤名這一側（完全相等 0 筆、子字串 2 筆：Lou Reed《New York》、Amy Winehouse《Frank》，皆為不同的碟）。盤名裡有兩個帶空格的 ASCII hyphen，下游若把它當再版註記或副標分隔會切錯。首發國是德國而非日本，行文不得把它寫成日本原盤。CAA release-group front 實測 200，封面有著落。",
+  "mbNote": "釘 release-group ffc7cd85-ed47-3dd7-91d3-4895c6e39594《Tokyo - Frankfurt - New York》，artist-credit「HAT」，first-release-date 1996-05-29，primary-type Album，secondary-types 空，轄下 2 個 release：1996-05-29／DE／Official 與 1996-12-21／JP／Official。**卡片年份取 1996**，與 first-release-date 同年。同掛名的 a5a61334-929b-38f1-857f-275015b8373d《DSP Holiday》（1998-07-21）本批不收，**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "H.A.T.",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Masaaki Kikuchi",
+  "album": "Formula",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-011（Discogs release 322544），廠牌 1997 年八個編號中的一個。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1144821338）。同一位當事人另在 Soup-Disk 的 soup004CD《Bass Sonority -夜弦響-》裡以 feat. 身分出現（Discogs release 5702152），是 Zero Gravity 與 Soup-Disk 兩份目錄之間的一條連線。池中實掃：Masaaki Kikuchi 與 菊池雅晃／菊地雅晃 三種寫法名下皆 0 張。",
+  "risk": "掛名有三種寫法而且漢字兩種互相打架：MB 實體是羅馬拼音「Masaaki Kikuchi」、Apple 日本店面寫「菊池雅晃」、Discogs 那筆 Soup-Disk 條目寫「菊地雅晃」——池與地在日文人名裡是不同的字，三者在任何正規化下都不相等（第 49／139 條）。卡片採 MB 實體的羅馬拼音，兩種漢字寫法已填 queryAlias；哪一種漢字才是本人的正字未查證，行文不得斷言。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。盤名《Formula》是單一常用字，以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Today《The New Formula》1990），為不同的碟。",
+  "mbNote": "釘 release-group 2fe8b21a-4ba0-48ca-afa3-8f2f1e3e0903《FORMULA》，artist-credit「Masaaki Kikuchi」，first-release-date 1997-03，primary-type Album，secondary-types 空，轄下 1 個 release：1997-03／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "菊池雅晃; 菊地雅晃",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Trio Rakant",
+  "album": "Kokorosususu",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-012（Discogs release 322554），編號緊接在 Masaaki Kikuchi《Formula》之後。這個掛名在 Discogs 與 MB 上都只有這一筆條目。CAA release-group front 實測 200——在本批四十餘張只有二十來張有封面的情形下，這是少數自帶封面的碟。池中實掃：Trio Rakant 名下 0 張。",
+  "risk": "掛名以「Trio」起頭，池中爵士側有大量「... Trio」的掛名，以單一藝人名做寬鬆比對會誤命中；盤名《Kokorosususu》是羅馬拼音的自造字串，任何斷詞變體（Kokoro Sususu、Kokoro-Sususu）都會查無而不回錯誤碼（第 139 條）。MB 掛名全大寫「TRIO RAKANT」，卡片採 Title Case。Apple 三店面皆未命中，試聽預估拿不到。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group a8b3fb92-e005-4211-975f-b9501235f12b《Kokorosususu》，artist-credit「TRIO RAKANT」，first-release-date 1997-03，primary-type Album，secondary-types 空，轄下 1 個 release：1997-03／JP／Official。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TRIO RAKANT; Kokoro Sususu",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nerve Net Noise",
+  "album": "This Island Earth",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-013（Discogs release 356138）。同一個掛名在廠牌上一個編號 ZGV-010 裡與 Dub Sonic Roots 對分了一張現場盤《Live At Uplink Factory November.3.1996》（Discogs release 323475，MB release-group 5b23b418-63a0-4ae2-a023-d93a9ba52930 標 secondary-type Live），本張則是它自己的專輯。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1134361409，掛名字串「Nerve Net Noise」、盤名全大寫）。池中實掃：Nerve Net Noise 名下 0 張。",
+  "risk": "盤名《This Island Earth》與 1955 年同名科幻電影相同，下游以盤名查外部服務會撈到電影原聲與相關條目。掛名三個字皆為英文常用字。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 1 筆（Portico Quartet《Isla》2009），為不同的碟。",
+  "mbNote": "釘 release-group 5816194c-e6f3-42ba-917a-6d19c0f39d8e《This Island Earth》，artist-credit「Nerve Net Noise」，first-release-date 1997-04，primary-type Album，secondary-types 空，轄下 1 個 release：1997-04／JP／Official。**對照組 5b23b418-63a0-4ae2-a023-d93a9ba52930《Live at Uplink Factory November.3.1996》（1997-02，secondary-types Live，與 Dub Sonic Roots 的聯名）刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "NERVE NET NOISE",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Tamaru",
+  "album": "Fuyu ni Katarite",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Zero Gravity",
+  "why": "Zero Gravity 的 ZGV-016（Discogs release 322573），是這個掛名在廠牌三張裡的第二張：1996 年 ZGV-008《Karmaless》（Discogs release 616123）、本張、1998 年 ZGV-022《夢の途中》（Discogs release 322564）。地位證據是 Apple Music 日本店面把原盤整張上架（collectionId 1134367871，掛名字串寫成平假名「たまる」）。池中實掃：Tamaru 名下 0 張（本批同組另收《夢の途中》，兩張合計 2 張，在同一藝人上限 3 張內）。",
+  "risk": "掛名跨三種文字系統：MB 實體全大寫羅馬「TAMARU」、Apple 寫平假名「たまる」、Discogs 寫「Tamaru」——第 49 條的跨文字系統撞卡在此完全看不見，三種寫法已全部填進 queryAlias。盤名是羅馬拼音的日文句子，MB 寫全小寫《fuyu ni katarite》、Discogs 同名條目未附漢字，卡片採 Title Case 的羅馬拼音；日文原題的漢字寫法未查證，行文不得斷言。CAA release-group front 實測 404，封面要靠 Apple 那筆 collectionId 反查。以盤名為主鍵掃全池完全相等 0 筆、子字串 0 筆。",
+  "mbNote": "釘 release-group 8e06c951-87b6-3daf-86e1-e6c32f88dbf6《fuyu ni katarite》，artist-credit「TAMARU」，first-release-date 1997-12，primary-type Album，secondary-types 空，轄下 1 個 release：1997-12／JP／Official。同掛名的 bb448512-a1ba-481d-8699-7532a9b67755《夢の途中》亦為本批收錄卡（同組），兩者互不為對照組；1996 年的《Karmaless》在 MB 未建立 release-group，**刻意不釘**。已回問 release-group 端點確認型別與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "TAMARU; たまる; 冬に語りて",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
