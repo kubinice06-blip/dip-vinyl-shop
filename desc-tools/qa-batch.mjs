@@ -214,6 +214,40 @@ if (stage === 'out') {
     outTotal += o.length;
     console.log(`out-${n}｜${o.length} 張｜字數 ${Math.min(...lens)}–${Math.max(...lens)}｜>260: ${lens.filter(x => x > 260).length}`);
   }
+  // thin 卡字數帶（2026-09-04 新增）。writer-base 給 thin 卡 120–180、full 卡 180–240，
+  // 但**這條規則過去只寫在 writer-base 裡，沒有任何機器檢查在看它**——它要生效，
+  // 全靠派工信有沒有轉述給寫作代理。雲端派工模板從 c-67 起就漏掉了這一句，
+  // 結果 c-53–c-56 的 13 張 thin 卡全部守住 180，c-67 之後的 22 張全部超出（206–238）。
+  // 規則沒被違反，是**沒有人把規則交到寫作層手上**，而檢查層也沒攔。這裡把它補上。
+  //
+  // status 只存在於研究稿與 writer 輸入，卡單裡沒有，所以從 batches/input/ 取。
+  // 取不到就安靜略過（本機批可能沒有 input 檔），不要因此讓整個 out 檢查失敗。
+  const thinKeys = new Set();
+  for (const n of outNums) {
+    const ip = `batches/input/${batch}-writer-${n}.json`;
+    if (!fs.existsSync(ip)) continue;
+    try {
+      const raw = JSON.parse(fs.readFileSync(ip, 'utf8'));
+      for (const c of (Array.isArray(raw) ? raw : raw.cards || [])) {
+        if (c && c.status === 'thin' && c.key) thinKeys.add(c.key);
+      }
+    } catch { /* 輸入檔壞掉是別的檢查的事，這裡不接管 */ }
+  }
+  if (thinKeys.size) {
+    const over = [];
+    for (const n of outNums) {
+      const p2 = `batches/output/${batch}-out-${n}.json`;
+      if (!fs.existsSync(p2)) continue;
+      for (const r of JSON.parse(fs.readFileSync(p2, 'utf8'))) {
+        if (!thinKeys.has(r.key)) continue;
+        const L = Array.from(r.desc).length;
+        if (L > 180) over.push(`${r.key} (${L})`);
+      }
+    }
+    if (over.length) warn('thin 卡超過 180 字', `${over.length}/${thinKeys.size}`, '→', over.join('、'));
+    else console.log(`thin 卡 ${thinKeys.size} 張，全部 ≤180 ✓`);
+  }
+
   // 總數對卡單——這是擋住「只驗到部分組別」的最後防線
   if (outTotal !== cardKeys.size) warn('輸出總張數與卡單不符', `${outTotal} vs ${cardKeys.size}`);
   else console.log(`out 合計 ${outTotal} 張，與卡單相符 ✓`);
