@@ -1,5 +1,26 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-04（五）｜dip-vinyl-shop｜雷鬼桶的判準：看音樂不看產地（店主裁示）
+
+店主：**「不一定要牙買加，只要是雷鬼 dub 又是在南美的都可以。」**
+
+- **查證結果：`world/reggae` 從一開始就不限牙買加。** 規則是純標籤比對
+  （`roots reggae|dub|dancehall|ska|rocksteady`），沒有任何產地條件，桶裡本來就有
+  英國（Steel Pulse ×3、Aswad、Linton Kwesi Johnson ×3、Misty in Roots）、
+  南非（Lucky Dube ×2）、象牙海岸（Alpha Blondy、Tiken Jah Fakoly）。
+  我前一筆寫「回到牙買加語意」是誤述——桶的語意一直是**音樂類型**，不是地理。
+- 依「是不是雷鬼／dub」重新安置前一筆撤出的四張：
+  **進 reggae**：Wyclef Jean《The Carnival》（海地裔，標籤直接是 reggae，先前未落位）、
+  Boukman Eksperyans《Vodou Adjae》（海地 mizik rasin，根源雷鬼系）。
+  **進 latin（拉丁 / 古巴）**：Mighty Sparrow（千里達 calypso）、
+  The Esso Trinidad Steel Band（鋼鼓）、Kassav'（馬丁尼克 zouk）——
+  這三種都不是雷鬼，放進 reggae 會名實不符；拉丁／古巴是最近的加勒比區域桶。
+- 也順手確認**沒有漏收的雷鬼卡**：全池 world 主類型帶雷鬼標籤而不在桶裡的只剩
+  Daddy Yankee（reggaeton）、Manu Chao ×2、Ezra Collective、Staff Benda Bilili，
+  這幾張的主體分別是雷鬼動、拉丁、afrobeat，留在現有的 latin／african 才對。
+- Reggae / Dub 207 張、拉丁 / 古巴 136 張，涵蓋回到 96.3%。
+  驗證：125 個節點各抽 200 次，空節點 0、主類型不符 0、路徑不符 0。
+
 ### 2026-09-04（五）｜dip-vinyl-shop｜抽到 IG reel 顯示專輯封面（補做 07-23 的裁定）
 
 店主：「我之前說要修改，如果抽到 ig reels 的話也要顯示專輯封面而不是 ig 縮圖，不知為何沒改。」
