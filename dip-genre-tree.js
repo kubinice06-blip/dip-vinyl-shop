@@ -123,6 +123,9 @@
     if (global.DipDrawAnim) {
       anim = await global.DipDrawAnim.start({
         host: host(), profile: 'front',
+        // 與心情選歌／猜你喜歡一致：動畫期間蓋滿視窗。漏了這個就會走非全螢幕，
+        // 舞台是白→淺灰漸層（.da-stage），跟純白頁面接不起來，看起來像背景色 bug。
+        fullscreen: true,
         alive: () => !!host()?.closest('.quiz-modal')?.classList.contains('open'),
       }).catch(() => null);
     }
