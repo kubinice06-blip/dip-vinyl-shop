@@ -409,20 +409,13 @@
   "tried": [
    "gb:1→1"
   ],
-  "front": "gb",
-  "collectionId": 1891812677,
-  "appleTitle": "Fruiting Body",
-  "appleArtist": "Nocturnal Emissions",
-  "appleYear": "2025",
-  "explicitness": "notExplicit",
-  "trackCount": 26,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/75/ac/3275accd-e68c-866d-f689-5ebf4055a517/mzaf_8782118496166850793.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "yearDrift": 44,
-  "reissueTitle": false,
-  "status": "ready",
-  "expandedReissue": true,
-  "originalTrackCount": 18
+  "status": "unavailable",
+  "rejected": {
+   "collectionId": 1891812677,
+   "appleTitle": "Fruiting Body",
+   "trackCount": 26,
+   "reason": "**2026-09-04 主線更正**：先前把原盤軌數填成 18（憑 Apple 曲目表的形狀推的，**沒有來源**），並據此判成可接受的加曲版。研究層查出原盤是 **13 軌**，MB 複查該 release-group 唯一一筆 1981 release 確實 **13 軌**。Apple 那筆 26 軌是 2025 Klanggalerie 雙 CD，第二片含**另一捲 1981 Sterile 卡帶**，且第 14–18 軌未標任何 bonus 記號——依第 129／140 條屬二合一，剔除。"
+  }
  },
  "Clock DVA|White Souls in Black Suits": {
   "batch": "c77",
@@ -440,7 +433,9 @@
   "cleanedOnly": false,
   "yearDrift": 45,
   "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "note": "Apple 13 軌（第 10–13 為 bonus）。**原盤軌數兩說、不得斷言**：Discogs 原捲 8 軌，Mute 2025 說明欄寫「第 1–9 軌原本收在原捲」。行文不得寫原盤有幾軌，也不得把第 10 軌以後當原盤曲目。另月份兩說（Discogs 1980-10／MB 1980-12），不得寫月份。"
  },
  "Bladder Flask|One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling": {
   "batch": "c77",
@@ -521,15 +516,22 @@
  "Attrition|Death House": {
   "batch": "c77",
   "tried": [
-   "gb:3→2"
+   "gb:3→2",
+   "lookup:599144665@gb"
   ],
-  "status": "unavailable",
-  "rejected": {
-   "collectionId": 599144665,
-   "appleTitle": "This Death House (Remastered)",
-   "trackCount": 2,
-   "reason": "Apple 的《This Death House (Remastered)》只有兩軌（Crawling／Dead of Night），是單曲／EP 不是本張卡的專輯。依第 124 條卡層剔除。"
-  }
+  "front": "gb",
+  "collectionId": 599144665,
+  "appleTitle": "This Death House (Remastered)",
+  "appleArtist": "Attrition",
+  "appleYear": "1982",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/73/3e/0d/733e0d1b-ffed-4783-ffbc-8e286a76cf6d/mzaf_6191590304905920888.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "reissueTitle": true,
+  "originalTrackCount": 2,
+  "status": "ready",
+  "note": "**2026-09-04 主線更正**：先前依「Apple 只有兩軌」判成單曲／EP 而剔除，**判錯了**。研究層指出並經 MB 複查：該 release-group 轄下五筆 release（1982 原盤、1987、1997、2012、2021）**全部都是兩軌**、primary-type 是 Album——這張碟本來就只有 A〈Crawling〉／B〈Dead Of Night〉兩軌。Apple 那筆是同一張碟，只是沿用 1997 年後的再發盤名（第 91 條的形狀）。已恢復 ready。"
  },
  "Attrition|The Attrition of Reason": {
   "batch": "c77",
