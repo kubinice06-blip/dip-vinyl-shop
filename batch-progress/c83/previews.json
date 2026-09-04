@@ -359,7 +359,11 @@
     "trackCount": 5,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/50/44/be/5044bec8-77e2-bbf5-4359-ff6f49c1933a/mzaf_6281383287826273778.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 4,
+    "expandedReissue": true,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 提出**：探測層標 ready 但**漏標 expandedReissue**。**原盤 4 軌、且四軌無題**；Apple 的第 5 軌是 2018 年的現場、℗ 2018，那是 2018 加曲重製版。**行文不得把第 5 軌當原盤曲目，Apple 的 1995-01-01 是佔位日期、不得寫成發行日。**"
   },
   "The Hafler Trio|Negentropy": {
     "batch": "c83",
@@ -389,7 +393,9 @@
     "trackCount": 15,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/0a/09/10/0a0910ed-24b1-e2f3-72d5-b87e3f129fe5/mzaf_1139210107666348841.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 14,
+    "note": "**2026-09-04 研究層 b 提出——這一張不是加曲版，不要標 expandedReissue**：Apple 15 軌 vs 原盤 **14 個曲目位置**，多出來的第 15 軌〈Clonk〉**是原盤第 14 個位置裡的隱藏段落被切出來單獨計軌**（Discogs 註記：「Track 14 ends at 5:28 and a hidden track begins at 6:00」）。**寫軌數要說「曲目表 14 個位置」**，不得寫成「原盤 14 軌、後來加了一軌」。Apple 的 2/25 與 MB 的 2/16 分歧，**只能寫到月**。"
   },
   "Light|Turning": {
     "batch": "c83",
@@ -545,7 +551,11 @@
     "trackCount": 12,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/82/b0/ad/82b0ad7e-cce0-2a34-8cda-53daa9b88c0c/mzaf_6083035488706680141.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 10,
+    "expandedReissue": true,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 提出**：探測層標 ready 但**漏標 expandedReissue**。**原盤 10 軌**；Apple 的第 11–12 軌是同碟曲目的現場版、℗ 2011 Wavetable。**那兩軌不得當原盤曲目。**"
   },
   "Alpha Stone|Elasticated Waveband": {
     "batch": "c83",
@@ -619,7 +629,19 @@
       "ca:1→0",
       "au:1→0"
     ],
-    "status": "unavailable"
+    "front": "gb",
+    "collectionId": 1889741951,
+    "appleTitle": "Upwards at 66º N",
+    "appleArtist": "Tank",
+    "appleYear": "2026",
+    "explicitness": "notExplicit",
+    "trackCount": 8,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/33/47/2e334734-2d38-4229-2f84-6a3c3c3ae12a/mzaf_12324412593982857162.plus.aac.p.m4a",
+    "cleanedOnly": false,
+    "status": "ready",
+    "appleYearIsReissue": true,
+    "originalTrackCount": 8,
+    "note": "**2026-09-04 主線回補（研究層 b 提出，主線用 collectionId 直查覆核）**：探測層判 unavailable，成因是**掛名與盤名各壞一層，而且兩層都是 Unicode 同形異碼**——掛名卡片作 **Tånk**、Apple 作 **Tank**（圓圈符整個沒了）；盤名卡片作 **66°N**（U+00B0 度符、無空格）、Apple 作 **66º N**（**U+00BA 陽性序數指示符**、有空格）。**兩個字元長得幾乎一樣，任何字串比對都判不相等。**逐軌核對：**8 軌、曲名與曲序逐項相同**，不是合輯也不是加曲版，八軌都有預覽。**但第 4／6 軌的曲長對調**（原盤 Drangar 8:20／Landslag 6:14，Apple 作 6:14／8:21）——**那兩軌的曲長禁止入文**。℗ 2026 Tank 與 releaseDate 2026-04-24 **都不得寫成發行年**。"
   },
   "Piano Magic|Low Birth Weight": {
     "batch": "c83",
