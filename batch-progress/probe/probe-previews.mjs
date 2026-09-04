@@ -77,7 +77,8 @@ const JPN = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
 const UKB = ['gb', 'us', 'jp', 'de', 'fr', 'ie', 'ca', 'au'];
 const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
-  c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB };
+  c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
+  c87: JPN };
 
 const cards = [];
 for (const b of BATCHES)

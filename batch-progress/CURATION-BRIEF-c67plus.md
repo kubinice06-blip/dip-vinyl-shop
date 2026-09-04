@@ -19,7 +19,9 @@ Johnny's Disk 是什麼樣的廠牌：岩手縣陸前高田的爵士喫茶「開
 - **每張都要釘住 release-group MBID**，寫在 `mbNote` 的**第一個** MBID 位置，並逐一回問
   `https://musicbrainz.org/ws/2/release-group/<id>?fmt=json` 確認 `primary-type=Album` 與標題（裁定第 41 條）。
   **對照組 MBID（EP、合輯、同名別碟）要明寫「刻意不釘」**，否則下游腳本會抓錯（第 99／126 條）。
-- MB 上查無的碟：**這 20 批不開 §1 人工身分路線**（那是店主的決定），查無就不收，寫進交件的「未收清單」。
+- MB 上查無的碟：**2026-09-04 店主核可開 §1 人工身分路線**。但**只在專門的補遺批開**
+  （目前是 c-87），一般批次仍然「查無就不收、寫進未收清單」——理由是舉證成本高，
+  混在一般批裡會拖慢整條線。要走 §1 的候選，記進未收清單並註明「可進補遺批」。
 - 合輯只在 §5.6 的門檻下收：`releaseType: "Compilation"`、`exceptionReason` ≥12 字、≥2 個 HTTPS `exceptionEvidenceUrls`，
   年份取合輯首次出版年。**這 20 批的重心是原盤，合輯每批不要超過 5 張。**
 
@@ -84,3 +86,48 @@ Johnny's Disk 是什麼樣的廠牌：岩手縣陸前高田的爵士喫茶「開
 寫 `batch-progress/memory-entries/c<批>-curation.md`（格式照 `c65-curation.md`），然後簡短回報：
 張數與藝人數、`chk-prop` 標記數、合輯張數、**釘不住 MB 而未收的清單**、**與池中撞卡而未收的清單**、
 封面與試聽的預估、以及你自己判斷「這個場景在池中已經飽和／還很空」的一句話。過程不必敘述。
+
+
+---
+
+## 附錄（2026-09-04）：§1 人工身分路線的舉證要件
+
+店主核可開這條路線。**驗證器卡得很緊，這是設計**——`scripts/verify-album-onboarding.mjs`
+的註解寫明：「這條若只看 `identitySource='manual'` 就放行，它會立刻變成所有身分解不出來的卡的
+逃生門，MBID 硬規則等於作廢。**所以走人工的代價是舉證更重：得證明 MB 真的查過而且查無，
+而不是『查起來很麻煩』。**」
+
+每張 §1 卡的 `prop-*.json` 要多帶這四組欄位（`make-cards-generic.mjs` 會原樣搬進卡單）：
+
+```jsonc
+{
+  "identitySource": "manual",        // 明寫，腳本才不會從 mbNote 推導（第 99 條）
+  "mbNote": "",                       // 留空或只寫敘述，不要放任何 MBID
+  "mbAbsenceProof": {
+    "queries": [                      // ≥2 組**實際下過**的查詢，含藝人與作品兩個方向
+      "release-group?artist=<藝人 MBID>&limit=100 → 名下 N 個 RG，1975–88 年 0 個",
+      "release-group?query=release:\"<盤名>\" AND artist:\"<藝人>\" → count=0"
+    ],
+    "checkedAt": "2026-09-04T00:00:00Z",   // ISO 日期
+    "conclusion": "≥10 字，寫明查無的具體情況（count=0、只有無關的 RG、只有再發等）"
+  },
+  "manualEvidenceUrls": [             // ≥2 個 HTTPS，唱片公司／官方發行頁／館藏目錄／Discogs release
+    "https://www.discogs.com/release/<id>",
+    "https://<廠牌或復刻方官方頁>"
+  ],
+  "manualRuling": "≥10 字：誰核定、依哪一條。例：店主 2026-09-04 核可 §1 補遺批；依 c-67 交接第二節。",
+  "coverSourceHint": "apple-verified-collection"   // **不得是 caa**（CAA 以 rgMbid 為鍵）
+}
+```
+
+**硬性禁止**：`rgMbid` **必須留空**。半套最危險——留一個半信半疑的 MBID 又宣告走人工，
+日後沒人知道該信哪個（驗證器直接報錯）。
+
+**封面**：走 §4 的 `apple-verified-collection` 例外——**用精確的 `collectionId` 反查**
+（不是模糊搜尋），`prop` 的 `risk` 欄要寫下 collectionId 與該頁的 HTTPS 網址。
+c-64 的 b 組做過 8 張，`batch-progress/c64/apple-art.mjs` 是現成的腳本。
+
+**「查無」有四種假形狀，別把它們當查無**（裁定第 28／98／116／122 條）：
+503（退避重試六次）、403（同樣退避）、`artist/<MBID>?inc=release-groups` 的 25 筆分頁上限
+（要用 `release-group?artist=<MBID>&limit=100&offset=`）、以及 MB 回了完全不相干的東西
+（S. Balachander 查出 Johann Sebastian Bach）。**四種都要排除掉，才算真的查無。**

@@ -45,6 +45,10 @@ export const LINES = {
   c84: { lineType: '深掘', scene: '美國 1990s lo-fi 卡帶與微廠' },
   c85: { lineType: '深掘', scene: { a: '英國 lovers rock 與 UK roots 小廠 1975–88', b: '英國 1990s dub 小廠' } },
   c86: { lineType: '深掘', scene: '美國自主爵士廠牌 1969–82' },
+  // 2026-09-04 店主核可開 §1 人工身分路線後新增的補遺批。
+  // c-67 收尾時記下：Johnny's Disk 其餘 9 張、Aketa's Disk 5、Nadja 7、Union Jazz 6 在 MB 查無，
+  // 走 pinned 補不了。這批專收那些「唱片實體確鑿、MB 沒建檔」的日本自主爵士盤。
+  c87: { lineType: '深掘', scene: '日本自主爵士小廠 §1 人工身分補遺' },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
