@@ -565,5 +565,383 @@
    "note": "1995 維持卡單原值，無爭議，而且**可以寫到日**：Discogs CD 條目 2463516 的 released 欄 1995-06-06、MB release-group first-release-date 1995-06-06、MB 唯一那筆 release 的 date 也是 1995-06-06——**三處一致**。黑膠條目的 released 欄只到年（1995），註記欄另寫「SMR 28 (c)1995 Simple Machines」。**行文可寫到日：1995 年 6 月 6 日。**Apple 那筆的 releaseDate 1995-01-01 是**佔位日期**（第 140 條附錄二點名的形狀），**不得引用**；其 ℗ 1995 Simple Machines Records 與年份一致，可作旁證。另有一個**不同性質**的年份要分清楚：註記欄的「published 1994 by Stopgap Measures」與「Great Fool ... copyright control 1985」是**著作權年**，不是發行年（第 135 條）。"
   },
   "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Simple Machines 廠牌**（Discogs 廠牌頁 439590 的簡介欄與 sublabels 欄；依第 128 條**只能寫成「Discogs 的 Simple Machines 廠牌頁簡介欄說」**）；**Franklin Bruno 這個人與他和 Nothing Painted Blue 的關係**（同批第 10 張〈Placeholders〉是那個團的碟，**那張禁用這條線**，只寫團與 Scat）。\n**禁令**：(1) **原盤軌數兩說，兩個數字都不填、行文禁止給總數**（第 141 條末段的處理）：同一年、同一家廠牌、同一個編號基底的兩個版本，**CD 是 14 軌、黑膠是 13 軌**，差別是 CD 第 8 軌那首〈Untitled〉；MB 只收了 CD 那筆、Discogs 兩筆都收，**Trouser Press 那篇署名樂評也寫 thirteen**——三個來源、兩個數字。**行文不得寫「這張碟有幾首歌」**，要提數字只能寫成「CD 版十四軌、黑膠版十三軌」這種**分版本敘述**。(2) **〈Great Fool〉是別人寫的曲，只能照兩份條目的 Written-By 欄寫成「該軌的作者欄掛的是 The Apartments」**——**不得描述原曲、不得寫它出自哪張碟哪一年、不得評價選曲**（第 110 條）。註記欄的「copyright control 1985」是**著作權年**，可寫，但要說清楚那是著作權欄。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) 註記欄那句第一人稱（「mixed by Bob and myself」）**只能寫成「條目的註記欄是用第一人稱寫的」**，**不得指名那個「我」是誰**——條目本身沒有說（第 136 條）。(5) 黑膠條目 A5 那條「Performer [El Daño]: Mark Givens」的角色名沒有任何來源解釋，**只能照抄角色欄，不得翻譯或推測它的意思**。(6) **Shrimper 廠牌史禁用**（分派給〈How You Continue Dreaming〉）；本卡若要提他在別家廠牌的作品，**只能提本卡條目上出現過的東西**——Discogs 的 Simple Machines 廠牌頁與本卡兩份條目都沒有列他的其他唱片，**所以這條線本卡實際上沒有 facts 撐，依第 138 條讓它閒置**。(7) **不得寫「他是誰的樂團成員」以外的傳記**——本卡的 facts 裡沒有任何傳記來源。\n**探測層核對**：previews.json 標 ready、collectionId 273019598、trackCount 14。**我逐軌核對過**：Apple 那十四軌與 Discogs CD 條目逐項同名同序、含那首〈Untitled〉，是 CD 版，**不是加曲版也不是二合一**，試聽可用；**軌數只能當成「CD 版的軌數」**（見上面第 (1) 條）。**另外提醒主線：Apple 的 releaseDate 1995-01-01 是佔位日期，`yearDrift` 因此算成 0，那不代表沒有版本落差**（第 140 條附錄二）——本卡的實際情況是 Apple 上架的就是 1995 年原版，沒有落差，但這是逐軌核對出來的，不是 `yearDrift` 證明的。"
+ },
+ {
+  "key": "desc2:Nothing Painted Blue|Placeholders",
+  "artist": "Nothing Painted Blue",
+  "album": "Placeholders",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1260208 記：廠牌「Scat Records (2)」，編號欄同時列 SCAT37 與 scat 37，country US，released 欄 1994，格式 CD x1 [Album]；barcode 753417003729，matrix 欄「3 SCAT 37-2 SRC##01 M1S1」，Rights Society 欄 BMI；genres 欄 Rock 與 Pop，styles 欄 Alternative Rock、Indie Rock、Power Pop。",
+    "src": "https://www.discogs.com/release/1260208"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「℗1994 Scat Records ©1994 Stopgap Measures (BMI)」「Recorded at Piercing Sound, Brentwood, CA, Spring 1994」「Mastered at John Golden Mastering, Newbury Park, CA」；感謝名單裡有一句括號說明——某位樂手在〈Drinking Game〉〈Weak〉〈Travel Well〉〈Masonic Eye〉與〈In May〉五軌上的原始貝斯段落，被 Peter 在這批錄音裡「borrowed from liberally」。",
+    "src": "https://www.discogs.com/release/1260208"
+   },
+   {
+    "f": "同一條目的 companies 欄把廠牌關係寫得很明確：Phonographic Copyright (p): Scat Records (2)、Copyright (c): Stopgap Measures、**Manufactured By: Matador**、**Distributed By: Matador**、Recorded At: Piercing Sound、Mastered At: Golden Mastering、Pressed By: Specialty Records Corporation。",
+    "src": "https://www.discogs.com/release/1260208"
+   },
+   {
+    "f": "同一條目的 credit 欄（演奏端）：Guitar, Piano, Synthesizer [Prophet 5], Vocals, Backing Vocals: Franklin Bruno；**Bass, Backing Vocals: Peter Hughes (2)**；Drums, Percussion, Backing Vocals, Other [Ice]: Kyle Brodie；Congas: Jim Brodie；Violin: Margie Keith。製作端：Producer [Produced By]: Martin Brumbach 與 Nothing Painted Blue；Engineer 三人（Chrissa Sadd、Martin Brumbach、Richard Ornstein）；Mastered By: John Golden；Songwriter [All Songs By]: Nothing Painted Blue。美術端：Design: Nothing Painted Blue 與 Robert Griffin；Illustration: Victor Gastelum；Photography By [Band Photo]: Laura Crosta。",
+    "src": "https://www.discogs.com/release/1260208"
+   },
+   {
+    "f": "原盤條目登錄的 13 軌曲長：Couldn't Be Simpler 3:50／Weak 3:31／Drinking Game 3:40／Career Day 3:08／Spread Your Poison 3:05／In May 3:59／Masonic Eye 3:59／Ballwalker 4:01／Travel Well 3:44／Rightful Heir 3:16／Houseguest 4:18／Kissing Booth 5:02／Can't F(x) 3:02；曲目表上只有兩軌多掛客座——第 8 軌〈Ballwalker〉掛 Guitar: Bob Durkee，第 13 軌〈Can't F(x)〉掛 Backing Vocals: Single Variable Chorus。",
+    "src": "https://www.discogs.com/release/1260208"
+   },
+   {
+    "f": "Discogs 另有一筆同年的 Scat 卡帶 18498964（編號 SCAT-037，格式 Cassette x1 [Advance, Album]），註記欄寫「no artwork, clear cassette with white printing. not marked as promo or advance, but likely is. some title differences with commercial release」；它同樣是 13 軌，但**第八軌的位置放的是一首叫〈Placeholders〉的曲子**（正式 CD 上那個位置是〈Ballwalker〉），另外兩處差異是〈House Guest〉對〈Houseguest〉、〈Can't Function〉對〈Can't F(x)〉。",
+    "src": "https://www.discogs.com/release/18498964"
+   },
+   {
+    "f": "MusicBrainz release-group 7617e743 的欄位：title《Placeholders》、first-release-date 1994、primary-type Album、secondary-types 空陣列、artist-credit「Nothing Painted Blue」（藝人 d694a07c-48c9-47d1-939c-a98741c9bde5）；genres 欄 alternative rock、indie rock、lo-fi、rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/7617e743-9d66-3316-91ea-9be02799a0b3"
+   },
+   {
+    "f": "以 release?release-group=7617e743…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（a3339a52），1994、US、Official、Scat Records／37、載體 CD、**13 軌**、barcode 753417003729；逐軌長度為 3:51／3:33／3:42／3:10／3:06／4:00／4:00／4:02／3:45／3:17／4:19／5:04／3:02，與 Discogs 逐項相差不超過兩秒，第 8 軌同樣是〈Ballwalker〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7617e743-9d66-3316-91ea-9be02799a0b3&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 286652121 的欄位：collectionName《Placeholders》、artistName「Nothing Painted Blue」、trackCount 13、**releaseDate 1994-08-14**、copyright「℗ 1994 Scat」；**逐軌核對**：十三個曲名與曲序與 Discogs 原盤 CD 逐項相同（含第 8 軌〈Ballwalker〉），**不是加曲版也不是二合一**。",
+    "src": "https://music.apple.com/us/album/placeholders/286652121"
+   },
+   {
+    "f": "Trouser Press 的 Nothing Painted Blue 條目（署名 Jason Cohen）給本作一整段：「The self-produced Placeholders brings out that elusive murky side. It accents the music over the lyrics, then puts a further emphasis on distorted guitar crud and a harder (though sometimes slower) rhythmic attack. It's a good-not-great effort — the lack of sprightliness makes the hooks less endearing and the words less affecting, although 'Weak,' 'Rightful Heir' and 'Spread Your Poison' do deliver in both of those departments. There's simply too much rock-damage and too much art-damage.」同段末並附一則人事註記：「on this record Peter Hughes (of Diskothi-Q) took over from Burns (who left to concentrate on Giant Sand), while subsequent live shows saw Neelon returning, this time on violin and second guitar.」該條目的唱片列表把本作記為「Placeholders (Scat) 1994」。",
+    "src": "https://trouserpress.com/reviews/nothing-painted-blue/"
+   }
+  ],
+  "hookCandidates": [
+   "一首叫〈Placeholders〉的歌只出現在試聽帶上，正式盤裡沒有",
+   "感謝名單裡寫著：這五首歌的貝斯是從別人那裡「大方借來的」"
+  ],
+  "sound": "十三軌，曲長集中得很緊——最短的〈Can't F(x)〉3:02、最長的〈Kissing Booth〉5:02，其餘十一軌全部落在三分到四分二十之間。編制在 credit 欄上是完整的四到五人樂團：一人身兼吉他、鋼琴與合成器（條目點名 Prophet 5）與主唱，一人貝斯兼和聲，一人鼓與打擊，另有康加與小提琴的單獨掛名；製作掛兩個名字、工程掛三個。客座只出現在兩軌。錄音地與母帶地都寫在註記欄裡，錄音時間標到季節（1994 年春）。Discogs 的 styles 欄在正式盤上掛 Alternative Rock、Indie Rock 與 Power Pop，在試聽帶那筆上換成 Alternative Rock、Lo-Fi 與 Indie Rock。（本欄由 Discogs 兩份條目的 credit、註記與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Weak",
+   "Kissing Booth",
+   "Rightful Heir"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，無爭議：Discogs 原盤條目 1260208 的 released 欄 1994、註記欄的「℗1994 Scat Records ©1994 Stopgap Measures」、MB release-group first-release-date 1994、MB 唯一那筆 release 的 date 1994、Trouser Press 唱片列表的「(Scat) 1994」——五處一致。**日的來源只有一個**：Apple 那筆的 releaseDate 1994-08-14（其 copyright ℗ 1994 Scat 與原盤同年、非佔位形狀，可信度不低，但**只有單一來源**）。**行文建議寫到年；要寫到日必須註明那是 Apple 商店頁上的日期。**錄音時間另有一個可用的具體值：註記欄的「Spring 1994」，那是**錄音季**不是發行日（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Scat Records 廠牌**（Discogs 廠牌頁 35628 的簡介欄寫「Scat Records is an independent record label founded during January 1989 in Cleveland, Ohio by Robert Griffin from the band Prisonshake. The label relocated to St. Louis, Missouri in 1995, and then as of November 2022 had moved back to Cleveland, Ohio.」，並另註「catalog numbers are often not issued chronologically.」——依第 128 條**只能寫成「Discogs 的 Scat 廠牌頁簡介欄說」**；**注意本卡條目的 Design 欄裡也有 Robert Griffin 這個名字，那是同一個字串，但條目本身沒有把兩者連起來，行文不得自行接合**，第 136 條）；**Peter Hughes 這個人**（Trouser Press 那則人事註記與本卡 credit 欄的貝斯掛名）。\n**禁令**：(1) **Franklin Bruno 這個人整條禁用**（分派給〈A Bedroom Community〉）——本卡只能把他寫成 credit 欄上的一個演奏掛名（吉他、鋼琴、Prophet 5、主唱），**不得寫他的學經歷、不得寫他的個人作品、不得寫他與這個團的關係史**。(2) **Shrimper 廠牌史禁用**（分派給〈How You Continue Dreaming〉）——Trouser Press 那段裡有一句把 Shrimper 與這個團的地緣連在一起，**那一句整句不得使用**。(3) **Mountain Goats 與 Refrigerator 這兩個團名不得出現**——它們在 Trouser Press 那段裡與本團同列，但本批已有三張 Mountain Goats 卡與一張 Refrigerator 卡，寫進來就是第 131 條的跨卡撞線。(4) **我推翻策展層的一處**：策展提案在 risk 欄自陳「Scat 與 Matador 在這張的關係（發行、經銷或授權）只從 Discogs 條目的廠牌欄推測，研究層須回條目本身核對」。**已核對**：Discogs 條目的 companies 欄寫得很清楚——**Matador 是 Manufactured By 與 Distributed By**，Phonographic Copyright 掛 Scat Records，Pressed By 是 Specialty Records Corporation。**行文只能照這三個欄位寫「製造與經銷掛 Matador、錄音權掛 Scat」，不得寫成「Matador 發行」或「Scat 授權給 Matador」**（第 136 條：欄位只能寫成欄位）。(5) **原盤軌數只能寫 13**——Discogs 正式 CD、Discogs 試聽卡帶、MB 唯一那筆 release、Apple 四處一致（第 140／141 條已逐版比對）。**注意這是個容易誤判的形狀**：試聽卡帶同樣 13 軌，但第八軌換了曲子，**軌數相同不代表曲目相同**。(6) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；試聽卡帶只能寫成「Discogs 上另有一筆格式欄標 Advance 的卡帶條目」，**不得由它推論發行規模或收藏價值**。(7) 那句「borrowed from liberally」出自感謝名單，**只能寫成「原盤的感謝名單裡有這麼一句」**，**不得指名那位被借的樂手**——Discogs 把那個名字存成藝人連結代碼，我沒有解析出人名（第 136 條）。(8) 〈Can't F(x)〉的曲名在三處有三種寫法（Discogs CD 作 Can't F(x)、MB 作 Can't f(x)、試聽卡帶作 Can't Function），**只能寫成「不同條目上寫法不同」**。(9) **不得由曲名推論內容或出處**（第 110 條）。\n**探測層核對**：previews.json 標 ready、collectionId 286652121、trackCount 13。**我逐軌核對過**：Apple 那十三軌與 Discogs 原盤 CD 逐項同名同序、第 8 軌是〈Ballwalker〉不是〈Placeholders〉，**上架的是正式盤不是試聽帶**，試聽可用、軌數可用。"
+ },
+ {
+  "key": "desc2:John Davis|Blue Mountains",
+  "artist": "John Davis",
+  "album": "Blue Mountains",
+  "facts": [
+   {
+    "f": "Discogs 黑膠條目 1493435 記：廠牌 Shrimper，編號 Shr 90，country US，**released 欄 1997-01-27**，格式 Vinyl x1 [LP, Album]；兩面 runout 蝕刻「SHR-90-A 921.1(2)」與「SHR-90-B 921.2(2)」、另有壓印的「GOLDEN」，Rights Society 欄 BMI；genres 欄 Rock，styles 欄 Alternative Rock、Lo-Fi、Indie Rock。",
+    "src": "https://www.discogs.com/release/1493435"
+   },
+   {
+    "f": "同一條目的註記欄逐句寫：「Original Release Date: 01-27-1997」「Issued with 28 x 28 cm b&w insert (pictures / portrait, banana trees, drawing).」「No printed track durations.」「Recorded by & mixed with Bob Durkee at FBE Studios in San Dimas, CA, except tracks A5, A7, A8 and B7 recorded by JD at home.」「(c) & (p) 1997 Endless Soft Hits (BMI)」。",
+    "src": "https://www.discogs.com/release/1493435"
+   },
+   {
+    "f": "同一條目的 credit 與 companies 欄：**Written-By, Performer: John Davis (2)**（整張碟唯一的演奏掛名）；Recorded By, Mixed By [With]: Bob Durkee，涵蓋範圍寫「A1 to A4, A6, A7, B1 to B6」；Recorded By: John Davis (2)，涵蓋範圍寫「A5, A7, A8, B7」（**A7 同時出現在兩條範圍裡**）；Lacquer Cut By: John Golden；Layout [Layout Help]: Gay (7)；Photography By [Back Cover]: Eric Eisner (2)；Recorded At／Mixed At: FBE Studios；Lacquer Cut At: Golden Mastering；Mastered At: Record Technology Incorporated。",
+    "src": "https://www.discogs.com/release/1493435"
+   },
+   {
+    "f": "黑膠條目登錄的 15 軌曲序（A1–A8／B1–B7）：Jeep Cherokee／I Took Flight／I'll Burn／Blue Mountains／Narrow／Knock Out／Face To The Storm／Tethers／Startle／I Freaked Out Like A Big Truck／Zowie Pop／The Way You Touch Me Makes Me Laugh／Ready／Eloped-Elated／We've Got It All。",
+    "src": "https://www.discogs.com/release/1493435"
+   },
+   {
+    "f": "同一張碟的 CD 條目 1468943（Shrimper，編號 SHR90CD，released 欄同樣 1997-01-27）是同 15 軌同序，註記欄把家中錄音那句改用軌號寫成「Recorded at FBE Studios in San Dimas, CA, excepts Tracks 5, 7, 8 and 15 which where recorded at Davis' home.」（拼字照條目原文）。",
+    "src": "https://www.discogs.com/release/1468943"
+   },
+   {
+    "f": "Discogs 另有一筆更早的試壓 5995103（Shrimper，編號 SHR-90，**released 欄 1996-10-18**，格式 Vinyl x1 [LP, **Test Pressing**]），曲目、credit 與註記欄與 1997 年的正式黑膠相同。",
+    "src": "https://www.discogs.com/release/5995103"
+   },
+   {
+    "f": "MusicBrainz release-group 282cc8cf 的欄位：title《Blue Mountains》、**first-release-date 1997-01-27**、primary-type Album、secondary-types 空陣列、artist-credit「John Davis」（藝人 e053882b-12e7-48f4-9a80-4aa88aebeea3）；genres 欄 alternative rock、indie rock、lo-fi、rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/282cc8cf-c29f-39e3-a1eb-be94097d0988"
+   },
+   {
+    "f": "以 release?release-group=282cc8cf…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（fe66eb87），1997-01-27、US、Official、Shrimper Records／Shr 90、載體 **CD**、**15 軌**、barcode 759718139020；逐軌長度為 2:05／2:13／2:58／2:22／1:31／2:27／1:55／2:20／2:12／2:09／1:48／2:32／2:44／1:51／2:02，十五軌相加 1989 秒（33 分 09 秒），**沒有一軌超過三分鐘**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=282cc8cf-c29f-39e3-a1eb-be94097d0988&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 128130289 的欄位：collectionName《Blue Mountains》、artistName「John Davis」、trackCount 15、**releaseDate 1997-02-14**、copyright「℗ 1997 Shrimper」；**逐軌核對**：十五個曲名、曲序與**逐軌秒數**都與 MB 那筆 CD 完全相同（125／133／178／142／91／147／115／140／132／129／108／152／164／111／122 秒），**不是加曲版也不是二合一**。",
+    "src": "https://music.apple.com/us/album/blue-mountains/128130289"
+   },
+   {
+    "f": "MusicBrainz 該 release-group 的 artist-credit 指向藝人 e053882b-12e7-48f4-9a80-4aa88aebeea3；Discogs 三筆條目的掛名欄全部寫成帶消歧義編號的「John Davis (2)」——**兩個資料庫都用了額外的識別碼來區隔同名藝人**。",
+    "src": "https://musicbrainz.org/artist/e053882b-12e7-48f4-9a80-4aa88aebeea3"
+   }
+  ],
+  "hookCandidates": [
+   "十五首歌沒有一首超過三分鐘",
+   "credit 欄把錄音分成兩段：十一軌在錄音室，四軌在他自己家裡"
+  ],
+  "sound": "十五軌、33 分 09 秒——每一首都在 1:31 到 2:58 之間，沒有一軌到三分鐘，最短的〈Narrow〉1:31。演奏 credit 只有一條，寫、唱、彈全掛同一個名字；其餘掛名全在製作端，而且錄音被明確分成兩段：十一軌在聖迪馬斯的 FBE Studios 由另一位工程師錄與混，四軌由本人在家錄（黑膠條目用面／軌號寫成 A5、A7、A8、B7，CD 條目用連號寫成第 5、7、8、15 軌）。碟上沒有印曲長——條目自己註明「No printed track durations.」。著作權與錄音權兩欄掛的是同一個出版名（Endless Soft Hits）。Discogs 三筆條目的 styles 欄一致掛 Alternative Rock、Lo-Fi 與 Indie Rock。（本欄由 Discogs 三份條目的 credit 與註記欄、MB 該 release 的逐軌長度歸納，逐項數過，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Blue Mountains",
+   "I'll Burn",
+   "Narrow"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1997,
+   "note": "1997 維持卡單原值，**可以寫到日**：Discogs 黑膠條目 1493435 的 released 欄 1997-01-27、同條目註記欄的「Original Release Date: 01-27-1997」、Discogs CD 條目 1468943 的 released 欄 1997-01-27、MB release-group first-release-date 1997-01-27、MB 唯一那筆 release 的 date 1997-01-27——**四處一致**。**唯一的分歧在日**：Apple 那筆的 releaseDate 是 1997-02-14（其 ℗ 1997 Shrimper 與年份一致）。**行文可寫到 1997 年 1 月 27 日**（四對一，且 Discogs 註記欄有一句自稱是原始發行日的文字）；若要提 Apple 那個日期，必須寫成「商店頁上的日期不同」。**1996-10-18 是試壓的日期，不是發行日**——試壓不是正式發行，年份不取 1996。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**John Davis 這個人與 Folk Implosion 這條線**——**但請注意：我在本卡的 facts 裡查不到任何把這個掛名接到 Folk Implosion 的來源**。MB 藝人條目沒有 url 關聯、Discogs 三筆條目只寫「John Davis (2)」、Trouser Press 沒有這個藝人的條目（以 john-davis 查詢會被導到 John Wesley Harding）。**依第 138 條，這條分派下來的線讓它閒置**：**行文不得寫他是哪個團的成員、不得寫他的其他作品**。本卡實際可寫的是「一人包辦寫、唱、演奏」與「錄音分成錄音室與家裡兩段」這兩件事。\n**禁令**：(1) **Shrimper 廠牌史整條禁用**（分派給〈How You Continue Dreaming〉）。**另注意**：本批第 1 張〈How You Continue Dreaming〉的 Discogs 條目註記欄提到「SHR 53 這個編號同時發給 John Davis 與 Refrigerator 兩張專輯」——**那件事歸第 1 張，本卡禁用**，而且本卡的編號是 Shr 90，與那件事無關（第 131 條的跨卡撞線）。(2) **原盤軌數只能寫 15**——Discogs 黑膠、Discogs CD、Discogs 試壓、MB 唯一那筆 release、Apple 五處一致（第 140／141 條已逐版比對）。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；那筆 Test Pressing 只能寫成「Discogs 上另有一筆格式欄標 Test Pressing 的條目，日期早三個月」，**不得由它推論份數或收藏價值**。(4) **掛名撞名的處理**（第 139 條）：「John Davis」是極常見英文姓名，Discogs 用「(2)」、MB 用 MBID 區隔。行文**不得替這個名字補任何生平**——本卡沒有傳記來源。(5) credit 欄裡 **A7〈Face To The Storm〉同時落在兩位錄音者的涵蓋範圍裡**，這是條目本身的重疊，**只能寫成「條目上的兩段範圍有一軌重疊」，不得自行判定是誰錄的**（第 136 條）。(6) 「Layout Help: Gay (7)」與「Photography By: Eric Eisner (2)」的括號數字是 Discogs 的消歧義編號，**照抄即可，不得展開成人物**。(7) **不得由曲名推論內容或出處**（第 110 條）——〈Jeep Cherokee〉〈Zowie Pop〉都沒有來源說明它們寫的是什麼。\n**探測層核對**：previews.json 標 ready、collectionId 128130289、trackCount 15。**我逐軌核對過，而且這張是本組核對得最乾淨的一張**：Apple 的十五軌不只曲名曲序與 MB 那筆 CD 相同，**連逐軌秒數都完全一致**，可以確定是同一份母帶的上架，**試聽可用、軌數可用**。唯一的差異是 releaseDate（見 yearVerified）。"
+ },
+ {
+  "key": "desc2:Charlie McAlister|Mississippi Luau",
+  "artist": "Charlie McAlister",
+  "album": "Mississippi Luau",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1256679 記：廠牌 Catsup Plate，編號 CPR 704，country US，released 欄 1997，格式 Vinyl x1 [LP, Limited Edition]；genres 欄 Rock，styles 欄 Folk Rock、Acoustic、Lo-Fi、Experimental；該條目**沒有 credit 欄、沒有 companies 欄、identifiers 欄也是空的**——整筆條目上沒有任何演奏、錄音或製作掛名。",
+    "src": "https://www.discogs.com/release/1256679"
+   },
+   {
+    "f": "同一條目的註記欄描述封套做法：「Original copies came in hand assembled sleeves featuring a pasted on cloth montage on the front (silk screened image and text upon the center piece of fabric) and silk screened color “splotch” with titles and label address on rear.」「A 2sided photocopied insert with photos and credits included in some copies.」",
+    "src": "https://www.discogs.com/release/1256679"
+   },
+   {
+    "f": "原盤條目登錄的 13 軌曲序（A1–A6／B1–B7）：Mississippi Luau／Paradise／For The Sake Of Words／Neddie Dubois／Island Of The Robot Building／Darla Come Down From Jackson／Crowbar And Ghost／Death From The Depths／The Glamourpuss Roll／Death In The Spring／Hawaiian Blue / Mississippi Grey／One-eyed Bird Performance／It Was Over Before I Woke Up。",
+    "src": "https://www.discogs.com/release/1256679"
+   },
+   {
+    "f": "Discogs 重發條目 8863245（Flannel Banjo，編號欄 none，released 欄 2006，格式 CDr x1 [Album, Limited Edition]）曲目同 13 軌同序，但**掛名欄寫成小寫 c 的「Charlie Mcalister」**、genres 欄只剩「Folk, World, & Country」，且第 5 軌的曲名比原盤多一個字——〈Island Of The Robot Building **Monkey**〉。",
+    "src": "https://www.discogs.com/release/8863245"
+   },
+   {
+    "f": "Discogs 重發條目 13304683（Flannel Banjo，編號欄 none，released 欄 2018，格式 CDr x1 [Album, Limited Edition, Reissue]，barcode 對應 MB 的 192914177494）的註記欄寫「Audio is taken from the vinyl version.」與「Professionally duplicated CDr. Comes in a paper sleeve with a small insert.」；companies 欄一條 Distributed By: CD Baby；第 5 軌的曲名回到原盤的〈Island Of The Robot Building〉。",
+    "src": "https://www.discogs.com/release/13304683"
+   },
+   {
+    "f": "MusicBrainz release-group db10038f 的欄位：title《Mississippi Luau》、first-release-date 1997、primary-type Album、secondary-types 空陣列、artist-credit「Charlie McAlister」（藝人 a8d6239e-9a2b-4d8d-b913-85323fceb96b）；genres 欄 experimental、folk rock、lo-fi、rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/db10038f-429f-3c32-9d32-26e80892b9c8"
+   },
+   {
+    "f": "以 release?release-group=db10038f…&inc=recordings 逐版比對：MB 轄下三筆 release **全部都是 13 軌、一片**——1997 US Official（Catsup Plate／CPR 704，載體 12\" Vinyl，無 barcode）、2006 US Official（Flannel Banjo，CD，無 barcode）、2018 Official（Flannel Banjo，CD，barcode 192914177494，國別欄空）。三筆的曲名與曲序逐項相同，MB 三筆都把第 5 軌記成〈Island of the Robot Building Monkey〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=db10038f-429f-3c32-9d32-26e80892b9c8&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 兩筆 Flannel Banjo release 登記的逐軌長度：Mississippi Luau 3:03／Paradise 2:11／For the Sake of Words 2:30／Neddie DuBois 2:48／Island of the Robot Building Monkey 1:59／**Darla Come Down From Jackson 5:51**／Crowbar and Ghost 3:46／**Death From the Depths 4:57**／The Glamourpuss Roll 3:08／Death in the Spring 3:13／Hawaiian Blue Mississippi Grey 3:44／One-Eyed Bird Performance 2:28／It Was Over Before I Woke Up 3:08；十三軌相加 2566 秒（42 分 46 秒）。MB 的 1997 年黑膠那筆**沒有登記任何曲長**。",
+    "src": "https://musicbrainz.org/release/ecadcabc-e89f-4d42-bea9-419dff2b6e94"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1371759339 的欄位：collectionName《Mississippi Luau》、artistName「Charlie McAlister」、trackCount 13、releaseDate 2018-04-06、copyright「℗ 2018 Charlie McAlister」；**逐軌核對**：十三個曲名與曲序與 MB 逐項對應，**其中十二軌的秒數與 MB 完全相同**，唯一的例外是第 8 軌〈Death from the Depths〉——Apple 記 1:47，MB 記 4:57。",
+    "src": "https://music.apple.com/us/album/mississippi-luau/1371759339"
+   },
+   {
+    "f": "Discogs 廠牌頁 23758 的 Catsup Plate 簡介欄寫：「USA lo-fi electronica and experimental label founded by Rob Carmichael (2).」；該頁的 urls 欄掛 catsupplate.com 與一個 MySpace 網址。Discogs master 1058859 把上述三筆（1997 黑膠、2006 CDr、2018 CDr）歸在同一個 master 底下，**三筆沒有一筆的欄位標 Unofficial**。",
+    "src": "https://www.discogs.com/label/23758"
+   }
+  ],
+  "hookCandidates": [
+   "一張沒有任何掛名的唱片——條目上連是誰彈的都沒有",
+   "第五首歌的名字在三份條目上多了又少了一個字：Monkey"
+  ],
+  "sound": "十三軌、42 分 46 秒——比同批多數卡帶線的碟長，而且曲長分佈很開：最短的〈Island of the Robot Building Monkey〉1:59，最長的〈Darla Come Down From Jackson〉5:51 與〈Death From the Depths〉4:57；其餘十一軌落在 2:11 到 3:46 之間。原盤條目上沒有任何演奏、錄音或製作掛名，連 identifiers 欄都是空的——能寫的只有廠牌、編號、載體與曲目。註記欄描述的是封套：手工組裝、正面貼一塊布做的拼貼、絹印圖與字，背面絹印一塊色斑與曲名和廠牌地址。Discogs 的 styles 欄在原盤與 2018 年重發上一致掛 Folk Rock、Acoustic、Lo-Fi 與 Experimental，MB 的 genres 欄則掛 experimental、folk rock、lo-fi、rock。（本欄由 Discogs 三份條目的欄位與 MB 兩筆 release 的逐軌長度歸納，逐項數過，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Mississippi Luau",
+   "Darla Come Down From Jackson",
+   "Death From the Depths"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1997,
+   "note": "1997 維持卡單原值，無爭議：Discogs 原盤條目 1256679 的 released 欄 1997、MB release-group first-release-date 1997、MB 那筆 Catsup Plate release 的 date 也是 1997。**行文只能寫到年**——沒有任何來源給出月或日。**2018-04-06 與 ℗ 2018 是 Flannel Banjo 那次 CDr 重發的日期**，`previews.json` 因此標 `yearDrift: 21`，那是版本落差不是年份爭議；2006 是另一次重發。行文不得把 2006 或 2018 寫成本作的年份。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Catsup Plate 與 Flannel Banjo 兩家廠牌**（Catsup Plate 的簡介欄依第 128 條**只能寫成「Discogs 的 Catsup Plate 廠牌頁簡介欄說」**）；**「條目上一個掛名都沒有」這件事本身**。\n**禁令**：(1) **不得寫壓量、份數、稀有度、二手價**（第 109 條，全批禁用）——**本卡是全組最容易踩的一張，有三處雷**：原盤註記欄的第一句是壓量數字、2006 年重發的註記欄整句只有壓量數字、Catsup Plate 廠牌頁簡介欄第二句寫的是「Most releases on very ltd vinyl editions.」——**這三句全部不得使用**。可寫的是原盤註記欄描述**封套做法**的那兩句（手工組裝、布拼貼、絹印、雙面影印內頁），以及格式欄上的「Limited Edition」標記本身（只能寫成「該條目的格式欄標了 Limited Edition」）。(2) **原盤軌數只能寫 13**——Discogs 三筆與 MB 三筆 release 全部一致 13 軌，Apple 也是 13（第 140／141 條已逐版比對）。(3) **不得由曲名推論內容、地名或出處**（第 110 條）——〈Mississippi Luau〉〈Neddie Dubois〉〈Darla Come Down From Jackson〉〈Hawaiian Blue / Mississippi Grey〉都沒有任何來源說明它們寫的是什麼；**尤其不得把盤名裡的地名寫成「南方」「密西西比」的風土敘事**。(4) **掛名大小寫兩種寫法（Charlie McAlister／Charlie Mcalister）只能寫成「不同條目上寫法不同」**，不得說成誰打錯（第 136 條）。(5) 第 5 軌曲名的 Monkey 有無同理——**只能寫成「不同條目上的曲名長度不同」**。(6) **不得寫任何傳記**——本卡的 facts 裡沒有藝人生平來源（MB 藝人條目無 url 關聯，Trouser Press 沒有這個藝人的條目）。策展提案裡提到的「南卡羅來納的家庭錄音者」與他在同廠牌的另外兩捲卡帶，**我沒有查到來源，不得使用**。(7) **不得由「條目上沒有掛名」推論「這是一個人做的」**（第 136 條：條目上沒有 ≠ 唱片上沒有）——原盤註記欄自己寫了「A 2sided photocopied insert with photos and **credits** included in some copies」，**唱片上是有 credits 的，只是沒有進資料庫**。行文只能寫「資料庫這一側沒有掛名」。\n**探測層核對（我要提醒主線的一處）**：previews.json 標 ready、collectionId 1371759339、trackCount 13、`yearDrift: 21`。**我逐軌核對過**：Apple 上架的是 2018 年 Flannel Banjo 那版，曲名曲序與 MB 一致、十二軌秒數完全相同，**不是加曲版也不是二合一**，試聽可用、軌數可用。**但第 8 軌〈Death from the Depths〉的長度兩邊差很多（Apple 1:47 vs MB 4:57）**——**這一軌不得當關鍵曲，行文也不得引用它的長度**；其餘十二軌的長度可用。"
+ },
+ {
+  "key": "desc2:Wckr Spgt|CRTV",
+  "artist": "Wckr Spgt",
+  "album": "CRTV",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 3462685 記：廠牌 Shrimper，編號 SHR 66，country US，released 欄 1995，格式 Cassette x1 [Album]；genres 欄只有 Rock、styles 欄是空的；該條目**沒有 credit 欄、沒有 companies 欄、identifiers 欄也是空的**。",
+    "src": "https://www.discogs.com/release/3462685"
+   },
+   {
+    "f": "同一條目的註記欄把整面卡帶內頁抄了下來，逐句是：「Wckr Spgt - CRTV」「**Wckr Spgt is Mark Givens and Joel Huschle.**」「**This tape assembled in June of 1995.**」「If bleeding persists, contact a physician immediately.」「Not your \"cup of tea\" you say?」，最後是廠牌地址三行——「Shrimper Esq. / PO Box 1837 / Upland, CA 91785-1837」。",
+    "src": "https://www.discogs.com/release/3462685"
+   },
+   {
+    "f": "原盤條目登錄的 **19 軌**曲序：A 面 We're So Ashamed／Honor Farm／Sorrow Cup／Brown Bag Of Dreams／Rock & Rollercoaster／You'll Love This Song／Your Maiden Name／Poochy Woman／Harder Than Love／Livin' On Spongecake（十軌），B 面 Yesterday Her Lungs Exploded／Handguns For Teens／Crtv／Bluegrass Omnipotence／Island With Women On It／Going To Waco／Temporary Insanity／You Never Told Me／Forbidden Valley（九軌）。",
+    "src": "https://www.discogs.com/release/3462685"
+   },
+   {
+    "f": "MusicBrainz release-group 1e2ce77c 的欄位：title《CRTV》、first-release-date 1995、primary-type Album、secondary-types 空陣列、artist-credit「Wckr Spgt」；**genres 欄是空陣列**（本組唯一一張 MB 完全沒有風格標籤的卡）；url 關聯欄也是空的。",
+    "src": "https://musicbrainz.org/release-group/1e2ce77c-cdc8-4c4a-9155-d5d552513175"
+   },
+   {
+    "f": "以 release?release-group=1e2ce77c…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（7f2c215e），1995、US、Official、Shrimper Records／SHR 066、載體 Cassette、**19 軌**、無 barcode、**沒有登記任何曲長**；十九個曲名與 Discogs 逐項對應，僅第 11 軌 MB 拼成〈Yesterday Her **Lugs** Exploded〉（Discogs 作 Lungs）、第 13 軌 MB 作〈CRTV〉（Discogs 作 Crtv）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1e2ce77c-cdc8-4c4a-9155-d5d552513175&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 七個店面（us／gb／jp／ca／de／fr／au）以卡單掛名與盤名查詢都回 0 筆。我另以「Wckr Spgt」在美國店面重搜，回 4 筆，**沒有一筆是本碟**：《Everybody's Dead (Oh, No)》（collectionId 125054313、17 軌、℗ 1997 Shrimper）、《S****y Lou》（576971962、11 軌、℗ 2012 Shrimper）、《Shoot the Man in the Tree》（129016363、14 軌、℗ 2005 Anal Garcia Records）與一張合輯。",
+    "src": "https://itunes.apple.com/search?term=Wckr+Spgt&country=us&entity=album"
+   },
+   {
+    "f": "上述搜尋回的第四筆是 Various Artists《Smooth Sounds: Various Artists Play the Future Hits of Wckr Spgt (A 20th Anniversary Shrimper Compilation)》，collectionId 372550537，trackCount 36，releaseDate 2010-06-22，copyright「℗ 2010 Shrimper」——盤名本身就寫明那是一張以這個團的曲子為題的廠牌週年合輯。",
+    "src": "https://itunes.apple.com/search?term=Wckr+Spgt&country=us&entity=album"
+   },
+   {
+    "f": "Discogs 廠牌頁 31508 的 Shrimper 頁面 urls 欄掛兩個網址（shrimperrecords.com 與 claremontcometh.net 的 Shrimper 頁），sublabels 欄列一條「Bamboo Dart Press Special Projects」；本卡原盤條目註記欄抄下來的廠牌地址（Upland, CA 91785-1837）與該廠牌頁的所在地一致。",
+    "src": "https://www.discogs.com/label/31508"
+   },
+   {
+    "f": "本卡兩位團員之一 Mark Givens 這個字串，也出現在同批第 9 張 Franklin Bruno《A Bedroom Community》黑膠條目（Discogs release 2539923）的曲目表上——A5〈Uninsulated Wall〉掛「Performer [El Daño]: Mark Givens」。**兩份條目本身沒有把兩者連起來，這裡只登記兩處出現了同一個字串。**",
+    "src": "https://www.discogs.com/release/2539923"
+   },
+   {
+    "f": "Trouser Press 的 Mountain Goats 條目（署名 Deborah Sprague／Jay Pattyn）的唱片列表裡，最後一段列有「Furniture Huschle / Mountain Goats — Tropical Depression EP7 (Little Mafia) 1987」；Huschle 這個字串與本卡註記欄裡兩位團員之一同名。**同樣地，那份條目沒有把兩者連起來。**",
+    "src": "https://trouserpress.com/reviews/mountain-goats/"
+   }
+  ],
+  "hookCandidates": [
+   "卡帶內頁上寫著：「本帶組裝於一九九五年六月」",
+   "十九首歌，資料庫沒有登記任何一首的長度"
+  ],
+  "sound": "十九軌的卡帶，A 面十軌、B 面九軌——**兩個資料庫都沒有登記任何一軌的長度**，所以這張碟能查到的只有曲名的數量與排列。條目上沒有任何演奏、錄音或製作掛名；唯一的編制資訊來自註記欄抄下來的內頁，一句話寫明這個名字是兩個人。MB 的 genres 欄是空的、Discogs 的 styles 欄也是空的——兩個資料庫都沒有給這張碟任何風格標籤，genres 欄只留下一個 Rock。（本欄由 Discogs 原盤條目與 MB 該 release 的欄位歸納，構成它的原始值都在 facts 裡；**因為沒有曲長也沒有 credit，本欄刻意不描述任何音色**。）",
+  "keyTracks": [
+   "We're So Ashamed",
+   "Crtv",
+   "Forbidden Valley"
+  ],
+  "status": "thin",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，無爭議：Discogs 原盤條目 3462685 的 released 欄 1995、MB release-group first-release-date 1995、MB 唯一那筆 release 的 date 也是 1995。**而且可以寫到月**——但要說清楚是哪一件事：註記欄那句「This tape assembled in June of 1995.」寫的是**卡帶組裝的月份**，不是發行日期。**行文可寫「內頁註明這捲帶子組裝於 1995 年 6 月」，不得改寫成「1995 年 6 月發行」。**"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Shrimper 目錄的編號序列與那張二十週年紀念合輯**（本卡獨占；**Shrimper 的創辦與廠牌史仍歸〈How You Continue Dreaming〉**，本卡禁用）；**「卡帶內頁被整段抄進資料庫」這件事**。\n**本卡是本組資料最薄的一張，`status` 標 `thin`。**能寫的只有：廠牌與編號、載體、19 軌的曲名、兩位團員的名字、組裝月份、內頁那兩句怪話、以及廠牌地址。**沒有曲長、沒有 credit、沒有樂評、沒有封面、沒有試聽。**\n**禁令**：(1) **Shrimper 廠牌史（誰創辦、與哪個團的關係）禁用**（分派給〈How You Continue Dreaming〉）。本卡能寫的是**目錄側**：編號 SHR 66、廠牌地址、以及那張以這個團的曲子為題的二十週年合輯。(2) **那張合輯只能寫成 Apple 上那筆的盤名與欄位**（collectionId 372550537、36 軌、℗ 2010 Shrimper）——**不得寫「廠牌把這個團放在目錄的中心」「這是廠牌對它的致敬」之類的評價或動機**（第 146 條：分派只寫線，不寫評價；策展提案裡那句「等於廠牌自己把這個名字放在目錄的中心」是**策展層的推論，沒有來源，我在此推翻，不得使用**）。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) **絕對不得寫「這張碟在串流上找不到」「已經絕版」之類的話**——那等同稀有度陳述（第 109 條）。(5) **不得由曲名推論內容或出處**（第 110 條）——〈Going To Waco〉〈Handguns For Teens〉〈Bluegrass Omnipotence〉都沒有來源說明它們寫的是什麼，**尤其不得把〈Going To Waco〉接到任何歷史事件上**。(6) **兩處同名字串（Mark Givens、Huschle）只能寫成「同一個名字也出現在另一份條目上」，或乾脆不寫**——**不得寫成「他也是某某團的成員」**（第 136 條；而且同批第 9 張已分到 Franklin Bruno 那條線，寫進來會撞第 131 條）。**建議直接讓這兩條閒置（第 138 條）。**(7) 內頁那兩句怪話（「If bleeding persists…」「Not your 'cup of tea' you say?」）可以引，**但只能寫成「內頁上印著這麼一句」**，不得解釋它的意思或推論語氣背後的態度。(8) 盤名《CRTV》四個大寫字母，**不得推測它是哪個字的縮寫**（第 110 條）——第 13 軌的曲名也是同一個字串，兩者的關係條目上沒有說。\n**探測層核對**：previews.json 標 `unavailable`（七個店面的 `tried` 全是 `1→0` 或 `0→0`）。我依第 152 條用掛名在美國店面回搜，**回了 4 筆、沒有一筆是本碟**——同掛名的其他三張碟都在（其中兩張還是同一家廠牌的），**可見不是掛名寫法的問題，也不是第 152 條那種「搜到了沒配上」，這張碟確實不在 Apple 上**。**沒有可回補的東西，主線不要回補。**封面與試聽兩條線本卡都要當作沒有。"
+ },
+ {
+  "key": "desc2:Charalambides|Union",
+  "artist": "Charalambides",
+  "album": "Union",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1010190 記：廠牌 Siltbreeze，編號 SB26，country US，released 欄 1994，格式 Vinyl x1 [LP, Album, Limited Edition]；genres 欄 Rock，styles 欄 Folk Rock 與 Avantgarde。",
+    "src": "https://www.discogs.com/release/1010190"
+   },
+   {
+    "f": "同一條目的 credit 欄**只有兩條，而且角色相同**：Performer: Christina Carter、Performer: Tom Carter——沒有錄音、製作、母帶或美術掛名。",
+    "src": "https://www.discogs.com/release/1010190"
+   },
+   {
+    "f": "同一條目的註記欄兩句：「The center of each cover features unique art and/or design.」「Runouts are etched.」；identifiers 欄登記的兩面 runout 刻字是一句被拆成兩半的法文——A 面「SB26-A NOUS -T `AIMONS, -JANE -B.」、B 面「SB26-B + ... MOI-NON-PLUS.」。",
+    "src": "https://www.discogs.com/release/1010190"
+   },
+   {
+    "f": "原盤條目登錄的 **7 軌**曲序：A 面 Florian／Fucking Creek／Another Way Out（三軌），B 面 Torn Between／Dominize／I've Been There Again／**Florian**（四軌）——**〈Florian〉這個曲名在整張碟上出現兩次，一次在 A 面第一軌、一次在 B 面最後一軌**。",
+    "src": "https://www.discogs.com/release/1010190"
+   },
+   {
+    "f": "MusicBrainz release-group 372e9f62 的欄位：title《Union》、first-release-date 1994、primary-type Album、secondary-types 空陣列、artist-credit「Charalambides」；genres 欄 folk rock 與 rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/372e9f62-b336-3538-b132-331cccf7d28a"
+   },
+   {
+    "f": "以 release?release-group=372e9f62…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（8841141e），1994、US、Official、Siltbreeze／SB26、載體 12\" Vinyl、**7 軌**、無 barcode、**沒有登記任何曲長**；七個曲名與曲序與 Discogs 逐項相同，包含重複出現的〈Florian〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=372e9f62-b336-3538-b132-331cccf7d28a&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MusicBrainz 藝人 e754303f-655e-41f4-9dbe-b11b5614bd3d 的欄位：name「Charalambides」、type **Group**、country US、**life-span 的 begin 欄 1991、ended 欄 false**；url 關聯共十三條，包含 AllMusic、Bandcamp、Last.fm、RateYourMusic、Setlist.fm、Songkick、Wikidata（Q5073885），以及一條 biography 指向 kranky.net 的藝人頁、兩條 interview 關聯、**一條 VIAF（viaf.org/viaf/123499099）與一條 WorldCat identities（lccn-no2003063878）**。",
+    "src": "https://musicbrainz.org/artist/e754303f-655e-41f4-9dbe-b11b5614bd3d"
+   },
+   {
+    "f": "Discogs 藝人頁 147840 的簡介欄寫：「American duo of Tom & Christina Carter performing extended guitar and voice compositions and improvisations. Formed in Houston, Texas in 1991. Relocated to Austin, Texas in 1997. The line-up has evolved through various configurations. From 1993 to 1996 they performed and recorded with guitarist Jason Bill (later with Arizona duo Migrantes), and since 2000 the lineup has included steel guitarist Heather Murray (formerly of Ash Castles On The Ghost Coast).」；同頁的 members 欄列五個名字——Tom Carter、Christina Carter、Jason Bill、Kyle Silfer、Heather Leigh Murray。",
+    "src": "https://www.discogs.com/artist/147840"
+   },
+   {
+    "f": "Apple Music 七個店面（us／gb／jp／ca／de／fr／au）以卡單掛名與盤名查詢都回 0 筆；我另以「Charalambides」單獨在美國店面重搜，回 2 筆，**沒有一筆是本碟**——一筆是同團的《Houston》（collectionId 180135973、trackCount 8、releaseDate 1999-11-13、copyright「℗ 1999 Siltbreeze」），另一筆是一位同姓的希臘語歌手的單曲。",
+    "src": "https://itunes.apple.com/search?term=Charalambides&country=us&entity=album"
+   },
+   {
+    "f": "上述那筆《Houston》的 copyright 欄「℗ 1999 Siltbreeze」與本卡原盤的廠牌相同——同一家廠牌在 Apple 上架的是這個團五年後的另一張碟，本卡這張沒有上架。",
+    "src": "https://itunes.apple.com/search?term=Charalambides&country=us&entity=album"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌，第一首和最後一首同名",
+   "兩面唱片的刻紋上各刻著半句法文，合起來是一整句"
+  ],
+  "sound": "七軌的雙人碟：credit 欄只有兩條，而且兩條的角色都寫「Performer」——沒有分樂器、沒有錄音或製作掛名，資料庫這一側對編制只給了「兩個人」這個資訊。**兩個資料庫都沒有登記任何一軌的長度**，所以曲長無從說起；能說的是排列——A 面三軌、B 面四軌，而首尾同名。Discogs 的 styles 欄把它掛在 Folk Rock 與 Avantgarde 兩格之間，MB 的 genres 欄則是 folk rock 與 rock。註記欄唯一描述實體的一句寫的是封套：每張的中央都是不一樣的圖或設計。（本欄由 Discogs 原盤條目的 credit、註記與曲目表歸納，構成它的原始值都在 facts 裡；**因為沒有曲長也沒有樂器分工，本欄刻意不描述任何音色**。）",
+  "keyTracks": [
+   "Florian",
+   "Another Way Out",
+   "Torn Between"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，無爭議：Discogs 原盤條目 1010190 的 released 欄 1994、MB release-group first-release-date 1994、MB 唯一那筆 release 的 date 也是 1994。**行文只能寫到年**——沒有任何來源給出月或日。另有兩個**不同性質**的年份可用但要分清楚：Discogs 藝人頁簡介欄的「Formed in Houston, Texas in 1991」與 MB 藝人 life-span 的 begin 欄 1991 是**團的成立年**；「Relocated to Austin, Texas in 1997」是**遷移年**（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**這個團本身的來歷**（德州休士頓成立、後來遷奧斯汀、雙人為核心而陣容有變）；**唱片實體的細節**（每張封套中央不同、兩面刻紋各刻半句法文）。\n**【我在本卡下的裁定，記錄在此】**：策展提案的 risk 欄寫「研究層若查不到署名樂評或館藏，這張要優先剔除」。**我查不到署名樂評**——Trouser Press 沒有這個團的條目（以 charalambides 查詢被導到首頁，以關鍵詞搜尋只回 Shadow Ring 等不相干條目），MB 該 release-group 也沒有掛任何評論類的 url 關聯。**但館藏這一側查到了**：MB 藝人條目掛有 **VIAF 名稱權威記錄**（viaf.org/viaf/123499099）與 **WorldCat identities**（lccn-no2003063878），這兩者是圖書館體系對這個名字建立的權威檔。**依此裁定保留本卡**，理由寫在這裡供主線覆核。**但行文不得把 VIAF／WorldCat 寫成「被館藏收錄」或「被學術認可」**——那兩條只是資料庫關聯，能寫的僅止於「MB 藝人條目掛了這兩條關聯」，若拿不準就整條不寫（第 136 條）。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）——本卡只能寫「廠牌叫 Siltbreeze、編號 SB26」，**不得寫它是誰開的、在哪座城市、走什麼路線**。**同批另有五張 Siltbreeze 系的卡**（〈Thunder Feedback Confusion〉〈Music for the Other Head〉〈Furniture Music for Evening Shuttles〉〈Bonfire in a Dixie Cup〉〈Sink the Aging Process〉），**本卡也不得寫「同一家廠牌同期還有誰」**（第 131／145 條）。(2) **不得寫壓量、份數、稀有度、二手價**（第 109 條，全批禁用）——**本卡最容易踩**：Discogs 註記欄的第一句就是壓量數字，**那一句整句不得使用**；能用的是第二句（每張封套中央不同）與第三句（刻紋是蝕刻的）。格式欄的「Limited Edition」只能寫成「該條目的格式欄標了 Limited Edition」。**尤其不得寫「這張碟只有黑膠、沒有再發、串流上找不到」——那是稀有度陳述。**(3) **runout 上那半句法文只能照抄字串**，**不得指認它出自哪首歌、哪位歌手**（第 110 條：不得由字串推論出處）。(4) **不得由曲名推論內容或出處**（第 110 條）；**首尾同名這件事只能陳述，不得解釋成「同一首的兩個版本」或「重奏」**——條目上沒有任何說明。(5) Discogs 藝人頁簡介欄提到的第三、第四位成員（Jason Bill、Heather Murray）與他們的年份區間**可以寫，但只能寫成「藝人頁的簡介欄這樣寫」**（第 128 條），而且**那些年份與本張碟的關係條目上沒有說**——1993–1996 這個區間涵蓋本張的 1994，**但條目沒有說 Jason Bill 有沒有參與這張，本卡的 credit 欄只有兩個名字**，行文**不得推論他在這張碟上**（第 136 條）。**建議直接只寫兩人。**\n**探測層核對**：previews.json 標 `unavailable`（七個店面的 `tried` 都是 `1→0`）。我依第 152 條用團名在美國店面回搜，**回 2 筆、沒有一筆是本碟**——同團同廠牌的《Houston》倒是在（collectionId 180135973），**可見不是掛名寫法的問題，這張碟確實不在 Apple 上**。**沒有可回補的東西，主線不要回補。**封面與試聽兩條線本卡都要當作沒有。"
+ },
+ {
+  "key": "desc2:Strapping Fieldhands|Discus",
+  "artist": "Strapping Fieldhands",
+  "album": "Discus",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1720804 記：廠牌 Omphalos Records，編號 OMP001，country US，**released 欄 1994-04-05**，格式 Vinyl x1 [LP]；companies 欄只有一條——**Distributed By: Siltbreeze**；genres 欄 Rock，styles 欄 Alternative Rock 與 Psychedelic Rock；該條目沒有註記欄、也沒有 identifiers 欄。",
+    "src": "https://www.discogs.com/release/1720804"
+   },
+   {
+    "f": "原盤條目登錄的 **17 軌**曲序（A1–A9／B1–B8）：Boo Hoo Hoo／Sad Lament Of The American Indian／When You Came／Coffin Cello／Battle Down The 1/4 Mile／Now We Have Slipped／Lonnie Donnegan's Mum's Tea Chest／Misty／Mysterious Girl／Luminous Bodies／Sasquatch & Wilcox Club The Weefolk／Red Dog The Deconstructor／Biscuits & Kippers／Arrogant Flower／Past Pastoral／Abstract Composition #2／Picador Gored By Bull；曲目表上只有兩軌掛客座——A9〈Mysterious Girl〉掛 Twelve-String Guitar [12 string]: John Ferenzik，B2〈Sasquatch & Wilcox Club The Weefolk〉掛 Drums: Ed Wilcox。",
+    "src": "https://www.discogs.com/release/1720804"
+   },
+   {
+    "f": "Discogs 重發條目 4339175（Shangri-La Projects，編號 050，released 欄 2009，CD x1 [Album, Reissue]，barcode 760417005028）補上了原盤條目沒有的整份編制：Vocals, Guitar, Melodica: Bob Malloy／Lead Guitar, Backing Vocals: Jacy Webster／**Bass, Cello, Double Bass, Organ: Bob Dickie**（同時掛 Recorded By）／Drums, Melodica, Accordion: Sky Kishlo／Percussion, Whistle: Jeff Werner，另有兩位客座 Drums: Ed Wilcox (11)、Twelve-String Guitar: John Ferenzik (9)，以及 Artwork: Bob Malloy 與 **Liner Notes: Andrew Earles**。",
+    "src": "https://www.discogs.com/release/4339175"
+   },
+   {
+    "f": "同一筆重發的註記欄兩句：「Digital Transfer by Rocket Science Audio.」「(P) 1994 Omphalos Records」；companies 欄一條 Phonographic Copyright (p): Omphalos Records——**錄音權年份寫的是 1994、掛的是原盤那家廠牌**。",
+    "src": "https://www.discogs.com/release/4339175"
+   },
+   {
+    "f": "MusicBrainz release-group 7e5ed9b4 的欄位：title《Discus》、first-release-date 1994、primary-type Album、secondary-types 空陣列、artist-credit「Strapping Fieldhands」；genres 欄 alternative rock、psychedelic rock、rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/7e5ed9b4-b288-3274-bcc4-46181eb8a366"
+   },
+   {
+    "f": "以 release?release-group=7e5ed9b4…&inc=recordings 逐版比對：MB 轄下兩筆 release **都是 17 軌**——1994 US Official（編號 OMP001，廠牌欄未填名稱，載體 12\" Vinyl，未登記曲長）與 2009 US Official（Shangri-La Projects／050，載體 CD，有曲長）。**兩筆的軌數一致，沒有加曲也沒有二合一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7e5ed9b4-b288-3274-bcc4-46181eb8a366&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "MB 那筆 2009 年 CD 登記的逐軌長度：Boo Hoo Hoo 4:07／Sad Lament of the American Indian 4:05／When You Came 2:06／Coffin Cello 1:35／Battle Down the 1/4 Mile 2:32／Now We Have Slipped 2:29／**Lonnie Donnegan's Mum's Tea Chest 5:09**／**Misty 1:02**／Mysterious Girl 1:54／Luminous Babies 4:26／Sasquatch & Wilcox Club the Weefolk 1:54／Red Dog the Deconstructor 3:43／Biscuits & Kippers 3:08／Arrogant Flower 2:51／Past Pastoral 3:24／Abstract Composition #2 3:38／Gored by Bull 1:45；十七軌相加 2988 秒（49 分 48 秒）。**MB 把第 10 軌記成〈Luminous Babies〉、第 17 軌記成〈Gored by Bull〉，Discogs 兩筆都作〈Luminous Bodies〉與〈Picador Gored By Bull〉。**",
+    "src": "https://musicbrainz.org/release/e92c29a6-1c9d-4a3f-9c4b-1b57bd8f8f1a"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 332049371 的欄位：collectionName《Discus》、artistName「Strapping Fieldhands」、trackCount 17、**releaseDate 1993-01-01**、copyright「**℗ 2009 Shangri-la Projects**」；**逐軌核對**：十七個曲名與曲序與 MB 那筆 2009 年 CD 完全相同（含〈Luminous Babies〉與〈Gored by Bull〉這兩個 MB 側的寫法），逐軌秒數也逐項相同或差一秒——**Apple 上架的是 2009 年那次 CD 重發**。",
+    "src": "https://music.apple.com/us/album/discus/332049371"
+   },
+   {
+    "f": "Trouser Press 的 Strapping Fieldhands 條目（署名 Deborah Sprague）給本作一整段：「Discus, the band's first full-length release, allows for a more expansive look into the Fieldhands' world, albeit one that intensifies the Anglo-fetish: Malloy's affected-but-charming faux British accent has seldom been thicker, his prose never more Merrie Olde than on 'Lonnie Donegan's Mum's Tea Chest' or 'Biscuits and Kippers.' The heavy skiffle vibe is broken by such oddities as the pogo-folk 'Boo Hoo Hoo' and the lugubrious Hawkwind doppelgänger 'Luminous Bodies.' Downright weird.」該條目的唱片列表把本作記為「Discus (Omphalos) 1994」。",
+    "src": "https://trouserpress.com/reviews/strapping-fieldhands/"
+   },
+   {
+    "f": "同一篇條目的開頭把這個團寫成「Philadelphia's Strapping Fieldhands, an unabashedly Anglophile quintet weaned on the Incredible String Band's Layers of the Onion (with just a dusting of the Bevis Frond for flavor)」，並註明「the Fieldhands (aside from percussionist Jeff Werner) are all old enough to remember the stuff as contemporary」；該條目前一段另寫，前兩張 EP 的「production」粗糙到「rough enough to qualify them as (no pun intended) field recordings」，並點名 Bob Dickie 的大提琴與貝斯、以及 Bob Malloy 是主唱。",
+    "src": "https://trouserpress.com/reviews/strapping-fieldhands/"
+   }
+  ],
+  "hookCandidates": [
+   "十七首歌裡最短的一分零二秒，最長的五分零九秒",
+   "原盤的條目上一個樂手名字都沒有，十五年後的重發才把五個人補回去"
+  ],
+  "sound": "十七軌、49 分 48 秒的長碟，曲長分佈很開：最長的〈Lonnie Donnegan's Mum's Tea Chest〉5:09 與〈Luminous Babies〉4:26，最短的〈Misty〉1:02 與〈Coffin Cello〉1:35，其餘多在兩分到四分之間。編制要到 2009 年重發的 credit 欄才看得到——五個固定名字，樂器欄橫跨吉他、貝斯、大提琴、低音提琴、風琴、鼓、口風琴、手風琴、打擊與口哨，其中兩人各掛兩到四樣樂器；另有兩位客座，各只出現在一軌（十二弦吉他一軌、鼓一軌）。錄音掛在團員之一名下。原盤條目本身則完全沒有 credit 欄，只有廠牌、編號與曲目。（本欄由 Discogs 兩份條目的 credit 欄與 MB 2009 年 CD 的逐軌長度歸納，逐項數過，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Boo Hoo Hoo",
+   "Lonnie Donnegan's Mum's Tea Chest",
+   "Luminous Bodies"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，無爭議，而且**可以寫到日**：Discogs 原盤條目 1720804 的 released 欄 **1994-04-05**、MB release-group first-release-date 1994、MB 那筆黑膠 release 的 date 1994、2009 年重發條目註記欄的「(P) 1994 Omphalos Records」、Trouser Press 唱片列表的「(Omphalos) 1994」——**五處一致，只有 Discogs 那一筆精確到日**。**行文可寫到年；要寫到日必須註明那是 Discogs 原盤條目的 released 欄。**\n**⚠️ 這裡有一個必須擋掉的錯誤年份**：`previews.json` 記的 `appleYear` 是 **1993**，那是 Apple 那筆的 `releaseDate` 欄 1993-01-01 —— **`YYYY-01-01` 的佔位形狀**（第 140 條附錄二點名的），而那筆的 copyright 是 ℗ 2009 Shangri-la Projects，**上架的是 2009 年的重發**。**1993 不是任何一件事的年份，行文與 hook 都不得出現。**"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Omphalos Records 與 Shangri-La Projects 兩家廠牌**；**「原盤條目沒有編制、十五年後的重發才補上」這件事**；Trouser Press 對本團與本張的整段評語。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）。**本卡與 Siltbreeze 的關係只能寫成 companies 欄那一條原始值——「Distributed By: Siltbreeze」（經銷）**，**不得寫成「由 Siltbreeze 發行」，也不得寫成兩家廠牌共列**（第 85／136 條；策展提案說原盤條目「同時列 Omphalos Records 與 Siltbreeze」，**我核對後推翻**：Siltbreeze 不在 labels 欄，而在 companies 欄的 Distributed By 那一條）。(2) **原盤軌數只能寫 17**——Discogs 原盤、Discogs 2009 重發、MB 兩筆 release、Apple 五處一致，沒有加曲版也沒有二合一（第 140／141 條已逐版比對）。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) **兩處曲名分歧只能寫成「不同資料庫寫法不同」**：〈Luminous Bodies〉／〈Luminous Babies〉與〈Picador Gored By Bull〉／〈Gored by Bull〉。**Trouser Press 那段用的是 'Luminous Bodies'**，若行文引用該段就照它的寫法，並註明那是樂評裡的寫法。(5) **Trouser Press 那段裡的比較對象（Incredible String Band、Bevis Frond、Hawkwind、Holy Modal Rounders、Guided by Voices）要小心**：可以引用**該篇樂評怎麼形容這張碟**，但**必須寫成「Trouser Press 那篇署名樂評說」**（第 128 條），**不得改寫成本店對這張碟的判斷**。**尤其 Guided by Voices 不得出現**——池中已有該掛名四張，寫進來是第 131 條的跨卡撞線。(6) **樂評裡的「Anglophile」「faux British accent」等說法只能當引用轉述**，**不得由曲名（Biscuits & Kippers、Lonnie Donnegan's Mum's Tea Chest）自行推論同一件事**（第 110 條）——這兩軌剛好也是那段樂評點名的，引用時要讓來源看得出來。(7) **「the band's first full-length release」這句是 Trouser Press 的說法**，可引，但**不得改寫成「首張專輯」的斷言**（第 125 條：序數框架要有來源，而這裡的來源是一篇樂評不是廠牌目錄）。\n**探測層核對（我推翻探測層的地方）**：previews.json 標 ready、collectionId 332049371、trackCount 17、**`appleYear` 記 1993**、沒有標 `yearDrift`（因為 1993 比卡單年份還早一年，落差算不出正號）。**逐軌核對後確認**：Apple 上架的是 **2009 年 Shangri-La Projects 的 CD 重發**（℗ 2009，曲名與秒數與 MB 那筆 2009 CD 逐項相同），**不是 1993 年的任何東西**；`releaseDate` 1993-01-01 是佔位日期。**軌數 17 與原盤一致、可用；試聽可用；但 `appleYear` 1993 是錯的，建議主線在 previews.json 註明該欄為佔位日期、不得用於年份判斷。**"
  }
 ]
