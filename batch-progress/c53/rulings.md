@@ -2748,3 +2748,39 @@ Bellaphon 還會掉到 7 條事實的下限以下。
 **這條與第 132 條同一個方向**：規則寫下來時預設了某個世界的樣子
 （所有站都有 HTTPS、所有括號都是再版註記），世界不長那樣時，
 **回到規則想達成的目的去判，而不是照字面把好東西擋在外面。**
+
+## 134.（c-87）§4 那個人工核對過的 collectionId，封面能用，試聽也能用
+
+c-87 是 §1 人工身分補遺批。封面走 §4 的 `apple-verified-collection` 例外，
+用策展層人工核對過的確切 `collectionId` 直查，32 張取到 16 張。
+試聽照常跑 `probe-previews`（search ＋ 標題比對），結果只有 10 張。
+
+差的那 6 張不是 Apple 上沒有，是**盤名對不上**：
+
+- 丸山繁雄兩張的 Apple 版是加曲版，盤名帶「+3」「+2」。
+- 菅野邦彦《Date in Daté》在 Apple 上叫「BLACK ORPHEUS DATE IN DATE」。
+- 与世山澄子《Introducing》在 Apple 上是片假名「イントロデューシング」。
+- 高木元輝＝加古隆《パリ日本館コンサート》、チコ本田《チコ》的藝人字串對不上。
+
+search 找得到，標題比對會擋掉——**而擋掉是對的**，因為 search 沒有辦法確認
+找到的是不是同一張碟，比對就是它唯一的防線。
+
+**裁定**：本批（以及往後所有 §1 補遺批）另跑 `apple-previews.mjs`，
+只處理「原本 unavailable、且策展層有給 collectionId」的卡，
+用 `lookup?id=<collectionId>&entity=song` 取第一軌的 `previewUrl`，
+記 `previewSource: "apple-verified-collection"`。已 ready 的一張都不動。
+補進 5 張，試聽從 10／32 到 15／32。
+
+**理由與 §4 當初開這個例外時完全相同**：collectionId 是人工核對過的，
+它指向的就是那張碟，**比模糊搜尋嚴格，不是比較寬鬆**。
+標題比對是用來補救「我不確定這是不是同一張」；當來源本身已經確定，
+再拿比對去擋，擋掉的是正確答案。
+
+与世山澄子《Introducing》lookup 回來沒有任何帶 `previewUrl` 的軌，
+是真的「有碟無預覽」，維持 unavailable。
+
+**方法教訓（順帶記一筆，這次花掉十分鐘）**：
+用 `pgrep -f 'probe-previews.mjs c87'` 等一支腳本結束時，
+**等待用的那個 shell 自己的命令列裡也有這個字串**，於是它等到自己，
+腳本早就跑完了還在轉。判斷「某某還在跑」時，
+先確認你數到的那個進程不是你自己。
