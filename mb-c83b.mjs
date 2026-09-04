@@ -27,7 +27,7 @@ export const mb = (path) => getJSON('https://musicbrainz.org/ws/2/'+path+(path.i
 export const dg = (path) => getJSON('https://api.discogs.com/'+path);
 export const itunes = (path) => getJSON('https://itunes.apple.com/'+path, {cache:true});
 
-if (process.argv[2]) {
+if (process.argv[1] && import.meta.url.endsWith(process.argv[1].split('/').pop()) && process.argv[2]) {
   const which = process.argv[2], arg = process.argv[3];
   const fn = {mb, dg, itunes}[which];
   fn(arg).then(j => console.log(JSON.stringify(j, null, 1))).catch(e => { console.error(e.message); process.exit(1); });

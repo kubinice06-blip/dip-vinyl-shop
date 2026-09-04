@@ -726,5 +726,561 @@
   "status": "full",
   "yearVerified": "1996 站得住。Discogs released 欄 1996、MB first-release-date 1996、MB 唯一一筆 release 的 date 1996，三處一致，無分歧。無月份資料，不得給月份。",
   "notes": "【互斥分派——Soup-Disk 廠牌線讓給 a 組】本組只有這一張 Soup-Disk 的卡，**a 組手上有四張**（Riow Arai 兩張、Cappablack、Taichi）。依「a 組先到先得」的規則，**Soup-Disk 這家廠牌的敘事（廠牌自述、目錄、地址、關係企業）讓給 a 組**，本卡禁用，只能寫自己這張碟的目錄編號 SOUP 003 CD 與 credit 欄上的版權登錄。（交件時 `desc-tools/batches/research/c82-a.json` 尚未產出，我看不到 a 組的稿子；此處主動讓開。）\n【本卡特有限制】(1) 原盤十三軌，兩個資料庫一致，可以斷言。(2) **第 5 軌的曲名兩個資料庫拼法不同**（Discogs College／MB Collage）：行文若要引這一首，必須避開或明寫「資料庫拼法不一」；本卡 keyTracks 已刻意避開它。(3) 兩位製作人的身分只能寫成 Discogs 藝人頁的欄位值——「Discogs 藝人頁把 Masaaki Hara 的 profile 寫成 Japanese music critic」「把 Taro Nijikama 記為早期推廣『Onkyo』一詞的人、1990 年代前期在澀谷開過唱片行 Paris-Peking」——**不得升級成他們自己的權威宣稱，也不得寫成「音響派的命名者」之類的斷言**（第 128 條）。(4) 曲名〈Atrocity In Philadelphia〉〈Interzone…〉帶地名與既有小說詞彙，**不得由曲名推論事件、出處或致敬對象**（第 110 條）。(5) 「Discogs 給的風格標記是 Abstract／Trip Hop／Experimental」只能寫成資料庫的標記，不得寫成本張碟的音樂定性。\n【缺口】原盤沒有錄音室、錄音日期與母帶室的登錄（只有 SID code 與母帶刻印）。第 136 條：條目上沒有不等於唱片上沒有。掛名 Montage 是英文常用字，以它為主鍵查 Apple 只會回無關結果，本卡的試聽拿不到。\n【全批禁令】第 109 條（SID code 與刻印可以寫，壓量／稀有度／二手價不可以）、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:HAT|Tokyo - Frankfurt - New York",
+  "artist": "HAT",
+  "album": "Tokyo - Frankfurt - New York",
+  "facts": [
+   {
+    "f": "Discogs 日本盤條目（Daisyworld Discs，編號 SYDW-0002，日本，CD 一張標 Album，released 欄 1996-12-21）的內註寫：「Recorded at Quiet Lodge (Tokyo), Sel i/s/c (Frankfurt) and Breatton Hotel Studio (New York), 1995 - 1996. Issued in jewel case with obi. Four page insert includes personnel credits in English/Romaji.」——盤名的三個城市正是內註列出的三間錄音室所在地。",
+    "src": "https://api.discogs.com/releases/618589"
+   },
+   {
+    "f": "同一份日本盤曲目六軌與曲長：1.〈Funk Coaster〉8:29／2.〈Organic Mango〉6:33／3.〈Sleep Run〉6:54／4.〈2 Gigabyte Of Joujou〉12:31／5.〈Kubrick〉9:13／6.〈Quick Esc.〉13:39。",
+    "src": "https://api.discogs.com/releases/618589"
+   },
+   {
+    "f": "同一份日本盤 credit 欄：Atom Heart、Haruomi Hosono、Tetsu Inoue 三人並列 Producer [All Titles Produced By]、Music By 與 Created By；工程掛 Atom Heart、Hiroshi Haraguchi、Tetsu Inoue 三人；Satoshi Ogawa 掛 Mastered By；Eiichi Azuma 掛 Coordinator [Production Coordination]；Icebreaker (10) 掛 Art Direction, Design；eno-kid 掛 Image Editor [CG Manipulator]。公司欄記母帶在 Hitokuchizaka Studio、製造與發行由 Synergy, Inc. 負責、℗ 掛 Daisyworld Discs Medium, Inc.、© 掛 Synergy, Inc.。identifiers 欄記條碼 4941493000558、Rights Society「JASRAC」。",
+    "src": "https://api.discogs.com/releases/618589"
+   },
+   {
+    "f": "MusicBrainz release-group ffc7cd85-ed47-3dd7-91d3-4895c6e39594：標題《Tokyo - Frankfurt - New York》，artist-credit「HAT」，**first-release-date 1996-05-29**，primary-type Album，secondary-types 空；轄下兩筆 release 都是六軌、曲序曲長完全相同——1996-05-29／DE／Rather Interesting／RI 037，以及 1996-12-21／JP／Daisyworld Discs／SYDW-0002。**這張碟先在德國問世，半年多後才在日本出版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ffc7cd85-ed47-3dd7-91d3-4895c6e39594&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 德國盤條目（Rather Interesting，編號 RI 037，德國，CD，released 欄 1996-05-29）的內註記：「Recorded at Quiet Lodge (Tokyo), Breatton Hotel Studio (New York) and SEL I/S/C (Frankfurt). Digital editing and mastering at SEL I/S/C.」——與日本盤同樣的三間錄音室，但母帶處理地點寫的是法蘭克福那間，與日本盤內註寫的 Hitokuchizaka Studio 不同。該筆的 credit 把工程逐地分開：Tetsu Inoue 掛 Engineer [New York]、Atom Heart 掛 Engineer [Recording Engineer Frankfurt] 與 Mixed By [Final Mixdown]、Hiroshi Haraguchi 掛 Engineer [Recording Engineer Tokyo]。",
+    "src": "https://api.discogs.com/releases/49668"
+   },
+   {
+    "f": "Discogs master 135295 底下四個版本：release 49668（Rather Interesting RI 037，德國，1996，CD）、release 618589（Daisyworld Discs SYDW-0002，日本，1996，CD）、release 14902217（Daisyworld Discs SYDW-0002D，日本，1996，CD，標 Promo）、release 20273677（AtomTM_Audio_Archive AAA 058，智利，2020，FLAC File，標 Reissue, Remastered）。四筆裡零筆標 Unofficial Release。",
+    "src": "https://api.discogs.com/masters/135295/versions?per_page=100"
+   },
+   {
+    "f": "Discogs 藝人頁 39865（HAT）的 members 欄有三個人：Tetsu Inoue、Haruomi Hosono、Uwe Schmidt；realname 與 profile 兩欄都是空的。",
+    "src": "https://api.discogs.com/artists/39865"
+   },
+   {
+    "f": "Discogs 藝人頁 24（Atom Heart）：realname 欄「Uwe Schmidt」，profile 欄記「Atom™ (also known as Atom Heart and often confused with Señor Coconut, real name Uwe Schmidt - born 27 August 1968) is a German composer, musician and record producer of electronic music.」——**本張 credit 上的 Atom Heart 與 members 欄上的 Uwe Schmidt 是同一人**。Discogs 藝人頁 25（Tetsu Inoue）的 realname 欄則填「井上徹」，groups 欄含 HAT、DATacide、Divination。",
+    "src": "https://api.discogs.com/artists/24"
+   },
+   {
+    "f": "Discogs 廠牌頁 4518（Daisyworld Discs）的 profile 欄寫：「Haruomi Hosono (co-founder of Yellow Magic Orchestra) directs this label. It ran from 1996 to 2013」；parent label 欄填 Cutting Edge，sublabels 欄列 Audio Sponge。同頁目錄顯示 SYDW 編號線從 SYDW-0001《Daisy World Tour》（Various，1996）開始，本張 SYDW-0002 是第二號。",
+    "src": "https://api.discogs.com/labels/4518"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1743794451）回 HAT《Tokyo - Frankfurt - New York》，trackCount 6，releaseDate 1996-12-21，copyright 欄「℗ 1996 medium」；六首曲名與曲長（510／393／415／751／553／820 秒）與 MB 兩筆逐軌相符。Cover Art Archive 的 release-group front 端點（ffc7cd85-…）實測回 200。",
+    "src": "https://itunes.apple.com/lookup?id=1743794451&country=jp&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是三個城市，內註列的正是三間錄音室：東京、法蘭克福、紐約，1995 到 1996。",
+   "六軌，最短的一首 6:33，最長的兩首各佔十二分半與十三分半。",
+   "三個人並列作曲、製作與「Created By」，連工程也是三個人分地掛。",
+   "德國盤比日本盤早了半年多；兩張碟曲序一模一樣，母帶處理地點卻寫在不同的城市。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）六軌、三人共作的長篇電子作品，曲長全在 6:33 以上，其中兩首超過十二分鐘。credit 記三人並列作曲與製作，錄音分別在三座城市的三間工作室完成、由三位工程師分地負責。Discogs 給的曲風標記是 Electronic，風格標記 Abstract、Ambient、IDM 與 Glitch。",
+  "keyTracks": [
+   "Funk Coaster",
+   "2 Gigabyte Of Joujou",
+   "Quick Esc."
+  ],
+  "status": "full",
+  "yearVerified": "年份 1996 站得住，**但「1996 年的哪一天」有兩個答案，而且兩個都對**：MB 的 release-group first-release-date 是 1996-05-29（德國 Rather Interesting RI 037），日本 Daisyworld 盤是 1996-12-21（Discogs released 欄與 Apple releaseDate 一致）。卡單掛的廠牌是 Daisyworld Discs，因此**行文若要給日期，必須指明是日本盤的 1996-12-21**，不得把德國盤的 5 月 29 日寫成本卡的發行日，也不得含糊寫成「1996 年年底問世」而略去它其實五月就在德國出過。",
+  "notes": "【互斥分派——Daisyworld 廠牌線歸本卡】本組有三張 Daisyworld Discs 卡（本卡 SYDW-0002、World Standard《Country Gazette》SYDW-0006、Pacific 231《ミヤシロ》SYDW-0011）。**「Daisyworld 是誰主持的、開了多久、母公司是誰、SYDW 編號線從哪開始」這條廠牌線只准本卡寫**；另外兩張禁用，只能寫自己的編號與 credit。\n【互斥分派——細野晴臣的角色線不歸本卡】細野晴臣在本組出現兩次（本卡的三人組成員之一、World Standard《Country Gazette》的 Producer 與 Guitar）。**「細野晴臣作為製作人的角色」這條線歸 World Standard《Country Gazette》**；本卡只能寫「Discogs 廠牌頁說他主持 Daisyworld」與「本張 credit 上他與另外兩人並列 Producer／Music By／Created By」這兩個欄位值，**不得展開他的生平、YMO 或其他作品**。\n【本卡特有限制】(1) 原盤六軌，Discogs 兩筆、MB 兩筆、Apple 全給六，可以斷言。(2) **第 109 條的直接踩點**：Discogs 德國盤 release 49668 的內註裡有一行「Limitation: 1000」，**嚴禁寫入**（壓量／份數／稀有度／二手價一律不得寫）；同一段內註裡的錄音室與工程資訊可以用。(3) 曲名〈Kubrick〉與既有導演同名、〈2 Gigabyte Of Joujou〉是造詞，**不得由曲名推論致敬、取材或出處**（第 110 條）。(4) 兩張盤的內註對母帶處理地點記載不同（日本盤 Hitokuchizaka Studio／德國盤 SEL I/S/C），**不得挑一個當定論**，要寫就兩個都寫並註明各自出處。(5) Atom Heart／Uwe Schmidt 是同一人（Discogs 藝人頁 realname 欄直記），不得寫成兩個人；但**不得**由此展開他的其他化名（他在 Discogs 上的別名欄有數十項，與本卡無關）。\n【全批禁令】第 109 條、第 145 條、第 40／80 條（ja 維基〈デイジーワールド・ディスク〉查無條目、〈細野晴臣〉條目的相關段落未經核對，一律不採用）照舊適用。"
+ },
+ {
+  "key": "desc2:Masaaki Kikuchi|Formula",
+  "artist": "Masaaki Kikuchi",
+  "album": "Formula",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-011，日本，CD 一張標 Album，released 欄 1997-03-00）的內註只有一行，而且精確到日：「Mastered at ALTOKI STUDIO 1997.2.1.」",
+    "src": "https://api.discogs.com/releases/322544"
+   },
+   {
+    "f": "同一份原盤曲目十三軌與曲長：1.〈Eurodin〉9:52／2.〈Rhythmy〉4:11／3.〈Nemnanine〉1:10／4.〈Benzalin〉8:20／5.〈Silece〉3:20／6.〈Rohypnol〉4:14／7.〈Symplex〉6:15／8.〈Balance〉5:52／9.〈Condition〉3:40／10.〈Tranquilax〉3:46／11.〈Narsis〉7:30／12.〈Metazepam〉1:29／13.〈Lendormim〉3:31。",
+    "src": "https://api.discogs.com/releases/322544"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Masaaki Kikuchi 掛 Producer、Mixed By 與 Written-By；**Kazunao Nagata 與 Taro Nijikama 兩人並列 Compiled By**；Kazunao Nagata 另掛 Mastered By；SLP Designs 掛 Artwork。公司欄只有一項：母帶製作於 Altoki Studio。",
+    "src": "https://api.discogs.com/releases/322544"
+   },
+   {
+    "f": "MusicBrainz release-group 2fe8b21a-4ba0-48ca-afa3-8f2f1e3e0903：標題《FORMULA》，artist-credit「Masaaki Kikuchi」（羅馬拼音），first-release-date 1997-03，primary-type Album，secondary-types 空；轄下只有一筆 release，1997-03／JP／Zero Gravity／ZGV-011，共十三軌，曲長依序 592／251／70／500／200／254／375／352／220／226／450／89／211 秒。兩個資料庫都給十三軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2fe8b21a-4ba0-48ca-afa3-8f2f1e3e0903&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1144821338）回《Formula》，trackCount 13，releaseDate 1997-03-10，copyright 欄「℗ ZERO GRAVITY」，十三首曲名與 Discogs／MB 相符（末軌 Apple 拼成〈Lendormin〉、Discogs 拼〈Lendormim〉）。**Apple 把掛名寫成漢字「菊池雅晃」（池），Discogs 藝人頁的 realname 欄寫的是「菊地雅晃」（地）——同一個人在兩個服務上的漢字第二字不同。**",
+    "src": "https://itunes.apple.com/lookup?id=1144821338&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs 藝人頁 168880（Masaaki Kikuchi）：realname 欄「菊地雅晃」，profile 欄記「Born: September 1, 1968, Tokyo Japan / Nephew of Masabumi Kikuchi」；groups 欄列 Dub Sonic Roots、Masayasu Tzboguchi Trio、Fan Boy There、Kikuchi Art Quartet、Travel Through Time And Texture、Tobi-Atama、Masabumi Kikuchi The Slash Trio；name variations 含「菊地雅晃」「菊地雅晃スターマイン」。",
+    "src": "https://api.discogs.com/artists/168880"
+   },
+   {
+    "f": "同一位當事人在同一條編號線上的前一號是合作盤：Zero Gravity ZGV-010《Live At Uplink Factory November.3.1996》（1997-02，Dub Sonic Roots Meets Nerve Net Noise），內註寫「Live recording \"NOTEKU2\" at Uplink Factory 1996.11.3 / Mastered at Altoki Studio 1997.1.6」，credit 上 Masaaki Kikuchi 掛 Bass [Wood]、Electronics——**他在那張碟上拉的是低音提琴**。",
+    "src": "https://api.discogs.com/releases/323475"
+   },
+   {
+    "f": "同年他另有一張以低音提琴為主的碟：Soup-Disk soup004CD《Bass Sonority -夜弦響-》（1997，Ishimitu Production／Masaaki Kikuchi），credit 記 Masaaki Kikuchi 掛 Double Bass [Wood Bass Played By]、Kazunao Nagata 掛 Mastered By。",
+    "src": "https://api.discogs.com/releases/5702152"
+   },
+   {
+    "f": "Discogs master 729115 底下兩個版本：release 322544（Zero Gravity ZGV-011，日本，1997，CD）與 release 745689（Dolor Del Estamago，無編號，年份欄 0，CDr，**格式描述欄標 Unofficial Release**）。",
+    "src": "https://api.discogs.com/masters/729115/versions?per_page=100"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（2fe8b21a-…）實測回 404，此 release-group 下沒有封面圖。Discogs 廠牌目錄頁記本張編號 ZGV-011 的前後號：ZGV-010《Live At Uplink Factory November.3.1996》（1997）與 ZGV-012 Trio Rakant《Kokorosususu》（1997）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   }
+  ],
+  "hookCandidates": [
+   "內註只有一行，卻寫到日：母帶做於 1997 年 2 月 1 日，碟在同年三月出。",
+   "credit 上有兩個人並列「Compiled By」——這張碟的曲目是被兩個人一起挑出來的。",
+   "十三軌從 1:10 到 9:52，最短與最長差了將近九倍。",
+   "同一位當事人在前一號的合作盤上拉的是低音提琴；同年他還有一張以低音提琴為名的碟。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十三軌的獨奏電子作品，長度分布極散：〈Nemnanine〉1:10 與〈Metazepam〉1:29 是兩段短片段，〈Eurodin〉9:52、〈Benzalin〉8:20、〈Narsis〉7:30 則各自撐開。credit 記全碟由一人寫作、混音與製作，另有兩人並列選曲。Discogs 給的曲風標記是 Electronic、風格標記 Experimental。",
+  "keyTracks": [
+   "Eurodin",
+   "Benzalin",
+   "Narsis"
+  ],
+  "status": "full",
+  "yearVerified": "1997 站得住，且有月：Discogs released 欄 1997-03-00、MB first-release-date 1997-03、MB 唯一一筆 release 的 date 1997-03，三處一致，可以斷言 1997 年 3 月。Apple 另給 1997-03-10（到日），比其他三處細一級但不衝突；要寫到日必須註明那是 Apple 的值。內註的「1997.2.1」是**母帶日期**，不是發行日。",
+  "notes": "【互斥分派】Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，本卡禁用。**「Masaaki Kikuchi 這個人的樂器身分（低音提琴／電子）與跨編號線的三張碟」這條線歸本卡**。\n【本卡最重要的行文限制——第 110 條】十三首曲名裡有一整批是**藥名形狀的詞**（〈Eurodin〉〈Benzalin〉〈Rohypnol〉〈Tranquilax〉〈Metazepam〉〈Lendormim〉）。**沒有任何來源說這張碟以藥物為主題**——內註只有一行母帶資訊，credit 欄沒有任何說明文字，MB 沒有 annotation。**嚴禁把曲名讀成藥物主題、睡眠主題或任何概念設定**，也不得說「曲名取自鎮靜劑」之類的話。行文只能照抄曲名。若下游一定要提，只能寫成「曲名是一串造詞」這種不做斷言的描述。\n【本卡的身分陷阱——漢字兩種寫法】Apple 寫「菊池雅晃」（池）、Discogs realname 欄寫「菊地雅晃」（地）、MB artist-credit 只有羅馬拼音「Masaaki Kikuchi」。**三處給了三種寫法，沒有一處可以當定本**。卡片掛名採 MB 的羅馬拼音（卡單即如此），**行文一律不得出現漢字寫法**，也不得斷言哪一種是對的。（第 141 條附二的同構情形：兩個資料庫給不同值時兩個都不填。）\n【本卡的另一個限制】Discogs 藝人頁 profile 說他是 Masabumi Kikuchi 的姪子——**這只能寫成「Discogs 藝人頁說」**，不得升級成該來源自己的權威宣稱，也不得由此展開那位長輩的來歷（第 128 條）。\n【原盤軌數】十三軌，Discogs、MB、Apple 三處一致，可以斷言。master 版本頁上另一筆標 Unofficial Release 的 CDr 年份欄是 0（無年份），**不得**拿它的存在推論任何流通狀況（第 109 條）。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Trio Rakant|Kokorosususu",
+  "artist": "Trio Rakant",
+  "album": "Kokorosususu",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-012，日本，CD 一張，格式欄的 descriptions 是空的，released 欄 1997-03-00）的內註把團的分工與獻辭都寫出來了：「Trio Rakant: / Akaiwa (All Sounds) / God. Nagato. F (All Comments) / Composed, Compiled, Mixed and Recorded at Black Hole / This compact disc is in tribute to [Toru Takemitsu] (1930-1996)」。",
+    "src": "https://api.discogs.com/releases/322554"
+   },
+   {
+    "f": "內註裡那位受獻者的 Discogs 藝人頁（115467）realname 欄填「武満 徹 (たけみつ とおる Takemitsu Tōru)」，profile 欄記「Composer, born October 8, 1930, died February 20, 1996, both in Tokyo.」——與內註寫的生卒年 (1930-1996) 相符，而他過世的 1996 年 2 月，正是本張出版的前一年。",
+    "src": "https://api.discogs.com/artists/115467"
+   },
+   {
+    "f": "同一份原盤曲目十軌與曲長：1.〈Into The Ear〉13:01／2.〈...And Cold Rain (Dec.1.1996)〉5:13／3.〈Train L〉10:26／4.〈Weekly Fascism〉4:27／5.〈Black Horse In The Dark〉6:42／6.〈Pure Silence Space (Unruffled)〉2:06／7.〈Ocilator Meets Cunt〉5:41／8.〈Silver Mountain〉4:55／9.〈Playing With A.Bao.A.Qu〉8:36／10.〈Echo From Far East〉5:50。",
+    "src": "https://api.discogs.com/releases/322554"
+   },
+   {
+    "f": "同一份原盤的逐軌客席 credit：第 1 軌與第 10 軌掛 Masahiko Okura 的 Alto Saxophone，第 3 軌與第 8 軌掛 Jiro Sueoka 的 Featuring [Guitar Loop And Treatment]，第 10 軌另掛 Ryo Suda 的 Bass。逐項數過：十軌裡有四軌帶客席演奏 credit（第 1、3、8、10 軌），其餘六軌沒有。",
+    "src": "https://api.discogs.com/releases/322554"
+   },
+   {
+    "f": "同一份原盤的其餘 credit：Akaiwa 掛 Composed By、Compiled By、Mixed By 與 Recorded By；Trio Rakant 掛 Producer；Kazunao Nagata 掛 Executive-Producer 與 Mastered By；God Nagato F. 掛 Liner Notes；Rie Oochi 掛 Photography By；**美術由 SLP Designs 與其兩位具名成員 Ryo Miyoshi、Yuusuke Simiz 共同掛名**。公司欄只有一項：母帶製作於 Altoki Studio。",
+    "src": "https://api.discogs.com/releases/322554"
+   },
+   {
+    "f": "MusicBrainz release-group a8b3fb92-e005-4211-975f-b9501235f12b：標題《Kokorosususu》，artist-credit「TRIO RAKANT」（全大寫），first-release-date 1997-03，primary-type Album，secondary-types 空；轄下只有一筆 release，1997-03／JP／Zero Gravity／ZGV-012，共十軌，曲長依序 784／314／629／270／403／129／344／299／519／351 秒。兩個資料庫都給十軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a8b3fb92-e005-4211-975f-b9501235f12b&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 280526（Trio Rakant）的 members 欄有兩個人：God Nagato F. 與 Yusuke Aikawa；藝人頁 166051（Akaiwa）的別名欄則列 Pacific Child、Yusuke Aikawa、Stone Free (16)——**內註寫的 Akaiwa 與 members 欄寫的 Yusuke Aikawa 是同一個 Discogs 實體**。藝人頁 870135（God Nagato F.）的 groups 欄只有 Trio Rakant 一項，name variations 作「God. Nagato. F」。",
+    "src": "https://api.discogs.com/artists/166051"
+   },
+   {
+    "f": "SLP Designs 這個美術掛名在本組多張同編號線的碟上重複出現：Suzukiski《Kamakura》（ZGV-001）、Temdendam Suay《Sounzer Paranoun》（ZGV-003）、Strange Garden《For Speaker System》（ZGV-004）、Tagomago《Flower Instrumental》（ZGV-007）、Masaaki Kikuchi《Formula》（ZGV-011）、Tamaru《fuyu ni katarite》（ZGV-016）、Kazunao Nagata《The World Of Electronic Sound 4》（ZGV-020）、Tamaru《夢の途中》（ZGV-022）、Toshimaru Nakamura《No-Input Mixing Board》（ZGV-026）的 credit 欄都掛它；Discogs 廠牌目錄頁可逐張回查這些編號。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（a8b3fb92-…）實測回 200，封面有圖。",
+    "src": "https://coverartarchive.org/release-group/a8b3fb92-e005-4211-975f-b9501235f12b/front"
+   },
+   {
+    "f": "Apple 日本店面以「Trio Rakant」查專輯，resultCount 回 0，沒有任何一筆結果；本張在 Apple 拿不到試聽。",
+    "src": "https://itunes.apple.com/search?term=Trio%20Rakant&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "內註把團的分工寫成兩行：一個人負責「所有聲音」，另一個人負責「所有評論」。",
+   "碟上印著一句獻辭，獻給前一年過世的一位作曲家，連生卒年都印上去。",
+   "第 2 軌的曲名括號裡直接放了一個日期：Dec.1.1996。",
+   "十軌裡有四軌帶客席演奏 credit——中音薩克斯風兩軌、吉他 loop 兩軌、貝斯一軌。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十軌的電子與即興混合作品：credit 記主體由一人包辦作曲、錄音、混音與選曲，另有中音薩克斯風、吉他 loop 與貝斯三位客席分掛四軌。曲長從〈Pure Silence Space (Unruffled)〉2:06 到〈Into The Ear〉13:01，另有〈Train L〉10:26 與〈Playing With A.Bao.A.Qu〉8:36 兩首長曲。Discogs 給的曲風標記是 Electronic、風格標記 Experimental。",
+  "keyTracks": [
+   "Into The Ear",
+   "Train L",
+   "Echo From Far East"
+  ],
+  "status": "full",
+  "yearVerified": "1997 站得住，且有月：Discogs released 欄 1997-03-00、MB first-release-date 1997-03、MB 唯一一筆 release 的 date 1997-03，三處一致，可以斷言 1997 年 3 月。內註獻辭裡的「(1930-1996)」與第 2 軌曲名裡的「Dec.1.1996」都不是發行資訊，不得誤用為年份。Apple 無此碟，沒有第三方日期可比。",
+  "notes": "【互斥分派】Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，本卡禁用。**「SLP Designs 這個美術掛名貫穿整條 ZGV 編號線」這條線歸本卡**，其餘 Zero Gravity 卡只能寫自己 credit 欄上那一筆。**「Akaiwa／Yusuke Aikawa 這個人跨掛名」這條線也歸本卡**（本張的 credit 最完整）；Strange Garden《For Speaker System》那張只寫它自己 credit 欄上的職務。**「Jiro Sueoka 跨掛名」歸 Temdendam Suay《Sounzer Paranoun》**，本卡只寫本張第 3、8 軌的 Featuring 欄。\n【本卡特有限制】(1) 原盤十軌，兩個資料庫一致，可以斷言。(2) **獻辭可以寫，但只能寫成唱片內註上印的那一句**（「This compact disc is in tribute to…(1930-1996)」）。**嚴禁**由這句獻辭推論音樂內容、風格繼承、致敬手法或任何與那位作曲家作品的關係（第 110 條）——沒有任何來源說這張碟在音樂上與他有關。(3) 「十軌裡四軌帶客席 credit」這個歸納已逐軌數過軌號（第 1、3、8、10）（第 135 條）。(4) 曲名〈Echo From Far East〉〈Silver Mountain〉〈Black Horse In The Dark〉〈Playing With A.Bao.A.Qu〉帶地理與神話詞彙，**不得由曲名推論出處、取材或致敬對象**（第 110 條）。(5) 第 2 軌曲名裡的日期「Dec.1.1996」是曲名的一部分，**不得**當成該軌的錄音日期——內註只寫錄音地（Black Hole），沒有寫日期。\n【缺口】兩位成員（Akaiwa／God Nagato F.）都挖不到有引註的生平；內註寫的錄音地「Black Hole」在 Discogs 公司欄裡沒有對應登錄。行文不得補。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Nerve Net Noise|This Island Earth",
+  "artist": "Nerve Net Noise",
+  "album": "This Island Earth",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-013，日本，CD 一張，格式欄的 descriptions 是空的，released 欄 1997-04-00）只有五軌，而且長度極不均：1.〈Plane〉10:43／2.〈Storm〉9:05／3.〈Mountain〉12:11／4.〈Earth〉3:00／5.〈Gagaku〉32:52。**這一筆的 credit 欄、公司欄與內註三欄全都是空的**，Discogs 上沒有任何製作人員、錄音室或版權登錄。",
+    "src": "https://api.discogs.com/releases/356138"
+   },
+   {
+    "f": "MusicBrainz release-group 5816194c-e6f3-42ba-917a-6d19c0f39d8e：標題《This Island Earth》，artist-credit「Nerve Net Noise」，first-release-date 1997-04，primary-type Album，secondary-types 空；轄下只有一筆 release，1997-04／JP／Zero Gravity／ZGV-013，共五軌，曲長依序 643／545／731／180／1972 秒。兩個資料庫都給五軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5816194c-e6f3-42ba-917a-6d19c0f39d8e&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1134361409）回 Nerve Net Noise《THIS ISLAND EARTH》，trackCount 5，releaseDate 1997-04-15，copyright 欄「℗ ZERO GRAVITY」，五首曲長 648／550／736／185／1973 秒，與 MB、Discogs 三處相符——**三個資料庫給同一個軌數與同一組曲長，本張的軌數沒有爭議**。",
+    "src": "https://itunes.apple.com/lookup?id=1134361409&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs 藝人頁 99917（Nerve Net Noise）的 members 欄有兩個人：Tsuyoshi Nakamaru 與 Hiroshi Kumakiri；name variations 欄另有「Nerve Net Noises」；urls 欄兩條，其一是他們自己的網站 yk.rim.or.jp/~kumax/nnn/。",
+    "src": "https://api.discogs.com/artists/99917"
+   },
+   {
+    "f": "該團自己的網站（只供 HTTP，HTTPS 端口實測不回應；HTTP 實測 200）首頁的自我介紹只有一行英文：「noize music unit with orignal synthesizer」（原文如此，orignal 為原拼），另附三行日文提問：「ノイズ音楽って何だ？／シンセサイザーの本質とは？／世界の成り立ちを探るには、どうしたら良いのだ？」",
+    "src": "http://www.yk.rim.or.jp/~kumax/nnn/"
+   },
+   {
+    "f": "同一網站的「メンバー紹介（MEMBERS）」頁把兩人分別寫成：KUMAX——「TV番組、ゲームなどのCGを制作。美術活動の一環としてシンセサイザーを作り始める。」（製作電視節目與遊戲的 CG，作為美術活動的一環開始製作合成器）；TAGOMAGO——「テクノやアンビエントのライブを数多くこなす。平面作品など現代アートの活動も続けている。」（做過大量 techno 與 ambient 的現場，同時持續平面作品等當代藝術活動）。",
+    "src": "http://www.yk.rim.or.jp/~kumax/nnn/html/member.htm"
+   },
+   {
+    "f": "同一網站另有一頁題為「システム・ブルーの誕生」，講其中一位成員自製類比合成器的來歷：他認為「アナログシンセサイザーのほとんどはムーグ・シンセサイザーを手本としているが、その音づくりの仕組みは、物事をいくつもの要素に分解して考える、という一時代まえの還元主義的な産物だ」（多數類比合成器以 Moog 為範本，而那套音色構成法是把事物拆成若干要素來思考的、上一個時代的還原論產物），因此重新從「そもそも音とはなんだろう。空気の振動。」問起；文末寫「彼は名付けた。・・・ システム・ブルー ・・・」。",
+    "src": "http://www.yk.rim.or.jp/~kumax/nnn/html/blue.htm"
+   },
+   {
+    "f": "那件自製樂器的名字直接印在同編號線前一號的 credit 上：Zero Gravity ZGV-010《Live At Uplink Factory November.3.1996》（1997-02，Dub Sonic Roots Meets Nerve Net Noise）的 credit 欄記 Hiroshi Kumakiri 掛 Electronics [System Blue, System Blue Wink]、Tsuyoshi Nakamaru 掛 Electronics [System Rouge]；該筆內註寫「Live recording \"NOTEKU2\" at Uplink Factory 1996.11.3 / Mastered at Altoki Studio 1997.1.6」。",
+    "src": "https://api.discogs.com/releases/323475"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/304258/releases）記本張編號 ZGV-013 的前後號：ZGV-012 Trio Rakant《Kokorosususu》（1997）與 ZGV-014 Arche Type《Sky-Scraul-Space (Movie's 1992-1995)》（1997）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（5816194c-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/5816194c-e6f3-42ba-917a-6d19c0f39d8e/front"
+   }
+  ],
+  "hookCandidates": [
+   "五軌的碟，最後一軌 32:52，比前面四軌加起來還長；第四軌卻只有三分鐘。",
+   "團名底下兩個人：一個做電視與遊戲的 CG、把做合成器當成美術活動的延伸，一個同時在做平面作品。",
+   "他們自製的樂器有名字，而且直接印進了另一張碟的 credit 欄：System Blue、System Blue Wink、System Rouge。",
+   "自製那台機器的理由寫在他們自己的網頁上：他覺得以 Moog 為範本的音色構成法是「上一個時代的還原論產物」。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）五軌的二人組電子作品，結構極不對稱：前三軌各九到十二分鐘，第四軌只有三分鐘，末軌 32:52 一首就佔掉大半張碟。credit 在 Discogs 上全空，但同編號線前一號的 credit 顯示兩人各自使用自己命名的自製類比電子器材。Discogs 給的曲風標記是 Electronic、風格標記 Noise。",
+  "keyTracks": [
+   "Plane",
+   "Mountain",
+   "Gagaku"
+  ],
+  "status": "full",
+  "yearVerified": "1997 站得住，且有月：Discogs released 欄 1997-04-00、MB first-release-date 1997-04、MB 唯一一筆 release 的 date 1997-04，三處一致，可以斷言 1997 年 4 月。Apple 另給 1997-04-15（到日），比其他三處細一級但不衝突；要寫到日必須註明那是 Apple 的值。",
+  "notes": "【互斥分派】Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，本卡禁用。**「Tsuyoshi Nakamaru 一人跨三個掛名」這條身分線歸 Tagomago《Prelude for Afternoon》**，本卡只能寫「Discogs 藝人頁的 members 欄有兩個人」與「該團自己的網頁怎麼介紹這兩人」，**不得**寫他在 Tagomago 名下的作品。**本卡分到的線是「自製合成器 System Blue／System Rouge」**——這條其他卡不得用（Tagomago 兩張卡也不行）。\n【本卡特有限制】(1) 原盤五軌，Discogs、MB、Apple 三處一致，可以斷言。(2) **樂團自述只能寫成「他們自己的網頁說」**（第 128 條）：那頁講合成器設計理念的文字是成員的自述，不是第三方查證，行文不得升級成「事實上多數類比合成器如何如何」。(3) **曲名〈Gagaku〉（雅樂）是本卡最大的地雷**：沒有任何來源說這一軌與日本雅樂有關，**嚴禁由曲名推論取材、引用、翻奏或任何音樂內容**（第 110 條）。同理〈Plane〉〈Storm〉〈Mountain〉〈Earth〉四個自然／幾何名詞也不得讀成組曲、主題或概念設定。盤名《This Island Earth》與既有科幻電影同名，**不得連結**。(4) Discogs 這一筆的 credit 欄全空，**只能寫成「Discogs 條目上沒有登錄製作人員」**，不得寫成「這張唱片沒有印 credit」（第 136 條）。\n【第 133 條的適用】該團網站只供 HTTP（HTTPS 實測不回應、HTTP 實測 200），依第 133 條可用，src 保留 http。\n【缺口】本張本身查不到錄音日期、錄音室、製作人員；ZGV-010 那筆的 credit 是**另一張碟**的，只能用來證明「這兩人使用自己命名的器材」，**不得**拿它的錄音日期、現場資訊或參與者名單套到本張上。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Tamaru|Fuyu ni Katarite",
+  "artist": "Tamaru",
+  "album": "Fuyu ni Katarite",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-016，日本，CD 一張標 Album，released 欄 1997-12-00）的內註只有一行：「Recorded between August and October 1997.」曲目只有四軌，而且四軌長度接近：1.〈Epilogue〉10:01／2.〈Prologue〉11:21／3.〈Epilogue〉12:04／4.〈Anecdote〉11:00——**第 1 軌與第 3 軌同名，都叫〈Epilogue〉，而〈Prologue〉排在第 2 軌**。",
+    "src": "https://api.discogs.com/releases/322573"
+   },
+   {
+    "f": "同一份原盤 credit 欄只有三筆：Tamaru 掛 Producer、Written-By 與 Mixed By；Kazunao Nagata 掛 Mastered By；SLP Designs 掛 Artwork。公司欄只有一項：母帶製作於 Transonic Studio。沒有客席演奏者，也沒有錄音室的登錄。",
+    "src": "https://api.discogs.com/releases/322573"
+   },
+   {
+    "f": "MusicBrainz release-group 8e06c951-87b6-3daf-86e1-e6c32f88dbf6：標題在 MB 寫成全小寫的《fuyu ni katarite》，artist-credit「TAMARU」（全大寫），first-release-date 1997-12，primary-type Album，secondary-types 空；轄下只有一筆 release，1997-12／JP／Zero Gravity／ZGV-016，共四軌，曲長依序 609／688／731／661 秒；MB 同樣把第 1、3 軌都收成〈epilogue〉。兩個資料庫都給四軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8e06c951-87b6-3daf-86e1-e6c32f88dbf6&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1134367871）回《fuyu ni katarite》，trackCount 4，releaseDate 1997-12-01，copyright 欄「℗ ZERO GRAVITY」；**Apple 為了區分兩首同名曲，把它們寫成〈epilogue (1)〉與〈epilogue (2)〉**，曲長 609／688／731／661 秒與 MB 完全相同。掛名在 Apple 寫成平假名「たまる」。",
+    "src": "https://itunes.apple.com/lookup?id=1134367871&country=jp&entity=song"
+   },
+   {
+    "f": "當事人在 Improvised Music from Japan 網站上的 profile 頁（該站只供 HTTP，HTTPS 端口實測不回應）寫：「Born in 1963. Around 1990, Tamaru started creating and performing sound construction works and improvisational expression. He released three CDs of electronic music on the Zero Gravity label. He also has his own independent labels, 1040 and 1050, which have so far released four CDs by him and other musicians. His live concert performances feature drone-oriented improvisation on bass guitar.」頁尾記「Last updated: December 20, 2001」。",
+    "src": "http://www.japanimprov.com/tamaru/profile.html"
+   },
+   {
+    "f": "Discogs 藝人頁 169300（Tamaru）：realname 欄「Shuichi Tamaru」，groups 欄列 Installing 與 Zero Gravity Grand Orchestra；profile 欄的文字與上述 Improvised Music from Japan 的 profile 一字不差。",
+    "src": "https://api.discogs.com/artists/169300"
+   },
+   {
+    "f": "上述「三張 Zero Gravity 的 CD」逐張對得上 Discogs 廠牌目錄：ZGV-008《Karmaless》（1996）、ZGV-016 本張（1997）、ZGV-022《夢の途中 = Yume No Tochu》（1998），三年各一張。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "前一張 ZGV-008《Karmaless》（release 616123，1996）在結構上與本張同型：同樣四軌，四軌長度同樣接近（〈Zoom I〉13:51／〈Zoom II〉13:52／〈Zoom III〉13:47／〈Zoom IV〉13:55），內註逐首列出錄音日——「Recorded on September 22, 1996 (1); September 23, 1996 (2); September 29, 1996 (3); and October 12, 1996 (4).」",
+    "src": "https://api.discogs.com/releases/616123"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁記本張編號 ZGV-016 的前後號：ZGV-015 Various《Mixed \"0\"》（1997）與 ZGV-017 Strange Garden《Mumbo Jumbo (Riutal Of The Back Yard)》（1997）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（8e06c951-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/8e06c951-87b6-3daf-86e1-e6c32f88dbf6/front"
+   }
+  ],
+  "hookCandidates": [
+   "四軌，最短 10:01、最長 12:04——一張碟被切成四塊幾乎等長的東西。",
+   "曲目表上〈Prologue〉排在第二軌，前後各有一首同名的〈Epilogue〉；Apple 只好替它們加上編號才分得開。",
+   "credit 只有三筆：一個人寫、混、製作，一個母帶，一個美術。",
+   "他自己的介紹頁把現場演出寫成「以貝斯做偏向 drone 的即興」。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）四軌的獨奏長篇作品，四軌長度都落在 10:01 到 12:04 之間，全碟沒有短曲。credit 記寫作、混音與製作同屬一人，沒有任何客席演奏者。內註記錄音在 1997 年 8 月到 10 月之間完成。Discogs 給的曲風標記是 Electronic、風格標記 Experimental。",
+  "keyTracks": [
+   "Prologue",
+   "Anecdote",
+   "Epilogue"
+  ],
+  "status": "full",
+  "yearVerified": "1997 站得住，且有月：Discogs released 欄 1997-12-00、MB first-release-date 1997-12、MB 唯一一筆 release 的 date 1997-12，三處一致，可以斷言 1997 年 12 月。Apple 另給 1997-12-01（到日），細一級但不衝突。內註的「August and October 1997」是**錄音期間**，不是發行期間，行文必須分開。",
+  "notes": "【互斥分派】Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，本卡禁用。SLP Designs 美術線歸 Trio Rakant《Kokorosususu》，本卡禁用。\n【同掛名兩張卡的分工】本組有兩張 Tamaru（本卡 ZGV-016／1997、《夢の途中》ZGV-022／1998）。**當事人的身分線（1963 年生、1990 年前後開始、貝斯 drone 即興、自營 1040 與 1050 兩家廠牌、Zero Gravity 三張碟）歸本卡**；《夢の途中》那張禁用這一段，只能寫它自己的 credit 與內註。反過來，**「四軌等長」這個結構特徵在本卡與《Karmaless》的對照裡寫，《夢の途中》那張的等長現象要用它自己的角度寫**（那張四軌各 15:00，是另一種形狀）。\n【本卡特有限制】(1) 原盤四軌，Discogs、MB、Apple 三處一致，可以斷言。(2) **兩首同名〈Epilogue〉是原盤就有的事實**（Discogs 與 MB 都各收兩筆同名軌），不是資料錯誤；Apple 的〈epilogue (1)〉〈epilogue (2)〉是 Apple 自己加的編號，**行文不得把 Apple 的編號當成原盤曲名**。(3) 〈Prologue〉排在〈Epilogue〉之後這件事可以寫成曲序的原始值，**但不得由此推論作者的意圖、敘事結構或任何概念設計**（第 110 條的同型風險）——沒有任何來源解釋這個排法。(4) Improvised Music from Japan 的 profile 與 Discogs profile 是同一段文字，**只能算一個來源的兩處落點**，行文不得說「多個來源都記載」。(5) 該 profile 說「三張 Zero Gravity 的 CD」，本研究已逐張對回廠牌目錄（ZGV-008／016／022）（第 135 條）。\n【第 133 條的適用】japanimprov.com 只供 HTTP（HTTPS 實測不回應、HTTP 實測 200），依第 133 條可用，src 保留 http。\n【缺口】本張沒有錄音室的登錄（只有母帶室與錄音月份區間）。第 136 條：條目上沒有不等於唱片上沒有。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Tagomago|Prelude for Afternoon",
+  "artist": "Tagomago",
+  "album": "Prelude for Afternoon",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25019，日本，CD 一張標 Album，發行年 1997）十二軌，其中四首用日文曲名，末軌只有四秒：1.〈World Wide Wife〉7:34／2.〈Hiromi Feeling〉2:33／3.〈Ahh〉3:04／4.〈インドと私〉3:25／5.〈擬似恋愛〉6:35／6.〈Jazz Effect〉5:35／7.〈Shock The Giraffe〉3:45／8.〈Foot Steps〉5:39／9.〈Instant Noise〉7:10／10.〈キッチン〉1:43／11.〈Jungle Train〉9:38／12.〈だめだよ〉0:04。",
+    "src": "https://api.discogs.com/releases/409431"
+   },
+   {
+    "f": "同一份原盤 credit 欄的職務比同掛名前一張碟多出一整排實體樂器：Tsuyoshi Nakamaru 掛 Written-By、Mixed By、**Programmed By、Voice、Electric Bass、Keyboards**；Kazunao Nagata 掛 Producer；SLP Designs 掛 Artwork。公司欄只有 Transonic Records 的 ℗ 與 ©，沒有錄音室或母帶室的登錄。",
+    "src": "https://api.discogs.com/releases/409431"
+   },
+   {
+    "f": "MusicBrainz 的對應 release（2c10e159-4562-4736-922d-38c2cbe2a894，release-group 0cad2272-20a4-4990-8d9f-abe8ae6999b6）：1997／JP／TRANSONIC RECORDS／TRS-25019，共十二軌，曲長依序 454／153／184／205／395／335／225／339／430／103／578／4 秒——**末軌四秒這一點兩個資料庫一致**。release-group 的 artist-credit 是「TAGOMAGO」，first-release-date 1997，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release/2c10e159-4562-4736-922d-38c2cbe2a894?inc=recordings+labels+artist-credits&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 166017（Tsuyoshi Nakamaru）：realname 欄「仲丸 強 (Tsuyoshi Nakamaru)」，別名欄「Tagomago」，**groups 欄列 Nerve Net Noise 與 Toki-Meki Science**；name variations 有六種寫法（Nakamaru Tsuyoshi、T. Nakamaru、T. Nakamura、Tsuyoshi Nakamaru (Tagomago)、Tsuyoshi Nakamura 等）——其中兩種把姓氏拼成 Nakamura，與另一位當事人的姓氏同形。Discogs 藝人頁 166016（Tagomago）的 realname 欄則反向填「Tsuyoshi Nakamaru」。",
+    "src": "https://api.discogs.com/artists/166017"
+   },
+   {
+    "f": "Nerve Net Noise 自己的網站「メンバー紹介」頁把 TAGOMAGO 列為該團兩位成員之一，介紹寫「テクノやアンビエントのライブを数多くこなす。平面作品など現代アートの活動も続けている。」（做過大量 techno 與 ambient 的現場，同時持續平面作品等當代藝術活動）。",
+    "src": "http://www.yk.rim.or.jp/~kumax/nnn/html/member.htm"
+   },
+   {
+    "f": "同掛名前一張碟在編制上是另一種形狀：Zero Gravity ZGV-007《FLOWER INSTRUMENTAL》（1996-10）只有九軌，其中六軌超過七分鐘、最長一軌 16:52，credit 上 Tsuyoshi Nakamaru 只掛 Written-By、Mixed By 與 Producer，沒有任何實體樂器。",
+    "src": "https://api.discogs.com/releases/326007"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）記同掛名在這個集團裡的碟：Zero Gravity ZGV-007《Flower Instrumental》（1996）、Transonic TRS-25019 本張（1997）、Transonic TRS25026《Kogarashi No Etude》（1998）、TFCC-87625《A Sleeping Bee》（1999）、MTCT-1009《1996-1998》（2000，格式標 CD, Comp）、DDCL-1001《ASAP》（2001）。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁記本張編號 TRS-25019 的前後號都是同一個掛名的碟：TRS-25018 Fantastic Explosion《Fantastic Explosion》（1997）與 TRS-25020 Fantastic Explosion《Live》（1997）。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Apple 日本店面以「Tagomago Prelude for Afternoon」查專輯，resultCount 回 0，沒有任何一筆結果。",
+    "src": "https://itunes.apple.com/search?term=Tagomago%20Prelude%20for%20Afternoon&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（0cad2272-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/0cad2272-20a4-4990-8d9f-abe8ae6999b6/front"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡最長 9:38、最短 0:04——末軌只有四秒，而且兩個資料庫都這麼記。",
+   "同一個人的前一張碟 credit 只有寫、混、製作三項；這一張多出了人聲、電貝斯與鍵盤。",
+   "十二首裡有四首用日文曲名，其餘八首用英文。",
+   "同一位當事人的姓氏在 Discogs 上有六種拼法，其中兩種把 Nakamaru 拼成 Nakamura。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十二軌的獨奏作品，曲長跨度是本組最大的一張：〈だめだよ〉0:04、〈キッチン〉1:43 是兩段極短的東西，〈Jungle Train〉9:38 與〈World Wide Wife〉7:34 則是長曲。credit 記當事人除了寫作、混音與程式之外，另掛人聲、電貝斯與鍵盤三項實體樂器。Discogs 給的曲風標記是 Electronic，風格標記 Experimental 與 Techno。",
+  "keyTracks": [
+   "World Wide Wife",
+   "擬似恋愛",
+   "Jungle Train"
+  ],
+  "status": "full",
+  "yearVerified": "1997 站得住。Discogs released 欄 1997、MB release-group first-release-date 1997、MB 唯一一筆 release 的 date 1997，三處一致，無分歧。無月份資料，不得給月份。Apple 沒有這張碟，沒有第三方日期可比。",
+  "notes": "【互斥分派——「一人跨三掛名」歸本卡】**「Tsuyoshi Nakamaru 同時是 Tagomago 與 Nerve Net Noise 的當事人、Discogs 上還有 Toki-Meki Science 的團籍、姓氏有六種拼法」這條身分線只准本卡寫**；Tagomago《Flower Instrumental》與 Nerve Net Noise《This Island Earth》兩張禁用，只能寫自己 credit 欄上的那一項。反過來，**「同一張碟二十年後原封重出」歸《Flower Instrumental》**、**「自製合成器 System Blue／System Rouge」歸《This Island Earth》**，本卡兩條都不得用。Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。\n【本卡特有限制】(1) 原盤十二軌，Discogs 與 MB 一致，可以斷言；末軌 0:04 兩邊也一致，可以寫。(2) **曲名是本卡的高風險區**：〈インドと私〉（印度與我）、〈Jungle Train〉、〈Jazz Effect〉、〈Shock The Giraffe〉、〈擬似恋愛〉——**嚴禁由曲名推論題材、地域、樂種歸屬或任何出處**（第 110 條）。特別是〈Jazz Effect〉不得寫成「有爵士元素」，〈インドと私〉不得寫成「取材印度」。行文只能照抄曲名。(3) 「credit 比前一張多出人聲、電貝斯、鍵盤」這個對照已逐項比過兩張碟的 credit 欄（第 135 條），可以寫；**但不得由此推論音樂上變得更「有機」「更像樂團」之類的性質**——沒有任何來源這樣說。(4) 掛名 Tagomago 與既有的德國搖滾專輯同名，不得連結。\n【缺口】本張沒有錄音室、錄音日期、母帶室的登錄；Apple 無此碟，試聽拿不到；CAA 無封面。第 136 條：條目上沒有不等於唱片上沒有。\n【第 133 條的適用】Nerve Net Noise 網站只供 HTTP，依第 133 條可用。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Pacific 231|Tropical Songs Gold",
+  "artist": "Pacific 231",
+  "album": "Tropical Songs Gold",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號欄寫成帶連接號的「TRS–25017」，日本，CD 一張標 Album，發行年 1997）的內註是本組最長的一段，逐條交代編制、客席與錄音：「Pacific 231 is a Musical Joint Ad–Venture of two boys, Hasumi Shigeomi & Miyake Takemasa. / * [Track 4] Extra Track with Asano Tatsuhiko. / Recorded & Mixed by: Pacific 231 at LOTUStudio, 1995–1996 (1–3, 5–8) / Asano Tatsuhiko at Studio Corne, 1996 (4) / ... / Total Time 63:49 / ... / ℗&© 1995, 1996, 1997 Transonic Records / Released in standard jewel case with 4-page insert and obi.」",
+    "src": "https://api.discogs.com/releases/226936"
+   },
+   {
+    "f": "同一份原盤曲目八軌與曲長：1.〈Traveling 231〉5:52／2.〈Jewels Of The Ocean〉7:22／3.〈Special Guide Book〉9:36／4.〈Café Équatorien (Original Mix)〉6:27／5.〈Have A Nice Trip!〉5:51／6.〈Adventures In A Tropical Temple〉12:03／7.〈The Best Of Mineral Springs〉8:54／8.〈Jewels Of The Ocean (Bon Voyage Mix)〉7:24。第 2 軌與第 8 軌是同一首的兩個版本。",
+    "src": "https://api.discogs.com/releases/226936"
+   },
+   {
+    "f": "同一份原盤的逐軌作者 credit：第 1、6 軌掛 Shigeomi Hasumi 的 Written-By，第 2、3、5、7 軌掛 Takemasa Miyake 的 Written-By，第 4 軌掛「Miyake / Asano」（Takemasa Miyake 與 Tatsuhiko Asano 兩人），第 8 軌掛「Miyake / Hasumi」（兩人）。逐項數過：八軌裡兩軌由 Hasumi 單獨掛名、四軌由 Miyake 單獨掛名、兩軌是合掛。",
+    "src": "https://api.discogs.com/releases/226936"
+   },
+   {
+    "f": "同一份原盤的其餘 credit：Kazunao Nagata 掛 Producer [Produced By] 與 Mastered By（母帶在 Altoki Studio）；Shigeomi Hasumi 掛 Directed By [Musical Direction] 與 Sound Designer(1 to 3, 5 to 8)；Takemasa Miyake 掛 Sound Designer；**Haruomi Hosono 掛 Liner Notes [Comment On Obi Strip]**、Mikado Koyanagi 掛 Liner Notes [On The Back Side Of Obi Strip]；Ryo Miyoshi 與 Yuuske Simiz 以 SLP Designs 掛 Art Direction, Design；Haruko Miyake 掛 Management。identifiers 欄記母帶刻印「TRS–25017 P01」、Mastering SID Code「IFPI L713」、Mould SID Code「IFPI 1S28」。",
+    "src": "https://api.discogs.com/releases/226936"
+   },
+   {
+    "f": "MusicBrainz 的對應 release（b02aa213-baa7-4550-b84d-fde31da44778，release-group be414d3f-ddde-473a-b69e-ba789322c81e）：1997／JP／TRANSONIC RECORDS／TRS-25017，共八軌，曲長依序 352／442／579／389／352／726／542／445 秒。release-group 標題《TROPICAL SONGS gold》（MB 把 gold 收成小寫），artist-credit「PACIFIC 231」，first-release-date 1997，primary-type Album，secondary-types 空。兩個資料庫都給八軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release/b02aa213-baa7-4550-b84d-fde31da44778?inc=recordings+labels+artist-credits&fmt=json"
+   },
+   {
+    "f": "這個掛名在 MusicBrainz 上有四個同名的藝人實體，靠 disambiguation 才分得開：Pacific 231（法國，「Pierre Jolivet’s industrial / p.e. project」）、**PACIFIC 231（日本，「Shigeomi Hasumi and Takemasa Miyake」，MBID c8c6a608-dd70-408e-9755-cc5d0c83723c）**、Pacific 231（德國，「Jörg Burger & Wolfgang Voigt; techno」）、Pacific 231（德國，「Erik Simon and Frank Bartholomai (ambient/trance)」）。本卡是其中的日本實體。",
+    "src": "https://musicbrainz.org/ws/2/artist/?query=Pacific%20231&limit=5&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 160530（Pacific 231 (3)）的 members 欄有兩個人：Shigeomi Hasumi 與 Takemasa Miyake；name variations 欄有片假名「パシフィック231」。藝人頁 543662（Shigeomi Hasumi）的 realname 欄「蓮実重臣 (Shigeomi Hasumi)」、profile 欄只有一句「Passed away on June 18, 2017.」；藝人頁 543664（Takemasa Miyake）的 name variations 含「三宅剛正」，groups 欄列 Organization 與 Pacific 231 (3)。",
+    "src": "https://api.discogs.com/artists/160530"
+   },
+   {
+    "f": "同掛名在同一集團裡的前兩張碟，本張的部分曲名可以在它們的標題上找到對應：Transonic TRS-12002《Have A Nice Trip!》（1995，格式標 CD, Mini）與 Zero Gravity ZGV-002《Tropical Songs》（1996，格式標 CD, Maxi）。本張第 5 軌就叫〈Have A Nice Trip!〉，盤名則是《Tropical Songs Gold》。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Discogs master 1385100 底下兩個版本，都是 1997 年同一家廠牌、同一個編號：release 226936（編號寫成 TRS–25017）與 release 12188513（編號寫成 TRS-25017，內註記「Mini-LP gatefold paper sleeve.」，曲長逐軌與前者差一到八秒）。兩筆裡零筆標 Unofficial Release。",
+    "src": "https://api.discogs.com/masters/1385100/versions?per_page=100"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（be414d3f-…）實測回 200，封面有圖。Apple 日本店面以「Pacific 231 Tropical Songs Gold」查專輯 resultCount 回 6，六筆全是 Is Tropical、Kygo、Prince Royce 等無關結果，沒有一筆是本張。",
+    "src": "https://itunes.apple.com/search?term=Pacific%20231%20Tropical%20Songs%20Gold&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "內註把團自我介紹成「兩個男孩的一場音樂合資冒險」，還特地標出第四軌是與第三人合作的追加曲。",
+   "八軌的作者署名精確到軌號：兩軌一人、四軌另一人、兩軌合掛。",
+   "腰帶正面與背面各印了一段別人寫的評語，兩位寫評語的人都列進了 credit。",
+   "同一個團名在 MusicBrainz 上有四個實體——法國一個、德國兩個、日本一個。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）八軌的二人組作品，曲長全在 5:51 以上，最長的〈Adventures In A Tropical Temple〉12:03；末軌是第二軌的另一個混音版。credit 記主體錄音與混音由兩人自己在同一間工作室於 1995–1996 年完成，第 4 軌另在別處錄、由第三人操刀。Discogs 給的曲風標記是 Electronic，風格標記 Downtempo 與 Ambient。",
+  "keyTracks": [
+   "Traveling 231",
+   "Adventures In A Tropical Temple",
+   "The Best Of Mineral Springs"
+  ],
+  "status": "full",
+  "yearVerified": "發行年 1997 站得住：Discogs released 欄 1997、MB first-release-date 1997、MB 那筆 release 的 date 1997，三處一致。**但版權欄寫的是「℗&© 1995, 1996, 1997」、內註寫錄音在 1995–1996（第 4 軌 1996）**——那是錄音與版權年，不是發行年，行文必須分開，不得寫成「1995 年的碟」。無月份資料，不得給月份。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。SLP Designs 美術線歸 Trio Rakant《Kokorosususu》，本卡禁用。**「同一個團名在 MB 上有四個實體、要靠 disambiguation 才分得開」這條線歸本卡**（第 49 條的同型情形）。**細野晴臣的製作人角色線歸 World Standard《Country Gazette》**——本卡只能寫「credit 欄上他掛 Liner Notes [Comment On Obi Strip]」這一個欄位值，**不得展開他是誰、做過什麼**。\n【同掛名兩張卡的分工】本組有兩張 Pacific 231（本卡 TRS-25017／1997、《ミヤシロ》SYDW-0011／1998）。**「兩位成員是誰、其中一位已於 2017 年過世」這條身分線歸本卡**；《ミヤシロ》那張禁用，改走它自己的線（見那張的 notes）。\n【本卡特有限制】(1) 原盤八軌，Discogs 與 MB 一致，可以斷言。(2) **曲名是本卡最大的地雷**：〈Café Équatorien〉〈Adventures In A Tropical Temple〉〈The Best Of Mineral Springs〉〈Jewels Of The Ocean〉全是熱帶／旅行意象的詞，盤名也是。**嚴禁把它們讀成旅行紀錄、異國取材、exotica 傳統的繼承或任何出處**（第 110 條，本批 ambient 線的最高風險點之一）。行文只能照抄曲名，或引內註自己的措辭。(3) 內註的「Total Time 63:49」是唱片自己印的總長，可以寫；**但不得**由它推算或補齊任何 Discogs／MB 沒有給的曲長。(4) 內註的「Released in standard jewel case with 4-page insert and obi.」是包裝陳述，**不得**由它推論壓量、版本稀有度或二手價（第 109 條）。(5) 「兩軌／四軌／兩軌」的作者分布已逐軌數過（第 135 條）。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:World Standard|Country Gazette",
+  "artist": "World Standard",
+  "album": "Country Gazette",
+  "facts": [
+   {
+    "f": "Discogs 日本盤條目（Daisyworld Discs，編號 SYDW-0006，日本，CD 一張，格式欄的 descriptions 是空的，released 欄 1997-08-21）的內註直接引了內頁文字，並標明作者：「From sleevenotes : / We can hear various intoxicated ambient sounds of a banjo. This record owes a lot to Stereolab Series of Vanguard Label and is especially inspired by 'John Faye'. (Mikado Koyanagi)」（原文如此，人名拼法照印）。",
+    "src": "https://api.discogs.com/releases/387339"
+   },
+   {
+    "f": "同一份日本盤曲目十四軌與曲長：1.〈Introduction〉1:15／2.〈Good Red Road〉2:50／3.〈The Lonely Driver 1952〉5:21／4.〈Country Sad Ballad Man〉1:47／5.〈Loser's Lounge〉3:17／6.〈Old Man Blues〉3:36／7.〈Loving Spoonful〉3:26／8.〈Billy Strange Country〉6:38／9.〈My Low-Churned Banjo〉3:34／10.〈900 Miles From Home〉2:19／11.〈Silent Homecoming〉3:47／12.〈Hollyville Train〉5:23／13.〈Montage: Lonesome Hobo-Land〉8:52／14.〈Cowboys Don't Cry (Hank Williams Lost Lyrics)〉3:05。",
+    "src": "https://api.discogs.com/releases/387339"
+   },
+   {
+    "f": "美國盤（Asphodel，編號 ASP 0982，1998-06-23，release 374905）補上了日本盤條目沒有的整份 credit：**Haruomi Hosono 掛 Producer、Guitar 與 Music By**；Sohichiro Suzuki 掛 Engineer [Recording]、Recorded By [Raw-fi]、Mixed By 與 Written-By；**Larry Campbell 掛 Banjo、Dobro、Mandolin、Pedal Steel Guitar 四項**；Mina (4) 掛 Voice [All Voices]；World Standard 掛 Sounds [All Sounds Designed By]；Mickey Newbury 掛 Music By；**Hank Williams 掛 Lyrics By**；Satoshi Ogawa 掛 Mastered By 與 Edited By [Digital]；Mikado Koyanagi 掛 Liner Notes [Sleeve Notes]。該筆內註寫「Songs 1 to 3 & 5 to 13 written, 1996-1997.」，版權欄「(P)&(C) 1997 Daisyworld Discs Medium, Inc.」。",
+    "src": "https://api.discogs.com/releases/374905"
+   },
+   {
+    "f": "MusicBrainz release-group 50b2a568-92f4-3035-94bb-7b6ad9b9bf76 逐版開曲目：轄下兩筆 release 都是十四軌、曲序曲長完全相同——1997-08-21／JP／Daisyworld Discs／SYDW-0006（MB 標題收成全大寫《COUNTRY GAZETTE》）與 1997／US／Asphodel／ASP 0982。**原盤十四軌**，美國盤沒有加曲也沒有換序。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=50b2a568-92f4-3035-94bb-7b6ad9b9bf76&inc=recordings&fmt=json"
+   },
+   {
+    "f": "第 9 軌的曲名在各處拼法不一：Discogs 日本盤作〈My Low-Churned Banjo〉，Discogs 美國盤與 Apple 作〈My Low-Chuned Banjo〉，MusicBrainz 作〈MY LOW‐CHUNED BANJO〉（帶 U+2010），Discogs 的 2018 年日本重出盤作〈My Low - Chuned Banjo〉。其餘十三軌各處一致。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=50b2a568-92f4-3035-94bb-7b6ad9b9bf76&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 296501444）回 ワールドスタンダード《Country Gazette》，trackCount 14，releaseDate 1997-08-21，copyright 欄「℗ 1997 daisyworld discs medium, inc.」，十四首曲名與曲長與 Discogs 日本盤逐軌相符（末軌 Apple 記 185 秒、Discogs 記 3:05）。",
+    "src": "https://itunes.apple.com/lookup?id=296501444&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs master 211979 底下六個版本：release 387339（Daisyworld Discs SYDW-0006，日本，1997，CD）、release 374905（Asphodel ASP 0982，美國，1998，CD）、release 2381116（Asphodel ASP 0982，美國，1998，CD, Promo）、release 12287772（Asphodel ASP 0982，美國，1998，CD）、release 19588771（Bridge Inc. EGDS-77，日本，2018，CD）、release 30238178（Cudighi Records CUD75，美國，2024，兩張 LP，標 Reissue）。六筆裡零筆標 Unofficial Release；2024 年那筆的 credit 欄只留下一項：Haruomi Hosono 掛 Producer。",
+    "src": "https://api.discogs.com/masters/211979/versions?per_page=100"
+   },
+   {
+    "f": "Discogs 藝人頁 68607（World Standard）：realname 欄「鈴木惣一朗 (Sohichiro Suzuki)」，members 欄列 Moog Yamamoto 與 Sohichiro Suzuki，name variations 含「ワールド·スタンダード」「ワールドスタンダード」；profile 欄記「Japanese electronic music unit founded by Sohichiro Suzuki in 1983... Debuted in 1984 with the cassette album produced by Haruomi Hosono. Their self-titled album, \"World Standard\", released in 1985 on the Alfa sub-label Non-Standard, was remastered and reissued under the supervision of Sohichiro Suzuki in 2021.」",
+    "src": "https://api.discogs.com/artists/68607"
+   },
+   {
+    "f": "Discogs 藝人頁 19132（Haruomi Hosono）：realname 欄「細野晴臣 (Hosono Haruomi)」，groups 欄同時列 Yellow Magic Orchestra 與 **HAT**（HAT 即本組另一張卡 SYDW-0002 的掛名），另有 Happy End、Sketch Show、Tin Pan 等；name variations 欄超過五十種寫法。",
+    "src": "https://api.discogs.com/artists/19132"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（50b2a568-…）實測回 200，封面有圖。Discogs 廠牌目錄頁（labels/4518/releases）記本張編號 SYDW-0006 的前後號：SYDW-0005 Terre Thaemlitz《Couture Cosmetique》（1997）與 SYDW-0007S Vagabond & Harry《Who Wants The Hula-Hoop?》（1997）。",
+    "src": "https://api.discogs.com/labels/4518/releases?per_page=100&sort=catno"
+   }
+  ],
+  "hookCandidates": [
+   "內頁的評語只有三句話，卻直接點名了它欠了誰：一個廠牌的系列，和一個被拼錯的名字。",
+   "十四軌裡最短 1:15、最長 8:52；credit 上一位樂手同時掛班鳩、多布羅、曼陀林與踏板鋼棒吉他四種樂器。",
+   "credit 欄裡有一項作詞掛在一位 1953 年就過世的鄉村歌手名下。",
+   "同一首曲名在五個地方有四種拼法：Churned、Chuned、CHUNED、Low - Chuned。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十四軌，長度落差大：〈Introduction〉1:15 與〈Country Sad Ballad Man〉1:47 是短片段，〈Montage: Lonesome Hobo-Land〉8:52 與〈Billy Strange Country〉6:38 是長曲。credit 記編制上有班鳩、多布羅、曼陀林與踏板鋼棒吉他（皆由同一位樂手掛名）、吉他（由製作人本人掛）與人聲；聲音設計掛在團名底下。Discogs 給的曲風標記是 Electronic，風格標記 Country Rock 與 Experimental。",
+  "keyTracks": [
+   "Good Red Road",
+   "Billy Strange Country",
+   "Montage: Lonesome Hobo-Land"
+  ],
+  "status": "full",
+  "yearVerified": "日本盤 1997-08-21 站得住：Discogs released 欄 1997-08-21、MB 那筆日本 release 的 date 1997-08-21、Apple releaseDate 1997-08-21、MB release-group first-release-date 1997-08-21，四處一致，可以斷言到日。**美國 Asphodel 盤有兩個年份**：MB 記 1997、Discogs 記 1998-06-23，兩者不一致；卡單掛的是 Daisyworld，行文一律用日本盤的 1997-08-21，**若要提美國盤，只能寫「另有一筆美國盤」而不給年份**（第 141 條附二：兩個資料庫給不同值時兩個都不填）。",
+  "notes": "【互斥分派——細野晴臣的製作人角色線歸本卡】本組有兩張碟與他有關（HAT《Tokyo - Frankfurt - New York》的三人組成員之一、本卡的 Producer／Guitar／Music By）。**「細野晴臣作為製作人在這條線上的角色」只准本卡寫**；HAT 那張禁用（那張分到的是 Daisyworld 廠牌線）。Daisyworld 廠牌史歸 HAT 那張，**本卡禁用**，只能寫自己的編號 SYDW-0006 與前後號。\n【本卡特有限制】(1) 原盤十四軌，Discogs 兩筆、MB 兩筆、Apple 全給十四，可以斷言。(2) **內頁評語只能整段照引並註明「內頁評語（Mikado Koyanagi 署名）說」**（第 128 條）：不得把「這張碟欠了某某很多」升級成事實斷言，也**不得替它更正人名拼法或補上它指的是誰**——內註印的是「'John Faye'」，就照印，**嚴禁**推論它是誰（第 110 條）。同理「Stereolab Series of Vanguard Label」照引，不得解釋。(3) **credit 欄上「Hank Williams 掛 Lyrics By」「Mickey Newbury 掛 Music By」是 credit 欄的原始值，可以照寫**；但**不得由曲名或這兩筆 credit 推論哪一首是翻唱、改編或出自誰的作品**（第 110 條）——credit 欄沒有標軌號。第 14 軌曲名括號裡的「Hank Williams Lost Lyrics」是曲名的一部分，照抄即可，不得展開。(4) 第 9 軌的曲名四種拼法，行文若要引必須避開或明寫拼法不一；本卡 keyTracks 已避開。(5) 日本盤的 Discogs 條目 credit 欄是空的，整份 credit 來自美國盤那一筆——**行文引 credit 時必須說明那是美國盤條目上的登錄**（第 136 條）。\n【全批禁令】第 109 條、第 145 條、第 40／80 條（en 維基〈World Standard〉條目實測為空、ja 維基〈ワールド・スタンダード〉條目實測為空，兩邊都沒有可用內容）照舊適用。"
+ },
+ {
+  "key": "desc4:永田一直|The World of Electronic Sound 4",
+  "artist": "永田一直",
+  "album": "The World of Electronic Sound 4",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Zero Gravity (3)，編號 ZGV-020，日本，CD 一張標 Album，發行年 1998）的內註把錄音與母帶都寫到日：「Recorded at Transonic Studio (Yoyogi) 1998, 3.11-12. / Mastered at Transonic Studio (Yoyogi) 1998. 3.13. / With obi strip. / ℗ 1998 Transonic Records © 1998 Zero Gravity.」——錄音兩天、母帶隔天做完，都在同一間位於代代木的錄音室。",
+    "src": "https://api.discogs.com/releases/322085"
+   },
+   {
+    "f": "同一份原盤的曲目只有一軌：〈History Of Showa #4〉，46:01。identifiers 欄記母帶刻印「ZGV-020 P01」、Mastering SID Code「IFPI L715」、Mould SID Code「IFPI 1826」。",
+    "src": "https://api.discogs.com/releases/322085"
+   },
+   {
+    "f": "同一份原盤 credit 欄把器材逐項列出來：Kazunao Nagata 一人掛 Synthesizer [Arp-2600]、Effects [Roland Analog Echo Dc-20]、Programmed By [Rhythm Box Tr-66 Programming]、Turntables [Turntable]、Edited By [Hd Edit]、Effects、Mixed By [Mixing] 與 Mastered By；SLP Designs 掛 Artwork，另註明也掛給 Ryo Miyoshi 與 Yuuske Simiz 兩人。",
+    "src": "https://api.discogs.com/releases/322085"
+   },
+   {
+    "f": "MusicBrainz release-group 3da1b723-41d0-46e3-94ed-865ac32b0d7f：標題《THE WORLD OF ELECTRONIC SOUND 4》（全大寫），artist-credit「永田一直」（漢字），first-release-date 1998，primary-type Album，secondary-types 空；轄下只有一筆 release，1998／JP／Zero Gravity／ZGV-020，只有一軌，長度 2761 秒。兩個資料庫都給一軌，且那一軌不是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3da1b723-41d0-46e3-94ed-865ac32b0d7f&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1125932753）回 永田一直《The World of Electronic Sound 4》，trackCount 1，releaseDate 1998-04-01，copyright 欄「℗ ZERO GRAVITY」，唯一一軌〈History of Showa #4〉2763 秒——與 MB 的 2761 秒相差兩秒，與 Discogs 的 46:01 相符。",
+    "src": "https://itunes.apple.com/lookup?id=1125932753&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/304258/releases）顯示這是一整個系列，而且第 2、3、4 集同年出齊：ZGV-005《The World Of Electronic Sound》（1996）、ZGV-018《The World Of Electronic Sound 2 (In Concert 1996 & 1997)》（1998）、ZGV-019《The World Of Electronic Sound 3》（1998）、ZGV-020 本張（1998）、ZGV-029《The World Of Electronic Sound 5》（2016）。",
+    "src": "https://api.discogs.com/labels/304258/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Discogs master 2479777 底下兩個版本：release 322085（Zero Gravity ZGV-020，日本，1998，CD）與 release 21883057（Zero Gravity，編號欄同時列「ZGV-020, DDCL-1004」，日本，2001-11-21，CD, Album, RE）。2001 年那筆沿用同樣的內註（錄音 1998.3.11-12、母帶 1998.3.13）與同樣的 credit，曲目仍是一軌〈History Of Showa #4〉46:03。同系列的第 2、3 集也各有一筆 2001 年、編號同時掛 DDCL-1002 與 DDCL-1003 的重出版。",
+    "src": "https://api.discogs.com/masters/2479777/versions?per_page=100"
+   },
+   {
+    "f": "Discogs 藝人頁 166009（Kazunao Nagata）：realname 欄「永田一直 (Nagata Kazunao)」，profile 欄記「Prolific Japanese DJ, synthesizer player, mastering engineer and producer. He is the man behind the labels Transonic Records (4), Zero Gravity (3) and [ExT Recordings].」別名欄列 Organization 與 Switch Dr. K.；groups 欄列 Fantastic Explosion、Kazunao Nagata & The City Connection、Trial Production、Transonic Jokers、Nasca Explosion、Buffalo Organization、Ex Boys、Transonic Recordings、Zero Gravity Grand Orchestra；name variations 含「永田一直」與六種羅馬拼音變體。",
+    "src": "https://api.discogs.com/artists/166009"
+   },
+   {
+    "f": "Discogs 藝人頁的作品列表端點（artists/166009/releases，依年份排序）回 items=419 筆，逐筆帶一個 role 欄；第一頁一百筆的 role 分布是 Producer 43、Co-producer 21、Main 14、Mixed by 13、Remix 5、DJ Mix 3、Appearance 1——**以他自己掛名（Main）發表的碟只佔一小部分，絕大多數是替別人做的製作與混音**。同一份列表裡標 Main 的 1996–1998 年條目正是《The World Of Electronic Sound》系列的第 1、2、3、4 集。",
+    "src": "https://api.discogs.com/artists/166009/releases?per_page=100&sort=year&page=1"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（3da1b723-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/3da1b723-41d0-46e3-94ed-865ac32b0d7f/front"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有一軌，46 分 01 秒。",
+   "內註把工期寫到日：3 月 11 到 12 日錄，13 日做母帶，同一間錄音室，同一個月出。",
+   "credit 把器材逐台點名：一台 ARP-2600、一台 Roland 類比回音、一台節奏機、加上唱盤。",
+   "同一個系列的第二、三、四集在同一年出齊。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）單軌四十六分鐘的獨奏電子作品。credit 逐項列出使用的器材：ARP-2600 合成器、Roland Analog Echo DC-20 效果器、TR-66 節奏機的程式、唱盤，以及硬碟剪輯；混音與母帶也同屬一人。Discogs 給的曲風標記是 Electronic、風格標記 Experimental。",
+  "keyTracks": [
+   "History Of Showa #4"
+  ],
+  "status": "full",
+  "yearVerified": "1998 站得住。Discogs released 欄 1998、MB first-release-date 1998、MB 唯一一筆 release 的 date 1998，三處一致。Apple 另給 1998-04-01（到日），比其他三處細一級但不衝突；要寫到日必須註明那是 Apple 的值。內註的「1998, 3.11-12」與「1998. 3.13」是**錄音與母帶日期**，不是發行日。2001 年那筆重出版的年份不得混入。",
+  "notes": "【互斥分派——永田一直這個人的角色線歸本卡】他在本組二十三張卡的 credit 上出現（職務從 co-producer、executive-producer、producer 到 mastered by、compiled by 不等），本組唯一由他自己掛名的碟就是這張。**「他是誰、他辦了哪些廠牌、他在這條線上到底做了什麼」只准本卡寫**；其餘二十二張卡只能寫自己 credit 欄上他的那一個具體職務名，**不得**展開他的身分。Zero Gravity 廠牌線歸 Suzukiski《Kamakura》，SLP Designs 美術線歸 Trio Rakant《Kokorosususu》，本卡兩條都禁用。\n【本卡特有限制】(1) 原盤一軌，Discogs、MB、Apple 三處一致，可以斷言。(2) **曲名〈History Of Showa #4〉（昭和史 #4）是本卡最大的地雷**：沒有任何來源說這張碟與昭和時代、歷史題材或任何敘事有關，內註只寫錄音與母帶日期。**嚴禁把曲名讀成主題、概念或年代史的音樂化**（第 110 條）。行文只能照抄曲名。同理，曲名末尾的「#4」與盤名的「4」都不得推論成「這是同一組作品的第四段」——系列編號是廠牌目錄上的事實，曲名編號沒有來源解釋。(3) Discogs profile 說他是「the man behind」三家廠牌，**只能寫成「Discogs 藝人頁說」**（第 128 條），不得升級成該來源自己的權威宣稱。(4) 內註的「With obi strip.」是包裝陳述，不得由它推論壓量或稀有度（第 109 條）。(5) 掛名採 MB 實體的漢字「永田一直」；Discogs 條目名是羅馬拼音「Kazunao Nagata」，兩者同一人（realname 欄直記），不得寫成兩個人。\n【全批禁令】第 109 條、第 145 條、第 40／80 條（ja 維基〈TRANSONIC RECORDS〉條目全篇 0 個行內引註，其中關於此人現況的段落一律不採用）照舊適用。"
  }
 ]
