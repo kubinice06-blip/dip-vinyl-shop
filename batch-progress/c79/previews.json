@@ -474,7 +474,10 @@
   "trackCount": 11,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/1a/ec/e8/1aece81b-5ebc-f1db-17b1-abe198d5443b/mzaf_13737668029714978011.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "originalTrackCount": 10,
+  "note": "研究層依第 141 條開 MB 原盤對過：**原盤 10 軌、Apple 11 軌是加曲版**（WRWTFWW 官方頁明標 Bonus Track）。探測層原本標 ready 卻沒有 note，也因為 Apple 年份剛好也是 1976 而算不出 yearDrift——**這正是第 140 條附錄說的「yearDrift 算不出來不代表沒有漂移」的第二種面向：軌數漂移同樣不會反映在年份上**。行文不得把第 11 軌當原盤曲目。"
  },
  "友川かずき|千羽鶴を口に咬えた日々": {
   "batch": "c79",
@@ -506,8 +509,9 @@
   "yearDrift": 18,
   "reissueTitle": false,
   "status": "ready",
-  "note": "Apple 顯示 1995（卡片 1977）。11 軌連號、非二合一。**℗ 2012 TOKUMA JAPAN 是復刻年**，Apple 的 1995 也不是原盤年——**兩個年份都不得寫成發行年**。",
-  "appleYearIsReissue": true
+  "note": "Apple 顯示 1995（卡片 1977）。11 軌連號、非二合一。**℗ 2012 TOKUMA JAPAN 是復刻年**，Apple 的 1995 也不是原盤年——**兩個年份都不得寫成發行年**。 【原盤軌數兩說】MB 10 軌／Discogs 11 軌，依第 141 條**兩個都不填**，行文不得寫原盤有幾軌。另研究層補查到 1995 年 JAPAN RECORD 那次再發，「第二張」這個序數查無來源、禁用。",
+  "appleYearIsReissue": true,
+  "originalTrackCountDisputed": true
  },
  "中島光一|母と子の詩": {
   "batch": "c79",

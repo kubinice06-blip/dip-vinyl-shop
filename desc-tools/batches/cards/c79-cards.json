@@ -1100,11 +1100,11 @@
    "folk",
    "rock"
   ],
-  "label": "Showboat",
+  "label": "Blow Up (3)",
   "rgMbid": "9c93c3de-4006-4960-8f46-6d83413c7eb8",
   "identitySource": "pinned",
   "curatorWhy": "1979 年 9 月的 Showboat 盤，Discogs 的 2007 年復刻條目 1906992（Showboat SWAX-84，紙盒 mini-LP、附原始 obi 與內頁復刻）在說明欄明寫 Album originally released in 1979。Showboat 這條線是吉祥寺ライブハウス延伸出來的唱片目錄（Discogs 廠牌實體 #57341，與 #280399 的同名ライブハウス、#422985 是三個不同的實體），本批另有ダッチャ《26号線》同系列。MB 轄下三筆 release（1979／1998／2007）全為 Official。池中實掃 seed_cards.json 全 13,913 列，南正人零張；本批共收他 2 張（另一張是 a 組 1973 年《南正人ファースト・アルバム》）。",
-  "curatorRisk": "**Discogs 只查得到 2007 年復刻的 release 條目、沒有 master、也沒有 1979 年原盤條目**，年份 1979 的依據是 MB 的 first-release-date（1979-09）與那個復刻條目的說明欄兩處互相印證；依裁定第 18／46 條，行文不得正面斷言發行月份。**盤名是英文短句**，以 lady let me go 為主鍵掃全池零命中，但字串比對脆弱，下游一律吃 rgMbid 與 Apple collectionId 1644048828（Apple jp 掛名寫成「南 正人」，姓名間多一個半形空格）。CAA 兩層皆 404，靠 Apple。",
+  "curatorRisk": "**Discogs 只查得到 2007 年復刻的 release 條目、沒有 master、也沒有 1979 年原盤條目**，年份 1979 的依據是 MB 的 first-release-date（1979-09）與那個復刻條目的說明欄兩處互相印證；依裁定第 18／46 條，行文不得正面斷言發行月份。**盤名是英文短句**，以 lady let me go 為主鍵掃全池零命中，但字串比對脆弱，下游一律吃 rgMbid 與 Apple collectionId 1644048828（Apple jp 掛名寫成「南 正人」，姓名間多一個半形空格）。CAA 兩層皆 404，靠 Apple。 【2026-09-04 主線更正】原填 Showboat 有誤：Discogs master 271868 的 main_release 13139371 是 1979 年 **Blow Up (3) LX-7072-A**（日本コロムビア 子牌，Vinyl），Showboat 只是 2007 年的復刻。已改。",
   "mbNote": "釘 9c93c3de-4006-4960-8f46-6d83413c7eb8《Lady Let Me Go》，artist-credit「南正人」，first-release-date 1979-09，primary-type Album、secondary-types 空，轄下 3 個 release（1979／1998／2007 皆 JP Official）。藝人 MBID 52177cf7-ee17-48cf-8f4b-fd37334bc018，分頁 browse 名下 6 個 release-group；037fe129《回帰線》(1971，RCA) 與 a85ea1cf《南正人ファースト・アルバム》(1973，本批 a 組) 為對照組，本卡刻意不釘。",
   "releaseType": "Album",
   "exceptionReason": "",
