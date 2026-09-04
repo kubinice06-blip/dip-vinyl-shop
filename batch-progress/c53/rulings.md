@@ -2997,3 +2997,28 @@ Apple 那筆 25 軌，**軌號從 1 連號到 25**。但——
   依第 129 條**剔除**。
 
 **兩者的差別不在軌數多少，在多出來的那些是誰的。**
+
+
+### 140 附：`originalTrackCount` 要有來源，不能憑印象（c-77 主線自己踩到）
+
+我在 c-77 的逐張複檢裡，把 The Passage《Pindrop》的原盤軌數填成 **11**
+——那是我憑對這張碟的印象寫的，**沒有查任何來源**。
+研究層查 Discogs master 177478／release 845692，原盤是 **13 軌**（A1–A7 ＋ B1–B6）。
+
+同一輪研究層還抓到探測層兩處漏標：
+- **Alternative TV《Vibing Up the Senile Man》**：Apple collectionId 277754913
+  實為 **1996 Anagram 合輯**（16 軌、`℗ 1996 Anagram Records`），原盤只有 **8 軌**
+  ——探測層標了 ready 卻**沒標 `expandedReissue`**，因為 Apple 顯示的日期
+  剛好是 1979-01-01（**佔位日期**，`yearDrift` 因此算不出來）。
+- **The Deep Freeze Mice《My Geraniums》**：Apple 9 軌 vs 原盤 7 軌，同樣漏標。
+
+**裁定**：
+1. **`originalTrackCount` 是一條事實，跟 facts 一樣要有來源。**
+   填的時候就去查 Discogs 的 master／release 曲目表，不要用記憶補。
+   查不到就留空、在 note 寫「待研究層查」——**留空是誠實的，填錯是有害的**，
+   因為下游會拿它去判「行文可以寫到第幾軌」。
+2. **`yearDrift` 算不出來不代表沒有漂移。** Apple 的 `releaseDate` 常常是
+   `YYYY-01-01` 的佔位值，剛好落在原盤年就會讓漂移歸零。
+   **逐張複檢要看的是 `copyright` 欄的 ℗ 年份與軌數，不是只看 `yearDrift`。**
+3. 這三處都是**研究層抓到探測層**——與第 130 條那次（hook 層抓到派工信）同一個形狀。
+   **分層檢查的價值在於它會往上抓，包括抓到主線自己。**
