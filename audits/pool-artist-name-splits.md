@@ -208,3 +208,31 @@ c-52 對 Keenan Nasution 的處理）**應改記 1981**。
 **方法教訓**：日本線開批前，除了掛名比對，一定要**把每張盤名的羅馬拼音與英譯也寫出來、
 以盤名為主鍵掃一次全池**。日本盤的再發常常同時換掉掛名文字與盤名文字，
 只比對掛名會整組漏掉。
+
+
+### 2026-09-04 續補（c-76 研究層在來源側再抓到的寫法分裂）
+
+這些不是池中的分裂，是**來源側的分裂**——查資料與填 `queryAlias` 時會踩到：
+
+| 藝人／盤 | 各處寫法 |
+|---|---|
+| 濱瀬元彦 | MB、Discogs、**日文維基條目名**都用「濱」；池中與卡片用「浜」（維基會自動轉址） |
+| YAS-KAZ | MB 的 artist-credit 用 **U+2010 連字號**「YAS‐KAZ」，卡片是 ASCII 連字號 |
+| 伊藤詳 | MB credit **只寫「Akira」一個字**；Discogs 原盤「Akira*」；復刻「Akira Ito」；卡片漢字。**`queryAlias` 不得填單獨的「Akira」** |
+| 菅野昌弘 → 菅谷昌弘 | 同一位作者在《海の動物園》的 MB credit 是漢字、在《熱の風景》是羅馬拼音 |
+| 日向敏文 | Discogs 把 1985 原盤掛名登成「Toshi*」 |
+| 喜納昌吉＆チャンプルーズ | MB 全形「＆」／池中半形「&」／Apple「喜納昌吉 & チャンプルーズ」（& 前後各一空格）／**Discogs 拆成 `Shoukichi Kina` 與 `Champloose` 兩個實體** |
+| ネーネーズ | Discogs `Nenes (2)`／歐洲 Columbia 盤 `Nenes`／日文維基 alias `Nēnēs`（帶長音符） |
+| りんけんバンド | Discogs `Rinken Band`；2001 年另一筆作 `Rinkenband*` |
+| Diamantes | MB／Discogs `Diamantes`；日文維基與 Apple 用 `DIAMANTES`／片假名 `ディアマンテス` |
+| 團員 | 日文維基作**吉田康子**，唱片 credit 一律作**宮里康子**——同一人兩種姓 |
+
+**盤名也會分裂**，去重與查詢時同樣要含多式：
+縄文頌／Jomon-Sho／Jo Mon Sho｜風の卵／Egg Of Purana／Egg Of Purãna｜
+余韻**四種**（余韻「レゾナンス」／余韻 (Resonance)／Resonance／Resonance 余韻）｜
+♯Notes **四種**（♯／#／全大寫／帶 2020 尾綴）｜
+《ゆんた とぅ じらば》Discogs 作 `ゆんた とぅ じらば = Yunta & Jiraba`、官方年表無空格。
+
+**廠牌同理**：`DISC AKABANA`／`Disc Akabana`／`ディスクアカバナー` 是同一家，
+且 **APCD-1001 是ネーネーズ《IKAWU》、APCD-1002 是大工哲弘那張**——
+同廠連號卻跨兩位藝人，廠牌側的查詢不能假設連號屬於同一人。
