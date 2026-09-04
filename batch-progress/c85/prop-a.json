@@ -385,5 +385,43 @@
   "queryAlias": "Premiere",
   "reissuedBy": "",
   "g": "a"
+ },
+ {
+  "artist": "Tradition",
+  "album": "Captain Ganja and the Space Patrol",
+  "year": 1980,
+  "genres": [
+   "world"
+  ],
+  "label": "Venture Records",
+  "why": "英國樂團 Tradition 的第三張專輯，Venture Records CUT 9、The Sound Clinic 錄音（Discogs release 3142606，master 1155920）。地位證據是三方各自的授權復刻：布里斯托廠牌 Bokeh Versions 2017 年的黑膠 BKV009（release 10039710，2019 年再壓 release 13721555，另有 FLAC 版）、日本 Octave Lab／Ultra-Vybe 2017 年的 CD《Captain Ganja And The Space Patrol +1》（OTLCD2314，release 10619971，其後 2020 年 UVPR-30117、2023 年卡帶 OTLTA-1001、2025 年黑膠 OTS-391）、以及 Apple gb 的正式數位條目（collectionId 1221853662，9 軌，2017-04-21）。",
+  "risk": "日本版盤名帶「+1」尾綴（加了一軌），依第 140 條屬加曲版：行文不得把多出來的那一軌當原盤曲目，逐張複檢要以 Discogs master 1155920 的原盤曲目表為準。日本另有兩張 7 吋《Captain Ganja And The Space Patrol EP Vol.1／Vol.2》（OTS-171／OTS-172，2019），盤名前綴相同但是不同的發行，字串比對會撞。掛名「Tradition」是單一常用詞，Discogs 上有多個同名對象，外部服務的字串搜尋幾乎必然撈回大量無關結果，封面與試聽要靠 rgMbid 或完整盤名。",
+  "mbNote": "釘住 MB release-group 47924a88-0ae3-41e3-9b24-ce847cc9355c《Captain Ganja and the Space Patrol》，artist-credit「Tradition」，first-release-date 1980，primary-type Album，secondary-types 空。已回問 release-group 端點確認實體類型與標題。轄下 3 個 release，皆 Official：1980 GB（Venture Records CUT 9 原盤）、2017-03-31 XW（Bokeh Versions）、2020-07-22 JP（Octave Lab）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Captain Ganja and the Space Patrol +1",
+  "reissuedBy": "Bokeh Versions",
+  "g": "a"
+ },
+ {
+  "artist": "The Well Pack Band",
+  "album": "The Workers Speak To Their Slave Masters With Strike",
+  "year": 1980,
+  "genres": [
+   "world"
+  ],
+  "label": "Studio 16",
+  "why": "Winston Edwards 的 Studio 16 在 1980 年出的 WE 0011（Discogs release 2349736／14164842，master 685317），與同廠牌的《At 10 Downing Street》同屬這家小廠僅有的幾張 LP。地位證據是它反覆被壓：荷蘭 EMI Belgium 承製的歐洲版（1A 062-63699，release 5668815）、兩筆無年份的再版（release 7580523／14368651），以及 2020 年的兩次再版，其中一筆標 Remastered（we0011-r，release 16821267；WE 0011，release 21321940）。Discogs master 685317 的版本中零筆標 Unofficial。",
+  "risk": "盤名極長（十個詞），字串正規化後仍是唯一鍵、不易撞，但 Apple 與 CAA 的搜尋對長盤名容易斷詞失敗——CAA release-group front 無圖、Apple 四個 storefront 全查無，封面與固定試聽都預估落空。廠牌 Studio 16 與日本、韓國的同名錄音室在文字搜尋裡會混，查詢要帶目錄號 WE 0011。荷蘭 Corn-Fed 的 CF F01（release 31368193）把本張與《Dub Conference》併成一片 CDr、且標 Unofficial，依第 129／140 條不得當版本來源。",
+  "mbNote": "釘住 MB release-group bb039140-a9e5-448c-a62c-eff3c735d10b《The Workers Speak To Their Slave Masters With Strike》，artist-credit「The Well Pack Band」，first-release-date 1980，primary-type Album，secondary-types 空。已回問 release-group 端點確認實體類型與標題。轄下 1 個 release：1980 GB Official（Studio 16 WE 0011）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Well Pack Band",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]
