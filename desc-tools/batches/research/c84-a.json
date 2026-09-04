@@ -912,7 +912,7 @@
    },
    {
     "f": "MB 那筆 2009 年 CD 登記的逐軌長度：Boo Hoo Hoo 4:07／Sad Lament of the American Indian 4:05／When You Came 2:06／Coffin Cello 1:35／Battle Down the 1/4 Mile 2:32／Now We Have Slipped 2:29／**Lonnie Donnegan's Mum's Tea Chest 5:09**／**Misty 1:02**／Mysterious Girl 1:54／Luminous Babies 4:26／Sasquatch & Wilcox Club the Weefolk 1:54／Red Dog the Deconstructor 3:43／Biscuits & Kippers 3:08／Arrogant Flower 2:51／Past Pastoral 3:24／Abstract Composition #2 3:38／Gored by Bull 1:45；十七軌相加 2988 秒（49 分 48 秒）。**MB 把第 10 軌記成〈Luminous Babies〉、第 17 軌記成〈Gored by Bull〉，Discogs 兩筆都作〈Luminous Bodies〉與〈Picador Gored By Bull〉。**",
-    "src": "https://musicbrainz.org/release/e92c29a6-1c9d-4a3f-9c4b-1b57bd8f8f1a"
+    "src": "https://musicbrainz.org/release/e92c29a6-7fbb-4444-95e1-8be573250199"
    },
    {
     "f": "Apple Music 美國店面 collectionId 332049371 的欄位：collectionName《Discus》、artistName「Strapping Fieldhands」、trackCount 17、**releaseDate 1993-01-01**、copyright「**℗ 2009 Shangri-la Projects**」；**逐軌核對**：十七個曲名與曲序與 MB 那筆 2009 年 CD 完全相同（含〈Luminous Babies〉與〈Gored by Bull〉這兩個 MB 側的寫法），逐軌秒數也逐項相同或差一秒——**Apple 上架的是 2009 年那次 CD 重發**。",
@@ -943,5 +943,319 @@
    "note": "1994 維持卡單原值，無爭議，而且**可以寫到日**：Discogs 原盤條目 1720804 的 released 欄 **1994-04-05**、MB release-group first-release-date 1994、MB 那筆黑膠 release 的 date 1994、2009 年重發條目註記欄的「(P) 1994 Omphalos Records」、Trouser Press 唱片列表的「(Omphalos) 1994」——**五處一致，只有 Discogs 那一筆精確到日**。**行文可寫到年；要寫到日必須註明那是 Discogs 原盤條目的 released 欄。**\n**⚠️ 這裡有一個必須擋掉的錯誤年份**：`previews.json` 記的 `appleYear` 是 **1993**，那是 Apple 那筆的 `releaseDate` 欄 1993-01-01 —— **`YYYY-01-01` 的佔位形狀**（第 140 條附錄二點名的），而那筆的 copyright 是 ℗ 2009 Shangri-la Projects，**上架的是 2009 年的重發**。**1993 不是任何一件事的年份，行文與 hook 都不得出現。**"
   },
   "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Omphalos Records 與 Shangri-La Projects 兩家廠牌**；**「原盤條目沒有編制、十五年後的重發才補上」這件事**；Trouser Press 對本團與本張的整段評語。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）。**本卡與 Siltbreeze 的關係只能寫成 companies 欄那一條原始值——「Distributed By: Siltbreeze」（經銷）**，**不得寫成「由 Siltbreeze 發行」，也不得寫成兩家廠牌共列**（第 85／136 條；策展提案說原盤條目「同時列 Omphalos Records 與 Siltbreeze」，**我核對後推翻**：Siltbreeze 不在 labels 欄，而在 companies 欄的 Distributed By 那一條）。(2) **原盤軌數只能寫 17**——Discogs 原盤、Discogs 2009 重發、MB 兩筆 release、Apple 五處一致，沒有加曲版也沒有二合一（第 140／141 條已逐版比對）。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) **兩處曲名分歧只能寫成「不同資料庫寫法不同」**：〈Luminous Bodies〉／〈Luminous Babies〉與〈Picador Gored By Bull〉／〈Gored by Bull〉。**Trouser Press 那段用的是 'Luminous Bodies'**，若行文引用該段就照它的寫法，並註明那是樂評裡的寫法。(5) **Trouser Press 那段裡的比較對象（Incredible String Band、Bevis Frond、Hawkwind、Holy Modal Rounders、Guided by Voices）要小心**：可以引用**該篇樂評怎麼形容這張碟**，但**必須寫成「Trouser Press 那篇署名樂評說」**（第 128 條），**不得改寫成本店對這張碟的判斷**。**尤其 Guided by Voices 不得出現**——池中已有該掛名四張，寫進來是第 131 條的跨卡撞線。(6) **樂評裡的「Anglophile」「faux British accent」等說法只能當引用轉述**，**不得由曲名（Biscuits & Kippers、Lonnie Donnegan's Mum's Tea Chest）自行推論同一件事**（第 110 條）——這兩軌剛好也是那段樂評點名的，引用時要讓來源看得出來。(7) **「the band's first full-length release」這句是 Trouser Press 的說法**，可引，但**不得改寫成「首張專輯」的斷言**（第 125 條：序數框架要有來源，而這裡的來源是一篇樂評不是廠牌目錄）。\n**探測層核對（我推翻探測層的地方）**：previews.json 標 ready、collectionId 332049371、trackCount 17、**`appleYear` 記 1993**、沒有標 `yearDrift`（因為 1993 比卡單年份還早一年，落差算不出正號）。**逐軌核對後確認**：Apple 上架的是 **2009 年 Shangri-La Projects 的 CD 重發**（℗ 2009，曲名與秒數與 MB 那筆 2009 CD 逐項相同），**不是 1993 年的任何東西**；`releaseDate` 1993-01-01 是佔位日期。**軌數 17 與原盤一致、可用；試聽可用；但 `appleYear` 1993 是錯的，建議主線在 previews.json 註明該欄為佔位日期、不得用於年份判斷。**"
+ },
+ {
+  "key": "desc2:Temple of Bon Matin|Thunder Feedback Confusion",
+  "artist": "Temple of Bon Matin",
+  "album": "Thunder Feedback Confusion",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 1586999 記：廠牌 Siltbreeze，編號 SB-29，country US，released 欄 1995，格式 Vinyl x1 [LP, Album]；genres 欄 Rock，styles 欄 Lo-Fi 與 Psychedelic Rock；兩面 runout 蝕刻「SB0290-A」與「SB0290-B」。",
+    "src": "https://www.discogs.com/release/1586999"
+   },
+   {
+    "f": "同一條目的註記欄三句：「**Recorded Christmas '92 by Bob Buono and Summer '93 by John Boyko.**」「Cover silk screened with stickers placed on it. Colors & sticker placement differs from copy to copy.」「Runouts are etched」——**錄音被分成兩段、由兩位不同的錄音者負責，時間點寫成節日與季節而不是日期。**",
+    "src": "https://www.discogs.com/release/1586999"
+   },
+   {
+    "f": "同一條目的 credit 欄共六條：Vocals: Ed Wilcox、**Drums: Ed Wilcox**（同一人兩個角色）、Bass: Mark Lux、Guitar: Trevor Dixon (2)、Recorded By: Bob Buono、Recorded By: John Boyko——**演奏端是三個人、四條掛名**，沒有製作或母帶掛名。",
+    "src": "https://www.discogs.com/release/1586999"
+   },
+   {
+    "f": "原盤條目登錄的 **10 軌**曲序：A 面 Light Of This World／You You You／Blessed Amnesia／Sham Art Suicide／Eternity Ltd.，B 面 Lion Brand／Anaconda／Ex-Man／F.U.N.／Striptancrankt——兩面各五軌。",
+    "src": "https://www.discogs.com/release/1586999"
+   },
+   {
+    "f": "Discogs 重發條目 3727770（Spirit Of Orr，編號 SO40R，released 欄 2004，格式 CDr x1 [Numbered, Reissue]，series 欄「CD-R Series｜Volume 8」）的註記欄寫「Re-Issue of Siltbreeze LP SB-29 from 1995.」，並沿用原盤那句錄音說明；**它的曲目只有 8 個索引**——前七個與黑膠前七軌同名同序，第八個索引寫成〈Ex-Man F.U.N.〉（把黑膠 B3 與 B4 兩個曲名併在一格），**黑膠 B5〈Striptancrankt〉在這份曲目表上沒有**。",
+    "src": "https://www.discogs.com/release/3727770"
+   },
+   {
+    "f": "那份 2004 年條目是**唯一登記曲長的來源**，八個索引的長度是：Light Of This World 10:53／You You You 4:49／Blessed Amnesia 4:18／Sham Art Suicide 7:38／Eternity Ltd. 5:05／**Lion Brand 12:04**／Anaconda 5:17／Ex-Man F.U.N. 2:29；八項相加 3153 秒（52 分 33 秒）。",
+    "src": "https://www.discogs.com/release/3727770"
+   },
+   {
+    "f": "MusicBrainz release-group 9aad052a 的欄位：title《Thunder Feedback Confusion》、first-release-date 1995、primary-type Album、secondary-types 空陣列、artist-credit「Temple of Bon Matin」；genres 欄 psychedelic rock 與 rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/9aad052a-3a0d-46b0-a7bf-0ef721ba169f"
+   },
+   {
+    "f": "以 release?release-group=9aad052a…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（1caef64f），1995、US、Official、Siltbreeze／SB-29、載體 12\" Vinyl、**10 軌**、無 barcode、**沒有登記任何曲長**；十個曲名與 Discogs 黑膠逐項對應，僅第 3 軌 MB 拼成〈Blessed **Amesia**〉（Discogs 作 Amnesia）。**MB 這一側沒有 2004 年那筆 CDr。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9aad052a-3a0d-46b0-a7bf-0ef721ba169f&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Discogs 廠牌頁 24980 的 Siltbreeze 簡介欄寫：「US label run by Tom Lax and focussing on the more experimental side of music: noise, leftfield sounds and strange effects.」；該頁的 urls 欄掛 Twitter、YouTube 頻道與 Bandcamp 三個網址，sublabels 欄列一條「Proletariat Idiots Productshun(Zzzz...)」。",
+    "src": "https://www.discogs.com/label/24980"
+   },
+   {
+    "f": "Apple Music 七個店面（us／gb／jp／ca／de／fr／au）以卡單掛名與盤名查詢都回 0 筆；我另以「Temple of Bon Matin」與「Temple Bon Matin Thunder」兩種寫法在美國店面重搜，**兩次都回 0 筆**——這個掛名在 Apple 上一張碟都沒有。",
+    "src": "https://itunes.apple.com/search?term=Temple+of+Bon+Matin&country=us&entity=album"
+   }
+  ],
+  "hookCandidates": [
+   "錄音的時間寫成「九二年聖誕」與「九三年夏天」，由兩個不同的人負責",
+   "十首歌，最長的一首十二分零四秒"
+  ],
+  "sound": "十軌的三人編制：一人身兼主唱與鼓（credit 欄上是兩條分開的掛名），一人貝斯，一人吉他——沒有製作或母帶掛名，錄音則由兩位不同的人各負責一段。曲長只有 2004 年那份重發條目登記過，落差極大：〈Lion Brand〉12:04 與開場的〈Light Of This World〉10:53 兩軌就佔掉二十三分鐘，其餘索引在 2:29 到 7:38 之間。封套是絹印再貼貼紙，條目註明顏色與貼紙位置每張都不同。Discogs 的 styles 欄在原盤與重發上一致掛 Lo-Fi 與 Psychedelic Rock，MB 的 genres 欄則是 psychedelic rock 與 rock。（本欄由 Discogs 兩份條目的 credit、註記與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Light Of This World",
+   "Lion Brand",
+   "Sham Art Suicide"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，無爭議：Discogs 原盤條目 1586999 的 released 欄 1995、MB release-group first-release-date 1995、MB 唯一那筆 release 的 date 1995、2004 年重發條目註記欄的「Re-Issue of Siltbreeze LP SB-29 from **1995**」——四處一致。**行文只能寫到年**：沒有任何來源給出月或日。另有兩個**不同性質**的時間點可用，但要說清楚是哪一件事：註記欄的「Christmas '92」與「Summer '93」是**錄音時間**，比發行年早了兩到三年（第 135 條）。2004 是重發年。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Siltbreeze 廠牌史與 Tom Lax 這個人**（Discogs 廠牌頁 24980；依第 128 條**只能寫成「Discogs 的 Siltbreeze 廠牌頁簡介欄說」**，**不得寫成「廠牌自己說」或「Tom Lax 說」**）；**Spirit Of Orr 的 CD-R 系列**；**Ed Wilcox 這個名字跨卡出現**這條線。\n**【本卡是全組 Siltbreeze 敘事的唯一出口】**：同批另有五張 Siltbreeze 系的卡——〈Union〉〈Music for the Other Head〉〈Furniture Music for Evening Shuttles〉〈Bonfire in a Dixie Cup〉〈Sink the Aging Process〉，再加上經銷掛 Siltbreeze 的〈Discus〉。**那六張全部禁用廠牌史**，本卡是唯一可以寫「這家廠牌是誰在經營、走什麼路線」的地方。\n**禁令**：(1) **不得寫壓量、份數、稀有度、二手價**（第 109 條，全批禁用）——**本卡有一處雷**：2004 年重發條目註記欄裡有「handwritten edition number ___ of 100」這一段，**那一段不得使用**；同段可用的是「Spraypainted digipak with xerox affixed to front」與「Copied small insert included」這類**製作方式**描述，以及格式欄的 Numbered 標記本身。原盤註記欄的「Cover silk screened with stickers placed on it. Colors & sticker placement differs from copy to copy.」可寫，**但不得由「每張都不同」推論份數或稀有度**。(2) **原盤軌數只能寫 10**——Discogs 黑膠與 MB 唯一那筆 release 一致 10 軌。**2004 年那份 CDr 的 8 個索引不是原盤軌數**：它把兩個曲名併成一格、又少了一軌，**行文絕對不得寫「這張碟有八首」，也不得說重發「刪掉了一首」——條目沒有說明為什麼少，那是推論**（第 136／140 條）。同理，**3153 秒那個總長只能說成「2004 年重發那八個索引的長度相加」，不得說成這張專輯的長度。**(3) **兩軌的曲名在兩份條目上寫法不同**（Blessed Amnesia／Blessed Amesia；Ex-Man 與 F.U.N. 分開或併成一格）——**只能寫成「不同條目上寫法不同」**。(4) **不得由曲名推論內容或出處**（第 110 條）——〈Anaconda〉〈Striptancrankt〉〈F.U.N.〉都沒有來源說明它們是什麼。(5) **Ed Wilcox 這個名字**也出現在同批第 15 張 Strapping Fieldhands《Discus》的曲目表上（B2 掛 Drums: Ed Wilcox）與其 2009 年重發的 credit 欄（Drums: Ed Wilcox (11)）。**這條跨卡線歸本卡**，第 15 張禁用；**但只能寫成「同一個名字也出現在另一張碟的客座鼓手欄上」**，**不得寫成「他也是某某團的成員」或「兩個團有交集」**——兩份條目本身沒有把兩者連起來（第 136 條）。**若拿不準就整條閒置（第 138 條）。**(6) 錄音者之一 John Boyko 這個名字**不得展開**——沒有來源說明他是誰。\n**探測層核對**：previews.json 標 `unavailable`（七個店面的 `tried` 都是 `1→0`）。我依第 152 條用兩種寫法在美國店面回搜，**兩次都是 0 筆**——這個掛名在 Apple 上完全沒有碟，**不是第 152 條那種「搜到了沒配上」，也不是第 139 條的空格陷阱**。**沒有可回補的東西，主線不要回補。**封面與試聽兩條線本卡都要當作沒有。"
+ },
+ {
+  "key": "desc2:Brother JT|Music for the Other Head",
+  "artist": "Brother JT",
+  "album": "Music for the Other Head",
+  "facts": [
+   {
+    "f": "Discogs 黑膠條目 2019622 記：掛名欄「Brother JT & Vibrolux」，廠牌 Siltbreeze，**編號欄同時列三種寫法 SB41／SB#41／SB-41**，country US，released 欄 1995，格式 Vinyl x1 [LP]；genres 欄同時掛 Jazz 與 Rock，styles 欄 Psychedelic Rock 與 Free Improvisation。",
+    "src": "https://www.discogs.com/release/2019622"
+   },
+   {
+    "f": "同一條目的註記欄解釋了那三種編號寫法的來源：「Cat# on spine 'SB41', on back cover 'SB#41' and on labels 'SB-41'.」，並註明「No printed track durations.」；identifiers 欄的兩面 runout 蝕刻「SB41 A [encircled:]-2 1-1」與「SB41 B 1-1」，另有壓印的 SRC 廠標。",
+    "src": "https://www.discogs.com/release/2019622"
+   },
+   {
+    "f": "黑膠條目的 credit 與 companies 欄：Guitar, Vocals: Brother JT／Guitar: John Boothman／Guitar: Wayne Hamilton (2)／Bass: Art Difuria／Drums: Simon Nagle——**五人編制、其中三人掛吉他**；Manufactured By 與 Distributed By 都是 Matador Records (2)，Recorded At: The Frizz，Pressed By／Mastered At: Specialty Records Corporation。",
+    "src": "https://www.discogs.com/release/2019622"
+   },
+   {
+    "f": "黑膠條目登錄的曲目只有 **4 軌，而且 A 面整面是一首**：A〈Comet〉20:16；B 面三軌——B1〈Music For The Other Head〉12:16、B2〈Blur〉3:47、B3〈Mind (Rot)〉4:07。",
+    "src": "https://www.discogs.com/release/2019622"
+   },
+   {
+    "f": "Discogs CD 條目 1724839（Siltbreeze／SB41，released 欄 1995，CD x1 [Album]，格式欄 text 標 Digipak，barcode 744861704126）曲目同 4 軌同序同長；註記欄寫「**Recorded: 3/95**」，並把內頁文字抄了下來：「\"It will come.\" 12/23/12」「1. COMET.... around 20 min.」「2. MUSIC FOR... oh, 10 min. or more.」「3. BLUR (twas) ....about 3 or 4 min., Lee.」「4. MIND (I don't...if you...or rot) 4 min.」「... the one inside the one.」——**碟上的曲長是用「大約二十分鐘」這種寫法印的**。",
+    "src": "https://www.discogs.com/release/1724839"
+   },
+   {
+    "f": "CD 條目的掛名欄記「Brother JT & Vibrolux」、封面實印（anv）欄記「Brother J.T. & Vibrolux」；credit 欄的五人編制與黑膠完全相同，styles 欄則從黑膠的 Free Improvisation 換成 Experimental。",
+    "src": "https://www.discogs.com/release/1724839"
+   },
+   {
+    "f": "MusicBrainz release-group 8ada67cc 的欄位：title《Music for the Other Head》、**first-release-date 1996**、primary-type Album、secondary-types 空陣列、**artist-credit 只寫「Brother JT」**（沒有 & Vibrolux）；**genres 欄是空陣列**；url 關聯欄也是空的。",
+    "src": "https://musicbrainz.org/release-group/8ada67cc-2a87-3f87-8915-873802bae3e4"
+   },
+   {
+    "f": "以 release?release-group=8ada67cc…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（9dfabd6b），**1996**、US、Official、Siltbreeze／SB41、載體 CD、**4 軌**、無 barcode；逐軌長度 Comet 20:16／Music for the Other Head 12:16／Blur 3:48／Mind (Rot) 4:07，四軌相加 2427 秒（40 分 27 秒）——**與 Discogs 兩筆條目的曲長逐項相同，差別只在 date 欄的年份。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8ada67cc-2a87-3f87-8915-873802bae3e4&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 206486637 的欄位：collectionName《Music for the Other Head》、**artistName「Brother JT」**（同樣沒有 & Vibrolux）、trackCount 4、**releaseDate 1996-09-20**、copyright「**℗ 1996 Siltbreeze**」；**逐軌核對**：四個曲名、曲序與秒數（1216／736／228／248 秒）與 MB 那筆逐項相同或差一秒，**不是加曲版也不是二合一**。",
+    "src": "https://music.apple.com/us/album/music-for-the-other-head/206486637"
+   },
+   {
+    "f": "Trouser Press 沒有這個掛名的條目——以 trouserpress.com/entry/brother-jt/ 查詢會被導回評論索引頁，以「brother jt」在站內搜尋回的都是不相干的條目（Bloodsport、Crowded House、Danielson 等）。MB 該 release-group 與 Discogs 兩筆條目也都沒有掛任何評論類的 url 關聯。",
+    "src": "https://trouserpress.com/?s=brother+jt"
+   }
+  ],
+  "hookCandidates": [
+   "A 面只有一首歌，二十分十六秒",
+   "碟上印的曲長是這樣寫的：「大約二十分鐘」「喔，十分鐘或更久」"
+  ],
+  "sound": "四軌、40 分 27 秒——一張碟被切成極不對稱的四塊：〈Comet〉20:16 佔掉整個 A 面、〈Music For The Other Head〉12:16 接在 B 面開頭，剩下兩軌加起來不到八分鐘（3:47 與 4:07）。編制是五個人，credit 欄上**三個名字掛吉他**，另有貝斯與鼓各一，主唱由其中一位吉他手兼任；沒有製作或母帶掛名，錄音地只寫了一個名字（The Frizz）。兩份條目都註明碟上沒有印精確曲長——CD 內頁把它寫成「大約二十分鐘」「喔，十分鐘或更久」這種說法。Discogs 在黑膠上把它掛進 Jazz 與 Rock 兩個 genres、styles 給 Psychedelic Rock 與 Free Improvisation，在 CD 上則改成 Psychedelic Rock 與 Experimental。（本欄由 Discogs 兩份條目的 credit、註記與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Comet",
+   "Music For The Other Head",
+   "Mind (Rot)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "**⚠️ 年份有爭議，行文與 hook 一律不得斷言發行年。**兩個資料庫**各有具體記載且互相矛盾**——Discogs 的黑膠（2019622）與 CD（1724839）兩筆原壓的 released 欄都寫 **1995**，CD 註記欄另寫「Recorded: 3/95」；MusicBrainz 的 release-group first-release-date 與唯一那筆 release 的 date 都是 **1996**，Apple 那筆的 releaseDate 1996-09-20 與 copyright ℗ 1996 Siltbreeze 也站在 1996 這一側。**依第 127 條附錄（不得拿一個有爭議的值去換另一個有爭議的值），卡單值 1995 不動，但行文不得說「一九九五年發行」，也不得說「一九九六年發行」。**\n**可用的替代錨點只有一個，而且要寫清楚它是什麼**：Discogs CD 條目註記欄的「Recorded: 3/95」是**錄音時間**（1995 年 3 月），不是發行日期——**行文可以寫「錄音記在一九九五年三月」，這在兩個年份說法之下都成立**。內頁那句「\"It will come.\" 12/23/12」是印在碟上的一行字，**日期形式不明、不得當成任何年份的證據**。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**「一張碟只有四軌、A 面整面一首」這個形狀**；Matador 的製造與經銷關係；內頁那份用大約數寫成的曲長表。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）——本卡只能寫「廠牌叫 Siltbreeze、編號 SB41」，**不得寫它是誰開的、走什麼路線；也不得寫「同一家廠牌同期還有誰」**（同批另有五張 Siltbreeze 系的卡，第 131／145 條）。(2) **不得寫壓量、份數、稀有度、二手價**（第 109 條，全批禁用）——**本卡有一處雷**：黑膠註記欄的第一句是「Limited edition LP one time pressing.」，**那一句整句不得使用**，連「只壓過一次」都不行。(3) **原盤軌數只能寫 4**——Discogs 黑膠、Discogs CD、MB 唯一那筆 release、Apple 四處一致（第 140／141 條已逐版比對）。(4) **年份不得斷言**（見 yearVerified）；**hook 也不得含年份**。(5) **掛名寫法有分歧**：卡片與 MB、Apple 用「Brother JT」，Discogs 兩筆用「Brother JT & Vibrolux」（CD 的封面實印欄還多兩個點，作 Brother J.T. & Vibrolux）。**卡片掛名採 MB 寫法（第 6／70／120 條）**；行文若要提 Vibrolux，**只能寫成「Discogs 兩份條目的掛名欄多了 & Vibrolux」**，**不得寫成「他的樂團叫 Vibrolux」**——沒有來源這樣說。(6) **不得寫任何傳記**——**本卡查不到任何署名樂評或藝人條目**（Trouser Press 沒有這個掛名，MB 與 Discogs 的 release 端都沒有評論類關聯）。策展提案裡的「賓州的 Brother JT（John Terlesky）」**我查不到來源，不得使用**；括號裡那個本名尤其不得寫。(7) **不得由曲名推論內容或出處**（第 110 條）——〈Comet〉〈Mind (Rot)〉都沒有來源說明它們是什麼；**內頁那句「... the one inside the one.」只能當成印在碟上的一行字照引，不得解釋。**(8) 三種編號寫法可以寫，**但要照註記欄的說明寫成「書脊、封底與唱片標籤上各印一種」**，不得說成廠牌印錯（第 128／136 條）。\n**探測層核對**：previews.json 標 ready、collectionId 206486637、**trackCount 4**。**trackCount 只有 4 這件事很容易被誤判成「這是單曲或 EP」，但那是錯的**——第 141 條處理過同一個形狀（Attrition《Death House》只有兩軌卻是專輯）。**這張碟本來就只有四軌**：Discogs 黑膠、Discogs CD、MB release 三處都是 4 軌，MB 的 primary-type 是 Album，總長 40 分 27 秒。**逐軌核對過**：Apple 四軌的曲名、曲序與秒數與 MB 逐項相同，**試聽可用、軌數可用**。**Apple 那筆的 releaseDate 1996-09-20 與 ℗ 1996 不得用來解決年份爭議**（見 yearVerified）。"
+ },
+ {
+  "key": "desc2:The Tower Recordings|Furniture Music for Evening Shuttles",
+  "artist": "The Tower Recordings",
+  "album": "Furniture Music for Evening Shuttles",
+  "facts": [
+   {
+    "f": "Discogs 黑膠條目 1262439 記：廠牌 Siltbreeze，編號 SB54，country US，**released 欄 1998-05-18**，格式 Vinyl x1 [LP, Album]；兩面 runout 蝕刻「SB 54-A」與「SB 54-B」；genres 欄 Rock 與「Folk, World, & Country」，styles 欄 Folk Rock 與 Avantgarde。",
+    "src": "https://www.discogs.com/release/1262439"
+   },
+   {
+    "f": "黑膠條目的註記欄逐句寫：「Recorded at The Tower Gallery, The Litterbox (NYC), St. Bridget's Church (Copake Falls), The Red House (Copake) & King St. Asylum (PC)」「A2 contains samples from [某張 LP 的 master 連結]」「**Completed in Feb 1998 w/adverts**」「Screened covers with full-page b/w insert」「Runouts are etched」；companies 欄把錄音地一條一條列出來——The Litterbox, New York, NY／St. Bridget's Church, Copake Falls, NY／The Red House, Copake, NY／**Kings Park Psychiatric Center**，混音地 Clockwork Sound Studio。",
+    "src": "https://www.discogs.com/release/1262439"
+   },
+   {
+    "f": "Discogs CD 條目 538823（Siltbreeze／SB54，released 欄 1998，CD x1，Glass Mastered At: Nimbus，matrix「SB54 · [Nimbus logo]」）的註記欄把取樣來源寫得更明確：「**Track 2 contains samples from \"Love Piece\" from the \"Sound Awareness\" LP by Brother Ahh.**」，另註「Track timings do not appear anywhere on the release.」；黑膠條目則在曲目表上把 A2〈Q Delmak-O〉掛成 Featuring [Samples]: Brother Ahh、Written-By: Os Mutantes 與 The Tower Recordings。",
+    "src": "https://www.discogs.com/release/538823"
+   },
+   {
+    "f": "CD 條目的 credit 欄把每個人的樂器一件件列出來，是全組最長的一份：Matt Valentine 掛人聲、五弦與六弦尼龍弦吉他、貝斯、Moon Marimba、Teisco Del Ray、Big Muff、磁帶、打擊、電子與混音；PG Six 掛人聲、鋼弦木吉他、鋼琴、風琴、大鍵琴、長笛、尺八、錫笛、大提琴、自動豎琴、Wurlitzer 電鋼琴、Tone Bender、電吉他、振盪器、磁帶操作、手鼓與混音；Helen Rush 掛人聲、尼龍弦木吉他、Korg Mono/Poly、環形調變器、打擊、電吉他與貝斯；S. Freyer 掛鼓與（含擴音的）打擊；Spanish Wolfman 掛 Fender Electric XII 與木吉他；Robert Henry Jones III 掛磁帶、磁帶迴圈與電子；Robert Ore 掛混音／組裝。",
+    "src": "https://www.discogs.com/release/538823"
+   },
+   {
+    "f": "CD 條目登錄的 **13 軌**曲長（曲目表最上方另有一行標題列「The 99 Aspects」，不是一軌）：Moon Rocks Off 4:37／Q Delmak-O 3:25／The Nine Billion Names Of God 2:58／Empress, Ache & Touch The Sun 3:00／Braille Metronome 2:17／The Other Side Of The 12th Planet Meadows 3:27／Omega Men & Women 2:17／Intergalactic Housing Don't Bother Me 2:18／Punk 3000 2:58／Future Wave 2:16／Lunar Discotheque 2:49／**Population One 6:23**／Ultra Dimensions Of Being 2:25。",
+    "src": "https://www.discogs.com/release/538823"
+   },
+   {
+    "f": "MusicBrainz release-group a97723ef 的欄位：title《Furniture Music for Evening Shuttles》、first-release-date 1998、primary-type Album、secondary-types 空陣列、artist-credit「The Tower Recordings」；**genres 欄是空陣列**；url 關聯欄也是空的。",
+    "src": "https://musicbrainz.org/release-group/a97723ef-5728-3c51-8672-c2fc0df4c88d"
+   },
+   {
+    "f": "以 release?release-group=a97723ef…&inc=recordings 逐版比對：MB 轄下兩筆 release **都是 1998、US、Official、Siltbreeze／SB-54、13 軌**——一筆是黑膠（80337b10，無 barcode），一筆是 CD（ffc066d2，barcode 0655030115424）。**兩筆的逐軌長度完全相同**：279／207／180／182／139／209／139／140／180／138／171／385／145 秒，十三軌相加 2494 秒（41 分 34 秒）。MB 把第 2 軌記成〈Delmak-O〉（Discogs 作 Q Delmak-O）、第 13 軌記成〈Ultra Dimension of Being〉（Discogs 作 Ultra Dimensions）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a97723ef-5728-3c51-8672-c2fc0df4c88d&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "黑膠與 CD 兩份 credit 欄有幾處不一致：黑膠把 S. Freyer 掛成「Tape [Tapes, Tape Loops], Electronics」而 CD 掛成「Drums, Percussion」；黑膠沒有 Robert Henry Jones III 這個名字；黑膠把第三位人聲寫成本名 **Pat Gubler**，CD 則寫成 **PG Six**——**兩份條目上的樂器分工與掛名寫法都對不齊。**",
+    "src": "https://www.discogs.com/release/1262439"
+   },
+   {
+    "f": "Trouser Press 的 Tower Recordings 條目（署名 Bill Cohen／Ben Goldberg，開頭並註明「This review was originally published in Badaboom Gramophone #3 and appears here by permission.」）在唱片列表把本作記為「Furniture Music for Evening Shuttles (Siltbreeze) 1998」；正文開頭寫「Drawing on a diverse pool of influences ranging from the pastoral folk of Pentangle and Incredible String Band to the odd rantings of Fall and Godz, Tower Recordings create a timeless music that borrows from numerous eras without really belonging to any of them. So far, they've dabbled in genres ranging from Kosmiche improvisation to backwoods country, but the New Yorkers always inject enough strangeness into whatever they do until it's quite unlike anything else you've heard.」",
+    "src": "https://trouserpress.com/reviews/tower-recordings/"
+   },
+   {
+    "f": "Apple Music 七個店面（us／gb／jp／ca／de／fr／au）以卡單掛名與盤名查詢都回 0 筆；我另以「The Tower Recordings」在美國店面重搜，回的前兩筆是同團的另外兩張碟——《The Galaxies' Incredibly Sensual Transmission Field of the Tower Recordings》（collectionId 28445486、6 軌、℗ 2004 Communion）與《Folkscene》（304436756、22 軌、℗ 2001 Communion label）——**沒有一筆是本碟**。",
+    "src": "https://itunes.apple.com/search?term=The+Tower+Recordings&country=us&entity=album"
+   }
+  ],
+  "hookCandidates": [
+   "錄音地列了五個：一間畫廊、一座教堂、一棟紅房子，還有一所精神病院",
+   "碟上沒有印任何一首歌的長度"
+  ],
+  "sound": "十三軌、41 分 34 秒，曲長異常整齊——十二軌落在 2:16 到 4:37 之間，只有〈Population One〉6:23 例外。編制是本組最龐雜的一份：七個名字，其中兩人的樂器欄各列了十件以上，橫跨尼龍弦與鋼弦木吉他、電吉他、貝斯、鋼琴、風琴、大鍵琴、Wurlitzer 電鋼琴、長笛、尺八、錫笛、大提琴、自動豎琴、馬林巴、Korg 合成器、環形調變器、振盪器、效果器（Big Muff、Tone Bender）、磁帶與磁帶迴圈、打擊與手鼓；混音／組裝另有專屬掛名。錄音分散在五個地點（一間畫廊、紐約的一處錄音點、兩座在 Copake 一帶的建物含一間教堂，以及一所精神病院），混音在另一處。有一軌在條目上標明含取樣，並列出取樣來源的曲名與專輯名。碟上沒有印曲長——CD 條目自己註明「Track timings do not appear anywhere on the release.」。（本欄由 Discogs 兩份條目的 credit、註記與曲長表、以及 MB 兩筆 release 的逐軌長度歸納，逐項數過，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Moon Rocks Off",
+   "Population One",
+   "Q Delmak-O"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1998,
+   "note": "1998 維持卡單原值，無爭議，而且**可以寫到日**：Discogs 黑膠條目 1262439 的 released 欄 **1998-05-18**、Discogs CD 條目 538823 的 released 欄 1998、MB release-group first-release-date 1998、MB 兩筆 release 的 date 都是 1998、Trouser Press 唱片列表的「(Siltbreeze) 1998」——**五處一致，只有 Discogs 黑膠那一筆精確到日**。**行文可寫到年；要寫到日必須註明那是 Discogs 黑膠條目的 released 欄。**另有一個**不同性質**的時間點：黑膠註記欄的「Completed in Feb 1998 w/adverts」是**完成（母帶／製作）月份**，不是發行日（第 135 條）。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**這張碟的錄音地清單**（本組唯一一張把五個錄音地一一列出來的卡）；**七人編制與那份長樂器表**；Trouser Press 對這個團的整段描述。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）——本卡只能寫「廠牌叫 Siltbreeze、編號 SB54」，**也不得寫「同一家廠牌同期還有誰」**（同批另有五張 Siltbreeze 系的卡，第 131／145 條）。(2) **原盤軌數只能寫 13**——Discogs CD、Discogs 黑膠、MB 兩筆 release 四處一致（第 140／141 條已逐版比對）。**注意一個容易數錯的地方**：Discogs CD 條目的曲目表最上方有一行沒有軌號的標題列「The 99 Aspects」，**那是一個段落標題不是一軌**，照著數會得到 14——**行文絕對不得寫 14**。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(4) **取樣那一軌只能照條目原句寫**：CD 註記欄寫的是「Track 2 contains samples from 'Love Piece' from the 'Sound Awareness' LP by Brother Ahh.」，黑膠曲目表另把該軌的作者欄掛給 Os Mutantes 與樂團自己。**可以寫「那一軌的條目上列了取樣來源與另一組作者」，不得描述被取樣的原曲、不得說明 Brother Ahh 或 Os Mutantes 是誰**（第 110 條）。**兩份條目對這一軌的說法本身就不同（一份說取樣、一份把作者掛給第三方），行文不得把兩者併成一句因果。**(5) **兩份 credit 欄對不齊的地方不得自行調和**（第 136 條）：同一個人在黑膠上掛磁帶與電子、在 CD 上掛鼓與打擊；CD 多一個黑膠沒有的名字；第三位人聲一份寫本名、一份寫別名。**行文若要寫編制，只能挑一份條目為準並註明是哪一份**，或只寫「條目上列了七個名字」這種不涉及分工的說法。(6) **Trouser Press 那段裡的比較對象（Pentangle、Incredible String Band、Fall、Godz）只能當引用轉述**，寫成「Trouser Press 那篇署名樂評說」（第 128 條），**不得改寫成本店對這張碟的判斷**；而且**那段講的是這個團的整體，不是這張碟**——該條目沒有給本作專門的段落，**引用時必須說清楚**。(7) **「Kings Park Psychiatric Center」這個錄音地照抄即可**，**不得推論為什麼在那裡錄、也不得加任何情境描述**（第 110／136 條）。(8) **不得由曲名推論內容或出處**（第 110 條）。\n**探測層核對**：previews.json 標 `unavailable`（七個店面的 `tried` 都是 `1→0`）。我依第 152 條用團名在美國店面回搜，**回的前兩筆是同團另外兩張碟（Communion 廠牌的《Folkscene》與《The Galaxies'…》），沒有一筆是本碟**——**可見不是掛名寫法的問題（排除第 139 條的空格陷阱），這張碟確實不在 Apple 上**。**沒有可回補的東西，主線不要回補。**封面與試聽兩條線本卡都要當作沒有。"
+ },
+ {
+  "key": "desc2:The Yips|Bonfire in a Dixie Cup",
+  "artist": "The Yips",
+  "album": "Bonfire in a Dixie Cup",
+  "facts": [
+   {
+    "f": "Discogs CD 條目 1659154 記：廠牌 Siltbreeze，編號 SB49，country US，**released 欄 1995**，格式 CD x1 [Album]；genres 欄 Rock，styles 欄 Indie Rock；註記欄只有一句——「Recorded at the Annex」。",
+    "src": "https://www.discogs.com/release/1659154"
+   },
+   {
+    "f": "同一條目的 credit 欄只有三條：**Guitar, Vocals: Gilmore Tamny**、Drums: Jon Davidson、**Producer, Engineer: Mike Rep**——演奏端兩個人，製作與工程由同一位第三者兼任。",
+    "src": "https://www.discogs.com/release/1659154"
+   },
+   {
+    "f": "CD 條目登錄的 **15 軌**曲序：Cut The Shit／Bonfire In A Dixie Cup／Short North Song／Muhammed Ali／Small But Sturdy Crocus／Why We Slosh So (For S. & L.)／Sometimes It's Fleatime／Arson／1st Place／Pitbull／Chapter Of Not Dying Twice／Wild Jeannie Dinner Roll／Late Bloomer (The Tracks)／String Dangling From The Lightbulb／Even That Fast Is Fast。",
+    "src": "https://www.discogs.com/release/1659154"
+   },
+   {
+    "f": "Discogs 黑膠條目 2529497（Siltbreeze，**同一個編號 SB49**，**released 欄 1996**，Vinyl x1 [LP]）曲目同 15 軌同序，**但沒有任何 credit 欄與註記欄**；七處曲名的寫法與 CD 不同——〈Sometimes It's Flea Time〉對〈Fleatime〉、〈First Place〉對〈1st Place〉、〈Latebloomer(The Tracks)〉對〈Late Bloomer (The Tracks)〉、〈String Dangling From **My** Lightbulb〉對〈From **The** Lightbulb〉、〈Why We Slosh So (For S. **And** L.)〉對〈(For S. **&** L.)〉。",
+    "src": "https://www.discogs.com/release/2529497"
+   },
+   {
+    "f": "MusicBrainz release-group cc7cade3 的欄位：title《Bonfire in a Dixie Cup》、**first-release-date 1996-04-23**、primary-type Album、secondary-types 空陣列、artist-credit「The Yips」；**genres 欄是空陣列**；url 關聯欄也是空的。",
+    "src": "https://musicbrainz.org/release-group/cc7cade3-620e-3946-8328-65fef1ab7854"
+   },
+   {
+    "f": "以 release?release-group=cc7cade3…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（a1917094），**1996-04-23**、US、Official、Siltbreeze／SB49、載體 CD、**15 軌**、無 barcode；逐軌長度 1:47／4:10／4:30／2:41／3:26／2:37／2:25／3:02／4:00／**0:33**／2:22／2:44／4:22／2:59／2:24，十五軌相加 2642 秒（44 分 02 秒）。**MB 這一側沒有那張 1996 年的黑膠。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cc7cade3-620e-3946-8328-65fef1ab7854&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 158609836 的欄位：collectionName《Bonfire In A Dixie Cup》、artistName「The Yips」、trackCount 15、**releaseDate 1995-02-14**、copyright「**℗ 1995 Siltbreeze**」；**逐軌核對**：十五個曲名、曲序與**逐軌秒數**（107／250／270／161／206／157／145／182／240／33／142／164／262／179／144 秒）與 MB 那筆逐項完全相同，**不是加曲版也不是二合一**；曲名寫法採的是與 CD 條目相近的一套（〈Muhammad Ali〉〈Small But Sturdy Crocui〉〈String Dangling From My Lightbulb〉）。",
+    "src": "https://music.apple.com/us/album/bonfire-in-a-dixie-cup/158609836"
+   },
+   {
+    "f": "第 10 軌〈Pitbull〉在 MB 與 Apple 兩處都登記為 **33 秒**，是整張碟最短的一軌；最長的是第 3 軌〈Short North Song〉4:30 與第 13 軌〈Late Bloomer (The Tracks)〉4:22——**十五軌裡有十三軌落在 1:47 到 3:26 之間，只有兩軌超過四分鐘（外加 4:00 整的第 9 軌）。**",
+    "src": "https://musicbrainz.org/release/a1917094-21ea-4298-822c-298b2a384b2c"
+   },
+   {
+    "f": "Discogs master 351393 把 1995 年 CD 與 1996 年黑膠兩筆歸在同一個 master 底下，**兩筆的欄位都沒有標 Unofficial**，而且兩筆用的是同一個編號 SB49。",
+    "src": "https://www.discogs.com/master/351393"
+   },
+   {
+    "f": "Trouser Press 沒有這個掛名的條目——以 trouserpress.com/entry/yips/ 查詢會被導到首頁，站內搜尋也回不到相關條目；MB 該 release-group 與 Discogs 兩筆條目都沒有掛任何評論類的 url 關聯。",
+    "src": "https://trouserpress.com/?s=the+yips"
+   }
+  ],
+  "hookCandidates": [
+   "十五首歌裡有一首只有三十三秒",
+   "同一個編號發過兩次：一次是 CD，一次是黑膠"
+  ],
+  "sound": "十五軌、44 分 02 秒的兩人編制：credit 欄上只有吉他兼主唱與鼓兩條演奏掛名，製作與工程由同一位第三者一手包辦。曲長分佈很集中——十三軌在 1:47 到 3:26 之間，兩軌過四分半（4:30 與 4:22），中間插進一首 33 秒的〈Pitbull〉。錄音地在註記欄裡只寫了一個名字（the Annex），沒有城市。Discogs 在 CD 與黑膠兩筆條目上都只給一個 styles 標籤（Indie Rock），MB 的 genres 欄則是空的。（本欄由 Discogs CD 條目的 credit 與註記欄、MB 該 release 的逐軌長度歸納，逐項數過，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Bonfire In A Dixie Cup",
+   "Short North Song",
+   "Pitbull"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "**⚠️ 年份有爭議，行文與 hook 一律不得斷言發行年。**兩邊**各有具體記載且互相矛盾**——**1995 這一側**：Discogs CD 條目 1659154 的 released 欄 1995（那是原壓的 CD），Apple 那筆的 releaseDate 1995-02-14 與 copyright ℗ 1995 Siltbreeze；**1996 這一側**：MusicBrainz release-group first-release-date 與唯一那筆 CD release 的 date 都是 **1996-04-23**（精確到日），Discogs 黑膠條目 2529497 的 released 欄 1996。**依第 127 條附錄，卡單值 1995 不動，但行文不得說「一九九五年發行」，也不得說「一九九六年」。**\n**兩件容易混淆的事要分開**：黑膠那筆的 1996 **不構成矛盾**（那是另一個載體、可以晚一年出）；真正對撞的是 **同一張 CD** 在 Discogs 記 1995、在 MB 記 1996-04-23。**行文若非提時間不可，只能寫成「商店頁與資料庫上的日期不一致」這種描述**，或改寫成完全不涉及年份的句子。"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**兩人編制加一位製作人**這條線；**同一個編號 SB49 在 CD 與黑膠上各用一次**這件事。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）——本卡只能寫「廠牌叫 Siltbreeze、編號 SB49」，**也不得寫「同一家廠牌同期還有誰」**（同批另有五張 Siltbreeze 系的卡，第 131／145 條）。**特別注意**：策展提案說「同一個編號 SB49 在 Siltbreeze 的廠牌頁上還掛給了 Un 的同名黑膠，是這家廠牌編號重複使用的一個實例」——**我沒有查到那筆條目，這句不得使用**；本卡能寫的編號重複只有**本張自己的 CD 與黑膠共用 SB49** 這一件（Discogs master 351393 上看得到）。(2) **年份不得斷言**（見 yearVerified）；**hook 也不得含年份**。(3) **原盤軌數只能寫 15**——Discogs CD、Discogs 黑膠、MB 唯一那筆 release、Apple 四處一致（第 140／141 條已逐版比對）。(4) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。(5) **不得寫任何傳記**——**本卡查不到任何署名樂評或藝人條目**（Trouser Press 沒有這個掛名，兩個資料庫的 release 端都沒有評論類關聯）。**credit 欄上的三個名字只能當掛名寫，不得展開成人物**；**尤其不得寫 Mike Rep 是誰**——沒有來源。(6) **不得由曲名推論內容或出處**（第 110 條）——〈Muhammed Ali〉〈Short North Song〉〈Arson〉都沒有來源說明它們寫的是什麼；**尤其不得把〈Muhammed Ali〉接到那位拳擊手身上**（曲名在三處還有兩種拼法）。(7) 七處曲名寫法差異**只能寫成「不同條目上寫法不同」**（第 136 條）。(8) 錄音地「the Annex」照抄即可，**不得推測它在哪座城市**。\n**【我在本卡下的裁定，記錄在此】**：策展提案的 risk 欄寫「研究層查不到署名樂評就優先剔除」。**我確實查不到署名樂評**，但本卡的 facts 撐得住——三份 release 條目、完整的演奏與製作 credit、逐軌長度、Apple 上架且逐軌秒數與 MB 完全吻合（試聽與封面都有著落）。**依此裁定保留**，理由記在這裡供主線覆核。\n**探測層核對**：previews.json 標 ready、collectionId 158609836、trackCount 15。**我逐軌核對過**：Apple 的十五軌不只曲名曲序與 MB 相同，**連逐軌秒數都完全一致**，可以確定是同一份母帶的上架，**試聽可用、軌數可用**。**但 Apple 那筆的 releaseDate 1995-02-14 與 ℗ 1995 不得用來解決年份爭議**（見 yearVerified）——它們只是站在 1995 那一側的兩個欄位。"
+ },
+ {
+  "key": "desc2:Alan Licht|Sink the Aging Process",
+  "artist": "Alan Licht",
+  "album": "Sink the Aging Process",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目 571284 記：廠牌 Siltbreeze，編號 SB31，country US，released 欄 1994，格式 Vinyl x1 [LP, Album]；genres 欄 Electronic 與 Rock，**styles 欄 Minimal、Avantgarde、Noise**；該條目沒有 identifiers 欄。",
+    "src": "https://www.discogs.com/release/571284"
+   },
+   {
+    "f": "同一條目的註記欄只有一句，而且把錄音方式寫得很具體：「**Solo guitar recorded live to 2 track at Snacktime, Hoboken, NJ, USA.**」；companies 欄一條 Recorded At: Snack Time。",
+    "src": "https://www.discogs.com/release/571284"
+   },
+   {
+    "f": "同一條目的 credit 欄共四條，**沒有一條是演奏掛名**：Design: Alan Licht、Layout: Pauline Mason、Layout: Simon Bodger、Recorded By: Fred Brockman——演奏的資訊只出現在註記欄那句「Solo guitar」裡。",
+    "src": "https://www.discogs.com/release/571284"
+   },
+   {
+    "f": "原盤條目登錄的曲目只有 **2 軌，一面一首**：A〈Polarity〉，Composed By 欄掛 **Mike Watt**；B〈Betty Page〉，Composed By 欄掛 Alan Licht——**整張碟兩首曲子分屬兩位作者，A 面那首不是本人寫的。**",
+    "src": "https://www.discogs.com/release/571284"
+   },
+   {
+    "f": "MusicBrainz release-group 8f4900da 的欄位：title 記成大寫 The 的《Sink The Aging Process》、first-release-date 1994、primary-type Album、secondary-types 空陣列、artist-credit「Alan Licht」；genres 欄 electronic、noise、rock 各 1 票；url 關聯欄是空的。",
+    "src": "https://musicbrainz.org/release-group/8f4900da-d900-4067-8efe-71bd288886d8"
+   },
+   {
+    "f": "以 release?release-group=8f4900da…&inc=recordings 逐版比對：MB 該 release-group 底下**只有一筆 release**（f9e21d89），1994、US、**status 欄是 null（既不是 Official 也不是別的，該欄未填）**、Siltbreeze／SB31、載體 12\" Vinyl、**2 軌**、無 barcode、**沒有登記任何曲長**；兩個曲名〈Polarity〉〈Betty Page〉與 Discogs 相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f4900da-d900-4067-8efe-71bd288886d8&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Trouser Press 的 Love Child 條目（署名 Deborah Sprague）把本作寫進正文，並在該條目的唱片列表裡以「Alan Licht — Sink the Aging Process (Siltbreeze) 1994」單列一行；正文那段是：「Licht's solo album betrays his more academic side, with protracted experiments in color and tone taking the place of rock qua rock structure. Fascinating in doses (a taster can be found on the pre-LP single 'Calvin Johnson Has Ruined Music for an Entire Generation,' an Olympia-directed salvo dripping with New York-intellectual chutzpah), Sink the Aging Process will fit neatly next to Metal Machine Music in your arsenal of, um, party platters.」",
+    "src": "https://trouserpress.com/reviews/love-child/"
+   },
+   {
+    "f": "同一篇 Trouser Press 條目在描述樂團陣容時寫道，這位吉他手是「guitarist/singer/drummer Alan Licht, who joined the other two in progress」，並在後段寫「Baum, who wrote and sings over half of Okay?, opted out of Love Child between the album's recording in February 1990 and its release late the following year. The band's drum duties were taken over by Brendan O'Malley, **freeing Licht to dedicate himself to guitar.**」",
+    "src": "https://trouserpress.com/reviews/love-child/"
+   },
+   {
+    "f": "Apple Music 七個店面（us／gb／jp／ca／de／fr／au）以卡單掛名與盤名查詢都回 0 筆；我另以「Alan Licht Sink the Aging Process」在美國店面重搜也回 0 筆，再以「Alan Licht」單獨搜尋回 20 筆——**沒有一筆是本碟**，回來的是《Havens》（collectionId 1765605465、℗ 2024 Black Editions）、《Currents》（1052954329、℗ 2015 Vin Du Select Qualitite）、《Three Chords and a Sword: Solo Cover Versions 1988-2021》（1644723383、℗ 2022 Family Vineyard）、《A New York Minute》（34383760、℗ 2003 Alan Licht）與多筆合作專輯。",
+    "src": "https://itunes.apple.com/search?term=Alan+Licht&country=us&entity=album"
+   },
+   {
+    "f": "Discogs 該條目的 styles 欄（Minimal／Avantgarde／Noise）與 MB 的 genres 欄（electronic／noise／rock）是本組**唯一兩邊都掛上 noise 類標籤**的一張；同一張碟的 genres 欄在 Discogs 上同時掛 Electronic 與 Rock。",
+    "src": "https://www.discogs.com/release/571284"
+   }
+  ],
+  "hookCandidates": [
+   "一面一首，兩首歌就是一整張唱片",
+   "A 面那首不是他寫的，作者欄上是另一個人的名字"
+  ],
+  "sound": "整張唱片只有兩軌，一面一首——**兩個資料庫都沒有登記曲長**，所以能說的只有結構：一首佔滿 A 面、一首佔滿 B 面，而且兩首的作者欄掛的是兩個不同的名字。credit 欄裡沒有任何演奏掛名，演奏資訊全在註記欄那一句話裡：獨奏吉他、現場直錄到兩軌、在紐澤西霍博肯的一處錄音點。條目上另有一位錄音者與兩位排版者，設計掛在本人名下。風格標籤是本組最偏一側的一組——Discogs 給 Minimal、Avantgarde 與 Noise，MB 給 electronic、noise、rock。（本欄由 Discogs 原盤條目的 credit、註記與曲目表歸納，構成它的原始值都在 facts 裡；**因為沒有曲長，本欄不描述任何長度或音色**。）",
+  "keyTracks": [
+   "Polarity",
+   "Betty Page"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，無爭議：Discogs 原盤條目 571284 的 released 欄 1994、MB release-group first-release-date 1994、MB 唯一那筆 release 的 date 1994、Trouser Press 唱片列表的「(Siltbreeze) 1994」——四處一致。**行文只能寫到年**：沒有任何來源給出月或日。\n**要小心的另一件事不是年份而是狀態**：MB 那筆 release 的 **status 欄是 null**（未填），所以第 43／57 條「標 Official 才算背書」在這張套不上；primary-type 本身是 Album。**行文不得斷言授權狀態，也不得寫「正式發行」這類措辭。**"
+  },
+  "notes": "**【互斥分派見〈How You Continue Dreaming〉那張的總表；本卡只列自己這一份】**\n**取得**：**Alan Licht 與 Love Child 這條線**（Trouser Press 那篇署名樂評）；**「一面一首、兩軌成一張專輯」這個形狀**；A 面那首的作者是別人這件事。\n**禁令**：(1) **Siltbreeze 廠牌史整條禁用**（分派給〈Thunder Feedback Confusion〉）——本卡只能寫「廠牌叫 Siltbreeze、編號 SB31」，**也不得寫「同一家廠牌同期還有誰」**（同批另有五張 Siltbreeze 系的卡；策展提案列的「同年目錄還有 Charalambides《Union》(SB26)、The Shadow Ring、Sam Esh」**整段禁用**——前者就是同批第 14 張，第 131／145 條）。(2) **原盤軌數只能寫 2**——Discogs 原盤與 MB 唯一那筆 release 一致 2 軌。**這個 trackCount 很容易被下游誤判成「這是單曲或 EP」，但那是錯的**：第 141 條處理過同一個形狀（Attrition《Death House》只有兩軌卻是專輯），**MB 的 primary-type 是 Album，Trouser Press 也把它稱作 Licht's solo album**。(3) **不得寫壓量、份數、稀有度、二手價**（第 109 條）；**也不得寫「串流上找不到」「已絕版」**——那等同稀有度陳述。(4) **A 面那首的作者只能照 Discogs 曲目表的 Composed By 欄寫成「作者欄掛的是 Mike Watt」**——**不得描述那首曲子的來歷、不得說明 Mike Watt 是誰、不得說這是翻奏或致敬**（第 110 條）。(5) **Trouser Press 那段的引用要守兩件事**：(a) 依第 128 條寫成「Trouser Press 那篇署名樂評說」；(b) **那段裡提到的另一張單曲（'Calvin Johnson Has Ruined Music for an Entire Generation'）與《Metal Machine Music》這個比較對象，只能當引用轉述，不得改寫成本店的判斷**，**也不得展開說明那張單曲或那張碟是什麼**。(6) **B 面曲名〈Betty Page〉不得接到任何真實人物身上**（第 110 條）——沒有來源說明它指的是誰。(7) **不得斷言授權狀態**（見 yearVerified）。(8) 「Snacktime」在註記欄與 companies 欄上有兩種寫法（Snacktime／Snack Time），**只能寫成「條目上兩處寫法不同」**。\n**探測層核對**：previews.json 標 `unavailable`（七個店面的 `tried` 都是 `1→0`）。我依第 152 條用盤名與掛名分別在美國店面回搜：盤名 0 筆，掛名回 20 筆但**沒有一筆是本碟**——同掛名近三十年的碟在 Apple 上有一整排（從 1996 年的合作專輯到 2024 年的新作），**可見不是掛名寫法的問題（排除第 139 條的空格陷阱），這張碟確實不在 Apple 上**。**沒有可回補的東西，主線不要回補。**封面與試聽兩條線本卡都要當作沒有。"
  }
 ]
