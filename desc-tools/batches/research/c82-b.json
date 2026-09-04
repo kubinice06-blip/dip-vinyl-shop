@@ -1,0 +1,362 @@
+[
+ {
+  "key": "desc4:松前公高|Space Ranch",
+  "artist": "松前公高",
+  "album": "Space Ranch",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25007，日本，CD 一張標 Album，發行年 1994）的內註只有一行：「Recording Date : August. 1994」。曲目九軌與曲長：1.〈Space Ranch〉7:48／2.〈Moon & Jupiter〉4:57／3.〈Flower Floor〉8:09／4.〈Gyratory Space Shakers〉2:19／5.〈Osmosis〉5:40／6.〈Galactic Bone〉12:47／7.〈Tab Enid〉7:24／8.〈Satelite Tab Enid〉7:44／9.〈Infiltration〉9:26。",
+    "src": "https://api.discogs.com/releases/463724"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Kimitaka Matsumae 一人掛 Music By [All Music Composed]、Arranged By、Instruments [All Instruments Played By]、Mixed By 與 Producer 五項；Kazunao Nagata 掛 Co-producer；Megumi Shigedomi 掛 Mastered By；Hibiki Tokiwa 掛 Art Direction, Design；Masaya Ebana 掛 Management [Artist Management]。公司欄記母帶製作於 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。",
+    "src": "https://api.discogs.com/releases/463724"
+   },
+   {
+    "f": "MusicBrainz release-group 2ef68b68-7fd3-34d3-b61c-fab08327b364：標題《Space Ranch》，artist-credit「松前公高」（漢字），first-release-date 1994，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2ef68b68-7fd3-34d3-b61c-fab08327b364?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目：轄下兩筆 release 都是 1994／JP／TRANSONIC RECORDS／TRS-25007，一筆 status Official、一筆 status Promotion；兩筆各九軌，曲序與曲長完全一致（〈SPACE RANCH〉468 秒、〈MOON & JUPITER〉298 秒、〈FLOWER FLOOR〉489 秒、〈GYRATORY SPACE SHAKERS〉139 秒、〈OSMOSIS〉340 秒、〈GALACTIC BONE〉768 秒、〈TAB ENID〉446 秒、〈SATELITE TAB ENID〉464 秒、〈INFILTRATION〉566 秒），曲名在 MB 一律全大寫。兩個資料庫都給九軌，且無任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2ef68b68-7fd3-34d3-b61c-fab08327b364&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 206375：條目名「Kimitaka Matsumae」，realname 欄填「松前 公高 (Matsumae Kimitaka)」，name variations 欄含「松前公高」「松前\"Harrier\"公高」「はりあ きみちゃん」「K. Matsumae」，別名欄「Harrier Kimichan」；groups 欄列 Hi-Posi、Space Ponch、Constance Towers、Expo (3)、Kidorikko、S.S.T. Band、Manual Of Errors；profile 欄記「Japanese composer, arranger, keyboardist... Born June 13, 1963 in Japan」。",
+    "src": "https://api.discogs.com/artists/206375"
+   },
+   {
+    "f": "Discogs 廠牌頁 785343（Transonic Records (4)）的 profile 欄寫：「Japanese label for techno, trance, electronic, experimental and improvised music, formed in April 1994 by Kazunao Nagata as a successor to the Trigger label. The label was laid to rest in 2004 with Kazunao Nagata now working with [ExT Recordings].」同頁 sublabels 欄列 Beautiful Challenge、Transonic Archives、Trinity Label、Trip Out Tapes、Zero Gravity (3) 五家。",
+    "src": "https://api.discogs.com/labels/785343"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases，依 catno 排序）記 TRS-250xx 序列開頭八號全在 1994 年：TRS-25001《Transonic (970-1450km/h)》（Various，Comp）、TRS-25002《Transonic 2 (Feedback)》（Comp）、TRS-25003《Transonic 3(Range)》（Comp）、TRS-25004《The Roots Of Transonic (Trigger Label 1990-1993)》（Comp）、TRS-25005 Mushroom Now!《Traveller's Light》、TRS-25006 Interferon《Seance-Room Music》、TRS-25007 本張、TRS-25008 Mind Design《View From The Edge》。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（2ef68b68-…）實測回 200，封面有圖。",
+    "src": "https://coverartarchive.org/release-group/2ef68b68-7fd3-34d3-b61c-fab08327b364/front"
+   },
+   {
+    "f": "Apple 日本店面以「松前公高 Space Ranch」查專輯，resultCount 回 0，沒有任何一筆結果；同一張碟以廠牌反查 MB 與 Discogs 都查得到條目，因此這是 Apple 端真的沒有上架，不是查詢寫法造成的空結果。",
+    "src": "https://itunes.apple.com/search?term=%E6%9D%BE%E5%89%8D%E5%85%AC%E9%AB%98%20Space%20Ranch&country=jp&entity=album&limit=25"
+   }
+  ],
+  "hookCandidates": [
+   "一張碟九軌，Discogs 的 credit 欄把作曲、編曲、全部樂器、混音與製作五個職務全掛在同一個名字上；廠牌主理人只掛 co-producer。",
+   "內註只寫一句「Recording Date : August. 1994」——廠牌四月開張，這張八月進錄音室，年底就成了目錄上的第七號。",
+   "MB 轄下兩筆 release 同編號同曲長，差別只在一筆標 Official、一筆標 Promotion。",
+   "同一位當事人在 Discogs 上有七個團體掛名與一個別名，本張是他自己的名字。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）九軌的獨奏電子作品：credit 欄記全部樂器由一人演奏、一人混音，曲長分布從 2:19 到 12:47，最長的〈Galactic Bone〉將近十三分鐘，末三軌〈Tab Enid〉〈Satelite Tab Enid〉〈Infiltration〉都在七分半以上。Discogs 給的曲風標記是 Electronic，風格標記 Experimental 與 Techno。",
+  "keyTracks": [
+   "Space Ranch",
+   "Galactic Bone",
+   "Infiltration"
+  ],
+  "status": "full",
+  "yearVerified": "1994 站得住。Discogs 原盤 released 欄 1994、MB first-release-date 1994、MB 轄下兩筆 release 的 date 皆 1994，三處一致，無分歧。月份只有內註的「Recording Date : August. 1994」（錄音月份，不是發行月份），行文可以斷言年份 1994，但不得把八月寫成發行月。",
+  "notes": "【互斥分派——Transonic 廠牌線歸本卡】本組十張 Transonic 卡（本卡、Mind Design、Mushroom Now!、Interferon、Suzukiski《Waiting》、Palomatic、Nina-Noho、Tagomago《Prelude for Afternoon》、Pacific 231《Tropical Songs Gold》、Inoyama Land）之中，**「Transonic 是誰在什麼時候創立、承接哪家廠牌、什麼時候收攤、有哪些子廠牌」這條廠牌史只准本卡寫**；其餘九張禁用，只能寫自己那張卡 credit／目錄編號上的具體值。\n【本卡特有限制】(1) 內註的「Recording Date : August. 1994」是**錄音**月份，不得寫成發行月份或「四個月做完一張碟」之類的推算。(2) 掛名採 MB 實體的漢字「松前公高」；Discogs 用羅馬拼音「Kimitaka Matsumae」，兩種寫法指同一人（Discogs artists/206375 的 realname 欄直寫「松前 公高」），行文不得暗示是兩個人。(3) 曲名〈Space Ranch〉〈Moon & Jupiter〉〈Galactic Bone〉〈Osmosis〉全是抽象／天文詞，**不得由曲名推論這是概念碟、太空主題碟或任何出處**（第 110 條，本批 ambient 線的高風險點）。(4) 不得寫壓量、份數、稀有度、二手價（第 109 條）——本卡來源裡也沒有這類值。\n【推翻策展層】策展層 curatorWhy 寫「與同批的 Mind Design、Mushroom Now!、Interferon 三張構成 Transonic 的創始名單」。**這句要修**：Discogs 廠牌目錄顯示 1994 年的 TRS-250xx 有八號，其中 TRS-25001／02／03／04 四筆是 Various 合輯（含《The Roots Of Transonic (Trigger Label 1990-1993)》），單一藝人專輯才是 25005–25008 這四張。行文可以說「開張第一年的四張個人專輯之一」，不得說「創始名單只有四張」。\n【全批禁令重述】第 145 條：本批任何「幾張裡有幾張」的統計量不入文。第 40／80 條：ja 維基〈TRANSONIC RECORDS〉與〈松前公高〉兩個條目**全篇 0 個行內引註**（實測 wikitext 內 <ref> 數為 0），依規定不採用，本卡的生平值一律走 Discogs 藝人頁的欄位。"
+ },
+ {
+  "key": "desc2:Mind Design|View From the Edge",
+  "artist": "Mind Design",
+  "album": "View From the Edge",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25008，日本，CD 一張標 Album，發行年 1994）的曲目表分兩段：前九軌 1.〈Sun〉5:37／2.〈Dimensional Leap〉6:57／3.〈Floating〉6:45／4.〈Planet Room〉5:59／5.〈Spiritual〉7:03／6.〈Stereophonic Landscape〉6:52／7.〈Ground〉8:00／8.〈Wave Of Changes〉5:59／9.〈Skywalk〉5:10，接著是一列標題列「Bonus Track」，其下第 10 軌〈Spiritual (Ms Funky-Acid Mix)〉6:42。",
+    "src": "https://api.discogs.com/releases/313589"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Mind Design 掛 Music By [All Tracks]、Producer、Mixed By；Koji Sakurai 的 Written-By 標註軌號 (3, 4, 5, 7, 8)，Tomonori Sawada 的 Written-By 標註軌號 (1, 2, 6, 9)；第 10 軌的 Remix 掛給 Drawing Future Life。另有 Kazunao Nagata 掛 Executive-Producer、Megumi Shigedomi 掛 Mastered By、T.T.J.A. 掛 Artwork；公司欄記母帶製作於 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。逐項數過：Sakurai 名下五軌、Sawada 名下四軌，合計九軌，正好是「Bonus Track」標題列以上的全部曲目；第 10 軌那首混音版不在兩人任一方的 Written-By 軌號區間內。",
+    "src": "https://api.discogs.com/releases/313589"
+   },
+   {
+    "f": "MusicBrainz release-group 95a34dc5-22e4-443f-8376-f38b51901646：標題在 MB 寫成全大寫的《VIEW FROM THE EDGE》，artist-credit 同樣全大寫「MIND DESIGN」，first-release-date 1994，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/95a34dc5-22e4-443f-8376-f38b51901646?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目：轄下只有一筆 release，1994／JP／TRANSONIC RECORDS／TRS-25008，共十軌，曲長依序 337／417／405／359／423／412／480／359／310／402 秒；MB 把第 10 軌寫成〈SPIRITUAL (MS FUNKY‐ACID MIX)〉，中間用的是 U+2010 連字號而非 ASCII hyphen。兩個資料庫都給十軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95a34dc5-22e4-443f-8376-f38b51901646&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 5765（Mind Design）的 members 欄只有兩個人：Koji Sakurai 與 Tomonori Sawada；profile 欄是空的，沒有任何自述。",
+    "src": "https://api.discogs.com/artists/5765"
+   },
+   {
+    "f": "Discogs 藝人頁 166042：條目名「Tomonori Sawada」，realname 欄「Tomonori Sawada」，別名欄列 Toronto (2) 與 Unreal (2)，groups 欄列 Mind Design 與 Fantastic Explosion，name variations 含「沢田朋伯」「澤田朋伯」。",
+    "src": "https://api.discogs.com/artists/166042"
+   },
+   {
+    "f": "Discogs 藝人頁 166040：條目名「Koji Sakurai」，realname 欄「Koji Sakurai」，groups 欄只列 Mind Design 一項，別名欄是空的，name variations 含「櫻井浩司」。",
+    "src": "https://api.discogs.com/artists/166040"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）在同一家廠牌名下另有一筆同掛名的碟：MTCT-1002，Mind Design《1991-1994》，年份 2000，格式欄標「CD, Comp」。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Apple 日本店面以「Mind Design View From The Edge」查專輯，resultCount 回 3，三筆分別是 Glee Cast《City of Angels - EP》、Elevation《Timeless Treasures: Open the Eyes of My Heart Lord》、Strung Out《Twisted By Design》，沒有一筆是本張。",
+    "src": "https://itunes.apple.com/search?term=Mind%20Design%20View%20From%20The%20Edge&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（95a34dc5-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/95a34dc5-22e4-443f-8376-f38b51901646/front"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄把九首正篇拆給兩個人：一人五首、一人四首，署名精確到軌號。",
+   "第十軌前面單獨立了一列「Bonus Track」，混音掛的是第三方的名字，不在兩位作曲者的軌號名單裡。",
+   "兩人組的其中一位在 Discogs 上另有兩個別名與另一個團；另一位的 groups 欄只有這一個團。",
+   "MB 把盤名與掛名都收成全大寫，卡片採 Title Case——同一張碟在不同資料庫是兩種字形。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）九首正篇的曲長密集落在 5:10 到 8:00 之間，沒有短曲也沒有超過十分鐘的長曲；末尾另附一首同名混音〈Spiritual (Ms Funky-Acid Mix)〉6:42，由第三方操刀。credit 欄記全碟由二人組自行製作與混音，Discogs 給的曲風標記是 Electronic、風格標記 Techno。",
+  "keyTracks": [
+   "Sun",
+   "Spiritual",
+   "Skywalk"
+  ],
+  "status": "full",
+  "yearVerified": "1994 站得住。Discogs released 欄 1994、MB first-release-date 1994、轄下唯一一筆 release 的 date 也是 1994，三處一致。無月份資料，行文不得給月份。注意同掛名另有一張 2000 年的《1991-1994》（Discogs MTCT-1002，格式標 Comp），那是另一張碟，年份與型別都不得混入本卡。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，**本卡禁用**（不得寫廠牌創立年、創辦人、承接 Trigger、2004 收攤、子廠牌名單）。本卡可寫的是自己的目錄編號 TRS-25008 與 credit 欄上 Kazunao Nagata 的具體職務（Executive-Producer），僅此而已。\n【本卡特有限制】(1) **軌數要寫十軌，不要寫九軌**：Discogs 與 MB 都給十軌，第 10 軌是原盤自帶的 bonus track，不是後來加的（Discogs 曲目表裡「Bonus Track」是一列標題列，不是獨立軌）。若行文要區分，只能說「九首正篇後另附一首同名混音」，不得說「原盤九軌」。(2) 「Sakurai 五首、Sawada 四首」這個歸納已逐項數過軌號 (3,4,5,7,8) 與 (1,2,6,9)（第 135 條），可以照寫；但**不得**再往前推「所以某人是主導者」。(3) 掛名是兩個英文常用字的組合，行文不得把 Apple 搜尋回的 Glee Cast／Strung Out 那三筆當成同一個掛名的其他作品。(4) 曲名〈Planet Room〉〈Skywalk〉〈Stereophonic Landscape〉是抽象詞，不得由曲名推論主題或出處（第 110 條）。\n【缺口】兩位成員除了 Discogs 藝人頁的 realname／groups 欄之外挖不到有引註的生平來源；Mind Design 的 Discogs profile 欄是空的。行文不得替他們補任何來歷。\n【全批禁令】第 109 條（壓量／稀有度／二手價）、第 145 條（全批統計量）、第 40／80 條（ja 維基 TRANSONIC RECORDS 條目 0 引註不採用）同樣適用。"
+ },
+ {
+  "key": "desc2:Mushroom Now!|Traveller's Light",
+  "artist": "Mushroom Now!",
+  "album": "Traveller's Light",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25005，日本，CD 一張標 Album，發行年 1994）只有五軌，而且每一軌都很長：1.〈Cosmic Koenji〉4:30／2.〈World Voyage〉11:16／3.〈2017 Space Flight〉26:10／4.〈Night Drive T. To Y.〉22:22／5.〈Frozen Road In The Rain〉10:00。",
+    "src": "https://api.discogs.com/releases/401962"
+   },
+   {
+    "f": "同一份原盤 credit 欄：作曲與製作掛的是縮寫「Y.S.」（Written-By [All Tracks], Producer），Kazunao Nagata 掛 Co-producer，Megumi Shigedomi 掛 Mastered By，Neurotic Eyes 掛 CGI Artist，Hibiki Tokiwa 掛 Layout [DTP]，Y.S. 另掛 Concept By [Visual Concept]。公司欄記錄音與混音都在 Hanagebyoon Studio、母帶在 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。",
+    "src": "https://api.discogs.com/releases/401962"
+   },
+   {
+    "f": "Discogs 藝人頁 109483：條目名「Mushroom Now!」，realname 欄直接填「Yoshihiro Sawasaki」；別名欄列 Y.S.、Meditation Y.S.、Yoshihiro Sawasaki、Doctor YS & the Cosmic Drunkards、Dr. YS、Techno The Gong、Guru Guru Green、DJ Everything OK!、Naturally Gushing、Onsen-Taro 共十項。",
+    "src": "https://api.discogs.com/artists/109483"
+   },
+   {
+    "f": "MusicBrainz release-group 0734ffd3-0ad9-4620-aaf2-39486c72d485：標題《TRAVELLER’S LIGHT》（U+2019 彎引號），artist-credit「MUSHROOM NOW!」，first-release-date 1994，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0734ffd3-0ad9-4620-aaf2-39486c72d485?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目，三筆 release 的軌數分歧很大：1994／JP／TRANSONIC RECORDS／TRS-25005 一張碟五軌（270／676／1570／1342／600 秒）；2021-10-06／JP／ExT Recordings／EXT-0037 兩張碟十三軌；同日另一筆標 disambiguation「bonus disc」的三張碟十四軌。**原盤是五軌**，2021 年那兩筆多出來的整整一張碟（〈AURORAL HEAT〉〈FLYING TEAPOT〉〈FROZEN COAST〉〈CLIMAX GO!〉〈BEFORE THE SUNSET〉〈FASCINATION 7〉〈SCIENTIST ON THE BEACH〉〈FROZEN ROAD〉）在 1994 年那筆裡一首都沒有。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0734ffd3-0ad9-4620-aaf2-39486c72d485&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs master 2606771 底下只有兩個版本：release 401962（Transonic TRS-25005，日本，1994，CD）與 release 21583183（ExT Recordings EXT-0037，日本，2021，CD），標題後者作《Traveller’s Light [Deluxe Edition]》。",
+    "src": "https://api.discogs.com/masters/2606771/versions?per_page=100"
+   },
+   {
+    "f": "2021 年那筆 ExT 版（release 21583183）的內註逐首列出第二張碟的曲目出處：「DISC 2 / 1. TRANSONIC 2 (FEEDBACK) / 2. MEDITATION Y.S. PRESENTS TECHNO THE GONG / 3. REMIX TRAX VOL.9 COSMIC SOUL II / 4. REMIX TRAX VOL.11 CHILL&EXPERIENCE THE ADVENTURE OF ELECTRO-ACOUSTICS / 5.6.7. UNRELEASED TRACK / 8. TRANSONIC (970-1450km/h)」，並註明 DISC 1 的五軌全部取自《TRAVELLER’S LIGHT》。同一筆的 credit 欄把作曲與製作寫成全名「Yoshihiro Sawasaki」，Kazunao Nagata 掛 Co-producer 與 Mastered By。",
+    "src": "https://api.discogs.com/releases/21583183"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1588849258）回的是 MUSHROOM NOW!《TRAVELLER’S LIGHT (DELUXE EDITION)》，trackCount 13，copyright 欄「℗ 2021 ExT Recordings」，releaseDate 2021-10-06；十三首曲名與 MB 那筆 2021 年 ExT release 的兩碟曲序一致。**Apple 上架的是 2021 年的加值版，不是 1994 年的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1588849258&country=jp&entity=song"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（0734ffd3-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/0734ffd3-0ad9-4620-aaf2-39486c72d485/front"
+   }
+  ],
+  "hookCandidates": [
+   "一張 CD 只放五首，其中兩首各佔二十二分鐘與二十六分鐘——曲目表本身就是編排上的宣告。",
+   "原盤 credit 上作曲者只寫兩個字母 Y.S.；二十七年後的加值版才把同一個人的全名印出來。",
+   "2021 年的加值版把第二張碟每一首的出處逐條列在內註裡，從合輯到未發表錄音一路標明。",
+   "Apple 日本店面上架的是那張十三軌的加值版；1994 年那張五軌的原盤在 Apple 上找不到。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）五軌、單人製作的長篇電子作品：最短的〈Cosmic Koenji〉4:30，其餘四軌都在十分鐘以上，〈2017 Space Flight〉26:10 與〈Night Drive T. To Y.〉22:22 兩首合計就佔掉大半張碟。credit 記錄音與混音同在一間工作室完成。Discogs 給的曲風標記是 Electronic、風格標記 Progressive Trance。",
+  "keyTracks": [
+   "2017 Space Flight",
+   "Night Drive T. To Y.",
+   "Frozen Road In The Rain"
+  ],
+  "status": "full",
+  "yearVerified": "1994 站得住：Discogs released 欄 1994、MB first-release-date 1994、MB 轄下 TRS-25005 那筆 release 的 date 1994，三處一致。**但年份很容易被 Apple 帶偏**——Apple 日本店面上架的是 2021-10-06 的 ExT 加值版，releaseDate 就寫 2021；行文一律以 1994 為準，任何「2021」的數字都不得出現在斷言年份的句子裡。",
+  "notes": "【互斥分派——ExT 後世重出線歸本卡】本組有四張卡的 MB／Discogs 版本頁掛著 ExT Recordings 的加值版（本卡 EXT-0037／2021、Interferon EXT-0041／2023、Palomatic EXT-0040／2023、Inoyama Land EXT-0026／2018）。**「Transonic 舊作在二十多年後被重新整理成加值版重出」這條線只准本卡寫**，其餘三卡只能寫自己那筆版本頁上的具體值（編號、年份、碟數、軌數），不得寫這條通則。\n【互斥分派——讓開給 a 組】Discogs artists/109483 顯示 Mushroom Now! 的 realname 欄就是 **Yoshihiro Sawasaki**，而 a 組卡單第一張正是 Yoshihiro Sawasaki《Perfumed Garden》（1994，Sublime Records）。**「Sawasaki 這個人是誰、他的別名有多少個」這條藝人線讓給 a 組**；本卡只寫「原盤 credit 署名 Y.S.、Discogs 藝人頁的 realname 欄填 Yoshihiro Sawasaki、2021 年加值版改印全名」這三個可回問的欄位值，**不得**展開他的生平或其他化名作品。（第 149／150 條：別名要填齊是為了讓真撞卡看得見，不是為了計數；本卡與 a 組那張是**不同的碟**，兩張都收，但敘事不能重複。）\n【本卡特有限制】(1) **原盤軌數是五軌**（Discogs 與 MB 的 1994 年那筆一致）。第 140／141 條的直接實例：MB 轄下另有 2021 年的十三軌與十四軌兩筆，Apple 回的也是十三軌那個版本——**行文給軌數時只能給五，且必須是指 1994 年原盤**。(2) 2021 年第二碟的八首在 1994 年原盤裡一首都沒有，內註也明說它們取自別的合輯與未發表錄音；不得把那八首寫進本張的曲目。(3) 曲名〈Cosmic Koenji〉〈Flying Teapot〉（後者只在 2021 年第二碟）帶地名與既有樂團作品同名詞，**嚴禁由曲名推論致敬、翻奏或出處**（第 110 條）。(4) Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。\n【推翻策展層】策展層 curatorRisk 寫「Apple Music 日本店面上架的版本標題帶『DELUXE EDITION』」——這一點正確，但它同時把該筆當成本卡的試聽來源。**研究層的判定：那是另一個版本（2021 ExT，十三軌），逐張複檢不得拿它的曲目或年份反推 1994 年原盤**（第 141 條）。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Interferon|Seance-Room Music",
+  "artist": "Interferon",
+  "album": "Seance-Room Music",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25006，日本，CD 一張標 Album，released 欄 1994-10-00）九軌與曲長：1.〈Balls Of Light〉9:44／2.〈Fantasy-Prone〉6:19／3.〈Hypnotic Regression〉5:37／4.〈Blasting Soul〉7:27／5.〈Levitation〉5:54／6.〈With Squirrel On Christmas Day〉11:04／7.〈Dawn Of Rainland〉8:32／8.〈Blasting Soul (Palomatic's Back To Home Mix)〉8:13／9.〈Dub Of Rainland〉7:18。",
+    "src": "https://api.discogs.com/releases/318679"
+   },
+   {
+    "f": "同一份原盤 credit 欄很短，只有三筆：Kiyoshi Hazemoto 掛 Composed By [All Tracks Composed]、Producer、Mixed By；T.T.J.A. 掛 Artwork；第 8 軌的 Remix 掛 Palomatic、第 9 軌的 Remix 掛 King Of Opus。公司欄只有 Transonic Records 的 ℗ 與 ©，沒有錄音室或母帶室的登錄。",
+    "src": "https://api.discogs.com/releases/318679"
+   },
+   {
+    "f": "MusicBrainz release-group f2c30922-4c34-4edb-8c29-e31d62bc1d92：標題《SEANCE‐ROOM MUSIC》（中間是 U+2010 連字號，不是 ASCII hyphen），artist-credit「INTERFERON」，first-release-date 1994-10，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f2c30922-4c34-4edb-8c29-e31d62bc1d92?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目：轄下只有一筆 release，1994-10／JP／TRANSONIC RECORDS／TRS-25006，共九軌，曲長依序 588／380／340／447／357／667／520／497／439 秒。兩個資料庫都給九軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f2c30922-4c34-4edb-8c29-e31d62bc1d92&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs master 354607 底下三個版本：release 318679（Transonic TRS-25006，日本，1994，CD）、release 3002428（Transonic Data Archives，無編號，日本，2011，格式欄「AAC, Album, Reissue, Remastered」，File）、release 27856551（ExT Recordings EXT-0041，日本，2023，格式欄「Album, Compilation, Deluxe Edition, Remastered」，CD 兩張）。三筆裡零筆標 Unofficial Release。",
+    "src": "https://api.discogs.com/masters/354607/versions?per_page=100"
+   },
+   {
+    "f": "2023 年那筆 ExT 版（release 27856551）的曲目分兩碟共十三軌：第一碟七軌，正好是原盤的第 1–7 軌；第二碟六軌〈Levitation (Another Mix)〉〈Blasting Soul (Palomatic’s Back To Home Mix)〉〈Lights In The Park〉〈Glimmer〉〈Hypnotic Regression (Armed)〉〈Dawn Of Rainland (Remixed By King Of Opus)〉。原盤的第 8、9 軌被搬到第二碟，另外四首在 1994 年那筆裡沒有。",
+    "src": "https://api.discogs.com/releases/27856551"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 1694852425）回的是 INTERFERON《SEANCE-ROOM MUSIC (DELUXE EDITION)》，trackCount 13，**releaseDate 欄寫 1994-10-01，但 copyright 欄寫「℗ 2023 ExT Recordings」**；十三首曲名與 Discogs 那筆 2023 年 ExT 版兩碟曲序一致。",
+    "src": "https://itunes.apple.com/lookup?id=1694852425&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs 藝人頁 110881：條目名「Kiyoshi Hazemoto」，realname 欄「櫨本浩 (Kiyoshi Hazemoto)」，別名欄列 Interferon、Feeler (2)、Hoarfrost (2)、Sigh Society、Ultra Invader、Earmuff、Maglev (3)；profile 欄記「Japanese sound designer, producer, arranger, and composer at Vanpool. Co-runs record label Microbe Recordings with Koji Takahashi (高橋コウジ, Palomatic).」",
+    "src": "https://api.discogs.com/artists/110881"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）記本張的編號 TRS-25006 夾在 TRS-25005 Mushroom Now!《Traveller's Light》與 TRS-25007 Kimitaka Matsumae《Space Ranch》之間，三張的年份欄都是 1994。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（f2c30922-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/f2c30922-4c34-4edb-8c29-e31d62bc1d92/front"
+   }
+  ],
+  "hookCandidates": [
+   "九軌的 credit 只有三筆：一個人包辦作曲、製作、混音，一個美術，兩首混音各掛一個外人。",
+   "碟上最後兩軌是同碟前面兩首的另一種版本，混音者一位來自同廠牌的另一個掛名。",
+   "同一位當事人在 Discogs 上有七個掛名，本張用的是其中一個；他與另一張同批卡的當事人合開一家廠牌。",
+   "Apple 把 2023 年加值版的發行日填成 1994 年 10 月，版權欄卻寫 ℗ 2023——同一頁上兩個年份互相打架。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）九軌、單人作曲與混音的電子作品，曲長從 5:37 到 11:04，最長的〈With Squirrel On Christmas Day〉超過十一分鐘。末兩軌是同碟曲目的重製版本，分別由 Palomatic 與 King Of Opus 操刀。Discogs 給的曲風標記是 Electronic、風格標記 Techno。",
+  "keyTracks": [
+   "Balls Of Light",
+   "With Squirrel On Christmas Day",
+   "Dawn Of Rainland"
+  ],
+  "status": "full",
+  "yearVerified": "1994 站得住，而且月份也有：Discogs released 欄 1994-10-00、MB first-release-date 1994-10、MB 唯一一筆 release 的 date 1994-10，三處一致，可以斷言 1994 年 10 月。**Apple 是本卡的年份陷阱**：collectionId 1694852425 的 releaseDate 寫 1994-10-01，但同一筆的 copyright 欄是「℗ 2023 ExT Recordings」、軌數 13——那是 2023 年加值版套用了原盤日期，行文不得拿 Apple 的 1994-10-01 當原盤的「確切發行日」。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。ExT 後世重出線歸 Mushroom Now!《Traveller's Light》，**本卡只能寫自己那筆 EXT-0041／2023／兩碟十三軌的具體值**，不得寫「Transonic 舊作近年被系統性重出」這條通則。\n【本卡特有限制】(1) **原盤軌數九軌**（Discogs 與 MB 一致）。2023 年 ExT 版是十三軌、Apple 回的也是十三軌，行文給軌數只能給九。(2) 第 140 條的實例：2023 年版的第一碟只收原盤前七軌，把原盤的第 8、9 軌移到第二碟，又混入四首原盤沒有的曲子——**軌號完全對不上原盤**，不得拿它的碟序回推本張的曲序。(3) Palomatic 是本組另一張卡（TRS-25010《Trill》）的掛名，Discogs 藝人頁記兩位當事人合開 Microbe Recordings；**「這兩人合開廠牌」這條線歸 Palomatic《Trill》那張**，本卡只寫「第 8 軌混音掛 Palomatic」這個 credit 欄事實。(4) 盤名《Seance-Room Music》與曲名〈Hypnotic Regression〉〈Levitation〉〈Balls Of Light〉都是靈異／超心理學詞彙，**不得由曲名或盤名推論這是概念碟、儀式錄音或任何主題設定**（第 110 條）。(5) MB 的盤名用 U+2010、卡片用 ASCII hyphen，是同形異碼，不是兩張碟。\n【缺口】原盤 credit 欄沒有錄音室、錄音日期與母帶室的登錄，公司欄也只有版權兩項——**「這張碟在哪裡、什麼時候錄的」查不到**，行文不得補。第 136 條：Discogs 條目上沒有，不等於唱片上沒有。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Suzukiski|Waiting",
+  "artist": "Suzukiski",
+  "album": "Waiting",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25013，日本，CD 一張標 Album，發行年 1995）共十五軌，曲長全部落在 2:18 到 5:40 之間：1.〈The End Of Something〉3:25／2.〈Toss-Up〉4:23／3.〈Far Enough From Tokyo〉3:17／4.〈Funk Around The World〉4:27／5.〈Width, Depth And Height〉3:32／6.〈Gemini Guide〉5:02／7.〈Feathers〉4:09／8.〈New You〉5:31／9.〈Perfection〉2:54／10.〈Enoshima〉2:18／11.〈Transtransonic〉5:22／12.〈Sixteen〉5:40／13.〈Chelsea〉4:42／14.〈Living In The Room〉4:59／15.〈Friendship Day〉4:24。",
+    "src": "https://api.discogs.com/releases/263906"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Takahiro Suzuki 掛 Written-By、Mixed By 與 Producer；Kazunao Nagata 另掛 Producer；T.t.j.a. 掛 Artwork。公司欄記母帶製作於 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。credit 欄沒有任何客席演奏者。",
+    "src": "https://api.discogs.com/releases/263906"
+   },
+   {
+    "f": "MusicBrainz release-group 3e84f6d0-fc32-472e-a7e2-5cd8624af023：標題在 MB 寫成全小寫的《waiting》，artist-credit「Suzukiski」，first-release-date 1995，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3e84f6d0-fc32-472e-a7e2-5cd8624af023?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目：轄下只有一筆 release，1995／JP／TRANSONIC RECORDS／TRS-25013，共十五軌，曲名在 MB 一律全小寫（〈the end of something〉〈toss‐up〉〈far enough from tokyo〉…），曲長依序 206／264／197／267／212／302／250／331／174／139／322／340／282／299／264 秒。兩個資料庫都給十五軌，且沒有任何一軌是別張專輯的同名曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3e84f6d0-fc32-472e-a7e2-5cd8624af023&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 藝人頁 110877：條目名「Suzukiski」，realname 欄「Takahiro Suzuki」，別名欄只有「Takahiro Suzuki」一項，profile 欄記「Stage name of electronic producer T. Suzuki」。",
+    "src": "https://api.discogs.com/artists/110877"
+   },
+   {
+    "f": "Discogs 藝人頁 166041（Takahiro Suzuki）：realname 欄「Takahiro Suzuki」，別名欄「Suzukiski」，groups 欄列 Fantastic Explosion，name variations 含「鈴木隆弘」，profile 欄記「Japanese electronic producer」。",
+    "src": "https://api.discogs.com/artists/166041"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）記同一掛名在同一集團裡的下一張是編號 ZGV-001 的 Suzukiski《Kamakura》（1996，CD, Album），而 ZGV 是 Transonic 名下另一條編號線；本張 TRS-25013 的前後號分別是 TRS-25012 King Of Opus《Circumstances Victimization》（1995）與 TRS-25014 Nina-Noho《Ambient Classics 1990-1992》（1996）。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Apple 日本店面以「Suzukiski Waiting」查專輯，resultCount 回 0，沒有任何一筆結果。",
+    "src": "https://itunes.apple.com/search?term=Suzukiski%20Waiting&country=jp&entity=album&limit=25"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（3e84f6d0-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/3e84f6d0-fc32-472e-a7e2-5cd8624af023/front"
+   }
+  ],
+  "hookCandidates": [
+   "十五首、每首都在兩分半到五分四十秒之間——一張碟裡沒有一首長曲，這在同廠牌同年的目錄裡是異數。",
+   "credit 欄只有三筆：一個人寫、混、製作，廠牌主理人並列製作人，一個美術。",
+   "同一位當事人的下一張碟換到集團另一條編號線的第一號上。",
+   "MB 把盤名與每一首曲名都收成全小寫；Discogs 收成 Title Case——同一張碟兩種字形。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）十五軌的獨奏電子作品，曲長區間 2:18–5:40，最短的〈Enoshima〉2:18、最長的〈Sixteen〉5:40，全碟沒有超過六分鐘的曲子。credit 記全部曲目由一人寫作與混音，沒有客席演奏者。Discogs 給的曲風標記是 Electronic、風格標記 Techno。",
+  "keyTracks": [
+   "The End Of Something",
+   "Gemini Guide",
+   "Friendship Day"
+  ],
+  "status": "full",
+  "yearVerified": "1995 站得住。Discogs released 欄 1995、MB first-release-date 1995、MB 唯一一筆 release 的 date 1995，三處一致，無分歧。無月份資料，行文不得給月份。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。**Zero Gravity 這條 ZGV 編號線歸 Suzukiski《Kamakura》**（同掛名的另一張卡，ZGV-001）——本卡雖然查到「下一張換到 ZGV-001」這個目錄事實，但**不得展開 Zero Gravity 是什麼廠牌**，只能寫編號本身。\n【同掛名兩張卡的分工】本組有兩張 Suzukiski（本卡 TRS-25013／1995、《Kamakura》ZGV-001／1996）。**當事人的身分線（本名 Takahiro Suzuki、藝名由來、Fantastic Explosion 的團籍）歸本卡**；《Kamakura》那張只寫自己的 credit 欄。反過來，**Zero Gravity 廠牌線歸《Kamakura》**，本卡禁用。\n【本卡特有限制】(1) 原盤十五軌，Discogs 與 MB 一致，可以斷言。(2) 「全部曲子都在六分鐘以內」這個歸納已逐軌數過十五個曲長值（第 135 條），可以照寫；若寫成「多數」「一半以上」之類的區間語，必須回去重數或整個拿掉。(3) 曲名〈Far Enough From Tokyo〉〈Enoshima〉〈Chelsea〉是地名，〈Transtransonic〉是廠牌名的變形——**一律不得由曲名推論這是旅行主題、地方誌或對廠牌的致敬**（第 110 條，本批 ambient 線的高風險點）。(4) Kazunao Nagata 在本卡 credit 上掛的是 Producer（不是別張卡上的 Co-producer 或 Executive-Producer），寫的時候要照抄本卡的職務名，不得跨卡混用。\n【缺口】原盤沒有錄音室、錄音日期的登錄；Apple 七個店面全數未命中（探測層 previews.json 記 jp／us／gb／de／fr／ca／au 皆 0），試聽拿不到。第 136 條：條目上沒有不等於唱片上沒有。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ },
+ {
+  "key": "desc2:Palomatic|Trill",
+  "artist": "Palomatic",
+  "album": "Trill",
+  "facts": [
+   {
+    "f": "Discogs 原盤條目（Transonic Records，編號 TRS-25010，日本，CD 一張標 Album，發行年 1995）九軌與曲長：1.〈Flutter〉6:29／2.〈Idiot〉7:02／3.〈Acrobatic〉5:20／4.〈Halo〉5:35／5.〈Foaming Waves〉6:47／6.〈Under The Ground〉5:54／7.〈Polomatica〉8:14／8.〈Source Of Light〉6:07／9.〈Soar〉6:28。（同一首在 MB 與 Apple 都拼成〈PALOMATICA〉，Discogs 這一筆拼成〈Polomatica〉。）",
+    "src": "https://api.discogs.com/releases/923781"
+   },
+   {
+    "f": "同一份原盤 credit 欄：Koji Takahashi 掛 Written-By 與 Mixed By，Palomatic 掛 Producer，Kazunao Nagata 掛 Co-producer，Megumi Shigedomi 掛 Mastered By，Chinori Cho 與 T.T.J.A. 掛 Design。公司欄記母帶製作於 Heart Beat Recording Studio，℗ 與 © 皆為 Transonic Records。",
+    "src": "https://api.discogs.com/releases/923781"
+   },
+   {
+    "f": "MusicBrainz release-group 92d83d1e-aa77-4159-bb30-2506b0cf0dfc：標題《TRILL》，artist-credit「PALOMATIC」，first-release-date 1995-03-20，primary-type Album，secondary-types 空。",
+    "src": "https://musicbrainz.org/ws/2/release-group/92d83d1e-aa77-4159-bb30-2506b0cf0dfc?inc=artist-credits+releases&fmt=json"
+   },
+   {
+    "f": "該 release-group 逐版開曲目，兩筆 release 的軌數不同：1995-03-20／JP／TRANSONIC RECORDS／TRS-25010 一張碟九軌（389／422／320／335／407／354／494／367／388 秒）；2023-05／JP／ExT Recordings／EXT-0040 標 disambiguation「Deluxe Edition」，共三張碟十六軌。**原盤是九軌**，2023 年那筆多出來的〈Foaming Waves (Mushroom Now! Remix)〉〈Consciousness Cafe〉〈Drain〉〈Joy〉〈Flow〉〈Jus〉〈Consciousness Dub〉在 1995 年那筆裡一首都沒有。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92d83d1e-aa77-4159-bb30-2506b0cf0dfc&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs master 354610 底下五個版本：release 923781（Transonic TRS-25010，日本，1995，CD）、release 3002434（Transonic Data Archives，日本，2011，AAC File，標 Reissue, Remastered）、release 26750198（ExT Recordings EXT-0040，日本，2023，CD 兩張，標 Deluxe Edition, Reissue, Remastered）、release 30222329（Feedback Waves FWAVE001，德國，2024，12 吋 33⅓ 轉黑膠，標 Reissue, Remastered）、release 34744743（Transonic Records TRS-25010，日本，2024，FLAC File）。五筆裡零筆標 Unofficial Release。",
+    "src": "https://api.discogs.com/masters/354610/versions?per_page=100"
+   },
+   {
+    "f": "Apple 日本店面 lookup（collectionId 449098077）回的是 PALOMATIC《Trill》，trackCount 11，releaseDate 2011-07-20，copyright 欄「℗ TRANSONIC DATA ARCHIVES」；十一軌是原盤九軌之後再加〈FOAMING WAVES (MUSHROOM NOW! REMIX)〉7:51 與〈CONSCIOUSHESS CAFE〉7:29 兩首。**Apple 上架的是 2011 年的數位版，不是 1995 年的九軌原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=449098077&country=jp&entity=song"
+   },
+   {
+    "f": "Discogs 藝人頁 110880：條目名「Palomatic」，realname 欄「Koji Takahashi」，別名欄列 Koji Takahashi、T2 (16)、Robot-Compo；profile 欄記「Co-runs his record label Microbe Recordings with Kiyoshi Hazemoto. Had some past involvement with Denki Groove and also recorded under the aliases of Takahashi Tektronix, T2, Mutron and Robot Compo.」",
+    "src": "https://api.discogs.com/artists/110880"
+   },
+   {
+    "f": "同集團的另一張碟 Interferon《Seance-Room Music》（Transonic TRS-25006，1994）的 credit 欄裡，第 8 軌〈Blasting Soul (Palomatic's Back To Home Mix)〉的 Remix 掛的正是 Palomatic；而 Interferon 的當事人 Kiyoshi Hazemoto，正是 Discogs 藝人頁裡與 Koji Takahashi 合開 Microbe Recordings 的那一位。",
+    "src": "https://api.discogs.com/releases/318679"
+   },
+   {
+    "f": "Discogs 廠牌目錄頁（labels/785343/releases）記本張編號 TRS-25010 的前後號：TRS-25009《Transonic 4 (In-Out)》（Various，1995，Comp）與 TRS-25011《Transonic 5 -Re-Entry-》（Various，1995，Comp），兩側都是廠牌自家的合輯。",
+    "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+   },
+   {
+    "f": "Cover Art Archive 的 release-group front 端點（92d83d1e-…）實測回 404，此 release-group 下沒有封面圖。",
+    "src": "https://coverartarchive.org/release-group/92d83d1e-aa77-4159-bb30-2506b0cf0dfc/front"
+   }
+  ],
+  "hookCandidates": [
+   "九首曲子的長度全部落在 5:20 到 8:14 之間，一張碟的呼吸幅度被壓得很窄。",
+   "同一首曲名在三個資料庫有兩種拼法：Discogs 寫 Polomatica，MB 與 Apple 都寫 Palomatica。",
+   "本張的當事人與同廠牌另一張卡的當事人合開一家廠牌；兩人也在對方的碟上互相掛混音。",
+   "這張九軌的碟後來在四個地方各出了一次：數位、加值版、德國黑膠、無損檔。"
+  ],
+  "sound": "（本欄由研究層依上列 facts 歸納，構成它的原始值都在 facts 裡）九軌、單人寫作與混音的電子作品，曲長區間 5:20–8:14，全碟沒有短曲也沒有超過九分鐘的曲子，最長的是第七軌 8:14。credit 記製作由當事人自己的掛名擔任、廠牌主理人並列 co-producer。Discogs 給的曲風標記是 Electronic，風格標記 Downtempo 與 Ambient。",
+  "keyTracks": [
+   "Flutter",
+   "Foaming Waves",
+   "Source Of Light"
+  ],
+  "status": "full",
+  "yearVerified": "1995 站得住，而且 MB 給到日：MB first-release-date 1995-03-20、MB 那筆日本原盤 release 的 date 也是 1995-03-20；Discogs released 欄只寫 1995。兩處不衝突（一個較粗、一個較細），行文可以斷言 1995，要寫到日的話以 MB 的 1995-03-20 為準並註明來源。**Apple 是本卡的年份陷阱**：collectionId 449098077 的 releaseDate 是 2011-07-20、軌數 11、copyright 欄「℗ TRANSONIC DATA ARCHIVES」，那是後來的數位版。",
+  "notes": "【互斥分派】Transonic 廠牌史歸 松前公高《Space Ranch》，本卡禁用。ExT 後世重出線歸 Mushroom Now!《Traveller's Light》，本卡只能寫自己那筆 EXT-0040／2023 的具體值。**「Koji Takahashi 與 Kiyoshi Hazemoto 合開 Microbe Recordings、兩人在對方的碟上互掛混音」這條線歸本卡**；Interferon《Seance-Room Music》那張禁用，只能寫它自己 credit 欄上「第 8 軌 Remix 掛 Palomatic」這一項。\n【本卡特有限制】(1) **原盤九軌**（Discogs 與 MB 的 1995 年那筆一致）。第 141 條的直接實例：Apple 給 11、2023 年 ExT 版給 16，**行文給軌數只能給九**。(2) 第 7 軌的曲名兩種拼法（Discogs〈Polomatica〉／MB 與 Apple〈Palomatica〉）**兩邊都不要當成定本**：若要寫進 keyTracks 或行文，請避開這一首，或明寫「資料庫拼法不一」。本卡 keyTracks 已刻意避開它。(3) 曲名〈Flutter〉〈Halo〉〈Foaming Waves〉〈Soar〉全是抽象詞，不得由曲名推論主題、場景或出處（第 110 條）。(4) master 版本頁上「德國黑膠」「無損檔」等格式值可以寫，但**不得寫壓量、份數、稀有度或二手價**（第 109 條）——版本頁上也沒有這些值。\n【推翻策展層】策展層 curatorRisk 未提 Apple 那筆是 2011 年數位版；研究層補上，並判定它**不能**當本卡的軌數或年份依據（第 141 條）。\n【缺口】原盤沒有錄音室與錄音日期的登錄（只有母帶室）。第 136 條：條目上沒有不等於唱片上沒有。\n【全批禁令】第 109 條、第 145 條、第 40／80 條照舊適用。"
+ }
+]
