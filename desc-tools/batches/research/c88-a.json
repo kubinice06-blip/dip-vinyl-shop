@@ -738,5 +738,369 @@
   "status": "full",
   "yearVerified": "卡片 `year` 1994 = **唱片首度發行年**，與電影上映年同年（MB first-release-date 1994-06-27；MB 那筆 Epic Soundtrax 的 US release 記 1994-06-28）。本卡沒有落差。**但 Apple 上唯一在架的是 2001 年的收藏版**（℗ 2001），**那個年份不得寫成本張的年份**。",
   "notes": "**這一張是哪一種原聲帶**：是**收錄既有錄音的歌曲合輯**（MB secondary-types 明列 Compilation 與 Soundtrack），三十二個位置裡只有末軌是為本片寫的配樂組曲。**行文必須寫成「歌曲合輯」**，**禁止寫成「配樂」**；同片另有一張 Alan Silvestri 的配樂盤（21 軌），**不得與本張混用**。依 §5.6，本卡 releaseType 標 Compilation。\n**軌數**：MB（16＋16）與 Discogs（32）一致，可寫「兩張碟、三十二個位置」。**2001 年那版是 16＋18，Apple 上的 34 軌就是它，不得混用。**\n**互斥分派——本張獨占「選曲原則（音樂製作人與導演怎麼挑歌）」這條線**（Joel Sill 的引述、Zemeckis 要求全部美國藝人）。本張**禁用**：委託經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、獎項、榜單與認證（維基〈Commercial performance〉那一段**整段沒有行內引註，依第 40／80 條不得採用**）、逐軌授權（那條歸 The Matrix）、選曲來源。\n**第 154 條**：`sound` 不得寫「幾首裡有幾首」；本張表演者眾多，**行文一律只寫端點或逐項舉例，不要數**。\n**第 110 條**：不得由曲名或表演者推論年代——**曲目的原始發行年不在任何一份 facts 裡，因此「橫跨幾〇年代」這種句子一律不得寫**。\n**第 143 條標記**：本張採用的維基段落是引述而非榜單，預期不會觸發「未具名出處」；若觸發依第 128 條寫成「英文維基百科的條目引述音樂製作人說」。\n**探測層（本層部分推翻，但結論維持 unavailable）**：探測層標 unavailable。依第 152 條再查兩條路徑後**確認 Apple 上有同名條目但那是 2001 年的 34 軌收藏版**，與本卡釘住的 1994 年 32 軌原盤不是同一版；**依第 140／141 條不採為固定試聽，維持 unavailable**，理由改記為「Apple 上只有 2001 收藏版，無 1994 原盤」。"
+ },
+ {
+  "key": "desc2:Various Artists|The Matrix: Music From the Motion Picture",
+  "artist": "Various Artists",
+  "album": "The Matrix: Music From the Motion Picture",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a3c0fafc 的欄位：title《The Matrix: Music From the Motion Picture》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、first-release-date **1999-03-30**、primary-type Album、secondary-types [Soundtrack]，轄下 11 個 release。",
+    "src": "https://musicbrainz.org/release-group/a3c0fafc-63a8-3cf5-95ac-d11292e04890"
+   },
+   {
+    "f": "MB 該 release-group 的 1999-03-30 US release（70087da2）欄位：US、status Official、廠牌欄 **Maverick**、編號 **9 47390-2**、barcode 093624739029、一張 CD、track-count **13**；同組 2017-08-04 GB 的雙黑膠（Real Gone Music RGM-0541）是 6＋7 軌，1999 JP 版的盤名是《マトリックス／オリジナル・サウンドトラック》（wea WPCR-10372）。",
+    "src": "https://musicbrainz.org/release/70087da2-9e33-3499-880a-af3bcf549a4d"
+   },
+   {
+    "f": "同一筆 release 的十三軌各掛一組表演者：Marilyn Manson、Propellerheads、Ministry、Rob D、Meat Beat Manifesto、Lunatic Calm、Prodigy、Rob Zombie、Deftones、Hive、Monster Magnet、Rammstein、Rage Against the Machine；曲長最短〈Rock Is Dead〉3:10，最長〈Clubbed to Death (Kurayamino mix)〉7:26。",
+    "src": "https://musicbrainz.org/release/70087da2-9e33-3499-880a-af3bcf549a4d"
+   },
+   {
+    "f": "Discogs release 236201 的欄位：Various《The Matrix: Music From The Motion Picture》、Maverick 9 47390-2、US、CD ×1［Compilation］、released 欄 1999、13 軌；genre 欄 Electronic／Rock／Stage & Screen，style 欄 Breakbeat、Alternative Rock、Techno、Industrial。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "同一條目的註記欄**逐軌抄下授權來源與各軌自己的 ℗ 年**：第 1 軌 ℗ 1998 Nothing/Interscope Records；第 2 軌 ℗ 1998 Propellerheads；第 3 軌 ℗ 1999 Warner Bros. Records；第 4 軌 ℗ 1995 A&M Records；第 5 軌 ℗ 1998 Play It Again Sam (SPRL)；第 6 軌 ℗ 1998 Universal Music (UK) Ltd；第 7 軌 ℗ 1997 XL Recordings Ltd。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "同一註記欄後半：第 8 軌 ℗ 1998 Geffen Records inc；第 9 軌 ℗ 1997 Maverick Recording Company；第 10 軌 ℗ 1998 London records USA；第 11 軌 ℗ 1995 A&M Records Inc；第 12 軌 ℗ 1997 Motor Music GmbH；第 13 軌 ℗ 1992 Sony Music Entertainment Inc——**十三軌的 ℗ 年從 1992 到 1999 都有**。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "同一條目的 Rights Society 欄按軌分派：第 1、3、5、11 軌標 BMI；第 2、4、6 至 10、12、13 軌標 ASCAP；第 4 軌另標 PRS；第 12 軌另標 GEMA。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "同一條目的 credit 欄：Supervised By [Music Supervisor]「Jason Bentley」、Executive-Producer「Guy Oseary」與「Russ Rieger」、Mastered By「Steve Hall」、Art Direction「Kevin Reagan」、Design「Stefan G. Bucher」；公司欄 Record Company「Time Warner」、Phonographic Copyright (p) 與 Copyright (c)「Maverick Recording Company」、Copyright (c)「Warner Bros.」與「Village Roadshow Films (BVI) Limited」、Mastered At「Future Disc」。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "同一條目的註記欄還記下第 10 軌〈Ultrasonic Sound〉取樣了兩首曲子並各自標明出版與授權：「Doorways I Haven't Found」（Anita Kerr 與 Rod McKuen 作，Stanyan Music Group／Anita Kerr Music ASCAP）與「Re-ignition」（Bad Brains Publishing ASCAP，SST Records 提供）。",
+    "src": "https://www.discogs.com/release/236201"
+   },
+   {
+    "f": "Apple Music：以完整盤名在十一個 storefront 各搜到 8–12 筆、一筆都沒配上；本層依第 152 條再以核心字（The Matrix、Matrix soundtrack）在 **us 與 gb** 各取 25 筆複查，回的全部是 **Don Davis 的配樂盤**（1443853659《The Matrix (Original Motion Picture Score)》10 軌、1574417068《The Matrix (The Complete Score)》44 軌、1776050075 二十五週年擴充版 18 軌）與同名的無關單曲，**沒有本張這張十三軌的歌曲合輯**。",
+    "src": "https://music.apple.com/us/album/1443853659"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌，十三家唱片公司，十三個不同的年份",
+   "唱片背面把每一軌是跟誰借的都寫了出來"
+  ],
+  "sound": "十三軌各掛一組表演者，沒有任何一組出現兩次；唱片註記逐軌標出授權來源與該軌自己的 ℗ 年，最早的標 1992、最晚的標 1999。曲長從〈Rock Is Dead〉的 3:10 到〈Clubbed to Death (Kurayamino mix)〉的 7:26。（本欄由 Discogs release 236201 的註記欄與 MB release 70087da2 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Clubbed to Death (Kurayamino mix)",
+   "Spybreak! (Short One)",
+   "Wake Up"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1999 = **本張合輯的發行年**，與電影上映年同年（MB first-release-date 1999-03-30；Discogs released 欄 1999）。**但收在裡面的錄音不是 1999 年的**：Discogs 註記欄逐軌標的 ℗ 年從 1992 到 1999 都有。**行文若提到年份必須分清楚「這張碟的年份」與「某一軌錄音的年份」**。",
+  "notes": "**這一張是哪一種原聲帶**：是**收錄既有錄音的歌曲合輯**，**不是**同片的另一張 Don Davis 配樂盤。**行文必須寫成「歌曲合輯」**，**禁止寫成「配樂」**，也**禁止把 Don Davis 的曲目寫成本張曲目**。依 §5.6，本卡 releaseType 標 Compilation，MB primary-type 是 Album。\n**軌數**：MB、Discogs、Apple 三處對得起來的原盤是 **13 軌**，可寫；2017 年雙黑膠的 6＋7 與各種 Don Davis 版本一律不得混用。\n**互斥分派——本張獨占「逐軌授權與各軌自己的 ℗ 年」這條線**。本張**禁用**：委託經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、獎項、榜單與認證、選曲原則、選曲來源、對白軌。\n**第 40／80 條**：英文維基百科〈The Matrix: Music from the Motion Picture〉條目**開頭就掛 {{More citations needed}}、正文段落沒有行內引註**，**整條目不得採用**——本卡的所有事實只用 MB 與 Discogs。\n**第 110 條**：不得由曲名推論翻奏、改編或取樣——**唯一可寫的取樣是 Discogs 註記欄明寫的第 10 軌那兩筆**。\n**第 151 條**：MB 上另有一百五十個以上同名的《The Matrix》release-group（樂團 The Matrix、Mother Mother 等），JP 版盤名是片假名《マトリックス／オリジナル・サウンドトラック》；下游做字串比對前要先確認兩邊用的是同一套命名。\n**探測層（本層確認）**：探測層標 unavailable。依第 152 條再查兩條路徑（完整盤名十一個 storefront、核心字在 us 與 gb 各 25 筆），**確認 Apple 上只有 Don Davis 的配樂盤、沒有這張歌曲合輯**，維持 unavailable。"
+ },
+ {
+  "key": "desc2:Various Artists|O Brother, Where Art Thou? Music From a Film by Joel Coen & Ethan Coen",
+  "artist": "Various Artists",
+  "album": "O Brother, Where Art Thou? Music From a Film by Joel Coen & Ethan Coen",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6fb9820a 的欄位：title《O Brother, Where Art Thou? Music From a Film by Joel Coen & Ethan Coen》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、first-release-date **2000-10-23**、primary-type Album、secondary-types [Soundtrack]，轄下 20 個 release。",
+    "src": "https://musicbrainz.org/release-group/6fb9820a-99cc-318f-bae4-44992f2b7ffa"
+   },
+   {
+    "f": "MB 該 release-group 的 2000 US release（3d57a436）欄位：US、status Official、廠牌欄 **Mercury Records**、編號 **088 170-069-2**、barcode 008817006925、一張 **Enhanced CD**、track-count **19**；同組 2003 US 的雙黑膠是 10＋9 軌、2011-08-23 US 的 deluxe 是 19＋14 軌。",
+    "src": "https://musicbrainz.org/release/3d57a436-7685-4390-95b0-4704acacdae1"
+   },
+   {
+    "f": "同一筆 release 的十九軌裡，**〈I Am a Man of Constant Sorrow〉出現四次**，分別掛 The Soggy Bottom Boys（第 5 軌 3:10 與第 16 軌 4:17）、Norman Blake（第 7 軌 4:29）與 John Hartford（第 13 軌 2:34）；其餘表演者包括 James Carter & The Prisoners、Harry McClintock、Alison Krauss、Chris Thomas King、The Whites、Emmylou Harris、Sarah, Hannah and Leah Peasall、The Cox Family、Ralph Stanley、Fairfield Four、The Stanley Brothers。",
+    "src": "https://musicbrainz.org/release/3d57a436-7685-4390-95b0-4704acacdae1"
+   },
+   {
+    "f": "同一筆 release 的曲長最短〈Indian War Whoop〉1:30，最長〈Po Lazarus〉4:31，其次〈I Am a Man of Constant Sorrow〉（Norman Blake）4:29 與〈You Are My Sunshine〉4:28。",
+    "src": "https://musicbrainz.org/release/3d57a436-7685-4390-95b0-4704acacdae1"
+   },
+   {
+    "f": "Discogs release 29093167 的欄位：Mercury／Lost Highway／Island Def Jam Music Group 088 170-069-2、US、CD ×1［Compilation, Enhanced, Stereo］、released 欄 2000、19 軌；genre 欄 Folk, World, & Country／Stage & Screen，style 欄 Soundtrack、Country、**Bluegrass**。",
+    "src": "https://www.discogs.com/release/29093167"
+   },
+   {
+    "f": "同一條目的 credit 欄：Producer「**T-Bone Burnett**」掛在第 3 至 18 軌；Producer [Associate Music Producer]「Gillian Welch」；Executive-Producer [Music]「Denise Stiff」；Recorded By, Mixed By「Mike Piersante」；Mastered By「Gavin Lurssen」；Liner Notes「Robert K. Oermann」；Other [Musicologist]「Sandy Wilbur」；另列九位 Engineer [Assistant Engineer]。",
+    "src": "https://www.discogs.com/release/29093167"
+   },
+   {
+    "f": "同一條目的公司欄：Recorded At「Sound Emporium」「Ocean Way Nashville」「Sunset Sound」「Terminal Recorders」四處、Mastered At「The Mastering Lab」、Made By「PMDC, USA」；註記欄寫錄音地點分別在納許維爾的 Sound Emporium 與 Ocean Way、洛杉磯的 Sunset Sound，〈In The Jailhouse Now〉的主唱在密西西比州傑克森的 Terminal Recorders 錄。",
+    "src": "https://www.discogs.com/release/29093167"
+   },
+   {
+    "f": "同一條目的註記欄逐條列出各表演者是由哪家廠牌出借（Norman Blake 由 Shanachie、Sam Bush 與 Jerry Douglas 由 Sugar Hill、Stuart Duncan 由 Rounder、Emmylou Harris 與 Sam Phillips 由 Nonesuch、Alison Krauss 由 Rounder、Gillian Welch 由 Almo Sounds、The Whites 由 Ceili Music 等），並註明第 5 軌是「Radio Station Version」、第 7 與 13 軌是「Instrumental」版、第 16 軌是「With Band」版。",
+    "src": "https://www.discogs.com/release/29093167"
+   },
+   {
+    "f": "英文維基百科〈O Brother, Where Art Thou? (soundtrack)〉條目（該段有行內引註）說：本輯 2002 年拿下葛萊美**年度專輯獎**，另拿下最佳鄉村人聲合作（Dan Tyminski、Harley Allen、Pat Enright）與 Ralph Stanley〈O Death〉的最佳男聲鄉村演唱；它是史上僅有三張拿到葛萊美年度專輯的電影原聲之一。",
+    "src": "https://en.wikipedia.org/wiki/O_Brother,_Where_Art_Thou%3F_(soundtrack)"
+   },
+   {
+    "f": "同一條目（該段有行內引註）說：本輯另拿下鄉村音樂協會（CMA）年度專輯獎與年度單曲獎（〈I Am a Man of Constant Sorrow〉）、第 37 屆鄉村音樂學院年度專輯獎，以及兩座國際藍草音樂獎。",
+    "src": "https://en.wikipedia.org/wiki/O_Brother,_Where_Art_Thou%3F_(soundtrack)"
+   },
+   {
+    "f": "Apple Music us storefront 直查 collectionId **1469575447**：collectionName「O Brother, Where Art Thou? (Music from the Motion Picture)」、artistName「Various Artists」、trackCount **19**、releaseDate 欄 2000、℗ 欄「This Compilation ℗ 2000 Lost Highway Records, a Division of UMG Recordings, Inc.」；逐軌核對十九軌的曲名、曲序與版本註記（Radio Station Version、兩軌 Instrumental）與 MB 2000 年原盤逐項相同。",
+    "src": "https://music.apple.com/us/album/1469575447"
+   }
+  ],
+  "hookCandidates": [
+   "同一首歌在一張碟上出現四次，四次掛不同的人",
+   "十九軌的表演者，從八家不同的廠牌借來"
+  ],
+  "sound": "十九軌的表演者由八家以上的獨立廠牌各自出借（Discogs 註記欄逐條列出）；同一首曲子在碟上出現四次，分屬三組表演者，其中兩次標器樂版。錄音分在四間錄音室完成，製作掛在第 3 至 18 軌上。曲長從〈Indian War Whoop〉的 1:30 到〈Po Lazarus〉的 4:31。（本欄由 Discogs release 29093167 的 credit 與註記欄、MB release 3d57a436 的逐軌 artist-credit 與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "I Am a Man of Constant Sorrow",
+   "O Death",
+   "Down to the River to Pray"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 2000 = **唱片首度發行年**，與電影首映年同年（MB first-release-date 2000-10-23；Discogs released 欄 2000；Apple ℗ 欄 2000）。本卡沒有落差。**2011 年的 19＋14 軌 deluxe 版是另一個年份與另一份內容，不得混用。**",
+  "notes": "**這一張是哪一種原聲帶**：是**為電影新錄的歌曲合輯**——多數曲目由 T-Bone Burnett 領銜、在四間錄音室新錄，另有少數是既有的老錄音（第 2 軌 Harry McClintock、末軌 The Stanley Brothers）。**行文必須寫成「歌曲合輯」並說明多數是為片子重錄的**，**禁止寫成「配樂」**，也**禁止整張說成「收錄老錄音」**。依 §5.6，本卡 releaseType 標 Compilation。\n**軌數**：MB、Discogs、Apple 三處都是 **19 軌**，可寫。\n**互斥分派——本張獨占「獎項」這條線的其中一格**（葛萊美年度專輯與兩座分項、CMA、ACM、IBMA）。同一條線另分給 Midnight Cowboy 與 La La Land；**其餘 19 張禁用獎項**。本張**禁用**：委託經過、錄音場地與樂團編制（Discogs 的四間錄音室只能當一句事實列出，**不得展開成錄音故事**，那條線歸 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、榜單與認證（Billboard 冠軍與 RIAA 八白金**不得寫**，那條線歸 Guardians 與 Rocky Horror）、逐軌授權、選曲原則。\n**第 154 條**：`sound` 與行文都不得寫「幾軌裡有幾軌」；「同一首出現四次」是逐項數過的（第 5、7、13、16 軌），可寫。\n**第 109 條**：維基那句「在美國賣了 8,175,800 張」屬銷量統計，**與本張被禁用的榜單線同屬一類，不得寫**。\n**第 143 條標記**：葛萊美與 CMA 會觸發「未具名出處」標記——照寫、讓它亮燈，並依第 128 條寫成「英文維基百科的條目說」。\n**探測層更正（本層推翻）**：`previews.json` 把本卡標 **unavailable**（十一個 storefront 有六個連候選都搜到 0 筆）。依第 152 條改以核心字（O Brother Where Art Thou）在 us 再搜一次，**命中 collectionId 1469575447**，逐軌核對十九軌與原盤逐項相同（連 Radio Station Version 與兩軌 Instrumental 的註記都對得上）。**原本配不上的原因**：卡片盤名是超長的「Music From a Film by Joel Coen & Ethan Coen」，Apple 用的是「(Music from the Motion Picture)」。**請主線改標 ready 並用這一筆。**"
+ },
+ {
+  "key": "desc2:Various Artists|Guardians of the Galaxy: Awesome Mix, Vol. 1: Original Motion Picture Soundtrack",
+  "artist": "Various Artists",
+  "album": "Guardians of the Galaxy: Awesome Mix, Vol. 1: Original Motion Picture Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 950092d6 的欄位：title《Guardians of the Galaxy: Awesome Mix, Vol. 1: Original Motion Picture Soundtrack》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、first-release-date **2014-07-28**、primary-type Album、secondary-types **[Compilation, Soundtrack]**，轄下 8 個 release 全為 Official。",
+    "src": "https://musicbrainz.org/release-group/950092d6-45f6-4269-87da-99a9ff2fcc52"
+   },
+   {
+    "f": "MB 該 release-group 的 2014-07-29 US release（e02022fc）欄位：US、status Official、廠牌欄 **Hollywood Records**、編號 **D002054602**、barcode 050087310851、一張 **Enhanced CD**、track-count **12**；同組另有 2014-09-29 XE 的 12\" Vinyl、2014-11-24 GB 的**卡帶**（050087316471）與 2017-05-12 JP 的 CD（UICY-15597，盤名作《ガーディアンズ・オブ・ギャラクシー：オーサム・ミックス VOL.1》）。",
+    "src": "https://musicbrainz.org/release/e02022fc-2f0d-40fa-99ff-c2b9d06d2b3b"
+   },
+   {
+    "f": "同一筆 release 的十二軌各掛一組表演者：Blue Swede、The Raspberries、Norman Greenbaum、David Bowie、Elvin Bishop、10cc、The Jackson 5、Redbone、The Runaways、Rupert Holmes、The Five Stairsteps、Marvin Gaye & Tammi Terrell；曲長最短〈Cherry Bomb〉2:19，最長〈I’m Not in Love〉6:04。",
+    "src": "https://musicbrainz.org/release/e02022fc-2f0d-40fa-99ff-c2b9d06d2b3b"
+   },
+   {
+    "f": "Discogs release 6776503 的欄位：Various《Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack)》、Hollywood Records D002054602、US、CD ×1［Compilation, Enhanced］、released 欄 **2014-07-29**、12 軌；genre 欄 Rock／Pop／Stage & Screen，style 欄 Soundtrack、Soft Rock、AOR、Pop Rock、Hard Rock。",
+    "src": "https://www.discogs.com/release/6776503"
+   },
+   {
+    "f": "同一條目的公司欄：Copyright (c)「Marvel」、Phonographic Copyright (p)「Marvel Music, Inc.」、Manufactured By 與 Marketed By「Hollywood Records」、Glass Mastered At「Sony DADC, Terre Haute」；**credit 欄是空的**——這張碟上沒有登錄任何製作、混音或母帶人員。",
+    "src": "https://www.discogs.com/release/6776503"
+   },
+   {
+    "f": "同一條目的註記欄只有一句：CD 盒背面的曲目表註明第 3 軌 Norman Greenbaum 的〈Spirit In The Sky〉**沒有在電影裡出現**，只出現在其中一支預告片裡。",
+    "src": "https://www.discogs.com/release/6776503"
+   },
+   {
+    "f": "英文維基百科〈Guardians of the Galaxy (soundtrack)〉條目（該段有行內引註）說：本輯 2014 年 8 月登上 Billboard 200 冠軍，是**史上第一張全部由既有錄音構成、卻拿下該榜冠軍的原聲專輯**；發行八週後獲 RIAA 金唱片認證。",
+    "src": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(soundtrack)"
+   },
+   {
+    "f": "同一條目（該段有行內引註）說：本輯連續十一週居 Billboard 的 Top Soundtracks 榜首、累計十六週；2015 年 1 月獲 RIAA 白金認證，截至 2023 年 1 月為三倍白金；它是 2014 年美國銷量第二高的原聲專輯，僅次於迪士尼的《Frozen》。",
+    "src": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(soundtrack)"
+   },
+   {
+    "f": "同一條目（該段有行內引註）另記：本輯在美國的總銷量中有 **11,000 張來自卡帶**。",
+    "src": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(soundtrack)"
+   },
+   {
+    "f": "Apple Music us storefront collectionId 1440657117：collectionName「Guardians of the Galaxy: Awesome Mix, Vol. 1 (Original Motion Picture Soundtrack)」、artistName「Various Artists」、trackCount **12**、releaseDate 欄 2014、explicitness notExplicit；軌數與 MB／Discogs 的 2014 原盤一致。",
+    "src": "https://music.apple.com/us/album/1440657117"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌沒有一軌是為這部片錄的",
+   "第三軌只出現在預告片裡，沒進電影"
+  ],
+  "sound": "十二軌各掛一組表演者，全部是既有錄音；Discogs 原盤的 credit 欄是空的，唱片上沒有登錄製作或混音人員，只有廠牌與壓片廠。曲長從〈Cherry Bomb〉的 2:19 到〈I’m Not in Love〉的 6:04。（本欄由 Discogs release 6776503 的 credit／公司欄與 MB release e02022fc 的逐軌 artist-credit 與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Hooked on a Feeling",
+   "Come and Get Your Love",
+   "I’m Not in Love"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 2014 = **本張合輯的發行年**，與電影上映年同年（MB first-release-date 2014-07-28；Discogs released 欄 2014-07-29）。本卡沒有落差。**但收在裡面的錄音都比 2014 早得多**，行文若提到年份必須分清楚「這張碟的年份」與「某一軌錄音的年份」；**各軌錄音年不在 facts 裡，因此不得寫任何具體年份或年代跨度**（第 110／136 條）。",
+  "notes": "**這一張是哪一種原聲帶**：是**收錄既有錄音的歌曲合輯**（MB secondary-types 明列 Compilation 與 Soundtrack），沒有任何一軌是為本片新錄的，也沒有配樂軌。**行文必須寫成「既有錄音的合輯」**，**禁止寫成「配樂」**。依 §5.6，本卡 releaseType 標 Compilation。\n**軌數**：MB、Discogs、Apple 三處都是 **12 軌**，可寫。\n**互斥分派——本張獨占「榜單與銷售認證」這條線的其中一格**（Billboard 200 冠軍與那個「第一張全由既有錄音構成的冠軍原聲」的紀錄、Top Soundtracks 週數、RIAA 三階認證）。同一條線另分給 Rocky Horror；**其餘 20 張禁用榜單與認證**。本張**禁用**：委託經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、獎項、逐軌授權、選曲原則、選曲來源。\n**第 109 條的界線**：RIAA 認證與 Billboard 名次**可寫**（榜單與認證不是壓量／稀有度／二手價）；但「卡帶賣了 11,000 張」那筆**只留在 facts、不得寫進行文**——它是載體別的銷量細目，最靠近第 109 條要擋的東西。\n**第 145 條**：不得寫全批統計量。\n**第 143 條標記**：Billboard 與 RIAA 會觸發「未具名出處」標記——照寫、讓它亮燈，並依第 128 條寫成「英文維基百科的條目說」。\n**探測層**：標 ready，Apple 12 軌與原盤一致，本層無更正。"
+ },
+ {
+  "key": "desc2:Various Artists|The Big Lebowski: Original Motion Picture Soundtrack",
+  "artist": "Various Artists",
+  "album": "The Big Lebowski: Original Motion Picture Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b5bc1dd1 的欄位：title《The Big Lebowski: Original Motion Picture Soundtrack》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、first-release-date **1998-02-24**、primary-type Album、secondary-types [Soundtrack]，轄下 8 個 release（6 筆 Official、1 筆 Promotion、1 筆 Bootleg）。",
+    "src": "https://musicbrainz.org/release-group/b5bc1dd1-ca1f-3845-b0c9-cea17e352f0b"
+   },
+   {
+    "f": "MB 該 release-group 的 1998-02-24 US release（48405599）欄位：US、status Official、廠牌欄 **Mercury Records**、編號 **314 536 903-2**、barcode 731453690325、一張 CD、track-count **14**；同組另有 1998 GB 的 12\" Vinyl（Mercury 536 903-1）與 2014-11-28 US 的 12\" Vinyl（B0021935-01），同為 14 軌。",
+    "src": "https://musicbrainz.org/release/48405599-1ac5-4e15-a4d5-6a22557dc320"
+   },
+   {
+    "f": "同一筆 release 的十四軌各掛一組表演者：Bob Dylan、Captain Beefheart、Elvis Costello、Yma Sumac、Piero Piccioni、Nina Simone、Moondog with Orchestra、Kenny Rogers & The First Edition、Meredith Monk、Erich Wolfgang Korngold、Henry Mancini、Gipsy Kings、Carter Burwell、Townes Van Zandt。",
+    "src": "https://musicbrainz.org/release/48405599-1ac5-4e15-a4d5-6a22557dc320"
+   },
+   {
+    "f": "同一筆 release 的曲長最短〈My Mood Swings〉2:10，最長〈Hotel California〉5:47，其次〈Glück das mir verblieb〉5:08 與〈Stamping Ground〉5:11。",
+    "src": "https://musicbrainz.org/release/48405599-1ac5-4e15-a4d5-6a22557dc320"
+   },
+   {
+    "f": "Discogs release 1947179 的欄位：Various《The Big Lebowski (Original Motion Picture Soundtrack)》、Mercury 314 536 903-2、US、CD ×1［Compilation］、released 欄 1998、14 軌；genre 欄 Electronic／Jazz／Rock／Stage & Screen，style 欄 Country Rock、Easy Listening、Soundtrack、Art Rock、Synth-pop、Classic Rock。",
+    "src": "https://www.discogs.com/release/1947179"
+   },
+   {
+    "f": "同一條目的 credit 欄：Producer「**Ethan Coen**」「**Joel Coen**」「T-Bone Burnett」三人並列；Supervised By [Music]「Happy Walters」；Coordinator [Music] 五人（Diana Fragnito、Howard Paar、Manish Raval、Spring Aspers、Tom Wolfe）；Design「Kyle Goen」；Management [Senior VP For PolyGram Soundtracks]「Jacquie Perryman」。",
+    "src": "https://www.discogs.com/release/1947179"
+   },
+   {
+    "f": "同一條目的公司欄：Record Company「PolyGram」、Phonographic Copyright (p)「Mercury Records」、Copyright (c)「PolyGram Filmed Entertainment」、Manufactured By 與 Marketed By「Mercury Records」、Pressed By「PMDC, USA」；註記欄只有「Made in U.S.A. / Printed in U.S.A.」兩行。",
+    "src": "https://www.discogs.com/release/1947179"
+   },
+   {
+    "f": "英文維基百科〈The Big Lebowski (soundtrack)〉條目（該段有行內引註）說：Coen 兄弟在寫劇本時心裡就已經有 Kenny Rogers 的〈Just Dropped In〉、Gipsy Kings 翻唱的〈Hotel California〉與幾首 Creedence Clearwater Revival 的歌；片中原創配樂由與 Coen 兄弟長期合作的 Carter Burwell 寫。",
+    "src": "https://en.wikipedia.org/wiki/The_Big_Lebowski_(soundtrack)"
+   },
+   {
+    "f": "同一條目（該段有行內引註）引 Joel Coen 的說法，並逐一列出歌與角色的對應：Bob Nolan 的〈Tumbling Tumbleweeds〉在寫劇本時就選給了 the Stranger、Henry Mancini 的〈Lujon〉給 Jackie Treehorn、德國虛無主義者配的是 techno-pop、Jeff Bridges 的角色配 Creedence。",
+    "src": "https://en.wikipedia.org/wiki/The_Big_Lebowski_(soundtrack)"
+   },
+   {
+    "f": "Apple Music us storefront collectionId 1440850036：collectionName「The Big Lebowski (Original Motion Picture Soundtrack)」、artistName「Various Artists」、trackCount **14**、releaseDate 欄 1998、explicitness notExplicit；軌數與 MB／Discogs 的 1998 原盤一致。",
+    "src": "https://music.apple.com/us/album/1440850036"
+   }
+  ],
+  "hookCandidates": [
+   "一首歌配一個角色，寫劇本時就配好了",
+   "唱片上掛的三位製作人，兩位是導演"
+  ],
+  "sound": "十四軌各掛一組表演者，沒有任何一組出現兩次；Discogs 原盤的 style 欄一次列了六種，從鄉村搖滾、輕音樂到藝術搖滾與合成流行。製作掛三個人，其中兩位是本片導演，另有一位音樂總監與五位音樂協調。曲長從〈My Mood Swings〉的 2:10 到〈Hotel California〉的 5:47。（本欄由 Discogs release 1947179 的 credit 與 style 欄、MB release 48405599 的逐軌 artist-credit 與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "The Man in Me",
+   "Just Dropped In (to See What Condition My Condition Was In)",
+   "Lujon"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1998 = **唱片首度發行年**，與電影上映年同年（MB first-release-date 1998-02-24；Discogs released 欄 1998；Apple releaseDate 欄 1998）。本卡沒有落差。**但收在裡面的錄音年份各不相同**，且**各軌錄音年不在 facts 裡，因此不得寫任何具體年份或年代跨度**（第 110／136 條）。",
+  "notes": "**這一張是哪一種原聲帶**：是**收錄既有錄音的歌曲合輯**，只有第 13 軌〈Wie Glauben〉掛 Carter Burwell、屬本片原創配樂。**行文必須寫成「歌曲合輯」**，**禁止整張寫成「配樂」**。依 §5.6，本卡 releaseType 標 Compilation，MB primary-type 是 Album。\n**軌數**：MB、Discogs、Apple 三處都是 **14 軌**，可寫。\n**互斥分派——本張獨占「歌與角色的對應（哪一首屬於哪一個角色）」這條線**。**注意與 Forrest Gump 的區隔**：那張分到的是「選曲原則（導演對選曲下了什麼限制、音樂製作人怎麼說）」，本張分到的是「歌與角色的一一對應」，**兩張都不得寫成對方那一種句子**。本張**禁用**：委託經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、獎項、榜單與認證、逐軌授權、選曲來源、對白軌。\n**第 40／80 條**：維基該條目的樂評段落（AllMusic、Far Out、Sydney Morning Herald 的評語）雖有行內引註，但屬**評論而非事實**，**不得引用為本卡的敘述依據**。\n**第 110 條**：不得由曲名推論翻奏或出處——〈Hotel California〉掛 Gipsy Kings 這件事**只能引維基那句具名說法**（該句明寫「cover」），不得自行從曲名推。\n**探測層**：標 ready，Apple 14 軌與原盤一致，本層無更正。"
+ },
+ {
+  "key": "desc2:Various Artists|Reservoir Dogs: Music From the Original Motion Picture Soundtrack",
+  "artist": "Various Artists",
+  "album": "Reservoir Dogs: Music From the Original Motion Picture Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 914c63e9 的欄位：title《Reservoir Dogs: Music From the Original Motion Picture Soundtrack》、artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377）、first-release-date **1992-10-13**、primary-type Album、secondary-types [Soundtrack]，轄下 12 個 release 全為 Official。",
+    "src": "https://musicbrainz.org/release-group/914c63e9-ac09-39ca-b1bf-94008c664ded"
+   },
+   {
+    "f": "MB 該 release-group 的 1992-10-13 US release（02c1a25d）欄位：US、status Official、廠牌欄 **MCA Records**、編號 **MCD10541**、barcode 008811054120、一張 CD、track-count **16**；同組另有 1992 GB 的 12\" Vinyl（Simply Vinyl SVLP 0028）與 2012-11-23 US 的 12\" Vinyl（Geffen／UMe B0017431-01），同為 16 軌。",
+    "src": "https://musicbrainz.org/release/02c1a25d-8f78-4a0a-85e6-30ef56661e3f"
+   },
+   {
+    "f": "同一筆 release 的十六軌裡，**六軌的 artist-credit 掛的是 Steven Wright**（第 1、3、5、10、14、16 軌，曲名分別是〈And Now Little Green Bag…〉〈Rock Flock of Five〉〈Bohemiath〉〈Super Sounds〉〈Keep on Truckin'〉〈Home of Rock〉），另有第 8 軌掛「Mr. Brown」、第 13 軌掛「Mr. White」——都是片中角色名。",
+    "src": "https://musicbrainz.org/release/02c1a25d-8f78-4a0a-85e6-30ef56661e3f"
+   },
+   {
+    "f": "同一筆 release 的其餘曲目掛 George Baker Selection、Blue Swede、Joe Tex、Bedlam（第 7 與第 12 軌）、Sandy Rogers、Stealers Wheel、Harry Nilsson；曲長最短〈Home of Rock〉0:05，最長〈Magic Carpet Ride〉5:10；六軌 Steven Wright 的旁白軌都在一分鐘以內（0:15、0:11、0:34、0:19、0:16、0:05）。",
+    "src": "https://musicbrainz.org/release/02c1a25d-8f78-4a0a-85e6-30ef56661e3f"
+   },
+   {
+    "f": "Discogs release 11030460 的欄位：Various《Reservoir Dogs (Original Motion Picture Soundtrack)》、MCA Records MCAD-10541、US、CD ×1［Compilation］、released 欄 1992、16 軌；genre 欄 Rock／**Non-Music**／Stage & Screen，style 欄 Soundtrack、**Speech**、Soft Rock、Pop Rock。",
+    "src": "https://www.discogs.com/release/11030460"
+   },
+   {
+    "f": "同一條目的 credit 欄：Voice [Dialogue Spoken By]「**Steven Wright**」掛第 1、3、5、10、14、16 軌；Written-By [Dialogue Written By]「**Quentin Tarantino**」掛第 1、3、5、8、10、13、14、16 軌；Supervised By [Music Supervisor]「Karyn Rachtman」與 [Music Supervisor For MCA Records]「Kathy Nelson」；Music Consultant「Stacey Sher」；Mastered By「Stephen Marcussen」；Photography By「Linda R. Chen」。",
+    "src": "https://www.discogs.com/release/11030460"
+   },
+   {
+    "f": "同一條目的註記欄寫明：第 1、3、5、8、10、13、14、16 軌是電影《Reservoir Dogs》的對白摘錄；公司欄 Manufactured By「JVC」、Copyright (c)「Miramax Films」與「MCA Records, Inc.」、Phonographic Copyright (p)「MCA Records, Inc.」、Distributed By「Uni Distribution Corp.」。",
+    "src": "https://www.discogs.com/release/11030460"
+   },
+   {
+    "f": "英文維基百科〈Reservoir Dogs (soundtrack)〉條目（該段有行內引註）說：本輯是 Tarantino 電影的第一張原聲，並定下了他後來各片原聲的結構，包括大量使用片中對白片段；設定上因為故事發生在一個週末，Tarantino 把整張碟設計成一個虛構電台的節目。",
+    "src": "https://en.wikipedia.org/wiki/Reservoir_Dogs_(soundtrack)"
+   },
+   {
+    "f": "同一條目（該三句各有行內引註）說：Tarantino 表示這些歌是銀幕上的暴力與動作的對位；他希望片子有一九五〇年代的感覺、卻用七〇年代的音樂；最著名的例子是配著〈Stuck in the Middle with You〉演的那場刑求戲。同一條目另說（有行內引註）本輯 2024 年入選《滾石》雜誌的「史上百大原聲」名單。",
+    "src": "https://en.wikipedia.org/wiki/Reservoir_Dogs_(soundtrack)"
+   },
+   {
+    "f": "Apple Music：以完整盤名在十一個 storefront 搜尋，**每一個 storefront 都回 0 筆候選**；本層依第 152 條再以核心字（Reservoir Dogs、Reservoir Dogs soundtrack）在 **us 與 gb** 各取 25 筆複查，回的是同名的電子樂單曲、2017 年的電玩配樂《Reservoir Dogs: Bloody Days》與翻唱單曲，**沒有本張這張十六軌的原聲**。",
+    "src": "https://music.apple.com/us/album/1605483623"
+   }
+  ],
+  "hookCandidates": [
+   "十六軌裡有八軌不是音樂，是台詞",
+   "最短的一軌只有五秒，掛名寫的是電台呼號"
+  ],
+  "sound": "十六軌裡有八軌被唱片自己註明是電影對白摘錄，其中六軌的掛名是同一位旁白者、兩軌掛的是片中角色名；Discogs 因此把 genre 欄標上 Non-Music、style 欄標上 Speech。曲長從〈Home of Rock〉的 0:05 到〈Magic Carpet Ride〉的 5:10。（本欄由 Discogs release 11030460 的 credit 與註記欄、MB release 02c1a25d 的逐軌 artist-credit 與曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Little Green Bag",
+   "Stuck in the Middle With You",
+   "Coconut"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1992 = **唱片首度發行年**，與電影上映年同年（MB first-release-date 1992-10-13；Discogs released 欄 1992；維基條目說 1992-10-13 由 MCA Records 發行）。本卡沒有落差。**收在裡面的歌曲錄音年份各不相同，且不在 facts 裡，不得寫具體年份或年代跨度**（第 110／136 條）。",
+  "notes": "**這一張是哪一種原聲帶**：是**歌曲與電影對白交錯的合輯**，不是配樂盤、也不是擴充版。**行文必須寫清楚有一半的軌是對白**，**禁止寫成「配樂」**。依 §5.6，本卡 releaseType 標 Compilation，MB primary-type 是 Album。\n**軌數**：MB、Discogs 兩處都是 **16 軌**，其中 **8 軌是對白**（Discogs 註記欄逐軌列出、我逐項數過），可寫。\n**互斥分派——本張獨占「對白軌與虛構電台的結構」這條線**。本張**禁用**：委託經過、錄音場地與樂團編制、獨奏者與非西方樂器、版本史、獎項、榜單與認證、逐軌授權、選曲原則、歌與角色的對應（那條歸 The Big Lebowski）。\n**第 110 條**：不得由曲名推論翻奏或出處；Bedlam 那兩軌**不得寫成翻唱**——維基那句「只有 Bedlam 為本片新錄」所在的段落雖有行內引註，但引註不在那一句上，**依第 40／80 條該句不採用**。\n**第 143 條標記**：《滾石》百大名單那筆會觸發「未具名出處」標記——照寫、讓它亮燈，並依第 128 條寫成「英文維基百科的條目說」。\n**探測層（本層確認）**：探測層標 unavailable，且 `tried` 欄十一個 storefront 全部是「搜到 0 筆」——依第 152 條那正是「真的沒有」的形狀。本層再以核心字在 us 與 gb 各查一次仍無，**維持 unavailable**。"
+ },
+ {
+  "key": "desc2:John Williams|Jurassic Park: Music From the Original Motion Picture Soundtrack",
+  "artist": "John Williams",
+  "album": "Jurassic Park: Music From the Original Motion Picture Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 455f56d1 的欄位：title《Jurassic Park: Music From the Original Motion Picture Soundtrack》、artist-credit「John Williams」（藝人實體 53b106e7-0cc6-42cc-ac95-ed8d30a3a98e）、first-release-date **1993-05-25**、primary-type Album、secondary-types [Soundtrack]，轄下 20 個 release 全為 Official。",
+    "src": "https://musicbrainz.org/release-group/455f56d1-5258-36c2-ba84-921a6fa4fcda"
+   },
+   {
+    "f": "MB 該 release-group 的 1993-05-25 US release（adac72b1）欄位：US、status Official、廠牌欄 **MCA Records**、編號 **MCAD-10859**、barcode 008811085926、一張 CD、track-count **16**；同組另有 1993 US 的 12\" Vinyl（MCA Soundtracks MCA 10897）記 **15** 軌、1993 CA 的 CD（CMCASD 10859）記 **14** 軌、2013 的數位版記 20 軌、2022-07-05 US 的 La-La Land 擴充版是 27＋17 軌。",
+    "src": "https://musicbrainz.org/release/adac72b1-b63d-4a65-a21b-ac86e21ef0ae"
+   },
+   {
+    "f": "同一筆 16 軌 release 的曲目全部掛 John Williams：〈Opening Titles〉〈Theme From Jurassic Park〉〈Incident at Isla Nublar〉〈Journey to the Island〉〈The Raptor Attack〉〈Hatching Baby Raptor〉〈Welcome to Jurassic Park〉〈My Friend, the Brachiosaurus〉〈Dennis Steals the Embryo〉〈A Tree for My Bed〉〈High‐Wire Stunts〉〈Remembering Petticoat Lane〉〈Jurassic Park Gate〉〈Eye to Eye〉〈T‐Rex Rescue & Finale〉〈End Credits〉。",
+    "src": "https://musicbrainz.org/release/adac72b1-b63d-4a65-a21b-ac86e21ef0ae"
+   },
+   {
+    "f": "同一筆 release 的曲長最短〈Opening Titles〉0:32，最長〈Journey to the Island〉8:52，其次〈Welcome to Jurassic Park〉7:55 與〈T‐Rex Rescue & Finale〉7:40。",
+    "src": "https://musicbrainz.org/release/adac72b1-b63d-4a65-a21b-ac86e21ef0ae"
+   },
+   {
+    "f": "Discogs release 16185080 的欄位：John Williams《Jurassic Park (Original Motion Picture Soundtrack)》、MCA Records MCAD-10859、US、CD ×1［Album］、released 欄 **1993-05-25**、16 軌；genre 欄只有 Stage & Screen，style 欄只有 **Soundtrack**。",
+    "src": "https://www.discogs.com/release/16185080"
+   },
+   {
+    "f": "同一條目的 credit 欄：Composed By, Conductor, Producer「John Williams」；Edited By「Ken Wannberg」；Mixed By [Scoring]「Shawn Murphy」；Mastered By「Dave Collins」；Contractor [Music Contractor]「Sandy De Crescent」；Other [Music Preparation]「JoAnn Kane Music Service」；Executive-Producer [Universal]「Burt Berman」；**Liner Notes [Backcover]「Steven Spielberg」**；Art Direction「Vartan」。",
+    "src": "https://www.discogs.com/release/16185080"
+   },
+   {
+    "f": "同一條目的公司欄：Recorded At「Sony Scoring Stage」（註記欄寫在加州 Culver City）、Mastered At「A&M Studios」（好萊塢）、Designed At「Wilson Design Group」、Manufactured By「JVC」、Phonographic Copyright (p) 與 Copyright (c)「MCA Records, Inc.」；註記欄寫這是沒有 SID 碼的標準市售版，並抄下「℗ & © 1993 MCA Records Inc.」。",
+    "src": "https://www.discogs.com/release/16185080"
+   },
+   {
+    "f": "英文維基百科〈Jurassic Park (film score)〉條目（該段有行內引註）引 John Williams 自述：最常聽到的那個動機就叫〈Theme from Jurassic Park〉，是在片中人物第一次見到腕龍時出現的，用的是「溫和的宗教式如歌長線條」，他說那是為了「捕捉自然中恐龍那種令人敬畏的美與崇高」。",
+    "src": "https://en.wikipedia.org/wiki/Jurassic_Park_(film_score)"
+   },
+   {
+    "f": "同一條目（該段有行內引註）引 Williams 對第二個動機的自述：〈Journey to the Island〉是一段莊嚴的號角齊奏，直升機接近 Isla Nublar 時第一次出現，他形容它是「冒險主題，昂揚而銅管化，音樂上既驚險又振奮」。同一條目另說（有行內引註）：Williams 在配樂錄音期間背部受傷，數段樂曲改由 Artie Kane 指揮——Kane 在片中未掛名，但在 1993 年原聲專輯的 credit 裡列為特別感謝。",
+    "src": "https://en.wikipedia.org/wiki/Jurassic_Park_(film_score)"
+   },
+   {
+    "f": "Apple Music us storefront 直查 collectionId **1440800206**：collectionName「Jurassic Park (Original Motion Picture Soundtrack)」、artistName「John Williams」、trackCount **16**、releaseDate 欄 1993-05-25、℗ 欄「1993 Geffen Records」；逐軌核對十六軌的曲名與曲序與 MB 1993 US CD 逐項相同（僅第 15 軌 Apple 寫成 T-Rex Rescue **and** Finale）。",
+    "src": "https://music.apple.com/us/album/1440800206"
+   }
+  ],
+  "hookCandidates": [
+   "唱片背面的解說是導演寫的",
+   "作曲者自己說，那段主題要捕捉的是敬畏"
+  ],
+  "sound": "十六軌全部掛作曲者一人，作曲、指揮與製作三件事也同掛他一人；剪輯、混音、母帶與樂手聯絡各由一人負責，唱片背面的解說掛的是本片導演。曲長從〈Opening Titles〉的 0:32 到〈Journey to the Island〉的 8:52。（本欄由 Discogs release 16185080 的 credit 欄與 MB release adac72b1 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Theme From Jurassic Park",
+   "Journey to the Island",
+   "Welcome to Jurassic Park"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 `year` 1993 = **唱片首度發行年**，與電影上映年同年（MB first-release-date 1993-05-25；Discogs released 欄 1993-05-25；Apple ℗ 欄 1993）。本卡沒有落差。**2013 年的 20 軌版與 2022 年 La-La Land 的 27＋17 軌版是另外的年份與另外的內容，不得混用。**",
+  "notes": "**這一張是哪一種原聲帶**：是**作曲家的器樂配樂盤（score）**，不是歌曲合輯、也不是後來的擴充版。行文寫「配樂」即可。\n**軌數（第 141 條）**：**只有 US CD（MCAD-10859）是 16 軌**，同一年的 US 黑膠是 15 軌、加拿大 CD 是 14 軌。Discogs 與 Apple 都對到 16。**行文要寫軌數只能寫 16 並註明是 US CD 版**；不得含糊地寫「這張碟有十六首」而不指版本。\n**互斥分派——本張獨占「作曲者對自己主題的自述」這條線**（他怎麼描述那兩個動機、想捕捉什麼）。本張**禁用**：委託經過、**錄音場地與樂團編制**（Sony Scoring Stage 與 Artie Kane 代打指揮兩筆**只能當事實列出、不得展開成錄音故事**，那條線歸 Titanic 與 Batman）、獨奏者與非西方樂器、版本史、獎項、榜單與認證、逐軌授權、選曲原則。\n**第 110 條**：不得由曲名推論主題或動機的歸屬——**唯一可寫的動機說明是維基那兩段引 Williams 自述的具名段落**（依第 128 條寫成「英文維基百科的條目引他說」）。維基關於第三個動機（四個音）的段落**沒有行內引註，依第 40／80 條不得採用**。\n**第 109 條**：維基提到 2016 年 La-La Land 那套「限量五千套、已絕版」屬**壓量與稀有度，一律不得寫**。\n**探測層更正（本層推翻）**：`previews.json` 把本卡標 **unavailable**（十一個 storefront 各搜到 11–12 筆、一筆都沒配上）。依第 152 條改以核心字（Jurassic Park John Williams）在 us 再搜一次，**命中 collectionId 1440800206**，逐軌核對十六軌與原盤逐項相同。**原本配不上的原因**：卡片盤名是「**Music From the** Original Motion Picture Soundtrack」，Apple 用的是「(Original Motion Picture Soundtrack)」，少了前面三個字。**請主線改標 ready 並用這一筆**；同時注意同名的 1440860715《Jurassic Park (20th Anniversary)》是 21 軌的另一版，**不得取用**。"
  }
 ]
