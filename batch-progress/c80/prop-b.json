@@ -1,0 +1,382 @@
+[
+ {
+  "artist": "Solstice",
+  "album": "Silent Dance",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Equinox Records",
+  "why": "Solstice 1980 年在米爾頓凱恩斯成軍，1982、83 兩年只出過兩捲自製帶（《Pathways》《The Peace Tape》），1984 年才做出唯一一張 1980 年代黑膠：Discogs master 479690，1984 年英國盤、廠牌 Equinox Records (2)、編號 EQRLP 001、LP Album，出版掛 Bayswater Music。這張碟此後被四個國家的小廠陸續接手，是本批「當年幾乎沒人買、後來被一整串專門廠牌撿起來」的最完整案例：1991 年美國 Progressive Records（PRO 013）、1994 年波蘭 Prog Rock Music（PRM 013）、1997 年日本 Avalon（MICY-1007）、**2007 年英國 Festival Music 的 The Definitive Edition（200709A）**、2025 年 Wild Thyme（WLTH006）與樂團自行發行的 CLANN01。池中實掃 seed_cards.json 全 13,913 列，Solstice 零張。",
+  "risk": "**授權狀態要逐筆看**（第 43／57／65 條）：Discogs 版本頁十筆裡有一筆是 1992 年南韓 Shilla Records（SCL-1115）、**明標 Unofficial Release**，舉證只能指到上列有授權的那幾家。**同名雙胞胎**：MB 名下 c7ec20f5《Pathways》(1982，EP/**Demo**) 與 8a9a0034《Pathways》(1998，Album/**Compilation**) 是同名的兩筆，第 126 條的形狀，本卡明確都不釘。掛名「Solstice」在 MB 至少有四個實體（英國 neo-prog、英國 epic doom metal、美國 metal、法國 alt-rock），字串搜尋極易配錯，只能靠 rgMbid；池中無同名藝人。封面已實測 CAA release-group front 回 200；Apple 實測 gb／us／jp／de／fr／ie／ca／au 八個 storefront 皆無此碟，試聽預估 unavailable。",
+  "mbNote": "釘 8f95c83a-8452-37f0-919d-439fafdc09b6《Silent Dance》，artist-credit「Solstice」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 5 個 release：1984 GB Official、1991 GB Official、2007-09-01 GB Official、2009-03-16 XW Official、2025-11-14 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 06942e9b-567b-45c4-97a6-9d98265ba479（MB 消歧義「UK neo-progressive band」，**不是** 3f03ad4f 那個英國 doom metal 的 Solstice），分頁 browse 得名下 27 個 release-group（第 116 條）。對照組 c7ec20f5-6fd5-4c20-95e5-d641ede8e178《Pathways》(1982，EP/Demo)、8a9a0034-8024-3448-a5ee-6a02b90626b8《Pathways》(1998，Album/Compilation)、c41c6e94《The Peace Tape》(1983，EP/Demo)、dddc4609《New Life》(1993)、bf18f0aa《The Cropredy Set》(2002，Live)、c070778a《The Beginners Guide to Solstice》(2023，Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Festival Music",
+  "g": "b"
+ },
+ {
+  "artist": "Haze",
+  "album": "C'est la vie",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Gabadon Records",
+  "why": "前一年的《The Cellar Tapes》還是無廠牌的自製帶，1984 年 Haze 就自己開了 **Gabadon Records** 把作品做成黑膠：Discogs master 1309101，1984 年英國盤、編號 GABL 001、LP Album，錄音在 PRT Studios、壓片在 Standard Pressings，另有一批 White Label。Gabadon 此後成了這個樂團三十多年的自營目錄（1987 年的卡帶 GABC 001、1985 年的《Cellar Replay》GABC 2、1986 年的《Warts ’N’ All》GABC 4、2013 年的三十週年 CD GABCD 18），本張是這家廠牌的第一號。這正是本批 b 組要找的形狀：一家自營廠牌、一份看得出編號體系的目錄。池中實掃 seed_cards.json 全 13,913 列，Haze 零張。",
+  "risk": "**盤名寫法**：MB 的 release-group 標題用彎引號作《C’est la vie》，Discogs 原盤與封面用直引號《C'est la vie》，卡單採原盤的 ASCII 直引號（第 50 條；引號差異在外部服務會被正規化掉）。**盤名主鍵撞卡檢查**：實掃 seed_cards.json 全 13,913 列，池中另有 Phosphorescent《C'est La Vie》(2018) 與自然捲《C'est la vie》(2004) 兩張同盤名卡——**藝人不同、是三張不同的碟**，不構成撞卡，但下游若以盤名為主鍵掃池會標記，此處先寫明。**二合一風險**：MB 的 834cb2b1《C’est la vie / The Ember》(1996，Compilation) 是本張與 1985 年 EP 的合輯，依第 129 條身分不釘、封面不用、試聽不採。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 e0be3562-fe70-4f13-9526-730684b6d495《C’est la vie》（MB 用彎引號、卡片用直引號，兩者不必相等，第 91 條），artist-credit「Haze」，first-release-date 1984-04-07，primary-type Album、secondary-types 空，轄下 2 個 release：1984-04-07 GB Official、1987 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID d039b264-976d-46be-88d5-722edc4c51f8，分頁 browse 得名下 17 個 release-group。對照組 **834cb2b1-cc99-37a0-a118-3114fcbd4e75《C’est la vie / The Ember》(1996，Album/Compilation，二合一) 依第 129 條刻意不釘**；681374fc《The Ember》(1985，EP)、1a09fc7c《Cellar Replayed》(2000)、91b4e365《Stoat & Bottle》(1987) 皆刻意不釘；2976d2af《The Cellar Tapes》(1983) 為本批 a 組另一張、各自釘各自的。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Gabadon Records",
+  "g": "b"
+ },
+ {
+  "artist": "Castanarc",
+  "album": "Journey to the East",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Peninsula Records",
+  "why": "Castanarc 是這條線裡少數靠一家地方小廠出道的團：Discogs master 477620，1984 年英國盤、Peninsula Records、編號 PENCIL 10、LP Album。Peninsula 的目錄短小、這是它留在資料庫裡最常被提起的一號；三年後樂團又把同一張碟交給另一家更小的 Cue Rain Records 重出（CR 2，1987）。地位證據是 1991 年美國 **Kinetic Discs 的授權 CD（KDCD 1001，該廠牌的第一號）** 與 2020 年英國 Khepra Records 的 CD（KHEPCD01），Discogs 版本頁五筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Castanarc 零張。",
+  "risk": "掛名是自創詞、MB 上沒有同名實體，撞卡風險低；池中零張。**Apple 版本要核**：實測 gb 命中 collectionId 1591890548《Journey to the East》8 軌，但 Apple 記的日期是 **2017-06-13**、與卡片 1984 差 33 年（yearDrift，第 77 條），那是後來的數位重製版，試聽可採、本機上架前要核曲序與曲數。封面已實測 CAA release-group front 回 200。年份 MB 與 Discogs 一致記 1984，無爭議。",
+  "mbNote": "釘 79193fe7-9ff6-4a23-8934-a08fa8c8cbba《Journey to the East》，artist-credit「Castanarc」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 4 個 release：1984 GB Official、1987 GB Official、1991 US Official、2019-02-22 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID b238f923-39ec-4d9c-af22-a0baf84bf130（GB），分頁 browse 得名下 7 個 release-group。對照組 0990f898《Rude Politics》(1988)、2e7433ad《Little Gods》(1989)、fb7d58e7《Burnt Offerings》(1998)、39af4839《Water From the Well》(2020)、1b14fde9《The Sea of Broken Vows》(2021)、708187b9《Forged by the Sun》(2026) 皆刻意不釘（年代外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Kinetic Discs",
+  "g": "b"
+ },
+ {
+  "artist": "Abel Ganz",
+  "album": "Gratuitous Flash",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Abel Ganz 自壓）",
+  "why": "蘇格蘭克萊德班克的 Abel Ganz 1982 年先做了一捲《The Cottage Demo》，1984 年在 Black Gold Studios 錄完整張後**自己出**：Discogs master 833011，1984 年英國、廠牌欄「Not On Label (Abel Ganz Self-released)」、編號 AG 1、Cassette Album。這是英國 neo-prog 第一波裡蘇格蘭一線最早的完整作品，比同鄉的 Pallas 走得更土法。地位證據是 1991 年法國 Ugum Production 的授權 CD（UGU 00891）與 **2017 年 Grand Tour Music 的 GTMCD002《Gratuitous Flash - The 2016 Remaster》**，Discogs 版本頁三筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Abel Ganz 零張。",
+  "risk": "**授權狀態要逐筆看**（第 43 條）：Discogs 上另有一筆掛「Not On Label」的《Live in Scotland 6.2.84 (Bootleg)》CD、**明標 Unofficial Release**，那是另一份現場錄音、不是本張的再發，舉證不得混用。**同名雙胞胎**：MB 名下 fc81cab9《The Cottage Demo》(1982-11) 標 EP/**Demo**、22a622f6《Paisley 1984》與 194f2aa3《Kelvingrove Festival 1984》皆為 Live，第 126 條的形狀，本卡明確都不釘；6d36b9c7《Abel Ganz》(2014) 是自我同名，也不釘。卡帶原盤，依第 1 條年份取 1984。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 200eb796-b7be-3b6c-adb4-9fa4de0d22a2《Gratuitous Flash》，artist-credit「Abel Ganz」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 4 個 release：1984 GB Official、1991 FR Official、2017-06-02 GB Official、2017 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6cbdaaa-6eef-492f-9dd2-35670b75f0f3，分頁 browse 得名下 12 個 release-group。對照組 fc81cab9-ef57-4bf1-a4a0-c251bf10e490《The Cottage Demo》(1982-11，EP/Demo)、22a622f6-8cf6-410f-a333-e8fe3c92ec75《Paisley 1984》(1984，Album/Live，**與本卡同年、極易誤配**)、194f2aa3《Kelvingrove Festival 1984》(2020，Live)、6d36b9c7《Abel Ganz》(2014，自我同名)、5189fa6b《Back From the Zone》(2002，Compilation) 皆刻意不釘；c1d51283《Gullibles Travels》(1985) 為本批另一張、各自釘各自的。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Grand Tour Music",
+  "g": "b"
+ },
+ {
+  "artist": "Abel Ganz",
+  "album": "Gullibles Travels",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Abel Ganz 自壓）",
+  "why": "同一組人隔年的第二捲自製帶：Discogs release 6871858，1985 年、廠牌欄「Not On Label (Abel Ganz Self-released)」、編號 **AG II**、Cassette Album，錄音同樣在 Black Gold Studios。編號從 AG 1 走到 AG II，是一個自營目錄剛開始成形的樣子。1991 年法國 Ugum Production 把這兩張一起做成 CD（本張為 UGU 00791），是外界第一次接手這個目錄；Discogs 版本頁零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Abel Ganz 零張。",
+  "risk": "**盤名沒有撇號**：原盤與 MB 都作「Gullibles Travels」（不是 Gullible’s），這是原盤的寫法、不是錯字，依第 50 條照收；正確拼法「Gulliver’s Travels」的雙關要下游知道，但不得改盤名。與同團《Gratuitous Flash》同為卡帶自製，兩張的盤名主鍵完全不同、不會互撞。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1985。無串流授權再發，本機三軸依 §0.8 錨點制人工評分。",
+  "mbNote": "釘 c1d51283-f7c5-3e18-8eb4-f16a3057f662《Gullibles Travels》，artist-credit「Abel Ganz」，first-release-date 1985，primary-type Album、secondary-types 空，轄下 2 個 release：1985 GB Official、1991 FR Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6cbdaaa-6eef-492f-9dd2-35670b75f0f3，分頁 browse 得名下 12 個 release-group。對照組 200eb796《Gratuitous Flash》(1984) 為本批另一張；1879a2d1《The Dangers of Strangers》(1988)、f42099a9《The Deafening Silence》(1994)、6d36b9c7《Abel Ganz》(2014，自我同名)、d4959dfa《Live in Rotherham 1995》(Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Ugum Production",
+  "g": "b"
+ },
+ {
+  "artist": "Mach One",
+  "album": "Lost for Words",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Future Dance",
+  "why": "Mach One 是 MB 明確標為「UK prog band」、名下只有 1984 年兩張作品的樂團。本張是其中的黑膠：Discogs release 1016857，1984 年英國盤、廠牌 Future Dance、編號 FD 1001、LP Album，壓片由 Orlake Records 代工——Orlake 是英國 1980 年代自費盤最常用的壓片廠之一，出現在封面背標上就代表這是自費壓的。同一家 Future Dance 隔年還出過一捲《Lost For Words - Live At 1a Minet St.》EP，整個目錄就這幾號。本張沒有任何再發，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨。池中實掃 seed_cards.json 全 13,913 列，Mach One 零張。",
+  "risk": "**掛名同名**：MB 上「Mach One」有三個實體（德國饒舌 Christoph Bodenhammer、breaks 的 Mach One、以及本卡的 GB prog 團 971077aa），Discogs 寫作「Mach One (2)」，只能靠 rgMbid 鎖定。**盤名同名**：Future Dance 1985 年那捲 EP 的掛名被 Discogs 登成「Lost For Words」，也就是說「Lost For Words」在同一家廠牌下同時是盤名與掛名，字串搜尋一定亂，下游務必用 rgMbid。封面實測 CAA release-group front 回 404，需本機另尋；Apple 八個 storefront 全空，試聽預估 unavailable——這是本組風險最高的兩張之一。",
+  "mbNote": "釘 7084b119-c41e-43a6-9ad7-064f7593b517《Lost for Words》，artist-credit「Mach One」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release：1984 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 971077aa-7fe5-45eb-afbc-5df0a180e334（MB 消歧義「UK prog band」，**不是** 89b5952d 那位德國饒舌歌手），分頁 browse 得名下 3 個 release-group。對照組 f877a074《... And There’ll Be a Space》(1984) 為本批另一張、各自釘各自的；236ad87a-50cb-4a46-b329-7298cd23746e《An Ancient Lie》(2003，Album/**Compilation**) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mach One",
+  "album": "...And There'll Be a Space",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Granite Bap Productions",
+  "why": "同一年、同一組人的另一張，但通路完全不同：Discogs release 12889918，1984 年、廠牌 Granite Bap Productions、編號 MAK4、Cassette Album。Granite Bap 是樂團與同鄉 Janysium 共用的自製帶編號體系（MAK3 是兩團合出的《Recording Studios》、MAK5 是 Janysium 的《Half A Dozen Of The Other》、MAK6 是 Mach One 的《Six Of One》），一年之內走完四個號。**同一組人同年一張黑膠、一捲卡帶**，正好對照本批 a／b 兩組要看的兩種通路。本張沒有任何再發，依裁定第 82 條舉證。池中實掃 seed_cards.json 全 13,913 列，Mach One 零張。",
+  "risk": "**盤名前置三個句點**：MB 的 release-group 標題作「... And There’ll Be a Space」（句點後有空格、撇號是彎的），Discogs 原盤作「...And There'll Be A Space」。卡單採原盤的無空格、直撇號寫法（第 50 條），並在此記下 MB 的寫法供下游比對；卡池已有以標點開頭的盤名先例（第 68 條的 Trúbrot《....Lifun》）。**掛名同名**見同團另一張的 risk。封面實測 CAA release-group front 回 404，需本機另尋；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1984。同團的《Six Of One》(MAK6，1984) 在 MB 上沒有 release-group，本批不收。",
+  "mbNote": "釘 f877a074-0dde-43ad-bab8-1d47f7cb30e2，**MB 的 release-group 標題是《... And There’ll Be a Space》，卡片盤名採原盤的《...And There'll Be a Space》，兩者不必相等（第 91 條）**。artist-credit「Mach One」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release：1984 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 971077aa-7fe5-45eb-afbc-5df0a180e334，分頁 browse 得名下 3 個 release-group。對照組 7084b119《Lost for Words》(1984) 為本批另一張；236ad87a《An Ancient Lie》(2003，Compilation) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Geoff Mann",
+  "album": "I May Sing Grace",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Food For Thought Records",
+  "why": "Geoff Mann 1981–83 年是 Twelfth Night 的主唱，離團後隨即以個人名義出唱片，全部走小廠：本張是 Discogs release 1520547，1984 年英國盤、**Food For Thought Records、編號 GRUB 4**、LP Album。Food For Thought 是 1980 年代中期一家目錄極雜的英國小廠，同一年的 GRUB 3 是 Steve Vai 的《Flex-Able》英國版，也就是說這家廠牌一邊做美國吉他手的授權盤、一邊出本地 prog 歌手的個人專輯。Mann 1993 年去世後，Cyclops 在 1994 年做了《In One Era...》(CYCL-004) 的整理，2020 年 Wobbly 把本張數位重發（MB 轄下 2020-06-05 XW Official）。池中實掃 seed_cards.json 全 13,913 列，Geoff Mann 零張。",
+  "risk": "**掛名同名**：MB 另有一位爵士鼓手 Geoff Mann（5e1e9339）與一個「Eh! Geoff Mann Band」的實體（14449218），本卡釘的是 Twelfth Night 那位（ba90c04f，MB 消歧義「English vocalist, Twelfth Night」）。本人在本批共三張（另有《Chants Would Be a Fine Thing》《Psalm Enchanted Evening》），已達第 27 條的三張上限。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。年份 MB 與 Discogs 一致記 1984。",
+  "mbNote": "釘 2a913c3f-03a3-49e0-b781-7e3db0dd3ff5《I May Sing Grace》，artist-credit「Geoff Mann」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 2 個 release：1984 GB Official、2020-06-05 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID ba90c04f-6f88-4caf-885f-21c7177d7ab6，分頁 browse 得名下 10 個 release-group。對照組 89ae5d73《Chants Would Be a Fine Thing》(1984-03) 與 887b3b79《Psalm Enchanted Evening》(1986-02) 為本批另兩張、各自釘各自的；cd3c3986《In Difference》(1988)、4e86bdc5《The Off the End of the Pier Show》(1991)、8713e4d6《Second Chants》(1992)、2152dfec《In One Era…》(1994，Compilation)、f940267d《Recorded Delivery》(2003，Compilation/Live)、c8e7cad8《Solo Live + Demos》(2003，Live)、f2042561《Radio Show Tribute》(2003，primary-type **Other**) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Wobbly Records",
+  "g": "b"
+ },
+ {
+  "artist": "Geoff Mann",
+  "album": "Chants Would Be a Fine Thing",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Twilight Records",
+  "why": "同一年的另一張，走的是更小的一家廠牌：Discogs master 1398848，1984 年英國、Twilight Records (7)、編號 **GM001**（編號直接用他的姓名縮寫），Cassette Album Stereo。二十年後 Mann 的遺產管理方自己把它做成 CD-R（2004，GMCDR03，廠牌欄「Not On Label (Geoff Mann Self-released)」），**2024 年 Wobbly Records 又出了編號 WOB04 的授權編號版再發**——Wobbly 正是 1986 年出他《Psalm Enchanted Evening》的那家廠牌，四十年後回頭整理同一位歌手的目錄。Discogs 版本頁三筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Geoff Mann 零張。",
+  "risk": "盤名是雙關（chance／chants），字串搜尋容易被自動更正成「Chance Would Be a Fine Thing」，下游查詢要固定用原拼法。掛名同名見同人另兩張的 risk。本人在本批共三張，已達藝人上限。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1984（MB 記 1984-03）。",
+  "mbNote": "釘 89ae5d73-f4a4-4e2b-99f7-318f15cc08d3《Chants Would Be a Fine Thing》，artist-credit「Geoff Mann」，first-release-date 1984-03，primary-type Album、secondary-types 空，轄下 4 個 release：1984-03 GB Official、2004-12 GB Official、2020-05-01 XW Official、2024-01-26 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID ba90c04f-6f88-4caf-885f-21c7177d7ab6，分頁 browse 得名下 10 個 release-group。對照組 2a913c3f《I May Sing Grace》(1984) 與 887b3b79《Psalm Enchanted Evening》(1986-02) 為本批另兩張；8713e4d6《Second Chants》(1992，**盤名近似、極易誤配**) **特別要擋**、刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Wobbly Records",
+  "g": "b"
+ },
+ {
+  "artist": "Geoff Mann",
+  "album": "Psalm Enchanted Evening",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Wobbly Records",
+  "why": "Discogs release 3921429：1986 年英國盤、**Wobbly Records、編號 WOB001**、LP Album——這是 Wobbly 這家廠牌的第一號，而它此後成為整理 Geoff Mann 目錄的長期承接方（2024 年的 WOB04 是《Chants Would Be a Fine Thing》的再發、2025 年的 WOB07 是《In One Era》的 CD 整理）。也就是說本張是一家小廠的起點，而那家小廠最後變成這位歌手唯一的檔案管理者。MB 轄下另有 2020-06-05 的數位重發（XW Official）。池中實掃 seed_cards.json 全 13,913 列，Geoff Mann 零張。",
+  "risk": "盤名是《南太平洋》名曲〈Some Enchanted Evening〉的雙關，字串搜尋會撈到大量該曲的翻唱條目，只能靠 rgMbid 與 collectionId 鎖定。掛名同名見同人另兩張的 risk；本人在本批共三張，已達藝人上限。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。年份 MB 記 1986-02、Discogs 記 1986，一致。",
+  "mbNote": "釘 887b3b79-af2e-4332-b00e-89f070bc409b《Psalm Enchanted Evening》，artist-credit「Geoff Mann」，first-release-date 1986-02，primary-type Album、secondary-types 空，轄下 2 個 release：1986-02 GB Official、2020-06-05 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID ba90c04f-6f88-4caf-885f-21c7177d7ab6，分頁 browse 得名下 10 個 release-group。對照組 2a913c3f《I May Sing Grace》(1984)、89ae5d73《Chants Would Be a Fine Thing》(1984-03) 為本批另兩張；2152dfec《In One Era…》(1994，Album/Compilation) 與 f940267d《Recorded Delivery》(2003，Compilation/Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Enid",
+  "album": "The Stand",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "The Stand",
+  "why": "本張是 The Enid 自營體系最徹底的一步：唱片的廠牌名就是他們**歌迷組織的名字 The Stand**（Discogs master 588831，1984 年英國盤、編號 THE STAND 1、LP Album），等於由歌迷會直接出版、直接寄給會員。同一個廠牌名下另有 1985 年 Glen Baker 的《Brief Encounter》與同年的《The Enid》(THE STAND 2)，是一條由樂團與其歌迷共同經營的短命目錄。地位證據是 1984 年日本 Nexus 的授權盤（K22P-507，標 Reissue）與 2009 年 Inner Sanctum 的 CD（ENID018CD，改題《The Stand - Volume 1 (1984)》），Discogs 版本頁五筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，The Enid 零張。",
+  "risk": "**盤名與廠牌名相同**：碟叫《The Stand》、廠牌也叫 The Stand，字串搜尋與廠牌統計都會混，下游務必用 rgMbid；這與自我同名不是同一件事（掛名是 The Enid），但風險形狀類似。**改名風險**：2009 年 Inner Sanctum 版把標題改成《The Stand - Volume 1 (1984)》，卡單採原盤的《The Stand》（第 50 條）。本團在本批共三張（另有 a 組《Something Wicked This Way Comes》與本組《The Spell》），已達第 27 條的三張上限。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 0cb16656-688f-4812-a34f-ea23c908bcc2《The Stand》，artist-credit「The Enid」，first-release-date 1984-03，primary-type Album、secondary-types 空，轄下 3 個 release：1984-03 GB Official、2007-04-25 JP Official、2009 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 66f8692c-966d-4dfb-a2ed-babf51241922，分頁 browse 得名下 52 個 release-group（第 116 條）。對照組 06232160《In the Region of the Summer Stars 1984》(1984，**同年重錄舊作、極易誤配**) **特別要擋**、刻意不釘；bb7ee654《Something Wicked This Way Comes》與 b28f1b7e《The Spell》為本批另兩張、各自釘各自的；ea488dd6《Fand》(1985)、056b5b1e《Salome》(1986)、a788e677《Liverpool》(1986，Compilation)、e6d7f96e《Lovers & Fools》(1986，Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Inner Sanctum",
+  "g": "b"
+ },
+ {
+  "artist": "The Enid",
+  "album": "The Spell",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Enid Records",
+  "why": "Discogs master 129088：1985 年英國盤、廠牌欄「Not On Label (The Enid Self-released)」、編號 **ENID 8**，形態是 12 吋 45 轉的整張專輯，經由歌迷組織 The Stand 直接寄給訂戶、不進一般通路。隔年他們再以 ENID CD8 出了 CD 版，是英國自營小廠很早就自己壓 CD 的例子。地位證據是 1985 年日本 Nexus 的授權盤（K17P-559/60）、1994 年 Mantella（MNTL CD8）、2006 年日本 WHD（IECP-10078）與 2009 年 Inner Sanctum（ENID006CD）。池中實掃 seed_cards.json 全 13,913 列，The Enid 零張。",
+  "risk": "**授權狀態要逐筆看**（第 43／57／65 條）：Discogs 版本頁十筆裡有一筆 2004 年俄羅斯 COE Records (2)（COE245）**明標 Unofficial Release**，舉證不得指到它；1995／1999 年南韓 Si-Wan Records 的兩筆未標未授權，但依第 78 條，舉證仍以日本 Nexus 與英國 Mantella／Inner Sanctum 為準。**版本形態**：原盤是 12 吋 45 轉，不是常見的 33 轉 LP，MB 仍歸為 Album、符合 §1。**Apple 版本要核**：實測 gb 命中 collectionId 1624832721《The Spell》7 軌，但 Apple 記的年份是 **1984**、與卡片 1985 差一年（yearDrift，第 77 條），試聽可採、本機上架前核版本。本團在本批共三張，已達藝人上限。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 b28f1b7e-6a71-3d03-b768-97037f4def2e《The Spell》，artist-credit「The Enid」，first-release-date 1985，primary-type Album、secondary-types 空，轄下 4 個 release：1985 GB Official ×2、1986 GB Official、2009-08-24 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 66f8692c-966d-4dfb-a2ed-babf51241922，分頁 browse 得名下 52 個 release-group。對照組 ea488dd6《Fand》(1985，**同年另一張、極易誤配**) **特別要擋**、刻意不釘（該筆 CAA 亦無圖，本批不收）；bb7ee654《Something Wicked This Way Comes》與 0cb16656《The Stand》為本批另兩張；af8f875d《Salome》(1990，Single) 與 056b5b1e《Salome》(1986，Album) 是同名雙胞胎（第 126 條），兩筆皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Inner Sanctum",
+  "g": "b"
+ },
+ {
+  "artist": "Multi-Story",
+  "album": "Chimes",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Multi-Story",
+  "why": "南威爾斯的 Multi-Story 1984 年一年之內做了兩捲自製帶，本張是其中有目錄號的那一捲：Discogs release 6235188，廠牌欄直接掛團名 Multi-Story、編號 **MS003**、Cassette，錄音在南威爾斯的 Loco Studios。廠牌名等於團名、編號從 MS001 開始排，是自營目錄最素樸的樣子。隔年他們就被伍爾弗漢普頓的 FM Revolver 簽走出了黑膠（見本批《East West》），所以這捲帶正好記錄了一支團從自製到進小廠之間那一年。本張沒有任何再發，依裁定第 82 條舉證。池中實掃 seed_cards.json 全 13,913 列，Multi-Story 零張。",
+  "risk": "**掛名的連字號要注意**：MB 的藝人實體名寫成「Multi Story」（空格）、本張的 artist-credit 寫「Multi-Story」（ASCII 連字號）、下一張《East West》的 artist-credit 卻用了 **U+2010 連字號**「Multi‐Story」。卡單一律採樂團與廠牌現行的 ASCII 連字號寫法（第 52 條），非 ASCII 那個變體只記在此供下游比對，**不得寫進卡片欄位**（chk-prop 會擋非 ASCII 連字號）。同年另有一捲自我同名的《Multi-Story》(Solo Sounds)，MB 上沒有 release-group、本批不收，但下游做盤名去重時要知道它存在。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1984。",
+  "mbNote": "釘 821061ee-297a-4128-b5bb-f36529e1ddd7《Chimes》，artist-credit「Multi-Story」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release：1984 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID c4776533-4a1b-4da1-9299-6f6bbe0a852d（MB 實體名「Multi Story」，消歧義「A band from the South East corner of Wales, formed in the 1980s.」），分頁 browse 得名下 7 個 release-group。對照組 328bc4e7《East West》(1985) 為本批另一張、各自釘各自的；ed417b7f《Through Your Eyes》(1987) 刻意不釘（年代外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Multi-Story",
+  "album": "East West",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "FM Records",
+  "why": "自製帶的隔年，Multi-Story 進了伍爾弗漢普頓的 FM Revolver（Discogs 上的廠牌實體是 FM，出版方 The Heavy Metal Record Co. Ltd.）：Discogs 記 1985 年英國盤、編號 **WKFM LP 32**、LP。FM Revolver 是英國中部一家專做本地重搖滾與 AOR 的獨立廠牌，prog 在它的目錄裡是少數；同年它還出了 Magnum 的《On A Storyteller's Night》(WKFM PD 34)。1992 年本張在美國再發（MB 轄下 1992 US Official），是這支團唯一一次進到國際通路。池中實掃 seed_cards.json 全 13,913 列，Multi-Story 零張。",
+  "risk": "**MB 的 artist-credit 用了 U+2010 連字號**「Multi‐Story」——卡單一律採 ASCII 連字號（第 52 條），這一點下游比對時要知道，否則字串會對不上。**盤名主鍵撞卡檢查**：實掃 seed_cards.json 全 13,913 列，池中另有 Paul Butterfield Blues Band《East-West》(1966) 一張同盤名卡——**藝人不同、是兩張不同的碟**，不構成撞卡，但下游若以盤名為主鍵掃池會標記，此處先寫明。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 320390818《East West》1985、8 軌，試聽預估 ready。",
+  "mbNote": "釘 328bc4e7-858c-43a8-b609-878dbb048cc0《East West》，artist-credit「**Multi‐Story**」（**注意 MB 這一筆用的是 U+2010 連字號**，卡片採 ASCII 連字號，兩者不必相等，第 91 條），first-release-date 1985，primary-type Album、secondary-types 空，轄下 2 個 release：1985 GB Official、1992 US Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID c4776533-4a1b-4da1-9299-6f6bbe0a852d，分頁 browse 得名下 7 個 release-group。對照組 821061ee《Chimes》(1984) 為本批另一張；ed417b7f《Through Your Eyes》(1987) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Treatment",
+  "album": "The World of Treatment",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Treatment 自壓）",
+  "why": "四年之後同一組人的第二張整輯，形態沒變：Discogs release 12543540，1986 年、廠牌欄「Not On Label」（掛 Mike Saturn Entertainments PLC）、編號 **UYB1**、Cassette Album。四年之間他們只多了一張 1982 年的現場帶與一支 1981 年的單曲，作品全部沒進過店面。這是本批年代最晚、也最能說明「這條線到 1986 年還在用卡帶」的一張。本張沒有任何再發，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨。池中實掃 seed_cards.json 全 13,913 列，Treatment 零張。",
+  "risk": "掛名是單一通用詞（第 124 條），MB 上另有兩個同名實體、近年還有英國硬搖滾團 The Treatment，只能靠 rgMbid 鎖定。盤名帶「The World of」這種選輯常用句式，容易被誤判成合輯——**MB 的 primary-type 是 Album、secondary-types 空**，不走 §5.6。封面實測 CAA release-group front 回 404，需本機另尋；Apple 八個 storefront 全空，試聽預估 unavailable，是本組風險最高的兩張之一。卡帶原盤，依第 1 條年份取 1986。",
+  "mbNote": "釘 eabb7d39-6c02-411e-b07b-12b6c0241b02《The World of Treatment》，artist-credit「Treatment」，first-release-date 1986，primary-type Album、secondary-types **空**（不是 Compilation，故不走 §5.6），轄下 1 個 release：1986 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID d47fd371-15f9-4d0c-9726-993ab91e29c1（GB），分頁 browse 得名下 7 個 release-group。對照組 21a5bb61《Intensive》(1982) 為本批 a 組另一張；71fa5ea3《Live at Stonehenge》(1982，Live)、f7c86679《Treatment》(1989，自我同名)、f0b87df6《Cipher Caput》(1993)、07b7825c《Stamp Out Mutants》(1981，Single)、4104dde1《Feeling Like a Ghost》(1987，Single) 皆刻意不釘。另一個 MB 實體 e0010185 名下的 aa20fa2d《Drum Beast》(1985) 不是同一組人。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Robert Calvert",
+  "album": "Freq",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Flicknife Records",
+  "why": "Calvert 把 1984–85 年英國礦工罷工寫成一張碟，交給 Hawkwind 周邊的小廠 Flicknife：Discogs master 440945，1984 年英國盤、編號 SHARP 021、12 吋 33 轉 Mini-Album。Flicknife 是 1980 年代倫敦專做 Hawkwind 家族與地下搖滾的獨立廠牌，目錄裡的 SHARP 編號同時涵蓋單曲、迷你專輯與《Hawkwind Friends & Relations》系列合輯。這張碟當年幾乎只在那個圈子裡流通，八年後才被 Anagram 以《Freq Revisited》重新包裝。地位證據是 1992 年 Anagram（cdmgram 55）、1994 年美國 Cleopatra（CLEO 9467-2）與 **2008 年 Cherry Red 旗下專做 Hawkwind 檔案的 Atomhenge（ATOMCD 1001）**，Discogs 版本頁十筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Robert Calvert 零張。",
+  "risk": "**年份分歧**：Discogs master 與其下的 Flicknife SHARP 021 原盤條目記 1984，MB 的 first-release-date 記 1985。卡單取 1984（第 86 條：採有來源直接寫出的年份；Flicknife 的原盤條目與試壓盤都記 1984），行文不得正面斷言發行年（第 18／46 條）。**改名風險**：1992 年 Anagram 版改題《Freq Revisited》，卡單採原盤的《Freq》（第 50 條）。**Apple 版本要核**：實測 gb 命中 collectionId 293192204《Freq》，Apple 記 1984-01-01、**13 軌**——原盤是迷你專輯、曲數應低於此，13 軌極可能是 Atomhenge 的加曲版（第 129 條），試聽可採但本機上架前要逐軌核對。掛名同名見同人另兩張的 risk；本人在本批共三張，已達藝人上限。封面已實測 CAA release-group front 回 200。",
+  "mbNote": "釘 beb3dd42-3bec-3765-955b-09e08894771f《Freq》，artist-credit「Robert Calvert」，first-release-date **1985**（**與卡單 1984 脫鉤，見 risk**），primary-type Album、secondary-types 空，轄下 3 個 release：1985 GB Official、1992 GB Official、2008-09-29 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6253d563-08a8-404e-9336-d3312825827e（**不是** a9b59d64 那位英國薩克斯風手），分頁 browse 得名下 16 個 release-group。對照組 11e052e3《Test-Tube Conceived》(1986) 與 6e7e5387《Hype》(MB 記 1989、卡單 1981) 為本批另兩張、各自釘各自的；7774d467《Live》(1982，primary-type **Other**／Live)、44f6a065《Blueprints From the Cellar》(1992)、6af91311《Revenge》(1992)、8925129f《Anthology of Cosmic Music》(1999，Compilation)、afde6960《The Last Star Fighter》(2021，Remix) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Atomhenge",
+  "g": "b"
+ },
+ {
+  "artist": "Robert Calvert",
+  "album": "Test-Tube Conceived",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Demi Monde",
+  "why": "Calvert 生前最後一張錄音室專輯，交給威爾斯的小廠 Demi Monde：Discogs master 423329，1986 年英國盤、編號 DMLP 1010、LP Album（1985 年已有一批試壓）。Demi Monde 是 1980 年代中期一家只有十幾號的獨立廠牌，目錄以地下搖滾與電子為主。隔年 The cd Label 就把它轉成 CD（CDTL 007），2003 年 Voiceprint 再發（VP273CD），Discogs 版本頁五筆零筆標 Unofficial Release。這張與 1984 年的《Freq》、1981 年的《Hype》構成他在 Hawkwind 之外、三家不同小廠的三張獨立作品。池中實掃 seed_cards.json 全 13,913 列，Robert Calvert 零張。",
+  "risk": "**盤名含 ASCII 連字號**「Test-Tube Conceived」，是原盤寫法、不是非 ASCII 連字號，chk-prop 不會擋，但下游若做正規化要留意。**年份**：Discogs 上 1985 年那筆是 Test Pressing、1986 年才是正式發行，MB 亦記 1986，卡單取 1986，兩邊一致。掛名同名見同人另兩張的 risk；本人在本批共三張，已達藝人上限。封面已實測 CAA release-group front 回 200；Apple 實測 **us** 命中 collectionId 193081787《Test-Tube Conceived》1986、11 軌，試聽預估 ready——注意這是本批僅有兩張在 us storefront 命中的卡之一，其餘命中全在 gb。",
+  "mbNote": "釘 11e052e3-9118-3f8f-994a-51698dccf663《Test-Tube Conceived》，artist-credit「Robert Calvert」，first-release-date 1986，primary-type Album、secondary-types 空，轄下 2 個 release：1986 GB Official、2012-02-27 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6253d563-08a8-404e-9336-d3312825827e，分頁 browse 得名下 16 個 release-group。對照組 beb3dd42《Freq》(1985) 與 6e7e5387《Hype》為本批另兩張；6f795b30《1986-11-03: Live at the Carlisle Stars & Stripes》(2009，Live，**與本卡同年錄音、易誤配**) 刻意不釘；85b39f0a《At the Queen Elizabeth Hall》(1993，Live)、1be4861c《The Brock / Calvert Project》(2006) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Voiceprint",
+  "g": "b"
+ },
+ {
+  "artist": "Paul Roland",
+  "album": "Burnt Orchids",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Aftermath Records",
+  "why": "Discogs master 53079：1985 年英國盤、Aftermath Records、編號 SCOOP 2（另一批標 AEP 12011）、LP Album Stereo。Aftermath 是 1980 年代中期一家只有幾號的英國小廠，Roland 的 1980 年代唱片全部散落在這類一兩張就換一家的小廠之間，從沒進過大通路。整個 master 只有兩筆版本、都是 1985 年的原盤，**沒有任何再發**——依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨；他 1980 年代錄音的整體地位證據是 2016 年 Cherry Red 的《In The Opium Den - The Early Recordings 1980-1987》(CDBRED683)，但那是選輯、不能當本張這一次的背書（第 57 條）。池中實掃 seed_cards.json 全 13,913 列，Paul Roland 零張。",
+  "risk": "**同人另一張刻意不收**：Roland 1980 年的《The Werewolf of London》在 MB 上的 artist-credit 是「Midnight Rags」、原盤掛在 Ace Records（ACE 013）與 Armageddon（ARM 9）名下，Ace 屬 Chiswick 體系、與本批「Chiswick 以外的地方廠」的範圍衝突，**本批不收**，記在未收清單。本張的掛名與 credit 皆為「Paul Roland」，無此問題。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。年份 MB 與 Discogs 一致記 1985。",
+  "mbNote": "釘 fb43bc0b-f565-4a95-b12a-900bb0b32595《Burnt Orchids》，artist-credit「Paul Roland」，first-release-date 1985，primary-type Album、secondary-types 空，轄下 2 個 release：1985 GB Official ×2。已回問 release-group 端點確認實體類型與標題。藝人 MBID 65aae1d0-6f96-44a5-9146-97d699685394（GB，1959-09-06），分頁 browse 得名下 42 個 release-group（第 116 條）。對照組 3ecf4400-22cb-44ea-b884-88bdcc36046f《The Werewolf of London》(1980，**artist-credit 是「Midnight Rags」**) 刻意不釘（見 risk）；e4be7010《Danse macabre》(1987)、fc436ce2《A Cabinet of Curiosities》(1987) 皆刻意不釘（年代外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nic Potter",
+  "album": "Mountain Music",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Zomart Records",
+  "why": "Van der Graaf Generator 的貝斯手 Nic Potter 1984 年開了自己的 **Zomart Records**，第一號就是本張：Discogs master 319914，1984 年英國盤、編號 ZOMART 001、LP Album 且標 Limited Edition，另有一批 White Label。Zomart 此後成了他個人目錄的唯一出口（1986 年 ZOM 002、1993 年 ZOMCD005 把 The Long Hello 系列轉 CD、2009 年整批以 VP 編號重製），也就是說這位樂手 1980 年代之後的所有唱片都是自己出的。地位證據是 2009 年 Zomart／Voiceprint 的授權重製（VP485CD），Discogs 版本頁四筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，`Nic Potter` 零張。",
+  "risk": "**二合一風險（第 129 條）**：Discogs master 975194 是 1993 年 Zomart 把本張與 1986 年的《Sketches In Sound》併成一片的 CD（ZOMCD006，2009 年又出 VP483CD），**身分不釘、封面不用、試聽不採**；MB 上沒有替那張併輯建 release-group，但本機做封面與試聽時要擋。**掛名分裂**：本批另有一張以「Nic Potter & Guy Evans」雙掛名的《The Long Hello Volume Two》(1981，a 組)，同一個人在池中會有兩個鍵，藝人層統計時要知道。盤名是通用詞組合（第 124 條），字串搜尋會撈到大量美國山區音樂合輯。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 493542668《Mountain Music》1984、8 軌，試聽預估 ready。",
+  "mbNote": "釘 3a8f7453-4478-4e50-bcd9-6c293ff8de13《Mountain Music》，artist-credit「Nic Potter」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release：1984 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 1331620d-9c52-4c3c-9976-e0e89ebbf3c1，分頁 browse 得名下 4 個 release-group。對照組 69e384fc《The Long Hello, Volume Two》(1981) 為本批 a 組另一張（雙掛名）、6b39f7b2《Sketches in Sound》(1986) 為本組另一張、各自釘各自的；85011587《Self Contained》(1987) 刻意不釘（年代外）。**Discogs master 975194《Mountain Music & Sketches In Sound》(1993) 是二合一 CD，依第 129 條刻意不釘、封面不用、試聽不採。**",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Zomart Records",
+  "g": "b"
+ },
+ {
+  "artist": "Nic Potter",
+  "album": "Sketches in Sound",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Zomart Records",
+  "why": "Zomart 的第二號：Discogs master 422463，1986 年英國盤、編號 ZOM 002（另記 ZOMART 002）、LP Album。與兩年前的 ZOMART 001 一樣是自資、限量、靠郵購與現場賣，兩張構成這家一人廠牌在 1980 年代的全部黑膠。2009 年 Zomart 與 Voiceprint 合作把整批目錄重製為 CD（本張為 VP486CD），Discogs 版本頁兩筆零筆標 Unofficial Release。這條「老一輩 prog 樂手在 1980 年代自己開廠牌」的線，在本批另有 Peter Hammill 的 Sofa Sound 與 The Enid 的 Enid Records 兩個對照。池中實掃 seed_cards.json 全 13,913 列，`Nic Potter` 零張。",
+  "risk": "**二合一風險（第 129 條）**：與《Mountain Music》併成一片的 1993 年 CD（Discogs master 975194，ZOMCD006／VP483CD）**身分不釘、封面不用、試聽不採**。**掛名分裂**見同人另兩張的 risk。盤名是通用詞組合（第 124 條）。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable（同人的《Mountain Music》在 gb 有、本張沒有，是同一位藝人在同一個 storefront 上架不完整的例子，本機可再以 collectionId 反查一次）。",
+  "mbNote": "釘 6b39f7b2-18c2-41f5-82b0-8688f640ca54《Sketches in Sound》，artist-credit「Nic Potter」，first-release-date 1986，primary-type Album、secondary-types 空，轄下 1 個 release：1986 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 1331620d-9c52-4c3c-9976-e0e89ebbf3c1，分頁 browse 得名下 4 個 release-group。對照組 3a8f7453《Mountain Music》(1984) 為本組另一張、69e384fc《The Long Hello, Volume Two》(1981) 為 a 組另一張；85011587《Self Contained》(1987) 刻意不釘。**Discogs master 975194《Mountain Music & Sketches In Sound》(1993) 是二合一 CD，依第 129 條刻意不釘、封面不用、試聽不採。**",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Zomart Records",
+  "g": "b"
+ }
+]
