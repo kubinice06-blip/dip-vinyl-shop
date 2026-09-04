@@ -1,0 +1,391 @@
+[
+ {
+  "artist": "尾島由郎",
+  "album": "Club",
+  "year": 1983,
+  "genres": [
+   "electronic"
+  ],
+  "label": "FGW",
+  "why": "尾島由郎的第一張唱片，1983 年由 FGW（Fine Graphic Works）以 FGW-2002 發行，Discogs master 2872981 底下 1983 年的兩筆版本都是日本盤、其中一筆標 Limited Edition，四十年間沒有第三個國家出過它。它比他日後替東京 Spiral（ワコールアートセンター）做的《Une Collection des Chaînons》早了五年，是這條線上少數在「館內用盤」之前就存在的私家版。地位證據是 2024 年瑞士 We Release Whatever The Fuck We Want Records 的授權復刻 WRWTFWW0087（Discogs release 31184425 與 32505630，兩筆都標 Reissue／Limited Edition，master 2872981 的四個版本零筆標 Unofficial）。池中實掃 seed_cards.json 全 13,913 列，尾島由郎名下已有《Une Collection des Chaînons I》與《II》兩張，本張為第三張、剛好到藝人上限。",
+  "risk": "藝人上限：池中已有 2 張，收本張後為 3 張，本批不得再收尾島由郎。盤名《Club》是通用詞（裁定第 124 條），Apple 與 Spotify 的字串比對會撈回大量同名條目，只能靠 rgMbid 與 collectionId 鎖定；本卡實測 Apple 三個 storefront（jp／us／gb）皆無條目，固定試聽預估落在 unavailable。封面已實測 CAA release-group front 回 200。掛名為漢字「尾島由郎」，與池中既有兩張一致，不製造分裂鍵；羅馬拼音 Yoshio Ojima 填進 queryAlias 供外部服務使用。",
+  "mbNote": "釘 32943609-ad5e-48c3-ad78-271ce5a28585《Club》，artist-credit「Yoshio Ojima」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 1 個 release（1983 JP Official《Club》）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6639b3dd-53df-47af-ac73-6310333ebd60，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 9 個 release-group。同藝人的 c7d72549-bfbd-4677-981d-128efc0932b7《Airy Walks》(1987)、12f4e31e-f54f-4728-81b4-8ee53d1cdf4f 與 1bf85caa-7d47-4542-b56c-e0ad993c2aaa（Spiral 兩張，已在池中）、21366368-b828-4a38-8ba9-07a8b4ed15fb《Music for Element》(1994，與柴野さつき合作) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoshio Ojima",
+  "reissuedBy": "We Release Whatever The Fuck We Want Records",
+  "g": "b"
+ },
+ {
+  "artist": "宮下富実夫",
+  "album": "Wave (Sound of the Universe)",
+  "year": 1983,
+  "genres": [
+   "electronic"
+  ],
+  "label": "BIWA Records",
+  "why": "Far East Family Band 解散後，宮下富実夫自己開了 BIWA Records，1983 年以 BW-3009 發行本作（Discogs master 495050，1983 年兩筆版本都是自家廠牌的日本盤）。這是日本「治癒音樂」商品化之前的自營目錄，通路只有他自己的講座與少數店家，與同時期進百貨與唱片行的環境音樂盤不同。地位證據是 2019 年美國 Personal Affair 的授權復刻：PALP-002 黑膠（Discogs release 14237152）、PACD-002 CD（14254142）與 PALP-002-L 限量盤（14237202），三筆都標 Reissue／Remastered，master 495050 的七個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，宮下富実夫零張。",
+  "risk": "盤名分歧：MB 的 release-group 標題只寫《WAVE》，Discogs master 與 1983 原盤條目寫《Wave (Sound Of The Universe)》，2019 復刻改成《Wave (Sounds Of The Universe)》（Sound→Sounds）。本卡採原盤括號全名，屬裁定第 91 條「RG 標題與卡片盤名不必相等」的已知形狀，fix-rgmbid 若報「標題對不上」是誤報，不得據以改釘。Apple 實測命中 us storefront collectionId 1480410375《Wave Sounds of the Universe》(2019 復刻，Fumio Miyashita)，本機比對版本時要注意曲目可能與 1983 原盤不同。封面已實測 CAA 回 200。同藝人在 MB 另有《Earth》(1983) 與《Earth - Sound Of The Universe》兩個 release-group，盤名互相纏繞，去重時要看 MBID 不能看字串。",
+  "mbNote": "釘 db8ff130-3eb2-4769-976d-79e4af2fcdda《WAVE》，artist-credit「宮下富実夫」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 3 個 release：1983 JP Official、2019-09-20 US Official、2019-09-20 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 565ede5e-4c52-4645-b6a3-1d748dd23059，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 29 個 release-group。同藝人的 5aad5c35-9a49-4581-8c17-dea9556fc12a《Earth》(1983)、3cac1563-a1cd-4ac3-bc4e-b96c26a5b2ef《Earth - Sound Of The Universe》(無年份)、1f02a812-570f-48a8-86c8-d6dc0be5b798《SILENT ECHO》(1984) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fumio Miyashita",
+  "reissuedBy": "Personal Affair",
+  "g": "b"
+ },
+ {
+  "artist": "柴野さつき",
+  "album": "Erik Satie (France 1866-1925)",
+  "year": 1984,
+  "genres": [
+   "classical"
+  ],
+  "label": "Sound Process",
+  "why": "芦川聡創辦的 Sound Process「Wave Notation」系列第三張，也是最後一張：第一張是吉村弘《Music for Nine Post Cards》、第二張是芦川聡《Still Way》，兩張都已在池中，第三張把整個系列的方法用在薩提的鋼琴曲上。原盤 1984 年 Sound Process WN-003 黑膠與 WNC-003 卡帶（Discogs master 1809804 的六個版本，1984 年兩筆皆日本盤）。地位證據是 2023 年瑞士 We Release Whatever The Fuck We Want Records 的授權復刻《Wave Notation 3: Erik Satie 1984》WRWTFWW065（Discogs release 27335619 黑膠 45 轉、27518181 CD，另兩筆 test pressing），master 1809804 的六個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，柴野さつき零張，Wave Notation 系列的前兩張在池、第三張不在。",
+  "risk": "MB 的 release-group 標題《Erik Satie (france 1866–1925)》用的是 en dash（U+2013）且 france 小寫，會踩 chk-prop 的非 ASCII 連字號反模式（裁定第 118 條）；本卡採 Discogs master 1809804 的 ASCII 寫法《Erik Satie (France 1866-1925)》，屬裁定第 50 條「同一個盤名的兩種寫法採原盤封面」的處理，不是改名。MB 的 artist-credit 是「Erik Satie; 柴野さつき」（作曲家在前），依 §0.6 古典慣例卡片掛演奏者「柴野さつき」，作曲家 Erik Satie 應填古典作曲家欄。盤名以作曲家名開頭，Apple 字串搜尋會大量撈回別人的薩提專輯，只能靠 collectionId 鎖定；實測 Apple jp 命中 1691190123 柴野さつき《Wave Notation 3: Erik Satie 1984》(2023 復刻)，本機要確認曲目與 1984 原盤一致。封面已實測 CAA 回 200。",
+  "mbNote": "釘 4209553b-5d75-4a5d-adec-d8315bb76511《Erik Satie (france 1866–1925)》，artist-credit「Erik Satie; 柴野さつき」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release（1984 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 28e67caa-9cba-4269-949e-935aba35bde0，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 12 個 release-group。同藝人的 33bc4f44-2e9c-4ff5-ab6f-31560c4a7774《Wave Notation 3: Erik Satie 1984》(2023，WRWTFWW 復刻另建的 release-group) **刻意不釘**——那是再發版本、年份會錯（裁定第 129 條）；729bfce6-2321-4d9b-8c58-a6e384bfc1fc《Satsuki Plays Satie》(1987) 與 103f061c-c5e5-4b56-a030-6c0af9e4a1e6《Satsuki Plays Satie II》(1987) 是另外兩張碟，亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Satsuki Shibano",
+  "reissuedBy": "We Release Whatever The Fuck We Want Records",
+  "g": "b"
+ },
+ {
+  "artist": "北村昌士＋PHONOGENIX",
+  "album": "Prologue for Post Modern Music",
+  "year": 1984,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Vap",
+  "why": "1984 年 7 月 Vap 30153-28 發行的單張企劃盤（Discogs master 823591，1984 年兩筆版本皆日本盤，其一為宣傳盤）。掛名的兩造在日本音樂史上分屬兩端：北村昌士是《FOOL'S MATE》創辦編輯與 YBO² 的核心，PHONOGENIX 是他找來的合成器組，兩造合起來只留下這一張唱片，MB 上北村昌士名下的 release-group 就只有這一筆。地位證據是 2021 年美國 Ship To Shore Phonograph Co. 的授權復刻 STS-080（Discogs release 18402388，標 Reissue／Remastered／Limited Edition）與 2024 年日本 Arcàngelo ARC7393 的 CD 化（32788299），master 823591 的四個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，北村昌士與 Phonogenix 皆零張。",
+  "risk": "掛名寫法分歧：MB 的 artist-credit 是全形加號的「北村昌士＋PHONOGENIX」，Discogs 是「Masashi Kitamura* + Phonogenix」。本卡採 MB 的 credit 字串（裁定第 51 條的正面應用：credit 就是外界實際使用的掛名），羅馬寫法填 queryAlias。這不是裁定第 16 條的多藝人斜線拼盤——原盤封面印的就是「＋」的合體掛名，不是兩個獨立團體共用一張碟。Apple 實測 jp 命中 collectionId 1767965477「Masashi KITAMURA + PHONOGENIX」《Prologue for Post Modern Music》(1984)，掛名用羅馬寫法才查得到，探測腳本要吃 queryAlias。封面已實測 CAA 回 200。",
+  "mbNote": "釘 96b567bc-93a6-461a-bb78-8613ecbcdc44《Prologue for Post Modern Music》，artist-credit「北村昌士＋PHONOGENIX」，first-release-date 1984-07，primary-type Album、secondary-types 空，轄下 1 個 release（1984-07 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID b0de3214-903c-4430-ac91-3e7ccb56a0cd（北村昌士），以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 1 個 release-group，無對照組可混淆。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Masashi Kitamura + Phonogenix",
+  "reissuedBy": "Ship To Shore Phonograph Co.／Arcàngelo",
+  "g": "b"
+ },
+ {
+  "artist": "YAS-KAZ",
+  "album": "縄文頌",
+  "year": 1984,
+  "genres": [
+   "world",
+   "electronic"
+  ],
+  "label": "Canyon",
+  "why": "打擊樂手佐藤康和的第一張個人作，1984 年 4 月 21 日 Canyon C28R0119 黑膠與 D35R0012 CD（Discogs master 106607，1984 年四筆日本盤含一張宣傳盤）。1985 年美國 Gramavision 以《Jomon-Sho》18-7013-1 發行（Discogs release 981074、德國盤 5217849），是這一批日本環境音樂裡少數當年就有西方發行的碟——但發行方是紐約的爵士廠牌，不是新世紀通路。地位證據是 2020 年西班牙 Glossy Mistakes 的授權復刻 GLOSSY004（Discogs release 16110949、16127403 限量盤、16207890 test pressing，皆標 Reissue／Remastered），master 106607 的十二個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，YAS-KAZ 零張。",
+  "risk": "掛名寫法：MB 的藝人實體名是「YAS‐KAZ」，中間是 U+2010 連字號（非 ASCII）；本卡採 ASCII 的「YAS-KAZ」（Discogs 與 Gramavision 盤面寫法），依 §0.5「官方藝名本身就是拉丁字者保留」與裁定第 52 條採現行通行寫法。盤名跨文字系統：日本原盤《縄文頌》、美國盤《Jomon-Sho》、1998 年 Candy Records 再版又寫成《Jo Mon Sho》——去重時三種寫法都要比對（裁定第 49 條），羅馬拼音為 Jomon-Sho／Jo Mon Sho。Apple 實測 jp 命中 collectionId 1368300298「YAS-KAZ」《縄文頌 YASーKAZ》(1984)，標題尾巴多帶一次掛名，比對要容得下這個殘餘。封面已實測 CAA 回 200。同批另收《風の卵》，本藝人本批 2 張、池中 0 張，未達上限。",
+  "mbNote": "釘 a58f0577-15ec-4aa2-a5e0-e1ec7ec5559c《縄文頌》，artist-credit「YAS‐KAZ」，first-release-date 1984-04-21，primary-type Album、secondary-types 空，轄下 4 個 release：1984-04-21 JP Official《縄文頌》、1985 US Official《Jomon-Sho》、1998-07-12 JP Official、2020-11-06 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID fdac2c6e-d833-4537-ba3a-3042afeae91e，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 14 個 release-group。同藝人的 6709c614-193d-49b5-a4cf-0bba94a3a234《まほろば》(1984)、020cd433-b9da-417b-8b18-78684eee0675《海道》(1985)、9bea2174-1208-4092-98a4-e38b14e91f8d《Virgo Indigo》(1986)、f6fc913b-04da-42b7-bf22-d22ce425b227《Moon Rabbits》(1987) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Glossy Mistakes",
+  "g": "b"
+ },
+ {
+  "artist": "鈴木良雄",
+  "album": "Morning Picture",
+  "year": 1984,
+  "genres": [
+   "jazz",
+   "electronic"
+  ],
+  "label": "Music Interior",
+  "why": "貝斯手鈴木良雄替 JVC 的「Music Interior」系列做的一張，1984 年 11 月 21 日 JMI-28005 黑膠（Discogs master 322056，1984 年日本盤四筆，含 JVC JMC-10005 與 VDP-97 兩種型號）。Music Interior 是 JVC 為室內用途企劃的目錄，這是它與爵士樂手的交會點——同一位樂手同年還在替 Three Blind Mice 錄硬派爵士。原盤當年少見地有跨國代理：1984 年加拿大 Attic MIL-102（Discogs release 2787446）、1985 年德國 Innovative Communication KS 80.048（2787378，Klaus Schulze 的廠牌）、1986 年英國 Pan East NEWLP 103（3313944）。地位證據是 2021 年日本 HMV Record Shop 的授權黑膠復刻 HRLP238（Discogs release 21427666）。池中實掃 seed_cards.json 全 13,913 列，鈴木良雄零張。",
+  "risk": "授權狀態要標記：master 322056 的十二個版本裡，2025 年歐洲「Victory (4)」V25AH102 那筆**明確標 Unofficial Release**（Discogs release 33159387），依裁定第 43／57／65 條不得採為背書，且該廠牌實體的括號序號 (4) 正是冒名盤的辨識點——舉證只用 1984 原盤與 2021 HMV 那筆。本張因為當年有加德英三國代理，冷門軸不宜給到 5；依 §0.8 錨點制，屬「原盤有正規廠牌但流通有限」那一級。Apple 實測 jp 命中 collectionId 1453369285 鈴木良雄《Morning Picture》(1984)。封面已實測 CAA 回 200。掛名用漢字「鈴木良雄」（MB 藝人實體名），羅馬拼音入 queryAlias；MB 另有「鈴木良雄トリオ」獨立實體，去重與查詢不得混用。",
+  "mbNote": "釘 12741f20-e0a9-4cf5-b26f-2dc3478fbbcb《Morning Picture》，artist-credit「Yoshio Suzuki」，first-release-date 1984-11-21，primary-type Album、secondary-types 空，轄下 5 個 release：1984-11-21 JP Official、1984 JP Official、1984 US Official、1986 GB Official、2019-03-06 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3c27fd75-2bed-46b1-96d0-54bbec36ae6c，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 13 個 release-group。同藝人的 b26a7d6d-dbf2-4616-a604-aa4f71ef2550《Touch of Rain》(1986)、8fe00939-8f6d-49b8-8518-dddcb22d664d《Fairy Tale》(1987) 皆刻意不釘；另一個藝人實體「鈴木良雄トリオ」e9131030-9896-4bc0-911b-b7edce9e9f83 不是本卡的掛名。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoshio Suzuki",
+  "reissuedBy": "HMV Record Shop",
+  "g": "b"
+ },
+ {
+  "artist": "YAS-KAZ",
+  "album": "風の卵",
+  "year": 1985,
+  "genres": [
+   "world",
+   "electronic"
+  ],
+  "label": "Canyon",
+  "why": "《縄文頌》的隔年作，1985 年 5 月 21 日 Canyon C28R0130 黑膠與 D32R0016 CD（Discogs master 494413，1985 年日本盤三筆，含 Pony 28P6430）。同年美國 Gramavision 以《Egg of Purana》18-7015-1 發行（Discogs release 783503，另有 4013966 白標宣傳盤與德國盤 10943862），這是他與紐約爵士廠牌合作的第二張、也是最後一張。與《縄文頌》不同的是它至今沒有任何授權復刻——master 494413 的七個版本全部是 1985 年的原始壓片，零筆標 Unofficial，也零筆是再發。依裁定第 82 條，「完全沒有再發」比「只有未授權再發」乾淨，分量靠原盤的跨國發行紀錄與同一批 Gramavision 目錄舉證。池中實掃 seed_cards.json 全 13,913 列，YAS-KAZ 零張。",
+  "risk": "本張沒有進入串流的授權再發，依 §0.8 錨點制冷門軸應高於同批已被復刻的碟。盤名跨文字系統：日本《風の卵》、美國《Egg of Purana》、德國盤寫成《風の卵 Egg Of Purãna》（帶波浪符的 ã），去重與查詢三種都要試（裁定第 49 條），羅馬拼音為 Kaze no Tamago／Egg of Purana。Apple 實測 jp 命中 collectionId 1368292239「YAS-KAZ」《風の卵》(1985)。封面已實測 CAA 回 200。掛名同《縄文頌》採 ASCII 的「YAS-KAZ」，MB 實體名是 U+2010 連字號的「YAS‐KAZ」，下游字串比對要注意。本藝人本批 2 張、池中 0 張，未達上限。",
+  "mbNote": "釘 2e31d839-703d-4b8c-b881-b61946bdf50b《風の卵》，artist-credit「YAS‐KAZ」，first-release-date 1985-05-21，primary-type Album、secondary-types 空，轄下 1 個 release（1985-05-21 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID fdac2c6e-d833-4537-ba3a-3042afeae91e，名下 14 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。美國《Egg of Purana》沒有獨立的 release-group，是本 RG 轄下的 release，不必也不能另釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "日向敏文",
+  "album": "Sarah's Crime",
+  "year": 1985,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Alfa",
+  "why": "日向敏文的第一張唱片，1985 年 8 月 25 日 Alfa ALR-28069 黑膠（Discogs master 823596，1985 年日本盤兩筆含宣傳盤，1986 年 CD 化為 32XA-58）。Alfa 是 YMO 的廠牌，這張是它在電子流行以外開的另一條線：室內樂編制的器樂盤，比他 1986 年那張已在池中的《Reality in Love》早一年。地位證據是 1992 年 Premiere ALCA-262 的正式再版（Discogs release 13274803，標 Reissue）與 2021 年 12 月的日本再版（MB release，2021-12-03 JP Official），master 823596 的四個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，日向敏文名下已有《Reality in Love》一張，收本張後為 2 張、未達上限。",
+  "risk": "Discogs 把 1985 原盤的掛名登成「Toshi*」（藝名縮寫），MB 的 artist-credit 則是「日向敏文」——這是裁定第 10 條的 credit 字串分歧，本卡採 MB 實體名並與池中既有卡一致，不製造分裂鍵。盤名帶所有格撇號，MB 的 2021 release 用彎引號（U+2019）、1985 release 用直引號，字串比對要正規化撇號。Apple 實測 jp 命中 collectionId 1594298382「日向 敏文」《Sarah's Crime》(1985)，注意 Apple 的掛名中間有空格。封面已實測 CAA 回 200。",
+  "mbNote": "釘 59b5cc0e-a203-4c0c-98fd-5f0e810aec9e《Sarah's Crime》，artist-credit「日向敏文」，first-release-date 1985-08-25，primary-type Album、secondary-types 空，轄下 3 個 release：1985-08-25 JP Official《Sarah's Crime》（直引號）、1986-02-25 JP Official《Sarah's Crime》（彎引號）、2021-12-03 JP Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0efcb23b-cc34-42e7-b60a-747c142666c3，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 22 個 release-group。同藝人的 4cb1e7c8-b07a-43f6-9e06-9655d5656aaf《CHAT D'ETE》(1986)、51c04c3f-bd13-3c21-a539-acd9643a06dd《REALITY IN LOVE》(1986，已在池中)、3ce298ae-15d1-4fc6-bb52-39754f0d6abf《ISIS》(1988) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Toshifumi Hinata",
+  "reissuedBy": "Premiere",
+  "g": "b"
+ },
+ {
+  "artist": "濱瀬元彦",
+  "album": "Reminiscence",
+  "year": 1986,
+  "genres": [
+   "jazz",
+   "electronic"
+  ],
+  "label": "Shi Zen",
+  "why": "貝斯手兼理論家濱瀬元彦的第一張個人作，1986 年 1 月 25 日「Shi Zen」1342-74(28SD) 黑膠（Discogs master 487929，1986 年日本盤三筆，含宣傳盤 11192379 與 CD 型號 P33S20022）。Shi Zen 是 1980 年代中期只出過個位數唱片的小目錄，濱瀬在同一個目錄下連出兩張（本張與同年的《Intaglio》）之後就轉到 Newsic。地位證據是 MB 登錄的兩次授權再發：2018-10-19 XE Official 與 2021-08-13 XW Official（release-group f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8 轄下），Apple 實測 jp 命中 collectionId 1577891398 濱瀬元彦《Reminiscence》(2018)，確認它已進入串流。Discogs master 487929 的三個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，濱瀬元彦零張。",
+  "risk": "本張已有再發進入串流，依 §0.8 錨點制冷門軸屬「被挖出來了但仍是收藏家領域」那一級，不宜給 5。同批另收《Intaglio》與《♯Notes of Forestry》，本藝人本批 3 張、池中 0 張，剛好到上限，本批不得再收。MB 的 artist-credit 在本張是羅馬拼音「Motohiko Hamase」、在另兩張是漢字「濱瀬元彦」——同一位藝人在 MB 上兩種 credit 並存（裁定第 10 條），卡片三張統一掛漢字「濱瀬元彦」，羅馬拼音入 queryAlias。注意「濱」是異體字，池中若日後出現「浜瀬元彦」會是分裂鍵。封面已實測 CAA 回 200。",
+  "mbNote": "釘 f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8《Reminiscence》，artist-credit「Motohiko Hamase」，first-release-date 1986-01-25，primary-type Album、secondary-types 空，轄下 4 個 release：1986-01-25 JP Official、1986 JP Official、2018-10-19 XE Official、2021-08-13 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 6 個 release-group。同藝人的 b949a0fc-c162-4bb3-ba04-0671f58f75aa《Technodrome》(1993)、0c9b45c7-6869-4b4e-9b69-34ee48305ed8《Anecdote》(1993) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Motohiko Hamase",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "濱瀬元彦",
+  "album": "Intaglio",
+  "year": 1986,
+  "genres": [
+   "electronic",
+   "jazz"
+  ],
+  "label": "Shi Zen",
+  "why": "同年第二張，1986 年 11 月 25 日 Shi Zen 1342-91(28SD) 黑膠（Discogs master 1049308 的四個版本全部是 1986 年日本盤：8831573 黑膠、15578911 宣傳盤、12301917 與 4001981 兩種 CD 型號《Intaglio = インタリヨ》）。與《Reminiscence》同一個小目錄、同一年，兩張合起來就是 Shi Zen 在濱瀬名下的全部。地位證據是 2018 年的授權復刻——MB 另建了 release-group 3a2f8159-a30d-44f9-89b1-c12878fc2041《Intaglio》(2018-08-10)，Apple 實測 jp 命中 collectionId 1576661283 濱瀬元彦《Intaglio》(2018)。Discogs master 1049308 的四個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，濱瀬元彦零張。",
+  "risk": "**同名雙胞胎 release-group，兩個都叫《Intaglio》、都掛濱瀬元彦**：1986 原盤 6c081a67-7456-4c9b-b14f-547c25cdd8c1 與 2018 復刻 3a2f8159-a30d-44f9-89b1-c12878fc2041。本卡釘前者，後者刻意不釘（裁定第 126／129 條：下游若用年份或標題計分很容易換錯，fix-rgmbid 不得改動本卡的釘位）。封面實測 CAA release-group front 對 1986 那筆回 **404**、對 2018 那筆未測——本卡封面預估要靠 Apple collectionId 1576661283 或 Bandcamp／Spotify，本機解封面時要特別注意版本（2018 復刻封面與 1986 原盤未必相同，比照 c-52 標 coverVersionDoubt）。本藝人本批 3 張、剛好到上限。",
+  "mbNote": "釘 6c081a67-7456-4c9b-b14f-547c25cdd8c1《Intaglio》，artist-credit「濱瀬元彦」，first-release-date 1986-11-25，primary-type Album、secondary-types 空，轄下 1 個 release（1986-11-25 JP Official）。已回問 release-group 端點確認實體類型與標題。對照組 3a2f8159-a30d-44f9-89b1-c12878fc2041《Intaglio》(2018-08-10，同一藝人、同一盤名的復刻 release-group)**刻意不釘**。藝人 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，名下 6 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Motohiko Hamase",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "広瀬豊",
+  "album": "Soundscape 2: Nova",
+  "year": 1986,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Misawa Home",
+  "why": "住宅商三澤ホーム（Misawa Home）「音のインテリア」企劃的第二張，1986 年 9 月 10 日以 25SD-2 黑膠、C32SD-2 CD、T25SD-2 卡帶發行（Discogs master 555686，1986 年四筆版本全部掛 Misawa Home，其中 21325315 的標題還印著企劃名《音のインテリア = Soundscape》）。這是純粹的企業委託盤：唱片不進一般通路，是配著樣品屋與住宅展示場放的。地位證據是 2019 年瑞士 We Release Whatever The Fuck We Want Records 的授權復刻《Nova + 4》WRWTFWW028（Discogs release 13814031 黑膠、13858042 CD、13955269 卡帶，皆標 Reissue）。池中實掃 seed_cards.json 全 13,913 列，広瀬豊零張。",
+  "risk": "**授權狀態要標記**：master 555686 裡 2016 年掛「宇宙の愛」廠牌、無目錄號的那筆（Discogs release 9887707）**明確標 Unofficial Release**，依裁定第 43／57／65 條不得採為背書；舉證只用 1986 原盤與 2019 WRWTFWW 那三筆。同批的吉村弘《Soundscape 1: Surround》是同一個三澤ホーム系列的第一張——**這條「企業委託／樣品屋用盤」的廠牌史線只能給其中一張講**（裁定第 58 條的互斥條款），研究層分派時要挑一張，另一張改走別的錨點。盤名分歧：復刻改名為《Nova + 4》（多收四軌），去重與封面比對不可混用。Apple 實測 jp 命中 collectionId 1467350093 広瀬豊《Nova + 4 (Extended Version)》，是復刻版曲目，本機上架前要看版本。封面已實測 CAA 回 200。",
+  "mbNote": "釘 cc426755-e6e9-4578-988b-c52b16cd1a0c《Soundscape 2: Nova》，artist-credit「Yutaka Hirose」，first-release-date 1986-09-10，primary-type Album、secondary-types 空，轄下 4 個 release：1986-09-10 JP Official《Soundscape 2: Nova》、2019-07-05 CH Official《Nova + 4》、2019-07-05 CH Official《Nova + 1》、2019-07-05 US Official《Nova + 4》。已回問 release-group 端點確認實體類型與標題。藝人 MBID 68fa15d8-c3b4-4cae-a5d0-ef81a9b12de3，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 6 個 release-group。同藝人的 127d066f-cc9f-4dcd-ab01-eae8b846bebd《TRACE: Sound Design Works 1986–1989》(2022，WRWTFWW 的資料庫音源選輯) 與 12416f64-11c7-4929-b048-434f8e97f0af《NOSTALGHIA》(2022) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yutaka Hirose",
+  "reissuedBy": "We Release Whatever The Fuck We Want Records",
+  "g": "b"
+ },
+ {
+  "artist": "吉村弘",
+  "album": "Soundscape 1: Surround",
+  "year": 1986,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Misawa Home",
+  "why": "三澤ホーム「音のインテリア」系列的第一張，1986 年 2 月 10 日 25SD-1 黑膠、C32SD-1 CD、T25SD-1 卡帶（Discogs master 599755，1986 年三筆版本全部掛 Misawa Home）。與他 1982 年替原美術館做的《Music for Nine Post Cards》不同，這張是住宅商的委託品，當年不在唱片行賣。地位證據是 2023 年美國 Temporal Drift 的授權復刻 DRFT09（Discogs release 29325361 黑膠 Reissue／Remastered、28801504 數位 Remastered、29433412 與 29387293 限量盤）。池中實掃 seed_cards.json 全 13,913 列，吉村弘名下已有《Music for Nine Post Cards》與《Green》兩張，收本張後為 3 張、剛好到藝人上限。",
+  "risk": "**授權狀態有兩筆要擋**：2016 年掛「宇宙の愛」無目錄號那筆（Discogs release 9887701）與 2023 年美國 enmossed ENMB-13 那筆（27179628）**都明確標 Unofficial Release**，依裁定第 43／57／65／78 條不得採為背書；舉證只用 1986 原盤與 Temporal Drift DRFT09。**注意 2023 年同一年同時有官方（Temporal Drift）與未授權（enmossed）兩種黑膠**，只寫「2023 年美國復刻」會指到兩筆相反的東西，必須指到 Discogs 的 version 頁。與同批広瀬豊《Soundscape 2: Nova》同屬三澤ホーム系列，廠牌史線只能給一張講（裁定第 58 條）。復刻盤名縮短為《Surround》，Apple 實測 jp 命中 collectionId 1705935361 吉村弘《Surround》(1986)——標題比對要吃得下前綴被砍掉的形狀。封面已實測 CAA 回 200。藝人上限：收後為 3 張，本批不得再收吉村弘。",
+  "mbNote": "釘 b42928fd-8da9-43cd-af3e-405d1ee61e39《Soundscape 1: Surround》，artist-credit「吉村弘」，first-release-date 1986-02-10，primary-type Album、secondary-types 空，轄下 3 個 release：1986-02-10 JP Official《Soundscape 1: Surround》、2023-10-06 US Official《Surround》、2023-10-06 XW Official《Surround》。已回問 release-group 端點確認實體類型與標題。藝人 MBID 9a197894-1a40-4650-89a2-928dcfcd1ef6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 16 個 release-group。同藝人的 ca95b2d5-bbbd-479a-9f4a-155fcaedd090《Music for Nine Post Cards》(1982) 與 85c1cd64-3c83-4b3d-b2c2-5888739a28cb《Green》(1986) **已在池中、刻意不釘**；b728cbaf-af21-451c-ba4c-b536a4ba5186《Pier & Loft》(1983)、72503c08-9189-4570-8d34-5545be324d64《A･I･R: AIR IN RESORT》(1984)、2ddd3e2d-0796-4b08-bf1a-152b3a771dcf《Wet Land》(1993) 亦刻意不釘（藝人上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroshi Yoshimura",
+  "reissuedBy": "Temporal Drift",
+  "g": "b"
+ },
+ {
+  "artist": "伊藤詳",
+  "album": "Marine Flowers (Science Fantasy)",
+  "year": 1986,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Green & Water",
+  "why": "Far East Family Band 的鍵盤手伊藤詳替 Green & Water 做的一張，1986 年 12 月 R28X-1003 黑膠與 H35X-20003 CD（Discogs master 1009271，1986 年日本盤四筆，另有 Videographics SS098-6014 的 12 吋影像版）。Green & Water 是 1980 年代後期只存在幾年的小目錄，同一家同年還出了盛岡夕美子《余韻》——本批兩張都收，是這條線少數能把一整家小廠牌看完的例子。地位證據是 2021 年西班牙 Glossy Mistakes 的授權復刻 GLOSSY007（Discogs release 21603952 黑膠 Reissue／Remastered、21614980 限量盤、22206124 CD，2022 年另有日本盤 GLOSSY007CDJP release 23790260），master 1009271 的九個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，伊藤詳零張。",
+  "risk": "掛名分歧最嚴重的一張：MB 的 artist-credit 只寫「Akira」，Discogs 原盤掛「Akira*」，復刻與英文資料才寫「Akira Ito」，MB 藝人實體名是漢字「伊藤詳」。本卡採 MB 實體名「伊藤詳」（§0.5 日籍藝人用漢字），queryAlias 填 Akira Ito——**不要填單獨的「Akira」**，那個字串在外部服務會撈回大量無關結果（裁定第 25 條的判準：填了會拉低命中率就不填）。盤名有括號副題，1986 年 H35X-20003 那筆的標題只寫《Marine Flowers》，去重時兩種都要比。Apple 實測 us 命中 collectionId 1595601412「Akira Ito」《Marine Flowers》(2021 復刻)。封面已實測 CAA 回 200。同藝人在 MB 有 18 個 release-group，其中五筆的 first-release-date 都是 1986-12-01，疑似批次建檔的產物，釘位只能靠盤名不能靠日期。",
+  "mbNote": "釘 dfb37119-7143-4354-805b-90811b668fda《Marine Flowers (Science Fantasy)》，artist-credit「Akira」，first-release-date 1986-12-01，primary-type Album、secondary-types 空，轄下 4 個 release：1986-12-01 JP Official《Marine Flowers (Science Fantasy)》、1986-12-01 JP Official《Marine Flowers》、2021-12-17 ES Official、2021-12-17 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 36baeb78-6e29-41cb-99a4-f704e895babf，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 18 個 release-group。同日期的 35db31eb-f75d-44f8-81d5-90981b4b908e《禱 (Prayers)》、9b68774c-e6b4-4205-85fd-44106897bda6《一水四見 やすらぎを君に PART III》、d289b3e2-96fe-49e0-8887-e0e7d7378d4a《Hopi Prophecies》皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Akira Ito",
+  "reissuedBy": "Glossy Mistakes",
+  "g": "b"
+ },
+ {
+  "artist": "盛岡夕美子",
+  "album": "余韻 (Resonance)",
+  "year": 1987,
+  "genres": [
+   "classical"
+  ],
+  "label": "Green & Water",
+  "why": "她唯一的一張唱片：MB 藝人名下只有這一個 release-group，1987 年 3 月 Green & Water R28X-1005 黑膠與 H35X-20005 CD（Discogs master 1000645，1987 年日本盤三筆含宣傳盤 8651033）。與同一家廠牌同年的伊藤詳《Marine Flowers》是同一批目錄，但這張是無伴奏的鋼琴獨奏，沒有合成器。地位證據是 2020 年英國 Métron Records 的授權復刻 MTR005（Discogs release 15883956 黑膠《Resonance 余韻》、28508050 數位），2025 年 Métron 又壓了限量再版 MTR005-25（33614208）。master 1000645 的六個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，盛岡夕美子零張。",
+  "risk": "掛名有兩套寫法：MB 藝人實體與 Discogs 原盤都寫漢字「盛岡夕美子」，Métron 復刻與英文樂評一律寫 Yumiko Morioka。本卡採漢字（§0.5），羅馬拼音入 queryAlias。**注意這個姓氏容易被誤寫成「森岡」**，日後去重要同時比對兩種漢字。盤名分歧：1987-03-25 的原始 release 標題是《余韻「レゾナンス」》（帶日式引號），1987-05-31 那筆才是《余韻 (Resonance)》，復刻只寫《Resonance》——三種寫法都要進去重比對（裁定第 49 條），羅馬拼音為 Yoin／Resonance。本卡採 MB release-group 標題《余韻 (Resonance)》。Apple 實測 jp 命中 collectionId 1555543856「盛岡 夕美子」《Resonance》(1987)。封面已實測 CAA 回 200。",
+  "mbNote": "釘 04965254-91ea-4128-a599-8ef0e4a7f9fc《余韻 (Resonance)》，artist-credit「盛岡夕美子」，first-release-date 1987-03-25，primary-type Album、secondary-types 空，轄下 4 個 release：1987-03-25 JP Official《余韻「レゾナンス」》、1987-05-31 JP Official《余韻 (Resonance)》、2020-04-15 XW Official《Resonance》、2020-04-17 DE Official《Resonance 余韻》。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6c831ad1-4e9c-45de-8aab-1c8e52b44084，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 3 個 release-group，1975–1996 年間只有這一筆，無對照組可混淆。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yumiko Morioka",
+  "reissuedBy": "Métron Records",
+  "g": "b"
+ },
+ {
+  "artist": "菅谷昌弘",
+  "album": "熱の風景",
+  "year": 1987,
+  "genres": [
+   "electronic"
+  ],
+  "label": "自主制作",
+  "why": "**本批最徹底的私家版**：Discogs master 3833271 底下 1987 年那筆（release 5061251）的廠牌欄是 Not On Label、目錄號 none——沒有廠牌、沒有編號。菅谷昌弘當年是舞踊劇團パパ・タラフマラ的作曲者，這批音樂是替舞台做的，唱片只在演出現場與同好間流通。地位證據是 2025 年日本 Ambient Sans 的授權復刻 AMS001（Discogs release 33812652 黑膠 Limited Edition／Reissue／Remastered、34590475 數位），是這家新廠牌的第一號出品；master 3833271 的三個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，菅谷昌弘零張。",
+  "risk": "**本卡是全批冷門軸最高的一張**：原盤無廠牌無編號，且 Apple 實測 jp／us／gb 三個 storefront 皆無條目，固定試聽預估 unavailable；封面已實測 CAA 回 200，是唯一的封面來源。盤名雙語並列：Discogs 標題是《熱の風景 = The Pocket Of Fever》，MB release-group 只寫《熱の風景》。本卡採 MB 的日文側（§0.5、裁定第 26 條：不自創轉寫，英文側是原盤自帶的），羅馬拼音為 Netsu no Fukei、英文題為 The Pocket of Fever，兩者都寫進本欄供下游去重與查詢用（裁定第 49 條）。2025 年的復刻很新，本機做三軸時 Last.fm listeners 可能極低甚至查無，依 §0.8 錨點制人工評分、不採機器值。同批另收《海の動物園》，本藝人本批 2 張、池中 0 張。",
+  "mbNote": "釘 b98e38cb-c021-4c36-aee6-aaf333ea8b75《熱の風景》，artist-credit「Masahiro Sugaya」，first-release-date 1987，primary-type Album、secondary-types 空，轄下 3 個 release：1987 JP Official、2025-04-25 ES Official、2025-04-25 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6de532ad-e7e1-4fc9-9ba2-e19950ce955c，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 13 個 release-group。**c8eaf04f-d196-47f1-8045-03ee9363e8ee《Horizon, Volume 1》(2019，Empire of Signs 的跨盤選輯，primary-type Album／secondary Compilation) 刻意不釘**——那是別人替他編的合輯，不是這張碟；4a7ec2e8-39f2-41cc-b0df-3917b9fd1b25《アレッホ—風を讃えるために》(1987) 與 82e30c56-7c29-4152-88f9-74a9bba74c1b《Parade》(1990) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Masahiro Sugaya",
+  "reissuedBy": "Ambient Sans",
+  "g": "b"
+ },
+ {
+  "artist": "濱瀬元彦",
+  "album": "♯Notes of Forestry",
+  "year": 1988,
+  "genres": [
+   "electronic",
+   "jazz"
+  ],
+  "label": "Newsic",
+  "why": "濱瀬元彦離開 Shi Zen 之後在 Newsic 出的一張，1988 年 32CD-N001（Discogs master 1381147，release 1841019）——編號 N001 是 Newsic 這個目錄的開頭。Newsic 是 1980 年代末期日本少數專做器樂與環境音樂的獨立目錄，同批的越智義朗《Natural Sonic》也出自這裡。地位證據是兩層授權再發：2018 年日本 Silent River Runs Deep SR2D-1001 黑膠（Discogs release 12153598，標 Reissue／Stereo），以及 2020 年瑞士 We Release Whatever The Fuck We Want Records WRWTFWW0034（release 15422003 黑膠、15545560 CD Remastered、15851041 test pressing）。master 1381147 的六個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，濱瀬元彦零張。",
+  "risk": "盤名首字是樂譜升記號：Discogs 用「♯」（U+266F），MB 的 release-group 標題寫成《♯NOTES OF FORESTRY》全大寫，Apple 則用 ASCII 井字號「#Notes of Forestry (2020 Remastered Edition)」。三種寫法都要進去重與查詢（裁定第 49 條），本卡採 Discogs 原盤的《♯Notes of Forestry》。**注意 ♯ 不是 ASCII 的 #**，下游若把它正規化掉，盤名會塌成「notesofforestry」，與別的碟撞不到但也查不到。Apple 實測 us 命中 collectionId 1511797010「Motohiko Hamase」《#Notes of Forestry (2020 Remastered Edition)》——是 2020 復刻的曲目，本機上架前要看版本。封面已實測 CAA 回 200。本藝人本批第 3 張，剛好到藝人上限。",
+  "mbNote": "釘 49c1ca5c-fafb-4092-9637-c54590189141《♯NOTES OF FORESTRY》，artist-credit「濱瀬元彦」，first-release-date 1988，primary-type Album、secondary-types 空，轄下 1 個 release（1988 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，名下 6 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。2018 Silent River Runs Deep 與 2020 WRWTFWW 的復刻在 MB 上沒有另建 release-group，不必也不能另釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Motohiko Hamase",
+  "reissuedBy": "Silent River Runs Deep／We Release Whatever The Fuck We Want Records",
+  "g": "b"
+ },
+ {
+  "artist": "菅谷昌弘",
+  "album": "海の動物園",
+  "year": 1988,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "ALM Records",
+  "why": "《熱の風景》的隔年作，1988 年 ALM Records ALCD-7010（Discogs master 3581869，release 5061161）。ALM 是小島幸雄的コジマ録音旗下目錄，本業是日本現代音樂與古樂的錄音，這張是它與舞台音樂的交會點——與前一張的無廠牌自主制作相比，這次有了正規的錄音與發行體系。地位證據是 2024 年 P-Vine 的兩次授權再發：PCD-27084 CD（Discogs release 31589428，標 Reissue／Remastered）與 PLP-7475 限量黑膠（32417340）。master 3581869 的三個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，菅谷昌弘零張。",
+  "risk": "盤名雙語並列：Discogs 標題《海の動物園 = The Long Living Things》，MB release-group 只寫《海の動物園》。本卡採日文側，羅馬拼音為 Umi no Doubutsuen、英文題 The Long Living Things，兩者寫進本欄供去重與查詢（裁定第 49 條）。年份要注意：Discogs 與 MB 都記 1988，但 **Apple 的條目記 1987**（實測 jp 命中 collectionId 1759315614「菅谷 昌弘」《海の動物園》(1987)）——依裁定第 77 條年份只當訊號不當門檻，卡單維持 1988（Discogs 原盤與 MB 一致），行文不得正面斷言發行年（裁定第 18／46 條）。封面已實測 CAA 回 200。同批另收《熱の風景》，本藝人本批 2 張。",
+  "mbNote": "釘 4ecd6eb6-e5ea-4593-8a32-bb7744e83c07《海の動物園》，artist-credit「菅谷昌弘」，first-release-date 1988，primary-type Album、secondary-types 空，轄下 1 個 release（1988 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6de532ad-e7e1-4fc9-9ba2-e19950ce955c，名下 13 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。c8eaf04f-d196-47f1-8045-03ee9363e8ee《Horizon, Volume 1》(2019 選輯) 與 b98e38cb-c021-4c36-aee6-aaf333ea8b75《熱の風景》(1987，本批另一張卡) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Masahiro Sugaya",
+  "reissuedBy": "P-Vine Records",
+  "g": "b"
+ },
+ {
+  "artist": "吉川洋一郎",
+  "album": "アクアクの夢",
+  "year": 1988,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Eastworld",
+  "why": "吉川洋一郎替 NHK 特集《地球大紀行》寫過配樂，這張則是他自己名義的器樂盤，Eastworld RT28-5002 黑膠、CT32-5002 卡帶與 ZT28-5002（Discogs master 1260363 的四個版本全部是日本盤，含宣傳盤 11078313）。盤名指的是復活節島的 aku-aku（島民口傳的靈），整張以合成器與人聲堆出一個虛構的南太平洋。Eastworld 是東芝 EMI 的子目錄，這種一次性的作家企劃盤在它的目錄裡出完就沒有下文——master 1260363 至今沒有任何再發版本，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」乾淨，分量靠原盤四種型號的發行紀錄與作者本身的配樂履歷舉證。池中實掃 seed_cards.json 全 13,913 列，吉川洋一郎零張。",
+  "risk": "**年份分歧，本卡採 1988**：MB 的 release-group first-release-date 記 1987-09-05（而那一筆是 **Pseudo-Release**《A Dream of Aku-Aku》，是轉寫用的假發行）、官方 release 記 1987-09-25；Discogs master 1260363 底下四筆原盤壓片**一致記 1988**。依裁定第 86／127 條「Discogs 原盤直記的年份覆蓋 MB 的無佐證值」，卡單取 1988，行文不得正面斷言發行年（裁定第 18／46 條）。盤名跨文字系統：日文《アクアクの夢》、英文《A Dream of Aku-Aku》，羅馬拼音為 Akuaku no Yume，三種都要進去重比對。Apple 實測 jp／us／gb 三個 storefront 皆無條目，固定試聽預估 unavailable；封面已實測 CAA 回 200。",
+  "mbNote": "釘 44af2c20-0713-4455-98a7-e4ba53e0d671《アクアクの夢》，artist-credit「吉川洋一郎」，first-release-date 1987-09-05，primary-type Album、secondary-types 空，轄下 2 個 release：1987-09-05 JP **Pseudo-Release**《A Dream of Aku-Aku》與 1987-09-25 JP Official《アクアクの夢》。已回問 release-group 端點確認實體類型與標題。**rgMbid 只作身分鍵，不作年份來源（裁定第 95 條）**。藝人 MBID 6db6fcae-836a-4df4-8ee4-052660e31bc6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 17 個 release-group。同藝人的 0883d4f4-d7b3-4ae7-8442-6ed122f7b39f《ΚΥΠΡΟΣ》(1988，希臘字盤名，字串比對高風險)、6a5ca1e5-c482-4856-a144-3cc97cd371df《The Miracle Planet》(1987，Album/Soundtrack)、c95e4661-6b60-47dc-96bb-c30f728186a1《Music for the Miracle Planet》(1988，Album/Compilation) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoichiro Yoshikawa",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "矢吹紫帆",
+  "album": "Forest Land",
+  "year": 1989,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Kanebo",
+  "why": "**化妝品公司鐘紡（Kanebo）自己出的唱片**：1989 年 9 月 21 日 Kanebo APTE-5001 與 APCE-5001（Discogs master 1713797，只有這兩筆版本，都是 1989 年日本盤，發行方就是 Kanebo 本體，不是任何唱片公司）。它屬於鐘紡的「サウンド・エステティック」企劃——音樂當作美容沙龍的一部分來賣，副題直接寫「1／f のゆらぎによる」。這是本批「企業委託盤」最純粹的一例：委託方、發行方與使用場所是同一家公司。master 1713797 至今零筆再發、零筆標 Unofficial，依裁定第 82 條以原盤本身與鐘紡企劃的兩個型號舉證。池中實掃 seed_cards.json 全 13,913 列，矢吹紫帆掛漢字零張。",
+  "risk": "**掛名分裂鍵警告**：池中已有一張 `Shiho Yabuki`《The Body Is a Message of the Universe》——那正是矢吹紫帆 1987 年《からだは宇宙のメッセージ》的英文題，池中用羅馬拼音＋英譯盤名，本批原本要收的那張因此撞卡已剔除（裁定第 49／115 條的第五個實例）。本卡依 §0.5 掛漢字「矢吹紫帆」，會與池中那張的 `Shiho Yabuki` 形成兩個鍵；依裁定第 70 條，異常的是池中那張而不是新卡，但**這一筆要記進 `audits/pool-artist-name-splits.md` 留給本機正規化**。盤名分歧：MB release-group 標題是《Forest land ◎1⁄fのゆらぎによるサウンド・エステティック》（含 U+2044 分數斜線），Discogs 原盤兩筆都只寫《Forest Land》；本卡採 Discogs 的原盤寫法，MB 長標題屬裁定第 91 條的已知形狀，fix-rgmbid 報「標題對不上」是誤報。Apple 實測 jp 命中 collectionId 1835014281 矢吹紫帆《Forest Land》(2025)，是很新的數位上架，本機要看版本。封面已實測 CAA 回 200。",
+  "mbNote": "釘 5662fe8f-dde4-4222-90da-8dcd3e727f6b《Forest land ◎1⁄fのゆらぎによるサウンド・エステティック》，artist-credit「矢吹紫帆」，first-release-date 1989-09-21，primary-type Album、secondary-types 空，轄下 1 個 release（1989-09-21 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c72e10ec-3167-47aa-800d-5c7f114233a9，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 17 個 release-group。**da6aba28-e199-4bcf-9797-b1a8964173f0《からだは宇宙のメッセージ》(1987) 刻意不釘——已與池中 `Shiho Yabuki`《The Body Is a Message of the Universe》撞卡**；182c99f8-765a-4549-83d4-25e15631ec8e《Pastoral wind》(1990)、2ae589ac-e53c-4396-82b0-24ed9daab8b4《α波ミュージック 緑のハーモニー》(1990) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shiho Yabuki",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "越智義朗",
+  "album": "Natural Sonic",
+  "year": 1990,
+  "genres": [
+   "electronic",
+   "world"
+  ],
+  "label": "Newsic",
+  "why": "打擊樂手越智義朗的第一張唱片，1990 年 4 月 25 日 Newsic 28CD-N009（Discogs master 2741888，1990 年日本盤兩筆含宣傳盤 35862322）——與同批濱瀬元彦《♯Notes of Forestry》的 32CD-N001 出自同一個 Newsic 目錄，編號相差八號。他用自製的金屬與竹製樂器錄音，是這條線裡少數以實體發聲體而不是合成器為主的一張。地位證據是兩次授權再發：2022 年日本 Silent River Runs Deep SR2D-1011 黑膠（Discogs release 24155045，標 Reissue）與 2025 年瑞士 We Release Whatever The Fuck We Want Records WRWTFWW109（release 35800768 限量黑膠、36059419 test pressing）。master 2741888 的五個版本零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列，越智義朗零張。",
+  "risk": "盤名《Natural Sonic》是兩個通用詞的組合（裁定第 124 條），字串比對脆弱：他自己 1996 年還有一張《NATURAL SONIC 2》（MB 6b6f9c19-59b1-4c55-a63b-a4b83d2c63b3），Apple 與去重都可能把續作當成本張。實測 Apple jp 命中 collectionId 1231338475 越智義朗《Natural Sonic》(2017)——年份是數位上架年不是原盤年（裁定第 77 條的形狀），且要確認不是續作，本機上架前要核曲數。封面已實測 CAA 回 200。掛名用漢字「越智義朗」（MB 藝人實體名），羅馬拼音入 queryAlias；MB 的 artist-credit 在本張是羅馬拼音「Yoshiaki Ochi」，屬裁定第 10 條的 credit 分歧。",
+  "mbNote": "釘 30a47e75-e433-4fa4-a4f1-b2043c1450a4《NATURAL SONIC》，artist-credit「Yoshiaki Ochi」，first-release-date 1990-04-25，primary-type Album、secondary-types 空，轄下 1 個 release（1990-04-25 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e18d32d5-704e-4ce6-9695-b68ac5cf708b，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 4 個 release-group。**對照組 6b6f9c19-59b1-4c55-a63b-a4b83d2c63b3《NATURAL SONIC 2》(1996) 刻意不釘**（同名續作，盤名只差一個數字，下游最容易換錯的形狀）；b5964f0e-8ff6-456a-b8b3-35245971eb28《AQUA》(1996) 亦刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoshiaki Ochi",
+  "reissuedBy": "Silent River Runs Deep／We Release Whatever The Fuck We Want Records",
+  "g": "b"
+ }
+]
