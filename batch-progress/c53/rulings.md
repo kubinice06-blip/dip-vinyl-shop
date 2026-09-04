@@ -2718,3 +2718,33 @@ bonus tracks／soundtrack／ost，前面可帶年份、original、digitally、mo
 不是「所有看起來像附註的東西」。**
 
 改完全庫重跑：**24 批（其中 3 批讀 prop）、1259 張、跨批撞卡 0。**
+
+## 133.（c-73）HTTPS 是手段不是目的——站台本身不供 HTTPS 時，實測 200 的 HTTP 來源可用
+
+c-73 的 b 組研究層交件時留了 5 條非 HTTPS 的 `src` 給主線決定：
+
+```
+http://www.progressor.net/review/bellaphon_1987.html            → HTTP 200（9,219 bytes）
+http://expose.org/index.php/articles/display/midas-...-21.html  → HTTP 200（17,166 bytes）
+兩站的 https:// 版本 → 連線失敗（TLS 直接不通，不是憑證問題）
+```
+
+兩者都是**有署名的樂評**：ProgressoR 是 Vitaly Menshikov 主持的評論站；
+Exposé 第 6 期那篇是 Mike McLatchey 具名撰寫、1995-03-01 刊出。
+**這兩張卡在別處找不到任何具名樂評**——拿掉就只剩 credit 與曲長，
+Bellaphon 還會掉到 7 條事實的下限以下。
+
+**裁定：「`src` 要 HTTPS」的目的是「來源可點、可查證」，不是憑協定挑來源。**
+站台**本身不提供 HTTPS**（實測 `https://` 連線失敗，且 `http://` 回 200）時，**HTTP 來源可用**，
+條件是三項全中：
+1. **實測回 200**（不是 301 到別處、不是空頁）；
+2. **有署名**（作者或編輯台掛名），不是內容農場；
+3. **`notes` 註明「該站不供 HTTPS，已實測 http 200」**，讓下游與本機知道這不是漏改。
+
+**不適用**於「HTTPS 版本存在但我懶得改」——那種一律改成 HTTPS。
+也**不適用**於 Wayback 存檔：本容器的代理擋掉 archive.org，
+**沒開過的存檔網址不能當來源**（那等於用一個沒驗證過的東西替換一個驗證過的東西）。
+
+**這條與第 132 條同一個方向**：規則寫下來時預設了某個世界的樣子
+（所有站都有 HTTPS、所有括號都是再版註記），世界不長那樣時，
+**回到規則想達成的目的去判，而不是照字面把好東西擋在外面。**
