@@ -350,3 +350,8 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
 - 更新 `PROJECT_MEMORY.md` 最上方紀錄批次數量、頂點判定、固定試聽分布與驗證結果。
 - 提交前再 fetch；只暫存本次檔案，直接 push `main`。
 - 回報「候選／排除／一般卡／頂點候選／ready／unavailable／disabled」數量，不用模糊的「大約完成」。
+
+7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬
+   （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
+   子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，
+   會先靠「同藝人傳播」落位，之後重跑即可補上。

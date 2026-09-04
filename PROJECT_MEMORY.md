@@ -1,5 +1,40 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-04（五）｜dip-vinyl-shop｜對調完工：類型挑片 v2 上線、舊機制改名猜你喜歡（P0–P3）
+
+依 `GENRE_PICK_SWAP_PLAN.md` 四階段做完，四筆提交：`122942f`／`5b241c3`／`e5ad87b`＋本筆。
+
+- **P0 資料層**（`scripts/build-genre-tree.mjs`）：三步落位（標籤規則→同藝人傳播→剪枝），
+  產出 `genre-tree.json`（10 大類、81 個第二層、22 個第三層）與 `card-subgenres.json`
+  （12,132/14,424 張，84.1%）。節點門檻 20 張，資料長大自動開新節點。
+  ⚠ **初版把 ambient／disco／funk／punk 當雜訊濾掉**（本意是濾大類名），
+  Ambient 桶從 516 掉到 228；改成「只濾大類名，子類型名一律保留」才對。
+  ⚠ 搖滾原本只靠 `rock-subgenre-map.json`（1,509 位藝人），新上架藝人整批落不了位，
+  補了 `ROCK_FALLBACK` 標籤後備（順序即優先序，metal 先判避免被 classic 的 hard rock 收走）。
+  古典標籤覆蓋僅 23%，改用作曲家欄＋年份推時期。
+- **P1 猜你喜歡搬家**：舊引擎**演算法一行未改**，只換外殼——DOM id
+  `genreContent`／`genreModal` → `guess*`（25＋10 處）、`startGenrePick`→`startGuess`、
+  路由與分享網址改 `/guess`、紀錄新存 `type:'guess'`（徽章同時認舊的 genre）。
+  新增 `guess/index.html` OG 導向頁、find.html 第四張卡、manifest 捷徑。
+  **移除後台「類型挑片模式（深挖／快速）」面板**——AI 錨點時代的遺物，現行引擎沒讀它；
+  ⚠ 移除時要連 listener 一起刪，我第一次只刪了函式定義留下孤兒 `});`，
+  且 admin.html 是 **CRLF**，用 `\n` 比對會全部落空，得先偵測換行字元。
+- **P2 類型挑片 v2**（`dip-genre-tree.js`）：晶片式逐層選單、節點內**均勻隨機抽一張**
+  （不做冷門過濾、不顯示張數，依店主裁示）。每層有「這一層隨便挑」；**沒選子類型時只看主類型**，
+  所以未落位的 16% 卡片仍抽得到，不會因分類沒做到就消失。
+  結果頁兩個遊戲共用：`gpResultHost` 變數化、按鈕與紀錄型別依 `_mode` 分流。
+- **P3 收尾**：`ALBUM_ONBOARDING.md` 加入「上架後跑 build-genre-tree.mjs」；
+  ⚠ **`sw.js` 不必改**——它對 `.js/.json` 已是網路優先，新檔自動涵蓋；
+  741KB 的 `card-subgenres.json` 也不該進 PRECACHE（同檔註解說 400KB 的 mood-bank 都不放）。
+- 驗證：瀏覽器走完「搖滾 › 龐克新浪潮 › 後龐克」抽到 Embrace《Embrace》1987，
+  路徑說明與紀錄型別正確；猜你喜歡三輪抽到 NUMBER GIRL《Sappukei》；`#genre`／`#guess` 分流正確。
+  Node 驗 **113 個節點全部有候選卡、17 條路徑各抽 200 次 100% 切題**。
+  ⚠ **測試環境陷阱**：Browser pane 隱藏時 `setTimeout` 被節流（40ms→442ms），
+  抽卡動畫的閃卡迴圈會爬行，看起來像「卡在牌背」，其實是環境不是程式——
+  端到端測動畫要嘛顯示 pane、要嘛改用 Node 驗邏輯。
+- **待辦**：兩張 OG 圖（`og-guess.png`／`og-genre-v4.png`）尚未製作，
+  目前 guess 沿用 `og-genre-v3.png`；未落位 2,292 張若要補，按 `GENRE_LAYER_PLAN.md` §3 派代理分桶。
+
 ### 2026-09-04（四）｜dip-vinyl-shop｜套用當代 R&B 修正 38 張；對調計畫依店主裁示二修定案
 
 - **R&B 錯位修正已套用**（commit `86fef85`）：38 張主類型 soul→hiphop（soul 降副標），
