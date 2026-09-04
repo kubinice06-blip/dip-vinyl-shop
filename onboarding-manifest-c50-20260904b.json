@@ -1,0 +1,68 @@
+{
+ "schemaVersion": 1,
+ "batch": "c50-20260904b",
+ "albums": [
+  {
+   "artist": "Dirty Projectors",
+   "album": "Dirty Projectors",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "預期好查；藝人同名作，MB 上以 2017 年份區隔 2007 前的同名 release group。",
+    "selfTitledVerified": true,
+    "rgMbid": "efedfaf7-c8d9-4c52-b9b7-7d311022985f"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/efedfaf7-c8d9-4c52-b9b7-7d311022985f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "rg front（回 RG 底下任意 release 的圖，需人工抽驗版本）"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 117542,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他公開說過自己不喜歡合成器，然後用一整張合成器唱片寫分手。背景是 David Longstreth 與 Amber Coffman 分手，以及隨之而來、長達四年的樂團停擺。兩人對唱的音色反差曾是 2009 年《Bitte Orca》最鮮明的特徵，這次 Coffman 完全沒有參與；Longstreth 為此搬到洛杉磯、自建錄音室，回到一個人的獨作。數位音訊工作站的手法與全合成音色，是相對前三張的明顯轉向。2017 年 2 月由 Domino 發行，樂評普遍好評。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dirty_Projectors_(album)",
+     "https://en.wikipedia.org/wiki/Dirty_Projectors",
+     "https://musicbrainz.org/release-group/efedfaf7-c8d9-4c52-b9b7-7d311022985f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "iTunes 查無對得上的專輯"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

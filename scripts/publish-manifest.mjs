@@ -113,8 +113,11 @@ const seedRows = JSON.parse(seedRaw);
 // 用標準 JSON 寫回會把 12,909 行整個重排，diff 會爆掉。先驗重建方式逐字相同再動手。
 // 換行字元跟著檔案走：雲端在 Linux 寫的是 LF，本機 checkout 之後是 CRLF（core.autocrlf），
 // 寫死 LF 會讓下面那道排版自檢在本機必然失敗——2026-09-01 實際擋下了 c-51 的上架。
+// 檔尾換行同理跟著檔案走：2026-09-04 另一個工作階段的曲風修正腳本寫回時多留了一個
+// 檔尾 \n，排版其餘部分逐字相同，自檢卻整個擋下來。保留它、不要順手改掉別人的檔尾。
 const seedEol = seedRaw.includes('],\r\n[') ? ',\r\n' : ',\n';
-const renderSeed = rows => '[' + rows.map(r => JSON.stringify(r)).join(seedEol) + ']';
+const seedTail = /\r?\n$/.exec(seedRaw)?.[0] || '';
+const renderSeed = rows => '[' + rows.map(r => JSON.stringify(r)).join(seedEol) + ']' + seedTail;
 if (renderSeed(seedRows) !== seedRaw) {
   console.error('中止：seed_cards.json 的排版與本腳本的重建方式不符，貿然寫回會重排整檔。');
   console.error('請先確認排版規則是否改過，再調整 renderSeed()。');

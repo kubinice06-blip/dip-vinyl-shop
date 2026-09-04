@@ -1,0 +1,2194 @@
+{
+ "schemaVersion": 1,
+ "batch": "c76-20260904",
+ "albums": [
+  {
+   "artist": "Condition Green",
+   "album": "Life of Change",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 406dd492-1a78-4ecc-b102-0c69c9fda242《Life of Change》，artist-credit「Condition Green」，first-release-date 1978，primary-type Album、secondary-types 空，轄下 3 個 release：1978 JP Official（See‐SAW WX-9001，8 軌）、2012 JP Official、2013 AT Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6dc2ecf6-2339-4876-ad0c-fcc0983fd24a，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 2 個 release-group。對照組 e47d9989-2563-4bb5-907b-bd096b611e70《Mixed-Up》(2012) 刻意不釘。MB 另有藝人實體「Condition」aab150cd-3fc0-4b9c-ab79-d75eab090247（US hardcore punk），不是本卡的掛名。",
+    "rgMbid": "406dd492-1a78-4ecc-b102-0c69c9fda242",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/406dd492-1a78-4ecc-b102-0c69c9fda242/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 332,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "團名是一道美軍警戒代號，發布時軍方的人不准出基地。條目上說那是五段警戒由下往上數的第二級，連繁華街也不准進。原盤是 See･Saw WX-9001，credit 上作曲幾乎全掛吉他手 Shinki Sugama，作詞幾乎全掛主唱かっちゃん。兩首歌把地名寫進括號，開場的〈Heart Taker (On B.C. Street)〉是一首。Discogs 那八個版本沒有一筆標未授權，同一份條目卻記著曾有未經同意的復刻與歐洲盜版；2018 年它在正式授權下做成了 CD。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5305582",
+     "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3",
+     "https://www.beeast69.com/news/rockinfo/172661/",
+     "https://www.discogs.com/master/643986",
+     "https://musicbrainz.org/release-group/406dd492-1a78-4ecc-b102-0c69c9fda242",
+     "https://music.apple.com/jp/album/life-of-change/1341260541"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ff/8a/e2/ff8ae256-13ad-aeed-9373-625aada15602/mzaf_15068106541257893954.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1341260541",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "沖縄民謡名選集",
+   "identity": {
+    "releaseType": "Compilation",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 a497b55d-a6dc-4a24-b97e-46f7f60383ef《沖縄民謡名選集》，artist-credit「Various Artists」，first-release-date 1989，primary-type Album、**secondary-types 含 Compilation**，轄下 1 個 release（1989 JP Official，マルフクレコード ACD-3，16 軌）。已回問 release-group 端點確認實體類型與標題。以 release?label=ef1945bd-3109-4b48-8723-3a869ed2febf（MB 的マルフクレコード）分頁 browse，該廠名下 5 筆 release：本張、《おきなわはうたう》(無年份)、玉代勢長伝《八重山の歌》三卷、嘉手苅林昌《嘉手苅林昌》(1965)。同廠的玉代勢長伝分卷依裁定第 87 條不收。",
+    "rgMbid": "a497b55d-a6dc-4a24-b97e-46f7f60383ef",
+    "exceptionReason": "マルフクレコード是 1927 年創立、專出沖繩民謡的島內小廠，本張是它在 MusicBrainz 上唯一一張 1960–95 年間的整張選集，也是本批唯一能代表島內自營目錄的條目。",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/a497b55d-a6dc-4a24-b97e-46f7f60383ef",
+     "https://www.discogs.com/label/680249",
+     "https://musicbrainz.org/label/ef1945bd-3109-4b48-8723-3a869ed2febf"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a497b55d-a6dc-4a24-b97e-46f7f60383ef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開這家廠牌的人把留聲機綁在腳踏車後架上沿街賣。普久原朝喜 1923 年離開沖繩到大阪的紡織廠做工，1925 年第一次灌錄唱片，1927 年在大阪開了マルフクレコード，關西的沖繩出身者因此叫他「チコンキーフクバル」。高橋美樹 2006 年的論文數過，這家廠牌四百九十一首錄音裡新民謡只有二十八首。廠牌後來由養子普久原恒勇接手，戰後搬回沖繩。1989 年這份十六首的選集橫跨本島、八重山與宮古，開場是〈芭蕉布〉，收尾是〈唐船どーい〉；那筆條目沒有登錄演出者。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a497b55d-a6dc-4a24-b97e-46f7f60383ef",
+     "https://musicbrainz.org/release/1e844fcf-6364-4c43-8802-eab22589be51",
+     "https://www.discogs.com/label/680249",
+     "https://ja.wikipedia.org/wiki/%E6%99%AE%E4%B9%85%E5%8E%9F%E6%9C%9D%E5%96%9C",
+     "https://ja.wikipedia.org/wiki/%E6%99%AE%E4%B9%85%E5%8E%9F%E6%81%92%E5%8B%87",
+     "https://musicbrainz.org/label/ef1945bd-3109-4b48-8723-3a869ed2febf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "なんくる",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 33f0d693-47df-4546-98db-92bdb41ae18c《なんくる》，artist-credit「りんけんバンド」，first-release-date 1990-12-25，primary-type Album、secondary-types 空，轄下 1 個 release（1990-12-25 JP Official，WAVE EVA 4004，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6e5c43c-54ca-4eac-9900-995c327877db，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 3 個 release-group。**對照組 5006d7eb-b2b2-4d46-8dfe-9e1c91836cc0《りんけんバンド》(1993, Album/Compilation) 刻意不釘**——那是自我同名的精選集，收它會造出 §1 明文要避免的高風險卡。",
+    "rgMbid": "33f0d693-47df-4546-98db-92bdb41ae18c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/33f0d693-47df-4546-98db-92bdb41ae18c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 47,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "隊長的老家是一間三線店兼唱片行，祖父和父親都是音樂家。那間店是祖父照屋林山開的；父親照屋林助戰後就用它做出電三線、四線這些改造樂器，另以夾雜戲仿、歌謡與西洋音樂的漫談ワタブーショー長年活動。照屋林賢 1977 年組了這個團，曲全部由他寫，詞全部用被稱作ウチナーグチ的沖繩方言唱。原盤上三線、島太鼓、銅鑼、三板與指笛對著鼓、鍵盤與貝斯；十二首的作詞分給五個人，〈かてーむん〉那首掛的是林助。錄音分在 1990 年 9 月與 10 月兩間錄音室。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/33f0d693-47df-4546-98db-92bdb41ae18c",
+     "https://www.discogs.com/release/15999565",
+     "https://www.rinken.gr.jp/artist/rinkenband/",
+     "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+     "https://www.discogs.com/release/9489808",
+     "https://music.apple.com/jp/album/%E3%81%AA%E3%82%93%E3%81%8F%E3%82%8B/78595730"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/e0/d6/62e0d626-2b7e-8406-8f6c-f4a065cbbca4/mzaf_3305328836854431477.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "78595730",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "喜納昌吉&チャンプルーズ",
+   "album": "Earth Spirit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 78f979dd-d0a5-4e38-88bd-6110f073ac35《Earth Spirit》，artist-credit「喜納昌吉＆チャンプルーズ」，first-release-date 1991-09-20，primary-type Album、secondary-types 空，轄下 1 個 release（1991-09-20 XW Official，EMI Music Japan Inc.，11 軌，barcode 00094631313554）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c0d82761-5ed3-4a3d-9112-71bfe751bc45，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 12 個 release-group。**d7e70811-e942-4b64-95fe-30fd0a1a1664《喜納昌吉＆チャンプルーズ》(1977) 刻意不釘**（自我同名的代表作，本線刻意避開已被反覆挑走的名盤）；dc5c07a2-1efb-47e4-baeb-04f2267f5317《BLOOD LINE》(2003) **已在池中**、刻意不釘；2dc7f06b-85f6-400d-82b8-1e203526fdb4《ニライカナイ Paradise》(1990) 與 cb607b8e-9b61-4513-ab28-45c30ce9dbea《イン・ラヴ》(1992) 因藝人上限刻意不釘。另有藝人實體「喜納昌吉」13f8dc4f-8b2c-4bba-9585-5b6999171bc2（個人名義，名下 9 個 release-group），不是本卡的掛名。",
+    "rgMbid": "78f979dd-d0a5-4e38-88bd-6110f073ac35",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/86/a7/1e/86a71e5f-e024-63ff-124b-f9f4a1cb54f8/00094631313554.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715470166",
+    "note": "試聽探測釘定的 collectionId 715470166（jp）：喜納昌吉 & チャンプルーズ — Earth Spirit"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲名的括號裡標著出處：德之島民謡、沖繩民謡、宮古民謡。〈ドンドン節〉標的是德之島，另有三首標沖繩、一首標宮古，〈Save The Mangrove〉這些不標；Discogs 那一版條目只登了攝影一項。十一軌的曲長全落在 2 分 30 秒到 4 分 30 秒之間。喜納昌吉長年發出「すべての人の心に花を、すべての武器を楽器に」這組訊息，1998 年到越南芹耶種紅樹林。日文維基年表在 1991 年記了三件事：去法國布爾日的春季音樂節、發行這張碟、出場 NHK 紅白歌合戰。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/78f979dd-d0a5-4e38-88bd-6110f073ac35",
+     "https://www.discogs.com/release/5798611",
+     "https://music.apple.com/jp/album/earth-spirit/715470166",
+     "https://ja.wikipedia.org/wiki/%E5%96%9C%E7%B4%8D%E6%98%8C%E5%90%89",
+     "https://www.discogs.com/master/1639088"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b4/dd/6d/b4dd6de3-8fe2-d0ab-c304-6cb8fff63daf/mzaf_12517523411957002851.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715470166",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "喜納昌吉&チャンプルーズ",
+   "album": "チャンプルーズ・ルネッサンズ",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 c16ee765-e1de-45c9-9775-71e6d03f982a《チャンプルーズ・ルネッサンズ》，artist-credit「喜納昌吉＆チャンプルーズ」，first-release-date 1992-03-25，primary-type Album、secondary-types 空，轄下 1 個 release（1992-03-25 JP Official，Planet earth TOCT-6441，11 軌，barcode 4988006092389）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c0d82761-5ed3-4a3d-9112-71bfe751bc45，名下 12 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。b7f8949b-37e8-418f-8e44-73e4e496205b《Shoukichi Kina & Champloose – Introducing》(1992, Album/Compilation)、0510dd85-d170-4920-a171-f00d4f706c4a《ザ・ニュー・ベスト・オブ》(2000, Compilation)、7b0b3c1a-4099-3d1f-bc19-b71aa062566a《Champloo!》(1995, Album/Live) 皆刻意不釘。",
+    "rgMbid": "c16ee765-e1de-45c9-9775-71e6d03f982a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/1f/c2/14/1fc2148b-4485-c23d-02de-9e54b2e7481c/00094633289055.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720455698",
+    "note": "試聽探測釘定的 collectionId 720455698（jp）：喜納昌吉 & チャンプルーズ — Champloose Renaissance"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟上的副標寫得很白：代表曲十一首，重錄一次。逐字是「Their 11 Greatest Hits!! -with Super New Recordings for the 90's」，兩軌的曲名後面另標著 (Live)。作曲十一首裡九首掛喜納昌吉；伴奏橫跨鍵盤、合成器、鼓、兩把吉他、兩支薩克斯風、長笛與小提琴，錄音與混音分在五間錄音室。重錄的曲子有〈ハイサイおじさん〉——1969 年第一次錄下，1972 年那個初錄版本被剪成單曲發行，成為沖繩唱片業史上空前的暢銷。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7508886",
+     "https://musicbrainz.org/release-group/c16ee765-e1de-45c9-9775-71e6d03f982a",
+     "https://music.apple.com/jp/album/champloose-renaissance/720455698",
+     "https://ja.wikipedia.org/wiki/%E5%96%9C%E7%B4%8D%E6%98%8C%E5%90%89",
+     "https://www.discogs.com/master/1639097"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c5/3f/47/c53f47e0-5c86-95f2-7273-9e19ee0e1a31/mzaf_8644922414329979460.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720455698",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Diamantes",
+   "album": "OKINAWA LATINA",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 737799d6-3152-4c23-83e9-94463369e327《OKINAWA LATINA》，artist-credit「Diamantes」，first-release-date 1993-06-21，primary-type Album、secondary-types 空，轄下 2 個 release：1993-06-21 JP Official（Bad News Records BN-001，10 軌）與 1993-09-23 JP Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 99a38e74-c56b-4e4e-bb74-d4bc95cf6745，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 28 個 release-group。ba8fe949-61e5-4275-92d6-9801eeb59089《ESPERANZA》(1994, Mercury Japan PHCL-5008) 與 40f9aeaf-2d4a-4db6-94cf-4f3898cb6d9d《Conquista》(1995, Mercury Japan PHCL-5016) 刻意不釘——兩張都已是大廠盤，與本線「深掘」的判準不合；a1a25a3d-16a7-4065-a04c-fea6a0ccd9a7《ロ・メジャー・デ・ディアマンテス1993-1997》(1997, Compilation) 亦刻意不釘。",
+    "rgMbid": "737799d6-3152-4c23-83e9-94463369e327",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/737799d6-3152-4c23-83e9-94463369e327/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 38,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十九歲拿下歌謡比賽冠軍，副獎是一張到日本的機票。アルベルト城間 1966 年生於秘魯利馬，祖父母是沖繩本島出身；他用那張機票到日本，後來轉往有親戚的沖繩，一邊在居酒屋當服務生一邊學琉球太鼓，1991 年組成 DIAMANTES。1993 年這張碟先出 Bad News Records 的十軌盤 BN-001，同年稍後 Mercury Japan 的十一軌盤 PHCL-5006 做全國出道，多的那首是西班牙文版本。開場是〈Gambateando〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/737799d6-3152-4c23-83e9-94463369e327",
+     "https://musicbrainz.org/release/383ce03c-cb75-45ca-b685-43cd0c949e71",
+     "https://musicbrainz.org/release/33c204c9-1bec-4b87-88cd-b90f3444367b",
+     "https://www.discogs.com/release/12985895",
+     "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%82%A2%E3%83%9E%E3%83%B3%E3%83%86%E3%82%B9",
+     "https://music.apple.com/jp/album/okinawa-latina/264698003"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/b3/70/54b370fc-fd34-38ce-7b95-6594b001ad8f/mzaf_1805794208013237714.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "264698003",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ネーネーズ",
+   "album": "あしび",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9《あしび》，artist-credit「ネーネーズ」，first-release-date 1993-09-09，primary-type Album、secondary-types 空，轄下 2 個 release：1993-09-09 JP Official（Ki/oon KSC2-48，10 軌，barcode 4988009004808）與一筆無日期的 Pseudo-Release《Ashibi》（轉寫用的假發行，不是另一張碟）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 8 個 release-group。1264b05d-1d13-4ce5-be7a-751e0fbdc030《コザ～ネーネーズ・ベスト・コレクション》(1996, Other/Compilation)、bee5a10d-d3ad-4f66-93da-6ec9b14ba9c8《オキナワ〜メモリアル・ネーネーズ》(2000, Compilation)、c7231ab3-e9fa-4c85-a0a6-e387665d4fd6《Akemodoro Unai》(1998) 皆刻意不釘。",
+    "rgMbid": "ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 134,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1994 年這張碟在歐洲又出了一次，盤名作《Ashibi》。Columbia 的那筆條目上多一行「Made In Austria」。錄音從 1993 年 4 月 27 日開始分在三間錄音室，credit 上有一欄叫「Brazilian Production」，打擊樂手帶進 atabaque 與 cuica。十首裡有七首的詞曲掛製作人知名定男；第八軌〈ノーウーマン　ノークライ〉的作詞作曲掛 Vincent Ford，知名定男另掛一欄「沖縄詞」，主唱掛古謝美佐子。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9",
+     "https://www.discogs.com/release/12377641",
+     "https://www.discogs.com/release/19895572",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://music.apple.com/jp/album/%E3%81%82%E3%81%97%E3%81%B3/1536980004"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ff/10/d8/ff10d86e-6724-cf0f-97a8-4c2ed80edeef/mzaf_9346348306989975199.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536980004",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大工哲弘",
+   "album": "ゆんた とぅ じらば",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 08de40a3-de49-4f30-8b1f-4550245650ce《ゆんた とぅ じらば》，artist-credit「大工哲弘」，first-release-date 1993-06-13，primary-type Album、secondary-types 空，轄下 1 個 release（1993-06-13 JP Official，DISC AKABANA APCD-1002，11 軌，barcode 4571258153023）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 056c1b35-fc3d-45b7-acc6-49fff6f3fef6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 4 個 release-group。3d1c9169-3c36-4168-bf1d-713403d899dc《ウチナージンタ》(1994, off note ON-1) **刻意不釘**——實測 CAA release-group front 回 404 且 Apple 三個 storefront 皆無條目，封面解不出來，依 §4 停止該筆；473fa59e-eaf3-448e-ad75-cd367b2b3141《ジンターナショナル》(1996) 超出本組年限，7e0858f9-b033-4ccf-9b53-7fc286f5fa81《ガムラン‐ユンタ》(2009) 亦刻意不釘。",
+    "rgMbid": "08de40a3-de49-4f30-8b1f-4550245650ce",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/08de40a3-de49-4f30-8b1f-4550245650ce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一張 CD 專輯的製作，交給了一個吹薩克斯風的人。梅津和時掛製作，也掛薩克斯風、豎笛、鋼琴與口風琴，第 1 至 5 與第 8 至 11 軌的編曲是他；Tom Cora 掛大提琴、Samm Bennett 掛鼓與打擊，兩人也各分走幾軌。大工哲弘自己掛人聲、三線、笛與太鼓，大工苗子與嵩本由起子掛囃子。他是八重山民謡的唄者，出身石垣市新川，1999 年被指定為沖繩縣無形文化財保持者；十一首曲名裡「ゆんた」出現三次，〈安里屋ゆんた〉是其中一首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/08de40a3-de49-4f30-8b1f-4550245650ce",
+     "https://www.discogs.com/release/15467416",
+     "https://daiku-tetsuhiro.com/profile/",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B7%A5%E5%93%B2%E5%BC%98"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ネーネーズ",
+   "album": "コザ dabasa",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5《コザ dabasa》，artist-credit「ネーネーズ」，first-release-date 1994-07-21，primary-type Album、secondary-types 空，轄下 1 個 release（1994-07-21 JP Official，Ki/oon KSC2 83，11 軌，barcode 4988009008301）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，名下 8 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。**對照組 1264b05d-1d13-4ce5-be7a-751e0fbdc030《コザ～ネーネーズ・ベスト・コレクション》(1996, primary-type Other／secondary Compilation) 刻意不釘**——盤名開頭同為「コザ」，是下游最容易換錯的形狀。",
+    "rgMbid": "af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "客席名單上有 Ry Cooder，他在第一軌彈吉他。第十一軌改掛電吉他與滑管吉他；David Lindley 在四軌上掛名，木吉他、滑管吉他、曼陀林與布祖基琴都有，Jim Keltner 打兩軌鼓，David Hidalgo 在第八軌拉手風琴。錄音在 1994 年 3 月，三間錄音室有一間叫 Sunset Sound。第九軌〈片便り〉把四段獨唱逐段標出來，一人一段。最長的〈黄金の花〉8 分 29 秒，同年 8 月 21 日另出成單曲；一個電視新聞節目拿它當片尾曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5",
+     "https://www.discogs.com/release/12377672",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://www.discogs.com/master/1678509"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9c/eb/3d/9ceb3d11-94f9-3218-aa12-1e3cc3e5d7b2/mzaf_11404384654046657150.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536980453",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ネーネーズ",
+   "album": "なーらび",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 744a63a0-e9ad-4ace-9b82-f628454a5929《なーらび》，artist-credit「ネーネーズ」，first-release-date 1995-03-24，primary-type Album、secondary-types 空，轄下 1 個 release（1995-03-24 JP Official，Ki/oon KSC2 112，14 軌，barcode 4988009011202）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 4d648881-7064-4f93-acc0-224d93ecb9cd，名下 8 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。17167fac-544d-4740-b823-a682039f607e《明けもどろ ～うない～》(1997) 與 c7231ab3-e9fa-4c85-a0a6-e387665d4fd6《Akemodoro Unai》(1998) 是同一張碟的日文與羅馬拼音兩筆建檔，兩筆皆超出本組年限、刻意不釘。",
+    "rgMbid": "744a63a0-e9ad-4ace-9b82-f628454a5929",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/55/22/675522c3-6b17-1a8c-c52a-b0573cabbc26/jacket_MHXX01814B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536979813",
+    "note": "試聽探測釘定的 collectionId 1536979813（jp）：ネーネーズ — なーらび"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 215,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第十三首上多了一個名字：製作人自己的師父。〈谷茶バヤシ〉的 credit 上，登川誠仁掛人聲與三線。知名定男 1945 年生於北九州、在大阪長大，六歲就在一齣歌劇裡經歷了第一次唱片錄音；1956 年回到沖繩後，他在業餘歌唱大會被擔任評審的登川誠仁看中，收為內弟子隨即出道。登川誠仁的綽號「誠小」來自矮小的身形，他彈三線用彈片不用撥子，因此有「沖繩的吉米・罕醉克斯」這個別名。十四首從 46 秒的序曲排到 6 分 37 秒，四位主唱各拿到一首自己的獨唱。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/744a63a0-e9ad-4ace-9b82-f628454a5929",
+     "https://www.discogs.com/release/3281796",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://www.discogs.com/master/1682186"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/59/f8/12/59f812da-fe62-a6d2-4d0d-6171d4bea2cc/mzaf_13194438598833994381.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536979813",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "りんけんバンド",
+   "album": "チェレン",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 78c9c191-e717-3be8-839a-5aa03d1af858《チェレン》，artist-credit「りんけんバンド」，first-release-date 1995-11-21，primary-type Album、secondary-types 空，轄下 1 個 release（1995-11-21 JP Official，12 軌，**MB 未登錄廠牌與目錄號**）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e6e5c43c-54ca-4eac-9900-995c327877db，名下 3 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。**對照組 5006d7eb-b2b2-4d46-8dfe-9e1c91836cc0《りんけんバンド》(1993, Album/Compilation) 刻意不釘**（自我同名精選集）。",
+    "rgMbid": "78c9c191-e717-3be8-839a-5aa03d1af858",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/b4/25/58b42548-818c-4619-351f-a8be19d8bf72/jacket_SRCL03329B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537345079",
+    "note": "試聽探測釘定的 collectionId 1537345079（jp）：りんけんバンド — チェレン"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 50,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名就寫在隊長的樂器欄上，排在三線後面。官方網站把照屋林賢的樂器欄寫成「三線・チェレン」，Discogs 的 credit 寫成「Sanshin [Cheren]」；它是什麼樣的東西，紀錄上沒有再說。作曲與編曲全掛林賢，作詞分給四個人，名嘉睦稔一人寫了四首；新垣篤唱了六軌，內頁的歌詞翻譯也掛他。Bruce Miller 掛總工程師與混音，Tom Barney 的貝斯散在六軌上。同名曲〈チェレン〉排在第六軌，1995 年的原盤是 Sony SRCL 3329。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/78c9c191-e717-3be8-839a-5aa03d1af858",
+     "https://www.discogs.com/release/15999431",
+     "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+     "https://www.rinken.gr.jp/artist/rinkenband/",
+     "https://music.apple.com/jp/album/%E3%83%81%E3%82%A7%E3%83%AC%E3%83%B3/1537345079"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/c5/e9/83/c5e98396-6c20-7819-d4a3-1f34793923a7/mzaf_102668562176182417.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537345079",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "我如古より子",
+   "album": "恋の花",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 d0666c83-5df6-43a0-9386-7c30be20351d《恋の花》，artist-credit「我如古より子」，first-release-date 1995-04-01，primary-type Album、secondary-types 空，轄下 1 個 release（1995-04-01 JP Official，vap VPCC-81075，11 軌，barcode 4988021810753）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 68703a1a-940f-4f43-92bb-2ea0f2389e26（disambiguation「オキナワチャンズ」），以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 1 個 release-group，無對照組可混淆。MB 另有藝人實體「我如古盛栄」0ad0f6cf-2c6a-40d0-9a65-47a23adc909e，不是本卡的掛名。",
+    "rgMbid": "d0666c83-5df6-43a0-9386-7c30be20351d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d0666c83-5df6-43a0-9386-7c30be20351d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 27,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一首歌裡，有五首的詞出自她父親。我如古より子是沖繩民謡歌手，1970 年代開始活動，父親是民謡歌手我如古盛栄；盛栄在第 3、4、8 軌掛作詞，第 6 軌掛補作，第 5 軌的詞也是他的。製作掛井上鑑，他在十一軌裡的十軌掛編曲與鍵盤，一頭一尾的 Prologue 與 Epilogue 兩首連詞曲都是他寫的；客席有 David Rhodes 的吉他與 John Giblin 的無格貝斯，錄音場所欄上列著六間錄音室。她 1977 年以〈女工節〉出道，那首歌也收在這張碟上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d0666c83-5df6-43a0-9386-7c30be20351d",
+     "https://www.discogs.com/release/18747697",
+     "https://ja.wikipedia.org/wiki/%E6%88%91%E5%A6%82%E5%8F%A4%E3%82%88%E3%82%8A%E5%AD%90",
+     "https://www.discogs.com/release/2762851"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮下富実夫",
+   "album": "Wave (Sound of the Universe)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 db8ff130-3eb2-4769-976d-79e4af2fcdda《WAVE》，artist-credit「宮下富実夫」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 3 個 release：1983 JP Official、2019-09-20 US Official、2019-09-20 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 565ede5e-4c52-4645-b6a3-1d748dd23059，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 29 個 release-group。同藝人的 5aad5c35-9a49-4581-8c17-dea9556fc12a《Earth》(1983)、3cac1563-a1cd-4ac3-bc4e-b96c26a5b2ef《Earth - Sound Of The Universe》(無年份)、1f02a812-570f-48a8-86c8-d6dc0be5b798《SILENT ECHO》(1984) 皆刻意不釘。",
+    "rgMbid": "db8ff130-3eb2-4769-976d-79e4af2fcdda",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/db8ff130-3eb2-4769-976d-79e4af2fcdda/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "巡演途中他去做了針灸，之後開始研究音樂療法。宮下富実夫 1949 年生於長野市，1977 年移居美國並開始巡演，那次治療把他帶進東洋醫學。五軌各用一個雙語標題標出一個狀態：大地、呼吸、蘇生、光明，最後一首是〈波動 (Wave)〉；作曲、編曲與全部樂器都掛他一個人，Discogs 的原盤條目上就只有這一行。回國後他在信州飯綱高原設起琵琶スタジオ，也開了自己的廠牌 BIWA Records，1983 年這張碟的編號是 BW-3009。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4060236",
+     "https://api.discogs.com/releases/19663057",
+     "https://api.discogs.com/masters/495050/versions?per_page=100",
+     "https://api.discogs.com/releases/14237152",
+     "https://musicbrainz.org/release-group/db8ff130-3eb2-4769-976d-79e4af2fcdda",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E4%B8%8B%E5%AF%8C%E5%AE%9F%E5%A4%AB",
+     "https://api.discogs.com/labels/244801"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "尾島由郎",
+   "album": "Club",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 32943609-ad5e-48c3-ad78-271ce5a28585《Club》，artist-credit「Yoshio Ojima」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 1 個 release（1983 JP Official《Club》）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6639b3dd-53df-47af-ac73-6310333ebd60，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 9 個 release-group。同藝人的 c7d72549-bfbd-4677-981d-128efc0932b7《Airy Walks》(1987)、12f4e31e-f54f-4728-81b4-8ee53d1cdf4f 與 1bf85caa-7d47-4542-b56c-e0ad993c2aaa（Spiral 兩張，已在池中）、21366368-b828-4a38-8ba9-07a8b4ed15fb《Music for Element》(1994，與柴野さつき合作) 皆刻意不釘。",
+    "rgMbid": "32943609-ad5e-48c3-ad78-271ce5a28585",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/32943609-ad5e-48c3-ad78-271ce5a28585/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 23,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原盤是一捲卡帶，黑膠版要到 2024 年才出。1983 年那捲帶子的編號是 FGW-2002，廠牌欄上同時掛著 FGW 與 Fukusei Gijutsu Kohboh 兩個實體，條目上沒有列任何 credit。八首曲名排下來像一段流程：Entrance、Days-Man、Schooling，收在〈Graduation〉。做黑膠的是瑞士的 We Release Whatever The Fuck We Want Records，註記寫著由本人監修、取自原始母帶。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2940496",
+     "https://api.discogs.com/masters/2872981/versions?per_page=100",
+     "https://api.discogs.com/releases/31184425",
+     "https://wrwtfww.com/album/club",
+     "https://musicbrainz.org/release-group/32943609-ad5e-48c3-ad78-271ce5a28585",
+     "https://api.discogs.com/labels/251141",
+     "https://api.discogs.com/releases/32505630",
+     "https://api.discogs.com/releases/1841019",
+     "https://api.discogs.com/releases/629691"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "YAS-KAZ",
+   "album": "縄文頌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 a58f0577-15ec-4aa2-a5e0-e1ec7ec5559c《縄文頌》，artist-credit「YAS‐KAZ」，first-release-date 1984-04-21，primary-type Album、secondary-types 空，轄下 4 個 release：1984-04-21 JP Official《縄文頌》、1985 US Official《Jomon-Sho》、1998-07-12 JP Official、2020-11-06 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID fdac2c6e-d833-4537-ba3a-3042afeae91e，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 14 個 release-group。同藝人的 6709c614-193d-49b5-a4cf-0bba94a3a234《まほろば》(1984)、020cd433-b9da-417b-8b18-78684eee0675《海道》(1985)、9bea2174-1208-4092-98a4-e38b14e91f8d《Virgo Indigo》(1986)、f6fc913b-04da-42b7-bf22-d22ce425b227《Moon Rabbits》(1987) 皆刻意不釘。",
+    "rgMbid": "a58f0577-15ec-4aa2-a5e0-e1ec7ec5559c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a58f0577-15ec-4aa2-a5e0-e1ec7ec5559c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 97,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作、錄音與封面畫作各掛一個名字，他只掛作曲和演奏。復刻方 Glossy Mistakes 的說明寫，這張碟是為山海塾在巴黎市立劇場的演出而作，用的全是原聲樂器與田野錄音。十一軌從一首 Prelude 開到一首 Finale，〈Jungle Book〉十分三十一秒，最短的一首只有一分二十秒；1985 年美國與西德的 Gramavision 盤，把盤名換成了《Jomon-Sho》。逐軌 credit 上有客席的只有兩首，其餘各軌都落在他一個人名下。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3586190",
+     "https://api.discogs.com/masters/106607/versions?per_page=100",
+     "https://glossymistakes.bandcamp.com/album/yas-kaz-jomon-sho",
+     "https://api.discogs.com/releases/981074",
+     "https://musicbrainz.org/release-group/a58f0577-15ec-4aa2-a5e0-e1ec7ec5559c",
+     "https://ja.wikipedia.org/wiki/%E5%90%89%E5%B7%9D%E6%B4%8B%E4%B8%80%E9%83%8E",
+     "https://api.discogs.com/releases/3717807",
+     "https://api.discogs.com/releases/16110949"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/be/09/5f/be095f19-a69f-0bfc-24f8-4b76f1f70c6f/mzaf_2440896407381763552.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1368300298",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮下富実夫",
+   "album": "Silent Echo (Sound of the Universe)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 1f02a812-570f-48a8-86c8-d6dc0be5b798《SILENT ECHO》，artist-credit「宮下富実夫」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 2 個 release：1984 JP Official（BIWA Records BW-3007，10 軌）與 2020-06-12 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 565ede5e-4c52-4645-b6a3-1d748dd23059，名下 29 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。同藝人的 db8ff130-3eb2-4769-976d-79e4af2fcdda《WAVE》(1983) 是本批的另一張卡；5aad5c35-9a49-4581-8c17-dea9556fc12a《Earth》(1983)、3cac1563-a1cd-4ac3-bc4e-b96c26a5b2ef《Earth - Sound Of The Universe》(無年份)、38227084-3269-4d94-ba4e-4ed85a9d23f4《SHION》(1985) 皆刻意不釘。",
+    "rgMbid": "1f02a812-570f-48a8-86c8-d6dc0be5b798",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1f02a812-570f-48a8-86c8-d6dc0be5b798/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首曲名裡有六首寫水：水光、流水清、水中花、深海。剩下的四首裡，開場那首叫〈Time Machine〉，收尾那首與碟同名。1984 年這張碟的自家編號是 BW-3007，比同一位作者 1983 年那張碟的編號小兩號，兩張都出自 BIWA Records 的同一個序列。原盤條目把錄音日期記在 12 月 31 日這一天，整份 credit 上也只有他一個名字。他後來替宮沢賢治原作的動畫電影配過樂，1992 年也替龍村仁導演的《ガイアシンフォニー 第一番》做了音樂。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4060238",
+     "https://api.discogs.com/masters/495051",
+     "https://api.discogs.com/masters/495051/versions?per_page=100",
+     "https://api.discogs.com/masters/495050/versions?per_page=100",
+     "https://musicbrainz.org/release-group/1f02a812-570f-48a8-86c8-d6dc0be5b798",
+     "https://api.discogs.com/releases/15515489",
+     "https://ja.wikipedia.org/wiki/%E5%AE%AE%E4%B8%8B%E5%AF%8C%E5%AE%9F%E5%A4%AB",
+     "https://api.discogs.com/releases/4060236"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "柴野さつき",
+   "album": "Erik Satie (France 1866-1925)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 4209553b-5d75-4a5d-adec-d8315bb76511《Erik Satie (france 1866–1925)》，artist-credit「Erik Satie; 柴野さつき」，first-release-date 1984，primary-type Album、secondary-types 空，轄下 1 個 release（1984 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 28e67caa-9cba-4269-949e-935aba35bde0，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 12 個 release-group。同藝人的 33bc4f44-2e9c-4ff5-ab6f-31560c4a7774《Wave Notation 3: Erik Satie 1984》(2023，WRWTFWW 復刻另建的 release-group) **刻意不釘**——那是再發版本、年份會錯（裁定第 129 條）；729bfce6-2321-4d9b-8c58-a6e384bfc1fc《Satsuki Plays Satie》(1987) 與 103f061c-c5e5-4b56-a030-6c0af9e4a1e6《Satsuki Plays Satie II》(1987) 是另外兩張碟，亦刻意不釘。",
+    "rgMbid": "4209553b-5d75-4a5d-adec-d8315bb76511",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4209553b-5d75-4a5d-adec-d8315bb76511/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片兩面標著 A-M 與 N-Z：曲子照曲名的字母排。二十六首薩提的鋼琴小品，兩面各十三首，最短的〈Harmonie〉只有三十三秒；原盤的 credit 只有一行：柴野さつき，鋼琴。系列的策劃是芦川聡，他 1975 年在池袋開了唱片與書店 Art Vivant，1982 年與田中宗孝共同創辦 Sound Process，這個系列只出過三張。2023 年的復刻把盤名改成《Wave Notation 3: Erik Satie 1984》，替它補上了系列裡的序號。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4193460",
+     "https://api.discogs.com/masters/1809804",
+     "https://api.discogs.com/masters/1809804/versions?per_page=100",
+     "https://wrwtfww.com/album/wave-notation-3-erik-satie-1984",
+     "https://en.wikipedia.org/wiki/Satoshi_Ashikawa",
+     "https://api.discogs.com/labels/410597",
+     "https://musicbrainz.org/release-group/4209553b-5d75-4a5d-adec-d8315bb76511",
+     "https://api.discogs.com/releases/27335619"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "北村昌士＋PHONOGENIX",
+   "album": "Prologue for Post Modern Music",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 96b567bc-93a6-461a-bb78-8613ecbcdc44《Prologue for Post Modern Music》，artist-credit「北村昌士＋PHONOGENIX」，first-release-date 1984-07，primary-type Album、secondary-types 空，轄下 1 個 release（1984-07 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID b0de3214-903c-4430-ac91-3e7ccb56a0cd（北村昌士），以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 1 個 release-group，無對照組可混淆。",
+    "rgMbid": "96b567bc-93a6-461a-bb78-8613ecbcdc44",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/96b567bc-93a6-461a-bb78-8613ecbcdc44/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "隨碟的十六頁小冊裡，受訪的是浅田彰與中沢新一。概念、製作、作曲與訪談者都掛北村昌士，實際彈奏落在 PHONOGENIX 那幾個名字上；他 1977 年創刊《FOOL'S MATE》並當首任總編輯，1985 年才離開編輯工作。A 面四段變奏，B 面整面一首長曲，逐軌 credit 把器材一台台印出來：Linn 與 TR808 兩種鼓機、DX7、Juno60、Profet600、Casiotone、MC-4 序列器與一台 Mellotron，B 面那首另加一把三味線。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/1427196",
+     "https://api.discogs.com/masters/823591/versions?per_page=100",
+     "https://api.discogs.com/releases/18402388",
+     "https://musicbrainz.org/release-group/96b567bc-93a6-461a-bb78-8613ecbcdc44",
+     "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E6%98%8C%E5%A3%AB"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/ab/2e/1eab2e75-2cf3-0573-5145-a34ae194a97f/mzaf_575089514456669135.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767965477",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "鈴木良雄",
+   "album": "Morning Picture",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 12741f20-e0a9-4cf5-b26f-2dc3478fbbcb《Morning Picture》，artist-credit「Yoshio Suzuki」，first-release-date 1984-11-21，primary-type Album、secondary-types 空，轄下 5 個 release：1984-11-21 JP Official、1984 JP Official、1984 US Official、1986 GB Official、2019-03-06 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3c27fd75-2bed-46b1-96d0-54bbec36ae6c，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 13 個 release-group。同藝人的 b26a7d6d-dbf2-4616-a604-aa4f71ef2550《Touch of Rain》(1986)、8fe00939-8f6d-49b8-8518-dddcb22d664d《Fairy Tale》(1987) 皆刻意不釘；另一個藝人實體「鈴木良雄トリオ」e9131030-9896-4bc0-911b-b7edce9e9f83 不是本卡的掛名。",
+    "rgMbid": "12741f20-e0a9-4cf5-b26f-2dc3478fbbcb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12741f20-e0a9-4cf5-b26f-2dc3478fbbcb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 48,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一個系列的另一個編號，發的是 Klaus Schulze。這張碟是 JVC 的 Music Interior 系列 JMI-28005，同一段目錄裡還有 Steve Hackett；當年另有加拿大、西德與英國三地的代理盤。八首器樂曲全由鈴木良雄作曲並演奏，〈The Mirage〉五分四秒。他出身做小提琴的家庭，入行時彈的是鋼琴，改彈貝斯是渡辺貞夫建議的；1974 年進 Stan Getz 樂團，1975 至 1976 年是 Art Blakey 樂團的固定貝斯手。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3717772",
+     "https://api.discogs.com/labels/307412/releases?per_page=50",
+     "https://api.discogs.com/masters/322056/versions?per_page=100",
+     "https://api.discogs.com/releases/33159387",
+     "https://musicbrainz.org/release-group/12741f20-e0a9-4cf5-b26f-2dc3478fbbcb",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E8%89%AF%E9%9B%84"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/65/5f/e0655f6c-2630-9712-659b-aef79c09b581/mzaf_17953116199177514386.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1453369285",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "YAS-KAZ",
+   "album": "風の卵",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 2e31d839-703d-4b8c-b881-b61946bdf50b《風の卵》，artist-credit「YAS‐KAZ」，first-release-date 1985-05-21，primary-type Album、secondary-types 空，轄下 1 個 release（1985-05-21 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID fdac2c6e-d833-4537-ba3a-3042afeae91e，名下 14 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。美國《Egg of Purana》沒有獨立的 release-group，是本 RG 轄下的 release，不必也不能另釘。",
+    "rgMbid": "2e31d839-703d-4b8c-b881-b61946bdf50b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2e31d839-703d-4b8c-b881-b61946bdf50b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 61,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "版本清單上七筆全在 1985 年，之後沒有再添一筆。清單裡那個《Egg Of Purana》不是另一張碟——它是 A 面最後一首的曲名，被美國與西德的盤拿去當標題。十軌，五首一面，曲名混著人名、樂器與角色：Coolies Creek No. 5、bibilimba、psychopomp 與薩滿；收尾的〈Waltz For Marcy〉是唯一一個西方舞曲體裁。原盤條目的 credit 只有四行，作曲之外是一把吉他合成器、一台合成器、一把小提琴；製作與工程兩欄是空的。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3717807",
+     "https://api.discogs.com/masters/494413/versions?per_page=100",
+     "https://api.discogs.com/releases/783503",
+     "https://api.discogs.com/masters/106607/versions?per_page=100",
+     "https://musicbrainz.org/release-group/2e31d839-703d-4b8c-b881-b61946bdf50b",
+     "https://api.discogs.com/masters/494413",
+     "https://api.discogs.com/releases/3586190",
+     "https://ja.wikipedia.org/wiki/%E5%90%89%E5%B7%9D%E6%B4%8B%E4%B8%80%E9%83%8E"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/40/40/9b/40409b45-bd35-3f3f-db51-d9b89a20ebe5/mzaf_7734636447588663802.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1368292239",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "上野耕路",
+   "album": "Music For Silent Movies",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 7026a905-8407-43ba-9bd4-e2f94b06f4b6《Music For Silent Movies》，artist-credit「上野耕路」，first-release-date 1985-04-25，primary-type Album、secondary-types 空，轄下 3 個 release：1985-04-25 JP Official（¥・E・N RECORDS YLR-28023，6 軌）、1998-02-21 JP Official、2006-02-22 JP Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 1e649949-85d0-4607-9bfd-07587852d685，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條），名下 12 個 release-group。同藝人的 b2b99951-d23a-42bb-b30d-5db0a3040d5a《Okinawan Childai》(1989, Album/Soundtrack)、0fd35b8a-151c-43ba-aa77-075e1d869756《Réservoir》(1991)、b840ce08-d3fa-4046-8e3e-17e1b0e9f73d《レゾナンス・オブ・ガジェット》(1995) 皆刻意不釘。",
+    "rgMbid": "7026a905-8407-43ba-9bd4-e2f94b06f4b6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7026a905-8407-43ba-9bd4-e2f94b06f4b6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 121,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首曲子的名字，就是六部默片的片名。1985 年的原盤就只有這六軌，最短的兩分兩秒，B 面的〈Entr'acte〉十四分六秒。編制是一組弦樂四人，加上吹薩克斯風與單簧管的 Yasuaki Shimizu；上野耕路自己那一欄同時列著鋼琴、預置鋼琴、合成器、電腦與大鍵琴。他 1960 年生，替伊福部昭的怪獸電影音樂再錄音專輯採譜，並以此為契機受到伊福部在記譜法與作曲上的指導；1982 年他以 Yen 旗下藝人的身分，與戸川純、太田螢一組成ゲルニカ。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2952744",
+     "https://api.discogs.com/releases/3237040",
+     "https://api.discogs.com/releases/9501535",
+     "https://api.discogs.com/masters/386204/versions?per_page=100",
+     "https://musicbrainz.org/release-group/7026a905-8407-43ba-9bd4-e2f94b06f4b6",
+     "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%87%8E%E8%80%95%E8%B7%AF"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/99/30/e799304e-2e09-4773-8d32-8e54b58a69ae/mzaf_18132350796863839124.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1528290981",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日向敏文",
+   "album": "Sarah's Crime",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 59b5cc0e-a203-4c0c-98fd-5f0e810aec9e《Sarah's Crime》，artist-credit「日向敏文」，first-release-date 1985-08-25，primary-type Album、secondary-types 空，轄下 3 個 release：1985-08-25 JP Official《Sarah's Crime》（直引號）、1986-02-25 JP Official《Sarah's Crime》（彎引號）、2021-12-03 JP Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0efcb23b-cc34-42e7-b60a-747c142666c3，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 22 個 release-group。同藝人的 4cb1e7c8-b07a-43f6-9e06-9655d5656aaf《CHAT D'ETE》(1986)、51c04c3f-bd13-3c21-a539-acd9643a06dd《REALITY IN LOVE》(1986，已在池中)、3ce298ae-15d1-4fc6-bb52-39754f0d6abf《ISIS》(1988) 皆刻意不釘。",
+    "rgMbid": "59b5cc0e-a203-4c0c-98fd-5f0e810aec9e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/59b5cc0e-a203-4c0c-98fd-5f0e810aec9e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 153,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "到美國原本是去讀環境學的，樂團是在酒吧裡組起來的。那間酒吧在威斯康辛州，同團的一位樂手邀他轉學：1976 年進柏克萊音樂學院主修爵士兩年，1978 年再轉到明尼蘇達大學雙城分校，主修古典鋼琴四年。1985 年他以 Alfa 的這張碟出道，共同掛製作的是弟弟日向大介。九首器樂曲裡，〈Sarah's Crime〉排在 A 面第一首，B 面第一首是只叫〈Sarah〉的曲子，收尾兩首借了古典與繪畫的詞。原盤條目上只有兩行 credit，兩行都是製作人。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3711059",
+     "https://api.discogs.com/masters/823596/versions?per_page=100",
+     "https://musicbrainz.org/release-group/59b5cc0e-a203-4c0c-98fd-5f0e810aec9e",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E5%90%91%E6%95%8F%E6%96%87"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b3/71/4a/b3714a6c-a8ad-2272-7ad5-ec6261d6be09/mzaf_17582501689394128519.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1594298382",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伊藤詳",
+   "album": "Marine Flowers (Science Fantasy)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 dfb37119-7143-4354-805b-90811b668fda《Marine Flowers (Science Fantasy)》，artist-credit「Akira」，first-release-date 1986-12-01，primary-type Album、secondary-types 空，轄下 4 個 release：1986-12-01 JP Official《Marine Flowers (Science Fantasy)》、1986-12-01 JP Official《Marine Flowers》、2021-12-17 ES Official、2021-12-17 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 36baeb78-6e29-41cb-99a4-f704e895babf，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 18 個 release-group。同日期的 35db31eb-f75d-44f8-81d5-90981b4b908e《禱 (Prayers)》、9b68774c-e6b4-4205-85fd-44106897bda6《一水四見 やすらぎを君に PART III》、d289b3e2-96fe-49e0-8887-e0e7d7378d4a《Hopi Prophecies》皆刻意不釘。",
+    "rgMbid": "dfb37119-7143-4354-805b-90811b668fda",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dfb37119-7143-4354-805b-90811b668fda/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 29,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌是他自己開的，作曲、演奏、錄音與混音也都掛他。Green & Water 是伊藤詳 1986 年開的廠牌；客席只有五個名字，帶進來的是雙簧管、薩克斯風、電小提琴、打擊樂與人聲。八首曲子每首都掛日英兩個標題，第二首叫〈水色の聖地 / W・A・T・E・R〉。他十九歲起有五年在東南亞與南太平洋諸島漫遊，1975 年組成被視為日本第一支進步搖滾樂團的ファー・イースト・ファミリー・バンド，1977 年因為關心音樂療法退團。原盤的註記欄裡留著一句話：請戴耳機聽。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3984902",
+     "https://api.discogs.com/labels/459132",
+     "https://api.discogs.com/artists/729957",
+     "https://api.discogs.com/masters/1009271/versions?per_page=100",
+     "https://api.discogs.com/releases/21603952",
+     "https://musicbrainz.org/release-group/dfb37119-7143-4354-805b-90811b668fda",
+     "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%A9%B3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "吉村弘",
+   "album": "Soundscape 1: Surround",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 b42928fd-8da9-43cd-af3e-405d1ee61e39《Soundscape 1: Surround》，artist-credit「吉村弘」，first-release-date 1986-02-10，primary-type Album、secondary-types 空，轄下 3 個 release：1986-02-10 JP Official《Soundscape 1: Surround》、2023-10-06 US Official《Surround》、2023-10-06 XW Official《Surround》。已回問 release-group 端點確認實體類型與標題。藝人 MBID 9a197894-1a40-4650-89a2-928dcfcd1ef6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 16 個 release-group。同藝人的 ca95b2d5-bbbd-479a-9f4a-155fcaedd090《Music for Nine Post Cards》(1982) 與 85c1cd64-3c83-4b3d-b2c2-5888739a28cb《Green》(1986) **已在池中、刻意不釘**；b728cbaf-af21-451c-ba4c-b536a4ba5186《Pier & Loft》(1983)、72503c08-9189-4570-8d34-5545be324d64《A･I･R: AIR IN RESORT》(1984)、2ddd3e2d-0796-4b08-bf1a-152b3a771dcf《Wet Land》(1993) 亦刻意不釘（藝人上限）。",
+    "rgMbid": "b42928fd-8da9-43cd-af3e-405d1ee61e39",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b42928fd-8da9-43cd-af3e-405d1ee61e39/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 486,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "訂單來自一家住宅公司的研究所：替預鑄屋做一組音景。英文維基寫，三澤ホーム的研究開發機構要的正是這個；1986 年的碟屬於該公司的 Soundscape 系列。他另外做過釧路市立博物館的館內環境音與地鐵南北線的發車信號音。六軌，兩面都是先一首長曲再接兩首短的——A 面的〈Time After Time〉十分五十六秒，最短的〈Water Planet〉兩分十二秒。Bandcamp Daily 的 Patrick St. Michel 把它稱作環境音楽的代表一例。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3447244",
+     "https://en.wikipedia.org/wiki/Surround_(Hiroshi_Yoshimura_album)",
+     "https://api.discogs.com/masters/599755/versions?per_page=100",
+     "https://api.discogs.com/releases/27179628",
+     "https://api.discogs.com/releases/29325361",
+     "https://musicbrainz.org/release-group/b42928fd-8da9-43cd-af3e-405d1ee61e39",
+     "https://ja.wikipedia.org/wiki/%E5%90%89%E6%9D%91%E5%BC%98"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "浜瀬元彦",
+   "album": "Intaglio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 6c081a67-7456-4c9b-b14f-547c25cdd8c1《Intaglio》，artist-credit「濱瀬元彦」（MB 用異體字「濱」，卡片掛名用池中一致的簡化字「浜瀬元彦」）（異體字，卡片掛名用池中一致的「浜瀬元彦」），first-release-date 1986-11-25，primary-type Album、secondary-types 空，轄下 1 個 release（1986-11-25 JP Official）。已回問 release-group 端點確認實體類型與標題。對照組 3a2f8159-a30d-44f9-89b1-c12878fc2041《Intaglio》(2018-08-10，同一藝人、同一盤名的復刻 release-group)**刻意不釘**。藝人 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，名下 6 個 release-group。",
+    "rgMbid": "6c081a67-7456-4c9b-b14f-547c25cdd8c1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2c/ec/1a/2cec1acf-7905-da8d-ad12-13df9ec9e18e/4250101433535_cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1576661283",
+    "note": "試聽探測釘定的 collectionId 1576661283（gb）：Motohiko Hamase — Intaglio"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 11,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他遠離演奏與 session 工作的理由，是自己說的兩句話。1976 年起他在幾支爵士樂團當貝斯手，留下大量 session 作品；1980 年代中期起他退開，說法是自己的音樂與業界合不來、沒有能理解自己演奏的樂手因而孤立。七軌，他掛電貝斯、合成器與電腦程式設計，另一位彈鋼琴；錄音在東京的 Sound Design Studio，而 Shi Zen 的母廠牌就叫 Sound Design Records。A 面第二首叫〈Lung〉，他後來也開過一家叫ラング的公司。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8831573",
+     "https://api.discogs.com/labels/262791",
+     "https://api.discogs.com/masters/1049308/versions?per_page=100",
+     "https://musicbrainz.org/release-group/6c081a67-7456-4c9b-b14f-547c25cdd8c1",
+     "https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/d4/55/acd455f1-975c-29e1-f847-857d55ac1874/mzaf_14011270764694071779.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1576661283",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菅谷昌弘",
+   "album": "熱の風景",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 b98e38cb-c021-4c36-aee6-aaf333ea8b75《熱の風景》，artist-credit「Masahiro Sugaya」，first-release-date 1987，primary-type Album、secondary-types 空，轄下 3 個 release：1987 JP Official、2025-04-25 ES Official、2025-04-25 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6de532ad-e7e1-4fc9-9ba2-e19950ce955c，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 13 個 release-group。**c8eaf04f-d196-47f1-8045-03ee9363e8ee《Horizon, Volume 1》(2019，Empire of Signs 的跨盤選輯，primary-type Album／secondary Compilation) 刻意不釘**——那是別人替他編的合輯，不是這張碟；4a7ec2e8-39f2-41cc-b0df-3917b9fd1b25《アレッホ—風を讃えるために》(1987) 與 82e30c56-7c29-4152-88f9-74a9bba74c1b《Parade》(1990) 亦刻意不釘。",
+    "rgMbid": "b98e38cb-c021-4c36-aee6-aaf333ea8b75",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b98e38cb-c021-4c36-aee6-aaf333ea8b75/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌欄寫的是 Not On Label，目錄號欄寫 none。原盤是一捲卡帶，裝在紙盒裡，盒內附一本圖文書。它是舞踏劇團 Pappa TARAHUMARA 同名演出的配樂，演出掛著兩位導演的名字；該團 1982 年成立，團名裡的タラフマラ取自亞陶寫墨西哥秘境的那本書，1987 至 88 年那一期的作品幾乎廢掉台詞，把演出者像物件一樣擺進裝置般的空間裡。八軌，兩面的第一首都叫〈水〉、只用圓圈裡的數字區分；最長的〈草木のバラッド〉八分三十八秒，最後一首只有四十一秒。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5061251",
+     "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%91%E3%83%BB%E3%82%BF%E3%83%A9%E3%83%95%E3%83%9E%E3%83%A9",
+     "https://api.discogs.com/masters/3833271/versions?per_page=100",
+     "https://api.discogs.com/releases/33812652",
+     "https://api.discogs.com/labels/4096167",
+     "https://musicbrainz.org/release-group/b98e38cb-c021-4c36-aee6-aaf333ea8b75"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "盛岡夕美子",
+   "album": "余韻 (Resonance)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 04965254-91ea-4128-a599-8ef0e4a7f9fc《余韻 (Resonance)》，artist-credit「盛岡夕美子」，first-release-date 1987-03-25，primary-type Album、secondary-types 空，轄下 4 個 release：1987-03-25 JP Official《余韻「レゾナンス」》、1987-05-31 JP Official《余韻 (Resonance)》、2020-04-15 XW Official《Resonance》、2020-04-17 DE Official《Resonance 余韻》。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6c831ad1-4e9c-45de-8aab-1c8e52b44084，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 3 個 release-group，1975–1996 年間只有這一筆，無對照組可混淆。",
+    "rgMbid": "04965254-91ea-4128-a599-8ef0e4a7f9fc",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/04965254-91ea-4128-a599-8ef0e4a7f9fc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴是借來的，謝詞裡留著出借人的名字。credit 的鋼琴欄直接標了牌子 Bösendorfer，作曲、編曲與彈奏都是盛岡夕美子自己，另外只加一支雙簧管與一把小提琴；復刻方寫，這些大半是沒有寫成譜的即興。她 1956 年生，在 John Adams 任教期間畢業於舊金山音樂學院；這張碟 1987 年由 Green & Water 發行，而 MusicBrainz 那份紀錄上，她名下到 2025 年才再添一筆；1994 年她已移居美國，音樂讓位給家庭與加州的生活。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5049415",
+     "https://metronrecords.bandcamp.com/album/resonance",
+     "https://api.discogs.com/masters/1000645/versions?per_page=100",
+     "https://musicbrainz.org/release-group/04965254-91ea-4128-a599-8ef0e4a7f9fc",
+     "https://musicbrainz.org/ws/2/release-group?artist=6c831ad1-4e9c-45de-8aab-1c8e52b44084&limit=100&fmt=json"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "吉川洋一郎",
+   "album": "アクアクの夢",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 44af2c20-0713-4455-98a7-e4ba53e0d671《アクアクの夢》，artist-credit「吉川洋一郎」，first-release-date 1987-09-05，primary-type Album、secondary-types 空，轄下 2 個 release：1987-09-05 JP **Pseudo-Release**《A Dream of Aku-Aku》與 1987-09-25 JP Official《アクアクの夢》。已回問 release-group 端點確認實體類型與標題。**rgMbid 只作身分鍵，不作年份來源（裁定第 95 條）**。藝人 MBID 6db6fcae-836a-4df4-8ee4-052660e31bc6，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 17 個 release-group。同藝人的 0883d4f4-d7b3-4ae7-8442-6ed122f7b39f《ΚΥΠΡΟΣ》(1988，希臘字盤名，字串比對高風險)、6a5ca1e5-c482-4856-a144-3cc97cd371df《The Miracle Planet》(1987，Album/Soundtrack)、c95e4661-6b60-47dc-96bb-c30f728186a1《Music for the Miracle Planet》(1988，Album/Compilation) 皆刻意不釘。",
+    "rgMbid": "44af2c20-0713-4455-98a7-e4ba53e0d671",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/44af2c20-0713-4455-98a7-e4ba53e0d671/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這張碟是 NHK 特集《地球大紀行》的原聲帶。原盤條目的註記只有一句話：日本電視節目的原聲帶，credit 欄是空的。日文維基把 1987 年的《地球大紀行》列為他的代表作，同一份唱片列表上，這部節目前後共有三張原聲帶，這是其中一張。他 1957 年生，長期替一個舞踏團體做音樂，也在ヤプーズ擔任鍵盤與編曲。曲名一路排下來像一份地圖——〈Patagonia〉、K2、塔西利・恩阿傑、撒哈拉；同名曲在 A 面末尾完整出現一次，B 面末尾再以一分五十一秒的短版收尾。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4104515",
+     "https://ja.wikipedia.org/wiki/%E5%90%89%E5%B7%9D%E6%B4%8B%E4%B8%80%E9%83%8E",
+     "https://api.discogs.com/masters/1260363/versions?per_page=100",
+     "https://musicbrainz.org/release-group/44af2c20-0713-4455-98a7-e4ba53e0d671",
+     "https://api.discogs.com/masters/1260363",
+     "https://api.discogs.com/releases/12294681"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "菅谷昌弘",
+   "album": "海の動物園",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 4ecd6eb6-e5ea-4593-8a32-bb7744e83c07《海の動物園》，artist-credit「菅谷昌弘」，first-release-date 1988，primary-type Album、secondary-types 空，轄下 1 個 release（1988 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6de532ad-e7e1-4fc9-9ba2-e19950ce955c，名下 13 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。c8eaf04f-d196-47f1-8045-03ee9363e8ee《Horizon, Volume 1》(2019 選輯) 與 b98e38cb-c021-4c36-aee6-aaf333ea8b75《熱の風景》(1987，本批另一張卡) 皆刻意不釘。",
+    "rgMbid": "4ecd6eb6-e5ea-4593-8a32-bb7744e83c07",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4ecd6eb6-e5ea-4593-8a32-bb7744e83c07/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "替這張碟掛錄音監督的人，就是這家廠牌的創辦人。ALM Records 1974 年由小島幸雄創辦，母公司是コジマ録音，而本碟的錄音監督欄寫的正是他。八首曲名有四首把兩件不相干的東西並在一起，〈帽子とマンドリン〉與〈布の動物園〉是其中兩首；最短的一首一分十一秒排在第二軌，最長的十分十二秒排在倒數第二。作曲、演奏與電腦程式設計都掛菅谷昌弘一個人，製作掛小池博史，統籌欄掛的是 Papa Tarahumara——日文維基把同名的舞台作品列在該團 1988 年的作品裡。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5061161",
+     "https://api.discogs.com/labels/55562",
+     "https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%91%E3%83%BB%E3%82%BF%E3%83%A9%E3%83%95%E3%83%9E%E3%83%A9",
+     "https://api.discogs.com/masters/3581869/versions?per_page=100",
+     "https://musicbrainz.org/release-group/4ecd6eb6-e5ea-4593-8a32-bb7744e83c07",
+     "https://api.discogs.com/masters/3581869",
+     "https://musicbrainz.org/ws/2/release-group?artist=6de532ad-e7e1-4fc9-9ba2-e19950ce955c&limit=100&fmt=json"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/d9/7e/40d97e87-907d-a9d7-9c5e-3dbc9d553dcc/mzaf_13089781777126477794.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1759315614",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "浜瀬元彦",
+   "album": "♯Notes of Forestry",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 49c1ca5c-fafb-4092-9637-c54590189141《♯NOTES OF FORESTRY》，artist-credit「濱瀬元彦」（MB 用異體字「濱」，卡片掛名用池中一致的簡化字「浜瀬元彦」）（異體字，卡片掛名用池中一致的「浜瀬元彦」），first-release-date 1988，primary-type Album、secondary-types 空，轄下 1 個 release（1988 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0c959cc3-b438-4750-8fea-2893f1515d88，名下 6 個 release-group（以 release-group?artist=<MBID>&limit=100 分頁 browse 取得）。2018 Silent River Runs Deep 與 2020 WRWTFWW 的復刻在 MB 上沒有另建 release-group，不必也不能另釘。",
+    "rgMbid": "49c1ca5c-fafb-4092-9637-c54590189141",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/49c1ca5c-fafb-4092-9637-c54590189141/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張碟只有四首，最後一首十七分十四秒。那首叫〈Nude〉，註記欄把全碟總長寫成 39 分 25 秒。同一份註記逐軌寫出作曲時間，第二首作於 1984 年 3 月、1988 年 2 月才修訂。原盤是 CD，Newsic 與 Wacoal Art Center 兩個廠牌實體共用同一組編號，註記還寫著 Co-Produced for Wacoal Art Center。他在碟上掛電貝斯、合成器與序列編程；日文維基把這張碟記成《樹木の音階》，與封面上的英文題互為對照。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/1841019",
+     "https://api.discogs.com/labels/158911",
+     "https://api.discogs.com/masters/1381147/versions?per_page=100",
+     "https://musicbrainz.org/release-group/49c1ca5c-fafb-4092-9637-c54590189141",
+     "https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "矢吹紫帆",
+   "album": "Forest Land",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 5662fe8f-dde4-4222-90da-8dcd3e727f6b《Forest land ◎1⁄fのゆらぎによるサウンド・エステティック》，artist-credit「矢吹紫帆」，first-release-date 1989-09-21，primary-type Album、secondary-types 空，轄下 1 個 release（1989-09-21 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID c72e10ec-3167-47aa-800d-5c7f114233a9，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 17 個 release-group。**da6aba28-e199-4bcf-9797-b1a8964173f0《からだは宇宙のメッセージ》(1987) 刻意不釘——已與池中 `Shiho Yabuki`《The Body Is a Message of the Universe》撞卡**；182c99f8-765a-4549-83d4-25e15631ec8e《Pastoral wind》(1990)、2ae589ac-e53c-4396-82b0-24ed9daab8b4《α波ミュージック 緑のハーモニー》(1990) 亦刻意不釘。",
+    "rgMbid": "5662fe8f-dde4-4222-90da-8dcd3e727f6b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5662fe8f-dde4-4222-90da-8dcd3e727f6b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "研究所說，150 位女性聽過之後血壓降了、脈搏也慢了。提出這件事的是鐘紡化妝品本部美容研究所。作者本人的頁面寫，這件作品是研究所從 1987 年起與她共同委託開發的，要的是美容護理與放鬆時聽的音樂，並在公司的會員制沙龍裡實地測試。唱片由鐘紡自己發行，同一天出了卡帶與 CD 兩種型號；十軌，A 面被兩首同名曲一頭一尾夾住，中間三首的標題是季節與天候，其中一首叫〈冬の海〉。研究所說的「1／f のゆらぎ」是一種既不太規律也不太破碎的擺盪，他們認為這能讓護膚更安定。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11556651",
+     "https://api.discogs.com/releases/15056762",
+     "https://api.discogs.com/masters/1713797/versions?per_page=100",
+     "https://shihoyabuki.bandcamp.com/album/forest-land",
+     "https://musicbrainz.org/release-group/5662fe8f-dde4-4222-90da-8dcd3e727f6b",
+     "https://api.discogs.com/masters/1713797"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/b0/d4/d0b0d432-25ba-df2a-0c9a-f59f5d74940b/mzaf_2516779715004678335.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1835014281",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "越智義朗",
+   "album": "Natural Sonic",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 30a47e75-e433-4fa4-a4f1-b2043c1450a4《NATURAL SONIC》，artist-credit「Yoshiaki Ochi」，first-release-date 1990-04-25，primary-type Album、secondary-types 空，轄下 1 個 release（1990-04-25 JP Official）。已回問 release-group 端點確認實體類型與標題。藝人 MBID e18d32d5-704e-4ce6-9695-b68ac5cf708b，以 release-group?artist=<MBID>&limit=100 分頁 browse，名下 4 個 release-group。**對照組 6b6f9c19-59b1-4c55-a63b-a4b83d2c63b3《NATURAL SONIC 2》(1996) 刻意不釘**（同名續作，盤名只差一個數字，下游最容易換錯的形狀）；b5964f0e-8ff6-456a-b8b3-35245971eb28《AQUA》(1996) 亦刻意不釘。",
+    "rgMbid": "30a47e75-e433-4fa4-a4f1-b2043c1450a4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/30a47e75-e433-4fa4-a4f1-b2043c1450a4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 29,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他常把水、木頭和石頭當樂器用。英文維基是這樣寫越智義朗的。這張碟十軌，最短的兩分二十八秒、最長的六分四十七秒，註記欄把總長寫成 44 分 36 秒；錄音分在兩間錄音室，另外收了一段 1989 年 12 月在高知市的現場。第九軌〈Ear Dreamin'〉後來被選進 2019 年 Light in the Attic 發行的合輯《環境音楽 Kankyō Ongaku》，那張合輯入圍了第 62 屆葛萊美獎的最佳歷史專輯；英文維基逐首解說時寫，這一首用了馬林巴與合成人聲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/629691",
+     "https://en.wikipedia.org/wiki/Yoshiaki_Ochi",
+     "https://en.wikipedia.org/wiki/Kanky%C5%8D_Ongaku",
+     "https://api.discogs.com/masters/2741888/versions?per_page=100",
+     "https://musicbrainz.org/release-group/30a47e75-e433-4fa4-a4f1-b2043c1450a4",
+     "https://api.discogs.com/masters/2741888"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/af/94/b4/af94b457-2576-5f37-77a3-57b2248e08eb/mzaf_881742520947549705.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1231338475",
+    "storefront": "DE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "嘉手苅林昌",
+   "album": "嘉手苅林昌",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "策展層已比對原文、羅馬拼音、譯名與不同 artist-credit，未發現同名或掛名分裂",
+    "selfTitledVerified": true,
+    "rgMbid": "1a68fd15-6cdd-4299-95d7-24969346f7a3"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release/dd52de5b-3299-4945-8ad8-ef3abc8a85d8/44579854102.jpg",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 25,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他出生的越來村，現在在嘉手納基地的鐵絲網裡面。十三歲在村芝居當地謡，十來歲後半到大阪的製材所做工，十九歲被徵召去南洋、負傷回來；1949 年回到沖繩，靠拉馬車過活，一邊繼續唱。這張 1965 年的十二吋盤是マルフク F-8，收十首，〈西武門節〉〈ヒンスー尾類小〉〈多幸山〉〈嘉手久〉都在裡面，條目的條碼欄是空的。他後來被叫作島唄の神様，1999 年 10 月 9 日因肺癌過世。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1a68fd15-6cdd-4299-95d7-24969346f7a3",
+     "https://musicbrainz.org/release/dd52de5b-3299-4945-8ad8-ef3abc8a85d8",
+     "https://www.jvcmusic.co.jp/-/Profile/A000568.html",
+     "https://coverartarchive.org/release/dd52de5b-3299-4945-8ad8-ef3abc8a85d8"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "Apple jp／us／gb 三個 storefront 逐一探測皆查無此碟，無可用的固定試聽片段。身分改以 rgMbid 為證（2026-09-04 §1 放寬）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
