@@ -182,7 +182,7 @@ const RULES = {
   },
 
   world: {
-    reggae: { zh: 'Reggae / 加勒比', re: /^(roots reggae|dub|dancehall|ska|rocksteady|dancehall reggae)$/ },
+    reggae: { zh: 'Reggae / Dub', re: /^(roots reggae|dub|dancehall|ska|rocksteady|dancehall reggae)$/ },
     african: { zh: '非洲', re: /^(african|afrobeat|highlife|ethiopian|nigeria|south africa|desert blues|afro-pop|soukous)$/ },
     latin: { zh: '拉丁 / 古巴', re: /^(latin|salsa|cuban|son cubano|mambo|cumbia|tango)$/ },
     brazil: { zh: '巴西 / Bossa', re: /^(bossa nova|mpb|brazilian|samba|tropicalia|tropicália)$/ },

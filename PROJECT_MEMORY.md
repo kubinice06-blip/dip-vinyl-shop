@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-04（五）｜dip-vinyl-shop｜Reggae / Dub 節點名改回原樣
+
+店主裁示：**`world/reggae` 維持原本的「Reggae / Dub」，不要改成「Reggae / 加勒比」。**
+節點名改回去的同時，把先前為了配合新名字塞進這個桶的四位非牙買加藝人一併撤出
+（Mighty Sparrow、The Esso Trinidad Steel Band、Kassav'、Boukman Eksperyans），
+否則桶名寫 Reggae 卻抽得到 calypso／zouk／海地 mizik rasin，名實不符。
+Reggae / Dub 回到 205 張，涵蓋 96.3% → 96.2%，那 4 張回到未落位。
+**這四張加勒比卡目前無桶**，要收的話得另開節點，不能塞進 reggae。
+
+驗證：125 個節點各抽 200 次，空節點 0、主類型不符 0、路徑不符 0。
+
 ### 2026-09-04（五）｜dip-vinyl-shop｜類型挑片補 12 個節點：台灣流行獨立、UK／亞洲嘻哈、東南亞等
 
 店主裁示兩件：**c-pop 之中所有台灣出產的一律歸 t-pop**、**其他缺少的桶直接補上**。
@@ -17,7 +28,8 @@
   `pop/chanson` 法語香頌(20)、`hiphop/uk-euro` 英國與歐陸(49)、`hiphop/asia-rap` 亞洲嘻哈(49)、
   `electronic/trance` Trance/Goa(54)、`folk/world-folk` 各地傳統民謠(83)、
   `folk/tw-folk` 東亞民謠(30)、`world/asia` 亞洲(41)、`classical/musical` 音樂劇(19)、
-  `blues/desert` 沙漠藍調(14)。另 `world/med`→「地中海與巴爾幹」、`world/reggae`→「Reggae / 加勒比」。
+  `blues/desert` 沙漠藍調(14)。另 `world/med`→「地中海與巴爾幹」。（`world/reggae` 一度改名「Reggae / 加勒比」，
+  當天即依店主裁示改回「Reggae / Dub」，見下一筆。）
   ⚠ **先查標籤再決定要不要人工名單**：trance 光靠標籤就有 54 張（代理只找到 6 位無標籤的 Goa 團）、
   uk grime 34 張、chanson 19 張、desert blues 14 張——**人工名單只該補標籤照不到的部分**。
   印度與東南亞流行則相反，標籤幾乎掛零（`bollywood` 只有 7 張且全是 world 主類型），
