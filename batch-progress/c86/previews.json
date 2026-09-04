@@ -454,7 +454,8 @@
       "fr:2→0",
       "au:2→0"
     ],
-    "status": "unavailable"
+    "status": "unavailable",
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：維持 unavailable，**但理由要改寫**：探測層 `tried` 記 `2→0`——命中的兩筆是 10 軌的《The Eighth Wonder & More》，**維基（引 AllMusic）明說那是本張＋《Now Is the Time》(1979 Trident TRS-504) 的二合一**，Konnex credit 欄第 7–10 軌是完全不同的班底。依第 129 條不採。**不得寫成「這些服務上查不到」。**"
   },
   "Harold Vick|Don't Look Back": {
     "batch": "c86",
@@ -550,7 +551,11 @@
     "trackCount": 10,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ca/fa/13/cafa13e0-e10f-3d69-ebeb-5b1f296735c1/mzaf_8936440492152859465.plus.aac.p.m4a",
     "cleanedOnly": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 6,
+    "expandedReissue": true,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：`ready` 成立，**但是加曲版**：原盤 6 軌、Apple 10 軌，**多出的四軌插在第 4、5、6 與第 9 軌——中段，不在末尾**（第 140 條附二）。**逐軌比對整份曲目表才看得出來。** 命中在 **`gb` 而非 `us`**。多出的軌不得當原盤曲目。"
   },
   "Rashied Ali & Frank Lowe|Duo Exchange": {
     "batch": "c86",
@@ -563,7 +568,19 @@
       "fr:1→0",
       "au:1→0"
     ],
-    "status": "unavailable"
+    "status": "ready",
+    "front": "us",
+    "collectionId": 1494390584,
+    "appleTitle": "Duo Exchange: Complete Sessions - EP",
+    "appleArtist": "Rashied Ali & Frank Lowe",
+    "appleYear": "1973",
+    "explicitness": "notExplicit",
+    "trackCount": 2,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/73/57/427357c8-b39f-631a-0954-75355f298a51/mzaf_3599927917093501319.plus.aac.p.m4a",
+    "cleanedOnly": false,
+    "originalTrackCount": 2,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable，原因是**標題多了「: Complete Sessions」與「- EP」**。1494390584 是同 release-group 的 Official **2020 年兩軌數位版**（非 18 軌套裝）。**但它的曲名與曲長都與原盤不同——試聽可用，軌數、曲名與曲長一律不得取自它。**"
   },
   "Rashied Ali Quartet|New Directions in Modern Music": {
     "batch": "c86",
@@ -611,7 +628,10 @@
     "cleanedOnly": false,
     "yearDrift": 23,
     "reissueTitle": false,
-    "status": "ready"
+    "status": "ready",
+    "originalTrackCount": 6,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：**推翻策展層**：它寫「Apple 四個 storefront 全空」，實有 collectionId 158224221，**6 軌全同**。"
   },
   "Steve Lacy & Michael Smith|Sidelines": {
     "batch": "c86",
@@ -628,7 +648,19 @@
       "fr:2→0",
       "au:1→0"
     ],
-    "status": "unavailable"
+    "status": "ready",
+    "front": "us",
+    "collectionId": 1529011428,
+    "appleTitle": "Sidelines",
+    "appleArtist": "Michael Smith & Steve Lacy",
+    "appleYear": "1977",
+    "explicitness": "notExplicit",
+    "trackCount": 7,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/a0/2a/91a02a70-2ed7-5b60-c4f3-0168f3ffd301/mzaf_5941509402566153801.plus.aac.p.m4a",
+    "cleanedOnly": false,
+    "originalTrackCount": 7,
+    "appleYearIsReissue": true,
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：探測層 `tried` 記 `1→0`／`2→0`（**搜到了卻一筆都沒配上**，第 152 條）——原因是 **Apple 把掛名的兩截倒置**，寫成「Michael Smith & Steve Lacy」。逐軌 7 軌全同。"
   },
   "Von Freeman|Have No Fear": {
     "batch": "c86",
@@ -662,17 +694,17 @@
       "us:12→1"
     ],
     "front": "us",
-    "collectionId": 792998267,
     "appleTitle": "Air Time",
     "appleArtist": "Fiodhna Gardiner",
     "appleYear": "2013",
     "explicitness": "notExplicit",
     "trackCount": 11,
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music6/v4/70/a8/b7/70a8b7fd-71e4-a54c-9c07-8e0e4b7686f6/mzaf_2491314239805075252.plus.aac.p.m4a",
     "cleanedOnly": false,
     "yearDrift": 35,
     "reissueTitle": false,
-    "status": "ready"
+    "status": "unavailable",
+    "rejected": true,
+    "note": "**2026-09-04 研究層 b 覆核、主線用 collectionId 直查複驗**：**探測層配到的是別人的同名碟**：collectionId 792998267《Air Time》的掛名是**愛爾蘭傳統歌手 Fiodhna Gardiner**，11 軌、**無一軌與本張相同**。三條回補路徑全落空；對照組確認 Apple 上有這個團的《Air Lore》(RCA)，但**沒有這張 Nessa 盤**。**整筆作廢、改判不採用。**"
   },
   "Roscoe Mitchell|Nonaah": {
     "batch": "c86",
