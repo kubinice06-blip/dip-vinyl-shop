@@ -1,0 +1,604 @@
+[
+ {
+  "key": "desc2:The John Betsch Society|Earth Blossom",
+  "artist": "The John Betsch Society",
+  "album": "Earth Blossom",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 86349645 的欄位：title《Earth Blossom》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「The John Betsch Society」；genre 欄兩個標籤 jazz（1 票）與 post-bop（1 票）；url-rels 只有一條 discogs 指向 master/76298。掛名實體是 The John Betsch Society（MBID 896943ab-03a5-45ab-9774-76c888c580d3，type **Group**，country 欄 null，disambiguation 欄空）——**掛名實體是團體、不是 John Betsch 本人**，MB 上 John Betsch 另有個人實體，本 release-group 沒有掛在那個實體上。",
+    "src": "https://musicbrainz.org/release-group/86349645-a692-4d35-b9ae-7bb923f543b9"
+   },
+   {
+    "f": "MB 轄下 1974 US 那筆 release（ddb068e7）：status Official、title《Earth Blossom》、artist-credit「The John Betsch Society」、廠牌欄 Strata-East、編號欄 SES-19748、一張 12\" Vinyl、track-count 7、barcode 欄 null、date 欄只有年沒有月與日。逐軌軌號與曲長：1〈Ode to Ethiopia〉4:20、2〈Earth Blossom〉3:20、3〈Open Pastures〉4:35、4〈Song for an Untitled Lady〉3:50、5〈Ra〉5:58、6〈Darling Doria〉6:32、7〈Get Up and Go〉5:08。",
+    "src": "https://musicbrainz.org/release/ddb068e7-c133-42bf-8964-54c029af4a53"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 release：2007-12-06（646d59ef，status Official、廠牌欄 Heavenly Sweetness、編號欄空、Digital Media、track-count 7、barcode 3700551767205）。以 release?release-group=…&inc=recordings 逐版比對，**兩筆的曲名與曲序七軌完全一致、沒有任何一筆多出或抽換曲目**。**唯一的差異在第 6、7 軌的曲長，而且是互相顛倒的**：1974 那筆記〈Darling Doria〉6:32、〈Get Up and Go〉5:08，2007 那筆記〈Darling Doria〉5:09、〈Get Up and Go〉6:34。**兩份都是資料庫欄位，本卡不判定哪一份對，行文不得引這兩軌的曲長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=86349645-a692-4d35-b9ae-7bb923f543b9&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1306385 的欄位：title《Earth Blossom》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、廠牌欄 Strata-East、編號欄 SES-19748、genre 欄 Jazz、style 欄 Post Bop、Modal、Spiritual Jazz。公司欄七條：Made By「Strata-East Records, Inc.」、Phonographic Copyright (p)「Strata-East Records, Inc.」、Copyright (c)「Strata-East Records, Inc.」、Published By「Doorway Music」、Published By「Dujabr Music Co., Inc.」、Published By「Ahab Music Co., Inc.」、Recorded At「Chuck Glaser Productions, Inc.」。",
+    "src": "https://www.discogs.com/release/1306385"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Congas, Percussion「Phil Royster」；Drums, Percussion, Producer「John Betsch」；Electric Bass, Acoustic Bass, Percussion「Ed \"Lump\" Williams」；Engineer [Recording, Remix]「Kyle Lehning」；Flute, Flute [Alto], Alto Saxophone, Tenor Saxophone, Clarinet [Bass]「Billy Puett」；Guitar, Percussion「Jim Bridges」；Illustration [Cover]「Arlene Turner」；Lacquer Cut By「Dave Crawford (2)」；Liner Notes [Poem]「Phil Royster」；Photography By「George Walker III」；Piano, Electric Piano, Percussion「Robert Holmes (2)」。**掛名是團體名，但 credit 欄上鼓手與製作人都寫 John Betsch 一個人。**",
+    "src": "https://www.discogs.com/release/1306385"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分兩面（A1–A4、B1–B3），逐軌帶 Written-By 欄：A1〈Ode To Ethiopia〉4:20（Written-By: Robert Holmes (2)）、A2〈Earth Blossom〉3:20（Robert Holmes (2)）、A3〈Open Pastures〉4:35（John Betsch 與 Robert Holmes (2) 兩人）、A4〈Song For An Untitled Lady〉3:50（Jim Bridges）、B1〈Ra〉5:58（Billy Puett）、B2〈Darling Doria〉6:32（John Betsch）、B3〈Get Up And Go〉5:08（Billy Puett）。**七軌的 Written-By 欄分屬四個人，掛名的 John Betsch 只寫了其中兩軌。**",
+    "src": "https://www.discogs.com/release/1306385"
+   },
+   {
+    "f": "同一條目的註記欄逐行：「Recorded January 11, 1974 / at Glaser Productions, Inc, Nashville, Tenn.」、「\"As Far As Your Soul Will Allow\" (while listening to Earth Blossom) by Philip M. Royster 2/15/74 Comissioned by The John Betsch Society」（原文拼字如此）、「(P)(C)1974 Strata-East Records, Inc.」、「Printed in U.S.A.」。identifiers 欄三條：Rights Society「BMI」、Matrix / Runout「SES-19748-A DC」（Side A runout）、Matrix / Runout「SES-19748-B DC」（Side B runout）。",
+    "src": "https://www.discogs.com/release/1306385"
+   },
+   {
+    "f": "Discogs master 76298 的 versions 共 8 筆，**零筆標 Unofficial**。逐筆的年／國／廠牌／編號／格式：1974 US Strata-East SES-19748 兩筆（一筆版本欄帶 Promo、一筆一般盤，皆 LP, Album, Stereo）；2007 France Heavenly Sweetness 三筆——CDr（版本欄 Album, Promo, Reissue，編號欄寫「No」）、Vinyl（HS 005LP 與 SES-19748 兩個編號並列）、CD（HS005CD）；2015 France HS005VL（LP, Album, Reissue, Repress）；2023 France HS005VL（版本欄 Deluxe Edition, Reissue, Stereo）；2024 France HS005VL（版本欄 Limited Edition, Reissue, Stereo）。**策展層說的「HS 005 是 Heavenly Sweetness 編號第五號」在本卡查到的欄位裡沒有依據，只有編號字串本身，不得寫成出版序數（第 125 條）。**",
+    "src": "https://www.discogs.com/master/76298"
+   },
+   {
+    "f": "Discogs 2007 年那筆法國黑膠 1172148 的欄位：year 與 released 欄皆 2007、格式欄 Vinyl ×1［LP, Album, Reissue］、廠牌欄兩條（Heavenly Sweetness HS 005LP 與 Strata-East SES-19748）、style 欄 Soul-Jazz。公司欄五條：Phonographic Copyright (p)「Heavenly Sweetness」、Copyright (c)「Heavenly Sweetness」、**Licensed From「John Betsch」**、Recorded At「Glaser Productions」、Pressed By「MPO」。註記欄三行：「Original LP released 1974 on Strata-East Records, N.Y.」、「Recorded January 11, 1974 at Glaser Productions, Inc. Nashville Tenn.」、「Under Licence from John Betsch.」。曲目表 7 個曲位、曲名曲序與原盤逐軌相同。",
+    "src": "https://www.discogs.com/release/1172148"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 937800518，us 店面）：collectionName《Earth Blossom》、artistName「The John Betsch Society」、trackCount 7、releaseDate 1975-05-01、copyright 欄「℗ 2007 Heavenly Sweetness」。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算、非引用 Apple 顯示值）：1〈Ode to Ethiopia〉268053ms＝4:28、2〈Earth Blossom〉203880ms＝3:23、3〈Open Pastures〉268120ms＝4:28、4〈Song for an Untitled Lady〉229267ms＝3:49、5〈Ra〉356867ms＝5:56、6〈Darling Doria〉309320ms＝5:09、7〈Get Up and Go〉393733ms＝6:33。**七軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 也沒有 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 這類尾綴（第 153 條附錄）。探測層標的 `ready` 成立。** Apple 上架的是 2007 年那次復刻（copyright 欄寫 Heavenly Sweetness），**曲長對得上的是 2007 那筆、不是 1974 原盤**。",
+    "src": "https://itunes.apple.com/lookup?id=937800518&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈John Betsch〉條目帶行內引註的段落說：Betsch 生於佛羅里達州傑克遜維爾；九歲開始在學校管弦樂團打鼓（引註 Claudine François 網站的 John Betsch biography）；就讀 Fisk University 期間、十八歲時就開始與鋼琴手 Bob Holmes、Ernest Vantrease 及小號手 Louis Smith 職業演出（同一引註）。**該條目「1975 年以領班身分發表 Earth Blossom」那一句沒有行內引註，依第 40／80 條不採用。**",
+    "src": "https://en.wikipedia.org/wiki/John_Betsch"
+   }
+  ],
+  "hookCandidates": [
+   "一張紐約廠牌的碟，Discogs 條目的公司欄與註記欄卻寫著錄音地在納許維爾——Recorded At 欄是 Chuck Glaser Productions, Inc.",
+   "2007 年那次法國復刻的授權欄寫的不是廠牌，是 Licensed From: John Betsch——鼓手本人"
+  ],
+  "sound": "七軌兩面（Discogs 1306385 的 A1–A4、B1–B3；MB 1974 release 拉平成 1–7，兩庫曲名曲序一致）。原盤最短的一軌是 A2〈Earth Blossom〉3:20、最長的一軌是 B2〈Darling Doria〉6:32（依 Discogs 原盤曲目表；第 6、7 軌的曲長在 MB 兩筆之間互相顛倒，行文不引這兩軌的長度）。編制照 Discogs credit 欄是鼓與打擊、電貝斯與原音貝斯、吉他、鋼琴與電鋼琴，管樂一人身兼長笛、中音長笛、中音與次中音薩克斯風、低音單簧管，另有一人專掌康加與打擊。（本欄由 MB 1974 release 的曲長表與 Discogs 1306385 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Ode to Ethiopia",
+   "Ra",
+   "Darling Doria"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1306385 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「(P)(C)1974 Strata-East Records, Inc.」。**Apple 的 releaseDate 1975-05-01 不得當原盤發行日**（第 140 條附二）——那筆上架的是 2007 年的 Heavenly Sweetness 復刻，copyright 欄就寫著 ℗ 2007，探測層記下的 appleYear 1975 同樣不採。錄音日 1974 年 1 月 11 日只出現在 Discogs 的註記欄，**是錄音日、不是發行日，兩者不得互換**。"
+  },
+  "notes": "**【b 組互斥分派總表，全組共用；本卡是總表所在，其餘二十二張引用本張】**（第 58／130／131／138／146 條）\n\n**b 組 23 張分七家廠牌：Strata-East 9（卡 1–8、18）、India Navigation 3（卡 9–11）、Survival Records 4（卡 12–15）、Improvising Artists Inc. 1（卡 16）、Nessa Records 4（卡 17、19–21）、Muntu Records 1（卡 22）、Adelphi Records 1（卡 23）。同廠牌的多張卡不能都寫同一段廠牌史。**\n\n**廠牌與跨張敘事分派（分到的那張才能寫，其餘只能寫自己條目上的廠牌欄與編號欄）**：\n- **Strata-East（紐約）廠牌史** → **卡 3〈Genesis〉**（維基〈Strata-East Records〉條目那句帶引註的創辦敘述；Stanley Cowell 本人就在卡 3 的 credit 欄上）。卡 1、2、4–8、18 一律禁用。\n- Strata-East 的公司欄形狀（Made By／(P)／(C) 三條都寫 Strata-East Records, Inc.、紐約第五大道 156 號地址）→ **卡 8**。\n- Heavenly Sweetness 2007–2024 的法國復刻線 → **本卡**。\n- Ikef 與 Manufactured Recordings 的美國復刻線 → **卡 2**。\n- Inner City Records 與日本 Nadja／Trio／Solid 的再發線 → **卡 3**。\n- SHOUT! Productions 的日本迷你 LP 復刻線 → **卡 8**（卡 4 只能寫自己那筆 SHOUT-273 的欄位）。\n- Sugar Hill Records 1980 年那筆再發的身分疑點 → **卡 5**。\n- Pure Pleasure／2018 英國重製與 2025 年 Mack Avenue 授權這條線 → **卡 6**。\n- Arc Records 2020 復刻與 Maxine Gordon 的再發製作人身分 → **卡 7**。\n- Everland Jazz／Superfly／2021 英國 Strata-East 的歐洲復刻線 → **卡 18**。\n- Minot Sound（White Plains）錄音室線 → **卡 4**（卡 3、8 只能寫自己公司欄上那一行）。\n- Blue Rock Studio 與 Generation Sound Studios 的分工線 → **卡 6**（卡 7 只能寫自己公司欄上那兩行）。\n- 刻片師 Dave Crawford (2) 跨張出現這條線 → **本卡**（其餘各卡只能寫自己 credit 欄上的名字）。\n- Strata-East 班底互相支援（Stanley Cowell、Charles Sullivan、Sonny Fortune、Billy Higgins 在彼此的碟上換位置）→ **卡 8**。其餘各卡只能逐條寫自己條目 credit 欄上的名字。\n- Harold Vick 同時是卡 6 的掛名、又是卡 7 的樂手與作曲者這條交叉線 → **卡 7**。卡 6 禁用。\n- **India Navigation 廠牌史（Bob Cummins）** → **卡 9**。卡 10、11 禁用。\n- Analogue Productions 的發燒重刻線與 India Navigation Studio 的器材紀錄 → **卡 11**。\n- The Kitchen（紐約）現場錄音線 → **卡 10**。\n- **Survival Records（Rashied Ali 自營）廠牌史與 Rashied Ali 生平** → **卡 12**。卡 13、14、15 禁用。\n- Knit Classics 1999–2000 的「Survival Series」整批復刻線 → **卡 13**。\n- Studio 77（77 Greene Street）錄音室線 → **卡 14**（卡 15 只能寫自己公司欄那一行）。\n- **紐約 loft jazz 場景敘事**（維基〈Loft jazz〉條目帶引註的定義段落）→ **卡 15**。其餘各卡禁用。\n- **Improvising Artists Inc. 廠牌史（Paul Bley 與 Carol Goss）** → **卡 16**。\n- **Nessa Records 廠牌史（Chuck Nessa）** → **卡 17**。卡 19、20、21 禁用。\n- **AACM 組織史** → **卡 20**。其餘各卡禁用（卡 19 的 Threadgill 與 McCall 只能寫自己條目 credit 欄上的名字）。\n- Air 團史（Threadgill／Hopkins／McCall）→ **卡 19**。\n- Wadada Leo Smith 的改名與身分線、Van Gelder Studio → **卡 21**。\n- **Muntu Records 與 NoBusiness 2009 年考古盒裝** → **卡 22**。\n- **Adelphi Records 廠牌史（Gene Rosenthal）** → **卡 23**。Blank Tape Studios（Bob Blank）跨張錄音室線 → **卡 23**（卡 22 只能寫自己公司欄那一行）。\n\n**分派是許可不是義務（第 138 條）：分到的線若 facts 撐不住就讓它閒置。**\n\n**全組共用禁令**：\n(1) **不得寫壓量、份數、稀有度、二手價**（第 109 條）。本組多筆版本欄有 Limited Edition／Numbered／Promo／Test Pressing 字樣，**只能當版本欄的字樣引用**；卡 18 與卡 19 的 Discogs 註記欄有明確的份數數字，**facts 已刻意不收，寫作層也不得補**。\n(2) **考古再發只有標 Official 才算背書，判定單位是「這一次再發」不是「這家廠牌」**（第 43／57／65／78 條）。本組帶 Unofficial 字樣的三筆：**卡 12 的 2016 Survival Records (10) SR 101（Unofficial Release）、卡 13 的 2013 Klimt MJJ357LP 與 2021 Klimt MJJ357C（皆 Unofficial Release）——三筆全部不得當背書、版本與試聽來源。**\n(3) **不得由曲名推論翻奏、改編、出處或曲子在講什麼**（第 110 條）。**只有 Discogs 的 Written-By／Composed By 欄有寫的才能寫作者。**\n(4) **全批統計量（幾張、幾家廠牌、幾年跨度）不入文**（第 145 條）。\n(5) 維基只能寫成「維基〈某某〉條目說」（第 128 條），且**沒有行內引註的段落不得採用**（第 40／80 條）。**本組已棄用五處**：〈John Betsch〉條目「1975 年發表 Earth Blossom」那句、〈Nessa Records〉與〈India Navigation〉的目錄清單、〈Nonaah〉條目那段「敵意觀眾」敘述、〈Cooper-Moore〉條目的本名句。\n(6) 資料庫欄位的「沒有」只能寫成「那份紀錄上沒有」（第 136 條）。本組多筆 release 的 barcode 欄、曲長欄是空的，**不得寫成「唱片上沒印」**。\n(7) **計數句一律回 facts 逐項數過再寫**（第 154 條）；`sound` 欄只寫端點（最短哪一首、最長哪一首），**不寫「N 首裡有 M 首」**。\n(8) **Apple 的 releaseDate 不得當原盤發行日**（第 140 條附二）；引 Apple 曲長一律自己由毫秒無條件捨去換算過再寫（本組 9 張 ready 的換算全部逐軌覆核過，無「x:60」）。\n(9) **a 組獨占線本組一律不寫**：Black Jazz／Nimbus West／Tribe／Strata（底特律）／Black Fire 五家廠牌史、Ovation 母公司、Real Gone／P-Vine／Snow Dog／Soul Jazz／Outernational／180 Proof／Strut／Now-Again 的側寫、Horace Tapscott 與 UGMAA、底特律 Tribe 圈子。**特別注意 Strata（底特律）與 Strata-East（紐約）是兩家不同的廠牌，本組行文不得混寫成一家。** 註：卡 9 的 P-Vine 2020 年日本 CD（PCD-24979）**只能當版本欄的一筆引用，不得展開成 P-Vine 側寫**。\n\n**【本卡的分派與禁令】**\n**取得**：Heavenly Sweetness 2007–2024 的法國復刻線；刻片師 Dave Crawford (2) 這條跨張線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 7**——MB 那筆 1974 US release 的 track-count 是 7，Discogs 1306385 的曲目表也是 7 個曲位（A1–A4、B1–B3），Apple 那筆也是 7 軌且曲名逐軌相同，三邊一致。**面別分法只能引 Discogs 的 A／B 編號**，MB 與 Apple 是拉平的 1–7，兩種寫法不可混用。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-19748」與公司欄那三條 Strata-East Records, Inc.。\n(3) **第 6、7 軌的曲長不得引用**——MB 1974 那筆與 MB 2007 那筆在這兩軌上互相顛倒（facts 第 3 條），Apple 站 2007 那邊。**兩份都是資料庫欄位，本卡不判定誰對。**\n(4) **掛名是團體、credit 欄是個人**：MB 的掛名實體 type 是 Group（「The John Betsch Society」），Discogs 的 credit 欄則把鼓與製作人寫成 John Betsch 一個人。**行文不得寫「John Betsch 的個人專輯」或「他名下第一張」——沒有來源，而且與 MB 的實體型別打架**（第 151 條的團體名 vs 領班名形狀）。\n(5) **不得寫「HS 005 是 Heavenly Sweetness 的第五號出品」**——那是由編號字串歸納的出版序數，第 125 條明令禁止。\n(6) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 10 條）。**探測層標的 `ready` 成立。** **但要註明**：Apple 那筆上架的是 2007 年復刻，**曲長不得引作原盤曲長**。\n(7) 曲子的作者只能照 Discogs 的 Written-By 欄逐條寫（facts 第 6 條），**不得由曲名〈Ode to Ethiopia〉〈Ra〉推論任何題旨、出處或宗教指涉**（第 110 條）。"
+ },
+ {
+  "key": "desc2:Brother Ah|Sound Awareness",
+  "artist": "Brother Ah",
+  "album": "Sound Awareness",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6b57c64e 的欄位：title《Sound Awareness》、first-release-date 1972、primary-type Album、secondary-types 空陣列、artist-credit「Brother Ah」；genre 欄四個標籤 ambient、avant-garde jazz、experimental、jazz（各 1 票）；url-rels 只有一條 discogs 指向 master/202536。掛名實體是 Brother Ah（MBID 6f62bfd4-0970-4382-8de5-fac3148b9d9e，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/6b57c64e-3daa-3630-a886-b8d7177005f2"
+   },
+   {
+    "f": "MB 轄下 1972 US 那筆 release（7cce61c4）：status Official、title《Sound Awareness》、**artist-credit 寫的是「Brother Ahh」（兩個 h）——與 release-group 層的「Brother Ah」不同字串**、廠牌欄 Strata-East、編號欄 SES-19731、一張 12\" Vinyl、track-count **2**、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Beyond Yourself (The Midnight Confession)〉22:13、2〈Love Piece〉16:25。",
+    "src": "https://musicbrainz.org/release/7cce61c4-7b57-4313-b166-8aab57f608e6"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 release：2002 US（9a751085，status Official、artist-credit「Brother Ah」、廠牌欄 Ikef Records、編號欄 IKEF03、CD、track-count 2、barcode 646315950328）。以 release?release-group=…&inc=recordings 逐版比對，**兩筆的曲名、曲序與曲長（22:13、16:25）完全一致，沒有多出、抽換或二合一。原盤就是一面一軌的兩軌碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6b57c64e-3daa-3630-a886-b8d7177005f2&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 488839 的欄位：title《Sound Awareness》、**year 與 released 欄皆 1973**、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-19731、genre 欄 Jazz、style 欄 Avant-garde Jazz、Ambient、Experimental、Spiritual Jazz。公司欄五條：Record Company「Strata-East Records, Inc.」、Made By「Strata-East Records, Inc.」、Phonographic Copyright (p)「Strata-East Records, Inc.」、Copyright (c)「Strata-East Records, Inc.」、Published By「Umoja Music」與「Milma Publishing Company」。identifiers 欄只有一條 Rights Society「B.M.I.」。",
+    "src": "https://www.discogs.com/release/488839"
+   },
+   {
+    "f": "同一條目的 credit 欄只有三條：Graphic Design, Layout「Asili」、**Liner Notes「Max Roach」**、Producer, Arranged By「Brother Ahh」。**Discogs 這一筆的掛名與 credit 欄都寫「Brother Ahh」（兩個 h），MB 的 release-group 層寫「Brother Ah」（一個 h），Discogs 2016 年那筆的 Written-By 欄則寫本名「Robert Northern」——同一個人在三處是三種字串。**",
+    "src": "https://www.discogs.com/release/488839"
+   },
+   {
+    "f": "同一條目的曲目表共 2 個曲位、一面一軌，逐軌帶完整 credit：A〈Beyond Yourself (The Midnight Confession)〉22:04——Composed By「Robert Northern」、Featuring「The Sound Awareness Ensemble」、French Horn／Flute／Sounds [Natural Sounds]「Brother Ahh」、Cello「Pat Dixon」、Percussion「Barbara Burton」、Soprano Vocals「Barbara Grant」；B〈Love Piece〉16:20——Music By, Guest, Rap「Max Roach」、Chorus「The 90 Voice Sound Awareness Ensemble」、French Horn／Flute [African 3 Hole Flute]／Conductor [Chorus]「Brother Ahh」、Percussion「M'Boom Re:percussion Ensemble」、Text By「Patricia Curtis」、Tuba「Howard Johnson (3)」。",
+    "src": "https://www.discogs.com/release/488839"
+   },
+   {
+    "f": "同一條目的註記欄只有一段，把 A 面那一軌的內部段落逐項列出：「Beyond Yourself is a sound journey in 7 parts: Introduction, Rap, Midnight Confession, Fear, Demons, Morning Song, Dawn」。**這七項是同一軌之內的段落名，不是七個曲位——曲目表上 A 面只有一個曲位。**",
+    "src": "https://www.discogs.com/release/488839"
+   },
+   {
+    "f": "Discogs master 202536 的 versions 共 7 筆，**零筆標 Unofficial**。逐筆的年／國／廠牌／編號／格式：**1973 US Strata-East SES-19731 三筆**（一筆版本欄帶 Promo、Stereo，一筆 LP, Album，一筆 LP, Album, Stereo）；2002 US Ikef IKEF03 兩筆（CD，版本欄 Album, Reissue, Remastered, Stereo；與 Vinyl，版本欄 LP, Reissue）；2016 US Manufactured Recordings MFG-037 兩筆（Vinyl，版本欄 LP, Album, Reissue；與 CD，版本欄 Album, Reissue）。**Discogs 這七筆的原盤年份全部寫 1973，MB 兩層都寫 1972——年份分歧見 yearVerified。**",
+    "src": "https://www.discogs.com/master/202536"
+   },
+   {
+    "f": "Discogs 2016 年那筆美國黑膠 8716535 的欄位：released 欄 2016-07-22、廠牌欄 Manufactured Recordings MFG-037、格式欄 Vinyl ×1［LP, Album, Reissue］、公司欄只有一條 Copyright (c)「Manufactured Recordings」、credit 欄只有一條 Producer「Brother Ahh」。曲目表 2 個曲位、曲名與曲長（22:04、16:20）與原盤逐軌相同，**Written-By 欄在這一筆寫的是本名「Robert Northern」**。註記欄除了同一段七段落說明外另加一行：「Includes full-page black and white insert for liner notes.」。",
+    "src": "https://www.discogs.com/release/8716535"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 6789830436，us 店面）：collectionName《Sound Awareness》、artistName「Brother Ah」、trackCount 2、releaseDate 2016-07-22、copyright 欄「℗ 2016 Manufactured Recordings」。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Beyond Yourself (The Midnight Confession)〉1329750ms＝22:09、2〈Love Piece〉985593ms＝16:25。**兩軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 也沒有 Karaoke／Instrumental／Tribute 這類尾綴（第 153 條附錄）。探測層標的 `ready` 成立**——探測層記下的 `yearDrift 44` 只是因為 Apple 上架的是 2016 年那次復刻，不是配到別張碟。",
+    "src": "https://itunes.apple.com/lookup?id=6789830436&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Bob Northern〉條目帶行內引註的段落說：Robert Northern（1934 年 5 月 21 日–2020 年 5 月 31 日）以「Brother Ah」之名為人所知，是美國爵士法國號手；生於北卡羅萊納州 Kinston、在布朗克斯長大（引註 Consequence of Sound 2020 年 6 月 8 日的訃聞）；1950 年代就讀 Manhattan School of Music 與維也納音樂學院；作為錄音室樂手曾與 Donald Byrd、John Coltrane、Gil Evans、Sun Ra、McCoy Tyner、Roland Kirk 與 Jazz Composers Orchestra 合作（Coltrane、Sun Ra、McCoy Tyner 三個名字掛的是同一條訃聞引註）；他 1963 至 1971 年住在紐約，其後對非西方音樂興趣漸增，1972 至 1977 連續七個夏天赴迦納、肯亞與坦尚尼亞走訪與研習（引註 mapleshade 頁）。",
+    "src": "https://en.wikipedia.org/wiki/Bob_Northern"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有兩個曲位，一面一軌；Discogs 的註記欄把 A 面那二十二分鐘拆成七個段落名，從 Introduction 到 Dawn",
+   "B 面的 credit 欄上，Max Roach 掛的是 Music By、Guest 與 Rap 三個角色，A 面的 liner notes 也是他寫的"
+  ],
+  "sound": "兩個曲位、一面一軌（Discogs 488839 的 A／B；MB 兩筆 release 拉平成 1–2，曲名曲序一致）。原盤較短的一軌是 B〈Love Piece〉16:20、較長的是 A〈Beyond Yourself (The Midnight Confession)〉22:04（依 Discogs 原盤曲目表）。編制照 Discogs 逐軌 credit 欄：A 面是法國號、長笛與自然音響，加大提琴、打擊與女高音人聲；B 面同樣以法國號與非洲三孔笛為主，另有低音號、打擊合奏團與一個掛「90 Voice」的合唱團。（本欄由 MB 兩筆 release 的曲長表與 Discogs 488839 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Beyond Yourself (The Midnight Confession)",
+   "Love Piece"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1972,
+   "note": "**年份有爭議，兩個值都要標成爭議、行文不得正面斷言發行年（第 127 條）。** MB 兩層都寫 1972：release-group first-release-date 1972、Strata-East 原盤 release 的 date 欄 1972（只有年）。**Discogs 全部七個版本的原盤那三筆都寫 1973**（release 488839 的 year 與 released 欄皆 1973）。卡單值採 MB 的 1972。**兩庫給不同數字，行文一律不給發行年的斷言句，也不得寫「首張」「第幾張」這類靠年份排序的說法。** Apple 的 releaseDate 2016-07-22 是 2016 年復刻的上架日，不得當原盤發行日。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Ikef（2002）與 Manufactured Recordings（2016）的美國復刻線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 2**——MB 那筆 1972 US release 的 track-count 是 2，Discogs 488839 的曲目表也是 2 個曲位（A、B），Apple 那筆同樣 2 軌且曲名逐軌相同，三邊一致。**Discogs 註記欄那「7 parts」是 A 面那一軌之內的段落名，不是曲位——行文不得寫成「七首」或「七個曲目」，也不得把段落名當成曲名寫**（第 136 條：條目的欄位只能寫成條目的欄位）。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-19731」與公司欄那四條 Strata-East Records, Inc.。\n(3) **掛名拼法**：MB release-group 層寫「Brother Ah」、MB 1972 release 層與 Discogs 原盤寫「Brother Ahh」、Discogs 2016 那筆的 Written-By 欄寫本名「Robert Northern」。**行文採卡單值「Brother Ah」，提到別的寫法時必須說明那是哪一個條目哪一個欄位上的字串，不得寫成「他改過名」——沒有任何來源這樣說。** 維基〈Bob Northern〉條目只說他「以 Brother Ah 之名為人所知」（facts 第 11 條）。\n(4) **年份不得斷言**（見 yearVerified，第 127 條）。連帶：**不得寫「首張」「他名下第一張」**——策展層的 `curatorWhy` 這樣寫，但那是線索不是事實（第 142 條），本卡 facts 沒有任何一條能排序他名下的碟。\n(5) **Max Roach 的參與只能照 Discogs 欄位寫**：liner notes 一條、B 面的 Music By／Guest／Rap 三個角色一條。**不得由此推論兩人的關係、也不得把 M'Boom Re:percussion Ensemble 展開成團史**（M'Boom 是 Strata-East 目錄上另一張碟的掛名，本批未收）。\n(6) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 10 條）。**探測層標的 `ready` 成立**；`yearDrift 44` 是復刻上架年造成的，不是配錯碟。**Apple 那筆上架的是 2016 年復刻，曲長不得引作原盤曲長**（A 面 Apple 22:09 vs Discogs 原盤 22:04 vs MB 22:13，三個值都不同）。\n(7) **不得由曲名〈Love Piece〉〈Beyond Yourself〉推論題旨或年代脈絡**（第 110 條）；作者只能照 Composed By／Music By 欄寫。"
+ },
+ {
+  "key": "desc2:Charles Sullivan|Genesis",
+  "artist": "Charles Sullivan",
+  "album": "Genesis",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 283fd572 的欄位：title《Genesis》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Charles Sullivan」；genre 欄三個標籤 hard bop、jazz、post-bop（各 1 票）；url-rels 三條——allmusic 指向 mw0001879323、discogs 指向 master/185604、wikidata 指向 Q19892918。掛名實體是 Charles Sullivan（MBID 5e653855-dafd-4f9e-9029-01283348492c，type Person，country US，**disambiguation 欄「trumpet player」**——同名者不只一位，這個欄位就是用來分辨的）。",
+    "src": "https://musicbrainz.org/release-group/283fd572-01c1-4f36-86d3-80c681024073"
+   },
+   {
+    "f": "MB 轄下 1974 US 那筆 release（d23de65b）：status Official、title《Genesis》、artist-credit「Charles Sullivan」、廠牌欄 Strata-East、編號欄 SES-7413、一張 12\" Vinyl、track-count 5、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Evening Song〉8:22、2〈Good-Bye Sweet John (In Memory of John Foster: Pianist)〉5:50、3〈Field Holler〉3:51、4〈Now I'll Sleep〉4:32、5〈Genesis〉17:27。",
+    "src": "https://musicbrainz.org/release/d23de65b-9c4a-4058-a1ba-c9722a255591"
+   },
+   {
+    "f": "同一 release-group 轄下另兩筆 release，兩筆都是 status Official、都是 5 軌、曲名與曲序與原盤逐軌相同、**五軌曲長逐項相同（8:22、5:50、3:51、4:32、17:27）**：1976 US（1fb283b9，廠牌欄 Inner City Records、編號欄 IC 1012、12\" Vinyl、barcode 欄空字串）；2009 US（ebe472f4，廠牌欄 Inner City Records、編號欄 IC 1012、CD、barcode 077712710121）。以 release?release-group=…&inc=recordings 逐版比對，**三筆 release 沒有任何一筆多出或抽換曲目。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=283fd572-01c1-4f36-86d3-80c681024073&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1215524 的欄位：title《Genesis》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、廠牌欄 Strata-East、編號欄 SES-7413、genre 欄 Jazz 與 Funk / Soul、style 欄 Jazz-Funk、Modal、Post Bop。公司欄六條：Recorded At「Sound Ideas Studios」、Recorded At「Minot Sound」、Made By「Strata-East Records, Inc.」、Phonographic Copyright (p)「Strata-East Records, Inc.」、Copyright (c)「Strata-East Records, Inc.」、Published By「Charles Sullivan Music」。identifiers 欄三條：Matrix / Runout「SES-7413-A2 DC」、「SES-7413-B DC」、Rights Society「BMI」。",
+    "src": "https://www.discogs.com/release/1215524"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條（括號內是條目自己標的適用軌）：Trumpet, Flugelhorn, Composed By, Arranged By, Producer「Charles Sullivan」；Alto Saxophone「Sonny Fortune」；Bass「Alex Blake (2)」與「Anthony Jackson」(A3)；Congas, Percussion「Lawrence Killian」；Drums「Billy Hart」與「Alphonse Mouzon」(A3)；Piano「Stanley Cowell」與「Onaje Allan Gumbs」(A2)；Electric Piano [Fender Rhodes]「Sharon Freeman」(A3)；Vocals「Dee Dee Bridgewater」；Engineer「George Klabin」(A1, A2, B1, B2) 與「John Battiloro」(A3)；Lacquer Cut By「Dave Crawford (2)」；Layout, Design「Carole Byard」；Photography By「Diana Sullivan」。**A3 那一軌的貝斯、鼓與鍵盤是另一組人，條目在 credit 欄上就分開標了。**",
+    "src": "https://www.discogs.com/release/1215524"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面：A1〈Evening Song〉8:22、A2〈Good-Bye Sweet John (In Memory Of John Foster: Pianist)〉5:50、A3〈Field Holler〉3:51、B1〈Now I'll Sleep〉4:32、B2〈Genesis〉17:27。**曲目表本身沒有逐軌的 Written-By 欄**——作者資訊只出現在 credit 欄的「Composed By, Arranged By: Charles Sullivan」與公司欄的 Published By「Charles Sullivan Music」兩處（第 136 條：條目上沒有逐軌作者欄，不等於唱片上沒印）。",
+    "src": "https://www.discogs.com/release/1215524"
+   },
+   {
+    "f": "同一條目的註記欄逐行：「Recorded at Sound Ideas, N.Y.C. 6/20 6/21 1974.」、「\"Field Holler\" recorded at Minot Sound, White Plains, N.Y. 7/24/74.」、「Mr. Gumbs appears courtesy of Bilham Cobly Prod.」、「Mr. Mouzon appears courtesy of Blue Note Records.」、「℗ 1974 (center labels)」、「℗© 1974 Strata East Records, Inc. (sleeve)」、以及封底印的地址「Strata-East Records Inc. 156 Fifth Ave., N.Y. N.Y. 10010」。",
+    "src": "https://www.discogs.com/release/1215524"
+   },
+   {
+    "f": "Discogs master 185604 的 versions 共 8 筆，**零筆標 Unofficial**。逐筆的年／國／廠牌／編號／格式：1974 US Strata-East SES-7413（LP, Album, Stereo）；1975 Japan Nadja PA-7125（LP, Album, Stereo）；1976 US Inner City Records IC 1012 兩筆（皆 LP, Album, Reissue）；2009 US Inner City IC 1012（CD, Album, Reissue）；2014 Japan Trio Records POCS-9304（CD，版本欄 Album, Limited Edition, Reissue, Remastered, Stereo）；2022 Japan Solid Records (6) UVJZ-30111／CDSOL-45666（CD，版本欄 Album, Limited Edition, Reissue, Remastered）；2023 Japan Solid Records (6) CDSOL-45666（同上）。",
+    "src": "https://www.discogs.com/master/185604"
+   },
+   {
+    "f": "Discogs 1976 年那筆美國再發 1791846 的欄位：year 與 released 欄皆 1976、廠牌欄 Inner City Records IC 1012、格式欄 Vinyl ×1［LP, Album, Reissue］、公司欄四條（Recorded At「Sound Ideas Studios」與「Minot Sound」、Phonographic Copyright (p)「Inner City Records」、Copyright (c)「Inner City Records」）、credit 欄多了一條 Liner Notes「Elliot Meadow」。**identifiers 欄的兩條 Matrix / Runout 顯示刻紋上原本的「SES-7413-A2」「SES-7413-B」被劃掉、改刻成「IC-1012-A」「IC-1012-B」**——同一批母版換編號再發的痕跡就寫在條目欄位上。曲目表 5 個曲位、曲名曲序與原盤相同。",
+    "src": "https://www.discogs.com/release/1791846"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 341267767，us 店面）：collectionName《Genesis》、artistName「Charles Sullivan」、trackCount 5、releaseDate 1974-01-01、copyright 欄「℗ 2009 Inner City Records」。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Evening Song〉506165ms＝8:26、2〈Good-Bye Sweet John (In Memory of John Foster, Pianist)〉355483ms＝5:55、3〈Field Holler〉223452ms＝3:43、4〈Now I'll Sleep〉273094ms＝4:33、5〈Genesis〉1049579ms＝17:29。**五軌曲名與曲序與 MB／Discogs 原盤逐軌相同（第 2 軌的副標點號 Apple 用逗號、兩庫用冒號），無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。探測層標的 `ready` 成立**——**Apple 上架的是 2009 年 Inner City 那次再發**（copyright 欄寫 ℗ 2009），不是同名的其他碟。",
+    "src": "https://itunes.apple.com/lookup?id=341267767&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Strata-East Records〉條目帶行內引註的第一段說：Strata-East Records 是專營爵士的美國唱片公司與廠牌，1971 年由 Charles Tolliver 與 Stanley Cowell 創辦（引註 JazzTimes 2021 年 5 月 24 日 Michael J. West 的〈Strata-East Records: An Oral History〉），以他們自己的錄音《Music Inc.》開張。**同段其後「1970 年代發行超過五十張專輯」與「許多作品如今被視為 1970 年代 post-bop、spiritual jazz 與 afro-jazz 的典範」兩句沒有行內引註，依第 40／80 條不採用；條目的目錄表格同樣沒有引註，也不採用。**（另記：該條目的目錄表格把本張列在 SES 7413。）",
+    "src": "https://en.wikipedia.org/wiki/Strata-East_Records"
+   }
+  ],
+  "hookCandidates": [
+   "1976 年那次換廠牌再發，刻紋上的舊編號沒有磨掉——Discogs 的 Matrix / Runout 欄寫著 SES-7413-A2 被劃掉、改刻成 IC-1012-A",
+   "全碟只有〈Field Holler〉那三分五十一秒是另一天、另一間錄音室、另一組節奏組，Discogs 在 credit 欄上就逐條標了適用軌"
+  ],
+  "sound": "五軌兩面（Discogs 1215524 的 A1–A3、B1–B2；MB 三筆 release 拉平成 1–5，曲名曲序一致）。原盤最短的一軌是 A3〈Field Holler〉3:51、最長的一軌是 B2〈Genesis〉17:27。編制照 Discogs credit 欄是小號與翼號（兼作曲、編曲與製作）、中音薩克斯風、鋼琴、貝斯、鼓與康加，另有一軌掛人聲；A3 那一軌換上另一組貝斯、鼓與電鋼琴。（本欄由 MB 三筆 release 的曲長表與 Discogs 1215524 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Evening Song",
+   "Field Holler",
+   "Genesis"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1215524 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「℗ 1974 (center labels)」與「℗© 1974 Strata East Records, Inc. (sleeve)」。錄音日期（1974 年 6 月 20、21 日與 7 月 24 日）只出現在 Discogs 註記欄，**是錄音日、不是發行日**。**Apple 的 releaseDate 1974-01-01 不得當原盤發行日**（第 140 條附二：那是月日補 01-01 的佔位形狀，而且那筆上架的是 2009 年再發）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Strata-East（紐約）廠牌史**（維基〈Strata-East Records〉條目那句帶引註的創辦敘述，facts 第 11 條）；Inner City Records 與日本 Nadja／Trio／Solid 的再發線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 5**——MB 那筆 1974 US release 的 track-count 是 5，Discogs 1215524 的曲目表也是 5 個曲位（A1–A3、B1–B2），Apple 那筆同樣 5 軌且曲名逐軌相同，三邊一致；**同 release-group 的 1976 與 2009 兩筆再發也都是 5 軌、曲長逐項相同，沒有加曲版**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **廠牌史只能寫維基那一句帶引註的內容，而且要照第 128 條寫成「維基〈Strata-East Records〉條目說」**：1971 年由 Charles Tolliver 與 Stanley Cowell 創辦。**「發行超過五十張」「被視為典範」兩句沒有引註，禁止採用**（第 40／80 條）。**也不得把 Stanley Cowell 出現在本卡 credit 欄這件事與他的創辦人身分連成因果**（例如「創辦人親自來彈鋼琴」這類句子）——那是一步推論，第 110 條擋的正是這種（兩件事都是事實，但它們的關係沒有來源）。\n(3) **與 Strata（底特律）不得混寫**（見卡 1 全組禁令第 9 點）。**a 組做的是底特律的 Strata Records，本卡做的是紐約的 Strata-East，兩家不同。**\n(4) **盤名撞名**：《Genesis》在池中另有四張同名碟，本 release-group 的掛名實體 disambiguation 欄寫「trumpet player」。**行文不得使用只有盤名的指稱句**（例如「那張叫《Genesis》的碟」），封面與試聽一律靠 rgMbid。\n(5) **不得寫「他名下的首張」**——策展層的 `curatorWhy` 這樣寫，那是線索不是事實（第 142 條）；本卡 facts 沒有任何一條能替他的碟排序。維基〈Charles Sullivan (musician)〉條目那句「錄過四張領班作品」引的是 AllMusic，**本卡不採用**（它是計數句，且與排序無關）。\n(6) **A3 那一軌的分工只能照 Discogs credit 欄的適用軌標記寫**（Anthony Jackson 貝斯、Alphonse Mouzon 鼓、Sharon Freeman 電鋼琴、John Battiloro 錄音），**不得推論為什麼換人**。「Mr. Mouzon appears courtesy of Blue Note Records」只能照抄成註記欄的一行，**不得展開成他與 Blue Note 的合約敘事**。\n(7) **Minot Sound 錄音室線歸卡 4，本卡只能寫自己公司欄上的那一行 Recorded At「Minot Sound」。** Strata-East 的公司欄形狀與紐約第五大道 156 號地址這條線歸卡 8。\n(8) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 10 條）。**探測層標的 `ready` 成立**；Apple 那筆上架的是 2009 年 Inner City 再發，**曲長不得引作原盤曲長**（Apple 8:26 vs 兩庫 8:22 這類差距整碟都有）。"
+ },
+ {
+  "key": "desc2:Muriel Winston|A Fresh Viewpoint",
+  "artist": "Muriel Winston",
+  "album": "A Fresh Viewpoint",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9be97aed 的欄位：title《A Fresh Viewpoint》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Muriel Winston」；genre 欄只有一個標籤 jazz（1 票）；**url-rels 是空陣列——MB 這一筆沒有連到 Discogs、AllMusic 或 Wikidata 的任何一條外部連結**。掛名實體是 Muriel Winston（MBID b3af083e-9309-4ece-8e42-6a16a6e01701，**type 欄 null、country 欄 null、disambiguation 欄空、life-span 的 begin 與 end 皆 null**）。",
+    "src": "https://musicbrainz.org/release-group/9be97aed-129b-4abb-9428-8ca74bbd9588"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1974 US release（fefb0687）：status Official、title《A Fresh Viewpoint》、artist-credit「Muriel Winston」、廠牌欄 Strata-East、編號欄 SES-7411、一張 12\" Vinyl、**track-count 12**、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Children's Trilogy〉4:49、2〈We'll Remember Those Years〉3:40、3〈A Song for My Daddy〉2:43、4〈Sing Chillun Sing〉1:55、5〈The Lord Will Make a Way Somehow〉5:40、6〈A Song to Everyone in the World〉2:13、7〈Never Been in Love〉3:42、8〈Weekend〉2:56、9〈Soul Trane〉3:56、10〈I'm Never Happy Anymore〉3:08、11〈Love Took the 7:10 Tonight〉3:08、12〈The Happy Heart〉4:20。",
+    "src": "https://musicbrainz.org/release/fefb0687-254e-487d-b198-6a49747a47c3"
+   },
+   {
+    "f": "以 release-group?artist=b3af083e…&limit=100 反查該掛名實體，**MB 上掛在這個實體底下的 release-group 只有一筆，就是本張**（release-group-count 1）。同時，以 release?release-group=…&inc=recordings 逐版比對，**本 release-group 底下也只有一筆 release**——**MB 沒有收錄 Discogs 上那兩筆（1975 US 測試壓片與 2014 日本 CD）**。（第 136 條：這是「MB 這份紀錄上只有一筆」，不等於「世界上只有一張」，更不等於她只錄過這一張。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b3af083e-9309-4ece-8e42-6a16a6e01701&limit=100&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1936761 的欄位：title《A Fresh Viewpoint》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-7411、genre 欄 Jazz、**style 欄是空的**、**公司欄是空的**（沒有 Made By、沒有版權欄、沒有 Published By）、**identifiers 欄也是空的**（沒有 Matrix / Runout、沒有 Rights Society）。**本組其餘八張 Strata-East 的條目都有這幾欄，本張是唯一整組欄位皆空的一筆**（第 136 條：這是 Discogs 這份條目上沒有，不是唱片上沒印）。",
+    "src": "https://www.discogs.com/release/1936761"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Vocals, Producer, Music Director「Muriel Winston」**；Bass「Bill Lee (2)」；Drums, Percussion「Billy Higgins」；Flute「Clifford Jordan」；Piano「Stanley Cowell」；Engineer, Mixed By「John Battiloro」與「Randy Adler」；Mastered By「Dave Crawford (2)」；Illustration「Jeri Leonard Lambert」；Photography By「Curtis A. Brown」。**掛名者自己掛的是人聲、製作人與音樂總監三個角色。**",
+    "src": "https://www.discogs.com/release/1936761"
+   },
+   {
+    "f": "同一條目的曲目表共 12 個曲位、分兩面（A1–A6、B1–B6），**十二個曲位的 duration 欄全部是空的，也沒有任何一軌帶 Written-By 欄**：A1〈Children's Trilogy〉、A2〈We'll Remember Those Years〉、A3〈A Song For My Daddy〉、A4〈Sing Chillun Sing〉、A5〈The Lord Will Make A Way Somehow〉、A6〈A Song To Everyone In The World〉、B1〈Never Been In Love〉、B2〈Weekend〉、B3〈Soul Trane〉、B4〈I'm Never Happy Anymore〉、B5〈Love Took The 7:10 Tonight〉、B6〈The Happy Heart〉。**曲長只有 MB 那一筆有（facts 第 2 條），Discogs 這邊完全沒有。**",
+    "src": "https://www.discogs.com/release/1936761"
+   },
+   {
+    "f": "同一條目的註記欄兩段：「The groups was joined by a Children's Chorus (Laverne Gilliam, Shirley Childs, Becky Childs, Theresa Roche, Natalie Roche, Joy Lee), directed by Muriel Winston. Bill Lee was assisiting the musical direction.」（原文拼字如此）、「Recorded at Minot Studios, White Plains/New York, October 21 and 31, 1974」。**兒童合唱團的六個名字與指揮者是註記欄逐項列出的，不是 credit 欄。**",
+    "src": "https://www.discogs.com/release/1936761"
+   },
+   {
+    "f": "Discogs master 778812 的 versions 共 3 筆，**零筆標 Unofficial**：1974 US Strata-East SES-7411（LP, Album）；1975 US Strata-East SES-7411（版本欄 LP, Album, Test Pressing, Stereo）；2014 Japan SHOUT! Productions SHOUT-273（CD，版本欄 Album, Limited Edition, Reissue, Remastered）。**整條版本線只有一次授權再發（2014 年日本），沒有任何一次黑膠復刻。**",
+    "src": "https://www.discogs.com/master/778812"
+   },
+   {
+    "f": "Discogs 2014 年那筆日本 CD 6024601 的欄位：released 欄 2014-04-23、廠牌欄 SHOUT! Productions SHOUT-273、格式欄 CD ×1［Album, Limited Edition, Reissue, Remastered］。公司欄八條：Manufactured By 與 Distributed By 皆「SHOUT! Productions Co., Ltd.」、**Licensed From「La Verne Wilson」**、Published By 四條（New Version Music、Dameron Press Music、Hill & Range、Tadmal Music Publishing Co.）、Recorded At「Minot Sound」、Mastered At「Generation Sound Studios」。credit 欄比原盤多兩條：**Directed By [Musical Direction] 與 Violin [Bass] 皆「Bill Lee (2)」**、Supervised By, Liner Notes「Yusuke Ogawa」。註記欄寫「Recorded at Minot Studios, White Plains, NY on October 21st & 31st 1974.」與「Comes in gatefold mini LP replica…」。曲目表 12 個曲位、曲名曲序與原盤逐軌相同、**同樣沒有曲長**。",
+    "src": "https://www.discogs.com/release/6024601"
+   },
+   {
+    "f": "Apple 試聽複檢：**兩條路徑都查無。** 路徑一（掛名＋盤名核心 ASCII 字）us 店面 `term=Muriel Winston Fresh Viewpoint`，resultCount **0**；路徑二（只用盤名）us 店面 `term=A Fresh Viewpoint`，resultCount **0**；路徑三（只用掛名）us 店面 `term=Muriel Winston`，resultCount **0**。探測層另跑過 us／gb／jp／ca／de／fr／au 七個 storefront，`tried` 欄全部記 `0→0`（**搜到 0 筆，不是搜到了沒配上**——依第 152 條，這是真的沒有，不是比對法擋掉的）。**確認 Apple 上沒有這張碟，也沒有任何同名的碟被誤配上來。`unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Muriel%20Winston&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "英文維基〈Strata-East Records〉條目的目錄表格把本張列在 SES 7411（Muriel Winston《A Fresh Viewpoint》）。**該表格沒有任何行內引註，依第 40／80 條不採用為敘述來源**；此處只記錄查證過程——**編號欄的值以 MB release 與 Discogs 條目的 SES-7411 為準，兩庫一致。**",
+    "src": "https://en.wikipedia.org/wiki/Strata-East_Records"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 那張條目幾乎是空的：沒有公司欄、沒有刻紋、十二個曲位一個曲長都沒填——十二軌的長度只有 MusicBrainz 那一筆記著",
+   "註記欄逐一寫出了兒童合唱團六個人的名字，指揮欄寫的是掛名者本人"
+  ],
+  "sound": "十二軌兩面（Discogs 1936761 的 A1–A6、B1–B6；MB 那筆 1974 release 拉平成 1–12，曲名曲序一致）。曲長只有 MB 那一筆有：最短的一軌是第 4 軌〈Sing Chillun Sing〉1:55、最長的一軌是第 5 軌〈The Lord Will Make a Way Somehow〉5:40。編制照 Discogs credit 欄是人聲（兼製作與音樂總監）、貝斯、鼓與打擊、長笛、鋼琴；註記欄另記一個六人兒童合唱團。（本欄由 MB 1974 release 的曲長表與 Discogs 1936761 的曲目表、credit 欄、註記欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Children's Trilogy",
+   "The Lord Will Make a Way Somehow",
+   "Soul Trane"
+  ],
+  "status": "thin",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1936761 的 year 與 released 欄皆 1974。**本卡沒有 Apple 紀錄可比對**（查無）。錄音日期（1974 年 10 月 21、31 日）只出現在 Discogs 註記欄與 2014 年再發的註記欄，**是錄音日、不是發行日**。Discogs master 上那筆 1975 年的測試壓片是**版本欄字樣**，不得用來動搖 1974 這個發行年。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Minot Sound（White Plains）這條錄音室線（卡 3 與卡 8 只能寫自己公司欄上的那一行）；兒童合唱團與掛名者的音樂總監身分這條線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 12**——MB 那筆 1974 US release 的 track-count 是 12，Discogs 1936761 的曲目表也是 12 個曲位（A1–A6、B1–B6），2014 年那筆日本 CD 同樣 12 個曲位、曲名曲序相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **禁止寫「她名下唯一的專輯」「唯一一張」「最後一張」。** MB 的反查只證明「MB 這份紀錄上掛在這個實體底下只有一個 release-group」（facts 第 3 條），而且那個實體的 type、country、life-span 全是 null——**這是資料庫的缺席，不是世界的缺席**（第 136 條）。策展層的 `curatorWhy` 寫「名下唯一的專輯」，那是線索不是事實（第 142 條），而且它自己也標成推論。**同理禁止「這家以器樂為主的廠牌少數的女聲掛名作品」這類需要清點整份目錄才能成立的句子**（第 154 條：計數句要回 facts 逐項數過；本卡 facts 沒有廠牌目錄的清點）。\n(3) **Discogs 那些空欄位只能寫成「Discogs 這份條目上沒有」**（第 136 條），**不得寫成「唱片上沒印公司資訊」「原盤沒有刻紋」**。曲長同理：Discogs 十二個曲位的 duration 欄全空，**曲長一律引 MB 那一筆**。\n(4) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-7411」。\n(5) **SHOUT! Productions 的日本迷你 LP 復刻線歸卡 8，本卡只能寫自己那筆 SHOUT-273 的欄位**（授權欄、公司欄、credit 欄與註記欄），**不得展開成該廠牌的復刻計畫敘事**。\n(6) **「Licensed From: La Verne Wilson」只能照抄成授權欄的一個名字**，**不得推論這個人與掛名者的關係**（第 110 條）。\n(7) **試聽：Apple 三條路徑全部 resultCount 0，`unavailable` 成立**（facts 第 10 條）。**行文不得提到試聽、串流或「聽得到／聽不到」。**\n(8) **不得由曲名推論題旨**（第 110 條）：本張曲名多是家族、宗教與人名語彙，**Discogs 曲目表沒有任何一軌有 Written-By 欄**，**因此不得寫任何一軌的作者，也不得寫「她自己寫的」**。\n(9) **本卡是 thin**：外部敘述來源只有維基那張沒有引註的目錄表格（不採用），facts 全部來自兩個資料庫與一筆再發條目。**寫作層不得為了補足分量而引入 facts 以外的說法。** 策展層自己標了「若研究層查不到署名樂評或其他再發證據，這張可以退」——**研究層的結論是：查不到署名樂評；再發證據只有 2014 年日本 SHOUT-273 一次（Discogs master 3 個版本，零筆 Unofficial）。收退由策展層決定，本卡如實記錄。**"
+ },
+ {
+  "key": "desc2:Dick Griffin|The Eighth Wonder",
+  "artist": "Dick Griffin",
+  "album": "The Eighth Wonder",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0695bd3a 的欄位：title《The Eighth Wonder》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Dick Griffin」；genre 欄只有一個標籤 jazz（1 票）；url-rels 只有一條 discogs 指向 master/344689。掛名實體是 Dick Griffin（MBID 257bbe6f-85f9-4f42-8406-0981df3f4b8b，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/0695bd3a-3d71-4bd4-9fd1-698f061c307d"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1974 US release（ad9b6210）：status Official、title《The Eighth Wonder》、artist-credit「Dick Griffin」、廠牌欄 Strata-East、編號欄 SES-19747、一張 12\" Vinyl、track-count 6、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Eighth Wonder〉6:02、2〈It Could Be〉6:52、3〈Girl, I Really Love You So〉6:45、4〈Jakubu's Dance〉4:07、5〈Flying Back Home〉8:21、6〈Come Be With Me〉9:32。**MB 這個 release-group 底下只有這一筆 release——Discogs 上那五筆（1974 促銷盤、1976 日本盤、1980 Sugar Hill、1994 Konnex）MB 都沒有收。**",
+    "src": "https://musicbrainz.org/release/ad9b6210-96e2-452d-a3fa-6accc39b40b6"
+   },
+   {
+    "f": "Discogs 原盤條目 1228998 的欄位：title《The Eighth Wonder》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-19747、genre 欄 Jazz、style 欄 Modal、Post Bop、Spiritual Jazz。公司欄四條：Phonographic Copyright (p)「Strata-East Records, Inc.」、Copyright (c)「Strata-East Records, Inc.」、Made By「Strata-East Records, Inc.」、Published By「Grifforee Pub.」。identifiers 欄三條：Rights Society「BMI」、Matrix / Runout「SES-19747-A Ⓣ」（A 面刻紋蝕刻）、Matrix / Runout「SES·19747·B Ⓣ」（B 面刻紋蝕刻，**編號中間是點號、不是連字號**）。",
+    "src": "https://www.discogs.com/release/1228998"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Arranged By, Composed By, Producer, Trombone, Liner Notes「Dick Griffin」**（一個人掛五個角色，含內頁文字）；Bass「Cecil McBee」；Congas, Bells, Percussion「Leopoldo Fleming」；Drums「Freddie Waits」；Engineer [Recording]「Rudy Cotman」；Photography By [Front Cover]「Clarence Eastman」；Piano「Ron Burton」；**Tenor Saxophone, Soprano Saxophone, Flute「Sam Rivers」**；Vibraphone [Vibes], Percussion「Warren Smith」。",
+    "src": "https://www.discogs.com/release/1228998"
+   },
+   {
+    "f": "同一條目的曲目表共 6 個曲位、分兩面：A1〈Eighth Wonder〉6:02、A2〈It Could Be〉6:52、A3〈Girl, I Really Love You So〉6:45、B1〈Jakubu's Dance〉4:07、B2〈Flying Back Home〉8:21、B3〈Come Be With Me〉9:32。**曲目表沒有逐軌 Written-By 欄**；作者資訊只出現在 credit 欄的「Composed By: Dick Griffin」與註記欄的「All tunes Grifforee Publ. Co. BMI」。註記欄另兩行：「℗© 1974 Strata-East Records, Inc,. 156 Fifth Avenue, N.Y., N.Y. 10010」、「Printed in U.S.A.」。",
+    "src": "https://www.discogs.com/release/1228998"
+   },
+   {
+    "f": "Discogs master 344689 的 versions 共 6 筆，**零筆標 Unofficial**：1974 US Strata-East SES-19747 兩筆（一筆版本欄帶 Promo、Stereo，一筆 LP, Album）；**1976 Japan Strata-East JC-7508 兩筆**（一筆 LP, Album，一筆版本欄帶 Promo）；**1980 US Sugar Hill Records SH-261**（LP, Album, Reissue）；**1994 Germany Konnex Records KCD 5059（CD, Album, Reissue），標題欄寫的是《The Eighth Wonder & More》——不是同一個標題。**",
+    "src": "https://www.discogs.com/master/344689"
+   },
+   {
+    "f": "Discogs 1994 年那筆德國 CD 1856560 的欄位：title《The Eighth Wonder & More》、year 與 released 欄皆 1994、廠牌欄 Konnex Records KCD 5059、格式欄 CD ×1［Album, Reissue］、genre 欄 Jazz、style 欄 Soul-Jazz 與 Post Bop。**曲目表 10 個曲位**：1〈Eighth Wonder〉、2〈It Could Be〉、3〈Girl, I Really Love You So〉、4〈Jakubu's Dance〉、5〈Flying Back Me〉（原文作 Come Be With Me 者為第 6）、6〈Come Be With Me〉、**7〈Waltz My Son〉、8〈Multiphone Blues〉、9〈Oree Me II〉、10〈Now Is The Time〉**。**credit 欄把班底按軌分成兩組**：1 到 6 是 Cecil McBee（貝斯）、Ron Burton（鋼琴）、Sam Rivers（薩克斯風與長笛）、Warren Smith（鐵琴）、Leopolodo F. Smith（打擊）；**7 到 10 是完全不同的一組**——Calvin Hill（貝斯）、Billy Hart（鼓）、Donald Smith（長笛與鋼琴）、Hubert Eaves III（鋼琴）、Bill Saxton 與 Clifford Jordan（次中音薩克斯風）、Lawrence Killian（康加與打擊）。",
+    "src": "https://www.discogs.com/release/1856560"
+   },
+   {
+    "f": "英文維基〈Dick Griffin〉條目帶行內引註的一句說：**1995 年那次 CD 發行《The Eighth Wonder & More》（Konnex Records）收的是「那張專輯，外加《Now is the Time》專輯的大部分內容」**（引註 AllMusic 的 the-eighth-wonder-more 評論頁）。同條目的作品表另列《Now Is the Time》（Trident，1979）為一張獨立的專輯。**這一句直接說明了 Konnex 那 10 軌是兩張專輯併成一片。**",
+    "src": "https://en.wikipedia.org/wiki/Dick_Griffin"
+   },
+   {
+    "f": "以 Discogs 反查《Now Is the Time》：Discogs 條目 2026747 是 Dick Griffin《Now Is The Time》，**1979 US、廠牌欄 Trident／Trident Records Inc.、編號欄 TRS-504、Vinyl LP, Album**；另有同編號的再發（4969351）與 1997 英國 Boplicity CD（CDBOP 021）。**《Now Is the Time》是本張以外的另一張碟，與本卡的 SES-19747 不同廠牌、不同編號、不同 release-group。**",
+    "src": "https://www.discogs.com/release/2026747"
+   },
+   {
+    "f": "Apple 試聽複檢：**Apple 上有命中，但命中的不是這張碟。** 路徑一（掛名＋盤名核心 ASCII 字）us 店面 `term=Dick Griffin Eighth Wonder` 回 2 筆，兩筆都是 10 軌：collectionId **1869662342**《The Eighth Wonder & More (feat. Sam Rivers, Ken Burton, Cecil McBee, Freddie Waits, Warren Smith, Leopoldo F. Fleming & Clifford Jordan)》（℗ 2026 Ruby Records / PDDS）與 collectionId **1218847599**《The Eight Wonder and More》（℗ 2011 Dick Griffin）。逐軌直查兩筆，曲目表完全相同：1〈Eighth Wonder〉6:21、2〈It Could Be〉6:58、3〈Girl I Really Love You So〉7:48、4〈Jakubu's Dance〉4:03、5〈Flying Back Home〉8:26、6〈Come Be with Me〉9:18、**7〈Waltz My Son〉5:38、8〈Multiphonic Blues〉5:07、9〈Oree Me〉7:25、10〈Now Is the Time〉6:13**（分秒為本卡自行由毫秒無條件捨去換算）。**前 6 軌曲名與曲序與原盤相同，第 7 到 10 軌是 Konnex「& More」那四軌**。路徑二（只用盤名）us 店面 `term=The Eighth Wonder` 回 25 筆，除了上述那一筆 Dick Griffin 的以外全是別的藝人（Poor Old Lu、AAA、Eighth Wonder 這個團等），**沒有任何一筆是 SES-19747 那張六軌原盤**。",
+    "src": "https://itunes.apple.com/lookup?id=1218847599&entity=song&country=us"
+   },
+   {
+    "f": "**試聽判定（第 129／140／141 條逐項做過）**：Apple 那兩筆的第 7 到 10 軌**不是本張的加曲，而是另一張專輯的曲目**——(一) 維基〈Dick Griffin〉條目帶引註地說 Konnex 那次發行收了《Now is the Time》的大部分（facts 第 8 條）；(二) Discogs Konnex 條目的 credit 欄把 7 到 10 軌標成完全不同的一組樂手（facts 第 7 條）；(三) 第 10 軌的曲名就是那張專輯的盤名，而《Now Is the Time》是 1979 年 Trident TRS-504 的獨立一張碟（facts 第 9 條）。**結論：Apple 上架的是二合一（2-on-1），依第 129 條身分不釘、封面不用、試聽不採。探測層標的 `unavailable` 維持成立，但理由要改寫**——不是「Apple 上沒有命中」（探測層七個 storefront 的 `tried` 記 `2→0`，是搜到 2 筆卻沒配上），**而是「命中的那兩筆是二合一、不能用」**（第 152 條：一個否定的結論要說得出它否定的是哪一步）。",
+    "src": "https://www.discogs.com/release/1856560"
+   }
+  ],
+  "hookCandidates": [
+   "同一個人掛了五個角色：編曲、作曲、製作、長號，連內頁文字都是他寫的",
+   "B 面刻紋上的編號用的是點號不是連字號——Discogs 的 Matrix / Runout 欄寫著 SES·19747·B"
+  ],
+  "sound": "六軌兩面（Discogs 1228998 的 A1–A3、B1–B3；MB 那筆 1974 release 拉平成 1–6，兩庫曲名曲序與六軌曲長逐項一致）。原盤最短的一軌是 B1〈Jakubu's Dance〉4:07、最長的一軌是 B3〈Come Be With Me〉9:32。編制照 Discogs credit 欄是長號（兼作曲、編曲與製作）、次中音與高音薩克斯風兼長笛、鋼琴、貝斯、鼓、鐵琴與打擊、康加與鈴。（本欄由 MB 1974 release 的曲長表與 Discogs 1228998 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；**曲長一律引原盤那兩庫的值，不引 Apple 那兩筆二合一的換算值**。）",
+  "keyTracks": [
+   "Eighth Wonder",
+   "Flying Back Home",
+   "Come Be With Me"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1228998 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「℗© 1974 Strata-East Records, Inc,.」。**本卡沒有可用的 Apple 紀錄**（命中的是二合一，其 releaseDate 一律不採）。Discogs master 上那筆 1976 年日本盤（JC-7508）是**再發、不是原盤**，不得用來動搖 1974。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：1980 年那筆 Sugar Hill Records 再發的身分疑點；Konnex「& More」那條二合一線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 6**——MB 那筆 1974 US release 的 track-count 是 6，Discogs 1228998 的曲目表也是 6 個曲位（A1–A3、B1–B3），六軌曲長兩庫逐項相同。**Konnex 那 10 軌與 Apple 那兩筆 10 軌都是二合一，行文不得把後四軌當成這張碟的曲目，也不得寫任何以 10 為基礎的軌數敘述**（第 129／140／141 條）。面別分法只能引 Discogs 的 A／B 編號。\n(2) **試聽：`unavailable`，理由是「命中的是二合一」而不是「查無」**（facts 第 10、11 條）。**行文不得提到試聽或串流。** 這一條要寫進交接：**探測層的 `tried` 欄記 `2→0`，是「搜到了沒配上」的形狀（第 152 條），研究層回頭查了，結論是比對擋掉是對的。**\n(3) **Sugar Hill Records 那筆的身分不得斷言。** Discogs master 上 1980 年那筆再發的廠牌欄寫「Sugar Hill Records」、編號 SH-261；**本卡 facts 沒有任何一條能證明它與後來以嘻哈聞名的 Sugar Hill Records 是不是同一家，因此行文只能寫成「Discogs 版本欄上的廠牌名與編號」，不得把兩者連起來、也不得寫「就是那家 Sugar Hill」或「不是那家」。**（策展層特別標出的疑點，研究層查證結果：兩庫都只有廠牌名字串，沒有公司實體資訊。另記一筆線索但不入文——Discogs 上《Now Is The Time》另有一筆 1980 年 Sugar Hill Records SH 260 的碟，掛名寫「Multiphonic Tribe」，**這只是相鄰編號，不足以推論任何公司關係**。）\n(4) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-19747」與公司欄那三條 Strata-East Records, Inc.。\n(5) **維基那一句只能照第 128 條寫成「維基〈Dick Griffin〉條目說（引註 AllMusic）……」**，而且**只能用來說明 Konnex 那次發行的內容組成**，不得引申成他的作品評價。條目其餘段落（循環呼吸與 multiphonics 的技法、後來轉畫畫）**本卡不採用**——那些與這張碟無關，且第 146 條禁止替別的主題補敘述。\n(6) **不得由曲名推論**（第 110 條）：曲目表沒有逐軌 Written-By 欄，作者只能寫成 credit 欄的「Composed By: Dick Griffin」與註記欄的「All tunes Grifforee Publ. Co. BMI」兩處。\n(7) **不得寫壓量、稀有度**（第 109 條）：Discogs 版本欄那兩筆 Promo 只能當版本欄字樣。"
+ },
+ {
+  "key": "desc2:Harold Vick|Don't Look Back",
+  "artist": "Harold Vick",
+  "album": "Don't Look Back",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f16aada1 的欄位：title《Don't Look Back》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Harold Vick」；genre 欄兩個標籤 hard bop 與 jazz（各 1 票）；url-rels 兩條——discogs 指向 master/1362728、wikidata 指向 Q19571481。掛名實體是 Harold Vick（MBID 2f78d070-b990-408d-bf22-18aa56f72992，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/f16aada1-3424-4b7f-92ed-2de1a0f8620b"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1974 US release（e0ccebc9）：status Official、title《Don't Look Back》、artist-credit「Harold Vick」、廠牌欄 Strata-East、編號欄 SES-7431、一張 12\" Vinyl、track-count 6、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈Don't Look Back〉5:59、2〈Melody for Bu〉7:21、3〈Senor Zamora〉5:38、4〈Stop and Cop〉6:34、5〈Lucille〉9:20、6〈Prayer〉0:56。**MB 這個 release-group 底下只有這一筆——Discogs 上那筆 2018 年英國重製 MB 沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/release/e0ccebc9-98d4-404b-83da-31352c2ac4a6"
+   },
+   {
+    "f": "Discogs 原盤條目 1263277 的欄位：title《Don't Look Back》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、**廠牌欄兩條（Strata-East SES-7431 與 Strata-East STEREO SES-7431）**、genre 欄 Jazz、style 欄 Modal、Hard Bop。公司欄九條：Phonographic Copyright (p) 與 Copyright (c) 皆「Strata-East Records, Inc.」、Published By「Matron Music」、**Recorded At「Blue Rock Studio」**、**Mixed At／Mastered At／Lacquer Cut At 三條都寫「Generation Sound Studios」**、Record Company 兩條（Strata-East Records, Inc. 與 Strata-East）。identifiers 欄：Rights Society「BMI」、Matrix / Runout「SES-7431-A DC」與「SES-7431-B DC」。",
+    "src": "https://www.discogs.com/release/1263277"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Composed By, Arranged By, Producer, Liner Notes「Harold Vick」**（一個人掛四個角色）；Design [Album Design], Art Direction [Art Supervision]「Creative Hands, Inc.」；Engineer [Mastering Engineer] 與 Lacquer Cut By 皆「Dave Crawford (2)」；Engineer [Mixing Engineer]「Tony May」；Engineer [Recording Engineer]「Eddie Korvin」；**Management「MsManagement」**；Photography By「Jim Dunn」。",
+    "src": "https://www.discogs.com/release/1263277"
+   },
+   {
+    "f": "同一條目的曲目表共 6 個曲位、分兩面，**每一軌都各自列了自己的編制**：A1〈Don't Look Back〉5:59（Tenor Saxophone: Harold Vick；Trumpet: Virgil Jones；Euphonium: Kiane Zawadi；Alto Flute: George Davis (2)；Piano, Tuba: Joe Bonner；Bass: Sam Jones；Drums: Billy Hart）、A2〈Melody For Bu〉7:21（Vick 改吹 Concert Flute、Virgil Jones 改吹 Flugelhorn）、A3〈Senor Zamora〉5:38（Bonner 改彈 Fender Rhodes）、B1〈Stop And Cop〉6:34（Vick 吹 Bass Clarinet 與 Flute、George Davis 改彈 Guitar、加 Jimmy Hopps 打擊）、B2〈Lucille〉9:20（縮成四人：Vick、Bonner、Sam Jones、Billy Hart）、B3〈Prayer〉0:56（**只剩兩人**：Vick 一人身兼 Bass Clarinet／Alto Flute／Concert Flute／Soprano Saxophone，Bonner 彈 Fender Rhodes）。",
+    "src": "https://www.discogs.com/release/1263277"
+   },
+   {
+    "f": "同一條目的註記欄收錄了掛名者自己寫的內頁文字，逐則說明曲名由來：「DON'T LOOK BACK describes a new and positive feeling / attitude that I possess as a result of a gift of love received by me during a period of crisis.」、「MELODY OF BU was written for Ms. Bu Pleasant, a warm and fiery multi-talented lady, who leads her own trio.」、「SENOR ZAMORA was written for a special brother I met along the road of music who has always reached out to help others. His name is Antonio Zamora and he is currently director of the Black Cultural Center, Purdue University.」、「STOP AND COP was inspired by a childhood buddy, Ivory (Nab) Spearman, who is presently the proprietor of a neighborhood store. The sign over the front reads \"Stop And Cop.\"」（**第五則〈Lucille〉的文字在條目上被截斷，只到「LUCILLE was one of my favorite」**）。",
+    "src": "https://www.discogs.com/release/1263277"
+   },
+   {
+    "f": "同一條目註記欄的其餘各行：「Runouts are etched.」、「On labels : SES-7431 / On front cover and spine : STEREO SES-7431」、「℗© 1974 Strata-East Records, Inc., 156 Fifth Avenue, N.Y., N.Y. 10010」、「A product of Strata-East, Inc., N.Y.C. 10010」、「All selections composed, and arranged by Harold Vick (Matron Music) BMI.」、「Recorded at Blue Rock Studio, New York City」、「Mixed and mastered at Generation Sound Studio, New York City」、以及一則經紀聯絡資訊「For information concerning bookings, contact MsManagement, Room 419, 463 West Street, New York, N.Y. 10014」。",
+    "src": "https://www.discogs.com/release/1263277"
+   },
+   {
+    "f": "Discogs master 1362728 的 versions **只有 2 筆，零筆標 Unofficial**：1974 US Strata-East SES-7431／STEREO SES-7431（LP, Album, Stereo）；**2018 UK Strata-East SES-7431（Vinyl，版本欄 LP, Album, Limited Edition, Reissue, Remastered, Stereo）**。整條版本線沒有任何 CD、沒有日本盤。",
+    "src": "https://www.discogs.com/master/1362728"
+   },
+   {
+    "f": "Discogs 2018 年那筆英國黑膠 11991149 的欄位：released 欄 2018-05、廠牌欄 Strata-East SES-7431、格式欄 Vinyl ×1［LP, Album, Limited Edition, Reissue, Remastered, Stereo］。公司欄比原盤多四條：**Pressed By「Schallplattenfabrik Pallas GmbH」、Remastered At「Air Mastering」、Record Company「Pure Pleasure Records Limited」**，其餘（版權欄、Published By、Recorded At、Mixed At、Mastered At）與原盤相同。credit 欄多一條 **Engineer [Re-mastering]「Ray Staff」**。註記欄兩行：「Hype sticker - \"The most beautiful music format in the world\"」、「180 Gram Vinyl」。曲目表 6 個曲位、曲名曲序與逐軌編制與原盤相同。",
+    "src": "https://www.discogs.com/release/11991149"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1850071017，us 店面）：collectionName《Don't Look Back》、artistName「Harold Vick」、trackCount 6、releaseDate 2025-04-25、**copyright 欄「℗ 2025 Strata-East Records, Inc. Under exclusive worldwide license to Mack Avenue Records II, LLC.」**。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Don't Look Back〉366944ms＝6:06、2〈Melody for Bu〉448507ms＝7:28、3〈Senor Zamora〉345259ms＝5:45、4〈Stop and Cop〉400008ms＝6:40、5〈Lucille〉564906ms＝9:24、6〈Prayer〉56803ms＝0:56。**六軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。探測層標的 `ready` 成立**——探測層記下的 `yearDrift 51` 是因為 Apple 上架的是 2025 年那次授權發行，不是配到別張碟（同名的 Boston《Don't Look Back》沒有出現在這一筆上）。",
+    "src": "https://itunes.apple.com/lookup?id=1850071017&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Harold Vick〉條目帶行內引註的段落說：Harold Vick（1936 年 4 月 3 日–1987 年 11 月 13 日）是美國爵士薩克斯風手與長笛手，生於北卡羅萊納州 Rocky Mount；十三歲時舅舅 Prince Robinson 給了他一把單簧管（引註 Barry Kernfeld 編《The New Grove Dictionary of Jazz》第二版第 3 卷第 843 頁），該人是曾在 McKinney's Cotton Pickers 待過的單簧管與次中音薩克斯風手（引註 Bryan 與 Patterson《African American Music Trails of Eastern North Carolina》第 112 頁）；三年後改吹次中音薩克斯風並開始在 R&B 樂團演出；他的首張領班作品《Steppin' Out!》1963 年錄於 Blue Note（引註 New Grove）；**1966 到 1974 年間他另有為 RCA、Muse 與 Strata-East 錄音的場次（引註 New Grove）**。",
+    "src": "https://en.wikipedia.org/wiki/Harold_Vick"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 把掛名者自己寫的內頁文字整段收進註記欄，一首一首交代曲名的來歷——〈Stop and Cop〉是童年玩伴那家店門口招牌上的字",
+   "六軌的編制一軌一個樣，最後那五十六秒的〈Prayer〉只剩兩個人：一支簧管與一台電鋼琴"
+  ],
+  "sound": "六軌兩面（Discogs 1263277 的 A1–A3、B1–B3；MB 那筆 1974 release 拉平成 1–6，兩庫曲名曲序與六軌曲長逐項一致）。原盤最短的一軌是 B3〈Prayer〉0:56、最長的一軌是 B2〈Lucille〉9:20。編制照 Discogs 的逐軌 credit 欄逐軌變動：完整編制是次中音薩克斯風、小號、上低音號、中音長笛、鋼琴兼低音號、貝斯與鼓；中段有一軌改成吉他加打擊，倒數第二軌縮成四人，最後一軌只剩簧管與電鋼琴兩人。（本欄由 MB 1974 release 的曲長表與 Discogs 1263277 的逐軌曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Don't Look Back",
+   "Lucille",
+   "Prayer"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1263277 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「℗© 1974 Strata-East Records, Inc.」。**Apple 的 releaseDate 2025-04-25 不得當原盤發行日**（第 140 條附二）——那筆上架的是 2025 年的授權發行，copyright 欄就寫著 ℗ 2025；探測層記下的 appleYear 2025 與 `yearDrift 51` 同樣不採。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Blue Rock Studio 與 Generation Sound Studios 的分工線（卡 7 只能寫自己公司欄上那兩行）；Pure Pleasure／2018 英國重製與 2025 年 Mack Avenue 授權這條線。\n**本卡禁令**：\n(1) **原盤軌數只能寫 6**——MB 那筆 1974 US release 的 track-count 是 6，Discogs 1263277 的曲目表也是 6 個曲位（A1–A3、B1–B3），六軌曲長兩庫逐項相同；2018 年那筆英國重製與 Apple 那筆 2025 年發行同樣 6 軌、曲名曲序相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-7431／STEREO SES-7431」與公司欄那幾條。\n(3) **Harold Vick 同時出現在卡 7〈One for Me〉的 credit 欄與 Written-By 欄，那條交叉線歸卡 7，本卡禁用。** 本卡不得提到卡 7 那張碟，也**不得寫「這首〈Don't Look Back〉後來被誰錄過」或「同一首曲子也出現在別張碟上」**——第 110 條擋的正是這種由曲名推論的一步（兩張碟上同名的曲子不足以判定是同一段錄音或同一首曲子）。\n(4) **內頁文字只能照 Discogs 註記欄逐則引用，並寫明那是掛名者自己寫的內頁文字**；**第五則〈Lucille〉在條目上被截斷，不得補完、不得推測**（第 136 條）。\n(5) **2025 年那筆 Apple 授權敘述只能照 copyright 欄的字串寫**（「Strata-East Records, Inc. Under exclusive worldwide license to Mack Avenue Records II, LLC.」）。**不得展開成 Strata-East 目錄的經營權變動敘事**——本卡 facts 只有這一個字串，沒有任何來源說明它的來龍去脈。\n(6) **不得寫壓量、份數、稀有度**（第 109 條）：2018 那筆版本欄的 Limited Edition 與註記欄的「180 Gram Vinyl」、宣傳貼紙標語只能當欄位字樣引用。\n(7) **維基那段只能照第 128 條寫成「維基〈Harold Vick〉條目說（引註 New Grove／Bryan 與 Patterson）……」。** 池中已有他 1963 年的《Steppin' Out!》，**行文若要提到那張碟，只能引維基那句帶引註的「首張領班作品錄於 Blue Note」，不得自行計算兩張之間隔了幾年、也不得寫「十一年後」這類需要以兩個發行年相減的句子**（第 154 條：計數與算術要回 facts；本卡 facts 沒有《Steppin' Out!》的發行年欄位，維基那句給的是錄音年）。\n(8) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 10 條）。**探測層標的 `ready` 成立**；同名的 Boston《Don't Look Back》沒有被配上來。**Apple 那筆是 2025 年發行，曲長不得引作原盤曲長**（Apple 6:06 vs 兩庫 5:59 這類差距整碟都有）。"
+ },
+ {
+  "key": "desc2:Shirley Scott|One for Me",
+  "artist": "Shirley Scott",
+  "album": "One for Me",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5a98ee8a 的欄位：title《One for Me》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Shirley Scott」；genre 欄兩個標籤 jazz 與 jazz-funk（各 1 票）；url-rels 兩條——discogs 指向 master/1751130、wikidata 指向 Q7093463。掛名實體是 Shirley Scott（MBID f80398eb-64c2-4abb-8572-cd8ab96f6522，type Person，country US，**disambiguation 欄「jazz artist」**）。",
+    "src": "https://musicbrainz.org/release-group/5a98ee8a-6f20-4527-93e8-71650e815164"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1974 US release（2de279ee）：status Official、title《One for Me》、artist-credit「Shirley Scott」、廠牌欄 Strata-East、編號欄 SES-7430、一張 12\" Vinyl、track-count 5、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈What Makes Harold Sing?〉8:53、2〈Keep on Movin' On〉9:52、3〈Do You Know a Good Thing When You See One?〉8:51、4〈Big George〉5:22、5〈Don't Look Back〉8:56。**MB 這個 release-group 底下只有這一筆——Discogs 上 2020 年那四筆英國與數位再發 MB 都沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/release/2de279ee-c7e1-4af2-93ab-8dab2810b5d0"
+   },
+   {
+    "f": "Discogs 原盤條目 1739899 的欄位：title《One For Me》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-7430、genre 欄 Jazz、style 欄 Post Bop。公司欄六條：Published By「Shibit Music」與「Matron Music」、Copyright (c) 與 Phonographic Copyright (p) 皆「Strata-East Records, Inc.」、Recorded At「Blue Rock Studio」、Mastered At「Generation Sound Studios」。**identifiers 欄是空的**（沒有 Matrix / Runout、沒有 Rights Society）——第 136 條：這是 Discogs 這份條目上沒有，不是唱片上沒刻。",
+    "src": "https://www.discogs.com/release/1739899"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Organ「Shirley Scott」**；**Tenor Saxophone「Harold Vick」**；Drums「Billy Higgins」；Cowbell「Jimmy Hopps」(A2)；Engineer [Recording]「David Horowitz」與「Eddie Korvin」；Mastered By「Dave Crawford (2)」；Coordinator [Production]「MsManagement」；Design [Cover]「Gene Massimo」；Photography By「Irene Kubota」；**Other [Inspiration]「Charles Butler」**（Discogs 把「Inspiration」也編成一個 credit 角色）。**原盤 credit 欄沒有貝斯手**——編制是管風琴、次中音薩克斯風與鼓三人，外加一軌的牛鈴。",
+    "src": "https://www.discogs.com/release/1739899"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈What Makes Harold Sing?〉8:53（Written-By: Shirley Scott）、A2〈Keep On Movin' On〉9:52（Written-By 與 Tenor Saxophone 皆 Harold Vick；另有 Cowbell: Jimmy Hopps）、B1〈Do You Know A Good Thing When You See One?〉8:51（Shirley Scott）、B2〈Big George〉5:22（Shirley Scott）、B3〈Don't Look Back〉8:56（Written-By: Harold Vick；**Mellotron: Shirley Scott**——掛名者在這一軌改彈美樂特朗）。**五軌的作者欄是三比二：三軌 Shirley Scott、兩軌 Harold Vick。**",
+    "src": "https://www.discogs.com/release/1739899"
+   },
+   {
+    "f": "同一條目的註記欄逐行：「(P) & (C) 1974 Strata-East Records, Inc., 156 Fifth Avenue, N.Y., N.Y. 10010」、「Recorded at Blue Rock Studios, New York City」、「Production coordination: MsManagement」、「Mastering at Generation Sound」、以及逐軌的出版商歸屬「Published by: Shibit Music (A1, B1, B2) / Matron Music (A2, B3)」。**兩家出版商的分軌與五軌 Written-By 欄的三比二完全對得上。**",
+    "src": "https://www.discogs.com/release/1739899"
+   },
+   {
+    "f": "Discogs master 1751130 的 versions 共 5 筆，**零筆標 Unofficial**：1974 US Strata-East SES-7430（LP, Album）；**2020 UK Arc Records (13) 四筆**——Vinyl ARC003（LP, Album, Reissue）、CD ARC003CD（Album, Reissue）、Worldwide FLAC（版本欄 FLAC, Album, Reissue，編號欄 none）、Worldwide MP3（版本欄 MP3, Album, Reissue，編號欄 none）。**整條版本線只有 1974 與 2020 兩個年份。**",
+    "src": "https://www.discogs.com/master/1751130"
+   },
+   {
+    "f": "Discogs 2020 年那筆英國黑膠 15428882 的欄位：released 欄 2020-05-22、廠牌欄 Arc Records (13) ARC003、格式欄 Vinyl ×1［LP, Album, Reissue］、genre 欄 Jazz、style 欄 Bop、Fusion、Jazz-Funk（**與原盤條目的 Post Bop 不同——兩份條目各自填各自的**）。公司欄比原盤多三條：Lacquer Cut At「Metropolis Mastering」、Mastered At「Metropolis Mastering」、版權欄改記 Arc Records (13)。credit 欄新增四條：**Liner Notes 與 Reissue Producer 皆「Maxine Gordon」**、Design [Reissue]「Mark James (11)」、Lacquer Cut By 與 Mastered By 皆「Stuart Hawkes」；**Photography By [Cover And Harold Vik And Billy Higgins]「Francis Wolff」**（原文拼字如此）；另把掛名者的樂器欄寫成「Organ, Mellotron」、製作人欄寫成「Producer: Shirley Scott」、Harold Vick 的樂器欄寫成「Tenor Saxophone, Alto Saxophone」。曲目表 5 個曲位、曲名曲序與原盤逐軌相同。",
+    "src": "https://www.discogs.com/release/15428882"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1561234506，us 店面）：collectionName《One for Me》、artistName「Shirley Scott」、trackCount 5、releaseDate 1974-11-01、**copyright 欄「℗ 2020 Arc Records」**。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈What Makes Harold Sing?〉530453ms＝8:50、2〈Keep on Movin' On〉592213ms＝9:52、3〈Do You Know a Good Thing When You See One?〉530600ms＝8:50、4〈Big George〉322747ms＝5:22、5〈Don't Look Back〉536360ms＝8:56。**五軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。探測層標的 `ready` 成立**——探測層在 us 店面搜到 2 筆、配上 1 筆，配上的這一筆不是她在大廠的任何一張碟。",
+    "src": "https://itunes.apple.com/lookup?id=1561234506&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Shirley Scott〉條目帶行內引註的第一段說：Shirley Scott（1934 年 3 月 14 日–2002 年 3 月 10 日）是美國爵士管風琴手，她的音樂以 bebop、藍調與福音元素的混合著稱，**以「Queen of the Organ」的綽號為人所知**（引註《紐約時報》2002 年 3 月 16 日的〈Shirley Scott, 67, Performer Known as the Queen of the Organ〉）。",
+    "src": "https://en.wikipedia.org/wiki/Shirley_Scott"
+   },
+   {
+    "f": "**跨張交叉線（本卡取得）**：Harold Vick 在本卡的 Discogs 條目上同時出現在三個位置——credit 欄的 Tenor Saxophone、A2〈Keep On Movin' On〉的 Written-By 欄、B3〈Don't Look Back〉的 Written-By 欄；而本批卡 6 的掛名就是 Harold Vick，那張碟的 Discogs 條目（1263277）credit 欄把他寫成 Composed By／Arranged By／Producer／Liner Notes 四個角色。**兩張碟是不同的 release-group、不同的編號（SES-7430 與 SES-7431）、不同的 Discogs master（1751130 與 1362728），是兩張不同的碟。** 兩張碟上各有一軌叫〈Don't Look Back〉，**曲名相同不足以判定是同一段錄音**（第 140 條附二）：本卡那一軌 Discogs 記 8:56、MB 記 8:56，卡 6 那一軌 Discogs 與 MB 都記 5:59，**兩個長度不同**。",
+    "src": "https://www.discogs.com/release/1263277"
+   }
+  ],
+  "hookCandidates": [
+   "原盤的 credit 欄裡沒有貝斯手：管風琴、次中音薩克斯風與鼓，三個人",
+   "Discogs 把「Inspiration」也編成一個 credit 角色，欄位上寫著一個名字：Charles Butler"
+  ],
+  "sound": "五軌兩面（Discogs 1739899 的 A1–A2、B1–B3；MB 那筆 1974 release 拉平成 1–5，兩庫曲名曲序與五軌曲長逐項一致）。原盤最短的一軌是 B2〈Big George〉5:22、最長的一軌是 A2〈Keep On Movin' On〉9:52。編制照 Discogs credit 欄是管風琴、次中音薩克斯風與鼓，A2 另加牛鈴，B3 的掛名者改彈美樂特朗；credit 欄上沒有貝斯手。（本欄由 MB 1974 release 的曲長表與 Discogs 1739899 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "What Makes Harold Sing?",
+   "Keep on Movin' On",
+   "Big George"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 1739899 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「(P) & (C) 1974 Strata-East Records, Inc.」。**Apple 的 releaseDate 1974-11-01 不得當原盤發行日**（第 140 條附二：那筆上架的是 2020 年 Arc Records 那次復刻，copyright 欄就寫著 ℗ 2020，日期是補到月初的形狀）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：Arc Records 2020 復刻與 Maxine Gordon 的再發製作人身分這條線；**Harold Vick 同時是卡 6 的掛名、又是本卡樂手與作曲者這條交叉線**（卡 6 禁用）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 5**——MB 那筆 1974 US release 的 track-count 是 5，Discogs 1739899 的曲目表也是 5 個曲位（A1–A2、B1–B3），2020 年那筆英國復刻與 Apple 那筆同樣 5 軌、曲名曲序相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號（**注意本張是 A 面兩軌、B 面三軌**）。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡只能寫自己條目上的「廠牌欄 Strata-East、編號欄 SES-7430」。**Blue Rock Studio 與 Generation Sound Studios 的分工線歸卡 6，本卡只能寫自己公司欄上那兩行 Recorded At／Mastered At。**\n(3) **交叉線的寫法有邊界**：可以寫 Harold Vick 在本卡條目上的三個位置（樂手欄與兩軌的作者欄），**但不得寫「這首〈Don't Look Back〉就是他那張同名專輯的主題曲」「她翻了他的曲子」這類句子**——兩張碟上的同名曲曲長不同（8:56 vs 5:59），**曲名相同不足以判定是同一段錄音，更不能推論翻奏關係**（第 110 條、第 140 條附二）。**只能寫成「兩張碟的作者欄上都有 Harold Vick 這個名字」這種欄位層次的陳述。**\n(4) **不得寫「她離開大廠之後」「她 1970 年代的另一面」這類生涯敘事**——策展層的 `curatorWhy` 這樣寫，那是線索不是事實（第 142 條）。維基那一段（facts 第 10 條）只給了生卒年、樂器與綽號，**沒有任何一句說她何時離開哪家廠牌**。\n(5) **「Queen of the Organ」只能照第 128 條寫成「維基〈Shirley Scott〉條目說（引註《紐約時報》訃聞）她以這個綽號為人所知」**，不得寫成本站的評價。\n(6) **Francis Wolff 那條攝影 credit 只能寫成 2020 年再發條目上的欄位**（而且條目把 Vick 的名字拼成「Harold Vik」），**不得展開成他與 Blue Note 的關係**——本卡 facts 沒有任何一條說明這批照片的來歷。\n(7) **不得寫壓量、稀有度**（第 109 條）。**不得由曲名〈What Makes Harold Sing?〉〈Big George〉推論指涉的人**（第 110 條）——作者只能照 Written-By 欄逐軌寫。\n(8) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 9 條）。**探測層標的 `ready` 成立**；她在 Prestige／Impulse! 的各張碟沒有被配上來。**Apple 那筆上架的是 2020 年復刻，曲長不得引作原盤曲長。**"
+ },
+ {
+  "key": "desc2:Sonny Fortune|Long Before Our Mothers Cried",
+  "artist": "Sonny Fortune",
+  "album": "Long Before Our Mothers Cried",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bae29790 的欄位：title《Long Before Our Mothers Cried》、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Sonny Fortune」；genre 欄只有一個標籤 jazz（1 票）；url-rels 兩條——discogs 指向 master/359678、wikidata 指向 Q19893978。掛名實體是 Sonny Fortune（MBID ea543f6c-b528-4a19-adc6-274d7f770347，type Person，country US，disambiguation 欄空）。",
+    "src": "https://musicbrainz.org/release-group/bae29790-7ca0-4447-8795-4456546be60b"
+   },
+   {
+    "f": "MB 轄下唯一那筆 1974 US release（96c57464）：status Official、title《Long Before Our Mothers Cried》、artist-credit「Sonny Fortune」、廠牌欄 Strata-East、編號欄 SES 7423、一張 12\" Vinyl、track-count 5、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈Long Before Our Mothers Cried〉14:52、2〈A Tribute to a Holiday (Billie)〉6:01、3〈Sound of Silents〉8:58、4〈Five for Trane〉6:28、5〈Wayneish〉6:45。**MB 這個 release-group 底下只有這一筆——Discogs 上那四筆（1974 促銷盤、1975 測試壓片、2013 日本 CD 與數位版）MB 都沒有收**（第 136 條）。",
+    "src": "https://musicbrainz.org/release/96c57464-131d-4df3-93df-25ba790b2ed5"
+   },
+   {
+    "f": "Discogs 原盤條目 3026961 的欄位：title《Long Before Our Mothers Cried》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、廠牌欄 Strata-East、編號欄 SES 7423、genre 欄 Jazz、style 欄 Post Bop、Modal、Spiritual Jazz。公司欄五條：Recorded At「Minot Sound」、Made By／Phonographic Copyright (p)／Copyright (c) 三條皆「Strata-East Records, Inc.」、Published By「SoFor Music Co.」。identifiers 欄三條：Rights Society「BMI」、Matrix / Runout「SES-7423-A3 DC」與「SES-7423-B DC」。",
+    "src": "https://www.discogs.com/release/3026961"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Alto Saxophone, Soprano Saxophone, Flute, Composed By, Arranged By, Producer「Sonny Fortune」**（樂器三項加作曲、編曲、製作）；**Trumpet「Charles Sullivan」**；**Electric Piano, Piano [Acoustic]「Stanley Cowell」**；Bass「Wayne Dockery」；Drums「Chip Lyles」；Congas, Triangle, Tambourine「Angel Allende」；Cowbell, Shaker「Richard Landrum」；Bass Drum, Timbales「Mario Muñoz Salazar」；Engineer「John Battiloro」與「Ron Carran」；Lacquer Cut By「Dave Crawford (2)」；Cover, Design「Carole Byard」；Photography By [Liner]「Vigo (4)」。**打擊聲部由三個人分掌不同的樂器，條目上逐項列出。**",
+    "src": "https://www.discogs.com/release/3026961"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面：A1〈Long Before Our Mothers Cried〉14:52、A2〈A Tribute To A Holiday (Billie)〉6:01、B1〈Sound Of Silents〉8:58、B2〈Five For Trane〉6:28、B3〈Wayneish〉6:45。**曲目表沒有逐軌 Written-By 欄**——作者資訊只出現在 credit 欄的「Composed By, Arranged By: Sonny Fortune」與公司欄的 Published By「SoFor Music Co.」（第 136 條）。",
+    "src": "https://www.discogs.com/release/3026961"
+   },
+   {
+    "f": "同一條目的註記欄逐行：「Recorded Sept. 8, Sept. 15, 1974 at Minot Studio, White Plains, N.Y.」、一段題獻文字「This record is dedicated to the mothers that I've known in my life, but a very special dedication to you, Mom. For without you in so many ways it could not have happened. Thank you, Sonny」、「℗ 1974 (center labels)」、「℗© 1974 Strata-East Records, Inc.」。",
+    "src": "https://www.discogs.com/release/3026961"
+   },
+   {
+    "f": "Discogs master 359678 的 versions 共 5 筆，**零筆標 Unofficial**：1974 US Strata-East SES 7423 兩筆（一筆版本欄帶 Promo、Stereo，一筆 LP, Album, Stereo）；1975 US Strata-East SES 7423（版本欄 LP, Album, Test Pressing, White Label, Stereo）；2013 Japan SHOUT! Productions SHOUT-269（CD，版本欄 Album, Reissue, Remastered, Stereo）；2013 Japan SHOUT! Productions（版本欄 MP3, Album, Reissue，編號欄 none）。",
+    "src": "https://www.discogs.com/master/359678"
+   },
+   {
+    "f": "Discogs 2013 年那筆日本 CD 5307699 的欄位：released 欄 2013-04-03、廠牌欄 SHOUT! Productions SHOUT-269、格式欄 CD ×1［Album, Reissue, Remastered, Stereo］。公司欄八條，**版權兩欄仍寫「Strata-East Records, Inc.」**，另有 Manufactured By 與 Distributed By「SHOUT! Productions Co., Ltd.」、Recorded At「Minot Sound」、**Remastered At「Turtle Tone Studios」**、Published By「So For Music」。credit 欄比原盤多五條：Remastered By [Digitally]「Michael Fossenkemper」、Directed By, Reissue Producer「Ken Tsukamoto (3)」、Supervised By [Reissue], Liner Notes「Yusuke Ogawa」、Artwork [Reissue]「Takashi Kishino」，並把 Carole Byard 的欄位寫成「Design, Artwork [Cover Painting]」。註記欄寫「Originally released as Strata-East LP SES-7423 in 1974.」、「Comes in miniature replica of original LP sleeve…」、「Printed in Taiwan」。**曲目表 5 個曲位、曲名曲序與原盤逐軌相同，曲長記 14:25、5:51、8:41、6:26、6:37——與原盤那兩庫的 14:52、6:01、8:58、6:28、6:45 逐軌都不一樣。**",
+    "src": "https://www.discogs.com/release/5307699"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 672654151，us 店面）：collectionName《Long Before Our Mothers Cried》、artistName「Sonny Fortune」、trackCount 5、releaseDate 1974-01-01、**copyright 欄「℗ 2013 Sonny Fortune」**。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Long Before Our Mothers Cried〉865173ms＝14:25、2〈A Tribute to a Holiday (Billie)〉351107ms＝5:51、3〈Sound of Silents〉521253ms＝8:41、4〈Five for Trane〉385587ms＝6:25、5〈Wayneish〉396973ms＝6:36。**五軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。探測層標的 `ready` 成立。** **Apple 那五軌的長度與 2013 年日本 CD 條目上的長度幾乎逐軌吻合（14:25、5:51、8:41、6:2x、6:3x），與 1974 原盤那兩庫的長度都不同——上架的是 2013 年那次重製。**",
+    "src": "https://itunes.apple.com/lookup?id=672654151&entity=song&country=us"
+   },
+   {
+    "f": "**跨張班底線（本卡取得）**：本卡 Discogs 條目 credit 欄上的兩個名字同時出現在本批另一張卡的條目上——**Charles Sullivan** 在本卡掛 Trumpet，而本批卡 3《Genesis》（Discogs 1215524、Strata-East SES-7413）的掛名就是 Charles Sullivan，他在那張碟掛的是 Trumpet／Flugelhorn／Composed By／Arranged By／Producer；**Stanley Cowell** 在本卡掛 Electric Piano 與 Piano [Acoustic]，在卡 3 的 credit 欄同樣掛 Piano，在本批卡 4《A Fresh Viewpoint》（Discogs 1936761、SES-7411）的 credit 欄也掛 Piano。**反向的一條也成立：本卡的掛名 Sonny Fortune 出現在卡 3 的 credit 欄，掛 Alto Saxophone。** 這四張碟各有獨立的 release-group 與編號，是四張不同的碟。",
+    "src": "https://www.discogs.com/release/1215524"
+   },
+   {
+    "f": "**Strata-East 公司欄形狀（本卡取得）**：本批九張 Strata-East 的 Discogs 條目裡，公司欄同時出現 Made By、Phonographic Copyright (p) 與 Copyright (c) 三條且三條都寫「Strata-East Records, Inc.」的有本卡（3026961）、卡 1（1306385）、卡 2（488839）、卡 3（1215524）、卡 5（1228998）五筆；另有四筆的公司欄較短——卡 6（1263277）與卡 7（1739899）沒有 Made By 那一條、卡 18（1518297）只有 Phonographic Copyright (p) 一條版權欄、卡 4（1936761）的公司欄整個是空的。**紐約第五大道 156 號那個地址出現在卡 3、卡 5、卡 6 三張的註記欄上**（卡 3 寫「Strata-East Records Inc. 156 Fifth Ave., N.Y. N.Y. 10010」，卡 5 與卡 6 寫在 ℗© 那一行後面）。",
+    "src": "https://www.discogs.com/release/3026961"
+   }
+  ],
+  "hookCandidates": [
+   "打擊聲部由三個人分掌：康加、三角鐵與鈴鼓一人，牛鈴與沙鈴一人，大鼓與定音鼓一人",
+   "Discogs 註記欄收了一段題獻文字，最後署名只有一個字：Sonny"
+  ],
+  "sound": "五軌兩面（Discogs 3026961 的 A1–A2、B1–B3；MB 那筆 1974 release 拉平成 1–5，兩庫曲名曲序與五軌曲長逐項一致）。原盤最短的一軌是 A2〈A Tribute To A Holiday (Billie)〉6:01、最長的一軌是 A1〈Long Before Our Mothers Cried〉14:52。編制照 Discogs credit 欄是中音與高音薩克斯風兼長笛（掛名者，另兼作曲、編曲與製作）、小號、電鋼琴與原音鋼琴、貝斯、鼓，加上三個人分掌的打擊聲部。（本欄由 MB 1974 release 的曲長表與 Discogs 3026961 的曲目表、credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Long Before Our Mothers Cried",
+   "Sound of Silents",
+   "Wayneish"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** 三個來源一致寫 1974：MB release-group first-release-date 1974、MB 那筆 Strata-East 原盤 release 的 date 欄 1974（只有年）、Discogs 3026961 的 year 與 released 欄皆 1974，Discogs 註記欄另寫「℗ 1974 (center labels)」與「℗© 1974 Strata-East Records, Inc.」，2013 年那筆再發的註記欄也寫「Originally released as Strata-East LP SES-7423 in 1974.」。錄音日期（1974 年 9 月 8、15 日）只出現在註記欄，**是錄音日、不是發行日**。**Apple 的 releaseDate 1974-01-01 不得當原盤發行日**（第 140 條附二：月日補 01-01 的佔位形狀，且那筆上架的是 2013 年重製）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**Strata-East 班底互相支援這條跨張線**（卡 1–8、18 其餘各卡只能逐條寫自己條目 credit 欄上的名字）；**Strata-East 的公司欄形狀與紐約第五大道 156 號地址這條線**；SHOUT! Productions 的日本迷你 LP 復刻線（卡 4 只能寫自己那筆 SHOUT-273 的欄位）。\n**本卡禁令**：\n(1) **原盤軌數只能寫 5**——MB 那筆 1974 US release 的 track-count 是 5，Discogs 3026961 的曲目表也是 5 個曲位（A1–A2、B1–B3），2013 年那筆日本 CD 與 Apple 那筆同樣 5 軌、曲名曲序相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號（**A 面兩軌、B 面三軌**）。\n(2) **Strata-East 廠牌史歸卡 3，本卡禁用。** 本卡取得的是**公司欄的形狀**（哪幾張有 Made By、哪幾張沒有、地址印在哪幾張的註記欄上），**這是欄位層次的比較，不是廠牌史**；**不得由此推論廠牌的生產或發行方式改變過**（第 110 條），也**不得寫「這家廠牌自己壓片」**——Made By 欄只是欄位。\n(3) **跨張班底線的寫法有邊界**：只能寫「同一個名字出現在哪幾張條目的哪個 credit 欄」，**不得寫「他們是同一個圈子」「互相跨刀」「班底互換」這類需要來源的關係敘述**（第 110 條），也**不得計算某個人在本批出現幾次**（第 145／154 條：全批統計量不入文）。\n(4) **不得寫「他名下的首張」**——策展層的 `curatorWhy` 這樣寫，那是線索不是事實（第 142 條）；本卡 facts 沒有任何一條能替他的碟排序。\n(5) **曲長要分清楚哪一份**：原盤兩庫一致（14:52、6:01、8:58、6:28、6:45），2013 年重製與 Apple 是另一組（14:25、5:51、8:41…）。**行文引原盤曲長只能引前者，且不得寫成「重製把曲子剪短了」——兩份都是資料庫欄位，本卡不判定原因**（第 136 條）。\n(6) **題獻文字只能照註記欄引用**，不得展開成他的家庭敘事；**不得由曲名〈Five for Trane〉〈Wayneish〉推論致敬對象**（第 110 條）——曲目表沒有逐軌 Written-By 欄。\n(7) **不得寫壓量、稀有度**（第 109 條）：版本欄那筆 Promo 與 Test Pressing／White Label 只能當版本欄字樣。\n(8) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 9 條）。**探測層標的 `ready` 成立。**"
+ },
+ {
+  "key": "desc2:Alan Braufman|Valley of Search",
+  "artist": "Alan Braufman",
+  "album": "Valley of Search",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e4e10779 的欄位：title《Valley of Search》、first-release-date 1975、primary-type Album、secondary-types 空陣列、artist-credit「Alan Braufman」；genre 欄三個標籤 avant-garde jazz、free jazz、jazz（各 1 票）；**url-rels 是空陣列——MB 這一筆沒有連到 Discogs、AllMusic 或 Wikidata 的任何一條外部連結**。掛名實體是 Alan Braufman（MBID fa2b9729-30f5-4bc0-aee2-6d89c6b8f439，type Person，country US，disambiguation 欄「American jazz musician, saxophonist, flutist and composer」）。",
+    "src": "https://musicbrainz.org/release-group/e4e10779-6b19-4a54-be95-80bf545b9d7c"
+   },
+   {
+    "f": "MB 轄下 1975 US 那筆 release（3e445645）：status Official、title《Valley of Search》、artist-credit「Alan Braufman」、廠牌欄 India Navigation、編號欄 IN 1024、一張 12\" Vinyl、track-count 9、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長（分秒為本卡自行由毫秒無條件捨去換算，**已覆核無「x:60」**）：1〈Rainbow Warriors〉2:59、2〈Chant〉8:13、3〈Thankfulness〉5:13、4〈Love Is for Real〉6:48、5〈Forshadow〉0:21、6〈Miracles〉4:00、7〈Ark of Salvation〉4:17、8〈Little Nabil's March〉5:59、9〈Destiny〉5:16。",
+    "src": "https://musicbrainz.org/release/3e445645-a8e1-43b6-9c88-15ad6ecd03b9"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 release：2018-04-13 XW（aa1d67c3，status Official、廠牌欄 **Valley of Search**、編號欄 VOS001、Digital Media、track-count 9、barcode 650384032861）。以 release?release-group=…&inc=recordings 逐版比對，**兩筆的曲名、曲序與九軌曲長逐項完全相同，沒有多出、抽換或二合一**。**注意：這一筆的廠牌欄字串與盤名字串相同（Valley of Search），是廠牌不是盤名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e4e10779-6b19-4a54-be95-80bf545b9d7c&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 3641647 的欄位：title《Valley Of Search》、year 與 released 欄皆 1975、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 India Navigation、編號欄 IN 1024、genre 欄 Jazz、style 欄 Avant-garde Jazz、Free Jazz。公司欄五條：Phonographic Copyright (p) 與 Copyright (c) 皆「India Navigation Company」、**另一條 Copyright (c)「D. K. Dickinson」**、Published By「Tree Of Life Publishing Co.」與「LeMac Publishing Co.」。identifiers 欄四條：Matrix / Runout 標籤面「IN 1024 A」「IN 1024 B」、刻紋蝕刻「IN-1024-A」與「IN-1024-B (-2)」。",
+    "src": "https://www.discogs.com/release/3641647"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Alto Saxophone／Flute／Horn [Pipe-horn] 三條都是「Alan Braufman」**；Bass「Cecil McBee」；Drums「David Lee (2)」；**Piano, Synthesizer「Gene Y. Ashton」**；Percussion「Ralph Williams (12)」；Composed By「Alan Braufman」(A1, A3 to A5, B2 to B4)、「Cecil McBee」(B1)、**「Traditional」(A2)**；**Recorded By, Photography By [Liner Photos]「Bob Cummins」**；Artwork「Design Tamadah」；Design [Cover]「Lucia Haskell McBee」；Text By [Valley Of Search]「D. Khoshhali Dickinson」。",
+    "src": "https://www.discogs.com/release/3641647"
+   },
+   {
+    "f": "同一條目的曲目表共 9 個曲位、分兩面（A1–A5、B1–B4），**九個曲位的 duration 欄全部是空的**：A1〈Rainbow Warriors〉、A2〈Chant〉、A3〈Thankfulness〉、A4〈Love Is For Real〉、A5〈Forshadow〉、B1〈Miracles〉、B2〈Ark Of Salvation〉、B3〈Little Nabil's March〉、B4〈Destiny〉。**逐軌曲長只有 MB 那兩筆有**（facts 第 2 條）。註記欄只有兩行，記的是面別總長而非逐軌長度：「Side 1 duration 24:00」「Side 2 duration 19:00」。",
+    "src": "https://www.discogs.com/release/3641647"
+   },
+   {
+    "f": "Discogs master 1359753 的 versions 共 5 筆，**零筆標 Unofficial**：1975 US India Navigation IN 1024（LP, Album）；2018 US **Valley of Search** VOS001（Vinyl，版本欄 LP, Album, Reissue, Remastered）；2020 Japan P-Vine Records PCD-24979（CD，版本欄 Album, Reissue, Remastered）；2021 US Valley of Search VOS001（CD，版本欄 Album, Reissue, Remastered）；2022 US Valley of Search VOS001（Vinyl，版本欄 LP, Album, Limited Edition, Reissue, Remastered）。**「Valley of Search」在這份清單裡同時是盤名與四筆版本的廠牌欄字串。**",
+    "src": "https://www.discogs.com/master/1359753"
+   },
+   {
+    "f": "Discogs 2018 年那筆美國黑膠 11965725 的欄位：released 欄 2018-06-29、廠牌欄 Valley of Search VOS001、格式欄 Vinyl ×1［LP, Album, Reissue, Remastered］、style 欄 Avant-garde Jazz、Free Jazz、**Free Improvisation**（原盤條目沒有第三項）。公司欄只有一條 Mastered At「Joe Lambert Mastering」。credit 欄與原盤的差異兩處：**鋼琴那一條寫的是「Piano, Dulcimer, Text By [Recitation]: Cooper-Moore」，原盤條目寫的是「Piano, Synthesizer: Gene Y. Ashton」**；另新增 Liner Notes [March, 2018]「Clifford Allen」與 Liner Notes, Other [Recording Notes]「Bob Cummins」、Remastered By「Joe Lambert」。註記欄三行：「Originally released by India Navigation Company, 1975.」、「\"Chant\" is traditional, with prayer from Bahá'í writings.」、「Includes full-page insert with liner notes.」。**曲目表 9 個曲位、曲名曲序與原盤逐軌相同，這一筆有填曲長：3:00、8:14、5:13、6:48、0:21、4:01、4:17、6:00、5:16。**",
+    "src": "https://www.discogs.com/release/11965725"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1601876664，us 店面）：collectionName《Valley of Search》、artistName「Alan Braufman」、trackCount 9、releaseDate 1975-01-01、**copyright 欄「℗ 2018 Valley of Search」**。逐軌曲名與毫秒（分秒為本卡自行由毫秒無條件捨去換算）：1〈Rainbow Warriors〉179933ms＝2:59、2〈Chant〉493613ms＝8:13、3〈Thankfulness〉313120ms＝5:13、4〈Love Is For Real〉408400ms＝6:48、5〈Forshadow〉21040ms＝0:21、6〈Miracles〉240773ms＝4:00、7〈Ark of Salvation〉257267ms＝4:17、8〈Little Nabil's March〉359933ms＝5:59、9〈Destiny〉316056ms＝5:16。**九軌曲名、曲序與曲長與 MB 兩筆逐項相同，無多出、無抽換、無二合一；collectionName 沒有 Karaoke／Instrumental／Tribute 尾綴。探測層標的 `ready` 成立。**",
+    "src": "https://itunes.apple.com/lookup?id=1601876664&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈India Navigation〉條目帶行內引註的第一段說：India Navigation 是美國唱片公司與獨立廠牌，1970 到 80 年代專營前衛爵士，由 **Bob Cummins** 創辦——他是一位替爵士樂手處理法律事務的企業律師（引註《紐約時報》2000 年 9 月 10 日 Ben Ratliff 的〈Bob Cummins, 68, a Producer In Manhattan's Loft-Jazz Scene〉，以及 Gary Kennedy 撰、Barry Kernfeld 編《The New Grove Dictionary of Jazz》第二版第 1 卷第 324 頁）；同段接著說該廠牌的目錄包括 Arthur Blythe、Pharoah Sanders、Hamiet Bluiett、Chico Freeman、Cecil McBee 與 Revolutionary Ensemble（引註同一條 New Grove 與 jazzhouse.org 2000 年的〈Bob Cummins: 1932-2000〉），此外也發過一些低限音樂的錄音。**條目的目錄表格沒有行內引註，依第 40／80 條不採用**（表格把本張列在 1024、1975）。",
+    "src": "https://en.wikipedia.org/wiki/India_Navigation"
+   },
+   {
+    "f": "**本卡的兩個名字與該廠牌創辦人重疊**：Bob Cummins 在本卡 Discogs 原盤條目的 credit 欄上掛 Recorded By 與 Photography By [Liner Photos]，在 2018 年那筆再發的 credit 欄上掛 Liner Notes, Other [Recording Notes]；而 Cecil McBee（本卡 Bass、B1 的 Composed By）與封面設計 Lucia Haskell McBee 也同時出現在同一份 credit 欄上。**這些都是條目欄位上的名字，本卡不推論他們彼此的關係。**",
+    "src": "https://www.discogs.com/release/3641647"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 那份原盤條目九個曲位一個曲長都沒填，註記欄只記了兩個數字：Side 1 duration 24:00、Side 2 duration 19:00",
+   "2018 年那次復刻，廠牌名就叫 Valley of Search——與盤名同一個字串，Discogs 的清單上廠牌欄與標題欄長得一模一樣"
+  ],
+  "sound": "九軌兩面（Discogs 3641647 的 A1–A5、B1–B4；MB 兩筆 release 拉平成 1–9，曲名曲序一致）。原盤最短的一軌是 A5〈Forshadow〉0:21、最長的一軌是 A2〈Chant〉8:13（曲長引 MB 那兩筆；Discogs 原盤條目的 duration 欄全空，只在註記欄記了兩面各 24:00 與 19:00）。編制照 Discogs credit 欄是中音薩克斯風、長笛與一支管笛（掛名者一人三項）、貝斯、鼓、鋼琴與合成器、打擊。（本欄由 MB 兩筆 release 的曲長表與 Discogs 3641647 的曲目表、credit 欄、註記欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Chant",
+   "Love Is for Real",
+   "Destiny"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "**只能寫到年。** 三個來源一致寫 1975：MB release-group first-release-date 1975、MB 那筆 India Navigation 原盤 release 的 date 欄 1975（只有年）、Discogs 3641647 的 year 與 released 欄皆 1975，2018 年那筆再發的註記欄另寫「Originally released by India Navigation Company, 1975.」。**Apple 的 releaseDate 1975-01-01 不得當原盤發行日**（第 140 條附二：月日補 01-01 的佔位形狀，且那筆上架的是 2018 年復刻，copyright 欄寫 ℗ 2018）。"
+  },
+  "notes": "**互斥分派總表在卡 1，本卡引用之。**\n\n**【本卡的分派與禁令】**\n**取得**：**India Navigation 廠牌史（Bob Cummins）**（維基〈India Navigation〉條目那段帶引註的內容，facts 第 10 條）。卡 10、11 禁用。\n**本卡禁令**：\n(1) **原盤軌數只能寫 9**——MB 那筆 1975 US release 的 track-count 是 9，Discogs 3641647 的曲目表也是 9 個曲位（A1–A5、B1–B4），2018 年那筆復刻與 Apple 那筆同樣 9 軌、曲名曲序與曲長逐項相同，**沒有加曲版、沒有二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **廠牌史只能寫維基那一段帶引註的內容，並照第 128 條寫成「維基〈India Navigation〉條目說（引註《紐約時報》訃聞與 New Grove）……」。** **條目的目錄表格沒有引註，禁止採用**（第 40／80 條）。**維基那段裡「Manhattan's Loft-Jazz Scene」只是那條引註的文章標題，不得據以展開 loft 場景敘事——loft 場景這條線歸卡 15**（第 130／146 條）。\n(3) **「Valley of Search」同時是盤名與 2018 年之後幾筆版本的廠牌欄字串**（facts 第 3、7、8 條）。**引用時一律寫明哪一個是廠牌、哪一個是盤名**；封面與試聽靠 rgMbid。\n(4) **credit 欄那兩個鋼琴名字不得合併**：原盤條目寫「Piano, Synthesizer: Gene Y. Ashton」，2018 年條目寫「Piano, Dulcimer, Text By [Recitation]: Cooper-Moore」。**兩份都是資料庫欄位，本卡沒有帶行內引註的來源可以證明兩者是同一個人**（維基〈Cooper-Moore〉條目的本名句沒有行內引註，依第 40／80 條不採用）。**行文只能各自照抄該條目上的字串，不得寫「Gene Y. Ashton 後來改名 Cooper-Moore」，也不得只寫其中一個名字而略過另一個。**\n(5) **「\"Chant\" is traditional, with prayer from Bahá'í writings.」只能照抄成 2018 年條目註記欄的一行，並註明是那一筆再發條目上的說明**；原盤條目只有 Composed By 欄的「Traditional (A2)」。**不得由盤名《Valley of Search》或曲名推論任何宗教內容**（第 110 條）——**唯一能寫的宗教相關陳述就是那一行註記與 Composed By 欄的「Traditional」。**\n(6) **不得寫壓量、稀有度**（第 109 條）：2022 年那筆版本欄的 Limited Edition 只能當版本欄字樣。\n(7) **P-Vine 2020 年那筆日本 CD（PCD-24979）只能當版本欄的一筆引用，不得展開成 P-Vine 側寫**——那條線由 a 組獨占（卡 1 全組禁令第 9 點）。\n(8) **試聽：Apple 上有這張碟，逐軌核對通過**（facts 第 9 條）。**探測層標的 `ready` 成立**；Apple 那九軌的曲長與 MB 兩筆逐項相同，**但仍不得把 Apple 的 releaseDate 當原盤發行日**。"
+ }
+]
