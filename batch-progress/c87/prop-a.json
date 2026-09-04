@@ -483,7 +483,7 @@
   ],
   "label": "Aketa's Disk",
   "why": "Aketa's Disk 第十七號（AD-17），1984 年 5 月 3 日錄於アケタの店。次中音薩克斯清水末敏帶自己的樂團「メレンゲ」（鋼琴澤田夏美、貝斯池田芳夫、鼓小山彰太、打擊池田智），明田川荘之掛共同製作並在碟上吹口哨。七首裡有歐涅・柯曼的〈Ramblin'〉、日本童謠改編的〈げんこつ山のホタルさん〉，以及〈滅びゆくインディオの哀歌〉。無任何再發，Discogs 持有數 23 份——本批 Aketa's Disk 七張裡唯一一張連數位再發都沒有的。",
-  "risk": "MusicBrainz 上查無「清水末敏」實體：以日文查回「清水末寿」（0 個 release-group）、以 Suetoshi Shimizu 查回同一個；以團名「清水末敏メレンゲ」查回的是另一支叫「メレンゲ」的日本樂團（18 個 release-group，2000 年代的搖滾團，與本盤無關）。全屬第 122 條的形狀，已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：Discogs 原盤同時印「Shimizu Suetoshi Melangé」與「清水末敏メレンゲ」，團名的法文拼寫 Melangé 帶重音符號、羅馬拼音另有 Merengue／Melange 兩種可能，本機比對要含重音與不含重音兩式；盤名羅馬拼音 Hot Cake Mix。**貝斯池田芳夫與鼓小山彰太在池中另有掛名卡的可能，但本卡掛名是清水末敏メレンゲ，不重複計數。**封面與試聽預估：Apple jp／us 搜尋皆 0 筆，本盤無數位發行、無 CD 再發，**封面要本機掃圖、試聽必然缺**——本批 Aketa's Disk 七張裡唯一缺封面的一張。",
+  "risk": "MusicBrainz 上查無「清水末敏」實體：以日文查回「清水末寿」（0 個 release-group）、以 Suetoshi Shimizu 查回同一個；以團名「清水末敏メレンゲ」查回的是另一支叫「メレンゲ」的日本樂團（18 個 release-group，2000 年代的搖滾團，與本盤無關）。全屬第 122 條的形狀，已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：Discogs 原盤同時印「Shimizu Suetoshi Melangé」與「清水末敏メレンゲ」，團名的法文拼寫 Melangé 帶重音符號、羅馬拼音另有 Merengue／Melange 兩種可能，本機比對要含重音與不含重音兩式；盤名羅馬拼音 Hot Cake Mix。**貝斯池田芳夫與鼓小山彰太在池中另有掛名卡的可能，但本卡掛名是清水末敏メレンゲ，不重複計數。****2026-09-04 研究層更正**：Apple 上有條目，collectionId **1472476971**——搜尋查不到是因為 Apple 掛名寫「清水末**寿**メレンゲ」／Suetoshi Shimizu，與卡片和 Discogs 的「清水末**敏**」字串對不上（第 122／134 條的形狀）。已實查：七軌與原盤曲目一一對應（Hot Cake Mix／Song for a Lonely Woman／Genkotsuyama No Hotarusan／You Don't Know What Duo Is／Cancion Del Derrumbe Indio／Ramblin／Do You Know Yocchan），七軌全部帶試聽，封面資產 OTLCD2409。欄位 coverSourceHint 已由 manual-scan 改為 apple-verified-collection。**另：本盤有 2019 年 CD 復刻（Octave Lab OTLCD2409，Discogs release 13921817，未標 Unofficial），「無任何再發」不成立。**",
   "identitySource": "manual",
   "mbNote": "",
   "releaseType": "Album",
@@ -506,9 +506,10 @@
    "https://www.discogs.com/label/91323-Aketas-Disk"
   ],
   "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
-  "coverSourceHint": "manual-scan",
+  "coverSourceHint": "apple-verified-collection",
   "queryAlias": "Shimizu Suetoshi Melange",
-  "reissuedBy": ""
+  "reissuedBy": "",
+  "appleCollectionId": 1472476971
  },
  {
   "artist": "元岡一英",
