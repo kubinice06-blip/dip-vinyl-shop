@@ -238,7 +238,7 @@
     "src": "https://www.discogs.com/artist/893254"
    },
    {
-    "f": "Apple Music 英國店面那筆（collectionId 1699420665）：artistName 欄寫成「FFA Coffi Pawb」（Ffa 全大寫）、標題《Hei Vidal!》、trackCount 欄 12、releaseDate 1999... 實際欄位為 1992-01-01、copyright 欄「℗ 1992 Ara Deg」；十二個曲名與 MusicBrainz 1992 卡帶那筆逐軌相同，第 10 軌作〈Pelydr Secs〉、第 11 軌因店面字元處理寫成〈Ofn- Cwn〉。",
+    "f": "Apple Music 英國店面那筆（collectionId 1699420665）：artistName 欄寫成「FFA Coffi Pawb」（Ffa 全大寫）、標題《Hei Vidal!》、trackCount 欄 12、releaseDate 欄 1992-01-01、copyright 欄「℗ 1992 Ara Deg」；十二個曲名與 MusicBrainz 1992 卡帶那筆逐軌相同，第 10 軌作〈Pelydr Secs〉、第 11 軌因店面字元處理寫成〈Ofn- Cwn〉。",
     "src": "https://music.apple.com/gb/album/hei-vidal/1699420665"
    },
    {
@@ -383,7 +383,7 @@
   "sound": "五人編制、三個聲部都掛人聲（主唱兼吉他、第二吉他兼和聲、鼓手兼人聲），加上鍵盤與貝斯。作曲高度集中：Discogs 兩筆原盤條目的 Written-By／Songwriter 欄都只有 Anjali Bhatia 一個名字，封面美術也是她。製作是外聘 Count Dubulah 與樂團並列，工程掛 Paul Tipler。整張在 Blackwing Studios 錄於 1993 年 11 月。（本欄由 Discogs 兩筆原盤條目的 credit 欄與註記欄歸納，構成它的原始值都在 facts 裡。）",
   "keyTracks": [
    "You're Dumped",
-   "Supermarket / Shopping Girl Maniac",
+   "Shopping Girl Maniac",
    "Chocolate Eyes"
   ],
   "status": "full",
@@ -455,5 +455,261 @@
    "note": "1994 無爭議；**日期兩說但差四天**：Discogs 原盤 CD 條目 753023 的 released 欄是 **1994-05-16**（Apple 那筆的 releaseDate 也是 1994-05-16），MusicBrainz release-group 的 first-release-date 與其中一筆英國 CD 的日期是 **1994-05-12**。兩邊都有具體記載，**行文只能寫到「1994 年 5 月」，不得挑其中一個日子斷言**（第 127 條附註的形狀）。"
   },
   "notes": "**分派與禁令見〈Open Doors / Closed Windows〉那張的總表。**\n**取得**：**PJ Harvey 客座這條線**（本組唯一一張她掛 credit 的碟）。\n**禁用**：Too Pure 廠牌史歸〈Lido〉；Blackwing Studios 歸〈Chocolate Revenge〉；Paul Tipler 的工程線歸〈Pabulum〉；Stuart Hawkes 的母帶／刻紋線歸〈Houdini〉——本卡對這四條各只能寫「本張的某某欄掛某人」一句。\n**本卡禁令**：(1) **原盤軌數只能寫 10**（MB 四筆 release 全 10、Discogs CD 與 LP 都 10、Apple trackCount 10）。(2) **PJ Harvey 的寫法有硬限制**：credit 欄實印的是「Polly Harvey」，Discogs 把它對應到 PJ Harvey 這個藝人實體。行文**必須寫成「credit 欄的人聲掛 Polly Harvey」或「Discogs 把該欄對應到 PJ Harvey」**，並**必須帶上軌次限定（十軌裡的五軌）**；**不得寫成「PJ Harvey 參與整張」「PJ Harvey 合作專輯」**，也**不得寫她與 Too Pure 的關係**——那條屬於〈Lido〉的廠牌史（第 146 條）。(3) 兩個編號（PURECD33／PURE CD33）只能照註記欄寫成「書背與碟面印的不一樣」。(4) **不得寫成員在別團的身分**：Discogs 成員欄裡有 Margaret Fiedler、Michael Rother 等人，本批沒有任何來源談他們的其他樂團（第 146 條）。(5) 曲長只有 Discogs 有列，MB 該 RG 的 release 曲長不完整——引用曲長時寫成「Discogs 登錄的曲長」。"
+ },
+ {
+  "key": "desc2:Gorky's Zygotic Mynci|Tatay",
+  "artist": "Gorky's Zygotic Mynci",
+  "album": "Tatay",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 565473 的欄位：廠牌 Ankst、編號欄同時登 ANKST 047 與 ankst 047cd、國別 UK、released 欄 1994-03-00、CD ×1［Album］；註記欄說明編號在書背／封底／內卡印 ANKST 047、在碟面與內頁印 ankst 047cd，並寫 Jewel case with 4 page booklet。",
+    "src": "https://www.discogs.com/release/565473"
+   },
+   {
+    "f": "同一條目的公司欄：Recorded At 兩處「Stiwdio Ofn」與「GZM Studios」、Glass Mastered At「Nimbus」、Phonographic Copyright (p) 與 Copyright (c) 都是 Ankst；credit 欄只有四條：Cover「Alan Holmes」、Engineer「Gorwel Owen」、Producer［Production］「Alan Holmes」與「Gorky's Zygotic Mynci」（anv 欄 GZM）。",
+    "src": "https://www.discogs.com/release/565473"
+   },
+   {
+    "f": "同一條目的逐軌 credit 極細，樂器都寫到型號：第 2 軌列 Euros Childs 的 Keyboards［Yamaha Portasound 1982 Model］與 Synthesizer［Moog］、Alan Holmes 的 Cymbal［Backwards］；第 5 軌把 John Lawrence 的 Other 欄寫成［Kettle］與［Television］、Alan Holmes 的寫成［Chair］、Euros Childs 的寫成［Cardboard Boxes］；第 7 軌把 John Lawrence 的吉他註成［12-String Fender With Capo］。",
+    "src": "https://www.discogs.com/release/565473"
+   },
+   {
+    "f": "同一條目的曲目欄共十六個曲名，位置編到 12 之後改用 13a／13b／13c／13d 四段：1 Thema O Cartref 1:43、2 Beth Sy'n Digwydd I'r Fuwch 5:05、3 Tatay 1:40、4 Y Ffordd Oren 2:39、5 Gwres Prynhawn 2:43、6 Amsermaemaiyndod / Cinema 2:53、7 O, Caroline 2:48、8 Naw. E. Pimp 2:48、9 Kevin Ayers 1:43、10 When You Hear The Captain Sing 1:29、11 O, Caroline II 2:15、12 Tatay (Moog Mix) 1:49、13a Anna Apera 4:02、13b Gegin Nos 3:32、13c Silff Ffenest 3:04、13d Backward Dog 0:38。",
+    "src": "https://www.discogs.com/release/565473"
+   },
+   {
+    "f": "同一條目的第 7 軌〈O, Caroline〉Written-By 欄列的是 **David Sinclair 與 Robert Wyatt** 兩人；其餘各軌的 Written-By 欄不是 Euros Childs 就是 John Lawrence，第 6、13b、13c 三軌另並列 Richard James。",
+    "src": "https://www.discogs.com/release/565473"
+   },
+   {
+    "f": "MusicBrainz release-group 41d8c42a 的欄位：title《Tatay》、first-release-date 1994-03、primary-type Album、secondary-types 空；轄下兩筆 release——1994-03 GB 的 Ankst／ANKST 047（CD、**track-count 16**、barcode 5019148023777）與 1996-02-21 JP 的 Ankst 與 MAXIMUM X 合掛的 AVCM 65011（CD、**track-count 20**）。",
+    "src": "https://musicbrainz.org/release-group/41d8c42a-8341-3d33-844e-d9489076a6cc"
+   },
+   {
+    "f": "Discogs 日本盤條目 571055（Maximum X／Ankst、AVCM 65011、1996-02-21）的曲目欄在第 16 軌之後插入一行「Bonus Tracks」，接著列第 17–20 軌〈Suzzanne〉2:35、〈Monica〉1:54、〈Electric Sailor〉3:36、〈Cinema〉2:49；註記欄寫該版附日文解說與中折歌詞單、有腰帶（Obi），公司欄有 Licensed From「Ankst」、Manufactured By「Avex D.D., Inc.」，識別欄有 Rights Society「JASRAC」。",
+    "src": "https://www.discogs.com/release/571055"
+   },
+   {
+    "f": "MusicBrainz 藝人 4015f3f8 的欄位：實體名「Gorky’s Zygotic Mynci」（彎引號）、country GB、begin-area Carmarthen、type Group、life-span 1991 起至 2006-05-26 止、名下 25 個 release-group；primary-type Album 依序為 1991-05-03《Allumette》、1992-06-29《Peiriant Pleser》、1993《Patio》、1994-03《Tatay》、1995-07-17《Bwyd Time》，之後才是 1997 年起的 Mercury／Mantra 時期。",
+    "src": "https://musicbrainz.org/artist/4015f3f8-2711-41de-b80b-4fee07373b12"
+   },
+   {
+    "f": "Discogs 藝人頁 80397 的簡介欄整句只有「A psychedelic/folk rock band (formed in Carmarthen in 1991 and disbanded in 2006), that have sung songs in both English and Welsh.」；名稱變體欄列 GZM、G.Z.M.、Gorky's、The Elves、片假名「ゴーキーズ・ザイブティック・マンキ」等十餘種寫法。",
+    "src": "https://www.discogs.com/artist/80397"
+   },
+   {
+    "f": "Apple Music 英國與美國店面以藝人名查詢各回八至九筆 Gorky's Zygotic Mynci 條目，最早的是 1997 年的《Barafundle》（collectionId 1443772886，℗ 1997 Mercury Records Limited），其後是 Mercury 與 Mantra 時期的碟；**Ankst 時期（含本張）在兩個店面都沒有條目**；再以盤名關鍵詞查詢亦回零筆。",
+    "src": "https://music.apple.com/gb/album/barafundle/1443772886"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄把水壺、電視與紙箱都列成樂器",
+   "同一首〈O, Caroline〉在碟上出現兩次"
+  ],
+  "sound": "樂團自製、外加一位共同製作人與一位錄音師的三方掛名。編制以 Euros Childs 的人聲與鍵盤／Moog 為軸，John Lawrence 的吉他與 Richard James 的貝斯輪流補位，Megan Childs 的小提琴只出現在部分軌次，鼓則由兩個名字分擔。逐軌 credit 把 Yamaha Portasound、Hammond、Moog 這些型號與水壺、椅子、紙箱這類非樂器並列登錄。十六軌普遍短小——Discogs 登錄的曲長只有一首超過五分鐘，最短的 0:38。（本欄由 Discogs 原盤 CD 的逐軌 credit 欄與曲長表歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Beth Sy'n Digwydd I'r Fuwch",
+   "O, Caroline",
+   "Silff Ffenest"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，兩方一致無爭議且**可寫到月**：MB release-group first-release-date **1994-03**、MB 英國那筆 release 也是 1994-03、Discogs 原盤 565473 的 released 欄 **1994-03-00**（Discogs 的零日寫法代表只登到月）。**行文可寫「1994 年 3 月」，不得寫到日。**"
+  },
+  "notes": "**分派與禁令見〈Open Doors / Closed Windows〉那張的總表。**\n**禁用**：Ankst 廠牌史歸〈Llawenydd Heb Ddiwedd〉；威爾斯語場景敘事歸〈Libertino〉；Gorwel Owen 的角色線歸〈Hei Vidal!〉；**Alan Holmes 的跨團角色線歸〈I Can't Believe It's Not Reggae!〉**——本卡對後兩者各只能寫「本張的 Engineer／Producer 欄掛他」一句。\n**本卡禁令**：(1) **原盤軌數只能寫 16**。MB 英國那筆 track-count 16、Discogs 十六個曲名（位置編到 13a–13d 是分段寫法，不是四張碟）。**1996 年日本盤的 20 軌不是原盤**——Discogs 日本盤條目自己在第 17 軌前插了一行「Bonus Tracks」，那四首是加曲（第 140／141 條）。**行文不得寫「二十軌」，也不得把〈Suzzanne〉〈Monica〉〈Electric Sailor〉〈Cinema〉當成本碟曲目。**(2) 〈O, Caroline〉可以寫成翻奏，**但寫法只能是「Discogs 原盤條目的 Written-By 欄把這一軌的作者列成 David Sinclair 與 Robert Wyatt」**——**不得寫「這是 Caravan 的歌」或「Matching Mole 的歌」**，條目欄位上沒有出現任何團名，那是推論（第 110／136 條）。同理，第 9 軌曲名叫〈Kevin Ayers〉，**絕對不得由曲名推論它與該人有任何關係**（第 110 條）。(3) 第 11 軌兩種登錄（Discogs「O, Caroline II」／MB 該筆 release 亦作「O, Caroline」）——只能寫「同名曲在碟上出現兩次、Discogs 給第二次加了 II」，不得斷言封面實印。(4) 逐軌的家用品 credit（水壺、電視、椅子、紙箱）可以照 credit 欄引用，**但不得寫成「他們用垃圾做音樂」之類的動機或評價**（第 136 條）。(5) **試聽：Apple 上查無。**已依第 152 條做兩路查詢——藝人頁在英美店面各有八九筆條目、最早只到 1997 年的《Barafundle》，Ankst 時期整段缺席，**確認是真的沒有這張碟**。"
+ },
+ {
+  "key": "desc2:Minxus|Pabulum",
+  "artist": "Minxus",
+  "album": "Pabulum",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 823489 的欄位：廠牌 Too Pure、編號 PURE  CD43、國別 UK、released 欄 1995、CD ×1［Album］、barcode 5 021904 004326；genre 欄 Rock、style 欄 Indie Rock 與 Alternative Rock。",
+    "src": "https://www.discogs.com/release/823489"
+   },
+   {
+    "f": "同一條目的 credit 欄只有五條：Vocals／Guitar「Gavin Pearce (2)」、Vocals／Bass「She Rocola」、Drums「Joe Whitney」、Producer「Paul Tipler」、Producer 與 Written By「Minxus」——也就是作曲整張掛團名、製作由團與 Paul Tipler 並列。",
+    "src": "https://www.discogs.com/release/823489"
+   },
+   {
+    "f": "同一條目登錄十五軌並附曲長：1 Minxus 3:01、2 Silk Purse 2:26、3 I Know You Want To Stop 3:16、4 Pabulum 3:52、5 The Falcon Contract 1:44、6 Vultura 3:16、7 Wonderful Pair 2:27、8 **Cet** 2:45、9 I Live On Sand 1:24、10 Monkey Theme 2:00、11 Liberty Bodice (a) 2:54、12 Fecund Girls 2:10、13 Sunshine 2:31、14 XY Zoom 2:24、15 Ever Since Forever 2:59。",
+    "src": "https://www.discogs.com/release/823489"
+   },
+   {
+    "f": "Discogs 黑膠條目 1161011（Too Pure／PURE 43、1995、Vinyl LP）登錄同樣十五軌、分 A1–A7 與 B1–B8，credit 欄與 CD 版逐條相同；註記欄與公司欄寫錄音地是「Falconer Studios」——這條資訊只出現在黑膠條目，CD 條目沒有錄音地欄位。",
+    "src": "https://www.discogs.com/release/1161011"
+   },
+   {
+    "f": "MusicBrainz release-group ab06bd96 的欄位：title《Pabulum》、first-release-date 1995、primary-type Album、secondary-types 空；轄下兩筆 release 都是 15 軌——1995 GB 的 Too Pure／PURE CD 43（CD、barcode 5021904004326）與一筆無日期的 Too Pure／PURE43DL 數位（barcode 644918004363）。",
+    "src": "https://musicbrainz.org/release-group/ab06bd96-dedb-38d9-b349-351c54b8225b"
+   },
+   {
+    "f": "MusicBrainz 1995 那筆 release（fe108e04）的第 8 軌登錄為〈**Get**〉2:46，與 Discogs 的〈Cet〉不同；其餘十四軌曲名與 Discogs 逐軌相同，第 11 軌作〈Liberty Bodice (a)〉。",
+    "src": "https://musicbrainz.org/release/fe108e04-cb7b-464a-850a-e1eb3cb17afe"
+   },
+   {
+    "f": "MusicBrainz 藝人 fcc24c9b 的欄位：country GB、type Group、life-span 全空（ended 為 false）、begin-area 空、**名下只有 2 個 release-group**，其中 primary-type Album 的只有本張。",
+    "src": "https://musicbrainz.org/artist/fcc24c9b-c37b-4112-a020-79b0b8a1f830"
+   },
+   {
+    "f": "Discogs 藝人頁 110974 的簡介欄整句寫「Too Pure's indie rockers, Minxus, enjoyed a short lived career. The three piece released just the one album in 1995, which was delivered with distinctive rhythms and vocals.」；成員欄三人：Joe Whitney、She Rocola、Gavin Pearce (2)。",
+    "src": "https://www.discogs.com/artist/110974"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 251662381）：標題《Pabulum》、trackCount 欄 15、releaseDate 1995-01-30、copyright 欄「℗ **1994** Too Pure Records Ltd」；第 8 軌在 Apple 上寫成〈**Get**〉、第 11 軌寫成〈Liberty Bodice〉（沒有括號的 a）。",
+    "src": "https://music.apple.com/gb/album/pabulum/251662381"
+   },
+   {
+    "f": "Discogs 上另有 1995 年美國 American Recordings／Too Pure 的授權 CD（條目 2454065、編號 9 43011-2）與法國 Too Pure／Virgin France 的 CD（11366879、編號 8401732），以及一筆英國宣傳 CD（4253246、PURE CD43）。",
+    "src": "https://www.discogs.com/release/2454065"
+   }
+  ],
+  "hookCandidates": [
+   "三個人、一張專輯，樂團生涯就這麼多",
+   "第八軌的名字，兩個資料庫各寫各的"
+  ],
+  "sound": "三人編制，兩人兼人聲（一個兼吉他、一個兼貝斯），第三人打鼓；作曲欄整張只寫團名，沒有個人署名。製作是團與 Paul Tipler 並列。十五軌全部偏短——Discogs 登錄的曲長沒有一首到四分鐘，最短 1:24，全碟九首在兩到三分鐘之間。（本欄由 Discogs 原盤 CD 與黑膠兩筆條目的 credit 欄與曲長表歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Silk Purse",
+   "Pabulum",
+   "Ever Since Forever"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，三方一致：MB release-group first-release-date 1995、MB 那筆 release 1995、Discogs CD 與黑膠兩筆的 released 欄都是 1995。**只能寫到年**：Apple 那筆雖有 releaseDate 1995-01-30，但它的 copyright 欄寫 ℗ 1994、與各方的 1995 不符，**該筆的日期與 1994 都不得引用**。"
+  },
+  "notes": "**分派與禁令見〈Open Doors / Closed Windows〉那張的總表。**\n**取得**：**Paul Tipler 的工程線**（他在本卡是掛名的 Producer，是本組唯一一張他掛製作人的碟；〈Chocolate Revenge〉與〈The Sound Your Eyes Can Follow〉他掛的是 Engineer）。**那兩張只能寫「本張的 Engineer 欄掛他」一句，不得展開。**\n**禁用**：Too Pure 廠牌史歸〈Lido〉。\n**本卡禁令**：(1) **原盤軌數只能寫 15**（MB 兩筆 release 都 15、Discogs CD 與黑膠都 15、Apple trackCount 15，三方一致）。(2) **第 8 軌兩種寫法**（Discogs「Cet」／MB 與 Apple「Get」）只能寫成「資料庫寫法不一致」；要寫進行文採 **MB／Apple 的〈Get〉**（二比一），**不得斷言唱片上印的是哪一個**。(3) Discogs 藝人頁那句「delivered with distinctive rhythms and vocals」是廠牌文案式的形容詞，**不得採用**（無署名、無出處，第 40／80 條）；同頁可以採用的只有「三人編制、1995 年只出過這一張」這個可回問的事實，且要寫成「Discogs 藝人頁說」（第 128 條）。(4) **MB 藝人名下只有兩個 release-group** 這件事只能寫成資料庫欄位（第 136 條），**不得寫成「他們一生只留下這張」**——「條目上沒有」不等於「不存在」。(5) 錄音地 Falconer Studios 只出現在黑膠條目，引用時要寫成「Discogs 黑膠條目的公司欄」。"
+ },
+ {
+  "key": "desc2:Long Fin Killie|Houdini",
+  "artist": "Long Fin Killie",
+  "album": "Houdini",
+  "facts": [
+   {
+    "f": "Discogs 原盤 CD 條目 2395534 的欄位：廠牌 Too Pure、編號 Pure cd 47、國別 UK、released 欄 1995、CD ×1［Album］、barcode 5 016554 704726；註記欄寫「Recorded at Chamber Studio, Edinburgh.」「Dedicated to Lady Duncan & Andrew Of Jordanstone.」與「The untitled hidden track is an alternative version of Corngold.」。",
+    "src": "https://www.discogs.com/release/2395534"
+   },
+   {
+    "f": "同一條目的 credit 欄：Engineer 與 Producer 掛 Jamie Watson；Written-By 與 Producer 掛 Long Fin Killie；Compiled By 與 Edited By 掛 Mark Saunders；Mastered By［Cuts By］掛 Stuart Hawkes；Layout 掛 Johnny Moffat；Performer 四人：Luke Sutherland、Colin Greig（anv 欄 Colin Grieg）、Philip Cameron、David Turner (5)；公司欄有 Recorded At「Chamber Studio」、Mastered At「Copymasters」、Glass Mastered At「Nimbus」、Published By「Too Pure Music」。",
+    "src": "https://www.discogs.com/release/2395534"
+   },
+   {
+    "f": "同一條目的曲目欄有兩條逐軌客座 credit：**第 4 軌〈The Heads Of Dead Surfers〉的 Guest［Guest Vocal］欄掛 Mark E. Smith**，第 7 軌〈Hollywood Gem〉的 Guest［Guest Vocal］欄掛 Ruth Emond。",
+    "src": "https://www.discogs.com/release/2395534"
+   },
+   {
+    "f": "同一條目登錄十三個位置，最後一個位置再分三段：1 (A) Man Ray 3:44、2 How I Blew It With Houdini 8:51、3 Homo Erectus 3:47、4 The Heads Of Dead Surfers 3:50、5 Montgomery 0:57、6 Love Smothers Allergy 6:00、7 Hollywood Gem 3:04、8 The Lamberton Lamplighter 5:10、9 Corngold 5:03、10 Idiot Hormone 2:59、11 Rockethead On Mandatory Surveillance 2:23、12 Flower Carrier 4:18、13.1 Unconscious Gangs Of Men 8:00、13.2 (silence) 1:04、13.3 Untitled 4:40。",
+    "src": "https://www.discogs.com/release/2395534"
+   },
+   {
+    "f": "Discogs 黑膠條目 1340516（Too Pure／Pure 47、1995、Vinyl LP、barcode 5 016554 704719）**只登十一軌**、分 A1–A5 與 B1–B6，曲序也與 CD 不同（〈Montgomery〉排在〈The Heads Of Dead Surfers〉之前）；CD 上的〈Love Smothers Allergy〉與〈Flower Carrier〉不在黑膠的曲目欄裡；Matrix／Runout A 面刻「PURE 47 A1 Stu.」，Lacquer Cut By 欄掛 Stuart Hawkes（anv 欄 Stu）。",
+    "src": "https://www.discogs.com/release/1340516"
+   },
+   {
+    "f": "MusicBrainz release-group f271494c 的欄位：title《Houdini》、first-release-date 1995、primary-type Album、secondary-types 空；轄下三筆 release **全部是 13 軌的 CD**——1995 GB 的 Too Pure／Pure cd 47、1995 DE 的 Too Pure／RTD 121.3045.2（barcode 與英國盤相同）、1995 US 的 American Recordings／9 43036-2。",
+    "src": "https://musicbrainz.org/release-group/f271494c-3253-3bd9-8029-73b2a053f43d"
+   },
+   {
+    "f": "MusicBrainz 英國那筆 release（8ce50f37）的十三軌曲長：3:43、8:51、3:47、3:50、0:57、6:00、3:04、5:10、5:03、2:59、2:23、4:18、13:45——最後一軌的長度含註記欄所說的靜音與隱藏段。",
+    "src": "https://musicbrainz.org/release/8ce50f37-4003-438a-a9c0-3ba75cc51839"
+   },
+   {
+    "f": "MusicBrainz 藝人 ad9598d4 的欄位：country GB、begin-area Scotland、type Group、life-span 自 1993 起（ended 為 false）、名下 7 個 release-group，primary-type Album 三筆：1995《Houdini》、1996-05-27《Valentino》、1997《Amelia》。",
+    "src": "https://musicbrainz.org/artist/ad9598d4-aa12-42b0-ad5d-b4241970892f"
+   },
+   {
+    "f": "Discogs 藝人頁 135315 的簡介欄整句只有「Long Fin Killie was a Scottish experimental rock/post-rock band.」；名稱變體欄只有「lfk」；成員欄五人：Luke Sutherland、Kenny McEwan、Colin Greig、Philip Cameron、David Turner (5)。",
+    "src": "https://www.discogs.com/artist/135315"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1048027838）：標題《Houdini》、trackCount 欄 13、releaseDate 1995-06-12、copyright 欄「℗ 1995 Too Pure Records Ltd」；十三個曲名與 CD 版逐軌對應，唯第 2 軌在 Apple 上漏了介系詞、寫成〈How I Blew It Houdini〉。",
+    "src": "https://music.apple.com/gb/album/houdini/1048027838"
+   }
+  ],
+  "hookCandidates": [
+   "最後一軌走完，靜了一分零四秒才有下文",
+   "黑膠比 CD 少收兩首，曲序也不一樣"
+  ],
+  "sound": "四人演奏（Discogs Performer 欄），作曲欄整張掛團名；製作是團與 Jamie Watson 並列，另有一位掛 Compiled By／Edited By 的第三人。兩軌有客座人聲，其餘十一軌沒有外援。長度分佈兩極：Discogs 登錄的曲長最短 0:57、最長 8:51，六分鐘以上的有兩首，三分鐘以下的有三首；末軌後方接一段靜音與一段無題錄音，註記欄說那是〈Corngold〉的另一個版本。（本欄由 Discogs 原盤 CD 的 credit 欄、註記欄與曲長表歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "How I Blew It With Houdini",
+   "The Heads Of Dead Surfers",
+   "Unconscious Gangs Of Men"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，三方一致：MB release-group first-release-date 1995、MB 三筆 release 全為 1995、Discogs CD 與黑膠兩筆的 released 欄都是 1995。**只能寫到年**：Apple 那筆的 releaseDate 1995-06-12 是唯一一個到日的值、且無第二個來源支持，**不得單獨採用**。"
+  },
+  "notes": "**分派與禁令見〈Open Doors / Closed Windows〉那張的總表。**\n**取得**：(1) **Mark E. Smith 客座這條線**（本組唯一一張）；(2) **Stuart Hawkes 的母帶／刻紋線**（本卡是本組唯一一張他同時出現在 CD 的 Mastered By［Cuts By］與黑膠的 Lacquer Cut By、且名字刻進 runout 的碟）。**〈Lido〉與〈The Sound Your Eyes Can Follow〉只能寫「本張的某某欄掛他」一句。**\n**禁用**：Too Pure 廠牌史歸〈Lido〉。\n**本卡禁令（軌數，這張最容易寫錯）**：**CD 是 13 軌、黑膠是 11 軌，兩個格式收的曲目不一樣**（黑膠沒有〈Love Smothers Allergy〉與〈Flower Carrier〉，曲序也不同）。**行文不得給一個籠統的總數**，要寫就必須寫成「CD 版十三軌／黑膠版十一軌」並標明是哪個格式（第 141 條、第 127 條附註的形狀）。MB 三筆 release 全部是 13 軌的 CD，**MB 這一側看不到黑膠**——不得用 MB 的一致性去否定黑膠條目（第 136 條）。\n**其他禁令**：(1) 隱藏軌只能照註記欄寫成「Discogs 註記欄說那段無題錄音是〈Corngold〉的另一個版本」，**不得寫成「彩蛋」「藏了一首歌」之類的評價**。(2) **Mark E. Smith 的寫法**：只能寫「第 4 軌的 Guest Vocal 欄掛 Mark E. Smith」，**不得寫他所屬的樂團**——條目欄位上沒有出現團名（第 110／136 條）。(3) 題獻詞（Lady Duncan & Andrew Of Jordanstone）可以照註記欄引用，**不得解釋那是誰**。(4) 曲名〈Homo Erectus〉〈(A) Man Ray〉等**不得做任何典故推論**（第 110 條）。"
+ },
+ {
+  "key": "desc2:Prolapse|backsaturday",
+  "artist": "Prolapse",
+  "album": "backsaturday",
+  "facts": [
+   {
+    "f": "Discogs 原盤黑膠條目 401777 的欄位：廠牌 Lissy's Records、編號欄同時登 LISS 8 與 LISS8（註記欄說明封面與標籤印 LISS 8、條碼欄印 LISS8）、國別 UK、released 欄 1995、格式 Vinyl ×1［LP, Album］、格式的 text 欄標「DMM」；註記欄寫「Recorded 28-30 July 1995.」與「DMM - Direct Metal Mastered」。",
+    "src": "https://www.discogs.com/release/401777"
+   },
+   {
+    "f": "同一條目的 credit 與公司欄：Producer「Baz Barrett」、Direct Metal Mastering By「Guy Davie」（anv 欄 Guy）、Mastered At「The Exchange」；Matrix／Runout 兩面都標 etched，A 面刻「LISS8 A1 REMEMBER THE DIESEL BARBIE! A -DMM-」，B 面刻「LISS 8 B1 AKIN TO THE WEASEL -DMM- A GUY - THE EXCHANGE」。",
+    "src": "https://www.discogs.com/release/401777"
+   },
+   {
+    "f": "同一條目的曲目欄只有七個位置，**A 面整面只有一首**：A〈Flex〉；B 面六首依序是 B1〈Mein Minefield, Mine Landmine〉、B2〈Framen Fr. Cesar〉、B3〈Every Night I'm Mentally Crucified (7000 Times)〉、B4〈Zen Nun Deb〉（該軌另掛 Vocals「Jonathan Barrett」）、B5〈Drown Radio Therapy〉、B6〈Strain Contortion Of Bag〉。",
+    "src": "https://www.discogs.com/release/401777"
+   },
+   {
+    "f": "Discogs 英國 CD 條目 673158（Lissy's Records、編號 LISS 8CD、1995、CD ×1［Album］、格式 text 欄「Digipak」、註記欄寫 Original foldover cardboard Digipak edition）同樣只有**七軌**並附曲長：1〈Flex〉**15:07**、2〈Mein Minefield, Mine Landmine〉2:19、3〈Framen Fr. Cesar〉7:53、4〈Every Night I'm Mentally Crucified (7000 Times)〉2:19、5〈Zen Nun Deb〉5:52、6〈Drown Radio Therapy〉1:40、7〈Strain Contortion Of Bag〉2:23。",
+    "src": "https://www.discogs.com/release/673158"
+   },
+   {
+    "f": "同一 CD 條目的 credit 欄列出六人編制：Guitar／Vocals「David Jeffreys」（anv 欄 Dave Jeffreys）、Vocals／Keyboards／Recorder「Linda Steelyard」、Vocals／Synthesizer［Stylophone］「Mick Derrick」、Bass／Guitar「Mick Harrison」、Guitar／Keyboards「Pat Marsden」、Drums「Tim Pattison」；Producer 與 Engineer 都是 Baz Barrett；Written-By 整張掛 Prolapse；Published By「Complete Music」；Made By「PDO, UK」。",
+    "src": "https://www.discogs.com/release/673158"
+   },
+   {
+    "f": "Discogs 美國條目 2972942（Jetset Records、TWA 01 CD、released 1995-04-09、Digipak）**登九軌**，註記欄明寫「US edition with a rearranged track order and additional tracks 'Irritating Radiator' and 'TCR'.」並註明「Tracks 2, 6 licensed from Love Train／Tracks 1, 3, 4, 5, 7, 8, 9 licensed from Lissy's」；該版把〈Flex〉排到第 8 軌。",
+    "src": "https://www.discogs.com/release/2972942"
+   },
+   {
+    "f": "MusicBrainz release-group d379aab1 的欄位：title《backsaturday》（全小寫）、first-release-date 1995-04-09、primary-type Album、secondary-types 空；轄下五筆 release——1995-04-09 US 的 Jetset／TWA 01 CD（**9 軌**）、**1995-11 GB 的 Lissy's Records／LISS 008 黑膠（7 軌）**、1996-04 US 的一筆無廠牌 9 軌、2019-04-13 GB 的 Glass Modern／GLAMLP008（Promotion、7 軌）、2019-05-04 的數位（7 軌）。",
+    "src": "https://musicbrainz.org/release-group/d379aab1-24a5-353b-9396-9b5eda6dc15b"
+   },
+   {
+    "f": "MusicBrainz 藝人 4b8cb083 的欄位：country GB、begin-area Leicester、type Group、disambiguation「band from Leicester, UK」、life-span 自 1992 起（ended 為 false）、名下 21 個 release-group；primary-type Album 依序為 1994-10《Pointless Walks to Dismal Places》、1995-04-09《backsaturday》、1997-10《The Italian Flag》、1999-04-27《Ghosts of Dead Aeroplanes》。",
+    "src": "https://musicbrainz.org/artist/4b8cb083-b59a-43d6-a4e8-6bf089430b17"
+   },
+   {
+    "f": "Discogs 藝人頁 259463 的簡介欄寫：Prolapse 是 1992 年前後於 Leicester 成立的英國 indie rock 樂團，原始活動期至 2000 年、2015 年起以現場樂團形式復出；同欄寫其聲音混合 punk rock、krautrock 與 shoegazing，並寫其特徵是 Linda Steelyard 與 Mick Derrick 兩種交替、對比的人聲。",
+    "src": "https://www.discogs.com/artist/259463"
+   },
+   {
+    "f": "Discogs 廠牌頁 4977「Lissy's Records」的簡介欄整段寫：來自倫敦的廠牌，主要發行 7 吋單曲與黑膠專輯，曲風以 synth pop、post rock 與 experimental electronica 為主，並寫曾發行過 Stereolab 與 Bugger Sod 的唱片；同頁的通訊欄留的是倫敦 Streatham 的一個公寓地址。",
+    "src": "https://www.discogs.com/label/4977"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1512462101）：標題《Backsaturday》、artistName「Prolapse」、**trackCount 欄 11**、releaseDate 1996-04-09、copyright 欄「℗ **2019** Prolapse」；曲序以〈Flex〉開頭，第 8–11 軌是〈Flex (Edit)〉〈Unroadkill〉〈Irritating Radiator (Session)〉〈Zen Nun Deb (Session)〉。",
+    "src": "https://music.apple.com/gb/album/backsaturday/1512462101"
+   }
+  ],
+  "hookCandidates": [
+   "A 面整面只有一首，十五分零七秒",
+   "唱片刻紋上寫著：記得那台柴油芭比"
+  ],
+  "sound": "六人編制、三個人掛人聲，其中兩人是 Discogs 藝人頁所說的交替對比人聲；作曲欄整張掛團名，製作與工程都是同一個外聘的名字。結構極不平均——CD 版曲長顯示〈Flex〉一首就 15:07，等於其餘六軌加起來還多；黑膠版索性把它單獨放整個 A 面。其餘六軌最短 1:40、最長 7:53。（本欄由 Discogs 黑膠與 CD 兩筆原盤條目的 credit 欄、曲目欄與曲長表歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Flex",
+   "Framen Fr. Cesar",
+   "Zen Nun Deb"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 無爭議，各方一致；**但月份要小心**：MB release-group 的 first-release-date **1995-04-09 是美國 Jetset 版**（九軌的加曲版），MB 登的**英國 Lissy's 黑膠是 1995-11**，Discogs 兩筆英國原盤只登到年 1995。也就是說 MB 的「最早發行日」指向的不是卡單所寫的廠牌那一版。**行文只能寫「1995 年」**；若要寫月份，只能寫成「MusicBrainz 把英國 Lissy's 那筆登在 1995 年 11 月」並標明來源，**不得把 4 月 9 日當成本碟的發行日**。Apple 那筆的 releaseDate 1996-04-09 與 copyright ℗ 2019 都不得引用。"
+  },
+  "notes": "**分派與禁令見〈Open Doors / Closed Windows〉那張的總表。**\n**取得**：**Lissy's Records 廠牌線**（倫敦、以 7 吋與黑膠為主、曾發行 Stereolab）。\n**推翻探測層**：探測層把本卡標成 `ready`、collectionId **1512462101**。**那筆是 2019 年的再發**——Apple 的 trackCount 是 **11**、copyright 欄寫 ℗ 2019 Prolapse，第 8–11 軌〈Flex (Edit)〉〈Unroadkill〉〈Irritating Radiator (Session)〉〈Zen Nun Deb (Session)〉在 1995 年的任何一版原盤上都不存在。**試聽可用（同一批曲目的前七軌對得上），但它的軌數、日期與 ℗ 年份一律不可用**（第 134／141 條的分開處理）。\n**本卡禁令（軌數，這張最容易寫錯）**：**原盤只能寫 7 軌。**Discogs 黑膠 LISS 8 七個位置、Discogs 英國 CD LISS 8CD 七軌、MB 英國黑膠 track-count 7、MB 2019 兩筆也都是 7。**美國 Jetset 版的 9 軌不是原盤**——Discogs 該條目自己寫那是重排曲序並加了〈Irritating Radiator〉與〈TCR〉的美國版，且那兩軌的授權來源是 Love Train 而非 Lissy's（第 140／141 條）。**行文不得寫「九軌」或「十一軌」，也不得把那四首加曲當成本碟曲目。**\n**其他禁令**：(1) 盤名大小寫兩說（MB 全小寫 backsaturday／Discogs 與 Apple 首字大寫 Backsaturday）——卡單採全小寫，**行文照卡單，不得評論哪個才對**。(2) 廠牌頁提到 Stereolab **只能寫成「Discogs 廠牌頁說該廠曾發行 Stereolab 的唱片」**，**不得替 Stereolab 多寫任何一句**（第 146 條）。(3) 藝人頁那句「punk rock、krautrock 與 shoegazing 的混合」是條目的風格描述，只能寫成「Discogs 藝人頁說」（第 128 條），**不得當成本張的音色描述直接使用**。(4) DMM（Direct Metal Mastering）可以照註記欄與 runout 引用，**不得展開成刻片技術的說明**——條目上沒有。"
  }
 ]
