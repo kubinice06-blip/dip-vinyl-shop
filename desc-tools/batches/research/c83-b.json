@@ -1,0 +1,396 @@
+[
+ {
+  "key": "desc2:Astral Engineering|Chronoglide",
+  "artist": "Astral Engineering",
+  "album": "Chronoglide",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 30440008 的欄位：title《Chronoglide》、artist-credit「Astral Engineering」、first-release-date 1994、primary-type Album、secondary-types 空陣列；轄下兩筆 release 都是 Official，一筆 1994 GB、一筆 2012-01-31 XW。",
+    "src": "https://musicbrainz.org/release-group/30440008-f067-3f92-bbfc-c3f92f1f1d9c"
+   },
+   {
+    "f": "MusicBrainz 1994 GB 那筆 release（4be139bd）登記廠牌 Worm Interface、編號 wi001、一片 CD、track-count 8、text-representation 為 Latn／eng。",
+    "src": "https://musicbrainz.org/release/4be139bd-50f3-4f45-ab71-2a9d243a21c4"
+   },
+   {
+    "f": "同一筆 release 的八軌曲名與曲長：1〈Wave Part〉8:23、2〈Neural Net〉8:23、3〈Ring〉7:26、4〈Brainstrobe〉9:29、5〈Bios〉8:42、6〈NGC 4512〉7:42、7〈2010〉6:15、8〈Beyond the X-Ecliptic〉7:47。",
+    "src": "https://musicbrainz.org/release/4be139bd-50f3-4f45-ab71-2a9d243a21c4"
+   },
+   {
+    "f": "Discogs 原盤條目 382 記：Worm Interface，編號欄 wi01，國別 UK，released 欄 1994，格式欄 CD／Album／Partially Mixed／Reissue；曲目八軌，與 MusicBrainz 那筆逐軌同名同序。",
+    "src": "https://www.discogs.com/release/382"
+   },
+   {
+    "f": "同一條目的註記欄寫「P+C Electric Sounds 1994 Worm Interface, 5 Berwick St, London W1.」「Made in England.」「Total running time: 64.00」「Track durations do not appear on packaging.」",
+    "src": "https://www.discogs.com/release/382"
+   },
+   {
+    "f": "同一條目的 credit 欄三條：「Artwork: Psi-tek-art」「Musician [Astral Engineering Is]: Simon Rees」「Producer: Simon Rees」；identifiers 欄記 Matrix／Runout「WI001 10293091 02 % MADE IN U.K BY PDO」，Barcode 欄的值是 none。",
+    "src": "https://www.discogs.com/release/382"
+   },
+   {
+    "f": "Discogs master 518655 的 year 欄記 1993、main_release 指向 8126202；版本清單四筆——1993 UK 卡帶（Not On Label、無編號）、1994 UK CD（Worm Interface wi01，格式欄標 Reissue）、2012 FLAC 與 2012 ALAC（兩筆都是 Not On Label／藝人自行發行，格式欄標 Reissue）。",
+    "src": "https://www.discogs.com/master/518655"
+   },
+   {
+    "f": "Discogs 1993 卡帶條目 8126202 的曲目只有六軌（A1〈Wave Part〉、A2〈Neural Net〉、A3〈Ring〉、B1〈Bios〉、B2〈NGC 4512〉、B3〈2010〉），註記欄寫「This album first appeared on cassette in 1993 and was sold through Disclocator and Ambient Soho, as well as at various gigs. In 1994 this album came out on Worm Interface on CD with two additional tracks.」",
+    "src": "https://www.discogs.com/release/8126202"
+   },
+   {
+    "f": "Discogs 藝人頁 663 的 realname 欄寫 Simon Rees、簡介欄寫「Ambient / ambient dub project by Simon Rees from Brighton, active off and on since 1993.」；別名欄列 Coma、Simon Rees、Wavy Line 三個。",
+    "src": "https://www.discogs.com/artist/663"
+   },
+   {
+    "f": "Discogs 廠牌頁 110（Worm Interface）的簡介欄寫「Label from the Ambient Soho shop in London.」「Worm interface started in 1994 as a buzz emanating from London's first ambient record store - Ambient Soho.」「The label was owned by two London DJ/producers - Rocket and Django」；sublabel 欄只列一個 Snake Eyes。",
+    "src": "https://www.discogs.com/label/110"
+   },
+   {
+    "f": "MusicBrainz 藝人 bb74d235 的欄位：name「Astral Engineering」、type Person、country GB、area United Kingdom、disambiguation 空；名下 5 個 release-group。",
+    "src": "https://musicbrainz.org/artist/bb74d235-71c8-473c-83cd-112acc1a1c36"
+   }
+  ],
+  "hookCandidates": [
+   "卡帶版六首，CD 版八首",
+   "唱片行開的廠牌，第一組編號"
+  ],
+  "sound": "八軌的長度全部落在 6:15 到 9:29 之間，沒有一軌短於六分鐘，也沒有一軌到十分鐘（逐軌數自 MusicBrainz 那筆 release 的曲長表，共八軌）。整張碟的製作 credit 只有一個名字：Discogs 原盤條目的 Producer 欄與 Musician 欄都寫 Simon Rees，沒有第二位演奏者或共同製作人。Discogs master 的風格欄同時掛 Techno、Ambient、Dub 三個標籤。（本欄由 MusicBrainz 曲長表與 Discogs 的 credit 欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Brainstrobe",
+   "Beyond the X-Ecliptic",
+   "Wave Part"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，但**年份有分歧、行文只能寫到年、且不得斷言 1994 是這批音樂第一次問世**。MusicBrainz release-group 的 first-release-date 是 1994，轄下最早一筆 release 也是 1994 GB Worm Interface；Discogs master 518655 的 year 欄卻是 **1993**，因為該站另建了一筆 1993 年的自壓卡帶（Not On Label、無編號、六軌），並把 1994 的 Worm Interface CD 的格式欄標成 Reissue。兩邊各有一筆具體記載且指的是**不同的物件**（六軌卡帶 vs 八軌 CD），依第 127 條附錄不得拿一個有來源的值去換另一個有來源的值：**卡單值不動**。可寫的斷言是「1994 年由 Worm Interface 發行的 CD」與「1993 年先以卡帶形式出現過六首」，**不可寫「1994 年問世」**。"
+  },
+  "notes": "**【b 組互斥分派總表，全組共用；本卡是總表所在，其餘二十三張引用本張】**（第 58／130／131／138／146 條）\n**廠牌敘事**：Worm Interface 廠牌沿革→**本卡**（其餘：Freeform《Elastic Speakers》禁用）；Wurlitzer Jukebox 廠牌沿革→〈Sirènes〉（Light《Turning》、Electroscope《Homemade Electroscope》、Soundsmith《Aquanaut》禁用）；Ash International 廠牌沿革→〈Mass Observation〉（The Hafler Trio《Negentropy》、Hazard《North》禁用）；Earworm 廠牌沿革→〈The Less You Have, the More You Are〉（Ma Chérie for Painting、Avrocar、Tånk 禁用）；Enraptured 廠牌沿革與它跟 Earworm 的母子關係→〈Elasticated Waveband〉（The Freed Unit 禁用；Metrotone 那張只寫 Earworm 自身、不寫母廠）；Ochre Records 廠牌沿革→〈Surrounded by Glass〉（Skyray、The Land of Nod、Experimental Audio Research 禁用）；Lo Recordings 廠牌沿革→〈Blown〉（Rothko《A Negative for Francis》禁用）；Domino 廠牌線與同期編號→〈Ghost〉（Movietone《Day and Night》禁用，只寫自己那筆的廠牌欄與美版）；Rocket Girl 由〈Low Birth Weight〉獨用（無第二張同廠卡）。\n**人／單位分派**：VSA 為 Ochre 三張做美術這條→〈Translucent〉（Skyray、E.A.R. 禁止把 VSA 寫成跨張）；Mike Cross 同時是 Longstone 成員與另兩張的母帶工程這條→〈Surrounded by Glass〉（Translucent、Pestrepeller 只寫自己那筆 credit 欄的字面）；Pete Bassman 同時掛名兩張這條→〈Elasticated Waveband〉（Pestrepeller 禁用）；Niko Lazarakopoulos 同時列名兩個團這條→〈Upwards at 66°N〉（Una Producion Pop 禁用）；「Matt Elliott 就是 The Third Eye Foundation」這個等式→〈Ghost〉（Amp、Movietone 禁止把 Matt Elliott 與 Third Eye Foundation 連起來；Amp 可以寫自己藝人頁簡介裡那段 Bristol 淵源，Movietone 可以寫自己藝人頁的成員欄）；Bryn Derwen 錄音室→〈Translucent〉（Sirènes 只寫自己那筆 Recorded At 欄）；Alan Holmes 跨張掛名→〈Mind Lagoons〉（Translucent 只寫自己軌內 credit 的字面）；Lo Recordings 的美術／攝影／母帶班底（Jon Forss、Christian Hermansen、Jay Burnett）跨兩張這條→〈A Negative for Francis〉（Blown 只寫自己那筆 credit 欄、不得寫「同一組班底也做了另一張」）；Sonic Boom／Pete Kember／Spacemen 3 的線→〈Pestrepeller〉；Ambient Soho 這個場所→**本卡**。\n**分派是許可不是義務（第 138 條）**：分到的線若該卡 facts 撐不住，讓它閒置，別硬寫。\n**【跨組（a 組）宣告】**：a 組 21 張的廠牌是 ché／Ankst／Too Pure／Lissy's／Slampt／Shinkansen／Guided Missile／Pickled Egg，與 b 組九家廠牌**完全不相交**，藝人也無重疊；本組交件時 `desc-tools/batches/research/c83-a.json` **尚未存在**，無可讓開之線。若 a 組後來寫到 Bristol／Cheltenham 的場景敘事，以先到先得處理。\n**【全批禁令，b 組 24 張一律適用】**(1) **不得寫壓量、限量份數、稀有度、二手價**（第 109 條）——本批多筆 Discogs 註記寫有「Limited to N copies」，研究層已刻意不把那些數字寫進 facts，行文也不得補。(2) **不得由曲名推論翻奏、改編或出處**（第 110 條）——本批曲名大量使用抽象詞與代號（〈NGC 4512〉〈Re: 1〉〈Abaton〉〈Missing Mass〉），望文生義的風險比一般批高。(3) **不得寫全批統計量**（第 145 條）：幾張同廠牌、幾張 CD、幾張只發黑膠、幾張找不到試聽，一律不入文；每張只寫自己這一張的形制與自己那筆的來源。(4) **Discogs 的形制欄只能寫成 Discogs 的欄位**（第 136 條）：「Partially Mixed」「Limited Edition」「Reissue」是該站的格式描述欄，不得當成唱片內容或版本地位的斷言。(5) **不得提及淨化版**（本批 cleanedOnly 那張在 a 組，b 組無此情形，仍記一句以免下游誤用）。(6) **經銷商與壓片廠（Cargo、PMDC、PDO、DOCdata、Nimbus、Damont）只能寫自己那筆條目的欄位**，不得寫成「這批都經 X 經銷」這類跨張歸納——那是第 145 條的統計量。\n**【本卡的分派與禁令】**\n**取得**：Worm Interface 廠牌沿革（Ambient Soho 唱片行、1994 年、兩位 London DJ／producer）與 Ambient Soho 這個場所。**Freeform《Elastic Speakers》禁用這兩條**，只寫自己那筆的廠牌欄與編號。\n**原盤軌數**：`originalTrackCount` = **8**（指卡單所指的 1994 Worm Interface CD）。MusicBrainz 1994 GB release track-count 8、Discogs 原盤 382 曲目八軌，兩邊逐軌同名同序。**但寫軌數時必須帶限定語**：1993 年那捲卡帶是**六軌**，Discogs 註記明寫 CD 版「with two additional tracks」。行文若要寫數字，只能寫成「1994 年那張 CD 的八首」或「1993 年卡帶上的六首」，**不得寫成沒有版本限定的「這張碟有八首」**（第 144 條的第二種落地方式：加限定語）。\n**禁令**：(1) **編號寫法兩說**——Discogs 封面編號欄是 **wi01**、MusicBrainz 欄位與碟片 Matrix／Runout 都是 **WI001／wi001**。**兩種寫法都要註明是哪個來源的欄位，不得擇一當唯一正確值**，也不得由 wi01 推論「這是廠牌第一張」（第 125 條：目錄編號不是出版序數）。(2) Discogs 把 1994 CD 的格式欄標成 **Reissue** ——那是 Discogs 相對於 1993 卡帶的分類，**不得寫成「這是再版盤」的評價**（第 136 條）。(3) 註記欄的「sold through Disclocator and Ambient Soho, as well as at various gigs」是 Discogs 註記欄的說法，**寫成「Discogs 條目的註記欄說」**，不得寫成廠牌或藝人自己的說法（第 128 條）。(4) 別名欄的 Coma、Wavy Line **可以提「別名欄列了三個」，但不得替任何一個別名描述作品**（第 146 條）。\n**探測層核對（推翻／補正）**：`previews.json` 這張標 `unavailable`，八個 storefront 全部 `0→0`。依第 152 條我另用盤名關鍵詞在 Apple GB 與 US 兩個店面各搜一次（`Chronoglide`／`Astral Engineering`／`Chronoglide Astral`），**GB 回 count 0、US 回 count 0**，唯一命中是無關的 2025 年 EP。**這張是真的搜不到，不是比對擋掉**，維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:Scanner|Mass Observation",
+  "artist": "Scanner",
+  "album": "Mass Observation",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 392e2743 的欄位：title《Mass Observation》、artist-credit「Scanner」、first-release-date 1994、primary-type Album、secondary-types 空陣列；轄下三筆 release（1994 GB、兩筆 2018-10-15 XW）皆 Official。",
+    "src": "https://musicbrainz.org/release-group/392e2743-ad57-3dc4-8059-c57ee2ca6c4a"
+   },
+   {
+    "f": "MusicBrainz 1994 GB 那筆 release（5ee8a42f）登記廠牌 Ash International、編號 ash 1.7、一片 CD、track-count **4**，四軌的曲名欄全部是 [untitled]，曲長 25:10／6:13／5:02／5:32。",
+    "src": "https://musicbrainz.org/release/5ee8a42f-8cd8-4e57-8f43-65dcec912a09"
+   },
+   {
+    "f": "Discogs 原盤條目 53063 記：Ash International，編號 ash 1.7，UK，released 欄 1994，格式 CD／Album；曲目四軌，標題欄全部寫 Untitled，時長 25:09／6:12／5:01／5:31。",
+    "src": "https://www.discogs.com/release/53063"
+   },
+   {
+    "f": "同一條目的 credit 欄兩條「Written-By: Robin Rimbaud」「Written-By: Steve Williams (27)」；公司欄記 Remixed At: Thirst、Remixed At: Prixie Cell Zentral、Phonographic Copyright (p): Ash International、Copyright (c): Eye Music (2)、Glass Mastered At: DADC Austria。",
+    "src": "https://www.discogs.com/release/53063"
+   },
+   {
+    "f": "同一條目的註記欄寫「Issued in a standard jewel case with black tray and with a simple white card instead of a booklet.」，identifiers 欄記 Matrix／Runout「ASH1-7 13 A1 [DADC Austria logo]」。",
+    "src": "https://www.discogs.com/release/53063"
+   },
+   {
+    "f": "Discogs master 44074 的版本清單三筆：1994 UK 黑膠 LP（Ash International ASH 1.7）、1994 UK CD（ash 1.7）、2018 UK FLAC（Not On Label／藝人自行發行，標題寫成《Ash 1.7 (Remaster 2018)》，格式欄標 Remastered）。",
+    "src": "https://www.discogs.com/master/44074"
+   },
+   {
+    "f": "MusicBrainz 2018-10-15 那筆 XW release（1dd9b5b0，廠牌欄 Bette、barcode 5060125870808）是五軌：前四軌被命名為〈Mass Observation〉〈Mass Observation 2〉〈Mass Observation 3〉〈Mass Observation 4〉、曲長與 1994 那筆逐項相同，第五軌是〈Mass Observation (live 2018)〉6:36。",
+    "src": "https://musicbrainz.org/release/1dd9b5b0-2cf4-4cc3-b87f-5da8e46d90ef"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1439581109）的 collectionName 是《Mass Observation (Remaster)》、trackCount 欄 5、releaseDate 欄 1995-01-01、copyright 欄「℗ 2018 Robin Rimbaud」；五軌逐項為〈Mass Observation (Remaster)〉25:10、〈Mass Observation 2 (Remaster)〉6:13、〈Mass Observation 3 (Remaster)〉5:02、〈Mass Observation 4 (Remaster)〉5:32、〈Mass Observation Live 2018〉6:36。",
+    "src": "https://music.apple.com/gb/album/mass-observation-remaster/1439581109"
+   },
+   {
+    "f": "MusicBrainz 藝人 306789f8 的欄位：name「Scanner」、type Person、country GB、disambiguation「Robin Rimbaud」、life-span begin 1964；外部連結欄含官方網站 scannerdot.com 與 wikidata Q513963。",
+    "src": "https://musicbrainz.org/artist/306789f8-f913-4def-b264-8edbc59a586f"
+   },
+   {
+    "f": "Discogs 藝人頁 437 的 realname 欄寫 Robin Rimbaud、簡介欄寫「Electronic musician and multimedia artist (born 1964 in London, UK).」；別名欄列 Trawl、Scannerfunk、Robin Rimbaud、Teenie Semolina、Radar (26)、Ronknee 六個。",
+    "src": "https://www.discogs.com/artist/437"
+   },
+   {
+    "f": "Discogs 廠牌頁 5368（Ash International）的簡介欄寫「Ash International (NOT Ash International Records or Ash Records int.) was unleashed onto an unsuspecting world in early 1993 by Mike Harding who also runs the label Touch with Jon Wozencroft. He was initially aided and abetted by Robin Rimbaud (without whom...), but he departed to run his Scanner operation full time in early 1995.」",
+    "src": "https://www.discogs.com/label/5368"
+   }
+  ],
+  "hookCandidates": [
+   "原盤四軌，一首曲名也沒有",
+   "廠牌簡介裡那句「若沒有他就沒有」"
+  ],
+  "sound": "原盤的四軌在兩個資料庫裡都是無題的：MusicBrainz 曲名欄寫 [untitled]、Discogs 寫 Untitled。長度極不對稱——第一軌 25:10，占掉全碟大半，其餘三軌 6:13、5:02、5:32 加起來也不到它的七成（逐軌數自 MusicBrainz 1994 那筆的曲長表）。Discogs 原盤的公司欄記了兩個混音地點（Thirst、Prixie Cell Zentral），credit 欄則只有兩條 Written-By。Discogs master 的風格欄掛 Techno、Ambient、Experimental。（本欄由 MusicBrainz 與 Discogs 的曲目表、credit 欄與風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Untitled（第 1 軌，25:10）",
+   "Untitled（第 2 軌）",
+   "Untitled（第 4 軌）"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，MusicBrainz 與 Discogs 兩邊一致（RG first-release-date 1994、Discogs 原盤 53063 的 released 欄 1994、Discogs master year 欄 1994），**無爭議**。**行文只能寫到年**——兩個資料庫都沒有月與日。**Apple 那筆的 releaseDate 顯示 1995-01-01，那是 Apple 的佔位日期（℗ 欄寫 2018），不得採用、也不得寫成「1995 年」。**"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**取得**：Ash International 廠牌沿革（1993 年初開辦、Mike Harding、他同時經營 Touch、Robin Rimbaud 初期協力並於 1995 年初離開）。**The Hafler Trio《Negentropy》與 Hazard《North》禁用這條**，只寫自己那筆的廠牌欄與編號。\n**原盤軌數**：`originalTrackCount` = **4**。MusicBrainz 1994 GB release 的 track-count 是 4、Discogs 原盤 53063 曲目也是四軌，兩邊逐項對得上。\n**★ 推翻探測層（第 141／144 條）**：`previews.json` 把這張標 `ready`、`trackCount` 5，**沒有標任何加曲或再發的旗標**。逐軌核對後可以確定 **Apple 那筆是 2018 年的加曲重製版，不是原盤**：Apple 五軌的前四軌就是原盤那四軌（曲長 25:10／6:13／5:02／5:32 逐項相同），但原盤四軌**無題**、Apple 把它們命名成〈Mass Observation〉到〈Mass Observation 4〉，第五軌〈Mass Observation Live 2018〉是 2018 年的現場錄音，Apple 的 copyright 欄也寫「℗ 2018 Robin Rimbaud」。依第 77 條這是**可接受的加曲版**（多出來的那首是同一位藝人的、且標了 Live），不是二合一。**主線請把 `previews.json` 這筆補標 `expandedReissue`。**\n**禁令**：(1) **行文一律只能寫「原盤四軌」**，不得寫五軌，也不得把〈Mass Observation Live 2018〉當成本碟曲目（第 140／141 條）。(2) **不得使用 Apple 給的那四個曲名**——原盤的曲名欄是空的，那四個名字是 2018 年重製版才加上去的。行文提曲子只能寫成「第一軌」「二十五分鐘那一軌」這類位置指稱，或明寫「2018 年重製版把它們命名為……」。(3) Discogs 廠牌頁那段是**該站廠牌頁的簡介欄**，寫成「Discogs 廠牌頁的簡介欄寫」，**不得寫成 Ash International 自己的說法**（第 128 條）。(4) 「Robin Rimbaud 1995 年初離開 Ash International 去全職經營 Scanner」與「本碟 1994 年在 Ash International 發行」**不得推論成任何因果或時序評價**（例如「離開前最後一張」），facts 沒有任何一條說本碟是他在該廠的最後一筆。(5) 「Steve Williams (27)」只出現在 Discogs 的 Written-By 欄，**不得替他補任何身分**。\n**探測層核對**：CAA 有圖。試聽可用（Apple 1439581109），**但那筆的軌數與曲名都不可用於敘述原盤**。"
+ },
+ {
+  "key": "desc2:The Hafler Trio|Negentropy",
+  "artist": "The Hafler Trio",
+  "album": "Negentropy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a23aae27 的欄位：title《Negentropy》、artist-credit「The Hafler Trio」、first-release-date 1994、primary-type Album、secondary-types 空陣列；轄下兩筆 release 都是 Official，一筆 1994 GB、一筆 2020-03-19 XW。",
+    "src": "https://musicbrainz.org/release-group/a23aae27-0b1d-31a9-ab43-ac08b16f7020"
+   },
+   {
+    "f": "MusicBrainz 1994 GB 那筆 release（c7c61434）登記廠牌 Ash International、編號 ASH 1.6、一張 12 吋黑膠、track-count 7，曲目分兩面：A1〈Coscinomancy〉3:10、A2〈Catoptromancy〉9:10、A3〈Ceromancy〉6:48、B1〈Cephalonmancy〉0:27、B2〈Ceraunomancy〉11:10、B3〈Crithomancy〉4:19、B4〈Cromnyomancy〉1:21。",
+    "src": "https://musicbrainz.org/release/c7c61434-a018-4da6-897c-dd2d69ac9f41"
+   },
+   {
+    "f": "Discogs 原盤條目 42966 記：Ash International 編號 ASH 1.6 與 Anckarström 編號 M11 兩個廠牌欄，UK，released 欄 1994，格式 Vinyl／LP／Album／Limited Edition；B1 的曲名在該站寫成〈Cephalonomancy〉（MusicBrainz 作〈Cephalonmancy〉，少一個 o）。",
+    "src": "https://www.discogs.com/release/42966"
+   },
+   {
+    "f": "同一條目的 credit 欄三條：「Featuring [Assistance]: Adi Newton」「Mastered By [Vinyl Cut]: Porky (5)」「Written-By, Producer: The Hafler Trio」；公司欄記 Phonographic Copyright (p): Ash International、Copyright (c): Touch Music。",
+    "src": "https://www.discogs.com/release/42966"
+   },
+   {
+    "f": "同一條目的 identifiers 欄登記四組刻在唱片內圈的 Matrix／Runout 字樣，包括「A PORKY PRIME CUT ASH1-6 A1 PRE FAX 081-682-3414」與「ANOTHER PORKY PRIME CUT ASH1-6 B1 PRE FAX 071-498-3032」，另兩組是同內容的第二種變體。",
+    "src": "https://www.discogs.com/release/42966"
+   },
+   {
+    "f": "Discogs master 649397 的版本清單三筆：1994 UK 黑膠（ASH 1.6／M11）、1994 UK 白標試壓（同編號，格式欄標 Test Pressing／White Label）、2020 愛沙尼亞 FLAC（Simply Superior，標題寫成《Negentropy.》帶句點，格式欄標 Reissue）。",
+    "src": "https://www.discogs.com/master/649397"
+   },
+   {
+    "f": "MusicBrainz 2020-03-19 那筆 XW release（a3099ac5，廠牌欄 Simply Superior、標題《negentropy.》）只有兩軌：〈TRAILER〉2:05，與一首把七個曲名串成單一標題的 36:23 長軌〈coscinomancy/catoptromancy/ceromancy/cephalonomancy/ceraunomancy/crithomancy/cromnyomancy〉。",
+    "src": "https://musicbrainz.org/release/a3099ac5-9fca-46f7-87c1-a157587e3202"
+   },
+   {
+    "f": "MusicBrainz 藝人 146c01d0 的欄位：name「The Hafler Trio」、type Group、country GB、life-span begin 1980；aliases 欄列「H3ÖH (The Hafler Trio)」與「Hafler Trio」；外部連結含官方網站 brainwashed.com/h3o/ 與 wikidata Q1568105。",
+    "src": "https://musicbrainz.org/artist/146c01d0-d3a2-44c3-acb5-9208bce75e14"
+   },
+   {
+    "f": "Discogs 藝人頁 62507 的簡介欄寫「Originally a duo formed in the early '80s by Andrew McKenzie and Chris Watson (with the third part of the 'trio' being a fictional scientist named Dr. Edward Moolenbeek), since late 1987 The Hafler Trio became the solo project of McKenzie (although often working with guest artists) with a strong focus on the absurd and multimedia work, recordings often having carefully and elaborately designed packaging.」；名稱變體欄列 H3O、Hafler Trio、Halfer Trio，別名欄列 Dr. Edward Moolenbeek、Dr. Robert Spridgeon。",
+    "src": "https://www.discogs.com/artist/62507"
+   },
+   {
+    "f": "Discogs 藝人頁 62507 的成員欄只列兩人：Andrew McKenzie 與 Chris Watson。",
+    "src": "https://www.discogs.com/artist/62507"
+   }
+  ],
+  "hookCandidates": [
+   "七個曲名，七種占卜術的字根",
+   "A 面三軌、B 面四軌，最短的一軌 27 秒"
+  ],
+  "sound": "七軌全部收在一張 12 吋黑膠的兩面：A 面三軌（3:10／9:10／6:48）、B 面四軌（0:27／11:10／4:19／1:21）。長度極不平均——最長的 B2 是 11:10，最短的 B1 只有 27 秒，兩者相差二十四倍（逐軌數自 MusicBrainz 那筆 release 的曲長表，共七軌）。Discogs 原盤的 credit 欄只有三條：一位客座、一位刻片師、以及掛在團名下的 Written-By／Producer。Discogs master 的風格欄掛 Abstract 與 Experimental。（本欄由 MusicBrainz 曲長表與 Discogs credit 欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Catoptromancy",
+   "Ceraunomancy",
+   "Coscinomancy"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1994,
+   "note": "1994 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1994、Discogs 原盤 42966 的 released 欄 1994、master year 欄 1994），**無爭議**。**行文只能寫到年**，兩邊都沒有月與日。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Ash International 廠牌沿革歸〈Mass Observation〉，**本卡禁用**，只寫自己那筆的廠牌欄（Ash International ASH 1.6）、共同編號（Anckarström M11）與 Touch Music 的版權欄。\n**原盤軌數**：`originalTrackCount` = **7**。MusicBrainz 1994 GB release track-count 7、Discogs 原盤 42966 曲目 A1–A3 加 B1–B4 共七軌，兩邊逐項對得上。\n**禁令**：(1) **第 110 條在本卡風險最高**：七個曲名都是 -mancy 結尾的占卜術字根（Coscinomancy／Catoptromancy／Ceromancy／Cephalonomancy／Ceraunomancy／Crithomancy／Cromnyomancy）。**可以寫「七個曲名都以 -mancy 收尾」這個字面觀察，但不得解釋任何一個字的意思、不得說唱片在講占卜、不得由曲名推論內容或出處。**(2) **B1 的曲名兩說**：MusicBrainz 作〈Cephalonmancy〉、Discogs 作〈Cephalonomancy〉。**兩個寫法都要註明是哪個資料庫的欄位**，不得擇一當唯一正確值。(3) **不得寫壓量**——Discogs 註記欄有「Limited to 1000 copies」，依第 109 條研究層刻意不把它寫進 facts，行文也不得補（Discogs 格式欄的 Limited Edition 同理，只能寫成該站的格式欄）。(4) **2020 年那筆數位再發只有兩軌**，其中一軌把七個曲名串成一個 36 分鐘的標題。**行文不得把那個串起來的長標題當成本碟的曲目**，也不得寫成「原本是一整段」——facts 只說 2020 那筆是這樣登錄的。(5) 藝人頁簡介裡「第三位團員是虛構科學家」與「1987 年底起成為 McKenzie 的個人計畫」是 **Discogs 藝人頁簡介欄的說法**，寫成「Discogs 藝人頁的簡介欄說」（第 128 條）；**且不得據此斷言 1994 年這張是誰做的**——原盤 credit 欄只寫團名。(6) 「Adi Newton」只出現在 Discogs 的 Featuring [Assistance] 欄，**不得替他補任何身分或所屬團體**。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Hafler Trio Negentropy」與「Negentropy」在 Apple GB 與 US 各搜一次——GB 回三筆全是別人的碟（Reptilicus & The Hafler Trio《Designer Time》、Automating、Barry Adamson & Pan Sonic），US 回六筆全部無關（DAY6、Ritzi Lee 等）。**這張是真的搜不到，不是比對擋掉**，維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:Freeform|Elastic Speakers",
+  "artist": "Freeform",
+  "album": "Elastic Speakers",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d3e34056 的欄位：title《Elastic Speakers》、artist-credit「Freeform」、first-release-date 1995-02-16、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1995-02-16 GB Official。",
+    "src": "https://musicbrainz.org/release-group/d3e34056-8b43-33b8-af43-1f3e34bb0592"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（1b4ea8f2）登記廠牌 Worm Interface、編號 wi02、barcode 798435330228、一片 CD、track-count **14**；末兩軌是 13〈Arch Re〉2:27 與 14〈Corde〉11:14。",
+    "src": "https://musicbrainz.org/release/1b4ea8f2-6399-4b3b-9709-410d51cca00a"
+   },
+   {
+    "f": "同一筆 release 的前十二軌曲名與曲長：1〈Unit〉6:35、2〈Reflection Cone〉3:43、3〈Bubbled〉5:05、4〈Ect〉6:56、5〈Infinite Timer〉3:47、6〈Backspace〉4:52、7〈Re: 1〉0:52、8〈Gammon Fonk〉4:25、9〈Opp Expone〉5:11、10〈Nenne Int3〉4:56、11〈Evolve〉6:26、12〈Junction〉8:40。",
+    "src": "https://musicbrainz.org/release/1b4ea8f2-6399-4b3b-9709-410d51cca00a"
+   },
+   {
+    "f": "Discogs 原盤條目 279 記：Worm Interface，編號 wi02，UK，released 欄 1995-00-00，格式 CD／Album；曲目登錄成十四個位置，第十四個位置再拆成 14a〈Corde〉5:28 與 14b〈Hidden Track〉5:10。",
+    "src": "https://www.discogs.com/release/279"
+   },
+   {
+    "f": "同一條目的註記欄寫「All tracks formed 94 95.」「Track 14 ends at 5:28 and a hidden track begins at 6:00.」「© Worm Interface 1995.」「℗ Worm Interface 1995.」「Made in England.」，並在致謝欄列了 Autechre 與 Skam 等名字。",
+    "src": "https://www.discogs.com/release/279"
+   },
+   {
+    "f": "同一條目的 credit 欄兩條：「Artwork [Visual Karate]: Matt Pyke」「Performer [Formed By]: Simon Pyke」；公司欄記 Phonographic Copyright (p): Worm Interface、Copyright (c): Worm Interface、Made By: PDO, UK。",
+    "src": "https://www.discogs.com/release/279"
+   },
+   {
+    "f": "同一條目的 identifiers 欄記 Barcode「7 98435 33022 8」、Mastering SID Code「IFPI L132」、Mould SID Code「IFPI 0454」、Matrix／Runout「WI002 10366181 01 % MADE IN U.K. BY PDO」——碟片內圈刻的編號是 WI002，封面編號欄卻是 wi02。",
+    "src": "https://www.discogs.com/release/279"
+   },
+   {
+    "f": "Discogs master 72401 只有兩筆版本：1995 UK CD（Worm Interface wi02）與 1995 UK 卡帶（Worm Interface wi002，格式欄標 Promo）。",
+    "src": "https://www.discogs.com/master/72401"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1169208439）的 trackCount 欄 **15**、releaseDate 欄 1995-02-25、copyright 欄「℗ 2016 Worm Interface」；第 14 軌是〈Corde〉5:31、第 15 軌是〈Clonk〉5:15，前十三軌與原盤逐項同名同序。",
+    "src": "https://music.apple.com/gb/album/elastic-speakers/1169208439"
+   },
+   {
+    "f": "MusicBrainz 藝人 3e011f5d 的欄位：name「Freeform」、type Person、country GB、disambiguation「abstract electro artist Simon Pyke」。",
+    "src": "https://musicbrainz.org/artist/3e011f5d-a3cb-4371-ad44-b0b6b414c1bb"
+   },
+   {
+    "f": "Discogs 藝人頁 349 的 realname 欄寫 Simon Pyke、別名欄列 Nudge (3) 與 Simon Pyke。",
+    "src": "https://www.discogs.com/artist/349"
+   }
+  ],
+  "hookCandidates": [
+   "第十四軌播完，六分鐘處還有東西",
+   "封面印 wi02，碟片內圈刻 WI002"
+  ],
+  "sound": "十四個曲目位置裡有一半在五分鐘以下，最短的〈Re: 1〉只有 52 秒，最長的一軌（第十四個位置）在 MusicBrainz 登錄成 11:14、在 Discogs 拆成 5:28 加一段 5:10 的無名段落（逐軌數自兩個資料庫的曲目表）。Discogs 原盤的 credit 欄只有兩條，一條美術、一條演奏，兩人同姓。Discogs master 的風格欄掛 IDM、Abstract、Techno。（本欄由 MusicBrainz 與 Discogs 的曲目表、credit 欄與風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Unit",
+   "Junction",
+   "Corde"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "1995 維持卡單原值，三方一致（MusicBrainz first-release-date 1995-02-16、Discogs master 與原盤條目的 released 欄 1995、Apple releaseDate 1995-02-25）。**月份可寫「1995 年 2 月」**——MusicBrainz 與 Apple 兩邊的月份相同。**但日不可寫**：MusicBrainz 記 16 日、Apple 記 25 日，Discogs 的 released 欄是 1995-00-00（無月無日），兩個具體日期互相衝突且無第三方可裁。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Worm Interface 廠牌沿革與 Ambient Soho 歸〈Chronoglide〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號。\n**原盤軌數**：`originalTrackCount` = **14**，指的是**曲目表上的位置數**。MusicBrainz track-count 14、Discogs 也是十四個位置。**但必須帶限定語**：Discogs 註記欄明寫「Track 14 ends at 5:28 and a hidden track begins at 6:00.」，該站把第十四個位置拆成 14a 與 14b，所以「十四」是**曲目表的位置數**，不是「能聽到幾段音樂」。依第 144 條第二種落地方式：**保留 14，但行文寫軌數時一律帶限定語**（「曲目表列十四首」或「資料庫登錄十四軌」，擇一並註明是哪一種），**不得寫成沒有限定的「十五軌」或「十四首歌」**。\n**★ 推翻探測層（第 141／144 條）**：`previews.json` 把這張標 `ready`、`trackCount` 15，**沒有標任何加曲或再發旗標**。逐軌核對後可以確定 **Apple 的十五軌不是加了一首新曲，而是把原盤第十四個位置裡的隱藏段落切出來單獨上架**：Apple 第 14 軌〈Corde〉5:31 對得上 Discogs 的 14a（5:28），第 15 軌〈Clonk〉5:15 對得上 14b 的 5:10，前十三軌與原盤逐項同名同序。**這不是二合一**（沒有別張專輯的曲子），也不是嚴格意義的加曲版。Apple copyright 欄寫「℗ 2016 Worm Interface」。**主線請把 `previews.json` 這筆的軌數差異註記為「隱藏軌被拆出」，不要標成 `expandedReissue` 的加曲版。**\n**禁令**：(1) **不得寫「十五軌」**，也不得把〈Clonk〉當成原盤曲目表上的一首——原盤曲目表上它沒有名字（Discogs 寫「Hidden Track」）。(2) **不得由〈Clonk〉這個名字推論它是什麼**（第 110 條）：那個名字只出現在 Apple 上，原盤沒有。(3) **編號兩說**：封面欄 wi02、碟片內圈 WI002、卡帶版又是 wi002。**寫哪一個都要註明是哪個欄位**。(4) 致謝欄提到 Autechre 與 Skam，**那是唱片註記欄的致謝名單，不得推論成合作、廠牌關係或風格師承**（第 110 條）。(5) 「Matt Pyke」與「Simon Pyke」同姓，**facts 沒有任何一條說他們是什麼關係，不得寫成親屬或團體**（第 146 條的形狀）。(6) 註記欄「All tracks formed 94 95.」是原盤註記欄的字面，**可以引用，但不得改寫成「錄於 1994 至 1995 年」**——formed 不等於 recorded（第 136 條）。\n**探測層核對**：CAA 有圖。試聽可用（Apple 1169208439）。"
+ },
+ {
+  "key": "desc2:Light|Turning",
+  "artist": "Light",
+  "album": "Turning",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cc53b294 的欄位：title《Turning》、artist-credit「Light」、first-release-date 1996、primary-type Album、secondary-types 空陣列；轄下兩筆 release 都是 Official，編號都是 Wurlitzer Jukebox WJ17。",
+    "src": "https://musicbrainz.org/release-group/cc53b294-d6c3-42c2-830c-32a75f0c46ac"
+   },
+   {
+    "f": "MusicBrainz 1996 GB 那筆 release（1e66eb63）登記廠牌 Wurlitzer Jukebox、編號 WJ17、一片 CD、track-count 8，曲目為 1〈Trailer〉6:31、2〈Tale of White Passage〉4:15、3〈Nature Man〉4:56、4〈Bird〉5:07、5〈Passing〉7:53、6〈Unknown Song〉5:03、7〈Mind Crossing〉7:27、8〈End of the River〉4:56。",
+    "src": "https://musicbrainz.org/release/1e66eb63-f2f8-4699-ad31-977b30ec5514"
+   },
+   {
+    "f": "MusicBrainz 同 release-group 底下另一筆（df686336）的媒體格式欄寫 Digital Media、國別欄空白，但它的八個曲目位置卻用黑膠的寫法標成 A1–A4／B1–B4、且八軌都沒有登錄曲長。",
+    "src": "https://musicbrainz.org/release/df686336-21d7-4850-9633-2c2eedeccce2"
+   },
+   {
+    "f": "Discogs 原盤條目 419917 記：Wurlitzer Jukebox，編號 WJ17，UK，released 欄 1996，格式 Vinyl／LP／Album；曲目 A1–A4、B1–B4 共八軌，該站未登錄任何曲長。",
+    "src": "https://www.discogs.com/release/419917"
+   },
+   {
+    "f": "同一條目的註記欄只有一句：「Mastered by Rocker at Star Studios.」；credit 欄、公司欄與 identifiers 欄都是空的。",
+    "src": "https://www.discogs.com/release/419917"
+   },
+   {
+    "f": "Discogs master 166288 只有兩筆版本：1996 UK 黑膠 LP（WJ17）與 1996 UK CD（WJ17）。",
+    "src": "https://www.discogs.com/master/166288"
+   },
+   {
+    "f": "Discogs master 166288 的類型欄同時掛 Rock 與 Stage & Screen，風格欄掛 Space Rock、Ambient、Folk、Drone、Lo-Fi、Noise、Experimental 七個。",
+    "src": "https://www.discogs.com/master/166288"
+   },
+   {
+    "f": "MusicBrainz 藝人 19ab68f6 的欄位：name「Light」、type Group、country 欄空、area 欄空、disambiguation「space rock solo project from UK」；名下只有 2 個 release-group；外部連結只有一條 rateyourmusic。",
+    "src": "https://musicbrainz.org/artist/19ab68f6-5994-4717-a5fd-f8671e685aed"
+   },
+   {
+    "f": "Discogs 廠牌頁 4899（Wurlitzer Jukebox）的簡介欄寫「Founded by Keith Jenkins (8). Original home of Plone, ISAN and Broadcast. Now defunct.」並加註「Not to be confused with The Wurlitzer Company」；該廠牌頁的 releases 端點回報 78 筆。",
+    "src": "https://www.discogs.com/label/4899"
+   },
+   {
+    "f": "Discogs 藝人頁 4698176（Keith Jenkins (8)）的簡介欄只有一句「Founded Wurlitzer Jukebox」。",
+    "src": "https://www.discogs.com/artist/4698176"
+   }
+  ],
+  "hookCandidates": [
+   "八首歌，資料庫一個曲長也沒登錄",
+   "第六首就叫〈Unknown Song〉"
+  ],
+  "sound": "八軌收在黑膠兩面，A 面四軌、B 面四軌（Discogs 原盤條目的位置欄）。曲長只有 MusicBrainz 的 CD 那筆有登錄：最長的〈Passing〉7:53 與〈Mind Crossing〉7:27，最短的〈Tale of White Passage〉4:15，其餘五軌落在 4:56 到 6:31 之間；Discogs 原盤與 MusicBrainz 另一筆都沒有登錄任何曲長。整張碟在 Discogs 上沒有任何演奏或製作的 credit 欄，註記欄只記了一位母帶工程師與一間錄音室。（本欄由兩個資料庫的曲目表與註記欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Passing",
+   "Mind Crossing",
+   "Trailer"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1996,
+   "note": "1996 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1996、兩筆 release 都是 1996、Discogs master year 欄與原盤 released 欄都是 1996），**無爭議**。**行文只能寫到年**，兩邊都沒有月與日。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Wurlitzer Jukebox 廠牌沿革歸〈Sirènes〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 WJ17。（例外：本卡 facts 保留廠牌頁與創辦人那兩條，是為了在 facts 層面留住可回問的原始值；**寫作層仍不得使用**，因為那條線已分派給〈Sirènes〉——第 138 條，分到的線由被分派者用，未分派者不用。）\n**原盤軌數**：`originalTrackCount` = **8**。MusicBrainz CD 那筆 track-count 8、Discogs 原盤黑膠 A1–A4 加 B1–B4 共八軌，兩邊逐項同名同序。\n**這張的資料很薄，行文要相應收斂**：MusicBrainz 藝人實體的 country 與 area **都是空的**，名下只有兩個 release-group，唯一的外部連結是 rateyourmusic；Discogs 原盤的 credit 欄、公司欄、identifiers 欄**全部是空的**。**除了 disambiguation 欄那句「space rock solo project from UK」之外，沒有任何來源說這是誰、來自哪裡、幾個人。**\n**禁令**：(1) **掛名「Light」是一個極常見的英文字**，第 139 條的假查無與撈錯人風險都高。**行文不得替這個掛名補任何身分**（不得寫成樂團、不得寫成某人的個人計畫、不得指定成員人數）——MusicBrainz 的 type 欄寫 Group、disambiguation 欄卻寫 solo project，**兩個欄位互相矛盾，兩個都不得採用為斷言**（第 136 條）。(2) **不得由〈Unknown Song〉這個曲名推論任何事**（第 110 條）——它是曲目表上的字面，不是描述。(3) **不得寫曲長總長或平均長度**：Discogs 原盤與 MusicBrainz 第二筆都沒有曲長，只有 CD 那筆有；要寫曲長就必須註明「MusicBrainz 那筆 CD release 登錄的曲長」。(4) MusicBrainz 第二筆（df686336）**格式欄寫 Digital Media 卻用 A1–B4 的黑膠位置寫法、國別空白**——**那筆的欄位互相矛盾，不得引用它來描述任何實體形制**（第 136 條）。行文談形制一律以 Discogs 原盤（黑膠 LP）或 MusicBrainz 第一筆（CD）為準，並註明是哪一筆。(5) Discogs 註記欄「Mastered by Rocker at Star Studios.」中的 Rocker **沒有對應的 Discogs 藝人實體連結**，**只能照抄那句註記、不得替他補全名或身分**。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Light Turning Wurlitzer」在 Apple GB 搜過，**回 count 0**。掛名是常見字、盤名也是常見字，**單用「Light」或「Turning」搜只會撈回無關結果，無法做逐軌核對**；維持 `unavailable`，並在此註明**這一張的「查無」信賴度低於本組其他張**（第 152 條的邊界：搜不到可能是查詢方法搆不到，而不是碟不在）。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:Amp|Sirènes",
+  "artist": "Amp",
+  "album": "Sirènes",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 63f5dd4c 的欄位：title《Sirènes》、artist-credit「Amp」、first-release-date 1996、primary-type Album、secondary-types 空陣列；轄下三筆 release 都是 Official——1996 GB CD、1996 US CD、1996 GB 12 吋黑膠。",
+    "src": "https://musicbrainz.org/release-group/63f5dd4c-b33c-30d0-a270-3ff94c4d56f8"
+   },
+   {
+    "f": "MusicBrainz 1996 GB 那筆 release（150f502a）登記廠牌 Wurlitzer Jukebox、編號 WJ09、一片 CD、track-count 10，曲目為 1〈Souvenir〉7:29、2〈Frieze〉7:43、3〈Perdu〉1:33、4〈Merry Go Down〉7:07、5〈November〉1:47、6〈Rave Mantra〉8:12、7〈Matilda's Shorts Wave〉6:57、8〈Soft Stone Soul〉5:13、9〈Eternity〉7:16、10〈So Be It〉3:29。",
+    "src": "https://musicbrainz.org/release/150f502a-3ba6-479f-b8dc-2f53d8b30bb9"
+   },
+   {
+    "f": "MusicBrainz 另兩筆同年 release：美國那筆（b6cb9c0a）掛 Petrol Records、編號 OILCD4、barcode 053440000420、一片 CD 十軌；英國黑膠那筆（e441a1de）掛 Linda's Strange Vacation、編號 LSD 03、12 吋、十軌分 A1–A5／B1–B5。",
+    "src": "https://musicbrainz.org/release/b6cb9c0a-0bf4-4706-ab53-93fb0ee37539"
+   },
+   {
+    "f": "Discogs 原盤條目 346457 記：Wurlitzer Jukebox，編號 WJ09，UK，released 欄 1996，格式 CD／Album；公司欄記 Recorded At: Bryn Derwen、Recorded At: A.M.P. Studios、Made By: PDO, UK、Distributed By: Cargo (2)。",
+    "src": "https://www.discogs.com/release/346457"
+   },
+   {
+    "f": "同一條目的 credit 欄把演奏者分成兩層：「Performer: AMP」，以及八條「Performer [Broadcasting Through The Amp]」——Dave Mercer (2)、Gareth Mitchell、Guy Cooper、Karine Charff、Matt Elliott、Matt Jones (3)、Paul Gulatic、Richard Amp；另有「Technician [Technical Support], Engineer: Lawrence Gane」與同職的 Roger Walker，以及「Written-By, Producer: Amp」。",
+    "src": "https://www.discogs.com/release/346457"
+   },
+   {
+    "f": "同一條目的 identifiers 欄記 Matrix／Runout「MADE IN U.K. BY PDO WJ9 10410971 02 &」、Mastering SID Code「IFPI L134」、Mould SID Code「IFPI 0459」。",
+    "src": "https://www.discogs.com/release/346457"
+   },
+   {
+    "f": "Discogs master 52932 的版本清單五筆：1996 UK CD（Wurlitzer Jukebox WJ09）、1996 US CD（Petrol Records OILCD4／OIL4CD）、1996 UK 黑膠（Linda's Strange Vacation）、1996 US 黑膠（Petrol Records OIL4）、2005 UK MP3（Ampbase AMP015）。",
+    "src": "https://www.discogs.com/master/52932"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1093248056）的 trackCount 欄 10、releaseDate 欄 1996-04-08、copyright 欄「℗ 1996 Ampbase.net」，十軌逐項與 MusicBrainz 1996 GB 那筆同名同序。",
+    "src": "https://music.apple.com/gb/album/sirenes/1093248056"
+   },
+   {
+    "f": "MusicBrainz 藝人 c60f9fb1 的欄位：name「Amp」、type Group、country GB、life-span begin 1992、disambiguation「Richard Walker & Karine Charff: Drone Rock」；外部連結含官方網站 ampbase.net 與 wikidata Q3614650。",
+    "src": "https://musicbrainz.org/artist/c60f9fb1-b519-4c70-ba0c-d89b9e96aff1"
+   },
+   {
+    "f": "Discogs 藝人頁 4090 的簡介欄寫「Amp is an English group based around the core members Richard Walker and Karine Charff. Walker was a member of a band in Bristol called The Secret Garden that incubated a number of groups including Flying Saucer Attack and Third Eye Foundation. In 1992 he left the band; singles from Amp began to come out on a number of small English labels and a debut album called Sirènes was released in 1996 on the Wurlitzer Jukebox label in the UK and a short-lived American label called Petrol.」；名稱變體欄列 A.M.P. 與 a•m•p•。",
+    "src": "https://www.discogs.com/artist/4090"
+   },
+   {
+    "f": "Discogs 廠牌頁 4899（Wurlitzer Jukebox）的簡介欄寫「Founded by Keith Jenkins (8). Original home of Plone, ISAN and Broadcast. Now defunct.」，並加註不要與 The Wurlitzer Company 混淆；該廠牌頁的 releases 端點回報 78 筆。",
+    "src": "https://www.discogs.com/label/4899"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄寫「透過那台 amp 播送」",
+   "同一年，三家廠牌，三種形制"
+  ],
+  "sound": "十軌的長度分成兩群：六軌在 6:57 到 8:12 之間，另外四軌分別是 1:33、1:47、3:29、5:13——兩首不到兩分鐘的短曲夾在長曲之間（逐軌數自 MusicBrainz 1996 GB 那筆的曲長表，共十軌）。Discogs 原盤的 credit 欄把演奏分成兩層：一條掛團名，另外八條掛在同一個括號註記底下；技術支援與工程師另有兩條。公司欄記了兩個錄音地點。Discogs master 的風格欄掛 Ambient、Experimental、Space Rock、Shoegaze。（本欄由 MusicBrainz 曲長表與 Discogs 的 credit 欄、公司欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Rave Mantra",
+   "Souvenir",
+   "Eternity"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1996,
+   "note": "1996 維持卡單原值，四方一致（MusicBrainz first-release-date 1996 且三筆 release 全在 1996、Discogs master year 欄 1996、Discogs 原盤 released 欄 1996、Apple releaseDate 1996-04-08）。**行文只能寫到年**：MusicBrainz 與 Discogs 都只有年，Apple 的 1996-04-08 是**單一來源的日期、且 Apple 的日期欄在本批多次被證實不可靠**（同批 Scanner 那張的 Apple 日期就是佔位值），不足以支撐月日。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**取得**：Wurlitzer Jukebox 廠牌沿革（創辦人、Plone／ISAN／Broadcast 的最初出處、現已停業）。**Light《Turning》、Electroscope《Homemade Electroscope》、Soundsmith《Aquanaut》三張禁用這條**，只寫自己那筆的廠牌欄與編號。\n**原盤軌數**：`originalTrackCount` = **10**。MusicBrainz 三筆 release 全部 track-count 10、Discogs 原盤十軌、Apple 十軌，四個來源逐項同名同序，**無爭議**。\n**禁令**：(1) **★ 第 110／146 條，本卡最高風險**：Discogs credit 欄裡有 **Matt Elliott** 與 **Matt Jones (3)**。「Matt Elliott 就是 The Third Eye Foundation」這個等式**已分派給〈Ghost〉那張**，**本卡禁止把這兩者連起來**。本卡可以寫的是 Discogs 藝人頁簡介欄那段 Bristol 淵源（The Secret Garden、Flying Saucer Attack、Third Eye Foundation 三個團名），**寫成「Discogs 藝人頁的簡介欄說」**（第 128 條），**且不得把簡介欄裡的團名與 credit 欄裡的人名互相對應**——facts 沒有任何一條做這個連結。(2) **credit 欄的「Broadcasting Through The Amp」是原盤 credit 欄的括號註記字面**，**可以照引，不得解釋它是什麼技法、不得描述聲音怎麼產生**（第 110／136 條）。(3) **「Richard Amp」與「Paul Gulatic」是 Discogs credit 欄的字面**。本組另有 Soundsmith《Aquanaut》一張，其 Discogs 藝人頁 realname 欄寫 Paul Gulati——**「Paul Gulatic」與「Paul Gulati」拼法不同、Discogs 也未把它們連成同一實體，禁止寫成同一個人**（第 110 條）。同理「Richard Amp」與 disambiguation 欄的「Richard Walker」**不得寫成同一人**。(4) **Bryn Derwen 這個錄音室已分派給〈Translucent〉**，本卡只寫自己那筆公司欄的字面（「Discogs 原盤的公司欄記了 Bryn Derwen 與 A.M.P. Studios 兩個錄音地點」），**不得寫成跨張現象**。(5) 三家廠牌三種形制可以寫，**但只能寫成 Discogs master 版本清單上的筆數與欄位**，不得寫成「同時在三國發行」這類推論（版本清單只說各筆的國別欄是什麼）。\n**探測層核對**：CAA 有圖。試聽可用（Apple 1093248056），十軌逐項對得上原盤，**這一筆的軌數可以用**。"
+ }
+]
