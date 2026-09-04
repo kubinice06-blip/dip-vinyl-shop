@@ -199,5 +199,675 @@
    "note": "**只能寫到年。** MB release-group first-release-date 1973、MB 那筆 Black Jazz 原盤 release 的 date 欄 1973（只有年）、Discogs 2007750 的 year 與 released 欄皆 1973，三邊一致。**策展層 `curatorRisk` 提到「部分再發文案寫 1974」，但本卡查到的四個資料庫欄位沒有任何一個寫 1974**——那是策展層的線索、不是事實（第 142 條），**行文不得提「有另一說是 1974」**，因為本卡拿不出那個說法的來源。**Apple 的 releaseDate 1973-04-07 是佔位值，不得當原盤發行日**（第 140 條附二）。"
   },
   "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得（全組唯一）**：**Black Jazz Records 廠牌史**——含成立年、創辦人 Gene Russell 與 Dick Schory、廠牌的定位、1975 年收攤轉做 Aquarican Records。**卡 1、2、4–9 全部禁用這條線**，那八張只能寫自己條目上的廠牌欄／編號欄與自己那張的 Producer 欄。\n**同時取得**：**Gene Russell 身兼廠牌老闆與製作人**這條線（他在本組卡 1、2、3、5、6、7 掛 Producer，卡 4、9 掛 Executive-Producer，卡 8 掛 Producer, Liner Notes）。**但依第 145 條，「他在本批幾張碟上掛製作人」這種全批統計量不入文**——只能寫成「這張碟的 Producer 欄是他自己」，或引維基那句「他創辦了這家廠牌」。\n**未取得**：Hollywood Spectrum Studios 這條錄音室線歸卡 5（本卡只能寫自己公司欄上的那一行）；四聲道敘事歸卡 6；Real Gone Music 復刻線歸卡 7；Bud Doty 的美術線歸卡 7。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 8**——MB 1973 US release track-count 8、Discogs 2007750 曲目表 8 個曲位（A1–A4、B1–B4）、Apple 8 軌且曲名逐軌相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **B1〈You Are The Sunshine Of My Life〉的作者只能寫成「Discogs 的 Written-By 欄標成 Written-By [Uncredited]: Stevie Wonder」**，**不得寫成「這張碟沒有署名 Stevie Wonder」或「盤上漏印了作者」**（第 136 條：資料庫的欄位只能寫成資料庫的欄位）。Discogs 註記欄那句「Track B1 has an attribution (it is not printed what the attribution is) to : Stein VanStocking」同樣只能寫成「註記欄這樣寫」。\n(3) **不得寫「這是他在自家廠牌的第二張」**——本卡 facts 沒有任何一條說順序或張數；策展層 `curatorWhy` 這樣寫，但那是線索不是事實（第 142 條）。維基〈Black Jazz Records〉那句「1971 年 8 月 1 日發行頭四張專輯」也**不能拿來推論這張是第幾張**（第 110 條的同形狀）。\n(4) **試聽：Apple 上有這張碟，逐軌核對通過**（8 軌曲名與曲序全同）。**探測層標的 `ready` 成立。**\n(5) **維基的內容只能寫成「維基〈Black Jazz Records〉條目說」「維基〈Gene Russell〉條目說」**（第 128 條）；facts 第 9、10 條抄的都是**帶行內引註**的段落（第 40／80 條）。維基提到「盜版盤大量進入市場」那句歸卡 2 那條 fact，**本卡不得寫盜版、稀有度或二手價**（第 109 條）。\n(6) Henry Franklin（卡 1 的掛名藝人）與 Calvin Keys（卡 4 的掛名藝人）都出現在本卡的 credit 欄。**跨張班底敘事歸卡 8**；本卡只能逐條寫「Discogs 的 credit 欄列 Bass: Henry Franklin、Guitar: Calvin Keys」，**不得寫成「同一批人輪流當領班」這種歸納**。"
+ },
+ {
+  "key": "desc2:Calvin Keys|Proceed With Caution",
+  "artist": "Calvin Keys",
+  "album": "Proceed With Caution",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fcf0a72c 的欄位：title《Proceed With Caution》（**不帶驚嘆號**）、first-release-date 1974、primary-type Album、secondary-types 空陣列、artist-credit「Calvin Keys」（個人實體 MBID 450b6615-08a2-4d4c-9b30-a9557d1feab1，type Person，disambiguation 欄「jazz guitarist/composer」）、annotation 為 null；genre 欄三個標籤各 1 票（jazz、jazz-funk、soul jazz）；**url-rels 是空的——這個 release-group 沒有掛任何外部連結，Discogs master 是本卡另外以 Discogs 搜尋 API 反查到的。**",
+    "src": "https://musicbrainz.org/release-group/fcf0a72c-cf08-4877-bc85-428988456628"
+   },
+   {
+    "f": "以 release?release-group=fcf0a72c…&inc=recordings 逐版比對，該 release-group 轄下只有 2 筆 release、兩筆都 status Official、都是 6 軌、曲名與曲序逐軌相同、**兩筆的 title 都寫成帶驚嘆號的《Proceed With Caution!》（與 release-group 的 title 不同）**：1974 US（d938bba4，Black Jazz Records BJQD/18，一張 12\" Vinyl，逐軌 A1〈Proceed With Caution〉12:45、A2〈Tradewinds〉4:35、A3〈Efflugence〉8:02、B1〈Aunt Lovey〉7:28、B2〈Renaissance〉11:24、B3〈Night Cry〉5:43）；2005-05-04 JP（4bb33027，P‐VINE RECORDS PCD-22103，CD，曲長逐軌相同）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fcf0a72c-cf08-4877-bc85-428988456628&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1541123 的欄位：artists 欄「Calvin Keys」、廠牌欄兩條都寫 Black Jazz Records（編號欄一條 BJQD/18、一條 BJQD 18）、國別 US、year 與 released 欄皆 1974、格式欄 Vinyl ×1［LP, Album, Stereo, Quadraphonic］、genre 欄 Jazz 與 Funk / Soul、style 欄 Soul-Jazz 與 Jazz-Funk。",
+    "src": "https://www.discogs.com/release/1541123"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Leader, Guitar「Calvin Keys」（anv 欄 Ajafika Calvin Keys）；Bass「Henry Franklin」（anv Nyimbo Henry Franklin）；Drums「Leon Ndugu Chancler」（anv Ndugu Leon Chancelor）；Electric Piano「Kirk Lightsey」（anv Thalmus Kirk Lightsey）；Soprano Saxophone, Tenor Saxophone, Flute「Charles Owens」；Trumpet, Flugelhorn「Oscar Brashear」（anv Cha Che Oscar Brashear）；Percussion [Ittisels, Sertasizem (Obe), Papali], Bongos「Owen Marshall」；Engineer [Recording]「Jim Mooney」；Executive-Producer「Gene Russell」；Liner Notes「Chuck Siler」；Photography By「Jay Powell (4)」；Graphics「Grafica, Chicago」（anv Grafica Studio, Inc.）；Lacquer Cut By「Bob Berglund」（anv BB）。**Arranged By 是逐軌分開掛的：A1、B1 到 B3 掛 Calvin Keys，A2 掛 David Durrah，A3 掛 Al Hall (2)（anv Al Hall, Jr.）。**",
+    "src": "https://www.discogs.com/release/1541123"
+   },
+   {
+    "f": "同一條目的公司欄九條：Manufactured By「Ovation Records」、Distributed By「Ovation Records」、Copyright (c)「Ovation Incorporated」、Phonographic Copyright (p)「Ovation Incorporated」、Published By「Black Jazz Music」、Published By「Aljoni Music Co.」、**Recorded At「Sage & Sand Studios」、Mixed At「Streeterville Studios」**、Pressed By「Shelley Products」。",
+    "src": "https://www.discogs.com/release/1541123"
+   },
+   {
+    "f": "同一條目的曲目表共 6 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈Proceed With Caution〉12:44（Calvin Keys）、A2〈Tradewinds〉4:30（David Durrah）、A3〈Efflugence〉8:05（Al Hall (2)）、B1〈Aunt Lovey〉7:30（Calvin Keys）、B2〈Renaissance〉11:30（Calvin Keys）、B3〈Night Cry〉4:46（Charles Owens）。identifiers 欄五條：Matrix / Runout「BJQD-18-A BB」（Side A runout）、Matrix / Runout「BJQD-18-B BB Ƨ」（Side 2 runout）、Rights Society「ASCAP」（All tracks except A2 and A3）、Rights Society「BMI」（Tracks A2 and A3）、Pressing Plant ID「Ƨ」。",
+    "src": "https://www.discogs.com/release/1541123"
+   },
+   {
+    "f": "同一條目的註記欄整段抄的是一篇**有署名**的內頁文，署名三行寫「Chuck Siler／West Coast Editor／The Black Collegian/Expressions」。原句逐段：「Calvin Keys is one of the most exciting and talented young guitarists to hit the jazz scene in recent year.」「The key to all of this is Calvin's ability to take a direction and to exploit it to the fullest in his own inimitable manner. On this, his second album on the Black Jazz Label, he leaps forward in time ans sets a pace that others will now have to follow.」「it would be unfair to single out any tune and call it \"BEST\" for each ear is served and satiated. Exceptional work by each of his sidemen makes manifest Calvin's, as well as their own, musical gifts.」「Calvin Keys is an innovator destined for greatness !」（拼寫與標點皆照 Discogs 條目原樣，包括 \"in recent year\" 與 \"ans\" 這兩處）。",
+    "src": "https://www.discogs.com/release/1541123"
+   },
+   {
+    "f": "Discogs master 592769 的 versions 共 15 筆，**零筆標 Unofficial**。逐筆：1974 US Black Jazz BJQD/18 兩筆（一般盤、Promo，皆標 Quadraphonic）；1974 Japan Black Jazz YX-7017（LP, Quadraphonic）；2003 US Black Jazz BJQD/18（CD, Reissue）；2005 Japan P-Vine PCD-22103＋BJQD/18（CD）；2009 Japan Black Jazz BJQD/18＋BJ/18（CD, Reissue, Quadraphonic）；2013 Japan Black Jazz BJQD/18＋BJQD18/21＋SDGBJ1218（CD, Reissue, Remastered）；**2020 US Black Jazz 兩筆數位檔（一筆 ALAC、一筆 FLAC，格式欄都標 Album, Remastered、編號欄寫 none，且這兩筆的 title 是不帶驚嘆號的《Proceed With Caution》）**；2021 US 三筆（RGM-1296 CD、RGM-1294 LP ×2）；2022 Japan P-Vine PLP-7781（LP）與 Black Jazz PCD-17840（CD）。",
+    "src": "https://www.discogs.com/master/592769"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1509139834，us 店面）：collectionName《Proceed with Caution!》、artistName「Calvin Keys」、trackCount 6、releaseDate 1974-04-07、copyright 欄「℗ 1974 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈Proceed With Caution〉750213ms＝12:30、2〈**Trade Winds**〉269483ms＝4:29、3〈Efflugence〉478528ms＝7:58、4〈Aunt Lovey〉442225ms＝7:22、5〈Renaissance〉679595ms＝11:19、6〈Night Cry〉340448ms＝5:40。**六軌曲序與原盤完全相同、無多出、無抽換、無二合一；唯一差異是第 2 軌的曲名 Apple 寫成兩個字的「Trade Winds」，MB 與 Discogs 都寫成一個字的「Tradewinds」。**",
+    "src": "https://itunes.apple.com/lookup?id=1509139834&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Calvin Keys〉條目帶行內引註的段落說：Calvin Keys（1942 年 2 月 6 日–2024 年 4 月 14 日）是美國爵士吉他手，以他在 Black Jazz Records 發行的數張專輯著稱（引註 AllMusic 唱片目錄頁）；他曾與 Ray Charles、Ahmad Jamal、Jimmy Smith、John Handy、Bobby Hutcherson、Eddie Marshall、Sonny Stitt、Pharoah Sanders、Joe Henderson 與 Leon Williams 演出及錄音（引註 totallyguitars.com 的存檔頁）；2024 年 4 月 14 日因中風於加州柏克萊過世、享年 82 歲（引註 KQED 2024-04-15 Gabe Meline〈Calvin Keys, Jazz Guitarist With Endless Soul, Dies at 82〉）。",
+    "src": "https://en.wikipedia.org/wiki/Calvin_Keys"
+   },
+   {
+    "f": "Discogs 版本欄與 MB 的 title 欄對盤名的寫法分歧可逐筆對照：Discogs master 592769 的 title 與 15 筆版本裡有 13 筆寫帶驚嘆號的《Proceed With Caution!》、2 筆（2020 那兩個數位檔）寫不帶驚嘆號的《Proceed With Caution》；MB 的 release-group title 不帶驚嘆號、但轄下兩筆 release 的 title 都帶；Apple 的 collectionName 帶驚嘆號但把 with 小寫（《Proceed with Caution!》）。",
+    "src": "https://www.discogs.com/master/592769"
+   }
+  ],
+  "hookCandidates": [
+   "編曲是逐軌分掛的：六軌裡四軌掛領班自己，另外兩軌各掛一個人",
+   "打擊樂的 credit 欄把樂器名一個個列出來——Ittisels、Sertasizem (Obe)、Papali"
+  ],
+  "sound": "六軌兩面。原盤（Discogs 1541123 曲目表）最短的一軌是 B3〈Night Cry〉4:46、最長的一軌是 A1〈Proceed With Caution〉12:44；MB 那兩筆 release 的曲長表端點是 4:35（A2）與 12:45（A1），**B3 兩庫差最多（Discogs 4:46／MB 5:43／Apple 340448ms＝5:40），行文要提秒數就三個都帶著或都不提**。編制照 Discogs credit 欄是吉他（掛 Leader）、貝斯、鼓、電鋼琴、高音與次中音薩克斯兼長笛、小號兼富魯格號，另有一條把打擊樂器逐件列名的 Percussion／Bongos。Arranged By 逐軌分掛。格式欄寫 Stereo, Quadraphonic。（本欄由 Discogs 1541123 的曲目表與 credit／格式欄、MB 兩筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Proceed With Caution",
+   "Renaissance",
+   "Efflugence"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1974,
+   "note": "**只能寫到年。** MB release-group first-release-date 1974、MB 那筆 Black Jazz 原盤 release 的 date 欄 1974（只有年）、Discogs 1541123 的 year 與 released 欄皆 1974，三邊一致。**Apple 的 releaseDate 1974-04-07 是佔位值，不得當原盤發行日**（第 140 條附二）。"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：(a) **Chuck Siler 那篇有署名的內頁文**（本卡是 a 組唯一一張 Discogs 註記欄整段抄下內頁文並帶署名與職稱的碟）；(b) **Sage & Sand Studios 錄音／Streeterville Studios 混音的分工線**（卡 8〈2nd Wave〉的公司欄也是這兩間，但那張的分派是班底線，**卡 8 只能寫自己公司欄上的那兩行、不得展開成錄音室敘事**）。\n**未取得**：Black Jazz 廠牌史歸卡 3；四聲道敘事歸卡 6；Real Gone Music 復刻線歸卡 7；跨張班底敘事歸卡 8；Ovation 母公司線歸卡 1。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 6**——MB 1974 US release track-count 6、Discogs 1541123 曲目表 6 個曲位（A1–A3、B1–B3）、Apple 6 軌且曲序相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **盤名有沒有驚嘆號，只能寫成「哪個資料庫的哪個欄位是哪種寫法」**（第 136 條），facts 第 11 條已逐筆列好。**不得寫成「原盤封面印的是帶驚嘆號的那種」**——本卡沒有任何一條 facts 是在描述封面。\n(3) **第 2 軌的曲名 Apple 寫「Trade Winds」、MB 與 Discogs 寫「Tradewinds」。** 行文若要提這首，**一律用卡單／原盤那一側的寫法「Tradewinds」**，或兩種都寫；**不得寫成「Apple 打錯了」**。\n(4) **試聽：Apple 上有這張碟，逐軌核對通過**（6 軌曲序全同，只有一處曲名分寫）。**探測層標的 `ready` 成立。**\n(5) **引用 Chuck Siler 那段內頁文時，一律寫成「Discogs 條目抄錄的內頁文說」＋署名**（第 128／143 條）。它是**有具名出處**的評語，qa 的「未具名出處」規則可能仍會亮燈，**這是標記不是失敗（第 143 條），不要刪**。**不得把「his second album on the Black Jazz Label」當成事實引用**——那是內頁文作者的說法，只能寫成「內頁文這樣說」（本卡沒有任何一條 facts 能獨立證明張數順序）。\n(6) **不得寫「遺作」「他生前最後的錄音」**——維基寫他 2024 年過世、本卡這張碟是 1974 年的，兩件事之間沒有任何一條 facts 建立關係（第 110 條的同形狀，比照 c-85 立的那條）。\n(7) **這個 release-group 的 url-rels 是空的，Discogs master 是本卡自己反查來的。** 若下游有任何自動化流程依賴 MB→Discogs 的連結，**要知道這張沒有那條連結**；行文不得提這件事（那是管線細節，不是碟的內容）。"
+ },
+ {
+  "key": "desc2:Rudolph Johnson|The Second Coming",
+  "artist": "Rudolph Johnson",
+  "album": "The Second Coming",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 95518e5a 的欄位：title《The Second Coming》、first-release-date 1973、primary-type Album、secondary-types 空陣列、artist-credit「Rudolph Johnson」（個人實體 MBID 10066070-0d7e-490b-ac2b-2be2ccadda30，type Person，disambiguation 欄「1970s jazz saxophone player」）、annotation 為 null；genre 欄三個標籤各 1 票（contemporary jazz、jazz、soul jazz）；url-rels 只有一條 discogs 指向 master/445694。",
+    "src": "https://musicbrainz.org/release-group/95518e5a-899f-39e5-ae44-38249075b8c2"
+   },
+   {
+    "f": "以 release?release-group=95518e5a…&inc=recordings 逐版比對，該 release-group 轄下共 4 筆 release、全部 status Official、**全部 5 軌、曲名與曲序逐軌相同、無任何一筆多出或抽換曲目**：1973 US（55a653e8，Black Jazz Records BJQD/11，一張 12\" Vinyl，逐軌 A1〈The Traveler〉6:47、A2〈Time and Space〉7:24、A3〈The Highest Pleasure〉7:45、B1〈The Water Bearer〉6:46、B2〈The Second Coming〉9:00）；2005 US（52c4dffb，Black Jazz BJQD/11，CD，packaging 欄 Jewel Case，曲長 7:14／7:19／7:39／6:42／8:56）；2005-04-02 JP（35f78383，廠牌欄兩條 Black Jazz BJQD/11 與 P‐VINE RECORDS PCD-22096，CD，barcode 4995879220962，曲長與 1973 那筆相同）；2021-10-01 US（41f1c687，廠牌欄兩條 Black Jazz RGM-1288 與 Real Gone Music RGM-1288，CD，barcode 848064012887，Jewel Case，曲長 6:40／7:18／7:39／6:42／8:56）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95518e5a-899f-39e5-ae44-38249075b8c2&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1397940 的欄位：artists 欄「Rudolph Johnson」、廠牌欄 Black Jazz Records、編號欄 BJQD/11、國別 US、year 與 released 欄皆 1973、格式欄 Vinyl ×1［LP, Album, Stereo, Quadraphonic］、genre 欄 Jazz、style 欄 Soul-Jazz 與 Contemporary Jazz。註記欄只有兩行「Mfd. in U.S.A.」「Printed in U.S.A.」。",
+    "src": "https://www.discogs.com/release/1397940"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Tenor Saxophone, Arranged By「Rudolph Johnson」；Piano「Kirk Lightsey」；Bass「Kent Brinkley」（anv 欄 Kent L. Brinkley）；Drums「Doug Sides」（anv Douglas J. Sides）；Producer「Gene Russell」；Liner Notes「Earl J. McGhee」；Artwork [Cover Art & Liners]「Bud Doty」；Photography By [Cover Photo & Concept]「Dorothy Tanous」；Lacquer Cut By「Bob Berglund」（anv BB）。**演奏 credit 只有四條。**",
+    "src": "https://www.discogs.com/release/1397940"
+   },
+   {
+    "f": "同一條目的公司欄七條：Distributed By「Ovation Records」、Phonographic Copyright (p)「Ovation Incorporated」、Copyright (c)「Ovation Incorporated」、Published By「Creative Music (4)」、Published By「Black Jazz Music」、**Recorded At「Hollywood Spectrum, Los Angeles」**、Pressed By「Shelley Products」。identifiers 欄三條：Rights Society「ASCAP」、Matrix / Runout「BJQD/11-A BB Ƨ」（A-Side runout inscription）、Matrix / Runout「BJQD/11-B BB Ƨ」（B-Side runout inscription）。",
+    "src": "https://www.discogs.com/release/1397940"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈The Traveler〉7:14（Rudolph Johnson）、A2〈Time And Space〉7:19（Rudolph Johnson）、A3〈The Highest Pleasure〉7:39（Rudolph Johnson）、**B1〈The Water Bearer〉6:42（Written-By: Kirk Lightsey——五軌裡唯一不是掛名藝人寫的一首，作者是這張碟的鋼琴手）**、B2〈The Second Coming〉8:56（Rudolph Johnson）。",
+    "src": "https://www.discogs.com/release/1397940"
+   },
+   {
+    "f": "Discogs master 445694 的 versions 共 18 筆，**零筆標 Unofficial**。1973–74 年的原盤側共五筆，載體有三種：US BJQD/11 三筆黑膠（一般盤、Promo、Test Pressing，皆標 Quadraphonic）、**US 編號 8711 的一筆 8-Track Cartridge（格式欄 Album）**、1974 Japan Black Jazz YX-6053（LP, Quadraphonic）。再發側：1997 Japan P-Vine PCD-5281；2002 US Black Jazz BJQD/11；2003 US BJQD/11＋BJ/11；2005 Japan Black Jazz BJQD/11＋PCD-22096；2005 US BJQD/11；2012 Japan Snow Dog SDGBJ1211＋BJQD/11（Remastered）；2021 US 四筆黑膠 RGM-1286 與一筆 CD RGM-1288；2021 Japan Black Jazz PLP-7761；2022 US RGM-1286（Club Edition, Numbered）。",
+    "src": "https://www.discogs.com/master/445694"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1507449912，us 店面）：collectionName《The Second Coming》、artistName「Rudolph Johnson」、trackCount 5、releaseDate 1973-04-06、copyright 欄「℗ 1973 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈The Traveler〉400939ms＝6:40、2〈Time And Space〉438464ms＝7:18、3〈The Highest Pleasure〉458645ms＝7:38、4〈The Water Bearer〉401749ms＝6:41、5〈The Second Coming〉536192ms＝8:56。**五軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一。**",
+    "src": "https://itunes.apple.com/lookup?id=1507449912&entity=song&country=us"
+   },
+   {
+    "f": "本卡查過的 Hollywood Spectrum Studios 這條線在 a 組共出現四次，四次都寫在各自 Discogs 條目的公司欄 Recorded At：本卡 1397940（BJQD/11，1973）、卡 2 的 704883（BJQD/14，1973）、卡 3 的 2007750（BJQD/10，1973）、卡 7 的 2007715（BJQD/12，1973）。卡 3 與卡 7 的註記欄另各有一行「Recorded in Hollywood Spectrum Studios, Los Angeles, California.」。**四條都只是欄位值，沒有任何一條給出錄音日期。**",
+    "src": "https://www.discogs.com/release/1397940"
+   },
+   {
+    "f": "英文維基〈Black Jazz Records〉條目帶行內引註的段落說，該廠牌發行過的音樂類型包括 funk、free jazz 與 soul jazz（引註 choicecuts.com〈A Tribute to Black Jazz Records〉）。**MB 對本張登的 genre 標籤是 contemporary jazz、jazz、soul jazz 各 1 票；Discogs 對本張登的 style 是 Soul-Jazz 與 Contemporary Jazz。**兩庫都沒有把本張標成 free jazz。",
+    "src": "https://en.wikipedia.org/wiki/Black_Jazz_Records"
+   },
+   {
+    "f": "MB 四筆 release 對同一首曲子的曲長登得不一致，以 A1〈The Traveler〉為例：1973 US 那筆與 2005-04-02 JP 那筆都是 6:47，2005 US 那筆是 7:14（與 Discogs 原盤條目的 7:14 相同），2021-10-01 US 那筆是 6:40（與 Apple 的 400939ms 相同）。**同一 release-group 內部就有三個不同的值。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=95518e5a-899f-39e5-ae44-38249075b8c2&inc=recordings&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "五軌裡有一軌的 Written-By 欄不是掛名的薩克斯手，是這張碟的鋼琴手",
+   "Discogs 的演奏 credit 只有四條——薩克斯、鋼琴、貝斯、鼓"
+  ],
+  "sound": "五軌兩面。原盤（Discogs 1397940 曲目表）最短的一軌是 B1〈The Water Bearer〉6:42、最長的一軌是 B2〈The Second Coming〉8:56；MB 那筆 1973 release 的曲長表端點是 6:46（B1）與 9:00（B2）。**同一 release-group 的四筆 release 對 A1 就登了三個不同的值（6:47／7:14／6:40），行文要提秒數就要把來源說清楚、或乾脆不提。**編制照 Discogs credit 欄只有四件：次中音薩克斯（兼 Arranged By）、鋼琴、貝斯、鼓。格式欄寫 Stereo, Quadraphonic。（本欄由 Discogs 1397940 的曲目表與 credit／格式欄、MB 四筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "The Traveler",
+   "The Water Bearer",
+   "The Second Coming"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "note": "**只能寫到年。** MB release-group first-release-date 1973、MB 那筆 Black Jazz 原盤 release 的 date 欄 1973（只有年）、Discogs 1397940 的 year 與 released 欄皆 1973，三邊一致。**Apple 的 releaseDate 1973-04-06 是佔位值，不得當原盤發行日**（第 140 條附二）。轄下再發有到日的兩筆（2005-04-02、2021-10-01）是再發日。**Discogs 版本欄裡日本原盤那筆的 released 欄寫 1974（YX-6053），那是日本壓片的年份、不是原盤年，行文不得混用。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：**Hollywood Spectrum Studios（洛杉磯）這條錄音室線**（facts 第 9 條已把 a 組四張的欄位對照列好，本卡可以寫成「這幾張的錄音欄都指向同一間」）。**卡 2、3、7 一律禁用這條線，只能寫自己公司欄上的那一行、不得展開。**\n**未取得**：Black Jazz 廠牌史歸卡 3；四聲道敘事歸卡 6；Real Gone Music 復刻線歸卡 7；跨張班底敘事歸卡 8；Ovation 母公司線歸卡 1；Bud Doty 的美術線歸卡 7。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 5**——MB 1973 US release track-count 5、Discogs 1397940 曲目表 5 個曲位（A1–A3、B1–B2）、Apple 5 軌且曲名逐軌相同，三邊一致；**同一 release-group 轄下四筆 release 全部都是 5 軌，沒有任何一筆是擴充版或二合一**。面別分法只能引 Discogs 的 A／B 編號。\n(2) **曲長不得斷言單一值**：同一 release-group 內部就有三個不同的 A1 值（見 facts 第 11 條）。`sound` 欄已依第 154 條只寫端點並標明來源，**行文不得寫「最短幾分幾秒」以外的計數句**。\n(3) **不得寫「四重奏」「四人編制」**——Discogs 的演奏 credit 是四條，但**那是 credit 欄的條數，不是編制**（第 136 條）。可以寫成「Discogs 的演奏 credit 只有四條：次中音薩克斯、鋼琴、貝斯、鼓」。\n(4) **不得由 genre／style 標籤推論這張碟屬於 free jazz**——facts 第 10 條已寫明兩庫的標籤都沒有 free jazz，維基那句是在講廠牌整體、不是這張碟（第 110／128 條）。\n(5) **試聽：Apple 上有這張碟，逐軌核對通過**（5 軌曲名與曲序全同）。**探測層標的 `ready` 成立。**\n(6) **8-Track Cartridge 那筆只能寫成「Discogs 版本欄有一筆格式是 8-Track Cartridge」**；**載體多樣性這條敘事歸卡 6〈Mirage〉**（那張同時有 Reel-To-Reel 與 8-Track 兩種），本卡不得展開。\n(7) Kirk Lightsey 這個名字在本組出現三次（本卡的 Piano、卡 1 的 B3、卡 4 的 Electric Piano、卡 8 的 Keyboards）。**跨張班底敘事歸卡 8**，本卡只能寫自己 credit 欄上的那一條，以及 B1 的 Written-By 欄。"
+ },
+ {
+  "key": "desc2:The Awakening|Mirage",
+  "artist": "The Awakening",
+  "album": "Mirage",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9e2febc0 的欄位：title《Mirage》、first-release-date 1973、primary-type Album、secondary-types 空陣列、annotation 為 null；genre 欄三個標籤各 1 票（jazz、jazz-funk、soul jazz）；url-rels 只有一條 discogs 指向 master/197952。**artist-credit「The Awakening」掛的是 type 為 Group 的實體（MBID f818fd22-5728-470d-8ebf-a23e5a34950a），disambiguation 欄寫的是「70's jazz」**——MB 自己用這個消歧義欄把它與其他同名團體分開。",
+    "src": "https://musicbrainz.org/release-group/9e2febc0-ff1f-3022-8f60-7665e8d6a1ee"
+   },
+   {
+    "f": "以 release?release-group=9e2febc0…&inc=recordings 逐版比對，該 release-group 轄下共 4 筆 release、全部 status Official、**全部 7 軌、曲名與曲序逐軌相同、曲長也逐軌相同（4:56／10:01／5:59／6:13／8:15／6:19／5:32）**：1973 US（8cee7249，Black Jazz Records BJQD/15，一張 12\" Vinyl，軌號 A1–A3、B1–B4）；1999 US（acbd198e，Black Jazz BJ/15，CD，Jewel Case）；2005-04-02 JP（014c54b1，P‐VINE RECORDS PCD-22099，CD）；2013 JP（1e823cc0，廠牌欄兩條 Black Jazz BJQD/15 與 Snowdog Records SDGBJ1215，CD，barcode 4526180114307）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9e2febc0-ff1f-3022-8f60-7665e8d6a1ee&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1901512 的欄位：**artists 欄「The Awakening (4)」（括號裡的 4 是 Discogs 的同名消歧義編號）**、廠牌欄 Black Jazz Records、編號欄 BJQD/15、國別 US、year 與 released 欄皆 1973、格式欄 Vinyl ×1［LP, Album, Stereo, Quadraphonic］、genre 欄 Jazz、style 欄 Soul-Jazz、Jazz-Funk、Spiritual Jazz。",
+    "src": "https://www.discogs.com/release/1901512"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：Keyboards「Ken Chaney」；Tenor Saxophone, Soprano Saxophone「Ari Brown」（anv 欄 Richard (Ari) Brown）；Trumpet「Frank Gordon」；Trombone, Percussion「Steve Galloway」；Bass「Reggie Willis」；Drums, Percussion「Arlington Davis, Jr.」；Engineer [Recording]「Mitch Hennis」；Producer「Gene Russell」；Liner Notes「Lee Ivory」；Artwork [Cover Art & Liners]「Bud Doty」；Photography By [Cover]「Jerome Presley」；Lacquer Cut By「Bob Berglund」（anv BB）。",
+    "src": "https://www.discogs.com/release/1901512"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分兩面，逐軌帶 Written-By 欄與逐軌的額外 credit：A1〈Mode For D.D.〉5:37（Ari Brown）、A2〈The Ultimate Frontier〉9:54（Ari Brown；另掛 Percussion: Drasheer Khalid、Vocals: Anita Jeffries、Vocals: Benjamin Wright）、A3〈Just A Little Peace〉5:08（Ken Chaney）、B1〈Slinky〉6:10（Ken Chaney；另掛 Bass: Rufus Reid）、B2〈Mirage〉8:31（Frank Gordon；另掛 Percussion: Drasheer Khalid）、B3〈Glory To The Sun〉6:12（Frank Gordon；另掛 Bass: Rufus Reid）、B4〈March On〉5:30（Ken Chaney；另掛 Percussion: Drasheer Khalid）。",
+    "src": "https://www.discogs.com/release/1901512"
+   },
+   {
+    "f": "同一條目的公司欄八條：Distributed By「Ovation Records」、Phonographic Copyright (p)「Ovation Incorporated」、Copyright (c)「Ovation Incorporated」、Published By「Kenica Music」、Published By「Streeterville Music」、Published By「Cafra Music」、**Recorded At「Streeterville Studios」**、Pressed By「Shelley Products」。註記欄逐行：「Recorded at Streeterville Studios, Chicago, Illinois」「A1, A2, B4: Kenica-Streeterville Mus/BMI」「A3, B1: Kenica Mus/BMI」「B2: Cafra-Streeterville Mus/BMI」「B3: Cafra Mus/BMI」。identifiers 欄四條：Rights Society「BMI」、Pressing Plant ID「Ƨ」（Both sides runout）、Matrix / Runout「BJQD/15-A #1 BB Ƨ」、Matrix / Runout「BJQD/15-B BB Ƨ」。",
+    "src": "https://www.discogs.com/release/1901512"
+   },
+   {
+    "f": "Discogs master 197952 的 versions 共 20 筆，**零筆標 Unofficial**。1973 年的原盤側共七筆、載體有四種：US BJQD/15 三筆黑膠（兩筆一般盤、一筆 Promo，皆標 Stereo, Quadraphonic）、Japan Black Jazz YX-8004 兩筆黑膠（一筆 Promo、一筆一般盤，皆標 Quadraphonic）、**US 編號 BJZ J 115 的一筆 Reel-To-Reel（格式欄 Album, Quadraphonic, 7 ½ ips）**、**US 編號 BJZ L 715 的一筆 8-Track Cartridge（格式欄 Album, Quadraphonic）**。再發側：1997 Japan P-Vine PCD-5284＋BJ/15；1999 US Black Jazz BJ/15；2005 Japan P-Vine PCD-22099＋BJ/15；2013 Japan Snow Dog SDGBJ1215＋BJQD/15（Remastered）；2021 US Real Gone Music RGM-1261 黑膠三筆與 RGM-1263 CD 一筆、另一筆標 Test Pressing；2021 Japan Black Jazz PLP-7200；2024 US RGM-1261；2026 US RGM-1261；另有一筆 released 欄為 0 的 BJQD/15 CD。",
+    "src": "https://www.discogs.com/master/197952"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1502634854，us 店面）：collectionName《Mirage》、artistName「The Awakening」、trackCount 7、releaseDate 1973-12-19、copyright 欄「℗ 1973 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈Mode for D.D.〉292213ms＝4:52、2〈The Ultimate Frontier〉595499ms＝9:55、3〈Just a Little Peace〉355456ms＝5:55、4〈Slinky〉368933ms＝6:08、5〈Mirage〉490539ms＝8:10、6〈Glory to the Sun〉374059ms＝6:14、7〈March On〉332395ms＝5:32。**七軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一。**",
+    "src": "https://itunes.apple.com/lookup?id=1502634854&entity=song&country=us"
+   },
+   {
+    "f": "**同名團體的排除查證**：英文維基〈The Awakening (band)〉條目講的是**南非哥德搖滾團**——條目開頭引用媒體說法稱其為「South Africa's most successful gothic rock act」（引註 sarockdigest.com 2002），並記述該團在 Oppikoppi、RAMfest 等南非音樂節演出、翻唱 Simon and Garfunkel〈The Sounds of Silence〉登上南非搖滾榜冠軍。**該條目與本卡這個 1970 年代芝加哥爵士團無關，本組全部禁止引用。**本卡的團體身分只能以 MB 的 disambiguation 欄「70's jazz」與 Discogs 的「The Awakening (4)」這兩個消歧義標記為準。",
+    "src": "https://en.wikipedia.org/wiki/The_Awakening_(band)"
+   },
+   {
+    "f": "Discogs 與 MB 對同一首曲子的曲長分歧在本卡特別大，逐軌對照（Discogs 1901512／MB 四筆 release 一致值）：A1 5:37／4:56、A2 9:54／10:01、A3 5:08／5:59、B1 6:10／6:13、B2 8:31／8:15、B3 6:12／6:19、B4 5:30／5:32。**七軌裡有三軌的差距超過 30 秒（A1、A3、B2）；Apple 的毫秒值則逐軌貼近 MB 那一側。**",
+    "src": "https://www.discogs.com/release/1901512"
+   },
+   {
+    "f": "英文維基〈Black Jazz Records〉條目帶行內引註的段落說，共同創辦人 Dick Schory 是獲葛萊美提名的擊樂手，也以四聲道（quadraphonic sound）、Dynagroove 與 RCA Victor 的 Stereo Action 這些立體聲錄音技術的開發著稱（引註 pas.org 打擊樂藝術學會名人堂頁「Hall of Fame: Dick Schory」）。",
+    "src": "https://en.wikipedia.org/wiki/Black_Jazz_Records"
+   }
+  ],
+  "hookCandidates": [
+   "同一批母帶當年出了四種載體：黑膠、盤帶、八軌卡匣，還有日本壓片",
+   "兩個資料庫抄的曲長差最多的一軌差了 51 秒——Discogs 記 5:08，MB 四筆全記 5:59"
+  ],
+  "sound": "七軌兩面。原盤的曲長兩庫不一致：Discogs 1901512 的端點是 A3〈Just A Little Peace〉5:08 到 A2〈The Ultimate Frontier〉9:54，MB 四筆 release 一致的端點則是 A1〈Mode for D.D.〉4:56 到 A2 10:01；**逐軌對照見 facts 第 10 條，行文要提秒數就兩個都帶著或都不提**。編制照 Discogs credit 欄是鍵盤、次中音兼高音薩克斯、小號、長號（兼打擊）、貝斯、鼓（兼打擊）；曲目表另逐軌掛額外 credit——三軌加打擊、兩軌換另一位貝斯手、一軌加兩條 Vocals。格式欄寫 Stereo, Quadraphonic。（本欄由 Discogs 1901512 的曲目表與 credit／格式欄、MB 四筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "The Ultimate Frontier",
+   "Mirage",
+   "March On"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "note": "**只能寫到年。** MB release-group first-release-date 1973、MB 那筆 Black Jazz 原盤 release 的 date 欄 1973（只有年）、Discogs 1901512 的 year 與 released 欄皆 1973，三邊一致。**Apple 的 releaseDate 1973-12-19 是佔位值，不得當原盤發行日**（第 140 條附二）；它與本批其他八張 Black Jazz 的 Apple 日期（多落在 4 月初）形狀不同，**這個差異不構成任何發行順序的證據**。"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：(a) **Quadraphonic 四聲道與多載體這條線**——本卡的 Discogs 版本欄是 a 組唯一一張同時有 **Reel-To-Reel（BJZ J 115，7 ½ ips）與 8-Track Cartridge（BJZ L 715）** 的碟，加上黑膠與日本壓片共四種載體，且 facts 第 11 條有維基對共同創辦人與四聲道技術的具引註說法。**卡 1–5、7–9 一律禁用四聲道敘事，只能引自己格式欄上的「Quadraphonic」字樣。**(b) **Streeterville Studios（芝加哥）作為錄音地**這條線（卡 1、4、8 的公司欄有 Mixed At: Streeterville，**那三張只能寫自己欄位上的那一行、不得展開**）。\n**未取得**：Black Jazz 廠牌史歸卡 3（**facts 第 11 條那句維基內容只能用在四聲道技術這個點上，不得展開成廠牌創辦敘事**）；Hollywood Spectrum 錄音室線歸卡 5；Real Gone Music 復刻線歸卡 7；跨張班底敘事歸卡 8；Ovation 母公司線歸卡 1。\n\n**【身分：同名團體的坑，本卡最深】**\n「The Awakening」是高度同名的團名。**兩個資料庫都用消歧義標記把它與別團分開**：MB 的 disambiguation 欄寫「70's jazz」，Discogs 的 artists 欄寫「The Awakening (4)」。\n**英文維基〈The Awakening (band)〉是南非哥德搖滾團，與本卡無關——全組禁止引用該條目**（facts 第 9 條已記錄查證過程）。**行文不得寫任何來自該條目的內容，也不得寫「這個團在維基上有條目」。**\n**同時禁寫**：不得寫這個團的成立、解散、成員來歷或這是他們第幾張碟——本卡的 facts 只有 Discogs credit 欄上的六個演奏者名字，**沒有任何一條說他們是一個怎樣組成的團**（第 142 條：策展層的說法是線索不是事實）。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 7**——MB 四筆 release 全部 track-count 7、Discogs 1901512 曲目表 7 個曲位（A1–A3、B1–B4）、Apple 7 軌且曲名逐軌相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **曲長不得斷言單一值**（見 facts 第 10 條的逐軌對照）。`sound` 欄已依第 154 條只寫兩組端點；**行文不得寫「幾軌超過幾分鐘」這類計數句**。\n(3) **試聽：Apple 上有這張碟，逐軌核對通過**（7 軌曲名與曲序全同）。**探測層標的 `ready` 成立。**\n(4) **Rufus Reid 只出現在 B1 與 B3 的逐軌 credit、不在整張的 credit 欄**——只能寫成「曲目表上這兩軌另掛一條 Bass: Rufus Reid」，**不得寫成「這張碟有兩位貝斯手」或「他中途換人」**（第 136 條）。Drasheer Khalid（三軌）與 A2 那兩條 Vocals 同理。\n(5) **不得寫壓量、份數、稀有度或任何載體的存世狀況**（第 109 條）——盤帶與八軌卡匣那兩筆只能寫成「Discogs 版本欄有這兩種格式」。\n(6) 出版商欄與註記欄的逐軌版權歸屬（Kenica／Streeterville／Cafra）只能照抄成欄位值，**不得由此推論樂團與錄音室之間的關係**（第 110 條）。"
+ },
+ {
+  "key": "desc2:Kellee Patterson|Maiden Voyage",
+  "artist": "Kellee Patterson",
+  "album": "Maiden Voyage",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1348ff9a 的欄位：title《Maiden Voyage》、first-release-date 1973、primary-type Album、secondary-types 空陣列、artist-credit「Kellee Patterson」（個人實體 MBID b4688214-ee49-441d-ae53-b02ca9c6de2c，type Person，disambiguation 欄空）、annotation 為 null；genre 欄兩個標籤各 1 票（jazz、soul jazz）；url-rels 只有一條 discogs 指向 master/197958。",
+    "src": "https://musicbrainz.org/release-group/1348ff9a-560e-3dee-a2fc-dfe4eb3f3425"
+   },
+   {
+    "f": "以 release?release-group=1348ff9a…&inc=recordings 逐版比對，該 release-group 轄下共 3 筆 release、全部 status Official、**全部 8 軌、曲名與曲序逐軌相同、曲長也逐軌相同（3:37／3:42／2:45／5:21／4:24／4:03／3:02／1:49）**：1973 US（c9ebe358，Black Jazz Records BJQD/12，一張 12\" Vinyl，軌號 A1–A4、B1–B4）；1998 US（3fbe80a1，Black Jazz BJ/12，12\" Vinyl）；2005-04-02 JP（08abebb5，P‐VINE RECORDS PCD-22097，CD）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1348ff9a-560e-3dee-a2fc-dfe4eb3f3425&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 2007715 的欄位：artists 欄「Kellee Patterson」、廠牌欄 Black Jazz Records、編號欄 BJQD/12、國別 US、year 與 released 欄皆 1973、格式欄 Vinyl ×1［LP, Album, Quadraphonic］且 text 欄另註「Jacksonville Pressing」、genre 欄 Jazz、style 欄 Soul-Jazz。",
+    "src": "https://www.discogs.com/release/2007715"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條，**演奏 credit 全部掛在 Musician [Player] 這個角色下、共八條**：Congas, Triangle「Sajih」；Double Bass [String Bass]「John Heard」（anv 欄 John W. Heard）；Electric Bass [Fender Bass]「Henry Davis」；Flute「George Harper」；Piano「Ernest Vantrease」（anv Ernest Van Trease）；Tambourine「John Lasalle」；Triangle「Billy Osborne」（anv Billy Osbourne）；Trumpet「Everett Turner」。另有 Producer「Gene Russell」；Artwork [Cover Art & Liners]「Bud Doty」；Design Concept [Cover Design Concept]「PGM (3)」；Lacquer Cut By「Bob Berglund」（anv BB）。**這份 credit 欄裡沒有任何一條掛給掛名的那位歌手。**",
+    "src": "https://www.discogs.com/release/2007715"
+   },
+   {
+    "f": "同一條目的公司欄十二條：Copyright (c)「Ovation Incorporated」、Phonographic Copyright (p)「Ovation Incorporated」、Distributed By「Ovation Records」、Recorded At「Hollywood Spectrum, Los Angeles」、**Pressed By「Capitol Records Pressing Plant, Jacksonville」**，以及 Published By 七條（「Jodax Music Co.」「Knollwood Music Corp.」「Thursday Music Corp.」「Hancock Music Company」「Leo Feist, Inc.」「Outside Music (4)」「Irving Music, Inc.」「Knollwood Music」）。",
+    "src": "https://www.discogs.com/release/2007715"
+   },
+   {
+    "f": "同一條目的曲目表共 8 個曲位、分兩面，逐軌帶 Written-By 欄：A1〈Magic Wand Of Love〉3:32（Earl DeRouen）、A2〈Look At The Child〉3:37（John Lehman）、A3〈Soul Daddy (Lady)〉2:37（Don Sebesky）、**A4〈Maiden Voyage〉5:15（Music By [Mus:]: Herbie Hancock；Written By [Wds:]: J. Harvey——這一軌的作曲與作詞是分開兩欄掛的）**、B1〈Don't Misunderstand〉4:17（Gordon Parks）、B2〈See You Later〉3:58（Flip Nunez）、B3〈You〉2:58（Lani Hall）、B4〈Be All Your Own〉1:47（John Lehman）。**八軌的 Written-By 欄沒有任何一條是掛名藝人自己。**",
+    "src": "https://www.discogs.com/release/2007715"
+   },
+   {
+    "f": "同一條目的註記欄逐行：「A GR Production. Recorded in Hollywood Spectrum Studios, Los Angeles, California.」；接著是逐軌的出版商與版權協會對照（A1: Jodax Mus Co/BMI；A2: Knollwood Mus Co/ASCAP；A3: Thursday Mus Co/BMI；A4: Hancock Mus Co/BMI；B1: Leo Feist, Inc/ASCAP；B2: Outside Mus/BMI；B3: Irving Mus, Inc/BMI；**B4: Knollwood Mus/BMI (labels) ASCAP (sleeve)**）；再來是「℗ © 1973 Ovation Incorporated」「Printed in U.S.A.」「Mfg. in U.S.A.」與「Runouts are etched, except '0' stamped on both sides.」。identifiers 欄五條：Pressing Plant ID「0」、Rights Society「BMI」（A1, A3, A4, B2 to B4）、Rights Society「ASCAP」（A2, B1, B4）、Matrix / Runout「BJQD/12-A BB 0」、Matrix / Runout「BJQD/ 12-B BB 0」。",
+    "src": "https://www.discogs.com/release/2007715"
+   },
+   {
+    "f": "Discogs master 197958 的 versions 共 17 筆，**零筆標 Unofficial**。1973 年原盤側五筆：Japan Black Jazz YX-6070（LP, Quadraphonic）、US BJQD/12 三筆黑膠（一般盤、Test Pressing、Promo）、**US 編號 8712 的一筆 8-Track Cartridge（格式欄 Album, Stereo）**。中段再發：1997 Japan P-Vine PCD-5283（CD）與 PLP 6731＋BJQD/12（LP, Quadraphonic, Reissue）；1998 US Black Jazz BJ/12（LP, Reissue, Stereo）；2005 Japan Black Jazz BJ/12＋PCD-22097（CD）；2006 US Black Jazz BJQD/12（CD）；2012 Japan Black Jazz BJQD/12＋SDGBJ1212（CD, Reissue, Remastered）。**Real Gone Music 那一波全部落在 2020 年、共六筆：Japan Black Jazz RGM-1104＋PLP-6775（LP）、US Black Jazz BJ/12＋RGM-1104（LP, Club Edition, Limited Edition, Numbered）、US BJ/12＋RGM-1104（LP）、US RGM-1104（LP）、US RGM-1104（LP, Test Pressing）、US Real Gone Music RGM-1107（CD, Reissue）。**",
+    "src": "https://www.discogs.com/master/197958"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1507449858，us 店面）：collectionName《Maiden Voyage》、artistName「Kellee Patterson」、trackCount 8、releaseDate 1973-04-06、copyright 欄「℗ 1973 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈Magic Wand of Love〉212352ms＝3:32、2〈Look at the Child〉217627ms＝3:37、3〈Soul Daddy (Lady)〉160896ms＝2:40、4〈Maiden Voyage〉318507ms＝5:18、5〈Don't Misunderstand〉259664ms＝4:19、6〈See You Later〉239704ms＝3:59、7〈You〉179669ms＝2:59、8〈Be All Your Own〉108259ms＝1:48。**八軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一。**",
+    "src": "https://itunes.apple.com/lookup?id=1507449858&entity=song&country=us"
+   },
+   {
+    "f": "**掛名藝人的維基查證結果：英文維基沒有〈Kellee Patterson〉這個條目**（w/api.php 的 parse 端點回 error code「missingtitle」，info 欄「The page you specified doesn't exist.」）。本卡對這位歌手的身分資訊因此**只有 MB 的個人實體欄位（type Person、disambiguation 欄空）與 Discogs 的 artists 欄**，沒有第三方傳記來源。",
+    "src": "https://en.wikipedia.org/w/api.php?action=parse&page=Kellee%20Patterson&prop=wikitext&format=json"
+   },
+   {
+    "f": "Bud Doty 這條美術 credit 在 a 組的 Black Jazz 九張裡出現在四張的 Discogs 條目上，四處的角色寫法不同：本卡 2007715 寫 Artwork [Cover Art & Liners]；卡 2 的 704883 寫 Artwork；卡 5 的 1397940 寫 Artwork [Cover Art & Liners]；卡 6 的 1901512 寫 Artwork [Cover Art & Liners]。**四處都只是 credit 欄的角色字串，沒有任何一條說明他做了什麼。**",
+    "src": "https://www.discogs.com/release/2007715"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 的 credit 欄列了八位樂手，沒有一條掛給封面上那位歌手",
+   "同一首 B4 的版權協會，圓標上寫 BMI、封套上寫 ASCAP，Discogs 把兩個都抄了下來"
+  ],
+  "sound": "八軌兩面，是 a 組 Black Jazz 九張裡曲子最短的一張：原盤（Discogs 2007715 與 MB 三筆 release 的曲目表，兩庫端點各差幾秒）最短的一軌是 B4〈Be All Your Own〉Discogs 記 1:47／MB 記 1:49，最長的一軌是 A4〈Maiden Voyage〉Discogs 記 5:15／MB 記 5:21。編制照 Discogs credit 欄有八條演奏 credit，其中低音提琴與 Fender 電貝斯是分開兩個人、三角鐵有兩條、另有康加、鈴鼓、長笛、鋼琴、小號。八軌的 Written-By 欄全部是別人。格式欄寫 Quadraphonic。（本欄由 Discogs 2007715 的曲目表與 credit／格式欄、MB 三筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Maiden Voyage",
+   "Magic Wand Of Love",
+   "Don't Misunderstand"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1973,
+   "note": "**只能寫到年。** MB release-group first-release-date 1973、MB 那筆 Black Jazz 原盤 release 的 date 欄 1973（只有年）、Discogs 2007715 的 year 與 released 欄皆 1973，另有 Discogs 註記欄的「℗ © 1973 Ovation Incorporated」為第四個 1973 的來源，四邊一致。**Apple 的 releaseDate 1973-04-06 是佔位值，不得當原盤發行日**（第 140 條附二）。"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：(a) **Real Gone Music 這一波復刻線**（本卡的 RGM 版本全部集中在 2020 年、共六筆，是 a 組 RGM 這波最早的一批；facts 第 8 條已逐筆列好）。**卡 1、2、3、5、6、8、9 一律禁用 RGM 敘事，只能引自己版本欄上的編號。**(b) **Bud Doty 的封面美術與內頁 credit 線**（facts 第 11 條已列四處的角色字串）。**卡 2、5、6 禁用，只能寫自己 credit 欄上的那一條。**\n**未取得**：Black Jazz 廠牌史歸卡 3；Hollywood Spectrum 錄音室線歸卡 5（本卡只能寫自己公司欄與註記欄上的那兩行）；四聲道敘事歸卡 6；跨張班底敘事歸卡 8；Ovation 母公司線歸卡 1。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 8**——MB 三筆 release 全部 track-count 8、Discogs 2007715 曲目表 8 個曲位（A1–A4、B1–B4）、Apple 8 軌且曲名逐軌相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **「credit 欄沒有掛名歌手」只能寫成「Discogs 條目的 credit 欄裡沒有一條掛給她」**，**不得寫成「她沒有參與」「唱片上沒印她的名字」**（第 136 條：資料庫的缺席不是缺席本身）。同樣地，**不得寫「這是一張人聲專輯」以外任何本卡 facts 沒有的推論**——事實上本卡的 facts 也沒說這是人聲專輯，**行文不得斷言她在這張碟上唱歌**。\n(3) **A4〈Maiden Voyage〉的作者只能寫成「Discogs 的欄位把作曲掛 Herbie Hancock、作詞掛 J. Harvey」**，**不得由此推論這是誰的曲子的翻唱或加詞版本**（第 110 條）。其餘七軌同理，只能照抄 Written-By 欄。\n(4) **試聽：Apple 上有這張碟，逐軌核對通過**（8 軌曲名與曲序全同）。**探測層標的 `ready` 成立。**\n(5) **這位歌手在英文維基上沒有條目**（facts 第 10 條）。**行文不得寫她的生平、出身、獎項或後來的走向**——本卡沒有任何來源。**尤其不得寫選美、電視或任何策展層沒有給來源的說法**（第 142 條）。\n(6) **不得寫壓量、份數、稀有度或 Numbered／Limited Edition 的收藏意義**（第 109 條）——2020 那批 RGM 版本欄裡有 Club Edition／Limited Edition／Numbered／Test Pressing 字樣，**只能當版本欄的字樣引用**。\n(7) 8-Track Cartridge 那筆只能寫成「Discogs 版本欄有一筆格式是 8-Track Cartridge」；**載體多樣性敘事歸卡 6**。"
+ },
+ {
+  "key": "desc2:Roland Haynes|2nd Wave",
+  "artist": "Roland Haynes",
+  "album": "2nd Wave",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 66aac09d 的欄位：title《2nd Wave》、first-release-date 1975、primary-type Album、secondary-types 空陣列、artist-credit「Roland Haynes」（個人實體 MBID d75ab00b-b2b2-4ce7-b3ec-8952e51a5a60，type Person，disambiguation 欄「Jazz keyboardist」）、annotation 為 null；genre 欄四個標籤（jazz 1 票、**jazz-funk 2 票**、soul jazz 1 票）；url-rels 只有一條 discogs 指向 master/652882。",
+    "src": "https://musicbrainz.org/release-group/66aac09d-08ad-4dcd-8ecf-ebba58182476"
+   },
+   {
+    "f": "以 release?release-group=66aac09d…&inc=recordings 逐版比對，該 release-group 轄下共 4 筆 release、全部 status Official、**全部 6 軌、曲名與曲序逐軌相同、無任何一筆多出或抽換曲目**：1975 US（95be13f4，Black Jazz Records BJQD/19，一張 12\" Vinyl，逐軌 A1〈Eglise〉3:13、A2〈Second Wave〉6:11、A3〈Kirstn's Play〉5:46、B1〈Aicelis〉4:38、B2〈Descent〉8:42、B3〈Funky Mama Moose〉4:01）；2005-05-04 JP（7cdd4bdf，P‐VINE RECORDS PCD-22104，CD，barcode 4995879221044，曲長與原盤相同）；2013 JP（3b6331f5，Snowdog Records SDGBJ1219，CD，barcode 4526180117254，曲長 3:16／6:13／5:45／4:41／8:43／4:03）；2020-10 US（85c96022，廠牌欄兩條 Black Jazz RGM-1108 與 Real Gone Music RGM-1108，CD，barcode 848064011118，**這一筆的六軌曲長欄全部是空的**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=66aac09d-08ad-4dcd-8ecf-ebba58182476&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 2007763 的欄位：artists 欄「Roland Haynes」、廠牌欄 Black Jazz Records、編號欄 BJQD/19、國別 US、year 與 released 欄皆 1975、格式欄 Vinyl ×1［LP, Album, Stereo, Quadraphonic］、genre 欄 Jazz、style 欄 Soul-Jazz 與 Jazz-Funk。**註記欄是空的。**",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Keyboards, Written-By, Arranged By「Roland Haynes」（同一條 credit 把演奏、作曲與編曲三個角色掛在一起，六軌沒有逐軌的 Written-By 欄）**；Keyboards「Kirk Lightsey」；Bass「Henry Franklin」；Drums「Carl Burnett」；Engineer [Recording]「Jim Mooney」；Engineer [Mixing]「Ron Steele」；Producer, Liner Notes「Gene Russell」；Graphics「Grafica, Chicago」；Illustration「Vince Morgan」；Lacquer Cut By「Bob Berglund」（anv BB）。",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "同一條目的公司欄八條：Phonographic Copyright (p)「Ovation Incorporated」、Copyright (c)「Ovation Incorporated」、Manufactured By「Ovation Records」、Distributed By「Ovation Records」、**Recorded At「Sage & Sand Studios」、Mixed At「Streeterville Studios」**、Published By「Florafel Publ. Co.」、**Pressed By「Presswell」**。identifiers 欄兩條：Matrix / Runout「BJ-19-A-1-1-1 BB PR D」（Side A runout）、Matrix / Runout「BJ-19-B-1-1-1 BB PR D」（Side B runout）。",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "同一條目的曲目表共 6 個曲位、分兩面，**逐軌都沒有 Written-By 欄**（作曲是掛在整張的 credit 欄上）：A1〈Eglise〉3:14、A2〈Second Wave〉6:15、A3〈Kirstn's Play〉5:46、B1〈Aicelis〉4:42、B2〈Descent〉8:49、B3〈Funky Mama Moose〉4:04。",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "Discogs master 652882 的 versions 共 13 筆，**零筆標 Unofficial**，且**十三筆的廠牌欄全部是 Black Jazz Records**（沒有一筆掛在別家名下）。逐筆：1975 US BJQD/19 兩筆（一般盤、Promo，皆標 Quadraphonic）；2003 US BJQD/19（CD, Reissue, Stereo, Quadraphonic）；2005 Japan BJQD/19＋PCD-22104（CD）；2013 Japan BJQD/19＋SDGBJ1219（CD, Remastered）；2020 US RGM-1108 四筆（兩筆 LP、一筆 Test Pressing、一筆 Club Edition/Limited Edition/Numbered/Remastered）；2020 US RGM-1111（CD）；2020 Japan PLP-6780＋RGM-1108（LP）；2025 US RGM-1108 兩筆（皆標 Limited Edition, Reissue）。",
+    "src": "https://www.discogs.com/master/652882"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1507449590，us 店面）：collectionName《2nd Wave》、artistName「Roland Haynes」、trackCount 6、releaseDate 1975-04-06、copyright 欄「℗ 1975 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈Eglise〉189376ms＝3:09、2〈Second Wave〉366864ms＝6:06、3〈**Kirstn's Place**〉340941ms＝5:40、4〈Aicelis〉277632ms＝4:37、5〈Descent〉519349ms＝8:39、6〈Funky Mama Moose〉240880ms＝4:00。**六軌曲序與原盤完全相同、無多出、無抽換、無二合一；唯一差異是第 3 軌的曲名 Apple 寫「Kirstn's Place」，MB 四筆與 Discogs 都寫「Kirstn's Play」。**",
+    "src": "https://itunes.apple.com/lookup?id=1507449590&entity=song&country=us"
+   },
+   {
+    "f": "**Black Jazz 內部班底在 a 組九張之間的角色互換，逐條可對照的欄位**：Henry Franklin 在本卡 2007763 掛 Bass、在卡 1 的 887081 掛 Bass, Leader（該張的掛名藝人）、在卡 3 的 2007750 掛 Bass、在卡 4 的 1541123 掛 Bass；Kirk Lightsey 在本卡掛 Keyboards、在卡 4 的 1541123 掛 Electric Piano、在卡 5 的 1397940 掛 Piano、在卡 1 的 887081 於 B3 掛 Piano, Flute；Leon Ndugu Chancler 在卡 1、卡 3、卡 4 三張的 credit 欄都掛 Drums（三處的 anv 欄寫法各不相同：Ndugu (Leon Chancelor)／Ndugu／Ndugu Leon Chancelor）；Charles Owens 在卡 1 掛 Tenor Saxophone、在卡 4 掛 Soprano Saxophone, Tenor Saxophone, Flute 並在該張 B3 掛 Written-By；Oscar Brashear 在卡 1 與卡 4 都掛 Trumpet（卡 4 另加 Flugelhorn）。**以上全部是 Discogs credit 欄的欄位值，沒有任何一條來自傳記或訪談。**",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "同一條班底線的另一半是製作端：Gene Russell 在本卡 2007763 掛 Producer, Liner Notes；在卡 1、2、3、5、6、7 的 Discogs 條目掛 Producer；在卡 4 的 1541123 與卡 9 的 2007707 掛 Executive-Producer。Bob Berglund（anv 一律寫 BB）在本卡與卡 1、2（無）、3、4、5、6、7、8 之中的 1、3、4、5、6、7 與本卡都掛 Lacquer Cut By，且**各卡 identifiers 欄抄下來的 runout 刻字裡都帶一組 BB**（本卡是「BJ-19-A-1-1-1 BB PR D」）。",
+    "src": "https://www.discogs.com/release/2007763"
+   },
+   {
+    "f": "英文維基〈Black Jazz Records〉條目帶行內引註的段落說，Gene Russell 於 1975 年關掉 Black Jazz Records、把重心移到他的新廠牌 Aquarican Records，他成立新廠牌是為了「remove the stigma attached to jazz titles」（引註 gr 來源）；同段說 Russell 本來打算把 Black Jazz 的藝人移到 Aquarican，但直到 1980 年才簽下第一位藝人（引註 Billboard 1980-09-27〈Gene Russell's Back With L.A. Label〉）。**本卡的原盤年是 1975，與該段所述的收攤年同年。**",
+    "src": "https://en.wikipedia.org/wiki/Black_Jazz_Records"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟的作曲只用一條 credit 掛完，曲目表上六軌一個作者欄都沒有",
+   "Discogs 上的十三個版本，廠牌欄從頭到尾都是同一家"
+  ],
+  "sound": "六軌兩面。原盤的曲長兩庫差幾秒：Discogs 2007763 的端點是 A1〈Eglise〉3:14 到 B2〈Descent〉8:49，MB 那筆 1975 release 的端點是 A1 3:13 到 B2 8:42。編制照 Discogs credit 欄只有四條演奏 credit：兩條鍵盤（其中一條同時掛 Written-By 與 Arranged By）、貝斯、鼓。錄音與混音在公司欄是兩間不同的錄音室，工程師也分成 Recording 與 Mixing 兩條 credit。格式欄寫 Stereo, Quadraphonic。（本欄由 Discogs 2007763 的曲目表與 credit／公司／格式欄、MB 1975 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Second Wave",
+   "Descent",
+   "Funky Mama Moose"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "**只能寫到年。** MB release-group first-release-date 1975、MB 那筆 Black Jazz 原盤 release 的 date 欄 1975（只有年）、Discogs 2007763 的 year 與 released 欄皆 1975，三邊一致。**Apple 的 releaseDate 1975-04-06 是佔位值，不得當原盤發行日**（第 140 條附二）。轄下 2020-10 那筆只到月。"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得（全組唯一）**：**Black Jazz 內部班底在不同碟之間互換位置這條線**——facts 第 9、10 條已把可對照的 Discogs credit 欄位逐條列好（Henry Franklin、Kirk Lightsey、Leon Ndugu Chancler、Charles Owens、Oscar Brashear 這幾條演奏線，以及 Gene Russell 與 Bob Berglund 這兩條製作／刻片線）。**卡 1–7、9 一律禁用跨張班底敘事，只能逐條寫自己 credit 欄上的名字。**\n**未取得**：Black Jazz 廠牌史歸卡 3（**facts 第 11 條那段維基內容只能拿來對照本卡的原盤年，不得展開成廠牌收攤敘事**）；Sage & Sand／Streeterville 的分工線歸卡 4（**本卡只能寫自己公司欄上的那兩行**）；四聲道敘事歸卡 6；Real Gone Music 復刻線歸卡 7；Ovation 母公司線歸卡 1。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 6**——MB 四筆 release 全部 track-count 6、Discogs 2007763 曲目表 6 個曲位（A1–A3、B1–B3）、Apple 6 軌且曲序相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **第 3 軌的曲名 Apple 寫「Kirstn's Place」、MB 與 Discogs 寫「Kirstn's Play」。** 行文一律用原盤那一側的「Kirstn's Play」，或兩種都寫；**不得寫成「Apple 打錯了」**。\n(3) **試聽：Apple 上有這張碟，逐軌核對通過**（6 軌曲序全同，只有一處曲名一字之差）。**探測層標的 `ready` 成立。**\n(4) **班底敘事只能寫成「Discogs 的 credit 欄在這幾張上分別是這樣掛的」**（第 136 條）。**絕對禁止寫成「他們是同一個班底」「這批人輪流當領班」「這是廠牌的固定班底」**——facts 沒有任何一條說這些人之間有固定關係，那是由欄位值做的推論。**也不得寫成計數句**（「幾個人出現在幾張碟上」），依第 145／154 條，**跨卡的數量一律不入文**。\n(5) **不得由 Gene Russell 掛 Liner Notes 推論內頁寫了什麼**——本卡的 Discogs 註記欄是空的，沒有任何內頁文字被抄下來（第 136 條）。\n(6) **MB 那筆 2020-10 US release 的六軌曲長欄全部是空的**，只能寫成「那份紀錄上沒有登曲長」，**不得寫成「那個版本沒有曲長」**（第 136 條）。\n(7) **不得寫壓量、份數、稀有度**（第 109 條）——2020 與 2025 的版本欄有 Limited Edition／Numbered／Club Edition／Test Pressing 字樣。"
+ },
+ {
+  "key": "desc2:Cleveland Eaton|Plenty Good Eaton",
+  "artist": "Cleveland Eaton",
+  "album": "Plenty Good Eaton",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c9a6db61 的欄位：title《Plenty Good Eaton》、first-release-date 1975、primary-type Album、secondary-types 空陣列、artist-credit「Cleveland Eaton」（個人實體 MBID f2676d44-f03b-4cee-9c15-e8f3736da64a，type Person，disambiguation 欄「American jazz bassist」）、annotation 為 null；**genre 欄四個標籤各 1 票：disco、funk、jazz、jazz-funk**；url-rels 只有一條 discogs 指向 master/197953。",
+    "src": "https://musicbrainz.org/release-group/c9a6db61-1232-4fcc-81ab-f9228976706b"
+   },
+   {
+    "f": "以 release?release-group=c9a6db61…&inc=recordings 逐版比對，該 release-group 轄下共 3 筆 release、全部 status Official、**全部 7 軌、曲名與曲序逐軌相同、曲長也逐軌相同（5:06／5:15／4:36／7:25／6:44／9:29／8:37）**：1975 US（8b49a0ed，Black Jazz Records BJQD/20，一張 12\" Vinyl，軌號 A1–A4、B1–B3）；2005 US（7d6b6745，Black Jazz BJQD/20，CD）；2005-05-04 JP（dd86c1a8，P‐VINE RECORDS PCD-22105，CD）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9a6db61-1232-4fcc-81ab-f9228976706b&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 2007707 的欄位：artists 欄「Cleveland Eaton」、廠牌欄 Black Jazz Records、編號欄 BJQD/20、國別 US、year 與 released 欄皆 1975、格式欄 Vinyl ×1［LP, Album, Stereo, Quadraphonic］、genre 欄 Jazz 與 Funk / Soul、**style 欄四個：Jazz-Funk、Free Funk、Funk、Disco**。",
+    "src": "https://www.discogs.com/release/2007707"
+   },
+   {
+    "f": "同一條目的註記欄逐句：「Written and Arranged by Cleveland Eaton, except \"Are You Out There Somewhere Caring\" written by M. Anderson, C. Eaton」「with special assistance from Ed Green & Morris Jennings」「Special thanks to the late Terry Bashman and Peter Trunk, for making some of our music.」「Produced by Eaton's Prod. Inc. (E.P.I.)」**「Recorded 15 Jul 1974 at Chess Recording Studio」**「Mixed Sigma Sound, Philadelphia, PA」，以及署名為第一人稱的最後一句「P.S. My music and business idols are Maurice White \"Mr. Earth Wind and Fire\" Herbie Hancock \"Mr. Jazz/Rock and Mr. Stevie Wonder.」（拼寫與標點皆照條目原樣）。",
+    "src": "https://www.discogs.com/release/2007707"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條（共二十條）：Acoustic Bass, Arranged By, Electric Bass, Vocals, Written-By「Cleveland Eaton」；Organ, Electric Piano「Odell Brown」；Electric Piano「Ken Prince」（anv 欄 Kenneth Prince）；Guitar「Ernest Johnson (4)」；Percussion「Morris Jennings」；Percussion, Flute「Derf Reklaw」（anv Derf Raheen）；Vibraphone「Bobby Christian」；Violin, Viola「Ed Green (2)」；Tenor Saxophone「Ari Brown」（anv Arie Brown）；Tenor Saxophone, Flute「Artee Payne」（anv Artee \"Duke\" Payne）；Tenor Saxophone, Flute「Edwin Daugherty」；Trombone「John Watson (2)」；Bass Trombone「Steve Galloway」；Engineer 三條「Dave Antler」「Fred Breitberg」（anv Freddie Breitberg）「Paul Serrano」；Executive-Producer「Gene Russell」；Cover [Album Design]「George Ransaw」；Photography By「Howard Simmons (3)」（anv Howard D. Simmons）；Lacquer Cut By「Bob Berglund」（anv BB）。",
+    "src": "https://www.discogs.com/release/2007707"
+   },
+   {
+    "f": "同一條目的公司欄七條：Distributed By「Ovation Records」、Manufactured By「Ovation Records」、Phonographic Copyright (p)「Ovation Incorporated」、Copyright (c)「Ovation Incorporated」、Published By「Eaton Publishing Company」、**Recorded At「Chess Studios」、Mixed At「Sigma Sound Studios」**。identifiers 欄三條：Matrix / Runout「BJQD/20-A BB」（Side A runout）、Matrix / Runout「BJQD/20-B BB」（Side B runout）、Rights Society「BMI」。",
+    "src": "https://www.discogs.com/release/2007707"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分兩面，**逐軌都沒有 Written-By 欄**（作曲寫在註記欄）：A1〈Chi-Town Theme〉5:03、A2〈Keena〉5:12、A3〈Moe, Let's Have A Party〉4:33、A4〈Are You Out There Somewhere Caring〉7:23、B1〈Kaiser 405〉6:41、B2〈All Your Lover, All Day, All Night〉9:26、B3〈Hamburg 302〉8:37。",
+    "src": "https://www.discogs.com/release/2007707"
+   },
+   {
+    "f": "Discogs master 197953 的 versions 共 14 筆，**零筆標 Unofficial**。1975 年原盤側三筆：Japan Black Jazz YX-7029（LP, Quadraphonic）、US BJQD/20 兩筆（一般盤、Promo，皆標 Quadraphonic）。再發側：2005 US Black Jazz BJQD 20（CD）；2006 Japan Black Jazz PCD-22105（CD）；2009 Japan Black Jazz BJQD/20＋BJ/20（CD, Reissue, Quadraphonic）；2013 Japan Snow Dog SDGBJ1220＋BJQD20/21（CD）；2019 Black Jazz BJ/20（LP, Reissue, Stereo，國別欄空）；2020 US 四筆（RGM-1157 CD、RGM-1155 LP 三筆，其中一筆 Test Pressing、兩筆 Limited Edition）；2020 Japan Black Jazz RGM1155（LP）。",
+    "src": "https://www.discogs.com/master/197953"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 1509132525，us 店面）：collectionName《Plenty Good Eaton》、artistName「Cleveland Eaton」、trackCount 7、releaseDate 1975-04-08、copyright 欄「℗ 1975 © Black Jazz Records™ a division of 43 North Broadway, LLC.」。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈**Chitown Theme**〉305533ms＝5:05、2〈Keena〉314707ms＝5:14、3〈Moe, Let's Have a Party〉275800ms＝4:35、4〈Are You out There Somewhere Caring〉445320ms＝7:25、5〈Kaiser 405〉404013ms＝6:44、6〈All Your Lover, All Day, All Night〉568920ms＝9:28、7〈Hamburg 302〉517480ms＝8:37。**七軌曲序與原盤完全相同、無多出、無抽換、無二合一；唯一差異是第 1 軌的曲名 Apple 寫成沒有連字號的「Chitown Theme」，MB 寫「Chi‐Town Theme」、Discogs 寫「Chi-Town Theme」。**",
+    "src": "https://itunes.apple.com/lookup?id=1509132525&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Cleveland Eaton〉條目帶行內引註的段落說：Cleveland Josephus Eaton II（1939 年 8 月 31 日–2020 年 7 月 5 日）是美國爵士低音提琴手、製作人、編曲、作曲與出版商，他最為人知的是與 Ramsey Lewis Trio 及 Count Basie Orchestra 的合作，而**他 1975 年的錄音《Plenty Good Eaton》被視為 funk 類型中的經典**（引註 AllMusic）；他 1960 年離開阿拉巴馬前往芝加哥（同引註）；他以領班身分的首張作品是 1973 年 Gamble Records 的《Half and Half》，兩年後錄了《Plenty Good Eaton》，之後簽給 Ovation、發行《Instant Hip》（同引註）；1979 年 Count Basie 找他代打貝斯手，原說兩週，最後待了十七年（引註 Dale Short 1997 年的訪談）。",
+    "src": "https://en.wikipedia.org/wiki/Cleveland_Eaton"
+   },
+   {
+    "f": "本卡是 a 組 Black Jazz 九張裡**唯一一張 Discogs 註記欄寫出具體錄音日期**的碟（「Recorded 15 Jul 1974 at Chess Recording Studio」），也是唯一一張錄音室與混音室分別落在芝加哥（Chess）與費城（Sigma Sound）的碟。其餘八張的 Discogs 條目在錄音欄只寫錄音室名稱與城市，沒有日期。",
+    "src": "https://www.discogs.com/release/2007707"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 抄下的註記欄裡有一句第一人稱的 P.S.，列出他的三位偶像",
+   "錄音在芝加哥的 Chess，混音卻拉到費城的 Sigma Sound"
+  ],
+  "sound": "七軌兩面，是 a 組 Black Jazz 九張裡曲子最長的一張：原盤（Discogs 2007707 的曲目表）最短的一軌是 A3〈Moe, Let's Have A Party〉4:33、最長的一軌是 B2〈All Your Lover, All Day, All Night〉9:26；MB 三筆 release 一致的端點是 4:36 與 9:29。編制照 Discogs credit 欄有十三條演奏 credit：掛名者同時掛低音提琴、電貝斯與 Vocals，另有管風琴與電鋼琴兩條、吉他、打擊兩條（其中一條兼長笛）、顫音琴、小提琴兼中提琴，管樂五條（次中音薩克斯三條、長號、低音長號）。工程師欄有三條。格式欄寫 Stereo, Quadraphonic。（本欄由 Discogs 2007707 的曲目表與 credit／格式欄、MB 三筆 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Chi-Town Theme",
+   "Kaiser 405",
+   "All Your Lover, All Day, All Night"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1975,
+   "note": "**發行年只能寫到年（1975）：** MB release-group first-release-date 1975、MB 那筆 Black Jazz 原盤 release 的 date 欄 1975（只有年）、Discogs 2007707 的 year 與 released 欄皆 1975，三邊一致。**Apple 的 releaseDate 1975-04-08 是佔位值，不得當原盤發行日**（第 140 條附二）。\n**錄音日期則能寫到日：1974 年 7 月 15 日**——來源是 Discogs 2007707 的註記欄「Recorded 15 Jul 1974 at Chess Recording Studio」。**這是本組唯一一張有具體錄音日期的碟。行文要提時一律寫成「Discogs 條目的註記欄寫錄音是 1974 年 7 月 15 日」，並且不得把錄音日與發行年混成同一個數字。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：(a) **Chess Studios（芝加哥）與 Sigma Sound Studios（費城）這條錄音／混音線**，含**本組唯一的具體錄音日期**（facts 第 4、11 條）。(b) **Cleveland Eaton 的個人生平線**（維基帶行內引註的段落，facts 第 10 條）——本組只有本卡與卡 4 的掛名藝人有可用的維基條目。\n**未取得**：Black Jazz 廠牌史歸卡 3（本卡只能寫自己條目的廠牌欄／編號欄與 Executive-Producer 欄）；Hollywood Spectrum 錄音室線歸卡 5；四聲道敘事歸卡 6；Real Gone Music 復刻線歸卡 7；跨張班底敘事歸卡 8（**Ari Brown 與 Steve Galloway 同時出現在本卡與卡 6 的 credit 欄，本卡只能寫自己欄位上的那兩條**）；Ovation 母公司線歸卡 1（**維基那句「之後簽給 Ovation、發行《Instant Hip》」是講這位貝斯手的個人經歷，可以用；但不得展開成 Ovation 與 Black Jazz 的公司關係敘事**）。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 7**——MB 三筆 release 全部 track-count 7、Discogs 2007707 曲目表 7 個曲位（A1–A4、B1–B3）、Apple 7 軌且曲序相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **第 1 軌的曲名三個資料庫三種寫法**（MB「Chi‐Town Theme」用的是 U+2010 連字號、Discogs「Chi-Town Theme」用 ASCII 連字號、Apple「Chitown Theme」沒有連字號）。行文一律用卡單／原盤那一側的「Chi-Town Theme」。\n(3) **試聽：Apple 上有這張碟，逐軌核對通過**（7 軌曲序全同，只有第 1 軌的連字號寫法不同）。**探測層標的 `ready` 成立。**\n(4) **維基那句「被視為 funk 類型中的經典」只能寫成「維基〈Cleveland Eaton〉條目引 AllMusic 這樣說」**（第 128 條）。它是**有具名出處**的評價，qa 的「未具名出處」規則可能仍會亮燈，**這是標記不是失敗（第 143 條），不要刪**。**不得改寫成「公認的經典」「funk 名盤」這種去掉出處的說法。**\n(5) **註記欄那句第一人稱的 P.S. 只能寫成「Discogs 條目抄下的註記欄裡有這麼一句」**——**條目沒有標明說話的人是誰**，行文**不得寫成「Eaton 說」**（第 136 條）。\n(6) **不得寫取樣**——維基那句「often sampled by contemporary artists」出現在**沒有獨立行內引註的位置**（該句所在段落的引註掛在別的句子上），依第 40／80 條**不採用**。\n(7) **不得由 genre／style 標籤（disco、free funk）推論這張碟的音樂內容**（第 110 條），只能寫成「MB 的 genre 標籤是這四個、Discogs 的 style 欄是這四個」。\n(8) **不得寫壓量、份數、稀有度**（第 109 條）。"
+ },
+ {
+  "key": "desc2:Creative Arts Ensemble|One Step Out",
+  "artist": "Creative Arts Ensemble",
+  "album": "One Step Out",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5b526621 的欄位：title《One Step Out》、first-release-date 1981、primary-type Album、secondary-types 空陣列、artist-credit「Creative Arts Ensemble」（掛 type 為 Group 的實體，MBID c7f97a60-1d50-4321-b0b2-b0f8de30da1b，disambiguation 欄空）、annotation 為 null；genre 欄只有一個標籤 jazz（1 票）；url-rels 只有一條 discogs 指向 master/624141。",
+    "src": "https://musicbrainz.org/release-group/5b526621-c74b-43d0-8952-3a937c4ff2d4"
+   },
+   {
+    "f": "以 release?release-group=5b526621…&inc=recordings 逐版比對，該 release-group 轄下共 3 筆 release、全部 status Official、**全部 4 軌、曲名與曲序逐軌相同**：1981 US（d9c9ecca，Nimbus West Records NS-913，一張 12\" Vinyl，逐軌 A1〈One Step Out〉8:21、A2〈Flashback of Time〉10:43、B1〈All Praises Due〉13:17、B2〈Stars in Lightyear Time〉8:48）；2001 US（124912a6，Nimbus West Records NS 913 C，CD，**四軌的曲長欄全部是空的**）；2006（496ce38a，Nimbus West Records，Digital Media，country 欄未填，曲長與 1981 那筆逐軌相同）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5b526621-c74b-43d0-8952-3a937c4ff2d4&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1840429 的欄位：**artists 欄是兩個並列的名字「Creative Arts Ensemble」與「B.J. Crowley」，條目的標題因此寫成《Creative Arts Ensemble With B.J. Crowley – One Step Out》**；廠牌欄兩條都寫 Nimbus West Records（編號欄一條 NS-913、一條 #913）、國別 US、year 與 released 欄皆 1981、格式欄 Vinyl ×1［LP, Album, Stereo］、genre 欄 Jazz、style 欄 Contemporary Jazz、Free Jazz、Spiritual Jazz。註記欄只有一行：「First catalog number on front cover, second on back cover and label.」",
+    "src": "https://www.discogs.com/release/1840429"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Leader, Piano, Composed By, Liner Notes「Kaeef Ruzadun」**；**Leader [Co-leader], Vocals「B.J. Crowley」（anv 欄 B.J. Crowley (Shaleethia)）**；Alto Saxophone, Soprano Saxophone「Gary Bias」；Baritone Saxophone「Jeff Clayton (3)」；Tenor Saxophone「Wilbert Hemsley」（anv (Jiggs) Wilbert Hemsley）；Trombone「George Bohanon」（anv George Bohannon）；Trumpet「Al White (2)」；Flute「Dadisi Komolafe」（anv Dadesi Komolafe）；Bass「Henry Franklin」（anv (The Skipper) Henry Franklin）；Drums, Percussion「Woody Theus」（anv SonShip Phaeus）；**A&R「Horace Tapscott」**；Producer「Tom Albach」；Design「Arrazzaaq」；Design, Illustration, Photography By「Michael D. Wilcots」；Lacquer Cut By「Erik Wolf」（anv EW）。",
+    "src": "https://www.discogs.com/release/1840429"
+   },
+   {
+    "f": "同一條目的公司欄只有兩條：**Record Company「Nimbus Recording Co.」、Copyright (c)「Fast T.C.B. Music」**（沒有 Recorded At、沒有 Mixed At、沒有 Pressed By、沒有 Distributed By）。identifiers 欄三條：Rights Society「ASCAP」；Matrix / Runout「NIMBUS-913-（B 被劃掉）A EW 12130」（描述欄 Side A runout）；Matrix / Runout「NIMBUS-913-（A 被劃掉）B EW 12129」（描述欄 Side B runout）。",
+    "src": "https://www.discogs.com/release/1840429"
+   },
+   {
+    "f": "同一條目的曲目表共 4 個曲位、分兩面，**逐軌都沒有 Written-By 欄**（作曲掛在整張的 credit 欄，寫在 Kaeef Ruzadun 那一條的 Composed By 上）：A1〈One Step Out〉8:21、A2〈Flashback Of Time〉10:43、B1〈All Praises Due〉13:17、B2〈Stars In Lightyear Time〉8:48。",
+    "src": "https://www.discogs.com/release/1840429"
+   },
+   {
+    "f": "Discogs master 624141 的 versions 共 5 筆：1981 US Nimbus West Records NS-913＋#913（LP, Album, Stereo）；2001 US Nimbus West Records NS 913 C（CD, Reissue）；**2018 UK Outernational Sounds OTR-005／OTR005（12\", 45 RPM, Album, Limited Edition, **Partially Unofficial**, Reissue）**；2021 US Nimbus West Records NS-913（LP, Test Pressing, Stereo）；2021 UK Nimbus West Records NS-913（LP, Album, Limited Edition, Reissue）。**五筆裡有一筆帶 Partially Unofficial 字樣，是 a 組 22 張裡僅有的兩筆非官方標記之一。**",
+    "src": "https://www.discogs.com/master/624141"
+   },
+   {
+    "f": "Apple 逐軌複檢（collectionId 269321943，us 店面）：collectionName《One Step Out》、artistName「Creative Arts Ensemble」、trackCount 4、**releaseDate 2003-01-01（是佔位形狀的 01-01）、copyright 欄「℗ 2006 Nimbus West Records」**。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈One Step Out〉526880ms＝8:46、2〈Flashback of Time〉658893ms＝10:58、3〈All Praises Due〉846413ms＝14:06、4〈Stars In Lightyear Time〉539720ms＝8:59。**四軌曲名與曲序與 MB／Discogs 原盤逐軌相同，無多出、無抽換、無二合一；但四軌的長度全部比原盤登的長（原盤 8:21／10:43／13:17／8:48，差距 25 到 49 秒）。**",
+    "src": "https://itunes.apple.com/lookup?id=269321943&entity=song&country=us"
+   },
+   {
+    "f": "MB 那筆 2006 Digital Media release（496ce38a）登的四軌曲長與 1981 黑膠逐軌相同（8:21／10:43／13:17／8:48），**與 Apple 那筆的長度對不上**。也就是說：Apple 上架的那一份，**兩個資料庫都沒有登過與它相符的曲長**。",
+    "src": "https://musicbrainz.org/release/496ce38a-e321-44fd-84e6-0b7f0395c30a"
+   },
+   {
+    "f": "英文維基〈Horace Tapscott〉條目帶行內引註的段落說：喜愛他音樂的人在 1970 與 1980 年代成立了兩家廠牌 Interplay 與 Nimbus，他為這兩家錄音（引註 Grove Music Online，Steven L. Isoardi 撰寫的 Horace Tapscott 條目）。**本卡的 Discogs credit 欄把 Horace Tapscott 掛在 A&R 這個角色上，不是演奏者。**",
+    "src": "https://en.wikipedia.org/wiki/Horace_Tapscott"
+   },
+   {
+    "f": "本卡與 a 組另外三張 Nimbus West 的碟在製作人欄上是同一個名字：本卡 1840429 的 Producer「Tom Albach」、卡 11 的 2404982 的 Producer「Tom Albach」、卡 12 的 5629168 的 Producer「Tom Albach」、卡 13 的 1769859 的 Producer「Tom Albach」（卡 13 另有 Co-producer「Horace Tapscott」）。**四條都只是 credit 欄的欄位值。**",
+    "src": "https://www.discogs.com/release/1840429"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 的 credit 欄有兩條 Leader：一條掛鋼琴、一條掛人聲",
+   "Discogs 抄下的兩面刻字，面別字母都是先刻錯再劃掉改過來的"
+  ],
+  "sound": "四軌兩面，是 a 組單軌最長的一批之一。原盤（Discogs 1840429 與 MB 1981 release 的曲目表，兩庫逐軌一致）最短的一軌是 A1〈One Step Out〉8:21、最長的一軌是 B1〈All Praises Due〉13:17。編制照 Discogs credit 欄有十條演奏／人聲 credit：鋼琴（掛 Leader）、人聲（掛 Co-leader）、中音兼高音薩克斯、上低音薩克斯、次中音薩克斯、長號、小號、長笛、貝斯、鼓兼打擊。作曲只用一條整張的 Composed By 掛完。格式欄寫 Stereo。（本欄由 Discogs 1840429 的曲目表與 credit／格式欄、MB 1981 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "One Step Out",
+   "All Praises Due",
+   "Stars In Lightyear Time"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1981,
+   "note": "**只能寫到年。** MB release-group first-release-date 1981、MB 那筆 Nimbus West 原盤 release 的 date 欄 1981（只有年）、Discogs 1840429 的 year 與 released 欄皆 1981，三邊一致。**Apple 的 releaseDate 2003-01-01 與 copyright 欄的「℗ 2006」都不是原盤年**——探測層自己算出 `yearDrift` 22，**那是 Apple 上架的那份再發的年份**（第 140 條附二）。**行文絕對不得寫 2003 或 2006。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：**「掛名與領班分離」這條身分線**（本卡是 a 組唯一一張 Discogs 的 artists 欄放了兩個並列名字、而 credit 欄又有兩條 Leader 的碟）。\n**未取得**：Nimbus West 廠牌與 Tom Albach 這條線歸卡 12（**facts 第 11 條那條四張製作人欄的對照是留給卡 12 用的素材，本卡只能寫自己 credit 欄上的 Producer 那一條**）；Horace Tapscott 生平與 Arkestra 團史歸卡 13（**本卡只能寫自己 credit 欄上的 A&R 那一條，不得展開**）；Soul Jazz Records 復刻線歸卡 13。**Outernational Sounds 這條線名義上分派給本卡，但依第 43／57／65／78 條，本卡那筆 2018 OTR-005 的版本欄帶 Partially Unofficial 字樣、不能當背書，這條線因此 facts 撐不住——依第 138 條讓它閒置，只能寫成「Discogs 版本欄有一筆帶 Partially Unofficial 字樣」，且不得當版本、封面或試聽來源。**\n\n**【身分：本卡是 a 組掛名結構最複雜的一張】**\n- **MB**：artist-credit 只寫「Creative Arts Ensemble」，掛一個 type 為 Group 的實體。\n- **Discogs**：artists 欄是「Creative Arts Ensemble」與「B.J. Crowley」兩個並列名字，條目標題寫成《Creative Arts Ensemble With B.J. Crowley》。\n- **Discogs credit 欄**：有兩條 Leader——「Kaeef Ruzadun」掛 Leader, Piano, Composed By, Liner Notes，「B.J. Crowley」掛 Leader [Co-leader], Vocals。\n- **Apple**：artistName 只寫「Creative Arts Ensemble」。\n**裁定（本卡自定）**：行文一律用卡單的「Creative Arts Ensemble」。**要提到共同掛名只能寫成「Discogs 的 artists 欄把團名與 B.J. Crowley 並列」「credit 欄有兩條 Leader」**——**不得寫成「這是誰的團」「誰才是真正的領班」「他是團長」**（第 136 條；facts 沒有任何一條說這個團的組成或誰主導）。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 4**——MB 三筆 release 全部 track-count 4、Discogs 1840429 曲目表 4 個曲位（A1、A2、B1、B2）、Apple 4 軌且曲名逐軌相同，三邊一致。面別分法只能引 Discogs 的 A／B 編號。\n(2) **試聽：Apple 上有這張碟，逐軌核對通過**（4 軌曲名與曲序全同、沒有多出或抽換的曲目）。**探測層標的 `ready` 成立。** **但要註明兩件事**：(a) Apple 那份的 copyright 是「℗ 2006 Nimbus West Records」、releaseDate 是佔位的 2003-01-01，**不是原盤**；(b) Apple 那份的四軌長度全部比兩庫登的原盤長 25 到 49 秒，**兩庫都沒有登過與它相符的曲長**（facts 第 8、9 條）。**行文因此不得引 Apple 的曲長當這張碟的曲長**，要提長度只能引 Discogs／MB 那一側。\n(3) **不得寫「這是他們唯一的專輯」「第幾張」**——facts 沒有任何一條說張數或順序（第 142 條）。\n(4) **公司欄只有兩條、沒有 Recorded At**，只能寫成「Discogs 條目的公司欄沒有登錄音室」，**不得寫成「這張碟沒有錄音室資料」或推測錄音地點**（第 136 條）。\n(5) **不得寫壓量、份數、稀有度**（第 109 條）——2018 與 2021 的版本欄有 Limited Edition 字樣。\n(6) Henry Franklin（卡 1 的掛名藝人）出現在本卡的 Bass 欄、anv 欄寫「(The Skipper) Henry Franklin」。**跨張班底敘事歸卡 8**，本卡只能寫自己 credit 欄上的那一條。"
+ },
+ {
+  "key": "desc2:Linda Hill|Lullaby for Linda",
+  "artist": "Linda Hill",
+  "album": "Lullaby for Linda",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b595a473 的欄位：title《Lullaby for Linda》、first-release-date 1981、primary-type Album、secondary-types 空陣列、artist-credit「Linda Hill」（個人實體 MBID ff8359f3-6d67-4c5c-83ca-bf7209a58323，type Person，disambiguation 欄「jazz pianist」）、annotation 為 null；genre 欄只有一個標籤 jazz（1 票）；url-rels 三條：allmusic 指向 mw0003328454、discogs 指向 master/497705、另一條 other databases 指向 rateyourmusic 的同名頁。",
+    "src": "https://musicbrainz.org/release-group/b595a473-7adc-40d0-83d0-b51dcfa940b0"
+   },
+   {
+    "f": "以 release?release-group=b595a473…&inc=recordings 逐版比對，該 release-group 轄下共 4 筆 release、全部 status Official、**全部 4 軌、曲名與曲序逐軌相同、無任何一筆多出或抽換曲目**：1981 US（e33853de，Nimbus West Records，編號欄「Nimbus #791」，一張 12\" Vinyl，逐軌 A1〈Leland's Song〉14:10、A2〈The Creator's Musician〉10:12、B1〈Lullaby for Linda〉11:15、B2〈Children〉10:57）；2012 US（b8e77db3，Nimbus West Records NS791C，CD，曲長 14:16／10:15／11:19／10:57）；2014-07-31 XW（14f0120f，Nimbus West Records，Digital Media，曲長同 2012 那筆）；**2019 GB（824554ed，廠牌欄寫的是「Pure Pleasure Records」、編號欄 NS-791，一張 12\" Vinyl，barcode 5060149623039，曲長與 1981 原盤逐軌相同）**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b595a473-7adc-40d0-83d0-b51dcfa940b0&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 2404982 的欄位：artists 欄「Linda Hill」、廠牌欄 Nimbus West Records、編號欄「Nimbus #791」、國別 US、year 與 released 欄皆 1981、格式欄 Vinyl ×1［LP, Album, Stereo］、genre 欄 Jazz、style 欄 **Free Jazz 與 Spiritual Jazz**。**註記欄是空的。**",
+    "src": "https://www.discogs.com/release/2404982"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Piano, Vocals, Liner Notes「Linda Hill」**；Bass「Roberto Miranda」；Drums「Everett Brown Jr.」；Flute「Aubrey Hart」；**Flute, Vocals「Adele Sebastian」**；**French Horn「Fundi Legohn」（tracks 欄只寫 B1）**；Percussion「Virjilio Figueroa」；Tenor Saxophone, Clarinet「Sabir Mateen」（anv 欄 Sabir Matteen）；Vocals「Jugegr Juan Grey」；Engineer「Dennis Moody」；Producer「Tom Albach」。",
+    "src": "https://www.discogs.com/release/2404982"
+   },
+   {
+    "f": "同一條目的公司欄只有一條：Published By「Tapal Music」（沒有 Recorded At、沒有 Mixed At、沒有 Pressed By、沒有 Distributed By）。identifiers 欄三條：Rights Society「ASCAP」；Matrix / Runout「NIMBUS-791-A 12127」（Side A runout）；Matrix / Runout「NIMBUS-791-B 12128」（Side B runout）。",
+    "src": "https://www.discogs.com/release/2404982"
+   },
+   {
+    "f": "同一條目的曲目表共 4 個曲位、分兩面，**逐軌都沒有 Written-By 欄**：A1〈Leland´s Song〉14:10、A2〈The Creator´s Musician〉10:12、B1〈Lullaby For Linda〉11:15、B2〈Children〉10:57。**（Discogs 這兩個曲名用的是尖音符 ´（U+00B4），不是一般的撇號——這正是第 152 條那類同形異碼的形狀。）**",
+    "src": "https://www.discogs.com/release/2404982"
+   },
+   {
+    "f": "Discogs master 497705 的 versions 共 5 筆，**零筆標 Unofficial**：1981 US Nimbus West Records「Nimbus #791」（LP, Album, Stereo）；2012 US Nimbus West Records NS791C（CD, Reissue）；2014 Worldwide Nimbus West Records、編號欄 none（FLAC, Album）；2019「UK, Europe & US」Nimbus West Records NS-791（LP, Album, Reissue, Test Pressing）；**2019 UK，廠牌欄寫「UGMAA」、編號欄三條（NIMBUS#791、NIMBUS #791、NS-791）（LP, Album, Reissue）**。",
+    "src": "https://www.discogs.com/master/497705"
+   },
+   {
+    "f": "**試聽查證（第 152 條的兩路查詢，本卡逐條記錄）**：路徑一，掛名＋盤名——以「Linda Hill Lullaby for Linda」搜 Apple 的 us、jp、gb 三個店面，us 與 gb 回 resultCount 0（乾淨的空結果、不是錯誤碼），jp 回 25 筆但全部是完全無關的碟（披頭四、惠妮休斯頓、Pentatonix 之類，沒有一筆掛 Linda Hill）。路徑二，只搜盤名——以「Lullaby for Linda」搜 us 店面回 24 筆，**掛名最接近的一筆是 Birthday Booth 的單曲《Lullaby for Linda - Single》（collectionId 1806379200，1 軌，℗ 2025 Final Ritual Records），與本卡無關**；其餘 23 筆都是 Linda Ronstadt、Linda Arnold 這類名字裡有 Linda 的別人。另試「Nimbus West Linda Hill」搜 us 回 0。**結論：Apple 上真的沒有這張碟，不是比對法漏掉。探測層標的 `unavailable` 成立。**",
+    "src": "https://itunes.apple.com/search?term=Linda%20Hill%20Lullaby%20for%20Linda&country=us&entity=album&limit=25"
+   },
+   {
+    "f": "本卡與卡 12〈Flight 17〉在 Discogs credit 欄上有三個名字重疊，且角色互換：Linda Hill 在本卡掛 Piano, Vocals, Liner Notes（本卡的掛名藝人），在卡 12 的 5629168 只掛 Piano；Adele Sebastian 在本卡掛 Flute, Vocals，在卡 12 掛 Vocals, Flute；Everett Brown Jr. 在本卡掛 Drums，在卡 12 掛 Drums。另外 Roberto Miranda 在本卡掛 Bass，在卡 12 的曲目表上是 B1〈Horacio〉的 Composed By 與 Arranged By。**以上全部是 credit 欄的欄位值。**",
+    "src": "https://www.discogs.com/release/2404982"
+   },
+   {
+    "f": "英文維基〈Horace Tapscott〉條目帶行內引註的段落說：他 1961 年組成 Pan Afrikan Peoples Arkestra（引註 John Litweiler《The Freedom Principle》，Da Capo 1984，第 297 頁），目的是保存、發展與演出非裔美國人的音樂；隨著構想擴大，這在 1963 年成為一個更大的組織 Underground Musicians Association（UGMA）的一部分（引註 Colin Larkin 編《The Guinness Who's Who of Jazz》1992 年初版第 385 頁），該組織後來改名為 Union of God's Musicians and Artists Ascension（UGMAA）（引註 Grove Music Online）。**本卡的 Discogs 版本欄裡，2019 那筆再發的廠牌欄寫的就是「UGMAA」。**",
+    "src": "https://en.wikipedia.org/wiki/Horace_Tapscott"
+   },
+   {
+    "f": "**掛名藝人的維基查證結果：英文維基沒有〈Linda Hill〉這位鋼琴手的條目**（該標題在維基上指向其他同名對象，parse 端點沒有回一個講這位爵士鋼琴手的頁面）。本卡對她的身分資訊因此只有 MB 個人實體的 disambiguation 欄「jazz pianist」與 Discogs credit 欄上的「Piano, Vocals, Liner Notes」這一條。**MB 另掛了一條 AllMusic 專輯頁連結（mw0003328454），但那是專輯頁、不是傳記頁。**",
+    "src": "https://musicbrainz.org/artist/ff8359f3-6d67-4c5c-83ca-bf7209a58323"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 的 credit 欄裡，法國號那條的 tracks 欄只寫了一個 B1",
+   "四軌都超過十分鐘，最長的一軌 14:10、最短的 10:12"
+  ],
+  "sound": "四軌兩面。原盤（Discogs 2404982 與 MB 1981 release 的曲目表，兩庫逐軌一致）最短的一軌是 A2〈The Creator's Musician〉10:12、最長的一軌是 A1〈Leland's Song〉14:10——**四軌全部落在這兩個端點之間**。編制照 Discogs credit 欄有九條演奏／人聲 credit：鋼琴（同一人兼 Vocals 與 Liner Notes）、貝斯、鼓、長笛兩條（其中一條兼 Vocals）、法國號（tracks 欄只寫 B1）、打擊、次中音薩克斯兼豎笛、另一條 Vocals。格式欄寫 Stereo。（本欄由 Discogs 2404982 的曲目表與 credit／格式欄、MB 1981 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Leland's Song",
+   "Lullaby For Linda",
+   "Children"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1981,
+   "note": "**只能寫到年。** MB release-group first-release-date 1981、MB 那筆 Nimbus West 原盤 release 的 date 欄 1981（只有年）、Discogs 2404982 的 year 與 released 欄皆 1981，三邊一致。轄下 2014-07-31 那筆數位版有到日，那是上架日、不是原盤日。**本卡沒有 Apple 條目，因此沒有 Apple 佔位日期的干擾。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：(a) **這位鋼琴手自己那條線**（她是 a 組四張 Nimbus West 裡唯一以個人名掛名的碟，且在卡 12 上是伴奏之一——facts 第 9 條已列好可對照的欄位）；(b) **2019 年那次再發的廠牌欄分歧**（MB 寫 Pure Pleasure Records、Discogs 寫 UGMAA 與 Nimbus West Records，是本組唯一一處兩庫對同一次再發的廠牌各寫各的）。\n**未取得**：Nimbus West 廠牌與 Tom Albach 這條線歸卡 12（**本卡只能寫自己 credit 欄上的 Producer 那一條**）；Horace Tapscott 生平、Arkestra 團史與 UGMAA 歸卡 13（**facts 第 10 條那段維基內容只能用來解釋「Discogs 上 2019 那筆的廠牌欄為什麼寫 UGMAA」這一個點，不得展開成團史或組織史**）；Soul Jazz Records 復刻線歸卡 13。\n\n**【本卡禁令】**\n(1) **原盤軌數只能寫 4**——MB 四筆 release 全部 track-count 4、Discogs 2404982 曲目表 4 個曲位（A1、A2、B1、B2），兩庫一致。**本卡沒有 Apple 條目可以當第三方核對。**面別分法只能引 Discogs 的 A／B 編號。\n(2) **試聽：Apple 上沒有這張碟，`unavailable` 成立，理由是「兩條路徑都查過、真的沒有」。** 查證過程見 facts 第 8 條：路徑一（掛名＋盤名，us／jp／gb 三個店面）、路徑二（只搜盤名，us 店面）。**唯一名字接近的命中是 Birthday Booth 2025 年的同名單曲，那是另一張碟。**下游若要覆查，**這兩條路徑與那筆誤命中要一起交接**。\n(3) **曲名的尖音符（´, U+00B4）只出現在 Discogs 那一側**，MB 用的是 U+2019。**行文一律用卡單／MB 那一側的一般撇號**；**不得把兩種寫法當成兩首不同的曲子**（第 152 條的同形異碼形狀）。\n(4) **公司欄只有一條 Published By、沒有 Recorded At**，只能寫成「Discogs 條目的公司欄沒有登錄音室」，**不得推測錄音地點**（第 136 條）。**尤其不得把卡 13 的 Immanuel United Church of Christ 借過來用**——那是卡 13 的錄音地，與本卡無關。\n(5) **不得寫這位鋼琴手的生平、出身、與誰的關係或後來的走向**——**英文維基沒有她的條目**（facts 第 11 條），本卡沒有任何傳記來源。**策展層若提供過任何生平說法，那是線索不是事實（第 142 條）。**\n(6) **不得寫「這是她唯一的專輯」或「唯一以領班身分的錄音」**——facts 沒有任何一條說張數（第 142 條）。\n(7) **不得寫壓量、份數、稀有度**（第 109 條）；2019 版本欄的 Test Pressing 字樣只能當版本欄的字樣引用。"
+ },
+ {
+  "key": "desc2:Pan Afrikan Peoples Arkestra|Flight 17",
+  "artist": "Pan Afrikan Peoples Arkestra",
+  "album": "Flight 17",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 595b6884 的欄位：title《Flight 17》、first-release-date 1978、primary-type Album、secondary-types 空陣列、annotation 為 null；genre 欄只有一個標籤 jazz（1 票）；url-rels 五條：allmusic mw0000596069、discogs master/698926、rateyourmusic、musik-sammler、wikidata Q118179821。**artist-credit 顯示為「Pan Afrikan Peoples Arkestra」，但它掛的實體名字是「Horace Tapscott and Pan Afrikan Peoples Arkestra」（MBID 36d24e83-1f82-4bc5-9d9c-8f2f9b27f1b4，type Orchestra）——顯示名與實體名不同。**",
+    "src": "https://musicbrainz.org/release-group/595b6884-1253-4fec-8415-f577b6a4c623"
+   },
+   {
+    "f": "**以 release?release-group=595b6884…&inc=recordings 逐版比對，該 release-group 轄下 4 筆 release 的軌數不一致，必須分開看**：(1) 1978 US（e6b72f11，Nimbus West Records NIMBUS-135，一張 12\" Vinyl，status Official，**5 軌**：A1〈Flight 17〉15:53、A2〈Breeze〉3:09、B1〈Horacio〉6:01、B2〈Clarisse〉6:27、B3〈Maui〉7:21）；(2) 1997 US（32a6a198，Nimbus West Records NS 135 C，CD，status Official，**7 軌**——前 5 軌與原盤同名同序、之後多出第 6 軌〈Coltrane (medley)〉7:51 與第 7 軌〈Village Dance Revisited〉11:00）；(3) 2021-10 DE（02be99d5，Nimbus West Records NS-135，12\" Vinyl，status Official，barcode 5060149623480，**5 軌**、與原盤同名同序同長）；(4) 2019 GB（9ac8afb9，廠牌欄兩條 UGMAA NIMBUS-135 與 Outernational Sounds OTR-010，兩張 12\" Vinyl 共 **7 軌**，**status 是 Bootleg**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=595b6884-1253-4fec-8415-f577b6a4c623&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 5629168 的欄位：**artists 欄兩個並列名字「The Pan-Afrikan Peoples Arkestra」（anv 欄 Pan Afrikan Peoples Arkestra）與「Horace Tapscott」，條目標題寫成《Pan-Afrikan Peoples Arkestra, Conductor Horace Tapscott – Flight 17》**；**廠牌欄寫的是「UGMAA」、編號欄 NIMBUS-135**（不是卡單上的 Nimbus West Records）；國別 US、year 與 released 欄皆 1978、格式欄 Vinyl ×1［LP, Album］、genre 欄 Jazz、style 欄 Free Jazz 與 Spiritual Jazz。註記欄只有一行「Gatefold cover」。",
+    "src": "https://www.discogs.com/release/5629168"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條：**Conductor, Piano, Co-producer, Liner Notes「Horace Tapscott」**；**Leader, Soprano Saxophone, Tenor Saxophone, Flute [Bamboo]「Jesse Sharps」**；Producer「Tom Albach」；Alto Saxophone「Michael Session」；Alto Clarinet「Herbert Callies」；Tenor Saxophone, Bass Clarinet「James Andrews (6)」；Flute「Kafi Larry Roberts」；Vocals, Flute「Adele Sebastian」；Trombone 兩條「Archie Johnson (3)」「Lester Robertson」；Tuba「Red Callender」（anv Red Callendar）；Cello「Louie Spears」（anv Louis Spears）；Bass 兩條「David Bryant (4)」「Kamonta Lawrence Polk」；Piano「Linda Hill」；Drums「Everett Brown Jr.」；Percussion, Drums「William Madison」；Engineer [Mixing]「Edward Perry (3)」；**Engineer [Recording] 兩條，且是逐軌分掛的——「Edward Perry (3)」的 tracks 欄寫 A2、「Jim Mooney」的 tracks 欄寫 A1, B1 to B3**；Illustration, Design「Michael D. Wilcots」；Design「J.B. Bryan」。",
+    "src": "https://www.discogs.com/release/5629168"
+   },
+   {
+    "f": "同一條目的公司欄五條：**Recorded At「Sage & Sound」、Recorded At「United Western Studios」（兩間錄音室並列）**、Phonographic Copyright (p)「UGMAA」、**Published By「Interplay Music」**、Pressed By「KM Records Inc.」（catno 欄 KM-2377）。identifiers 欄三條：Matrix / Runout「KM · 2377 A」（Side A, etched）、Matrix / Runout「KM · 2377 B」（Side B, etched）、Rights Society「ASCAP」。",
+    "src": "https://www.discogs.com/release/5629168"
+   },
+   {
+    "f": "同一條目的曲目表共 5 個曲位、分兩面，逐軌帶 Composed By 與 Arranged By 欄：A1〈Flight 17〉15:53（Composed By: Herbert Baker (3)；Arranged By: Horace Tapscott）、A2〈Breeze〉3:09（Composed By: Herbert Baker (3)；Arranged By: Horace Tapscott）、B1〈Horacio〉6:01（Composed By: Roberto Miranda；Arranged By: Horace Tapscott 與 Roberto Miranda）、B2〈Clarisse〉6:27（Composed By: Jesse Sharps）、B3〈Maui〉7:21（Composed By: Kamonta Lawrence Polk）。",
+    "src": "https://www.discogs.com/release/5629168"
+   },
+   {
+    "f": "Discogs master 698926 的 versions 共 5 筆：1978 US UGMAA NIMBUS-135（LP, Album）；1997 US Nimbus West Records NS 135 C（CD, Remastered）；**2019 UK UGMAA NIMBUS-135＋OTR-010（LP, 45 RPM, Album, Reissue, **Unofficial Release**, Stereo）**；2021 UK UGMAA Nimbus-135＋NS-135（LP, Album, Reissue, Remastered, Stereo）；2021「UK, Europe & US」Nimbus West Records NS 135（LP, Album, Test Pressing）。**五筆裡有一筆明確標 Unofficial Release，且 MB 對同一筆登的 status 是 Bootleg——兩庫一致。**",
+    "src": "https://www.discogs.com/master/698926"
+   },
+   {
+    "f": "**Apple 上架的那一份不是原盤，是七軌的再發**（collectionId 269322851，us 店面）：collectionName《Flight 17》、artistName「Pan Afrikan Peoples Arkestra」、trackCount 7、**releaseDate 1978-01-01（佔位形狀）、copyright 欄「℗ 2006 Nimbus West Records」**。逐軌曲名與毫秒（分秒為本卡自行換算）：1〈Flight 17〉960560ms＝16:00、2〈Breeze〉201800ms＝3:21、3〈Horacio〉370400ms＝6:10、4〈**Clarrise**〉390800ms＝6:30、5〈Maui〉488400ms＝8:08、6〈**Coltrane Medly**〉481440ms＝8:01、7〈**Village Dance**〉659800ms＝10:59。**前五軌與原盤同名同序（第 4 軌的曲名 Apple 少一個字母寫成 Clarrise），第 6、7 軌是原盤五軌之外的曲目，與 MB 那筆 1997 Nimbus West 官方 CD（NS 135 C）多出來的兩軌對得上（該 CD 寫作〈Coltrane (medley)〉與〈Village Dance Revisited〉）。**",
+    "src": "https://itunes.apple.com/lookup?id=269322851&entity=song&country=us"
+   },
+   {
+    "f": "**二合一與加曲版的判別（第 140 條的兩項檢查，本卡逐項做過）**：(一) **軌號沒有重新從 1 開始**——Apple 那筆七軌從 1 連號到 7。(二) **多出來的兩軌不是別張專輯的曲目**：〈Coltrane (medley)〉與〈Village Dance Revisited〉出現在 MB 那筆 1997 Nimbus West CD（32a6a198，status **Official**、與原盤同一個 release-group）上，是這張碟自己的官方 CD 再發加進去的兩軌，**位置在原盤五軌之後、沒有插進中間**。**依第 140 條的分類，這是加曲版、不是二合一。**",
+    "src": "https://musicbrainz.org/release/32a6a198-30ca-4582-a300-1e8a13407d89"
+   },
+   {
+    "f": "**〈Village Dance〉這個曲名在 a 組出現兩次、是兩段不同的演出，不可混為一談**：本卡 Apple 第 7 軌〈Village Dance〉659800ms＝10:59（MB 1997 CD 寫〈Village Dance Revisited〉11:00）；卡 13〈Live at I.U.C.C.〉的 1979 原盤 C 面整面是〈Village Dance〉26:13（MB release 01da2899）。**兩者長度差 15 分鐘以上，且分屬兩個不同的 release-group。**",
+    "src": "https://musicbrainz.org/release/01da2899-25f5-487d-b436-bc487248c192"
+   },
+   {
+    "f": "英文維基〈Horace Tapscott〉條目帶行內引註的段落說：喜愛他音樂的人在 1970 與 1980 年代成立了 Interplay 與 Nimbus 兩家廠牌，他為這兩家錄音（引註 Grove Music Online，Steven L. Isoardi 撰寫）。**本卡 Discogs 條目的公司欄同時出現這兩個名字：Published By 寫「Interplay Music」、Pressed By 之外的錄音／出版體系則由 Phonographic Copyright (p)「UGMAA」承接，而版本欄的廠牌名在 1997 年之後才改寫成「Nimbus West Records」。**",
+    "src": "https://en.wikipedia.org/wiki/Horace_Tapscott"
+   }
+  ],
+  "hookCandidates": [
+   "錄音工程師是逐軌分掛的：一個人只掛 A2，另一個人掛其餘四軌",
+   "Discogs 的 credit 欄同時有一條 Conductor 和一條 Leader，掛的是兩個人"
+  ],
+  "sound": "**原盤五軌兩面**（Discogs 5629168 與 MB 1978 release 的曲目表，兩庫逐軌一致）：最短的一軌是 A2〈Breeze〉3:09、最長的一軌是 A1〈Flight 17〉15:53，A1 一首就佔掉 A 面大半。編制照 Discogs credit 欄有十六條演奏／人聲 credit：鋼琴兩條（其中一條同時掛 Conductor）、高音兼次中音薩克斯兼竹笛（掛 Leader）、中音薩克斯、中音豎笛、次中音薩克斯兼低音豎笛、長笛兩條（其中一條兼 Vocals）、長號兩條、低音號、大提琴、貝斯兩條、鼓、打擊兼鼓。格式欄寫 LP, Album（沒有標 Stereo 或 Quadraphonic）。（本欄由 Discogs 5629168 的曲目表與 credit／格式欄、MB 1978 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Flight 17",
+   "Horacio",
+   "Maui"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1978,
+   "note": "**只能寫到年。** MB release-group first-release-date 1978、MB 那筆 Nimbus West 原盤 release 的 date 欄 1978（只有年）、Discogs 5629168 的 year 與 released 欄皆 1978，三邊一致。**Apple 的 releaseDate 1978-01-01 是 01-01 的佔位形狀、copyright 欄寫的是「℗ 2006」——Apple 那份是 2006 年的再發，年份剛好落回原盤年而讓 `yearDrift` 歸零，這正是第 140 條附二講的那種假象。行文不得引 Apple 的日期當任何依據。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得**：**Nimbus West Records 這條廠牌線與製作人 Tom Albach**（含 Interplay Music、UGMAA 與 Nimbus West 三個名字在版本欄與公司欄上的更迭，facts 第 5、7、11 條）。**卡 10、11、13 一律禁用廠牌線，只能寫自己 credit 欄上的 Producer 那一條。**\n**未取得**：Horace Tapscott 的生平與 Arkestra 團史歸卡 13（**本卡只能寫自己 credit 欄上的「Conductor, Piano, Co-producer, Liner Notes」這一條，以及 facts 第 11 條那句維基關於「兩家廠牌」的話**——**那句只能用在廠牌線上，不得展開成他的生平**）；Soul Jazz Records 復刻線歸卡 13；I.U.C.C. 那個錄音場地歸卡 13。\n\n**【本卡的核心風險：Apple 上架的是七軌加曲版，原盤是五軌】**\n**原盤軌數只能寫 5。** 依據：MB 1978 US release（e6b72f11）track-count 5、Discogs 5629168 曲目表 5 個曲位（A1、A2、B1–B3）、MB 2021-10 DE release 也是 5 軌，三邊一致。\n**Apple 那筆是 7 軌**（facts 第 8 條），多出來的第 6、7 軌是 1997 年官方 CD 再發加進去的〈Coltrane (medley)〉與〈Village Dance Revisited〉。**依第 140 條逐項判過（facts 第 9 條）：軌號連號、多出來的不是別張專輯的曲目、且排在原盤五軌之後——這是加曲版，不是二合一，依第 77 條可用。**\n**因此**：(1) **行文不得把第 6、7 軌當成這張碟的曲目**；(2) **不得寫任何以 7 為基礎的軌數敘述**；(3) `keyTracks` 三首全部取自原盤五軌之內。\n**另一個坑（facts 第 10 條）**：**〈Village Dance〉這個曲名在卡 13 的原盤上也有一首，但那是 26:13 的另一段演出、分屬不同的 release-group。行文絕對不得把兩者寫成同一首，也不得因此把本卡的加曲版誤判成與卡 13 的二合一。**\n\n**【身分：團名與領班名在本卡是分開掛的】**\n- **MB**：artist-credit 顯示「Pan Afrikan Peoples Arkestra」，但掛的實體名是「Horace Tapscott and Pan Afrikan Peoples Arkestra」（type Orchestra）。\n- **Discogs**：artists 欄是「The Pan-Afrikan Peoples Arkestra」與「Horace Tapscott」兩個並列名字，條目標題把後者寫成 Conductor。\n- **Apple**：artistName 只寫「Pan Afrikan Peoples Arkestra」。\n- **credit 欄裡 Conductor 與 Leader 是兩個不同的人**（Horace Tapscott 掛 Conductor，Jesse Sharps 掛 Leader）。\n**裁定（本卡自定）**：行文一律用卡單的「Pan Afrikan Peoples Arkestra」。**要提分歧只能寫成「Discogs 把指揮的名字並列在團名旁邊」「credit 欄的 Conductor 與 Leader 掛的是兩個人」**，**不得寫成「這是誰的樂團」「他帶的團」**（第 136 條）。**卡 13 是同一個團的另一張碟、掛名寫法不同（那張把領班名放在前面），兩張的行文不得互相搬用同一段身分描述（第 131 條）。**\n\n**【本卡其他禁令】**\n(1) **2019 那筆 UGMAA／Outernational Sounds（MB status Bootleg、Discogs 標 Unofficial Release）一律不得寫進行文**，也不得當版本、封面或試聽來源（第 43／57／65／78 條）。**這是 a 組 22 張裡唯二的非官方標記之一。**\n(2) **試聽：Apple 上有這張碟，但那份是七軌的 2006 年再發。** 探測層標的 `ready` **成立但需附註**——`originalTrackCount` 是 5、Apple 那份是 7，**下游若拿 Apple 的軌數當原盤軌數就會錯**（第 141 條）。\n(3) **廠牌欄兩庫不同**：卡單與 MB 寫 Nimbus West Records，Discogs 原盤條目的廠牌欄寫 UGMAA。**只能寫成「兩個資料庫對這張原盤的廠牌欄各寫各的」**，不得斷言哪個才對（第 136 條）。\n(4) **兩間錄音室（Sage & Sound 與 United Western Studios）只能照抄成公司欄的兩條 Recorded At**，**不得推論哪一軌錄在哪裡**——只有工程師那兩條有 tracks 欄，錄音室那兩條沒有（第 110／136 條）。\n(5) Linda Hill（卡 11 的掛名藝人）、Adele Sebastian、Everett Brown Jr. 出現在本卡 credit 欄。**跨張班底敘事歸卡 8**（Black Jazz 那一支）；**Nimbus West 這四張之間的人員重疊，本卡與卡 11 各寫自己 credit 欄上的名字即可，不得互相重複同一段描述（第 131 條）。**\n(6) **不得寫壓量、份數、稀有度**（第 109 條）。"
+ },
+ {
+  "key": "desc2:Horace Tapscott with The Pan-Afrikan Peoples Arkestra|Live at I.U.C.C.",
+  "artist": "Horace Tapscott with The Pan-Afrikan Peoples Arkestra",
+  "album": "Live at I.U.C.C.",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e5e3143e 的欄位：title《Live at I.U.C.C.》、first-release-date 1979、primary-type Album、**secondary-types 是 [\"Live\"]（a 組 22 張裡唯一一張標 Live 的碟）**、annotation 為 null；genre 欄四個標籤（jazz 2 票、experimental big band 1 票、free jazz 1 票、spiritual jazz 1 票）；url-rels 五條：allmusic mw0000879393、discogs master/256086、rateyourmusic、musik-sammler、wikidata Q118046271。**artist-credit 是兩段：「Horace Tapscott」（個人實體 febcd333-6085-429b-9274-b6e8e5711729，type Person，disambiguation「US jazz pianist and composer」）＋「The Pan-Afrikan Peoples Arkestra」（掛的實體名是「Horace Tapscott and Pan Afrikan Peoples Arkestra」，type Orchestra，MBID 36d24e83——與卡 12 掛的是同一個實體）。**",
+    "src": "https://musicbrainz.org/release-group/e5e3143e-1016-4ddf-9b43-b05f5d889ce9"
+   },
+   {
+    "f": "**以 release?release-group=e5e3143e…&inc=recordings 逐版比對，該 release-group 轄下 6 筆 release 的軌數分成兩種，必須分開看**：**7 軌那一種**——1979 US（01da2899，Nimbus West Records，編號欄「NIMBUS No. 357」，**兩張 12\" Vinyl（3 軌＋4 軌）**，status Official：A〈Macrame〉20:25、B1〈Future Sally's Time〉12:10、B2〈Noissessprahs〉16:13／C〈Village Dance〉26:13、D1〈L.T.T.〉14:50、D2〈Desert Fairy Princess〉11:00、D3〈Lift Every Voice〉1:58）；2014-07-31 XW（b4049ad7，Nimbus West Records，Digital Media 7 軌，status Official，**但它的第 7 軌是把兩首併成一軌的〈Desert Fairy Princess / Lift Every Voice〉13:23**）；2019-03-26 GB（f0adbfe6，Outernational Sounds OTR-007，三張 12\" Vinyl 共 7 軌，**status 是 Bootleg**）。**8 軌那一種**——2006 US（8a895697，Nimbus West Records NS 357 C，兩片 CD 各 4 軌，status Official）；2019 GB（3f17f6f7，Soul Jazz Records SJR CD424，兩片 CD 各 4 軌，status Official，barcode 5026328104249）；2019-03-22 AF（f43d61b9，Soul Jazz Records，Digital Media 8 軌，status Official，barcode 5026328504247）。**8 軌那三筆多出來的那一軌是〈McKowsky's First Fifth〉，位置在第 4 軌、也就是插在原盤 B2 與 C 之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e5e3143e-1016-4ddf-9b43-b05f5d889ce9&inc=recordings&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 1769859 的欄位：**artists 欄兩個並列名字「Horace Tapscott」與「The Pan-Afrikan Peoples Arkestra」**；**廠牌欄兩條都寫「UGMAA」（編號欄一條 NIMBUS No. 357、一條 #357）**；國別 US、year 與 released 欄皆 1979、**格式欄 Vinyl ×2［LP, Album］**、genre 欄 Jazz、style 欄 Free Jazz、Soul-Jazz、Spiritual Jazz。",
+    "src": "https://www.discogs.com/release/1769859"
+   },
+   {
+    "f": "同一條目的註記欄逐句：**「Recorded February to June 1979 at the Imannuel United Church of Christ, 85th and Holmes, Los Angeles.」**「The U.G.M.A.A (=Union Of God's Musicians & Artists Ascension) Foundation was involved.」「Gatefold cover.」「First cat. Nr on front cover and spine, second on labels and inside right gatefold.」；圓標上印的是「Nimbus Recording Co., Box 205 Santa Barbara, Ca. 93102／Produced by Tom Albarch／UGMAA Fo.」；跨頁內裡印的是「Ron Pelletier [liner notes]／\"Jazz Omnibus\"／KPFK/Los Angeles」；背面印的是「Produced by Tom Albach／Nimbus Records／Box 205／Santa Barbara, Ca. 93102／Co-produced by Horace Tapscott／U.G.M.A.A. Foundation」；最後一行「Copyright 1979, Interplay Music/ASCAP」。**（拼寫皆照條目原樣，包括「Imannuel」與圓標上的「Albarch」。）**",
+    "src": "https://www.discogs.com/release/1769859"
+   },
+   {
+    "f": "同一條目的 credit 欄逐條，**多數 credit 帶 tracks 欄**：Piano「Horace Tapscott」［A, B1, C, D1, D2］；Co-producer「Horace Tapscott」；Producer「Tom Albach」；Bass「Alan Hines」［A to D2］；Bass「Roberto Miranda」［B1 to D1］；Drums「Billy Hinton」［B1 to D1］；Tenor Saxophone「Sabir Mateen」（anv Sabia Matteen）［A to D2］；Soprano Saxophone「Billie Harris」（anv Billy Harris）［B1 to D1］；Baritone Saxophone「John Williams (14)」［B1 to D2］；Flute「Adele Sebastian」［B1 to D2］；Flute「Aubrey Hart」［B1 to D1］；Trombone「Lester Robertson」［B1 to D2］；Percussion「Daa'oud Woods」［B1 to D2］；Engineer [Recording Engineer]「Bruce Bidlack」；Liner Notes「Ron Pelletier」；Photography By「Michael Pruessner」。",
+    "src": "https://www.discogs.com/release/1769859"
+   },
+   {
+    "f": "同一條目的曲目表共 7 個曲位、分四面（A、B1、B2／C、D1、D2、D3），**逐軌帶 Written-By 欄與逐軌的額外 credit**：A〈Macrame〉20:25（Written-By: Jesse Sharps；另掛 Alto Clarinet: Herbert Callies、Alto Saxophone: Michael Session、Bass: David Bryant (4)、Drums: Everett Brown Jr.、Flute: Kafi Larry Roberts、Soprano Saxophone: Jesse Sharps、Tenor Saxophone: James Andrews (6)）；B1〈Future Sally's Time〉12:10（Written-By: Arthur Blythe 與 Stanley Crouch）；B2〈Noissessprahs〉16:13（Written-By: Sabir Mateen；另掛 Bass: David Bryant (4)、Cello: Louie Spears、French Horn: Bob Watt、Percussion: Mike Daniels (5)、**Piano: Linda Hill**、Tenor Saxophone: Desta Walker）；C〈Village Dance〉26:13（Written-By: Sabir Mateen）；D1〈L.T.T.〉14:50（Written-By: Horace Tapscott）；D2〈Desert Fairy Princess〉11:00（Written-By: Jesse Sharps；另掛七條演奏 credit，含 Tuba: Red Callender）；**D3〈Lift Every Voice〉1:58（Written-By: James Weldon Johnson 與 John Rosamond Johnson；演奏 credit 掛的是「Piano, Vocals: Unknown Artist」）**。",
+    "src": "https://www.discogs.com/release/1769859"
+   },
+   {
+    "f": "同一條目的公司欄五條：**Record Company「Nimbus Recording Co.」、Copyright (c)「Interplay Music」、Published By「Interplay Music」、Recorded At「Immanuel United Church Of Christ, Los Angeles」**、Pressed By「KM Records Inc.」（catno 欄 KM.4132）。identifiers 欄六條：四面各一條 Matrix / Runout（KM.4132 A RE·1 6645X／B RE·1 6646X／C RE·1 6647X／D RE·1 6648X，四條的描述欄都寫 etched）、Rights Society「ASCAP」、Pressing Plant ID「KM」。",
+    "src": "https://www.discogs.com/release/1769859"
+   },
+   {
+    "f": "Discogs master 256086 的 versions 共 6 筆：1979 US UGMAA「NIMBUS No. 357」＋#357（LP, Album）；2006 US Nimbus West Records NS 357 C（CD, Reissue）；2019 UK Soul Jazz Records SJR CD424（CD, Limited Edition, Reissue）；**2019 UK Outernational Sounds OTR-007（LP, **Partially Unofficial**, Reissue）**；2023 UK UGMAA「NIMBUS No. 357」＋#357＋NS-357 兩筆（LP, Limited Edition, Reissue, Remastered，其中一筆另標 Test Pressing）。**六筆裡有一筆帶 Partially Unofficial 字樣，MB 對同一筆登的 status 是 Bootleg——兩庫一致。**",
+    "src": "https://www.discogs.com/master/256086"
+   },
+   {
+    "f": "**試聽查證：探測層標的 `unavailable` 是錯的，這張碟 Apple 上有——被第 152 條那種「系列名與盤名串成一個字串」的形狀擋掉了。** 探測層七個店面各搜一次、每次都只回 1 筆而比對不上（tried 欄記 us:1→0、gb:1→0、jp:1→0、ca:1→0、de:1→0、fr:1→0、au:1→0）。本卡把掛名與盤名拆到只剩核心 ASCII 字後重搜——以「Horace Tapscott Live at IUCC」搜 us 店面，第一筆就是它：**collectionId 1453089384，collectionName《Soul Jazz Records Presents Horace Tapscott with the Pan-Afrikan Peoples Arkestra: Live at I.U.C.C.》——盤名前面被串上了復刻廠牌的系列名，而且原本的掛名整段被塞進了盤名字串裡**；artistName「Horace Tapscott & The Pan-Afrikan Peoples Arkestra」、trackCount 8、releaseDate 1979-01-01、copyright 欄「℗ 1979 Copyright Control」。",
+    "src": "https://itunes.apple.com/search?term=Horace%20Tapscott%20Live%20at%20IUCC&country=us&entity=album&limit=25"
+   },
+   {
+    "f": "以 collectionId 1453089384 直查逐軌（us 店面），曲名與毫秒（分秒為本卡自行換算，取整秒無條件捨去）：1〈Macrame (Live)〉1236173ms＝20:36、2〈Future Sally's Time (Live)〉677693ms＝11:17、3〈Noissessprahs (Live)〉981987ms＝16:21、4〈**McKowsky's First Fifth (Live)**〉974373ms＝16:14、5〈Village Dance (Live)〉1584880ms＝26:24、6〈L.T.T. (Live)〉895187ms＝14:55、7〈Desert Fairy Princess (Live)〉680160ms＝11:20、8〈Lift Every Voice (Live)〉127307ms＝2:07。**八軌的曲名與曲序與 MB 那筆 2019 Soul Jazz 官方 CD（3f17f6f7，SJR CD424）逐軌相同，曲長也逐軌對得上；與 1979 原盤相比多出第 4 軌〈McKowsky's First Fifth〉、其餘七軌同名同序。**",
+    "src": "https://itunes.apple.com/lookup?id=1453089384&entity=song&country=us"
+   },
+   {
+    "f": "英文維基〈Horace Tapscott〉條目帶行內引註的段落說：Horace Elva Tapscott（1934 年 4 月 6 日–1999 年 2 月 27 日）是美國爵士鋼琴手與作曲家（引註 AllMusic），他 1961 年組成 Pan Afrikan Peoples Arkestra（又稱 P.A.P.A. 或 The Ark）並帶領這個團到 1990 年代（引註 UCLA 圖書館的 Horace Tapscott Jazz Collection 頁）；組團的目的是保存、發展與演出非裔美國人的音樂，隨著構想擴大，這在 1963 年成為一個更大的組織 Underground Musicians Association（UGMA）的一部分（引註 Colin Larkin 編《The Guinness Who's Who of Jazz》1992 年初版第 385 頁），該組織後來改名為 Union of God's Musicians and Artists Ascension（UGMAA）（引註 Grove Music Online，Steven L. Isoardi 撰寫）；他生於德州休士頓、九歲搬到洛杉磯（引註同 Larkin）；他因腦癌於 1999 年 2 月 27 日過世、享年 64 歲，隔天洛杉磯 Leimert Park 有一場原訂為他舉行的致敬音樂會（引註 Los Angeles Times 1999-03-24，Jocelyn Y. Stewart〈The Last Days of Horace Tapscott〉）。",
+    "src": "https://en.wikipedia.org/wiki/Horace_Tapscott"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 抄下的註記欄說，錄音是 1979 年二月到六月在洛杉磯 85 街與 Holmes 路口那間教堂做的",
+   "整張碟的最後一軌 1:58，credit 欄把彈琴唱歌的人寫成 Unknown Artist"
+  ],
+  "sound": "**原盤是兩張黑膠、四面共七軌**（Discogs 1769859 與 MB 1979 release 的曲目表，兩庫逐軌一致）：最短的一軌是 D3〈Lift Every Voice〉1:58、最長的一軌是 C〈Village Dance〉26:13——C 面整面只有這一首，A 面整面也只有〈Macrame〉20:25 一首。編制照 Discogs 的整張 credit 欄有九條帶 tracks 欄的演奏 credit（鋼琴、貝斯兩條、鼓、次中音薩克斯、高音薩克斯、上低音薩克斯、長笛兩條、長號、打擊），曲目表另逐軌加掛——A 軌另加七條、B2 另加六條（含另一位鋼琴手）、D2 另加七條（含低音號）。格式欄寫 LP, Album。（本欄由 Discogs 1769859 的曲目表與 credit／格式欄、MB 1979 release 的曲長表歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Macrame",
+   "Village Dance",
+   "Desert Fairy Princess"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1979,
+   "note": "**發行年只能寫到年（1979）**：MB release-group first-release-date 1979、MB 那筆 Nimbus West 原盤 release 的 date 欄 1979（只有年）、Discogs 1769859 的 year 與 released 欄皆 1979、Discogs 註記欄另有一行「Copyright 1979, Interplay Music/ASCAP」，四邊一致。\n**錄音期間能寫到月：1979 年二月到六月**——來源是 Discogs 註記欄「Recorded February to June 1979 at the Imannuel United Church of Christ, 85th and Holmes, Los Angeles.」。**只能寫成「二月到六月之間」這個區間，不得指定某一天，也不得寫成「某一場演出」——註記欄寫的是一段橫跨五個月的期間，本卡沒有任何一條 facts 說這是單一場次的錄音。**\n**Apple 的 releaseDate 1979-01-01 是佔位形狀，不得當發行日；copyright 欄「℗ 1979 Copyright Control」也不是原盤的版權登記。**"
+  },
+  "notes": "**互斥分派總表在卡 1〈The Skipper at Home〉的 notes，全組共用禁令一併適用（第 58／130／131／138／146 條）。**\n\n**【本卡的分派】**\n**取得（全組唯一）**：(a) **Horace Tapscott 的生平**（維基帶行內引註的段落，facts 第 11 條）；(b) **Pan-Afrikan Peoples Arkestra 的團史與 UGMA／UGMAA 這個組織**；(c) **Soul Jazz Records 的復刻線**；(d) **Immanuel United Church of Christ 這個錄音場地與 1979 年二到六月的錄音期間**。**卡 10、11、12 一律禁用 (a)(b)(c)(d) 四條；那三張只能寫自己 credit 欄上的名字。**\n**未取得**：Nimbus West 廠牌與 Tom Albach 這條線歸卡 12（**本卡只能寫自己公司欄／註記欄上的那幾行，不得展開成廠牌敘事**）；Outernational Sounds 歸卡 10（且該線因非官方標記而閒置）。\n\n**【本卡的核心風險一：探測層的 `unavailable` 是錯的，本卡推翻】**\n**Apple 上有這張碟**，collectionId **1453089384**。探測層在七個店面各搜一次、每次都只回 1 筆而比對不上，成因是**第 152 條那個形狀**：**Apple 的 collectionName 把復刻廠牌的系列名串在盤名前面，而且把原本的掛名整段塞進了同一個字串裡**——《Soul Jazz Records Presents Horace Tapscott with the Pan-Afrikan Peoples Arkestra: Live at I.U.C.C.》。**方法**：把掛名與盤名各自拆到只剩核心 ASCII 字（「Horace Tapscott Live at IUCC」，把 I.U.C.C. 的點去掉），us 店面第一筆就是它；命中後以 collectionId 直查逐軌核對（facts 第 10 條）。\n**下游要改的是**：探測層的 `status` 從 `unavailable` 改成有條件的可用，`collectionId` 填 1453089384，**並記下這是 8 軌的 2019 Soul Jazz 官方 CD 版、不是 7 軌的原盤**。\n\n**【本卡的核心風險二：Apple 那份是八軌，原盤是七軌，而多出來的那一軌插在中間】**\n**原盤軌數只能寫 7。** 依據：MB 1979 US release（01da2899）兩張黑膠共 7 軌、Discogs 1769859 曲目表 7 個曲位（A、B1、B2、C、D1、D2、D3），兩庫一致。\n**Apple 那筆 8 軌**，多出來的是**第 4 軌〈McKowsky's First Fifth〉——它插在原盤 B2 與 C 之間、不是排在最後**（facts 第 2、10 條）。**依第 140 條逐項判過**：(一) 軌號沒有重新從 1 開始；(二) 多出來的那一軌不是別張專輯的曲目——它出現在 MB 那筆 2006 Nimbus West 官方 CD（8a895697）與 2019 Soul Jazz 官方 CD（3f17f6f7）上，兩筆都 status Official、都在同一個 release-group 底下。**結論：這是官方 CD 再發的加曲版，不是二合一，依第 77 條可用。**\n**但因為多出來的那一軌插在中段，第 140 條那個「排在後面才是加曲版」的直覺在這裡不成立——判準是「多出來的那些是誰的」，不是「排在哪裡」。這一點要寫進交接。**\n**因此**：(1) **行文不得把〈McKowsky's First Fifth〉當成這張碟的曲目**；(2) **不得寫任何以 8 為基礎的軌數敘述**；(3) **不得用 Apple 的軌序去描述原盤的面別**——原盤是四面（A／B1、B2／C／D1、D2、D3），Apple 那份是拉平的 1–8。\n\n**【身分】**\n本卡與卡 12 掛的是**同一個 MB 實體**（36d24e83，type Orchestra，實體名「Horace Tapscott and Pan Afrikan Peoples Arkestra」），但兩張卡的掛名寫法不同：本卡把鋼琴手放在前面（「Horace Tapscott with The Pan-Afrikan Peoples Arkestra」），卡 12 只寫團名。**依第 131 條，兩張的行文不得共用同一段身分描述；本卡寫的是「以他的名字掛頭的現場錄音」，卡 12 寫的是「掛團名的錄音室作品」。**\nMB 對本卡另掛了一個獨立的個人實體（febcd333，type Person）在 artist-credit 的第一段——**這是 a 組唯一一張 artist-credit 由個人實體與團體實體兩段組成的碟**。\n\n**【本卡其他禁令】**\n(1) **2019-03-26 那筆 Outernational Sounds OTR-007（MB status Bootleg、Discogs 標 Partially Unofficial）一律不得寫進行文**，也不得當版本、封面或試聽來源（第 43／57／65／78 條）。\n(2) **D3〈Lift Every Voice〉的演奏者只能寫成「Discogs 的 credit 欄把這一軌的 Piano, Vocals 掛成 Unknown Artist」**，**不得寫成「沒有人知道是誰彈的」或去猜是誰**（第 136 條）。這首的 Written-By 欄寫 James Weldon Johnson 與 John Rosamond Johnson，**只能照抄，不得由曲名或作者推論這首歌的來歷、地位或象徵意義**（第 110 條）。\n(3) **錄音期間只能寫成「1979 年二月到六月」這個區間**，不得指定日期、不得寫成「某一晚的現場」。**MB 的 secondary-type 標 Live 可以引，但那是 MB 的欄位值。**\n(4) **註記欄的拼寫照抄**：「Imannuel」（少一個 m 的教堂名）與圓標上的「Produced by Tom Albarch」都是條目原樣；**要提就寫成「條目上這樣印」，不得逕自更正，也不得寫成兩個不同的人**。\n(5) **廠牌欄兩庫不同**：卡單與 MB 寫 Nimbus West Records，Discogs 原盤條目的廠牌欄寫 UGMAA、公司欄的 Record Company 寫 Nimbus Recording Co.。**只能寫成「條目上的欄位這樣記」**（第 136 條）。\n(6) **維基的生平只能寫成「維基〈Horace Tapscott〉條目說」**（第 128 條），且只能用 facts 第 11 條裡帶行內引註的那幾句（第 40／80 條）。**不得寫「遺作」——他 1999 年過世、本卡是 1979 年的錄音，兩者之間沒有任何一條 facts 建立關係。**\n(7) **不得寫壓量、份數、稀有度**（第 109 條）；2019 與 2023 版本欄的 Limited Edition／Test Pressing 字樣只能當版本欄的字樣引用。"
  }
 ]
