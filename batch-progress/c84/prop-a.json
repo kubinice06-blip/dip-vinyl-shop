@@ -1,0 +1,203 @@
+[
+  {
+    "artist": "Refrigerator",
+    "album": "How You Continue Dreaming",
+    "year": 1994,
+    "genres": [
+      "rock"
+    ],
+    "label": "Shrimper",
+    "why": "原盤是 1994 年 Shrimper 的卡帶（SHR 53，Discogs release 2939663），隔年才由 Communion Label 出黑膠（Comm 36，Discogs release 1997618）與 CD（Comm 36-2，Discogs release 1284912）。Discogs 的 Shrimper 廠牌頁上，Refrigerator 掛名的條目從 1991 年《Lonesome Surprize》(SHR 13) 一路延續到 2021 年《So Long to Farewell》(SHR 205)，2020 年 Shrimper 還把 SHR 13 重壓成卡帶。四筆版本沒有一筆標 Unofficial。池中此場景（實掃 seed_cards.json 全檔 14,424 列）已有 Codeine 2 張、Bedhead 1 張、Red House Painters 4 張，Shrimper 一線零張。",
+    "risk": "MB release-group 的 first-release-date 記 1995（Communion 的 LP／CD），卡帶原盤 1994 只在 Discogs 有具體條目；依裁定第 1 條年份取原盤 1994，行文不得斷言 MB 那個年份。另有 2015 年 Refrigerator／Floored 的自製分裝卡帶同名（Discogs release 11363497），去重與封面比對時不可混用。封面預估中等（該 RG 只有兩筆 1995 release）；試聽預估低——Shrimper 的卡帶線在 Apple 上多半查不到。",
+    "mbNote": "MB release-group 55fc8171-4471-46f5-8224-10b42174dff8《How You Continue Dreaming》，artist-credit「Refrigerator」，first-release-date 1995，primary-type Album，secondary-types 空；轄下 2 筆 release 皆 1995 US Official。已回問 release-group 端點確認實體類型與標題。同藝人另有 RG 34b39d54-39eb-38bb-9640-9fcbd93f0118《Lonesome Surprize》(1991, Album)，刻意不釘。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Communion Label",
+    "g": "a"
+  },
+  {
+    "artist": "The Mountain Goats",
+    "album": "The Hound Chronicles",
+    "year": 1992,
+    "genres": [
+      "folk",
+      "rock"
+    ],
+    "label": "Shrimper",
+    "why": "Shrimper 的卡帶專輯（SHR 33，Discogs release 1949211），John Darnielle 早期以家用錄音機錄下的一批歌。2012 年 Shrimper 自己把它與隔年的《Hot Garden Stomp》併成一張 CD 重發（SHR163，Discogs release 3786547，Revolver USA 經銷），標 Official。池中 The Mountain Goats 掛名零張（實掃 seed_cards.json 全檔）。",
+    "risk": "**二合一風險高**：2012 年 SHR163 是《The Hound Chronicles》＋《Hot Garden Stomp》的合併 CD，Apple／串流若上架的是那一版，曲目表會同時出現兩張碟的曲子；探測與逐張複檢必須開 release?release-group=<id>&inc=recordings 對原卡帶軌數，不可照 Apple 抄（第 140／141 條）。Discogs 另有 2025 年 Not On Label 的黑膠，**標 Unofficial**，不得當地位證據（第 43／57 條）。本批同時收《Hot Garden Stomp》與《Nothing for Juice》，同藝人共 3 張，剛好到池中上限。封面與試聽預估皆低。",
+    "mbNote": "MB release-group 961b88a4-b7c0-3012-9917-5332215449e7《The Hound Chronicles》，artist-credit「The Mountain Goats」，first-release-date 1992，primary-type Album，secondary-types 空；轄下 1 筆 1992 US Official。已回問 release-group 端點確認實體類型與標題。合併重發的 RG aa8ecf48-acc8-4a94-acbc-7a284ced11b2《The Hound Chronicles / Hot Garden Stomp》(2012-06-26, Album/**Compilation**) **刻意不釘**，那是兩張碟的二合一。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Shrimper",
+    "g": "a"
+  },
+  {
+    "artist": "The Mountain Goats",
+    "album": "Hot Garden Stomp",
+    "year": 1993,
+    "genres": [
+      "folk",
+      "rock"
+    ],
+    "label": "Shrimper",
+    "why": "Shrimper 的限量卡帶（SHR 45，Discogs release 1669853，條目標 Limited Edition），是 Darnielle 在 Shrimper 卡帶線上的第二張專輯長度作品。2012 年由 Shrimper 與《The Hound Chronicles》併成 CD 重發（SHR163，Discogs release 3786547），標 Official。",
+    "risk": "與《The Hound Chronicles》共用 2012 年那張二合一 CD，**曲目表混合兩張碟**，探測層與逐張複檢必須以 MB 的 release?release-group=<id>&inc=recordings 對原卡帶軌數（第 140／141 條）。Discogs 另有 2025 年 Not On Label 黑膠標 **Unofficial**，不得引為地位證據。同藝人本批 3 張，已達池中上限。封面與試聽預估皆低。",
+    "mbNote": "MB release-group aa9ee5bf-5042-320c-a04a-55eb04a061de《Hot Garden Stomp》，artist-credit「The Mountain Goats」，first-release-date 1993，primary-type Album，secondary-types 空；轄下 1 筆 1993 US Official。已回問 release-group 端點確認實體類型與標題。二合一的 RG aa8ecf48（2012, Album/Compilation）**刻意不釘**。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Shrimper",
+    "g": "a"
+  },
+  {
+    "artist": "The Mountain Goats",
+    "album": "Nothing for Juice",
+    "year": 1996,
+    "genres": [
+      "folk",
+      "rock"
+    ],
+    "label": "Ajax Records",
+    "why": "芝加哥 Ajax Records 同時發 LP（AJAX 056-1，Discogs release 744810）、CD（AJAX 056-2，release 630261）與宣傳卡帶（AJAX 056，release 5989074）的一張，MB 記首發 1996-08。2005 年 3 Beads of Sweat 授權重發 CD（3BOS 1007.2，Discogs release 433676），MB 轄下另有兩筆 2005-03-29 的 Official release（US 與 XW）。",
+    "risk": "MB 另有 RG fe63ccde-104a-40f1-8531-8c40ef59f51e《Nothing for Juice Outtakes》（primary-type Other、secondary-types Demo），**刻意不釘**——盤名相近、去重字串會擦邊。同藝人本批 3 張已達上限。封面預估中等（2005 年重發有商業條碼），試聽預估中等。",
+    "mbNote": "MB release-group cb9cb54a-0114-34b6-8239-3f9248757421《Nothing for Juice》，artist-credit「The Mountain Goats」，first-release-date 1996-08，primary-type Album，secondary-types 空；轄下 3 筆 release 皆 Official（1996-08 US、2005-03-29 US、2005-03-29 XW）。已回問 release-group 端點確認實體類型與標題。對照組 RG fe63ccde《Nothing for Juice Outtakes》(Other/Demo) 刻意不釘。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "3 Beads of Sweat",
+    "g": "a"
+  },
+  {
+    "artist": "Linda Smith",
+    "album": "Nothing Else Matters",
+    "year": 1995,
+    "genres": [
+      "pop",
+      "rock"
+    ],
+    "label": "Feel Good All Over",
+    "why": "巴爾的摩的家庭錄音者 Linda Smith 在芝加哥廠牌 Feel Good All Over 發的 CD（F7005，Discogs release 1438613）。地位證據是 Captured Tracks 2024 年的授權黑膠重發（CT-370，Discogs release 29950885，Limited Edition），以及 Feel Good All Over 同年釋出的數位重發（Discogs release 32457861）；MB 該 release-group 轄下也有一筆 2024-03-01 的 Official release。Discogs 三筆版本零筆標 Unofficial。池中 Linda Smith 掛名零張。",
+    "risk": "掛名「Linda Smith」是常見英文姓名，Discogs 上另有多位同名藝人，下游以字串查 API 時極易撈錯人（第 139 條的撞名陷阱）；MB 藝人實體要以本 release-group 反查確認。封面預估高（Captured Tracks 2024 年重發有商業封面），試聽預估中等。",
+    "mbNote": "MB release-group 249c1f52-183b-4981-9562-140b18db5912《Nothing Else Matters》，artist-credit「Linda Smith」，first-release-date 1995，primary-type Album，secondary-types 空；轄下 2 筆 Official（1995 US、2024-03-01 國別未填）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Captured Tracks",
+    "g": "a"
+  },
+  {
+    "artist": "East River Pipe",
+    "album": "Shining Hours in a Can",
+    "year": 1994,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Ajax Records",
+    "why": "Ajax Records 1994 年的 CD（AJAX 041，Discogs release 1090227），把 East River Pipe 先前散在七吋上的自宅四軌錄音收成一張。地位證據是 Merge Records 2002-03-19 的授權重發（MRG203CD，Discogs release 605102），MB 該 release-group 轄下的兩筆 release 都是 Official。池中 East River Pipe 掛名零張。",
+    "risk": "MB 標 primary-type Album ＋ secondary-types Compilation，本卡走 §5.6 例外；年份取合輯首次出版年 1994。Merge 2002 年版曲序與 Ajax 原盤是否相同未查，行文不得斷言曲目數（第 141 條，留給研究層開 release?release-group= 查）。封面預估高（Merge 版有商業封面），試聽預估中等偏高。",
+    "mbNote": "MB release-group ef8d1bc2-1032-3cf9-a9f1-ec3684648974《Shining Hours in a Can》，artist-credit「East River Pipe」，first-release-date 1994，primary-type Album，**secondary-types Compilation**；轄下 2 筆 Official（1994 US Ajax、2002-03-19 US Merge）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Compilation",
+    "exceptionReason": "這是 F.M. Cornog 以四軌機在自宅錄的三張 Ajax 七吋與單曲的合集，也是 East River Pipe 第一張長度完整、可買得到的唱片；Merge Records 2002 年重發後成為這個名字在通路上的入口盤，收錄內容本身即為原盤錄音，不是後製精選。",
+    "exceptionEvidenceUrls": [
+      "https://www.discogs.com/release/1090227",
+      "https://www.discogs.com/release/605102"
+    ],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Merge Records",
+    "g": "a"
+  },
+  {
+    "artist": "Dump",
+    "album": "That Skinny Motherfucker With the High Voice?",
+    "year": 1998,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "label": "Shrimper",
+    "why": "Yo La Tengo 的 James McNew 以 Dump 之名做的 Prince 翻唱專輯，原盤是 1998 年 Shrimper 的卡帶（SHR 106，Discogs release 1266319），2001 年 Shrimper 才出 CD（SHR106，Discogs release 1155209）。Discogs 三筆版本零筆標 Unofficial。池中 Yo La Tengo 掛名 5 張、Dump 掛名零張——這是同一位樂手在卡帶廠牌那一側的另一條線。",
+    "risk": "MB release-group 的 first-release-date 記 2001（CD），1998 年卡帶只在 Discogs 有具體條目；依裁定第 1 條年份取原盤 1998，行文不得斷言 MB 那個年份。盤名含問號與粗話，外部 API 查詢時的正規化風險高，`queryAlias` 留空但下游要備妥去標點的寫法。封面預估中等（2001 年 CD 有封面），試聽預估低。",
+    "mbNote": "MB release-group 8b646cad-7c8c-3546-bc47-d0575562d1ce《That Skinny Motherfucker With the High Voice?》，artist-credit「Dump」，first-release-date 2001，primary-type Album，secondary-types 空；轄下 1 筆 2001 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "a"
+  },
+  {
+    "artist": "Soul-Junk",
+    "album": "1950",
+    "year": 1994,
+    "genres": [
+      "rock"
+    ],
+    "label": "Holy Kiss Rex",
+    "why": "聖地牙哥的 Soul-Junk 首張專輯，1994 年由 Holy Kiss Rex 同時出 CD（Discogs release 1943285）與限量黑膠（Discogs release 1943274）；同年 Shrimper 出的卡帶版改名為《1950 Free Shrimp》（SHR 49，Discogs release 1949236）。地位證據是 Sounds Familyre 2001 年的授權 CD 重發（SF07，Discogs release 1943288），四筆版本零筆標 Unofficial。",
+    "risk": "卡帶版盤名多兩個字（《1950 Free Shrimp》），去重與封面比對時是兩個字串；本卡採 MB release-group 的《1950》。盤名只有四個字元且全是數字，以盤名為主鍵掃池時要注意 `length>=4` 守衛剛好放行（實掃全池完全相等 0 筆、子字串 4 筆皆為不同的碟）。廠牌欄採原盤的 Holy Kiss Rex，不採卡帶版的 Shrimper（第 85 條）。封面預估中等，試聽預估中等。",
+    "mbNote": "MB release-group 8a79cd81-c0db-30b7-bfab-837f31eb34db《1950》，artist-credit「Soul-Junk」，first-release-date 1994，primary-type Album，secondary-types 空；轄下 1 筆 1994 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "Sounds Familyre",
+    "g": "a"
+  },
+  {
+    "artist": "Charalambides",
+    "album": "Union",
+    "year": 1994,
+    "genres": [
+      "folk",
+      "rock"
+    ],
+    "label": "Siltbreeze",
+    "why": "德州休士頓的 Charalambides 在費城廠牌 Siltbreeze 發的限量黑膠（SB26，Discogs release 1010190，條目標 Limited Edition），是這對雙人組進入美國地下發行網路的一張。Siltbreeze 同期的目錄裡還有 Strapping Fieldhands、Temple of Bon Matin、Alan Licht、The Yips，本批另收其中四張。池中 Charalambides 掛名零張。",
+    "risk": "Discogs 上這張只有一筆版本，沒有任何授權再發可引為地位證據——分量依據只有原廠牌目錄本身，研究層若查不到署名樂評或館藏，這張要優先剔除（稀有度不得寫進 why）。盤名《Union》四字元、常見詞，以盤名為主鍵掃池完全相等 0 筆、子字串 4 筆皆不同碟。封面與試聽預估皆低。",
+    "mbNote": "MB release-group 372e9f62-b336-3538-b132-331cccf7d28a《Union》，artist-credit「Charalambides」，first-release-date 1994，primary-type Album，secondary-types 空；轄下 1 筆 1994 US Official。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "a"
+  },
+  {
+    "artist": "Strapping Fieldhands",
+    "album": "Discus",
+    "year": 1994,
+    "genres": [
+      "rock",
+      "folk"
+    ],
+    "label": "Omphalos",
+    "why": "費城的 Strapping Fieldhands 1994 年的黑膠（Omphalos OMP001），MB 該 release-group 轄下另有一筆 2009 年的 US Official release，兩筆皆 Official。同一年 Siltbreeze 出了他們的《In the Pineys》（SB 34）——這個團橫跨兩家費城微廠的目錄。池中 Strapping Fieldhands 掛名零張。",
+    "risk": "廠牌欄採原盤的 Omphalos；Discogs 上 Siltbreeze 廠牌頁同年另列《In the Pineys》(SB 34, CD, EP)，是另一張碟，去重時不可混用。2009 年那筆重發的廠牌未查證，`reissuedBy` 留空待研究層補。封面與試聽預估皆低。",
+    "mbNote": "MB release-group 7e5ed9b4-b288-3274-bcc4-46181eb8a366《Discus》，artist-credit「Strapping Fieldhands」，first-release-date 1994，primary-type Album，secondary-types 空；轄下 2 筆 release 皆 US Official（1994、2009）。已回問 release-group 端點確認實體類型與標題。",
+    "releaseType": "Album",
+    "exceptionReason": "",
+    "exceptionEvidenceUrls": [],
+    "selfTitled": false,
+    "queryAlias": "",
+    "reissuedBy": "",
+    "g": "a"
+  }
+]
