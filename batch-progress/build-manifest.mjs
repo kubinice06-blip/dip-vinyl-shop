@@ -166,7 +166,12 @@ for (const a of cand) {
   // 自我同名卡：驗證器要求 selfTitledVerified=true 且固定試聽必須 ready
   // （同名碟最容易配到錯的版本，試聽是唯一能當場驗版本的證據）。
   if (cur.selfTitled === true || String(a.artist).trim() === String(a.album).trim()) {
-    if (pv.status !== 'ready') { held.push({ artist: a.artist, album: a.album, lack: ['自我同名卡缺 ready 試聽'] }); continue; }
+    // 2026-09-04 店主裁定：身分證據不限試聽。rgMbid 或 §1 人工身分舉證同樣算數，
+    // 只有三種都沒有才留置（驗證器同步放寬）。
+    if (pv.status !== 'ready' && !String(a.rgMbid || '').trim() && !manual) {
+      held.push({ artist: a.artist, album: a.album, lack: ['自我同名卡無身分證據（試聽／rgMbid／§1 皆缺）'] });
+      continue;
+    }
     identity.selfTitledVerified = true;
   }
   if (manual) {
@@ -181,6 +186,12 @@ for (const a of cand) {
   }
   if (cur.exceptionReason) identity.exceptionReason = cur.exceptionReason;
   if (cur.exceptionEvidenceUrls) identity.exceptionEvidenceUrls = cur.exceptionEvidenceUrls;
+  // §5.5 的曲風 release-type 例外：驗證器認的是 genreException 這個欄位，
+  // 策展層卻常只把白名單名字寫進 exceptionReason 的開頭（c-70 的 Non Band 就是）。
+  // 兩邊都收，缺欄時才從理由字串取白名單名，避免整批因為欄位名不同而卡住。
+  const gx = cur.genreException || a.genreException
+    || (String(cur.exceptionReason || '').match(/\b(electronic|asia-mini-album)\b/) || [])[1];
+  if (gx) identity.genreException = gx;
 
   albums.push({
     // year 與 genres 一定要帶出來。publish-manifest 讀 research.suggestedYear 寫卡池第 7 欄、
