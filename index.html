@@ -4606,12 +4606,12 @@ ${seenList}
       let e = stat.get(c.artist);
       if (!e) { e = { n: 0, g: 0, cls: 0, obs: 0 }; stat.set(c.artist, e); }
       e.n++;
-      if (c.genres.includes(genre)) { e.g++; e.cls += c.classic || 3; e.obs += c.obscurity || 3; }
+      if (c.genres[0] === genre) { e.g++; e.cls += c.classic || 3; e.obs += c.obscurity || 3; }
     }
     // 類型佔比守門：至少過半的卡帶這個標籤、或這類就有 3 張以上，才算這個類型的代表——
     // 不然 My Chemical Romance 會因一張卡標了 classical 混進古典主流半
     const rows = [...stat.entries()]
-      .filter(([a, e]) => e.g > 0 && (e.g / e.n >= 0.5 || e.g >= 3))
+      .filter(([a, e]) => e.g > 0 && (e.g / e.n >= 0.5 || (e.g >= 4 && e.g / e.n >= 0.34)))
       .map(([a, e]) => ({ a, fame: e.cls / e.g - e.obs / e.g, deep: e.obs / e.g, n: e.g }));
     if (rows.length < 12) return GENRE_DATA[genre].artists; // 池太小不足三輪就別換
     const half = Math.min(Math.floor(GP_LIST_CAP / 2), Math.ceil(rows.length / 2));
@@ -4673,7 +4673,10 @@ ${seenList}
     if (gpIsRandom || !gpArtists.length) return null;
     const matched = [], anchorCards = [], tagVotes = {}, anchorAxes = [];
     for (const name of gpArtists) {
-      const cards = gpFindArtistCards(pool, name);
+      // 只取錨點在「本次類型內」的卡：選 rock 時 The Beatles 的 classical 卡不該投票，
+      // 否則 tagVotes 被藝人的跨類作品汙染，抽出來的卡就會離選定類型越來越遠
+      const all = gpFindArtistCards(pool, name);
+      const cards = gpIsRandom ? all : all.filter(c => c.genres.includes(gpGenre));
       if (!cards.length) continue;
       matched.push(name); anchorCards.push(...cards);
       let s = [0, 0, 0];
@@ -4737,6 +4740,18 @@ ${seenList}
   function pickSeedCard(pool, { popular = false } = {}) {
     gpMatchInfo = null;
     let base = gpIsRandom ? pool.cards : pool.cards.filter(c => c.genres.includes(gpGenre));
+    // 店主 2026-09-04：「兩種類型重疊的卡要以主類型為主，任何音樂都有一個主要類型」。
+    // seed_cards 的 genres 陣列**首欄就是主類型**（已驗證：每組雙標的兩種順序都存在且分布
+    // 不對稱，rock>pop 740 張 vs pop>rock 228 張；抽樣語意也對——Rolling Stones《Some Girls》
+    // 是 ["rock","blues"]、Dylan《Nashville Skyline》是 ["folk","rock"]）。
+    // 因此改用 genres[0] 判定：選搖滾抽得到 blues rock 與 psych folk rock，但抽不到
+    // 主類型是民謠的 Dylan——正是店主要的分法。涵蓋率遠優於「只收單標卡」
+    // （rock 3,632 vs 1,593、jazz 2,224 vs 1,285）。不足 60 張才退回含標籤池。
+    let basePrimary = false;
+    if (!gpIsRandom) {
+      const primary = base.filter(c => c.genres[0] === gpGenre);
+      if (primary.length >= 60) { base = primary; basePrimary = true; }
+    }
     if (popular) {
       // 流行模式：高經典、低硬蕊、低冷門＝大眾耳熟能詳的好入耳盤
       const pop = base.filter(c => c.classic >= 4 && c.accessibility <= 2 && c.obscurity <= 2);
@@ -4752,7 +4767,8 @@ ${seenList}
 
     // 兩成機率直接抽「你點名的藝人」自己的另一張（在池內、同類型、沒抽過才成立）
     if (prof && Math.random() < 0.2) {
-      const own = prof.anchorCards.filter(c => c.genres.includes(gpGenre) && isFresh(c));
+      const own = prof.anchorCards.filter(c => isFresh(c)
+        && (basePrimary ? c.genres[0] === gpGenre : c.genres.includes(gpGenre)));
       if (own.length) {
         const c = own[Math.floor(Math.random() * own.length)];
         const anchor = prof.matched.find(n => gpFindArtistCards(pool, n).includes(c)) || prof.matched[0];
@@ -4773,9 +4789,21 @@ ${seenList}
         //（實測古典組 target 冷門度 1.6 卻抽出 2.73）。exp(-d) 誤差降到約三分之一，
         // 且有效卡數最少仍有 364 張（單次遊玩最多抽 6 張），不會有重複感。
         w = Math.exp(-d);
-        let votes = 0;
-        for (const g of c.genres) if (g !== gpGenre) votes = Math.max(votes, prof.tagVotes[g] || 0);
-        w *= 1 + votes * 0.6;  // 副曲風與錨點重疊（最多 3 票 → ×2.8）
+        // ⚠ 2026-08-16 修正抽卡嚴重偏離：原本只有「副曲風與錨點重疊」的獎勵（×1+votes*0.6），
+        // 純類型卡 votes=0 只拿 ×1，多標卡最高拿 ×2.8，於是選搖滾抽出的純搖滾比例
+        // 只有 17–21%，反而低於卡池基準 33%（rock 卡池 4,828 張裡僅 33% 只標 rock），
+        // 店主實測「選搖滾出來都是民謠或爵士」。改為主類型純度優先：
+        // 純類型卡 ×1.8；副曲風獎勵縮到 0.2（三票才 ×1.6），仍讓 folk-rock 這類跨界有機會。
+        if (!basePrimary) {
+          // 只有在退回「含標籤池」時才需要這組修正（主類型池裡人人同主類型，加權無意義）
+          if (!gpIsRandom && c.genres.length === 1) {
+            w *= 1.8;
+          } else {
+            let votes = 0;
+            for (const g of c.genres) if (g !== gpGenre) votes = Math.max(votes, prof.tagVotes[g] || 0);
+            w *= 1 + votes * 0.2;
+          }
+        }
       } else {
         w = 1 / (1 + Math.abs((c.obscurity || 3) - center));
       }
