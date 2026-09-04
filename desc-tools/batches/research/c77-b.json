@@ -384,5 +384,130 @@
    "note": "1981 維持卡單原值，三份來源一致：MusicBrainz release-group 的 first-release-date 記 1981、Discogs 原盤條目的 released 欄記 **1981-11-13**、Nocturnal Emissions 官方檔案館的黑膠頁也記 1981。**行文可以寫 1981 年**；1981-11-13 這個確切日期只有 Discogs 一份來源，**要寫必須寫明是 Discogs 原盤條目登錄的日期**，不要寫成通行的定論。**Apple 那筆的 2025 年是 Klanggalerie 豪華版的上架日（裁定第 77 條），絕對不得寫成本張碟的年份。**"
   },
   "notes": "**推翻探測層一處（要指名記住）**：`previews.json` 把本卡標為 `expandedReissue` 並填 `originalTrackCount: 18`，**18 是錯的**。Discogs 原盤 release 6518192 與 Nocturnal Emissions 官方檔案館的黑膠頁，兩份的曲目表都是 Phase I 六軌加 Phase II 七軌、**原盤共 13 軌**；Apple 命中的 collectionId 1891812677 是 2025 年 Klanggalerie 的雙 CD 豪華版（26 軌 ＝ 第一片 9 軌併軌版＋第二片 17 軌），第二片裡還包含 1981 年 Sterile 的另一捲卡帶與兩張合輯卡帶的內容。**行文一律以 13 軌為準，且不得把豪華版多出來的任何一軌當成原盤曲目（第 124／129 條）。本機上架前要看一眼版本**——這一筆是否該依第 129 條當成套裝處理，留給本機判。**另注意封面**：本卡的 CAA release-group front 實測 404，封面若改走 Apple，那張圖是 2025 年豪華版的，**行文不得描述封面長什麼樣子**；可以寫的是 Ayers 對原盤封面的自述（電表與 Euston 那棟樓），並寫明那是他在檔案館訪談裡說的。 **收緊策展層兩處。** (1) 卡單的 `curatorWhy` 寫「Sterile Records 出的第二張 LP」——**這個序數說不乾淨**：檔案館的黑膠頁把 M.B.《Symphony For A Genocide》(SR 2) 稱作「並列第二的黑膠發行」，並明寫「從來沒有過 SR1」。**禁用任何序數說法（第 125 條）**，本卡不得寫「第二張」「第幾號」。(2) 策展層寫這家廠牌「出過 Lustmørd 1981 年的第一捲卡帶」——**兩份來源打架**：Discogs 把 Lustmørd 的同名 LP 記成 SR3、1981，檔案館的黑膠頁卻記成 SR 4、1983。**Lustmørd 這條線一律不寫**（第 92 條的形狀：來源衝突就避開）。 **互斥條款（第 58／109／130／138 條），本卡分到的與被禁的**：本卡**獨占三條**——(1)「Sterile Records 廠牌史」（1979–86、Ayers 創辦、Caroline K 共同經營、卡帶／唱片／錄影帶三種載體、SE5 那棟房子、1996 年燒毀）；(2)「**mail art 網絡**」這個說法（檔案館引言明寫廠牌從 mail art 網絡裡長出來）——同組 Attrition《Death House》分到的是「同好之間互相交換與雙編號」，兩者**彼此不得越界**，本卡不得寫郵購或同人誌，Attrition 不得寫 mail art；(3)「盤名出自牆上長出來的真菌」。**本卡禁用**：(a)「無政府龐克／占屋場景」這個場景敘事（a 組判給 Androids of Mu）——**SE5 那棟被占住的房子可以當廠牌所在地的事實寫，但不得把它展開成占屋場景的敘事**；(b)「自建掛名錄音室」（a 組判給 Metabolist）——Emission Control Studio 只能當錄音地點的事實寫，**不得以「自己蓋一間掛自己名字的錄音室」當切角**；(c)「多年後被考古廠牌挖出來重發」（a 組判給 The Passage）——Klanggalerie 兩次**只能當授權狀態的證據**；(d)「樂團自己開廠牌」（a 組判給 The Door and the Window）；(e)「臥室錄音」「這是他們唯一一張」「團員後來去了更紅的團」「John Peel 播過」一律禁用。 **禁令**：(1) **第 109 條全批禁用壓量與稀有度**——檔案館頁面上有多處壓片數量（例如另外兩張碟的限量數字），**facts 刻意不提供**，行文不得寫壓了幾張、賣光了、限量、稀有。(2) **不得寫曲長**：原盤條目一軌都沒有登錄長度，豪華版的長度是併軌後的另一個版本（第 135 條：不得由那份數字歸納本張碟的任何長度）。(3) **第 136 條**：facts 說的是「Discogs 原盤條目沒有登錄任何一軌的長度」，**不得寫成「唱片上沒有印曲長」**。(4) Ayers 的每一句引文都要寫明**那是 1998 年檔案館訪談裡他自己的說法**（第 128 條），特別是 MI5 那棟樓與偷電電表——**不得寫成客觀事實**，也不得由它延伸任何政治斷言（第 21 條）。(5) **掛名有定冠詞分裂**：原盤與 MB 的 artist-credit 都是「The Nocturnal Emissions」，卡片掛名依裁定第 11 條採通行名「Nocturnal Emissions」。**行文不必處理這件事，但不得寫成「當年他們叫 The⋯⋯後來改名」**——沒有來源說過那是改名。(6) 〈Smear Campaign 7\"〉標題裡的 7\" 是曲名的一部分（原盤條目就這樣印），**不得把它寫成「這首歌曾經出過七吋單曲」**。 **備用切角**：兩面各自有一個 Phase 的段落標題；三軌現場錄音各自帶著日期與地點（Archway Studios、Cryptic One Club、Corsham 的 the Cave）；手寫刻紋 ION 2A1／ION 2B1。"
+ },
+ {
+  "key": "desc2:Clock DVA|White Souls in Black Suits",
+  "artist": "Clock DVA",
+  "album": "White Souls in Black Suits",
+  "facts": [
+   {
+    "f": "Discogs 的原捲條目（Industrial Records，目錄號 IRC 31，1980 年英國，released 欄記 1980-10）記：格式是一捲 C60 卡帶，公司欄的 Recorded At 是 DVAtion Studio；credit 只有三行——工程 Jon Mills，混音 Richard H. Kirk 與 Stephen Mallinder。曲目八軌：A1〈Consent〉、A2〈Discontentment〉、A3〈Still / Silent〉、A4〈Non〉；B1〈Relentless〉、B2〈Contradict〉、B3〈(Film Soundtrack Keyboards Assemble Themselves At Dawn)〉、B4〈Anti-Chance〉。",
+    "src": "https://www.discogs.com/release/188704-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "同一份原捲條目的說明欄逐字：「這捲卡帶的郵購版附一本四頁／八面的小冊子，裡面有歌詞與圖像。」「上面列的 A3 與 A4 順序是錯的。這個順序是照卡帶封面抄的。正確的順序印在隨郵購版附的那本小冊子裡——也就是說，A3 其實是〈Non〉，A4 其實是〈Still/Silent〉。」「本作由大約十五個小時的即興錄音整理而成。」",
+    "src": "https://www.discogs.com/release/188704-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "Discogs 的 Industrial Records 廠牌條目記：這家廠牌 1976 年由 Throbbing Gristle 成立，1977 年 9 月正式立案、標語是「Industrial Music For Industrial People」，1977 年 1 月 6 日登記、1979 年 6 月 11 日取得公司設立證書（編號 1396998）；**1982 年 1 月，Throbbing Gristle 解散後公司關閉**；1980 年代有許多卡帶發行的翻製版本，包括 Flowmotion 做的一些，以及大量品質差的盜版。",
+    "src": "https://www.discogs.com/label/9095-Industrial-Records"
+   },
+   {
+    "f": "同一份廠牌目錄顯示 IRC 這個卡帶編號系列的內容：IRC 2 至 IRC 26 之間**幾乎全部是 Throbbing Gristle 自己的現場錄音卡帶**（At The ICA London、At The Rat Club、At Goldsmiths College、At The Crypt、At The Ajanta Cinema Derby⋯⋯），外部作者只有零星幾號——IRC 28 Monte Cazazza、**IRC 31 Clock DVA**、IRC 32 Chris Carter《The Space Between》(1980, C90)、IRC 35 Cabaret Voltaire《1974 - 1976》。",
+    "src": "https://www.discogs.com/label/9095-Industrial-Records"
+   },
+   {
+    "f": "授權再發（最新一次）：2025 年 11 月 7 日英國與歐洲的 Mute／The Grey Area 版本，CD 為 DVA1CD、黑膠為 DVA1LP、數位為 iDVA1（Discogs 版本欄皆標 Album／Reissue／Remastered）；公司欄記 Licensed To: Mute Artists Ltd.、Remastered At: Alchemy Mastering、Recorded At: DVAtion Studio，出版掛 Mute Song 與 Rough Trade Publishing。",
+    "src": "https://www.discogs.com/release/35663155-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "同一份 2025 年 Mute 版的說明欄逐字：「錄在一台 EGA 行動錄音車上。這張專輯由十五個小時的即興整理而成。沒有疊錄。」「特別感謝 Cabaret Voltaire 的 Richard H Kirk、Stephen Mallinder 與 Christopher Watson 在〈Anti-Chance〉上的混音與合作。也要感謝 Throbbing Gristle 給了我們時間。」「第 1 至 9 軌原本發行為 1980 年英國 Industrial Records IRC31 的一捲 C60 卡帶。第 10 至 13 軌是另外錄的追加曲目。」",
+    "src": "https://www.discogs.com/release/35663155-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "同一份 2025 年版的 credit 把這張碟的班底列全（**這是再發版登錄的 credit，不是 1980 年原捲條目上的**）：Adi Newton 掛人聲、EMS 合成器、單簧管、拉弓的電吉他、處理過的 Jajouka 錄音帶，另外掛封套重新設計與**「以 Tristan Tzara 文本做剪貼排列」的內頁文字**；Charlie Collins 掛倍高音／高音／中音／上低音薩克斯風、長笛、打擊與「冰與 go go」鈴；Roger Quail 掛打擊；Steven James Turner 掛貝斯處理；David James Hammond 掛吉他處理；詞掛 Adi Newton，曲掛 Clock DVA。",
+    "src": "https://www.discogs.com/release/35663155-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "同一份 2025 年版的曲目表十三軌：1〈Consent〉5:04、2〈Discontentment〉6:03、3〈Discontentment 2〉4:45、4〈Still / Silent〉6:50、5〈Non〉3:57、6〈Relentless〉5:28、7〈Contradict〉5:19、8〈Film Soundtrack (Keyboards Assemble Themselves At Dawn)〉8:15、9〈Anti-Chance〉5:49，第 9 軌的 Mixed By／Performer [Collaboration] 掛 Cabaret Voltaire、Chris Watson、Richard H. Kirk 與 Stephen Mallinder；第 10 至 13 軌是追加曲目，其中的合成器掛 Simon Mark Elliot-Kemp。",
+    "src": "https://www.discogs.com/release/35663155-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "授權狀態逐筆實查：Discogs master 5365 的十二個版本裡，1980 年英國原捲、1982 年義大利 Italian Records 的黑膠 EX 24（標 LP／Album／Reissue／Stereo）、1990 年 Contempo Records 的一整批（黑膠 Conte 157、卡帶 Contape 157、CD CONTE 157CD 與 CONTEDISC 157）、2025 與 2026 年的 Mute 版本皆未標 Unofficial；**只有一筆 1980 年德國「Not On Label」、沿用同一個目錄號 IRC 31 的卡帶明確標 Unofficial Release**，依裁定第 43 條那一筆不算背書。",
+    "src": "https://www.discogs.com/master/5365-Clock-DVA-White-Souls-In-Black-Suits"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 74009735-211d-32c4-8aa8-205ea775769f：標題《White Souls in Black Suits》、artist-credit「Clock DVA」、first-release-date 1980-12、primary-type Album、secondary-types 空，轄下四筆 release——1980-12 GB（status 空，標題印成 White Souls In Black Suits）、1980 GB Official、1990 IT Official、2025-11-07 XE Official。",
+    "src": "https://musicbrainz.org/release-group/74009735-211d-32c4-8aa8-205ea775769f"
+   }
+  ],
+  "hookCandidates": [
+   "卡帶封面上的曲序是錯的，正確的那份印在郵購版附的小冊子裡",
+   "十五個小時的即興，剪成一捲 C60"
+  ],
+  "sound": "一捲 C60，八軌，A 面四首、B 面四首。原捲條目上的 credit 只有三行：工程 Jon Mills，混音 Richard H. Kirk 與 Stephen Mallinder。說明欄寫這捲是從大約十五小時的即興錄音裡整理出來的；2025 年再發版的說明欄再補一句「沒有疊錄」，並說錄音是在一台行動錄音車上做的。錄音地點欄兩版一致，都是 DVAtion Studio。（本欄由 Discogs 原捲條目與 2025 年 Mute 版的說明欄歸納，未引用任何未查證的音色描述；曲長不可用，見 notes。）",
+  "keyTracks": [
+   "Consent",
+   "Non",
+   "Anti-Chance"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1980,
+   "note": "1980 維持卡單原值。Discogs 原捲條目的 released 欄記 **1980-10**，MusicBrainz 的 first-release-date 記 **1980-12**——**月份兩說，行文一律不得寫月份**，只寫 1980 年（裁定第 18／46 條）。年份本身三方一致（Discogs 原捲、MB、2025 年 Mute 說明欄的「1980」）。原盤即為卡帶，依裁定第 1 條卡帶原盤即算原盤。**Apple 那筆的 2025-12-05／2025 是 Mute 再發的上架日（裁定第 77 條），絕對不得寫成本張碟的年份。**"
+  },
+  "notes": "**推翻策展層兩處，兩處都要指名禁用。** (1) 卡單的 `curatorWhy` 寫本張是「Throbbing Gristle 的 Industrial Records **少數幾捲卡帶**發行之一」——**不成立**。Discogs 的 Industrial Records 目錄顯示 IRC 是一整個卡帶編號系列，光是 IRC 2 到 IRC 26 就有二十幾捲。**禁用「少數幾捲卡帶」。** (2) 策展層寫「IRC 系列是⋯⋯**黑膠給自家團，卡帶給外圍**」——**正好相反**：IRC 卡帶系列裡絕大多數是 Throbbing Gristle 自己的現場錄音，外部作者只有 IRC 28（Monte Cazazza）、IRC 31（本卡）、IRC 32（Chris Carter）、IRC 35（Cabaret Voltaire）等零星幾號。**禁用「卡帶給外圍」這個描述。** **另補一件探測層沒標的**：`previews.json` 給本卡的 Apple 命中是 collectionId 1827489310、**trackCount 13**，那是 2025 年 Mute 版（第 10–13 軌是另外錄的追加曲目），**但這一筆沒有被標 `expandedReissue`**。**行文不得把第 10–13 軌當成原盤曲目（第 124／129 條），本機上架前要核版本。** **原盤軌數兩說，不得斷言**：Discogs 原捲條目列**八軌**，2025 年 Mute 版的說明欄卻寫「第 1 至 9 軌原本發行為 1980 年的那捲 C60」（多出一首〈Discontentment 2〉）。**行文不得寫出原捲的軌數**（第 92 條的形狀：來源打架就避開）。 **互斥條款（第 58／109／130／138 條），本卡分到的與被禁的**：本卡**獨占三條**——(1)「Industrial Records 與 IRC 卡帶編號系列」（1976 年由 Throbbing Gristle 成立、1982 年 1 月隨 TG 解散而關閉、IRC 系列的內容分佈）；(2)「**十五小時即興剪成一捲**」；(3)「**封面曲序印錯、正確的那份在郵購版的小冊子裡**」。**本卡禁用**：(a)「自建掛名錄音室」（a 組判給 Metabolist）——DVAtion Studio 只能當錄音地點的事實寫，**不得以「自己蓋一間掛自己名字的錄音室」當切角**；(b)「mail art 網絡」判給同組 Nocturnal Emissions《Fruiting Body》、「同好交換與雙編號」判給同組 Attrition《Death House》、「卡帶這個載體」判給 Paul Nagle——**本卡只能寫「郵購版附一本小冊子」這個具體的實物事實，不得展開任何關於郵購網絡的論述**；(c)「多年後被考古廠牌挖出來重發」（a 組判給 The Passage）——1982 義大利盤、1990 Contempo、2025 Mute **只能當授權狀態的證據**；(d)「樂團自己開廠牌」「臥室錄音」「這是他們唯一一張」「團員後來去了更紅的團」「John Peel 播過」一律禁用。 **禁令**：(1) **第 109 條全批禁用壓量與稀有度**——不得寫壓了幾捲、賣了幾捲、稀有、限量。(2) **曲長一律不得寫**：原捲條目登錄的長度與 2025 年版登錄的長度**對不上**（同一首〈Non〉一邊 10:36、一邊 3:57；〈Still / Silent〉一邊 7:14、一邊 6:50），而且原捲條目自己聲明封面曲序是錯的。第 135 條的區間歸納也一律禁止。(3) **2025 年版的樂器 credit 只能寫成「2025 年再發版登錄的 credit」**，**不得寫成「1980 年那捲卡帶上印的」**——原捲條目上只有工程與混音三個名字（第 136 條與第 128 條同時管這一條）。(4) Cabaret Voltaire 的 Richard H. Kirk 與 Stephen Mallinder 掛原捲混音是 Discogs 原捲條目就有的，可以寫；**但 Chris Watson 與〈Anti-Chance〉的合作只出現在 2025 年版的說明欄與 credit，要寫必須寫明出處**。(5) 「感謝 Throbbing Gristle 給了我們時間」是 2025 年版說明欄上的一句話，**要寫必須寫明是那一版的說明欄**（第 128 條），**不得由它推論任何關於 TG 與本團關係的敘述**。(6) **不得把目錄號 IRC 31 寫成序數（第 125 條）**。(7) 池中已有同藝人的《Thirst》(1981)，**本卡不得寫成「他們的第一張」以外任何跨碟比較**，也不得提《Thirst》。 **備用切角**：Adi Newton 的內頁文字是「Tristan Tzara 文本的剪貼排列」（2025 年版 credit）；曲名幾乎全是單字的抽象名詞（Consent、Discontentment、Relentless、Contradict、Anti-Chance）。"
+ },
+ {
+  "key": "desc2:Bladder Flask|One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling",
+  "artist": "Bladder Flask",
+  "album": "One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling",
+  "facts": [
+   {
+    "f": "Discogs 的原盤條目（Orgel Fesper Music，目錄號 AP162，1981 年英國）記：格式是一張黑膠、format 描述欄標 Limited Edition，風格欄標 Abstract、Experimental、Sound Collage；曲目表只有兩軌，A 面〈It Takes A Bliss〉24:47、B 面〈Musical Behind Head〉24:42——**一面一首，各佔滿整面**。",
+    "src": "https://www.discogs.com/release/257914-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "同一份原盤條目的說明欄只有一句關於製作的話：「Recorded - August 1980 - January 1981.」（錄音期間 1980 年 8 月至 1981 年 1 月）。兩面刻紋是 AP 162A EG 與 AP 162B EG，電鍍（Plated By）掛 Eddy Gorecki——刻紋末兩碼的 EG 與電鍍者的姓名縮寫相同。",
+    "src": "https://www.discogs.com/release/257914-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "同一份原盤條目的演出者五人**全部登錄為 uncredited（唱片上未掛名）**：John Mylotte、Nigel Jacklin、Philip Rupenus、Richard Rupenus、Sean Breadin。",
+    "src": "https://www.discogs.com/release/257914-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "Discogs 的 Bladder Flask 藝人條目寫：「英格蘭 1980 年代的工業／實驗團體，來自 Northumberland。」成員欄只登錄兩個人：Philip Rupenus 與 Richard Rupenus。",
+    "src": "https://www.discogs.com/artist/188616-Bladder-Flask"
+   },
+   {
+    "f": "Discogs 的 Orgel Fesper Music 廠牌條目**整份目錄只有兩筆**：1981 年這張 LP，以及 2018 年 Le Scrambled Debutante 與 The Broken Penis Orchestra 的致敬 CDr《Play Bladder Flask》。廠牌條目本身沒有任何簡介文字。",
+    "src": "https://www.discogs.com/label/23217-Orgel-Fesper-Music"
+   },
+   {
+    "f": "授權再發（最完整的一次）：法國 Sonoris 2022 年的 CD SNS-21CD（Discogs 版本欄標 Album／Reissue／Remastered，Digipak）。它的公司欄把錄音地點補齊為 **Wrongrong Studio（英國 Brighton）與 Spectro Arts Workshop 兩處**；音訊修復與母帶處理掛 Colin Potter，美術掛 Richard Rupenus，演出人員欄列 Philip Rupenus、Richard Rupenus、John Mylotte、Nigel Jacklin、Sean Breadin。",
+    "src": "https://www.discogs.com/release/25761856-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "同一份 2022 年 CD 的說明欄逐字：「第 1、2 軌錄於 Wrongrong Studio 與 Spectro Arts Workshop，1980–1981，版權 © Bladder Flask，**但〈Matrosen Tango〉的版權屬 Brecht／Weill 除外**。」——也就是說原盤那兩段長曲裡引用了布萊希特與魏爾的〈水手探戈〉。第 3 至 5 軌是追加曲目，分別錄於 1981、1982 與 1986 年的 Wrongrong Studio，此前發行在別的載體上。",
+    "src": "https://www.discogs.com/release/25761856-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "同一份 2022 年 CD 的曲目表顯示原盤那兩段在再發版上的長度略有不同：第 1 軌〈It Takes A Bliss〉24:26、第 2 軌〈Musical Behind Head〉25:02；追加的三軌是〈The Groping Fingers Of This Vulgar Intruder Have Strummed The Toppling Byzantine Organ Of His Mind〉20:02、〈I Am As I Have Spoken〉5:46、〈Zzzeut-Zzt-Zzt-Zzt (Pour Chapeaux, Manteaux Et Parapluies)〉3:48。",
+    "src": "https://www.discogs.com/release/25761856-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "授權狀態逐筆實查：Discogs master 120608 的四個版本（1981 英國原盤、2001 波蘭 Sonaria 的 CD SON 5.01、2022 法國 Sonoris 的 CD、2023 法國 Sonoris 的黑膠 SNS-21LP）**零筆標 Unofficial Release**。",
+    "src": "https://www.discogs.com/master/120608-Bladder-Flask-One-Day-I-Was-So-Sad-That-The-Corners-Of-My-Mouth-Met-Everybody-Thought-I-Was-Whistlin"
+   },
+   {
+    "f": "MusicBrainz 的 release-group 615a2058-eb79-4376-b0b3-2527b69ba412：標題就是那一整串《One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling》、artist-credit「Bladder Flask」、first-release-date 1981、primary-type Album、secondary-types 空，轄下三筆 release（1981 GB Official、2001 PL Official、2022 FR Official）。",
+    "src": "https://musicbrainz.org/release-group/615a2058-eb79-4376-b0b3-2527b69ba412"
+   }
+  ],
+  "hookCandidates": [
+   "唱片上一個演出者的名字都沒有印",
+   "一面一首，兩首都是二十四分多"
+  ],
+  "sound": "一張黑膠，兩軌，A 面〈It Takes A Bliss〉24:47、B 面〈Musical Behind Head〉24:42，一面一首、各佔滿整面。原盤條目的五位演出者全部登錄為 uncredited——唱片上沒有掛他們的名字。錄音期間寫在說明欄裡：1980 年 8 月到 1981 年 1 月。四十年後的再發版把錄音地點補成 Wrongrong Studio 與 Spectro Arts Workshop 兩處，並在版權註記裡露出這兩段長曲引用了布萊希特與魏爾的〈Matrosen Tango〉。（本欄由 Discogs 原盤條目與 2022 年 Sonoris 版的說明欄歸納，未引用任何未查證的音色描述。）",
+  "keyTracks": [
+   "It Takes A Bliss",
+   "Musical Behind Head"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1981,
+   "note": "1981 維持卡單原值，兩份來源一致：MusicBrainz release-group 的 first-release-date 記 1981、Discogs 原盤條目記 1981。**沒有年份分歧，行文可以寫 1981 年**；但不得寫月份——說明欄上的「1980 年 8 月至 1981 年 1 月」是**錄音期間**，不是發行日，**行文要用它必須寫明那是錄音期間**（裁定第 86 條：錄音年與發行年是兩件事）。"
+  },
+  "notes": "**推翻策展層兩處，兩處都要指名禁用。** (1) 卡單的 `curatorWhy` 寫「盤名本身有 **78 個字元**」——**這個數字不對**（實際更長），而且**第 64 條禁止行文自行算出任何數字**。**盤名的長度一律不得寫成數字**（幾個字元、幾個單字、幾個字都不行）；要談長度只能用不帶數字的說法。(2) 策展層寫「錄音成員與 **Nurse With Wound 那一圈**重疊」——**查無來源**：Discogs 原盤條目與藝人條目都沒有這條連結，2022 年再發版上 Colin Potter 掛的是**音訊修復與母帶處理**（那是 2022 年做的事，不是 1981 年的錄音班底）。**禁用「與 Nurse With Wound 那一圈重疊」的說法**；也**不得寫 Colin Potter 參與過原盤**。**另**：策展層寫樂團是「英國 DIY 拼貼線」——Discogs 藝人條目給的產地是 **Northumberland**，要寫產地就寫這個，**不得自行補上任何城市名**。 **互斥條款（第 58／109／130／138 條），本卡分到的與被禁的**：本卡**獨占四條**——(1)「**演出者在唱片上全部未掛名**」（原盤條目五人全標 uncredited）；(2)「**一面一首、各二十四分多**」這個唱片形制；(3)「客壓流水號與刻紋」（AP162、刻紋 AP 162A EG／AP 162B EG、電鍍者 Eddy Gorecki 的姓名縮寫）；(4)「**引用布萊希特與魏爾的〈Matrosen Tango〉**」。**本卡禁用**：(a)「多年後被考古廠牌挖出來重發」（a 組判給 The Passage）——Sonaria 與 Sonoris 三筆**只能當授權狀態的證據，不得當敘事切角**；(b)「樂團自己開廠牌」「臥室錄音」「自建掛名錄音室」「這是他們唯一一張」「團員後來去了更紅的團」「John Peel 播過」「卡帶這個載體」「mail art 網絡」「同好交換」——一律禁用。**Rupenus 兄弟與其他計畫的關係 facts 刻意不提供**（那正是「團員後來去了更紅的團」的形狀），**一律不得寫**。 **禁令**：(1) **第 109 條全批禁用壓量與稀有度**——原盤說明欄上的限量與編號數字 **facts 刻意不提供**，行文**不得寫壓了幾張、不得寫「限量」「編號」「極稀有」**，即使 format 欄標了 Limited Edition 也不得往稀有度寫。(2) **第 136 條**：facts 說的是「Discogs 原盤條目把五位演出者登錄為 uncredited」——這一條可以寫成「唱片上沒有掛演出者的名字」（uncredited 本來就是對實物的描述），**但不得再往前推**成「沒有人知道是誰演奏的」「他們刻意匿名」之類，也不得寫成「封套上什麼都沒印」。(3) **曲長要用原盤那一組（24:47／24:42），不得與 2022 年再發版那一組（24:26／25:02）混用**，也不得寫「兩首一樣長」「兩面各二十五分鐘」這類歸納（第 135 條）；不得把兩軌加總算出全碟長度（第 64 條）。(4) 2022 年再發版補出來的錄音地點（Wrongrong Studio、Spectro Arts Workshop）與布萊希特／魏爾的版權註記，**要寫必須寫明是那一版的條目補上的**（第 128 條），**不得寫成 1981 年原盤封套上印的**。(5) **不得把目錄號 AP162 寫成序數（第 125 條）**。(6) 廠牌目錄只有兩筆這件事，**只能寫成「Discogs 的 Orgel Fesper Music 條目底下只有兩筆」**（第 136 條：資料庫的「沒有」不等於世界上的沒有）。(7) 盤名一律寫全，**不得縮寫成《One Day I Was So Sad…》寫進卡片的盤名欄**（裁定第 6／50 條）。 **備用切角**：2018 年有另外兩個團出了一張叫《Play Bladder Flask》的致敬碟，而那是這家廠牌條目底下的第二筆、也是最後一筆；追加曲目那個比本體盤名還長的曲題〈The Groping Fingers Of This Vulgar Intruder…〉（**但那是再發版的追加曲、不在原盤上，要寫必須說清楚**）。"
  }
 ]
