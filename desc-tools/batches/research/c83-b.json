@@ -979,5 +979,403 @@
    "note": "1998 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1998、唯一一筆 release 1998 GB、Discogs master year 欄 1998、原盤 released 欄 1998-08-00、註記欄版權年 1998）。**月可以寫「1998 年 8 月」，但要註明那只出現在 Discogs 原盤條目的 released 欄。** Apple 上沒有這張碟。"
   },
   "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**取得**：(1) **Enraptured 廠牌沿革，以及它與 Earworm 的母子關係**（1993 年成立、1996 年其中一位創辦人另開 Earworm、另一位續營 Enraptured、Earworm 列在 Enraptured 的子廠牌欄）。**The Freed Unit《Things Are Looking Up》禁用這條；本組四張 Earworm 卡也一律不得寫母廠。**(2) **Pete Bassman 同時掛名兩張**這條跨張線（本張的演奏／製作欄、〈Pestrepeller〉的 Engineer 欄，Discogs 是同一個藝人實體 423090）。**〈Pestrepeller〉禁用這條。**\n**原盤軌數**：`originalTrackCount` = **8**。MusicBrainz release track-count 8、Discogs 原盤八軌，兩邊逐項同名同序，**無爭議**。\n**禁令**：(1) **★★ 同一張唱片上有兩個 Pete，Discogs 把它們建成兩個不同實體**：credit 欄的「Pete Bassman」是 Discogs 藝人 **423090**，成員欄的「Pete Bain」是 **493991**。**禁止寫成同一個人**（第 110 條）。**同理，Pete Bain 也出現在〈Pestrepeller〉的 Discogs 成員欄，那也不得與本卡的 Pete Bassman 串起來。**行文只能寫成「Discogs 的成員欄與 credit 欄各列了一個 Pete」，或乾脆只用其中一個欄位。(2) **不得寫壓量**（第 109 條）；Discogs 格式欄的 Limited Edition 只能寫成該站的格式欄（第 136 條）。(3) **★ 註記欄那兩句出處要照抄、不得延伸**：「Tracks 1 & 6 from \"The Leafblower\" a film by Dominic DeJoseph.」與「Track 7 lyrics by Dillon, Kessler, McCarthy, The Godz. Music by Alpha Stone.」**可以引用，但不得由此推論這是電影配樂專輯、也不得說第七軌是翻唱**（註記欄只寫了作詞掛名，沒有說那是誰的歌——第 110 條在本卡是硬禁令）。(4) **「Mastered At: Abbey Road Studios」是 Discogs 公司欄的字面**，可以寫，**但不得寫成任何規格或地位的暗示**（那只是一個公司欄的值）。同一條目另有「Glass Mastered At: DOCdata UK」與 credit 欄的「Mastered By: Chris Ludwinski」，**三者是三個不同欄位，不得合併敘述**。(5) **MusicBrainz 藝人實體的 type、country、area 三欄全空**——**不得寫這個掛名是團體還是個人、來自哪裡**。Discogs 成員欄列了四人，只能寫成「Discogs 藝人頁的成員欄列了四個名字」。(6) 掛名兩種寫法（Alpha Stone／Alphastone）在同一張碟上都出現（第五軌曲名裡是 Alphastone），**照抄即可，不得評論**。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Alpha Stone Elasticated Waveband」與「Alpha Stone」在 Apple GB、以及「Elasticated Waveband」在 Apple US 各搜一次——**盤名兩次都回 count 0**；用掛名搜則撈到同掛名的另一張碟（《Stereophonic Pop Art Music》，collectionId 1499769625，℗ 2018 Höga Nord Rekords），**證明這個掛名在 Apple 上存在、只是本張沒上架**。維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:The Freed Unit|Things Are Looking Up",
+  "artist": "The Freed Unit",
+  "album": "Things Are Looking Up",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a09dd0ba 的欄位：title《Things Are Looking Up》、artist-credit「The Freed Unit」、first-release-date 1998、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1998 GB Official。",
+    "src": "https://musicbrainz.org/release-group/a09dd0ba-112d-386f-b19a-f5f560351183"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（4af5ab72）登記廠牌 Enraptured、編號 RAPTCD19、barcode 5024545055627、一片 CD、track-count 10，曲目為 1〈Same Street Different Planet〉6:00、2〈No Sign of the Warble Fly〉2:20、3〈City〉3:29、4〈Entropy Kids Vs St John〉4:10、5〈Latitude Problem〉3:50、6〈Getting Used to Not Fitting In〉3:00、7〈Rewriting History〉4:41、8〈Edge of the World〉0:42、9〈Everything Is Nothing〉12:27、10〈Left Behind...〉4:42。",
+    "src": "https://musicbrainz.org/release/4af5ab72-8402-4db3-aa20-ef8d0310277c"
+   },
+   {
+    "f": "Discogs 原盤條目 2434122 記：Enraptured，編號 RAPTCD19，UK，released 欄 1998，格式 CD／Album；該站把盤名寫成《Things Are Looking Up.....》（帶五個句點），曲目十軌的第 3、4、8 軌都比 MusicBrainz 多一個定冠詞（〈The City〉〈The Entropy Kids Vs St John〉〈The Edge Of The World〉）。",
+    "src": "https://www.discogs.com/release/2434122"
+   },
+   {
+    "f": "同一條目的註記欄寫「Packaging: standard plastic jewel box case, off-black tray, 8 page stapled cover booklet.」與「Total time: 45:31」；credit 欄是空的。",
+    "src": "https://www.discogs.com/release/2434122"
+   },
+   {
+    "f": "同一條目的公司欄記 Distributed By: Cargo Distribution、Made By: PMDC, UK；identifiers 欄記 Barcode「5 024545 055627」、Matrix／Runout「RAPTCD19 01 &」、Mastering SID Code「IFPI L134」、Mould SID Code「IFPI 0430」與「MADE IN THE UK BY PMDC」。",
+    "src": "https://www.discogs.com/release/2434122"
+   },
+   {
+    "f": "Discogs master 281664 的版本清單三筆：1998 UK CD（RAPTCD19）與兩筆 1998 UK 黑膠 LP（RAPTLP19）。",
+    "src": "https://www.discogs.com/master/281664"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1645278329）的 trackCount 欄 10、releaseDate 欄 1998-01-01、copyright 欄「℗ 1998 Sorted」，十軌逐項與 MusicBrainz 那筆同序，曲名採 Discogs 的帶定冠詞寫法、末軌寫成〈Left Behind.....〉。",
+    "src": "https://music.apple.com/gb/album/things-are-looking-up/1645278329"
+   },
+   {
+    "f": "Discogs 藝人頁 66949 的簡介欄寫「Trio from Leicester, England formed in the mid 90s by brothers Jonathan and Matthew Kerry and Gary Gilchrist. Their first release was in August 1996.」；成員欄列 Matt Kerry、Jonathan Kerry、Marshall Cavendish、Gary Gilchrist 四人。",
+    "src": "https://www.discogs.com/artist/66949"
+   },
+   {
+    "f": "MusicBrainz 藝人 9401f2ae 的欄位：name「The Freed Unit」、type Group、country GB、area United Kingdom、life-span begin 1995；名下 5 個 release-group；外部連結含官方網站 freedunit.co.uk、該站的 discography 頁，以及兩條 biography 連結（jobhosle.f2s.com 與 scaruffi.com）。",
+    "src": "https://musicbrainz.org/artist/9401f2ae-b318-4396-b5b1-b949e9dee5d8"
+   },
+   {
+    "f": "Discogs 廠牌頁 8471（Enraptured）的 releases 端點回報 160 筆；本張編號 RAPTCD19 與本組另一張同廠卡的 RAPTCD18 相鄰。",
+    "src": "https://www.discogs.com/label/8471"
+   }
+  ],
+  "hookCandidates": [
+   "十軌，第九軌一首就 12 分 27 秒",
+   "第八軌只有 42 秒"
+  ],
+  "sound": "十軌的長度極不平衡：第九軌〈Everything Is Nothing〉12:27 一首就占掉全碟四分之一以上（Discogs 註記欄記全長 45:31），而第八軌〈Edge of the World〉只有 42 秒；其餘八軌都在 2:20 到 6:00 之間（逐軌數自 MusicBrainz 那筆 release 的曲長表，共十軌）。Discogs 原盤的 credit 欄是空的——該站對這張碟只登了廠牌、編號、包裝、經銷與製造，沒有登錄任何演奏或製作掛名。（本欄由 MusicBrainz 曲長表與 Discogs 的註記欄、欄位狀態歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Everything Is Nothing",
+   "Same Street Different Planet",
+   "Rewriting History"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1998,
+   "note": "1998 維持卡單原值，MusicBrainz、Discogs 與 Apple 的 copyright 欄三方一致（RG first-release-date 1998、唯一一筆 release 1998 GB、Discogs master 與原盤 released 欄 1998、Apple ℗ 1998）。**行文只能寫到年**——MusicBrainz 與 Discogs 都沒有月與日，**Apple 的 releaseDate 1998-01-01 是佔位日期，不得採用**（第 141 條附二第 2 點）。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Enraptured 廠牌沿革與它跟 Earworm 的母子關係歸〈Elasticated Waveband〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 RAPTCD19。**也不得寫「本組另一張同廠卡的編號相鄰」這類跨張比較**（第 145 條）。\n**原盤軌數**：`originalTrackCount` = **10**。MusicBrainz release track-count 10、Discogs 原盤十軌、Apple 十軌，三個來源逐項同序，**無爭議**。\n**禁令**：(1) **★ 盤名兩說**：MusicBrainz 作《Things Are Looking Up》、Discogs 與 Apple 都作《Things Are Looking Up.....》（五個句點）。**卡單採 MusicBrainz 寫法**；行文若要提另一種，須註明是 Discogs／Apple 的欄位（第 6／120 條的形狀）。**下游以字串比對時兩種寫法不會相等。**(2) **★ 曲名兩說**：第 3、4、8 軌在 Discogs 與 Apple 上都多一個定冠詞（〈The City〉〈The Entropy Kids Vs St John〉〈The Edge Of The World〉）。`keyTracks` 與行文採 MusicBrainz 寫法。(3) **成員欄與簡介欄對不上**：Discogs 簡介欄說是「Trio」並點名三人（Jonathan Kerry、Matthew Kerry、Gary Gilchrist），成員欄卻列了四人（多一個 Marshall Cavendish），且把 Matthew 寫成 Matt。**不得擇一寫成「這團有幾個人」**；要寫就寫成「Discogs 藝人頁的簡介欄說是三人組、成員欄卻列了四個名字」（第 136 條）。**「brothers」這個關係只有簡介欄一個來源，寫成「Discogs 藝人頁的簡介欄說」**（第 128 條），**且不得用在任何需要它成立的推論上**（第 146 條的形狀）。(4) **不得引用 MusicBrainz 掛的那兩條 biography 連結的內容**——本次未取回內文，無法核對（第 40 條的精神）。**MusicBrainz 掛了這兩條連結這件事本身可以寫。**(5) Apple 的 copyright 欄寫「℗ 1998 Sorted」，**「Sorted」與唱片上的廠牌 Enraptured 不同名**，**不得把兩者寫成同一個實體、也不得替 Sorted 補任何身分**——那只是 Apple 一個欄位裡的字串。(6) **不得由〈Everything Is Nothing〉〈Edge of the World〉這類曲名推論主題或概念**（第 110 條）。\n**探測層核對**：CAA 有圖。試聽可用（Apple 1645278329），十軌逐項對得上原盤，**這一筆的軌數可以用**。"
+ },
+ {
+  "key": "desc2:Hazard|North",
+  "artist": "Hazard",
+  "album": "North",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0a444e9e 的欄位：title《North》、artist-credit「Hazard」、first-release-date 1998-05、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1998-05 GB Official。",
+    "src": "https://musicbrainz.org/release-group/0a444e9e-5c86-3463-aff5-39fc7c81efca"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（2f6162da）登記廠牌 Ash International、編號 ASH 4.5、barcode 5027803044524、一片 CD、track-count 7，曲目為 1〈Wire Netting〉11:25、2〈Tangled Mass〉5:00、3〈Grey Speed〉1:39、4〈The Vibrating Room〉6:48、5〈Absence or Presence〉9:53、6〈Transport〉6:48、7〈Wound/Impact〉9:51。",
+    "src": "https://musicbrainz.org/release/2f6162da-ce00-4e03-8c0e-12a6c57881de"
+   },
+   {
+    "f": "Discogs 原盤條目 198256 記：Ash International，編號 ASH 4.5，UK，released 欄 1998-05-00，格式 CD／Album；曲目七軌，末軌該站寫〈Wound / Impact〉。",
+    "src": "https://www.discogs.com/release/198256"
+   },
+   {
+    "f": "同一條目的 credit 欄兩條：「Created By [All Tracks By]: BJNilsen」與「Mastered By: Denis Blackham」；公司欄記 **Recorded At: Erskines Metro, Stockholm**、**Mixed At: Erskines Metro, Stockholm**、Mastered At: Country Masters、Made By: PMDC, UK、Published By: Touch Music、Phonographic Copyright (p): Ash International、Copyright (c): Ash International。",
+    "src": "https://www.discogs.com/release/198256"
+   },
+   {
+    "f": "同一條目的公司欄還列了十七個經銷商，涵蓋英國、歐陸、日本、美國與澳紐；註記欄把同一份名單再抄一次，並以「p and c with a circle 1999 Ash International [R.I.P.]」收尾——**註記欄的版權年寫 1999，與 released 欄的 1998 不同**。",
+    "src": "https://www.discogs.com/release/198256"
+   },
+   {
+    "f": "同一條目的 identifiers 欄記 Barcode「5027803044524」、Matrix／Runout「ASH4.5 01 &」與「MADE IN UK BY PMDC」、Mastering SID Code「IFPI L134」、Mould SID Code「IFPI 0449」。",
+    "src": "https://www.discogs.com/release/198256"
+   },
+   {
+    "f": "Discogs master 342011 只有兩筆版本：1998 UK CD（ASH 4.5）與一筆無年份的 AAC 數位版（Ash International，編號欄 none）。",
+    "src": "https://www.discogs.com/master/342011"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 140703812）的 trackCount 欄 7、releaseDate 欄 1998-01-01、copyright 欄「℗ 1998 Ash International」，七軌逐項與 MusicBrainz 那筆同名同序（末軌 Apple 寫〈Wound-Impact〉）。",
+    "src": "https://music.apple.com/gb/album/north/140703812"
+   },
+   {
+    "f": "MusicBrainz 藝人 c7451ebf 的欄位：name「Hazard」、type Person、**country SE、area Sweden**、life-span begin 1975、disambiguation「Benny “BJ” Nilsen: ambient」。",
+    "src": "https://musicbrainz.org/artist/c7451ebf-1cec-4aff-a67e-82370d869d3a"
+   },
+   {
+    "f": "Discogs 藝人頁 40350 的 realname 欄寫 Benny Jonas Nilsen、別名欄列 Morthound、Tape Decay、BJNilsen；簡介欄寫「Creates experimental electronic music from field recordings, environmental and industrial sounds. (…) recordings became laptop computer-based, ambient in composition, and found a home on the seminal experimental label Ash International [R.I.P] before given wider exposure on sibling label Touch. (…) Almost all of his current solo activity is now as BJNilsen.」",
+    "src": "https://www.discogs.com/artist/40350"
+   },
+   {
+    "f": "Discogs 廠牌頁 5368（Ash International）的 releases 端點回報 275 筆；本張編號 ASH 4.5 與本組另兩張同廠卡的 ash 1.7、ASH 1.6 屬不同的編號段。",
+    "src": "https://www.discogs.com/label/5368"
+   }
+  ],
+  "hookCandidates": [
+   "七軌，三軌超過九分鐘",
+   "唱片上的掛名是 Hazard，credit 欄的名字不是"
+  ],
+  "sound": "七軌裡有三軌超過九分鐘（首軌 11:25、第五軌 9:53、末軌 9:51），最短的〈Grey Speed〉只有 1:39（逐軌數自 MusicBrainz 那筆 release 的曲長表，共七軌）。Discogs 原盤的 credit 欄只有兩條：一條「Created By [All Tracks By]」掛在一個名字底下，一條母帶。公司欄把錄音與混音記在同一個地點，母帶另在他處。Discogs master 的風格欄掛 Ambient、Drone、Experimental、Field Recording。（本欄由 MusicBrainz 曲長表與 Discogs 的 credit 欄、公司欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Wire Netting",
+   "Wound/Impact",
+   "Absence or Presence"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1998,
+   "note": "1998 維持卡單原值。MusicBrainz first-release-date **1998-05**、Discogs 原盤 released 欄 **1998-05-00**、Discogs master year 欄 1998、Apple copyright 欄 ℗ 1998——**四處一致，月可以寫「1998 年 5 月」**（兩個獨立來源給同一個月）。**但要留意一個不一致**：Discogs 註記欄抄下的碟上版權字樣寫「(p) and (c) 1999 Ash International」，比發行年晚一年。**行文不得寫 1999，也不得為這個差異提供任何解釋**——facts 只記錄它存在。Apple 的 releaseDate 1998-01-01 是佔位日期，不得採用。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Ash International 廠牌沿革歸〈Mass Observation〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 ASH 4.5、以及公司欄的 Published By: Touch Music。**不得寫「本組另有幾張同廠卡」或編號段的比較**（第 145 條）。\n**原盤軌數**：`originalTrackCount` = **7**。MusicBrainz release track-count 7、Discogs 原盤七軌、Apple 七軌，三個來源逐項同序，**無爭議**。\n**★ 身分：這是一位瑞典音樂人，不是英國人。** MusicBrainz 藝人實體的 country 欄是 **SE**、area 欄 Sweden，Discogs 原盤的公司欄把錄音與混音都記在 **Erskines Metro, Stockholm**。**本批的場景標籤是「英國 1990 年代微廠二線」，那指的是廠牌，不是藝人。****行文絕不可把他寫成英國音樂人**；可以寫的是「一位在斯德哥爾摩錄音的音樂人，碟由一家英國小廠發行」。\n**禁令**：(1) **★ 掛名、credit 欄與本名三層要分清楚**：唱片掛名是 **Hazard**，Discogs credit 欄的 Created By 寫 **BJNilsen**（無空格），Discogs 藝人頁的 realname 欄寫 **Benny Jonas Nilsen**，MusicBrainz 的 disambiguation 欄寫「Benny “BJ” Nilsen」。**四種寫法都要註明是哪個欄位**（第 136 條）；**「BJNilsen 是他現在的主要掛名」這一句只有 Discogs 簡介欄一個來源，寫成「Discogs 藝人頁的簡介欄說」**（第 128 條）。(2) **不得由簡介欄的「field recordings, environmental and industrial sounds」去描述這張碟的聲音**——那段講的是這位音樂人的整體，**不是這張碟**（第 128／136 條）。要寫必須寫成「藝人頁的簡介欄這樣描述他的作法」。(3) **不得引用簡介欄的「seminal」這個評價字**，也不得把「[R.I.P]」寫成廠牌已結束營業的斷言——那是 Discogs 頁面上的標記，**只能寫成「該站在廠牌名後標了 R.I.P.」**。(4) **十七個經銷商的名單不得寫成統計量或版圖敘述**（第 145 條）；要寫只能寫成「Discogs 原盤條目的公司欄列了一長串經銷商，涵蓋歐洲、日本、美國與澳紐」，**不得數出筆數以外的結論**。(5) **不得由〈Wire Netting〉〈Grey Speed〉〈Wound/Impact〉這些曲名推論素材或場景**（第 110 條）。(6) 末軌名稱三說：MusicBrainz〈Wound/Impact〉、Discogs〈Wound / Impact〉、Apple〈Wound-Impact〉。採 MusicBrainz 寫法。(7) 掛名「Hazard」是常見英文字，第 139 條的撈錯人風險存在；**不得引用任何未經本卡 facts 確認的同名資料**。\n**探測層核對**：CAA 有圖。試聽可用（Apple 140703812），七軌逐項對得上原盤，**這一筆的軌數可以用**。"
+ },
+ {
+  "key": "desc2:Avrocar|Cinematography",
+  "artist": "Avrocar",
+  "album": "Cinematography",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d048857d 的欄位：title《Cinematography》、artist-credit「Avrocar」、first-release-date 1999、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1999 GB，**該筆的 status 欄是空的（既非 Official 也非其他值）**。",
+    "src": "https://musicbrainz.org/release-group/d048857d-0b6c-48f7-8b1b-c7821ada7ac1"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（436f0784）登記廠牌 Earworm、編號 WORM48、國別 GB、一片 CD、track-count 9，曲目為 1〈Fega〉6:07、2〈Real Time〉3:29、3〈Dark Eye Collector〉6:02、4〈Ueno〉5:59、5〈Display〉3:27、6〈Recoil〉5:36、7〈Surface〉3:06、8〈Amplify〉7:03、9〈Cathode & Cello'd〉10:11。",
+    "src": "https://musicbrainz.org/release/436f0784-cd4b-45f6-9991-25d0720fc87b"
+   },
+   {
+    "f": "Discogs 原盤條目 528239 記：Earworm，編號欄同時記 WORM48 與 48，UK，released 欄 1999，格式 CD／Album；曲目九軌，與 MusicBrainz 那筆逐項同名同序、曲長逐項相同。",
+    "src": "https://www.discogs.com/release/528239"
+   },
+   {
+    "f": "同一條目的 credit 欄三條：「Drums [Live Drums]: Damian Gaffney」「Mastered By: Adam Nunn」「Producer [Production Assistant]: Antony Harding」（Discogs 藝人 333287）；公司欄記 Distributed By: Cargo (2)、**Mastered At: Abbey Road Studios**、Glass Mastered At: DOCdata UK。",
+    "src": "https://www.discogs.com/release/528239"
+   },
+   {
+    "f": "同一條目的註記欄寫「Made in England.」「Cargo distribution.」「Mastered at Abbey Road.」「Clear tray jewel case with 4-panel folded insert.」「No track timings printed on release.」，並列了一份致謝名單（Dominic, Leon & Nicola, Dave Ochre, Joana Seguro, Tank, Ma Cherie For Painting, July Skies, Anette, Becky, Damian and Becky Gaffney, Steve Marino）。",
+    "src": "https://www.discogs.com/release/528239"
+   },
+   {
+    "f": "同一條目的 identifiers 欄記 Matrix／Runout「AVROCAR48 • MASTERED BY DOCDATA」與 Mastering SID Code「IFPI LA31」；barcode 欄未登錄。",
+    "src": "https://www.discogs.com/release/528239"
+   },
+   {
+    "f": "Discogs 上另有一筆 1999 年的 Earworm 合輯《The Tell-Tale Signs Of Earworm》（編號 WORM 43），其掛名欄同時列出 Avrocar、Metrotone、Ma Cherie For Painting、Tank、Isan、Echoboy、Magnétophone、The Minders 等名字。",
+    "src": "https://www.discogs.com/release/121152"
+   },
+   {
+    "f": "Discogs 藝人頁 91087 的簡介欄寫「Avrocar hail from Birmingham and the black country in the West Midlands, U.K. (…) Championed by Steve Lamacq (BBC 6 Music) and Mary-Anne Hobbs (XFM) they have carved a unique path through underground music. Disbanded in June 2013.」；成員欄列 Antony Harding（Discogs 藝人 333287）與 Perry McDonagh 兩人。",
+    "src": "https://www.discogs.com/artist/91087"
+   },
+   {
+    "f": "MusicBrainz 藝人 9e2ea48c 的欄位：name「Avrocar」、type Group、country GB、area United Kingdom；名下 6 個 release-group；外部連結含 AllMusic mn0000065961 與 wikidata Q4829497。",
+    "src": "https://musicbrainz.org/artist/9e2ea48c-89ed-4b36-a478-f446f46c3f84"
+   },
+   {
+    "f": "Discogs 廠牌頁 3260（Earworm）的 releases 端點回報 171 筆；本張編號 WORM48。",
+    "src": "https://www.discogs.com/label/3260"
+   },
+   {
+    "f": "Discogs 上同掛名另有一張 2013 年的 12 吋《Summer Blonde》（Orre ORRE001，比利時），其 A3 軌就叫〈Cinematography〉——**與本卡這張 1999 年的專輯同名但不是同一個物件**。",
+    "src": "https://www.discogs.com/release/4334499"
+   }
+  ],
+  "hookCandidates": [
+   "九軌，末軌一首就十分鐘",
+   "碟上沒印任何曲長"
+  ],
+  "sound": "九軌的長度呈兩極：末軌〈Cathode & Cello'd〉10:11 與〈Amplify〉7:03 撐起後半，前段則有三軌落在 3:06 到 3:29（逐軌數自 MusicBrainz 那筆 release 的曲長表，共九軌；Discogs 註記欄註明碟上沒有印曲長）。Discogs 原盤的 credit 欄只有三條：現場鼓、母帶、製作助理——**沒有登錄任何主奏樂器或人聲**。公司欄把母帶與玻璃母版分記在兩個地點。（本欄由 MusicBrainz 曲長表與 Discogs 的 credit 欄、公司欄、註記欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Cathode & Cello'd",
+   "Amplify",
+   "Fega"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1999、唯一一筆 release 1999 GB、Discogs 原盤 released 欄 1999），**無爭議**。**行文只能寫到年**，兩邊都沒有月與日；Apple 上沒有這張碟。**另註**：MusicBrainz 那筆 release 的 **status 欄是空的**——這不影響年份，但**行文不得把它寫成「正式發行」或引用任何 status 值**（第 136 條）。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：(1) Earworm 廠牌沿革歸〈The Less You Have, the More You Are〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 WORM48。(2) 母廠 Enraptured 那條歸〈Elasticated Waveband〉，**本卡不得提**。\n**原盤軌數**：`originalTrackCount` = **9**。MusicBrainz release track-count 9、Discogs 原盤九軌，兩邊逐項同名同序、曲長逐項相同，**無爭議**。\n**禁令**：(1) **★★ 與本組 Metrotone 的交叉禁令（第 110 條）**：本張 credit 欄與成員欄的「Antony Harding」是 **Discogs 藝人 333287**，Metrotone 那張成員欄的「Anthony Harding」是 **Discogs 藝人 270075**——**該站建成兩個不同實體**。**兩張卡都禁止寫成同一個人**，也不得寫成「兩個團有共同成員」。(2) **★ 致謝名單裡有 Tank 與 Ma Cherie For Painting**，那是本組另外兩張卡的掛名。**可以照抄致謝名單（那是唱片註記欄的字面）**，**但不得由致謝推論合作、廠牌同僚關係或任何互動**（第 110 條）；**也不得寫成「本批這幾張互相有關」**（第 145 條）。(3) **同名合輯那條**：1999 年的 Earworm 合輯《The Tell-Tale Signs Of Earworm》掛名欄同時有這幾個名字，**可以寫成「Discogs 上另有一筆同廠合輯，掛名欄同時列了這些名字」**，**不得寫成「他們都是同一批人馬」或替該合輯描述內容**。(4) **★ 同名不同物**：同掛名在 2013 年另有一張 12 吋《Summer Blonde》，其中一軌就叫〈Cinematography〉。**行文不得把那一軌與本卡這張 1999 年專輯混寫**；下游若以曲名或盤名做字串比對，這是明確的撞名點（第 71／140 條的形狀）。(5) 「Mastered At: Abbey Road Studios」是 Discogs 公司欄的字面，**可以寫，不得寫成任何規格或地位的暗示**；同條目另有「Glass Mastered At: DOCdata UK」與 credit 欄的「Mastered By: Adam Nunn」，**三者是三個不同欄位，不得合併敘述**。(6) Discogs 藝人頁簡介欄的「Championed by Steve Lamacq (BBC 6 Music) and Mary-Anne Hobbs (XFM)」**與「carved a unique path」都是該頁簡介欄的說法**，寫成「Discogs 藝人頁的簡介欄說」（第 128 條）；**不得寫成本店的評價，也不得補任何電台節目或播出時間**。簡介欄提到的 Nick Drake／Kraftwerk／My Bloody Valentine／Radiohead／Deerhunter／Tropic Of Cancer 等比擬**一律不入文**（第 110 條）。(7) **不得寫「這團解散於 2013 年 6 月」以外的任何生涯敘事**；那一句也只有簡介欄一個來源。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Avrocar Cinematography」在 Apple GB 與 US、以及「Avrocar」在 Apple GB 各搜一次——**盤名兩次都回 count 0**；用掛名搜則撈到同掛名的 2013 年《Summer Blonde》（collectionId 640280111，℗ 2013 Avrocar），**證明這個掛名在 Apple 上存在、只是本張沒上架**。維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:Tånk|Upwards at 66°N",
+  "artist": "Tånk",
+  "album": "Upwards at 66°N",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 035a9c59 的欄位：title《Upwards at 66°N》、artist-credit「Tånk」、first-release-date 1999、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1999 GB Official。",
+    "src": "https://musicbrainz.org/release-group/035a9c59-752f-4c8a-8d26-a0d46d4e4819"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（c99039af）登記廠牌 Earworm、編號 worm46、國別 GB、一片 CD、track-count 8，曲目為 1〈Abaton〉4:03、2〈Kino Art〉6:59、3〈C'est Un Joli Matin / Austur〉3:00、4〈Drangar〉8:20、5〈Gunnar Reverse〉10:32、6〈Landslag〉6:14、7〈C'est Un Joli Matin / Vestur〉3:26、8〈Nord : Sud〉15:03。",
+    "src": "https://musicbrainz.org/release/c99039af-76d0-4ab4-9702-7b40c061e222"
+   },
+   {
+    "f": "Discogs 原盤條目 554576 記：Earworm，編號 WORM 46，UK，released 欄 1999，格式 CD／Album；掛名欄登記為「Tank (2)」，末軌該站寫〈Nord : Süd〉（帶變音符）。",
+    "src": "https://www.discogs.com/release/554576"
+   },
+   {
+    "f": "同一條目的註記欄寫「Earworm 1999,」「Made in England.」「**4 tracked in Brest between march + december 1998**」「Packaging: standard plastic jewel box case, clear tray, 4 page v-fold cover booklet.」「Track times not printed on sleeve art, taken from: CD-Mac-iTunes.」「Total time: 57:41」「Alternate catalog numbers: \"(46)\" printed on back cover tray art, \"worm 46\" printed on disc art, (no catalog number printed on spines).」",
+    "src": "https://www.discogs.com/release/554576"
+   },
+   {
+    "f": "同一條目的公司欄記 Distributed By: Cargo (2)、Glass Mastered At: DOCdata；identifiers 欄記 Matrix／Runout「WORM46 • MASTERED BY DOCDATA」與 Mastering SID Code「IFPI LA31」，barcode 欄的值是 none；**credit 欄是空的**。",
+    "src": "https://www.discogs.com/release/554576"
+   },
+   {
+    "f": "MusicBrainz 藝人 73e57344 的欄位：name「Tånk」、type Group、**country FR、area France**、disambiguation「French abstract/post-rock band, led by Christophe Mevel」；名下 9 個 release-group。",
+    "src": "https://musicbrainz.org/artist/73e57344-4d9f-4dba-9551-682e4915297c"
+   },
+   {
+    "f": "Discogs 藝人頁 91086 的實體名是「Tank (2)」、名稱變體欄列 TÅNK 與 Tånk；簡介欄只有一行「French Rock / Electronic / Krautrock / Post Rock / Experimental band」；成員欄列 Yannick Martin、**Niko Lazarakopoulos（Discogs 藝人 1133084）**、Christophe Mevel、Arnaud Le Gall、Gael Loison、Yann Jézéquel 六人。",
+    "src": "https://www.discogs.com/artist/91086"
+   },
+   {
+    "f": "Discogs 藝人 1133084（Niko Lazarakopoulos）同時列在 Ma Chérie for Painting（Discogs 藝人 66950）的成員欄，而該團的碟也在同一家廠牌 Earworm 發行（編號 WORM 27）。",
+    "src": "https://www.discogs.com/artist/66950"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1889741951）的 collectionName 是《Upwards at 66º N》——**用的是陽性序數符號 º（U+00BA）而非度數符號 °，且 66 與 N 之間有一個空格**；artistName 欄寫「Tank」（無圓圈符）、trackCount 欄 8、releaseDate 欄 2026-04-24、copyright 欄「℗ 2026 Tank」。",
+    "src": "https://music.apple.com/gb/album/upwards-at-66%C2%BA-n/1889741951"
+   },
+   {
+    "f": "該 Apple 條目的八軌逐項為 1〈Abaton〉4:04、2〈Kino Art〉6:59、3〈C'est Un Joli Matin / Austur〉3:01、4〈Drangar〉6:14、5〈Gunnar Reverse〉10:33、6〈Landslag〉8:21、7〈C'est Un Joli Matin / Vestur〉3:26、8〈Nord: Süd〉15:03——**曲名與曲序與原盤逐項相同，唯第 4 與第 6 軌的曲長互換**（原盤 Drangar 8:20／Landslag 6:14，Apple 作 Drangar 6:14／Landslag 8:21）。",
+    "src": "https://music.apple.com/gb/album/upwards-at-66%C2%BA-n/1889741951"
+   },
+   {
+    "f": "Discogs 廠牌頁 3260（Earworm）的 releases 端點回報 171 筆；本張編號 WORM 46。",
+    "src": "https://www.discogs.com/label/3260"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡的末軌長達十五分鐘",
+   "碟上沒印曲長，編號在三個地方寫成三種樣子"
+  ],
+  "sound": "八軌的長度落差是本組之最：末軌〈Nord : Sud〉15:03 與〈Gunnar Reverse〉10:32 兩首加起來就超過全碟四成（Discogs 註記欄記全長 57:41），而〈C'est Un Joli Matin〉的兩個版本各只有 3:00 與 3:26（逐軌數自 MusicBrainz 那筆 release 的曲長表，共八軌）。第三軌與第七軌共用同一個曲名主幹、各帶一個不同的副題。Discogs 原盤的 **credit 欄是空的**——該站對這張碟沒有登錄任何演奏或製作掛名，只有經銷與玻璃母版兩條公司欄。（本欄由 MusicBrainz 曲長表與 Discogs 的曲目表、欄位狀態、註記欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Nord : Sud",
+   "Gunnar Reverse",
+   "Drangar"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1999、唯一一筆 release 1999 GB、Discogs 原盤 released 欄 1999、註記欄的「Earworm 1999」）。**行文只能寫到年**，兩邊都沒有月與日。**Apple 那筆的 releaseDate 2026-04-24 與 ℗ 2026 是近年的數位再上架，絕不可寫入行文。** 唯一有月份的線索是註記欄的「4 tracked in Brest between march + december 1998」，**那是錄音期不是發行期，兩者不得混寫**。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Earworm 廠牌沿革歸〈The Less You Have, the More You Are〉、母廠 Enraptured 歸〈Elasticated Waveband〉，**本卡兩條都禁用**，只寫自己那筆的廠牌欄與編號 worm46。\n**取得**：**Niko Lazarakopoulos 同時列名兩個團**這條跨張線（本團與 Ma Chérie for Painting，Discogs 是同一個藝人實體 1133084，兩團的碟又都在 Earworm）。**〈Una Producion Pop〉禁用這條。**\n**原盤軌數**：`originalTrackCount` = **8**。MusicBrainz release track-count 8、Discogs 原盤八軌、Apple 那筆也是八軌且逐項同名同序，**三個來源一致，無爭議**。\n**★ 身分：這是一支法國團，不是英國團。** MusicBrainz 藝人實體的 country 欄是 **FR**、area 欄 France，disambiguation 欄寫「French abstract/post-rock band」，Discogs 藝人頁簡介欄也寫 French；Discogs 註記欄的錄音地是 **Brest**（法國）。**本批的場景標籤是「英國 1990 年代微廠二線」，那指的是廠牌，不是藝人。****行文絕不可把這支團寫成英國的**；可以寫的是「一支法國團在布列斯特錄的碟，由一家英國小廠發行」。\n**★★ 探測層核對——這一張是回補成功的（第 152 條）**：\n`previews.json` 把這張標 `unavailable`（八個 storefront 全 `0→0`）。依第 152 條我用盤名關鍵詞「Upwards at 66」在 Apple GB 重搜，**命中 collectionId 1889741951**。**探測層漏掉它的原因有兩個，而且是疊在一起的**：(1) **掛名的變音符**——碟上與資料庫都是 **Tånk**，Apple 寫成 **Tank**（第 139 條的近親：不是空格，是變音符）；(2) **盤名裡的符號被換掉**——原盤是 **66°N**（度數符號 U+00B0、無空格），Apple 是 **66º N**（陽性序數符號 U+00BA、有空格）。**兩處都不是錯字層級的差異，是不同的 Unicode 碼位，任何字串比對都會判不相等。**\n**逐軌核對結果（我手上有完整曲目表，探測層沒有）**：Apple 八軌與 MusicBrainz／Discogs 原盤**曲名逐項相同、曲序逐項相同**，**不是合輯，也不是加曲版**。唯一的差異是第 4 軌與第 6 軌的**曲長互換**（原盤 Drangar 8:20／Landslag 6:14，Apple 作 Drangar 6:14／Landslag 8:21）——**兩邊的八個曲長是同一組數字、只是配對不同**，這比較像其中一邊的欄位錯置，而不是不同的錄音。另有一處拼寫差異：末軌 MusicBrainz 作〈Nord : Sud〉、Discogs 與 Apple 都作〈Nord : Süd〉／〈Nord: Süd〉。\n**建議主線**：依第 134／137 條的 §4 路徑用 `collectionId=1889741951` 直查回補試聽，並在 `previews.json` 註明是回補的、原本被擋是因為掛名變音符與盤名符號碼位不同、逐軌核對結果如上。**該筆的軌數（8）可以用；該筆的 releaseDate（2026-04-24）與 ℗ 2026 不可用。**\n**禁令**：(1) **不得寫任何曲長為「原盤的」**，除非註明是哪一個來源——第 4／6 軌兩邊互換，**這兩軌的曲長一律不入文**（第 141 條順帶那款：兩說時兩個都不寫）。(2) **不得由〈Abaton〉〈Drangar〉〈Landslag〉〈Nord : Sud〉這些曲名推論語言、地點或指涉**（第 110 條）。曲目表上有幾個看起來像冰島文的字串，**但沒有任何來源說這張碟與冰島有關**；註記欄寫的錄音地是布列斯特。盤名裡的「66°N」同理，**不得解釋成任何緯度、地點或概念**。(3) **不得寫壓量**（第 109 條）。(4) **credit 欄是空的**——**不得寫任何人在這張碟上做了什麼**。唯一可用的人名是 MusicBrainz disambiguation 欄的「led by Christophe Mevel」與 Discogs 成員欄那六個名字，**兩者都要寫成資料庫的欄位**（第 136 條），且**不得指派任何一人到任何一軌**。(5) **編號三說**：MusicBrainz worm46、Discogs 封面欄 WORM 46、碟片上 worm 46、托盤上「(46)」。**寫哪一個都要註明是哪個欄位。**"
+ },
+ {
+  "key": "desc2:Piano Magic|Low Birth Weight",
+  "artist": "Piano Magic",
+  "album": "Low Birth Weight",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 117a4d44 的欄位：title《Low Birth Weight》、artist-credit「Piano Magic」、first-release-date 1999-05、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，Official，**MusicBrainz 把該筆的國別欄記成 US**。",
+    "src": "https://musicbrainz.org/release-group/117a4d44-c1aa-3021-829b-e2bf75070560"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（2d0d0d7c）登記廠牌 Rocket Girl、編號 Rgirl 6、barcode 5016266100625、一片 CD、track-count 11，曲目為 1〈Snowfall Soon〉5:02、2〈Crown Estate〉4:34、3〈Bad Patient〉5:00、4〈The Fun of the Century〉5:02、5〈Birdymachine〉1:26、6〈Not Fair〉4:12、7〈Dark Secrets Look for Light〉4:52、8〈Snow Drums〉、9〈Shepherds Are Needed〉5:21、10〈I Am the Sub-Librarian〉4:27、11〈Waking Up〉5:50。",
+    "src": "https://musicbrainz.org/release/2d0d0d7c-9ac8-44cc-ab1b-c599b697095b"
+   },
+   {
+    "f": "Discogs 原盤條目 6722568 記：Rocket Girl，編號欄同時記 rgirl 6 與 rgirl6，**國別 UK**，released 欄 1999-05-00，格式 CD／Album；註記欄寫「On back cover: (p) & (c) rocket girl 1999 / made in england / distributed by cargo」與「Jewel case with clear tray and 8-page lyrics booklet. Track durations are not printed on the release.」",
+    "src": "https://www.discogs.com/release/6722568"
+   },
+   {
+    "f": "同一條目把工程師逐軌拆開登錄：「Engineer: Martin Cooper (6) [1, 6, 8, 10]」「Engineer: Matt Simpson [2, 3, 7, 11]」「Engineer: Glen Johnson [5, 9]」「Engineer: Pete Lorentz [4]」；另有「Producer: Piano Magic」與「Photography By, Design: Simo Bogdanovic」。",
+    "src": "https://www.discogs.com/release/6722568"
+   },
+   {
+    "f": "同一條目逐軌登錄人聲掛名：第 1、6、8、10 軌是 Caroline Potter、第 2 與第 7 軌是 Simon Rivers、第 3 軌是 Raechel Leigh、第 4 軌是 Jen Adam、第 11 軌是 Peter Astor；Glen Johnson 在多數軌掛 Guitar 與 Words By。",
+    "src": "https://www.discogs.com/release/6722568"
+   },
+   {
+    "f": "同一條目的註記欄還寫「Track 8: Contains a sample of \"Constructing Clouds\"」，並逐條列出五位客座是「appears courtesy of」哪個廠牌或團體；公司欄記 Distributed By: Cargo (2)、Glass Mastered At: DOCdata UK、Published By: Copyright Control。",
+    "src": "https://www.discogs.com/release/6722568"
+   },
+   {
+    "f": "Discogs master 6707 的版本清單十筆，全部掛 Rocket Girl 編號 rgirl 6 的各種寫法：1999 年的 CD 兩筆與黑膠五筆（其中一筆格式欄標 Unofficial Release／White Label）、2019 年的黑膠再壓一筆（RGIRL6RE／RGIRL6R）、一筆無年份的 CD 再發。",
+    "src": "https://www.discogs.com/master/6707"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 202385491）的 trackCount 欄 11、copyright 欄「℗ 1999 rocket girl」，十一軌逐項與 MusicBrainz 那筆同名同序。",
+    "src": "https://music.apple.com/gb/album/low-birth-weight/202385491"
+   },
+   {
+    "f": "Exclaim! 的樂評（署名 Ian Danzig，刊期標 1999 年 10 月 1 日）寫「The latest release from England's Piano Magic fleshes out their exquisitely fragile ambient pop aesthetic. Low Birth Weight shines with its collection of gentle pop soundscapes. A revolving cast of players contribute to each track, all centring around guitarist and lyricist Glen Johnson.」，並提到「Vocals alternate between spoken word and simply sung tracks most often handled by Caroline Potter and Simon Rivers.」",
+    "src": "https://exclaim.ca/music/article/piano_magic-low_birth_weight"
+   },
+   {
+    "f": "同一篇樂評描述包裝：「The album's packaging completes the angelic effect with stunning humanised photographs of taxidermied cats and rabbits.」",
+    "src": "https://exclaim.ca/music/article/piano_magic-low_birth_weight"
+   },
+   {
+    "f": "MusicBrainz 藝人 88861c95 的欄位：name「Piano Magic」、type Group、country GB、life-span begin 1996、end 2017、ended true；aliases 欄列「Plano Magic」；外部連結含官方網站 piano-magic.co.uk、bandcamp 與 wikidata Q576191。Discogs 藝人頁 65228 的成員欄列出二十四個名字。",
+    "src": "https://musicbrainz.org/artist/88861c95-0cd8-4710-81ef-6cecd7ea8ff5"
+   },
+   {
+    "f": "Discogs 廠牌頁 3471（Rocket Girl）的簡介欄只有一句「UK label founded by (…) in 1997.」；子廠牌欄列 Indus Sonica；該廠牌頁的 releases 端點回報 473 筆。",
+    "src": "https://www.discogs.com/label/3471"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌，四位工程師各管幾軌",
+   "每一軌的人聲都換人"
+  ],
+  "sound": "十一軌裡有七軌落在 4:12 到 5:50 這個窄帶裡，最短的〈Birdymachine〉只有 1:26（逐軌數自 MusicBrainz 那筆 release 的曲長表，共十一軌；碟上沒有印曲長，見 Discogs 註記欄）。Discogs 原盤最特別的是它的 credit 欄結構：工程師有四位、逐軌指定軌號，人聲也逐軌指定，同一張碟上換過五個人聲掛名，只有吉他與作詞那一條貫串多軌。有署名的樂評把這種作法描述成「A revolving cast of players contribute to each track」。（本欄由 MusicBrainz 曲長表、Discogs 逐軌 credit 欄與 Exclaim! 那篇署名樂評歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Snowfall Soon",
+   "Waking Up",
+   "I Am the Sub-Librarian"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，四方一致（MusicBrainz first-release-date 1999-05、Discogs 原盤 6722568 的 released 欄 1999-05-00、原盤註記欄的「(p) & (c) rocket girl 1999」、Apple copyright 欄 ℗ 1999）。**月可以寫「1999 年 5 月」**（兩個獨立來源給同一個月）。**行文不得寫日**，兩邊都沒有。**Exclaim! 那篇樂評刊期是 1999 年 10 月，那是刊出日不是發行日，不得混寫。**"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**取得**：Rocket Girl 廠牌那條由本卡獨用（本組無第二張同廠卡），但廠牌頁簡介欄只有一句話，**能寫的很少：成立年與國別，如此而已**。\n**原盤軌數**：`originalTrackCount` = **11**。MusicBrainz release track-count 11、Discogs 原盤十一軌、Apple 十一軌，三個來源逐項同名同序，**無爭議**。\n**★ 本卡是本組唯一有署名樂評可引的一張。** Exclaim! 那篇的作者署名 Ian Danzig、刊期 1999 年 10 月 1 日。**引用時必須寫成「Exclaim! 一篇署名 Ian Danzig 的樂評寫……」**（第 128 條）。**注意**：`qa-batch` 的「未具名出處」那組規則可能會對這條亮燈——**這是誤報，來源已具名，依第 143 條照寫、讓它亮燈、由主線複核，不要為了關燈刪掉它。**\n**禁令**：(1) **★ 國別欄兩說**：MusicBrainz 把唯一那筆 release 的**國別欄記成 US**，Discogs 原盤條目卻記 **UK**、註記欄還寫「made in england」。**兩個都要註明是哪個資料庫的欄位，不得擇一寫成「這是美國盤／英國盤」**（第 136 條）。廠牌 Rocket Girl 在 Discogs 廠牌頁上寫的是 UK label。(2) **★ 不得引用樂評裡的比擬**：那篇提到 Durutti Column、Low、Spacemen 3、My Bloody Valentine 四個名字，**一律不入文**（第 110 條——那是樂評作者的類比，不是查證過的關係）。**可引的是「ambient pop」「gentle pop soundscapes」「revolving cast of players」與人聲那一句**，而且必須帶署名。(3) **包裝那句（標本貓與兔子的照片）也是樂評作者的描述**，**要寫必須註明是那篇樂評說的**，不得寫成唱片註記或本店的觀察。(4) **不得寫壓量、也不得引用 Discogs 那筆標 Unofficial Release／White Label 的版本**去談流通（第 109 條；格式欄只能寫成該站的格式欄）。(5) **不得由〈Low Birth Weight〉這個盤名或〈Snow Drums〉〈I Am the Sub-Librarian〉這些曲名推論主題**（第 110 條）。(6) 註記欄「Track 8: Contains a sample of \"Constructing Clouds\"」**可以照引**，**但不得補那首曲子是誰的**——Discogs 用內部連結代號寫，本次未解析（第 136 條）。(7) 第 8 軌〈Snow Drums〉的曲長在 MusicBrainz 被登成 4:60 這種不合法的值，**不得引用該軌曲長**。(8) Discogs 成員欄的二十四個名字**不得寫成「這團有二十四人」**——那是該站累積多年的掛名清單，只能寫成「Discogs 藝人頁的成員欄列了二十多個名字」（第 135 條）。\n**探測層核對**：CAA 有圖。試聽可用（Apple 202385491），十一軌逐項對得上原盤，**這一筆的軌數可以用**。"
+ },
+ {
+  "key": "desc2:Skyray|Mind Lagoons",
+  "artist": "Skyray",
+  "album": "Mind Lagoons",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c997a958 的欄位：title《Mind Lagoons》、artist-credit「Skyray」、first-release-date 1999、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1999 GB Official。",
+    "src": "https://musicbrainz.org/release-group/c997a958-4fc2-3c24-814a-e495f9b4e56a"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（3673c7fe）登記廠牌 Ochre Records、編號 OCH011LCD、barcode 5031531010119、一片 CD、track-count 11，曲目為 1〈Sunset Lovedrone〉3:08、2〈Jet Stream Summer〉5:04、3〈Bikini Atoll〉4:08、4〈Sunken Ships〉3:26、5〈Mind Lagoons〉6:45、6〈Marine Light Interlude〉3:07、7〈Ornate Flame Terminal〉5:38、8〈Girl in a Birdcage〉4:41、9〈Starry Dome Fragments〉1:33、10〈Jet Stream (Vapour Trails)〉4:45、11〈Aloha Sunset Lovedrone〉12:33。",
+    "src": "https://musicbrainz.org/release/3673c7fe-64cf-4d72-949a-357c6c329705"
+   },
+   {
+    "f": "Discogs 原盤條目 182637 記：Ochre Records，編號 OCH011LCD，UK，released 欄 **1999-09-27**，格式 CD／Album；**該站把第 11 個曲目位置拆成三段**——11.1〈Aloha Sunset Lovedrone〉1:20、11.2〈(silence)〉6:00、11.3〈High Viking〉5:11。",
+    "src": "https://www.discogs.com/release/182637"
+   },
+   {
+    "f": "同一條目的 credit 欄六條：「Bass [Harpoon Bass], Guitar [Vapour Trail Guitars], Piano [Fogbank Pianos], Effects [Poison Layers & Surface Flashes], Lyrics By [Words By], Music By: Paul Simpson (2)」、「Effects [Forbidden Glissando], Piano [Salt Water Piano], Organ [Fine Coral Moog], Producer: Henry Priestman」、「Pedal Steel Guitar [Jewel Encrusted Pedal Steel]: John Lawrence (2)」、「Synth [Devil Fish Mini-Synth], Effects [Haunted Greek Amphora]: Alan Holmes」、「Effects [Analogue Phosphorescence & Faint Signals]: Longstone」、「Design, Artwork: VSA」；第 5 軌另掛「Narrator [Narration By]: Tenzing Scott Brown」。",
+    "src": "https://www.discogs.com/release/182637"
+   },
+   {
+    "f": "同一條目的公司欄只有一條 Produced At: The Gossamer Dome；註記欄寫「First pressing came in a card digipak cover, later pressings came in a standard jewel case [OCH011LXCD].」",
+    "src": "https://www.discogs.com/release/182637"
+   },
+   {
+    "f": "Discogs 該條目的 credit 欄裡，「Effects [Analogue Phosphorescence & Faint Signals]」掛的是 Discogs 藝人 **51796**，而該實體正是本組另一張卡的掛名 Longstone。",
+    "src": "https://www.discogs.com/release/182637"
+   },
+   {
+    "f": "MusicBrainz 藝人 6c73279b 的欄位：name「Skyray」、type Person、country GB、**area Liverpool**、life-span begin 1996、disambiguation「Paul Simpson, founder of The Teardrop Explodes」；名下 6 個 release-group；外部連結只有 bandcamp 與 Discogs 兩條。",
+    "src": "https://musicbrainz.org/artist/6c73279b-b176-4c07-af52-104e98ad8696"
+   },
+   {
+    "f": "Discogs 藝人頁 55833 的別名欄列 Paul Simpson (2) 與 The White Capsule 兩個；簡介欄、成員欄與所屬團體欄都是空的。",
+    "src": "https://www.discogs.com/artist/55833"
+   },
+   {
+    "f": "Apple Music 英國店面上有一筆同掛名的 1999 年單曲條目《Womb》（collectionId 1524787589，trackCount 1，copyright 欄「℗ 1999 Space Age Recordings」），**但沒有本張專輯**。",
+    "src": "https://music.apple.com/gb/album/womb/1524787589"
+   },
+   {
+    "f": "Discogs 廠牌頁 1838（Ochre Records）的 releases 端點回報 152 筆；本張編號 OCH011LCD，同站另有一個標成 OCH011LXCD 的後續壓片。",
+    "src": "https://www.discogs.com/label/1838"
+   }
+  ],
+  "hookCandidates": [
+   "credit 欄的樂器都有形容詞：魚叉貝斯、霧堤鋼琴",
+   "第十一軌播完六分鐘的靜音之後還有東西"
+  ],
+  "sound": "十一個曲目位置裡有八個短於五分鐘，最短的〈Starry Dome Fragments〉1:33；末段的第十一個位置在 MusicBrainz 登成單一的 12:33，Discogs 則拆成 1:20 的曲子、6:00 的靜音與 5:11 的另一段（逐軌數自兩個資料庫的曲目表）。Discogs 原盤的 credit 欄是本組最鋪張的：每一項樂器後面都跟著一個括號裡的自造名稱（Harpoon Bass、Fogbank Pianos、Vapour Trail Guitars、Jewel Encrusted Pedal Steel、Devil Fish Mini-Synth、Haunted Greek Amphora），共六條掛名加一條逐軌的旁白。（本欄由兩個資料庫的曲目表與 Discogs 的 credit 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Aloha Sunset Lovedrone",
+   "Mind Lagoons",
+   "Ornate Flame Terminal"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1999、唯一一筆 release 1999 GB、Discogs 原盤 released 欄 1999-09-27）。**日可以寫，但要註明來源**：1999 年 9 月 27 日只出現在 Discogs 原盤條目的 released 欄，MusicBrainz 只有年。保守寫法是只寫 1999 年。Apple 上沒有這張碟。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：(1) Ochre Records 廠牌沿革歸〈Surrounded by Glass〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 OCH011LCD。(2) VSA 為 Ochre 三張做美術這條歸〈Translucent〉——**本卡只能寫自己 credit 欄的字面「Design, Artwork: VSA」，不得寫成跨張**。(3) Mike Cross 那條歸〈Surrounded by Glass〉，本卡 facts 未涉及。\n**取得**：**Alan Holmes 跨張掛名**這條線（本張的 Synth／Effects 欄；本組另有一張 Ochre 卡的軌內 credit 也出現這個名字）。**〈Translucent〉只寫自己軌內 credit 的字面，不得延伸。****注意**：本卡 facts 只確認了 Discogs 在**本張**把 Alan Holmes 登在 credit 欄；**跨張那一半沒有實體 id 佐證，依第 138 條，這條線若寫不穩就讓它閒置，只寫本張的 credit 欄。**\n**原盤軌數**：`originalTrackCount` = **11**，指的是**曲目表上的位置數**。MusicBrainz track-count 11、Discogs 也是十一個位置。**但必須帶限定語**：Discogs 把第十一個位置拆成 11.1／11.2／11.3（曲子、六分鐘靜音、另一段〈High Viking〉），所以「十一」是**曲目表的位置數**，不是能聽到幾段音樂（第 144 條第二種落地方式：加限定語）。\n**禁令**：(1) **★ 掛名與本名要寫成資料庫欄位**：MusicBrainz 的 disambiguation 欄寫「Paul Simpson, founder of The Teardrop Explodes」，Discogs 藝人頁的別名欄列「Paul Simpson (2)」，Discogs 原盤 credit 欄的主要演奏者也是 Paul Simpson (2)。**「他是 The Teardrop Explodes 的創始成員」只有 MusicBrainz 的 disambiguation 欄一個來源**——要寫必須寫成「MusicBrainz 的消歧義欄這樣註記」（第 128／136 條），**且不得延伸出任何生涯敘事、時序或因果**。(2) **★ 括號裡的樂器名是唱片 credit 欄的自造名稱，不是樂器規格**（第 136 條）。**可以照抄「credit 欄把貝斯寫成 Harpoon Bass」**，**不得解釋那是什麼、也不得由它推論音色**（第 110 條）。(3) **〈High Viking〉不在曲目表上**——它只出現在 Discogs 的子軌位置。**行文不得把它當成本碟的第十二首曲子**；要提只能寫成「Discogs 把末段拆成三小段，第三段另有名字」。(4) **不得由〈Bikini Atoll〉這個曲名推論任何歷史事件或地點**（第 110 條，本卡最高風險的一條）。(5) 「Tenzing Scott Brown」只出現在第 5 軌的 Narrator 欄，**不得替他補任何身分**（第 146 條）。(6) 註記欄關於首刷數位包裝與後續壓片的那句**可以寫成包裝差異**，**不得寫成稀有度、收藏價值或壓量**（第 109 條）。(7) 掛名「Skyray」在 Apple 上與多位當代藝人撞名，**不得引用任何未經本卡 facts 確認的同名資料**（第 139 條）。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Skyray Mind Lagoons」在 Apple GB、以及「Mind Lagoons」在 Apple US 各搜一次——**盤名兩次都沒有命中本張**；用掛名搜則撈到同掛名的 1999 年單曲《Womb》（collectionId 1524787589，℗ 1999 Space Age Recordings），**證明這個掛名在 Apple 上存在、只是本張沒上架**。維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
  }
 ]

@@ -1,5 +1,5 @@
 import fs from 'fs';
-const DIR='/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/cards';
+const DIR='/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/cards84a';
 const cards=JSON.parse(fs.readFileSync('/home/user/dip-vinyl-shop/desc-tools/batches/cards/c84-cards.json','utf8'));
 const arr=(cards.cards||cards).filter(x=>x.group==='a');
 const out=[];
