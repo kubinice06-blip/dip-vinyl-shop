@@ -171,7 +171,7 @@
     "src": "https://itunes.apple.com/search?term=Money%20Run%20Tings&entity=album&limit=25&country=gb"
    },
    {
-    "f": "Apple 試聽查證路徑三（單獨掛名）：gb 店面以「King General」搜尋 entity=album 回 24 筆，掛 King General 的包括《Broke Again》（King General & Bush Chemists, 2009, 18 軌, collectionId 358132137）、《Singles Vol. 5》（Bush Chemists & King General, 2007, 16 軌）、《Singles, Vol. 6》（Bush Chemists and King General, 2007, 18 軌）、《Yahushua Lion of Judah》(2018)、《Tell Them Again / Dub Them Again》（Dougie Conscious, King General & Dr Hekele, 2020）；**這 24 筆裡沒有任何一筆的盤名是《Money Run Tings》**。以「Bush Chemists」搜尋回的 24 筆裡同樣沒有。",
+    "f": "Apple 試聽查證路徑三（單獨掛名）：gb 店面以「King General」搜尋 entity=album 回 24 筆，掛 King General 的包括《Broke Again》（King General & Bush Chemists, 2009, 18 軌、collectionId 358132137）、《Singles Vol. 5》（Bush Chemists & King General, 2007, 16 軌）、《Singles, Vol. 6》（Bush Chemists and King General, 2007, 18 軌）、《Yahushua Lion of Judah》(2018)、《Tell Them Again / Dub Them Again》（Dougie Conscious, King General & Dr Hekele, 2020）；**這 24 筆裡沒有任何一筆的盤名是《Money Run Tings》**。以「Bush Chemists」搜尋回的 24 筆裡同樣沒有。",
     "src": "https://itunes.apple.com/search?term=King%20General&entity=album&limit=25&country=gb"
    },
    {
@@ -1003,5 +1003,541 @@
    "note": "**1996 三庫一致，卡單維持不動。** MB 兩個 release-group（539888de 與 ff305d7f）的 first-release-date 都是 1996、三筆 release 的 date 欄都是 1996；Discogs 黑膠條目 1007277 的 released 欄 1996、master 357117 的 year 欄 1996、版本表三筆都標 1996；Apple 的 copyright 欄「℗ 1996 Jah Warrior Records」。**四個來源都只給到年**；**Apple 的 releaseDate 欄給到「1996-05-27」，那是 Apple 單方的欄位，不得寫成發行日**（本組多張的 Apple 日期與兩庫不合，見卡 2、卡 6、卡 12 的 notes）。"
   },
   "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：Jah Warrior Records 廠牌線（含 Discogs 廠牌頁 25552 與 MB 反查的 30 筆目錄）、Steve Mosco／Jah Warrior 這條人物線。**未取得**：Conscious Sounds 與 Dougie Wardrop 這條線（歸卡 1）——**本卡的 credit 欄雖然把 Mixed By 記給 Dougie Wardrop，也只能寫成「這張碟的 credit 欄這樣記」**。**卡 16 只寫自己那張的編號。**\n\n**【本卡最重要的一條：推翻策展層對「MB 重複建檔」的判定】**\n策展層的 curatorRisk 與 mbNote 都說 ff305d7f-bcf6-4222-945e-5f80063c78bb 與卡片釘住的 539888de「**同名同年同類型、各轄一個 release，是 MB 的重複條目**」。**回問過兩個 release-group 的轄下 release 之後，這個判定不成立**：\n- **539888de（卡片釘住的）→ release 03235e51 → Jah Warrior Records JWCD005、一片 CD、17 軌**；\n- **ff305d7f（策展層說刻意不釘的）→ release e6a6dee5 → Jah Warrior Records JWLP005、一片 12\" Vinyl、10 軌**。\n**兩者是同一張碟的兩個載體，不是同一筆資料被建了兩次。**\n**裁定**：**rgMbid 維持 539888de 不動**（可逆性與先例：本組卡 1、卡 2、卡 6 等多張的 rgMbid 也都指向 CD 那一側，且卡片的 Apple 試聽對應的正是 17 軌的 CD）。**但 notes 這裡把真相寫清楚，取代 mbNote 的說法**（第 142 條：mbNote 是線索不是事實）。\n**禁令**：**行文不得寫「MB 上有重複條目」**；要提只能寫成「MB 把黑膠與 CD 分成兩個 release-group」。\n\n**【本卡禁令】**\n(1) **原盤軌數：黑膠 10、CD 17，三個來源一致地這樣分**（MB 的兩個 release-group、Discogs 的黑膠條目與 master、Apple）。**這不是兩庫打架，是兩個載體**——但**行文仍不得寫「這張碟有幾首」**，要提就要帶載體（第 140／141 條）。\n(2) **試聽：Apple gb 的 collectionId 167924644 逐軌核對通過。** 17 軌曲名與曲序與 MB 那筆 CD release 的 1–17 逐項相同（唯一差異是第 11 首的「Part 2」／「, Pt. 2」寫法），**不是二合一、不是合輯、不是加曲版**。探測層的 「ready」 判定成立。**它對應的是十七軌的 CD 側。**\n(3) **曲長只有 Apple 這一份**（MB 兩筆 release 的 length 欄全為 null，Discogs 兩份條目的曲長欄也空白）。**引曲長必須寫明「Apple 那份紀錄上的曲長」**（第 136 條），**不得寫成唱片的曲長**。\n(4) **十六個族名只能寫成「曲目表上的曲名是這些」**（第 110 條）。**不得由族名推論這張碟在講什麼、跟哪個地方有關、有什麼政治立場**，**也不得替任何一個族名補敘背景**。\n(5) **「Steve Mosco」這個名字出現在 Discogs 的 Written-By 欄，「Jah Warrior」出現在 Producer 欄**。**MB 藝人實體 f26ce738 的 aliases 欄只有「Jah Warriors」一筆，沒有 Steve Mosco**——**行文不得寫「Jah Warrior 本名 Steve Mosco」**（第 110／136 條；策展層的 curatorWhy 這樣寫，**那是線索不是事實**，第 142 條）。只能寫成「同一份 credit 欄裡這兩個名字分別出現在不同欄位」。\n(6) **「Jah Warrior」同時是藝人名與廠牌名**（MB 反查 label:\"Jah Warrior\" 回的 30 筆全部是 Jah Warrior Records 的目錄），**引用時要說明是哪一個**。\n(7) **編號 JWLP006 那筆 Test Pressing（5303392）的編號與本張的 JWLP005 不同**，**不得展開**（第 109 條），**也不得寫成本張的版本**。\n(8) 年份見 「yearVerified」：只寫 1996。"
+ },
+ {
+  "key": "desc2:Hughie Izachaar|Can't Take the Pressure",
+  "artist": "Hughie Izachaar",
+  "album": "Can't Take the Pressure",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d709a38f 的欄位：title《Can't Take the Pressure》、first-release-date 1998-08-03、primary-type Album、secondary-type-ids 空陣列；genre 欄四個標籤各 1 票（dub、electronic、reggae、roots reggae）；url-rels 一條指向 Discogs master 140028。artist-credit 一段「Hughie Izachaar」，藝人實體 7be6f5f7-c135-4847-a411-f892b9c14232，type Person、country GB、**begin-area「Jamaica」**、life-span 全空、aliases 兩筆「Hughie Izaachaar」「Hughie Izaachar」；外部連結有 AllMusic mn0000283528、Discogs artist 429422、官方網站 hughieizachaar.co.uk、Last.fm、RateYourMusic。",
+    "src": "https://musicbrainz.org/release-group/d709a38f-7fb6-491f-8a38-fd1b590d86d9"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（4844a035）：title《Can't Take the Pressure》、date 1998-08-03、country GB、status Official、barcode 欄「5033108000424」；label-info 一條「Jah Warrior Records」編號「**JWCD012**」；media 一片 CD、track-count 14。逐軌曲名與曲長：1〈Jah Will Deliver Us〉3:42、2〈Deliverance Dub〉3:44、3〈El Nino〉3:41、4〈**Tonado Dub**〉3:49、5〈Don't Run Too Fast〉3:39、6〈Don't Dub Too Fast〉3:59、7〈Get Up Stand Up & Rock〉3:51、8〈Get Up Stand Up & Dub〉3:38、9〈Cardboard City〉3:34、10〈Cardboard Dub〉3:54、11〈Can't Take the Pressure〉3:33、12〈Pressure Dub〉3:34、13〈Gun Play〉3:39、14〈Dub Play〉3:40。**第 4 首在 MB 拼成「Tonado Dub」，Discogs 與 Apple 都作「Tornado Dub」。**",
+    "src": "https://musicbrainz.org/release/4844a035-6071-4c11-a02f-3f0d555c934b"
+   },
+   {
+    "f": "Discogs 黑膠條目 1564877：**artists 欄兩段——「Jah Warrior」join 欄「Presents」＋「Hughie Izachaar」**；labels 欄「Jah Warrior Records」編號「**JWLP012**」（廠牌 id 25552）、country UK、**released 欄「1998-08-00」**、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Reggae、styles 欄 Reggae 與 Dub；notes 欄與 identifiers 欄空白。**曲目表 12 個曲位**、分兩面：A1〈Jah Will Deliver Us〉A2〈Deliverance Dub〉A3〈El Nino〉A4〈Tornado Dub〉A5〈Don't Run Too Fast〉A6〈Don't Dub Too Fast〉B1〈**Get Up Stand And Rock**〉B2〈**Get Up Stand Up And Dub**〉B3〈Cardboard City〉B4〈Cardboard Dub〉B5〈Can't Take The Pressure〉B6〈Pressure Dub〉，曲長欄 12 軌全部空白。**〈Gun Play〉與〈Dub Play〉在黑膠曲目表上不存在。**",
+    "src": "https://www.discogs.com/release/1564877"
+   },
+   {
+    "f": "同一條目（1564877）的公司欄三條：Recorded At「**Conscious Sounds Studio**」、Distributed By「SRD」、Distributed By「Fat Shadow」。credit 欄四條、其中兩條帶 tracks 欄：Producer「Jah Warrior」；Written-By「A. Millgate」（anv A Millgate，tracks 欄「A1, A2, B1 to B4」）；Written-By「Hughie Izachaar」（anv H Izachaar，**沒有 tracks 欄**）；Written-By「Steve Mosco」（anv S Mosco，tracks 欄「A1, A2, B1 to B4」）。",
+    "src": "https://www.discogs.com/release/1564877"
+   },
+   {
+    "f": "Discogs master 140028 的欄位：title《Can't Take The Pressure》、year 1998、main_release **1405116**（是 CD 那筆）、**artists 欄兩段「Jah Warrior」與「Hughie Izachaar」**、genres 欄 Electronic 與 Reggae、styles 欄 Roots Reggae 與 Dub；master 層曲目表 14 個曲位且曲長欄有值：1〈Jah Will Deliver Us〉3:42、2〈Deliverance Dub〉3:44、3〈El Nino〉3:41、4〈Tornado Dub〉3:49、5〈Don't  Run Too Fast〉3:39、6〈Don't Dub Too Fast〉3:59、7〈Get Up Stand Up & Rock〉3:51、8〈Get Up Stand Up & Dub〉3:38、9〈Cardboard City〉3:34、10〈Cardboard  Dub〉3:54、11〈Can't Take The Pressure〉3:33、12〈Pressure Dub〉3:34、13〈Gun Play〉3:39、14〈Dub Play〉**3:38**（MB 那筆同一軌記 3:40）。",
+    "src": "https://www.discogs.com/master/140028"
+   },
+   {
+    "f": "同一 master（140028）的 versions **只有 2 筆**，都是 1998 UK、狀態欄 Accepted：1405116（Jah Warrior Records JWCD012，format 欄 Album）與 1564877（JWLP012，LP, Album）。**沒有任何再壓或復刻。**",
+    "src": "https://www.discogs.com/master/140028"
+   },
+   {
+    "f": "Apple（gb 店面）collectionId 164482430 的欄位：collectionName「Can't Take the Pressure」、**artistName「Hughie Izachaar」（沒有 Jah Warrior Presents）**、trackCount 14、releaseDate「1998-04-12T07:00:00Z」、copyright 欄「℗ 1998 Jah Warrior Records」、primaryGenreName Reggae、collectionViewUrl https://music.apple.com/gb/album/cant-take-the-pressure/164482430。",
+    "src": "https://itunes.apple.com/lookup?id=164482430&entity=song&country=gb"
+   },
+   {
+    "f": "同一筆 Apple 條目的 14 軌逐軌（trackName／trackTimeMillis）：1「Jah Will Deliver Us」222027、2「Deliverance Dub」223533、3「El Nino」221307、4「**Tornado Dub**」228627、5「Don't Run Too Fast」218640、6「Don't Dub Too Fast」238720、7「Get Up Stand Up & Rock」231253、8「Get Up Stand Up & Dub」218053、9「Cardboard City」214000、10「Cardboard Dub」234440、11「Can't Take the Pressure」213147、12「Pressure Dub」214440、13「Gun Play」218827、14「Dub Play」218280；14 軌都有 previewUrl。**曲名與曲序與 MB 那筆 CD release 的 1–14 逐項相同**（唯一差異是第 4 首的拼法），**曲長也逐軌相符到兩秒內**。",
+    "src": "https://itunes.apple.com/lookup?id=164482430&entity=song&country=gb"
+   },
+   {
+    "f": "CD 比黑膠多出來的兩軌是最後的〈Gun Play〉與〈Dub Play〉；黑膠曲目表結束在〈Pressure Dub〉（B6）。**曲目表的排法是人聲後面接同源的 dub**：〈Jah Will Deliver Us〉接〈Deliverance Dub〉、〈El Nino〉接〈Tornado Dub〉、〈Don't Run Too Fast〉接〈Don't Dub Too Fast〉、〈Get Up Stand Up & Rock〉接〈Get Up Stand Up & Dub〉、〈Cardboard City〉接〈Cardboard Dub〉、〈Can't Take the Pressure〉接〈Pressure Dub〉、〈Gun Play〉接〈Dub Play〉。",
+    "src": "https://musicbrainz.org/release/4844a035-6071-4c11-a02f-3f0d555c934b"
+   },
+   {
+    "f": "同一個人的名字在五份紀錄裡有四種拼法：MB 藝人實體的正名「**Hughie Izachaar**」、MB 別名欄的「Hughie Izaachaar」與「Hughie Izaachar」、Discogs 本張 credit 欄的 anv「H Izachaar」、以及本組卡 5《Conqueror》（Dubhead DBHD 009LP，1998）Discogs credit 欄 Guitar 那條的 anv「**Hughie Isaachar**」。",
+    "src": "https://musicbrainz.org/artist/7be6f5f7-c135-4847-a411-f892b9c14232"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Jah Warrior\"` 回的 30 筆裡，1990 年代掛非廠主本人名字的只有兩筆——**本張 JWCD012《Can't Take the Pressure》(1998-08-03)** 與 JWCD014《Lion Symbol》(1999，掛 Tena Stelin)；其餘 1990 年代的四筆都掛「Jah Warrior」自己。2000 年之後這家廠牌的掛名換成 Ranking Joe、U Brown、Trinity、Michael Rose、Jah Mason、Lutan Fyah、Dillinger、Rod Taylor 等牙買加歌手。",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Jah%20Warrior%22&limit=100&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "同一個人的名字在五份紀錄上有四種拼法，連他自己那張碟的 credit 欄都不一致",
+   "黑膠封面掛的是「Jah Warrior Presents」，Apple 上只剩歌手一個人的名字"
+  ],
+  "sound": "曲目表的排法是人聲後面緊接同源的 dub，七組一路排到底（〈Jah Will Deliver Us〉→〈Deliverance Dub〉、〈El Nino〉→〈Tornado Dub〉、〈Don't Run Too Fast〉→〈Don't Dub Too Fast〉、〈Get Up Stand Up & Rock〉→〈Get Up Stand Up & Dub〉、〈Cardboard City〉→〈Cardboard Dub〉、〈Can't Take the Pressure〉→〈Pressure Dub〉、〈Gun Play〉→〈Dub Play〉）。Discogs 黑膠條目的公司欄寫 Recorded At「Conscious Sounds Studio」、兩條 Distributed By（SRD 與 Fat Shadow），credit 欄的 Producer 是 Jah Warrior、Written-By 三條分給 A. Millgate、Hughie Izachaar 與 Steve Mosco。MB 那筆 CD release 登錄的曲長，最短的一軌〈Can't Take the Pressure〉3:33、最長的一軌〈Don't Dub Too Fast〉3:59。（本欄由 MB release 4844a035 的曲目表與曲長表、Discogs 條目 1564877 的曲目表與公司／credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Jah Will Deliver Us",
+   "Can't Take the Pressure",
+   "Cardboard City"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1998,
+   "note": "**1998 三庫一致，卡單維持不動。** MB release-group first-release-date 1998-08-03、轄下唯一 release 的 date 欄 1998-08-03；Discogs 黑膠條目 1564877 的 released 欄「1998-08-00」、master 140028 的 year 欄 1998、版本表兩筆都標 1998；Apple 的 copyright 欄「℗ 1998 Jah Warrior Records」。**MB 與 Discogs 都指到 1998 年 8 月**；**行文只寫到年**。**Apple 的 releaseDate 欄寫「1998-04-12」，比兩庫的 8 月早四個月，不得引用**（第 136 條）。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：本張自己的編號、公司欄與 credit 欄、Hughie Izachaar 的四種拼法（**卡 5 的 facts 也可以引那一條，因為它是兩張碟共有的原始值；但這個人的身分敘述歸本卡**）。**未取得**：Jah Warrior Records 廠牌史（歸卡 15）、Conscious Sounds 與 Dougie Wardrop 這條線（歸卡 1）——**本卡的錄音室欄雖然寫 Conscious Sounds Studio，也只能寫成「這張碟的公司欄這樣記」**。\n\n**【身分：掛名兩說】**\n**Discogs 兩份條目（黑膠 1564877 與 master 140028）的 artists 欄都是「Jah Warrior **Presents** Hughie Izachaar」兩段**；**MB 的 artist-credit 只有「Hughie Izachaar」一段**；**Apple 的 artistName 也只有「Hughie Izachaar」**。卡片採 MB／Apple 的寫法（與 rgMbid 一致），長寫法已在卡單的 「queryAlias」。\n**禁令**：**「Jah Warrior Presents」只能寫成「Discogs 的 artists 欄多一段」**（第 136 條），**不得寫成「廠主掛名發行歌手的碟」這類場景敘述**——那是 1990 年代英國小廠的通例，**但 facts 只說得出這一張的欄位怎麼填**（第 110 條；策展層的 curatorRisk 這樣寫，**那是線索不是事實**，第 142 條）。\n\n**【本卡禁令】**\n(1) **原盤軌數兩庫給不同數字，兩個都不填、行文禁止給總數**（第 140／141 條）：Discogs 的 JWLP012 **黑膠**曲目表 12 個曲位（A1–B6），MB 的 JWCD012 **CD**、Discogs master 與 Apple 都是 14。**CD 多出來的兩軌是〈Gun Play〉與〈Dub Play〉**，這個差異可以寫，**但不得給總數**。\n(2) **試聽：Apple gb 的 collectionId 164482430 逐軌核對通過。** 14 軌曲名與曲序與 MB 那筆 CD release 的 1–14 逐項相同、曲長逐軌相符到兩秒內，**不是二合一、不是合輯、不是加曲版**。探測層的 「ready」 判定成立。**它對應的是十四軌的 CD 側，不是十二軌的黑膠。**\n(3) **曲名拼法三處不一致，只能寫成「哪份紀錄寫成哪樣」**（第 136 條）：第 4 首 MB〈Tonado Dub〉／Discogs 與 Apple「Tornado Dub」；黑膠 B1〈Get Up Stand And Rock〉／MB 與 Apple〈Get Up Stand Up & Rock〉；黑膠 B2〈Get Up Stand Up And Dub〉／MB 與 Apple 用 &。**不得判定誰對誰錯。**\n(4) **人名四種拼法同樣只能寫成「哪份紀錄寫成哪樣」**；**不得寫成「他自己也拼不定」或任何關於他本人的推論**。**MB 的 begin-area 是 Jamaica、country 是 GB**——這兩個欄位可以寫成 MB 的欄位，**不得寫成「他從牙買加移居英國」**（第 110／136 條）。\n(5) **credit 欄的 tracks 欄只能原樣引**（「A. Millgate 與 Steve Mosco 的 Written-By 欄都寫 A1, A2, B1 to B4」），**不得換算成幾首**（第 154 條）。**Hughie Izachaar 那條 Written-By 沒有 tracks 欄**——只能寫成「那一條沒有填曲位」（第 136 條）。\n(6) **「Steve Mosco」與「Jah Warrior」在同一份 credit 欄的不同欄位出現**（同卡 15 的形狀）。**不得寫成同一個人**（第 110 條）。\n(7) **這張碟目前沒有任何復刻或再壓**（版本表只有 1998 年兩筆）——只能寫成「版本表上只有 1998 年的兩筆」，**不得寫成「從未再版」或「稀有」**（第 109／136 條）。\n(8) **策展層提到的兩份選輯（《Roots Connection》與《Rootical Vibrations》）與 1998／2026 年的 7 吋（JW 706）沒有進 facts**，**行文不得寫**（第 142 條）。\n(9) 年份見 「yearVerified」：只寫 1998。"
+ },
+ {
+  "key": "desc2:Revolutionary Dub Warriors|State of Evolution",
+  "artist": "Revolutionary Dub Warriors",
+  "album": "State of Evolution",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0be2bba3 的欄位：title《State of Evolution》、first-release-date 1996-05-20、primary-type Album、secondary-type-ids 空陣列；genre 欄 dub 與 reggae 各 1 票；url-rels 一條都沒有。artist-credit 一段「Revolutionary Dub Warriors」，藝人實體 be84a0e9-d385-47db-a911-d373daf1f71f，type Group、**country 為 null、area 為 null**、life-span **begin 1991**、disambiguation 空、aliases 空；**外部連結只有一條 Discogs artist 7865**。",
+    "src": "https://musicbrainz.org/release-group/0be2bba3-3988-3b95-a78d-3b23c26da813"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（b4112528）：title《State of Evolution》、date 1996-05-20、country GB、status Official、barcode 欄「718751868328」；label-info 一條「On-U Sound」編號「**ON-U CD 83**」；media 一片 CD、track-count 11。逐軌曲名與曲長：1〈Irie Warrior〉7:52、2〈Iration〉5:31、3〈Direct Action〉4:48、4〈Creation〉5:06、5〈Oppressor〉6:34、6〈Rough Dub〉6:33、7〈Sorrows Go〉4:41、8〈No Reservation〉6:19、9〈War Zone〉7:31、10〈Antelopean〉4:10、11〈Chi〉4:26。",
+    "src": "https://musicbrainz.org/release/b4112528-c8ea-4d5b-b597-350a8d7daa8d"
+   },
+   {
+    "f": "Discogs 黑膠條目 296239：artists 欄「Revolutionary Dub Warriors」、labels 欄「On-U Sound」編號「**ON-U LP 83**」（廠牌 id 2409）、country UK、released 1996、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Electronic 與 Reggae、styles 欄 Dub；notes 欄、公司欄、**credit 欄全部空白**；identifiers 兩條：Barcode「5017687968313」（描述欄 Scanned）與 Label Code「**LC 8629**」。**曲目表只有 9 個曲位**、分兩面：A1〈Irie Warrior〉A2〈Iration〉A3〈Direct Action〉A4〈Oppressor〉B1〈Rough Dub〉B2〈War Zone〉B3〈Sorrows Go〉B4〈Antelopean〉B5〈Chi〉，曲長欄 9 軌全部空白。**〈Creation〉與〈No Reservation〉在黑膠曲目表上不存在，而且 B 面的曲序與 CD 不同**（CD 的第 9 首〈War Zone〉在黑膠是 B2、CD 的第 7 首〈Sorrows Go〉在黑膠是 B3）。",
+    "src": "https://www.discogs.com/release/296239"
+   },
+   {
+    "f": "Discogs master 16028 的欄位：title《State Of Evolution》、year 1996、main_release **184037**（是 CD 那筆）、artists 欄「Revolutionary Dub Warriors」、genres 欄 Reggae、styles 欄 Dub；master 層曲目表 11 個曲位且曲長欄有值，與 MB 那筆逐軌相符（1〈Irie Warrior〉7:52、2〈Iration〉5:31、3〈Direct Action〉4:48、4〈Creation〉5:06、5〈Oppressor〉6:34、6〈Rough Dub〉6:33、7〈Sorrows Go〉4:41、8〈No Reservation〉6:19、9〈War Zone〉7:31、10〈Antelopean〉4:10、11〈Chi〉4:26）。",
+    "src": "https://www.discogs.com/master/16028"
+   },
+   {
+    "f": "同一 master（16028）的 versions 共 5 筆、狀態欄皆 Accepted、**全部標 1996**：184037（UK，On-U Sound ON-U CD 83，format 欄 Album）、296239（UK，On-U Sound ON-U LP 83，LP, Album）、2838149（UK，On-U Sound ON-U CD 83，format 欄 **Album, Promo**）、19807855（**德國**，On-U Sound ON-U CD83，Album）、2315434（**法國**，**Musidisc** 編號「119772, 18683」，Album）。**沒有 1996 年以後的版本。**",
+    "src": "https://www.discogs.com/master/16028"
+   },
+   {
+    "f": "Apple（gb 店面）collectionId 1005558723 的欄位：collectionName「State of Evolution」、artistName「Revolutionary Dub Warriors」、trackCount 11、**releaseDate「1996-05-20T00:00:00Z」——與 MB release-group 的 first-release-date 完全一致**、copyright 欄「℗ 1996 On-U Sound」、primaryGenreName Reggae、collectionViewUrl https://music.apple.com/gb/album/state-of-evolution/1005558723。",
+    "src": "https://itunes.apple.com/lookup?id=1005558723&entity=song&country=gb"
+   },
+   {
+    "f": "同一筆 Apple 條目的 11 軌逐軌（trackName／trackTimeMillis）：1「Irie Warrior」471733、2「Iration」331027、3「Direct Action」289067、4「Creation」306640、5「Oppressor」394267、6「Rough Dub」393760、7「Sorrows Go」281307、8「No Reservation」379533、9「War Zone」451493、10「Antelopean」250667、11「Chi」266800；11 軌都有 previewUrl。**曲名、曲序與曲長與 MB 那筆 CD release 的 1–11 逐項相同**（差值都在一秒內），**11 個曲名一字不差**。",
+    "src": "https://itunes.apple.com/lookup?id=1005558723&entity=song&country=gb"
+   },
+   {
+    "f": "Discogs 廠牌頁 2409「On-U Sound」的欄位：profile 欄逐句「UK based experimental reggae / dub label run by [a=Adrian Sherwood], who sometimes also operates as [a59141] (= artist credits page).」「DO NOT CONFUSE with the US based DJ / club remix label, [l=ON-USound] (with no space between \"ON-U\" and \"Sound\").」「Related labels are [l=Pressure Sounds] & [l=Green Tea].」「EFA released some remastered titles with slightly altered cover artwork before going under in 2004.」「On-U Sound was relaunched in 2002 and kicked off again with Little Axe's '[r=696899]' album. Look for newer stuff at catalogue number ON-U CD 1001 and higher.」「For Phonographic Copyright (p) and Copyright (c) please use [l=On-U Sound Records Ltd.].」「Labelcode: LC 8619/ LC 08619.」；parent_label 欄「On-U Sound Records And Music Ltd.」；sublabels 欄八個（Noah Records、ON-U Sound 10\" Disco Plate、On-U Sound MasterRecordings、On-U Sound Records、Pay It All Back、Reggae Archive、Sherwood At The Controls、Sound Boy）。",
+    "src": "https://www.discogs.com/label/2409"
+   },
+   {
+    "f": "**本張黑膠條目的 Label Code 欄寫「LC 8629」，Discogs 廠牌頁 2409 的 profile 欄卻說 On-U Sound 的廠牌代碼是「LC 8619/ LC 08619」**；本組卡 18《Happy Happer》（On-U Sound ON-U LP 77，1995）的 Discogs 條目 identifiers 欄寫的也是「LC 8619」。",
+    "src": "https://www.discogs.com/release/296239"
+   },
+   {
+    "f": "MB 上這個團另有兩個不同的 release-group（策展層已註明刻意不釘）：1994 年的《Reaction Dub, Part 1: Deliverance》（On-U Sound ON-U CD 68）與 1998 年的《Dub Fusion》（Ariwa ARICD146）。**三張的掛名字串不同**：後者掛「Revolutionary Dub Warriors meet The Mad Professor」。",
+    "src": "https://musicbrainz.org/artist/be84a0e9-d385-47db-a911-d373daf1f71f"
+   },
+   {
+    "f": "Apple gb 店面回的這筆條目與 MB／Discogs 三邊的軌數一致（11），**這是本組唯一一張 Apple 的 releaseDate 欄與 MB 的 first-release-date 完全相同的碟**（都是 1996-05-20）；本組其餘有 Apple 條目的十二張，Apple 的日期欄與兩個資料庫至少差一個月（卡 2 差 ℗ 一年、卡 6 差一年又兩個月、卡 12 差一年、卡 16 差四個月）。",
+    "src": "https://itunes.apple.com/lookup?id=1005558723&entity=song&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠少了兩首，剩下的九首在 B 面又重新排過一次順序",
+   "廠牌頁說 On-U Sound 的代碼是 LC 8619，這張碟的圓標上印的卻是 LC 8629"
+  ],
+  "sound": "曲目表上的曲名多半是單詞（〈Iration〉〈Creation〉〈Oppressor〉〈Antelopean〉〈Chi〉），另有〈Irie Warrior〉〈Direct Action〉〈Rough Dub〉〈Sorrows Go〉〈No Reservation〉〈War Zone〉。Discogs 黑膠條目的 notes、公司、credit 三欄全部空白，**這張碟的製作人與錄音室在兩個資料庫上都查不到**；identifiers 欄只有一組條碼與一個 Label Code。MB 那筆 CD release 登錄的曲長，最短的一軌〈Antelopean〉4:10、最長的一軌〈Irie Warrior〉7:52。（本欄由 MB release b4112528 的曲目表與曲長表、Discogs 條目 296239 的曲目表與 identifiers 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Irie Warrior",
+   "Rough Dub",
+   "War Zone"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1996,
+   "note": "**1996 三庫一致，卡單維持不動，而且這是本組唯一一張連日期都對得上的。** MB release-group first-release-date 1996-05-20、轄下唯一 release 的 date 欄 1996-05-20；**Apple 的 releaseDate 欄也是 1996-05-20**、copyright 欄「℗ 1996 On-U Sound」；Discogs 黑膠條目 296239 的 released 欄 1996、master 16028 的 year 欄 1996、版本表五筆全部標 1996。**行文仍只寫到年**——Discogs 那一側只給到年，**三邊有共識的最小單位是年**（第 136 條）。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：On-U Sound 廠牌線（含 Discogs 廠牌頁 2409 的 profile 欄與 sublabels 欄）、Adrian Sherwood 作為廠主的身分（**只能寫成「Discogs 廠牌頁說這家廠牌由他主持」**，第 128 條）。**卡 18 只寫自己那張的編號與共同發行方。**\n**a 組的邊界**：Discogs 廠牌頁 2409 的 profile 欄提到「Related labels are Pressure Sounds & Green Tea」——**Pressure Sounds 是 a 組獨占的復刻廠牌線，b 組不得展開**（見卡 1 notes）。**這句話可以原樣引成「廠牌頁把 Pressure Sounds 列為相關廠牌」，但不得再往下寫一個字。**\n\n**【本卡禁令】**\n(1) **原盤軌數兩庫給不同數字，兩個都不填、行文禁止給總數**（第 140／141 條）：Discogs 的 ON-U LP 83 **黑膠**曲目表只有 9 個曲位，MB 的 ON-U CD 83 **CD**、Discogs master 與 Apple 都是 11。**黑膠不只是少〈Creation〉與〈No Reservation〉兩首，B 面的曲序也和 CD 不同**（CD 第 9 首〈War Zone〉在黑膠是 B2）。**這個結構差異可以寫，但不得給總數。**\n(2) **試聽：Apple gb 的 collectionId 1005558723 逐軌核對通過，而且是本組核得最乾淨的一張。** 11 個曲名一字不差、曲序與 MB 那筆 CD release 的 1–11 逐項相同、曲長逐軌相符到一秒內，**連 releaseDate 都與 MB 的 first-release-date 相同**。**不是二合一、不是合輯、不是加曲版。** 探測層的 「ready」 判定成立。**它對應的是十一軌的 CD 側，不是九軌的黑膠。**\n(3) **Label Code 的差異只能寫成「這張碟的條目寫 LC 8629、廠牌頁寫 LC 8619」**（第 136 條），**不得判定哪一個是錯的、也不得寫成「印錯了」**。\n(4) **這張碟的製作人與錄音室查不到**——Discogs 黑膠條目的 notes、公司、credit 三欄全部空白，MB 那筆也沒有 credit。**只能寫成「那兩份紀錄上沒有」**（第 136 條），**不得寫成「這張碟沒有製作人」，尤其不得由廠牌推論是誰做的**（第 110 條）。\n(5) **Adrian Sherwood 的名字只出現在 Discogs 廠牌頁的 profile 欄，沒有出現在本張的任何 credit 欄。** **行文不得寫「Adrian Sherwood 製作了這張碟」**（第 110／128 條）。\n(6) **這個團在 MB 上的 country 與 area 都是 null，life-span begin 1991、外部連結只有 Discogs 一條。不得寫他們是哪裡人、成員是誰。**\n(7) **《Reaction Dub, Part 1: Deliverance》(1994) 與《Dub Fusion》(1998, Ariwa) 是另外兩個 release-group，刻意不釘**（策展層已註明），**不得寫成本張的前作或續作以外 facts 沒說的關係**。**尤其《Dub Fusion》在 Ariwa、掛名帶 The Mad Professor——Ariwa 與 Mad Professor 是 a 組獨占的線，本卡連提都不要提。**\n(8) **1996 年法國 Musidisc 與德國那兩筆只能寫成版本表上的紀錄**；**Promo 那筆不得展開**（第 109 條）。\n(9) 年份見 「yearVerified」：只寫 1996。"
+ },
+ {
+  "key": "desc2:Audio Active|Happy Happer",
+  "artist": "Audio Active",
+  "album": "Happy Happer",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b51f610f 的欄位：title《Happy Happer》、first-release-date 1995、primary-type Album、secondary-type-ids 空陣列；genre 欄四個標籤（dub 2 票，electro／electronic／reggae 各 1 票）；url-rels 一條指向 Discogs master 85578。artist-credit 一段「Audio Active」，藝人實體 f8771204-eedc-4bc2-bab5-daadaaec6bae，type Group、**country JP、area Japan、begin-area 東京（Tokyo）**、**life-span begin 1991、end 2005、ended true**、**disambiguation「Japanese experimental dub band」**；外部連結有 AllMusic mn0000050573、Discogs artist 15582、wikidata Q4819812、Apple Music 的 artist 頁 https://music.apple.com/jp/artist/41279773。",
+    "src": "https://musicbrainz.org/artist/f8771204-eedc-4bc2-bab5-daadaaec6bae"
+   },
+   {
+    "f": "MB 轄下 1995 那筆 release（5030286e）：title《Happy Happer》、date 1995、country GB、status Official、barcode 欄「5017687817628」；label-info 一條「On-U Sound」編號「**ON-U CD 77**」；media 一片 CD、track-count 12。逐軌曲名與曲長：1〈Audio Active's Adventure in Time & Space〉**2:41**、2〈Happy Shopper〉5:31、3〈Mammoth Galactica〉**6:40**、4〈24 Hours Explorations〉5:47、5〈Electric Bombardment〉5:18、6〈Hot Water〉4:17、7〈Jerked + Shocked〉3:52、8〈Frog in the Well〉**5:06**、9〈Dub Out of the Well〉3:26、10〈Wah Wah Zoo Mars〉5:18、11〈Dub in an Abyss〉4:33、12〈The Adventure Is Still Going On (Adventure in Time & Space, Part 2)〉3:51。",
+    "src": "https://musicbrainz.org/release/5030286e-454b-4a2c-ba3b-83938112e999"
+   },
+   {
+    "f": "MB 轄下 2003 那筆 release（dd07de93）：date 2003-12-06、country **JP**、**status 未標（為 null）**、barcode 欄「4523132111865」；label-info 一條「**Beat Records**」編號「**BRC-86**」；media 一片 CD、**track-count 15**。前 12 軌與 1995 那筆同名同序，**但曲長不同**：1〈Audio Active's Adventure in Time & Space〉**3:28**（1995 那筆是 2:41）、3〈Mammoth Galactica〉**5:32**（1995 是 6:40）、8〈Frog in the Well〉**4:58**（1995 是 5:06）；第 13–15 軌是 1995 那筆沒有的〈Electric Bombardment (remix)〉6:02、〈Happy Shopper (instrumental)〉4:11、〈Return of the Space Ape〉5:21。另一筆 2005-06-12 country DE 的 release（5a4588d8）廠牌欄寫「EFA 186 77 -2 / On-U Sound CD 77」、CD 12 軌，**曲長與 1995 那筆逐項相同**。",
+    "src": "https://musicbrainz.org/release/dd07de93-6aea-4c95-858a-545c803a437b"
+   },
+   {
+    "f": "Discogs 黑膠條目 729490：artists 欄「Audio Active」、labels 欄「On-U Sound」編號「**ON-U LP 77**」（廠牌 id 2409）、country UK、released 1995、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Electronic、styles 欄 Dub；notes 欄兩句「© 1995 On-U Sound Records Ltd」「Made in England.」。**曲目表只有 10 個曲位**（A1〈Audio Active's Adventure In Time & Space〉A2〈Happy Shopper〉A3〈**Mammoth Galactica (Jungle Government)**〉A4〈24 Hours Explorations〉B1〈Electric Bombardment〉B2〈Hot Water〉B3〈Jerked + Shocked〉B4〈Frog In The Well〉B5〈Dub Out Of The Well〉——**〈Wah Wah Zoo Mars〉〈Dub in an Abyss〉〈The Adventure Is Still Going On〉三軌在黑膠曲目表上不存在，而 A3 的曲名多了一個副標「(Jungle Government)」**）。identifiers 四條：Barcode「5 017687 817611」、兩條 etched 的 Matrix／Runout（「ON-U-LP 77 A¹ – DAMONT C」與「ON-U-LP 77 B¹ – DAMONT B」）、Label Code「**LC 8619**」。",
+    "src": "https://www.discogs.com/release/729490"
+   },
+   {
+    "f": "同一條目（729490）的公司欄七條：Record Company「**Beat Records**」、Distributed By「**EFA**」（編號欄 LP 186 77 -1）、Copyright (c)「On-U Sound Records Ltd.」、Pressed By「Damont」、Recorded At「**On-U Sound Studios**」與「**Echo House**」、Mixed At「On-U Sound Studios」。credit 欄逐條：Producer, Mixed By「**Adrian Sherwood**」與「Audio Active」；Producer [Additional]「Doug Wimbish」與「Skip McDonald」；Engineer「Andy Montgomery」「Tadashi Matsuda」；Engineer [Assistant]「Darren Grant」（anv Darren ''Daz Lightning'' Grant）與「Maggie Apostolou」；Art Direction「Hiroko Tanuma」；Design [CG. Design]「Simon Emery」「Tatsuya Horinouchi」；Photography By「Gen Inaba」。",
+    "src": "https://www.discogs.com/release/729490"
+   },
+   {
+    "f": "同一條目（729490）**逐曲位還掛了演奏名單**，例：A1 的 Bass, Music By「Taki 244」、Drums 與 Effects「Shigemoto Nanao」、Effects 與 Vocals「Masa Osada」、Effects「Needie D」；A2 的 Bass「Doug Wimbish」、Drums「Keith LeBlanc」、Vocals「Little Axe」「Masa Osada」「Yoko Ishiguro」、Words By「Angel Salvador」；A3 的 Drums「Style Scott」、Percussion「David Harrow」、Saxophone「Tetsu Nishiuchi」、Trumpet「Needie D」；A4 的 Guitar [Noise G, Feedback]「Skip McDonald」；B4／B5 的 Drums「Style Scott」、Guitar「Taki 244」、Saxophone「Tetsu Nishiuchi」。",
+    "src": "https://www.discogs.com/release/729490"
+   },
+   {
+    "f": "Discogs master 85578 的欄位：title《Happy Happer》、year 1995、main_release **27666**（是 UK 的 ON-U CD 77）、artists 欄「Audio Active」、genres 欄 Electronic 與 Reggae、styles 欄 Reggae／Dub／Electro；master 層曲目表 12 個曲位且曲長欄有值（1〈Audio Active's Adventure In Time & Space〉2:41、3〈Mammoth Galactica〉6:40、8〈Frog In The Well〉5:06 等，與 MB 1995 那筆一致）。",
+    "src": "https://www.discogs.com/master/85578"
+   },
+   {
+    "f": "同一 master（85578）的 versions 共 9 筆、狀態欄皆 Accepted：**1995 年七筆**——27666（UK，On-U Sound ON-U CD 77）、729490（UK，On-U Sound ON-U LP 77，LP, Album）、15629271（UK，ON-U-CD 77，format 欄 **Advance, Album**）、10438771（**德國**，ON-U CD 77）、1900605（**法國**，On-U Sound 編號 117882）、2961754（**日本**，**Massive (2)** 編號「827310442, BRC-4, 7310442」）、11743455（日本，**Beat Records** 編號「BRC-4, 7310442」）；**2003 年一筆**——4518216（日本，Beat Records **BRC-86**，format 欄 **Album, Reissue, Remastered**）；**另一筆 released 欄為 0（空）**——15080887（德國，ON-U CD 77，format 欄 Album, Repress）。",
+    "src": "https://www.discogs.com/master/85578"
+   },
+   {
+    "f": "Apple（gb 店面）collectionId 312372487 的欄位：**collectionName「Happy Happer (Original Version)」**、**artistName「audio active」（全小寫）**、trackCount 12、releaseDate「1995-01-01T00:00:00Z」、copyright 欄「**℗ 1995 audio active / Beat Records**」、**primaryGenreName Electronic**、collectionViewUrl https://music.apple.com/gb/album/happy-happer-original-version/312372487。",
+    "src": "https://itunes.apple.com/lookup?id=312372487&entity=song&country=gb"
+   },
+   {
+    "f": "同一筆 Apple 條目的 12 軌逐軌（trackName／trackTimeMillis）：1「Audio Active's Adventure In Time & Space」**207800**、2「Happy Shopper」330160、3「Mammoth Galactica」**332400**、4「24 Hours Exploration」345933、5「Electric Bombardment」320240、6「Hot Water」257093、7「Jerked + Shocked」231800、8「Frog In the Well」**297800**、9「Dub Out of the Well」206107、10「Wah Wah Zoo Mars」316693、11「Dub In an Abyss」272440、12「The Adventure Is Still Going On (Adventure In Time & Space, Pt. 2)」229667；12 軌都有 previewUrl。**這 12 軌的曲長與 MB 那筆 2003 年日本 BRC-86 release 的前 12 軌逐項相符**（Apple 207800／MB 208000、Apple 332400／MB 332000、Apple 297800／MB 298000…），**與 1995 年 ON-U CD 77 那筆對不上**（1995 的第 1 軌 161000、第 3 軌 400000、第 8 軌 306000）。第 4 軌的曲名 Apple 與 2003 日本版都作「24 Hours Exploration」（單數），1995 那筆作「24 Hours Explorations」。",
+    "src": "https://itunes.apple.com/lookup?id=312372487&entity=song&country=gb"
+   },
+   {
+    "f": "以廠牌反查 MB 的 Jah Shaka Music 與 Universal Egg 兩份清單裡都沒有這張碟；本張的兩個廠牌關係寫在 Discogs 條目自己的欄位裡——**公司欄同時有 Record Company「Beat Records」（日本）與 Distributed By「EFA」（德國），廠牌欄則是英國的 On-U Sound**。Discogs 廠牌頁 2409 的 profile 欄另有一句「EFA released some remastered titles with slightly altered cover artwork before going under in 2004.」",
+    "src": "https://www.discogs.com/label/2409"
+   }
+  ],
+  "hookCandidates": [
+   "Apple 那一版標著 Original Version，播出來的曲長卻對上 2003 年的日本重製版",
+   "黑膠上第三首多一個副標叫 Jungle Government，CD 與後來的所有版本都把它拿掉了"
+  ],
+  "sound": "曲目表上的曲名多半是太空與冒險詞（〈Audio Active's Adventure in Time & Space〉〈Mammoth Galactica〉〈24 Hours Explorations〉〈Electric Bombardment〉〈Wah Wah Zoo Mars〉），末軌〈The Adventure Is Still Going On〉的括號註記把它接回第一軌。Discogs 黑膠條目的公司欄寫 Recorded At 兩間錄音室（On-U Sound Studios 與 Echo House）、Mixed At On-U Sound Studios，credit 欄的 Producer, Mixed By 兩條是 Adrian Sherwood 與 Audio Active，另有兩條 Producer [Additional]（Doug Wimbish、Skip McDonald）；逐曲位還掛了鼓、貝斯、薩克斯風與人聲的分工。MB 那筆 1995 年 release 登錄的曲長，最短的一軌〈Audio Active's Adventure in Time & Space〉2:41、最長的一軌〈Mammoth Galactica〉6:40。（本欄由 MB release 5030286e 的曲目表與曲長表、Discogs 條目 729490 的曲目表、公司欄與逐曲位 credit 歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Happy Shopper",
+   "Mammoth Galactica",
+   "Frog in the Well"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1995,
+   "note": "**1995 三庫一致，卡單維持不動。** MB release-group first-release-date 1995、轄下 1995 那筆 release（ON-U CD 77）的 date 欄 1995；Discogs 黑膠條目 729490 的 released 欄 1995 與註記欄「© 1995 On-U Sound Records Ltd」、master 85578 的 year 欄 1995、版本表上七筆 1995 年的版本；Apple 的 copyright 欄「℗ 1995 audio active / Beat Records」。**四個來源都只給到年**（Apple 的 releaseDate「1995-01-01」是佔位）。**2003 年日本 BRC-86 那筆與 2005 年德國那筆是後來的版本，不得拿它們的年份當本張年份**——**特別注意 Apple 那一筆雖然標 ℗ 1995，逐軌曲長對上的卻是 2003 年那版**（見 notes）。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：本張自己的編號、兩間錄音室、完整 credit 與逐曲位演奏名單、日本／德國／法國三個市場的版本紀錄。**未取得**：On-U Sound 廠牌史與 Adrian Sherwood 作為廠主的身分（歸卡 17）——**但本張的 credit 欄裡 Adrian Sherwood 是掛 Producer, Mixed By 的，這一條屬於本卡自己的原始值，可以寫成「這張碟的 credit 欄把 Producer, Mixed By 記給他與 Audio Active」；不得展開成他的生平或 On-U Sound 的歷史。**\n\n**【本卡最重要的一條：Apple 標「Original Version」，但逐軌曲長對上的是 2003 年的日本重製版】**（推翻探測層的判定理由）\n探測層判 「ready」（collectionId 312372487，12 軌）。**逐軌核對的結果**：\n- **Apple 那 12 軌的曲長與 MB 的 2003-12-06 日本 Beat Records BRC-86 release（dd07de93）前 12 軌逐項相符**（Apple 207800／MB 208000、Apple 332400／MB 332000、Apple 297800／MB 298000…）；\n- **與 1995 年 On-U Sound ON-U CD 77（5030286e）對不上**：第 1 軌 1995 是 2:41（161000）、Apple 是 3:27（207800）；第 3 軌 1995 是 6:40（400000）、Apple 是 5:32（332400）；第 8 軌 1995 是 5:06（306000）、Apple 是 4:57（297800）。**三軌各差一分鐘上下。**\n- **曲名也跟著 2003 那版**：第 4 軌 Apple 與 2003 日本版都作「24 Hours Exploration」（單數），1995 那筆作「24 Hours Explorations」。\n- **Apple 的 ℗ 欄寫「℗ 1995 audio active / Beat Records」**——**掛的是日本 Beat Records，不是英國 On-U Sound**。\n**裁定**：**試聽可用**（同一個 release-group，MB 自己把 2003 那筆收在本 release-group 底下，且 12 軌曲名與曲序與 1995 年那版一一對應），**但盤名尾綴「(Original Version)」與這件事矛盾，必須標明**。\n**禁令**：**下游禁止把 Apple 的曲長寫成 1995 年這張碟的曲長**；**禁止把「Original Version」這個尾綴寫進盤名或行文**；要寫曲長只能引 MB 1995 那筆或 Discogs master 85578，**並標明是哪一份**。\n\n**【本卡其他禁令】**\n(1) **國籍：Audio Active 是東京的團體。** MB 藝人實體 f8771204 的 country JP、area Japan、begin-area Tokyo、disambiguation「Japanese experimental dub band」，Apple 也有一個 jp 店面的藝人頁。**行文絕對不得把他們寫成英國團體**；這條線的主體是廠牌與場景，**不是藝人國籍**。**MB 的 life-span 是 begin 1991、end 2005、ended true**——這可以寫成 MB 的欄位，**不得寫成「解散」或補敘原因**（第 136 條）。\n(2) **原盤軌數三份紀錄三個數字，一律不填、行文禁止給總數**（第 140／141 條）：Discogs 的 ON-U LP 77 **黑膠** 10 個曲位、MB 的 ON-U CD 77 **CD** 與 Discogs master、Apple 都是 12、2003 年日本 BRC-86 是 **15**。**黑膠少的三軌是〈Wah Wah Zoo Mars〉〈Dub in an Abyss〉〈The Adventure Is Still Going On〉**，**2003 年多的三軌是〈Electric Bombardment (remix)〉〈Happy Shopper (instrumental)〉〈Return of the Space Ape〉**——這兩組差異可以逐首寫，**但不得給總數**。\n(3) **黑膠 A3 的副標「(Jungle Government)」只能寫成「Discogs 黑膠條目的曲名多了這個括號」**（第 136 條），**不得推論它是什麼**（第 110 條）。\n(4) **Apple 的掛名是全小寫「audio active」**，MB 與 Discogs 都是「Audio Active」。**不得把 Apple 的寫法當正名。**\n(5) **逐曲位的演奏名單只能原樣引**（「A2 的 Vocals 欄列了 Little Axe、Masa Osada、Yoko Ishiguro」），**不得換算成「幾個人參與」或「哪些人是常駐班底」**（第 154 條）。\n(6) **Beat Records（日本）、EFA（德國）、Massive (2)（日本）與 Musidisc 只能寫成版本表與公司欄上的名字**；**不得展開成經銷網絡敘事**——facts 沒有任何一條說得出這些公司之間的關係。Discogs 廠牌頁 2409 那句「EFA released some remastered titles… before going under in 2004」**只能寫成「廠牌頁上這樣說」**（第 128 條），**而且那句話講的不是這張碟**。\n(7) **Advance／Repress／released 欄為 0 的那幾筆版本不得展開**（第 109／136 條）。\n(8) 年份見 「yearVerified」：只寫 1995。"
+ },
+ {
+  "key": "desc2:Dread & Fred|Iron Works Pt. 2 : On High",
+  "artist": "Dread & Fred",
+  "album": "Iron Works Pt. 2 : On High",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 52ea4670 的欄位：title《Iron Works Pt. 2 : On High》、first-release-date 1991、primary-type Album、secondary-type-ids 空陣列；genre 欄三個標籤各 1 票（dub、electronic、reggae）；**url-rels 一條都沒有**。artist-credit 一段「Dread & Fred」，藝人實體 4f91bad3-1461-4701-8fde-221011841ffe，**type 為 null、country／area／begin-area／life-span 全為 null、disambiguation 空、aliases 空**，**外部連結只有一條 Discogs artist 352155**。",
+    "src": "https://musicbrainz.org/release-group/52ea4670-34b1-46bf-b073-baa20b699d8d"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（a8983594）：title《Iron Works Pt. 2 : On High》、date 1991、country GB、**status 未標（為 null）**、barcode 為 null；label-info 一條「Jah Shaka Music」編號「**SHAKA 915**」；media 一片「12\" Vinyl」、track-count 10；**10 軌的 length 欄全部為 null**。曲目表：1〈Dub On The Move〉2〈Mystical Forces〉3〈The Highest Region〉4〈Advancing Warriors〉5〈Jah Children〉6〈On High〉7〈Jah Send Me〉8〈**Scratching Dub**〉9〈**Realm Of The Heart**〉10〈Mandela Dub〉。",
+    "src": "https://musicbrainz.org/release/a8983594-caf6-4b90-8515-4edff317de67"
+   },
+   {
+    "f": "Discogs 原盤條目 1681361：**title 欄只寫《On High》**、artists 欄「Dread & Fred」（anv 欄「Dread And Fred」）、labels 欄「Jah Shaka Music」編號「SHAKA 915」（廠牌 id 30205）、country UK、released 1991、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Electronic 與 Reggae、styles 欄 Dub。notes 欄逐句：「Arranged at [l329953].」「Much thanks to King Rastafari also [a1223399] of [l614721] and Kwese and Iron Works Crew and respect to all artists and musicians worldwide.」曲目表 10 個曲位、分兩面：A1〈Dub On The Move〉A2〈Mystical Forces〉A3〈The Highest Region〉A4〈Advancing Warriors〉A5〈Jah Children〉B1〈On High〉B2〈Jah Send Me〉B3〈**Scratch Dubbing**〉B4〈**Realm Of The Heartbeat**〉B5〈Mandela Dub〉，曲長欄 10 軌全部空白。",
+    "src": "https://www.discogs.com/release/1681361"
+   },
+   {
+    "f": "同一條目（1681361）的公司欄五條：Distributed By「**Jet Star**」、Recorded At／Mixed At 皆「**Iron Works Studio**」、Pressed By／Plated At 皆「P.R. Records Limited」。credit 欄逐條：Arranged By, Recorded By, Mixed By「Dread & Fred」（anv Dread And Fred）；Instruments「Dread & Fred」；**Executive-Producer「Jah Shaka」**；Keyboards [Additional]「Lloyd Gus McKenzie」（anv Lloyd-Gus-McKenzie）；Mastered By「**Terry Newman**」；Plated By「P (29)」。identifiers 兩條 Matrix／Runout：「SHA 915 A 1 PR-P」（Side A）與「SHA 915 B 1 PR-P」（Side B）。",
+    "src": "https://www.discogs.com/release/1681361"
+   },
+   {
+    "f": "Discogs master 3268972 的欄位：**title《On High》**、year 1991、main_release 1681361、artists 欄「Dread & Fred」（anv Dread And Fred）、genres 欄 Electronic 與 Reggae、styles 欄 Dub；master 層曲目表就是黑膠那 10 個曲位。**同一 master 的 versions 只有 2 筆、狀態欄皆 Accepted**：1681361（1991 UK，Jah Shaka Music SHAKA 915，LP, Album）與 28544458（**released 欄為 0＝空**，UK，同編號 SHAKA 915，LP, Album）。",
+    "src": "https://www.discogs.com/master/3268972"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Jah Shaka Music\"` 回 **85 筆**。掛 Dread & Fred 的有四筆：**SHAKA 875《Iron Works》(1989)**、**SHAKA 915《Iron Works Pt. 2 : On High》(1991，本張)**、**SHAKACD 915《Iron Works Parts 1 & 2 (\"On High\")》(1991)**、SHAKA 937《Iron Works Pt 3 African Chant》(1993)。同一份清單裡另有 Jah Shaka 自己的《Commandments of Dub》系列（SHAKA 824／841／847／851／856／860／868 等）、《New Testaments of Dub》系列、以及掛 Max Romeo（SHAKA 921）、Twinkle Brothers（SHAKACD 917）、**Willie Williams《See Me》(SHAKA 949, 1993)**、Aswad、Icho Candy、Tony Tuff、Johnny Clark、Winston Jarrett 等人的碟。",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Jah%20Shaka%20Music%22&limit=100&fmt=json"
+   },
+   {
+    "f": "**策展層說「1991 年那張二合一 CD 在 MB 上未見獨立 release-group」——這個說法不成立。** 以編號反查 MB（`release?query=catno:\"SHAKACD 915\"`）回一筆 release 8e58e02d-effd-41d7-86e4-f2b42214ed50，title《Iron Works Parts 1 & 2 (\"On High\")》、date 1991，**它的 release-group 是 92b164b5-6bcc-45ba-995e-c0a5510cb4e5，標題同樣是《Iron Works Parts 1 & 2 (\"On High\")》**——**MB 上確實有這個獨立的 release-group，與卡片釘住的 52ea4670 是兩個不同的實體。**",
+    "src": "https://musicbrainz.org/ws/2/release?query=catno%3A%22SHAKACD%20915%22&fmt=json"
+   },
+   {
+    "f": "Apple 試聽查證路徑一（掛名＋盤名，兩種掛名拼法）：以「Dread and Fred Iron Works」搜 gb 與 us，兩邊各回 **2 筆**，都是同一組：**603573327「Dread And Fred —《Iron Works, Pt. 1 & 2 ''on High''》(標 1988, 20 軌)」**與 677011330「Dread And Fred —《African Chant - Iron Works, Pt. 3 (feat. Jah Shaka)》(1993, 10 軌)」。以「Dread Fred On High」搜 gb 回 3 筆、us 回 4 筆，掛這個對象的仍只有 603573327 那一筆（其餘是 Tems、Vince Guaraldi Trio、CeCe Winans 的誤配）。以「Iron Works dub Shaka」搜 gb 與 us 各回 1 筆，是 677011330。**兩個店面、四種查詢字串，Apple 上掛 Dread And Fred 的碟只有這兩張。**",
+    "src": "https://itunes.apple.com/search?term=Dread%20and%20Fred%20Iron%20Works&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Apple collectionId **603573327** 的欄位：collectionName「**Iron Works, Pt. 1 & 2 ''on High''**」、artistName「Dread And Fred」、**trackCount 20**、releaseDate「1988-08-01T00:00:00Z」、copyright 欄「**℗ 1991 Jah Shaka Music**」、collectionViewUrl https://music.apple.com/gb/album/iron-works-pt-1-2-on-high/603573327。逐軌（trackName／trackTimeMillis）：1「Mighty Sounds」220307、2「High Priest」196600、3「African Dawn」231160、4「Warrior Stance」240867、5「Spirit 2000」136067、6「Iron Works」186373、7「Steady Rock」214693、8「Zulu Skank」202067、9「African Seashore」227400、10「Mission Dub」286507、11「Dub On the Move」271467、12「Mystical Forces」248133、13「The Highest Region」251960、14「Advancing Warriors」251000、15「Jah Children」259907、16「On High」245227、17「Jah Send Me」246040、18「Scratch Dubbing」250333、19「Realm of the Heartbeat」251133、20「Mandela Dub」253760。",
+    "src": "https://itunes.apple.com/lookup?id=603573327&entity=song&country=gb"
+   },
+   {
+    "f": "把上一條的 20 軌與本張原盤並排：**Apple 的第 11–20 軌，就是本張 SHAKA 915 十軌的完整曲目表、而且曲序逐項相同**（Dub On the Move／Mystical Forces／The Highest Region／Advancing Warriors／Jah Children／On High／Jah Send Me／Scratch Dubbing／Realm of the Heartbeat／Mandela Dub，末三軌的拼法跟著 Discogs 而不是 MB）。**Apple 的第 1–10 軌（Mighty Sounds／High Priest／African Dawn／Warrior Stance／Spirit 2000／Iron Works／Steady Rock／Zulu Skank／African Seashore／Mission Dub）不在本張的任何一份曲目表上**，它們對應的是同系列 1989 年的 SHAKA 875《Iron Works》。",
+    "src": "https://itunes.apple.com/lookup?id=603573327&entity=song&country=gb"
+   },
+   {
+    "f": "Discogs 廠牌頁 30205「Jah Shaka Music」的欄位：**profile 欄是空字串（0 個字）**、contact_info 欄空、sublabels 欄空、urls 欄空。**這家廠牌在 Discogs 上沒有任何廠牌史可查。**",
+    "src": "https://www.discogs.com/label/30205"
+   }
+  ],
+  "hookCandidates": [
+   "Apple 上找得到這十首，但它們被裝在一張二十軌的碟裡，前十首是另一張專輯",
+   "同一張黑膠三個盤名：圓標印 On High，MB 寫 Iron Works Pt. 2 : On High，CD 版又叫 Iron Works Parts 1 & 2"
+  ],
+  "sound": "曲目表 10 個曲位、分兩面，曲名多半是 dub 慣用的詞與意象（〈Dub On The Move〉〈Mystical Forces〉〈The Highest Region〉〈Advancing Warriors〉〈Jah Children〉〈On High〉〈Jah Send Me〉〈Scratch Dubbing〉〈Realm Of The Heartbeat〉〈Mandela Dub〉）。Discogs 原盤條目的公司欄寫 Recorded At／Mixed At 都是「Iron Works Studio」、Distributed By「Jet Star」、Pressed By／Plated At「P.R. Records Limited」；credit 欄把 Arranged By／Recorded By／Mixed By 與 Instruments 都記給 Dread & Fred 自己，Executive-Producer 記給 Jah Shaka，另有一條 Keyboards [Additional]「Lloyd Gus McKenzie」與 Mastered By「Terry Newman」。**曲長無從歸納：MB 那筆 release 的 10 軌 length 欄全部為 null，Discogs 條目的曲長欄也全部空白**；Apple 那筆二合一雖有曲長，**但那是另一張碟的紀錄，不得引用**（見 notes）。（本欄由 MB release a8983594 與 Discogs 條目 1681361 的曲目表、Discogs 條目的公司與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Dub On The Move",
+   "On High",
+   "Mandela Dub"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1991,
+   "note": "**1991 兩庫一致，卡單維持不動。** MB release-group first-release-date 1991、轄下唯一 release 的 date 欄 1991；Discogs 原盤條目 1681361 的 released 欄 1991、master 3268972 的 year 欄 1991；以廠牌反查 MB 的 Jah Shaka Music 清單裡，SHAKA 915 那筆的 date 欄也是 1991。**Apple 那筆二合一的 releaseDate 欄寫「1988-08-01」、copyright 欄寫「℗ 1991 Jah Shaka Music」——那是另一張碟的紀錄**（見 notes），**兩個欄位都不得引用**。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：本張自己的編號、公司欄與 credit 欄、Iron Works 這個系列在 MB 廠牌清單上的四筆紀錄。**未取得**：Jah Shaka Music 廠牌線與 Jah Shaka 作為廠主的敘事（歸卡 20）——**本卡的 credit 欄雖然把 Executive-Producer 記給 Jah Shaka，也只能寫成「這張碟的 credit 欄這樣記」**。\n**注意：Jah Shaka Music 這條線的 facts 很薄**——Discogs 廠牌頁 30205 的 profile／contact／sublabels／urls **四欄全空**。依第 138 條，**廠牌史這條線就讓它閒置**；要寫只能寫 MB 以廠牌反查出來的 85 筆目錄清單（哪些年、哪些編號、哪些掛名）。\n\n**【本卡最重要的一條：Apple 上有命中，但那是另一張碟（二合一）】**\n探測層判 「unavailable」（gb 2→0、us 2→0，八個店面全查無）。**依第 152 條重查之後，Apple 上其實有命中，但命中的不是這張碟：**\n- **collectionId 603573327《Iron Works, Pt. 1 & 2 ''on High''》，20 軌**；\n- **逐軌核對：第 11–20 軌正好是本張 SHAKA 915 的十軌全部曲目、曲序逐項相同**；\n- **第 1–10 軌（Mighty Sounds／High Priest／African Dawn／Warrior Stance／Spirit 2000／Iron Works／Steady Rock／Zulu Skank／African Seashore／Mission Dub）不在本張的任何一份曲目表上**，對應的是同系列 1989 年的 SHAKA 875《Iron Works》。\n**這正是策展層 curatorRisk 說的那張二合一 CD（Jah Shaka Music SHAKACD 915，Discogs release 2568808）。**\n**裁定：「unavailable」 維持，但理由要改寫**——不是「Apple 上沒有」，是「**Apple 上只有把本張與 1989 年那張併在一起的二合一，依第 129／140 條不得當本張的版本來源，也不得拿它的軌數或曲長反推原盤**」。\n**禁令**：\n(1) **不得把 603573327 當本卡的試聽、封面或版本來源。**\n(2) **不得引用它的任何一個曲長**（本張兩個資料庫的曲長欄都是空的，**這張碟目前沒有可用的曲長來源**）。\n(3) **不得寫「Apple 上找得到這張碟」**；要提只能寫成「Apple 上有的是把兩張併成一片的版本」。\n\n**【本卡的第二個推翻：策展層說 MB 上沒有二合一的 release-group，那是錯的】**\nmbNote 寫「1991 年那張二合一 CD 在 MB 上未見獨立 release-group，若日後建檔亦不得改釘」。**以編號反查 MB 之後，那個 release-group 已經存在**：92b164b5-6bcc-45ba-995e-c0a5510cb4e5《Iron Works Parts 1 & 2 (\"On High\")》，轄下 release 8e58e02d（SHAKACD 915，1991）。\n**裁定**：**rgMbid 維持 52ea4670 不動**（那是十軌黑膠這一張碟的實體，也是卡片要的東西；92b164b5 是二合一，**依第 129／140 條本來就不該釘**）。**mbNote 的「未見」二字作廢，以本 notes 為準**（第 142 條）。\n\n**【本卡其他禁令】**\n(1) **盤名三說，只能寫成「哪份紀錄上寫成哪樣」**（第 136 條）：MB 的 release-group 與 release 都寫《Iron Works Pt. 2 : On High》、**Discogs 的原盤條目與 master 只寫《On High》**、二合一 CD 那一版叫《Iron Works Parts 1 & 2 (\"On High\")》。**不得寫成「原本叫 X 後來改叫 Y」。**\n(2) **末三軌的曲名兩庫不同**：MB〈Scratching Dub〉〈Realm Of The Heart〉／Discogs 與 Apple〈Scratch Dubbing〉〈Realm Of The Heartbeat〉。**只能寫成「哪份紀錄寫成哪樣」，不得判定誰對誰錯。**\n(3) **原盤軌數兩庫一致（10），可以寫**——MB 的 track-count 欄 10、Discogs 曲目表 10 個曲位（A1–B5）。**但不得把二合一那 20 軌拿來對比後寫成「原盤只有一半」之類的推論。**\n(4) **掛名 Dread & Fred 在 MB 上 type 為 null、country／area／life-span 全為 null、外部連結只有 Discogs 一條。不得寫他們是誰、幾個人、哪裡人。** Discogs 的 anv 欄寫「Dread And Fred」，**這是拼寫變體，不是另一個對象**。\n(5) **Discogs 註記欄那兩句致謝只能原樣引成「那份條目的註記欄寫了這些」**（第 128／136 條），**不得展開成故事**；**其中的方括號標記（[l329953]／[a1223399]／[l614721]）是 Discogs 的內部連結語法，facts 沒有解出它們指向誰，行文不得猜**。\n(6) **編號 28544458 那筆版本的 released 欄是 0（空），不得給它年份**（第 136 條）。\n(7) 年份見 「yearVerified」：只寫 1991。"
+ },
+ {
+  "key": "desc2:Willi Williams|Natty With a Cause",
+  "artist": "Willi Williams",
+  "album": "Natty With a Cause",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 07ae2a63 的欄位：title《Natty With a Cause》、first-release-date 1992、primary-type Album、secondary-type-ids 空陣列；genre 欄 reggae 與 roots reggae 各 1 票；**url-rels 一條都沒有**。artist-credit 一段「Willi Williams」，指向藝人實體 14f03e90-a90c-4579-8faf-5296d716c3a7。",
+    "src": "https://musicbrainz.org/release-group/07ae2a63-e5a4-492c-9e09-42d842e8581c"
+   },
+   {
+    "f": "MB 藝人實體 14f03e90 的欄位：name「**Willi Williams**」（單 e）、sort-name「Williams, Willi」、type Person、**country JM、area Jamaica、begin-area「Saint Ann」**、life-span begin **1953**（end 為 null）、disambiguation「Jamaican reggae artist」；**aliases 四筆：「W. Williams」「Wilbert Williams」「Willie Williams」（雙 e）「Willy Williams」**；url-rels 包括 AllMusic mn0002332669、Discogs artist 258317、官方網站 williwilliams.com、Last.fm、RateYourMusic 的 willie_williams、wikidata Q3568371。**「Willie Williams」在 MB 上是這個實體的別名，不是另一個人。**",
+    "src": "https://musicbrainz.org/artist/14f03e90-a90c-4579-8faf-5296d716c3a7"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（39b985f5）：title《Natty With a Cause》、date 1992、country GB、status Official、barcode 為 null；label-info 一條「Jah Shaka Music」編號「**SHAKA 922**」；media 一片「12\" Vinyl」、track-count 10。逐軌曲名與曲長：1〈Promises〉3:42、2〈So Real〉3:39、3〈Natty With a Cause〉3:43、4〈Stand Up〉3:56、5〈Part in Armagedon〉3:09、6〈Jah So Right〉3:54、7〈Watching & Waiting〉3:01、8〈Halilu Jah〉3:29、9〈Sun Is Shining〉4:19、10〈Our History〉2:54。",
+    "src": "https://musicbrainz.org/release/39b985f5-49d3-43bd-9541-3a433966c53a"
+   },
+   {
+    "f": "Discogs 原盤條目 1568177：**artists 欄「Willi Williams」但 anv 欄寫「Willie Williams」**、labels 欄「Jah Shaka Music」編號「SHAKA 922」（廠牌 id 30205）、country UK、released 1992、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Reggae、styles 欄 Roots Reggae；notes 欄一句「Variant text back cover - [r8974332]」。曲目表 10 個曲位、分兩面（A1〈Promises〉A2〈So Real〉A3〈Natty With A Cause〉A4〈Stand Up〉A5〈Part In Armagedon〉B1〈Jah So Right〉B2〈Watching & Waiting〉B3〈Halilu Jah〉B4〈Sun Is Shining〉B5〈Our History〉），**與 MB 那筆的 1–10 同名同序**；曲長欄 10 軌全部空白。",
+    "src": "https://www.discogs.com/release/1568177"
+   },
+   {
+    "f": "同一條目（1568177）的公司欄四條：Phonographic Copyright (p)／Copyright (c) 皆「**Greensleeves Records**」、Recorded At／Mixed At 皆「**Remaximum Studios**」。credit 欄五條：**Backing Band「Jah Shaka All Stars」（anv Shaka All Stars）與「The Fasimbas」（anv Fasimbas）**；**Composed By, Arranged By, Mixed By, Producer「Jah Shaka」**；Mastered By「Terry Newman」。identifiers 三條：Barcode「5 016930 512013」、兩條 etched 的 Matrix／Runout（「SHA 922 - A2 PR - m」與「SHA 922 - B1 PR - m」）。",
+    "src": "https://www.discogs.com/release/1568177"
+   },
+   {
+    "f": "Discogs master 646883 的欄位：title《Natty With A Cause》、year 1992、main_release 1568177、artists 欄「Willi Williams」（anv Willie Williams）、genres 欄 Reggae、styles 欄 Roots Reggae；master 層曲目表就是黑膠那 10 個曲位。**同一 master 的 versions 共 4 筆、狀態欄皆 Accepted**：1568177（1992 UK，SHAKA 922，LP, Album）、5334405（1992 UK，**SHAKACD 922**，format 欄 Album）、31890991（1992 UK，SHAKA 922，LP, Album）、8974332（**released 欄為 0＝空**，UK，SHAKA 922，format 欄 LP, Album, **Repress**）。",
+    "src": "https://www.discogs.com/master/646883"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Jah Shaka Music\"` 回 **85 筆**，是本組九家廠牌裡最多的一家。年份最早的幾筆是 1982 年的 SHAKA 824《Commandments of Dub》、1983 年的 SHAKA 831《Brimstone & Fire》與 SHAKA 833《Revelation Songs》，一路排到 2009 年的 SHAKA 997《Jah Is Everything》。**《Commandments of Dub》系列在這份清單上至少有 Chapter 2（SHAKA 841）、Part 3（SHAKA 847）、Part 4（SHAKA 851）、Part 5（SHAKA 856）、Chapter 6（SHAKA 860）、Chapter 8（SHAKA 868）、Chapter 9（SHAKACD 872）等編號**；另有《New Testaments of Dub》系列（SHAKA 923／936）。掛其他歌手的包括 Max Romeo（SHAKA 921）、Twinkle Brothers（SHAKACD 917）、Aswad（SHAKACD 850）、Junior Brown（SHA-844 LP）、Icho Candy（SHAKA 948）、Tony Tuff、Johnny Clark、Winston Jarrett、Stranjah Cole，以及**本組卡 19 的 Dread & Fred 四筆**。 **同一份清單裡，同一位歌手在同一家廠牌用了兩種拼法**：1992 年 SHAKA 922 這筆的 artist-credit 是「Willie Williams」（雙 e），1993 年 SHAKA 949《See Me》那筆也是「Willie Williams」，**而卡片與 MB 藝人實體的正名是「Willi Williams」（單 e）**。",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Jah%20Shaka%20Music%22&limit=100&fmt=json"
+   },
+   {
+    "f": "Apple 試聽查證路徑一（掛名＋盤名，兩種拼法）：以「Willi Williams Natty With a Cause」搜 gb 與 us，兩邊各回 **6 筆、沒有一筆是這張碟**（Dolly Parton《Jolene》《Something Special》、Kenny Rogers、以及三首〈I Will Always Love You〉的翻唱單曲——**是「Williams」與「Will」的字串誤配**）。以「Willie Williams Natty」搜 gb 與 us，兩邊 **resultCount 都是 0**。",
+    "src": "https://itunes.apple.com/search?term=Willi%20Williams%20Natty%20With%20a%20Cause&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Apple 試聽查證路徑二（拆到只剩核心 ASCII 字的單獨盤名）：以「Natty With a Cause」搜 gb 與 us，兩邊各回 **1 筆、不是這張碟**——1616027545「Natty Barjon —《Cause I'll Be - Single》(2022, 1 軌)」。",
+    "src": "https://itunes.apple.com/search?term=Natty%20With%20a%20Cause&entity=album&limit=25&country=us"
+   },
+   {
+    "f": "Apple 試聽查證路徑三（單獨掛名的兩種拼法）：以「Willi Williams」搜 gb 回 25 筆，掛這個對象的有《Unification: From Channel One To King Tubby's》(2014)、《Reggae Can't Done》(2013)、《Di Real Rock》(2007)、《From Studio One to Drum Street》(2008)、《Glory To The King》(2025) 等，**沒有《Natty With a Cause》**；以「Willie Williams reggae」搜 gb 回 9 筆，掛這個對象的有 601631773《See Me》(標 1988, 10 軌) 與 603492349「Jah Shaka —《Dub Salute 3 (feat. Willie Williams)》(1994, 10 軌)」，**同樣沒有《Natty With a Cause》**。",
+    "src": "https://itunes.apple.com/search?term=Willi%20Williams&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Discogs 廠牌頁 30205「Jah Shaka Music」的 profile 欄是空字串（0 個字），contact_info／sublabels／urls 三欄也全空。**這家廠牌在 Discogs 上沒有任何可引的廠牌敘述。**",
+    "src": "https://www.discogs.com/label/30205"
+   }
+  ],
+  "hookCandidates": [
+   "同一個人在同一家廠牌，1992 年那張掛 Willie，卡片與 MB 的正名卻是少一個 e 的 Willi",
+   "Discogs 的 credit 欄把伴奏團寫成兩個：Jah Shaka All Stars 與 The Fasimbas"
+  ],
+  "sound": "曲目表 10 個曲位、分兩面，曲名以宗教與生活用語為主（〈Promises〉〈So Real〉〈Natty With a Cause〉〈Stand Up〉〈Part in Armagedon〉〈Jah So Right〉〈Watching & Waiting〉〈Halilu Jah〉〈Sun Is Shining〉〈Our History〉）。Discogs 原盤條目的公司欄寫 Recorded At／Mixed At 都是 Remaximum Studios、©／℗ 兩欄都是 Greensleeves Records；credit 欄把 Composed By／Arranged By／Mixed By／Producer 四個角色全部記給 Jah Shaka，Backing Band 兩條分別是 Jah Shaka All Stars 與 The Fasimbas，Mastered By 是 Terry Newman。MB 那筆 release 登錄的曲長，最短的一軌〈Our History〉2:54、最長的一軌〈Sun Is Shining〉4:19。（本欄由 MB release 39b985f5 的曲目表與曲長表、Discogs 條目 1568177 的公司與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Natty With a Cause",
+   "Promises",
+   "Sun Is Shining"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1992,
+   "note": "**1992 兩庫一致，卡單維持不動。** MB release-group first-release-date 1992、轄下唯一 release 的 date 欄 1992；Discogs 原盤條目 1568177 的 released 欄 1992、master 646883 的 year 欄 1992、版本表上三筆都標 1992（第四筆的 released 欄是 0＝空）；以廠牌反查 MB 的清單裡 SHAKA 922 那筆的 date 欄也是 1992。**四個來源都只給到年**。Apple 上查無這張碟，沒有第三方年份可對。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：Jah Shaka Music 廠牌線（以 MB 反查的 85 筆目錄清單為主）、Jah Shaka 作為廠主與製作人的身分。**卡 19 只寫自己條目上的 Executive-Producer 欄。**\n**注意：這條線只剩目錄清單可寫**——Discogs 廠牌頁 30205 的 profile／contact／sublabels／urls **四欄全空**，**沒有廠牌史**。依第 138 條，**廠牌的來歷、創立年、經營方式一律不寫**；能寫的是「MB 以廠牌反查回 85 筆，最早的 date 欄是 1982 年的 SHAKA 824」這種**清單上的原始值**。\n**a 組的邊界**：以廠牌反查回的清單裡有 Aswad《Jah Shaka meets Aswad in Addis Ababa Studio》——**Addis Ababa Studio 不在 a 組獨占的兩間錄音室（Channel One／King Tubby's）之內，但本卡也沒有這張碟的任何 facts，不要提**（第 146 條：分派不要順手替別張卡描述它查不到來源的事）。**另外 Apple 搜尋回的《Unification: From Channel One To King Tubby's》(2014) 盤名裡有 a 組獨占的兩間錄音室——那只是 Apple 清單上的一個盤名字串，行文不得引用，更不得展開。**\n\n**【身分：兩種拼法是同一個人，MB 已經把它收成別名】**\n策展層的 curatorRisk 說「`willi` 與 `willie` 正規化後是兩個不同的鍵，跨批去重看不見這組差異」，並把它歸為第 149 條的別名陷阱。**回問 MB 藝人實體之後可以確認：這不是兩個對象。** 實體 14f03e90 的正名是「Willi Williams」，**aliases 欄同時收了「Willie Williams」「Willy Williams」「W. Williams」「Wilbert Williams」四筆**。Discogs 的處理方式是把「Willie Williams」放進 anv 欄、artists 欄仍寫「Willi Williams」。\n**裁定**：卡片掛名維持「Willi Williams」（MB 正名，也是 Discogs 的 artists 欄）。**行文提到拼法差異時只能寫成「MB 把 Willie Williams 收為這個實體的別名」**（第 136 條），**不得寫成「兩種拼法指的其實是同一人」以外的推論，也不得判定哪一個才是本名**。\n\n**【本卡禁令】**\n(1) **原盤軌數兩庫一致（10），可以寫**——MB 的 track-count 欄 10、Discogs 曲目表 10 個曲位（A1–B5）、兩份的 1–10 同名同序。**但 1992 年另有一張 SHAKACD 922 的 CD 版（Discogs 5334405），facts 裡沒有它的曲目表，不得說 CD 也是 10 軌。**\n(2) **試聽：Apple 上真的沒有這張碟，探測層的 「unavailable」 成立。** 已依第 152 條做三路查詢：**(a) 掛名＋盤名的兩種拼法**（「Willi Williams Natty With a Cause」gb／us 各 6 筆全是 Dolly Parton、Kenny Rogers 這類「Williams／Will」誤配；「Willie Williams Natty」gb／us **resultCount 都是 0**）；**(b) 拆到只剩核心 ASCII 字的單獨盤名**（「Natty With a Cause」gb／us 各 1 筆，是 Natty Barjon 的單曲）；**(c) 單獨掛名的兩種拼法**（「Willi Williams」gb 25 筆、「Willie Williams reggae」gb 9 筆）→ **掛這個對象的碟有好幾張，但沒有一張是《Natty With a Cause》**。**這是「搜到的是別人的碟」與「這個歌手在 Apple 上有別的碟、就是沒有這一張」兩種，不是比對法把它擋掉**（第 152 條）。\n(3) **Greensleeves Records 只出現在 ©／℗ 兩欄**。**只能寫成「那份條目的著作權欄填的是這個名字」**（第 136 條），**不得寫成「由 Greensleeves 發行」或展開成經銷關係**。\n(4) **Backing Band 兩條（Jah Shaka All Stars、The Fasimbas）只能原樣引**；**不得寫成「兩個團一起伴奏」或推論它們的關係**（第 110 條）。以廠牌反查回的清單裡另有 1993 年的 SHAKACD935《In The Ghetto》掛「Jah Shaka+The Fasimbas」——**那是另一張碟，只能寫成清單上的一筆**。\n(5) **〈Part in Armagedon〉這個曲名不得連到任何其他錄音或典故**（第 110 條）；**尤其不得連到本組卡 7 的團名 Armagideon**——兩者在 facts 上沒有任何關係。\n(6) **Repress 那筆（8974332）的 released 欄是 0（空），不得給它年份**；**Discogs 註記欄那句「Variant text back cover」只能原樣引成「那份條目說另一筆的封底文字不同」**（第 136 條），**不得寫成版本差異的敘述**。\n(7) **1993 年的《See Me》(SHAKA 949) 是另一個 release-group**（策展層已註明刻意不釘），**不得混寫**。\n(8) 年份見 「yearVerified」：只寫 1992。"
+ },
+ {
+  "key": "desc2:Alpha & Omega|Watch and Pray",
+  "artist": "Alpha & Omega",
+  "album": "Watch and Pray",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 35ba93a6 的欄位：title《Watch and Pray》、first-release-date 1992、primary-type Album、secondary-type-ids 空陣列；genre 欄 dub 與 reggae 各 1 票；**url-rels 一條都沒有**。artist-credit 一段「Alpha & Omega」，藝人實體 0ac81a92-b119-40be-875d-e091071588f8，type Group、country GB、area United Kingdom、**begin-area「Plymouth」**、life-span 全空、**disambiguation「dub/reggae duo」**、alias 一筆「Alpha and Omega」；外部連結包括 AllMusic mn0000016414、Bandcamp、Discogs artist 43151、官方網站 alphaandomega.co.uk、wikidata Q2839521。",
+    "src": "https://musicbrainz.org/artist/0ac81a92-b119-40be-875d-e091071588f8"
+   },
+   {
+    "f": "MB 轄下 1992 那筆 release（d116af1b）：title《Watch and Pray》、date 1992、country GB、status Official、barcode 為 null；label-info 一條「Alpha & Omega Records」編號「**A&O 027**」；media 一片「12\" Vinyl」、track-count 10；**10 軌的 length 欄全部為 null**。曲目表：1〈Respect to the Warrior〉2〈Who Is the Ruler?〉3〈Africa〉4〈Wicked Man Drop〉5〈Prophecy Fulfilled〉6〈Rastafari〉7〈Dub Flute〉8〈Fire!〉9〈Merciful Jah〉10〈Roots〉。",
+    "src": "https://musicbrainz.org/release/d116af1b-44f7-45ea-8238-3727d0989b2b"
+   },
+   {
+    "f": "MB 轄下另外兩筆 release，皆 status Official、皆 10 軌、**曲名與 1992 年那筆同序**：57defdfc（date **1998**、country GB、label-info 欄的廠牌名為空、barcode 為 null，逐軌曲長 3:43／3:50／3:17／4:14／3:56／3:45／3:42／3:44／4:00／3:43）與 3951c9be（date **2020-06-09**、country **XW**、載體欄 Digital Media、無廠牌、barcode 為 null，逐軌曲長 3:39／3:46／3:17／4:08／3:55／3:44／3:37／3:42／3:57／3:40）。**兩筆的曲長逐軌不同**（例：第 1 軌 1998 是 223546 毫秒、2020 是 219160 毫秒）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35ba93a6-6560-3b4b-8f91-5093ed0410d5&inc=recordings+labels+media&fmt=json"
+   },
+   {
+    "f": "Discogs 原盤條目 509013：**title 欄寫《Watch & Pray》（用 & 不是 and）**、artists 欄「Alpha & Omega」、labels 欄「Alpha & Omega Records」編號「A&O 027」（廠牌 id 8607）、country UK、released 1992、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Electronic 與 Reggae、styles 欄 Dub。**notes 欄一句：「Track B5 is the instrumental version from Dub Judah / Honest Opinion from release : [r509020]」**。曲目表 10 個曲位、分兩面：A1〈Respect To The Warrior〉A2〈Who Is The Ruler ?〉A3〈Africa〉A4〈Wicked Man Drop〉A5〈Prophecy Fulfilled〉B1〈Rastafari〉B2〈Dub Flute〉B3〈Fire !〉B4〈Merciful Jah〉B5〈The Roots〉，曲長欄 10 軌全部空白。**B5 在 Discogs 叫〈The Roots〉、MB 那筆 1992 release 叫〈Roots〉。**",
+    "src": "https://www.discogs.com/release/509013"
+   },
+   {
+    "f": "同一條目（509013）的公司欄兩條：Recorded At／Mixed At 皆「**Roaring Lion Studio**」。credit 欄四條：**Bass, Keyboards, Percussion「Christine Woodbridge」**；**Drums, Keyboards, Melodica, Guitar「John Sprosen」**；Producer「Alpha & Omega」；Voice「Nishka」（anv 欄「Tanernishka」）。identifiers 兩條 Matrix／Runout，都標 etched：A 面「A   *-J.T.S.-*」、B 面「A&O 027-B   *-J.T.S.-*」。",
+    "src": "https://www.discogs.com/release/509013"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Alpha & Omega Records\"` 回 **27 筆**。1989–2000 年的部分包括 A&O01《Daniel In The Lions Den》(1989)、A&O009《King & Queen》(1989)、**A&O 027《Watch and Pray》(1992，本張)**、A&O18《**Overstanding**》(1992)、A&O09《Daniel in the Lions Den / King and Queen》(1992)、A&O77CD《Almighty Jah》(1992，掛 Alpha & Omega+Dub Judah)、A&OCD093《Everyday Life》(1993)、A&OCD94《Safe in the Ark》(1994)、A&O095CD《Dub Plate Selection, Volume 1》(1995-04-03)、A&O96《Tree of Life》(1996)、A&O 1002《Rastafari / Words Of Thy Mouth》(1996)、A&OCD97《Voice in the Wilderness》(1996)、A&OCD98《Dub Plate Selection, Volume 2》(1997)、A&OCD2000《The Sacred Art of Dub》(1998，掛 Alpha & Omega+The Disciples)、**A&OCD27《Watch and Pray & Overstanding》(2000)**。",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Alpha%20%26%20Omega%20Records%22&limit=100&fmt=json"
+   },
+   {
+    "f": "Apple 試聽查證路徑一（掛名＋盤名，兩種寫法）：以「Alpha and Omega Watch and Pray」搜 gb 與 us、以「Watch and Pray Alpha Omega」搜 gb 與 us，四次都有回結果，**四次的第一筆都是同一個 collectionId 419657355「Alpha & Omega —《Watch & Pray - Overstanding》(標 1988, 20 軌)」**；其餘結果是 Pray & Worship CE、Pray Latina、mgk、Jesus Image 等字串誤配。",
+    "src": "https://itunes.apple.com/search?term=Alpha%20and%20Omega%20Watch%20and%20Pray&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Apple 試聽查證路徑二（拆到只剩核心 ASCII 字的掛名＋類型詞）：以「Alpha Omega dub」搜 gb 與 us，各回 25 筆，掛這個對象的有《Sound System Dub》(1995, 15 軌)、《Dub Plate Selection, Vol. 1》(1995, 12 軌)、《Dub-Plate Selection, Vol. 2》(1997, 12 軌)、《The Sacred Art of Dub》(1999, 14 軌)、《Voice In the Wilderness》(1996, 12 軌)、《Safe In the Ark》(1988, 13 軌)、《Everyday Life》(1988, 13 軌)、**《Daniel In the Lions Den / King & Queen》(1992, 18 軌)**、《Watch & Pray - Overstanding》(20 軌) 等十餘張，**但沒有任何一筆是單獨的《Watch and Pray》**。",
+    "src": "https://itunes.apple.com/search?term=Alpha%20Omega%20dub&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Apple collectionId **419657355** 的欄位：collectionName「**Watch & Pray - Overstanding**」、artistName「Alpha & Omega」、**trackCount 20**、releaseDate「1988-08-01T00:00:00Z」、copyright 欄「**℗ 1992 Greensleeves Records**」、collectionViewUrl https://music.apple.com/gb/album/watch-pray-overstanding/419657355。逐軌（trackName／trackTimeMillis）：1「Jah Protection」194867、2「Protest I Dub」197667、3「A Homeless People」210160、4「No Mans Land」206507、5「Soloman & Sheba」236893、6「Freedon Fighters」256373、7「Dub Mightier Than the Sword」256200、8「Conscious Black」210160、9「Woman」211867、10「In the Begining」257773、11「Respect to the Warrior」219160、12「Who Is the Ruler?」226707、13「Africa」197867、14「Wicked Man Drop」248800、15「Prophecy Fulfilled」235627、16「Rastafari」224173、17「Dub Flute」217867、18「Fire!」222800、19「Merciful Jah」237400、20「The Roots」220133。",
+    "src": "https://itunes.apple.com/lookup?id=419657355&entity=song&country=gb"
+   },
+   {
+    "f": "把上一條的 20 軌與本張並排：**Apple 的第 11–20 軌，就是本張十軌的完整曲目表、曲序逐項相同**，而且**曲長與 MB 那筆 2020-06-09 數位 release（3951c9be）逐軌相符到毫秒級**（Apple 219160／MB 219160、Apple 226707／MB 226707、Apple 197867／MB 197867…，只有末軌 Apple 220133／MB 220120 差 13 毫秒）。**Apple 的第 1–10 軌（Jah Protection／Protest I Dub／A Homeless People／No Mans Land／Soloman & Sheba／Freedon Fighters／Dub Mightier Than the Sword／Conscious Black／Woman／In the Begining）不在本張的任何一份曲目表上**。",
+    "src": "https://itunes.apple.com/lookup?id=419657355&entity=song&country=gb"
+   },
+   {
+    "f": "Discogs 註記欄提到的那張碟：本張 B5〈The Roots〉被註明是「the instrumental version from Dub Judah / Honest Opinion」，來源標成 Discogs release **509020**。以廠牌反查 MB 的清單裡，1992 年另有一筆 A&O77CD《Almighty Jah》掛「Alpha & Omega+**Dub Judah**」。",
+    "src": "https://www.discogs.com/release/509013"
+   }
+  ],
+  "hookCandidates": [
+   "Apple 上這十首被裝在一張二十軌的碟裡，前十首是同一年的另一張專輯",
+   "註記欄自己說最後一軌是別張唱片的伴奏版"
+  ],
+  "sound": "曲目表 10 個曲位、分兩面，曲名以宗教與抗議用語為主（〈Respect to the Warrior〉〈Who Is the Ruler?〉〈Africa〉〈Wicked Man Drop〉〈Prophecy Fulfilled〉〈Rastafari〉〈Dub Flute〉〈Fire!〉〈Merciful Jah〉〈Roots〉）。Discogs 原盤條目的公司欄寫 Recorded At／Mixed At 都是 Roaring Lion Studio；credit 欄把樂器分給兩個人——Bass／Keyboards／Percussion 是 Christine Woodbridge，Drums／Keyboards／Melodica／Guitar 是 John Sprosen——另有一條 Voice「Nishka」（anv Tanernishka）。**1992 年那筆原盤的曲長欄全部為 null**；MB 另外兩筆（1998 與 2020）各有一份曲長表，最短與最長的位置在兩份裡一致：最短的一軌〈Africa〉（1998 記 3:17、2020 記 3:17）、最長的一軌〈Wicked Man Drop〉（1998 記 4:14、2020 記 4:08）。（本欄由 MB release d116af1b／57defdfc／3951c9be 的曲目表與曲長表、Discogs 條目 509013 的公司與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Respect to the Warrior",
+   "Rastafari",
+   "Wicked Man Drop"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1992,
+   "note": "**1992 兩庫一致，卡單維持不動。** MB release-group first-release-date 1992、轄下 1992 那筆 release（A&O 027）的 date 欄 1992；Discogs 原盤條目 509013 的 released 欄 1992；以廠牌反查 MB 的 Alpha & Omega Records 清單裡 A&O 027 那筆的 date 欄也是 1992。**兩個來源都只給到年。** MB 另外兩筆是 1998 與 2020-06-09 的後續版本。**Apple 那筆二合一的 releaseDate 欄寫「1988-08-01」、copyright 欄寫「℗ 1992 Greensleeves Records」——那是另一張碟的紀錄**（見 notes），**兩個欄位都不得引用**。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：Alpha & Omega Records 自營廠牌線（以 MB 反查的 27 筆目錄清單為主）、Christine Woodbridge 與 John Sprosen 這條線。\n\n**【本卡最重要的一條：Apple 上有命中，但那是另一張碟（二合一）】**\n探測層判 「unavailable」（八個店面全查無）。**依第 152 條重查之後，Apple 上其實有命中，但命中的不是這張碟：**\n- **collectionId 419657355《Watch & Pray - Overstanding》，20 軌**；\n- **逐軌核對：第 11–20 軌正好是本張十軌的全部曲目、曲序逐項相同**，而且**曲長與 MB 那筆 2020-06-09 數位 release 逐軌相符到毫秒級**（末軌只差 13 毫秒）；\n- **第 1–10 軌（Jah Protection／Protest I Dub／A Homeless People／No Mans Land／Soloman & Sheba／Freedon Fighters／Dub Mightier Than the Sword／Conscious Black／Woman／In the Begining）不在本張的任何一份曲目表上**。\n**這正是策展層說的那張二合一**：以廠牌反查 MB 的清單裡有 A&OCD27《Watch and Pray & Overstanding》(2000)，Discogs 那邊的條目類型標 Compilation；策展層已註明 MB 的 7c8061f2 與 b8337381 兩個 release-group **刻意不釘**。\n**裁定：「unavailable」 維持，但理由要改寫**——不是「Apple 上沒有」，是「**Apple 上只有把本張與同年的《Overstanding》併在一起的二合一，依第 129／140 條不得當本張的版本、封面或試聽來源**」。\n**禁令**：\n(1) **不得把 419657355 當本卡的試聽或封面來源。**\n(2) **不得引用它的軌數（20）**，也**不得由它反推本張軌數**。\n(3) **它的第 11–20 軌曲長與 MB 2020 數位版相符這件事可以寫進 notes 當查證過程**，**但行文不得拿 Apple 的曲長當本張的曲長**——要寫曲長只能引 MB 的 1998 或 2020 那一份，**並標明是哪一份**（1992 年原盤那筆的曲長欄是空的）。\n(4) **與本組卡 19 是同一種形狀**（Apple 上有的都是二合一）；**但卡 3、卡 5、卡 7、卡 8、卡 9、卡 11、卡 20、卡 23 是真的沒有**，兩者不可混為一談。\n\n**【本卡其他禁令】**\n(1) **原盤軌數三份紀錄一致（10），可以寫**——MB 三筆 release 的 track-count 欄都是 10、Discogs 曲目表 10 個曲位（A1–B5）。**但不得把 Apple 那 20 軌寫進來。**\n(2) **盤名兩說**：MB 用《Watch and Pray》、Discogs 用《Watch & Pray》。**只能寫成「哪份紀錄寫成哪樣」**（第 136 條）。同理末軌〈Roots〉／〈The Roots〉、第 2 軌〈Who Is the Ruler?〉／〈Who Is The Ruler ?〉（Discogs 的問號前有空格）、第 8 軌〈Fire!〉／〈Fire !〉。\n(3) **Discogs 註記欄那句「Track B5 is the instrumental version from Dub Judah / Honest Opinion」只能原樣引成「那份條目說末軌是別張唱片的伴奏版」**（第 128／136 條）。**不得寫成「這首翻自某某」或推論兩張碟的關係**（第 110 條）——facts 只有那份條目自己的說法，**沒有第二個來源**。\n(4) **Christine Woodbridge 與 John Sprosen 的樂器分工只能原樣引**；**MB 的 disambiguation 欄寫「dub/reggae duo」、begin-area 是 Plymouth**——這兩個欄位可以寫成 MB 的欄位，**不得寫成「這對搭檔來自普利茅斯」以外的推論，也不得寫成夫妻、家人或任何 facts 沒說的關係**。\n(5) **1998 與 2020 那兩筆 MB release 的曲長逐軌不同**（同一批曲子、兩份不同的時間）。**引曲長必須標明是哪一筆**；**不得混著寫，也不得寫成「重製版比較短」之類的推論**。\n(6) **《Overstanding》(A&O18, 1992) 與《Daniel in the Lions Den / King and Queen》(A&O09, 1992) 是別的 release-group**（策展層已註明兩個對照組刻意不釘）。**不得寫成本張的一部分**；Apple 上那筆《Daniel In the Lions Den / King & Queen》(18 軌) 同樣是二合一，**不得引用**。\n(7) 年份見 「yearVerified」：只寫 1992。"
+ },
+ {
+  "key": "desc2:Black Roots|Natural Reaction",
+  "artist": "Black Roots",
+  "album": "Natural Reaction",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3ebffae4 的欄位：title《Natural Reaction》、first-release-date 1990、primary-type Album、secondary-type-ids 空陣列；genre 欄 reggae 與 roots reggae 各 1 票；**url-rels 一條都沒有**。artist-credit 一段「Black Roots」，指向藝人實體 f14ec9e1-a076-4e98-a87e-154f16557471。",
+    "src": "https://musicbrainz.org/release-group/3ebffae4-894f-3e68-a8ab-118acd7b693b"
+   },
+   {
+    "f": "MB 藝人實體 f14ec9e1 的欄位：name／sort-name 皆「Black Roots」、type Group、country GB、area United Kingdom、**begin-area「Bristol」**、**life-span begin 1979、end 1990、ended true**、disambiguation「roots reggae band from Bristol, England」、aliases 空；url-rels 包括 Bandcamp blackroots1.bandcamp.com、Discogs artist 102381、官方網站 blackrootsreggae.net、Songkick、VIAF 157290014、wikidata Q4921748。",
+    "src": "https://musicbrainz.org/artist/f14ec9e1-a076-4e98-a87e-154f16557471"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（4a0ed822）：title《Natural Reaction》、date 1990、country GB、status Official、barcode 欄「5020522000628」；label-info 一條「Nubian Records」編號「**NRCD06**」；media 一片 CD、track-count 13。逐軌曲名與曲長：1〈Natural Reaction〉3:31、2〈Drive the Road〉3:33、3〈Barriers〉3:06、4〈Home Once More〉4:05、5〈Tip Toe〉4:05、6〈Guide Us〉3:16、7〈Living With Jah〉2:51、8〈Voice of the People〉4:39、9〈Where Did I Go Wrong〉3:12、10〈Strange Land〉3:44、11〈She Wants〉3:37、12〈**Dub of the People**〉4:08、13〈**Dub Us**〉3:14。",
+    "src": "https://musicbrainz.org/release/4a0ed822-2f8b-49aa-92cd-2aef0f5a4fd3"
+   },
+   {
+    "f": "Discogs 原盤條目 3247530：artists 欄「Black Roots」、labels 欄「Nubian Records」編號「**NRLP06**」（廠牌 id 54661）、country UK、released 1990、formats 欄 Vinyl ×1［LP, Album］、genres 欄 Reggae、styles 欄 Roots Reggae；notes 欄空白；identifiers 一條 Barcode「5 020522 0006 11」（**與 MB 那筆 CD 的 5020522000628 不同**）。**曲目表 11 個曲位**、分兩面：**A 1**〈Natural Reaction〉（曲位欄本身就寫成「A 1」，中間有空格）A2〈Drive The Road〉A3〈Barriers〉A4〈Home Once More〉A5〈Tip Toe〉B1〈Guide Us〉B2〈Living With Jah〉B3〈Voice Of The People〉B4〈**Where D I Go Wrong**〉B5〈Strange Land〉B6〈She Wants〉，曲長欄 11 軌全部空白。**〈Dub of the People〉與〈Dub Us〉在黑膠曲目表上不存在。**",
+    "src": "https://www.discogs.com/release/3247530"
+   },
+   {
+    "f": "同一條目（3247530）的公司欄三條：**Recorded At「Ariwa Studios」**、Published By「Nubian Records」、Mixed At「Nubian Records」。credit 欄逐條：Bass, Drums, Keyboards「Black Steel」；Composed By「Black Roots」；Guitar「Cordell Francis」與「Jabulani Ngozi」；Keyboards「Carlton Smith (2)」；Percussion「Kondwani Ngozi」；**Producer「Mad Professor」**；Vocals「Carlton Smith (2)」「Errol Brown (4)」「Kondwani Ngozi」；Illustration「Andy Spence」。",
+    "src": "https://www.discogs.com/release/3247530"
+   },
+   {
+    "f": "Discogs master 404302 的欄位：title《Natural Reaction》、year 1990、main_release 3247530（是黑膠那筆）、artists 欄「Black Roots」、genres 欄 Reggae、styles 欄 Roots Reggae；master 層曲目表就是黑膠那 11 個曲位。**同一 master 的 versions 只有 3 筆、全部標 1990 UK、狀態欄皆 Accepted**：3247530（Nubian Records NRLP06，LP, Album）、6180195（Nubian Records **NRCD06**，format 欄 Album）、3368293（NRLP06，format 欄 LP, Album, **White Label**）。**沒有 1990 年以後的版本。**",
+    "src": "https://www.discogs.com/master/404302"
+   },
+   {
+    "f": "Apple（gb 店面）collectionId 962857231 的欄位：collectionName「Natural Reaction」、artistName「Black Roots」、trackCount 13、releaseDate「1990-10-08T07:00:00Z」、copyright 欄「**℗ 2015 Nubian Records**」、primaryGenreName Reggae、collectionViewUrl https://music.apple.com/gb/album/natural-reaction/962857231。",
+    "src": "https://itunes.apple.com/lookup?id=962857231&entity=song&country=gb"
+   },
+   {
+    "f": "同一筆 Apple 條目的 13 軌逐軌（trackName／trackTimeMillis）：1「Natural Reaction」211540、2「Drive the Road」213342、3「Barriers」185992、4「Home Once More」245838、5「Tip Toe」245394、6「Guide Us」196206、7「Living With Jah」171389、8「Voice of the People」279197、9「Where Did I Go Wrong」192183、10「Strange Land」224026、11「She Wants」217313、12「Dub of the People」248764、13「Dub Us」194743；13 軌都有 previewUrl。**曲名、曲序與曲長與 MB 那筆 CD release 的 1–13 逐項相同**（MB 211533／Apple 211540、MB 224026／Apple 224026…，**十三軌全部差在 20 毫秒以內**）。",
+    "src": "https://itunes.apple.com/lookup?id=962857231&entity=song&country=gb"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Nubian Records\"` 回 **27 筆，全部掛 Black Roots**。有年份的六筆是 NRLP001《All Day All Night》(1987)、**NRCD06《Natural Reaction》(1990，本張)**、NRCD07《Dub Factor: The Mad Professor Mixes》(1991)、NR091D《On the Ground》(2012-09-10)、NR093D《On the Ground in Dub》(2013-03-04)、《I Believe》(2017-04-27)；另有 NRCD 19《Take It》與《All Day All Night》的 date 欄為空。**這份清單上沒有任何其他藝人。**",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Nubian%20Records%22&limit=100&fmt=json"
+   },
+   {
+    "f": "Discogs 廠牌頁 54661「Nubian Records」的欄位：**profile 欄全文只有四個字「UK reggae label.」**；contact_info 欄「[Valid in 1988] Nubian Records Ltd, 20/22 Hepburn Road, St. Pauls, **Bristol**, BS2 8UD, Tel: 0272 421870」；parent_label 欄「Nubian Records Ltd.」；sublabels 欄與 urls 欄都空。",
+    "src": "https://www.discogs.com/label/54661"
+   },
+   {
+    "f": "**MB 藝人實體的 life-span 記 end 1990、ended true**，但以廠牌反查同一家廠牌回的清單裡有 2012、2013、2017 年三筆掛 Black Roots 的 release（NR091D、NR093D、《I Believe》）。**兩個欄位互相矛盾，本次查證沒有第三個來源可判。**",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Nubian%20Records%22&limit=100&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "CD 末尾補了兩首 dub，黑膠曲目表上一首也沒有",
+   "MB 把這個團的活動年份記到 1990 為止，同一家廠牌卻在 2012 年之後又出了三張掛他們的碟"
+  ],
+  "sound": "曲目表前十一首是人聲曲（〈Natural Reaction〉〈Drive the Road〉〈Barriers〉〈Home Once More〉〈Tip Toe〉〈Guide Us〉〈Living With Jah〉〈Voice of the People〉〈Where Did I Go Wrong〉〈Strange Land〉〈She Wants〉），CD 末尾兩軌換成 dub（〈Dub of the People〉〈Dub Us〉），黑膠曲目表上這兩軌不存在。Discogs 原盤條目的公司欄寫 Recorded At「Ariwa Studios」、Published By 與 Mixed At 都是「Nubian Records」；credit 欄的 Producer 是 Mad Professor，樂器分工列了 Black Steel（Bass／Drums／Keyboards）、兩位吉他手（Cordell Francis、Jabulani Ngozi）、Keyboards 與 Vocals 的 Carlton Smith (2)、Percussion 與 Vocals 的 Kondwani Ngozi、Vocals 的 Errol Brown (4)。MB 那筆 CD release 登錄的曲長，最短的一軌〈Living With Jah〉2:51、最長的一軌〈Voice of the People〉4:39。（本欄由 MB release 4a0ed822 的曲目表與曲長表、Discogs 條目 3247530 的曲目表、公司與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Natural Reaction",
+   "Voice of the People",
+   "Strange Land"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1990,
+   "note": "**1990 三庫一致，卡單維持不動。** MB release-group first-release-date 1990、轄下唯一 release 的 date 欄 1990；Discogs 原盤條目 3247530 的 released 欄 1990、master 404302 的 year 欄 1990、版本表三筆全部標 1990；以廠牌反查 MB 的清單裡 NRCD06 那筆的 date 欄也是 1990。**Apple 那一筆兩個欄位都不能用**：releaseDate 欄「1990-10-08」是 Apple 單方的日期，copyright 欄寫「**℗ 2015 Nubian Records**」（那是後來數位發行的年份）。**行文只寫到年**。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：Nubian Records 廠牌線（以 MB 反查的 27 筆目錄清單與 Discogs 廠牌頁 54661 的地址欄為主）、本張自己的 credit 欄。\n**注意 a 組的邊界（本組唯一一張會踩到的卡）**：Discogs 條目的公司欄寫 Recorded At「**Ariwa Studios**」、credit 欄的 Producer 是「**Mad Professor**」。**Ariwa 與 Mad Professor 是 a 組獨占的線**（見卡 1 notes）。\n**裁定**：**這兩個名字可以寫，但只能寫成「這張碟的公司欄與 credit 欄填的是這兩個名字」**（第 136 條）。**禁止**：寫 Ariwa 的廠牌史、寫 Mad Professor 是誰、寫他在英國 dub 裡的地位、寫這間錄音室的來歷、寫「布里斯托的樂團跑到倫敦錄音」這類把兩者接起來的敘述（第 110／146 條）。**一句都不要多。**\n\n**【本卡禁令】**\n(1) **原盤軌數兩庫給不同數字，兩個都不填、行文禁止給總數**（第 140／141 條）：Discogs 的 NRLP06 **黑膠**曲目表 11 個曲位，MB 的 NRCD06 **CD** 與 Apple 都是 13。**CD 多出來的兩軌是末尾的〈Dub of the People〉與〈Dub Us〉**，這個差異可以寫，**但不得給總數**。\n(2) **試聽：Apple gb 的 collectionId 962857231 逐軌核對通過。** 13 軌曲名、曲序與 MB 那筆 CD release 的 1–13 逐項相同，**曲長十三軌全部差在 20 毫秒以內**，**不是二合一、不是合輯、不是加曲版**。探測層的 「ready」 判定成立。**它對應的是十三軌的 CD 側，不是十一軌的黑膠。** **Apple 的 ℗ 欄寫 2015，那是數位發行的年份，不得引用。**\n(3) **MB 的 life-span 與廠牌清單互相矛盾**（實體記 end 1990、ended true；同一家廠牌 2012／2013／2017 年還有三筆掛這個團的 release）。**行文不得寫「這個團在 1990 年解散」，也不得寫「他們一直活動到現在」**——**兩個都是資料庫欄位，而且互相牴觸**（第 136 條）。要提只能寫成「MB 的藝人欄把活動年份記到 1990」並同時說明清單上還有後來的紀錄，**或乾脆不提**。\n(4) **樂手名字只能原樣引**（「Black Steel」「Cordell Francis」「Jabulani Ngozi」「Carlton Smith (2)」「Kondwani Ngozi」「Errol Brown (4)」）。**括號序號是 Discogs 的區別欄位，不得寫成名字的一部分**；**也不得把同姓的兩個 Ngozi 寫成親屬**（第 110 條）。\n(5) **兩個條碼不得混寫**（黑膠 5 020522 0006 11、CD 5020522000628）。\n(6) **曲名兩處不一致**：Discogs B4〈Where D I Go Wrong〉／MB 與 Apple〈Where Did I Go Wrong〉；Discogs 的第一個曲位寫成「A 1」（中間有空格）。**只能寫成「哪份紀錄寫成哪樣」。**\n(7) **這張碟目前沒有任何復刻或再壓**（版本表三筆全在 1990 年）——只能寫成「版本表上只有 1990 年的三筆」，**不得寫成「從未再版」或「稀有」**（第 109／136 條）。**White Label 那筆不得展開。**\n(8) **策展層提到的《Natural Reaction Remixes EP》(NRT13, 1993) 與《Dub Factor: The Mad Professor Mixes》(NRCD07) 是別的碟**——後者在 MB 廠牌清單上（1991, NRCD07），**只能寫成清單上的一筆**，**不得展開，尤其不得因為盤名裡有 Mad Professor 就多寫一句**（見上面的 a 組邊界）。\n(9) 年份見 「yearVerified」：只寫 1990。"
+ },
+ {
+  "key": "desc2:Lidj Incorporated Meets Sound Iration|Dub Liberation",
+  "artist": "Lidj Incorporated Meets Sound Iration",
+  "album": "Dub Liberation",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bf31baad 的欄位：title《Dub Liberation》、first-release-date 1990、primary-type Album、secondary-type-ids 空陣列；**genre 欄是空的、url-rels 一條都沒有**。artist-credit 兩段：「Lidj Incorporated」（藝人實體 c9c1687c-f287-4616-8622-80a517e81237，type Group、country GB、life-span 全空、aliases 空，**外部連結只有 Discogs artist 971545**）＋「Sound Iration」（實體 3cf57e90-cb1e-4c38-8c87-7560f74b860d，type Group、**country 與 area 都是 null**、life-span 全空、aliases 空，**外部連結只有 Discogs artist 14119**），中間的 joinphrase 是「 Meets 」。",
+    "src": "https://musicbrainz.org/release-group/bf31baad-f827-46dc-8864-72734f8a6911"
+   },
+   {
+    "f": "MB 轄下唯一那筆 release（f05126fa）：title《Dub Liberation》、date 1990、country GB、**status 未標（為 null）**、barcode 欄「5025034290222」；label-info 一條「Youth Sound Records」編號「**YOCD002**」；media 一片 CD、track-count 11。逐軌曲名與曲長：1〈Dub Up (Melodica)〉4:20、2〈General Version〉3:37、3〈Liberation Dub〉3:11、4〈Natural Dub〉4:35、5〈Patient Dub〉3:48、6〈Only For A Dub〉3:53、7〈Long Time Version〉3:58、8〈Prophetic Dub〉4:19、**9〈Untitled〉4:19、10〈Untitled〉3:49、11〈Untitled〉3:40**——**最後三軌的曲名欄就是「Untitled」。**",
+    "src": "https://musicbrainz.org/release/f05126fa-8f79-4a97-b9fa-159eb52e65a9"
+   },
+   {
+    "f": "Discogs 原盤條目 1144944：artists 欄「Lidj Incorporated」join 欄「Meets」＋「Sound Iration」、labels 欄「Youth Sound Records」編號「**YOLP 002**」（廠牌 id 100390）、country UK、released 1990、formats 欄 Vinyl ×1［LP］、genres 欄 Reggae、styles 欄 Dub。**曲目表只有 8 個曲位**、分兩面：A1〈Dub Up (Melodica)〉A2〈General Version〉A3〈Liberation Dub〉A4〈Natural Dub〉B1〈Patient Dub〉B2〈Only For A Dub〉B3〈Long Time Version〉B4〈Prophetic Dub〉，曲長欄 8 軌全部空白。**CD 那三軌 Untitled 在黑膠曲目表上不存在。**",
+    "src": "https://www.discogs.com/release/1144944"
+   },
+   {
+    "f": "同一條目（1144944）的 notes 欄逐句：「**Released on Youth Sound Records, a subdivision of WAU / Mr. Modo Records (P.O. Box 483, Sheffield, S12BX).**」「Published by Copyright Control/Karma Music.」「**Recorded & Mixed at St. Mark's Production Studio, Telephone 081 968 4662.**」「Special respect to Peppi Acunzo without whom these recordings would not have been possible.」",
+    "src": "https://www.discogs.com/release/1144944"
+   },
+   {
+    "f": "同一條目（1144944）的公司欄逐條：Distributed By／Manufactured By 皆「**WAU! Mr. Modo Recordings**」、Phonographic Copyright (p)／Copyright (c) 皆「Youth Sound Records」、Published By「Copyright Control」與「Karma Music Ltd」、Recorded At／Mixed At 皆「**St. Marks Studio**」、Designed At「Studio C (2)」、Plated At「Lyntone Recordings Ltd.」（編號欄 LYN 27098 與 LYN 27099 各一條）、Pressed By「Damont」。identifiers 四條：Barcode「018775800287」（String）與「018775 800287」（Text）、Matrix／Runout「YOLP 002 A - 1 LYN 27098 DAMONT」（Side A）與「YOLP 002 B - 1 LYN 27099 DAMONT」（Side B）。**注意：identifiers 欄的條碼 018775800287 與 MB 那筆 CD 的 5025034290222 不同。**",
+    "src": "https://www.discogs.com/release/1144944"
+   },
+   {
+    "f": "同一條目（1144944）的 credit 欄逐條：**Executive-Producer「Mr Modo」（anv Mr. Modo）**；Producer「Sound Iration」；Lead Vocals「R. Doyley」；Harmony Vocals [Harmonies]「Lidj Xylon」（anv「R. \"Xylon\" Doyley」）與「MC Ishu」（anv「C. \"Ishu\" Bradshaw」）；Bongos「C. Bradshaw (2)」與「R. Doyley」；Instruments [Other Instruments]「Nick Raphael」（anv N. Raphael）與「Steve Gilder」（anv S. Gilder）；Engineer「Joel M.」（anv Joel M）；Written-By「C. Bradshaw (2)」（tracks 欄 A3）、「Nick Raphael」、「R. Doyley」、「Steve Gilder」；Graphics「Mike Coles (2)」；Photography「Mick Smee」。**同兩個人在 credit 欄裡出現了兩組寫法：R. Doyley／Lidj Xylon、C. Bradshaw (2)／MC Ishu。**",
+    "src": "https://www.discogs.com/release/1144944"
+   },
+   {
+    "f": "Discogs master 280065 的 versions 共 3 筆、全部標 1990 UK、狀態欄皆 Accepted：1144944（Youth Sound Records **YOLP 002**，format 欄 LP）、2272821（Youth Sound Records **YOCD002**，format 欄 Album）、8602963（**YOLP002**，format 欄 LP, **Test Pressing**）。**沒有 1990 年以後的版本。**",
+    "src": "https://www.discogs.com/master/280065"
+   },
+   {
+    "f": "Discogs 廠牌頁 100390「Youth Sound Records」的欄位：**profile 欄全文「Youth Sound Records is a UK sublabel of [l=WAU! Mr. Modo Recordings], embodying more of a reggae/dub sound.」**；**parent_label 欄「WAU! Mr. Modo Recordings」**；contact_info 欄、sublabels 欄、urls 欄都空。",
+    "src": "https://www.discogs.com/label/100390"
+   },
+   {
+    "f": "以廠牌反查 MB（第 149 條）：`release?query=label:\"Youth Sound Records\"` **只回 2 筆，而且是同一張碟的兩個載體**——1990 年的 YOLP002 與 YOCD002，兩筆的 artist-credit 都是「Lidj Incorporated+Sound Iration」、title 都是《Dub Liberation》。**MB 上這家廠牌只有這一張碟。**",
+    "src": "https://musicbrainz.org/ws/2/release?query=label%3A%22Youth%20Sound%20Records%22&limit=100&fmt=json"
+   },
+   {
+    "f": "Apple 試聽查證路徑一（掛名＋盤名，兩邊掛名各試一次）：以「Lidj Incorporated Dub Liberation」搜 gb 與 us、以「Sound Iration Dub Liberation」搜 gb 與 us，**四次的 resultCount 全部是 0**；再以「Lidj Incorporated」單獨搜 gb，resultCount 也是 **0**。",
+    "src": "https://itunes.apple.com/search?term=Lidj%20Incorporated%20Dub%20Liberation&entity=album&limit=25&country=gb"
+   },
+   {
+    "f": "Apple 試聽查證路徑二（拆到只剩核心 ASCII 字）：以「Dub Liberation」搜 gb 回 25 筆、搜 us 回 24 筆，**沒有一筆是這張碟**（回的是 Egoless & Quest《Belly of The Beast / Dub Liberation - Single》、Dub Liberation Front《I and Iniverse》、Mad Professor《Black Liberation Dub》、Bob Marley、Black Uhuru 之類的字串誤配）；以「Sound Iration」單獨搜 gb 回 **5 筆**，掛這個對象的有 365899345《In Dub, Pt. 1》(2010, 8 軌) 與 365963587《In Dub, Pt. 2》(2010, 14 軌)，**兩張都不是本卡這張碟**，其餘三筆是 Iration Steppas 等誤配。",
+    "src": "https://itunes.apple.com/search?term=Sound%20Iration&entity=album&limit=25&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "CD 的最後三軌沒有名字，曲名欄上就寫著 Untitled",
+   "註記欄留了一組 1990 年的電話號碼，說錄音與混音都在那間 St. Mark's 完成"
+  ],
+  "sound": "曲目表上八個有名字的曲位全部帶 Dub 或 Version 字樣（〈Dub Up (Melodica)〉〈General Version〉〈Liberation Dub〉〈Natural Dub〉〈Patient Dub〉〈Only For A Dub〉〈Long Time Version〉〈Prophetic Dub〉），CD 版在這之後還有三軌，曲名欄寫的是「Untitled」。Discogs 原盤條目的公司欄寫 Recorded At／Mixed At 都是 St. Marks Studio、Distributed By 與 Manufactured By 都是 WAU! Mr. Modo Recordings、Pressed By 是 Damont；credit 欄的 Executive-Producer 是 Mr Modo、Producer 是 Sound Iration，人聲欄列了 Lead Vocals「R. Doyley」與兩條 Harmony Vocals（Lidj Xylon、MC Ishu）。MB 那筆 CD release 登錄的曲長，最短的一軌〈Liberation Dub〉3:11、最長的一軌〈Natural Dub〉4:35。（本欄由 MB release f05126fa 的曲目表與曲長表、Discogs 條目 1144944 的曲目表、註記欄、公司與 credit 欄歸納，構成它的原始值都在 facts 裡；未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "Dub Up (Melodica)",
+   "Liberation Dub",
+   "Prophetic Dub"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1990,
+   "note": "**1990 兩庫一致，卡單維持不動。** MB release-group first-release-date 1990、轄下唯一 release 的 date 欄 1990；Discogs 原盤條目 1144944 的 released 欄 1990、版本表三筆全部標 1990；以廠牌反查 MB 的 Youth Sound Records 清單裡兩筆的 date 欄也都是 1990。**四個來源都只給到年**（第 136 條：那份紀錄上沒有月日，不等於唱片上沒印）。Apple 上查無這張碟，沒有第三方年份可對。"
+  },
+  "notes": "**分派與禁令的總表在卡 1《Strictly Dubwise》的 notes**，本卡引用之，不重述（第 142／146 條）。\n\n**【本卡的分派】**\n**取得**：Youth Sound Records 與 WAU! Mr. Modo Recordings 的圓標／母子廠牌關係（**這一條有兩個獨立來源**：Discogs 廠牌頁 100390 的 parent_label 欄與 profile 欄、以及本張條目註記欄那句「a subdivision of WAU / Mr. Modo Records」）、本張自己的完整 credit 與公司欄。\n\n**【本卡禁令】**\n(1) **原盤軌數兩庫給不同數字，兩個都不填、行文禁止給總數**（第 140／141 條）：Discogs 的 YOLP 002 **黑膠**曲目表 8 個曲位（A1–B4），MB 的 YOCD002 **CD** 是 11（多出來的三軌曲名欄都寫「Untitled」）。**這個差異可以寫，但不得給總數。**\n(2) **「Untitled」只能寫成「MB 那筆 CD release 的曲名欄寫的是 Untitled」**（第 136 條）。**不得寫成「這三首沒有名字」「唱片上沒印曲名」或「是未命名的即興」**——facts 只說得出資料庫欄位長什麼樣。\n(3) **試聽：Apple 上真的沒有這張碟，探測層的 「unavailable」 成立。** 已依第 152 條做兩路查詢：**(a) 掛名＋盤名的五種組合**（「Lidj Incorporated Dub Liberation」gb／us、「Sound Iration Dub Liberation」gb／us、「Lidj Incorporated」gb）→ **resultCount 全部是 0**；**(b) 拆到只剩核心 ASCII 字**（「Dub Liberation」gb 25 筆／us 24 筆、「Sound Iration」gb 5 筆）→ **逐筆看過都不是**；**Sound Iration 在 Apple 上另有《In Dub, Pt. 1》與《In Dub, Pt. 2》兩張（都標 2010），那是別的碟**。**這是「搜到 0 筆」與「搜到的是別的碟」兩種，不是比對法把它擋掉。**\n(4) **WAU! Mr. Modo 這條線可以寫到「Youth Sound Records 是它的子廠牌、本張的經銷與製造欄填的是它、Executive-Producer 欄寫 Mr Modo」為止**（第 128／136 條）。**不得再往下寫**：不得寫這家廠牌是誰開的、不得把它連到任何樂團或場景、**不得寫「這條線接上了 ambient house」這類跨場景敘述**——facts 沒有任何一條說得出那件事（第 110 條；策展層的 curatorWhy 提到 Alex Paterson 與 The Orb，**那是線索不是事實**，第 142 條）。\n(5) **兩位參與者在 credit 欄裡有兩組寫法**（R. Doyley／Lidj Xylon、C. Bradshaw (2)／MC Ishu），**只能寫成「同一份 credit 欄裡這兩組名字並列」**（第 136 條），**不得判定哪一個是本名**。\n(6) **Sound Iration 在 MB 上的 country 與 area 都是 null**。**不得寫他們是布里斯托的團**（策展層的 curatorWhy 這樣寫，**那是線索不是事實**，第 142 條；facts 上沒有來源）。**Lidj Incorporated 的 country 是 GB**，這可以寫成 MB 的欄位。\n(7) **「Peppi Acunzo」那句致謝只能原樣引成「註記欄寫了這句」**（第 128 條），**不得寫他是誰**。\n(8) **兩個條碼不得混寫**（黑膠 018775800287、CD 5025034290222）。\n(9) **這張碟目前沒有任何復刻或再壓**（版本表三筆全在 1990 年）——只能寫成「版本表上只有 1990 年的三筆」；**Test Pressing 那筆不得展開**（第 109 條）。\n(10) **策展層提到的《Black Liberation》(YOLP001)、兩張 12 吋（YSR 002T／YSR 003T）、以及 Sound Iration 的《Sound Iration in Dub》《Seventh Seal》都沒有進 facts**——**MB 以廠牌反查 Youth Sound Records 只回 2 筆，就是本張的黑膠與 CD**。**行文不得寫那些碟**（第 142 條）。\n(11) 年份見 「yearVerified」：只寫 1990。"
  }
 ]
