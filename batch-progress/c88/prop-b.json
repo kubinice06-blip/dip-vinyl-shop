@@ -228,5 +228,226 @@
   "queryAlias": "",
   "reissuedBy": "",
   "g": "b"
+ },
+ {
+  "artist": "趙季平",
+  "album": "Farewell My Concubine",
+  "year": 1993,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "Milan",
+  "why": "陳凱歌《霸王別姬》(1993，坎城金棕櫚) 的配樂，1993 年在泛歐與美國發行，2003 年香港再發，三筆皆 Official（MB release-group 454d2196）。池中實掃：趙季平名下 0 張（漢字與 Zhao Jiping 兩種寫法都查過），**中國第五代導演這條線在池中是零張**——池中唯一沾邊的華語電影卡是 `S.E.N.S.`《悲情城市 電影原聲帶》(1989)、`陳明章`《戀戀風塵 電影原聲帶》(1993)、`陳光榮`《無間道 電影原聲配樂》(2002)、`盧律銘`《返校 電影原聲帶》(2019) 與 `Tan Dun 譚盾`《Crouching Tiger, Hidden Dragon》(2000)，皆非大陸第五代。",
+  "risk": "**跨文字系統撞卡（本批最嚴重的一類）**：掛名漢字「趙季平」（繁）／「赵季平」（簡）、羅馬拼音「Zhao Jiping」；盤名中文《霸王別姬》／《霸王别姬》、MB 標題與英文流通名《Farewell My Concubine》——**五種寫法實掃池中皆 0 筆**（子字串比對只撈到 `Cicada`《Farewell》2016，人眼核對為不相干的碟）。掛名採 MB 實體的漢字寫法「趙季平」（第 6／70 條），`queryAlias` 填 Zhao Jiping 供 Apple／CAA 使用。**MB 上另有多張同名的華語流行單曲《霸王别姬》**（薛之谦 & 张靓颖、李玉刚），與本片無關。年份：電影與唱片同為 1993 年。封面：Milan 廠 CD，CAA 有機會；試聽以英文盤名在 `us`／`fr` storefront 較可能命中。",
+  "mbNote": "釘住 release-group **454d2196-3238-355d-8ebd-b0325bc12f75**《Farewell My Concubine》，artist-credit「趙季平」（藝人實體 67c42a83-eb74-4da2-967f-c7519493cdf4），first-release-date 1993，primary-type **Album**，secondary-types [Soundtrack]。轄下 3 個 release 全為 Official：1993 XE、1993 US、2003 HK。已回問 release-group 端點確認實體類型與標題。對照組：3e434e06 與 3882a330 是同名的華語流行歌曲條目，與本片無關，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zhao Jiping",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "趙季平",
+  "album": "Raise the Red Lantern",
+  "year": 1994,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "Milan",
+  "why": "張藝謀《大紅燈籠高高掛》(1991，威尼斯銀獅) 的配樂，1994-05-10 在美國、1994-05-23 在泛歐發行，兩筆皆 Official（MB release-group e7ead805）。與本批另一張《Farewell My Concubine》一起，把池中完全空白的中國第五代導演線補成兩張。",
+  "risk": "**年份與電影年不同**：電影 1991 上映，唱片 1994-05-10 才首次發行，**兩者相差三年**，本卡 year 記唱片年 1994（本批第二個陷阱）；行文若提到電影年必須與唱片年分開講。**跨文字系統撞卡**：掛名漢字「趙季平」／「赵季平」／羅馬拼音「Zhao Jiping」；盤名中文《大紅燈籠高高掛》／《大红灯笼高高挂》、英文《Raise the Red Lantern》——五種寫法實掃池中皆 0 筆。本卡與同批的《Farewell My Concubine》同掛趙季平，是兩張不同的碟。封面：Milan CD，CAA 有機會；試聽以英文盤名查。",
+  "mbNote": "釘住 release-group **e7ead805-17c2-3319-b9ba-049401afe84f**《Raise the Red Lantern》，artist-credit「趙季平」（藝人實體 67c42a83-eb74-4da2-967f-c7519493cdf4），first-release-date 1994-05-10，primary-type **Album**，secondary-types [Soundtrack]。轄下 2 個 release 全為 Official：1994-05-10 US、1994-05-23 XE。已回問 release-group 端點確認實體類型與標題。對照組：283b5101-f357-440b-bd48-a4da7e12fcde《大话西游电影原声大碟》(1994) 為同一作曲家的另一張碟，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zhao Jiping",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Alejandro Jodorowsky",
+  "album": "El Topo",
+  "year": 1971,
+  "genres": [
+   "jazz",
+   "world"
+  ],
+  "label": "Apple Records",
+  "why": "Jodorowsky《El Topo》(1970) 的配樂，由導演本人掛名，1971-12-27 由 Apple Records 在美國首次發行（MB release-group f676fbdd 轄下 5 個 release 全為 Official：1971-12-27 US、2010-03-30 US、2015 GB、2020-08-24 GB、1 筆 XW）。池中實掃：Jodorowsky 名下 0 張，午夜場（midnight movie）這條線在池中是零張。",
+  "risk": "**年份與電影年不同**：電影 1970 上映、唱片 1971-12-27 首發，本卡 year 記 1971。**盤名很短且跨語言**：《El Topo》（西班牙文，意為鼴鼠）英文流通名亦作《El Topo》；盤名正規化後只有 5 個字元，**以子字串比對會撈回大量無關結果**，去重須以完整「掛名｜盤名」為鍵（實掃池中 0 筆）。**Apple Records 這個廠牌名在下游會與 Apple Music 的服務名混淆**，行文要寫清楚是披頭四的唱片公司。**這張是導演掛名的配樂**，不是歌曲合輯。封面：2010 與 2015 年有 Official 再發，CAA 命中機會中等；試聽 `us`／`gb` storefront。",
+  "mbNote": "釘住 release-group **f676fbdd-4740-3853-b628-79dce9b36083**《El Topo》，artist-credit「Alejandro Jodorowsky」（藝人實體 5a7ac986-0e4b-4223-ab54-d3a1878c9de2），first-release-date 1971-12-27，primary-type **Album**，secondary-types [Soundtrack]。轄下 5 個 release 全為 Official：1971-12-27 US、2010-03-30 US、2015 GB、2020-08-24 GB、1 筆日期未填。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Zabriskie Point",
+  "year": 1970,
+  "genres": [
+   "rock"
+  ],
+  "label": "MGM Records",
+  "why": "安東尼奧尼《Zabriskie Point》(1970) 的原聲帶，1970-05-29 在英國首發、同年美國版，其後 1990、1997、2010、2011、2019 多次再發，MB release-group 10fedc67 轄下 13 個 release 全為 Official，Discogs master 78667（MGM SE 4668 ST）。池中實掃：安東尼奧尼線只有 `Herbie Hancock`《Blow-Up》(1967) 一張，**《Zabriskie Point》本身不在池中**（Pink Floyd 名下 9 張皆為自己的專輯，無此片）。",
+  "risk": "**同名別碟極多**：MB 上有 7 個掛 Pink Floyd 的《Zabriskie Point》系列 release-group（《Virtual Zabriskie Point》《Ultimate Zabriskie Point》《The Complete Zabriskie Point Sessions》《A Total Zabriskie Point of View》等，多為未授權的 session 整理），**本卡刻意只釘 1970 年 MGM 的官方原聲帶那一個**；另有 `Radio Massacre International`《Zabriskie Point》(2000) 是完全不同的碟。**這張是收錄既有／專為本片錄製之歌曲的合輯**（Pink Floyd、Grateful Dead、Kaleidoscope 等多組藝人），不是單一作曲家的配樂，走 §5.6。年份：電影與唱片同為 1970 年。封面：CAA 以 rgMbid 為鍵，13 個 release 命中機會高；試聽 2019 年有全球數位版。",
+  "mbNote": "釘住 release-group **10fedc67-1a27-3d41-8012-f27e7bef1801**《Zabriskie Point》，artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377），first-release-date 1970-05-29，primary-type **Album**，secondary-types [Soundtrack]。轄下 13 個 release 全為 Official：1970-05-29 GB、1970 GB、1970 US、1990 XE、1990 US、1997-09-16 US、1997-10-20 XE、1997 AR、2010-02 XE、2010-10-01 XE、2011 RU、2019-03-15 XW、1 筆 NL。已回問 release-group 端點確認實體類型與標題。對照組：**b739bafe（Pink Floyd《Zabriskie Point》）、1176847b《Virtual Zabriskie Point》、83d337c6《Ultimate Zabriskie Point》、16c53287《The Complete Zabriskie Point Sessions》、dce71022《Zabriskie Point – The Sessions》、b0b83f36、18647427、ce201830 八個掛 Pink Floyd 的 release-group 全部刻意不釘**；28af5beb（Radio Massacre International 同名碟）刻意不釘。",
+  "releaseType": "Compilation",
+  "exceptionReason": "安東尼奧尼 1970 年《Zabriskie Point》的官方原聲帶，是 Pink Floyd 首次為劇情長片錄音的成果，也是六〇年代末美國反文化電影音樂的代表性文獻，1970 年 MGM 原盤後歷經 1990／1997／2010／2019 五次官方再發，MB 轄下 13 個 release 全標 Official。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/10fedc67-1a27-3d41-8012-f27e7bef1801",
+   "https://www.discogs.com/master/78667"
+  ],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Giovanni Fusco",
+  "album": "L'Avventura",
+  "year": 2016,
+  "genres": [
+   "jazz",
+   "classical"
+  ],
+  "label": "Quartet Records",
+  "why": "安東尼奧尼《L'avventura》(1960，坎城評審團獎) 的配樂，由長期合作的 Giovanni Fusco 所作，2016 年首次以獨立專輯發行（MB release-group ad2151a4 轄下 1 個 release，2016 Official）。池中實掃：Giovanni Fusco 名下 0 張；安東尼奧尼線池中只有 `Herbie Hancock`《Blow-Up》(1967)，本批另補 `Various Artists`《Zabriskie Point》(1970)，三張分屬三部片、三個掛名。",
+  "risk": "**年份落差 56 年**：電影 1960 上映、錄音同期，但這張唱片 2016 才首次問世；本卡 year 記 2016（本批第二個陷阱），行文絕不可寫成 1960 年的唱片。**盤名的撇號**：MB 標題用 U+2019 彎引號《L’Avventura》，本卡採 ASCII 撇號《L'Avventura》——**大小寫與標點在外部服務會被正規化，但逐字元比對的下游會裂開**（c-79 的同形異碼形狀，第 50／52 條）。去重時池中以子字串比對撈到 `Anderson .Paak`《Ventura》(2019)，人眼核對為不相干的碟；完整盤名池中 0 筆。**只有 1 個 release**，封面與試聽的命中率是本批最低的一張。",
+  "mbNote": "釘住 release-group **ad2151a4-9d41-49c2-9d44-8f758466e367**《L’Avventura》（MB 標題用 U+2019），artist-credit「Giovanni Fusco」（藝人實體 591631e6-ff4c-42f3-881a-7e4c83789e4e），first-release-date 2016，primary-type **Album**，secondary-types [Soundtrack]。轄下 1 個 release，Official，國別未填。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "David Lynch & Alan R. Splet",
+  "album": "Eraserhead",
+  "year": 1982,
+  "genres": [
+   "electronic"
+  ],
+  "label": "I.R.S. Records",
+  "why": "林區《Eraserhead》(1977) 的原聲帶，由導演與音效設計 Alan R. Splet 共同掛名，1982 年由 I.R.S. Records 在美國首次發行，其後 1989-08-04、2003、2012-08-07（美國與全球）、2014 五度再發，六筆全為 Official（MB release-group 4e8b3439）。池中實掃：林區線只有 `Angelo Badalamenti` 的《Blue Velvet》(1986) 與《Soundtrack From Twin Peaks》(1990) 兩張，**林區自己掛名的作品池中 0 張**（David Lynch 名下實掃 0 筆）。",
+  "risk": "**年份落差**：電影 1977 上映，唱片 1982 首次發行，本卡 year 記 1982。**撞卡**：池中既有菲律賓樂團 `Eraserheads` 的《UltraElectroMagneticPop!》(1993) 與《Cutterpillow》(1995)，**掛名相近但完全是另一組人**（第 139 條附記的形狀）；本卡的完整「掛名｜盤名」在池中 0 筆。**聯名掛名**：MB artist-credit 是「David Lynch & Alan R. Splet」兩位實體的聯名，下游以單一藝人名查詢會落空，`queryAlias` 填 David Lynch。**這張不是配樂也不是歌曲合輯**，是電影音軌本身的唱片化，行文要寫清楚。封面：2012 與 2014 年有 Official 再發，CAA 命中機會中上；試聽 `us` storefront。",
+  "mbNote": "釘住 release-group **4e8b3439-6552-3ec4-92ca-3990730c7eff**《Eraserhead》，artist-credit「David Lynch & Alan R. Splet」（藝人實體 752d58e6-d33f-4dcd-b40c-37acc14242f2 David Lynch、29768c58-358f-474e-adab-3b96677511d4 Alan R. Splet），first-release-date 1982，primary-type **Album**，secondary-types [Soundtrack]。轄下 6 個 release 全為 Official：1982 US、1989-08-04 US、2003 US、2012-08-07 US、2012-08-07 XW、2014 US。已回問 release-group 端點確認實體類型與標題。對照組：MB 上另有至少 8 個同名《Eraserhead》的 release-group（C.O.D.、Valvan、IVOXYGEN、Felix Snow、Durs 等），與本片無關，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "David Lynch",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Angelo Badalamenti",
+  "album": "Mulholland Drive",
+  "year": 2001,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Milan",
+  "why": "林區《Mulholland Drive》(2001，坎城最佳導演) 的配樂，2001-10-08 在法國首發，2001-10-09 美國、2001-10 泛歐、2001 泛歐與德國、2008 美國，六筆全為 Official（MB release-group 32530b76）。池中實掃：Badalamenti 名下有《Blue Velvet: Original Motion Picture Soundtrack》(1986) 與《Soundtrack From Twin Peaks》(1990) 兩張，**林區與 Badalamenti 合作的第三個代表作《Mulholland Drive》不在池中**。",
+  "risk": "年份無分歧：電影與唱片同為 2001 年。**撞卡**：完整盤名《Mulholland Drive》池中 0 筆；掛名 `Angelo Badalamenti` 與池中既有兩張同一人，是同一作曲家的不同碟，不相撞。本批另收同為林區作品的 `David Lynch & Alan R. Splet`《Eraserhead》(1982)，兩張掛名不同、碟不同。**這張是作曲家寫的配樂**，但唱片裡也收了 Rebekah Del Rio 的〈Llorando〉等演唱曲目，行文不得說成純器樂。封面：Milan CD，CAA 命中機會高；試聽 `us`／`fr` storefront。",
+  "mbNote": "釘住 release-group **32530b76-bb42-3b3f-80e7-35f1c5de6f0a**《Mulholland Drive》，artist-credit「Angelo Badalamenti」（藝人實體 5894dac5-0260-4175-b36e-e34680a859d6），first-release-date 2001-10-08，primary-type **Album**，secondary-types [Soundtrack]。轄下 6 個 release 全為 Official：2001-10-08 FR、2001-10-09 US、2001-10 XE、2001 XE、2001 DE、2008 US。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Peer Raben",
+  "album": "Querelle - Ein Pakt mit dem Teufel",
+  "year": 1982,
+  "genres": [
+   "pop",
+   "classical"
+  ],
+  "label": "CBS",
+  "why": "法斯賓達最後一部作品《Querelle》(1982) 的配樂，由與他長期合作的 Peer Raben 所作，1982 年在西德發行兩個版本、1995 年再發，三筆皆 Official（MB release-group 20cca7d6）。池中實掃：Peer Raben 名下 0 張，**德國新電影（法斯賓達、荷索、文溫德斯）這條線在池中只有 `Popol Vuh` 的四張（含荷索《Aguirre》1975）**，法斯賓達與文溫德斯皆 0 張；本批另補 `Various Artists`《Wings of Desire (Der Himmel über Berlin)》(1988)。",
+  "risk": "年份無分歧：電影與唱片同為 1982 年。**盤名帶副標**：MB 標題為《Querelle - Ein Pakt mit dem Teufel》（德文副標，意為與魔鬼的契約），流通時常只寫《Querelle》，**兩種寫法都要比**；池中兩種寫法皆 0 筆。盤名含 ASCII 連字號（非 ASCII 連字號會被 `chk-prop` 標記，本卡用的是 ASCII）。**這張是作曲家寫的配樂**，但收有 Jeanne Moreau 的演唱曲目，行文不得說成純器樂。封面：1982 年 CBS 盤，CAA 命中機會中等；試聽以德文完整盤名在 `de` storefront 較可能命中，`queryAlias` 留空但可用短名 Querelle 補查。",
+  "mbNote": "釘住 release-group **20cca7d6-2647-4057-8778-b7c86277c7a2**《Querelle - Ein Pakt mit dem Teufel》，artist-credit「Peer Raben」（藝人實體 8251cb46-9273-4af2-820e-250316d89836），first-release-date 1982，primary-type **Album**，secondary-types [Soundtrack]。轄下 3 個 release 全為 Official：1982 DE ×2、1995 DE。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "Wings of Desire (Der Himmel über Berlin)",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Mute / Milan",
+  "why": "文溫德斯《Der Himmel über Berlin》(1987，坎城最佳導演) 的原聲帶，1988-07-23 由 Mute 在英國首發（Discogs release 620383，Mute／Milan，編號 IONIC 2），同年英國版、1989 年美國 Elektra Nonesuch 版（Discogs release 2076953／1384970），MB release-group 9b4af73d 轄下 4 個 release 全為 Official。池中實掃：文溫德斯線只有 `Ry Cooder`《Paris, Texas》(1985) 一張，本片不在池中；德國新電影線見本批 Peer Raben 那張的說明。",
+  "risk": "**年份與電影年不同**：電影 1987 上映、唱片 1988-07-23 首發，本卡 year 記 1988。**盤名雙語**：MB 標題把英文與德文並列《Wings of Desire (Der Himmel über Berlin)》，流通時兩個名字常單獨使用，**三種寫法（英文、德文、並列）都要比**；池中以子字串比對撈到 `Clint Mansell`《Berlin》(2020)、`Lou Reed`《Berlin》(1973)、`Bob Dylan`《Desire》(1976)、`Pharoahe Monch`《Desire》(2007)，**逐筆人眼核對皆為不相干的碟**，完整盤名池中 0 筆。**這張是收錄既有歌曲的合輯**（Nick Cave and the Bad Seeds、Crime & the City Solution、Laurie Anderson 與 Jürgen Knieper 的配樂並存），走 §5.6；池中已有 `Nick Cave and the Bad Seeds` 七張，皆為樂團自己的專輯，不相撞。封面：Mute／Milan 盤，CAA 命中機會中等。",
+  "mbNote": "釘住 release-group **9b4af73d-6885-3bfa-8ce4-1291dee411a2**《Wings of Desire (Der Himmel über Berlin)》，artist-credit「Various Artists」（藝人實體 89ad4ac3-39f7-470e-963a-56509c546377），first-release-date 1988-07-23，primary-type **Album**，secondary-types [Soundtrack]。轄下 4 個 release 全為 Official：1988-07-23 GB、1988 GB、1989 US、1 筆 XE。已回問 release-group 端點確認實體類型與標題。對照組：2701541（Discogs 上 Jürgen Knieper《Wim Wenders' Roadmusic》）是另一張碟；MB 上 `Jennifer Rush`《Wings of Desire》為同名流行單曲，與本片無關，刻意不釘。",
+  "releaseType": "Compilation",
+  "exceptionReason": "文溫德斯《柏林蒼穹下》1988 年的官方原聲帶，是八〇年代末西柏林地下場景（Nick Cave and the Bad Seeds、Crime & the City Solution）與 Jürgen Knieper 配樂並置的代表性文獻，1988 年 Mute 英國原盤（IONIC 2）後有 1989 年美國 Elektra Nonesuch 版，MB 轄下 4 個 release 全標 Official。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/9b4af73d-6885-3bfa-8ce4-1291dee411a2",
+   "https://www.discogs.com/release/620383"
+  ],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Zdenek Liska",
+  "album": "Marketa Lazarová Soundtrack",
+  "year": 1996,
+  "genres": [
+   "classical"
+  ],
+  "label": "Bonton",
+  "why": "František Vláčil《Marketa Lazarová》(1967，1998 年捷克影評人票選為捷克影史第一) 的配樂，由捷克新浪潮最重要的電影作曲家 Zdeněk Liška 所作，1996 年由 Bonton 在捷克首次以唱片發行（MB release-group 0a53a0ac 轄下 1 個 release，1996 CZ Official）。池中實掃：Zdeněk Liška 名下 0 張（Liska／Liška 兩種寫法都查過），**捷克新浪潮這條線在池中是零張**。",
+  "risk": "**年份落差 29 年**：電影 1967 上映、錄音同期，唱片 1996 才首次問世，本卡 year 記 1996（本批第二個陷阱）。**掛名的重音分歧**：MB 的 artist-credit 是去重音的「Zdenek Liska」，而藝人實體名是帶重音的「Zdeněk Liška」——**本卡採 artist-credit 的寫法（第 10／20 條：artist-credit 是外界實際使用的掛名），`queryAlias` 填帶重音的 Zdeněk Liška**；去重時兩種寫法都要比（池中皆 0 筆）。**盤名帶 Soundtrack 字樣**：MB 標題是《Marketa Lazarová Soundtrack》，電影名單獨為《Marketa Lazarová》，兩種寫法都要比；池中以子字串比對撈到 `Charles Lloyd`《Soundtrack》(1969)，人眼核對為不相干的碟。**只有 1 個 release**，封面與試聽命中率偏低。",
+  "mbNote": "釘住 release-group **0a53a0ac-d32c-43ed-be54-86b9ab9dba0f**《Marketa Lazarová Soundtrack》，artist-credit「Zdenek Liska」（藝人實體 518ddec9-0dea-4a0c-853f-77521494ebc8 `Zdeněk Liška`），first-release-date 1996，primary-type **Album**，secondary-types [Soundtrack]。轄下 1 個 release：1996 CZ Official。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zdeněk Liška",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "François de Roubaix",
+  "album": "Le Samouraï",
+  "year": 2018,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Play Time / Dialogo",
+  "why": "梅爾維爾《Le Samouraï》(1967) 的配樂，由 François de Roubaix 所作，2018-04-05 在法國首次以獨立專輯發行（兩個版本），2024-10-04 全球數位再發，三筆皆 Official（MB release-group 3e5e7676）。池中實掃：François de Roubaix 名下 0 張，**法國黑色電影（film noir à la française）這條線在池中是零張**。",
+  "risk": "**年份落差 51 年**：電影 1967 上映、錄音同期，唱片 2018 才首次以獨立專輯問世；本卡 year 記 2018（本批第二個陷阱）。**刻意不釘 2005 年的二合一**：MB 另有 2dba257c《Les Aventuriers / Le Samouraï》(2005-12-05, Album[Compilation])，是把兩部電影的音樂合成一張，**與本卡不是同一張碟**（第 140 條）。**盤名的重音**：《Le Samouraï》含 ï，去重音為 Le Samourai，英文流通名《The Samurai》／《Le Samouraï》並用；池中以去重音比對只撈到 `Ka`《Honor Killed the Samurai》(2016)，人眼核對為不相干的碟，完整盤名池中 0 筆。封面：2018 年新發行，CAA 與 Apple 命中機會中上；試聽 `fr` storefront。",
+  "mbNote": "釘住 release-group **3e5e7676-b4fd-4172-bd1e-10b84886e152**《Le Samouraï》，artist-credit「François de Roubaix」（藝人實體 7119d597-5bda-4360-8b2b-892000e3d781），first-release-date 2018-04-05，primary-type **Album**，secondary-types [Soundtrack]。轄下 3 個 release 全為 Official：2018-04-05 FR ×2、2024-10-04 XW。已回問 release-group 端點確認實體類型與標題。對照組：**2dba257c-d8bf-38a4-85fe-d6a6d47d92f8《Les Aventuriers / Le Samouraï》(2005-12-05, Album[Compilation]) 是兩片合輯，刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
  }
 ]
