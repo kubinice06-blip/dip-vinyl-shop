@@ -248,6 +248,11 @@ function classifyClassical(card) {
 // ── 讀資料 ────────────────────────────────────────────────────────────
 const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
 const rockMap = JSON.parse(fs.readFileSync(path.join(ROOT, 'rock-subgenre-map.json'), 'utf8'));
+// 藝人級分桶對照（代理覆核產出，補標籤規則落不了位的藝人）。鍵是「大類 → 藝人 → 第二層 id」，
+// ⚠ 不能只用藝人名——同一位可跨大類（Luc Ferrari 在 electronic 與 classical 各有一筆）。
+// 只在標籤規則落空時才採用，不覆蓋既有落位。
+const artistMap = fs.existsSync(path.join(ROOT, 'genre-artist-map.json'))
+  ? JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-artist-map.json'), 'utf8')) : {};
 
 async function pullRawGenres() {
   const TOKEN = process.env.CLOUDFLARE_API_TOKEN;
@@ -303,9 +308,11 @@ const cards = seed.map((r, i) => {
 function classify(card) {
   const g = card.prim;
   if (!g || !RULES[g]) return [];
+  const over = artistMap[g]?.[card.artist];
   const paths = new Set();
   if (g === 'classical') {
     for (const n of classifyClassical(card)) paths.add(`classical/${n}`);
+    if (!paths.size && over) paths.add(`classical/${over.split('/')[0]}`);
     return [...paths];
   }
   if (g === 'rock') {
@@ -316,10 +323,14 @@ function classify(card) {
         if (card.tags.some(t => re.test(t))) { bucket = id; break; }
       }
     }
+    let fixedL3 = '';
+    if (!bucket && over) [bucket, fixedL3] = over.split('/');
     if (bucket && RULES.rock[bucket]) {
       paths.add(`rock/${bucket}`);
       const children = RULES.rock[bucket].children;
-      if (children) for (const [id, def] of Object.entries(children)) {
+      // 對照表直接指定第三層時就用它；否則照標籤比對
+      if (fixedL3 && children?.[fixedL3]) paths.add(`rock/${bucket}/${fixedL3}`);
+      else if (children) for (const [id, def] of Object.entries(children)) {
         if (card.tags.some(t => def.re.test(t))) paths.add(`rock/${bucket}/${id}`);
       }
     }
@@ -328,6 +339,17 @@ function classify(card) {
   for (const [id, def] of Object.entries(RULES[g])) {
     if (!def.re) continue;
     if (card.tags.some(t => def.re.test(t))) paths.add(`${g}/${id}`);
+  }
+  if (!paths.size && over) {
+    const [l2, l3] = over.split('/');
+    if (RULES[g][l2]) {
+      paths.add(`${g}/${l2}`);
+      const children = RULES[g][l2].children;
+      if (l3 && children?.[l3]) paths.add(`${g}/${l2}/${l3}`);
+      else if (children) for (const [id, def] of Object.entries(children)) {
+        if (card.tags.some(t => def.re.test(t))) paths.add(`${g}/${l2}/${id}`);
+      }
+    }
   }
   return [...paths];
 }
