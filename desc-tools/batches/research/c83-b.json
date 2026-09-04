@@ -1377,5 +1377,202 @@
    "note": "1999 維持卡單原值，MusicBrainz 與 Discogs 一致（RG first-release-date 1999、唯一一筆 release 1999 GB、Discogs 原盤 released 欄 1999-09-27）。**日可以寫，但要註明來源**：1999 年 9 月 27 日只出現在 Discogs 原盤條目的 released 欄，MusicBrainz 只有年。保守寫法是只寫 1999 年。Apple 上沒有這張碟。"
   },
   "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：(1) Ochre Records 廠牌沿革歸〈Surrounded by Glass〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 OCH011LCD。(2) VSA 為 Ochre 三張做美術這條歸〈Translucent〉——**本卡只能寫自己 credit 欄的字面「Design, Artwork: VSA」，不得寫成跨張**。(3) Mike Cross 那條歸〈Surrounded by Glass〉，本卡 facts 未涉及。\n**取得**：**Alan Holmes 跨張掛名**這條線（本張的 Synth／Effects 欄；本組另有一張 Ochre 卡的軌內 credit 也出現這個名字）。**〈Translucent〉只寫自己軌內 credit 的字面，不得延伸。****注意**：本卡 facts 只確認了 Discogs 在**本張**把 Alan Holmes 登在 credit 欄；**跨張那一半沒有實體 id 佐證，依第 138 條，這條線若寫不穩就讓它閒置，只寫本張的 credit 欄。**\n**原盤軌數**：`originalTrackCount` = **11**，指的是**曲目表上的位置數**。MusicBrainz track-count 11、Discogs 也是十一個位置。**但必須帶限定語**：Discogs 把第十一個位置拆成 11.1／11.2／11.3（曲子、六分鐘靜音、另一段〈High Viking〉），所以「十一」是**曲目表的位置數**，不是能聽到幾段音樂（第 144 條第二種落地方式：加限定語）。\n**禁令**：(1) **★ 掛名與本名要寫成資料庫欄位**：MusicBrainz 的 disambiguation 欄寫「Paul Simpson, founder of The Teardrop Explodes」，Discogs 藝人頁的別名欄列「Paul Simpson (2)」，Discogs 原盤 credit 欄的主要演奏者也是 Paul Simpson (2)。**「他是 The Teardrop Explodes 的創始成員」只有 MusicBrainz 的 disambiguation 欄一個來源**——要寫必須寫成「MusicBrainz 的消歧義欄這樣註記」（第 128／136 條），**且不得延伸出任何生涯敘事、時序或因果**。(2) **★ 括號裡的樂器名是唱片 credit 欄的自造名稱，不是樂器規格**（第 136 條）。**可以照抄「credit 欄把貝斯寫成 Harpoon Bass」**，**不得解釋那是什麼、也不得由它推論音色**（第 110 條）。(3) **〈High Viking〉不在曲目表上**——它只出現在 Discogs 的子軌位置。**行文不得把它當成本碟的第十二首曲子**；要提只能寫成「Discogs 把末段拆成三小段，第三段另有名字」。(4) **不得由〈Bikini Atoll〉這個曲名推論任何歷史事件或地點**（第 110 條，本卡最高風險的一條）。(5) 「Tenzing Scott Brown」只出現在第 5 軌的 Narrator 欄，**不得替他補任何身分**（第 146 條）。(6) 註記欄關於首刷數位包裝與後續壓片的那句**可以寫成包裝差異**，**不得寫成稀有度、收藏價值或壓量**（第 109 條）。(7) 掛名「Skyray」在 Apple 上與多位當代藝人撞名，**不得引用任何未經本卡 facts 確認的同名資料**（第 139 條）。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Skyray Mind Lagoons」在 Apple GB、以及「Mind Lagoons」在 Apple US 各搜一次——**盤名兩次都沒有命中本張**；用掛名搜則撈到同掛名的 1999 年單曲《Womb》（collectionId 1524787589，℗ 1999 Space Age Recordings），**證明這個掛名在 Apple 上存在、只是本張沒上架**。維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:The Land of Nod|Translucent",
+  "artist": "The Land of Nod",
+  "album": "Translucent",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8815bf46 的欄位：title《Translucent》、artist-credit「The Land of Nod」、first-release-date 1999-02-08、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1999-02-08 GB Official。",
+    "src": "https://musicbrainz.org/release-group/8815bf46-3513-416a-9469-96bffdfbbbdd"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（0657ae26）登記廠牌 Ochre Records、編號 OCH007LCD、國別 GB、一片 CD、track-count 10，曲目為 1〈The Land of Nod (Sunrise)〉3:18、2〈Quadrant Zero〉4:31、3〈Exponential #2〉4:51、4〈Filtration〉4:47、5〈Parabolic Velocity〉7:50、6〈Objective Reality〉5:24、7〈Ephemeral〉3:39、8〈Missing Mass〉3:05、9〈Luminosity〉3:42、10〈The Land of Nod (Earthrise)〉6:24。",
+    "src": "https://musicbrainz.org/release/0657ae26-7240-4718-8122-3510fd07542d"
+   },
+   {
+    "f": "Discogs 原盤條目 2004140 記：Ochre Records，編號 OCH007LCD，UK，released 欄 1999-02-08，格式 CD／Album／Limited Edition；identifiers 欄記 Barcode「5031531010072」、Matrix／Runout「D2958 OCH 007 LCD : 1 : 0 [Nimbus logo]」、Mastering SID Code「IFPI L123」、Mould SID Code「IFPI 2314」；該站未登錄任何曲長。",
+    "src": "https://www.discogs.com/release/2004140"
+   },
+   {
+    "f": "同一條目的註記欄逐軌指定錄音地點：「Tracks 1/4/5/7/8/9: recorded at nod studios.」「Tracks 2/6/10: recorded at bryn derwen, Bethesda.」「Track 3: recorded at riverside studios, Ossett.」「Mastered at Ten Pin Alley Ltd.」「Released in a jewel case with a clear tray and an eight-panel folded booklet.」",
+    "src": "https://www.discogs.com/release/2004140"
+   },
+   {
+    "f": "同一條目的 credit 欄四條：「Design: VSA」（Discogs 藝人 1889192）、「Mastered By: Mike Cross」（418166）、「Recorded By: David Wrench [2, 6, 10]」（69650）、「Recorded By: Ian MacWhirther-Morrison [3]」（1625681）；公司欄記 Recorded At: Nod Studios、Recorded At: Bryn Derwen、Recorded At: Riverside Studios, Ossett、Mastered At: Ten Pin Alley Ltd、Distributed By: SRD、Glass Mastered At: Nimbus。",
+    "src": "https://www.discogs.com/release/2004140"
+   },
+   {
+    "f": "同一條目逐軌登錄客座：第 2 軌 Piano: David Wrench、第 2／3／6／10 軌 Drums: Smurf (10)、第 6 軌 Cello: David Wrench 與 Harmonium: Merlin Zol、第 10 軌 Keyboards: Alan Holmes。",
+    "src": "https://www.discogs.com/release/2004140"
+   },
+   {
+    "f": "MusicBrainz 藝人 154a696f 的欄位：name「The Land of Nod」、type Group、country GB、area United Kingdom、life-span begin 1995、**end 2005-10、ended true**；名下 6 個 release-group；外部連結含 wikidata Q7745389。",
+    "src": "https://musicbrainz.org/artist/154a696f-302c-46cb-844c-35084821ce78"
+   },
+   {
+    "f": "Discogs 藝人頁 66951 的簡介欄寫「Cheltenham, UK-based band.」並逐行列出分工：「Anthony Walker - Guitars / Effects / Programmed Percussion」「Dave Battersby - Bass Guitar / Moog / Synths」；成員欄列 Ant Walker 與 Dave Battersby 兩人；名稱變體欄列「Land Of Nod」。",
+    "src": "https://www.discogs.com/artist/66951"
+   },
+   {
+    "f": "Discogs 上同掛名另有一筆 2000 年的 7 吋《Chronicle Blueprint #2 / Lake Merrit》（Enraptured／Stress Free 7\" Series，編號 RAPT4525），公司欄同樣含 Nod Studios。",
+    "src": "https://www.discogs.com/release/83744"
+   },
+   {
+    "f": "Discogs 廠牌頁 1838（Ochre Records）的簡介欄只有一句「Cheltenham based label.」；該廠牌頁的 releases 端點回報 152 筆；本張編號 OCH007LCD。",
+    "src": "https://www.discogs.com/label/1838"
+   }
+  ],
+  "hookCandidates": [
+   "首軌叫〈日出〉，末軌叫〈地出〉",
+   "十軌錄在三個地方，註記欄逐軌標明是哪一個"
+  ],
+  "sound": "十軌裡有八軌落在 3:05 到 5:24 之間，只有第五軌〈Parabolic Velocity〉7:50 與末軌 6:24 拉得比較開（逐軌數自 MusicBrainz 那筆 release 的曲長表，共十軌；Discogs 原盤未登錄曲長）。首軌與末軌共用同一個曲名主幹、各帶一個括號副題，把整張碟框起來。Discogs 原盤的註記欄把十軌拆成三組、逐一標明錄在哪個地點；credit 欄則把錄音、母帶與美術分開登錄，並在四個軌號上另掛鼓、鋼琴、大提琴、簧風琴與鍵盤等客座。（本欄由 MusicBrainz 曲長表與 Discogs 的曲目表、註記欄、credit 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Parabolic Velocity",
+   "The Land of Nod (Earthrise)",
+   "Objective Reality"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，MusicBrainz 與 Discogs **連日都一致**（RG first-release-date 1999-02-08、唯一一筆 release 1999-02-08 GB、Discogs 原盤 released 欄 1999-02-08）。**行文可寫到日：1999 年 2 月 8 日。** Apple 上沒有這張碟。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：(1) Ochre Records 廠牌沿革歸〈Surrounded by Glass〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 OCH007LCD。(2) Mike Cross 同時是 Longstone 成員又在本張掛母帶這條，**歸〈Surrounded by Glass〉**——**本卡只能寫自己 credit 欄的字面「Mastered By: Mike Cross」，不得延伸到他是誰、還做過什麼。**(3) Alan Holmes 跨張掛名那條歸〈Mind Lagoons〉——**本卡只寫第 10 軌 credit 欄的字面，不得延伸。**\n**取得**：(1) **VSA 為 Ochre 三張做美術**這條跨張線（本張的 Design 欄、〈Mind Lagoons〉的 Design/Artwork 欄、〈Pestrepeller〉的 Layout 欄，Discogs 是同一個藝人實體 1889192）。**〈Mind Lagoons〉與〈Pestrepeller〉禁用這條。**(2) **Bryn Derwen 這個錄音室**（本張註記欄寫明在 Bethesda）。**〈Sirènes〉只寫自己那筆公司欄的字面。**\n**原盤軌數**：`originalTrackCount` = **10**。MusicBrainz release track-count 10、Discogs 原盤十軌，兩邊逐項同名同序，**無爭議**。\n**禁令**：(1) **★ 成員名字有兩種寫法**：Discogs 成員欄寫「Ant Walker」，同頁的分工說明卻寫「Anthony Walker」。**兩種寫法都要註明是同一頁的哪一部分**，不得寫成兩個人、也不得逕自補全名（第 136 條）。(2) **★ 團的所在地與廠牌所在地是同一個地名（Cheltenham），但那是兩個不同欄位**：團的來自 Discogs 藝人頁簡介欄、廠牌的來自 Discogs 廠牌頁簡介欄。**可以寫成「兩個頁面的簡介欄寫了同一個地名」**，**不得推論成「這是廠牌的在地團」或任何隸屬關係**（第 110／128 條）。**本組另一張 Ochre 卡（Longstone）的藝人頁也寫 Cheltenham，本卡不得做這個跨張比較**（第 145 條）。(3) **不得由〈Missing Mass〉〈Parabolic Velocity〉〈Exponential #2〉〈Objective Reality〉這些曲名推論主題或學科**（第 110 條）。首軌與末軌的括號副題（Sunrise／Earthrise）**可以寫成「共用主幹、各帶一個副題」的結構觀察**，**不得解釋成任何敘事、天文事件或概念**。(4) **不得寫壓量**——Discogs 註記欄有「Limited to 500 copies」，依第 109 條研究層刻意未寫進 facts；格式欄的 Limited Edition 只能寫成該站的格式欄（第 136 條）。(5) MusicBrainz 藝人實體的 end 欄是 2005-10、ended true。**這只能寫成「MusicBrainz 該藝人實體的活動期記到 2005 年 10 月」**，**不得寫成解散、停止活動或任何生涯結論**（第 136 條）——沒有第二個來源。(6) 「Smurf (10)」「Merlin Zol」「Ian MacWhirther-Morrison」只出現在 credit 欄，**不得替他們補任何身分**（第 146 條）。(7) 團名 The Land of Nod 在 Apple 與 Discogs 上都與多個無關實體撞名，**不得引用任何未經本卡 facts 確認的同名資料**（第 139 條）。\n**探測層核對（推翻／補正）**：`previews.json` 標 `unavailable`。依第 152 條我另用「Land of Nod Translucent」與「The Land of Nod」在 Apple GB 各搜一次——前者回 count 0，後者回十四筆全部是別人的碟（Scale the Summit、Beechwood、S. Wyte 等）。**這張是真的搜不到，不是比對擋掉**，維持 `unavailable`。CAA 該 release-group 無圖，需本機掃圖。"
+ },
+ {
+  "key": "desc2:Experimental Audio Research|Pestrepeller",
+  "artist": "Experimental Audio Research",
+  "album": "Pestrepeller",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c27d691c 的欄位：title《Pestrepeller》、artist-credit「Experimental Audio Research」、first-release-date 1999-07-12、primary-type Album、secondary-types 空陣列；轄下只有一筆 release，1999-07-12 GB Official。",
+    "src": "https://musicbrainz.org/release-group/c27d691c-6834-336d-bf07-6f4ab3888de9"
+   },
+   {
+    "f": "MusicBrainz 那筆 release（443c5a7c）登記廠牌 Ochre Records、編號 OCH009LCD、國別 GB、一片 CD、track-count 3，三軌為 1〈Beyond the Point of No Return, Part I〉20:26、2〈Beyond the Point of No Return, Part II〉18:58、3〈Automatic Music (For Oscillator, Ring Modulator & Filter Clusters)〉12:13。",
+    "src": "https://musicbrainz.org/release/443c5a7c-33c5-4e5b-9718-09afa99f17ff"
+   },
+   {
+    "f": "Discogs 原盤條目 183174 把曲目登成兩個標題：一個 index 位置〈Beyond The Point Of No Return〉39:25，底下含 Part I 20:26 與 Part II 18:59 兩個子軌；以及第 3 軌〈Automatic Music (For Oscillator, Ring Modulator & Filter Clusters)〉12:13。",
+    "src": "https://www.discogs.com/release/183174"
+   },
+   {
+    "f": "同一條目的註記欄寫「Track times printed on the sleeve differ from actual play durations. Beyond The Point Of No Return and Automatic Music have printed times of 40:00 and 12:11 respectively with a total time of 51:38 versus a printed duration of 52:11.」——**封套上只印了兩個曲名與兩個時間**。",
+    "src": "https://www.discogs.com/release/183174"
+   },
+   {
+    "f": "同一條目的 credit 欄逐軌登錄：〈Beyond the Point of No Return〉掛「Producer, Synthesizer [EMS Synthi VCS3], Effects [Treatments], Sounds [Sound Sources]: Sonic Boom (2)」「Engineer: Pete Bassman」「Sounds [Sound Sources]: Pestrepeller」；第 3 軌掛「Producer, Synthesizer [Serge Modular Music System]: Sonic Boom (2)」與「Engineer: Sonic Boom (2)」「Engineer: Pete Bassman」；整張碟另有「Layout: VSA」與「Mastered By: Mike Cross」。",
+    "src": "https://www.discogs.com/release/183174"
+   },
+   {
+    "f": "同一條目的公司欄記 Recorded At: RCS Studio、Mastered At: Ten Pin Alley Ltd、Glass Mastered At: Nimbus、Distributed By: SRD；註記欄寫「Recorded at RCS Studio, Rugby.」「Equipment thanks to: Robin Wood @ EMS (Cornwall), Rex Probe @ Sound Transform System (Oakland).」「Packaging: card LP-style gatefold cover, mirror panel with red & black ink, white dust-sleeve for disc」。",
+    "src": "https://www.discogs.com/release/183174"
+   },
+   {
+    "f": "同一條目的註記欄還寫「Original Pestrepeller recording - Ultrasonic Attackwave Pestrepeller available on Sympathy For The Record Industry (SFTRI443).」；identifiers 欄記 Barcode「5 031531 010096」、Matrix／Runout「D4357 OCH 009 LCD : 1:0 [Nimbus logo]」、Mastering SID Code「IFPI L123」、Mould SID Code「ifpi 2339」。",
+    "src": "https://www.discogs.com/release/183174"
+   },
+   {
+    "f": "Discogs master 49483 只有兩筆版本：1999 UK CD（OCH009LCD／OCH 009LCD）與 1999 UK 黑膠 LP（OCH009LV）；master 的風格欄掛 Ambient、Drone、Minimal、Experimental。",
+    "src": "https://www.discogs.com/master/49483"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 1528305253）的 trackCount 欄 3、releaseDate 欄 2010-01-01、copyright 欄「℗ 2010 Space Age Recordings」，三軌逐項與 MusicBrainz 那筆同序（Apple 把 Part I／Part II 寫成 Pt. 1／Pt. 2）。",
+    "src": "https://music.apple.com/gb/album/pestrepeller/1528305253"
+   },
+   {
+    "f": "MusicBrainz 藝人 5ba39b83 的欄位：name「Experimental Audio Research」、type Group、country GB、life-span begin 1990、disambiguation「UK musician collective」；aliases 欄列 E.A.R.（標為 Artist name）、E.A.R. (Experimental Audio Research)、EAR；外部連結含 wikidata Q5322517 與一條 biography 連結 sonic-boom.info/ear.php。",
+    "src": "https://musicbrainz.org/artist/5ba39b83-d12d-4b31-b449-992300a73df8"
+   },
+   {
+    "f": "Discogs 藝人頁 90418 的簡介欄寫「Experimental Audio Research (E.A.R.) was formed in 1990 by Sonic Boom (real name Pete Kember) as a solo and collaborative ensemble in order to pursue the more experimental work he had contributed to Spacemen 3 since the 1980s. (…) Early EAR records feature musicians such as Eddie Prévost (AMM), Kevin Martin (The Bug), Kevin Shields (My Bloody Valentine), Thomas Köner & Andy Mellwig (Porter Ricks), while from 1998 on, EAR became more or less a solo vehicle for Kember.」；成員欄列九人。",
+    "src": "https://www.discogs.com/artist/90418"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有兩個曲名",
+   "封套印的時間跟實際播出的時間對不上"
+  ],
+  "sound": "整張碟只有三個播放位置、兩個曲名：前兩軌是同一首曲子的兩個部分（20:26 與 18:58），第三軌 12:13（逐軌數自 MusicBrainz 那筆 release 的曲目表，共三軌；Discogs 把前兩軌收在一個 39:25 的標題底下）。Discogs 原盤的 credit 欄逐軌指定合成器型號——前段用一台 EMS 的機器、第三軌用另一套模組系統——並把音源、效果、工程分開登錄。Discogs master 的風格欄掛 Ambient、Drone、Minimal、Experimental。（本欄由 MusicBrainz 曲目表與 Discogs 的 credit 欄、註記欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Beyond the Point of No Return, Part I",
+   "Beyond the Point of No Return, Part II",
+   "Automatic Music (For Oscillator, Ring Modulator & Filter Clusters)"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，MusicBrainz 與 Discogs **連日都一致**（RG first-release-date 1999-07-12、唯一一筆 release 1999-07-12 GB、Discogs 原盤 released 欄 1999-07-12）。**行文可寫到日：1999 年 7 月 12 日。** **Apple 那筆的 releaseDate 2010-01-01 與 ℗ 2010 Space Age Recordings 是後來的再發，不得採用**（第 141 條附二第 2 點）。"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：(1) Ochre Records 廠牌沿革歸〈Surrounded by Glass〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 OCH009LCD。(2) VSA 那條歸〈Translucent〉——**本卡只寫自己 credit 欄的字面「Layout: VSA」。**(3) Mike Cross 那條歸〈Surrounded by Glass〉——**本卡只寫自己 credit 欄的字面「Mastered By: Mike Cross」。**(4) **Pete Bassman 同時掛名兩張那條歸〈Elasticated Waveband〉**——**本卡只寫自己 credit 欄的字面「Engineer: Pete Bassman」，不得寫成跨張。**\n**取得**：Sonic Boom／Pete Kember／Spacemen 3 這條線（來源是 Discogs 藝人頁 90418 的簡介欄與本張的逐軌 credit 欄）。\n**原盤軌數：兩說，兩個都不填死，行文一律帶限定語（第 141 條順帶那款＋第 144 條第二種落地方式）。**\n  ・**資料庫索引**：MusicBrainz track-count **3**（Part I／Part II／Automatic Music）；Discogs 也是三個播放位置，但把前兩個收成一個 index 標題底下的兩個子軌。\n  ・**封套印的**：Discogs 註記欄明寫封套只印**兩個曲名與兩個時間**（40:00 與 12:11）。\n  ・這兩個數字**各有來源、彼此不衝突**（一個是資料庫索引的軌數，一個是封套印出來的曲目數）。**行文寫任何數字都必須擇一並註明是哪一種**（「資料庫登錄三軌」或「封套只印了兩個曲名」），**不得寫成沒有限定的「三軌」或「兩軌」。**\n**禁令**：(1) **★ 封套時間與實際時長對不上這件事只能照抄註記欄**：40:00 對 39:25、12:11 對 12:13、總長 52:11 對 51:38。**可以寫「Discogs 註記欄記下封套印的時間與實際播出時間不同」**，**不得提供任何解釋（母帶、剪輯、印刷錯誤都不行）**（第 110 條）。(2) **★ 註記欄提到另有一張 Sympathy For The Record Industry 的《Ultrasonic Attackwave Pestrepeller》**——**那是別的物件**，可以寫成「註記欄提到原始的 Pestrepeller 錄音另在他廠發行」，**絕不可與本張混寫，也不可替它描述內容**（第 140 條的撞名形狀）。(3) **不得寫壓量**——Discogs 註記欄有「Limited to 1900 copies in a mirror-board wallet」，依第 109 條研究層只把包裝的部分寫進 facts、刻意略去數字；**行文也不得補**。(4) Discogs 藝人頁簡介欄裡的 AMM／The Bug／My Bloody Valentine／Porter Ricks 等括號註記**一律不入文**——那是簡介作者的補充，且與本張 credit 欄毫無交集（第 110／146 條）。**可寫的是**「Discogs 藝人頁的簡介欄說這個計畫 1990 年由 Sonic Boom（本名 Pete Kember）成立、用來延續他在 Spacemen 3 之外的實驗性作品，並說 1998 年起大致成為他一個人的載體」——**必須寫成該欄的說法**（第 128 條）。(5) **合成器型號（EMS Synthi VCS3、Serge Modular Music System）是 credit 欄括號裡的字面**，**可以照抄，不得解釋那是什麼機器、不得由型號推論音色**（第 110／136 條）。(6) 掛名有四種寫法（Experimental Audio Research／E.A.R.／EAR／E,A.R.），**卡單採全稱**；提縮寫要註明是資料庫的 alias 欄。(7) **不得寫「這是他們最後一張／唯一一張長篇」**之類的序數或地位主張——facts 完全沒有支撐。\n**探測層核對**：CAA 有圖。試聽可用（Apple 1528305253），三軌逐項對得上原盤，**這一筆的軌數可以用**；**但 `appleYear` 2010 是再發年，不得寫入行文**。"
+ },
+ {
+  "key": "desc2:Rothko|A Negative for Francis",
+  "artist": "Rothko",
+  "album": "A Negative for Francis",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6af5a45b 的欄位：title《A Negative for Francis》、artist-credit「Rothko」、first-release-date 1999、primary-type Album、secondary-types 空陣列；轄下兩筆 release 都是 Official，一筆 1999 GB CD、一筆 2017-12-15 XW 數位。",
+    "src": "https://musicbrainz.org/release-group/6af5a45b-0c17-3b6e-a3f3-0bb890f33d24"
+   },
+   {
+    "f": "MusicBrainz 1999 GB 那筆 release（f5ef6e0c）登記廠牌 Lo Recordings、編號 LCD 12、barcode 0666017002620、一片 CD、track-count 16。",
+    "src": "https://musicbrainz.org/release/f5ef6e0c-b85d-4a79-b968-223738209ba8"
+   },
+   {
+    "f": "同一筆 release 的十六軌曲名與曲長：1〈Doo〉0:33、2〈Roads Become Rivers〉3:15、3〈Shadowless Self〉1:25、4〈Windows Doors and Other Openings〉3:26、5〈Halftones and Metatones〉0:46、6〈For Danny〉2:28、7〈A Negative for Francis Shot Through Gauze〉4:32、8〈Testcard〉1:23、9〈Seventyseven A〉3:22、10〈Not Growing Out of Growing Into〉3:22、11〈Eighth Electric Eel〉2:01、12〈System Post Suffix〉3:55、13〈It Goes Outwards〉2:53、14〈Vessel Heaven〉2:49、15〈Newmelodics432 Other Openings〉4:05、16〈Culzean〉3:08。",
+    "src": "https://musicbrainz.org/release/f5ef6e0c-b85d-4a79-b968-223738209ba8"
+   },
+   {
+    "f": "Discogs 原盤條目 44038 記：Lo Recordings，編號 LCD12，UK，released 欄 1999，格式 CD／Album；公司欄記 Mastered At: Node Recording Services、Pressed By: Prosoft Logistics、Distributed By: EFA、Published By: DT Music (3)／DT Publishing／SGO Music Publishing Ltd.、Copyright (c): Copyright Control。",
+    "src": "https://www.discogs.com/release/44038"
+   },
+   {
+    "f": "同一條目的 credit 欄五條：「Producer: Rothko [1, 3 to 6, 8 to 16]」「Mastered By: Jay Burnett」「Design: Jon Forss」「Photography By: Christian Hermansen」「Recorded By [Recorded With The Assistance Of]: Nick Olofsson [3, 10, 12, 13]」；**第 2 與第 7 軌另掛「Producer: Simon Raymonde」，第 6 與第 9 軌另掛「Producer: Julian Standen」**。",
+    "src": "https://www.discogs.com/release/44038"
+   },
+   {
+    "f": "同一條目的註記欄寫「Track 6 published by DT Music/DT Publishing c/o SGO Music & Publishing Ltd. All other tracks © Copyright Control」「Mastered @ Node」「Back Cover: Made in England」「Inlay: To silence in sound」「Jewel case with clear tray and 4-page booklet.」；identifiers 欄記 Barcode「0 666017 002620 >」與另一組貼紙條碼「0 17533 19852 4」、Matrix／Runout「2728-01LO LCD12 PROSOFT LOGISTICS I 9022630」、Mould SID Code「IFPI 6N02」。",
+    "src": "https://www.discogs.com/release/44038"
+   },
+   {
+    "f": "Discogs master 48673 只有兩筆版本：1999 UK CD（Lo Recordings LCD12）與 1999 UK 黑膠 LP（LLP 12）；master 的風格欄掛 Post Rock 與 Ambient。",
+    "src": "https://www.discogs.com/master/48673"
+   },
+   {
+    "f": "MusicBrainz 2017-12-15 那筆 XW 數位 release（66be3123，廠牌欄 Lo Recordings、編號 Lo12）也是十六軌、與 1999 那筆逐項同序，只有三處把標題裡的斜線補回來（第 7 軌〈A Negative for Francis / Shot Through Gauze〉、第 12 軌〈System / Post Suffix〉、第 15 軌〈Newmelodics432 / Other Openings〉）。",
+    "src": "https://musicbrainz.org/release/66be3123-89de-4775-acdb-2626241417ac"
+   },
+   {
+    "f": "Apple Music 英國店面那筆（collectionId 41815912）的 trackCount 欄 16、releaseDate 欄 1999-02-01、copyright 欄「℗ 1999 Lo Recordings 1999」，十六軌逐項與 MusicBrainz 那筆同序（第 7 軌 Apple 把 Gauze 拼成 Guaze）。",
+    "src": "https://music.apple.com/gb/album/a-negative-for-francis/41815912"
+   },
+   {
+    "f": "MusicBrainz 藝人 a7249e1c 的欄位：name「Rothko」、type Group、country GB、life-span begin 1997、disambiguation「UK ambient / post-rock group」；名下 25 個以上 release-group（單次回應上限 25）；外部連結含官方網站 tracerecordings.com、bandcamp 與 wikidata Q7370484。",
+    "src": "https://musicbrainz.org/artist/a7249e1c-4650-4eaf-a042-ddef7709d7c2"
+   },
+   {
+    "f": "Discogs 藝人頁 523 的簡介欄寫「Based in London, Rothko were founded by Mark Beazley in the spring of 1997, playing their first show at (…) in August the same year. The original lineup consisted of Mark Beazley, Crawford Blair, and Jon Meade. (…) The original lineup disbanded in 2001, and Mark carried on the Rothko name.」；成員欄列 Michael Donnelly、Mark Beazley、Tom Page、Ben Page、Crawford Blair、Jon Meade 六人。",
+    "src": "https://www.discogs.com/artist/523"
+   }
+  ],
+  "hookCandidates": [
+   "十六軌，五軌不到一分半",
+   "同一張碟上有三位製作人，各管幾軌"
+  ],
+  "sound": "十六軌裡有五軌短於一分半（最短的首軌〈Doo〉0:33、第五軌 0:46、第八軌 1:23、第三軌 1:25），沒有任何一軌超過五分鐘，最長的第七軌 4:32（逐軌數自 MusicBrainz 1999 那筆的曲長表，共十六軌）。Discogs 原盤的製作 credit 是逐軌切開的：主要那條掛在團名底下並列出十四個軌號，另外四軌分別掛兩個不同的製作人；錄音協力也指定了四個軌號。Discogs master 的風格欄掛 Post Rock 與 Ambient。（本欄由 MusicBrainz 曲長表與 Discogs 的逐軌 credit 欄、風格欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "A Negative for Francis Shot Through Gauze",
+   "Roads Become Rivers",
+   "Culzean"
+  ],
+  "status": "full",
+  "yearVerified": {
+   "year": 1999,
+   "note": "1999 維持卡單原值，四方一致（MusicBrainz first-release-date 1999、Discogs master year 欄與原盤 released 欄 1999、Apple copyright 欄 ℗ 1999）。**行文只能寫到年**——MusicBrainz 與 Discogs 都沒有月與日；**Apple 的 releaseDate 1999-02-01 是單一來源、且本批已多次證實 Apple 日期欄不可靠，不足以支撐月日。**"
+  },
+  "notes": "**分派總表在〈Chronoglide〉那張的 notes，本卡引用之；全批禁令同。**\n**讓開**：Lo Recordings 廠牌沿革歸〈Blown〉，**本卡禁用**，只寫自己那筆的廠牌欄與編號 LCD 12。\n**取得**：**Lo Recordings 的美術／攝影／母帶班底跨兩張**這條線（Jon Forss 的 Design、Christian Hermansen 的 Photography、Jay Burnett——本張掛 Mastered By、同廠另一張掛 Musical Assistance）。**〈Blown〉禁用這條，只寫自己那筆 credit 欄的字面。**\n**原盤軌數**：`originalTrackCount` = **16**。MusicBrainz 1999 GB release track-count 16、Discogs 原盤十六軌、Apple 十六軌、MusicBrainz 2017 數位再發也是十六軌且同序，**四個來源一致，無爭議**。\n**禁令**：(1) **★ 三處曲名有「有無斜線」兩說**：1999 原盤與 Apple 作〈A Negative for Francis Shot Through Gauze〉〈System Post Suffix〉〈Newmelodics432 Other Openings〉，2017 數位再發把斜線補回去。**`keyTracks` 與行文採 1999 原盤（MusicBrainz f5ef6e0c）的寫法**；提另一種要註明是 2017 那筆。Apple 另把 Gauze 拼成 Guaze，**那是 Apple 的錯字，不採用**。(2) **★ 逐軌製作人不得寫成任何關係或評價**：Simon Raymonde 與 Julian Standen 只出現在 Discogs 的逐軌 Producer 欄，**不得替他們補任何身分、樂團或作品**（第 146 條）。「同一張碟上有三位製作人、各管幾軌」這個**結構觀察可以寫**（軌號在 credit 欄裡數得出來），**但不得推論成分工方式、錄音批次或美學差異**（第 108／110 條）。(3) **不得由盤名〈A Negative for Francis〉或 Rothko 這個團名推論任何人物、畫家或典故**（第 110 條，本卡最高風險）。MusicBrainz 的 disambiguation 欄寫「UK ambient / post-rock group」，Discogs 藝人頁的簡介欄寫成立於 1997 年春天的倫敦團——**團名的來歷沒有任何來源，一個字都不能寫**。(4) Discogs 藝人頁簡介欄的成立、首演、原始陣容與 2001 年解散那幾句**必須寫成「Discogs 藝人頁的簡介欄說」**（第 128 條），**且與本張 1999 年的發行之間不得建立任何因果或時序斷言**。(5) 註記欄的「Inlay: To silence in sound」是唱片內頁印的一行字，**可以照抄，不得解釋**（第 110 條）。(6) 出版商欄與版權欄（DT Music／DT Publishing／SGO Music Publishing／Copyright Control）**只能寫成 Discogs 的欄位**，不得推論任何權利歸屬或商業關係（第 136 條）。(7) **不得寫壓量**（第 109 條）。\n**探測層核對**：CAA 有圖。試聽可用（Apple 41815912），十六軌逐項對得上原盤，**這一筆的軌數可以用**。"
  }
 ]
