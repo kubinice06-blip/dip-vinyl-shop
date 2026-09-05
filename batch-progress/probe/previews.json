@@ -8863,20 +8863,20 @@
  "Robert Johnson|King of the Delta Blues Singers, Vol. II": {
   "batch": "c95",
   "tried": [
-   "us:10→1"
+   "us:10→1",
+   "us:research-swap→1"
   ],
   "front": "us",
-  "collectionId": 157432232,
-  "appleTitle": "King of the Delta Blues Singers",
+  "collectionId": 193895743,
+  "appleTitle": "King of the Delta Blues Singers, Vol. 2",
   "appleArtist": "Robert Johnson",
-  "appleYear": "1961",
+  "appleYear": "1970",
   "explicitness": "notExplicit",
   "trackCount": 17,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/0a/82/1e0a8263-ea37-cfb3-5fbf-75014abaa52a/mzaf_9927200553125485862.plus.aac.p.m4a",
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/ad/82/b9ad82be-474e-9d61-100e-dcd993b159e3/mzaf_10220661442135958645.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "yearDrift": 9,
-  "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 a 抓到配錯碟、主線換綁**：原綁 157432232 是 **1961 年的第一輯**（Apple 標題就叫《King of the Delta Blues Singers》，沒有 Vol. II）。**這正是第 168 條那個形狀——卷號被子字串比對吃掉**；同日已修 `titleOk`／`looseTitleOk` 的 volToken，但這筆是修法之前探測的。改綁 us 193895743。"
  },
  "Robert Johnson|The Complete Recordings": {
   "batch": "c95",
@@ -8922,9 +8922,20 @@
    "nl:8→0",
    "jp:7→0",
    "ca:6→0",
-   "au:6→0"
+   "au:6→0",
+   "us:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 202389419,
+  "appleTitle": "The Complete Recordings, Vol. 1",
+  "appleArtist": "Bessie Smith",
+  "appleYear": "1991",
+  "explicitness": "notExplicit",
+  "trackCount": 38,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/a9/b2/d6a9b21e-c0f4-a76b-cfff-e7c3e183eed8/mzaf_9343332207763565720.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 a 覆核、主線複驗**：探測層判 unavailable 是誤判，成因是 **Apple 寫「Vol. 1」、卡單寫「Volume 1」**。us 202389419（1991-04-04、38 軌）。⚠ 這張是後世整編輯，**Apple 的年份是整編輯出版年、不是錄音年**，行文不得互寫。"
  },
  "Ma Rainey|Ma Rainey's Black Bottom": {
   "batch": "c95",
@@ -8958,7 +8969,11 @@
   "cleanedOnly": false,
   "yearDrift": 13,
   "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "appleTrackCountField": 25,
+  "mbTrackCount": 32,
+  "expandedReissue": true,
+  "note": " **2026-09-05 研究層 c-95 a：版本偏差——Apple 25 軌／MB 原盤 32 軌。Apple 是 Milestone 線的子集。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Blind Willie McTell|Atlanta Twelve String": {
   "batch": "c95",
@@ -9014,20 +9029,20 @@
   "batch": "c95",
   "tried": [
    "us:12→0",
-   "gb:12→1"
+   "gb:12→1",
+   "us:research-swap→1"
   ],
-  "front": "gb",
-  "collectionId": 1446883888,
-  "appleTitle": "Woman Blues (Remastered)",
+  "front": "us",
+  "collectionId": 1770109928,
+  "appleTitle": "Woman Blues! (Remastered 1994) [feat. Lonnie Johnson]",
   "appleArtist": "Victoria Spivey",
-  "appleYear": "2009",
+  "appleYear": "1962",
   "explicitness": "notExplicit",
   "trackCount": 10,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/90/01/f09001d0-3367-500b-b23f-f1df3ae47dfa/mzaf_8031541522338826852.plus.aac.p.m4a",
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/44/27/8744276c-7fb2-1377-5d71-149038f51579/mzaf_7815181150417004767.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "yearDrift": 47,
-  "reissueTitle": true,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 a 建議、主線換綁**：原綁 gb 1446883888 是 2009 年的《Woman Blues (Remastered)》，盤名少了驚嘆號、且帶再發裝飾。改綁 us 1770109928（1962、合掛 Lonnie Johnson），更貼近原盤。（同日新增的「素面版本優先」排序日後會自動偏好這一筆。）"
  },
  "Sippie Wallace|Women Be Wise": {
   "batch": "c95",
@@ -9158,7 +9173,11 @@
   "cleanedOnly": false,
   "yearDrift": 13,
   "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "appleTrackCountField": 16,
+  "mbTrackCount": 12,
+  "expandedReissue": true,
+  "note": " **2026-09-05 研究層 c-95 a：版本偏差——Apple 16 軌／MB 原盤 12 軌。Apple 是 ℗1979 L+R 的擴充版；⚠ 維基稱〈Born Dead〉在本輯，**但 MB 的 12 軌原盤沒有這一軌**，只在擴充版上，正文不得把它當原盤曲目。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Jimmy Rogers|Chicago Bound": {
   "batch": "c95",
@@ -9192,24 +9211,24 @@
   "trackCount": 17,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/da/9c/8bda9cec-c5be-3987-6c11-b5bf0f39dcf7/mzaf_12157539373623647805.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "appleTrackCountField": 17,
+  "mbTrackCount": 14,
+  "expandedReissue": true,
+  "note": " **2026-09-05 研究層 c-95 a：版本偏差——Apple 17 軌／MB 原盤 14 軌。Apple 多三軌。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Earl Hooker|Sweet Black Angel": {
   "batch": "c95",
   "tried": [
    "us:0→0",
-   "gb:1→1"
+   "gb:1→1",
+   "us/gb:research-rejected"
   ],
-  "front": "gb",
-  "collectionId": 1283483865,
-  "appleTitle": "Sweet Black Angel",
-  "appleArtist": "Earl Hooker",
-  "appleYear": "1970",
-  "explicitness": "notExplicit",
-  "trackCount": 17,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/7c/fc/a47cfce7-ffda-dac3-8b59-c46b20cdb98d/mzaf_12918409988588197042.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
+  "status": "unavailable",
+  "rejectedCollectionIds": [
+   1283483865
+  ],
+  "note": "**2026-09-05 研究層 c-95 a 判定配錯碟、主線改判 unavailable**：原綁 gb 1283483865 是 ℗2017 AP Digital 的同名整編，**11 軌原盤沒有一軌對得上**。研究層把十個店面的藝人目錄全掃過，Apple 上沒有本盤。⚠ **1283483865 列黑名單，日後重探不得再配上它。**"
  },
  "Magic Sam|Give Me Time": {
   "batch": "c95",

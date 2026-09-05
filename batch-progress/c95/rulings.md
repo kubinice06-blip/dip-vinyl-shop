@@ -143,3 +143,38 @@ MB 另有 `f2927c6a`《Singin' the Blues》(1995) 是同一套的重複條目、
   在 MB 掛在 **Roscoe Mitchell Sextet** 名下，本人實體 `56f33083` 分頁全列 57 筆查無；
   以「Sound」查會命中《Sound Songs》(1997) 與《Before There Was Sound》(2011) 兩個假陽性。
   **列 §1 補遺候選。**
+
+---
+
+## （主線追加，2026-09-05）第 10 條：六處年份／盤名兩說 —— 一律維持卡單值，兩說寫進 note，正文不得把年份與盤名綁成一句
+
+研究層 a 組回報六處衝突。**判準沿用第 91／95 條**（卡片年份取 release-group 的
+`first-release-date`，rgMbid 是身分鍵不是年份來源）與**「兩個獨立資料庫 > 單一維基條目」**：
+
+| # | 卡 | 衝突 | **裁定** |
+|---|---|---|---|
+| 1 | Elmore James《Whose Muddy Shoes》 | 卡片 year 1968 對應的 release 標題是《Tough》（GB Blue Horizon）；以本卡盤名為題的最早盤是 1969 US Chess LP 1537 | **年份維持 1968**（MB first-release-date）。**但正文不得寫成「1968 年發行《Whose Muddy Shoes》」**——兩者綁不起來。年份與盤名分開講。 |
+| 2 | Gus Cannon | MB 與 Apple 都記 1962，維基寫 1963 年為 Stax 錄音 | **取 1962**（兩個獨立資料庫）。維基的 1963 寫進 note 備查。另更正策展層的「七十八歲」→ 維基寫 79 歲。 |
+| 3 | J.B. Lenoir《Alabama Blues》 | MB 1966 vs 維基 1965；且維基稱〈Born Dead〉在本輯，**MB 的 12 軌原盤沒有這一軌** | **取 1966**。**〈Born Dead〉不得當原盤曲目**——它只在 ℗1979 L+R 的 16 軌擴充版上。 |
+| 4 | Sippie Wallace | MB 與 Apple 作《Women Be Wise》，維基把 1966 年那張 Storyville 記作《Sings the Blues》 | **取《Women Be Wise》**（兩個獨立來源）。維基的異名寫進 note。 |
+| 5 | Ida Cox | MB first-release-date 1990（再版年）vs 卡片 1961 | **維持 1961**——策展層已依第 91 條處理過，僅備查。 |
+| 6 | Robert Johnson《The Complete Recordings》／Tampa Red | 前者 MB 1990-08-20 vs 維基 1990-08-28；後者錄音 1960／發行 1961 | **年份無爭議，正文避開月日**；Tampa Red 屬正常的錄音年≠出版年。 |
+
+### 通則（這批的核心）
+
+**這 23 張裡有 16 張的錄音年與出版年不同**，每張都在 `yearVerified` 各自附源。
+**`notes` 開頭一律下了鐵則：不得把錄音年寫成發行年，也不得把出版年寫成錄音年。**
+錄音／出版同年的只有六張（Sippie Wallace、Ida Cox、Earl Hooker、Lonnie Johnson、
+Victoria Spivey、Willie Dixon）。
+
+### 一併記下研究層擋掉的說法
+
+**時序與序數類幾乎全軍覆沒**——「第一位靠唱片賣座的男性鄉村藍調歌手」（Blind Lemon）、
+「classic blues 的起點」（Bessie Smith）、「戰後幾乎銷聲匿跡／這是第一張」（Tampa Red）、
+「之後四十年只在教會彈風琴／復出的第一張」（Sippie Wallace）、
+「生涯唯一的 LP／最後錄音」（Ida Cox）、「Stax 的第二張 LP」（Gus Cannon）——
+**全部沒有直述來源**。這與 c-93 的 Jane's Addiction、c-96 的 Born Again 與 Jerry Butler 同一族：
+**策展層的 `why` 裡的時序定位要當成待查證的主張**（本輪第四、五、六次）。
+
+另有一處**事實錯誤就地更正**：策展層說 Blind Lemon 的兩筆 Apple 是「Riverside 1961 年盤」，
+實測版權欄是 **Milestone 與 Black Swan**。
