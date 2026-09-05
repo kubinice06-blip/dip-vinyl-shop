@@ -1,0 +1,98 @@
+[
+ {
+  "artist": "Toby Fox",
+  "album": "UNDERTALE: Soundtrack",
+  "year": 2015,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Materia Collective（catno MCOL-0004，2015-09-15 全球數位，101 軌）；2016 年黑膠版 8BIT-8048",
+  "why": "Toby Fox 名下唯一一張完整長篇原聲，也是 2010 年代獨立遊戲音樂在唱片業有形化的起點：2015 年 9 月 15 日隨遊戲同日由 Materia Collective 以 MCOL-0004 發行 101 軌數位版；2016 年 12 月 8 日同一家以 8BIT-8048 做成兩片 12 吋黑膠（26＋15 軌），另有一版加 7 吋單曲，2017 年在美、歐各再壓一次，2018 年由日本 Fangamer 通路引進。實掃 seed_cards.json 全 14,424 列，`Toby Fox`／`トビー・フォックス`／`Undertale`／`Deltarune` 全部零命中；整個遊戲原聲品類池中近乎不存在，唯一沾邊的第 11778 列 Disasterpeace《It Follows》是電影配樂。",
+  "risk": "盤名三種寫法：MB 作《UNDERTALE: Soundtrack》（帶冒號）、Apple us 作《Undertale Soundtrack》（無冒號，collectionId 1528217465）、Apple jp 另有一筆《Undertale サウンドトラック》（1411893917，日文尾綴），三種在字串比對下都不相等（裁定第 49 條）。店面序 GAME：jp 與 us 兩邊都命中，jp 的掛名是片假名 `トビー・フォックス`、us 是 `Toby Fox`；本卡取 us 的 1528217465（releaseDate 2015-09-15，與 MB 原盤日期完全一致），掛名依 MB 藝人實體用拉丁 `Toby Fox`。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group f98e6631-f10a-40e0-953e-c9b32ab18570。回問確認：title「UNDERTALE: Soundtrack」、artist-credit「Toby Fox」、first-release-date 2015-09-15、primary-type Album、secondary-types [Soundtrack]、轄下 12 個 release，除一筆 2015-11-30 XW/Bootleg 外全部 Official（2015-09-15 XW ×2＝Materia Collective MCOL-0004／101 軌、2016-12-08 US＝8BIT-8048 兩片黑膠、2016-12 US＝加 7 吋版、2017-03 XE 與 US、2017-09-15 US、2018-05 JP、2018 JP、2020 XE ×2）。刻意不釘：447aeb3b-cb93-4c9e-bde7-2863988afcb3《Undertale - A Piano Collection》（2022 鋼琴編曲 EP）、8370c943-a306-46a7-b980-e9066e3fa83b《UNDERTALE: CHITEI DE CHILL》（2026 Remix）、d82fd97c-ea19-46b5-8641-7e16e55607e8《UNDERTALE: 10-Year Anniversary Remixes》（2025 Remix）、2fc372c8-c3cf-48d1-b3e2-e81efaee2350《UNDERTALE 10th Anniversary Stream Soundtrack》（2025）、7cd9aa5a-e157-4c63-9296-26767ac5bde4《Undertale + Deltarune Fan Encore CD》與 b5fdd978-ce41-462d-8dc8-2b7a658af284《Undertale Fan Selection CD》（粉絲合輯）、d5a11181-a210-4d84-abcd-0715c78df1c5《Undertale Demo OST》（2013 試作版）。藝人 MBID 1c26f82c-b35d-4c8e-a1f4-9c20747495c9，名下 44 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "トビー・フォックス；Undertale Soundtrack；Undertale サウンドトラック",
+  "reissuedBy": "Materia Collective（2016 US，8BIT-8048，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Toby Fox",
+  "album": "DELTARUNE Chapter 1 OST",
+  "year": 2018,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Materia Collective（catno MCOL-0169，2018-11-01 全球數位，40 軌）；2019 年 Fangamer 黑膠 FG17",
+  "why": "Toby Fox 在《UNDERTALE》之後的第二條線，第一章的音樂與遊戲同日免費釋出：2018 年 11 月 1 日由 Materia Collective 以 MCOL-0169 發行 40 軌數位版，日本同日另有一筆 Materia Collective 的 release；2019 年 7 月 18 日 Fangamer 以 FG17 做成 12 吋黑膠（40 軌）。這張與 2015 年的《UNDERTALE: Soundtrack》是他在池中僅有的兩張，第二章之後的 OST（2021 起）另有獨立 release-group，本批只取第一章。實掃 seed_cards.json 全 14,424 列，`Toby Fox`／`Deltarune` 零命中。",
+  "risk": "盤名三種寫法：MB 作《DELTARUNE Chapter 1 OST》、Apple us 作《DELTARUNE Chapter 1 (Original Game Soundtrack)》（collectionId 1443475587）、Apple jp 作《DELTARUNE Chapter 1 オリジナルサウンドトラック》（1443724416，掛名片假名 `トビー・フォックス`）——**同一張碟在 us 與 jp 是兩個不同的 collectionId**，寫入時要記明用哪一個；本卡取 us 的 1443475587（releaseDate 2018-11-01，與 MB 完全一致）。同系列後續章節的盤名只差一個數字，是最強的假陽性來源：e1670c2e-6d6d-4ded-9296-41c0b063e389《DELTARUNE Chapter 2 OST》(2021)、a5a2af50-14b4-400d-aab9-f2f9a71bd5ca《DELTARUNE Chapters 3+4 OST》(2025)、f8c5968d-9984-4cfa-99dd-65e584622ba6《DELTARUNE: Soundtrack》(2025)。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group db638f34-9f14-4899-b0e0-40671f2fc184。回問確認：title「DELTARUNE Chapter 1 OST」、artist-credit「Toby Fox」、first-release-date 2018-11-01、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2018-11-01 JP/Official＝Materia Collective、2018-11-01 XW/Official ×2＝MCOL-0169／40 軌、2018-11-01 XW/Withdrawn、2019-07-18 US/Official＝Fangamer FG17 黑膠、2019-08 US/Official、?/JP/Official）。刻意不釘：e1670c2e-6d6d-4ded-9296-41c0b063e389《DELTARUNE Chapter 2 OST》（2021 續章）、a5a2af50-14b4-400d-aab9-f2f9a71bd5ca《DELTARUNE Chapters 3+4 OST》（2025 續章）、f8c5968d-9984-4cfa-99dd-65e584622ba6《DELTARUNE: Soundtrack》（2025 全集）、a572bf95-d95a-4dee-96d0-c6b13c9de6ed《DELTARUNE CHAPTER 2 REJECTED TRACKS》（2024 EP）、f97874bc-9a9c-4f94-a380-c4ae9ee33b2a《DELTARUNE Piano Collections, Vol. 1》（2025 編曲盤）。藝人 MBID 1c26f82c-b35d-4c8e-a1f4-9c20747495c9。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "トビー・フォックス；DELTARUNE Chapter 1 (Original Game Soundtrack)；DELTARUNE Chapter 1 オリジナルサウンドトラック",
+  "reissuedBy": "Fangamer（2019 US，FG17，12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "C418",
+  "album": "Minecraft - Volume Alpha",
+  "year": 2011,
+  "genres": [
+   "electronic"
+  ],
+  "label": "自主發行（2011-03-04 全球數位，24 軌）；2015 年 Ghostly International 以 GI-243 LP 做成 12 吋黑膠",
+  "why": "C418（Daniel Rosenfeld）自主發行的第一份 Minecraft 曲集，2011 年 3 月 4 日以 24 軌數位盤在自家通路上架、沒有廠牌。真正把它變成唱片的是 2015 年 8 月 21 日 Ghostly International 的 GI-243 LP——底特律那家以 Matthew Dear、Tycho 為主的電子廠牌，這是它第一次發遊戲音樂；同日壓了三個版本，2020 年再有一版，2024 與 2025 年另有再發與卡帶。與兩年後的《Minecraft - Volume Beta》是同一條線的前後兩張。實掃 seed_cards.json 全 14,424 列，`C418`／`Minecraft` 全部零命中。",
+  "risk": "**盤名的連字號有兩種**：MB 標題用 en dash《Minecraft – Volume Alpha》（U+2013），Apple 與廠牌頁用 ASCII 連字號《Minecraft - Volume Alpha》。卡片取 ASCII 版——MB 的 en dash 是它的排版慣例，不是唱片上的寫法（同裁定第 50／117 條的分界），而且 chk-prop 明文擋非 ASCII 連字號。MB 的 en dash 版已寫進 queryAlias。店面序 GAME：jp 與 us 都命中同一個 collectionId 1867885113（掛名兩邊都是 `C418`，releaseDate 2011-03-04，與 MB 原盤日期完全一致）；本卡取 us。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 7f4856cd-f078-4c0d-aef7-48474d8fa890。回問確認：title「Minecraft – Volume Alpha」（MB 用 en dash，卡片用 ASCII 連字號，理由見 risk）、artist-credit「C418」、first-release-date 2011-03-04、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release 全部 Official（2011-03-04 XW 無廠牌／24 軌、2015-08-21 US ×5＝Ghostly International GI-243 LP／12 軌、2015-08-21 XW、2015-08 GB、2020 US、2024-05-17 XW、2025-04-15）。刻意不釘：b109f08c-3368-4dff-9ab0-f11b27505eb8《Minecraft – Volume Beta》（2013 續作，另立一卡）、0a1510c8-3cf7-4035-99ef-37ca97de0ec4《Minecraft - Festive Mashup Pack》與 1449bc6d-6a87-4a25-a4e4-c9df1507f649《Minecraft - Halloween Mashup Pack》（2014／2015 附加包）、29fe2689-3de0-4f4a-be4b-ebd663806802《Minecraft: Tricky Trials》（2024，掛 Lena Raine 名下）。藝人 MBID fac55e3c-d459-45ed-9f9f-f5078d3b3423，名下 42 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Minecraft – Volume Alpha；Minecraft Volume Alpha；Daniel Rosenfeld",
+  "reissuedBy": "Ghostly International（2015 US，GI-243 LP，12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "C418",
+  "album": "Minecraft - Volume Beta",
+  "year": 2013,
+  "genres": [
+   "electronic"
+  ],
+  "label": "自主發行（2013-11-09 全球數位，30 軌）；2020 年 Ghostly International 以 GI-360／GI-360LP 做成 CD 與黑膠",
+  "why": "C418 的第二份 Minecraft 曲集，篇幅比第一張多六軌：2013 年 11 月 9 日以 30 軌數位盤自主發行、無廠牌。2020 年 8 月 14 日 Ghostly International 以 GI-360 出兩片 CD、以 GI-360LP 出黑膠（7＋10 軌），是繼 2015 年 Volume Alpha 之後同一家廠牌的第二次；2025 年 4 月 15 日另有 30 軌卡帶。與《Minecraft - Volume Alpha》構成本批 C418 兩張卡。實掃 seed_cards.json 全 14,424 列，`C418`／`Minecraft` 零命中。",
+  "risk": "與 Volume Alpha 同一個連字號問題：MB 用 en dash《Minecraft – Volume Beta》，Apple 與廠牌頁用 ASCII 連字號；卡片取 ASCII 版，MB 版進 queryAlias。**盤名只差一個字（Alpha／Beta）**，兩張在任何子字串比對下都會互相命中，去重要比對到完整盤名（裁定第 162 條「盤名太短會配到別人」的同型）。店面序 GAME：jp 與 us 都命中同一個 collectionId 1867890087（掛名 `C418`，releaseDate 2013-11-09，與 MB 完全一致）；本卡取 us。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group b109f08c-3368-4dff-9ab0-f11b27505eb8。回問確認：title「Minecraft – Volume Beta」（MB 用 en dash，卡片用 ASCII 連字號）、artist-credit「C418」、first-release-date 2013-11-09、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release 全部 Official（2013-11-09 XW 無廠牌／30 軌、2020-08-14 XW ×2＝Ghostly International GI-360 兩片 CD 與 GI-360LP 黑膠、2025-04-15 卡帶）。刻意不釘：7f4856cd-f078-4c0d-aef7-48474d8fa890《Minecraft – Volume Alpha》（2011 前作，另立一卡）、5cb9aa0d-2cbd-462f-95d7-0365e2a777e2《Seven Years of Server Data》（2011，secondary-types Compilation/Demo）。藝人 MBID fac55e3c-d459-45ed-9f9f-f5078d3b3423。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Minecraft – Volume Beta；Minecraft Volume Beta；Daniel Rosenfeld",
+  "reissuedBy": "Ghostly International（2020 XW，GI-360／GI-360LP，CD 與 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Lena Raine",
+  "album": "Celeste: Original Soundtrack",
+  "year": 2018,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Radical Dreamland（catno RADL-0008，2018-01-25 全球數位，21 軌）；2018 年 Ship to Shore PhonoCo. 以 STS-028 做成兩片黑膠",
+  "why": "Lena Raine 第一次為一款廣泛發行的遊戲寫完整原聲，也是她之後被 Mojang 找去寫 Minecraft 追加曲的起點：2018 年 1 月 25 日以自家廠牌 Radical Dreamland 的 RADL-0008 發行 21 軌數位盤，與遊戲同日；同年 5 月 Ship to Shore PhonoCo. 以 STS-028 做成兩片 12 吋黑膠（9＋10 軌）。同日另發的《Celeste B-Sides》是社群 remix 盤、不是本張。實掃 seed_cards.json 全 14,424 列，`Lena Raine`／`Celeste` 兩種寫法都查過，池中 0 張（第 13381 列的 Celeste Legaspi 是菲律賓歌手，不是本作）。",
+  "risk": "**同名別碟四筆，全都以 Celeste 開頭**：26523201-ace1-453d-a337-250e88dc85e7《Celeste B-Sides (Original Game Soundtrack)》(2018 同日發行的 remix 盤)、0c257a36-4a59-4bc8-b19d-e8e7cf0969ab《Celeste - Madeline's Grab Bag》(2018)、5bcd500e-8671-4f81-af0a-b9669a84ccb6《Celeste Original Sound Collection》(2020 合輯)，以及 Apple 上的《Celeste: Farewell》(1474938552) 與《Celeste Piano Collections》(1449960195)；短盤名子字串比對必然全部命中（裁定第 162 條的形狀），去重要比對完整盤名。店面序 GAME：jp 與 us 都命中同一個 collectionId 1544899658《Celeste (Original Soundtrack)》（掛名兩邊都是 `Lena Raine`，releaseDate 2018-01-25，與 MB 完全一致）；本卡取 us。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 1ca3f284-ac4d-40ee-b946-bde7adbf6c43。回問確認：title「Celeste: Original Soundtrack」、artist-credit「Lena Raine」、first-release-date 2018-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2018-01-25 XW ×2＝Radical Dreamland RADL-0008／21 軌、2018-05 US ×2＝Ship to Shore PhonoCo. STS-028 兩片黑膠、2018 US）。刻意不釘：26523201-ace1-453d-a337-250e88dc85e7《Celeste B-Sides (Original Game Soundtrack)》（2018 remix 盤，非原聲）、0c257a36-4a59-4bc8-b19d-e8e7cf0969ab《Celeste - Madeline's Grab Bag》（2018 附加曲）、5bcd500e-8671-4f81-af0a-b9669a84ccb6《Celeste Original Sound Collection》（2020 合輯）。藝人 MBID f1693075-b637-49f8-8d0e-8cee8bec77cb，名下 30 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Celeste (Original Soundtrack)；Celeste Original Soundtrack",
+  "reissuedBy": "Ship to Shore PhonoCo.（2018 US，STS-028，兩片 12 吋黑膠）",
+  "g": "b"
+ }
+]

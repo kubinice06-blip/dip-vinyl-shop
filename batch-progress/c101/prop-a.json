@@ -295,5 +295,221 @@
   "queryAlias": "Hitoshi Sakimoto；Vagrant Story Original Soundtrack；ベイグラントストーリー オリジナル・サウンドトラック",
   "reissuedBy": "",
   "g": "a"
+ },
+ {
+  "artist": "崎元仁",
+  "album": "FINAL FANTASY XII Original Soundtrack",
+  "year": 2006,
+  "genres": [
+   "classical"
+  ],
+  "label": "Aniplex／SQUARE ENIX（catno SVWC-7351〜7354，2006-05-31 JP 四片組，30／25／24／21 軌）",
+  "why": "崎元仁接下 FF 正傳主編曲的一張，也是 FF 系列第一次把主線交給植松伸夫以外的人：2006 年 5 月 31 日由 Aniplex 以 SVWC-7351〜7354 四片組發行，共 100 軌，release 上同時掛 SQUARE ENIX。2012 年 11 月 7 日 SQUARE ENIX 以 SQEX-10343〜10346 重出，另有全球數位版。這張在崎元目錄裡的位置是《FINAL FANTASY TACTICS》（1997）與《VAGRANTSTORY》（2000）之後的規模上限，也是本批崎元三張裡年代最晚的一張。實掃 seed_cards.json 全 14,424 列，`崎元仁`／`Hitoshi Sakimoto` 零命中。",
+  "risk": "同名別碟三筆，去重要小心：ba975f58-a124-4c63-8b1f-1fba4c20d573《FINAL FANTASY XII THE ZODIAC AGE Original Soundtrack》(2017) 是重製版重錄、1ee8be34-5044-4be3-8029-18192534cca0 是它的 Collector's Edition、30de6a00-0382-4b2c-8c7b-68f0b033a693《FINAL FANTASY XII Original Soundtrack & Piano Collections》(2012) 是原聲＋鋼琴編曲的合體盤。店面序 GAME：Apple jp collectionId 572844917《Final Fantasy XII (Original Soundtrack)》（掛名 `崎元仁`、releaseDate 2012-11-07＝SQUARE ENIX 再發日，非原盤日；依第 77 條只當訊號，年份取 MB 的 2006）；us 店面同一 collectionId 掛 `Hitoshi Sakimoto`。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 03b9cf7b-c87a-34b2-9988-7cbaee82b816。回問確認：title「FINAL FANTASY XII Original Soundtrack」、artist-credit「崎元仁」、first-release-date 2006-05-31、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2006-05-31 JP/Official ×2＝Aniplex SVWC-7351〜7354、2012-11-07 JP/Official＝SQEX-10343〜10346、XW/Official 數位，另 TW/Bootleg ×2、Pseudo-Release ×1）。刻意不釘：ba975f58-a124-4c63-8b1f-1fba4c20d573《FINAL FANTASY XII THE ZODIAC AGE Original Soundtrack》（2017 重製版重錄，非原盤）、1ee8be34-5044-4be3-8029-18192534cca0《…Collector's Edition Original Soundtrack》（2017）、4401ef1f-f677-46b4-b62e-c4802e121f5f《Piano Collections: Final Fantasy XII》（2012 鋼琴編曲盤，非原聲）、30de6a00-0382-4b2c-8c7b-68f0b033a693《FINAL FANTASY XII Original Soundtrack & Piano Collections》（2012 合體盤）、a7850d8a-ff22-471f-9398-412d54c81c33《Selections from Final Fantasy XII》（2006 精選）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hitoshi Sakimoto；Final Fantasy XII (Original Soundtrack)；ファイナルファンタジーXII オリジナル・サウンドトラック",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "古代祐三",
+  "album": "Actraiser",
+  "year": 1991,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Alfa Records（catno ALCA-105，1991-01-25 JP，18 軌）",
+  "why": "古代祐三從 PC-8801 自製音源時期跨進 Super Famicom 的第一張：1991 年 1 月 25 日由 Alfa Records 以 ALCA-105 發行，單片 18 軌。Alfa 的 G.M.O. Records 系列是 1980 年代末日本遊戲音樂唱片化的主要出口，古代同期的《The Super Shinobi & Works》(1989) 與次年的《Bare Knuckle》(1991) 都在同一條目錄裡（Bare Knuckle 是 G.M.O. ALCA-181，編號相鄰）。實掃 seed_cards.json 全 14,424 列，`古代祐三` 與羅馬拼音 `Yuzo Koshiro` 兩種寫法都查過，池中 0 張。",
+  "risk": "**Apple 的盤名把系列名串進去**（裁定第 152 條的形狀）：jp／us 兩店面命中的是 collectionId 276661629《Yuzo Koshiro Best Selection, Vol. 1: Actraiser (Original Soundtrack)》（releaseDate 1990-12-16，早於 MB 的 1991-01-25 一個多月），系列名「Yuzo Koshiro Best Selection, Vol. 1」與盤名串成同一個字串，標題比對會擋掉；另一筆 276664436 是 Vol. 3 的 Sound Board II 版本（不同音源版本，不得誤取）。兩筆的掛名在 jp 是 `古代祐三`、在 us 是 `Yuzo Koshiro`。店面序 GAME 取 jp 的 276661629。CAA release-group 端點 200。盤名 MB 作《Actraiser》（單字），日本盤面另作《アクトレイザー》，兩種都要掃。",
+  "mbNote": "釘 release-group 88f8721f-970c-3b45-b4e5-206e4ae155ea。回問確認：title「Actraiser」、artist-credit「古代祐三」、first-release-date 1991-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（1991-01-25 JP/Official＝Alfa ALCA-105／18 軌／barcode 4988024007235，另 2019-04-08 XW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：b60c498d-04c2-4c05-8c1f-5fd6d2af7366《Symphonic suite from ACTRAISER》（1991 管弦編曲盤，非原聲）、16c3ef42-2755-4010-bb10-ba28c74f164c《ActRaiser Original Soundtrack & Symponic Suite》（2021 合體再發，非原盤）、3a80df48-5455-42c6-8f8a-c90847e2ca2b《KOSHIRO YUZO EARLY COLLECTION》(1992) 與 52b321c5-398c-4df9-b8e8-e9463fa437d7《Yuzo Koshiro Early Collection Box》(2018)（兩筆精選）。藝人 MBID a4cda071-2ba4-4fa9-a50d-4378c408676d，名下 78 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuzo Koshiro；アクトレイザー；ActRaiser Original Soundtrack；Yuzo Koshiro Best Selection, Vol. 1: Actraiser",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "古代祐三",
+  "album": "Bare Knuckle",
+  "year": 1991,
+  "genres": [
+   "electronic"
+  ],
+  "label": "G.M.O. Records／Alfa（catno ALCA-181，1991-09-21 JP，24 軌）；2015 年 Data Discs 以 DATA001 首度做成黑膠",
+  "why": "古代祐三名下再發最完整的一張，也是這條線後來被歐洲考古廠牌接走的起點：1991 年 9 月 21 日由 Alfa 的 G.M.O. Records 以 ALCA-181 發行，單片 24 軌。2015 年 9 月，倫敦的 Data Discs 以自家目錄第一號 DATA001 把它做成 12 吋黑膠（16 軌），這是該廠牌整條日本遊戲音樂復刻線的開端；2017 年另有法國版、2020 年再有一次全球再發。北美市場用的遊戲名是 Streets of Rage，Apple 上即以此名上架。實掃 seed_cards.json 全 14,424 列，`古代祐三`／`Yuzo Koshiro`／`Streets of Rage` 全部零命中。",
+  "risk": "**盤名兩地不同名**：日本原盤《ベア・ナックル》／MB 標題《Bare Knuckle》，北美與 Apple 用《Streets of Rage》——依裁定第 85 條採原始廠牌那一個（Alfa／G.M.O. 的 Bare Knuckle），北美名進 queryAlias。店面序 GAME：Apple jp／us 都有，jp collectionId 1513110952《Streets of Rage (Official Game Soundtrack)》（掛名 `古代祐三`、releaseDate 2020-05-12）與 1509127675《Streets of Rage: Perfect Soundtrack》（2017-01-01）；兩筆都不是 1991 原盤的直接數位化，選用前要逐軌核對（裁定第 137／152 條）。另有 1514185559／1512610919 是《Streets of Rage 2》，不是本張。**掛名寫法 MB 內部不一致**：本張 artist-credit 是羅馬拼音 `Yuzo Koshiro`，同藝人的《Actraiser》《Bare Knuckle II》都是 `古代祐三`；依第 120 條取 MB 實體名 `古代祐三`。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 07b26e0c-1152-302c-83ca-32a5f33e1111。回問確認：title「Bare Knuckle」、artist-credit「Yuzo Koshiro」（卡片掛名依第 120 條改採 MB 實體名 `古代祐三`）、first-release-date 1991-09-21、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（1991-09-21 JP/Official＝G.M.O. Records ALCA-181／24 軌／barcode 4988024008478、2015-09 GB/Official ×3＝Data Discs DATA001／12 吋黑膠／16 軌、2017-12-15 FR/Official、2017 XW/Official、2020-03-09 XW/Official，另 Bootleg ×4）。刻意不釘：e77e578f-d076-4fe5-909f-bab3368791ae《Bare Knuckle II》（1993 續作）、eca28b23-3aae-37bb-a284-85f7dbbab9f6《Bare Knuckle III》（1994 續作）、f0ba5ed6-1d85-405d-bc6f-5c1070b96234《Streets of Rage (Game Gear)》（2016，另一個平台的音源）、0d895e3d-cdf0-3449-8d68-9385132359ad《The Super Shinobi & Works》（1989 合輯）。藝人 MBID a4cda071-2ba4-4fa9-a50d-4378c408676d。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuzo Koshiro；ベア・ナックル；Streets of Rage；Streets of Rage (Official Game Soundtrack)",
+  "reissuedBy": "Data Discs（2015 GB，DATA001，12 吋黑膠）",
+  "g": "a"
+ },
+ {
+  "artist": "岡部啓一",
+  "album": "NieR Gestalt & Replicant Original Soundtrack",
+  "year": 2010,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "SQUARE ENIX（catno SQEX-10189／10190，2010-04-21 JP 兩片組，23＋20 軌）",
+  "why": "岡部啓一與他主持的 MONACA 團隊接下 Square Enix 案子的第一張，也是 NieR 這條線的起點：2010 年 4 月 21 日由 SQUARE ENIX 以 SQEX-10189／10190 兩片組發行，23＋20 軌，同日發全球數位版。七年後的《NieR:Automata Original Soundtrack》是同一組人的續作，兩張構成他在池中的第一組卡。實掃 seed_cards.json 全 14,424 列，`岡部啓一`／`Keiichi Okabe`／`MONACA`／`NieR`／`ニーア` 全部零命中（`NieR` 的九筆命中全是 Garnier、Vannier 這類子字串誤配）。",
+  "risk": "**Apple 的掛名與 MB 的 artist-credit 不同**：MB artist-credit 是單掛 `岡部啓一`，Apple 的 collectionId 366643025 掛的是「SQUARE ENIX MUSIC & MONACA」（jp）／「Square Enix Music & MONACA」（us），releaseDate 2010-04-21 與 MB 原盤日期完全一致、可確認是同一張碟。卡片掛名取作曲家 `岡部啓一`（依派工單的作曲家掛名原則與裁定第 16 條：MONACA 是團隊名不是共作者名單，未達五人以上掛 Various Artists 的門檻），Apple 的 credit 原文已寫在此處供下游比對。用 `岡部啓一 NieR Gestalt & Replicant` 搜 Apple 兩店面都配不到原盤（只回 15 Nightmares 編曲盤與鋼琴集）——要改用 `MONACA` 當搜尋詞才命中，這是第 158 條的形狀。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 344c2084-ab2e-4984-9304-bbfffff748ae。回問確認：title「NieR Gestalt & Replicant Original Soundtrack」、artist-credit「岡部啓一」、first-release-date 2010-04-21、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2010-04-21 JP/Official ×2＝SQUARE ENIX SQEX-10189／10190、2010-04-21 XW/Official 數位、2010-04-21 Official、2017-12-20 JP/Official，另 Pseudo-Release ×2）。刻意不釘：81e16967-fbb8-45ca-a329-b28c2fdd5aea《NieR Gestalt & Replicant 15 Nightmares & Arrange Tracks》（2010 編曲盤，非原聲）、e05d123f-d126-4728-84b6-0f2e37fa7c8f《Piano Collections NieR Gestalt & Replicant》（2012 鋼琴編曲盤）、ccafec85-b3ac-4506-9656-bc850d426596《NieR Gestalt & Replicant Orchestral Arrangement Album》（2018 管弦編曲盤）、282f1e0a-707c-4e37-a546-e7375b06dc26《NieR Replicant ver.1.22474487139… Soundtrack Weiss Edition》（2021 重製版，非原盤）、d0be4ef5-0e6e-42a9-acde-f79ec0441c48《NieR:Automata / NieR Gestalt & Replicant Original Soundtrack Vinyl Box Set》（2017 黑膠盒，非原盤）。藝人 MBID d82df34a-a1ff-45fa-ac50-c0b7454b201e，名下 63 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keiichi Okabe；MONACA；SQUARE ENIX MUSIC & MONACA；ニーア ゲシュタルト レプリカント オリジナル・サウンドトラック",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "岡部啓一",
+  "album": "NieR:Automata Original Soundtrack",
+  "year": 2017,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "SQUARE ENIX MUSIC（catno SQEX-10589〜10591，2017-03-29 JP 三片組，15／15／16 軌）",
+  "why": "岡部啓一與 MONACA 的第二張 NieR，也是這條線第一次同日在日本、英國與全球數位三邊發行：2017 年 3 月 29 日由 SQUARE ENIX MUSIC 以 SQEX-10589／10590／10591 三片組發行共 46 軌，同日 GB 與 XW 各有一筆數位 release。2017 年 12 月 20 日另出《NieR:Automata / NieR Gestalt & Replicant Original Soundtrack Vinyl Box Set》黑膠盒。與 2010 年的《NieR Gestalt & Replicant》是同一組人的前後兩作。實掃 seed_cards.json 全 14,424 列，`岡部啓一`／`Keiichi Okabe`／`MONACA` 零命中。",
+  "risk": "Apple 的掛名同樣是「SQUARE ENIX MUSIC, MONACA & 岡部啓一」（jp collectionId 1212176108，releaseDate 2017-03-29，與 MB 完全一致）／us 為「Square Enix Music, MONACA & Keiichi Okabe」；卡片掛名取作曲家 `岡部啓一`，Apple 的 credit 原文寫在此處。店面序 GAME 取 jp 的 1212176108。同名別碟兩筆：1681544979《NieR:Automata Ver1.1a Original Soundtrack》(2023) 是動畫版、1322957247《NieR:Automata Arranged & Unreleased Tracks》(2017) 是編曲＋未收錄曲，盤名都含 NieR:Automata Original Soundtrack 的字串，是最像的假陽性。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 0dd51230-c886-4422-8385-072d0688ce36。回問確認：title「NieR:Automata Original Soundtrack」、artist-credit「岡部啓一」、first-release-date 2017-03-29、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（2017-03-29 JP/Official ×2＝SQEX-10589〜10591、2017-03-29 GB/Official、2017-03-29 XW/Official ×2、2017-03-29 Official、2017-09-21 JP/Official，另 Pseudo-Release ×4）。刻意不釘：ac5c454f-3ca1-4822-957e-83a749f45e46《NieR:Automata Unreleased Additional Soundtrack》（2017 未收錄曲）、1371986221 對應的 MB 條目《Piano Collections NieR:Automata》（2018 鋼琴編曲盤）、3a70d5cb-f25e-479e-abca-3767dfa700a8《NieR Orchestral Arrangement Special Box Edition》（2018 管弦編曲盒）、8a808f84-75ee-4bb1-bd06-5a71afcbbe56《NieR Orchestral Arrangement Album – Addendum》（2020 編曲盤）、d0be4ef5-0e6e-42a9-acde-f79ec0441c48《…Vinyl Box Set》（2017 黑膠盒，非原盤）。藝人 MBID d82df34a-a1ff-45fa-ac50-c0b7454b201e。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Keiichi Okabe；MONACA；SQUARE ENIX MUSIC, MONACA & 岡部啓一；ニーア オートマタ オリジナル・サウンドトラック",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "目黒将司",
+  "album": "「ペルソナ3」オリジナル・サウンドトラック",
+  "year": 2006,
+  "genres": [
+   "pop",
+   "hiphop"
+  ],
+  "label": "Aniplex（catno SVWC 7380／7381，2006-07-19 JP 兩片組，32＋26 軌）；2022 年 iam8bit 以 8BIT-8164 做成四片黑膠",
+  "why": "目黒将司在 Atlus 從《真・女神転生》系列的內部作曲者變成一條獨立產品線的那一張：2006 年 7 月 19 日由 Aniplex 以 SVWC 7380／7381 兩片組發行，32＋26 軌；同日另有 ATLUS 的 58 軌數位版。2007 年 8 月 14 日 ATLUS 在美國發行 18 軌精簡版，2022 年 10 月 1 日 iam8bit 以 8BIT-8164 做成四片 12 吋黑膠盒（15／17／14／12 軌）。與 2017 年的《ペルソナ5》構成本批目黒兩張卡的兩端。實掃 seed_cards.json 全 14,424 列，`目黒将司`／`Shoji Meguro`／`Persona`／`ペルソナ` 全部零命中（`Persona` 的九筆命中全是 Television Personalities、Rival Consoles 這類別碟）。",
+  "risk": "**Apple 上查無這張原盤**：jp／us 兩店面用 `目黒将司 ペルソナ3`、`Persona 3 Original Soundtrack` 各搜一次，只回到 2026 年的《Persona (Original Soundtrack)》合輯（1891905853）與第三方鋼琴翻奏（1477248701），2006 年那套沒有上架；固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。掛名羅馬拼音在 Apple 上寫成 `Syouji Meguro`（不是常見的 Shoji），三種寫法都要掃（裁定第 49 條）。盤名帶日式引號「」，去重時要同時比對去引號版《ペルソナ3 オリジナル・サウンドトラック》。同系列同名別碟多：ee912e87-bc2f-3067-8d0b-e602ad7ba48c《「ペルソナ3フェス」オリジナル・サウンドトラック》(2007)、f39a6b58-d974-4170-ab3b-4f2238d2f0d0《ペルソナ3 ポータブル オリジナル・サウンドトラック》(2009) 都是本張最像的假陽性。",
+  "mbNote": "釘 release-group b5bc44a2-0b43-36eb-8ec5-f2642e979e5b。回問確認：title「「ペルソナ3」オリジナル・サウンドトラック」、artist-credit「目黒将司」、first-release-date 2006-07-19、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（2006-07-19 JP/Official＝Aniplex SVWC 7380／7381、2006-07-19 AF/Official＝ATLUS 數位 58 軌、2007-08-14 US/Official＝ATLUS 18 軌、2022-10-01 US/Official＝iam8bit 8BIT-8164 四片黑膠、2025-02 Official，另 Pseudo-Release ×2）。刻意不釘：ee912e87-bc2f-3067-8d0b-e602ad7ba48c《「ペルソナ3フェス」オリジナル・サウンドトラック》（2007 資料片）、f39a6b58-d974-4170-ab3b-4f2238d2f0d0《ペルソナ3 ポータブル オリジナル・サウンドトラック》（2009 移植版）、07c6afd3-6908-4a0f-8521-a01cdfa587c6《PERSONA3 THE MOVIE #1 Spring of Birth Soundtrack CD》（2014 劇場版）、06f83f32-d9d1-4988-9a6b-216639ad2070《Persona Compilation CD-Box》（2010 合輯）。藝人 MBID 1f456d75-4d69-4bf8-9c49-cb23d758b4a4，名下 71 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shoji Meguro；Syouji Meguro；Shouji Meguro；ペルソナ3 オリジナル・サウンドトラック；Persona 3 Original Soundtrack",
+  "reissuedBy": "iam8bit（2022 US，8BIT-8164，四片 12 吋黑膠）",
+  "g": "a"
+ },
+ {
+  "artist": "目黒将司",
+  "album": "『ペルソナ5』オリジナル・サウンドトラック",
+  "year": 2017,
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "label": "Mastard Records（catno LNCM-1175〜1177，2017-01-17 JP 三片組，36／42／32 軌）；2017 年 iam8bit 以 8BIT-8069 做成四片黑膠",
+  "why": "目黒将司名下規模最大的一份：2017 年 1 月 17 日由 Atlus 自家的 Mastard Records 以 LNCM-1175／1176／1177 三片組發行共 110 軌，同日 ATLUS／SEGA 另發數位版。同年 12 月 1 日 iam8bit 以 8BIT-8069 在美國做成四片 12 吋黑膠（10／19／17／15 軌），2018 年 8 月 15 日日本再出一版。這張與 2006 年的《ペルソナ3》相距十一年，兩張之間 Atlus 從一家中型發行商變成 SEGA 旗下的品牌，本張的 release 上兩個名字都在。實掃 seed_cards.json 全 14,424 列，`目黒将司`／`Shoji Meguro`／`Syouji Meguro` 全部零命中。",
+  "risk": "**Apple 上查無這張原盤**：jp／us 兩店面各搜日文與英文盤名，只回 2026 年的《Persona (Original Soundtrack)》合輯與第三方翻奏；固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。盤名帶日式雙引號『』，去重要同時比對去引號版《ペルソナ5 オリジナル・サウンドトラック》與英文《Persona 5 Original Soundtrack》。同系列同名別碟：06798b29-24e0-49ca-9eb4-ae9fb95d6812《ペルソナ5 ザ・ロイヤル オリジナル・サウンドトラック》(2019) 與 3f59a3c6-9c7a-42c7-9e85-469f80865556《Persona 5 Royal - The Complete Soundtrack》(2022) 都含「ペルソナ5／Persona 5」，是最像的假陽性。",
+  "mbNote": "釘 release-group 249e1abc-3479-4e85-9f23-2bda4d1d0c66。回問確認：title「『ペルソナ5』オリジナル・サウンドトラック」、artist-credit「目黒将司」、first-release-date 2017-01-17、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2017-01-17 JP/Official ×2＝Mastard Records LNCM-1175〜1177 與 ATLUS／SEGA 數位、2017-01-17 Official、2017-12-01 US/Official＝iam8bit 8BIT-8069 四片黑膠、2018-08-15 JP/Official，另 Pseudo-Release ×1）。刻意不釘：06798b29-24e0-49ca-9eb4-ae9fb95d6812《ペルソナ5 ザ・ロイヤル オリジナル・サウンドトラック》（2019 加強版，非原盤）、3f59a3c6-9c7a-42c7-9e85-469f80865556《Persona 5 Royal - The Complete Soundtrack》（2022 全集）、79128e74-df1b-4599-83cc-a464ae8d84b9《Persona 5 - Sounds of Rebellion》（2017 精選）。藝人 MBID 1f456d75-4d69-4bf8-9c49-cb23d758b4a4。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shoji Meguro；Syouji Meguro；ペルソナ5 オリジナル・サウンドトラック；Persona 5 Original Soundtrack",
+  "reissuedBy": "iam8bit（2017 US，8BIT-8069，四片 12 吋黑膠）",
+  "g": "a"
+ },
+ {
+  "artist": "菊田裕樹",
+  "album": "聖剣伝説2 Original Sound Version",
+  "year": 1993,
+  "genres": [
+   "electronic"
+  ],
+  "label": "NTT出版（catno N25D-019，1993-08-06 JP，44 軌）；1994 年 Squaresoft 以 SQ107 在美發行",
+  "why": "菊田裕樹在 Square 唯二的整部作品原聲之一（另一張是 1995 年的《聖剣伝説3》），也是聖剣伝説這條線在三位作曲家之間交棒的中段：1991 年的《ファイナルファンタジー外伝 聖剣伝説》由伊藤賢治寫、1999 年的《Legend of Mana》交給下村陽子，中間 1993 年 8 月 6 日這一張由 NTT出版 以 N25D-019 發行，單片 44 軌。1994 年 12 月 Squaresoft 以 SQ107 在美發行同一套，1998 年 Polystar（PSCN-5030）與 2004 年 NTT出版（NTCP-5030）各重出一次。實掃 seed_cards.json 全 14,424 列，`菊田裕樹`／`Hiroki Kikuta`／`聖剣`／`Secret of Mana` 全部零命中。",
+  "risk": "盤名日文／英文兩套，且英文名在不同再發下不同：MB 標題《聖剣伝説2 Original Sound Version》、Apple jp 有兩筆——205700367《Secret of Mana (Original Soundtrack)》（releaseDate 2006-11-29）與 1345280355《聖剣伝説2 SECRET of MANA Original Soundtrack》（releaseDate 2018-02-21，對應 MB 的 137cfb51-9a13-4d19-8157-9f1b9f2ed02c，是 2018 重製版的原聲，**不是本張**）。取 jp 的 205700367（對應 MB 轄下 2006-11-29 XW/Official 那兩筆），下游要逐軌核對 44 軌才算配上（裁定第 137 條）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group d105ea57-c0fc-311b-8bab-2639ed18726c。回問確認：title「聖剣伝説2 Original Sound Version」、artist-credit「菊田裕樹」、first-release-date 1993-08-06、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（1993-08-06 JP/Official＝NTT出版 N25D-019／44 軌、1994-12-01 US/Official＝Squaresoft SQ107、1998-08-25 JP/Official＝Polystar PSCN-5030、2004-10-01 JP/Official＝NTT出版 NTCP-5030、2006-11-29 XW/Official ×2，另 TW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：137cfb51-9a13-4d19-8157-9f1b9f2ed02c《聖剣伝説2 SECRET of MANA Original Soundtrack》（2018 重製版重錄，非原盤）、2be2234f-d06a-4997-9aa4-7d3f5ee8a4fc《SECRET of MANA COLLECTOR'S EDITION Arrange Tracks》（2018 編曲盤）、8ab2961f-3dcc-4293-adb9-dda793c77793《Secret of Mana Genesis: 聖剣伝説2 Arrange Album》（2012 編曲盤）、9f665ad7-085e-3712-9ace-7b4223396049《secret of mana +》（1993）、2a26abae-ea1e-3423-90f7-cf2f4dd8c3ae《聖剣伝説3 Original Sound Version》（1995 續作）。藝人 MBID 0b7713fc-0794-4324-a9fc-7316f9f54f40。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroki Kikuta；Secret of Mana (Original Soundtrack)；Seiken Densetsu 2 Original Sound Version",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "山根ミチル",
+  "album": "悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ",
+  "year": 1997,
+  "genres": [
+   "classical",
+   "rock"
+  ],
+  "label": "KONAMI（catno KICA-7760，1997-04-09 JP，34 軌）；1997-03-20 另有 Sony Computer Entertainment SLPM-86023／KONAMI VX010-J1 的隨片版",
+  "why": "山根ミチル在 Konami 內部作曲者裡最被反覆再發的一張，也是悪魔城系列從街機式關卡音樂轉成長篇探索型配樂的分界：1997 年 3 月 20 日先隨 PlayStation 版以 Sony Computer Entertainment SLPM-86023／KONAMI VX010-J1 的混合模式碟出現，同年 4 月 9 日 KONAMI 以 KICA-7760 發行 34 軌的獨立原聲盤；10 月 2 日北美版 SLUS-00067、11 月 1 日歐洲版 SLES-00524／VX100 各一。MB 轄下共 17 個 release，是本批日本組裡再發次數最多的一張。實掃 seed_cards.json 全 14,424 列，`山根ミチル`／`Michiru Yamane`／`Castlevania`／`悪魔城` 全部零命中。",
+  "risk": "**Apple 上查無**：jp／us 兩店面用 `山根ミチル 悪魔城ドラキュラX 月下の夜想曲` 與 `Michiru Yamane Castlevania Symphony of the Night` 各搜一次，兩邊都回 0 筆——真的沒有上架（裁定第 152 條的分界屬「搜到 0 筆」），固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。盤名含全形波浪號〜（U+301C），不在 chk-prop 的非 ASCII 連字號清單內、不會誤報，但去重要同時比對去波浪號版與北美名《Castlevania: Symphony of the Night》。另 28d4f562-a5e4-4ae6-a078-9e4938c22fa5《Castlevania: Symphony of the Night》(2023) 是同一部作品的另一筆 release-group，屬後世整編，不是原盤。",
+  "mbNote": "釘 release-group db5c519c-0ca4-3188-8f39-edf72499e722。回問確認：title「悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ」、artist-credit「山根ミチル」、first-release-date 1997-03-20、primary-type Album、secondary-types [Soundtrack]、轄下 17 個 release（1997-03-20 JP/Official＝SCE SLPM-86023／KONAMI VX010-J1、1997-04-09 JP/Official＝KONAMI KICA-7760／34 軌、1997-10-02 US/Official＝SLUS-00067、1997-11-01 XE/Official＝SCEE SLES-00524／KONAMI VX100、1998-03-19 JP/Official、2003-11-20 JP/Official、?/JP/Official、Official 一筆，另 TW/Bootleg ×2、Bootleg ×2、Pseudo-Release ×5）。刻意不釘：28d4f562-a5e4-4ae6-a078-9e4938c22fa5《Castlevania: Symphony of the Night》（2023 後世整編，非原盤）、437f0894-3285-46eb-9c33-2c3d467148ec《悪魔城ドラキュラXクロニクル オリジナルサウンドトラック》（2007 重製版）、563be029-308c-360e-8cc5-42717e4f7a93《Castlevania Special Music CD》（2003 合輯）。藝人 MBID 17dbd4b4-6e92-4027-a64f-659258f4e775。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Michiru Yamane；Castlevania: Symphony of the Night；悪魔城ドラキュラX 月下の夜想曲；Akumajo Dracula X Gekka no Yasoukyoku",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Akira Yamaoka",
+  "album": "SILENT HILL 2 ORIGINAL SOUNDTRACKS",
+  "year": 2001,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "KONAMI（catno KMCA120，2001-10-03 JP，30 軌）／Konami of Europe（KOE-CDS-100，同日）；2019 年 Mondo 以 MOND-161 做成兩片黑膠",
+  "why": "山岡晃目錄裡流通最廣的一張，也是本批日本組唯一一張日、歐同日發行的原聲：2001 年 10 月 3 日 KONAMI 以 KMCA120 在日本、Konami of Europe 以 KOE-CDS-100 在歐洲同日發行，皆 30 軌。2007 年 8 月 28 日 KONAMI 出美國數位版，2019 年 3 月 Mondo 以 MOND-161 做成兩片 12 吋黑膠（17＋13 軌）——那是這條線第一次進到專做電影／遊戲黑膠的美國考古廠牌。MB 轄下 18 個 release 裡有 10 筆 Bootleg，是本批盜版比例最高的一張。實掃 seed_cards.json 全 14,424 列，`Akira Yamaoka`／`山岡晃`／`Silent Hill` 全部零命中。",
+  "risk": "**掛名的文字系統與本組其他卡相反**：MB 藝人實體名是羅馬拼音 `Akira Yamaoka`（23a32153-7314-4359-a5cd-9e584fe83504），但本張的 artist-credit 是全大寫 `AKIRA YAMAOKA`，而 Apple jp／us 兩個店面都掛日文 `山岡晃`。依裁定第 120 條取 MB 藝人實體實際使用的寫法（`Akira Yamaoka`），日文與全大寫兩種進 queryAlias。店面序 GAME：Apple jp collectionId 528515992《SILENT HILL 2(Original Soundtrack)》（releaseDate 2001-10-03，與 MB 原盤日期完全一致），us 亦命中同一筆；取 jp。同名別碟兩筆：1778179297《SILENT HILL 2 ORIGINAL SOUNDTRACK -2024-》與 MB 的 0512b548-54ff-48fe-b662-923a347ca68c《SILENT HILL 2 Original Game Soundtrack》(2024) 都是 2024 重製版的重錄，不是本盤。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 96467903-beb1-36e9-abd8-2b8127a68c84。回問確認：title「SILENT HILL 2 ORIGINAL SOUNDTRACKS」、artist-credit「AKIRA YAMAOKA」（卡片掛名依第 120 條採 MB 實體名 `Akira Yamaoka`）、first-release-date 2001-10-03、primary-type Album、secondary-types [Soundtrack]、轄下 18 個 release（2001-10-03 XE/Official＝Konami of Europe KOE-CDS-100、2001-10-03 JP/Official＝KONAMI KMCA120、2007-08-28 US/Official＝KONAMI 數位、2019-03-05 Official＝Mondo MOND-161 兩片黑膠、2019-03 US/Official ×2、2019-08-15 US/Official，其餘 10 筆為 Bootleg）。刻意不釘：0512b548-54ff-48fe-b662-923a347ca68c《SILENT HILL 2 Original Game Soundtrack》（2024 重製版重錄，非原盤）、3dcae697-9208-46fa-b549-f4397795f083《SILENT HILL 2 ORIGINAL SOUNDTRACK -2024- Extra Edition》（2024）、516c4638-7cd2-407f-9b39-8ebb2dad963a《Silent Hill: The Piano Versions》（2004 鋼琴編曲盤）、20cb70de-dd8d-4f90-87ba-30e2c33507ea《Silent Hill Sounds Box》（2011 合輯）、83b3c0c8-fdc4-4629-8a89-3f0078373aa2（2002 俄羅斯雜誌附贈 EP）。藝人 MBID 23a32153-7314-4359-a5cd-9e584fe83504。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "山岡晃；AKIRA YAMAOKA；SILENT HILL 2 (Original Soundtrack)；サイレントヒル2",
+  "reissuedBy": "Mondo（2019 US，MOND-161，兩片 12 吋黑膠）",
+  "g": "a"
+ },
+ {
+  "artist": "伊藤賢治 / 植松伸夫",
+  "album": "Romancing Sa・Ga Original Sound Version",
+  "year": 1992,
+  "genres": [
+   "electronic"
+  ],
+  "label": "SQUARE BRAND（catno N25D-009，1992-02-21 JP，38 軌）",
+  "why": "伊藤賢治第一次以主作曲者身分掛名的一張，也是 SaGa 這條線從植松伸夫手上交出去的那一刻：1992 年 2 月 21 日由 SQUARE BRAND 以 N25D-009 發行，單片 38 軌，artist-credit 是兩人並列。1995 年 Polystar（PSCN-5036）、2004 年 NTT出版（NTCP-5036）各重出一次，2006 年 7 月 26 日 SQUARE ENIX 以 SEMO-00023 轉全球數位。伊藤此後三十年幾乎只寫 SaGa 與聖剣伝説兩條線，這張是起點。實掃 seed_cards.json 全 14,424 列，`伊藤賢治`／`Kenji Ito`／`Romancing` 全部零命中。",
+  "risk": "**掛名是兩人共作**：MB artist-credit「伊藤賢治 & 植松伸夫」，依裁定第 16 條改用 ` / ` 分隔成 `伊藤賢治 / 植松伸夫`，順序照 MB 原順序（伊藤在前，與他是主作曲者相符）。這使本卡與同批四張單掛 `植松伸夫` 的卡分屬不同鍵，是預期的、不是撞卡。盤名的中黑點「・」在 MB 標題裡是全形（Sa・Ga），Apple jp 則寫成半形連字號《Romancing Sa-Ga (Original Soundtrack)》（collectionId 166889681，releaseDate 2006-07-26＝數位發行日，掛名只有 `伊藤賢治`）——**兩種寫法在字串比對下不相等**，都要掃。店面序 GAME 取 jp 的 166889681；us 店面同名搜不到本張，只回《Romancing Sa・Ga 2》(183364613)，那是續作、是本張最像的假陽性。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group d6d163f6-e0ab-3721-9404-4eb8d80271d6。回問確認：title「Romancing Sa・Ga Original Sound Version」、artist-credit「伊藤賢治 & 植松伸夫」、first-release-date 1992-02-21、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，全部 Official（1992-02-21 JP＝SQUARE BRAND N25D-009／38 軌、1995-11-25 JP＝Polystar PSCN-5036、2004-09-01 JP＝NTT出版 NTCP-5036、2006-07-26 XW＝SQUARE ENIX SEMO-00023、2014-06-18 JP、2019-10-09 JP），零 Bootleg。刻意不釘：35cd8108-ea71-37c0-9d12-d2d4aa22fde3《Romancing Sa·Ga 2: Eternal Romance》（1994 續作）、3157a053-41cd-3dee-bbf8-967e9dd4cc40《Romancing Sa·Ga 3 Original Soundtrack》（1995 續作）、4db9e837-e23f-31dd-9f93-b361f5113df1《Romancing Sa·Ga: La Romance》（1992 編曲盤，非原聲）、59ca2138-2f89-44e9-9ad1-161a6b52f5c6《Romancing SaGa –Minstrel Song– Original Soundtrack》（2005 重製版，非原盤）、04859cec-fd1d-448f-be45-ae4688f23a28《Re:Birth II Romancing Sa·Ga BATTLE ARRANGE》（2012 編曲盤）。藝人 MBID 38b566b6-d675-442d-a5b5-0cdd8216dcaa（伊藤賢治）與 92bb085a-2924-4479-b627-181a1835d2f5（植松伸夫）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kenji Ito；Nobuo Uematsu；Romancing Sa-Ga (Original Soundtrack)；ロマンシング サ・ガ；Romancing SaGa Original Sound Version",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]
