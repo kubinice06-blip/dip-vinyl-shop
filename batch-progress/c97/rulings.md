@@ -196,3 +196,47 @@ MB 的 `first-release-date` 記 **2005**，但回問 `inc=releases` 之後看清
 （`Blood Music: ` `DE9: ` ` et musiques concrètes`）。
 **這是現行去重管線的第二個結構性缺口**（第一個是第 49 條記的盤名羅馬拼音無處可放），
 記在這裡，本批不改工具。
+
+---
+
+## （主線追加，2026-09-05）第 10 條：**「缺一段」與「換了內容」是兩回事** —— Messe de Liverpool 採用、Dedans dehors 不採用
+
+研究層 b 組找到兩張 Apple 條目「對不太起來」的具象音樂盤，兩張的處置相反，理由在這裡：
+
+| 卡 | Apple 那筆是什麼 | 裁定 |
+|---|---|---|
+| **Pierre Henry《Messe de Liverpool》** | fr 1452254000，**六段裡只有五段，缺〈Credo〉** | **採用**。缺的是**子集關係**——取到的那幾段確實出自本作。 |
+| **Bernard Parmegiani《Dedans dehors》** | fr 1786647050，**只有標題曲對得上，A 面換成《L'Œil écoute》** | **不採用、維持 unavailable，collectionId 列黑名單。** 那不是子集，是**換了內容**。 |
+
+**分界**：問「Apple 那一筆裡的東西，是不是全都出自本作？」
+- **是，只是少了幾段** → 採用，但**該 collectionId 不得作為軌數、曲目或封面的來源**，封面走 CAA。
+  （同形先例：This Heat《Repeat》只有一軌、Bone Thugs《The Art of War》被拆成兩張。）
+- **不是，裡面混了別的作品** → 不採用。
+  （同形先例：c-88 的《L'Avventura》配到 33 軌、曲名體系完全不同的另一版；
+  c-95 的 Earl Hooker《Sweet Black Angel》配到 ℗2017 同名整編，11 軌沒一軌對得上。）
+
+**這條要寫下來是因為「軌數對不上」本身不足以判斷**——
+《Messe de Liverpool》與《Dedans dehors》的軌數都對不上，但一個能用、一個不能用。
+
+## （主線追加）第 11 條：**gb 有條目不等於 gb 拿得到試聽** —— Burial《Antidawn》改回 jp
+
+研究層正確地指出探測層在 gb 記的 `0→0` 是 search 漏碟，gb 確實有 1598131152。
+**但那筆條目在 gb 與 de 都攤不出任何 song 列**（`lookup?entity=song` 只回得出 collection 那一列），
+拿不到試聽——與同批《Tears》一模一樣的形狀。
+
+**jp 1598321360 五軌全有 preview。** 依 c-53 那條
+「同一張碟在不同 storefront 的試聽授權不一樣」，**試聽維持 jp，gb 那筆留作封面備援**。
+
+**通則**：`search` 漏碟（第 166 條）與**條目存在但曲目未攤開**是兩個不同的問題，
+補救方式也不同——前者換查法，後者換店面。**改店面之前要先確認新店面拿得到 previewUrl。**
+
+## （主線追加）第 12 條：其餘三處兩說 —— 一律維持卡單值
+
+- **Enya《The Celts》**：MB 的 release-group title 其實是「Enya」，《The Celts》是 1992 年的改名。
+  **依第 45 條（改過名的碟取再發名），卡片盤名《The Celts》正確。**
+  年份 MB 1986 vs 維基 1987-03 → **維持 1986**，兩說寫進 `yearVerified`。
+- **Pierre Henry《Le Voyage》年份三說**（MB 1967／en-wiki 1967 芭蕾＋1968 專輯／fr-wiki 1962）
+  → **維持卡單值**，**正文不得把年份與作品類型綁在一起**（芭蕾與專輯是兩件事）。
+- **Coldcut《Sound Mirrors》**：MB 的 first-release-date 2005 來自宣傳盤，**卡單 2006 維持**。
+- 另記一處資料面：**Enya《A Day Without Rain》的 MB 英版漏收〈The First of Autumn〉**，
+  facts 已改採歐版 12 軌。

@@ -10014,16 +10014,29 @@
    "fr:1→0",
    "ie:1→0",
    "ca:1→0",
-   "au:1→0"
+   "au:1→0",
+   "gb:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1056890375,
+  "appleTitle": "South London Boroughs - EP",
+  "appleArtist": "Burial",
+  "appleYear": "2005",
+  "explicitness": "notExplicit",
+  "trackCount": 4,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/77/45/0e/77450eb3-8a9f-2e4d-1bee-c81b24ead3ec/mzaf_11036609494153852610.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-97 b 覆核、主線複驗**：探測層判 unavailable 是誤判（第 166 條）。gb 1056890375，四軌與 MB 原盤逐軌相符、乾淨。primary-type 是 **EP**（§5.5 電子白名單）。"
  },
  "Burial|Antidawn": {
   "batch": "c97",
   "tried": [
    "gb:0→0",
    "us:0→0",
-   "jp:1→1"
+   "jp:1→1",
+   "gb:research-swap→1",
+   "jp:mainline-revert→1"
   ],
   "front": "jp",
   "collectionId": 1598321360,
@@ -10034,7 +10047,8 @@
   "trackCount": 5,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8f/56/56/8f5656be-e56b-a52d-ac36-28be95e8d9de/mzaf_15504603583578986379.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 主線先換到 gb、複驗後改回 jp**：研究層建議改綁 gb 1598131152（探測層在 gb 記的 `0→0` 確實是 search 漏碟）。**但那筆 gb 條目在 gb 與 de 都攤不出任何 song 列、拿不到試聽**，與同批《Tears》同一形狀。**jp 1598321360 五軌全有 preview**，依 c-53 那條「同一張碟在不同 storefront 的試聽授權不一樣」維持 jp。gb 那筆可留作封面備援。primary-type 是 **EP**（§5.5 電子白名單）。"
  },
  "Coldcut|Some Like It Cold": {
   "batch": "c97",
@@ -10052,7 +10066,11 @@
   "cleanedOnly": false,
   "yearDrift": 5,
   "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "appleTrackCountField": 10,
+  "mbTrackCount": 8,
+  "note": " **2026-09-05 研究層 c-97 b：版本偏差——Apple 那筆是 1995 兩軌加料再版，Apple 上沒有 1990 的八軌原盤（Apple 10 軌／MB 原盤 8 軌）。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Coldcut|Sound Mirrors": {
   "batch": "c97",
@@ -10080,9 +10098,20 @@
    "fr:1→0",
    "ie:1→0",
    "ca:1→0",
-   "au:1→0"
+   "au:1→0",
+   "gb:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1213182690,
+  "appleTitle": "Heathen Earth - The Live Sound of Throbbing Gristle (Remastered)",
+  "appleArtist": "Throbbing Gristle",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2e/9f/bc/2e9fbca7-343d-a266-9501-4ac3c12bab6b/mzaf_655398294637105136.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-97 b 覆核、主線複驗**：探測層判 unavailable 是誤判。gb 1213182690。⚠ **那是 2011 remaster 的九軌切法**，與 MB 原盤的分軌不同——**軌數與曲目以原盤為準**。"
  },
  "Throbbing Gristle|Journey Through a Body": {
   "batch": "c97",
@@ -10127,9 +10156,20 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "gb:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1601719186,
+  "appleTitle": "Noisembryo / Noise Matrix",
+  "appleArtist": "Merzbow",
+  "appleYear": "1994",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/37/b8/ad/37b8ad06-2189-e4d8-7bd8-6700c4dd08c5/mzaf_6066402615808230605.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-97 b 覆核、主線複驗**：探測層判 unavailable 是誤判。gb 1601719186。⚠ **那是與《Noise Matrix》兩卷合併的盤**，前四軌與 MB 原盤逐軌等長——**軌數與曲目以原盤為準，不得引合併盤的軌數**。"
  },
  "Merzbow|Rainbow Electronics": {
   "batch": "c97",
@@ -10161,7 +10201,9 @@
   "trackCount": 5,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/5e/79/89/mzm.akfvhhmq.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "note": " **2026-09-05 研究層 c-97 b：版本偏差——Apple 那筆是義大利再版的切法、多一軌 bonus。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "The Art of Noise|Into Battle with the Art of Noise": {
   "batch": "c97",
@@ -10257,7 +10299,9 @@
   "cleanedOnly": false,
   "yearDrift": 45,
   "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "note": " **2026-09-05 研究層 c-97 b：版本偏差——Apple 那筆是 ℗2012 的「Le voyage - Prisme」，多帶了另一件作品。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Pierre Henry|Messe de Liverpool": {
   "batch": "c97",
@@ -10269,9 +10313,21 @@
    "fr:6→0",
    "ie:4→0",
    "ca:3→0",
-   "au:4→0"
+   "au:4→0",
+   "fr:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "fr",
+  "collectionId": 1452254000,
+  "appleTitle": "Messe de Liverpool - Pierres réfléchies",
+  "appleArtist": "Pierre Henry",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/3a/07/10/3a0710d1-1a93-55be-3a9e-c82501fee048/mzaf_6908377963181579639.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-97 b 覆核、主線裁定採用**：fr 1452254000，**但只有六段中的五段、缺〈Credo〉**。**裁定：試聽採用，該 collectionId 不得作為軌數、曲目或封面的來源**（原作六段）。依據與 This Heat《Repeat》、Bone Thugs《The Art of War》同一形狀——**取的那一段確實出自本作，缺的是子集關係不是換了內容**。封面走 CAA。",
+  "partialCollection": true
  },
  "Bernard Parmegiani|Chants magnétiques": {
   "batch": "c97",
@@ -10297,9 +10353,14 @@
    "fr:12→0",
    "ie:12→0",
    "ca:12→0",
-   "au:12→0"
+   "au:12→0",
+   "fr:research-rejected"
   ],
-  "status": "unavailable"
+  "status": "unavailable",
+  "rejectedCollectionIds": [
+   1786647050
+  ],
+  "note": "**2026-09-05 研究層 c-97 b 找到 fr 1786647050，主線裁定不採用、維持 unavailable**：那一筆**只有標題曲對得上，A 面換成《L'Œil écoute》**——**不是子集而是換了內容**，與同日《Messe de Liverpool》（缺一段、仍是同一作品）的分界就在這裡。依第 140／141 條與 c-88《L'Avventura》先例改判不採用。**1786647050 列黑名單。**"
  },
  "Enya|The Celts": {
   "batch": "c97",
@@ -10315,7 +10376,11 @@
   "trackCount": 16,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/c1/00/e7c10035-fae6-fd97-1409-8c44800f6210/mzaf_8585014372728159331.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "expandedReissue": true,
+  "appleTrackCountField": 16,
+  "mbTrackCount": 15,
+  "note": " **2026-09-05 研究層 c-97 b：版本偏差——Apple 那筆是 2009 remaster、多〈Eclipse〉（Apple 16 軌／MB 原盤 15 軌）。試聽可用，但軌數、曲目與曲序一律以原盤為準（第 140／157 條）。**"
  },
  "Enya|The Memory of Trees": {
   "batch": "c97",
@@ -10396,5 +10461,453 @@
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d0/19/1f/d0191f13-9cdf-d444-c06b-f1a9231cebd3/mzaf_10036858064331638434.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
+ },
+ "Hank Williams|Hank Williams Sings": {
+  "batch": "c98",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "de:0→0",
+   "fr:1→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Hank Williams|Ramblin' Man": {
+  "batch": "c98",
+  "tried": [
+   "us:11→2"
+  ],
+  "front": "us",
+  "collectionId": 815502171,
+  "appleTitle": "Ramblin' Man",
+  "appleArtist": "Hank Williams III",
+  "appleYear": "2014",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3c/4e/5a/3c4e5ad4-7331-3c11-aa06-730d17d73646/mzaf_17872861857211598777.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 59,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Hank Williams|Hank Williams as \"Luke the Drifter\"": {
+  "batch": "c98",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 1884151486,
+  "appleTitle": "Hank Williams As Luke The Drifter (Expanded Edition)",
+  "appleArtist": "Hank Williams",
+  "appleYear": "1953",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/31/45/d13145e3-f4e7-92b1-c37b-9f3d4b8e426a/mzaf_10568611439616853305.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Woody Guthrie|Struggle": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 86393036,
+  "appleTitle": "Struggle",
+  "appleArtist": "Woody Guthrie",
+  "appleYear": "1976",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/1c/81/601c8121-b4d8-28e1-3362-fa94a3d450f6/mzaf_5831556297905779348.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 31,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Woody Guthrie|Library of Congress Recordings": {
+  "batch": "c98",
+  "tried": [
+   "us:6→1"
+  ],
+  "front": "us",
+  "collectionId": 1442846179,
+  "appleTitle": "Library of Congress Recordings",
+  "appleArtist": "Woody Guthrie",
+  "appleYear": "1988",
+  "explicitness": "notExplicit",
+  "trackCount": 29,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/98/03/6c/98036c55-5531-540a-0a51-3b93e7ea900a/mzaf_10908967976025136240.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 24,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Pete Seeger|American Favorite Ballads, Vol. 1": {
+  "batch": "c98",
+  "tried": [
+   "us:12→2"
+  ],
+  "front": "us",
+  "collectionId": 82517660,
+  "appleTitle": "American Favorite Ballads, Vol. 1",
+  "appleArtist": "Pete Seeger",
+  "appleYear": "1957",
+  "explicitness": "notExplicit",
+  "trackCount": 28,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9a/6d/3c/9a6d3c30-eade-156a-5a1d-d4b19e6bf8d7/mzaf_12250724060213323751.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Pete Seeger|Waist Deep in the Big Muddy & Other Love Songs": {
+  "batch": "c98",
+  "tried": [
+   "us:4→0",
+   "gb:4→0",
+   "jp:6→0",
+   "ca:3→0",
+   "de:4→0",
+   "fr:6→0",
+   "au:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "Odetta|One Grain of Sand": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1444010538,
+  "appleTitle": "One Grain of Sand",
+  "appleArtist": "Odetta",
+  "appleYear": "1963",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/fb/58/a5fb58bd-3e59-06e8-1ae6-981c78d3f9e1/mzaf_16455077151083065652.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Patsy Cline|Patsy Cline's Greatest Hits": {
+  "batch": "c98",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 1440825668,
+  "appleTitle": "Patsy Cline's Greatest Hits",
+  "appleArtist": "Patsy Cline",
+  "appleYear": "1967",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/df/af/d1dfafb3-2f80-75df-2f4f-b321d122b24f/mzaf_2699848131276448088.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Tammy Wynette|Your Good Girl's Gonna Go Bad": {
+  "batch": "c98",
+  "tried": [
+   "us:11→1"
+  ],
+  "front": "us",
+  "collectionId": 171126447,
+  "appleTitle": "Your Good Girl's Gonna Go Bad",
+  "appleArtist": "Tammy Wynette",
+  "appleYear": "1967",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/5a/aa/8a5aaadd-5b2c-b711-8400-95401b52e863/mzaf_10197236914917666499.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Tammy Wynette|D-I-V-O-R-C-E": {
+  "batch": "c98",
+  "tried": [
+   "us:4→1"
+  ],
+  "front": "us",
+  "collectionId": 967382746,
+  "appleTitle": "D-I-V-O-R-C-E",
+  "appleArtist": "Tammy Wynette",
+  "appleYear": "1968",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/bc/ae/3bbcaeb3-f904-fb2a-e6ec-c0e60d0eb1ce/mzaf_6713218219370578881.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Marty Robbins|The Song of Robbins": {
+  "batch": "c98",
+  "tried": [
+   "us:11→0",
+   "gb:12→0",
+   "jp:12→0",
+   "ca:11→0",
+   "de:12→0",
+   "fr:11→0",
+   "au:11→0"
+  ],
+  "status": "unavailable"
+ },
+ "Marty Robbins|Devil Woman": {
+  "batch": "c98",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "ca:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Randy Travis|Old 8x10": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 308387566,
+  "appleTitle": "Old 8X10",
+  "appleArtist": "Randy Travis",
+  "appleYear": "1988",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/ed/bf/b5edbf11-ffaf-7ac5-9051-e86efe93ae0a/mzaf_323340841259517351.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Garth Brooks|The Chase": {
+  "batch": "c98",
+  "tried": [
+   "us:6→0",
+   "gb:6→0",
+   "jp:12→0",
+   "ca:6→0",
+   "de:6→0",
+   "fr:12→0",
+   "au:6→0"
+  ],
+  "status": "unavailable"
+ },
+ "The Louvin Brothers|Nearer My God to Thee": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 714637977,
+  "appleTitle": "Nearer My God to Thee",
+  "appleArtist": "The Louvin Brothers",
+  "appleYear": "1957",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/eb/8f/0deb8f52-c874-f189-d6a9-78bb62230fa5/mzaf_13196163386996389141.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "The Louvin Brothers|My Baby's Gone": {
+  "batch": "c98",
+  "tried": [
+   "us:3→2"
+  ],
+  "front": "us",
+  "collectionId": 714643546,
+  "appleTitle": "My Baby's Gone",
+  "appleArtist": "The Louvin Brothers",
+  "appleYear": "1960",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/59/a4/b959a44c-cd33-c600-fc96-a21ffcbcf0bf/mzaf_10773022786072389881.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Flatt & Scruggs|Songs of the Famous Carter Family": {
+  "batch": "c98",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 220100215,
+  "appleTitle": "Songs of the Famous Carter Family",
+  "appleArtist": "Lester Flatt & Earl Scruggs",
+  "appleYear": "1961",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/48/d4/eb48d42f-40e5-3b90-a111-fcf50fa8dc9b/mzaf_1001060276334212688.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Flatt & Scruggs|Hard Travelin'": {
+  "batch": "c98",
+  "tried": [
+   "us:1→0",
+   "gb:1→0",
+   "jp:11→0",
+   "ca:1→0",
+   "de:1→0",
+   "fr:12→0",
+   "au:1→0"
+  ],
+  "status": "unavailable"
+ },
+ "Dock Boggs|Dock Boggs: Legendary Singer and Banjo Player": {
+  "batch": "c98",
+  "tried": [
+   "us:1→0",
+   "gb:1→0",
+   "jp:1→0",
+   "ca:1→0",
+   "de:1→0",
+   "fr:1→0",
+   "au:1→0"
+  ],
+  "status": "unavailable"
+ },
+ "Elizabeth Cotten|Volume 3: When I'm Gone": {
+  "batch": "c98",
+  "tried": [
+   "us:1→0",
+   "gb:1→0",
+   "jp:12→0",
+   "ca:1→0",
+   "de:1→0",
+   "fr:12→0",
+   "au:1→0"
+  ],
+  "status": "unavailable"
+ },
+ "Joan Baez|Joan Baez, Vol. 2": {
+  "batch": "c98",
+  "tried": [
+   "us:4→1"
+  ],
+  "front": "us",
+  "collectionId": 712142981,
+  "appleTitle": "Joan Baez, Vol. 2",
+  "appleArtist": "Joan Baez",
+  "appleYear": "1961",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ba/d3/0c/bad30c13-c40c-fafa-ddd3-0a093d8c93e3/mzaf_13446816354160157387.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Nitty Gritty Dirt Band|Uncle Charlie & His Dog Teddy": {
+  "batch": "c98",
+  "tried": [
+   "us:2→0",
+   "gb:4→0",
+   "jp:12→0",
+   "ca:3→0",
+   "de:4→0",
+   "fr:12→0",
+   "au:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "Georges Brassens|Nº2 : Georges Brassens interprète ses dernières compositions": {
+  "batch": "c98",
+  "tried": [
+   "us:8→0",
+   "gb:12→0",
+   "jp:12→0",
+   "ca:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Georges Brassens|Nº10 : Les Copains d'abord": {
+  "batch": "c98",
+  "tried": [
+   "us:10→0",
+   "gb:12→0",
+   "jp:12→0",
+   "ca:12→0",
+   "de:12→0",
+   "fr:11→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Léo Ferré|Verlaine et Rimbaud chantés par Léo Ferré": {
+  "batch": "c98",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Léo Ferré|Il n'y a plus rien": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1442884628,
+  "appleTitle": "Il n'y a plus rien",
+  "appleArtist": "Léo Ferré",
+  "appleYear": "1973",
+  "explicitness": "notExplicit",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/a7/7d/eca77dbc-f4d1-5e19-0941-25e5b43a638d/mzaf_12173784519890554674.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Víctor Jara|Canto libre": {
+  "batch": "c98",
+  "tried": [
+   "us:2→0",
+   "gb:4→1"
+  ],
+  "front": "gb",
+  "collectionId": 713635889,
+  "appleTitle": "Canto Libre",
+  "appleArtist": "Victor Jara",
+  "appleYear": "1970",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/5e/19/855e1973-6fbd-374a-0161-abf12ada54bb/mzaf_11362480306115852954.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Víctor Jara|Canto por travesura": {
+  "batch": "c98",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1446799751,
+  "appleTitle": "Canto por Travesura",
+  "appleArtist": "Victor Jara",
+  "appleYear": "1973",
+  "explicitness": "notExplicit",
+  "trackCount": 18,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/11/fa/0a/11fa0a8e-ceb2-22f3-ec52-06bc7de2ae2a/mzaf_2463641979039491808.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Violeta Parra|Recordando a Chile: Una chilena en París": {
+  "batch": "c98",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
  }
 }
