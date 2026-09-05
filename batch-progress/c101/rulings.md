@@ -177,3 +177,73 @@ Konami 舊作（月下の夜想曲）、Bethesda 數位獨佔（DOOM Eternal）�
 逐張實測 `https://coverartarchive.org/release-group/<id>`，**45/45 回 HTTP 200**。
 封面這一關本批零風險，包括 Apple 完全查無的那 12 張。這與非拉丁線的既往經驗相反
 （c-91 的台灣線有多張 CAA 404），原因是遊戲原聲的 MB 編輯社群把封面補得很齊。
+
+---
+
+## （主線追加，2026-09-05）第 1 條：**b 組五張誤記 unavailable 全部救回、一張 ready 是錯配**
+
+**五張救回**（都以 `lookup?id=<collectionId>&entity=song` 覆核過曲目列攤得開且每軌有 previewUrl）：
+
+| 卡 | 正解 | 探測落空的原因 |
+|---|---|---|
+| Toby Fox《DELTARUNE Chapter 1 OST》 | us 1443475587（40 軌） | 卡片用「OST」、Apple 用「(Original Game Soundtrack)」 |
+| Austin Wintory《Journey》 | us 1553230092（18 軌） | **卡片盤名只有一個單字**，被 Apple 的長副標吃掉 |
+| Jesper Kyd《Assassin's Creed II》 | us 1640108379（35 軌） | 羅馬數字 II 對阿拉伯數字 2 ＋ **彎撇號對直撇號** |
+| Disasterpeace《FEZ》 | us 1765770688（26 軌） | ⚠ **七店的 search 端點全回 0、目錄端點有**——裁定 173 的實例 |
+| Christopher Tin《Calling All Dawns》 | us 1526759916（12 軌） | Apple 沒有「A Song Cycle」那個副標 |
+
+**一張 ready 是錯配，已改判 unavailable**：Grant Kirkhope《Banjo-Kazooie》原記
+jp 1592541500「Banjo Kazooie: **Re - Jiggyed**」——**那是 2021 年的 10 軌重編曲盤**，
+不是 1998 年那張 17 軌原盤。**而且策展層的 mbNote 早就把它寫成「刻意不釘」**
+（裁定 153 附錄那個形狀第二次：**策展層已經指名不要的東西，探測層又把它配了回來**）。
+Kirkhope 六店完整目錄（各 44–46 筆）逐筆看過，**Apple 上沒有原盤**。⚠ 下游不得改配該 id。
+
+**兩張確認查無**：DOOM Eternal（Mick Gordon 六店目錄無任何 Eternal 專輯，只有第三方翻奏）、
+Donkey Kong Country 2（四店搜到的八筆全是翻奏／鋼琴／lofi 改編）。
+**這是遊戲原聲特有的陷阱**：查無的那幾張，搜尋結果裡**塞滿了翻奏與改編**，
+比「什麼都沒有」更容易讓人配錯。
+
+## 第 2 條：**三個 ready 疑點的結論——軌數看起來不對，其實都對**
+
+- **UNDERTALE 101 軌就是原盤軌數**（MB 兩筆 Materia Collective 數位 release 皆 101 軌；**黑膠才是 41 軌**）。
+- **C418 兩張的新 collectionId 是整份目錄重新遞送**（同 artistId 底下 2010／2011／2013 年舊碟全配了新 id），
+  24／30 軌與 MB 數位原盤逐數相符。**「id 看起來很新」不等於「是後來的版本」。**
+- **DOOM 31 軌與 MB 2016-09-28 Bethesda 數位版逐數相符**（MB 的 `first-release-date` 2016-05-27 是一筆 **Bootleg**）。
+
+## 第 3 條：**數位版與實體版的軌數落差是這條線的常態**
+
+b 組 19 張裡有 **6 張**的黑膠／CD 軌數少於數位：
+Minecraft Alpha 24→12、Beta 30→17、Celeste 21→19、DOOM 31→20、Ori 32→24/25、**Undertale 101→41**。
+**行文寫軌數時要說清楚是哪一種載體**，或乾脆不寫。
+
+另：**DKC2 美版帳面 55 軌，但真正的樂曲只有前 29 軌**
+（第 30–34 軌是 [silence]，之後全是數秒音效）——**不得寫「五十五首」**。
+
+## 第 4 條：**Calling All Dawns 不是遊戲原聲帶**
+
+`secondary-types` 是空的。它是一張獨立的合唱／管弦作品，
+其中〈Baba Yetu〉出自《文明帝國 IV》。**型態照實記（裁定 167），不得寫成遊戲原聲。**
+
+## 第 5 條：**擋下策展層 2 處（Undertale 卡），另覆核成立它自己的一處更正**
+
+- **「Toby Fox 名下唯一一張完整長篇原聲」——與來源相反。** Deltarune Chapter 1（40 軌，**本組自己就收了**）、
+  Chapter 2（47 軌）、Chapters 3+4（78 軌）都是 Materia Collective 的完整原聲盤。
+- **「2010 年代獨立遊戲音樂有形化的起點」——無來源**，且 Minecraft Volume Alpha 2011-03-04 就上架、
+  2015 年進 Ghostly 黑膠。
+- **覆核成立**：策展層自己更正的「Christopher Larkin 池中是 0 張不是 3 張」屬實
+  （規劃書那個數字是錯的）。
+
+**時序主張查證通過、可以寫的**：
+Journey 是葛萊美 Best Score Soundtrack for Visual Media **史上第一張入圍**（未得獎）；
+〈Baba Yetu〉是**史上第一次葛萊美頒給為電子遊戲寫的作品**（第 53 屆，**得獎的是本輯的錄音不是 2005 遊戲版**）；
+Bastion 是 Korb 配樂的**第一款**電玩；
+Minecraft Volume Alpha 是 Rosenfeld 的**第一張**商業發行、2025 年入選 National Recording Registry 的**第二件**電玩音樂；
+Banjo-Kazooie 是**最早採用垂直重混的遊戲之一**（維基導言原話是「one of the first」，**不得寫「第一款」**）。
+
+## 第 6 條：**遊戲年 vs 原聲年，19 張全部並列進 `yearVerified`**
+
+同日 4 張（Undertale、Celeste、ABZÛ、Transistor）；
+**原聲早於遊戲 3 張**（Minecraft Alpha 早 8 個月、Hollow Knight 早 2 週、Hades 早 1 天）；
+原聲晚於遊戲 9 張，落差最大的是 DOOM（5/13 → 9/28）與 Minecraft Beta（2011 遊戲 → 2013 原聲）；
+Banjo-Kazooie 美版只有年份、日版晚到 1999-02-17；DKC2 美版 1995-10／日版 1996-03。
+**「原聲早於遊戲」這件事本身反直覺，行文提年份時要確認講的是哪一個。**
