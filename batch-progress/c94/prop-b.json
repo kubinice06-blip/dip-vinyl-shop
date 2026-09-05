@@ -1,0 +1,198 @@
+[
+ {
+  "artist": "Refused",
+  "album": "Songs to Fan the Flames of Discontent",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Startracks（SE STAR 438-2）；美國 Victory Records VR40CD、德國 We Bite Records W B 3-143-2",
+  "why": "Refused 第二張專輯，也是池中唯一那張《The Shape of Punk to Come》(1998) 的前一張。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤只有五張：This Just Might Be… the Truth(1994)、Songs to Fan the Flames of Discontent(1996)、The Shape of Punk to Come(1998)、Freedom(2015)、War Music(2019)，補進這一張之後池中就有這位藝人的兩張核心盤。實掃 seed_cards.json 全 14,424 列。MB 轄下 7 個 release：1996 瑞典 Startracks STAR 438-2 為原盤，同年美國 Victory VR40CD、德國 We Bite W B 3-143-2 三地並行；1997 年 Burning Heart 以 BHR 061 接手歐洲，2004 年 Burning Heart 在瑞典（BHR 1043／BHR 1043-2）與美國（82035-2）重發。",
+  "risk": "Apple us 與 se 都命中 collectionId 1446751241（Refused／Songs to Fan the Flames of Discontent／12 軌／1996-06-07／notExplicit），兩個店面同一筆，比對乾淨。MB 的 first-release-date 只有年份（1996）、沒有月日，Apple 的 1996-06-07 是唯一有日期的來源，**行文不得正面斷言確切發行日**（第 18／46 條）。盤名長且獨特，字串比對風險低。掛名 Refused 池中已有一張、字串一致；池中另有 Steven Wilson《The Raven That Refused to Sing》，盤名含 Refused，是模糊比對的假陽性來源。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 857ba0e6-3a30-31b0-938f-41e9b88adde1。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Songs to Fan the Flames of Discontent」、artist-credit「Refused」、first-release-date 1996（僅到年）、primary-type Album、secondary-types 空、轄下 7 個 release（SE／US／DE／XE，全 Official）。藝人 MBID 由 artist?query=Refused 取得並以 browse 覆核。刻意不釘：3b2613c0-f50c-39ba-9607-84d4ee745ace《This Just Might Be… the Truth》（1994，首張，盤名含 U+2026）、8a3b8b22-7eef-3d3a-9cec-90b2ae712bcb《The Shape of Punk to Come: A Chimerical Bombination in 12 Bursts》（1998，池中已有，MB 用的是帶副標的長標題）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Burning Heart Records（1997 歐洲、2004 瑞典與美國）",
+  "g": "b"
+ },
+ {
+  "artist": "At the Drive-In",
+  "album": "In/Casino/Out",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "Fearless Records（US F034、CA FRL 30034-2）；2004 英國 V2 VVR1030272",
+  "why": "At the Drive-In 第二張專輯，也是池中唯一那張《Relationship of Command》(2000) 的前一張。依 MB 藝人 browse（分頁取完）濾出的正規盤只有四張：Acrobatic Tenement(1996)、In/Casino/Out(1998)、Relationship of Command(2000)、in·ter a·li·a(2017)，本批同時補前兩張，池中就會有這位藝人四張裡的三張。實掃 seed_cards.json 全 14,424 列。MB 轄下 7 個 release：1998-08-18 美國 Fearless F034 為原盤，同年加拿大 FRL 30034-2、2001-01-31 日本由 Fearless／Two Children 以 BLCY-1012 發行、2004-12-06 英國 V2 VVR1030272、2012-07-31 Fearless 以 FRL 39034-1 做黑膠復刻。",
+  "risk": "**MB 的 artist-credit 用的是 U+2010 連字號的「At the Drive‐In」**，卡片掛名依池中既有寫法用 ASCII 連字號「At the Drive-In」；chk-prop 只擋盤名裡的非 ASCII 連字號，掛名這一側不擋，但下游任何字串比對都要當成兩個不同的字串處理（第 152 條附錄記過同形異碼的四組，這是第五組）。**盤名帶兩個斜線**：Apple us 命中 collectionId 1443564291，標題是加了空格的「In / Casino / Out」（11 軌，1998-01-01 佔位日期），與卡片盤名的無空格寫法在任何字串比對下不相等，兩種都要進 queryAlias。1998 US 有一筆 MB status 空白。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 6e672015-9666-3169-907a-35bac0655eaa。回問 release-group/<id>?inc=artist-credits+releases 確認：title「In/Casino/Out」、artist-credit「At the Drive‐In」（MB 用 U+2010）、first-release-date 1998-08-18、primary-type Album、secondary-types 空、轄下 7 個 release（US／CA／JP／GB，多為 Official，1998 US 一筆與另一筆國別空白者 status 未標）。藝人 MBID 由 artist?query=At+the+Drive-In 取得並以 browse 覆核。刻意不釘：b7f5ed97-bb72-31fb-acd8-4bad86d95a58《Relationship of Command》（2000，池中已有）、4eb91a49-1d34-480b-9d1a-379d1f2a025a《in·ter a·li·a》（2017，盤名含 U+00B7 間隔號，本批不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "In / Casino / Out；In Casino Out；At the Drive‐In",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "At the Drive-In",
+  "album": "Acrobatic Tenement",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "Flipside Records（US FLIP94）；2004 Fearless Records FRL 30071-2、英國 V2 VVR1030302",
+  "why": "At the Drive-In 的首張專輯，池中缺的那個起點——實掃 seed_cards.json 全 14,424 列，這位藝人在池中只有《Relationship of Command》(2000) 一張。原盤 1996-08-18 由洛杉磯的獨立廠牌 Flipside Records 以 FLIP94 發行，2000 年 Restart Records RES94 沿用同一組數字重發，2004 年樂團解散後由 Fearless（US FRL 30071-2）與 V2（GB VVR1030302、JP V2CP-223）在三地重新發行，2013 年英國 Transgressive TRANS154X 做黑膠復刻——MB 轄下 7 個 release 完整記著這條再發鏈。",
+  "risk": "Apple us 命中 collectionId 516372970（At the Drive-In／Acrobatic Tenement／11 軌／**1997-02-18**），比 MB 的 1996-08-18 晚半年；依第 77／95 條年份只當訊號，卡片年份取 MB 的 1996，**行文不得正面斷言發行年**（第 18／46 條）。掛名在 MB 上是 U+2010 連字號的「At the Drive‐In」，卡片用 ASCII 連字號（同本批另一張的處理）。2013-03-25 XW Transgressive 那筆 MB status 空白，不作為背書使用。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group bee4fcbb-9e54-3d62-a72c-06b9f97fa487。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Acrobatic Tenement」、artist-credit「At the Drive‐In」、first-release-date 1996-08-18、primary-type Album、secondary-types 空、轄下 7 個 release（US／GB／JP／XW，多為 Official，2013 XW 一筆 status 空白）。藝人 MBID 同本批另一張。刻意不釘：6e672015-9666-3169-907a-35bac0655eaa《In/Casino/Out》（1998，本批同時收，兩張不撞）、b7f5ed97-bb72-31fb-acd8-4bad86d95a58《Relationship of Command》（2000，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "At the Drive‐In",
+  "reissuedBy": "Fearless Records／V2（2004 三地重發）",
+  "g": "b"
+ },
+ {
+  "artist": "American Football",
+  "album": "American Football (LP2)",
+  "year": 2016,
+  "genres": [
+   "rock"
+  ],
+  "label": "Polyvinyl（US PRC-320）／Wichita（GB WEBB490LP／WEBB490CD）；日本 [PIAS]／Hostess HSE-3756",
+  "why": "American Football 睽違十七年的第二張專輯。這個樂團的四張正規盤**全部自我同名**——MB 藝人 browse 分頁取完後可以看到四個 release-group 標題都是「American Football」（1999、2016、2019、2026），因此流通上一律以 LP1／LP2／LP3 區分，Apple 自己也把它們標成《American Football (Lp2)》《American Football (Lp3)》。實掃 seed_cards.json 全 14,424 列，池中只有 1999 年那張（掛名與盤名都是 American Football），這張是往後那一段的第一步。MB 轄下 8 個 release：2016-09-30 英國 Wichita 為最早，2016-10-12／10-21 美國 Polyvinyl PRC-320（黑膠與 CD 多筆）、2016-10-21 英國 CD WEBB490CD 與日本 HSE-3756、2022 年 Polyvinyl 再壓一次。",
+  "risk": "**這是本批身分風險最高的一張：藝人、盤名、release-group 標題三者相同，而池中已有同掛名同盤名的 1999 年那張。** 若照 MB 的 release-group 標題原樣取《American Football》，`chk-prop` 會直接判與線上池撞卡，而且卡片本身也指涉不明。卡片盤名因此取《American Football (LP2)》，依據有三：(a) 池中早有同形狀的先例，`Peter Gabriel (Car)`／`Peter Gabriel (Security)` 兩張就是用括號區分自我同名系列（第 132 條為此把 `dedup-crossbatch` 的括號剝除改成白名單制，明文說「括號裡正是區別兩張碟的東西」）；(b) LP2 不是我自創的字串——Apple 的 collectionId 1651327242 標題就是《American Football (Lp2)》；(c) 第 45 條處理的是「原盤自我同名、再發改名」，這裡是「同一位藝人四張自我同名」，屬第 132 條的管轄。Apple us 同一次搜尋回了 1651327242(LP2，9 軌)、1651293928(LP3)、1651333864(1999，9 軌)、1651301990(1999 Deluxe，19 軌)、1754429576(1999 25 週年)，**五筆的盤名在正規化後幾乎相同**，配對必須用 collectionId 直取 1651327242，不可靠字串。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group f98334d4-5eb5-48b2-820b-faa8db645c10。回問 release-group/<id>?inc=artist-credits+releases 確認：title「American Football」、artist-credit「American Football」、first-release-date 2016-09-30、primary-type Album、secondary-types 空、轄下 8 個 release（GB Wichita、US Polyvinyl PRC-320 ×4、JP HSE-3756，全 Official）。RG 標題與卡片盤名不必相等（第 91／95 條），本卡的差異是刻意加的消歧義後綴。藝人 MBID 由 artist?query=American+Football 取得並以 browse 覆核，名下 5 個 release-group。刻意不釘：8e40a68c-58e8-3c92-a763-645fda2ce8a7《American Football》（1999，即 LP1，**池中已有**）、e19106eb-74a7-4ddf-b52b-381788f447f1《American Football》（2019，LP3）、0ea364bc-243b-4d6b-92ec-521b3a363cff《American Football》（2026）、28fe6c10-7f47-3926-810a-e67028abb029《All of Us》（無日期）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "American Football (Lp2)；American Football LP2；American Football (2016)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Microphones",
+  "album": "It Was Hot, We Stayed in the Water",
+  "year": 2000,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "K（US KLP 116）；後由 P.W. Elverum & Sun, Ltd. 自營再發",
+  "why": "The Microphones 第三張專輯，池中兩張（《The Glow Pt. 2》2001，頂點卡 hall；《Mount Eerie》2003）之前的那一張。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Don't Wake Me Up(1999)、It Was Hot, We Stayed in the Water(2000)、the Glow, pt. 2(2001)、Little Bird Flies Into a Big Black Cloud(2002)、Mount Eerie(2002-12)、Microphones in 2020(2020)。實掃 seed_cards.json 全 14,424 列，池中只有 2001 與 2003 那兩張（後者卡片年份記 2003、MB 記 2002-12-12），本批同時補 1999 與 2000 兩張，這位藝人在 K 廠時期的目錄就補齊了。MB 轄下 3 個 release：2000-09-26 美國 Olympia 的 K 廠 KLP 116 為原盤，2013-02-16 與另一筆無日期者由 Phil Elverum 自營的 P.W. Elverum & Sun, Ltd. 重發。",
+  "risk": "Apple us 命中 collectionId 483207720（The Microphones／It Was Hot, We Stayed In The Water／11 軌／2000-09-26），日期與 MB 完全相同，比對乾淨。**MB 的 artist-credit 是小寫定冠詞的「the Microphones」**（同藝人另一張是完全沒有定冠詞的「Microphones」），卡片依池中既有寫法用「The Microphones」，兩種變體都要能比對（第 10／11 條：credit 是逐盤記錄的，掛名取通行名）。盤名含逗號，正規化後不影響。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 2cbcc27b-5480-3bb1-b45a-e698616930d9。回問 release-group/<id>?inc=artist-credits+releases 確認：title「It Was Hot, We Stayed in the Water」、artist-credit「the Microphones」（MB 用小寫 the）、first-release-date 2000-09-26、primary-type Album、secondary-types 空、轄下 3 個 release（US K KLP 116、XW P.W. Elverum & Sun ×2，全 Official）。藝人 MBID 由 artist?query=The+Microphones 取得並以 browse 覆核。刻意不釘：f478fad9-a746-3625-9f14-bc4a74918c0e《the Glow, pt. 2》（2001，池中已有，MB 標題的大小寫與卡片不同）、15408c1f-f9ab-3d90-a9c3-0068465d1d76《Mount Eerie》（2002-12-12，池中已有）、ab4a1906-2d70-343e-97e7-7fd0d7c9a3df《Little Bird Flies Into a Big Black Cloud》（2002）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "the Microphones；Microphones",
+  "reissuedBy": "P.W. Elverum & Sun, Ltd.（2013 藝人自營廠牌再發）",
+  "g": "b"
+ },
+ {
+  "artist": "The Microphones",
+  "album": "Don't Wake Me Up",
+  "year": 1999,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "K（US KLP 099）；2013 由 P.W. Elverum & Sun, Ltd. 自營再發",
+  "why": "The Microphones 在 K 廠的第一張正規專輯，也是這位藝人在池中缺的起點。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序，它排在本批同時補的《It Was Hot, We Stayed in the Water》(2000) 與池中已有的《The Glow Pt. 2》(2001)、《Mount Eerie》(2003) 前面。實掃 seed_cards.json 全 14,424 列，池中另有 Phil Elverum 後期掛名 Mount Eerie 的《A Crow Looked at Me》(2017) 一張，但 The Microphones 這個掛名底下 1999–2000 兩年是空的。MB 轄下 3 個 release：1999-08-24 美國 K 廠 KLP 099 為原盤，2013-02-16 與 2013-04-16 兩筆由 P.W. Elverum & Sun, Ltd. 重發。",
+  "risk": "Apple us 命中 collectionId 483247725（The Microphones／Don't Wake Me Up／**15 軌**／1999-08-24），日期與 MB 完全相同。**軌數要對原盤**：K 廠原盤與自營再發的軌數未必相同，依第 141 條，在對軌數下任何判斷前要先開 release?release-group=026e74ae…&inc=recordings，本批不填 originalTrackCount。**MB 這一筆的 artist-credit 是完全沒有定冠詞的「Microphones」**（同藝人另一張是小寫的「the Microphones」），卡片依池中既有寫法用「The Microphones」，三種變體都要能比對。MB 的盤名用 U+2019 彎撇號「Don’t」，卡片用 ASCII 直撇號，正規化後相等。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 026e74ae-8fc1-36f2-8bf3-ec2b052ec5c1。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Don’t Wake Me Up」（MB 用 U+2019）、artist-credit「Microphones」、first-release-date 1999-08-24、primary-type Album、secondary-types 空、轄下 3 個 release（US K KLP 099、XW P.W. Elverum & Sun ×2，全 Official）。藝人 MBID 同本批另一張 The Microphones。刻意不釘：2cbcc27b-5480-3bb1-b45a-e698616930d9《It Was Hot, We Stayed in the Water》（2000，本批同時收）、f5699280-d709-4e53-b9c5-fa98d9371714《Microphones in 2020》（2020）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Microphones；the Microphones；Don’t Wake Me Up",
+  "reissuedBy": "P.W. Elverum & Sun, Ltd.（2013 藝人自營廠牌再發）",
+  "g": "b"
+ },
+ {
+  "artist": "Big Brother & the Holding Company",
+  "album": "Big Brother & The Holding Company",
+  "year": 1967,
+  "genres": [
+   "rock",
+   "blues"
+  ],
+  "label": "Mainstream Records（US S/6099，原盤）；1971 Columbia C 30631",
+  "why": "Big Brother & the Holding Company 的首張專輯，1967 年 9 月由紐約的 Mainstream Records 以 S/6099 發行，早於樂團簽進 Columbia 之前——池中已有的《Cheap Thrills》(1968，頂點卡 hall) 是 Columbia 時期的那一張，這張是它前面唯一的一張正規盤（依 MB 藝人 browse 分頁取完後濾出的正規盤只有五張：本張、Cheap Thrills(1968)、Be a Brother(1970)、How Hard It Is(1970)、Do What You Love(1998)）。實掃 seed_cards.json 全 14,424 列，池中這位藝人有兩筆卡，但**是同一張《Cheap Thrills》以兩種掛名寫法各存一次**（「Big Brother & The Holding Company」與「Big Brother and the Holding Company」），實際上只有一張碟。MB 轄下 14 個 release 記著這張碟被 Columbia 買下之後的路徑：1970 Columbia Limited Edition LE 10205、1971 Columbia C 30631、1993 荷蘭 COL 472881-2、1994 日本 SRCS 6440、1999 Columbia／Legacy CK 66425、2008 Sundazed LP 5188 黑膠、2016 Columbia／Legacy 再發。",
+  "risk": "**自我同名卡，且池中已有同藝人的掛名分裂**（「& The」與「and the」兩種寫法各一張《Cheap Thrills》；本卡取 MB 實體的「Big Brother & the Holding Company」，第 6／70／120 條）。正規化後本卡的鍵是 artist 與 album 相同的字串，任何模糊比對都極危險，**身分只能靠 rgMbid 與 Mainstream 目錄號 S/6099 鎖定**（第 7／13 條：目錄號視為與 MBID 同等的身分欄位）。Apple us 有兩筆同名：1073648897（12 軌，1967-08-01）與 1882082740（14 軌，1967-01-01），**掛名都被 Apple 寫成「Big Brother & The Holding Company & Janis Joplin」**（MB 的 artist-credit 也是「Big Brother & the Holding Company featuring Janis Joplin」），與卡片掛名不相等；配對必須用 collectionId 直取並逐軌核對——原盤是十首的 LP，12 軌與 14 軌都是加曲版（第 140 條），本批不填 originalTrackCount，留給研究層開 release?release-group=2464c8f8…&inc=recordings 查。MB 另有一筆標為 **Bootleg** 的同名 release。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 2464c8f8-7d3f-32e4-afaa-870ccb18d869。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Big Brother & The Holding Company」、artist-credit「Big Brother & the Holding Company featuring Janis Joplin」、first-release-date 1967-09、primary-type Album、secondary-types 空、轄下 14 個 release（US 為主，另有 XE／NL／JP／XW；1 筆標為 Bootleg，其餘 Official；原盤為 1967-09 US Mainstream Records S/6099）。掛名依第 11 條取通行名「Big Brother & the Holding Company」，credit 變體歸 queryAlias 與本欄。藝人 MBID 由 artist?query=Big+Brother+%26+the+Holding+Company 取得並以 browse 覆核。刻意不釘：02de8887-e93b-3ea6-8b6d-de072a159bba《Cheap Thrills》（1968，池中已有）、9a0fe6f3-3531-3d82-bca1-bed8e117761b《How Hard It Is》(1970) 與 d946b107-cab4-4b03-9624-fe9758a78c46《Be a Brother》(1970)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Big Brother & The Holding Company & Janis Joplin；Big Brother and the Holding Company；Big Brother & the Holding Company featuring Janis Joplin",
+  "reissuedBy": "Columbia／Legacy（1971、1999、2016）",
+  "g": "b"
+ },
+ {
+  "artist": "Gene Clark",
+  "album": "Gene Clark with the Gosdin Brothers",
+  "year": 1967,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Columbia（US CS 9418）",
+  "why": "Gene Clark 離開 The Byrds 之後的第一張個人專輯，1967-01-16 由 Columbia 以 CS 9418 發行。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序：Gene Clark with The Gosdin Brothers(1967)、Gene Clark／White Light(1971)、Roadmaster(1973)、No Other(1974)、Two Sides to Every Story(1977)、Firebyrd(1984)、So Rebellious a Lover(1987)。實掃 seed_cards.json 全 14,424 列，池中只有《No Other》(1974) 一張——這位藝人在池中缺頭缺尾，本批補的兩張是他 1974 年之前的兩張核心盤。MB 轄下 7 個 release：1967 Columbia CS 9418 原盤、1990 Sony Music Special Products WK 75016、1997 英國 Edsel EDCD 529、2007 Sundazed SC 11188、2014 日本 SICP 30421、2019 英國 Floating World FLOATM6387。",
+  "risk": "**盤名本身帶著另一組掛名**：MB 的 release-group 標題與 artist-credit 都是「Gene Clark with The Gosdin Brothers」，Apple 更把藝人欄寫成「Gene Clark & The Gosdin Brothers」（collectionId 273843730，17 軌，1967-01-01；另有 275311817 的 Bonus Track Version，同 17 軌，2008-02-19）。卡片掛名依第 11 條取通行名「Gene Clark」（與池中《No Other》一致，不製造分裂鍵），盤名保留完整標題；`with The`／`With the` 的大小寫兩種寫法都要進 queryAlias。**17 軌是加曲版**——原盤是 1967 年的 LP，本批不填 originalTrackCount，依第 141 條留給研究層開 release?release-group=a049e944…&inc=recordings 查。Apple 的 1967-01-01 是佔位日期。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group a049e944-8b50-34c8-b1f5-3be8c33d1123。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Gene Clark with The Gosdin Brothers」、artist-credit「Gene Clark with The Gosdin Brothers」、first-release-date 1967-01-16、primary-type Album、secondary-types 空、轄下 7 個 release（US／GB／JP／XW，全 Official；原盤為 1967-01-16 US Columbia CS 9418）。掛名取通行名、credit 變體歸 queryAlias（第 11 條）。藝人 MBID 由 artist?query=Gene+Clark 取得並以 browse 覆核。刻意不釘：1a8984d7-503a-3a06-b02c-dad5e01b0d10《No Other》（1974，池中已有）、364afbce-8023-492e-b884-4070ad55abfd《White Light Demo's》（無日期，demo 輯）、a3f35895-6bd1-37a2-8961-42721262d364《So Rebellious a Lover》（1987，與 Carla Olson 的合作盤）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gene Clark With the Gosdin Brothers；Gene Clark & The Gosdin Brothers；Gene Clark With The Gosdin Brothers",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gene Clark",
+  "album": "White Light",
+  "year": 1971,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "A&M Records（US SP 4292／SP4292）",
+  "why": "Gene Clark 1971 年在 A&M 的專輯，是他 1967 年首張與池中已有的《No Other》(1974) 之間那一段的代表作。依 MB 藝人 browse（分頁取完）濾出的正規盤順序，它排第二。MB 轄下 8 個 release：1971-08 美國 A&M SP 4292 原盤、1974 荷蘭 A&M 88 172 XAT、1987 日本 A&M D32Y3530、2002 英國 A&M 493 209-2、2011 Sundazed SC 6265、2018 Intervention Records IR-SCD9。實掃 seed_cards.json 全 14,424 列，池中這位藝人只有《No Other》一張。",
+  "risk": "**盤名與 release-group 標題不同，這是本卡最需要交代的一件事。** MB 的 release-group 標題與美國原盤（A&M SP 4292）都作《Gene Clark》——**原盤是自我同名的**；但同一個 release-group 底下有一筆 release 的標題就是《White Light》（A&M 493 209-2），Apple 的唯一條目也是 collectionId 1443625305《White Light (Remastered)》（14 軌，1971-01-01，us 與 gb 同一筆）。卡片取《White Light》，依據是第 45 條（原盤自我同名、後來被再發正式改名、改名後的盤名已成為流通的通行名）與第 91 條（RG 標題與卡片盤名不必相等）：若照原名收，會做出一張 artist 與 album 都是「Gene Clark」的自我同名卡，而 §1 明文把自我同名列為高風險，且那個字串在 Apple 上必然查不到這張碟。**Apple 那筆 14 軌是加曲的 Remastered 版**（第 140 條），本批不填 originalTrackCount。另一筆 1499916617《Here Tonight: The White Light Demos》(2013) 是 demo 輯、不可配。Apple 的 1971-01-01 是佔位日期（MB 為 1971-08）。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group b0bf102b-260b-34e7-b953-5cc8a1bc33e6。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Gene Clark」、artist-credit「Gene Clark」、first-release-date 1971-08、primary-type Album、secondary-types 空、轄下 8 個 release（US／JP／GB／NL／XE，全 Official；其中一筆 A&M 493 209-2 的 release 標題即為「White Light」，這是卡片盤名的 MB 內部依據）。卡片盤名依第 45／91 條取《White Light》。藝人 MBID 同本批另一張 Gene Clark。刻意不釘：364afbce-8023-492e-b884-4070ad55abfd《White Light Demo's》（無日期，demo 輯，盤名含 White Light、是本張最像的假陽性）、93a9d9f0-1e16-3851-95fb-387dbfc8077c《Roadmaster》(1973)、e4fa2fb3-258e-30d6-9160-bb2bfb02f18a《Two Sides to Every Story》(1977)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gene Clark (1971)；White Light (Remastered)",
+  "reissuedBy": "Sundazed Music（2011）／Intervention Records（2018）",
+  "g": "b"
+ },
+ {
+  "artist": "Love",
+  "album": "Four Sail",
+  "year": 1969,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Elektra（US EKS 74049）",
+  "why": "Love 第四張專輯，也是 Arthur Lee 換掉整個班底之後、樂團在 Elektra 的最後一張。依 MB 藝人 browse（release-group?artist=34ec9a8d…&limit=100&offset= 分頁取完，共 41 個 release-group）濾出的正規盤順序：Love(1966)、Da Capo(1966)、Forever Changes(1967)、Four Sail(1969)、Out Here(1969)、False Start(1970)、Reel to Real(1974)。實掃 seed_cards.json 全 14,424 列，池中有《Love》(1966)、《Da Capo》(1966)、《Forever Changes》(1967，頂點卡 hall) 三張，全部停在 1967 年——1969 年之後這位藝人在池中是空的，這張是那一段的第一張。MB 轄下 4 個 release：1969 美國 Elektra EKS 74049 原盤、2002 XE Elektra 8122 73640-2、2004 Sundazed LP 5103 黑膠、2019-07-16 Elektra／Rhino RCV1 73640 復刻。",
+  "risk": "**掛名「Love」是本批字串比對雜訊最高的一個**：MB 的 artist?query=Love 第一筆回的是日本的同名團（《全部、内緒。》2021），正確的 1960 年代洛杉磯團要靠 disambiguation「folk-rock/psychedelic band」與 MBID 34ec9a8d-c65b-48fd-bcdd-aad2f72fdb47 鎖定；Apple us 用「Love Four Sail」搜出來的第三筆起全是 John Williams、André Rieu 這類無關條目。配對必須連盤名一起鎖。Apple 兩筆：393788917《Four Sail》（10 軌，1969-09-01）與 268006365《Four Sail (Bonus Track Version)》（13 軌，1969-08-01），**取 10 軌那一筆**，13 軌是加曲版（第 140 條）。MB 的 first-release-date 只有年份（1969），行文不得斷言確切發行日。池中三張 Love 的掛名字串與本卡一致、盤名不撞。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group beec3856-b239-3c7f-8eb4-838204410340。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Four Sail」、artist-credit「Love」、first-release-date 1969（僅到年）、primary-type Album、secondary-types 空、轄下 4 個 release（US ×3、XE，全 Official；原盤為 1969 US Elektra EKS 74049）。藝人 MBID 34ec9a8d-c65b-48fd-bcdd-aad2f72fdb47（disambiguation「folk-rock/psychedelic band」，US），名下 41 個 release-group（分頁取完）。刻意不釘：6502790c-8d9e-3f68-82e6-8a451bf983a8《Out Here》（1969，同年的 Blue Thumb 雙碟，與本張同年、是最容易配錯的一筆）、bff1f06e-d354-38f9-aae2-aa52084d0d5e《False Start》(1970)、33c45cc0-0552-4b43-a66a-e6a6097e0a20《Revisited》（1970，Album/Compilation）、5b12f01c-c6d8-38dc-a8f4-764210ef35c8《Studio/Live》(1982)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Arthur Lee & Love",
+  "reissuedBy": "Sundazed Music（2004）／Rhino（2019）",
+  "g": "b"
+ }
+]

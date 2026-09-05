@@ -89,10 +89,23 @@ const OST = ['us', 'gb', 'it', 'fr', 'de', 'jp', 'ru', 'pl', 'es', 'ca', 'au'];
 // **cn 零命中**（tw 51、hk 7、jp 2、us 1、sg 1）——那五張在 Apple 上仍是繁體、落在 tw。
 // **MB 的建檔語言不預測 Apple 的上架市場。** cn 移到最後，不刪（往後的中國搖滾線要用）。
 const TWN = ['tw', 'hk', 'sg', 'my', 'us', 'jp', 'gb', 'cn'];
+// c-93～c-102（2026-09-05，A 線目錄深度第二輪 ＋ 遊戲／動畫原聲）。
+// 這十批是**廣度線**：補的是已經在池裡的正典藝人，發行權絕大多數在英美，
+// 所以預設就是 USB／UKB，只有三批要改：
+// - 戰前藍調與爵士（c-95）：整編輯的發行權幾乎全在美國（Columbia／Yazoo／Document／Sony Legacy），
+//   但 Django 與 Bechet 的原廠目錄在法國、Ayler 的在丹麥／瑞典 → us 之後補 fr／dk／se。
+// - 世界音樂（c-99）：非洲、加勒比、中東、南亞、拉美各有本國市場，
+//   再發權則落在英美法（Analog Africa、Soundway、Strut、Ostinato、Sublime Frequencies）。
+// - 遊戲／動畫原聲（c-101／c-102）：**jp 排第一**，日本原聲的 Apple 覆蓋率在 jp 明顯高於 us；
+//   西方獨立遊戲（Undertale、Celeste、Hades、Minecraft）則落在 us，所以 jp→us 兩強並列。
+const BLU = ['us', 'gb', 'fr', 'dk', 'se', 'de', 'nl', 'jp', 'ca', 'au'];
+const WLD = ['us', 'gb', 'fr', 'ng', 'za', 'ci', 'sn', 'jm', 'eg', 'in', 'cu', 'mx', 'co', 'br', 'de', 'ca'];
+const GAME = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
   c87: JPN, c88: OST,
-  c89: TWN, c90: TWN, c91: TWN, c92: TWN };
+  c89: TWN, c90: TWN, c91: TWN, c92: TWN,
+  c93: UKB, c94: USB, c95: BLU, c96: USB, c97: UKB, c98: USB, c99: WLD, c100: UKB, c101: GAME, c102: GAME };
 
 const cards = [];
 for (const b of BATCHES)
@@ -113,7 +126,10 @@ for (const b of BATCHES)
       : b.startsWith('c64') ? INDOCH
       : b.startsWith('c65') ? ELEC
       : b.startsWith('c66') ? INDIA
-      : LINE_FRONTS[b.slice(0, 3)] || GEN });
+      // 2026-09-05：原本寫死 `b.slice(0, 3)`，**批號進到三位數（c-100 起）就會被截成 `c10`**，
+      // 十批裡有三批（c-100／c-101／c-102）會一起掉進同一個不存在的鍵、靜默退回 GEN。
+      // 改成抓開頭的 `c` 加全部數字。
+      : LINE_FRONTS[(String(b).match(/^c\d+/) || [])[0]] || GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。

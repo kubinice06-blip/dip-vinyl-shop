@@ -1,0 +1,390 @@
+[
+ {
+  "artist": "Joy Division",
+  "album": "Substance",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Factory／London Records（MB 轄下 22 個 release，1988 CA 盤 PolyGram 834 586-2）",
+  "why": "Factory 在 1988 年把 Joy Division 散在單曲與 EP 上、從未收進兩張正規專輯的錄音編成的單張輯，〈Transmission〉〈Love Will Tear Us Apart〉〈Atmosphere〉〈Digital〉都在這裡。實掃 seed_cards.json 全 14,424 列，池中 Joy Division 只有《Unknown Pleasures》（頂點 hall）與《Closer》兩張，這兩張都不含上述曲目——所以本張補的是「第一張該有的」缺口，不是挖冷門。MB release-group dcb06128 的 primary-type 是 Album、secondary-types 含 Compilation，依 §5.6 明文照一般 Album 寫、不填例外欄位。轄下 22 個 release 橫跨 GB／DE／US／CA／FR／AU／JP／ZA／PL／BR 與 XE／XW，其中 20 筆 Official，1988 年之後持續在版。",
+  "risk": "Apple GB 的條目名為「Substance 1977-1980」（collectionId 996111401、notExplicit、店面 gb），與卡片盤名《Substance》長度不等，屬裁定第 152 條「副標被串進盤名」的形狀，下游封面與試聽的標題比對要放寬。另有 New Order《Substance》(1987) 同名不同藝人，去重必須 artist+album 成對比，不可只比盤名。MB 另有一筆 BR Stiletto 498.004 未填日期的 release。",
+  "mbNote": "釘 release-group dcb06128-02ea-3885-a097-5d382402d17c。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Substance」、artist-credit「Joy Division」、first-release-date 1988-06、primary-type Album、secondary-types [Compilation]、轄下 22 個 release（GB3／DE3／US2／XE3／CA1／FR1／AU1／JP2／ZA1／PL1／XW2／BR1／未填1，Official 20）。刻意不釘：b10a88c5-7a3f-4083-a3db-efbc7607fad0《Form and Substance – The Dark Side》（1990 合輯，盤名含 Substance 的假陽性）、e42f1c96-0803-45db-afc2-45dc4bffba53《Form and Substance: The Bright Side》（1990 Live，同上）。藝人 MBID 9a58fda3-f4ed-4080-a3a5-f457aac9fcdd，名下 123 個 release-group（用 release-group?artist=…&limit=100&offset= 分頁全列，非 25 筆上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Substance 1977-1980；Substance 1977–1980",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Joy Division",
+  "album": "Still",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Factory（GB 原盤 FACT 40）",
+  "why": "Ian Curtis 過世後 Factory 在 1981 年發的雙 LP：第一張是未收錄的錄音室曲目，第二張是 1980-05-02 伯明罕高地學院最後一場演出的實況。MB release-group 532ffe12 記 first-release-date 1981-10-08、GB 原盤編號 Factory FACT 40，與《Unknown Pleasures》(FACT 10)、《Closer》(FACT 25) 同一組編號序。池中 Joy Division 現有兩張（《Unknown Pleasures》頂點 hall、《Closer》），Factory 時期的第三個正式品項就是這張；它與《Substance》一起把樂團在 Factory 名下的四個 FACT 編號補齊。primary-type Album、secondary-types 含 Compilation，依 §5.6 照一般 Album 寫。",
+  "risk": "Apple GB 的條目名為「Still (Collector's Edition)」（collectionId 275968300、notExplicit、店面 gb、releaseDate 1981-10-08 與 MB 一致），版本後綴要在標題比對時剝掉。盤名《Still》只有五個字母，是裁定第 162 條「盤名太短會被更長的別碟包住」的高風險形狀，`fix-rgmbid` 若掃到含 Still 的長標題別碟不得替換。MB 另有一筆 XE London Records 520017-2 的 release status 為 null。",
+  "mbNote": "釘 release-group 532ffe12-0f7a-3340-bb89-b35a4f7c4cb5。回問確認：title「Still」、artist-credit「Joy Division」、first-release-date 1981-10-08、primary-type Album、secondary-types [Compilation]、轄下 19 個 release（GB5／XE4／JP2／US2／IT1／CA1／FR1／DE1／XW1／未填1，Official 18、null 1），最早一筆為 1981 GB Factory FACT 40。刻意不釘：ebb979fa-d49c-35c4-b93b-4b5422543c98《The Complete BBC Recordings》(2000，Compilation+Live)、bde48351-e3b8-351e-8b8c-f8da608c77f0《Les Bains Douches 18 December 1979》(2001，Live)——兩筆都是現場錄音輯，與本張第二片的現場性質相近但不是同一張碟。藝人 MBID 9a58fda3-f4ed-4080-a3a5-f457aac9fcdd。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Still (Collector's Edition)；Joy Division Still",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Devo",
+  "album": "Duty Now for the Future",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Warner Bros. Records（US 原盤 BSK 3337）",
+  "why": "Devo 第二張正規專輯，1979 年由 Warner Bros. 發行、編號 BSK 3337，接在 Brian Eno 製作的首張《Q: Are We Not Men? A: We Are Devo!》(BSK 3239) 之後、《Freedom of Choice》(BSK 3435) 之前。實掃 seed_cards.json 全 14,424 列，池中 Devo 只有首張與《Freedom of Choice》兩張，中間這一張正好是缺口——Warner 三張連號的中間一張缺席，等於 Devo 1978–1980 這條線在池裡是斷的。MB release-group ae44cba8 轄下 10 個 release 全部 Official（US7／JP2／XW1）。",
+  "risk": "Apple US collectionId 335252841（notExplicit、店面 us、releaseDate 1979-07-01），MB 記 1979-06-07，差一個月，依裁定第 77 條 Apple 的 releaseDate 只能當訊號不能當版本門檻。掛名池中作「Devo」、MB 實體作「DEVO」（全大寫），沿用池中既有形態不製造新分裂，DEVO 進 queryAlias。MB 另有 995db49b《Duty Now for the Future / New Traditionalists》1994 兩片裝合輯，是本張最像的假陽性。",
+  "mbNote": "釘 release-group ae44cba8-7d73-3814-9dd4-fc30e1b6fb9c。回問確認：title「Duty Now for the Future」、artist-credit「DEVO」、first-release-date 1979-06-07、primary-type Album、secondary-types 空、轄下 10 個 release（US7／JP2／XW1，全部 Official），US 原盤 Warner Bros. Records BSK 3337。刻意不釘：995db49b-77cd-3a06-aa67-bdb4636711bc《Duty Now for the Future / New Traditionalists》（1994-05-10，Album+Compilation，兩張專輯合成一片的再發套裝）。藝人 MBID d2db1078-c170-4e22-b261-14f3ad60a690，名下 123 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DEVO；Duty Now For The Future",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Devo",
+  "album": "New Traditionalists",
+  "year": 1981,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Warner Bros. Records（US 原盤 BSK 3595）",
+  "why": "Devo 第四張正規專輯，1981 年 Warner Bros. BSK 3595，收錄〈Through Being Cool〉〈Beautiful World〉。池中 Devo 現有兩張（1978 首張、1980《Freedom of Choice》），這張與《Duty Now for the Future》一起把 Warner 時期 1979–1981 的三張連號補齊；MB 的 US 原盤附一張 EP-3595 的贈品單曲，是當年 LP 的原始配置。MB release-group 04103c21 轄下 8 個 release 全部 Official（US5／JP2／XW1）。",
+  "risk": "Apple US collectionId 335252849（notExplicit、店面 us、releaseDate 1981-08-26），MB 記 1981-08，一致。MB 另建有一筆同名 EP（fafc3dea，1981），與本張的 Album release-group 是同名雙胞胎，型別不同——依裁定第 162 條第 2 點，不得以 EP 版取代本張的釘位。掛名同前一張：池中「Devo」、MB 實體「DEVO」。",
+  "mbNote": "釘 release-group 04103c21-91d1-3172-95e2-b80544e238b3。回問確認：title「New Traditionalists」、artist-credit「DEVO」、first-release-date 1981-08、primary-type Album、secondary-types 空、轄下 8 個 release（US5／JP2／XW1，全部 Official），US 原盤 Warner Bros. Records BSK 3595（另掛 EP-3595 贈品）。刻意不釘：fafc3dea-9aa3-4732-8e4f-98166186b07a《New Traditionalists》（1981，primary-type EP，同名不同型別）、995db49b-77cd-3a06-aa67-bdb4636711bc《Duty Now for the Future / New Traditionalists》（1994 兩張合一的再發）。藝人 MBID d2db1078-c170-4e22-b261-14f3ad60a690。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DEVO；New Traditionalists",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Devo",
+  "album": "Oh, No! It's Devo",
+  "year": 1982,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Warner Bros. Records（US 原盤 23741-1）",
+  "why": "Devo 第五張正規專輯，1982 年 Warner Bros. 23741-1，由 Roy Thomas Baker 製作。池中 Devo 兩張都落在 1978–1980，Warner 時期後段（1981《New Traditionalists》、1982 本張）在池裡完全缺席；這張是樂團從《Freedom of Choice》的排行成績轉向合成器編制之後、仍在大廠體系內的最後一組正規發行之一。MB release-group d81cf3ca 轄下 5 個 release 全部 Official（US2／JP2／XE1），1995 年 Infinite Zero（Rick Rubin 與 Henry Rollins 的復刻廠牌）再發過 9 43024-2。",
+  "risk": "盤名撇號有兩種寫法：MB 的 US 原盤 release 作「Oh, No! It’s DEVO」（彎撇號）、XE 與 JP 盤作「Oh, No! It's DEVO」（直撇號），Apple US 作「Oh, No! It's Devo」（collectionId 335252990、notExplicit、店面 us、releaseDate 1982-10-21）。卡片取 Apple 與池中掛名一致的 ASCII 直撇號＋「Devo」，兩種大小寫與兩種撇號全部進 queryAlias。Apple 的 1982-10-21 與 MB 的 1982-11 差一個月。MB 另有兩筆兩張合一的再發合輯，見 mbNote。",
+  "mbNote": "釘 release-group d81cf3ca-b402-32c1-9add-134a6f5a5e94。回問確認：title「Oh, No! It’s DEVO」、artist-credit「DEVO」、first-release-date 1982-11、primary-type Album、secondary-types 空、轄下 5 個 release（US2／JP2／XE1，全部 Official），US 原盤 Warner Bros. Records 23741-1。刻意不釘：83565fc8-9cbf-4a3d-ac98-7aeb1d8086a5《Q: Are We Not Men? A: We Are Devo! / Oh, No! It’s DEVO》（2011 兩張合一合輯）、9def0fb1-8563-3998-815d-d461ed2421c1《Oh No It’s Devo / Freedom of Choice》（1993-05-10 兩張合一合輯）——兩筆盤名都包含本張標題，是子字串比對下最容易被誤釘的候選。藝人 MBID d2db1078-c170-4e22-b261-14f3ad60a690。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oh, No! It’s DEVO；Oh No It's Devo；Oh, No! It's DEVO",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Pere Ubu",
+  "album": "New Picnic Time",
+  "year": 1979,
+  "genres": [
+   "rock"
+  ],
+  "label": "Chrysalis（GB 原盤 CHR 1248）",
+  "why": "Pere Ubu 第三張專輯，1979 年 Chrysalis CHR 1248，是樂團 1978–1980 那四張 Chrysalis／Rough Trade 連續作的第三張。池中 Pere Ubu 只有《The Modern Dance》（頂點 heresy）與《Dub Housing》兩張——都是 1978 年那兩張，1979 年之後就斷了。這張是原班底（Allen Ravenstine 在此之後離團前的最後一批錄音之一）的直接續作，補在既有兩張旁邊是把連續四張的第三格填上。MB release-group 2653f157 轄下 5 個 release 全 Official，1989 年 Rough Trade（ROUGH CD 6003）與 1999 年 Thirsty Ear（thi 57070-2）各再發一次。",
+  "risk": "Apple 有確切條目：collectionId 1667351979（店面 us 與 gb 皆命中、notExplicit、10 軌、releaseDate 記 1979-01-01），MB 記 1979-09-21，Apple 的日期只是年初預設值，依裁定第 77 條不當版本門檻。Pere Ubu 的 1980–90 年代再發分屬 Rough Trade／Cooking Vinyl／Thirsty Ear 三家，`reissuedBy` 不寫單一廠牌以免與裁定第 65 條衝突。",
+  "mbNote": "釘 release-group 2653f157-79b8-3c5a-98a6-540c4b1680c5。回問確認：title「New Picnic Time」、artist-credit「Pere Ubu」、first-release-date 1979-09-21、primary-type Album、secondary-types 空、轄下 5 個 release（GB1／IT1／US2／XW1，全部 Official），GB 原盤 Chrysalis CHR 1248、IT 同年 Base Record BASE 40142。無同名雙胞胎，MB 名下亦無盤名含「New Picnic Time」的其他 release-group。藝人 MBID 5a54b72e-bfb3-4ca6-944a-e17261399965，名下 84 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "New Picnic Time",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Pere Ubu",
+  "album": "The Art of Walking",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Rough Trade（GB 原盤 ROUGH 14）",
+  "why": "Pere Ubu 第四張專輯，1980 年 Rough Trade ROUGH 14（US 同年 ROUGH US 4），是樂團離開 Chrysalis、轉進 Rough Trade 之後的第一張。池中兩張 Pere Ubu 都停在 1978 年，Rough Trade 時期（1980《The Art of Walking》、1982《Song of the Bailing Man》）整段缺席。MB release-group d39806ba 轄下 6 個 release 全部 Official，1989 年 Rough Trade CD 版（ROUGH CD 14）與 1999 年 Thirsty Ear（THI57079.2）各再發一次。",
+  "risk": "Apple US collectionId 1667671491（notExplicit、店面 us、releaseDate 記 1980-01-01），MB 記 1980-07-04；Apple 是年初預設值，不當版本門檻（裁定第 77 條）。本張在 1980 年曾以兩種曲序流通（首版與後續版本更換過部分曲目），`why` 與下游行文不得斷言單一曲目表，需以實際釘住的 release 為準。",
+  "mbNote": "釘 release-group d39806ba-f7ce-3e03-bc54-361d86317dd8。回問確認：title「The Art of Walking」、artist-credit「Pere Ubu」、first-release-date 1980-07-04、primary-type Album、secondary-types 空、轄下 6 個 release（GB2／US2／XE1／XW1，全部 Official），GB 原盤 Rough Trade ROUGH 14、US 原盤 ROUGH US 4。MB 名下無同名或含本盤名的其他 release-group。藝人 MBID 5a54b72e-bfb3-4ca6-944a-e17261399965。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Art of Walking",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Pere Ubu",
+  "album": "Song of the Bailing Man",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Rough Trade（GB 原盤 ROUGH 33）",
+  "why": "Pere Ubu 第五張專輯，1982 年 Rough Trade ROUGH 33，是樂團第一階段（1975–1982）的最後一張，之後解散到 1987 年才以《The Tenement Year》重組。池中 Pere Ubu 只有 1978 年那兩張，這張與《New Picnic Time》《The Art of Walking》一起把第一階段的五張正規專輯補完——收這三張的判準是「先確認第一階段該有的在不在」，而不是往 1988 年之後的重組期挖。MB release-group 0fc921c8 轄下 5 個 release 全 Official，1989 年 Rough Trade CD（ROUGH CD 33）、1999 年 Cooking Vinyl（COOK CD 158）與 Thirsty Ear（THI57080.2）再發。",
+  "risk": "Apple US collectionId 1677410397（notExplicit、店面 us、releaseDate 1982-06-18），MB 只記到年份 1982，兩者不衝突。盤名長且獨特，撞卡與誤配風險低。1999 年英美兩地由不同廠牌（Cooking Vinyl／Thirsty Ear）同時再發，`reissuedBy` 留空以免依裁定第 65 條指到單一版本。",
+  "mbNote": "釘 release-group 0fc921c8-0c27-3fef-b36d-251c4e2b7b11。回問確認：title「Song of the Bailing Man」、artist-credit「Pere Ubu」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 5 個 release（GB3／US1／XW1，全部 Official），GB 原盤 Rough Trade ROUGH 33。MB 名下無同名或含本盤名的其他 release-group。藝人 MBID 5a54b72e-bfb3-4ca6-944a-e17261399965。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Song of the Bailing Man",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Suicide",
+  "album": "A Way of Life",
+  "year": 1988,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Chapter 22（GB 原盤 CHAP CD 35）／Wax Trax! Records（US 1989 WAX 7072）",
+  "why": "Suicide 第三張專輯，1988 年由 Chapter 22 在英國發行（CHAP CD 35）、隔年 Wax Trax! 在美國發行（WAX 7072），製作人是 Ric Ocasek——與 1980 年第二張同一位製作人。實掃 seed_cards.json，池中 Suicide 有兩張：1977 年首張（頂點 hall）與 1980 年第二張（池中盤名作《Suicide: Alan Vega and Martin Rev》）。兩人此後只再錄過三張，這張是其中流通最廣、也是唯一延續 Ocasek 製作線的一張。MB release-group 3979465e 轄下 7 個 release 全部 Official（GB3／US3／XW1），2005 年 Mute（9278-2）再發。",
+  "risk": "Apple 條目名帶版本後綴：collectionId 1435782281「A Way of Life (2005 - Remaster)」（notExplicit、店面 us 與 gb 皆命中、9 軌、releaseDate 1988-01-01）；另有 1684448551「A Way of Life (35th Anniversary Edition) [2023 Remaster]」13 軌，兩者曲數不同，下游取 ready 試聽時要挑 9 軌那一版才對應原盤。池中第二張的盤名《Suicide: Alan Vega and Martin Rev》與 MB 的《Suicide (The Second Album)》是同一張碟的兩種寫法，本批不重收。",
+  "mbNote": "釘 release-group 3979465e-cea8-346a-bdb5-1dc33312f350。回問確認：title「A Way of Life」、artist-credit「Suicide」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 7 個 release（GB3／US3／XW1，全部 Official），GB 原盤 Chapter 22 CHAP CD 35、US 1989 Wax Trax! WAX 7072、2005 Mute 9278-2。刻意不釘：a9069ea4-f95f-3ac2-a353-59346a98e172《Suicide (The Second Album)》（1980，池中已有，卡片盤名作《Suicide: Alan Vega and Martin Rev》）、702d4a53-9f00-3f57-a723-e5e267518454《Suicide》（1977，池中已有的頂點 hall 卡）。藝人 MBID 7a0f02e0-0ab8-4a62-9e14-c6925cfaed07，名下 24 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "A Way of Life (2005 - Remaster)；Alan Vega Martin Rev",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The B-52's",
+  "album": "Wild Planet",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Warner Bros. Records（US 原盤 BSK 3471）／Island（DE 202 587）",
+  "why": "The B-52's 第二張專輯，1980 年 Warner Bros. BSK 3471（歐洲由 Island 發行），收錄〈Private Idaho〉〈Party Out of Bounds〉。實掃 seed_cards.json，池中這個團只有 1979 年的同名首張一張——樂團 1979–1989 的整段大廠時期只留下了起點。這張是首張之後、同一組編制與同一家廠牌的直接續作，是「第一張該有的」順位第一。MB release-group 7c9f7229 轄下 13 個 release（US8／DE3／GB1／XE1），12 筆 Official。",
+  "risk": "掛名有三種寫法：池中作「The B-52's」、MB 實體與 release title 作「The B‐52s」（U+2010 連字號、無撇號）、Apple US 作「The B-52's」。卡片沿用池中與 Apple 一致的 ASCII 寫法，MB 的 U+2010 形式不入卡片欄位（會踩 chk-prop 的非 ASCII 連字號反模式），只寫進本欄與 queryAlias。Apple US collectionId 983119568（notExplicit、店面 us、releaseDate 1980-09-01），MB 記 1980-08-27。MB 另有 88265d55《Wild Planet: 2007 Remix EP》與 ac37276d《The B‐52’s / Wild Planet》兩張合一合輯。",
+  "mbNote": "釘 release-group 7c9f7229-7f75-371d-8165-e1d57a81155c。回問確認：title「Wild Planet」、artist-credit「The B‐52s」、first-release-date 1980-08-27、primary-type Album、secondary-types 空、轄下 13 個 release（US8／DE3／GB1／XE1，Official 12、未填 1），US 原盤 Warner Bros. Records BSK 3471、DE Island 202 587。刻意不釘：88265d55-1dcb-4828-8093-851b4a580a01《Wild Planet: 2007 Remix EP》（2007，EP+Remix）、ac37276d-7621-4389-82b4-e06f7b3d314c《The B‐52’s / Wild Planet》（兩張合一的再發合輯，盤名同時含首張與本張）。藝人 MBID 127f591a-7e27-4435-92db-0780f219f3a1，名下 79 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The B‐52s；The B-52s；B-52's Wild Planet",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The B-52's",
+  "album": "Whammy!",
+  "year": 1983,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Warner Bros. Records（US 9 23819-2）／Island（GB ICT 9759、DE 205 483-320）",
+  "why": "The B-52's 第三張正規專輯，1983 年由 Warner Bros. 在美國、Island 在英德發行，是吉他手 Ricky Wilson 生前參與的最後一張完整專輯（他於 1985 年過世，1986 年《Bouncing Off the Satellites》才是遺作）。池中只有 1979 年同名首張，1980–1989 這十年一張都沒有；本張與《Wild Planet》《Cosmic Thing》三張一起，把樂團最常被引用的三個時期各補一張。MB release-group dd870496 轄下 13 個 release 全部 Official，國別散在 DE／US／GB／AR／AD／AT。",
+  "risk": "Apple US collectionId 983119846（notExplicit、店面 us、releaseDate 1983-04-01），MB 記 1983-04，一致。盤名帶驚嘆號《Whammy!》，多數服務會把標點正規化掉，但與 MB 另一筆 a2bc763c《Whammy! 2005 Remix EP》只差後綴，是子字串比對下的假陽性來源。掛名寫法問題同《Wild Planet》一條。",
+  "mbNote": "釘 release-group dd870496-4a3b-3c0c-9345-1b1fc49e70cf。回問確認：title「Whammy!」、artist-credit「The B‐52s」、first-release-date 1983-04、primary-type Album、secondary-types 空、轄下 13 個 release（DE2／US3／GB2／AR3／AD2／AT1，全部 Official），US Warner Bros. 9 23819-2、GB Island ICT 9759。刻意不釘：a2bc763c-ed93-421e-8698-474262e172be《Whammy! 2005 Remix EP》（2005，EP+Remix）。藝人 MBID 127f591a-7e27-4435-92db-0780f219f3a1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The B‐52s；The B-52s；Whammy",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The B-52's",
+  "album": "Cosmic Thing",
+  "year": 1989,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Reprise Records（US W2 25854、XE WX 283）",
+  "why": "The B-52's 第五張正規專輯，1989 年 Reprise 發行，收錄〈Love Shack〉〈Roam〉，是樂團在 Ricky Wilson 過世後重組、也是商業成績最高的一張。池中只有 1979 年同名首張，這張與《Wild Planet》《Whammy!》三張補進去之後，樂團從 1979 到 1989 的四個主要品項在池中才連得起來。MB release-group 1b36a363 轄下 20 個 release（US10／XE3／CA2／AU1／FR1／XW1／未填2），19 筆 Official，是本批 B-52's 三張裡流通最廣的一張。",
+  "risk": "Apple 命中的是擴充版：collectionId 1464527564「Cosmic Thing (30th Anniversary Expanded Edition)」（notExplicit、店面 us、releaseDate 1989-06-27），MB 記 1989-06-06；擴充版曲數多於原盤，下游若要取原盤試聽需另找非 Expanded 的條目，或在備註寫明用的是 30 週年版。MB 另有 41403803《The B‐52’s / Cosmic Thing》1997 兩張合一合輯。掛名寫法問題同前兩條。",
+  "mbNote": "釘 release-group 1b36a363-eec6-35ba-b0ed-34a1f2f2cd82。回問確認：title「Cosmic Thing」、artist-credit「The B‐52s」、first-release-date 1989-06-06、primary-type Album、secondary-types 空、轄下 20 個 release（US10／XE3／CA2／AU1／FR1／XW1／未填2，Official 19），US Reprise W2 25854、XE Reprise WX 283。刻意不釘：41403803-d532-4274-9878-d026de4c74ff《The B‐52’s / Cosmic Thing》（1997，兩張合一的再發合輯）。藝人 MBID 127f591a-7e27-4435-92db-0780f219f3a1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The B‐52s；The B-52s；Cosmic Thing (30th Anniversary Expanded Edition)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Get Happy!!",
+  "year": 1980,
+  "genres": [
+   "rock",
+   "soul"
+  ],
+  "label": "F-Beat（GB 原盤 XXLP1）／Columbia（US JC 36347）",
+  "why": "Elvis Costello 與 The Attractions 的第四張專輯，1980 年 F-Beat XXLP1（美國 Columbia JC 36347），是他離開 Radar、隨 Jake Riviera 轉進自營 F-Beat 之後的第一張。實掃 seed_cards.json，池中 Costello 有三張、全部是頂點 hall 卡：《My Aim Is True》《This Year's Model》掛「Elvis Costello」、《Armed Forces》掛「Elvis Costello and The Attractions」。三張都落在 1977–1979，1980 年之後整段缺席——本批補的五張全部在 1980–1986 這一段，直接接在《Armed Forces》後面。MB release-group 768857a3 轄下 12 個 release（US7／GB2／JP1／XE1／未填1），11 筆 Official。",
+  "risk": "掛名沿用池中既有形態「Elvis Costello and The Attractions」（《Armed Forces》那筆的寫法），MB artist-credit 與 Apple 都作「Elvis Costello & The Attractions」，兩種寫法都要進 queryAlias 才不會漏比。Apple GB collectionId 1442996908（notExplicit、店面 gb、releaseDate 1980-02-15，與 MB 完全一致）。盤名帶兩個驚嘆號，正規化後與其他 Costello 盤無衝突。",
+  "mbNote": "釘 release-group 768857a3-99bf-36c2-b39e-9e16be5673f1。回問確認：title「Get Happy!!」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1980-02-15、primary-type Album、secondary-types 空、轄下 12 個 release（GB2／US7／JP1／XE1／未填1，Official 11、Promotion 1），GB 原盤 F-Beat XXLP1、US Columbia JC 36347、1986 Imp Records FIEND CD 24。MB 名下無同名或含本盤名的其他 release-group。Costello 的三個 MB 實體：Elvis Costello 8a338e06-d182-46f2-bd16-30a09bc840ba、Elvis Costello & The Attractions 0ffb6573-a98e-412e-aa01-0a580e9d8b06、Elvis Costello & The Imposters a3e6fa6e-32de-4152-ae38-81291597a10c，三者以 release-group?artist=…&limit=100&offset= 分頁合計 246 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elvis Costello & The Attractions；Elvis Costello；Get Happy",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Trust",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "F-Beat（GB 原盤 XXLP 11）／Columbia（US JC 37051）",
+  "why": "Elvis Costello 與 The Attractions 的第五張專輯，1981 年 F-Beat XXLP 11（美國 Columbia JC 37051），排在《Get Happy!!》與同年稍晚的鄉村翻唱輯《Almost Blue》之間，是原班底四人編制連續作的最後一張。池中三張 Costello 全在 1977–1979，1980 年以後零張；本張補的是 F-Beat 時期兩張正規作的第二張。MB release-group 8b9cb468 轄下 16 個 release 全部 Official（GB4／US7／JP2／CA1／AF1／DZ1）。",
+  "risk": "盤名《Trust》只有五個字母，是裁定第 162 條「短盤名會被更長的別碟包住」的高風險形狀；同名不同藝人的碟極多（去重必須 artist+album 成對比）。Apple GB collectionId 1443264745（notExplicit、店面 gb、releaseDate 1981-01-23，與 MB 完全一致）。掛名兩種寫法同《Get Happy!!》一條。",
+  "mbNote": "釘 release-group 8b9cb468-30a6-39f3-bde9-8670d600ed9a。回問確認：title「Trust」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1981-01-23、primary-type Album、secondary-types 空、轄下 16 個 release（GB4／US7／JP2／CA1／AF1／DZ1，全部 Official），GB 原盤 F-Beat XXLP 11、US Columbia JC 37051、1986 Demon Records IMP FIEND CD 30。MB 名下無其他標題為 Trust 的 Costello release-group。藝人實體同前條三個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elvis Costello & The Attractions；Elvis Costello；Trust",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Imperial Bedroom",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "F-Beat（GB 原盤 XXLP17）／Columbia（US FC 38157）",
+  "why": "Elvis Costello 與 The Attractions 的第七張專輯，1982 年 F-Beat XXLP17（美國 Columbia FC 38157），由 Geoff Emerick 錄音製作。池中 Costello 三張都停在 1979 年之前；這張在他的目錄裡是 1977–1979 那三張之後最常被引用的一張，補在池中三張旁邊等於把 1977–1982 的主線連起來。MB release-group 8c7bf795 轄下 15 個 release 全部 Official（US10／GB4／JP1）。",
+  "risk": "Apple GB collectionId 1440836169（notExplicit、店面 gb、releaseDate 1982-07-02，與 MB 完全一致）。MB 名下另有 cd73ac81《A Conversation With Elvis Costello (in Which He Talks About the Tracks From His New Album 'Imperial Bedroom')》（1982-07，宣傳訪談盤，primary-type Album）——盤名整段包含本張標題，是子字串比對最容易誤釘的候選，且它是訪談唱片不是音樂唱片（裁定第 88 條同型）。掛名兩種寫法同前。",
+  "mbNote": "釘 release-group 8c7bf795-c1b7-3d84-8034-45fa568e1916。回問確認：title「Imperial Bedroom」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1982-07-02、primary-type Album、secondary-types 空、轄下 15 個 release（GB4／US10／JP1，全部 Official），GB 原盤 F-Beat XXLP17、US Columbia FC 38157／CK 38157。刻意不釘：cd73ac81-1ace-45e5-a60c-7cb64841e47f《A Conversation With Elvis Costello (in Which He Talks About the Tracks From His New Album 'Imperial Bedroom')》（1982-07 訪談宣傳盤）、2b0dc0fa-b299-4fd5-81e9-2397fd41b8d1《Selections From: Armed Forces – Imperial Bedroom – Mighty Like a Rose》（2002-10 合輯）。藝人實體同前條三個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elvis Costello & The Attractions；Elvis Costello；Imperial Bedroom",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elvis Costello",
+  "album": "King of America",
+  "year": 1986,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Columbia（US 原盤 FC 40173／CK 40173）／F-Beat（XE ZD70946）",
+  "why": "1986 年 2 月由 Columbia FC 40173 發行，製作人 T Bone Burnett，錄音班底是美國樂手（James Burton、Jerry Scheff、Ron Tutt 等）而非 The Attractions，因此原盤掛名作「The Costello Show」。池中 Costello 三張全在 1977–1979，1980 年代整段缺席；這張與同年 9 月的《Blood & Chocolate》是他 1986 年一年內發的兩張、方向相反的作品，兩張一起收才看得出那一年的取捨。MB release-group d15adcee 轄下 14 個 release 全部 Official（US6／XW3／XE2／GB2／未填1）。",
+  "risk": "掛名分歧最大的一張：MB artist-credit 作「The Costello Show feat. The Attractions and Confederates」、原盤封面作 The Costello Show、Apple 與所有串流一律掛「Elvis Costello」。依裁定第 11 條卡片取通行名「Elvis Costello」，credit 變體全部進 queryAlias 與本欄。Apple US collectionId 1443079344（notExplicit、店面 us、15 軌、releaseDate 1986-02-01，MB 記 1986-02-21）；同店面另有 1772345310「King Of America & Other Realms (Super Deluxe / 2024 Remaster)」59 軌，是 2024 年套裝，下游不得取它當本張試聽。",
+  "mbNote": "釘 release-group d15adcee-0754-3086-851b-da05d0f49f32。回問確認：title「King of America」、artist-credit「The Costello Show feat. The Attractions and Confederates」、first-release-date 1986-02-21、primary-type Album、secondary-types 空、轄下 14 個 release（US6／XW3／XE2／GB2／未填1，全部 Official），US 原盤 Columbia FC 40173、XE F-Beat ZD70946、1987 Imp Records IMP FIEND CD 78。刻意不釘：d811a8a1-939c-49b2-b22f-9468745b95ec《King of Americana》（2000，primary-type null，盤名只差三個字母的假陽性）。藝人實體同前條三個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Costello Show；Elvis Costello & The Attractions；King Of America & Other Realms",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Blood & Chocolate",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Columbia（US 原盤 FC 40518／CK 40518）／Imp Records（GB FIEND CD 80）",
+  "why": "1986 年 9 月發行，製作人 Nick Lowe——與 1977 年《My Aim Is True》同一位，也是 The Attractions 原編制在 1980 年代的最後一張錄音室專輯（樂團隨後解散，1994 年才短暫重組）。池中三張 Costello 都是 1977–1979 的 Nick Lowe 製作期作品，這張正好是那條線在九年後收尾的一張，補在它們旁邊有直接的對照關係。MB release-group cbcc8fdf 轄下 11 個 release 全部 Official（GB4／US5／XW1／XE1）。",
+  "risk": "盤名連接號兩種寫法：MB 與原盤封面作「Blood & Chocolate」，Apple US 作「Blood and Chocolate」（collectionId 1443093435、notExplicit、店面 us、11 軌、releaseDate 1986-01-01）。卡片取原盤的 & 形式，and 形式進 queryAlias，否則 Apple 的標題比對會落空。Apple 的 1986-01-01 是年初預設值，MB 記 1986-09-15。掛名兩種寫法同《Get Happy!!》一條。",
+  "mbNote": "釘 release-group cbcc8fdf-180f-36b9-8c0a-e653d78fea2e。回問確認：title「Blood & Chocolate」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1986-09-15、primary-type Album、secondary-types 空、轄下 11 個 release（GB4／US5／XW1／XE1，全部 Official），US 原盤 Columbia FC 40518、GB Imp Records FIEND CD 80、1995 Demon Records RCD 20282。MB 名下無同名或含本盤名的其他 release-group。藝人實體同前條三個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elvis Costello & The Attractions；Blood and Chocolate；Elvis Costello",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Jane’s Addiction",
+  "album": "Strays",
+  "year": 2003,
+  "genres": [
+   "rock"
+  ],
+  "label": "Capitol Records（US CDP 7243 5 90186 0 7）",
+  "why": "Jane's Addiction 1991 年解散、2001 年重組後的第一張錄音室專輯，2003 年 Capitol 發行，製作人 Bob Ezrin，是原主唱 Perry Farrell 與吉他手 Dave Navarro 重聚的唯一一張（貝斯換成 Chris Chaney）。實掃 seed_cards.json，池中這個團有三張、而且掛名分裂成兩種寫法：「Jane’s Addiction」（彎撇號）下的《Nothing's Shocking》《The Great Escape Artist》，以及「Jane's Addiction」（直撇號）下的《Ritual de lo Habitual》。四張錄音室專輯裡只有 2003 年這張不在池中——所以這是把該團正規目錄補齊的最後一格。MB release-group bccb3052 轄下 11 個 release（XE5／US3／CA1／JP1／未填1），10 筆 Official。",
+  "risk": "掛名池中已分裂成兩種撇號寫法，本張採 MB 實體與池中多數（2/3）一致的彎撇號「Jane’s Addiction」，直撇號寫法進 queryAlias；這一組屬 audits/pool-artist-name-splits.md 該記的既有分裂，本批不製造第三種。Apple US collectionId 716406320（notExplicit、店面 us、releaseDate 2003-01-01，MB 記 2003-07-21，Apple 是年初預設值）。MB 另有 6557b1cf《\"Strays\" Album Premiere》（2003-07-19，primary-type Broadcast）是電台首播盤。",
+  "mbNote": "釘 release-group bccb3052-3941-349e-85db-0ef6a38b2ed7。回問確認：title「Strays」、artist-credit「Jane’s Addiction」、first-release-date 2003-07-21、primary-type Album、secondary-types 空、轄下 11 個 release（XE5／US3／CA1／JP1／未填1，Official 10、Promotion 1），US Capitol Records CDP 7243 5 90186 0 7。刻意不釘：6557b1cf-6d4d-400c-960d-f190e55007b2《\"Strays\" Album Premiere》（2003-07-19，primary-type Broadcast，電台首播盤，盤名整段包含本張標題）。藝人 MBID e3434cc7-d348-491a-9dc8-325af3d9086d，名下 75 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jane's Addiction；Janes Addiction；Strays",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Damned",
+  "album": "The Black Album",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "Chiswick（GB 原盤 CWK 3015）／I.R.S. Records（US SP 70012）",
+  "why": "The Damned 第四張專輯，1980 年 10 月 Chiswick CWK 3015（美國 I.R.S. SP 70012），原始形態是雙 LP：前兩面錄音室新作、第三面〈Curtain Call〉單曲長篇、第四面 1980-06-16 Shepperton 現場。實掃 seed_cards.json，池中 The Damned 有三張——1977 年《Damned Damned Damned》、1979 年《Machine Gun Etiquette》、1986 年《Anything》，中間 1980–1985 這一段（本張與 1982《Strawberries》、1985《Phantasmagoria》）完全缺席。本張緊接《Machine Gun Etiquette》、同一組重組後的編制，是這段缺口裡最該先補的一張。MB release-group 2bfdbb62 轄下 8 個 release 全部 Official（GB7／US1）。",
+  "risk": "盤名《The Black Album》是搖滾史上多次被沿用的通稱（Metallica 1991 年同名輯的俗稱、Prince、Jay-Z 皆有同名品項），去重與外部查詢一律要 artist+album 成對比對，單獨用盤名搜會撈回一堆別人的碟。Apple GB collectionId 1621375607（notExplicit、店面 gb、releaseDate 1980-11-03，MB 記 1980-10）。原始雙 LP 與後續單片 CD 曲目不同（US I.R.S. 盤即為刪減版），下游行文不得斷言單一曲目數。",
+  "mbNote": "釘 release-group 2bfdbb62-b11e-390e-a515-cd6ab295de4a。回問確認：title「The Black Album」、artist-credit「The Damned」、first-release-date 1980-10、primary-type Album、secondary-types 空、轄下 8 個 release（GB7／US1，全部 Official），GB 原盤 Chiswick CWK 3015、US I.R.S. SP 70012、1982 Big Beat DAM 3、1986 Big Beat CDWIK 906。以 release-group?artist=…&limit=100&offset= 分頁掃過 The Damned 名下 137 個 release-group，無第二筆標題含「Black Album」者，無同名雙胞胎。藝人 MBID 77d21c13-846f-4f48-9546-873949eff6ae。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Damned Black Album",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Gang of Four",
+  "album": "Songs of the Free",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "EMI（GB 原盤 EMC 3412）／Warner Bros. Records（US 9 23683-1）",
+  "why": "Gang of Four 第三張專輯，1982 年 EMI EMC 3412（美國 Warner Bros. 9 23683-1），收錄〈I Love a Man in a Uniform〉；是貝斯手 Dave Allen 離團後、由 Sara Lee 接手的第一張，也是樂團從獨立體系全面進入 EMI 大廠發行的一張。實掃 seed_cards.json，池中 Gang of Four 有五張——《Entertainment!》《Solid Gold》與 1991 年之後的《Mall》《Content》《Happy Now》，等於前兩張之後直接跳到重組期，1982–1983 這兩張（本張與《Hard》）是斷掉的一節。MB release-group 1d97766f 轄下 7 個 release 全部 Official（US3／GB2／XE2）。",
+  "risk": "Apple GB collectionId 1028735292（notExplicit、店面 gb、releaseDate 1982-01-01，MB 只記到年份 1982，Apple 是年初預設值）。〈I Love a Man in a Uniform〉當年在英國因福克蘭戰爭遭電台限播，這屬可查證的事件但本欄不作斷言，留給研究層查證。1996 年 Infinite Zero（9 43067-2）再發，`reissuedBy` 留空以免依裁定第 65 條指到單一版本。",
+  "mbNote": "釘 release-group 1d97766f-47c0-3ad9-848a-fdbc4ad2e6b3。回問確認：title「Songs of the Free」、artist-credit「Gang of Four」、first-release-date 1982、primary-type Album、secondary-types 空、轄下 7 個 release（XE2／GB2／US3，全部 Official），GB 原盤 EMI EMC 3412、US Warner Bros. 9 23683-1、1996 Infinite Zero 9 43067-2。以分頁掃過 Gang of Four 名下 57 個 release-group，無第二筆標題含「Songs of the Free」者。藝人 MBID d8661c02-f423-4d72-8044-40ff05daf7a1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gang of Four Songs of the Free",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
