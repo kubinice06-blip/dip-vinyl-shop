@@ -1,0 +1,166 @@
+[
+ {
+  "key": "desc2:Roscoe Mitchell|Old / Quartet",
+  "artist": "Roscoe Mitchell",
+  "album": "Old / Quartet",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 07af4d38 的欄位：title《Old / Quartet》、artist-credit「Roscoe Mitchell」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/07af4d38-7cc3-3cfd-816d-1b02c96ddc94"
+   },
+   {
+    "f": "該 release-group 底下 1975 年的 US release 由 Nessa Records 發行、編號「N- 5」、載體標 12\" Vinyl、包裝 Cardboard/Paper Sleeve，4 軌：〈Old〉8:09、〈Quartet, Part 1〉19:40、〈Quartet, Part 2〉18:03、〈Solo〉5:34。",
+    "src": "https://musicbrainz.org/release/f6cdb913-ecbf-4ffc-860d-536f8bc7a735"
+   },
+   {
+    "f": "同一個 release-group 底下另有 1997 年的日本 release，由 Bomba Records 發行（編號 BOM 22049）、載體 CD、Jewel Case，曲目與曲長與 1975 年那筆逐軌相同。",
+    "src": "https://musicbrainz.org/release/586f185f-a248-4eea-aca7-785086a8a54d"
+   },
+   {
+    "f": "英文維基〈Old/Quartet〉開頭寫：這是 Roscoe Mitchell 的 Art Ensemble（後來成為 Art Ensemble of Chicago）1967 年錄的專輯，1975 年由 Nessa 發行，參與者為 Mitchell、Lester Bowie、Malachi Favors Maghostut 與 Phillip Wilson。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目的曲目表註明錄音日期：〈Old〉錄於 1967 年 5 月 18 日、〈Quartet〉錄於 1967 年 5 月 19 日、〈Solo〉錄於 1967 年 11 月 25 日；除註明者外全部由 Roscoe Mitchell 作曲。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Mitchell 演奏中音與高音薩克斯風、單簧管、長笛與打擊樂器；Lester Bowie 小號與粗管短號、Malachi Favors Maghostut 貝斯、Phillip Wilson 鼓，三人皆註明「Side Two track 2 除外」（即〈Solo〉一軌）。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Brian Olewnick 給四顆半星，評語為「雖然也許比《Congliptious》低一小階，它本身仍是一張美麗的專輯，在 Roscoe Mitchell 的作品目錄裡排名很高」。",
+    "src": "https://en.wikipedia.org/wiki/Old/Quartet"
+   },
+   {
+    "f": "英文維基〈Roscoe Mitchell〉開頭：Mitchell 生於 1940 年 8 月 3 日，是美國作曲家、爵士樂器演奏者與教育者；除了自己領銜的作品，他以共同創辦 Art Ensemble of Chicago 與 AACM（Association for the Advancement of Creative Musicians）著稱。",
+    "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell"
+   },
+   {
+    "f": "Apple Music 美國店面 Roscoe Mitchell 藝人頁（artistId 29756753）以 lookup 端點列出 48 張專輯，其中沒有《Old / Quartet》或《Old Quartet》；Roscoe Mitchell Quartet 藝人頁（305846932）只有《Live At \"A Space\" 1975》與《The Flow of Things》兩筆。",
+    "src": "https://itunes.apple.com/lookup?id=29756753&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "唱片封面印的是 1975 年，錄音室裡的日子是 1967 年 5 月的兩個下午",
+   "四人裡有三人在最後一軌缺席——那一軌的標題就叫〈Solo〉"
+  ],
+  "sound": "MB 的曲目表顯示這是四軌的一張碟：8:09 的〈Old〉之後，〈Quartet〉被切成 19:40 與 18:03 兩段佔滿一整面，收在 5:34 的〈Solo〉。維基的 Personnel 欄註明 Bowie、Favors、Wilson 三人都不在最後那一軌上。（本欄由 MB release f6cdb913 的曲長與維基 Personnel 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Old",
+   "Quartet, Part 1",
+   "Solo"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1975 與 MB release-group first-release-date 1975 一致（Nessa N-5 的發行年）。**錄音年是 1967**：英文維基〈Old/Quartet〉的曲目表註明〈Old〉1967-05-18、〈Quartet〉1967-05-19、〈Solo〉1967-11-25。兩者相差八年，**不得互寫**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1967 與出版年 1975 不得互寫。** 行文寫「1967 年錄的」可以，寫「1967 年發行」不行；寫「1975 年 Nessa 發行」可以，寫「1975 年錄的」不行。\n⚠ **擋下策展層兩處無來源主張**：\n（1）curatorWhy 寫「Nessa 1975 年把兩段錄音併成一張雙 LP：1967 年芝加哥的四重奏場次與 **1975 年的重聚錄音**」——**這一句與唯一找得到的直述來源相反**。英文維基〈Old/Quartet〉明列三個錄音日期全部落在 1967 年（5/18、5/19、11/25），沒有任何 1975 年的錄音。**「1975 年重聚錄音」不得入文。**\n（2）同句的「**雙 LP**」也擋。MB 的 1975 US release 只有一個 medium、載體標 12\" Vinyl、4 軌；日本 CD 版同樣 4 軌。**沒有來源支持雙 LP，不得寫。**\n（3）curatorWhy 的「是 AACM 第一代編制怎麼變成 Art Ensemble of Chicago 的直接紀錄」——維基只說這是「Roscoe Mitchell 的 Art Ensemble（後來成為 Art Ensemble of Chicago）」錄的，**可以寫「後來成為 Art Ensemble of Chicago 的那組人」，不得寫成因果式的「直接紀錄」**。\n**盤名斜線**：MB 的 RG 與兩筆 release 標題都是「Old / Quartet」（斜線兩側有空格），維基條目名是「Old/Quartet」（無空格）。兩種都指同一張，卡片取「Old / Quartet」沒問題。\n**試聽（本層覆核，維持 unavailable）**：探測層十個店面全部 `0→0`（`us gb fr dk se de nl jp ca au`），無一命中。依第 166 條改打藝人頁 lookup：`id=29756753&entity=album&limit=200&country=us` 回 48 張，**沒有本盤**；Roscoe Mitchell Quartet 頁（305846932）只有《Live At \"A Space\" 1975》(664917302) 與《The Flow of Things》(305846927) 兩筆，兩者都不是本盤（策展層已預判，本層確認）。**維持 unavailable，無異議。** Nessa 是芝加哥小廠牌，維基列出的 Nessa 目錄（Nonaah、L-R-G、Snurdy McGurdy 等）在 Apple 同樣查無。\n**互斥分派——本張獨占「AACM／Art Ensemble of Chicago 前身編制」這條線與 Nessa 廠牌。**\n**本張禁用**：任何「雙 LP」「兩段錄音併成一張」「1975 年重聚」的說法。"
+ },
+ {
+  "key": "desc2:Albert Ayler|My Name Is Albert Ayler",
+  "artist": "Albert Ayler",
+  "album": "My Name Is Albert Ayler",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a119e23e 的欄位：title《My Name Is Albert Ayler》、artist-credit「Albert Ayler」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 3 個 release（DK 1964、GB 1964、GB 1995）。",
+    "src": "https://musicbrainz.org/release-group/a119e23e-6007-3c8a-82f6-1654a0cacecd"
+   },
+   {
+    "f": "該 release-group 底下 1964 年的丹麥 release 由 Debut 發行（編號 DEB 140，同筆另掛 Fontana DEB-140），載體 12\" Vinyl、Cardboard/Paper Sleeve，6 軌：〈[introduction]〉1:16、〈Bye Bye Blackbird〉7:17、〈Billie's Bounce〉5:59、〈Summertime〉8:47、〈On Green Dolphin Street〉9:07、〈C.T.〉12:03。",
+    "src": "https://musicbrainz.org/release/6bbc7194-3729-490e-9b5b-635160252cb5"
+   },
+   {
+    "f": "英文維基〈My Name Is Albert Ayler〉開頭：這是薩克斯風手 Albert Ayler 1963 年在哥本哈根錄、首度由荷蘭的 Debut 廠牌發行的專輯；伴奏是 Niels Brosted（鋼琴）、Niels-Henning Ørsted Pedersen（貝斯）與 Ronnie Gardiner（鼓），開頭是 Ayler 的一段口白，之後是五首以標準曲為主的演奏。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目：〈C.T.〉是全碟唯一一首 Ayler 自己的曲子，題獻給幾個月前才與他見面同台的 Cecil Taylor；Ayler 原本希望與 Taylor 的樂團錄這張，因檔期衝突改與 Brosted、Pedersen、Gardiner 合作。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目：〈Bye Bye Blackbird〉是 Ayler 少數的高音薩克斯風錄音之一；Personnel 欄記 Ayler 在第 3–6 軌吹次中音、第 2 軌吹高音、第 1 軌是人聲。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目引貝斯手兼 Ayler 傳記作者 Jeff Schwartz：本張與**前一張《Something Different!!!!!》**有同樣的問題，例如臨時湊的樂手讓他只能吹標準曲，鋼琴手的在場「似乎讓 Ayler 沒辦法掙脫這些曲子去追自己的想像」；但 Schwartz 也指出，到這個時間點 Ayler 已經確立了「一種一致而獨特的音樂風格」。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Thom Jurek 給三顆星，說這是「一張奇怪的唱片，像是把一位獨奏者錯配到另一個樂團的錄音上」，並指節奏組「不管他怎麼吹都照直硬 bop 打」，但稱〈Summertime〉「美得不可思議」。",
+    "src": "https://en.wikipedia.org/wiki/My_Name_Is_Albert_Ayler"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 152606352：標題《My Name Is Albert Ayler》、掛名 Albert Ayler、releaseDate 1963-01-14、6 軌、collectionExplicitness **cleaned**、copyright「℗ 1996 1201 Music (Americas) LLC」；逐軌為〈Introduction〉1:16、〈Bye Bye Blackbird〉7:17、〈Billie's Bounce〉5:59、〈Summertime〉8:47、〈On Green Dolphin Street〉9:07、〈C.T.〉12:03。",
+    "src": "https://music.apple.com/us/album/152606352"
+   },
+   {
+    "f": "Apple Music 英國店面另有 collectionId 652749380：標題《Albert Ayler: My Name Is Albert Ayler》、releaseDate 1963-01-14、6 軌、collectionExplicitness **notExplicit**、copyright「℗ 2013 Universe」；逐軌為〈Introduction By Albert Ayler〉1:18、〈Bye, Bye, Blackbird〉7:19、〈Billie's Bounce〉5:58、〈Summertime〉8:45、〈On Green Dolphin Street〉9:06、〈C.t.〉11:58。",
+    "src": "https://music.apple.com/gb/album/652749380"
+   }
+  ],
+  "hookCandidates": [
+   "全碟只有一首是他自己寫的，標題是兩個字母，寫給幾個月前才認識的 Cecil Taylor",
+   "他想找的樂團檔期排不開，於是這張由三個在哥本哈根找得到的人伴奏"
+  ],
+  "sound": "六軌裡第一軌是 1:16 的口白，其餘五首依 MB 的曲長從 5:59 到 12:03；維基的 Personnel 欄記他只有第 2 軌〈Bye Bye Blackbird〉吹高音薩克斯風，其餘吹次中音。Allmusic 的 Thom Jurek 說節奏組「不管他怎麼吹都照直硬 bop 打」。（本欄由 MB release 6bbc7194 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Summertime",
+   "C.T.",
+   "Bye Bye Blackbird"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1964 與 MB release-group first-release-date 1964 一致。**錄音年是 1963**：英文維基寫「recorded in Copenhagen in 1963」，Apple 兩筆條目的 releaseDate 都填 1963-01-14（那是錄音日、不是發行日）。策展層 curatorRisk 已自記「錄音年 1963-10」，但**維基只寫 1963、沒有寫月份**——**「1963 年 10 月」這個月份在本層找不到直述來源，不得入文，只能寫 1963 年**。廠牌國別另有一處分歧：MB 把 1964 年首發那筆的國別記 DK（丹麥），維基說 Debut 是「Dutch」（荷蘭）廠牌；**兩說並列，不得單邊斷言**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1963 與出版年 1964 不得互寫。**\n⚠ **擋下策展層一處時序主張（本張最重要的一條）**：curatorWhy 寫「**這一張是他的首張錄音室專輯**」——**與來源相反，不得入文**。英文維基本條目引 Jeff Schwartz 明講本張「exhibits some of the same flaws found on **its predecessor, Something Different!!!!!**」，也就是本張之前還有一張。**「首張」「第一張錄音室專輯」「出道作」一律禁用。**\n⚠ **試聽陷阱已解（策展層預告的那個）**：探測層取 us / **152606352**，該筆 `collectionExplicitness=cleaned`、`cleanedOnly=true`，依 §6 淨化版屬不同版本。本層依第 166 條逐店面回查藝人頁：`id=28102&entity=album&limit=200&country=us` 的 20 張裡**沒有同名的 explicit 或 notExplicit 雙胞胎**（us 只有那一筆 cleaned）；**改打 gb 才找到**：`country=gb` 的藝人頁有 **652749380**《Albert Ayler: My Name Is Albert Ayler》、6 軌、**notExplicit**、℗ 2013 Universe。本層以 `lookup?id=652749380&country=gb&entity=song` 逐軌核對 MB 的 6 軌 Debut release：**曲名、曲序相同，曲長逐項差在 1–5 秒內**（第 1 軌兩邊都是口白、第 6 軌兩邊都是〈C.T.〉）。\n**本層裁定：試聽改判 ready，front 改 `gb`、collectionId 改 `652749380`；us / 152606352 因 cleaned 不採。** 兩筆的軌數與曲序完全一致，只差製作方與店面，**風險低、可逆（改的是卡單值不是卡池結構）**，依下放判準第 2 條直接定。⚠ **gb 那筆的盤名帶藝人名前綴「Albert Ayler: 」，鎖 collectionId、不要用字串比對。**\n**掛名**：MB 的 artist-credit 原文是「Albert Ayler」（不是 Trio 或 Quartet），與卡片掛名一致，無分歧。\n**互斥分派——本張獨占「哥本哈根／臨時節奏組／標準曲」與〈C.T.〉題獻 Cecil Taylor 這兩條線。** 同批另一張 Ayler（《Spirits Rejoice》）不得重述。\n**本張禁用**：Judson Hall、Donald Ayler、ESP-Disk、Gary Peacock（都是《Spirits Rejoice》的，見該卡）。"
+ },
+ {
+  "key": "desc2:Albert Ayler|Spirits Rejoice",
+  "artist": "Albert Ayler",
+  "album": "Spirits Rejoice",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 08842066 的欄位：title《Spirits Rejoice》、artist-credit「Albert Ayler」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 5 個 release（US 1965、DE 1993、IT 2006、US 2006、XW 2016-10-12）。",
+    "src": "https://musicbrainz.org/release-group/08842066-6bb8-3146-bf1c-fea470990daf"
+   },
+   {
+    "f": "該 release-group 底下 1965 年的 US release 由 ESP‐Disk' 發行（編號 ESP 1020）、載體 12\" Vinyl，5 軌：〈Spirits Rejoice〉11:31、〈Holy Family〉2:10、〈D.C.〉7:55、〈Angels〉5:24、〈Prophet〉5:25。",
+    "src": "https://musicbrainz.org/release/06bb1c0a-5bf1-49ed-8b15-8e35e72f9dc9"
+   },
+   {
+    "f": "英文維基〈Spirits Rejoice〉開頭：這是 Albert Ayler 1965 年在紐約錄、首度由 ESP-Disk 發行的**現場專輯**；錄音在 Judson Hall 進行，場地是專為錄音租下的、**現場沒有觀眾**。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目：這張是貝斯手 Gary Peacock 最後一次與 Ayler 同場；Personnel 欄記 Albert Ayler 次中音薩克斯風、Donald Ayler 小號（第 1–3 與 5 軌）、Charles Tyler 中音薩克斯風（第 1–3 與 5 軌）、Call Cobbs 大鍵琴（第 4 軌）、Henry Grimes 與 Gary Peacock 貝斯、Sunny Murray 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目引 ESP 創辦人 Bernard Stollman 自述：〈Holy Family〉是他在 Judson Hall 錄音當下要求 Ayler 錄一首短曲的產物，長度不到三分鐘；Stollman 說他事後懊悔違背了「由藝人單獨決定作品內容」的承諾，並發誓不再這麼做。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目引 Allmusic 的 Steve Huey 給四顆半星，稱它是「Ayler 最狂野、最吵的專輯之一」，並說「儘管表面混亂，《Spirits Rejoice》常常出乎意料地是預先安排好的」；All About Jazz 的 Mark Corroto 指出標題曲取材自〈馬賽曲〉。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "同一條目的 Legacy 段：加拿大藝術家 Stan Douglas 與 George E. Lewis 合作、1992 年做成錄像裝置《Hors-champs》，內容是 Lewis 與 Douglas Ewart、Kent Carter、Oliver Johnson 即興演奏 Ayler 的〈Spirits Rejoice〉，該裝置在德國卡塞爾的 documenta 9 展出；標題曲也用在 2023 年 Ira Sachs 執導的電影《Passages》片尾主題。",
+    "src": "https://en.wikipedia.org/wiki/Spirits_Rejoice"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1233967311：標題《Spirits Rejoice》、掛名 Albert Ayler、releaseDate 1965-09-23、5 軌、notExplicit、copyright「℗ 2012 ESP Disk」；逐軌為〈Spirits Rejoice〉11:43、〈Holy Family〉2:13、〈D.C.〉8:02、〈Angels〉5:33、〈Prophet〉5:36。",
+    "src": "https://music.apple.com/us/album/1233967311"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌老闆插嘴要了一首短曲，換來兩分多鐘的〈Holy Family〉與他事後的道歉",
+   "音樂廳是租下來錄音用的，台下一個聽眾也沒有"
+  ],
+  "sound": "MB 的 ESP 原盤是五軌：11:31 的標題曲之後接 2:10 的〈Holy Family〉，再到 7:55 的〈D.C.〉、5:24 的〈Angels〉、5:25 的〈Prophet〉。維基的 Personnel 欄記大鍵琴只出現在第 4 軌〈Angels〉，小號與中音薩克斯風則在第 4 軌之外全程在場。Allmusic 的 Steve Huey 稱它「儘管表面混亂，常常出乎意料地是預先安排好的」。（本欄由 MB release 06bb1c0a 的曲長與維基 Personnel／評論歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Spirits Rejoice",
+   "Holy Family",
+   "D.C."
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1965 與 MB release-group first-release-date 1965 一致（ESP 1020 的發行年）。**錄音年也是 1965**（維基：recorded in New York City in 1965），Apple 條目的 releaseDate 1965-09-23 是同一年的日期。本張是本組少數錄音年與出版年同年的一張。",
+  "notes": "**錄音年與出版年同為 1965**，不必分寫；但**不得因此把別張的「錄音年≠出版年」句型套進來**。\n⚠ **策展層一處要修正**：curatorWhy 稱本張是「1965 年 9 月在 Judson Hall 錄的**錄音室盤**」，另一處寫「ESP-Disk 的另一張**錄音室盤**」——**英文維基把它定義為 live album**（「a live album ... recorded in New York City in 1965」），只是場地租下來、沒有觀眾。**行文不得寫「錄音室盤」**；要寫就照維基的形狀寫「在租下來的音樂廳錄、台下沒有觀眾」。\n⚠ **擋下策展層兩處無來源主張**：（1）「是 ESP-Disk 三張 Ayler 裡編制最大的一張」——沒有直述來源，且需要跨碟比較，**不得寫**；（2）「是自由爵士把進行曲與聖歌旋律當素材這條做法**最常被引用的例子**」——「最常被引用」無來源，**不得寫**。可寫的替代是 All About Jazz 的 Mark Corroto 說標題曲取材自〈馬賽曲〉（有源）。\n**編制的可寫範圍**：維基 Personnel 欄可支持「七個人」的名單與各自軌次，**但「從三重奏擴到七人」這種跨碟的變化敘述沒有來源，不得寫**。\n**試聽（本層覆核通過）**：探測層 `us:1→1`、front `us`、collectionId **1233967311**、5 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=1233967311&country=us&entity=song` 逐軌核對 MB 的 ESP 原盤：**曲名、曲序逐項相同**（第 1 軌兩邊都是〈Spirits Rejoice〉），曲長差在 3–12 秒內（2012 年 ESP 數位版與 1965 年 LP 的母帶差異）。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。**\n**互斥分派——本張獨占 Judson Hall／無觀眾錄音、Bernard Stollman 的〈Holy Family〉插曲、Donald Ayler 與 Call Cobbs 的編制，以及《Hors-champs》與《Passages》這條後世流傳線。** 同批另一張 Ayler（《My Name Is Albert Ayler》）不得重述。\n**本張禁用**：哥本哈根、Debut 廠牌、Cecil Taylor、〈C.T.〉、Niels-Henning Ørsted Pedersen（都是《My Name Is Albert Ayler》的，見該卡）。"
+ }
+]
