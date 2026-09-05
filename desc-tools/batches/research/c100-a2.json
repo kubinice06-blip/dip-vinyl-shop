@@ -1,0 +1,138 @@
+[
+ {
+  "key": "desc2:Dietrich Fischer-Dieskau|Schubert: Lieder Volume 1",
+  "artist": "Dietrich Fischer-Dieskau",
+  "album": "Schubert: Lieder Volume 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f5a517ee 的欄位：title「Lieder Volume 1」、artist-credit「Franz Schubert; Dietrich Fischer‐Dieskau, Gerald Moore」（MB 用 U+2010 連字號）、first-release-date 1970、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/f5a517ee-85b6-46b9-8242-2a0b34ab2906"
+   },
+   {
+    "f": "該 release-group 唯一的 release e6577d99：1970 年德國盤、Deutsche Grammophon 643 547/58、status Official、載體十二張 12 吋黑膠，逐片軌數 17／9／14／17／13／16／14／15／12／14／16／14，合計 174 軌。第一片 A1 是〈An die Musik〉（D. 547），最後一片 X1 是〈Der Kreuzzug〉（D. 932）——整套按舒伯特作品編號排，涵蓋 1817 年以後的歌曲。",
+    "src": "https://musicbrainz.org/release/e6577d99-37ee-4f92-9b18-4c0245231edc"
+   },
+   {
+    "f": "英文維基〈Dietrich Fischer-Dieskau〉寫：他與 Gerald Moore 1951 年在倫敦 Abbey Road 錄下第一批藝術歌曲；兩人一起開獨唱會直到 1967 年 Moore 退出公開演出；**錄音合作持續到 1972 年，該年他們完成了把所有適合男聲的舒伯特歌曲全部錄一遍的大工程**；文中並寫 Moore 於 1972 年完全退休、1987 年過世。",
+    "src": "https://en.wikipedia.org/wiki/Dietrich_Fischer-Dieskau"
+   },
+   {
+    "f": "英文維基〈Gerald Moore〉的說法與上一條不完全一致：該條目寫 Moore 1967 年退出公開演出，告別音樂會在倫敦皇家節慶廳、由 Fischer-Dieskau／Victoria de los Ángeles／Schwarzkopf 三人同台，最後 Moore 獨奏他自己改編的舒伯特〈An die Musik〉鋼琴版作結；並寫他「1975 年才錄下最後一次錄音室錄音」。",
+    "src": "https://en.wikipedia.org/wiki/Gerald_Moore"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId 1452761264「Schubert: Lieder, Vol. 2」，掛名 Dietrich Fischer-Dieskau & Gerald Moore，releaseDate 1969-01-01，copyright「This Compilation ℗ 1969 Deutsche Grammophon GmbH, Berlin」，trackCount 171、分九張碟，171 軌全部有 previewUrl。其第 1-01 至 1-06 軌〈An die Musik, D. 547〉〈Pax vobiscum, D. 551〉〈Hänflings Liebeswerbung, D. 552〉〈Auf der Donau, D. 553〉〈Der Schiffer, D. 536〉〈Nach einem Gewitter, D. 561〉與 MB 1970 年 DG 黑膠盒第一片 A1–A6 逐軌同名同序；MB 盒中第 12 片的開頭〈L'incanto degli occhi〉（D. 902/1）與〈Der Kreuzzug〉（D. 932）也在這筆的第 9-03 與 9-10 軌。",
+    "src": "https://music.apple.com/gb/album/1452761264"
+   },
+   {
+    "f": "Apple 另有 collectionId 1452765615「Schubert: Lieder, Vol. 1」（同掛名、℗ 1970 DG、trackCount 234），但它從〈Eine Leichenphantasie, D. 7〉開始、前 200 軌一路排到 D. 493 附近，是更早期的歌曲，**與本張黑膠盒（D. 547 起）不是同一批內容**；1452162673「Schubert: Lieder (Vol. 3)」℗ 1972、58 軌。三筆相加 234＋171＋58＝463，正好等於 1452949408「Schubert: Complete Lieder - Dietrich Fischer-Dieskau」（℗ 2005 DG）的 463 軌。",
+    "src": "https://music.apple.com/us/album/1452765615"
+   }
+  ],
+  "hookCandidates": [
+   "十二張黑膠、一百七十幾首歌，從〈An die Musik〉排到〈Der Kreuzzug〉——這只是全套的第一卷",
+   "1967 年 Moore 已經不再上台，兩人卻繼續進錄音室，一直錄到 1972 年才把男聲能唱的舒伯特歌曲錄完"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：全套只有男中音與鋼琴兩個人（Fischer-Dieskau、Gerald Moore），MB 那筆 1970 年 DG 原盒是十二張 12 吋黑膠、174 軌，曲目按作品編號從 D. 547 排到 D. 932。Apple 對應的那筆逐軌長度多在一到三分鐘之間，最長的〈Einsamkeit, D. 620〉17 分 52 秒。",
+  "keyTracks": [
+   "An die Musik",
+   "Die Forelle",
+   "Gruppe aus dem Tartarus",
+   "Prometheus",
+   "Die Allmacht"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1970。MB first-release-date 1970 與唯一 release 的日期 1970（DG 643 547/58 德國原盒）一致，取 1970 沒有爭議。**但要分清三個數字**：原始錄音年不是 1970——英文維基記 Fischer-Dieskau 與 Moore 的舒伯特全集工程一路錄到 1972 年才完成，本卷的錄音散在 1960 年代後半；Apple 對應那筆的 copyright 年是 **℗ 1969**（比黑膠盒早一年）；卡單的 1970 是**原盒發行年**。依裁定 18／46，行文不得正面斷言發行年。",
+  "notes": "**試聽由 unavailable 改判 ready，但配對的是一個名字對不上的品項**：正解是 Apple **1452761264「Schubert: Lieder, Vol. 2」**（gb／us／de／fr／at／it／jp 七店面全有，171 軌全有 previewUrl）。**Apple 的卷號與 DG 黑膠盒的卷號是反的**——Apple 的「Vol. 2」才是本卡釘的「Volume 1」（曲目從 D. 547 起，與 MB 原盒逐軌對得上），Apple 的「Vol. 1」（1452765615，234 軌）從 D. 7 起，是另一批更早的歌。**探測層落空的原因就是拿卡片的「Volume 1」去對 Apple 的「Vol. 1」，剛好對到錯的那一筆。**｜軌數落差 174（MB 黑膠盒）vs 171（Apple）＝3 軌，兩邊首尾與抽查的中段都對得上，判為同一套的黑膠／數位分軌差異，不是二合一；依裁定 141，行文不得寫「這套有幾首歌」。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈An die Musik, D. 547〉正是原盒 A1。｜**擋下策展層一處**：curatorWhy 寫「Gerald Moore 錄完這套之後就宣布退休」——兩個維基條目互相矛盾（〈Dietrich Fischer-Dieskau〉寫他 1972 年完全退休，〈Gerald Moore〉寫他 1967 年退出公開演出、1975 年才錄下最後一次錄音室錄音），**而且他 1967 年就已經不再上台，退休的宣布在這套錄完之前而不是之後**。行文不得寫「錄完這套之後才退休」。｜curatorWhy 的「1966 年開始」查無來源（維基只給「錄到 1972 年完成」與「1951 年首度合作」兩個錨點），「唱片史上規模最大的單一作曲家歌曲工程」也無來源，維基的原話只是「massive project」。｜掛名：MB 用 U+2010 連字號「Dietrich Fischer‐Dieskau」，卡片用 ASCII，字串比對不相等（策展層第 8 條已記）。"
+ },
+ {
+  "key": "desc2:Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau|Mahler: Des Knaben Wunderhorn",
+  "artist": "Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau",
+  "album": "Mahler: Des Knaben Wunderhorn",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5135d046 的欄位：title「Des Knaben Wunderhorn」、artist-credit「Mahler; London Symphony Orchestra, George Szell, Elisabeth Schwarzkopf, Dietrich Fischer‐Dieskau」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 9 個 release（1968 GB／1968 DE／1968 US 三張黑膠，1983 GB 黑膠，1988 GB CD，2000 起四筆 EMI／Warner CD），**九筆全部是 12 軌**。",
+    "src": "https://musicbrainz.org/release-group/5135d046-d71b-313b-9ff5-e3302577ba11"
+   },
+   {
+    "f": "1968 年英國原盤 release 06ab4150：His Master's Voice SAN 218、12 吋黑膠、12 軌，A 面〈Revelge〉〈Das irdische Leben〉〈Verlor'ne Müh〉〈Rheinlegendchen〉〈Der Tambourg'sell〉〈Der Schildwache Nachtlied〉，B 面〈Wer hat dies Liedlein erdacht〉〈Lob des hohen Verstandes〉〈Des Antonius von Padua Fischerpredigt〉〈Lied des Verfolgten im Turm〉〈Trost im Unglück〉〈Wo die schönen Trompeten blasen〉。同批另有德國盤 His Master's Voice 1C 065-00 098（盤名作《Lieder aus \"Des Knaben Wunderhorn\"》）與美國盤 Angel Records S-36547。",
+    "src": "https://musicbrainz.org/release/06ab4150-b818-4762-a58b-ecfb41051420"
+   },
+   {
+    "f": "英文維基〈Des Knaben Wunderhorn (Mahler)〉的管弦樂版錄音清單裡直接列出這一筆：「Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau; London Symphony Orchestra; George Szell (EMI/HMV SAN 218, 1968)」。",
+    "src": "https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)"
+   },
+   {
+    "f": "同一條目開頭寫：馬勒取自 Arnim 與 Brentano 1805–1808 年編的德國民歌詩集，**1905 年他以「十首」為聲樂與管弦樂編制的歌曲首度成套出版，但管弦樂版總共存在十二首**。",
+    "src": "https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)"
+   },
+   {
+    "f": "英文維基〈George Szell〉：Szell 1897 年 6 月 7 日生、**1970 年 7 月 30 日過世**（骨髓癌，死於克里夫蘭），最後一場演出在阿拉斯加 Anchorage；他長期是克里夫蘭管弦樂團音樂總監，並「經常與倫敦交響樂團同台」。這張 1968 年的錄音因此是他過世前兩年、與 LSO 而非克里夫蘭的合作。",
+    "src": "https://en.wikipedia.org/wiki/George_Szell"
+   },
+   {
+    "f": "Apple Music gb collectionId 1344023405「Mahler: Des Knaben Wunderhorn」，artistName「Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, London Symphony Orchestra & George Szell」，releaseDate 1968-12-10，trackCount 12，copyright「℗ 1968 Parlophone Records Limited. Remastered (p) 2015 Parlophone Records Limited」；十二軌逐軌與 1968 年 SAN 218 原盤**同名同序**（Apple 第 1 軌就是〈Revelge〉、第 12 軌是〈Wo die schönen Trompeten blasen〉），十二軌全部有 previewUrl。曲長：〈Revelge〉7:11、〈Wo die schönen Trompeten blasen〉7:33、最短的〈Wer hat dies Liedlein erdacht?〉2:00。",
+    "src": "https://music.apple.com/gb/album/1344023405"
+   }
+  ],
+  "hookCandidates": [
+   "馬勒 1905 年出版的是十首，這張唱兩人分唱十二首——把後來補寫的兩首軍樂歌也放了進來",
+   "Szell 不是帶克里夫蘭來的，他帶的是倫敦交響；兩年後他就走了"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：女高音 Schwarzkopf 與男中音 Fischer-Dieskau 分唱，George Szell 指揮倫敦交響樂團，1968 年 EMI／His Master's Voice 錄音；十二首單曲最長 7 分半、最短兩分鐘，整張約 50 分鐘。",
+  "keyTracks": [
+   "Revelge",
+   "Der Tamboursg'sell",
+   "Das irdische Leben",
+   "Wo die schönen Trompeten blasen"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1968。MB first-release-date 1968、1968 年三張原盤（GB SAN 218／DE 1C 065-00 098／US Angel S-36547）、英文維基錄音清單「EMI/HMV SAN 218, 1968」、Apple ℗ 1968 四方一致。**這張是本組二十張裡唯一卡單年份＝原盤年＝錄音年、沒有落差的一張**（Apple 的 releaseDate 精確到 1968-12-10）。",
+  "notes": "**ready 覆核通過。** Apple gb 1344023405 確為本張：掛名含 LSO 與 Szell、℗ 1968 Parlophone（EMI／HMV 的現持有者）、12 軌與 1968 年 SAN 218 原盤逐軌同名同序、12 軌全有 previewUrl。**不是後來的別次錄音**——Fischer-Dieskau 另有 1990 年 Barenboim／柏林愛樂版（Apple 501654518「Mahler: Des Knaben Wunderhorn & Lieder eines fahrenden Gesellen」16 軌、℗ 1990 Sony）與 1980 年 HMV 版，兩者掛名裡都沒有 Schwarzkopf，可以區分。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Revelge〉正是原盤 A1。｜掛名：MB 的 artist-credit 把作曲家與樂團排在前面（Mahler; London Symphony Orchestra, George Szell, Elisabeth Schwarzkopf, Dietrich Fischer‐Dieskau），卡片採兩位歌者併掛，合策展層第 3 條；**Apple 的 artistName 四方併列、把兩位歌者排在最前**，與卡片的併掛順序一致。｜**時序主張要擋**：Szell 1970 年 7 月 30 日過世，這張是他過世前兩年的錄音，**但沒有來源說這是他的最後錄音或最後一次與 LSO 合作**，行文不得寫「生前最後」。同理，Schwarzkopf 1979 年才告別舞台，1968 年不是她的收山之作。"
+ },
+ {
+  "key": "desc2:Marian Anderson|The Lady From Philadelphia",
+  "artist": "Marian Anderson",
+  "album": "The Lady From Philadelphia",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3ae00da4 的欄位：title「The Lady From Philadelphia」、artist-credit「Marian Anderson」、first-release-date 1995-02-03、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/3ae00da4-0a2d-4503-91a4-aea3b90065f5"
+   },
+   {
+    "f": "唯一的 release 9442082b：1995-02-03 英國、Pearl GEMM CD 9069、CD、19 軌。曲目是跨作曲家的獨唱選輯——普賽爾〈When I am laid in earth〉（《Dido and Aeneas》狄多的悲歌）、A. Scarlatti〈Se Florindo è fedele〉、巴哈《約翰受難曲》〈Es ist vollbracht〉、韓德爾《彌賽亞》兩曲、孟德爾頌《聖保羅》與《以利亞》各一曲、布拉姆斯 op. 91 兩首（中提琴助奏）、Massenet〈Élégie〉、拉赫瑪尼諾夫 op. 4/3，以及第 12 軌起八首美國歌謠與黑人靈歌（〈Carry Me Back to Old Virginny〉〈My Old Kentucky Home〉〈My Soul's Been Anchored in the Lord〉〈No Hidin' Place〉等）。",
+    "src": "https://musicbrainz.org/release/9442082b-5899-4d39-b157-ab1cac4314a0"
+   },
+   {
+    "f": "Discogs release 6122551 是同一張 Pearl GEMM CD 9069，**年份記 1993**（released 欄也是 1993）、國別德國、格式標 CD／Compilation，十九軌曲序與 MB 相同。",
+    "src": "https://www.discogs.com/release/6122551"
+   },
+   {
+    "f": "英文維基〈Marian Anderson〉：1957 年她為艾森豪總統就職典禮獻唱，並以美國國務院與 ANTA 的親善大使身分巡演印度與遠東，「十二週內走了三萬五千英里、開了二十四場音樂會」；同年她獲任命為聯合國人權委員會代表，1958 年正式成為聯合國代表。",
+    "src": "https://en.wikipedia.org/wiki/Marian_Anderson"
+   },
+   {
+    "f": "同一條目記她 1930 年代在歐洲的經歷：1930 年赴斯堪的那維亞、結識芬蘭鋼琴家 Kosti Vehanen（此後多年的固定伴奏），並經他認識西貝流士；1933 年在倫敦 Wigmore Hall 歐洲首演；1935 年薩爾茲堡巡演時**托斯卡尼尼**對她說她的嗓子是「一百年才聽得到一次」。",
+    "src": "https://en.wikipedia.org/wiki/Marian_Anderson"
+   },
+   {
+    "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）都有一筆同名品項 collectionId 1580339727「Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\") [2021 Remastered Version]」，掛名「Marian Anderson & Edward R. Murrow」、releaseDate 1957-12-20、copyright ℗ 1957 Sony Music Entertainment、trackCount 30。它的內容是 CBS《See It Now》那集紀錄片的聲軌——旁白、訪談、各地實況片段（在漢城、曼谷、西貢、吉隆坡、孟買、新德里的演唱與談話），三十軌裡有半數是說話而不是歌，**與 Pearl 那張十九軌錄音室選輯毫無重疊**。",
+    "src": "https://music.apple.com/gb/album/1580339727"
+   }
+  ],
+  "hookCandidates": [
+   "盤名借自 1957 年那集電視紀錄片，碟裡裝的卻是她更早的錄音室歌唱——從狄多的悲歌到〈No Hidin' Place〉",
+   "同一張碟上，巴哈的〈Es ist vollbracht〉與〈My Soul's Been Anchored in the Lord〉排在一起"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：這是 Pearl 廠牌 1990 年代的歷史錄音復刻 CD，十九軌從普賽爾、A. Scarlatti、巴哈、韓德爾、孟德爾頌、布拉姆斯（op. 91 兩首帶中提琴助奏）、Massenet、拉赫瑪尼諾夫，一路走到八首美國歌謠與靈歌；最長〈Gestillte Sehnsucht〉7 分 23 秒，最短〈No Hidin' Place〉53 秒。",
+  "keyTracks": [
+   "When I am laid in earth",
+   "He Was Despised",
+   "Gestillte Sehnsucht",
+   "My Soul's Been Anchored in the Lord"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 不是錄音年，也不是那部同名紀錄片的年份，而是 Pearl 這張復刻 CD 的 MB 記載年。三個數字要並列**：(1) MB first-release-date **1995-02-03**（Pearl GEMM CD 9069）；(2) Discogs 同一張 CD 記 **1993**——兩個資料庫各記一個具體年份、互相矛盾，依裁定 141／c-98 第 10 條**維持卡單值 1995、行文不得正面斷言發行年**；(3) **原始錄音年查不到逐軌數字**：Pearl 復刻的是 Anderson 在 RCA Victor 時期（1930–1950 年代）的錄音，MB 與 Discogs 兩邊都沒有給每一軌的錄音年，**行文不得寫任何一個錄音年份**。另外要與 1957 年切開：紀錄片《The Lady from Philadelphia》是 1957 年 CBS《See It Now》那一集（Apple 那筆同名品項的 releaseDate 是 1957-12-20），**本張不是它**。",
+  "notes": "**試聽維持 unavailable，而且這一張有陷阱**：Apple 七店面都有 **1580339727「Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\")」**，盤名幾乎相同、掛名也含 Marian Anderson，**但那是 1957 年電視紀錄片的聲軌（30 軌，含 Edward R. Murrow 的旁白與各地訪談），與本卡釘的 Pearl 十九軌錄音室選輯零重疊，絕對不得取用**。這是「同名別碟」在本組裡最嚴重的一筆——盤名、掛名、藝人三道閘全過得了。｜逐店面覆核：gb／us／de／fr／at／it／jp 七個店面的 Marian Anderson 目錄（各 35–87 筆）全掃過，另外用 `search?term=Marian Anderson Lady from Philadelphia` 七店面各查一次，**Pearl／GEMM 的品項一筆都沒有**；Pearl 是專做 78 轉復刻的小廠，整個廠牌在 Apple 上幾乎不存在。判 unavailable 是對的。｜卡片盤名照抄 MB 標題（策展層第 2 條的第 1 種情況），沒有作曲家前綴，這也是它會被同名紀錄片碟撞上的原因，上架時要在備註寫死 collectionId 不得自動配。｜**擋下策展層可能的說法**：這張與 1957 年的亞洲親善巡演、與那集紀錄片**只有盤名的關係**，碟裡沒有任何一軌來自那次巡演；行文不得把兩件事寫成同一件。"
+ }
+]
