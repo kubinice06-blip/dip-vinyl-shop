@@ -634,5 +634,153 @@
   ],
   "status": "full",
   "notes": "【掛名與字形，兩層都要注意】MB 把 release-group 建在單人實體「伍佰」(0e1610be) 底下、標題用簡體《诗情摇滚》，而 Discogs 的台灣原盤藝人欄是「伍佰 & China Blue」、標題是繁體。卡片依實體 credit 取「伍佰 & China Blue」是對的。facts 引 MB 欄位時已註明那是 MB 的建檔寫法，依第 136 條，資料庫沒建台灣盤不等於台灣盤不存在。\n【不是精選輯】〈迷航記〉與前一年《太空彈》同名，一度看起來像重複收錄；回查 MusicBrainz 的 recording，兩者是長度不同的兩筆錄音（5:18 與 5:27），〈夜照亮了夜〉與〈白鷺鷥〉在 MB 上也只出現在本張與 2014 年的精選輯裡。Discogs 的 format 欄記 Album、沒有 Compilation 標記。**確認是原創專輯，不列建議移除。**\n【互斥提醒】〈迷航記〉兩個版本這條線本層分派給《太空彈》，本張請走別的切入面向（掛名與建檔的錯位、或開場曲）。\n【試聽複核，維持 ready】Apple `tw` collectionId 840060673，掛名「伍佰 & China Blue」、標題繁體《詩情搖滾》、℗ 2009 Moonlight Music Co., Ltd. / 2009 Avex Taiwan Inc.、releaseDate 2009-12-18、13 軌全部帶 previewUrl。逐軌核到位置：十三軌的曲名與曲序與 Discogs 的台灣原盤逐項相符。標題無 Karaoke／Instrumental／Tribute 尾綴。"
+ },
+ {
+  "key": "desc4:伍佰 & China Blue|單程車票",
+  "artist": "伍佰 & China Blue",
+  "album": "單程車票",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 15ad84fb 的標題欄建成簡體《单程车票》，artist-credit「伍佰 & China Blue」、first-release-date 2011-09-09、primary-type Album、secondary-types 空，轄下只有一筆 release（2011-09-09、CN、Official、Digital Media），廠牌欄環球音樂，12 軌。",
+    "src": "https://musicbrainz.org/release-group/15ad84fb-51a5-4229-9854-9d20f0ac365c"
+   },
+   {
+    "f": "Discogs release 10720818（台灣，Universal Music 2781277，2011）的 format 欄是 1×CD Album 加 1×DVD、紙套包裝；十二軌依序是〈藍月〉〈單程車票〉〈火山〉〈結〉〈戒指〉〈都是我的錯〉〈心如刀割〉〈放開你的腦袋〉〈上海女孩〉〈停止的危險〉〈雨一直下〉〈夢醒時分〉。",
+    "src": "https://www.discogs.com/release/10720818"
+   },
+   {
+    "f": "Hit FM 的專輯頁記這張碟 2011 年 9 月由環球音樂發行，文案寫「首支主打單曲『火山』，最佳宅男告白歌曲，愛的能量一觸即發，伍佰自導自演搖滾歌舞秀！」，並強調「聽得到樂團Live錄音的 Magic Moment」。",
+    "src": "https://www.hitoradio.com/newweb/12723album"
+   },
+   {
+    "f": "同一份文案把末軌交代得很清楚：「Bonus 特別收錄伍佰於『滾石30』演唱會中讓人驚艷演出的『夢醒時分』。台北小巨蛋，新加坡室內體育館，北京鳥巢共 12萬人的感動。」",
+    "src": "https://www.hitoradio.com/newweb/12723album"
+   },
+   {
+    "f": "十二軌的曲長兩端：最長的是開場的〈藍月〉6:10、最短的是第 7 軌〈心如刀割〉3:27；同名曲〈單程車票〉4:05 排在第二軌。",
+    "src": "https://itunes.apple.com/lookup?id=1442404415&entity=song&country=tw"
+   }
+  ],
+  "hookCandidates": [
+   "碟的最後一首不是錄音室作品——那是他在「滾石30」台上唱的〈夢醒時分〉",
+   "開場的〈藍月〉六分十秒，是這張碟最長的一首"
+  ],
+  "sound": "以樂團同步錄音為賣點的搖滾盤，曲長從 3:27 到 6:10，末軌是現場演出的版本。",
+  "keyTracks": [
+   "火山",
+   "單程車票"
+  ],
+  "status": "full",
+  "notes": "【簡繁】MB 只建了中國盤、標題是簡體，卡片用繁體《單程車票》，兩種寫法都要進去重表（第 49 條）。facts 引 MB 欄位時已註明那是 MB 的建檔寫法。\n【末兩軌】〈雨一直下〉與〈夢醒時分〉兩個曲名都與其他歌手的知名歌曲同名。Hit FM 的文案只交代了〈夢醒時分〉是「滾石30」演唱會的演出版本，**沒有說原唱是誰、也沒有交代〈雨一直下〉的來歷**。行文可以寫末軌是演唱會版本，**不得寫成翻唱某某人的歌**——本層查不到可引用的原唱來源。\n【曲長來源】MB 那筆數位發行的曲長與 Apple 一致，此處引 Apple 台灣店面的 lookup（collectionId 1442404415），因為它同時是試聽複核的依據。\n【試聽複核，維持 ready】Apple `tw` collectionId 1442404415，掛名「伍佰 & China Blue」、標題繁體《單程車票》、℗ 2011 Universal Music Taiwan Ltd.、12 軌全部帶 previewUrl，曲名、曲序與 MB 逐項相符。Apple 的 releaseDate 記 2011-01-01（佔位日），與 MB 的 2011-09-09 差在月日、同年，依第 141 條附二這種佔位日不代表沒有漂移，但本張軌數與曲序都對得上，判定不受影響。標題無 Karaoke／Instrumental／Tribute 尾綴。\n【封面】策展記 CAA 404，上述 collectionId 已由本層逐軌核對，依第 134 條可用。"
+ },
+ {
+  "key": "desc4:伍佰 & China Blue|無盡閃亮的哀愁",
+  "artist": "伍佰 & China Blue",
+  "album": "無盡閃亮的哀愁",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fa97bc74 的標題欄建成簡體《无尽闪亮的哀愁》，artist-credit「伍佰 & China Blue」、first-release-date 2013-12-13、primary-type Album、secondary-types 空，轄下兩筆 release：2013-12-13 CN Official 的數位發行（廠牌欄環球音樂）與 2013 TW Official 的 CD（廠牌欄 Universal Music、編號 889 676-9、條碼 0602488967693），兩筆都是 11 軌、標題都建成簡體。",
+    "src": "https://musicbrainz.org/release-group/fa97bc74-6059-4075-9f41-2d651f23224b"
+   },
+   {
+    "f": "十一軌依序是〈無盡閃亮的哀愁〉〈生存遊戲〉〈手〉〈答案〉〈虧欠〉〈就是因為愛〉〈我們註定在一起〉〈小妹〉〈青春與愛情〉〈一次〉〈太極〉。",
+    "src": "https://musicbrainz.org/release/67972d31-ab2f-4ae8-8d59-d3071d2ea9d8"
+   },
+   {
+    "f": "十一軌的曲長兩端：最長的是第 2 軌〈生存遊戲〉5:15、最短的是第 9 軌〈青春與愛情〉3:59；開場的同名曲 4:01。",
+    "src": "https://musicbrainz.org/release/67972d31-ab2f-4ae8-8d59-d3071d2ea9d8"
+   },
+   {
+    "f": "Apple 台灣店面上這張碟的第一軌不叫〈無盡閃亮的哀愁〉而叫〈閃亮的哀愁〉，其餘十軌的曲名與曲序與 MusicBrainz 相同。",
+    "src": "https://itunes.apple.com/lookup?id=1443226369&entity=song&country=tw"
+   }
+  ],
+  "hookCandidates": [
+   "專輯叫《無盡閃亮的哀愁》，第一軌在有些地方只叫〈閃亮的哀愁〉",
+   "十一首歌全部落在四分鐘上下，最長與最短只差一分十六秒"
+  ],
+  "sound": "十一軌的曲長從 3:59 到 5:15，整張碟的長度分布很窄。",
+  "keyTracks": [
+   "無盡閃亮的哀愁",
+   "生存遊戲"
+  ],
+  "status": "thin",
+  "notes": "標 thin 的理由：Discogs 以繁體與簡體查都沒有這張碟的實體條目，只有 MusicBrainz 的兩筆 release 與 Apple 的上架資料可用；查不到製作班底、樂評、銷售或獎項的任何來源。策展 `risk` 已寫明「不得寫成有樂評或銷售背書」，本層同意。字數帶依第 161 條走 thin 的 120–180。\n【簡繁】MB 兩筆 release 的標題都建成簡體（連台灣那一筆也是），卡片用繁體，兩種寫法都要掃（第 49 條）。facts 引 MB 欄位時已註明是 MB 的建檔寫法；曲名以繁體寫出，是依 Apple 台灣店面與卡片正名。\n【曲名分歧】首軌兩種寫法（〈無盡閃亮的哀愁〉／〈閃亮的哀愁〉）都存在，行文若要點首軌請照卡片盤名那一種，並知道另一種寫法存在。\n【試聽複核，維持 ready】Apple `tw` collectionId 1443226369，掛名「伍佰 & China Blue」、標題繁體《無盡閃亮的哀愁》、℗ 2013 Universal Music Taiwan Ltd.、11 軌全部帶 previewUrl，曲序與 MB 逐項相符。**Apple 的 trackCount 欄記 12、實際回傳的音軌只有 11**，多出來的那一項沒有在 lookup 的 song 清單裡出現（本層無法確認它是什麼），行文不得寫軌數為 12。releaseDate 記 2013-01-01 是佔位日。標題無 Karaoke／Instrumental／Tribute 尾綴。"
+ },
+ {
+  "key": "desc4:伍佰 & China Blue|讓水倒流",
+  "artist": "伍佰 & China Blue",
+  "album": "讓水倒流",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b12a3d2f 的標題欄建成簡體《让水倒流》，artist-credit「伍佰 & China Blue」、first-release-date 2019-07-11、primary-type Album、secondary-types 空，轄下一筆 release（2019-07-11、CN、Official、Digital Media），廠牌欄環球音樂，12 軌。",
+    "src": "https://musicbrainz.org/release-group/b12a3d2f-97e3-4546-8de9-7cc63905b388"
+   },
+   {
+    "f": "Discogs release 37039647（台灣，Universal Music Taiwan 7755209，2019-07-11，CD）的曲目表把第 11 軌〈誰是老大〉與第 12 軌〈唯我獨大〉另起一段標成「Bonus Track」，前十軌才是正編。",
+    "src": "https://www.discogs.com/release/37039647"
+   },
+   {
+    "f": "同年 12 月 20 日發行的台灣黑膠版（Discogs release 14519241，Universal 0840412，LP）只收十軌：A 面〈讓水倒流〉〈原本當初〉〈最美的時刻〉〈愛的大道〉〈我想飛〉，B 面〈月光下的別離〉〈深秋的祝福〉〈其實不遙遠〉〈皇后的高跟鞋〉〈黑色蒙太奇〉——CD 上那兩軌 Bonus Track 沒有壓進黑膠。",
+    "src": "https://www.discogs.com/release/14519241"
+   },
+   {
+    "f": "Apple 台灣店面把第 12 軌的曲名寫成〈唯我獨大 (電影《奇門遁甲》片尾曲)〉。",
+    "src": "https://itunes.apple.com/lookup?id=1471609322&entity=song&country=tw"
+   },
+   {
+    "f": "十二軌的曲長兩端：最長的是開場的同名曲〈讓水倒流〉6:42、最短的是末軌〈唯我獨大〉3:28。",
+    "src": "https://musicbrainz.org/release/44f38d1d-d58e-456d-828d-b928a85e2b74"
+   }
+  ],
+  "hookCandidates": [
+   "CD 上多出來的兩軌標著 Bonus Track，半年後的黑膠版就把它們拿掉了",
+   "開場的同名曲六分四十二秒，是碟上最長的一首；最短的那首是替一部電影寫的片尾曲"
+  ],
+  "sound": "十軌正編加兩軌 Bonus，曲長從 3:28 到 6:42，同名曲擺在最前面也最長。",
+  "keyTracks": [
+   "讓水倒流",
+   "黑色蒙太奇"
+  ],
+  "status": "full",
+  "notes": "【推翻策展層一處】策展 `why` 寫「黑膠與 CD 同年同步發行」。查證後不成立：CD 是 2019-07-11（Discogs 37039647），黑膠是 **2019-12-20**（Discogs 14519241），相隔五個多月，且黑膠比 CD 少了兩軌 Bonus Track。行文可以寫同一年出了兩種載體，**不得寫成同步發行**。\n【軌數】正編十軌、加上兩軌 Bonus 共十二軌，兩個數字都要帶限定語（第 144 條的處理方式：不改值、加限定語）。黑膠版的十軌正好就是正編。\n【簡繁】MB 只建了中國盤、標題簡體，卡片用繁體，兩種寫法都要掃。facts 引 MB 欄位時已註明是 MB 的建檔寫法。\n【曲名分歧】第 7 軌 MB 記〈深秋的祝褔〉（示部的褔）、Discogs 記〈深秋的祝福〉，是同一首的兩種字形。\n【試聽複核，維持 ready】Apple `tw` collectionId 1471609322，掛名「伍佰 & China Blue」、標題繁體《讓水倒流》、℗ 2019 Universal Music Taiwan Ltd.、releaseDate 2019-07-11、12 軌全部帶 previewUrl，曲名、曲序與曲長與 MB 逐項相符。標題無 Karaoke／Instrumental／Tribute 尾綴。封面可用同一個 collectionId（策展記 CAA 404）。"
+ },
+ {
+  "key": "desc4:伍佰 & China Blue|純白的起點",
+  "artist": "伍佰 & China Blue",
+  "album": "純白的起點",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 88ecc3cc 的標題欄建成簡體《纯白的起点》，artist-credit「伍佰 & China Blue」、first-release-date 2023-06-16、primary-type Album、secondary-types 空，轄下一筆 release（2023-06-16、CN、Official、Digital Media），廠牌欄 Moonlight Music Ltd.，11 軌。",
+    "src": "https://musicbrainz.org/release-group/88ecc3cc-ff22-4cdb-9ec0-00ebf7c3bbc1"
+   },
+   {
+    "f": "Discogs release 37039581（台灣，Universal Music Taiwan 5559559，2023-06-16，CD）的十一軌依序是〈天使〉〈怎樣歌〉〈純白的起點〉〈嫦娥〉〈晴天雨天〉〈甜美的繩索〉〈重生〉〈妳是我的完美〉〈筆畫〉〈赴湯蹈火〉〈不要放棄〉。",
+    "src": "https://www.discogs.com/release/37039581"
+   },
+   {
+    "f": "2024-03-22 台灣另發一版限量白膠（Discogs release 30233855，Universal Music Taiwan 5845014），說明欄寫附全彩歌詞內頁、外加一個帶封口的厚 PVC 外套並以透明貼紙封起，封底印「Release Date: 2024.03」、「Manufactured in Germany. Printed and Assembled in Taiwan.」。",
+    "src": "https://www.discogs.com/release/30233855"
+   },
+   {
+    "f": "第 10 軌在 MusicBrainz 與 Apple 上都標成〈赴湯蹈火 (重新混音版)〉，Discogs 的 CD 曲目表只寫〈赴湯蹈火〉。",
+    "src": "https://itunes.apple.com/lookup?id=1691465310&entity=song&country=tw"
+   },
+   {
+    "f": "十一軌的曲長兩端：最長的是同名曲〈純白的起點〉5:13 與第 7 軌〈重生〉5:13，最短的是開場的〈天使〉3:00。",
+    "src": "https://musicbrainz.org/release/c943745f-a86c-479b-86c6-290df8a43561"
+   }
+  ],
+  "hookCandidates": [
+   "白膠在德國壓、在台灣印刷組裝，封底把這件事印了出來",
+   "碟上有一首〈赴湯蹈火〉標著「重新混音版」——舊歌被搬回新專輯的最後一段"
+  ],
+  "sound": "十一軌都在三到五分半之間，開場的〈天使〉3:00 最短，同名曲與〈重生〉並列最長的 5:13。",
+  "keyTracks": [
+   "純白的起點",
+   "天使"
+  ],
+  "status": "full",
+  "notes": "【簡繁】MB 只建了中國盤、標題簡體，卡片用繁體，兩種寫法都要掃。facts 引 MB 欄位時已註明是 MB 的建檔寫法。\n【第 10 軌】〈赴湯蹈火〉在 MB 與 Apple 上都帶「重新混音版」的尾綴、Discogs 的 CD 曲目表沒有。**這首的原始版本出自哪一張碟，本層查不到可引用的來源**，行文只能寫它在這張碟上標成重新混音版，不得指名它原本收在哪裡。\n【日期三說】Apple 記 releaseDate 2023-05-19、MB 與 Discogs 的實體都記 2023-06-16。同年，卡單 2023 不動；行文若要寫日期請用實體那一組。\n【獎項】本層查了第 35 屆金曲獎（2024）的入圍名單，沒有取到這張碟入圍的可引用紀錄；facts 不寫任何獎項。\n【試聽複核，維持 ready】Apple `tw` collectionId 1691465310，掛名「伍佰 & China Blue」、標題繁體《純白的起點》、℗ 2023 Moonlight Music Co., Ltd.、11 軌全部帶 previewUrl，曲名、曲序與曲長與 MB 逐項相符。標題無 Karaoke／Instrumental／Tribute 尾綴。封面可用同一個 collectionId（策展記 CAA 404）。"
  }
 ]
