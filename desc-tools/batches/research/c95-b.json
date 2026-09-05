@@ -482,5 +482,169 @@
   "status": "full",
   "yearVerified": "卡單 year=1957 與 MB release-group first-release-date 1957 一致（Columbia CL 963）。**錄音年是 1956**：英文維基〈Jimmy Rushing〉的 Discography 段把本張寫成「1956: The Jazz Odyssey of James Rushing Esq. (Columbia, 1957)」，行首年份是錄音年、括號裡是發行年。Apple 的 releaseDate 1957-05-30 與 MB 的 1957 同年，可視為發行日的細化，**但那是 2009 年 Marathon Media 重發條目上的日期，不得當成 Columbia 原盤的確切發行日**。",
   "notes": "**鐵則（本批第 3 條）：錄音年 1956 與出版年 1957 不得互寫。**\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫本張「是搖擺與都市藍調交界**最常被引用的一張**」——沒有直述來源，**不得入文**。有源的替代是維基引 Nat Hentoff 說節奏藍調「根源就在 Jimmy Rushing 的藍調吼唱」，以及 Whitney Balliett 的那句評語。\n⚠ **Buck Clayton 的角色要照來源寫**：維基 Discography 只寫「with Buck Clayton」，**沒有寫「用 Buck Clayton 的樂團」或任何編制細節**；curatorWhy 的「用 Buck Clayton 的樂團把堪薩斯城藍調吼唱那一支從大樂團編制裡拆出來單獨呈現」**是推論，不得入文**。可寫的只有「與 Buck Clayton 合作」。\n**MB 只有一筆 release**：這張在 MB 上沒有再發條目，**行文不得提任何再發版本**。\n**試聽（本層覆核通過，但要記一處曲序偏差）**：探測層 `us:0→0` → `gb:2→1`，front `gb`、collectionId **306321094**、12 軌、notExplicit、cleanedOnly false。本層以 `lookup?id=306321094&country=gb&entity=song` 逐軌核對 MB 的 CL 963：**十二軌是同一組曲名、軌數相同，第 1–3 軌曲名與曲序完全相同**（第 1 軌兩邊都是〈New Orleans〉）；⚠ **第 4 軌起曲序被重排**（Apple 把〈Piney Brown Blues〉提到第 4，MB 那裡是〈Doctor Blues〉）。第 157 條要求的位置比對以第 1 軌為準已通過，固定試聽不會取錯曲。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。\n**本層裁定：維持 ready / gb / 306321094，並在卡上記「Apple 這一筆是 2009 年 Marathon Media 的授權重發、曲序與 Columbia 原盤自第 4 軌起不同」。** 依下放判準第 2 條（可逆）直接定。⚠ **行文不得寫「第幾軌是什麼」的位置式敘述**（兩個版本序位不同，第 157 條的形狀）。\n**互斥分派——本張獨占 Count Basie 樂團主唱那十三年、「Mr. Five by Five」與 Balliett／Hentoff 的評語。**"
+ },
+ {
+  "key": "desc2:Roy Eldridge & Dizzy Gillespie|Roy & Diz",
+  "artist": "Roy Eldridge & Dizzy Gillespie",
+  "album": "Roy & Diz",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8a5a5fcf 的欄位：title《Roy & Diz》、**artist-credit 原文是「Dizzy Gillespie • Roy Eldridge」（Gillespie 在前）**、first-release-date 1955、primary-type Album、secondary-types 空、轄下 4 個 release（FR 1955、US 1955、GB 1956-05、XE 2011）。",
+    "src": "https://musicbrainz.org/release-group/8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242"
+   },
+   {
+    "f": "該 release-group 底下 1955 年的 US release 標題寫成《Roy and Diz》（and 不是 &）、由 Clef Records 發行、編號 MGC-641、載體 12\" Vinyl，**只有 5 軌**：〈I've Found A New Baby〉9:15、〈I Can't Get Started〉10:59、〈Trumpet Blues〉7:55、〈Alga Bueno〉6:12、〈Pretty Eyed Baby〉5:34。",
+    "src": "https://musicbrainz.org/release/9cbeb151-8c8e-4d6c-a4cd-2213a5e50c9e"
+   },
+   {
+    "f": "英文維基〈Roy and Diz〉開頭：這是小號手 Roy Eldridge 與 Dizzy Gillespie 的專輯，**錄於 1954 年**，原本在 Clef 廠牌**分成兩輯發行**；同一批場次的選曲也出過《Trumpet Battle》與《The Trumpet Kings》兩張。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目在曲目表之後明列四張碟各自的曲序：**《Roy & Diz》是第 6、8、3、2、7 首**（〈I've Found a New Baby〉〈I Can't Get Started〉〈Trumpet Blues〉〈Algo Bueno〉〈Pretty Eyed Baby〉）；《Roy & Diz #2》是第 1、4、9、5 首（〈Sometimes I'm Happy〉〈Ballad Medley〉〈Limehouse Blues〉〈Blue Moon〉）；《Trumpet Battle》是 6、8、1、4；《The Trumpet Kings》是 3、2、7、9、5。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目的 Personnel 欄：Roy Eldridge 與 Dizzy Gillespie 小號與人聲、Oscar Peterson 鋼琴、Herb Ellis 吉他、Ray Brown 貝斯、Louis Bellson 鼓。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目引 1955 年《Billboard》對第二輯的評論：「第一套 Roy–Diz 雖然引人，卻讓許多人覺得比較像一場『cutting contest』而不是合作。第二套裡競爭的成分並未消失，但在這裡它變成了互相的刺激。」AllMusic 給三顆星。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "同一條目的曲目表附作曲者：〈Algo Bueno (Woody 'n' You)〉是 Dizzy Gillespie 寫的、〈Trumpet Blues〉是 Roy Eldridge 與 Gillespie 合寫、〈Pretty Eyed Baby〉是 Mary Lou Williams、Snub Mosley 與 William Luther Johnson 合寫。",
+    "src": "https://en.wikipedia.org/wiki/Roy_and_Diz"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1443173406：標題《Roy and Diz》、掛名「Roy Eldridge & Dizzy Gillespie」、releaseDate 1954-01-01、**9 軌**、notExplicit、copyright「℗ 1994 Verve Label Group」；九軌依序為〈Sometimes I'm Happy〉〈Algo Bueno (Woody'n You)〉〈Trumpet Blues〉〈Ballad Medley〉〈Blue Moon〉〈I've Found a New Baby〉〈Pretty Eyed Baby〉〈I Can't Get Started〉〈Limehouse Blues〉。",
+    "src": "https://music.apple.com/us/album/1443173406"
+   }
+  ],
+  "hookCandidates": [
+   "同一批錄音被切成四張碟賣過：兩輯正編，外加《Trumpet Battle》與《The Trumpet Kings》",
+   "《Billboard》說第一套聽起來像一場對砍，第二套才變成互相刺激"
+  ],
+  "sound": "Clef 原盤五軌，MB 的曲長從 5:34 的〈Pretty Eyed Baby〉到 10:59 的〈I Can't Get Started〉——每一軌都在五分半以上，兩支小號各有大段。維基的 Personnel 欄記節奏組是 Oscar Peterson、Herb Ellis、Ray Brown 與 Louis Bellson。（本欄由 MB release 9cbeb151 的曲長與維基 Personnel 欄歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "I Can't Get Started",
+   "Trumpet Blues",
+   "I've Found a New Baby"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1955 與 MB release-group first-release-date 1955 一致（Clef MGC-641）。**錄音年是 1954**：英文維基〈Roy and Diz〉開頭寫「recorded in 1954」，Apple 條目的 releaseDate 1954-01-01 也是錄音年（策展層 curatorRisk 已自記這一點）。**不得互寫。** ⚠ 另有一處 MB 內部落差：GB release 記 1956-05，比 US／FR 的 1955 晚一年。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1954 與出版年 1955 不得互寫。**\n⚠ **掛名順序分歧（策展層已標，本層確認並補上 MB 原文）**：**MB 的 artist-credit 原文是「Dizzy Gillespie • Roy Eldridge」，Gillespie 在前**；Apple 的掛名是「Roy Eldridge & Dizzy Gillespie」，Roy 在前。卡片取 Apple 那一種（見 rulings.md 第 3 條）。**行文不得寫「誰領銜」「誰的名字排在前面」**——兩個來源相反。\n⚠ **盤名兩種寫法**：MB 的 RG 標題用「&」、MB 的三筆 1950 年代 release 與 Apple 都用「and」。維基條目名是〈Roy and Diz〉。都是同一張。\n⚠ **這是第 168 條的卷號盤（本張最重要的一條）**：維基明講原本**分成兩輯**發行，《Roy & Diz》與《Roy & Diz #2》是**不同的兩張碟**。**行文不得把第二輯的曲目寫進來**，尤其〈Sometimes I'm Happy〉〈Ballad Medley〉〈Blue Moon〉〈Limehouse Blues〉這四首**屬於 #2、不是本盤**。同一批場次還被切成《Trumpet Battle》與《The Trumpet Kings》兩張，這件事本身可寫（維基有列），但**不得寫成本盤包含它們**。\n⚠ **試聽（本層推翻探測層的 unavailable，改判 ready，但附鎖曲要求）**：探測層十個店面 `us:0→0 gb:0→0 fr:1→0 …`，判 unavailable。依第 166 條改打藝人頁 `lookup?id=119743&entity=album&limit=200&country=us`（Roy Eldridge），命中 **collectionId 1443173406**《Roy and Diz》、9 軌、℗ 1994 Verve。本層以 `lookup?id=1443173406&country=us&entity=song` 逐軌核對：**Clef 原盤那 5 軌全部在裡面，但被打散在第 2、3、6、7、8 位，第 1 軌是《Roy & Diz #2》的〈Sometimes I'm Happy〉**。也就是說**這一筆 Apple 條目是把兩輯合成一張的 1994 年 CD，不是本盤的數位版**。\n**本層裁定：試聽改判 ready，front `us`、collectionId **1443173406**，但固定試聽**必須鎖第 6 軌〈I've Found a New Baby〉**（Clef 原盤的第 1 軌），不得取預設的第 1 軌〈Sometimes I'm Happy〉——那首不在本盤上（第 157 條的形狀）。** 依下放判準第 2 條（可逆：改的是卡單值）與第 3 條（不決定就沒有試聽）直接定。⚠ **若管線不支援鎖軌，本張寧可退回 unavailable，也不得用〈Sometimes I'm Happy〉當固定試聽。**\n⚠ **擋下策展層一處無來源主張**：curatorWhy 寫這是「Norman Granz 安排他與 Gillespie 對吹的錄音……是搖擺到咆勃這條接縫**最直接的一份文獻**」——「最直接的一份文獻」無來源，**不得入文**；**「Norman Granz 安排」在維基本條目裡也沒有直述**（維基只說原本在 Clef 分兩輯發行），**同樣不得寫**。有源的替代是《Billboard》那句「cutting contest／互相刺激」。\n**互斥分派——本張獨占「兩支小號對吹」「同一批錄音被切成四張碟」與 Oscar Peterson 節奏組這條線。**"
+ },
+ {
+  "key": "desc2:Bunk Johnson|Bunk Johnson and His Superior Jazz Band",
+  "artist": "Bunk Johnson",
+  "album": "Bunk Johnson and His Superior Jazz Band",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 722df9b1 的欄位：title《Bunk Johnson and His Superior Jazz Band》、artist-credit「Bunk Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 1962、US 1991）。",
+    "src": "https://musicbrainz.org/release-group/722df9b1-2ae3-41bb-86da-58687306bb44"
+   },
+   {
+    "f": "該 release-group 底下 1962 年的 US release 由 Good Time Jazz 發行、編號 **M12048**（卡單記 L-12048）、載體 12\" Vinyl，10 軌：〈Panama〉2:58、〈Down by the Riverside〉3:01、〈Storyville Blues〉3:12、〈Ballin' the Jack〉3:08、〈Make Me a Pallet on the Floor〉3:26、〈Weary Blues〉2:46、〈Moose March〉3:26、〈Bunk's Blues〉2:46、〈Yes, Lord I'm Crippled〉2:51、**〈Bunk Johnson Talking Records〉9:27**。",
+    "src": "https://musicbrainz.org/release/58d85a5d-16eb-4210-9e7b-066616e9b4a2"
+   },
+   {
+    "f": "英文維基〈Bunk Johnson〉開頭：Willie Gary「Bunk」Johnson（1889 年 12 月 27 日–1949 年 7 月 7 日）是來自紐奧良的美國爵士小號手。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目：**1931 年他在路易斯安那州 Rayne 的一場舞會上因為打架掉了小號與門牙，演奏因此中斷**；此後他做粗工，偶爾教音樂。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目的 Career revival 段：1938 與 1939 年，早期爵士史著作《Jazzmen》的作者群訪問了 Louis Armstrong、Sidney Bechet、Clarence Williams 等人，這些人都盛讚 Johnson 當年在紐奧良的表現。作者群找到 Johnson 的地址、與他通了幾封信。Johnson 說只要有新牙與新小號他就能再吹。作家與樂手們發起募款，**由 Bechet 當牙醫的哥哥 Leonard 替他裝了一副假牙**，並送他一支新小號。**他 1942 年為 Jazz Man Records 錄下了他的第一批唱片。**",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目：「這批最早的錄音把 Johnson（連同單簧管手 George Lewis）推進了公眾視野。」Johnson 與他的樂團接著在紐奧良、舊金山、波士頓與紐約演出，錄了更多唱片。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目的 Selected discography 段列出 1942 年 6 月那批 Jazz Man 單曲：〈Down By The River / Panama〉（Jazz Man 8）、〈Weary Blues / Moose March〉（Jazz Man 9）、〈Storyville Blues / Bunk's Blues〉（Jazz Man 10），三筆都註明「Recorded in New Orleans, 1942」。",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "同一條目對他 1940 年代狀態的描述：「他最好的日子裡演奏充滿想像、細膩而優美，同時也說明了他為什麼沒有更早成名——他難以預測、脾氣大、帶著被動攻擊的性格，而且愛喝酒喝到影響演出。」",
+    "src": "https://en.wikipedia.org/wiki/Bunk_Johnson"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1532292817：標題《Bunk Johnson And His Superior Jazz Band》、掛名 Bunk Johnson、releaseDate **1957-01-01**、10 軌、notExplicit、copyright「℗ 1957 Good Time Jazz, Distributed by Concord.」；十軌曲名、曲序與 MB 的 M12048 逐項相同，曲長差在 0–4 秒內，末軌同樣是 9:27 的〈Bunk Johnson Talking Records〉。",
+    "src": "https://music.apple.com/us/album/1532292817"
+   }
+  ],
+  "hookCandidates": [
+   "他 1931 年在一場打架裡掉了小號與門牙，十一年後才靠一副募款買來的假牙重新錄音",
+   "最後一軌不是音樂，是九分二十七秒的說話"
+  ],
+  "sound": "Good Time Jazz 這一輯十軌，前九軌的曲長全部落在 2:46 到 3:26 之間——那是 78 轉單面的長度；末軌〈Bunk Johnson Talking Records〉9:27，是他自己說話。維基列出的 1942 年 Jazz Man 單曲曲名（〈Panama〉〈Weary Blues〉〈Moose March〉〈Storyville Blues〉〈Bunk's Blues〉）在這份曲目表上都找得到。（本欄由 MB release 58d85a5d 的曲目表與曲長、以及維基 Selected discography 段歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Panama",
+   "Storyville Blues",
+   "Bunk Johnson Talking Records"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1962 與 MB release-group first-release-date 1962 一致（Good Time Jazz）。**錄音年是 1942**：英文維基寫他 1942 年為 Jazz Man Records 錄下第一批唱片，並在 Selected discography 段把〈Panama〉〈Weary Blues〉〈Moose March〉〈Storyville Blues〉〈Bunk's Blues〉五個曲名逐一標「Recorded in New Orleans, 1942」——這五首都在本輯的曲目表上。**二十年落差，不得互寫。** ⚠ **Apple 記 1957**：探測層抓到的 collectionId 1532292817 標 releaseDate 1957-01-01、copyright 也寫 ℗ 1957 Good Time Jazz，**與 MB 的 1962 差五年**（探測層記 yearDrift 5）。**三個年份（1942 錄音／1957 Apple／1962 MB）並存，行文最多寫「1942 年錄的」與「後來由 Good Time Jazz 成套發行」，不得寫死發行年。** ⚠ **編號兩說**：卡單 L-12048、MB 記 M12048，**不要寫編號**。",
+  "notes": "**鐵則（本批第 3 條）：錄音年 1942 與出版年（MB 1962／Apple 1957）不得互寫，而且出版年本身兩說並存、不得寫死。**\n⚠ **擋下策展層一處因果主張**：curatorWhy 寫 1942 年那批錄音「**直接催生了** 1940 年代的紐奧良復興運動，**也是 Kid Ory、George Lewis 那一波復出的起點**」——維基只寫「These first recordings propelled Johnson (along with clarinetist George Lewis) into public attention」（把 Johnson 與 George Lewis 推進公眾視野）。**「直接催生復興運動」與「Kid Ory 復出的起點」都超出來源，不得入文。** 可寫的是「這批錄音把他與單簧管手 George Lewis 推進了公眾視野」。⚠ 尤其 **Kid Ory 那一句絕對不能寫**——同批就有 Kid Ory 的卡，維基〈Kid Ory〉自己的敘述是他 1943 年才復出、1944 年起靠 Orson Welles 的廣播節目帶起復興，與 Bunk Johnson 沒有因果關係的來源。\n✅ **策展層另外兩處查得住，可寫**：（1）「1930 年代已在路易斯安那的稻田當工人」——維基寫他 1920 年代初定居 New Iberia、在碾米廠（rice mills）與公立學校系統工作，**要照來源寫「碾米廠」，不要寫「稻田」**；（2）「1942 年被一群爵士研究者找出來裝了假牙重新錄音」——維基有 Jazzmen 作者群、募款與 Bechet 哥哥 Leonard 裝假牙的完整敘述，**可寫，而且假牙那條線只有本張能用**。\n**掛名**：MB 的 artist-credit 原文是「Bunk Johnson」（不是 Superior Jazz Band、不是 Bunk Johnson's Band），與卡片一致。\n**試聽（本層覆核通過）**：探測層 `us:1→1`、front `us`、collectionId **1532292817**、10 軌、notExplicit、cleanedOnly false、yearDrift 5。本層以 `lookup?id=1532292817&country=us&entity=song` 逐軌核對 MB 的 M12048：**十軌曲名、曲序逐項相同**（第 1 軌兩邊都是〈Panama〉、第 10 軌兩邊都是 9:27 的〈Bunk Johnson Talking Records〉），曲長差 0–4 秒。collectionName 無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**無異議。** yearDrift 5 已在 yearVerified 說明，不是配錯碟。\n**互斥分派——本張獨占「掉牙／假牙／Jazzmen 作者群把他找出來」這條復出線與 Good Time Jazz。**\n**本張禁用**：Kid Ory 的任何事（同批有 Kid Ory 的卡）、Orson Welles 的廣播節目、Crescent 廠牌。"
+ },
+ {
+  "key": "desc2:Kid Ory|Kid Ory Plays W.C. Handy",
+  "artist": "Kid Ory",
+  "album": "Kid Ory Plays W.C. Handy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group beefa6aa 的欄位：title 是《**Kid Ory Plays W.C Handy**》（W.C 後面沒有句點）、artist-credit「Kid Ory」、first-release-date 1959、primary-type Album、**secondary-types [Compilation]**、轄下 2 個 release（US 1959、US 2013）。",
+    "src": "https://musicbrainz.org/release-group/beefa6aa-5986-4388-aa4a-6d39ab058ac1"
+   },
+   {
+    "f": "該 release-group 底下 1959 年的 US release 由 Verve 發行、編號 MGV-1017、載體 12\" Vinyl、Cardboard/Paper Sleeve，7 軌：〈Aunt Hagar's Blues〉6:19、〈St. Louis Blues〉5:33、〈Harlem Blues〉5:41、〈Friendless Blues〉5:10、〈Joe Turner Blues〉4:38、〈Way Down South Where The Blues Began〉4:54、〈Yellow Dog Blues〉3:57。",
+    "src": "https://musicbrainz.org/release/dc33c95a-0ae9-499c-9d64-8942e2cf008a"
+   },
+   {
+    "f": "英文維基〈Kid Ory〉開頭：Edward「Kid」Ory（1886 年 12 月 25 日–1973 年 1 月 23 日）是美國爵士作曲家、長號手與樂團領班；他是滑音（glissando）技法最早的使用者之一，把它確立為紐奧良爵士的核心元素。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：1919 年 Ory 遷居洛杉磯，1922 年在當地與 Mutt Carey、Dink Johnson、Ed Garland 一起錄音，錄下〈Ory's Creole Trombone〉與〈Society Blues〉兩首器樂曲。維基對這批錄音的定性是「**They were the first jazz recordings made on the West Coast by an African American jazz band from New Orleans, Louisiana**」（來自紐奧良的非裔美國爵士樂團在西岸錄下的第一批爵士錄音）。他的樂團與 Nordskog Records 合作，Ory 自付壓片費、再以自己的品牌「Kid Ory's Sunshine Orchestra」在洛杉磯的 Spikes Brothers Music Store 販售。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：1925 年 Ory 遷居芝加哥，與 Louis Armstrong、Jelly Roll Morton、King Oliver、Johnny Dodds、Bessie Smith、Ma Rainey 等人工作與錄音；他是 Louis Armstrong 的 Hot Five 原始陣容成員，該團 1925 年 11 月 12 日首度錄音，他的作品〈Muskrat Ramble〉收在 1926 年 2 月的 Hot Five 場次裡。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "同一條目：大蕭條期間 Ory 退出音樂，直到 1943 年才重新演奏；1941 年他是 Jelly Roll Morton 在洛杉磯葬禮的抬棺者之一。1944 到約 1961 年他領導當時最好的紐奧良風格樂團之一。「Ory 的樂團是重新喚起大眾對紐奧良爵士興趣的重要力量」，靠的是 1940 年代的廣播——從 1944 年 3 月 15 日起在《The Orson Welles Almanac》節目上的每週固定時段開始。",
+    "src": "https://en.wikipedia.org/wiki/Kid_Ory"
+   },
+   {
+    "f": "英文維基〈W. C. Handy〉開頭：William Christopher Handy（1873 年 11 月 16 日–**1958 年 3 月 28 日**）是自稱「Father of the Blues」的美國作曲家與音樂家；他不是藍調的創造者，卻是最早把藍調形式付印出版的人之一，因而把藍調從觀眾有限的地方性風格帶到新的流行高度。",
+    "src": "https://en.wikipedia.org/wiki/W._C._Handy"
+   },
+   {
+    "f": "同一條目：1912 年〈The Memphis Blues〉樂譜出版，引介了他的十二小節藍調寫法；到 1917 年底他最成功的幾首歌已經出版，包括〈Memphis Blues〉〈Beale Street Blues〉與〈Saint Louis Blues〉。1919 年他與 Victor 簽約，第三度錄製他 1915 年不成功的〈Yellow Dog Blues〉，Joe Smith 的那個版本賣得很好，訂單數以十萬計。",
+    "src": "https://en.wikipedia.org/wiki/W._C._Handy"
+   },
+   {
+    "f": "Apple Music 美國店面的三個 Kid Ory 藝人頁——Kid Ory（artistId 2736339，27 張）、Kid Ory & His Creole Jazz Band（186304432，16 張）、Kid Ory's Creole Jazz Band（192783646，11 張）——以 lookup 端點全列後，**沒有任何一筆標題含「Handy」的專輯**。",
+    "src": "https://itunes.apple.com/lookup?id=2736339&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟七首曲子出自同一個人的筆下，而那個人在錄音期間過世",
+   "七首曲名裡有六首帶著 Blues 兩個字"
+  ],
+  "sound": "Verve MGV-1017 收七軌，MB 的曲長從 3:57 的〈Yellow Dog Blues〉到 6:19 的〈Aunt Hagar's Blues〉，七首全部是 W.C. Handy 的曲子、其中六首曲名帶 Blues。維基對 Ory 的定性是「滑音技法最早的使用者之一，把它確立為紐奧良爵士的核心元素」。（本欄由 MB release dc33c95a 的曲目表與曲長、以及維基〈Kid Ory〉開頭的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "St. Louis Blues",
+   "Aunt Hagar's Blues",
+   "Yellow Dog Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year=1959 與 MB release-group first-release-date 1959 一致（Verve MGV-1017）。⚠ **錄音年沒有可靠來源**：策展層 curatorWhy 寫「Verve **1958–1959 年**讓他整張演 W.C. Handy 曲目的錄音」，**本層在維基〈Kid Ory〉與〈W. C. Handy〉都找不到本張的錄音日期**，MB 也沒有登記。**「1958–1959 年錄的」不得入文，只能寫 1959 年 Verve 發行。** ⚠ 另一個可寫的時間點是 W.C. Handy 本人**卒於 1958 年 3 月 28 日**（維基有明確日期），與本張 1959 年的發行年相鄰。",
+  "notes": "**鐵則（本批第 3 條）：本張的錄音年查無來源，因此只能寫出版年 1959，不得寫任何錄音年份。**\n⚠ **擋下策展層一處時序主張（本張最重要的一條）**：curatorWhy 寫「1922 年在洛杉磯灌的《Ory's Creole Trombone》是**第一張由黑人紐奧良樂團發行的唱片**」——**與來源不符，不得照抄**。英文維基〈Kid Ory〉的原話有兩層限定：「the first jazz recordings made **on the West Coast** by an African American jazz band from New Orleans」——限定在**西岸**、而且說的是「錄音」不是「發行的唱片」。**要寫就照維基的完整限定寫「來自紐奧良的非裔美國爵士樂團在西岸錄下的第一批爵士錄音」，任何把「西岸」拿掉的寫法一律禁用。**\n⚠ **另一處要修正**：curatorWhy 寫本張是「他晚期領銜盤裡**最完整的一份**」——無來源，**不得入文**。\n⚠ **secondary-types 是 [Compilation]**：MB 把這個 release-group 標成整編。**行文不得寫成「他進錄音室錄的一張新碟」**；也**不得因此斷言它是選輯**——1959 年那筆 release 只有一個 medium、七軌，形狀像一張完整 LP。**最安全的寫法是只描述曲目與廠牌，不定性。**\n⚠ **盤名少一個句點**：MB 的 RG 與 release 標題都是「Kid Ory Plays W.C Handy」，卡片取正式寫法「Kid Ory Plays W.C. Handy」。策展層已依裁定第 91／95 條處理，本層無異議。\n**試聽（本層覆核，維持 unavailable）**：探測層十個店面 `0→0` 全滅。依第 166 條改打藝人頁 lookup，**三個 Kid Ory 藝人實體全列**（2736339 的 27 張、186304432 的 16 張、192783646 的 11 張），**沒有任何一筆標題含 Handy**。策展層 curatorRisk 提到的 gb collectionId 844518067《Kid Ory joue W. C. Handy (Mono Version) - EP》是六軌 EP、掛名 Edward Kid' Ory Orchestra，**軌數與掛名都對不上 Verve 的七軌原盤，不得當試聽來源**（本層同意策展層的判斷）。**維持 unavailable，無異議。**\n**互斥分派——本張獨占 W.C. Handy 這個作曲者、Ory 的長號滑音、1922 年洛杉磯 Nordskog 那批錄音，以及 Orson Welles 廣播節目帶起復興這條線。**\n**本張禁用**：Bunk Johnson 的假牙／Jazzmen 作者群（同批有 Bunk Johnson 的卡）；也**不得寫成 Bunk Johnson 那批錄音帶起了 Ory 的復出**——沒有來源。"
  }
 ]
