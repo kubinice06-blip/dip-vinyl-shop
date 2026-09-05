@@ -312,5 +312,446 @@
   "status": "full",
   "yearVerified": "卡片 year 1972 是**這套錄音首次成套出版的年份**：MB release-group first-release-date 1972、原盤 release（Atlantic SD 7224）同、Apple US 記 1972-01-01，三方一致。**錄音年是 1949**（維基記 Ertegun 1949 年到亞特蘭大安排的那場，「The complete session was released in 1972 as Atlanta Twelve-String」），與出版年相差 23 年。",
   "notes": "**⚠ 寫作層鐵則：1972 是出版年，1949 是錄音年，不得互寫。**維基那句「The complete session was released in 1972」把兩個年份放在同一句，寫作層引用時務必保持兩者的分工。\n試聽探測 ready 且**配對正確**：collectionId 40286578、店面 us、15 軌對得上 MB 1972 原盤。\n盤名寫法：MB／Apple 作「Atlanta Twelve String」，維基作「Atlanta Twelve-String」（帶連字號），兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱這是「McTell 晚年少數幾次進錄音室留下的完整成套錄音」——「晚年」「少數幾次」是時序與稀有度定位，查無來源，未採用。curatorRisk 提到 Curley Weaver 可能在場，本輪在維基查不到這一句（只有搜尋摘要提及「may have been present」），**未寫進 facts**。"
+ },
+ {
+  "key": "desc2:Big Bill Broonzy|Big Bill Broonzy Sings Folk Songs",
+  "artist": "Big Bill Broonzy",
+  "album": "Big Bill Broonzy Sings Folk Songs",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 65e0a083 的欄位：title「Big Bill Broonzy Sings Folk Songs」、artist-credit「Big Bill Broonzy」、first-release-date 1962、primary-type Album、secondary-types 空，轄下 3 個 release（1962 US／1989 US／2016-02 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/65e0a083-480f-3dae-822b-8b894f23a8de"
+   },
+   {
+    "f": "該 release-group 的 1962 年原盤 release 04e56801 欄位：標題在唱片上作「Sings Folk Songs」、1962、US、status Official、廠牌欄 Folkways Records、編號 FA 2328、載體 12\" Vinyl、11 軌。逐軌曲名與曲長依序為〈Backwater Blues〉2:50、〈This Train〉3:00、〈I Don't Want No Woman (to Try to Be My Boss)〉3:08、〈Martha〉5:00、〈Tell Me Who〉3:41、〈Bill Bailey〉1:57、〈Alberta〉2:13、〈Goin' Down This Road〉2:22、〈Tell Me What Kind of Man Jesus Is〉2:16、〈John Henry〉4:44、〈Glory of Love〉3:23。",
+    "src": "https://musicbrainz.org/release/04e56801-90c0-4e50-bce2-74cdb2bfeb68"
+   },
+   {
+    "f": "Shore Fire Media 的 Smithsonian Folkways／Vinyl Me, Please 再發新聞稿記：本輯「Originally released in 1962」；曲目取自 Folkways 位於紐約的錄音室，以及 1950 年代在芝加哥與 Pete Seeger 同台的一場實況；「By the time the tracks were released, Broonzy had passed away due to lung cancer」，Folkways 的 Moses Asch 是以紀念的名義發行這張唱片。稿中列出的十一首曲名與 MB 原盤逐軌相同。",
+    "src": "https://shorefire.com/releases/entry/smithsonian-folkways-joins-vinyl-me-please-to-reissue-1962-classic-big-bill"
+   },
+   {
+    "f": "英文維基〈Big Bill Broonzy〉記：他 1957 年 7 月被診斷出喉癌，1958 年 8 月 15 日在送往 Billings Hospital 途中因癌症過世；1938 年他頂替剛過世的 Robert Johnson 在卡內基廳的「From Spirituals to Swing」演出，1939 年同場地的音樂會也再度登台。",
+    "src": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy"
+   },
+   {
+    "f": "同條目記：1951 年的歐洲巡演是他境遇的轉捩點，所到之處都獲得起立鼓掌；1950 年代他回到獨奏的 folk-blues 路數，成為當時美國民謠復興的主要人物之一；條目也記載他與 Pete Seeger、Studs Terkel 的往來，包括 1949 年的民謠劇《I Come for to Sing》。",
+    "src": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 86302512 的欄位：collectionName「Big Bill Broonzy Sings Folk Songs」、artistName Big Bill Broonzy、releaseDate 1956-01-01、trackCount 11、notExplicit。11 軌與 MB 1962 年原盤相符。",
+    "src": "https://music.apple.com/us/album/86302512"
+   }
+  ],
+  "hookCandidates": [
+   "唱片上市的時候，唱的人已經走了四年",
+   "十一首歌一半不是藍調，是民謠"
+  ],
+  "sound": "十一軌長度落差很大：最短〈Bill Bailey〉1:57，最長〈Martha〉5:00、〈John Henry〉4:44——錄音室與實況兩批素材放在同一張碟上（MB 1962 Folkways 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Backwater Blues",
+   "John Henry",
+   "This Train",
+   "Glory of Love"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1962 是**Folkways FA 2328 的首次發行年**：MB release-group first-release-date 1962、原盤 release 亦記 1962，Shore Fire 的 Smithsonian Folkways 稿也寫「Originally released in 1962」，三方一致。**錄音年是 1950 年代**（Folkways 紐約錄音室的未發表錄音，加上 1950 年代在芝加哥與 Pete Seeger 同台的實況；Broonzy 1958 年 8 月 15 日已過世，因此所有素材必在 1958 年之前）。**Apple 的 releaseDate 記 1956-01-01，與 MB 差六年**，依裁定第 77 條只當訊號、不當版本門檻，也不改卡片 year。",
+  "notes": "**⚠ 寫作層鐵則：1962 是唱片發行年，錄音是 1950 年代（歌手 1958 年就過世）。不得把 1962 寫成錄音年，也不得把 Apple 的 1956 寫成發行年。**\n本卡 secondary-types 為空，MB 判為正規專輯而非整編輯，但**素材本身是遺作**——寫作層要說清楚「發行時人已不在」，不要寫成他 1962 年進錄音室。\n試聽探測 ready 且**配對正確**：collectionId 86302512、店面 us、11 軌對得上 MB 原盤（Apple 日期偏差不影響版本判定）。\n盤名寫法：唱片實體與 MB release 作「Sings Folk Songs」，release-group 與 Apple 作「Big Bill Broonzy Sings Folk Songs」，兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱本輯是「他 1956–1957 年最後幾次錄音」「部分與 Pete Seeger、Sonny Terry、Brownie McGhee 同場」「是 Smithsonian Folkways 至今仍在架的 Broonzy 目錄核心」——「1956–1957」這個精確區間、Sonny Terry 與 Brownie McGhee 的同場、以及「目錄核心」的地位定位，本輪都查無來源，**未採用**；有來源的只有「Folkways 紐約錄音室＋1950 年代芝加哥與 Pete Seeger 同台實況」。"
+ },
+ {
+  "key": "desc2:Tampa Red|Don't Tampa With the Blues",
+  "artist": "Tampa Red",
+  "album": "Don't Tampa With the Blues",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f60e6e42 的欄位：title 用彎引號寫作「Don’t Tampa With the Blues」、artist-credit「Tampa Red」、first-release-date 1961、primary-type Album、secondary-types 空，轄下 2 個 release（1961 US／1992 DE），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/f60e6e42-fba6-440f-b0aa-2f46c3c7f11f"
+   },
+   {
+    "f": "該 release-group 的 1961 年原盤 release 5cc1f3da 欄位：1961、US、status Official、廠牌欄 Bluesville、編號 BVLP 1030、載體 Vinyl、10 軌。逐軌曲名與曲長依序為〈I'm a Stranger Here〉4:03、〈Let Me Play With Your Poodle〉2:56、〈Goodbye, Baby〉4:48、〈Things About Coming My Way〉3:19、〈Kansas City Blues〉7:23、〈You Better Do Right〉4:35、〈Louise Blues〉5:23、〈It's Tight Like That〉4:05、〈You Got to Love Her With a Feeling〉5:50、〈Boogie Woogie Women〉3:06。",
+    "src": "https://musicbrainz.org/release/5cc1f3da-0b95-4646-86ae-7180659e176c"
+   },
+   {
+    "f": "英文維基〈Tampa Red〉記：本名 Hudson Woodbridge、後改 Hudson Whittaker，生 1903 年 1 月 8 日、卒 1981 年 3 月 19 日；1930 年代起以「The Guitar Wizard」的名號掛牌；1928 年與 Georgia Tom（Thomas A. Dorsey）合作的〈It's Tight Like That〉賣了一百萬張。",
+    "src": "https://en.wikipedia.org/wiki/Tampa_Red"
+   },
+   {
+    "f": "同條目記：1928 年他成為第一位彈 National 鋼體共鳴吉他的黑人樂手，用的是鍍金 tricone；他的手法是單弦跑句而不是塊狀和弦；他 78 轉唱片上的歌估計有 335 首，其中 251 首錄於 1928 至 1942 年間；1934 年簽 Victor，一直待到 1953 年。",
+    "src": "https://en.wikipedia.org/wiki/Tampa_Red"
+   },
+   {
+    "f": "同條目記：他在 1960 年錄了兩張專輯《Don't Tampa with the Blues》與《Don't Jive Me》，兩張都由 Bluesville 發行。",
+    "src": "https://en.wikipedia.org/wiki/Tampa_Red"
+   },
+   {
+    "f": "英文維基〈Bluesville Records〉記：Bluesville 是 Prestige Records 的子廠，1959 年成立、1966 年停發 LP，編號用 BVLP 前綴；它專門錄被市場遺忘的老一輩藍調樂手，被點名的有 Roosevelt Sykes、Lightnin' Hopkins、Brownie McGhee 與 Sonny Terry。",
+    "src": "https://en.wikipedia.org/wiki/Bluesville_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1775248899 的欄位：collectionName「Don't Tampa With The Blues (Remastered 1992)」、artistName Tampa Red、releaseDate 1960-01-01、trackCount 10、notExplicit。10 軌與 MB 1961 年原盤相符。",
+    "src": "https://music.apple.com/us/album/1775248899"
+   }
+  ],
+  "hookCandidates": [
+   "盤名把自己的藝名當動詞用",
+   "三十三年前那首賣了一百萬張的歌，這裡自己重錄一次"
+  ],
+  "sound": "十軌有六軌超過四分鐘，最長〈Kansas City Blues〉7:23、〈You Got to Love Her With a Feeling〉5:50——這是 LP 的長度，不是他 1928–1942 年那 251 首 78 轉的長度（MB 1961 Bluesville 原盤逐軌曲長）。",
+  "keyTracks": [
+   "It's Tight Like That",
+   "Kansas City Blues",
+   "Let Me Play With Your Poodle",
+   "I'm a Stranger Here"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1961 是 **Bluesville BVLP 1030 的發行年**：MB release-group first-release-date 1961、原盤 release 同。**錄音年依維基是 1960**（「He recorded two albums in 1960: Don't Tampa with the Blues and Don't Jive Me, both released on the Bluesville label」），**Apple 的 releaseDate 也記 1960-01-01**。錄音 1960／發行 1961，相差一年；依規定不改卡片 year，1960 這個說法交主線。",
+  "notes": "**⚠ 寫作層鐵則：1961 是 Bluesville LP 的發行年，1960 是錄音年，不得互寫。**這張與別張不同——它**不是後世整編**（secondary-types 空），是他本人 1960 年進錄音室錄的新專輯，寫作層不要寫成「戰前 78 轉的整編」。\n試聽探測 ready 且**配對正確**：collectionId 1775248899、店面 us、10 軌對得上 MB 原盤；appleTitle 帶「(Remastered 1992)」後綴，是同一張碟的 1992 重製版，非另一張碟。同目錄的 1775248705《Don't Jive Me》是姊妹盤、**不是本張**。\n盤名寫法：MB 用彎引號 U+2019「Don’t」、卡單與 Apple 用 ASCII 直引號，兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱「Tampa Red 在 1930 年代是 Bluebird 的當家藝人」「戰後幾乎銷聲匿跡」「Prestige／Bluesville 的藍調復興計畫把他找回錄音室錄了兩張，這是第一張」——「當家藝人」「幾乎銷聲匿跡」是評價、「這是第一張」是序數主張，本輪都查無來源，**未採用**；維基只支持「1960 年錄了兩張、都在 Bluesville」與「1934 年簽 Victor、待到 1953 年」。"
+ },
+ {
+  "key": "desc2:Victoria Spivey|Woman Blues!",
+  "artist": "Victoria Spivey",
+  "album": "Woman Blues!",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f3a45f67 的欄位：title「Woman Blues!」、artist-credit「Victoria Spivey with Lonnie Johnson」、first-release-date 1962、primary-type Album、secondary-types 空，轄下 2 個 release（1962 US／1994 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/f3a45f67-a0f4-4a9f-8d96-5927b3887d1c"
+   },
+   {
+    "f": "該 release-group 的 1962 年原盤 release c5373f63 欄位：1962、US、status Official、廠牌欄 Bluesville、編號 BV 1054、載體 12\" Vinyl、10 軌。逐軌曲名與曲長依序為〈Christmas Without Santa Claus〉3:22、〈A Big One〉3:40、〈Let's Ride Tonight〉2:30、〈What Is This Thing They're Talking About〉4:00、〈I'm a Red Hot Mama〉3:33、〈Grow Old Together〉2:58、〈Beautiful World〉2:54、〈I Got Men All Over This Town〉5:06、〈That Man〉2:56、〈Thursday Girl〉2:51。",
+    "src": "https://musicbrainz.org/release/c5373f63-a027-4435-9f51-0b46fa9d64ab"
+   },
+   {
+    "f": "英文維基〈Victoria Spivey〉記：本名 Victoria Regina Spivey，生 1906 年 10 月 15 日於德州休士頓、卒 1976 年 10 月 3 日於紐約市；1926 年在 Okeh 的出道錄音〈Black Snake Blues〉賣得好，開啟橫跨四十年的錄音生涯。",
+    "src": "https://en.wikipedia.org/wiki/Victoria_Spivey"
+   },
+   {
+    "f": "同條目記：她與吉他手兼歌手 Lonnie Johnson 合作過數首錄音，包括 1927 年 Okeh 的〈Dope Head Blues〉；1929 年導演 King Vidor 找她在其首部有聲片《Hallelujah!》飾演 Missy Rose。",
+    "src": "https://en.wikipedia.org/wiki/Victoria_Spivey"
+   },
+   {
+    "f": "同條目記：她 1961 年復出，與老搭檔 Lonnie Johnson 重聚、參與他 Prestige Bluesville 專輯《Idle Hours》的四首；同年她與爵士藍調史家 Len Kunstadt 創辦 Spivey Records；她的 Bluesville 作品包括 1962 年與 Alberta Hunter、Lucille Hegamin 合作的《Songs We Taught Your Mother》，以及 1962 年與 Lonnie Johnson 合作的《Woman Blues!》。",
+    "src": "https://en.wikipedia.org/wiki/Victoria_Spivey"
+   },
+   {
+    "f": "英文維基〈Bluesville Records〉記：Bluesville 是 Prestige Records 的子廠，1959 年成立、1966 年停發 LP，編號用 BVLP 前綴，專錄被市場遺忘的老一輩藍調樂手。",
+    "src": "https://en.wikipedia.org/wiki/Bluesville_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1770109928 的欄位：collectionName「Woman Blues! (Remastered 1994) [feat. Lonnie Johnson]」、artistName Victoria Spivey、releaseDate 1962-01-01、trackCount 10。英國店面另有 collectionId 1446883888「Woman Blues (Remastered)」、releaseDate 2009、10 軌。",
+    "src": "https://music.apple.com/us/album/1770109928"
+   }
+  ],
+  "hookCandidates": [
+   "1927 年在 Okeh 對唱的兩個人，1962 年又進了同一間錄音室",
+   "第八軌五分零六秒，全碟最長，歌名是〈I Got Men All Over This Town〉"
+  ],
+  "sound": "十軌有八軌落在 2:30 到 4:00 之間，最長的〈I Got Men All Over This Town〉5:06 幾乎是最短的〈Let's Ride Tonight〉2:30 的兩倍（MB 1962 Bluesville 原盤逐軌曲長）。",
+  "keyTracks": [
+   "I Got Men All Over This Town",
+   "I'm a Red Hot Mama",
+   "Grow Old Together",
+   "Christmas Without Santa Claus"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1962 是 **Bluesville BV 1054 的發行年**：MB release-group first-release-date 1962、原盤 release 同、Apple 美國店面那筆亦記 1962-01-01，三方一致。英文維基也把《Woman Blues!》列在 1962 年的 Bluesville 條目下。這張**不是後世整編**，發行年與錄音年相隔極近（錄音年本輪未查到明確日期，只知她 1961 年復出）。",
+  "notes": "**⚠ 錄音年未查得確切日期**：只能確定 1961 年復出、1962 年由 Bluesville 發行；寫作層**不得替錄音年編一個數字**，也不得把 1962 說成錄音年。\n**推翻探測層的店面選擇**：previews.json 標 ready，但配到的是 **gb 店面 collectionId 1446883888「Woman Blues (Remastered)」、appleYear 2009、盤名少了驚嘆號**（探測紀錄本身標 yearDrift 47、reissueTitle true）。本輪逐張回 lookup（id=2245814、country=us）查到**美國店面有更貼近原盤的一筆：collectionId 1770109928「Woman Blues! (Remastered 1994) [feat. Lonnie Johnson]」、releaseDate 1962-01-01、10 軌、店面 us**——盤名帶驚嘆號、年份對得上 1962、合掛 Lonnie Johnson 與 MB artist-credit 一致。**建議改用 1770109928／us**。\n盤名帶驚嘆號，正規化後與無驚嘆號寫法同鍵，兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱她是「1920 年代 classic blues 女歌手裡少數活到藍調復興、還自己開唱片公司的一位」「兩人 1920 年代就在 OKeh 合作過對唱，三十多年後同一組人再錄一次」——「少數」是稀有度定位、「對唱」是演出形式主張，本輪查無來源，**未採用**；維基支持的是「她與 Lonnie Johnson 合作過數首錄音，包括 1927 年 Okeh 的〈Dope Head Blues〉」與「1961 年創辦 Spivey Records」，寫作層請用這兩句。"
+ },
+ {
+  "key": "desc2:Sippie Wallace|Women Be Wise",
+  "artist": "Sippie Wallace",
+  "album": "Women Be Wise",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ccdd8d08 的欄位：title「Women Be Wise」、artist-credit「Sippie Wallace」、first-release-date 1966、primary-type Album、secondary-types 空，轄下 2 個 release（1966 US／1992 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/ccdd8d08-2354-3348-bcfb-a61b54964f0a"
+   },
+   {
+    "f": "該 release-group 的 1966 年 release 1fdfccda 欄位：1966、US、status Official、14 軌（MB 該筆未填廠牌欄與載體）。逐軌曲名與曲長依序為〈Women Be Wise〉3:54、〈Trouble Everywhere I Roam〉2:40、〈Lonesome Hours Blues〉3:00、〈Special Delivery Blues〉3:15、〈Murder Gonna Be My Crime〉3:49、〈SGambler's Dream〉3:18、〈Caldonia Blues〉2:53、〈You Got To Know How〉3:27、〈Shorty George Blues〉3:25、〈I'm a Mighty Tight Woman〉2:55、〈Bedroom Blues〉2:43、〈Up the Country Blues〉3:10、〈Suitcase Blues〉4:08、〈You Don't Know My Mind〉2:47。",
+    "src": "https://musicbrainz.org/release/1fdfccda-0f73-42a4-b38d-c4d4a752d798"
+   },
+   {
+    "f": "英文維基〈Sippie Wallace〉記：生 1898 年 11 月 1 日於阿肯色州 Plum Bayou、卒 1986 年 11 月 1 日於底特律，享年 88；早年跑帳篷秀時掛「The Texas Nightingale」的牌子。",
+    "src": "https://en.wikipedia.org/wiki/Sippie_Wallace"
+   },
+   {
+    "f": "同條目記：1923 至 1927 年間她為 Okeh 錄了四十多首，許多由她本人或兄弟 George、Hersal Thomas 所寫，代表作包括〈Shorty George〉、與 Louis Armstrong 合作的〈Special Delivery Blues〉，以及〈Bedroom Blues〉。",
+    "src": "https://en.wikipedia.org/wiki/Sippie_Wallace"
+   },
+   {
+    "f": "同條目記：1966 年她隨 American Folk Blues Festival 巡迴歐洲，同年在 Storyville Records 錄了專輯（條目寫作《Sings the Blues》），鋼琴由 Roosevelt Sykes 與 Little Brother Montgomery 擔任；〈Women Be Wise〉是她的招牌曲，Bonnie Raitt 後來把它收進 1971 年的同名首張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Sippie_Wallace"
+   },
+   {
+    "f": "同條目記：她的作品「helped inspire the musician Bonnie Raitt to take up singing and playing the blues in the late 1960s」，兩人在 1970、1980 年代一同巡演與錄音。",
+    "src": "https://en.wikipedia.org/wiki/Sippie_Wallace"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 276947151 的欄位：collectionName「Women Be Wise」、artistName Sippie Wallace、releaseDate 1966-01-01、trackCount 14、notExplicit。14 軌與 MB 1966 年 release 相符。",
+    "src": "https://music.apple.com/us/album/276947151"
+   }
+  ],
+  "hookCandidates": [
+   "1923 年在 Okeh 錄的歌，1966 年才第一次變成一張專輯",
+   "招牌曲被翻唱之後，原唱反而重新有人聽"
+  ],
+  "sound": "十四軌只有〈Suitcase Blues〉4:08 超過四分鐘，其餘全在 2:40 到 3:54 之間，開場的〈Women Be Wise〉3:54 是全碟第二長（MB 1966 release 逐軌曲長）。",
+  "keyTracks": [
+   "Women Be Wise",
+   "Special Delivery Blues",
+   "Shorty George Blues",
+   "I'm a Mighty Tight Woman"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1966 是 **Storyville SLP 198 的發行年**：MB release-group first-release-date 1966、1966 年 release 同、Apple US 記 1966-01-01，三方一致。維基也把她 1966 年的 Storyville 錄音與同年的 American Folk Blues Festival 歐洲巡演放在一起。**錄音年與發行年同為 1966**（維基：「recorded the album ... on Storyville Records that same year」），是本組少數兩者不分裂的一張。",
+  "notes": "**盤名有兩說，需主線裁定**：MB／Apple／卡單都作《Women Be Wise》，但英文維基把她 1966 年的 Storyville 專輯記作《Sings the Blues》。兩者是不是同一張碟、還是同一批錄音的兩種盤名，本輪查不到能一錘定音的來源。**已依規定不改卡片盤名**，facts 兩種寫法都留下、各自附源，交主線判。寫作層若要提盤名，只用 MB／Apple 的《Women Be Wise》。\n試聽探測 ready 且**配對正確**：collectionId 276947151、店面 us、14 軌對得上 MB 1966 release。\nMB 第 6 軌曲名 MB 上寫成〈SGambler's Dream〉（首字母疑似 MB 資料錄入錯誤），**寫作層不要引用這一軌的曲名**。\n**擋下策展層無來源說法**：curatorWhy 稱她「之後四十年只在教會彈風琴」「1966 年在 Storyville 錄的這一張是她復出的第一張專輯」「同名曲後來被 Bonnie Raitt 翻唱而在 1970 年代重新流通」——「四十年只彈風琴」與「復出的第一張」是時序／序數主張，本輪查無來源，**未採用**；維基支持的只有「1966 年隨 American Folk Blues Festival 巡歐、同年在 Storyville 錄音」與「Bonnie Raitt 1971 年首張收了〈Women Be Wise〉」。curatorWhy 另稱她「與 Louis Armstrong 和 Sidney Bechet 同場」——Louis Armstrong 有來源（〈Special Delivery Blues〉），**Sidney Bechet 查無來源，未採用**。"
+ },
+ {
+  "key": "desc2:Ida Cox|Blues for Rampart Street",
+  "artist": "Ida Cox",
+  "album": "Blues for Rampart Street",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e525c85b 的欄位：title「Blues for Rampart Street」、artist-credit「Ida Cox with the Coleman Hawkins Quintet」、first-release-date 1990、primary-type Album、secondary-types 空，轄下 2 個 release（1990 US／1 筆無日期無國別），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/e525c85b-e324-49eb-bab0-35b3275f13ad"
+   },
+   {
+    "f": "該 release-group 的 US release 77135f37 欄位：1990、US、status Official、廠牌欄 Riverside、編號 RLP-9374、載體 12\" Vinyl、10 軌。逐軌曲名與曲長依序為〈Blues for Rampart Street〉2:57、〈St. Louis Blues〉3:21、〈Fogyism〉4:29、〈Wild Women Don't Have the Blues〉3:16、〈Hard Times Blues〉4:14、〈Cherry Pickin' Blues〉3:30、〈Hard, Oh Lord〉3:47、〈Lawdy, Lawdy Blues〉5:56、〈Death Letter Blues〉3:38、〈Mama Goes Where Papa Goes〉3:25。",
+    "src": "https://musicbrainz.org/release/77135f37-fd7d-4d6f-a6fa-1496fc231903"
+   },
+   {
+    "f": "英文維基〈Ida Cox〉記：生 1888 年或 1896 年 2 月 26 日、卒 1967 年 11 月 10 日於田納西州 Knoxville；「Between September 1923 and October 1929, she recorded 78 titles for Paramount」，Paramount 給她的稱號是「The Uncrowned Queen of Blues」。",
+    "src": "https://en.wikipedia.org/wiki/Ida_Cox"
+   },
+   {
+    "f": "同條目記：1939 年她受邀參加 John Hammond 在卡內基廳的「From Spirituals to Swing」，唱〈'Fore Day Creep〉，伴奏是 James P. Johnson（鋼琴）、Lester Young（次中音薩克斯風）、Buck Clayton（小號）與 Dicky Wells（長號）。",
+    "src": "https://en.wikipedia.org/wiki/Ida_Cox"
+   },
+   {
+    "f": "同條目記：「She continued to perform until 1945, when she was forced into retirement after a debilitating stroke which occurred during a performance at a nightclub in Buffalo, New York.」",
+    "src": "https://en.wikipedia.org/wiki/Ida_Cox"
+   },
+   {
+    "f": "同條目記：《Blues for Rampart Street》的參與者有 Roy Eldridge、Coleman Hawkins、Sammy Price、Milt Hinton 與 Jo Jones；John Hammond 與製作人 Chris Albertson 在 1959 年找到她之後促成了這次錄音。",
+    "src": "https://en.wikipedia.org/wiki/Ida_Cox"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1442454284 的欄位：collectionName「Blues for Rampart Street (Remastered)」、artistName「Ida Cox & Coleman Hawkins Quintet」、releaseDate 1961-01-01、trackCount 10、notExplicit。10 軌與 MB 的 US release 相符。",
+    "src": "https://music.apple.com/us/album/1442454284"
+   }
+  ],
+  "hookCandidates": [
+   "中風退休十六年之後，有人把她找回錄音室",
+   "伴奏名單比主唱的名字還長"
+  ],
+  "sound": "十軌只有〈Lawdy, Lawdy Blues〉5:56 超過五分鐘，最短的是開場同名曲 2:57；十軌合計約 38 分鐘，是一張 LP 的長度（MB US release 逐軌曲長）。",
+  "keyTracks": [
+   "Wild Women Don't Have the Blues",
+   "Blues for Rampart Street",
+   "Death Letter Blues",
+   "Hard Times Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**卡片 year 1961 與 MB 不一致，是策展層依裁定第 91 條刻意取的值**：MB release-group first-release-date 記 **1990**（MB 上那筆 Riverside 標 RLP-9374、日期 1990，是 CD／再版年），但 Apple 美國店面記 **1961-01-01**，英文維基也把《Blues for Rampart Street》放在 1961 年的 Riverside 條目脈絡。**錄音／發行年是 1961，MB 的 1990 是再版年**。依規定不改卡片 year（1961 本來就是卡片值），MB 的 1990 這個說法交主線備查。**維基另記 John Hammond 與 Chris Albertson 是 1959 年找到她的**，1959 是尋人年、不是錄音年。",
+  "notes": "**⚠ 寫作層鐵則：這張有三個年份要分清楚——1961 是唱片年、1959 是 Hammond／Albertson 找到她的年、1923–1929 是她 Paramount 時期的錄音年（78 首）。MB 上的 1990 是再版年，不得寫進正文。**\n試聽探測 ready 且**配對正確**：collectionId 1442454284、店面 us、10 軌對得上 MB 的 US release；appleTitle 帶「(Remastered)」後綴，是同一張碟的重製版。\n掛名：MB artist-credit 是「Ida Cox with the Coleman Hawkins Quintet」、Apple 是「Ida Cox & Coleman Hawkins Quintet」，卡片取領銜的 Ida Cox。\n**擋下策展層無來源說法**：curatorWhy 稱她是「與 Ma Rainey、Bessie Smith 同期的 classic blues 三大女聲之一」「這一張是她生涯唯一的 LP，也是她留下的最後錄音」——「三大女聲」是評價、「唯一的 LP」與「最後錄音」是序數與時序主張，本輪都查無來源，**未採用**。維基支持的是「1945 年因中風被迫退休」與本輯的伴奏名單，寫作層請用這兩項。"
+ },
+ {
+  "key": "desc2:Gus Cannon|Walk Right In",
+  "artist": "Gus Cannon",
+  "album": "Walk Right In",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 477d6463 的欄位：title「Walk Right In」、artist-credit「Gus Cannon」、first-release-date 1962、primary-type Album、secondary-types 空，轄下 3 個 release（1962 US／1963 US／1999 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/477d6463-3164-324a-aac2-64ca00d3bcad"
+   },
+   {
+    "f": "該 release-group 的最早 release beda9865 欄位：1962、US、status Official、廠牌欄 Stax、編號 702、載體 12\" Vinyl、13 軌。逐軌曲名與曲長依序為〈Narration〉2:59、〈Kill It〉2:11、〈Walk Right In〉2:30、〈Salty Dog〉2:23、〈Going Around the Mountain〉1:58、〈Ol' Hen〉2:34、〈Gonna Raise a Ruckus Tonight〉2:20、〈Ain't Gonna Rain No More〉2:51、〈Boll Weevil〉2:42、〈Come on Down to My House〉1:25、〈Make Me a Pallet on Your Floor〉3:07、〈Get Up in the Morning Soon〉2:06、〈Crawdad Hole〉2:27。",
+    "src": "https://musicbrainz.org/release/beda9865-a25b-4715-b15f-e04b708b9f8f"
+   },
+   {
+    "f": "英文維基〈Gus Cannon〉記：生 1883 年 9 月 12 日於密西西比 Red Banks、卒 1979 年 10 月 15 日於曼菲斯，享年 96；Cannon's Jug Stompers 於 1928 年 1 月因 Victor 的錄音邀約而組成，團員含口琴手 Noah Lewis 與吉他手 Ashley Thompson。",
+    "src": "https://en.wikipedia.org/wiki/Gus_Cannon"
+   },
+   {
+    "f": "同條目記：Cannon 在 1963 年為 Stax Records 錄了一張專輯，同場的曼菲斯樂手有 Will Shade（Memphis Jug Band 的前團長）吹 jug、Milton Roby 打洗衣板；當時 Cannon 79 歲，本人彈五弦琴。",
+    "src": "https://en.wikipedia.org/wiki/Gus_Cannon"
+   },
+   {
+    "f": "英文維基〈Walk Right In〉記：這首歌由 Gus Cannon 所寫，1929 年由 Cannon's Jug Stompers 在 RCA Victor 首錄；The Rooftop Singers 的版本 1962 年 12 月發行，登上 Billboard Hot 100 冠軍並在 1963 年初蟬聯兩週；Cannon「received royalties as a songwriter and saw renewed interest in his music, which led to a recording contract of his own」。",
+    "src": "https://en.wikipedia.org/wiki/Walk_Right_In"
+   },
+   {
+    "f": "英文維基〈Stax Records〉記：Stax 由 Jim Stewart 於 1957 年創立、其姊 Estelle Axton 1958 年加入，廠名取自兩人姓氏（Stewart＋Axton）；公司原名 Satellite Records，1961 年 9 月因與加州同名廠牌衝突而改名 Stax；基地在田納西州曼菲斯。條目的「1957–1968: Atlantic Records era」藝人名單裡列有 Gus Cannon。",
+    "src": "https://en.wikipedia.org/wiki/Stax_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1775246168 的欄位：collectionName「Walk Right In」、artistName Gus Cannon、releaseDate 1962-01-01、trackCount 13、notExplicit。13 軌與 MB 最早 release 相符。",
+    "src": "https://music.apple.com/us/album/1775246168"
+   }
+  ],
+  "hookCandidates": [
+   "他 1929 年寫的歌，1963 年被別人唱成冠軍",
+   "第一軌不是歌，是他說話"
+  ],
+  "sound": "十三軌裡有兩軌不到兩分鐘（〈Come on Down to My House〉1:25、〈Going Around the Mountain〉1:58），最長的〈Make Me a Pallet on Your Floor〉也只有 3:07；開場的〈Narration〉2:59 在 MB 曲目上就叫「Narration」（MB 1962 Stax 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Walk Right In",
+   "Salty Dog",
+   "Boll Weevil",
+   "Make Me a Pallet on Your Floor"
+  ],
+  "status": "full",
+  "yearVerified": "**卡片 year 1962 與維基的錄音年 1963 打架，兩邊各有源，未擅改**：MB release-group first-release-date 1962、最早 release（Stax 702）記 1962、Apple US 記 1962-01-01——三方都說 1962。但英文維基〈Gus Cannon〉明寫「recorded an album for Stax Records in 1963」、當時 79 歲，而〈Walk Right In〉條目記 The Rooftop Singers 的版本是 1962 年 12 月發行、1963 年初才登頂。**依規定不改卡片 year，1963 這個錄音年說法交主線。**〈Walk Right In〉這首歌本身的首錄年是 1929（Cannon's Jug Stompers／RCA Victor）。",
+  "notes": "**⚠ 寫作層鐵則：這張有三個年份，一個都不能混——1929 是歌的首錄年、1962 是 MB／Apple 記的唱片年、1963 是維基記的錄音年與 Rooftop Singers 登頂年。年份衝突已在 yearVerified 標明，寫作層請避開「哪一年錄的」這個點，改寫有共識的部分。**\n試聽探測 ready 且**配對正確**：collectionId 1775246168、店面 us、13 軌對得上 MB 最早 release。\n**擋下策展層無來源說法**：curatorWhy 稱「這是 Stax 的第二張 LP」「也是這家日後的靈魂樂重鎮唯一一次錄戰前 jug band」——序數與「唯一一次」的主張，本輪在 Stax 條目查不到（該條目 1962–1963 年段只談單曲、不談 LP），**均未採用**。curatorWhy 稱「Stax 隨即把七十八歲的 Cannon 找進錄音室」——維基寫的是 **79 歲**、**1963 年**，數字與策展層不同，**以維基為準**。curatorWhy 稱他「1929 年寫的〈Walk Right In〉」——維基記 1929 年首錄，作者是 Cannon，這句可用。"
+ },
+ {
+  "key": "desc2:Barbecue Bob|Chocolate to the Bone",
+  "artist": "Barbecue Bob",
+  "album": "Chocolate to the Bone",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 23078490 的欄位：title「Chocolate to the Bone」、artist-credit「Barbecue Bob」、first-release-date 1992、primary-type Album、secondary-types [Compilation]，轄下只有 1 個 release，status Official。",
+    "src": "https://musicbrainz.org/release-group/23078490-9c9c-3a26-b797-8af707a36054"
+   },
+   {
+    "f": "該 release-group 唯一的 release 67de4752 欄位：1992、US、status Official、廠牌欄 Yazoo Records、編號 2005、載體 CD、20 軌。曲序自〈Motherless Chile Blues〉3:17、〈Spider and the Fly〉3:33、〈Yo Yo Blues〉3:00、〈Mississippi Heavy Water Blues〉3:04 起，中段收〈Barbecue Blues〉3:14、〈Atlanta Moan〉3:10，第 17 軌是同名曲〈Chocolate to the Bone〉2:55，末軌〈She Shook Her Gin〉3:11。",
+    "src": "https://musicbrainz.org/release/67de4752-4221-479e-a9fb-c314149203d3"
+   },
+   {
+    "f": "英文維基〈Barbecue Bob〉記：本名 Robert Hicks，生 1902 年 9 月 11 日、卒 1931 年 10 月 21 日，死因是肺結核加上流感引發的肺炎。",
+    "src": "https://en.wikipedia.org/wiki/Barbecue_Bob"
+   },
+   {
+    "f": "同條目記：他原先彈六弦吉他，1924 年搬到亞特蘭大之後改彈十二弦，成為當時新興的亞特蘭大藍調（以十二弦為特徵）的代表演奏者之一。",
+    "src": "https://en.wikipedia.org/wiki/Barbecue_Bob"
+   },
+   {
+    "f": "同條目記：「Between March 1927 and December 1930, Hicks recorded 68 songs for Columbia Records」，是該廠 race series 賣得最好的藝人之一；〈Barbecue Blues〉是他的第一首歌也是第一首賣座曲，很快賣出 15,000 張；〈Mississippi Heavy Water Blues〉錄於 1927 年 6 月。",
+    "src": "https://en.wikipedia.org/wiki/Barbecue_Bob"
+   },
+   {
+    "f": "同條目記：他的哥哥是 Charley Lincoln（又作 Charlie Lincoln／Laughing Charley）；Curley Weaver 是他的童年玩伴，兩人的吉他都是 Weaver 的母親教的，後來一起參與 Georgia Cotton Pickers 的錄音。",
+    "src": "https://en.wikipedia.org/wiki/Barbecue_Bob"
+   },
+   {
+    "f": "英文維基〈Yazoo Records〉記：Yazoo 由 Nick Perls 在 1960 年代中期創立，蒐集 1920 年代稀有 78 轉來整編早期美國藍調與根源音樂；1987 年被 Shanachie Records 收購。",
+    "src": "https://en.wikipedia.org/wiki/Yazoo_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1568075685 的欄位：collectionName「Chocolate To the Bone」（To 大寫）、artistName Barbecue Bob、releaseDate 1992-01-01、trackCount 20、notExplicit。20 軌與 MB 的唯一 release 相符。",
+    "src": "https://music.apple.com/us/album/1568075685"
+   }
+  ],
+  "hookCandidates": [
+   "三年半錄六十八首，二十九歲就沒了",
+   "第一首歌就賣一萬五千張"
+  ],
+  "sound": "二十軌全部落在 2:53 到 3:33 之間，沒有一軌超過三分三十三秒——整張碟的長度分布就是 78 轉單面的長度分布（MB 1992 Yazoo CD 逐軌曲長）。",
+  "keyTracks": [
+   "Barbecue Blues",
+   "Mississippi Heavy Water Blues",
+   "Chocolate to the Bone",
+   "Motherless Chile Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1992 是**這個 Yazoo 整編輯的出版年**：MB release-group first-release-date 1992、唯一 release（Yazoo 2005、CD）同、Apple US 記 1992-01-01，三方一致。**錄音年是 1927–1930**（維基：1927 年 3 月至 1930 年 12 月為 Columbia 錄了 68 首），與出版年相差約 62 年。",
+  "notes": "**⚠ 寫作層鐵則：1992 是 Yazoo 整編的出版年，1927–1930 是錄音年，不得互寫。**歌手 1931 年就過世，寫作層不得暗示他參與過 1992 這次發行。\n試聽探測 ready 且**配對正確**：collectionId 1568075685、店面 us、20 軌對得上 MB 的唯一 release。\n盤名寫法：MB 作「Chocolate to the Bone」、Apple 作「Chocolate To the Bone」（To 大寫），兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱他「是亞特蘭大十二絃吉他這一支……留下錄音最多的一位」「Yazoo 這一輯是他目前最容易取得的整編，也是……最常被引用的入口」——「最多」「最容易取得」「最常被引用」都是最高級評價，本輪查無來源，**均未採用**。維基支持的是「1924 年搬到亞特蘭大後改彈十二弦」「1927-03 至 1930-12 為 Columbia 錄 68 首」「與 Curley Weaver 童年相識、同為 Georgia Cotton Pickers 成員」。"
+ },
+ {
+  "key": "desc2:Washboard Sam|Rockin' My Blues Away",
+  "artist": "Washboard Sam",
+  "album": "Rockin' My Blues Away",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 74adf364 的欄位：title「Rockin' My Blues Away」、artist-credit「Washboard Sam」、first-release-date 1992、primary-type Album、secondary-types 空，轄下只有 1 個 release，status Official。",
+    "src": "https://musicbrainz.org/release-group/74adf364-fda4-34f0-92a9-562437c46525"
+   },
+   {
+    "f": "該 release-group 唯一的 release 1e0be4b3 欄位：1992、US、status Official、廠牌欄 Bluebird、編號 61042-2、載體 CD、22 軌。曲序自〈My Feet Jumped Salty〉2:50、〈Flying Crow Blues〉2:48、〈Levee Camp Blues〉2:46 起，第 10 軌是同名曲〈Rockin' My Blues Away〉2:47，末軌〈Soap and Water Blues〉3:06。",
+    "src": "https://musicbrainz.org/release/1e0be4b3-8f61-480f-873d-ae08b2b630b1"
+   },
+   {
+    "f": "英文維基〈Washboard Sam〉記：本名 Robert Clifford Brown，生 1910 年 7 月 15 日、卒 1966 年 11 月 6 日；他據傳是 Big Bill Broonzy 的同父異母兄弟。",
+    "src": "https://en.wikipedia.org/wiki/Washboard_Sam"
+   },
+   {
+    "f": "同條目記：他 1935 年開始為 Bluebird 與 Vocalion 錄音，1930 年代末到 1940 年代間「recorded over 160 tracks」；最後一次 RCA Victor 的錄音在 1949 年；1953 年與 Broonzy、Memphis Slim 又錄過一次。",
+    "src": "https://en.wikipedia.org/wiki/Washboard_Sam"
+   },
+   {
+    "f": "同條目記：他在芝加哥的錄音室場景裡擔任主唱兼洗衣板，參與大量 Bluebird 的 Lester Melrose 主持的錄音場次。",
+    "src": "https://en.wikipedia.org/wiki/Washboard_Sam"
+   },
+   {
+    "f": "英文維基〈Big Bill Broonzy〉記：Broonzy 1957 年 7 月被診斷出喉癌，1958 年 8 月 15 日過世；1938 年他頂替剛過世的 Robert Johnson 在卡內基廳的「From Spirituals to Swing」演出。",
+    "src": "https://en.wikipedia.org/wiki/Big_Bill_Broonzy"
+   }
+  ],
+  "hookCandidates": [
+   "主奏樂器是一塊洗衣板",
+   "二十二首歌長度全部擠在兩分四十一秒到三分二十秒之間"
+  ],
+  "sound": "二十二軌全部落在 2:41 到 3:20 之間，最短〈River Hip Mama〉2:41、最長〈You Can't Have None of That〉3:20（MB 1992 Bluebird CD 逐軌曲長）。",
+  "keyTracks": [
+   "Rockin' My Blues Away",
+   "I've Been Treated Wrong",
+   "Evil Blues",
+   "Flying Crow Blues"
+  ],
+  "status": "thin",
+  "yearVerified": "卡片 year 1992 是**這個 RCA／Bluebird 整編輯的出版年**：MB release-group first-release-date 1992、唯一 release（Bluebird 61042-2、CD）同。**錄音年是 1930 年代中至 1940 年代**（維基：1935 年起為 Bluebird 與 Vocalion 錄音，1930 年代末至 1940 年代錄超過 160 首，最後一次 RCA Victor 場次在 1949 年）。**Apple 上查無本盤，無第三方年份可比對。**",
+  "notes": "**判 thin。**素材預算：可查證細節只有六項——(1) MB release-group 欄位（1992／Album／secondary-types 空／單一 release）、(2) MB release 欄位（Bluebird 61042-2／CD／22 軌／逐軌曲長 2:41–3:20）、(3) 本名與生卒（1910-07-15～1966-11-06）、(4) 與 Big Bill Broonzy 的同父異母關係（維基用「reputedly」）、(5) 1935 年起在 Bluebird／Vocalion 錄音、1930s 末至 1940s 錄逾 160 首、1949 年最後一次 RCA Victor 場次、(6) 芝加哥錄音室場景與 Lester Melrose。**專輯本身沒有任何專文來源**（維基 Washboard Sam 條目完全沒提這張 1992 年的整編）。正文帶 **120–180 字**，主軸建議走「樂器」與「錄音年 vs 出版年」，不要試圖寫這張碟的製作經過。\n**⚠ 寫作層鐵則：1992 是整編出版年，1935–1949 是錄音年，不得互寫。**歌手 1966 年就過世。\n**維持試聽 unavailable，且已用 lookup 覆核**：previews.json tried 是 us:0→0／gb:0→0／de:0→0／ca:0→0／au:0→0 與 fr:3→0／dk:3→0／se:3→0／nl:3→0／jp:3→0。依第 166 條改打 `https://itunes.apple.com/lookup?id=2865509&entity=album&limit=200&country=<front>`，**us 與其餘九個店面逐一查過，Apple 沒有這張 Bluebird 61042-2**；藝人目錄裡只有 Document 的《Washboard Sam Vol. 1–7》系列與《The Washboard Sam Collection 1935-53》等，**沒有一筆對得上本盤的 22 軌曲序**。判定 unavailable 成立。\n**擋下策展層無來源說法**：Broonzy 這層關係維基自己用「reputedly（據傳）」，寫作層若要用，**必須照樣加保留語氣**，不得寫成確定的親屬關係。"
+ },
+ {
+  "key": "desc2:Lonnie Johnson|Blues & Ballads",
+  "artist": "Lonnie Johnson",
+  "album": "Blues & Ballads",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ba700add 的欄位：title「Blues & Ballads」、artist-credit「Lonnie Johnson with Elmer Snowden」、first-release-date 1960、primary-type Album、secondary-types 空，轄下 3 個 release（1960 US／1990 US／2025-03-14 XW），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/ba700add-8cdd-3cec-bdb5-b4937f02f541"
+   },
+   {
+    "f": "該 release-group 的 1960 年原盤 release b9c00127 欄位：1960、US、status Official、廠牌欄 Bluesville、編號 BVLP 1011、載體 12\" Vinyl、10 軌。逐軌曲名與曲長依序為〈Haunted House〉5:00、〈Memories of You〉4:22、〈Blues for Chris〉5:05、〈I Found a Dream〉4:35、〈St. Louis Blues〉3:08、〈I'll Get Along Somehow〉4:28、〈Savoy Blues〉4:13、〈Back Water Blues〉5:05、〈Elmer's Blues〉3:29、〈Jelly Roll Baker〉4:13。",
+    "src": "https://musicbrainz.org/release/b9c00127-254a-404e-87ae-9ed5cb1302de"
+   },
+   {
+    "f": "英文維基〈Lonnie Johnson (musician)〉記：本名 Alonzo Johnson，生 1899 年 2 月 8 日於紐奧良、卒 1970 年 6 月 16 日於多倫多；1925 年他在聖路易 Booker T. Washington Theatre 的藍調比賽奪冠，獎品是 Okeh 的錄音合約，1925 至 1932 年間為該廠錄了約 130 面。",
+    "src": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)"
+   },
+   {
+    "f": "同條目引藍調史家 Gérard Herzhaft 的說法：Johnson「undeniably the creator of the guitar solo played note by note with a pick, which has become the standard in jazz, blues, country, and rock」；他的單音獨奏影響了 Django Reinhardt、Charlie Christian 與 T-Bone Walker。",
+    "src": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)"
+   },
+   {
+    "f": "同條目記：1927 年 12 月他與 Louis Armstrong and His Hot Five 錄音，1928 年與 Duke Ellington 錄音，1928–1929 年與 Eddie Lang 的吉他二重奏被視為最早的跨種族爵士錄音之一；1948 年的〈Tomorrow Night〉在 Billboard Race Records 榜連七週冠軍、流行榜第 19 名，賣出三百萬張。",
+    "src": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)"
+   },
+   {
+    "f": "同條目記：1959 年電台主持人 Chris Albertson 在費城 Benjamin Franklin Hotel 找到當時在那裡工作的 Johnson，替 Bluesville 製作了《Blues by Lonnie Johnson》；《Blues & Ballads》則把他與樂團領班 Elmer Snowden 配在一起。",
+    "src": "https://en.wikipedia.org/wiki/Lonnie_Johnson_(musician)"
+   },
+   {
+    "f": "英文維基〈Bluesville Records〉記：Bluesville 是 Prestige Records 的子廠，1959 年成立、1966 年停發 LP，編號用 BVLP 前綴，專錄被市場遺忘的老一輩藍調樂手。",
+    "src": "https://en.wikipedia.org/wiki/Bluesville_Records"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 1820855345 的欄位：collectionName「Blues & Ballads」、artistName「Lonnie Johnson & Elmer Snowden」、releaseDate 記 1960、trackCount 10。美國店面另有 collectionId 1794910829「Blues & Ballads (Remastered 2025) [feat. Elmer Snowden]」、releaseDate 2025-03-14、10 軌。",
+    "src": "https://music.apple.com/gb/album/1820855345"
+   }
+  ],
+  "hookCandidates": [
+   "1959 年有人在費城的旅館裡找到他，他在那裡上班",
+   "一個 1899 年生的人，彈的是後來每個人都在彈的那種獨奏"
+  ],
+  "sound": "十軌有七軌超過四分鐘，最長的〈Blues for Chris〉與〈Back Water Blues〉都是 5:05，最短的〈St. Louis Blues〉3:08——這是 LP 的長度，不是他 1925–1932 年那 130 面 78 轉的長度（MB 1960 Bluesville 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Haunted House",
+   "Blues for Chris",
+   "Jelly Roll Baker",
+   "Back Water Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1960 是 **Bluesville BVLP 1011 的發行年**：MB release-group first-release-date 1960、原盤 release 同、Apple 英國店面那筆亦記 1960。這張**不是後世整編**（secondary-types 空），錄音與發行同屬 1959–1960 年那次重出江湖，**沒有錄音年／出版年分裂的問題**（錄音確切日期本輪未查得，不得編造）。",
+  "notes": "**⚠ 這張是本組少數「錄音年就在出版年附近」的一張**——寫作層不要套用「後世整編」的框架，但也**不得替錄音年寫一個沒查到的數字**。要注意分開的是另一組：1925–1932 是他 Okeh 時期的 130 面，1960 是這張 LP。\n試聽探測 ready 且**配對正確**：collectionId 1820855345、**店面 gb**（美國店面只有 2025 年的重製版 1794910829，年份離原盤較遠），10 軌對得上 MB 原盤，掛名「Lonnie Johnson & Elmer Snowden」與 MB artist-credit 一致。維持 gb。\n**擋下策展層無來源說法**：本卡策展層敘述裡的「三十多年後同一組人再錄一次」等時序定位出現在同批的 Victoria Spivey 卡，已在該卡註明未採用；本卡 facts 只用維基明文（1959 年 Albertson 在費城旅館找到他、《Blues & Ballads》與 Elmer Snowden 配對）。維基寫的是「working at the Benjamin Franklin Hotel」，**沒有寫他是清潔工**，寫作層不得加職稱。"
  }
 ]
