@@ -7083,9 +7083,21 @@
    "fr:12→0",
    "ie:12→0",
    "ca:2→0",
-   "au:2→0"
+   "au:2→0",
+   "gb:artistPage-restore→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1526177110,
+  "appleTitle": "Repeat - EP",
+  "appleArtist": "This Heat",
+  "appleYear": "1993",
+  "explicitness": "notExplicit",
+  "trackCount": 1,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/26/f4/2126f4b9-6819-ed4b-9767-8a038bb606ae/mzaf_4382652885484056375.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線裁定採用（二次還原）**：八個店面都命中 1526177110，但**那筆 Apple 條目只有同名首軌一軌**（20:20，對得上 MB 的 20:23），不是三軌全碟——原盤是〈Repeat〉〈Metal〉〈Graphic/Varispeed〉三軌。**主線裁定：試聽採用，但這個 collectionId 不得作為封面或任何後設資料（軌數、曲目、年份）的來源**，封面走 CAA。",
+  "partialCollection": true
  },
  "This Heat|Made Available: John Peel Sessions": {
   "batch": "c93",
@@ -7211,9 +7223,20 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "gb:artistPage-restore→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1502468694,
+  "appleTitle": "Pure Phase",
+  "appleArtist": "Spiritualized",
+  "appleYear": "1995",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/4d/2e/914d2e4c-d58a-f8e2-b5df-cc173c1f2389/mzaf_4235837838798419543.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線複驗（2026-09-05 二次還原）**：探測層判 unavailable 是誤判，成因是**掛名別名**——MB 的 artist-credit 是 Spiritualized Electric Mainline。逐軌比對 14/14 曲名、曲序、曲長全同。走第 166 條的藝人頁 lookup 才找到。"
  },
  "Spiritualized|Let It Come Down": {
   "batch": "c93",
@@ -7241,9 +7264,20 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "gb:artistPage-restore→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 724319797,
+  "appleTitle": "Whitechocolatespaceegg",
+  "appleArtist": "Liz Phair",
+  "appleYear": "1998",
+  "explicitness": "explicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/eb/7e/efeb7ee1-5c1a-0b55-7f56-0592989cb97c/mzaf_8648869874089948267.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線複驗（二次還原）**：探測層判 unavailable 是誤判，成因是**大小寫**——Apple 寫成首字母大寫的 Whitechocolatespaceegg。逐軌比對 16/16 全同。⚠ 同藝人 2003 年那張《Liz Phair》的 Apple 條目比 MB 少一軌（缺〈H.W.C.〉）且標 notExplicit，是另一張卡。"
  },
  "Liz Phair|Liz Phair": {
   "batch": "c93",
@@ -7336,9 +7370,21 @@
    "fr:4→0",
    "ie:4→0",
    "ca:1→0",
-   "au:1→0"
+   "au:1→0",
+   "gb:artistPage-restore→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1440756253,
+  "appleTitle": "Chinese Democracy",
+  "appleArtist": "Guns N' Roses",
+  "appleYear": "2008",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/05/e0/0405e09d-822f-f757-3535-ba1d9d3f39e2/mzaf_1072987212322894132.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線複驗（二次還原）**：探測層判 unavailable 是誤判，成因有兩層——**掛名的撇號有彎直兩形**，加上 search 端點漏掉整張碟（第 166 條），要走藝人頁 lookup 才撈得到。逐軌比對 14/14 全同。⚠ **Apple 的 collection 物件寫 trackCount 15，但 lookup 只回得出 14 個 song 列**（第 14 軌是〈Prostitute〉，與 MB 原盤一致）。**行文寫軌數一律以 14 為準。**",
+  "appleTrackCountField": 15
  },
  "The Sonics|Boom": {
   "batch": "c93",
@@ -7350,9 +7396,20 @@
    "fr:12→0",
    "ie:12→0",
    "ca:12→0",
-   "au:12→0"
+   "au:12→0",
+   "gb:artistPage-restore→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 626202316,
+  "appleTitle": "The Sonics Boom",
+  "appleArtist": "The Sonics",
+  "appleYear": "1977",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/51/4d/e4514df7-24ff-a35b-a1a2-de3581c4cd57/mzaf_3494638873685514198.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線複驗（二次還原）**：探測層判 unavailable 是誤判，成因是**Apple 把團名串進盤名**——條目作《The Sonics Boom》、卡片作《Boom》。12/12 同序，曲長差 1–8 秒。⚠ Apple 的年份欄是 1977（再版年），**不得寫成發行年**；原盤 1966（第 95 條）。"
  },
  "N.W.A|N.W.A. and the Posse": {
   "batch": "c96",
@@ -10057,5 +10114,225 @@
    "au:12→0"
   ],
   "status": "unavailable"
+ },
+ "The Art of Noise|In No Sense? Nonsense!": {
+  "batch": "c97",
+  "tried": [
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 992507403,
+  "appleTitle": "In No Sense? Nonsense!",
+  "appleArtist": "Art of Noise",
+  "appleYear": "1987",
+  "explicitness": "notExplicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/1a/fc/0a1afc1f-ca94-051f-7470-711006a6385e/mzaf_12350713723848186212.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "The Art of Noise|The Seduction of Claude Debussy": {
+  "batch": "c97",
+  "tried": [
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 1366139340,
+  "appleTitle": "The Seduction of Claude Debussy",
+  "appleArtist": "Art of Noise",
+  "appleYear": "1999",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/db/e5/ebdbe51d-432a-15b8-8370-f7ac957cfcc7/mzaf_11212247390296332733.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Global Communication|Fabric 26": {
+  "batch": "c97",
+  "tried": [
+   "gb:0→0",
+   "us:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "ie:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Reload|A Collection of Short Stories": {
+  "batch": "c97",
+  "tried": [
+   "gb:0→0",
+   "us:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "ie:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Pierre Henry|Le Voyage": {
+  "batch": "c97",
+  "tried": [
+   "gb:5→0",
+   "us:3→0",
+   "jp:5→0",
+   "de:5→0",
+   "fr:6→1"
+  ],
+  "front": "fr",
+  "collectionId": 1452649632,
+  "appleTitle": "Le voyage - Prisme",
+  "appleArtist": "Pierre Henry",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/f5/d4/55/f5d455d9-6313-a210-780e-827a5372cfdf/mzaf_431187891820481509.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 45,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Pierre Henry|Messe de Liverpool": {
+  "batch": "c97",
+  "tried": [
+   "gb:4→0",
+   "us:2→0",
+   "jp:4→0",
+   "de:4→0",
+   "fr:6→0",
+   "ie:4→0",
+   "ca:3→0",
+   "au:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "Bernard Parmegiani|Chants magnétiques": {
+  "batch": "c97",
+  "tried": [
+   "gb:3→0",
+   "us:3→0",
+   "jp:3→0",
+   "de:3→0",
+   "fr:3→0",
+   "ie:3→0",
+   "ca:3→0",
+   "au:3→0"
+  ],
+  "status": "unavailable"
+ },
+ "Bernard Parmegiani|Dedans dehors": {
+  "batch": "c97",
+  "tried": [
+   "gb:12→0",
+   "us:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ie:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Enya|The Celts": {
+  "batch": "c97",
+  "tried": [
+   "gb:6→1"
+  ],
+  "front": "gb",
+  "collectionId": 305695112,
+  "appleTitle": "The Celts (Remastered)",
+  "appleArtist": "Enya",
+  "appleYear": "1987",
+  "explicitness": "notExplicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/c1/00/e7c10035-fae6-fd97-1409-8c44800f6210/mzaf_8585014372728159331.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Enya|The Memory of Trees": {
+  "batch": "c97",
+  "tried": [
+   "gb:12→2"
+  ],
+  "front": "gb",
+  "collectionId": 68419193,
+  "appleTitle": "The Memory of Trees",
+  "appleArtist": "Enya",
+  "appleYear": "1995",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/6f/f6/b56ff6b9-ca27-002a-7c1e-ffb5942a5375/mzaf_2163147587781976171.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Enya|A Day Without Rain": {
+  "batch": "c97",
+  "tried": [
+   "gb:4→1"
+  ],
+  "front": "gb",
+  "collectionId": 96217801,
+  "appleTitle": "A Day Without Rain",
+  "appleArtist": "Enya",
+  "appleYear": "2000",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/dc/f8/6adcf8f1-74fd-27b8-b5fa-445971321512/mzaf_12841708266933575851.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Harold Budd|Abandoned Cities": {
+  "batch": "c97",
+  "tried": [
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 761117861,
+  "appleTitle": "Abandoned Cities",
+  "appleArtist": "Harold Budd",
+  "appleYear": "1982",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/d2/a0/01d2a002-9008-88a0-d910-78f9946de624/mzaf_8709894941385436060.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Harold Budd|Lovely Thunder": {
+  "batch": "c97",
+  "tried": [
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 714927549,
+  "appleTitle": "Lovely Thunder",
+  "appleArtist": "Harold Budd",
+  "appleYear": "1986",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/6b/43/686b4301-8328-f375-0bdc-1c50c826c7d8/mzaf_3149412660962328090.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Harold Budd|The White Arcades": {
+  "batch": "c97",
+  "tried": [
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 761125301,
+  "appleTitle": "The White Arcades",
+  "appleArtist": "Harold Budd",
+  "appleYear": "1988",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d0/19/1f/d0191f13-9cdf-d444-c06b-f1a9231cebd3/mzaf_10036858064331638434.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  }
 }
