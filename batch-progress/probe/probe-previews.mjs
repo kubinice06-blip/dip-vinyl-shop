@@ -99,7 +99,9 @@ const TWN = ['tw', 'hk', 'sg', 'my', 'us', 'jp', 'gb', 'cn'];
 // - 遊戲／動畫原聲（c-101／c-102）：**jp 排第一**，日本原聲的 Apple 覆蓋率在 jp 明顯高於 us；
 //   西方獨立遊戲（Undertale、Celeste、Hades、Minecraft）則落在 us，所以 jp→us 兩強並列。
 const BLU = ['us', 'gb', 'fr', 'dk', 'se', 'de', 'nl', 'jp', 'ca', 'au'];
-const WLD = ['us', 'gb', 'fr', 'ng', 'za', 'ci', 'sn', 'jm', 'eg', 'in', 'cu', 'mx', 'co', 'br', 'de', 'ca'];
+// 2026-09-05：`cu` 每一次都回 HTTP 400——**Apple 沒有古巴店面**（c-99 策展層實測 16 個店面時發現）。
+// 留著只會讓每張卡多花一次退避重試，且 400 不在重試白名單裡、會直接記成 `cu:400` 污染 `tried`。移除。
+const WLD = ['us', 'gb', 'fr', 'ng', 'za', 'ci', 'sn', 'jm', 'eg', 'in', 'mx', 'co', 'br', 'de', 'ca'];
 const GAME = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
