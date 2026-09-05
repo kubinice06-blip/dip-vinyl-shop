@@ -742,15 +742,6 @@
         <div id="mqSaved" style="font-size:10px;color:var(--gray);margin-top:6px;"></div>
       </div>
 
-      <div style="margin-bottom:40px;">
-        <div class="section-label" style="margin-bottom:16px;">類型挑片模式</div>
-        <div style="display:flex;border:1px solid var(--black);max-width:280px;">
-          <button id="modeDeepBtn" style="flex:1;padding:10px 0;border:none;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">深度挖掘</button>
-          <button id="modeFastBtn" style="flex:1;padding:10px 0;border:none;border-left:1px solid var(--black);font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">快速模式</button>
-        </div>
-        <div id="modeDesc" style="font-size:10px;color:var(--gray);margin-top:10px;line-height:1.9;"></div>
-      </div>
-
       <div class="section-label" style="margin-bottom:20px;">今日算力用量</div>
 
       <div style="margin-bottom:28px;">
@@ -1066,7 +1057,7 @@
           <button class="gbtn" id="daProfBattle" data-prof="battle">卡牌對戰</button>
         </div>
         <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;" id="daProfDesc">
-          <b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／直接來一張三處共用。
+          <b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／猜你喜歡／直接來一張三處共用。
           拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台載入時讀這份設定覆寫內建值。
           預覽封面取自 card_catalog（玩家實際抽過的卡）。</p>
         <div class="da-stage">
@@ -2042,7 +2033,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
     box.textContent = text;
   }
 
-
   // ── YouTube helpers ──
   function getYouTubeId(url) {
     const m = (url||'').match(/(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})/);
@@ -2479,7 +2469,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
   loadItems();
 
   // ── 題目管理 & Reels 管理 ──
-
 
   // ── 題目管理 ──
   async function loadQuizQuestions() {
@@ -3062,34 +3051,6 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('mqOfflineBtn')?.addEventListener('click', () => setMqMode('offline'));
   document.getElementById('mqOnlineBtn')?.addEventListener('click', () => setMqMode('online'));
   loadMqMode();
-
-  function renderGpModeUI() {
-    const mode = localStorage.getItem('gp_mode') || 'deep';
-    const deepBtn = document.getElementById('modeDeepBtn');
-    const fastBtn = document.getElementById('modeFastBtn');
-    const desc = document.getElementById('modeDesc');
-    if (!deepBtn) return;
-    if (mode === 'deep') {
-      deepBtn.style.background = 'var(--black)'; deepBtn.style.color = '#fff';
-      fastBtn.style.background = 'none'; fastBtn.style.color = 'var(--gray)';
-      desc.textContent = '深度挖掘：極冷門選片，多重限制條件，Spotify 命中率低，速度較慢';
-    } else {
-      fastBtn.style.background = 'var(--black)'; fastBtn.style.color = '#fff';
-      deepBtn.style.background = 'none'; deepBtn.style.color = 'var(--gray)';
-      desc.textContent = '快速模式：仍冷門但 Claude 有把握，Spotify 命中率高，速度快';
-    }
-  }
-
-  document.getElementById('modeDeepBtn').addEventListener('click', () => {
-    localStorage.setItem('gp_mode', 'deep');
-    renderGpModeUI();
-  });
-  document.getElementById('modeFastBtn').addEventListener('click', () => {
-    localStorage.setItem('gp_mode', 'fast');
-    renderGpModeUI();
-  });
-
-  renderGpModeUI();
 
   // ───────── 卡牌校正 ─────────
   const ovCardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim();
@@ -4037,7 +3998,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); renderRelics(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
 
   // ── 抽卡動畫：兩組參數 ──
-  //   front  → gameConfig/drawAnimation（心情選歌／類型挑片／直接來一張共用）
+  //   front  → gameConfig/drawAnimation（心情選歌／類型挑片／猜你喜歡／直接來一張共用）
   //   battle → gameConfig/drawAnimationBattle（卡牌對戰掠奪揭曉，節奏較快）
   // 面板拉桿即時生效、試抽即時預覽；各頁載入時讀這份覆寫內建值。
   // ⚠ 預設值必須與 dip-draw-anim.js 的 DEFAULTS 同步。
@@ -4057,7 +4018,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   };
   const DRAW_DOC_ID = { front:'drawAnimation', battle:'drawAnimationBattle' };
   const DRAW_PROF_DESC = {
-    front: '<b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／直接來一張三處共用。'
+    front: '<b>前台抽卡</b>（gameConfig/drawAnimation）＝心情選歌／類型挑片／猜你喜歡／直接來一張三處共用。'
          + '拉桿即時生效，按「試抽」立刻預覽；滿意後儲存，前台載入時讀這份設定覆寫內建值。'
          + '預覽封面取自 card_catalog（玩家實際抽過的卡）。',
     battle: '<b>卡牌對戰</b>（gameConfig/drawAnimationBattle）＝賽末「掠奪戰利品」揭曉那張卡。'

@@ -70,6 +70,15 @@ const ELEC = ['us', 'gb', 'de', 'fr', 'nl', 'jp', 'it', 'be', 'ca'];
 // 再發權在英美（Finders Keepers、Bombay Connection、Light in the Attic）與英國的南亞社群發行；
 // 古典線的 ECM／Navras／Nimbus 在 gb／de。依第 75 條，移民市場（gb／ca／ae）放在發行權之後。
 const INDIA = ['in', 'us', 'gb', 'de', 'fr', 'ca', 'ae', 'sg', 'au'];
+// c-67 起的日／英／美廠牌線（2026-09-03）：本國 storefront 先試，再發權常落在另外兩國
+// （日本自主爵士的再發在英國 BBE、美國 Light in the Attic；英國 DIY 的再發在美國 Superior Viaduct；
+// 美國私壓的再發在英國 Finders Keepers 等），所以三國互為第二順位，其後才是德法加澳。
+const JPN = ['jp', 'us', 'gb', 'de', 'fr', 'ca', 'au'];
+const UKB = ['gb', 'us', 'jp', 'de', 'fr', 'ie', 'ca', 'au'];
+const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
+const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
+  c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
+  c87: JPN };
 
 const cards = [];
 for (const b of BATCHES)
@@ -89,7 +98,8 @@ for (const b of BATCHES)
       : b.startsWith('c63') ? FOLKB
       : b.startsWith('c64') ? INDOCH
       : b.startsWith('c65') ? ELEC
-      : b.startsWith('c66') ? INDIA : GEN });
+      : b.startsWith('c66') ? INDIA
+      : LINE_FRONTS[b.slice(0, 3)] || GEN });
 
 // 預設沿用共用的 previews.json；跑收尾批時用 PREVIEWS_OUT 指到另一個檔，
 // 免得覆寫本機已經取用過的那份。

@@ -182,7 +182,13 @@
 - 只收 MusicBrainz `primary-type=Album`；Single、EP 不進一般卡池。**例外一**：白名單曲風可依「曲風 release type 例外」章節收 EP／Single／DJ-mix。**例外二（2026-08-21 店主核定）**：**重要合輯／精選集全曲風開放**，依「重要合輯／精選集」章節走精選制舉證，不需逐張請店主裁定。
 - 在打封面、評分與試聽 API 前，先對現有卡池與批次內做去重，節省流量。
 - 除了 artist+album 完全相同，必須人工檢查：不同 artist-credit、團名尾綴、`Vol.`／`Volume`、重音符號、特殊符號、譯名，以及片假名／漢字／羅馬拼音等跨文字系統版本。
-- 自我同名或極短名稱屬高風險；只有在 release 身分與固定試聽都已嚴格核對時才能收錄。
+- 自我同名或極短名稱屬高風險；**release 身分必須嚴格核對**（`identity.selfTitledVerified=true`）。
+  **2026-09-04 店主裁定放寬證據形式**：原規則要求「身分＋固定試聽都核對過」，等於把 Apple 有沒有
+  這張碟當成收錄條件；沖繩マルフク的嘉手苅林昌《嘉手苅林昌》(1965) 資料完整、CAA 有封面，
+  只因 Apple 三個 storefront 全空就被擋掉——**這種狀況就是要收錄**。
+  改為：`selfTitledVerified=true` 必填，身分證據則 **ready 試聽 ／ `identity.rgMbid` ／ §1 人工身分舉證
+  三者任一**即可。理由是這條規則要證明的是「配到的是哪一張碟」，release-group MBID 與 §1 的
+  舉證負擔都已經把碟釘死，試聽只是其中一種證據、且對非英美發行系統性失效。
 
 #### 外部識別：MBID 必填、UPC 盡力（2026-07-24 起新開批次適用）
 
@@ -344,3 +350,12 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
 - 更新 `PROJECT_MEMORY.md` 最上方紀錄批次數量、頂點判定、固定試聽分布與驗證結果。
 - 提交前再 fetch；只暫存本次檔案，直接 push `main`。
 - 回報「候選／排除／一般卡／頂點候選／ready／unavailable／disabled」數量，不用模糊的「大約完成」。
+
+7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬
+   （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
+   子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，
+   會先靠「同藝人傳播」落位，之後重跑即可補上。
+   ⚠ 兩份人工資料要一起維護：標籤推不出來的藝人寫進 `genre-artist-map.json`
+   （`{大類:{藝人:節點}}`，只在標籤落空時生效）；**新上架的台灣流行卡要把藝人加進
+   `tw-pop-artists.json`**，否則會留在「華語流行」而不是「台灣流行」——
+   c-pop 這個標籤分不出台港中星馬，只能靠出產地名單切。

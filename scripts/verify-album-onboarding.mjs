@@ -337,8 +337,17 @@ for (let index = 0; index < albums.length; index++) {
     }
   }
 
-  if (norm(artist) === norm(album) && !(identity?.selfTitledVerified === true && preview?.status === 'ready')) {
-    err(label, '自我同名卡只有在 identity.selfTitledVerified=true 且固定試聽 ready 時才能上架');
+  // 自我同名卡（2026-09-04 店主裁定放寬）：這條規則的目的是「證明配到的是哪一張碟」，
+  // 試聽只是其中一種證據。rgMbid 釘住 release-group、或 §1 走完人工身分舉證，
+  // 都已經把身分釘死；Apple 在該地區沒有這張碟不該讓資料完整的碟收不進來
+  // （沖繩マルフク的嘉手苅林昌同名盤就是被這條擋掉的）。因此改成：
+  // selfTitledVerified 必填，另外三種身分證據任一即可。
+  if (norm(artist) === norm(album)) {
+    if (identity?.selfTitledVerified !== true) {
+      err(label, '自我同名卡必須 identity.selfTitledVerified=true');
+    } else if (preview?.status !== 'ready' && !clean(identity?.rgMbid) && identity?.identitySource !== 'manual') {
+      err(label, '自我同名卡的身分證據不足：需要 ready 試聽、identity.rgMbid 或 §1 人工身分舉證三者之一');
+    }
   }
 
   if (publishedMode) {

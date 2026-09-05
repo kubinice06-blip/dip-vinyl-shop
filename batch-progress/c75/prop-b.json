@@ -1,0 +1,382 @@
+[
+ {
+  "artist": "Reverend Bernard Avant & The St. James Gospel Choir",
+  "album": "Reverend Bernard Avant & The St. James Gospel Choir",
+  "year": 1972,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gospel Truth Records（GTS-2710）",
+  "why": "Stax 1972 年開的福音副牌 Gospel Truth 的第十號出版品（GTS-2710，Discogs master 4149091，底下兩筆 1972 年 US release：5997805 市售盤、36602203 電台宣傳盤，版權掛 Stax 自家的 East/Memphis Music）。Gospel Truth 只存活到 1974 年，出版品不到三十張。實掃卡池：Stax 的福音線在池中零張；Stax 本體的靈魂樂卡在池中很厚，這個副牌一張都沒有。",
+  "risk": "**自我同名卡**（盤名等於掛名），依 §1 屬高風險；已實查 Apple `us` storefront 有精確條目（collectionId 1510815240，11 軌，藝人與盤名字串與本卡完全相等），不是查無。掛名分歧：Discogs 原盤的藝人欄拆成「Rev. W. Bernard Avant Jr.」與「The St. James Gospel Choir」兩個實體、封面標題印「Reverend Bernard Avant & The St James Gospel Choir」（St 後無句點），本卡採 MB artist-credit 的寫法，去重時 St／St. 兩種都要比。自我同名卡的試聽比對必須用完全相等（裁定第 90 條）。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple 實測 us storefront 有條目，collectionId 1510815240，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 61fc78a1-dc9d-47db-859a-45bbe92d25ce《Reverend Bernard Avant & The St. James Gospel Choir》，artist-credit「Reverend Bernard Avant & The St. James Gospel Choir」，first-release-date 1972，primary-type Album，secondary-types 空，轄下 1 個 release：1972 US Official，Gospel Truth Records GTS-2710。已回問 release-group 端點確認 primary-type 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Bernard Avant",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sons of Truth",
+  "album": "A Message from the Ghetto",
+  "year": 1972,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gospel Truth Records（GTS-2714）",
+  "why": "Gospel Truth 目錄裡最常被後世翻出來的一張（GTS-2714，Discogs release 1571806，另有兩筆宣傳盤 8473877／15365676 與 Monarch 壓片盤 27746475）。2010 年英國 Ace 集團的 BGP Records 以 CDBGPM 228 收進「BGP Funk & Jazz Classics」系列做 CD 重製（Discogs release 2834113），2017 年 Stax 自家再壓黑膠（STX00232，Discogs release 11151576，Stax 實體序號 24936、Gospel Truth Records 132359，12 軌，版本頁標 Reissue、零筆 Unofficial）。Apple `us` 亦有 13 軌數位版（collectionId 1442974213）。實掃卡池：Gospel Truth 零張。",
+  "risk": "MB 轄下三筆 release 的年份與國別分歧：1972-01-01 XW（掛 Stax、無編號）、1972 US（Gospel Truth GTS-2714）、2010-12-07 XE（BGP CDBGPM 228）。first-release-date 取 1972-01-01，與 Discogs 原盤的 1972 一致，無實質分歧；那個 01-01 是建檔者填的月日，行文不得當成確切發行日。盤名的介系詞大小寫：Discogs 原盤作《A Message From The Ghetto》、MB 同，本卡採句中小寫的中性寫法，去重兩種都要比。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple 實測 us storefront 有條目，collectionId 1442974213，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 320bfcb7-6c79-4a1a-bcd2-95757dea2435《A Message From The Ghetto》，artist-credit「Sons of Truth」，first-release-date 1972-01-01，primary-type Album，secondary-types 空，轄下 3 個 release：1972-01-01 XW Official（Stax，無編號）、1972 US Official（Gospel Truth Records GTS-2714）、2010-12-07 XE Official（BGP Records CDBGPM 228）。已回問 release-group 端點確認。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Sons of Truth",
+  "reissuedBy": "Stax",
+  "g": "b"
+ },
+ {
+  "artist": "Charles May & Annette May Thomas",
+  "album": "Songs Our Father Used to Sing",
+  "year": 1973,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gospel Truth Records（GTS 2715）",
+  "why": "Brother Joe May 的兩個孩子合灌的 LP，Gospel Truth 編號緊接在 Sons of Truth 之後（GTS 2715，Discogs master 1768120、release 3120787 市售盤與 15562281 宣傳盤，兩筆壓片廠分別為 Sonic Recording Products 與 Monarch）。實掃卡池：Brother Joe May 一系零張——他本人在 MB 上 1953–82 年沒有任何 primary-type Album 的 release-group（只有 1992／1994 兩張後世精選），這一支血脈只能從子女這一代進池。",
+  "risk": "掛名是兩人並列，MB artist-credit 用 &，Discogs 亦然，無分歧；但外部服務對長並列掛名的命中率低，`queryAlias` 填「Charles May」。盤名的 to／Used 大小寫在 Discogs 作《Songs Our Father Used To Sing》，本卡採 MB 的句中小寫寫法，去重兩種都要比。這張沒有授權再發，地位證據靠 Gospel Truth 的目錄位置與兩筆原盤條目（裁定第 82 條）。與同批《Reverend Bernard Avant》《A Message from the Ghetto》同屬 Gospel Truth，廠牌史角度只能分派給其中一張（裁定第 58 條）。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple 實測 us storefront 有條目，collectionId 1515389317，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group fbacc1ff-c06e-48d7-a930-7af6db7329dc《Songs Our Father Used to Sing》，artist-credit「Charles May & Annette May Thomas」，first-release-date 1973，primary-type Album，secondary-types 空，轄下 1 個 release：1973 US Official，Gospel Truth Records GTS 2715。已回問 release-group 端點確認。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Charles May",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Loving Sisters",
+  "album": "The Sisters and Their Sons",
+  "year": 1974,
+  "genres": [
+   "soul"
+  ],
+  "label": "ABC Peacock（PLP-59204）",
+  "why": "小岩城（Little Rock）的 Loving Sisters 在 Peacock 被 ABC 買下後出的 LP（PLP-59204，Discogs release 2514060，另有宣傳盤 28569679）。1981 年 MCA 接手 ABC 目錄後以 MCA-28086 再版（Discogs release 3702338，MCA Records 實體序號 878、Peacock Records 71637，8 軌，版本頁標 Reissue、零筆 Unofficial）。實掃卡池：Loving Sisters 零張，Peacock 的 PLP-592xx 系列零張。",
+  "risk": "廠牌欄的寫法：Discogs 把這一批同時掛 Peacock Records 與 ABC Peacock 兩個實體（MB 的 label-info 兩者都列），行文不得寫成兩家不同的公司。1980 與 1981 兩筆 MCA 再版共用 MCA-28086（Discogs release 27085503 記 1980、3702338 記 1981），引用已指到 release id；年份取原盤的 1974，MB 與 Discogs 一致。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 08cf5d70-a535-41f5-84ac-45a9615cd80e《The Sisters and Their Sons》，artist-credit「The Loving Sisters」，first-release-date 1974，primary-type Album，secondary-types 空，轄下 1 個 release：1974 US Official，label-info 同時掛 ABC Peacock PLP-59204 與 Peacock Records PLP-59204。已回問 release-group 端點確認。藝人 MBID 39a424b8-5c6c-456d-99d4-e1233f18e1a3，名下僅 1 個 release-group（即本張）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "MCA Records",
+  "g": "b"
+ },
+ {
+  "artist": "King James Version",
+  "album": "First Time We Met",
+  "year": 1974,
+  "genres": [
+   "soul"
+  ],
+  "label": "Peacock Records（PLP-59203）",
+  "why": "Peacock 晚期最被日本收藏圈盯上的一張（PLP-59203，Discogs release 4620474，另有宣傳盤 13860770；同名曲另發 45 轉 P-20003）。2016 年日本 Universal 的 Extravaganza! 系列做了授權復刻，黑膠 PROT-7013（Discogs release 9532132，8 軌，Limited Edition／Reissue，版本頁未標 Unofficial）與 CD UICY-77698（release 8531559），MB 也建了那一筆日本 release。實掃卡池：King James Version 零張。",
+  "risk": "掛名是四個常見英文詞的組合，字串比對極脆弱（裁定第 124 條記過 `tabla` 這類通名的子字串誤配）；`First Time We Met` 同樣是常見詞組，試聽比對要用藝人＋盤名雙閘。同名 45 轉的標題是《The First Time We Met》（帶定冠詞），與 LP 不同，去重時要分開。年份 MB 與 Discogs 皆記 1974，無分歧。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple 實測 us storefront 有條目，collectionId 1443489323，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group c67dbcee-da2f-4535-b4b0-ccbc729ad59b《First Time We Met》，artist-credit「King James Version」，first-release-date 1974，primary-type Album，secondary-types 空，轄下 2 個 release：1974 US Official（Peacock Records PLP-59203）與 2016-05-18 JP Official（Peacock Records UICY-77698）。已回問 release-group 端點確認。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Universal Music Japan（Extravaganza!）",
+  "g": "b"
+ },
+ {
+  "artist": "Carl Bean and Universal Love",
+  "album": "All We Need Is Love",
+  "year": 1974,
+  "genres": [
+   "soul"
+  ],
+  "label": "Peacock Records（PLP 59208）",
+  "why": "Carl Bean 後來以 1977 年 Motown 的〈I Was Born This Way〉成為第一位公開出櫃的黑人福音歌手並創辦 Unity Fellowship Church，這張是他在 Peacock 的福音團錄音（PLP 59208，Discogs release 3159259，另有 ABC Peacock 宣傳盤 10035775 與 8 軌帶 8055-59208 X）。實掃卡池：Carl Bean 零張。",
+  "risk": "Discogs 把樂團登錄為「Universal Love (3)」——括號序號是 Discogs 給同名實體的消歧義編號（裁定第 65 條），引用時要帶。掛名的連接詞 MB 用 and、Discogs 有 And 與逗號兩種寫法，去重三種都要比。這張沒有授權再發，地位證據靠原盤條目與 Peacock 目錄；Bean 後續的 Motown 單曲是他個人的地位證據，**不是這張碟的**，行文不得混寫（裁定第 35 條的形狀）。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 6bcb06d5-9c15-44a2-ad82-b2c17b904a3d《All We Need Is Love》，artist-credit「Carl Bean and Universal Love」，first-release-date 1974，primary-type Album，secondary-types 空，轄下 1 個 release：1974 US Official，Peacock Records PLP 59208。已回問 release-group 端點確認。藝人 MBID ef73d47f-9449-4a7b-84d4-c9982bb9a134，名下 3 個 release-group，1953–82 年僅本張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Carl Bean",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Napoleon Brown & The Southern Sisters",
+  "album": "Yes, I Know the Man",
+  "year": 1974,
+  "genres": [
+   "soul"
+  ],
+  "label": "Jewel Records（LPS 0098）",
+  "why": "Jewel 在 Shreveport 的福音線出版品（LPS 0098，Discogs release 8788896，立體聲）。同一組人 1977 年改掛「Bro. Napoleon Brown & The Southern Sisters」在 Savoy 出《When I Get Inside》（MB release-group 0cde7c76），兩張分屬兩家廠牌。實掃卡池：Jewel 這條線在池中零張，本團零張。",
+  "risk": "掛名有兩種寫法（Napoleon Brown／Bro. Napoleon Brown），MB 為此建了兩筆不同 credit 的 release-group；本卡採 1974 原盤的寫法，Savoy 那張**刻意不釘**，避免製造分裂鍵（裁定第 121 條）。盤名帶逗號，字串正規化後會消失，去重時要注意。這張沒有授權再發。與同批《Change Is Gonna Come》《He's a Friend》《Working for the Lord》同屬 Jewel，廠牌史角度只能分派給其中一張。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 1545428121，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 2117b557-323b-3079-92c9-ffbeea553233《Yes, I Know the Man》，artist-credit「Napoleon Brown & The Southern Sisters」，first-release-date 1974，primary-type Album，secondary-types 空，轄下 1 個 release：1974 US Official，Jewel Records LPS 0098。已回問 release-group 端點確認。對照組 0cde7c76《When I Get Inside》（1977，Savoy，credit 為「Bro. Napoleon Brown／The Southern Sisters」）**刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Napoleon Brown",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Clark Sisters",
+  "album": "Unworthy",
+  "year": 1976,
+  "genres": [
+   "soul"
+  ],
+  "label": "Sound of Gospel Records（SOG-075）",
+  "why": "底特律 Sound of Gospel 這條線的起點：Mattie Moss Clark 的五個女兒在該廠的第一張 LP（SOG-075，Discogs master 2020102，底下三筆 1976 年 US release——黑膠 1360543、卡帶 17795983、8 軌帶 32477781）。實掃 seed_cards.json：池中已有 The Clark Sisters 一張（1981 年的《You Brought the Sunshine》），本批加本張與《Count It All Joy》後該藝人達到 3 張上限，**不得再加**。",
+  "risk": "**藝人上限已滿**：加上池中既有的《You Brought the Sunshine》(1981)，本團在池中將有 3 張，其他並行批次不得再收 The Clark Sisters。試聽風險：Apple `us` 上沒有單獨的《Unworthy》，只有 2002 年的二合一《You Brought the Sunshine / Unworthy》（collectionId 1595227481，15 軌）——依裁定第 129 條「二合一再發身分不釘、封面不用、試聽不採」，本卡的固定試聽預估為 unavailable。年份 MB 與 Discogs 皆記 1976，無分歧。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group b64f35ef-6ee2-48bf-a40d-78087f5cbf75《Unworthy》，artist-credit「The Clark Sisters」，first-release-date 1976，primary-type Album，secondary-types 空，轄下 1 個 release：1976 US Official，label-info 為 Sound of Gospel Records SOG-075 與 Warner Bros. Records（無編號）。已回問 release-group 端點確認。藝人 MBID 2cd7735b-7efa-4b41-9d06-a04f97f18976（MB 消歧義註記「Detroit gospel group」），分頁 browse 名下 24 個 release-group，1953–82 年有 8 筆 Album；本批另釘 0dc43d29《Count It All Joy》(1978)，其餘六筆（1973《Jesus Has a Lot to Give》、1974、1977、1979、1980、1981）**刻意不釘**。另一個同名藝人實體 408b2bc3（1940 年代爵士四重唱 aka The Sentimentalists）**不是本團**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Clark Sisters",
+  "album": "Count It All Joy",
+  "year": 1978,
+  "genres": [
+   "soul"
+  ],
+  "label": "Sound of Gospel Records（SOG 081）",
+  "why": "本團在 Sound of Gospel 的第三張 LP（SOG 081，Discogs master 2041732，底下三筆 1978 年 US release：黑膠 6970549 與 38195910、卡帶 17810407）。Sound of Gospel 由底特律的 Armen Boladian 集團經營，編號 SOG-0xx 一系在 1976–81 年之間集中出版底特律 COGIC 系統的錄音，本批另收同廠的 Mattie Moss Clark 與 Twinkie Clark 各一張。實掃卡池：Sound of Gospel 這條線在池中零張。",
+  "risk": "**藝人上限**：本卡與同批《Unworthy》加上池中既有的《You Brought the Sunshine》(1981) 合計 3 張，達到上限。盤名是三個常見詞，字串比對脆弱，試聽要用藝人＋盤名雙閘（裁定第 124 條）。編號在 Discogs 上有 SOG 081 與 SOG-081 兩種寫法。年份 MB 與 Discogs 皆記 1978，無分歧；這張沒有授權再發，地位證據靠原盤三筆版本與廠牌目錄（裁定第 82 條）。與同批同廠三張的行文角度要互斥分派（裁定第 58 條）。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 0dc43d29-615f-43f0-a193-d4297942e30f《Count It All Joy》，artist-credit「The Clark Sisters」，first-release-date 1978，primary-type Album，secondary-types 空，轄下 1 個 release：1978 US Official，label-info 為 Sound of Gospel Records SOG 081 與 Warner Bros. Records（無編號）。已回問 release-group 端點確認。與 b64f35ef《Unworthy》同藝人不同碟，兩張都釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Crowns of Glory",
+  "album": "God Save the Children",
+  "year": 1976,
+  "genres": [
+   "soul"
+  ],
+  "label": "Peacock Records（plp-59224）",
+  "why": "Peacock 被 ABC 併購後期的出版品之一（編號在 Discogs 上作小寫 plp-59224，Discogs release 4891382，版權與配銷掛 ABC Records, Inc.）。Peacock 1979 年整個目錄轉到 MCA，這一批 PLP-592xx 的碟大多沒有再進 CD 時代。實掃卡池：Crowns of Glory 零張。",
+  "risk": "這張沒有任何授權再發、也沒有第三方樂評條目，地位證據只有 Discogs 原盤條目與 Peacock 的目錄位置——是本批舉證最薄的一張，若研究層查不到可用材料，應改列為未收。編號的大小寫在 Discogs 上是小寫（plp-59224），MB 亦照抄，比對時要 case-insensitive。年份 MB 與 Discogs 皆記 1976。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 4f76e34b-3227-48e5-b9cd-c6d6a9534ddd《God Save the Children》，artist-credit「The Crowns of Glory」，first-release-date 1976，primary-type Album，secondary-types 空，轄下 1 個 release：1976 US Official，Peacock Records plp-59224。已回問 release-group 端點確認。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Harmonizing Four",
+  "album": "Working for the Lord",
+  "year": 1976,
+  "genres": [
+   "soul"
+  ],
+  "label": "Jewel Records（LPS 0124）",
+  "why": "成軍近半世紀的里奇蒙四重唱在 Shreveport 的 Jewel Records 出的 LP（LPS 0124，Discogs master 3936431、release 7523131，壓片掛納許維爾的 Masterfonics）。Jewel 1970 年代把大量老四重唱簽進來，這是那批裡少數還在錄新曲的老團。實掃卡池：Harmonizing Four 零張。",
+  "risk": "與同批 a 組的《Shine on Me》(1967) 同團，兩張分屬 Atlantic Religious Series 與 Jewel，行文的樂團沿革只能寫一次（裁定第 58 條）。MB 上該團 1953–82 年另有 1970《Tommie, Lonnie & Me》與 1979《Golden Jubilee》兩筆 Album，**刻意不釘**。盤名的介系詞大小寫在 Discogs 作《Working For The Lord》，本卡採 MB 的句中小寫。年份 MB 與 Discogs 皆記 1976。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 208124779，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 82c238b5-d42a-3176-8b76-759400506578《Working for the Lord》，artist-credit「The Harmonizing Four」，first-release-date 1976，primary-type Album，secondary-types 空，轄下 1 個 release：1976 US Official，Jewel Records LPS 0124。已回問 release-group 端點確認。同藝人的 53af596f《Tommie, Lonnie & Me》(1970) 與 4053be2a《Golden Jubilee》(1979) **刻意不釘**；本批另釘 e0d95729《Shine on Me》(1967)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Sensational Williams Brothers",
+  "album": "Mama Prayed for Me",
+  "year": 1977,
+  "genres": [
+   "soul"
+  ],
+  "label": "Savoy Records（SL 14462）",
+  "why": "密西西比州 Smithdale 的 Williams 兄弟以這張在 Savoy 出道（SL 14462，Discogs master 1502035，底下三筆 1977 年 US release：2368164、27757017 市售盤與 15637918 宣傳盤）。他們 1980 年代改掛「The Williams Brothers」成為 Malaco 的主力團，早期的 Savoy 掛名多了 Sensational 一詞。實掃卡池：Williams Brothers 一系零張。",
+  "risk": "**掛名分裂風險**：同一團在 MB 上有「The Sensational Williams Brothers」（本卡）與「The Williams Brothers」（MBID d22ab174-5cc4-49ed-9342-434bf6b14fb6，MB 消歧義註記「Jackson, MS gospel group」，名下 1953–82 年 0 筆）兩個實體，另有第三個同名實體 bd8a579c（Andy & David Williams，1980 年代的白人二重唱）——**三者不可混**。本卡採原盤封面的「The Sensational Williams Brothers」，去重時三種字串都要比。這張沒有授權再發。年份 MB 與 Discogs 皆記 1977。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple 實測 us storefront 有條目，collectionId 147642619（Apple 掛名作 The Williams Brothers），固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group b99159c6-70c0-4168-aeaf-a7008270f7a3《Mama Prayed for Me》，artist-credit「The Sensational Williams Brothers」，first-release-date 1977，primary-type Album，secondary-types 空，轄下 1 個 release：1977 US Official，Savoy Records SL 14462。已回問 release-group 端點確認。對照組：藝人實體 d22ab174「The Williams Brothers」（Jackson, MS）與 bd8a579c「The Williams Brothers」（Andy & David Williams）**皆非本團，刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Williams Brothers",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Spirit of Love",
+  "album": "The Power of Your Love",
+  "year": 1978,
+  "genres": [
+   "soul"
+  ],
+  "label": "Birthright（BRS-4021）",
+  "why": "Birthright 是 Edwin Hawkins 一系在 1970 年代中後期的廠牌，由 Ranwood Records 配銷、版權掛 Chinwah Songs（Discogs release 2773786，master 1818453，BRS-4021）。實掃卡池：Birthright 這條線在池中零張；池中的 Edwin Hawkins 只有 The Edwin Hawkins Singers 1969 年的《Let Us Go Into the House of the Lord》一張，Birthright 那一段完全沒有。",
+  "risk": "**盤名分歧**：Discogs 原盤封面作《The Power Of Your Love》（帶定冠詞），MB 的 release-group 標題作《Power of Your Love》；本卡依裁定第 50 條採原盤寫法，rgMbid 的標題與卡片盤名不相等（裁定第 91 條允許的形狀），去重與試聽兩種都要試。掛名極通用（三個常見英文詞），Discogs 上該實體標「Spirit Of Love (2)」——括號序號要帶（裁定第 65 條）；字串比對必須用藝人＋盤名雙閘。這張沒有授權再發。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us storefront 只有《The Power of Your Love - Single》(1134880214)，是單曲不是本張，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group f973c94e-f54d-4375-a4f9-003c05aeccf2《Power of Your Love》，artist-credit「Spirit of Love」，first-release-date 1978，primary-type Album，secondary-types 空，轄下 1 個 release：1978 US Official，Birthright BRS-4021。已回問 release-group 端點確認。卡片盤名採 Discogs 原盤的《The Power of Your Love》，與 RG 標題不相等。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dorothy Norwood",
+  "album": "He's a Friend",
+  "year": 1978,
+  "genres": [
+   "soul"
+  ],
+  "label": "Jewel Records（LPS 0134）",
+  "why": "Dorothy Norwood 1960 年代在 The Caravans 唱過，1970 年代初以 GRC／Savoy 的「講故事」型福音單曲走紅，這張是她在 Jewel 的 LP（LPS 0134，Discogs master 1499769、release 7041692）。實掃卡池：Dorothy Norwood 零張；她待過的 The Caravans 在池中只有 1977 年那張精選。",
+  "risk": "MB 上她名下 8 個 release-group，多筆沒有日期或 primary-type（《Hattie B's Daughter》《Shake the Devil Off》《Dorothy Norwood Presents Cassietta George》皆無日期），1953–82 年只有本張是可釘的 Album，其餘**刻意不釘**。盤名的縮寫撇號在字串正規化後會消失（`hesafriend`），與其他同名碟相撞的風險要注意。這張沒有授權再發；Jewel 的福音線後來由 Fuel 2000 整理成《The Jewel Records Gospel Story》（2013，Discogs release 4790718）與《Say Amen! (Gospel Funk From Jewel Records)》（2014，release 6493118），但**未經查證本張是否收錄其中**，行文不得斷言。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 208234953，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group dc18f18c-90c7-3cd3-a43f-38718bdf51ac《He's a Friend》，artist-credit「Dorothy Norwood」，first-release-date 1978，primary-type Album，secondary-types 空，轄下 1 個 release：1978 US Official，Jewel Records LPS 0134。已回問 release-group 端點確認。藝人 MBID 387ed135-0389-4dbb-88cf-52ba1d780a4d，分頁 browse 名下 8 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Rev. Cleophus Robinson",
+  "album": "Saved and Satisfied",
+  "year": 1979,
+  "genres": [
+   "soul"
+  ],
+  "label": "Nashboro Records（NA 7215）",
+  "why": "聖路易的 Cleophus Robinson 是 Nashboro 福音線後期產量最高的掛名之一，這張是 1979 年的 LP（NA 7215，Discogs release 4210277）。Nashboro 由 Ernie Young 1951 年在納許維爾創辦、1979 年結束自營，這張正落在收攤前的最後一批。實掃卡池：Nashboro 這條線在池中零張——池中與納許維爾獨立廠牌相關的卡集中在 Excello 的藍調那一側，福音側完全沒有。",
+  "risk": "Nashboro 的 NA 72xx 系列在 Discogs 上大量有同編號的宣傳盤與市售盤並存，引用已指到 release id（裁定第 65 條）。MB 上 Cleophus Robinson 名下 4 個 release-group，1953–82 年只有本張是 primary-type Album，其餘**刻意不釘**。掛名有 Rev. 與 Reverend 兩種寫法（Discogs 上兩種都出現過），去重時都要比。年份 MB 與 Discogs 皆記 1979。這張沒有授權再發。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group ff8942b3-52bc-48cc-9576-8ad7921352ae《Saved and Satisfied》，artist-credit「Rev. Cleophus Robinson」，first-release-date 1979，primary-type Album，secondary-types 空，轄下 1 個 release：1979 US Official，Nashboro Records NA 7215。已回問 release-group 端點確認。藝人 MBID 6f0f58a2-cb89-4bf8-b33f-a79f2cccaac4，分頁 browse 名下 4 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Reverend Cleophus Robinson",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Twinkie Clark",
+  "album": "Praise Belongs to God",
+  "year": 1979,
+  "genres": [
+   "soul"
+  ],
+  "label": "Sound of Gospel Records（SOG 091）",
+  "why": "Elbernita「Twinkie」Clark 是 The Clark Sisters 的鍵盤手與詞曲作者，這是她掛個人名的第一張 LP（SOG 091，Discogs master 3813417、release 1895098；另有加拿大壓片 33698412，錄音掛底特律的 The Sound Suite）。實掃卡池：Twinkie Clark 個人掛名零張。",
+  "risk": "掛名寫法分歧：MB 的 artist-credit 是「Elbernita『Twinkie』Clark」（帶彎引號），MB 藝人實體名是「Twinkie Clark」，Discogs 原盤印「Elbernita Twinkie Clark」。本卡依裁定第 120 條採 MB 實體名「Twinkie Clark」——彎引號進不了外部服務的查詢，填進去只會拉低命中率（裁定第 25 條）。三種寫法去重時都要比。與同批 The Clark Sisters 兩張、Mattie Moss Clark 兩張是同一家族的四個不同 MB 實體，藝人上限分開計，但行文的家族背景只能分派給其中一張。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 1645143882，固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 17d57165-249b-4759-83d3-ec4047b3012f《Praise Belongs to God》，artist-credit「Elbernita “Twinkie” Clark」（含 U+201C／U+201D），first-release-date 1979，primary-type Album，secondary-types 空，轄下 1 個 release：1979 US Official，Sound of Gospel Records SOG 091。已回問 release-group 端點確認。藝人 MBID 252966b9-7afc-4c38-aee6-93e4ae009dfb（實體名 Twinkie Clark），分頁 browse 名下 14 個 release-group，1953–82 年 2 筆 Album；1ceb099b《Ye Shall Receive Power》(1981) 在本批年代範圍外，**刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elbernita Twinkie Clark",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mattie Moss Clark",
+  "album": "Make Me That Building Not Made by Hand",
+  "year": 1979,
+  "genres": [
+   "soul"
+  ],
+  "label": "Sound of Gospel Records（SOG-089）",
+  "why": "Mattie Moss Clark 從 Westbound 轉到 Sound of Gospel 之後的 LP（SOG-089，Discogs master 375732、release 2744450 黑膠與 32274168 卡帶；另有一筆 Columbia Terre Haute 壓片廠的試壓盤 3159228）。她同時是 COGIC 全國音樂部門的主任，Sound of Gospel 這條線的合唱團錄音多半經她的手。實掃卡池：Mattie Moss Clark 零張。",
+  "risk": "與同批 a 組的《Wonderful Grace of Jesus》(1971) 同人，兩張分屬 Westbound 與 Sound of Gospel，藝人共 2 張、在上限內；行文的 COGIC 職務背景只能寫一次（裁定第 58 條）。盤名很長且含介系詞，Discogs 作《Make Me That Building Not Made By Hand》，本卡採 MB 的句中小寫，去重兩種都要比。年份 MB 與 Discogs 皆記 1979。這張沒有授權再發。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 HTTP 200，封面有；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 5c242399-c67d-476f-b956-f7a202d58d79《Make Me That Building Not Made by Hand》，artist-credit「Mattie Moss Clark」，first-release-date 1979，primary-type Album，secondary-types 空，轄下 1 個 release：1979 US Official，Sound of Gospel Records SOG-089。已回問 release-group 端點確認。與 7c93f855《Wonderful Grace of Jesus》(1971) 為同藝人不同碟，兩張都釘；64d63eb2《Because He Lives》(1979，Album/Live) **刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sister Mattie Moss Clark",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Morning Stars of Savannah, Georgia",
+  "album": "I've Been Blessed by the Hands of the Lord",
+  "year": 1979,
+  "genres": [
+   "soul"
+  ],
+  "label": "Savoy Records（SL 14518）",
+  "why": "喬治亞州薩凡納的地方四重唱，掛名本身就把城市寫進去——這是 1970 年代末 Savoy 收地方團的典型形態（SL 14518，Discogs release 7171986，立體聲）。Savoy 1975 年被 Arista 買下之後仍持續發行這類地方團的單張 LP。實掃卡池：Savoy 這條線在池中只有 James Cleveland 的《Peace Be Still》一張（Angelic Choir 系列，本批不收），地方團那一側零張。",
+  "risk": "掛名含逗號與地名，字串正規化後成 `themorningstarsofsavannahgeorgia`，外部服務幾乎必然落空；`queryAlias` 填「The Morning Stars」供封面與試聽用，但那是通用字串、誤配風險高，試聽比對必須用藝人＋盤名雙閘。盤名帶縮寫撇號。這張沒有授權再發，地位證據只有 Discogs 原盤條目一筆——與《God Save the Children》同為本批舉證最薄的兩張，研究層若查不到材料應改列未收。年份 MB 與 Discogs 皆記 1979。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 1482171585（Apple 掛名作 The Morning Stars），固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 582f024b-5625-4bea-bcc7-5a70334ff3a6《I've Been Blessed by the Hands of the Lord》，artist-credit「The Morning Stars of Savannah, Georgia」，first-release-date 1979，primary-type Album，secondary-types 空，轄下 1 個 release：1979 US Official，Savoy Records SL 14518（MB 的 label-info 有 14518／SL 14518／SL-14518 三種編號寫法）。已回問 release-group 端點確認。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Morning Stars",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Myrna Summers",
+  "album": "Come to Jesus Now",
+  "year": 1980,
+  "genres": [
+   "soul"
+  ],
+  "label": "Savoy Records（SL 14575）",
+  "why": "華盛頓特區的 Myrna Summers 與 Bountiful Blessings Temple of Deliverance COGIC 合唱團的 Savoy LP（SL 14575，Discogs release 2293375，配銷掛 Arista Records）。實掃卡池：Myrna Summers 零張；1970 年代末到 1980 年代初的黑人教會合唱團這一塊，池中只有 James Cleveland 一張。",
+  "risk": "MB 的 artist-credit 是完整的長串「Myrna Summers With The Voices of Bountiful Blessings Temple of Deliverance C.O.G.I.C. Choir」，Discogs 原盤同；本卡採主唱單名「Myrna Summers」當掛名（該對象的通行名，裁定第 11 條），完整 credit 留在 mbNote。這是刻意的取捨：長串掛名在封面與試聽 API 上必然落空。去重時要注意 MB 側是長串、卡片側是短名，字串比對抓不到彼此。MB 上她名下 2 個 release-group，1953–82 年僅本張。年份 MB 與 Discogs 皆記 1980。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple 實測 us storefront 有條目，collectionId 1464616959（gb storefront），固定試聽預估 ready（本機仍需核版本與 collectionExplicitness）。",
+  "mbNote": "MB release-group 0a3e535b-f2b5-4a22-b6d5-7a24d7e79098《Come to Jesus Now》，artist-credit「Myrna Summers With The Voices of Bountiful Blessings Temple of Deliverance C.O.G.I.C. Choir」，first-release-date 1980，primary-type Album，secondary-types 空，轄下 1 個 release：1980 US Official，Savoy Records SL 14575。已回問 release-group 端點確認。藝人 MBID 9c5c388e-e99a-42d5-912b-ff1360402aae，名下 2 個 release-group。卡片掛名採短名，與 artist-credit 不相等（裁定第 11／25 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The East St. Louis Gospelettes",
+  "album": "Movin' On Up",
+  "year": 1980,
+  "genres": [
+   "soul"
+  ],
+  "label": "Nashboro Records（NA-7220）",
+  "why": "本團從 Checker 轉到 Nashboro 之後的 LP（NA-7220，Discogs master 1681476、release 1754347 市售盤與 14773078 宣傳盤，錄音掛東聖路易的 Archway Studios）——與她們 1970 年在 Checker 的第一張 LP 是同一個錄音室、隔了十年。這一張落在 Nashboro 收攤前的最後一批出版品裡。實掃卡池：本團與 Nashboro 這條線在池中皆零張。",
+  "risk": "與同批 a 組的《Shout for Joy》(1970) 同團，掛名統一採帶定冠詞的「The East St. Louis Gospelettes」（MB 在不同 release-group 上的 credit 帶與不帶定冠詞不一致，本批刻意統一以免製造分裂鍵，裁定第 49／121 條）。同藝人 MB 名下另有 1972／1973／1975／1977 四筆 Album，**刻意不釘**，本批共收 2 張。盤名的縮寫撇號（Movin'）在正規化後會消失，`movinonup` 與 The Jacksons 等同名曲目的字串相撞風險要注意。年份 MB 與 Discogs 皆記 1980。 封面與試聽（2026-09-04 實測）：CAA 以 rgMbid 實測 404，封面要走 Bandcamp／Spotify 或人工；Apple us／gb／jp 三個 storefront 實測皆無可用條目，固定試聽預估 unavailable。",
+  "mbNote": "MB release-group 8c44693e-d8bf-4835-84fc-1a6ece2ca2ed《Movin' On Up》，artist-credit「The East St. Louis Gospelettes」，first-release-date 1980，primary-type Album，secondary-types 空，轄下 1 個 release：1980 US Official，Nashboro Records NA-7220。已回問 release-group 端點確認。與 64339d0c《Shout For Joy》(1970) 同藝人不同碟，兩張都釘；a06bc0f6(1972)、7273477b(1973)、cb329a6e(1975)、6f42f2aa(1977) **刻意不釘**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "East St. Louis Gospelettes",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

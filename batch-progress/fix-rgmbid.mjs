@@ -60,7 +60,21 @@ for (const c of cards) {
     return s;
   };
   found.sort((a, b) => score(b) - score(a));
-  const rg = found.length && score(found[0]) > 0 ? found[0] : null;
+  // 2026-09-03（c-69 Collie Ryan《The Giving Tree》）：既有的 rgMbid 明明在 mbNote 裡、
+  // 只是這一輪回問 MB 時沒拿到（503／逾時），found 裡就只剩對照組那張 2009 年的三合一套裝，
+  // 標題完全對不上也照樣 +3 +5 = 8 分勝出，把正確的釘位換掉了。兩道防線：
+  // (1) 既有 rgMbid 在 mbNote 裡卻沒查到 → 這輪不動它（第 28 條：查詢失敗不是查無）；
+  // (2) 要換掉既有值，候選的標題至少要跟盤名沾上邊（標題分 > 0），型別與年份分不能單獨決勝。
+  const titleScore = x => { const a = norm(c.album), b = norm(x.title); return (a && b === a) ? 10 : (a && (b.includes(a) || a.includes(b))) ? 4 : 0; };
+  if (c.rgMbid && ids.includes(c.rgMbid) && !found.some(x => x.id === c.rgMbid)) {
+    report.push(`✗ ${c.artist}《${c.album}》既有 rgMbid ${c.rgMbid.slice(0, 8)}… 這輪回問失敗，保留不動`);
+    continue;
+  }
+  let rg = found.length && score(found[0]) > 0 ? found[0] : null;
+  if (rg && c.rgMbid && rg.id !== c.rgMbid && titleScore(rg) === 0) {
+    report.push(`✗ ${c.artist}《${c.album}》候選 ${rg.id.slice(0, 8)}…「${rg.title}」標題對不上盤名，不替換既有值`);
+    rg = null;
+  }
   if (found.length && !rg) report.push(`⚠ ${c.artist}《${c.album}》mbNote 的 release-group 標題都對不上，未更動`);
   // **絕不因為這次查不到就清空既有的 rgMbid。** 查詢失敗（503、逾時、暫時性錯誤）
   // 與「這個 MBID 不是 release-group」在程式裡長得一樣——裁定第 28 條講的就是這件事，

@@ -1,0 +1,363 @@
+[
+ {
+  "artist": "Third Quadrant",
+  "album": "Voyage to Pluto",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "CSC",
+  "why": "諾丁罕的 Third Quadrant 是這條線最早開工的一組：1980 年他們沒有廠牌、沒有黑膠，直接把整張作品做成卡帶自己發行（Discogs release 5792800，廠牌欄 CSC、編號 CSC 0001、Cassette Album），在 fanzine 郵購與現場賣。這是本批唯一一組在 neo-prog 一詞出現之前就已經在自製整張專輯的樂團，也是全批年份最早的一張。此後他們自營 Rock Cottage Records，1993 年義大利 prog 專門廠 Mellow Records 授權發行了同團 1988 年的《Layered》（MMP157），是外界第一次正式接手這個目錄。本張本身沒有任何再發，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨，分量靠它在這條線裡的起點位置舉證。池中實掃 seed_cards.json 全 13,913 列，Third Quadrant 零張，整條英國 neo-prog 線零張。",
+  "risk": "掛名是通用詞組合（第 124 條），字串搜尋會撈到 Underground Resistance《The Final Frontier》裡的同名曲與 Linear System 的同名 EP，只能靠 rgMbid 鎖定。MB 名下 12 個 release-group，其中 d15a5bb5《Live 2012》為現場、fdbd7137《Layered》(1988) 在年代外，皆刻意不釘。封面已實測 CAA release-group front 回 200；Apple 實測 gb／us／jp／de／fr／ie／ca／au 八個 storefront 皆無此碟，試聽預估 unavailable。原盤是卡帶，依裁定第 1 條磁帶原盤即算原盤，年份取 1980。無串流授權再發，本機三軸依 §0.8 錨點制人工評分（原盤極小規模、無串流再發 → 冷門軸 5）。",
+  "mbNote": "釘 60816cdb-92bc-40ce-8ee2-d191855e0fb7《Voyage to Pluto》，artist-credit「Third Quadrant」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release：1980 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 61be1ebd-2c72-413c-8ca8-05904d0e6c0d，以 release-group?artist=<MBID>&limit=100&offset= 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，第 116 條），名下 12 個 release-group。對照組 57a6373d《N = R* FP NE FL FI FC L》(1981)、80e7e32b《Seeing Yourself as You Really Are》(1982) 為本批另兩張、各自釘各自的；fdbd7137《Layered》(1988)、dd3daf9a《re:generator》(2016)、b3f04682《Universal Circles》(2024)、d15a5bb5《Live 2012》(Live) 與四張 Single 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Third Quadrant",
+  "album": "N = R* FP NE FL FI FC L",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Third Quadrant 自壓）",
+  "why": "盤名直接把 Drake 方程式的各項寫在封面上，是這條線最極端的一次自製發行：Discogs release 5792818 記 1981 年、廠牌欄「Not On Label (Third Quadrant Self-released)」、編號只寫「Phase 1」、Cassette Album，連目錄號體系都還沒建立起來。它與前一年的《Voyage to Pluto》構成同一組人的兩張連續自製作品，中間沒有經過任何廠牌。本張沒有任何再發，依裁定第 82 條以場景位置與同團目錄的整理史舉證。池中實掃 seed_cards.json 全 13,913 列，Third Quadrant 零張。",
+  "risk": "盤名全是英文大寫字母與等號、星號，外部服務的搜尋幾乎必然落空，`queryAlias` 是藝人層級欄位裝不下盤名（第 45 條已記此結構限制），下游查詢要另備「N=R* FP NE FL FI FC L」與「Drake equation」兩種寫法。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1981。與本批同團另兩張的差異只在盤名，跨批去重要以盤名為主鍵比對（第 71 條）。",
+  "mbNote": "釘 57a6373d-a123-43dc-a5e9-f2ef10008fbb《N = R* FP NE FL FI FC L》，artist-credit「Third Quadrant」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 61be1ebd-2c72-413c-8ca8-05904d0e6c0d，分頁 browse 得名下 12 個 release-group。對照組 60816cdb《Voyage to Pluto》(1980) 與 80e7e32b《Seeing Yourself as You Really Are》(1982) 為本批另兩張；fdbd7137《Layered》(1988)、d15a5bb5《Live 2012》(Live)、dd3daf9a《re:generator》(2016) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Third Quadrant",
+  "album": "Seeing Yourself as You Really Are",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Rock Cottage",
+  "why": "同一組人第三年終於做出黑膠：Discogs release 1659904 記 1982 年英國盤、廠牌 Rock Cottage、編號 TTS 8049、Vinyl LP Album 且標 White Label，壓量與通路都極小。Rock Cottage 此後成為樂團自營的廠牌名（2016 年《re:generator》仍用 Rock Cottage Records RCR 022016），也就是說這張是這家自營廠牌的第一張黑膠。前兩年的兩張卡帶（CSC 0001、Phase 1）與本張構成一條完整的自製路線。池中實掃 seed_cards.json 全 13,913 列，Third Quadrant 零張。",
+  "risk": "掛名通用詞（第 124 條）。MB 名下 12 個 release-group，1988 年的《Layered》有 1993 年義大利 Mellow Records CD 再發（MMP157），Discogs 上零筆標 Unofficial Release，但那是另一張碟，不得拿來當本張的背書（第 57 條：判定單位是這一次再發）。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。本張是黑膠原盤、年份與 MB first-release-date 一致，是本團三張裡年份最沒有爭議的一張。",
+  "mbNote": "釘 80e7e32b-9ade-4b13-be38-7ad185cb66d5《Seeing Yourself as You Really Are》，artist-credit「Third Quadrant」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 61be1ebd-2c72-413c-8ca8-05904d0e6c0d，分頁 browse 得名下 12 個 release-group。對照組 60816cdb《Voyage to Pluto》(1980)、57a6373d《N = R* FP NE FL FI FC L》(1981) 為本批另兩張；fdbd7137《Layered》(1988) 刻意不釘（年代外）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Quasar",
+  "album": "Fire in the Sky",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Q Records",
+  "why": "劍橋的 Quasar 1979 年成軍，1982 年在自營的 Q Records 出了唯一一張 1980 年代黑膠：Discogs master 348692，1982 年英國盤、編號 qua-1、LP Album，廠牌實體是 Discogs 的「Q Records (7)」。同一家廠牌 1990 年把它轉成 CD（qua-1 CD）、2021 年再出 ReMix 版（PRO-QUA1X），三十九年間這張碟的發行權從沒離開過樂團自己手上，Discogs 版本頁零筆標 Unofficial Release。第二張《The Loreli》要到 1989 年才出，落在本批年代之外。池中實掃 seed_cards.json 全 13,913 列，Quasar 零張。",
+  "risk": "「Quasar」在 MB 有至少四個同名實體（英國 neo-prog 團、美國 psytrance 製作人 Jason Frazier、義大利 house 製作人、法國電子藝人 Rémy Gallet），字串搜尋極易配錯，只能靠 rgMbid 鎖定；池中無同名藝人，暫不需改次通行名（第 29 條）。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 694605103《Fire In the Sky》1982、7 軌，試聽預估 ready，本機上架前仍要核版本（1990 CD 版曲目與 LP 是否一致）。",
+  "mbNote": "釘 ff608012-9fd5-3f04-a196-655be87d25f1《Fire in the Sky》，artist-credit「Quasar」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 2 個 release：1982 GB Official 與 1990 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 83b25d77-5b24-4f29-ab59-9336306062a3（MB 消歧義「UK neo-progressive-rock band」），分頁 browse 得名下 5 個 release-group。對照組 9699ec17《The Loreli》(1989)、8db96035《Memories of Times Yet to Be》(2023)、000db729《Live 2011》(Live)、e9b48a25《Live 1984 - 1990》(Compilation,Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Airbridge",
+  "album": "Paradise Moves",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Carve-Up Records",
+  "why": "Airbridge 是這條線少數在 Marquee 與 Reading 場景裡有名、卻只留下一張黑膠的團。Discogs master 2994272：1982 年英國盤、廠牌 Carve-Up Records、編號 CU3，該廠牌整個目錄只有六筆、其中 LP 就這一張。樂團之後只再出過一張 1983 年的七吋《Words and Pictures》就散了，2013 年才以 EP《Return》復出。地位證據是 2022 年英國考古廠牌 Audio Archives 的授權 CD 再發（AACD088），Discogs 版本頁兩筆皆未標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Airbridge 零張。",
+  "risk": "掛名是單一通用詞（第 124 條），MB 搜尋另有澳洲詞曲作者 Joan Fairbridge 的模糊命中。MB 名下 5 個 release-group，6eb668e3《Words and Pictures》(1983) 是七吋單曲、fb3169f4《Return》(2013) 是 EP，皆刻意不釘（第 126 條的 EP／Album 雙胞胎風險）。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。年份 MB 與 Discogs 皆記 1982，坊間常寫 1983，行文不得正面斷言發行年（第 18／46 條）。",
+  "mbNote": "釘 fc2650ab-fbee-4ebe-a813-5de06a6da8f5《Paradise Moves》，artist-credit「Airbridge」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 8714c1ef-2b09-4762-adc6-72d028918e93（GB，1981），分頁 browse 得名下 5 個 release-group。對照組 6eb668e3-ad89-4845-b36f-b6224edc2b60《Words and Pictures》(1983，Single)、fb3169f4-5a5f-4189-8044-5baca2b0bbdc《Return》(2013，EP)、7740ffa7《Memories of Water》(2021)、f1d1304c《Openings》(2023) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Protos",
+  "album": "One Day A New Horizon",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Airship",
+  "why": "雪菲爾的 Protos（核心是 Rory Ridley-Duff）1982 年把整張作品交給 Airship 客壓——Airship 是英國 1980 年代的自費壓片廠兼掛名廠牌，目錄裡絕大多數是地方民謠、鄉村與婚禮樂團的自費盤（AP 5051《British & American Folk Songs》、AP 213《Bachelors Gate》之類），prog 只有極少數幾號，本張是 AP 391、Discogs master 1670315，1982 年英國 LP Album。這正是 c-68 那批 Deroy／SRT 客壓形態在 1980 年代的延續。地位證據是 2006 年 New Horizons Music 的授權重製 CD（NHM002，標 Reissue／Remastered）與同年樂團自行發行的兩筆 CD，Discogs 版本頁四筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Protos 零張。",
+  "risk": "「Protos」在 MB 有四個同名實體（本團的實體以核心成員 Rory Ridley-Duff 消歧義、挪威 Aleksander Vinter、dubstep 的 PROTOS、荷蘭車庫團 The Protos），必須靠 rgMbid 鎖定。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 205381832《One Day a New Horizon》，但 Apple 記的日期是 2006-10-18、8 軌——那是 2006 年的重製版不是 1982 原盤，屬第 77／95 條的 yearDrift 形狀，試聽可採但本機上架前要核版本與曲序。",
+  "mbNote": "釘 9687e9e5-f960-4099-a854-df48368f7702《One Day A New Horizon》，artist-credit「Protos」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 4 個 release：1982 GB Official 與 2006 GB Official ×3。已回問 release-group 端點確認實體類型與標題。藝人 MBID 33d77caf-cc29-4b21-a5a1-38f9130f955e，分頁 browse 得名下 4 個 release-group。對照組 34c7922c《The Noble Pauper’s Grave》(2007)、6d0b8349《The Infinite Horizon》(2024)、4897dee9《Into the Mouth of the Tiger》(2006，primary-type Other／Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "New Horizons Music",
+  "g": "a"
+ },
+ {
+  "artist": "Voltz",
+  "album": "Knight's Fall",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Airship",
+  "why": "與 Protos 同一家客壓廠的另一張：Discogs master 1057588，1982 年英國盤、Airship AP 580、LP Album，錄音在 Chestnut Studios（Frensham）與 Toucan Studios。Voltz 在 MB 上名下只有這一個 release-group，是典型的「壓一張就收攤」。地位證據是希臘考古廠牌 Cult Metal Classics 2018 年的 CD（CULTMETALVLTKCD，Limited Edition／Remastered）與 2019 年的黑膠復刻（CULTMETALVLTKLP，標 Reissue／Remastered），Discogs 版本頁上這三筆皆未標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Voltz 零張。",
+  "risk": "**授權狀態要逐筆看**（第 43／57／65／78 條）：Discogs 版本頁另有一筆掛「Airship (3)」、編號 VLZ 2342、**明標 Unofficial Release** 的版本——那是第 65 條「冒名廠牌沿用正版廠牌名」的標準形狀，Airship 的正牌實體是 208262，舉證時不得指到 Airship (3)。掛名「Voltz」另有法國演員 Mathurin Voltz、德國作家 William Voltz、辛巴威的 Voltz JT 三個同名 MB 實體。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 1620631089《Knight’s Fall》8 軌，但 Apple 記的年份是 1980-01-01、與卡片 1982 差兩年（yearDrift，第 77 條），試聽可採、本機核版本。",
+  "mbNote": "釘 6e0543c3-62c9-4713-a79b-46df0ab6d3f2《Knight’s Fall》，artist-credit「Voltz」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 2 個 release：1982 GB Official 與 1982 GB（status 未填）。已回問 release-group 端點確認實體類型與標題。藝人 MBID f675c90f-2178-44e5-8d21-01e876e97d38（GB，1979），分頁 browse 得名下 1 個 release-group（即本卡），無對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Cult Metal Classics",
+  "g": "a"
+ },
+ {
+  "artist": "Red Summer",
+  "album": "Release",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Rimshot Records",
+  "why": "Discogs release 3546595：1982 年英國盤、Rimshot Records RSR 101、LP Album，錄音在 Stroud 的 Fleetwood Studios。Rimshot 是錄音室自營的單張廠牌，這是它唯一留在資料庫裡的 LP；樂團在 MB 上名下也只有這一個 release-group。這是本批「壓一張、沒有再發、也沒有後續」最徹底的一筆，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨，分量靠原盤本身與它在英國西南地方場景的位置舉證。池中實掃 seed_cards.json 全 13,913 列，Red Summer 零張。",
+  "risk": "掛名與盤名都是通用詞（第 124 條）：「Release」是全池最容易誤配的盤名之一，字串搜尋會撈回大量無關條目，只能靠 rgMbid 與 Apple 的 collectionId 鎖定。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 1739684825《Release》1982-05、11 軌，試聽預估 ready——但 11 軌與 1982 年 LP 的曲數是否一致要本機核（第 129 條的加曲／併輯風險）。",
+  "mbNote": "釘 20e446ed-e068-4834-92fc-6ea8c2f79132《Release》，artist-credit「Red Summer」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID e7486842-3a72-4ddb-ab09-e2d673e3cb98（GB），分頁 browse 得名下 1 個 release-group（即本卡），無對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "A Band Called Doris",
+  "album": "Gypsy Lady",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "ABCD Records",
+  "why": "Discogs release 5893265：1982 年英國盤、廠牌 ABCD Records（團名縮寫，樂團自營）、編號 ABCD 3、LP Album，錄音在曼徹斯特的 Pluto Studios。廠牌名就是團名縮寫，整個目錄只有這幾號，是本批「自營廠牌」形態最直白的一張。MB 上這個藝人名下只有這一個 release-group，Discogs 上也沒有任何再發，依裁定第 82 條以原盤與廠牌自營的事實舉證。池中實掃 seed_cards.json 全 13,913 列，`A Band Called Doris` 零張。",
+  "risk": "**掛名要用長名，不能用「Doris」**（第 29 條）：MB 的藝人實體名是「Doris」（消歧義「1980s UK hard rock/prog rock band」），但池中已有 Doris Troy、Doris Day、Doris Duke 三位，用裸字串「Doris」會讓藝人層的分組與去重混掉。MB 的 artist-credit 本身就是「A Band Called Doris」（第 51 條：credit 就是外界實際使用的掛名），Discogs 的 release 標題也作「A Band Called Doris*」，所以這是有來源可依附的寫法、不是自創。封面已實測 CAA release-group front 回 404，需本機另尋；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 a9d28ab2-52c7-41d6-a70d-8fd329078a16《Gypsy Lady》，artist-credit「A Band Called Doris」（**MB 藝人實體名是「Doris」，credit 才是長名**），first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 0c9048cf-2246-4035-9a1a-5806886a84f1，分頁 browse 得名下 1 個 release-group（即本卡），無對照組。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Haze",
+  "album": "The Cellar Tapes",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Haze 自壓）",
+  "why": "雪菲爾的 Haze 1978 年成軍，1983 年在 Stairway Studios 錄好整張後直接以卡帶自己發行（Discogs release 2851135，廠牌欄「Not On Label (Haze (17) Self-released)」、無編號、Cassette Album Stereo），只在現場與郵購流通。這是他們自營 Gabadon Records 開張前的一張，也是英國 neo-prog 第一波裡少數在 1983 年就有完整專輯的團。地位證據是 2013 年 Gabadon Records 的 30 週年授權再發（GABCD 18《The Cellar Tapes (30th Anniversary Edition)》），Discogs 版本頁兩筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Haze 零張。",
+  "risk": "掛名「Haze」在 MB 有德國饒舌歌手、美國製作人 Rashad Muhammad、馬來西亞舞曲製作人 Harikrish Menon 等多個同名實體，Discogs 的消歧義編號是「Haze (17)」；池中另有 Eddie Hazel 與 Hazel Dickens 兩個含 haze 的掛名，但字串不相等、不構成撞卡。本團在本批另有《C’est la vie》(1984) 一張，兩張都釘各自的 rgMbid。**MB 另有 834cb2b1《C’est la vie / The Ember》(1996) 是二合一合輯，依第 129 條身分不釘、封面不用、試聽不採。** 封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。卡帶原盤，依第 1 條年份取 1983。",
+  "mbNote": "釘 2976d2af-7347-4489-b8d1-5b24d6d9268d《The Cellar Tapes》，artist-credit「Haze」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 3 個 release：1983 GB Official、2013-12-01 GB Official、2013-12-01 XW Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID d039b264-976d-46be-88d5-722edc4c51f8（MB 消歧義「UK progressive rock」），分頁 browse 得名下 17 個 release-group。對照組 e0be3562《C’est la vie》(1984-04-07) 為本批 b 組另一張、各自釘各自的；834cb2b1《C’est la vie / The Ember》(1996，Compilation，二合一) 依第 129 條刻意不釘；681374fc《The Ember》(1985，EP)、503e4dd4《The Night》(1981，Single)、91b4e365《Stoat & Bottle》(1987) 與八張現場／精選皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Gabadon Records",
+  "g": "a"
+ },
+ {
+  "artist": "Treatment",
+  "album": "Intensive",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Treatment 自壓）",
+  "why": "Treatment 出自英國 1980 年代初的免費音樂節與巨石陣自由節場景，作品全部以卡帶自製：Discogs release 7919664 記 1982 年、廠牌欄「Not On Label」、編號 TT 001、Cassette Album，同年另有一捲《Live At Stonehenge》。這條線與 Marquee 那一端的 neo-prog 是同一個年代的兩種通路——一邊賣給俱樂部觀眾，一邊在節慶現場遞卡帶。MB 上樂團名下有 7 個 release-group，本張是最早的整張作品。本張沒有任何再發，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨。池中實掃 seed_cards.json 全 13,913 列，Treatment 零張。",
+  "risk": "掛名是單一通用詞（第 124 條），MB 另有一個掛「Treatment」的實體（發過《Drum Beast》、與 Gary Abbott 合作），本卡釘的是消歧義為 GB 的那一個；另有近年的英國硬搖滾團 The Treatment，帶定冠詞、池中無卡。封面實測 CAA release-group front 回 404，需本機另尋；Apple 八個 storefront 全空，試聽預估 unavailable，是本組風險最高的幾張之一。卡帶原盤，依第 1 條年份取 1982。同團的 71fa5ea3《Live at Stonehenge》(1982) 是同年現場帶，與本張同年、盤名不同，跨批去重要以盤名為主鍵比對。",
+  "mbNote": "釘 21a5bb61-acd4-4865-be28-1dd70819d69a《Intensive》，artist-credit「Treatment」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID d47fd371-15f9-4d0c-9726-993ab91e29c1（GB），分頁 browse 得名下 7 個 release-group。對照組 71fa5ea3-ce30-43ac-b4b4-41539ffd9df8《Live at Stonehenge》(1982，Album/**Live**) 刻意不釘；eabb7d39《The World of Treatment》(1986) 為本批 b 組另一張、各自釘各自的；07b7825c《Stamp Out Mutants》(1981，Single)、4104dde1《Feeling Like a Ghost》(1987，Single)、f7c86679《Treatment》(1989，自我同名)、f0b87df6《Cipher Caput》(1993) 皆刻意不釘。另需注意：與另一個 MB 實體（e0010185）名下的 aa20fa2d《Drum Beast》(1985) 不是同一組人。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Enid",
+  "album": "Something Wicked This Way Comes",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Enid Records",
+  "why": "The Enid 是英國 prog 裡最早整套把發行收回自己手上的樂團：1983 年他們用自己的 Enid Records 一口氣把舊作與新作全部重出，本張是編號 Enid 3 的新專輯（Discogs master 3072，1983 年英國盤、廠牌欄「Not On Label (The Enid Self-released)」、LP Album Stereo，錄音在 The Lodge），發行與郵購由樂團的歌迷組織 The Stand 一手處理。這套自營體系此後撐了整個 1980 年代（ENID 1 至 ENID 10）。地位證據是日本 Nexus 1985 年的授權盤（K22P 505）、1993 年 Mantella（MNTLCD1）、1996 年 Belle Antique（MAR 96293）、2006 年 WHD（IECP-10077）與 2012 年 Inner Sanctum（ENID035CD）多家授權再發。池中實掃 seed_cards.json 全 13,913 列，The Enid 零張。",
+  "risk": "**授權狀態要逐筆看**（第 43／57／78 條）：Discogs 版本頁十二筆裡有一筆是 2018 年俄羅斯「Operation Seraphim (2)」、沿用正版編號 EWCD03、**明標 Unofficial Release**——正牌的 Operation Seraphim 是 2010 年的英國實體，這是第 65 條「冒名廠牌沿用正版編號」的形狀，舉證不得指到它。年份：MB 的 first-release-date 記 1982，Discogs 原盤條目與所有版本一律記 1983，卡單取 1983（第 86 條：採有來源直接寫出的年份），行文不得正面斷言發行年（第 18／46 條）。本團在本批共三張（另有《The Stand》《The Spell》，皆在 b 組），已達藝人上限三張。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 1537073042《Something Wicked This Way Comes》1983、9 軌，試聽預估 ready。",
+  "mbNote": "釘 bb7ee654-d362-3287-a9d4-01cb693c1799《Something Wicked This Way Comes》，artist-credit「The Enid」，first-release-date **1982**（與卡單 1983 脫鉤，見 risk），primary-type Album、secondary-types 空。已回問 release-group 端點確認實體類型與標題。藝人 MBID 66f8692c-966d-4dfb-a2ed-babf51241922，分頁 browse 得名下 **52** 個 release-group（若用 artist?inc=release-groups 只會回前 25 筆，第 116 條）。對照組 a2a50ddb《Something Wicked This Way Comes (Live at Claret Hall Farm & Stonehenge)》(2016，Album/**Live**，同名現場) **特別要擋**，依第 126 條明寫不釘；0cb16656《The Stand》(1984-03) 與 b28f1b7e《The Spell》(1985) 為本批 b 組另兩張、各自釘各自的；ea488dd6《Fand》(1985)、056b5b1e《Salome》(1986)、06232160《In the Region of the Summer Stars 1984》(1984)、c82cf333《Live at Hammersmith (Volumes I & II)》(1983，二合一現場) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Inner Sanctum",
+  "g": "a"
+ },
+ {
+  "artist": "National Health",
+  "album": "D.S. al Coda",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Lounging Records",
+  "why": "National Health 1980 年就已解散，1981 年鍵盤手 Alan Gowen 去世後，Dave Stewart、Phil Miller、Pip Pyle 等舊團員把他生前未錄的曲子重新召集起來錄成本張，並為此**自己開了一家廠牌**：Discogs master 9092，1982 年英國盤、Lounging Records (2)、編號 LA 02、LP Album，法國與美國由 Europa Records（JP2008）發行。廠牌名下另有同年的 The Ghoulies《Dogged By Dogma》(LA01)，整個目錄就這幾號。地位證據是 1995 年 Voiceprint（VP129CD）、2001 年 Blueprint（BP129CD）與 2006 年日本 Arcàngelo（ARC-7145）三家的授權再發，Discogs 版本頁十筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，National Health 已有 1 張（自我同名的《National Health》），本張為第 2 張、未達三張上限。",
+  "risk": "**池中已有 National Health 一張**（自我同名首作），本張為第二張，加起來未達第 27 條的三張上限，但下游要注意兩張的盤名主鍵不同、不會誤判為重複。盤名帶兩個句點（D.S. al Coda 是樂譜術語 dal segno al coda 的縮寫），Discogs 寫「D.S. Al Coda」、MB 寫「D.S. al Coda」，大小寫差異依第 50 條在外部服務的搜尋裡會被正規化掉，採 MB／原盤的小寫 al。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 0f889b72-619d-31c0-95dd-1f71493c9fd8《D.S. al Coda》，artist-credit「National Health」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 3 個 release：1982 GB Official、1982 US Official、1995 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 8fab4688-d52e-4be5-a10f-3234014c43fc，分頁 browse 得名下 9 個 release-group。對照組 dd9fdbb3《National Health》(1978-02-14，自我同名，**已在池中**)、65a44b60《Of Queues and Cures》(1978-11)、f09fdff0《Complete》(1990，Compilation)、de751754《Missing Pieces》(1996)、4df6f47e《Dreams Wide Awake》(2005，Compilation)、9b6c83b0《Playtime》(2001，Live) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Voiceprint",
+  "g": "a"
+ },
+ {
+  "artist": "Nic Potter & Guy Evans",
+  "album": "The Long Hello Volume Two",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Butt Records",
+  "why": "The Long Hello 是 Van der Graaf Generator 團員在樂團之外的長期自營企劃，全部發行都走小廠與自資：Discogs master 323228，1981 年英國盤、廠牌 Butt、編號 NOTT 004、LP Album，掛名是貝斯手 Nic Potter 與鼓手 Guy Evans 兩人。Butt Records 是 1980 年代英國最典型的一家「一個人在家經營」的廠牌，目錄裡另有 Bill Nelson《Northern Dream》的重刻（BUTT 002，池中 c-68 已收 Holyground 原盤）與 Mother Gong《Robot Woman》(BUTT 003)。地位證據是 1993 年與 2009 年 Zomart Records（ZOMCD005／VP479CD）的授權 CD 再發，Discogs 版本頁七筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，`Nic Potter & Guy Evans` 與 `Nic Potter` 皆零張。",
+  "risk": "**掛名分裂風險要記明**：本批同一位 Nic Potter 另以單人掛名出兩張（b 組《Mountain Music》《Sketches in Sound》），本張因 MB artist-credit 與 Discogs 原盤皆作「Nic Potter & Guy Evans」而採雙掛名（第 16 條的 \" / \" 是給幾個獨立團體共用一張碟用的，這裡是兩人固定搭檔，池中 518 筆用 \" & \" 的先例適用）。下游做藝人層統計時要知道這是同一個人的兩個鍵。盤名：MB 標題作「The Long Hello, Volume Two」（帶逗號），Discogs 原盤作「The Long Hello Volume Two」，依第 50 條採原盤寫法；逗號差異在外部服務會被正規化掉。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 492986320《The Long Hello - Volume Two》1981、10 軌，試聽預估 ready。",
+  "mbNote": "釘 69e384fc-1f40-44ae-a4d3-54506917074e，**MB 的 release-group 標題是《The Long Hello, Volume Two》（帶逗號）、卡片盤名採原盤的無逗號寫法，兩者不必相等（第 91 條）**。artist-credit「Nic Potter & Guy Evans」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 3 個 release：1981 GB Official、1993 GB Official、2011-12-12 AF Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 1331620d-9c52-4c3c-9976-e0e89ebbf3c1（Nic Potter），分頁 browse 得名下 4 個 release-group。對照組 3a8f7453《Mountain Music》(1984) 與 6b39f7b2《Sketches in Sound》(1986) 為本批 b 組另兩張、各自釘各自的；85011587《Self Contained》(1987) 刻意不釘（年代外）。**Discogs master 975194《Mountain Music & Sketches In Sound》(1993) 是二合一 CD，依第 129 條身分不釘、封面不用、試聽不採。**",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Zomart Records",
+  "g": "a"
+ },
+ {
+  "artist": "Peter Hammill",
+  "album": "A Black Box",
+  "year": 1980,
+  "genres": [
+   "rock"
+  ],
+  "label": "S-Type Records",
+  "why": "Hammill 1980 年離開 Charisma 之後的第一張，是他把發行收回自己手上的起點：Discogs master 33999，1980 年英國盤掛的是**他自己的 S-Type Records、編號 PHS 1**，歐陸各國才由 Mercury 代理（6302 067）。此後他把整套目錄搬進自營的 Sofa Sound 郵購體系（見本批《Loops & Reels》）。這條「老一輩 prog 樂手在 1980 年代自己開廠牌、靠郵購名單賣碟」的線，與同年代 neo-prog 新團的自壓卡帶是同一個現象的兩端。地位證據是 1988 年 Virgin 的授權再發（OVED 140／CDOVED 140）與日本 Virgin（VJD-28083）。池中實掃 seed_cards.json 全 13,913 列，Peter Hammill 已有 1 張（《Patience》1983），本張與《Loops & Reels》加起來剛好三張、達第 27 條上限。",
+  "risk": "**藝人上限已滿**：池中既有《Patience》1 張，本批再收兩張即達三張上限，往後批次不得再收 Peter Hammill。**授權狀態要逐筆看**（第 43／57／78 條）：Discogs 版本頁二十九筆裡至少兩筆是俄羅斯的未授權 CD（1998 Agat Company Ltd. 0136、2000 年掛「Not On Label (Peter Hammill)」PHCD 1980，皆標 Unofficial Release），舉證只能指到 Virgin 那幾筆。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 714570675《A Black Box》1980、8 軌，試聽預估 ready。",
+  "mbNote": "釘 a1b231f5-a9f9-337b-b775-05dc822dfcb8《A Black Box》，artist-credit「Peter Hammill」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 3 個 release：1980 DE Official、1989 GB Official、2006 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3b972356-4410-4858-ab9c-6e3c3cf76609，分頁 browse 得名下 **85** 個 release-group（必須分頁，第 116 條）。對照組 1f043df0《Loops & Reels》(1983) 為本批另一張、各自釘各自的；ba8369a5《Patience》(1983) **已在池中**、刻意不釘；6ad711dd《pH7》(1979)、df81b347《Sitting Targets》(1981)、8109e467《Enter K》(1982)、4b46a27c《The Love Songs》(1984)、38ee4ea5《Skin》(1986)、dbf45166《And Close as This》(1986) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Virgin",
+  "g": "a"
+ },
+ {
+  "artist": "Peter Hammill",
+  "album": "Loops & Reels",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sofa Sound",
+  "why": "本批最純粹的一張郵購盤：Discogs master 34144，1983 年英國發行、廠牌與編號都是 Hammill 自營的 **Sofa Sound SS4**，不進店面、只透過他自己的郵寄名單賣給訂戶。內容是 1980–83 年間在家用多軌機做的電子與循環實驗，與同期的歌曲專輯分開發行，正因為賣不進通路才走郵購。地位證據是 1993 年 Fie! Records 的授權 CD 再發（FIE 9105，改題《Loops & Reels (Analogue Experiments 1980-1983)》）與 2010 年同編號的數位重製版。池中實掃 seed_cards.json 全 13,913 列，Peter Hammill 已有 1 張（《Patience》），本張為第 3 張、達第 27 條上限。",
+  "risk": "**藝人上限已滿**（池中 1 ＋ 本批 2 ＝ 3），往後批次不得再收。盤名：Discogs 原盤（SS4）印的是「Loops And Reels」，MB 的 release-group 與 1993 年起的所有再發、Apple 皆作「Loops & Reels」。這裡採「Loops & Reels」而不是原盤的 And——理由是第 50 條處理的是同一個名字的兩種寫法，而 & 與 And 在摺疊後會變成 loopsreels 與 loopsandreels、**互相不是子字串**，用原盤寫法會讓試聽比對整組落空；原盤寫法已記在此供下游備查。**授權狀態**：Discogs 版本頁另有 1997 年俄羅斯 ООО «ДОРА» JPCD 9710634，**明標 Unofficial Release**，舉證不得指到它。封面已實測 CAA release-group front 回 200；Apple 實測 gb 命中 collectionId 1713767776《Loops & Reels》1983、7 軌，試聽預估 ready。",
+  "mbNote": "釘 1f043df0-2e4b-3555-9d5a-51486ddcac19《Loops & Reels》，artist-credit「Peter Hammill」，first-release-date 1983，primary-type Album、secondary-types 空，轄下 2 個 release：1983 DE Official、1993 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 3b972356-4410-4858-ab9c-6e3c3cf76609，分頁 browse 得名下 85 個 release-group（第 116 條）。對照組 a1b231f5《A Black Box》(1980) 為本批另一張；ba8369a5《Patience》(1983) **已在池中**、刻意不釘；05bac426《Sonix》(1996，同為電子實驗選輯，形態最接近、最易誤配) **特別要擋**、刻意不釘；63397412《A Fix on the Mix》(1992，EP) 亦不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Fie! Records",
+  "g": "a"
+ },
+ {
+  "artist": "Mother Gong",
+  "album": "Robot Woman",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "Butt Records",
+  "why": "Gilli Smyth 與 Harry Williamson 在德文郡自建的 Otter Studios 錄音、交給同一圈子的 Butt Records 發行：Discogs master 863779，英國盤、編號 BUTT 003、LP Album。Butt 這家廠牌在本批另一張（Nic Potter & Guy Evans《The Long Hello Volume Two》，NOTT 004）也出現，是 1980 年代初英國自營小廠的同一個節點；Mother Gong 此後把後續兩張《Robot Woman》系列移到自營的 Shanghai（HAI 100／HAI 109）。地位證據是 Butt 自家的 repress（Discogs 版本頁標 Repress、標題印成《Robot Woman 1》）與 2019 年 Gonzo 系列把三張合成《The Robot Woman Trilogy》整理發行。池中實掃 seed_cards.json 全 13,913 列，Mother Gong 零張。",
+  "risk": "**年份分歧**：MB 的 first-release-date 記 1981，Discogs master 與其下的英國原盤條目記 1982。卡單取 1981（MB 的 release 也是 1981 GB Official，且該系列的第二張 HAI 100 已在 1982 年出），行文不得正面斷言發行年（第 18／46 條），本機上架前可再查 Butt 的目錄號序。**授權狀態要逐筆看**（第 43／57／65 條）：Discogs 版本頁有一筆 2022 年俄羅斯掛「Butt (2)」、沿用正版編號 BUTT 003、**明標 Unofficial Release**，是冒名廠牌實體的標準形狀，舉證不得指到它。**二合一／三合一風險**：MB 的 28e8cd24《The Robot Woman Trilogy》(2019) 是三張合一，依第 129 條身分不釘、封面不用、試聽不採。封面已實測 CAA release-group front 回 200；Apple 八個 storefront 全空，試聽預估 unavailable。",
+  "mbNote": "釘 9cd3ddc7-0c60-4b21-bde8-707ea0a8db30《Robot Woman》，artist-credit「Mother Gong」，first-release-date 1981，primary-type Album、secondary-types 空，轄下 1 個 release：1981 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 77268d1f-e9a2-4af9-9784-cc799a971752，分頁 browse 得名下 15 個 release-group。對照組 67154ebe《Robot Woman 3》(1986-12) **刻意不釘**（MB 該筆的 release status 未填、CAA 無圖，本批不收）；**28e8cd24《The Robot Woman Trilogy》(2019，三合一) 依第 129 條刻意不釘**；679117b1《Fairy Tales》(1979) 年代外、0d61fe59《Buddha’s Birthday》(1988) 等 1988 年後諸作皆刻意不釘。MB 上**沒有**《Robot Woman 2》(1982，Shanghai HAI 100) 的 release-group，那張因此本批不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Robert Calvert",
+  "album": "Hype",
+  "year": 1981,
+  "genres": [
+   "rock"
+  ],
+  "label": "A Side Records",
+  "why": "Calvert 1980 年寫了一本講唱片工業造神的小說《Hype》，1981 年自己找人錄了一張與小說同名、當作書中虛構樂手作品的專輯，交給小廠 A Side Records 發行：Discogs master 69107，1981 年英國盤、A Side Records (2)、編號 IF 0311、LP Album。這是 1980 年代初英國 prog 圈裡少見的「小說＋唱片」雙載體企劃，當年幾乎只在 Hawkwind 周邊流通。地位證據是 1989 年 See For Miles 的授權再發（SEE 278／SEECD 278）、2003 年 Voiceprint（VP261CD）與 2020 年 Purple Pyramid 的黑膠復刻（CLO 1698），Discogs 版本頁八筆零筆標 Unofficial Release。池中實掃 seed_cards.json 全 13,913 列，Robert Calvert 零張。",
+  "risk": "**年份與所釘 RG 脫鉤**（第 95 條）：MB 的 release-group first-release-date 記 1989、轄下三個 release 分別是 1989 FR、2013 XE、2020 US——**MB 只建了再發那幾筆，1981 年 A Side 的原盤不在其中**。卡單年份取 1981（Discogs master 69107 與其下的 IF 0311 條目直記），rgMbid 只當身分鍵；行文不得正面斷言發行年（第 18／46 條）。**Apple 版本要核**：實測 gb 命中 collectionId 1519060592《Hype》，日期 1981-09-08、**16 軌**，原盤 LP 不可能有 16 軌，極可能是後來的加曲版（第 129 條），試聽可採但本機上架前要逐軌核對。掛名「Robert Calvert」另有一個英國薩克斯風手的同名 MB 實體（a9b59d64），本卡釘的是 Hawkwind 那位（6253d563）。封面已實測 CAA release-group front 回 200。本團在本批共三張（另有 b 組《Freq》《Test-Tube Conceived》），已達藝人上限三張。",
+  "mbNote": "釘 6e7e5387-910f-3414-bddd-acdd9042891e《Hype》，artist-credit「Robert Calvert」，first-release-date **1989**（**與卡單 1981 脫鉤，見 risk；MB 只建了再發**），primary-type Album、secondary-types 空，轄下 3 個 release：1989 FR Official、2013 XE Official、2020 US Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID 6253d563-08a8-404e-9336-d3312825827e，分頁 browse 得名下 16 個 release-group。對照組 beb3dd42《Freq》(1985) 與 11e052e3《Test-Tube Conceived》(1986) 為本批 b 組另兩張、各自釘各自的；f90a3898《Captain Lockheed and the Starfighters》(1974)、85b012f5《Lucky Leif and the Longships》(1975) 年代外；7774d467《Live》(1982，primary-type **Other**／Live)、967923d3《Acid Daze 12-12-1987…》(Live)、8925129f《Anthology of Cosmic Music》(1999，Compilation)、afde6960《The Last Star Fighter》(2021，Remix) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "See For Miles Records",
+  "g": "a"
+ },
+ {
+  "artist": "Gothique",
+  "album": "Face of Ages",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "Not On Label（Gothique 自壓）",
+  "why": "MB 把 Gothique 標為「UK prog band」，名下只有三筆：1981 年的單曲《Dance of the Warriors》、1982 年的整張《Face of Ages》與 1984 年的《Kristiana》。整張那一筆在 Discogs 上是 release 7180868：1982 年、廠牌欄「Not On Label (Gothique Self-released)」、無編號、Cassette。這就是這條線最典型的形狀——一組沒有進過任何廠牌的樂團，把整張作品做成卡帶在 fanzine 與現場網絡裡流通，資料庫裡留下的痕跡只有三筆。本張沒有任何再發，依裁定第 82 條，「完全沒有再發」比「只有未授權再發」更乾淨；分量靠它與同年代同形態的自製卡帶（Third Quadrant、Haze、Treatment）並列舉證。池中實掃 seed_cards.json 全 13,913 列，Gothique 零張。",
+  "risk": "**本組資料最薄、風險最高的一張**：封面實測 CAA release-group front 回 404，Apple 八個 storefront 全空，封面與試聽都要本機另尋，若都找不到就依 §4「抓不到可靠封面就停止該筆」退回。掛名「Gothique」是法文的「哥德」，字串搜尋會撈到大量 goth 相關條目，只能靠 rgMbid 鎖定。1984 年的《Kristiana》在 MB 標為 EP、Discogs 標 Cassette，屬 EP／Album 雙胞胎風險（第 126 條），本卡明確不釘它。卡帶原盤，依第 1 條年份取 1982。無串流授權再發，本機三軸依 §0.8 錨點制人工評分（冷門軸 5）。",
+  "mbNote": "釘 094c7200-aa9f-49f9-b615-736fb4db6ade《Face of Ages》，artist-credit「Gothique」，first-release-date 1982，primary-type Album、secondary-types 空，轄下 1 個 release：1982 GB Official。已回問 release-group 端點確認實體類型與標題。藝人 MBID cb095727-3935-4183-89a4-436e0030603e（MB 消歧義「UK prog band」），分頁 browse 得名下 3 個 release-group。對照組 d634d2d7-9776-4f0c-b425-0cab6b2d9035《Dance of the Warriors》(1981，Single)、936c2453-abca-4c73-aacb-bea5ea265d2f《Kristiana》(1984，**EP**) 皆刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

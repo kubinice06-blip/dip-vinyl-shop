@@ -79,6 +79,420 @@
 
 **待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）；沒做「再逛唱片行」。
 
+### 2026-09-04（五）｜dip-vinyl-shop｜雷鬼桶的判準：看音樂不看產地（店主裁示）
+
+店主：**「不一定要牙買加，只要是雷鬼 dub 又是在南美的都可以。」**
+
+- **查證結果：`world/reggae` 從一開始就不限牙買加。** 規則是純標籤比對
+  （`roots reggae|dub|dancehall|ska|rocksteady`），沒有任何產地條件，桶裡本來就有
+  英國（Steel Pulse ×3、Aswad、Linton Kwesi Johnson ×3、Misty in Roots）、
+  南非（Lucky Dube ×2）、象牙海岸（Alpha Blondy、Tiken Jah Fakoly）。
+  我前一筆寫「回到牙買加語意」是誤述——桶的語意一直是**音樂類型**，不是地理。
+- 依「是不是雷鬼／dub」重新安置前一筆撤出的四張：
+  **進 reggae**：Wyclef Jean《The Carnival》（海地裔，標籤直接是 reggae，先前未落位）、
+  Boukman Eksperyans《Vodou Adjae》（海地 mizik rasin，根源雷鬼系）。
+  **進 latin（拉丁 / 古巴）**：Mighty Sparrow（千里達 calypso）、
+  The Esso Trinidad Steel Band（鋼鼓）、Kassav'（馬丁尼克 zouk）——
+  這三種都不是雷鬼，放進 reggae 會名實不符；拉丁／古巴是最近的加勒比區域桶。
+- 也順手確認**沒有漏收的雷鬼卡**：全池 world 主類型帶雷鬼標籤而不在桶裡的只剩
+  Daddy Yankee（reggaeton）、Manu Chao ×2、Ezra Collective、Staff Benda Bilili，
+  這幾張的主體分別是雷鬼動、拉丁、afrobeat，留在現有的 latin／african 才對。
+- Reggae / Dub 207 張、拉丁 / 古巴 136 張，涵蓋回到 96.3%。
+  驗證：125 個節點各抽 200 次，空節點 0、主類型不符 0、路徑不符 0。
+
+### 2026-09-04（五）｜dip-vinyl-shop｜抽到 IG reel 顯示專輯封面（補做 07-23 的裁定）
+
+店主：「我之前說要修改，如果抽到 ig reels 的話也要顯示專輯封面而不是 ig 縮圖，不知為何沒改。」
+回查工作階段紀錄，原始指示在 **2026-07-23**：「5% stock、15% reel 兩條改成各 10%／
+**封面 介紹 三屬性等等全都使用現有 kv 資料庫內容 包含試聽播放**」。當時只做了機率與介紹，
+封面／三軸／試聽三件沒做——`showQuizResult`／`showGpResult` 的 reel 分支一直把
+**IG 嵌入 iframe 當封面**，抽卡動畫也因為「沒有封面可翻」被 `state.fail` 直接跳過。
+
+## 為什麼一直沒被補上
+
+程式裡本來有一條 `if (reel.coverUrl)` 的路，看起來像已經支援封面——但**線上 Firestore 的
+`reels` 集合根本沒有 `coverUrl` 這個欄位**（36 篇實查，欄位只有 mood／title／id／url／
+genre／artist／description），所以那條永遠是 false，另一條 `fetchSpotifyCover` 又只寫進
+`result._coverUrl` 供收藏用，不會回頭改畫面。
+
+## 作法：把 reel 對回卡池的正式卡
+
+c-35／c-36 已經把這些 reel 專輯都上架成正式卡了，所以缺的只是「名字對不起來」：
+reel 的藝人欄是店主寫 IG 時的寫法（「菊地雅章 Quintet」「Eno / Wobble」「JAGATARA」
+「森下登喜彥 水木しげる」），卡池用的是正式卡名。新增 `reelCardOf()`：
+**專輯名收候選（完全相同／互相包含／兩個以上共同英數詞）、藝人名當裁判**
+（相同 3、包含 2、共用英數詞或一組兩字漢字 1），**藝人對不上就回 null 不硬猜**。
+
+這條「不硬猜」是必要的，同名專輯很容易撞到別人的盤：reel 的 Attica Blues 是 90 年代英國
+trip-hop 團的同名作，卡池那張是 **Archie Shepp** 的《Attica Blues》；張婷雅的《Promise》
+會撞到 **Sade**。線上 36 篇實測**對回 31 張、零誤判**。
+
+## 對不上的那 5 張，以及我一開始講錯的話
+
+店主質疑「怎麼可能查不到，之前全都建立成專輯卡了」——**這個質疑是對的，我第一版只確認
+「用這個名字對不上卡池」就下結論，沒回頭查上架紀錄**。查完的實情：
+
+- **JAGATARA《それから》確實有卡**（c-36 上架，卡名是假名「じゃがたら」）。羅馬字對假名
+  靠規則永遠對不上，也不該讓程式猜，所以加了一張**人工確認過的對照表** `REEL_CARD_ALIAS`
+  （目前 1 筆）。這是唯一一張「有卡卻沒對上」的。
+- 其餘 4 張**當初就沒上架**，c-36 的紀錄寫得很清楚：Mal Waldron《Mal: Live 4 to 1》、
+  Kenny Drew & Red Mitchell《洞氤》、The Trinity《Smile》三張**有身分有簡介、缺封面**，
+  留給店主後台上傳；Attica Blues 同名盤因「自我同名卡必須有固定試聽」退回；
+  モア《モア》MB 與外部皆查無（店主原文自陳「連歌手是誰都無從得知」）而退回。
+  **這四張補上卡片之後，前台會自動接回來，不用再改程式。**
+  （附帶一提：自我同名卡的規則 2026-09-04 已放寬成 rgMbid／§1 舉證等同試聽，
+  worker 查 Attica Blues 同名盤有 rgMbid `68dc1f49`，值得重跑一次上架。）
+
+**Spotify 退路已經移除**：原本對不上就退用 IG 的寫法查 Spotify，實測發現這會掛錯封面——
+The Trinity《Smile》查回來的是別人的《When The Smile Dissapears》。現在的規則是
+**對不回卡池就什麼都不給、畫面維持 IG 嵌入**（等同 2026-09-04 之前的樣子），
+寧可放 IG 影片也不要一張錯的封面。收進唱片櫃時仍會背景查一張封面，與舊行為相同。
+
+對回卡池之後，`reelAssetsOf()` 走的就是一般卡那條資產鏈（`resolveCardAssets`）：
+card_catalog 校正圖 → worker KV 的 Spotify/Bandcamp/YT，外加 album_overrides 的固定試聽，
+三軸直接用 seed 卡自帶數值。**顯示的藝人／專輯仍維持店主的 IG 寫法**——卡冊的
+「看 IG 貼文」連結是靠 `reelUrlFor(artist, album)` 逐字比對回 reel 的，改掉會斷；
+只有「拿名字去查現成資料」的地方（年份、三軸、試聽找 iTunes）改用正式卡名（`result._card`）。
+
+順帶跟著回來的三件：**抽卡翻牌動畫**（有封面就不再跳過）、**三軸星等**、**試聽鍵與自動播放**。
+店內在售（stock）維持不變，它本來就顯示商品實拍照、也沒有試聽。
+
+## 也順手釐清
+
+**心情選歌目前抽不到 reel**：`submitQuiz` 預設走 `submitQuizOffline`（離線心情池，另一個
+工作階段在做的雲端題庫線），reel 分支在 `submitQuizOnline` 裡。這次兩條路都改了，
+gameConfig 把 quiz 切回 online 時行為一致。實際會抽到 reel 的是類型挑片／直接來一張各 10%。
+
+## 主要檔案與驗證
+
+`index.html`（新增 `reelCardOf`／`reelAssetsOf`／`_reelNameScore`；`submitQuiz` 與
+`submitGenrePick` 的 reel 分支；`showQuizResult`／`showGpResult` 的 reel 封面與試聽開關；
+`gpPlayPreview` 改用正式卡名）。
+
+- 對照器直接從 `index.html` 切出來跑真正上線的那份程式碼：36 篇 → 31 張、零誤判。
+- 對不上的《洞氤》實抽：如設計退回 IG 嵌入、無封面圖、無試聽鍵，「收進唱片櫃」照常。
+  《それから》經對照表對回じゃがたら卡，封面（CAA）、年份 1989、試聽鍵都正常。
+- 本機 8903 用臨時副本把亂數釘死在 reel 分支實抽：直接來一張抽到《田園に死す》
+  （封面 CAA、年份 1974、三軸五星列、IG 內文簡介、iframe 0 個）、《妖怪幻想》同樣有封面；
+  心情選歌強制走 online 抽到 De La Soul《AOI: Mosaic Thump》（封面 500px、年份 2000、
+  試聽鍵出現、「在 Instagram 上看」保留）。抽到沒對上的《洞氤》如設計退回 IG 嵌入。
+- 四段內嵌 script 全數 `node --check` 通過。localhost 只有 worker CORS 的預期錯誤。
+
+### 2026-09-04（五）｜dip-vinyl-shop｜Reggae / Dub 節點名改回原樣
+
+店主裁示：**`world/reggae` 維持原本的「Reggae / Dub」，不要改成「Reggae / 加勒比」。**
+節點名改回去的同時，把先前為了配合新名字塞進這個桶的四位非牙買加藝人一併撤出
+（Mighty Sparrow、The Esso Trinidad Steel Band、Kassav'、Boukman Eksperyans），
+否則桶名寫 Reggae 卻抽得到 calypso／zouk／海地 mizik rasin，名實不符。
+Reggae / Dub 回到 205 張，涵蓋 96.3% → 96.2%，那 4 張回到未落位。
+**這四張加勒比卡目前無桶**，要收的話得另開節點，不能塞進 reggae。
+
+驗證：125 個節點各抽 200 次，空節點 0、主類型不符 0、路徑不符 0。
+
+### 2026-09-04（五）｜dip-vinyl-shop｜類型挑片補 12 個節點：台灣流行獨立、UK／亞洲嘻哈、東南亞等
+
+店主裁示兩件：**c-pop 之中所有台灣出產的一律歸 t-pop**、**其他缺少的桶直接補上**。
+
+- **台灣流行 t-pop**（新增 `tw-pop-artists.json`，46 位）：從 c-pop 切出 **77 張**，
+  c-pop 剩 57 張。判準是**唱片的出產地**（企劃／製作／發行市場）不是藝人國籍——
+  所以在台灣廠牌發片的星馬歌手（孫燕姿、林俊傑、梁靜茹、光良、蔡健雅…）算台灣出產；
+  香港粵語流行、上海與香港時代曲、王菲留在 c-pop。
+  ⚠ **這是唯一會覆蓋標籤規則的清單**（c-pop 標籤分不出台港中星馬）。
+  ⚠ 第一版只在 `classify()` 裡覆寫，t-pop 只有 52 張——**因為步驟 2 的同藝人傳播
+  跑在後面，還會再發 c-pop**，同一位歌手一半 t-pop 一半 c-pop。補了「步驟 3」全域再掃
+  一次才對得上（改判 25 張）。**日後任何「覆寫既有落位」的規則都要放在步驟 2 之後。**
+- **新增／填滿 12 個節點**（涵蓋 96.3%，未落位 861 → 540）：
+  `pop/t-pop`(77)、`pop/india` 印度與寶萊塢(23)、`pop/sea-pop` 東南亞(23)、
+  `pop/chanson` 法語香頌(20)、`hiphop/uk-euro` 英國與歐陸(49)、`hiphop/asia-rap` 亞洲嘻哈(49)、
+  `electronic/trance` Trance/Goa(54)、`folk/world-folk` 各地傳統民謠(83)、
+  `folk/tw-folk` 東亞民謠(30)、`world/asia` 亞洲(41)、`classical/musical` 音樂劇(19)、
+  `blues/desert` 沙漠藍調(14)。另 `world/med`→「地中海與巴爾幹」。（`world/reggae` 一度改名「Reggae / 加勒比」，
+  當天即依店主裁示改回「Reggae / Dub」，見下一筆。）
+  ⚠ **先查標籤再決定要不要人工名單**：trance 光靠標籤就有 54 張（代理只找到 6 位無標籤的 Goa 團）、
+  uk grime 34 張、chanson 19 張、desert blues 14 張——**人工名單只該補標籤照不到的部分**。
+  印度與東南亞流行則相反，標籤幾乎掛零（`bollywood` 只有 7 張且全是 world 主類型），
+  只能靠對照表逐位指定。對照表從 1,207 位擴到 1,437 位。
+- **節點門檻可逐節點放寬**：`RULES` 的節點定義新增 `min` 欄，音樂劇與沙漠藍調設 10
+  （全域 `MIN_NODE` 仍是 20）。這兩類資料天生就少但值得存在。
+- 驗證：**節點 103 → 115，無節點消失**；125 個節點（含十大類）各抽 200 次，
+  空節點 0、主類型不符 0、路徑不符 0。張數減少的節點全部有解釋：
+  techno/house −6（Goa 團移去 trance）、opera −14（音樂劇標籤改成優先於歌劇）、
+  art-pop −6 與 east-coast／underground −3（同藝人傳播的落點被新桶接走）。
+- **還缺的桶（資料不足，沒硬做）**：未落位仍有 jazz 158、rock 98、soul 83、classical 47。
+  soul 缺巴西 soul、拉丁 boogaloo、UK blue-eyed soul；classical 缺印度古典演奏（Ravi Shankar
+  等 4 位就 20 張，可考慮開 `raga`）；jazz 那 158 張多是非洲／衣索比亞、library music、
+  電影配樂等**本來就不該進爵士第二層**的卡。
+
+### 2026-09-04（五）｜dip-vinyl-shop｜分頁改名 artist、兩個回報 bug、og-artist.png、藝人級分桶補到 94%
+
+四筆提交：`dd08a30`（改名＋兩個 bug）／`d945f2e`（OG 圖）／本筆（分桶）。
+
+- **分頁名 guess → artist**（顯示名「猜你喜歡」不變）：`artistContent`／`artistModal`、
+  路由 `/artist`＋`#artist`、分享網址、紀錄 `type:'artist'`、`git mv guess artist`，共 40 處。
+  ⚠ **舊 `/guess` 網址不會 404 而是落到 SPA fallback（index.html，回首頁）**——
+  該路徑只上線幾小時，沒補 `_redirects`；若日後有分享連結回報再補。
+- **Bug 1 音樂沒停**：新機制的按鈕是 `data-gt-*`，由 `dip-genre-tree.js` 自己處理，
+  **不經過舊機制那條 `[data-gp-action]` 事件委派**——而 `gpStopPreview` 就掛在那條上。
+  在 `genreContent` 補一條委派，涵蓋 again／restart／back／pick／any 五個鍵。
+  教訓：**兩個遊戲共用結果頁，就得共用離場清理**，不能只共用渲染。
+- **Bug 2 動畫背景色不同**：新機制**漏傳 `fullscreen: true`**。少了它走非全螢幕，
+  舞台是 `.da-stage` 的白→淺灰漸層（`#fff → #f1f1f1`），跟純白頁面接不起來；
+  全螢幕的 `.da-fs` 才是純白。心情選歌／猜你喜歡三處呼叫都有傳，只有新寫的漏了。
+- **og-artist.png**：PowerShell `System.Drawing` 畫（**做得出來，我先前說沒工具是錯的**）。
+  關鍵是 `FillMode.Winding`——預設 `Alternate` 會把中文筆畫重疊處判成洞、切出白色橫紋，
+  這就是 08-16「字體完全搞錯」的真因。以 og-genre-v3 的墨水框反解 em size：
+  成品 487×115 中心 (589,314)，對照 v3 的 489×119 (590,314)。
+  `genre/index.html` **不用換圖**（標題「類型挑片」四字沒變，續用 og-genre-v3）。
+- **藝人級分桶**（`GENRE_LAYER_PLAN.md` §3，三支 agent 分十大類）：
+  新增 `genre-artist-map.json`（**1,207 位藝人**，形狀 `{大類:{藝人:節點}}`）。
+  ⚠ **鍵一定要含大類**——Luc Ferrari 同時出現在 electronic（`noise`）與 classical（`modern`），
+  只用藝人名為鍵會撞掉一筆。值可以是 `第二層` 或 `第二層/第三層`（rock 那份分到第三層）。
+  `build-genre-tree.mjs` 只在**標籤規則落空時**才採用對照表，不覆蓋既有落位，
+  所以 1,434 張涵蓋卡中只有 692 張真的靠它落位，其餘本來就有標籤。
+  合併前逐筆校驗「藝人名在該大類存在」＋「節點 id 在樹上存在」，1,207 筆全過。
+- 驗證：涵蓋 **12,132 → 13,563 張（84.1% → 94.0%）**，未落位 2,292 → 861；
+  **節點結構完全沒變（103 個，無新增無消失）**，只有張數上升，所以介面不會有意外。
+  113 個節點（含十大類本身）各抽 200 次：**空節點 0、主類型不符 0、路徑不符 0**，
+  且每個節點候選都 ≥20 張。抽樣覆核：Кино→後龐克、Azra→新浪潮、Zior→迷幻、
+  山本剛トリオ→bop、Pepe Romero《阿蘭費斯》→modern，判斷可信。
+- **代理標記的待裁定項**（都不影響上線，留給店主）：
+  ① 百老匯音樂劇 5 位／11 張暫放 `opera`，可能該另開「音樂劇」節點；
+  ② Goa／Psytrance 6 位無對應桶，暫塞 `techno`／`house`；
+  ③ **UK grime／drill 12 位與日韓華法語嘻哈約 20 位整批跳過**（88 張卡無家），
+     現有八桶全是美國地域或美式風格桶，建議增設「UK / Grime」與「亞洲嘻哈」；
+  ④ 沙漠藍調 Tinariwen 等 12 張、法語 chanson、寶萊塢配樂 14 位、東南亞流行同樣缺桶；
+  ⑤ 台語五位（葉啟田、洪榮宏等）代理歸 `c-pop`，若「華語流行」只限國語需另議；
+  ⑥ `jrock-asia`（日亞搖滾）被當成「日本＋泛亞洲」用，收了印尼／泰國／巴基斯坦約 40 位。
+
+### 2026-09-04（五）｜dip-vinyl-shop｜對調完工：類型挑片 v2 上線、舊機制改名猜你喜歡（P0–P3）
+
+依 `GENRE_PICK_SWAP_PLAN.md` 四階段做完，四筆提交：`122942f`／`5b241c3`／`e5ad87b`＋本筆。
+
+- **P0 資料層**（`scripts/build-genre-tree.mjs`）：三步落位（標籤規則→同藝人傳播→剪枝），
+  產出 `genre-tree.json`（10 大類、81 個第二層、22 個第三層）與 `card-subgenres.json`
+  （12,132/14,424 張，84.1%）。節點門檻 20 張，資料長大自動開新節點。
+  ⚠ **初版把 ambient／disco／funk／punk 當雜訊濾掉**（本意是濾大類名），
+  Ambient 桶從 516 掉到 228；改成「只濾大類名，子類型名一律保留」才對。
+  ⚠ 搖滾原本只靠 `rock-subgenre-map.json`（1,509 位藝人），新上架藝人整批落不了位，
+  補了 `ROCK_FALLBACK` 標籤後備（順序即優先序，metal 先判避免被 classic 的 hard rock 收走）。
+  古典標籤覆蓋僅 23%，改用作曲家欄＋年份推時期。
+- **P1 猜你喜歡搬家**：舊引擎**演算法一行未改**，只換外殼——DOM id
+  `genreContent`／`genreModal` → `guess*`（25＋10 處）、`startGenrePick`→`startGuess`、
+  路由與分享網址改 `/guess`、紀錄新存 `type:'guess'`（徽章同時認舊的 genre）。
+  新增 `guess/index.html` OG 導向頁、find.html 第四張卡、manifest 捷徑。
+  **移除後台「類型挑片模式（深挖／快速）」面板**——AI 錨點時代的遺物，現行引擎沒讀它；
+  ⚠ 移除時要連 listener 一起刪，我第一次只刪了函式定義留下孤兒 `});`，
+  且 admin.html 是 **CRLF**，用 `\n` 比對會全部落空，得先偵測換行字元。
+- **P2 類型挑片 v2**（`dip-genre-tree.js`）：晶片式逐層選單、節點內**均勻隨機抽一張**
+  （不做冷門過濾、不顯示張數，依店主裁示）。每層有「這一層隨便挑」；**沒選子類型時只看主類型**，
+  所以未落位的 16% 卡片仍抽得到，不會因分類沒做到就消失。
+  結果頁兩個遊戲共用：`gpResultHost` 變數化、按鈕與紀錄型別依 `_mode` 分流。
+- **P3 收尾**：`ALBUM_ONBOARDING.md` 加入「上架後跑 build-genre-tree.mjs」；
+  ⚠ **`sw.js` 不必改**——它對 `.js/.json` 已是網路優先，新檔自動涵蓋；
+  741KB 的 `card-subgenres.json` 也不該進 PRECACHE（同檔註解說 400KB 的 mood-bank 都不放）。
+- 驗證：瀏覽器走完「搖滾 › 龐克新浪潮 › 後龐克」抽到 Embrace《Embrace》1987，
+  路徑說明與紀錄型別正確；猜你喜歡三輪抽到 NUMBER GIRL《Sappukei》；`#genre`／`#guess` 分流正確。
+  Node 驗 **113 個節點全部有候選卡、17 條路徑各抽 200 次 100% 切題**。
+  ⚠ **測試環境陷阱**：Browser pane 隱藏時 `setTimeout` 被節流（40ms→442ms），
+  抽卡動畫的閃卡迴圈會爬行，看起來像「卡在牌背」，其實是環境不是程式——
+  端到端測動畫要嘛顯示 pane、要嘛改用 Node 驗邏輯。
+- **待辦**：兩張 OG 圖（`og-guess.png`／`og-genre-v4.png`）尚未製作，
+  目前 guess 沿用 `og-genre-v3.png`；未落位 2,292 張若要補，按 `GENRE_LAYER_PLAN.md` §3 派代理分桶。
+
+### 2026-09-04（四）｜dip-vinyl-shop｜套用當代 R&B 修正 38 張；對調計畫依店主裁示二修定案
+
+- **R&B 錯位修正已套用**（commit `86fef85`）：38 張主類型 soul→hiphop（soul 降副標），
+  SZA《Ctrl》、Solange、Daniel Caesar、Anderson .Paak 等；soul 1493→1455、hiphop 1282→1319。
+  ⚠ **提交時另一工作階段正在上架 511 張新卡**（ambient 系：J.D. Emmanuel、Craig Leon、Woo…），
+  用 blob 手法分離：工作區保留雙方內容、staged 以 HEAD 為底只套我的 38 張（`MM` 狀態）。
+  seed_cards 的重建格式為 `'[' + rows.map(JSON.stringify).join(',\n') + ']'`，
+  寫入前先驗 round-trip 能逐字還原原檔。
+- **計畫二修（店主裁示，寫回 `GENRE_PICK_SWAP_PLAN.md`）**：
+  ① **十大類全上**——⚠ 舊版 `GENRE_DATA` 只有八格，漏了**流行 833 張與藍調 329 張**
+  （主類型計），這兩類玩家從來抽不到；② 每次**抽一張**不是三張；
+  ③ **不做冷門過濾、不顯示冷門張數**，節點內均勻隨機（原計畫的冷門加權與張數標示全部作廢）；
+  ④ 四個入口全部留在 `find.html`；⑤ 後台「類型挑片模式（深挖／快速）」面板**直接移除**。
+- 節點生成門檻改為單一條件「卡數 ≥20」（原「冷門 ≥15」作廢），L3 是否開放同樣只看卡數。
+- 仍未動工：P0 建樹腳本與兩份 JSON、P1 猜你喜歡搬家、P2 類型挑片 v2、P3 OG 圖。
+
+### 2026-09-04｜dip-vinyl-shop｜c-65 至 c-76 ＋ c-87 上架 470 張，並依店主新裁定解除 41 張自我同名留置
+
+雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（207 筆提交）快轉合併。
+合併前先 stash 另一個工作階段未提交的 `PROJECT_MEMORY.md` 與 `index.html`，合併後 pop 回來。
+
+**上架結果：候選 524 張、上架 470 張、留置 54 張（全部是缺封面）、頂點 0 張。**
+另依同一條裁定回頭解除舊批留置 41 張。卡池 13,913 → **14,424**，無年份 0、無曲風 0。
+card_catalog 511/511 成功、KV 602 筆逐字回讀一致、**23 道 published gate 全部 0 error**。
+
+| 批 | 場景 | 候選 | 上架 | 留置 |
+|---|---|---:|---:|---:|
+| c-65 | 私壓電子、磁帶實驗、圖書館音樂 | 44 | 44 | 0 |
+| c-66 | 印度：寶萊塢黃金期與幕後歌手 | 40 | 40 | 0 |
+| c-67 | 日本自主爵士小廠 1975–88 | 36 | 30 | 6 |
+| c-68 | 英國私壓與小廠 prog／psych | 45 | 44 | 1 |
+| c-69 | 美國私壓 SSW 與 loner folk 二線 | 38 | 38 | 0 |
+| c-70 | 日本 1980s 地下與 indie 廠牌 | 46 | 41 | 5 |
+| c-71 | 英國自主爵士與即興 1969–85 | 45 | 37 | 8 |
+| c-72 | 美國耶穌搖滾與 Xian 私壓 | 42 | 37 | 5 |
+| c-73 | 日本前衛搖滾自主／小廠 | 41 | 36 | 5 |
+| c-74 | 英國 1980s indie pop 微廠 | 45 | 43 | 2 |
+| c-75 | 美國黑人福音小廠二線 | 37 | 30 | 7 |
+| c-76 | 沖繩民謡＋日本環境音樂二線 | 33 | 33 | 0 |
+| c-87 | §1 人工身分補遺（日本自主爵士） | 32 | 17 | 15 |
+
+## 一、店主裁定：自我同名卡的身分證據不限固定試聽
+
+雲端在 c-76 交接留了一張「店主可決定的」：**嘉手苅林昌《嘉手苅林昌》(1965, マルフク F-8)**，
+資料完整、CAA 有封面，但 Apple 三個 storefront 全空，踩到「自我同名 ＋ 固定試聽必須 ready」
+而未收，雲端註明這是整條沖繩線最該收的一張。**店主 09-04 裁定「這種狀況就是要收錄」。**
+
+改法不是開特例，是修規則本身（`ALBUM_ONBOARDING.md` §1）：這條規則要證明的是
+**「配到的是哪一張碟」**，試聽只是其中一種證據，而且對非英美發行系統性失效。
+改為 `identity.selfTitledVerified=true` 必填，身分證據則
+**ready 試聽 ／ `identity.rgMbid` ／ §1 人工身分舉證三者任一**即可。
+同步改 `scripts/verify-album-onboarding.mjs` 與 `batch-progress/build-manifest.mjs`。
+
+**連帶把舊批的 41 張撿回來**——這條規則從 c-50 起累積了一批受害者，
+逐批重建 manifest、濾掉已在池中的列後單獨走完管線：
+Moğollar／Erkin Koray／Edip Akbayram（土耳其 Anadolu 三張同名首作）、
+YU Grupa／Korni Grupa／Azra／Haustor／Ekatarina Velika／Partibrejkers／Leb i Sol
+（南斯拉夫十張）、God Bless／Guruh Gipsy／Krakatau／Asin（東南亞八張）、
+Mr. Bungle／La Düsseldorf／Maxophone／Biglietto per l'Inferno 等。
+**這些全是各自場景的正典**，卡了三個月只因為 Apple 沒上架。
+
+嘉手苅林昌那張則是本機從零補起來的：MB release-group `1a68fd15`（1965 JP Official、
+マルフク F-8、12 吋 10 軌、無條碼）、CAA front、三軸走 §0.8 regional 錨點（3/3/3）、
+研究檔與簡介本機補寫（JVC 藝人檔案：1920 年生於越來村，現址在嘉手納基地內）。
+
+## 二、`wrangler kv bulk put` 預設已改成寫本機，必須加 `--remote`
+
+**這次差點整批簡介沒上去。** 前六批照舊例不加旗標跑，13 次全印 `Success!`，
+但輸出多了一行 `Use --remote if you want to access the remote instance.`——
+bulk get API 回讀證實**遠端一筆都沒有**。09-03 那次的「`--remote` 不是合法旗標」已經過時。
+
+**教訓：`Success!` 只證明命令沒出錯，不證明寫到哪裡。**
+回讀一律走 bulk get API，不要拿命令的退出碼當驗證。全部重跑加 `--remote` 後，
+561 ＋ 41 筆逐字一致。
+
+## 三、`publish-manifest` 的 seed 排版自檢被檔尾換行擋下
+
+另一個工作階段的曲風修正（`03ad782`，370 張摘除 rock）寫回 `seed_cards.json` 時
+多留了一個檔尾 `\n`，其餘逐字相同，自檢卻整批擋下。改成**檔尾換行跟著檔案走**
+（比照 2026-09-01 對 CRLF 的處理），不要順手改掉別人的檔尾。
+
+## 四、封面補救三層，逐張裁決退回 4 張
+
+雲端交來 406/523。三層補救：**試聽探測已釘 collectionId 的直接 lookup（+56，最有效的一層）**、
+Spotify／Bandcamp（+9）、iTunes 多 storefront 搜尋（+2），到 473。
+84 張非 CAA 逐張看圖，退回 4 張（明細見 `batch-progress/COVER-TEMPLATE-NOTES.md`）：
+Company《Company 1》配到 Maranatha! Kids' Praise **Company**、
+Stan Tracey《Captain Adventure》配到續作《**The Return Of** Captain Adventure》、
+Hope of Glory 配到華語敬拜碟《向祢》、Social Tension《Macbethia》配到二合一形態的封面。
+**`apple-verified-collection` 那層零誤配**，錯的全在模糊搜尋兩層——與 09-03 的比率一致。
+
+## 五、冷門軸第二次套用 §0.8，適用範圍用 listeners 中位數判
+
+12 批走 depth、c-66 印度走 regional。判準是中位數而非文字系統：
+c-66 印度 25（《Mughal-E-Azam》《Mother India》這種國民級電影原聲只有三、四位數聽眾）
+→ regional；c-70 日本地下最高才 8,408、JUN SKY WALKER(S) 那張只有 154 → 是真地下，走 depth。
+
+**機器給 5 分 428 張，錨點提案 10 張，逐張查證後只留 1 張**（Wilson McKinley《On Stage》
+1970 年無廠牌自壓、套封手工刷印，後世只有選輯型再發）。被打掉的九張全部查到唱片本身的
+授權再發：Mannequin（Nocturnal Emissions、Bourbonese Qualk）、Vinyl-on-Demand（Zoviet France）、
+Off Note ＋ Aguirre（生活向上委員会）、Doubt Music（沖至）、Sebastian Speaks（Vernon Wray）、
+Light In The Attic（The Trees），另兩張根本不是私壓（Zoviet France 原盤是 Red Rhino、
+Jessy Dixon 是正規福音廠牌且 Apple 三區在架）。
+
+## 六、`build-manifest` 漏帶 `genreException`
+
+c-70 的 Non Band《Non Band》被 prepare gate 擋下：MB 依 6 軌標 EP，策展層照 §5.5 寫了
+`exceptionReason: "§5.5 asia-mini-album…"` 與三個佐證網址，但驗證器認的欄位叫
+`genreException`，`build-manifest` 從來沒帶過它。補上：兩個欄位都收，缺欄時才從理由字串
+取白名單名。
+
+## 主要檔案
+
+`ALBUM_ONBOARDING.md`（§1 自我同名放寬）、`scripts/verify-album-onboarding.mjs`、
+`scripts/publish-manifest.mjs`、`batch-progress/build-manifest.mjs`、
+`seed_cards.json`（14,424 列）、`data/apple-audio-map-v1.json`、
+`data/apple-audio-runtime-v1.json`（10,999 筆、skippedInvalid 0）、
+23 份 `onboarding-manifest-*.json`、`batch-progress/c*/{cand-all,covers,previews.local,ratings,held}.json`。
+
+## 驗證
+
+23 道 prepare gate ＋ 23 道 published gate 全部 0 error；card_catalog 511/511；
+KV 602 筆 bulk get 逐字一致；`build-apple-audio-runtime-map` skippedInvalid 0；
+卡池 14,424 列、無年份 0、無曲風 0；線上 dipvinyl.tw 回讀確認。
+
+## 尚未處理
+
+- 留置 54 張全是缺封面（c-87 佔 15 張——§1 批的碟連 CAA 都沒有，只能掃圖）。
+- c-77 至 c-81 雲端還在跑，c-82 至 c-86 只有腳手架，本次不碰（店主指示「還在研究的不碰」）。
+- c-73 的 Social Tension 兩張同團碟要一起確認封面歸屬，不能只補一張。
+
+### 2026-09-04（三）｜dip-vinyl-shop｜對調計畫定稿：類型挑片＝新細分機制、舊機制改名「猜你喜歡」（待店主過目）
+
+店主釐清：不是另開「類型遊戲」，而是**把「類型挑片」這個名字與 /genre 入口留給新的細分類型機制**，
+舊的三位藝人品味機制搬到新分頁 `/guess`、改名「猜你喜歡」。規劃完整寫在 `GENRE_PICK_SWAP_PLAN.md`，
+**未動工**。
+
+- 盤點過的接點：`index.html`（`setActiveTab` 的 gameModal 對照、`bootstrapView` 的 valid 清單、
+  `genreModal`、三處 `shareUrl`、紀錄徽章）、`find.html`、`genre/index.html`（純 OG 導向頁）、
+  `manifest.json` 捷徑、`admin.html:746`「類型挑片模式（深挖／快速）」——
+  ⚠ 那是 AI 錨點時代的舊開關，現行引擎沒讀它。battle／roguelike 只有註解提到，不動。
+- 關鍵設計：舊引擎**一行邏輯不改**，只把 host 容器變數化＋改名入口；「直接來一張」本就走舊引擎
+  的 `gpIsRandom` 分支，跟著猜你喜歡共用 `guessModal`。新機制獨立成 `dip-genre-tree.js`，
+  結果頁從 `showGpResult` 抽成共用 `renderPickResult`。
+- 分階段：P0 資料層／P1 猜你喜歡搬家（可先上線、零風險）／P2 類型挑片 v2 切換 `#genre`／P3 OG 圖與文案。
+- 留給店主的五個決定：藍調是否成第九大類（660 張主類型 blues 目前抽不到）、結果頁三張或一張、
+  直接來一張歸屬、後台舊模式開關處置、兩張新 OG 圖。
+
+### 2026-09-04（二）｜dip-vinyl-shop｜套用 rock 誤標修正；類型遊戲分層研究定稿（兩層為主、L3 依資料開）
+
+- **套用 `GENRE_FIX_ROCK_20260822.json`**（店主核定）：370 張摘 rock、25 張補標、0 張無曲風，
+  主類型 rock 3,632→3,560。備份 `seed_cards.backup-before-genre-fix-rock.json`。
+  ⚠ 套用腳本 ROOT 寫死 `/home/user/dip-vinyl-shop`（另一環境），本機要複製改路徑跑。
+- **整批拉 KV rawGenres 做分層研究**：Cloudflare bulk/get 140 請求約 90 秒，12,047/13,913 張
+  有標籤（86.6%），快取在 scratchpad。⚠ Last.fm 的 R&B 寫 `rnb` 不是 `r&b`，
+  第一版正規式漏抓，重跑才對。
+- **結論寫進 `GENRE_LAYER_PLAN.md`**：兩層為主；第三層只開 punk-wave／metal／psych-prog／
+  dream-post 四桶（判準：節點 ≥40 張且冷門 ≥15）。**classic 桶冷門卡幾乎為零**（hard rock 0），
+  開 L3 沒意義；indie-alt 411 張落在大雜燴不開。後龐克與正統龐克確為 L3 兄弟。
+  多重歸屬不硬切（electronic 58% 卡跨兩簇）。古典標籤覆蓋只 23%，另用時期＋形式規則。
+- **當代 R&B 錯位提案 `GENRE_FIX_RNB_20260904.json`**：38 張主類型 soul→hiphop（soul 降副標），
+  pop 傾向者 needsRuling。**未套用**。
+- 未做：建樹腳本、前端類型遊戲頁、原遊戲改名（候選已列）。
+
+### 2026-09-04｜dip-vinyl-shop｜類型挑片抽卡嚴重偏離修正：改以「主類型」為準，切題率 100%
+
+店主實測：「選搖滾，出來的都跟搖滾無關，不是民謠就是爵士。」查證屬實，而且比想像嚴重。
+
+- **根因是我 08-16 加的副曲風加權**。當時只獎勵「副曲風與錨點重疊」（`×1+votes*0.6`），
+  純類型卡 votes=0 只拿 ×1、多標卡最高拿 ×2.8，於是**多標卡被系統性抬高**。
+  實測選搖滾抽出的純搖滾比例只有 **17–21%，反而低於卡池基準 33%**
+  （Dylan／Neil Young／Tom Waits 那組 folk 佔 44%）。第二個汙染源：`gpAnchorProfile`
+  的 tagVotes 吃該藝人**全部**卡，選 The Beatles 連他標 classical 的卡也投票。
+- **店主裁定：「兩種類型重疊的卡要以主類型為主，任何音樂都有一個主要類型。」**
+  ⚠ **關鍵發現：`seed_cards.json` 的 genres 陣列首欄就是主類型**，先前沒人用過這個性質。
+  驗證方法：每組雙標的兩種順序都存在且分布不對稱（rock>pop 740 張 vs pop>rock 228 張，
+  folk>rock 329 vs rock>folk 454）；抽樣語意也對——Rolling Stones《Some Girls》是
+  ["rock","blues"]、Dylan《Nashville Skyline》是 ["folk","rock"]。
+- **四處改動**：抽卡候選改 `c.genres[0] === gpGenre`；錨點本人分支同步；
+  主類型池內不再做純度／副曲風加權（同池同主類型，加權無意義）；
+  **名單生成 `gpArtistListFor` 也改用主類型統計**——原本用「含標籤」，
+  rock 名單才會混進渡辺香津美、Wayne Krantz 這些 fusion 樂手，
+  且名單裡只有 26–61% 的藝人在該類真的有主打卡（folk 只有 26%，江蕙、鳳飛飛都在裡面）。
+- **為什麼不用「只收單標卡」**：那樣純度也是 100%，但會砍掉 blues rock 與 psych folk rock
+  這些正統搖滾（rock 候選 3,632 → 1,593）。主類型法兩者兼得。
+- 驗證：十組錨點模擬各 2,000 抽，**切題率全部 100.0%**（修正前 17–58%），
+  每類可抽到的不同專輯 479–1,044 張（單次遊玩最多 6 張，多樣性充足）；
+  名單品質 8 類全部 300/300 都有本類主打卡（rock 主流半現在是 Guns N' Roses、
+  Jane's Addiction、Jeff Buckley）。瀏覽器實測走完三輪抽到 Goblin《Non ho sonno》
+  `["rock","electronic"]` 主類型 rock，無 JS 例外。
+- ⚠ 環境變動記錄：`/genre` 已是純 OG 導向頁（`location.replace('/#genre')`），
+  首頁改版成 `find.html` 選單，但**抽卡邏輯仍全在 index.html**，改對地方。
+  卡池已成長到 13,913 張（古典線 c-52～c-64 持續在跑）。
+
 ### 2026-09-03｜dip-vinyl-shop＋dip-vinyl-worker｜c-52 至 c-64 十三批本機上架 504 張，並清掉卡池九張重複卡
 
 雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（216 筆提交）快轉合併，
@@ -10183,7 +10597,8 @@ Big K.R.I.T.《4eva Is a Mighty Long Time》(6670)；
    （「再一張」走 `submitGenrePick`，開頭本來就有停，不受影響。）
    注意 `gpStopPreview` 內部以 `gpPreviewStarted` 為條件——**不可改成無條件停**，
    否則切主分頁會把唱片櫃／搜尋的播放一起停掉（三處共用同一個 DipPlayer 實例）。
-3. **文案**：「依你選的 X 校準口味挑出」→「順著你選的 X 的口味挑的」。
+3. **文案**：「依你選的 X 校準口味挑出」→ 店主定稿為「**依你所選 X 挑出的**」
+   （中途曾改成「順著你選的 X 的口味挑的」，店主再指定成現行版本）。
 
 **驗證侷限（要記住的工具限制）**：合成點擊不會產生 user activation，所以在自動化環境裡
 抽卡的自動試聽起不了播，「播放中 → 換類型 → 停止」這條轉換無法在瀏覽器工具裡真的觀察到。

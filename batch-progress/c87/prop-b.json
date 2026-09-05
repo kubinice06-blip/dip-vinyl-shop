@@ -1,0 +1,584 @@
+[
+ {
+  "artist": "沖至",
+  "album": "しらさぎ",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Trio Records 的子廠 Nadja 第一批日本自由爵士盤之一（PA-7098）。1974 年 6 月 7 日在赤坂草月會館的現場，兩面各一首長篇：A 面同名〈しらさぎ〉二十分零六秒、B 面把〈You Don't Know What Love Is〉接進〈October Revolution〉共二十四分四十秒。沖至吹小號與印度笛兼打擊，配上宇梶昌二的上低音薩克斯、徳弘崇的貝斯與中村達也的打擊；音樂會由副島輝人與 ADVEC 主辦，沖至自己掛唱片製作。2015 年 4 月 8 日 Trio／Nadja 以 POCS-9336 做成紙盒 CD 復刻（Discogs release 7885349，版本頁未標 Unofficial Release）。池中已有 c-67 收的沖至《幻想ノート》一張，這是第二張。",
+  "risk": "MusicBrainz 上沖至（1f4bb340-7a49-480f-8910-9432174541c0）名下有 7 個 release-group——包含 c-67 釘住的《幻想ノート》——但沒有《しらさぎ》，屬「實體在、名下無此條目」的形狀。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：盤名平假名「しらさぎ」羅馬拼音 Shirasagi、漢字可寫「白鷺」（碟上未用，不臆測）；藝人羅馬拼音 Itaru Oki，Apple 的掛名把姓名中間空一格寫成「沖 至」，三種寫法都要比對。同一藝人合計 2 張、未達 3 張上限。年份 1974 由 Discogs 原盤條目與錄音日期支撐；2015 年 CD 與 Apple 的 2003 上架日都不是發行年（第 95 條的形狀）。再發背書：POCS-9336 在 Discogs 版本頁未標 Unofficial Release，Trio／Nadja 是原廠自己的復刻、廠牌條目無爭議記載（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1327724629**（https://music.apple.com/jp/album/1327724629 ，沖 至、2003-10-22、2 軌），封面走 §4 的 apple-verified-collection 例外、試聽可期；但**只有兩軌、單軌超過二十分鐘**，試聽片段的代表性本機要看一眼。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=沖至&limit=5 → score 100「沖至」1f4bb340-7a49-480f-8910-9432174541c0；artist?query=Itaru Oki → 同一實體 score 100",
+    "release-group?artist=1f4bb340-7a49-480f-8910-9432174541c0&limit=100&offset=0（第 116 條分頁 browse）→ 7 筆：Live at Jazz Spot Combo 1975 (2021)、Mirage (2003)、幻想ノート (1976)、20040831ミックスサウンド (2004)、No Is No (2014)、Don't Fuck Around With Your Women (2014, Single)、Celebration (2022)。無《しらさぎ》",
+    "release-group?query=releasegroup:\"しらさぎ\" AND artist:\"沖至\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"Shirasagi\"&limit=15 → count=2，回的是 Shep《Kamisato Ayaka: Shirasagi Princess》(2023) 與 Merzbow《13 Japanese Birds Pt. 11》(2009)，皆非本盤（第 122 條）"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在、名下 7 個 release-group 分頁掃完都沒有《しらさぎ》；盤名加藝人的交叉查 count=0，單查羅馬拼音回的兩筆是完全不相干的條目。2015 年 Trio／Nadja 的 CD 復刻也未在 MB 建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/1039349",
+   "https://www.discogs.com/release/7885349",
+   "https://music.apple.com/jp/album/1327724629"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Itaru Oki",
+  "reissuedBy": "Trio Records／Nadja（POCS-9336，2015-04-08 紙盒 CD 復刻，Discogs release 7885349，未標 Unofficial）"
+ },
+ {
+  "artist": "豊住芳三郎",
+  "album": "メッセージ・トゥ・シカゴ",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7101，1974 年 10 月 20 日錄於福島郡山的爵士店「Jazz Corner Mama」，主辦是郡山ニュージャズグループ與副島輝人——一場地方爵士同好會辦的演奏會被原樣壓成唱片。三首全是芝加哥 AACM 的曲子：Roscoe Mitchell 的〈Odwalla〉、Malachi Favors 的曲子、以及 Art Ensemble of Chicago 的〈People in Sorrow〉（二十三分十五秒）。打擊豊住芳三郎、鋼琴原亮、上低音薩克斯宇梶昌二。盤名直接說明了這是一封從日本地方寄往芝加哥的信。2015 年 4 月 8 日 Trio／Nadja 以 POCS-9337 做成紙盒 CD 復刻（Discogs release 7686465，未標 Unofficial Release）。",
+  "risk": "MusicBrainz 上豊住芳三郎（8773fb93-87fa-425b-b2cc-2600aa9a71ae）名下有 14 個 release-group，最早的是 1983 年的《What Are You Talking About?》，1974 年的本盤不在其中。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法分歧（第 49 條）：Discogs 原盤把綽號寫進去成「豊住芳三郎”サブ”」，另有 ANV「Yoshisaburoh Sabu Toyozumi」，MB 與 Apple 都用「豊住芳三郎」，羅馬拼音 Sabu Toyozumi。盤名寫法分歧：Discogs 原盤寫「Message To Chicago = 〜メッセージ・トゥ・シカゴ〜」（前後帶波浪號）、2015 CD 寫「Sabu - Message To Chicago」、Apple 2003 版寫「サブ=メッセージ・トゥ・シカゴ」、Apple 2021 版寫「メッセージ・トゥ・シカゴ (2021Remaster)」，卡片取不帶綽號與波浪號的「メッセージ・トゥ・シカゴ」，本機四種寫法都要比對。年份 1974 由 Discogs 原盤條目與錄音日期支撐。再發背書：POCS-9337 未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1327726255**（https://music.apple.com/jp/album/1327726255 ，豊住芳三郎、2003-10-22、3 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=豊住芳三郎&limit=5 → score 100「豊住芳三郎」8773fb93-87fa-425b-b2cc-2600aa9a71ae；artist?query=Sabu Toyozumi → 同一實體 score 100",
+    "release-group?artist=8773fb93-87fa-425b-b2cc-2600aa9a71ae&limit=100&offset=0 → 14 筆（Banka 2018、The Crushed Pellet 2003、What Are You Talking About? 1983、Mannyoka 2018、Live In Japan 1997、Two Strings Will Do It 1994、五輪書 2022、Complete Link 2024、TRIANGLE 2023、Ars Longa Dens Brevis 2000、Cosmos Has Spirit 1992、Live in Okayama 1987 2000、The Conscience 2017、Overhang Party/Senzei 2004），無 1974 年的本盤",
+    "release-group?query=releasegroup:\"Message to Chicago\"&limit=15 → count=0",
+    "release-group?query=artist:\"Sabu Toyozumi\"&limit=15 → count=8，全部是上列 browse 已見的 2017–2024 年條目，無本盤"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在、名下 14 個 release-group 分頁掃完最早只到 1983 年，1974 年的《メッセージ・トゥ・シカゴ》不在其中；盤名直接查 count=0，artist 字串查回的八筆全是已知的後期條目。2015 年 Trio／Nadja 的 CD 復刻未建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/3861825",
+   "https://www.discogs.com/release/7686465",
+   "https://music.apple.com/jp/album/1327726255"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Sabu Toyozumi",
+  "reissuedBy": "Trio Records／Nadja（POCS-9337，2015-04-08 紙盒 CD 復刻，Discogs release 7686465，未標 Unofficial）"
+ },
+ {
+  "artist": "高木元輝＝加古隆カルテット",
+  "album": "パリ日本館コンサート",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-6020，1974 年 4 月 26 日錄於巴黎大學城日本館（Maison du Japon de la Cité Universitaire）的現場——這張碟的名字就是它的錄音地點。薩克斯高木元輝與鋼琴加古隆帶著美國貝斯手 Kent Carter（跟過 Steve Lace 與 Paul Bley 的圈子）與鼓手 Ron Pittner，四首裡有九分四十一秒的〈石仏〉與分成兩部分的〈反射組曲〉。音樂會由日本館主辦、唱片由 Pacific Open Music Ensemble 製作，內頁是有岡真的文章與照片。2015 年 4 月 8 日 Trio／Nadja 以 POCS-9347 做成紙盒 CD 復刻（Discogs release 7818625，未標 Unofficial Release）。",
+  "risk": "MusicBrainz 上高木元輝（173028f8-9251-49f6-b344-f2e64cfdc688，11 個 release-group）與加古隆（36286c52-58a7-44f5-85bd-478711bc4941，17 個）兩個實體都在，名下都沒有這張。**特別注意一個近似陷阱**：高木元輝名下有一筆「1982-11-13: Espace Japon, Paris, Japan」，同樣是巴黎、同樣是日本文化機構，但年份與場地都不同，不是本盤（第 122 條的近似形狀）。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤同時印「Takagi Et Kako Quartet」與「高木元輝＝加古隆カルテット」（全形等號），Apple 寫「高木元輝 + 加古隆」，三種寫法本機都要比對；卡片依 Discogs 原盤的日文寫法。盤名：Discogs 原盤同時印法文「Jazz À Maison De Japon, Paris」與日文「パリ日本館コンサート」，卡片取日文。年份 1974 由原盤條目與錄音日期支撐。再發背書：POCS-9347 未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1327729225**（https://music.apple.com/jp/album/1327729225 ，高木元輝 + 加古隆、2003-10-22、4 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=高木元輝&limit=5 → score 100「高木元輝」173028f8-9251-49f6-b344-f2e64cfdc688；artist?query=加古隆 → score 100「加古隆」36286c52-58a7-44f5-85bd-478711bc4941",
+    "release-group?artist=173028f8-9251-49f6-b344-f2e64cfdc688&limit=100&offset=0 → 11 筆（摩訶耶寺の高木元輝 2012、Origination 1975、2001.07.06、at KUKU 2002、Kozan 1986、1982-11-13: Espace Japon Paris、Live At FarOut Atsugi 1987、at まんぼう、Live At Little John Yokohama 1999、The Music...Hardcore Jazz EP、Isolation 1971），無本盤；release-group?artist=36286c52-58a7-44f5-85bd-478711bc4941&limit=100&offset=0 → 17 筆，全部是 1977 年之後的獨奏、電影與 NHK 配樂條目，無本盤",
+    "release-group?query=releasegroup:\"Jazz a Maison de Japon\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"パリ日本館コンサート\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩位掛名者的 MB 實體都在、名下 11 與 17 個 release-group 分頁掃完都沒有這張 1974 年的巴黎現場；盤名以法文與日文兩種寫法查皆 count=0。高木元輝名下另一筆巴黎場次是 1982 年 Espace Japon，場地與年份都不同，已排除為近似誤配。2015 年的 CD 復刻未建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/1213960",
+   "https://www.discogs.com/release/7818625",
+   "https://music.apple.com/jp/album/1327729225"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Takagi Et Kako Quartet",
+  "reissuedBy": "Trio Records／Nadja（POCS-9347，2015-04-08 紙盒 CD 復刻，Discogs release 7818625，未標 Unofficial）"
+ },
+ {
+  "artist": "渋谷毅",
+  "album": "ドリーム",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7127，錄音地點是鹿兒島的爵士店 Pannonica，日期分成 6 月 30 日與 12 月 14 日兩次現場。鋼琴渋谷毅，貝斯松本辰弘，鼓分別是浜島澄明與植松義隆——同一張碟上兩位鼓手各佔一半。七首多為〈Memories of You〉〈All the Things You Are〉〈Autumn Leaves〉這類標準曲，B4 把同名曲〈Dream〉接進〈After You've Gone〉。內頁與監修都是中山信一郎。2001 年 10 月 24 日上了數位（Apple collectionId 1329374353），2021 年另有 remaster 版。池中已有 c-67 收的渋谷毅《Shibuyan》（1983，Aketa's Disk）一張，這是第二張，而且早了八年。",
+  "risk": "MusicBrainz 上渋谷毅（d6417bc0-9ce9-4cc9-a4c1-e04ea08b9942）名下只有 3 個 release-group（See-Saw 2002、Shibuyan 2019、Cook Note），1975 年的《ドリーム》不在其中。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統去重（第 49 條）：盤名片假名「ドリーム」對應羅馬拼音／英文 Dream，Discogs 原盤同時印兩者；**「Dream」是極通用的盤名字串，本機比對務必連藝人一起比**；藝人羅馬拼音 Takeshi Shibuya，Apple 另有把姓名中間空一格的「渋谷 毅」寫法。同一藝人合計 2 張、未達 3 張上限，兩張簡介不要寫成同一篇（這張是 1975 年鹿兒島的店裡現場、《Shibuyan》是 1983 年荻窪的 Aketa's Disk）。年份 1975 由 Discogs 原盤條目直記；Apple 的 2001 上架日與 2021 remaster 都不是發行年（第 95 條的形狀）。封面與試聽預估：**Apple collectionId 1329374353**（https://music.apple.com/jp/album/1329374353 ，渋谷毅、2001-10-24、7 軌），封面走 apple-verified-collection、試聽可期；另有 2021 Remaster 版 collectionId 1548603486，本機擇一即可、不要兩版並收。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=渋谷毅&limit=5 → score 100「渋谷毅」d6417bc0-9ce9-4cc9-a4c1-e04ea08b9942；artist?query=Takeshi Shibuya → 同一實體 score 100",
+    "release-group?artist=d6417bc0-9ce9-4cc9-a4c1-e04ea08b9942&limit=100&offset=0 → 3 筆：See-Saw (2002-09-26)、Shibuyan (2019-12-11)、Cook Note（無日期）。無《ドリーム》",
+    "release-group?query=releasegroup:\"Dream\" AND artist:\"Takeshi Shibuya\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"ドリーム\" AND artist:\"渋谷毅\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下只有 3 個 release-group，1975 年的《ドリーム》不在其中；盤名以英文與片假名兩種寫法加藝人交叉查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 release-group?artist= 的分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10399012",
+   "https://music.apple.com/jp/album/1329374353"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Takeshi Shibuya",
+  "reissuedBy": "Trio Records／Nadja（2001 數位發行，Apple collectionId 1329374353；另有 2021 Remaster 版 1548603486）"
+ },
+ {
+  "artist": "中村達也カルテット",
+  "album": "ソング・オブ・パット",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7139，不是在日本錄的：1976 年 3 月 23 日與 4 月 1 日錄於紐約的 Masterhouse Studios。日本鼓手中村達也自己製作、自己寫內頁，找來的三個人全是當時紐約閣樓爵士圈的核心——中音薩克斯 Oliver Lake（World Saxophone Quartet 創團成員）、貝斯 Richard Davis、小號兼法國獵號 Ted Daniel。四首裡有十三分十五秒的同名曲〈Song of \"Pat\"〉。這張的 Discogs 持有數 89 份，是本批 Nadja 線最高的一張。池中已有 c-67 收的中村達也《LOCUS》（1984）一張，這是第二張、而且早了八年。",
+  "risk": "MusicBrainz 上有兩個同名的「中村達也」實體必須分清：一個是爵士鼓手（06570f73-6c22-460b-b65a-e055667472a4，名下只有 1 筆《LOCUS》1984，正是 c-67 釘住的那張），另一個是搖滾鼓手（b9e5e4d7-eaaf-46ad-a6f2-9786332d4d37，名下 9 筆，Buck Jam Tonic／Tokyo Rotation 等）。**兩邊都沒有《ソング・オブ・パット》**。走 §1、rgMbid 留空、封面不可走 CAA。跨文字系統與同名去重（第 49 條）：掛名依 Discogs 原盤寫「中村達也カルテット」（帶カルテット，與 c-67 的《LOCUS》掛「中村達也」不同字串），羅馬拼音 Tatsuya Nakamura Quartet；盤名片假名「ソング・オブ・パット」對應英文 Song of Pat，Discogs 原盤把引號寫進曲名成 Song Of \"Pat\"。同一藝人合計 2 張、未達 3 張上限。年份 1976 由 Discogs 原盤條目與錄音日期支撐；Apple 的 1999 上架日不是發行年。封面與試聽預估：**Apple collectionId 1326762810**（https://music.apple.com/jp/album/1326762810 ，中村達也カルテット、1999-12-23、4 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=中村達也&limit=5 → 兩個同名實體：06570f73-6c22-460b-b65a-e055667472a4（爵士鼓手）與 b9e5e4d7-eaaf-46ad-a6f2-9786332d4d37；artist?query=Tatsuya Nakamura → 同樣兩個",
+    "release-group?artist=06570f73-6c22-460b-b65a-e055667472a4&limit=100&offset=0 → 1 筆《LOCUS》(1984)；release-group?artist=b9e5e4d7-eaaf-46ad-a6f2-9786332d4d37&limit=100&offset=0 → 9 筆（Tokyo Rotation 系列、Bibliophina 2014、Buck Jam Tonic 2025、Bass & Drums 2011、Live at 八王子アローン 1977 錄音 2015 發行 等），兩邊都無《ソング・オブ・パット》",
+    "release-group?query=releasegroup:\"Song of Pat\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"ソング・オブ・パット\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上兩個同名的中村達也實體都 browse 過，名下合計 10 個 release-group 沒有本盤；盤名以英文與片假名兩種寫法查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。同名雙實體已分辨清楚，不是把另一個人的作品誤讀成查無。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/2591908",
+   "https://music.apple.com/jp/album/1326762810"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Tatsuya Nakamura Quartet",
+  "reissuedBy": "Trio Records／Nadja（1999 數位發行，Apple collectionId 1326762810）"
+ },
+ {
+  "artist": "Sadayasu Fujii",
+  "album": "Prelude to a Kiss",
+  "year": 1976,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7168，1976 年 10 月 20 日錄於愛媛縣今治市的爵士店「ab ab」。鋼琴藤井貞泰、貝斯川上修（兼製作）、鼓村上寛，四首各佔八到十一分鐘：〈Sam Speaks〉〈Old Folks〉、艾靈頓的同名曲〈Prelude to a Kiss〉與〈Black Orpheus〉。這是 Nadja 這批地方爵士店現場錄音裡最南端的一張——今治在四國，Discogs 原盤持有數 22 份。2022 年 1 月 19 日 Trio Records 以 UVWA-2012 做成紙盒 CD 復刻（Discogs release 21930844，版本頁未標 Unofficial Release，註記明寫 Originally issued on Nadja PA-7168）。",
+  "risk": "MusicBrainz 上「Sadayasu Fujii」實體存在（d9e2850e-098b-4cad-bc8e-69fdd0cc61f3）但名下 release-group 為 0；以日文「藤井貞泰」查回的是「藤井泰和」（1 筆箏樂）與「藤井志帆」（13 筆任天堂遊戲配樂），皆非本人（第 122 條）。另有一筆 artist:\"Sadayasu Fujii\" 的字串查回 Anne Young《Sparkle》(1987)，那是他以 Sadayasu Fujii Trio 名義伴奏的別人的碟，不是本盤。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤與 CD 復刻都只印拉丁「Sadayasu Fujii」、沒有日文寫法，卡片依 Discogs 原盤條目；Apple 的 jp 區寫日文「藤井貞泰」，本機兩種寫法都要比對。盤名「Prelude to a Kiss」是艾靈頓的標準曲名，撞名風險高，比對務必連藝人一起比。年份 1976 由 Discogs 原盤條目與錄音日期支撐；Apple 的 2008 上架日不是發行年。再發背書：UVWA-2012 未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1327689642**（https://music.apple.com/jp/album/prelude-to-a-kiss/1327689642 ，藤井貞泰、2008-08-27、4 軌），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Sadayasu Fujii&limit=5 → score 100「Sadayasu Fujii」d9e2850e-098b-4cad-bc8e-69fdd0cc61f3；artist?query=藤井貞泰 → 回「藤井泰和」6b54d54d 與「藤井志帆」4270108d，皆非本人（第 122 條形狀）",
+    "release-group?artist=d9e2850e-098b-4cad-bc8e-69fdd0cc61f3&limit=100&offset=0 → 0 筆；browse 6b54d54d → 1 筆（箏樂館藏系列）、browse 4270108d → 13 筆（任天堂遊戲配樂），皆無本盤",
+    "release-group?query=releasegroup:\"Prelude to a Kiss\" AND artist:\"Fujii\"&limit=15 → count=0",
+    "release-group?query=artist:\"Sadayasu Fujii\"&limit=15 → count=1，回的是 Anne Young《Sparkle》(1987)，掛名為 Anne Young / Sadayasu Fujii Trio，不是本盤"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上 Sadayasu Fujii 的藝人實體名下 release-group browse 回 0 筆；以日文寫法查回的是完全不同的兩個人，已逐一 browse 排除；盤名加藝人交叉查 count=0，artist 字串查唯一的一筆是他替別人伴奏的 1987 年碟。2022 年 Trio Records 的 CD 復刻未在 MB 建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/13647321",
+   "https://www.discogs.com/release/21930844",
+   "https://music.apple.com/jp/album/1327689642"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Sadayasu Fujii",
+  "reissuedBy": "Trio Records（UVWA-2012，2022-01-19 紙盒 CD 復刻，Discogs release 21930844，未標 Unofficial）"
+ },
+ {
+  "artist": "Kunihiko Sugano",
+  "album": "Date in Daté",
+  "year": 1977,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7173，1976 年 7 月 18 日錄於北海道伊達市的「Daté Royal」——盤名是個雙關：date（約會）與伊達（Daté）。鋼琴菅野邦彦、貝斯川上修、鼓村上寛的三重奏，只有四首，兩面各兩首：〈Black Orpheus〉〈I Remember April〉〈I Can't Help Loving Dat Man〉〈On a Clear Day You Can See Forever〉。碟背印著售價 2,300 日圓、由 Trio Records 製造與發行。2014 年 10 月 22 日 Think! Records 以 THCD-333 做成紙盒 CD 復刻（Discogs release 7601541，版本頁未標 Unofficial Release）。池中已有 c-67 收的菅野邦彦《Opa! Brasil》（1978，同一家 Nadja）一張，加上本批的《Date in Daté》與《Solo》剛好到 3 張上限。",
+  "risk": "MusicBrainz 上菅野邦彦（f42ee6af-8258-4cf3-a6b9-bfcf3f02a041）名下有 6 個 release-group（Portrait 兩張、Foo Fou Fool 1981、collaboration Kunihoko meets Eiji 2002、Opa! Brasil 1978、Love Is a Many Splendored Thing 1974），沒有本盤。走 §1、rgMbid 留空、封面不可走 CAA。**盤名寫法分歧要特別注意（第 49 條）**：Discogs 原盤寫「Date In Daté」（帶重音的 é）、Apple 的條目把它與 A1 曲名合併寫成「BLACK ORPHEUS DATE IN DATE」（無重音），兩者曲目四首完全相同（Black Orpheus／I Remember April／I Can't Help Loving Dat Man／On a Clear Day You Can See Forever），已逐曲核對確認是同一張碟；本機核版本時要知道 Apple 的盤名與碟上的不一致。掛名：Discogs 原盤只印拉丁「Kunihiko Sugano」、無日文 ANV，卡片依原盤條目；Apple jp 區寫「菅野邦彦」，池中另有菅野よう子，同姓不同人，兩種寫法都要比對。年份 1977 由 Discogs 原盤條目直記，錄音是 1976 年 7 月 18 日，落差一年，行文不得把錄音年說成發行年。再發背書：THCD-333 未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1329379839**（https://music.apple.com/jp/album/black-orpheus-date-in-date/1329379839 ，菅野邦彦、4 軌、四軌皆有 previewUrl），封面走 apple-verified-collection、試聽可期，**但 Apple 的盤名與卡片盤名不同，本機不可用模糊搜尋、只能用 collectionId 直查**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=菅野邦彦&limit=5 → score 100「菅野邦彦」f42ee6af-8258-4cf3-a6b9-bfcf3f02a041；artist?query=Kunihiko Sugano → 另有「Kunihiko Sugano Trio」665f1d7b-3d6a-4d9e-825d-912a77b52836",
+    "release-group?artist=f42ee6af-8258-4cf3-a6b9-bfcf3f02a041&limit=100&offset=0 → 6 筆：Portrait / The World Of Kunihiko Sugano (2002-03-20)、Foo Fou Fool (1981)、collaboration Kunihoko meets Eiji (2002)、Opa! Brasil (1978)、Portrait II (2002-05-22)、Love Is a Many Splendored Thing (1974)。無《Date in Daté》；release-group?artist=665f1d7b&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"Date in Date\"&limit=15 → count=0",
+    "release-group?query=artist:\"Kunihiko Sugano\"&limit=15 → count=6，即上列六筆，無本盤"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在、名下 6 個 release-group 分頁掃完沒有本盤，Trio 名義的第二個實體名下 0 筆；盤名直接查 count=0，artist 字串查回的六筆與 browse 結果一致。2014 年 Think! Records 的 CD 復刻未在 MB 建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/11844107",
+   "https://www.discogs.com/release/7601541",
+   "https://music.apple.com/jp/album/1329379839"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Kunihiko Sugano",
+  "reissuedBy": "Think! Records（THCD-333，2014-10-22 紙盒 CD 復刻，Discogs release 7601541，未標 Unofficial）"
+ },
+ {
+  "artist": "Kunihiko Sugano",
+  "album": "Solo",
+  "year": 1977,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nadja",
+  "why": "Nadja PA-7190，1976 年 12 月 14 日錄於東邦生命ホール的鋼琴獨奏——整張碟只有一件樂器、一個人。八首加一段組曲：〈My One and Only Love〉〈Dear Old Stockholm〉〈You Are Too Beautiful〉〈I Get a Kick Out of You〉，以及美國十九世紀的〈Dreaming of Home and Mother〉——那首在日本是〈旅愁〉。製作與混音都是平野照夫。2022 年 1 月 19 日 Trio Records 以 UVWA-2004 做成紙盒 CD 復刻（Discogs release 21856576，版本頁未標 Unofficial Release，註記明寫 Originally issued on Nadja PA-7190）。菅野邦彦在 Nadja 名下前後出了五張，這是唯一的獨奏盤。",
+  "risk": "MusicBrainz 上菅野邦彦（f42ee6af-8258-4cf3-a6b9-bfcf3f02a041）名下 6 個 release-group 沒有本盤（與同組《Date in Daté》共用同一組 browse 結果）。走 §1、rgMbid 留空、封面不可走 CAA。**盤名「Solo」是本批風險最高的字串**：極短、極通用、跨語言都可能撞（第 49 條），本機比對務必連藝人一起比，且要與 Nadja 同一位藝人的其他碟（Live!、The Days of Wine and Roses、Date in Daté、Opa! Brasil）分清。掛名依 Discogs 原盤條目寫拉丁「Kunihiko Sugano」，Apple jp 區寫「菅野邦彦」。**曲數分歧**：Discogs 原盤是八首加一段 Medley，Apple 的條目是 11 軌（前八軌與碟上完全一致，另多出 Where the Boys Are／All the Things You Are／Secret Love 三首），本機核版本時要知道 Apple 版曲數多於原盤。年份 1977 由 Discogs 原盤條目直記，錄音是 1976 年 12 月 14 日；Apple 標的 1985-11-05 是 CD 化日期，不是發行年（第 95 條的形狀）。同一藝人加上 c-67 的《Opa! Brasil》與本批《Date in Daté》合計 3 張，剛好到上限。再發背書：UVWA-2004 未標 Unofficial Release（第 43／57／65／78 條）。封面與試聽預估：**Apple collectionId 1329378742**（https://music.apple.com/jp/album/solo/1329378742 ，菅野邦彦、11 軌、全部有 previewUrl），封面走 apple-verified-collection、試聽可期。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=菅野邦彦&limit=5 → score 100「菅野邦彦」f42ee6af-8258-4cf3-a6b9-bfcf3f02a041；artist?query=Kunihiko Sugano → 另有「Kunihiko Sugano Trio」665f1d7b",
+    "release-group?artist=f42ee6af-8258-4cf3-a6b9-bfcf3f02a041&limit=100&offset=0 → 6 筆（Portrait、Portrait II、Foo Fou Fool 1981、collaboration Kunihoko meets Eiji 2002、Opa! Brasil 1978、Love Is a Many Splendored Thing 1974），無《Solo》；browse 665f1d7b → 0 筆",
+    "release-group?query=releasegroup:\"Solo\" AND artist:\"Kunihiko Sugano\"&limit=15 → count=0",
+    "release-group?query=releasegroup:\"The Days of Wine and Roses\" AND artist:\"Sugano\"&limit=15 → count=0（同一位藝人同期的另一張 Nadja 盤，一併確認名下真的只有 browse 到的那六筆）"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體名下 6 個 release-group 分頁掃完沒有《Solo》；盤名加藝人的交叉查 count=0，同期另一張盤名的交叉查也是 count=0，可見不是單一字串查詢的偶然落空。2022 年 Trio Records 的 CD 復刻未在 MB 建檔。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/7143562",
+   "https://www.discogs.com/release/21856576",
+   "https://music.apple.com/jp/album/1329378742"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Kunihiko Sugano",
+  "reissuedBy": "Trio Records（UVWA-2004，2022-01-19 紙盒 CD 復刻，Discogs release 21856576，未標 Unofficial）"
+ },
+ {
+  "artist": "Takashi Ooi",
+  "album": "Good Vibration",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz 開廠第三號（ULP-5003），顫音琴手大井貴司的領銜作，也是這家廠牌少數標明 Digital Recording 的碟之一。八首裡有史提夫・汪達的〈Isn't She Lovely〉、Horace Silver 的〈Nica's Dream〉、查理・帕克的〈Yardbird Suite〉與 Thad Jones 的〈A Child Is Born〉；次中音薩克斯是宮沢昭（他自己隔年也在同廠出了 ULP-7002），鋼琴大野ハジメ，貝斯岡本正三，鼓岸田恵士。大井自己掛製作。無任何再發，Discogs 持有數 13 份——本批 Union Jazz 八張裡最低的幾張之一。",
+  "risk": "MusicBrainz 上「大井貴司」（3f5906eb-bee0-4f47-a6b4-46ab57e0d08f，標註 vibraphonist）實體存在但名下 release-group 為 0；另有一個拉丁名的「Takashi Ohi」（1a7f5941-c61f-4d97-98d2-f43f156e84b3）名下只有 1998 年的《Time stream》，不是本盤。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法分歧（第 49 條）：Discogs 的藝人實體名是「Takashi Ooi」、本張的 ANV 寫「Takashi Ohi」、MB 兩種拼法各有一個實體、日文是「大井貴司」——四種寫法本機都要比對；卡片依 Discogs 原盤條目的拉丁寫法（Union Jazz 整條線的 Discogs 條目都只有拉丁名，無日文 ANV 可取）。盤名「Good Vibration」與大井後來的樂團名重疊（Apple 上有「大井貴司 & グッド・バイブレーション」的《Wavelet》1990），比對務必連年份一起看。credit 裡的「John Lewis (2)」是 Discogs 消歧義編號 (2) 的另一個 John Lewis，**不是 MJQ 的 John Lewis**，行文不得誤寫（第 65 條的消歧義編號用法）。年份 1982 由 Discogs 原盤條目直記。封面與試聽預估：Apple jp／us 以四種寫法搜尋皆無此盤，**封面要本機掃圖、試聽必然缺**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=大井貴司&limit=5 → score 100「大井貴司」3f5906eb-bee0-4f47-a6b4-46ab57e0d08f（vibraphonist）；artist?query=Takashi Ohi → score 100「Takashi Ohi」1a7f5941-c61f-4d97-98d2-f43f156e84b3",
+    "release-group?artist=3f5906eb-bee0-4f47-a6b4-46ab57e0d08f&limit=100&offset=0 → 0 筆；release-group?artist=1a7f5941-c61f-4d97-98d2-f43f156e84b3&limit=100&offset=0 → 1 筆《Time stream》(1998)，非本盤",
+    "release-group?query=releasegroup:\"Good Vibration\" AND artist:\"Ohi\"&limit=15 → count=0",
+    "release-group?query=artist:\"Takashi Ohi\"&limit=15 → count=1，即上述《Time stream》"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩個對應同一人的 MB 實體都 browse 過，一個 0 筆、一個只有 1998 年的別張碟；盤名加藝人的交叉查 count=0，artist 字串查唯一的一筆已排除。查詢全部 HTTP 200，非 503／403，browse 走 release-group?artist= 的分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/15205921",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Takashi Ooi",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Hitoshi Okano",
+  "album": "Double Image",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-5502，小號手岡野等的領銜作，七首全是自作或團內作品（〈Vision〉〈Visible Horizon〉〈Breezing Dream〉〈Double Image〉）。製作人是中音薩克斯手澤井原兒——同一位澤井原兒也替本批同組的 ULP-5508 大森明那張掛製作，是 Union Jazz 這條線的常駐把關人。鋼琴與電鋼琴大德俊幸、貝斯川端民生（兼電貝斯）、鼓 Tony Koba。無任何再發，Discogs 持有數 27 份。",
+  "risk": "MusicBrainz 上「岡野等」（1cc7a89b-0858-4b83-bcfc-8461ba2b2187，標註 Japanese trumpeter）實體存在，名下只有 1 筆——2018 年的《Hard Boiled》（掛名 Arakawa Band / Hitoshi Okano），1982 年的本盤不在其中。以羅馬拼音 Hitoshi Okano 查 MB artist 會回崎元仁（score 90）等完全不相干的人，屬第 122 條形狀。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤只印拉丁「Hitoshi Okano」、無日文 ANV，卡片依原盤條目；日文是「岡野等」，本機兩種寫法都要比對。**盤名「Double Image」撞名風險高**（Miles Davis 的《Double Image: Rare Miles》、John Lennon《Double Fantasy》等在搜尋層都會混），比對務必連藝人一起比。年份 1982 由 Discogs 原盤條目直記。封面與試聽預估：Apple jp／us 以兩種寫法搜尋皆無此盤（jp 區回的是 ZARD 與披頭四等不相干條目），**封面要本機掃圖、試聽必然缺**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=岡野等&limit=5 → score 100「岡野等」1cc7a89b-0858-4b83-bcfc-8461ba2b2187（Japanese trumpeter）；artist?query=Hitoshi Okano → 回崎元仁 53a2cda4（score 90）等不相干對象（第 122 條形狀）",
+    "release-group?artist=1cc7a89b-0858-4b83-bcfc-8461ba2b2187&limit=100&offset=0 → 1 筆《Hard Boiled》(2018-09-20)，非本盤；browse 53a2cda4（崎元仁）→ 90 筆，分頁掃完全是遊戲配樂，無本盤",
+    "release-group?query=releasegroup:\"Double Image\" AND artist:\"Okano\"&limit=15 → count=0",
+    "release-group?query=artist:\"Hitoshi Okano\"&limit=15 → count=1，即上述《Hard Boiled》"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下只有一筆 2018 年的碟，1982 年的《Double Image》不在其中；盤名加藝人交叉查 count=0，artist 字串查回的唯一一筆已排除。羅馬拼音搜尋被 MB 糊到遊戲配樂作曲家，已分頁 browse 排除。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9247209",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Hitoshi Okano",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Fumio Watanabe Quintet",
+  "album": "Groovin' High",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-5506，1982 年 6 月 20 日發行。鼓手渡辺文男帶五重奏，曲目是一整套 bebop 的骨幹：〈Groovin' High〉〈Bloomdido〉〈Candy〉〈It's You or No One〉；中音薩克斯佐藤鶴郎、小號兼長笛加藤伸夫、鋼琴太田寛二（碟上 credit 寫的是 Baby Grand Piano）、低音提琴小杉敏。無任何再發，Discogs 持有數 12 份——本批 Union Jazz 八張裡持有數最低的一張。",
+  "risk": "MusicBrainz 上「渡辺文男」（de2f1850-1a13-4c56-9b6f-1bd27783f437，標註 jazz drummer）實體存在但名下 release-group 為 0。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤把編制寫進掛名成「Fumio Watanabe Quintet」、只有拉丁寫法，卡片依原盤條目；日文是「渡辺文男」（另有舊字體「渡邊文男」的可能寫法），本機三種寫法都要比對；池中另有多位渡辺姓的樂手，同姓不同人。**盤名「Groovin' High」是 Dizzy Gillespie 的標準曲名，撞名風險極高**：Discogs 原盤把它印成不帶撇號的「Groovin High」，卡片用帶撇號的通行寫法，兩種都要比對，且務必連藝人一起比。年份 1982 由 Discogs 原盤條目與發行日 1982-06-20 支撐。封面與試聽預估：Apple jp／us 皆無此盤，**封面要本機掃圖、試聽必然缺**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=渡辺文男&limit=5 → score 100「渡辺文男」de2f1850-1a13-4c56-9b6f-1bd27783f437（jazz drummer）；artist?query=Fumio Watanabe → 同一實體 score 100（另有 fumio 3e51a3a9、HIROSHI WATANABE d9f4c157，皆非本人）",
+    "release-group?artist=de2f1850-1a13-4c56-9b6f-1bd27783f437&limit=100&offset=0 → 0 筆；browse 3e51a3a9（fumio）→ 0 筆",
+    "release-group?query=releasegroup:\"Groovin High\" AND artist:\"Watanabe\"&limit=15 → count=0",
+    "release-group?query=artist:\"Fumio Watanabe\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名加藝人的交叉查與 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/12244873",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Fumio Watanabe Quintet",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Yoshino Yanagihara",
+  "album": "Summer Rain",
+  "year": 1982,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-5507，1982 年 10 月 20 至 21 日錄於帝音杉並スタジオ，用的是 Technics 的數位錄音。柳原由乃吹長笛與中音長笛並自己唱，八首全是她自己作曲、自己填詞（〈Oh! The Day Is Dawn〉〈Samba for Two〉〈Como Estas〉）；鼓是古澤良治郎（本批 a 組《職業》的另一位掛名者），電貝斯 Gregg Lee。Discogs 把風格標成 Fusion／Latin Jazz／Modal，是本批 Union Jazz 八張裡最不 bebop 的一張。無任何再發，Discogs 持有數 18 份。",
+  "risk": "MusicBrainz 上**根本沒有這位藝人的實體**：以 Yoshino Yanagihara 查回的是美國小說家 Hanya Yanagihara（score 100）與兩個叫 Yoshino 的不同人；以「柳原よしの」「柳原芳乃」等日文寫法查回的是柳原康、芳乃、柏原芳恵，全是不相干的人（第 122 條形狀），已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。**掛名的日文寫法無來源**：Discogs 原盤條目只印拉丁「Yoshino Yanagihara」，沒有日文 ANV，Apple 上她 2024 年的兩張單曲也用拉丁名，**因此卡片依 Discogs 原盤用拉丁寫法，漢字寫法（柳原由乃／柳原芳乃等）無可引用來源、行文不得斷言**（第 49 條的登錄要求改以此註記滿足）。**盤名「Summer Rain」撞名風險極高**，比對務必連藝人一起比。年份 1982 由 Discogs 原盤條目與錄音日期支撐。封面與試聽預估：Apple 上有同名的 Yoshino Yanagihara 2024 年單曲兩張（Passionflute、I'm Speechless），**但本盤沒有數位條目**，封面要本機掃圖、試聽必然缺；**本機不得把 2024 年的單曲誤配成本盤的封面或試聽**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Yoshino Yanagihara&limit=5 → 回 Hanya Yanagihara d1031495（American writer，score 100）、Yoshino da717871、Yoshino 25c4604f，無本人；artist?query=柳原よしの／柳原芳乃 → 回柳原康 5f13e8d7、芳乃 48df8e56、柏原芳恵 e49bdf19，皆非本人（第 122 條形狀）",
+    "release-group?artist=d1031495-0132-4f8d-be42-ad1948f37e62&limit=100&offset=0 → 1 筆《A Little Life》(2016)；browse da717871 → 3 筆；browse 5f13e8d7 → 0 筆；browse e49bdf19（柏原芳恵）→ 93 筆分頁掃完，皆無本盤",
+    "release-group?query=releasegroup:\"Summer Rain\" AND artist:\"Yanagihara\"&limit=15 → count=0",
+    "release-group?query=artist:\"Yoshino Yanagihara\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有這位藝人的實體，羅馬拼音與三種日文寫法的搜尋回的都是不相干的人（美國小說家、其他歌手），已逐一分頁 browse 確認名下沒有本盤；盤名加姓氏的交叉查與全名 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/10375628",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Yoshino Yanagihara",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Akira Ohmori",
+  "album": "To Be Young and Foolish",
+  "year": 1983,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-5508，本批 Union Jazz 八張裡陣容最重的一張：中音薩克斯大森明的領銜作，節奏組是 Barry Harris（鋼琴）、Ron Carter（貝斯）、Leroy Williams（鼓）——三位都是紐約 bebop 一線。七首裡有孟克的〈Ruby, My Dear〉、Jobim 的〈Triste〉，其餘是自作與〈It's You or No One〉。製作人澤井原兒，大森自己掛共同製作。無任何再發，Discogs 持有數 8 份——本批全部三十二張裡最低的一筆，等於這張碟在二手市場上幾乎不流通。",
+  "risk": "MusicBrainz 上「Akira Ohmori」（a6ac96a2-4dec-4a44-85fa-d1c49bfac81b）實體存在但名下 release-group 為 0；以日文「大森明」查 MB artist 回的是中森明菜（score 100）、大森靖子、大森俊之，全是不相干的人（第 122 條的典型形狀）。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤只印拉丁「Akira Ohmori」、無日文 ANV，卡片依原盤條目；日文是「大森明」，羅馬拼音另有 Akira Omori（不帶 h）的寫法，本機三種寫法都要比對。**同碟三位美國樂手 Ron Carter／Barry Harris／Leroy Williams 在池中各自可能已有卡片**，但本卡掛名是大森明，不重複計數；行文若提到他們要以 Discogs credit 為據。年份 1983 由 Discogs 原盤條目直記，Discogs 未登錄錄音日期，**錄音年查無、行文不得斷言**。封面與試聽預估：Apple jp／us 皆無此盤，**封面要本機掃圖、試聽必然缺**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Akira Ohmori&limit=5 → score 100「Akira Ohmori」a6ac96a2-4dec-4a44-85fa-d1c49bfac81b；artist?query=大森明 → 回中森明菜 9f18e7f6（score 100）、大森靖子 bcb49893、大森俊之 099116a7，皆非本人（第 122 條形狀）",
+    "release-group?artist=a6ac96a2-4dec-4a44-85fa-d1c49bfac81b&limit=100&offset=0 → 0 筆；browse 9f18e7f6（中森明菜）→ 201 筆，分頁掃完（第 116 條）皆無本盤",
+    "release-group?query=releasegroup:\"To Be Young and Foolish\"&limit=15 → count=0",
+    "release-group?query=artist:\"Akira Ohmori\"&limit=15 → count=0"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在但名下 release-group browse 回 0 筆；以日文寫法查回的是中森明菜等完全不相干的人，已分頁 browse 排除；盤名直接查與 artist 字串查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 一律走 release-group?artist= 的分頁端點而非 25 筆上限的 inc 端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/21235555",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Akira Ohmori",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Takashi Furuya",
+  "album": "Body and Soul",
+  "year": 1983,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-7004，1983 年 2 月 2 至 3 日錄於帝音杉並スタジオ。關西的中音薩克斯手古谷充帶東京的節奏組：鋼琴辛島文雄（他 1976 年在 Whynot 的《ピラニア》是 c-67 收的一張）、鼓日野元彦、貝斯桜井郁雄。六首裡有〈Two Degrees East, Three Degrees West〉（John Lewis 的曲子，碟上把 Two 拼成 Tow）、〈Donna Lee〉與同名的〈Body and Soul〉，末曲〈Alto Street〉是自作。監修是《Swing Journal》的小川隆夫，古谷自己寫內頁。無任何再發，Discogs 持有數 14 份。",
+  "risk": "MusicBrainz 上「古谷充」（42392061-5d27-4e1d-86bb-876f6a799325）實體存在但名下 release-group 為 0；另有一個拉丁名的「Takashi Furuya」（262da465-6ec1-44de-8d50-8df5b6b0d8c8）名下 2 筆（Touch of Your Lips 1985、Solitude 1975），都不是本盤，另有「Takashi Furuya & The Freshmen」（c13f331f）一個團名實體。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法分歧（第 49 條）：Discogs 原盤只印拉丁「Takashi Furuya」、無日文 ANV，卡片依原盤條目；日文是「古谷充」，MB 兩種寫法各有一個實體，三種寫法本機都要比對。**盤名「Body and Soul」是爵士史上最常被錄的曲名之一，撞名風險極高**（Joe Jackson 1984 年的同名專輯就在池外可見），比對務必連藝人與年份一起比。年份 1983 由 Discogs 原盤條目與錄音日期支撐。封面與試聽預估：Apple jp／us 以兩種寫法搜尋皆無此盤（回的是 BTS、BLACKPINK 等完全不相干的條目），**封面要本機掃圖、試聽必然缺**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=古谷充&limit=5 → score 100「古谷充」42392061-5d27-4e1d-86bb-876f6a799325；artist?query=Takashi Furuya → score 100「Takashi Furuya」262da465-6ec1-44de-8d50-8df5b6b0d8c8、score 68「Takashi Furuya & The Freshmen」c13f331f",
+    "release-group?artist=42392061-5d27-4e1d-86bb-876f6a799325&limit=100&offset=0 → 0 筆；release-group?artist=262da465-6ec1-44de-8d50-8df5b6b0d8c8&limit=100&offset=0 → 2 筆（Touch of Your Lips 1985、Solitude 1975），皆非本盤",
+    "release-group?query=releasegroup:\"Body and Soul\" AND artist:\"Furuya\"&limit=15 → count=0",
+    "release-group?query=artist:\"Takashi Furuya\"&limit=15 → count=2，即上述兩筆"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "兩個對應同一人的 MB 實體都 browse 過，一個 0 筆、一個只有 1975 與 1985 年的別張碟；盤名加藝人的交叉查 count=0，artist 字串查回的兩筆已逐一排除。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/5435962",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Takashi Furuya",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Hidehiko Matsumoto",
+  "album": "Hot Jazz",
+  "year": 1983,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz ULP-7005，1983 年 4 月 12 至 13 日錄於帝音杉並スタジオ，與同廠的 ULP-7004 共用製作人横田武夫、監修小川隆夫與鋼琴手辛島文雄。次中音薩克斯松本英彦（綽號 Sleepy，1950 年代「六人の会」以來的第一代日本爵士人）在這張碟上只錄五首：三首孟克（〈Straight No Chaser〉〈Well You Needn't〉〈Rhythm-a-ning〉）、一首 Eddie Harris 的〈Freedom Jazz Dance〉、一首 Thad Jones 的〈A Child Is Born〉。鼓ジョージ大塚、貝斯古野光昭。無任何再發，Discogs 持有數 18 份。",
+  "risk": "MusicBrainz 上松本英彦（d4027a8f-6a56-43d9-81cc-c80084d22b58，標註 Japanese jazz saxophonist & bandleader; “Sleepy”）名下有 11 個 release-group，1983 年的《Hot Jazz》不在其中；另有 Hidehiko Matsumoto Quintet（53f0f608）與 Hidehiko Matsumoto Quartet（e16e946c）兩個編制實體，前者名下 0 筆。走 §1、rgMbid 留空、封面不可走 CAA。掛名寫法（第 49 條）：Discogs 原盤只印拉丁「Hidehiko Matsumoto」、無日文 ANV，卡片依原盤條目；日文是「松本英彦」，另有「松本英彦クインテット」等編制寫法，本機三種都要比對。**盤名「Hot Jazz」是通用詞組，撞名風險高**，比對務必連藝人一起比。年份 1983 由 Discogs 原盤條目與錄音日期支撐。封面與試聽預估：Apple jp 有松本英彦的其他碟（フォーウィングス、I Wish You Love 等）**但沒有這張**，**封面要本機掃圖、試聽必然缺；本機不得把他的其他碟誤配成本盤**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=松本英彦&limit=5 → score 100「松本英彦」d4027a8f-6a56-43d9-81cc-c80084d22b58；artist?query=Hidehiko Matsumoto → 同一實體 score 100，另有 Hidehiko Matsumoto Quintet 53f0f608、Hidehiko Matsumoto Quartet e16e946c",
+    "release-group?artist=d4027a8f-6a56-43d9-81cc-c80084d22b58&limit=100&offset=0 → 11 筆（Jam In Yokota 1973、Special Pink Mood Deluxe Vol.2 1969、Operation Sam Taylor 1967、演歌の祭典 1969、Fascinating Tenor-Sax 1966、Sleepy 1976、Let's Swing Now 1976、Rio Manhattan 1981、歌のない流行歌150 2014、Four Wings 2023、The Session 1980），無《Hot Jazz》；release-group?artist=53f0f608&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"Hot Jazz\" AND artist:\"Matsumoto\"&limit=15 → count=0",
+    "release-group?query=artist:\"Hidehiko Matsumoto\"&limit=15 → count=4，全部是上列 browse 已見的 1966–1980 年條目，無本盤"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 藝人實體存在、名下 11 個 release-group 分頁掃完沒有《Hot Jazz》，編制實體名下也是 0 筆；盤名加藝人的交叉查 count=0，artist 字串查回的四筆與 browse 結果一致。查詢全部 HTTP 200，非 503／403，browse 走分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/6342409",
+   "https://www.discogs.com/label/136308-Union-Jazz"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Hidehiko Matsumoto",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "Sumiko Yoseyama",
+  "album": "Introducing",
+  "year": 1983,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Union Jazz",
+  "why": "Union Jazz GU-2006，1983 年 3 月 3 日與 5 日錄於帝音杉並スタジオ。沖繩的爵士歌手与世山澄子的第二張——她 1970 年的《INTERLUDE》是日本爵士人聲的傳奇盤之一，之後十三年才有這張。九首是〈Angel Eyes〉〈Don't Explain〉〈Summertime〉〈New York State of Mind〉這樣的歌本與流行曲；伴奏是山本剛（鋼琴）、峰厚介（次中音薩克斯）、中川喜弘（小號）、村上寛（鼓）、岡田勉（貝斯）。原盤無再發，Discogs 持有數 23 份；2014 年 12 月 17 日以「イントロデューシング」為名上了數位（Apple collectionId 1880381604，九軌與原盤逐首相符，已逐曲核對）。",
+  "risk": "MusicBrainz 上**根本沒有這位藝人的實體**：以「与世山澄子」查回的是川澄綾子（score 100）與谷山浩子，以 Sumiko Yoseyama 查回的是 Sumiko Fukatsu、Sumiko Kurata、Sumiko Kimura，全是不相干的人（第 122 條的典型形狀），已逐一 browse 排除。走 §1、rgMbid 留空、封面不可走 CAA。**掛名寫法分歧是這張最大的風險（第 49 條）**：Discogs 原盤只印拉丁「Sumiko Yoseyama」（無日文 ANV），Apple jp 區寫「与世山 澄子」（姓名中間有空格），另有不帶空格的「与世山澄子」寫法——卡片依 Discogs 原盤用拉丁寫法，**本機去重與 Apple 反查時三種寫法都要比對**。盤名同樣分歧：Discogs 原盤寫「Introducing」、Apple 寫片假名「イントロデューシング」；**「Introducing」是極通用的盤名字串**（MB 上查回的是山下洋輔トリオ《イントロデューシング・タケオ・モリヤマ》與世良譲的同類條目），比對務必連藝人一起比。年份 1983 由 Discogs 原盤條目與錄音日期支撐；Apple 的 2014-12-17 是數位上架日、不是發行年（第 95 條的形狀）。封面與試聽預估：**Apple collectionId 1880381604**（https://music.apple.com/jp/album/1880381604 ，与世山 澄子、9 軌、九軌皆有 previewUrl，曲目與原盤逐首相符），封面走 §4 的 apple-verified-collection 例外、試聽可期——**本批 Union Jazz 八張裡唯一有封面與試聽的一張**。Union Jazz 是帝音（Teichiku）1982 年開的爵士廠牌，錄音幾乎都在自家的帝音杉並スタジオ。這條線在 MusicBrainz 上幾乎整片空白，在 Apple Music 上也沒有任何數位再發——**封面與試聽兩條都會缺，本機要掃圖**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "b",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=与世山澄子&limit=5 → 回川澄綾子 70d33a9a（score 100）、谷山浩子 01fc079e、澄淳子 4c98a4ef，無本人；artist?query=Sumiko Yoseyama → 回 Sumiko Fukatsu d4ce77dd（score 100）、Sumiko Kurata 84b624e4、Sumiko Kimura 56f667df，皆非本人（第 122 條形狀）",
+    "release-group?artist=70d33a9a-347b-4bf6-b8e1-a98a4f98f696&limit=100&offset=0 → 37 筆（聲優條目）；browse 01fc079e（谷山浩子）→ 52 筆分頁掃完；browse d4ce77dd（Sumiko Fukatsu）→ 3 筆；browse 84b624e4 → 0 筆。四者皆無 1983 年的《Introducing》",
+    "release-group?query=releasegroup:\"Introducing\" AND artist:\"与世山澄子\"&limit=15 → count=0；同式查 artist:\"Yoseyama\" → count=0",
+    "release-group?query=releasegroup:\"イントロデューシング\"&limit=15 → count=2，回的是山下洋輔トリオ《イントロデューシング・タケオ・モリヤマ》(1971) 與世良譲《世良譲トリオ・イントロデューシング・笠井紀美子》(1998)，皆非本盤"
+   ],
+   "checkedAt": "2026-09-04T05:40:00Z",
+   "conclusion": "MB 上沒有「与世山澄子／Sumiko Yoseyama」這個藝人實體，日文與羅馬拼音兩種搜尋回的都是同音或同姓的不相干對象（川澄綾子、Sumiko Fukatsu 等），已逐一分頁 browse 確認名下沒有本盤；盤名加藝人的交叉查 count=0，單查片假名盤名回的兩筆是別人的同詞條目。查詢全部 HTTP 200，非 503／403，browse 一律走 release-group?artist= 的分頁端點。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/4599319",
+   "https://music.apple.com/jp/album/1880381604"
+  ],
+  "manualRuling": "店主 2026-09-04 核可開 §1 人工身分補遺批（c-87）；依 c-67 交接第二節點名的「MB 查無、走 pinned 補不了」清單，與共用簡報附錄的舉證要件逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Sumiko Yoseyama",
+  "reissuedBy": "（原盤無實體再發）2014-12-17 數位上架，Apple collectionId 1880381604"
+ }
+]

@@ -1,0 +1,481 @@
+[
+ {
+  "artist": "Fred Cockerham, Tommy Jarrell & Oscar Jenkins",
+  "album": "Down to the Cider Mill",
+  "year": 1968,
+  "genres": [
+   "folk"
+  ],
+  "label": "County Records（713）",
+  "why": "北卡 Surry 郡三位老樂手在 County Records 出的第一張三人盤，目錄號 713、1968 年美國盤十二軌（Discogs release 5697271；MB release 1968 US Official，County Records 713）。County 是郵購起家的專門廠牌，它在 1965–86 年間的 700 系列是本線的核心目錄之一（Discogs 廠牌條目 116622 逐筆可查：701《Clawhammer Banjo》、709 Camp Creek Boys、713 本張、723、741、748、756、791）。這三人替 County 連錄三張（713／723／741），本張是起點。地位證據是廠牌自己的接續發行與 2004 年 County 的 CD 再版（同系列的 741 已於 2004 年以 CO-CD-2735 再發，MB 該 RG 轄下可查），全部由原廠自己做，沒有第三方復刻，因此不存在授權爭議。池中實掃 seed_cards.json 全 13,913 列：Tommy Jarrell 名下只有《Sail Away Ladies》(County 756) 一張，Fred Cockerham 與 Oscar Jenkins 各零張，本三人聯名零張。",
+  "risk": "**掛名順序在三個來源各不相同**：MB 的 artist-credit 是「Fred Cockerham, Tommy Jarrell & Oscar Jenkins」，Discogs 原盤登「Fred Cockerham, Tommy Jarrell & Oscar Jenkins」，Apple 則是「Fred Cockerham, Oscar Jenkins & Tommy Jarrell」（實測 us storefront collectionId 111346875《Down to the Cider Mill》(2004)）。卡片採 MB 的 artist-credit（裁定第 11／51 條），Apple 的順序寫進 risk 供下游比對。**藝人上限**：本三人聯名在本批共 3 張（713／723／741），剛好到上限，本批不得再收本聯名；個人名義的 Tommy Jarrell 池中已有 1 張，兩者是不同的掛名字串，分開計。封面實測 CAA release-group front 回 200。試聽預估 ready（Apple us 命中）。盤名《Down to the Cider Mill》是通用詞組（裁定第 124 條），只能靠 rgMbid 與 collectionId 鎖定。",
+  "mbNote": "釘 15a531ea-e21c-40d9-8489-7889dca8d8be《Down to the Cider Mill》，artist-credit「Fred Cockerham, Tommy Jarrell & Oscar Jenkins」，first-release-date 1968，primary-type Album、secondary-types 空，轄下 2 個 release（1968 US Official，County Records 713，12 軌；另一筆無日期無國別的 County 條目 1 軌，建檔不全）。已回問 release-group 端點確認實體類型與標題。三位藝人 MBID：Tommy Jarrell 以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條）得 12 個 release-group；Fred Cockerham 6 個、Oscar Jenkins 3 個。**對照組刻意不釘**：31126a0c-93df-4942-9fdd-5b344b6f6508《The Legacy of Tommy Jarrell, Volume 1: Sail Away Ladies》(1976, Album/Compilation) 已在池中；e612c6f9-a4a1-3af6-9a3f-eb7771f13257《Tommy & Fred》(1992, Album/Compilation) 是後編選輯；6c4725b0-c4d1-4537-a547-f5911002420c《The Legacy of Tommy Jarrell, Vol. 3: Come and Go with Me》(2000) 轄下只有 2000 年那一筆、對不上 1974 年的 County 748 原盤，依裁定第 129 條的教訓不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "County Records（原廠自行再版）",
+  "g": "a"
+ },
+ {
+  "artist": "Fred Cockerham, Tommy Jarrell & Oscar Jenkins",
+  "album": "Back Home in the Blue Ridge",
+  "year": 1970,
+  "genres": [
+   "folk"
+  ],
+  "label": "County Records（723）",
+  "why": "同三人替 County 錄的第二張，目錄號 723、1970 年美國盤十二軌（Discogs release 3630232；MB release 1970 US Official，County Records 723）。三張一組（713／723／741）在 Discogs 的 County 廠牌條目 116622 裡連號可查，是這家廠牌把同一組樂手做成完整系列的少數例子。本張與 713 的差別是它在 County 的 700 系列裡位置更後、與同年的 720《Mountain Dance Music from the Blue Ridge》、724 Benny Thomasson 同批發行，屬 County 把 Blue Ridge 一帶的在地樂手成系列建檔的階段。原盤之後沒有任何第三方復刻，Discogs 該筆版本頁零筆 Unofficial 標記。池中實掃 seed_cards.json 全 13,913 列：本聯名零張、三位個人名義合計一張（Tommy Jarrell《Sail Away Ladies》）。",
+  "risk": "封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable——同組的 713 與 741 都有 2004 年的 County CD 數位版，唯獨 723 沒有，本機探測時不要因為兄弟盤有就假設這張也有。掛名順序問題同 713（Apple 用另一種順序），但本張 Apple 無條目，不影響。藝人上限：本聯名本批 3 張、剛好到上限。盤名《Back Home in the Blue Ridge》較長、辨識度尚可，但含通用地名，字串搜尋要配合 rgMbid。",
+  "mbNote": "釘 2a7ce7c4-a586-4700-b854-a81ee8207af7《Back Home in the Blue Ridge》，artist-credit「Fred Cockerham, Tommy Jarrell & Oscar Jenkins」，first-release-date 1970，primary-type Album、secondary-types 空，轄下 1 個 release（1970 US Official，County Records 723，12 軌）。已回問 release-group 端點確認實體類型與標題。對照組與藝人 browse 同 713 那張，不重複列；《Tommy & Fred》(1992, Album/Compilation) 與兩張 Legacy 系列刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Fred Cockerham, Tommy Jarrell & Oscar Jenkins",
+  "album": "Stay All Night... and Don't Go Home",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "County Records（741）",
+  "why": "三人替 County 錄的第三張也是最後一張，目錄號 741、1973 年美國盤十二軌（Discogs release 5697296；MB release 1973 US Official，County Records 741）。地位證據是 County 自己在 2004 年把它做成十六軌 CD 再發（MB 該 RG 轄下 2004 US Official，County Records CO-CD-2735），比原盤多四軌——原廠三十年後回頭補足這一場錄音，是這條線少見的待遇。Discogs 的 County 廠牌條目 116622 顯示 741 之後三人再無合作盤，Tommy Jarrell 改以個人名義出 748 與 756。池中實掃 seed_cards.json 全 13,913 列，本聯名零張。",
+  "risk": "**盤名的標點在三個來源不同**：MB 的 release-group 標題用單一省略號與彎引號（Stay All Night… and Don't Go Home），Discogs 原盤登「Stay All Night...And Don't Go Home」，Apple 是「Stay All Night ... and Don't Go Home」（實測 us storefront collectionId 111347791，2004 年版）。卡片採 ASCII 三點與 ASCII 直引號以免踩 chk-prop 的非 ASCII 連字號反模式與下游比對失準（裁定第 50 條：同一個盤名的兩種寫法，取原盤封面的樣子，標點差異在外部搜尋會被正規化掉）。封面實測 CAA release-group front 回 200。試聽預估 ready。**版本差異要記**：Apple 那筆是 2004 年十六軌 CD、卡片年份是 1973 年十二軌原盤，本機核版本時要知道多出來的四軌不屬於原盤（裁定第 12b 條的教訓）。藝人上限：本聯名本批第 3 張，到上限。",
+  "mbNote": "釘 bf6a62a6-6807-42dd-9407-6911df816e8f《Stay All Night… and Don't Go Home》，artist-credit「Fred Cockerham, Tommy Jarrell & Oscar Jenkins」，first-release-date 1973，primary-type Album、secondary-types 空，轄下 2 個 release（1973 US Official，County Records 741，12 軌；2004 US Official，County Records CO-CD-2735，16 軌）。已回問 release-group 端點確認實體類型與標題。**MB 的 release-group 標題用 U+2026 省略號與 U+2019 彎引號，卡片盤名用 ASCII——兩者不必相等（裁定第 91 條）**。對照組同前兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "County Records（2004 CD，原廠自行再版）",
+  "g": "a"
+ },
+ {
+  "artist": "Kyle Creed, Bobby Patterson and the Camp Creek Boys",
+  "album": "Blue Ridge Style Square Dance Time",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Mountain Records（301）",
+  "why": "Mountain Records 的創業盤，目錄號 301、1972 年（Discogs master 1422170；MB release 1972 US Official，Mountain Records 301，12 軌）。Mountain 是維吉尼亞州 Galax 的 Bobby Patterson 自己開的廠牌，他同時是錄音師、廠牌老闆與盤上的樂手——這正是本線要找的「一兩個人撐起來的小廠」形狀。廠牌的 300 系列在 Discogs 可逐筆查到 301（本張）、302《June Apple》、304《Liberty》、312 Camp Creek Boys，目錄小到四位數以內。同一批人後來也出現在 Heritage Records（Discogs 廠牌條目 312585）的目錄裡，那是 Patterson 的第二家廠牌。池中實掃 seed_cards.json 全 13,913 列：Kyle Creed 零張、Camp Creek Boys 零張、本聯名零張。",
+  "risk": "**「Bobby Patterson」是撞名高風險（裁定第 29／44 條）**：池中已有德州靈魂歌手 Bobby Patterson《It's Just a Matter of Time》一張，與本張的 Galax 樂手／廠牌老闆是兩個完全不同的人。本卡的掛名是三方聯名字串「Kyle Creed, Bobby Patterson and the Camp Creek Boys」，與池中那個單掛名不會相等，但下游任何以「Bobby Patterson」做字串查詢的地方都會撈到錯的人，這點必須寫進卡片備註而不只是 risk。封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名很長但全是通用詞，字串搜尋要靠 rgMbid。Camp Creek Boys 另有 County 709 的自我同名盤（1967）與 Mountain 312《The Original Camp Creek Boys Through the Years》(1973)，**兩張在 MusicBrainz 都查無 release-group**，本批不收、已列入未收清單。",
+  "mbNote": "釘 7bec8351-60cb-43a4-9a7c-1c7eaf015fed《Blue Ridge Style Square Dance Time》，artist-credit「Kyle Creed, Bobby Patterson and the Camp Creek Boys」，first-release-date 1972，primary-type Album、secondary-types 空，轄下 1 個 release（1972 US Official，Mountain Records 301，12 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Kyle Creed MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group。**對照組 b5da6e2c-72a1-4e0b-8dea-9eb862337922《Banjo Lessons on Kyle's Back Porch》(2009) 刻意不釘**（後製教學輯）；09adbd50-a3dd-45dc-a3ab-33953636b5a3《Virginia Reel》(1973) 未收但釘得住，記在未收清單。MB 上以「The Camp Creek Boys」查 artist 零命中，該團沒有獨立的藝人實體。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tommy Jarrell, Kyle Creed, Audine Lineberry and Bobby Patterson",
+  "album": "June Apple: Old Time Fiddling & Clawhammer Banjo",
+  "year": 1972,
+  "genres": [
+   "folk"
+  ],
+  "label": "Mountain Records（302）",
+  "why": "Mountain Records 的第二張，目錄號 302、1972 年十一軌（Discogs master 883235；MB release 1972 US Official，Mountain Records 302，11 軌）。地位證據是廠牌換手後的兩次官方再發：Heritage Records XXXVIII 的黑膠與 1993 年 Heritage HRC-CD-038 的十四軌 CD，兩筆在 MB 該 RG 轄下都標 Official，Heritage 正是同一位 Bobby Patterson 的後續廠牌，等於原始經營者自己接手再發。四位掛名裡 Tommy Jarrell 與 Kyle Creed 是本批 a 組反覆出現的兩位；Audine Lineberry 只在這一批 Galax 錄音裡留下名字。池中實掃 seed_cards.json 全 13,913 列，本四人聯名零張。",
+  "risk": "**盤名取全題**：MB 的 release-group 與 Discogs 原盤標題都作《June Apple: Old Time Fiddling & Clawhammer Banjo》，短題「June Apple」是一首傳統曲名、也是 County 718 的別的碟名，單用會踩裁定第 124 條的通用詞陷阱，因此卡片採全題。封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable。掛名同樣含「Bobby Patterson」，與池中德州靈魂歌手同名不同人，注意事項同前一張。四人聯名字串很長，本機正規化時要與 Mountain 301 那張的三方聯名分開計。Heritage 的黑膠版目錄號在 MB 記為羅馬數字 XXXVIII，Discogs 該廠條目同時用羅馬數字與阿拉伯數字（如 25／XXV），下游以目錄號比對時兩種都要試。",
+  "mbNote": "釘 49504d12-d42a-417a-a775-51d701739ede《June Apple: Old Time Fiddling & Clawhammer Banjo》，artist-credit「Tommy Jarrell, Kyle Creed, Audine Lineberry and Bobby Patterson」，first-release-date 1972，primary-type Album、secondary-types 空，轄下 3 個 release（1972 US Official，Mountain Records 302，11 軌；US Official，Heritage Records XXXVIII，11 軌，無日期；1993 US Official，Heritage Records HRC-CD-038，14 軌）。已回問 release-group 端點確認實體類型與標題。**1993 年那筆多出三軌，卡片年份取 1972 原盤（裁定第 84／95 條：RG 是身分鍵不是年份來源）**。藝人 browse 同前，Tommy Jarrell 12 個 release-group、Kyle Creed 5 個。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Heritage Records",
+  "g": "a"
+ },
+ {
+  "artist": "Kyle Creed",
+  "album": "Liberty",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Mountain Records（304）",
+  "why": "Kyle Creed 唯一一張以個人名義發行的 LP，Mountain Records 304、1977 年十二軌（Discogs master 1099910；MB release 1977 US Official，Mountain Records 304，12 軌）。Mountain 是同在 Galax 的 Bobby Patterson 的廠牌，Discogs 上該廠只留下 300 系列的四筆條目（301、302、304、312）。地位證據是兩次官方再發：1979 年 Heritage Records 28 的黑膠與 2009 年 Heritage HRC-CD-028 的十五軌 CD，MB 該 RG 轄下兩筆皆標 Official，且 Heritage 就是 Patterson 的後續廠牌（Discogs 廠牌條目 312585 可見 28 號那筆 1979 年再版，標 RE，掛名列為 Kyle Creed, Emily Spencer, Brian Yerman）。池中實掃 seed_cards.json 全 13,913 列，Kyle Creed 零張。",
+  "risk": "**盤名《Liberty》是極高風險的通用詞**（裁定第 124 條）：它同時是傳統曲名與大量同名唱片的盤名，任何字串搜尋都會撈回一堆別的東西，本卡只能靠 rgMbid 鎖定，下游不得用盤名做模糊比對。封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable。年份分歧要記：卡片取 1977（Mountain 304 原盤），Heritage 的 1979 年再版與 2009 年 CD 都不是原盤年（裁定第 95 條）；Discogs 的 Heritage 28 那筆把掛名記成三人（Kyle Creed, Emily Spencer, Brian Yerman），與 MB 的單掛名不同，本機比對版本時要知道那是再版的掛名寫法。",
+  "mbNote": "釘 c316d076-9c31-453d-8682-8879e87a32e8《Liberty》，artist-credit「Kyle Creed」，first-release-date 1977，primary-type Album、secondary-types 空，轄下 3 個 release（1977 US Official，Mountain Records 304，12 軌；1979 US Official，Heritage Records 28，12 軌；2009 US Official，Heritage Records HRC-CD-028，15 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Kyle Creed 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 5 個 release-group。對照組 09adbd50-a3dd-45dc-a3ab-33953636b5a3《Virginia Reel》(1973) 與 b5da6e2c-72a1-4e0b-8dea-9eb862337922《Banjo Lessons on Kyle's Back Porch》(2009) 刻意不釘（前者本批未收、後者是教學輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Heritage Records",
+  "g": "a"
+ },
+ {
+  "artist": "Wade Ward",
+  "album": "Uncle Wade",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Folkways Records（FA 2380）",
+  "why": "維吉尼亞 Independence 的五弦琴手 Wade Ward（1892–1971）身後兩年出版的紀念輯，Folkways FA 2380、1973 年（Discogs master 1697844；MB release 1973 US Official，Folkways Records FA 2380，31 軌）。全題是《Uncle Wade: A Memorial to Wade Ward, Old Time Virginia Banjo Picker 1892-1971》。MusicBrainz 上他名下只有四個 release-group，其中兩個是與別人共掛的合輯（1962 年與 Roscoe Holcomb、1968 年與 Fields Ward），本張是唯一一張單掛他名字的成套發行。地位證據是 Smithsonian 收購 Folkways 後把整份目錄保留下來並做數位發行（Apple 實測 us storefront collectionId 155892991《Uncle Wade: A Memorial to Wade Ward - Old Time Virginia Banjo Picker, 1892-1971》(1973)，日期與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Wade Ward 零張。",
+  "risk": "**盤名取短題、全題寫進 risk**：MB 的 release-group 與 Discogs 都用全題《Uncle Wade - A Memorial To Wade Ward, Old Time Virginia Banjo Picker 1892-1971》，Apple 用另一種標點的全題，封面上的大字是「Uncle Wade」。卡片取短題（裁定第 6／91 條：release-group 標題與卡片盤名不必相等），全題三種寫法皆列於此供下游比對。**封面實測 CAA release-group front 回 200**；試聽預估 ready（Apple us 命中，且 Smithsonian Folkways 整份目錄在串流上）。MB 那筆 31 軌與另一筆無日期的 22 軌並存，本機核版本時要取 FA 2380 那一筆。掛名「Wade Ward」是常見人名組合，MB 上另有同名但不同領域的實體風險，只能靠 rgMbid 鎖定。",
+  "mbNote": "釘 c66d50ec-1a92-4b62-8599-7f44fa9093ca《Uncle Wade - A Memorial To Wade Ward, Old Time Virginia Banjo Picker 1892-1971》，artist-credit「Wade Ward」，first-release-date 1973，primary-type Album、secondary-types 空，轄下 2 個 release（1973 US Official，Folkways Records FA 2380，31 軌；另一筆無日期無國別的 Folkways 條目，22 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Wade Ward MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 4 個 release-group。**對照組刻意不釘**：c1476833-6227-4fa5-905a-700dc6f888b2《The Music of Roscoe Holcomb & Wade Ward》(1962) ——那是與 Roscoe Holcomb 的共掛盤，而 Roscoe Holcomb《An Untamed Sense of Control》已在池中；de7f43c9-b652-4519-88db-76ad8f9c7376《Country Music Fields And Wade Ward》(1968) 是與 Fields Ward 的共掛盤，掛名歸屬歧義大。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Smithsonian Folkways",
+  "g": "a"
+ },
+ {
+  "artist": "Ola Belle Reed",
+  "album": "My Epitaph",
+  "year": 1976,
+  "genres": [
+   "folk"
+  ],
+  "label": "Folkways Records（FA 2493）",
+  "why": "Ola Belle Reed 在 Folkways 的碟，FA 2493、1976 年（Discogs master 4042432；MB release 1976 US Official，Folkways Records FA 2493，6 軌）。她在 1970 年代同時替兩家小廠錄音——Rounder 的 0021 與 0077、Folkways 的 FA 2493 與 FA 2329——構成她在 MusicBrainz 上僅有的四張 1970 年代原盤（1973 Rounder 0021、1976 FA 2493、1977 Rounder 0077、1978 FA 2329）。地位證據是 Smithsonian 接手 Folkways 後的數位發行（Apple 實測 us storefront collectionId 155784495，1976，Apple 把它標為 EP，因為只有六軌）。池中實掃 seed_cards.json 全 13,913 列，Ola Belle Reed 零張。",
+  "risk": "**Apple 把它標成「My Epitaph - EP」**（六軌），MB 的 primary-type 是 Album——本卡照 MB 走 Album，不走 §5.5（裁定：MB 的型別是身分依據，Apple 的分類不是）。下游做標題比對時要吸收「- EP」尾綴，否則會落空。**封面實測 CAA release-group front 回 404**，本卡封面要走 Apple（collectionId 155784495）或 Smithsonian Folkways 的產品頁；試聽預估 ready。同批另收《Ola Belle Reed》(1973)，本藝人本批 2 張、池中 0 張，未達上限。盤名《My Epitaph》辨識度中等。",
+  "mbNote": "釘 4da30089-2483-42fb-a571-51c4bbc5faae《My Epitaph》，artist-credit「Ola Belle Reed」，first-release-date 1976，primary-type Album、secondary-types 空，轄下 1 個 release（1976 US Official，Folkways Records FA 2493，6 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Ola Belle Reed MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 7 個 release-group。**對照組刻意不釘**：73b7c6eb-7ea1-4980-9693-da26aa85f890《Ola Belle Reed & Family》(1977, Rounder 0077) 是自我同名且掛名與盤名同字串、風險過高；be5927a0-b3f7-45f9-ac07-765b673ad831《All in One Evening》(1978) 的 artist-credit 是四方聯名「Ola Belle Reed & Bud Reed with Kevin Roth」且 CAA／Apple 皆無封面；de811940 與 d2bc5f3d 兩筆是 2010 年代的 Album/Compilation。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Smithsonian Folkways",
+  "g": "a"
+ },
+ {
+  "artist": "Ola Belle Reed",
+  "album": "Ola Belle Reed",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0021）",
+  "why": "Rounder 早期目錄第二十一號、1973 年十六軌（Discogs master 1722952；MB release 1973 US Official，Rounder 0021，16 軌）。Rounder 在 1970 年代初仍是三個人在麻州自宅經營的合作社型廠牌，0001–0100 這一段幾乎全是這種一人一盤的在地錄音；本張與同期的 0006 Country Cooking、0014 Don Stover、0019 Del McCoury 同屬那一段目錄。Ola Belle Reed 這張是她的第一張個人專輯。地位證據另有 Field Recorders' Collective 在 2005 年以 FRC203 出的同名輯（Discogs master 2807504，另一個編輯版本，本卡不釘）與 Apple 上的數位版（實測 us storefront collectionId 1511851870，1973）。池中實掃 seed_cards.json 全 13,913 列，Ola Belle Reed 零張。",
+  "risk": "**自我同名卡（盤名＝掛名）**，§1 明文列為高風險。依 c-67 起的共用簡報「自我同名的碟若 Apple 上查不到就不要收」，本卡已實測 Apple us storefront 有條目（collectionId 1511851870，1973，年份與卡片相符），符合收錄條件。**封面實測 CAA release-group front 回 404**，封面要走 Apple 的那個 collectionId。**同名不同碟的風險很高**：Field Recorders' Collective 2005 年的 FRC203 也叫《Ola Belle Reed》（Discogs master 2807504），是另一個編輯版本（裁定第 100／104 條），本卡釘的是 1973 Rounder 0021；下游任何以「Ola Belle Reed — Ola Belle Reed」字串比對的地方都要再看年份與軌數（16 軌）。同批另收《My Epitaph》，本藝人本批 2 張、池中 0 張，未達上限。",
+  "mbNote": "釘 86dfc18b-b14d-4b2e-b1fb-fdccd5291c39《Ola Belle Reed》，artist-credit「Ola Belle Reed」，first-release-date 1973，primary-type Album、secondary-types 空，轄下 1 個 release（1973 US Official，Rounder 0021，16 軌）。已回問 release-group 端點確認實體類型與標題。**對照組 6b05e46a-d38b-4fed-8912-69a9e42c5d83《Ola Belle Reed》(2005) 刻意不釘**——那是 Field Recorders' Collective FRC203 的同名別碟，是本卡最危險的撞號對象；73b7c6eb《Ola Belle Reed & Family》(1977) 亦刻意不釘。藝人 browse 同前，名下 7 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Red Clay Ramblers",
+  "album": "Merchants Lunch",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "Flying Fish Records（FF055）",
+  "why": "這個樂團在小廠 Flying Fish 的第三張，FF055、1977 年十三軌（Discogs master 358879；MB release 1977 US Official，Flying Fish Records FF055，13 軌）。Flying Fish 的目錄從 FF 001 起編，本團的 FF 009《Stolen Love》、FF 030《Twisted Laurel》、FF055 本張是連續三張。地位證據是 Flying Fish 後來自己把 FF030 與 FF055 併成一張 CD 再發（Discogs master 1606043，FF70055），以及 Apple 上的數位版（實測 us storefront collectionId 2564459《Merchants Lunch》(1977)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，The Red Clay Ramblers 零張。",
+  "risk": "**封面實測 CAA release-group front 回 404**，封面要走 Apple（collectionId 2564459）。試聽預估 ready。**二合一再發要擋**：Flying Fish 的 FF70055 把《Twisted Laurel》與本張併成一張 CD（Discogs master 1606043），依裁定第 129 條「二合一、三合一的套裝：身分不釘、封面不用、試聽不採」，本機比對時若 Apple 或串流回的是那個併輯，一律不採。掛名「The」的有無是本線的已知去重風險：Discogs 用「The Red Clay Ramblers」、MB 的 artist-credit 也是「The Red Clay Ramblers」，兩邊一致，但下游比對仍要兩種都試。同團的《Stolen Love》(1975, FF 009) 與《Twisted Laurel》(1976, FF030) 釘得住 MB 但 CAA 與 Apple 都無封面，本批未收、已列入未收清單。",
+  "mbNote": "釘 d961e9ae-3c5b-4fed-a4ca-ae0268930608《Merchants Lunch》，artist-credit「The Red Clay Ramblers」，first-release-date 1977，primary-type Album、secondary-types 空，轄下 1 個 release（1977 US Official，Flying Fish Records FF055，13 軌）。已回問 release-group 端點確認實體類型與標題。藝人 The Red Clay Ramblers MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 13 個 release-group。**對照組刻意不釘**：fb7dfd59-1959-3337-bc88-31569e96c050《Twisted Laurel / Merchants Lunch》(1992, Album/Compilation) 是二合一套裝、依第 129 條三層都擋；80138ad5《Stolen Love》(1975) 與 c1799b8f《Twisted Laurel》(1976) 因封面查無而本批不收；837590bd 與 b787ba39 兩筆是 Album/Soundtrack。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Bob Carlin",
+  "album": "Fiddle Tunes for Clawhammer Banjo",
+  "year": 1980,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0132）",
+  "why": "Rounder 0132、1980 年十四軌（MB release 1980 US Official，Rounder 0132，14 軌）。本張是 Bob Carlin 在 MusicBrainz 上最早的一個 release-group，也是 Rounder 0100 之後那段目錄裡的器樂盤之一。地位證據是 Rounder 把它整批數位化上架（Apple 實測 us storefront collectionId 1487490116《Fiddle Tunes For Clawhammer Banjo》(1980)，年份與原盤相符），以及他後續在同廠連出四張（Discogs 與 MB 皆可見 1982 Rounder 0172、1985、1989）。池中實掃 seed_cards.json 全 13,913 列，Bob Carlin 零張。",
+  "risk": "**封面實測 CAA release-group front 回 404**，封面要走 Apple（collectionId 1487490116）。試聽預估 ready。盤名是一句描述性長句，Apple 上的大小寫與卡片不同（For 對 for），下游比對要正規化大小寫。同人的《Where Did You Get That Hat?》(1982, Rounder 0172) 釘得住 MB（RG d916261e-f42c-4cee-93f3-2f974fa9437b）但 CAA 與 Apple 都查無封面，本批不收、已列入未收清單。Discogs 上以 master 搜尋這兩張皆零命中（該站對 Rounder 中段目錄的建檔不全），因此本卡的證據以 MB release 的廠牌與目錄號、加上 Apple 的實測條目為主。",
+  "mbNote": "釘 355400e9-c11d-42b6-8b82-a332c1f78d27《Fiddle Tunes for Clawhammer Banjo》，artist-credit「Bob Carlin」，first-release-date 1980，primary-type Album、secondary-types 空，轄下 1 個 release（1980 US Official，Rounder 0132，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Bob Carlin MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 7 個 release-group。對照組 d916261e-f42c-4cee-93f3-2f974fa9437b《Where Did You Get That Hat?》(1982) 因封面查無刻意不釘；36be93ab《Banging & Sawing》(1985) 與 ca926337《Take Me as I Am》(1989) 本批未收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Benton Flippen",
+  "album": "Old Time, New Times",
+  "year": 1994,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（CD 0326）",
+  "why": "Benton Flippen 在 MusicBrainz 上唯一一張帶年份的專輯，Rounder CD 0326、1994 年二十七軌（Discogs master 1964764；MB release 1994 US，Rounder CD 0326，27 軌）。他名下只有兩個 release-group，另一筆無年份；Heritage 廠牌條目 312585 裡有多張 Galax 老提琴手大會的現場輯，那是這一帶樂手先前主要的留聲形態。地位證據是 Rounder 的數位發行（Apple 實測 us storefront collectionId 1469309984《Old Time, New Times》(1994)，年份與原盤相符）。池中實掃 seed_cards.json 全 13,913 列，Benton Flippen 零張。",
+  "risk": "封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名含逗號**（Old Time, New Times），Apple 與 MB 都保留逗號，Discogs 亦同，三邊一致，但下游比對時逗號要正規化掉。年份無爭議：MB、Discogs、Apple 三邊都記 1994。**本卡是 a 組年份最晚的一張**（1994），與其餘 1966–85 的碟不同——收它的理由是它記錄的是同一批 1920 年代出生的樂手，只是錄得晚；行文不得把它寫成 1970 年代復振的一部分。掛名「Benton Flippen」辨識度高，撞名風險低。",
+  "mbNote": "釘 a54037c3-97d5-4e9e-a22a-2b3df3e503ae《Old Time, New Times》，artist-credit「Benton Flippen」，first-release-date 1994，primary-type Album、secondary-types 空，轄下 1 個 release（1994 US，Rounder CD 0326，27 軌，status 未標）。已回問 release-group 端點確認實體類型與標題。藝人 Benton Flippen MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 2 個 release-group，另一筆無日期，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Buddy Thomas",
+  "album": "Kitty Puss",
+  "year": 1976,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0032）",
+  "why": "Rounder 0032、1976 年（Discogs master 968356，記 Rounder Records 0032、1976 年美國盤）。MusicBrainz 上 Buddy Thomas（實體 disambiguation 標 old-time fiddler）名下只有兩個 release-group，另一筆是 2005 年 Field Recorders' Collective 的自我同名輯。地位證據是 Rounder 在 1998 年以 CD 0032 重發同一個編輯版本（MB release 1998 US Official，Rounder CD 0032，16 軌）並在數位平台上架（Apple 實測 us storefront collectionId 1469308417《Kitty Puss: Old-Time Fiddle Music From Kentucky》）。全題《Kitty Puss: Old-Time Fiddle Music from Kentucky》，短題 Kitty Puss 是碟中一首曲名。池中實掃 seed_cards.json 全 13,913 列，Buddy Thomas 零張。",
+  "risk": "**年份三說並存，卡片取 1976**：Discogs 原盤 master 968356 記 1976（Rounder 0032 黑膠）、MB 的 release-group first-release-date 是 1998（MB 只建了 CD 重發那一筆，裁定第 95 條的形狀：rgMbid 是身分鍵不是年份來源）、Apple 的條目日期記 1973（極可能是錄音年）。依裁定第 86 條取有來源直接寫出的原盤發行年 1976，**行文不得正面斷言發行年**（第 18／46 條）。封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名要用短題或全題是取捨**：卡片取短題《Kitty Puss》以對上 Discogs 原盤，Apple 用全題，下游比對要吸收「: Old-Time Fiddle Music From Kentucky」這段副題（與裁定第 123 條的原聲帶尾綴同形狀，只是這裡是副題）。「Kitty Puss」是傳統曲名、通用度高（第 124 條）。",
+  "mbNote": "釘 9b32413f-8654-3e96-b181-0fcc27655888《Kitty Puss》，artist-credit「Buddy Thomas」，first-release-date 1998，primary-type Album、secondary-types 空，轄下 1 個 release（1998 US Official，Rounder CD 0032，16 軌）。已回問 release-group 端點確認實體類型與標題。**MB 只建了 1998 年 CD 那一筆，1976 年的 Rounder 0032 黑膠不在 MB 上**——RG 只當身分鍵，年份取 Discogs 原盤（第 95 條）。藝人 Buddy Thomas MBID（MB 的 disambiguation 為 old-time fiddler，非同名他人）以 release-group?artist=<MBID>&limit=100 分頁 browse 得 2 個 release-group；對照組 765ec6a1-30e4-48e6-819c-5cef431bdd9d《Buddy Thomas》(2005，Field Recorders' Collective 系列的自我同名輯) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Rounder Records（1998 CD）",
+  "g": "a"
+ },
+ {
+  "artist": "Marion Sumner",
+  "album": "Road to Home",
+  "year": 1979,
+  "genres": [
+   "folk"
+  ],
+  "label": "June Appal Recordings（JA 030）",
+  "why": "Marion Sumner 在 June Appal 的碟，JA 030、1979 年十九軌（Discogs release 4161995；MB release 1979 US Official，June Appal Records JA 030，19 軌）。June Appal 是 Appalshop 附設的唱片部門，目錄從 JA001 起編（Discogs 廠牌條目 188712 可逐筆查：JA002 Si Kahn、JA 010 I.D. Stamper、JA 012 Rich Kirby、JA 014 John McCutcheon、JA 024 Luke Smathers、JA 030 本張、JA049 Uncle Charlie Osborne）。這種「一個地方機構自己出唱片記錄自己那一帶」的形狀，正是本線要找的。池中實掃 seed_cards.json 全 13,913 列，Marion Sumner 零張。",
+  "risk": "封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable——June Appal 的黑膠目錄大部分沒有進串流，本批四張 June Appal 卡（本張、JA002、JA 012、JA049）預估全部 unavailable，本機不必逐張重試到懷疑工具壞掉。盤名《Road to Home》是通用詞組（第 124 條），只能靠 rgMbid 鎖定。MB 的 release-group 標題大小寫作「Road To Home」、Discogs 同，卡片採一般英文標題大小寫《Road to Home》，兩者在正規化後等價（第 50／52 條）。",
+  "mbNote": "釘 1cee0240-e187-4013-a85b-974c6f0a748d《Road To Home》，artist-credit「Marion Sumner」，first-release-date 1979，primary-type Album、secondary-types 空，轄下 1 個 release（1979 US Official，June Appal Records JA 030，19 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Marion Sumner MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse，名下只有這 1 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Uncle Charlie Osborne",
+  "album": "Relics & Treasure",
+  "year": 1985,
+  "genres": [
+   "folk"
+  ],
+  "label": "June Appal Recordings（JA049）",
+  "why": "Charlie Osborne 在 June Appal 的碟，JA049、1985 年十五軌（Discogs release 3431397；MB release 1985 US Official，June Appal Records JA049，15 軌）。地位證據是 June Appal 二十三年後把他的錄音整理成 2008 年的《The June Appal Recordings》（MB RG 8a0900ba-ecb7-48e5-b04a-f06871af8991），亦即廠牌自己回頭把他當成目錄的代表人物之一。池中實掃 seed_cards.json 全 13,913 列，Charlie Osborne 零張、Osborne Brothers 零張。",
+  "risk": "**掛名含「Uncle」前綴**：MB 的藝人實體與 artist-credit 都是「Uncle Charlie Osborne」，Discogs 登「Uncle Charlie Osborne*」（星號代表該站的別名對應）。下游若以「Charlie Osborne」查會落空、以「Osborne」查則會撈到 Osborne Brothers（藍草名團），兩個方向都要小心（裁定第 71 條的形狀）。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名含「&」，下游比對要同時試「and」。MB 該 RG 轄下另有一筆無日期的 June Appal 條目，本機核版本時取 JA049 那一筆。",
+  "mbNote": "釘 b04ef0f4-5381-4cbc-acb0-e7e17172d139《Relics & Treasure》，artist-credit「Uncle Charlie Osborne」，first-release-date 1985，primary-type Album、secondary-types 空，轄下 2 個 release（1985 US Official，June Appal Records JA049，15 軌；另一筆無日期的 June Appal Official 條目，15 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Uncle Charlie Osborne MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse 得 3 個 release-group。**對照組刻意不釘**：8a0900ba-ecb7-48e5-b04a-f06871af8991《The June Appal Recordings》(2008) 是後編的廠牌回顧輯；75b68fba-0a08-4c07-bc05-dc720d70ef28《100 Years Farther On》無日期，依裁定第 97 條（沒有來源給年份就不能填）不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Rich Kirby & Michael & Carrie Kline",
+  "album": "They Can't Put It Back...",
+  "year": 1977,
+  "genres": [
+   "folk"
+  ],
+  "label": "June Appal Recordings（JA 012）",
+  "why": "June Appal JA 012、1977 年十四軌（Discogs master 1305945，該站把掛名登為 Rich Kirby & Michael Kline；MB release 1977 US Official，June Appal Records JA 012，14 軌）。這是 June Appal 早期目錄（JA 001–JA 030）裡的一張，掛名是三個人的聯名。地位證據是 June Appal 目錄的連續性（Discogs 廠牌條目 188712 可見 JA 001 至 JA0077 D 的完整編號）與該廠至 1990 年代仍在營運。池中實掃 seed_cards.json 全 13,913 列，Rich Kirby 零張、Michael Kline 零張。",
+  "risk": "**掛名在兩個資料庫不同**：MB 的 artist-credit 是「Rich Kirby & Michael & Carrie Kline」（三人），Discogs 登「Rich Kirby & Michael Kline」（兩人）。卡片採 MB 的 artist-credit（裁定第 51 條：MB 的 artist-credit 就是外界實際使用的掛名），Discogs 的兩人寫法列於此供下游比對。**盤名帶三個結尾點**：MB 的 release-group 與 Discogs 的其中一筆 release（#9503948）作「They Can't Put It Back...」，另一筆（#3833782）作「They Can't Put It Back」。卡片保留三點（第 50 條：採原盤封面的寫法），無點的寫法列於此供去重。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。",
+  "mbNote": "釘 58999428-c374-4484-a0a3-5450d426c3fc《They Can't Put It Back...》，artist-credit「Rich Kirby & Michael & Carrie Kline」，first-release-date 1977，primary-type Album、secondary-types 空，轄下 1 個 release（1977 US Official，June Appal Records JA 012，14 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Rich Kirby MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse，名下只有這 1 個 release-group；以「Michael Kline」查 artist 得實體但名下 0 個 release-group（第 81 條的形狀：雙人／多人作品掛在其中一位的實體底下，另一位查不到，不代表查無）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Si Kahn With The Mountain Musicians' Cooperative",
+  "album": "New Wood",
+  "year": 1975,
+  "genres": [
+   "folk"
+  ],
+  "label": "June Appal Recordings（JA002）",
+  "why": "June Appal 的第二張唱片，JA002、1975 年（Discogs release 2248102，登 Si Kahn With The Mountain Musicians' Cooperative；MB release-group first-release-date 1975）。這張是 June Appal 剛開始出唱片時的作品——編號只到第二號，掛名是一位歌手加一個在地樂手合作社。June Appal 的整份目錄（Discogs 廠牌條目 188712）從此往下編了七十幾號，四十年間沒有離開東肯塔基。池中實掃 seed_cards.json 全 13,913 列，Si Kahn 零張、Mountain Musicians' Cooperative 零張。",
+  "risk": "**掛名很長且含撇號**：MB 的 artist-credit 是「Si Kahn With The Mountain Musicians' Cooperative」，Discogs 用同一串但把合作社名標星號。卡片採 MB 的 artist-credit。下游若只用「Si Kahn」查會落空，若只用該字串查外部服務也幾乎必然落空——但本卡的 Apple 實測本來就是零命中，影響有限。封面實測 CAA release-group front 回 200。**Apple 三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名《New Wood》是通用詞組（第 124 條），只能靠 rgMbid 鎖定；Si Kahn 後來在 Flying Fish 出過多張，MB 上以「Si Kahn」為掛名的 release-group 另有數筆，下游不得以掛名＋盤名的模糊比對取代 rgMbid。",
+  "mbNote": "釘 0efe28e9-f2f9-4118-92c6-1bcc305794f5《New Wood》，artist-credit「Si Kahn With The Mountain Musicians' Cooperative」，first-release-date 1975，primary-type Album、secondary-types 空。以 release-group/?query=artist:\"Si Kahn\" AND releasegroup:\"New Wood\" 取得，score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。**注意 MB 的 artist: 比對的是 artist-credit 字串不是藝人實體名（裁定第 10 條）**——本張的 credit 含合作社全名，用單掛名「Si Kahn」browse 未必能列到它。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Si Kahn",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Highwoods String Band",
+  "album": "Fire on the Mountain",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0023）",
+  "why": "這個樂團在 Rounder 的第一張，0023、1973 年十五軌（MB release 1973 US，Rounder 0023，15 軌）。他們的三張 Rounder 盤（0023 本張、0045、0074）在 MusicBrainz 上皆為 Album，與 County、Heritage 那批以個別樂手為單位的碟形成對照。地位證據是 Rounder 把它數位化上架（Apple 實測 us storefront collectionId 1482839769，掛名作「The Highwoods String Band」、日期 1973，與原盤相符）。池中實掃 seed_cards.json 全 13,913 列：Highwoods 零張，同型的 The Fuzzy Mountain String Band（1972, Rounder）已在池中一張——**這是本批 a 組唯一與池中既有卡同型的一筆**。",
+  "risk": "**「The」的有無是本卡的主要去重風險**：MB 的藝人實體與 artist-credit 是「Highwoods String Band」（無 The），Apple 用「The Highwoods String Band」（有 The），坊間也常寫成一個字的「Highwoods Stringband」。三種寫法都要比（裁定第 71 條），本卡採 MB 的寫法。封面實測 CAA release-group front 回 200；試聽預估 ready。**盤名《Fire on the Mountain》是極高風險的通用詞**（第 124 條）：同名的傳統曲、同名的搖滾專輯與同名的合輯都存在，字串比對必然撈到別的東西，只能靠 rgMbid 與 collectionId 鎖定。MB 該 release 的 status 未標（不是 Official 也不是 Bootleg），不影響身分，但本機核版本時要知道。",
+  "mbNote": "釘 21ee6869-8bff-4b3e-8357-bea3346b5e9f《Fire On The Mountain》，artist-credit「Highwoods String Band」，first-release-date 1973，primary-type Album、secondary-types 空，轄下 1 個 release（1973 US，Rounder 0023，15 軌）。以 release-group/?query=artist:\"Highwoods String Band\" AND releasegroup:\"Fire on the Mountain\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。**以「Highwoods Stringband」（一個字）查 artist 零命中**——這正是裁定第 10／28 條要求的「換一種寫法再試」，本卡是用分開寫的團名才命中的。以 release-group/?query=artist:\"Highwoods String Band\" 分頁查得該掛名名下 5 個 release-group：本張、1c6ed4b9《Dance All Night》(1975)、00a79d4c《No. 3 Special》(1977)、385b941f《Feed Your Babies Onions: Fat City Favorites》(1994) 與 edf1e6c4《Live!》(2004)，後兩筆刻意不釘（前者是後編選輯、後者是現場輯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Highwoods String Band",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Albert Hash & The Whitetop Mountain Band",
+  "album": "Albert Hash & The Whitetop Mountain Band",
+  "year": 1979,
+  "genres": [
+   "folk"
+  ],
+  "label": "Heritage Records（XXV／25）",
+  "why": "Albert Hash 與 Whitetop Mountain Band 的自我同名盤，Heritage Records 25／羅馬數字 XXV、1979 年十四軌（Discogs release 6551246 與 17306206 兩筆 1979 年美國盤；MB release 1979 US Official，Heritage Records XXV，14 軌）。Heritage 是 Galax 的 Bobby Patterson 在 Mountain Records 之後開的第二家廠牌，目錄同時用羅馬數字與阿拉伯數字編號（Discogs 廠牌條目 312585 可見 I、VII、VIII、XX、24、25、26、28、32、33、37 這種混編）。地位證據是 Heritage 自己後來把它做成 CD-25 再發（MB 該 RG 轄下另一筆 US Official，Heritage Records CD-25，14 軌；Discogs release 7372869 標 CDr, RE）。池中實掃 seed_cards.json 全 13,913 列，Albert Hash 零張、Whitetop Mountain Band 零張。",
+  "risk": "**自我同名卡**（盤名＝掛名），§1 高風險。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，依 c-67 共用簡報「自我同名的碟若 Apple 上查不到就不要收」，本卡屬於邊界情況——收它的理由是**封面不靠 Apple**：CAA release-group front 實測回 200，封面來源沒有缺口，缺的只有試聽（預估 unavailable）。若本機認為自我同名＋無試聽的組合不可接受，本卡是 a 組第一個該被拿掉的。**目錄號有三種寫法**（XXV／25／CD-25），下游以目錄號比對時三種都要試。掛名含「&」，比對要同時試「and」。MB 另有一筆 1979-01-01 XW（全球）無廠牌的 release，與美國盤並存，本機核版本時取 Heritage XXV 那一筆。",
+  "mbNote": "釘 46c0da87-cf9a-4511-b8d1-e32266586702《Albert Hash & The Whitetop Mountain Band》，artist-credit「Albert Hash & The Whitetop Mountain Band」，first-release-date 1979-01-01，primary-type Album、secondary-types 空，轄下 3 個 release（1979 US Official，Heritage Records XXV，14 軌；1979-01-01 XW Official，無廠牌，14 軌；US Official，Heritage Records CD-25，14 軌，無日期）。以 release-group/?query=artist:\"Albert Hash\" AND releasegroup:\"Albert Hash and the Whitetop Mountain Band\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "",
+  "reissuedBy": "Heritage Records（CD-25）",
+  "g": "a"
+ },
+ {
+  "artist": "J. T. Perkins",
+  "album": "Just Fine Fiddling",
+  "year": 1974,
+  "genres": [
+   "folk"
+  ],
+  "label": "Davis Unlimited（DU 33007）",
+  "why": "阿拉巴馬提琴手 J. T. Perkins 在 Davis Unlimited 的碟，DU 33007、1974 年十二軌（Discogs release 6891558；MB release 1974 US Official，Davis Unlimited DU 33007，12 軌）。Davis Unlimited 是田納西 Clarksville 的小廠，目錄集中在 DU 33001–33045、幾乎全是 1973–79 年間南方各州的提琴手與弦樂團（Discogs 廠牌條目 229102 可逐筆查：33002 Norman Edmonds、33007 本張、33014 W.L. Gregory & Clyde Davenport、33017 與 33044 同為 Perkins、33038 Vernon Solomon）。這家廠牌一張碟一個樂手、四十幾號就收攤，是本線標竿形狀的教科書例子。**本張是本批唯一一張 Davis Unlimited 卡**——該廠目錄裡其餘各張在 MusicBrainz 上全部查無 release-group。池中實掃 seed_cards.json 全 13,913 列，J. T. Perkins 零張。",
+  "risk": "**掛名的點與空格有三種寫法**：MB 作「J. T. Perkins」（有點有空格），Discogs 作「J. T. Perkins」與「J.T. Perkins」兩種都出現過（DU 33044 那筆的盤名本身就是《\"J.T.\" (Perkins-Style Fiddling)》）。卡片採 MB 的 artist-credit，其餘寫法列於此供去重與查詢。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable——Davis Unlimited 的目錄沒有進串流，這一整家廠牌的碟都會是這個狀態。盤名《Just Fine Fiddling》辨識度中等。同廠、同人的《Fiddle Favorites》(DU-33017, 1975) 與《\"J.T.\" (Perkins-Style Fiddling)》(DU 33044, 1978) 在 MB 查無，本批不收。",
+  "mbNote": "釘 1667e060-c39d-41c1-8f56-8e4848c284a2《Just Fine Fiddling》，artist-credit「J. T. Perkins」，first-release-date 1974，primary-type Album、secondary-types 空，轄下 1 個 release（1974 US Official，Davis Unlimited DU 33007，12 軌）。以 release-group/?query=artist:\"J. T. Perkins\" AND releasegroup:\"Just Fine Fiddling\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Mountain Ramblers",
+  "album": "Mountain Dance Music From the Blue Ridge",
+  "year": 1969,
+  "genres": [
+   "folk"
+  ],
+  "label": "County Records（720）",
+  "why": "維吉尼亞 Galax 一帶的舞會樂團，County 720、1969 年十二軌（Discogs release 9045749；MB release 1969 US Official，County Records 720，12 軌）。這是 County 700 系列早期的一張，與同期的 718 Ernest East、719 Kenny Baker、723 前述三人盤同批（Discogs 廠牌條目 116622 可逐號查）。該團的錄音主要來自 Galax 的方塊舞現場傳統，是 County 在建立「一號一團」目錄時收的在地團體之一。池中實掃 seed_cards.json 全 13,913 列，The Mountain Ramblers 零張。",
+  "risk": "**團名是極高風險的通用詞組（裁定第 124 條）**：「Mountain Ramblers」在美國各州至少有數個同名團體，MB 上以此字串查會回多個實體。本卡以 rgMbid 鎖定，下游不得用掛名字串比對。**「The」的有無同樣要兩種都試**（MB 的 artist-credit 帶 The）。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名《Mountain Dance Music From the Blue Ridge》長且全是通用詞，但長度本身提供了一些辨識力。年份無爭議：MB 與 Discogs 都記 1969。",
+  "mbNote": "釘 bafcf8c6-5dee-4805-b8eb-ac258dfaf417《Mountain Dance Music From the Blue Ridge》，artist-credit「The Mountain Ramblers」，first-release-date 1969，primary-type Album、secondary-types 空，轄下 1 個 release（1969 US Official，County Records 720，12 軌）。以 release-group/?query=artist:\"The Mountain Ramblers\" AND releasegroup:\"Mountain Dance Music from the Blue Ridge\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ray & Ina Patterson",
+  "album": "Old Time Ballads and Hymns",
+  "year": 1966,
+  "genres": [
+   "folk"
+  ],
+  "label": "County Records（708）",
+  "why": "County 708、1966 年十二軌（Discogs release 6225819；MB release 1966 US Official，County Records 708，12 軌）。這對夫妻檔在 County 早期目錄裡連出三張（708 本張、715《Old-Time Songs Volume 2》、737《Songs of Home & Childhood Volume 3》，皆見 Discogs 廠牌條目 116622），是該廠 1960 年代少數的二重唱系列。本張是三張裡的第一張，也是唯一沒有卷號的一張——後兩張的標題直接帶 Volume 2／Volume 3，依裁定第 87 條「分卷不是一張碟」，本批只收無卷號的這一張。池中實掃 seed_cards.json 全 13,913 列，Ray & Ina Patterson 零張。",
+  "risk": "**又一個「Patterson」**：本卡的 Ray & Ina Patterson 與同批 Mountain Records 兩張裡的 Bobby Patterson、以及池中德州靈魂歌手 Bobby Patterson 是三個不相干的對象，下游以姓氏做字串比對必然出錯。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable。盤名《Old Time Ballads and Hymns》是描述性通用詞組（第 124 條）。**分卷風險**：同系列的 715 與 737 帶卷號，本批刻意只收本張，去重時不要把三張當成同一張。掛名的「&」與「and」兩種寫法都要試。",
+  "mbNote": "釘 ea985865-61da-4ab2-bbbc-9ccb53fef821《Old Time Ballads and Hymns》，artist-credit「Ray & Ina Patterson」，first-release-date 1966，primary-type Album、secondary-types 空，轄下 1 個 release（1966 US Official，County Records 708，12 軌）。以 release-group/?query=artist:\"Ray and Ina Patterson\" AND releasegroup:\"Old Time Ballads and Hymns\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。County 715 與 737 兩張分卷刻意不釘（第 87 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lyman Enloe",
+  "album": "Fiddle Tunes I Recall",
+  "year": 1973,
+  "genres": [
+   "folk"
+  ],
+  "label": "Cavern Custom Recordings（41308）",
+  "why": "密蘇里提琴手 Lyman Enloe 的碟，原盤是 1973 年 Cavern Custom Recordings 41308（Discogs master 899482，掛名登「Lyman Enloe With The Bluegrass Association」）——**那是一家代客壓片的工廠，不是唱片公司**，等於樂手自費壓的盤。地位證據是它後來兩次被正規廠牌接手：County 在 1979 年以 762 號重發黑膠（Discogs 廠牌條目 116622 該筆標 RE），County 又在 1993 年做成二十三軌 CD（MB release 1993 US Official，County Records CO-CD-2707），並進了數位發行（Apple 實測 us storefront collectionId 119245176《Fiddle Tunes I Recall》，日期 1993）。一張自費壓片被專門廠牌兩次接手，正是本線要的「當年沒人看見、後來被證明重要」的形狀。池中實掃 seed_cards.json 全 13,913 列，Lyman Enloe 零張。",
+  "risk": "**年份三說，卡片取 1973**：Discogs 原盤 master 899482 記 1973（Cavern Custom Recordings 41308），County 762 的黑膠再版記 1979，MB 的 release-group first-release-date 與 Apple 都記 1993（County CD）。依裁定第 84／95 條，rgMbid 是身分鍵不是年份來源，年份取有來源直接寫出的原盤年 1973；**行文不得正面斷言發行年**（第 18／46 條）。**軌數差異要記**：原盤與 1993 年 CD 的軌數不同（CD 為 23 軌），本機核版本時要知道 CD 版可能含原盤沒有的段落（第 12b 條的教訓）。**掛名分歧**：Discogs 原盤登「Lyman Enloe With The Bluegrass Association」，MB 與 Apple 都只掛「Lyman Enloe」，卡片採後者。封面實測 CAA release-group front 回 200；試聽預估 ready。",
+  "mbNote": "釘 13a16b31-3de5-4b5e-a3a5-e5a6da82df4d《Fiddle Tunes I Recall》，artist-credit「Lyman Enloe」，first-release-date 1993，primary-type Album、secondary-types 空，轄下 1 個 release（1993 US Official，County Records CO-CD-2707，23 軌）。以 release-group/?query=artist:\"Lyman Enloe\" AND releasegroup:\"Fiddle Tunes I Recall\" 取得 score 100，並已回問 release-group 端點確認 primary-type=Album 與標題。**MB 只建了 1993 年 County CD 那一筆**，1973 年 Cavern 原盤與 1979 年 County 762 黑膠都不在 MB 上——這是裁定第 95 條的標準形狀，RG 只當身分鍵。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "County Records（1979 黑膠、1993 CD）",
+  "g": "a"
+ },
+ {
+  "artist": "Lily May Ledford",
+  "album": "Gems",
+  "year": 2000,
+  "genres": [
+   "folk"
+  ],
+  "label": "June Appal Recordings（JA0078D）",
+  "why": "本輯把 1968 至 1983 年間 Lily May Ledford 的現場與錄音室片段編成二十二軌，June Appal JA0078D、2000 年（Discogs master 4126107，該站記 CD, Album, Mono，1968-1983 的錄音）。這是 MusicBrainz 上唯一一個掛她個人名義的 release-group，也是 June Appal 在 1990 年代末回頭整理自家與地方檔案的成果。池中實掃 seed_cards.json 全 13,913 列，Lily May Ledford 零張、Coon Creek Girls 零張。",
+  "risk": "**本卡是 a 組唯一的合輯（§5.6），也是本批 a 組唯一一張 2000 年後的碟。** 年份取 2000（該編輯版本首度問世年，裁定第 84 條），不取 1968–1983 那段錄音年。收它的取捨要說清楚：Ledford 在 MusicBrainz 上只有這一個 release-group，不收就整個人進不了池；而它不是「某人的錄音被別人編成選輯」那種無作者性的情況——編選者是她生前合作的同一家在地廠牌，材料也全部是她本人的演出。封面實測 CAA release-group front 回 200。**Apple 實測三個 storefront 皆無條目**，固定試聽預估 unavailable（同 a 組其餘三張 June Appal 卡）。**盤名《Gems》是單字通用詞，風險極高**（第 124 條）：MB 的 release-group 標題是《Gems: Lily May Ledford》、Discogs 是《Gems: Lily May Ledford Rare Concert and Studio Recordings 1968-1983》，卡片取最短的《Gems》會讓任何字串比對失效。**因此本卡的盤名建議由本機定案**：若採全題《Gems: Lily May Ledford》可解決比對問題，但那會讓盤名重複掛名。策展層在此採《Gems》並把兩種全題寫進 risk，理由是原盤封面主標就是這個字。",
+  "mbNote": "釘 9f1aa443-1ca4-427b-b1f8-fd413d593f40《Gems: Lily May Ledford》，artist-credit「Lily May Ledford」，first-release-date 2000，primary-type Album、secondary-types 空（**MB 沒有標 Compilation，但這張實際上是編輯輯，本卡仍照 §5.6 舉證，寧可多備不可少備**），轄下 2 個 release（2000 US Official，June Appal Records JA0078D，22 軌；另一筆無日期的 June Appal Official 條目，22 軌）。已回問 release-group 端點確認實體類型與標題。藝人 Lily May Ledford MBID 以 release-group?artist=<MBID>&limit=100 分頁 browse，名下只有這 1 個 release-group。",
+  "releaseType": "Compilation",
+  "exceptionReason": "Lily May Ledford 是 1930 年代 Coon Creek Girls 的領班，生前沒有任何一張以本人為主體的專輯；本輯是 June Appal 把 1968–1983 年間她的現場與錄音室錄音編成的唯一一份成套發行，也是她在 MusicBrainz 上唯一的 release-group。",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/9f1aa443-1ca4-427b-b1f8-fd413d593f40",
+   "https://www.discogs.com/master/4126107-Lily-May-Ledford-Gems-Lily-May-Ledford-Rare-Concert-and-Studio-Recordings-1968-1983",
+   "https://www.discogs.com/label/188712-June-Appal-Recordings"
+  ],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Highwoods String Band",
+  "album": "Dance All Night",
+  "year": 1975,
+  "genres": [
+   "folk"
+  ],
+  "label": "Rounder Records（0045）",
+  "why": "Highwoods 替 Rounder 錄的第二張，0045、1975 年十四軌（MB release 1975 US Official，Rounder 0045，14 軌）。這個團在 Rounder 連出三張（0023《Fire on the Mountain》、0045 本張、0074《No. 3 Special》），是該廠 1970 年代中期少數持續投資的整團專案。與同批 a 組其他碟的差別在單位：County、Heritage、Mountain、Davis Unlimited 收的是個別老樂手，Rounder 收的是把老曲目重新排練成整團演出的年輕組合，兩種形態並置才看得出這一輪復振的兩端。MB 該 release-group 只有這一筆 release、無任何再版，Discogs 上亦無第三方復刻。池中實掃 seed_cards.json 全 13,913 列，Highwoods 零張。",
+  "risk": "**團名三種寫法**（Highwoods String Band／The Highwoods String Band／Highwoods Stringband）同《Fire on the Mountain》那張，三種都要比（裁定第 71 條）。**本卡是一個方法教訓的直接產物**：先前以「Highwoods Stringband」（一個字）查 MB artist 零命中、以同樣寫法查 release-group 也零命中，一度被判成「MB 沒有這張」；改用分開寫的「Highwoods String Band」查 release-group 才回 count=5（裁定第 10／28 條：三種寫法都試過才算查無）。封面實測 CAA release-group front 回 200。**Apple 實測 us／gb／ca 三個 storefront 皆無條目**，固定試聽預估 unavailable——同團的《Fire on the Mountain》有 Apple 條目、本張沒有（裁定第 93 條）。盤名《Dance All Night》是通用詞組（第 124 條），且與本批 a 組 County 741 那張盤名的前半極相似，去重時要看完整字串。",
+  "mbNote": "釘 1c6ed4b9-ee42-42d1-aac3-9240a5693cd6《Dance All Night》，artist-credit「Highwoods String Band」，first-release-date 1975，primary-type Album、secondary-types 空，轄下 1 個 release（1975 US Official，Rounder 0045，14 軌）。已回問 release-group 端點確認實體類型與標題。以 release-group/?query=artist:\"Highwoods String Band\" 查得該掛名名下 5 個 release-group（見《Fire on the Mountain》那張的 mbNote），385b941f《Feed Your Babies Onions: Fat City Favorites》(1994) 與 edf1e6c4《Live!》(2004) 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Highwoods String Band",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

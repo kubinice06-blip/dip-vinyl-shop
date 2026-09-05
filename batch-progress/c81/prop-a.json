@@ -1,0 +1,420 @@
+[
+ {
+  "artist": "Saccharine Trust",
+  "album": "Surviving You, Always",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 024）",
+  "why": "SST 目錄裡被跳過的一格。這家廠牌 1980 年代的 200 餘個編號中反覆被談的只有 Black Flag、Minutemen、Hüsker Dü、Meat Puppets、Sonic Youth 那五六組，Saccharine Trust 是 SST 最早簽下的非 Black Flag 樂團之一（1981 年的《Paganicons》為 SST 004 的 EP），本張是他們的第一張整張 LP（Discogs master 3624404，SST 024，1984 年美國盤）。地位證據是原廠自己的持續發行：Discogs 版本頁四筆全部掛 SST Records、零筆標 Unofficial，且 SST 在 1994、1998 與 2026 三度重壓同一個編號（SST 024／SST 024 8.98），也就是說這張碟四十年來從沒離開過原廠目錄。池中實掃 seed_cards.json 全 13,913 列：Saccharine Trust 零張，SST 廠牌線在池中只有 Black Flag 4 張、Minutemen 3 張、Meat Puppets 4 張、Hüsker Dü 6 張、Sonic Youth 10 張、Screaming Trees 3 張、Saint Vitus 2 張、Descendents 4 張、fIREHOSE 1 張、Overkill 1 張——全部是廠牌的正典側，非正典側零張。",
+  "risk": "**掛名撞名風險低但盤名是通用句**：《Surviving You, Always》在 Apple 搜尋會撈到勵志類條目，比對必須靠藝人名收斂（裁定第 124 條的形狀）。**年份**：MB first-release-date 1984、Discogs master 3624404 亦記 1984，兩邊一致，無爭議。**再發**：SST 1994／1998／2026 三次重壓皆為原廠，Discogs 版本頁零筆 Unofficial（裁定第 43／57／65 條的三層都查過，無冒名廠牌實體序號）。封面預估 CAA 可取（MB 該 RG 有 1 個 release）。試聽預估 Apple `us`——SST 的目錄由 SST 自己做數位發行，storefront 順序 us→gb→de（裁定第 75 條：看再發權在誰手上，不看聽眾在哪）。",
+  "mbNote": "釘 1b5037eb-415f-3e4e-9384-af781afb3096《Surviving You, Always》，artist-credit「Saccharine Trust」，first-release-date 1984，primary-type **Album**、secondary-types 空，轄下 1 個 release。已逐一回問 release-group 端點確認實體類型與標題（裁定第 41 條）。藝人 MBID 0bd450a7-32dd-496f-a0d4-1f71a2226add，以 release-group?artist=<MBID>&limit=100 分頁 browse（非 artist?inc=release-groups，避開 25 筆上限，裁定第 116 條）得 8 個 release-group。**對照組刻意不釘**：06ff0c83-4c02-3286-b0f1-c75c9245d782《Paganicons》(1981) 是 **EP**、不符 §1；ba1fdaa0-e36d-3116-b76b-cb44f87da1e8《Worldbroken》(1985) 與 fbe8d9e1-6e9f-392a-bdbe-41a1e0505ee3《We Became Snakes》(1986) 是同期另兩張碟；fd5d24cc-0408-3ce4-9a17-96fc8877ea05《The Sacramental Element》(1987) 標 Album/**Compilation**；1d4f946f-d41f-4d81-8014-a108e25453a4 (2011) 是二合一套裝，依裁定第 129 條「身分不釘、封面不用、試聽不採」三層都擋。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "SST Records（原廠自行重壓，1994／1998／2026）",
+  "g": "a"
+ },
+ {
+  "artist": "SWA",
+  "album": "Your Future If You Have One",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 053）",
+  "why": "Black Flag 貝斯手 Chuck Dukowski 離團後自組的樂團，本張是首作（Discogs master 284531，SST 053，1985 年美國盤）。SST 在 1985–91 年替 SWA 連出五張 LP（SST 053、Sex Doctor、XCIII、Winter、Volume），是廠牌少數從頭做到尾的樂團之一，但除了「Dukowski 的團」這句話之外幾乎沒有樂評談過任何一張——這正是這批要挖的形狀。地位證據是廠牌的連續發行本身與 Discogs 版本頁四筆全數掛 SST Records、零筆標 Unofficial（裁定第 43 條：只有 Official 才算背書，這裡連爭議都沒有）。池中實掃 seed_cards.json 全 13,913 列：SWA 零張、Chuck Dukowski 零張、Gone（同為 Ginn 的 SST 副線團）零張。",
+  "risk": "**掛名是三個字母的縮寫，撞名風險是本組最高的一筆**：MB 上另有 `S.W.A`（Alfie Reeves）、`Swa`（ambient）、`Sparlha Swa` 三個實體，池中查無任何一個。下游任何以「SWA」單獨查詢的服務都會撈錯人（裁定第 139 條順帶記的 Bobby Patterson／Red Allen 形狀），必須以盤名收斂。**封面**：MB 該 RG 只有 1 個 release，CAA 命中不確定，備援是 Discogs master 284531 的原盤圖。**試聽**：預估 `us`；若落空是因為 SST 部分早期目錄未進串流，這種情況記 unavailable，不接受疑似配對。年份 MB 1985-08-15 與 Discogs 1985 一致。",
+  "mbNote": "釘 c1e68c12-770a-4080-83d5-fc009e21a09e《Your Future If You Have One》，artist-credit「SWA」，first-release-date 1985-08-15，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID 0eab6b3e-f4e4-4a63-8436-cca29c31c22b（MB 消歧義「post-hardcore group」），browse 得 6 個 release-group。**對照組刻意不釘**：9e558a15-6ee3-3f90-bb29-8c0099c7387d《Evolution 85-87》標 Album/**Compilation** 且無日期；93ac46cd《Sex Doctor》(1986)、c69d694a《XCIII》(1987)、00da8e63《Winter》(1989)、6d7aaffa《Volume》(1991) 是同一批的另四張碟，本批只收首作。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；原廠 SST 目錄持續在架",
+  "g": "a"
+ },
+ {
+  "artist": "Gone",
+  "album": "Let's Get Real, Real Gone for a Change",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 061）",
+  "why": "Greg Ginn 在 Black Flag 解散那一年成立的器樂三重奏，本張是首作（Discogs master 221069，SST 061，1986 年美國盤）。SST 之後又替 Gone 出了《Gone II - but Never Too Gone》（同年）與 1990 年代的四張，並在無標年的重壓中以 SST 061／SST CD 061 兩個載體再發（Discogs 版本頁六筆，全數 SST Records，零筆標 Unofficial）。這條線在樂評裡幾乎只以「Ginn 解散 Black Flag 之後去做器樂搖滾」一句話帶過，唱片本身沒有人談。池中實掃 seed_cards.json 全 13,913 列：Gone 零張；池中亦無其他掛名為「Gone」的對象，不觸發裁定第 29／44 條的通行名佔用。",
+  "risk": "**掛名是單一常用字，這是本組最需要下游注意的一筆**：`Gone` 在 Apple／Spotify 的字串搜尋幾乎必然撈回無關結果，MB 自己就另有瑞典的 Gone、indie rock 的 Gone 與 Gone Is Gone 三個實體（本卡釘的是消歧義「instrumental rock band」那個）。**但盤名極長且獨特**，比對應以盤名為主鍵、藝人名只作驗證（與裁定第 124 條 Alla Rakha《Tabla!》相反的情形：那張是盤名太短，這張是掛名太短）。封面走 CAA（rgMbid 為鍵，不受字串問題影響）。年份 MB 1986 與 Discogs 1986 一致。試聽預估 `us`。",
+  "mbNote": "釘 45e6599f-2208-39a0-bf23-9035bcf06f15《Let's Get Real, Real Gone for a Change》，artist-credit「Gone」，first-release-date 1986，primary-type **Album**、secondary-types 空，轄下 3 個 release。已回問 release-group 端點確認。藝人 MBID 63297d98-e7ee-434c-a62d-79b4f3a71b65（MB 消歧義「instrumental rock band」，US，1985 起），browse 得 9 個 release-group。**對照組刻意不釘**：c6e0b905-f800-3cb6-95a9-648e0c34576f《Gone II - but Never Too Gone》(1986-11) 是同年第二張碟；e93ed268《The Criminal Mind》(1993) 起的四張屬 1990 年代。**另有三個同名藝人實體（SE 的 Gone、indie rock 的 Gone、Gone Is Gone）刻意不碰**，下游若以字串反查務必比對 MBID。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "SST Records（原廠重壓 SST 061／SST CD 061）",
+  "g": "a"
+ },
+ {
+  "artist": "Slovenly",
+  "album": "Thinking of Empire",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 067）",
+  "why": "洛杉磯 Pedro 一帶與 Minutemen／Saccharine Trust 同圈的樂團，SST 在 1986–89 年替他們出了三張 LP，本張是第一張（Discogs master 1268818，SST 067，1986 年美國盤）。Discogs 版本頁只有兩筆、全數 SST Records、零筆標 Unofficial——一張碟只有兩個實體版本，本身就是它的流通規模的證據。這條線在 SST 的敘事裡完全缺席：談 SST 的文章談 Ginn 的美學或 Black Flag 的官司，不會提到編號 060–080 這一段的樂團。池中實掃 seed_cards.json 全 13,913 列：Slovenly 零張。",
+  "risk": "**掛名 `Slovenly` 是英文常用字，且 MB 另有 `Slovenly Hooks`（蘇格蘭）、`Slovenly World`（法國）兩個實體**；本卡釘的是消歧義「Art Rock / Post-Punk band」（1981 起）。另有同名的 Slovenly Recordings 廠牌（Reno），廠牌側查詢會撈到它，與本團無關。**盤名《Thinking of Empire》是通用詞組**，Apple 比對須同時卡藝人與盤名。**封面**：MB 該 RG 有 2 個 release，CAA 命中機率中等。**試聽**：本張與 SWA 同屬 SST 早期目錄裡數位發行覆蓋較薄的一段，預估 unavailable 的機率高於本組平均。年份 MB 1986 與 Discogs 1986 一致。",
+  "mbNote": "釘 7e035e11-715a-359b-8daa-70b53cdae01e《Thinking of Empire》，artist-credit「Slovenly」，first-release-date 1986，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID 2d838837-db44-41f4-836b-c71f2767af87，browse 得 8 個 release-group。**對照組刻意不釘**：0980a73b-6c14-496f-8457-a47883aa7650《After the Original Style》(1984) 是 New Alliance 時期的首作、非 SST；9085a6fd《Even So》(1984) 是 **EP**；5164c5ac《Riposte (A Little Resolve)》(1987) 與 4227f036《We Shoot for the Moon》(1989) 是 SST 的後兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；Discogs 版本頁僅 2 筆，皆 SST 原廠",
+  "g": "a"
+ },
+ {
+  "artist": "Das Damen",
+  "album": "Jupiter Eye",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 095）",
+  "why": "紐約樂團，首作 1986 年在 Ecstatic Peace!／Homestead，本張是他們進 SST 後的第一張（Discogs master 5315，SST 095，1987 年美國盤，Fun City 錄音）。SST 在 1987–89 年替他們出了三張 LP 加一張 EP，其中《Marshmellow Conspiracy》EP 因為封面模仿 Beatles《Abbey Road》而被 Apple Corps 施壓下架——那件事偶爾被提起，唱片本身則沒有。Discogs 版本頁三筆全數 SST Records、零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列：Das Damen 零張。",
+  "risk": "**掛名含德文冠詞，MB 與 Discogs 皆作 `Das Damen`（原盤封面即如此，樂團自己的用法不合德文文法，不得「訂正」成 Die Damen）**，依裁定第 52 條採樂團現行寫法。MB 另有 `Grad Damen`（NL）與 `Damen`（SE）兩個實體，字串查詢須比對 MBID。**盤名《Jupiter Eye》在盤名為主鍵掃全池時與池中 Cave In《Jupiter》(2000)、BUMP OF CHICKEN《jupiter》(2002) 互為子字串命中，已逐筆人眼核對，三者是三張不同的碟，非撞卡**。年份 MB 1987 與 Discogs 1987 一致。封面 CAA（1 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 4434ce10-6106-3ba7-9e45-e7271fb18528《Jupiter Eye》，artist-credit「Das Damen」，first-release-date 1987，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID b3f7feae-06fc-4281-9919-f662c1a86287，browse 得 10 個 release-group。**對照組刻意不釘**：c0797497-1aa3-3e58-9586-265f45a36b1c《Das Damen》(1986) 是**自我同名**首作（依本批簡報，自我同名卡若 Apple 查不到就不收，且該張為 Ecstatic Peace!／Homestead 非 SST）；fb4f6a79《Marshmellow Conspiracy》(1988) 是 **EP**；3517683f《Triskaidekaphobe》(1988) 與 bf4452b1／e4c8088d 兩筆《Mousetrap》(1989，MB 上重複建檔) 是後續作品，**《Mousetrap》的雙筆建檔是裁定第 13 條的形狀，本批不碰**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；Discogs 版本頁 3 筆皆 SST 原廠",
+  "g": "a"
+ },
+ {
+  "artist": "Universal Congress Of",
+  "album": "Prosperous and Qualified",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "SST Records（SST 180）",
+  "why": "Saccharine Trust 吉他手 Joe Baiza 的第二個樂團，把 SST 的硬蕊班底接到自由爵士與 Ornette Coleman 的曲目上。首作 1987 年掛《Joe Baiza & The Universal Congress Of》，本張是第一張以樂團名單獨掛名的碟（Discogs master 326147，SST 180，1988 年美國盤，Lyceum Sound 錄音）。SST 1980 年代後期把大量爵士傾向的碟放進目錄（Baiza、Elliott Sharp、Slovenly、Universal Congress Of），這一段是廠牌史裡最少被寫的部分。Discogs 版本頁五筆全數 SST Records、零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列：Universal Congress Of 零張、Joe Baiza 零張。",
+  "risk": "**掛名以介系詞 `Of` 結尾，是本組最容易被下游字串處理砍掉的一筆**：任何「去尾綴」「去虛詞」的正規化都會把它變成 `Universal Congress`，而那是另一個字串。Apple 上的掛名須以完整字串查。**首作掛名不同**（`Joe Baiza & The Universal Congress Of`），藝人層的張數計算要把兩種掛名視為同一個對象，本批只收一張，不觸及上限。**盤名《Prosperous and Qualified》以盤名為主鍵掃全池時與池中 Christy Moore《Prosperous》(1972) 子字串命中，已人眼核對為兩張不同的碟**。封面 CAA（1 個 release）、試聽預估 `us`。年份 MB 1988 與 Discogs 1988 一致。",
+  "mbNote": "釘 8eb1ec13-3ee9-3f55-83bd-59115b1328d1《Prosperous and Qualified》，artist-credit「Universal Congress Of」，first-release-date 1988，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID d0478192-4d5a-4180-a627-da061ba22a66，browse 得 5 個 release-group。**對照組刻意不釘**：f77cab25-22f9-4714-aece-9981a32f397b《Joe Baiza & The Universal Congress Of》(1987) 是掛名不同的首作；c1320724《This Is Mecolodics》(1988) 是 **EP**；5cd4fae6《The Sad and Tragic Demise of Big Fine Hot Salty Blackwind》(1990) 與 daed0827《The Eleventh-Hour Shine-On》(1992) 是後兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；Discogs 版本頁 5 筆皆 SST 原廠",
+  "g": "a"
+ },
+ {
+  "artist": "Scream",
+  "album": "This Side Up",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sixth International Records（SILO 5）",
+  "why": "華府 Bailey's Crossroads 的樂團，第二張 LP。**原盤不是 Dischord 而是 Dischord 的姊妹廠 Sixth International**（Discogs master 20529，SILO 5，1985 年美國盤），Dischord 隨後以 Dischord 15½ 的編號收進自家目錄，2010 年再做重刻母帶版（Discogs 版本頁八筆，Dischord 15.5 V／Dischord 15½，零筆標 Unofficial）。這條線在 Dischord 敘事裡幾乎只以「Dave Grohl 後來加入的那個團」被提到，而 Grohl 是 1987 年才進團的——本張的鼓手是 Kent Stax，與那句話無關。池中實掃 seed_cards.json 全 13,913 列：Scream 零張；Dischord 廠牌線在池中只有 Minor Threat 1 張、Fugazi 6 張、Rites of Spring 1 張、Embrace 1 張，全部是廠牌的正典側。",
+  "risk": "**掛名 `Scream` 是本批撞名風險最高的一筆**：MB 上以「Scream」查詢，**分數最高的是 Primal Scream（score 100），本團只排第二（score 96）**——這是裁定第 122 條「MB 回了完全不相干的東西」的形狀，本卡是改用藝人 MBID browse 才拿到的（US punk band，b9f52132-28af-4cea-9558-165cd125f9b7）。MB 另有瑞士、日本、德國三個同名實體。池中雖無掛名為 `Scream` 的卡，但有 Primal Scream 3 張與 Screaming Trees 3 張，**任何以子字串比對的去重都會誤報**（本批實掃已逐筆排除）。下游查 Apple 一律用「Scream This Side Up」完整字串。**廠牌欄採原盤的 Sixth International，不是 Dischord**——Dischord 15½ 是後來收編的編號（裁定第 85 條：原始發行指這張碟是誰做出來的）。年份 MB 1985-05 與 Discogs 1985 一致。",
+  "mbNote": "釘 10e9da38-238b-4485-a0fa-cc85086a7614《This Side Up》，artist-credit「Scream」，first-release-date 1985-05，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID b9f52132-28af-4cea-9558-165cd125f9b7（MB 消歧義「USA punk band」，US，1981 起），browse 得 14 個 release-group。**注意：用字串「Scream」查 MB artist search，第一名是 Primal Scream 55704c38-…，本卡必須以 MBID 指定。** **對照組刻意不釘**：4fa20316-74c2-396c-a840-39a618379955《Still Screaming》(1982) 是 Dischord 9 的首作；abdd9b49-db4e-3211-a690-96ceab60c650《Still Screaming / This Side Up》(1993) 是**二合一套裝**，依裁定第 129 條身分不釘、封面不用、試聽不採；59867c97《Banging the Drum》(1986)、01a69ce6《No More Censorship》(1988) 是後兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Dischord Records（Dischord 15½；2010 年重刻母帶版）",
+  "g": "a"
+ },
+ {
+  "artist": "Gray Matter",
+  "album": "Food for Thought",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "R&B Records（RBLP-2）",
+  "why": "華府 1985 年那一批「revolution summer」樂團之一，與 Rites of Spring、Embrace 同期。**原盤不在 Dischord 而在 R&B Records**（Discogs master 10133，RBLP-2，1985 年美國盤，Inner Ear Studios 錄音）；Dischord 1990 年以 Dischord 48 把本張與 EP《Take It Back》合併重發，2008 年再做重刻母帶版（Discogs 版本頁 16 筆，13 筆為再發，零筆標 Unofficial）。Rites of Spring 與 Embrace 兩張已在池中，Gray Matter 是同一場景裡沒有進來的那一張。池中實掃 seed_cards.json 全 13,913 列：Gray Matter 零張。",
+  "risk": "**再發是合併版，三層都要擋**：Dischord 48 的《Food for Thought + Take It Back》把 LP 與 EP 併成一張，依裁定第 129 條「二合一：身分不釘、封面不用、試聽不採」——本卡釘的是**只含 LP 的** 3008090d，Apple 若配到合併版須改記 unavailable。**盤名《Food for Thought》是通用詞組，且與池中 The J.B.'s《Food for Thought》(1972) 完全同名**——以盤名為主鍵掃全池時命中，人眼核對確認是兩張不同的碟、掛名不同，非撞卡，但下游任何以盤名反查的動作都會撈到那一張。**掛名 `Gray Matter` 另有四個同名實體**（Kevin Dooley、psytrance、多倫多團），MB 消歧義為「post-hardcore band」。年份 MB 1985 與 Discogs 1985 一致。廠牌欄採原盤 R&B Records。",
+  "mbNote": "釘 3008090d-0866-4401-b2e8-e522703cb303《Food for Thought》，artist-credit「Gray Matter」，first-release-date 1985，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID c9065214-ba09-4c2c-b341-35713b702264（消歧義「post-hardcore band」），browse 得 5 個 release-group。**對照組刻意不釘**：ea40212d-542e-3ced-9ff7-10c0efd667df《Food for Thought / Take It Back》(1990, Dischord 48) 是**二合一合併版**，裁定第 129 條三層都擋；43ec5e33《Take It Back》(1986) 與 1261c24f《Gray Matter》(1991) 都是 **EP**；11dd816e《Thog》(1992) 是重組後的碟。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Dischord Records（Dischord 48，1990 合併版；2008 重刻母帶）",
+  "g": "a"
+ },
+ {
+  "artist": "Beefeater",
+  "album": "House Burning Down",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dischord Records（Dischord 23）",
+  "why": "Dischord 目錄裡最不像 Dischord 的樂團——把華府硬蕊接上放克貝斯與號角，兩張 LP 之後就散了。本張是第二張也是最後一張（Discogs master 1277390，DISCHORD 23，1987 年美國盤）。Dischord 之後以無標年的重壓維持本張在架（Discogs 版本頁三筆，全數 Dischord Records，零筆標 Unofficial），1992 年並把兩張 LP 併成一張 CD 發行——那張是合併版，本卡不採。談 Dischord 的文章從 Minor Threat 跳到 Rites of Spring 再跳到 Fugazi，編號 20–30 這一段整段空白。池中實掃 seed_cards.json 全 13,913 列：Beefeater 零張。",
+  "risk": "**掛名與琴酒品牌同字**，Apple／Spotify 的字串搜尋會撈到大量無關條目，必須以盤名收斂；MB 另有日本的 BEEFEATER 與丹麥 1960 年代的 Beefeaters（複數）兩個實體，本卡釘的是消歧義「Post-Hardcore / Dischord」。**盤名《House Burning Down》與 Hendrix 的同名曲同字**，且以盤名為主鍵掃全池時與池中三張含 Burnin'／Burning 的碟子字串命中（Bob Marley、John Lee Hooker、Pépé Bradock），已人眼核對皆非同一張。**二合一風險**：1992 年的《Plays For Lovers & House Burning Down》是合併版，依裁定第 129 條身分不釘、封面不用、試聽不採。年份 MB 1987 與 Discogs 1987 一致。",
+  "mbNote": "釘 4a6387f0-ca9f-46d2-9f80-e744c532fa77《House Burning Down》，artist-credit「Beefeater」，first-release-date 1987，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID 8c016ef4-0d18-4795-86dd-35ec90a509c9（消歧義「Post-Hardcore / Dischord」），browse 得 4 個 release-group。**對照組刻意不釘**：9b704deb-80c4-4a03-a9c3-68ebb8b2c4b6《Plays For Lovers》(1985) 是首作；fafa4438《Need a Job》(1986) 是 **EP**；8b38bfc9-420f-349b-a2de-869a51158a0c《Plays For Lovers & House Burning Down》(1992) 是**二合一套裝**，裁定第 129 條三層都擋。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Dischord Records（原廠重壓 DISCHORD 23）",
+  "g": "a"
+ },
+ {
+  "artist": "Soulside",
+  "album": "Hot Bodi-Gram",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dischord Records（Dischord no. 38）",
+  "why": "華府 Lünchmeat 改名後的樂團，Dischord 在 1987–90 年替他們出了三張 LP，本張是第二張（Discogs master 196293，Dischord no. 38，1989 年美國盤；Discogs 把掛名登為「Soul Side」兩個字，MB 與 Dischord 自家目錄作 Soulside）。他們 1989 年到東德巡演、在柏林圍牆倒塌前幾週演出，這件事偶爾被提到；三張唱片本身沒有人談。Discogs 版本頁三筆全數 Dischord Records、零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列：Soulside 零張。",
+  "risk": "**掛名的空格擺法在來源之間不一致**——Discogs 原盤登 `Soul Side*`（帶星號，表示該版封面的印法），MB 與 Dischord 目錄作 `Soulside`。這正是裁定第 139 條「可分可合的複合詞一律兩種寫法都查」的形狀，**MB 兩種寫法都試過**：`Soulside` 命中實體（de2e8176-…），`Soul Side` 亦導向同一實體。卡片採 Dischord 與 MB 的 `Soulside`。**盤名《Hot Bodi-Gram》含 ASCII 連字號**（非 U+2010，已實測，不踩 chk-prop 的反模式）。MB 另有兩個同名實體（'The Right Side' 那位、aka Lowlife）與比利時的 Electric Soulside。年份 MB 1989 與 Discogs 1989 一致。封面 CAA（2 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 0d74fe48-41b0-4b8b-804f-37904795f8fc《Hot Bodi-Gram》，artist-credit「Soulside」，first-release-date 1989，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID de2e8176-32c2-4abe-b718-9392dffd8ffe（消歧義「post-hardcore band from Washington, D.C. area」），browse 得 7 個 release-group。**對照組刻意不釘**：514807a2-e86f-3877-a502-1da2e05a1b67《Less Deep Inside Keeps》(1987) 是首作；0146ed6e《Trigger》(1988) 是 **EP**；ffd723c9-3c31-4c48-aa2e-8067533426e5《Trigger + Bass•103》(2014) 是**合併再發**（裁定第 129 條三層都擋，且標題含 U+2022 圓點）；634da629《Soon Come Happy》(1990) 是第三張；876fd504《A Brief Moment in the Sun》(2022) 是重組作。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；Discogs 版本頁 3 筆皆 Dischord 原廠",
+  "g": "a"
+ },
+ {
+  "artist": "Shudder to Think",
+  "album": "Ten Spot",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dischord Records（Dischord #46）",
+  "why": "華府樂團，Dischord 時期的第一張正規 LP（Discogs master 474358，DISCHORD #46，1990 年美國盤；Discogs 的 master 標題作「Ten-Spot」帶連字號，MB 與 Dischord 自家目錄作「Ten Spot」）。Dischord 2018 年做過重刻母帶的黑膠與 FLAC 再發（Discogs 版本頁五筆，全數 Dischord Records，零筆標 Unofficial）。這個團被談的是 1994 年跳槽 Epic 之後的《Pony Express Record》；Dischord 時期的三張碟幾乎只在「他們原本在 Dischord」這句話裡出現。池中實掃 seed_cards.json 全 13,913 列：Shudder to Think 零張。",
+  "risk": "**盤名有兩種寫法**：Discogs master 作《Ten-Spot》（ASCII 連字號）、MB release-group 與 Dischord 目錄作《Ten Spot》（空格）。**卡片採《Ten Spot》**（MB 與原廠目錄一致），`Ten-Spot` 寫進本欄供下游去重與查詢比對——這是裁定第 139 條複合詞形狀在盤名側的版本。**二合一風險**：1991 年的《Funeral at the Movies & Ten Spot》是合併版，裁定第 129 條身分不釘、封面不用、試聽不採；Apple 上若配到它須改記 unavailable。年份 MB 1990 與 Discogs 1990 一致。封面 CAA（3 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 7421303d-6552-4c1c-9283-191b350aec27《Ten Spot》，artist-credit「Shudder to Think」，first-release-date 1990，primary-type **Album**、secondary-types 空，轄下 3 個 release。已回問 release-group 端點確認。藝人 MBID 5a6e19e0-3ff0-4b3d-869e-3c539d6d8707，browse 得 22 個 release-group（分頁 browse，非 25 筆上限那條路）。**對照組刻意不釘**：d134d4bb-a2da-4742-a2b9-b353e9b850c7《Shudder to Think》(1987) 標 Album/**Demo** 且自我同名；937e7259-6935-3173-ae1a-0fb7acea25e9《Curses, Spells, Voodoo, Mooses》(1988) 是 Dischord 時期第一張、本批只收一張；f5ffe10b-4d0c-3be4-a4aa-3e15089614bb《Funeral at the Movies & Ten Spot》(1991) 是**二合一套裝**，裁定第 129 條三層都擋；26443a3c／9f77411d 兩筆自我同名分別是 1994 EP 與 2025 單曲。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Dischord Records（2018 重刻母帶黑膠與 FLAC）",
+  "g": "a"
+ },
+ {
+  "artist": "Necros",
+  "album": "Conquest for Death",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Touch and Go Records（T&G LP #2）",
+  "why": "俄亥俄州 Maumee 的樂團，Touch and Go 從樂迷雜誌變成唱片公司時最早經手的樂團之一，本張是廠牌的第二張 LP（Discogs master 339155，T&G LP #2，1983 年美國盤，Multi Trac Studios 錄音）；同年另有德國 Aggressive Rockproduktionen 的授權盤 AG 0021。**這張是本批示範裁定第 65 條的教材**：Discogs 版本頁六筆裡有三筆標 Unofficial，其中 2006 年那筆掛的廠牌實體是「**Touch And Go (2)**」——括號序號 (2) 表示那是與正牌 Touch And Go 同名的另一個 Discogs 實體，而且沿用了正版編號 T&GLP #2。舉證只採 1983 年的原廠盤與德國授權盤。池中實掃 seed_cards.json 全 13,913 列：Necros 零張；Touch and Go 廠牌線在池中只有 Butthole Surfers 3 張、Big Black 2 張、Slint 2 張、Killdozer 1 張、Scratch Acid 1 張、The Jesus Lizard 4 張——全部是廠牌的正典側。",
+  "risk": "**冒名廠牌**：2006 年德國「Touch And Go (2)」盤標 Unofficial 且沿用原始編號，不得採為背書（裁定第 65 條）；另有兩筆 Not On Label 的未授權盤。**掛名撞名**：MB 上另有三個 Necros（demoscene 作曲家 Andrew Sega、兩支法國死金團），本卡釘的是消歧義「USA punk band」。**同名雙胞胎**：MB 上《Conquest for Death》有 **Single**（d5ee13cc-…）與 **Album**（d6e05be7-…）兩筆同名 release-group，本卡釘 Album 那筆，Single 刻意不釘（裁定第 126 條）。年份 MB 1983 與 Discogs 1983 一致。封面 CAA（3 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 d6e05be7-7a30-3602-89ad-47724330693c《Conquest for Death》，artist-credit「Necros」，first-release-date 1983，primary-type **Album**、secondary-types 空，轄下 3 個 release。已回問 release-group 端點確認。藝人 MBID a8971728-0985-4b30-a209-142784e7c3b8（消歧義「USA punk band」），browse 得 9 個 release-group。**對照組刻意不釘**：d5ee13cc-bd84-3874-aa01-bf6edb3cc9b8《Conquest for Death》(1983) 是**同名的 Single**——裁定第 126 條記過 `fix-rgmbid.mjs` 曾以年份把 Album 換成 EP，本卡兩筆年份相同，下游若重算務必以 primary-type 為準；f3fc7ee3《Ambionic Sound》(1979)、05eefccd《Sex Drive》(1981)、b52c4f2b《I.Q. 32》(1981)、632ae636《Early Days EP》(1991) 皆為 **EP**；08846c24《Tangled Up》(1987) 是第二張 LP。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "德國 Aggressive Rockproduktionen（1983 授權盤 AG 0021）；2006 年「Touch And Go (2)」盤為未授權，不採",
+  "g": "a"
+ },
+ {
+  "artist": "Killdozer",
+  "album": "Intellectuals Are the Shoeshine Boys of the Ruling Elite",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "Bone Air（P-HAUS 3）",
+  "why": "威斯康辛州麥迪遜的樂團，本張是他們的第一張 LP。**原盤不是 Touch and Go 而是 Bone Air**（Discogs master 86819，P-HAUS 3，1984 年美國盤）；Touch and Go 1989 年以 T&GLP#47 把本張與《Snakeboy》併成一張再發（美國與英國兩地，Discogs 版本頁六筆、四筆為再發、零筆標 Unofficial）。這個團在池中已有 1989 年的《Twelve Point Buck》一張，早期在小廠自出的兩張沒有人談。池中實掃 seed_cards.json 全 13,913 列：Killdozer **1 張**（《Twelve Point Buck》1989），未達同一藝人上限 3 張；MB 另有三個同名 Killdozer（法國 1970 年代 funk 團、美國嘻哈、義大利 speed metal），本卡釘的是消歧義「1980s Madison, WI rock band」。",
+  "risk": "**再發是二合一**：Touch and Go 的 T&GLP#47 是《Intellectuals…》＋《Snakeboy》合併版（MB 上另有 266d6704-… 這筆 Album/Compilation 的合併 release-group），依裁定第 129 條**身分不釘、封面不用、試聽不採**——Apple 若配到「Includes Snakeboy Album」那個版本必須改記 unavailable，這是本卡最可能出錯的一點。**廠牌欄採原盤 Bone Air**，不是常被寫成的 Touch and Go（裁定第 85 條：原始發行指這張碟是誰做出來的）。**盤名極長**，Apple 的標題比對要留意截斷。年份 MB 1984 與 Discogs 1984 一致。封面 CAA（4 個 release）。",
+  "mbNote": "釘 ec02dd98-f63b-37f8-9e7f-81f686899952《Intellectuals Are the Shoeshine Boys of the Ruling Elite》，artist-credit「Killdozer」，first-release-date 1984，primary-type **Album**、secondary-types 空，轄下 4 個 release。已回問 release-group 端點確認。藝人 MBID 6a2f72b1-d660-409e-b190-6470157d3a38（消歧義「1980s Madison, WI rock band」），browse 得 20 個 release-group。**對照組刻意不釘**：266d6704-f549-444e-b2ae-17b33cd8769e《Intellectuals… / Snakeboy》(1989) 是**二合一套裝**，裁定第 129 條三層都擋；bb61d164-94b4-3bed-803a-43b7a7686eb0《Twelve Point Buck》(1989) **已在池中**；a85c3c91《Snake Boy》(1985)、af6bc3fb《Little Baby Buntin'》(1987) 是同期另兩張，本批只收一張以留藝人上限空間。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Touch and Go Records（1989 T&GLP#47，二合一版，僅作地位證據不作試聽來源）",
+  "g": "a"
+ },
+ {
+  "artist": "Die Kreuzen",
+  "album": "October File",
+  "year": 1986,
+  "genres": [
+   "rock"
+  ],
+  "label": "Touch and Go Records（T&GLP#7）",
+  "why": "密爾瓦基的樂團，1984 年的自我同名首作是硬蕊，本張把速度放慢、把音色拉暗，是他們真正被同行反覆提到的那一張，卻從來沒有進過任何一份年代名單（Discogs master 387391，T&GLP#7，1986 年美國盤）。地位證據是原廠的長期在架：Discogs 版本頁 11 筆、6 筆為再發，2008 年與 2026 年 Touch and Go 兩度以原編號 T&GLP#7 重壓（**廠牌實體無括號序號，是正牌 Touch And Go**，與同批 Necros 那筆冒名盤對照），零筆標 Unofficial。池中實掃 seed_cards.json 全 13,913 列：Die Kreuzen 零張。",
+  "risk": "**掛名是德文但樂團是美國團，且拼法本身不合德文文法**（正確應為 die Kreuze），MB 與 Discogs 皆作 `Die Kreuzen`，依裁定第 52 條採樂團現行寫法、不得「訂正」。MB 以「Die Kreuzen」查詢時第二名起會出現 Die drei ???、Die Ärzte 等德文實體，須比對 MBID。**刻意不收自我同名首作**：《Die Kreuzen》(1984) 是自我同名卡，依本批簡報若 Apple 查不到就不收，本批改收本張。年份 MB 1986-05 與 Discogs 1986 一致。封面 CAA（1 個 release，命中機率中等，備援是 Discogs master 387391）。試聽預估 `us`。",
+  "mbNote": "釘 6ca1bee3-0b93-433d-970d-81bad1aeaaf0《October File》，artist-credit「Die Kreuzen」，first-release-date 1986-05，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID 7550b236-f9c2-450c-81a6-fac63bf9d23e，browse 得 16 個 release-group。**對照組刻意不釘**：afff89cd-ef8f-3af0-98f7-b3831ce51e3b《Die Kreuzen》(1984) 是**自我同名**首作；54f583af-d06b-376b-a737-33149ff3f20e《October File / Die Kreuzen》(1998) 是**二合一套裝**，裁定第 129 條三層都擋；508788ac《Dirt and Decay 1981-1984》primary-type 為 **Other**/Compilation、不符 §1；06bb3bba《Starship Demo》(1981)、f1942827《Demos》(1982) 是 demo；703494d2《Cows and Beer》(1982)、210839cd《Gone Away》(1989)、a472c62d《The Kids Will Have Their Say》(2013) 是 **EP**；0798ae0f《Century Days》(1988)、38531d4b《Cement》(1991) 是後兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Touch and Go Records（2008 與 2026 兩度以原編號 T&GLP#7 重壓）",
+  "g": "a"
+ },
+ {
+  "artist": "Didjits",
+  "album": "Hey Judester",
+  "year": 1988,
+  "genres": [
+   "rock"
+  ],
+  "label": "Touch and Go Records（T&GLP#28）",
+  "why": "伊利諾州 Mattoon 的三人團，Touch and Go 在 1988–93 年替他們出了四張 LP，本張是第一張（Discogs master 775839，T & GLP#28，1988 年美國盤）。Touch and Go 後來把整批目錄放上數位發行（Discogs 版本頁五筆，其中一筆是廠牌自己的 MP3 再發，零筆標 Unofficial）。這個團在 Touch and Go 的歷史裡是「Big Black 與 Jesus Lizard 之間那幾年廠牌靠誰撐著」的答案之一，但沒有任何一張碟被單獨談過。池中實掃 seed_cards.json 全 13,913 列：Didjits 零張。",
+  "risk": "**MB 上有兩筆極容易混淆的早期條目**：a707d626-01a5-40f8-b3b9-f7631198acc4《Signifies My GO‐T》(1985) 的標題含 **U+2010 非 ASCII 連字號**，正好踩 `chk-prop.mjs` 的反模式（c-50 踩過、c-79 的 I.M.Oバンド 亦同），**本卡刻意避開該筆**；另有 c6da9c0d 的 Album/Demo 版與 a5f77f27 的 primary-type null 版。**盤名《Hey Judester》是 Beatles〈Hey Jude〉的諧擬**，Apple 搜尋會被〈Hey Jude〉的大量條目淹沒，比對必須先卡藝人。年份 MB 1988 與 Discogs 1988 一致。封面 CAA（2 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 a4f36e2d-51bc-3b74-a18e-b9bb2629876e《Hey Judester》，artist-credit「Didjits」，first-release-date 1988，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID e3d01dcb-eb41-4ce9-8506-bfd70aa8d651，browse 得 13 個 release-group。**對照組刻意不釘**：a707d626-01a5-40f8-b3b9-f7631198acc4《Signifies My GO‐T》(1985) **標題含 U+2010**，收了會讓標題比對整組失準；c6da9c0d-a010-46d1-ad9d-84f044ccca30 是同一張的 Album/**Demo** 版；a5f77f27-cb33-461b-83de-9c31f6f93a59《Demos & Others-1985-1992》primary-type **null**、不符 §1；40883060《Fizzjob》(1986)、ee3cb461《Hornet Pinata》(1990)、ec9f1f7c《Full Nelson Reilly》(1991)、8a914eca《Que Sirhan Sirhan》(1993) 是同廠另四張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Touch and Go Records（廠牌自行數位再發）",
+  "g": "a"
+ },
+ {
+  "artist": "Laughing Hyenas",
+  "album": "You Can't Pray a Lie",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Touch and Go Records（T&G LP #38）",
+  "why": "安娜堡的樂團，主唱 John Brannon 來自硬蕊團 Negative Approach，吉他手 Larissa Strickland 的音色是這條線最容易辨認的一種。本張是他們在 Touch and Go 的第二張 LP（Discogs master 616258，T & G LP #38，1989 年美國盤，Butch Vig 的 Smart Studios 錄音）。地位證據很硬：**Third Man Records 2018 年以 TMR-471 做了授權的重刻母帶黑膠**（Discogs 版本頁八筆，2018 兩筆為 Third Man 的 Reissue/Remastered，零筆標 Unofficial）——依裁定第 43 條，標 Official 的考古再發才算背書，這筆合格。池中實掃 seed_cards.json 全 13,913 列：Laughing Hyenas 零張、Negative Approach 零張。",
+  "risk": "**二合一風險**：1990 年 Touch and Go 的《Life Of Crime/You Can't Pray A Lie》（MB e8b8116f-…，Album/**Compilation**）把兩張 LP 併成一張 CD，依裁定第 129 條身分不釘、封面不用、試聽不採；Apple 上這張碟最可能配到的就是那個併輯，比對時要看軌數。**掛名子字串風險**：MB 上另有德國的 Hyenas、蒙特婁的 Laughing 兩個實體。**盤名帶縮寫撇號**（Can't），Apple 的正規化通常能吃，但若落空要改試 `Cant`。年份 MB 1989 與 Discogs 1989 一致。封面 CAA（1 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 8daef489-8fcd-311b-9f1b-1c20dc56140a《You Can't Pray a Lie》，artist-credit「Laughing Hyenas」，first-release-date 1989，primary-type **Album**、secondary-types 空，轄下 1 個 release。已回問 release-group 端點確認。藝人 MBID a3e6d60a-34ff-4d99-8397-2db6b5b2333e，browse 得 11 個 release-group。**對照組刻意不釘**：e8b8116f-a6a0-3f13-80c3-2740fba80cea《Life Of Crime/You Can't Pray A Lie》(1990) 是**二合一套裝**（Album/Compilation），裁定第 129 條三層都擋；6d5589aa《Merry Go Round》(1987) 是首作；edf675f0《Life of Crime》(1990)、34b97a31《Hard Times》(1995) 是後兩張；230d1352《The Bob Magazine #36 Giveaway》、14ee70cd《Crawl》、537bb57a《Covers》皆為 **EP**；5a8d7b98 是四團 split 的 Single/Compilation。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Third Man Records（2018 授權重刻母帶黑膠 TMR-471）",
+  "g": "a"
+ },
+ {
+  "artist": "Tar",
+  "album": "Jackson",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Amphetamine Reptile Records（AMREP004）",
+  "why": "芝加哥四人團，全團用鋁製吉他與貝斯。本張是他們在 Amphetamine Reptile 的第二張 LP（Discogs master 6579，AMREP004，1991 年美國與歐洲盤）。地位證據是 2021 年 No Blow Records 與 Comedy Minus One 合作的授權重刻母帶黑膠（NBLW12／CHKLP030，Discogs 版本頁九筆、三筆為 2021 Reissue/Remastered，零筆標 Unofficial）。AmRep 的目錄在噪音搖滾史裡只有 Helmet 與 Cows 被反覆提起，兩張都已在池中；Tar 是同一批裡沒有進來的。池中實掃 seed_cards.json 全 13,913 列：掛名為 `Tar` 的卡零張（子字串比對會撈到 Ringo Starr、Gang Starr、Mazzy Star、Stars of the Lid 等 80 餘筆，已逐筆人眼排除）。",
+  "risk": "**掛名只有三個字母，是全批撞名風險最高的一筆**：MB 上另有日本的 TAR‐TAR（**標題含 U+2010**）、俄國的 TAR、麻州的 deathcore TAR 三個實體，本卡釘的是消歧義「Chicago post-hardcore band」。**盤名《Jackson》是常見姓氏**，以盤名為主鍵掃全池命中池中七張（Millie Jackson、Jackson Browne、Jackson C. Frank、The Jacksons、Jackson 5、Art Ensemble《A Jackson in Your House》、The Politicians），**全部人眼核對為不同的碟**。這是裁定第 124 條（單一通名的子字串比對特別脆弱）與第 139 條（撞名陷阱）疊在同一張卡上，**下游任何以單一欄位查詢的服務都會撈錯**，必須藝人＋盤名同時卡。年份 MB 1991 與 Discogs 1991 一致。封面 CAA（2 個 release）、試聽預估 `us`。",
+  "mbNote": "釘 3077cbff-ed50-37d2-ac0f-a22786c5d0fa《Jackson》，artist-credit「Tar」，first-release-date 1991，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID 5856ffe4-0171-495b-9986-03b96069200e（消歧義「Chicago post-hardcore band」，US，1988 起），browse 得 13 個 release-group。**對照組刻意不釘**：0cb50351《Roundhouse》(1990) 是同廠首張 LP；41c43d65《Toast》(1993)、965f10ee《Over and Out》(1995) 是後兩張；cbca0ec4《1988-1995》(2014) 標 Album/**Compilation**；1dda9092《Handsome》(1989)、0ab728eb《Clincher》(1993)、f32fafea《Tar》(2024) 皆為 **EP**（最後一筆並為自我同名）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "No Blow Records／Comedy Minus One（2021 授權重刻母帶 NBLW12／CHKLP030）",
+  "g": "a"
+ },
+ {
+  "artist": "God Bullies",
+  "album": "Dog Show",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "Amphetamine Reptile Records（ARR 89181-2）",
+  "why": "密西根州 Kalamazoo 的樂團，Amphetamine Reptile 早期名單裡最靠近劇場與噪音的一組。本張是他們在 AmRep 的第二張 LP（Discogs master 53987，ARR 89181-2，1990 年美國盤，Twin/Tone 代理發行）。Discogs 版本頁六筆，全部落在原廠與 Twin/Tone 的代理體系內，**零筆標 Unofficial、零筆是第三方復刻**——沒有考古再發，地位證據來自廠牌自己在 1988–94 年替他們連出四張 LP 的持續投入（裁定第 82 條：完全沒有再發比只有未授權再發更乾淨，深掘線的判準是有可查證的地位證據，再發不是必要條件）。池中實掃 seed_cards.json 全 13,913 列：God Bullies 零張。",
+  "risk": "**盤名《Dog Show》是通用詞組**，Apple 搜尋會撈到寵物展相關條目與同名合輯，比對須先卡藝人名。**掛名含冒犯性字眼**，部分 storefront 可能不上架，試聽落空的機率高於本組平均；落空一律記 unavailable，不接受疑似配對（§6）。**AmRep 的目錄近年由廠牌自己數位發行，storefront 預估 `us`**；本張與 Tar《Jackson》同廠，若 Tar 命中而本張落空，那是上架清單的差別不是比對問題（裁定第 93 條：同一家廠牌不同碟的授權狀態可以不同）。年份 MB 1990 與 Discogs 1990 一致。封面 CAA（3 個 release）。",
+  "mbNote": "釘 a3da999e-2cb3-32e5-b212-2bcc2ba2101a《Dog Show》，artist-credit「God Bullies」，first-release-date 1990，primary-type **Album**、secondary-types 空，轄下 3 個 release。已回問 release-group 端點確認。藝人 MBID ca210542-af7d-4119-9952-38959029d06f，browse 得 11 個 release-group。**對照組刻意不釘**：c6914c16《Mama Womb Womb》(1989) 是同廠首張 LP；8d8d33b5《Plastic Eye Miracle》(1990) 是同年的 **EP**（與本張同年，年份無法區分，必須靠 primary-type，裁定第 126 條）；81ddd40c《War on Everybody》(1992)、f5474f1c《Kill the King》(1994) 是後兩張。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "無授權再發；Discogs 版本頁 6 筆皆原廠與 Twin/Tone 代理體系",
+  "g": "a"
+ },
+ {
+  "artist": "Alice Donut",
+  "album": "Bucketfulls of Sickness and Horror in an Otherwise Meaningless Life",
+  "year": 1989,
+  "genres": [
+   "rock"
+  ],
+  "label": "Alternative Tentacles（VIRUS 71）",
+  "why": "紐約樂團，Alternative Tentacles 在 Dead Kennedys 之後最主要的自家團之一，1988–96 年在該廠出了七張 LP，本張是第二張。Alternative Tentacles 1992 年以 VIRUS 73CD 做過原廠再發（Discogs 版本頁七筆、兩筆為原廠 Reissue，零筆標 Unofficial）。這家廠牌被談的永遠是 Dead Kennedys 與 Jello Biafra 的官司；同一份目錄裡的其他樂團幾乎沒有紀錄。池中實掃 seed_cards.json 全 13,913 列：Alice Donut 零張；Alternative Tentacles 廠牌線在池中只有 Dead Kennedys 4 張與 Flipper 1 張。",
+  "risk": "**盤名極長（68 字元）**，Apple 的標題比對容易因長度差被 `titleOk` 擋掉——這正是裁定第 123 條（印度批 3/40 的真正原因）的形狀，只是這次長的是卡片側不是 Apple 側；本機比對時要放寬長度上限或改用前綴比對。**掛名 `Alice Donut` 撞名風險低**，MB 上唯一實體。年份 MB 1989 與 Discogs 1989 一致。封面 CAA（2 個 release）、試聽預估 `us`（Alternative Tentacles 自營數位發行）。",
+  "mbNote": "釘 08a3e9f8-e7ef-3583-ac0c-0fa0a3a7543f《Bucketfulls of Sickness and Horror in an Otherwise Meaningless Life》，artist-credit「Alice Donut」，first-release-date 1989，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID b80617ea-0850-4744-aac8-c689cac6afd0，browse 得 24 個 release-group。**對照組刻意不釘**：7122acf4《Dork Me Bangladesh》(1987) 標 Album/**Demo**；53a323dc《Donut Comes Alive》(1988) 是同廠首張；cc1c690e《Mule》(1990)、d515004a《Revenge Fantasies of the Impotent》(1990)、01e7d65f《The Untidy Suicides of Your Degenerate Children》(1992) 是後續作品；235c7fb8《The Biggest Ass》(1991) 是 **EP**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Alternative Tentacles（1992 原廠再發 VIRUS 73CD）",
+  "g": "a"
+ },
+ {
+  "artist": "The Dicks",
+  "album": "These People",
+  "year": 1985,
+  "genres": [
+   "rock"
+  ],
+  "label": "Alternative Tentacles（VIRUS 43）",
+  "why": "德州奧斯汀起家、後遷舊金山的樂團，主唱 Gary Floyd 是美國硬蕊裡最早公開出櫃的主唱之一。1983 年的《Kill From the Heart》在 SST，本張是他們在 Alternative Tentacles 的唯一一張 LP、也是解散前最後一張（Discogs master 339576，VIRUS 43，1985 年美國與英國盤，Bear West Studios 錄音）。地位證據是原廠 2012 年的重刻母帶再發（VIRUS 438／VIRUS 442，黑膠與數位皆有，Discogs 版本頁九筆、零筆標 Unofficial）。池中實掃 seed_cards.json 全 13,913 列：The Dicks 零張、Gary Floyd 零張、Sister Double Happiness 零張。",
+  "risk": "**掛名的定冠詞在來源之間不一致**：**MB 的實體名與 artist-credit 都是 `Dicks`（無 The）**，Discogs、Alternative Tentacles 目錄與唱片封面作 `The Dicks`。卡片採 `The Dicks`（外部服務認得的形式，裁定第 25 條的判準：alias／掛名要讓封面與試聽查得到），MB 側一律吃 rgMbid 不打字串。**這是裁定第 139 條「The 的有無」在本批的唯一實例，去重時兩種寫法都要掃**（本批已兩種都掃過，池中皆零張）。**盤名《These People》是通用詞組**，以盤名為主鍵掃全池與池中 James Brown《People》(1980)、Barbra Streisand《People》(1964) 子字串命中，已人眼核對為不同的碟。**Discogs 以「The Dicks」查 master 回 0 筆、改用「Dicks」才命中**——這正是第 139 條說的「查到零筆先問是不是寫法問題」。年份 MB 1985 與 Discogs 1985 一致。",
+  "mbNote": "釘 7eb85094-0bab-46bb-9bb8-702e2074ea4c《These People》，**MB 的 artist-credit 是「Dicks」（無定冠詞）**，卡片掛名採「The Dicks」，first-release-date 1985，primary-type **Album**、secondary-types 空，轄下 2 個 release。已回問 release-group 端點確認。藝人 MBID 1cf41bc8-6033-4294-8e45-68613a80aae4（MB 實體名 `Dicks`，消歧義「Austin/San Francisco queercore punk」），browse 得 9 個 release-group。**對照組刻意不釘**：6d40b35f-a576-337c-b4fd-0e7e490a868b《Kill From the Heart》(1983) 是 SST 時期的首張 LP；3fd13b97-251f-4d9f-964c-73fbc0885b24《Recorded Live at Raul's Club》(1980) 是與 Big Boys 共掛的 **Album/Live** split（本批的 Big Boys 卡亦刻意不釘這一筆）；976c0de8《1980-1986》(1997) 標 Album/**Compilation**；02eb1c48《The Dicks Hate the Police》(1980)、07c2e4fc《Peace?》(1984) 是 **Single**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Alternative Tentacles（2012 重刻母帶再發 VIRUS 438／VIRUS 442）",
+  "g": "a"
+ },
+ {
+  "artist": "Big Boys",
+  "album": "Lullabies Help the Brain Grow",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Moment Productions（MOM-BB-002）",
+  "why": "奧斯汀的樂團，把硬蕊接上放克節奏組，1980 年代德州地下場景的核心。本張是他們自營的 Moment Productions 出的第二張 LP（Discogs master 43321，MOM-BB-002，1983 年美國盤，Third Coast Sound 錄音），隔年由 Enigma 以 E-1128 代理再發。地位證據很硬：**Light in the Attic 的子廠 Modern Classics Recordings 2014 年做了編號的授權黑膠與卡帶再發（MCR 908）**，Discogs 版本頁 13 筆、九筆為再發、零筆標 Unofficial（裁定第 43／57／65 條三層都查過，無冒名實體序號）。德州這一塊在池中完全空白。池中實掃 seed_cards.json 全 13,913 列：Big Boys 零張、The Dicks 零張、Really Red 零張、Scratch Acid 1 張（唯一的德州地下卡）。",
+  "risk": "**掛名 `Big Boys` 是英文常用詞組**，MB 上有多個同名實體，本卡釘的是消歧義「Austin, TX queercore & skate punk」；Discogs 的實體是 `Big Boys (2)`（**括號序號 (2) 在這裡是 Discogs 的同名消歧義，不是冒名廠牌**，兩者不要混淆——裁定第 65 條講的是廠牌側的括號序號）。**split 盤刻意不釘**：1980 年的《Recorded Live at Raul's Club》是與 The Dicks 共掛的現場 split，本批的 The Dicks 卡亦不釘該筆，兩張卡都避開這個共用的 release-group。年份 MB 1983 與 Discogs 1983 一致。封面 CAA（1 個 release，命中不確定，備援 Discogs master 43321）。試聽預估 `us`（Light in the Attic 體系的數位發行權在美國）。",
+  "mbNote": "釘 48c1ed4e-710b-4940-a726-e7fe34a1905c《Lullabies Help the Brain Grow》，artist-credit「Big Boys」，first-release-date 1983，primary-type **Album**、secondary-types 空，轄下 1 個 release（1983 US Official）。已回問 release-group 端點確認。藝人 MBID fde1cff2-5a7b-4e8c-9666-110fa90500fb（消歧義「Austin, TX queercore & skate punk」），browse 得 11 個 release-group。**對照組刻意不釘**：3fd13b97-251f-4d9f-964c-73fbc0885b24《Recorded Live at Raul's Club》(1980-12-19) 是與 The Dicks 共掛的 **Album/Live** split，兩張卡都不釘；d6ff15df-6a3c-4027-8349-2c47833520a8《Where's My Towel / Industry Standard》(1981) 是首張 LP；1ef4b6db《Frat Cars》(1980)、15d60cd9《Fun, Fun, Fun...》(1982) 是 **EP**；4dc580b8《Wreck Collection》(1989) 標 Album/**Compilation**；70c17ee1《No Matter How Long the Line Is at the Cafeteria, Theres Always a Seat!》(1985) 是第三張（MB 標題漏了 There's 的撇號，若日後要收須先裁定寫法）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Modern Classics Recordings／Light in the Attic（2014 授權黑膠與卡帶 MCR 908）",
+  "g": "a"
+ },
+ {
+  "artist": "JFA",
+  "album": "Valley of the Yakes",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Placebo Records（PLA-401）",
+  "why": "鳳凰城的滑板龐克團，團名是 Jodie Foster's Army 的縮寫。本張是他們的第一張 LP，出在鳳凰城的 Placebo Records（Discogs master 326702，PLA-401，1983 年美國盤，Desert Sound Recording 錄音）——Placebo 是 Tony Victor 經營的在地廠牌，同時是 Sun City Girls、Mighty Sphincter 的出處，整家廠牌在美國地下史裡幾乎沒有專文。地位證據是廠牌自己 1988 年以 PLCD-01 把本張與 EP《Blatant Localism》併成 CD 發行（Discogs 版本頁七筆）。池中實掃 seed_cards.json 全 13,913 列：JFA 零張、Sun City Girls 零張、Mighty Sphincter 零張——亞利桑那這條線在池中全空。",
+  "risk": "**未授權再發兩筆**：2018 年西班牙 No Futuro（URO1997）與 2022 年阿根廷 El Sistema Me Obligo A Hacerlo 的卡帶都標 **Unofficial Release**，依裁定第 43 條不得採為背書；本卡的地位證據只採 1983 原廠盤與 1988 年廠牌自己的 CD。**該 CD 是二合一**（《Valley of the Yakes / Blatant Localism》，Discogs master 679756），依裁定第 129 條身分不釘、封面不用、試聽不採——Apple 上這張碟最可能配到的就是那個併輯，比對時要看軌數。**掛名是三個字母的縮寫**，Discogs 登為 `JFA*`，字串查詢須配盤名。年份 MB 1983-07-01 與 Discogs 1983 一致。封面 CAA（3 個 release）。",
+  "mbNote": "釘 6ef42107-fe54-3e0e-a932-bda74ec12825《Valley of the Yakes》，artist-credit「JFA」，first-release-date 1983-07-01，primary-type **Album**、secondary-types 空，轄下 3 個 release（1983-07-01 XW、1983 US、1988 US，皆 Official）。已回問 release-group 端點確認。藝人 MBID ed1cc87f-1e93-48aa-ad09-e67ccb77be37（消歧義「Jodie Foster's Army，Phoenix skate punk/thrash」），browse 得 14 個 release-group。**對照組刻意不釘**：89824f0e《Blatant Localism》(1981) 與 db1e92ce《My Movie》(1986) 是 **EP**；467bbf2d《Untitled》(1984) 的盤名是「Untitled」、身分不明確（裁定第 73 條：釘不住就不收）；bef2a360《Nowhere Blossoms》(1988) 是後作；dd45282b《We Know You Suck: Recordings 1981–1983》(2003) 標 Album/**Compilation** 且標題含 **U+2013**。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Placebo Records（1988 廠牌自製 CD PLCD-01，二合一版，僅作地位證據不作試聽來源）；2018 西班牙盤與 2022 阿根廷卡帶皆未授權，不採",
+  "g": "a"
+ }
+]
