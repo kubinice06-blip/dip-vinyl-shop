@@ -81,9 +81,15 @@ const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
 // 原廠目錄至今仍由義法的廠牌持有）；日本電影在 jp（且 MB／Apple 的日本原聲覆蓋率明顯偏低）；
 // 蘇聯與東歐在 ru／pl。gb 放在 us 之後是因為大量歐洲片的英語版發行權落在英國。
 const OST = ['us', 'gb', 'it', 'fr', 'de', 'jp', 'ru', 'pl', 'es', 'ca', 'au'];
+// 台灣線（c-89～c-92）。第 158 條：用原文盤名去搜當地店面，tw 排第一。
+// hk／sg／my 是華語發行權常見的鄰接市場；**cn 要放進來**——c-89 的策展層回報
+// 伍佰有五張在 MB 上是簡體建檔（诗情摇滚、单程车票、无尽闪亮的哀愁、让水倒流、
+// 纯白的起点），那幾張的 Apple 條目很可能也落在簡體市場。
+const TWN = ['tw', 'hk', 'sg', 'my', 'cn', 'us', 'jp', 'gb'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
-  c87: JPN, c88: OST };
+  c87: JPN, c88: OST,
+  c89: TWN, c90: TWN, c91: TWN, c92: TWN };
 
 const cards = [];
 for (const b of BATCHES)
