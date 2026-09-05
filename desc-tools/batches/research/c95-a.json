@@ -128,5 +128,189 @@
   "status": "full",
   "yearVerified": "卡片 year 1992 是**整編輯出版年**：MB release-group first-release-date 1992、1992 US release（Legacy C2K 48867）同、Apple US 記 1992-06-18，三方一致。**錄音年是 1965**（盤名本身寫著「The Complete 1965 Sessions」，維基記 1965 年 John Hammond 主持的 Columbia 場次），與出版年相差 27 年。",
   "notes": "**⚠ 寫作層鐵則：1992 是整編出版年，1965 是錄音年，不得互寫。**盤名裡的「1965」是錄音年，不是發行年。\n試聽探測 ready 且**配對正確**：collectionId 157314970、店面 us、21 軌對得上 MB 的 9＋12。\n**擋下策展層無來源說法**：curatorWhy 稱這批是「Son House 重出江湖時期最權威的一份文獻」、與池中《Father of Folk Blues》「互為單張選輯與完整場次」——「最權威」是評價、「互為」是關係定位，皆查無來源，未採用。維基只支持「later reissued as a 2-CD set」這一句關係陳述，寫作層請用這句。\n另：Blues Foundation 的名人堂頁面（blues.org）本輪回查 404，未採用任何來自該頁的說法。"
+ },
+ {
+  "key": "desc2:Bessie Smith|The Complete Recordings, Volume 1",
+  "artist": "Bessie Smith",
+  "album": "The Complete Recordings, Volume 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 704afa64 的欄位：title「The Complete Recordings, Volume 1」、artist-credit「Bessie Smith」、first-release-date 1991、primary-type Album、secondary-types [Compilation]，轄下 2 個 release（1991 AT／1991 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/704afa64-eff0-3d46-96d0-8cbd48b707ba"
+   },
+   {
+    "f": "該 release-group 的 1991 US release 8e7e884a 欄位：1991、US、status Official、廠牌欄 Columbia／Legacy、編號 C2K 47091（另列 CK 47307／CK 47308）、載體 CD＋CD，兩片各 19 軌、合計 38 軌。第一片自〈Down Hearted Blues〉3:28、〈Gulf Coast Blues〉3:07 起，收〈'Tain't Nobody's Bizness If I Do〉3:29、〈Jail-House Blues〉3:16；第二片收〈Graveyard Dream Blues〉2:46、〈Any Woman's Blues〉3:28、〈Boweavil Blues〉2:54、〈Hateful Blues〉3:08。",
+    "src": "https://musicbrainz.org/release/8e7e884a-27aa-47d0-ad6f-1701f5e9ee6b"
+   },
+   {
+    "f": "英文維基〈Bessie Smith〉記：她生於 1892 年 4 月 15 日、1937 年 9 月 26 日死於美國 61 號公路上的車禍；她為 Columbia 的第一次錄音是 1923 年 2 月 15 日，首張唱片〈Downhearted Blues〉／〈Gulf Coast Blues〉兩面都賣成暢銷。",
+    "src": "https://en.wikipedia.org/wiki/Bessie_Smith"
+   },
+   {
+    "f": "同條目記：她被稱為「Empress of the Blues」（Columbia 宣傳部門起初叫她「Queen of the Blues」，後由全國媒體升格）；她為 Columbia 錄了 160 首，伴奏常是當時第一流的樂手，其中包括 Louis Armstrong、Coleman Hawkins、Fletcher Henderson。",
+    "src": "https://en.wikipedia.org/wiki/Bessie_Smith"
+   },
+   {
+    "f": "同條目記：Columbia 在 1970 年代先發行五套雙 LP，「Those recordings were later reissued on LPs and CDs in the 1990s under The Complete Recordings (Vol. 1-5)」。",
+    "src": "https://en.wikipedia.org/wiki/Bessie_Smith"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 202389419 的欄位：collectionName「The Complete Recordings, Vol. 1」（Vol. 1 不是 Volume 1）、artistName Bessie Smith、releaseDate 1991-04-04、trackCount 38。同一藝人目錄下另有 Vol. 2（202211019、1991-09-09、37 軌）、Vol. 3（201870434、1992-09-22、39 軌）、Vol. 4（202211254、1993-01-01、40 軌）、Vol. 5（650927116、1996-02-06、19 軌）。",
+    "src": "https://music.apple.com/us/album/202389419"
+   }
+  ],
+  "hookCandidates": [
+   "她替 Columbia 錄過一百六十首，這是頭三十八首",
+   "第一張唱片兩面都是暢銷曲"
+  ],
+  "sound": "三十八軌沒有一軌超過三分三十八秒，兩片各十九軌整齊排開——一軌就是一面 78 轉（MB 1991 US 雙 CD 逐軌曲長）。",
+  "keyTracks": [
+   "Down Hearted Blues",
+   "Gulf Coast Blues",
+   "'Tain't Nobody's Bizness If I Do",
+   "Jail-House Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1991 是**整編輯出版年**：MB release-group first-release-date 1991、1991 US release（Columbia／Legacy C2K 47091）同、Apple US 記 1991-04-04，三方一致。**錄音年是 1923–1924**（維基記她 1923 年 2 月 15 日首次為 Columbia 錄音，本輯自那批起算），與出版年相差約 67 年。",
+  "notes": "**⚠ 寫作層鐵則：1991 是整編出版年，1923–1924 是錄音年，不得互寫。**\n**推翻試聽 unavailable 判定**：previews.json 這一筆標 unavailable，tried 是 us／gb／fr／dk／se／de／nl／jp／ca／au 十個店面全部「有候選卻沒配上」（如 us:6→0）。依第 166 條改打 lookup（`https://itunes.apple.com/lookup?id=1007994&entity=album&limit=200&country=us`）**查到本盤存在**：**collectionId 202389419、店面 us、1991-04-04、38 軌**。漏配原因是 Apple 盤名寫「Vol. 1」而卡單寫「Volume 1」。試聽改用 202389419。\n盤名寫法：MB／卡單作「Volume 1」、Apple 作「Vol. 1」，兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱本輯「是這套的入口」「也是 classic blues 女歌手這一支在唱片史上的起點」——序數與地位定位查無來源，未採用；維基只支持「1970 年代五套雙 LP 於 1990 年代以 The Complete Recordings (Vol. 1-5) 重發」這句。"
+ },
+ {
+  "key": "desc2:Ma Rainey|Ma Rainey's Black Bottom",
+  "artist": "Ma Rainey",
+  "album": "Ma Rainey's Black Bottom",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cd87e3c7 的欄位：title「Ma Rainey's Black Bottom」、artist-credit「Ma Rainey」、first-release-date 1990、primary-type Album、secondary-types [Compilation]，轄下只有 1 個 release，status Official。",
+    "src": "https://musicbrainz.org/release-group/cd87e3c7-ffe4-37e5-87bb-414518ff1e99"
+   },
+   {
+    "f": "該 release-group 唯一的 release 88e608c9 欄位：1990、US、status Official、廠牌欄 Yazoo Records、編號 Yazoo 1071、載體 CD、14 軌。逐軌曲名與曲長依序為〈Oh Papa Blues〉2:52、〈Black Eye Blues (take 1)〉3:21、〈\"Ma\" Rainey's Black Bottom〉3:11、〈Booze and Blues〉3:18、〈Blues Oh Blues〉2:55、〈Sleep Talking Blues (take 1)〉3:14、〈Lucky Rock Blues〉3:04、〈Georgia Cake Walk〉3:02、〈Don't Fish in My Sea〉2:54、〈Stack O' Lee Blues〉2:55、〈Shave 'em Dry Blues〉2:40、〈Yonder Come the Blues (take 1)〉3:06、〈Screech Owl Blues〉3:04、〈Farewell Daddy Blues〉3:04。",
+    "src": "https://musicbrainz.org/release/88e608c9-f4bd-47e6-b556-f31a8433bad2"
+   },
+   {
+    "f": "英文維基〈Ma Rainey〉記：生 1886 年 4 月 26 日、卒 1939 年 12 月 22 日；她被稱為「Mother of the Blues」，1923 年與 Paramount 簽約，其後五年又錄了一百多首；1983 年入選 Blues Foundation 名人堂、1990 年入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Ma_Rainey"
+   },
+   {
+    "f": "同條目的錄音表記〈Ma Rainey's Black Bottom〉：1927 年 12 月與 Her Georgia Band 錄製，母模編號 20228，Paramount 發行編號 12590。",
+    "src": "https://en.wikipedia.org/wiki/Ma_Rainey"
+   },
+   {
+    "f": "英文維基〈Ma Rainey's Black Bottom〉記：這是 August Wilson 1982 年的劇作，1984 年在康乃狄克州 Waterford 的 Eugene O'Neill Theater Center 首演，屬於他十部曲的「Pittsburgh Cycle」；2020 年由 George C. Wolfe 執導、Ruben Santiago-Hudson 編劇改編成電影，主演 Viola Davis 與 Chadwick Boseman。",
+    "src": "https://en.wikipedia.org/wiki/Ma_Rainey%27s_Black_Bottom"
+   },
+   {
+    "f": "英文維基〈Yazoo Records〉記：Yazoo 由 Nick Perls 在 1960 年代中期創立，專做早期美國藍調、鄉村、爵士等根源音樂；Perls 蒐集 1920 年代的稀有 78 轉來整編，被點名的樂手包括 Charley Patton、Blind Willie McTell、Memphis Jug Band、Blind Blake 與 Blind Lemon Jefferson；1987 年 Yazoo 被 Shanachie Records 收購。",
+    "src": "https://en.wikipedia.org/wiki/Yazoo_Records"
+   }
+  ],
+  "hookCandidates": [
+   "盤名那首歌後來變成一齣劇、一部電影",
+   "十四軌全部來自 Paramount 的 78 轉"
+  ],
+  "sound": "十四軌全部落在 2:40 到 3:21 之間，最短〈Shave 'em Dry Blues〉2:40、最長〈Black Eye Blues (take 1)〉3:21——整張碟的長度分布就是 78 轉單面的長度分布（MB 1990 Yazoo 原盤逐軌曲長）。",
+  "keyTracks": [
+   "\"Ma\" Rainey's Black Bottom",
+   "Don't Fish in My Sea",
+   "Booze and Blues",
+   "Shave 'em Dry Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1990 是 MB 記的**這個 Yazoo 整編輯出版年**：MB release-group first-release-date 1990、唯一 release（Yazoo 1071、CD）亦記 1990。**錄音年是 1920 年代 Paramount 時期**——維基記她 1923 年與 Paramount 簽約、其後五年錄一百多首，盤名同名曲〈Ma Rainey's Black Bottom〉記 1927 年 12 月（母模 20228／Paramount 12590）。**策展層說「Yazoo 原 LP 為 1970 年代」，本輪回查無來源，不採信，也不改卡片 year。**",
+  "notes": "**⚠ 寫作層鐵則：1990 是 Yazoo 整編輯的出版年，1920 年代（含 1927 年的同名曲）是錄音年，不得互寫。**\n**維持試聽 unavailable，且已用 lookup 覆核**：previews.json 十個店面全記 0→0（連候選都沒有，不是限流）。依第 166 條改打 `https://itunes.apple.com/lookup?id=2861749&entity=album&limit=200&country=<front>`，us／gb／fr／dk／se／de／nl／jp／ca／au **十個店面逐一查過，Apple 都沒有這張 Yazoo 1071**；Ma Rainey 藝人目錄裡有的是《Ma Rainey》（1443551346、24 軌）、《Ma Rainey, Vol. 1 (1923-1924)》等 Document 系列，**沒有一筆對得上本盤的 14 軌曲序**。判定 unavailable 成立。\n**策展層預告的陷阱已實測確認**：搜尋端點命中的「Ma Rainey's Black Bottom」有 Branford Marsalis 的 2020 Netflix 原聲與 TRVLLR 的 remix 單曲（collectionId 1549874259，本輪在 gb／fr／dk／se／de／nl／jp／ca／au 九個店面都會跳出來），**兩者都不是本盤，封面與試聽一律不得採用**。\n**擋下策展層無來源說法**：curatorWhy 稱本輯「是考古廠牌那條線最常被當入口的 Ma Rainey 選輯」、選的是「1924–1928 年 Paramount 時期的代表面」——「最常被當入口」是評價、「1924–1928」這個區間本輪查無來源（維基只支持 1923 年簽約與其後五年、以及同名曲 1927 年 12 月），均未採用。"
+ },
+ {
+  "key": "desc2:Blind Lemon Jefferson|Blind Lemon Jefferson",
+  "artist": "Blind Lemon Jefferson",
+  "album": "Blind Lemon Jefferson",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 46685007 的欄位：title「Blind Lemon Jefferson」、artist-credit「Blind Lemon Jefferson」、first-release-date 1974、primary-type Album、secondary-types [Compilation]，轄下 3 個 release（1974 US／1992 XE／1992 GB），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/46685007-683c-34bf-98c7-7a373117b24c"
+   },
+   {
+    "f": "該 release-group 的 1974 年原盤 release e3ca0198 欄位：1974、US、status Official、廠牌欄 Milestone、編號 M-47022、載體 12\" Vinyl、32 軌（雙 LP）。曲序自〈Jack O'Diamond Blues〉2:43、〈Chock House Blues〉2:37、〈Stocking Feet Blues〉3:04、〈That Black Snake Moan〉2:57 起，末四軌為〈Baker Shop Blues〉3:04、〈Pneumonia Blues〉3:15、〈Long Distance Moan〉3:18、〈That Growling Baby Blues〉2:38。",
+    "src": "https://musicbrainz.org/release/e3ca0198-55fb-4a49-8da0-ed87e1a99bbf"
+   },
+   {
+    "f": "英文維基〈Blind Lemon Jefferson〉記：生 1893 年 9 月 24 日於德州 Coutchman 附近、卒 1929 年 12 月 19 日於芝加哥，死亡證明寫「probably acute myocarditis」；他在 1926 至 1929 年間錄了約一百首，發行 43 張唱片，除一張外全在 Paramount。",
+    "src": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson"
+   },
+   {
+    "f": "同條目記：〈Black Snake Moan〉1927 年發行於 Okeh（他唯一一次 Okeh 錄音）；〈Matchbox Blues〉1927 年為 Okeh 所錄、其後 Paramount 又重錄多個版本；〈See That My Grave Is Kept Clean〉最初 1927 年 10 月以化名「Deacon L.J. Bates」錄製，1928 年 2 月重錄重發。",
+    "src": "https://en.wikipedia.org/wiki/Blind_Lemon_Jefferson"
+   },
+   {
+    "f": "英文維基〈Milestone Records〉記：Milestone 是 1966 年由 Orrin Keepnews 與 Dick Katz 在紐約市創立的美國爵士唱片公司，發過大量歷史錄音的 LP 再發（含 Keepnews 先前 Riverside 廠的品項），藍調專輯多由 Pete Welding 製作；1972 年被 Fantasy Records 買下。",
+    "src": "https://en.wikipedia.org/wiki/Milestone_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1526761400 的欄位：collectionName「Blind Lemon Jefferson」、artistName Blind Lemon Jefferson、releaseDate 1961-03-01、trackCount 25、版權欄寫「℗ 1992 Milestone Records, Distributed by Concord.」；其 25 軌曲序自〈Jack O' Diamonds Blues〉起，逐首落在 MB 那份 Milestone 32 軌曲序之內、順序相同。同一藝人目錄下另有 collectionId 919512042「Blind Lemon Jefferson」、1961-03-01、20 軌、版權欄「℗ 2001 Black Swan Records」，曲序完全不同（首軌〈Rambler Blues〉）。",
+    "src": "https://music.apple.com/us/album/1526761400"
+   }
+  ],
+  "hookCandidates": [
+   "自我同名，卻是死後四十五年才有的盤",
+   "三十二首歌，全部來自四年之內"
+  ],
+  "sound": "雙 LP 三十二軌沒有一軌超過三分十八秒，最短〈Chock House Blues〉2:37、最長〈Long Distance Moan〉3:18（MB 1974 Milestone 原盤逐軌曲長）。",
+  "keyTracks": [
+   "That Black Snake Moan",
+   "Match Box Blues",
+   "Easy Rider Blues",
+   "Hangman's Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1974 是**這個 Milestone 整編輯的出版年**：MB release-group first-release-date 1974、原盤 release（Milestone M-47022、雙 LP）同。**錄音年是 1926–1929**（維基記他 1926–1929 年間錄約一百首、發行 43 張唱片），與出版年相差約 45 年。**Apple 那筆同名條目的 releaseDate 記 1961-03-01**，與 MB 的 1974 差 13 年，但其版權欄寫「℗ 1992 Milestone Records」、曲序是 MB Milestone 曲序的子集，判為同一整編線的數位版；Apple 的 1961 日期不採信、不改卡片 year。",
+  "notes": "**⚠ 寫作層鐵則：1974 是整編出版年，1926–1929 是錄音年，不得互寫。**\n**試聽探測 ready，配對「同線但非同一版」**：previews.json 配到 collectionId 1526761400（appleTitle「Blind Lemon Jefferson」、appleYear 1961、**25 軌**），MB 原盤是 **32 軌**雙 LP。本輪逐張回 lookup（id=914329、country=us）比對：1526761400 的 25 軌是 MB 32 軌曲序的**嚴格子集且順序相同**（少了 Mean Jumper Blues／Balky Mule Blues／Piney Woods Money Mama／Low Down Mojo Blues／Long Lastin' Lovin'／Oil Well Blues／Peach Orchard Mama），版權欄寫「℗ 1992 Milestone Records」——**判定同一 Milestone 整編線的數位縮編版，可用**，但軌數不等於原盤，寫作層不得寫「三十二首都在 Apple 上」。若要換版，同目錄的 919512042（20 軌、℗ 2001 Black Swan）曲序完全不同，**不是本盤，不得採用**。\n**擋下策展層無來源說法**：curatorRisk 稱 Apple 那兩筆「是 Riverside 1961 年的同名盤」——本輪實測 1526761400 的版權欄是 Milestone、919512042 是 Black Swan，**Riverside 這個說法無來源且與實測不符，未採用**。curatorWhy 稱 Jefferson 是「第一位靠唱片賣座的男性鄉村藍調歌手」——序數主張，維基只寫他是 1920 年代最受歡迎、最成功的藍調歌手之一，**「第一位」未採用**。"
+ },
+ {
+  "key": "desc2:Blind Willie McTell|Atlanta Twelve String",
+  "artist": "Blind Willie McTell",
+  "album": "Atlanta Twelve String",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1f7692b9 的欄位：title「Atlanta Twelve String」、artist-credit「Blind Willie McTell」、first-release-date 1972、primary-type Album、secondary-types [Compilation]，轄下 2 個 release（1972 US／1992 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/1f7692b9-351a-3fee-8939-c5f78a5b9735"
+   },
+   {
+    "f": "該 release-group 的 1972 年原盤 release 7642accf 欄位：1972、US、status Official、廠牌欄 Atlantic、編號 SD 7224、載體 12\" Vinyl、15 軌。逐軌曲名與曲長依序為〈Kill It Kid〉2:25、〈The Razor Ball〉2:44、〈Little Delia〉2:53、〈Broke Down Engine Blues〉2:38、〈Dying Crapshooter's Blues〉2:56、〈Pinetop's Boogie Woogie〉2:40、〈Blues Around Midnight〉2:36、〈Last Dime Blues〉2:40、〈On the Cooling Board〉2:58、〈Motherless Children Have a Hard Time〉2:46、〈I Got to Cross the River Jordan〉3:47、〈You Got to Die〉3:01、〈Ain't It Grand to Live a Christian〉2:30、〈Pearly Gates〉3:11、〈Soon This Morning〉2:33。",
+    "src": "https://musicbrainz.org/release/7642accf-115c-45a5-b256-e6ce53516058"
+   },
+   {
+    "f": "英文維基〈Blind Willie McTell〉記：「Ahmet Ertegun visited Atlanta in 1949 in search of blues artists」並安排了與 McTell 的錄音；「Some of the songs were released on 78 rpm discs but sold poorly. The complete session was released in 1972 as Atlanta Twelve-String」。",
+    "src": "https://en.wikipedia.org/wiki/Blind_Willie_McTell"
+   },
+   {
+    "f": "同條目記：McTell 約生於 1903 年、卒於 1959 年 8 月 19 日於喬治亞州 Milledgeville；他偏好十二弦吉他，因為音量較大、適合在戶外演奏；1940 年 John Lomax 與妻子 Ruby Terrill Lomax 在亞特蘭大旅館房間為美國民歌檔案錄了兩小時，圖書館付他十美元。",
+    "src": "https://en.wikipedia.org/wiki/Blind_Willie_McTell"
+   },
+   {
+    "f": "同條目記：他最有名的歌〈Statesboro Blues〉錄於 1928 年，2017 年入選葛萊美名人堂；1956 年亞特蘭大唱片行老闆 Edward Rhodes 在街上發現他賣唱，說服他對著錄音機唱了 13 首，Prestige／Bluesville 於 1961 年以《Last Session》名義追發。",
+    "src": "https://en.wikipedia.org/wiki/Blind_Willie_McTell"
+   },
+   {
+    "f": "英文維基〈Atlantic Records〉記：Atlantic Recording Corporation 由 Ahmet Ertegun 與 Herb Abramson 於 1947 年 10 月創立，1948 年 1 月底發出第一批錄音，1949 年一年錄了 187 首。",
+    "src": "https://en.wikipedia.org/wiki/Atlantic_Records"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 40286578 的欄位：collectionName「Atlanta Twelve String」、artistName Blind Willie McTell、releaseDate 1972-01-01、trackCount 15、notExplicit。15 軌與 MB 1972 年原盤相符。",
+    "src": "https://music.apple.com/us/album/40286578"
+   }
+  ],
+  "hookCandidates": [
+   "一次錄完的十五首，當年只發了兩首",
+   "唱片公司開張第三年跑去亞特蘭大街上找人"
+  ],
+  "sound": "十五軌只有兩軌超過三分鐘（〈I Got to Cross the River Jordan〉3:47、〈Pearly Gates〉3:11），其餘全在 2:25 到 2:58 之間（MB 1972 Atlantic 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Kill It Kid",
+   "Broke Down Engine Blues",
+   "Dying Crapshooter's Blues",
+   "Last Dime Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1972 是**這套錄音首次成套出版的年份**：MB release-group first-release-date 1972、原盤 release（Atlantic SD 7224）同、Apple US 記 1972-01-01，三方一致。**錄音年是 1949**（維基記 Ertegun 1949 年到亞特蘭大安排的那場，「The complete session was released in 1972 as Atlanta Twelve-String」），與出版年相差 23 年。",
+  "notes": "**⚠ 寫作層鐵則：1972 是出版年，1949 是錄音年，不得互寫。**維基那句「The complete session was released in 1972」把兩個年份放在同一句，寫作層引用時務必保持兩者的分工。\n試聽探測 ready 且**配對正確**：collectionId 40286578、店面 us、15 軌對得上 MB 1972 原盤。\n盤名寫法：MB／Apple 作「Atlanta Twelve String」，維基作「Atlanta Twelve-String」（帶連字號），兩種都要進 queryAlias。\n**擋下策展層無來源說法**：curatorWhy 稱這是「McTell 晚年少數幾次進錄音室留下的完整成套錄音」——「晚年」「少數幾次」是時序與稀有度定位，查無來源，未採用。curatorRisk 提到 Curley Weaver 可能在場，本輪在維基查不到這一句（只有搜尋摘要提及「may have been present」），**未寫進 facts**。"
  }
 ]
