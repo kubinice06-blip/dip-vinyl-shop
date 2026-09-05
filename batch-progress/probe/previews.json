@@ -7774,9 +7774,20 @@
    "ca:1→0",
    "de:1→0",
    "fr:12→0",
-   "au:1→0"
+   "au:1→0",
+   "us:research-artistPage→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 433561623,
+  "appleTitle": "The Light of the Sun",
+  "appleArtist": "Jill Scott",
+  "appleYear": "2011",
+  "explicitness": "explicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/9a/4e/08/9a4e08d0-79ff-5cf7-bb82-92a0c740e635/mzaf_6496984874589863587.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 b 覆核、主線複驗**：探測層判 unavailable 是誤判，走第 166 條的藝人頁 lookup 才撈到。us 433561623，15 軌全有 previewUrl。Apple 標 explicit，回查同藝人目錄**無同名同軌數的 cleaned 雙胞胎**。⚠ 發行日三說（MB 06-20／維基 06-21／Apple 06-17），正文避開月日。"
  },
  "Dusty Springfield|A Girl Called Dusty": {
   "batch": "c96",
@@ -7915,9 +7926,20 @@
    "ca:1→0",
    "de:1→0",
    "fr:1→0",
-   "au:1→0"
+   "au:1→0",
+   "us:research-artistPage→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1621357715,
+  "appleTitle": "Small Talk at 125th and Lenox",
+  "appleArtist": "Gil Scott-Heron",
+  "appleYear": "1970",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d3/84/89/d384891b-b22a-866a-d608-0c3a081b9abc/mzaf_1860589866265151782.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 b 覆核、主線複驗**：探測層判 unavailable 是誤判，走藝人頁 lookup 撈到。us 1621357715，14 軌全有 previewUrl。Apple 標 explicit，無 cleaned 雙胞胎。⚠ 策展層說「在夜店當著聽眾錄成」——**Scott-Heron 本人反駁過，說是錄音室加折疊椅**，正文不得寫成現場錄音。⚠ MB 掛名用 U+2010 連字號，與卡片的 ASCII 連字號是同一人。"
  },
  "Gil Scott-Heron|Free Will": {
   "batch": "c96",
@@ -8035,9 +8057,20 @@
    "ca:11→0",
    "de:12→0",
    "fr:12→0",
-   "au:12→0"
+   "au:12→0",
+   "us:research-artistPage→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1443650840,
+  "appleTitle": "Come Get These Memories",
+  "appleArtist": "Martha Reeves & The Vandellas",
+  "appleYear": "1963",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dd/69/04/dd690430-16f7-087a-59bc-a86165343fa6/mzaf_5950419238454736194.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 b 覆核、主線複驗**：探測層判 unavailable 是誤判，成因是**盤名少一個 and**——Apple 條目作《Come Get These Memories》。us 1443650840，12 軌全有 previewUrl。⚠ MB 的 artist-credit 是「Martha and the Vandellas」（無 Reeves），與卡片掛名是同一組人的不同寫法，**不得拆成兩個獨立的人**。"
  },
  "Martha Reeves & the Vandellas|Ridin' High": {
   "batch": "c96",
