@@ -49,12 +49,29 @@ for (const c of cards) {
   // 於是每一張都先被扣 6 分。這是第 99／126 條要防的那件事第三次發生
   // （前兩次：c-66 的《Guide》EP／Album 雙胞胎、c-69 的 Collie Ryan 三合一套裝），
   // 前兩次都是加防線去救，這次改成**直接聽策展層的話**：他已經指名不要哪一個了。
+  // 「刻意不釘」的偵測。第一版只往**後**看（MBID 之後 200 字內有沒有「不釘」），
+  // 2026-09-05 的 c-91 閃靈《武德》證明那不夠：策展層寫的是
+  //   「**刻意不釘**：ea81389b…《暮沉武德殿》（2013 單曲）與 c446922d…《武德殿不插電演唱會實況》（2015 Live）」
+  // ——標記在**前面**，是一個標題帶兩個 MBID 的清單。兩個 MBID 往後看都看不到「不釘」，
+  // 於是兩筆都沒被排除，其中 Live 那筆還把正確的釘位換掉了。
+  // 現在兩個方向都看：一旦出現「不釘」，其後的 MBID 全部進 noPin，直到出現正面的「釘」宣告
+  // 才解除；原本的往後看保留當第二道網。
   const noPin = new Set();
-  for (const m of String(c.mbNote || '').matchAll(MBID)) {
-    // 取這個 MBID 之後、到下一個 MBID 之前（最多 200 字）的那段話，看有沒有「不釘」
-    const tail = String(c.mbNote).slice(m.index + m[0].length, m.index + m[0].length + 200)
-      .split(MBID)[0];
-    if (/不釘/.test(tail)) noPin.add(m[0]);
+  {
+    const note = String(c.mbNote || '');
+    const marks = [];
+    for (const m of note.matchAll(MBID)) marks.push({ kind: 'id', at: m.index, id: m[0], len: m[0].length });
+    for (const m of note.matchAll(/不釘/g)) marks.push({ kind: 'off', at: m.index });
+    // 「釘 release-group xxx」「釘住」這種正面宣告會關掉不釘區；「刻意不釘」不算正面
+    for (const m of note.matchAll(/(?<!不)釘(?=\s*release-group|\s*\*{0,2}[0-9a-f]{8}|住)/g)) marks.push({ kind: 'on', at: m.index });
+    marks.sort((a, b) => a.at - b.at);
+    let off = false;
+    for (const mk of marks) {
+      if (mk.kind === 'off') { off = true; continue; }
+      if (mk.kind === 'on') { off = false; continue; }
+      const tail = note.slice(mk.at + mk.len, mk.at + mk.len + 200).split(MBID)[0];
+      if (off || /不釘/.test(tail)) noPin.add(mk.id);
+    }
   }
   if (noPin.size) found = found.filter(x => !noPin.has(x.id));
   const wantComp = c.releaseType === 'Compilation';
@@ -88,6 +105,21 @@ for (const c of cards) {
     continue;
   }
   let rg = found.length && score(found[0]) > 0 ? found[0] : null;
+  // (3) 2026-09-05：不得把「正規盤」換成「Live／Compilation 版」。
+  // 閃靈《武德》的卡片盤名被策展層依正名裁定去掉了台羅副標，正確的 RG 標題是「Bú-Tik」——
+  // 與「武德」零重疊、標題分 0；而 2015 年的《武德殿不插電演唱會實況》**包含**「武德」、
+  // 標題分 4，於是 12 分贏過 10 分把正確釘位換掉。**盤名被縮短過的卡，子字串比對是反的**：
+  // 越短的卡片盤名越容易被更長的別碟包住。型別是比標題更硬的訊號，這裡拿它當否決權。
+  const secOf = x => new Set(x.sec || []);
+  if (rg && c.rgMbid && rg.id !== c.rgMbid) {
+    const cur = found.find(x => x.id === c.rgMbid);
+    const gainedLive = secOf(rg).has('Live') && !(cur && secOf(cur).has('Live'));
+    const gainedComp = secOf(rg).has('Compilation') && !(cur && secOf(cur).has('Compilation'));
+    if (gainedLive || gainedComp) {
+      report.push(`✗ ${c.artist}《${c.album}》候選 ${rg.id.slice(0, 8)}…「${rg.title}」是 ${gainedLive ? 'Live' : 'Compilation'} 版，不替換既有的正規盤`);
+      rg = null;
+    }
+  }
   if (rg && c.rgMbid && rg.id !== c.rgMbid && titleScore(rg) === 0) {
     report.push(`✗ ${c.artist}《${c.album}》候選 ${rg.id.slice(0, 8)}…「${rg.title}」標題對不上盤名，不替換既有值`);
     rg = null;
