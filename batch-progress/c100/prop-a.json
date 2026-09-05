@@ -283,5 +283,480 @@
   "risk": "年份取 first-release-date 1991（Sony 這次 CD 整編），錄音年是 1950 年代中期的哥倫比亞錄音，落差約三十五年。CAA release-group 端點實測 200。⚠ Apple 七個店面用三組字串（Budapest String Quartet Mozart Haydn Quartets／Budapest String Quartet Mozart K 387 K 421／Budapest Quartet Mozart Haydn Quartets Columbia）搜尋皆未命中；回傳的是 Quatuor Modigliani、Chiaroscuro Quartet、Mozarteum Quartet Salzburg 等現代團體，一律不得採用。預估 previewStatus=unavailable，封面走 CAA。掛名寫法查過 Budapest String Quartet／Budapest Quartet／Budapester Streichquartett 三種（MB 藝人條目的 disambiguation 明寫「before 1967; do not use for Budapest Strings」，另有 Budapest Haydn Quartet 是不同團體，不得混）。盤名「Haydn Quartets」指的是莫札特題獻給海頓的六首，不是海頓的作品——這個歧義在字串比對與行文上都要防，卡片已加「Mozart:」前綴。",
   "mbNote": "釘 release-group 2acfd6f6-08f3-45b6-adaf-fb8c52a81770。回問確認：title「“Haydn” Quartets」（MB 標題用彎引號包住 Haydn）、artist-credit「Mozart; Budapest String Quartet」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（XE 1991、Sony Classical SM2K 47 219、status Official）。卡片盤名去掉彎引號並補上作曲家前綴，依第 91 條 RG 標題與卡片盤名不必相等；MB 原標題已記於此。藝人 MBID cc8dc329-4c70-4b5e-ad79-97f6e7c0a0cb。刻意不釘：a43c8fdb《The Complete String Quartets of Ludwig van Beethoven: Quartet no. 9 / no. 11》與 5cedf780《The Complete String Quartets》與 18816c0f《String Quartets op. 127, op. 131, op.132, op. 135》（三筆都與池中既有的《Beethoven: Late String Quartets》重疊）、fecf327e／bc107c57《The Last Quartets of Mozart, Volume I／II》（同曲目的分卷版本，CAA 皆 404）、7b8b8aba《String Quartets op. 59 no. 1 & 2 “Razumovsky”》（CAA 404）。",
   "queryAlias": "Budapest Quartet; Budapester Streichquartett; Mozart Haydn Quartets K 387 421 428 458 464 465"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Budapest String Quartet",
+  "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+  "year": 1953,
+  "label": "Columbia（catno ML 4668）",
+  "why": "布達佩斯四重奏 1950 年代初為哥倫比亞錄的拉威爾與德布西弦樂四重奏，兩首法國四重奏正典收在同一張 LP 上。這一組合後來成為唱片業的固定配對，幾乎每個弦樂四重奏都照這個曲序出過一張；布達佩斯這張是把它固定下來的早期範本之一。池中實掃：Budapest String Quartet 1 張（貝多芬晚期四重奏 1962）；池中的德布西／拉威爾四重奏 0 張，法國室內樂正典在這一塊是空的。",
+  "risk": "年份取 first-release-date 1953（Columbia ML 4668 原盤年），與錄音年同期，是本批少數年份與錄音年幾乎一致的卡。CAA release-group 端點實測 200。⚠ Apple 七個店面用兩組字串搜尋皆未命中本盤；回傳的 Ysaÿe Quartet（1452503412）、Belcea Quartet（691851743）、Hagen Quartett（1452228097）、Melos Quartett（1452141164）全是別團的同曲目碟，一律不得採用。預估 previewStatus=unavailable，封面走 CAA。⚠ 曲目撞卡風險：本批同時收 Quartetto Italiano 的德布西／拉威爾四重奏（Philips 1966），兩張是同曲不同團、盤名字串也不同（本卡把拉威爾排在前、義大利四重奏那張把德布西排在前），去重不會誤判，但行文要能分辨。掛名三種寫法（Budapest String Quartet／Budapest Quartet／Budapester Streichquartett）都掃過。",
+  "mbNote": "釘 release-group 66e33a3f-c0ff-4548-9782-d74df194e0f1。回問確認：title「Ravel: Quartet in F major / Debussy: Quartet in G minor, op. 10」、artist-credit「Ravel, Debussy; Budapest String Quartet」、first-release-date 1953、primary-type Album、secondary-types 空、轄下 1 個 release（US 1953、Columbia ML 4668、status Official）。刻意不釘：976bc4b0《Ravel: Quartet in F major / Debussy: Quartet in G minor, op. 10》（1958，MB 上同名同曲目的第二個 release-group，是 1958 年的立體聲重錄或重發，兩筆構成同名雙胞胎，本批只釘 1953 那一筆，依第 126／153 條寫明）、7ca93f19《Debussy: String Quartet / Ravel: String Quartet》（Quartetto Italiano 的同曲目碟，本批另收，不同團）。",
+  "queryAlias": "Budapest Quartet; Budapester Streichquartett; Ravel String Quartet in F; Debussy String Quartet op. 10"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Busch Quartet",
+  "album": "Schubert: Death and the Maiden / String Quartet D 887",
+  "year": 1988,
+  "label": "EMI References（catno CDH 7 69795 2）",
+  "why": "布許四重奏 1936–1938 年為 HMV 錄的舒伯特第十四號《死與少女》與第十五號 D 887，EMI 1988 年以 References 歷史系列復刻。Adolf Busch 帶領的這個團在 1930 年代因反對納粹而離開德國，先遷瑞士再赴美國，這批舒伯特是他們流亡前後留下的核心錄音；D 887 在當時幾乎沒有其他商業錄音。池中實掃 14,424 列：Busch Quartet 只有 1 張（《Beethoven: Late Quartets (1930s)》1941），舒伯特那一塊沒有；池中的《死與少女》目前 0 張（Amadeus Quartet 與 Alban Berg Quartett 的同曲版本都不在池中）。MB 藝人 297357f4 名下只有 15 個 release-group，是本批目錄最小的一位。",
+  "risk": "年份取 first-release-date 1988（EMI References CDH 7 69795 2），錄音年 1936–1938，落差五十年。CAA release-group 端點實測 200。Apple gb 有四筆同團同曲目的條目：691296321「Great Recordings of the Century - Schubert: String Quartet in D Minor Death and the Maiden, String Quartet in G Major」（2006）、688474672「Schubert: String Quartets Nos. 14 Death and the Maiden & 15」（1988，日期與本盤一致，最可能就是本盤）、897365988「Schubert: String Quartets」（2014）、973124539「Schubert: Der Tod Und Das Mädchen, D.810 - String Quartet, D. 887」（2008），四筆是同一份母帶的不同再發，上架時鎖定 688474672 並記下 collectionId。⚠ 其中「Great Recordings of the Century」是 EMI 的正式系列名，不是第 65 條那種冒名廠牌，但仍要在版本核對時分清是哪一次再發。店面序 UKB，gb 即命中。掛名寫法查過 Busch Quartet／Busch Quartett（MB 的 artist-credit 用德文 Quartett 拼法）／Busch String Quartet 三種，池中用 Busch Quartet，沿用。盤名德文《Der Tod und das Mädchen》也要進去重掃描。",
+  "mbNote": "釘 release-group a92d3e1a-e518-44ed-8681-c0446a005819。回問確認：title「String Quartet in D minor \"Death and the Maiden\", D. 810 / String Quartet in G major, D. 887」、artist-credit「Schubert; Busch Quartett」（德文拼法）、first-release-date 1988、primary-type Album、secondary-types 空、轄下 1 個 release（country 空、1988、EMI CDH 7 69795 2、status Official）。藝人 MBID 297357f4-ed95-4eb0-a280-6d52a3b3f82c，名下 15 個 release-group（分頁全列）。刻意不釘：46faf9fb《The Busch Quartet Play Beethoven Volume 1》與 5d2d54d5《Volume 2》與 4b9b2f01《Beethoven: The Late String Quartets (vol.2)》與 9a3603b8《The Late String Quartets (vol.3)》與 e5f46a3b《The Late String Quartets》（五筆都與池中既有的《Beethoven: Late Quartets (1930s)》重疊，且是分卷）、8fff5321《The Complete Warner Recordings》（廠牌大盒）。",
+  "queryAlias": "Busch Quartett; Busch String Quartet; Der Tod und das Mädchen; Schubert String Quartet D 887"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Quartetto Italiano",
+  "album": "Debussy: String Quartet / Ravel: String Quartet",
+  "year": 1966,
+  "label": "Philips（catno SAL3643 英國盤／LY 835 361 美國盤；1987 CD 420 894-2）",
+  "why": "義大利四重奏 1965 年為 Philips 錄的德布西與拉威爾弦樂四重奏。這個團 1945 年在雷焦艾米利亞成立，特色是全部曲目背譜演出；他們的 Philips 目錄從 1950 年代一路錄到 1970 年代末，是類比時期最完整的四重奏錄音計畫之一。池中實掃 14,424 列：Quartetto Italiano 單獨掛名只有 1 張（《Beethoven: Complete String Quartets》1975），另有一張與 Pollini 合掛的《Brahms: Piano Quintet》(1979)；法國曲目在他們的池中紀錄裡是空的。這張的 MB release-group 轄下有 7 個 release、橫跨英美歐澳，是本批流通最廣的一筆。",
+  "risk": "年份取 first-release-date 1966（Philips SAL3643／LY 835 361 原盤年），與錄音年同期。CAA release-group 端點實測 200。Apple gb 命中 1452197164「Quartetto Italiano — Debussy & Ravel: String Quartets」（2000），是 Philips／Decca 的數位再發，曲目相符；同一批搜尋結果裡的 Melos Quartett、Hagen Quartett、Ysaÿe Quartet、Belcea Quartet 全是別團，不得誤配。店面序 UKB，gb 即命中。⚠ 曲目撞卡風險：本批同時收 Budapest String Quartet 1953 年的同兩首曲目，兩張同曲不同團，盤名的曲序也相反，去重不會誤判但行文要分辨。MB 該 release-group 轄下 7 個 release 有一筆 country 為空、其餘為 GB／US／XE／XW／AU，status 全數 Official。",
+  "mbNote": "釘 release-group 7ca93f19-ae80-3782-94e3-822d18d960c8。回問確認：title「Debussy: String Quartet in G minor, op. 10 / Ravel: String Quartet in F major」、artist-credit「Debussy, Ravel; Quartetto Italiano」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 7 個 release（GB 1966 Philips SAL3643／US 1966 Philips LY 835 361／XE 1987 Philips 420 894-2／GB 1998 同編號／AU 2000 Philips 464 360-2／XW 2000-12 Philips Classics 464 699-2／2002-01-28 Philips Classics 420 894-2），status 全數 Official。藝人 MBID a6f6b23b-9b21-440a-b1df-72462daabbe1，名下 50 個 release-group（分頁全列）；另有 Nuovo Quartetto Italiano（8027cc15）與 Quartetto Italiano di Tromboni（93ff8f23）兩個同名近似實體，皆非本團。刻意不釘：012e7d69《Sämtliche Streichquartette》與 c0e8f1a1《Complete String Quartets》與 2cf628cb《The Middle Quartets》與 d6543510《The Late String Quartets》（四筆都與池中既有的《Beethoven: Complete String Quartets》重疊）、c03b439d《Klavierquintett op. 34》（與池中既有的 Pollini & Quartetto Italiano《Brahms: Piano Quintet》是同一份錄音）、25291e0a《Complete Decca, Philips & DG Recordings》（廠牌大盒）。",
+  "queryAlias": "Quartetto Italiano Debussy Ravel String Quartets; Italian String Quartet; Philips 420 894-2"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Quartetto Italiano",
+  "album": "Schubert: String Quartet op. 161 D 887",
+  "year": 1978,
+  "label": "Philips（catno 9500 409）",
+  "why": "義大利四重奏 1977 年錄的舒伯特第十五號弦樂四重奏 D 887，是他們 Philips 目錄末期的錄音之一，也是這首長篇四重奏在類比時代的主要版本之一。D 887 是舒伯特最後一首弦樂四重奏，長度接近五十分鐘，在二十世紀中期之前一直被當成難以成立的作品，1970 年代才逐步回到常備曲目。池中實掃：Quartetto Italiano 單獨掛名 1 張（貝多芬全集 1975），舒伯特 0 張；池中的舒伯特室內樂目前是 Amadeus Quartet《Schubert: String Quintet》(1987) 與 Alban Berg Quartett 那條線，四重奏本體沒有。",
+  "risk": "年份取 first-release-date 1978（Philips 9500 409 原盤年），錄音年 1977。CAA release-group 端點實測 200。⚠ Apple 七個店面用三組字串（Quartetto Italiano Schubert String Quartet D 887／Quartetto Italiano Schubert Quartet G major／Quartetto Italiano Schubert String Quartets）搜尋皆未命中本盤；回傳的 Melos Quartett（1607773804）、Belcea Quartet（735029460）、Alban Berg Quartett（693062507）、Hagen Quartett（1452624085）全是別團，一律不得採用。預估 previewStatus=unavailable，封面走 CAA。⚠ 曲目撞卡：本批同時收 Busch Quartet 的 D 887（與《死與少女》同碟），兩張同曲不同團，盤名字串不同。盤名的作品編號有兩種寫法（op. 161 與 D 887），MB 標題把兩個都寫進去，卡片沿用；另一種常見寫法是「String Quartet no. 15 in G major」，已進 queryAlias。",
+  "mbNote": "釘 release-group bd835f1f-feb3-4204-8145-240cd729be87。回問確認：title「String Quartet op. 161, D887」、artist-credit「Franz Schubert; Quartetto Italiano」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（NL 1978、Philips 9500 409、status Official）。卡片盤名補上作曲家前綴並在 D887 前加空格，依第 91 條 RG 標題與卡片盤名不必相等。刻意不釘：d0dd4ad6《\"Der Tod und das Mädchen\"; Quartettsatz》（CAA 404）、a49b0d17《String Quartets “Rosamunde” / “Death and the Maiden”》（Compilation）、35a92192《String Quartet No. 14 \"Death and the Maiden\" / Piano Quintet \"The Trout\"》（Compilation，且鋼琴五重奏那一半會撞到池中既有的 Pollini 合掛卡以外的曲目）、6dcafb7d《The Last Four Quartets》（分卷型選輯）。",
+  "queryAlias": "Quartetto Italiano Schubert D 887; String Quartet no. 15 in G major; Schubert op. 161; Philips 9500 409"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Grumiaux Trio",
+  "album": "Beethoven: Serenades op. 8 & op. 25",
+  "year": 1968,
+  "label": "Ex Libris（catno PH 6858 603 瑞士盤）／Philips（1990 CD 426 090-2）",
+  "why": "Grumiaux Trio 與長笛家 Maxence Larrieu 1967 年錄的貝多芬 D 大調小夜曲 op. 8（弦樂三重奏）與 D 大調小夜曲 op. 25（長笛、小提琴與中提琴）。這個三重奏 1966 年由 Arthur Grumiaux、Georges Janzer 與 Eva Czako 組成，Philips 為他們開了莫札特與貝多芬的室內樂錄音案。池中實掃 14,424 列：Grumiaux Trio 只有 1 張（《Mozart: Complete String Quintets》1973），貝多芬那一塊沒有；Arthur Grumiaux 個人另有 3 張（Bach 無伴奏、Bach 協奏曲、Mozart 協奏曲），全部是巴洛克與古典協奏曲，室內樂只有那張莫札特五重奏。MB 藝人 7d2e4a82 名下只有 11 個 release-group，是本批最小的目錄。",
+  "risk": "年份取 first-release-date 1968（Ex Libris PH 6858 603 瑞士原盤）。CAA release-group 端點實測 200。Apple gb 命中 1733692673「Grumiaux Trio & Maxence Larrieu — Beethoven: Serenades, Op. 8 & 25」（releaseDate 記 1968），掛名與曲目完全相符，是本批命中最乾淨的一筆；同一批結果的 1452852992「Grumiaux Trio — Beethoven: The Complete String Trios」（1968）是另一套（三首 op. 9 加 op. 3），曲目不同，不得混用。店面序 UKB，gb 即命中。掛名寫法查過 Grumiaux Trio／Trio Grumiaux／Arthur Grumiaux Trio 三種，池中用 Grumiaux Trio，沿用；長笛家 Maxence Larrieu 在 MB 的 artist-credit 裡與三重奏並列，卡片只取團名（Apple 那筆則把兩者都列出，查詢時要能對上）。",
+  "mbNote": "釘 release-group 6a893d87-154d-49f4-8abb-2b4bdb686878。回問確認：title「Serenades Op. 8 • Op. 25」、artist-credit「Beethoven; Grumiaux Trio, Maxence Larrieu」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release（CH 1968 Ex Libris PH 6858 603／XE 1990 Philips 426 090-2），status 全數 Official。卡片盤名把 MB 的中點分隔改成「&」並補作曲家前綴。藝人 MBID 7d2e4a82-5c6a-4a10-9597-e1387adb2187，名下 11 個 release-group（分頁全列）。刻意不釘：faf25cfa《The String Quintets》與 07f23c2c《Complete String Quintets》（兩筆都與池中既有的《Mozart: Complete String Quintets》重疊）、97c8eceb《Complete String Trios & Duos》（Compilation，且與本盤 op. 8 部分重疊）、8924085b／d629f2e5《Divertimento KV 563》（同曲兩筆建檔，年份皆空）。",
+  "queryAlias": "Trio Grumiaux; Arthur Grumiaux Trio; Maxence Larrieu; Beethoven Serenade Op. 8 Op. 25"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Dietrich Fischer-Dieskau",
+  "album": "Schubert: Lieder Volume 1",
+  "year": 1970,
+  "label": "Deutsche Grammophon（catno 643 547/58）",
+  "why": "Fischer-Dieskau 與 Gerald Moore 在 DG 錄的舒伯特藝術歌曲全集第一輯。這套錄音案 1966 年開始、1972 年完成，把舒伯特為男聲寫的歌曲幾乎全部錄過一遍，是唱片史上規模最大的單一作曲家歌曲工程；Gerald Moore 錄完這套之後就宣布退休。池中實掃 14,424 列：Dietrich Fischer-Dieskau 單獨掛名 3 張（《Schubert: Winterreise》1985、《Schubert: Die schöne Müllerin》1962、《Mahler: Kindertotenlieder》1964），另有一張與 Gerald Moore 合掛的《Schubert: Schwanengesang》(1972)。池中收的都是三大聯篇歌集，這套涵蓋聯篇以外的單首歌曲，是他目錄裡分量最重卻沒被收進來的一塊。MB 藝人 1bdc5968 名下 332 個 release-group，是本批最大的目錄（browse 預設 25 筆完全不夠，一律分頁全列）。",
+  "risk": "年份取 first-release-date 1970（DG 643 547/58 原盤年）。CAA release-group 端點實測 200。⚠ Apple 上「Schubert: Lieder」這個標題被多套不同錄音共用：gb 1452518907「Dietrich Fischer-Dieskau & Gerald Moore — Schubert: Lieder」（1990）與 1452169131 同名（2003）與 1452162673「Schubert: Lieder (Vol. 3)」（1972）都是同一套 DG 工程的不同卷或不同再發，257200191 是與 Hartmut Höll 的另一套、1452324589 是與 Alfred Brendel 的另一套——鋼琴伴奏不同就是不同錄音，上架時必須先確認伴奏是 Gerald Moore 再鎖 collectionId。店面序 UKB，gb 即命中。掛名拼法：MB 的藝人實體名用的是 U+2010 連字號「Dietrich Fischer‐Dieskau」，池中與本卡用 ASCII 連字號「Dietrich Fischer-Dieskau」，兩種寫法在字串比對下不相等，去重時要同時掃（第 49 條同型問題）。",
+  "mbNote": "釘 release-group f5a517ee-85b6-46b9-8242-2a0b34ab2906。回問確認：title「Lieder Volume 1」、artist-credit「Franz Schubert; Dietrich Fischer‐Dieskau, Gerald Moore」（MB 用 U+2010 連字號）、first-release-date 1970、primary-type Album、secondary-types 空、轄下 1 個 release（DE 1970、Deutsche Grammophon 643 547/58、status Official）。卡片盤名補上作曲家前綴，依第 91 條。藝人 MBID 1bdc5968-3ca3-497f-b0c1-6de471b26b00，名下 332 個 release-group（用 release-group?artist=&limit=100&offset= 分頁四次全列，第 116 條）。刻意不釘：8105a9d1《Lieder, Volume 1》（1974，同名不同筆，是另一次分卷編號）、60cf5f2b／ca4502d5／f5b38364《Winterreise》三筆與 5effb631《Dichterliebe • Liederkreis Op. 24》（前三筆與池中既有的《Schubert: Winterreise》重疊，後一筆 CAA 404）、949f76e7《Kindertotenlieder / 4 Rückert-Lieder》（與池中既有的《Mahler: Kindertotenlieder》撞卡）。",
+  "queryAlias": "Fischer-Dieskau Schubert Lieder Gerald Moore; Dietrich Fischer‐Dieskau; Schubert Lieder Volume 1 DG"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau",
+  "album": "Mahler: Des Knaben Wunderhorn",
+  "year": 1968,
+  "label": "His Master’s Voice（catno SAN 218 英國盤／1C 065-00 098 德國盤）／Angel Records（S-36547 美國盤）",
+  "why": "Schwarzkopf 與 Fischer-Dieskau 1968 年與 George Szell 指揮的倫敦交響錄下的馬勒《少年魔號》。這套歌曲集原本就寫給男女聲交替演唱，這份錄音是把它當成兩位歌者對唱的作品來處理的範本，也是 Szell 生前最後幾年在歐洲留下的錄音之一。實掃 seed_cards.json 全 14,424 列：Elisabeth Schwarzkopf 池中 2 張（《Wolf: Lieder》1967、《R. Strauss: Vier letzte Lieder (Szell)》1966），Dietrich Fischer-Dieskau 3 張加一張合掛，兩人同台的碟 0 張；池中的馬勒歌曲只有 Fischer-Dieskau 那張《Kindertotenlieder》(1964)，《少年魔號》0 張。這張的 MB release-group 轄下有 9 個 release、橫跨 GB／DE／US／XE，是本批流通最廣的一筆。",
+  "risk": "掛名取「Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau」，兩位在池中各有單獨卡，合掛卡是池中既有形態（Glenn Gould & Leonard Bernstein、David Oistrakh & Lev Oborin 等）。⚠ 池中已有 Schwarzkopf《R. Strauss: Vier letzte Lieder (Szell)》(1966)——同一位指揮、相近年份、不同曲目，行文與去重都要能分辨。年份取 first-release-date 1968，與錄音年同期。CAA release-group 端點實測 200。Apple gb 命中 1344023405「Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, London Symphony Orchestra & George Szell — Mahler: Des Knaben Wunderhorn」（releaseDate 1968），掛名與曲目完全相符；另有 662979718「Mahler: Lieder aus Des Knaben Wunderhorn」（2013）是同一份錄音的另一次再發，標題多了「Lieder aus」。店面序 UKB，gb 即命中。連字號問題同前卡：MB 用 U+2010，池中與本卡用 ASCII。",
+  "mbNote": "釘 release-group 5135d046-d71b-313b-9ff5-e3302577ba11。回問確認：title「Des Knaben Wunderhorn」、artist-credit「Mahler; London Symphony Orchestra, George Szell, Elisabeth Schwarzkopf, Dietrich Fischer‐Dieskau」（作曲家＋樂團＋指揮＋兩位歌者，卡片取兩位歌者）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 9 個 release（GB 1968 HMV SAN 218／DE 1968 HMV 1C 065-00 098／US 1968 Angel S-36547／GB 1983 HMV ASD 1000981／GB 1988 EMI Classics CDC 7 47277 2／XE 2000-02-07 EMI CDM 5 67236 2／XE 2000 EMI 7243 5 67236 2 7／US 2000-03-14 EMI 5 67256 2／XE 2018 Warner Classics 0190295739843），status 全數 Official。刻意不釘：b7ddec8a《Spanisches Liederbuch》（1967，同樣是 Schwarzkopf ＋ Fischer-Dieskau ＋ Gerald Moore 的 Wolf 歌曲集，但池中已有 Schwarzkopf《Wolf: Lieder》1967，有同碟疑慮，本批迴避）、30983c76《Brahms: Symphony no. 2 / Schicksalslied / Mahler: Kindertotenlieder》（Compilation，且會撞池中既有的 Kindertotenlieder）。",
+  "queryAlias": "Schwarzkopf Fischer-Dieskau Des Knaben Wunderhorn; Mahler Lieder aus Des Knaben Wunderhorn; George Szell London Symphony"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Marian Anderson",
+  "album": "The Lady From Philadelphia",
+  "year": 1995,
+  "label": "Pearl（catno GEMM CD 9069）",
+  "why": "1957 年 CBS 新聞節目《See It Now》拍了 Marian Anderson 的亞洲巡演紀錄片《The Lady from Philadelphia》，由 Edward R. Murrow 主持；這張唱片是同名節目的錄音出版，收她在巡演途中與返美後的演唱。Anderson 1939 年被憲政女兒會拒絕在憲法廳演出、改在林肯紀念堂前對七萬五千人開唱，是美國民權史的標誌事件；1955 年她成為第一位在大都會歌劇院登台的非裔獨唱者。池中實掃 14,424 列：Marian Anderson 只有 1 張（《Spirituals》1956），她的藝術歌曲與歌劇曲目、以及與民權史直接相關的這一面在池中都沒有。MB 藝人 845ed4e4 名下只有 19 個 release-group，且另有一位同名的 punk 歌手（abb6ae12）與一個 Marian Anderson String Quartet（4c28440e），查詢時要排除。",
+  "risk": "年份取 first-release-date 1995（Pearl GEMM CD 9069），節目與錄音年是 1957，落差三十八年。CAA release-group 端點實測 200。Apple gb 命中 1580339727「Marian Anderson & Edward R. Murrow — Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\") [2021 Remastered Version]」（releaseDate 記 1957），掛名把主持人 Murrow 一起列出，是同一份節目錄音的 2021 修復版；另一筆 1580541242「Marian Anderson Performing Songs and Mélodies」是不同曲目的整編。⚠ 該條目包含 Murrow 的旁白，屬語音內容，上架前要確認曲目結構是否為可用的音樂試聽。店面序 UKB，gb 即命中。⚠ 掛名同名風險高：MB 上「Marian Anderson」有三個實體（古典女低音、punk 歌手、弦樂四重奏），池中亦另有 Laurie Anderson、Anderson .Paak、Pink Anderson 四組 Anderson，字串比對務必連盤名一起比。",
+  "mbNote": "釘 release-group 3ae00da4-0a2d-4503-91a4-aea3b90065f5。回問確認：title「The Lady From Philadelphia」、artist-credit「Marian Anderson」（單一演奏者）、first-release-date 1995-02-03、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1995-02-03、Pearl GEMM CD 9069、status Official）。藝人 MBID 845ed4e4-a7c2-4065-ad8a-65303fdf8af4，名下 19 個 release-group（分頁全列）。刻意不釘：4731421d《Spirituals》與 76829b2e《He’s Got the Whole World in His Hands: Spirituals》與 b64079c1《Marian Anderson Performing \"Jus’ Keep on Singin’\" & 11 More Spirituals》（三筆都與池中既有的《Spirituals》(1956) 有同碟疑慮）、60ab623f《Softly Awakes My Heart》與 bac78a60《Ev’ry Time I Feel the Spirit》（Compilation 型整編）、56737562《Snoopycat》（她替貓寫的兒童唱片，非本場景）。",
+  "queryAlias": "Marian Anderson Lady from Philadelphia; See It Now Edward R. Murrow; Pearl GEMM CD 9069"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Enrico Caruso",
+  "album": "The Caruso Edition, Volume I: 1902-1908",
+  "year": 1990,
+  "label": "Pearl（catno GEMM CD 9424／9425／9426，系列編號 EVC I）",
+  "why": "Caruso 1902–1908 年的錄音全集第一卷，Pearl 以三片一套發行。Caruso 是第一位靠留聲機成為國際名人的歌手：1902 年他在米蘭一間旅館房間錄下十首曲子，那批唱片證明了歌唱錄音可以賣錢，直接促成留聲機工業把歌劇當成主力商品。本卷涵蓋的正是那批米蘭錄音到他 1903 年赴大都會歌劇院之後的頭幾年。池中實掃 14,424 列：Enrico Caruso 只有 1 張（《The Complete Recordings》1920），那張以他的卒年前後為年份、指的是總集概念；分期的權威整編在池中沒有。MB 藝人 e4d389bb 名下 90 個 release-group（分頁全列），其中絕大多數帶 secondary-type Compilation，是本批型別分佈最極端的一位。",
+  "risk": "MB 的 secondary-types 含 Compilation、primary-type 是 Album，依 §5.6 明文照一般 Album 寫法，releaseType 填 Album、不填例外欄位。年份取 first-release-date 1990（Pearl 整編年），錄音年 1902–1908，落差八十餘年——這是本批落差最大的一張，行文一律以錄音年代為主。CAA release-group 端點實測 200。⚠ Apple 七個店面搜「Caruso Edition Volume I 1902 1908」未命中本套；回傳的 192425663「Enrico Caruso: Complete Recordings, Vol. 3 (Historical Recordings 1906-1908)」、192427097「Vol. 5 (1908-1910)」、192426550「Vol. 4 (1908-1910)」都是 Naxos Historical 的另一套分卷，年代區間切法與 Pearl 不同，不得當本盤來源；382423973 是別的選輯。預估 previewStatus=unavailable，封面走 CAA。盤名的年份區間用 ASCII 連字號（1902-1908），MB 原標題用的是 en dash（1902–1908），兩種寫法在字串比對下不相等，去重時都要掃。Pearl 這一筆 MB 標 Official（第 43／57／65／78 條逐筆判定，本次乾淨；Caruso 的錄音早已進入公版，市面上未授權的廉價包裝極多，不得把任何 Caruso 再發預設為背書）。",
+  "mbNote": "釘 release-group 269ccdeb-3e44-3782-b764-538a72e55e8c。回問確認：title「The Caruso Edition, Volume I: 1902–1908」（en dash）、artist-credit「Enrico Caruso」、first-release-date 1990、primary-type Album、secondary-types [\"Compilation\"]、轄下 1 個 release（GB 1990、Pearl 系列編號 EVC I、三片各自帶 catno GEMM CD 9424／9425／9426、status Official）。藝人 MBID e4d389bb-fe8f-472d-8ffd-c2cb02a7b2b7；另有一位同名的義大利製作人（5726230b）與一支美國 shoegaze 團（7c57d2fe），查詢時要排除。刻意不釘：51b447f7《The Caruso Edition, Volume IV: 1916–1921》與 fb88093d《Volume III: 1912–1916》（同系列後續卷，依第 87 條「分卷不是一張碟」本批只收第一卷）、6556d69d《The Complete Caruso》與 df9d6fc4《The Complete Recordings: Recorded 1902-1920》與 b477cacd 等《The Complete Recordings, Volume 1–12》（十二卷系列，全部與池中既有的《The Complete Recordings》有同碟疑慮）。",
+  "queryAlias": "Caruso Edition Volume 1; The Caruso Edition 1902-1908; Pearl EVC I; Enrico Caruso 1902 Milan recordings"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Joan Sutherland",
+  "album": "Operatic Arias",
+  "year": 1959,
+  "label": "Decca Classics（catno SXL 2159）",
+  "why": "Sutherland 1959 年 7 月在巴黎與 Nello Santi 指揮的 Orchestre de la Société des Concerts du Conservatoire 錄的第一張 Decca 獨唱專輯，內容是董尼采第與威爾第的花腔詠嘆調。這張唱片與同年 2 月她在柯芬園唱《拉美莫爾的露琪亞》是同一波：那場演出讓倫敦樂評封她 La Stupenda，Decca 隨即簽下她並在半年內把首張獨唱盤送進市場，這是她國際生涯的起點文獻。池中實掃 14,424 列：Joan Sutherland 有 2 張（《The Art of the Prima Donna》1960、《Donizetti: Lucia di Lammermoor (1961)》），兩張都在這張首唱片之後；起點那一張沒有。MB 藝人 dd5ef185 名下 113 個 release-group（分頁全列）。",
+  "risk": "⚠ 盤名《Operatic Arias》極為通用，字串比對容易配到別人的同名碟，去重與查詢都必須連掛名一起比。年份取 first-release-date 1959-07（Decca SXL 2159 原盤），與錄音年同期，是本批年份最乾淨的幾張之一。CAA release-group 端點實測 200。Apple gb 命中兩筆同一份錄音的不同再發：1452135704「Dame Joan Sutherland, Nello Santi & Orchestre de la Société des Concerts du Conservatoire — Joan Sutherland: Operatic Recital」（1959，標題作 Recital 不是 Arias）與 418447103「Joan Sutherland performs Operatic Arias - The Debut Recital」（2010）。兩筆掛名都作「Dame Joan Sutherland」（帶爵位前綴），與池中的「Joan Sutherland」不相等，查詢字串要兩種都試。店面序 UKB，gb 即命中。",
+  "mbNote": "釘 release-group 8e6ddbb7-f123-4948-8051-1fe696f6adec。回問確認：title「Operatic Arias」、artist-credit「Gaetano Donizetti, Giuseppe Verdi; Joan Sutherland, Orchestre de la Société des Concerts du Conservatoire, Nello Santi」（兩位作曲家＋歌者＋樂團＋指揮，卡片取歌者）、first-release-date 1959-07、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1959-07、Decca Classics SXL 2159、status Official）。藝人 MBID dd5ef185-fc41-425d-8bd9-a5a600a8cc17；另有一位同名小提琴手（50476229），查詢時要排除。刻意不釘：04e9c262《The Art of the Prima Donna: Joan Sutherland》（與池中既有的《The Art of the Prima Donna》撞卡）、a36af279／7c1ec59e《Lucia di Lammermoor》（與池中既有的 1961 年露琪亞撞卡）、46e62780《La Stupenda》與 cbb2a5e6／26de5bd5《The Age of Bel Canto》與 84b1d38b《Greatest Hits》（選輯型）。",
+  "queryAlias": "Dame Joan Sutherland Operatic Recital; Joan Sutherland Debut Recital; Nello Santi; Decca SXL 2159"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Joan Sutherland",
+  "album": "Bellini: La sonnambula (1962)",
+  "year": 1963,
+  "label": "Decca Classics（1996 CD 448 966-2；1963 原盤 release 的廠牌欄在 MB 未填）",
+  "why": "Sutherland 1962 年與 Richard Bonynge 指揮的翡冷翠五月音樂節樂團與合唱團錄的貝里尼《夢遊女》，男高音 Nicola Monti、男低音 Fernando Corena。Bonynge 是她的丈夫兼固定指揮，兩人在 1960 年代把貝里尼與董尼采第的美聲歌劇整批重新錄進 Decca 目錄，《夢遊女》是其中最早的一部。池中實掃 14,424 列：Joan Sutherland 2 張（《The Art of the Prima Donna》1960、《Donizetti: Lucia di Lammermoor (1961)》），全本歌劇只有露琪亞一部；貝里尼在池中只有 Maria Callas《Bellini: Norma (1954)》與《Bellini: La sonnambula (1957)》兩張——⚠ 後者與本卡是同一部歌劇的不同版本，掛名不同故不撞卡，但卡片盤名都帶年份括號正好可以分辨。",
+  "risk": "⚠ 池中已有 Maria Callas《Bellini: La sonnambula (1957)》——同一部歌劇、不同歌者與指揮、不同錄音。兩張的 artist 不同，字串比對不會撞，但下游行文與查詢要能分辨，本卡盤名已標 (1962)。年份取 first-release-date 1963；MB 轄下有兩個 release，其中 1963 那一筆的 country、status 與廠牌欄全空，另一筆是 1996 年 XE 的 Decca 448 966-2、status Official。依第 43 條，本卡的授權判定以 1996 那筆 Official release 為據；1963 那筆狀態未填不等於未授權，但也不能拿來當背書，已寫明。CAA release-group 端點實測 200。Apple gb 命中 1452382824「Coro del Maggio Musicale Fiorentino, Dame Joan Sutherland, Orchestra del Maggio Musicale Fiorentino & Richard Bonynge — Bellini: La Sonnambula」（releaseDate 記 1962），班底完全相符；⚠ 同店面另有 1452561108「Dame Joan Sutherland, Luciano Pavarotti, National Philharmonic Orchestra, Nicolai Ghiaurov & Richard Bonynge — Bellini: La sonnambula」（1982）——同一位歌者、同一位指揮、同一部歌劇的二十年後重錄，班底完全不同，是本批最危險的一組假陽性，上架時務必鎖 1452382824；1452460400《Bellini: Collectors Edition》是四部歌劇的大盒，亦不得採用。店面序 UKB，gb 即命中。掛名兩種寫法（Joan Sutherland／Dame Joan Sutherland）都要查。",
+  "mbNote": "釘 release-group 21e3dee6-efd0-4c4f-a85f-24d618415ec7。回問確認：title「La sonnambula」、artist-credit「Vincenzo Bellini; Joan Sutherland, Nicola Monti, Fernando Corena, Orchestra e Coro del Maggio Musicale Fiorentino, Richard Bonynge」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 2 個 release（XE 1996 Decca Classics 448 966-2 status Official／1963 一筆 country 與 status 皆空）。卡片盤名補上作曲家前綴與錄音年括號，依第 91 條。刻意不釘：b66136ab《La sonnambula》（1982，即 Apple 1452561108 對應的 Pavarotti 重錄版，本卡最像的假陽性）、8e3598d4／25be3a5a《Norma》（與池中既有的 Callas 版同曲，且 Sutherland 自己有兩次錄音）、ac66e627《I puritani》、351704cf《Anna Bolena》（本批不收）。",
+  "queryAlias": "Dame Joan Sutherland La Sonnambula Bonynge; Maggio Musicale Fiorentino; Bellini La Sonnambula 1962 Decca"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Fritz Wunderlich",
+  "album": "Salzburger Liederabend",
+  "year": 1984,
+  "label": "Acanta（catno 043529）",
+  "why": "Wunderlich 在薩爾茲堡音樂節的德語藝術歌曲獨唱會實錄，Acanta 1984 年出版。Wunderlich 1966 年三十五歲時意外身故，留下的錄音集中在 1955–1966 這十一年，因此每一份現場文獻的分量都不成比例地重；薩爾茲堡這場是他生前最後幾年的歌曲演唱紀錄之一。池中實掃 14,424 列：Fritz Wunderlich 有 2 張（《Schubert: Die schöne Müllerin》1966、《Schumann: Dichterliebe》1965），兩張都是錄音室的聯篇歌集，現場獨唱會 0 張。MB 藝人 12093f1c 名下 76 個 release-group（分頁全列）；另有一位同名的德國嘉年華歌手（525b2cbe，藝名 Kennzeichen D）與管風琴手 Klaus Wunderlich（573e31a9），查詢時要排除。",
+  "risk": "年份取 first-release-date 1984（Acanta 043529），演出年是 1960 年代中期的薩爾茲堡音樂節，落差近二十年，行文不得把 1984 當演出年。MB 該 release-group 的 primary-type 是 Album、secondary-types 空——雖然內容是現場實錄，MB 沒有標 Live，依派工「判準是 primary-type 本身」照一般 Album 寫法。CAA release-group 端點實測 200。⚠ Apple 七個店面用兩組字串（Fritz Wunderlich Salzburger Liederabend／Wunderlich Lieder recital Salzburg）搜尋皆未命中本盤；回傳的 403098555「Recital」（1964，柏林交響伴奏，是管弦樂伴奏的詠嘆調輯不是鋼琴伴奏的歌曲會）、1452675034「Fritz Wunderlich - The Last Recital」（2003，是 1966 年愛丁堡那場，不是薩爾茲堡）、338180791「Schwetzinger Festspiele Edition, 1965」（是施韋青根不是薩爾茲堡）——三筆都是別的場次，一律不得採用。預估 previewStatus=unavailable，封面走 CAA。盤名為德文複合字，英文寫法「Salzburg Song Recital」已進 queryAlias。",
+  "mbNote": "釘 release-group d3efa5d4-8ca3-4ada-9be9-2966a5b952a6。回問確認：title「Fritz Wunderlich Salzburger Liederabend」、artist-credit「Fritz Wunderlich」（單一演唱者）、first-release-date 1984、primary-type Album、secondary-types 空、轄下 1 個 release（country 空、1984、Acanta 043529、status Official）。卡片盤名去掉標題裡重複的藝人名，依第 91 條。藝人 MBID 12093f1c-9a44-4f78-a9d2-1e48166c4ede。刻意不釘：39c5d026《Die Schöne Müllerin / 7 Lieder》與 109cafb8《Die Schöne Müllerin》與 0f6df475《Die schöne Müllerin / 3 Lieder》（三筆都與池中既有的《Schubert: Die schöne Müllerin》撞卡）、69799bfb《Schumann: Dichterliebe / Schubert, Beethoven: Lieder》（與池中既有的《Schumann: Dichterliebe》撞卡）、4781542c《Das Lied von der Erde》（1967 Klemperer 版，本批另收 Kathleen Ferrier 的 1952 Walter 版，同曲兩張會使場景重複，故不收）、891bedd0《Die Entführung aus dem Serail》（artist-credit 以 Köth 領銜，掛名歸屬不清）。",
+  "queryAlias": "Wunderlich Salzburg Song Recital; Salzburger Liederabend Acanta; Fritz Wunderlich Liederabend"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Alban Berg Quartett",
+  "album": "Beethoven: The Late String Quartets",
+  "year": 1984,
+  "label": "EMI Angel Digital（catno CDS 7 47135 8）／His Master’s Voice（EX 157 27 0114 3 德國盤）",
+  "why": "阿班貝爾格四重奏 1982–1983 年為 EMI 錄的貝多芬晚期弦樂四重奏（op. 127、130、131、132、135 與大賦格），是數位錄音初期最早完成的一套晚期四重奏全集。這個團 1970 年在維也納成立、以團名向阿班．貝爾格致敬，1980 年代靠 EMI 的貝多芬與舒伯特錄音案成為當時流通最廣的四重奏。池中實掃 14,424 列：Alban Berg Quartett 只有 1 張（《Mozart: The Late String Quartets》1994），貝多芬那一塊沒有；池中的貝多芬晚期四重奏由 Budapest String Quartet（1962）與 Busch Quartet（1930 年代）兩個歷史錄音代表，數位時代的版本 0 張。MB 藝人 634e882f 名下 81 個 release-group（分頁全列）。",
+  "risk": "⚠ 池中已有 Budapest String Quartet《Beethoven: Late String Quartets》(1962) 與 Busch Quartet《Beethoven: Late Quartets (1930s)》(1941)——盤名極為相近（Late String Quartets／Late Quartets／The Late String Quartets），三張靠掛名區隔，字串比對不會撞卡但寬鬆比對會互相吃到，去重時要連掛名一起比。年份取 first-release-date 1984。CAA release-group 端點實測 200。⚠ Apple gb 首位命中的 726264114「Alban Berg Quartett — Beethoven: The Late String Quartets (Live at Konzerthaus, Wien, 1989)」（2005）是同團 1989 年的維也納現場版，不是本盤這套 1982–83 年的錄音室版——這是本卡最危險的假陽性，上架時不得採用；726176305「Beethoven: String Quartets Nos. 14 & 15」（1997）是本套的分張再發，可作為候選但要核曲目數。店面序 UKB，gb 即命中。團名兩種寫法（Alban Berg Quartett／Alban Berg Quartet），池中用德文的 Quartett，沿用。",
+  "mbNote": "釘 release-group 76a0e0f3-6e62-4932-b2e1-f7aeb1c757e9。回問確認：title「The Late String Quartets (Die Späten Streichquartette)」、artist-credit「Beethoven; Alban Berg Quartett」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 2 個 release（GB 1984 EMI Angel Digital CDS 7 47135 8／DE 1984 HMV EX 157 27 0114 3），status 全數 Official。卡片盤名補作曲家前綴並去掉德文副標，依第 91 條。藝人 MBID 634e882f-d875-4e32-8228-de330b638a28。刻意不釘：f6e7b652《The Late String Quartets》（1994，Compilation，是 1989 年維也納現場那套，即 Apple 726264114 對應的錄音）、8c3b7cb7《The Complete String Quartets》（1999，Compilation 大盒）、bd72377b／b88f1a18／1ecbf652／d14e1902／dd72b1c1（五筆莫札特四重奏分張，全部與池中既有的《Mozart: The Late String Quartets》有同碟疑慮）、45bace30《String Quartets Op.131 & Op.132》與 67cbc6ce《Streichquartett no. 13 / Grosse Fuge》（本套的分張再發）。",
+  "queryAlias": "Alban Berg Quartet; Die Späten Streichquartette; Beethoven Late Quartets ABQ EMI 1983"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Emerson String Quartet",
+  "album": "Bartók: The 6 String Quartets",
+  "year": 1988,
+  "label": "Deutsche Grammophon（catno 423 657-2；1988 DE 再版 477 6322）",
+  "why": "愛默生四重奏 1988 年為 DG 錄的巴爾托克六首弦樂四重奏，這套錄音拿下當年的葛萊美最佳室內樂演奏與最佳古典專輯。這個團 1976 年在紐約茱莉亞成立，特色是兩位小提琴輪流擔任第一部；巴爾托克這套是他們第一張 DG 唱片，也是把他們推上國際的作品。池中實掃 14,424 列：Emerson String Quartet 只有 1 張（《Shostakovich: The String Quartets》1999，同樣是他們的全集型代表作），巴爾托克那一塊沒有；池中的巴爾托克弦樂四重奏 0 張，作曲家本人則有作曲家掛名的卡（依派工 §五-6，本批不以作曲家卡為基準、也不新增該形態）。MB 藝人 fd20e8ed 名下 54 個 release-group（分頁全列）。",
+  "risk": "年份取 first-release-date 1988-02-11（DG 423 657-2 美國盤），與錄音年同期。CAA release-group 端點實測 200。Apple gb 命中 1452569634「Emerson String Quartet — Bartók: The String Quartets」（1988），掛名與年份相符，標題少一個「6」；同一批結果的 Hungarian Quartet（1452315796）、Ungarisches Streichquartett（1025043041）、Ramor Quartet（431384958）、Bartók Quartet（421311380）全是別團的同曲目全集，不得誤配——⚠ 其中「Bartók Quartet」是團名裡就帶作曲家名的匈牙利團體，字串比對最容易吃錯。店面序 UKB，gb 即命中。盤名的「Bartók」帶重音，去掉重音的 Bartok 寫法也要進去重掃描（第 50 條：重音差異在外部服務會被正規化，但本地字串比對不會）。",
+  "mbNote": "釘 release-group a681926d-1326-3114-8484-9dfda5474ed3。回問確認：title「Die 6 Streichquartette」（MB 用德文標題）、artist-credit「Béla Bartók; Emerson String Quartet」、first-release-date 1988-02-11、primary-type Album、secondary-types 空、轄下 5 個 release（US 1988-02-11 DG 423 657-2＋BMG Direct D 215521／DE 1988 DG 423 657-2／DE 1988 DG 477 6322／GB 1998-11-02 DG 423 657-2／DE 2007-01-02 DG 477 6322），status 全數 Official。卡片盤名取英文寫法並補作曲家前綴，依第 91 條 RG 標題與卡片盤名不必相等；MB 的德文原標題已記於此。藝人 MBID fd20e8ed-0736-44db-8d97-530fbf00e813。刻意不釘：182dd5cf《The String Quartets》（1997，Compilation，與池中既有的蕭士塔高維契全集有同碟疑慮）、39be36ad《The Complete String Quartets》（2005，Compilation）、a832910d《Complete Recordings on Deutsche Grammophon》（廠牌大盒）、e1362d78《The Late String Quartets》（貝多芬，Compilation）。",
+  "queryAlias": "Emerson Quartet Bartok String Quartets; Die 6 Streichquartette; Bartok The String Quartets DG 423 657-2"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Erich Kleiber",
+  "album": "R. Strauss: Der Rosenkavalier (1954)",
+  "year": 1990,
+  "label": "Decca Classics（catno 425 950-2；2000 再版 467 111-2；Decca Heritage Masters 478-1396）",
+  "why": "Erich Kleiber 1954 年與維也納愛樂錄的《玫瑰騎士》全曲，女高音 Maria Reining、Sena Jurinac、Hilde Gueden，男低音 Ludwig Weber。這是《玫瑰騎士》第一份完整的立體聲時代錄音之一，也是 Kleiber 生前最後幾年的大型計畫；他 1935 年因抗議納粹辭去柏林國家歌劇院音樂總監後長期在南美工作，戰後短暫回歐錄下這批 Decca 唱片。池中實掃 14,424 列：Erich Kleiber 只有 1 張（《Mozart: Le nozze di Figaro (1955)》，同一批 Decca 維也納錄音的另一部），《玫瑰騎士》這一部在池中則另有 Karajan 1956 年的版本——⚠ 兩張同曲不同指揮不同錄音。他兒子 Carlos Kleiber 在池中有 3 張。",
+  "risk": "⚠ 池中已有 Herbert von Karajan《R. Strauss: Der Rosenkavalier (1956)》——同一部歌劇、相鄰兩年、不同指揮與班底。掛名不同故不撞卡，兩張盤名都帶年份括號可以分辨，但行文與查詢要能區隔。⚠ 掛名同姓風險：池中另有 Carlos Kleiber 3 張，父子同姓，字串比對務必連名字一起比。年份取 first-release-date 1990（Decca 425 950-2 這次 CD 整編），錄音年 1954，落差三十六年。CAA release-group 端點實測 200。Apple gb 命中多筆同一份錄音的再發：1452793805「Maria Reining, Sena Jurinac, Hilde Gueden, Ludwig Weber, Vienna Philharmonic & Erich Kleiber — Richard Strauss: Der Rosenkavalier」（1954）、1452826049（同班底，標題作 R. Strauss: Der Rosenkavalier, Op. 59）、947464193（2014）、364198509（2005 Naxos Historical）、1078307838「Strauss: Le chevalier à la rose, extraits (Mono Version)」（法文選段，不是全曲，不得採用）。上架時要鎖定全曲版並記下 collectionId。店面序 UKB，gb 即命中。MB 該 release-group 轄下有一筆 release 的日期為空（GB、Decca Heritage Masters 478-1396），status 為 Official。",
+  "mbNote": "釘 release-group cb33ef52-6a46-3833-97d0-4f94ffa3fd5d。回問確認：title「Der Rosenkavalier」、artist-credit「Richard Strauss; Reining, Weber, Jurinac, Gueden, Wiener Philharmoniker, Erich Kleiber」（作曲家＋四位歌者＋樂團＋指揮，卡片取指揮）、first-release-date 1990、primary-type Album、secondary-types 空、轄下 3 個 release（GB 日期空 Decca Heritage Masters 478-1396／XE 2000 Decca Classics 467 111-2／1990 Decca Classics 425 950-2），status 全數 Official。卡片盤名補作曲家前綴與錄音年括號，依第 91 條。藝人 MBID a0f0fc5c-465d-49db-8e1b-1b4ed683e441，名下 38 個 release-group（分頁全列）。刻意不釘：d57db7e3《Le nozze di Figaro》與 96e7224b《Le nozze di Figaro: Highlights》與 2cc57934《Le nozze di Figaro / Cosi fan tutte》與 b5824892／39bdd1ce《Las bodas de Fígaro (I)／(II)》（五筆都與池中既有的《Mozart: Le nozze di Figaro (1955)》是同一份錄音的不同再發或選段）、2137465d《Decca Recordings 1949–1955》與 73ff5cb9《Complete Decca Recordings》（廠牌大盒，會同時涵蓋本盤與池中那張）。",
+  "queryAlias": "Erich Kleiber Der Rosenkavalier Vienna 1954; Le chevalier à la rose; Maria Reining Sena Jurinac Hilde Gueden"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Amadeus Quartet",
+  "album": "Haydn: String Quartets op. 71, 74, 77 & 103",
+  "year": 1989,
+  "label": "Deutsche Grammophon（catno 429 189-2）",
+  "why": "阿瑪迪斯四重奏為 DG 錄的海頓晚期弦樂四重奏，涵蓋 op. 71、op. 74 兩套「阿波尼」四重奏、op. 77 兩首「羅布科維茲」與未完成的 op. 103。這個團 1947 年在倫敦成立，四位成員中三位是從維也納與柏林逃離納粹的難民，戰後在英國組團並維持同一陣容近四十年，直到 1987 年中提琴手 Peter Schidlof 過世才解散。池中實掃 14,424 列：Amadeus Quartet 單獨掛名 2 張（《Haydn: String Quartets op. 76》1970、《Schubert: String Quintet》1987），另有兩張與單簧管演奏家合掛（Karl Leister《Brahms: Clarinet Quintet》、Gervase de Peyer《Mozart: Clarinet Quintet》）。海頓那條線池中只有 op. 76，晚期其餘三套沒有——本卡正好接在既有那張旁邊。",
+  "risk": "⚠ 池中已有 Amadeus Quartet《Haydn: String Quartets op. 76》(1970)——同團同作曲家、不同作品編號。盤名字串不同（op. 76 對 op. 71, 74, 77 & 103）故不撞卡，但寬鬆比對會互相吃到，去重時要比到作品編號層級。年份取 first-release-date 1989（DG 429 189-2）。CAA release-group 端點實測 200。⚠ Apple gb 命中的 1452488474「Amadeus Quartet — Haydn: String Quartets, Op. 76, 77 & 103」（2002）把 op. 76 與 op. 77／103 併在一起——那會同時涵蓋池中既有那張的曲目，是本卡最危險的假陽性，上架時要核曲目數再決定；1196905941「Haydn: String Quartets (The RIAS Amadeus Quartet Recordings, Vol. VI)」（2017）是 1950 年代 RIAS 廣播錄音的另一套、1452758530「Haydn: String Quartets」（2004）標題過泛，兩筆都要先核班底與年份。店面序 UKB，gb 即命中。團名兩種寫法（Amadeus Quartet／Amadeus String Quartet，MB 的 artist-credit 用後者）都要掃；另注意池中有 Wolfgang Amadeus Mozart 的作曲家卡與 Phoenix《Wolfgang Amadeus Phoenix》，「Amadeus」單字比對會誤中。",
+  "mbNote": "釘 release-group 4719f2d7-803f-48e0-bb8d-51908fedc9dc。回問確認：title「Streichquartette op. 71 op. 74 op. 77 op. 103」、artist-credit「Joseph Haydn; Amadeus Quartet」、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（XE 1989、Deutsche Grammophon 429 189-2、status Official）。卡片盤名取英文寫法並補作曲家前綴，依第 91 條。藝人 MBID 7bf0b7e0-ce0b-411e-9977-aed8e67172a1，名下 77 個 release-group（分頁全列）。刻意不釘：1b477e8a《6 Streichquartette Op. 76》與 78e37293《String Quartets Opp. 76 • 77 • 103》與 56126f8a《String Quartets Opp. 51, 54, 55, 64, 71, 74》與 3e50a911《Kaiserquartett / Lerchenquartett / Reiterquartett》與 da62f49a（五筆都與池中既有的《Haydn: String Quartets op. 76》有重疊曲目）、056f1c4e《Schubert: String Quintet in C / Mozart: Adagio and Fugue》與 55ddddc4《String Quintet》（與池中既有的《Schubert: String Quintet》撞卡）、4b37c9c0《String Quartets, op. 59 no. 3 & op. 74》（貝多芬，CAA 404）。",
+  "queryAlias": "Amadeus String Quartet Haydn; Streichquartette op. 71 74 77 103; Apponyi Quartets; Lobkowitz Quartets"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Pablo Casals",
+  "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+  "year": 1972,
+  "label": "EMI（catno HLM 7013）",
+  "why": "Casals 1937 年在布拉格與 George Szell 指揮的捷克愛樂錄的德弗札克大提琴協奏曲，加上布魯赫《Kol Nidrei》。這份錄音長期被當成該協奏曲的參照版本：德弗札克 1895 年寫成後一度懷疑大提琴適不適合當協奏曲主角，Casals 是把它確立為大提琴核心曲目的人，而 1937 年這次是他唯一一次完整商業錄音。錄完不到兩年，西班牙內戰結束、Casals 流亡法國並拒絕再回佛朗哥治下的西班牙。池中實掃 14,424 列：Pablo Casals 有 2 張（《Bach: Cello Suites (1936-39)》1950、《Song of the Birds》1953），協奏曲曲目 0 張；池中的德弗札克大提琴協奏曲另有 Mstislav Rostropovich（Karajan，1969）一張——⚠ 同曲不同人，且本批另收 Jacqueline du Pré 的 1971 年版本，三張同曲並存。",
+  "risk": "⚠ 同曲三張並存：池中 Rostropovich《Dvořák: Cello Concerto (Karajan)》(1969)、本批 Casals（Szell 1937）與 du Pré（Barenboim 1971）。三張的掛名與盤名字串各不相同，去重不會誤判，但行文與查詢要能分辨，本卡盤名帶了 Kol Nidrei 那一半可以區別。掛名：MB 的藝人實體名是加泰隆尼亞文「Pau Casals」（MBID 2fcffd9a），此 release-group 的 artist-credit 用「Pablo Casals」，池中亦用 Pablo Casals，本卡沿用；兩種寫法都掃過（Pau Casals 在池中 0 筆）。年份取 first-release-date 1972（EMI HLM 7013 復刻），錄音年 1937，落差三十五年。CAA release-group 端點實測 200。Apple gb 命中 510052412「Czech Philharmonic, Pablo Casals & George Szell — Dvorak, Boccherini & Bruch: Cello Concertos」（2012），班底相符但多了 Boccherini 那一首，屬曲目較多的再發，上架時要在備註寫明；⚠ 搜尋「Casals Dvorak」很容易配到池中既有的 Rostropovich 版或 du Pré 版，鎖定 collectionId 前要核指揮與樂團。店面序 UKB，gb 即命中。",
+  "mbNote": "釘 release-group a1a91158-3066-4d45-ab67-184277274de1。回問確認：title「Dvořák: Cello Concerto / Bruch: Kol Nidrei」、artist-credit「Dvořák, Bruch; Pablo Casals, George Szell」（兩位作曲家＋大提琴＋指揮，卡片取獨奏者）、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1972、EMI HLM 7013、status Official）。藝人 MBID 2fcffd9a-f02a-4a2c-8085-6257f918949d（MB 主名 Pau Casals），名下 111 個 release-group（分頁全列）。刻意不釘：4861dd4d《The Six Cello Suites》與 8aeaeb97《Cello Suites nos. 1–6》與 1cab68b0《Cello Suites 1-6》與 4fadb568《Cello-Suiten》與 a402e35c／89e7cd50／a64a670b（七筆都與池中既有的《Bach: Cello Suites (1936-39)》是同一份錄音的不同再發或分卷）、12ecad1b《Song of the Birds》與 8313a545《Song of the Birds / More Cello Encores》（與池中既有的《Song of the Birds》撞卡）、ec9a572e（本批另收的三重奏卡）、fd50020a《The Complete Published EMI Recordings, 1926-1955》（廠牌大盒）。",
+  "queryAlias": "Pau Casals; Casals Dvorak Cello Concerto Szell Czech Philharmonic; Bruch Kol Nidrei Casals"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Sergiu Celibidache",
+  "album": "Tchaikovsky: Symphony no. 5",
+  "year": 1997,
+  "label": "EMI Classics（catno 7243 5 56522 2 5）",
+  "why": "Celibidache 1991 年與慕尼黑愛樂的柴可夫斯基第五號現場，EMI 在他 1996 年過世後取得授權，1997 年起陸續出版慕尼黑時期的實況錄音。Celibidache 生前拒絕發行錄音室唱片，理由是唱片無法保存音樂會的當下——他的整個目錄因此都是身後由家屬授權的現場文獻，這是唱片史上少見的狀況。池中實掃 14,424 列：Sergiu Celibidache 有 2 張（《Bruckner: Symphony no. 8》1985、《Bruckner: Symphony no. 4 (Munich 1988)》1988），全部是布魯克納；俄國曲目 0 張。池中的柴可夫斯基第五號目前 0 張（Karajan 有第四至六號以外的曲目，Mravinsky 那張是 4–6 號合集）。MB 藝人 b143a19b 名下 114 個 release-group（分頁全列）。",
+  "risk": "年份取 first-release-date 1997（EMI Classics 7243 5 56522 2 5），演出年 1991，落差六年，行文要寫明「1991 年現場、1997 年出版」。MB 該 release-group 的 primary-type 是 Album、secondary-types 空——雖然內容是現場實況，MB 沒有標 Live，依派工「判準是 primary-type 本身」照一般 Album 寫法。CAA release-group 端點實測 200。Apple gb 命中 1609462123「Sergiu Celibidache & Munich Philharmonic — Tchaikovsky: Symphony No. 5, Op. 64 (Live, 1991)」（releaseDate 記 1997），年份、班底與現場標記完全相符，是本批對得最準的一筆；⚠ 同店面另有 330206935「Sergu Celibidache, London Philharmonic Orchestra & Sergiu Celibidache — Tchaikovsky Nutcracker Suite & Symphony No 5」（2009，注意 Apple 把指揮名拼成 Sergu 且重複列出）與 1452137087「Tchaikovsky: Symphony No. 5 - The Nutcracker Suite (Highlights)」（2003），兩筆是倫敦愛樂時期的另一份錄音，班底不同，不得採用。店面序 UKB，gb 即命中。掛名拼法查過 Sergiu Celibidache／Sergu Celibidache（Apple 的誤拼）／Serge Celibidache 三種。",
+  "mbNote": "釘 release-group 0f5cdb94-1824-436d-b4f3-82270c6aa058。回問確認：title「Symphonie No. 5」、artist-credit「Tchaikovsky; Münchner Philharmoniker, Sergiu Celibidache」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（DE 1997、EMI Classics 7243 5 56522 2 5、status Official）。卡片盤名補作曲家前綴並取英文寫法，依第 91 條。藝人 MBID b143a19b-7161-4d93-a522-cd6771fd5a46。刻意不釘：0f5cdb94 以外的布魯克納各筆——b6aee0ec《Bruckner 4》與 9b36dbe2《Symphony no. 3》與 cc635263《Symphony 6》與 8dbc8740／2be68243《Symphony No. 9》與 7126badb《Symphonie Nr. 5》（布魯克納第五，與本卡的柴五同編號極易誤配）——其中前兩筆與池中既有的兩張布魯克納有同碟疑慮；另 8ea4c799《Maestro profondo》與 fea42e4b《Le Sinfonie》為選輯與全集大盒。",
+  "queryAlias": "Sergu Celibidache; Serge Celibidache; Munich Philharmonic Tchaikovsky Symphony No. 5 Live 1991; Münchner Philharmoniker"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Elisabeth Schwarzkopf",
+  "album": "Lehár: Die lustige Witwe",
+  "year": 1966,
+  "label": "His Master’s Voice（catno ASD 2252）／EMI Studio DRM（1985 CD CDCB 7 47177-2）",
+  "why": "Schwarzkopf 與 Lovro von Matačić 指揮的 Philharmonia 錄的雷哈爾《風流寡婦》，男高音 Nicolai Gedda。這是她第二次錄這部輕歌劇（第一次是 1953 年 Otto Ackermann 版），EMI 為她重錄一次立體聲版本；她把維也納輕歌劇當成與藝術歌曲同等的曲目來處理，這條線在戰後的唱片工業裡幾乎由她一個人撐起來。池中實掃 14,424 列：Elisabeth Schwarzkopf 有 2 張（《Wolf: Lieder》1967、《R. Strauss: Vier letzte Lieder (Szell)》1966），兩張都是藝術歌曲；歌劇與輕歌劇這一整塊在池中沒有。本批另收她與 Fischer-Dieskau 的《少年魔號》，兩張一起把她的目錄從兩張補到四張。",
+  "risk": "⚠ 這張最大的風險是版本混淆：Apple 七個店面搜「Schwarzkopf Die lustige Witwe Matacic」零命中，改搜英文標題後 gb 回的 398212052／364138621／353062414 三筆全部是 1953 年 Otto Ackermann 指揮的舊版（掛名裡有 Erich Kunz、Emmy Loose、Otakar Kraus，全不在本盤班底內），與本盤是同一位歌者的兩份不同錄音——⚠ 一律不得當本盤的封面或試聽來源；828098163《Elisabeth Schwarzkopf Sings Operetta》與 361892836《Lehár: The Land of Smiles》也都是別的碟。預估 previewStatus=unavailable 或需人工另尋 Matačić 版條目，封面走 CAA（release-group 端點實測 200）。年份取 first-release-date 1966（HMV ASD 2252），錄音年 1962–63。盤名德文與英文兩套並存（Die lustige Witwe／The Merry Widow），去重與查詢兩邊都要掃。掛名拼法查過 Elisabeth Schwarzkopf／Elisabeth Schwartzkopf（Apple 364138621 即誤拼 Schwartzkopf）兩種。指揮名 Matačić 帶兩個變音符號，去掉變音的 Matacic 寫法已進 queryAlias。",
+  "mbNote": "釘 release-group 1bb8ffb5-6c84-4245-9680-875a93bcc1cf。回問確認：title「Die lustige Witwe」、artist-credit「Franz Lehár; Elisabeth Schwarzkopf, Hanny Steffek, Nicolai Gedda, Josef Knapp, Eberhard Wächter, Philharmonia Orchestra & Chorus, Lovro von Matačić」（作曲家＋五位歌者＋樂團＋指揮，卡片取領銜歌者）、first-release-date 1966、primary-type Album、secondary-types 空、轄下 3 個 release（GB 1966 HMV ASD 2252／GB 1985 EMI Studio DRM CDCB 7 47177-2／JP 2021-04-28 TOWER RECORDS NEODAI-98007），status 全數 Official。藝人 MBID f17aa6af-8d75-4559-b212-b83b9549758e，名下 116 個 release-group（分頁全列）。刻意不釘：39333df8《Die lustige Witwe》(1988) 與 860913ac《Die lustige Witwe》(2000) 與 d831f8f0《Das Land des Lächelns / Die lustige Witwe》（三筆同名，其中至少一筆是 1953 Ackermann 版，即 Apple 那三筆的來源，是本卡最像的假陽性）、b7ddec8a《Spanisches Liederbuch》與 2f515406《Goethe-Lieder》與 19563922／8c7ed20b《Lieder》（四筆都與池中既有的《Wolf: Lieder》有同碟疑慮）、e8c4a2c9《Vier letzte Lieder》與 d520f2db《Vier letzte Lieder / Arabella / Capriccio》（與池中既有的《R. Strauss: Vier letzte Lieder (Szell)》撞卡）、b414f2f3《Der Rosenkavalier》（1957 Karajan 版，與池中既有的 Karajan 卡撞碟）。",
+  "queryAlias": "The Merry Widow Schwarzkopf; Elisabeth Schwartzkopf; Lovro von Matacic; Nicolai Gedda Philharmonia Lehar"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Kathleen Ferrier",
+  "album": "Mahler: Das Lied von der Erde (1952)",
+  "year": 1961,
+  "label": "Decca Records（catno LXT 5576）／Decca Classics（1984 CD 414 194-2）",
+  "why": "Ferrier 1952 年 5 月與 Bruno Walter 指揮的維也納愛樂、男高音 Julius Patzak 錄下的馬勒《大地之歌》。Walter 是這部作品 1911 年世界首演的指揮，四十一年後在維也納重錄，等於是作品傳承鏈上最直接的一份文獻；Ferrier 錄音時已確診乳癌，一年多後過世，得年四十一。池中實掃 14,424 列：Kathleen Ferrier 有 3 張（《Gluck: Orfeo ed Euridice》1947、《Bach & Handel Arias》1952、《Brahms: Alto Rhapsody (Krauss 1947)》1947），全部是 1947–52 年的英國與奧地利錄音，但她最常被引用的《大地之歌》沒有；池中的《大地之歌》目前 0 張。MB 藝人 15bd63ca 名下 57 個 release-group（分頁全列）。",
+  "risk": "年份取 first-release-date 1961（Decca LXT 5576），錄音年 1952，落差九年——⚠ MB 只建到 1961 年那筆 LP，1952 年的原始發行未建檔，依第 95 條 rgMbid 只當身分鍵、年份另找時本應改採原盤年，但 Decca 在 1952 年是以 78 轉與早期 LP 分批發行、原盤年考據不一，故維持 MB 的 1961 並在卡片盤名加註 (1952) 標示錄音年，行文不得把 1961 當演出年。CAA release-group 端點實測 200。Apple gb 命中多筆同一份錄音的再發：1452510165「Bruno Walter, Kathleen Ferrier, Julius Patzak & Vienna Philharmonic — Mahler: Das Lied Von Der Erde; 3 Rückert Lieder」（1952）、1571149368（2021）、403353929（2010，標題明寫 Recorded 1952）、593986448「Brahms: Alto Rhapsody - Mahler: Das Lied von der Erde」（2003，⚠ 這一筆同時包含池中既有的《Brahms: Alto Rhapsody》，不得採用）。上架時鎖 1452510165 或 403353929。店面序 UKB，gb 即命中。掛名拼法查過 Kathleen Ferrier／Kathleen Ferrer，另注意 Apple 593986448 把男高音拼成 Julius Patzack。",
+  "mbNote": "釘 release-group b86a4b1f-6738-4598-94ca-b933dfb01a98。回問確認：title「Das Lied von der Erde」、artist-credit「Mahler; Kathleen Ferrier, Julius Patzak, Vienna Philharmonic Orchestra, Bruno Walter」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 4 個 release（GB 1961 Decca Records LXT 5576／DE 日期空 Decca Records LXT 5576／DE 1984 Decca Classics 414 194-2／US 1984 Decca Classics），status 全數 Official。卡片盤名補作曲家前綴與錄音年括號，依第 91／95 條。藝人 MBID 15bd63ca-c6d9-430a-9779-072c5dc7396f。刻意不釘：8cc21f66／20a4b915《Orfeo ed Euridice》與 b1d0c48a《What is life?》（三筆都與池中既有的《Gluck: Orfeo ed Euridice》有同碟疑慮）、aeb0a873《Bach-Handel Recital》與 3a0a8ff2《Kathleen Ferrier, Volume 3: Gluck Handel Bach Pergolesi》（與池中既有的《Bach & Handel Arias》有同碟疑慮）、1e81fb8e《Kindertotenlieder》與 fa07148c《Three Rückert Lieder》（本盤 Apple 條目常把 Rückert 那三首綁進來，兩筆是同一批 Walter 錄音的分張）、d6756842《The World of Kathleen Ferrier》（選輯）。",
+  "queryAlias": "Kathleen Ferrier Das Lied von der Erde Bruno Walter; Julius Patzak; Song of the Earth Ferrier; Decca LXT 5576"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Emil Gilels",
+  "album": "Grieg: Lyric Pieces",
+  "year": 1974,
+  "label": "Deutsche Grammophon（catno 2530 476／2535 620；1987 CD 419 749-2；1996 再版 449 721-2）",
+  "why": "Gilels 1974 年為 DG 錄的葛利格《抒情小品》選集。這張在他的目錄裡位置特殊：他一生以貝多芬、布拉姆斯、柴可夫斯基的大型作品為主，這是少數整張獻給北歐小品的錄音，也是《抒情小品》這套六十六首鋼琴小曲進入國際主流曲目的關鍵版本——在此之前它多半被當成教學曲。池中實掃 14,424 列：Emil Gilels 有 3 張（《Beethoven: Waldstein / Appassionata》1979、《Beethoven: Piano Concertos (Szell)》1968、《Brahms: Piano Concerto no. 2》1972），全部是德奧大型曲目；池中的葛利格目前只有 Karajan《Grieg: Peer Gynt Suites》(1983) 一張管弦樂，鋼琴獨奏 0 張。MB 藝人 88b4ad33 名下 161 個 release-group（分頁全列，第 116 條）。",
+  "risk": "⚠ 掛名跨文字系統：MB 的藝人實體名是西里爾文「Эмиль Гилельс」（MBID 88b4ad33），拉丁轉寫有 Emil Gilels／Emil Guilels（DG 法語系列即用此拼法，見 MB 的《Edition Emil Guilels 3／4》）／Emil Gilel 三種。實掃時西里爾原文與三種拉丁寫法都掃過（西里爾在池中 0 筆），池中用 Emil Gilels，本卡沿用，其餘進 queryAlias。年份取 first-release-date 1974（DG 2530 476 原盤年），與錄音年同期。CAA release-group 端點實測 200。Apple gb 命中 969090788「Emil Gilels — Grieg: Lyric Pieces」（releaseDate 1974），掛名、標題與年份完全相符；⚠ 同一批結果的 1452210904「Emil Gilels & Sir Colin Davis — Grieg: Peer Gynt Suites, Holberg Suites, Piano Concerto」（2000）與 644615994／6779343066（Grieg 鋼琴協奏曲，Jochum 指揮）都是別的曲目，其中 Peer Gynt 那一筆還會撞到池中既有的 Karajan 卡，不得採用。店面序 UKB，gb 即命中。",
+  "mbNote": "釘 release-group 18fcc7fe-041c-373d-8791-1c6083452f0d。回問確認：title「Lyrische Stücke - Lyric Pieces」（德英雙語標題）、artist-credit「Edvard Grieg; Emil Gilels」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 7 個 release（DE 1974 DG 2530 476／DE 1974 DG 2535 620／DE 1987 DG 419 749-2＋BMG Direct D 120496／DE 1987 DG 419 749-2／DE 1996-10-01 DG 449 721-2／XW 2015 DG／2023-01-26 DG＋UMe Digital），status 全數 Official。卡片盤名取英文那一半並補作曲家前綴，依第 91 條；德文寫法 Lyrische Stücke 已進 queryAlias。刻意不釘：362316b9《Sonaten: Waldstein / Les Adieux / Appassionata》（與池中既有的《Beethoven: Waldstein / Appassionata》撞卡）、a8a5c578《Gilels Plays Beethoven Piano Concertos Nos. 4 & 5》與 4ab4cd60《Piano Concerto Nos. 4, 5 \"The Emperor\"》與 c78a8eff／0a1234e8（四筆都與池中既有的《Beethoven: Piano Concertos (Szell)》有同碟疑慮）、38cc9c95《Concerto no. 2 / Tragic Overture》與 c2f4c3a2《Piano Concerto No. 2 / Haydn Variations》與 e6ab8548《Piano Concerto no. 2 / Fantasien》（三筆都與池中既有的《Brahms: Piano Concerto no. 2》有同碟疑慮）。",
+  "queryAlias": "Emil Guilels; Эмиль Гилельс; Lyrische Stücke Gilels; Grieg Lyric Pieces DG 419 749-2"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Arturo Benedetti Michelangeli",
+  "album": "Chopin: 10 Mazurkas / Ballade op. 23 / Scherzo op. 31",
+  "year": 1972,
+  "label": "Deutsche Grammophon（catno 2530 236；1984 CD 413 449-2；2009 再版 00289 477 7563）",
+  "why": "Michelangeli 1971 年為 DG 錄的蕭邦：十首馬祖卡、第一號敘事曲與第二號詼諧曲。他一生錄音極少、取消音樂會極多，DG 在 1970 年代替他開的錄音案是他留下的主要目錄；這張蕭邦是其中最常被引用的一張，馬祖卡那十首尤其被拿來當他處理節奏彈性的範例（此處僅記錄事實與流傳，不作聲響描述）。池中實掃 14,424 列：Arturo Benedetti Michelangeli 有 3 張（《Debussy: Images / Children’s Corner》1971、《Beethoven / Galuppi / Scarlatti Recital》1965、《Ravel: Piano Concerto in G / Rachmaninoff: Piano Concerto no. 4》1957），蕭邦那一塊沒有；池中的蕭邦鋼琴獨奏由 Arthur Rubinstein 三張與 Alfred Cortot 一張代表。MB 藝人 f0eca52a 名下 102 個 release-group（分頁全列）。",
+  "risk": "年份取 first-release-date 1972（DG 2530 236 原盤年），錄音年 1971。CAA release-group 端點實測 200。⚠ Apple gb 有兩筆標題完全相同、年份不同的條目：1452568228「Chopin: 10 Mazurkas, Prélude, Op. 45, Ballade, Op. 23 & Scherzo, Op. 31」（1972）與 1452574759（同標題，2009），是同一份錄音的兩次數位發行，上架時要鎖定其中一個並記下 collectionId；另有 1436243702「Chopin: 10 Marzurkas」（1972，⚠ Apple 自己把 Mazurkas 拼成 Marzurkas）是同一批的分張，1452734503《Steinway Legends》與 1452205932《The Art of Arturo Benedetti Michelangeli》是選輯。店面序 UKB，gb 即命中。掛名極長且有多種縮寫（Arturo Benedetti Michelangeli／Benedetti Michelangeli／ABM／Michelangeli），池中用全名，本卡沿用；另注意 MB 上有 Umberto Benedetti Michelangeli（1c6f4af9）是不同人的指揮，查詢時要排除。卡片盤名裡的 Prélude op. 45 依第 91 條省略，完整標題記在 mbNote。",
+  "mbNote": "釘 release-group 7e47a883-33fd-4959-bafa-c2cbb47ae0fd。回問確認：title「10 Mazurkas / Prélude, op. 45 / Ballade, op. 23 / Scherzo, op. 31」、artist-credit「Frédéric Chopin; Arturo Benedetti Michelangeli」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 5 個 release（DE 1972 DG 2530 236／FR 1972 DG 2530 236／XE 1984-07-25 DG 413 449-2／DE 2009-01-15 DG 00289 477 7563／AF 2018-09-28 DG 數位），status 全數 Official。藝人 MBID f0eca52a-cece-4844-9902-46c55f82aa5a。刻意不釘：2a7d0dcb《Images I/II / Children’s Corner》（與池中既有的《Debussy: Images / Children’s Corner》撞卡）、917841c6《Ravel: Piano Concerto in G / Rachmaninov: Piano Concerto no. 4》（與池中既有那張撞卡）、25aa932b《Beethoven / Chopin / Debussy》與 5a143f25《Benedetti Michelangeli: Beethoven - Grieg》（與池中既有的《Beethoven / Galuppi / Scarlatti Recital》有同碟疑慮）、588cb50f《Arturo Benedetti Michelangeli - FRYDERYK CHOPIN》（同曲目的另一種包裝）。",
+  "queryAlias": "Benedetti Michelangeli Chopin Mazurkas; ABM Chopin Ballade Scherzo; Chopin 10 Marzurkas; DG 2530 236"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Arthur Rubinstein",
+  "album": "Rubinstein Plays Liszt",
+  "year": 1956,
+  "label": "RCA Victor Red Seal（catno LM-1905）",
+  "why": "Rubinstein 為 RCA 錄的李斯特獨奏輯。這張在他的目錄裡是少數的非蕭邦專輯：Rubinstein 從 1930 年代起被市場定型為蕭邦專家，RCA 的目錄裡蕭邦佔壓倒性多數，李斯特這一張是他把十九世紀另一條鋼琴傳統納入唱片紀錄的少數例子。池中實掃 14,424 列：Arthur Rubinstein 單獨掛名 3 張（《Chopin: Nocturnes》1967、《Chopin: Ballades & Scherzos》1960、《Chopin: Polonaises (1964)》），三張全部是蕭邦，另有一張與 Heifetz、Feuermann 合掛的《Beethoven: Archduke Trio》(1941)。池中的李斯特鋼琴獨奏 0 張。MB 藝人 7cc89d05 名下 282 個 release-group（分頁全列，本批第二大目錄）。",
+  "risk": "⚠ 盤名「Rubinstein Plays Liszt」在字串比對上會與大量同型標題互相吃到（Apple gb 回的 502964819「Artur Rubinstein plays Grieg and Liszt」、1521264368「Ginzburg Plays Rubinstein & Liszt」、627642449「Josef Hofmann Plays the Best of Chopin, Schubert, Liszt...」都不是本盤），且「Rubinstein」在李斯特語境下還可能指作曲家 Anton Rubinstein——去重與查詢必須連盤名全文一起比。⚠ 掛名兩種拼法：MB 藝人主名是「Arthur Rubinstein」，Apple 與部分 RCA 盤用「Artur Rubinstein」，池中用 Arthur，本卡沿用，兩種都掃過。預估 previewStatus=unavailable（七個店面均未找到本盤的確切條目），封面走 CAA（release-group 端點實測 200）。年份取 first-release-date 1956（RCA Victor Red Seal LM-1905），與錄音年同期。",
+  "mbNote": "釘 release-group f9334882-615a-4150-bf48-66f4641adbdb。回問確認：title「Rubinstein Plays Liszt」、artist-credit「Liszt; Rubinstein」（作曲家＋演奏者，兩者都只寫姓）、first-release-date 1956、primary-type Album、secondary-types 空、轄下 1 個 release（US 1956、RCA Victor Red Seal LM-1905、status Official）。藝人 MBID 7cc89d05-3db5-4d08-bea0-9c328aa56c39，名下 282 個 release-group（用 release-group?artist=&limit=100&offset= 分頁三次全列，第 116 條）。刻意不釘：9b888bdd《The Chopin Ballades》（1960，與池中既有的《Chopin: Ballades & Scherzos》是同一份錄音）、f761c0a8《Nocturne Op. 9 Op.15 Op.27 Op.32》與 b8b6ca6c《Arthur Rubinstein Collection: Chopin Preludes / Sonata No. 2 / Barcarolle / Berçeuse》（與池中既有的《Chopin: Nocturnes》有同碟疑慮）、06b43e0b《Chopin: 8 Polonaises - 4 Impromptus》與 1fd714ef《Les Polonaises Nos 1 à 6》與 a0366d1c《Polonaises》（三筆都與池中既有的《Chopin: Polonaises (1964)》有同碟疑慮）、6f488aeb《Trio no. 1 in B-flat major, op. 99》（1942 三重奏，與池中既有的 Rubinstein / Heifetz / Feuermann 卡同一批班底）。",
+  "queryAlias": "Artur Rubinstein plays Liszt; Rubinstein Liszt RCA LM-1905; Arthur Rubinstein Liszt recital"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Karl Richter",
+  "album": "Bach: Johannes-Passion",
+  "year": 1992,
+  "label": "Archiv Produktion（catno 435 947-2；1996 Deutsche Grammophon 453 007-2）",
+  "why": "Karl Richter 與慕尼黑巴赫合唱團、慕尼黑巴赫管弦樂團的巴赫《約翰受難曲》，獨唱包括 Evelyn Lear、Hertha Töpper、Ernst Haefliger 與 Hermann Prey。Richter 1950 年代接掌慕尼黑聖馬可教堂與慕尼黑巴赫合唱團後，用 Archiv 的錄音案把巴赫的大型宗教作品整批錄成當時的標準版本，在古樂復興之前，他的讀法就是唱片市場上的巴赫。池中實掃 14,424 列：Karl Richter 有 3 張（《Bach: Mass in B minor》1961、《Bach: St. Matthew Passion (1958)》1958、《Bach: Christmas Oratorio》1965），三大宗教作品裡獨缺《約翰受難曲》——本卡正好補上那一格。MB 藝人 e01ebec7 名下 121 個 release-group（分頁全列）；另有一位同名的巴松管演奏者（b613f4c6），查詢時要排除。",
+  "risk": "年份取 first-release-date 1992（Archiv Produktion 435 947-2 這次 CD 整編），錄音年 1964，落差二十八年，行文不得把 1992 當演出年。CAA release-group 端點實測 200。Apple gb 命中 1452259846「Evelyn Lear, Hertha Töpper, Ernst Haefliger, Hermann Prey, Münchener Bach-Orchester, Karl Richter & Münchener Bach-Chor — Bach: St. John Passion, BWV 245」（releaseDate 記 1964），班底完全相符；⚠ 同一批結果的 626912027「Bach: Matthäus-Passion, BWV 244」會撞到池中既有的《Bach: St. Matthew Passion (1958)》，不得採用。店面序 UKB，gb 即命中。盤名德文與英文兩套並存（Johannes-Passion／St John Passion／St. John Passion），三種寫法都要進去重與查詢；BWV 245 亦已進 queryAlias。⚠ 池中既有的《Bach: St. Matthew Passion (1958)》與本卡盤名結構極像（都是「Bach: ...Passion」），去重要比到 Johannes／Matthew 這一層。",
+  "mbNote": "釘 release-group 48ed821f-3af2-3ec0-bf97-b853306751cf。回問確認：title「Johannes-Passion」、artist-credit「Johann Sebastian Bach; Karl Richter」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 3 個 release（DE 1992 Archiv Produktion 435 947-2／DE 1996-08-15 Deutsche Grammophon 453 007-2／XW 2016-03 Archiv Produktion 9031-74862-2），status 全數 Official。卡片盤名補作曲家前綴，依第 91 條。藝人 MBID e01ebec7-98c5-450a-bf67-5650f8b4eff0。刻意不釘：fe95965a《Matthäus-Passion》與 0dd20072《Matthäus-Passion》與 fe910cec《St. Matthew Passion: Highlights》（三筆都與池中既有的《Bach: St. Matthew Passion (1958)》有同碟疑慮）、3d2342c6《Messe in h-moll》（與池中既有的《Bach: Mass in B minor》撞卡）、690e4083／05d4abc3《Christmas Oratorio: Choruses and Arias》與 6c3e0d95／a22c8d41《Weihnachtsoratorium》（四筆都與池中既有的《Bach: Christmas Oratorio》有同碟疑慮）。",
+  "queryAlias": "Karl Richter St John Passion BWV 245; Bach Johannes-Passion Münchener Bach-Chor; Munich Bach Choir"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Jacqueline du Pré",
+  "album": "Dvořák: Cello Concerto / Waldesruhe",
+  "year": 1971,
+  "label": "Angel Records（catno S-36046 美國盤）／EMI Classics（ASD 2751）／Warner Classics（2017 與 2022 再發）",
+  "why": "du Pré 1970 年與 Daniel Barenboim 指揮的芝加哥交響錄的德弗札克大提琴協奏曲與《寂靜的森林》。這是她最後幾份錄音室錄音之一：1971 年她開始出現多發性硬化症的症狀，1973 年二十八歲時停止公開演出。Barenboim 是她的丈夫兼固定搭檔，兩人在 1967–1971 年間為 EMI 錄下的協奏曲與奏鳴曲是她留下的主要目錄。池中實掃 14,424 列：Jacqueline du Pré 單獨掛名 2 張（《Elgar: Cello Concerto》1965、《Haydn: Cello Concertos》1967），另有一張與 Barenboim 合掛的《Brahms: Cello Sonatas nos. 1 & 2》(1968)；德弗札克那一張沒有。⚠ 池中另有 Rostropovich 的同曲版本（Karajan，1969），本批亦收 Casals 的 1937 年版本。",
+  "risk": "⚠ 同曲三張並存：池中 Rostropovich《Dvořák: Cello Concerto (Karajan)》(1969)、本批 Pablo Casals（Szell 1937）與本卡（Barenboim 1970）。三張掛名與盤名字串各不相同，去重不會誤判，本卡盤名帶《Waldesruhe》可資區別。⚠ 掛名帶重音符號：Jacqueline du Pré 的 é 在去掉重音後成 du Pre，池中用帶重音的寫法，實掃時兩種都掃過（du Pre 在池中 0 筆）。年份取 first-release-date 1971-09（Angel S-36046 美國原盤），錄音年 1970。CAA release-group 端點實測 200。Apple gb 命中 1292699312「Jacqueline du Pré, Daniel Barenboim & Chicago Symphony Orchestra — Dvořák: Cello Concerto & Silent Woods」（1971）與 1623642269（同標題同年份的第二筆），⚠ 兩筆同名同年，上架時要核曲目數與音檔再鎖定其一；696896682「Dvorák: Cello Concerto - Haydn: Cello Concerto No. 1」（1986）會撞到池中既有的《Haydn: Cello Concertos》、693626946「Dvořák & Elgar Cello Concertos」（1995）會撞到池中既有的《Elgar: Cello Concerto》，兩筆都不得採用。店面序 UKB，gb 即命中。盤名《Waldesruhe》的英譯《Silent Woods》已進 queryAlias。MB 該 release-group 轄下有一筆 release 的日期與國別皆空，status 為 Official。",
+  "mbNote": "釘 release-group 3b7812ec-59f7-3fc4-8a51-c11dc4bf7b47。回問確認：title「Cello Concerto, Op. 104 / Waldesruhe, Op. 68 No. 5」、artist-credit「Dvořák; Jacqueline du Pré, Chicago Symphony Orchestra, Daniel Barenboim」、first-release-date 1971-09、primary-type Album、secondary-types 空、轄下 6 個 release（US 1971-09 Angel Records S-36046／XW 2012 EMI Classics ASD 2751／JP 2014-07-16 Warner Classics WPCS-23057／US 2017-10-13 Warner Classics／XW 2022-06-03 Warner Classics／一筆日期國別皆空），status 全數 Official。卡片盤名補作曲家前綴，依第 91 條。藝人 MBID 6e26a58f-63e8-4397-8cb7-b9f46aedfd32，名下 69 個 release-group（分頁全列）。刻意不釘：d872a65a《Cello Concerto / Sea Pictures》與 3f8d61cb《Elgar & Delius: The Cello Concertos》與 7fc44a3d／8d372d0a（四筆都與池中既有的《Elgar: Cello Concerto》有同碟疑慮）、08728b19《Haydn: Cello Concerto in D / Boccherini》與 468a41ad／83e543de（與池中既有的《Haydn: Cello Concertos》有同碟疑慮）、e9f0aa26《Sonaten Für Violoncello Und Klavier Nr. 1 Und Nr. 2》（與池中既有的《Brahms: Cello Sonatas nos. 1 & 2》撞卡）、422052d4《The Complete Warner Recordings》（廠牌大盒）。",
+  "queryAlias": "Jacqueline du Pre; Dvorak Cello Concerto Silent Woods Barenboim; Waldesruhe op. 68 no. 5; Chicago Symphony du Pré"
  }
 ]

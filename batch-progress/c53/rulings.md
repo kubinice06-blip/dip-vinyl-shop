@@ -4212,3 +4212,45 @@ c-93 只救回 1 張——**這個病是嘻哈盤特有的**，符合 c-96 策�
 **凡是「這張碟應該存在卻查不到」或「回來的版本形態不對」，都要再問一次目錄端點。**
 （同族：第 116 條 MB 的 `inc=release-groups` 只回 25 筆、要改用 `release-group?artist=` 分頁——
 也是「換一個端點就看得到完整目錄」。）
+
+---
+
+## 第 167 條（2026-09-05，c-95／c-98／c-100 三批各自實掃後匯總）：**MusicBrainz 幾乎不用 `primary-type=Compilation`——所以「這是後世整編輯」不等於「要走 §5.6」**
+
+派工這十批時，我在三份派工信裡都寫了「§5.6 舉證會用得很兇」，理由是
+戰前藍調、1940–50 年代鄉村、歷史錄音的「專輯」多半是後世整編。**這個預期是錯的。**
+
+三批各自獨立實掃，結果一致：
+
+| 批 | 掃了幾個 release-group | `primary-type=Compilation` |
+|---|---:|---:|
+| c-95 爵士與藍調（34 位藝人） | 1,676 | **0** |
+| c-98 民謠鄉村（16 位藝人） | 2,051 | **0** |
+| c-100 古典演奏家（29 位藝人） | 2,742 | **0** |
+| **合計** | **6,469** | **0** |
+
+MB 的建檔慣例是把整編輯建成 **`primary-type=Album` ＋ `secondary-types=[Compilation]`**
+（c-95 的 969 筆、c-100 的 850 筆）。§5.6 明文說這一型**照一般 Album 寫**，
+`releaseType` 填 `Album`、`exceptionReason` 與 `exceptionEvidenceUrls` 留空——
+填了反而會被 `chk-prop` 判「非合輯卻帶例外欄位」（c-90 裁定第 3 條）。
+
+**三批合計 133 張，`releaseType: Compilation` 是 0 張，§5.6 一次都沒開。**
+
+### 裁定
+
+**判準是 `primary-type` 這個欄位本身，不是「這張碟在現實中是不是整編輯」。**
+
+- `primary-type=Album`（**不管 `secondary-types` 有沒有 Compilation／Soundtrack／Live**）
+  → 一般 Album 寫法，例外欄位留空。
+- **只有 `primary-type=Compilation` 才走 §5.6 全套舉證。**
+
+**往後的派工信不要再預告「§5.6 會用得很兇」**——那句話會讓策展層去湊例外欄位，
+反而製造 `chk-prop` 標記。要寫的是上面這兩行判準。
+
+### 附帶驗掉的一關
+
+第 43／57／65／78 條要求「考古再發只有標 Official 才算背書」。
+三批逐筆查 release 的 `status`：c-95 的 119 個 release **全數 Official**；
+c-98 的 44 張裡 41 張全 Official、3 張有 Bootleg 或未填（Woody Guthrie《Library of Congress》、
+Joan Baez《Vol. 2》、Dock Boggs），已在 `risk` 明令不採為背書。
+**status 查得到就不必再去翻 Discogs 版本頁**——那一步只在 status 未填或有 Bootleg 時才需要。
