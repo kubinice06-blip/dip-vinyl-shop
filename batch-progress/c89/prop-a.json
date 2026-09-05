@@ -289,5 +289,103 @@
   "queryAlias": "Wu Bai & China Blue",
   "reissuedBy": "滾石唱片（2020 黑膠 RLP105）",
   "g": "a"
+ },
+ {
+  "artist": "伍佰 & China Blue",
+  "album": "詩情搖滾",
+  "year": 2009,
+  "genres": [
+   "rock"
+  ],
+  "label": "愛貝克思（Avex Taiwan）",
+  "why": "伍佰把自己的詞當成主體處理的一張，原盤是 2009 年台灣 CD＋DVD、編號 AVCCD90129／A（Discogs release 12161073）。它在 MB 上的建檔位置本身是個線索：這張被建在**單掛「伍佰」的那個藝人實體**底下，而且只登了中國盤的簡體版本，台灣原盤沒有建檔。池中六張伍佰卡在 2008 到 2016 之間空白，這是那段的第一張。",
+  "risk": "**這張有兩層要處理**。一、掛名：MB 把 release-group 掛在單人實體「伍佰」(0e1610be) 底下、artist-credit 作「伍佰」，但 Discogs 的台灣原盤（AVCCD90129／A）藝人欄印的是「伍佰 & China Blue」。依 TW_INDIE_NAMING_RULINGS 規則 2（實體發行品 credit > 資料庫建檔）與池中既有六張的一致性，卡片取**「伍佰 & China Blue」**，MB 的單掛寫法記在 mbNote。二、盤名簡繁：MB 建成簡體《诗情摇滚》且只有中國 release，卡片依規則 2 用繁體《詩情搖滾》，**簡體寫法在 NFKC 下摺不掉，去重與 Apple 查詢兩種都要掃**（第 49 條）。**封面：CAA 對這個 release-group 回 404**，要走 Apple 補救。",
+  "mbNote": "釘住 release-group c2dac0b7-dec5-4f81-9796-255ff3922999《诗情摇滚》（MB 建成簡體），artist-credit「伍佰」（**與卡片掛名不同，卡片依實體 credit 取「伍佰 & China Blue」**），first-release-date 2009-12-18，primary-type Album，secondary-types 空，轄下 1 筆 release（2009-12-18 CN Official）。已依第 41 條回問 release-group 端點確認。藝人 MBID 0e1610be-a8cb-452c-953d-72aa3d95b90e（伍佰，名下 8 個 release-group）。以繁體《詩情搖滾》回查 MB release-group，count=2970 但唯一 score=100 的就是本筆，**沒有另建的繁體 release-group**。Discogs 佐證：release 12161073（TW，Avex Taiwan AVCCD90129/A，CD＋DVD）。CAA 探測：無圖（404）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu Bai & China Blue",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "伍佰 & China Blue",
+  "album": "單程車票",
+  "year": 2011,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "環球音樂（Universal Music Taiwan）",
+  "why": "伍佰離開愛貝克思、轉到環球後的第一張正規盤，原盤是 2011 年台灣 CD＋DVD、編號 2781277（Discogs release 10720818）。池中六張伍佰卡在 2008 到 2016 之間空白，這一張與《無盡閃亮的哀愁》是那段的兩張正規作品。",
+  "risk": "盤名簡繁：MB 只建了中國盤的簡體《单程车票》，卡片依 TW_INDIE_NAMING_RULINGS 規則 2 用繁體《單程車票》，**簡繁在 NFKC 下摺不掉，撞卡檢查與 Apple 查詢兩種寫法都要掃**（第 49 條）。以繁體回查 MB 確認沒有另建的繁體 release-group。**封面：CAA 對這個 release-group 回 404**，要走 Apple 補救——台灣原盤在環球目錄下，Apple `tw` 命中機率不低。載體 CD＋DVD，軌數以 CD 為準。",
+  "mbNote": "釘住 release-group 15ad84fb-51a5-4229-9854-9d20f0ac365c《单程车票》（MB 建成簡體），artist-credit「伍佰 & China Blue」，first-release-date 2011-09-09，primary-type Album，secondary-types 空，轄下 1 筆 release（2011-09-09 CN Official）。已依第 41 條回問 release-group 端點確認。以繁體《單程車票》回查 release-group：count=661、唯一 score=100 即本筆，**無另建的繁體 RG**。藝人 MBID 1f240905-1a42-4150-8c81-141eb198885d。Discogs 佐證：release 10720818（TW，Universal Music 2781277）。CAA 探測：無圖（404）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu Bai & China Blue",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "伍佰 & China Blue",
+  "album": "無盡閃亮的哀愁",
+  "year": 2013,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "環球音樂（Universal Music Taiwan）",
+  "why": "伍佰在環球的第二張正規盤。MB 該 release-group 底下同時有中國盤（2013-12-13）與台灣盤（2013）兩筆 Official release，是這張碟兩岸同步發行的痕跡。池中六張伍佰卡在 2008 到 2016 之間空白，本張與《單程車票》補上那一段。",
+  "risk": "盤名簡繁：MB 兩筆 release 都建成簡體《无尽闪亮的哀愁》（連台灣那筆也是），卡片依規則 2 用繁體，**兩種寫法都要掃**（第 49 條，簡繁在 NFKC 下摺不掉）。以繁體回查 MB 確認無另建的繁體 RG。**Discogs 以繁體與簡體查都只回 3 筆且無此盤的實體條目**，本張的 `why` 因此只能靠 MB 的兩筆 release 支撐，不得寫成有樂評或銷售背書。封面：CAA 有 1 張圖。",
+  "mbNote": "釘住 release-group fa97bc74-6059-4075-9f41-2d651f23224b《无尽闪亮的哀愁》（MB 建成簡體），artist-credit「伍佰 & China Blue」，first-release-date 2013-12-13，primary-type Album，secondary-types 空，轄下 2 筆 release（2013-12-13 CN Official、2013 TW Official，兩筆標題皆為簡體）。已依第 41 條回問 release-group 端點確認。以繁體《無盡閃亮的哀愁》回查 release-group：count=5873、唯一 score=100 即本筆，**無另建的繁體 RG**。藝人 MBID 1f240905-1a42-4150-8c81-141eb198885d。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu Bai & China Blue",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "伍佰 & China Blue",
+  "album": "讓水倒流",
+  "year": 2019,
+  "genres": [
+   "rock"
+  ],
+  "label": "環球音樂（Universal Music Taiwan）",
+  "why": "《釘子花》(2016，池中已有) 之後的下一張正規盤。原盤是 2019 年台灣發行，同時出 CD（編號 7755209，Discogs release 37039647）與黑膠（編號 0840412，release 14519241）——**黑膠與 CD 同年同步發行**，在台灣本地的主流搖滾盤裡不是常態，值得記。池中的伍佰停在 2016 年，這張與《純白的起點》補上最近十年。",
+  "risk": "盤名簡繁：MB 只建了中國盤的簡體《让水倒流》，卡片依規則 2 用繁體，**兩種寫法都要掃**。以繁體回查 MB 確認無另建的繁體 RG。**封面：CAA 對這個 release-group 回 404**，要走 Apple 補救（環球目錄，Apple `tw` 機率高）。年份：MB 2019-07-11、Discogs 兩筆皆 2019，無分歧。",
+  "mbNote": "釘住 release-group b12a3d2f-97e3-4546-8de9-7cc63905b388《让水倒流》（MB 建成簡體），artist-credit「伍佰 & China Blue」，first-release-date 2019-07-11，primary-type Album，secondary-types 空，轄下 1 筆 release（2019-07-11 CN Official）。已依第 41 條回問 release-group 端點確認。以繁體《讓水倒流》回查 release-group：count=3958、唯一 score=100 即本筆，**無另建的繁體 RG**。藝人 MBID 1f240905-1a42-4150-8c81-141eb198885d。Discogs 佐證：release 14519241（TW，Universal 0840412，黑膠）、37039647（TW，Universal Music Taiwan 7755209，CD）。CAA 探測：無圖（404）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu Bai & China Blue",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "伍佰 & China Blue",
+  "album": "純白的起點",
+  "year": 2023,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "環球音樂（Universal Music Taiwan）",
+  "why": "伍佰目前最新的一張正規盤，也是「補齊」這條線的終點。原盤是 2023 年台灣 CD、編號 5559559（Discogs release 37039581）；2024 年同廠牌再出限量黑膠、編號 5845014（release 30233855）。池中的伍佰目錄停在 2016 年《釘子花》，收這張與《讓水倒流》之後，池中的伍佰才從 1992 年首張連到 2023 年。",
+  "risk": "盤名簡繁：MB 只建了中國盤的簡體《纯白的起点》，卡片依規則 2 用繁體，**兩種寫法都要掃**。以繁體回查 MB 確認無另建的繁體 RG。**封面：CAA 對這個 release-group 回 404**，要走 Apple 補救；2023 年的新盤在 Apple `tw` 上應該找得到，但要注意 Apple 可能只上架 2024 年黑膠版的日期（第 77 條的 yearDrift，不擋、標記即可）。",
+  "mbNote": "釘住 release-group 88ecc3cc-ff22-4cdb-9ec0-00ebf7c3bbc1《纯白的起点》（MB 建成簡體），artist-credit「伍佰 & China Blue」，first-release-date 2023-06-16，primary-type Album，secondary-types 空，轄下 1 筆 release（2023-06-16 CN Official）。已依第 41 條回問 release-group 端點確認。以繁體《純白的起點》回查 release-group：count=6836、唯一 score=100 即本筆，**無另建的繁體 RG**。藝人 MBID 1f240905-1a42-4150-8c81-141eb198885d。Discogs 佐證：release 37039581（TW，Universal Music Taiwan 5559559，CD，2023）、30233855（TW，5845014，黑膠限量版，2024）。CAA 探測：無圖（404）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu Bai & China Blue",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]
