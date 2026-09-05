@@ -205,6 +205,23 @@ const explicitTwin = async (best, front, albumCands, selfTitled) => {
     && albumCands.some(a => titleOk(a, x.collectionName || '', selfTitled))) || null;
 };
 
+
+// ── 2026-09-05：**回寫前先重讀並合併，不要整檔覆寫** ────────────────────────────
+// 這支腳本一開始把 previews.json 整個讀進 `out`，之後每 10 張就 `writeFileSync(OUT, out)`。
+// 探測一批要跑數十分鐘，**期間主線若依研究層的回報去修別批的條目，就會被這支的舊副本蓋掉**。
+// 實際損失：c-93 b 組覆核出來的五張（Spiritualized《Pure Phase》、
+// Liz Phair《whitechocolatespaceegg》、Guns N' Roses《Chinese Democracy》、
+// The Sonics《Boom》、This Heat《Repeat》）在 c-94／c-95 那一輪探測跑完後全部被還原成 unavailable，
+// c-93 的 45/45 掉回 40/45，而且**沒有任何錯誤訊息**——檔案好好的，只是舊了。
+// 改法：每次回寫都先重讀磁碟上的版本，**只把本次真正探測過的鍵寫回去**，其餘一律保留磁碟版。
+const writeMerged = (touchedKeys) => {
+  let disk = {};
+  try { disk = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch {}
+  for (const k of touchedKeys) disk[k] = out[k];
+  fs.writeFileSync(OUT, JSON.stringify(disk, null, 1));
+};
+const touched = new Set();
+
 let n = 0;
 for (const c of cards) {
   const k = `${c.artist}|${c.album}`;
@@ -313,13 +330,14 @@ for (const c of cards) {
   if (!rec.status && fallback) Object.assign(rec, fallback);
   if (!rec.status) rec.status = 'unavailable';
   out[k] = rec;
+  touched.add(k);
   n++;
   const m = rec.status === 'ready' ? '✓' : rec.status === 'no-preview' ? '~' : '✗';
   console.log(`${m} [${c.batch}] ${c.artist}《${c.album}》${
     rec.front ? ` ${rec.front} ${rec.explicitness}${rec.cleanedOnly ? '(只有淨化版)' : ''} ${rec.appleYear}` : ' 各 storefront 皆無'}`);
-  if (n % 10 === 0) fs.writeFileSync(OUT, JSON.stringify(out, null, 1));
+  if (n % 10 === 0) writeMerged(touched);
 }
-fs.writeFileSync(OUT, JSON.stringify(out, null, 1));
+writeMerged(touched);
 const v = Object.values(out);
 console.log(`\n共 ${cards.length} 張｜ready ${v.filter(x => x.status === 'ready').length}｜有碟無預覽 ${
   v.filter(x => x.status === 'no-preview').length}｜unavailable ${v.filter(x => x.status === 'unavailable').length}｜只有淨化版 ${
