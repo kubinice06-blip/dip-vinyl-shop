@@ -30,6 +30,16 @@ for (const g of groups) {
         say(`合輯缺 exceptionReason（≥12 字）：${x.artist} — ${x.album}`);
       const urls = (x.exceptionEvidenceUrls || []).filter(u => /^https:\/\/\S+$/.test(String(u)));
       if (urls.length < 2) say(`合輯的證據網址不足兩個：${x.artist} — ${x.album}`);
+    } else if (['EP', 'Single', 'DJ-mix'].includes(x.releaseType) &&
+               (x.genreException === 'electronic' || x.releaseTypeException === 'electronic')) {
+      // §5.5 electronic 白名單（2026-09-05 c-97 加，形狀照 c-70 的 asia-mini-album 分支）：
+      // 12 吋單曲／EP／DJ mix 要收就得帶與 §5.6 同等的舉證，逐張說明為什麼這一張是該曲風的核心經典。
+      if (!x.exceptionReason || Array.from(String(x.exceptionReason)).length < 12)
+        say(`§5.5 electronic 缺 exceptionReason（≥12 字）：${x.artist} — ${x.album}`);
+      const urls = (x.exceptionEvidenceUrls || []).filter(u => /^https:\/\/\S+$/.test(String(u)));
+      if (urls.length < 2) say(`§5.5 electronic 的證據網址不足兩個：${x.artist} — ${x.album}`);
+    } else if (['EP', 'Single', 'DJ-mix'].includes(x.releaseType)) {
+      say(`非 Album 未走 §5.5 白名單（缺 genreException=electronic）：${x.artist} — ${x.album}`);
     } else if (x.exceptionReason || (x.exceptionEvidenceUrls || []).length) {
       say(`非合輯卻帶例外欄位：${x.artist} — ${x.album}`);
     }

@@ -4162,3 +4162,53 @@ c-101 退回 GEN 特別糟：日本遊戲原聲在 Apple 的覆蓋率 jp 遠高�
 去載那支腳本——**它是可執行腳本，import 就等於跑它**，用預設批號 c51a…cseac 跑了一輪
 並回寫 `previews.json`。所幸那 254 張全部命中快取、內容一字未變（`git status` 乾淨）。
 **語法檢查要用 `node --check <檔>`，不要用 `import()`。**）
+
+---
+
+## 第 166 條（2026-09-05，c-96 策展層回報＋主線實測）：**Apple 的 `search` 端點對嘻哈盤系統性回淨化版，甚至整張碟查不到——`audits/cleaned-previews-hiphop.md` 那 273 張的成因就在這裡**
+
+c-96 策展層回報「Apple `search` 對這批**十筆有九筆只回 cleaned**，改走
+`lookup?id=<artistId>&entity=album` 才看得到 explicit 雙胞胎」。
+主線用四張實測複驗，**比回報的還糟**：
+
+| 卡 | `search` 回什麼 | 藝人頁 `lookup` 回什麼 |
+|---|---|---|
+| N.W.A《Straight Outta Compton》 | 只有 cleaned（1478946356，13 軌） | **explicit 1440816032，同 13 軌** |
+| JAY-Z《The Blueprint》 | 三張 Blueprint 全是 cleaned | 三張都有 explicit |
+| **GZA《Liquid Swords》** | **根本查不到**，回的是《Legend of the Liquid Sword》——**另一張碟** | 13 軌 explicit 好端端地在 |
+| B.I.G.《Life After Death》 | 前幾筆全是**別的藝人**的同名碟 | — |
+
+**所以管線一路走 `search`，就會系統性地取到淨化版、或把整張碟判成查無。**
+第 143／152／158 條講的都是「我們的查詢字串不對」；**這一條不是——字串對，是 Apple 的搜尋索引本身在騙人。**
+
+### 裁定
+
+`probe-previews.mjs` 加兩道補救，都走藝人頁 `lookup?id=<artistId>&entity=album&limit=200`：
+
+1. **選到 cleaned 時**，回藝人頁找同名同軌數的 explicit 雙胞胎。
+   **軌數必須相等**——差一軌通常是 Deluxe／Expanded，那是別的 release（第 140 條）。
+   命中時記 `explicitTwinRecovered: <原本那個 collectionId>`。
+2. **`search` 完全落空、但該店面確實查成過時**（`okQueries > 0`，`NOQUERY` 不算——
+   那是限流，該留給重試而不是換路），撈整份藝人目錄再比一次盤名，`tried` 記 `<front>:artistPage→N`。
+
+藝人目錄進 cache，同一位藝人的多張卡只查一次。
+
+### 實測效果（c-93 ＋ c-96，各 45 張）
+
+| | c-93 搖滾 | c-96 嘻哈與靈魂 |
+|---|---:|---:|
+| explicit 雙胞胎救回 | 0 | **6**（JAY-Z 四張、Lil' Kim 兩張） |
+| 藝人頁救回（本來會判 unavailable） | 1 | **6**（N.W.A、Raekwon 兩張、GZA、Snoop Dogg、Souls of Mischief） |
+| ready | 38/45 | 34/45 |
+| 仍只有淨化版 | 0 | 2 |
+
+**c-96 的 34 張 ready 裡有 12 張是這兩道補救換來的**（6 張本來會拿到淨化版、6 張本來會判查無）。
+c-93 只救回 1 張——**這個病是嘻哈盤特有的**，符合 c-96 策展層的回報。
+
+### 通則
+
+**「搜尋端點」與「目錄端點」對同一個服務會給出不同的世界。**
+搜尋端點要對所有人排序、會偏好「安全」的版本；目錄端點只是把某個實體底下的東西列出來。
+**凡是「這張碟應該存在卻查不到」或「回來的版本形態不對」，都要再問一次目錄端點。**
+（同族：第 116 條 MB 的 `inc=release-groups` 只回 25 筆、要改用 `release-group?artist=` 分頁——
+也是「換一個端點就看得到完整目錄」。）
