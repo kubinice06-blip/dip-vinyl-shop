@@ -1,0 +1,99 @@
+[
+ {
+  "artist": "零與聲音解放組織",
+  "album": "哦！你宛若盛開的花朵的甜美屍體",
+  "year": 1993,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "零與聲音解放組織（自資）",
+  "why": "台北地下噪音團體零與聲音解放組織的第一張作品，1993 年由團體自己出版的卡帶，MusicBrainz 轄下唯一的 release 掛的廠牌欄就是團名本身（Zero & Sound Liberation Organization），不是任何一家唱片公司；Discogs release 15576974 記 1993 年台灣卡帶，另有 1994 年一筆日本卡帶版（release 15576919）。實掃 seed_cards.json 全檔，池中此團只有 1994 年 Noise 廠牌 NA 03 的《Z.S.L.O.》一張（第 12899 列，已判 heresy），本張是它前一年的自資出版品，兩張不同碟。",
+  "risk": "同團同期易混的出版品至少四筆：1994《狂風呢喃》（Discogs 12188140／7377086，兩筆自資卡帶）、1994 ZSLO 1《The Extreme Cruel Inhumanity of Impossibly Disappearing Poetry》（Discogs 9298117）、1994《Z.S.L.O.1.2.》（Discogs 6915349，日本 Vis A Vis Audio Arts）與池中已有的《Z.S.L.O.》（NA 03）。去重時必須連 1993 與盤名全稱一起鎖。掛名兩種寫法：MB 藝人實體主名是拉丁縮寫 Z.S.L.O.（f56bd5a4），中文全名在 alias；卡片依 TW_INDIE_NAMING_RULINGS 用中文全名，外部服務查詢用 queryAlias。封面預估困難：原盤是自資卡帶，CAA 是否有圖待探測；試聽在 Apple 台灣幾乎必然查無，可能要走 unavailable。",
+  "mbNote": "釘住 release-group f69a78c0-72b1-416e-a681-818a9a573800《哦！你宛若盛開的花朵的甜美屍體》，artist-credit「Z.S.L.O.」（藝人 MBID f56bd5a4，名下 2 個 release-group），first-release-date 1993，primary-type Album，secondary-types 空。轄下 1 個 release：1993 TW Official，廠牌欄「Zero & Sound Liberation Organization」。已回問 release-group 端點確認 primary-type 與標題。對照組 c653c34d-05c6-47e0-afc7-be22f3607542《Z.S.L.O.》(1994) 是池中已有的那張，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Z.S.L.O.",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "陳世興",
+  "album": "行雲",
+  "year": 1993,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "水晶唱片",
+  "why": "水晶唱片音樂實驗室（CP 系列）1993 年的作品，編號 CP0008-2（CD）與 CP0008-4（卡帶），與《配樂勿語》《什麼角色》同屬水晶在地下樂團線之外另闢的創作音樂目錄。MusicBrainz 的 Crystal Records 廠牌（3c93476a）名下只有 13 筆 release，本張是其中之一；Discogs 兩筆實體（release 24832775 CD、21589621 卡帶）都標 1993，曲風欄記 Electronic／Rock，style 記 Ambient／Experimental。實掃 seed_cards.json 全檔，池中無陳世興任何作品。",
+  "risk": "掛名有中英兩種：MB 與封面用中文「陳世興」，Discogs 建成「陳世興 = Jimi Chen」，外部服務查詢要兩種都試（queryAlias 填 Jimi Chen）。盤名同樣中英並列（行雲＝Drifting Clouds），英文 Drifting Clouds 是高頻詞，不可單獨拿來比對。1993 年這張與 1994 年《發現後山的藝術》同批同廠牌，本批兩張都收，去重時靠盤名區分。封面：CAA 是否收錄待探測，水晶 CP 系列的數位化程度低，試聽在 Apple 上很可能查無。",
+  "mbNote": "釘住 release-group a77268fb-927d-4808-8979-2f68bbe472ac《行雲》，artist-credit「陳世興」，first-release-date 1993-10，primary-type Album，secondary-types 空。轄下 1 個 release：1993-10 TW Official，廠牌 Crystal Records，編號 CP0008-2。已回問 release-group 端點確認 primary-type 與標題。對照組 3d1cc141-21bb-417c-add9-c7e9882b76a7《「發現後山的藝術」紀錄片配樂》是本批另一張卡，另行釘住、不與本張互換。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jimi Chen",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "陳世興",
+  "album": "發現後山的藝術",
+  "year": 1994,
+  "genres": [
+   "electronic"
+  ],
+  "label": "水晶唱片",
+  "why": "水晶唱片 CP0012-2，1994 年為同名紀錄片所作的配樂專輯，是水晶 CP 系列裡少數以紀錄片為載體的一張。MusicBrainz 建檔標題帶「紀錄片配樂」尾綴，Discogs 實體（release 25074832，CP0012-2，1994）封面標題只有《發現後山的藝術》，曲風欄記 Electronic／Rock，style 記 Ambient／New Age／Experimental。實掃 seed_cards.json 全檔，池中無陳世興任何作品，水晶唱片 CP 系列在池中亦零張。",
+  "risk": "盤名兩說：MB 是《「發現後山的藝術」紀錄片配樂》，實體封面是《發現後山的藝術》。依 TW_INDIE_NAMING_RULINGS「實體發行品 > 資料庫建檔」與裁定第 123 條（原聲帶尾綴在 canon 剝掉），卡片採《發現後山的藝術》，MB 全名進 aliasReview；rgMbid 與卡片盤名不必相等（裁定第 91／95 條）。MB primary-type 是 Album、secondary-types 含 Soundtrack，依 §5.6 照一般 Album 寫法。掛名同上張，Discogs 作「陳世興 = Jimi Chen」。封面與試聽預估與《行雲》同樣困難。",
+  "mbNote": "釘住 release-group 3d1cc141-21bb-417c-add9-c7e9882b76a7《「發現後山的藝術」紀錄片配樂》，artist-credit「陳世興」，first-release-date 1994，primary-type Album，secondary-types [Soundtrack]。轄下 1 個 release：1994 TW Official，廠牌 Crystal Records，編號 CP0012-2。已回問 release-group 端點確認 primary-type 與標題。對照組 a77268fb-927d-4808-8979-2f68bbe472ac《行雲》是本批另一張卡，另行釘住、不與本張互換。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jimi Chen",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "1995 台灣地下音樂檔案 III 呼吸荳荳紀念專輯",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "友善的狗",
+  "why": "水晶／友善的狗「台灣地下音樂檔案」系列的第三輯，友善的狗 KD-0013，1995 年出版，是這個系列裡以樂團「呼吸」成員荳荳為題的紀念輯。候選清單原記「1995 台灣地下音樂檔案 II／III 在 MusicBrainz 查無、要走 §1」——實查推翻：以 MB 的友善的狗廠牌實體（e885e54e）browse release 全部 27 筆，第三輯確實建了檔（release-group f2e99629，Various Artists，Album／Compilation），只有第二輯查無。Discogs release 9586693（KD-0013，1995）是同一張的實體佐證。實掃 seed_cards.json 全檔，池中此系列零張；同系列第一輯與骨肉皮〈肆〉在 c-TW3 留置檔裡，本批不重收。",
+  "risk": "盤名寫法分歧三處：MB 作《1995 台灣地下音樂檔案 III 《呼吸》荳荳紀念專輯》（內含成對書名號），Discogs 作《1995台灣地下音樂檔案 Ⅲ (呼吸量紀念專輯)》——Discogs 那個 Ⅲ 是羅馬數字字元 U+2162 不是拉丁 III，而「呼吸量」與 MB 的「呼吸》荳荳」其中一方是誤植。卡片採半形拉丁 III、去掉內層書名號，三種寫法都要進 aliasReview，自動比對務必關掉模糊匹配。MB primary-type Album、secondary-types 含 Compilation，依 §5.6 照一般 Album 寫法，不填例外欄位。同系列另有 I（07874a9d，c-TW3 留置）、〈肆〉骨肉皮（e070b469，c-TW3 留置）、1995 濁水溪那張（1e678965）與 1998《Spring Scream 1997 牛年春天吶喊【台灣地下音樂檔案之六】》，五張都不可與本卡合併。封面：友善的狗 KD 系列在 CAA 上不確定，可能要走 Apple 人工核對。",
+  "mbNote": "釘住 release-group f2e99629-b7b7-4107-9a2a-21c5b1e4b2d3《1995 台灣地下音樂檔案 III 《呼吸》荳荳紀念專輯》，artist-credit「Various Artists」，first-release-date 1995，primary-type Album，secondary-types [Compilation]。轄下 1 個 release：1995 TW Official，廠牌 友善的狗，編號 KD-0013。已回問 release-group 端點確認 primary-type 與標題。對照組：07874a9d-79c5-46fa-a916-7c79b58adce0《1994 Taiwan 地下音樂檔案 I》（c-TW3 留置卡）與 e070b469-e134-4d9b-8188-f5c5ebb29deb《壹玖玖伍台灣地下音樂檔案〈肆〉》（c-TW3 留置卡）、1e678965-57c0-39b8-8b61-fff4964a507b《1995台灣地下音樂檔案》（＝濁水溪公社那張，c-TW3 留置卡）三個 release-group 刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Various Artists",
+  "album": "赤聲搖滾第一集：SCUM",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dr. Martens",
+  "why": "1997 年由 Dr. Martens 出資的「赤聲搖滾」系列第一集，也是骨肉皮世代唯一一張把整個台北地下場景收進一張碟的合輯：MusicBrainz 的 artist-credit 直接列出花生隊長、四分衛、夾子、直覺樂隊、骨肉皮、濁水溪公社與蘿菠腿七組，其中花生隊長與夾子在 MB 上名下就只有這一筆 release-group，等於這張是他們在資料庫裡唯一的錄音。實掃 seed_cards.json 全檔，池中赤聲搖滾系列零張；系列後續的《赤聲搖滾》(1999)、《赤聲搖滾伍》(2000)、《Dr. Martens 赤聲搖滾2002》在 MB 上都掛在 1976 名下且 primary-type 是 Other，不是專輯，本批不收。",
+  "risk": "掛名：MB 把七組樂團串成一個 artist-credit 字串，但實體收錄的樂團不止七組，依卡池既有場景型合輯的先例（池中第 11841 列《少年ㄞ國》即掛 Various Artists）採 Various Artists，不套裁定第 16 條的斜線制——那條是給三、四人聯名的 split album 用的。七組團名全部進 aliasReview。盤名：MB 的 release-group 標題在全形冒號後多一個空格（赤聲搖滾第一集： SCUM），轄下 release 的標題無空格，卡片採無空格版。英文 SCUM 是超高頻詞（池中第 2693 列 Napalm Death《Scum》1987 就會撞），比對一律鎖中文全稱＋1997。MB primary-type Album、secondary-types 含 Compilation，依 §5.6 照一般 Album 寫法，不填例外欄位。封面：Discogs 查無這張的建檔，CAA 需實測；試聽 Apple 台灣預估查無。",
+  "mbNote": "釘住 release-group aa9c3576-f130-4dc9-a996-e52c38763532《赤聲搖滾第一集： SCUM》，artist-credit「花生隊長, 四分衛, 夾子, 直覺樂隊, 骨肉皮, 濁水溪公社 & 蘿菠腿」，first-release-date 1997，primary-type Album，secondary-types [Compilation]。轄下 1 個 release：1997 TW Official，廠牌 Dr. Martens，release MBID 945e044d-c592-4773-942e-f6806ed62122，標題《赤聲搖滾第一集：SCUM》（無空格）。已回問 release-group 端點確認 primary-type 與標題。對照組：a2cc0706-23fd-33cd-be41-35f19faa5536《赤聲搖滾》(1999, Other)、8fe0ed47-195c-32e7-8a35-ced7c138b87d《赤聲搖滾伍》(2000, Other)、5d94bf49-0552-383f-b6ab-df97ae58d179《Dr. Martens 赤聲搖滾2002》(2002, Other) 三個 release-group 刻意不釘（primary-type 不是 Album，且都掛在 1976 名下）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

@@ -1,0 +1,487 @@
+[
+ {
+  "artist": "滅火器",
+  "album": "衝啦!",
+  "year": 2007,
+  "genres": [
+   "rock"
+  ],
+  "label": "大港唱片（catno TKR006）／2012 有料音樂再版 ULOUD039",
+  "why": "高雄台語龐克樂團滅火器（2000 年成軍）的首張專輯。MB 轄下 4 個 release 顯示這張的流通有兩層：2007-07-10 由大港唱片發行（TKR006），2012-08-01 再由有料音樂重發（ULOUD039），兩次都標 Official。樂團 2014 年為太陽花學運創作的〈島嶼天光〉獲第 26 屆金曲獎年度歌曲、2015 年成立自家廠牌火氣音樂、2017 年創辦火球祭（中文維基〈滅火器樂團〉）——這張是那條線的起點，池中已有 2009 年之後的三張，唯獨首張缺。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "盤名兩種寫法：MB release-group 作《衝啦!》，中文維基〈滅火器樂團〉的錄音室專輯表寫《Let's Go!》，MB 也建了一筆標題為「Let's Go」的 Pseudo-Release，兩種都要進去重表（`TW_INDIE_NAMING_RULINGS.md` 補訂四已預告過這一組）。**本張 MB 的 artist-credit 是「Fire EX.」不是「滅火器」**（同藝人其他 RG 的 credit 才是中文），以中文掛名做 artist-credit 字串比對會落空（裁定第 20 條）。團名英文有帶點與不帶點兩種（官方 Fire EX.／Discogs Fire E.X.），兩種都要掃。Apple TW collectionId 572183014 是 15 軌、MB 未列曲目，曲數要逐軌核（裁定第 140 條）。CAA release-group 端點 200。**池中掛名有兩種形態**（「滅火器」與「滅火器 Fire EX.」各有卡），本卡依裁定表取中文「滅火器」，不再製造第三種。",
+  "mbNote": "釘 release-group 6e01f804-cd0d-4476-ac74-63c185a4bba1。回問 release-group 端點確認：title「衝啦!」、artist-credit「Fire EX.」、first-release-date 2007-01-01、primary-type Album、secondary-types 空、轄下 4 個 release（TW／Official 三筆，另一筆為 Pseudo-Release「Let's Go」）。藝人 MBID 655ba39c-f754-4ed1-adac-4b2258598ade，名下 17 個 release-group。**刻意不釘**：72eaf6d3-0a32-4ce6-9fd4-05d916b6044e《進撃下半場》（2017，secondary-type Compilation）與 5eaac0ae-59a2-470c-9c84-1fc324bc5db3《Fire EX. 25th Anniversary《Quarter Century》Best Album》（2025，Compilation）——兩張精選皆不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Let's Go；Let's Go!；Fire EX.；Fire E.X.；滅火器樂團",
+  "reissuedBy": "有料音樂（2012）",
+  "g": "b"
+ },
+ {
+  "artist": "滅火器",
+  "album": "無名英雄",
+  "year": 2019,
+  "genres": [
+   "rock"
+  ],
+  "label": "火氣音樂（catno FIREON-0021）",
+  "why": "滅火器在自家廠牌火氣音樂發行的專輯。MB 轄下 4 個 release 顯示這張走出了台灣：2019-12-10 的 XW 數位版、2020-12-10 的 TW 實體（FIREON-0021／RW0038），以及 2020-12-16 由日本 SPACE SHOWER MUSIC 發行的日版《UNSUNG HEROES》（DDCB-11106）。中文維基〈滅火器樂團〉記樂團 2020 年獲第 31 屆金曲獎最佳樂團獎。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**獎項的歸屬要核**：中文維基只寫「2020年第31屆金曲獎最佳樂團獎得獎」，沒有指名是哪一張專輯的入圍作，研究層必須自行確認才能把獎寫進簡介，不得由發行年推得。同一個 RG 底下有中文《無名英雄》與英文《UNSUNG HEROES》兩種盤名（另有一筆 Pseudo-Release「Stand Up Like A Taiwanese」），去重三種都要掃。Apple TW 有《無名英雄》（collectionId 1547581059，10 軌）與《Unsung Heroes》（1541563781，14 軌）兩筆，曲數不同，配試聽要鎖中文那一筆並逐軌核。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group b297ce13-6bf0-45bd-9efc-0f0e3b12a3ad。回問 release-group 端點確認：title「無名英雄」、artist-credit「滅火器」、first-release-date 2019-12-10、primary-type Album、secondary-types 空、轄下 4 個 release（XW／TW／JP Official，另一筆 Pseudo-Release）。藝人 MBID 655ba39c-f754-4ed1-adac-4b2258598ade。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "UNSUNG HEROES；Unsung Heroes；Fire EX.；Fire E.X.",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "滅火器",
+  "album": "家和萬事興",
+  "year": 2023,
+  "genres": [
+   "rock"
+  ],
+  "label": "火氣音樂（catno FIREON-0141）",
+  "why": "滅火器目前最新的一張正規專輯，同樣由自家火氣音樂發行（FIREON-0141），MB 轄下有 TW 實體與 XW 數位兩個 Official release 與一筆英文 Pseudo-Release「Human Condition」。發行前後樂團連發〈新歌六號〉〈人間條件〉兩支單曲（MB 分別為 3ddf10b7、9a799a93，皆 2023 年 5–6 月）。池中滅火器的三張都停在 2016 年之前，這張是目前的目錄末端。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "英文盤名「Human Condition」只存在於 MB 的 Pseudo-Release，Apple 與台版實體都沒有這個寫法，進 queryAlias 但不得當成正式盤名。同名的〈人間條件〉是同期單曲（也是吳念真舞台劇的名字），做曲名比對時容易與盤名混（裁定第 140 條「別張專輯的同名曲」形狀）。Apple TW collectionId 1689536430、10 軌、releaseDate 2023-06-09，與 MB first-release-date 完全一致。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 72c280c3-0577-45bb-ba36-c1c024a9267f。回問 release-group 端點確認：title「家和萬事興」、artist-credit「滅火器」、first-release-date 2023-06-09、primary-type Album、secondary-types 空、轄下 3 個 release（TW／XW Official，另一筆 Pseudo-Release「Human Condition」）。藝人 MBID 655ba39c-f754-4ed1-adac-4b2258598ade。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Human Condition；Fire EX.；Fire E.X.",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "拍謝少年 Sorry Youth",
+  "album": "海口味",
+  "year": 2012,
+  "genres": [
+   "rock"
+  ],
+  "label": "StreetVoice 街聲／2017 好有感覺音樂再版 SYC1201",
+  "why": "拍謝少年的首張專輯。中文維基〈拍謝少年〉記樂團 2005 年成軍、團名 Sorry Youth 是對 Sonic Youth 的致敬，後來改以台語創作才把團名譯為「拍謝少年」；同條目記這張「延續樂團早期後搖滾風格，並奠定台語搖滾路線」，封面以虱目魚為主視覺，虱目魚此後成為樂團的代表物。MB 轄下有 2012-04-30 的 XW（StreetVoice）與 2017-11-08 的 TW 實體再版（好有感覺音樂 SYC1201）。池中已有第二、三張，首張缺。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "MB 另有一筆英文 Pseudo-Release「Seafood」，是本張的英文盤名寫法，要進 queryAlias 但不是正式盤名。Apple TW collectionId 1753652737 的 releaseDate 記 2012-03-21、MB 記 2012-04-30，差一個多月，取 MB（裁定第 77 條）。CAA release-group 端點 200。掛名沿用池中既有形態「拍謝少年 Sorry Youth」，不另造純中文形態以免製造掛名分裂（`audits/pool-artist-name-splits.md`）。",
+  "mbNote": "釘 release-group 581ee5a8-e9e7-42fe-9206-fe2339c72962。回問 release-group 端點確認：title「海口味」、artist-credit「拍謝少年」、first-release-date 2012-04-30、primary-type Album、secondary-types 空、轄下 3 個 release（XW／TW Official，另一筆 Pseudo-Release「Seafood」）。藝人 MBID 6857b9ae-4908-40fc-90e2-f6add97870fa，名下 5 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Seafood；Sorry Youth",
+  "reissuedBy": "好有感覺音樂（2017）",
+  "g": "b"
+ },
+ {
+  "artist": "拍謝少年 Sorry Youth",
+  "album": "噪音公寓",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "海口味有限公司",
+  "why": "拍謝少年第四張專輯，由樂團 2018 年自組的海口味有限公司發行（MB 的 TW release）。中文維基〈拍謝少年〉記這張在募資階段以 600 萬元打破樂團自己 2021 年《歹勢好勢》創下的 300 萬元台灣樂團募資紀錄；同條目記樂團 2018 年起連續三張創作專輯獲金音創作獎最佳搖滾專輯獎。池中已有《兄弟沒夢不應該》與《歹勢好勢》，這張是目錄末端。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "MB 轄下三個 TW release 的日期分歧（2024-06-12／2024-06-24／2024-11），是同一張的不同載體或再壓，年份取 release-group first-release-date 2024。「連續三張獲金音最佳搖滾專輯」這句若要寫進簡介，研究層要逐屆確認本張是否為第三張，不得由「連續三張」推得（裁定第 110 條「一步推論」）。Apple TW collectionId 1748096203、9 軌、releaseDate 2024-06-12 與 MB 一致。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 2291541d-2358-4e8a-9781-12c223cc0ae3。回問 release-group 端點確認：title「噪音公寓」、artist-credit「拍謝少年」、first-release-date 2024-06-12、primary-type Album、secondary-types 空、轄下 3 個 release（皆 TW／Official）。藝人 MBID 6857b9ae-4908-40fc-90e2-f6add97870fa。**刻意不釘**：5e289b82-729d-4557-b5f1-86b0e34a7695《島嶼的記持》（2025 單曲）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sorry Youth",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "茄子蛋 EggPlantEgg",
+  "album": "我們以後要結婚",
+  "year": 2019,
+  "genres": [
+   "rock"
+  ],
+  "label": "艾格普蘭特艾格有限公司",
+  "why": "茄子蛋第二張專輯。中文維基〈茄子蛋〉記樂團 2012 年成立於台北、2017 年首張《卡通人物》拿下第 29 屆金曲獎最佳台語專輯獎與最佳新人獎，2019 年以〈浪流連〉入圍第 30 屆金曲獎年度歌曲獎——〈浪流連〉正是本張的曲目，其 MV 於 2021 年 12 月在樂團官方 YouTube 頻道破一億次觀看。同條目記樂團未加入主流唱片公司，自組「艾格普蘭特艾格有限公司」處理團務。池中已有《卡通人物》，本張是第二張也是最後一張（樂團 2022 年 9 月因主唱聲帶受損宣布休團）。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "〈浪流連〉與同團〈浪子回頭〉（收錄於《卡通人物》）只差一字，曲目比對與行文都容易互換，簡介要逐字核。MB 的 TW release 未填廠牌，公司名取自中文維基，行文要寫成「樂團自組的公司」而非斷言唱片廠牌欄。Apple TW collectionId 1726979655、11 軌、releaseDate 2019-09-03 與 MB first-release-date 完全一致。CAA release-group 端點 200。掛名沿用池中既有形態「茄子蛋 EggPlantEgg」。",
+  "mbNote": "釘 release-group 5e86d9f3-9ea3-4a9d-82c7-c2c22b5051d1。回問 release-group 端點確認：title「我們以後要結婚」、artist-credit「茄子蛋」、first-release-date 2019-09-03、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID 01d9a58e-483d-4239-85e3-1ff2765a0ca4，名下 5 個 release-group。**刻意不釘**：24b12368-657b-4eff-b3fa-45c861e31b6f《愛情你比我想的閣較偉大（《當男人戀愛時》電影主題曲）》（無日期、無 primary-type，電影主題曲）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "EggPlantEgg",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "美秀集團 Amazing Show",
+  "album": "多色寶山大王",
+  "year": 2021,
+  "genres": [
+   "rock"
+  ],
+  "label": "火玄火包",
+  "why": "嘉義樂團美秀集團的第二張專輯。中文維基〈美秀集團〉記樂團 2016 年 5 月開始對外活動、曲風是「帶有復古台味的搖滾和民謠」、演出採用自製樂器，團名「美秀」取自主唱狗柏與鍵盤手冠佑兩位母親的名字。MB 轄下有 TW 與 XW 兩個 Official release，發行方是樂團自家的火玄火包（同一家也發了 2024 年的同名專輯，KK031427）。池中已有首張《電火王》，第二、三張皆缺。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "廠牌名「火玄火包」是把「煊煲」拆字寫成的四個字，任何以廠牌名反查的動作都要用這個確切字串（MB 的兩筆 release 都寫成這樣）。Apple TW collectionId 1602224027、12 軌、releaseDate 2021-10-08 與 MB first-release-date 完全一致。CAA release-group 端點 200。掛名沿用池中既有形態「美秀集團 Amazing Show」；樂團另有 Bisiugroup 一個英文寫法（中文維基），一併進 queryAlias。",
+  "mbNote": "釘 release-group ded206c8-1f5e-4fa2-b561-8490259d897f。回問 release-group 端點確認：title「多色寶山大王」、artist-credit「美秀集團」、first-release-date 2021-10-08、primary-type Album、secondary-types 空、轄下 2 個 release（TW／XW，皆 Official）。藝人 MBID 6ee811ab-8a41-4fec-8221-5b51189e8d8b，名下 5 個 release-group。**刻意不釘**：686a82f6-4ecd-44b8-a146-eb96a4bb12f8《Sound Check》（2017 EP）與 32990d92-4012-4c00-8006-77f9e7005b1a《戀人群像物語》（2022 EP）——兩張 EP 不在 §5.5 白名單內。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Amazing Show；Bisiugroup",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "美秀集團 Amazing Show",
+  "album": "美秀集團同名專輯",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "火玄火包（catno KK031427）",
+  "why": "美秀集團第三張專輯，也是他們的同名作——盤名在 MB、Apple 與實體上都寫成「美秀集團同名專輯」五個字加上「同名專輯」四字，不是單寫團名。由自家火玄火包發行（KK031427），MB 轄下 TW 與 XW 兩個 Official release。池中已有《電火王》，加上同批的《多色寶山大王》，這張補完樂團三張正規盤。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**自我同名卡，身分必須嚴格核對**（`identity.selfTitledVerified` 必填）。身分證據齊備：Apple TW 有確切條目（collectionId 1770002994、11 軌、releaseDate 2024-09-30，與 MB first-release-date 完全一致），CAA release-group 端點 200，release-group MBID 亦已釘住——§1 身分那節「ready 試聽／rgMbid／人工舉證三者任一」的三項全部滿足。盤名字面含團名，用團名做模糊比對會撈到樂團所有碟，比對必須鎖全稱「美秀集團同名專輯」。",
+  "mbNote": "釘 release-group cd639762-e9c2-42ff-9607-284fbc102bf7。回問 release-group 端點確認：title「美秀集團同名專輯」、artist-credit「美秀集團」、first-release-date 2024-09-30、primary-type Album、secondary-types 空、轄下 2 個 release（TW／XW，皆 Official，TW 一筆 catno KK031427）。藝人 MBID 6ee811ab-8a41-4fec-8221-5b51189e8d8b。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Amazing Show；Bisiugroup",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "淺堤 Shallow Levée",
+  "album": "婚禮之途",
+  "year": 2021,
+  "genres": [
+   "rock"
+  ],
+  "label": "",
+  "why": "高雄樂團淺堤的第二張專輯，接在池中已有的首張《不完整的村莊》（2020）之後。MB 轄下有 TW 與 XW 兩個 Official release，皆記 2021-12-01，未填廠牌；樂團自家的公司「湯與海音樂有限公司」（名字取自 2017 年首張 EP《湯與海》）在 2026 年《沈默的鉅作》那筆 release 上才出現在 MB 的廠牌欄。池中淺堤只有一張，這張與 2026 年的新作補完其三張正規盤。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "MB 兩個 release 都沒填廠牌，`label` 欄留空，行文不得斷言發行方。Apple TW collectionId 1594841072、10 軌、releaseDate 2021-12-01 與 MB first-release-date 完全一致。CAA release-group 端點 200。掛名沿用池中既有形態「淺堤 Shallow Levée」，其中的 é 是帶重音的拉丁字母，字串正規化摺得掉重音但摺不掉中英混排，比對要兩段分開試。",
+  "mbNote": "釘 release-group 555b1421-40da-4286-adf5-9e47f6f00556。回問 release-group 端點確認：title「婚禮之途」、artist-credit「淺堤」、first-release-date 2021-12-01、primary-type Album、secondary-types 空、轄下 2 個 release（TW／XW，皆 Official）。藝人 MBID db8e32b0-62e2-4aea-b6a2-e07e0626f623，名下 6 個 release-group。**刻意不釘**：28096d0b-d0e3-45ea-89b9-67ec563a79ed《湯與海》（2017 EP）與 90404cbc-727c-4c7d-a4e8-cbaf0a0fa707《Live In 卡夫卡:十年社遊》（2022，secondary-type Live）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shallow Levee；Shallow Levée",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "淺堤 Shallow Levée",
+  "album": "沈默的鉅作",
+  "year": 2026,
+  "genres": [
+   "rock"
+  ],
+  "label": "湯與海音樂有限公司",
+  "why": "淺堤 2026 年 6 月的新專輯，由樂團自家的湯與海音樂有限公司發行（MB 唯一的 XW Official release）。這是本批年份最新的一張，與同批《婚禮之途》一起補完淺堤的三張正規盤（池中原本只有 2020 年的《不完整的村莊》）。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**新譜的冷門軸會失真**：Last.fm 的 listeners 對 2026 年 6 月才問世的碟還沒長起來，絕對分級會把它評成極冷門，而它其實是正常流通的當代發行。依 §0.8 錨點制，本張的冷門軸一律本機端人工評分（`ratings.source` 記 `manual:depth-rubric`），機器值只作對照，**不得直接採用**；`audits/obscurity-recalibration.md` 記過同一個機制。三軸其餘兩軸也建議一併人工複核。Apple TW collectionId 6768954827、10 軌、releaseDate 2026-06-30 與 MB first-release-date 完全一致。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 410cec7a-6e8b-483e-901e-aeb33f692411。回問 release-group 端點確認：title「沈默的鉅作」、artist-credit「淺堤」、first-release-date 2026-06-30、primary-type Album、secondary-types 空、轄下 1 個 release（XW／Official，湯與海音樂有限公司）。藝人 MBID db8e32b0-62e2-4aea-b6a2-e07e0626f623。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shallow Levee；Shallow Levée",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "百合花 Lilium",
+  "album": "不是路",
+  "year": 2021,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "",
+  "why": "百合花第二張專輯，接在池中已有的首張《燒金蕉》之後。MB 唯一的 release 是 2021-12-24 的 XW Official、未填廠牌。樂團的做法是把台語唸歌與傳統戲曲的唱唸放進搖滾編制，曲風欄因此給 rock＋folk。池中百合花只有一張，這張與 2024 年的《萬事美妙》補完其三張正規盤。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**順帶核到的年份分歧（不影響本張，但要記一筆）**：池中《燒金蕉》記 2019，MB release-group 0001ceab-197c-4ae7-8537-ec73bd7d6179 的 first-release-date 記 2018，而該 RG 底下實際有兩個 release（2018 與 2019-09-06），Apple TW（collectionId 1800497676，標題《燒金蕉 Burnana》）記 2019-09-06——**池中的 2019 有 Apple 與 MB 的第二個 release 支持，MB 的 RG 年份才是可疑的那個**，本機端不必改池中卡片。本張 MB 未填廠牌，`label` 留空。Apple TW collectionId 1719745856、9 軌、releaseDate 2021-12-24 與 MB 一致。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group eb333d7a-a0d7-4226-a1f8-a091f9c7889d。回問 release-group 端點確認：title「不是路」、artist-credit「百合花」、first-release-date 2021-12-24、primary-type Album、secondary-types 空、轄下 1 個 release（XW／Official）。藝人 MBID 62f4f4dd-908a-4cc1-804d-15e8a96b5375，名下 3 個 release-group（另兩個是《燒金蕉》與《Everything Will Go Wonderfully》）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lilium",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "百合花 Lilium",
+  "album": "萬事美妙",
+  "year": 2024,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "",
+  "why": "百合花第三張專輯。MB 轄下兩個 Official release 各用一種盤名：TW 那筆是英文《Everything Will Go Wonderfully》，XW 那筆是中文《萬事美妙》；Apple TW（collectionId 1764559132、13 軌）用的也是《萬事美妙》。卡片取中文為主名（`TW_INDIE_NAMING_RULINGS.md` 規則 3：中英並存者用中文），英文全稱進 queryAlias。與同批《不是路》一起補完百合花目錄。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器《海上的人》《再會！青春》《REBORN》、拍謝少年《兄弟沒夢不應該》《歹勢好勢》、茄子蛋《卡通人物》、美秀集團《電火王》、淺堤《不完整的村莊》、百合花《燒金蕉》、血肉果汁機《GOLDEN太子BRO》、農村武裝青年《幸福在哪裡？》、929《也許像星星》，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名的中英取捨是本批的一個裁定**：MB 的 release-group 標題與 TW 實體 release 都是英文，只有 XW 數位版與 Apple TW 用中文。取中文的理由是規則 3，且封面與試聽兩條解析鏈都會打 Apple TW 的中文條目；反過來取英文也說得通（實體優先）。**這是改一個卡單欄位就能翻的可逆決定**，若店主偏好英文，把 album 換成《Everything Will Go Wonderfully》即可，rgMbid 不變。RG 標題與卡片盤名不必相等（裁定第 91／95 條）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group d37f4cf8-4ea5-4807-8dff-8b000f5b78b1。回問 release-group 端點確認：title「Everything Will Go Wonderfully」、artist-credit「百合花」、first-release-date 2024-09-13、primary-type Album、secondary-types 空、轄下 2 個 release（TW 一筆標題「Everything Will Go Wonderfully」、XW 一筆標題「萬事美妙」，皆 Official）。藝人 MBID 62f4f4dd-908a-4cc1-804d-15e8a96b5375。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Everything Will Go Wonderfully；Lilium",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "珂拉琪",
+  "album": "MEmento·MORI",
+  "year": 2021,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "街聲股份有限公司",
+  "why": "珂拉琪的首張專輯，由街聲（StreetVoice）發行（MB 唯一的 TW Official release）。這是本批唯一一組池中零張、卻已經是當代台語／原住民語搖滾核心名字的樂團：兩人編制，歌詞混用台語與阿美語。閃靈 2023 年大港開唱的合作單曲（MB release-group 301438b3-592a-4a31-b9fc-68033390ca17《CHTHONIC x COLLAGE MEGAPORT 2023》，Apple TW 作《閃靈珂拉琪之大港合體》）可以印證兩團在同一條線上的位置。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名含間隔號 U+00B7（MEmento·MORI）**，字串正規化把它摺掉之後會變成 mementomori，與拉丁文成語「memento mori」的大量條目相撞，任何自動比對都必須連藝人名一起鎖。大小寫也不規則（MEmento／MORI），Apple TW collectionId 1783103459 用的是同一種寫法。團名英文 Collage 是極高頻詞（中文維基〈珂拉琪〉會導向〈拼貼畫〉條目），**絕不可用英文團名做自動比對**（比照裁定表對回聲樂團／Echo 的處置）。Apple 的 releaseDate 記 2021-12-23、MB 記 2021-12，取 MB 的年份。CAA release-group 端點 200。　**池中已有同名的別碟**：M'Boom《Collage》（爵士）——與本團英文團名字串相同，再一次證明英文團名不可用於自動比對。",
+  "mbNote": "釘 release-group c225c3ab-14d1-4916-b555-6374b55dc5e6。回問 release-group 端點確認：title「MEmento·MORI」、artist-credit「珂拉琪」、first-release-date 2021-12、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，街聲股份有限公司）。藝人 MBID 31678e44-9f4f-41eb-ad90-556e011bf38c，名下 5 個 release-group。**刻意不釘**：ff4267f2-9395-44a3-9856-03b3186b70ec《Nine Sols Soundtrack》（2024，secondary-type Soundtrack，遊戲原聲）、9daac774-07a0-4cdc-b2dd-a094c55be520《Nine Sols (Original Soundtrack)》（2024 單曲）與 301438b3-592a-4a31-b9fc-68033390ca17《CHTHONIC x COLLAGE MEGAPORT 2023》（單曲／Live）——遊戲原聲不屬本批的台語獨立場景，本批不收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Memento Mori；Collage",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "珂拉琪",
+  "album": "Deus Ex Machina",
+  "year": 2024,
+  "genres": [
+   "rock"
+  ],
+  "label": "寫在邊緣有限公司",
+  "why": "珂拉琪第二張專輯，由樂團自家的寫在邊緣有限公司發行（MB 唯一的 TW Official release），與首張的街聲不同家。這張與《MEmento·MORI》是樂團目前僅有的兩張正規盤（其餘三個 release-group 是遊戲原聲與合作單曲）。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名是純拉丁文成語**，「Deus Ex Machina」在 MB 與 Apple 上都是高頻詞（多個同名碟），比對必須連藝人名一起鎖，且不可只比盤名。團名英文 Collage 同樣不可作自動比對用。Apple TW collectionId 1783690060、11 軌、releaseDate 記 2024-12-23，MB first-release-date 記 2024-12-22，差一天，取 MB。CAA release-group 端點 200。　**池中已有同名的別碟**：M'Boom《Collage》——與本團英文團名字串相同，英文團名不可用於自動比對。",
+  "mbNote": "釘 release-group 99d0de8e-e4dc-4302-bc83-840223e5dbf7。回問 release-group 端點確認：title「Deus Ex Machina」、artist-credit「珂拉琪」、first-release-date 2024-12-22、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，寫在邊緣有限公司）。藝人 MBID 31678e44-9f4f-41eb-ad90-556e011bf38c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Collage",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "血肉果汁機 Flesh Juicer",
+  "album": "GIGO",
+  "year": 2015,
+  "genres": [
+   "rock"
+  ],
+  "label": "",
+  "why": "血肉果汁機的首張專輯，在此之前樂團只有兩張 EP（2009《下體潰爛》、2011《粗殘台中》，MB 皆標 EP）。池中已有 2021 年的《GOLDEN太子BRO》，這張與 2018 年的《深海童話》補上該團在那之前的兩張正規盤。MB 的 TW release 未填廠牌。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名只有四個拉丁字母 GIGO**（電腦領域的縮寫，garbage in garbage out），是本批字串比對雜訊最高的一筆之一，比對必須連藝人名一起鎖。CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 1578470615（13 軌、標 explicit、releaseDate 2015-06-10 對 MB 的 2015-06-01，差九天）。MB 的 artist-credit 是英文「Flesh Juicer」不是中文，artist-credit 字串比對要用英文（裁定第 20 條）；掛名沿用池中既有形態「血肉果汁機 Flesh Juicer」。Apple 條目標 explicit，配試聽時要確認不是淨化版（`collectionExplicitness`，§6）。",
+  "mbNote": "釘 release-group f4c8d09b-6b42-4ecd-a2c4-4009dfb07c18。回問 release-group 端點確認：title「GIGO」、artist-credit「Flesh Juicer」、first-release-date 2015-06-01、primary-type Album、secondary-types 空、轄下 2 個 release（TW／Official 一筆，另一筆 Pseudo-Release）。藝人 MBID b1d39433-6353-4e3b-8125-8716d984fb2c，名下 13 個 release-group。**刻意不釘**：57c4c6ba-f69d-4256-b2a0-b7256cfaece5《血肉宮建宮蓋廟演唱會》（2017 Live）、5436bc24-c893-48a4-9ccf-96c4fc17cbf4《血肉講鬼：老宅豪門》與 00c8e8a6-a8ab-4984-8f58-da37cd290876《遊戲《打鬼2-白色的廟》原聲帶》（皆 secondary-type Soundtrack）、bd025cbc-565e-4e6e-a05a-6f08a4db9375《玉碎 2015 / Broken Jade》（與閃靈的合作單曲）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Flesh Juicer",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "血肉果汁機 Flesh Juicer",
+  "album": "深海童話",
+  "year": 2018,
+  "genres": [
+   "rock"
+  ],
+  "label": "好有感覺音樂（catno FJ007）",
+  "why": "血肉果汁機第二張正規專輯，由好有感覺音樂發行（MB 的 TW release，編號 FJ007）——同一家廠牌也發了董事長樂團 2016–2019 的三張與拍謝少年《海口味》的 2017 再版，是這條線上重複出現的發行方。MB 另有一筆英文 Pseudo-Release「Fairy Tales of the Ocean Deep」。池中已有《GOLDEN太子BRO》。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "英文盤名「Fairy Tales of the Ocean Deep」只存在於 MB 的 Pseudo-Release，進 queryAlias 但不是正式盤名。CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 1398909746（11 軌、標 explicit）；該筆 releaseDate 記 2018-06-19、MB 記 2018-07-27，差五週，取 MB。Apple 標 explicit，配試聽要確認不是淨化版。artist-credit 為英文「Flesh Juicer」同前。",
+  "mbNote": "釘 release-group fc56d0b4-2d78-4507-b950-2a9cf63273d6。回問 release-group 端點確認：title「深海童話」、artist-credit「Flesh Juicer」、first-release-date 2018-07-27、primary-type Album、secondary-types 空、轄下 2 個 release（TW／Official，好有感覺音樂 FJ007；另一筆 Pseudo-Release「Fairy Tales of the Ocean Deep」）。藝人 MBID b1d39433-6353-4e3b-8125-8716d984fb2c。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fairy Tales of the Ocean Deep；Flesh Juicer",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "農村武裝青年",
+  "album": "根",
+  "year": 2017,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "浮現音樂藝文有限公司（catno EME1801）",
+  "why": "農村武裝青年第四張專輯。中文維基〈農村武裝青年〉記樂團 2007 年成軍，主唱阿達（江育達）是彰化田中人，2007 年在樂生療養院演出時結識楊儒門而創團，作品多以台語傳唱、常出現在社會運動的抗爭現場；同條目的榮譽欄記樂團 2018 年獲第 29 屆金曲獎年度專輯獎與最佳台語專輯獎提名（時間點對應這張 2017 年底的專輯）。MB 的 TW release 由浮現音樂藝文有限公司發行、編號 EME1801。池中已有 2013 年的《幸福在哪裡？》，2009《幹！政府》與 2011《還我土地》已在 c-TW3 留置檔，本批不重收。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**獎項歸屬要核**：中文維基的榮譽欄只寫「2018年：獲得第29屆金曲獎年度專輯獎與最佳台語專輯獎提名」，沒有指名專輯，研究層必須自行確認是否為本張，不得由發行年推得（裁定第 110 條）。盤名只有一個字「根」，字串比對雜訊極高，必須連藝人名一起鎖；Apple TW collectionId 1810172460 的標題是《根 Kin》（Kin 為台語羅馬字），兩種寫法都要掃。Apple 該筆 releaseDate 記 2018-06-22、MB 記 2017-12-30，差半年（Apple 記的是數位上架日，裁定第 77 條），取 MB。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 58f7a54f-7241-497a-b56c-43d1d6dfe29b。回問 release-group 端點確認：title「根」、artist-credit「農村武裝青年」、first-release-date 2017-12-30、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，浮現音樂藝文有限公司 EME1801）。藝人 MBID 96564c60-83f2-4678-8378-21e64c0c9a7d，名下 3 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "根 Kin；Armed Youth",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "農村武裝青年",
+  "album": "予你的歌",
+  "year": 2023,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "田水文化工作室",
+  "why": "農村武裝青年目前最新的一張專輯，由田水文化工作室發行（MB 唯一的 TW Official release）。中文維基〈農村武裝青年〉記主唱阿達 2015 年從台中搬回故鄉彰化二水鄉、承租三合院並與在地社區組織長期合作，這張是他回鄉之後的作品。與同批的《根》一起，把該團在 MB 上的三個 release-group 補齊（池中已有《幸福在哪裡？》）。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 1814208475，該筆標題作《予你的歌 Hōo Lí ê Kua》（帶台語羅馬字與長音符號 ō、ê），**盤名含非 ASCII 拉丁字母**，查詢時中文與羅馬字兩種都要試（裁定第 158 條的查詢面）。Apple releaseDate 記 2023-08-01、MB 只記到年（2023），年份取 2023。",
+  "mbNote": "釘 release-group 16890f74-9724-4570-9ec9-0b18e19c8487。回問 release-group 端點確認：title「予你的歌」、artist-credit「農村武裝青年」、first-release-date 2023、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，田水文化工作室）。藝人 MBID 96564c60-83f2-4678-8378-21e64c0c9a7d。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "予你的歌 Hōo Lí ê Kua；Armed Youth",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "城市",
+  "year": 2005,
+  "genres": [
+   "folk"
+  ],
+  "label": "",
+  "why": "台南創作者謝銘祐在 MusicBrainz 上僅有的兩個 release-group 之一（另一個是 2017 年的《舊年》）。他是這條線上少數以台語民謠為主體、而非樂團編制的名字，池中零張。MB 的 TW release 未填廠牌；Apple TW 的藝人頁（artistId 339409102）顯示他的目錄遠比 MB 完整——2004《泥土》、2012《台南》、2014《也獸》《情獸》、2019《老大人》電影原聲帶、2021《逆時針三分鐘》《彼時》、2024《偏南》、2025《越頭》全都在 Apple 上而 MB 查無。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**MB 建檔極薄是這張的主要風險**：藝人名下只有 2 個 release-group，`why` 引用的其餘作品全部來自 Apple 目錄而非 MB，行文不得把 Apple 的目錄講成完整作品表。盤名只有兩個字「城市」，字串比對雜訊極高，必須連藝人名鎖。CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 1745304543（12 軌、標 explicit）；該筆 releaseDate 記 2005-12-17、MB 只記到年（2005），年份取 2005。**《台南》2012 在 Apple 上有（collectionId 1393950160）但 MB 完全查無**，依規則不收，已寫進未收清單、註明可進 c-92 補遺批。　**池中已有同盤名的別碟**：張懸《城市》（2009）——盤名字串完全相同、掛名不同，字串去重與封面／試聽探測都可能互相誤配，比對一律鎖掛名。",
+  "mbNote": "釘 release-group 8014af89-8e89-48b8-ae44-d245a08b2e95。回問 release-group 端點確認：title「城市」、artist-credit「謝銘祐」、first-release-date 2005、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID e9cf6928-04e7-4394-9164-decf7bdd6784，名下 2 個 release-group（以 release-group?artist=…&limit=100 全列，非 25 筆分頁上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "舊年",
+  "year": 2017,
+  "genres": [
+   "folk"
+  ],
+  "label": "",
+  "why": "謝銘祐在 MusicBrainz 上的第二個、也是最後一個 release-group。與 2005 年的《城市》相隔十二年，中間的《台南》（2012）等作品 MB 全部查無。MB 的 TW release 未填廠牌。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**年份兩說**：MB first-release-date 記 2017（只到年）、Apple TW collectionId 1194938465 記 2016-12-23、15 軌。跨年一天之差，卡單取 MB 的 2017（`rgMbid` 是身分鍵、年份另找，裁定第 91／95 條），行文不得正面斷言發行年，兩個來源都要留。CAA release-group 端點 404（實測），封面走 Apple 那一筆。盤名兩個字「舊年」（台語「去年」之意）字串雜訊高，比對必須連藝人名鎖。",
+  "mbNote": "釘 release-group 668c1bcf-c69a-41d5-a66c-e09d73c67fa6。回問 release-group 端點確認：title「舊年」、artist-credit「謝銘祐」、first-release-date 2017、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID e9cf6928-04e7-4394-9164-decf7bdd6784。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "929",
+  "album": "929同名專輯",
+  "year": 2005,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "風和日麗唱片行（catno AGD-003）",
+  "why": "929 的首張專輯，由風和日麗唱片行發行（MB 的 TW release，編號 AGD-003）；同一家廠牌也發了樂團 2014 年的《3》。中文維基查無 929 的樂團條目（資料全在〈吳志寧〉條目內，見 `TW_INDIE_NAMING_RULINGS.md` 補訂三第 6 點）。池中已有 2008 年的《也許像星星》，首張與 2014 年的《3》都缺，這兩張把該團 MB 上的三個 Album 型 release-group 補齊。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**自我同名卡，身分嚴格核對**：MB 的 release-group 標題是「929同名專輯」（不是單寫「929」），Apple TW 的對應條目標題則是《929》（collectionId 6768261172）。曲數兩邊一致（MB 的 TW release 為 7 軌：渺小／什麼都不做／飛翔／下游的老人／簡單的方式／夏天／簡單的方式（海邊版）；Apple 亦為 7 軌），可以確認是同一張碟——這是本卡 `selfTitledVerified` 的證據。**但 Apple 的 releaseDate 記 2008-11-12、MB 記 2005-03-01**，差三年半，Apple 記的是數位上架日不是原盤年（裁定第 77 條），年份取 MB 的 2005。**Apple 上該藝人被建成 artistId 392580653「929」，與吳志寧個人頁（722152705）分開**，以「929樂團」搜尋會落到吳志寧頁而配不到本張——探測時要用純數字團名。掛名沿用池中既有形態「929」（MB 主名是「929樂團」，不採）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group a1a7ebbf-69fa-42b5-ba0a-4fd1f280ebbc。回問 release-group 端點確認：title「929同名專輯」、artist-credit「929樂團」、first-release-date 2005-03-01、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，風和日麗唱片行 AGD-003，7 軌）。藝人 MBID fb465d6f-b6e6-4775-826a-cbc63f8aa11a，名下 4 個 release-group。**刻意不釘**：922c8611-62de-4e6a-8665-1556f5ec5192《相逢》（2009 EP，不在 §5.5 白名單內）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "929；929樂團",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "929",
+  "album": "3",
+  "year": 2014,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "風和日麗唱片行",
+  "why": "929 的第三張專輯，盤名就是數字三，同樣由風和日麗唱片行發行（MB 的 TW release）。與首張相隔九年，是該團 MB 上最後一個 Album 型 release-group。池中已有《也許像星星》。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名是單一數字「3」，這是本批乃至整條線字串比對風險最高的一筆**：任何模糊比對、子字串比對或去重腳本都會大量誤命中（裁定第 90 條「帶數字的殘餘」形狀），比對一律鎖藝人名＋完整曲目表。MB 的 TW release 為 9 軌（天狼星／青春地圖／當你忘記／越靠近越感覺失去／墜落／齒輪／溫度／終點／緩緩降落），Apple TW collectionId 6768264314 亦為 9 軌，兩邊一致。Apple 的 releaseDate 記 2014-06-24、MB 記 2014-06-01，取 MB。掛名與 Apple artistId 的問題同前一張。CAA release-group 端點 200。　**池中已有同盤名的別碟**：Pole《3》（2000）——盤名字串完全相同、掛名不同，去重與探測務必鎖掛名。",
+  "mbNote": "釘 release-group 57e54cad-5b5d-4646-ba26-48f2d785c7aa。回問 release-group 端點確認：title「3」、artist-credit「929樂團」、first-release-date 2014-06-01、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，風和日麗唱片行，9 軌）。藝人 MBID fb465d6f-b6e6-4775-826a-cbc63f8aa11a。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "929樂團",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "玖壹壹",
+  "album": "打鐵",
+  "year": 2014,
+  "genres": [
+   "hiphop",
+   "pop"
+  ],
+  "label": "",
+  "why": "玖壹壹的出道專輯。中文維基〈玖壹壹〉記團體 2009 年 9 月 11 日成軍於台中、起初在各地廟會、夜店與學校演出，成員為春風（洪瑜鴻）、洋蔥（陳皓宇）、健志（廖建至）；同條目記〈癡情的男子漢〉在 YouTube 拿下近一億點閱，使他們成為網路爆紅的團體。**這是台語饒舌不是搖滾**，曲風給 hiphop＋pop，是店主裁定要收的一組。池中玖壹壹零張。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**年份分歧要當心**：中文維基〈玖壹壹〉寫「2012年6月14日發表了出道作品《打鐵》」，MB release-group first-release-date 記 2014-04-10、Apple TW（collectionId 1498569508）記 2014-09-23。三個來源三個年份。卡單取 MB 的 2014，行文不得正面斷言發行年份，維基的 2012 很可能指的是同名單曲而非專輯（研究層要查清楚）。台語饒舌卡的 Apple 條目要特別核 `collectionExplicitness`——嘻哈是淨化版誤配的重災區（`audits/cleaned-previews-hiphop.md` 記線上嘻哈卡 1,062 張中 273 張配到淨化版），本張 Apple 條目標 notExplicit，要確認那是「本來就無不雅內容」還是淨化版。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group baa22ca1-4a62-4a60-9b96-baf3e4d71121。回問 release-group 端點確認：title「打鐵」、artist-credit「玖壹壹」、first-release-date 2014-04-10、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID 473b318b-7122-4ffd-a6c7-5be09c023597，名下 4 個 release-group。**刻意不釘**：e9c416b5-08d2-4664-9bce-c6bae1e9e8b3《搖擺叔叔DJ CK x 玖壹壹 MIXTAPE Vol.1》（2016，MB 雖標 primary-type Album，但實體是 MIXTAPE，依派工不收）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nine One One；911",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "玖壹壹",
+  "album": "玖肆伍參",
+  "year": 2015,
+  "genres": [
+   "hiphop",
+   "pop"
+  ],
+  "label": "",
+  "why": "玖壹壹第二張正規專輯。中文維基〈玖壹壹〉記團體以這張入圍第 27 屆金曲獎最佳演唱組合獎（2016），同年應邀在金曲獎典禮演出並締造該屆最高分鐘收視率；2016 到 2017 年間他們以《9453》為名在圓滿戶外劇場、台北小巨蛋與高雄巨蛋辦了三場巡迴演唱會——「9453」正是這張盤名「玖肆伍參」的數字寫法。2015 年成員與 T.T.M 的 Right Eye、GOLDEN TONY 共同成立混血兒娛樂。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名有國字與阿拉伯數字兩種寫法**（玖肆伍參／9453），兩者在任何字串正規化下都不會相等，去重與探測都要兩種都掃（裁定第 49 條的同型問題）。Apple TW collectionId 1064846463 標 **explicit**、12 軌、releaseDate 2015-12-07（MB 記 2015-12-05，差兩天）。台語饒舌卡務必取 explicit 版、不可配到淨化版（§6）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 370f0070-a312-4dbe-8770-9cf21ed0abd1。回問 release-group 端點確認：title「玖肆伍參」、artist-credit「玖壹壹」、first-release-date 2015-12-05、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID 473b318b-7122-4ffd-a6c7-5be09c023597。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "9453；Nine One One；911",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "玖壹壹",
+  "album": "周法薷",
+  "year": 2017,
+  "genres": [
+   "hiphop",
+   "pop"
+  ],
+  "label": "",
+  "why": "玖壹壹第三張正規專輯。中文維基〈玖壹壹〉記 2016 年 8 月團體受台北市政府邀請擔任 2017 台北世大運代言人並創作大會主題曲〈我是冠軍〉，該曲即收錄於這張專輯；同條目記團體 2016 年正式加盟滾石唱片。這是本批玖壹壹三張的最後一張，此後的《搏感情》（2018）、《LOCAL》（2020）、《BROMAN》（2022）、《南北二路》（2024）在 MB 上都查無 release-group。當代台語獨立這條線池中現有 14 張（實掃 seed_cards.json 全 14,424 筆）：滅火器 3、拍謝少年 2、茄子蛋 1、美秀集團 1、淺堤 1、百合花 1、血肉果汁機 1、農村武裝青年 1、929 1，另有草東沒有派對與 deca joins 各 2 張；珂拉琪、謝銘祐、玖壹壹三組池中零張。",
+  "risk": "**盤名「周法薷」是人名形狀的三個字**（薷字罕用），Apple 與 MB 都用同一種寫法，但簡體轉換或 OCR 可能寫成「周法蕠」之類的近形字，比對要鎖確切字串。CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 1239322549（10 軌、標 notExplicit、releaseDate 2017-05-26 與 MB first-release-date 完全一致）。notExplicit 要確認是「本來就無不雅內容」而非淨化版（§6）。〈我是冠軍〉的收錄關係取自中文維基敘述，研究層要核曲目表。",
+  "mbNote": "釘 release-group 964f0012-8724-4c2d-a038-907e04db951e。回問 release-group 端點確認：title「周法薷」、artist-credit「玖壹壹」、first-release-date 2017-05-26、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID 473b318b-7122-4ffd-a6c7-5be09c023597。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nine One One；911",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

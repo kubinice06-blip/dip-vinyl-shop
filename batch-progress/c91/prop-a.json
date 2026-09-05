@@ -122,7 +122,7 @@
   ],
   "label": "禾廣娛樂（catno DGS-1403）",
   "why": "董事長樂團第 10 張正規專輯，與前一年的《一條命》同屬自家 DGS 編號系列（DGS-1301／DGS-1403）。中文維基〈董事長樂團〉專輯表把盤名記成「One World／一個世界」、發行方記大吉祥整合行銷，MB 的 TW release 則把發行掛禾廣娛樂股份有限公司——禾廣同期也代理濁水溪公社《鄉土．人民．勃魯斯》（2014，LTKC008）與《亞洲衝擊》（2017，LTKC009）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
-  "risk": "盤名英文 One World 要進 queryAlias。廠牌兩說（大吉祥整合行銷／禾廣娛樂），是自家廠牌與代理發行的差別，行文不得只寫一方。Apple TW collectionId 956111106 的 releaseDate 記 2015-01-08、MB 記 2014-12-20，跨年，取 MB。CAA release-group 端點 200。",
+  "risk": "盤名英文 One World 要進 queryAlias。廠牌兩說（大吉祥整合行銷／禾廣娛樂），是自家廠牌與代理發行的差別，行文不得只寫一方。Apple TW collectionId 956111106 的 releaseDate 記 2015-01-08、MB 記 2014-12-20，跨年，取 MB。CAA release-group 端點 200。　**池中已有 John Martyn《One World》**，本張的英文別名 One World 與之字串相同，別名不可作自動比對用。",
   "mbNote": "釘 release-group 2255ffed-9ce5-4575-9306-6d0ed891682d。回問 release-group 端點確認：title「一個世界」、artist-credit「董事長樂團」、first-release-date 2014-12-20、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，禾廣娛樂股份有限公司 DGS-1403）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
   "releaseType": "Album",
   "exceptionReason": "",

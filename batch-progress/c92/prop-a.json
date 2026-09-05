@@ -471,5 +471,651 @@
   "coverSourceHint": "apple-verified-collection",
   "queryAlias": "Fu De Hsiao",
   "reissuedBy": ""
+ },
+ {
+  "artist": "骨肉皮",
+  "album": "快樂玩",
+  "year": 1999,
+  "genres": [
+   "rock"
+  ],
+  "label": "水晶唱片",
+  "why": "店主 2026-09-05 看封面點名必收的一張——封面直接印「骨肉皮 GROUPIE 快樂玩」。骨肉皮是 1990 年代台北地下場景（Wooden Top、人狗螞蟻那一輩）最早成形的樂團之一，先後出現在水晶／友善的狗的 1994《台灣地下音樂檔案 I》、1995 年自己那張《壹玖玖伍 台灣地下音樂檔案〈肆〉》（友善的狗 KD-0021）與 1997 年赤聲搖滾的《SCUM》合輯，《快樂玩》是他們在水晶唱片出的正規專輯，收〈金+〉〈我讓妳〉〈陪我〉〈紅色達摩〉〈甭提〉〈黑夜搖滾星〉〈牆〉〈快樂玩〉〈矛盾〉〈重回往日時光〉等曲，發完後樂團即進入半休止狀態。〈紅色達摩〉裡徐千秀的吉他 solo 後來被列進「台灣百大吉他 Solo」。池中實掃：骨肉皮零張（1995 年那張仍在 c-TW3 留置檔，未上架，本盤與它是兩張不同的碟）。",
+  "risk": "⚠ **MB 上有一個極像的假陽性，必須明寫排除**：release-group?query=releasegroup:\"快樂玩\" 唯一命中的是「快樂玩BAND 2#」（7813a991-000b-3e25-ab0d-465724c530e0，2000，primary-type=Other），那筆掛在樂團 **1976** 名下、是 1976 的合輯系列，與骨肉皮無關，**刻意不釘**（裁定第 122／126 條的形狀）。年份分歧：多份樂團史敘述與 YouTube 回顧片記 1999，小白兔音樂城的商品目錄記 2000，卡片取 1999、把 2000 寫進備註；水晶當時的 CIRD 編號序（廢物樂隊 CIRD 1066／1067 為 1999、1976《方向感》CIRD1070 為 2000）與 1999 相容。**catno 本身查不到，這是本盤最弱的一點**。掛名依 TW_INDIE_NAMING_RULINGS 一表：正名「骨肉皮」，Groupie 進別名（MB 藝人 d34310f0 主名也是中文）。撞卡：實掃 seed_cards.json，「骨肉皮」「Groupie」「快樂玩」三種字串皆零命中；另比對 c-TW3 留置檔 26 張，本盤不在其中。封面與試聽：Apple 台灣藝人頁 6800666604 名下只有 1995 年那張《壹玖玖伍台灣地下音樂檔案 <肆>》（collectionId 6804890418），**本盤 0 筆、沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=骨肉皮&limit=6 → count=120，score 100「骨肉皮」d34310f0-26f2-419f-9752-aa4e0ef4081f（TW，disambiguation「Taiwanese rock band」），其餘 score ≤35 為肉便器、肉弾、Elvis Presley 等不相干者",
+    "release-group?artist=d34310f0-26f2-419f-9752-aa4e0ef4081f&limit=100&offset=0 → 回 2 筆：1997 Album/Compilation《赤聲搖滾第一集： SCUM》aa9c3576 與 1995 Album《壹玖玖伍台灣地下音樂檔案〈肆〉》e070b469，兩筆都不是《快樂玩》（依第 116 條走分頁端點，2<100 已到底）",
+    "release-group?query=releasegroup:\"快樂玩\"&limit=10 → count=1，唯一命中「快樂玩BAND 2#」7813a991-000b-3e25-ab0d-465724c530e0（2000，primary-type=Other），artist-credit 是 **1976**，不是骨肉皮 → 刻意不釘",
+    "release-group?query=releasegroup:\"快樂玩\" AND artist:\"骨肉皮\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T06:58:00Z",
+   "conclusion": "骨肉皮的 MB 藝人實體存在且名下有 2 個 release-group，逐筆比對後《快樂玩》不在其中；盤名單獨查時 MB 回的是掛在樂團 1976 名下的《快樂玩BAND 2#》，那是完全不相干的別碟（第 122 條形狀），改以盤名加藝人併查後 count=0。四次查詢全部 HTTP 200，未遇 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://wwr.com.tw/cd/groupie/",
+   "https://mojim.com/tw100808x1.htm",
+   "https://www.discogs.com/artist/5467301-%E9%AA%A8%E8%82%89%E7%9A%AE"
+  ],
+  "manualRuling": "店主 2026-09-05 看封面點名《快樂玩》必收，並裁定「§1 那批都要」；核可台灣線 §1 人工身分補遺批（c-92），依 c-87 管線。⚠ 本卡是全批舉證最薄的一張（Discogs 無條目、Apple 無條目、catno 查不到），三個來源分別是小白兔音樂城商品目錄、魔鏡歌詞網的專輯曲目頁與 Discogs 藝人頁。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Groupie",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "趙一豪",
+  "album": "把我自己收回來",
+  "year": 1990,
+  "genres": [
+   "rock"
+  ],
+  "label": "水晶唱片",
+  "why": "《把我自己掏出來》被行政院新聞局以「歌詞粗俗不雅」查扣後，水晶唱片改題重發的那一版，八摺封套、CD 編號 CIRD 0005-2、卡帶 CIRD 0005-4（Discogs release 9586868 與 23437010）。曲序與原版不同、部分歌詞改過，是**另一件商品**而非同一張的別名——TW_INDIE_NAMING_RULINGS 第三章已把三個名字兩件商品的關係整理清楚，並明訂「若日後要收必須另立一次裁定」。曲目含〈這幾天〉〈把我自己收回來〉〈爸爸媽媽這是什麼地方〉〈過程〉等。池中實掃：已有《把我自己掏出來》一張（1990），本盤是第二張。",
+  "risk": "**收不收的裁定寫在這裡（依店主授權自行判定）：收，當獨立一張卡。** 三個判準都成立——(1) 有先例：TW_INDIE_NAMING_RULINGS 第三章第 3 點已預留「另立一次裁定即可收」的路；(2) 可逆：撤掉只需刪一張卡單，不動卡池結構；(3) 它與池中那張是不同商品（改題、改詞、不同編號、不同封套），合併反而會讓「台灣出版史最後一張查禁專輯」這件事的前後兩版在池中變成一張。⚠ 盤名三寫法：《把我自己收回來》（本卡正名，Discogs CD 與卡帶條目）、《把我自己掏回來》（Discogs 卡帶 23436827，catno 同為 CIRD 0005-4，是**同一張的建檔錯字，永遠不開卡**）、《收回來》（候選清單的簡寫）。年份：Discogs 依水晶編號記 1989，但本盤是查禁後的改版、必然晚於 1990 年的原版，故取 1990 並與池中原版一致；簡介需註明 Discogs 的 1989 是編號年。掛名：正名趙一豪，Sissey Chao（Discogs 條目名）／Sissey Zhao（封面實印）／赵一豪 三種進別名。⚠ MB 上趙一豪實體（19079df5）在、名下 release-group 為 0。封面與試聽：Apple 台灣藝人搜尋無此人，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=趙一豪&limit=6 → count=3707，score 100「趙一豪」19079df5-f1de-4669-8e59-a88a73297dfc（TW），其餘 score ≤45 為秦一豪、赵一琪、椎名豪等他人",
+    "release-group?artist=19079df5-f1de-4669-8e59-a88a73297dfc&limit=100&offset=0 → 回 200，release-groups 陣列長度 0（依第 116 條走分頁端點）",
+    "release-group?query=releasegroup:\"把我自己收回來\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"把我自己掏回來\"&limit=10 → count=0（Discogs 的錯字寫法也查過，同樣 0）"
+   ],
+   "checkedAt": "2026-09-05T07:02:00Z",
+   "conclusion": "趙一豪的 MB 藝人實體存在（score 100 精確命中本人）但名下 release-group browse 回 0 筆，連池中已上架的《把我自己掏出來》都沒有建檔；本盤盤名以正名與 Discogs 的錯字寫法各查一次，count 皆為 0。四次查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/9586868",
+   "https://www.discogs.com/release/23437010",
+   "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；本卡另依 c-92 rulings 第 5 條正式裁定收錄《把我自己收回來》為獨立卡，補列於 TW_INDIE_NAMING_RULINGS 第三章第 3 點所預留的位置。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Sissey Chao",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "夾子電動大樂隊",
+  "album": "不會說台語",
+  "year": 2003,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "友善的狗",
+  "why": "友善的狗發行的十四軌專輯（Apple ℗ 行記 2003 友善的狗文化活動股份有限公司），是夾子在 2000 年那張同名首張之後的第二張正規盤。這條線的形狀是台北地下場景少見的：以「電動」（會跳舞的女舞群）與綜藝台味的舞台形式包裝，音樂本身卻是硬邦邦的樂團編制，1999 年就出現在角頭《Taiwan Independent Compilation（ㄞ國歌曲）》與 Roofrack 的春天吶喊合輯裡。池中實掃：夾子電動大樂隊已有 2000 年同名首張一張，本盤不重複。",
+  "risk": "⚠ **團名分期是這條線最容易錯的地方**：TW_INDIE_NAMING_RULINGS 記「同一批人三個時期三個名字——2000·2002·2014 用夾子電動大樂隊；2003 用夾子樂團；2005·2010·2012 用夾子太硬啦！」，但 Apple 台灣（藝人 709032916）與 Discogs（藝人 4949063）**兩邊的實體 credit 都把 2003 這張掛在「夾子電動大樂隊」名下**。依同一份裁定表的規則 2 細則「實體發行品／credit 的寫法 > 樂團官方自稱」，卡片取夾子電動大樂隊，夾子樂團／夾子太硬啦！／The Clippers 全部進別名；⚠ 這個判斷與裁定表的分期表相衝突，若店主要照分期表改，只需改 artist 欄（可逆）。撞卡：實掃 seed_cards.json，「不會說台語」零命中；池中夾子那張的 album 是「夾子電動大樂隊」，不會互撞。⚠ MB 上搜「夾子」score 100 回的是簡體「夹子道」（542317b5，CN，名下唯一 RG 是 2006 年的合輯《死心塌地》），那是不相干的實體。封面：走 §4 apple-verified-collection 例外，collectionId 1682222679，頁面 https://music.apple.com/tw/album/%E4%B8%8D%E6%9C%83%E8%AA%AA%E5%8F%B0%E8%AA%9E/1682222679 ——藝人欄「夾子電動大樂隊」、十四軌、℗ 2003 友善的狗，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=夾子&limit=6 → count=7171，score 100「夹子道」542317b5-2565-4a9b-903e-adaf57475097（CN，簡體、不相干）、score 99「lemon夹子」、score 67「夾子電動大樂隊」e136f539-98ad-463d-b6fb-691dc9faa3e7（TW，Taiwanese rock band）",
+    "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 回 1 筆，且是 1997 Album/Compilation《赤聲搖滾第一集： SCUM》aa9c3576（合輯，樂團只是參與者），名下沒有任何一張自己的專輯",
+    "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆，2006 Album/Compilation《死心塌地》ac502fb2，與本盤無關（第 122 條的反向確認）",
+    "release-group?query=releasegroup:\"不會說台語\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T07:06:00Z",
+   "conclusion": "MB 上夾子有兩個相關實體：簡體的「夹子道」（score 100，是搜尋回的不相干結果）名下只有一張 2006 年合輯，台灣的「夾子電動大樂隊」（score 67）名下只有一筆 1997 年的赤聲搖滾合輯、沒有任何自己的專輯；盤名反查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都逐一 browse 過而非只看搜尋分數最高的那個。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E4%B8%8D%E6%9C%83%E8%AA%AA%E5%8F%B0%E8%AA%9E/1682222679",
+   "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "The Clippers",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "夾子電動大樂隊",
+  "album": "地下人",
+  "year": 2012,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Hove",
+  "why": "Hove 發行、編號 CLIPS-12001 的 CD，附八頁小冊與腰帶（Discogs release 8269115）。Discogs 把它歸在 electronic／rock 底下的 avantgarde，曲目〈問我要不要開趴〉〈表情〉〈搬出去〉〈玩樂器〉〈沒錯〉——與 2000 年那張以「轉吧！七彩霓虹燈」的舞台綜藝形象出道時相比，這張已經走到自己開廠牌（CLIPS 編號序自 2012 起）、自己定義聲響的階段。池中實掃：夾子電動大樂隊已有 2000 年同名首張，本盤不重複。",
+  "risk": "⚠ 團名分期同前一張：裁定表把 2012 歸在「夾子太硬啦！」時期，但 Discogs 這張實體的藝人欄印的是「夾子電動大樂隊」，依實體 credit 優先取之，夾子太硬啦！進別名（可逆，只改 artist 欄）。撞卡：實掃 seed_cards.json，「地下人」零命中；⚠ 這是三個常用字的組合，中文比對雜訊高（其他歌手同名曲不少），比對必須連藝人與 2012 一起鎖。廠牌兩說：Discogs 記 Hove（CLIPS-12001），同條目另掛 Warner/Chappell Music Taiwan 為版權方，卡片取 Hove。⚠ MB 兩個夾子實體名下都查無此盤。封面與試聽：Apple 台灣搜尋「夾子 地下人」0 筆，藝人頁 709032916 名下只有轉吧七彩霓虹燈、不會說台語、情慾教室三筆，**本盤沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=夾子&limit=6 → score 100「夹子道」542317b5（CN，不相干）、score 67「夾子電動大樂隊」e136f539（TW）",
+    "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 1 筆，1997 年的《赤聲搖滾第一集： SCUM》合輯，無 2012 年條目",
+    "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆，2006《死心塌地》，無 2012 年條目",
+    "release-group?query=releasegroup:\"地下人\" AND artist:\"夾子\"&limit=10 → count=0（盤名太常見，連藝人一起鎖）"
+   ],
+   "checkedAt": "2026-09-05T07:08:00Z",
+   "conclusion": "兩個夾子相關的 MB 藝人實體名下各只有一筆合輯，都不是 2012 年這張；因盤名是常見詞，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都 browse 過、沒有只憑搜尋分數最高的簡體實體下結論。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/8269115",
+   "https://www.discogs.com/artist/4949063-%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "夾子太硬啦！",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "夾子電動大樂隊",
+  "album": "情慾教室",
+  "year": 2014,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Clips",
+  "why": "自家 Clips 廠牌編號 Clips14001、由 Hove 共同掛名，數位本裝加透明網印塑膠外套（Discogs release 8271232）。十二軌，Discogs 的風格欄記 experimental／acoustic，是三張自營期作品裡編制最鬆的一張。池中實掃：夾子電動大樂隊已有 2000 年同名首張，本盤與本批另收的《不會說台語》《地下人》互不相同。",
+  "risk": "⚠ 團名分期同本批另兩張夾子：Apple（藝人 709032916）與 Discogs（藝人 4949063）的實體 credit 都是「夾子電動大樂隊」，取之；夾子太硬啦！／夾子樂團／The Clippers 進別名。撞卡：實掃 seed_cards.json，「情慾教室」零命中。廠牌兩說：Discogs 條目同時掛 Clips 與 Hove（同一編號 Clips14001），Apple ℗ 行寫 2014 Warner/Chappell Music Taiwan Ltd.（版權方），卡片取 Clips。⚠ MB 兩個夾子實體名下都查無此盤。封面：走 §4 apple-verified-collection 例外，collectionId 1040454284，頁面 https://music.apple.com/tw/album/%E6%83%85%E6%85%BE%E6%95%99%E5%AE%A4/1040454284 ——藝人欄「夾子電動大樂隊」、十二軌、與 Discogs 實體軌數一致，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=夾子&limit=6 → score 100「夹子道」542317b5（CN，不相干）、score 67「夾子電動大樂隊」e136f539（TW）",
+    "release-group?artist=e136f539-98ad-463d-b6fb-691dc9faa3e7&limit=100&offset=0 → 1 筆 1997 年合輯，無 2014 年條目",
+    "release-group?artist=542317b5-2565-4a9b-903e-adaf57475097&limit=100&offset=0 → 1 筆 2006 年合輯，無 2014 年條目",
+    "release-group?query=releasegroup:\"情慾教室\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T07:10:00Z",
+   "conclusion": "兩個夾子相關的 MB 實體名下各只有一筆合輯，2014 年這張不在其中；盤名反查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，兩個候選實體都逐一 browse 過。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/8271232",
+   "https://music.apple.com/tw/album/%E6%83%85%E6%85%BE%E6%95%99%E5%AE%A4/1040454284"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；團名分期的衝突另依 c-92 rulings 第 6 條（實體 credit 優先於分期表）。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "夾子太硬啦！",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "糯米糰",
+  "album": "糯米糰",
+  "year": 1997,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "寶麗金",
+  "why": "1994 年成軍、1997 年推出的首張專輯，十一軌（Apple ℗ 行記 1997 Gold Typhoon Entertainment Ltd.，即當年寶麗金一系的權利承接方）。中文維基〈糯米糰 (樂團)〉載這張的曲子不是先譜再編，而是團員以 jam session 即興發展出來的；他們 1996 年就以〈畢業旅行〉出現在 Philips／寶麗金的《共譜新聲》合輯（Discogs master 2594105）。2000 年轉到魔岩才出《青春鳥王（巴黎草蛋）》（MSD-085），那張 MB 有建檔、本卡不是那張。池中實掃：糯米糰零張。",
+  "risk": "⚠ **自我同名卡（selfTitled）**：盤名等於團名，身分必須嚴格核對。依 §1 2026-09-04 的放寬，身分證據走「§1 人工身分舉證」這一路即可，且本盤有精確 collectionId 可供本機 lookup 覆核。⚠ 盤名兩說：Apple 台灣建成《糯米糰》（自我同名），中文維基與豆瓣寫《同名專輯》——那是「同名專輯」這個詞被當成標題在用，卡片取 Apple 的自我同名寫法，《同名專輯》進別名。年份兩說：維基記 1997 年 4 月創作、5 月由寶麗金發行，Apple releaseDate 記 1997-11-01，兩者同年，取 1997。⚠ 候選清單原列的《GO GO 糯米糰》查無此盤——Apple 藝人頁 254549288 名下七筆、Discogs 藝人頁 5465622 名下八筆，都沒有這個標題，判定為清單筆誤，改收這張真正的首張（見 c-92 rulings 第 7 條）。撞卡：實掃 seed_cards.json，「糯米糰」在 artist 與 album 兩欄皆零命中；羅馬拼音 Sticky Rice（Discogs 的 ANV）也查過。封面：走 §4 apple-verified-collection 例外，collectionId 1573607993，頁面 https://music.apple.com/tw/album/%E7%B3%AF%E7%B1%B3%E7%B3%B0/1573607993 ——藝人欄「糯米糰」、盤名「糯米糰」、十一軌、℗ 1997，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=糯米糰&limit=6 → count=669，score 100「糯米糰」41aed5a2-3227-4c5d-a732-d1b7528bfad9（TW），其餘 score ≤50 為糯米、米米CLUB 等他人",
+    "release-group?artist=41aed5a2-3227-4c5d-a732-d1b7528bfad9&limit=100&offset=0 → 回 4 筆：2000 Album《青春鳥王》11a54b17、2003 Album/Live《903 id club 拉闊音樂會》532ffbe0、2001 EP《Super EP》d86aed60、2003 EP《迷你專輯(貳)》f0ec6342。1997 年的同名首張不在其中（依第 116 條走分頁端點，4<100 已到底）",
+    "release-group?query=releasegroup:\"糯米糰\" AND artist:\"糯米糰\"&limit=10 → count=0（自我同名，必須併查才有意義）",
+    "release-group?query=releasegroup:\"GO GO 糯米糰\"&limit=10 → count=0（候選清單原列的標題一併確認，同樣查無）"
+   ],
+   "checkedAt": "2026-09-05T07:15:00Z",
+   "conclusion": "糯米糰的 MB 藝人實體存在且名下有 4 個 release-group（2000 年後的一張專輯、一張現場與兩張 EP），1997 年的同名首張不在其中；自我同名盤以 releasegroup 加 artist 併查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點，搜尋 score 100 精確命中台灣的糯米糰本團。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E7%B3%AF%E7%B1%B3%E7%B3%B0/1573607993",
+   "https://zh.wikipedia.org/zh-tw/%E7%B3%AF%E7%B1%B3%E7%B3%B0_(%E6%A8%82%E5%9C%98)",
+   "https://www.discogs.com/artist/5465622-%E7%B3%AF%E7%B1%B3%E7%B3%B0"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；盤名由《GO GO 糯米糰》更正為《糯米糰》另依 c-92 rulings 第 7 條。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Sticky Rice",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "花生隊長",
+  "album": "Oh my god",
+  "year": 2002,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sony Music Taiwan",
+  "why": "Sony Music Taiwan 編號 IMD0220 的 CD（Discogs release 11465264），是這支從台北地下場景被主流廠牌簽走的樂團唯一一張正規盤。曲目中英夾雜——〈BoppaNova〉〈Umbrella〉〈Rendezvous〉〈下行和絃〉〈墨鏡〉〈When You Talk to Computer〉〈Disconova〉〈Smoke白色紙捲煙〉——名字本身就交代了他們在 bossa／disco 節奏上寫吉他樂團曲的作法。此前他們出現在 1999 年角頭《Taiwan Independent Compilation（ㄞ國歌曲）》、2001 年水晶《崩代紀事》（CIRD1116）與 1997 年赤聲搖滾的《SCUM》合輯裡。池中實掃：花生隊長零張。",
+  "risk": "撞卡：實掃 seed_cards.json，「花生隊長」零命中；⚠ 盤名「Oh my god」是超高頻英文詞組，**絕對不可單用盤名做自動比對**，必須連藝人與 2002 一起鎖（同 TW_INDIE_NAMING_RULINGS 對「Ring of Fire」的處理）。盤名大小寫依 Discogs 實體條目寫成「Oh my god」（非全大寫），其他大小寫寫法進別名。⚠ MB 上藝人實體「花生隊長」（0761d5bb）在、名下唯一的 release-group 是 1997 年的《赤聲搖滾第一集： SCUM》合輯，樂團只是參與者、不是主掛名；且 artist 搜尋的第 2 名之後是「队长」「Queen」「いきものがかり」這種完全不相干的結果（第 122 條形狀）。年份 2002 由 Discogs 實體條目直記；候選清單原記 2000，以 Discogs 實體為準。封面與試聽：Apple 台灣藝人搜尋「花生隊長」無實體、盤名搜尋 0 筆，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=花生隊長&limit=6 → count=3878，score 100「花生隊長」0761d5bb-d3c7-4f7c-9921-a2489a9968d6，其後 score ≤45 依序是「队长」「いきものがかり」「Queen」「隊長さん」「ブリー隊長」——全部不相干（第 122 條形狀）",
+    "release-group?artist=0761d5bb-d3c7-4f7c-9921-a2489a9968d6&limit=100&offset=0 → 回 1 筆，1997 Album/Compilation《赤聲搖滾第一集： SCUM》aa9c3576-f130-4dc9-a996-e52c38763532，是樂團的參與作品而非本盤（依第 116 條走分頁端點）",
+    "release-group?query=releasegroup:\"Oh my god\" AND artist:\"花生隊長\"&limit=10 → count=0（盤名是高頻詞，必須連藝人鎖）"
+   ],
+   "checkedAt": "2026-09-05T07:18:00Z",
+   "conclusion": "花生隊長的 MB 藝人實體存在，名下唯一的 release-group 是他們參與的 1997 年赤聲搖滾合輯，2002 年這張正規盤不在其中；因盤名是超高頻英文詞組，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點；藝人搜尋除 score 100 那筆外全是不相干實體，已確認 score 100 那筆才是本團。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/11465264",
+   "https://www.discogs.com/artist/6264083-%E8%8A%B1%E7%94%9F%E9%9A%8A%E9%95%B7"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Peanut Captain",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "脫拉庫",
+  "album": "歡迎脫拉庫",
+  "year": 1999,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sony Music Entertainment (Taiwan)",
+  "why": "1996 年成軍（主唱張國璽、吉他柯宗佑、貝斯彭承吉、鼓陳沐凡）的樂團首張，1999 年由台灣索尼發行，十四軌（Apple ℗ 行記 1999 Sony Music Entertainment (Taiwan) Ltd.）。⚠ 這張才是**首張**——池中已有的《飛向陽光飛向你》是 2000 年 7 月的第二張，索尼 2013 年還把兩張合成《歡迎脫拉庫+飛向陽光飛向你》雙 CD 重發（博客來商品 0020166816、索尼官網有專頁）。池中實掃：脫拉庫已有第二張，首張零張。",
+  "risk": "⚠ **候選清單把這張寫成「脫拉庫第二張」是錯的，順序相反**：MB 藝人 c0dab6aa 名下唯一的 release-group 是 2000 年的《飛向陽光飛向你》（828fb325，池中那張），本盤 1999 年的首張才是 MB 查無的那一張。撞卡：實掃 seed_cards.json，「歡迎脫拉庫」零命中；⚠ 盤名含團名，與池中《飛向陽光飛向你》的字串不重疊，但本機比對要注意 2013 年合輯《歡迎脫拉庫+飛向陽光飛向你》會同時撞到兩張的字串——那是雙 CD 重發、不另立卡。掛名：正名脫拉庫，TOLAKU 進別名（Apple 藝人頁 316588311 用中文，索尼官網用「脫拉庫 TOLAKU」）。封面：走 §4 apple-verified-collection 例外，collectionId 339378322，頁面 https://music.apple.com/tw/album/%E6%AD%A1%E8%BF%8E%E8%84%AB%E6%8B%89%E5%BA%AB/339378322 ——藝人欄「脫拉庫」、十四軌、℗ 1999 Sony Music Entertainment (Taiwan) Ltd.，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=脫拉庫&limit=6 → count=106，score 100「脫拉庫」c0dab6aa-cc48-44db-a00e-de1b024d889f（TW），其餘 score ≤33 為拉拉拉拉伯克、Johannes Brahms、羊库库 等不相干者",
+    "release-group?artist=c0dab6aa-cc48-44db-a00e-de1b024d889f&limit=100&offset=0 → 回 1 筆，2000 Album《飛向陽光飛向你》828fb325-0cd8-407a-a64a-d578af16dba5（即池中已有的第二張），1999 年的首張不在其中",
+    "release-group?query=releasegroup:\"歡迎脫拉庫\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"賀爾蒙先生\"&limit=10 → count=0（同藝人本批另一張，一併確認）"
+   ],
+   "checkedAt": "2026-09-05T07:22:00Z",
+   "conclusion": "脫拉庫的 MB 藝人實體存在，名下只有一個 release-group、且是 2000 年的第二張（池中已上架的那張），1999 年首張完全沒有建檔；盤名反查 count=0。四次查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋 score 100 精確命中本團。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E6%AD%A1%E8%BF%8E%E8%84%AB%E6%8B%89%E5%BA%AB/339378322",
+   "https://www.books.com.tw/products/0020166816",
+   "https://zh.wikipedia.org/zh-tw/%E8%84%AB%E6%8B%89%E5%BA%AB"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；「脫拉庫第二張」的順序更正另依 c-92 rulings 第 8 條。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "TOLAKU",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "脫拉庫",
+  "album": "賀爾蒙先生",
+  "year": 2015,
+  "genres": [
+   "rock"
+  ],
+  "label": "華納音樂（濃純香）",
+  "why": "解散十餘年後重組、2015 年 6 月 26 日發行的第三張，十二軌五十四分鐘（Apple ℗ 行記 Warner Chappell Music, Hong Kong Limited Taiwan Branch；博客來商品 0020186683 的品名是「MR.HORMONE賀爾蒙先生」）。主唱張國璽此時已是民航機師，樂團 2012 年宣布回歸、2013 年出單曲並與四分衛跑《團團轉》巡演，這張讓他們入圍當屆金曲獎最佳樂團獎。池中實掃：脫拉庫已有 2000 年那張，本批同藝人另收 1999 年首張，三張互不相同。",
+  "risk": "⚠ 盤名有中英並列的問題：實體與博客來品名寫「MR.HORMONE賀爾蒙先生」（英文在前、無分隔），Apple 台灣建成純中文《賀爾蒙先生》，Spotify 建成「賀爾蒙先生Mr.Hormone」（中文在前）。依 TW_INDIE_NAMING_RULINGS 規則 3（中英並存取中文為主名）取《賀爾蒙先生》，另兩種寫法進別名——**三種寫法在去重時是三個不同字串，本機比對三種都要看**（第 49 條）。撞卡：實掃 seed_cards.json，「賀爾蒙」零命中。廠牌兩說：博客來與新聞稿記華納音樂／濃純香，Apple ℗ 行記 Warner Chappell 台灣分公司（版權方），卡片取前者。⚠ MB 藝人名下只有 2000 年那一張。封面：走 §4 apple-verified-collection 例外，collectionId 1478113307，頁面 https://music.apple.com/tw/album/%E8%B3%80%E7%88%BE%E8%92%99%E5%85%88%E7%94%9F/1478113307 ——藝人欄「脫拉庫」、十二軌，與博客來商品頁的曲數一致，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=脫拉庫&limit=6 → score 100「脫拉庫」c0dab6aa-cc48-44db-a00e-de1b024d889f（TW）",
+    "release-group?artist=c0dab6aa-cc48-44db-a00e-de1b024d889f&limit=100&offset=0 → 1 筆，2000 年的《飛向陽光飛向你》，無 2015 年條目",
+    "release-group?query=releasegroup:\"賀爾蒙先生\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"Mr. Hormone\"&limit=10 → count=0（英文題反查）"
+   ],
+   "checkedAt": "2026-09-05T07:25:00Z",
+   "conclusion": "脫拉庫的 MB 藝人實體名下只有 2000 年那一張 release-group，2015 年重組後的這張沒有建檔；盤名以中文與英文題兩種寫法查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本團而非同名他人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E8%B3%80%E7%88%BE%E8%92%99%E5%85%88%E7%94%9F/1478113307",
+   "https://www.books.com.tw/products/0020186683"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Mr. Hormone",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "裝咖人",
+  "album": "夜官巡場",
+  "year": 2021,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "風潮音樂",
+  "why": "台文樂團裝咖人的首張專輯，2021 年 11 月 15 日上數位（Apple ℗ 行記 2021 WIND MUSIC International Corporation），2022 年 2 月 20 日由老頭音樂出實體 CD（Discogs release 22282648，編號 NOWCD20220302）。十三軌全為台文，曲名附白話字羅馬拼音——〈拜塗虱〉Pài thôo-sat、〈乩身〉Ki-Sin、〈羅漢〉Lô Hàn、〈夜官〉Iā-kuan、〈拜請〉Pài-tshiánn、〈水流媽〉Tsuí-lâu-Má——把嘉義民雄火燒庄的地方祭祀、陰神信仰、鄉野傳說與白色恐怖史寫進北管碰民謠搖滾的編制。專輯同名小說《夜官巡場 Iā-Kuan Sûn-Tiûnn》由九歌出版（博客來商品 0010929764），並辦過小說不插電講唱會（Openbook 閱讀誌有現場報導）。池中實掃：裝咖人零張。",
+  "risk": "⚠ **MB 搜「裝咖人」回的是完全不相干的人**：score 100 是「顏靜萱」（1362e453，TW，名下 0 個 release-group），其後是「樂咖」「西装」「甲田雅人」，沒有一個是本團——這是裁定第 122 條的形狀，不等於查無，故另以盤名反查確認。撞卡：實掃 seed_cards.json，「裝咖人」與「夜官」皆零命中；羅馬拼音 Tsng-kha-lâng／Iā-Kuan Sûn-Tiûnn 也查過。廠牌兩說：Apple ℗ 行是風潮音樂（WIND MUSIC），Discogs 實體記老頭音樂——數位與實體分屬不同發行方，卡片取數位版的風潮，老頭音樂進備註。年份：數位 2021-11-15、實體 2022-02-20，取首次出版年 2021。獎項：⚠ 查證後**不是**金曲最佳台語專輯得主——第 33 屆（2022）該獎由百合花《不是路》拿下，本盤未在該屆得獎名單內；簡介不得寫成得獎作品，可寫文化部 110 年度語言友善環境及創作應用補助發行。封面：走 §4 apple-verified-collection 例外，collectionId 1594803360，頁面 https://music.apple.com/tw/album/%E5%A4%9C%E5%AE%98%E5%B7%A1%E5%A0%B4/1594803360 ——藝人欄「裝咖人」、十三軌，與 Discogs 實體十三軌的曲序完全一致，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=裝咖人&limit=6 → count=1552，score 100「顏靜萱」1362e453-4e2a-4d0b-8970-97692f7a43ba（TW）、score 94「樂咖」、score 92「西装」、score 89「甲田雅人」——**沒有一個是裝咖人本團**，是第 122 條「MB 回了完全不相干的東西」的形狀",
+    "release-group?artist=1362e453-4e2a-4d0b-8970-97692f7a43ba&limit=100&offset=0 → 0 筆（把 score 100 那個不相干實體也 browse 過，確認它不是本團的錯建檔）",
+    "release-group?query=releasegroup:\"夜官巡場\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"Iā-Kuan Sûn-Tiûnn\"&limit=10 → count=0（白話字羅馬拼音反查）"
+   ],
+   "checkedAt": "2026-09-05T07:30:00Z",
+   "conclusion": "MB 上沒有裝咖人的 artist 實體：藝人搜尋 score 100 回的是顏靜萱，與本團無關（第 122 條形狀），該實體名下 release-group 也是 0 筆，可排除「本團被錯建成別名」的可能；再以中文盤名與白話字羅馬拼音兩種寫法反查，count 皆為 0。四次查詢全部 HTTP 200，未遇 503／403，browse 用 limit=100 分頁端點。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E5%A4%9C%E5%AE%98%E5%B7%A1%E5%A0%B4/1594803360",
+   "https://www.discogs.com/release/22282648",
+   "https://www.openbook.org.tw/article/p-66674"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；獎項敘述的更正另依 c-92 rulings 第 9 條（不是金曲台語專輯得主，不得沿用候選清單的「金曲級」說法當成得獎）。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Iā-Kuan Sûn-Tiûnn",
+  "reissuedBy": "老頭音樂（NOWCD20220302，2022-02-20 實體 CD，Discogs release 22282648）"
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "台南",
+  "year": 2012,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "三川娛樂",
+  "why": "謝銘祐第四張專輯，2012 年 12 月 21 日發行，十二軌台語（Apple ℗ 行記三川娛樂有限公司）。這張把台南的街廓、老行業與長者的口氣寫成歌，是他 2005 年組「麵包車」樂團、長年到全台安養院義演之後累積出來的東西。**第 24 屆金曲獎最佳台語專輯獎與最佳台語男歌手獎雙料得主**，另獲第四屆金音創作獎最佳民謠專輯獎——這是本批證據最硬的一張（官方獎項名單可直接查證）。池中實掃：謝銘祐零張。",
+  "risk": "⚠ 盤名「台南」是地名、兩個字，中文比對雜訊極高（池中與 Apple 上帶「台南」二字的曲目與盤名甚多），**比對必須連藝人與 2012 一起鎖，不可單用盤名**。撞卡：實掃 seed_cards.json，artist=謝銘祐 零命中，album=台南 零命中。⚠ MB 上謝銘祐實體（e9cf6928，TW）名下只有 2 個 release-group（2017《舊年》668c1bcf、2005《城市》8014af89），這張不在其中——那兩張是 c-89／c-91 那條 MB 線負責的，本卡與它們不重疊。掛名：正名謝銘祐，羅馬拼音 Hsieh Ming-Yo（KKBOX 英文頁寫法）與 Chia Beng-iu（台語白話字，VERSE 專訪標題用）進別名。年份：Apple releaseDate 2012-12-21 與中文維基〈台南 (專輯)〉一致；⚠ Apple 的 ℗ 行寫 2018（數位重上架年），不是發行年，不可拿來當年份。封面：走 §4 apple-verified-collection 例外，collectionId 1393950160，頁面 https://music.apple.com/tw/album/%E5%8F%B0%E5%8D%97/1393950160 ——藝人欄「謝銘祐」、盤名「台南」、十二軌、releaseDate 2012-12-21，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝銘祐&limit=6 → count=685，score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW），其餘 score ≤36 為古代祐三、菅野祐悟、謝霆鋒 等他人",
+    "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 回 2 筆：2017 Album《舊年》668c1bcf-c69a-41d5-a66c-e09d73c67fa6、2005 Album《城市》8014af89-8e89-48b8-ae44-d245a08b2e95。《台南》不在其中（依第 116 條走分頁端點，2<100 已到底）",
+    "release-group?query=releasegroup:\"台南\" AND artist:\"謝銘祐\"&limit=10 → count=0（盤名是地名、雜訊高，必須連藝人鎖）"
+   ],
+   "checkedAt": "2026-09-05T07:40:00Z",
+   "conclusion": "謝銘祐的 MB 藝人實體存在且名下有 2 個 release-group（2005《城市》與 2017《舊年》），逐筆比對後 2012 年的《台南》不在其中；因盤名是兩字地名，改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點，搜尋 score 100 精確命中本人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E5%8D%97_(%E5%B0%88%E8%BC%AF)",
+   "https://www.books.com.tw/products/0020212214",
+   "https://music.apple.com/tw/album/%E5%8F%B0%E5%8D%97/1393950160"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hsieh Ming-Yo",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "泥土",
+  "year": 2004,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Great Music Publishing",
+  "why": "2004 年 4 月 17 日發行的十二軌華台雙語專輯（Apple ℗ 行記 Great Music Publishing Ltd.），是他從幕後製作人轉到台前的早期作品，比 MB 上建了檔的 2005《城市》還早一年。這條線的重點是他後來被叫做「府城歌王」之前的音樂——歌本身已經走民謠敘事，題材還沒完全收攏到台南。池中實掃：謝銘祐零張，本批同藝人另收四張，五張互不相同。",
+  "risk": "⚠ 盤名「泥土」是兩個字的常用詞，中文比對雜訊高，比對必須連藝人與 2004 一起鎖。撞卡：實掃 seed_cards.json，「泥土」在 album 欄零命中。⚠ MB 上謝銘祐實體名下只有 2005《城市》與 2017《舊年》兩筆，本盤不在其中；⚠ 特別注意 2005《城市》與本盤只差一年、都在早期，比對時不可把兩張搞混——《城市》是 MB 有建檔的那張、由 c-89／c-91 那條線負責，本卡不碰。廠牌：Apple ℗ 行是 Great Music Publishing Ltd.（大吉祥／可澄之前的發行方），卡片取之。封面：走 §4 apple-verified-collection 例外，collectionId 1745303957，頁面 https://music.apple.com/tw/album/%E6%B3%A5%E5%9C%9F/1745303957 ——藝人欄「謝銘祐」、十二軌、releaseDate 2004-04-17，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+    "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2004 年條目",
+    "release-group?query=releasegroup:\"泥土\" AND artist:\"謝銘祐\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T07:42:00Z",
+   "conclusion": "謝銘祐 MB 實體名下只有兩個 release-group，2004 年這張不在其中；盤名因是常用詞而連藝人一起查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人而非同名他人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E6%B3%A5%E5%9C%9F/1745303957",
+   "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+   "https://www.kawamusic.com.tw/blank-1"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hsieh Ming-Yo",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "也獸",
+  "year": 2014,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "三川娛樂",
+  "why": "2014 年 12 月 7 日與《情獸》同日發行的雙專輯企劃《情‧也獸》裡的台語那一半，十三軌（Apple ℗ 行記 2014 三川娛樂有限公司）。同一批歌分兩張、一張華語一張台語，是《台南》拿下金曲最佳台語專輯之後他做的下一件事。池中實掃：謝銘祐零張，本批同藝人另收四張。",
+  "risk": "⚠ **與同日發行的《情獸》最容易搞混**：兩張同一天、同一家廠牌、盤名只差一個字（也／情），軌數 13 對 12，本批兩張都收、必須各自釘死；本機比對時「情‧也獸」這個合稱字串會同時撞到兩張，**不可拿合稱當任何一張的別名去比對**。撞卡：實掃 seed_cards.json，「也獸」零命中。⚠ MB 上謝銘祐名下只有 2005《城市》與 2017《舊年》兩筆。年份：Apple releaseDate 2014-12-07，博客來商品 0020212205 與百度百科條目一致。封面：走 §4 apple-verified-collection 例外，collectionId 956393709，頁面 https://music.apple.com/tw/album/%E4%B9%9F%E7%8D%B8/956393709 ——藝人欄「謝銘祐」、盤名「也獸」、十三軌、releaseDate 2014-12-07，與同日的《情獸》（956394589，十二軌）是兩個不同的 collectionId，已逐一人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+    "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2014 年條目",
+    "release-group?query=releasegroup:\"也獸\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"情獸\"&limit=10 → count=0（同日發行的另一半，一併確認兩張都查無）"
+   ],
+   "checkedAt": "2026-09-05T07:45:00Z",
+   "conclusion": "謝銘祐 MB 實體名下的兩個 release-group 都不是 2014 年的作品；《也獸》與同日發行的《情獸》兩個盤名各查一次，count 皆為 0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E4%B9%9F%E7%8D%B8/956393709",
+   "https://www.books.com.tw/products/0020212205",
+   "https://www.kawamusic.com.tw/blank-1"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hsieh Ming-Yo",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "情獸",
+  "year": 2014,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "三川娛樂",
+  "why": "2014 年 12 月 7 日與《也獸》同日發行的雙專輯企劃《情‧也獸》裡的華語那一半，十二軌（Apple ℗ 行記 2014 三川娛樂有限公司）。兩張的分法不是選輯與正輯，而是同一組創作按語言拆成兩件商品——這在台語創作歌手裡是少見的作法，也讓他的華語書寫第一次獨立成一張。池中實掃：謝銘祐零張，本批同藝人另收四張。",
+  "risk": "⚠ **與同日發行的《也獸》最容易搞混**：同一天、同一家廠牌、盤名只差一個字，軌數 12 對 13；兩張各有自己的 collectionId（本盤 956394589、《也獸》956393709），必須各自釘死，合稱「情‧也獸」不可當任何一張的別名去比對。撞卡：實掃 seed_cards.json，「情獸」零命中。⚠ MB 上謝銘祐名下只有 2005《城市》與 2017《舊年》兩筆。⚠ 語言：本盤是華語專輯（同企劃的台語那半是《也獸》），寫作層不要把它寫成台語作品。封面：走 §4 apple-verified-collection 例外，collectionId 956394589，頁面 https://music.apple.com/tw/album/%E6%83%85%E7%8D%B8/956394589 ——藝人欄「謝銘祐」、盤名「情獸」、十二軌、releaseDate 2014-12-07，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+    "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），無 2014 年條目",
+    "release-group?query=releasegroup:\"情獸\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"情‧也獸\"&limit=10 → count=0（雙專輯合稱反查）"
+   ],
+   "checkedAt": "2026-09-05T07:47:00Z",
+   "conclusion": "謝銘祐 MB 實體名下的兩個 release-group 都不是 2014 年的作品；以本盤盤名與雙專輯合稱兩種寫法各查一次，count 皆為 0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋精確命中本人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E6%83%85%E7%8D%B8/956394589",
+   "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+   "https://www.kawamusic.com.tw/blank-1"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hsieh Ming-Yo",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "謝銘祐",
+  "album": "偏南",
+  "year": 2024,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "可澄音樂文創（KAWA Music）",
+  "why": "2024 年 12 月 15 日發行的十三軌台語專輯（Apple ℗ 行記 2024 KAWA Music Co.Ltd，即他自營的可澄音樂文創台南館）。距《台南》拿金曲已十二年，這張是他完全在台南自己的廠牌體系裡做出來的一張——製作、發行與長年的在地演出計畫同屬一個機構。池中實掃：謝銘祐零張，本批同藝人另收四張，五張的年份橫跨 2004 到 2024。",
+  "risk": "⚠ 盤名「偏南」兩個字，比對必須連藝人與 2024 一起鎖。撞卡：實掃 seed_cards.json，「偏南」零命中。⚠ MB 上謝銘祐名下只有 2005《城市》與 2017《舊年》兩筆，2024 年這張沒有建檔（MB 對台灣近年獨立發行的覆蓋率極低，這條線整體都是這個形狀）。廠牌：Apple ℗ 行的 KAWA Music Co.Ltd 即可澄音樂文創，官網 kawamusic.com.tw 有專輯列表可交叉。封面：走 §4 apple-verified-collection 例外，collectionId 1784381552，頁面 https://music.apple.com/tw/album/%E5%81%8F%E5%8D%97/1784381552 ——藝人欄「謝銘祐」、十三軌、releaseDate 2024-12-15，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=謝銘祐&limit=6 → score 100「謝銘祐」e9cf6928-04e7-4394-9164-decf7bdd6784（TW）",
+    "release-group?artist=e9cf6928-04e7-4394-9164-decf7bdd6784&limit=100&offset=0 → 2 筆（2005《城市》、2017《舊年》），2017 年之後名下一張都沒有",
+    "release-group?query=releasegroup:\"偏南\" AND artist:\"謝銘祐\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T07:49:00Z",
+   "conclusion": "謝銘祐的 MB 實體名下最新一筆 release-group 停在 2017 年，2024 年這張完全沒有建檔；盤名連藝人併查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，搜尋 score 100 精確命中本人而非同名他人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E5%81%8F%E5%8D%97/1784381552",
+   "https://www.kawamusic.com.tw/blank-1",
+   "https://www.puretainan.info/team"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Hsieh Ming-Yo",
+  "reissuedBy": ""
  }
 ]
