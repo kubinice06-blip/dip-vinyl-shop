@@ -84,7 +84,7 @@
    "folk"
   ],
   "label": "K（US KLP 116）；後由 P.W. Elverum & Sun, Ltd. 自營再發",
-  "why": "The Microphones 第三張專輯，池中兩張（《The Glow Pt. 2》2001，頂點卡 hall；《Mount Eerie》2003）之前的那一張。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Don't Wake Me Up(1999)、It Was Hot, We Stayed in the Water(2000)、the Glow, pt. 2(2001)、Little Bird Flies Into a Big Black Cloud(2002)、Mount Eerie(2002-12)、Microphones in 2020(2020)。實掃 seed_cards.json 全 14,424 列，池中只有 2001 與 2003 那兩張（後者卡片年份記 2003、MB 記 2002-12-12），本批同時補 1999 與 2000 兩張，這位藝人在 K 廠時期的目錄就補齊了。MB 轄下 3 個 release：2000-09-26 美國 Olympia 的 K 廠 KLP 116 為原盤，2013-02-16 與另一筆無日期者由 Phil Elverum 自營的 P.W. Elverum & Sun, Ltd. 重發。",
+  "why": "The Microphones 第二張專輯，池中兩張（《The Glow Pt. 2》2001，頂點卡 hall；《Mount Eerie》2003）之前的那一張。依 MB 藝人 browse（分頁取完）濾出的正規盤順序：Don't Wake Me Up(1999)、It Was Hot, We Stayed in the Water(2000)、the Glow, pt. 2(2001)、Little Bird Flies Into a Big Black Cloud(2002)、Mount Eerie(2002-12)、Microphones in 2020(2020)。實掃 seed_cards.json 全 14,424 列，池中只有 2001 與 2003 那兩張（後者卡片年份記 2003、MB 記 2002-12-12），本批同時補 1999 與 2000 兩張，這位藝人在 K 廠時期的目錄就補齊了。MB 轄下 3 個 release：2000-09-26 美國 Olympia 的 K 廠 KLP 116 為原盤，2013-02-16 與另一筆無日期者由 Phil Elverum 自營的 P.W. Elverum & Sun, Ltd. 重發。",
   "risk": "Apple us 命中 collectionId 483207720（The Microphones／It Was Hot, We Stayed In The Water／11 軌／2000-09-26），日期與 MB 完全相同，比對乾淨。**MB 的 artist-credit 是小寫定冠詞的「the Microphones」**（同藝人另一張是完全沒有定冠詞的「Microphones」），卡片依池中既有寫法用「The Microphones」，兩種變體都要能比對（第 10／11 條：credit 是逐盤記錄的，掛名取通行名）。盤名含逗號，正規化後不影響。CAA 走 release-group 端點。",
   "mbNote": "釘 release-group 2cbcc27b-5480-3bb1-b45a-e698616930d9。回問 release-group/<id>?inc=artist-credits+releases 確認：title「It Was Hot, We Stayed in the Water」、artist-credit「the Microphones」（MB 用小寫 the）、first-release-date 2000-09-26、primary-type Album、secondary-types 空、轄下 3 個 release（US K KLP 116、XW P.W. Elverum & Sun ×2，全 Official）。藝人 MBID 由 artist?query=The+Microphones 取得並以 browse 覆核。刻意不釘：f478fad9-a746-3625-9f14-bc4a74918c0e《the Glow, pt. 2》（2001，池中已有，MB 標題的大小寫與卡片不同）、15408c1f-f9ab-3d90-a9c3-0068465d1d76《Mount Eerie》（2002-12-12，池中已有）、ab4a1906-2d70-343e-97e7-7fd0d7c9a3df《Little Bird Flies Into a Big Black Cloud》（2002）。",
   "releaseType": "Album",
@@ -125,7 +125,7 @@
   ],
   "label": "Mainstream Records（US S/6099，原盤）；1971 Columbia C 30631",
   "why": "Big Brother & the Holding Company 的首張專輯，1967 年 9 月由紐約的 Mainstream Records 以 S/6099 發行，早於樂團簽進 Columbia 之前——池中已有的《Cheap Thrills》(1968，頂點卡 hall) 是 Columbia 時期的那一張，這張是它前面唯一的一張正規盤（依 MB 藝人 browse 分頁取完後濾出的正規盤只有五張：本張、Cheap Thrills(1968)、Be a Brother(1970)、How Hard It Is(1970)、Do What You Love(1998)）。實掃 seed_cards.json 全 14,424 列，池中這位藝人有兩筆卡，但**是同一張《Cheap Thrills》以兩種掛名寫法各存一次**（「Big Brother & The Holding Company」與「Big Brother and the Holding Company」），實際上只有一張碟。MB 轄下 14 個 release 記著這張碟被 Columbia 買下之後的路徑：1970 Columbia Limited Edition LE 10205、1971 Columbia C 30631、1993 荷蘭 COL 472881-2、1994 日本 SRCS 6440、1999 Columbia／Legacy CK 66425、2008 Sundazed LP 5188 黑膠、2016 Columbia／Legacy 再發。",
-  "risk": "**自我同名卡，且池中已有同藝人的掛名分裂**（「& The」與「and the」兩種寫法各一張《Cheap Thrills》；本卡取 MB 實體的「Big Brother & the Holding Company」，第 6／70／120 條）。正規化後本卡的鍵是 artist 與 album 相同的字串，任何模糊比對都極危險，**身分只能靠 rgMbid 與 Mainstream 目錄號 S/6099 鎖定**（第 7／13 條：目錄號視為與 MBID 同等的身分欄位）。Apple us 有兩筆同名：1073648897（12 軌，1967-08-01）與 1882082740（14 軌，1967-01-01），**掛名都被 Apple 寫成「Big Brother & The Holding Company & Janis Joplin」**（MB 的 artist-credit 也是「Big Brother & the Holding Company featuring Janis Joplin」），與卡片掛名不相等；配對必須用 collectionId 直取並逐軌核對——原盤是十首的 LP，12 軌與 14 軌都是加曲版（第 140 條），本批不填 originalTrackCount，留給研究層開 release?release-group=2464c8f8…&inc=recordings 查。MB 另有一筆標為 **Bootleg** 的同名 release。CAA 走 release-group 端點。",
+  "risk": "**自我同名卡，且池中已有同藝人的掛名分裂**（「& The」與「and the」兩種寫法各一張《Cheap Thrills》；本卡取 MB 實體的「Big Brother & the Holding Company」，第 6／70／120 條）。正規化後本卡的鍵是 artist 與 album 相同的字串，任何模糊比對都極危險，**身分只能靠 rgMbid 與 Mainstream 目錄號 S/6099 鎖定**（第 7／13 條：目錄號視為與 MBID 同等的身分欄位）。Apple us 有兩筆同名：1073648897（12 軌，1967-08-01）與 1882082740（14 軌，1967-01-01），**掛名都被 Apple 寫成「Big Brother & The Holding Company & Janis Joplin」**（MB 的 artist-credit 也是「Big Brother & the Holding Company featuring Janis Joplin」），與卡片掛名不相等；配對必須用 collectionId 直取並逐軌核對——兩筆的軌數不同（12 與 14），至少有一筆是加曲版（第 140 條），本批不填 originalTrackCount，留給研究層開 release?release-group=2464c8f8…&inc=recordings 查。MB 另有一筆標為 **Bootleg** 的同名 release。CAA 走 release-group 端點。",
   "mbNote": "釘 release-group 2464c8f8-7d3f-32e4-afaa-870ccb18d869。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Big Brother & The Holding Company」、artist-credit「Big Brother & the Holding Company featuring Janis Joplin」、first-release-date 1967-09、primary-type Album、secondary-types 空、轄下 14 個 release（US 為主，另有 XE／NL／JP／XW；1 筆標為 Bootleg，其餘 Official；原盤為 1967-09 US Mainstream Records S/6099）。掛名依第 11 條取通行名「Big Brother & the Holding Company」，credit 變體歸 queryAlias 與本欄。藝人 MBID 由 artist?query=Big+Brother+%26+the+Holding+Company 取得並以 browse 覆核。刻意不釘：02de8887-e93b-3ea6-8b6d-de072a159bba《Cheap Thrills》（1968，池中已有）、9a0fe6f3-3531-3d82-bca1-bed8e117761b《How Hard It Is》(1970) 與 d946b107-cab4-4b03-9624-fe9758a78c46《Be a Brother》(1970)。",
   "releaseType": "Album",
   "exceptionReason": "",
@@ -193,6 +193,197 @@
   "selfTitled": false,
   "queryAlias": "Arthur Lee & Love",
   "reissuedBy": "Sundazed Music（2004）／Rhino（2019）",
+  "g": "b"
+ },
+ {
+  "artist": "Aphrodite's Child",
+  "album": "End of the World",
+  "year": 1968,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Mercury Records（GB 138350，原盤）；1996 希臘 Mercury 532 866-2",
+  "why": "Aphrodite's Child 的首張專輯，補在池中兩張（《It's Five O'Clock》1969、《666》1972）前面——依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤總共只有三張，也就是說補進這一張之後，這個希臘團在池中的正規目錄就完整了。實掃 seed_cards.json 全 14,424 列。MB 轄下 5 個 release：1968-11-06 英國 Mercury 138350 為原盤，1996 希臘 Mercury 532 866-2、2010 英國 Esoteric Recordings ECLEC 2205、2021-04-28 日本 Mercury UICY-79438，另有一筆希臘 Cobalt Music - Helladisc S.A. 無日期。這個團由 Vangelis、Demis Roussos 與 Loukas Sideras 組成，而池中 Vangelis 名下另有 7 張（實掃結果），本卡補的是他在團體時期的起點。",
+  "risk": "**年份三說**：MB first-release-date 1968-11-06（英國 Mercury 138350），Apple 記 1969-06-07（collectionId 1842558969，us／gr／fr 三個店面同一筆，**9 軌**）。卡片年份依第 86／95 條取有 release 佐證的 1968，**行文不得正面斷言發行年**（第 18／46 條）。**Apple 那筆只有 9 軌，要對原盤軌數**——本批不填 originalTrackCount，依第 141 條留給研究層開 release?release-group=0a81b153…&inc=recordings 查；若原盤軌數多於 9，那一筆是刪節版、依既有口徑不採。掛名帶撇號（MB 用 U+2019 的「Aphrodite’s Child」），卡片用 ASCII 直撇號、與池中既有兩張一致。第 77 條附記已提醒池中《666》配到的是 48 曲的 2024 Deluxe，本卡與那筆無關但同一位藝人，本機上架時一併看版本。CAA 走 release-group 端點；店面依第 158 條試 gr 與 fr（兩者都有貨、與 us 同一筆）。",
+  "mbNote": "釘 release-group 0a81b153-42ce-34ef-be1f-f3ae941039f3。回問 release-group/<id>?inc=artist-credits+releases 確認：title「End of the World」、artist-credit「Aphrodite’s Child」（MB 用 U+2019）、first-release-date 1968-11-06、primary-type Album、secondary-types 空、轄下 5 個 release（GB／GR／XE／JP 與一筆國別空白，全 Official）。藝人 MBID 由 artist?query=Aphrodite%27s+Child 取得並以 browse 覆核，名下正規盤三張。刻意不釘：aebb0b97-f578-33e5-80c7-11fe65b3de41《It’s Five O’Clock》(1969) 與 9eb48d7e-2425-32d9-8d0b-54903d4a66be《666》(1972)——兩張池中都已有。另 Apple 的 1842574519《Best Of Aphrodite's Child》(1971) 是精選、不可配。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Aphrodite’s Child；End Of The World",
+  "reissuedBy": "Esoteric Recordings（2010）",
+  "g": "b"
+ },
+ {
+  "artist": "Flower Travellin' Band",
+  "album": "Anywhere",
+  "year": 1970,
+  "genres": [
+   "rock"
+  ],
+  "label": "Philips（JP FX-8507）；1977 日本 Philips S-5501 重發",
+  "why": "Flower Travellin' Band 第一張單獨掛這個團名的專輯（MB 同一藝人名下 1970 年另有《切狂言》，但那一筆的 artist-credit 是「クニ河内 & Flower Travellin' Band」的合作掛名），1970-10-21 由日本 Philips 以 FX-8507 發行，排在池中已有的《Satori》(1971，頂點卡 hall) 與《Made in Japan》(1972) 前面。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序：切狂言(1970)、Anywhere(1970-10-21)、Satori(1971)、Made in Japan(1972)、Make Up(1973)、From Pussies to Death in 10,000 Years of Freakout(1997)、Music Composed Mainly By Humans(2002)、We Are Here(2008)。實掃 seed_cards.json 全 14,424 列，池中只有 1971 與 1972 那兩張。MB 轄下 4 個 release：1970-10-21 JP Philips FX-8507、1977 JP Philips S-5501、2006 德國 Lion Records Lion 191、2007 JP USM JAPAN UPCY-6343。",
+  "risk": "**Apple jp 與 us 都回 0 筆**（實測 search 正常回應、非 403，第 98 條；jp 店面依第 158 條已試），試聽預估落空，封面走 CAA release-group 端點。**日文藝人依第 49 條三種寫法都要查撞卡**：實掃 seed_cards.json 對「Flower Travellin' Band」「フラワー・トラベリン・バンド」「Flower Travelling Band」三種寫法，池中只有羅馬拼音的兩張，日文假名寫法零筆。MB 的 artist-credit 用 U+2019 彎撇號「Flower Travellin’ Band」，卡片用 ASCII 直撇號、與池中既有兩張一致。盤名「Anywhere」是單字常用詞，字串比對必須連掛名鎖。2006 年德國 Lion Records 那筆的授權狀態 MB 標 Official 但未經 Discogs version 頁覆核，不作為背書使用（第 66／78 條）。",
+  "mbNote": "釘 release-group 8ce31a7f-d4d3-3213-9121-fa4617596bfd。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Anywhere」、artist-credit「Flower Travellin’ Band」、first-release-date 1970-10-21、primary-type Album、secondary-types 空、轄下 4 個 release（JP ×3、DE，全 Official）。藝人 MBID 由 artist?query=Flower+Travellin%27+Band 取得並以 browse 覆核。刻意不釘：66ecf029-c30c-414a-afe8-024a42ac71da《切狂言》（1970，artist-credit 為「クニ河内 & Flower Travellin' Band」的合作盤，與本張同年、身分容易混）、6eb2d39e-69f0-3db4-9d1e-c547069998e2《Satori》(1971) 與 a98c61cf-af44-371b-a2be-a735e7a63b40《Made in Japan》(1972)——兩張池中已有。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "フラワー・トラベリン・バンド；Flower Travellin’ Band；Flower Travelling Band",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Flower Travellin' Band",
+  "album": "Make Up",
+  "year": 1973,
+  "genres": [
+   "rock"
+  ],
+  "label": "Atlantic（JP P-5073-4A，雙碟）；1991 Warner Bros. Records WPCL-592",
+  "why": "Flower Travellin' Band 一九七〇年代那一段的最後一張正規盤，1973 年由日本 Atlantic 以 P-5073-4A 發行的雙碟——編號帶「-4A」正是雙碟的形制。依 MB 藝人 browse（分頁取完）濾出的正規盤順序，它排在池中已有的《Made in Japan》(1972) 之後，MB 名下下一個 primary-type=Album 的條目要到 1997 年《From Pussies to Death in 10,000 Years of Freakout》。實掃 seed_cards.json 全 14,424 列，池中只有《Satori》(1971，頂點卡 hall) 與《Made in Japan》(1972) 兩張。MB 轄下 5 個 release：1973 JP Atlantic P-5073-4A 原盤、1991-12-21 JP Warner Bros. WPCL-592、1994 韓國 Won-Sin Music WS 885 684-2、2009 JP Strange Days SNS-5020-21／Warner WQCQ-199-200 雙編號復刻。",
+  "risk": "**MB 轄下有一筆標為 Bootleg 的英國盤**（2010 GB Phoenix Records ASH2CD3033），依第 43／57／65／78 條不得作為背書；可用的背書是 1991 Warner 與 2009 Strange Days 兩次官方再發。Apple jp 有四筆同名條目：290811124（10 軌，1973-01-01）、415948199（10 軌）、1619942559《Make Up (Remastered)》、1214407154《Make Up (2017 Remaster)》（10 軌，1973-02-25）；us 也有 415948199 與 1619942559。**原盤是雙碟，Apple 全部只有 10 軌**——這是刪節版或只收其中一片的訊號，依第 141 條，本批不填 originalTrackCount，本機在採用任何一筆之前要開 release?release-group=6bebf11e…&inc=recordings 看原盤片數與軌數。Apple 的 1973-01-01 是佔位日期。jp 搜尋另回宇多田ヒカル 四筆無關條目（盤名含 Make Up 的常見詞），比對必須連掛名鎖。日文假名寫法「フラワー・トラベリン・バンド」實掃池中零筆。",
+  "mbNote": "釘 release-group 6bebf11e-500e-30d9-a41a-94deede5f14c。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Make Up」、artist-credit「Flower Travellin’ Band」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 5 個 release（JP ×3、KR、GB；**GB 那筆標為 Bootleg**，其餘 Official）。藝人 MBID 同本批另一張 Flower Travellin' Band。刻意不釘：8ce31a7f-d4d3-3213-9121-fa4617596bfd《Anywhere》（1970，本批同時收）、8c395afc-2386-4ea4-b6f4-1d5a1864e7a7《From Pussies to Death in 10,000 Years of Freakout》（1997，重組後的碟）、090dbbdf-82ab-423e-a57e-ec18fb3a480e《Music Composed Mainly By Humans》(2002)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "フラワー・トラベリン・バンド；Flower Travellin’ Band；MAKE UP",
+  "reissuedBy": "Warner Bros. Records（1991）／Strange Days Records（2009）",
+  "g": "b"
+ },
+ {
+  "artist": "FRICTION",
+  "album": "Skin Deep",
+  "year": 1982,
+  "genres": [
+   "rock"
+  ],
+  "label": "CBS/Sony（JP 28AH 1457／28AH-1457）；1989 WAX RECORDS 22WXD-127、2006 P-VINE RECORDS SSAP-009",
+  "why": "FRICTION 的第二張專輯，1982-09-01 由 CBS/Sony 以 28AH 1457 發行，接在池中已有的《軋轢》(1980，頂點卡 hall) 之後。依 MB 藝人 browse（release-group?artist=48134b75-f310-47b5-9876-706495dfa748&limit=100&offset= 分頁取完，共 11 個 release-group）濾出的正規盤順序：軋轢(1980)、Skin Deep(1982)、Replicant Walk(1989)、Dumb Numb(1995)、Zone Tripper(1995)。實掃 seed_cards.json 全 14,424 列，池中只有《軋轢》與《Replicant Walk》兩張，中間這一張是空的。MB 轄下 4 個 release 全是日本盤：1982 CBS/Sony 兩筆（編號的空格與連字號兩種寫法）、1989-10-25 WAX RECORDS 22WXD-127、2006-08-18 P-VINE SSAP-009。",
+  "risk": "**MB 這一筆的 artist-credit 是「2nd Friction」不是 FRICTION**——樂團在這張碟上用的是另一個掛名。卡片依第 11 條取通行名「FRICTION」（與池中既有兩張一致、不製造分裂鍵），credit 變體歸 queryAlias 與 mbNote。**日文藝人依第 49 條三種寫法都要查**：實掃 seed_cards.json 對「FRICTION」「フリクション」「Friction」三種，池中只有大寫羅馬拼音的兩張（另有 The Soul Children《Friction》與 Anthony \"Shake\" Shakir《Frictionalism》兩筆是盤名撞字、不同藝人）。**MB 的 artist?query=FRICTION 第一筆回的是英國 drum & bass 製作人 Ed Keeley**（score 100），日本團 score 98 排第二，必須靠 disambiguation「Japanese punk band」與 MBID 鎖定（第 122 條的「查到了錯的人」形狀）。Apple jp 命中 collectionId 1537156474《SKIN DEEP》（8 軌，**releaseDate 2006-08-21**，對應 P-VINE 那次再發，不是原盤年）；us 同一筆但掛名被寫成小寫的 Friction。年份取 MB 的 1982（有 CBS/Sony 原盤 release 佐證），**行文不得正面斷言發行年**（第 18／46 條）。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 19c6613b-1ad0-4901-87f5-f9bd2d913541。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Skin Deep」、**artist-credit「2nd Friction」**、first-release-date 1982-09-01、primary-type Album、secondary-types 空、轄下 4 個 release（全 JP；2006 P-VINE 那筆 status 空白，其餘 Official）。掛名依第 11 條取通行名 FRICTION、credit 變體不入卡片掛名。藝人 MBID 48134b75-f310-47b5-9876-706495dfa748（disambiguation「Japanese punk band」，JP），名下 11 個 release-group。刻意不釘：c58a2178-a8ec-473f-929a-ac5fe60e0983 與 b0db12d2-03f4-4959-9215-54ccf53d749f 兩個《Replicant Walk》（1989／2007，同名雙 release-group，且池中已有這張碟）、36c0fda9-83bb-4944-a22e-87fffcbc02a3《Friction Live, Pass Tour '80》（2007，現場）、503a93ab-e628-426e-9277-463e54f0c8e2《2013 - Live Friction》（2010，現場）、bdb122b5-f942-39da-946d-06596c824a4a《軋轢》（1980，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "2nd Friction；Friction；フリクション；SKIN DEEP",
+  "reissuedBy": "P-VINE RECORDS（2006）",
+  "g": "b"
+ },
+ {
+  "artist": "Bikini Kill / Huggy Bear",
+  "album": "Yeah Yeah Yeah Yeah / Our Troubled Youth",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "Kill Rock Stars（US KRS 206）；1993 英國 Catcall PUSS001LP／Kill Rock Stars",
+  "why": "美國 Bikini Kill 與英國 Huggy Bear 各出一面的 split LP，1992 年由 Olympia 的 Kill Rock Stars 以 KRS 206 發行，1993 年英國由 Catcall 以 PUSS001LP 與 Kill Rock Stars 共同發行。實掃 seed_cards.json 全 14,424 列：Bikini Kill 在池中有《Pussy Whipped》(1993) 與《Reject All American》(1996) 兩張，而依 MB 藝人 browse（分頁取完，13 個 release-group）濾出的正規盤只有那兩張加上本張三筆——**這張是 Bikini Kill 唯一還沒進池的 primary-type=Album 條目**；Huggy Bear 在池中則是零筆（實掃「Huggy」零命中）。掛名依裁定第 16 條的既有先例，多藝人 split 用 \" / \" 斜線分隔、照原始發行的掛名順序，而 MB 的 artist-credit 恰好就是「Bikini Kill / Huggy Bear」，兩邊對得上。",
+  "risk": "**Apple us 回 0 筆**（實測 search 正常回應、非 403），試聽預估落空，封面走 CAA release-group 端點。**盤名與掛名都帶斜線**，任何以斜線切欄位的下游都要當心；正規化後 artist 鍵為 bikinikillhuggybear、album 鍵為 yeahyeahyeahyeahourtroubledyouth，與池中兩張 Bikini Kill 不撞。**MB 轄下有兩筆 2014-04-15 的 XW release 標題只有《Yeah Yeah Yeah Yeah》**（Bikini Kill Records BK003 與一筆無廠牌），那是 Bikini Kill 自營廠牌單獨重發自己那一面的版本，**不是本張**；配對若配到只有一面的那個版本要剔除。第 27／49 條的實掃已做：Huggy Bear 的其他寫法（Huggy Bear、ハギー・ベア）在池中皆零筆。",
+  "mbNote": "釘 release-group ddaab25d-acf3-3d6f-ba0e-c2cf08b4ac27。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Yeah Yeah Yeah Yeah / Our Troubled Youth」、artist-credit「Bikini Kill / Huggy Bear」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 4 個 release（1992 US Kill Rock Stars KRS 206、1993 GB Catcall PUSS001LP／Kill Rock Stars、2014-04-15 XW ×2 標題只有《Yeah Yeah Yeah Yeah》，全 Official）。Bikini Kill 藝人 MBID 1397d045-1603-41fc-80b9-712c18360145。刻意不釘：5c932206-2527-3d98-bba3-ce4cd0700a00《Revolution Girl Style Now》（1991，Album/Demo）、e4a1a4db-35c9-3be1-8fed-4e0d00c43ea8《The C.D. Version of the First Two Records》（1992，Album/Compilation）、a6ba2726-8da1-344e-9616-be72e8ec6322《The Singles》（1998，Album/Compilation）、82c904f4-2176-40a0-915c-70c5d385d565《Bikini Kill》（1992-10-09 EP，自我同名 EP）、db966c6a-8a3d-3868-afec-7829914d64e0《Pussy Whipped》與 8caa1944-0fc0-3786-af58-fddad072ca26《Reject All American》（兩張池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bikini Kill；Huggy Bear；Yeah Yeah Yeah Yeah；Our Troubled Youth",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "ゆらゆら帝国",
+  "album": "3×3×3",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "MIDI inc.（JP MDCL-1329）",
+  "why": "ゆらゆら帝国 依 MB 藝人 browse 排序的第四張正規盤，1998-04-15 由 MIDI inc. 以 MDCL-1329 發行。同一份 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤順序是：ゆらゆら帝国(1992)、ゆらゆら帝国(1994)、Are You Ra ?(1996)、3×3×3(1998)、ミーのカー(1999)、太陽の白い粉(1999)、ゆらゆら帝国III(2001)、ゆらゆら帝国のしびれ(2003)、ゆらゆら帝国のめまい(2003)、Sweet Spot(2005)、空洞です(2007)。實掃 seed_cards.json 全 14,424 列，池中只有《ゆらゆら帝国のしびれ》(2003) 與《空洞です》(2007) 兩張，都在後期；1998 到 2001 這一段是空的。",
+  "risk": "**盤名含 U+00D7 乘號「×」**（不是 ASCII 的 x，也不是連字號，因此不踩 `chk-prop` 的非 ASCII 連字號反模式，但在任何字串比對下與「3x3x3」「333」都不相等，三種寫法都要進 queryAlias）。**日文藝人依第 49 條三種寫法都要查撞卡**：實掃 seed_cards.json 對「ゆらゆら帝国」「Yura Yura Teikoku」「Yura」三種，池中只有假名漢字寫法的兩張，羅馬拼音零筆。Apple jp 命中 collectionId 1405920029（ゆらゆら帝国／3×3×3／11 軌／1998-04-15），日期與 MB 完全相同、掛名也是日文原文——**這是第 158 條「用原文盤名搜當地店面」成立的一個實例**，us 店面不必試。同一次搜尋另回きのこ帝国 的單曲（團名尾字相同），比對要連盤名鎖。MB 轄下另一筆是 Pseudo-Release、無實體。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 75a32741-74f7-4034-ba54-ed36822f1ab9。回問 release-group/<id>?inc=artist-credits+releases 確認：title「3×3×3」、artist-credit「ゆらゆら帝国」、first-release-date 1998-04-15、primary-type Album、secondary-types 空、轄下 2 個 release（1998-04-15 JP MIDI inc. MDCL-1329 Official，另一筆為 Pseudo-Release、無國別）。藝人 MBID 由 artist?query=ゆらゆら帝国 取得並以 browse 覆核。刻意不釘：ca1f31fc-4f2e-3bb6-8118-4cf27ab700a7 與 8dda5b74-0e85-394c-9605-8c03574d5bac 兩張自我同名的《ゆらゆら帝国》（1992／1994，同名雙胞胎、且與掛名字串相同）、8a99b9f5-534b-4f83-b631-fd377fe25a55《ゆらゆら帝国III》（2001）、148e1000-e667-37a5-bd76-abda49ebccf6《ゆらゆら帝国のしびれ》與 471ea717-9f87-4413-9469-ebebc772ede5《ゆらゆら帝国のめまい》（2003 同日發的姊妹盤，前者池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yura Yura Teikoku；3x3x3；333；ゆらゆら帝國",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "ザ・スターリン",
+  "album": "虫",
+  "year": 1983,
+  "genres": [
+   "rock"
+  ],
+  "label": "Climax Records（JP CMC-2512）；1998／2003 TKCA-71508／TKCA-72603 再版",
+  "why": "ザ・スターリン 第三張專輯，1983-04-25 由 Climax Records 以 CMC-2512 發行，接在池中已有的《trash》(1981) 與《STOP JAP》(1982) 之後。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完，共 18 個 release-group）濾出的正規盤順序：trash(1981-12-24)、STOP JAP(1982)、虫(1983-04-25)、Fish Inn(1984-11-20)、-1(MINUS ONE)(1988)、JOY(1989)……實掃 seed_cards.json 全 14,424 列，池中只有前兩張，1983 年之後整段是空的。MB 轄下 4 個 release 全是日本盤：1983 Climax CMC-2512 原盤、1998-12-23 TKCA-71508、2003-10-22 TKCA-72603，另有一筆 Pseudo-Release 標題作羅馬拼音的《Mushi》。",
+  "risk": "**盤名只有一個漢字「虫」**，是本批字串比對雜訊最高的一筆——實掃 seed_cards.json 全檔，池中含「虫」字的卡零筆，但下游任何子字串比對都會被別的日文盤名包住（第 162 條記過短盤名被更長的別碟包住的鏡像形狀），必須連掛名一起鎖。**日文藝人依第 49 條三種寫法都要查**：「ザ・スターリン」（池中兩張）、「The Stalin」（池中零筆）、羅馬拼音「Stalin」（池中只有 Andris Nelsons《Shostakovich: Under Stalin's Shadow》一筆盤名撞字、不同藝人）。**盤名的羅馬拼音是「Mushi」，MB 自己就有這個寫法**（Pseudo-Release），依第 49 條寫進 risk 供下游去重與查詢用。Apple jp 兩筆：219988005《虫》（**16 軌**，2003-10-22）與 990142158《虫 (リマスター・バージョン)》（12 軌，2015-05-13）——**16 軌那筆是 2003 年的加曲再版**（第 140 條），本批不填 originalTrackCount，本機採用前要開 release?release-group=bf99d287…&inc=recordings 核原盤軌數。店面依第 158 條只需 jp。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group bf99d287-7f53-439f-9f04-29fd9cdd1049。回問 release-group/<id>?inc=artist-credits+releases 確認：title「虫」、artist-credit「ザ・スターリン」、first-release-date 1983-04-25、primary-type Album、secondary-types 空、轄下 4 個 release（3 筆 JP Official，1 筆 Pseudo-Release 標題作「Mushi」）。藝人 MBID 由 artist?query=ザ・スターリン 取得並以 browse 覆核，名下 18 個 release-group。刻意不釘：57729667-2d57-4913-ae65-ae987c5ad266《STALIN》（無日期）、12ae0f61-d11d-4d25-b75e-b085fffc14e4《THE STALIN BEST》（無日期，精選）、8f235607-27bd-4dac-94a1-2c18b8dc6f50《ザ・スターリン・ベスト》（2003，精選）、127fa455-23c4-3e0a-be0f-4e32d02756dd《STOP JAP + GO GO STALIN》（1988，二合一，且與池中已有的《STOP JAP》同名前綴）、d6543e18-3b30-498f-8722-4f067a5827cf《STOP JAP NAKED》(2007)、075b3722-3b89-4ba6-855f-bd6416e68b9a《STALINISM NAKED》(2019)。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mushi；The Stalin；THE STALIN；スターリン",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "RCサクセション",
+  "album": "シングル・マン",
+  "year": 1976,
+  "genres": [
+   "rock"
+  ],
+  "label": "Polydor（JP，原盤）；1987-04-25 Polydor H32P 20148、2020 USM JAPAN UPCY-40052",
+  "why": "RCサクセション 1976 年由 Polydor 發行的專輯，依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完，共 11 個 release-group）濾出的正規盤順序是：楽しい夕に(1972-12-05)、シングル・マン(1976)、PLEASE(1980-12-05)、OK(1983-07-05)……實掃 seed_cards.json 全 14,424 列，池中只有《PLEASE》(1980) 與《ラプソディー》(1980) 兩張，1976 年這一張是它們前面唯一的空缺。MB 轄下 6 個 release 全是日本盤，而且這張碟一直在被重發：1987-04-25 Polydor H32P 20148、2015-05、2020-11-25 USM JAPAN UPCY-40052、2025-10-15 Polydor UPCY-8060／8061 雙編號。",
+  "risk": "**盤名有片假名與羅馬拼音兩種寫法，而且 MB 自己兩種都有**：release-group 標題是片假名的《シングル・マン》，但 1976 年那兩筆 release（一筆 status 空白、一筆 Pseudo-Release）的標題是羅馬拼音的《Single Man》。**Apple jp 命中的 collectionId 1443335331 掛的正是《Single Man》**（RCサクセション／11 軌／1976-04-21）——掛名是日文、盤名是英文，同一筆裡兩套書寫系統混用，正是第 158 條講的形狀，兩種寫法都要進 queryAlias 並交叉試。池中另有 Elton John《A Single Man》一張，盤名幾乎相同、藝人不同，是子字串比對的假陽性來源。**日文藝人依第 49 條三種寫法都要查**：「RCサクセション」（池中兩張）、「RC Succession」與「アール・シー・サクセション」（池中皆零筆）。Apple jp 同一次搜尋另回歌っちゃ王 的卡拉 OK 條目（〈雨あがりの夜空に〉ガイド無しカラオケ），依第 153 條附錄，帶「カラオケ／Karaoke」的條目一律排除。MB 的 first-release-date 只有年份（1976），Apple 的 1976-04-21 是唯一有日期的來源，**行文不得正面斷言確切發行日**。店面依第 158 條只需 jp。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 21f34508-00c4-4904-82be-6cdb041383f8。回問 release-group/<id>?inc=artist-credits+releases 確認：title「シングル・マン」、artist-credit「RCサクセション」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 6 個 release（全 JP；1976 兩筆分別為 status 空白與 Pseudo-Release、標題作羅馬拼音「Single Man」，1987／2015／2020／2025 四筆為 Official 且標題作片假名）。RG 標題與 release 標題在兩套書寫系統之間分歧（第 91／95 條）。藝人 MBID 由 artist?query=RCサクセション 取得並以 browse 覆核。刻意不釘：64f95aea-0b85-4806-85fe-fa25a2abfd02《楽しい夕に》（1972，首張）、666bb6b1-83ef-4478-8da2-cd36c8378e70《初期のRC・サクセション》（1988，早期輯，掛名寫法帶中黑點、與本卡掛名不同）、355ad813-d4ab-4918-beaa-71f51d3b8291《PLEASE》（1980，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Single Man；RC Succession；アール・シー・サクセション；RC・サクセション",
+  "reissuedBy": "USM JAPAN（2020）／Polydor Records（2025）",
+  "g": "b"
+ },
+ {
+  "artist": "Jawbreaker",
+  "album": "Bivouac",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "The Communion Label（US comm 38-2）／Tupelo Recording Company（tup 38-2）；2012 Blackball Records BB-009-CD",
+  "why": "Jawbreaker 第二張專輯，1992-12-01 由 The Communion Label 與 Tupelo Recording Company 共同發行（同一筆 release 上還掛著 RTD 301.0038.2 41 這個歐洲配銷編號），排在池中已有的《24 Hour Revenge Therapy》(1994) 與《Dear You》(1995) 前面。依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的正規盤只有四張：Unfun(1990)、Bivouac(1992)、24 Hour Revenge Therapy(1994)、Dear You(1995)，補進這一張之後池中就有四分之三。實掃 seed_cards.json 全 14,424 列。MB 轄下 4 個 release：1992 原盤、2012-12-04 由樂團自營的 Blackball Records 以 BB-009-CD 重發、另兩筆 XW 數位（其中 2017-04-19 那筆無廠牌）。",
+  "risk": "**Apple us 回 0 筆**（實測 search 正常回應、非 403，第 98 條），試聽預估落空，封面走 CAA release-group 端點。盤名「Bivouac」拼寫獨特、字串比對風險低（實掃 seed_cards.json 全檔，含此字的卡零筆）。**2017-04-19 那筆 XW release 沒有廠牌欄**，不作為授權背書使用；可用的背書是 2012 年 Blackball 這個樂團自營廠牌的官方再發。掛名 Jawbreaker 池中已有兩張、字串一致。",
+  "mbNote": "釘 release-group 184a2492-774f-3a4d-97d4-492967d16d57。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Bivouac」、artist-credit「Jawbreaker」、first-release-date 1992-12-01、primary-type Album、secondary-types 空、轄下 4 個 release（US ×2、XW ×2，全 Official；原盤為 1992-12-01 US The Communion Label comm 38-2／Tupelo tup 38-2）。藝人 MBID 由 artist?query=Jawbreaker 取得並以 browse 覆核。刻意不釘：60546e37-e5fb-3cb7-941d-3141477eaff8《Unfun》（1990，首張）、d9ac3edf-971d-49a5-ac1c-5b789b011d93《Unpieced Puzzle》（1993）、87f60917-1ce9-3e93-92c3-a3e4184e46ca《24 Hour Revenge Therapy》與 2a4d791d-b328-3212-8bef-edc98c7de3f7《Dear You》（兩張池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Blackball Records（2012 樂團自營廠牌再發）",
+  "g": "b"
+ },
+ {
+  "artist": "Mineral",
+  "album": "EndSerenading",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "Crank!（US crc021／80211-2）；2014 英國 Xtra Mile Recordings XMR094LP",
+  "why": "Mineral 的第二張、也是唯一的另一張正規專輯——依 MB 藝人 browse（release-group?artist=&limit=100&offset= 分頁取完）濾出的 primary-type=Album 條目只有兩個：The Power of Failing(1996-02) 與 EndSerenading(1998-08-25)。實掃 seed_cards.json 全 14,424 列，池中只有前者，**補進這一張這位藝人的正規目錄就完整了**。碟在樂團解散後才發行，1998-08-25 由 Crank! 以 crc021／80211-2 兩個編號出版；2002 年 Silverline 288049-9、2014-08-25 Arena Rock、2014-11-07 英國 Xtra Mile XMR094LP 黑膠三次再發。",
+  "risk": "Apple us 命中 collectionId 1856271094（Mineral／EndSerenading／10 軌／1998-01-01／notExplicit）；1998-01-01 是佔位日期，MB 為 1998-08-25，`yearDrift` 因此算不出來（第 140 條附錄），年份取 MB 的 1998、兩者同年、無爭議。**掛名「Mineral」是常見普通名詞**，字串比對必須連盤名一起鎖；盤名「EndSerenading」是合成字、拼寫獨特，實掃 seed_cards.json 全檔零命中。CAA 走 release-group 端點。",
+  "mbNote": "釘 release-group 12409dbf-56d8-3900-89f6-b678737bc0b4。回問 release-group/<id>?inc=artist-credits+releases 確認：title「EndSerenading」、artist-credit「Mineral」、first-release-date 1998-08-25、primary-type Album、secondary-types 空、轄下 5 個 release（US ×4、GB，全 Official；原盤為 1998-08-25 US Crank! crc021）。藝人 MBID 由 artist?query=Mineral 取得並以 browse 覆核，名下只有兩個 primary-type=Album 的 release-group。刻意不釘：3ff93a02-eec5-3624-b1fe-7b33a0795cbb《The Power of Failing》（1996，池中已有）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "End Serenading",
+  "reissuedBy": "Xtra Mile Recordings（2014 黑膠）",
   "g": "b"
  }
 ]
