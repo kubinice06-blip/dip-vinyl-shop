@@ -758,5 +758,93 @@
   "status": "full",
   "yearVerified": "一致，1978。MB release-group first-release-date 1978-01-25，其下 1978-01-25 JP Official Columbia YP-7071-AX（12\" Vinyl）為原盤，卡單年份 1978 相符、**不是復刻年**；1985 的 33C35-7575、1994 的 COCC-12206、2015 的 COCX-39261、2016 的 COKM-40032 都是後來的再發。**作品年與原聲帶發行年要分開寫**：《ルパン三世》TV 第 2 系列 **1977-10-03 開播、1980-10-06 播畢 155 話**（ja 維基），本碟 **1978-01-25** 發行時作品開播才 114 天、還要再播兩年半——**作品年是一個橫跨三年的區間，不是單一年份**。**Apple 那筆雖然把 releaseDate 顯示成 1978-01-25、℗ 也寫 1978，但它的曲目列是 2015 年那個 17 軌版本**，日期不能當版本門檻（裁定 77）。",
   "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready（但是加曲版）。** 正解 **1588676227**，**jp／us／gb／tw／hk／de 六個店面全部命中**、17 軌全部有 previewUrl。**探測落空有兩個原因疊在一起**：(1) **掛名不是作曲家**——Apple 把這張碟掛在樂團「ユー & ザ・エクスプロージョン・バンド／You & The Explosion Band」名下，不是大野雄二，所以他的藝人頁目錄（jp 101 筆、us 97 筆）撈不到，**只有 `search` 端點看得見**（c-101 第 8 條的形狀＋裁定 173）；(2) **盤名字序不同**——卡片與 MB 用《Original Soundtrack from Lupin III》，Apple 用《Lupin the Third Original Soundtrack》。\\n**⚠ 但它不是原盤的軌目，是加曲版（裁定 140／141）**：Apple 那筆 17 軌＝**原盤 10 軌（曲長逐軌只差 0 至 4 秒）＋七軌原盤沒有的シングル・ヴァージョン／編集前ヴァージョン**，而且**十軌的標題從 1978 年的英文全部換成了日文**。它對應的是 MB 上 2015-10-14 Columbia COCX-39261 Blu-spec CD 那一筆。**下游要鎖 `originalTrackCount=10`，行文不得把 17 當本碟軌數、也不得用日文曲名冒充 1978 年黑膠上的曲名。**\\n**別碟警示**：Apple 同一個樂團掛名底下另有 **1588672667《Lupin the Third Original Soundtrack 2》(1978-12-10，13 軌)、1588676420《同 3》(1979-12-10，15 軌)**——**盤名只差尾端一個數字，是裁定 168 的形狀**；還有 **1588680244《Lupin the Third: The Castle of Cagliostro Original Soundtrack BGM》(1983-03-21，19 軌)，那正是池中已有的那張卡**，不得與本卡混。策展層已明寫刻意不釘 dcae5ca1《Original Soundtrack 2》、49cdada1《同 3》、54dc40d2《カリオストロの城》、3f8286ee《パーフェクト・コレクション》、fd841d4a《ルパン三世 BOX》、eb5863c1《LUPIN THE BEST!》。\\n**掛名分裂要記**：MB 藝人實體名是日文「大野雄二」，Apple 的藝人頁用羅馬拼音 Yuji Ohno（artistId 73404621），**而本張在 Apple 上掛的又是樂團名**——同一張碟在池中可能出現三種寫法，去重都要掃（裁定 49）。\\n**擋下策展層一處說法**：`curatorRisk` 寫「他的 Apple 目錄裡 66 筆 LUPIN 相關**全部是** 1999 年之後 Lupintic 系列的重新錄音」——**與來源相反**。實掃 jp 目錄 101 筆，盤名含 LUPIN／ルパン 的有 **75 筆**，其中 **1588676227（本張 1978）、1588672667（1978）、1588676420（1979）、1588680244（1983）四筆是 1970–80 年代的原盤**，另有 1997 年的《WALTHER P38》。**行文不得寫「全部是重新錄音」。**"
+ },
+ {
+  "key": "desc4:菊池俊輔|ドラゴンボール 音楽集",
+  "artist": "菊池俊輔",
+  "album": "ドラゴンボール 音楽集",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6c1c9bae 的欄位：title「ドラゴンボール 音楽集」、artist-credit「菊池俊輔」（藝人 MBID 3240614e，名下 34 個 release-group）、first-release-date 1986-04-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release，**五筆全部 14 軌**。",
+    "src": "https://musicbrainz.org/release-group/6c1c9bae-2aa0-380f-b7ce-48e696028434"
+   },
+   {
+    "f": "同一 RG 的 release 明細：**1986-04-21 JP Official Columbia CX-7272 兩筆，載體都是 Vinyl、都是 14 軌，差別只在標題**——一筆作《ドラゴンボール 音楽集》、一筆作《ドラゴンボール 音楽集 テレビ・オリジナル・サウンドトラック》；2003-09-25 JP Official Columbia Music Entertainment COCC-72015 CD 14 軌；另兩筆英譯 Pseudo-Release《Dragon Ball: Music Collection》。**沒有 Bootleg。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6c1c9bae-2aa0-380f-b7ce-48e696028434&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release ebe90508（1986-04-21 JP Columbia CX-7272，Vinyl）的逐軌曲目：14 軌，**第 1 軌與第 3 軌都叫〈摩訶不思議アドベンチャー!〉**（主題曲的兩個版本），末軌〈ロマンティックあげるよ〉是片尾曲；中間十一軌是以角色與場面命名的劇伴——〈旅立ち〉〈セクシーギャル ブルマ〉〈ドラゴンボールの謎〉〈ファンキー亀仙人〉〈大荒野〉〈妖怪出没〉〈野心〉〈危険がいっぱい〉〈神龍出現〉〈ピラフとその部下〉〈野生の少年〉。**MB 未填逐軌長度。**",
+    "src": "https://musicbrainz.org/release/ebe90508-3ce0-3a0e-b191-a5bc60941eba"
+   },
+   {
+    "f": "Apple Music 覆核（兩個端點、六個店面）：菊池俊輔藝人頁 artistId 193509151 的目錄筆數 jp 17、us 12（**遠低於 limit=200 的截斷值**），**六店的目錄裡沒有任何ドラゴンボール條目**——目錄裡是他的特攝與動作劇音樂集（《キイハンター MUSIC FILE》《侍ジャイアンツ》《Masked Rider V3》《Choujin Barom 1》《Henshin Ninja Arashi》《Hurricane Polymar》《G-MEN '75》等）。",
+    "src": "https://itunes.apple.com/lookup?id=193509151&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "Apple `search` 端點（jp「ドラゴンボール 音楽集」、us「Dragon Ball Music Collection」）回的全是後世的主題曲與別作品原聲：1581046709（ZARD《Don't you see!》）、1781375478／1792561278（Zedd & C&K，DAIMA 主題曲）、1445807318《映画「ドラゴンボール超 ブロリー」オリジナル・サウンドトラック》(2018，33 軌)、1799660324《Dragon Ball Daima Original Soundtrack》(山下康介，2025，71 軌)、1003658889《熱烈!アニソン魂 THE BEST カバー楽曲集》(翻奏)。**兩個端點都跑過，結論一致：Apple 上沒有這張碟。**",
+    "src": "https://itunes.apple.com/search?term=Dragon%20Ball%20Music%20Collection&country=us&entity=album&limit=10"
+   },
+   {
+    "f": "日文維基〈ドラゴンボール (アニメ)〉導言：鳥山明 同名漫畫原作，**1986 年（昭和 61 年）2 月 26 日至 1989 年（平成元年）4 月 19 日**於富士電視台系列每週三 19:00–19:30 播出，**全 153 話**，之後故事直接接續到《ドラゴンボールZ》。本碟 **1986-04-21** 發行時，TV 版開播才 54 天、還要再播三年。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%AB_(%E3%82%A2%E3%83%8B%E3%83%A1)"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡有兩軌是同一首〈摩訶不思議アドベンチャー!〉，排在第一與第三",
+   "碟上架時那部片才播了五十四天，之後又播了三年、一百五十三話"
+  ],
+  "sound": "MB release ebe90508（Columbia CX-7272）記黑膠 14 軌，**MB 未填逐軌長度與總長**。曲目結構是主題曲加劇伴：第 1、3 軌是〈摩訶不思議アドベンチャー!〉的兩個版本，末軌〈ロマンティックあげるよ〉是片尾曲，中間十一軌是以角色與場面命名的劇伴（〈セクシーギャル ブルマ〉〈ファンキー亀仙人〉〈ピラフとその部下〉三軌掛的是角色名，〈大荒野〉〈妖怪出没〉〈神龍出現〉三軌掛的是場面）。**MB 五筆 release 軌數一致都是 14；逐軌長度沒有來源，行文不得寫曲長。**",
+  "keyTracks": [
+   "摩訶不思議アドベンチャー!",
+   "神龍出現",
+   "ロマンティックあげるよ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。MB release-group first-release-date 1986-04-21，其下 1986-04-21 JP Official Columbia CX-7272 兩筆黑膠為原盤，卡單年份 1986 相符、**不是復刻年**；2003-09-25 Columbia Music Entertainment COCC-72015 是 CD 化重出。**作品年與原聲帶發行年要分開寫**：TV 動畫《ドラゴンボール》**1986-02-26 開播、1989-04-19 播畢全 153 話**（ja 維基），本碟 **1986-04-21** 發行時作品開播才 54 天——**同年，但作品是一個橫跨三年的區間**。",
+  "notes": "**unavailable 覆核成立：Apple 上真的沒有。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 193509151 在 jp 17 筆／us 12 筆（**離 limit=200 的截斷線極遠**），六店目錄裡全是他的特攝與動作劇音樂集，沒有ドラゴンボール；`search` 端點另跑日文與英文兩種盤名，回的是後世的主題曲單曲、2018 年劇場版原聲與 2025 年《DAIMA》原聲。**這是 c-101 第 1 條那個陷阱的典型：查無的碟，搜尋結果被同一部作品後世的主題曲與翻奏塞滿。**\\n**⚠ 同一 RG 底下有兩筆同編號、同載體、同軌數、只有標題長度不同的 release**（Columbia CX-7272，一筆帶「テレビ・オリジナル・サウンドトラック」副標、一筆不帶）——**這是裁定 152 那個「副標串進盤名」的形狀**，卡片取 RG 標題（不帶副標），覆核成立；去重兩種都要掃。第三種寫法是英譯《Dragon Ball: Music Collection》（MB 兩筆 Pseudo-Release）。\\n**status 記 full，但逐軌長度無來源**：MB 有 14 軌的曲名與曲序，**沒有任何一軌填了長度**，Discogs 未查。**行文可以寫軌數與曲名，不得寫曲長或總長。**\\n**別碟警示**：策展層已明寫刻意不釘 509efbd4《ドラゴンボールZ 音楽集 vol.1》、ad78c289《同 vol.2》、d84f5899《ドラゴンボール/ドラゴンボールZ大全集》、38c1e4c4《Dragon Ball Z BGM Collection CD-BOX》、6043649c《菊池俊輔BGMコレクョン》、602a43b1《菊池俊輔 作曲50周年 CD-BOX》。**續作《ドラゴンボールZ 音楽集》的盤名只多一個 Z 與卷號**，是最強的假陽性。"
+ },
+ {
+  "key": "desc4:神前暁|化物語 音楽全集 Songs & Soundtracks",
+  "artist": "神前暁",
+  "album": "化物語 音楽全集 Songs & Soundtracks",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c39bf004 的欄位：title「化物語 音楽全集 Songs & Soundtracks」、artist-credit「神前暁」（藝人 MBID 557e6938，名下 79 個 release-group）、first-release-date 2011-12-21、primary-type **Album**、secondary-types **[Compilation, Soundtrack]**、轄下 3 個 release。**依裁定 167，判準是 `primary-type` 欄本身：primary-type=Album 就照一般 Album 寫、例外欄位留空，`secondary-types` 含 Compilation 不觸發 §5.6。策展層的處理覆核成立。**",
+    "src": "https://musicbrainz.org/release-group/c39bf004-2fd9-4d0f-9921-0b5ef781148e"
+   },
+   {
+    "f": "同一 RG 的 release 明細：2011-12-21 JP Official Aniplex **SVWC-7814 與 SVWC-7815 兩個編號、CD+CD 兩片、31+39 共 70 軌**；另兩筆 Pseudo-Release（英譯《Bakemonogatari Complete Music Works: Songs & Soundtracks》與羅馬轉寫《Bakemonogatari Ongaku Zenshuu: Songs & Soundtracks》）同樣是 31+39。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c39bf004-2fd9-4d0f-9921-0b5ef781148e&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release e5b531c3 的逐軌曲目：**第一片 31 軌**——第 1 軌〈豫告〉61 秒，第 2 至 6 軌是五首片頭曲（〈staple stable〉275 秒、〈帰り道〉247 秒、〈ambivalent world〉257 秒、〈恋愛サーキュレーション〉255 秒、〈sugar sweet nightmare〉272 秒），第 27 軌〈君の知らない物語〉343 秒是全碟最長；**第二片 39 軌**——第 1 軌〈雑多坩堝〉只有 18 秒（全碟最短），其中五軌是〈次回、ひたぎクラブ〉〈次回、まよいマイマイ〉〈次回、するがモンキー〉〈次回、なでこスネイク〉〈次回、つばさキャット〉五段預告，末軌〈普通最高〉152 秒。",
+    "src": "https://musicbrainz.org/release/e5b531c3-cee1-4bbd-98d7-c5345017a3c4"
+   },
+   {
+    "f": "Apple Music jp collectionId 1535798702《化物語 劇伴音楽集》：**artistName 記成「物語シリーズ」**，releaseDate 2018-11-02、copyright「℗ 2018 Aniplex Inc.」、trackCount 70，`entity=song` **攤得出 70 軌、70 軌全部有 previewUrl**。**七十軌的曲名、曲序與曲長，與 MB 原盤兩片（31 軌＋39 軌）攤平串接後逐位置相符**——第 1 至 31 軌是第一片、**第 32 軌〈雑多坩堝〉18 秒正是第二片的第一軌**，一路排到第 70 軌〈普通最高〉。唯一的差異是第 9 軌 Apple 作〈道徳塗説〉、MB 作〈道聴塗説〉一處用字。",
+    "src": "https://itunes.apple.com/lookup?id=1535798702&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple Music us 店面另有 collectionId 1439324785《Bakemonogatari Gekihanongakushu (Original Soundtrack)》：**artistName 記成「MONOGATARI Series」**，releaseDate 2018-11-02、同一個 ℗ 2018 Aniplex、trackCount 70，`entity=song` **同樣攤得出 70 軌、70 軌全部有 previewUrl**，曲名改用羅馬拼音（Yokoku／Staple Stable…）。**jp 的 1535798702 只在 jp 命中**（us／gb／tw／hk／de 回 0 筆），**us 的 1439324785 是英語店面的對應條目**。",
+    "src": "https://itunes.apple.com/lookup?id=1439324785&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Monogatari (series)〉：西尾維新 原作、Vofan 插畫；Shaft 自 **2009 年**起多次動畫化，動畫版「第一季」共 **30 話、2009 年 7 月至 2012 年 12 月**在日本播出，第二季 28 話（2013 年 7 至 12 月）、最終季 42 話（2014 年 12 月至 2019 年 6 月）。本碟 **2011-12-21** 發行時，動畫第一季還在播出期間之內。",
+    "src": "https://en.wikipedia.org/wiki/Monogatari_(series)"
+   }
+  ],
+  "hookCandidates": [
+   "兩片七十軌，最短的一軌十八秒，最長的〈君の知らない物語〉五分四十三秒",
+   "第二片裡有五段「次回」預告，每段五十秒上下"
+  ],
+  "sound": "MB release e5b531c3（Aniplex SVWC-7814／SVWC-7815）記 **CD+CD 兩片、31＋39 共 70 軌**，MB 未填總長。第一片前六軌是〈豫告〉加五首片頭曲，其後是劇伴，第 27 軌〈君の知らない物語〉343 秒是全碟最長；第二片以 18 秒的〈雑多坩堝〉開場（全碟最短），中間穿插五段〈次回、…〉預告（37 至 58 秒），並以角色名編組（〈八九寺真宵の場合〉〈戦場ヶ原ひたぎの場合〉〈神原駿河の場合～全裸〉〈同～着衣〉〈千石撫子の場合〉），收在〈普通最高〉。**Apple 的數位版把兩片攤平成單一的 70 軌序列，行文寫「兩片」時要以 MB 的原盤結構為準。**",
+  "keyTracks": [
+   "豫告",
+   "君の知らない物語",
+   "普通最高"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。MB release-group first-release-date 2011-12-21，其下唯一的 Official release 是 2011-12-21 JP Aniplex SVWC-7814／SVWC-7815，卡單年份 2011 相符、**不是復刻年**。**作品年與原聲帶發行年要分開寫**：TV 動畫《化物語》**2009 年**由 Shaft 動畫化，動畫版第一季共 30 話、**2009 年 7 月至 2012 年 12 月**播出（en 維基），本碟 2011-12-21 落在第一季的播出期間之內；小說原作上下卷則是 2006 年 11 月與 12 月刊行（ja 維基）。**Apple 那兩個 id 的 releaseDate 都是 2018-11-02，那是數位重新遞送的日期，不是本碟的發行年。**",
+  "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1535798702**（《化物語 劇伴音楽集》，70 軌、70 軌皆有 previewUrl）與 **us 1439324785**（《Bakemonogatari Gekihanongakushu (Original Soundtrack)》，同 70 軌、同 ℗、曲名改羅馬拼音）。**七十軌的曲名、曲序與逐軌長度，與 MB 原盤兩片攤平串接後逐位置相符**（第 32 軌〈雑多坩堝〉正是第二片的第一軌），**確認是同一份內容**。\\n**探測落空有兩個原因疊在一起**：(1) **掛名不是作曲家**——Apple 把它掛在「物語シリーズ」（jp）／「MONOGATARI Series」（us）名下，不是神前暁，所以他的藝人頁目錄（jp 18 筆、us 20 筆）撈不到（c-101 第 8 條的形狀）；(2) **盤名不同**——卡片與 MB 是《化物語 音楽全集 Songs & Soundtracks》，Apple 用《化物語 劇伴音楽集》。**兩個端點都要跑（裁定 173）：這一筆只有 `search` 端點看得見。**\\n**⚠ 要記的差異兩項**：(a) Apple 的標題寫「劇伴音楽集」，但它**含了第一片那五首片頭曲**，內容其實是「音楽全集」；(b) **原盤是兩片（31＋39），Apple 攤平成單一的 70 軌**——依裁定 175／c-97 第 11 條，比對以攤開的曲目列為準，本卡的 70 對得上 31＋39。**下游行文寫「兩片」要以 MB 為準，寫軌數則 70 與 31＋39 都成立。**\\n**releaseType 覆核（裁定 167）**：MB 的 `primary-type` 是 **Album**、`secondary-types` 是 [Compilation, Soundtrack]。**判準是 primary-type 欄本身**，所以照一般 Album 寫、`exceptionReason` 與 `exceptionEvidenceUrls` 留空——策展層的處理正確，**本卡不走 §5.6**。\\n**別碟警示**：策展層已明寫刻意不釘 fc21f4c3 與 72380bbe（2010 年兩張隨碟附贈的劇伴音楽集）、318a3d21 起的《偽物語》《猫物語》《傾物語》各卷、1588bd3d《セカンドシーズン Original Soundtracks》。Apple 上另有 1535798229《歌物語 Special Edition》(25 軌)、1537811231《歌物語2》(17 軌) 兩筆歌曲精選，同樣掛「物語シリーズ」，**不得改配**。"
  }
 ]
