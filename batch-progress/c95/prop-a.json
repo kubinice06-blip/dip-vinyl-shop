@@ -296,5 +296,158 @@
   "queryAlias": "Rockin My Blues Away；Rockin' My Blues Away (Bluebird)",
   "reissuedBy": "",
   "g": "a"
+ },
+ {
+  "artist": "Lonnie Johnson",
+  "album": "Blues & Ballads",
+  "year": 1960,
+  "genres": [
+   "blues",
+   "jazz"
+  ],
+  "label": "Bluesville（BVLP 1011）",
+  "why": "池中 Lonnie Johnson 只有 1 張：1960 年的《Blues by Lonnie Johnson》（實掃全檔）。這一張是同年 Bluesville 的姊妹盤，配的是 1920 年代的老搭檔、班卓琴手 Elmer Snowden。Johnson 是 1920 年代唯一同時在 OKeh 的藍調系列與爵士系列（與 Louis Armstrong、Duke Ellington、Eddie Lang 同場）都留下錄音的吉他手，Bluesville 這兩張是他晚年被重新發掘後的核心目錄。池中只收了兩張裡的一張。",
+  "risk": "MB artist-credit 是「Lonnie Johnson; Elmer Snowden」兩人合掛，卡片掛名取領銜的 Lonnie Johnson。掛名同名雙胞胎極多：MB 上「Lonnie Johnson」至少有四個實體（藍調吉他手 dbfd61ef、放克製作人 a7dfe6e9、小號手 5f65ece8 等），釘位一律用 dbfd61ef。盤名的 & 與 and 兩種寫法都要進 queryAlias。Apple collectionId 1794910829（Blues & Ballads (Remastered 2025) [feat. Elmer Snowden]、10 軌、notExplicit）／店面 us——那是 2025 年 remaster、releaseDate 記 2025-03-14，與 MB 的 1960 差六十五年，版本要核（裁定第 77 條）。封面 CAA release-group 端點實測 HTTP 200。本批同時收 Victoria Spivey《Woman Blues!》（Lonnie Johnson 合掛），兩張不同碟。",
+  "mbNote": "釘 release-group ba700add-8cdd-3cec-bdb5-b4937f02f541。回問確認：title「Blues & Ballads」、artist-credit「Lonnie Johnson; Elmer Snowden」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release（US 2／XW 1），status 全部 Official。刻意不釘：a257fe01-8320-4071-a542-a3a2abd3286b《Idle Hours》（1992，與 Victoria Spivey 合掛）、f3a45f67-a0f4-4a9f-8d96-5927b3887d1c《Woman Blues!》（本批列在 Victoria Spivey 名下）；池中既有的《Blues by Lonnie Johnson》亦不釘。藝人 MBID dbfd61ef-fce1-4803-9f18-7bfdd3996508，名下 70 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Blues and Ballads；Lonnie Johnson & Elmer Snowden Blues & Ballads",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Little Walter",
+  "album": "Hate to See You Go",
+  "year": 1969,
+  "genres": [
+   "blues"
+  ],
+  "label": "Chess（LP 1535）",
+  "why": "Little Walter 個人名下池中只有 1 張：1957 年的《The Best of Little Walter》（另有一張 Bo Diddley／Muddy Waters／Little Walter 三人合掛的《Super Blues》）。實掃全檔後確認缺的是 Chess 的第二本選輯——1969 年的這一張把 1955–1960 年間沒收進 1957 年那本的 Checker 單曲面整理成 LP，是 Chess 生前／身後兩本選輯的下半。芝加哥電藍調這條線在池中的口琴一側只有這一個名字，補齊他自己的兩本選輯是最低限度。",
+  "risk": "盤名與 1955 年的單曲面〈Too Late / I Hate to See You Go〉（MB a210407d）只差一個字，字串比對容易誤配；MB 另有兩筆《Confessin' the Blues》（1974 的 4f18d54f 與 1996 的 475d89ae）是 Chess 的另一本選輯、不是本張。年份 1969 是 LP 出版年，錄音年 1955–1960。Apple collectionId 1434278279（Hate to See You Go、1969-08-07、15 軌、notExplicit）／店面 us，日期與軌數都對得上。",
+  "mbNote": "釘 release-group 277b3437-5552-36ba-823f-112113463418。回問確認：title「Hate to See You Go」、artist-credit「Little Walter」、first-release-date 1969、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 3），status 全部 Official（第 43／57 條：這一次再發是 Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：a210407d-78a4-3801-a868-6059faa18537《Too Late / I Hate to See You Go》（1955-10 單曲，盤名最像的假陽性）、4f18d54f-f284-3094-9276-8be5b38e37d7 與 475d89ae-66ec-3ba1-b0a5-dafa32a7be53《Confessin' the Blues》（1974／1996，Chess 另一本選輯）。藝人 MBID 5545a012-0977-46ff-9d69-39bf5952616f，名下 66 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hate To See You Go (Chess)；Little Walter Hate to See You Go",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "J.B. Lenoir",
+  "album": "Alabama Blues",
+  "year": 1966,
+  "genres": [
+   "blues"
+  ],
+  "label": "CBS / L+R（S 63740）",
+  "why": "J.B. Lenoir 池中 0 張（實掃全檔），這是他的第一張卡。他 1950 年代在 Parrot 與 Chess 錄過〈Eisenhower Blues〉這種會被電台下架的政治藍調；1965 年德國製作人 Horst Lippmann 為他錄的這一張把越戰、阿拉巴馬的種族暴力寫成整張專輯，是芝加哥電藍調裡極少數以時事為主題的正規盤，1960 年代只在歐洲發行、美國本土買不到。池中的芝加哥線有 Muddy Waters 12 張、Howlin' Wolf 8 張，卻沒有 Lenoir 這條支線。",
+  "risk": "盤名有 Alabama Blues／Alabama Blues!（帶驚嘆號）兩種：MB release-group 作前者，Apple US collectionId 531342775 作「Alabama Blues!」（releaseDate 記 1979-01-01、16 軌、notExplicit），Apple 那筆是後續再版、與 MB 的 1966 差十三年，版本要核。掛名另有 J.B. Lenoir and His Combo（MB 8a7c4502）與 J.B. Lenoir & His African Hunch Rhythm（6a7f6899）兩個樂團實體。同名近名風險：MB 另有法國作曲家 Jean Lenoir（148c1433）。",
+  "mbNote": "釘 release-group c51dc633-5a2e-391e-a5fd-dd883bba5124。回問確認：title「Alabama Blues」、artist-credit「J.B. Lenoir」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 4 個 release（GB 1／DE 1／AU 1／無國別 1），status 全部 Official——四筆全在歐洲與澳洲、無美國盤，與這張當年在美國買不到的史實一致。刻意不釘：147547169 那類 Apple 側的《Passionate Blues》整編在 MB 對應的條目、以及 Lenoir 名下 36 個 release-group 裡的各家《Vietnam Blues》系整編。藝人 MBID 29b9edaa-058f-489a-b54a-73cc3627661c，名下 36 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alabama Blues!；J.B. Lenoir Alabama Blues；JB Lenoir",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Jimmy Rogers",
+  "album": "Chicago Bound",
+  "year": 1970,
+  "genres": [
+   "blues"
+  ],
+  "label": "Chess（LP 407）",
+  "why": "Jimmy Rogers 池中 0 張（實掃全檔），這是他的第一張卡。他是 Muddy Waters 1950 年代那支樂團的第二吉他手，同時在 Chess 以自己的名義發單曲——〈That's All Right〉〈Walking by Myself〉都出自那批。1970 年 Chess 把他 1950–1959 年的單曲面整理成這張 LP，是他個人目錄的入口。池中 Muddy Waters 有 12 張、Little Walter 有 1 張，那支樂團的三根支柱只缺 Rogers 一個。",
+  "risk": "⚠ 同名雙胞胎：MB 有兩筆《Chicago Bound》——1970 年的 39e1cf5a（Chess 整編，artist-credit「Jimmy Rogers; Little Walter; Muddy Waters」）與 1989 年的 be277147（artist-credit「Jimmy Rogers; Big Moose Walker」，別碟）。Apple 兩筆也對應這個分裂：collectionId 1434917283（Jimmy Rogers — Chicago Bound、1976-02-03、14 軌）與 998916339（Jimmy Rogers & Johnny \"Big Moose\" Walker — Chicago Bound、1976-01-01、10 軌）。本卡釘 1970 那筆、試聽取 1434917283（軌數與 Chess LP 相符），封面與試聽層都不得配到 998916339。卡片掛名取領銜的 Jimmy Rogers；MB 的合掛寫法是因為 Muddy Waters 與 Little Walter 在多數曲子裡伴奏。年份 1970 是 LP 出版年，錄音年 1950–1959；Apple 記 1976 是再版年（裁定第 77 條）。掛名同名者另有路易斯安那的廠牌主 Jimmy Rogers（MB e8e4c672）。",
+  "mbNote": "釘 release-group 39e1cf5a-1b22-33b1-8081-ea27fd04997c。回問確認：title「Chicago Bound」、artist-credit「Jimmy Rogers; Little Walter; Muddy Waters」、first-release-date 1970、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 2／JP 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：be277147-c92b-4410-a441-3c79c390c6a0《Chicago Bound》（1989，與 Big Moose Walker，同名別碟、最危險的假陽性）、c430c88e-01aa-4b92-920e-4c41c71914b4《Chicago Bound / Sloppy Drunk》（1954-06 單曲）、1449783210 對應的《Ludella》系整編。藝人 MBID 3362f019-06a5-4591-ab5d-1e331049f14a，名下 33 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chicago Bound (Chess)；Jimmy Rogers Chicago Bound 1970",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Elmore James",
+  "album": "Whose Muddy Shoes",
+  "year": 1968,
+  "genres": [
+   "blues"
+  ],
+  "label": "Chess（LP 1537）",
+  "why": "池中 Elmore James 只有 1 張：1965 年的《The Sky Is Crying》（實掃全檔）。這一張是 Chess 1968 年把他 1953–1957 年在 Chief／Chess 系統留下的面，與同期的 John Brim 的面合成一張 LP 發行——Elmore James 生前沒有出過正規專輯，他的目錄從一開始就是這種身後整編，這張是其中最早、也是最常被引用的一本。池中有 Bobby Robinson 那條線的《The Sky Is Crying》，缺 Chess 這條線。",
+  "risk": "MB artist-credit 是「Elmore James; John Brim」兩人合掛，Apple US collectionId 1587981186 也記「Elmore James & John Brim」（1969-01-01、17 軌、notExplicit）；卡片掛名取領銜的 Elmore James，行文不得寫成 Elmore James 個人專輯。與池中《The Sky Is Crying》不同碟，但 MB 另有一筆 9e2bc58f《The Sky Is Crying: The History of Elmore James》（1993 Rhino）盤名包含池中既有卡的完整字串，是這位藝人最容易誤配的一筆。年份 1968 是 LP 出版年（Apple 記 1969），錄音年 1953–1957。掛名另有 Elmore James & His Broom Dusters（MB b56ffb46）與其子 Elmore James, Jr.（dba2f4e0）。",
+  "mbNote": "釘 release-group b19ec296-56c2-3422-9901-14e6140c0211。回問確認：title「Whose Muddy Shoes」、artist-credit「Elmore James; John Brim」、first-release-date 1968、primary-type Album、secondary-types [Compilation]、轄下 5 個 release（US 2／JP 2／GB 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9e2bc58f-067b-3ef4-a6d0-7cab46741775《The Sky Is Crying: The History of Elmore James》（1993 Rhino，盤名包住池中既有卡，最危險的假陽性）；池中既有的《The Sky Is Crying》（1965）亦不釘。藝人 MBID 6fbd2cfb-5f9c-497c-8e06-3c6668367681，名下 114 個 release-group（第 116 條：分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Whose Muddy Shoes (Chess)；Elmore James & John Brim Whose Muddy Shoes",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Earl Hooker",
+  "album": "Sweet Black Angel",
+  "year": 1969,
+  "genres": [
+   "blues"
+  ],
+  "label": "Blue Thumb（BTS 12）",
+  "why": "池中 Earl Hooker 只有 1 張：1969 年 Arhoolie 的《Two Bugs and a Roach》（實掃全檔）。同一年他在 Blue Thumb 錄的這一張是另一條路線——Blue Thumb 是洛杉磯的新廠牌，把他放進當時的搖滾／藍調交界市場，這是他生前最後一批錄音之一（1970 年死於肺結核）。芝加哥西區那一支在池中有 Magic Sam 2 張、Otis Rush 6 張、Buddy Guy 7 張，Earl Hooker 只有 1 張，是這群人裡最薄的。",
+  "risk": "掛名同名近名：MB 上 Earl Hooker（ef11dd9b）與 John Lee Hooker（b0122194）是表兄弟，池中 John Lee Hooker 有 10 張，字串比對時 Hooker 一詞會同時命中兩人。MB 另有 6aaaed13 與 d9153da2 兩筆《Play Your Guitar, Mr. Hooker!》、a1692a55《The Genius of Earl Hooker》等同期條目。Apple 只有 gb 店面命中：collectionId 1283483865（Earl Hooker — Sweet Black Angel、1970-01-01、17 軌、notExplicit），us 店面查無；Apple 記 1970、MB 記 1969，取 MB。",
+  "mbNote": "釘 release-group 375109f6-595d-45c2-84c0-3e924abbb67a。回問確認：title「Sweet Black Angel」、artist-credit「Earl Hooker」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：b4aaf2e9-88a6-44f8-8bd3-71fa029f4205《Two Bugs and a Roach》（1969-05，池中已有）、a1692a55-e991-4547-969f-bbdf3bf6d5d8《The Genius of Earl Hooker》（1967）、c10027ca-4dc5-3fe4-a446-29ee3180da6d《If You Miss 'Im… I Got 'Im》（1969，與 Junior Wells）、58228af0《Funk (Last Of The Great Earl Hooker)》（1972 身後整編）。藝人 MBID ef11dd9b-4557-4fc5-b0e2-a431c5cfddbb，名下 32 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sweet Black Angel (Blue Thumb)；Earl Hooker Sweet Black Angel",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Magic Sam",
+  "album": "Give Me Time",
+  "year": 1991,
+  "genres": [
+   "blues"
+  ],
+  "label": "Delmark（DE-654）",
+  "why": "池中 Magic Sam 有 2 張：1967 年的《West Side Soul》與 1968 年的《Black Magic》（實掃全檔），都是 Delmark 的錄音室盤。這一張是同一家廠牌 1991 年整理發行的 1968 年獨奏帶——Magic Sam 1969 年三十二歲心臟病死，正規目錄只有那兩張，這批獨奏錄音是第三份、也是最後一份成套的錄音室素材。西區那一支在池中有 Otis Rush 6 張、Buddy Guy 7 張，Magic Sam 只有 2 張，落差最大。",
+  "risk": "掛名同名近名極多：MB 上除了 Magic Sam（d1834301）還有 L-MAGIC SAM（a5bf88c7）、Little Magic Sam（fac2ed13）、Lil' MAGIC SAM（aeceb2f7）三個現役藝人，Apple 搜尋也會命中 Little Magic Sam 的單曲（1509516862、1852185837），封面與試聽層都要用 collectionId 鎖死。Apple collectionId 96614076（Magic Sam — Give Me Time、1991-01-01、12 軌、notExplicit）／店面 us。年份 1991 是首次出版年，錄音年 1968。",
+  "mbNote": "釘 release-group e3527884-3d44-38d2-8086-8d43ce19e833。回問確認：title「Give Me Time」、artist-credit「Magic Sam」、first-release-date 1991、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：cbc85c50-1576-4a54-8c82-89886e450d22 與 3bdd9722-488c-40f5-b6e1-1fd4baf180a7《West Side Soul》（1992 重版與西語系列版，池中已有原盤）、0b72ceb5-ef70-4b13-9e04-019f88f40ab5《... With a Feeling! The Complete Cobra, Chief and Crash Recordings 1957-1966》（2001）、b9e87566-f248-32b4-9544-22b266332274《Live》（1981，Live）、4f5a46a6《Live at the Avant Garde》（2013，Live）。藝人 MBID d1834301-1ca3-4576-a0af-a81479d5c6b6，名下 31 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Give Me Time (Delmark)；Magic Sam Give Me Time；Samuel Gene Maghett",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Willie Dixon",
+  "album": "Catalyst",
+  "year": 1973,
+  "genres": [
+   "blues"
+  ],
+  "label": "Ovation（OVQD/1433）",
+  "why": "池中 Willie Dixon 有 3 張：《Willie's Blues》(1959)、《I Am the Blues》(1970)、《Hidden Charms》(1988)（實掃全檔）——1970 到 1988 之間十八年空白。這一張補的正是那段：1973 年在 Ovation 錄的自己領軍的專輯，是他離開 Chess 之後、Chicago Blues All-Stars 時期唯一一張完整的錄音室盤。Dixon 是芝加哥電藍調的詞曲與製作核心，池中的 Muddy Waters、Howlin' Wolf、Little Walter 那些名曲多半出自他的筆，他自己的目錄卻在中段斷掉。",
+  "risk": "⚠ MB 有兩筆同名《Catalyst》：e3525086（1973，本張）與 Apple 側對應的兩筆 collectionId 1610473392（1973-11-18、10 軌）與 1643019816（1973-01-01、10 軌）——後者是同一張碟的另一次數位上架，封面與試聽層要擇一鎖死，建議取 1610473392（日期較完整）。掛名另有 The Willie Dixon Band（MB f0e44371）、The Willie Dixon Orchestra（934c3b29）、The Big Three Trio（5562d4c9）三個實體。盤名〈Catalyst〉是常見英文單字，跨藝人同名極多。",
+  "mbNote": "釘 release-group e3525086-4e58-407f-b537-9f03c01aa453。回問確認：title「Catalyst」、artist-credit「Willie Dixon」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：1cba35e6-f846-39ff-bdd0-cd22be44d0f0《What Happened to My Blues》（1976 Ovation，同廠牌的下一張、最像的假陽性）。藝人 MBID ff4c8d42-4871-4778-885b-d41b01245133，名下 47 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Catalyst (Ovation)；Willie Dixon Catalyst 1973",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]

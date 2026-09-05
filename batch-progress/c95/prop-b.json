@@ -1,0 +1,403 @@
+[
+ {
+  "artist": "Roscoe Mitchell",
+  "album": "Old / Quartet",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nessa（N-5）",
+  "why": "池中 Roscoe Mitchell 個人名下只有 1 張：2007 年 ECM 的《Composition/Improvisation Nos. 1, 2 & 3》（另有 Art Ensemble of Chicago 5 張）。實掃全檔後確認他 1966–1980 年的 AACM 時期在池中完全空白，而那正是他影響最大的一段。這一輯是 Nessa 1975 年把兩段錄音併成一張雙 LP：1967 年芝加哥的四重奏場次（Lester Bowie、Malachi Favors、Phillip Wilson，也就是 Art Ensemble 成軍前的班底）與 1975 年的重聚錄音，是 AACM 第一代編制怎麼變成 Art Ensemble of Chicago 的直接紀錄。",
+  "risk": "盤名帶斜線「Old / Quartet」，字串正規化後與「Old Quartet」同鍵，兩種都進 queryAlias。Apple us／gb 皆查無本盤（實測），Nessa 是芝加哥的小型獨立廠牌、數位發行極少；Apple 搜「Roscoe Mitchell Old Quartet」只會命中 305846927《The Flow of Things》（掛 Roscoe Mitchell Quartet）與 664917302《Live At \"A Space\" 1975》，兩者都不是本盤，不得當試聽來源；試聽預估 unavailable。封面走 CAA release-group 端點（實測 HTTP 200）。掛名同名近名：MB 上另有其父 Roscoe Mitchell（34d2faa4）與 Roscoe Mitchell Quartet（53931b36）等實體。⚠ 原本規劃的《Nonaah》(1977) 已在 c-86 prop-b 收錄，依裁定第 119 條先到先得，本批改收這一張。",
+  "mbNote": "釘 release-group 07af4d38-7cc3-3cfd-816d-1b02c96ddc94。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Old / Quartet」、artist-credit「Roscoe Mitchell」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／JP 1），status 全部 Official。刻意不釘：5879e3f5-9f7f-4af5-8fc4-051196021e3f《Nonaah》（1977，已在 c-86）、1b924676-ff9c-4cf7-bbcf-786ac401173f《L-R-G / The Maze / S II Examples》（1978 Nessa，同廠牌同型的下一張）、e20658e5-3854-4750-8a19-4dccdcd41df2《Sound Songs》（1997）與 19eca32f-3a32-4be5-8eb2-023454c2eed7《Before There Was Sound》（2011）——兩筆都是搜 1966 年 Delmark《Sound》時的假陽性，該張在 MB 掛在 Roscoe Mitchell Sextet 名下、本人實體查無、67435452-6dd1-31e3-98c3-239e231136a1《The Roscoe Mitchell Solo Saxophone Concerts》（1974，Live）、344355a1-17ed-3a3a-8091-30154f3cad98《Composition/Improvisation Nos. 1, 2 & 3》（池中已有）。藝人 MBID 56f33083-6014-4f4e-9c43-b9652cde55be，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 57 個 release-group（第 116 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Old Quartet；Old/Quartet；Roscoe Mitchell Old Quartet (Nessa)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Albert Ayler",
+  "album": "My Name Is Albert Ayler",
+  "year": 1964,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Debut（DEB-140）",
+  "why": "池中 Albert Ayler 有 6 筆，但其中兩筆是同一張《Spiritual Unity》分別掛在「Albert Ayler」與「Albert Ayler Trio」兩種寫法下（實掃全檔確認：Love Cry 1968／Ghosts 1965／In Greenwich Village 1967／Bells 1965／Spiritual Unity ×2），實際是 5 張，而且全部集中在 1965 年之後。這一張是他的首張錄音室專輯，1963 年 10 月在哥本哈根用當地節奏組錄的，Debut 發行——「第一張該有的」在池中不在。",
+  "risk": "⚠ Apple US collectionId 152606352（My Name Is Albert Ayler、1963-01-14、6 軌）標 collectionExplicitness=cleaned，依 §6 淨化版屬不同版本，上架前必須先找 explicit 條目；若整份目錄確實只有淨化版，可收但要在備註寫明。另有 Apple 1465018534 是 Forlate 的〈My Name Was Albert Ayler〉單曲、與本盤無關。掛名分裂：池中已有「Albert Ayler」與「Albert Ayler Trio」兩種寫法（同一張《Spiritual Unity》各一），本卡沿用池中主寫法「Albert Ayler」，不製造第三種。年份取 MB 的 1964（Debut 發行年），錄音年 1963-10；Apple 記 1963 是錄音年。",
+  "mbNote": "釘 release-group a119e23e-6007-3c8a-82f6-1654a0cacecd。回問確認：title「My Name Is Albert Ayler」、artist-credit「Albert Ayler」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 3 個 release（GB 2／DK 1），status 全部 Official。刻意不釘：1afa0379-1208-338e-a826-4733b0a95954《The First Recordings》與 d8feb6c1-339a-3eee-828f-239b6d4f954d《The First Recordings, Volume 2》（1962 斯德哥爾摩，盤名最像「首張」的假陽性）、032569e0-8e07-335f-8591-c09f45c1f6bc《Witches & Devils》（1964，同年另一張）、c7d0fe8d-b7ae-34fe-b308-04bd16db5d21《New York Eye and Ear Control》（1966，secondary-type Soundtrack）。藝人 MBID b2dcc67a-45f9-4b9f-8221-3da4e0d32491，名下 50 個 release-group（分頁列全）；另有樂團實體 Albert Ayler Trio e11e7ec1 與 Albert Ayler Quintet 4fdf4de6。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "My Name Is Albert Ayler (Debut)；Albert Ayler Trio",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Albert Ayler",
+  "album": "Spirits Rejoice",
+  "year": 1965,
+  "genres": [
+   "jazz"
+  ],
+  "label": "ESP-Disk（ESP 1020）",
+  "why": "池中 Ayler 的 1965 年只有《Spiritual Unity》（重複兩筆）與《Bells》，缺同年 ESP-Disk 的另一張錄音室盤。《Spirits Rejoice》是 1965 年 9 月在 Judson Hall 錄的，編制從三重奏擴到七人（含他弟弟 Donald Ayler 的小號與 Call Cobbs 的大鍵琴），是 ESP-Disk 三張 Ayler 裡編制最大的一張，也是自由爵士把進行曲與聖歌旋律當素材這條做法最常被引用的例子。",
+  "risk": "盤名〈Spirits Rejoice〉同時是曲名，MB 上另有《Spirits》（1964 Debut，同一批人的另一張）與後世多筆同名條目。ESP-Disk 的授權史複雜，1970–1990 年代有多家歐洲廠牌未經授權重壓；MB 轄下 5 個 release（US 2／DE 1／IT 1／XW 1）status 全部 Official，本卡只以這些為背書（第 43／57 條：判定單位是這一次再發，不是 ESP-Disk 這家廠牌）。Apple collectionId 1233967311（Spirits Rejoice、1965-09-23、5 軌、notExplicit）／店面 us，軌數與 ESP 原盤相符。",
+  "mbNote": "釘 release-group 08842066-6bb8-3146-bf1c-fea470990daf。回問確認：title「Spirits Rejoice」、artist-credit「Albert Ayler」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 5 個 release（US 2／DE 1／IT 1／XW 1），status 全部 Official。刻意不釘：e032346e-f692-340c-a869-1694de6988fb《Bells》（1965，池中已有、Live）、8bb75fae-baec-38f9-bd7a-9e3715a2382c《Bells / Prophecy》（1997 合併版）、4cb33795-2768-376b-a464-8d00558174aa《In Greenwich Village》（1967，池中已有）。藝人 MBID b2dcc67a-45f9-4b9f-8221-3da4e0d32491。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Spirits Rejoice (ESP-Disk)；Albert Ayler Spirits Rejoice",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Benny Carter",
+  "album": "Jazz Giant",
+  "year": 1958,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Contemporary（C 3555）",
+  "why": "Benny Carter 池中 0 張（實掃全檔），這是他的第一張卡。他從 1928 年 Fletcher Henderson 樂團的編曲者做到 1990 年代還在錄音，是搖擺時代少數同時以中音薩克斯風、小號與編曲三種身分留下正典的人。《Jazz Giant》是 1957–1958 年在 Contemporary 錄的小編制盤（同場有 Ben Webster、Barney Kessel、Jimmy Rowles），長年被當成他戰後目錄的入口。池中的搖擺一側有 Coleman Hawkins 4 張、Lester Young 4 張、Benny Goodman 4 張，Carter 卻一張都沒有。",
+  "risk": "⚠ Apple 有兩筆同名：collectionId 1657783137（1958-01-01、7 軌）與 1532292753（1957-06-11、7 軌），同名同軌數、只差日期，是典型的雙胞胎條目，上架時要擇一鎖死並核對曲序。掛名另有 Benny Carter and His Orchestra（MB 5d5e9bc9）與 Benny Carter Quartet（daf0d496）。⚠ 1961 年 Impulse! 的《Further Definitions》（公認他最重要的一張）在 MB 名下 107 個 release-group 分頁全列後查無獨立條目，只有 efbcd221《Additions to Further Definitions》(1966) 與 f43f8d8d《Further Definitions + Jazz Giant》(2012 合併重發)——依本批規則 MB 查無不收，該張列入 §1 補遺候選（Apple 有確切條目 1584387773）。",
+  "mbNote": "釘 release-group 0b0bcd45-ef72-3d17-bb82-885bbaff231e。回問確認：title「Jazz Giant」、artist-credit「Benny Carter」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 7 個 release（US 4／JP 1／XE 1／XW 1），status 全部 Official。刻意不釘：f43f8d8d-9d9d-4242-b938-2527a79d606d《Further Definitions + Jazz Giant》（2012 兩張合併重發，盤名包住本張、最危險的假陽性）、efbcd221-3015-34e3-b3c0-ac84a2084038《Additions to Further Definitions》（1966）、657e4d3c-4c92-4b21-b29a-351044bc4340《Jazz Giant: Complete Sessions》（無日期）、cfa6e886《Benny Carter And The Jazz Giants》（1998 整編）。藝人 MBID 25cf5731-bed9-4604-97a4-8b9655de1a30，名下 107 個 release-group（第 116 條：分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jazz Giant (Contemporary)；Benny Carter Jazz Giant",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Bix Beiderbecke",
+  "album": "Singin' the Blues",
+  "year": 1990,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Columbia / Legacy（CK 45450）",
+  "why": "Bix Beiderbecke 池中 0 張（實掃全檔），這是他的第一張卡。他 1924–1930 年在 Gennett、OKeh 與 Paul Whiteman 樂團留下的錄音，是 1920 年代白人爵士這條線的核心；二十八歲死於酒精中毒，所有正典都是後世整編。Columbia／Legacy 這一輯選的是 1927 年與 Frankie Trumbauer 合作的 OKeh 面，標題曲〈Singin' the Blues〉是他最常被引用的一次獨奏。池中的 1920 年代一側有 Louis Armstrong 8 張、Jelly Roll Morton 2 張，缺 Bix 這個名字。",
+  "risk": "盤名寫法四種以上：MB release-group 標題是「Volume 1: Singin' the Blues」（06f62d64），Apple US collectionId 193147812 作「Bix Beiderbecke, Vol. I - Singin' the Blues」（1990-01-01、20 軌、notExplicit），MB 另有一筆 f2927c6a《Singin' the Blues》（1995-??-07、僅 1 個 release）是同一套的另一個條目。本卡盤名取通行的《Singin' the Blues》，四種寫法全部進 queryAlias；依裁定第 91／95 條，RG 標題與卡片盤名不必相等。年份 1990 是整編出版年，錄音年 1927。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 06f62d64-fa5c-313e-9a1a-d62eeba39460。回問確認：title「Volume 1: Singin' the Blues」、artist-credit「Bix Beiderbecke」、first-release-date 1990、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 1／NL 1／無國別 1），status 全部 Official。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：f2927c6a-9803-4306-939f-03cef1d730a4《Singin' the Blues》（1995，MB 的同套重複條目、與本卡盤名字面相同，最危險的假陽性）、40856d21-48a8-45dc-977f-67a35d39d571《Bix & Tram》（2002）、2330f386-516f-4113-adf9-73bc38189a8c《The Bix Beiderbecke Story, Volume 2: Bix and Tram》（1952）、34449317-3ffb-4b74-9964-6c0537be78fb《The Bix Beiderbecke Story, Volume 1: Bix and His Gang》（1956）。藝人 MBID 32286190-da0f-4a85-b3d6-09a84d7e2bbc，名下 98 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Volume 1: Singin' the Blues；Bix Beiderbecke, Vol. I - Singin' the Blues；Bix Beiderbecke Volume 1 Singin the Blues",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mary Lou Williams",
+  "album": "Zodiac Suite",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Folkways（FJ 2966）",
+  "why": "池中 Mary Lou Williams 只有 1 張：1976 年的《Free Spirits》（實掃全檔）。《Zodiac Suite》是她 1945 年寫的十二段組曲（每段一個星座），同年在 Asch 錄了三重奏版、也在紐約市政廳演過管弦版，是搖擺時代女性作曲家把爵士寫成長篇形式最早的例子之一；Folkways 1975 年把 Asch 的原始母帶重新發行，這一版是它長年在架的形態。她從 Andy Kirk 樂團的編曲者一路寫到 1970 年代的宗教作品，池中只有晚期一張，前面全空。",
+  "risk": "⚠ 同名條目三筆以上：MB 有 bf0ae0c9（1975 Folkways，本張）與 aede66c0（2023-11-10，Umlaut Chamber Orchestra 的重新演繹、artist-credit 含樂團）；Apple 也有 collectionId 261233781（Mary Lou Williams — Zodiac Suite、1945-01-01、17 軌、notExplicit）、1698205473（Umlaut Chamber Orchestra 版）與 120345803（Geri Allen 的《Zodiac Suite: Revisited》）三筆，只有第一筆是本盤。年份取 MB 的 1975（Folkways 重新發行年），錄音年 1945；Apple 記 1945 是錄音年。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group bf0ae0c9-7d4e-42ed-a782-da48f565daa4。回問確認：title「Zodiac Suite」、artist-credit「Mary Lou Williams」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：aede66c0-cd3c-4115-a304-78e01d0bfbfb《Zodiac Suite》（2023，artist-credit「Mary Lou Williams; Umlaut Chamber Orchestra」，同名別碟、最危險的假陽性）、e97b7c4c-52e7-4a62-b280-68029c92bc11《The Asch Recordings 1944-47》（1977，含同一批母帶的整編）、1bce2ad1-f883-39a2-93d0-0d75867be578《Mary Lou Williams》（1964 Folkways 自我同名，即《Black Christ of the Andes》）。藝人 MBID 4a0c1055-ec66-47a0-a668-c60f48477ed2，名下 49 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zodiac Suite (Folkways)；Mary Lou Williams Zodiac Suite 1945",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Mary Lou Williams",
+  "album": "Zoning",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Mary Records（M 103）",
+  "why": "1974 年她在自己創辦的 Mary Records 發行的專輯，也是池中《Free Spirits》(1976) 的前一張——那兩張同屬她七十年代自營廠牌時期，這一張把她三十年前寫的和聲語言放進當時的節奏底下，是她晚期目錄裡最常被後來的鋼琴手（如 Geri Allen）指名的一張。池中 Mary Lou Williams 只有 1976 年那張，本批另補 1945 年的《Zodiac Suite》，三張連起來才是「1940 年代作曲—1970 年代自營廠牌」的完整弧線。",
+  "risk": "Mary Records 是她自營的小廠牌，1970 年代原盤流通量小；再發由 Smithsonian Folkways 接手。Apple collectionId 261235738（Mary Lou Williams — Zoning、1974-01-01、13 軌、notExplicit）／店面 us，年份與掛名都對得上。盤名〈Zoning〉是常見英文單字，跨藝人同名風險高，封面與試聽層要用 collectionId 鎖死。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group ac5f2664-c1f3-31ea-96bc-52566f650a3b。回問確認：title「Zoning」、artist-credit「Mary Lou Williams」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：caba770e-13ac-48b2-9eff-0e4b0621505d《Giants》（1971）、5cd70778-a58b-45b8-a898-84352908c0c0《Mary Lou's Mass》（2005 整編）、26e09254-a4f6-3b4b-9088-d75256870328《My Mama Pinned a Rose on Me》（2005）；池中既有的《Free Spirits》(1976) 亦不釘。藝人 MBID 4a0c1055-ec66-47a0-a668-c60f48477ed2。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Zoning (Mary Records)；Mary Lou Williams Zoning",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Helen Merrill",
+  "album": "Helen Merrill",
+  "year": 1955,
+  "genres": [
+   "jazz"
+  ],
+  "label": "EmArcy（MG 36006）",
+  "why": "池中 Helen Merrill 只有 1 張：1958 年的《The Nearness of You》（實掃全檔）。這一張是她 1954 年 12 月的首張專輯，Quincy Jones 編曲、Clifford Brown 吹小號——Brown 隔年就車禍身亡，這是他為數不多的人聲伴奏錄音之一。1950 年代 EmArcy 那批女聲在池中有 Sarah Vaughan 7 張、Dinah Washington 5 張、Anita O'Day 2 張，Merrill 只有一張晚兩年的盤，首張缺席。",
+  "risk": "⚠ 自我同名盤（selfTitled=true），身分必須嚴格核對：MB 有 3ec00147（1955，本張）與 ccb57f7f（1996，同名整編）兩筆；Apple 側更亂——collectionId 1434912013 的盤名拼成「Helen Merill」（少一個 r，1955-01-01、7 軌）、1434909069 作「Helen Merrill With Clifford Brown & Gil Evans」（1955、15 軌）、1443786386 作「Helen Merrill With Strings」（1955、12 軌），三筆年份都是 1955、只有第一筆軌數對得上 EmArcy MG 36006 的原盤。上架前必須逐軌核對曲序。四種盤名寫法全部進 queryAlias。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 3ec00147-068d-3ae2-82cf-444f43c60c92。回問確認：title「Helen Merrill」、artist-credit「Helen Merrill」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 5 個 release（JP 3／US 2），status 全部 Official。刻意不釘：ccb57f7f-7051-40fd-a357-e096d2ad49fa《Helen Merrill》（1996 同名整編、最危險的假陽性）、8340f1da-a628-30e1-9c56-9f08f5f47eb7《Helen Merrill With Strings》（1955 同年別碟）、84434923-847f-3870-9638-4f89607f34a7《Complete Helen Merrill on Mercury》（1994 全集）、1fd1ce9f《Best Of Helen Merrill》（1996）。藝人 MBID bce6f3f4-8db1-4fbb-9dbe-8a1224b57dfb。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Helen Merill；Helen Merrill With Clifford Brown；Helen Merrill (EmArcy 1955)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jimmy Rushing",
+  "album": "The Jazz Odyssey of James Rushing Esq.",
+  "year": 1957,
+  "genres": [
+   "jazz",
+   "blues"
+  ],
+  "label": "Columbia（CL 963）",
+  "why": "Jimmy Rushing 個人名下池中 0 張（實掃全檔）——池中只有 Joe Williams 的《Count Basie Swings, Joe Williams Sings》，那是他之後接棒的人。Rushing 1935–1948 年是 Count Basie 樂團的歌手，池中 Count Basie 有 11 張卻沒有這個聲音。這一張是他 1956 年在 Columbia 領銜的專輯，用 Buck Clayton 的樂團把堪薩斯城藍調吼唱那一支從大樂團編制裡拆出來單獨呈現，是搖擺與都市藍調交界最常被引用的一張。",
+  "risk": "盤名極長且變體多：Apple gb 有五筆以上相關條目——306321094（The Jazz Odyssey of James Rushing Esq.、1957-05-30、12 軌，與本盤最相符）、316049607（與《Jimmy Rushing And The Smith Girls》合併的 2008 雙碟、25 軌）、681104310（Original Album Plus Bonus Tracks、14 軌）、828805569（The Jazz Odyssey、22 軌）；us 店面查無，店面取 gb。上架時要鎖 306321094 並核對軌數。掛名另有 The Jimmy Rushing All Stars（MB e7170545）。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 1b3c217e-7d80-476b-8366-33279367abc6。回問確認：title「The Jazz Odyssey Of James Rushing Esq.」、artist-credit「Jimmy Rushing」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：6faa3dd4-c3dc-4ec0-8707-55c0172ead57《Cat Meets Chick & The Jazz Odyssey of James Rushing Esq.》（2002 兩張合併，盤名包住本張、最危險的假陽性）。藝人 MBID 88c5de60-fa1a-4179-8100-ecd74c4edb73。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Jazz Odyssey Of James Rushing Esq.；Jazz Odyssey of James Rushing；Mr. Five by Five",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Roy Eldridge & Dizzy Gillespie",
+  "album": "Roy & Diz",
+  "year": 1955,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Clef（MG C-641）",
+  "why": "Roy Eldridge 池中 0 張（實掃全檔）。他是 Louis Armstrong 與 Dizzy Gillespie 之間那一代的小號手，1930 年代在 Teddy Hill 與 Gene Krupa 樂團，1950 年代成為 Norman Granz 旗下 Jazz at the Philharmonic 的固定班底。這一張是 1954 年 Granz 安排他與 Gillespie 對吹的錄音，兩代小號正面放在一起，是搖擺到咆勃這條接縫最直接的一份文獻。池中 Dizzy Gillespie 有 7 張，卻沒有一張是這個對照組。",
+  "risk": "⚠ 合掛順序分歧：MB artist-credit 是「Dizzy Gillespie; Roy Eldridge」（字母序），Apple US collectionId 1443173406 記「Roy Eldridge & Dizzy Gillespie」（Roy and Diz、1954-01-01、9 軌、notExplicit）；Clef MG C-641 的原盤封面亦以 Roy 領銜。本卡掛名取「Roy Eldridge & Dizzy Gillespie」（見 rulings.md 第 3 條），與池中既有的 7 張「Dizzy Gillespie」不同鍵、不撞卡。盤名 & 與 and 兩種寫法都要進 queryAlias（MB 用 &、Apple 用 and）。年份取 MB 的 1955（Clef 發行年），Apple 記 1954 是錄音年。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 8a5a5fcf-9b1f-4c1a-a5d1-56bddae9b242。回問確認：title「Roy & Diz」、artist-credit「Dizzy Gillespie; Roy Eldridge」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 4 個 release（US 1／GB 1／FR 1／XE 1），status 全部 Official。刻意不釘：bbe2dd32-a62a-49e3-bb31-5f2df95d960d《Little Jazz》（1954 Clef，CAA release-group 端點實測 404、Apple 對應的三筆都是 Columbia／Verve 整編而非該 LP，本批改釘《Roy & Diz》）、4f07f364-7809-4542-871a-5ba92d237ded《The Art Tatum - Roy Eldridge - Alvin Stoller - John Simmons Quartet》（1955，四人合掛）、792ee7d5《The Trumpet Kings》（1956）、8fa1aa89《Drummer Man》（1956，Gene Krupa 領銜）。藝人 MBID：Roy Eldridge 58234c8b-954e-4617-9c7e-4a8712f41a23（名下 96 個 release-group，分頁列全）、Dizzy Gillespie 為合掛第二位。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Roy and Diz；Roy & Diz (Clef)；Dizzy Gillespie & Roy Eldridge Roy and Diz",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Bunk Johnson",
+  "album": "Bunk Johnson and His Superior Jazz Band",
+  "year": 1962,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Good Time Jazz（L-12048）",
+  "why": "Bunk Johnson 池中 0 張（實掃全檔），這是他的第一張卡。他 1910 年代在紐奧良吹小號、1930 年代已在路易斯安那的稻田當工人，1942 年被一群爵士研究者找出來裝了假牙重新錄音——那一批錄音直接催生了 1940 年代的紐奧良復興運動，也是 Kid Ory、George Lewis 那一波復出的起點。Good Time Jazz 這一輯是 1942 年 Jazz Man 場次的成套發行。池中的紐奧良早期一側只有 King Oliver 1 張與 Jelly Roll Morton 2 張，缺這個名字。",
+  "risk": "掛名另有 Bunk Johnson's Band（MB 4df18600）與 Bunk Johnson Brass Band（82ea6799）兩個樂團實體，撞卡與釘位都要用藝人 MBID 鎖死。Apple collectionId 1532292817（Bunk Johnson — Bunk Johnson And His Superior Jazz Band、1957-01-01、10 軌、notExplicit）／店面 us；Apple 記 1957、MB 記 1962，取 MB（Good Time Jazz L-12048 的發行年），錄音年 1942（裁定第 77 條：Apple 日期只能當訊號）。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 722df9b1-2ae3-41bb-86da-58687306bb44。回問確認：title「Bunk Johnson and His Superior Jazz Band」、artist-credit「Bunk Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：810956026 對應的《Jazz Nocturne 3 (Bunk & Bechet in Boston)》系（與 Sidney Bechet 合掛，本批另收 Bechet 一張、兩者不同碟）。藝人 MBID f8dd63f2-5325-456f-abff-d8b837e9bc74。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bunk Johnson And His Superior Jazz Band；Superior Jazz Band；William Geary Johnson",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Kid Ory",
+  "album": "Kid Ory Plays W.C. Handy",
+  "year": 1959,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Verve（MG V-1017）",
+  "why": "Kid Ory 池中 0 張（實掃全檔），這是他的第一張卡。他是紐奧良長號那一支的源頭——1922 年在洛杉磯灌的《Ory's Creole Trombone》是第一張由黑人紐奧良樂團發行的唱片，1920 年代在 Louis Armstrong 的 Hot Five 與 Jelly Roll Morton 的 Red Hot Peppers 都是固定班底，1940 年代帶起復興運動。這一張是 Verve 1958–1959 年讓他整張演 W.C. Handy 曲目的錄音，是他晚期領銜盤裡最完整的一份。池中 Louis Armstrong 8 張、Jelly Roll Morton 2 張都少不了他，他自己卻沒有卡。",
+  "risk": "MB release-group 標題把 W.C. 寫成「W.C Handy」（少一個句點），本卡取正式寫法「Kid Ory Plays W.C. Handy」，兩種都進 queryAlias（裁定第 91／95 條：RG 標題與卡片盤名不必相等）。Apple us／gb 只命中一筆法語 EP（gb collectionId 844518067，Edward Kid' Ory Orchestra —《Kid Ory joue W. C. Handy (Mono Version) - EP》、6 軌），那是 EP 不是本盤，不得當試聽來源；試聽預估 unavailable。封面走 CAA release-group 端點（實測 HTTP 200）。掛名另有 Kid Ory's Creole Orchestra（MB 15e89bdf）與 Ory's Sunshine Orchestra（1d524356），Apple 側多數 Kid Ory 條目掛在「Kid Ory's Creole Jazz Band」下。",
+  "mbNote": "釘 release-group beefa6aa-5986-4388-aa4a-6d39ab058ac1。回問確認：title「Kid Ory Plays W.C Handy」、artist-credit「Kid Ory」、first-release-date 1959、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 2），status 全部 Official。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：7b17ce0b-3a8b-4e0d-b4e1-58bdeda1c88d《The Complete Kid Ory Verve Sessions》（1999，含本張全部內容、最危險的假陽性）、24d17539-1ef3-4d8a-a4fa-7b8a1903155f《Red Allen Meets Kid Ory》（1957，合掛）、1db6ec5f《Ory's Creole Trombone: Greatest Recordings, 1922-1944》（2006）、44a6474a《Kid Ory Plays the Blues - Live Broadcasts…》（1997，Live，盤名開頭與本張相同）。藝人 MBID d2cf1ea2-0dce-45ab-8fb4-5c4c81713b54，名下 22 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kid Ory Plays W.C Handy；Kid Ory Plays WC Handy；Edward Kid Ory",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "James P. Johnson",
+  "album": "Carolina Shout",
+  "year": 1988,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Biograph（BCD 105）",
+  "why": "池中 James P. Johnson 只有 1 張：1991 年的《Snowy Morning Blues》（實掃全檔），那是他 1930–1940 年代的 Decca／Columbia 面。這一輯收的是更早的東西——1917–1925 年的鋼琴捲（piano roll），標題曲〈Carolina Shout〉是 Harlem stride 這一支的入門必修曲，Duke Ellington 年輕時就是靠慢速播放這捲紙卷把它學下來的。池中有 Fats Waller 1 張、Earl Hines 1 張，stride 的源頭卻只有一張晚期選輯。",
+  "risk": "盤名〈Carolina Shout〉同時是曲名：MB 上另有 75322682《Carolina Shout》（2000）與 Apple 兩筆同名單曲（568149112、548352703，皆掛 James P. Johnson and His Orchestra、標 Remastered - Single），字串比對會同時命中。封面 CAA release-group 端點實測 404，改走 Apple collectionId 203053431（James P. Johnson — Carolina Shout、1988-01-01、14 軌、notExplicit）／店面 us，年份與軌數都對得上（apple-verified-collection 路徑，§4 允許）。年份 1988 是整編出版年，鋼琴捲原始製作年 1917–1925。",
+  "mbNote": "釘 release-group 573ca4f6-67c7-380a-b5d5-227e110c362b。回問確認：title「Carolina Shout」、artist-credit「James P. Johnson」、first-release-date 1988、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：75322682-e0bf-47bc-aa2c-79d389adc831《Carolina Shout》（2000，同名別條目、最危險的假陽性）、279822f7-6339-3a14-a78d-4b01bbed12f2《Snowy Morning Blues》（1991，池中已有）、cf4d9bbd-8a6f-43d6-a179-e150cf579ca4《King of Stride Piano》（1997）、b924094b-2054-4e9e-91bc-9f02476c0fee《Father Of The Stride Piano》（無 first-release-date）。藝人 MBID 2a58b026-9659-4bfb-90c9-56c4ad9125f1，名下 43 個 release-group（分頁列全）；另有樂團實體 James P. Johnson & His Orchestra 405dfdfa。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Carolina Shout (Biograph)；James P. Johnson Carolina Shout 1988",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Art Tatum",
+  "album": "God Is in the House",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Onyx（ORI 205）",
+  "why": "池中 Art Tatum 有 2 張：1968 年的《Piano Starts Here》與 1991 年的《Classic Early Solos (1934-1937)》（實掃全檔），兩張都是錄音室或廣播素材。這一輯不同——是 1940–1941 年在哈林幾家 after-hours 俱樂部用私人錄音機側錄下來的，Tatum 在沒有唱片公司計時的場合彈的東西，1973 年 Onyx 首次整理發行後成為他目錄裡最常被引用的一份。盤名出自 Fats Waller 某晚見他走進店裡對台下說的那句話。",
+  "risk": "盤名有 God Is in the House／God Is In the House (Live) 兩種：Apple US collectionId 1438004708 作後者（1973-01-01、13 軌、notExplicit），MB release-group 標題是「God Is in the House: Original 1940-41 Recordings」、primary-type Album 且 secondary-types 為空（不是 Live）；本卡盤名取通行短名，三種寫法進 queryAlias。年份 1973 是首次出版年，錄音年 1940–1941。掛名另有 Art Tatum Trio（MB 4956fd03）與 The Art Tatum Sextet（4d10c14e）。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 79bca8f7-b190-3dba-9584-a64e7ff548ca。回問確認：title「God Is in the House: Original 1940-41 Recordings」、artist-credit「Art Tatum」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／DE 1），status 全部 Official。刻意不釘：a8381e5b-e0b7-490a-a530-774e363b72e8《The Genius of Art Tatum》（1954 Clef，Apple 無對應條目、只有 1967 年的《The Genius》694288369，本批改釘《God Is in the House》）、1e493068-b80b-30c5-85f2-38009dd6a6c0《Piano Starts Here》（1968，池中已有）、3a49c163-36e2-4958-9250-acc1b32bd41c《Piano Starts Here: Live at The Shrine (Zenph Re-Performance)》（2008，機械重演版）、cded5179 與 5180c760《The Complete Pablo Solo／Group Masterpieces》。藝人 MBID e073f6af-d696-4340-b847-e81fabc4d55b，名下 180 個 release-group（第 116 條：分頁列全，browse 預設 25 筆只會看到零頭）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "God Is in the House: Original 1940-41 Recordings；God Is In the House (Live)；God Is In The House",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jelly Roll Morton",
+  "album": "The Pearls",
+  "year": 1988,
+  "genres": [
+   "jazz"
+  ],
+  "label": "RCA / Bluebird（6588-2-RB）",
+  "why": "池中 Jelly Roll Morton 有 2 張：1995 年的《Birth of the Hot》與 2005 年的《The Complete Library of Congress Recordings》（實掃全檔）——前者是 Red Hot Peppers 的 Victor 面，後者是 1938 年 Alan Lomax 的口述訪談錄音。這一輯是 Bluebird 從同一批 Victor 母帶另選的一本，盤名取自他 1923 年寫的〈The Pearls〉，是他作曲身分（而不是樂團領班身分）最常被引用的一首。三張合起來才涵蓋他「作曲—樂團—口述史」三個面向。",
+  "risk": "盤名〈The Pearls〉同時是曲名：MB 上另有 633692e4《The Pearls》（1924-11 單曲）與 4d084473《The Pearls / King Porter Stomp》（1926-06 單曲），Apple 也有 568181055《The Pearls (Remastered) - Single》，字串比對會同時命中。Apple collectionId 302055819（Jelly Roll Morton — The Pearls (Remastered - 1988)、1988-01-01、23 軌、notExplicit）／店面 us，年份與軌數都對得上。年份 1988 是整編出版年，錄音年 1926–1939。掛名另有 Jelly-Roll Morton's Seven（MB 998faa56）與 Jelly-Roll Morton Trio（4847d4bd）。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group b34cfd15-c52f-3a01-b5f7-2ecc636f674a。回問確認：title「The Pearls」、artist-credit「Jelly Roll Morton」、first-release-date 1988、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：633692e4-a99c-4fbb-9792-46481b101fc5《The Pearls》（1924-11 單曲，同名、最危險的假陽性）、4d084473-4c61-42b1-b015-6d62d2b4c180《The Pearls / King Porter Stomp》（1926-06 單曲）、9268e41f-7eeb-4c14-9a4f-40cba76b31a7《The King & Mister Jelly Lord》（1989，與 King Oliver 合掛，本批 King Oliver 那張亦不釘此筆）。藝人 MBID 3d094919-071f-4070-95dc-e1f350e4a5f3。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Pearls (Bluebird)；The Pearls (Remastered - 1988)；Ferdinand LaMothe",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "King Oliver",
+  "album": "The New York Sessions (1929-1930)",
+  "year": 1989,
+  "genres": [
+   "jazz"
+  ],
+  "label": "RCA / Bluebird（ND 90410）",
+  "why": "池中 King Oliver 只有 1 張：2006 年的《Off the Record: The Complete 1923 Jazz Band Recordings》（實掃全檔），那是他 Creole Jazz Band 時期在 Gennett／OKeh／Paramount 的錄音。這一輯收的是完全不同的一段：1929–1930 年他在紐約為 Victor 錄的大樂團面，牙齒問題已讓他吹不動、多半交給替補小號手，卻是他把紐奧良合奏語法帶進紐約編制的最後嘗試。池中只有他的高峰期，缺這條下坡的紀錄，而那正是他目錄裡最少被整編、也最能說明時代轉折的一段。",
+  "risk": "Apple us／gb 皆查無本盤（實測），Bluebird 這一輯只在歐洲發行、MB 轄下唯一 release 是 DE／Official；試聽預估 unavailable。封面走 CAA release-group 端點（實測 HTTP 200）。掛名同名近名：MB 上另有一個 King Oliver（c1ab8231，德國 Harley Club 合輯上的別人）與 King Oliver and His Orchestra（07f24ff3）。年份 1989 是整編出版年，錄音年 1929–1930。",
+  "mbNote": "釘 release-group 1a6ee8f3-5272-47cb-8633-6a3632eb32f5。回問確認：title「The New York Sessions (1929-1930)」、artist-credit「King Oliver」、first-release-date 1989、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（DE／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9268e41f-7eeb-4c14-9a4f-40cba76b31a7《The King & Mister Jelly Lord》（1989，artist-credit「King Oliver; Jelly Roll Morton」，Apple 有對應條目 331349276 但內容與本批 Jelly Roll Morton 那張重疊、掛名亦是合掛）、65ad6ed0-74d6-3f7f-aa07-8f2ca10343a6《Off the Record: The Complete 1923 Jazz Band Recordings》（2006，池中已有）、0fd27507-329d-4c2f-91a3-f68fd87febe7《King Oliver, Volume 2: 1927 to 1930》（1991，涵蓋同一批錄音的另一種整編）、923a81d2《Complete Vocalion / Brunswick Recordings 1926-1931》（1991）。藝人 MBID 744fa1ae-051c-463c-957a-25a4ddc01c2f，名下 30 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The New York Sessions 1929-1930；King Oliver New York Sessions；Joe King Oliver",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Fletcher Henderson",
+  "album": "Tidal Wave",
+  "year": 1994,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Decca Jazz / GRP（GRD-643）",
+  "why": "池中 Fletcher Henderson 只有 1 張：1994 年的《A Study in Frustration: The Fletcher Henderson Story》（實掃全檔），那是 Columbia 系統 1923–1938 年的四輯總集。這一輯收的是另一家的母帶：1934 年 Henderson 樂團在 Decca 的面，包括他把〈King Porter Stomp〉那批編曲賣給 Benny Goodman 之前自己樂團的版本。Henderson 是大樂團編曲法的發明者，池中的搖擺一側（Benny Goodman 4 張、Count Basie 11 張、Duke Ellington 15 張）全部站在他的肩膀上，他自己只有一張總集。",
+  "risk": "⚠ MB 有兩筆同名《Tidal Wave》：d58c366b（1994-09-07、primary-type Album、secondary-types 空、1 個 US release，本張）與 f7eb208a（1994、secondary-types [Compilation]）——同名同年、只差型別與版本，是本卡最危險的假陽性。Apple 側也有兩筆：collectionId 1444079959（Fletcher Henderson — Tidal Wave、1994-09-27、21 軌、notExplicit，與本盤相符）與 490617043（Tidal Wave (Remastered) - Single、1 軌），試聽層要鎖 1444079959。年份 1994 是整編出版年，錄音年 1934。掛名另有 Fletcher Henderson and His Orchestra（MB 6e6170a4）。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group d58c366b-df80-4e34-a46d-550d9575a19a。回問確認：title「Tidal Wave」、artist-credit「Fletcher Henderson」、first-release-date 1994-09-07、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：f7eb208a-7a24-3749-a62a-edc99043daaf《Tidal Wave》（1994，MB 的同名重複條目、secondary-types [Compilation]，最危險的假陽性）、a648ac99-3772-3406-9f3d-7b9f588dfc1e《A Study in Frustration: The Fletcher Henderson Story》（1994，池中已有）與 74d6056d／202c6399／594428a5／2093dcf7 四輯 1961 年分冊、0c2f998c《Hocus Pocus (1927-1936)》（1989）。藝人 MBID f47d1c94-c3e3-4c84-a42a-6c33e0032839，名下 37 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Tidal Wave (Decca Jazz)；Fletcher Henderson Tidal Wave 1994；Smack Henderson",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Machito",
+  "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+  "year": 1956,
+  "genres": [
+   "jazz",
+   "world"
+  ],
+  "label": "Norgran（MG N-1085）",
+  "why": "池中 Machito 有 2 張：1957 年的《Kenya》與 1959 年的《With Flute to Boot》（實掃全檔），兩張都是 1950 年代後期的錄音。這一張早一點，收的是 Chico O'Farrill 為他樂團寫的《Afro-Cuban Jazz Suite》——那是 1950 年 Norman Granz 找來 Charlie Parker、Flip Phillips、Buddy Rich 與 Machito 樂團合錄的五樂章長篇，把古巴節奏與咆勃獨奏正式接在一起，是 Afro-Cuban jazz 這個名詞的來源作品之一。池中的拉丁爵士一側有 Tito Puente 5 張、Eddie Palmieri 6 張，Machito 只有兩張晚期盤。",
+  "risk": "Apple 查無本盤的完整條目（實測 us／gb）：只有 collectionId 1443148498《Machito — Afro-Cuban Jazz - EP》（1951-01-01、6 軌，是 10 吋原盤的數位版、不是本張的 12 吋擴充版）與 1533732036《Dizzy Gillespie — Afro-Cuban Jazz Moods》（1975，別碟）；試聽預估 unavailable，若採 1443148498 必須先核對曲序。封面走 CAA release-group 端點（實測 HTTP 200）。掛名另有 Machito and His Orchestra（MB 181dff63）與雷鬼頓歌手 Machito（4cb7d10a）。盤名副標含 O'Farrill 的撇號，變體要進 queryAlias。",
+  "mbNote": "釘 release-group 881fe44b-3f47-44aa-9f38-aea5bf39c00b。回問確認：title「Afro-Cuban Jazz: The Music of Chico O'Farrill」、artist-credit「Machito」、first-release-date 1956、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／JP 1），status 全部 Official。刻意不釘：2b5535ee-adbe-33a5-8986-74eace9dd169《Kenya》（1958，池中已有）、705118ea-1ad0-32f8-85f7-927a5fa9c1b8《Afro-Cuban Jazz Moods》（1976，與 Dizzy Gillespie，盤名開頭相同、最像的假陽性）、46d85401-8f5f-4635-960c-1d3a955dc3a7《Mambo Caravan》（1956 同年別碟）、e18d83a9《Tito Meets Machito: The Mambo Kings》（1997，與 Tito Puente 合掛）。藝人 MBID 8b280260-dacb-4195-a34d-16e5068de288，名下 7 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Afro-Cuban Jazz Suite；Afro Cuban Jazz The Music of Chico OFarrill；Machito Afro-Cuban Jazz",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Sidney Bechet",
+  "album": "The Fabulous Sidney Bechet",
+  "year": 1958,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Blue Note（BLP 1207）",
+  "why": "池中 Sidney Bechet 個人名下有 2 張：1990 年的《The Victor Sessions: Master Takes 1932-43》與 1994 年的《The Best of Sidney Bechet》（另有 Sidney Bechet All Stars 的《Ambiance Bechet》1952）。兩張都是 Victor 與精選，缺的是 Blue Note 那一段——Bechet 1939 年為 Blue Note 錄的〈Summertime〉是這家廠牌創業初期最暢銷的一面，1958 年 Blue Note 把 1951–1953 年的 Bechet 面整理成這張 12 吋 LP，是他與這家廠牌十餘年關係的總結。",
+  "risk": "⚠ 年份與 MB 不一致：MB release-group first-release-date 記 2001-01-09（Blue Note RVG 版重發年），但 Blue Note BLP 1207 原盤是 1958 年、Apple US collectionId 725210025（The Fabulous Sidney Bechet、1958-01-01、17 軌、notExplicit）亦記 1958；本卡 year 取 1958（裁定第 91 條：rgMbid 是身分鍵不是年份來源），落差已在此寫明。MB 另有 9691085f《12 Years On Blue Note. The Fabulous Sidney Bechet》(1952) 盤名包住本張。掛名另有 Sidney Bechet Quartet（74caf7d1）與 Sidney Bechet Trio（54e5332a），池中既有卡用「Sidney Bechet All Stars」是第三種寫法，本卡沿用主寫法「Sidney Bechet」、不製造新分裂。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 53537ba8-d1d4-4fba-90d4-b9b0877c5b8f。回問確認：title「The Fabulous Sidney Bechet」、artist-credit「Sidney Bechet」、first-release-date 2001-01-09、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（無國別／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9691085f-6a58-4776-93ca-dd2556806f7a《12 Years On Blue Note. The Fabulous Sidney Bechet》（1952，盤名包住本張、最危險的假陽性）、078bf11c-73f6-4189-9d26-a78ecc480038《Sidney Bechet and His Blue Note Jazz Men》（1951，CAA 端點實測 404 且 Apple 查無，本批改釘《The Fabulous Sidney Bechet》）、251f36d0-b702-41c5-8608-e0010a3ab91a《Ambiance Bechet》（1952，池中已有、掛 Sidney Bechet All Stars）、a3ebf838-f83b-4185-8cce-1c0378b629b9《Sidney Bechet》（1952 自我同名）。藝人 MBID bf1b23ea-9b76-42cf-a5f6-4a691e81af5e，名下 209 個 release-group（第 116 條：分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Fabulous Sidney Bechet (Blue Note)；12 Years On Blue Note；Sidney Bechet Blue Note",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Django Reinhardt",
+  "album": "The Great Artistry of Django Reinhardt",
+  "year": 1953,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Clef（MG C-516）",
+  "why": "池中 Django Reinhardt 有 2 張：1961 年的《Djangology》與《Django Reinhardt on Vogue – Complete Edition (1934–1951)》（實掃全檔），兩張都是戰前 Hot Club 時期的整編。這一張不是——是他 1953 年 3 月在巴黎最後幾次錄音室工作的成果，改用電吉他、配 bebop 節奏組，同年 5 月他就中風過世。Norman Granz 的 Clef 在他死後把這批母帶發行成 LP，是他目錄的終點；池中有起點與中段，缺這個結尾。",
+  "risk": "⚠ MB 有兩筆同名：739cf2a8（1953-11、primary-type Album、secondary-types 空，本張）與 530a7d0d（1955-03-09、secondary-types [Compilation]），同名不同年、是最危險的假陽性。Apple 也有兩筆：collectionId 1442207211（1954-01-01、8 軌）與 1615472183（1954-01-01、17 軌），軌數差一倍，上架要鎖 1442207211（8 軌與 Clef 10 吋原盤相符）並核對曲序。Django 名下 466 個 release-group（本批最多的一位），第 116 條的分頁一定要跑滿。年份取 MB 的 1953（Clef 首發年），Apple 記 1954 是美國發行年。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group 739cf2a8-7ca7-4521-8769-2b3569bef7f8。回問確認：title「The Great Artistry of Django Reinhardt」、artist-credit「Django Reinhardt」、first-release-date 1953-11、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／無國別 1），status 全部 Official。刻意不釘：530a7d0d-b69f-4303-9c4a-32b639f999f2《The Great Artistry of Django Reinhardt》（1955-03-09，同名別條目、secondary-types [Compilation]，最危險的假陽性）、8531ce16-7670-336d-9d26-0ac7b32b5806《Djangology》（1961，池中已有）、c3be5dfa-36d9-41d7-b460-1bc22fa39c2a 與 80e3091c《Djangology》（1965／1974 重複條目）、15151afb-2a6f-354c-9ddb-0e6751ada35f《Djangology 49》（1990）、d3d970f8／9e19172b 等《Djangologie 1–20》全系列（1970–1982 EMI Pathé 分冊）。藝人 MBID 650bf385-6f6d-4992-a3b9-779d144920a4，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 466 個 release-group（第 116 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Great Artistry of Django Reinhardt (Clef)；Django Reinhardt Great Artistry；Jean Reinhardt",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Teddy Wilson",
+  "album": "With Billie in Mind",
+  "year": 1972,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Chiaroscuro（CR 111）",
+  "why": "Teddy Wilson 池中 0 張（實掃全檔），這是他的第一張卡。他是 1935–1942 年那批 Billie Holiday 錄音的鋼琴手兼樂團領班（池中 Billie Holiday 有 8 張），也是 Benny Goodman 三重奏的成員——1936 年那個編制是最早在台上公開混合黑白樂手的名團之一。這一張是 1972 年 Chiaroscuro 錄的獨奏盤，他把三十多年前為 Holiday 編過的曲目一個人重彈一遍，是他晚期目錄裡最常被引用的一張。",
+  "risk": "掛名另有 Teddy Wilson Trio（MB 2537653f）與 Teddy Wilson Sextet（160baadb）兩個實體，且 MB 名下 116 個 release-group 裡有大量掛 Billie Holiday 的合輯（如 6141129f《Teddy Wilson And His Orchestra Featuring Billie Holiday》），與池中 Billie Holiday 的 8 張字串比對會互相命中，人工複核必做。Apple collectionId 1213953609（Teddy Wilson — With Billie In Mind、1972-05-01、20 軌、notExplicit）／店面 us，年份對得上；另有 1533857039《Teddy Wilson & Billie Holiday — Hot Jazz Classics》是別碟。封面 CAA release-group 端點實測 HTTP 200。",
+  "mbNote": "釘 release-group c88ff9cd-f8ea-4f8a-b07d-bbcb06e803eb。回問確認：title「With Billie in Mind」、artist-credit「Teddy Wilson」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：6141129f-b438-4a10-b968-5c86b156595c《Teddy Wilson And His Orchestra Featuring Billie Holiday》（1949 整編，盤名含 Billie、最像的假陽性）、e65ef098-3f07-4588-94bb-8ff5503aa0be《Helen Sings, Teddy Swings》（1970，與 Helen Merrill 合掛——本批另收 Helen Merrill 一張，兩者不同碟）、06d08976-0905-44a2-abe9-598bbd219c30《Teddy Wilson And His All-Stars》（1973 整編）、149d812c《Mr. Wilson: The Fabulous Teddy Wilson at the Piano》（1955）。藝人 MBID 2e89725a-ac85-414c-b3b2-70f0a82fae9a，名下 116 個 release-group（第 116 條：分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "With Billie In Mind；Teddy Wilson With Billie in Mind；Theodore Shaw Wilson",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
