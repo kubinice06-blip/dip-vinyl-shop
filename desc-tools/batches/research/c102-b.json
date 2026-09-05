@@ -1,0 +1,142 @@
+[
+ {
+  "key": "desc4:鷺巣詩郎|NEON GENESIS EVANGELION II",
+  "artist": "鷺巣詩郎",
+  "album": "NEON GENESIS EVANGELION II",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c1b5e3f5 的欄位：title「NEON GENESIS EVANGELION II」、artist-credit「鷺巣詩郎」（藝人實體 MBID 9b127d23，name 鷺巣詩郎、sort-name Sagisu, Shirō、country JP、disambiguation「anime & film music composer」）、first-release-date 1996-02-16、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release。",
+    "src": "https://musicbrainz.org/release-group/c1b5e3f5-f2cc-3764-8098-992821c6df3b"
+   },
+   {
+    "f": "同一 RG 的 release 明細：1996-02-16 JP Official STARCHILD KICA-290 CD **25 軌**兩筆（disambiguation 分別是 first press edition 與 通常盤）；2004-03-16 US Official Geneon 52252 CD 25 軌；2004-12-22 JP Official STARCHILD KIAW-22 **DVD-Audio 50 軌**（同一份曲目的雙音軌版）；2012-10-01 與 2013-12-18 JP Official KICA-290 Digital Media 各 25 軌（後者標 24bit/192kHz 的 2013 HR Remaster Ver.）；**2023-01-27 Official Milan Digital Media 只有 22 軌**；另 TW Bootleg 兩筆（1996 笙美 GA-065、2004 MIYA RECORDS MICA-0318，皆 25 軌）與 Pseudo-Release 兩筆。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c1b5e3f5-f2cc-3764-8098-992821c6df3b&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 73dec9a9（1996-02-16 JP STARCHILD KICA-290，first press edition）的逐軌曲目：單片 25 軌，第 1 軌〈予感〉、第 2 軌〈残酷な天使のテーゼ <TV. Size Version>〉，第 16 軌〈THE BEAST II〉、第 17 軌〈THANATOS〉、第 18 軌〈Rei III〉，第 20 至 22 軌是三種 <TV. Size> 的〈FLY ME TO THE MOON〉，第 23 軌〈次回予告〉，末兩軌是〈FLY ME TO THE MOON <Aya Bossa Techno Version>〉與〈<Aki Jungle Version>〉。",
+    "src": "https://musicbrainz.org/release/73dec9a9-a8ed-475e-b691-5a53b3476669"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1656737341《NEON GENESIS EVANGELION II (Original Soundtrack)》：artistName Shiro SAGISU、releaseDate 2023-01-27、copyright「℗ 2022 King Record Co., Ltd, under exclusive license to Milan Records, a label of Sony Music Entertainment.」、trackCount 22，`entity=song` **攤得出 22 軌、22 軌全部有 previewUrl**。第 1 至 19 軌與 MB 原盤第 1 至 19 軌逐位置相符（只有第 16 軌寫成 The Beast II (1996)），第 20 軌 Jikai Yokoku 對應原盤第 23 軌〈次回予告〉，末兩軌 B-16 Rhythm nomi (MISATO)／B-17 Rhythm nomi (ASUKA STRIKES) 是原盤沒有的；**原盤的五首〈FLY ME TO THE MOON〉在這一版全部不在**。同一個 id 在 us／gb／de 三個店面命中，jp／tw／hk 三個店面回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=1656737341&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1656736763 的 collectionName 是《NEON GENESIS EVANGELION **III** (Original Soundtrack)》、releaseDate 1996-05-22、trackCount 23——是同系列**第三張**，不是本張。",
+    "src": "https://itunes.apple.com/lookup?id=76121793&entity=album&limit=200&country=us"
+   },
+   {
+    "f": "鷺巣詩郎 Apple 藝人頁 artistId 76121793 的目錄筆數：jp 116、us 84、gb 64、tw 60、hk 60、de 64（**都遠低於 limit=200 的截斷值**）。jp／tw／hk 三個店面的目錄與 search 端點都**沒有** 1990 年代那三張 TV 版原聲盤的任何一張，只有 2020-10-07 的《NEON GENESIS EVANGELION SOUNDTRACK 25th ANNIVERSARY BOX》（1638088437，Various Artists，120 軌）與它的分片 DISC1（1638053056，24 軌）／DISC4（1638033853，18 軌）／DISC5（1638034199，16 軌）。",
+    "src": "https://itunes.apple.com/lookup?id=76121793&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈新世紀エヴァンゲリオン〉導言：GAINAX 製作，**1995 年 10 月 4 日至 1996 年 3 月 27 日**在東京電視台系播出全 26 話。本張 1996-02-16 發行時，TV 版還在播（距完結尚有 40 天）。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%B4%80%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%82%AA%E3%83%B3"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟兩種軌數：1996 年的 KICA-290 是 25 軌，2023 年 Milan 的數位版只剩 22 軌",
+   "碟上架時片子還在播——1996 年 2 月 16 日發行，TV 版要到 3 月 27 日才播完"
+  ],
+  "sound": "MB release 73dec9a9（STARCHILD KICA-290）記單片 25 軌，MB 未填總長。曲序自〈予感〉起，中段是〈ANGEL ATTACK II〉〈ANGEL ATTACK III〉〈MAGMADIVER〉這一列標題全大寫的戰鬥曲，第 17 軌〈THANATOS〉與第 18 軌〈Rei III〉是碟上最長的兩首（209 秒、223 秒），尾端第 20 至 22 與第 24、25 軌是五種版本的〈FLY ME TO THE MOON〉。**2023 年 Milan 數位版只有 22 軌、五首〈FLY ME TO THE MOON〉全部不在、另多兩軌 B-16／B-17 Rhythm nomi，行文寫軌數或尾曲時不得引用那一版的數字。**",
+  "keyTracks": [
+   "予感",
+   "THANATOS",
+   "Rei III"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。MB release-group first-release-date 1996-02-16，其下 1996-02-16 JP Official 兩筆（STARCHILD KICA-290，first press edition 與 通常盤）同日同編號，卡單年份 1996 相符。**作品年與原聲帶發行年要分開寫**：TV 版《新世紀エヴァンゲリオン》1995-10-04 開播、1996-03-27 完結（ja 維基），**本碟 1996-02-16 發行時作品還在播出中**；系列第一張 1995-12-06、第三張 1996-05-22（Apple 兩筆的 releaseDate），三張橫跨播映期與播畢後。**Apple 唯一命中的那筆 releaseDate 是 2023-01-27，那是 Milan 的數位重發日，不是本碟的發行年。**",
+  "notes": "**ready 卡覆核推翻：探測層配到的是別卷。** 探測層記 us 1656736763、appleTitle「NEON GENESIS EVANGELION III (Original Soundtrack)」、23 軌——**那是同系列第三張**（Apple 自己記的 releaseDate 1996-05-22 也是第三張的日子），卷號 II 對 III 對不上，是裁定 168 那個「卷號被子字串比對吃掉」的正面實例，而且策展層的 `curatorRisk` 早就把「同系列三張只差尾端一個羅馬數字」寫成本卡最強的假陽性。\\n**正解是 us／gb／de 的 1656737341**（《NEON GENESIS EVANGELION II (Original Soundtrack)》，22 軌、22 軌皆有 previewUrl）。**但它不是原盤的軌目**：22 軌＝原盤第 1 至 19 軌＋原盤第 23 軌〈次回予告〉＋兩軌原盤沒有的 B-16／B-17 Rhythm nomi，**原盤的五首〈FLY ME TO THE MOON〉整批不在**（那是 Bart Howard 的曲，非鷺巣作品）。**原盤軌數是 25，不是 22**（MB 全部六筆 Official CD／數位 release 都是 25 軌）；下游要鎖 `originalTrackCount=25`，行文不得把 22 當本碟軌數，也不得把 2023-01-27 當發行日。\\n**jp／tw／hk 三個店面查無**：兩個端點（`search` 與 artistId 76121793 的目錄）都跑過，六個店面的目錄筆數 60–116、**都沒有到 limit=200 的截斷線**（裁定 173 那個「回滿 200 的查無不算數」在本卡不適用），日本店面上只有 2020 年 25 週年 BOX 的分片，掛 Various Artists。\\n**別碟警示**：1638088437《…25th ANNIVERSARY BOX》(120 軌)、1638053056（DISC1，24 軌）、1638033853（DISC4，18 軌）、1638034199（DISC5，16 軌）四筆都不是本盤，**策展層已明寫「刻意不釘」**（裁定 153 的形狀，下游不得改配）。\\n2004-12-22 的 KIAW-22 是 **DVD-Audio、MB 記 50 軌**，那是同一份曲目的雙音軌收錄，**不是一張 50 首的碟**。"
+ },
+ {
+  "key": "desc4:鷺巣詩郎|THE END OF EVANGELION",
+  "artist": "鷺巣詩郎",
+  "album": "THE END OF EVANGELION",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 03587dbb 的欄位：title「THE END OF EVANGELION」、artist-credit「鷺巣詩郎」（藝人 MBID 9b127d23）、first-release-date 1997-09-26、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release。",
+    "src": "https://musicbrainz.org/release-group/03587dbb-a647-34d5-a326-9661fd626197"
+   },
+   {
+    "f": "同一 RG 的 release 明細：**七筆是 14 軌**——1997-09-26 JP Official STARCHILD KICA-370 CD、2004-05-11 US Official Geneon 5231-2 CD、2012-10-01 JP Official KICA-370 Digital Media、2014-12-24 JP Official KING NOPA-652 Digital Media（24bit/192kHz 的 2014 HR Remaster Ver.）、2001 TW Bootleg 長榮國際唱片 AnG-282 CD、Pseudo-Release 兩筆；**只有 2004-12-22 JP Official STARCHILD KIAW-25 是 DVD-Audio、記 28 軌**（同一份曲目的雙音軌版）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=03587dbb-a647-34d5-a326-9661fd626197&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release bf277278（1997-09-26 JP STARCHILD KICA-370）的逐軌曲目：單片 **14 軌**，第 1 軌〈他人の干渉〉、第 6 軌是巴赫〈II Air [ORCHESTRAL SUITE No.3 in D Major, BWV.1068]〉、第 8 軌〈THANATOS –IF I CAN’T BE YOURS–〉、第 11 軌〈Komm, süsser Tod／甘き死よ、来たれ (M‐10 Director’s Edit. Version)〉（466 秒，全碟最長）、第 12 軌是巴赫〈Jesus bleibet meine Freude／主よ、人の望みの喜びよ〉、末軌〈夢のスキマ〉。",
+    "src": "https://musicbrainz.org/release/bf277278-5567-335d-88a2-09e9860d8813"
+   },
+   {
+    "f": "Apple Music jp collectionId 258925326《THE END OF EVANGELION (Original Soundtrack)》：**artistName 記成 Various Artists**、releaseDate 1997-09-26、copyright「℗ 1997 King Record Co.,Ltd.」、trackCount 14，`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，曲名與曲長與 MB 原盤逐位置相符（僅末軌〈夢のスキマ〉Apple 94 秒／MB 86 秒有 8 秒差）。**這個 id 只在 jp 命中**，us／gb／tw／hk／de 五個店面回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=258925326&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple Music jp／us collectionId 1605640852《The End of Evangelion》：releaseDate 2022-01-17、copyright「**℗ 2020 Shiro Sagisu**」（不是 King Record）、trackCount 9，攤開的 9 軌全部是英文譯名（Substitution Invasion／Expanded Blockage／Midsummer End／Emergency Evacuation to Retreat／Secret Month of Anxiety／Empty Stream／Escape to the Beginning／Air／Fake Play），曲長各比原盤對應曲短 0 至 6 秒；**原盤 14 軌裡的〈他人の干渉〉〈THANATOS –IF I CAN’T BE YOURS–〉〈Komm, süsser Tod〉〈Jesus bleibet meine Freude〉〈夢のスキマ〉五軌都不在**。",
+    "src": "https://itunes.apple.com/lookup?id=1605640852&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple Music us／gb／de collectionId 1671675665《THE END OF EVANGELION (Original Soundtrack)》：releaseDate 2023-02-15、copyright「℗ 2022 King Record Co., Ltd, under exclusive license to Milan Records」、**trackCount 16**——前 14 軌是原盤曲目的羅馬拼音寫法（Tanin no Kanshyou…Yume no Sukima），另加第 15 軌 M-9 Heisoku no Kakudai 與第 16 軌 F02 version 0706，是 Milan 的加曲版。",
+    "src": "https://itunes.apple.com/lookup?id=1671675665&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈新世紀エヴァンゲリオン劇場版 Air／まごころを、君に〉導言：英題 The End of Evangelion，**1997 年 7 月 19 日**公開，由電視版第 25、26 話改寫的兩部構成，全國東映・東急系上映。原聲盤 1997-09-26 比電影**晚 69 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%B4%80%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%82%AA%E3%83%B3%E5%8A%87%E5%A0%B4%E7%89%88_Air/%E3%81%BE%E3%81%94%E3%81%93%E3%82%8D%E3%82%92%E3%80%81%E5%90%9B%E3%81%AB"
+   }
+  ],
+  "hookCandidates": [
+   "十四首裡有兩首是巴赫：管弦組曲第三號的 Air、清唱劇 BWV147 的〈主よ、人の望みの喜びよ〉",
+   "全碟最長的一首是七分四十六秒的〈甘き死よ、来たれ〉，掛的是 M-10 導演剪輯版"
+  ],
+  "sound": "MB release bf277278（STARCHILD KICA-370）記單片 14 軌，MB 未填總長；十四軌逐軌長度自 86 秒到 466 秒不等，最長的是第 11 軌〈Komm, süsser Tod／甘き死よ、来たれ (M‐10 Director’s Edit. Version)〉466 秒，最短是末軌〈夢のスキマ〉86 秒。曲目裡有兩首巴赫（第 6 軌管弦組曲第三號的 Air、第 12 軌 BWV147），與第 8 軌〈THANATOS –IF I CAN’T BE YOURS–〉並列在同一份曲序裡。**Apple 另有 9 軌與 16 軌兩種版本流通，行文寫軌數一律以原盤 14 軌為準。**",
+  "keyTracks": [
+   "他人の干渉",
+   "THANATOS –IF I CAN’T BE YOURS–",
+   "夢のスキマ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。MB release-group first-release-date 1997-09-26，其下 1997-09-26 JP Official STARCHILD KICA-370 是唯一的原盤 release，Apple jp 258925326 的 releaseDate 與 ℗ 年份也都是 1997，三處同年同日，卡單年份 1997 相符。**作品年與原聲帶發行年要分開寫**：電影《新世紀エヴァンゲリオン劇場版 Air／まごころを、君に》**1997-07-19** 上映（ja 維基），原聲盤 **1997-09-26** 晚 69 天，同年但碟在後。**探測層記的 appleYear 2022 是另一張碟的日期，不是本碟的年份**；us 店面那筆 Milan 版的 2023-02-15 同理。",
+  "notes": "**ready 卡覆核推翻：探測層配到的是 9 軌的別碟。** 探測層記 jp 1605640852、appleYear 2022、9 軌，`yearDrift` 已標 25 卻只標不擋（裁定 77 的設計）。實查：那筆的 copyright 是「℗ 2020 Shiro Sagisu」——**版權方是鷺巣本人不是 King Record**，九軌全是英文譯名、且原盤 14 軌裡的〈他人の干渉〉〈THANATOS〉〈Komm, süsser Tod〉〈Jesus bleibet meine Freude〉〈夢のスキマ〉五軌都不在，**是原盤的九曲子集，不是本碟**。\\n**正解是 jp 258925326**（《THE END OF EVANGELION (Original Soundtrack)》，releaseDate 1997-09-26、℗ 1997 King Record、14 軌、14 軌皆有 previewUrl，曲名與曲長與 MB 原盤逐位置相符）。**探測層落空的原因正是 c-101 第 8 條那一條**：這筆的 artistName 掛的是 **Various Artists**，不是鷺巣詩郎，所以藝人頁目錄端點看不到它，只有 `search` 端點撈得出來（裁定 173 的兩端點都要跑）。**這個 id 只有 jp 店面命中**，us／gb／tw／hk／de 五店回 0 筆。\\n**別碟警示三筆**：1605640852（9 軌，℗2020 鷺巣自有）、1671675665（us／gb／de，2023 Milan 版 **16 軌**＝原盤 14 軌＋M-9 Heisoku no Kakudai＋F02 version 0706 兩軌加曲，依裁定 140 屬加曲版）、1671675807《EVANGELION: DEATH (Original Soundtrack)》（18 軌，**同年另一部劇場版**，策展層已明寫刻意不釘）。下游不得改配其中任何一筆。\\n**原盤軌數 14**（MB 七筆 Official／Bootleg CD 與數位 release 一致）；2004-12-22 的 KIAW-25 記 28 軌是 **DVD-Audio 的雙音軌收錄**，不是 28 首曲子。"
+ },
+ {
+  "key": "desc4:鷺巣詩郎|Shiro SAGISU Music from EVANGELION:1.0 YOU ARE (NOT) ALONE",
+  "artist": "鷺巣詩郎",
+  "album": "Shiro SAGISU Music from EVANGELION:1.0 YOU ARE (NOT) ALONE",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 71086160 的欄位：title「Shiro SAGISU Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”」（MB 用彎引號）、artist-credit「鷺巣詩郎」（藝人 MBID 9b127d23）、first-release-date 2007-09-26、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release。",
+    "src": "https://musicbrainz.org/release-group/71086160-3b53-3a3e-a2a6-b0132812376f"
+   },
+   {
+    "f": "同一 RG 的 release 明細：**六筆全部 26 軌**——2007-09-26 JP Official STARCHILD KICA-887 CD、2012-10-01 JP Official キングレコード株式会社 KICA-887 Digital Media、2016-11-04 US Official Milan M2-36799 CD、2016-11-04 CA Official Milan Digital Media、2016 BR Official Éditions Milan Music Digital Media、2008 TW Bootleg MIYA RECORDS MICA-0865 CD。**歐美與南美三筆的標題都改成《Music from \"EVANGELION: 1.0\" YOU ARE (NOT) ALONE》（沒有 Shiro SAGISU 前綴）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=71086160-3b53-3a3e-a2a6-b0132812376f&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 9489cfc6（2007-09-26 JP STARCHILD KICA-887）的逐軌曲目：單片 26 軌，**每一軌的標題後面都掛著製作編號**（EM01、EM02、EM03…），第 1 軌〈L’Attaque des Anges (EM01)〉、第 20 軌〈Bataille Décisive (EM20)〉285 秒是全碟最長，第 24、25 軌是兩首 Demo（EM17_Demo 17、EM21_Demo 21），末軌〈Cruel Dilemme IV (Guit_C)〉。**曲名大量使用法文**（L’Attaque des Anges、Les Bêtes、Crépuscule-Tokyo III、Mecanisme de Defense、Danse des Lucioles、Stratégie “Yashima”）。",
+    "src": "https://musicbrainz.org/release/9489cfc6-7dcb-47de-a0e0-773a74f16033"
+   },
+   {
+    "f": "Apple Music jp collectionId 263727634《Shiro SAGISU Music from \"EVANGELION 1.0\" YOU ARE (NOT) ALONE》：artistName 鷺巣詩郎、releaseDate 2007-09-26、copyright「℗ 2007 King Records Co.,Ltd.」、trackCount 26，`entity=song` **攤得出 26 軌、26 軌全部有 previewUrl**，與 MB 原盤逐軌逐位置相符（只有變音符號與撇號寫法的差異）。同一個 id 在 **jp／tw／hk 三個店面**命中，us／gb／de 回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=263727634&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple Music us collectionId 1522561884《Evangelion: 1.0 You Are (Not) Alone (Original Soundtrack Album)》：artistName Shiro SAGISU、releaseDate 2007-09-26、copyright「℗ 2016 Exclusively Licensed by Milan Entertainment, Inc.」、26 軌全部有 previewUrl，曲名沿用同一套法／英文標題但拿掉了製作編號——**是同一份曲目的美國 Milan 版**，只在 us 命中，gb／de 回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=1522561884&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ヱヴァンゲリヲン新劇場版:序〉導言：英題 EVANGELION:1.0 YOU ARE (NOT) ALONE.，**2007 年 9 月 1 日**公開，四部作的第一作，庵野秀明脚本・総監督，**カラー設立第 1 回作品**。原聲盤 2007-09-26 比電影**晚 25 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%B1%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%83%B2%E3%83%B3%E6%96%B0%E5%8A%87%E5%A0%B4%E7%89%88:%E5%BA%8F"
+   }
+  ],
+  "hookCandidates": [
+   "二十六首曲名後面全掛著製作編號：EM01、EM02、EM03，一路排到 EM21 的兩首 Demo",
+   "曲名是法文的：L’Attaque des Anges、Les Bêtes、Danse des Lucioles"
+  ],
+  "sound": "MB release 9489cfc6（STARCHILD KICA-887）記單片 26 軌，MB 未填總長。曲序自〈L’Attaque des Anges (EM01)〉起、終於〈Cruel Dilemme IV (Guit_C)〉，逐軌長度自 99 秒到 285 秒，最長是第 20 軌〈Bataille Décisive (EM20)〉。曲名以法文與英文混排，且**每一軌都保留了製作編號**（EM01–EM21、EMA01、EMA13_B、EMF02、Guit_A／Guit_C、EM18_Rhythm03），〈Cruel Dilemme〉與〈The Longest Day〉各有四個與三個編號版本排在不同位置，第 24、25 軌是兩首標明 Demo 的錄音。",
+  "keyTracks": [
+   "L’Attaque des Anges (EM01)",
+   "Bataille Décisive (EM20)",
+   "Rei-Opus V (EMA01)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2007。MB release-group first-release-date 2007-09-26、其下 2007-09-26 JP Official STARCHILD KICA-887 為原盤，Apple jp 263727634 的 releaseDate 與 ℗ 年份都是 2007，卡單年份 2007 相符。**作品年與原聲帶發行年要分開寫**：電影《ヱヴァンゲリヲン新劇場版:序》**2007-09-01** 上映（ja 維基），原聲盤 **2007-09-26** 晚 25 天，同年、碟在後。Milan 的美／加／巴西版是 **2016-11-04**（MB release 明細），與原盤差九年；Apple us 1522561884 雖然把 releaseDate 顯示成 2007-09-26，**它的 ℗ 年份是 2016**，那是授權年不是發行年。",
+  "notes": "**ready 卡覆核通過，配對正確。** jp 263727634 的 26 軌與 MB 原盤 release 9489cfc6 逐軌逐位置相符、26 軌全部有 previewUrl、℗ 年份 1:1 對上 2007 年的 King Records。**店面覆核**：同一個 id 在 **jp／tw／hk** 三店命中，**us／gb／de 三店回 0 筆**——歐美店面走的是另一個 id 1522561884（Milan 版，同 26 軌、同曲序，℗ 2016），下游若要在美國店面落地固定試聽，那一筆是可用的替代，但**兩個 id 的 ℗ 年份不同，行文不得引用 Milan 的 2016**。\\n**盤名三種寫法**：MB 的 RG 標題用彎引號 Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”、卡片與 Apple jp 用直引號且冒號後有空格、Milan 版整個拿掉 Shiro SAGISU 前綴並把冒號挪進引號內（Music from \"EVANGELION: 1.0\"）。三種都要進去重比對。\\n**別碟警示**：同系列 1522843603（2.0，23 軌）、579570501（3.0，34 軌）、1569126716／1579598401（SHIN，54 軌）、1134882984《Shiro SAGISU outtakes from Evangelion》（21 軌，未收錄曲集）、721578418《EVANGELION Piano Forte》（18 軌，鋼琴編曲盤）——**策展層已把其中四筆明寫「刻意不釘」**，下游不得改配。\\n**擋下策展層一處說法**：`curatorWhy` 寫「是他少數在歐美有正規發行的原聲盤」——**同一位藝人的另外兩張碟也有歐美正規發行**（本組《NEON GENESIS EVANGELION II》有 2004-03-16 US Official Geneon 52252、《THE END OF EVANGELION》有 2004-05-11 US Official Geneon 5231-2，兩筆都在 MB 上，且都是本批自己收的卡）。**行文不得寫「少數」「唯一」這一類的稀有度判斷。**"
+ }
+]
