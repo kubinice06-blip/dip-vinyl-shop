@@ -93,5 +93,100 @@
   "risk": "年份取 first-release-date 1989（Pearl 整編年），錄音年 1919–1926，落差近七十年，行文一律以錄音年代為主、發行年只當版本標記。CAA release-group 端點實測 200。Apple 在 gb／us／jp／de／fr／it／ie 七個店面用「Cortot Victor Recordings 1919-1926」與「Alfred Cortot The Victor Recordings」兩組字串搜尋均未命中這一套；查到的是 1379848168《The Late Recordings, Vol. 2 (1947-1949)》、1379849740《Vol. 3 (1949-1951)》、447386425《Alfred Cortot: 1929-1937 Recordings》、215991510《Chopin: Ballades Nos. 1-4, Nocturnes (Cortot, 78 Rpm Recordings, Vol. 5)》——四筆都是別的年代區間，一律不得當本盤的封面或試聽來源。預估 previewStatus=unavailable，封面走 CAA。盤名的年份區間用 ASCII 連字號（1919-1926），MB 標題原文即如此。",
   "mbNote": "釘 release-group d007350e-6db7-4fbd-9b6a-2a2012a987be。回問確認：title「Victor Recordings of 1919-1926」、artist-credit「Alfred Cortot, Chopin, Weber, Schubert, Debussy, Ravel, Saint-Saëns, Brahms」（演奏者排在最前、其後全是作曲家，卡片取 Alfred Cortot）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1989、Pearl GEMM CD 9386、status Official）。藝人 MBID c063351f-8877-415f-b4bd-c65f60cedb66，名下 44 個 release-group（分頁全列）。刻意不釘：3871cdec《Carnaval and Etudes Symphoniques》（1954，CAA 404）、8d28afc4《Chopin》與 a242e4c4《Alfred Cortot ● Chopin》與 9a4e7c56《Chopin • Œuvres pour piano • Cortot》（三筆蕭邦整編都可能與池中既有的《Chopin: 24 Préludes》重疊）、51cd046a／ca320c36《Great Pianists of the 20th Century, Volume 20／21》（系列選輯）。",
   "queryAlias": "Alfred Cortot Victor Recordings; Cortot 1919-1926; Cortot Pearl GEMM CD 9386"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Jacques Thibaud & Alfred Cortot",
+  "album": "Franck: Sonate / Fauré: Sonate no. 1 / Debussy: Sonate",
+  "year": 1989,
+  "label": "EMI（catno 7 63032 2；Références 系列）",
+  "why": "Thibaud 與 Cortot 1929–1931 年錄下的法國小提琴奏鳴曲，EMI 在 1989 年以 Références 歷史系列復刻。這對搭檔是法國學派在唱片時代最早也最完整的一組室內樂紀錄：法朗克奏鳴曲的作曲者是比利時人 Ysaÿe 的題獻對象，而 Thibaud 正是 Ysaÿe 的學生輩；德布西奏鳴曲則是作曲家生前最後完成的作品之一，這份錄音距首演不到十五年。池中實掃 14,424 列：Jacques Thibaud 只有 1 張（《French Violin Works》1931）、Alfred Cortot 只有 1 張（《Chopin: 24 Préludes》1934），兩人合作的碟一張都沒有；池中的法朗克鋼琴五重奏由 Sviatoslav Richter 與 Borodin Quartet 掛名，法國學派本身沒有代表。",
+  "risk": "掛名取「Jacques Thibaud & Alfred Cortot」，與池中既有的單人卡「Jacques Thibaud」「Alfred Cortot」並存，是既有先例的形態（池中已有 Glenn Gould & Leonard Bernstein、Jacqueline du Pré & Daniel Barenboim、David Oistrakh & Lev Oborin 等合掛卡）。年份取 first-release-date 1989，錄音年 1929–1931。CAA release-group 端點實測 200。Apple gb 命中 868359590「Jacques Thibaud & Alfred Cortot — Franck & Fauré: Sonates pour violon et piano (Mono Version)」（releaseDate 記 1959）與 1573022510「Franck, Chausson & Fauré: Chamber Works」（1990），前者缺德布西那一半、後者多了 Chausson，兩筆都與本盤曲目不同，上架時必須逐曲核對再決定用哪一個 collectionId，否則會配到不同曲目的碟。店面序 UKB，gb 即命中。盤名法文與英文兩套並存（Sonate／Sonata），去重時兩邊都要掃。",
+  "mbNote": "釘 release-group 1e85c5b7-e0b8-4e41-90df-3c19c1f68d0d。回問確認：title「Franck: Sonate / Fauré: Sonate no. 1, Berceuse / Debussy: Sonate, Minstrels」、artist-credit「Franck, Fauré, Debussy; Jacques Thibaud, Alfred Cortot」（三位作曲家在前、兩位演奏者在後，卡片取兩位演奏者）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1989、EMI 7 63032 2、status Official）。卡片盤名把 MB 標題裡的兩首小品（Berceuse、Minstrels）省略，依第 91 條 RG 標題與卡片盤名不必相等，完整標題已寫在此。刻意不釘：ec9a572e《Beethoven: Piano Trio \"Archduke\" / Schubert: Piano Trio D 898》（本批另收，是三重奏編制不是二重奏）、b94d211f《Piano Trios / Brahms: Double Concerto》與 4ccf8291／eba35ecd《Great Chamber Music Recordings: Trios》（三筆都是三重奏整編）。",
+  "queryAlias": "Franck Violin Sonata Thibaud Cortot; Faure Sonata no. 1; Debussy Violin Sonata; Thibaud Cortot"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Cortot / Thibaud / Casals",
+  "album": "Beethoven: Archduke Trio / Schubert: Piano Trio D 898",
+  "year": 1999,
+  "label": "EMI Classics（catno 5 67001 2 美國盤／5 66986 2 歐洲盤）",
+  "why": "Cortot、Thibaud 與 Casals 1926–1928 年錄下的貝多芬《大公》三重奏與舒伯特第一號鋼琴三重奏，EMI Classics 1999 年復刻。這個三重奏 1905 年在巴黎組成，是二十世紀第一個由三位獨奏名家長期合作的鋼琴三重奏，他們的唱片是室內樂錄音史的起點文獻之一；三人在 1930 年代因政治立場決裂後再未同台。池中實掃：Alfred Cortot 1 張、Jacques Thibaud 1 張、Pablo Casals 2 張（《Bach: Cello Suites (1936-39)》《Song of the Birds》），三人合掛的碟 0 張；池中同型的名家三重奏只有一張《Rubinstein / Heifetz / Feuermann — Beethoven: Archduke Trio》(1941)，兩張正好是同一首曲子的兩個世代讀法。",
+  "risk": "⚠ 池中已有《Rubinstein / Heifetz / Feuermann — Beethoven: Archduke Trio》(1941)——同一首曲子、不同三人組、不同錄音，掛名字串完全不同故不撞卡，但下游查詢與行文都要能分辨兩者，卡片盤名已加上舒伯特那一半以資區別。掛名依裁定第 16 條用斜線併列「Cortot / Thibaud / Casals」，與池中 Rubinstein / Heifetz / Feuermann、Oistrakh / Rostropovich / Richter / Karajan 同一形態。年份取 first-release-date 1999，錄音年 1926–1928。CAA release-group 端點實測 200。Apple gb 有多筆同組合的條目：685359329「Beethoven & Schubert: Piano Trio」（2013）曲目最接近本盤、80842987「Thibaud, Casals, Cartot - Beethoven: Archduke Trio - Kreutzer Sonata - Magic Flute Variations」（2002，注意 Apple 把 Cortot 拼成 Cartot）、777138424「Beethoven: Trio No. 7, Op. 97 (Recorded 1928, Mono Version)」、298319036 西班牙文條目、1685393170「Chamber Music」（2023），五筆曲目各不相同，上架時要鎖定含舒伯特 D 898 的那一筆。店面序 UKB。掛名拼法查過 Cortot／Cartot、Casals／Pau Casals、Thibaud／Jaques Thibaud（Apple 602779041 即誤拼 Jaques）四種寫法。",
+  "mbNote": "釘 release-group ec9a572e-59e0-3022-99f0-afd4c184ab45。回問確認：title「Beethoven: Piano Trio in B-flat, op. 97 \"Archduke\" / Schubert: Piano Trio no. 1 in B-flat, D 898」、artist-credit「Ludwig van Beethoven, Franz Schubert; Alfred Cortot, Jacques Thibaud, Pablo Casals」、first-release-date 1999-09-14、primary-type Album、secondary-types 空、轄下 2 個 release（US 1999-09-14 EMI Classics 5 67001 2／XE 1999 EMI Classics 5 66986 2），status 全數 Official。MB 的 Casals 藝人實體名為「Pau Casals」（MBID 2fcffd9a-f02a-4a2c-8085-6257f918949d），此 release-group 的 artist-credit 用的是「Pablo Casals」，卡片沿用池中既有的 Pablo Casals 寫法。刻意不釘：81359220 對應的 Mendelssohn／Schumann 三重奏整編、18a74b61《Great Chamber Music Recordings: Archduke Trio / Kreutzer Sonata / Magic Flute Variations》（曲目不同的另一種切法）、9f3000c8《Beethoven: Trios op. 70:2 / op. 97 »Archduke« / Schumann: Trios》（Compilation）。",
+  "queryAlias": "Archduke Trio Cortot Thibaud Casals; Cortot Thibaud Casals Trio; Cartot; Pau Casals"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Fritz Kreisler",
+  "album": "The Berlin HMV Recordings, 1926-27",
+  "year": 1991,
+  "label": "Biddulph Recordings（catno LAB 049-50，兩片裝；2020 數位再發同廠）",
+  "why": "Kreisler 1926–1927 年在柏林為 HMV 灌下的電氣錄音，由考古廠牌 Biddulph 在 1991 年整編成兩片。這批與他同期在美國 Victor 錄的短曲集是兩套不同的母帶：柏林那批用的是德國 Electrola 的錄音棚與伴奏班底，曲目偏他自己的創作與改編。Kreisler 是二十世紀前半最具影響力的小提琴家，他的運弓與揉弦習慣被整代人模仿。池中實掃 14,424 列：Fritz Kreisler 只有 1 張（《The Complete Recordings》1946），另有三筆是別人演奏他的作品（Perlman 系列不在池中，池中是 Kempff《Schumann: Kreisleriana》、Argerich《Schumann: Kinderszenen / Kreisleriana》兩張同名不同人的碟）。MB 藝人 590fcad4 名下 91 個 release-group（分頁全列）。",
+  "risk": "⚠ 本批同時收 Kreisler 兩張同年代的短曲集（本盤柏林 HMV 1926-27 與 Biddulph LAB 075 的美國 Victor 1926 & 1927），兩者標題極像、年代重疊，但母帶來源與曲目不同，下游去重與行文都要能分辨；兩張的 catno（LAB 049-50 與 LAB 075）已寫進各自的 label 欄。年份取 first-release-date 1991，錄音年 1926–1927。CAA release-group 端點實測 200。Apple 七個店面搜「Kreisler Berlin HMV Recordings 1926」與「Fritz Kreisler Berlin recordings」皆未命中本盤；查到的 1566627538「The Kreisler Collection: The Complete Acoustic HMV Recordings」是機械錄音時期（1926 年之前）的另一套，年代與母帶都不同，一律不得當本盤的試聽或封面來源。預估 previewStatus=unavailable。Biddulph 這一筆 MB 標 Official，依第 43／57／65／78 條逐筆判定乾淨；不得因此把 Biddulph 一概當背書。",
+  "mbNote": "釘 release-group 6ba51093-bbb8-4fba-8a98-d2ad931d62db。回問確認：title「The Berlin HMV Recordings, 1926-27」、artist-credit「Fritz Kreisler」（單一演奏者，無作曲家並列）、first-release-date 1991、primary-type Album、secondary-types 空、轄下 2 個 release（GB 1991 Biddulph LAB 049-50／XW 2020-03-06 Biddulph 數位），status 全數 Official。藝人 MBID 590fcad4-2ba4-43bc-a22f-a4bb9b496fe8。刻意不釘：bf952c10《The 1926 & 1927 Victor Recordings: Favourite Short Pieces》（本批另收，是美國 Victor 那一套）、867b6d9f《The 1928 Victor Recordings: Favourite Short Pieces》（CAA 404）、42b3da0d《The Complete RCA Recordings》與 8b893ffb《The Complete Recordings, Volume 2》（與池中既有的《The Complete Recordings》重疊）、9619a626／a4db326c／933f849e《Itzhak Perlman Plays Fritz Kreisler》三卷（掛名是 Perlman，不是本人）。",
+  "queryAlias": "Kreisler Berlin HMV 1926; Biddulph LAB 049-50; Fritz Kreisler Electrola"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Fritz Kreisler",
+  "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+  "year": 1993,
+  "label": "Biddulph Recordings（catno LAB 075）",
+  "why": "Kreisler 1926–1927 年在美國 Victor 錄下的短曲集，Biddulph 1993 年整編。這批唱片是他商業上最成功的一塊：Victor 把他的三分鐘小品當單曲賣，《愛之喜》《愛之悲》《美麗的羅絲瑪琳》這些他自己寫的曲子就是靠這批唱片變成小提琴常備曲目的。池中實掃：Kreisler 僅 1 張（《The Complete Recordings》1946），該卡指的是他 1940 年代的晚期錄音，1920 年代電氣錄音時期在池中完全空白。",
+  "risk": "MB 的 secondary-types 含 Compilation、primary-type 是 Album，依 §5.6 明文照一般 Album 寫法，releaseType 填 Album、不填例外欄位。⚠ 與本批另一張 Kreisler（柏林 HMV 1926-27）標題與年代高度相近，兩張是不同母帶不同曲目，見該卡 risk。年份取 first-release-date 1993，錄音年 1926–1927。CAA release-group 端點實測 200。Apple gb 命中 1617284555「Fritz Kreisler & Carl Lamson — The 1926 & 1927 Victor Recordings」（releaseDate 1993），掛名多了鋼琴伴奏 Carl Lamson，是同一套；另有 1017356225「Kreisler: The Complete Recordings, Vol. 6」與 598379648「Kreisler: Complete Recordings, Vol. 5 (1919-1924)」是 Naxos 的另一套分卷編輯，不得混用。店面序 UKB，gb 即命中。",
+  "mbNote": "釘 release-group bf952c10-656c-3909-b858-239126370b39。回問確認：title「The 1926 & 1927 Victor Recordings: Favourite Short Pieces」、artist-credit「Fritz Kreisler」、first-release-date 1993、primary-type Album、secondary-types [\"Compilation\"]、轄下 1 個 release（GB 1993、Biddulph LAB 075、status Official）。刻意不釘：6ba51093《The Berlin HMV Recordings, 1926-27》（本批另收）、867b6d9f《The 1928 Victor Recordings: Favourite Short Pieces》（同系列下一卷，CAA 404）、c32e3600《The Early Victor Recordings, Vol. 1》（機械錄音時期）、87d74492《Kreisler Plays Kreisler》（另一種選輯切法）。",
+  "queryAlias": "Kreisler 1926 1927 Victor Recordings; Favourite Short Pieces; Carl Lamson; Biddulph LAB 075"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Van Cliburn",
+  "album": "Rachmaninoff: Piano Concerto no. 3",
+  "year": 1959,
+  "label": "RCA Victor Red Seal（catno LSC-2355；單聲道 LM-2355、1983 再發 ARP1-4688）",
+  "why": "Van Cliburn 1958 年 5 月在紐約與 Kiril Kondrashin 指揮的 Symphony of the Air 錄下的拉赫瑪尼諾夫第三號鋼琴協奏曲，是他拿下第一屆柴可夫斯基大賽首獎、回國受到紐約市遊行歡迎之後的第二張 RCA 唱片；Kondrashin 是他在莫斯科決賽的指揮，RCA 特地把人請到紐約重錄。池中實掃 14,424 列：Van Cliburn 只有 1 張，就是同一趟莫斯科行帶回來的《Tchaikovsky: Piano Concerto no. 1》(1958)，那張是史上第一張銷量破百萬的古典唱片；第三號拉赫是這對搭檔的另一半，池中沒有。池中的拉赫第三號目前 0 張。",
+  "risk": "年份取 first-release-date 1959（RCA LSC-2355），錄音年 1958-05，差一年，落差小。CAA release-group 端點實測 200。⚠ Apple 上這份錄音幾乎都以合輯形式出現，且極易與 Cliburn 後來與 Fritz Reiner 錄的拉赫第二號混淆：gb 401475335「Rachmaninoff: Concerto No. 3; Prokofiev: Concerto No. 3」（1987）是本錄音與本批另一張（Prokofiev 第三號）的合併再發、407707766「Rachmaninoff: Piano Concertos Nos. 2 & 3」（2010）與 939786437「Rachmaninov: Piano Concertos Nos. 2 & 3」（2014）都把第二號綁進來、269402791「Tchaikovsky: Piano Concerto No. 1 - Rachmaninov: Piano Concerto No. 2」（1958）是池中既有那張的變體，四筆都不是純第三號的條目。上架時若採用 401475335，要在備註寫明它同時涵蓋本批兩張卡的曲目。店面序 UKB，gb 即命中。MB 該 release-group 轄下有一筆 release 的日期與國別皆空（RCA Victor LM-2355 單聲道盤），status 為 Official。",
+  "mbNote": "釘 release-group f0a577af-e1c3-40d8-ae8f-942c8eed34b0。回問確認：title「Concerto no. 3」、artist-credit「Sergei Rachmaninov; Symphony of the Air, Kiril Kondrashin, Van Cliburn」（作曲家＋樂團＋指揮＋鋼琴家，卡片取獨奏者 Van Cliburn）、first-release-date 1959、primary-type Album、secondary-types 空、轄下 3 個 release（RCA Victor LM-2355 日期國別空／US 1959 RCA Victor Red Seal LSC-2355／US 1983 RCA Red Seal ARP1-4688），status 全數 Official。卡片盤名補上作曲家與「Piano」，MB 標題只寫「Concerto no. 3」，依第 91 條兩者不必相等。藝人 MBID 0a8a7571-a0cd-4626-a10a-3dd57e0e559e，名下 57 個 release-group。刻意不釘：3978e6e2《Rachmaninoff: Concerto No. 3 / Prokofiev: Concerto No. 3》（1987 合併再發，正是 Apple 401475335 那一筆）、ad1f0a13《Piano Concerto no. 1》與 e2c73b4e《Tchaikovsky - Concerto No. 1》（與池中既有的柴一撞卡）、360193d8《Legendary Van Cliburn: The Complete Album Collection》（廠牌大盒）。",
+  "queryAlias": "Van Cliburn Rachmaninoff Concerto No. 3; Rachmaninov Piano Concerto No. 3 Kondrashin; Symphony of the Air"
  }
 ]
