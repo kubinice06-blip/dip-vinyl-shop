@@ -878,5 +878,924 @@
   "status": "full",
   "yearVerified": "**錄音年查到了，精確到月，而且策展層寫錯了一年。** (1) MB release-group 的 first-release-date 是 **1968**，對應瑞士 Ex Libris PH 6858 603 那張黑膠；Apple 1733692673 的 releaseDate 記 **1968-12-01**、copyright 記 ℗ 1968，Discogs 10228738 也記「℗ 1968 (label)」。**卡單的 1968 是原盤發行年，三個來源一致。**(2) **原始錄音是 1968 年 1 月（op. 8）與 1968 年 5 月（op. 25），地點荷蘭**——Discogs release 10228738（Philips 426 090-2）的說明欄逐字寫「Recorded: The Netherlands, 1/1968 (Op. 8); 5/1968 (Op. 25)」。**策展層寫的「1967 年錄」與來源不符，差一年**；而且兩首不是同一次錄的，中間隔了四個月。(3) **卡單年份與錄音年同年**，是本批年份鏈最乾淨的四張之一（另三張是第 9、10、11 張）。**行文可以安全寫「1968 年 1 月與 5 月在荷蘭錄下」。**",
   "notes": "**推翻探測層 unavailable，而且這是本批命中最乾淨的一筆。** 走藝人頁目錄端點 lookup?id=65426807&entity=album&limit=200&country=<store>（Grumiaux Trio，七店各 8–10 筆，**是本批第二小的目錄**）撈到 collectionId **1733692673「Beethoven: Serenades, Op. 8 & 25」**，再以 entity=song 覆核：11 軌、曲名曲序與 MB 1990 年 Philips CD 那一筆逐軌相同、**連併軌方式都一樣**（op. 8 的五六樂章併一軌、op. 25 的六七樂章併一軌）、11 軌皆有 previewUrl、逐軌時長差 0–1.7%、**掛名「Grumiaux Trio & Maxence Larrieu」與 MB 的 artist-credit 完全一致**、℗1968。逐店面實測 **gb／us／de／fr／at／it／jp 七店全有**。策展層 risk 已點名這一筆並稱「是本批命中最乾淨的一筆」——**實測完全確認**。建議探測檔補：ready／gb／1733692673／11 軌。\n**軌數要註明**：卡片釘的 MB release-group 底下有兩個 release，**1968 年瑞士 Ex Libris 黑膠是 13 軌、1990 年 Philips CD 是 11 軌**，Apple 那一筆跟的是 CD 版的 11 軌。兩者曲目完全相同，差別只在併軌。**`originalTrackCount` 若要填，應填 13（原盤黑膠），並在備註寫明 Apple／CD 版是 11 軌**；行文不得說「這張碟有十一首曲子」——它其實是兩首小夜曲、十三個樂章。\n**不得混用的鄰居**：1452852992「Beethoven: The Complete String Trios」（Grumiaux Trio，23 軌，releaseDate 1968，**at／gb／it／us 四店**）——策展層已指出它是另一套（op. 3 與三首 op. 9），**但要補一點：op. 8 也是弦樂三重奏，那套「Complete String Trios」很可能也含 op. 8**，若下游要拿它當替代品必須先跑 entity=song 逐軌比對，**目前不得採用**。987755025「Beethoven & Mozart: Trio Recital (Recorded 1966)」（13 軌）曲名裡的年份 1966 與本盤的 1968 只差兩年，**是另一場**，也不得混。\n**擋下策展層說法（兩處，其中一處是年份錯）**：\n1. curatorWhy 稱「**1967 年**錄的」——**與來源相反**。Discogs 明寫 op. 8 錄於 1968 年 1 月、op. 25 錄於 1968 年 5 月，地點荷蘭。**行文一律用 1968 年 1 月與 5 月。**\n2. curatorWhy 稱「這個三重奏 **1966 年**由 Arthur Grumiaux、Georges Janzer 與 Eva Czako 組成」——**成軍年份查不到來源**。英文維基〈Arthur Grumiaux〉只寫成員是這三位、「They recorded for Philips during the 1960s through to the mid-1970s, until Czako's death in 1978」，**沒有給成立年**。擋下 1966。\n**查證通過、可以寫的四條**：(a) 兩首小夜曲的**編制不同**——op. 8 是小提琴、中提琴、大提琴的弦樂三重奏，op. 25 是長笛、小提琴、中提琴，所以長笛家 Maxence Larrieu 只出現在後半（MB 1968 年黑膠的德文曲目表逐軌標明編制）；(b) 1968 年 1 月與 5 月在荷蘭分兩次錄；(c) **1967 年他們錄的莫札特 K. 563 弦樂三重奏被樂評視為史上最偉大的室內樂錄音之一**（維基）——那是本盤前一年的事，是同一個團同一個時期；(d) 大提琴 Eva Czako 1978 年過世，三重奏的 Philips 錄音就此結束。**(a) 是最貼近這張碟本身的一條：同一張唱片的兩面，中間換掉一件樂器。**\n掛名：卡片用「Grumiaux Trio」，Apple 用「Grumiaux Trio & Maxence Larrieu」（**與 MB 的 artist-credit 相同，比卡片多一個人**），Apple 上另有 1535525470「Trio Grumiaux」與 584392118「Trio à clavier Arthur Grumiaux」（**後者是鋼琴三重奏，是不同的編制、不同的團**）。**三個實體要分清，第三個不得混入。**"
+ },
+ {
+  "key": "desc2:Dietrich Fischer-Dieskau|Schubert: Lieder Volume 1",
+  "artist": "Dietrich Fischer-Dieskau",
+  "album": "Schubert: Lieder Volume 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f5a517ee 的欄位：title「Lieder Volume 1」、artist-credit「Franz Schubert; Dietrich Fischer‐Dieskau, Gerald Moore」（MB 用 U+2010 連字號）、first-release-date 1970、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/f5a517ee-85b6-46b9-8242-2a0b34ab2906"
+   },
+   {
+    "f": "該 release-group 唯一的 release e6577d99：1970 年德國盤、Deutsche Grammophon 643 547/58、status Official、載體十二張 12 吋黑膠，逐片軌數 17／9／14／17／13／16／14／15／12／14／16／14，合計 174 軌。第一片 A1 是〈An die Musik〉（D. 547），最後一片 X1 是〈Der Kreuzzug〉（D. 932）——整套按舒伯特作品編號排，涵蓋 1817 年以後的歌曲。",
+    "src": "https://musicbrainz.org/release/e6577d99-37ee-4f92-9b18-4c0245231edc"
+   },
+   {
+    "f": "英文維基〈Dietrich Fischer-Dieskau〉寫：他與 Gerald Moore 1951 年在倫敦 Abbey Road 錄下第一批藝術歌曲；兩人一起開獨唱會直到 1967 年 Moore 退出公開演出；**錄音合作持續到 1972 年，該年他們完成了把所有適合男聲的舒伯特歌曲全部錄一遍的大工程**；文中並寫 Moore 於 1972 年完全退休、1987 年過世。",
+    "src": "https://en.wikipedia.org/wiki/Dietrich_Fischer-Dieskau"
+   },
+   {
+    "f": "英文維基〈Gerald Moore〉的說法與上一條不完全一致：該條目寫 Moore 1967 年退出公開演出，告別音樂會在倫敦皇家節慶廳、由 Fischer-Dieskau／Victoria de los Ángeles／Schwarzkopf 三人同台，最後 Moore 獨奏他自己改編的舒伯特〈An die Musik〉鋼琴版作結；並寫他「1975 年才錄下最後一次錄音室錄音」。",
+    "src": "https://en.wikipedia.org/wiki/Gerald_Moore"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId 1452761264「Schubert: Lieder, Vol. 2」，掛名 Dietrich Fischer-Dieskau & Gerald Moore，releaseDate 1969-01-01，copyright「This Compilation ℗ 1969 Deutsche Grammophon GmbH, Berlin」，trackCount 171、分九張碟，171 軌全部有 previewUrl。其第 1-01 至 1-06 軌〈An die Musik, D. 547〉〈Pax vobiscum, D. 551〉〈Hänflings Liebeswerbung, D. 552〉〈Auf der Donau, D. 553〉〈Der Schiffer, D. 536〉〈Nach einem Gewitter, D. 561〉與 MB 1970 年 DG 黑膠盒第一片 A1–A6 逐軌同名同序；MB 盒中第 12 片的開頭〈L'incanto degli occhi〉（D. 902/1）與〈Der Kreuzzug〉（D. 932）也在這筆的第 9-03 與 9-10 軌。",
+    "src": "https://music.apple.com/gb/album/1452761264"
+   },
+   {
+    "f": "Apple 另有 collectionId 1452765615「Schubert: Lieder, Vol. 1」（同掛名、℗ 1970 DG、trackCount 234），但它從〈Eine Leichenphantasie, D. 7〉開始、前 200 軌一路排到 D. 493 附近，是更早期的歌曲，**與本張黑膠盒（D. 547 起）不是同一批內容**；1452162673「Schubert: Lieder (Vol. 3)」℗ 1972、58 軌。三筆相加 234＋171＋58＝463，正好等於 1452949408「Schubert: Complete Lieder - Dietrich Fischer-Dieskau」（℗ 2005 DG）的 463 軌。",
+    "src": "https://music.apple.com/us/album/1452765615"
+   }
+  ],
+  "hookCandidates": [
+   "十二張黑膠、一百七十幾首歌，從〈An die Musik〉排到〈Der Kreuzzug〉——這只是全套的第一卷",
+   "1967 年 Moore 已經不再上台，兩人卻繼續進錄音室，一直錄到 1972 年才把男聲能唱的舒伯特歌曲錄完"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：全套只有男中音與鋼琴兩個人（Fischer-Dieskau、Gerald Moore），MB 那筆 1970 年 DG 原盒是十二張 12 吋黑膠、174 軌，曲目按作品編號從 D. 547 排到 D. 932。Apple 對應的那筆逐軌長度多在一到三分鐘之間，最長的〈Einsamkeit, D. 620〉17 分 52 秒。",
+  "keyTracks": [
+   "An die Musik",
+   "Die Forelle",
+   "Gruppe aus dem Tartarus",
+   "Prometheus",
+   "Die Allmacht"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1970。MB first-release-date 1970 與唯一 release 的日期 1970（DG 643 547/58 德國原盒）一致，取 1970 沒有爭議。**但要分清三個數字**：原始錄音年不是 1970——英文維基記 Fischer-Dieskau 與 Moore 的舒伯特全集工程一路錄到 1972 年才完成，本卷的錄音散在 1960 年代後半；Apple 對應那筆的 copyright 年是 **℗ 1969**（比黑膠盒早一年）；卡單的 1970 是**原盒發行年**。依裁定 18／46，行文不得正面斷言發行年。",
+  "notes": "**試聽由 unavailable 改判 ready，但配對的是一個名字對不上的品項**：正解是 Apple **1452761264「Schubert: Lieder, Vol. 2」**（gb／us／de／fr／at／it／jp 七店面全有，171 軌全有 previewUrl）。**Apple 的卷號與 DG 黑膠盒的卷號是反的**——Apple 的「Vol. 2」才是本卡釘的「Volume 1」（曲目從 D. 547 起，與 MB 原盒逐軌對得上），Apple 的「Vol. 1」（1452765615，234 軌）從 D. 7 起，是另一批更早的歌。**探測層落空的原因就是拿卡片的「Volume 1」去對 Apple 的「Vol. 1」，剛好對到錯的那一筆。**｜軌數落差 174（MB 黑膠盒）vs 171（Apple）＝3 軌，兩邊首尾與抽查的中段都對得上，判為同一套的黑膠／數位分軌差異，不是二合一；依裁定 141，行文不得寫「這套有幾首歌」。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈An die Musik, D. 547〉正是原盒 A1。｜**擋下策展層一處**：curatorWhy 寫「Gerald Moore 錄完這套之後就宣布退休」——兩個維基條目互相矛盾（〈Dietrich Fischer-Dieskau〉寫他 1972 年完全退休，〈Gerald Moore〉寫他 1967 年退出公開演出、1975 年才錄下最後一次錄音室錄音），**而且他 1967 年就已經不再上台，退休的宣布在這套錄完之前而不是之後**。行文不得寫「錄完這套之後才退休」。｜curatorWhy 的「1966 年開始」查無來源（維基只給「錄到 1972 年完成」與「1951 年首度合作」兩個錨點），「唱片史上規模最大的單一作曲家歌曲工程」也無來源，維基的原話只是「massive project」。｜掛名：MB 用 U+2010 連字號「Dietrich Fischer‐Dieskau」，卡片用 ASCII，字串比對不相等（策展層第 8 條已記）。"
+ },
+ {
+  "key": "desc2:Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau|Mahler: Des Knaben Wunderhorn",
+  "artist": "Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau",
+  "album": "Mahler: Des Knaben Wunderhorn",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5135d046 的欄位：title「Des Knaben Wunderhorn」、artist-credit「Mahler; London Symphony Orchestra, George Szell, Elisabeth Schwarzkopf, Dietrich Fischer‐Dieskau」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 9 個 release（1968 GB／1968 DE／1968 US 三張黑膠，1983 GB 黑膠，1988 GB CD，2000 起四筆 EMI／Warner CD），**九筆全部是 12 軌**。",
+    "src": "https://musicbrainz.org/release-group/5135d046-d71b-313b-9ff5-e3302577ba11"
+   },
+   {
+    "f": "1968 年英國原盤 release 06ab4150：His Master's Voice SAN 218、12 吋黑膠、12 軌，A 面〈Revelge〉〈Das irdische Leben〉〈Verlor'ne Müh〉〈Rheinlegendchen〉〈Der Tambourg'sell〉〈Der Schildwache Nachtlied〉，B 面〈Wer hat dies Liedlein erdacht〉〈Lob des hohen Verstandes〉〈Des Antonius von Padua Fischerpredigt〉〈Lied des Verfolgten im Turm〉〈Trost im Unglück〉〈Wo die schönen Trompeten blasen〉。同批另有德國盤 His Master's Voice 1C 065-00 098（盤名作《Lieder aus \"Des Knaben Wunderhorn\"》）與美國盤 Angel Records S-36547。",
+    "src": "https://musicbrainz.org/release/06ab4150-b818-4762-a58b-ecfb41051420"
+   },
+   {
+    "f": "英文維基〈Des Knaben Wunderhorn (Mahler)〉的管弦樂版錄音清單裡直接列出這一筆：「Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau; London Symphony Orchestra; George Szell (EMI/HMV SAN 218, 1968)」。",
+    "src": "https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)"
+   },
+   {
+    "f": "同一條目開頭寫：馬勒取自 Arnim 與 Brentano 1805–1808 年編的德國民歌詩集，**1905 年他以「十首」為聲樂與管弦樂編制的歌曲首度成套出版，但管弦樂版總共存在十二首**。",
+    "src": "https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)"
+   },
+   {
+    "f": "英文維基〈George Szell〉：Szell 1897 年 6 月 7 日生、**1970 年 7 月 30 日過世**（骨髓癌，死於克里夫蘭），最後一場演出在阿拉斯加 Anchorage；他長期是克里夫蘭管弦樂團音樂總監，並「經常與倫敦交響樂團同台」。這張 1968 年的錄音因此是他過世前兩年、與 LSO 而非克里夫蘭的合作。",
+    "src": "https://en.wikipedia.org/wiki/George_Szell"
+   },
+   {
+    "f": "Apple Music gb collectionId 1344023405「Mahler: Des Knaben Wunderhorn」，artistName「Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, London Symphony Orchestra & George Szell」，releaseDate 1968-12-10，trackCount 12，copyright「℗ 1968 Parlophone Records Limited. Remastered (p) 2015 Parlophone Records Limited」；十二軌逐軌與 1968 年 SAN 218 原盤**同名同序**（Apple 第 1 軌就是〈Revelge〉、第 12 軌是〈Wo die schönen Trompeten blasen〉），十二軌全部有 previewUrl。曲長：〈Revelge〉7:11、〈Wo die schönen Trompeten blasen〉7:33、最短的〈Wer hat dies Liedlein erdacht?〉2:00。",
+    "src": "https://music.apple.com/gb/album/1344023405"
+   }
+  ],
+  "hookCandidates": [
+   "馬勒 1905 年出版的是十首，這張唱兩人分唱十二首——把後來補寫的兩首軍樂歌也放了進來",
+   "Szell 不是帶克里夫蘭來的，他帶的是倫敦交響；兩年後他就走了"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：女高音 Schwarzkopf 與男中音 Fischer-Dieskau 分唱，George Szell 指揮倫敦交響樂團，1968 年 EMI／His Master's Voice 錄音；十二首單曲最長 7 分半、最短兩分鐘，整張約 50 分鐘。",
+  "keyTracks": [
+   "Revelge",
+   "Der Tamboursg'sell",
+   "Das irdische Leben",
+   "Wo die schönen Trompeten blasen"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1968。MB first-release-date 1968、1968 年三張原盤（GB SAN 218／DE 1C 065-00 098／US Angel S-36547）、英文維基錄音清單「EMI/HMV SAN 218, 1968」、Apple ℗ 1968 四方一致。**這張是本組二十張裡唯一卡單年份＝原盤年＝錄音年、沒有落差的一張**（Apple 的 releaseDate 精確到 1968-12-10）。",
+  "notes": "**ready 覆核通過。** Apple gb 1344023405 確為本張：掛名含 LSO 與 Szell、℗ 1968 Parlophone（EMI／HMV 的現持有者）、12 軌與 1968 年 SAN 218 原盤逐軌同名同序、12 軌全有 previewUrl。**不是後來的別次錄音**——Fischer-Dieskau 另有 1990 年 Barenboim／柏林愛樂版（Apple 501654518「Mahler: Des Knaben Wunderhorn & Lieder eines fahrenden Gesellen」16 軌、℗ 1990 Sony）與 1980 年 HMV 版，兩者掛名裡都沒有 Schwarzkopf，可以區分。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Revelge〉正是原盤 A1。｜掛名：MB 的 artist-credit 把作曲家與樂團排在前面（Mahler; London Symphony Orchestra, George Szell, Elisabeth Schwarzkopf, Dietrich Fischer‐Dieskau），卡片採兩位歌者併掛，合策展層第 3 條；**Apple 的 artistName 四方併列、把兩位歌者排在最前**，與卡片的併掛順序一致。｜**時序主張要擋**：Szell 1970 年 7 月 30 日過世，這張是他過世前兩年的錄音，**但沒有來源說這是他的最後錄音或最後一次與 LSO 合作**，行文不得寫「生前最後」。同理，Schwarzkopf 1979 年才告別舞台，1968 年不是她的收山之作。"
+ },
+ {
+  "key": "desc2:Marian Anderson|The Lady From Philadelphia",
+  "artist": "Marian Anderson",
+  "album": "The Lady From Philadelphia",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3ae00da4 的欄位：title「The Lady From Philadelphia」、artist-credit「Marian Anderson」、first-release-date 1995-02-03、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/3ae00da4-0a2d-4503-91a4-aea3b90065f5"
+   },
+   {
+    "f": "唯一的 release 9442082b：1995-02-03 英國、Pearl GEMM CD 9069、CD、19 軌。曲目是跨作曲家的獨唱選輯——普賽爾〈When I am laid in earth〉（《Dido and Aeneas》狄多的悲歌）、A. Scarlatti〈Se Florindo è fedele〉、巴哈《約翰受難曲》〈Es ist vollbracht〉、韓德爾《彌賽亞》兩曲、孟德爾頌《聖保羅》與《以利亞》各一曲、布拉姆斯 op. 91 兩首（中提琴助奏）、Massenet〈Élégie〉、拉赫瑪尼諾夫 op. 4/3，以及第 12 軌起八首美國歌謠與黑人靈歌（〈Carry Me Back to Old Virginny〉〈My Old Kentucky Home〉〈My Soul's Been Anchored in the Lord〉〈No Hidin' Place〉等）。",
+    "src": "https://musicbrainz.org/release/9442082b-5899-4d39-b157-ab1cac4314a0"
+   },
+   {
+    "f": "Discogs release 6122551 是同一張 Pearl GEMM CD 9069，**年份記 1993**（released 欄也是 1993）、國別德國、格式標 CD／Compilation，十九軌曲序與 MB 相同。",
+    "src": "https://www.discogs.com/release/6122551"
+   },
+   {
+    "f": "英文維基〈Marian Anderson〉：1957 年她為艾森豪總統就職典禮獻唱，並以美國國務院與 ANTA 的親善大使身分巡演印度與遠東，「十二週內走了三萬五千英里、開了二十四場音樂會」；同年她獲任命為聯合國人權委員會代表，1958 年正式成為聯合國代表。",
+    "src": "https://en.wikipedia.org/wiki/Marian_Anderson"
+   },
+   {
+    "f": "同一條目記她 1930 年代在歐洲的經歷：1930 年赴斯堪的那維亞、結識芬蘭鋼琴家 Kosti Vehanen（此後多年的固定伴奏），並經他認識西貝流士；1933 年在倫敦 Wigmore Hall 歐洲首演；1935 年薩爾茲堡巡演時**托斯卡尼尼**對她說她的嗓子是「一百年才聽得到一次」。",
+    "src": "https://en.wikipedia.org/wiki/Marian_Anderson"
+   },
+   {
+    "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）都有一筆同名品項 collectionId 1580339727「Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\") [2021 Remastered Version]」，掛名「Marian Anderson & Edward R. Murrow」、releaseDate 1957-12-20、copyright ℗ 1957 Sony Music Entertainment、trackCount 30。它的內容是 CBS《See It Now》那集紀錄片的聲軌——旁白、訪談、各地實況片段（在漢城、曼谷、西貢、吉隆坡、孟買、新德里的演唱與談話），三十軌裡有半數是說話而不是歌，**與 Pearl 那張十九軌錄音室選輯毫無重疊**。",
+    "src": "https://music.apple.com/gb/album/1580339727"
+   }
+  ],
+  "hookCandidates": [
+   "盤名借自 1957 年那集電視紀錄片，碟裡裝的卻是她更早的錄音室歌唱——從狄多的悲歌到〈No Hidin' Place〉",
+   "同一張碟上，巴哈的〈Es ist vollbracht〉與〈My Soul's Been Anchored in the Lord〉排在一起"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：這是 Pearl 廠牌 1990 年代的歷史錄音復刻 CD，十九軌從普賽爾、A. Scarlatti、巴哈、韓德爾、孟德爾頌、布拉姆斯（op. 91 兩首帶中提琴助奏）、Massenet、拉赫瑪尼諾夫，一路走到八首美國歌謠與靈歌；最長〈Gestillte Sehnsucht〉7 分 23 秒，最短〈No Hidin' Place〉53 秒。",
+  "keyTracks": [
+   "When I am laid in earth",
+   "He Was Despised",
+   "Gestillte Sehnsucht",
+   "My Soul's Been Anchored in the Lord"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1995 不是錄音年，也不是那部同名紀錄片的年份，而是 Pearl 這張復刻 CD 的 MB 記載年。三個數字要並列**：(1) MB first-release-date **1995-02-03**（Pearl GEMM CD 9069）；(2) Discogs 同一張 CD 記 **1993**——兩個資料庫各記一個具體年份、互相矛盾，依裁定 141／c-98 第 10 條**維持卡單值 1995、行文不得正面斷言發行年**；(3) **原始錄音年查不到逐軌數字**：Pearl 復刻的是 Anderson 在 RCA Victor 時期（1930–1950 年代）的錄音，MB 與 Discogs 兩邊都沒有給每一軌的錄音年，**行文不得寫任何一個錄音年份**。另外要與 1957 年切開：紀錄片《The Lady from Philadelphia》是 1957 年 CBS《See It Now》那一集（Apple 那筆同名品項的 releaseDate 是 1957-12-20），**本張不是它**。",
+  "notes": "**試聽維持 unavailable，而且這一張有陷阱**：Apple 七店面都有 **1580339727「Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\")」**，盤名幾乎相同、掛名也含 Marian Anderson，**但那是 1957 年電視紀錄片的聲軌（30 軌，含 Edward R. Murrow 的旁白與各地訪談），與本卡釘的 Pearl 十九軌錄音室選輯零重疊，絕對不得取用**。這是「同名別碟」在本組裡最嚴重的一筆——盤名、掛名、藝人三道閘全過得了。｜逐店面覆核：gb／us／de／fr／at／it／jp 七個店面的 Marian Anderson 目錄（各 35–87 筆）全掃過，另外用 `search?term=Marian Anderson Lady from Philadelphia` 七店面各查一次，**Pearl／GEMM 的品項一筆都沒有**；Pearl 是專做 78 轉復刻的小廠，整個廠牌在 Apple 上幾乎不存在。判 unavailable 是對的。｜卡片盤名照抄 MB 標題（策展層第 2 條的第 1 種情況），沒有作曲家前綴，這也是它會被同名紀錄片碟撞上的原因，上架時要在備註寫死 collectionId 不得自動配。｜**擋下策展層可能的說法**：這張與 1957 年的亞洲親善巡演、與那集紀錄片**只有盤名的關係**，碟裡沒有任何一軌來自那次巡演；行文不得把兩件事寫成同一件。"
+ },
+ {
+  "key": "desc2:Enrico Caruso|The Caruso Edition, Volume I: 1902-1908",
+  "artist": "Enrico Caruso",
+  "album": "The Caruso Edition, Volume I: 1902-1908",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 269ccdeb 的欄位：title「The Caruso Edition, Volume I: 1902–1908」（用的是連接號 U+2013，卡片用 ASCII 連字號）、artist-credit「Enrico Caruso」、first-release-date 1990、primary-type Album、**secondary-types [Compilation]**、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/269ccdeb-3e44-3782-b764-538a72e55e8c"
+   },
+   {
+    "f": "唯一的 release 5a750044：1990 年英國、Pearl，系列編號 EVC I，三張 CD 各自的編號是 GEMM CD 9424／9425／9426，軌數 27＋24＋19＝**70 軌**。第一片開頭兩軌是《Germania》的〈Studenti, udite〉與〈Ah, vieni qui… No, non chiuder gli occhi〉，最後一軌是《鄉間騎士》的〈O Lola (Siciliana)〉；第三片從《阿依達》〈Celeste Aida〉起，最後是《弄臣》四重唱〈Bella figlia dell'amore〉。",
+    "src": "https://musicbrainz.org/release/5a750044-ffa9-4fb1-a0ae-2e3a6bf31dd4"
+   },
+   {
+    "f": "Discogs release 4603987 是同一套 Pearl EVC 1 三 CD 盒，**年份記 1999-01-28**、格式 CD ×3／Compilation，曲目列 77 條。",
+    "src": "https://www.discogs.com/release/4603987"
+   },
+   {
+    "f": "英文維基〈Enrico Caruso〉：他 1873 年 2 月 25 日生、1921 年 8 月 2 日歿，「1902 到 1920 年間留下約 250 張商業發行的錄音」，被稱為第一位國際性的唱片明星。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "同一條目：**1902 年 3 月 11 日**他在史卡拉歌劇院唱 Franchetti《Germania》的世界首演、由托斯卡尼尼指揮，創了男主角 Frederico Loewe 這個角色；**一個月後的 4 月 11 日**，英國 Gramophone Company 以一百英鎊的酬勞請他在米蘭錄下第一批唱片，「這十張唱片很快成為暢銷品」，把二十九歲的 Caruso 的名聲帶進英語世界。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "同一條目：1903 年 11 月 23 日大都會歌劇院首演；**1904 年 2 月 1 日在卡內基廳錄下他在美國的第一批錄音**，此後與 Victor Talking Machine Company 的合作維持終身；1904 至 1920 年間他為 Victor 錄下兩百六十多份留存至今的錄音。條目並寫，同代不少歌手把留聲機當玩具而拒絕錄音，是看到 Caruso 從錄音得到的收益之後才改變態度。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）的 Enrico Caruso 目錄（各 141–200 筆）與 `search?term=Caruso Edition Pearl`／`The Caruso Edition Volume I` 逐店面查詢，**Pearl／EVC 這套一筆都沒有**。店面上覆蓋同一段年份的是完全另一套：Naxos「Enrico Caruso: Complete Recordings」Vol. 1–10（例如 Vol. 2「Historical Recordings 1903-1906」24 軌、Vol. 3「1906-1908」19 軌），廠牌、分卷方式與轉錄工程都與 Pearl 那套不同。",
+    "src": "https://music.apple.com/gb/artist/300803"
+   }
+  ],
+  "hookCandidates": [
+   "1902 年 3 月他在史卡拉唱了《Germania》的世界首演，四月就進了米蘭的旅館房間錄音——這套盒子的第一、二軌就是《Germania》",
+   "十張唱片、一百英鎊：留聲機還被同行當成玩具的時候，他先把它當成了工作"
+  ],
+  "sound": "沒有具名來源談這套的音色，因此不寫聲響形容。可寫的形制有據：這是 Pearl 廠牌 1990 年代的 78 轉復刻，三張 CD 共 70 軌，收 1902 到 1908 年的錄音；單軌多在兩到四分鐘之間（78 轉單面的長度上限），最短〈Studenti, udite〉1 分 55 秒。同一首歌他常錄過不只一次——〈E lucevan le stelle〉在第一片第 24 軌與第二片第 2 軌各出現一次，是兩次不同的錄音。",
+  "keyTracks": [
+   "Germania: Studenti, udite",
+   "Rigoletto: Questa o quella",
+   "Aida: Celeste Aida",
+   "L'elisir d'amore: Una furtiva lagrima"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1990 是復刻盒的年份，不是錄音年——而且連復刻年都有兩說。三個數字並列**：(1) **原始錄音年 1902–1908**，這一段直接寫在盤名裡，來源是曲目本身與英文維基（1902-04-11 米蘭第一批十張、1904-02-01 卡內基廳第一批美國錄音）；(2) MB first-release-date **1990**（Pearl EVC I／GEMM CD 9424-9426）；(3) Discogs release 4603987 記 **1999-01-28**。MB 與 Discogs 各記一個具體年份、互相矛盾，依裁定 141／c-98 第 10 條**維持卡單值 1990、行文不得正面斷言復刻盤的發行年**；但**錄音年段 1902–1908 是可以寫的**，它有盤名與維基兩重依據。",
+  "notes": "**試聽維持 unavailable，覆核結論是店面上真的沒有這一套。** 七店面（gb／us／de／fr／at／it／jp）的藝人目錄各 141–200 筆全掃，另加 `search?term=` 兩組字串逐店面查，Pearl／EVC／GEMM 一筆未見；Pearl 是專做 78 轉復刻的英國小廠，整個廠牌在 Apple 上幾乎不存在（本組另一張 Marian Anderson 的 Pearl CD 同樣落空，兩張同因）。｜**不得拿 Naxos 那套頂替**：Apple 上的「Enrico Caruso: Complete Recordings, Vol. 1–10」（℗ 1997–2003 Naxos，Ward Marston 轉錄）覆蓋的年份與本套重疊，但**分卷方式完全不同**（Naxos Vol. 2＝1903–1906、Vol. 3＝1906–1908，本套一卷就吃掉 1902–1908），依 c-97 第 10 條屬「換了內容」，不是同一張碟。｜軌數兩說：MB 記 70 軌（27＋24＋19），Discogs 同一套記 77 條曲目。**依裁定 141，行文不得寫這套有幾首**。｜策展層第 1 條已定：本張 secondary-types 帶 Compilation，但 `releaseType` 仍填 Album、不填例外欄位。｜盤名的破折號：MB 用 U+2013、卡片用 ASCII 連字號，字串比對不相等，回查 MB 要用 MB 那一種。｜**時序主張要擋**：維基寫的是「1902 年 4 月 11 日的十張唱片」與「約 250 份商業錄音」，**沒有**說這是史上第一批歌劇錄音或第一張暢銷唱片；行文不得寫「第一次有人把歌劇錄進唱片」。可以寫的是維基原話：同代歌手把留聲機當玩具、是看到他的收益才跟進。"
+ },
+ {
+  "key": "desc2:Joan Sutherland|Operatic Arias",
+  "artist": "Joan Sutherland",
+  "album": "Operatic Arias",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8e6ddbb7 的欄位：title「Operatic Arias」、artist-credit「Gaetano Donizetti, Giuseppe Verdi; Joan Sutherland, Orchestre de la Société des Concerts du Conservatoire, Nello Santi」、first-release-date **1959-07**、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/8e6ddbb7-f123-4948-8051-1fe696f6adec"
+   },
+   {
+    "f": "唯一的 release abf7719a：1959 年 7 月英國、Decca SXL 2159、12 吋黑膠、**5 軌**：1.《拉美莫爾的露琪亞》〈Ancor non giunse … Regnava nel silenzio〉13:12；2.《埃爾納尼》〈Surta è la notte … Ernani! Ernani involami〉8:04；3.《西西里晚禱》〈Mercè, dilette amiche〉（Bolero）3:32；4.《拉美莫爾的琳達》〈Ah! tardai troppo … O luce di quest'anima〉6:17；5.《拉美莫爾的露琪亞》〈Il dolce suono … Ardon gl'incensi〉（瘋狂場景）16:15。",
+    "src": "https://musicbrainz.org/release/abf7719a-57f9-4dd8-a0a2-51855859cb9d"
+   },
+   {
+    "f": "英文維基〈Joan Sutherland〉的錄音段落寫：2011 年 Decca 把她的獨唱錄音重發成 23 CD 的《Complete Decca Studio Recitals》（Decca 4783243），其中第一項就列為「**Operatic Arias (1959)**」。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "同一條目：1959 年她獲邀在皇家歌劇院唱《拉美莫爾的露琪亞》，Tullio Serafin 指揮、Franco Zeffirelli 導演，那次是她的突破；同年「就在那次 Covent Garden 的露琪亞之後」她動了一次大的鼻竇手術，條目並寫「她第一次商業錄下露琪亞的第一場與最後一場，聽得出嗓音與咬字與手術前一樣清楚」。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "同一條目：她 1954 年 10 月 16 日與 Richard Bonynge 結婚，是 Bonynge 逐步說服她放下華格納、改走美聲路線；1960 年錄《The Art of the Prima Donna》雙 LP，該片 1962 年得葛萊美最佳古典演唱獎；1961 年 11 月 26 日在大都會歌劇院首演，唱的也是露琪亞。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452135704**「Joan Sutherland: Operatic Recital」，掛名「Dame Joan Sutherland, Nello Santi & Orchestre de la Société des Concerts du Conservatoire」，releaseDate 1959-01-01，copyright「℗ 1959 Decca Music Group Limited」，trackCount 5，五軌全部有 previewUrl。五軌與 SXL 2159 原盤逐軌同名同序、逐軌長度相差 2–5 秒（13:09／8:01／3:29／6:14／16:10）。",
+    "src": "https://music.apple.com/gb/album/1452135704"
+   },
+   {
+    "f": "Apple 另有兩筆同錄音的第三方再發：**1111699219「Finest Operatic Arias」**（掛名 Dame Joan Sutherland & The Paris Consevatoire Orchestra，releaseDate 2016-04-01，copyright ℗ 2016 Black Cat Productions，5 軌，六店面 gb／de／fr／at／it／jp 有、us 無）——曲目與長度同樣逐軌對得上 SXL 2159；以及 **418447103「Joan Sutherland performs Operatic Arias - The Debut Recital」**（℗ 2010 Regis Records，7 軌 ＝ 原盤五軌＋韓德爾《Alcina》兩曲）。",
+    "src": "https://music.apple.com/gb/album/1111699219"
+   }
+  ],
+  "hookCandidates": [
+   "五首詠嘆調、四十七分鐘：其中兩首都出自《露琪亞》，一首是她登場、一首是她發瘋",
+   "1959 年她在 Covent Garden 唱完露琪亞就進了鼻竇手術房，這張碟留下的是手術那一年的嗓子"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：女高音 Joan Sutherland、Nello Santi 指揮巴黎音樂院管弦樂團（Orchestre de la Société des Concerts du Conservatoire），1959 年 Decca 錄音。五軌長短懸殊：最短的〈Mercè, dilette amiche〉波麗露 3 分半，最長的瘋狂場景 16 分 15 秒，兩首露琪亞加起來就佔掉全片一半以上。",
+  "keyTracks": [
+   "Lucia di Lammermoor: Regnava nel silenzio",
+   "Ernani: Ernani! Ernani involami",
+   "I vespri siciliani: Mercè, dilette amiche",
+   "Lucia di Lammermoor: Ardon gl'incensi"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1959。MB first-release-date 1959-07（Decca SXL 2159 英國原盤）、英文維基《Complete Decca Studio Recitals》清單直接寫「Operatic Arias (1959)」、Apple 那筆 Decca 官方品項的 copyright ℗ 1959，三方一致。**錄音年與發行年同為 1959，沒有落差**；Apple 上那筆 appleYear 2016 的品項是第三方再發，不是另一說（見 notes）。",
+  "notes": "**ready 覆核：配對的碟是對的，但配到的品項要換。** 探測層記的 gb 1111699219「Finest Operatic Arias」（appleTitle 不同、只有 5 軌、appleYear 2016）**經逐軌比對確認就是 1959 年 Decca SXL 2159 那次錄音**——五首詠嘆調同名同序，長度 786／480／213／375／968 秒對上 MB 的 792／484／212／377／975 秒，掛名的「The Paris Consevatoire Orchestra」（Apple 自己拼錯了 Conservatoire）就是 MB 的 Orchestre de la Société des Concerts du Conservatoire。**所以它不是後來的精選，appleYear 2016 是再發年不是錄音年（裁定 77：Apple 年份只能當訊號）。**｜**但正解應改成 Apple 1452135704「Joan Sutherland: Operatic Recital」**：同一份錄音、同樣 5 軌全有 previewUrl、**七個店面全有（1111699219 的 us 店面沒有）**，而且 copyright 是 **℗ 1959 Decca Music Group Limited**——版權方本人的品項，而 1111699219 是 ℗ 2016 Black Cat Productions 這種第三方復刻（c-99 第 6 條要看再發授權狀態）。建議把探測檔改成 gb 1452135704。｜第三個候選 418447103（℗ 2010 Regis，7 軌）是原盤五軌**加上**韓德爾《Alcina》兩曲的加曲版，不取。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Regnava nel silenzio〉正是原盤第 1 軌。｜掛名：MB 的 artist-credit 把兩位作曲家排在最前（Donizetti, Verdi; Sutherland, ...），卡片取獨唱者，合策展層第 3 條。｜**擋下策展層可能的說法**：維基寫「她第一次商業錄下露琪亞的第一場與最後一場」時**沒有點名是哪一張唱片**，行文不得直接把那句安在本張上；同樣，「La Stupenda」這個稱號維基繫在 1960 年威尼斯的《Alcina》之後，不是 1959 年這張。"
+ },
+ {
+  "key": "desc2:Joan Sutherland|Bellini: La sonnambula (1962)",
+  "artist": "Joan Sutherland",
+  "album": "Bellini: La sonnambula (1962)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 21e3dee6 的欄位：title「La sonnambula」、artist-credit「Vincenzo Bellini; Joan Sutherland, Nicola Monti, Fernando Corena, Orchestra e Coro del Maggio Musicale Fiorentino, Richard Bonynge」、first-release-date 1963、**primary-type Album、secondary-types 空**（歌劇全曲盤在 MB 沒有另外的型別標記，依裁定 167 照實記）、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/21e3dee6-efd0-4c4f-a85f-24d618415ec7"
+   },
+   {
+    "f": "兩筆 release：8d4b3b78 是 1963 年那筆，**MB 上只有年份，國別、status、廠牌、載體、曲目全部空白**；89d1f3a2 是 1996 年歐洲盤 Decca Classics 448 966-2，兩張 CD、18＋15＝33 軌，曲目從第一幕〈Viva! viva! viva! viva! Amina!〉排到第二幕〈Ah! non giunge uman pensiero〉。",
+    "src": "https://musicbrainz.org/release/89d1f3a2-001c-436a-84af-cec78d173529"
+   },
+   {
+    "f": "英文維基〈Joan Sutherland〉：她 1954 年與 Richard Bonynge 結婚，是 Bonynge 說服她從華格納轉向美聲曲目；1959 年 Covent Garden 的《露琪亞》是她的突破；1960 年在威尼斯鳳凰劇院唱《Alcina》之後，世界各地的報紙開始以「La Stupenda」稱她。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452382824**「Bellini: La Sonnambula」，掛名「Coro del Maggio Musicale Fiorentino, Dame Joan Sutherland, Orchestra del Maggio Musicale Fiorentino & Richard Bonynge」，releaseDate 1962-01-01，copyright「℗ 1962 Decca Music Group Limited」，trackCount 33（兩張碟 18＋15），**33 軌全部有 previewUrl**，逐軌與 MB 那筆 1996 年 Decca CD 同名同序、長度逐軌相符（第 1 軌 141 vs 142 秒、第 2 軌 111 vs 111 秒、最後一軌 249 vs MB 同軌）。",
+    "src": "https://music.apple.com/gb/album/1452382824"
+   },
+   {
+    "f": "Apple 上另有一筆同曲同歌者的錄音必須區分：collectionId 1452561108「Bellini: La sonnambula」，掛名「Dame Joan Sutherland, Luciano Pavarotti, National Philharmonic Orchestra, Nicolai Ghiaurov & Richard Bonynge」，releaseDate 1982-01-01、℗ 1982 Decca、33 軌——**歌者與指揮部分相同（Sutherland＋Bonynge），樂團與其餘班底完全不同**，是二十年後的重錄。",
+    "src": "https://music.apple.com/gb/album/1452561108"
+   },
+   {
+    "f": "Apple 另有 1452460400「Bellini: Collectors Edition - Norma, I Puritani, La sonnambula & Beatrice di Tenda」（℗ 2001 Decca，128 軌）——四部歌劇的合盒，會同時涵蓋本張，不得取用。",
+    "src": "https://music.apple.com/gb/album/1452460400"
+   }
+  ],
+  "hookCandidates": [
+   "同一位女高音、同一位指揮，隔了二十年把《夢遊女》再錄一次——分辨這兩張唯一的辦法是看樂團",
+   "翡冷翠五月音樂節的樂團與合唱團，1962 年的 Decca 錄音室：兩張碟三十三段，最長的一段十二分鐘"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Joan Sutherland 唱 Amina、Nicola Monti 唱 Elvino、Fernando Corena 唱 Rodolfo，Richard Bonynge 指揮翡冷翠五月音樂節管弦樂團與合唱團，Decca 1962 年錄音。全劇分兩張碟 18＋15 段，單段長度從一分多鐘到十二分鐘不等（第二幕〈Oh! se una volta sol rivederlo io potessi〉12:16 最長）。",
+  "keyTracks": [
+   "Care compagne, e voi, tenere amici",
+   "Prendi: l'anel ti dono",
+   "Oh! se una volta sol rivederlo io potessi",
+   "Ah! non giunge uman pensiero"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1963 與盤名括號裡的 1962 是兩個不同的數字，兩個都有據**：(1) **錄音年 1962**——Apple 那筆 Decca 官方品項的 copyright 是 ℗ 1962，盤名括號也照策展層第 6 條寫成 (1962)；(2) **首度發行年 1963**——MB first-release-date 1963，該 release-group 底下有一筆 1963 的 release（雖然 MB 只填了年份、其餘欄位全空）。**兩個數字不矛盾，是錄音年與發行年的正常落差**，卡單取 1963 沒有問題；行文若要提年份，寫「1962 年的錄音」比寫發行年安全。對照組 1982 年的 Pavarotti 版是完全另一次錄音，不是本張的另一說。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452382824**，gb／us／de／fr／at／it／jp 七店面全有，33 軌全有 previewUrl，逐軌與 MB 1996 年 Decca 448 966-2 同名同序、長度相符。**探測層落空的原因是盤名**——卡片作《Bellini: La sonnambula (1962)》（策展層為了與池中 Callas 1957 版分辨而加的錄音年括號），Apple 作《Bellini: La Sonnambula》，多出來的「(1962)」括號讓標題比對過不了。｜**策展層第 7 條點名的假陽性已實查確認**：1452561108 是 1982 年 Pavarotti／National Philharmonic 版，**Sutherland 與 Bonynge 兩個名字完全相同**，只有樂團與其餘班底不同、℗ 年不同——**靠掛名與盤名分不出來，上架時必須鎖 collectionId**。另外 1452460400 是四部歌劇的 Collectors Edition 合盒（128 軌），同樣不得取用。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Viva! viva! viva! viva! Amina!〉正是原盤開頭。｜掛名：MB 的 artist-credit 把作曲家排最前、指揮排最後，卡片取領銜歌者，合策展層第 3 條；**Apple 的 artistName 把合唱團排在最前**，藝人閘若比對 results[0] 的 artistName 會被合唱團擋掉，這也是探測層可能落空的第二層原因。｜**歌劇全曲盤的型態照實記**（裁定 167）：MB 這一筆 primary-type Album、secondary-types 空，沒有 Live 也沒有 Compilation。"
+ },
+ {
+  "key": "desc2:Fritz Wunderlich|Salzburger Liederabend",
+  "artist": "Fritz Wunderlich",
+  "album": "Salzburger Liederabend",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d3efa5d4 的欄位：title「Fritz Wunderlich Salzburger Liederabend」（MB 標題把歌手名串在盤名前面）、artist-credit「Fritz Wunderlich」、first-release-date 1984、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/d3efa5d4-8ca3-4ada-9be9-2966a5b952a6"
+   },
+   {
+    "f": "唯一的 release 220d3960：1984 年、Acanta 043529、CD、**29 軌**，是一場獨唱會的完整節目：貝多芬五首（〈Adelaide〉op. 46、〈Maigesang〉op. 52/4、〈Der Wachtelschlag〉WoO 129、〈Resignation〉WoO 149、〈Der Kuss〉op. 128）、舒伯特六首（〈Der Einsame〉D. 800、〈Nachtstück〉D. 672、〈An die Laute〉D. 905、〈Lied eines Schiffers an die Dioskuren〉D. 360、〈An Sylvia〉D. 891、〈Der Musensohn〉D. 764）、舒曼《詩人之戀》op. 48 全十六首，最後兩首安可是舒伯特〈Im Abendrot〉D. 799 與〈Ungeduld〉（《美麗的磨坊少女》第七首）。",
+    "src": "https://musicbrainz.org/release/220d3960-5ab6-4296-8fb2-132e45ffad0e"
+   },
+   {
+    "f": "Discogs release 14813186（Acanta 23 529，1984 年德國黑膠）的備註直接寫出這場音樂會的日期與地點：「Liederabend vom **19. August 1965** im **Mozarteum, Salzburg**」，鋼琴 Hubert Giesen、男高音 Fritz Wunderlich，內頁解說 Claus-Dieter Schaumkell；封底另標「Deutsche Pressung」。",
+    "src": "https://www.discogs.com/release/14813186"
+   },
+   {
+    "f": "同一場音樂會另有 Orfeo D'Or 的官方薩爾茲堡音樂節版本：Discogs release 15198679（Orfeo D'Or C 432 961 B，1996），備註寫「Live recording. Salzburger Festspiele **19. August 1965**, Mozarteum, **6. Liederabend**」——與 Acanta 那張互相佐證同一場。",
+    "src": "https://www.discogs.com/release/15198679"
+   },
+   {
+    "f": "德文維基〈Fritz Wunderlich〉：1930 年 9 月 26 日生於 Kusel，**1966 年 9 月 17 日歿於海德堡**——他在 Oberderdingen 一戶人家的樓梯上因鞋帶沒繫好摔倒、顱骨骨折，隔天在海德堡的醫院過世，距他三十六歲生日只差九天；當時他正要在 **1966 年 10 月 8 日**於紐約大都會歌劇院首演。條目並記他**自 1959 年起是薩爾茲堡音樂節的常客**（1959 年由 Karl Böhm 邀請首演，唱理查‧史特勞斯《沉默的女人》），1963 年起到過世都是維也納國家歌劇院的固定團員。",
+    "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+   },
+   {
+    "f": "同一條目的唱片清單裡另列一張《Der letzte Liederabend》（CD，Deutsche Grammophon，2003）——那是另一場音樂會，不是本張。",
+    "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+   }
+  ],
+  "hookCandidates": [
+   "1965 年 8 月 19 日晚上，薩爾茲堡莫札特音樂院大廳：貝多芬五首、舒伯特六首，然後整套《詩人之戀》",
+   "節目單走完，他又唱了〈Im Abendrot〉與〈Ungeduld〉才放觀眾走"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：這是實況錄音（1965-08-19 薩爾茲堡莫札特音樂院），台上只有男高音 Fritz Wunderlich 與鋼琴 Hubert Giesen 兩人；二十九軌，《詩人之戀》十六首多在一分鐘上下（最短〈Die Rose, die Lilie, die Taube〉34 秒），最長的是開場的〈Adelaide〉6 分 36 秒。",
+  "keyTracks": [
+   "Adelaide",
+   "Der Musensohn",
+   "Im wunderschönen Monat Mai",
+   "Die alten, bösen Lieder",
+   "Im Abendrot"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1984 是 Acanta 復刻的發行年，不是錄音年。三個數字並列**：(1) **原始錄音年（且有確切日期）1965-08-19**，薩爾茲堡莫札特音樂院、音樂節第六場 Liederabend——Acanta 黑膠與 Orfeo D'Or CD 兩筆 Discogs 條目的備註**各自直記**同一個日期，是本組二十張裡少數有確切日期可當敘事錨點的一張（裁定 18 建議的做法）；(2) MB first-release-date **1984**（Acanta 043529），與卡單一致；(3) Discogs 上的 Acanta 黑膠（23 529 與 40.23 529 兩個編號）也記 1984，另有 2003 年 Allegria／TIM 的再發（221097-205）。**卡單值維持 1984，但行文應該用 1965-08-19 這個確切日期當錨點，不要在發行年上打轉。**",
+  "notes": "**試聽維持 unavailable。** 七店面（gb／us／de／fr／at／it／jp）的 Fritz Wunderlich 目錄各 95–138 筆全掃（合計 156 個不重複品項），另加 `search?term=` 三組字串（Salzburger Liederabend／Salzburg 1965 Giesen／Acanta）逐店面查，**Acanta 與 Orfeo D'Or 這場 1965-08-19 的實況一筆都沒有**。｜**這一張有兩個很危險的假陽性，都是「同一套曲目、不同的那一晚」**：(1) Apple **1452675034「Fritz Wunderlich - The Last Recital」**（℗ 2003 Universal／DG，31 軌，六店面有）——曲目與本張高度重疊（同樣是 Adelaide／Resignation／Der Wachtelschlag／Mailied／Der Kuss ＋ 同六首舒伯特 ＋《詩人之戀》全十六首），**但曲序不同**（本張是 Adelaide→Maigesang→Der Wachtelschlag→Resignation，那張是 Adelaide→Resignation→Der Wachtelschlag→Mailied）、**逐軌長度差 5–30 秒**（〈Adelaide〉396 vs 368 秒）、**安可完全不同**（本張兩首：Im Abendrot、Ungeduld；那張四首：Die Lotusblume、Ungeduld、Ich trage meine Minne、An die Musik）。**是另一場音樂會，不得取用。** (2) Apple **1452391192「Schumann, Beethoven & Schubert: Lieder」**（℗ 1997 DG，30 軌）是同一對搭檔的 DG 錄音室版，**開頭就直接進《詩人之戀》**、沒有貝多芬開場，也不是本張。｜**時序主張要特別小心（派工點名的兩位早逝者之一）**：Wunderlich 1966-09-17 過世，這場是他過世前十三個月的演出，**但它不是「生前最後一場獨唱會」**——DG 那張《Der letzte Liederabend》才是被冠上「最後」之名的那一場（德文維基唱片清單有列）。**行文絕對不得把本張寫成「最後一場」「生前最後的錄音」。** 可以寫的是有來源的兩件事：他自 1959 年起就是薩爾茲堡的常客；以及他原訂 1966 年 10 月 8 日的大都會首演沒能成行。｜盤名：MB 標題把歌手名串在前面作「Fritz Wunderlich Salzburger Liederabend」，卡片取後半，合策展層第 2 條第 1 種情況。"
+ },
+ {
+  "key": "desc2:Alban Berg Quartett|Beethoven: The Late String Quartets",
+  "artist": "Alban Berg Quartett",
+  "album": "Beethoven: The Late String Quartets",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 76a0e0f3 的欄位：title「The Late String Quartets (Die Späten Streichquartette)」、artist-credit「Beethoven; Alban Berg Quartett」、first-release-date 1984、primary-type Album、secondary-types 空（**沒有 Live 標記**）、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/76a0e0f3-6e62-4932-b2e1-f7aeb1c757e9"
+   },
+   {
+    "f": "兩筆 release 都是 1984 年、都是四片裝、軌數同為 8＋7＋7＋5＝27：304bb990 是英國 CD 版 EMI Angel Digital CDS 7 47135 8，a5bcf071 是德國黑膠版 His Master's Voice EX 157 27 0114 3。四片的分配是——第一片 op. 127（四樂章）＋op. 135（四樂章）；第二片 op. 130，**大賦格 op. 133 放在第 6 軌、當成 op. 130 原本的終樂章，後面第 7 軌才是後來改寫的 Finale**；第三片 op. 131（七樂章）；第四片 op. 132（五樂章）。",
+    "src": "https://musicbrainz.org/release/304bb990-67ba-4cb9-82e6-1f7f6c5fe581"
+   },
+   {
+    "f": "英文維基〈Alban Berg Quartett〉：1970 年由四位維也納音樂學院的年輕教授組成，1971 年秋天在維也納音樂廳（Konzerthaus）首演；作曲家 Alban Berg 的遺孀 Helene 聽過一場私人音樂會後才同意他們用她丈夫的名字。團體 1970–2008 年活動，第一小提琴 Günter Pichler、大提琴 Valentin Erben 從頭到尾未換人。",
+    "src": "https://en.wikipedia.org/wiki/Alban_Berg_Quartett"
+   },
+   {
+    "f": "同一條目的錄音段落把兩套貝多芬講得很清楚：EMI 的貝多芬弦樂四重奏全集「賣了超過一百萬套」；**EMI 發行他們 1985 年卡內基廳首演的實況之後，這個四重奏在存在的最後二十年偏好錄實況**，其中包括「**繼 1970 年代末到 1980 年代初的原始錄音室全集之後、1989 年維也納藝術節期間在音樂廳錄的一套新的貝多芬弦樂四重奏全集**，以 CD、錄影帶與 DVD 發行」。",
+    "src": "https://en.wikipedia.org/wiki/Alban_Berg_Quartett"
+   },
+   {
+    "f": "Apple Music 上盤名與本卡最接近的一筆是 collectionId **726264114「Beethoven: The Late String Quartets (Live at Konzerthaus, Wien, 1989)」**（℗ 2005 Parlophone／Warner，六店面 gb／us／de／fr／at／it，**trackCount 27，與本卡的錄音室四片盒完全相同**）。但它是 1989 年的實況：**二十七軌每一軌的軌名都帶「(Live at Konzerthaus, Wien, 1989)」**，曲序也不同（它是 op. 127 接 op. 130，錄音室盒是 op. 127＋op. 135 同片），逐軌長度差 5–30 秒（op. 127 第一樂章 407 vs 392 秒、第二樂章 964 vs 988 秒）。",
+    "src": "https://music.apple.com/gb/album/726264114"
+   },
+   {
+    "f": "1982–83 年那套錄音室版在 Apple 上**只以拆開的單片存在、沒有一筆等於本卡這個四片盒**：1500020421「Beethoven: String Quartets, Op. 127 & 131」（℗ 1984，11 軌，七店面）、1498965190「Beethoven: String Quartets, Op. 95 'Serioso', 130 & 133」（℗ 1996，11 軌）、693071477「Beethoven: Streichquartette Nr. 12, Op. 127 & Nr. 16, Op. 135」（8 軌）、726176305／695514767「Beethoven: String Quartets Nos. 14 & 15」（℗ 1997，12 軌）；另有兩個會吃掉本卡的大盒：1456431099「Beethoven: The Complete String Quartets」（℗ 1979-1984，71 軌）與 734914335 同名（℗ 2013，71 軌）。",
+    "src": "https://music.apple.com/gb/album/1500020421"
+   }
+  ],
+  "hookCandidates": [
+   "Berg 的遺孀先聽過一場私人音樂會，才點頭讓他們用她丈夫的名字",
+   "第二片上，大賦格被放回 op. 130 的第六軌——貝多芬原本寫的那個結尾，改寫過的 Finale 排在它後面"
+  ],
+  "sound": "沒有具名來源談這套的音色，因此不寫聲響形容。可寫的形制有據：四片 CD／黑膠、27 軌，收貝多芬晚期五首四重奏（op. 127、130、131、132、135）加大賦格 op. 133；單軌從 op. 130 第二樂章 Presto 的 1 分 53 秒到 op. 127 慢板的 16 分 28 秒，大賦格 15 分 31 秒。錄音室錄音，MB 那兩筆都沒有 Live 標記。",
+  "keyTracks": [
+   "op. 127: II. Adagio ma non troppo, molto cantabile",
+   "op. 130: V. Cavatina",
+   "Große Fuge op. 133",
+   "op. 131: I. Adagio ma non troppo e molto espressivo"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1984。MB first-release-date 1984，轄下兩筆 release（英國 CD EMI CDS 7 47135 8、德國黑膠 HMV EX 157 27 0114 3）都是 1984，一致。**錄音年與發行年略有落差但都在同一段**：英文維基把這套定位為「1970 年代末到 1980 年代初的原始錄音室全集」的一部分，策展層卡片寫 1982–83 年錄；**沒有來源給出逐曲的錄音日期，行文不得寫某一年錄的**。與它容易混淆的 1989 年維也納實況是另一次錄音、不是另一說（Apple 那筆 ℗ 2005）。",
+  "notes": "**試聽維持 unavailable，而且這一張是本組最危險的假陽性。** Apple 726264114「Beethoven: The Late String Quartets (**Live at Konzerthaus, Wien, 1989**)」**盤名前半完全相同、藝人完全相同、trackCount 27 與本卡的錄音室盒一模一樣**——軌數這一關過得了，只有括號裡的 Live 標記與逐軌的長度差能分辨。**這正是策展層第 7 條第 2 種形狀（同一團體同一曲目的二十年後重錄）在本組的實例，已實查證實。絕對不得取用。**｜1982–83 年那套錄音室版本身在 Apple 上是有的，但**被拆成配置完全不同的單片**（op. 127＋131 一片、op. 95＋130＋133 一片、op. 127＋135 一片、op. 131＋132 一片……），**沒有任何一筆等於本卡的四片盒**；能涵蓋全部內容的只有 71 軌的「The Complete String Quartets」大盒（1456431099／734914335），依策展層第 7 條第 3 種形狀屬刻意不釘。**結論：判 unavailable 正確，而且不是「沒查到」，是「查到了但沒有形狀對得上的品項」。**｜七店面（gb／us／de／fr／at／it／jp）的 Alban Berg Quartett 目錄各 81–100 筆全掃過。｜**軌數不得反推**（裁定 141）：27 軌這個數字是 MB 原盤的，不是從 Apple 推的；行文不得說「這套有二十七首」——二十七是樂章數，五首四重奏加一首大賦格才是作品數。｜**時序主張要擋**：維基沒有說這套錄音室全集是「第一套數位錄音的貝多芬全集」或類似的最高級說法，只寫 EMI 全集「賣了超過一百萬套」；行文要用最高級必須貼著這句。"
+ },
+ {
+  "key": "desc2:Emerson String Quartet|Bartók: The 6 String Quartets",
+  "artist": "Emerson String Quartet",
+  "album": "Bartók: The 6 String Quartets",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a681926d 的欄位：title「Die 6 Streichquartette」（德文標題）、artist-credit「Béla Bartók; Emerson String Quartet」、first-release-date 1988-02-11、primary-type Album、secondary-types 空、轄下 5 個 release。",
+    "src": "https://musicbrainz.org/release-group/a681926d-1326-3114-8484-9dfda5474ed3"
+   },
+   {
+    "f": "五筆 release **全部是兩張 CD、11＋12＝23 軌**：25f8f591（1988-02-11 US，DG 423 657-2／BMG Direct D 215521）、dbfbd5fa（1988 DE，DG 423 657-2）、6b516fc0（1988 DE，DG 477 6322）、2f121595（1998-11-02 GB，DG 423 657-2，標題作《6 String Quartets》）、bcba9718（2007-01-02 DE，DG 477 6322）。**曲序不是 1 到 6，而是奇數在前**：第一片是第一、三、五號，第二片是第二、四、六號。",
+    "src": "https://musicbrainz.org/release/dbfbd5fa-d303-4584-9ea2-8b6525fc999c"
+   },
+   {
+    "f": "英文維基〈Emerson String Quartet〉：1976 年在茱莉亞音樂院以學生組合起家，名字取自美國詩人與哲學家 Ralph Waldo Emerson；兩位創團小提琴手都師從 Oscar Shumsky，**兩人輪流擔任第一與第二小提琴，這個四重奏是最早這樣做的樂團之一**。",
+    "src": "https://en.wikipedia.org/wiki/Emerson_String_Quartet"
+   },
+   {
+    "f": "同一條目的獎項清單：**《Bartók: 6 String Quartets》1989 年同時拿下葛萊美「最佳室內樂演奏」與「最佳古典專輯」兩獎**；同一套錄音並得 1989 年《留聲機》雜誌室內樂類的年度唱片（Chamber Record of the Year 1989 – Bartók: String Quartets Nos. 1–6）。",
+    "src": "https://en.wikipedia.org/wiki/Emerson_String_Quartet"
+   },
+   {
+    "f": "同一條目的唱片清單把這套記成「Bartók: Complete String Quartets (**1990**) Deutsche Grammophon」——與 MB 的 1988-02-11 是不同的年份。",
+    "src": "https://en.wikipedia.org/wiki/Emerson_String_Quartet"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452569634「Bartók: The String Quartets」**，掛名 Emerson String Quartet，releaseDate 1988-01-01，copyright「℗ 1988 Deutsche Grammophon GmbH, Berlin」，trackCount 23（兩張碟 11＋12），**23 軌全部有 previewUrl**；曲序與 MB 逐軌相同（第一片第一、三、五號，第二片第二、四、六號），逐軌長度相符（第 1 軌 556 秒兩邊完全相同）。",
+    "src": "https://music.apple.com/gb/album/1452569634"
+   }
+  ],
+  "hookCandidates": [
+   "兩張碟不照 1 到 6 排：第一片放奇數號，第二片放偶數號",
+   "1989 年葛萊美的室內樂與古典專輯兩座獎，加上《留聲機》的年度唱片，都給了同一套六首四重奏"
+  ],
+  "sound": "沒有具名來源談這套的音色，因此不寫聲響形容。可寫的形制有據：兩張 CD 共 23 軌，收巴爾托克六首弦樂四重奏全部；第一片是第一、三、五號，第二片是第二、四、六號。單軌從第四號的〈Prestissimo, con sordino〉2 分 47 秒到第一號的第三樂章 11 分 28 秒；第六號的四個樂章樂章標記都以「Mesto」開頭。",
+  "keyTracks": [
+   "String Quartet No. 1, Sz. 40: I. Lento",
+   "String Quartet No. 4, Sz. 91: IV. Allegretto pizzicato",
+   "String Quartet No. 5, Sz. 102: III. Scherzo. Alla bulgarese",
+   "String Quartet No. 6, Sz. 114: IV. Mesto"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 有據，但另有一個 1990 的說法要並列**：(1) MB first-release-date **1988-02-11**（美國 DG 423 657-2），五筆 release 中有三筆是 1988；(2) Apple 那筆 DG 官方品項 releaseDate 1988-01-01、copyright ℗ 1988；(3) **英文維基〈Emerson String Quartet〉的唱片清單卻記「Bartók: Complete String Quartets (1990) Deutsche Grammophon」**。依裁定 141／c-98 第 10 條**維持卡單值 1988**（1988 那一側有 MB 三筆 release ＋ Apple ℗ 年兩重佐證，維基只是清單裡的一個括號），**但行文不得正面斷言發行年**。可用的確定錨點是獎項年：1989 年拿葛萊美與《留聲機》年度唱片。**錄音年沒有來源，不得寫。**",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452569634**，七店面全有，23 軌全有 previewUrl，逐軌與 MB 的 DG 423 657-2 同名同序、長度相符。**探測層落空的原因是盤名**——卡片作《Bartók: The 6 String Quartets》（數字 6 在標題裡），Apple 作《Bartók: The String Quartets》（**沒有那個 6**），MB 的 release-group 標題又是德文《Die 6 Streichquartette》，**三方三種寫法**。這是 c-98 第 2 條「盤名變形」在古典線的又一例，形狀是「數量詞的有無」。｜**固定試聽取首軌要注意**：Apple 第 1 軌是第一號的第一樂章〈Lento〉（9:16），與原盤第 1 軌相同，取首軌沒有問題；**但曲序是 1-3-5／2-4-6，不是 1-2-3-4-5-6**，行文不得照 Apple 的軌號說「第二軌是第二號」。｜MB 五筆 release 全部 23 軌、全部兩片，沒有二合一或加曲版疑慮。｜**擋下策展層可能的說法**：維基寫這套 1989 年拿葛萊美兩獎與《留聲機》年度唱片，**但沒有**說它是「巴爾托克四重奏的定本」或「第一套數位錄音的巴爾托克全集」；行文不得寫這類無來源的最高級。另外 Emerson 的兩位小提琴輪流擔任第一與第二小提琴這件事，維基的原話是「最早這樣做的樂團之一」（one of the first），**不是「第一個」**。"
+ },
+ {
+  "key": "desc2:Erich Kleiber|R. Strauss: Der Rosenkavalier (1954)",
+  "artist": "Erich Kleiber",
+  "album": "R. Strauss: Der Rosenkavalier (1954)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cb33ef52 的欄位：title「Der Rosenkavalier」、artist-credit「Richard Strauss; Reining, Weber, Jurinac, Gueden, Wiener Philharmoniker, Erich Kleiber」、first-release-date 1990、**primary-type Album、secondary-types 空**（歌劇全曲盤在 MB 沒有另外的型別標記，依裁定 167 照實記）、轄下 3 個 release。",
+    "src": "https://musicbrainz.org/release-group/cb33ef52-6a46-3833-97d0-4f94ffa3fd5d"
+   },
+   {
+    "f": "三筆 release **全部是三張 CD、15＋14＋14＝43 軌**：fe7d0b5c（1990，Decca Classics 425 950-2）、658bafd8（2000 XE，Decca 467 111-2）、531c3b6a（無日期 GB，Decca Heritage Masters 478-1396）。第一片第 1 軌是第一幕的 Prelude（2:51），第 2 軌〈Wie du warst! Wie du bist!〉（7:48）。",
+    "src": "https://musicbrainz.org/release/fe7d0b5c-6940-40a1-b4ee-957f61d3dd2f"
+   },
+   {
+    "f": "英文維基〈Erich Kleiber〉：1890 年 8 月 5 日生於維也納、**1956 年 1 月 27 日在蘇黎世猝逝，享年 65 歲**；他 1923 年起任柏林國家歌劇院音樂總監，是 Alban Berg《伍采克》的首演指揮，被認為是莫札特、貝多芬與理查‧史特勞斯的傑出詮釋者；**1948 到 1955 年間他為 Decca 錄了一批作品**。",
+    "src": "https://en.wikipedia.org/wiki/Erich_Kleiber"
+   },
+   {
+    "f": "同一條目引 Grove 的評語：Kleiber 的《玫瑰騎士》《費加洛的婚禮》與貝多芬交響曲錄音「都展現出他非凡的節奏控制與力度彈性」。條目並記他 1938 年應 Beecham 之邀首度登上柯芬園、指揮的就是《玫瑰騎士》（Lotte Lehmann 領銜）；在布宜諾斯艾利斯的 Teatro Colón 十個樂季裡，他指揮最多的兩部歌劇是《紐倫堡的名歌手》與《玫瑰騎士》；而**他在故鄉維也納唯一一次的歌劇演出，是 1951 年的《玫瑰騎士》**。",
+    "src": "https://en.wikipedia.org/wiki/Erich_Kleiber"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452793805「Richard Strauss: Der Rosenkavalier」**，掛名「Maria Reining, Sena Jurinac, Hilde Gueden, Ludwig Weber, Vienna Philharmonic & Erich Kleiber」，releaseDate 1954-01-01，copyright「℗ 1954 Decca Music Group Limited」，trackCount 43（三張碟 15＋14＋14），**43 軌全部有 previewUrl**；逐軌與 MB 那筆 Decca 425 950-2 同名同序、長度逐軌相符（第 1 軌 171 秒、第 2 軌 468 秒兩邊完全相同）。",
+    "src": "https://music.apple.com/gb/album/1452793805"
+   },
+   {
+    "f": "同一份錄音在 Apple 上還有四筆不同來源的品項，全部 43 軌：1452826049（℗ 1954 Decca，只在 gb／us／jp 三店面）、364198509（℗ 2005 Naxos）、947464193（℗ 2014 The Art Of Singing）、381295494（℗ 2010 Documents，只在 us，盤名就叫《Strauss: Der Rosenkavalier (1954)》）；另有 581306306（℗ 2012 Past Classics，**只有 6 軌**，是節選）與 593602033（℗ 2013 Documents，15 軌）兩筆不完整的。",
+    "src": "https://music.apple.com/gb/album/1452826049"
+   }
+  ],
+  "hookCandidates": [
+   "他在自己出生的城市只指揮過一次歌劇，那一次也是《玫瑰騎士》",
+   "1954 年維也納、Decca 的錄音；兩年後他在蘇黎世猝逝"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Maria Reining 唱元帥夫人、Sena Jurinac 唱奧克塔文、Hilde Gueden 唱蘇菲、Ludwig Weber 唱奧克斯男爵，Erich Kleiber 指揮維也納愛樂與維也納國家歌劇院合唱團，1954 年 Decca 錄音。三張碟 43 段，第一幕開頭的 Prelude 2 分 51 秒，第三幕的三重唱段〈Marie Theres'! – Hab mir's gelobt〉4 分 34 秒、終場二重唱〈Ist ein Traum〉7 分 07 秒。",
+  "keyTracks": [
+   "Act 1: Introduction",
+   "Act 2: \"Mir ist die Ehre widerfahren\"",
+   "Act 3: \"Marie Theres'!\" - \"Hab mir's gelobt, Ihn lieb zu haben\"",
+   "Act 3: \"Ist ein Traum, kann nicht wirklich sein\""
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1990 是 Decca CD 復刻年，盤名括號裡的 1954 才是錄音年。三個數字並列**：(1) **錄音年 1954**——Apple 那筆 Decca 官方品項的 copyright 是 ℗ 1954，英文維基記 Kleiber 1948–1955 年間為 Decca 錄音，兩重佐證；(2) MB first-release-date **1990**（Decca 425 950-2），與卡單一致——但要注意 **MB 這個 release-group 底下三筆 release 全部是 CD（1990／2000／無日期），一筆 1954 年的黑膠都沒有**，也就是 MB 這一格記的是 CD 復刻鏈而不是原盤鏈；(3) 1954 年原盤的發行年份與編號 MB 未收。**卡單值維持 1990，行文不得正面斷言發行年**，要提年份就寫「1954 年的錄音」——那個數字已經寫在盤名裡、且有 ℗ 年佐證。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452793805**，七店面全有，43 軌全有 previewUrl，逐軌與 MB Decca 425 950-2 同名同序、長度相符。**探測層落空的原因有兩層**：(1) 盤名——卡片作《R. Strauss: Der Rosenkavalier (1954)》，Apple 那筆作《Richard Strauss: Der Rosenkavalier》，**「R. Strauss」對「Richard Strauss」的縮寫差異，再加上卡片多出來的「(1954)」括號**（策展層為了與池中 Karajan 1956 版分辨而加）；(2) 掛名——卡片掛指揮 Erich Kleiber，**Apple 的 artistName 把四位歌者排在最前、指揮排最後**，藝人閘若比對第一個名字必然落空。｜**同一份錄音在 Apple 上有六個以上的品項**（Decca 官方兩筆、Naxos、The Art Of Singing、Documents 兩筆、Past Classics），其中 581306306 只有 6 軌、593602033 只有 15 軌是節選，**不得取用**；要選就選 ℗ 1954 Decca 且七店面齊全的 1452793805（c-99 第 6 條：再發授權狀態要看，Decca 是版權方本人）。｜固定試聽取首軌沒有問題：Apple 第 1 軌是第一幕的 Prelude，與原盤第 1 軌相同。｜**歌劇全曲盤的型態照實記**（裁定 167）：primary-type Album、secondary-types 空，沒有 Live 也沒有 Compilation。｜**時序主張要擋**：Kleiber 1956 年 1 月過世，這是他過世前兩年的錄音，**但沒有任何來源說這是他最後一次錄音或最後一部歌劇錄音**（維基只寫「1948 到 1955 年間為 Decca 錄了一批作品」），行文不得寫「生前最後」。可以寫的是維基原話：他在維也納唯一一次的歌劇演出是 1951 年的《玫瑰騎士》，以及 Grove 對他這份錄音的評語。"
+ },
+ {
+  "key": "desc2:Amadeus Quartet|Haydn: String Quartets op. 71, 74, 77 & 103",
+  "artist": "Amadeus Quartet",
+  "album": "Haydn: String Quartets op. 71, 74, 77 & 103",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4719f2d7 的欄位：title「Streichquartette op. 71 op. 74 op. 77 op. 103」（德文、四個作品編號並列、中間不加逗號）、artist-credit「Joseph Haydn; Amadeus Quartet」、first-release-date 1989、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/4719f2d7-803f-48e0-bb8d-51908fedc9dc"
+   },
+   {
+    "f": "唯一的 release d02298f8：1989 年歐洲盤、Deutsche Grammophon 429 189-2、三張 CD、12＋12＋10＝**34 軌**。第一片是 op. 71 三首（no. 1 Hob. III:69、no. 2 III:70、no. 3 III:71，各四樂章）；第二片是 op. 74 三首（III:72、III:73、III:74「騎士」）；第三片是 op. 77 兩首（III:81、III:82）加上未完成的 op. 103（III:83，只有兩個樂章）。",
+    "src": "https://musicbrainz.org/release/d02298f8-ac0b-4753-a255-049f07ada27a"
+   },
+   {
+    "f": "Discogs release 15499724（同一張 DG 429 189-2，1989 德國三 CD）的備註**直接列出每一組作品的錄音時間與地點**：op. 71 與 op. 74 錄於慕尼黑 Herkulessaal，**1977 年 6 月與 1978 年 11、12 月**；op. 77 no. 1 錄於漢諾威 Beethovensaal **1964 年 3 月**、op. 77 no. 2 **1965 年 3 月**；op. 103 錄於慕尼黑科學院 Plenarsaal **1973 年 3 月**。演奏者列 Norbert Brainin、Siegmund Nissel（小提琴）、Peter Schidlof（中提琴）、Martin Lovett（大提琴）。",
+    "src": "https://www.discogs.com/release/15499724"
+   },
+   {
+    "f": "英文維基〈Amadeus Quartet〉：1947 年成立、1987 年解散，**四十年間四位成員一個都沒換過**。三位小提琴／中提琴手 Norbert Brainin、Siegmund Nissel、Peter Schidlof 都因猶太出身在 1938 年德奧合併後被趕出維也納；Brainin 與 Schidlof 是在英國 Prees Heath 的拘留營裡認識的，Schidlof 又在營中認識 Nissel，三人後來免費師從小提琴家 Max Rostal，經 Rostal 認識大提琴家 Martin Lovett，1947 年組成 Brainin Quartet、1948 年改名 Amadeus Quartet。",
+    "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet"
+   },
+   {
+    "f": "同一條目：**四人在 1947 年成團時就約定，只要有一個人離團或過世，就不遞補、整個四重奏解散**；四十年後 1987 年 8 月 16 日中提琴手 Peter Schidlof 心臟病發過世（享年 65），他們照約定解散。",
+    "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet"
+   },
+   {
+    "f": "Apple Music 上盤名最接近的一筆是 collectionId **1452488474「Haydn: String Quartets, Op. 76, 77 & 103」**（Amadeus Quartet，℗ 2002 DG，七店面全有，**trackCount 34、分三張碟 12＋12＋10，與本卡完全相同**）。**但它的前兩片是 op. 76 六首，不是本卡的 op. 71 與 op. 74**；只有第三片（op. 77 兩首＋op. 103）與本卡逐軌相同、長度相符。",
+    "src": "https://music.apple.com/gb/album/1452488474"
+   },
+   {
+    "f": "本卡的 op. 71 與 op. 74 在 Apple 上收在另一筆：collectionId **1452758530「Haydn: String Quartets」**（℗ 2004 DG，七店面，81 軌、七張碟），內容是 op. 51《十字架上的最後七言》9 軌、op. 54 十二軌、op. 55 十二軌、op. 64 二十四軌、**op. 71 十二軌（第 6 片）、op. 74 十二軌（第 7 片）**——不含 op. 77 與 op. 103。另有更大的 1452369717「Haydn, J.: 27 String Quartets」（℗ 2009 DG，115 軌）。",
+    "src": "https://music.apple.com/gb/album/1452758530"
+   }
+  ],
+  "hookCandidates": [
+   "1947 年成團那天他們就講好：有人走，就散團。四十年後真的照做了",
+   "三張碟橫跨十四年的錄音：op. 77 錄於 1964 到 1965 年的漢諾威，op. 71 與 op. 74 錄於 1977 到 1978 年的慕尼黑"
+  ],
+  "sound": "沒有具名來源談這套的音色，因此不寫聲響形容。可寫的形制有據：三張 CD 共 34 軌，Brainin／Nissel／Schidlof／Lovett 四人；收海頓晚期的 op. 71 三首、op. 74 三首、op. 77 兩首與未完成的 op. 103。單樂章從 op. 71 no. 2 的小步舞曲 2 分 02 秒到 op. 71 no. 3 的行板 7 分 29 秒；op. 103 只有兩個樂章（5:23 與 5:18），海頓沒有寫完。",
+  "keyTracks": [
+   "op. 74 no. 3 \"The Rider\": IV. Finale. Allegro con brio",
+   "op. 71 no. 3: II. Andante con moto",
+   "op. 77 no. 1: I. Allegro moderato",
+   "op. 103: I. Andante grazioso"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 是 DG 三 CD 合輯的發行年，不是錄音年——而且這張的錄音橫跨十四年。三層數字並列**：(1) MB first-release-date **1989**、唯一 release 也是 1989（DG 429 189-2），Discogs release 15499724 同樣記 1989，**三方一致，卡單值沒有爭議**；(2) **原始錄音年 1964–1978**，Discogs 那筆的備註逐組列出：op. 77 no. 1 是 1964 年 3 月、op. 77 no. 2 是 1965 年 3 月（漢諾威 Beethovensaal），op. 103 是 1973 年 3 月（慕尼黑），op. 71 與 op. 74 是 1977 年 6 月與 1978 年 11／12 月（慕尼黑 Herkulessaal）；(3) 一個必須注意的時序事實：**四重奏 1987 年就解散了**（Schidlof 過世），所以 1989 年這套 CD 是他們解散兩年後的整編發行。**行文不得寫「1989 年他們錄了這套海頓」——那一年他們已經不存在了。**",
+  "notes": "**試聽維持 unavailable，而且這一張的假陽性比軌數比對更難擋。** Apple 1452488474「Haydn: String Quartets, **Op. 76**, 77 & 103」與本卡《Haydn: String Quartets op. **71, 74**, 77 & 103》——**同一個團體、同一個廠牌、盤名結構幾乎一樣、trackCount 34 對 34、碟數與每碟軌數 12＋12＋10 完全相同**。四道閘（藝人、盤名相似度、軌數、碟數）全部過得了，**唯一能發現它不是本張的方法是逐軌看作品編號**：它的前兩片是 op. 76 六首，本卡的前兩片是 op. 71 與 op. 74。**這是裁定 157 那個形狀的變體——不是曲序錯，是「同一位演奏者的另一組曲目」。絕對不得取用。**｜本卡的內容在 Apple 上是**分屬兩筆**：op. 71 與 op. 74 是 1452758530（81 軌七片大盒）的第 6、7 片，op. 77 與 op. 103 是 1452488474 的第 3 片。**沒有任何一筆等於本卡的三片盒**，判 unavailable 正確。｜七店面（gb／us／de／fr／at／it／jp）的 Amadeus Quartet 目錄全掃過（主 artistId 4567554 各 74–121 筆、次要 artistId 205188531 各 2–3 筆），另加 `search?term=` 逐店面查。｜**擋下策展層可能的說法**：維基寫的是「四十年間成員未換過」與「成團時就約定不遞補」，**沒有**說他們是「二十世紀最長壽的弦樂四重奏」或類似的最高級；行文不得加。另外三位成員被趕出維也納的年份是 1938（德奧合併），拘留營在 Prees Heath 與 Isle of Man，**這幾個細節有來源、可以寫**。"
+ },
+ {
+  "key": "desc2:Pablo Casals|Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+  "artist": "Pablo Casals",
+  "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a1a91158 的欄位：title「Dvořák: Cello Concerto / Bruch: Kol Nidrei」（MB 標題本身就是這個雙曲盤名）、artist-credit「Dvořák, Bruch; Pablo Casals, George Szell」、first-release-date 1972、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/a1a91158-3066-4d45-ab67-184277274de1"
+   },
+   {
+    "f": "唯一的 release 107e7df6：1972 年英國盤、EMI HLM 7013、12 吋黑膠、**4 軌**——A 面是德弗札克 B 小調大提琴協奏曲 op. 104 的第一、二樂章（13:21／10:26），B 面是第三樂章（11:39）加上布魯赫〈Kol Nidrei〉op. 47（11:45）。",
+    "src": "https://musicbrainz.org/release/107e7df6-992a-4fda-b837-bef044b874e9"
+   },
+   {
+    "f": "英文維基〈Pablo Casals〉的唱片清單把這張黑膠上的兩首曲子分開列成**兩次不同的錄音、不同的樂團與指揮**：「**1936: Boccherini: Cello Concerto in B-flat; and Bruch: Kol Nidrei – London Symphony conducted by Landon Ronald**」與「**1937: Dvořák: Cello Concerto – Czech Philharmonic conducted by George Szell**」。",
+    "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+   },
+   {
+    "f": "同一條目：Casals 1876 年 12 月 29 日生、1973 年 10 月 22 日歿；1939 年共和政府敗於佛朗哥後他自我流亡，發誓民主不恢復就不回西班牙，1939–1956 年住在法國 Prades、1956 年起住波多黎各直到過世；1950 年他在 Prades 為巴哈逝世兩百週年的音樂節重新出山，條件是收入全數捐給鄰近 Perpignan 的難民醫院。",
+    "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+   },
+   {
+    "f": "Apple Music 上最接近的一筆是 collectionId **696818767「Dvořák & Elgar: Cello Concertos」**（Pablo Casals，℗ 1990 Parlophone／Warner，四店面 gb／de／it／jp，trackCount 7，**七軌全部有 previewUrl**）：第 1–3 軌是德弗札克協奏曲三樂章（810／630／702 秒，對上 MB 的 801／626／699 秒）、**第 7 軌就是〈Kol Nidrei, Op. 47〉708 秒**（對上 MB 的 705 秒），中間第 4–6 軌插入的是艾爾加大提琴協奏曲（Casals 1945 年與 Boult／BBC 交響的另一次錄音）。**本卡原盤四軌全在，但被另一首協奏曲隔開。**",
+    "src": "https://music.apple.com/gb/album/696818767"
+   },
+   {
+    "f": "同型的還有三筆：696351637「Dvorak:Cello Concerto, etc」（℗ 1990／2003 remaster EMI，gb／de，8 軌＝德弗札克 3＋艾爾加 4＋Kol Nidrei 1）、510052412「Dvorak, Boccherini & Bruch: Cello Concertos」（℗ 2012 Crates Digger，us／de／it，7 軌＝德弗札克 3＋鮑凱里尼 3＋Kol Nidrei 1）；另有只收德弗札克協奏曲三軌、**沒有 Kol Nidrei** 的 310175094（℗ 2009 Saland）與 777132519（℗ 1957 BnF Collection），以及配《新世界》而非 Kol Nidrei 的 1489519488（℗ 2001 Dutton Epoch）。",
+    "src": "https://music.apple.com/gb/album/510052412"
+   }
+  ],
+  "hookCandidates": [
+   "一張黑膠上的兩首曲子錄於不同的年份、不同的城市、不同的樂團——1936 年的倫敦與 1937 年的布拉格",
+   "德弗札克那一半錄完兩年後，他就再也沒有回過西班牙"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：大提琴 Pablo Casals；德弗札克協奏曲那一半是 George Szell 指揮捷克愛樂（1937），〈Kol Nidrei〉那一半據英文維基是 Landon Ronald 指揮倫敦交響（1936）。四軌，A 面兩軌 13:21 與 10:26，B 面兩軌 11:39 與 11:45，整張約 47 分鐘。",
+  "keyTracks": [
+   "Cello Concerto in B minor, op. 104: I. Allegro",
+   "Cello Concerto in B minor, op. 104: II. Adagio ma non troppo",
+   "Kol Nidrei, op. 47"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1972 是 EMI 這張黑膠的發行年，錄音年比它早三十五年，而且是兩個不同的年份。三層數字並列**：(1) MB first-release-date **1972**、唯一 release 也是 1972（EMI HLM 7013 英國盤），與卡單一致；(2) **原始錄音年是兩個**——英文維基的 Casals 唱片清單記德弗札克協奏曲是 **1937 年**（捷克愛樂／Szell），〈Kol Nidrei〉是 **1936 年**（倫敦交響／Landon Ronald）；(3) 這兩次錄音當年各自的 78 轉發行年 MB 與維基都沒有給，**不得推**。**行文可以寫「1930 年代的錄音」，不得寫「1972 年錄的」，也不得把兩首說成同一次錄音。**",
+  "notes": "**試聽建議由 unavailable 改判 ready，但屬加曲版，要由主線裁定是否接受。** Apple **696818767「Dvořák & Elgar: Cello Concertos」**（gb／de／it／jp 四店面，℗ 1990 Parlophone，7 軌全有 previewUrl）**含有本卡原盤的全部四軌、曲序也對**（德弗札克三樂章在第 1–3 軌、Kol Nidrei 在第 7 軌），逐軌長度與 MB 相差 3–9 秒；多出來的第 4–6 軌是 Casals 1945 年與 Boult 的艾爾加協奏曲。依裁定 141，`originalTrackCount` 應鎖 **4**（MB 原盤直記），**行文不得說「這張碟有七首」**；固定試聽取首軌沒有問題（Apple 第 1 軌＝原盤 A1）。**若主線判加曲版不收，本張就是 unavailable**——七店面掃完沒有任何一筆是乾淨的四軌版。｜**探測層落空的原因**：卡片盤名是「Dvořák: Cello Concerto / Bruch: Kol Nidrei」，Apple 那筆叫「Dvořák & Elgar: Cello Concertos」——**斜線分隔的雙曲盤名在 Apple 上被換成了另一組配對**，這是派工預告的形狀之一。｜**要擋的兩個陷阱**：310175094 與 777132519 只有德弗札克三軌、**沒有 Kol Nidrei**（缺一整首，依 c-97 第 10 條不合）；1489519488「Pablo Casals Plays Dvorak」配的是《新世界》交響曲不是 Kol Nidrei。｜**MB 的 artist-credit 有一處要更正**：它寫「Dvořák, Bruch; Pablo Casals, **George Szell**」，把 Szell 掛在整張上；但英文維基明記〈Kol Nidrei〉那一半的指揮是 **Landon Ronald**、樂團是倫敦交響，**Szell 只指揮了德弗札克那一半**。行文不得說「Casals 與 Szell 的這張碟」涵蓋兩首曲子。｜策展層第 3 條取獨奏者為掛名，正確——這張兩半的指揮不同，取指揮反而會錯。"
+ },
+ {
+  "key": "desc2:Sergiu Celibidache|Tchaikovsky: Symphony no. 5",
+  "artist": "Sergiu Celibidache",
+  "album": "Tchaikovsky: Symphony no. 5",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0f5cdb94 的欄位：title「Symphonie No. 5」、artist-credit「Tchaikovsky; Münchner Philharmoniker, Sergiu Celibidache」、first-release-date 1997、primary-type Album、**secondary-types 空——雖然這是實況錄音，MB 沒有給它 Live 標記**、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/0f5cdb94-1824-436d-b4f3-82270c6aa058"
+   },
+   {
+    "f": "唯一的 release 9335a0c0：1997 年德國盤、EMI Classics 7243 5 56522 2 5、CD、**5 軌**——柴可夫斯基第五號交響曲四個樂章（18:50／17:09／7:01／14:19），**第 5 軌是 1 分 07 秒的〈[applause]〉**。這一軌是這張碟是現場錄音的直接證據。",
+    "src": "https://musicbrainz.org/release/9335a0c0-5ddb-4a87-8916-bead0d605998"
+   },
+   {
+    "f": "英文維基〈Sergiu Celibidache〉：1912 年 7 月 11 日生於羅馬尼亞、**1996 年 8 月過世**（條目開頭寫 8 月 13 日、內文寫 8 月 14 日於巴黎近郊 Nemours，兩處不一致）；**1979 年起到過世為止是慕尼黑愛樂的音樂總監**。",
+    "src": "https://en.wikipedia.org/wiki/Sergiu_Celibidache"
+   },
+   {
+    "f": "同一條目：**他在世時斷然拒絕把自己的演出發成商業唱片**，理由是聽者在音樂廳之外不可能得到那種「超越性的經驗」；「他的許多演出錄音是在他過世後才發行的」——條目另處說明，他幾乎所有的音樂會其實都被錄下來了（他接受電台實況轉播），這些錄音後來經家屬同意由 EMI 與 Deutsche Grammophon 等大廠陸續發行。",
+    "src": "https://en.wikipedia.org/wiki/Sergiu_Celibidache"
+   },
+   {
+    "f": "同一條目談他的速度：「他晚期音樂會的一個常被提到的特徵——也被那些實況錄音記錄下來——是比一般認定的常規更慢的速度，而在快速段落（尤其早期的演出）他的速度又常常遠超過節拍器標記」。他本人認為批評錄音的速度沒有意義，因為那不是對演出的批評，而是對一份「抄本」的批評。條目並記他在柏林求學時經老師 Martin Steinke 接觸禪宗，禪對他此後一生的世界觀與工作方式都有影響。",
+    "src": "https://en.wikipedia.org/wiki/Sergiu_Celibidache"
+   },
+   {
+    "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）的 Sergiu Celibidache 目錄各 150–154 筆全掃，加上 `search?term=` 逐店面查，**沒有任何一筆是慕尼黑愛樂的柴可夫斯基第五號**。店面上有的四筆柴五全部是**倫敦愛樂**那次早期錄音，逐樂章長度 975–980／892–904／380–386／764–770 秒——**與 MB 這張慕尼黑版的 1130／1029／421／859 秒每個樂章都差三到四分鐘**：1452137087「Tchaikovsky: Symphony No. 5 - The Nutcracker Suite (Highlights)」（℗ 2003 Universal，12 軌）、330206935（℗ 2009 Copyright Group，12 軌，掛名明寫 London Philharmonic Orchestra）、571300593「Sergiu Celibidache Conducts Tchaikovsky」（℗ 2012 Mangora，12 軌，同樣掛 LPO）、947598335（℗ 2015 Jube Classic，7 軌）。",
+    "src": "https://music.apple.com/gb/artist/61905023"
+   },
+   {
+    "f": "EMI 那套「Celibidache Edition」的慕尼黑錄音在 Apple 上是有的——布魯克納第四、六、七、八、九號，貝多芬第三、第九，布拉姆斯二至四號，莫札特《安魂曲》，佛瑞《安魂曲》，蕭士塔高維契第一與第九——**其中柴可夫斯基只出了第六號**（collectionId 696648445「Tchaikovsky: Symphony No. 6」，℗ 1997 EMI，七店面全有，6 軌）。**第五號那一格在 Apple 上是空的。**",
+    "src": "https://music.apple.com/gb/album/696648445"
+   }
+  ],
+  "hookCandidates": [
+   "碟上第五軌是一分零七秒的掌聲——那是這張碟唯一告訴你它是現場的地方",
+   "他生前不肯發唱片：音樂廳以外的地方，那個經驗不會發生"
+  ],
+  "sound": "沒有具名來源談這一場的音色，因此不寫聲響形容。可寫的形制有據：慕尼黑愛樂、Celibidache 指揮，實況錄音，一張 CD 五軌——四個樂章加一軌 1 分 07 秒的掌聲。四個樂章長度 18:50／17:09／7:01／14:19，合計約 57 分鐘；作為對照，同一位指揮早年與倫敦愛樂的同一首曲子，四個樂章分別只有 16:15／15:00／6:23／12:44。（速度偏慢這件事有維基來源支撐，見 facts。）",
+  "keyTracks": [
+   "Symphonie Nr. 5 e-moll, Op. 64: I. Andante - Allegro con anima",
+   "Symphonie Nr. 5 e-moll, Op. 64: II. Andante cantabile, con alcuna licenza",
+   "Symphonie Nr. 5 e-moll, Op. 64: IV. Andante maestoso - Allegro vivace"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1997 是 EMI 這張 CD 的發行年，而且它是一張身後發行的唱片。三層數字**：(1) MB first-release-date **1997**、唯一 release 也是 1997（EMI Classics 7243 5 56522 2 5 德國盤），與卡單一致；(2) **原始演出年 MB 與 Apple 兩邊都沒有給**——這張碟沒有標日期的 release，Apple 上又完全沒有對應品項可以交叉比對，**因此錄音年不明，行文一律不得寫某一年的演出**；(3) 唯一能確定的時間邊界有兩個且都有來源：Celibidache **1979 年起**才接慕尼黑愛樂、**1996 年 8 月過世**，所以這場必定發生在 1979–1996 之間；而 1997 年的發行**在他過世之後**，符合維基所寫「他生前拒絕發商業唱片、許多錄音是身後才發行」。",
+  "notes": "**試聽維持 unavailable，而且這一張的判定有硬證據，不是查不到。** 七店面的 Celibidache 目錄（各 150–154 筆）全掃，Apple 上有四筆柴可夫斯基第五號，**全部是倫敦愛樂那次早期錄音**——決定性的證據是**逐樂章長度**：Apple 那四筆一致落在 975–980／892–904／380–386／764–770 秒，MB 這張慕尼黑版是 1130／1029／421／859 秒，**每個樂章都差三到四分鐘**（第一樂章 18:50 對 16:15）。這正是維基所記「他晚期的速度比常規慢」的量化表現，也讓這一組假陽性可以被乾淨地排除。**四筆都不得取用。**｜**EMI 的 Celibidache Edition 在 Apple 上覆蓋很完整**（布魯克納五張、貝多芬兩張、布拉姆斯、莫札特《安魂曲》、佛瑞、蕭士塔高維契都有），**唯獨柴可夫斯基只上了第六號（696648445）、沒上第五號**——這是「這一格真的空著」而不是「盤名變形沒搜到」。｜**MB 的型別要照實記**：primary-type Album、secondary-types **空**，**沒有 Live 標記**，儘管第 5 軌是掌聲、儘管這確定是實況。下游若靠 secondary-types 判斷是不是現場盤，這一張會被判錯。｜**時序主張要擋**：Celibidache 1996 年 8 月過世、這張 1997 年發行，**但沒有任何來源說這是他最後一場音樂會或最後一次指揮柴五**，行文不得寫「生前最後」；連演出年份都查不到。維基兩處對他的忌日還記成 8 月 13 日與 8 月 14 日兩說，**日期也不要寫死**。可以寫的是有來源的：他生前拒發商業唱片的理由（音樂廳以外得不到那個經驗）、1979 年起執掌慕尼黑愛樂、以及晚期速度偏慢。"
+ },
+ {
+  "key": "desc2:Elisabeth Schwarzkopf|Lehár: Die lustige Witwe",
+  "artist": "Elisabeth Schwarzkopf",
+  "album": "Lehár: Die lustige Witwe",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1bb8ffb5 的欄位：title「Die lustige Witwe」、artist-credit「Franz Lehár; Elisabeth Schwarzkopf, Hanny Steffek, Nicolai Gedda, Josef Knapp, Eberhard Wächter, Philharmonia Orchestra & Chorus, **Lovro von Matačić**」、first-release-date 1966、**primary-type Album、secondary-types 空**（依裁定 167 照實記）、轄下 3 個 release。",
+    "src": "https://musicbrainz.org/release-group/1bb8ffb5-6c84-4245-9680-875a93bcc1cf"
+   },
+   {
+    "f": "三筆 release 的形態差很多：14366b85 是 1966 年英國盤 His Master's Voice **ASD 2252**，12 吋黑膠、**11 軌，標題就叫《The Merry Widow, Highlights》——是選粹不是全曲**（A 面五段、B 面六段，從第一幕〈So kommen Sie!〉到第三幕〈Ja, das Studium der Weiber〉）；f8337a11 是 1985 年英國 EMI Studio DRM CDCB 7 47177-2，兩張 CD 但每片只切成 2 個索引點；7017a7f5 是 2021-04-28 日本 TOWER RECORDS NEODAI-98007 的 Hybrid SACD，**40 軌的全曲版**（含所有對白式的 Rezitativ）。",
+    "src": "https://musicbrainz.org/release/14366b85-b934-411d-805d-261fa8f54ee9"
+   },
+   {
+    "f": "英文維基〈Elisabeth Schwarzkopf〉記她 1915 年生、2006 年歿，二戰後長期與 EMI 製作人 Walter Legge（後為其夫）合作，錄音多與 Philharmonia Orchestra 一起；她的德語輕歌劇錄音是 EMI 目錄裡分量很重的一塊。",
+    "src": "https://en.wikipedia.org/wiki/Elisabeth_Schwarzkopf"
+   },
+   {
+    "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）的 Elisabeth Schwarzkopf 目錄（各 200 筆上限）全掃，加上 `search?term=` 四組字串（Lehar Lustige Witwe Matacic Schwarzkopf／Merry Widow Schwarzkopf Wächter Steffek／Lehar Merry Widow Schwarzkopf 1963／Die lustige Witwe Gesamtaufnahme），**Matačić 這一次錄音一筆都沒有**。店面上的《風流寡婦》全部是**另一次錄音**：1953 年 Otto Ackermann 指揮 Philharmonia 的版本，掛名是 Schwarzkopf／Gedda／**Erich Kunz**／Emmy Loose／Anton Niessner。",
+    "src": "https://music.apple.com/gb/artist/606031"
+   },
+   {
+    "f": "1953 年 Ackermann 版在 Apple 上至少有五筆：696606128「Lehar: Das Land des Lächelns - Die Lustige Witwe」（℗ 1953 EMI，七店面，**70 軌，是《微笑之國》與《風流寡婦》兩部輕歌劇的合盤**）、398212052（℗ 2003 Regis，32 軌）、364138621「Lehar: Merry Widow (The) (Schwartzkopf, Kunz, Gedda) (**1953**)」（℗ 2005 Naxos，33 軌，盤名裡直接寫著年份）、353062414（℗ 2010 DiscoverClassicalMusic，只有 3 軌）、966249703（℗ 2005 Naxos，54 軌）。",
+    "src": "https://music.apple.com/gb/album/696606128"
+   },
+   {
+    "f": "兩次錄音的掛名差異可以當識別鍵：**1953 Ackermann 版**的男中音是 Erich Kunz、指揮 Otto Ackermann；**本卡的 Matačić 版**多出 Hanny Steffek（Valencienne）、Eberhard Wächter（Danilo）、Josef Knapp，指揮是 Lovro von Matačić。**Nicolai Gedda 與 Elisabeth Schwarzkopf 兩人兩次都在**——所以光看這兩個名字分不出來。",
+    "src": "https://musicbrainz.org/release-group/1bb8ffb5-6c84-4245-9680-875a93bcc1cf"
+   }
+  ],
+  "hookCandidates": [
+   "同一位女高音、同一位男高音、同一個樂團，把同一部輕歌劇錄了兩次——差別在指揮與那位丹尼洛",
+   "1966 年那張英國黑膠只有十一段：這是一張選粹，不是全曲"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Elisabeth Schwarzkopf 唱漢娜、Nicolai Gedda 唱羅西雍、Eberhard Wächter 唱丹尼洛、Hanny Steffek 唱瓦倫西恩，Lovro von Matačić 指揮 Philharmonia 管弦樂團與合唱團。1966 年的英國黑膠是十一段的選粹，最長的一段是第二幕的〈Introduction, Dance and Vilja-Lied〉8 分 19 秒，最短的收場〈Ja, das Studium der Weiber〉只有 46 秒。",
+  "keyTracks": [
+   "Vilja-Lied",
+   "Er führt sie zu Maxim",
+   "Wie eine Rosenknospe",
+   "Lippen schweigen"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1966。MB first-release-date 1966、轄下 1966 年那筆英國 HMV ASD 2252 一致。**但要注意兩件事**：(1) **這個 release-group 裡的三筆 release 不是同一種東西**——1966 年那筆是**十一段的選粹**（MB 標題就寫 Highlights），2021 年日本 Tower 的 SACD 才是 40 軌的全曲；卡片盤名寫成全曲名《Lehár: Die lustige Witwe》，與 1966 年那張黑膠的實際內容有落差。(2) **原始錄音年不明**：MB 三筆 release 沒有一筆標錄音年，Apple 上又完全沒有對應品項可以取 ℗ 年，**因此 Matačić 這次錄音是哪一年錄的查不到，行文不得寫錄音年**。可以確定的只有 1966 年英國盤的發行。**卡單值維持 1966，行文不得正面斷言發行年，也不得說「這是一張全曲錄音」。**",
+  "notes": "**試聽維持 unavailable。** 七店面（gb／us／de／fr／at／it／jp）的 Schwarzkopf 目錄（每店面都吃到 200 筆上限）全掃，另加四組 `search?term=` 字串逐店面查，**Lovro von Matačić 指揮的這一次《風流寡婦》在 Apple 上完全不存在**。｜**這一張的假陽性是「同一位歌者的另一次錄音」，而且掛名重疊率極高**：Apple 上有五筆《風流寡婦》，**全部是 1953 年 Otto Ackermann 指揮的版本**，掛名同樣有 Elisabeth Schwarzkopf 與 Nicolai Gedda，**光靠藝人閘與盤名完全分不出來**。分辨的鍵是第三個名字：Ackermann 版的丹尼洛是 **Erich Kunz**，本卡的丹尼洛是 **Eberhard Wächter**；指揮欄一個是 Ackermann、一個是 Matačić。**五筆都不得取用。**其中 696606128 還多一層問題——它是《微笑之國》與《風流寡婦》兩部輕歌劇併成的 70 軌合盤，依 c-97 第 10 條本來就不合。｜策展層第 3 條取領銜歌者為掛名（而不是指揮 Matačić），正確——但**這一張正因為取了歌者，才會與 1953 年那版撞名**，上架時必須鎖 collectionId、備註寫死「指揮是 Matačić 不是 Ackermann」。｜**歌劇／輕歌劇全曲盤的型態照實記**（裁定 167）：primary-type Album、secondary-types 空。｜**擋下策展層可能的說法**：這一張沒有任何來源可以支撐「最著名的《風流寡婦》錄音」這類評價——**在 Apple 上流通的反而全部是另一版**；行文不得寫最高級，也不得把 1953 年 Ackermann 版的任何評價搬到這一張上。"
+ },
+ {
+  "key": "desc2:Kathleen Ferrier|Mahler: Das Lied von der Erde (1952)",
+  "artist": "Kathleen Ferrier",
+  "album": "Mahler: Das Lied von der Erde (1952)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b86a4b1f 的欄位：title「Das Lied von der Erde」、artist-credit「Mahler; Kathleen Ferrier, Julius Patzak, Vienna Philharmonic Orchestra, Bruno Walter」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 4 個 release。",
+    "src": "https://musicbrainz.org/release-group/b86a4b1f-6738-4598-94ca-b933dfb01a98"
+   },
+   {
+    "f": "四筆 release **全部 6 軌**：f0dde9fd（1961 GB，Decca Records **LXT 5576**，12 吋黑膠，A 面五首、B 面〈Der Abschied〉一首）、f791417a（無日期 DE，同樣 LXT 5576）、ada7f24f（1984 DE，Decca Classics 414 194-2 CD）、6e510ba1（1984 US，Decca CD）。",
+    "src": "https://musicbrainz.org/release/f0dde9fd-e0ea-4fa0-90fb-a0499289d321"
+   },
+   {
+    "f": "英文維基〈Kathleen Ferrier〉把這次錄音的時間、地點與情境寫得很具體：「**1952 年 5 月**，她前往維也納與 Walter 和維也納愛樂錄下《大地之歌》與馬勒的《呂克特歌曲》；歌者與指揮長久以來都想把這段合作留在唱片上。**儘管承受相當大的痛苦，Ferrier 在 5 月 15 日到 20 日之間完成了這幾次錄音。**」",
+    "src": "https://en.wikipedia.org/wiki/Kathleen_Ferrier"
+   },
+   {
+    "f": "同一條目：Ferrier 1912 年 4 月 22 日生、**1953 年 10 月 8 日因癌症過世**；1951 年 3 月確診乳癌，此後在住院與療養的空檔中繼續演出與錄音；**她最後一次公開演出是 1953 年 2 月在皇家歌劇院唱《奧菲歐》，距離過世八個月**。條目另記她在 1952 年 10 月還進錄音室，與 Boult 和倫敦愛樂錄了一系列巴哈與韓德爾詠嘆調。",
+    "src": "https://en.wikipedia.org/wiki/Kathleen_Ferrier"
+   },
+   {
+    "f": "同一條目談她與 Bruno Walter 的合作起點：1947 年愛丁堡音樂節，Glyndebourne 的總監 Rudolf Bing 把她推薦給 Walter 當《大地之歌》的女低音獨唱；Walter 起初對這位資歷尚淺的歌者存疑，聽完試唱後寫下「我欣喜地認出，這裡有一位可能成為我們這個時代最偉大歌者之一的人」。條目並記《大地之歌》當時在英國幾乎沒人聽過。",
+    "src": "https://en.wikipedia.org/wiki/Kathleen_Ferrier"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452510165「Mahler: Das Lied Von Der Erde; 3 Rückert Lieder」**，掛名「Bruno Walter, Kathleen Ferrier, Julius Patzak & Vienna Philharmonic」，releaseDate 1952-01-01，copyright「**℗ 1952 Decca Music Group Limited**」，trackCount 9，**9 軌全部有 previewUrl**：第 1–6 軌就是《大地之歌》六個樂章、與 MB 的 LXT 5576 同名同序（〈Das Trinklied vom Jammer der Erde〉8:48 起、〈Der Abschied〉28:26 收），第 7–9 軌是三首《呂克特歌曲》——**與《大地之歌》是同一批 1952 年 5 月維也納錄音**（見上面維基那條）。",
+    "src": "https://music.apple.com/gb/album/1452510165"
+   },
+   {
+    "f": "Apple 上另有兩筆**只有六軌、正好等於原盤**的第三方復刻：313249122（℗ 2009 Saland Publishing，七店面，6 軌全有 previewUrl，逐軌長度 509／549／137／386／261／1660 秒，比 Decca 官方那筆各短 15–45 秒）與 6779335612（℗ 1952 Alexandre Bak - Classical Music Reference Recording，releaseDate 標 1952-05-20，6 軌）；另有 403353929（℗ 2010 Classical Moments，9 軌）與 1571149368（℗ 2021 Archipel，9 軌）兩筆同樣是六軌加三首呂克特的組合。",
+    "src": "https://music.apple.com/gb/album/313249122"
+   }
+  ],
+  "hookCandidates": [
+   "1952 年 5 月 15 到 20 日，維也納：她已經病了一年多，六天錄完這六首",
+   "1947 年愛丁堡，Walter 聽完試唱寫下一句話：這裡有一位可能成為我們這個時代最偉大歌者之一的人"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：女低音 Kathleen Ferrier 與男高音 Julius Patzak 交替演唱，Bruno Walter 指揮維也納愛樂，1952 年 5 月維也納錄音。六個樂章，前五首合計約半小時，最後的〈Der Abschied〉一首就將近二十八分鐘、佔掉整張黑膠的 B 面。",
+  "keyTracks": [
+   "Das Trinklied vom Jammer der Erde",
+   "Der Einsame im Herbst",
+   "Von der Schönheit",
+   "Der Abschied"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1961 是英國 Decca 黑膠的發行年；盤名括號裡的 1952 才是錄音年，而且這次的錄音年有到「日」的來源。三層數字並列**：(1) **原始錄音 1952 年 5 月 15–20 日於維也納**——英文維基〈Kathleen Ferrier〉直記這個日期區間與地點，Apple 那筆 Decca 官方品項的 copyright 也是 **℗ 1952**，兩重佐證；(2) MB first-release-date **1961**（Decca LXT 5576 英國盤），與卡單一致；(3) 1984 年的 Decca CD（414 194-2）是後來的復刻。**這是本組少數幾張錄音日期精確到「哪六天」的卡，依裁定 18 應該用這個日期當敘事錨點，不要在發行年上打轉。**注意 1952（錄音）與 1961（英國盤發行）之間隔了九年，**行文不得把 1961 說成錄音年**。",
+  "notes": "**試聽由 unavailable 改判 ready，但要在兩種取法之間做一個選擇，建議取前者**：(a) **Apple 1452510165**（七店面全有、9 軌全有 previewUrl、**℗ 1952 Decca Music Group Limited ＝ 版權方本人**）——原盤六軌完整在第 1–6 軌、同名同序，多出來的第 7–9 軌是三首《呂克特歌曲》，**而且維基明記那三首與《大地之歌》是同一批 1952 年 5 月的維也納錄音**，不是外來的填充曲；依裁定 141，`originalTrackCount` 鎖 **6**，行文不得說「這張碟有九首」。(b) Apple **313249122**（℗ 2009 Saland Publishing，七店面，**正好六軌**）——軌數與原盤完全相等，但是第三方復刻、非版權方（c-99 第 6 條）。**建議取 (a)**：版權方品項優先，加曲的三首又同源。固定試聽取首軌兩者都沒問題。｜**探測層落空的原因是盤名**：卡片作《Mahler: Das Lied von der Erde (**1952**)》（策展層為了標錄音年加的括號），Apple 那筆作《Mahler: Das Lied Von Der Erde; **3 Rückert Lieder**》——**一邊多了年份括號、一邊多了第二部作品的副標**，兩頭都對不上。｜**時序主張要特別擋（派工點名的兩位早逝者之一）**：Ferrier 1953 年 10 月 8 日過世，**但這張不是她的最後一次錄音**——維基明寫她 1952 年 10 月還與 Boult 和倫敦愛樂錄了一系列巴哈與韓德爾詠嘆調，最後一次**公開演出**是 1953 年 2 月的《奧菲歐》。**行文絕對不得寫「生前最後的錄音」「最後的告別」這一類。**可以寫的是有來源的兩件事：錄音是在她確診乳癌之後、忍著相當大的痛苦於六天內完成的；以及 1947 年 Walter 聽她試唱後寫下的那句話。｜另外要小心一個同名別碟：1379853172「Brahms: Alto Rhapsody - Mahler: Das Lied von der Erde」（℗ 2003 APR，11 軌）掛的是 **Hallé／Barbirolli**，不是維也納愛樂／Walter，是另一次演出。"
+ },
+ {
+  "key": "desc2:Emil Gilels|Grieg: Lyric Pieces",
+  "artist": "Emil Gilels",
+  "album": "Grieg: Lyric Pieces",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 18fcc7fe 的欄位：title「Lyrische Stücke - Lyric Pieces」（德英並列）、artist-credit「Edvard Grieg; Emil Gilels」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 7 個 release。",
+    "src": "https://musicbrainz.org/release-group/18fcc7fe-041c-373d-8791-1c6083452f0d"
+   },
+   {
+    "f": "七筆 release **全部是 20 軌**：bc512881（1974 DE，Deutsche Grammophon **2530 476**，12 吋黑膠）、2eb148ed（1974 DE，DG 2535 620 黑膠）、45b44b70 與 daef61d7（1987 DE，DG 419 749-2 CD）、515fe32a（1996-10-01 DE，DG 449 721-2 CD）、e4a8a290（2015 XW 數位）、e812e374（2023-01-26 數位）。1974 年黑膠的曲序是 A 面十首、B 面十首，從 op. 12 no. 1〈Arietta〉開始，到 op. 71 no. 7〈Nachklänge〉結束，中間依作品編號 op. 38／43／47／54／57／62／65／68／71 遞增排列。",
+    "src": "https://musicbrainz.org/release/bc512881-7deb-4c51-99f4-510364340fde"
+   },
+   {
+    "f": "英文維基〈Emil Gilels〉：1916 年 10 月 19 日生於敖德薩的猶太家庭、1985 年 10 月 14 日在莫斯科的醫院意外過世，當時他正在為 Deutsche Grammophon 錄貝多芬鋼琴奏鳴曲全集、錄到一半。條目的唱片年表裡直接列有「**1974 – Grieg: Lyric Pieces**」這一條。",
+    "src": "https://en.wikipedia.org/wiki/Emil_Gilels"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **969090788「Grieg: Lyric Pieces」**，掛名 Emil Gilels，releaseDate 1974-01-01，copyright「℗ 1974 Deutsche Grammophon GmbH, Berlin」。**它的 trackCount 欄位寫 21，但 `lookup?id=969090788&entity=song` 只攤得出 20 軌**——這 20 軌與 MB 1974 年 DG 黑膠**逐軌同名同序**（Apple 第 1 軌〈Lyric Pieces, Book I, Op. 12: No. 1, Arietta〉1:26 對 MB 的 A1〈Arietta〉1:18，一路到第 20 軌〈Op. 71 No. 7, Remembrances〉1:57 對 MB 的〈Nachklänge〉1:54），**20 軌全部有 previewUrl**。",
+    "src": "https://music.apple.com/gb/album/969090788"
+   },
+   {
+    "f": "Apple 上另有 1667906213「Edvard Grieg: Lyric Pieces」（Emil Gilels，A uDiscover Music Release，℗ 2023 UMG，只在 de／at／it 三店面，**trackCount 20**）——同一份錄音的 2023 年重新包裝。",
+    "src": "https://music.apple.com/de/album/1667906213"
+   },
+   {
+    "f": "格里格《抒情小品》總共十集六十六首（op. 12、38、43、47、54、57、62、65、68、71），Gilels 這張只從十集裡各挑幾首、合計二十首；MB 那筆黑膠的曲名用德文（〈Schmetterling〉〈Einsamer Wanderer〉〈Kobold〉），Apple 用英文（〈Butterfly〉〈Solitary Traveller〉〈Puck〉），**同一首曲子兩種語言的曲名**。",
+    "src": "https://musicbrainz.org/release/bc512881-7deb-4c51-99f4-510364340fde"
+   }
+  ],
+  "hookCandidates": [
+   "六十六首裡他只挑了二十首，從 op. 12 的第一首排到 op. 71 的最後一首",
+   "最短的〈Arietta〉一分十八秒，最長的〈Es war einmal〉四分半——二十首小品從第一集排到第十集"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Emil Gilels，1974 年 Deutsche Grammophon 錄音，一張黑膠二十首小品；單首從 1 分 18 秒（op. 12 no. 1〈Arietta〉）到 4 分 33 秒（op. 71 no. 1〈Es war einmal〉），MB 逐軌長度加總約五十五分鐘。曲序按作品編號從第一集排到第十集。",
+  "keyTracks": [
+   "op. 12 no. 1 Arietta",
+   "op. 43 no. 1 Schmetterling",
+   "op. 54 no. 4 Notturno",
+   "op. 71 no. 7 Nachklänge"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1974。MB first-release-date 1974、1974 年兩筆 DG 黑膠（2530 476 與 2535 620）、Apple 那筆 DG 官方品項的 copyright ℗ 1974、以及英文維基〈Emil Gilels〉唱片年表裡「1974 – Grieg: Lyric Pieces」那一條，**四方一致**。**錄音年沒有獨立來源**（MB 與 Apple 都只給發行／版權年），行文可以寫 1974 這個數字，但要寫成「1974 年的 DG 錄音」這種同時涵蓋兩者的說法比較安全。",
+  "notes": "**ready 覆核通過，但卡單記的軌數要更正。** 探測層記 gb 969090788、tr=21。**Apple 的 `trackCount` 欄位確實寫 21，但曲目列只攤得出 20 軌**——那第 21 軌是 Apple 這一側的中繼資料誤差，不是碟上真有一首查不到的曲子。**20 這個數字才是對的，而且與 MB 七筆 release 全部 20 軌完全一致**（依裁定 141，原盤值以 MB 為準）。20 軌逐軌與 1974 年 DG 2530 476 同名同序、長度各差 3–8 秒，**20 軌全部有 previewUrl**（c-97 第 11 條那道檢查通過）。**結論：ready 成立、配對正確，但 `originalTrackCount` 要鎖 20、不要沿用 Apple 的 21；行文不得說「這張碟有二十一首」。**｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Arietta〉正是原盤 A1。｜**同一份錄音在 Apple 上還有一筆 1667906213**（℗ 2023 uDiscover／UMG，只在 de／at／it，trackCount 20），是後來的重新包裝；七店面齊全的 969090788 較好，維持不動。｜**曲名的語言要注意**：MB 用德文（〈Schmetterling〉〈Kobold〉〈Nachklänge〉），Apple 用英文（〈Butterfly〉〈Puck〉〈Remembrances〉），下游做曲名比對時兩套都要掃。｜掛名：策展層第 8 條已定用池中既有的 `Emil Gilels`，MB 主名是西里爾「Эмиль Гилельс」、DG 法語系列另作 `Emil Guilels`，兩者進 queryAlias。｜**擋下策展層可能的說法**：《抒情小品》全部十集六十六首，**這張只收二十首**，行文不得寫成「全集」；維基也沒有給這張任何評價或獎項，不得寫最高級。"
+ },
+ {
+  "key": "desc2:Arturo Benedetti Michelangeli|Chopin: 10 Mazurkas / Ballade op. 23 / Scherzo op. 31",
+  "artist": "Arturo Benedetti Michelangeli",
+  "album": "Chopin: 10 Mazurkas / Ballade op. 23 / Scherzo op. 31",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7e47a883 的欄位：title「10 Mazurkas / Prélude, op. 45 / Ballade, op. 23 / Scherzo, op. 31」（**MB 標題比卡片盤名多了一項「Prélude, op. 45」**）、artist-credit「Frédéric Chopin; Arturo Benedetti Michelangeli」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 5 個 release。",
+    "src": "https://musicbrainz.org/release-group/7e47a883-33fd-4959-bafa-c2cbb47ae0fd"
+   },
+   {
+    "f": "五筆 release **全部是 13 軌**：d00cbe0b（1972 DE，Deutsche Grammophon **2530 236**，12 吋黑膠）、f1b6a541（1972 FR，同編號 2530 236）、8018b485（1984-07-25 XE，DG 413 449-2 CD）、59dda0f5（2009-01-15 DE，DG 00289 477 7563 CD）、12cabc26（2018-09-28 數位）。十三軌的順序是十首馬祖卡（op. 67/2、56/2、67/4、68/2、68/1、33/1、30/3、30/2、33/4、68/4）、升 c 小調前奏曲 op. 45、g 小調第一號敘事曲 op. 23、降 b 小調第二號詼諧曲 op. 31。",
+    "src": "https://musicbrainz.org/release/d00cbe0b-09d3-4505-8cea-2511395672ab"
+   },
+   {
+    "f": "英文維基〈Arturo Benedetti Michelangeli〉：1920 年 1 月 5 日生、1995 年 6 月 12 日歿的義大利鋼琴家；引《紐約時報》的說法，在少數幾位傳奇鋼琴家之中他大概是**最隱遁、最難解、也最執著**的一位。他 1938 年拿伊莉莎白王后大賽第七名、1939 年拿日內瓦大賽第一名，1949 年蕭邦逝世百年時被國際評審團選為官方指定的鋼琴家。",
+    "src": "https://en.wikipedia.org/wiki/Arturo_Benedetti_Michelangeli"
+   },
+   {
+    "f": "同一條目的獎項欄記他在**第 15 屆葛萊美獎（1972 年）**以《Debussy: Images, Books 1 And 2 and Children's Corner Suite》入圍「最佳古典演奏——器樂獨奏（無管弦樂團）」，1975 年再以《Schumann: Carnaval, Op. 9》入圍同一獎項。條目另有一段記他是 Mille Miglia 公路賽的三度參賽者。",
+    "src": "https://en.wikipedia.org/wiki/Arturo_Benedetti_Michelangeli"
+   },
+   {
+    "f": "Apple Music collectionId **1452568228「Chopin: 10 Mazurkas, Prélude, Op. 45, Ballade, Op. 23 & Scherzo, Op. 31」**，掛名 Arturo Benedetti Michelangeli，releaseDate 1972-01-01，copyright「℗ 1972 Deutsche Grammophon GmbH, Berlin」，trackCount 13，**13 軌全部有 previewUrl**，逐軌與 MB 1972 年 DG 2530 236 同名同序、長度各差 2–4 秒。**六個店面有（gb／de／fr／at／it／jp），us 沒有。**",
+    "src": "https://music.apple.com/gb/album/1452568228"
+   },
+   {
+    "f": "同一份錄音在 Apple 上另有兩筆七店面齊全的：**1452574759**（同盤名，「This Compilation ℗ 2009 Deutsche Grammophon」，13 軌，gb／us／de／fr／at／it／jp，第 1 軌 2:04）與 **1436243702「Chopin: 10 Marzurkas」**（Apple 把 Mazurkas 拼錯成 Marzurkas，「This Compilation ℗ 1972 Deutsche Grammophon」，13 軌，七店面）。",
+    "src": "https://music.apple.com/us/album/1452574759"
+   }
+  ],
+  "hookCandidates": [
+   "十首馬祖卡不照作品編號排：從 op. 67 第二首起手，最後才落回 op. 68 第四首",
+   "《紐約時報》說他大概是那一小撮傳奇鋼琴家裡最隱遁、最難解、也最執著的一位"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Arturo Benedetti Michelangeli，1972 年 Deutsche Grammophon 錄音，一張黑膠十三軌；十首馬祖卡多在一到三分鐘之間（最短 op. 68 no. 1 的 1 分 33 秒、最長 op. 33 no. 4 的 6 分 20 秒），最後三首大件依序是前奏曲 4 分 53 秒、敘事曲 9 分 15 秒、詼諧曲 10 分 58 秒。",
+  "keyTracks": [
+   "Mazurka op. 33 no. 4",
+   "Prélude op. 45",
+   "Ballade op. 23",
+   "Scherzo op. 31"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1972。MB first-release-date 1972、1972 年兩筆 DG 2530 236 黑膠（德國盤與法國盤）、Apple 那筆 DG 品項的 copyright ℗ 1972，**三方一致**。**錄音年沒有獨立來源**（MB 與 Apple 都只給發行／版權年，英文維基的條目也沒有列這張），行文寫 1972 要寫成「1972 年的 DG 錄音」，不得單獨斷言錄音年。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452574759**（七店面齊全，13 軌全有 previewUrl，逐軌與 MB 1972 年 DG 2530 236 同名同序）。**次選 1452568228**——同一份錄音、copyright 是原始的 ℗ 1972（1452574759 是「This Compilation ℗ 2009」），但**us 店面沒有**；若上架時偏好原始 ℗ 年而不在意少一個店面，取這一筆。第三筆 1436243702 也是七店面 13 軌、℗ 1972，但**Apple 把盤名的 Mazurkas 拼成「Marzurkas」**，字串比對永遠對不上，不建議當主鍵。｜**探測層落空的原因是盤名少了一項**：卡片作《Chopin: 10 Mazurkas / **Ballade op. 23** / Scherzo op. 31》，**MB 與 Apple 兩邊的標題都多一個「Prélude, op. 45」**（MB：10 Mazurkas / Prélude, op. 45 / Ballade, op. 23 / Scherzo, op. 31；Apple：10 Mazurkas, Prélude, Op. 45, Ballade, Op. 23 & Scherzo, Op. 31）。卡片這一項是策展層縮短過的——**這正是策展層第 10 條那個「盤名被縮短過的卡會與更長的名字對不上」的形狀**，只是這次發生在自己身上。另外分隔符也不同：卡片與 MB 用斜線，Apple 用逗號加 &。｜固定試聽取首軌沒有問題：Apple 第 1 軌 op. 67 no. 2 正是原盤第 1 軌。｜**曲序要注意**：十首馬祖卡**不是按作品編號排的**（op. 67/2 → 56/2 → 67/4 → 68/2 → 68/1 → 33/1 → 30/3 → 30/2 → 33/4 → 68/4），行文若要描述順序必須照這個實際曲序，不得寫「依作品編號排列」。｜**擋下策展層可能的說法**：維基記的兩次葛萊美**都是入圍不是得獎**，而且入圍的是德布西與舒曼那兩張、**不是本張**；行文不得把獎項掛到這張蕭邦上。"
+ },
+ {
+  "key": "desc2:Arthur Rubinstein|Rubinstein Plays Liszt",
+  "artist": "Arthur Rubinstein",
+  "album": "Rubinstein Plays Liszt",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f9334882 的欄位：title「Rubinstein Plays Liszt」（MB 標題本身就是唱片名，屬策展層第 2 條的第 1 種情況）、artist-credit「Liszt; Rubinstein」、first-release-date 1956、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/f9334882-615a-4150-bf48-66f4641adbdb"
+   },
+   {
+    "f": "唯一的 release e6dec35a：1956 年美國盤、RCA Victor Red Seal **LM-1905**、12 吋黑膠、**7 軌**——A 面〈Funérailles, No. 7 (From \"Harmonies Poétiques Et Religieuses\")〉〈Valse Impromptu〉〈Mephisto Waltz〉，B 面〈Liebestraum No. 3, In A-Flat〉〈Hungarian Rhapsody No. 10, In E〉〈Consolation No. 3, In D-Flat〉〈Hungarian Rhapsody No. 12, In C-Sharp Minor〉。",
+    "src": "https://musicbrainz.org/release/e6dec35a-602b-48ef-b410-8ee36056ccf5"
+   },
+   {
+    "f": "Discogs release 3113010 是同一張美國原盤（RCA Victor Red Seal LM-1905，1956，單聲道），曲目與 MB 逐軌相同；備註記封套上印「A \"New Orthophonic\" High Fidelity Recording」，**內頁解說由 Irving Kolodin 撰寫、版權年標 1955**，並附美國國會圖書館的永久連結 lccn.loc.gov/r56000525。Discogs 上這個編號另有 1956 年的加拿大盤與德國盤、1962 年的義大利盤、1971 年 RCA／Teldec 的德國再版（LM 1905-C）。",
+    "src": "https://www.discogs.com/release/3113010"
+   },
+   {
+    "f": "Apple Music 上最接近的一筆是 collectionId **427972467「Rubinstein - The Liszt Album」**（Arthur Rubinstein，七店面全有，**17 軌、兩張碟**，17 軌全部有 previewUrl），copyright 欄寫「℗ Originally Recorded in **1950, 1953, 1955** Sony Music Entertainment／(P) Originally Recorded in **1956, 1961, 1965, 1970** Sony Music Entertainment」。**它的第二片（2-01 到 2-08）就是 LM-1905 的七軌、順序完全相同**，只在第三個位置多插了一首〈Valse oubliée No. 1〉：Funérailles（10:38）／Valse Impromptu（5:28）／**Valse oubliée No. 1（3:05）**／Mephisto Waltz No. 1（10:51）／Liebestraum No. 3（5:10）／Hungarian Rhapsody No. 10（5:48）／Consolation No. 3（4:07）／Hungarian Rhapsody No. 12（10:15）。第一片則是李斯特第一號鋼琴協奏曲（四軌）、b 小調奏鳴曲（四軌）與另一首〈Valse Oubliée〉，與本卡無關。",
+    "src": "https://music.apple.com/gb/album/427972467"
+   },
+   {
+    "f": "七個店面（gb／us／de／fr／at／it／jp）的 Arthur Rubinstein 目錄（主 artistId 79980320 各 196–200 筆、次要 artistId 1500074261 各 1 筆）全掃，加上 `search?term=Rubinstein Plays Liszt` 逐店面查，**沒有任何一筆是七軌的 LM-1905 單張復刻**。RCA／BMG 的「Rubinstein Collection」系列在 Apple 上很完整（Vol. 50、53、54、56、59、60、63、65、66、67、68 都在），**其中收李斯特的是 Vol. 68「Bach-Busoni, Franck, Liszt」（11 軌），不是本張的曲目組合**。",
+    "src": "https://music.apple.com/gb/artist/79980320"
+   }
+  ],
+  "hookCandidates": [
+   "七首曲子、一面三首一面四首：兩首匈牙利狂想曲分站兩端，中間夾著〈愛之夢〉",
+   "封套上印著「New Orthophonic 高傳真錄音」，解說的版權年是 1955"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Arthur Rubinstein，RCA Victor 單聲道錄音，一張 12 吋黑膠七首李斯特。以 Apple 上同一批錄音的長度為參考，最長的〈梅菲斯特圓舞曲〉與〈Funérailles〉都在十分半上下，最短的〈Consolation No. 3〉約四分鐘。",
+  "keyTracks": [
+   "Funérailles",
+   "Mephisto Waltz",
+   "Liebestraum No. 3",
+   "Hungarian Rhapsody No. 12"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1956。MB first-release-date 1956、唯一 release 1956 美國盤 RCA LM-1905、Discogs release 3113010 同樣記 1956，**三方一致**。**錄音年比發行年早，而且只有區間可以講**：Discogs 記封套內頁解說的版權年是 **1955**（所以錄音不晚於 1955），Apple 那筆合輯的 copyright 欄把整批錄音的年份列成「1950, 1953, 1955」與「1956, 1961, 1965, 1970」兩組——**但那是整張十七軌合輯的年份範圍，不能逐軌對應到本卡的七軌**。**行文不得寫本張某一首錄於哪一年**；能寫的上界是「1955 年以前錄的」（有 Discogs 的解說版權年當依據）。",
+  "notes": "**試聽維持 unavailable，但主線若要收，有一個可用但需要動固定試聽的選項。** 七店面的 Rubinstein 目錄（各 196–200 筆）與 `search?term=` 全掃，**沒有任何一筆是 LM-1905 那七軌的單張復刻**。｜唯一涵蓋本卡全部內容的是 Apple **427972467「Rubinstein - The Liszt Album」**（七店面，17 軌兩片，全有 previewUrl）：**它的第二片正好是 LM-1905 的七軌、順序一模一樣**，只多插一首〈Valse oubliée No. 1〉；第一片是協奏曲與 b 小調奏鳴曲，與本卡無關。**若主線決定收它，必須做兩件事**：(1) `originalTrackCount` 鎖 **7**（MB 原盤直記，裁定 141），行文不得說「這張碟有十七首」；(2) **固定試聽絕對不能取第 1 軌**——第 1 軌是鋼琴協奏曲第一樂章，**原盤的開場是第二片第 1 軌〈Funérailles〉**，要人工改指（裁定 157／c-99 第 2 條的形狀）。**若不接受這種「一整片才是本張」的形態，本卡就是 unavailable。**｜**RCA／BMG 的「Rubinstein Collection」在 Apple 上很完整但沒有本張**：收李斯特的是 Vol. 68「Bach-Busoni, Franck, Liszt」（11 軌），曲目組合不同，不得取用。｜**擋下策展層可能的說法**：英文維基的 Arthur Rubinstein 條目沒有提到這張唱片，MB 與 Discogs 也沒有給任何評價或銷量；行文不得寫「他最著名的李斯特」「唯一一張全李斯特專輯」這一類——**光是 Apple 上那張十七軌的《The Liszt Album》就證明他的李斯特錄音不只這七首**。"
+ },
+ {
+  "key": "desc2:Karl Richter|Bach: Johannes-Passion",
+  "artist": "Karl Richter",
+  "album": "Bach: Johannes-Passion",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 48ed821f 的欄位：title「Johannes-Passion」、artist-credit「Johann Sebastian Bach; Karl Richter」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 3 個 release。",
+    "src": "https://musicbrainz.org/release-group/48ed821f-3af2-3ec0-bf97-b853306751cf"
+   },
+   {
+    "f": "三筆 release **軌數都是 40**：7715f769（1992 DE，**Archiv Produktion 435 947-2**，兩張 CD 20＋20）、03f31255（1996-08-15 DE，Deutsche Grammophon 453 007-2，兩張 CD 20＋20）、9bfb58ca（2016-03 XW，Archiv Produktion 9031-74862-2，數位 40 軌）。曲目按受難曲的四個場景分段標示（Verrat und Gefangennahme／Verleugnung／…／Grablegung），第 1 軌是開場合唱〈Herr, unser Herrscher〉11:10，倒數第二軌是〈Ruht wohl, ihr heiligen Gebeine〉8:18，最後一軌是終曲聖詠〈Ach Herr, laß dein lieb Engelein〉2:47。",
+    "src": "https://musicbrainz.org/release/7715f769-16be-4cdf-8578-716e33186df4"
+   },
+   {
+    "f": "英文維基〈Karl Richter (conductor)〉：1926 年 10 月 15 日生於 Plauen、1981 年 2 月 15 日歿。1949 年畢業那年就當上萊比錫聖多馬教堂的管風琴師（巴哈曾在那裡當了二十七年音樂總監）；**1952 年遷居慕尼黑，1954 年創立慕尼黑巴哈合唱團、隨後創立慕尼黑巴哈管弦樂團，1954 年到 1981 年一直是這兩個團體的指揮**。1977 年 NASA 把慕尼黑巴哈管弦樂團在他指揮下錄的《布蘭登堡協奏曲》第二號第一樂章收進航海家金唱片，送上太空。",
+    "src": "https://en.wikipedia.org/wiki/Karl_Richter_(conductor)"
+   },
+   {
+    "f": "同一條目談他的巴哈觀：他避開當時流行的浪漫式速度伸縮，特別注重木管與整體平衡；**「他 1958 到 1970 年間的錄音以紀律、節奏的緊繃與表現的強度著稱」**。條目另引他自己的話——有人說他今年的《馬太受難曲》和去年的不一樣，他認為那是好事：「如果你只是因為不得不演而帶著輕蔑的例行公事去演一部作品、心裡對它再也沒有任何想法或念頭，那才糟糕。」",
+    "src": "https://en.wikipedia.org/wiki/Karl_Richter_(conductor)"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1534866839「Bach, J.S.: St. John Passion」**，掛名「Münchener Bach-Orchester, Karl Richter & Münchener Bach-Chor」，releaseDate 2020-10-16，copyright「℗ 2020 Deutsche Grammophon GmbH, Berlin」，trackCount 40，**40 軌全部有 previewUrl**；逐軌與 MB 那筆 Archiv 435 947-2 **同名同序、長度逐軌完全相同**（第 1 軌 670 秒、第 2 軌 206 秒、第 39 軌 498 秒、第 40 軌 167 秒），只是 Apple 把兩片併成一片連號。",
+    "src": "https://music.apple.com/gb/album/1534866839"
+   },
+   {
+    "f": "同一份錄音在 Apple 上還有一筆帶原始版權年的：collectionId **1452259846「Bach: St. John Passion, BWV 245」**，掛名列出四位獨唱者「**Evelyn Lear, Hertha Töpper, Ernst Haefliger, Hermann Prey**」加慕尼黑巴哈管弦樂團／合唱團與 Karl Richter，releaseDate 1964-01-01、copyright「**℗ 1964 Deutsche Grammophon**」，七店面全有——**這是本張的錄音年直接證據**。但它的 `trackCount` 欄寫 41、曲目列只攤得出 40 軌，且它把原曲的第 2–6 段併成一軌（軌名作「2.-6. Recitative And Chorus」），與 MB 的分軌不一致。另有 1485926782（℗ 2019 Urania Records，24 軌）是分軌更粗的第三方版本。",
+    "src": "https://music.apple.com/gb/album/1452259846"
+   }
+  ],
+  "hookCandidates": [
+   "1954 年他在慕尼黑一口氣創了合唱團與樂團，然後帶著這兩個團體錄了二十七年的巴哈",
+   "有人說他今年的受難曲和去年不一樣——他覺得那正是好事"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Karl Richter 指揮慕尼黑巴哈合唱團與慕尼黑巴哈管弦樂團，獨唱是 Ernst Haefliger（福音史家）、Hermann Prey、Evelyn Lear、Hertha Töpper。四十軌、兩張 CD，開場合唱〈Herr, unser Herrscher〉11 分 10 秒、收場的〈Ruht wohl〉8 分 18 秒與終曲聖詠 2 分 47 秒；中間大量宣敘調短到只有二十秒上下。",
+  "keyTracks": [
+   "Herr, unser Herrscher",
+   "Von den Stricken meiner Sünden",
+   "Es ist vollbracht",
+   "Ruht wohl, ihr heiligen Gebeine"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1992 是 Archiv CD 的發行年，錄音年是 1964。三層數字並列**：(1) **原始錄音年 1964**——Apple 1452259846 的 copyright 是 **℗ 1964 Deutsche Grammophon**，掛名列出的四位獨唱者（Lear／Töpper／Haefliger／Prey）與 MB 這一筆的內容逐軌長度完全相同，是同一次錄音；(2) MB first-release-date **1992**（Archiv Produktion 435 947-2），與卡單一致——但要注意 **MB 這個 release-group 底下三筆 release 全部是 1992 年以後的 CD／數位，一筆 1964 年的黑膠都沒有**，也就是 MB 這一格記的是 CD 復刻鏈而不是原盤鏈；(3) 1964 年原盤（Archiv 黑膠）的編號與發行日 MB 未收。**卡單值維持 1992，行文不得正面斷言發行年**；要提年份就寫「1964 年的錄音」，那個數字有 Apple 的 ℗ 年當依據。**另外一個時序邊界要記住：Richter 1981 年就過世了，1992 年這套 CD 是他過世十一年後的復刻。**",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1534866839**，七店面全有，40 軌全有 previewUrl，逐軌與 MB Archiv 435 947-2 同名同序、**長度逐軌完全相同**（不是相近，是相同）。**探測層落空的原因是語言**——卡片與 MB 用德文《Johannes-Passion》，Apple 用英文《St. John Passion》，這是 c-98 第 2 條「盤名變形」在古典線的另一種形狀（**同一部作品的德文名對英文名**）。｜**次選 1452259846**（℗ 1964 DG，七店面，掛名完整列出四位獨唱者）：版權年是原始的，但**它的 `trackCount` 欄寫 41、實際只攤得出 40 軌**，而且**分軌方式與原盤不同**（把第 2–6 段併成一軌），依裁定 141 應以 MB 的 40 軌分法為準，所以主鍵取 1534866839 較安全；1452259846 可以當錄音年的證據來源。**1485926782（℗ 2019 Urania，24 軌）分軌太粗、不得取用。**｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Herr, unser Herrscher〉正是原曲開場。｜掛名：MB 的 artist-credit 只有「Johann Sebastian Bach; Karl Richter」——**四位獨唱者與兩個團體都沒有進 credit**，卡片取指揮，合策展層第 3 條；但 Apple 那兩筆的 artistName 把樂團排在最前（1534866839）或把獨唱者排在最前（1452259846），**藝人閘兩邊都會落空**。｜**擋下策展層可能的說法**：維基那句「以紀律、節奏的緊繃與表現的強度著稱」講的是他 **1958 到 1970 年間**的錄音，本張的 1964 落在這個區間內、可以引；但條目**沒有**說這套《約翰受難曲》是他的代表作或定本，也沒有給任何獎項，行文不得寫最高級。他過世於 1981 年，**1992 年的發行與他本人無關**，不得寫成「他晚年整理的版本」。"
+ },
+ {
+  "key": "desc2:Jacqueline du Pré|Dvořák: Cello Concerto / Waldesruhe",
+  "artist": "Jacqueline du Pré",
+  "album": "Dvořák: Cello Concerto / Waldesruhe",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3b7812ec 的欄位：title「Cello Concerto, Op. 104 / Waldesruhe, Op. 68 No. 5」、artist-credit「Dvořák; Jacqueline du Pré, Chicago Symphony Orchestra, Daniel Barenboim」、first-release-date **1971-09**、primary-type Album、secondary-types 空、轄下 6 個 release。",
+    "src": "https://musicbrainz.org/release-group/3b7812ec-59f7-3fc4-8a51-c11dc4bf7b47"
+   },
+   {
+    "f": "六筆 release **全部是 4 軌**：bdb7ec69（1971-09 US，**Angel Records S-36046**，12 吋黑膠，四軌 15:22／13:16／13:33／6:41）、e06991e1（2012 XW 數位，EMI Classics ASD 2751）、97bd6fbc（2014-07-16 JP，Warner WPCS-23057 CD）、81779100（2017-10-13 US 數位，Warner）、59f56779（2022-06-03 XW 數位，Warner）、026a38e3（無日期）。第 4 軌在 MB 上作「Waldesruhe \"Silent Woods\", Op. 68 No. 5」——**同一首曲子的德文名與英文名並列**。",
+    "src": "https://musicbrainz.org/release/bdb7ec69-11ef-4e02-91f6-b61cbc97379a"
+   },
+   {
+    "f": "Discogs release 2339386 是英國原盤 His Master's Voice **ASD 2751**（1971，立體聲黑膠），備註寫「℗ 1971 E.M.I. Records (The Gramophone Company Ltd.)」與「**Recorded in the Medinah Temple, Chicago**」；工作人員列大提琴獨奏 Jacqueline du Pré、指揮 Daniel Barenboim、樂團 Chicago Symphony Orchestra、製作人 Peter Andry、平衡工程師 Carson Taylor、內頁解說 W. A. Chislett。",
+    "src": "https://www.discogs.com/release/2339386"
+   },
+   {
+    "f": "英文維基〈Jacqueline du Pré〉：1945 年 1 月 26 日生於牛津、**1987 年 10 月 19 日過世，得年 42**；十一歲拿下英國最重要的大提琴獎、十六歲在 Wigmore Hall 正式登台、1965 年以艾爾加大提琴協奏曲在美國首演一舉成名；**1967 年 6 月 15 日與 Daniel Barenboim 在耶路撒冷西牆結婚**（六日戰爭前夕她取消了手上所有的演出飛去以色列）。**她的演奏生涯在二十多歲後半因多發性硬化症中斷**，此後以教學為主直到過世。",
+    "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+   },
+   {
+    "f": "同一條目談她的琴與晚期錄音：1970 年她換用費城製琴師 Sergio Peresson 做的一把現代琴，**「那把 Peresson 是她此後直到 1973 年生涯結束都在用的琴，包括第二次的艾爾加協奏曲現場錄音，以及她最後一次錄音室錄音——1971 年 12 月錄的蕭邦 g 小調大提琴奏鳴曲與法朗克 A 大調小提琴奏鳴曲的大提琴改編版」**。條目另記她 1968 年與 Zubin Mehta／柏林愛樂首演時拉的就是德弗札克這首 b 小調大提琴協奏曲。",
+    "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **694084609「Dvorak: Cello Concerto, Silent Woods」**，掛名 Jacqueline du Pré，releaseDate 1971-01-01，**copyright 欄是空的**，trackCount 4，**4 軌全部有 previewUrl**；四軌與 MB 的 Angel S-36046 同名同序、長度各差 6~7 秒（929／798／815／407 秒對 MB 的 922／796／813／401 秒）。",
+    "src": "https://music.apple.com/gb/album/694084609"
+   },
+   {
+    "f": "Apple 上另有三筆同錄音的不同包裝，都不是四軌的原盤形態：693626946「Dvořák & Elgar Cello Concertos」（℗ 1995 Parlophone，七店面，7 軌，把德弗札克與艾爾加兩首協奏曲併在一起、**沒有 Waldesruhe**）、696896682「Dvorák: Cello Concerto ... - Haydn: Cello Concerto No. 1」（℗ 2006 Parlophone，6 軌，配的是海頓、**也沒有 Waldesruhe**）、693625712「Dvorak: Cello Concerto in B Minor」（℗ 2004 EMI，6 軌）。",
+    "src": "https://music.apple.com/gb/album/693626946"
+   }
+  ],
+  "hookCandidates": [
+   "芝加哥 Medinah Temple：台上是她，台下指揮的是她結婚四年的丈夫",
+   "四軌、四十八分鐘——三個樂章之後，最後留一首六分四十一秒的〈林間靜謐〉"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：大提琴 Jacqueline du Pré，Daniel Barenboim 指揮芝加哥交響樂團，錄於芝加哥 Medinah Temple（Discogs 記載），製作人 Peter Andry、平衡工程師 Carson Taylor。四軌：協奏曲三個樂章 15:22／13:16／13:33，加上〈Waldesruhe（林間靜謐）〉6:41，全片約四十九分鐘。",
+  "keyTracks": [
+   "Cello Concerto in B minor, Op. 104: I. Allegro",
+   "Cello Concerto in B minor, Op. 104: II. Adagio ma non troppo",
+   "Waldesruhe (Silent Woods), Op. 68 No. 5"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1971。MB first-release-date **1971-09**（美國 Angel S-36046）、Discogs 英國原盤 ASD 2751 記 **1971** 且備註寫 ℗ 1971 EMI、Apple 那筆的 releaseDate 也是 1971-01-01，**三方一致，卡單值沒有爭議**。**但錄音年不等於 1971，而且查不到確切年月**：Discogs 只給了錄音地點（芝加哥 Medinah Temple）沒有給日期，MB 六筆 release 也都沒有錄音日期，Apple 那筆的 copyright 欄甚至是空的。**行文不得寫某一年錄的**，可以寫的是地點與「1971 年發行」。可用的時間邊界有來源：du Pré 1970 年才換用 Peresson 琴、生涯 1973 年結束（英文維基）。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **694084609**，七店面全有，**4 軌全有 previewUrl，軌數與曲序與 MB 的 Angel S-36046 原盤完全相同**，長度各差 6~7 秒。這是本組覆核裡最乾淨的一筆——**沒有加曲、沒有併盤、沒有重排**。｜**探測層落空的原因是第 4 首曲子的名字**：卡片與 MB 用德文《Waldesruhe》，Apple 用英文《Silent Woods》（MB 那筆自己是並列的「Waldesruhe \"Silent Woods\"」），**同一首曲子兩個語言的名字**——與同組 Karl Richter 那張《Johannes-Passion》對《St. John Passion》是同一種形狀。｜**要擋的三個近似品項都缺〈Waldesruhe〉**：693626946（配艾爾加，7 軌）、696896682（配海頓，6 軌）、693625712（6 軌）——**依 c-97 第 10 條，缺一整首就是缺一整首，不得取用**；策展層第 6 條特別用「把同碟的第二首曲目寫進盤名」來區分本張與池中的 Rostropovich 版，這幾筆正好把那個區分鍵拿掉了。｜固定試聽取首軌沒有問題：Apple 第 1 軌就是協奏曲第一樂章。｜掛名：MB 的 artist-credit 是「Dvořák; Jacqueline du Pré, Chicago Symphony Orchestra, Daniel Barenboim」，卡片取獨奏者，合策展層第 3 條「協奏曲取獨奏者」。｜**時序主張要擋**：du Pré 1987 年過世、演奏生涯 1973 年就中斷，**但這張不是她的最後一次錄音**——英文維基明寫她**最後一次錄音室錄音是 1971 年 12 月**的蕭邦大提琴奏鳴曲與法朗克奏鳴曲改編版。行文不得寫「生前最後的錄音」。可以寫的是有來源的：她 1968 年與 Mehta／柏林愛樂首演時拉的就是這首德弗札克；以及她與指揮 Barenboim 是夫妻（1967 年 6 月 15 日結婚）。"
  }
 ]
