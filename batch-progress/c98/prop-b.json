@@ -244,7 +244,7 @@
    "world"
   ],
   "label": "Fontana／Phonogram（catno 6325 332）",
-  "why": "Alan Stivell 在《Chemins de terre》之後、以家鄉朗戈內為題錄的一張（Discogs master 233359 記 Fontana 6325 332、1974，盤名作 E Langonned = A Langonnet），編制回到樂器與人聲的小規模，是他在國際化與地方性之間往回走的一張。實掃 seed_cards.json 全 14,424 列，Alan Stivell 池中三張全部集中在 1971–1973；1974 年之後的目錄池中零張，這張是緊接《Chemins de terre》的下一格。",
+  "why": "Alan Stivell 在《Chemins de terre》之後、以家鄉朗戈內為題錄的一張（Discogs master 233359 記 Fontana 6325 332、1974，盤名作 E Langonned = A Langonnet），與前兩張走向國際市場的大製作相比，這張的規模明顯收回，是他在國際化與地方性之間往回走的一張。實掃 seed_cards.json 全 14,424 列，Alan Stivell 池中三張全部集中在 1971–1973；1974 年之後的目錄池中零張，這張是緊接《Chemins de terre》的下一格。",
   "risk": "盤名有布列塔尼語與法語雙語並置，三種寫法：MB 作「E langonned (A Langonnet)」（括號）、Discogs 作「E Langonned = A Langonnet」（等號）、Apple fr collectionId 1677196014 只作「E Langonned」——三種都要進去重比對。池中已有的《Chemins de terre》在 MB 上 first-release-date 記 1974（池中卡記 1973），與本張同年，兩者要用 MBID 分辨。Apple releaseDate 1974、collectionExplicitness notExplicit；us 落空、fr 命中。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 皆 FR／Official。",
   "mbNote": "釘 release-group 6c69672d-79c6-3861-ab43-fc1a08c34805。回問確認：title「E langonned (A Langonnet)」、artist-credit「Alan Stivell」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 2 個 release（FR／Official ×2）。刻意不釘：a94757b8-2a6c-3bda-9ab5-4e4d2d902747《Chemins de terre》(MB first-release-date 1974，池中已有)、3c617033-fd21-3f45-9c0b-6aa0029e4338《Trema'n inis (vers l'île)》(1976，同樣是布列塔尼語加法語括號副標的同型盤名)。藝人 MBID abc61045-7ae3-48d9-91f2-d44689d53c9a。",
   "releaseType": "Album",

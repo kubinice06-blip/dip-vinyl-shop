@@ -9,12 +9,14 @@
 派工信預期「§5.6 這批會用很兇」。實掃結果與 c-95（爵士與藍調）一致：
 
 **MusicBrainz 不用 `primary-type=Compilation` 建 1940–50 年代的整編輯。**
-本批掃過的 16 位 a 組藝人名下 release-group 合計 **1,972 筆**
+本批掃過的 16 位 a 組藝人名下 release-group 合計 **2,051 筆**
 （Hank Williams 214、Patsy Cline 355、Tammy Wynette 265、Marty Robbins 370、
 Flatt & Scruggs 101、Pete Seeger 153、Joan Baez 159、Woody Guthrie 96、
 Louvin Brothers 64、Odetta 44、Garth Brooks 73、Randy Travis 65、NGDB 62、
-Dock Boggs 8、Elizabeth Cotten 5、J.D. Crowe & The New South 17），
-**`primary-type=Compilation` 是 0 筆**；整編輯一律建成 `primary-type=Album` ＋ `secondary-types=[Compilation]`。
+Dock Boggs 8、Elizabeth Cotten 5、J.D. Crowe and the New South 17），
+逐筆統計 `primary-type` 的分佈是
+**Album 1,471／Single 452／EP 108／Other 8／Broadcast 3／未填 9——`Compilation` 0 筆**；
+整編輯一律建成 `primary-type=Album` ＋ `secondary-types=[Compilation]`。
 
 依 §5.6 明文，這一型**照一般 Album 寫、`releaseType` 填 `Album`、
 `exceptionReason` 與 `exceptionEvidenceUrls` 留空**——填了會被 `chk-prop` 判「非合輯卻帶例外欄位」。
