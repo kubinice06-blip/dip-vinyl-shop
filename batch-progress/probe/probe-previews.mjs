@@ -82,10 +82,13 @@ const USB = ['us', 'gb', 'jp', 'ca', 'de', 'fr', 'au'];
 // 蘇聯與東歐在 ru／pl。gb 放在 us 之後是因為大量歐洲片的英語版發行權落在英國。
 const OST = ['us', 'gb', 'it', 'fr', 'de', 'jp', 'ru', 'pl', 'es', 'ca', 'au'];
 // 台灣線（c-89～c-92）。第 158 條：用原文盤名去搜當地店面，tw 排第一。
-// hk／sg／my 是華語發行權常見的鄰接市場；**cn 要放進來**——c-89 的策展層回報
-// 伍佰有五張在 MB 上是簡體建檔（诗情摇滚、单程车票、无尽闪亮的哀愁、让水倒流、
-// 纯白的起点），那幾張的 Apple 條目很可能也落在簡體市場。
-const TWN = ['tw', 'hk', 'sg', 'my', 'cn', 'us', 'jp', 'gb'];
+// hk／sg／my 是華語發行權常見的鄰接市場。
+// **cn 原本排在 my 後面**，理由是 c-89 策展層回報伍佰有五張在 MB 上是簡體建檔
+// （诗情摇滚、单程车票、无尽闪亮的哀愁、让水倒流、纯白的起点），推測 Apple 條目
+// 也可能落在簡體市場。**2026-09-05 實測推翻**：台灣線 143 張、61 個試聽命中，
+// **cn 零命中**（tw 51、hk 7、jp 2、us 1、sg 1）——那五張在 Apple 上仍是繁體、落在 tw。
+// **MB 的建檔語言不預測 Apple 的上架市場。** cn 移到最後，不刪（往後的中國搖滾線要用）。
+const TWN = ['tw', 'hk', 'sg', 'my', 'us', 'jp', 'gb', 'cn'];
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
   c87: JPN, c88: OST,
