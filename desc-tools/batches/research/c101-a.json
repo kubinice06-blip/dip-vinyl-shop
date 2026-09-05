@@ -1,0 +1,258 @@
+[
+ {
+  "key": "desc4:植松伸夫|ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン",
+  "artist": "植松伸夫",
+  "album": "ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ddc91d7a 的欄位：title「ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」（藝人實體名同為日文「植松伸夫」，MBID 92bb085a，sort-name Uematsu, Nobuo）、first-release-date 1991-06-14、primary-type Album、secondary-types [Soundtrack]。轄下 15 個 release：Official 10、Pseudo-Release 3、Bootleg 1（1999 TW 長榮國際唱片 GM-213）、Withdrawn 1。",
+    "src": "https://musicbrainz.org/release-group/ddc91d7a-5201-3d83-abb6-b101c1a020c5"
+   },
+   {
+    "f": "同一端點的 release 明細：1991-06-14 JP Official 同日兩筆——SQUARE BRAND N23D-001（CD，1 片 44 軌）與 N20T-001（Cassette，同 44 軌）；1994-11-26 Squaresoft PSCN-5014、2004-10-01 NTT出版 NTCP-5014、2005-05-10 SQUARE ENIX SEMO-00004（Digital Media）都是同 44 軌的重出。2001-08-21 US Official TOKYOPOP Soundtrax TPCD 0210-2《Final Fantasy IV Official Soundtrack: Music From Final Fantasy Chronicles》是**45 軌**，比原盤多一軌。2013-07-03／2014 的 SQEX-10373／10374 是**兩片 24＋33 軌的リマスターバージョン**，不是原盤。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ddc91d7a-5201-3d83-abb6-b101c1a020c5&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 04de52f7（1991-06-14 JP SQUARE BRAND N23D-001）的逐軌曲目：44 軌單片，第 1 軌〈プレリュード〉、第 2 軌〈赤い翼〉、第 3 軌〈バロン王国〉、第 4 軌〈愛のテーマ〉，末兩軌〈最後の闘い〉〈エンディング・テーマ〉。",
+    "src": "https://musicbrainz.org/release/04de52f7-a1d9-4d3c-a294-596d50ceffec"
+   },
+   {
+    "f": "Apple Music jp collectionId 61052896《FINAL FANTASY IV (Original Soundtrack)》：artistName 植松伸夫、releaseDate 1991-06-14、copyright「℗ 1991 SQUARE ENIX MUSIC」、trackCount 44，`entity=song` 攤得出 44 軌、**44 軌全部有 previewUrl**，單片。與 MB 原盤逐軌逐位置對得上（只有三處寫法差異：第 23 軌 MB「黒い甲冑ゴルベーザ」／Apple「黒い甲冑のゴルベーザ」、第 29 軌 MB「飛空艇」／Apple「飛空挺」、第 35 軌 MB「キング・ジォットの城」／Apple「キング・ジオットの城」）。同一 collectionId 在 de／gb／hk／jp／tw／us **六個店面全部命中**。",
+    "src": "https://itunes.apple.com/lookup?id=61052896&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジーIV〉的 Date 欄記 Super Famicom 版**日本 1991 年 7 月 19 日**發售（北美 1991-11-23，另有 1991-10-29 的イージータイプ）。原聲盤 1991-06-14 比遊戲本體**早 35 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCIV"
+   },
+   {
+    "f": "同一位藝人（MBID 92bb085a）在本批另一張《ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン》的 MB release 清單裡有 **1994-12-01 US Official、Squaresoft SQ108《Kefka's Domain: The Complete Soundtrack From the Final Fantasy III Video Game》**——那是同一批曲目的美國發行，早於本張的 2001 年 TOKYOPOP 版七年。",
+    "src": "https://musicbrainz.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a"
+   }
+  ],
+  "hookCandidates": [
+   "同一天出兩種：CD 一張、卡帶一張，編號 N23D-001 與 N20T-001 並排",
+   "碟先出，遊戲後到——1991 年 6 月 14 日的唱片，等到 7 月 19 日才有遊戲可配"
+  ],
+  "sound": "MB release 04de52f7（SQUARE BRAND N23D-001）記 44 軌單片、CD 與卡帶同日兩種載體；MB 未填總長。曲序自〈プレリュード〉起、終於〈エンディング・テーマ〉。2013 年的リマスターバージョン把同一份曲目重排成兩片 24＋33 軌（SQEX-10373／10374），**軌數與分片都與原盤不同，行文不得引用那一版的數字**。",
+  "keyTracks": [
+   "プレリュード",
+   "赤い翼",
+   "愛のテーマ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。MB release-group first-release-date 1991-06-14、其下 1991-06-14 JP Official 兩筆（CD N23D-001／卡帶 N20T-001）、Apple jp 61052896 的 releaseDate 與 ℗ 年份都是 1991，四處同年同日。**遊戲發售年與原聲帶發行年要分開寫**：Super Famicom 版《ファイナルファンタジーIV》日本發售日是 **1991-07-19**（ja 維基 Date 欄），原聲盤 **1991-06-14** 比它早 35 天——**同一年，但唱片在前**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 61052896**（44 軌、44 軌皆有 previewUrl、曲序與 MB 原盤逐位置相符），de／gb／hk／jp／tw／us 六個店面同一個 collectionId 全部命中。探測落空的原因是**盤名跨文字系統**：卡片盤名是日文《ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン》，Apple 作英文《FINAL FANTASY IV (Original Soundtrack)》，兩者零重疊（裁定 49／158 的形狀）。**策展層的 `curatorRisk` 早就寫出了這個 collectionId**，是探測層沒吃 queryAlias（裁定 76）。\\n**擋下策展層說法兩處**：(1)「也是植松目錄裡最早被美國市場接走的一張——2001 年 TOKYOPOP Soundtrax」——**與來源相反**：同一位藝人的《FF VI》在 MB 上有 **1994-12-01 US Official Squaresoft SQ108**（《Kefka's Domain》），早七年；策展層自己在 FF VI 那張卡上也寫了這一筆。**行文不得寫「最早被美國市場接走」。** (2)「1991 年 6 月 14 日隨 Super Famicom 版《FFIV》發行」——遊戲是 1991-07-19，唱片早 35 天，**不是「隨遊戲發行」**。\\n另有一處要避開：「植松伸夫在 Square 的第一張跨出『遊戲附屬品』的原聲盤」與「FF 系列從 8 位元進到 SNES 音源之後的第一份完整曲集」兩句都查不到來源（MB 與維基都沒有「第一張」的排序陳述），**行文不得寫序數**。\\n**別碟警示**：Apple jp 另有 365460760《FINAL FANTASY IV (DS Version) [Original Soundtrack]》52 軌、1612648866《FINAL FANTASY IV PIXEL REMASTER Original Soundtrack (FFPR Ver.)》54 軌、1711374624《Piano Collections FINAL FANTASY IV》14 軌——三筆都不是本盤。\\n池中重複卡：策展層實掃 seed_cards.json 全 14,424 列，`植松伸夫` 與 `Nobuo Uematsu` 兩種寫法皆 0 命中，**沒有另一種寫法的重複卡**。"
+ },
+ {
+  "key": "desc4:植松伸夫|ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン",
+  "artist": "植松伸夫",
+  "album": "ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 89bddb55 的欄位：title「ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」（實體 92bb085a）、first-release-date 1994-03-25、primary-type Album、secondary-types [Soundtrack]。轄下 13 個 release：Official 8、Bootleg 3（全部是台灣盤——笙美 GAME-008〜010、MIYA MICA-0204〜0206、Top Circle/Yuanding FF-32〜34）、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/89bddb55-5e9f-3b4c-b5cd-630c7265324a"
+   },
+   {
+    "f": "同一端點的 release 明細：1994-03-25 JP Official，Squaresoft PSCN-5001／5002／5003＋NTT出版，**三片 25＋20＋16 軌＝61 軌**；1994-12-01 US Official Squaresoft **SQ108**，盤名改成《Kefka's Domain: The Complete Soundtrack From the Final Fantasy III Video Game》，同樣三片 25＋20＋16；2004-10-01 NTT出版 NTCP-5001〜5003；2005-05-10 US SQUARE ENIX SEMO-00007〜00009（Digital Media）；2013-09-04 SQEX-10387〜10389《Remaster Version》。**每一筆 Official 的分片與軌數都是 25＋20＋16，沒有加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=89bddb55-5e9f-3b4c-b5cd-630c7265324a&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release d65a9f8a（1994-03-25 JP PSCN-5001〜5003）的逐軌曲目：第 1 軌〈予兆〉、第 2 軌〈炭坑都市ナルシェ〉、第 3 軌〈目覚め〉、第 4 軌〈ロックのテーマ〉；第三片末兩軌〈蘇る緑〉〈プレリュード〉。第 32〜34 軌是歌劇段落〈オペラ「序曲」〉〈オペラ「アリア」〉〈オペラ「婚礼のワルツ〜決闘」〉。",
+    "src": "https://musicbrainz.org/release/d65a9f8a-c58d-42b6-aba4-9d31f65999eb"
+   },
+   {
+    "f": "Apple Music jp collectionId 62447175《FINAL FANTASY VI (Original Soundtrack)》：artistName 植松伸夫、releaseDate 1994-03-25、copyright「℗ 1994 SQUARE ENIX MUSIC」、trackCount 61，`entity=song` 攤得出 61 軌、**61 軌全部有 previewUrl**，分成 disc 1／2／3。逐軌與 MB 原盤同位置相符（差異只在寫法：第 17 軌「獣ヶ原」／「獣ケ原」，以及第 32〜34 軌 Apple 把「オペラ「…」」的前綴省掉）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=62447175&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジーVI〉的 Date 欄記 Super Famicom 版**日本 1994 年 4 月 2 日**、北美 1994-10-11 發售。原聲盤 1994-03-25 比遊戲本體**早 8 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCVI"
+   },
+   {
+    "f": "同一位作曲家名下的《FINAL FANTASY IX Original Soundtrack》（MB d072b8eb）是四片 32＋26＋26＋26＝**110 軌**、《Final Fantasy VII: Original Soundtrack》（7fab854c）是四片 23＋21＋23＋18＝**85 軌**，兩張都比本張的 61 軌長。",
+    "src": "https://musicbrainz.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa"
+   }
+  ],
+  "hookCandidates": [
+   "歌劇整段被切成三軌收進第二片：〈序曲〉〈アリア〉〈婚礼のワルツ〜決闘〉",
+   "同一套三片，日本叫《FF VI》，美國叫《Kefka's Domain》——連編號都換成 SQ108"
+  ],
+  "sound": "MB release d65a9f8a 記三片 25＋20＋16＝61 軌（CD，Squaresoft PSCN-5001／5002／5003）。第一片自〈予兆〉起，第三片以〈蘇る緑〉〈プレリュード〉收；第 32〜34 軌是連續三段歌劇。MB 未填逐軌長度。**1994-12-01 的美國盤 SQ108 是同一套三片、同樣 61 軌，只換盤名與編號**，不是另一種內容。",
+  "keyTracks": [
+   "予兆",
+   "炭坑都市ナルシェ",
+   "オペラ「アリア」"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。MB first-release-date 1994-03-25、其下 1994-03-25 JP Official（PSCN-5001〜5003）、Apple jp 62447175 的 releaseDate 與 ℗ 年份都是 1994。**遊戲發售年與原聲帶發行年**：Super Famicom《ファイナルファンタジーVI》日本 **1994-04-02**（ja 維基 Date 欄），原聲盤 **1994-03-25**，**同年、唱片早 8 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 62447175**（61 軌、61 軌皆有 previewUrl、三片分佈 25／20／16 與 MB 原盤相同），六個店面全部命中。落空原因同 FF IV——卡片盤名日文、Apple 盤名英文，且卡片的半形冒號在 Apple 那側不存在。策展層 `curatorRisk` 已寫出這個 collectionId。\\n**擋下策展層說法一處（與來源相反）**：「也是他目錄裡篇幅最大的一份」——**假的**。同一位作曲家的《FF IX》110 軌、《FF VII》85 軌都比本張的 61 軌長，而策展層自己在 FF IX 那張卡上就寫了「是他名下軌數最多的一張」。**行文不得寫「篇幅最大」。**\\n另擋下一處措辭：「位置與次年由光田康典接手的《クロノ・トリガー》相鄰」——《クロノ・トリガー》(1995) 的作曲欄在 ja 維基上是**光田康典／植松伸夫／松枝賀子三人**，不是「交棒給光田」。行文若要提這條線，只能寫「次年的《クロノ・トリガー》由光田康典主寫」，不得寫成植松退出。\\n「植松伸夫在 SNES 音源上的收尾之作」查不到直接來源，**行文不得寫序數或「最後」**。\\n**別碟警示**：Apple jp 另有 191390921《FINAL FANTASY VI Grand Finale (Original Soundtrack)》11 軌（1994 管弦編曲盤）、1612650335《FF VI PIXEL REMASTER》94 軌、1711370165《Piano Collections FINAL FANTASY VI》13 軌——三筆都不是本盤，且 Grand Finale 的 Apple 年份也標 1994，年份閘分不出來。\\n池中重複卡：0（策展層實掃 14,424 列，日文與羅馬拼音兩種寫法皆 0）。"
+ },
+ {
+  "key": "desc4:植松伸夫|Final Fantasy VII: Original Soundtrack",
+  "artist": "植松伸夫",
+  "album": "Final Fantasy VII: Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7fab854c 的欄位：title「Final Fantasy VII: Original Soundtrack」、artist-credit「植松伸夫」（實體 92bb085a）、first-release-date 1997-02-10、primary-type Album、secondary-types [Soundtrack]。轄下 13 個 release：Official 7、**Bootleg 4（全部台灣盤：1997 笙美 A&G-007〜010、1997 K-O Records KO-99001〜99004、1999 長榮國際 GM-219〜221、2003 MIYA MICA-0071〜0074）**、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/7fab854c-8d2f-31f3-aa82-ad7cbf7532eb"
+   },
+   {
+    "f": "同一端點的 release 明細：1997-02-10 JP Official **同日兩筆** DigiCube SSCX-10003 與 SSCX-10004，都是**四片 23＋21＋23＋18＝85 軌**；2004-05-10 JP SQUARE ENIX SQEX-10001〜10004（同 85 軌）；2005-05-10 數位版。**這個 release-group 裡另有兩筆自家黑膠：2013-12-11 SQEX-10418／10419 與 2015-07-01 SQEX-10505／10506，都是《Final Fantasy VII Vinyl》兩片 16＋13 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7fab854c-8d2f-31f3-aa82-ad7cbf7532eb&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 03555f37（1997-02-10 JP DigiCube SSCX-10003）的逐軌曲目：85 軌四片，第 1 軌〈プレリュード〉、第 2 軌〈オープニング～爆破ミッション〉、第 3 軌〈魔晄炉〉、第 4 軌〈不安な心〉，末兩軌〈星の危機〉〈スタッフロール〉。",
+    "src": "https://musicbrainz.org/release/03555f37-df6a-4304-8456-f53be6ea128b"
+   },
+   {
+    "f": "Apple Music jp collectionId 61018952《FINAL FANTASY VII (Original Soundtrack)》：artistName 植松伸夫、releaseDate 1997-02-10、copyright「℗ 2005 SQUARE ENIX MUSIC」、trackCount 85，`entity=song` 攤得出 85 軌、**85 軌全部有 previewUrl**，四片分佈 23／21／23／18。**逐軌逐位置與 MB 原盤 85 軌完全相同，零處不符。** de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=61018952&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジーVII〉記 PlayStation 版**日本 1997 年 1 月 31 日**、北美 1997-09-07、歐洲 1997-11-01 發售（另有 1997-10-02 的インターナショナル）。原聲盤 1997-02-10 比遊戲本體**晚 10 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCVII"
+   }
+  ],
+  "hookCandidates": [
+   "同一天發兩個編號，SSCX-10003 與 10004——四片八十五軌，一次出完",
+   "台灣那幾年翻了四套：笙美、K-O、長榮、MIYA，MB 上四筆都標 Bootleg"
+  ],
+  "sound": "MB release 03555f37 記四片 23＋21＋23＋18＝85 軌（CD，DigiCube SSCX-10003）。第一片自〈プレリュード〉起、第四片以〈星の危機〉〈スタッフロール〉收。MB 未填逐軌長度。同一 release-group 底下的 2013／2015 兩筆自家黑膠只收 16＋13 軌——**那是選輯規格，行文不得把黑膠的軌數當本盤的**。",
+  "keyTracks": [
+   "プレリュード",
+   "オープニング～爆破ミッション",
+   "スタッフロール"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。MB first-release-date 1997-02-10、其下 1997-02-10 JP Official 兩筆（DigiCube SSCX-10003／10004）、Apple jp 61018952 的 releaseDate 1997-02-10 完全相同。**注意 Apple 的 ℗ 是 2005**（數位化年），不是原盤年——依裁定 77 只當訊號。**遊戲發售年與原聲帶發行年**：PlayStation《FF VII》日本 **1997-01-31**，原聲盤 **1997-02-10**，**同年、唱片晚 10 天**。",
+  "notes": "**ready 覆核通過，且是本組配對最乾淨的一張。** jp 61018952 的 85 軌與 MB 原盤**逐軌逐位置零差異**（依裁定 157 比的是「第 N 軌是哪一首」不是「有沒有這一首」），85 軌全部有 previewUrl，四片分佈 23／21／23／18 與 MB 相同。固定試聽取第 1 軌〈プレリュード〉即為原盤開場，**不需人工改指**。\\n**策展層說法查證**：「四片 23／21／23／18 軌，共 85 軌」「1997 年 2 月 10 日發行，編號 SSCX-10003（同日另有 SSCX-10004 一筆）」「2004 年 5 月 10 日 SQUARE ENIX 以 SQEX-10001〜10004 重出」三句**全部與 MB 相符，可以寫**。「這是 FF 系列第一次進到 PlayStation 的取樣音源」——FF VII 確實是系列第一款 PlayStation 作品（同年 6 月的《FFT》在後），但「取樣音源」是描述不是來源陳述，**行文不得寫成引述**。「植松伸夫目錄裡流通最廣的一張」是無來源的最高級，**擋下**。\\n**一處要更正給下游**：策展層說黑膠化「由 Square Enix 自家做：2012 年《FINAL FANTASY VINYLS》盒與 2022 年《Final Fantasy VII Compilation Vinyl》」——**本張自己的 release-group 裡就有兩筆自家黑膠**（2013-12-11 SQEX-10418／10419、2015-07-01 SQEX-10505／10506，《Final Fantasy VII Vinyl》16＋13 軌），比策展層舉的兩個盒裝更直接。\\n**別碟警示**：Apple jp 另有 70983696《FINAL FANTASY VII - Reunion Tracks》19 軌、314180325《FF VII ADVENT CHILDREN》26 軌、160212409《Piano Collections FF VII》13 軌、1494270549《SQUARE ENIX JAZZ -FINAL FANTASY VII-》12 軌、1665077883《Radiant Melodies – FINAL FANTASY VII》10 軌——**其中 Radiant Melodies 的 Apple 年份也標 1997**，年份閘分不出來，只能靠軌數與 collectionId。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:植松伸夫|FINAL FANTASY IX Original Soundtrack",
+  "artist": "植松伸夫",
+  "album": "FINAL FANTASY IX Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d072b8eb 的欄位：title「FINAL FANTASY IX Original Soundtrack」、artist-credit「植松伸夫」（實體 92bb085a）、first-release-date 2000-08-30、primary-type Album、secondary-types [Soundtrack]。轄下 12 個 release：Official 6、Bootleg 2（台灣長榮 GM-348〜351、MIYA MICA-0079〜0082）、Pseudo-Release 4。",
+    "src": "https://musicbrainz.org/release-group/d072b8eb-4047-3abf-8c67-a9afddfbbafa"
+   },
+   {
+    "f": "同一端點的 release 明細：2000-08-30 JP Official 兩筆，DigiCube SSCX-10043／10044／10045／10046（另一筆並記 TGCS 936〜939），**四片 32＋26＋26＋26＝110 軌**；2004-05-10 JP SQUARE ENIX SQEX-10009〜10012（同四片 110 軌）；同日另有一筆 SQUARE ENIX 的 Digital Media，**把 110 軌壓成單片**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d072b8eb-4047-3abf-8c67-a9afddfbbafa&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 92594dcc（2000-08-30 JP DigiCube SSCX-10043〜10046）的逐軌曲目：110 軌四片，第 1 軌〈いつか帰るところ〉、第 2 軌〈嵐に消された記憶〉、第 3 軌〈作戦会議〉、第 4 軌〈アレクサンドリアの空〉；第 108／109 軌是〈CCJC TVCM 15″〉〈CCJC TVCM 30″〉（可口可樂 CM 曲），末軌〈Melodies of Life [The Layers of Harmony]〉。",
+    "src": "https://musicbrainz.org/release/92594dcc-390d-4b9b-888e-441ca2cead1d"
+   },
+   {
+    "f": "Apple Music jp collectionId 75003561《FINAL FANTASY IX (Original Soundtrack)》：artistName 植松伸夫、**releaseDate 2004-05-10**、copyright「**℗ 2000** SQUARE ENIX MUSIC」、trackCount 110，`entity=song` 攤得出 110 軌、**110 軌全部有 previewUrl**，四片分佈 32／26／26／26。逐軌與 MB 原盤同位置相符（五處只是寫法差異，如第 45 軌 MB「プルメシア王国」／Apple「ブルメシア王国」、第 108／109 軌的引號寫法）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=75003561&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 該 release-group 底下**確有一筆 2004-05-10 的 SQUARE ENIX 重出**（SQEX-10009〜10012，四片 110 軌）與同日的數位版——與 Apple 記的 releaseDate 2004-05-10 同一天。Apple 的 ℗ 年份 2000 指向原盤。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d072b8eb-4047-3abf-8c67-a9afddfbbafa&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジーIX〉的 Date 欄記 PlayStation 版**日本 2000 年 7 月 7 日**、港台星 2000-07-09、北美 2000-12-14、歐洲 2001-02-16。原聲盤 2000-08-30 比遊戲本體**晚 54 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCIX"
+   }
+  ],
+  "hookCandidates": [
+   "第 108、109 軌是可口可樂的十五秒與三十秒廣告曲，跟遊戲一起收進同一套碟裡",
+   "四片一百一十軌——他名下軌數最多的一份"
+  ],
+  "sound": "MB release 92594dcc 記四片 32＋26＋26＋26＝110 軌（CD，DigiCube SSCX-10043〜10046）。第一片自〈いつか帰るところ〉起；第四片尾段收兩軌可口可樂 CM 曲（15″／30″），最末軌是〈Melodies of Life [The Layers of Harmony]〉。MB 未填逐軌長度。2004 年 SQUARE ENIX 另把同 110 軌壓成單片數位版——**分片數不同、內容相同**。",
+  "keyTracks": [
+   "いつか帰るところ",
+   "嵐に消された記憶",
+   "Melodies of Life [The Layers of Harmony]"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2000 正確，Apple 的 2004 是重出日不是版本歧義。MB first-release-date 2000-08-30、其下 2000-08-30 JP Official 兩筆（DigiCube SSCX-10043〜10046）。**Apple jp 75003561 的 releaseDate 2004-05-10 對得上 MB 那筆 2004-05-10 的 SQUARE ENIX 重出（SQEX-10009〜10012）**，而 Apple 自己的 ℗ 年份是 **2000**，兩者合起來說明那筆是「2000 年原盤在 2004 年重出／數位化」，不是另一張碟（裁定 77：Apple 的 releaseDate 只當訊號）。**遊戲發售年與原聲帶發行年**：PlayStation《FF IX》日本 **2000-07-07**，原聲盤 **2000-08-30**，**同年、唱片晚 54 天**。",
+  "notes": "**ready 覆核通過。** jp 75003561 的 110 軌與 MB 原盤逐軌逐位置相符（五處差異全是假名／引號寫法），110 軌皆有 previewUrl，四片分佈 32／26／26／26 與 MB 相同。固定試聽取第 1 軌〈いつか帰るところ〉即原盤開場。\\n**年份偏差已查清：卡單 2000／Apple 2004 是重出，不是別的版本**（見 yearVerified）。**策展層的 jp／us 兩個 collectionId 說法要更正**：策展層在 c-101 rulings 第 9 條說「植松伸夫《FF IX》jp 75003561／us 62444522 是兩個不同的 collectionId」——實查 **75003561 在 de／gb／hk／jp／tw／us 六個店面全部回得出來**，us 也在其中，不必分店面取兩個 id。\\n**策展層說法查證**：「四片 32／26／26／26 軌共 110 軌，是他名下軌數最多的一張」——**成立**（FF VII 85、FF VI 61）。「2004 年 5 月 10 日 SQUARE ENIX 以 SQEX-10009〜10012 重出，同日發數位版」——**成立**（MB 兩筆都在）。「植松伸夫個人單掛的最後一份大型 FF 原聲」「這張是『植松一人寫完一整部 FF』的終點」——**查不到直接來源**（本輪只查了本張與同批各卡的 MB 與 ja 維基，未取得 FF X／FF XI 作曲名單的可點來源），**行文不得寫「最後」「終點」這類序數主張**。\\n**別碟警示**：MB 明列的《FINAL FANTASY IX Original Soundtrack PLUS》是另一個 release-group（策展層已標刻意不釘）；Apple jp 另有 1519561838／1558981405 的 Distant Worlds 系列與 859684854《Piano Opera FF VII/VIII/IX》——都不是本盤。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:近藤浩治|スーパーマリオ64 オリジナルサウンドトラック",
+  "artist": "近藤浩治",
+  "album": "スーパーマリオ64 オリジナルサウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cc4e6e38 的欄位：title「スーパーマリオ64 オリジナルサウンドトラック」、artist-credit「近藤浩治」（藝人實體名同為日文「近藤浩治」，MBID c376498a，sort-name Kondo, Koji）、first-release-date 1996-07-19、primary-type Album、secondary-types [Soundtrack]。**轄下只有 4 個 release**：Official 3、Promotion 1。",
+    "src": "https://musicbrainz.org/release-group/cc4e6e38-e13b-3426-8e0f-1edceb2ada60"
+   },
+   {
+    "f": "四筆 release 全文：1996 US Official，Nintendo of America（無編號），Cassette，36 軌，《Super Mario 64 Original Sound Track》；1996-07-19 JP Official，NINTENDO64 Sound Series **PCCG-00357**，CD，1 片 **36 軌**；1996-11 US Official，Nintendo of America（無編號），CD，36 軌，《Super Mario 64 Original Soundtrack》；1997 DE **Promotion**，Nintendo of Europe 94009，CD，36 軌，《It's a Me, Mario! • The Original Super Mario 64 Soundtrack》。**四筆全部 36 軌單片，沒有加曲版也沒有二合一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cc4e6e38-e13b-3426-8e0f-1edceb2ada60&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release b6d70811（1996-07-19 JP PCCG-00357）的逐軌曲目：36 軌，第 1 軌〈「マリオだよ」〉、第 2 軌〈タイトル〉、第 3 軌〈ピーチのメッセージ〉、第 4 軌〈オープニング〉、第 5 軌〈メインテーマ〉，末兩軌〈スタッフロール〉〈パックンフラワーの子守歌〉。",
+    "src": "https://musicbrainz.org/release/b6d70811-a3bf-4a81-bc81-3ebfda5718a4"
+   },
+   {
+    "f": "Apple Music 目錄端點逐一列完近藤浩治的**四個藝人實體**在 jp／us／gb／de／tw／hk 六個店面的完整專輯目錄——305472810「Koji Kondo」（每店 21 筆）、475970235「近藤 浩治」（jp／tw／hk 各 1 筆）、1812941648「Koji Kondo」（1 筆）、484115746「Koji Kondo, Chelsea Chen」（1 筆）——**沒有任何一筆是本盤**。命中的全是他人翻奏（Daniel Welch、Super Guitar Bros、Brandon Strader、The Greatest Bits、Arcade Player、Masters of Sound 等）與單曲；唯一沾邊的官方品項是 1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》(Various Artists, 21 軌)，那是別的碟。",
+    "src": "https://itunes.apple.com/lookup?id=305472810&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "另以盤名反查亦落空：`search?term=スーパーマリオ64 オリジナルサウンドトラック`（jp，13 筆）與 `term=Super Mario 64 Original Soundtrack`（us，15 筆）回來的全部是翻奏、混音與單曲（The Greatest Bits、Arcade Player、Blue Brew Music、Marimba Man…），**沒有任何一筆是任天堂或 Pony Canyon 的官方原聲盤**。",
+    "src": "https://itunes.apple.com/search?term=Super%20Mario%2064%20Original%20Soundtrack&entity=album&limit=15&country=us"
+   },
+   {
+    "f": "日文維基〈スーパーマリオ64〉的 Date 欄記 NINTENDO 64 版**日本 1996 年 6 月 23 日**、北美加 1996-09-29、歐澳 1997-03-01 發售（另有 1997-07-18 的振動パック對應版）。原聲盤 1996-07-19 比遊戲本體**晚 26 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA64"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌不是音樂，是一句「マリオだよ」",
+   "北美那一版任天堂自己賣，CD 與卡帶各一種，兩種都沒有唱片編號"
+  ],
+  "sound": "MB release b6d70811 記單片 36 軌（CD，NINTENDO64 Sound Series PCCG-00357）。開場是語音軌〈「マリオだよ」〉，其後〈タイトル〉〈ピーチのメッセージ〉〈オープニング〉〈メインテーマ〉；末軌〈パックンフラワーの子守歌〉排在〈スタッフロール〉之後。MB 未填逐軌長度。北美 CD 與卡帶、德國 Promotion 盤都是同樣 36 軌。",
+  "keyTracks": [
+   "「マリオだよ」",
+   "メインテーマ",
+   "パックンフラワーの子守歌"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。MB first-release-date 1996-07-19、其下 1996-07-19 JP Official（PCCG-00357）。**遊戲發售年與原聲帶發行年**：NINTENDO 64《スーパーマリオ64》日本 **1996-06-23**（ja 維基 Date 欄），原聲盤 **1996-07-19**，**同年、唱片晚 26 天**。北美那兩筆 MB 記 1996 與 1996-11，也在同一年內。",
+  "notes": "**試聽 unavailable 成立。** 依裁定 166 走目錄端點而非搜尋端點，逐一列完近藤浩治**四個** Apple 藝人實體在 **jp／us／gb／de／tw／hk 六個店面**的完整專輯目錄（合計 24 份清單，0 筆 NOQUERY），**沒有本盤**；再以日文與英文盤名各搜一次，回來的 28 筆全是翻奏與單曲。**任天堂的原聲盤整體不在 Apple Music 上**——本組三張近藤卡（Mario 64／時のオカリナ／ムジュラの仮面）全部落在這個結構上，不是比對擋掉的（裁定 152 的分界：這是「目錄裡沒有這張」，不是「搜到了卻配不上」）。**維持 unavailable、不留 URL。**\\n**擋下策展層說法兩處**：(1)「以 NINTENDO64 Sound Series 的第一號品項發行」——查不到來源（MB 只記 catno PCCG-00357，沒有任何欄位說它是系列第一號），**行文不得寫「第一號」**。(2)「近藤浩治從 Famicom 世代跨進 N64 之後的第一張原聲盤」——這句跳過了整個 Super Famicom 世代（他寫過《スーパーマリオワールド》《ゼルダの伝説 神々のトライフォース》），**行文不得寫成「Famicom 直接跳到 N64」**，也不得寫「第一張」。\\n可以寫的：「單片 36 軌」「1996-07-19 Pony Canyon PCCG-00357」「同年 11 月任天堂美國分公司自行發行 CD 與卡帶各一版、無唱片編號」「1997 年德國有一筆 Nintendo of Europe 的 Promotion 盤 94009」——四句都與 MB 相符。\\n**封面不受影響**：策展層實測 CAA release-group 端點 200。\\n池中重複卡：0（策展層實掃 14,424 列，`近藤浩治`／`Koji Kondo` 皆 0；第 9994 列的 `Toshinori Kondo / DJ Krush` 是小號手近藤等則，不同人）。"
+ },
+ {
+  "key": "desc4:近藤浩治|ゼルダの伝説 時のオカリナ オリジナルサウンドトラック",
+  "artist": "近藤浩治",
+  "album": "ゼルダの伝説 時のオカリナ オリジナルサウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 61fb70ad 的欄位：title「ゼルダの伝説 時のオカリナ オリジナルサウンドトラック」、artist-credit「近藤浩治」（實體 c376498a）、**first-release-date 1998-11**（不是日本盤的 12 月，而是北美盤那一筆）、primary-type Album、secondary-types [Soundtrack]。轄下 8 個 release：Official 4、Bootleg 2、Promotion 1、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/61fb70ad-198e-4cae-9107-03f28e7abe29"
+   },
+   {
+    "f": "同一端點的 release 明細，**四筆 Official 的軌數各不相同**：1998-12-18 JP，NINTENDO64 Sound Series **PCCG-00475**，CD，**82 軌**；1998-11 US，Nintendo of America（無編號），CD，**35 軌**，《The Legend of Zelda: Ocarina of Time Sound Track CD》（另有一筆同名同 35 軌但只記年份 1998）；1998 US，Bensussen Deutsch & Associates（無編號），CD，**24 軌**，《Zelda Collectible CD》。另有 1998 DE Promotion，Nintendo of Europe 94040，30 軌。Bootleg 兩筆是 82／83 軌的翻版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=61fb70ad-198e-4cae-9107-03f28e7abe29&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 6f1fef64（1998-12-18 JP PCCG-00475）的逐軌曲目：82 軌單片，曲名採「英日並列」寫法——第 1 軌〈Title Theme（タイトル）〉、第 2 軌〈Enter Ganondorf（ガノンドロフ登場）〉、第 3 軌〈Deku Tree（デクの樹のテーマ）〉、第 4 軌〈Fairy Flying（妖精ナビィ）〉，末兩軌〈Ocarina of Time（時のオカリナ）〉〈End Credits（スタッフロール）〉。",
+    "src": "https://musicbrainz.org/release/6f1fef64-bced-4e0a-bc4b-8091a79178ee"
+   },
+   {
+    "f": "Apple Music 目錄端點逐一列完近藤浩治四個藝人實體在 jp／us／gb／de／tw／hk 六個店面的完整目錄，**沒有本盤**；以日文（`ゼルダの伝説 時のオカリナ`，jp，15 筆）與英文（`Ocarina of Time Original Soundtrack`，us，15 筆）各搜一次，回來的全是翻奏、鋼琴集與單曲（Moisés Nieto、Super Guitar Bros、Video Game Music Box、Nestalgica…）。唯一的官方相關品項 1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》(Various Artists, 21 軌, hk／jp／tw) 是**別的碟**，不是 PCCG-00475。",
+    "src": "https://itunes.apple.com/search?term=%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC%20%E6%99%82%E3%81%AE%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A&entity=album&limit=15&country=jp"
+   },
+   {
+    "f": "日文維基〈ゼルダの伝説 時のオカリナ〉的 Date 欄記 NINTENDO 64 版**日本 1998 年 11 月 21 日**、美國 1998-11-23、歐洲 1998-12-11。日本原聲盤 1998-12-18 比日本版遊戲**晚 27 天**；北美那筆 35 軌的原聲盤（MB 記 1998-11）則**與遊戲同月**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC_%E6%99%82%E3%81%AE%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟在日本收八十二軌、在美國只收三十五軌，還有一種二十四軌的預購贈品",
+   "曲名是英日並列印的：Title Theme（タイトル）"
+  ],
+  "sound": "MB release 6f1fef64 記單片 82 軌（CD，NINTENDO64 Sound Series PCCG-00475），曲名一律「英文（日文）」並列。開場〈Title Theme（タイトル）〉、收尾〈End Credits（スタッフロール）〉。MB 未填逐軌長度。**同一 release-group 底下的美國盤只有 35 軌、預購贈品盤 24 軌、德國 Promotion 盤 30 軌——四種規格互不相同，行文只能用日本盤的 82 軌。**",
+  "keyTracks": [
+   "Title Theme（タイトル）",
+   "Ocarina of Time（時のオカリナ）",
+   "End Credits（スタッフロール）"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1998 正確，但要注意 MB 的 first-release-date 記的是 **1998-11**（北美 35 軌版），日本盤 PCCG-00475 是 **1998-12-18**——同年、不同月，兩筆都在 1998。**遊戲發售年與原聲帶發行年**：NINTENDO 64《ゼルダの伝説 時のオカリナ》日本 **1998-11-21**（ja 維基 Date 欄），日本原聲盤 **1998-12-18**，**同年、唱片晚 27 天**；北美原聲盤（1998-11）與北美遊戲（1998-11-23）同月。**行文若要寫月份，必須指明是哪一版。**",
+  "notes": "**試聽 unavailable 成立。** 目錄端點掃過近藤浩治四個藝人實體 × 六個店面（jp／us／gb／de／tw／hk），加日英兩種盤名各一次搜尋，**都沒有本盤**。原因同 Mario 64：任天堂的原聲盤不在 Apple Music 上。**維持 unavailable、不留 URL。**\\n**⚠ 陷阱要往下游傳**：Apple jp／tw／hk 有一筆 **1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》**（Various Artists、21 軌、2017），盤名含「ゼルダの伝説 時のオカリナ」，**任何以盤名子字串比對的腳本都會把它當本張**（裁定 162 的形狀：卡片盤名長、對照組短，但兩者共享最長的那一段）。**不得取用。**\\n**擋下策展層說法一處（與來源相反）**：「近藤浩治目錄裡篇幅最大的一份」——**假的**。同一位作曲家的《ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック》是兩片 59＋53＝**112 軌**，比本張的 82 軌長；策展層自己在下一張卡上就寫了那個數字。**行文不得寫「篇幅最大」。**\\n另擋下一處：「他從 Famicom 短曲循環轉向長篇場景音樂的分界」是敘事判斷、無來源，**不得寫成事實**。\\n可以寫的：「日本版 1998-12-18 Pony Canyon PCCG-00475 單片 82 軌」「北美版早一個月由 Nintendo of America 自營發行 35 軌版」「另有 Bensussen Deutsch & Associates 的 24 軌預購贈品」——三句都與 MB 相符（**但 BD&A 那筆 MB 沒填 barcode，策展層寫的 barcode 617885700026 本輪查不到來源，不得引用**）。\\n池中重複卡：0。"
+ }
+]
