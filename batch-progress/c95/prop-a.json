@@ -1,0 +1,201 @@
+[
+ {
+  "artist": "Robert Johnson",
+  "album": "King of the Delta Blues Singers, Vol. II",
+  "year": 1970,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Columbia（C 30034）",
+  "why": "Robert Johnson 池中只有 1 張（實掃 seed_cards.json 全 14,424 列）：1961 年 Columbia 的《King of the Delta Blues Singers》。這一張是同一條線的第二輯，1970 年由 Columbia 續發，把 1961 年那張沒收進去的另外十六面 Vocalion／ARC 錄音補齊；兩張合起來才是 1961–1970 年間讓 Johnson 從戰前名錄走進戰後聽眾耳朵的那套發行。MB release-group 2609603b（Vol. 1，1961）與本張是同一系列的前後兩輯，池中已有前輯、缺後輯。錄音年是 1936–1937 年在 San Antonio 與 Dallas 的兩次臨時錄音室工作。",
+  "risk": "盤名有 Vol. II／Vol. 2 兩種寫法：MB release-group 作「King of the Delta Blues Singers, Vol. II」，Apple US collectionId 193895743 作「King of the Delta Blues Singers, Vol. 2」（1970-01-01、17 軌、notExplicit），兩種都要進 queryAlias，否則字串去重會漏。與池中既有的《King of the Delta Blues Singers》是子字串包含關係——裁定第 162 條的鏡像風險：卡片盤名較長，反而是既有卡容易被當成本張。年份 1970 是合輯出版年，錄音年 1936–1937，兩者相差 33 年。Apple collectionId 193895743／店面 us。",
+  "mbNote": "釘 release-group 25ff0dee-b3de-3e3a-a316-516dba185170。回問 release-group/<id>?inc=artist-credits+releases 確認：title「King of the Delta Blues Singers, Vol. II」、artist-credit「Robert Johnson」、first-release-date 1970、primary-type Album、secondary-types [Compilation]、轄下 4 個 release（US 2／XE 1／無國別 1），status 全部 Official（第 43／57 條的授權判定：這一次再發是 Official）。依 §5.6 明文，primary-type=Album 而 secondary-types 含 Compilation 者照一般 Album 寫、不填例外欄位。刻意不釘：2609603b-cd7d-3ccf-aa58-94c38defac2c《King of the Delta Blues Singers》（1961，池中已有的前輯）、200b18f9-789e-3875-90a1-a0c6ee1906a9《The Complete Recordings》（1990，本批另收一張）、14efb305《The Complete Collection》與 4a40ae2e《The Complete Collection》（廉價重複包裝）。藝人 MBID 8a8bbba6-72f7-4900-a306-c40b94f2631b，用 release-group?artist=<MBID>&limit=100&offset= 分頁列出名下 85 個 release-group（第 116 條：browse 預設 25 筆會漏掉大半）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "King of the Delta Blues Singers, Vol. 2；King of the Delta Blues Singers Volume II；King of the Delta Blues Singers 2",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Robert Johnson",
+  "album": "The Complete Recordings",
+  "year": 1990,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Columbia / Legacy（C2K 46222）",
+  "why": "Johnson 全部 29 首歌、41 個 take 的完整整編，1990 年 Columbia／Legacy 發行的雙 CD，是他從樂評名詞變成暢銷唱片的那一次發行——這套在 1991 年拿下葛萊美最佳歷史專輯，也是後續所有 Johnson 整編的底本。池中 Robert Johnson 只有 1961 年的《King of the Delta Blues Singers》1 張（實掃全檔），本批另補 1970 年的第二輯；這一張與那兩張的關係是「選輯 → 選輯 → 全集」，補在一起才看得出這條目錄怎麼長出來的。錄音年 1936–1937。",
+  "risk": "與 Columbia 2011 年的《The Complete Original Masters: Centenial Edition》（MB 9f8971a0）、《The Centennial Collection》（MB afc6a985）內容重疊但不是同一次發行，撞卡與釘位兩層都要分開。年份 1990 是合輯首次出版年，錄音年 1936–1937。Apple collectionId 546817591（The Complete Recordings、1990-01-01、41 軌、notExplicit）／店面 us；41 軌對得上雙 CD 的 take 數，版本可核。",
+  "mbNote": "釘 release-group 200b18f9-789e-3875-90a1-a0c6ee1906a9。回問確認：title「The Complete Recordings」、artist-credit「Robert Johnson」、first-release-date 1990-08-20、primary-type Album、secondary-types [Compilation]、轄下 13 個 release（US 6／JP 2／XE 2／XW 2／IT 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9f8971a0-fd23-4105-b925-3975a4aabb78《The Complete Original Masters: Centenial Edition》（2011 百年版，另一次發行）、afc6a985-af5b-46f4-917a-7d5286404123《The Centennial Collection》（2011）、00a24060-8ae0-4177-8f28-0a936e1f15a8《The Complete Master Takes》（2016）——三筆都與本張內容重疊、是最像的假陽性。藝人 MBID 8a8bbba6-72f7-4900-a306-c40b94f2631b，名下 85 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Robert Johnson: The Complete Recordings；The Complete Recordings (Centennial Edition)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Son House",
+  "album": "Father of the Delta Blues: The Complete 1965 Sessions",
+  "year": 1992,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Columbia / Legacy（C2K 48867）",
+  "why": "池中 Son House 只有 1 張：1965 年 Columbia 的《Father of Folk Blues》（實掃全檔）。那張是 1965 年 4 月 John Hammond 主持的錄音室工作挑出來的單張 LP；本張是同一批母帶 1992 年的完整雙 CD 整編，把當年被剪掉的 take 與未發表曲全部放回去，也是 Son House 重出江湖時期最權威的一份文獻。兩張互為「單張選輯」與「完整場次」，補在一起這條目錄才閉合。",
+  "risk": "與池中《Father of Folk Blues》同一批 1965 年錄音，盤名前半段「Father of the Delta Blues」與「Father of Folk Blues」高度相似，字串去重與人工複核都要分開看——MB 另有一筆 848a0684《Father of the Delta Blues》（1992、secondary-types 空）是同一套的另一個條目。年份 1992 是整編首次出版年，錄音年 1965。Apple collectionId 157314970（Father of the Delta Blues: The Complete 1965 Sessions、1992-06-18、21 軌、notExplicit）／店面 us。",
+  "mbNote": "釘 release-group 400a6331-02e5-3cf5-895d-eaf6f8e3934c。回問確認：title「Father of the Delta Blues: The Complete 1965 Sessions」、artist-credit「Son House」、first-release-date 1992、primary-type Album、secondary-types [Compilation]、轄下 5 個 release（US 3／GB 1／無國別 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：848a0684-8ad6-3546-9b8e-8e88fd5ec70b《Father of the Delta Blues》（1992，MB 的同套簡稱條目，最像的假陽性）、1185f4fe-a799-360e-a83b-1224bb59d239《Father of Folk Blues》（1965，池中已有）、83278b0c-3f81-3624-a6bf-8043d0e45f67《Library of Congress Recordings 1941-1942》（另一批錄音）、e101c082《The Complete Library of Congress Sessions 1941-1942》（2021）。藝人 MBID 8c87dda0-be58-4e48-a3b5-2626f26364c7，名下 53 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Father of the Delta Blues；The Complete 1965 Sessions",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Bessie Smith",
+  "album": "The Complete Recordings, Volume 1",
+  "year": 1991,
+  "genres": [
+   "blues",
+   "jazz"
+  ],
+  "label": "Columbia / Legacy（C2K 47091）",
+  "why": "池中 Bessie Smith 只有 1 張：1997 年的《The Essential Bessie Smith》（實掃全檔）。Columbia／Legacy 自 1991 年起用五輯（後追加第六至第八輯）把她 1923–1933 年在 Columbia 的全部錄音按年序整編，第一輯是這套的入口，收 1923–1924 年的初期 Columbia 面，也是「classic blues」女歌手這一支在唱片史上的起點。池中有精選卻沒有這套年序整編，補第一輯是把入口補上，不是重複包裝。",
+  "risk": "MB 同名條目極多：《The Complete Recordings, Volume 1》有 1991（704afa64）與 2001（4f643547）兩筆，另有 Volume 2–8 共十來個同系列 release-group，釘位必須看年份與 release 數。盤名 Volume 1／Vol. 1 兩種寫法都要進 queryAlias（Apple 用 Vol. 1）。年份 1991 是整編首次出版年，錄音年 1923–1924。Apple collectionId 202389419（The Complete Recordings, Vol. 1、1991-04-04、38 軌、notExplicit）／店面 us。",
+  "mbNote": "釘 release-group 704afa64-eff0-3d46-96d0-8cbd48b707ba。回問確認：title「The Complete Recordings, Volume 1」、artist-credit「Bessie Smith」、first-release-date 1991、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 1／AT 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：4f643547-89e9-4baf-93e6-4ddc7498bfb7《The Complete Recordings, Volume 1》（2001 重版，同名雙胞胎、最危險的假陽性）、e1e504a0《Volume 2》、8733a5db《Volume 3》、3d1d4024《Volume 4》、7584881a《Volume 5》、fb491954《Volume 6》、8413512d《Volume 7》、b6a89e82《Volume 8》（同系列其餘各輯）、4d5685f6-ac02-46b4-a08b-b4a2f1979bac《Empty Bed Blues》（1971 雙 LP，另一次發行）。藝人 MBID ffa28768-ecda-42c6-ac49-6ce5c7d33043，名下 127 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Complete Recordings, Vol. 1；Bessie Smith: The Complete Recordings Volume 1",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ma Rainey",
+  "album": "Ma Rainey's Black Bottom",
+  "year": 1990,
+  "genres": [
+   "blues",
+   "jazz"
+  ],
+  "label": "Yazoo（1071）",
+  "why": "池中 Ma Rainey 只有 1 張：2007 年的《Mother of the Blues》（實掃全檔）。Yazoo 這一輯是考古廠牌那條線最常被當入口的 Ma Rainey 選輯，選的是 1924–1928 年 Paramount 時期的代表面，盤名取自她 1927 年那首同名錄音——那首歌後來成了 August Wilson 的劇作與 2020 年 Netflix 電影的標題，也就是說這一張是她在唱片以外的文化記憶的來源。池中已有一張總括型精選，缺一張 Paramount 時期的曲目選，兩張補在一起才有前後。",
+  "risk": "⚠ 盤名撞名最嚴重的一張：Apple 搜「Ma Rainey's Black Bottom」US 首位命中的是 Branford Marsalis 的 Netflix 電影原聲（collectionId 1539206051、2020-12-18、24 軌）與 TRVLLR 的 remix 單曲（1549874259），兩者都不是本盤，封面與試聽層一律不得採用。Apple 目前查無本盤的直接條目（us／gb 皆無），封面走 CAA release-group 端點（實測 HTTP 200），試聽預估 unavailable。年份 1990 是 MB 記的合輯出版年（Yazoo 原 LP 為 1970 年代），錄音年 1924–1928，落差極大。",
+  "mbNote": "釘 release-group cd87e3c7-ffe4-37e5-87bb-414518ff1e99。回問確認：title「Ma Rainey's Black Bottom」、artist-credit「Ma Rainey」、first-release-date 1990、primary-type Album、secondary-types [Compilation]、轄下 1 個 release（US／Official）。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：aec6f0c0-c2bb-47cf-a1c6-a22bd18664c7《Ma Rainey's Black Bottom / Georgia Cakewalk》（1927 單曲）、25390e26-80a4-442e-bb81-deb86a5e3d81《Mother of the Blues》（2007，池中已有）、5cd84ed3《Mother of the Blues: The Complete Paramount Recordings 1923-1928》（2026）、ef2dee18-3025-3713-bd72-6aab138ea2e4《Ma Rainey》（1992 Milestone 自我同名，與 Apple 1443551346 對得上但不是本盤）。藝人 MBID e1deae56-c8f0-4e73-8264-f4b02dfc051c，名下 31 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ma Rainey's Black Bottom (Yazoo)；Ma Raineys Black Bottom",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Blind Lemon Jefferson",
+  "album": "Blind Lemon Jefferson",
+  "year": 1974,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Milestone（M-47022）",
+  "why": "池中 Blind Lemon Jefferson 只有 1 張：1985 年 Yazoo 的《King of the Country Blues》（實掃全檔）。Milestone 這一套雙 LP 自我同名整編收 1926–1929 年 Paramount 時期的錄音，是 Yazoo 那套以外另一條長期在架的整編線；Jefferson 是第一位靠唱片賣座的男性鄉村藍調歌手，他的目錄在池中只有一個入口，補第二個入口才談得上深度。錄音年 1926–1929。",
+  "risk": "自我同名盤（selfTitled=true），身分必須嚴格核對：MB 另有 46685007（1974，本張）與 1974 年以外多筆同名或近名條目，且 Apple US 有兩筆「Blind Lemon Jefferson」（collectionId 919512042 與 1526761400，皆記 1961-03-01、20 與 25 軌），那是 Riverside 1961 年的同名盤、與本張的 Milestone 1974 年雙 LP 曲序不同，**版本未核對前不得當本盤的試聽來源**。封面走 CAA release-group 端點（實測 HTTP 200）。年份 1974 是整編出版年，錄音年 1926–1929。Apple 目前無可確認的對應條目，試聽預估 unavailable。",
+  "mbNote": "釘 release-group 46685007-683c-34bf-98c7-7a373117b24c。回問確認：title「Blind Lemon Jefferson」、artist-credit「Blind Lemon Jefferson」、first-release-date 1974、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（US 1／GB 1／XE 1），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：9e2be16a-fec0-4fbc-b925-357e2c09c768《The Immortal Blind Lemon Jefferson》（1967 Milestone，CAA 與 Apple 兩條線皆查無，本批改釘 1974 這筆）、862fa8c9-2b7c-377e-a668-98a1c0cc2911《Blind Lemon Jefferson / Son House》（1972 拼盤，掛兩位藝人）、5f637c42／0712cec5／8e8abbcb 等 Document《Complete Recorded Works in Chronological Order》各輯。藝人 MBID 9481010a-db23-469d-87df-b04118850efb，名下 49 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Blind Lemon Jefferson (Milestone)；The Immortal Blind Lemon Jefferson",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Blind Willie McTell",
+  "album": "Atlanta Twelve String",
+  "year": 1972,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Atlantic（SD 7224）",
+  "why": "池中 Blind Willie McTell 只有 1 張：1994 年的《The Definitive Blind Willie McTell》（實掃全檔）。這一張是 Atlantic 1972 年整理發行的 1949 年 Atlantic 錄音場次，不是戰前 78 轉的再整編，而是 McTell 晚年少數幾次進錄音室留下的完整成套錄音——池中那張精選涵蓋的是 1927–1935 年的戰前面，兩張補在一起才把他早晚兩段都放進來。",
+  "risk": "盤名有 Atlanta Twelve String／Atlanta 12-String 兩種寫法，都要進 queryAlias。掛名另有 Blind Willie McTell & Curley Weaver 的合作實體（MB a0988ab5），撞卡與釘位都要與本卡分開。年份 1972 是首次成套出版年，錄音年 1949，兩者相差 23 年。Apple collectionId 40286578（Atlanta Twelve String、1972-01-01、15 軌、notExplicit）／店面 us。",
+  "mbNote": "釘 release-group 1f7692b9-351a-3fee-8939-c5f78a5b9735。回問確認：title「Atlanta Twelve String」、artist-credit「Blind Willie McTell」、first-release-date 1972、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US 2），status 全部 Official。依 §5.6 照一般 Album 寫、不填例外欄位。刻意不釘：MB 另有多筆《The Definitive Blind Willie McTell》系與《The Classic Years》系整編，與池中既有卡同型，本批一律不釘。藝人 MBID 81e02e29-e46a-49cb-bf13-d204cbe86daa，名下 45 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Atlanta 12-String；Atlanta Twelve-String",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Big Bill Broonzy",
+  "album": "Big Bill Broonzy Sings Folk Songs",
+  "year": 1962,
+  "genres": [
+   "blues",
+   "folk"
+  ],
+  "label": "Folkways（FA 2328）／Smithsonian Folkways",
+  "why": "池中 Big Bill Broonzy 只有 1 張：1957 年的《Big Bill Broonzy Sings Country Blues》（實掃全檔）。Folkways 這一張是他 1956–1957 年最後幾次錄音（部分與 Pete Seeger、Sonny Terry、Brownie McGhee 同場）在 1962 年整理發行的成果，也是 Smithsonian Folkways 至今仍在架的 Broonzy 目錄核心；池中那張是 Folkways 同一時期的另一張，兩張是姊妹盤，補齊才是完整的 Folkways 晚期 Broonzy。",
+  "risk": "盤名與池中既有卡只差最後一個詞（Folk Songs／Country Blues），字串相似度極高，人工複核必做。Apple collectionId 86302512（Big Bill Broonzy Sings Folk Songs、11 軌、notExplicit）／店面 us，但 Apple 的 releaseDate 記 1956-01-01、MB release-group 記 1962，兩者差六年——Apple 日期只能當訊號不能當版本門檻（裁定第 77 條）。年份取 MB 的 1962（Folkways FA 2328 首次發行年）。",
+  "mbNote": "釘 release-group 65e0a083-480f-3dae-822b-8b894f23a8de。回問確認：title「Big Bill Broonzy Sings Folk Songs」、artist-credit「Big Bill Broonzy」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 3 個 release（US 3），status 全部 Official。本張 secondary-types 為空，是正規專輯不是整編輯。刻意不釘：fb384f8d-66c8-33a0-9d26-cdde99d272c8《Trouble in Mind》（2000 Smithsonian Folkways 整編）、以及 MB 名下 143 個 release-group 裡各家的《Sings Country Blues》系條目（與池中既有卡同盤）。藝人 MBID 05bc49f8-3108-44c8-82b9-ac3254896a69，名下 143 個 release-group（第 116 條：分頁列全，browse 預設 25 筆只會看到零頭）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sings Folk Songs；Big Bill Broonzy Sings Folk Songs (Folkways)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tampa Red",
+  "album": "Don't Tampa With the Blues",
+  "year": 1961,
+  "genres": [
+   "blues"
+  ],
+  "label": "Bluesville（BVLP 1030）",
+  "why": "池中 Tampa Red 只有 1 張：1994 年的《The Guitar Wizard》（實掃全檔），那是戰前 78 轉的整編。這一張不是整編——是他 1960 年在 Bluesville 錄的正規專輯，Tampa Red 在 1930 年代是 Bluebird 的當家藝人，戰後幾乎銷聲匿跡，Prestige／Bluesville 的藍調復興計畫把他找回錄音室錄了兩張，這是第一張。池中有他的戰前面卻沒有戰後這一段，補這張才看得出他的目錄有兩個時期。",
+  "risk": "MB release-group 標題用彎引號「Don’t Tampa With the Blues」（U+2019），本卡取 ASCII 直引號寫法，兩種都要進 queryAlias，否則字串比對會整組失準。Apple collectionId 1775248899（Don't Tampa With The Blues (Remastered 1992)、10 軌、notExplicit）／店面 us，Apple releaseDate 記 1960-01-01、MB 記 1961，取 MB 的 1961（Bluesville BVLP 1030 發行年）；Apple 那筆是 1992 年 remaster，版本要核。同批另有 Apple 1775248705《Don't Jive Me》（1961）是姊妹盤、不是本張。",
+  "mbNote": "釘 release-group f60e6e42-fba6-440f-b0aa-2f46c3c7f11f。回問確認：title「Don’t Tampa With the Blues」、artist-credit「Tampa Red」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 2 個 release（US 1／DE 1），status 全部 Official。secondary-types 為空，是正規專輯。刻意不釘：e5c3a339-2607-3cf2-8117-d18dcb5bd9cb《The Bluebird Recordings, Volume 1: 1934 - 1936》（無 first-release-date 的戰前整編）、84e300a3 與 208209aa 兩個樂團實體（Tampa Red’s Hokum Jug Band／Tampa Red & The Chicago Five）名下的條目。藝人 MBID 1b62df85-00d2-464f-81bc-a5c0cdcad278，名下 113 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Don’t Tampa With the Blues；Dont Tampa With the Blues",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Victoria Spivey",
+  "album": "Woman Blues!",
+  "year": 1962,
+  "genres": [
+   "blues",
+   "jazz"
+  ],
+  "label": "Bluesville（BVLP 1054）",
+  "why": "Victoria Spivey 池中 0 張（實掃全檔），這是她的第一張卡。她 1926 年以〈Black Snake Blues〉出道，是 1920 年代 classic blues 女歌手裡少數活到藍調復興、還自己開唱片公司（Spivey Records）的一位。這一張是 1961 年 Bluesville 讓她與 Lonnie Johnson 重聚錄的正規專輯——兩人 1920 年代就在 OKeh 合作過對唱，三十多年後同一組人再錄一次，是這條線少見的「原班人馬回到錄音室」而不是後世整編。",
+  "risk": "MB artist-credit 是「Victoria Spivey; Lonnie Johnson」兩人合掛，卡片掛名取領銜的 Victoria Spivey；本批同時收 Lonnie Johnson《Blues & Ballads》（1960 Bluesville，Elmer Snowden 合掛），兩張都有 Lonnie Johnson 在內但不是同一張碟，撞卡複核要分開。Apple collectionId 1770109928（Woman Blues! (Remastered 1994) [feat. Lonnie Johnson]、1962-01-01、10 軌、notExplicit）／店面 us，Apple 那筆是 1994 remaster，版本要核；另有 Apple 1773157775《Idle Hours (Remastered 1992) [feat. Victoria Spivey]》是 Lonnie Johnson 掛名的別碟，不得混用。盤名帶驚嘆號，正規化後與無驚嘆號寫法同鍵，兩種都進 queryAlias。",
+  "mbNote": "釘 release-group f3a45f67-a0f4-4a9f-8d96-5927b3887d1c。回問確認：title「Woman Blues!」、artist-credit「Victoria Spivey; Lonnie Johnson」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 2 個 release（US 2），status 全部 Official。刻意不釘：0643e317-8fc9-43c9-a68d-c17556fb521d《Three Kings And The Queen》（1964 Spivey Records，四人合輯）、a257fe01-8320-4071-a542-a3a2abd3286b《Idle Hours》（1992，Lonnie Johnson 領銜）、d124626e《A Basket Of Blues》（1962）、40229db7《Victoria And Her Blues》（1962 整編）。藝人 MBID 0b9f1797-12ca-4db4-8e0d-d9dc2b90a3da，名下 36 個 release-group（分頁列全）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Woman Blues；Victoria Spivey Woman Blues!",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
