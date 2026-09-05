@@ -8721,18 +8721,20 @@
  "Flower Travellin' Band|Make Up": {
   "batch": "c94",
   "tried": [
-   "us:7→2"
+   "us:7→2",
+   "jp:research-swap→1"
   ],
-  "front": "us",
-  "collectionId": 415948199,
-  "appleTitle": "Make Up",
-  "appleArtist": "Flower Travellin' Band",
+  "front": "jp",
+  "collectionId": 290811124,
+  "appleTitle": "MAKE UP",
+  "appleArtist": "FLOWER TRAVELLIN’ BAND",
   "appleYear": "1973",
   "explicitness": "notExplicit",
   "trackCount": 10,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/0b/2d/480b2d34-ffc0-9bf2-2c8c-88f9076c7966/mzaf_1650549772749573368.plus.aac.p.m4a",
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/db/de/e7/dbdee7fa-ca61-5808-c45b-79aa6f16b462/mzaf_13429450779492915380.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-94 b 抓到、主線裁定換綁**：原綁 415948199 的逐軌曲長與 MB 上那筆 **Bootleg**（2010 GB Phoenix ASH2CD3033）相差不到一秒、與 1973 原盤每軌都差更多，℗ 行寫「2011 Start Entertainments Limited」（Phoenix 的英國母公司）。**依第 43／57／65／78 條，Bootleg 血統的數位版不得當固定試聽來源。** 改綁 jp 290811124：℗ 1998 WARNER MUSIC JAPAN、10 軌、盤名素面無再發裝飾。**另外兩個候選刻意不取**：324577240（jp 取不到曲目列）、1214407154（標題帶「2017 Remaster」，依同日新增的「素面版本優先」排序不取）。"
  },
  "FRICTION|Skin Deep": {
   "batch": "c94",
@@ -8810,9 +8812,20 @@
    "ca:12→0",
    "de:12→0",
    "fr:12→0",
-   "au:12→0"
+   "au:12→0",
+   "jp:research-artistPage→1"
   ],
-  "status": "unavailable"
+  "front": "jp",
+  "collectionId": 1443335331,
+  "appleTitle": "Single Man",
+  "appleArtist": "RCサクセション",
+  "appleYear": "1976",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/84/b1/82/84b18207-56e7-bc40-7d5a-83ee84a6dd64/mzaf_4188206065125956681.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-94 b 覆核、主線複驗**：探測層判 unavailable 是誤判——jp 搜到 12 筆卻 0 配對，成因是 **Apple 上這張的盤名寫成羅馬拼音《Single Man》**、卡片是片假名。依第 166 條走藝人頁 lookup（artistId 76123480）找到。11 軌日文曲名與 MB 同名同序、曲長差 3–6 秒。⚠ 這張的寫法最分裂：**MB 的 RG 標題與四筆 Official 是片假名、1976 那兩筆是羅馬拼音、Apple 是掛名日文＋盤名羅馬拼音混用**。"
  },
  "Jawbreaker|Bivouac": {
   "batch": "c94",
