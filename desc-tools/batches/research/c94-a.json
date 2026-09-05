@@ -1026,5 +1026,224 @@
   "status": "full",
   "yearVerified": "卡單 year 2000 與 MB first-release-date 2000-07-19 一致；英文維基資訊框記 2000 年 4 月 3 日，與 MB 差三個多月、同為 2000 年。Apple 兩筆的 releaseDate 都是 2001-12-19，晚一年多，對應的是店面上架的版本而非原盤。年份以 MB 與維基的 2000 年為準，無兩說；Apple 的 2001 已記。",
   "notes": "MB 16 個 release 全為 Official，無 Bootleg、無 status 空白。**建議主線改動試聽配對**：探測判 ready 但抓到的是 collectionId 665741313《Celestial (Remastered)》（collection 標 12 軌、lookup 只回 11 軌、每軌曲名都帶 (Remastered) 尾綴）。我以 lookup 回查，**us 店面另有 collectionId 368094228《Celestial》**，11 軌、11/11 有 preview、曲名不帶尾綴且與 MB 的 Hydra Head 原盤逐項相同，是更乾淨的一筆。兩筆的 releaseDate 都是 2001-12-19。策展層無額外主張需要擋。"
+ },
+ {
+  "key": "desc2:Cult of Luna|Vertikal",
+  "artist": "Cult of Luna",
+  "album": "Vertikal",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 84aca336 的欄位：title「Vertikal」、artist-credit「Cult of Luna」、first-release-date 2013-01-25、primary-type Album、secondary-types 空；轄下 5 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 XE／RU／XW 與一筆國別空白。",
+    "src": "https://musicbrainz.org/ws/2/release-group/84aca336-d9ed-493d-a575-72ecb7686f88?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 835b42b0（2013-01-25、XE、status Official、條碼 7090014387153）：廠牌欄 Indie Recordings、編號 INDIE094CD、載體 CD、9 軌。逐軌曲名與曲長依序為〈The One〉2:06、〈I: The Weapon〉9:20、〈Vicarious Redemption〉18:45、〈The Sweep〉2:41、〈Synchronicity〉7:13、〈Mute Departure〉9:07、〈Disharmonia〉0:45、〈In Awe Of〉9:57、〈Passing Through〉5:42。",
+    "src": "https://musicbrainz.org/release/835b42b0-ddc5-47d5-ad26-1c75be3d381f"
+   },
+   {
+    "f": "MusicBrainz release 683516c1（2013-01-25、XE、status Official、條碼 7090014387160）：同樣掛 Indie Recordings、編號 INDIE094CDL，載體 CD、10 軌，比 9 軌版多出收尾的〈The Flow Reversed〉6:46。",
+    "src": "https://musicbrainz.org/release/683516c1-2389-4061-81a8-fc6fa3576d9d"
+   },
+   {
+    "f": "英文維基〈Vertikal〉的資訊框記：類型 studio、發行日 2013 年 1 月 25 日、錄音場所 Tonteknik Recording、曲風 post-metal 與 progressive metal、總長 65:40、廠牌 Indie、製作人 Cult of Luna 自己、前一張《Eternal Kingdom》(2008)、後一作《Vertikal II》(2013)。",
+    "src": "https://en.wikipedia.org/wiki/Vertikal"
+   },
+   {
+    "f": "同條目導言記這是瑞典 post-metal 樂團 Cult of Luna 的第六張錄音室專輯，也是《Eternal Kingdom》(2008) 之後的第一張；2013 年 1 月 25 日在歐洲經 Indie Recordings 發行，1 月 29 日在美國發行，CD 由 Density Records 發、黑膠由 Back on Black 發。宣傳期先釋出〈I: The Weapon〉線上串流，2013 年 2 月又推出〈Passing Through〉的音樂錄影帶。",
+    "src": "https://en.wikipedia.org/wiki/Vertikal"
+   },
+   {
+    "f": "同條目導言記本作發行後獲得樂評讚譽，在 Metacritic 依 10 篇評論得到平均 85 分。",
+    "src": "https://en.wikipedia.org/wiki/Vertikal"
+   },
+   {
+    "f": "同條目記：創作期間 Cult of Luna 深受 Fritz Lang 1927 年電影《大都會》影響，那部片成了《Vertikal》概念主題、聲響與意象的主要靈感來源；主題環繞城市、機械與工廠，並且比樂團先前的專輯更倚重鍵盤與電子元素。創作場次成果豐富、剩下大量選剩的歌，樂團因此在 2013 年 9 月又發了搭配 EP《Vertikal II》。",
+    "src": "https://en.wikipedia.org/wiki/Vertikal"
+   },
+   {
+    "f": "同條目「Writing and recording」節記：2013 年這張是 Cult of Luna 歷來錄音室專輯間隔最久的一次，上一張《Eternal Kingdom》在五年前的 2008 年；樂團把原因歸於成員分居不同城市、各有家庭與工作、當時也沒有簽在任何廠牌。吉他手 Johannes Persson 事後認為多出來的時間對創作有益。該節並記樂團刻意讓《Vertikal》走城市主題，因為前兩張《Somewhere Along the Highway》與《Eternal Kingdom》的概念都很鄉村。",
+    "src": "https://en.wikipedia.org/wiki/Vertikal"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1716088402：artistName Cult of Luna、collectionName「Vertikal」、trackCount 9、releaseDate 2012-01-01、9/9 軌帶 previewUrl、首軌〈The One〉，九軌與 MB 的 Indie Recordings INDIE094CD 版本一致。",
+    "src": "https://music.apple.com/us/album/1716088402"
+   }
+  ],
+  "hookCandidates": [
+   "創作期間深受 Fritz Lang 1927 年的《大都會》影響，整張碟的主題是城市、機械與工廠。",
+   "〈Vicarious Redemption〉一首就 18 分 45 秒。"
+  ],
+  "sound": "英文維基〈Vertikal〉的資訊框把曲風欄填成 post-metal 與 progressive metal、總長 65:40，錄音在 Tonteknik Recording、製作人是樂團自己。同條目記本作比樂團先前的專輯更倚重鍵盤與電子元素。九軌的落差極大：〈Vicarious Redemption〉18:45 幾乎佔全碟三分之一，而〈Disharmonia〉只有 0:45、〈The One〉2:06、〈The Sweep〉2:41（MB release 835b42b0 的逐軌曲長）。Metacritic 依 10 篇評論給 85 分。",
+  "keyTracks": [
+   "The One",
+   "I: The Weapon",
+   "Vicarious Redemption",
+   "Mute Departure",
+   "Passing Through"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2013 與 MB first-release-date 2013-01-25、英文維基的 2013 年 1 月 25 日一致。Apple us collectionId 1716088402 的 releaseDate 記 2012-01-01，比原盤早一年、且是年初佔位日，不採。年份以 2013 為準。",
+  "notes": "MB 5 個 release 全為 Official，無 Bootleg、無 status 空白。MB 有 9 軌（INDIE094CD）與 10 軌（INDIE094CDL，多〈The Flow Reversed〉）兩種版本。試聽探測判 ready（us:5→5，collectionId 1716088402），我以 lookup 回查確認 9 軌、9/9 有 preview、首軌〈The One〉，與 9 軌版一致，判定維持；**但該筆的 releaseDate 是 2012-01-01，與 MB 的 2013-01-25 差一年**，主線若用 yearDrift 做自動複檢會誤報，這裡先記明。Apple us 另有 collectionId 1666978731《Vertikal》（9 軌、2023-01-25，十週年再發）與 1667025511《Vertikal I & II》（14 軌），兩筆都不該配。"
+ },
+ {
+  "key": "desc2:Cathedral|The Ethereal Mirror",
+  "artist": "Cathedral",
+  "album": "The Ethereal Mirror",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c3698a64 的欄位：title「The Ethereal Mirror」、artist-credit「Cathedral」、first-release-date 1993-05-17、primary-type Album、secondary-types 空；轄下 9 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 GB／JP／US／XW。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c3698a64-7c70-30c0-ac9b-7077c3629c73?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 4d91d2ca（1993-05-17、GB、status Official、條碼 5018615107729）：廠牌欄 Earache Records、編號 MOSH77CD、載體 CD、10 軌。逐軌曲名與曲長依序為〈Violet Vortex (Intro)〉1:55、〈Ride〉4:47、〈Enter the Worms〉6:05、〈Midnight Mountain〉4:55、〈Fountain of Innocence〉7:14、〈Grim Luxuria〉4:47、〈Jaded Entity〉7:53、〈Ashes You Leave〉6:22、〈Phantasmagoria〉8:44、〈Imprisoned in Flesh〉1:47。",
+    "src": "https://musicbrainz.org/release/4d91d2ca-6d9f-4170-8dd4-66bcb4f925f5"
+   },
+   {
+    "f": "英文維基〈The Ethereal Mirror〉的資訊框記：類型 studio、英國發行 1993 年 5 月 24 日、美國發行 1993 年 7 月 6 日、錄音年 1993、錄音室 The Manor Studio（英格蘭牛津郡）、曲風 doom metal 與 stoner metal、總長 54:26、廠牌 Earache 與美國 Columbia、製作人 David Bianco、前一張《Forest of Equilibrium》(1991)、後一作《Statik Majik》(1994)。",
+    "src": "https://en.wikipedia.org/wiki/The_Ethereal_Mirror"
+   },
+   {
+    "f": "同條目導言記這是英國 doom metal 樂團 Cathedral 的第二張錄音室專輯，1993 年 5 月 24 日先在英國由 Earache Records 發行、7 月 6 日在美國由 Columbia Records 發行；Earache 在 2009 年再發時把《Statik Majik》EP 當 bonus track 附上，並以 DualDisc 形式附上 DVD《Ethereal Reflections》。",
+    "src": "https://en.wikipedia.org/wiki/The_Ethereal_Mirror"
+   },
+   {
+    "f": "同條目資訊框的單曲欄記三支 1993 年的單曲：〈Ride〉〈Midnight Mountain〉〈Grim Luxuria〉。",
+    "src": "https://en.wikipedia.org/wiki/The_Ethereal_Mirror"
+   },
+   {
+    "f": "同條目「Artwork」節記封面藝術可以攤開展成 MetalSucks 的 Kenny Schticky 所說「much larger and weirder」的東西；「Reception and legacy」節的評分表記 AllMusic 4.5 顆星（滿分五顆）。",
+    "src": "https://en.wikipedia.org/wiki/The_Ethereal_Mirror"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 44656672：artistName Cathedral、collectionName「The Ethereal Mirror」、trackCount 10、releaseDate 1993-02-01、10/10 軌帶 previewUrl、首軌〈Violet Vortex〉，軌數與曲序與 MB 的 Earache MOSH77CD 相符。",
+    "src": "https://music.apple.com/us/album/44656672"
+   }
+  ],
+  "hookCandidates": [
+   "1993 年錄於英格蘭牛津郡的 The Manor Studio，製作人是 David Bianco。",
+   "封面攤開之後會展成一整幅比原本大得多的圖。"
+  ],
+  "sound": "英文維基〈The Ethereal Mirror〉的資訊框把曲風欄填成 doom metal 與 stoner metal、總長 54:26、製作人 David Bianco。十軌以 1:55 的〈Violet Vortex (Intro)〉開場、1:47 的〈Imprisoned in Flesh〉收尾，中間八首多在四到九分鐘之間，最長的〈Phantasmagoria〉8:44、〈Jaded Entity〉7:53（MB release 4d91d2ca 的逐軌曲長）。同條目評分表裡 AllMusic 給 4.5 顆星。",
+  "keyTracks": [
+   "Ride",
+   "Enter the Worms",
+   "Midnight Mountain",
+   "Grim Luxuria",
+   "Phantasmagoria"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-05-17 一致；英文維基記英國 1993 年 5 月 24 日、美國 1993 年 7 月 6 日，與 MB 差一週。Apple 的 releaseDate 1993-02-01 更早、是店面佔位日。同為 1993 年，年份無兩說。",
+  "notes": "MB 9 個 release 全為 Official，無 Bootleg、無 status 空白。**試聽探測的判定我覆核後維持**：tried 顯示 us:0→0，Apple search 端點在美國店面查不到這張，探測改走 artistPage 才命中 collectionId 44656672；我以 lookup 回查確認 10 軌、10/10 有 preview、首軌〈Violet Vortex〉，判定成立，又一例第 166 條的 search 漏碟。Apple 的首軌曲名不帶「(Intro)」，MB 帶。"
+ },
+ {
+  "key": "desc2:Khanate|Things Viral",
+  "artist": "Khanate",
+  "album": "Things Viral",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 085e0a6c 的欄位：title「Things Viral」、artist-credit「Khanate」、first-release-date 2003-10-06、primary-type Album、secondary-types 空；轄下只有 3 個 release，status 清點為 Official 2 筆、空白 1 筆（無 Bootleg），國別為 US／JP／XW；status 空白的是 2006-12-01 的日本 release ba4f8f81。",
+    "src": "https://musicbrainz.org/ws/2/release-group/085e0a6c-a855-39f5-826e-3ba402331009?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 5fcd1034（2003-10-06、US、status Official）：廠牌欄 Southern Lord、編號 sunn28CD、載體 CD、4 軌。逐軌曲名與曲長依序為〈Commuted〉19:14、〈Fields〉19:51、〈Dead〉9:28、〈Too Close Enough to Touch〉11:11。",
+    "src": "https://musicbrainz.org/release/5fcd1034-917b-4218-808a-7404fa52d1ad"
+   },
+   {
+    "f": "英文維基〈Things Viral〉的資訊框記：類型 studio、發行日 2003 年 10 月 6 日、錄音期 2002 至 2003 年、曲風 drone metal、總長 59:41、廠牌 Southern Lord Records（SUNN28）、製作人 James Plotkin、前一張《Khanate》(2001)、後一張《Capture & Release》(2005)。",
+    "src": "https://en.wikipedia.org/wiki/Things_Viral"
+   },
+   {
+    "f": "同條目導言記這是美國 drone metal 樂團 Khanate 的第二張專輯，2003 年由 Southern Lord 發行。",
+    "src": "https://en.wikipedia.org/wiki/Things_Viral"
+   },
+   {
+    "f": "同條目記 CD 發了兩種版本：歐洲的紙盒版與美國的膠盒版；另有 LOAD Records 的黑膠版，發行 1000 張跨頁封套加 12 吋唱片。並記〈Dead〉拍過影片。",
+    "src": "https://en.wikipedia.org/wiki/Things_Viral"
+   },
+   {
+    "f": "同條目的曲目表記全碟四首歌由 Khanate 全體寫作編曲、版權掛 Ideologic Organ，四軌時長依序為 19:13、19:50、9:27、11:11。",
+    "src": "https://en.wikipedia.org/wiki/Things_Viral"
+   },
+   {
+    "f": "同條目的評分表記 AllMusic 四顆星（滿分五顆）、《Pitchfork》8.2／10、《Visions Magazine》9／12。",
+    "src": "https://en.wikipedia.org/wiki/Things_Viral"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1681165767：artistName Khanate、collectionName「Things Viral」、trackCount 4、releaseDate 2003-10-21、4/4 軌帶 previewUrl、首軌〈Commuted〉，四軌與 MB 的 Southern Lord sunn28CD 相符。",
+    "src": "https://music.apple.com/us/album/1681165767"
+   }
+  ],
+  "hookCandidates": [
+   "整張只有四首，前兩首各將近二十分鐘。",
+   "製作人是 James Plotkin，2003 年由 Southern Lord 發行。"
+  ],
+  "sound": "英文維基〈Things Viral〉的資訊框把曲風欄填成 drone metal、總長 59:41、製作人 James Plotkin。四軌之中〈Commuted〉19:14 與〈Fields〉19:51 兩首就佔掉大半，另兩首是〈Dead〉9:28 與〈Too Close Enough to Touch〉11:11（MB release 5fcd1034 的逐軌曲長）。同條目評分表裡 AllMusic 給四顆星、《Pitchfork》給 8.2／10。",
+  "keyTracks": [
+   "Commuted",
+   "Fields",
+   "Dead",
+   "Too Close Enough to Touch"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2003 與 MB first-release-date 2003-10-06、英文維基的 2003 年 10 月 6 日一致。Apple 的 releaseDate 2003-10-21 晚兩週、同為 2003 年。無兩說。",
+  "notes": "MB 只有 3 個 release，無 Bootleg，但有 1 筆 status 空白（2006-12-01 的日本 release ba4f8f81），未作為曲目來源。試聽探測判 ready（us:1→1，collectionId 1681165767），我以 lookup 回查確認 4 軌、4/4 有 preview、首軌〈Commuted〉，判定維持；四軌是原盤真實軌數（MB 的 Southern Lord 原盤也是 4 軌、primary-type Album），不是 EP 誤配。"
+ },
+ {
+  "key": "desc2:Uriah Heep|Look at Yourself",
+  "artist": "Uriah Heep",
+  "album": "Look at Yourself",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 99100318 的欄位：title「Look at Yourself」、artist-credit「Uriah Heep」、first-release-date 1971-10、primary-type Album、secondary-types 空；轄下 20 個 release，status 清點為 Official 19 筆、空白 1 筆（無 Bootleg），國別涵蓋 GB／DE／JP／US／XE／XW 與一筆國別空白；status 空白的是 1971 年的日本 release 0d227ae0。",
+    "src": "https://musicbrainz.org/ws/2/release-group/99100318-0642-3138-9023-6e5d681a2b7e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release dbca30ea（1971-10、GB、status Official）：廠牌欄 Bronze、編號 ILPS 9169、載體 Vinyl、7 軌。逐軌曲名與曲長依序為〈Look at Yourself〉5:08、〈I Wanna Be Free〉4:00、〈July Morning〉10:25、〈Tears in My Eyes〉4:58、〈Shadows of Grief〉8:36、〈What Should Be Done〉4:11、〈Love Machine〉3:37。",
+    "src": "https://musicbrainz.org/release/dbca30ea-6d11-4621-9c78-1db5ed228840"
+   },
+   {
+    "f": "英文維基〈Look at Yourself (Uriah Heep album)〉的資訊框記：類型 studio、發行 1971 年 9 月、錄音 1971 年 7 月、錄音室 Lansdowne（倫敦）、曲風 hard rock 與 progressive rock；單曲欄記〈Look at Yourself〉1971 年 9 月發行、〈July Morning〉1972 年 6 月在日本發行。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "同條目導言記這是英國樂團 Uriah Heep 的第三張錄音室專輯，1971 年 9 月由 Mercury Records 在美國發行、1971 年 10 月由 Bronze Records 在英國發行；也是創團成員兼貝斯手 Paul Newton 參與的最後一張 Uriah Heep 專輯。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "同條目導言記本作被歸類為 heavy metal 與 progressive rock，後來被視為樂團生涯的高點，與隔年的《Demons and Wizards》一起被許多歌迷與樂評當成 Uriah Heep 最好的作品之一。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "同條目記〈July Morning〉催生了保加利亞一項同名的傳統「July Morning」（或稱 Julaya）：人們在 7 月 1 日早晨聚到黑海岸邊看日出。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "同條目記標題曲的非洲打擊樂由 Afro Rock 團體 Osibisa 的 Teddy Osei、Mac Tontoh 與 Loughty Amao 演奏，該團後來也簽進 Bronze Records。曲目表記全碟作曲多掛 Ken Hensley，〈July Morning〉由 David Byron 與 Hensley 共作、〈Love Machine〉由 Hensley、Mick Box 與 Byron 共作。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "同條目「Reception」節引《告示牌》當年的正面評論，說樂團「determined to break through」，並形容這張碟的音樂是「a mirror, as the hard rock five produce a driving, psychedelic flow that's sufficiently hypnotic, controlled and groovy to reflect the tastes of many youthful rockers.」；評分表列 AllMusic 四顆星、Martin Popoff 的《Collector's Guide to Heavy Metal》10／10、Sputnikmusic 五顆星。",
+    "src": "https://en.wikipedia.org/wiki/Look_at_Yourself_(Uriah_Heep_album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1541876755：artistName Uriah Heep、collectionName「Look At Yourself (Expanded Version)」、trackCount 24、releaseDate 1971-09-20、24/24 軌帶 previewUrl、首軌〈Look At Yourself (2017 - Remaster)〉。以 Apple search 在美國店面查「Uriah Heep Look at Yourself」只回這一筆專輯與一張精選輯《The Ultimate Collection》，沒有七軌的原盤版本。",
+    "src": "https://music.apple.com/us/album/1541876755"
+   }
+  ],
+  "hookCandidates": [
+   "〈July Morning〉催生了保加利亞一項同名傳統：7 月 1 日早晨到黑海岸邊看日出。",
+   "標題曲的非洲打擊樂來自 Osibisa 的 Teddy Osei、Mac Tontoh 與 Loughty Amao。"
+  ],
+  "sound": "英文維基〈Look at Yourself (Uriah Heep album)〉的資訊框把曲風欄填成 hard rock 與 progressive rock，導言另把它歸類為 heavy metal 與 progressive rock；1971 年 7 月錄於倫敦的 Lansdowne 錄音室。七軌黑膠的兩面各有一首長曲：A 面的〈July Morning〉10:25、B 面的〈Shadows of Grief〉8:36（MB release dbca30ea 的逐軌曲長）。《告示牌》當年形容這張碟是「a mirror」，說這五個硬搖滾樂手做出「driving, psychedelic flow」。",
+  "keyTracks": [
+   "Look at Yourself",
+   "I Wanna Be Free",
+   "July Morning",
+   "Shadows of Grief",
+   "Love Machine"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1971 與 MB first-release-date 1971-10 一致。英文維基資訊框記 1971 年 9 月，導言記美國 Mercury 版 1971 年 9 月、英國 Bronze 版 1971 年 10 月，兩說並存但同為 1971 年。Apple 的 releaseDate 1971-09-20 跟的是美國那條線。年份無兩說。",
+  "notes": "MB 20 個 release 中無 Bootleg，有 1 筆 status 空白（1971 年日本 release 0d227ae0），未作為曲目來源。試聽探測判 ready（us:2→1，collectionId 1541876755），我以 lookup 回查確認該筆存在、24 軌、24/24 有 preview；**但它是《Look At Yourself (Expanded Version)》、24 軌、每軌都是 2017 remaster，遠多於原盤的 7 軌**。我另以 Apple search 掃過美國店面，除了這筆與一張精選輯《The Ultimate Collection》（34 軌）之外沒有七軌的原盤版本，因此判定維持 ready，軌數不一致已記，主線若要求軌數對原盤，這張要另外處理。"
  }
 ]
