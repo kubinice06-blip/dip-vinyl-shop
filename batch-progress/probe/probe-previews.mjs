@@ -169,6 +169,40 @@ const get = async (url, tries = 5) => {
 };
 
 
+// ── 2026-09-05：Apple 的 `search` 端點對嘻哈盤會系統性地騙人 ─────────────────
+// c-96 策展層回報「十筆有九筆只回 cleaned」，主線用四張實測複驗，結果比回報的還糟：
+//   N.W.A《Straight Outta Compton》 search 只有 cleaned（id 1478946356）；
+//     藝人頁 lookup 有同 13 軌的 explicit（id 1440816032）。
+//   JAY-Z《The Blueprint》 同形，search 三張 Blueprint 全是 cleaned，藝人頁三張都有 explicit。
+//   **GZA《Liquid Swords》 search 根本查不到**——回的是《Legend of the Liquid Sword》，
+//     是另一張碟；藝人頁上《Liquid Swords》(13 軌 explicit) 好端端地在。
+//   The Notorious B.I.G.《Life After Death》 search 的前幾筆全是別的藝人的同名碟。
+// 這正是 `audits/cleaned-previews-hiphop.md` 那 273 張的成因：
+// **管線一路走 search，就會系統性地取到淨化版，或整張碟判成查無。**
+// 兩道補救都走藝人頁 `lookup?id=<artistId>&entity=album`：
+//   (1) 選到 cleaned 時，回藝人頁找同名同軌數的 explicit 雙胞胎；
+//   (2) search 完全落空時，回藝人頁把整份目錄撈下來再比一次盤名。
+const artistAlbumCache = new Map();
+const artistAlbums = async (artistId, front) => {
+  const ck = `${artistId}|${front}`;
+  if (artistAlbumCache.has(ck)) return artistAlbumCache.get(ck);
+  const j = await get(`https://itunes.apple.com/lookup?id=${artistId}&entity=album&limit=200&country=${front}`);
+  await sleep(700);
+  const list = (j.results || []).filter(x => x.wrapperType === 'collection');
+  artistAlbumCache.set(ck, list);
+  return list;
+};
+// 找同一張碟的 explicit 雙胞胎：盤名要過 titleOk，軌數要相等（差一軌也不算，
+// 差一軌通常是 Deluxe／Expanded 版——那是別的 release，第 140 條）。
+const explicitTwin = async (best, front, albumCands, selfTitled) => {
+  if (!best.artistId) return null;
+  const list = await artistAlbums(best.artistId, front);
+  return list.find(x => x.collectionExplicitness === 'explicit'
+    && x.collectionId !== best.collectionId
+    && x.trackCount === best.trackCount
+    && albumCands.some(a => titleOk(a, x.collectionName || '', selfTitled))) || null;
+};
+
 let n = 0;
 for (const c of cards) {
   const k = `${c.artist}|${c.album}`;
@@ -207,13 +241,35 @@ for (const c of cards) {
     }
     // `NOQUERY` ＝ 這個店面一次都沒查成，不是查到 0 筆。下游判「查無」時必須排除它。
     rec.tried.push(okQueries ? `${front}:${raw}→${hits.length}` : `${front}:NOQUERY`);
+
+    // search 落空但這個店面確實查成過 → 走藝人頁把整份目錄撈下來再比一次（見上方註解的 GZA 例）。
+    // 只在 search 真的有回應時做（`NOQUERY` 代表被限流，那要留給重試而不是換路）。
+    if (!hits.length && okQueries) {
+      const aj = await get(`https://itunes.apple.com/search?term=${
+        encodeURIComponent(c.queryAlias || c.artist)}&entity=musicArtist&country=${front}&limit=8`);
+      await sleep(700);
+      const artists = (aj.results || []).filter(x =>
+        artistCands.some(a => artistOk(a, x.artistName || '')) || looseArtistOk(c.artist, x.artistName || ''));
+      for (const a of artists.slice(0, 2)) {
+        const list = await artistAlbums(a.artistId, front);
+        const found = list.filter(x =>
+          albumCands.some(al => titleOk(al, x.collectionName || '', !!c.selfTitled)) ||
+          looseTitleOk(c.album, x.collectionName || '', !!c.selfTitled));
+        if (found.length) { hits = found; rec.tried.push(`${front}:artistPage→${found.length}`); break; }
+      }
+    }
     if (!hits.length) continue;
 
     // 排序：年份接近的優先（不是門檻，只是偏好），再來 explicit 優先。
     const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
     hits.sort((x, y) => (drift(x) - drift(y)) || (rank(x) - rank(y)));
-    const best = hits[0];
+    let best = hits[0];
+    // 排序後最好的還是 cleaned → 回藝人頁找同名同軌數的 explicit 雙胞胎（見上方註解）。
+    if (best?.collectionExplicitness === 'cleaned') {
+      const tw = await explicitTwin(best, front, albumCands, !!c.selfTitled);
+      if (tw) { rec.explicitTwinRecovered = best.collectionId; best = tw; hits = [tw, ...hits]; }
+    }
 
     const lk = await get(`https://itunes.apple.com/lookup?id=${best.collectionId}&entity=song&country=${front}&limit=60`);
     await sleep(700);
