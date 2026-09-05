@@ -134,5 +134,103 @@
   "status": "full",
   "yearVerified": "**卡單 1995 不是錄音年，也不是那部同名紀錄片的年份，而是 Pearl 這張復刻 CD 的 MB 記載年。三個數字要並列**：(1) MB first-release-date **1995-02-03**（Pearl GEMM CD 9069）；(2) Discogs 同一張 CD 記 **1993**——兩個資料庫各記一個具體年份、互相矛盾，依裁定 141／c-98 第 10 條**維持卡單值 1995、行文不得正面斷言發行年**；(3) **原始錄音年查不到逐軌數字**：Pearl 復刻的是 Anderson 在 RCA Victor 時期（1930–1950 年代）的錄音，MB 與 Discogs 兩邊都沒有給每一軌的錄音年，**行文不得寫任何一個錄音年份**。另外要與 1957 年切開：紀錄片《The Lady from Philadelphia》是 1957 年 CBS《See It Now》那一集（Apple 那筆同名品項的 releaseDate 是 1957-12-20），**本張不是它**。",
   "notes": "**試聽維持 unavailable，而且這一張有陷阱**：Apple 七店面都有 **1580339727「Marian Anderson - The Lady from Philadelphia (From the TV Series \"See it Now\")」**，盤名幾乎相同、掛名也含 Marian Anderson，**但那是 1957 年電視紀錄片的聲軌（30 軌，含 Edward R. Murrow 的旁白與各地訪談），與本卡釘的 Pearl 十九軌錄音室選輯零重疊，絕對不得取用**。這是「同名別碟」在本組裡最嚴重的一筆——盤名、掛名、藝人三道閘全過得了。｜逐店面覆核：gb／us／de／fr／at／it／jp 七個店面的 Marian Anderson 目錄（各 35–87 筆）全掃過，另外用 `search?term=Marian Anderson Lady from Philadelphia` 七店面各查一次，**Pearl／GEMM 的品項一筆都沒有**；Pearl 是專做 78 轉復刻的小廠，整個廠牌在 Apple 上幾乎不存在。判 unavailable 是對的。｜卡片盤名照抄 MB 標題（策展層第 2 條的第 1 種情況），沒有作曲家前綴，這也是它會被同名紀錄片碟撞上的原因，上架時要在備註寫死 collectionId 不得自動配。｜**擋下策展層可能的說法**：這張與 1957 年的亞洲親善巡演、與那集紀錄片**只有盤名的關係**，碟裡沒有任何一軌來自那次巡演；行文不得把兩件事寫成同一件。"
+ },
+ {
+  "key": "desc2:Enrico Caruso|The Caruso Edition, Volume I: 1902-1908",
+  "artist": "Enrico Caruso",
+  "album": "The Caruso Edition, Volume I: 1902-1908",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 269ccdeb 的欄位：title「The Caruso Edition, Volume I: 1902–1908」（用的是連接號 U+2013，卡片用 ASCII 連字號）、artist-credit「Enrico Caruso」、first-release-date 1990、primary-type Album、**secondary-types [Compilation]**、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/269ccdeb-3e44-3782-b764-538a72e55e8c"
+   },
+   {
+    "f": "唯一的 release 5a750044：1990 年英國、Pearl，系列編號 EVC I，三張 CD 各自的編號是 GEMM CD 9424／9425／9426，軌數 27＋24＋19＝**70 軌**。第一片開頭兩軌是《Germania》的〈Studenti, udite〉與〈Ah, vieni qui… No, non chiuder gli occhi〉，最後一軌是《鄉間騎士》的〈O Lola (Siciliana)〉；第三片從《阿依達》〈Celeste Aida〉起，最後是《弄臣》四重唱〈Bella figlia dell'amore〉。",
+    "src": "https://musicbrainz.org/release/5a750044-ffa9-4fb1-a0ae-2e3a6bf31dd4"
+   },
+   {
+    "f": "Discogs release 4603987 是同一套 Pearl EVC 1 三 CD 盒，**年份記 1999-01-28**、格式 CD ×3／Compilation，曲目列 77 條。",
+    "src": "https://www.discogs.com/release/4603987"
+   },
+   {
+    "f": "英文維基〈Enrico Caruso〉：他 1873 年 2 月 25 日生、1921 年 8 月 2 日歿，「1902 到 1920 年間留下約 250 張商業發行的錄音」，被稱為第一位國際性的唱片明星。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "同一條目：**1902 年 3 月 11 日**他在史卡拉歌劇院唱 Franchetti《Germania》的世界首演、由托斯卡尼尼指揮，創了男主角 Frederico Loewe 這個角色；**一個月後的 4 月 11 日**，英國 Gramophone Company 以一百英鎊的酬勞請他在米蘭錄下第一批唱片，「這十張唱片很快成為暢銷品」，把二十九歲的 Caruso 的名聲帶進英語世界。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "同一條目：1903 年 11 月 23 日大都會歌劇院首演；**1904 年 2 月 1 日在卡內基廳錄下他在美國的第一批錄音**，此後與 Victor Talking Machine Company 的合作維持終身；1904 至 1920 年間他為 Victor 錄下兩百六十多份留存至今的錄音。條目並寫，同代不少歌手把留聲機當玩具而拒絕錄音，是看到 Caruso 從錄音得到的收益之後才改變態度。",
+    "src": "https://en.wikipedia.org/wiki/Enrico_Caruso"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）的 Enrico Caruso 目錄（各 141–200 筆）與 `search?term=Caruso Edition Pearl`／`The Caruso Edition Volume I` 逐店面查詢，**Pearl／EVC 這套一筆都沒有**。店面上覆蓋同一段年份的是完全另一套：Naxos「Enrico Caruso: Complete Recordings」Vol. 1–10（例如 Vol. 2「Historical Recordings 1903-1906」24 軌、Vol. 3「1906-1908」19 軌），廠牌、分卷方式與轉錄工程都與 Pearl 那套不同。",
+    "src": "https://music.apple.com/gb/artist/300803"
+   }
+  ],
+  "hookCandidates": [
+   "1902 年 3 月他在史卡拉唱了《Germania》的世界首演，四月就進了米蘭的旅館房間錄音——這套盒子的第一、二軌就是《Germania》",
+   "十張唱片、一百英鎊：留聲機還被同行當成玩具的時候，他先把它當成了工作"
+  ],
+  "sound": "沒有具名來源談這套的音色，因此不寫聲響形容。可寫的形制有據：這是 Pearl 廠牌 1990 年代的 78 轉復刻，三張 CD 共 70 軌，收 1902 到 1908 年的錄音；單軌多在兩到四分鐘之間（78 轉單面的長度上限），最短〈Studenti, udite〉1 分 55 秒。同一首歌他常錄過不只一次——〈E lucevan le stelle〉在第一片第 24 軌與第二片第 2 軌各出現一次，是兩次不同的錄音。",
+  "keyTracks": [
+   "Germania: Studenti, udite",
+   "Rigoletto: Questa o quella",
+   "Aida: Celeste Aida",
+   "L'elisir d'amore: Una furtiva lagrima"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1990 是復刻盒的年份，不是錄音年——而且連復刻年都有兩說。三個數字並列**：(1) **原始錄音年 1902–1908**，這一段直接寫在盤名裡，來源是曲目本身與英文維基（1902-04-11 米蘭第一批十張、1904-02-01 卡內基廳第一批美國錄音）；(2) MB first-release-date **1990**（Pearl EVC I／GEMM CD 9424-9426）；(3) Discogs release 4603987 記 **1999-01-28**。MB 與 Discogs 各記一個具體年份、互相矛盾，依裁定 141／c-98 第 10 條**維持卡單值 1990、行文不得正面斷言復刻盤的發行年**；但**錄音年段 1902–1908 是可以寫的**，它有盤名與維基兩重依據。",
+  "notes": "**試聽維持 unavailable，覆核結論是店面上真的沒有這一套。** 七店面（gb／us／de／fr／at／it／jp）的藝人目錄各 141–200 筆全掃，另加 `search?term=` 兩組字串逐店面查，Pearl／EVC／GEMM 一筆未見；Pearl 是專做 78 轉復刻的英國小廠，整個廠牌在 Apple 上幾乎不存在（本組另一張 Marian Anderson 的 Pearl CD 同樣落空，兩張同因）。｜**不得拿 Naxos 那套頂替**：Apple 上的「Enrico Caruso: Complete Recordings, Vol. 1–10」（℗ 1997–2003 Naxos，Ward Marston 轉錄）覆蓋的年份與本套重疊，但**分卷方式完全不同**（Naxos Vol. 2＝1903–1906、Vol. 3＝1906–1908，本套一卷就吃掉 1902–1908），依 c-97 第 10 條屬「換了內容」，不是同一張碟。｜軌數兩說：MB 記 70 軌（27＋24＋19），Discogs 同一套記 77 條曲目。**依裁定 141，行文不得寫這套有幾首**。｜策展層第 1 條已定：本張 secondary-types 帶 Compilation，但 `releaseType` 仍填 Album、不填例外欄位。｜盤名的破折號：MB 用 U+2013、卡片用 ASCII 連字號，字串比對不相等，回查 MB 要用 MB 那一種。｜**時序主張要擋**：維基寫的是「1902 年 4 月 11 日的十張唱片」與「約 250 份商業錄音」，**沒有**說這是史上第一批歌劇錄音或第一張暢銷唱片；行文不得寫「第一次有人把歌劇錄進唱片」。可以寫的是維基原話：同代歌手把留聲機當玩具、是看到他的收益才跟進。"
+ },
+ {
+  "key": "desc2:Joan Sutherland|Operatic Arias",
+  "artist": "Joan Sutherland",
+  "album": "Operatic Arias",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8e6ddbb7 的欄位：title「Operatic Arias」、artist-credit「Gaetano Donizetti, Giuseppe Verdi; Joan Sutherland, Orchestre de la Société des Concerts du Conservatoire, Nello Santi」、first-release-date **1959-07**、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/8e6ddbb7-f123-4948-8051-1fe696f6adec"
+   },
+   {
+    "f": "唯一的 release abf7719a：1959 年 7 月英國、Decca SXL 2159、12 吋黑膠、**5 軌**：1.《拉美莫爾的露琪亞》〈Ancor non giunse … Regnava nel silenzio〉13:12；2.《埃爾納尼》〈Surta è la notte … Ernani! Ernani involami〉8:04；3.《西西里晚禱》〈Mercè, dilette amiche〉（Bolero）3:32；4.《拉美莫爾的琳達》〈Ah! tardai troppo … O luce di quest'anima〉6:17；5.《拉美莫爾的露琪亞》〈Il dolce suono … Ardon gl'incensi〉（瘋狂場景）16:15。",
+    "src": "https://musicbrainz.org/release/abf7719a-57f9-4dd8-a0a2-51855859cb9d"
+   },
+   {
+    "f": "英文維基〈Joan Sutherland〉的錄音段落寫：2011 年 Decca 把她的獨唱錄音重發成 23 CD 的《Complete Decca Studio Recitals》（Decca 4783243），其中第一項就列為「**Operatic Arias (1959)**」。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "同一條目：1959 年她獲邀在皇家歌劇院唱《拉美莫爾的露琪亞》，Tullio Serafin 指揮、Franco Zeffirelli 導演，那次是她的突破；同年「就在那次 Covent Garden 的露琪亞之後」她動了一次大的鼻竇手術，條目並寫「她第一次商業錄下露琪亞的第一場與最後一場，聽得出嗓音與咬字與手術前一樣清楚」。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "同一條目：她 1954 年 10 月 16 日與 Richard Bonynge 結婚，是 Bonynge 逐步說服她放下華格納、改走美聲路線；1960 年錄《The Art of the Prima Donna》雙 LP，該片 1962 年得葛萊美最佳古典演唱獎；1961 年 11 月 26 日在大都會歌劇院首演，唱的也是露琪亞。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452135704**「Joan Sutherland: Operatic Recital」，掛名「Dame Joan Sutherland, Nello Santi & Orchestre de la Société des Concerts du Conservatoire」，releaseDate 1959-01-01，copyright「℗ 1959 Decca Music Group Limited」，trackCount 5，五軌全部有 previewUrl。五軌與 SXL 2159 原盤逐軌同名同序、逐軌長度相差 2–5 秒（13:09／8:01／3:29／6:14／16:10）。",
+    "src": "https://music.apple.com/gb/album/1452135704"
+   },
+   {
+    "f": "Apple 另有兩筆同錄音的第三方再發：**1111699219「Finest Operatic Arias」**（掛名 Dame Joan Sutherland & The Paris Consevatoire Orchestra，releaseDate 2016-04-01，copyright ℗ 2016 Black Cat Productions，5 軌，六店面 gb／de／fr／at／it／jp 有、us 無）——曲目與長度同樣逐軌對得上 SXL 2159；以及 **418447103「Joan Sutherland performs Operatic Arias - The Debut Recital」**（℗ 2010 Regis Records，7 軌 ＝ 原盤五軌＋韓德爾《Alcina》兩曲）。",
+    "src": "https://music.apple.com/gb/album/1111699219"
+   }
+  ],
+  "hookCandidates": [
+   "五首詠嘆調、四十七分鐘：其中兩首都出自《露琪亞》，一首是她登場、一首是她發瘋",
+   "1959 年她在 Covent Garden 唱完露琪亞就進了鼻竇手術房，這張碟留下的是手術那一年的嗓子"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：女高音 Joan Sutherland、Nello Santi 指揮巴黎音樂院管弦樂團（Orchestre de la Société des Concerts du Conservatoire），1959 年 Decca 錄音。五軌長短懸殊：最短的〈Mercè, dilette amiche〉波麗露 3 分半，最長的瘋狂場景 16 分 15 秒，兩首露琪亞加起來就佔掉全片一半以上。",
+  "keyTracks": [
+   "Lucia di Lammermoor: Regnava nel silenzio",
+   "Ernani: Ernani! Ernani involami",
+   "I vespri siciliani: Mercè, dilette amiche",
+   "Lucia di Lammermoor: Ardon gl'incensi"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1959。MB first-release-date 1959-07（Decca SXL 2159 英國原盤）、英文維基《Complete Decca Studio Recitals》清單直接寫「Operatic Arias (1959)」、Apple 那筆 Decca 官方品項的 copyright ℗ 1959，三方一致。**錄音年與發行年同為 1959，沒有落差**；Apple 上那筆 appleYear 2016 的品項是第三方再發，不是另一說（見 notes）。",
+  "notes": "**ready 覆核：配對的碟是對的，但配到的品項要換。** 探測層記的 gb 1111699219「Finest Operatic Arias」（appleTitle 不同、只有 5 軌、appleYear 2016）**經逐軌比對確認就是 1959 年 Decca SXL 2159 那次錄音**——五首詠嘆調同名同序，長度 786／480／213／375／968 秒對上 MB 的 792／484／212／377／975 秒，掛名的「The Paris Consevatoire Orchestra」（Apple 自己拼錯了 Conservatoire）就是 MB 的 Orchestre de la Société des Concerts du Conservatoire。**所以它不是後來的精選，appleYear 2016 是再發年不是錄音年（裁定 77：Apple 年份只能當訊號）。**｜**但正解應改成 Apple 1452135704「Joan Sutherland: Operatic Recital」**：同一份錄音、同樣 5 軌全有 previewUrl、**七個店面全有（1111699219 的 us 店面沒有）**，而且 copyright 是 **℗ 1959 Decca Music Group Limited**——版權方本人的品項，而 1111699219 是 ℗ 2016 Black Cat Productions 這種第三方復刻（c-99 第 6 條要看再發授權狀態）。建議把探測檔改成 gb 1452135704。｜第三個候選 418447103（℗ 2010 Regis，7 軌）是原盤五軌**加上**韓德爾《Alcina》兩曲的加曲版，不取。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Regnava nel silenzio〉正是原盤第 1 軌。｜掛名：MB 的 artist-credit 把兩位作曲家排在最前（Donizetti, Verdi; Sutherland, ...），卡片取獨唱者，合策展層第 3 條。｜**擋下策展層可能的說法**：維基寫「她第一次商業錄下露琪亞的第一場與最後一場」時**沒有點名是哪一張唱片**，行文不得直接把那句安在本張上；同樣，「La Stupenda」這個稱號維基繫在 1960 年威尼斯的《Alcina》之後，不是 1959 年這張。"
  }
 ]
