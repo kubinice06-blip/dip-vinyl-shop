@@ -105,7 +105,7 @@
     "src": "https://musicbrainz.org/release-group/71086160-3b53-3a3e-a2a6-b0132812376f"
    },
    {
-    "f": "同一 RG 的 release 明細：**六筆全部 26 軌**——2007-09-26 JP Official STARCHILD KICA-887 CD、2012-10-01 JP Official キングレコード株式会社 KICA-887 Digital Media、2016-11-04 US Official Milan M2-36799 CD、2016-11-04 CA Official Milan Digital Media、2016 BR Official Éditions Milan Music Digital Media、2008 TW Bootleg MIYA RECORDS MICA-0865 CD。**歐美與南美三筆的標題都改成《Music from \"EVANGELION: 1.0\" YOU ARE (NOT) ALONE》（沒有 Shiro SAGISU 前綴）。**",
+    "f": "同一 RG 的 release 明細：**六筆全部 26 軌**——2007-09-26 JP Official STARCHILD KICA-887 CD、2012-10-01 JP Official キングレコード KICA-887 Digital Media、2016-11-04 US Official Milan M2-36799 CD、2016-11-04 CA Official Milan Digital Media、2016 BR Official Éditions Milan Music Digital Media、2008 TW Bootleg MIYA RECORDS MICA-0865 CD。**歐美與南美三筆的標題都改成《Music from \"EVANGELION: 1.0\" YOU ARE (NOT) ALONE》（沒有 Shiro SAGISU 前綴）。**",
     "src": "https://musicbrainz.org/ws/2/release?release-group=71086160-3b53-3a3e-a2a6-b0132812376f&fmt=json&inc=media+labels&limit=100"
    },
    {
@@ -361,7 +361,7 @@
     "src": "https://musicbrainz.org/release/3bae70f8-0ac1-44fc-8e01-2c5548504764"
    },
    {
-    "f": "Apple Music 覆核（兩個端點、六個店面）：渡辺岳夫藝人頁 artistId 74964114 的目錄筆數 jp 8、us 7、gb 7、tw 7、hk 7、de 7（**遠低於 limit=200 的截斷值**），六店的目錄裡與 Gundam 相關的只有 **2003 年那兩套総音楽集**——1684537162／1683073770《機動戦士ガンダム TV版総音楽集》(2003-09-26，**53 軌**，掛「松山祐士 & 渡辺岳夫」) 與 1684543356／1683073559《機動戦士ガンダム 劇場版総音楽集》(2003-08-27，**137 軌**，掛「松山祐士, 渡辺岳夫 & 武市昌久」)。**1979 年那張 21 軌的原盤 Apple 上沒有。**",
+    "f": "Apple Music 覆核（兩個端點、六個店面）：渡辺岳夫藝人頁 artistId 74964114 的目錄筆數 jp 8、us 7、gb 7、tw 7、hk 7、de 7（**遠低於 limit=200 的截斷值**），六店的目錄裡與 Gundam 相關的只有 **2003 年那兩套総音楽集**——1684537162／1683073770《機動戦士ガンダム TV版総音楽集》(2003-09-26，**53 軌**，掛「松山祐士 & 渡辺岳夫」) 與 1684543356／1683073559《機動戦士ガンダム 劇場版総音楽集》(2003-08-27，**137 軌**，掛「松山祐士・渡辺岳夫・武市昌久」)。**1979 年那張 21 軌的原盤 Apple 上沒有。**",
     "src": "https://itunes.apple.com/lookup?id=74964114&entity=album&limit=200&country=jp"
    },
    {
@@ -385,7 +385,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1979。MB release-group first-release-date 1979-06-05，其下 1979-06-05 JP Official KING SKD(H)2005（12\" Vinyl）為原盤，卡單年份 1979 相符、**不是復刻年**。**但盤名的年份要分開講**：1979 年那張黑膠的 release 標題只有《機動戦士ガンダム》，**卡片採用的「オリジナル・サウンドトラック」這個名字是 1991-03-05 STARCHILD KICA-2001 重出時才有的**（依裁定 45「改過名的碟取再發名」，卡片盤名成立，但行文不得說 1979 年的碟就叫這個名字）。**作品年與原聲帶發行年要分開寫**：TV 版《機動戦士ガンダム》**1979-04-07 首播、1980-01-26 播畢 43 話**（en 維基），本碟 **1979-06-05** 發行時作品才播了 59 天。",
-  "notes": "**unavailable 覆核成立：Apple 上真的沒有 1979 年那張原盤。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 74964114 在 jp／us／gb／tw／hk／de 六店各回 7–8 筆，**離 limit=200 的截斷線極遠**，六店目錄裡的 Gundam 條目只有 2003 年那兩套総音楽集（53 軌與 137 軌）；`search` 端點另跑日文與英文兩種盤名、兩個店面，回的全是別作品的 Gundam 原聲盤。\\n**⚠ 那兩套 2003 年的総音楽集是策展層明寫「刻意不釘」的對照組**（ef3ddf20《劇場版総音楽集》、0370db17《TV版総音楽集》，皆整編精選、非原盤），**下游不得把 1684537162／1683073770／1684543356／1683073559 任何一筆配成本卡的固定試聽**（裁定 153 那個「策展層已指名不要的東西又被配回來」的形狀）。**軌數也對不上：原盤 21 軌，那兩套是 53 軌與 137 軌。**\\n**掛名要記兩件事**：(1) MB 的 artist-credit 是「渡辺岳夫 / 松山祐士」共同掛名，**Apple 的 2003 年整編盤把順序反過來寫成「松山祐士 & 渡辺岳夫」**，劇場版那套還多一位武市昌久；卡片依裁定 121 取主要作曲者渡辺岳夫，覆核成立。(2) MB 藝人實體名是日文（MBID 5f2b6515，名下 25 個 RG），Apple us／gb／de 店面顯示 Takeo Watanabe，那是店面在地化。\\n**盤名寫法**：MB 的 RG 標題用**半形片假名中黑「･」**並在作品名後多一個連字號，卡片改用通行的全形中黑並去掉連字號（策展層依裁定 50 處理，覆核成立）；2014 年那筆數位 release 的標題與卡片盤名逐字相同，**卡片盤名有 MB release 直接背書**。"
+  "notes": "**unavailable 覆核成立：Apple 上真的沒有 1979 年那張原盤。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 74964114 在 jp／us／gb／tw／hk／de 六店各回 7–8 筆，**離 limit=200 的截斷線極遠**，六店目錄裡的 Gundam 條目只有 2003 年那兩套総音楽集（53 軌與 137 軌）；`search` 端點另跑日文與英文兩種盤名、兩個店面，回的全是別作品的 Gundam 原聲盤。\\n**⚠ 那兩套 2003 年的総音楽集是策展層明寫「刻意不釘」的對照組**（ef3ddf20《劇場版総音楽集》、0370db17《TV版総音楽集》，皆整編精選、非原盤），**下游不得把 1684537162／1683073770／1684543356／1683073559 任何一筆配成本卡的固定試聽**（裁定 153 那個「策展層已指名不要的東西又被配回來」的形狀）。**軌數也對不上：原盤 21 軌，那兩套是 53 軌與 137 軌。**\\n**掛名要記兩件事**：(1) MB 的 artist-credit 是「渡辺岳夫 / 松山祐士」共同掛名，**Apple 的 2003 年整編盤把順序反過來寫成「松山祐士 ＆ 渡辺岳夫」**，劇場版那套還多一位武市昌久；卡片依裁定 121 取主要作曲者渡辺岳夫，覆核成立。(2) MB 藝人實體名是日文（MBID 5f2b6515，名下 25 個 RG），Apple us／gb／de 店面顯示 Takeo Watanabe，那是店面在地化。\\n**盤名寫法**：MB 的 RG 標題用**半形片假名中黑「･」**並在作品名後多一個連字號，卡片改用通行的全形中黑並去掉連字號（策展層依裁定 50 處理，覆核成立）；2014 年那筆數位 release 的標題與卡片盤名逐字相同，**卡片盤名有 MB release 直接背書**。"
  },
  {
   "key": "desc4:天野正道|ジャイアントロボ THE ANIMATION -地球が静止する日- ORIGINAL SOUND TRACK I",
@@ -846,5 +846,141 @@
   "status": "full",
   "yearVerified": "一致，2011。MB release-group first-release-date 2011-12-21，其下唯一的 Official release 是 2011-12-21 JP Aniplex SVWC-7814／SVWC-7815，卡單年份 2011 相符、**不是復刻年**。**作品年與原聲帶發行年要分開寫**：TV 動畫《化物語》**2009 年**由 Shaft 動畫化，動畫版第一季共 30 話、**2009 年 7 月至 2012 年 12 月**播出（en 維基），本碟 2011-12-21 落在第一季的播出期間之內；小說原作上下卷則是 2006 年 11 月與 12 月刊行（ja 維基）。**Apple 那兩個 id 的 releaseDate 都是 2018-11-02，那是數位重新遞送的日期，不是本碟的發行年。**",
   "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1535798702**（《化物語 劇伴音楽集》，70 軌、70 軌皆有 previewUrl）與 **us 1439324785**（《Bakemonogatari Gekihanongakushu (Original Soundtrack)》，同 70 軌、同 ℗、曲名改羅馬拼音）。**七十軌的曲名、曲序與逐軌長度，與 MB 原盤兩片攤平串接後逐位置相符**（第 32 軌〈雑多坩堝〉正是第二片的第一軌），**確認是同一份內容**。\\n**探測落空有兩個原因疊在一起**：(1) **掛名不是作曲家**——Apple 把它掛在「物語シリーズ」（jp）／「MONOGATARI Series」（us）名下，不是神前暁，所以他的藝人頁目錄（jp 18 筆、us 20 筆）撈不到（c-101 第 8 條的形狀）；(2) **盤名不同**——卡片與 MB 是《化物語 音楽全集 Songs & Soundtracks》，Apple 用《化物語 劇伴音楽集》。**兩個端點都要跑（裁定 173）：這一筆只有 `search` 端點看得見。**\\n**⚠ 要記的差異兩項**：(a) Apple 的標題寫「劇伴音楽集」，但它**含了第一片那五首片頭曲**，內容其實是「音楽全集」；(b) **原盤是兩片（31＋39），Apple 攤平成單一的 70 軌**——依裁定 175／c-97 第 11 條，比對以攤開的曲目列為準，本卡的 70 對得上 31＋39。**下游行文寫「兩片」要以 MB 為準，寫軌數則 70 與 31＋39 都成立。**\\n**releaseType 覆核（裁定 167）**：MB 的 `primary-type` 是 **Album**、`secondary-types` 是 [Compilation, Soundtrack]。**判準是 primary-type 欄本身**，所以照一般 Album 寫、`exceptionReason` 與 `exceptionEvidenceUrls` 留空——策展層的處理正確，**本卡不走 §5.6**。\\n**別碟警示**：策展層已明寫刻意不釘 fc21f4c3 與 72380bbe（2010 年兩張隨碟附贈的劇伴音楽集）、318a3d21 起的《偽物語》《猫物語》《傾物語》各卷、1588bd3d《セカンドシーズン Original Soundtracks》。Apple 上另有 1535798229《歌物語 Special Edition》(25 軌)、1537811231《歌物語2》(17 軌) 兩筆歌曲精選，同樣掛「物語シリーズ」，**不得改配**。"
+ },
+ {
+  "key": "desc2:Nujabes / Fat Jon|samurai champloo music record: departure",
+  "artist": "Nujabes / Fat Jon",
+  "album": "samurai champloo music record: departure",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 109bed29 的欄位：title「samurai champloo music record: departure」、artist-credit「Nujabes / Fat Jon」（**共同掛名，斜線分隔**；Fat Jon 的 MB 實體 f9288855，主名 Fat Jon the Ample Soul Physician）、first-release-date 2004-06-23、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release。",
+    "src": "https://musicbrainz.org/release-group/109bed29-720c-3a93-88ae-af83a464e5ed"
+   },
+   {
+    "f": "同一 RG 的 release 明細（**十一筆全部 17 軌**）：2004-06-23 JP Official Victor VICL-61411 CD（原盤）；2008-06-10 KR Official JVC JEKAC8001 CD；**2022-04-27 JP Official Victor VTJL-7／VTJL-8 兩張 12\" Vinyl，7＋10 軌的雙黑膠**；2024-01-08 兩筆 Victor Digital Media；2024-06-26 JP Official flying DOG VTCL-60638 CD（初回限定盤）；2018-02-14 JP **Withdrawn** Victor VICL-61411 F（K2HD）；2004-06-23 XW **Bootleg**〔no label〕SCR002（標題只作《departure》）；2014-09-24 一筆狀態未填的《Departure: Samurai Champloo Soundtrack》**16 軌**；另兩筆 Pseudo-Release。**依裁定 43，Bootleg 與 Withdrawn 都不算再發背書。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=109bed29-720c-3a93-88ae-af83a464e5ed&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release f933c534（2004-06-23 JP Victor VICL-61411）的逐軌曲目：單片 17 軌，第 1 軌〈battlecry〉200 秒、**第 4 軌〈kujaku〉419 秒是全碟最長**、第 16 軌〈624 part1〉162 秒是最短，第 8 軌是〈624 part2〉226 秒（**part2 排在 part1 前面**），末軌〈四季ノ唄〉300 秒是碟上唯一的日文標題。",
+    "src": "https://musicbrainz.org/release/f933c534-5c4e-41d6-b2b9-c8ce36bc9ed7"
+   },
+   {
+    "f": "Apple Music collectionId 1721842998《Samurai Champloo Music Record Departure》：**artistName「Nujabes/fat jon」（無空格、fat jon 小寫）**，releaseDate 2004-06-23、copyright「℗ FlyingDog, Inc.」、trackCount 17，`entity=song` **攤得出 17 軌、17 軌全部有 previewUrl**，曲序與 MB 原盤逐位置相符、逐軌長度各差 2 至 4 秒。**兩處曲名寫法不同**：Apple 第 1 軌作〈battlecry feat. Shing02〉、**第 4 軌作〈transcendence〉（MB 作〈kujaku〉）**。**同一個 id 在 jp／us／gb／tw／hk／de 六個店面全部命中。**",
+    "src": "https://itunes.apple.com/lookup?id=1721842998&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "同系列另外三張的 MB 欄位：e8c3e38f《samurai champloo music record: impression》artist-credit「Force of Nature / Nujabes / Fat Jon」、**2004-09-22**；1b6101ec《同 masta》artist-credit「Force of Nature / Tsutchie」、**2004-06-23（與本張同日）**；655400ef《同 playlist》artist-credit「Tsutchie」、**2004-09-22**。**四張的掛名各不相同，而且 masta 與本張是同一天發行。**",
+    "src": "https://musicbrainz.org/release-group/1b6101ec-146c-33e4-871d-048ad3557f62"
+   },
+   {
+    "f": "英文維基〈Samurai Champloo〉導言：Manglobe 的第一部電視作品，**全 26 話、2004 年 5 月至 2005 年 3 月**播出，先在富士電視台部分播出、後於 Fuji Network System 完整播出；北美由 Adult Swim 播出，商品化先後由 Geneon Entertainment 與 Crunchyroll 發行。作品設定在虛構化的江戶時代日本，**把傳統元素與包含嘻哈在內的時代錯置文化參照混在一起**。本碟 2004-06-23 發行時，TV 版還在播出中。",
+    "src": "https://en.wikipedia.org/wiki/Samurai_Champloo"
+   }
+  ],
+  "hookCandidates": [
+   "十七軌裡〈624〉的 part2 排在第八軌，part1 排在第十六軌",
+   "十八年後 Victor 把這十七軌拆成兩張黑膠，七軌加十軌"
+  ],
+  "sound": "MB release f933c534（Victor VICL-61411）記單片 17 軌，MB 未填總長；逐軌長度自 162 秒到 419 秒，**十七軌裡有十三軌落在 3 到 4 分半之間**，最長的第 4 軌 419 秒與最短的第 16 軌 162 秒是僅有的兩個極端。曲名全部小寫英文（battlecry／aruarian dance／mystline／ole／genome／funkin／stay／chambers／ask），**唯一的日文標題〈四季ノ唄〉排在末軌**，而〈624〉的 part2 與 part1 分別排在第 8 與第 16 軌、順序是倒過來的。**2022 年 Victor 的雙黑膠把同一份曲目拆成 7＋10 軌兩片，行文寫「一片十七軌」時要指明是 CD。**",
+  "keyTracks": [
+   "battlecry",
+   "aruarian dance",
+   "四季ノ唄"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2004。MB release-group first-release-date 2004-06-23，其下 2004-06-23 JP Official Victor VICL-61411 為原盤，Apple 1721842998 的 releaseDate 也是 2004-06-23，卡單年份 2004 相符、**不是復刻年**。**作品年與原聲帶發行年要分開寫**：TV 動畫《サムライチャンプルー》**2004 年 5 月至 2005 年 3 月**播出全 26 話（en 維基），本碟 2004-06-23 發行時作品還在播——**同年，碟在作品播出中**。2008 韓國盤、2022 雙黑膠、2024 兩筆數位與 flying DOG 初回限定盤都是後來的再發。",
+  "notes": "**ready 卡覆核通過，配對正確，六個店面全部命中。** jp 1721842998 的 17 軌與 MB 原盤 release f933c534 逐位置相符、17 軌全部有 previewUrl。**派工點名的疑點（同系列四張的卷號與副標比對）實查結論：釘對了**——Apple 的 collectionName 是 Departure，不是 impression／masta／playlist；**而且四張在 MB 上的掛名各不相同**（departure＝Nujabes / Fat Jon、impression＝Force of Nature / Nujabes / Fat Jon、masta＝Force of Nature / Tsutchie、playlist＝Tsutchie），掛名本身就是可靠的區分。\\n**⚠ 但要記一筆：masta 與本張是同一天發行（2004-06-23）**，**所以「系列第一張」這個說法不成立**；策展層 `curatorWhy` 寫的是「四張原聲盤裡**由 Nujabes 與 Fat Jon 共同署名的**第一張」，加了限定語之後成立（impression 是 2004-09-22），**但行文不得把它簡化成「系列第一張」或「最早的一張」**。\\n**⚠ 兩處曲名歧異，行文要小心**：Apple 第 1 軌作〈battlecry feat. Shing02〉、MB 作〈battlecry〉；**Apple 第 4 軌作〈transcendence〉、MB 作〈kujaku〉**（曲長 422 對 419 秒，是同一軌）。**寫曲名時兩種都查得到，但不要在同一句裡混用兩套。**\\n**掛名要當獨立一項看（c-98 第 1 條）**：MB 作「Nujabes / Fat Jon」（斜線＋空格，與裁定 16 的池中寫法一致）、**Apple 作「Nujabes/fat jon」（無空格、小寫）**、Fat Jon 的 MB 主名是 Fat Jon the Ample Soul Physician。**池中既有三張是單掛 Nujabes**，本卡另立共同掛名鍵——策展層的判斷覆核成立，這確實是兩人共同署名的碟。\\n**別碟警示**：策展層已明寫刻意不釘同系列三張、ab6894f3《Samurai Champloo Music Record: Katana》（Various Artists 精選）、e2444f98《Lost Lullabies》（未收錄曲集）、2d91c1d5《Samurai Champloo Rhythm Track》（掛 Masafumi Takada）。本次另查出 **MB 上一筆 2014-09-24 狀態未填的《Departure: Samurai Champloo Soundtrack》是 16 軌**（比原盤少一軌），**不得採為軌數依據**。"
+ },
+ {
+  "key": "desc4:大島ミチル|鋼の錬金術師 オリジナルサウンドトラック 1",
+  "artist": "大島ミチル",
+  "album": "鋼の錬金術師 オリジナルサウンドトラック 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0d0869a0 的欄位：title「鋼の錬金術師 オリジナルサウンドトラック 1」、artist-credit「大島ミチル」（藝人 MBID e6fae4d5，名下 103 個 release-group）、first-release-date 2004-03-24、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release，**五筆全部 33 軌**。",
+    "src": "https://musicbrainz.org/release-group/0d0869a0-b725-35bc-9fc5-915fdfbc180c"
+   },
+   {
+    "f": "同一 RG 的 release 明細與**三種標題**：2004-03-24 JP Official Aniplex SVWC-7191 **Copy Control CD**，標題《TVアニメーション 鋼の錬金術師 オリジナルサウンドトラック1》（帶前綴、卷號無空格）；2005-10-26 JP Official Aniplex SVWC-1034 CD，標題《鋼の錬金術師 オリジナルサウンドトラック 1》（＝RG 標題）；**2022-05-13 JP Official Aniplex ANXX01082B00Z Digital Media，標題《鋼の錬金術師 オリジナル・サウンドトラック》——沒有卷號、中間多一個中黑**；另兩筆 Pseudo-Release 用《Fullmetal Alchemist Original Soundtrack 1》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0d0869a0-b725-35bc-9fc5-915fdfbc180c&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 89220484（2004-03-24 JP Aniplex SVWC-7191，Copy Control CD）的逐軌曲目：單片 33 軌，第 1 軌〈帰路〉305 秒、**第 3 軌〈メリッサ(TV size ver.)〉108 秒與末軌〈消せない罪(TV size ver.)〉80 秒是兩首主題曲的 TV size**，第 27 軌〈アメストリス〉291 秒與第 32 軌〈Братья(ブラーチヤ)〉246 秒是碟上另外兩首長曲；**三十三軌裡有二十軌不到兩分鐘**，最短的第 21 軌〈賢者の石〉只有 66 秒。曲名多為兩字的漢語詞（〈等価交換〉〈称号〉〈天高気清〉〈街路〉〈動揺〉〈潜入〉〈蠢動〉〈牢固〉〈侵攻〉〈宿命〉〈別離〉〈悲愴〉〈贖罪〉〈落陽〉〈天上〉〈暗雲〉〈禁忌〉〈再会〉）。",
+    "src": "https://musicbrainz.org/release/89220484-319a-477e-b832-1b7bbc6fdb5a"
+   },
+   {
+    "f": "Apple Music collectionId 1618724980《鋼の錬金術師 オリジナル・サウンドトラック》：artistName 大島ミチル（jp）／Michiru Oshima（us／gb／de）／大島滿（tw／hk），releaseDate 2004-03-24、copyright「℗ 2004(1,2,4-32) Aniplex Inc. / 2003(3,33) Sony Music Entertainment (Japan) Inc.」、trackCount 33，`entity=song` **攤得出 33 軌、33 軌全部有 previewUrl**，曲名與曲序與 MB 原盤 89220484 逐位置相符（只有第 3、33 軌的 TV size 寫法與空格差異）。**同一個 id 在 jp／us／gb／tw／hk／de 六個店面全部命中。**",
+    "src": "https://itunes.apple.com/lookup?id=1618724980&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "**Apple 那筆的 copyright 欄自己把兩首主題曲切出來標了不同年份與不同版權方**：「℗ 2004(1,2,4-32) Aniplex Inc. / 2003(3,33) Sony Music Entertainment (Japan) Inc.」——**第 3 軌〈メリッサ〉與第 33 軌〈消せない罪〉的 ℗ 年份是 2003、版權方是 Sony Music Entertainment (Japan)**，其餘 31 軌是 2004 年的 Aniplex。",
+    "src": "https://itunes.apple.com/lookup?id=1618724980&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈鋼の錬金術師 (アニメ)〉導言：荒川弘 同名漫畫原作、BONES 製作，**電視動畫 2003 年 10 月至 2004 年 10 月**由每日放送製作、TBS 系列等播出。本碟 **2004-03-24** 發行時，TV 版還在播出中（開播約五個月、距完結尚有半年）。",
+    "src": "https://ja.wikipedia.org/wiki/%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB_(%E3%82%A2%E3%83%8B%E3%83%A1)"
+   }
+  ],
+  "hookCandidates": [
+   "三十三軌裡有二十軌不到兩分鐘，最短的〈賢者の石〉只有一分零六秒",
+   "Apple 的版權欄自己把第三軌與第三十三軌切出來：那兩首的年份是 2003，其餘三十一軌是 2004"
+  ],
+  "sound": "MB release 89220484（Aniplex SVWC-7191，Copy Control CD）記單片 33 軌，MB 未填總長。**篇幅極不平均**：三十三軌裡有二十軌不到 120 秒（最短〈賢者の石〉66 秒），長曲只有四首——第 1 軌〈帰路〉305 秒、第 27 軌〈アメストリス〉291 秒、第 32 軌〈Братья(ブラーチヤ)〉246 秒、第 22 軌〈イシュヴァール〉213 秒。曲名以兩字漢語詞為主（〈等価交換〉〈蠢動〉〈牢固〉〈贖罪〉〈落陽〉〈禁忌〉），另有一軌用俄文標題〈Братья〉並在括號裡標了片假名讀音。兩首主題曲的 TV size 版分別排在第 3 軌與末軌。",
+  "keyTracks": [
+   "帰路",
+   "アメストリス",
+   "Братья(ブラーチヤ)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2004。MB release-group first-release-date 2004-03-24，其下 2004-03-24 JP Official Aniplex SVWC-7191 為原盤，Apple 1618724980 的 releaseDate 也是 2004-03-24，卡單年份 2004 相符、**不是復刻年**；2005-10-26 SVWC-1034 與 2022-05-13 ANXX01082B00Z 是後來的再發。**作品年與原聲帶發行年要分開寫**：TV 動畫《鋼の錬金術師》**2003 年 10 月至 2004 年 10 月**播出（ja 維基），本碟 2004-03-24 落在播出期間之內。**⚠ 碟內另有兩個年份**：Apple 的 ℗ 欄把第 3 軌與第 33 軌標成 **2003 年、Sony Music Entertainment (Japan)**，其餘 31 軌是 2004 年的 Aniplex——**那兩軌是主題曲的 TV size，錄音年早於本碟一年**。",
+  "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready，而且六個店面全部命中。** 正解 **1618724980**（33 軌、33 軌皆有 previewUrl，曲名與曲序與 MB 原盤 89220484 逐位置相符），jp／us／gb／tw／hk／de 六店同一個 collectionId。\\n**⚠ 探測落空的原因值得單獨記下來：卷號那道防線反過來擋掉了正解。** 卡片盤名是《鋼の錬金術師 オリジナルサウンドトラック **1**》（帶卷號），**Apple 用的是 2022 年那個沒有卷號的標題《鋼の錬金術師 オリジナル・サウンドトラック》**（而且中間多一個中黑）。**裁定 168 的 `volToken()` 規則寫的是「兩邊都有且相同才算數；只有一邊有就是不同碟」——本卡正是那條規則的假陰性**：卡片有卷號、Apple 沒有，於是被判成不同碟。這不是規則寫錯（同系列確實有 2、3 兩卷要擋），**而是這條規則在「日本動畫原聲的再發常常把卷號拿掉」這個情境下會誤傷，研究層要用軌數與逐軌曲名補救。**\\n**掛名不是落空原因**：Apple 這一筆掛的就是作曲者本人（jp 大島ミチル／us Michiru Oshima）。⚠ **但 tw 與 hk 店面把掛名顯示成「大島滿」**——**那是另一位作曲家的名字（大島ミチル 的漢字寫法有爭議），屬店面在地化的錯譯，不得採為身分依據**，卡片依 MB 藝人實體取「大島ミチル」，覆核成立。\\n**盤名四種寫法**（去重都要掃）：2004 原盤帶「TVアニメーション」前綴且卷號無空格、2005 再發即 RG 標題、2022 版無卷號且多一個中黑、英譯《Fullmetal Alchemist Original Soundtrack 1》。\\n**別碟警示**：策展層已明寫刻意不釘 516f7ed5《オリジナルサウンドトラック 2》、cff60ee7《同 3》、ca8b2ce9《劇場版 シャンバラを征く者》。策展層 `curatorRisk` 另點名 Apple 的 1618725351（2）、1618726267（3，掛 Various Artists）、1618726452（劇場版）——**這三筆與正解的盤名只差尾號，配對必須比對軌數（本張 33）。**"
+ },
+ {
+  "key": "desc4:横山菁児|聖闘士星矢 音楽集",
+  "artist": "横山菁児",
+  "album": "聖闘士星矢 音楽集",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7153d9e7 的欄位：title「聖闘士星矢 音楽集」、artist-credit「横山菁児」（藝人 MBID 81df6a19，名下 34 個 release-group）、first-release-date 1987-01-21、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release，**四筆全部 10 軌**。",
+    "src": "https://musicbrainz.org/release-group/7153d9e7-8d2d-4d27-9211-ea80de20494e"
+   },
+   {
+    "f": "同一 RG 的 release 明細：**1987-01-21 JP Official 同日兩筆同標題不同載體**——Columbia CX-7296 **Vinyl** 與 Columbia 32CC-1368 **CD**，兩筆都是 10 軌；2003-09-25 JP Official Columbia Music Entertainment COCC-72009 CD 10 軌；另一筆英譯 Pseudo-Release《Saint Seiya TV Original Soundtrack》。**沒有 Bootleg。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7153d9e7-8d2d-4d27-9211-ea80de20494e&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release e7a93528（1987-01-21 JP Columbia CX-7296，Vinyl）的逐軌曲目：10 軌，**十軌全部超過三分半**——第 1 軌〈ペガサス流星拳：ペガサス幻想〜永遠ブルー〉285 秒、第 2 軌〈聖域、死の戒律〉206 秒（全碟最短）、第 3 軌〈銀河戦争〉234 秒、第 4 軌〈燃える小宇宙〉250 秒、**第 5 軌〈守護星に誓う〉348 秒是全碟最長**、第 6 軌〈女神の聖闘士〉272 秒、第 7 軌〈復讐鬼フェニックス〉267 秒、第 8 軌〈暗黒聖闘士の挑戦〉240 秒、第 9 軌〈哀しき兄弟たち〉278 秒、末軌〈伝説の時代へ〉296 秒。",
+    "src": "https://musicbrainz.org/release/e7a93528-361c-3b90-beaa-a226be02ec84"
+   },
+   {
+    "f": "Apple Music 覆核（兩個端點、六個店面）：横山菁児藝人頁 artistId 408923928 在 jp／us／gb／tw／hk／de **六個店面各回 23 筆**（**遠低於 limit=200 的截斷值**），**六店的目錄裡沒有任何 1987 年的音楽集**——目錄裡與本作相關的全部是 2019 至 2026 年上架的**單軌單曲**（1488458605〈Shuushou Sekaijuu No Ki No Shita De (From \"Saint Seiya Bgm\")〉、1664363259〈Pegasus Ryuuseiken〉、1659660428〈Tobe Pegasus〉、1616336152〈Datenshi Tai Saint〉、1669630194〈Deucalion no Daikouzui〉、1500114840、1502253529、1553666625、1488958676、1489180996 等），另有 1572068099《World of Seiji Yokoyama : Serenade》(2021，9 軌) 與 1703950086《Choriki Sentai Ohranger Music Collection》(1995，14 軌)。",
+    "src": "https://itunes.apple.com/lookup?id=408923928&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "Apple `search` 端點（jp「聖闘士星矢 音楽集」「Saint Seiya BGM」、us「Saint Seiya」「Seiji Yokoyama」）回的是翻奏單曲（DPinilla 一系列、Ediern、Animelmack、しよつらむひ、Black Anisinger、岩永雅子＆まつざわゆみ）與 **2023 年重製版《聖闘士星矢:Knights of the Zodiac》的原聲盤（池頼広，1668335114／1668333701／1734932592）**。**兩個端點都跑過，結論一致：Apple 上沒有 1987 年那張碟。**",
+    "src": "https://itunes.apple.com/search?term=Saint%20Seiya%20BGM&country=jp&entity=album&limit=15"
+   },
+   {
+    "f": "英文維基〈Saint Seiya〉導言：車田正美 原作，1985 至 1990 年在集英社《週刊少年ジャンプ》連載、單行本 28 卷；**漫畫由東映動畫改編成 114 話的電視動畫，1986 至 1989 年在朝日電視台播出**，其後接一套 31 話的 OVA。法文版標題《Les Chevaliers du Zodiaque》即英語圈別名 Knights of the Zodiac 的來源。本碟 1987-01-21 發行時，TV 版還在播出中。",
+    "src": "https://en.wikipedia.org/wiki/Saint_Seiya"
+   },
+   {
+    "f": "MusicBrainz 上横山菁児名下 34 個 release-group 分頁全列後逐筆比對：**盤名含「聖闘士星矢」的有 13 個**（本張、音楽集Ⅱ 至 Ⅷ、ヒット曲集II、メモリアルBOX 等）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=81df6a19-c74b-41dd-a628-1ffcb6b6a9ee&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一天出兩種載體：黑膠 CX-7296、CD 32CC-1368，十軌一模一樣",
+   "十軌沒有一軌短於三分半——這在 1980 年代的電視動畫劇伴盤上不常見"
+  ],
+  "sound": "MB release e7a93528（Columbia CX-7296）記黑膠 10 軌，MB 未填總長。**十軌的長度全部落在 206 秒到 348 秒之間**，沒有一軌短於三分半，也沒有一軌超過六分鐘——與本組其他 1980 年代劇伴盤（動輒二十軌、其中大半不到 90 秒）的做法明顯不同。曲名以招式、陣營與情節為題（〈ペガサス流星拳：ペガサス幻想〜永遠ブルー〉〈聖域、死の戒律〉〈銀河戦争〉〈燃える小宇宙〉〈女神の聖闘士〉〈復讐鬼フェニックス〉〈暗黒聖闘士の挑戦〉〈哀しき兄弟たち〉），收在〈伝説の時代へ〉。**四筆 release 軌數一致都是 10。**",
+  "keyTracks": [
+   "ペガサス流星拳：ペガサス幻想〜永遠ブルー",
+   "守護星に誓う",
+   "伝説の時代へ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。MB release-group first-release-date 1987-01-21，其下 **1987-01-21 JP Official 同日兩筆**（Columbia CX-7296 黑膠與 Columbia 32CC-1368 CD）為原盤，卡單年份 1987 相符、**不是復刻年**；2003-09-25 Columbia Music Entertainment COCC-72009 是重出。**作品年與原聲帶發行年要分開寫**：電視動畫《聖闘士星矢》由東映動畫改編、**1986 至 1989 年**在朝日電視台播出全 114 話（en 維基），本碟 1987-01-21 發行時作品還在播；原作漫畫則是 1985 至 1990 年連載（en 維基）——**作品有漫畫、動畫兩條時間線，行文提年份要指明是哪一條。**",
+  "notes": "**unavailable 覆核成立：Apple 上真的沒有。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 408923928 在 jp／us／gb／tw／hk／de **六個店面各回 23 筆、都沒到 limit=200 的截斷線**，目錄裡與本作相關的**全部是 2019 年之後上架的單軌單曲**（把同一批 BGM 錄音一軌一軌拆出來賣），沒有 1987 年那張十軌的碟；`search` 端點另跑四組字串，回的是翻奏與 2023 年重製版《聖闘士星矢:Knights of the Zodiac》的原聲（掛池頼広）。\\n**⚠ 這一張的假陽性形狀特別**：Apple 上那批單曲**掛的就是横山菁児本人、標題也註明 From \"Saint Seiya Bgm\"**，但**每一筆都只有 1 至 3 軌**，是拆軌單賣，不是本碟。**下游不得把任何一筆單曲配成本卡的固定試聽。**\\n**盤名跨語言三種寫法**（去重都要掃）：日文《聖闘士星矢 音楽集》、英譯《Saint Seiya TV Original Soundtrack》（MB 的 Pseudo-Release）、法語圈的《Les Chevaliers du Zodiaque》（en 維基記為該作的法文標題，也是英語圈別名 Knights of the Zodiac 的來源）。\\n**擋下策展層一處說法**：`curatorWhy` 寫本系列「是他名下 34 個 release-group 的**主幹**」——**這是比重判斷、查不到來源**。可以寫的是有來源的數字：分頁全列 34 個 RG，**盤名含「聖闘士星矢」的有 13 個**。**行文寫「主幹」以外的序數與比重詞都要避開。**\\n**別碟警示**：策展層已明寫刻意不釘同系列音楽集Ⅱ 至 Ⅷ 七筆、1156409d《聖闘士星矢 ヒット曲集II いかなる星の下に》（歌曲精選）、997da441《聖闘士星矢 メモリアルBOX》（套裝）。**同系列八張的盤名只差尾端的羅馬數字（本張沒有數字），是裁定 168 那個形狀最危險的一種——短的那張最容易被長的吃掉。**"
  }
 ]
