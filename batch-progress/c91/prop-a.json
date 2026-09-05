@@ -1,0 +1,364 @@
+[
+ {
+  "artist": "董事長樂團",
+  "album": "董事長.tw",
+  "year": 2001,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sony BMG Music Entertainment（catno PMD0135）",
+  "why": "董事長樂團 2000 年《你袂了解》之後的第二張正規專輯，也是他們從角頭單曲時期轉進商業體系後的第一張。中文維基〈董事長樂團〉的正規專輯表把它列為第 2 張、發行方記「動能音樂」，MB 唯一的 TW release 則把發行掛在 Sony BMG Music Entertainment、編號 PMD0135，兩者是廠牌與代理發行的差別。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "盤名有三種寫法：MB release-group 作「董事長.tw Chairman 2」、Apple TW（collectionId 1445803773）作「董事長.tw Chairmans 2」（Chairman 帶 s）、中文維基作「chairman.tw2」。卡片取去掉英文副標後的《董事長.tw》，三種寫法全部進 queryAlias，否則 grep 去重會漏。CAA release-group 端點 404（實測），封面要走 Apple TW 那一筆。廠牌兩說（動能音樂／Sony BMG）如 why 所述，行文不得斷言單一發行方。",
+  "mbNote": "釘 release-group fa0d6c30-db82-4993-8bde-329379fd435a。回問 release-group 端點確認：title「董事長.tw Chairman 2」、artist-credit「董事長樂團」、first-release-date 2001-11-15、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905，名下 12 個 release-group（browse release-group?artist=…&limit=100 全列，非 25 筆分頁上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "董事長.tw Chairman 2；董事長.tw Chairmans 2；chairman.tw2；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "十一台",
+  "year": 2002,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sony BMG Music Entertainment（catno IMD0239）",
+  "why": "董事長樂團第 3 張正規專輯，中文維基〈董事長樂團〉的專輯表把盤名寫成「11台」、發行方記「愛做音樂」；MB 唯一的 TW release 標題作「十一台」、發行掛 Sony BMG Music Entertainment、編號 IMD0239。這張與前一張《董事長.tw》同屬樂團 2001–2002 年進入商業發行體系的兩張，是《你袂了解》與 2005 年之後獨立廠牌時期之間的空缺。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "盤名國字／阿拉伯數字兩種寫法（十一台／11台）在任何字串正規化下都不會相等，撞卡與去重兩種都要掃（裁定第 49 條的同型問題）。CAA release-group 端點 404（實測），封面要走 Apple TW collectionId 840578032；該筆 Apple releaseDate 記 2002-01-01、MB 記 2002-08-09，Apple 的日期只能當訊號不能當版本門檻（裁定第 77 條）。廠牌兩說（愛做音樂／Sony BMG）。",
+  "mbNote": "釘 release-group 9a395496-8008-47c6-8c38-e766adfa7f09。回問 release-group 端點確認：title「十一台」、artist-credit「董事長樂團」、first-release-date 2002-08-09、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "11台；十一台；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "找一個新世界",
+  "year": 2005,
+  "genres": [
+   "rock"
+  ],
+  "label": "典選音樂（catno CMD402）",
+  "why": "董事長樂團第 5 張正規專輯（中文維基〈董事長樂團〉專輯表；第 4 張《冠宇單飛》2003 年由角頭音樂發行，MB 完全查無）。這張與次年的《真的假的!?》同屬典選音樂／Here Music 時期，編號 CMD402、CMD204 相鄰，是樂團離開大廠代理之後的兩張。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "MB 的 TW release 只填了編號 CMD402、未填廠牌名，廠牌名取自中文維基與同期姊妹作《真的假的!?》的 Here Music 條目，行文要寫成「編號 CMD402」而不是斷言廠牌。CAA release-group 端點 200（實測有圖），Apple TW collectionId 702795326 亦在（releaseDate 2005-03-24，與 MB 一致）。",
+  "mbNote": "釘 release-group ce899faf-0d5a-4aef-9a4a-83da4fa1bf8a。回問 release-group 端點確認：title「找一個新世界」、artist-credit「董事長樂團」、first-release-date 2005-03-24、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，catno CMD402）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "真的假的!?",
+  "year": 2006,
+  "genres": [
+   "rock"
+  ],
+  "label": "Here Music 典選音樂（catno CMD 204）",
+  "why": "董事長樂團第 6 張正規專輯，中文維基〈董事長樂團〉專輯表記 2006 年、發行方典選音樂；MB 兩個 TW release 中有一筆把廠牌明寫成 Here Music、編號 CMD 204。與《找一個新世界》同屬樂團 2005–2006 年的典選時期。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "盤名的驚嘆號與問號會被正規化吃掉：MB 作「真的假的!?」、Apple TW（collectionId 702818249）作「真的假的」沒有標點，兩種都要掃（同拷秋勤《拷!!出來了!!!》那組的形狀）。標點皆為半形 ASCII，chk-prop 的非 ASCII 連字號檢查不會誤報。Apple releaseDate 記 2006-10-22、MB 記 2006-11-22，差一個月，取 MB。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 342283b8-f984-4df2-980b-a066e2ad71aa。回問 release-group 端點確認：title「真的假的!?」、artist-credit「董事長樂團」、first-release-date 2006-11-22、primary-type Album、secondary-types 空、轄下 2 個 release（皆 TW／Official，其一 Here Music CMD 204）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "真的假的；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "花光他的錢",
+  "year": 2008,
+  "genres": [
+   "rock"
+  ],
+  "label": "喜瑪拉雅音樂（catno SO1002）",
+  "why": "董事長樂團第 7 張正規專輯，中文維基〈董事長樂團〉專輯表與 MB 的 TW release 一致記喜瑪拉雅音樂發行（編號 SO1002）。喜瑪拉雅同時期也發了濁水溪公社《藍寶石》（LTKC-005，同為 2008-12-26），兩張是同一家廠牌同日出的台客搖滾盤。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "Apple TW collectionId 840618106 的曲數是 20 軌、標 explicit，MB 的 TW release 未列曲目，兩者曲數對不上——很可能是二合一或加曲版，本機端配試聽前要逐軌比對整份曲目表，不得只比軌數或末幾軌（裁定第 140／140 附二條）。CAA release-group 端點 404（實測），封面只能走 Apple 那一筆。",
+  "mbNote": "釘 release-group c5901858-324a-4538-999c-e1a3fbb8f9a8。回問 release-group 端點確認：title「花光他的錢」、artist-credit「董事長樂團」、first-release-date 2008-12-26、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，喜瑪拉雅 SO1002）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "一條命",
+  "year": 2013,
+  "genres": [
+   "rock"
+  ],
+  "label": "大吉祥整合行銷（catno DGS-1301）",
+  "why": "董事長樂團第 9 張正規專輯，也是他們 2007 年自組「大吉祥音樂工作室」之後、由自家公司大吉祥整合行銷發行的兩張之一（另一張是次年的《一個世界》，編號 DGS-1403）。中文維基〈董事長樂團〉專輯表把盤名記成「One Life／一條命」，中英並列。同年樂團首度舉辦「集體記憶」巡演。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "盤名英文 One Life 與中文並列，英文寫法要進 queryAlias。Apple TW collectionId 710014482 的 releaseDate 記 2013-08-02、MB 記 2013-11-07，差三個月，取 MB（裁定第 77／91 條）。CAA release-group 端點 200。廠牌名「大吉祥整合行銷有限公司」與樂團 2007 年成立的「大吉祥音樂工作室」是兩個名稱，行文不要混用。",
+  "mbNote": "釘 release-group 81e9aa10-f99b-4cb6-a261-1f30f836da39。回問 release-group 端點確認：title「一條命」、artist-credit「董事長樂團」、first-release-date 2013-11-07、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，大吉祥整合行銷有限公司 DGS-1301）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "One Life；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "一個世界",
+  "year": 2014,
+  "genres": [
+   "rock"
+  ],
+  "label": "禾廣娛樂（catno DGS-1403）",
+  "why": "董事長樂團第 10 張正規專輯，與前一年的《一條命》同屬自家 DGS 編號系列（DGS-1301／DGS-1403）。中文維基〈董事長樂團〉專輯表把盤名記成「One World／一個世界」、發行方記大吉祥整合行銷，MB 的 TW release 則把發行掛禾廣娛樂股份有限公司——禾廣同期也代理濁水溪公社《鄉土．人民．勃魯斯》（2014，LTKC008）與《亞洲衝擊》（2017，LTKC009）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "盤名英文 One World 要進 queryAlias。廠牌兩說（大吉祥整合行銷／禾廣娛樂），是自家廠牌與代理發行的差別，行文不得只寫一方。Apple TW collectionId 956111106 的 releaseDate 記 2015-01-08、MB 記 2014-12-20，跨年，取 MB。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 2255ffed-9ce5-4575-9306-6d0ed891682d。回問 release-group 端點確認：title「一個世界」、artist-credit「董事長樂團」、first-release-date 2014-12-20、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，禾廣娛樂股份有限公司 DGS-1403）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "One World；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "董事長的少年時代",
+  "year": 2016,
+  "genres": [
+   "rock"
+  ],
+  "label": "好有感覺音樂（catno DGS1601）",
+  "why": "董事長樂團第 11 張正規專輯，中文維基〈董事長樂團〉專輯表記 2016 年、發行方好有感覺音樂；MB 的 TW release 只填編號 DGS1601、未填廠牌名，但編號與次年《祭》（DGS1703）、2019 年《風中浮沉的花蕊》（DGS1901）同屬一個系列，後兩張的廠牌欄都明寫好有感覺音樂。這是樂團 2016–2019 三張一組的第一張。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "MB 的 release 未填廠牌名，廠牌依中文維基與同系列編號推得，行文要寫「編號 DGS1601」而非斷言廠牌。Apple TW collectionId 1152347294 標 explicit、releaseDate 2016-06-30 與 MB 完全一致。CAA release-group 端點 200。盤名含團名「董事長」，用團名做模糊比對會撈到自家其他碟，比對要鎖全稱。",
+  "mbNote": "釘 release-group 7ddaca66-476e-4a3a-a34d-5df1ab660118。回問 release-group 端點確認：title「董事長的少年時代」、artist-credit「董事長樂團」、first-release-date 2016-06-30、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，catno DGS1601）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "祭",
+  "year": 2017,
+  "genres": [
+   "rock"
+  ],
+  "label": "好有感覺音樂（catno DGS1703）",
+  "why": "董事長樂團第 12 張正規專輯，MB 的 TW release 明寫好有感覺音樂、編號 DGS1703。中文維基〈董事長樂團〉的獎項紀錄欄記這張收錄的〈九天玄女〉音樂錄影帶在 2018 年入選英國 Feel The Reel 國際影展、美國國際獨立影片獎夏季徵選金獎、紐約 The Cutting Room 國際短片影展與台灣金點設計獎設計標章。2020 年另有黑膠版（Apple TW collectionId 1510912223）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "年份兩說：MB first-release-date 與 Apple TW（collectionId 1331353785，2017-12-28）都記 2017 年 12 月，中文維基專輯表卻記 2018 年——取 MB／Apple 的 2017，行文不得正面斷言發行年份。盤名只有一個字「祭」，字串比對雜訊極高，任何自動比對都必須連藝人名一起鎖。CAA release-group 端點 200。2020 黑膠版屬同一 RG 的另一個 release，不另開卡。",
+  "mbNote": "釘 release-group c042c807-488d-4303-a28d-c1d2f4b0c792。回問 release-group 端點確認：title「祭」、artist-credit「董事長樂團」、first-release-date 2017-12、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，好有感覺音樂 DGS1703）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "祭 (黑膠版)；The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "董事長樂團",
+  "album": "風中浮沉的花蕊",
+  "year": 2019,
+  "genres": [
+   "rock"
+  ],
+  "label": "好有感覺音樂（catno DGS1901）",
+  "why": "董事長樂團第 13 張正規專輯（中文維基〈董事長樂團〉專輯表記為最新一張正規盤），MB 的 TW release 明寫好有感覺音樂、編號 DGS1901，與《祭》（DGS1703）同一系列。此後樂團只有 2021 年與第二代馬蘭吟唱隊的跨界合作《Pakelang 八歌浪》（風潮音樂）與數張單曲。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "Apple TW collectionId 1489140201 標 explicit、releaseDate 2019-11-29 與 MB first-release-date 完全一致。CAA release-group 端點 200。盤名不含任何英文或數字，跨批比對只能靠全稱＋藝人名。",
+  "mbNote": "釘 release-group 2602b4bd-614c-4547-8c38-cbb9bd680029。回問 release-group 端點確認：title「風中浮沉的花蕊」、artist-credit「董事長樂團」、first-release-date 2019-11-29、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，好有感覺音樂 DGS1901）。藝人 MBID d10a5364-a190-4e5d-b3bf-e3952769f905。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Chairman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "濁水溪公社",
+  "album": "天涯棄逃人",
+  "year": 2005,
+  "genres": [
+   "rock"
+  ],
+  "label": "角頭音樂（catno TCM033）",
+  "why": "濁水溪公社在水晶唱片《臭死了》（2001）之後隔四年的第五張正規專輯，由角頭音樂發行、編號 TCM033（MB 的 TW release 與 Discogs release 11967827 一致，Discogs 該筆標 Taiwan Colors Music 編號 033）。角頭是同期台客搖滾的核心廠牌，董事長樂團 1999 年的首支單曲〈攏袂歹勢〉亦出自角頭。濁水溪公社 1989 年成立、2020 年解散，中文維基〈濁水溪公社〉的專輯表列出九張正規盤，池中只有《臭死了》（2001）與《鄉土．人民．勃魯斯》（2014）兩張；1995《肛門樂慾期作品輯》、1999《台客的復仇》、2002 年誤記年份的《裝潢》三張已在 c-TW3 留置檔（26 張）內，本批不重收。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "濁水溪公社在 Apple 各 storefront 完全查無（tw／us／jp 三個店面以中文團名、Loh Tsui Kweh Commune 與 LTK Commune 三種寫法交叉搜尋皆零命中，已排除裁定第 158 條「用錯的語言搜錯的店面」那個形狀），固定試聽這一張要走 YouTube 官方 Album playlist 或人工核對的完整專輯影片。封面 CAA release-group 端點 200（實測）。團名別名極多（浊水溪公社／Loh Tsui Kweh Commune／LTK Commune／Zhuoshuixi River People's Commune），撞卡掃描四種都要試。",
+  "mbNote": "釘 release-group d6c763d1-cf71-4297-9f92-c560b414572b。回問 release-group 端點確認：title「天涯棄逃人」、artist-credit「濁水溪公社」、first-release-date 2005-08-01、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，角頭音樂 TCM033）。藝人 MBID e0859944-2869-41c5-927d-cf894f331a50，名下 11 個 release-group。**刻意不釘**：同藝人名下 1827c0a2-2259-4b65-a2ce-fa30b07037ac《反中國併吞: Anti China Invasion Live》（2002，多藝人現場合輯，同時掛在閃靈名下）與 aa9c3576-f130-4dc9-a996-e52c38763532《赤聲搖滾第一集： SCUM》（1997，secondary-type Compilation，屬 c-90 範圍）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Loh Tsui Kweh Commune；LTK Commune；浊水溪公社",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "濁水溪公社",
+  "album": "藍寶石",
+  "year": 2008,
+  "genres": [
+   "rock"
+  ],
+  "label": "喜瑪拉雅（catno LTKC-005）",
+  "why": "濁水溪公社第六張正規專輯，由喜瑪拉雅音樂發行、編號 LTKC-005（MB 的 TW release）；同一家廠牌同一天（2008-12-26）也發了董事長樂團《花光他的錢》（SO1002）。LTKC 這組自家編號一路延用到《鬼島社會檔案》（LTKC-007）、《鄉土．人民．勃魯斯》（LTKC008）、《亞洲衝擊》（LTKC009）與《裝潢》（LTKC010），是辨識該團正規盤的可靠線索。濁水溪公社 1989 年成立、2020 年解散，中文維基〈濁水溪公社〉的專輯表列出九張正規盤，池中只有《臭死了》（2001）與《鄉土．人民．勃魯斯》（2014）兩張；1995《肛門樂慾期作品輯》、1999《台客的復仇》、2002 年誤記年份的《裝潢》三張已在 c-TW3 留置檔（26 張）內，本批不重收。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "**本批封面風險最高的一張**：CAA release-group 端點 404、Apple 三個 storefront 全部查無、api.discogs.com 以中文團名＋盤名搜尋亦無這一筆條目（實測）。三條解析鏈同時落空，本機端若走完 Bandcamp／Spotify 仍拿不到可靠封面，依 §4「抓不到可靠封面就停止該筆」處置，不要用模糊搜尋硬湊。試聽同樣要走 YouTube 路線。團名四種別名同前。",
+  "mbNote": "釘 release-group c8903419-04a5-408b-b5be-5c0a94078bf8。回問 release-group 端點確認：title「藍寶石」、artist-credit「濁水溪公社」、first-release-date 2008-12-26、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，喜瑪拉雅 LTKC-005）。藝人 MBID e0859944-2869-41c5-927d-cf894f331a50。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Loh Tsui Kweh Commune；LTK Commune；浊水溪公社",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "濁水溪公社",
+  "album": "鬼島社會檔案",
+  "year": 2012,
+  "genres": [
+   "rock"
+  ],
+  "label": "有料音樂（catno LTKC-007）",
+  "why": "濁水溪公社第七張正規專輯。MB 的 TW release 把發行掛有料音樂、編號 LTKC-007；有料音樂同年也是閃靈《十殿》台版（uloud-012）的發行方。Discogs release 4813886 把同一張建成「Not On Label (Loh Tsui Kweh Commune Self-released)」、編號 none，英文盤名作 Taiwan Siren Eyes。濁水溪公社 1989 年成立、2020 年解散，中文維基〈濁水溪公社〉的專輯表列出九張正規盤，池中只有《臭死了》（2001）與《鄉土．人民．勃魯斯》（2014）兩張；1995《肛門樂慾期作品輯》、1999《台客的復仇》、2002 年誤記年份的《裝潢》三張已在 c-TW3 留置檔（26 張）內，本批不重收。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "廠牌兩說（MB 記有料音樂 LTKC-007／Discogs 記自主發行無編號），行文不得斷言單一發行方，兩筆都要引。英文盤名 Taiwan Siren Eyes 只出現在 Discogs，要進 queryAlias。CAA release-group 端點 200（實測）。Apple 全查無，試聽走 YouTube 路線。團名四種別名同前。",
+  "mbNote": "釘 release-group 1c6e1fad-0f2e-40f6-a57a-a858b2e1970a。回問 release-group 端點確認：title「鬼島社會檔案」、artist-credit「濁水溪公社」、first-release-date 2012、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，有料音樂 LTKC-007）。藝人 MBID e0859944-2869-41c5-927d-cf894f331a50。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Taiwan Siren Eyes；Loh Tsui Kweh Commune；LTK Commune；浊水溪公社",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "濁水溪公社",
+  "album": "亞洲衝擊",
+  "year": 2017,
+  "genres": [
+   "rock"
+  ],
+  "label": "禾廣娛樂（catno LTKC009）",
+  "why": "濁水溪公社倒數第二張正規專輯，由禾廣娛樂發行、編號 LTKC009（MB 的 TW release 與 Discogs release 11967885 一致，Discogs 標英文副題 Asia Impact）。禾廣同期也發了池中已有的《鄉土．人民．勃魯斯》（2014，LTKC008）與董事長樂團《一個世界》（2014，DGS-1403）。樂團 2018 年宣布將於 2020 年成軍三十週年解散，這張是宣布之前的最後一張新作。濁水溪公社 1989 年成立、2020 年解散，中文維基〈濁水溪公社〉的專輯表列出九張正規盤，池中只有《臭死了》（2001）與《鄉土．人民．勃魯斯》（2014）兩張；1995《肛門樂慾期作品輯》、1999《台客的復仇》、2002 年誤記年份的《裝潢》三張已在 c-TW3 留置檔（26 張）內，本批不重收。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "英文副題 Asia Impact 只在 Discogs 條目上，要進 queryAlias。CAA release-group 端點 200（實測）。Apple 全查無，試聽走 YouTube 路線。團名四種別名同前。與同團 2019 年《裝潢》的距離只有兩年，跨批比對時不要把兩張混為一談——《裝潢》已在 c-TW3 留置檔（該檔年份誤記為 2002，見交件回報）。",
+  "mbNote": "釘 release-group 83e8a88e-dd82-4e0b-b90b-d148368e241b。回問 release-group 端點確認：title「亞洲衝擊」、artist-credit「濁水溪公社」、first-release-date 2017-12-01、primary-type Album、secondary-types 空、轄下 1 個 release（TW／Official，禾廣娛樂股份有限公司 LTKC009）。藝人 MBID e0859944-2869-41c5-927d-cf894f331a50。**刻意不釘**：7a04b96a-b12e-410c-a21d-8cd6cd228e82《裝潢》（2019-05）——該碟已在 c-TW3 留置檔，本批不重收。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Asia Impact；Loh Tsui Kweh Commune；LTK Commune；浊水溪公社",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "閃靈",
+  "album": "靈魄之界",
+  "year": 2000,
+  "genres": [
+   "rock"
+  ],
+  "label": "水晶唱片 Crystal Records",
+  "why": "閃靈第二張專輯，中文維基〈閃靈樂團〉記為 2000 年由水晶唱片發行、許世晃製作，是貝斯手葉湘怡（Doris）、吉他手劉笙彙（小黑）加入後的第一張；同條目記它站上 Tower 流行音樂專輯排行榜冠軍、獲香港《MCB》雜誌選為年度十大華語搖滾專輯。全華語概念專輯，故事由首張《祖靈之流》的〈母島解體‧登基〉發展而來。2000 年香港 Fredmosa Records（BLACK05）與美國 Nightfall Terrorizer（NFTR 010，英文版《9th Empyrean》）各發一版。閃靈 1995 年成立於台北，中文維基〈閃靈樂團〉記樂團曾獲金曲獎與金音創作獎最佳樂團，英國《衛報》稱其為「台灣文化大使」。池中已有《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》四張（實掃 seed_cards.json 全檔，另兩張的掛名寫成「閃靈 CHTHONIC」）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "同一個 release-group 底下有兩個不同盤名的 release（中文《靈魄之界》與英文《9th Empyrean》，後者另有 TW／TRA Music DVL000444E 一筆），去重與封面比對都要認得兩種寫法。**Apple 查無這一張**：閃靈的 Apple TW 藝人頁（artistId 205696708）從《永劫輪迴》起才有條目，《祖靈之流》與《靈魄之界》兩張都不在，固定試聽要走 YouTube 官方 Album playlist。封面 CAA release-group 端點 200（實測）。MB 主名建成 ChthoniC（裁定表點名的「MB 主名不可信」樣板案例），中文查詢完全撈不到。",
+  "mbNote": "釘 release-group 2c6eb5b4-13f2-4a23-8a8d-80de177be0a8。回問 release-group 端點確認：title「靈魄之界」、artist-credit「ChthoniC」、first-release-date 2000-05-08、primary-type Album、secondary-types 空、轄下 4 個 release（TW／HK／US，全 Official）。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650，名下 49 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "9th Empyrean；ChthoniC；閃靈樂團；闪灵",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "閃靈",
+  "album": "十殿",
+  "year": 2009,
+  "genres": [
+   "rock"
+  ],
+  "label": "有料音樂（台版 uloud-012）／Spinefarm Records（國際版）",
+  "why": "閃靈第五張專輯，中文維基〈閃靈樂團〉記樂團 2008 年赴洛杉磯錄製、由炭疽（Anthrax）吉他手 Rob Caggiano 擔任製作人，並與國際環球唱片旗下重金屬廠牌 Spinefarm Records 簽下全球發行約。專輯以二二八事件為歷史背景，台版歌詞全台語、國際版《Mirror of Retribution》以英語為主並保留部分台語；同條目記英國《Kerrang!》評其為「重金屬搖滾中的極品（Top-notch）」。MB 轄下 9 個 release 橫跨 FI／US／JP／TW／ID，台版由有料音樂發行（uloud-012），日版 Howling Bull（HWCY-1275）。閃靈 1995 年成立於台北，中文維基〈閃靈樂團〉記樂團曾獲金曲獎與金音創作獎最佳樂團，英國《衛報》稱其為「台灣文化大使」。池中已有《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》四張（實掃 seed_cards.json 全檔，另兩張的掛名寫成「閃靈 CHTHONIC」）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "同一個 release-group 底下中文《十殿》與英文《Mirror of Retribution》兩種盤名並存（9 個 release 中只有台版用中文），跨文字系統的撞卡字串去重看不見，兩種都要掃（裁定第 49 條）。Apple TW 有《十殿》（collectionId 6780774464）與《Mirror of Retribution》（6781211913）兩筆同碟異名條目，配試聽時要鎖中文那一筆並逐軌比對曲序（裁定第 157 條）。封面 CAA release-group 端點 200。",
+  "mbNote": "釘 release-group abfaaaf6-e1c3-496a-8310-4aaa43b887e8。回問 release-group 端點確認：title「十殿」、artist-credit「ChthoniC」、first-release-date 2009-08-12、primary-type Album、secondary-types 空、轄下 9 個 release（FI／US／JP／TW／ID，其中 FI 一筆為 Promotion，其餘 Official）。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mirror of Retribution；ChthoniC；閃靈樂團",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "閃靈",
+  "album": "武德",
+  "year": 2013,
+  "genres": [
+   "rock"
+  ],
+  "label": "Ciong Zo 叢座（台版 CHBT130529）／Spinefarm Records（國際版）",
+  "why": "閃靈第七張專輯，也是這條線上「台語金屬」的代表——盤名的國際版寫法「Bú-Tik」本身就是「武德」的台語羅馬字。中文維基〈閃靈樂團〉記這張以台灣民族挑戰權威統治為主軸，四二四刺蔣案、白色恐怖、雲林大屠殺、泰源事件與鄭南榕自焚案都是歌曲題材；同條目記它 2013 年入圍第 4 屆金音創作獎五個獎項並拿下最佳搖滾專輯、不分類最佳樂團與最佳樂手（劉笙彙），為該屆入圍最多者，2014 年再入圍第 25 屆金曲獎最佳樂團。MB 轄下 12 個 release，台版由樂團自家 Ciong Zo 發行（CHBT130529），國際版走 Spinefarm，日版 Howling Bull（HWCY-1324）。閃靈 1995 年成立於台北，中文維基〈閃靈樂團〉記樂團曾獲金曲獎與金音創作獎最佳樂團，英國《衛報》稱其為「台灣文化大使」。池中已有《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》四張（實掃 seed_cards.json 全檔，另兩張的掛名寫成「閃靈 CHTHONIC」）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "**盤名有四種寫法**：MB release-group 標題作「Bú-Tik」（帶聲調符號 ú）、台版與日版 release 作「武德」、部分 release 作「Bù-Tik」（聲調符號方向相反的建檔錯字）、Apple TW 同時有《武德》（collectionId 6780779033）與《Bú-Tik》（6781501226）兩筆。卡片取中文《武德》（比照裁定表對《祖靈之流》《永劫輪迴》去掉英文／羅馬字副標的作法，也與 Apple TW 的中文條目一致），四種寫法全部進 queryAlias。**若店主偏好保留台羅，改成《武德 Bú-Tik》只是改卡單一欄、成本極低。** 封面 CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 63a65eb3-0b7d-40a8-9334-65a03224515e。回問 release-group 端點確認：title「Bú-Tik」、artist-credit「ChthoniC」、first-release-date 2013-05-29、primary-type Album、secondary-types 空、轄下 12 個 release（JP／TW／FI／US／RU／GB／XW，其中 GB 一筆為 Promotion，其餘 Official）。RG 標題與卡片盤名不必相等（裁定第 91／95 條）。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650。**刻意不釘**：ea81389b-abaf-4f47-b385-1f6c8a18c9d0《暮沉武德殿: Defenders of Bú-Tik Palace》（2013 單曲）與 c446922d-6542-4f1e-b327-0800672aeadc《武德殿不插電演唱會實況》（2015 Live）——兩筆盤名都含「武德」，是本張最像的假陽性。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bú-Tik；Bù-Tik；武德 Bú-Tik；ChthoniC；閃靈樂團",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "閃靈",
+  "album": "失竊千年",
+  "year": 2014,
+  "genres": [
+   "rock",
+   "folk"
+  ],
+  "label": "Ciong Zo 叢座（CHFC141229）／Wind Music 風潮",
+  "why": "中文維基〈閃靈樂團〉記這張把原有黑死金屬元素抽離，將《高砂軍》與《武德》兩張專輯的歌曲改用台灣民謠方式重新呈現，並邀元千歲與林生祥參與錄製；發行後入圍第 26 屆金曲獎最佳樂團獎與最佳台語專輯獎。MB 轄下 5 個 release（TW／US／JP），台版由樂團自家 Ciong Zo 發行（CHFC141229），另有 Wind Music 一筆與 2015 年 Howling Bull 日版（HWCY-1349）。池中已有《高砂軍》，本張與它是同一批歌的兩種版本。閃靈 1995 年成立於台北，中文維基〈閃靈樂團〉記樂團曾獲金曲獎與金音創作獎最佳樂團，英國《衛報》稱其為「台灣文化大使」。池中已有《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》四張（實掃 seed_cards.json 全檔，另兩張的掛名寫成「閃靈 CHTHONIC」）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "**曲目與池中《高砂軍》高度重疊**（本張是《高砂軍》與《武德》曲目的民謠重錄版），不是撞卡但下游簡介不可把它寫成全新創作；行文要交代「重錄」這件事。同一個 RG 底下有三種盤名寫法：「失竊千年: Timeless Sentence」「失竊千年 Cesouro Milênio」（葡萄牙文）與純中文「失竊千年」，去重三種都要掃。Apple TW collectionId 950598248 標題作《失竊千年》、12 軌。封面 CAA release-group 端點 200。曲風給 rock＋folk，因為這張的做法本身是民謠改編。",
+  "mbNote": "釘 release-group 7d2cff58-ae5e-4a6e-8b41-ceb3f369b351。回問 release-group 端點確認：title「失竊千年: Timeless Sentence」、artist-credit「ChthoniC」、first-release-date 2014-12-29、primary-type Album、secondary-types 空（MB 未標 Compilation 或 Live）、轄下 5 個 release（TW／US／JP，全 Official）。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650。**刻意不釘**：0f336b56-d8ee-4204-9a1f-bb7891344027《演武 Ián-Bú》（2013 Live）與 c446922d-6542-4f1e-b327-0800672aeadc《武德殿不插電演唱會實況》（2015 Live）——兩張現場盤同樣是不插電／民謠編制，最容易被誤配成本卡。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Timeless Sentence；失竊千年: Timeless Sentence；失竊千年 Cesouro Milênio；ChthoniC",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "閃靈",
+  "album": "政治",
+  "year": 2018,
+  "genres": [
+   "rock"
+  ],
+  "label": "Ciong Zo 叢座（CH25BA1810）／Wind Music 風潮",
+  "why": "閃靈第九張專輯，也是樂團目前最後一張正規錄音室盤（此後只有單曲、現場與 EP）。MB 轄下 11 個 release 橫跨 JP／TW／US／XW／XE，台版由樂團自家 Ciong Zo 發行（CH25BA1810／CH26BA1810／CH27BA1810 三個編號）、另有 Wind Music 一筆，日版 Howling Bull（HWCY-1355）比台版早兩天（2018-10-10）出。國際版盤名《Battlefields of Asura》。中文維基〈閃靈樂團〉記主唱林昶佐 2016 年起擔任兩屆立法委員，這張的專輯名與發行時點正在他的任期內。閃靈 1995 年成立於台北，中文維基〈閃靈樂團〉記樂團曾獲金曲獎與金音創作獎最佳樂團，英國《衛報》稱其為「台灣文化大使」。池中已有《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》四張（實掃 seed_cards.json 全檔，另兩張的掛名寫成「閃靈 CHTHONIC」）。台客搖滾這條線池中現有 8 張（實掃 seed_cards.json 全 14,424 筆）：董事長樂團《你袂了解》《眾神護台灣》、濁水溪公社《臭死了》《鄉土．人民．勃魯斯》、閃靈《祖靈之流》《永劫輪迴》《賽德克巴萊》《高砂軍》；三團的正規目錄其餘各張池中全無。",
+  "risk": "**盤名只有兩個字「政治」，是本批字串比對雜訊最高的一筆**，任何自動比對都必須連藝人名一起鎖，且不可用英文 Battlefields of Asura 之外的模糊詞。Apple TW 有三筆易混條目：《政治》（collectionId 1434794688，12 軌）、《政治 (英語版)》（1434805066，12 軌）與《【政治】專輯概念說明-林昶佐親自解說(Bonus Track) - Single》（1443506674），配試聽一律鎖中文非英語版那一筆並逐軌核曲序。MB 的 RG 標題是英文、TW release 才是中文，兩種都要掃。封面 CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 098341af-6e4f-4c88-b426-8d393e0a4e7c。回問 release-group 端點確認：title「Battlefields of Asura」、artist-credit「ChthoniC」、first-release-date 2018-10-10、primary-type Album、secondary-types 空、轄下 11 個 release（JP／TW／US／XW／XE，其中 XE 一筆為 Promotion，其餘 Official；TW release 標題作「政治」與「政治: Battlefields of Asura」）。RG 標題與卡片盤名不必相等（裁定第 91／95 條）。藝人 MBID 81a344e9-a8b1-49a6-80b2-2b03d8a25650。**刻意不釘**：05c594cd-5a85-40f8-9f31-b95c4efcc2a3《【政治】專輯概念說明-林昶佐親自解說》（2018 單曲）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Battlefields of Asura；政治: Battlefields of Asura；ChthoniC；閃靈樂團",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

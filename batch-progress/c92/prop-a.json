@@ -1,0 +1,475 @@
+[
+ {
+  "artist": "陳達",
+  "album": "民族樂手陳達和他的歌",
+  "year": 1971,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "希望出版社（希望音樂叢書）",
+  "why": "台語民謠的源頭盤。1967 年史惟亮與許常惠的民歌採集運動在恆春錄下走唱藝人陳達的月琴與唸唱，1971 年由希望出版社以「希望音樂叢書」名義出版，是陳達第一張個人唱片；1977 年洪建全教育文化基金會以 HF-1003 再版（Discogs release 12689425）。全片兩面共九段，內容是〈思想起〉〈五空小調〉〈四季春〉〈牛母伴〉幾個恆春調的反覆變奏與〈恆春民謠及草螟弄雞公的混合曲調〉。2022 年 9 月洪建全教育文化基金會以 HM012 重新母帶處理、德國 DMM 刻片、台灣壓片的 180 克限量黑膠發行（Discogs release 24408893），同時上數位（Apple collectionId 1613957971，℗ 2022 HONG FOUNDATION，兩軌即黑膠兩面）。池中實掃：陳達的卡零張，同場景只有陳明章兩張與林強一張。",
+  "risk": "撞卡：實掃 seed_cards.json 全檔 14424 列，「陳達」在 artist 與 album 兩欄皆零命中；羅馬拼音 Chen Ta／Chen Da 與英文盤名 Chen Da and His Songs 也都比對過，無撞卡。⚠ 盤名有三種寫法：Discogs 原盤與 1977 再版建成《民族樂手陳達和他的歌》（無破折號）、2022 黑膠改題《陳達和他的歌 Chen Da and His Songs》、坊間常寫成《民族樂手——陳達和他的歌》（帶破折號）。卡片取 Discogs 原盤條目的無破折號寫法，一來那是 1971 首版的建檔名，二來破折號是非 ASCII 連字號、會讓標題比對整組失準。年份 1971 由 Discogs master 1441334 與 release 12689529 直記。⚠ MB 上「陳達」查無此人，score 100 回的是陳達偉（41174d95）與陳達儒（ca93f024），兩人名下皆 0 個 release-group，是裁定第 122 條「MB 回了完全不相干的東西」的形狀。封面：走 §4 apple-verified-collection 例外，collectionId 1613957971，頁面 https://music.apple.com/tw/album/chen-da-and-his-songs/1613957971 ——該條目藝人欄為「陳達」、℗ 行為 2022 HONG FOUNDATION、兩軌時長 18:58 與 17:17 恰為黑膠 A／B 兩面，與 Discogs 2022 黑膠曲序一致，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳達&limit=6 → count=1450，score 100「陳達偉」41174d95-1cd9-408e-bcf2-bb9c6569dc4d、score 99「陈达飞」da26afe5、score 99「陳達儒」ca93f024-aa61-4253-b9a3-4f8409e4c8b6（TW，台語作詞家），沒有一個是恆春走唱藝人陳達",
+    "release-group?artist=41174d95-1cd9-408e-bcf2-bb9c6569dc4d&limit=100&offset=0 → 0 筆；同法查 ca93f024 → 0 筆（依裁定第 116 條走 browse 分頁端點，不用 artist/<MBID>?inc=release-groups 的 25 筆上限）",
+    "release-group?query=releasegroup:\"民族樂手陳達和他的歌\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"陳達與恆春調說唱\"&limit=10 → count=0（同一藝人的另一張，一併確認）"
+   ],
+   "checkedAt": "2026-09-05T06:20:00Z",
+   "conclusion": "MB 上沒有恆春走唱藝人陳達的 artist 實體：藝人搜尋 score 100 回的是同姓名相近的陳達偉與台語作詞家陳達儒，兩者名下 release-group browse 皆為 0 筆，屬裁定第 122 條「回了完全不相干的東西」而非查無，故再以盤名反向查證，兩種盤名 count 皆為 0。四次查詢全部回 HTTP 200，無 503／403（第 28／98 條），browse 走的是 limit=100 的分頁端點（第 116 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/12689529",
+   "https://www.discogs.com/release/24408893",
+   "https://music.apple.com/tw/album/chen-da-and-his-songs/1613957971"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Chen Da and His Songs",
+  "reissuedBy": "洪建全教育文化基金會（HM012，2022-09-02，180g 黑膠限量版，Discogs release 24408893，未標 Unofficial）"
+ },
+ {
+  "artist": "陳達",
+  "album": "陳達與恆春調說唱",
+  "year": 1979,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "第一唱片（中國民俗音樂專輯 第一輯）",
+  "why": "第一唱片「中國民俗音樂專輯」系列的第一輯（FM-6008），由許常惠與邱坤良編輯，跨頁對開封套。兩面各一段〈阿遠與阿發父子的悲慘故事〉，是陳達以恆春調即興唸唱的長篇說唱，一段就是一整面二十分鐘，與 1971 年那張以短曲反覆為主的錄音是不同的作法。2000 年第一唱片以 FCD-106 出 CD 再版（Discogs release 24553307），同年上數位（Apple collectionId 1694286277，℗ 2000 Firstav Production Ltd.）；2006 年國立傳統藝術中心另在「台灣音樂家系列」出過《恆春半島絕響——遊唱詩人陳達》，那是另一份選輯、不是本盤的再版。",
+  "risk": "撞卡：實掃 seed_cards.json 全檔，陳達零命中；本批同藝人另收 1971 年那張，兩張盤名字串差異大，不會互撞。年份分歧：Discogs 原盤條目（release 12689332）與 master 2789834 都記 1979，坊間常寫 1977（那是許常惠錄音的年份）；卡片取 1979，理由是唯一的實體條目這樣記，簡介需註明錄音年與出版年不同。掛名與盤名取 Discogs 原盤的繁體寫法，英文題 Chen Ta and Heng-chun Tune Minstrelsy 進別名（原盤 ANV 寫 Chen Ta，2000 年 CD 與 Apple 寫陳達）。⚠ 同上一張：MB 上「陳達」是第 122 條的形狀，回的是陳達偉與陳達儒。封面：走 §4 apple-verified-collection 例外，collectionId 1694286277，頁面 https://music.apple.com/tw/album/%E9%99%B3%E9%81%94%E8%88%87%E6%81%86%E6%98%A5%E8%AA%BF%E8%AA%AA%E5%94%B1/1694286277 ——藝人欄「陳達」、℗ 2000 Firstav Production Ltd.（即第一唱片）、兩軌與 Discogs 原盤兩面一致，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳達&limit=6 → count=1450，score 100「陳達偉」41174d95、score 99「陳達儒」ca93f024，無恆春走唱藝人陳達的實體",
+    "release-group?artist=41174d95-1cd9-408e-bcf2-bb9c6569dc4d&limit=100&offset=0 → 0 筆；release-group?artist=ca93f024-aa61-4253-b9a3-4f8409e4c8b6&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"陳達與恆春調說唱\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"Chen Ta and Heng-chun Tune Minstrelsy\"&limit=10 → count=0（英文題反查）"
+   ],
+   "checkedAt": "2026-09-05T06:22:00Z",
+   "conclusion": "MB 無此藝人實體，兩個同名近似的實體名下 release-group browse 皆 0 筆；盤名以繁體與封套英文題兩種寫法查皆 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳實體與所查對象的不相符情形已在結論中排除。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/12689332",
+   "https://www.discogs.com/release/24553307",
+   "https://music.apple.com/tw/album/%E9%99%B3%E9%81%94%E8%88%87%E6%81%86%E6%98%A5%E8%AA%BF%E8%AA%AA%E5%94%B1/1694286277"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Chen Ta and Heng-chun Tune Minstrelsy",
+  "reissuedBy": "第一唱片（FCD-106，2000，CD 再版，Discogs release 24553307）"
+ },
+ {
+  "artist": "陳明章",
+  "album": "戲夢人生 電影原聲帶",
+  "year": 1993,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "索引有聲出版社／波麗佳音",
+  "why": "侯孝賢 1993 年《戲夢人生》（坎城評審團獎）的配樂，陳明章作曲，索引有聲出版社與波麗佳音以 PCTD 00020 出 CD、PCTA 00020 出卡帶（Discogs release 16211278 與 23723699）。十三軌以布袋戲後場的二弦與唸唱為骨：〈扮仙之三仙獻寶〉開場，〈二弦變奏一〉〈二弦變奏二〉與〈港邊惜別〉〈港邊惜別變奏一〉〈變奏二〉把同一段旋律在片中反覆拆解，收在〈過館人生〉。這是陳明章繼《戀戀風塵》之後第二次替侯孝賢做整片配樂，也是他 1990 年代電影工作的核心。池中實掃：陳明章已有《下午的一齣戲》與《戀戀風塵 電影原聲帶》兩張，本盤不重複。",
+  "risk": "掛名：Discogs 把實體歸在 Various（片中有唱段由多位演唱者擔任），但作曲與整體配樂署名陳明章，卡片依池中《戀戀風塵 電影原聲帶》同形狀的先例掛陳明章，Various Artists 進別名。盤名：Discogs 實體標題是中英夾雜的長題「戲夢人生 Original Soundtrack To Hou Hsiao-Hsien's Movie 【In The Hands Of A Puppetmaster】」，卡片取中文主題＋「電影原聲帶」尾綴，與池中《戀戀風塵 電影原聲帶》寫法一致；長題與英文題進別名。撞卡：實掃 seed_cards.json，「戲夢人生」零命中。⚠ MB 上陳明章實體（99658857）名下 6 個 release-group（下午的一齣戲、現場音樂 I、陳明章現場作品 II、阮嘸是一介無感情介人、勿愛問阮的名、Maborosi）都不是這張，且 1996 年那筆 Maborosi 是《幻之光》原聲帶、與本盤不同片。封面與試聽：Apple 台灣搜尋「陳明章 戲夢人生」0 筆，藝人頁 366839565 名下只有四筆（戀戀風塵、幻之光、2023 電影配樂三部曲、戀戀風塵原聲帶），本盤不在其中，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳明章&limit=6 → count=2375，score 100「陳明章」99658857-c878-4f9e-b82c-12679f8bf8a0（TW），其餘 score ≤50 皆為陳明真、陳明韶等他人",
+    "release-group?artist=99658857-c878-4f9e-b82c-12679f8bf8a0&limit=100&offset=0 → 回 6 筆（1990 下午的一齣戲、1990 陳明章：現場音樂 I、1991 陳明章現場作品II、1995 阮嘸是一介無感情介人、1996 Album/Soundtrack Maborosi、1999 勿愛問阮的名），無《戲夢人生》。依第 116 條走分頁端點，回傳 6<100 故已到底",
+    "release-group?query=releasegroup:\"戲夢人生\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"In The Hands Of A Puppetmaster\"&limit=10 → count=0（英文題反查）"
+   ],
+   "checkedAt": "2026-09-05T06:30:00Z",
+   "conclusion": "MB 上陳明章的藝人實體存在且名下有 6 個 release-group，逐筆比對後《戲夢人生》不在其中；再以中文盤名與封套英文題反向查詢，兩次 count 皆為 0。1996 年那筆 Maborosi 是《幻之光》原聲帶、是不同一部片的配樂，已排除誤配。查詢全部 HTTP 200，非 503／403，browse 用 limit=100 分頁端點而非 25 筆上限的 inc 端點，回傳實體與所查藝人相符。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/16211278",
+   "https://www.discogs.com/release/23723699"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "In The Hands Of A Puppetmaster",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "陳明章",
+  "album": "心愛的老車站",
+  "year": 2004,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "陳明章音樂工作有限公司（CMC Music）",
+  "why": "陳明章自營廠牌的第二號（CMC002），2004 年 12 月發行，主題是新北投與 1988 年 7 月 16 日開出最後一班車後廢線的溫泉支線——隔年新北投車站本體被遷到彰化台灣民俗村保存。八軌其實是兩首歌的多種編制：〈心愛的老車站〉與〈阿嬤的雨傘是一蕊花〉各有主唱版、合唱版、演奏版與伴唱版。這是他離開主流廠牌、改以自營發行台語創作專輯的起點盤，後面的《海尪·油桐花新娘》《青春》《撼山河》都掛同一個 CMC 編號序。池中實掃：陳明章已有兩張，本盤與兩者皆不同。",
+  "risk": "年份分歧：官方廠牌商品頁記 2004 年 12 月、編號 CMC002，中文維基〈陳明章〉的作品表記 2005；卡片取 2004，理由是官方廠牌自家的發行頁優於第三方條目轉述（依 TW_INDIE_NAMING_RULINGS 規則 2 的細則）。撞卡：實掃 seed_cards.json，「心愛的老車站」零命中。⚠ 此盤在 Discogs 上查無條目（api.discogs.com 以盤名與藝人各查一次皆 0 筆），舉證只能靠官方廠牌頁與中文維基作品表兩個來源，是本批證據較薄的一張。封面與試聽：Apple 台灣搜尋 0 筆，藝人頁 366839565 名下四筆皆非本盤，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳明章&limit=6 → score 100「陳明章」99658857-c878-4f9e-b82c-12679f8bf8a0（TW）",
+    "release-group?artist=99658857-c878-4f9e-b82c-12679f8bf8a0&limit=100&offset=0 → 6 筆，最新一筆是 1999 年《勿愛問阮的名》，2000 年之後名下一張都沒有",
+    "release-group?query=releasegroup:\"心愛的老車站\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T06:32:00Z",
+   "conclusion": "MB 上陳明章實體名下 6 個 release-group 全部落在 1990–1999 年，2000 年以後的自營廠牌時期一張都沒有建檔；盤名反查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳藝人與所查對象相符（不是第 122 條的不相干實體）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.cmcmusic.com.tw/shop/music/albums/%e9%99%b3%e6%98%8e%e7%ab%a0%e5%8f%b0%e8%aa%9e%e5%89%b5%e4%bd%9c%e5%b0%88%e8%bc%af/%e5%bf%83%e6%84%9b%e7%9a%84%e8%80%81%e8%bb%8a%e7%ab%99/",
+   "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Chen Ming Chang",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "陳明章",
+  "album": "海尪·油桐花新娘",
+  "year": 2006,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "無非文化",
+  "why": "2006 年 1 月 21 日發行、全長 58 分鐘的台語創作專輯，是陳明章自營發行後睽違四年的一張。十一軌從〈海尪〉（鯨）起，〈黑面撩撥的故鄉－鹽埕所在〉寫黑面琵鷺與七股鹽田、〈油桐花新娘〉走客家調、〈阿嬤的五分仔車〉回糖廠鐵道、〈默娘詩讚〉是媽祖詩讚體，收在〈牽一條線〉。該盤入圍金曲獎最佳台語專輯與最佳台語男歌手兩項。池中實掃：陳明章已有兩張，本盤不重複。",
+  "risk": "盤名中間點有三種寫法：中文維基條目名用「·」（U+00B7）、官方廠牌商品頁用全形「．」（U+FF0E）、坊間也有寫成「海尪、油桐花新娘」的。卡片取維基條目名的 U+00B7，另兩種進別名；⚠ 這一組是跨寫法去重看不見的字串（裁定第 49 條），本機比對三種都要看。維基另註明「海尪」的「尪」讀ㄨㄤ，條目全名寫成「海尪（ㄨㄤ）·油桐花新娘」，注音是讀音註記、不是盤名的一部分。撞卡：實掃 seed_cards.json，「海尪」與「油桐花」皆零命中。廠牌兩說：維基記無非文化、官方商品頁掛在陳明章音樂工作有限公司的台語創作專輯分類下，卡片取維基的無非文化，CMC 進備註。封面與試聽：Apple 台灣搜尋 0 筆，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳明章&limit=6 → score 100「陳明章」99658857-c878-4f9e-b82c-12679f8bf8a0（TW）",
+    "release-group?artist=99658857-c878-4f9e-b82c-12679f8bf8a0&limit=100&offset=0 → 6 筆，全部落在 1990–1999，無 2006 年條目",
+    "release-group?query=releasegroup:\"海尪\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"油桐花新娘\"&limit=10 → count=0（拆成兩段各查一次，避開中間點寫法差異）"
+   ],
+   "checkedAt": "2026-09-05T06:34:00Z",
+   "conclusion": "陳明章的 MB 藝人實體名下 6 個 release-group 皆為 1990 年代作品，2006 年這張不在其中；盤名拆成「海尪」與「油桐花新娘」兩段各查一次以避開中間點的三種寫法差異，count 皆為 0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳實體與所查藝人相符。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://zh.wikipedia.org/zh-tw/%E6%B5%B7%E5%B0%AA%C2%B7%E6%B2%B9%E6%A1%90%E8%8A%B1%E6%96%B0%E5%A8%98",
+   "https://www.cmcmusic.com.tw/shop/music/albums/%e9%99%b3%e6%98%8e%e7%ab%a0%e5%8f%b0%e8%aa%9e%e5%89%b5%e4%bd%9c%e5%b0%88%e8%bc%af/%e6%b5%b7%e5%b0%aa-%e6%b2%b9%e6%a1%90%e8%8a%b1%e6%96%b0%e5%a8%98/"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "海尪．油桐花新娘",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "陳明章",
+  "album": "青春",
+  "year": 2011,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "陳明章音樂工作有限公司（CMC Music）",
+  "why": "自營廠牌第十四號（CMC014），2011 年 7 月發行，CD 有草綠與桃紅兩種版本、出貨隨機。十軌裡九首台語、一首華語，含重新編作的〈新淡水河邊〉與〈望你早歸〉；其中四首是替金枝演社的舞台劇《大國民進行曲》寫的，另有阿美族與達悟族的音樂素材，最後一軌是給民主運動者的致敬曲。單軌長度從 4 分 15 秒到 10 分 11 秒，是他自營時期篇幅最鬆的一張。池中實掃：陳明章已有兩張，本盤不重複。",
+  "risk": "年份分歧最大的一張：候選清單原記 2003，官方廠牌商品頁明載 2011 年 7 月、編號 CMC014，卡片取 2011。⚠ 盤名「青春」是兩個字的極短名稱，中文字串比對雜訊極高（Discogs 搜「陳明章 青春」回的全是《明天會更好》等不相干條目），比對必須連藝人一起鎖，不可單用盤名。撞卡：實掃 seed_cards.json，artist=陳明章 且 album=青春 零命中；池中另有他人以「青春」為名的卡也一併查過，無同藝人撞卡。⚠ 此盤 Discogs 查無條目，舉證靠官方廠牌商品頁與同站的台語創作專輯分類頁兩個來源，是本批證據較薄的一張。封面與試聽：Apple 台灣搜尋 0 筆，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳明章&limit=6 → score 100「陳明章」99658857-c878-4f9e-b82c-12679f8bf8a0（TW）",
+    "release-group?artist=99658857-c878-4f9e-b82c-12679f8bf8a0&limit=100&offset=0 → 6 筆，最新為 1999 年，無 2011 年條目",
+    "release-group?query=releasegroup:\"青春\" AND artist:\"陳明章\"&limit=10 → count=0（盤名太短，必須連藝人一起鎖才有意義）"
+   ],
+   "checkedAt": "2026-09-05T06:36:00Z",
+   "conclusion": "陳明章 MB 實體名下 6 個 release-group 全為 1990 年代，2011 年這張不在其中；因盤名只有兩字、單查會撈到大量同名條目，改以 releasegroup 與 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳藝人實體與所查對象相符。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.cmcmusic.com.tw/shop/music/albums/%e9%99%b3%e6%98%8e%e7%ab%a0%e5%8f%b0%e8%aa%9e%e5%89%b5%e4%bd%9c%e5%b0%88%e8%bc%af/%e9%9d%92%e6%98%a5-%e9%99%b3%e6%98%8e%e7%ab%a0%e5%89%b5%e4%bd%9c%e5%b0%88%e8%bc%af/",
+   "https://www.cmcmusic.com.tw/product-category/music/albums/"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Chen Ming Chang",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "陳明章",
+  "album": "撼山河",
+  "year": 2017,
+  "genres": [
+   "folk",
+   "world"
+  ],
+  "label": "陳明章音樂工作有限公司（CMC Music）",
+  "why": "自營廠牌第二十二號（CMC022），2017 年 12 月發行。九軌是他四齣台語音樂劇的組曲摘選——〈再會吧北投〉〈溫泉鄉的交杯酒〉來自同名音樂劇，〈春子的往南火車〉〈黑夜的雲〉〈海龍王之歌〉來自其他三齣——把歌仔戲、北管、那卡西、原住民與客家音樂的素材編進同一張。專輯自述是二十歲出頭到六十一歲的音樂路回顧，也是他長年想做台灣本土音樂劇這件事的階段整理。池中實掃：陳明章已有兩張，本盤不重複。",
+  "risk": "撞卡：實掃 seed_cards.json，「撼山河」零命中；⚠ 同名影視作品甚多（電視劇、電影都有叫《撼山河》的），比對必須連藝人鎖。年份：官方商品頁記 2017 年 12 月、CMC022，中文維基〈陳明章〉作品表也記 2017，兩來源一致。⚠ 此盤 Discogs 查無條目。封面與試聽：Apple 台灣搜尋「陳明章 撼山河」0 筆，藝人頁 366839565 名下四筆皆非本盤，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=陳明章&limit=6 → score 100「陳明章」99658857-c878-4f9e-b82c-12679f8bf8a0（TW）",
+    "release-group?artist=99658857-c878-4f9e-b82c-12679f8bf8a0&limit=100&offset=0 → 6 筆，全部 1990 年代，無 2017 年條目",
+    "release-group?query=releasegroup:\"撼山河\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T06:38:00Z",
+   "conclusion": "陳明章 MB 實體名下 6 個 release-group 沒有任何一筆晚於 1999 年，2017 年這張不在其中；盤名反查 count=0，連不相干的同名條目都沒有回。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳藝人與所查對象相符。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.cmcmusic.com.tw/shop/music/albums/%e9%99%b3%e6%98%8e%e7%ab%a0%e5%8f%b0%e8%aa%9e%e5%89%b5%e4%bd%9c%e5%b0%88%e8%bc%af/%e6%92%bc%e5%b1%b1%e6%b2%b3/",
+   "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Chen Ming Chang",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "潘麗麗",
+  "album": "畫眉",
+  "year": 1994,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "水晶唱片",
+  "why": "水晶唱片 CIRD1018，1994 年 3 月出 CD（-2）與卡帶（-4）。潘麗麗是歌仔戲科班出身的歌手，這張由陳明章製作，十首台語歌從〈畫眉〉〈胭脂水粉〉的戲曲腔轉到〈風雲飛過全台灣厝頂〉〈思念二千公尺〉這種寫實題材，是水晶「新台語歌」路線上少數以女聲為主體的專輯。同一位歌手在水晶另有 CIRD 1036《春雨》（本批一併收）；1998 年水晶的女聲合輯《女人在唱歌》（CIRD 1060-2）也把她放在第一位，同輯還有雷光夏、葉樹茵與瓢蟲。池中實掃：潘麗麗零張，同廠牌同世代池中已有趙一豪、Double X、1976 等。",
+  "risk": "⚠ **這是本批身分狀態最特殊的一張，下游要看清楚**：MusicBrainz 上「潘麗麗」實體（34db6167，TW，Person）名下確實有一個叫《畫眉》的 release-group（9962273e-74b3-408a-9d11-07fd39e78e37），但那是一個空殼——primary-type 為 null、first-release-date 為空字串、底下唯一的 release 沒有 status、沒有 barcode、沒有國別與日期。依 ALBUM_ONBOARDING §1「只收 primary-type=Album」，這個 RG 過不了 Album 門檻，釘它等於留一個釘不住版本的半套身分；故本卡走 §1 人工身分、rgMbid 留空，並在此明寫該 RG 的存在，日後 MB 若把它補全，可直接翻成 pinned（只改卡單值，可逆）。年份分歧：候選清單記 1992，Discogs release 19665379 的 released 欄寫 1994-03-00、CD 與卡帶兩筆都記 1994，卡片取 1994；水晶編號 CIRD1018 早於《春雨》的 CIRD 1036 卻晚一年出版，這個倒序已知、不影響身分。撞卡：實掃 seed_cards.json，「潘麗麗」與「畫眉」皆零命中。封面與試聽：Apple 台灣藝人頁 781365937 名下只有一筆 2021 年的單曲，本盤 0 筆，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=潘麗麗&limit=6 → count=390，score 100「潘麗麗」34db6167-af55-4140-a940-1a2e8cc78880（TW, Person），其餘 score ≤52 為潘嘉麗、潘麗莉、潘麗玉等他人",
+    "release-group?artist=34db6167-af55-4140-a940-1a2e8cc78880&limit=100&offset=0 → 回 1 筆：《畫眉》9962273e-74b3-408a-9d11-07fd39e78e37，first-release-date 為空、primary-type 為 null（依第 116 條走分頁端點，1<100 已到底）",
+    "release-group/9962273e-74b3-408a-9d11-07fd39e78e37?inc=artist-credits+releases → primary-type=null、primary-type-id=null、first-release-date=\"\"、secondary-types=[]，底下唯一 release 9d508550 的 status=null、barcode=null、packaging=null、text-representation 全空",
+    "release-group?query=releasegroup:\"畫眉\" AND artist:\"潘麗麗\"&limit=10 → count=1，即上述同一個空殼 RG，無第二筆"
+   ],
+   "checkedAt": "2026-09-05T06:45:00Z",
+   "conclusion": "不是 count=0 的查無，而是「MB 只有一個無型別、無日期、無 release 細節的空殼 release-group」：primary-type 與 first-release-date 皆為 null／空，唯一的 release 連 status 與 barcode 都沒有，過不了 §1 的 primary-type=Album 門檻，也釘不住是哪一版，故走人工身分並在此原樣記下該 RG 的識別碼供日後翻案。四次查詢全部 HTTP 200，非 503／403（第 28／98 條），browse 走 limit=100 分頁端點（第 116 條），回傳的藝人實體是 TW 的潘麗麗本人、不是同名他人（第 122 條）。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/19665379",
+   "https://www.discogs.com/release/19665670",
+   "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；本卡另依 c-92 rulings 第 3 條：MB 上的空殼 release-group（無 primary-type、無日期）不算可釘的身分，走 §1 並明寫其存在。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Pan Li-li",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "潘麗麗",
+  "album": "春雨",
+  "year": 1992,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "水晶唱片",
+  "why": "水晶唱片 CIRD 1036-2，水晶與索引有聲共同掛名。與《畫眉》同一條女聲台語路線但編制更電子，Discogs 把風格記成 synth-pop／ballad／Hokkien pop。曲目從〈再會吧! 北投〉開場，〈台灣有一個所在會下雪〉〈雲從山的那邊來〉〈小港空中巴士〉〈流浪的黒猫仔姐〉都是新寫的台語歌而非老歌翻唱。池中實掃：潘麗麗零張，本批同藝人另收《畫眉》，兩張盤名不相干、不會互撞。",
+  "risk": "撞卡：實掃 seed_cards.json，「春雨」在 album 欄零命中。年份：Discogs release 23578109 的 released 欄記 1992；⚠ 水晶編號 CIRD 1036 大於《畫眉》的 CIRD 1018 卻年份較早，兩張的年份都只有 Discogs 一個來源、彼此對不上編號序，寫作層若查到唱片本體的版權頁應以本體為準。掛名：Discogs 條目藝人欄即繁體「潘麗麗」，無別名爭議；羅馬拼音 Pan Li-li 進別名。⚠ MB 狀況見同藝人《畫眉》那張的說明——那個空殼 RG 是《畫眉》不是本盤，本盤在 MB 上是真正的 count=0。封面與試聽：Apple 台灣 0 筆，**沒有 collectionId，封面要本機掃圖、試聽必然缺**。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=潘麗麗&limit=6 → score 100「潘麗麗」34db6167-af55-4140-a940-1a2e8cc78880（TW, Person）",
+    "release-group?artist=34db6167-af55-4140-a940-1a2e8cc78880&limit=100&offset=0 → 只有 1 筆《畫眉》（空殼 RG），無《春雨》",
+    "release-group?query=releasegroup:\"春雨\" AND artist:\"潘麗麗\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T06:47:00Z",
+   "conclusion": "潘麗麗的 MB 實體名下只有一個 release-group 且是《畫眉》，《春雨》完全不在其中；以盤名加藝人併查 count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，回傳的是 TW 的潘麗麗本人而非同名他人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/23578109",
+   "https://www.discogs.com/label/1188490-%E6%B0%B4%E6%99%B6%E5%94%B1%E7%89%87"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "manual-scan",
+  "queryAlias": "Pan Li-li",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "蕭福德",
+  "album": "希望轉去你身邊",
+  "year": 1992,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Warner Music Taiwan",
+  "why": "1992 年 3 月 13 日發行的十軌台語專輯（Apple ℗ 行記 1992 Warner Music Taiwan Ltd.）。蕭福德是新台語歌運動裡少數從社會底層題材下手的創作歌手，同年的〈華西街的一蕊花〉寫華西街的少女、後來被 MÜST 音樂著作典藏計劃專文收錄，同專輯另有〈大水滾滾，江河滔滔〉。這條線與陳明章、林強的路數不同：不走月琴與那卡西，而是寫實敘事加當時的流行編曲。池中實掃：蕭福德零張。",
+  "risk": "撞卡：實掃 seed_cards.json，「蕭福德」零命中；羅馬拼音 Shiao Fu-Te／Fu De Hsiao 兩種寫法（Apple 用中文、KKBOX 英文頁寫 Fu De Hsiao、官方 MV 標題寫 Shiao Fu-Tr）也都比對過，無撞卡，三種都要進別名。⚠ MB 上藝人實體「蕭福德」（e4c1f97a）存在但名下 release-group 為 0，且 artist:\"蕭福德\" 的 release-group 查詢 count=0——這是實體在、目錄全空的形狀。年份 1992 由 Apple 條目的 releaseDate 1992-03-13 與 ℗ 行直記，MyMusic 與 KKBOX 的藝人頁交叉一致。封面：走 §4 apple-verified-collection 例外，collectionId 202968057，頁面 https://music.apple.com/tw/album/%E5%B8%8C%E6%9C%9B%E8%BD%89%E5%8E%BB%E4%BD%A0%E8%BA%AB%E9%82%8A/202968057 ——該條目藝人欄「蕭福德」、盤名相符、十軌、℗ 1992 Warner Music Taiwan Ltd.，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=蕭福德&limit=6 → count=829，score 100「蕭福德」e4c1f97a-b67a-4128-9b0f-ff54f222cfe7，其餘 score ≤39 為劉德華、Richard Clayderman、Beethoven 等完全不相干者",
+    "release-group?artist=e4c1f97a-b67a-4128-9b0f-ff54f222cfe7&limit=100&offset=0 → 回 200，release-groups 陣列長度 0（依第 116 條走分頁端點）",
+    "release-group?query=artist:\"蕭福德\"&limit=10 → count=0",
+    "release-group?query=releasegroup:\"希望轉去你身邊\"&limit=10 → count=0"
+   ],
+   "checkedAt": "2026-09-05T06:50:00Z",
+   "conclusion": "MB 上蕭福德的藝人實體存在（score 100 精確命中，不是第 122 條的不相干結果）但名下 release-group browse 回 0 筆；再以 artist 字串與盤名各查一次，count 皆為 0。四次查詢全部 HTTP 200，未遇 503／403，browse 用的是 limit=100 分頁端點而非 25 筆上限的 inc 端點。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E5%B8%8C%E6%9C%9B%E8%BD%89%E5%8E%BB%E4%BD%A0%E8%BA%AB%E9%82%8A/202968057",
+   "https://www.mymusic.net.tw/ux/w/singer/show/938",
+   "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Fu De Hsiao",
+  "reissuedBy": ""
+ },
+ {
+  "artist": "蕭福德",
+  "album": "春秋大夢",
+  "year": 1995,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Warner Music Taiwan",
+  "why": "1995 年 10 月 11 日發行的十一軌台語專輯（Apple ℗ 行記 1995 Warner Music Taiwan Limited），是他 1992 年出道盤之後的第二張。與前作同一條寫實路線，但正好落在新台語歌運動熱度轉入尾聲的時點，商業能見度低於同期的林強與陳明章，之後他長期改以合唱曲與運動歌曲的創作者身分活動（2009 年的《TKC 六十大壽》即與朱約信同掛）。池中實掃：蕭福德零張，本批同藝人另收 1992 年首張。",
+  "risk": "撞卡：實掃 seed_cards.json，「春秋大夢」在 album 欄零命中；⚠ 這是四字成語，中文比對雜訊高（其他歌手同名作品不少），比對必須連藝人一起鎖。掛名別名同前一張：Shiao Fu-Te／Fu De Hsiao 兩種羅馬拼音都要登記。⚠ MB 藝人實體在、名下 0 個 release-group。年份 1995 由 Apple 條目 releaseDate 1995-10-11 與 ℗ 行直記。封面：走 §4 apple-verified-collection 例外，collectionId 1270810330，頁面 https://music.apple.com/tw/album/%E6%98%A5%E7%A7%8B%E5%A4%A7%E5%A4%A2/1270810330 ——藝人欄「蕭福德」、十一軌、℗ 1995 Warner Music Taiwan Limited，已人工核對。試聽：Apple 有數位，預估可取得。",
+  "identitySource": "manual",
+  "mbNote": "",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "g": "a",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=蕭福德&limit=6 → score 100「蕭福德」e4c1f97a-b67a-4128-9b0f-ff54f222cfe7",
+    "release-group?artist=e4c1f97a-b67a-4128-9b0f-ff54f222cfe7&limit=100&offset=0 → 0 筆",
+    "release-group?query=releasegroup:\"春秋大夢\" AND artist:\"蕭福德\"&limit=10 → count=0（盤名是常見成語，必須連藝人鎖）"
+   ],
+   "checkedAt": "2026-09-05T06:52:00Z",
+   "conclusion": "蕭福德的 MB 藝人實體存在但名下 release-group browse 回 0 筆；盤名因是常見成語而改以 releasegroup 加 artist 併查，count=0。查詢全部 HTTP 200，非 503／403，browse 走 limit=100 分頁端點，藝人搜尋 score 100 精確命中本人而非同名他人。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://music.apple.com/tw/album/%E6%98%A5%E7%A7%8B%E5%A4%A7%E5%A4%A2/1270810330",
+   "https://www.mymusic.net.tw/ux/w/singer/show/938",
+   "https://www.kkbox.com/tw/en/artist/GtaC7E-Fw6HSDZGN2j"
+  ],
+  "manualRuling": "店主 2026-09-05 裁定「§1 那批都要」，核可台灣線 §1 人工身分補遺批（c-92）；依 c-87 管線與共用簡報附錄〈§1 人工身分路線的舉證要件〉逐條填。",
+  "coverSourceHint": "apple-verified-collection",
+  "queryAlias": "Fu De Hsiao",
+  "reissuedBy": ""
+ }
+]
