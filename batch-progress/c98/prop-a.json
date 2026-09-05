@@ -1,0 +1,451 @@
+[
+ {
+  "artist": "Hank Williams",
+  "album": "Hank Williams Sings",
+  "year": 1952,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "MGM Records（catno E-107，10 吋 LP）",
+  "why": "Hank Williams 名下第一張 LP 形態的唱片。他生前的發行主體是 78 轉單曲，MGM 到 1950 年代初才把既有錄音改以 10 吋 LP 出版，E-107 就是那個轉換的第一筆（Discogs master 435297 記 MGM E-107，掛名作 Hank Williams With His Drifting Cowboys；Apple 條目 collectionId 1591133640 八軌，首軌〈I Saw the Light〉）。實掃 seed_cards.json 全 14,424 列，Hank Williams 池中只有兩張：《Moanin' the Blues》(1952) 與王牌卡《40 Greatest Hits》(1978)——一張同期 MGM 專輯加一張 1978 年整編，等於「他的第一張唱片」與「MGM 專輯期」中間是空的。這張補的就是起點。",
+  "risk": "年份三說：MB release-group first-release-date 記 1949、Apple releaseDate 記 1951-11-09、Discogs master 435297 記 1952。卡單取 1952（Discogs 原盤直記優先於 MB，裁定第 127 條），行文不得正面斷言發行年（第 18／46 條）。掛名分歧：MB artist-credit 是「Hank Williams with His Drifting Cowboys」、Discogs 是「Hank Williams With His Drifting Cowboys」、Apple 只作「Hank Williams」；卡片依池中既有兩張的寫法取「Hank Williams」。盤名分歧：Apple 上這張叫《Sings》（去掉藝人名），去重與試聽兩邊都要用兩種寫法查。封面：CAA release-group 端點實測 200。試聽：Apple us collectionId 1591133640，八軌皆有 previewUrl，collectionExplicitness notExplicit；店面序 USB 的第一站 us 即命中。",
+  "mbNote": "釘 release-group 364c2c37-cdeb-4dca-87b5-9eb7e6907ea6。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Hank Williams Sings」、artist-credit「Hank Williams with His Drifting Cowboys」、first-release-date 1949、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×3、XW／Official ×1）。刻意不釘：b6fa3214-d630-3ca2-ae3f-4212249a4f66《Hank Williams Sings Kaw-Liga and Other Humorous Songs》（1965 主題精選，盤名前段完全包含本張，是最像的假陽性）、5eda7622-fb30-4eea-af5a-447d29c621b3《The Complete Hank Williams Sampler》（1998 抽樣輯）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9，名下 214 個 release-group（release-group?artist=…&limit=100&offset= 分頁三次取滿，非 25 筆上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sings；Hank Williams With His Drifting Cowboys",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Hank Williams",
+  "album": "Ramblin' Man",
+  "year": 1955,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "MGM Records（catno E-3219）",
+  "why": "1953 年 Hank Williams 過世後，MGM 以 12 吋 LP 規格重新編排他的錄音，E-3219 是這一批裡最常被當成獨立作品看待的一張（Discogs master 274766 記 MGM／Loew's Incorporated、E-3219、1955）。它把〈Ramblin' Man〉這一路較晚期、較陰暗的錄音收在一起，與同廠同期的宗教曲輯、幽默曲輯分開發行。實掃 seed_cards.json 全 14,424 列，Hank Williams 池中只有《Moanin' the Blues》(1952) 與王牌卡《40 Greatest Hits》(1978)；1953–1955 這一段 MGM 身後編輯的 LP 池中零張。",
+  "risk": "同名撞卡風險高：MB 上另有一個無年份的 14a35823-9ceb-47bf-acb2-d30b7be06d3a《Ramblin' Man》（Album+Compilation），以及 1951 年單曲 deaf10ca-f943-3e53-a82f-7cd6a54f2ec2《Ramblin' Man / Pictures From Life's Other Side》，三者盤名相同或包含，釘位一定要用 MBID 不能用字串。撇號寫法兩種：MB／Apple 用彎撇 Ramblin’ Man，卡單用 ASCII Ramblin' Man，去重兩種都要掃。Apple us collectionId 1592563692 的盤名是《Ramblin’ Man (Undubbed Edition)》——那是去掉後製配樂的版本，屬同一張碟的不同混音而非別碟，試聽可用但要在備註寫明；collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。",
+  "mbNote": "釘 release-group b9e595aa-b513-4d0a-b5f9-a1d2a167a679。回問確認：title「Ramblin’ Man」、artist-credit「Hank Williams」、first-release-date 1955、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、XW／Official ×1）。刻意不釘：14a35823-9ceb-47bf-acb2-d30b7be06d3a《Ramblin' Man》（無 first-release-date 的 Album+Compilation 同名雙胞胎）、deaf10ca-f943-3e53-a82f-7cd6a54f2ec2《Ramblin’ Man / Pictures From Life’s Other Side》（1951 單曲）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ramblin’ Man；Ramblin Man；Ramblin’ Man (Undubbed Edition)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Hank Williams",
+  "album": "Hank Williams as \"Luke the Drifter\"",
+  "year": 1955,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "MGM Records（catno E-3267）",
+  "why": "Luke the Drifter 是 Hank Williams 在 MGM 用的另一個發行身分，專門放勸世與朗誦體的曲目，當年單獨編號發行以免點唱機業者誤買。這張 LP 把那批錄音集中起來，是理解他目錄「另一半」的入口（Discogs master 396408 記 MGM E3267、1955；另有 X1165 的同年 EP 型版本 master 1199143）。實掃 seed_cards.json 全 14,424 列，Hank Williams 池中只有《Moanin' the Blues》(1952) 與王牌卡《40 Greatest Hits》(1978)，Luke the Drifter 這條線池中完全沒有。",
+  "risk": "掛名層級的歧義：MB 的 artist-credit 寫成「Hank Williams as Luke the Drifter」，Discogs 也把它當獨立的發行掛名，卡片依池中慣例取「Hank Williams」，兩種寫法都要進去重比對。盤名含成對的引號：MB 用彎引號 Hank Williams as “Luke the Drifter”，卡單用 ASCII 直引號，兩種都要掃。同系列另有 Vol.2（1959 MGM X1643）與 Vol.3（X1644），MB 未建 release-group，Discogs 有；若日後補要分開建卡。Apple us collectionId 1884151486《Hank Williams As Luke The Drifter (Expanded Edition)》14 軌、有 previewUrl、notExplicit——是加曲版，屬同一張碟的擴充版，試聽可用但要標明。封面：CAA release-group 端點實測 200。",
+  "mbNote": "釘 release-group bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1。回問確認：title「Hank Williams as “Luke the Drifter”」、artist-credit「Hank Williams as Luke the Drifter」、first-release-date 1955、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US／Official ×1、XW／Official ×1，狀態皆 Official）。**primary-type 是 Album，依 §5.6 明文照一般 Album 寫、不填例外欄位。** 刻意不釘：60b92287-a239-37f1-9659-24c5ccad5040《Beyond the Sunset》（1953，同一批朗誦體素材的另一種編排）、1bf46404-4192-3c95-9fe8-ee319637e111《Memorial Album》（1953）。藝人 MBID 906bddec-bc73-49f8-ac1e-eaee691c6cf9。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hank Williams as “Luke the Drifter”；Luke the Drifter；Hank Williams As Luke The Drifter (Expanded Edition)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Woody Guthrie",
+  "album": "Struggle",
+  "year": 1945,
+  "genres": [
+   "folk"
+  ],
+  "label": "Asch Records（Documentary #1，catno 360）；1976 年 Folkways Records 以 FA 2485 再發",
+  "why": "Woody Guthrie 為 Moses Asch 錄的成套「documentary」唱片第一號，主題是勞動與罷工事件，與《Dust Bowl Ballads》的沙塵暴主題成對。MB 的 release-group 轄下最早一筆 release 就是 1945 年美國盤《Documentary #1: Struggle》，1976 年 Folkways FA 2485 是同一套錄音的再發（Discogs master 279605 記 1976／FA 2485）。實掃 seed_cards.json 全 14,424 列，Woody Guthrie 池中只有兩張：王牌卡《Dust Bowl Ballads》(1940) 與《Ballads of Sacco & Vanzetti》(1960)——兩張都是主題成套的作品，中間 Asch／Folkways 那十幾年只剩這個形態，這張正好補在兩者之間。",
+  "risk": "年份兩說且差 31 年：MB release-group first-release-date 1945（其下確有 1945 US Official 的《Documentary #1: Struggle》），Discogs master 279605 與 Apple us collectionId 86393036 都記 1976（Folkways 再發）。卡單取 1945（第 1／86 條：年份記唱片到達公眾的那一年，不是哪一年被廠牌變成商品），落差寫在此處供行文使用，不得正面斷言。盤名兩種：原盤《Documentary #1: Struggle》、再發《Struggle》，去重兩種都要掃。授權：MB 轄下 5 個 release 全數 Official（US ×4、GB ×1），Folkways／Smithsonian Folkways 這一路無未授權疑慮。封面：CAA release-group 端點實測 200。試聽：Apple us 86393036，店面序 USB 第一站命中。",
+  "mbNote": "釘 release-group 4d97dcf0-b59e-3515-9bf7-df988e99c758。回問確認：title「Struggle」、artist-credit「Woody Guthrie」、first-release-date 1945、primary-type Album、secondary-types 空、轄下 5 個 release（1945 US Official《Documentary #1: Struggle》、1976 US Official、1990 GB Official、1992 US Official、另一筆無日期 US Official）。刻意不釘：981c4709-c546-3a20-b372-2c19c202bd6d《Long Ways to Travel: The Unreleased Folkways Masters, 1944-1949》（1994 未發表錄音輯）、53d31108-3c14-4a6c-bbab-70cbc801bbb7《Bound For Glory》（無年份的 Album+Compilation）。藝人 MBID cbd827e1-4e38-427e-a436-642683433732，名下 96 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Documentary #1: Struggle；Struggle: Documentary No. 1",
+  "reissuedBy": "Folkways Records（1976，FA 2485）",
+  "g": "a"
+ },
+ {
+  "artist": "Woody Guthrie",
+  "album": "Library of Congress Recordings",
+  "year": 1964,
+  "genres": [
+   "folk"
+  ],
+  "label": "Elektra Records／Guthrie Children's Trust Fund（catno EKL-271/272，三張裝）",
+  "why": "1940 年 Alan Lomax 在國會圖書館為 Woody Guthrie 做的訪談與演唱錄音，1964 年由 Elektra 首度以三張裝唱片出版（Discogs master 417904 記 Elektra EKL-271/272、1964）。這是 Woody Guthrie 目錄裡份量最重的單一文獻，也是他自述生平的第一手來源。實掃 seed_cards.json 全 14,424 列，Woody Guthrie 池中只有王牌卡《Dust Bowl Ballads》(1940) 與《Ballads of Sacco & Vanzetti》(1960)，這一套池中零張。",
+  "risk": "MB 轄下 5 個 release 裡有一筆標 Bootleg（國別未填），其餘 4 筆 Official（US ×2、XW ×1、國別未填 ×1）——依第 43／57 條，背書只採 Official 那幾筆，行文不得引用該 Bootleg 版；Elektra 1964 原盤與 Rounder 1988 再發都在 Official 那一側。年份兩說：MB 與 Discogs 都記 1964（Elektra 原盤），Apple us collectionId 1442846179 記 1988（Rounder 再發），卡單取 1964。錄音年是 1940，與發行年差 24 年，行文提到錄音年時要與發行年分開講。三張裝的分卷標題（Vol. 1／2／3）在部分再發被拆開發行，去重要注意。封面：CAA release-group 端點實測 200。試聽：Apple us 1442846179。",
+  "mbNote": "釘 release-group 0e25657d-93cb-38ca-88cd-2d7219d02aba。回問確認：title「Library of Congress Recordings」、artist-credit「Woody Guthrie」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×2、XW／Official ×1、國別未填 Official ×1、國別未填 Bootleg ×1）。刻意不釘：67309672-4550-42e3-9de7-8443e4ea1878《Original Recordings Made By Woody Guthrie 1940-1946》（1977 Warner Bros. 的另一種編輯）、98d971d8-348e-430b-a1c0-25e498b59e01《Bound for Glory (The Songs and Story of Woody Guthrie)》（1956 Folkways，同屬自述型文獻但是另一張碟）。藝人 MBID cbd827e1-4e38-427e-a436-642683433732。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Library of Congress Recordings；Woody Guthrie Library of Congress Recordings",
+  "reissuedBy": "Rounder Records（1988）",
+  "g": "a"
+ },
+ {
+  "artist": "Pete Seeger",
+  "album": "American Favorite Ballads, Vol. 1",
+  "year": 1957,
+  "genres": [
+   "folk"
+  ],
+  "label": "Folkways Records（catno FA 2320）",
+  "why": "Pete Seeger 為 Folkways 錄的《American Favorite Ballads》系列第一輯，也是他 1950 年代最被廣泛使用的一套唱片——五輯合計把美國通行歌本的核心曲目一次錄完，後來成為民謠復興期教學與翻唱的共同底本（Smithsonian Folkways 至今仍以 FA 2320 的編號維持這一輯的目錄條目；Apple us collectionId 82517660 記 1957）。實掃 seed_cards.json 全 14,424 列，Pete Seeger 池中只有兩張：《We Shall Overcome》(1963) 與《God Bless the Grass》(1966)，都是 Columbia 時期的議題專輯；他份量更重的 Folkways 十幾年池中零張，這張補的就是那個起點。",
+  "risk": "系列同名分卷風險：MB 上 Vol. 1–5 各自獨立建 release-group，盤名只差卷號，字串比對很容易配錯，釘位一律用 MBID。Apple 上這一輯有兩個條目（us 82517660 與 us 175650054，皆記 1957），另有 2009 年的合集《American Favorite Ballads, Vols. 1-5》（us 309219834）——合集不是本張，試聽與封面都不能取它。卡單採 us 82517660。collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。授權：MB 轄下 4 個 release 全數 Official（US ×3、XW ×1），Folkways／Smithsonian Folkways 這一路無爭議。",
+  "mbNote": "釘 release-group 63489cbc-dda6-34ba-afcf-02422d880e30。回問確認：title「American Favorite Ballads, Vol. 1」、artist-credit「Pete Seeger」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×3、XW／Official ×1）。刻意不釘：e68a7bd8-560b-46b6-93ef-169b9e8a949a《American Favorite Ballads, Vol. 2》(1958)、e6b9a530-fd5a-472b-ba47-d5d84e88ad08《American Favorite Ballads, Vol. 3》(1959)、9e8c6826-b57f-4fa4-8e12-10b0525a22a9《American Favorite Ballads, Vol. 4》(1961)、467004b2-7f99-4697-a6b5-ece1c693c5f7《American Favorite Ballads: Songs And Tunes, Vol. 5》(1962)——同系列分卷，盤名只差卷號，是本張最像的四個假陽性。藝人 MBID af18a9bc-e4ab-4068-9489-b64e8186fcf1，名下 153 個 release-group（分頁 browse 取滿，非 25 筆上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "American Favorite Ballads Volume 1；American Favorite Ballads",
+  "reissuedBy": "Smithsonian Folkways",
+  "g": "a"
+ },
+ {
+  "artist": "Pete Seeger",
+  "album": "Waist Deep in the Big Muddy & Other Love Songs",
+  "year": 1967,
+  "genres": [
+   "folk"
+  ],
+  "label": "Columbia Records（catno CS 9505）",
+  "why": "Pete Seeger 在 Columbia 時期最直接的一張時事專輯，標題曲因為在電視上被剪掉而成為當年的公共事件（Discogs master 427991 記 Columbia CS 9505、1967；同年另有 4-44273 的單曲版）。它與池中已有的《We Shall Overcome》(1963)、《God Bless the Grass》(1966) 屬同一條 Columbia 議題線，是三張裡最晚也最尖銳的一張。實掃 seed_cards.json 全 14,424 列，Pete Seeger 池中只有那兩張，這條線缺的正是收尾這一張。",
+  "risk": "盤名兩種寫法：MB 用「&」（Waist Deep in the Big Muddy & Other Love Songs），Discogs 與 Apple 用「and」（Waist Deep In the Big Muddy and Other Love Songs），去重與試聽兩種都要掃；卡單採 MB 寫法。Apple us collectionId 181586787、releaseDate 1967、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 全數 Official（US ×2、國別未填 ×1）。標題曲的電視爭議在行文中要指得出具體節目與年份才寫，否則不寫。",
+  "mbNote": "釘 release-group 3edc54fd-8d08-3bba-854c-2e4edad5ded6。回問確認：title「Waist Deep in the Big Muddy & Other Love Songs」、artist-credit「Pete Seeger」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、國別未填 Official ×1）。刻意不釘：a4942f04-4f61-3ffd-b8a5-9ea35b9cc187《Dangerous Songs!?》(1966，同期 Columbia 議題輯)、624913 對應的 Columbia 單曲不在 MB 上另建 RG。藝人 MBID af18a9bc-e4ab-4068-9489-b64e8186fcf1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Waist Deep In the Big Muddy and Other Love Songs；Waist Deep in the Big Muddy",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Odetta",
+  "album": "One Grain of Sand",
+  "year": 1963,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "Vanguard Records（catno VRS-9137）",
+  "why": "Odetta 在 Vanguard 的代表作之一，曲目從美國民謠擴到愛爾蘭、以色列與非洲的歌，是她從「ballads and blues」曲庫往國際曲目移動的一張（Discogs master 563693 記 Vanguard VRS-9137、1963）。實掃 seed_cards.json 全 14,424 列，Odetta 池中只有兩張：《Odetta Sings Ballads and Blues》(1956) 與《At the Gate of Horn》(1957)，都是 Tradition 時期；她 1960 年代 Vanguard／RCA 的整段目錄池中零張，這張補的是那一段的入口。",
+  "risk": "盤名層級無同名雙胞胎，但同年她另有 RCA 的《Sings Folk Songs》與 Live 的《At Town Hall》，掛名相同、題材相近，釘位要用 MBID。池中既有卡的盤名寫成《Odetta Sings Ballads and Blues》，而 MB 的 release-group 標題是《Sings Ballads and Blues》（不含藝人名）——這是同一張碟的兩種寫法，本張不受影響，但同批下游做 Odetta 去重時要知道。Apple us collectionId 1444010538、releaseDate 1963、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 全數 Official（US ×1、GB ×1）。",
+  "mbNote": "釘 release-group 55a00004-98ed-446a-8bd5-ca256af1e4ba。回問確認：title「One Grain of Sand」、artist-credit「Odetta」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、GB／Official）。刻意不釘：71abf3d9-44e6-4d13-9d01-4a1c7015d16b《Sings Folk Songs》(1963 同年 RCA)、1017ec49-1765-4853-a9b7-15c48ec799f7《At Town Hall》(1963 Live)、85cd0b63-dbe8-48c5-8991-06e94fa5ca46《Odetta》(1963 Compilation)——三筆都是同年同掛名，是本張最像的假陽性。藝人 MBID e81906c6-cba2-44ec-9e39-29737754d809，名下 44 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Odetta One Grain of Sand",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Patsy Cline",
+  "album": "Patsy Cline's Greatest Hits",
+  "year": 1967,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Decca Records（catno DL 74854）",
+  "why": "Patsy Cline 生前只出過三張正規專輯，而那三張池中全部都有——實掃 seed_cards.json 全 14,424 列：《Patsy Cline》(1957)、王牌卡《Showcase》(1961)、《Sentimentally Yours》(1962)。她目錄裡剩下唯一具獨立地位的品項就是 1967 年 Decca 的這張精選：它不是後世的重複包裝，而是她過世四年後由原廠編成、此後半世紀持續在架上的那一版，也是美國唱片工業協會認證銷量最高的女性鄉村專輯之一。收它是把「Patsy Cline 這位藝人在唱片市場上實際的存在形態」補齊，不是為了湊張數。",
+  "risk": "這是本批同名撞卡風險最高的一張：MB 上 Patsy Cline 名下 355 個 release-group，光是叫《Greatest Hits》或包含 Greatest Hits 的就有十餘筆（1985 的 30248c1f、1990 的 5daf229c、1988 的《16 Greatest Hits》cde892f5、1996 的《All-Time Greatest Hits》7b3467bf 等），釘位一定要用 MBID，字串比對必錯。MB 的 primary-type 是 Album、secondary-types 含 Compilation——依 §5.6 明文照一般 Album 寫、不填例外欄位。授權：轄下 11 個 release 全數 Official（US ×8、CA ×1、國別未填 ×2）。Apple us collectionId 1440825668《Patsy Cline's Greatest Hits》、releaseDate 1967、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。",
+  "mbNote": "釘 release-group 26239187-b3f4-3bac-b3cd-538a93b3fcf1。回問確認：title「Patsy Cline’s Greatest Hits」、artist-credit「Patsy Cline」、first-release-date 1967-03-13、primary-type Album、secondary-types [Compilation]、轄下 11 個 release（US／Official ×8、CA／Official ×1、國別未填 Official ×2）。刻意不釘：be623040-4f67-4fe1-a279-73bb86b10f0a《Patsy Cline’s Golden Hits》(1962)、965e7135-db47-3cfb-8ded-f792ea7c1049《The Patsy Cline Story》(1963 雙張)、30248c1f-108b-3b6c-99dc-a54d55efc359《Greatest Hits》(1985)、cde892f5-4027-4b35-bf52-19c1aeb6e95f《16 Greatest Hits》(1988)、5daf229c-6cd6-3e55-b16f-fbf08b764c5f《Greatest Hits》(1990)——五筆都是盤名高度重疊的後世包裝。藝人 MBID ad82dd72-0df3-4a09-8d7a-1af9c9e80522，名下 355 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Greatest Hits；Patsy Cline Greatest Hits",
+  "reissuedBy": "MCA／Decca",
+  "g": "a"
+ },
+ {
+  "artist": "Tammy Wynette",
+  "album": "Your Good Girl's Gonna Go Bad",
+  "year": 1967,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Epic Records（catno LN 24305／BN 26305）",
+  "why": "Tammy Wynette 的第一張專輯，也是 Billy Sherrill 為她定型的那一張——她此後十年的錄音班底與製作路線都從這裡開始。實掃 seed_cards.json 全 14,424 列，Tammy Wynette 池中只有一張《Stand by Your Man》(1969)，等於這位鄉村史上最重要的女歌手在池裡沒有起點，只有中段的代表作。這張補的是「第一張該有的」。",
+  "risk": "盤名的所有格撇號有彎撇與 ASCII 兩種寫法（MB 作 Your Good Girl’s Gonna Go Bad），去重兩種都要掃。同名單曲與同名精選都存在，釘位用 MBID。Apple us collectionId 171126447、releaseDate 1967、collectionExplicitness notExplicit；店面序 USB 第一站 us 命中。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 全數 Official（US ×2、BE ×1）。她與 George Jones 的合作專輯在 MB 掛在另一個實體（8063db1a…），去重時不要與本人目錄混算。",
+  "mbNote": "釘 release-group 24d5bfb3-6618-3138-8002-d15d1db0ffe1。回問確認：title「Your Good Girl’s Gonna Go Bad」、artist-credit「Tammy Wynette」、first-release-date 1967、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、BE／Official ×1）。刻意不釘：d4828a8f-8109-3142-9a20-739b6197b068《My Elusive Dreams》(1967 同年，與 David Houston 合作)、00eb70a9-ef93-3922-bc17-fed7b39faeab《The Best of Tammy Wynette》(1968 精選)。藝人 MBID 26fe36eb-fd75-4799-bf0f-fa502a7bcfe8，名下 265 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Your Good Girl’s Gonna Go Bad；Your Good Girls Gonna Go Bad",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Tammy Wynette",
+  "album": "D-I-V-O-R-C-E",
+  "year": 1968,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Epic Records（catno BN 26392）",
+  "why": "Tammy Wynette 第三張專輯，標題曲把離婚一詞逐字母拼出來以避開孩子聽懂，是她最被引用的一首；這張與翌年的《Stand by Your Man》構成她 1968–1969 年連續兩張定義性專輯。實掃 seed_cards.json 全 14,424 列，Tammy Wynette 池中只有《Stand by Your Man》(1969)，這張正好補在它前面一格。",
+  "risk": "盤名是全大寫加連字號的拼字型標題，連字號必須是 ASCII hyphen-minus（實測 MB 標題用的就是 ASCII，非 U+2010，符合 c-50 反模式的檢查）。同名單曲與後世精選都用同一串字，釘位用 MBID。Apple us collectionId 967382746、releaseDate 1968、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 全數 Official（US ×1、XW ×1）。",
+  "mbNote": "釘 release-group 9a113423-dd34-396c-91ad-08e0e2415303。回問確認：title「D-I-V-O-R-C-E」、artist-credit「Tammy Wynette」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、XW／Official）。刻意不釘：9be4bf8b-119d-4c71-a6b8-f3b26222746a《Take Me to Your World / I Don’t Want Play House》(1968-01 同年前一張)、1b7cb5ce-10b9-4ec7-aad8-4927f984ec0a《Tammy’s Greatest Hits》(1969)。藝人 MBID 26fe36eb-fd75-4799-bf0f-fa502a7bcfe8。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DIVORCE；D I V O R C E",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Marty Robbins",
+  "album": "The Song of Robbins",
+  "year": 1957,
+  "genres": [
+   "folk"
+  ],
+  "label": "Columbia Records（catno CL 976）",
+  "why": "Marty Robbins 在 Columbia 的第一張 LP，曲目全是他挑的既有鄉村曲，等於他自己開的一份師承清單（Discogs master 403934 記 Columbia CL 976、1957）。實掃 seed_cards.json 全 14,424 列，Marty Robbins 池中只有兩張，而且是同一組：王牌卡《Gunfighter Ballads and Trail Songs》(1959) 與《More Gunfighter Ballads and Trail Songs》(1960)——池裡的他只有西部歌謠那一面。這張補的是他在那組之前、作為鄉村歌手的起點。",
+  "risk": "MB 上 Marty Robbins 名下 370 個 release-group，1958 與 1965 各有一張自我同名《Marty Robbins》，1956 另有《Rock'n Roll'n Robbins: Marty Robbins Sings》，盤名都含 Robbins，釘位一律用 MBID。Apple：us／gb／de／au／ca 五個店面實搜皆無此張（他在 Apple 上只有 Gunfighter 系列與若干精選），試聽預估 unavailable，**不留 URL**。封面走 CAA：release-group 端點實測 200。MB 轄下 4 個 release 全數 Official（US ×2、AU ×1、國別未填 ×1）。",
+  "mbNote": "釘 release-group b701606b-bcc1-4768-8727-f21527843920。回問確認：title「The Song of Robbins」、artist-credit「Marty Robbins」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×2、AU／Official ×1、國別未填 Official ×1）。刻意不釘：4a9b9806-53d4-3133-81d2-e35db6f911dd《Rock'n Roll'n Robbins: Marty Robbins Sings》(1956)、25eda593-a55b-4e5f-a454-5cc94cb0259a《Marty Robbins》(1958 自我同名)、8ba66b24-2d4d-44fb-9db4-6d674fd0053b《Marty Robbins》(1965 自我同名)、3018bc5b-87f6-453c-9b3b-e148fd272965《Song of the Islands》(1957 同年，盤名同樣以 Song of 開頭)。藝人 MBID 2c2add7c-9a99-4812-a20e-870d331f01fd，名下 370 個 release-group（分頁 browse 取滿四次）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Song of Robbins；The Song Of Robbins",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Marty Robbins",
+  "album": "Devil Woman",
+  "year": 1962,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Columbia Records（catno CL 1918／CS 8718）",
+  "why": "Marty Robbins 1962 年的專輯，標題曲是他 1950 年代末以後最大的一首跨榜單曲，也是《Gunfighter Ballads》之後他把敘事歌路線帶回當代題材的一張。實掃 seed_cards.json 全 14,424 列，Marty Robbins 池中只有《Gunfighter Ballads and Trail Songs》(1959，王牌卡) 與《More Gunfighter Ballads and Trail Songs》(1960)；1960 年代整段目錄池中零張，這張是那一段最有代表性的入口。",
+  "risk": "盤名是兩個常見字，撞卡面很寬：Apple 上以 Devil Woman 為名的條目多半是別人的翻唱與伴唱帶（實搜 us 第一筆是 ProSource Karaoke Band 的同名單曲），**不得取搜尋第一筆**。MB 轄下只有 1 個 release（US／Official），是本批釘位證據最薄的一張，但 primary-type、artist-credit 與年份三項都對得上 Discogs 的 Columbia 條目。Apple us／gb 實搜無本人此張，試聽預估 unavailable，不留 URL。封面走 CAA：release-group 端點實測 200。",
+  "mbNote": "釘 release-group ab538cfb-857d-48ba-b3b2-3e20a0cef25e。回問確認：title「Devil Woman」、artist-credit「Marty Robbins」、first-release-date 1962、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official）。刻意不釘：f008fb4f-2555-4f93-86bb-a25b33b8f24c《Portrait of Marty》(1962 同年)、2cf5afdc-a798-3a23-a432-911f325af4fa《Marty After Midnight》(1962 同年)。藝人 MBID 2c2add7c-9a99-4812-a20e-870d331f01fd。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Marty Robbins Devil Woman",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Randy Travis",
+  "album": "Old 8x10",
+  "year": 1988,
+  "genres": [
+   "folk"
+  ],
+  "label": "Warner Bros. Records（catno 25738）",
+  "why": "Randy Travis 的第三張專輯，也是他連續三張百萬銷量之後、把 neotraditional country 這條路線坐實的一張。實掃 seed_cards.json 全 14,424 列，Randy Travis 池中只有兩張：王牌卡《Storms of Life》(1986) 與《Always & Forever》(1987)，兩張正好是這張的前兩作——他 1980 年代的三連作在池中缺最後一張。",
+  "risk": "盤名的乘號寫法有三種：MB 與 Discogs 作 Old 8x10（小寫 x）、Apple 作 Old 8X10（大寫 X）、部分資料寫 Old 8×10（U+00D7），去重與查詢三種都要試。Apple us collectionId 308387566、releaseDate 1988、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 5 個 release 全數 Official（US ×1、DE ×2、XW ×1、國別未填 ×1）。",
+  "mbNote": "釘 release-group 12e22c63-fbd5-32e8-8756-bd1d7552027e。回問確認：title「Old 8x10」、artist-credit「Randy Travis」、first-release-date 1988-07-12、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×1、DE／Official ×2、XW／Official ×1、國別未填 Official ×1）。刻意不釘：14d2ff3c-cafd-3d7f-8cfc-77b967db5f4d《No Holdin’ Back》(1989 下一張)、25f66bec-ed0f-3b81-a1b2-a55b8911cb96《An Old Time Christmas》(1989，盤名同樣以 Old 開頭)。藝人 MBID 09b697e3-a849-4670-ae49-e0b821a6271a，名下 65 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Old 8X10；Old 8×10",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Garth Brooks",
+  "album": "The Chase",
+  "year": 1992,
+  "genres": [
+   "folk",
+   "pop"
+  ],
+  "label": "Liberty Records（catno C2-98743）",
+  "why": "Garth Brooks 在《No Fences》與《Ropin' the Wind》兩張破紀錄專輯之後的第四張正規專輯，也是他第一次把題材推到族群與宗教爭議上的一張——當年的銷量仍以千萬計，但爭議也讓它成為他商業曲線的轉折點。實掃 seed_cards.json 全 14,424 列，Garth Brooks 池中有三張，正好是他前三張：《Garth Brooks》(1989)、王牌卡《No Fences》(1990)、《Ropin' the Wind》(1991)。池裡的他停在 1991，這張接的就是下一格。",
+  "risk": "試聽是這張最大的問題：Garth Brooks 長期不把目錄授權給 Apple Music／iTunes，實搜 us／ca／gb／au／de 五個店面，回來的四十筆全是致敬輯、伴唱帶與翻奏，本人條目一筆都沒有；**試聽預估 unavailable，不留 URL，也不得取任何一筆致敬輯的 collectionId 充數**。封面走 CAA：release-group 端點實測 200。盤名是兩個常見字，字串比對容易配到別人的碟，釘位用 MBID。MB 轄下 15 個 release，14 筆 Official（US ×10、CA ×2、XE ×1、XW ×1）、1 筆 US 未填 status。",
+  "mbNote": "釘 release-group 1d1c66cc-84b7-3c72-ac81-84f3e7785c79。回問確認：title「The Chase」、artist-credit「Garth Brooks」、first-release-date 1992-09-22、primary-type Album、secondary-types 空、轄下 15 個 release。刻意不釘：22cfbcf0-9f19-3e52-8f16-ccfdd21cdfcf《Beyond the Season》(1992-08-25 同年聖誕輯)、96be6552-e169-4005-9f0d-514776ffc297《This is Garth Brooks》(1992-09 Live／電視特別節目)、3ff6b94c-1765-3d58-a6e0-edc7b552fcba《In Pieces》(1993 下一張)。藝人 MBID b76645c5-78b0-4e4c-8f95-003f40013a45，名下 73 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Garth Brooks The Chase",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Louvin Brothers",
+  "album": "Nearer My God to Thee",
+  "year": 1957,
+  "genres": [
+   "folk"
+  ],
+  "label": "Capitol Records（catno T 825）",
+  "why": "The Louvin Brothers 在 Capitol 的第一張福音專輯，也是他們兩條線（世俗曲與福音曲）裡份量較重的那一條的起點——他們是先以福音二重唱立足，才有後來《Tragic Songs of Life》那批世俗曲的。實掃 seed_cards.json 全 14,424 列，The Louvin Brothers 池中有三張：《Tragic Songs of Life》(1956)、《Ira and Charlie》(1958)、王牌卡《Satan Is Real》(1959)——三張裡只有《Satan Is Real》屬福音線，而它是這條線的終點不是起點。這張補的是起點。",
+  "risk": "曲名同名的傳統聖詩極多，字串比對會撈回大量別人的碟，釘位用 MBID。Apple us collectionId 714637977、artistName 對得上 The Louvin Brothers、releaseDate 1957、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 全數 Official（US ×2、GB ×1）。同年另有 d8b9865c《The Louvin Brothers (Ira and Charles)》，與池中已有的《Ira and Charlie》(1958) 盤名相近但不是同一張，去重時要分開。",
+  "mbNote": "釘 release-group ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a。回問確認：title「Nearer My God to Thee」、artist-credit「The Louvin Brothers」、first-release-date 1957、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、GB／Official ×1）。刻意不釘：d8b9865c-047b-4938-a74b-bb0d7b691ef3《The Louvin Brothers (Ira and Charles)》(1957 同年)、0e3d05af-da13-4548-8b79-93ee3f319874《The Family Who Prays》(1958 同屬福音線)、a98a3dcc-dd65-433c-bfbc-0923c443220f《Weapon of Prayer》(1962 同屬福音線)。藝人 MBID 8b604d4b-1170-4225-bc9e-d8276d94402e，名下 64 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nearer My God To Thee Louvin Brothers",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Louvin Brothers",
+  "album": "My Baby's Gone",
+  "year": 1960,
+  "genres": [
+   "folk"
+  ],
+  "label": "Capitol Records（catno T 1834）",
+  "why": "The Louvin Brothers 世俗曲那條線在《Tragic Songs of Life》之後最完整的一張，標題曲後來成為他們被翻唱最多的曲子之一。實掃 seed_cards.json 全 14,424 列，The Louvin Brothers 池中三張：《Tragic Songs of Life》(1956)、《Ira and Charlie》(1958)、王牌卡《Satan Is Real》(1959)——1960 年之後、也就是兩兄弟拆夥前最後幾年的目錄池中零張，這張補在《Satan Is Real》右邊。",
+  "risk": "盤名撞卡：2006 年 Capitol／EMI 的精選《My Baby's Gone: The Essential Louvin Brothers 1955-1964》（MB 7c361ed1…）盤名完整包含本張，子字串比對必配錯，釘位用 MBID。撇號彎撇與 ASCII 兩種寫法都要掃（MB 作 My Baby’s Gone）。封面：CAA release-group 端點實測 **404**，改走 §4 的 apple-verified-collection：人工核對過的 Apple us collectionId **714643546**（artistName The Louvin Brothers、collectionName My Baby's Gone、releaseDate 1960、notExplicit），同一個 collectionId 依裁定第 134 條也可作固定試聽來源。MB 轄下 3 個 release：US／Official、GB／Official，另一筆國別與 status 皆未填——那一筆不採為背書。",
+  "mbNote": "釘 release-group 84efe5dd-171b-4afc-bf84-74451984c47c。回問確認：title「My Baby’s Gone」、artist-credit「The Louvin Brothers」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×1、GB／Official ×1、國別與 status 皆未填 ×1）。刻意不釘：7c361ed1-d2e9-4a3d-8e0b-ae0d4cbf4d26《My Baby's Gone: The Essential Louvin Brothers 1955-1964》(2006 精選，盤名完整包含本張)、fec10658-637c-45ef-85ed-a47f6d8f0802《A Tribute to The Delmore Brothers》(1960 同年)。藝人 MBID 8b604d4b-1170-4225-bc9e-d8276d94402e。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "My Baby’s Gone；My Babys Gone",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Flatt & Scruggs",
+  "album": "Songs of the Famous Carter Family",
+  "year": 1961,
+  "genres": [
+   "folk"
+  ],
+  "label": "Columbia Records（catno CL 1664／CS 8464）",
+  "why": "Flatt & Scruggs 與 Maybelle Carter 同台錄的一張，等於藍草第一代直接回頭處理 Carter Family 的曲庫，是這兩支家系在唱片上少數的直接交會。實掃 seed_cards.json 全 14,424 列，Flatt & Scruggs 池中三張：《Foggy Mountain Jamboree》(1957)、王牌卡《Foggy Mountain Banjo》(1961)、《Flatt & Scruggs at Carnegie Hall!》(1963)——都是他們自家曲目與現場，這張補的是曲目來源那一側。",
+  "risk": "掛名分歧要處理：MB 的 artist-credit 是「Lester Flatt & Earl Scruggs featuring Mother Maybelle Carter & the Foggy Mountain Boys」，Apple 記「Lester Flatt & Earl Scruggs」，池中既有三張用的是「Flatt & Scruggs」——卡片依池中寫法取「Flatt & Scruggs」，另兩種進 queryAlias。Apple us collectionId 220100215、releaseDate 1961、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 4 個 release 全數 Official（US ×1、國別未填 ×2、XW ×1）。",
+  "mbNote": "釘 release-group 8428462a-e472-32d5-985b-cab8e725a350。回問確認：title「Songs of the Famous Carter Family」、artist-credit「Lester Flatt & Earl Scruggs featuring Mother Maybelle Carter & the Foggy Mountain Boys」、first-release-date 1961、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official ×1、國別未填 Official ×2、XW／Official ×1）。刻意不釘：3ac41f4a-170b-49d6-92a7-bc5eef67d997《Hear the Whistles Blow: Lester Flatt and Earl Scruggs Sing Songs of Rivers & Rails》(1967 主題精選，盤名同樣是 Sing Songs of…)、9f96eb4f-b599-440a-b94d-5c6861ad3021《Songs of Glory》(1960，盤名同樣以 Songs of 開頭)。藝人 MBID 77029a1c-76fa-4350-a1a8-dacc10230b6f（MB 實體名 Lester Flatt & Earl Scruggs），名下 101 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lester Flatt & Earl Scruggs；Songs Of The Famous Carter Family",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Flatt & Scruggs",
+  "album": "Hard Travelin'",
+  "year": 1963,
+  "genres": [
+   "folk"
+  ],
+  "label": "Columbia Records（catno CL 2151／CS 8951）",
+  "why": "Flatt & Scruggs 在 1960 年代民謠復興期最明顯的一次轉向：專輯以 Woody Guthrie 的標題曲開場，把藍草的班底放進城市民謠圈的曲目裡。實掃 seed_cards.json 全 14,424 列，Flatt & Scruggs 池中三張：《Foggy Mountain Jamboree》(1957)、王牌卡《Foggy Mountain Banjo》(1961)、《Flatt & Scruggs at Carnegie Hall!》(1963)。同為 1963 年，池中已有的是卡內基現場，這張是同年的錄音室對照。",
+  "risk": "盤名的撇號有彎撇與 ASCII 兩種（MB 作 Hard Travelin’），且 Apple 的盤名帶副標《Hard Travelin' (with The Foggy Mountain Boys)》——第 152 條那種「系列名／班底名串進盤名」的形狀，標題比對要放寬到子字串。Apple us collectionId 727363468、artistName Lester Flatt & Earl Scruggs、releaseDate 1963、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 2 個 release 全數 Official（US ×1、XW ×1）。掛名沿用池中的「Flatt & Scruggs」，MB 實體名進 queryAlias。",
+  "mbNote": "釘 release-group f76fcb06-e98e-4c06-9296-af57005f27ab。回問確認：title「Hard Travelin’」、artist-credit「Lester Flatt & Earl Scruggs」、first-release-date 1963、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official、XW／Official）。刻意不釘：a30f2960-4110-331d-b62e-7c99d37fad97《Flatt and Scruggs at Carnegie Hall!》(1963 同年 Live，池中已有)、237a221a-ca7a-399b-9882-d9878a103295《Folk Songs of Our Land》(1962，同屬民謠復興期轉向)。藝人 MBID 77029a1c-76fa-4350-a1a8-dacc10230b6f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hard Travelin’；Hard Travelin' (with The Foggy Mountain Boys)；Lester Flatt & Earl Scruggs",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Dock Boggs",
+  "album": "Dock Boggs: Legendary Singer and Banjo Player",
+  "year": 1964,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "Folkways Records（catno FA 2351）",
+  "why": "Dock Boggs 1929 年後停止錄音、當了三十幾年礦工，1963 年被 Mike Seeger 找到後重新錄音，這張 Folkways FA 2351 就是復出後的第一張（Discogs master 312449 記 Folkways FA 2351、1964）。實掃 seed_cards.json 全 14,424 列，Dock Boggs 池中只有一張《Country Blues: Complete Early Recordings (1927-29)》(1997)——那是 1920 年代原始錄音的後世整編，等於池裡的他只有前半生。這張補的是後半生，也是他被民謠復興圈實際聽到的那個版本。",
+  "risk": "盤名三種寫法：MB 的 release-group 標題作「Dock Boggs: Legendary Singer and Banjo Player」，Discogs 原盤 master 312449 只作「Dock Boggs」，Apple us collectionId 175658461 也只作「Dock Boggs」——卡單取 MB 的長標題以避開自我同名與 2006 年同名 release-group 的雙重撞卡，短寫法進 queryAlias。封面：CAA release-group 端點實測 **404**，改走 §4 apple-verified-collection：人工核對過的 Apple us collectionId **175658461**（15 軌，曲序 Down South Blues／Country Blues／Pretty Polly／Coal Creek March，與 FA 2351 曲目相符；releaseDate 1964-01-01；notExplicit），依裁定第 134 條同一個 collectionId 也可作固定試聽來源，實測四軌皆有 previewUrl。MB 轄下 2 個 release 的 status 皆未填（US），不採為授權背書；Folkways／Smithsonian Folkways 的目錄延續性另有 699d282d《His Folkways Years (1963-1968)》可佐證，但那是另一張碟，不釘。",
+  "mbNote": "釘 release-group dd01d57e-a37a-4a04-946b-45713663ca28。回問確認：title「Dock Boggs: Legendary Singer and Banjo Player」、artist-credit「Dock Boggs」、first-release-date 1964、primary-type Album、secondary-types 空、轄下 2 個 release（US，status 皆未填）。刻意不釘：d0b07772-2605-4349-8916-1fc21ad54d65《Dock Boggs》(2006 同名 release-group)、9239bf61-dfd3-4ddb-9e55-2a3d47d02d82《Dock Boggs, Vol. 2》(無年份)、2573fe21-5444-464a-82ed-93d6824f5b3a《Dock Boggs 1966》、8a28aa56-f4ac-4594-82ac-1c055a722a77《Excerpts From Interviews With Dock Boggs…》(1965，primary-type Interview)、699d282d-8606-3546-954d-1d4de2e91c75《His Folkways Years (1963-1968)》(1998 Compilation)。藝人 MBID 78fad453-6853-4c74-9237-e5160afd9db0，名下 8 個 release-group（全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Dock Boggs；Dock Boggs Legendary Singer & Banjo Player；Folkways FA 2351",
+  "reissuedBy": "Smithsonian Folkways",
+  "g": "a"
+ },
+ {
+  "artist": "Elizabeth Cotten",
+  "album": "Volume 3: When I'm Gone",
+  "year": 1979,
+  "genres": [
+   "folk",
+   "blues"
+  ],
+  "label": "Folkways Records（catno FA 3537）",
+  "why": "Elizabeth Cotten 在 Folkways 的三張編號專輯的最後一張，錄於她八十幾歲時（Discogs master 205719 記 Folkways FA 3537、1979）。實掃 seed_cards.json 全 14,424 列，Elizabeth Cotten 池中兩張，正好是前兩卷：王牌卡《Folksongs and Instrumentals with Guitar》(1958) 與《Vol. 2: Shake Sugaree》(1967)。MB 上她名下只有 5 個 release-group，這張是三卷裡唯一缺的一卷，補完之後她的正規目錄在池中就整齊了。",
+  "risk": "卷號寫法不一致：池中既有卡寫「Vol. 2: Shake Sugaree」，MB 對本張的標題是「Volume 3: When I'm Gone」（Volume 全寫），Apple us collectionId 154816804 的盤名則是「Elizabeth Cotten, Vol. 3: When I'm Gone」（帶藝人名）。三種寫法都要進去重比對；卡單依 MB 實體文字取「Volume 3: When I'm Gone」。Apple 該筆的 releaseDate 記 1965，與 MB／Discogs 的 1979 差 14 年——依裁定第 77 條，Apple 的日期只當訊號不當版本門檻，卡單取 1979。collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 3 個 release 全數 Official（US ×2、XW ×1）。",
+  "mbNote": "釘 release-group 789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47。回問確認：title「Volume 3: When I'm Gone」、artist-credit「Elizabeth Cotten」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official ×2、XW／Official ×1）。刻意不釘：8048ccb2-ad8c-4430-ba16-ef3b374565f1《Vol. 2: Shake Sugaree》(1967，池中已有)、723efde8-f1ad-3621-9bbd-a5aaee29857a《Shake Sugaree》(2004 Compilation)、a4764d3b-ac41-4ec7-b010-a33339551994《Live!》(1983 Live)。藝人 MBID 907f53c2-f7d1-406a-8071-30262ba472ca，名下 5 個 release-group（全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Elizabeth Cotten, Vol. 3: When I'm Gone；Vol. 3: When I'm Gone；When I'm Gone",
+  "reissuedBy": "Smithsonian Folkways",
+  "g": "a"
+ },
+ {
+  "artist": "Joan Baez",
+  "album": "Joan Baez, Vol. 2",
+  "year": 1961,
+  "genres": [
+   "folk"
+  ],
+  "label": "Vanguard Records（catno VRS-9094／VSD-2097）",
+  "why": "Joan Baez 的第二張專輯，也是她在 Vanguard 早期三張裡曲目最集中於傳統民謠的一張，1962 年獲葛萊美提名、與首張同為當時民謠復興期的通行教材。實掃 seed_cards.json 全 14,424 列，Joan Baez 池中三張：《Joan Baez》(1960)、《Farewell, Angelina》(1965)、《Diamonds & Rust》(1975)——首張與 1965 年之後都有，中間 1961–1964 那段她最有影響力的 Vanguard 時期池中零張，這張補在《Joan Baez》右邊。",
+  "risk": "盤名的卷號寫法有 Vol. 2／Volume 2／2 三種，且與首張《Joan Baez》共用前段字串，子字串比對會互相配錯（第 162 條的鏡像形狀），釘位用 MBID。MB 上另有一位哥倫比亞的前衛搖滾樂團 Joan Báez（1a9f77df…，掛名只差一個重音），跨實體撞名要注意。Apple us collectionId 712142981、releaseDate 1961、collectionExplicitness notExplicit。封面：CAA release-group 端點實測 200。MB 轄下 9 個 release，8 筆 Official（US ×3、FR ×1、GB ×1、DE ×2、XW ×1），另 1 筆 XW 標 Bootleg——依第 43 條那一筆不採為背書。",
+  "mbNote": "釘 release-group c51b1bdd-d6bb-3271-ab28-f277fc57ca2d。回問確認：title「Joan Baez, Vol. 2」、artist-credit「Joan Baez」、first-release-date 1961-09、primary-type Album、secondary-types 空、轄下 9 個 release（Official ×8、Bootleg ×1）。刻意不釘：637441f0-6ca3-3557-96f7-68f6701893fb《Joan Baez》(1960 首張，池中已有)、85cd9dcd-b0eb-3fc4-bfce-5aa7fd99cdbc《Joan Baez in Concert, Part 1》(1962 Live)、5d8cd1ee-85ab-3357-958c-24c12c800060《Joan Baez in Concert, Part 2》(1963 Live)、826abf83-eaea-386d-8ee7-2fdfdc2faf71《Joan Baez/5》(1964)——四筆盤名都以 Joan Baez 開頭。藝人 MBID 92d37892-6186-4459-9cc1-f0dde57652d0，名下 159 個 release-group（分頁 browse 取滿）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Joan Baez Volume 2；Joan Baez 2",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Nitty Gritty Dirt Band",
+  "album": "Uncle Charlie & His Dog Teddy",
+  "year": 1970,
+  "genres": [
+   "folk",
+   "rock"
+  ],
+  "label": "Liberty Records（catno LST-7642）",
+  "why": "Nitty Gritty Dirt Band 從加州的 jug band 轉成鄉村搖滾團的那一張，也是他們第一次真正賣開的專輯；兩年後才有《Will the Circle Be Unbroken》那次與納許維爾老一輩的合錄。實掃 seed_cards.json 全 14,424 列，Nitty Gritty Dirt Band 池中只有一張，就是王牌卡《Will the Circle Be Unbroken》(1972)——池裡的他們只有那次大合錄，沒有樂團自己的作品。這張補的是《Circle》之所以會發生的前一步。",
+  "risk": "盤名的連接詞兩種寫法：MB 作「Uncle Charlie & His Dog Teddy」，Apple us collectionId 723526039 作「Uncle Charlie and His Dog Teddy (Bonus Tracks Edition) [2002 Remaster]」——加曲重製版，屬同一張碟的擴充版，試聽可用但要標明；releaseDate 1970、collectionExplicitness notExplicit。三種寫法（&／and／帶副標）都要進去重比對。封面：CAA release-group 端點實測 200。MB 轄下 5 個 release 全數 Official（US ×3、GB ×1、XW ×1）。池中已有的《Will the Circle Be Unbroken》另有 1989 與 2002 兩續集，不要與本張混算。",
+  "mbNote": "釘 release-group 2487403a-7b69-3963-9ef0-04ccce2968e6。回問確認：title「Uncle Charlie & His Dog Teddy」、artist-credit「Nitty Gritty Dirt Band」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official ×3、GB／Official ×1、XW／Official ×1）。刻意不釘：5b7b3718-3af3-3fdb-8dc6-800c5b680eff《Alive!》(1969 Live)、9639aecb-457b-3164-afcc-d44fca7b3853《All the Good Times》(1971 下一張)、cda1eace-c16a-38b0-a9c1-2926b8fac828《Will the Circle Be Unbroken, Volume 2》(1989)、5553ecf9-1134-3b45-935b-7cb3f3d68108《Will the Circle Be Unbroken, Volume 3》(2002)——後兩筆盤名包含池中既有卡，是同一藝人下最容易被誤釘的兩筆。藝人 MBID ac8a45f8-5520-4463-9fda-f63f8844cb50，名下 62 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Uncle Charlie and His Dog Teddy；Uncle Charlie & His Dog Teddy (Bonus Tracks Edition)",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
