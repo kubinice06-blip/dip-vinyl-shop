@@ -4801,9 +4801,22 @@
    "jp:403",
    "jp:0→0",
    "gb:403",
-   "gb:0→0"
+   "gb:0→0",
+   "series-name-search@tw",
+   "lookup:6805417548@tw"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "tw",
+  "collectionId": 6805417548,
+  "appleTitle": "1995 台灣地下音樂檔案 (III) - 荳荳紀念專輯",
+  "appleArtist": "荳荳",
+  "appleYear": "1995",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://itunes.apple.com/tw/lookup?id=6805417548",
+  "cleanedOnly": false,
+  "previewSource": "series-name-search",
+  "note": "**2026-09-05 研究層 c-90 a 覆核，主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判（第 152 條），**成因是搜尋字串不是店面**——卡片盤名是《1995 台灣地下音樂檔案 III 呼吸荳荳紀念專輯》，Apple 的官方數位標題是《1995 台灣地下音樂檔案 (III) - 荳荳紀念專輯》，**完全沒有「呼吸」二字**，逐字比對必然落空；改用系列名「台灣地下音樂檔案」查，tw/hk/jp/us/sg/my/gb 七個店面都回本張。collectionId 6805417548 直查複驗：10 軌全部有 preview、曲序與 MB 逐項相同、℗ 1995、標題無 Karaoke／Tribute 尾綴。掛名 Apple 記「荳荳」、卡片記 Various Artists。**固定試聽取第 1 軌〈呼吸〉。**"
  },
  "Various Artists|赤聲搖滾第一集：SCUM": {
   "batch": "c90",
