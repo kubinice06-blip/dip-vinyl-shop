@@ -138,5 +138,129 @@
   "status": "full",
   "yearVerified": "一致，2007。MB release-group first-release-date 2007-09-26、其下 2007-09-26 JP Official STARCHILD KICA-887 為原盤，Apple jp 263727634 的 releaseDate 與 ℗ 年份都是 2007，卡單年份 2007 相符。**作品年與原聲帶發行年要分開寫**：電影《ヱヴァンゲリヲン新劇場版:序》**2007-09-01** 上映（ja 維基），原聲盤 **2007-09-26** 晚 25 天，同年、碟在後。Milan 的美／加／巴西版是 **2016-11-04**（MB release 明細），與原盤差九年；Apple us 1522561884 雖然把 releaseDate 顯示成 2007-09-26，**它的 ℗ 年份是 2016**，那是授權年不是發行年。",
   "notes": "**ready 卡覆核通過，配對正確。** jp 263727634 的 26 軌與 MB 原盤 release 9489cfc6 逐軌逐位置相符、26 軌全部有 previewUrl、℗ 年份 1:1 對上 2007 年的 King Records。**店面覆核**：同一個 id 在 **jp／tw／hk** 三店命中，**us／gb／de 三店回 0 筆**——歐美店面走的是另一個 id 1522561884（Milan 版，同 26 軌、同曲序，℗ 2016），下游若要在美國店面落地固定試聽，那一筆是可用的替代，但**兩個 id 的 ℗ 年份不同，行文不得引用 Milan 的 2016**。\\n**盤名三種寫法**：MB 的 RG 標題用彎引號 Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”、卡片與 Apple jp 用直引號且冒號後有空格、Milan 版整個拿掉 Shiro SAGISU 前綴並把冒號挪進引號內（Music from \"EVANGELION: 1.0\"）。三種都要進去重比對。\\n**別碟警示**：同系列 1522843603（2.0，23 軌）、579570501（3.0，34 軌）、1569126716／1579598401（SHIN，54 軌）、1134882984《Shiro SAGISU outtakes from Evangelion》（21 軌，未收錄曲集）、721578418《EVANGELION Piano Forte》（18 軌，鋼琴編曲盤）——**策展層已把其中四筆明寫「刻意不釘」**，下游不得改配。\\n**擋下策展層一處說法**：`curatorWhy` 寫「是他少數在歐美有正規發行的原聲盤」——**同一位藝人的另外兩張碟也有歐美正規發行**（本組《NEON GENESIS EVANGELION II》有 2004-03-16 US Official Geneon 52252、《THE END OF EVANGELION》有 2004-05-11 US Official Geneon 5231-2，兩筆都在 MB 上，且都是本批自己收的卡）。**行文不得寫「少數」「唯一」這一類的稀有度判斷。**"
+ },
+ {
+  "key": "desc4:川井憲次|機動警察パトレイバー, Volume 1: INTERFACE",
+  "artist": "川井憲次",
+  "album": "機動警察パトレイバー, Volume 1: INTERFACE",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cd3d7740 的欄位：title「機動警察パトレイバー, Volume 1: INTERFACE」、artist-credit「川井憲次」（藝人 MBID c50e52e1）、first-release-date 1988-03-25、primary-type Album、secondary-types [Soundtrack]、轄下**只有 2 個 release，兩筆都是 JP／Official、都是 15 軌單片 CD**：1988-03-25 Warner–Pioneer Corporation 32XL-272、1998-11-26 WEA Japan WPC7-8652。**沒有任何 Bootleg 或 Pseudo-Release。**",
+    "src": "https://musicbrainz.org/release-group/cd3d7740-bd13-390b-97f5-bf23486f6e42"
+   },
+   {
+    "f": "MB release 477cdc96（1988-03-25 JP Warner–Pioneer 32XL-272）的逐軌曲目：單片 15 軌，第 1 軌〈序章 — Night Stalker〉只有 57 秒，第 2 軌〈未来派LOVERS〉與第 8 軌〈冷たいくらいが好き〉是歌曲、第 6 軌〈出動~PATLABOR〉、第 11 軌〈特車隊マーチ〉，第 13 軌〈幻影の果てに〉260 秒與末軌〈INTERFACE〉225 秒。**碟名的 INTERFACE 就是最後一軌的曲名。**",
+    "src": "https://musicbrainz.org/release/477cdc96-d530-43d7-9e98-d2a14e913dc6"
+   },
+   {
+    "f": "Cover Art Archive 逐層實測：**release-group 端點 `https://coverartarchive.org/release-group/cd3d7740-…` 回 HTTP 404**（回應本文「No cover art found for release group」），**其下兩筆 release 的 `release/<id>` 端點也各回 HTTP 404**（477cdc96 與 66b65b95）。**不是釘的那個 release 剛好沒圖，是這個 RG 底下一張封面都沒有上傳。**",
+    "src": "https://coverartarchive.org/release-group/cd3d7740-bd13-390b-97f5-bf23486f6e42"
+   },
+   {
+    "f": "Apple Music 覆核（兩個端點、六個店面）：川井憲次藝人頁 artistId 76058734 的目錄筆數 jp 116、us 84、gb 84、tw 84、hk 84、de 84（**都遠低於 limit=200 的截斷值**），六店的目錄裡與パトレイバー相關的條目只有 1704589733《WXIII PATLABOR THE MOVIE 3 Original Soundtrack》(2002-04-03，17 軌)、878125765／924432975／985890058 三張《THE NEXT GENERATION パトレイバー》(2014–15) 與 6789530659《『機動警察パトレイバー EZY』オリジナルサウンドトラック Vol.1》(2026-08-15，48 軌)；**1988–93 年那批 OVA／劇場版原聲盤一張都沒有**。",
+    "src": "https://itunes.apple.com/lookup?id=76058734&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "Apple `search` 端點（jp／us，term「機動警察パトレイバー」「パトレイバー INTERFACE」）回的全是翻奏單曲與別碟：1685254780（VocaPanda）、1281437327（NIYARI計画）、1786728952／1786729631（Doubtmen 的翻奏與伴奏集）、1811428382（Solodys）、409988154《機動警察パトレイバー パトレイバーコンプリート ヴォーカルコレクション》(1993-12-21，Various Artists，18 軌，是歌曲集不是本張)。**兩個端點都跑過，結論一致：Apple 上沒有這張碟。**",
+    "src": "https://itunes.apple.com/search?term=%E6%A9%9F%E5%8B%95%E8%AD%A6%E5%AF%9F%E3%83%91%E3%83%88%E3%83%AC%E3%82%A4%E3%83%90%E3%83%BC&country=jp&entity=album&limit=50"
+   },
+   {
+    "f": "日文維基〈機動警察パトレイバー〉：本作是ヘッドギア原作的媒體混合企劃，作品舞台設定在發表當時（1988 年）還算近未來的 1998 年東京；**初期 OVA 系列 1988 年（昭和 63 年）4 月 25 日至 1989 年（平成元年）6 月 25 日發售**。本碟 1988-03-25 發行，**比第一卷 OVA 早 31 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E8%AD%A6%E5%AF%9F%E3%83%91%E3%83%88%E3%83%AC%E3%82%A4%E3%83%90%E3%83%BC"
+   }
+  ],
+  "hookCandidates": [
+   "碟比片子早一個月：1988 年 3 月 25 日上架，第一卷 OVA 要到 4 月 25 日才發售",
+   "十五軌，MusicBrainz 上只有兩筆版本——1988 年的原盤與十年後那次重出，此外什麼都沒有"
+  ],
+  "sound": "MB release 477cdc96（Warner–Pioneer 32XL-272）記單片 15 軌，MB 未填總長。開場〈序章 — Night Stalker〉只有 57 秒，是全碟最短的一軌；第 2 軌〈未来派LOVERS〉214 秒與第 8 軌〈冷たいくらいが好き〉256 秒是帶唱的歌曲，其餘為劇伴；最長的兩軌是第 13 軌〈幻影の果てに〉260 秒與第 8 軌。曲序在歌曲與劇伴之間交錯，終於與碟名同名的〈INTERFACE〉。",
+  "keyTracks": [
+   "序章 — Night Stalker",
+   "出動~PATLABOR",
+   "INTERFACE"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。MB release-group first-release-date 1988-03-25，其下 1988-03-25 JP Official Warner–Pioneer 32XL-272 為原盤，1998-11-26 WEA Japan WPC7-8652 是十年後的重出（MB 只有這兩筆），卡單年份 1988 相符、**不是復刻年**。**作品年與原聲帶發行年要分開寫**：初期 OVA 系列 **1988-04-25** 才發售第一卷（ja 維基），本碟 **1988-03-25** 早 31 天——**同年，唱片在前**。",
+  "notes": "**缺封面的結論：真的沒有，不是釘位選錯。** 依派工要求逐層打 CAA：`release-group/cd3d7740` 回 404，其下**兩筆 release（477cdc96 與 66b65b95）的 `release/<id>` 端點也各回 404**。這個 RG 底下一張封面都沒上傳，換釘別的 release 不會解決；要補封面只能走 §4 的外部來源人工核對。**這也是本組 23 張裡唯一一張沒有封面的。**\\n**unavailable 覆核成立：Apple 上真的沒有。** 兩個端點都跑過（裁定 173）：藝人頁目錄 artistId 76058734 在 jp／us／gb／tw／hk／de 六店各回 84–116 筆，**都沒有到 limit=200 的截斷線**，所以「目錄裡查無」在本卡算數；`search` 端點另跑三組字串，回的全是翻奏單曲（VocaPanda、NIYARI計画、Doubtmen、Solodys）與 1993 年那張歌曲集 409988154。**這是 c-101 第 1 條記的那個陷阱的動畫版：查無的碟，搜尋結果裡塞滿翻奏，比什麼都沒有更容易配錯。**\\n**掛名不是落空原因**：本卡與 c-101 第 8 條那四張不同，Apple 目錄裡川井憲次名下有 116 筆、包含 2002 年以後的パトレイバー 系列，**只是 1988–93 年那批沒有數位化**。\\n**別碟警示**：6789530659《『機動警察パトレイバー EZY』オリジナルサウンドトラック Vol.1》(2026，48 軌) 與 1704589733《WXIII PATLABOR THE MOVIE 3》(17 軌) 都掛川井憲次、盤名都含パトレイバー，**是本卡最像的假陽性**；409988154 掛 Various Artists，是歌曲集。策展層另已把 Volume 2: INTERCEPT、Volume 5: INQUEST、フェイズIII／V 與 CDBOX 明寫「刻意不釘」。\\n**盤名兩種寫法**：MB 的 RG 與其下兩筆 release 都用英式編目寫法（逗號＋Volume 1＋冒號），原盤封面作「機動警察パトレイバー VOL.1 INTERFACE」，去重要兩種都掃。"
+ },
+ {
+  "key": "desc4:川井憲次|Patlabor 2 the Movie",
+  "artist": "川井憲次",
+  "album": "Patlabor 2 the Movie",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d4b6f7a3 的欄位：title「Patlabor 2 the Movie」、artist-credit「川井憲次」（藝人 MBID c50e52e1）、first-release-date 1993-09-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release，**五筆全部 13 軌**。",
+    "src": "https://musicbrainz.org/release-group/d4b6f7a3-756d-3bcb-a4b4-d89d2a5f16d8"
+   },
+   {
+    "f": "同一 RG 的 release 明細：1993-09-21 JP Official vap VPCG-84206 CD，標題《PATLABOR 2 the Movie / ORIGINAL SOUNDTRACK \"P2\"》；1996 GB Official Demon Soundtracks DSCD 15 CD，同標題；**2021 年瑞士 WRWTFWW Records 一口氣出三種載體**——WRWTFWW048LTD **12\" Vinyl**（標題《PATLABOR 2 The Movie (Original Soundtrack \"P2\")》）、2021-11-03 WRWTFWW048CD **CD**、同日一筆 **Digital Media**（後兩者標題作《Patlabor 2 - The Movie (Original Soundtrack)》）。**沒有 Bootleg。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d4b6f7a3-756d-3bcb-a4b4-d89d2a5f16d8&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 0b252c7e（1993-09-21 JP vap VPCG-84206）的逐軌曲目：單片 13 軌，**曲名全部是英文小寫或首字大寫的短詞**——第 1 軌〈outset〉71 秒、第 2 軌〈Theme of PATLABOR 2〉139 秒、第 3 軌〈portent〉63 秒、第 4 軌〈Wyvern〉371 秒、第 5／7 軌〈Unnatural City I〉〈Unnatural City II〉、第 6 軌〈Asia〉282 秒、**第 9 軌〈Outbreak〉617 秒是全碟最長**、第 11 軌〈\"IXTL\"〉370 秒，末軌〈Hallucination〉273 秒。",
+    "src": "https://musicbrainz.org/release/0b252c7e-d38d-44ff-85b9-6a58bb722e19"
+   },
+   {
+    "f": "Apple Music 覆核（兩個端點、六個店面）：川井憲次藝人頁 artistId 76058734 目錄 jp 116／us 84／gb 84／tw 84／hk 84／de 84 筆（**未到 limit=200 截斷值**），**六店的目錄裡都沒有任何 1993 年的 Patlabor 2 條目**；`search` 端點另跑「Patlabor 2」「PATLABOR 2 the Movie」「機動警察パトレイバー2」三組字串、jp 與 us 兩店，回的是 1704589733《WXIII PATLABOR THE MOVIE 3》(2002)、6789530659《EZY》(2026)、以及 Doubtmen／VocaPanda／Solodys／NIYARI計画 的翻奏單曲。**兩個端點都跑過，Apple 上沒有這張碟——連 2021 年 WRWTFWW 那筆數位版也沒有上 Apple。**",
+    "src": "https://itunes.apple.com/search?term=PATLABOR%202%20the%20Movie&country=jp&entity=album&limit=15"
+   },
+   {
+    "f": "日文維基〈機動警察パトレイバー 2 the Movie〉導言：**1993 年 8 月 7 日**公開的日本動畫電影。原聲盤 1993-09-21 比電影**晚 45 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E8%AD%A6%E5%AF%9F%E3%83%91%E3%83%88%E3%83%AC%E3%82%A4%E3%83%90%E3%83%BC2_the_Movie"
+   }
+  ],
+  "hookCandidates": [
+   "十三首曲名全是英文短詞：outset、portent、Wyvern、Asia、Outbreak",
+   "二十八年後，瑞士的 WRWTFWW 一次出了黑膠、CD 與數位三種載體"
+  ],
+  "sound": "MB release 0b252c7e（vap VPCG-84206）記單片 13 軌，MB 未填總長。逐軌長度落差極大：最短的第 3 軌〈portent〉63 秒，最長的第 9 軌〈Outbreak〉617 秒，另有第 4 軌〈Wyvern〉371 秒與第 11 軌〈\"IXTL\"〉370 秒兩首六分鐘級的曲子。曲名以英文短詞排成，〈Unnatural City〉分作 I、II 兩軌放在第 5 與第 7 位。**MB 五筆 release（含 2021 年的黑膠與 CD）軌數一致都是 13，行文寫軌數不必分載體。**",
+  "keyTracks": [
+   "outset",
+   "Wyvern",
+   "Outbreak"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。MB release-group first-release-date 1993-09-21，其下 1993-09-21 JP Official vap VPCG-84206 為原盤，卡單年份 1993 相符、**不是復刻年**。**作品年與原聲帶發行年要分開寫**：電影《機動警察パトレイバー2 the Movie》**1993-08-07** 上映（ja 維基），原聲盤 **1993-09-21** 晚 45 天。1996 年的英國 Demon Soundtracks 版與 2021 年的 WRWTFWW 三種載體都是後來的再發，**不得拿 2021 當發行年**。",
+  "notes": "**unavailable 覆核成立：Apple 上真的沒有。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 76058734 在 jp／us／gb／tw／hk／de 六店各 84–116 筆、**都沒到 limit=200 的截斷線**，六店目錄裡沒有任何 1993 年的 Patlabor 2 條目；`search` 端點另跑三組字串（含日文與英文兩種盤名）、兩個店面，回的全是翻奏單曲與 2002 年的《WXIII》。**值得記的是：MB 上 2021-11-03 WRWTFWW Records 有一筆 Digital Media release，數位版存在，只是沒有上 Apple。**\\n**時序主張要擋一句**：`curatorWhy` 寫「2021 年瑞士的 WRWTFWW Records ⋯是本批少數有近年黑膠再發的一張」——**「本批少數」是跨 23 張的比較，策展層沒有逐張查過**，研究層也無法在單卡範圍內證實或否證。**行文不得寫這種批內稀有度的判斷**；可以寫的是有來源的那一半：MB 記 2021 年 WRWTFWW Records 同時出了 12\" Vinyl（WRWTFWW048LTD）、CD（WRWTFWW048CD）與數位三種載體。\\n**盤名三種寫法**：MB 的 RG 標題是短的《Patlabor 2 the Movie》，1993 原盤與 1996 英國版 release 標題是《PATLABOR 2 the Movie / ORIGINAL SOUNDTRACK \"P2\"》，2021 年 WRWTFWW 的 CD 與數位版又改成《Patlabor 2 - The Movie (Original Soundtrack)》。三種都要進去重。\\n**別碟警示**：策展層已明寫刻意不釘 558ace16《Patlabor 2 The Movie Pre Soundtrack》（1993-08 先行盤，**獨立的 release-group、盤名幾乎相同**，是本卡最強的假陽性）與 2c349f4c《2002 Patlabor 2 The Movie Sound Renewal》（重製）。下游不得改配。"
+ },
+ {
+  "key": "desc4:川井憲次|INNOCENCE O.S.T.",
+  "artist": "川井憲次",
+  "album": "INNOCENCE O.S.T.",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7103a8dc 的欄位：title「INNOCENCE O.S.T.」、artist-credit「川井憲次」（藝人 MBID c50e52e1）、first-release-date 2004-03-03、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，**六筆全部 12 軌**。",
+    "src": "https://musicbrainz.org/release-group/7103a8dc-cb7b-37fc-a9bf-0dd9ceda724d"
+   },
+   {
+    "f": "同一 RG 的 release 明細：2004-03-03 JP Official Victor VICL-61294 CD（同編號另有一筆 Pseudo-Release）；2005 FR Official beez Entertainment BM 1171 CD；**2005-09-13 US Official Bandai Entertainment 25190 CD，標題整個換成《Ghost in the Shell 2: Innocence》**；2014-09-03 JP Official Victor VICL-61294 Digital Media（96.0kHz/24bit，標題改作日文《イノセンス O.S.T.》）；2004 TW Bootleg MIYA RECORDS MICA-0144 CD。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7103a8dc-cb7b-37fc-a9bf-0dd9ceda724d&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release f3164ab6（2004-03-03 JP Victor VICL-61294，Official）的逐軌曲目：單片 12 軌，**其中三軌是〈傀儡謡〉的三個副題**——第 2 軌〈傀儡謡_怨恨みて散る〉220 秒、第 7 軌〈傀儡謡_新世に神集ひて〉312 秒、**第 10 軌〈傀儡謡_陽炎は黄泉に待たむと〉587 秒是全碟最長**；第 8、9 軌是〈THE DOLL HOUSE I〉〈THE DOLL HOUSE II〉；第 11 軌〈遠神恵賜〉只有 33 秒；末軌〈Follow Me〉301 秒。",
+    "src": "https://musicbrainz.org/release/f3164ab6-32f8-4ef7-b01f-9fdf97473c5c"
+   },
+   {
+    "f": "Apple Music jp collectionId 911385018《Innocence Original Soundtrack》：artistName 川井憲次、releaseDate 2004-03-03、copyright「℗ 2004 JVCKENWOOD Victor Entertainment」、trackCount 12，`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲長與 MB 原盤逐位置相符（只有第 6 軌 Apple 作〈煉獄(エトロフ)〉／MB 作〈煉獄〉、第 8、9 軌的羅馬數字寫成阿拉伯數字兩處寫法差異）。**這個 id 只在 jp 命中**，us／gb／tw／hk／de 五個店面回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=911385018&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈イノセンス〉導言：押井守導演的日本劇場動畫，**2004 年 3 月 6 日**於全國東寶洋畫系公開，是他 1995 年《GHOST IN THE SHELL／攻殻機動隊》的續作。原聲盤 2004-03-03 **比電影早 3 天**。同條目另記：本片獲第 25 回日本 SF 大賞，並在第 57 屆坎城影展競賽單元放映。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8E%E3%82%BB%E3%83%B3%E3%82%B9"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡有三軌是同一首〈傀儡謡〉的三個副題，最長那一軌接近十分鐘",
+   "碟先出，片後到——2004 年 3 月 3 日上架，電影 3 月 6 日才公開"
+  ],
+  "sound": "MB release f3164ab6（Victor VICL-61294）記單片 12 軌，MB 未填總長。逐軌長度落差大：第 11 軌〈遠神恵賜〉只有 33 秒，第 10 軌〈傀儡謡_陽炎は黄泉に待たむと〉587 秒。〈傀儡謡〉以三個不同副題出現在第 2、7、10 三個位置，〈THE DOLL HOUSE〉分作 I、II 兩軌相鄰擺在第 8、9 位，日文曲名與全大寫英文曲名交錯排列，終於〈Follow Me〉。",
+  "keyTracks": [
+   "傀儡謡_怨恨みて散る",
+   "River of Crystals",
+   "Follow Me"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2004。MB release-group first-release-date 2004-03-03，其下 2004-03-03 JP Official Victor VICL-61294 為原盤，Apple jp 911385018 的 releaseDate 與 ℗ 年份也都是 2004，三處同年同日，卡單年份 2004 相符。**作品年與原聲帶發行年要分開寫**：電影《イノセンス》**2004-03-06** 上映（ja 維基），原聲盤 **2004-03-03** 早 3 天——**同年，唱片在前**（c-101 第 12 條那個反直覺形狀，本組又一例）。2005 年的法國 beez 版與美國 Bandai 版、2014 年的高解析數位版都是後來的再發。",
+  "notes": "**ready 卡覆核通過，配對正確。** jp 911385018 的 12 軌與 MB 原盤 release f3164ab6 逐軌逐位置相符（曲長逐軌對得上）、12 軌全部有 previewUrl、℗ 年份對上 2004 年的 Victor。**店面覆核**：這個 id **只有 jp 命中**，us／gb／tw／hk／de 五店回 0 筆——下游要落地固定試聽只能走 jp。\\n**盤名跨語言三種寫法**：日本原盤《INNOCENCE O.S.T.》、2014 年高解析版改日文《イノセンス O.S.T.》、**2005 年美國 Bandai Entertainment 版整個換成《Ghost in the Shell 2: Innocence》**（歐美版作品名取代原盤名，c-101 第 7 條 Streets of Rage／Secret of Mana 那個形狀），Apple jp 又用第四種《Innocence Original Soundtrack》。**去重四種都要掃。**\\n**別碟警示**：策展層已明寫刻意不釘 815898d6《攻殻機動隊/オリジナル・サウンドトラック》（1995 前作，**池中已有**）、29728a77《攻殻機動隊2.0 ORIGINAL SOUNDTRACK》（Remix）、1f7118f3《PROJECT2501…》、eef47478《攻殻機動隊 superb music》（精選）。另外池中已有 David Axelrod《Song of Innocence》與 Bobb Trimble《Iron Curtain Innocence》兩張含 Innocence 的卡，**都不是本張**。\\n**掛名**：MB 藝人實體名是日文「川井憲次」，Apple jp／tw／hk 也顯示日文，us／gb／de 店面顯示 Kenji Kawai——那是店面在地化，不是身分（c-101 第 3 條）。"
  }
 ]
