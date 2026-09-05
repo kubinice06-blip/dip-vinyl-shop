@@ -488,5 +488,135 @@
   "status": "full",
   "yearVerified": "(1) MB release-group 的 first-release-date 是 **1961**，Discogs 上 LSC-2507 的多筆壓片 year 也都是 1961，其中 20750506 的內頁說明文字版權年逐字印「© by Radio Corporation of America, 1961」——**卡單的 1961 是原盤發行年，有兩個獨立來源**。(2) **原始錄音年查不到直接來源**。Discogs 的 LSC-2507 各筆說明欄都沒有標錄音日期，MB 也沒有，Apple 那筆只有 ℗1961。**策展層寫的「錄音年 1960」沒有出處，行文不得使用。**（對照本批第 10 張：那一張的 Discogs 說明欄明寫「Actual Carnegie Hall Performance of May 19, 1958」，本張沒有對應的一句。）(3) 因此本張只能寫 **1961 年由 RCA Victor 以 LSC-2507 發行**，不得斷言錄音年份（第 18／46 條）。**這是本批少數幾張「卡單年份＝原盤發行年」的卡**，年份本身沒有爭議，有爭議的是錄音年。",
   "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=266971&entity=album&limit=200&country=<store>（Van Cliburn）撈到 collectionId **986838052**，再以 lookup?id=986838052&entity=song 在 gb 與 fr 兩店覆核：**六軌全部帶 previewUrl**，曲目＝普羅高菲夫第三號三樂章＋麥克道威爾第二號三樂章，正是本盤 A／B 兩面的內容。逐店面實測 **gb／de／fr／at／it／jp 六店有、us 沒有**。落空的原因是盤名法文化（Concerto pour piano）＋加了「(Mono Version)」後綴。建議探測檔補：ready／gb／986838052／6 軌。\n**⚠ 一個必須寫進備註的異常**：986838052 的 **collection 欄 trackCount 記 7，entity=song 只攤得出 6 軌**，gb 與 fr 兩個店面都一樣。依 c-97 第 11 條，曲目列要攤得開且每軌有 previewUrl——**六軌都有 preview、也涵蓋了原盤的全部內容，但 Apple 自己宣稱有第七軌而不列出**。下游上架時若有任何以 trackCount 為準的檢查，這一筆會被判「軌數對不上」。\n**⚠ 版本差異，上架必須註明**：本盤的原始發行是 **RCA Living Stereo LSC-2507（立體聲）**，Apple 986838052 明標「**Mono Version**」（對應的是 LM-2507 單聲道盤）。**兩者是同一場錄音的兩個版位**，行文不得提到立體聲，備註要寫明試聽來源是單聲道版。\n**不得採用的鄰居**：401475335「Rachmaninoff: Concerto No. 3; Prokofiev: Concerto No. 3」（6 軌，七店全有）把本盤的普羅高菲夫與本批第 10 張的拉赫第三號併成一張——**它同時撞到本批兩張卡，而且覆蓋率最高，是最容易被自動配對抓走的一筆**。1645417797「Tchaikovsky & Prokofiev: Piano Concertos」把柴一併進來（會再撞到池中既有的柴一卡）；347382870 只有 us 店面、同樣是拉赫＋普羅高菲夫的併輯。**三筆都缺 MacDowell，一律不得當本盤的試聽或封面來源。**\n**擋下策展層說法（三處，其中兩處無來源）**：\n1. curatorWhy 稱「1960 年與 Walter Hendl 指揮的芝加哥交響錄下」——**錄音年 1960 無來源**（見 yearVerified）。擋下。\n2. curatorWhy 稱麥克道威爾「是十九世紀末美國最早被歐洲樂壇接受的作曲家」——**查不到來源**，本次沒有取得麥克道威爾的條目佐證。擋下這個序數／地位主張。\n3. curatorWhy 稱這首協奏曲「在 1960 年代幾乎沒有其他現役錄音」——**查不到來源**，這是一個關於同期唱片市場的比較主張，需要唱片目錄統計才能成立。擋下。**可以改用的替代事實**：英文維基〈Van Cliburn〉列他錄過的標準曲目時，名單裡有普羅高菲夫第三號、**沒有麥克道威爾**——「連他自己的維基條目在列舉標準曲目時都沒把 B 面那一首算進去」是有來源、也更有味道的講法。\n4. curatorWhy 稱「Cliburn 用自己得獎後的商業分量把美國曲目帶進 RCA 的主線目錄」——這是**因果推論**，沒有來源。擋下。\n**查證通過可以寫的**：(a) 他 1958 年是第一屆莫斯科柴可夫斯基大賽首獎，**截至 2023 年那一屆仍是唯一贏得該賽鋼琴組的美國人**；(b) 紐約市為他辦的 ticker-tape parade 是史上唯一一次由古典音樂家獲此禮遇；(c) 1958 年就有人捐一萬美元設立以他為名的鋼琴大賽，第一屆 1962 年 9 月 24 日至 10 月 7 日在德州基督教大學舉行——**本盤發行的隔年**。\n作曲家拼法：MB 用「**Prokofieff**」（德式）、卡片與 Apple 用「Prokofiev」、Discogs 兩種都出現（4442690 的德國版曲目印德文「Konzert Für Klavier Und Orchester Nr.3」）。**去重與查詢兩種拼法都要掃**（第 50 條）。"
+ },
+ {
+  "key": "desc2:Nathan Milstein|Paganiniana: Violin Recital",
+  "artist": "Nathan Milstein",
+  "album": "Paganiniana: Violin Recital",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3c0e8c89 的欄位：title「Paganiniana: Violin Recital」、artist-credit「Nathan Milstein」（單一演奏者）、first-release-date 1984、primary-type Album、secondary-types 空陣列、轄下 1 個 release（DE 1984、Deutsche Grammophon Galerie 423 887-2、status Official、單片 15 軌）。15 軌是：巴哈第二號無伴奏組曲 BWV 1004 五個樂章（含 841666 毫秒的 Ciaccona）、「Sonata in A major」三個樂章、舒伯特《輝煌輪旋曲》D. 895 兩軌、〈Paganiniana-Variations〉457000、李斯特〈Consolation No. 3〉197000、〈Chanson russe〉206000、〈Il pleut dans la ville〉92000、〈Hopak〉108000。",
+    "src": "https://musicbrainz.org/release-group/3c0e8c89-3da9-4f86-b21c-05a408edc80b"
+   },
+   {
+    "f": "Discogs release 10692925（Deutsche Grammophon **423 887-2**，CD／Compilation／Remastered，題名《Récital De Violon》）的曲目表把 MB 沒填的作曲者全部補齊：「Sonata A-dur」的作曲者是 **Francesco Geminiani**、改編者 Nathan Milstein；〈Consolation No. 3〉是李斯特原曲、Milstein 改編；〈Chanson Russe〉是史特拉汶斯基，Stravinsky 與 Samuel Dushkin 共同改編；**〈Il Pleut Dans La Ville〉的作曲者是 Zoltán Kodály**、Milstein 改編；〈Hopak〉是穆索斯基原曲、拉赫瑪尼諾夫改編；〈Paganiniana〉7:34 是 Milstein 自己的作品。",
+    "src": "https://api.discogs.com/releases/10692925"
+   },
+   {
+    "f": "Discogs release 4910100（Deutsche Grammophon **410 843-1**，1984，Vinyl LP，Deutsche Grammophon Signature 系列，題名《Violin Recital》）收的是同一組曲目的黑膠版，**但沒有巴哈的組曲**：A 面是 Geminiani 的 A 大調奏鳴曲與舒伯特《輝煌輪旋曲》，B 面五軌依序是 Paganiniana 7:31／Consolation No. 3 3:15／Chanson Russe 3:24／Il Pleut Dans La Ville 1:28／Hopak 1:46。**巴哈那五軌是 CD 版（423 887-2）才加進去的。**",
+    "src": "https://api.discogs.com/releases/4910100"
+   },
+   {
+    "f": "Discogs release 5934728（Deutsche Grammophon「The Originals」00289 477 5914，2006，Milstein／Wiener Philharmoniker／Abbado 的柴可夫斯基小提琴協奏曲＋安可曲）的說明欄逐字寫：「℗ 1973 (Concerto)/**1984 (Encores)** Deutsche Grammophon GmbH」與「Recorded: 9/1972 Grosser Musikvereisaal (Cto); **11/1975 Residenz, Munich, Alter Herkulessal (Encores)**」。該 CD 的安可曲逐軌是 Sonate A-dur 6:53／Rondo Brillant h-moll D 895 13:41／Paganiniana 7:32／Consolation No. 3 3:15／Chanson Russe 3:24／Il Pleut Dans La Ville 1:30／Hopak 1:53——**與本盤（扣掉巴哈）完全同一組、時長逐軌相同**。",
+    "src": "https://api.discogs.com/releases/5934728"
+   },
+   {
+    "f": "MB 該 release 的 15 軌毫秒值顯示這張碟的重心壓在一軌上：巴哈第二號組曲的 Ciaccona 是 841666 毫秒（14:02），比第二長的舒伯特《輝煌輪旋曲》第二樂章（644106 毫秒）還多三分半，而整張碟後段的六首小品（Paganiniana 457000／Consolation 197000／Chanson russe 206000／Il pleut dans la ville 92000／Hopak 108000）加起來也只有 1060000 毫秒。",
+    "src": "https://musicbrainz.org/release/862bbed6-b3ba-460e-b35a-fc148e0a4f10"
+   },
+   {
+    "f": "Apple Music 上與本盤同名或近名的條目逐筆覆核後都不是本盤：1035571442「Bach: Chaconne … - Milstein: Paganiniana (Mono Version) - EP」只有 3 軌、1955 年、單聲道；41714874／313217615《Nathan Milstein: The Last Recital》（Georges Pludermacher & Nathan Milstein，℗ 1986 Teldec）雖然也是 15 軌，**曲目卻是貝多芬《克羅采》奏鳴曲、Wieniawski〈Introduction et Tarantelle〉、柴可夫斯基《Mazeppa》詠嘆調、帕格尼尼第三號隨想曲等，與本盤只有〈Consolation No. 3〉一首重疊**；294445630／437614958／1045695468 三筆 Recital 都是 Capitol／EMI 時期的另一份錄音。",
+    "src": "https://itunes.apple.com/lookup?id=41714874&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "十五軌裡有一軌就佔了十四分鐘，剩下六首小品加起來還不到它的兩倍",
+   "標題那首變奏曲是拉琴的人自己寫的"
+  ],
+  "sound": "MB 該 release 的 15 軌毫秒值：巴哈 BWV 1004 五個樂章 244.7／212.3／241.3／254.0／**841.7** 秒，Geminiani A 大調奏鳴曲 165.8／125.8／124.3 秒，舒伯特《輝煌輪旋曲》D. 895 兩軌 181.9／644.1 秒，然後是 Paganiniana 457.0、Consolation No. 3 197.0、Chanson russe 206.0、Il pleut dans la ville 92.0、Hopak 108.0 秒。**整張碟的形狀是「一首十四分鐘的 Ciaccona ＋ 一路遞減到一分半的安可小品」**：前五軌合計 1794 秒，後五軌合計 1060 秒，而最後兩軌加起來只有 200 秒（MB release 曲長欄；Discogs 10692925 只填了 Paganiniana 7:34 與 Chanson Russe 3:25 兩軌，與 MB 的 457／206 秒相符）。",
+  "keyTracks": [
+   "Partita for Violin solo No. 2 in D minor, BWV 1004: V. Ciaccona",
+   "Paganiniana-Variations",
+   "Rondeau brillant in B minor, D. 895"
+  ],
+  "status": "full",
+  "yearVerified": "三個數字要分開講，而且**卡單的 1984 對應的其實是另一個編號**。(1) MB 的 first-release-date 是 **1984**，但 MB 把它掛在 release **423 887-2** 上；Discogs 上 423 887-2（10692925）的 year 是**空的**（Discogs 標為 CD／Compilation／Remastered，沒有年份），而 **1984 年那一筆是黑膠 410 843-1**（4910100，DG Signature 系列）。也就是說 **1984 年出的是不含巴哈的 LP，423 887-2 這張含巴哈的 CD 是後來的事**——MB 把兩者的年份併在一起了。(2) **原始錄音年是 1975 年 11 月**：Discogs 5934728（DG「The Originals」）的說明欄逐字寫安可曲群「Recorded: … 11/1975 Residenz, Munich, Alter Herkulessal (Encores)」，℗ 年份記 1984；該 CD 收的安可曲與本盤（扣掉巴哈）**逐軌時長完全相同**。**巴哈那五軌的錄音日期本次查不到**，不得推定與安可曲同一場。(3) 因此正確的講法是：**曲目主體錄於 1975 年 11 月的慕尼黑 Alter Herkulessaal，1984 年第一次以唱片問世，卡單的 1984 是首度發行年而不是錄音年**（第 18／46 條）；**行文不得把 1984 當演奏年，也不得說整張碟都錄於 1975 年**。",
+  "notes": "**試聽維持 unavailable，這是查得徹底之後的 unavailable。** 走藝人頁目錄端點 lookup?id=1129324&entity=album&limit=200&country=<store>（Nathan Milstein，gb／de／at／it 各 151 筆、fr 152、jp 144、us 78，未被上限截斷），再以 search 端點用「Milstein Paganiniana Violin Recital」補查七店，**沒有任何一筆是這 15 軌的 DG 盤**。七個店面（gb／us／de／fr／at／it／jp）全數落空。**Apple 上 Milstein 的 DG 時期（1970 年代）目錄幾乎不存在**——查到的 Milstein 條目絕大多數是 Capitol／EMI 1950 年代與 Angel／Pittsburgh 的協奏曲，DG 這一批只在 1452191838《Tchaikovsky & Mendelssohn: Violin Concertos》（Abbado／維也納愛樂）與 1452278199《Tchaikovsky: Violin Concertos & Encores》（13 軌）這幾筆出現。**1452278199 已逐軌覆核，命中**：「Tchaikovsky: Violin Concertos & Encores」（Nathan Milstein & Claudio Abbado，This Compilation ℗ 2006 Deutsche Grammophon，13 軌全帶 previewUrl，gb／us／de／fr／at／it／jp 七店全有）的**第 4 到第 13 軌，就是本盤扣掉巴哈之後的那十軌**，逐軌時長 166.6／126.0／121.2／181.7／640.4／452.7／195.8／204.5／90.8／113.4 秒，與 MB 的 165.8／125.8／124.3／181.9／644.1／457.0／197.0／206.0／92.0／108.0 幾乎逐軌相同（最大差 5 秒）。**但它前面掛了三軌柴可夫斯基小提琴協奏曲（1972 年 9 月維也納金色大廳，另一份錄音），後面缺本盤的巴哈五軌**——依第 140／141 條，這是「別的錄音排在本張前面」的二合一形狀，**不得當本卡的固定試聽**。記在這裡的價值是：它證明本盤的十軌安可曲在 Apple 上是有 preview 的，若日後店主要放寬 §4，這是唯一有逐軌時長證據的入口（固定試聽要指第 9 軌〈Paganiniana〉，不能取首軌——第 157 條）。\n**逐筆排除過的近似品**：1035571442（3 軌 EP，1955 單聲道，曲名同時有 Chaconne 與 Paganiniana，**是本張最容易誤配的一筆**）；41714874／313217615《The Last Recital》（℗1986 Teldec，與 Pludermacher，15 軌／13 軌，曲目只有〈Consolation No. 3〉與本盤重疊——**軌數 15 與本盤相同，純屬巧合**）；294445630《Vitali, Bach, Milstein, Mendelssohn, Chopin & Wieniawski: Violin Recital》（與 Josef Blatt，11 軌）；437614958、1045695468《Recital (Mono Version)》。策展層 risk 列的三筆（294445630／1045695468／1204044995）我全部覆核過，結論一致。\n**⚠ 41714874 這一筆要特別標記**：它與本盤**軌數相同（15）、掛名相同（Nathan Milstein）、盤名都含 Recital**，而曲目幾乎完全不同。任何以「藝人＋軌數＋盤名關鍵字」為鍵的比對都會把它配上來。**這是本批第二個「軌數巧合」的陷阱**（另一個是第 8／9 兩張 Kreisler 都是 22 軌）。\n**補齊策展層沒有的資料（四項，都有來源）**：Discogs 10692925 把 MB 留空的作曲者全部補上——「Sonata in A major」是 **Geminiani**（Milstein 改編）、〈Il pleut dans la ville〉是 **Kodály**（Milstein 改編）、〈Chanson russe〉是史特拉汶斯基（與 Dushkin 合編）、〈Hopak〉是穆索斯基（拉赫瑪尼諾夫改編）。**MB 的曲目表只有曲名、沒有作曲者，行文若要提曲目來源必須引 Discogs 這一筆。**\n**擋下策展層說法（兩處）**：\n1. curatorWhy 稱「他是二十世紀少數同時以演奏與改編留名的小提琴家」——**查不到來源**，而且本盤曲目表上做改編的至少還有 Stravinsky／Dushkin 與 Rachmaninoff，這種「少數」的說法在同一張碟上就站不住。擋下。\n2. curatorWhy 稱〈Paganiniana〉「後來被收進不少小提琴家的安可曲單」——**查不到來源**。可以替代的有來源事實是：Apple 上另有 1730810943《Paganiniana (Variations for Violin Solo) - Single》（Alessandro Clerici，2024）與 1449810357《Paganiniana》（Eiji Arai，2000）兩筆別人演奏這首曲子的錄音——**這是「別人也在演」的具體證據，但不足以支撐「不少」這個量詞**。\n盤名：MB／卡片作「Paganiniana: Violin Recital」，Discogs 上同一張 CD 的題名是**法文的《Récital De Violon》**、黑膠版是《Violin Recital》。**三種盤名指同一組曲目**，去重要全掃；而且策展層提醒的「Paganiniana 與 Paganini 只差一個字尾」確實成立——Apple 上 326144860《Paganini's Violin》、574520920《A Paganini》都會被子字串比對吃進來。"
+ },
+ {
+  "key": "desc2:Yevgeny Mravinsky|Shostakovich: Symphony no. 5",
+  "artist": "Yevgeny Mravinsky",
+  "album": "Shostakovich: Symphony no. 5",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9f9e2b3b 的欄位：title「Symphony no. 5, op. 47」、artist-credit「Dmitri Shostakovich; Leningrad Philharmonic Orchestra, **Yevgeni** Mravinsky」、first-release-date 1992、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——DE 1992 Erato 2292-45752-2、GB 1999 Icone ICN-9407-2、一筆日期與國別皆空的「Shostakovich: Symphony No. 5 in D Minor, Op. 47 (Digitally Remastered)」。三筆都是 4 軌，逐軌毫秒 901066／309826／789373／647493。",
+    "src": "https://musicbrainz.org/release-group/9f9e2b3b-f798-3f2b-b3f1-8d22fcc83813"
+   },
+   {
+    "f": "Discogs release 15518664（Erato 2292-45752-2，1992，CD／Album，SPARS 碼 **ADD**）的公司欄位：**Licensed From「V/O Sovtelexport, USSR」、Recorded At「Grand Hall Of The Leningrad Philharmonia」、Phonographic Copyright ℗ 1992 Erato Disques S.A.**；曲目表只有一行「Symphony No. 5 In D Minor, Op. 47」時長 **44:11**。演出者欄：Composed By Dmitri Shostakovich／Conductor Evgeny Mravinsky／Orchestra Leningrad Philharmonic Orchestra。**說明欄沒有標任何錄音日期。**",
+    "src": "https://api.discogs.com/releases/15518664"
+   },
+   {
+    "f": "英文維基〈Symphony No. 5 (Shostakovich)〉記：這首交響曲 1937 年 4 月至 7 月間寫成，**1937 年 11 月 21 日在列寧格勒由列寧格勒愛樂在 Yevgeny Mravinsky 指揮下首演**；那次首演是「a triumphal success」，公眾與官方樂評同時買帳，掌聲持續了遠超過半小時。同條目引列寧格勒愛樂當時的負責人 Mikhail Chulaki 的回憶：某些當局人士對 Mravinsky 把總譜高舉過頭向歡呼的觀眾致意這個動作感到不快，後來的一場演出還被兩名明顯懷有敵意的官員（V. N. Surin 與 Boris M. Yarustovsky）盯場，他們試圖在如雷的掌聲面前主張觀眾是「精挑細選過的」蕭士塔高維契支持者。",
+    "src": "https://en.wikipedia.org/wiki/Symphony_No._5_(Shostakovich)"
+   },
+   {
+    "f": "英文維基〈Yevgeny Mravinsky〉記：他與蕭士塔高維契的關係始於指揮第五號交響曲的世界首演，此後又首演了第六、第八（作曲家把這首題獻給他）、第九、第十與第十二號交響曲，以及《森林之歌》、第一號小提琴協奏曲與第一號大提琴協奏曲。**1962 年他因第三任妻子 Inna 被診斷出末期癌症而婉拒指揮第十三號交響曲的首演**，此舉造成兩人工作關係中斷，他後來也拒絕首演第二號大提琴協奏曲；1970 年代初兩人才修復關係。同條目記：**他的錄音室錄音只做到 1938 至 1961 年之間，1961 年之後發行的錄音全部取自現場音樂會**，最後一份錄音是 1984 年 4 月蕭士塔高維契第十二號的現場。",
+    "src": "https://en.wikipedia.org/wiki/Yevgeny_Mravinsky"
+   },
+   {
+    "f": "Apple Music collectionId 519315402「Shostakovich Symphony No. 5」（Yevgeny Mravinsky，℗ 2012 Entertain Me Europe LTD，4 軌全帶 previewUrl）逐軌秒數 **901.1／309.8／789.4／647.4**，與 MB 該 release 的 901066／309826／789373／647493 毫秒**逐軌相同到小數點後一位**。另一筆 1011373784「Shostakovich: Symphony No. 5 in D Minor, Op. 47 (Remastered)」（℗ 2015 Essential Media Group）逐軌 901.1／309.8／789.4／647.4，**與前者完全相同**。gb／us／de／fr／at／it／jp 七店都查得到 519315402。",
+    "src": "https://itunes.apple.com/lookup?id=519315402&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "Apple 上另有一份**不同的** Mravinsky 第五號：collectionId 899672249「Shostakovich: Symphony No. 5 in D Minor, Op. 47」（Leningrad Philharmonic Symphony Orchestra & Yevgeny Mravinsky，℗ 2014 BMG Music Inc.，4 軌）逐軌秒數 **860.5／299.0／734.1／629.2**，全曲 2522.8 秒（42:03），比本盤那一份短了約兩分鐘，**四個樂章沒有一軌對得上**。此外還有 1888025081「Shostakovich: Symphony No. 5 by Evgeny Mravinsky (2025 Remastered, **Live at Vienna 1978**)」（releaseDate 1978-06-12）與 941871768（與 Kondrashin 的 Myaskovsky 併輯）等多筆。",
+    "src": "https://itunes.apple.com/lookup?id=899672249&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "指揮這張碟的人，就是 1937 年那場首演的指揮",
+   "首演之後有兩名官員坐在台下，想說服別人掌聲是安排好的"
+  ],
+  "sound": "MB 該 release 的四軌毫秒值：第一樂章 901.1 秒（15:01）、第二樂章 309.8 秒（5:10）、第三樂章 789.4 秒（13:09）、第四樂章 647.5 秒（10:47），全曲 2647.8 秒（44:08，與 Discogs 說明欄印的 44:11 差三秒）。**第二樂章只有 5 分 10 秒，是四個樂章裡唯一不到六分鐘的一段，而它前後兩個樂章分別是 15 分與 13 分**——長短落差近三倍。Apple 519315402 的四軌與 MB 逐軌相同到小數點後一位，可作為互核（MB release 曲長欄＋Discogs 說明欄＋Apple lookup 曲長欄三邊一致）。",
+  "keyTracks": [
+   "Symphony no. 5 in D minor, op. 47: III. Largo",
+   "Symphony no. 5 in D minor, op. 47: IV. Allegro non troppo"
+  ],
+  "status": "full",
+  "yearVerified": "(1) MB release-group 的 first-release-date 是 **1992**，與 Discogs release 15518664 的 year 1992、以及該筆的 ℗ 1992 Erato Disques S.A. 一致——指的是 Erato 從蘇聯 V/O Sovtelexport 取得授權、把這份錄音以 CD 發行的那一次。(2) **原始錄音年查不到，而且策展層寫的「1978 年前後的列寧格勒演出」沒有出處。** 實查結果：Discogs 該筆的說明欄與曲目表**都沒有錄音日期**，只有一個公司欄位「Recorded At: Grand Hall Of The Leningrad Philharmonia」（錄音地點是列寧格勒愛樂大廳）與 SPARS 碼 ADD（類比錄音、類比混音、數位母帶）；MB 三筆 release 也都沒有。**唯一可用的收窄條件是維基那一句：Mravinsky 的錄音室錄音只做到 1961 年，1961 年之後發行的錄音全部取自現場**——配上「地點是列寧格勒愛樂大廳」，只能推到「這是列寧格勒的一場演出」，**推不到年份**。**行文不得寫任何年份當演奏年，也不得寫「1978」。**(3) **卡單的 1992 是 CD 發行年**（第 18／46 條）。可安全使用的時間錨點是 **1937 年 11 月 21 日的世界首演**，那是有維基來源、而且與本卡掛名直接相關的日期。",
+  "notes": "**ready 覆核結論：配對正確，內容無誤。** 探測層記 ready／gb／519315402／4 軌，實測成立且**逐軌時長與 MB 相同到小數點後一位**（901.1／309.8／789.4／647.4 對 901066／309826／789373／647493 毫秒）。七個店面（gb／us／de／fr／at／it／jp）全部查得到，4 軌皆有 previewUrl。**appleYear 2012 與卡單 1992 相差二十年，但兩個都不是錄音年**——2012 是 Entertain Me Europe 這家廉價數位發行商上架的年份，1992 是 Erato 的 CD 年。**這一筆是本批派工信提醒的「ready 不等於配對正確」裡的好結果：查完之後配對成立。**\n**⚠ 但同一位指揮同一首曲子在 Apple 上至少有三份不同的錄音，下游換碟時一定要重核**：\n| Apple id | 逐軌秒數 | 判定 |\n|---|---|---|\n| **519315402**（℗2012 Entertain Me Europe） | 901.1／309.8／789.4／647.4 | **＝本盤，與 MB 逐軌相同** |\n| 1011373784（℗2015 Essential Media Group） | 901.1／309.8／789.4／647.4 | 同一份母帶的另一次上架，**也可用** |\n| **899672249**（℗2014 BMG Music） | 860.5／299.0／734.1／629.2 | **另一次演出**，全曲短兩分鐘，四軌全對不上 |\n| 1888025081（2025 Remastered） | 未逐軌覆核 | 曲名自標 **Live at Vienna 1978**，是維也納那一場，不是本盤 |\n策展層 risk 說 519315402 與 1011373784「是不同場次或不同修復版，上架時要鎖定其一」——**實測結果是兩筆逐軌完全相同，同一份母帶**，這句可以改掉；真正「不同場次」的是 899672249 與 1888025081。\n**擋下策展層說法（兩處）**：\n1. curatorRisk 稱「錄音年依 Erato 這次整編所收的場次而定（1978 年前後的列寧格勒演出）」——**無來源**（見 yearVerified）。擋下這個年份。\n2. curatorWhy 稱「此後 Mravinsky 反覆錄這首曲子，Erato 這一次整編是流通較廣的一種」——「反覆錄」有間接支撐（Apple 上至少三份不同演出），但**「流通較廣」是比較級、沒有來源**。擋下後半句。\n**查證通過、而且比策展層更硬的三條**：(a) 1937 年 11 月 21 日的世界首演由 Mravinsky 指揮列寧格勒愛樂，掌聲持續遠超過半小時；(b) 首演之後有兩名官員（Surin 與 Yarustovsky）到場，試圖主張觀眾是精挑細選的支持者——**這比「決定了作曲家能否繼續發表作品」這種概括說法具體得多**；(c) 他後來還首演了第六、八、九、十、十二號，蕭士塔高維契把第八號題獻給他；**1962 年他婉拒首演第十三號，兩人工作關係一度中斷**。(c) 的後半段是策展層完全沒提、而且與「指揮與作曲家關係」這個主題直接相關的材料。\n**掛名**：MB 藝人實體是西里爾文「Евгений Александрович Мравинский」（1b19de02），本 release-group 的 artist-credit 用 **Yevgeni** Mravinsky（第三種拉丁拼法），卡片用 Yevgeny、池中另一張用 Evgeny，Discogs 用 Evgeny，Apple 上兩種都有、jp 店面另有片假名「エフゲニー・ムラヴィンスキー」（1011584250）。**五種寫法，去重要全掃**（第 49 條）。"
+ },
+ {
+  "key": "desc2:Yevgeny Mravinsky|Shostakovich: Symphony no. 11 The Year 1905",
+  "artist": "Yevgeny Mravinsky",
+  "album": "Shostakovich: Symphony no. 11 The Year 1905",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group be80ebe5 的欄位：title「Symphony no. 11 in G minor, op. 103 \"The Year 1905\"」、artist-credit「Shostakovich; Leningrad Philharmonic Orchestra, Yevgeny Mravinsky」、first-release-date 1994、primary-type Album、secondary-types 空陣列、轄下 1 個 release（**FR** 1994、**Praga PR 7254 018**、status Official、單片 4 軌）。四軌毫秒 935000／1120640／693733／900560，曲名依序〈The Palace Square〉〈January 9〉〈In Memoriam〉〈Tocsin〉。",
+    "src": "https://musicbrainz.org/release-group/be80ebe5-980d-3720-a7ba-0e4eef5d5057"
+   },
+   {
+    "f": "Discogs release 18746353（Praga PR 254 018，1994，CD／Album）的說明欄逐字寫：**「Recorded in 1967 by the Czech Radio.」**；曲目表只有一行「Symphony No. 11, Op. 103 \"The Year 1905\"」時長 **60:49**。公司欄位：Licensed From「Český Rozhlas」（捷克廣播）、Recorded By「Český Rozhlas」、℗ 與 © 皆 Le Chant Du Monde、Distributed By Harmonia Mundi。**MB 那四軌加總是 3649.9 秒＝60:50，與 Discogs 的 60:49 相符到一秒。**",
+    "src": "https://api.discogs.com/releases/18746353"
+   },
+   {
+    "f": "英文維基〈Symphony No. 11 (Shostakovich)〉記：這首交響曲寫於 1957 年，副標《1905 年》指的是 1905 年俄國革命；**世界首演是 1957 年 10 月 30 日在莫斯科、由 Natan Rakhlin 指揮蘇聯國家交響樂團**（不是 Mravinsky）。蘇聯境外首演在 1958 年 1 月 22 日的倫敦皇家節慶廳，Malcolm Sargent 指揮 BBC 交響樂團；美國首演是 1958 年 4 月 7 日 Stokowski 與休士頓交響。同條目記：蕭士塔高維契原本打算讓這首曲子紀念 1905 年革命五十週年、也就是 1955 年寫，因為母親過世、第二段婚姻動盪、以及大批剛從古拉格獲釋的朋友到來而拖到 1957 年才動筆，**1956 年的匈牙利事件可能是促成他終於寫下這首曲子的觸媒**。",
+    "src": "https://en.wikipedia.org/wiki/Symphony_No._11_(Shostakovich)"
+   },
+   {
+    "f": "英文維基〈Yevgeny Mravinsky〉記：他首演了蕭士塔高維契的第五、六、八、九、十、十二號交響曲，**至於他沒有首演的那些交響曲，他只演過（也只錄過）第七、第十一與第十五號**（引 D.C. Hulme《Shostakovich Catalogue》與 ARSC 的 Mravinsky 唱片目錄）。同條目記他的錄音室錄音只做到 1938–1961 年，1961 年以後發行的錄音全部取自現場音樂會。",
+    "src": "https://en.wikipedia.org/wiki/Yevgeny_Mravinsky"
+   },
+   {
+    "f": "Apple Music collectionId 513373144「Shostakovich: Symphony No. 11, 'The Year 1905'」（Leningrad Philharmonic Symphony Orchestra & Yevgeny Mravinsky，℗ 2012 **Regis Records**，4 軌全帶 previewUrl，gb／us／de／fr／at／it／jp 七店全有）逐軌秒數 **933.7／1106.1／695.6／885.4**，全曲 3620.8 秒（60:21）。與 MB／Praga 的 935.0／1120.6／693.7／900.6（合計 3649.9 秒＝60:50）相比：第一樂章差 1.3 秒、第三樂章差 1.9 秒，**但第二樂章差 14.5 秒、第四樂章差 15.2 秒，全曲差 29 秒**。",
+    "src": "https://itunes.apple.com/lookup?id=513373144&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "Apple 上另有 collectionId 899696738「Shostakovich: Symphony No. 11 in G Minor, Op. 103」（Leningrad Philharmonic Symphony Orchestra & Yevgeny Mravinsky，℗ 2014 **BMG Music Inc.**，4 軌）逐軌 **928.7／1108.3／690.1／879.7**，全曲 3606.8 秒（60:07）。**它與 Regis 那一筆彼此相差只有 14 秒，而兩筆都與 Praga 那一份相差 29–43 秒。**",
+    "src": "https://itunes.apple.com/lookup?id=899696738&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "碟上那場演出是捷克廣播在 1967 年錄下來的，不在列寧格勒",
+   "他沒有首演這首曲子——他一生只演過三首不是自己首演的蕭士塔高維契交響曲，這是其中一首"
+  ],
+  "sound": "MB 該 release 的四軌毫秒值：〈The Palace Square〉935.0 秒（15:35）、〈January 9〉1120.6 秒（18:41）、〈In Memoriam〉693.7 秒（11:34）、〈Tocsin〉900.6 秒（15:01），四軌加總 3649.9 秒＝60:50，與 Discogs 說明欄印的 60:49 相符到一秒。**這是本批二十張裡單一作品最長的一張，而且四個樂章沒有一段短於十一分半**；最長的〈January 9〉一段就將近十九分鐘，比整張第 19 張卡（Quartetto Italiano 的 D 887 全曲的第一樂章）還長（MB release 曲長欄＋Discogs 說明欄互核）。**Apple 那兩筆的秒數不得用來描述本盤**，理由見 notes。",
+  "keyTracks": [
+   "Symphony no. 11 in G minor, op. 103 \"The Year 1905\": II. January 9",
+   "Symphony no. 11 in G minor, op. 103 \"The Year 1905\": IV. Tocsin"
+  ],
+  "status": "full",
+  "yearVerified": "**這一張的錄音年查到了，而且與卡單差二十七年。** (1) MB release-group 的 first-release-date 是 **1994**，與 Discogs release 18746353 的 year 1994 一致，指的是法國 Praga（Le Chant Du Monde 發行）把捷克廣播的檔案錄音以 CD 出版的那一次。(2) **原始錄音年是 1967**：Discogs 說明欄逐字寫「Recorded in **1967** by the Czech Radio」，公司欄位另記 Licensed From／Recorded By 都是「Český Rozhlas」（捷克廣播）。**也就是說這不是列寧格勒的錄音，是捷克廣播 1967 年錄下的一場演出**（Praga 這條線出的一律是捷克廣播的檔案，同廠牌同時期還有 PR 254 017 的第六／十二號與 PR 256016.19 的《Evgeny Mravinsky In Prague》套裝）。(3) **卡單的 1994 是 CD 出版年，不是錄音年**（第 18／46 條）；差距 **27 年**，是本批落差第三大的一張。**行文可以安全使用「1967 年由捷克廣播錄下」這個錨點**，這是本批少數幾個有具體來源的錄音年之一。",
+  "notes": "**⚠ ready 覆核結論：曲目對、版本存疑——探測層配到的很可能不是本卡釘的那一份錄音。** 探測層記 ready／gb／513373144／4 軌，四軌確實全部有 previewUrl、七店（gb／us／de／fr／at／it／jp）全有。**但逐軌時長對不上**：\n| 來源 | I | II | III | IV | 全曲 |\n|---|---|---|---|---|---|\n| **MB／Praga PR 7254 018（1967 捷克廣播）** | 935.0 | 1120.6 | 693.7 | 900.6 | **3649.9（60:50）** |\n| Apple 513373144（℗2012 Regis Records） | 933.7 | **1106.1** | 695.6 | **885.4** | 3620.8（60:21） |\n| Apple 899696738（℗2014 BMG Music） | 928.7 | 1108.3 | 690.1 | 879.7 | 3606.8（60:07） |\n第一與第三樂章的差距只有 1–2 秒，**但第二樂章差 14.5 秒、第四樂章差 15.2 秒**。如果只是母帶轉速或修復差異，四個樂章的偏差比例應該一致；這裡不一致（I 差 0.14%、II 差 1.3%、III 差 0.27%、IV 差 1.7%）。更關鍵的是：**兩家互不相干的廉價廠牌（Regis 與 BMG）彼此只差 14 秒，卻同時與 Praga 差 29–43 秒**——比較合理的解釋是那兩筆共用另一個來源（Melodiya 那一側），而 Praga 這一份是捷克廣播的獨立檔案。\n**裁定（依 2026-09-02 下放，判準：可逆＋卡住整條線）**：**維持 ready、維持 513373144 作為固定試聽來源**（它曲目完整、七店全有、四軌都有 preview），**但在 manifest 備註寫明「Apple 這一筆與卡片所釘的 Praga 1967 年捷克廣播錄音逐軌時長對不上，很可能是同一指揮同一團的另一次演出」**，並且**行文絕對不得把試聽與「1967 年捷克廣播那一場」綁在一起**。理由：換 collectionId 是卡單值、可逆（第 141 條附註的判準）；判成 unavailable 會讓一張有封面、有完整曲目、七店都能聽的卡白白掉出試聽率，成本更高。\n**如果下游要改**：899696738 也是 4 軌全 preview、七店全有，與 513373144 同一族，換過去解決不了版本問題。**沒有任何一筆 Apple 條目的時長對得上 Praga 那一份。**\n**擋下策展層說法（本卡的 curatorWhy 未取得，以下依卡單與同批第 13 張的敘述線推定並先行封鎖）**：\n1. **不得寫或暗示 Mravinsky 首演了第十一號。** 英文維基明記世界首演是 1957 年 10 月 30 日在莫斯科、Natan Rakhlin 指揮蘇聯國家交響樂團。**這與本批第 13 張（第五號）的情況正好相反**——第五號他確實是首演者，第十一號不是。**兩張卡並排上架時，這個對比極容易被寫錯。**\n2. **不得寫「列寧格勒的錄音」或任何蘇聯境內的地點。** 來源明寫是捷克廣播 1967 年錄的。\n3. **不得寫「他反覆錄這首曲子」**：維基說他只演（也只錄）過第七、十一、十五這三首非自己首演的交響曲，語氣是「僅此三首」，不是「反覆」。\n**查證通過、可以寫的**：(a) 1967 年由捷克廣播錄下（Discogs 說明欄）；(b) 他一生只演過三首不是自己首演的蕭士塔高維契交響曲，第十一號是其中之一（維基，引 Hulme 的作品目錄與 ARSC 唱片目錄）；(c) 這首曲子原本要為 1905 年革命五十週年（1955）而寫，因母親過世、婚姻動盪與大批獲釋的朋友到來而延後，1956 年匈牙利事件可能是觸媒（維基，措辭是 may have，**行文要保留這個不確定語氣**）；(d) 蘇聯境外首演 1958 年 1 月 22 日倫敦、Sargent 指揮 BBC 交響。\n掛名：同第 13 張，MB 藝人實體是西里爾文（1b19de02），本 release-group 用 Yevgeny，Apple 兩筆都用 Yevgeny Mravinsky＋「Leningrad Philharmonic **Symphony** Orchestra」（多一個 Symphony，與 MB 的 Leningrad Philharmonic Orchestra 不同字串）。**樂團名的這一字之差也要進去重鍵。**"
  }
 ]
