@@ -1,0 +1,222 @@
+[
+ {
+  "key": "desc2:Magma|Kobaïa",
+  "artist": "Magma",
+  "album": "Kobaïa",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8d34e575 的欄位：title「Kobaïa」、artist-credit「Magma」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 8 個 release（FR 5、JP 1、XW 2），全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/8d34e575-a50c-3fa5-8728-36381f3b2ac1"
+   },
+   {
+    "f": "該 release-group 底下 1970 年的法國原盤（Philips，編號 6 621 032）是兩張 12\" Vinyl：第一張六軌〈Kobaïa〉10:09、〈Aïna〉6:16、〈Malaria〉4:22、〈Sohïa〉7:42、〈Sckxyss〉2:47、〈Auraë〉10:53；第二張四軌〈Thaud Zaïa〉7:01、〈Naü Ektila〉12:57、〈Stöah〉8:09、〈Mûh〉11:17。",
+    "src": "https://musicbrainz.org/release/31d233c9-a2ac-4eb4-943e-ef02d2d88869"
+   },
+   {
+    "f": "英文維基〈Kobaïa〉：本張最初以《Magma》為名發行，1970 年以雙 LP 形式問世，是法國樂團 Magma 的首張專輯；除了第一首主要以英語演唱之外，全部歌詞都用團員自創的 Kobaïan 語。",
+    "src": "https://en.wikipedia.org/wiki/Koba%C3%AFa"
+   },
+   {
+    "f": "英文維基〈Kobaïa〉：這是一張搖滾歌劇式的概念專輯，講述一群人逃離注定毀滅的地球、到虛構行星 Kobaïa 定居的故事。",
+    "src": "https://en.wikipedia.org/wiki/Koba%C3%AFa"
+   },
+   {
+    "f": "英文維基〈Kobaïa〉：Christian Vander 1960 年從 Chet Baker 手上得到人生第一套鼓；1967 年 John Coltrane 過世後他一度陷入抑鬱，1969 年春天在杜林看日出後決定回巴黎，並在那段只吃檸檬水與米布丁的半年裡寫出〈Malaria〉。",
+    "src": "https://en.wikipedia.org/wiki/Koba%C3%AFa"
+   },
+   {
+    "f": "英文維基〈Kobaïa〉：團員 Klaus Blasquiz 形容 Kobaïan 是「一種心的語言」，它的字詞「與音樂不可分割」；Vander 的說法是法語「不論對故事還是對音樂的聲音都不夠有表現力」。",
+    "src": "https://en.wikipedia.org/wiki/Koba%C3%AFa"
+   },
+   {
+    "f": "英文維基〈Kobaïa〉：為了寫這張碟的材料，樂團在 Vallée de Chevreuse 的一棟房子裡閉關三個月，早上各自練、下午合練；1970 年 4 月 1 日由 Lee Halliday 促成與 Philips 簽約，同月下旬在巴黎 Europa Sonor 錄音室錄音，5 月 6 日結束。",
+    "src": "https://en.wikipedia.org/wiki/Koba%C3%AFa"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1719595176：標題《Kobaïa》、掛名 Magma、10 軌、releaseDate 1970-01-01、collectionExplicitness notExplicit，第 1 軌是〈Kobaïa〉。",
+    "src": "https://music.apple.com/gb/album/1719595176"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有第一首用英語唱，其餘全部是團員自己造出來的語言",
+   "閉關三個月、早上各自練下午合練，寫出來的是一個逃離地球的故事"
+  ],
+  "sound": "雙 LP 十軌，最短的〈Sckxyss〉2:47、最長的〈Naü Ektila〉12:57，第一張的頭尾兩軌都超過十分鐘。歌詞除第一首外全部是 Kobaïan 語。（本欄由 MB 1970 FR 原盤的曲目表與曲長、加上英文維基的語言敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Kobaïa",
+   "Naü Ektila",
+   "Malaria"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1970、英文維基亦記 1970、Apple releaseDate 1970-01-01（年初預設值）。三邊同年，**取 1970，無兩說**。",
+  "notes": "**策展層說法逐條核對**：〈Magma 首張專輯〉有源（英文維基）✔；〈Kobaïan 語與虛構星球敘事的起點〉有源 ✔；〈1970 Philips 雙 LP 6 621 032〉有源（MB release）✔。**未採用**：〈1988 年 Seventh Records 收回全目錄自行再發、本張為 REX IV／REX V〉——MB 該 release-group 底下確有 1988/FR 一筆，但本層回問的 release 資料未取到它的廠牌與編號，**「REX IV／REX V」查無來源，不寫進 facts**；〈池中 Magma 只有兩張〉屬池內盤點，非外部可查證事實，不入 facts。\n**試聽**：`previews.json` 標 ready、`gb:1→1`、collectionId **1719595176**、10 軌，與 MB 1970 原盤逐軌同序同名（第 1 軌兩邊都是〈Kobaïa〉），**本層複核通過、無異議**。注意策展層記的是 Apple **fr** 店面，本層在 **gb** 店面即命中同一個 collectionId，**不必限定 fr**。\n**互斥分派——本張獨占「Kobaïan 語的由來與 Vander 的 Coltrane 前史」這條線**，同批另外三張 Magma 不得重述造語起源。\n**本張禁用**：Theusz Hamtaahk 三部曲的排序（那是《Ẁurdah Ïtah》的）、Jannick Top 與〈De Futura〉（那是《Üdü Wüdü》的）。"
+ },
+ {
+  "key": "desc2:Magma|1001° Centigrades",
+  "artist": "Magma",
+  "album": "1001° Centigrades",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8ee2e6b7 的欄位：title「1.001° Centigrades」（法式千位點寫法）、artist-credit「Magma」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 6 個 release 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/8ee2e6b7-2c8f-367a-ab03-fa54cc70cfaf"
+   },
+   {
+    "f": "該 release-group 底下 1971 年的法國原盤（Philips，編號 6397 031）是單張 12\" Vinyl、只有三軌：〈Rïah Sahïltaahk〉21:45、〈“Iss” Lanseï Doïa〉11:46、〈Ki Ïahl Ö Lïahk〉8:23。",
+    "src": "https://musicbrainz.org/release/459dc4f9-8e76-4b4a-a32d-be90b04fef9f"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉：本張是 Magma 的第二張專輯，1971 年 10 月 5 日發行，是一張講述一次前往 Kobaïa 行星失敗遠征的搖滾歌劇概念專輯。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉：這張碟期間團員異動極大，一度到樂團宣布解散的地步——1970 年底吉他手 Claude Engel 在排練時離團且沒有補人，Alain Charlery 與 Richard Raux 隨後也走，由 Louis Toesca（小號）與 Yochk'o Seffer（薩克斯風、低音單簧管）接替。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉：盤名與封面是製作人 Roland Hilda 對這張碟「唯一真正的貢獻」。樂團原本打算叫《2》或《Magma 2》，Vander 堅持要一個只有樂團標誌的灰色封面、並打算依四大古典元素依序照做；Philips 與 Hilda 都反對，改用一座噴發火山的畫作與這個盤名，極早期的宣傳片仍保留原設計。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉：原版唱片內袋背面印有 Christian Vander 的詩〈Ïtah〉與其法文翻譯，是樂團自己做過的兩份官方 Kobaïan－法文對照之一。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉：Vander 對收錄版本的〈Rïah Sahïltaahk〉並不滿意，但因其他團員覺得可以而作罷；2014 年這首曲子以重錄的獨立專輯《Rïah Sahïltaahk》發行，加了新的器樂段落、並把許多銅管編寫改成女聲合唱。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "英文維基〈1001° Centigrades〉列出的參與者包括 Christian Vander（人聲、鼓、打擊）、Klaus Blasquiz（人聲、打擊）、Teddy Lasry（單簧管、薩克斯風、長笛）、Yochk'o Seffer、Louis Toesca、François Cahen（原音與電鋼琴）、Francis Moze（貝斯），製作人 Roland Hilda、錄音師 Dominique Blanc-Francard。",
+    "src": "https://en.wikipedia.org/wiki/1001%C2%B0_Centigrades"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1719590118：標題《1001° centigrades》（小寫 c）、掛名 Magma、3 軌、releaseDate 1971-01-01、notExplicit，第 1 軌是〈Rïah Sahïltaahk〉。",
+    "src": "https://music.apple.com/gb/album/1719590118"
+   }
+  ],
+  "hookCandidates": [
+   "一張碟只有三首，最短的那首也超過八分鐘",
+   "盤名與封面上的火山，是製作人對這張碟唯一真正的貢獻"
+  ],
+  "sound": "整張三軌，〈Rïah Sahïltaahk〉21:45 佔掉一整面，另外兩軌 11:46 與 8:23。編制含小號、薩克斯風、低音單簧管與原音／電鋼琴。（本欄由 MB 1971 FR 原盤的曲目表與曲長、加上英文維基的參與者名單歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Rïah Sahïltaahk",
+   "“Iss” Lanseï Doïa",
+   "Ki Ïahl Ö Lïahk"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1971、英文維基記 1971 年 10 月 5 日、Apple releaseDate 1971-01-01（年初預設值）。**同年，無兩說，取 1971。**",
+  "notes": "**盤名三種寫法**：MB 的 release-group 與 FR release 作「1.001° Centigrades」、Apple 作「1001° centigrades」、卡片取《1001° Centigrades》。三者指同一張碟，**行文不得把「1.001°」當成另一張**。\n**策展層說法逐條核對**：〈Magma 第二張專輯〉有源 ✔；〈1971 Philips 6397 031〉有源 ✔；〈Teddy Lasry、Louis Toesca 等管樂手掛名〉有源（維基參與者表）✔。**未採用**：〈Kobaïa 敘事三部曲的第二部〉——英文維基只說它是「一次前往 Kobaïa 失敗遠征」的概念作、首軌是《Kobaïa》的 sidequel，**查無「三部曲第二部」的來源，不寫進 facts**；〈1993 年 Seventh Records 以 REX VI 再發、2008 年再以 274 1702 重版〉本層未取到對應 release 的廠牌欄，**無來源，不採用**。\n**試聽**：`previews.json` 標 ready、`gb:1→1`、collectionId **1719590118**、3 軌，與 MB 原盤同序同名（第 1 軌兩邊都是〈Rïah Sahïltaahk〉），**複核通過、無異議**。\n**互斥分派——本張獨占「盤名與封面是製作人硬塞的」與「Vander 對首軌不滿、2014 年重錄成獨立專輯」這兩件事。**\n**本張禁用**：造語起源（《Kobaïa》的）、電影《Tristan et Iseult》（《Ẁurdah Ïtah》的）。"
+ },
+ {
+  "key": "desc2:Magma|Ẁurdah Ïtah",
+  "artist": "Magma",
+  "album": "Ẁurdah Ïtah",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1af65602 的欄位：title「Ẁurdah Ïtah」、artist-credit「Magma」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 8 個 release（FR 5、JP 1、XW 2）全部 Official。",
+    "src": "https://musicbrainz.org/release-group/1af65602-8ccb-37fd-9cd7-6c1f331e5d2c"
+   },
+   {
+    "f": "該 release-group 底下 1974 年的法國原盤標題印的是《Tristan et Yseult》、廠牌 Barclay、編號 80.528，是十二軌的 Vinyl：〈Malawelekaahm (Incantation)〉3:37 起、〈Fur Di Hel Kobaia (Pour la vie éternelle)〉4:55、〈C'est la vie qui les a menés là !〉5:00，末軌〈De Zeuhl Undazir (Vision de la musique céleste)〉2:41；每個 Kobaïan 曲名後面都括號附一個法文題。",
+    "src": "https://musicbrainz.org/release/e869e1ad-1cb2-4651-a404-f09102517c44"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉：本張是 Magma 的第四張錄音室專輯，1974 年 6 月 15 日原以《Tristan et Iseult》之名、掛 Christian Vander 個人作品發行；1989 年 Vander 取回全部舊目錄後，才在自營的 Seventh Records 以本題重新發行，此後一直沿用這個名字。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉：這段曲目的極早期版本名為《Theusz Hamtaahk》，1971 年春天在巴黎 Gibus Club 一場一次性的原音演出上首演；導演 Yvan Lagrange 在場並請求把曲子用進他當時在拍的前衛電影《Tristan et Iseult》(1972)，樂團回絕了。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉：1972 年 1 月 3 日樂團錄了一份 25:53 的 demo，過去的製作人 Laurent Thibault 把這份錄音當禮物交給 Lagrange，Lagrange 未經樂團同意就用進電影裡。Vander 給 Lagrange 的最後通牒是：要嘛提告，要嘛由他出錢讓樂團重錄整段。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉：Lagrange 選了出錢重錄，但他其實沒什麼錢，於是這張碟在 1974 年 4 月 4 日、5 日、8 日三個下午於巴黎 Studio de Milan 趕錄完成，編制縮到只有鼓、貝斯、鋼琴與人聲的四人。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉：本張是 Theusz Hamtaahk 三部曲的**第二部**，前面是只有現場版本的《Theusz Hamtaahk》，後面是《Mëkanïk Dëstruktïẁ Kömmandöh》(1973)；「Ẁurdah Ïtah」的 Kobaïan 語大致可譯作「死去的地球」。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "英文維基〈Ẁurdah Ïtah〉列出的四人是 Stella Vander（人聲）、Klaus Blasquiz（人聲、打擊）、Jannick Top（貝斯）、Christian Vander（鼓、鋼琴、Rhodes、打擊、人聲），製作 Laurent Thibault；新封面用的是 Lagrange 電影的一張劇照。",
+    "src": "https://en.wikipedia.org/wiki/%E1%BA%80urdah_%C3%8Ftah"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1536020260：標題《Wurdah itah (2020 Remastered)》、掛名 Magma、12 軌、releaseDate 1974-05-01、notExplicit，第 1 軌是〈Malawëlëkaahm (2020 Remastered)〉。",
+    "src": "https://music.apple.com/gb/album/1536020260"
+   }
+  ],
+  "hookCandidates": [
+   "電影導演偷用了那份 demo，賠償方式是出錢讓樂團把整段重錄一次",
+   "三個下午、四個人、一台鋼琴一把貝斯，錄完的碟原本連自己的名字都沒有"
+  ],
+  "sound": "十二軌全部短小，最長的〈C'est la vie qui les a menés là !〉5:00、最短的〈Maneh Fur Da Zess〉1:37；編制只有鼓、貝斯、鋼琴與人聲四人。每個 Kobaïan 曲名後面都跟著一個法文題。（本欄由 MB 1974 FR 原盤的曲目表與曲長、加上英文維基的編制敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Malawelekaahm (Incantation)",
+   "Fur Di Hel Kobaia (Pour la vie éternelle)",
+   "De Zeuhl Undazir (Vision de la musique céleste)"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1974、英文維基記 1974 年 6 月 15 日、Apple releaseDate 1974-05-01。**都是 1974，無兩說。**（Apple 的 5 月 1 日與維基的 6 月 15 日差一個半月，依裁定第 77 條 Apple 日期只當訊號。）",
+  "notes": "**盤名／原題兩種拼法**：MB 的 1974 原盤 release 標題作《Tristan et **Yseult**》，英文維基作《Tristan et **Iseult**》。**兩種拼法都要進 queryAlias**，行文若提到電影名，寫「Tristan et Iseult（原盤印作 Tristan et Yseult）」較安全，或乾脆只寫「那部電影」。\n**⚠ 擋下策展層一處錯誤**：`curatorWhy` 寫「它也是《Mëkanïk Dëstruktïw Kömmandöh》敘事的第一部（三部曲的時序起點）」——英文維基明講本張是 Theusz Hamtaahk 三部曲的**第二部**，前面還有一段只有現場版的《Theusz Hamtaahk》、後面才是 MDK。**策展層的「第一部／時序起點」說法與來源相反，不採用，行文一律不得寫「三部曲的起點」。**\n**另一處未採用**：〈1989 年 Seventh Records 再發編號 REX IX〉——維基只說 1989 年在 Seventh Records 再發，**編號 REX IX 查無來源，不寫進 facts**。\n**掛名兩說**：維基說原盤是掛 Christian Vander 個人名義發行，MB 的 artist-credit 是 Magma。**行文不得斷言 1974 年原盤掛的是 Magma。**\n**試聽**：`previews.json` 標 ready、`gb:2→1`、collectionId **1536020260**、12 軌，與 MB 原盤同序（第 1 軌兩邊都是〈Malawelekaahm〉），但**這是 2020 Remastered 版**，下游備註要寫明。**複核通過、無異議。**\n**互斥分派——本張獨占「電影、demo 被盜用、三個下午重錄」這條線。**\n**本張禁用**：造語起源（《Kobaïa》）、火山封面（《1001° Centigrades》）、〈De Futura〉（《Üdü Wüdü》）。"
+ },
+ {
+  "key": "desc2:Magma|Üdü Wüdü",
+  "artist": "Magma",
+  "album": "Üdü Wüdü",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ffb5a527 的欄位：title「Üdü Ẁüdü」（第二個 W 帶重音）、artist-credit「Magma」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 13 個 release（FR 6、GB 3、JP 2、US 1、XW 1）全部 Official。",
+    "src": "https://musicbrainz.org/release-group/ffb5a527-3d9a-3933-a5d6-01139ecc6638"
+   },
+   {
+    "f": "該 release-group 底下 1976 年的法國原盤標題作《Üdü Wüdü》（一般 W）、廠牌 Utopia、編號 BUL 1-1730，是六軌的 12\" Vinyl：〈Üdü Wüdü〉4:10、〈Weïdorje〉4:30、〈Tröller Tanz (Ghost Dance)〉3:40、〈Soleil D'Ork (Ork' Sun)〉3:50、〈Zombies (Ghost Dance)〉4:10、〈De futura〉18:00。",
+    "src": "https://musicbrainz.org/release/7c3dc233-35fa-402a-9900-403ca4d4474b"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：本張是 Magma 的第六張錄音室專輯，1976 年 9 月 10 日發行，實質上是主唱兼鼓手 Christian Vander 與貝斯手 Jannick Top 的合作專輯。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：與 Magma 先前的專輯不同，本張不繞著單一敘事走，而是 Vander 與 Top 各自材料的片段合集；例外是〈Ẁeïdorje〉，那首由 Bernard Paganotti 與主唱 Klaus Blasquiz 寫。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：這張碟的預告宣傳一度把演出者列為「VanderTop」；Top 的材料寫的是「Ork」這顆行星、關於機械般的人，與 Vander 的 Kobaïan 敘事無關。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：本張首刷用的是臨時封套，因為 Klaus Blasquiz 的封面畫沒趕上，該畫作出現在其後所有版本上。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：這是樂團「第二循環」的最後一張——1976 年 7 月 24 日 Castellet 音樂節演出後多位自 1972 年起參與的樂手陸續離開，Paganotti 與鍵盤手 Patrick Gauthier 組了 Weidorje，Top 與現場常客小提琴手 Didier Lockwood 也走，Magma 於 1976 年 12 月 10 日正式解散。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "英文維基〈Üdü Ẁüdü〉：Jannick Top 在 2001 年的個人首張《Soleil d'Ork》裡把〈Soleil d'Ork〉與〈De Futura〉重錄了一次；工業嘻哈團 Death Grips 在首張混音帶《Exmilitary》的〈Known for It〉裡取樣了〈De Futura〉。",
+    "src": "https://en.wikipedia.org/wiki/%C3%9Cd%C3%BC_%E1%BA%80%C3%BCd%C3%BC"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1541002705：標題《Üdü wüdü (2020 Remastered Version)》、掛名 Magma、7 軌、releaseDate 1976-05-02、notExplicit。軌數比 MB 的 1976 原盤多一軌。",
+    "src": "https://music.apple.com/gb/album/1541002705"
+   }
+  ],
+  "hookCandidates": [
+   "六首裡有一首十八分鐘，剩下五首加起來還不到它長",
+   "首刷封套是臨時湊的，因為團員的封面畫沒趕上"
+  ],
+  "sound": "六軌裡前五首都落在 3:40 到 4:30 之間，末軌〈De futura〉18:00 獨佔一面。編制以 Vander 與貝斯手 Jannick Top 為主軸。（本欄由 MB 1976 FR 原盤的曲目表與曲長、加上英文維基的合作敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "De futura",
+   "Üdü Wüdü",
+   "Soleil D'Ork (Ork' Sun)"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1976、英文維基記 1976 年 9 月 10 日、Apple releaseDate 1976-05-02。**都是 1976，無兩說**；Apple 的 5 月 2 日與維基的 9 月 10 日差四個月，依裁定第 77 條 Apple 日期只當訊號。",
+  "notes": "**盤名三種寫法**：MB release-group 作「Üdü Ẁüdü」、1976 FR 原盤 release 作「Üdü Wüdü」、卡片取原盤形。依裁定第 91 條 RG 標題與卡片盤名不等不算錯。\n**策展層說法逐條核對**：〈1976 Utopia BUL 1-1730〉有源 ✔；〈Jannick Top 的〈De Futura〉佔整個 B 面〉——MB 記該軌 18:00、且是六軌中的末軌，維基記本張是 Vander 與 Top 的合作專輯，**「佔整個 B 面」本身沒有直接來源，改寫成「18:00 的末軌」入 facts**。**未採用**：〈隔年美國 Tomato TOM-6001 發行，是樂團第一次同時在法美兩地正式流通的一張〉——MB 轄下確有一筆 1977/US，但本層未取到它的廠牌與編號，**「Tomato TOM-6001」與「第一次法美同時流通」都查無來源，不寫進 facts**。\n**試聽**：`previews.json` 標 ready、`gb:3→3`、collectionId **1541002705**、**7 軌**，比 MB 1976 原盤的 6 軌多一軌（維基提到 2020 重製版含 bonus track〈Ëmëhntëhtt-Ré (extrait no. 2)〉）。**版本是 2020 Remastered，不是 1976 原盤，下游備註必須寫明**；曲序前段與原盤一致。**複核通過，但標明版本差異。**\n**互斥分派——本張獨占「Vander 與 Top 的合作／第二循環結束／樂團 1976 年 12 月解散」這條線。**\n**本張禁用**：造語起源、三部曲排序、火山封面（分屬另外三張）。"
+ }
+]

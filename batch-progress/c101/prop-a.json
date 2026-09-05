@@ -1,0 +1,201 @@
+[
+ {
+  "artist": "植松伸夫",
+  "album": "ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン",
+  "year": 1991,
+  "genres": [
+   "electronic"
+  ],
+  "label": "SQUARE BRAND（catno N23D-001，1991-06-14 JP；1994 Squaresoft PSCN-5014 再發）",
+  "why": "植松伸夫在 Square 的第一張跨出「遊戲附屬品」的原聲盤：1991 年 6 月 14 日隨 Super Famicom 版《ファイナルファンタジーIV》發行，SQUARE BRAND 編號 N23D-001（CD）與 N20T-001（卡帶）同日並行，44 軌單片。它是 FF 系列從 8 位元進到 SNES 音源之後的第一份完整曲集，也是植松目錄裡最早被美國市場接走的一張——2001 年 TOKYOPOP Soundtrax 以 TPCD 0210-2 在美發行 45 軌版。實掃 seed_cards.json 全 14,424 列，`植松伸夫` 與羅馬拼音 `Nobuo Uematsu` 兩種寫法都查過，池中命中 0 張（第 5504／5777 列的 `植松孝夫` 是同姓的爵士薩克斯風手，不是同一人）；整個遊戲原聲品類池中亦近乎不存在，唯一沾邊的 Disasterpeace《It Follows》是電影配樂。這張與同批的 FF VI／VII／IX 一起，是這位作曲家在池中的第一組卡。",
+  "risk": "盤名有日文與英文兩套：MB release-group 用日文《ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン》，Apple 用《FINAL FANTASY IV (Original Soundtrack)》，兩種寫法在任何字串正規化下都不相等，撞卡與去重都要各掃一次（裁定第 49 條）。羅馬拼音盤名 Final Fantasy IV Original Sound Version 已寫進 queryAlias。店面序 GAME：Apple jp collectionId 61052896（掛名 `植松伸夫`、releaseDate 1991-06-14，與 MB 原盤日期一致）；同一 collectionId 在 us 店面掛名轉成 `Nobuo Uematsu`，兩邊都命中，取 jp。注意同名別碟：Apple 另有 365460760《FINAL FANTASY IV (DS Version)》，是 2007 年 DS 重製的重錄音源，不是本盤。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group ddc91d7a-5201-3d83-abb6-b101c1a020c5。回問 release-group/<id>?inc=artist-credits+releases 確認：title「ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」、first-release-date 1991-06-14、primary-type Album、secondary-types [Soundtrack]（依 §5.6 primary=Album 照一般 Album 寫法，例外欄位留空）、轄下 15 個 release（1991-06-14 JP/Official ×2、1994-11-26 JP/Official、2001-08-21 US/Official、2004-10-01 JP/Official、2005-05-10 US/Official、2013-07-03 JP/Official 與 Withdrawn 各一、2014 JP/Official，另有 1999 TW/Bootleg 與數筆 Pseudo-Release）。刻意不釘：8209b1c1-585f-34f0-bf2a-6c25f8e3711d《Piano Collections: Final Fantasy IV》（1992 鋼琴編曲盤，非原聲）、46236034-52b3-3000-8d58-324a350eed83《Final Fantasy IV: Celtic Moon》（1991 塞爾特編曲盤，非原聲）、a93a2d2c-c148-46df-b08a-ced7a540e5ed《FINAL FANTASY IV -Song of Heroes-》（2021 編曲盤）、81b5e11f-6013-4432-b758-b5ee59dbb5dc《FINAL FANTASY IV ORIGINAL SOUNDTRACK REVIVAL DISC》（2018 Blu-ray 復刻，非原盤）、f11d4032-1bbb-489d-b704-49cc9dd73639《FINAL FANTASY IV PIXEL REMASTER Original Soundtrack》（2021 重製版重錄，非原盤）、a8cf2b6e-0bc1-36d8-a07b-e2e08f48faf4《ファイナルファンタジーIV — MINIMUM ALBUM —》（1991 EP）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5，名下 235 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列，非 25 筆上限）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nobuo Uematsu；Final Fantasy IV Original Sound Version；FINAL FANTASY IV (Original Soundtrack)；ファイナルファンタジーIV",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "植松伸夫",
+  "album": "ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン",
+  "year": 1994,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "NTT出版／Squaresoft（catno PSCN-5001〜5003，1994-03-25 JP 三片組）",
+  "why": "植松伸夫在 SNES 音源上的收尾之作，也是他目錄裡篇幅最大的一份：1994 年 3 月 25 日由 NTT出版／Squaresoft 以三片組發行，編號 PSCN-5001／5002／5003，三片分別 25、20、16 軌，共 61 軌。同年 12 月 Squaresoft 以 SQ108 在美國發行同一套三片，2004 年 NTT出版 又以 NTCP-5001〜5003 重出，2005 年 SQUARE ENIX 轉成數位版 SEMO-00007〜00009。這是 FF 系列在 8／16 位元世代的目錄終點，位置與次年由光田康典接手的《クロノ・トリガー》相鄰。實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法（`植松伸夫`／`Nobuo Uematsu`）都查過，池中 0 張。",
+  "risk": "盤名三種寫法：MB 作《ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン》（半形冒號）、Apple 作《FINAL FANTASY VI (Original Soundtrack)》、北美 1994 年盤面印 Final Fantasy VI Original Sound Version；三種都要掃（裁定第 49 條）。冒號為 ASCII 半形，不觸發 chk-prop 的非 ASCII 連字號檢查。店面序 GAME：Apple jp collectionId 62447175（掛名 `植松伸夫`、releaseDate 1994-03-25，與 MB 一致），us 店面同一 collectionId 掛 `Nobuo Uematsu`，兩邊都命中，取 jp。CAA release-group 端點 200。MB 的 secondary-types 含 Soundtrack，依 §5.6 不填例外欄位。",
+  "mbNote": "釘 release-group 89bddb55-5e9f-3b4c-b5cd-630c7265324a。回問確認：title「ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン」、artist-credit「植松伸夫」、first-release-date 1994-03-25、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1994-03-25 JP/Official、1994-12-01 US/Official、2004-10-01 JP/Official、2005-05-10 US/Official、2013-09-04 JP/Official、另有 TW/Bootleg 與 Pseudo-Release 數筆）。刻意不釘：21498594-e906-3572-82e0-c900408f6ae6《Piano Collections: Final Fantasy VI》（1994 鋼琴編曲盤，非原聲）、8e1e4a10-b7c2-333f-8550-ee7bf7aa135e《Final Fantasy VI: Grand Finale》（1994 管弦編曲盤，非原聲）、91814916-a02b-4716-b3f7-3d26a294b149《FINAL FANTASY VI ORIGINAL SOUNDTRACK REVIVAL DISC》（2019 Blu-ray 復刻，非原盤）、c6f5a22a-09ce-4b79-b54a-284e917024d6《FINAL FANTASY VI PIXEL REMASTER Original Soundtrack》（2022 重製版重錄，非原盤）、40e07cfb-5d8a-36a7-a3df-7ece4ad584d6《Final Fantasy VI STARS ☆ Volume 1》與 a28475d6-5ec6-33a2-beea-278e8d7319a5《Volume 2》（1994 EP）、31282312-db92-38cd-93d7-87b512fab4ef《Music From FFV and FFVI Video Games》（1999 合輯）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nobuo Uematsu；Final Fantasy VI Original Sound Version；FINAL FANTASY VI (Original Soundtrack)；ファイナルファンタジーVI",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "植松伸夫",
+  "album": "Final Fantasy VII: Original Soundtrack",
+  "year": 1997,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "DigiCube（catno SSCX-10003，1997-02-10 JP 四片組）",
+  "why": "植松伸夫目錄裡流通最廣的一張，也是 Square 自營通路 DigiCube 的旗艦品項：1997 年 2 月 10 日發行，編號 SSCX-10003（同日另有 SSCX-10004 一筆），四片 23／21／23／18 軌，共 85 軌。2004 年 5 月 10 日 SQUARE ENIX 以 SQEX-10001〜10004 重出，2005 年轉數位。這是 FF 系列第一次進到 PlayStation 的取樣音源，位置在 SNES 世代的《FF VI》與 2000 年《FF IX》之間。原盤之後的黑膠化由 Square Enix 自家做：2012 年《FINAL FANTASY VINYLS》盒（079662ba）與 2022 年《Final Fantasy VII Compilation Vinyl》（7a1a51a6）都收本作曲目。實掃 seed_cards.json 全 14,424 列，`植松伸夫` 與 `Nobuo Uematsu` 兩種寫法皆 0 命中。",
+  "risk": "盤名兩套：MB 用英文《Final Fantasy VII: Original Soundtrack》，日本原盤封面印《ファイナルファンタジーVII オリジナル・サウンドトラック》，Apple 作《FINAL FANTASY VII (Original Soundtrack)》；三種都要掃（裁定第 49 條）。店面序 GAME：Apple jp collectionId 61018952（掛名 `植松伸夫`、releaseDate 1997-02-10，與 MB 原盤日期完全一致）；us 店面同一 collectionId 掛 `Nobuo Uematsu`，兩邊都命中，取 jp。MB 轄下 TW/Bootleg 有四筆（1997／1999／2003），是台灣早年翻版，不得誤取為 release 證據。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 7fab854c-8d2f-31f3-aa82-ad7cbf7532eb。回問確認：title「Final Fantasy VII: Original Soundtrack」、artist-credit「植松伸夫」、first-release-date 1997-02-10、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1997-02-10 JP/Official ×2、2004-05-10 JP/Official、2005-05-10 Official、2013-12-11 JP/Official、2015-07-01 JP/Official、XW/Official，另 TW/Bootleg ×4 與 Pseudo-Release ×2）。刻意不釘：92ecf836-5e3d-381c-94d9-b3c2b57ea870《Piano Collections: Final Fantasy VII》（2003 鋼琴編曲盤，非原聲）、84ba03ac-6ed2-41a1-ad83-236975dc047b《FINAL FANTASY VII / Reunion Tracks》（1997 編曲盤）、7780fc85-7213-478d-a869-f9ef21e3ef6b《FINAL FANTASY VII ORIGINAL SOUNDTRACK REVIVAL DISC》（2019 Blu-ray 復刻，非原盤）、92eabe3d-767a-4ef5-914e-16ee67c71b3e《FINAL FANTASY VII -Chiptune Arrangement Tracks-》（2024 編曲盤）、635f832c-d726-42bc-b4c8-382c8a40f636《SQUARE ENIX JAZZ -FINAL FANTASY VII-》（2020 爵士編曲盤）、7a1a51a6-7fbf-48e5-a15a-8d27896bf281《Final Fantasy VII Compilation Vinyl》（2022 黑膠選輯，非原盤）、24b29513-db10-3967-bf06-65faa53dab49《FINAL FANTASY VII ADVENT CHILDREN Original Soundtrack》（2005 電影原聲，另一部作品）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nobuo Uematsu；ファイナルファンタジーVII オリジナル・サウンドトラック；FINAL FANTASY VII (Original Soundtrack)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "植松伸夫",
+  "album": "FINAL FANTASY IX Original Soundtrack",
+  "year": 2000,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "DigiCube（catno SSCX-10043〜10046，2000-08-30 JP 四片組）",
+  "why": "植松伸夫個人單掛的最後一份大型 FF 原聲：2000 年 8 月 30 日由 DigiCube 以四片組發行，編號 SSCX-10043〜10046，四片 32／26／26／26 軌共 110 軌，是他名下軌數最多的一張。次年的《FINAL FANTASY X》原聲已改成與浜渦正志、仲野順也三人共作（Apple 該盤掛名即為三人並列），因此這張是「植松一人寫完一整部 FF」的終點。2004 年 5 月 10 日 SQUARE ENIX 以 SQEX-10009〜10012 重出，同日發數位版。實掃 seed_cards.json 全 14,424 列，`植松伸夫` 與 `Nobuo Uematsu` 兩種寫法皆 0 命中。",
+  "risk": "盤名兩套：MB 與 Apple 都用英文，日本原盤封面另印《ファイナルファンタジーIX オリジナル・サウンドトラック》，兩種都要掃。店面序 GAME：Apple jp collectionId 75003561（掛名 `植松伸夫`），us 店面則是另一個 collectionId 62444522（掛名 `Nobuo Uematsu`）——**同一張碟在兩個店面有兩個不同的 collectionId**，寫入時要記明用的是哪一個（本卡取 jp 的 75003561）。兩筆 Apple releaseDate 都記 2004-05-10（＝ SQUARE ENIX 再發日），與 MB 原盤 2000-08-30 差近四年，依裁定第 77 條 Apple 日期只當訊號不當版本門檻；年份取 MB 原盤。另有 33b0179f-1c00-3e86-b832-1285c8a1ec69《FINAL FANTASY IX Original Soundtrack PLUS》（2000-12-06）是加曲的姊妹盤，盤名只多一個字，是本張最像的假陽性。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group d072b8eb-4047-3abf-8c67-a9afddfbbafa。回問確認：title「FINAL FANTASY IX Original Soundtrack」、artist-credit「植松伸夫」、first-release-date 2000-08-30、primary-type Album、secondary-types [Soundtrack]、轄下 12 個 release（2000-08-30 JP/Official ×2、2004-05-10 JP/Official 與 Pseudo-Release 各一、2004-05-10 Official、XW/Official ×2，另 TW/Bootleg ×2 與 Pseudo-Release ×3）。刻意不釘：33b0179f-1c00-3e86-b832-1285c8a1ec69《FINAL FANTASY IX Original Soundtrack PLUS》（2000 加曲盤，非本盤）、c3cc08c9-a534-3cac-98a3-5859d9438556《Piano Collections: Final Fantasy IX》（2001 鋼琴編曲盤，非原聲）、e24ed909-7757-38c4-822d-339dd19491b4《Uematsu's Best Selection: Music from the FINAL FANTASY IX Video Game》（2000 精選）、761c4816-123c-4e3b-9f05-97827566044e《FINAL FANTASY IX ORIGINAL SOUNDTRACK REVIVAL DISC》（2020 Blu-ray 復刻，非原盤）、82120017-fe8e-41a3-86bb-32e9a7cec839《FINAL FANTASY IX -Chiptune Arrangement Tracks-》（2025 編曲盤）、b7ac8000-6e4d-4853-95fe-21bd146ca28b《FINAL FANTASY IX 25th Anniversary Vinyl - Timeless Tale -》（2025 黑膠選輯，非原盤）。藝人 MBID 92bb085a-2924-4479-b627-181a1835d2f5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nobuo Uematsu；ファイナルファンタジーIX オリジナル・サウンドトラック；FINAL FANTASY IX (Original Soundtrack)",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "近藤浩治",
+  "album": "スーパーマリオ64 オリジナルサウンドトラック",
+  "year": 1996,
+  "genres": [
+   "electronic",
+   "jazz"
+  ],
+  "label": "NINTENDO64 Sound Series／Pony Canyon（catno PCCG-00357，1996-07-19 JP）",
+  "why": "近藤浩治從 Famicom 世代跨進 N64 之後的第一張原聲盤，1996 年 7 月 19 日以 NINTENDO64 Sound Series 的第一號品項發行，Pony Canyon 編號 PCCG-00357，單片 36 軌。同年 11 月任天堂美國分公司自行在北美發行 CD 與卡帶各一版（無編號，屬 Nintendo of America 自營通路，不走一般唱片零售）。近藤是任天堂體制內作曲家，他的碟幾乎全部只在任天堂或其代理的通路出現、也幾乎沒有進到串流，這正是這條線在卡池中完全缺席的原因。實掃 seed_cards.json 全 14,424 列，`近藤浩治`、`Koji Kondo`、`Super Mario`、`Zelda`、`Nintendo` 全部零命中（第 9994 列的 `Toshinori Kondo / DJ Krush` 是另一位近藤，小號手）。",
+  "risk": "掛名與盤名都要日文／羅馬拼音兩查：`近藤浩治`／`Koji Kondo`、《スーパーマリオ64 オリジナルサウンドトラック》／《Super Mario 64 Original Soundtrack》（裁定第 49 條）。**Apple 無此碟**：jp 與 us 兩個店面用 `近藤浩治 スーパーマリオ64` 都只回到第三方管弦翻奏單曲（1622682646 ブラッドソン・ロペス），沒有任何官方條目——任天堂本體的遊戲原聲至今未上 Apple Music，這是店面覆蓋率問題不是比對問題（裁定第 152 條的分界）。因此固定試聽預估 unavailable、封面必須走 CAA。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group cc4e6e38-e13b-3426-8e0f-1edceb2ada60。回問確認：title「スーパーマリオ64 オリジナルサウンドトラック」、artist-credit「近藤浩治」、first-release-date 1996-07-19、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（1996-07-19 JP/Official＝Pony Canyon PCCG-00357／36 軌、1996-11 US/Official CD、1996 US/Official 卡帶、1997 DE/Promotion）。刻意不釘：39940047-f68e-499a-9d15-e6bd6942b830《Super Mario 64 DS》（2005 重製版）、6bc3131d-094c-4dcd-9bb8-93ba224e9915《Original Cuts From the Hottest Nintendo 64 Games: Super Mario 64 & Wave Race 64》（1996 促銷合輯）、2bc62c09-33c0-43f0-8287-aed90c1b0b70《スーパーマリオ64》（2024，primary-type Other）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402，名下 90 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Koji Kondo；Super Mario 64 Original Soundtrack；スーパーマリオ64",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "近藤浩治",
+  "album": "ゼルダの伝説 時のオカリナ オリジナルサウンドトラック",
+  "year": 1998,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "NINTENDO64 Sound Series／Pony Canyon（catno PCCG-00475，1998-12-18 JP，82 軌）；美國版 1998-11 由 Nintendo of America 自營發行（35 軌）",
+  "why": "近藤浩治目錄裡篇幅最大的一份，也是他從 Famicom 短曲循環轉向長篇場景音樂的分界：日本版 1998 年 12 月 18 日由 Pony Canyon 的 NINTENDO64 Sound Series 以 PCCG-00475 發行，單片 82 軌；北美版早一個月由 Nintendo of America 自營發行 35 軌版，另有 Bensussen Deutsch & Associates 的 24 軌預購贈品（barcode 617885700026）。同一張碟在日美兩地曲數與發行方都不同，是任天堂自營通路的典型形狀。實掃 seed_cards.json 全 14,424 列，`近藤浩治`／`Koji Kondo`／`Zelda`／`ゼルダ` 全部零命中；池中在本批之前沒有任何任天堂作曲家的卡。",
+  "risk": "盤名日文／羅馬拼音兩套：《ゼルダの伝説 時のオカリナ オリジナルサウンドトラック》／《The Legend of Zelda: Ocarina of Time Original Soundtrack》，兩種都要掃（裁定第 49 條）。**Apple 無官方條目**：jp 與 us 用日文與英文盤名各搜一次，只回到第三方翻奏（1638421073 ブラッドソン・ロペス）與粉絲致敬輯（1444734643 Various Artists《ヒーロー・オブ・タイム》），任天堂原盤未上架；固定試聽預估 unavailable。封面走 CAA，release-group 端點 200（實測）。年份取 MB first-release-date 1998-11（美國版先出），日本版 1998-12-18；兩個日期都在同一年，不影響 year 欄。",
+  "mbNote": "釘 release-group 61fb70ad-198e-4cae-9107-03f28e7abe29。回問確認：title「ゼルダの伝説 時のオカリナ オリジナルサウンドトラック」、artist-credit「近藤浩治」、first-release-date 1998-11、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（1998-11 US/Official、1998-12-18 JP/Official＝Pony Canyon PCCG-00475／82 軌、1998 US/Official ×2、1998 DE/Promotion，另 Bootleg ×2 與 Pseudo-Release ×1）。刻意不釘：00bc7e74-d0e5-4268-8a21-7263c7bb52da《ゼルダの伝説 ～時のオカリナ～ ハイラル・シンフォニー》（1999 管弦編曲盤，非原聲）、13d08e63-b199-3668-8f11-d75fb47b0913《ゼルダの伝説 時のオカリナ リアレンジ・アルバム》（1999 編曲盤）、3c53bdc8-efa3-4d80-bce9-64600ad45da5《ゼルダの伝説 時のオカリナ 3D オリジナル サウンドトラック》（2011 重製版，非原盤）、8ba3459a-de56-4e51-86b5-b79768088220《The Legend of Zelda: Ocarina of Time, Volume II - The Lost Tracks》（1999，secondary-types 含 Remix）、eb30a8cf-587d-4737-81ab-0be91b7c31ab《Hyrule: Music From the Original the Legend of Zelda Ocarina of Time Soundtrack》（1998 EP/Remix）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Koji Kondo；The Legend of Zelda: Ocarina of Time Original Soundtrack；ゼルダの伝説 時のオカリナ",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "近藤浩治",
+  "album": "ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック",
+  "year": 2000,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Pioneer LDC（catno PICA-2006，2000-06-23 JP 兩片組，59＋53 軌）",
+  "why": "近藤浩治在 N64 上的第二張塞爾達原聲，也是他少數不由 Pony Canyon 而由 Pioneer LDC 發行的一張：2000 年 6 月 23 日以 PICA-2006 兩片組發行，59 與 53 軌；同一編號後來在 Geneon（Pioneer LDC 改名後）名下續行，2015 年 10 月 7 日再由 Symphony No.5 以 TSCM-0029／0030 重出。北美版同年 11 月 15 日仍由 Nintendo of America 自營發行。這張與兩年前的《時のオカリナ》是同一套 N64 音源上的姊妹作，池中兩張都沒有。實掃 seed_cards.json 全 14,424 列，`近藤浩治`／`Koji Kondo` 零命中。",
+  "risk": "盤名日文／羅馬拼音兩套：《ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック》／《The Legend of Zelda: Majora's Mask Original Soundtrack》。**Apple 無官方條目**（jp／us 兩店面各搜日文與英文盤名，只回第三方翻奏），固定試聽預估 unavailable。同名別碟兩筆容易誤配：83f4c743-3798-4d47-8ed9-ea92cce488d2《The Legend of Zelda: Majora's Mask -Our World Awaits You!-》(2000) 與 cecdb9d1-9bad-480b-9e15-8f433e34abe9《Majora's Mask Game Music Soundtrack CD》(2000)，兩筆盤名都含 Majora's Mask。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 745f04d2-3408-39a9-ac60-c598b9c6128b。回問確認：title「ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック」、artist-credit「近藤浩治」、first-release-date 2000-06-23、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（2000-06-23 JP/Official＝Pioneer LDC PICA-2006、2000-11-15 US/Official、2015-10-07 JP/Official＝Symphony No.5、?/JP Geneon PICA-2006，另 DE/Promotion ×2、US/Promotion、TW/Bootleg ×3、Pseudo-Release ×2）。刻意不釘：723603a7-e406-44c3-9da7-1bda7da4b5f4《THE LEGEND OF ZELDA: ムジュラの仮面 オーケストレーションズ》（2000 管弦編曲盤，非原聲）、83f4c743-3798-4d47-8ed9-ea92cce488d2《Majora's Mask -Our World Awaits You!-》（2000 選輯）、cecdb9d1-9bad-480b-9e15-8f433e34abe9《Majora's Mask Game Music Soundtrack CD》（2000 選輯）。藝人 MBID c376498a-cdf6-422b-9055-3fce84424402。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Koji Kondo；The Legend of Zelda: Majora's Mask Original Soundtrack；ゼルダの伝説 ムジュラの仮面",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "下村陽子",
+  "album": "LIVE A LIVE オリジナル・サウンドトラック",
+  "year": 1994,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "NTT出版（catno PSCN-5007，1994-08-25 JP，41 軌）",
+  "why": "下村陽子離開 Capcom 進入 Square 之後的第一張整部作品原聲，1994 年 8 月 25 日由 NTT出版 以 PSCN-5007 發行，單片 41 軌。這張在她目錄裡的位置是分水嶺：Capcom 時期的《ストリートファイターII》她是團隊成員之一，這裡則是一人寫完整部遊戲的七個時代段落。2012 年 5 月 2 日 SQUARE ENIX 以 SQEX-10308 重出並補到 43 軌，2023 年再轉數位（SQEX-10308-1）。實掃 seed_cards.json 全 14,424 列，`下村陽子` 與 `Yoko Shimomura` 兩種寫法都查過，池中 0 張。",
+  "risk": "掛名日文／羅馬拼音兩查：MB 藝人實體用 `下村陽子`（另有一個同名歌手實體 1a470379-8170-4242-b68d-5dcd08877c86，不是本人，識別靠 MBID 不靠字串）；Apple jp 掛 `下村陽子`、us 掛 `Yoko Shimomura`。店面序 GAME：Apple jp collectionId 1696074156《LIVE A LIVE オリジナル・サウンドトラック (再発売)》，盤名帶「(再発売)」尾綴、releaseDate 記 1994-01-01（與 MB 的 1994-08-25 差七個月，依裁定第 77 條只當訊號）；us 店面用同一組字串搜不到這張，只回 FFXV 等他作——這是第 158 條的形狀（原文盤名要配當地店面），jp 才是對的店面。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 743d0014-f626-3715-83dd-bea0f254e15a。回問確認：title「LIVE A LIVE オリジナル・サウンドトラック」、artist-credit「下村陽子」、first-release-date 1994-08-25、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1994-08-25 JP/Official＝NTT出版 PSCN-5007／41 軌、2012-05-02 JP/Official＝SQUARE ENIX SQEX-10308／43 軌、2014 JP/Official、2023-08-02 JP 與 XW/Official，另 TW/Bootleg、XW/Withdrawn、Pseudo-Release ×2）。刻意不釘：27135bbb-5c88-4afc-9a2c-16de734485fc《LIVE A LIVE HD-2D Remake Original Soundtrack》（2022 重製版重錄，非原盤）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1，名下 80 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Shimomura；LIVE A LIVE Original Soundtrack；ライブ・ア・ライブ",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "下村陽子",
+  "album": "聖剣伝説 Legend of Mana オリジナル・サウンドトラック",
+  "year": 1999,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "DigiCube（catno SSCX-10034，1999-07-23 JP 兩片組，23＋32 軌）",
+  "why": "下村陽子接手聖剣伝説系列的一張：前兩作分別由菊田裕樹（《聖剣伝説2》1993）與伊藤賢治（《ファイナルファンタジー外伝 聖剣伝説》1991）寫，第四作 1999 年 7 月 23 日交到她手上，DigiCube 編號 SSCX-10034，兩片 23＋32 軌。2004 年 10 月 20 日 SQUARE ENIX 以 SQEX-10036／10037 重出。這張與同批的《LIVE A LIVE》《Kingdom Hearts》三張，構成她 1994–2002 年在 Square 的主線。實掃 seed_cards.json 全 14,424 列，`下村陽子`／`Yoko Shimomura` 零命中；同系列的菊田裕樹《聖剣伝説2》亦為 0，本批一併補。",
+  "risk": "盤名混書寫系統：MB 標題《聖剣伝説 Legend of Mana オリジナル・サウンドトラック》同時含漢字與拉丁字，Apple jp 則作《聖剣伝説 Legend of Mana (Original Soundtrack)》——兩者只差尾綴，但拆成純 ASCII 會丟掉漢字那一半（裁定第 158 條）。店面序 GAME：Apple jp collectionId 251753897（掛名 `下村陽子`、releaseDate 2004-10-20＝SQUARE ENIX 再發日，非原盤日；年份取 MB 的 1999）。us 店面用同字串搜不到。CAA release-group 端點 200。另 3c5f5d1e-b305-4b62-af44-33d1783d444e《聖剣伝説 レジェンド オブ マナ Remastered: The Soundtrack》(2021) 是重製版重錄，盤名極近，是本張最像的假陽性。",
+  "mbNote": "釘 release-group 06bef54a-d29e-3201-9c07-768e4c5e79e6。回問確認：title「聖剣伝説 Legend of Mana オリジナル・サウンドトラック」、artist-credit「下村陽子」、first-release-date 1999-07-23、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（1999-07-23 JP/Official＝DigiCube SSCX-10034、2004-10-20 JP/Official＝SQUARE ENIX SQEX-10036／10037，另 TW/Bootleg 與 Pseudo-Release 各一）。刻意不釘：3c5f5d1e-b305-4b62-af44-33d1783d444e《聖剣伝説 レジェンド オブ マナ Remastered: The Soundtrack》（2021 重製版，非原盤）、aff4e617-6274-4257-87bc-5dc99d835224《聖剣伝説 LEGEND OF MANA Arrangement Album - Promise -》（2015 編曲盤，非原聲）、088be213-a9c8-4236-81be-0d46154152f1《聖剣伝説 音楽大全集》（2011 系列合輯）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Shimomura；Legend of Mana Original Soundtrack；聖剣伝説 レジェンド オブ マナ",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "下村陽子",
+  "album": "Kingdom Hearts Original Soundtrack",
+  "year": 2002,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "EASTWORLD／Toshiba-EMI（catno TOCT-24768／24769，2002-03-27 JP 兩片組，41＋35 軌；Squaresoft 與 Walt Disney Records 共同掛廠）",
+  "why": "下村陽子目錄裡流通最廣的一張，也是 Square 與 Disney 合製案的音樂端：2002 年 3 月 27 日在日本由 EASTWORLD（東芝EMI）以 TOCT-24768／24769 兩片組發行，41＋35 軌，release 上同時掛 Squaresoft 與 Walt Disney Records；2003 年 3 月 11 日 EASTWORLD 與 Virgin 在歐洲以 7243 5 80453 21 發行同一套。這是她第一張走一般唱片零售通路（而不是 Square 自營 DigiCube）的原聲盤，也是本批三張下村卡裡年代最晚的一張。實掃 seed_cards.json 全 14,424 列，`下村陽子`／`Yoko Shimomura`／`Kingdom Hearts` 全部零命中。",
+  "risk": "**Apple 上查無這張原盤**：jp 與 us 兩店面用 `下村陽子 Kingdom Hearts`、`Kingdom Hearts Original Soundtrack` 各搜一次，回到的全是後續作品（Birth by Sleep、Dream Drop Distance）、音樂會盤與第三方鋼琴翻奏，2002 年那套沒有上架——Disney 版權的緣故，不是比對問題（裁定第 152 條的分界）。固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。同系列同名別碟極多，去重要小心：88712810-51f1-3707-8eb9-1cd9464b49f3《KINGDOM HEARTS Original Soundtrack COMPLETE》(2007) 是九片全集，c748e084-839d-4886-a3eb-f8e6001db10e《KINGDOM HEARTS 20TH ANNIVERSARY VINYL LP BOX》(2023) 是黑膠盒。",
+  "mbNote": "釘 release-group a1273258-87eb-4134-b9d7-2603d85388b4。回問確認：title「Kingdom Hearts Original Soundtrack」、artist-credit「下村陽子」、first-release-date 2002-03-27、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（2002-03-27 JP/Official＝EASTWORLD TOCT-24768／24769、2002-03-27 JP/Pseudo-Release、2003-03-11 XE/Official＝EASTWORLD／Virgin 7243 5 80453 21，另 TW/Bootleg 一筆）。刻意不釘：88712810-51f1-3707-8eb9-1cd9464b49f3《KINGDOM HEARTS Original Soundtrack COMPLETE》（2007 全集合輯）、62aa0701-d3d2-4404-be44-a5d009ab91a2《Piano Collections KINGDOM HEARTS FIELD & BATTLE》（2010 鋼琴編曲盤）、c748e084-839d-4886-a3eb-f8e6001db10e《KINGDOM HEARTS 20TH ANNIVERSARY VINYL LP BOX》（2023 黑膠盒，非原盤）、430b0f09-2bde-473b-b50e-106eaa808422《KINGDOM HEARTS Orchestra -World Tour-》（2017 管弦音樂會）、24a1469c-4d7e-4643-8d93-c96c15c341f3《KINGDOM HEARTS -HD 1.5 & 2.5 ReMIX- Original Soundtrack BOX》（2014 重製版）。藝人 MBID b3933fd6-fba9-44b1-992a-1e8128324ca1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yoko Shimomura；キングダム ハーツ オリジナル・サウンドトラック；Kingdom Hearts OST",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]
