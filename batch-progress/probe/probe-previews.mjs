@@ -127,12 +127,29 @@ const OUT = process.env.PREVIEWS_OUT ? path.resolve(process.env.PREVIEWS_OUT)
   : path.join(DIR, 'previews.json');
 const out = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
 
-const get = async url => {
-  try {
-    const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
-    if (!r.ok) return { _http: r.status };
-    return await r.json();
-  } catch (e) { return { _err: String(e.name || e).slice(0, 30) }; }
+// 2026-09-05：原本這裡一次都不重試——403／429 回來就放棄那個查詢字串。
+// Apple 對連續請求會限流，而本腳本一跑就是上百張 × 八個店面 × 兩種寫法；
+// 台灣線那一輪 63 張 unavailable 裡，**19 張每個店面的每個字串都被限流擋掉、
+// 20 張有店面全被擋**，卻全部記成乾淨的「查到 0 筆」。
+// 裁定第 28／98 條講的就是這件事：查詢失敗不是查無。加退避重試。
+const get = async (url, tries = 5) => {
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
+      if (r.ok) return await r.json();
+      // 403／429 是限流、5xx 是暫時性——都退避重來；4xx 的其他碼才是真的請求有問題
+      if (r.status === 403 || r.status === 429 || r.status >= 500) {
+        await new Promise(res => setTimeout(res, 1500 * (i + 1) * (i + 1)));
+        continue;
+      }
+      return { _http: r.status };
+    } catch (e) {
+      const name = String(e.name || e).slice(0, 30);
+      if (i === tries - 1) return { _err: name };
+      await new Promise(res => setTimeout(res, 1500 * (i + 1) * (i + 1)));
+    }
+  }
+  return { _http: 'ratelimited-after-retries' };
 };
 
 
@@ -150,11 +167,18 @@ for (const c of cards) {
     const artistCands = [c.artist, c.queryAlias, translit(c.artist)].filter(Boolean);
     let hits = [];
     let raw = 0;
+    // 2026-09-05：`raw` 的初值 0 會讓「每個 term 都 HTTP 失敗」印成 `front:0→0`，
+    // 與「真的查過、回 0 筆」長得一模一樣。台灣線 63 張 unavailable 裡，
+    // **19 張每個店面的所有查詢都失敗、20 張有店面全失敗**，全部被記成乾淨的 0 筆。
+    // 三個研究層代理各自懷疑過這件事，我拿「最後那個 0→0 才是答案」推翻了三次——
+    // 我錯了，那個 0→0 根本不保證有查詢成功過。改成明確記錄有沒有查成。
+    let okQueries = 0;
     for (const term of terms) {
       const j = await get(`https://itunes.apple.com/search?term=${
         encodeURIComponent(term)}&entity=album&country=${front}&limit=12`);
       await sleep(700);                                 // Apple 沒公告限制，保守節流
       if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
+      okQueries++;
       raw = (j.results || []).length;
       hits = (j.results || []).filter(r =>
         (albumCands.some(a => titleOk(a, r.collectionName || '', !!c.selfTitled)) ||
@@ -165,7 +189,8 @@ for (const c of cards) {
       // 主閘是藝人＋盤名的粗形比對；年份只用來排序與標記。
       if (hits.length) break;                           // 命中就不再試下一種寫法
     }
-    rec.tried.push(`${front}:${raw}→${hits.length}`);
+    // `NOQUERY` ＝ 這個店面一次都沒查成，不是查到 0 筆。下游判「查無」時必須排除它。
+    rec.tried.push(okQueries ? `${front}:${raw}→${hits.length}` : `${front}:NOQUERY`);
     if (!hits.length) continue;
 
     // 排序：年份接近的優先（不是門檻，只是偏好），再來 explicit 優先。
