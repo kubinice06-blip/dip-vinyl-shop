@@ -221,3 +221,130 @@ Wolf 歌曲集，CAA 200，本來是本批很好的併掛候選（可同時替�
 **裁定：迴避，改收《Des Knaben Wunderhorn》(1968)。** 判準是第 2 條原則的反面用法——
 **盤名被縮短過的既有卡，會把更長的新卡包進去**（第 162 條的鏡像）；
 在無法證明是兩張碟時，寧可換一張沒有疑慮的。已在該卡 `mbNote` 明寫「刻意不釘」與理由。
+
+---
+
+## （主線追加，2026-09-05）第 1 條：**後 20 張的 unavailable 覆核——8 張救回、2 張主線裁定收下、7 張確認沒有**
+
+**八張救回**（都以 `lookup?id=<collectionId>&entity=song` 覆核過曲目列攤得開且每軌有 previewUrl）：
+
+| 卡 | 正解 | 探測落空的原因 |
+|---|---|---|
+| Fischer-Dieskau《Schubert: Lieder Volume 1》 | 1452761264（171 軌） | **Apple 的卷號與 DG 黑膠盒是反的**——見第 2 條 |
+| Sutherland《La sonnambula (1962)》 | 1452382824（33 軌） | 卡片多了「(1962)」括號 |
+| Emerson《Bartók: The 6 String Quartets》 | 1452569634（23 軌） | Apple 盤名**沒有那個「6」** |
+| Kleiber《Der Rosenkavalier (1954)》 | 1452793805（43 軌） | 「R. Strauss」對「Richard Strauss」＋年份括號；掛名把四位歌者排最前 |
+| Ferrier《Das Lied von der Erde (1952)》 | 1452510165（9 軌＝原盤 6＋同批的 3 首呂克特） | 一邊多年份括號、一邊多第二部作品副標 |
+| Michelangeli《Chopin: 10 Mazurkas…》 | 1452574759（13 軌） | **卡片盤名被策展層縮短過**，兩邊都多一項「Prélude, op. 45」 |
+| Karl Richter《Bach: Johannes-Passion》 | 1534866839（40 軌，長度逐軌完全相同） | 德文《Johannes-Passion》對英文《St. John Passion》 |
+| du Pré《Dvořák: Cello Concerto / Waldesruhe》 | 694084609（4 軌） | 《Waldesruhe》對《Silent Woods》 |
+
+**兩張主線裁定收下**（都有先例，見第 3 條）：Casals 696818767、Rubinstein 427972467。
+
+**七張確認沒有**——**都不是「沒查到」，是「查到了但形狀對不上」**：
+Marian Anderson、Caruso（兩張都是 Pearl 廠牌，Apple 上幾乎不存在）、Wunderlich、
+Alban Berg Quartett、Amadeus Quartet、Celibidache、Schwarzkopf。
+
+## 第 2 條：**Apple 的卷號與原盤盒的卷號可以是反的** —— Fischer-Dieskau《Schubert: Lieder》
+
+Apple 的「Vol. **2**」才是本卡的《Volume 1》；Apple 的「Vol. 1」（234 軌）從 D.7 起，**是另一批**。
+**第 168 條的卷號記號在這裡會判反**——它比的是「兩邊的卷號一不一樣」，
+遇到編號體系本身相反時，一樣的卷號反而是錯的、不一樣的才對。
+**這種只能人工釘**，工具改不了（改了會弄壞其他所有正常的卷號比對）。
+
+## 第 3 條：**兩張加曲版的採用裁定**（先例照第 140／141 條與 c-98 的處置）
+
+- **Casals《Dvořák: Cello Concerto / Bruch: Kol Nidrei》採用 696818767。**
+  7 軌**含原盤四軌、曲序也對**，中間插入 Elgar 協奏曲三軌——與 c-98 的 Luke the Drifter（14 vs 12）、
+  NGDB（23 vs 16）同形：**加曲，不是換內容**（c-97 第 10 條的分界）。`originalTrackCount` 鎖 **4**。
+- **Rubinstein《Rubinstein Plays Liszt》採用 427972467，但固定試聽改指第二片首軌〈Funérailles〉。**
+  這一筆的**第二片正好是 LM-1905 七軌同序**（多一首 Valse oubliée）；
+  **第 1 軌是鋼琴協奏曲、屬第一片**，取首軌會取錯。**這是裁定 157 的形狀**
+  （前例：c-99 的《Taal》，Apple 曲序是英文字母序）。`originalTrackCount` 鎖 **7**。
+
+## 第 4 條：**Joan Sutherland《Operatic Arias》——「高度可疑」的判斷不成立，但品項要換**
+
+派工時我判 1111699219《Finest Operatic Arias》（5 軌、appleYear 2016、盤名不同）「高度可疑」。
+**研究層逐軌比對推翻了這個判斷**：那就是 1959 Decca SXL 2159 那次錄音
+（五首同名同序，786/480/213/375/968 對 MB 的 792/484/212/377/975，樂團相同，
+Apple 自己把 Conservatoire 拼錯了），**appleYear 2016 是再發年（裁定 77）**。
+
+**但品項換成 1452135704**：同一份錄音、**七店面全有**（原本那筆 us 沒有）、
+copyright 是 **℗ 1959 Decca Music Group Limited**（版權方本人，原本那筆是第三方 Black Cat Productions）。
+
+**記這一條是因為我判錯的方向值得記**：盤名不同＋軌數少＋年份差 57 年，三個訊號同時指向「錯配」，
+**結果三個訊號全是再發包裝造成的**。古典再發盤把這三件事一起改掉是常態。
+
+## 第 5 條：**本組三個假陽性，軌數這一關全部過得了**
+
+- **Alban Berg Quartett**：726264114《The Late String Quartets (**Live at Konzerthaus, Wien, 1989**)》
+  ——同團同廠牌、**27 軌對 27 軌**，只有 Live 標記與逐軌長度能分辨。
+- **Amadeus Quartet**：1452488474《Op. **76**, 77 & 103》對本卡《op. **71, 74**, 77 & 103》
+  ——**34 軌對 34 軌、碟數 12+12+10 完全相同**，只有逐軌看作品編號才發現前兩片是別的曲目。
+- **Celibidache**：Apple 四筆柴五**全是倫敦愛樂**那次早期錄音，
+  **每個樂章都比慕尼黑版短三到四分鐘**（18:50 對 16:15）——**長度是決定性證據**。
+- 另外兩筆：**Marian Anderson** 有一筆七店面同名碟 1580339727，是 1957 年 CBS《See It Now》紀錄片聲軌
+  （30 軌、半數是說話），**與本卡零重疊，盤名／掛名／藝人三道閘全過**；
+  **Schwarzkopf** 五筆《風流寡婦》全是 1953 Ackermann 版（分辨鍵是丹尼洛 Kunz vs Wächter）。
+
+**這一條是本批對整條線最重要的輸出**：**古典的假陽性不能用軌數擋，只能用逐軌長度擋。**
+往後古典線的研究層要把「逐軌長度比對」當必做項，不是選做項。
+
+## 第 6 條：**Gilels《Grieg: Lyric Pieces》的 Apple `trackCount` 欄是錯的**
+
+欄位寫 21，曲目列**只攤得出 20 軌**，MB 七筆 release 也全是 20 軌。
+`originalTrackCount` 鎖 **20**，行文不得寫 21。
+**`trackCount` 欄與實際曲目列不一致，這是第一次遇到**——往後軌數比對要以攤開的曲目列為準。
+
+## 第 7 條：**後 20 張裡有 14 張的卡單年不是錄音年**（本批最重要的產出）
+
+| 卡 | 卡單 | 原始錄音年 | 卡單那個數字是什麼 |
+|---|---|---|---|
+| Marian Anderson | 1995 | 不明（Pearl 復刻 RCA 78 轉） | Pearl CD 年；**Discogs 記 1993**（兩說） |
+| Caruso | 1990 | **1902–1908**（盤名＋維基） | Pearl 復刻年；**Discogs 記 1999**（兩說） |
+| Wunderlich | 1984 | **1965-08-19**（薩爾茲堡莫札特音樂院） | Acanta 復刻年 |
+| Erich Kleiber | 1990 | **1954**（Apple ℗1954 Decca） | Decca CD 復刻年 |
+| Amadeus Quartet | 1989 | **1964–1978**（Discogs 逐組直記） | DG 三 CD 整編年；**團體 1987 年就解散了** |
+| Pablo Casals | 1972 | **兩個**：德弗札克 1937、Kol Nidrei 1936 | EMI 黑膠發行年 |
+| Celibidache | 1997 | 不明，僅知落在 1979–1996 | EMI **身後**發行年 |
+| Schwarzkopf | 1966 | 不明 | HMV 英國盤發行年；**且那是十一段選粹不是全曲** |
+| Kathleen Ferrier | 1961 | **1952-05-15～05-20，維也納** | Decca 英國盤發行年（**晚九年**） |
+| Rubinstein | 1956 | 不晚於 1955（封套解說版權年） | RCA LM-1905 原盤年 |
+| Karl Richter | 1992 | **1964**（Apple ℗1964 DG） | Archiv CD 復刻年；**Richter 1981 年已過世** |
+| Fischer-Dieskau | 1970 | 1960 年代後半（Apple 對應品項 ℗1969） | DG 原盒發行年 |
+| Sutherland《La sonnambula》 | 1963 | **1962**（Apple ℗1962，盤名括號已標） | 首發年 |
+| du Pré | 1971 | 不明（地點：芝加哥 Medinah Temple） | Angel S-36046 發行年 |
+
+**卡單年＝錄音年的只有 6 張**：Schwarzkopf & Fischer-Dieskau（1968）、Sutherland《Operatic Arias》（1959）、
+ABQ（1984）、Emerson（1988，**維基唱片清單記 1990**，兩說維持卡單）、Gilels（1974）、Michelangeli（1972）。
+
+**卡單值一律不動（裁定 141）**，`yearVerified` 已逐張並列三個數字。
+**這批要問店主的是：這條線的卡片年份要記錄音年還是發行年？**——
+「Richter 1992 年的碟」與「Richter 1981 年已過世」擺在一起會讓人看不懂。
+**這是規格層級的問題，不自決。**
+
+## 第 8 條：**四位早逝／已故者的「生前最後」全部擋下**
+
+- **Wunderlich**：**不得寫「生前最後一場獨唱會」**——被冠上「最後」之名的是 DG 的
+  《Der letzte Liederabend》，**那是另一場**（曲序、逐軌長度、安可全都不同；1452675034 是最危險的假陽性）。
+- **Ferrier**：**不得寫「生前最後的錄音」**——維基明寫她 1952 年 10 月還與 Boult／倫敦愛樂錄過巴哈韓德爾詠嘆調。
+- **du Pré**：**不得寫「生前最後的錄音」**——維基明寫最後一次錄音室錄音是 1971 年 12 月的蕭邦／法朗克。
+- **Szell（1970 歿）、Kleiber（1956 歿）、Celibidache（1996 歿）、Richter（1981 歿）四位都不得寫「生前最後」**——沒有任何來源這樣說。
+
+另擋下：Fischer-Dieskau 的「Gerald Moore 錄完這套之後就宣布退休」**與來源相反**
+（他 1967 年就退出公開演出，在這套錄完之前）；
+Emerson「第一個兩位小提琴輪流首席的樂團」——維基原話是「最早這樣做的樂團**之一**」；
+**Michelangeli 的兩次葛萊美都是入圍不是得獎，而且入圍的是德布西與舒曼那兩張、不是本張**；
+Caruso「史上第一批歌劇錄音」維基沒這樣說。
+
+**累計：策展層的時序／序數主張被攻破第九次。**
+
+## 第 9 條：兩處資料層的更正
+
+- **Casals 那張 MB 的 artist-credit 有誤**：它把 Szell 掛在整張上，
+  但〈Kol Nidrei〉那一半的指揮是 **Landon Ronald／倫敦交響**（維基）。
+- **Celibidache 那張 MB 沒有 Live 標記卻確定是實況**（第 5 軌是 1:07 的掌聲）
+  ——**靠 `secondary-types` 判現場盤會判錯。**
+- 歌劇全曲盤（La sonnambula／Der Rosenkavalier／Die lustige Witwe）的
+  `primary-type` 全是 Album、`secondary-types` 全空（裁定 167 照實記）。
+- **Marian Anderson** 本張與 1957 年亞洲親善巡演、與那集紀錄片**只有盤名的關係**，碟裡沒有一軌來自那次巡演。

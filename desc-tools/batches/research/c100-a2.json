@@ -693,5 +693,229 @@
   "status": "full",
   "yearVerified": "**卡單 1961 是英國 Decca 黑膠的發行年；盤名括號裡的 1952 才是錄音年，而且這次的錄音年有到「日」的來源。三層數字並列**：(1) **原始錄音 1952 年 5 月 15–20 日於維也納**——英文維基〈Kathleen Ferrier〉直記這個日期區間與地點，Apple 那筆 Decca 官方品項的 copyright 也是 **℗ 1952**，兩重佐證；(2) MB first-release-date **1961**（Decca LXT 5576 英國盤），與卡單一致；(3) 1984 年的 Decca CD（414 194-2）是後來的復刻。**這是本組少數幾張錄音日期精確到「哪六天」的卡，依裁定 18 應該用這個日期當敘事錨點，不要在發行年上打轉。**注意 1952（錄音）與 1961（英國盤發行）之間隔了九年，**行文不得把 1961 說成錄音年**。",
   "notes": "**試聽由 unavailable 改判 ready，但要在兩種取法之間做一個選擇，建議取前者**：(a) **Apple 1452510165**（七店面全有、9 軌全有 previewUrl、**℗ 1952 Decca Music Group Limited ＝ 版權方本人**）——原盤六軌完整在第 1–6 軌、同名同序，多出來的第 7–9 軌是三首《呂克特歌曲》，**而且維基明記那三首與《大地之歌》是同一批 1952 年 5 月的維也納錄音**，不是外來的填充曲；依裁定 141，`originalTrackCount` 鎖 **6**，行文不得說「這張碟有九首」。(b) Apple **313249122**（℗ 2009 Saland Publishing，七店面，**正好六軌**）——軌數與原盤完全相等，但是第三方復刻、非版權方（c-99 第 6 條）。**建議取 (a)**：版權方品項優先，加曲的三首又同源。固定試聽取首軌兩者都沒問題。｜**探測層落空的原因是盤名**：卡片作《Mahler: Das Lied von der Erde (**1952**)》（策展層為了標錄音年加的括號），Apple 那筆作《Mahler: Das Lied Von Der Erde; **3 Rückert Lieder**》——**一邊多了年份括號、一邊多了第二部作品的副標**，兩頭都對不上。｜**時序主張要特別擋（派工點名的兩位早逝者之一）**：Ferrier 1953 年 10 月 8 日過世，**但這張不是她的最後一次錄音**——維基明寫她 1952 年 10 月還與 Boult 和倫敦愛樂錄了一系列巴哈與韓德爾詠嘆調，最後一次**公開演出**是 1953 年 2 月的《奧菲歐》。**行文絕對不得寫「生前最後的錄音」「最後的告別」這一類。**可以寫的是有來源的兩件事：錄音是在她確診乳癌之後、忍著相當大的痛苦於六天內完成的；以及 1947 年 Walter 聽她試唱後寫下的那句話。｜另外要小心一個同名別碟：1379853172「Brahms: Alto Rhapsody - Mahler: Das Lied von der Erde」（℗ 2003 APR，11 軌）掛的是 **Hallé／Barbirolli**，不是維也納愛樂／Walter，是另一次演出。"
+ },
+ {
+  "key": "desc2:Emil Gilels|Grieg: Lyric Pieces",
+  "artist": "Emil Gilels",
+  "album": "Grieg: Lyric Pieces",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 18fcc7fe 的欄位：title「Lyrische Stücke - Lyric Pieces」（德英並列）、artist-credit「Edvard Grieg; Emil Gilels」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 7 個 release。",
+    "src": "https://musicbrainz.org/release-group/18fcc7fe-041c-373d-8791-1c6083452f0d"
+   },
+   {
+    "f": "七筆 release **全部是 20 軌**：bc512881（1974 DE，Deutsche Grammophon **2530 476**，12 吋黑膠）、2eb148ed（1974 DE，DG 2535 620 黑膠）、45b44b70 與 daef61d7（1987 DE，DG 419 749-2 CD）、515fe32a（1996-10-01 DE，DG 449 721-2 CD）、e4a8a290（2015 XW 數位）、e812e374（2023-01-26 數位）。1974 年黑膠的曲序是 A 面十首、B 面十首，從 op. 12 no. 1〈Arietta〉開始，到 op. 71 no. 7〈Nachklänge〉結束，中間依作品編號 op. 38／43／47／54／57／62／65／68／71 遞增排列。",
+    "src": "https://musicbrainz.org/release/bc512881-7deb-4c51-99f4-510364340fde"
+   },
+   {
+    "f": "英文維基〈Emil Gilels〉：1916 年 10 月 19 日生於敖德薩的猶太家庭、1985 年 10 月 14 日在莫斯科的醫院意外過世，當時他正在為 Deutsche Grammophon 錄貝多芬鋼琴奏鳴曲全集、錄到一半。條目的唱片年表裡直接列有「**1974 – Grieg: Lyric Pieces**」這一條。",
+    "src": "https://en.wikipedia.org/wiki/Emil_Gilels"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **969090788「Grieg: Lyric Pieces」**，掛名 Emil Gilels，releaseDate 1974-01-01，copyright「℗ 1974 Deutsche Grammophon GmbH, Berlin」。**它的 trackCount 欄位寫 21，但 `lookup?id=969090788&entity=song` 只攤得出 20 軌**——這 20 軌與 MB 1974 年 DG 黑膠**逐軌同名同序**（Apple 第 1 軌〈Lyric Pieces, Book I, Op. 12: No. 1, Arietta〉1:26 對 MB 的 A1〈Arietta〉1:18，一路到第 20 軌〈Op. 71 No. 7, Remembrances〉1:57 對 MB 的〈Nachklänge〉1:54），**20 軌全部有 previewUrl**。",
+    "src": "https://music.apple.com/gb/album/969090788"
+   },
+   {
+    "f": "Apple 上另有 1667906213「Edvard Grieg: Lyric Pieces」（Emil Gilels，A uDiscover Music Release，℗ 2023 UMG，只在 de／at／it 三店面，**trackCount 20**）——同一份錄音的 2023 年重新包裝。",
+    "src": "https://music.apple.com/de/album/1667906213"
+   },
+   {
+    "f": "格里格《抒情小品》總共十集六十六首（op. 12、38、43、47、54、57、62、65、68、71），Gilels 這張只從十集裡各挑幾首、合計二十首；MB 那筆黑膠的曲名用德文（〈Schmetterling〉〈Einsamer Wanderer〉〈Kobold〉），Apple 用英文（〈Butterfly〉〈Solitary Traveller〉〈Puck〉），**同一首曲子兩種語言的曲名**。",
+    "src": "https://musicbrainz.org/release/bc512881-7deb-4c51-99f4-510364340fde"
+   }
+  ],
+  "hookCandidates": [
+   "六十六首裡他只挑了二十首，從 op. 12 的第一首排到 op. 71 的最後一首",
+   "最短的〈Arietta〉一分十八秒，最長的〈Es war einmal〉四分半——二十首小品從第一集排到第十集"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Emil Gilels，1974 年 Deutsche Grammophon 錄音，一張黑膠二十首小品；單首從 1 分 18 秒（op. 12 no. 1〈Arietta〉）到 4 分 33 秒（op. 71 no. 1〈Es war einmal〉），MB 逐軌長度加總約五十五分鐘。曲序按作品編號從第一集排到第十集。",
+  "keyTracks": [
+   "op. 12 no. 1 Arietta",
+   "op. 43 no. 1 Schmetterling",
+   "op. 54 no. 4 Notturno",
+   "op. 71 no. 7 Nachklänge"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1974。MB first-release-date 1974、1974 年兩筆 DG 黑膠（2530 476 與 2535 620）、Apple 那筆 DG 官方品項的 copyright ℗ 1974、以及英文維基〈Emil Gilels〉唱片年表裡「1974 – Grieg: Lyric Pieces」那一條，**四方一致**。**錄音年沒有獨立來源**（MB 與 Apple 都只給發行／版權年），行文可以寫 1974 這個數字，但要寫成「1974 年的 DG 錄音」這種同時涵蓋兩者的說法比較安全。",
+  "notes": "**ready 覆核通過，但卡單記的軌數要更正。** 探測層記 gb 969090788、tr=21。**Apple 的 `trackCount` 欄位確實寫 21，但曲目列只攤得出 20 軌**——那第 21 軌是 Apple 這一側的中繼資料誤差，不是碟上真有一首查不到的曲子。**20 這個數字才是對的，而且與 MB 七筆 release 全部 20 軌完全一致**（依裁定 141，原盤值以 MB 為準）。20 軌逐軌與 1974 年 DG 2530 476 同名同序、長度各差 3–8 秒，**20 軌全部有 previewUrl**（c-97 第 11 條那道檢查通過）。**結論：ready 成立、配對正確，但 `originalTrackCount` 要鎖 20、不要沿用 Apple 的 21；行文不得說「這張碟有二十一首」。**｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Arietta〉正是原盤 A1。｜**同一份錄音在 Apple 上還有一筆 1667906213**（℗ 2023 uDiscover／UMG，只在 de／at／it，trackCount 20），是後來的重新包裝；七店面齊全的 969090788 較好，維持不動。｜**曲名的語言要注意**：MB 用德文（〈Schmetterling〉〈Kobold〉〈Nachklänge〉），Apple 用英文（〈Butterfly〉〈Puck〉〈Remembrances〉），下游做曲名比對時兩套都要掃。｜掛名：策展層第 8 條已定用池中既有的 `Emil Gilels`，MB 主名是西里爾「Эмиль Гилельс」、DG 法語系列另作 `Emil Guilels`，兩者進 queryAlias。｜**擋下策展層可能的說法**：《抒情小品》全部十集六十六首，**這張只收二十首**，行文不得寫成「全集」；維基也沒有給這張任何評價或獎項，不得寫最高級。"
+ },
+ {
+  "key": "desc2:Arturo Benedetti Michelangeli|Chopin: 10 Mazurkas / Ballade op. 23 / Scherzo op. 31",
+  "artist": "Arturo Benedetti Michelangeli",
+  "album": "Chopin: 10 Mazurkas / Ballade op. 23 / Scherzo op. 31",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7e47a883 的欄位：title「10 Mazurkas / Prélude, op. 45 / Ballade, op. 23 / Scherzo, op. 31」（**MB 標題比卡片盤名多了一項「Prélude, op. 45」**）、artist-credit「Frédéric Chopin; Arturo Benedetti Michelangeli」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 5 個 release。",
+    "src": "https://musicbrainz.org/release-group/7e47a883-33fd-4959-bafa-c2cbb47ae0fd"
+   },
+   {
+    "f": "五筆 release **全部是 13 軌**：d00cbe0b（1972 DE，Deutsche Grammophon **2530 236**，12 吋黑膠）、f1b6a541（1972 FR，同編號 2530 236）、8018b485（1984-07-25 XE，DG 413 449-2 CD）、59dda0f5（2009-01-15 DE，DG 00289 477 7563 CD）、12cabc26（2018-09-28 數位）。十三軌的順序是十首馬祖卡（op. 67/2、56/2、67/4、68/2、68/1、33/1、30/3、30/2、33/4、68/4）、升 c 小調前奏曲 op. 45、g 小調第一號敘事曲 op. 23、降 b 小調第二號詼諧曲 op. 31。",
+    "src": "https://musicbrainz.org/release/d00cbe0b-09d3-4505-8cea-2511395672ab"
+   },
+   {
+    "f": "英文維基〈Arturo Benedetti Michelangeli〉：1920 年 1 月 5 日生、1995 年 6 月 12 日歿的義大利鋼琴家；引《紐約時報》的說法，在少數幾位傳奇鋼琴家之中他大概是**最隱遁、最難解、也最執著**的一位。他 1938 年拿伊莉莎白王后大賽第七名、1939 年拿日內瓦大賽第一名，1949 年蕭邦逝世百年時被國際評審團選為官方指定的鋼琴家。",
+    "src": "https://en.wikipedia.org/wiki/Arturo_Benedetti_Michelangeli"
+   },
+   {
+    "f": "同一條目的獎項欄記他在**第 15 屆葛萊美獎（1972 年）**以《Debussy: Images, Books 1 And 2 and Children's Corner Suite》入圍「最佳古典演奏——器樂獨奏（無管弦樂團）」，1975 年再以《Schumann: Carnaval, Op. 9》入圍同一獎項。條目另有一段記他是 Mille Miglia 公路賽的三度參賽者。",
+    "src": "https://en.wikipedia.org/wiki/Arturo_Benedetti_Michelangeli"
+   },
+   {
+    "f": "Apple Music collectionId **1452568228「Chopin: 10 Mazurkas, Prélude, Op. 45, Ballade, Op. 23 & Scherzo, Op. 31」**，掛名 Arturo Benedetti Michelangeli，releaseDate 1972-01-01，copyright「℗ 1972 Deutsche Grammophon GmbH, Berlin」，trackCount 13，**13 軌全部有 previewUrl**，逐軌與 MB 1972 年 DG 2530 236 同名同序、長度各差 2–4 秒。**六個店面有（gb／de／fr／at／it／jp），us 沒有。**",
+    "src": "https://music.apple.com/gb/album/1452568228"
+   },
+   {
+    "f": "同一份錄音在 Apple 上另有兩筆七店面齊全的：**1452574759**（同盤名，「This Compilation ℗ 2009 Deutsche Grammophon」，13 軌，gb／us／de／fr／at／it／jp，第 1 軌 2:04）與 **1436243702「Chopin: 10 Marzurkas」**（Apple 把 Mazurkas 拼錯成 Marzurkas，「This Compilation ℗ 1972 Deutsche Grammophon」，13 軌，七店面）。",
+    "src": "https://music.apple.com/us/album/1452574759"
+   }
+  ],
+  "hookCandidates": [
+   "十首馬祖卡不照作品編號排：從 op. 67 第二首起手，最後才落回 op. 68 第四首",
+   "《紐約時報》說他大概是那一小撮傳奇鋼琴家裡最隱遁、最難解、也最執著的一位"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Arturo Benedetti Michelangeli，1972 年 Deutsche Grammophon 錄音，一張黑膠十三軌；十首馬祖卡多在一到三分鐘之間（最短 op. 68 no. 1 的 1 分 33 秒、最長 op. 33 no. 4 的 6 分 20 秒），最後三首大件依序是前奏曲 4 分 53 秒、敘事曲 9 分 15 秒、詼諧曲 10 分 58 秒。",
+  "keyTracks": [
+   "Mazurka op. 33 no. 4",
+   "Prélude op. 45",
+   "Ballade op. 23",
+   "Scherzo op. 31"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1972。MB first-release-date 1972、1972 年兩筆 DG 2530 236 黑膠（德國盤與法國盤）、Apple 那筆 DG 品項的 copyright ℗ 1972，**三方一致**。**錄音年沒有獨立來源**（MB 與 Apple 都只給發行／版權年，英文維基的條目也沒有列這張），行文寫 1972 要寫成「1972 年的 DG 錄音」，不得單獨斷言錄音年。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452574759**（七店面齊全，13 軌全有 previewUrl，逐軌與 MB 1972 年 DG 2530 236 同名同序）。**次選 1452568228**——同一份錄音、copyright 是原始的 ℗ 1972（1452574759 是「This Compilation ℗ 2009」），但**us 店面沒有**；若上架時偏好原始 ℗ 年而不在意少一個店面，取這一筆。第三筆 1436243702 也是七店面 13 軌、℗ 1972，但**Apple 把盤名的 Mazurkas 拼成「Marzurkas」**，字串比對永遠對不上，不建議當主鍵。｜**探測層落空的原因是盤名少了一項**：卡片作《Chopin: 10 Mazurkas / **Ballade op. 23** / Scherzo op. 31》，**MB 與 Apple 兩邊的標題都多一個「Prélude, op. 45」**（MB：10 Mazurkas / Prélude, op. 45 / Ballade, op. 23 / Scherzo, op. 31；Apple：10 Mazurkas, Prélude, Op. 45, Ballade, Op. 23 & Scherzo, Op. 31）。卡片這一項是策展層縮短過的——**這正是策展層第 10 條那個「盤名被縮短過的卡會與更長的名字對不上」的形狀**，只是這次發生在自己身上。另外分隔符也不同：卡片與 MB 用斜線，Apple 用逗號加 &。｜固定試聽取首軌沒有問題：Apple 第 1 軌 op. 67 no. 2 正是原盤第 1 軌。｜**曲序要注意**：十首馬祖卡**不是按作品編號排的**（op. 67/2 → 56/2 → 67/4 → 68/2 → 68/1 → 33/1 → 30/3 → 30/2 → 33/4 → 68/4），行文若要描述順序必須照這個實際曲序，不得寫「依作品編號排列」。｜**擋下策展層可能的說法**：維基記的兩次葛萊美**都是入圍不是得獎**，而且入圍的是德布西與舒曼那兩張、**不是本張**；行文不得把獎項掛到這張蕭邦上。"
+ },
+ {
+  "key": "desc2:Arthur Rubinstein|Rubinstein Plays Liszt",
+  "artist": "Arthur Rubinstein",
+  "album": "Rubinstein Plays Liszt",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f9334882 的欄位：title「Rubinstein Plays Liszt」（MB 標題本身就是唱片名，屬策展層第 2 條的第 1 種情況）、artist-credit「Liszt; Rubinstein」、first-release-date 1956、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/f9334882-615a-4150-bf48-66f4641adbdb"
+   },
+   {
+    "f": "唯一的 release e6dec35a：1956 年美國盤、RCA Victor Red Seal **LM-1905**、12 吋黑膠、**7 軌**——A 面〈Funérailles, No. 7 (From \"Harmonies Poétiques Et Religieuses\")〉〈Valse Impromptu〉〈Mephisto Waltz〉，B 面〈Liebestraum No. 3, In A-Flat〉〈Hungarian Rhapsody No. 10, In E〉〈Consolation No. 3, In D-Flat〉〈Hungarian Rhapsody No. 12, In C-Sharp Minor〉。",
+    "src": "https://musicbrainz.org/release/e6dec35a-602b-48ef-b410-8ee36056ccf5"
+   },
+   {
+    "f": "Discogs release 3113010 是同一張美國原盤（RCA Victor Red Seal LM-1905，1956，單聲道），曲目與 MB 逐軌相同；備註記封套上印「A \"New Orthophonic\" High Fidelity Recording」，**內頁解說由 Irving Kolodin 撰寫、版權年標 1955**，並附美國國會圖書館的永久連結 lccn.loc.gov/r56000525。Discogs 上這個編號另有 1956 年的加拿大盤與德國盤、1962 年的義大利盤、1971 年 RCA／Teldec 的德國再版（LM 1905-C）。",
+    "src": "https://www.discogs.com/release/3113010"
+   },
+   {
+    "f": "Apple Music 上最接近的一筆是 collectionId **427972467「Rubinstein - The Liszt Album」**（Arthur Rubinstein，七店面全有，**17 軌、兩張碟**，17 軌全部有 previewUrl），copyright 欄寫「℗ Originally Recorded in **1950, 1953, 1955** Sony Music Entertainment／(P) Originally Recorded in **1956, 1961, 1965, 1970** Sony Music Entertainment」。**它的第二片（2-01 到 2-08）就是 LM-1905 的七軌、順序完全相同**，只在第三個位置多插了一首〈Valse oubliée No. 1〉：Funérailles（10:38）／Valse Impromptu（5:28）／**Valse oubliée No. 1（3:05）**／Mephisto Waltz No. 1（10:51）／Liebestraum No. 3（5:10）／Hungarian Rhapsody No. 10（5:48）／Consolation No. 3（4:07）／Hungarian Rhapsody No. 12（10:15）。第一片則是李斯特第一號鋼琴協奏曲（四軌）、b 小調奏鳴曲（四軌）與另一首〈Valse Oubliée〉，與本卡無關。",
+    "src": "https://music.apple.com/gb/album/427972467"
+   },
+   {
+    "f": "七個店面（gb／us／de／fr／at／it／jp）的 Arthur Rubinstein 目錄（主 artistId 79980320 各 196–200 筆、次要 artistId 1500074261 各 1 筆）全掃，加上 `search?term=Rubinstein Plays Liszt` 逐店面查，**沒有任何一筆是七軌的 LM-1905 單張復刻**。RCA／BMG 的「Rubinstein Collection」系列在 Apple 上很完整（Vol. 50、53、54、56、59、60、63、65、66、67、68 都在），**其中收李斯特的是 Vol. 68「Bach-Busoni, Franck, Liszt」（11 軌），不是本張的曲目組合**。",
+    "src": "https://music.apple.com/gb/artist/79980320"
+   }
+  ],
+  "hookCandidates": [
+   "七首曲子、一面三首一面四首：兩首匈牙利狂想曲分站兩端，中間夾著〈愛之夢〉",
+   "封套上印著「New Orthophonic 高傳真錄音」，解說的版權年是 1955"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：獨奏鋼琴、Arthur Rubinstein，RCA Victor 單聲道錄音，一張 12 吋黑膠七首李斯特。以 Apple 上同一批錄音的長度為參考，最長的〈梅菲斯特圓舞曲〉與〈Funérailles〉都在十分半上下，最短的〈Consolation No. 3〉約四分鐘。",
+  "keyTracks": [
+   "Funérailles",
+   "Mephisto Waltz",
+   "Liebestraum No. 3",
+   "Hungarian Rhapsody No. 12"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1956。MB first-release-date 1956、唯一 release 1956 美國盤 RCA LM-1905、Discogs release 3113010 同樣記 1956，**三方一致**。**錄音年比發行年早，而且只有區間可以講**：Discogs 記封套內頁解說的版權年是 **1955**（所以錄音不晚於 1955），Apple 那筆合輯的 copyright 欄把整批錄音的年份列成「1950, 1953, 1955」與「1956, 1961, 1965, 1970」兩組——**但那是整張十七軌合輯的年份範圍，不能逐軌對應到本卡的七軌**。**行文不得寫本張某一首錄於哪一年**；能寫的上界是「1955 年以前錄的」（有 Discogs 的解說版權年當依據）。",
+  "notes": "**試聽維持 unavailable，但主線若要收，有一個可用但需要動固定試聽的選項。** 七店面的 Rubinstein 目錄（各 196–200 筆）與 `search?term=` 全掃，**沒有任何一筆是 LM-1905 那七軌的單張復刻**。｜唯一涵蓋本卡全部內容的是 Apple **427972467「Rubinstein - The Liszt Album」**（七店面，17 軌兩片，全有 previewUrl）：**它的第二片正好是 LM-1905 的七軌、順序一模一樣**，只多插一首〈Valse oubliée No. 1〉；第一片是協奏曲與 b 小調奏鳴曲，與本卡無關。**若主線決定收它，必須做兩件事**：(1) `originalTrackCount` 鎖 **7**（MB 原盤直記，裁定 141），行文不得說「這張碟有十七首」；(2) **固定試聽絕對不能取第 1 軌**——第 1 軌是鋼琴協奏曲第一樂章，**原盤的開場是第二片第 1 軌〈Funérailles〉**，要人工改指（裁定 157／c-99 第 2 條的形狀）。**若不接受這種「一整片才是本張」的形態，本卡就是 unavailable。**｜**RCA／BMG 的「Rubinstein Collection」在 Apple 上很完整但沒有本張**：收李斯特的是 Vol. 68「Bach-Busoni, Franck, Liszt」（11 軌），曲目組合不同，不得取用。｜**擋下策展層可能的說法**：英文維基的 Arthur Rubinstein 條目沒有提到這張唱片，MB 與 Discogs 也沒有給任何評價或銷量；行文不得寫「他最著名的李斯特」「唯一一張全李斯特專輯」這一類——**光是 Apple 上那張十七軌的《The Liszt Album》就證明他的李斯特錄音不只這七首**。"
+ },
+ {
+  "key": "desc2:Karl Richter|Bach: Johannes-Passion",
+  "artist": "Karl Richter",
+  "album": "Bach: Johannes-Passion",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 48ed821f 的欄位：title「Johannes-Passion」、artist-credit「Johann Sebastian Bach; Karl Richter」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 3 個 release。",
+    "src": "https://musicbrainz.org/release-group/48ed821f-3af2-3ec0-bf97-b853306751cf"
+   },
+   {
+    "f": "三筆 release **軌數都是 40**：7715f769（1992 DE，**Archiv Produktion 435 947-2**，兩張 CD 20＋20）、03f31255（1996-08-15 DE，Deutsche Grammophon 453 007-2，兩張 CD 20＋20）、9bfb58ca（2016-03 XW，Archiv Produktion 9031-74862-2，數位 40 軌）。曲目按受難曲的四個場景分段標示（Verrat und Gefangennahme／Verleugnung／…／Grablegung），第 1 軌是開場合唱〈Herr, unser Herrscher〉11:10，倒數第二軌是〈Ruht wohl, ihr heiligen Gebeine〉8:18，最後一軌是終曲聖詠〈Ach Herr, laß dein lieb Engelein〉2:47。",
+    "src": "https://musicbrainz.org/release/7715f769-16be-4cdf-8578-716e33186df4"
+   },
+   {
+    "f": "英文維基〈Karl Richter (conductor)〉：1926 年 10 月 15 日生於 Plauen、1981 年 2 月 15 日歿。1949 年畢業那年就當上萊比錫聖多馬教堂的管風琴師（巴哈曾在那裡當了二十七年音樂總監）；**1952 年遷居慕尼黑，1954 年創立慕尼黑巴哈合唱團、隨後創立慕尼黑巴哈管弦樂團，1954 年到 1981 年一直是這兩個團體的指揮**。1977 年 NASA 把慕尼黑巴哈管弦樂團在他指揮下錄的《布蘭登堡協奏曲》第二號第一樂章收進航海家金唱片，送上太空。",
+    "src": "https://en.wikipedia.org/wiki/Karl_Richter_(conductor)"
+   },
+   {
+    "f": "同一條目談他的巴哈觀：他避開當時流行的浪漫式速度伸縮，特別注重木管與整體平衡；**「他 1958 到 1970 年間的錄音以紀律、節奏的緊繃與表現的強度著稱」**。條目另引他自己的話——有人說他今年的《馬太受難曲》和去年的不一樣，他認為那是好事：「如果你只是因為不得不演而帶著輕蔑的例行公事去演一部作品、心裡對它再也沒有任何想法或念頭，那才糟糕。」",
+    "src": "https://en.wikipedia.org/wiki/Karl_Richter_(conductor)"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1534866839「Bach, J.S.: St. John Passion」**，掛名「Münchener Bach-Orchester, Karl Richter & Münchener Bach-Chor」，releaseDate 2020-10-16，copyright「℗ 2020 Deutsche Grammophon GmbH, Berlin」，trackCount 40，**40 軌全部有 previewUrl**；逐軌與 MB 那筆 Archiv 435 947-2 **同名同序、長度逐軌完全相同**（第 1 軌 670 秒、第 2 軌 206 秒、第 39 軌 498 秒、第 40 軌 167 秒），只是 Apple 把兩片併成一片連號。",
+    "src": "https://music.apple.com/gb/album/1534866839"
+   },
+   {
+    "f": "同一份錄音在 Apple 上還有一筆帶原始版權年的：collectionId **1452259846「Bach: St. John Passion, BWV 245」**，掛名列出四位獨唱者「**Evelyn Lear, Hertha Töpper, Ernst Haefliger, Hermann Prey**」加慕尼黑巴哈管弦樂團／合唱團與 Karl Richter，releaseDate 1964-01-01、copyright「**℗ 1964 Deutsche Grammophon**」，七店面全有——**這是本張的錄音年直接證據**。但它的 `trackCount` 欄寫 41、曲目列只攤得出 40 軌，且它把原曲的第 2–6 段併成一軌（軌名作「2.-6. Recitative And Chorus」），與 MB 的分軌不一致。另有 1485926782（℗ 2019 Urania Records，24 軌）是分軌更粗的第三方版本。",
+    "src": "https://music.apple.com/gb/album/1452259846"
+   }
+  ],
+  "hookCandidates": [
+   "1954 年他在慕尼黑一口氣創了合唱團與樂團，然後帶著這兩個團體錄了二十七年的巴哈",
+   "有人說他今年的受難曲和去年不一樣——他覺得那正是好事"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Karl Richter 指揮慕尼黑巴哈合唱團與慕尼黑巴哈管弦樂團，獨唱是 Ernst Haefliger（福音史家）、Hermann Prey、Evelyn Lear、Hertha Töpper。四十軌、兩張 CD，開場合唱〈Herr, unser Herrscher〉11 分 10 秒、收場的〈Ruht wohl〉8 分 18 秒與終曲聖詠 2 分 47 秒；中間大量宣敘調短到只有二十秒上下。",
+  "keyTracks": [
+   "Herr, unser Herrscher",
+   "Von den Stricken meiner Sünden",
+   "Es ist vollbracht",
+   "Ruht wohl, ihr heiligen Gebeine"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1992 是 Archiv CD 的發行年，錄音年是 1964。三層數字並列**：(1) **原始錄音年 1964**——Apple 1452259846 的 copyright 是 **℗ 1964 Deutsche Grammophon**，掛名列出的四位獨唱者（Lear／Töpper／Haefliger／Prey）與 MB 這一筆的內容逐軌長度完全相同，是同一次錄音；(2) MB first-release-date **1992**（Archiv Produktion 435 947-2），與卡單一致——但要注意 **MB 這個 release-group 底下三筆 release 全部是 1992 年以後的 CD／數位，一筆 1964 年的黑膠都沒有**，也就是 MB 這一格記的是 CD 復刻鏈而不是原盤鏈；(3) 1964 年原盤（Archiv 黑膠）的編號與發行日 MB 未收。**卡單值維持 1992，行文不得正面斷言發行年**；要提年份就寫「1964 年的錄音」，那個數字有 Apple 的 ℗ 年當依據。**另外一個時序邊界要記住：Richter 1981 年就過世了，1992 年這套 CD 是他過世十一年後的復刻。**",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1534866839**，七店面全有，40 軌全有 previewUrl，逐軌與 MB Archiv 435 947-2 同名同序、**長度逐軌完全相同**（不是相近，是相同）。**探測層落空的原因是語言**——卡片與 MB 用德文《Johannes-Passion》，Apple 用英文《St. John Passion》，這是 c-98 第 2 條「盤名變形」在古典線的另一種形狀（**同一部作品的德文名對英文名**）。｜**次選 1452259846**（℗ 1964 DG，七店面，掛名完整列出四位獨唱者）：版權年是原始的，但**它的 `trackCount` 欄寫 41、實際只攤得出 40 軌**，而且**分軌方式與原盤不同**（把第 2–6 段併成一軌），依裁定 141 應以 MB 的 40 軌分法為準，所以主鍵取 1534866839 較安全；1452259846 可以當錄音年的證據來源。**1485926782（℗ 2019 Urania，24 軌）分軌太粗、不得取用。**｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Herr, unser Herrscher〉正是原曲開場。｜掛名：MB 的 artist-credit 只有「Johann Sebastian Bach; Karl Richter」——**四位獨唱者與兩個團體都沒有進 credit**，卡片取指揮，合策展層第 3 條；但 Apple 那兩筆的 artistName 把樂團排在最前（1534866839）或把獨唱者排在最前（1452259846），**藝人閘兩邊都會落空**。｜**擋下策展層可能的說法**：維基那句「以紀律、節奏的緊繃與表現的強度著稱」講的是他 **1958 到 1970 年間**的錄音，本張的 1964 落在這個區間內、可以引；但條目**沒有**說這套《約翰受難曲》是他的代表作或定本，也沒有給任何獎項，行文不得寫最高級。他過世於 1981 年，**1992 年的發行與他本人無關**，不得寫成「他晚年整理的版本」。"
+ },
+ {
+  "key": "desc2:Jacqueline du Pré|Dvořák: Cello Concerto / Waldesruhe",
+  "artist": "Jacqueline du Pré",
+  "album": "Dvořák: Cello Concerto / Waldesruhe",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3b7812ec 的欄位：title「Cello Concerto, Op. 104 / Waldesruhe, Op. 68 No. 5」、artist-credit「Dvořák; Jacqueline du Pré, Chicago Symphony Orchestra, Daniel Barenboim」、first-release-date **1971-09**、primary-type Album、secondary-types 空、轄下 6 個 release。",
+    "src": "https://musicbrainz.org/release-group/3b7812ec-59f7-3fc4-8a51-c11dc4bf7b47"
+   },
+   {
+    "f": "六筆 release **全部是 4 軌**：bdb7ec69（1971-09 US，**Angel Records S-36046**，12 吋黑膠，四軌 15:22／13:16／13:33／6:41）、e06991e1（2012 XW 數位，EMI Classics ASD 2751）、97bd6fbc（2014-07-16 JP，Warner WPCS-23057 CD）、81779100（2017-10-13 US 數位，Warner）、59f56779（2022-06-03 XW 數位，Warner）、026a38e3（無日期）。第 4 軌在 MB 上作「Waldesruhe \"Silent Woods\", Op. 68 No. 5」——**同一首曲子的德文名與英文名並列**。",
+    "src": "https://musicbrainz.org/release/bdb7ec69-11ef-4e02-91f6-b61cbc97379a"
+   },
+   {
+    "f": "Discogs release 2339386 是英國原盤 His Master's Voice **ASD 2751**（1971，立體聲黑膠），備註寫「℗ 1971 E.M.I. Records (The Gramophone Company Ltd.)」與「**Recorded in the Medinah Temple, Chicago**」；工作人員列大提琴獨奏 Jacqueline du Pré、指揮 Daniel Barenboim、樂團 Chicago Symphony Orchestra、製作人 Peter Andry、平衡工程師 Carson Taylor、內頁解說 W. A. Chislett。",
+    "src": "https://www.discogs.com/release/2339386"
+   },
+   {
+    "f": "英文維基〈Jacqueline du Pré〉：1945 年 1 月 26 日生於牛津、**1987 年 10 月 19 日過世，得年 42**；十一歲拿下英國最重要的大提琴獎、十六歲在 Wigmore Hall 正式登台、1965 年以艾爾加大提琴協奏曲在美國首演一舉成名；**1967 年 6 月 15 日與 Daniel Barenboim 在耶路撒冷西牆結婚**（六日戰爭前夕她取消了手上所有的演出飛去以色列）。**她的演奏生涯在二十多歲後半因多發性硬化症中斷**，此後以教學為主直到過世。",
+    "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+   },
+   {
+    "f": "同一條目談她的琴與晚期錄音：1970 年她換用費城製琴師 Sergio Peresson 做的一把現代琴，**「那把 Peresson 是她此後直到 1973 年生涯結束都在用的琴，包括第二次的艾爾加協奏曲現場錄音，以及她最後一次錄音室錄音——1971 年 12 月錄的蕭邦 g 小調大提琴奏鳴曲與法朗克 A 大調小提琴奏鳴曲的大提琴改編版」**。條目另記她 1968 年與 Zubin Mehta／柏林愛樂首演時拉的就是德弗札克這首 b 小調大提琴協奏曲。",
+    "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **694084609「Dvorak: Cello Concerto, Silent Woods」**，掛名 Jacqueline du Pré，releaseDate 1971-01-01，**copyright 欄是空的**，trackCount 4，**4 軌全部有 previewUrl**；四軌與 MB 的 Angel S-36046 同名同序、長度各差 6~7 秒（929／798／815／407 秒對 MB 的 922／796／813／401 秒）。",
+    "src": "https://music.apple.com/gb/album/694084609"
+   },
+   {
+    "f": "Apple 上另有三筆同錄音的不同包裝，都不是四軌的原盤形態：693626946「Dvořák & Elgar Cello Concertos」（℗ 1995 Parlophone，七店面，7 軌，把德弗札克與艾爾加兩首協奏曲併在一起、**沒有 Waldesruhe**）、696896682「Dvorák: Cello Concerto ... - Haydn: Cello Concerto No. 1」（℗ 2006 Parlophone，6 軌，配的是海頓、**也沒有 Waldesruhe**）、693625712「Dvorak: Cello Concerto in B Minor」（℗ 2004 EMI，6 軌）。",
+    "src": "https://music.apple.com/gb/album/693626946"
+   }
+  ],
+  "hookCandidates": [
+   "芝加哥 Medinah Temple：台上是她，台下指揮的是她結婚四年的丈夫",
+   "四軌、四十八分鐘——三個樂章之後，最後留一首六分四十一秒的〈林間靜謐〉"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：大提琴 Jacqueline du Pré，Daniel Barenboim 指揮芝加哥交響樂團，錄於芝加哥 Medinah Temple（Discogs 記載），製作人 Peter Andry、平衡工程師 Carson Taylor。四軌：協奏曲三個樂章 15:22／13:16／13:33，加上〈Waldesruhe（林間靜謐）〉6:41，全片約四十九分鐘。",
+  "keyTracks": [
+   "Cello Concerto in B minor, Op. 104: I. Allegro",
+   "Cello Concerto in B minor, Op. 104: II. Adagio ma non troppo",
+   "Waldesruhe (Silent Woods), Op. 68 No. 5"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1971。MB first-release-date **1971-09**（美國 Angel S-36046）、Discogs 英國原盤 ASD 2751 記 **1971** 且備註寫 ℗ 1971 EMI、Apple 那筆的 releaseDate 也是 1971-01-01，**三方一致，卡單值沒有爭議**。**但錄音年不等於 1971，而且查不到確切年月**：Discogs 只給了錄音地點（芝加哥 Medinah Temple）沒有給日期，MB 六筆 release 也都沒有錄音日期，Apple 那筆的 copyright 欄甚至是空的。**行文不得寫某一年錄的**，可以寫的是地點與「1971 年發行」。可用的時間邊界有來源：du Pré 1970 年才換用 Peresson 琴、生涯 1973 年結束（英文維基）。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **694084609**，七店面全有，**4 軌全有 previewUrl，軌數與曲序與 MB 的 Angel S-36046 原盤完全相同**，長度各差 6~7 秒。這是本組覆核裡最乾淨的一筆——**沒有加曲、沒有併盤、沒有重排**。｜**探測層落空的原因是第 4 首曲子的名字**：卡片與 MB 用德文《Waldesruhe》，Apple 用英文《Silent Woods》（MB 那筆自己是並列的「Waldesruhe \"Silent Woods\"」），**同一首曲子兩個語言的名字**——與同組 Karl Richter 那張《Johannes-Passion》對《St. John Passion》是同一種形狀。｜**要擋的三個近似品項都缺〈Waldesruhe〉**：693626946（配艾爾加，7 軌）、696896682（配海頓，6 軌）、693625712（6 軌）——**依 c-97 第 10 條，缺一整首就是缺一整首，不得取用**；策展層第 6 條特別用「把同碟的第二首曲目寫進盤名」來區分本張與池中的 Rostropovich 版，這幾筆正好把那個區分鍵拿掉了。｜固定試聽取首軌沒有問題：Apple 第 1 軌就是協奏曲第一樂章。｜掛名：MB 的 artist-credit 是「Dvořák; Jacqueline du Pré, Chicago Symphony Orchestra, Daniel Barenboim」，卡片取獨奏者，合策展層第 3 條「協奏曲取獨奏者」。｜**時序主張要擋**：du Pré 1987 年過世、演奏生涯 1973 年就中斷，**但這張不是她的最後一次錄音**——英文維基明寫她**最後一次錄音室錄音是 1971 年 12 月**的蕭邦大提琴奏鳴曲與法朗克奏鳴曲改編版。行文不得寫「生前最後的錄音」。可以寫的是有來源的：她 1968 年與 Mehta／柏林愛樂首演時拉的就是這首德弗札克；以及她與指揮 Barenboim 是夫妻（1967 年 6 月 15 日結婚）。"
  }
 ]
