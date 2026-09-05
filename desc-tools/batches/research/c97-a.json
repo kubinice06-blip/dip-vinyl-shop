@@ -1,0 +1,400 @@
+[
+ {
+  "key": "desc2:Rhythim Is Rhythim|Nude Photo",
+  "artist": "Rhythim Is Rhythim",
+  "album": "Nude Photo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cfd4c8fd 的欄位：title「Nude Photo」、artist-credit「Rhythim Is Rhythim」、first-release-date 1987、primary-type Single、secondary-types 空陣列、轄下 3 個 release（1987 US、1987 US、1992 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/cfd4c8fd-d8c9-3934-a9e9-a2213a838d2f"
+   },
+   {
+    "f": "該 release-group 的 1987 年原盤 release e5c2c64e 欄位：1987、US、status Official、廠牌欄 Transmat、編號 MS-02、載體 12\" Vinyl、3 軌。逐軌曲名與曲長依序為〈Nude Photo〉7:26、〈The Dance (Living Room mix)〉6:59、〈Move It (Only mix)〉3:36。",
+    "src": "https://musicbrainz.org/release/e5c2c64e-6176-4117-99a1-63c837fe111f"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 1987 US release 4741b6b4 的 artist-credit 欄位印成「Rythim Is Rythim」（少兩個 h），但指向的藝人實體仍是同一個 MBID 159edf29-c4ae-49c7-b1e6-1f082c60d4e3「Rhythim Is Rhythim」；該筆包裝欄記 Cardboard/Paper Sleeve。",
+    "src": "https://musicbrainz.org/release/4741b6b4-4c15-4a9c-a3e4-2ad4a4db10e9"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉記：May 1963 年 4 月 6 日生於密西根州 Belleville，與 Juan Atkins、Kevin Saunderson 合稱 The Belleville Three；並記「His production career began in 1987 with 'Nude Photo' (written by Thomas Barnett)」。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "同一條目記 Transmat 是他自營的廠牌，並寫「May's Transmat Records label was the home of his best material, cuts like 'Nude Photo,' 'Strings of Life,' 'Kaos' and 'It Is What It Is,' most produced from 1987 to 1989 as Rhythim Is Rhythim」——四首代表作與 Rhythim Is Rhythim 這個掛名綁在一起。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 409591673（Rhythim Is Rhythim）逐店面 lookup（entity=album、limit=200）於 gb／us／de／nl 各只回 5 張，清單為《Innovator - Soundtrack for the Tenth Planet》《Beyond The Dance - Single》《Icon (Reconstruction by Vince Watson) - Single》《Icon (Remixed & Reconstructed) - Single》《Strings Of Life - Single》，沒有《Nude Photo》；另以 artistId 16003135（Derrick May）於 gb／us／jp／de／nl lookup 亦各只回 4 張，同樣沒有這張。",
+    "src": "https://itunes.apple.com/lookup?id=409591673&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "掛名有兩種印法，同一批壓片上就少了兩個 h",
+   "A 面七分半，B 面兩軌各自標著「mix」"
+  ],
+  "sound": "MB 1987 年 Transmat MS-02 原盤逐軌曲長：A 面〈Nude Photo〉7:26，B 面〈The Dance (Living Room mix)〉6:59 與〈Move It (Only mix)〉3:36——三軌都掛 mix 或原題，一張 12 吋只放三首、單軌長度接近七分鐘（MB release e5c2c64e 曲長欄）。",
+  "keyTracks": [
+   "Nude Photo",
+   "The Dance (Living Room mix)",
+   "Move It (Only mix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1987 與 MB first-release-date 1987 一致；英文維基〈Derrick May (musician)〉亦記其製作生涯始於 1987 年的〈Nude Photo〉。MB 未給月份，Transmat 編號 MS-02／MS-06 的先後不足以當日期證據，未推月。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 Single（已照實寫入 facts）。掛名說明：Derrick May（MBID 371c8525-8111-4497-83ba-1ead9d7ed148）、Rhythim Is Rhythim（159edf29-c4ae-49c7-b1e6-1f082c60d4e3）、Mayday 是同一人的三個掛名，維基條目明寫「He recorded under the names Rhythim Is Rhythim and Mayday」，行文不可寫成兩個人。擋下策展層說法：curatorWhy 稱本張是「Derrick May 以 Rhythim Is Rhythim 名義發行的第一張 12 吋」、且「比同年五月的《Strings of Life》(MS-004) 更早」——維基只支持「製作生涯始於 1987 年的〈Nude Photo〉」，並未寫「第一張 12 吋」，MB 也只給到年份、無月份，以目錄號推先後屬序數推論，未採用。試聽：逐店面 artist lookup 覆核後維持 unavailable（gb／us／de／nl 皆無此碟）。"
+ },
+ {
+  "key": "desc2:Rhythim Is Rhythim|It Is What It Is",
+  "artist": "Rhythim Is Rhythim",
+  "album": "It Is What It Is",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 34e5e5de 的欄位：title「It Is What It Is」、artist-credit「Rhythim Is Rhythim」、first-release-date 1988-05、primary-type EP、secondary-types 空陣列、轄下 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/34e5e5de-b635-3327-926a-3538797213c4"
+   },
+   {
+    "f": "唯一那筆 release fea6da7f 的欄位：1988-05、US、status Official、廠牌欄 Transmat、編號 MS-06、載體 12\" Vinyl、3 軌，逐軌曲名依序為〈It Is What It Is (Majestic mix)〉〈Feel Surreal (Subconscious mix)〉〈Beyond the Dance (Bizarro mix)〉，三軌的曲長欄皆為空。",
+    "src": "https://musicbrainz.org/release/fea6da7f-5ee4-4055-b82d-7057c5ae077e"
+   },
+   {
+    "f": "Transmat 官方網站的目錄頁〈Rhythim is Rhythim – It is What it is [MS006]〉記：catalogue number MS006、release date May 1988、format「Vinyl, 12″, 45 RPM, 33 ⅓ RPM」、country US；曲目為 A 面〈It Is What It Is (Majestic Mix)〉Edited by Juan、B1〈Feel Surreal (Subconscious Mix)〉Edited by Mayday、B2〈Beyond The Dance (Bizarro Mix)〉Edited by Mayday；credits 欄記「Producer, Mixed By – Mayday」與「℗&© 1988 Transmat – Mayday Music BMI」。",
+    "src": "https://transmatrecords.com/2019/11/02/rhythim-is-rhythim-it-is-what-it-is-ms006/"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉把〈It Is What It Is〉與〈Nude Photo〉〈Strings of Life〉〈Kaos〉並列為 Transmat 上的代表作，並記這批作品多數產於 1987 至 1989 年、掛 Rhythim Is Rhythim 之名。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 409591673（Rhythim Is Rhythim）於 gb／us／de／nl 逐店面 lookup（entity=album、limit=200）各只回 5 張，清單中沒有《It Is What It Is》；Derrick May（16003135）名下 4 張亦無。",
+    "src": "https://itunes.apple.com/lookup?id=409591673&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "三軌全部標成「mix」，連原版都沒放進去",
+   "同一張盤，A 面與 B 面的編輯掛不同名字"
+  ],
+  "sound": "MB 唯一那筆 1988 年 Transmat MS-06 原盤的三軌曲名全部帶括號後綴：〈It Is What It Is (Majestic mix)〉〈Feel Surreal (Subconscious mix)〉〈Beyond the Dance (Bizarro mix)〉；Transmat 官網記這張 12 吋 A 面走 45 RPM、B 面走 33 ⅓ RPM，兩面轉速不同。MB 三軌曲長欄皆空，無可引的秒數。",
+  "keyTracks": [
+   "It Is What It Is (Majestic mix)",
+   "Feel Surreal (Subconscious mix)",
+   "Beyond the Dance (Bizarro mix)"
+  ],
+  "status": "thin",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988-05 一致，Transmat 官網目錄頁亦標 1988；無分歧。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。判 thin 的理由：可查證細節只有五項——MB 的 rg 欄位、唯一 release 的國別／廠牌／編號／載體、三軌曲名（MB 曲長欄全空）、Transmat 官網記的製作與編輯掛名（Producer/Mixed By 為 Mayday、A 面編輯掛 Juan）、維基把本曲列入 Transmat 代表作。無專屬條目、無評論、無錄音細節，串流亦查無。素材預算：正文以 MS-06 這張 12 吋的三軌結構＋兩位編輯的分工＋維基的代表作定位為骨幹，寫 120–180 字。掛名同《Nude Photo》一筆（Derrick May／Rhythim Is Rhythim／Mayday 為同一人，Transmat 官網把製作人直接印成 Mayday）。試聽：逐店面 artist lookup 覆核後維持 unavailable。"
+ },
+ {
+  "key": "desc2:Derrick May|Mix-Up, Volume 5",
+  "artist": "Derrick May",
+  "album": "Mix-Up, Volume 5",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b99d09b4 的欄位：title「Mix‐Up, Volume 5」（連字號為 U+2010）、artist-credit「Derrick May」、first-release-date 1997、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 3 個 release，status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/b99d09b4-1218-3354-9738-54b7883ed7cd"
+   },
+   {
+    "f": "轄下三筆 release 的國別與標題不同：a94fb95e 為 1997／XE／Official《Mix‐Up, Volume 5》、36c0b178 為 1997／JP／Official《Mix‐Up, Volume 5》、96e3ba71 為 1997／GB／Official，標題卻是《The Mayday Mix》——同一份混音在英國換了盤名。",
+    "src": "https://musicbrainz.org/release-group/b99d09b4-1218-3354-9738-54b7883ed7cd"
+   },
+   {
+    "f": "日本盤 release 36c0b178 的欄位：1997、JP、status Official、廠牌欄 Sony Music Entertainment (Japan) Inc.、編號 SRCS 8250、載體 CD、32 軌。首軌是〈Maydays Intro (A Mayday mix Thang)〉1:24，末軌是〈Meditative Fusion (Kenny Larkin remix)〉2:49；32 軌中最長的是〈Mindless Funk〉4:20，最短的是〈Prelude〉0:44。",
+    "src": "https://musicbrainz.org/release/36c0b178-a368-35d8-b8b3-f6aa0c946308"
+   },
+   {
+    "f": "同一份曲目表裡有多首與 Detroit／Chicago 場景同名的曲目被切成一分多鐘的片段，例如〈Spank‐spank〉3:55、〈French Kiss〉2:28、〈1999〉1:22、〈Car Crash Mixer〉1:49、〈Convextion〉2:36、〈Club MCM (K.A. Happy mix)〉2:25（MB 日本盤逐軌曲長欄）。",
+    "src": "https://musicbrainz.org/release/36c0b178-a368-35d8-b8b3-f6aa0c946308"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉的作品列表把《The Mayday Mix》(1997) 列為 DJ mix，與專輯《Innovator》(1996) 分開列。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 16003135（Derrick May）於 gb／us／jp／de／nl 逐店面 lookup（entity=album、limit=200）各只回 4 張——《Mysterious Traveller》《Innovator》《Innovator - Soundtrack for the Tenth Planet》《Love in Music - Single》，既沒有《Mix-Up, Volume 5》也沒有《The Mayday Mix》。",
+    "src": "https://itunes.apple.com/lookup?id=16003135&entity=album&limit=200&country=jp"
+   }
+  ],
+  "hookCandidates": [
+   "七十幾分鐘切成三十二軌，最短那軌只有四十四秒",
+   "日本叫第五輯，英國換了個名字重出一次"
+  ],
+  "sound": "MB 日本盤 SRCS 8250 的 32 軌曲長分佈：〈Prelude〉0:44、〈A Little Suntin Suntin〉0:51、〈Soundz in My Head〉0:58 三軌不到一分鐘，最長的〈Mindless Funk〉也只有 4:20——整張沒有任何一軌超過五分鐘，是連續混音被切分軌的典型索引（MB release 36c0b178 逐軌曲長欄）。",
+  "keyTracks": [
+   "Maydays Intro (A Mayday mix Thang)",
+   "French Kiss",
+   "Car Crash Mixer",
+   "Mindless Funk",
+   "Meditative Fusion (Kenny Larkin remix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1997 與 MB first-release-date 1997 一致，轄下三筆 release 也全標 1997；無分歧。MB 未給月份，未推月。",
+  "notes": "盤名分歧已入 facts：MB rg 標題用 U+2010 連字號，英國那筆 release 的標題是《The Mayday Mix》。卡片採日本盤盤名（策展層依裁定第 85 條定的），本層照實記錄三個寫法。擋下策展層說法：curatorWhy 沒有問題，但 curatorRisk 提到的「DJ 混音輯的串流授權普遍缺席」是推測而非事實，未寫進 facts——只寫實測的 lookup 結果。試聽：逐店面 artist lookup 覆核後維持 unavailable。"
+ },
+ {
+  "key": "desc2:Phuture|We Are Phuture",
+  "artist": "Phuture",
+  "album": "We Are Phuture",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 38bec4a4 的欄位：title「We Are Phuture」、artist-credit「Phuture」、first-release-date 1988、primary-type EP、secondary-types 空陣列、轄下 3 個 release（1988 US、1996-07 GB、1996 GB），status 全部 Official。1996 年那兩筆的標題各是《We Are Phuture Remix EP 2》與《We Are Phuture: Remix EP》。",
+    "src": "https://musicbrainz.org/release-group/38bec4a4-4b4e-3a69-88d1-c0961a5063f4"
+   },
+   {
+    "f": "1988 年原盤 release 5f8e99cd 的欄位：1988、US、status Official、廠牌欄 Trax Records、編號 TX165、載體 12\" Vinyl、barcode 411570016511、3 軌。逐軌曲名與曲長依序為〈We Are Phuture〉8:38、〈Slam〉5:40、〈Spank-Spank〉4:58。",
+    "src": "https://musicbrainz.org/release/5f8e99cd-2aa3-44ad-b50c-908127af9467"
+   },
+   {
+    "f": "英文維基〈Trax Records〉記：Larry Sherman 於 1983 年在芝加哥創辦 Trax（實際運作自 1984 年起），並在目錄中列出 Phuture 的「We Are Phuture EP」編號 TX165、以及〈Acid Tracks〉編號 TX142；同條目記該廠牌因使用回收黑膠而有「poor-quality vinyl pressings (partially due to the use of recycled vinyl)」之譏，並長年陷於版稅與版權訴訟。",
+    "src": "https://en.wikipedia.org/wiki/Trax_Records"
+   },
+   {
+    "f": "英文維基〈Phuture〉記：樂團 1985 年由 Earl「Spanky」Smith Jr.、DJ Pierre（Nathaniel Pierre Jones）與 Herbert「Herb J」Jackson 組成；1987 年的〈Acid Tracks〉「considered to be the first acid house record and credited for inventing and defining the genre」，做法是把 Roland TB-303 的 tone sequences 即時調變，產出「resonant and squelchy sound」。",
+    "src": "https://en.wikipedia.org/wiki/Phuture"
+   },
+   {
+    "f": "同一條目記〈Acid Tracks〉「originally...recorded to tape and played by DJ Ron Hardy at the Chicago nightclub Music Box, supposedly already in 1985」，1987 年才由 Trax 正式發行；並記「'We are Phuture' was released in 1988」，樂團的曲子「gloomy and monotonous in nature; many tracks are very long, at times passing the 10-minute mark」。",
+    "src": "https://en.wikipedia.org/wiki/Phuture"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 1601915280「We Are Phuture - Single」的欄位：artistName Phuture、releaseDate 1988-01-01、trackCount 3、copyright「℗ 1988 Trax Records」；逐軌為〈We Are Phuture〉515 秒、〈Slam〉338 秒、〈Spank Spank〉300 秒，與 MB 1988 年 TX165 原盤的三軌曲序與曲長相符。同一店面另有 collectionId 894076169，盤名與曲序相同但 copyright 記「℗ 2000 Trax Records」，是後來的版權年條目。",
+    "src": "https://music.apple.com/gb/album/1601915280"
+   }
+  ],
+  "hookCandidates": [
+   "同一張 EP 在同一個店面上了兩次，只有版權年不一樣",
+   "A 面八分三十八秒，同一台 303 被推到底"
+  ],
+  "sound": "MB 1988 年 Trax TX165 原盤三軌曲長：〈We Are Phuture〉8:38、〈Slam〉5:40、〈Spank-Spank〉4:58——A 面單軌就佔掉八分半，對應維基所記本團曲子「very long, at times passing the 10-minute mark」的寫法；維基同時記其 acid 聲響來自 Roland TB-303 的即時調變（MB release 5f8e99cd 曲長欄、英文維基〈Phuture〉）。",
+  "keyTracks": [
+   "We Are Phuture",
+   "Slam",
+   "Spank-Spank"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988 一致，英文維基〈Phuture〉亦記「'We are Phuture' was released in 1988」，Apple 條目 releaseDate 記 1988-01-01；無分歧。MB 未給月份，未推月。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。**推翻試聽 unavailable**：探測記 gb/us/jp/de/fr/ie/ca/au 八店面「9→0」（搜到 9 筆但全部不匹配），改打 artistId 16779831 的 lookup 後在 gb／us／nl 都命中，正解 collectionId 1601915280（gb，℗1988 Trax，3 軌，曲長對得上 MB 原盤）。另一筆 894076169 曲序相同但 ℗2000，屬同名雙胞胎、不採；2018 年的 1645402312《We Are Phuture (Ricardo Villalobos Phutur I - IV Remixes)》為別碟。擋下策展層說法：curatorWhy 稱本張是「Phuture 在《Acid Tracks》之後的第二張 12 吋」——維基只記兩張的發行年（1987／1988），沒有「第二張」的排序陳述，序數未採用。"
+ },
+ {
+  "key": "desc2:Basic Channel|BCD-2",
+  "artist": "Basic Channel",
+  "album": "BCD-2",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 17f80ceb 的欄位：title「BCD‐2」（連字號為 U+2010）、artist-credit「Basic Channel」、first-release-date 2008-05、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（2008-05 DE、2008-08-07 XW），status 皆 Official；XW 那筆的標題用的是 ASCII 連字號「BCD-2」。",
+    "src": "https://musicbrainz.org/release-group/17f80ceb-4cd5-3158-8dd5-6c1b5267b845"
+   },
+   {
+    "f": "德國盤 release 1b43a144 的欄位：2008-05、DE、status Official、廠牌欄 Basic Channel、編號 BCD-2、載體 CD、barcode 827670143123、6 軌。逐軌曲名與曲長依序為〈Enforcement〉13:13、〈Phylyps Trak〉9:58、〈Inversion〉17:45、〈Octagon〉12:58、〈Octaedre〉13:10、〈Phylyps Trak II/II〉12:52。",
+    "src": "https://musicbrainz.org/release/1b43a144-f4be-4365-b376-947d93586550"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：由 Moritz von Oswald 與 Mark Ernestus 組成，「originated in Berlin in 1993」；von Oswald 當時是柏林 Tresor 廠牌的 in-house producer，Ernestus 於 1989 年開了 Hard Wax 唱片行。兩人為了達到想要的音質「founded their own mastering house Dubplates & Mastering」。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記：1993 至 1994 年間他們以不同掛名在 Basic Channel 自營廠牌上發了九張 12 吋，唱片上「minimal information and cryptic lettering, leaving the origin of the projects obscure」；並記他們出過兩張整編 CD 收錄這批 12 吋的編輯版——《BCD》(1995) 與《BCD-2》(2008)。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記〈Phylyps Trak〉是 1993 年的 BC-02、續作於 1994 年以 BC-09 發行；並記兩人的「minimalist sound and incorporation of delay effects inspired by dub reggae helped to define the nascent dub techno scene」，另有 Rhythm & Sound 與 Maurizio 兩個掛名，以及 Chain Reaction、Main Street、Burial Mix 等後續廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 286664836「BCD-2」的欄位：artistName Basic Channel、releaseDate 2008-05-01、trackCount 6，與 MB 德國盤的 6 軌相符；同一 artistId 47295960 的 gb／de／nl 目錄共 14 張，另含《BCD》(collectionId 47297384、1995-02-04、11 軌) 與《Phylyps Trak II》(277154046、2 軌)。",
+    "src": "https://music.apple.com/gb/album/286664836"
+   }
+  ],
+  "hookCandidates": [
+   "六軌，每一軌都超過九分半",
+   "十三年前那張收剩下的，十三年後才補齊"
+  ],
+  "sound": "MB 2008 年 Basic Channel BCD-2 原盤六軌曲長：〈Enforcement〉13:13、〈Phylyps Trak〉9:58、〈Inversion〉17:45、〈Octagon〉12:58、〈Octaedre〉13:10、〈Phylyps Trak II/II〉12:52——六軌沒有一軌短於九分半，最長的〈Inversion〉近十八分鐘；維基記這批原始 12 吋的做法是最小限度的聲響加上取自 dub reggae 的延遲效果（MB release 1b43a144 曲長欄、英文維基〈Basic Channel〉）。",
+  "keyTracks": [
+   "Enforcement",
+   "Phylyps Trak",
+   "Inversion",
+   "Octagon",
+   "Phylyps Trak II/II"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2008 與 MB first-release-date 2008-05 一致，英文維基〈Basic Channel〉亦把《BCD-2》記為 2008 年，Apple 條目 releaseDate 記 2008-05-01；無分歧。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。盤名 U+2010 與 ASCII 兩種寫法都在 facts 裡。試聽覆核：探測記 ready／gb／286664836／6 軌，回查 Apple 條目 trackCount 6 與 MB 德國盤 6 軌一致，判定正確，維持 ready。擋下策展層說法：curatorWhy 稱本張「把 1993–1995 年間未收進 1995 年《BCD》的 12 吋集中成一張」——維基只寫「two compilation CDs collecting edited versions of their 12-inch work」，沒有寫 BCD-2 收的是 BCD 的補集，該推論無來源、未寫進 facts。另 curatorWhy 稱 Porter Ricks「非同一對人」亦與本卡正文無關，未採。"
+ },
+ {
+  "key": "desc2:Basic Channel|Phylyps Trak",
+  "artist": "Basic Channel",
+  "album": "Phylyps Trak",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8ae7525f 的欄位：title「Phylyps Trak」、artist-credit「Basic Channel」、first-release-date 1993-10、primary-type EP、secondary-types 空陣列、轄下 3 個 release（1993-10、2003-11、2008-02-04），三筆全為 DE／Official。",
+    "src": "https://musicbrainz.org/release-group/8ae7525f-11a6-39d3-8494-0bddedf0b7ea"
+   },
+   {
+    "f": "1993 年原壓 release 374f98cd 的欄位：1993-10、DE、status Official、廠牌欄 Basic Channel、編號 BC-02、載體 12\" Vinyl、3 軌。逐軌曲名與曲長依序為〈Phylyps Trak〉9:46、〈Phylyps Base〉7:12、〈Axis〉5:01。",
+    "src": "https://musicbrainz.org/release/374f98cd-1168-49f2-8948-2ad122d7e774"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：「'Phylyps Trak' appeared as BC-02 in 1993, with a sequel released in 1994 as BC-09」——本碟與 1994 年的續作是兩個不同的目錄編號。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記 Basic Channel 由 Moritz von Oswald 與 Mark Ernestus 於 1993 年在柏林成立，1993–1994 年間以不同掛名發了九張 12 吋，唱片上只有最小限度的資訊與難辨的字樣；兩人另設 Dubplates & Mastering 母帶室。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 277093544「Phylyps Trak - EP」的欄位：artistName Basic Channel、releaseDate 1993-01-01、trackCount 3、copyright「℗ 2008 Basic Channel 1993」；逐軌為〈Phylyps Trak〉597 秒、〈Phylyps Base〉447 秒、〈Axis〉314 秒，曲序與 MB 1993 年 BC-02 原盤一致。同一目錄下另有 collectionId 277154046《Phylyps Trak II》（1994-01-01、2 軌），是不同的碟。",
+    "src": "https://music.apple.com/gb/album/277093544"
+   }
+  ],
+  "hookCandidates": [
+   "三軌，A 面接近十分鐘",
+   "唱片上幾乎什麼字都沒印，只留一個編號"
+  ],
+  "sound": "MB 1993 年 Basic Channel BC-02 原盤三軌曲長：〈Phylyps Trak〉9:46、〈Phylyps Base〉7:12、〈Axis〉5:01；Apple 同碟條目的三軌各為 597／447／314 秒，比 MB 的原盤各長十餘秒，是不同母帶的版本差。維基把這批唱片的做法記為最小限度的資訊與取自 dub reggae 的延遲效果（MB release 374f98cd、Apple collectionId 277093544、英文維基〈Basic Channel〉）。",
+  "keyTracks": [
+   "Phylyps Trak",
+   "Phylyps Base",
+   "Axis"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-10 一致，英文維基亦記 BC-02 為 1993 年。Apple 條目 releaseDate 記 1993-01-01（月日為店面填充值）、copyright 記「℗ 2008 Basic Channel 1993」，年份同為 1993，無實質分歧。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。**推翻試聽 unavailable**：探測八店面全記「0→0」，改打 artistId 47295960 的 lookup 後在 gb／de／nl 都命中，正解 collectionId 277093544（gb，3 軌，曲序與 MB 原盤一致）。⚠ 同目錄下的 277154046 是《Phylyps Trak II》（1994、2 軌），不可誤配。掛名說明：Basic Channel／Maurizio／Rhythm & Sound 是同一對人（Moritz von Oswald 與 Mark Ernestus）的不同掛名，維基明列，行文不得寫成不同團體。擋下策展層說法：curatorWhy 稱本張是「Basic Channel 自營廠牌的第二張 12 吋」——維基只記編號 BC-02 與年份，未寫排序，序數未採用；curatorWhy 另稱「池中的《BCD》整編收的是 II、本張的內容不在其中」，無來源可查，未採用（且 MB 顯示《BCD-2》的第二軌就叫〈Phylyps Trak〉，與該說法方向相反）。"
+ },
+ {
+  "key": "desc2:Rhythm & Sound|Rhythm & Sound",
+  "artist": "Rhythm & Sound",
+  "album": "Rhythm & Sound",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bd5b850c 的欄位：title「Rhythm & Sound」、artist-credit「Rhythm & Sound」、first-release-date 2001-10-01、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（2001-10-01 XW、2001-10-13 DE、2005-06-12 DE），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/bd5b850c-acc9-3ef3-8601-e8b669668003"
+   },
+   {
+    "f": "release 184de999 的欄位：2001-10-01、XW、status Official、廠牌欄 Rhythm & Sound、編號 RS-01、10 軌。逐軌曲名與曲長依序為〈No Partial〉6:15、〈Trace〉7:24、〈Mango Drive〉7:12、〈Distance〉4:42、〈Smile〉9:12、〈Outward〉5:46、〈Roll Off〉9:34、〈Carrier〉6:27、〈Range〉6:29、〈Imprint〉16:51。",
+    "src": "https://musicbrainz.org/release/184de999-742e-4745-9b2e-c51423f9ce18"
+   },
+   {
+    "f": "同一筆 release 的逐軌 artist-credit 欄顯示十軌裡只有第五軌〈Smile〉掛「Rhythm & Sound w/ Savage」，其餘九軌全部只掛「Rhythm & Sound」。",
+    "src": "https://musicbrainz.org/release/184de999-742e-4745-9b2e-c51423f9ce18"
+   },
+   {
+    "f": "英文維基〈Rhythm & Sound〉記：這是 Moritz von Oswald 與 Mark Ernestus 的合作掛名，作品掛在 Burial Mix 廠牌之下；並記他們以此名做的是「more faithful takes on Jamaican dub in collaboration with vocalists such as Paul St. Hilaire, Cornell Campbell, and the Love Joys」。",
+    "src": "https://en.wikipedia.org/wiki/Rhythm_%26_Sound"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：同一對人以 Basic Channel、Rhythm & Sound、Maurizio 三個掛名發表作品，並設有 Chain Reaction、Main Street Records、Burial Mix 等廠牌；其「minimalist sound and incorporation of delay effects inspired by dub reggae helped to define the nascent dub techno scene」。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 49295436「Rhythm & Sound」的欄位：artistName Rhythm & Sound、releaseDate 2001-01-01、trackCount 10、copyright「℗ 2001 Basic Channel」；逐軌為〈No Partial〉375 秒、〈Trace〉444 秒、〈Mango Drive〉432 秒、〈Distance〉282 秒、〈Smile〉553 秒、〈Outward〉347 秒、〈Roll Off〉574 秒、〈Carrier〉387 秒、〈Range〉390 秒、〈Imprint〉1011 秒，十軌曲序與曲長皆與 MB 的 RS-01 相符。",
+    "src": "https://music.apple.com/gb/album/49295436"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡只有一軌有人聲，其他九軌沒有",
+   "最後一軌十六分五十一秒，佔掉整張的四分之一"
+  ],
+  "sound": "MB 的 RS-01 十軌曲長：〈No Partial〉6:15 起，中段〈Smile〉9:12、〈Roll Off〉9:34，末軌〈Imprint〉16:51；十軌中只有〈Smile〉的 artist-credit 帶人聲掛名（w/ Savage），其餘九軌是純器樂掛名。維基把這個掛名的做法記為對牙買加 dub 較忠實的版本，與 Basic Channel 那條記的 dub reggae 延遲效果同源（MB release 184de999 曲長與逐軌 credit 欄、英文維基〈Rhythm & Sound〉〈Basic Channel〉）。",
+  "keyTracks": [
+   "No Partial",
+   "Smile",
+   "Roll Off",
+   "Carrier",
+   "Imprint"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2001 與 MB first-release-date 2001-10-01 一致；Apple 條目 releaseDate 記 2001-01-01（月日為店面填充值）、copyright 記 ℗ 2001，年份相同，無實質分歧。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。試聽覆核：探測記 ready／gb／49295436／10 軌，回查 Apple 逐軌曲序與曲長與 MB 的 RS-01 完全對得上，判定正確，維持 ready。自我同名卡（掛名與盤名相同）已在 facts 內以 MBID 與 Apple collectionId 兩路標定。擋下策展層說法：curatorWhy 稱本張是「Rhythm & Sound 名義發行的第一張整編」、且「把 1996–1999 年間的 12 吋集中成一張」——維基與 MB 都沒有這兩項陳述（維基把該掛名的活躍期記為 1997–2002），序數與收錄範圍均無來源，未採用。"
+ },
+ {
+  "key": "desc2:Rhythm & Sound|See Mi Yah",
+  "artist": "Rhythm & Sound",
+  "album": "See Mi Yah",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b90a3567 的欄位：title「See Mi Yah」、artist-credit「Rhythm & Sound」、first-release-date 2005-01-17、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（2005-01-17 DE、status 未標；2005-03-11 XW／Official；2005-03-28 DE／Official）。",
+    "src": "https://musicbrainz.org/release-group/b90a3567-315b-3bd7-b7d1-219ca7422b6a"
+   },
+   {
+    "f": "release eeaf5f98 的欄位：2005-03-11、XW、status Official、廠牌欄 Burial Mix、編號 BMD-4、11 軌。逐軌曲名與曲長依序為〈See Mi Yah〉3:56、〈Dem Never Know〉3:56、〈Rise and Praise〉3:49、〈Truly〉4:11、〈Lightning Storm〉5:50、〈Let Jah Love Come〉5:12、〈Boss Man〉3:33、〈Poor People Must Work〉3:30、〈Let We Go〉4:27、〈Free for All〉4:27、〈See Mi Version〉4:00。",
+    "src": "https://musicbrainz.org/release/eeaf5f98-dd88-449a-9759-d6cff5afb22e"
+   },
+   {
+    "f": "同一筆 release 的逐軌 artist-credit 欄逐軌掛不同歌手：〈See Mi Yah〉w/ Willi Williams、〈Dem Never Know〉w/ Jah Cotton、〈Rise and Praise〉w/ Koki、〈Truly〉w/ Freddy Mellow、〈Lightning Storm〉w/ Rod of Iron、〈Let Jah Love Come〉w/ Sugar Minott、〈Boss Man〉w/ Walda Gabriel、〈Poor People Must Work〉w/ Bobbo Shanti、〈Let We Go〉w/ Ras Donovan & Ras Perez、〈Free for All〉w/ Paul St. Hilaire；末軌〈See Mi Version〉只掛 Rhythm & Sound。",
+    "src": "https://musicbrainz.org/release/eeaf5f98-dd88-449a-9759-d6cff5afb22e"
+   },
+   {
+    "f": "英文維基〈Rhythm & Sound〉記《See Mi Ya》(2005) 以三種載體發行——CD 編號 BMD-4、LP 編號 BMLP-4，以及一套 7 吋盒裝 BM-14-20；並記 2006 年另有 remix 集《See Mi Ya Remixes》(BMXD-1)。同條目列出的合作歌手包含 Paul St. Hilaire、Jah Batta、Jennifer Lara 與 the Chosen Brothers。",
+    "src": "https://en.wikipedia.org/wiki/Rhythm_%26_Sound"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 52996963「See Mi Yah」的欄位：artistName Rhythm & Sound、releaseDate 2005-03-11、trackCount 11、copyright「℗ 2005 Basic Channel」；十一軌的曲序與曲名與 MB 的 BMD-4 完全一致，曲長依序為 236／236／229／251／350／312／213／210／267／267／240 秒。",
+    "src": "https://music.apple.com/gb/album/52996963"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌，十個不同的人輪流上麥克風",
+   "最後一軌把人聲收掉，只剩底下那條節奏"
+  ],
+  "sound": "MB 的 BMD-4 十一軌曲長集中在 3:30 到 5:50 之間，最短〈Poor People Must Work〉3:30、最長〈Lightning Storm〉5:50；逐軌 artist-credit 顯示前十軌各掛一位（或一組）歌手、末軌〈See Mi Version〉只掛 Rhythm & Sound（MB release eeaf5f98 曲長與逐軌 credit 欄）。",
+  "keyTracks": [
+   "See Mi Yah",
+   "Let Jah Love Come",
+   "Lightning Storm",
+   "Free for All",
+   "See Mi Version"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2005 與 MB first-release-date 2005-01-17 一致。分歧：MB 的 XW 盤 date 為 2005-03-11、Apple 條目 releaseDate 亦記 2005-03-11，DE 盤為 2005-03-28，七吋盒裝那筆為 2005-01-17；同屬 2005 年，不影響卡片年份，交主線知悉。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。試聽覆核：探測記 ready／gb／52996963／11 軌，回查 Apple 曲序與曲名與 MB 的 BMD-4 逐軌一致，判定正確，維持 ready。歌手名單以 MB 逐軌 artist-credit 為準（維基列的四位裡只有 Paul St. Hilaire 出現在本碟 BMD-4 的逐軌 credit，Jah Batta／Jennifer Lara／Chosen Brothers 屬該掛名的其他作品，行文不要混寫進本碟）。擋下策展層說法：curatorWhy 稱「同一段節奏由七位牙買加歌手分別演唱」——MB 逐軌 credit 顯示的是十位（組）不同掛名、不是七位，且「同一段節奏」在 MB 與維基都查不到出處，兩項均未寫進 facts。廠牌 Burial Mix 與 Hyperdub 的藝人 Burial 無關，下游不要混用。"
+ },
+ {
+  "key": "desc2:F.U.S.E.|Dimension Intrusion",
+  "artist": "F.U.S.E.",
+  "album": "Dimension Intrusion",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d31b0c34 的欄位：title「Dimension Intrusion」、artist-credit「F.U.S.E.」、first-release-date 1993-06-07、primary-type Album、secondary-types 空陣列、轄下 9 個 release（1993-06-07 GB 兩筆、1993-07-01 CA、1993 JP、1993 US、2019-04-22 XW、2019-05-03 無國別、2023-11-10 XW 兩筆），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/d31b0c34-f02b-31a8-a32f-629a0baa6e98"
+   },
+   {
+    "f": "1993 年英國盤 release 37c5b797 的欄位：1993-06-07、GB、status Official、廠牌欄 Warp、編號 WARP LP12 LTD、barcode 5021603012110、兩張 12\" Vinyl 共 13 軌。第一張逐軌為〈A New Day〉3:54、〈F.U.〉7:45、〈Slac〉3:17、〈Dimension Intrusion〉4:04、〈Substance Abuse〉5:09、〈Train-Trac.1〉6:43、〈Another Time (Revisited)〉6:22；第二張為〈Theychx〉13:27、〈UVA〉8:06、〈Mantrax〉8:01、〈NiteDrive〉3:29、〈Into the Space〉5:30、〈Logikal Nonsense〉1:14。",
+    "src": "https://musicbrainz.org/release/37c5b797-d47b-496a-883b-590dd331da1d"
+   },
+   {
+    "f": "英文維基〈Dimension Intrusion〉記：1993 年 6 月 7 日發行，廠牌為 Plus 8 與 Warp Records，是 Richie Hawtin 以 F.U.S.E. 化名的首張錄音室專輯；錄於 1991 至 1993 年，全長 76:26，十三軌全部由 Richie Hawtin 作曲，Matthew Hawtin 負責美術。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "同一條目記本作列入 Warp 的 Artificial Intelligence 系列，排在 B12《Electro-Soma》之後、Speedy J《Ginger》之前；曲風記為 ambient techno 與 IDM，英國專輯榜最高名次 63。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "同一條目的評價段：AllMusic 給 4.5 星、《Select》給 4／5；《Fact》2012 年的「100 Best Albums of the 1990s」把本作排在第 38，並寫這是「a record which really demonstrates Hawtin's range as a producer」。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "Apple Music 英國店面沒有 1993 年原版條目，只有兩個週年版：collectionId 1459720905「Dimension Intrusion (25th Anniversary Edition)」（掛名 F.U.S.E. & Richie Hawtin、2019-05-03、14 軌、℗ 2019 Plus 8 Records），與 collectionId 1715644070「Dimension Intrusion (30th Anniversary Edition)」（掛名 F.U.S.E.、2023-11-10、13 軌、℗ 2023 Plus 8 Records）。",
+    "src": "https://music.apple.com/gb/album/1715644070"
+   },
+   {
+    "f": "兩個週年版的曲目不同：25 週年版的十四軌把第六軌換成〈Downbeat〉5:23、並多出第九軌〈Time Stop〉4:44，沒有〈Train-Trac.1〉；30 週年版的十三軌依序為〈A New Day〉〈F.U.〉〈Slac〉〈Dimension Intrusion〉〈Substance Abuse〉〈Train-Trac.1〉〈Another Time (Revisited)〉〈Theychx〉〈UVA〉〈Mantrax〉〈Nitedrive〉〈Into the Space〉〈Logikal Nonsense〉，與 MB 1993 年 WARP LP12 LTD 的十三軌曲序完全一致。",
+    "src": "https://music.apple.com/gb/album/1459720905"
+   }
+  ],
+  "hookCandidates": [
+   "二十五週年版比原盤多一軌，還換掉了其中一首",
+   "十三軌，最長那軌十三分二十七秒"
+  ],
+  "sound": "MB 1993 年 Warp WARP LP12 LTD 兩張黑膠十三軌的曲長跨度極大：最短〈Logikal Nonsense〉1:14，最長〈Theychx〉13:27，中間〈F.U.〉7:45、〈UVA〉8:06、〈Mantrax〉8:01；維基把曲風記為 ambient techno 與 IDM，全長 76:26（MB release 37c5b797 曲長欄、英文維基〈Dimension Intrusion〉）。",
+  "keyTracks": [
+   "A New Day",
+   "F.U.",
+   "Dimension Intrusion",
+   "Theychx",
+   "Logikal Nonsense"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-06-07 一致，英文維基亦記 1993 年 6 月 7 日；無分歧。",
+  "notes": "掛名說明：F.U.S.E.（MBID 99c0c596）與 Richie Hawtin（76da816f）、Plastikman（abee98f6）是同一人的三個掛名，維基〈Dimension Intrusion〉明寫本作是 Hawtin 以 F.U.S.E. 化名所作，行文不得寫成兩個人；Apple 的 25 週年版更直接把掛名印成「F.U.S.E. & Richie Hawtin」。**ready 但配錯版本**：探測取的是 gb collectionId 1459720905（25th Anniversary Edition、14 軌），該版換掉〈Train-Trac.1〉、多一軌〈Time Stop〉，與 MB 1993 原盤十三軌對不上。**正解 collectionId 1715644070**（gb，30th Anniversary Edition，13 軌，曲序與 MB 原盤逐軌一致）；Apple 目前無 1993 年原版條目，上架備註要寫明取的是 30 週年版。擋下策展層說法：curatorRisk 稱本作是「Richie Hawtin 以 F.U.S.E. 名義的唯一一張正規專輯」——維基只寫這是他以該化名的「debut studio album」，「唯一」無來源，未採用。"
+ }
+]
