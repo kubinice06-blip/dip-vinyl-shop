@@ -95,9 +95,20 @@ export const looseArtistOk = (want, got) => {
 };
 
 // 一張卡要試的查詢字串，依序：原文 → 別名＋原盤名 → 全轉寫。重複的去掉。
+// 2026-09-05（c-93 研究 a 組發現）：`queryAlias` 原本**只被當成掛名的別名**——
+// 每一種用法都是 `<alias> <c.album>`。但策展層填進去的常常是**盤名的別名**：
+// Elvis Costello《Blood & Chocolate》的 queryAlias 就寫著「Blood and Chocolate」
+// （Apple 用 and、卡片用 &），探測層卻拿它去當掛名，於是那張判成 unavailable，
+// 而正解 collectionId 1443093435 在 gb 上好端端地擺著。
+// **`queryAlias` 的語意本來就是「外部服務認得的字串」（第 25 條），沒有規定是掛名還是盤名。**
+// 所以兩種都試：當掛名用、也當盤名用。多一兩個查詢字串的成本遠低於漏掉一張。
 export function termsFor(c) {
   const list = [`${c.artist} ${c.album}`];
-  if (c.queryAlias) list.push(`${c.queryAlias} ${c.album}`);
+  if (c.queryAlias) {
+    list.push(`${c.queryAlias} ${c.album}`);   // alias 當掛名
+    list.push(`${c.artist} ${c.queryAlias}`);  // alias 當盤名
+    list.push(`${c.queryAlias}`);              // alias 本身就是完整查詢字串的情形
+  }
   if (hasNonLatin(c.artist) || hasNonLatin(c.album))
     list.push(`${c.queryAlias || translit(c.artist)} ${translit(c.album)}`);
   return [...new Set(list.map(x => x.trim()).filter(Boolean))];

@@ -50,7 +50,7 @@
   ],
   "status": "full",
   "yearVerified": "卡片 year 1988 三方一致：MB release-group first-release-date 1988-06、MB GB 原盤 1988-06、Apple GB releaseDate 1988-07-11。月份兩說（MB 記 6 月、維基與 Apple 記 7 月 11 日），但年份無爭議，正文不要寫月份。",
-  "notes": "**推翻探測層**：`previews.json` 這一筆原判 unavailable，tried 是 gb／us／jp／de／fr／ie／ca／au 各 `1→0`（八個店面都搜到一筆卻都沒配上）。本層直接 `lookup?id=996111401&entity=song&country=gb`，**回到 19 軌、19 軌全部有 previewUrl**。落空原因就是盤名字串：Apple 的條目名是「Substance 1977-1980」（副標被串進盤名），卡片盤名《Substance》比它短，屬第 152 條的形狀。**建議主線把這筆改成 ready、front gb、collectionId 996111401**（本層依禁令不動 previews.json）。\n**同名去重**：New Order 也有一張 1987 年的《Substance》，維基明記兩者是對應作。去重必須 artist+album 成對比，只比盤名會撞。\n**策展層有一處無來源、未採用**：curatorWhy 寫「從未收進兩張正規專輯的錄音」——維基 Content 節明記〈Glass〉與〈Dead Souls〉先前已收在 1981 年合輯《Still》，所以「這裡的錄音都沒別的地方收過」是錯的。facts 已把這條反例寫進去，**正文不得寫「全部都是沒收錄過的錄音」**。策展層另一句「實掃 seed_cards.json 全 14,424 列」是卡池內部作業、非可查證事實，未入 facts。\n**版本落差要小心**：黑膠 13 軌、MB GB CD 17 軌、Apple 19 軌（多了 As You Said 與 Love Will Tear Us Apart 的 Pennine Version），正文寫軌數要指明是哪個版本，或乾脆不寫軌數。\n**互斥可用面向**：本張獨有的是封面拼成「Subst1mce」的字體事故，以及黑膠／CD 收錄不同這件事。"
+  "notes": "**推翻探測層**：`previews.json` 這一筆原判 unavailable，tried 是 gb／us／jp／de／fr／ie／ca／au 各 `1→0`（八個店面都搜到一筆卻都沒配上）。本層直接 `lookup?id=996111401&entity=song&country=gb`，**回到 19 軌、19 軌全部有 previewUrl**。落空原因就是盤名字串：Apple 的條目名是「Substance 1977-1980」（副標被串進盤名），卡片盤名《Substance》比它短，屬第 152 條的形狀。**建議主線把這筆改成 ready、front gb、collectionId 996111401**（本層依禁令不動 previews.json）。\n**同名去重**：New Order 也有一張 1987 年的《Substance》，維基明記兩者是對應作。去重必須 artist+album 成對比，只比盤名會撞。\n**策展層有一處無來源、未採用**：curatorWhy 寫「從未收進兩張正規專輯的錄音」——維基 Content 節明記〈Glass〉與〈Dead Souls〉先前已收在 1981 年合輯《Still》，所以「這裡的錄音都沒別的地方收過」是錯的。facts 已把這條反例寫進去，**正文不得寫「全部都是沒收錄過的錄音」**。策展層另一句「實掃 seed_cards.json 全池逐列」是卡池內部作業、非可查證事實，未入 facts。\n**版本落差要小心**：黑膠 13 軌、MB GB CD 17 軌、Apple 19 軌（多了 As You Said 與 Love Will Tear Us Apart 的 Pennine Version），正文寫軌數要指明是哪個版本，或乾脆不寫軌數。\n**互斥可用面向**：本張獨有的是封面拼成「Subst1mce」的字體事故，以及黑膠／CD 收錄不同這件事。"
  },
  {
   "key": "desc2:Joy Division|Still",
@@ -634,5 +634,433 @@
   "status": "full",
   "yearVerified": "卡片 year 1989 兩方一致：MB release-group first-release-date 1989-06-06、MB US 原盤 1989-06-06；英文維基 infobox 記 June 27, 1989。日期兩說（MB 6/6、維基 6/27），同年同月，正文不要寫日。",
   "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1464527564，tried gb `8→2`）。卡單 queryAlias 帶了「Cosmic Thing (30th Anniversary Expanded Edition)」，下游若換綁要確認是十軌原盤不是擴充版。\n**「第五張」可以寫**：英文維基導言明寫 fifth studio album。\n**Ricky Wilson 那條的分寸**：維基寫的是本張的成功「是樂團在 Wilson 1985 年過世後的復出」。**可以寫「復出」，不要寫「悼念專輯」**——來源說的是療癒與懷舊，且 Pierson 明說寫歌是團員彼此的療癒過程。\n**銷量數字要照抄**：1990 年全美銷量第九、Billboard 200 第 4、美國 4× 白金、英國白金、澳紐第 1。**不要換算成張數**（第 4 條）。\n**掛名寫法**：同前兩張 B-52's——MB artist-credit 是「The B‐52s」（U+2010 連字號、無撇號）。\n**互斥可用面向**：本張獨有的是〈Love Shack〉最後才錄、雙製作人分工、曲序當電影排。《Wild Planet》用巴哈馬、《Whammy!》用鼓機，三張不撞。"
+ },
+ {
+  "key": "desc2:Elvis Costello and The Attractions|Get Happy!!",
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Get Happy!!",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 768857a3 的欄位：title「Get Happy!!」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1980-02-15、primary-type Album、secondary-types 空；轄下 12 個 release（US 7、GB 2、JP 1、XE 1、未填國別 1），其中 11 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/768857a3-99bf-36c2-b39e-9e16be5673f1"
+   },
+   {
+    "f": "該 release-group 的 1980-02-15 GB 原盤（release 52414a24）欄位：country GB、status Official、廠牌欄 F-Beat、編號 XXLP1、載體 12\" Vinyl、20 軌。逐軌曲名與曲長依序為〈Love for Tender〉1:57、〈Opportunity〉3:14、〈The Imposter〉1:59、〈Secondary Modern〉1:58、〈King Horse〉3:02、〈Possession〉2:05、〈Man Called Uncle〉2:18、〈Clowntime Is Over〉3:01、〈New Amsterdam〉2:14、〈High Fidelity〉2:28、〈I Can't Stand Up for Falling Down〉2:08、〈Black and White World〉1:57、〈5ive Gears in Reverse〉2:36、〈B Movie〉2:04、〈Motel Matches〉2:32、〈Human Touch〉2:31、〈Beaten to the Punch〉1:49、〈Temptation〉2:35、〈I Stand Accused〉2:21、〈Riot Act〉3:35。",
+    "src": "https://musicbrainz.org/release/52414a24-39b8-4e9f-8808-3969ffcc7eb8"
+   },
+   {
+    "f": "英文維基〈Get Happy!!〉的 infobox 與導言記：Elvis Costello 的第四張錄音室專輯、與 the Attractions（鍵盤 Steve Nieve、貝斯 Bruce Thomas、鼓 Pete Thomas，兩位 Thomas 無親屬關係）合作的第三張，1980 年 2 月 15 日在英國由 F-Beat、在美國由 Columbia 發行；製作人 Nick Lowe、錄音師 Roger Béchirian，1979 年 10 月錄於倫敦 Eden Studios 與荷蘭 Hilversum 的 Wisseloord Studios，全長 48:08，單張 LP 收 20 軌。",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   },
+   {
+    "f": "同條目 Recording 節記：1979 年 9 至 10 月樂團在 Eden Studios 排新歌，Costello 對結果不滿意，覺得太像前作《Armed Forces》、太「new wave」。Bruce Thomas 回憶「我們聽起來像 the Jags。基本上就是很差的 Elvis and the Attractions 模仿者，什麼都彈很快、都是八分音符。」Costello 於是回頭鑽進少年時代喜歡的靈魂樂，在倫敦 Camden Town 買了《Motown Chartbusters Vol. 3》與 Atlantic 的《This Is Soul》等唱片給團員當參考，把許多歌重新編成偏 R&B 的樣子；樂團也厭倦了 Eden，改到荷蘭的 Wisseloord 錄。",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   },
+   {
+    "f": "同節記：換了地方，錄音仍然狀況百出。團員經常喝酒，Béchirian 回憶那是一片「古柯鹼的霧」，並說「一點都不愉快。你看得到接縫那時候正在裂開。」Nieve 情緒崩潰，Bruce 與 Pete Thomas 都不滿意自己的貝斯與鼓的聲音；Lowe 對錄音室也有意見，甚至要 Costello 到設計給弦樂器用的隔間裡錄人聲，並說「那實在太歐洲了。像是在歐洲歌唱大賽正在你四周舉行的時候做唱片。」",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   },
+   {
+    "f": "同節記：樂團在那批錄音中錄了非常多歌，最後放進專輯的 20 軌幾乎全部不到兩分半；據 Costello 說，黑膠的刻片與壓片過程必須非常精準才塞得進一張 LP 的兩面。最終曲目收了兩首翻唱：Sam & Dave 的 B 面〈I Can't Stand Up for Falling Down〉與 the Merseybeats 的〈I Stand Accused〉——翻唱雖常出現在 Costello 的現場與 B 面，但這是他英國錄音室專輯上第一次出現非原創曲目。",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   },
+   {
+    "f": "同條目 Music and lyrics 節引 Costello 在 Radio One 上的說法：「我們就整個換了方向。我說『我們就把這些歌當成我們是一支靈魂樂團來彈，Booker T and the MGs』，所以編曲上有一個特定的時間框架。它建立在 1965 到 1968 年左右的 Stax 與 Motown 上，只是由這幾個滿世界飛了兩年、已經瘋掉的傢伙來彈。」同節記本張取材自 1960 年代的 R&B、靈魂與 ska；傳記作者 Brian Hinton 說 Costello 在這裡把「一種此前與該類型格格不入的內省與苦澀」投進了靈魂樂的源頭。",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   },
+   {
+    "f": "同條目導言記：與上揚的音樂相反，歌詞多半低落，寫的是注定失敗的戀情與其他反覆出現的主題；最初的唱片封套把兩面的曲目列反了，後來的再版才更正。封面美術反映靈魂樂的影響，刻意做成 1960 年代 Stax 唱片的樣子，英國版還用了一張預先做舊的封套圖。本張因與 Warner Bros. 及 Costello 前東家 Radar Records 的糾紛而延後發行，最終在英國最高第 2 名、美國第 11 名，但銷量不如《Armed Forces》；三首單曲中〈I Can't Stand Up for Falling Down〉進了英國前五。",
+    "src": "https://en.wikipedia.org/wiki/Get_Happy!!"
+   }
+  ],
+  "hookCandidates": [
+   "二十首歌塞進一張 LP，刻片得算到毫釐",
+   "第一批封套把兩面的曲目印反了"
+  ],
+  "sound": "刻意當成靈魂樂團來彈：Costello 說編曲的框架是 1965 到 1968 年的 Stax 與 Motown，「只是由這幾個滿世界飛了兩年、已經瘋掉的傢伙來彈」（英文維基 Music and lyrics 節）。他先在 Camden Town 買了《Motown Chartbusters Vol. 3》與 Atlantic 的《This Is Soul》給團員當參考，再把歌重編成偏 R&B 的樣子（同條目 Recording 節）。二十軌幾乎全部不到兩分半，最短〈Beaten to the Punch〉1:49（維基同節與 MB 1980 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "I Can't Stand Up for Falling Down",
+   "High Fidelity",
+   "New Amsterdam",
+   "Riot Act"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1980 三方一致：MB release-group first-release-date 1980-02-15、MB GB 原盤 1980-02-15、英文維基 infobox 記 15 February 1980。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1442996908，tried gb `12→1`）。\n**掛名寫法**：卡片《Elvis Costello and The Attractions》，MB artist-credit 是「Elvis Costello & The Attractions」（用 &），維基條目掛「Elvis Costello and the Attractions」（the 小寫）。三種寫法都要放寬。本批五張 Costello 有四張掛 Attractions、一張（《King of America》）掛單人，去重要成對比。\n**「第四張／與 Attractions 的第三張」可以寫**：英文維基導言明寫 fourth studio album、third with the Attractions。\n**Armed Funk 巡演的種族歧視事件不入 facts**：英文維基 Background 節詳記 1979 年 3 月 Costello 酒後對 Stephen Stills 用種族歧視字眼辱罵美國樂手一事，以及隨之而來的死亡威脅與電台下架。本層**刻意不寫進 facts**——它與本張的關係在來源裡是有爭議的（維基同條目引 Costello 2003 年再版內頁，說整張只有〈Riot Act〉一首指涉此事，而「有些樂評推論整張是對巡演的回應」只是推論）。若主線要用，必須照這個分寸寫，不可寫成「這張是他為那件事贖罪」。\n**〈Riot Act〉是唯一有來源的連結點**：Costello 自己說的。\n**互斥可用面向**：本張獨有的是二十軌塞進單張 LP、封套曲目印反、Stax 仿造封面、Wisseloord 那段崩潰的錄音。"
+ },
+ {
+  "key": "desc2:Elvis Costello and The Attractions|Trust",
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Trust",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8b9cb468 的欄位：title「Trust」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1981-01-23、primary-type Album、secondary-types 空；轄下 16 個 release（US 7、GB 4、JP 2、CA 1、AF 1、DZ 1），16 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/8b9cb468-30a6-39f3-bde9-8670d600ed9a"
+   },
+   {
+    "f": "該 release-group 的 1981-01-23 GB 原盤（release f1832b4a）欄位：country GB、status Official、廠牌欄 F-Beat、編號 XXLP 11、載體 12\" Vinyl、14 軌。逐軌曲名與曲長依序為〈Clubland〉3:45、〈Lovers Walk〉2:19、〈You'll Never Be a Man〉2:59、〈Pretty Words〉3:13、〈Strict Time〉2:41、〈Luxembourg〉2:29、〈Watch Your Step〉3:00、〈New Lace Sleeves〉3:48、〈From a Whisper to a Scream〉2:57、〈Different Finger〉2:00、〈White Knuckles〉3:50、〈Shot With His Own Gun〉3:35、〈Fish 'n' Chip Paper〉2:59、〈Big Sister's Clothes〉2:13。",
+    "src": "https://musicbrainz.org/release/f1832b4a-adb9-41cb-ba1a-3dc581848bb3"
+   },
+   {
+    "f": "英文維基〈Trust (Elvis Costello album)〉的 infobox 與導言記：Elvis Costello 的第五張錄音室專輯、與 the Attractions 合作的第四張，1981 年 1 月 23 日在英國由 F-Beat 發行；製作人 Nick Lowe、錄音師 Roger Béchirian 協助，1980 年 10 至 11 月在倫敦的 DJM 與 Eden Studios 錄音，全長 41:09。Squeeze 的主唱 Glenn Tilbrook 與 the Rumour 的吉他手 Martin Belmont 客串〈From a Whisper to a Scream〉。",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   },
+   {
+    "f": "同條目導言與 Music and lyrics 節記：Costello 對本張原本的構想是把《Armed Forces》(1979) 的旋律和《Get Happy!!》(1980) 的節奏交叉起來；成品是一張 pop rock 專輯，但風格橫跨爵士（〈Clubland〉）、soul pop（〈Watch Your Step〉）、rockabilly（〈Luxembourg〉）、Tin Pan Alley 式流行（〈Shot with His Own Gun〉）與鄉村（〈Different Finger〉）。歌詞部分取材自 Costello 當時的生活，包括巡演樂手的處境與破裂中的婚姻，寫的都是缺乏信任的情境，且滿是雙關與雙關語。封面是 Costello 一張看起來滿臉不信任的頭像，是對盤名的反諷。",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   },
+   {
+    "f": "同條目 Recording 節記：與先前的專輯不同，Lowe 與 Béchirian 這次來回輪流當製作人、各自負責不同場次，兩人工作習慣不同，進度因此變慢；樂團持續處在酒醉狀態。Béchirian 回憶「到那個時候，我想大家已經受夠了彼此。有一種真實的敵意，一片烏雲罩在這個案子上。真的很掙扎，因為好像沒有人在乎它。」DJM 錄音室是照 1970 年代初「緊、乾、悶」的聲音蓋的，不適合 Costello 想要的開闊聲音，不過樂團在〈New Lace Sleeves〉與〈Watch Your Step〉上「利用了」那種乾的聲音。",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   },
+   {
+    "f": "同節引 Costello 在 2003 年再版內頁寫的話：「這輕易是我職業生涯中受藥物影響最深的一張唱片……它是在接近自我誘發的精神崩潰邊緣完成的，靠的是粗釀蘋果酒、琴通寧、各種粉末……以及最後那幾個小時的 Seconal 與 Johnnie Walker 黑牌。我那顆糊掉的腦袋裡幾乎不成句的胡言亂語，是被旋律與歌詞碎片無休止的重寫慢慢打成形的，其中很多還早於我的職業生涯。」",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   },
+   {
+    "f": "同節記：樂團後來把錄音搬回 Eden，效率較好；Nieve 對編曲的主導變強，鋼琴與風琴主宰了〈Shot With His Own Gun〉〈You'll Never Be a Man〉〈New Lace Sleeves〉〈Watch Your Step〉等曲。Costello 有一度嗓子壞了，Squeeze 的 Glenn Tilbrook 主動替〈From a Whisper to a Scream〉唱導唱，Costello 太喜歡那個表現，乾脆做成對唱；Belmont 也受邀替同一軌加了吉他。收尾幾天 Costello 還獨自錄了一軌〈Big Sister's Clothes〉，用上口風琴、皮製鈴鼓、顫音琴、定音鼓，以及「倒放的手風琴」，該軌製作只掛他一人。",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   },
+   {
+    "f": "同節記：新專輯在 1980 年 11 月初完成，Béchirian 說氣氛一路緊繃到最後——「我記得混音的時候有人打架。Bruce Thomas 走出控制室、丟下樂團，Jake 追出去。整件事就是瘋的。」Costello 事後同意即使有這些緊張，成品仍收了 Attractions 一些最好的演出，他點名〈Strict Time〉〈Lovers Walk〉〈White Knuckles〉〈New Lace Sleeves〉。盤名《Trust》是從工作標題《Looking Italian》與《Cats and Dogs》之中選出來的。導言另記本張進英國前十、在美國第 28 名，單曲成績不佳。",
+    "src": "https://en.wikipedia.org/wiki/Trust_(Elvis_Costello_album)"
+   }
+  ],
+  "hookCandidates": [
+   "盤名叫「信任」，封面是他一臉不信任的樣子",
+   "主唱嗓子壞了，來幫忙唱導唱的人最後留在成品裡變成對唱"
+  ],
+  "sound": "Costello 的構想是把《Armed Forces》的旋律和《Get Happy!!》的節奏交叉起來，成品橫跨爵士、soul pop、rockabilly、Tin Pan Alley 式流行與鄉村（英文維基 Music and lyrics 節）。Nieve 這次對編曲主導更強，鋼琴與風琴主宰了數首歌；DJM 那間「緊、乾、悶」的錄音室不合 Costello 想要的開闊聲音，但樂團在〈New Lace Sleeves〉與〈Watch Your Step〉上反過來利用了那種乾（同條目 Recording 節）。十四軌只有〈Different Finger〉整整 2:00、最長〈White Knuckles〉3:50（MB 1981 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Clubland",
+   "New Lace Sleeves",
+   "Watch Your Step",
+   "From a Whisper to a Scream"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1981 三方一致：MB release-group first-release-date 1981-01-23、MB GB 原盤 1981-01-23、英文維基 infobox 記 23 January 1981。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1443264745，tried gb `12→1`）。\n**「第五張／與 Attractions 的第四張」可以寫**：英文維基導言明寫 fifth studio album、fourth with the Attractions。\n**藥物那條要照抄措辭、不要當賣點**：Costello 2003 年內頁自述本張是他職業生涯受藥物影響最深的一張。facts 已原文照引。**不要寫成「嗑藥嗑出來的傑作」**——維基同節也記 Costello 事後點名了四首他認為是 Attractions 最好的演出。\n**製作掛名三說**：維基 infobox 把 Lowe 與 Béchirian 並列為 producer；內文說封套實際寫的是 Lowe「in association with」Béchirian、「assisted by」Neill King；〈Big Sister's Clothes〉一軌則只掛 Costello。正文若寫製作人，寫 Nick Lowe 最安全，或照封套那個三層寫法。\n**掛名寫法**：同《Get Happy!!》那筆（MB 用 &、維基 the 小寫）。\n**互斥可用面向**：本張獨有的是盤名與封面的反諷、Tilbrook 的導唱變成對唱、DJM 那間乾錄音室、以及〈Big Sister's Clothes〉的倒放手風琴。《Get Happy!!》已用掉 Wisseloord 那段崩潰的錄音，兩張都寫「喝到爛」會撞。"
+ },
+ {
+  "key": "desc2:Elvis Costello and The Attractions|Imperial Bedroom",
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Imperial Bedroom",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8c7bf795 的欄位：title「Imperial Bedroom」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1982-07-02、primary-type Album、secondary-types 空；轄下 15 個 release（US 10、GB 4、JP 1），15 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/8c7bf795-c1b7-3d84-8034-45fa568e1916"
+   },
+   {
+    "f": "該 release-group 的 1982-07-02 GB 原盤（release 47c27cc5）欄位：country GB、status Official、廠牌欄 F-Beat、編號 XXLP17、載體 12\" Vinyl、15 軌。逐軌曲名與曲長依序為〈Beyond Belief〉2:35、〈Tears Before Bedtime〉3:03、〈Shabby Doll〉4:49、〈The Long Honeymoon〉4:17、〈Man Out of Time〉5:28、〈Almost Blue〉2:51、〈…And in Every Home〉3:25、〈The Loved Ones〉2:49、〈Human Hands〉2:44、〈Kid About It〉2:46、〈Little Savage〉2:38、〈Boy With a Problem〉2:14、〈Pidgin English〉3:59、〈You Little Fool〉3:12、〈Town Cryer〉4:15。",
+    "src": "https://musicbrainz.org/release/47c27cc5-6e15-3f1b-89b0-2d776dce2ae5"
+   },
+   {
+    "f": "英文維基〈Imperial Bedroom〉的 infobox 與導言記：Elvis Costello 的第七張錄音室專輯、與 the Attractions 合作的第六張，1982 年 7 月 2 日在英國由 F-Beat、在美國由 Columbia 發行；1981 年 11 月至 1982 年 3 月錄於倫敦 AIR Studios，製作人 Geoff Emerick，封套掛的是他「from an original idea by Elvis Costello」，全長 50:49。封面是 Barney Bubbles 的畫，是畢卡索《三個樂師》的仿作。Squeeze 的 Chris Difford 與 Costello 合寫〈Boy With a Problem〉的歌詞。",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   },
+   {
+    "f": "同條目 Background 節記：Costello 對第七張的最初構想是幾乎全程實錄、盡量少疊錄；他和 the Attractions 在德文郡一所偏遠學院裡用這個方法排了兩週，做出一張八軌的專輯。後來他覺得那些素材聽起來太像《Trust》，才改採大量的錄音室實驗。（那批排練只有〈Man Out of Time〉頭尾那段尖叫留在成品裡。）",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   },
+   {
+    "f": "同條目 Recording and production 節記：Costello 在 AIR Studios 訂了 12 週；他挑前披頭四錄音師 Geoff Emerick 來製作，因為他認為自己對這張的複雜想法對 Nick Lowe 來說太超過——這是他第一張非由 Lowe 製作的原創作品，錄音師 Roger Béchirian 也沒有回來。本張與 Paul McCartney 的《Tug of War》同期錄製，Emerick 同時是那張的錄音師（製作是 George Martin），因此他要在兩邊之間來回，離開時由 Jon Jacobs 接手。",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   },
+   {
+    "f": "同節記 Bruce Thomas 的說法：「《Imperial Bedroom》的重點是，我們先去把所有的歌排好，然後進了錄音室反而不照那個編曲做。我們完全即興出全新的版本，改歌詞、改旋律、改編曲，等於是先學會歌的結構，再把它們解構掉，彈出完全不同的版本。它們一直在變。」Emerick 自己則說「我的共同製作就是把我們仔細做好的編曲丟掉」。同節記本張是 Costello 第一張沒有先在現場演過就正式錄的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   },
+   {
+    "f": "同節記所用的樂器與編制：樂團用上美樂特朗、大鍵琴、手風琴、十二弦吉他、馬林巴、弦樂與小號。Steve Nieve 編寫了大部分弦樂段落，包括〈The Long Honeymoon〉的三支華格納式法國號、〈Pidgin English〉的銅管與木管、〈Town Cryer〉的「費城式小提琴」，以及〈…And in Every Home〉的四十人管弦樂團——那一段由 Nieve 親自指揮、George Martin 監督編曲（因為其中多處呼應他與披頭四的作品），Ringo Starr 在那場錄音時來過錄音室。",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   },
+   {
+    "f": "同節記：這種「一首一首各自為政、拼湊式」的作法讓每一軌都由某一件樂器領著走，而不是呈現 the Attractions 作為一個創作整體——〈Shabby Doll〉突出鋼琴與貝斯，〈Beyond Belief〉突出鼓，那段鼓是 Pete Thomas 在一個喝到很晚的夜晚之後一次錄成的。《NME》的 Richard Cook 當年評論指出吉他在這裡被降格成「單純的著色」，鍵盤才畫出「主要的旋律形狀」。同節記本張的工作標題先後是《Music to Stop Clocks》《This Is a Revolution of the Mind》（取自 James Brown 1972 年〈King Heroin〉的一句）與《P.S. I Love You》，最後才定為《Imperial Bedroom》——那是收工後 Costello 另外寫錄的一首歌的歌名。導言記本張以「Masterpiece?」當宣傳標語，在英國最高第 6 名、美國第 30 名。",
+    "src": "https://en.wikipedia.org/wiki/Imperial_Bedroom"
+   }
+  ],
+  "hookCandidates": [
+   "先把每首歌排熟，進錄音室再全部拆掉重來",
+   "宣傳標語只有一個詞加一個問號：Masterpiece?"
+  ],
+  "sound": "重心整個放在錄音室實驗：美樂特朗、大鍵琴、手風琴、十二弦吉他、馬林巴、弦樂與小號都上場，弦樂大多由 Steve Nieve 編寫，〈…And in Every Home〉甚至用了四十人管弦樂團、由他親自指揮（英文維基 Recording and production 節）。作法是一首一首各自為政，每軌由某件樂器領著走；《NME》的 Richard Cook 當年就寫吉他被降格成「單純的著色」，鍵盤才畫出主要的旋律形狀（同節）。十五軌只有〈Man Out of Time〉超過五分鐘（MB 1982 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Beyond Belief",
+   "Man Out of Time",
+   "Almost Blue",
+   "…And in Every Home"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1982 三方一致：MB release-group first-release-date 1982-07-02、MB GB 原盤 1982-07-02、英文維基 infobox 記 2 July 1982。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1440836169，tried gb `2→1`）。\n**「第七張／與 Attractions 的第六張」可以寫**：英文維基導言明寫 seventh studio album、sixth with the Attractions。\n**製作掛名要照封套那句寫**：Emerick 掛的是「from an original idea by Elvis Costello, assisted by Jon Jacobs」。**不要寫成「Emerick 製作」四個字了事**，也不要寫成 Costello 自製。\n**披頭四的連結要節制**：facts 給的是三條有來源的事實（Emerick 是前披頭四錄音師、本張與 McCartney《Tug of War》同期且 Emerick 兩邊跑、George Martin 監督〈…And in Every Home〉的編曲且 Ringo Starr 來過）。**不要據此寫「這是 Costello 的《Sgt. Pepper》」**——那是無來源的比喻。\n**〈Almost Blue〉不是前作那張**：本張第六軌〈Almost Blue〉與 1981 年的專輯《Almost Blue》同名不同物，正文提到要避免混淆。\n**曲名的省略號**：MB 作〈…And in Every Home〉（單一 U+2026 字元）。\n**互斥可用面向**：本張獨有的是拆掉編曲即興重來、四十人管弦樂團、工作標題三度更名、「Masterpiece?」標語。前兩張 Costello 已用掉二十軌單張 LP（Get Happy!!）與藥物那段（Trust）。"
+ },
+ {
+  "key": "desc2:Elvis Costello|King of America",
+  "artist": "Elvis Costello",
+  "album": "King of America",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d15adcee 的欄位：title「King of America」、artist-credit「The Costello Show feat. The Attractions and Confederates」、first-release-date 1986-02-21、primary-type Album、secondary-types 空；轄下 14 個 release（US 6、XW 3、XE 2、GB 2、未填國別 1），14 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/d15adcee-0754-3086-851b-da05d0f49f32"
+   },
+   {
+    "f": "該 release-group 的 1986-02-21 US 原盤（release 789bfa7b）欄位：country US、status Official、廠牌欄 Columbia、編號 FC 40173、barcode 074644017311、載體 12\" Vinyl、15 軌。逐軌曲名與曲長依序為〈Brilliant Mistake〉3:42、〈Lovable〉2:51、〈Our Little Angel〉4:06、〈Don't Let Me Be Misunderstood〉3:19、〈Glitter Gulch〉3:15、〈Indoor Fireworks〉4:09、〈Little Palaces〉3:49、〈I'll Wear It Proudly〉4:20、〈American Without Tears〉4:30、〈Eisenhower Blues〉3:46、〈Poisoned Rose〉4:07、〈The Big Light〉2:32、〈Jack of All Parades〉5:18、〈Suit of Lights〉4:05、〈Sleep of the Just〉3:49。",
+    "src": "https://musicbrainz.org/release/789bfa7b-81a8-3eef-9a79-021ddcc09791"
+   },
+   {
+    "f": "英文維基〈King of America〉的 infobox 與導言記：Elvis Costello 的第十張錄音室專輯，1986 年 2 月 21 日發行，由 Costello 與 T Bone Burnett 共同製作，1985 年 7 至 9 月錄於洛杉磯的 Ocean Way、Sunset Sound 與 Sound Factory，全長 57:36。專輯緣起於兩人以「the Coward Brothers」名義做的一系列巡演；Burnett 挑了一批美國錄音樂手組成「the Confederates」，包括 Ray Brown、Earl Palmer 與 Elvis Presley 的 TCB Band 前成員。",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   },
+   {
+    "f": "同條目導言記：Costello 在封套上用本名 Declan MacManus 掛名；專輯本身在英國與歐洲掛「the Costello Show featuring the Attractions and Confederates」，在北美掛「the Costello Show featuring Elvis Costello」。封面是 Costello 戴著王冠、穿相配外套的照片，當時的評論者覺得它既「荒謬」又「認真」。本張在英國最高第 11 名、美國第 39 名；翻唱自 Nina Simone 的〈Don't Let Me Be Misunderstood〉是英國前 40 單曲。",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   },
+   {
+    "f": "同條目 Recording 節記：錄音在 1985 年 7 月開始，緊接在 Costello 於 Live Aid 獨自演出之後。第一批進錄音室的核心班底是吉他手 James Burton、貝斯手 Jerry Scheff、鼓手 Ron Tutt——1970 年代替 Elvis Presley 伴奏的 TCB Band 成員。據 Costello 說，曲目盡可能「以現場的方式」錄，之後只加少量疊錄；最終專輯約一半的歌在三天內完成。Scheff 後來說：「在錄音室裡他把一切都掌握住。那非常是他的案子、他的視野。」",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   },
+   {
+    "f": "同節記第二批樂手：爵士貝斯手 Ray Brown、紐奧良鼓手 Earl Palmer、鋼琴手 Tom Canning 與鍵盤手 Mitchell Froom。Costello 一開始被 Brown 與 Palmer 震住，因為他本來就不打算為這個案子找「現成的傳奇」。這組錄了〈Poisoned Rose〉與 J.B. Lenoir 的〈Eisenhower Blues〉，後者 Costello 說只是錄來「讓大家放鬆一下、彈點東西」。其他參與的樂手包括鼓手 Jim Keltner、貝斯手 T-Bone Wolk 與鼓手 Mickey Curry。",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   },
+   {
+    "f": "同節記 the Attractions 的處境：三人 1985 年 8 月中從英國飛來，那時錄音已進行約三分之二。Costello 原打算讓他們錄一半的歌以便與美國樂手的風格區隔，但他們到的時候一半的專輯已經完成；最終他們只留下〈Suit of Lights〉一軌和一首未收錄的〈Baby's Got a Brand New Hairdo〉。Costello 後來說：「我想這個處境讓他們緊繃、變得防衛而有敵意，這又讓我防衛而有敵意。那些錄音是場災難。」他取消了其餘與 Attractions 錄音的計畫卻沒有告知他們，讓三人在洛杉磯的旅館裡等一通永遠不會來的電話。",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   },
+   {
+    "f": "同節記：整批錄音不到三個月，據 Costello 說大部分歌在每次錄音結束時就混完。〈Little Palaces〉是 Costello 一個人在另一場單獨的錄音裡錄的，低音提琴由 Scheff 事後補上。Columbia Records 聽不出哪一首能當單曲，於是要求 Costello 另錄一首，他才用 Keltner、Scheff、Froom 的編制錄下 Nina Simone 的〈Don't Let Me Be Misunderstood〉，Tom Waits 樂團的 Michael Blair 疊上馬林巴。",
+    "src": "https://en.wikipedia.org/wiki/King_of_America"
+   }
+  ],
+  "hookCandidates": [
+   "他自己的樂團飛了半個地球過來，最後只留下一首歌",
+   "封套上簽的是本名，不是那個藝名"
+  ],
+  "sound": "大體是原音的聲音，離開先前的路數，走 roots rock、鄉村、民謠、R&B 與 americana（英文維基 infobox 與導言）。錄法也換了：核心班底是替 Elvis Presley 伴奏過的 TCB Band 三人，曲目盡可能「以現場的方式」錄、之後只加少量疊錄，約一半的歌三天內完成（同條目 Recording 節）。〈Little Palaces〉是 Costello 一個人錄的，低音提琴事後補上。十五軌只有〈Jack of All Parades〉超過五分鐘（MB 1986 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Brilliant Mistake",
+   "Indoor Fireworks",
+   "Don't Let Me Be Misunderstood",
+   "Suit of Lights"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1986 三方一致：MB release-group first-release-date 1986-02-21、MB US 原盤 1986-02-21、英文維基 infobox 記 21 February 1986。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1443079344，tried gb `12→1`）。\n**掛名是本批最麻煩的一張**：卡片掛「Elvis Costello」，MB artist-credit 是「The Costello Show feat. The Attractions and Confederates」，維基記英歐版掛「the Costello Show featuring the Attractions and Confederates」、北美版掛「the Costello Show featuring Elvis Costello」，封套上他還簽本名 Declan MacManus。卡單 queryAlias 已備「The Costello Show」。**正文若寫掛名這件事，四種寫法都要照來源列，不要只挑一種說「他改名了」。**\n**「第十張」可以寫**：英文維基導言明寫 tenth studio album。\n**Attractions 被冷落那條要照抄措辭**：facts 已給 Costello 自己的說法與「在旅館等一通不會來的電話」。**不要寫成「他開除了 Attractions」**——同一年稍晚的《Blood & Chocolate》（本批下一張）又是與 Attractions 合作、且由 Nick Lowe 製作。兩張同年，正文要小心先後。\n**卡單 queryAlias 有一條要當心**：「King Of America & Other Realms」是 2024 年的擴充盒裝名，不是本張盤名，下游不要拿它當標題。\n**互斥可用面向**：本張獨有的是 Coward Brothers 的緣起、TCB Band、掛名的四種寫法、Columbia 要單曲才生出的翻唱。"
+ },
+ {
+  "key": "desc2:Elvis Costello and The Attractions|Blood & Chocolate",
+  "artist": "Elvis Costello and The Attractions",
+  "album": "Blood & Chocolate",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cbcc8fdf 的欄位：title「Blood & Chocolate」、artist-credit「Elvis Costello & The Attractions」、first-release-date 1986-09-15、primary-type Album、secondary-types 空；轄下 11 個 release（US 5、GB 4、XW 1、XE 1），11 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/cbcc8fdf-180f-36b9-8c0a-e653d78fea2e"
+   },
+   {
+    "f": "該 release-group 的 1986-09-15 GB 盤（release 97504de5）欄位：country GB、status Official、廠牌欄 Imp Records、編號 FIEND CD 80、barcode 5014757070808、11 軌。逐軌曲名與曲長依序為〈Uncomplicated〉3:27、〈I Hope You're Happy Now〉3:07、〈Tokyo Storm Warning〉6:24、〈Home Is Anywhere You Hang Your Head〉5:05、〈I Want You〉6:43、〈Honey, Are You Straight or Are You Blind?〉2:09、〈Blue Chair〉3:42、〈Battered Old Bird〉5:52、〈Crimes of Paris〉4:21、〈Poor Napoleon〉3:23、〈Next Time Round〉3:35。",
+    "src": "https://musicbrainz.org/release/97504de5-a973-47a0-b174-660e6904864a"
+   },
+   {
+    "f": "英文維基〈Blood & Chocolate〉的 infobox 與導言記：Elvis Costello 的第十一張錄音室專輯、與 the Attractions 合作的第九張，1986 年 9 月 15 日由 Demon 與 Columbia Records 發行；1986 年 3 至 5 月錄於倫敦 Olympic Studios，製作人 Nick Lowe，全長 47:48。前作《King of America》主要用外請樂手，本張讓 the Attractions 與舊製作人 Lowe 一起回來。封面是 Costello 自己畫的一幅畫，題名〈Napoleon Dynamite〉。",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "同條目導言記：本張在《King of America》之後只隔七個月發行，是 Costello 當時榜上成績最差的一張，英國最高第 16 名、美國第 84 名；兩首都超過六分鐘的單曲〈Tokyo Storm Warning〉與〈I Want You〉成績都不好。《King of America》掛的是「the Costello Show」，本張又改回掛「Elvis Costello and the Attractions」。條目並記本張發行與隨後的巡演之後，Costello 有八年沒有再與 the Attractions 合作。",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "同條目 Recording 節記：Nick Lowe 是五年來第一次替 Costello 製作（上一次是 1981 年的《Trust》），錄音師 Colin Fairley；找 Lowe 回來的理由是他與樂團的淵源——他製作過 Costello 與 Attractions 的前四張——以及他能捕捉 Costello 這次要的粗糙聲音。Costello 寫新歌時用吉他，也用雙手敲桌子找節奏；〈Blue Chair〉〈I Hope You're Happy Now〉〈Next Time Round〉是從《King of America》那批留下來的。",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "同節記錄音的擺法：Costello 與 Attractions 之間的緊張仍高，目標是趁彼此的敵意還沒嚴重到得整個放棄之前盡快把曲目錄完。樂團在錄音室裡照排練室的方式擺開，據記載貝斯與鼓之間相距達 25 呎，而且用監聽喇叭而非耳機，樂器之間幾乎沒有隔離。Costello 回憶「這造成一種轟隆的、混濁的聲音，讓細膩變得不可能。」作者 Graeme Thomson 認為「那是一種獨特的作法，本質上就像在一間洞穴般的錄音室裡、用幾支散在房間各處的麥克風錄一場現場演唱會。」",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "同節記：整張以現場演唱會般的高音量錄製，大部分歌是實錄的第一次 take、最多三次，疊錄只限主唱或和聲的補錄。Costello 1995 年說：「我們架好，用跟台上一樣大的音量彈。它其實聽起來不像《This Year's Model》，但組成的部分就只是我們四個人，而且我們幾乎沒有疊錄。我們盡可能彈出一個小樂團的聲音。」Lowe 回憶那是「一個緊繃得多的狀況……沒有那種一夥人的感覺」，但他承認自己刻意助長那份緊張，認為它「替錄音的環境加了分」。",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "同節記：Lowe 也在數首歌上彈原聲吉他；Costello 用他的 Telecaster，覺得它讓自己的部分「有一種很刺的邊緣」；他還把 Steve Nieve 的部分限制在風琴與鋼琴、完全不給獨奏。Costello 當時的女友、the Pogues 的貝斯手 Cait O'Riordan 在場，替〈Poor Napoleon〉與〈Crimes of Paris〉唱和聲，並與 Costello 合寫〈Tokyo Storm Warning〉。",
+    "src": "https://en.wikipedia.org/wiki/Blood_%26_Chocolate"
+   },
+   {
+    "f": "Apple Music GB 店面 collectionId 1443093435 的欄位：collectionName「Blood and Chocolate」（用 and 不是 &）、artistName「Elvis Costello & The Attractions」、releaseDate 1986-01-01、trackCount 11、notExplicit、copyright「℗ 1986 Elvis Costello」；十一軌曲名與曲序和 MB 那筆逐項對應，十一軌全部帶 previewUrl。",
+    "src": "https://music.apple.com/gb/album/1443093435"
+   }
+  ],
+  "hookCandidates": [
+   "貝斯和鼓隔了二十五呎，戴的不是耳機是監聽喇叭",
+   "製作人自己承認：他故意讓那股火氣燒著"
+  ],
+  "sound": "刻意做成一場現場演唱會：樂團照排練室的方式擺開，貝斯與鼓相距達 25 呎，用監聽喇叭而非耳機，樂器之間幾乎沒有隔離，Costello 說「這造成一種轟隆的、混濁的聲音，讓細膩變得不可能」；整張以台上的音量錄，大部分是第一次 take、最多三次，疊錄只限人聲補錄（英文維基 Recording 節）。他用 Telecaster，說那讓自己的部分「有一種很刺的邊緣」，並把 Nieve 限制在風琴與鋼琴、不給獨奏（同節）。十一軌裡兩首單曲都超過六分鐘（MB 1986 GB 盤逐軌曲長）。",
+  "keyTracks": [
+   "I Want You",
+   "Tokyo Storm Warning",
+   "Uncomplicated",
+   "Blue Chair"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1986 兩方一致：MB release-group first-release-date 1986-09-15、MB GB 盤 1986-09-15、英文維基 infobox 記 15 September 1986。Apple 的 releaseDate 是 1986-01-01（年初預設值，不可當日期用）。年份無爭議。",
+  "notes": "**推翻探測層**：`previews.json` 這一筆原判 unavailable，tried 是 gb／us／jp／de／fr／ie／ca／au 各 `12→0`（八個店面都搜到十二筆卻都沒配上）。本層在 gb 用 `search?term=Elvis Costello Blood and Chocolate&entity=album` 一次就命中：**collectionId 1443093435「Blood and Chocolate」、gb、11 軌、11 軌全部有 previewUrl**，曲名曲序與 MB 逐項對應。落空原因就是盤名的 `&`：卡片與 MB 寫《Blood & Chocolate》，**Apple 寫「Blood and Chocolate」**，屬第 152／158 條那一族的字串問題。**建議主線把這筆改成 ready、front gb、collectionId 1443093435**（本層依禁令不動 previews.json）。卡單 queryAlias 其實已經備了「Blood and Chocolate」，探測層沒有吃到這個 alias，這點值得主線回頭看探測腳本。\n**與《King of America》同年、只隔七個月**：兩張都在本批。維基明寫「seven months after」，是來源直述、不是本層算的。正文寫兩張的關係要照這個順序：先《King of America》（外請樂手、Attractions 被冷落）、後本張（Attractions 與 Lowe 回歸）。\n**「八年沒再合作」是來源直述**：維基導言明寫 did not work with the Attractions again for eight years。可以寫。\n**「第十一張／與 Attractions 的第九張」可以寫**：英文維基導言明寫。\n**廠牌兩說**：維基 infobox 記 Demon 與 Columbia，MB 那筆 GB 盤的廠牌欄記 Imp Records（FIEND CD 80）。兩邊都給了，正文若寫廠牌要挑一邊並知道另一邊存在。\n**互斥可用面向**：本張獨有的是 25 呎的擺法與監聽喇叭、第一次 take、Lowe 故意助長緊張、封面是 Costello 自己畫的。"
+ },
+ {
+  "key": "desc2:Jane’s Addiction|Strays",
+  "artist": "Jane’s Addiction",
+  "album": "Strays",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bccb3052 的欄位：title「Strays」、artist-credit「Jane's Addiction」、first-release-date 2003-07-21、primary-type Album、secondary-types 空；轄下 11 個 release（XE 5、US 3、CA 1、JP 1、未填國別 1），其中 10 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/bccb3052-3941-349e-85db-0ef6a38b2ed7"
+   },
+   {
+    "f": "該 release-group 的 2003-07-22 US 盤（release 8e92c571）欄位：country US、status Official、廠牌欄 Capitol Records、編號 CDP 7243 5 90186 0 7、barcode 724359018607、載體 Enhanced CD、11 軌。逐軌曲名與曲長依序為〈True Nature〉3:50、〈Strays〉4:32、〈Just Because〉3:52、〈Price I Pay〉5:27、〈The Riches〉5:44、〈Superhero〉3:58、〈Wrong Girl〉4:32、〈Everybody's Friend〉3:19、〈Suffer Some〉4:15、〈Hypersonic〉3:33、〈To Match the Sun〉5:28。",
+    "src": "https://musicbrainz.org/release/8e92c571-8e2b-38e4-bc8a-f87a3da3682b"
+   },
+   {
+    "f": "英文維基〈Strays (Jane's Addiction album)〉的 infobox 與導言記：Jane's Addiction 的第三張錄音室專輯，2003 年 7 月 22 日由 Capitol Records 發行，2002–2003 年錄於好萊塢的 Henson Recording Studios，製作人 Bob Ezrin 與 Brian Virtue，全長 48:22。條目寫本張在《Ritual de lo Habitual》(1990) 之後 13 年才出，是樂團兩張完整錄音室專輯之間最長的間隔（其間 1997 年的合輯《Kettle Whistle》收過兩首新歌），也是第一張有貝斯手 Chris Chaney 的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   },
+   {
+    "f": "同條目導言記：本張首週在美國賣出十一萬零五百張，以第 4 名進 Billboard 200，最終在美國與加拿大取得金唱片認證、在英國取得銀唱片認證；單曲〈Just Because〉2004 年獲葛萊美獎提名。鼓手 Stephen Perkins 談為什麼在停這麼久之後決定再錄一張錄音室專輯時說，樂團已經跑完兩趟只演舊歌的重聚巡演，Jane's 準備好迎接「一個新的挑戰」。",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   },
+   {
+    "f": "同條目 Background and recording 節記 Perkins 的說法：「一切大概是從 2002 年三、四月開始的，Bob Ezrin 替電影《Dark Blue》製作了一首 Porno for Pyros 的曲子〈Streets of Fire〉，那首歌史詩級的好。那件事接著就變成《Strays》這個案子。」Perry Farrell 談 Ezrin 說：「他把我們所有人的標準都拉高了。那像是在為奧運訓練——你在創作藝術時所嚮往的那種東西。」",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   },
+   {
+    "f": "同節記：貝斯手 Martyn LeNoble 在錄音進行到一半時被開除。他說：「《Strays》這張我幾乎整張都錄完了。然後 Perry 把它洗掉。他在日本當場把我開除，那時我們還有一整趟飛回美國的班機要坐。那是我最後一次跟他說話。Perry 和 Bob（Ezrin）把我所有的貝斯部分都換掉了。Perry 一直說我彈的每樣東西都像屎，可是他們讓新來的那個人幾乎照我的部分原樣彈，頂多改個一兩處，所以我猜也沒那麼像屎吧。」LeNoble 並因樂團在開除他之後沒有支付他的錄音室工作報酬而陷入財務困難。",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   },
+   {
+    "f": "同節記：接替 LeNoble 的是 Chris Chaney，Dave Navarro 形容他是「大概是我合作過最強烈的樂手」。Chaney 說：「Dave 和 Stephen 從十三歲就一起彈了。他們之間有相當的默契或化學作用——對我這個貝斯手來說能進到那裡面真的很不得了。」",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   },
+   {
+    "f": "同條目 Artwork 節記：Storm Thorgerson 為本張做的封面被樂團退掉，那件作品後來用在 Umphrey's McGee 的《The Bottom Half》上。Thorgerson 回憶：「我原本以為——想錯了——我那些洋蔥女士會多合適，接在《Nothing's Shocking》與《Ritual de lo Habitual》之後，還多加一點傻氣……更糟的還在後頭：Jane's Addiction 決定改用一張樂團的照片當封面，不那麼聰明、也不那麼銳利。」Musical style 節記 Farrell 說樂團「進錄音室時想的是快、硬、現代、切中要點」，樂評把本張歸類為 nu metal。",
+    "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+   }
+  ],
+  "hookCandidates": [
+   "貝斯手整張都錄完了，然後被當場開除、錄音被洗掉",
+   "找來的封面被退掉，樂團改用一張自己的照片"
+  ],
+  "sound": "Farrell 說樂團「進錄音室時想的是快、硬、現代、切中要點」，樂評把成品歸類為 nu metal（英文維基 Musical style and inspirations 節）。製作是 Bob Ezrin 與 Brian Virtue，Farrell 說 Ezrin「把我們所有人的標準都拉高了」（同條目 Background and recording 節）。十一軌全部落在 3:19 到 5:44 之間（MB 2003 US 盤逐軌曲長）。",
+  "keyTracks": [
+   "Just Because",
+   "True Nature",
+   "Superhero",
+   "To Match the Sun"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2003 三方一致：MB release-group first-release-date 2003-07-21、MB US 盤 2003-07-22、英文維基 infobox 記 July 22, 2003。日期差一天，年份無爭議。Apple US 的 releaseDate 是 2003-01-01（年初預設值，不可當日期用）。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 716406320，tried gb `1→1`）。策展層記的店面是 us，探測層記的是 gb，兩邊都有，不影響。\n**掛名撇號分裂**：卡片與 MB 用彎撇號「Jane's Addiction」（U+2019），維基條目與 Apple 用直撇號「Jane's Addiction」。卡單 queryAlias 已備。**這是池中既有的分裂，本層照卡片原樣抄 key，不製造第三種。**\n**策展層有兩處無來源、未採用**：curatorWhy 寫「1991 年解散、2001 年重組後的第一張錄音室專輯」與「是原主唱 Perry Farrell 與吉他手 Dave Navarro 重聚的唯一一張」。英文維基本條目**沒有**這兩句話——它寫的是本張在《Ritual de lo Habitual》(1990) 之後 13 年才出、是兩張完整錄音室專輯之間最長的間隔，以及 Perkins 說樂團已跑完「兩趟重聚巡演」。**正文不得寫 1991 解散／2001 重組／唯一一張這三個說法。**另外 curatorWhy 說「四張錄音室專輯裡只有這張不在池中」，但維基把本張稱為第三張錄音室專輯（第四張《The Great Escape Artist》是 2011 年，在本張之後），這個計數與策展層的說法不衝突但要小心：**正文若寫序數，只能寫維基的「第三張」。**\n**LeNoble 那條的分寸**：facts 給的是 LeNoble 單方面的自述（維基引 Brendan Mullen 的口述傳記），樂團一方沒有說法。正文若用，要寫成「他自己說」，**不可寫成已定讞的事實**。\n**互斥可用面向**：本張獨有的是貝斯手被開除與錄音被洗掉、Thorgerson 的封面被退、Ezrin 從 Porno for Pyros 那首曲子接過來的緣起。"
+ },
+ {
+  "key": "desc2:The Damned|The Black Album",
+  "artist": "The Damned",
+  "album": "The Black Album",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2bfdbb62 的欄位：title「The Black Album」、artist-credit「The Damned」、first-release-date 1980-10、primary-type Album、secondary-types 空；轄下 8 個 release（GB 7、US 1），8 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/2bfdbb62-b11e-390e-a515-cd6ab295de4a"
+   },
+   {
+    "f": "該 release-group 的 1980-10 GB 原盤（release 5de72450）欄位：country GB、status Official、廠牌欄 Chiswick、編號 CWK 3015、兩片 12\" Vinyl。第一片 11 軌：〈Wait for the Blackout〉3:56、〈Lively Arts〉3:00、〈Silly Kids Games〉2:35、〈Drinking About My Baby〉3:03、〈Twisted Nerve〉4:39、〈Hit or Miss〉2:37、〈Dr. Jekyll & Mr. Hyde〉4:35、〈Sick of This and That〉1:49、〈History of the World, Part 1〉3:46、〈13th Floor Vendetta〉5:05、〈Therapy〉6:12。第二片 7 軌：〈Curtain Call〉17:19，以及六首現場——〈Love Song〉2:10、〈Second Time Around〉1:51、〈Smash It Up, Parts 1 & 2〉4:24、〈New Rose〉1:49、〈I Just Can't Be Happy Today〉4:12、〈Plan 9 Channel 7〉4:58。",
+    "src": "https://musicbrainz.org/release/5de72450-776a-35ed-af2b-a1ee2fe88aa3"
+   },
+   {
+    "f": "英文維基〈The Black Album (The Damned album)〉的 infobox 與導言記：the Damned 的第四張錄音室專輯，也是第一張有貝斯手 Paul Gray 的專輯，1980 年 11 月 3 日由 Chiswick 以雙專輯形式發行；1980 年 5 至 6 月錄於威爾斯 Monmouth 的 Rockfield Studios，1980 年 7 月 26 日在 Shepperton Studios 錄現場，全長 77:42，製作掛「The Damned (as the Kings of Reverb)」與 Hans Zimmer。第三面整面是〈Curtain Call〉，第四面是那場專為 Damned 歌迷俱樂部會員辦的演出裡挑出來的現場曲目。本張在英國榜最高第 29 名。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   },
+   {
+    "f": "同條目 Background 節記：本張代表樂團生涯的轉向與聲音的擴張，加進了迷幻的成分。AllMusic 的 Ned Raggett 指出「有些曲目仍照樂團原本的龐克路數走，但到這時候這四個人已經把直來直往的三和弦猛砸留給那些走進死巷的復刻者了」，並說本張是「樂團試遍從直白搖滾到較輕柔氛圍一切東西的機會」。Captain Sensible 後來說 Dave Vanian 的人聲正往更暗的方向走：「它就是 goth；我們沒有打算要那樣做，但事情就是那樣。他確實有一輛靈車，他當過掘墓人。」",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   },
+   {
+    "f": "同節記：〈13th Floor Vendetta〉是向 1971 年的電影《The Abominable Dr. Phibes》致敬，開頭的歌詞是「...the organ plays to midnight on Maldine Square tonight」。德國電影配樂作曲家與音樂製作人 Hans Zimmer 參與了本張——1980 年他與 the Damned 共同製作單曲〈History of the World, Part 1〉，該曲也收進本張，唱片上對他的貢獻寫的是「Over-Produced by Hans Zimmer」。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   },
+   {
+    "f": "同條目 Reissues 節記：the Damned 在 Chiswick 的舊目錄 1981 年由 Big Beat 取得，本張 1982 年 8 月以單片專輯再版，拿掉了〈Curtain Call〉與現場曲目。再版的封面戲仿披頭四《The White Album》的封套，做成全黑、除了團名以大寫壓凸之外沒有任何細節。Vanian 說：「有人說披頭四有他們的《White Album》，我們有我們的《Black Album》。這封套跟披頭四一點關係也沒有。」Rat Scabies 卻說：「當然跟披頭四有關，我實在受夠了封面該放什麼的爭論。我說：『把它裝進一個素黑的封套，我們來對披頭四和《The White Album》開一槍。』」那些現場曲目後來另外加四軌，以《Live Shepperton 1980》的名義單獨再版。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   },
+   {
+    "f": "同節記：本張最早的 CD 再版把〈Curtain Call〉與原始封面裝了回去，2005 年的雙 CD 再版連現場曲目也一併裝回。Tour 節記 28 場的 Black Album 英國巡演 1980 年 11 月開跑，暖場是重組的 1970 年代 street punk 樂團 the Straps。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   },
+   {
+    "f": "同條目 Critical reception 節引《Stylus Magazine》的 Stewart Voegtlin：「真真切切是一則四面的故事，這張輕度精神分裂的唱片在一整面霓虹般、少於零的流行，與三塊聽起來像喝醉的 U.K. Subs 唱著寄宿學校合唱團老歌的龐克之間擺盪」，並形容 Vanian 的人聲是「男中音的冷笑，一半花花公子、一半離經叛道」。另引《Louder》的 Ian Fortnam：本張「至今仍是 The Damned 的迷幻哥德龐克代表作」，並說它「聽起來活像 1960 年代末的 The Who 從沒做出來的那張最好的專輯」。",
+    "src": "https://en.wikipedia.org/wiki/The_Black_Album_(The_Damned_album)"
+   }
+  ],
+  "hookCandidates": [
+   "第三面只有一首歌，十七分鐘",
+   "封面是全黑的——兩位團員對「這是不是在回應披頭四」各執一詞"
+  ],
+  "sound": "四個面各做各的事：三面錄音室、第三面整面是十七分多鐘的〈Curtain Call〉、第四面是 1980 年 7 月 26 日 Shepperton 那場歌迷俱樂部演出的現場（維基 infobox 與導言；MB 1980 GB 原盤逐軌曲長記〈Curtain Call〉17:19）。AllMusic 的 Ned Raggett 說本張是「樂團試遍從直白搖滾到較輕柔氛圍一切東西的機會」，Captain Sensible 則說 Vanian 的人聲正往更暗的方向走（維基 Background 節）。單曲〈History of the World, Part 1〉的製作掛「Over-Produced by Hans Zimmer」（同節）。",
+  "keyTracks": [
+   "Wait for the Blackout",
+   "History of the World, Part 1",
+   "13th Floor Vendetta",
+   "Curtain Call"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1980 兩方一致：MB release-group first-release-date 1980-10、MB GB 原盤 1980-10；英文維基 infobox 記 3 November 1980。MB 記 10 月、維基記 11 月 3 日，月份兩說，年份無爭議。策展層記 Apple GB 的 releaseDate 是 1980-11-03，與維基一致——**若主線要在兩說之間取一個，取 11 月 3 日（維基＋Apple 兩方，且維基那條引 Official Charts）**。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1621375607，tried gb `11→1`）。\n**盤名撞名是本張最大的下游風險**：《The Black Album》是被反覆沿用的通稱（Metallica 1991 年同名輯的俗稱、Prince、Jay-Z 都有同名品項）。**去重與外部查詢一律 artist+album 成對比**。策展層已分頁掃過 The Damned 名下 137 個 release-group，無第二筆標題含「Black Album」。\n**軌數不可斷言**：原始雙 LP 是 11＋7 軌；1982 年 Big Beat 單片版拿掉〈Curtain Call〉與現場；最早的 CD 再版裝回〈Curtain Call〉；2005 年雙 CD 再版連現場也裝回。**正文寫軌數一定要指明版本，或乾脆不寫。**\n**「第四張」可以寫**：英文維基導言明寫 fourth studio album。\n**披頭四那條要兩邊都寫**：Vanian 說與披頭四無關、Scabies 說當然有關。**不要只挑一邊**，這個矛盾本身才是可用的東西。另注意：那個全黑封面是 **1982 年 Big Beat 再版**的封面，不是 1980 年原盤的封面——正文不可寫成「這張的封面是全黑的」。\n**Hans Zimmer 那條要照抄措辭**：維基寫的是他共同製作了單曲〈History of the World, Part 1〉、該曲收進本張，唱片上寫「Over-Produced by Hans Zimmer」。**不要寫成「Hans Zimmer 製作了這張專輯」**。\n**互斥可用面向**：本張獨有的是四面各自為政的結構、Zimmer 的掛名、全黑封套的兩種說法。"
+ },
+ {
+  "key": "desc2:Gang of Four|Songs of the Free",
+  "artist": "Gang of Four",
+  "album": "Songs of the Free",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1d97766f 的欄位：title「Songs of the Free」、artist-credit「Gang of Four」、first-release-date 1982、primary-type Album、secondary-types 空；轄下 7 個 release（US 3、XE 2、GB 2），7 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/1d97766f-47c0-3ad9-848a-fdbc4ad2e6b3"
+   },
+   {
+    "f": "該 release-group 的 1982 GB 盤（release b2abc24e）欄位：country GB、status Official、廠牌欄 EMI、編號 EMC 3412、載體 12\" Vinyl、9 軌。MB 記的曲序與曲長為〈Call Me Up〉3:40、〈I Love a Man in a Uniform〉4:11、〈We Live as We Dream, Alone〉3:42、〈It Is Not Enough〉3:32、〈Life! It's a Shame〉4:09、〈I Will Be a Good Boy〉3:58、〈The History of the World〉4:44、〈Muscle for Brains〉3:20、〈Of the Instant〉4:57。",
+    "src": "https://musicbrainz.org/release/b2abc24e-e47a-4226-8fcd-472a9735845f"
+   },
+   {
+    "f": "英文維基〈Songs of the Free〉的 infobox 與導言記：Gang of Four 的第三張錄音室專輯，1982 年 5 月由 EMI 發行，1982 年 3 月錄於 Dorking 的 Ridge Farm Studios，製作掛 Andy Gill、Mike Howlett、Jon King，全長 39:32；曲風欄記 post-punk、dance-punk、new wave。單曲兩首：〈I Love a Man in Uniform〉與〈Call Me Up〉。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free"
+   },
+   {
+    "f": "同條目導言記：本張是 Sara Lee 接替 Dave Allen 擔任貝斯手後的第一張錄音，也標誌著樂團轉向 R&B 或放克、離開早期作品裡較粗礪的成分。1996 年 Infinite Zero Archive／American Recordings 發行的 CD 加了兩首附加曲、把〈Muscle for Brains〉與〈We Live as We Dream, Alone〉的位置對調，並把〈I Love a Man in a Uniform〉的曲名誤植為〈I Love a Man in Uniform〉；EMI 2008 年的 CD 再版則恢復原始曲序、不附加曲。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free"
+   },
+   {
+    "f": "同條目 Track listing 記原始黑膠的曲序與曲長：第一面〈Call Me Up〉3:35、〈I Love a Man in a Uniform〉4:06、〈Muscle for Brains〉3:17、〈It Is Not Enough〉3:27、〈Life! It's a Shame〉5:06；第二面〈I Will Be a Good Boy〉3:52、〈The History of the World〉4:40、〈We Live as We Dream, Alone〉3:37、〈Of the Instant〉4:58。所有歌由 Andy Gill 與 Jon King 所寫，寫作地點記為倫敦 E1 區 Mount Pleasant 38 號的 Mount Pleasant Studios，並註明 Jon Astrop 特別協助。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free"
+   },
+   {
+    "f": "同條目 Personnel 節記編制：Hugo Burnham 鼓與打擊、Andrew Gill 吉他與人聲、Jon King 人聲與口風琴、Sara Lee 貝斯與和聲；另有 Stevie Lange 與 Joy Yates 唱和聲，錄音師 Simon Smart 與 Walter Samuel，美術指導與設計 Shot That Tiger!，攝影 Colin Barker。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free"
+   },
+   {
+    "f": "同條目 Charts 節記：本張 1982 年在 Billboard Pop Albums 最高第 175 名；單曲〈I Love a Man in a Uniform〉在 Billboard Club Play Singles 最高第 27 名、在 UK Singles Charts 最高第 65 名。導言另記《Pitchfork》把本張列為 1980 年代第 99 佳專輯，Rhino 在 2015 年黑色星期五 Record Store Day 以 6250 張限量、藍紫黃潑彩 180 克黑膠再版。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free"
+   },
+   {
+    "f": "英文維基〈Gang of Four (band)〉記：Jon King 的歌詞一向具爭議性，單曲〈I Love a Man in a Uniform〉在 1982 年福克蘭戰爭期間遭 BBC 禁播（該條引 BBC Four 的〈16 songs banned by the BBC〉）。同條目另記 Dave Allen 1981 年離團，先由 Busta \"Cherry\" Jones 短暫接替陪樂團跑完北美巡演，之後才由 Robert Fripp 的 the League of Gentlemen 的貝斯手 Sara Lee 接手；Lee 唱歌與彈貝斯一樣好，她讓本張多了一分商業上的親近感。1983 年春天 Burnham 在本張發行後離團。",
+    "src": "https://en.wikipedia.org/wiki/Gang_of_Four_(band)"
+   }
+  ],
+  "hookCandidates": [
+   "最上口的那首單曲，發行沒多久就被 BBC 禁掉——因為英國打起仗來了",
+   "新來的貝斯手唱歌跟彈貝斯一樣好"
+  ],
+  "sound": "轉向 R&B 或放克，離開早期作品裡較粗礪的成分（英文維基導言）；新貝斯手 Sara Lee 唱歌與彈貝斯一樣好，讓本張多了一分商業上的親近感（英文維基〈Gang of Four (band)〉）。編制上 Jon King 除人聲外還吹口風琴，另有 Stevie Lange 與 Joy Yates 兩位和聲（同條目 Personnel 節）。九軌全長 39:32，最長〈Life! It's a Shame〉5:06（維基 infobox 與 Track listing）。",
+  "keyTracks": [
+   "I Love a Man in a Uniform",
+   "Call Me Up",
+   "We Live as We Dream, Alone",
+   "The History of the World"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1982 兩方一致：MB release-group first-release-date 1982（只到年）、MB GB 盤 1982；英文維基 infobox 記 May 1982。策展層記 Apple GB 的 releaseDate 是 1982-01-01（年初預設值，不可當日期用）。年份無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1028735292，tried gb `12→2`）。\n**策展層要本層查證的那件事：查到了，可以用。**〈I Love a Man in a Uniform〉在 1982 年福克蘭戰爭期間遭 **BBC** 禁播——來源是英文維基〈Gang of Four (band)〉，該條引 BBC Four 的〈16 songs banned by the BBC〉。**措辭要寫「遭 BBC 禁播」，不要寫成「電台限播」或「英國全面禁播」。**\n**曲序兩說（本張最該注意的矛盾）**：MB 那筆 1982 GB EMI 盤把〈We Live as We Dream, Alone〉排第 3、〈Muscle for Brains〉排第 8；英文維基的原始黑膠曲目表則是〈Muscle for Brains〉第 3、〈We Live as We Dream, Alone〉第 8，並明記**那個對調是 1996 年 Infinite Zero 版才做的**。也就是說 **MB 這筆標成 1982 GB 原盤的 release，曲序其實是 1996 年版的**。facts 兩種曲序都給了。**正文不要寫任何一軌的「第幾首」。**這一點建議主線回頭修 MB，或至少在卡片上留記。\n**曲名兩說**：〈I Love a Man in a Uniform〉（原盤與 MB）vs〈I Love a Man in Uniform〉（維基 infobox 的單曲欄與 1996 年 CD 的誤植）。keyTracks 取有 a 的那個。\n**「第三張」可以寫**：英文維基導言明寫 third studio album。\n**貝斯手接替不是直接換人**：維基樂團條目明記 Allen 1981 年離團後先由 Busta \"Cherry\" Jones 短暫接替，Sara Lee 才接手。**不要寫成「Allen 走了 Sara Lee 就來了」。**\n**互斥可用面向**：本張獨有的是 BBC 禁播、Sara Lee 的加入與轉向放克、曲序兩說。"
  }
 ]

@@ -215,7 +215,9 @@ for (const c of cards) {
   let fallback = null;                                   // 配到碟但該 storefront 無試聽時的保底
   for (const front of c.fronts) {
     // 比對用的候選名：原文與轉寫都算數，否則轉寫查到了也會被 titleOk 擋掉。
-    const albumCands = [c.album, translit(c.album)];
+    // queryAlias 可能是盤名的別名（見 match-lib 的 termsFor 註解），比對時也要算進候選盤名，
+    // 否則字串查到了、titleOk 這一關還是會把它擋掉。
+    const albumCands = [c.album, translit(c.album), c.queryAlias].filter(Boolean);
     const artistCands = [c.artist, c.queryAlias, translit(c.artist)].filter(Boolean);
     let hits = [];
     let raw = 0;

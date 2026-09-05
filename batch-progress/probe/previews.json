@@ -6628,9 +6628,20 @@
    "fr:1→0",
    "ie:1→0",
    "ca:1→0",
-   "au:1→0"
+   "au:1→0",
+   "gb:retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 996111401,
+  "appleTitle": "Substance 1977-1980",
+  "appleArtist": "Joy Division",
+  "appleYear": "1988",
+  "explicitness": "notExplicit",
+  "trackCount": 19,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/de/f1/56def139-64ca-da90-af9f-3f7268c299ca/mzaf_14817915570555539577.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 a 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判（第 152 條），成因是**副標被串進盤名**——Apple 作《Substance 1977-1980》，卡片作《Substance》。19 軌全帶 previewUrl。"
  },
  "Joy Division|Still": {
   "batch": "c93",
@@ -6750,18 +6761,20 @@
  "Suicide|A Way of Life": {
   "batch": "c93",
   "tried": [
-   "gb:5→2"
+   "gb:5→2",
+   "gb:retry→1"
   ],
   "front": "gb",
-  "collectionId": 1684448551,
-  "appleTitle": "A Way of Life (35th Anniversary Edition) [2023 Remaster]",
+  "collectionId": 1435782281,
+  "appleTitle": "A Way of Life (2005 - Remaster)",
   "appleArtist": "Suicide",
   "appleYear": "1988",
   "explicitness": "notExplicit",
-  "trackCount": 13,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/5d/ed/f15ded26-c8a8-b10a-cd5b-2cb75770ec80/mzaf_18181380199821145503.plus.aac.p.m4a",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/20/fe/5420feda-cff8-629e-b112-824fc4a90df3/mzaf_13757043555285249445.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 a 換綁、主線複驗**：原綁 1684448551 是 2023 年 35 週年版、13 軌，多出四軌現場與早期版；改綁 1435782281（2005 remaster、gb、9 軌），才對應 MB 的原盤（第 140 條：差別不在軌數多少，在多出來的那些是誰的）。"
  },
  "The B-52's|Wild Planet": {
   "batch": "c93",
@@ -6885,9 +6898,20 @@
    "fr:12→0",
    "ie:12→0",
    "ca:12→0",
-   "au:12→0"
+   "au:12→0",
+   "gb:retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1443093435,
+  "appleTitle": "Blood and Chocolate",
+  "appleArtist": "Elvis Costello & The Attractions",
+  "appleYear": "1986",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/27/5b/a4275b38-5583-415f-3791-fa7d05789761/mzaf_15113422877929156788.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 a 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**連接詞寫法**——Apple 作《Blood and Chocolate》、卡片作《Blood & Chocolate》。11 軌全帶 previewUrl。**卡單的 queryAlias 本來就備了「Blood and Chocolate」，是探測層沒把 queryAlias 當盤名別名用**——match-lib.mjs 的 termsFor 與 probe-previews.mjs 的 albumCands 已於同日修正。"
  },
  "Jane’s Addiction|Strays": {
   "batch": "c93",
