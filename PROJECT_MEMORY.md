@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-05｜dip-vinyl-shop｜序章第 17 句改旁白、遇敵特效（神奇寶貝初代式）、大改版規劃 `DUNGEON_DESIGN.md`
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+1. 序章第 17 句由老闆台詞改成旁白：「老闆不發一語，緩步從櫃台走出來，站在兩人之間。」（店主指定）。
+2. **遇敵特效 `encounterFx(done, opts)`**：對手頭上跳「！」→ 畫面閃白三下 → 八條黑色橫條左右交錯掃入（`steps(6)` 做像素跳動）→ 全黑 →
+   黑幕底下換場 → 淡出。純 CSS 動畫，覆蓋層掛 body 不被 `#app` 重繪洗掉。接在序章「接受對決」與尾聲「應戰」兩處；`opts.mark=false` 給沒有對手小人的場景。
+   實測從按下到牌桌出現 2.3 秒、黑幕 2.7 秒消失；預覽 GIF 用 Playwright 錄影 + Playwright 自帶的 ffmpeg 抽格 + Pillow 合成。
+3. **`DUNGEON_DESIGN.md`（新）**：店主要的暗黑地牢式大改版規劃草案 v0.1——聆聽室（主城）、唱片行＝地牢（小地圖、五種節點、事件、店長）、
+   專輯品相（耐久，與配件耗損同一套）、敵人資料化（流派＋個性特技＋台詞＋像素造型，第一批 16 個）、無盡試煉改成往右的路徑圖（分歧＝選敵人流派）、
+   與現有系統的對接、P0／P1／P2 分階段、六個要店主決定的問題。
+
+**主要檔案**：`roguelike.html`、`DUNGEON_DESIGN.md`。
+**驗證**：腳本過 `node --check`；Playwright 錄影確認特效順序與換場時機，console 無錯誤。
+
 ### 2026-09-03｜dip-vinyl-shop｜序章微調：木箱改固定三件、拿掉一句對白、名字產生器擴充到 45 組
 
 同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。店主試玩後的三點回饋：

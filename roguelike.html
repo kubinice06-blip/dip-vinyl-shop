@@ -181,6 +181,23 @@
   .rpg-opt{padding:6px 8px;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;border:1px solid transparent;}
   .rpg-opt:hover{border-color:#fff;background:#111;}
   .rpg-opt.dim{color:#aaa;font-weight:400;}
+  /* ⚡ 遇敵特效：驚嘆號 → 閃白 ×3 → 黑條左右交錯掃入（steps 做像素跳動）→ 全黑 → 淡出 */
+  .rpg-excl{position:absolute;left:11px;top:-24px;font-size:15px;font-weight:900;line-height:18px;color:#c11628;background:#fff;border:2px solid #111;padding:0 5px;animation:rpgExcl .18s steps(2,end);}
+  @keyframes rpgExcl{0%{transform:translateY(6px);opacity:0;}100%{transform:none;opacity:1;}}
+  .enc-ov{position:fixed;inset:0;z-index:2147482000;pointer-events:auto;}
+  .enc-ov .enc-flash{position:absolute;inset:0;background:#fff;opacity:0;}
+  .enc-ov.flash .enc-flash{animation:encFlash .22s steps(1,end) 3;}
+  @keyframes encFlash{0%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
+  .enc-ov .enc-bars{position:absolute;inset:0;display:flex;flex-direction:column;}
+  .enc-ov .enc-bars i{flex:1;background:#000;transform:translateX(-101%);}
+  .enc-ov .enc-bars i:nth-child(even){transform:translateX(101%);}
+  .enc-ov.bars .enc-bars i{animation:encBar .5s steps(6,end) forwards;}
+  .enc-ov.bars .enc-bars i:nth-child(2),.enc-ov.bars .enc-bars i:nth-child(7){animation-delay:.04s;}
+  .enc-ov.bars .enc-bars i:nth-child(3),.enc-ov.bars .enc-bars i:nth-child(6){animation-delay:.08s;}
+  .enc-ov.bars .enc-bars i:nth-child(4),.enc-ov.bars .enc-bars i:nth-child(5){animation-delay:.12s;}
+  @keyframes encBar{to{transform:translateX(0);}}
+  .enc-ov.black{background:#000;} .enc-ov.black .enc-bars{display:none;}
+  .enc-ov.out{transition:opacity .35s;opacity:0;pointer-events:none;}
 
   /* 三張頂點卡三選一（一列＝封面＋該軸介紹）＋嗆聲客人的紅框對話 */
   .acepick{display:flex;gap:10px;align-items:stretch;border:1px solid var(--line);padding:8px;margin:6px 0;cursor:pointer;position:relative;transition:border-color .15s,box-shadow .15s;}
@@ -2146,7 +2163,7 @@ const RPG_BEATS = [
   { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
   { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
   { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
-  { who:'老闆', text:'「兩位、兩位。」老闆從櫃台後面走了出來。', stage:{o:'between',anger:false} },
+  { who:'', text:'老闆不發一語，緩步從櫃台走出來，站在兩人之間。', stage:{o:'between',anger:false} },
   { who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」', ui:'choice' },
 ];
 let _rpg=null;
@@ -2252,7 +2269,34 @@ function rpgOpenUI(b){
 }
 function rpgAceConfirm(){ const s=shopState(); if(!s.axis) return; rpgShow(_rpg.beat+1); }
 function rpgRecsAccept(){ if(!shopCheckout()) return; rpgShow(_rpg.beat+1); }
-function rpgChoose(how){ if(!META.profile) return; shopLeave(how); }
+function rpgChoose(how){
+  if(!META.profile) return;
+  if(how==='tutorial'){ encounterFx(()=>shopLeave('tutorial')); return; }   // ⚡ 遇敵特效 → 進老闆帶打
+  shopLeave(how);
+}
+// =========================================================================
+//  ⚡ 遇敵特效（神奇寶貝初代那種）：對手頭上先跳「！」→ 畫面閃白三下 → 黑色橫條左右交錯掃進來（6 格一跳的像素感）
+//  → 全黑 → 在黑幕底下換場（done）→ 黑幕淡出露出牌桌。純 CSS 動畫，覆蓋層掛在 body 上，換場時不會被 #app 重繪洗掉。
+//  opts.mark=false：不跳驚嘆號（場景裡沒有對手小人時用，例如地牢裡踩到遇敵格）。
+// =========================================================================
+function encounterFx(done, opts){
+  opts=opts||{};
+  const foe=document.getElementById('rpgF');
+  if(foe && opts.mark!==false){ const ex=document.createElement('div'); ex.className='rpg-excl'; ex.textContent='！'; foe.appendChild(ex); }
+  const ov=document.createElement('div'); ov.className='enc-ov';
+  ov.innerHTML='<div class="enc-flash"></div><div class="enc-bars">'+'<i></i>'.repeat(8)+'</div>';
+  document.body.appendChild(ov);
+  const t=ms=>new Promise(r=>setTimeout(r,ms));
+  (async()=>{
+    await t(opts.mark===false?0:520);
+    ov.classList.add('flash'); await t(3*220);
+    ov.classList.remove('flash'); ov.classList.add('bars'); await t(640);
+    ov.classList.add('black'); await t(200);
+    try{ if(done) done(); }catch(e){ console.error(e); }
+    await t(160);
+    ov.classList.add('out'); await t(380); ov.remove();
+  })();
+}
 function shopLeave(how){
   _shop=null; if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
   if(how==='tutorial'){ startTutorialGuarded(); return; }
@@ -2309,9 +2353,11 @@ function rpgPickRelic(i){
   rpgShow(_rpg.beat+1);
 }
 function rpgEpilogueEnd(){
-  if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
-  RUN._drewThisWin=true;   // 這一場的獎勵是老闆的木箱，不再抽盤
-  if(RUN.lvlQueue>0) renderLevelUp(); else nextFight();
+  encounterFx(()=>{
+    if(_rpg && _rpg.timer) clearInterval(_rpg.timer); _rpg=null;
+    RUN._drewThisWin=true;   // 這一場的獎勵是老闆的木箱，不再抽盤
+    if(RUN.lvlQueue>0) renderLevelUp(); else nextFight();
+  });
 }
 // 首頁的角色卡（新手首頁＋出師後的選流派畫面共用）
 function charCardHTML(){
