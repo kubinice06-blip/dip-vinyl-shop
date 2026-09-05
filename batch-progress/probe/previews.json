@@ -7083,21 +7083,9 @@
    "fr:12→0",
    "ie:12→0",
    "ca:2→0",
-   "au:2→0",
-   "gb:artistPage-retry→1"
+   "au:2→0"
   ],
-  "front": "gb",
-  "collectionId": 1526177110,
-  "appleTitle": "Repeat - EP",
-  "appleArtist": "This Heat",
-  "appleYear": "1993",
-  "explicitness": "notExplicit",
-  "trackCount": 1,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/26/f4/2126f4b9-6819-ed4b-9767-8a038bb606ae/mzaf_4382652885484056375.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready",
-  "note": "**2026-09-05 研究層 c-93 b 覆核、主線裁定採用**：八個店面都命中 1526177110，但**那筆 Apple 條目只有同名首軌一軌**（20:20，與 MB 的 20:23 對得上），不是三軌全碟——卡片盤名《Repeat》的原盤是〈Repeat〉〈Metal〉〈Graphic/Varispeed〉三軌。**主線裁定：試聽採用、但這個 collectionId 不得作為封面或任何後設資料（軌數、曲目、年份）的來源。** 依據：取的那一軌確實出自本盤，與第 157 條「取試聽按曲名不按軌號」同一方向；且此舉可逆，改的是卡單一個欄位。封面走 CAA。",
-  "partialCollection": true
+  "status": "unavailable"
  },
  "This Heat|Made Available: John Peel Sessions": {
   "batch": "c93",
@@ -7223,20 +7211,9 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0",
-   "gb:artistPage-retry→1"
+   "au:0→0"
   ],
-  "front": "gb",
-  "collectionId": 1502468694,
-  "appleTitle": "Pure Phase",
-  "appleArtist": "Spiritualized",
-  "appleYear": "1995",
-  "explicitness": "explicit",
-  "trackCount": 14,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/4d/2e/914d2e4c-d58a-f8e2-b5df-cc173c1f2389/mzaf_4235837838798419543.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready",
-  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**掛名別名**——MB 的 artist-credit 是 Spiritualized Electric Mainline。逐軌比對 14/14 曲名、曲序、曲長全同。研究層是用第 166 條的藝人頁 lookup 撈全目錄才找到的。"
+  "status": "unavailable"
  },
  "Spiritualized|Let It Come Down": {
   "batch": "c93",
@@ -7264,20 +7241,9 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0",
-   "gb:artistPage-retry→1"
+   "au:0→0"
   ],
-  "front": "gb",
-  "collectionId": 724319797,
-  "appleTitle": "Whitechocolatespaceegg",
-  "appleArtist": "Liz Phair",
-  "appleYear": "1998",
-  "explicitness": "explicit",
-  "trackCount": 16,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/eb/7e/efeb7ee1-5c1a-0b55-7f56-0592989cb97c/mzaf_8648869874089948267.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready",
-  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**大小寫**——Apple 寫成首字母大寫的 Whitechocolatespaceegg。逐軌比對 16/16 全同。⚠ 同藝人 2003 年那張《Liz Phair》的 Apple 條目比 MB 少一軌（缺〈H.W.C.〉）且標 notExplicit，是另一回事、另一張卡。"
+  "status": "unavailable"
  },
  "Liz Phair|Liz Phair": {
   "batch": "c93",
@@ -7370,21 +7336,9 @@
    "fr:4→0",
    "ie:4→0",
    "ca:1→0",
-   "au:1→0",
-   "gb:artistPage-retry→1"
+   "au:1→0"
   ],
-  "front": "gb",
-  "collectionId": 1440756253,
-  "appleTitle": "Chinese Democracy",
-  "appleArtist": "Guns N' Roses",
-  "appleYear": "2008",
-  "explicitness": "explicit",
-  "trackCount": 14,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/05/e0/0405e09d-822f-f757-3535-ba1d9d3f39e2/mzaf_1072987212322894132.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready",
-  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因有兩層——**掛名的撇號有彎直兩形**，加上 search 端點漏掉整張碟（第 166 條），要走藝人頁 lookup 才撈得到。逐軌比對 14/14 全同。 ⚠ **Apple 的 collection 物件寫 trackCount 15，但 lookup 只回得出 14 個 song 列**（逐軌與 MB 原盤的 14 軌完全對應，第 14 軌是〈Prostitute〉）。**行文寫軌數一律以 14 為準，不得引 Apple 的 15**（第 157 條同族：Apple 的欄位值與實際曲目表不一致時，以曲目表為準）。",
-  "appleTrackCountField": 15
+  "status": "unavailable"
  },
  "The Sonics|Boom": {
   "batch": "c93",
@@ -7396,20 +7350,9 @@
    "fr:12→0",
    "ie:12→0",
    "ca:12→0",
-   "au:12→0",
-   "gb:artistPage-retry→1"
+   "au:12→0"
   ],
-  "front": "gb",
-  "collectionId": 626202316,
-  "appleTitle": "The Sonics Boom",
-  "appleArtist": "The Sonics",
-  "appleYear": "1977",
-  "explicitness": "notExplicit",
-  "trackCount": 12,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/51/4d/e4514df7-24ff-a35b-a1a2-de3581c4cd57/mzaf_3494638873685514198.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready",
-  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**Apple 把團名串進盤名**——條目作《The Sonics Boom》、卡片作《Boom》。12/12 同序，曲長差 1–8 秒。⚠ Apple 的年份欄是 1977（再版年），**不得寫成發行年**；原盤 1966（第 95 條）。"
+  "status": "unavailable"
  },
  "N.W.A|N.W.A. and the Posse": {
   "batch": "c96",
@@ -7431,18 +7374,20 @@
  "The Notorious B.I.G.|Born Again": {
   "batch": "c96",
   "tried": [
-   "us:7→1"
+   "us:7→1",
+   "us:research-retry→1"
   ],
   "front": "us",
-  "collectionId": 1782256137,
-  "appleTitle": "Born Again",
+  "collectionId": 78989263,
+  "appleTitle": "Born Again (2005 Remaster)",
   "appleArtist": "The Notorious B.I.G.",
   "appleYear": "1999",
-  "explicitness": "cleaned",
+  "explicitness": "explicit",
   "trackCount": 18,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/2b/93/d72b9324-ff15-b4da-e30d-2c12d9ef29e7/mzaf_7111641364833010104.plus.aac.p.m4a",
-  "cleanedOnly": true,
-  "status": "ready"
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/34/17/f234178d-63a9-0820-cd35-c3d4122c3a70/mzaf_12235839482746368486.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 換綁、主線複驗**：原綁 1782256137 是 cleaned；改綁 78989263（us、18 軌 explicit、同軌數雙胞胎）。⚠ 研究層另註：這張**是身後合輯不是第三張專輯**，策展層的「第三張專輯」「未發表 vocal 母帶」兩處無來源、未採用。"
  },
  "JAY-Z|In My Lifetime, Vol. 1": {
   "batch": "c96",
@@ -7535,20 +7480,21 @@
    "us:0→0",
    "gb:0→0",
    "jp:1→0",
-   "jp:artistPage→1"
+   "jp:artistPage→1",
+   "us:research-retry→1"
   ],
-  "front": "jp",
-  "collectionId": 258634938,
-  "appleTitle": "Only Built 4 Cuban Linx...",
-  "appleArtist": "レイクウォン",
-  "appleYear": "1995",
+  "front": "us",
+  "collectionId": 716639724,
+  "appleTitle": "Only Built 4 Cuban Linx, Pt. 2",
+  "appleArtist": "Raekwon",
+  "appleYear": "2009",
   "explicitness": "explicit",
-  "trackCount": 18,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/ca/21/3aca2193-6b78-72ad-2ae8-dfddbc2d922f/mzaf_75318236452478510.plus.aac.p.m4a",
+  "trackCount": 22,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/8b/27/f18b27aa-9a54-e551-b19d-abb3253072b0/mzaf_16233244150537575253.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "yearDrift": 14,
-  "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 抓到探測層配錯碟、主線複驗換綁**：原綁 258634938 是 **1995 年的第一集**（jp 店面、掛名レイクウォン、18 軌、yearDrift 14）——這是第 140／141／162 條那一族，**卷號被子字串比對整個吃掉**。正解 us 716639724：24 軌 explicit，**前 22 軌與 MB 原盤逐項相同，末兩軌是 iTunes 版 bonus**。⚠ **行文寫軌數以原盤的 22 為準，不得寫 24。** 同日已修 match-lib 的 `titleOk`／`looseTitleOk`，加卷號記號比對（test-match 28/28）。",
+  "appleTrackCountField": 24
  },
  "GZA|Words From the Genius": {
   "batch": "c96",
@@ -7602,9 +7548,21 @@
    "ca:1→0",
    "de:1→0",
    "fr:12→0",
-   "au:1→0"
+   "au:1→0",
+   "us:research-retry→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1159475968,
+  "appleTitle": "The Art of War: World War 1",
+  "appleArtist": "Bone Thugs-n-Harmony",
+  "appleYear": "1997",
+  "explicitness": "explicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/26/8e/36268e6c-e120-cad4-8123-970b5902c816/mzaf_7311832958574761362.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 覆核、主線裁定**：Apple 上這張**被拆成兩張**——World War 1 (1159475968、13 軌 explicit) 與 World War 2 (1170658006、15 軌 explicit)，剛好等於 MB CD 版的兩片。**主線裁定：試聽取 World War 1，該 collectionId 不得作為軌數、曲目或封面的來源**（原盤是兩片共 28 軌，封面走 CAA）。依據與同日 This Heat《Repeat》那件相同：取的那一軌確實出自本盤，且此舉可逆、改的是卡單一個欄位。**另一半的 collectionId 1170658006 一併記在這裡，上架時若要補第二片的曲目可直接用。**",
+  "partialCollection": true
  },
  "Bone Thugs-n-Harmony|BTNHResurrection": {
   "batch": "c96",
@@ -7615,9 +7573,20 @@
    "ca:0→0",
    "de:0→0",
    "fr:0→0",
-   "au:0→0"
+   "au:0→0",
+   "us:research-retry→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1168186112,
+  "appleTitle": "BTNHRESURRECTION",
+  "appleArtist": "Bone Thugs-n-Harmony",
+  "appleYear": "2000",
+  "explicitness": "explicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/ef/fb/59effb98-2305-64ef-c802-d758a87ac1b4/mzaf_11889928848621903722.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 覆核、主線複驗**：探測層判 unavailable 是誤判，成因是 **Apple 的盤名字串全大寫**，search 落空。us 1168186112，16 軌 explicit。"
  },
  "Lil' Kim|The Notorious K.I.M.": {
   "batch": "c96",
@@ -7668,7 +7637,9 @@
   "trackCount": 10,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a9/ac/d7/a9acd7ea-f518-3e46-5ac1-61b82156fadf/mzaf_2517237068048633282.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": " **2026-09-05 研究層 c-96 a：Apple 版 10 軌、MB 11 軌，缺的那一軌維基明記是重發時被略去的 bonus track。行文寫軌數必須指明是哪一版（第 157 條）。**",
+  "mbTrackCount": 11
  },
  "Snoop Dogg|Tha Last Meal": {
   "batch": "c96",
@@ -7682,10 +7653,12 @@
   "appleArtist": "Snoop Dogg",
   "appleYear": "2000",
   "explicitness": "explicit",
-  "trackCount": 20,
+  "trackCount": 19,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/1e/de/1c1ede48-6ff5-6251-aaff-309166fcb482/mzaf_7780958844766099851.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "appleTrackCountField": 20,
+  "note": " **2026-09-05 研究層 c-96 a：Apple 的 trackCount 欄寫 20，實際只有 19 軌（＝MB）。行文以 19 為準。**"
  },
  "Ultramagnetic MC's|The Four Horsemen": {
   "batch": "c96",
@@ -7696,9 +7669,20 @@
    "ca:0→0",
    "de:0→0",
    "fr:0→0",
-   "au:0→0"
+   "au:0→0",
+   "us:research-retry→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1565362633,
+  "appleTitle": "The Four Horsemen",
+  "appleArtist": "Ultramagnetic MC's",
+  "appleYear": "1993",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/84/a6/01/84a6011d-e3e7-d11f-8aeb-b427f0332118/mzaf_5960452049194161426.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 覆核、主線複驗**：探測層判 unavailable 是誤判，成因是**掛名的撇號**——artistId 145935593 要帶撇號才搜得到（第 166 條：改打藝人頁 lookup 就看得到）。us 1565362633，14 軌 explicit。"
  },
  "Souls of Mischief|No Man's Land": {
   "batch": "c96",
@@ -7715,25 +7699,26 @@
   "trackCount": 16,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4b/85/98/4b859801-53e2-e251-3e50-920d2f4a7038/mzaf_2960883933117643091.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "yearDrift": 5,
-  "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "note": " **2026-09-05 研究層 c-96 a：原本的 yearDrift 5 是假警報**——逐軌比對確認是同一張碟，Apple 的日期欄寫錯。旗標已清。"
  },
  "Wu-Tang Clan|Iron Flag": {
   "batch": "c96",
   "tried": [
-   "us:12→1"
+   "us:12→1",
+   "us:research-retry→1"
   ],
   "front": "us",
-  "collectionId": 1762519588,
+  "collectionId": 1762519766,
   "appleTitle": "Iron Flag",
   "appleArtist": "Wu-Tang Clan",
   "appleYear": "2001",
-  "explicitness": "cleaned",
-  "trackCount": 12,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/2d/ad/572dadb9-ba30-13c3-d251-773e48cef03b/mzaf_5015961517156256751.plus.aac.p.m4a",
-  "cleanedOnly": true,
-  "status": "ready"
+  "explicitness": "explicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/49/65/25496517-0bb6-004c-5654-aabd32f05d26/mzaf_8409364117576470412.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-96 a 換綁、主線複驗**：原綁 1762519588 是 cleaned、12 軌；改綁 1762519766（us、13 軌 explicit）。**多的那一軌不是 Deluxe**——是原盤標題曲尾巴的隱藏曲〈Da Glock〉被 Apple 拆成獨立一軌，維基有直述。"
  },
  "Frank Ocean|Endless": {
   "batch": "c96",
@@ -9419,6 +9404,122 @@
   "explicitness": "notExplicit",
   "trackCount": 13,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/b0/4e/31/b04e315b-bd38-9195-3025-397e62bc9f5b/mzaf_822208135989913457.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jelly Roll Morton|The Pearls": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:4→1"
+  ],
+  "front": "gb",
+  "collectionId": 504543940,
+  "appleTitle": "The Pearls",
+  "appleArtist": "Jelly Roll Morton",
+  "appleYear": "1938",
+  "explicitness": "notExplicit",
+  "trackCount": 20,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/7f/75/26/mzm.ddejdmel.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 50,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "King Oliver|The New York Sessions (1929-1930)": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:9→0",
+   "dk:ratelimited-after-retries",
+   "dk:9→0",
+   "se:9→0",
+   "de:0→0",
+   "nl:9→0",
+   "jp:9→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Fletcher Henderson|Tidal Wave": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 1444079959,
+  "appleTitle": "Tidal Wave",
+  "appleArtist": "Fletcher Henderson",
+  "appleYear": "1994",
+  "explicitness": "notExplicit",
+  "trackCount": 21,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d0/90/6e/d0906e36-c4f6-4057-6d6c-7b19980bf1d3/mzaf_6359087340544458372.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Machito|Afro-Cuban Jazz: The Music of Chico O'Farrill": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:0→0",
+   "dk:0→0",
+   "se:0→0",
+   "de:0→0",
+   "nl:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Sidney Bechet|The Fabulous Sidney Bechet": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 725210025,
+  "appleTitle": "The Fabulous Sidney Bechet",
+  "appleArtist": "Sidney Bechet",
+  "appleYear": "1958",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f5/25/44/f525444d-8eba-d598-c261-eb63a24f6f7d/mzaf_9152723709986536185.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Django Reinhardt|The Great Artistry of Django Reinhardt": {
+  "batch": "c95",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1442207211,
+  "appleTitle": "The Great Artistry of Django Reinhardt",
+  "appleArtist": "Django Reinhardt",
+  "appleYear": "1954",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/eb/82/e6eb8298-0c44-9547-a947-8d756be274e1/mzaf_3168074518419688531.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Teddy Wilson|With Billie in Mind": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 1213953609,
+  "appleTitle": "With Billie In Mind",
+  "appleArtist": "Teddy Wilson",
+  "appleYear": "1972",
+  "explicitness": "notExplicit",
+  "trackCount": 20,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ba/20/28/ba202841-3f34-34be-bee4-af1a90cc8ae6/mzaf_4795442091455474595.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
  }

@@ -13,12 +13,26 @@ export const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 // 卡片本身若就是 EP（§5.5 的 asia-mini-album 白名單）則卡名自己也會帶那個字，
 // 所以比對的是「Apple 有、卡片沒有」才擋。
 export const SUFFIX = /[-–—]\s*(Single|EP)\s*$/i;
+// 2026-09-05（c-96 研究 a 抓到）：**卷號的差別會被子字串比對整個吃掉。**
+// Raekwon《Only Built 4 Cuban Linx... Pt. II》被配到 1995 年的**第一集**——
+// 兩邊都含數字「4」，所以既有的「數字殘餘」那道擋不住；
+// 摺疊後只差 `ptii` 四個字元，落在長度差 ≤8 的容忍內，於是直接放行（yearDrift 14 只標記不擋）。
+// 這是第 140／141／162 條那一族：**盤名短的那一張最容易把長的吃掉。**
+// 卷號用羅馬數字或 Pt./Vol. 表示時，`\d` 那道測不到，所以另抽一個「卷號記號」比對：
+// 兩邊都有且相同才算數，只有一邊有就是不同碟。
+const VOLTOK = /(?:\b(?:pt|part|vol|volume|no)\.?\s*)?\b([ivx]{1,4}|\d{1,3})\s*$/;
+export const volToken = s => {
+  const t = fold(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  const m = t.match(VOLTOK);
+  return m ? m[1] : '';
+};
 export const titleOk = (want, got, selfTitled = false) => {
   if (SUFFIX.test(got) && !SUFFIX.test(want)) return false;
   const a = norm(want), b = norm(got);
   if (a === b) return true;
   if (selfTitled) return false;                        // 自我同名：只接受完全相等
   if (/\d/.test(a) !== /\d/.test(b) && (a.includes(b) || b.includes(a))) return false; // 數字殘餘
+  if (volToken(want) !== volToken(got)) return false;  // 卷號殘餘（見上）
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
 export const artistOk = (want, got) => {
@@ -87,6 +101,7 @@ export const looseTitleOk = (want, got, selfTitled = false) => {
   if (a === b) return true;
   if (selfTitled) return false;
   if (digitResidual(a, b)) return false;
+  if (volToken(want) !== volToken(got)) return false;  // 卷號殘餘：兩道都要擋，否則 T() 那一關會漏
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
 export const looseArtistOk = (want, got) => {
