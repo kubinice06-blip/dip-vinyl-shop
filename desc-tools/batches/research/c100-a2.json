@@ -232,5 +232,96 @@
   "status": "full",
   "yearVerified": "卡單 1959。MB first-release-date 1959-07（Decca SXL 2159 英國原盤）、英文維基《Complete Decca Studio Recitals》清單直接寫「Operatic Arias (1959)」、Apple 那筆 Decca 官方品項的 copyright ℗ 1959，三方一致。**錄音年與發行年同為 1959，沒有落差**；Apple 上那筆 appleYear 2016 的品項是第三方再發，不是另一說（見 notes）。",
   "notes": "**ready 覆核：配對的碟是對的，但配到的品項要換。** 探測層記的 gb 1111699219「Finest Operatic Arias」（appleTitle 不同、只有 5 軌、appleYear 2016）**經逐軌比對確認就是 1959 年 Decca SXL 2159 那次錄音**——五首詠嘆調同名同序，長度 786／480／213／375／968 秒對上 MB 的 792／484／212／377／975 秒，掛名的「The Paris Consevatoire Orchestra」（Apple 自己拼錯了 Conservatoire）就是 MB 的 Orchestre de la Société des Concerts du Conservatoire。**所以它不是後來的精選，appleYear 2016 是再發年不是錄音年（裁定 77：Apple 年份只能當訊號）。**｜**但正解應改成 Apple 1452135704「Joan Sutherland: Operatic Recital」**：同一份錄音、同樣 5 軌全有 previewUrl、**七個店面全有（1111699219 的 us 店面沒有）**，而且 copyright 是 **℗ 1959 Decca Music Group Limited**——版權方本人的品項，而 1111699219 是 ℗ 2016 Black Cat Productions 這種第三方復刻（c-99 第 6 條要看再發授權狀態）。建議把探測檔改成 gb 1452135704。｜第三個候選 418447103（℗ 2010 Regis，7 軌）是原盤五軌**加上**韓德爾《Alcina》兩曲的加曲版，不取。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Regnava nel silenzio〉正是原盤第 1 軌。｜掛名：MB 的 artist-credit 把兩位作曲家排在最前（Donizetti, Verdi; Sutherland, ...），卡片取獨唱者，合策展層第 3 條。｜**擋下策展層可能的說法**：維基寫「她第一次商業錄下露琪亞的第一場與最後一場」時**沒有點名是哪一張唱片**，行文不得直接把那句安在本張上；同樣，「La Stupenda」這個稱號維基繫在 1960 年威尼斯的《Alcina》之後，不是 1959 年這張。"
+ },
+ {
+  "key": "desc2:Joan Sutherland|Bellini: La sonnambula (1962)",
+  "artist": "Joan Sutherland",
+  "album": "Bellini: La sonnambula (1962)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 21e3dee6 的欄位：title「La sonnambula」、artist-credit「Vincenzo Bellini; Joan Sutherland, Nicola Monti, Fernando Corena, Orchestra e Coro del Maggio Musicale Fiorentino, Richard Bonynge」、first-release-date 1963、**primary-type Album、secondary-types 空**（歌劇全曲盤在 MB 沒有另外的型別標記，依裁定 167 照實記）、轄下 2 個 release。",
+    "src": "https://musicbrainz.org/release-group/21e3dee6-efd0-4c4f-a85f-24d618415ec7"
+   },
+   {
+    "f": "兩筆 release：8d4b3b78 是 1963 年那筆，**MB 上只有年份，國別、status、廠牌、載體、曲目全部空白**；89d1f3a2 是 1996 年歐洲盤 Decca Classics 448 966-2，兩張 CD、18＋15＝33 軌，曲目從第一幕〈Viva! viva! viva! viva! Amina!〉排到第二幕〈Ah! non giunge uman pensiero〉。",
+    "src": "https://musicbrainz.org/release/89d1f3a2-001c-436a-84af-cec78d173529"
+   },
+   {
+    "f": "英文維基〈Joan Sutherland〉：她 1954 年與 Richard Bonynge 結婚，是 Bonynge 說服她從華格納轉向美聲曲目；1959 年 Covent Garden 的《露琪亞》是她的突破；1960 年在威尼斯鳳凰劇院唱《Alcina》之後，世界各地的報紙開始以「La Stupenda」稱她。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Sutherland"
+   },
+   {
+    "f": "Apple Music 七個店面（gb／us／de／fr／at／it／jp）皆有 collectionId **1452382824**「Bellini: La Sonnambula」，掛名「Coro del Maggio Musicale Fiorentino, Dame Joan Sutherland, Orchestra del Maggio Musicale Fiorentino & Richard Bonynge」，releaseDate 1962-01-01，copyright「℗ 1962 Decca Music Group Limited」，trackCount 33（兩張碟 18＋15），**33 軌全部有 previewUrl**，逐軌與 MB 那筆 1996 年 Decca CD 同名同序、長度逐軌相符（第 1 軌 141 vs 142 秒、第 2 軌 111 vs 111 秒、最後一軌 249 vs MB 同軌）。",
+    "src": "https://music.apple.com/gb/album/1452382824"
+   },
+   {
+    "f": "Apple 上另有一筆同曲同歌者的錄音必須區分：collectionId 1452561108「Bellini: La sonnambula」，掛名「Dame Joan Sutherland, Luciano Pavarotti, National Philharmonic Orchestra, Nicolai Ghiaurov & Richard Bonynge」，releaseDate 1982-01-01、℗ 1982 Decca、33 軌——**歌者與指揮部分相同（Sutherland＋Bonynge），樂團與其餘班底完全不同**，是二十年後的重錄。",
+    "src": "https://music.apple.com/gb/album/1452561108"
+   },
+   {
+    "f": "Apple 另有 1452460400「Bellini: Collectors Edition - Norma, I Puritani, La sonnambula & Beatrice di Tenda」（℗ 2001 Decca，128 軌）——四部歌劇的合盒，會同時涵蓋本張，不得取用。",
+    "src": "https://music.apple.com/gb/album/1452460400"
+   }
+  ],
+  "hookCandidates": [
+   "同一位女高音、同一位指揮，隔了二十年把《夢遊女》再錄一次——分辨這兩張唯一的辦法是看樂團",
+   "翡冷翠五月音樂節的樂團與合唱團，1962 年的 Decca 錄音室：兩張碟三十三段，最長的一段十二分鐘"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：Joan Sutherland 唱 Amina、Nicola Monti 唱 Elvino、Fernando Corena 唱 Rodolfo，Richard Bonynge 指揮翡冷翠五月音樂節管弦樂團與合唱團，Decca 1962 年錄音。全劇分兩張碟 18＋15 段，單段長度從一分多鐘到十二分鐘不等（第二幕〈Oh! se una volta sol rivederlo io potessi〉12:16 最長）。",
+  "keyTracks": [
+   "Care compagne, e voi, tenere amici",
+   "Prendi: l'anel ti dono",
+   "Oh! se una volta sol rivederlo io potessi",
+   "Ah! non giunge uman pensiero"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1963 與盤名括號裡的 1962 是兩個不同的數字，兩個都有據**：(1) **錄音年 1962**——Apple 那筆 Decca 官方品項的 copyright 是 ℗ 1962，盤名括號也照策展層第 6 條寫成 (1962)；(2) **首度發行年 1963**——MB first-release-date 1963，該 release-group 底下有一筆 1963 的 release（雖然 MB 只填了年份、其餘欄位全空）。**兩個數字不矛盾，是錄音年與發行年的正常落差**，卡單取 1963 沒有問題；行文若要提年份，寫「1962 年的錄音」比寫發行年安全。對照組 1982 年的 Pavarotti 版是完全另一次錄音，不是本張的另一說。",
+  "notes": "**試聽由 unavailable 改判 ready**：正解 Apple **1452382824**，gb／us／de／fr／at／it／jp 七店面全有，33 軌全有 previewUrl，逐軌與 MB 1996 年 Decca 448 966-2 同名同序、長度相符。**探測層落空的原因是盤名**——卡片作《Bellini: La sonnambula (1962)》（策展層為了與池中 Callas 1957 版分辨而加的錄音年括號），Apple 作《Bellini: La Sonnambula》，多出來的「(1962)」括號讓標題比對過不了。｜**策展層第 7 條點名的假陽性已實查確認**：1452561108 是 1982 年 Pavarotti／National Philharmonic 版，**Sutherland 與 Bonynge 兩個名字完全相同**，只有樂團與其餘班底不同、℗ 年不同——**靠掛名與盤名分不出來，上架時必須鎖 collectionId**。另外 1452460400 是四部歌劇的 Collectors Edition 合盒（128 軌），同樣不得取用。｜固定試聽取首軌沒有問題：Apple 第 1 軌〈Viva! viva! viva! viva! Amina!〉正是原盤開頭。｜掛名：MB 的 artist-credit 把作曲家排最前、指揮排最後，卡片取領銜歌者，合策展層第 3 條；**Apple 的 artistName 把合唱團排在最前**，藝人閘若比對 results[0] 的 artistName 會被合唱團擋掉，這也是探測層可能落空的第二層原因。｜**歌劇全曲盤的型態照實記**（裁定 167）：MB 這一筆 primary-type Album、secondary-types 空，沒有 Live 也沒有 Compilation。"
+ },
+ {
+  "key": "desc2:Fritz Wunderlich|Salzburger Liederabend",
+  "artist": "Fritz Wunderlich",
+  "album": "Salzburger Liederabend",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d3efa5d4 的欄位：title「Fritz Wunderlich Salzburger Liederabend」（MB 標題把歌手名串在盤名前面）、artist-credit「Fritz Wunderlich」、first-release-date 1984、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/d3efa5d4-8ca3-4ada-9be9-2966a5b952a6"
+   },
+   {
+    "f": "唯一的 release 220d3960：1984 年、Acanta 043529、CD、**29 軌**，是一場獨唱會的完整節目：貝多芬五首（〈Adelaide〉op. 46、〈Maigesang〉op. 52/4、〈Der Wachtelschlag〉WoO 129、〈Resignation〉WoO 149、〈Der Kuss〉op. 128）、舒伯特六首（〈Der Einsame〉D. 800、〈Nachtstück〉D. 672、〈An die Laute〉D. 905、〈Lied eines Schiffers an die Dioskuren〉D. 360、〈An Sylvia〉D. 891、〈Der Musensohn〉D. 764）、舒曼《詩人之戀》op. 48 全十六首，最後兩首安可是舒伯特〈Im Abendrot〉D. 799 與〈Ungeduld〉（《美麗的磨坊少女》第七首）。",
+    "src": "https://musicbrainz.org/release/220d3960-5ab6-4296-8fb2-132e45ffad0e"
+   },
+   {
+    "f": "Discogs release 14813186（Acanta 23 529，1984 年德國黑膠）的備註直接寫出這場音樂會的日期與地點：「Liederabend vom **19. August 1965** im **Mozarteum, Salzburg**」，鋼琴 Hubert Giesen、男高音 Fritz Wunderlich，內頁解說 Claus-Dieter Schaumkell；封底另標「Deutsche Pressung」。",
+    "src": "https://www.discogs.com/release/14813186"
+   },
+   {
+    "f": "同一場音樂會另有 Orfeo D'Or 的官方薩爾茲堡音樂節版本：Discogs release 15198679（Orfeo D'Or C 432 961 B，1996），備註寫「Live recording. Salzburger Festspiele **19. August 1965**, Mozarteum, **6. Liederabend**」——與 Acanta 那張互相佐證同一場。",
+    "src": "https://www.discogs.com/release/15198679"
+   },
+   {
+    "f": "德文維基〈Fritz Wunderlich〉：1930 年 9 月 26 日生於 Kusel，**1966 年 9 月 17 日歿於海德堡**——他在 Oberderdingen 一戶人家的樓梯上因鞋帶沒繫好摔倒、顱骨骨折，隔天在海德堡的醫院過世，距他三十六歲生日只差九天；當時他正要在 **1966 年 10 月 8 日**於紐約大都會歌劇院首演。條目並記他**自 1959 年起是薩爾茲堡音樂節的常客**（1959 年由 Karl Böhm 邀請首演，唱理查‧史特勞斯《沉默的女人》），1963 年起到過世都是維也納國家歌劇院的固定團員。",
+    "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+   },
+   {
+    "f": "同一條目的唱片清單裡另列一張《Der letzte Liederabend》（CD，Deutsche Grammophon，2003）——那是另一場音樂會，不是本張。",
+    "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+   }
+  ],
+  "hookCandidates": [
+   "1965 年 8 月 19 日晚上，薩爾茲堡莫札特音樂院大廳：貝多芬五首、舒伯特六首，然後整套《詩人之戀》",
+   "節目單走完，他又唱了〈Im Abendrot〉與〈Ungeduld〉才放觀眾走"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的形制有據：這是實況錄音（1965-08-19 薩爾茲堡莫札特音樂院），台上只有男高音 Fritz Wunderlich 與鋼琴 Hubert Giesen 兩人；二十九軌，《詩人之戀》十六首多在一分鐘上下（最短〈Die Rose, die Lilie, die Taube〉34 秒），最長的是開場的〈Adelaide〉6 分 36 秒。",
+  "keyTracks": [
+   "Adelaide",
+   "Der Musensohn",
+   "Im wunderschönen Monat Mai",
+   "Die alten, bösen Lieder",
+   "Im Abendrot"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1984 是 Acanta 復刻的發行年，不是錄音年。三個數字並列**：(1) **原始錄音年（且有確切日期）1965-08-19**，薩爾茲堡莫札特音樂院、音樂節第六場 Liederabend——Acanta 黑膠與 Orfeo D'Or CD 兩筆 Discogs 條目的備註**各自直記**同一個日期，是本組二十張裡少數有確切日期可當敘事錨點的一張（裁定 18 建議的做法）；(2) MB first-release-date **1984**（Acanta 043529），與卡單一致；(3) Discogs 上的 Acanta 黑膠（23 529 與 40.23 529 兩個編號）也記 1984，另有 2003 年 Allegria／TIM 的再發（221097-205）。**卡單值維持 1984，但行文應該用 1965-08-19 這個確切日期當錨點，不要在發行年上打轉。**",
+  "notes": "**試聽維持 unavailable。** 七店面（gb／us／de／fr／at／it／jp）的 Fritz Wunderlich 目錄各 95–138 筆全掃（合計 156 個不重複品項），另加 `search?term=` 三組字串（Salzburger Liederabend／Salzburg 1965 Giesen／Acanta）逐店面查，**Acanta 與 Orfeo D'Or 這場 1965-08-19 的實況一筆都沒有**。｜**這一張有兩個很危險的假陽性，都是「同一套曲目、不同的那一晚」**：(1) Apple **1452675034「Fritz Wunderlich - The Last Recital」**（℗ 2003 Universal／DG，31 軌，六店面有）——曲目與本張高度重疊（同樣是 Adelaide／Resignation／Der Wachtelschlag／Mailied／Der Kuss ＋ 同六首舒伯特 ＋《詩人之戀》全十六首），**但曲序不同**（本張是 Adelaide→Maigesang→Der Wachtelschlag→Resignation，那張是 Adelaide→Resignation→Der Wachtelschlag→Mailied）、**逐軌長度差 5–30 秒**（〈Adelaide〉396 vs 368 秒）、**安可完全不同**（本張兩首：Im Abendrot、Ungeduld；那張四首：Die Lotusblume、Ungeduld、Ich trage meine Minne、An die Musik）。**是另一場音樂會，不得取用。** (2) Apple **1452391192「Schumann, Beethoven & Schubert: Lieder」**（℗ 1997 DG，30 軌）是同一對搭檔的 DG 錄音室版，**開頭就直接進《詩人之戀》**、沒有貝多芬開場，也不是本張。｜**時序主張要特別小心（派工點名的兩位早逝者之一）**：Wunderlich 1966-09-17 過世，這場是他過世前十三個月的演出，**但它不是「生前最後一場獨唱會」**——DG 那張《Der letzte Liederabend》才是被冠上「最後」之名的那一場（德文維基唱片清單有列）。**行文絕對不得把本張寫成「最後一場」「生前最後的錄音」。** 可以寫的是有來源的兩件事：他自 1959 年起就是薩爾茲堡的常客；以及他原訂 1966 年 10 月 8 日的大都會首演沒能成行。｜盤名：MB 標題把歌手名串在前面作「Fritz Wunderlich Salzburger Liederabend」，卡片取後半，合策展層第 2 條第 1 種情況。"
  }
 ]
