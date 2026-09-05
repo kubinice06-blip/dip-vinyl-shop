@@ -94,5 +94,278 @@
   "queryAlias": "Celeste (Original Soundtrack)；Celeste Original Soundtrack",
   "reissuedBy": "Ship to Shore PhonoCo.（2018 US，STS-028，兩片 12 吋黑膠）",
   "g": "b"
+ },
+ {
+  "artist": "Austin Wintory",
+  "album": "Journey",
+  "year": 2012,
+  "genres": [
+   "classical"
+  ],
+  "label": "自主／thatgamecompany 通路（2012-04-10 全球數位，18 軌）；2012 年 Sumthing Else Music Works CD（SE-3009-2）、2015 年 iam8bit 黑膠（8BIT-8002）",
+  "why": "第一張獲得葛萊美獎提名的遊戲原聲，也是 Austin Wintory 目錄裡被再發最多次的一張：2012 年 4 月 10 日隨遊戲同日以 18 軌數位盤上架、無廠牌；同年 10 月 9 日 Sumthing Else Music Works 以 SE-3009-2 出 CD，2015 年 8 月 iam8bit 以 8BIT-8002 做成兩片 12 吋黑膠（10＋8 軌）——那是 iam8bit 遊戲黑膠目錄的第二號品項。與 2016 年的《ABZÛ》構成本批他的兩張卡。實掃 seed_cards.json 全 14,424 列，`Austin Wintory`／`オースティン・ウィントリー` 兩種寫法都查過，池中 0 張（`Journey` 的 16 筆命中全是美國搖滾團 Journey 與 Alice Coltrane 等別碟）。",
+  "risk": "**盤名是單字《Journey》，池中已有同名藝人**：第 144／9556／9557 列的美國搖滾團 Journey，以及 928 列 Alice Coltrane《Journey in Satchidananda》等 16 筆含 Journey 的卡。字串鍵是 `austinwintory|journey`，與 `journey|escape` 不衝突，chk-prop 不會誤判；但下游任何只比對盤名的查詢都會撈回一堆別碟（裁定第 85 條講過單字盤名的代價）。店面序 GAME：jp 與 us 都命中同一個 collectionId 1553230092《Journey (Original Video Game Soundtrack)》（jp 掛片假名 `オースティン・ウィントリー`、us 掛 `Austin Wintory`，releaseDate 2012-04-10 與 MB 原盤日期完全一致）；本卡取 us。Apple 的盤名帶「(Original Video Game Soundtrack)」尾綴，與卡片盤名長度差 31，需靠 OST 尾綴剝除規則（裁定第 123 條）才配得上。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group d1850227-c7c7-42c8-b469-6e99023412de。回問確認：title「Journey」、artist-credit「Austin Wintory」、first-release-date 2012-04-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release 全部 Official（2012-04-10 XW 無廠牌／18 軌、2012-10-09 US＝Sumthing Else Music Works SE-3009-2 CD、2015-08 US＝iam8bit 8BIT-8002 兩片黑膠）。刻意不釘：5b6baca1-782a-432a-b71a-147b55c755bb《Journey Bonus Bundle》（2012 附加包）、356fba88-0348-4bd3-b10b-6b0d32769184《Traveler: A Journey Symphony》（2022 管弦改編，非原聲）、24c304d1-bd49-46a4-8b70-4c04d3ac40ca《flOw》（2012 同社另一部作品）。藝人 MBID 78f15956-c5e1-46d6-a46b-fa6f46681ec8，名下 60 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "オースティン・ウィントリー；Journey (Original Video Game Soundtrack)；Journey Original Soundtrack",
+  "reissuedBy": "iam8bit（2015 US，8BIT-8002，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Austin Wintory",
+  "album": "ABZÛ",
+  "year": 2016,
+  "genres": [
+   "classical"
+  ],
+  "label": "T-65b Records（2016-08-02 數位，18 軌）；2016 年 Varèse Sarabande CD（302 067 453 8）、2017 年 iam8bit 黑膠（8BIT-8047）",
+  "why": "Austin Wintory 與《Journey》美術總監 Matt Nava 分家後的第二次合作，也是他第一次讓一張遊戲原聲進到 Varèse Sarabande 這種傳統電影配樂廠牌的目錄：2016 年 8 月 2 日以 T-65b Records 名義發 18 軌數位盤，同年 10 月 21 日 Varèse Sarabande 以 302 067 453 8 出 CD，2017 年 4 月 iam8bit 以 8BIT-8047 做成兩片 12 吋黑膠（10＋8 軌）。與 2012 年的《Journey》是同一組人的前後兩作。實掃 seed_cards.json 全 14,424 列，`Austin Wintory`／`ABZU`／`ABZÛ` 全部零命中。",
+  "risk": "**盤名帶抑揚符 Û**：MB 標題《ABZÛ》，Apple 兩個店面都寫成無變音的《Abzu》（collectionId 1138476050，jp 掛 `オースティン・ウィントリー`、us 掛 `Austin Wintory`，releaseDate 2016-08-02 與 MB 完全一致）。依裁定第 50 條採原盤封面的寫法（帶 Û），無變音版進 queryAlias；NFKD 正規化下兩者會相等，但直接字串比對不會（裁定第 49 條）。店面序 GAME 取 us。MB 有一筆 release 的 country 記成 DZ（阿爾及利亞），那是 T-65b Records 那筆數位盤的建檔，不是實體地區。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group c0c72c43-c4b7-46e0-9b18-90eec38c465b。回問確認：title「ABZÛ」、artist-credit「Austin Wintory」、first-release-date 2016-08-02、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2016-08-02 DZ＝T-65b Records／18 軌、2016-08-02 XW 無廠牌、2016-10-21 US＝Varèse Sarabande 302 067 453 8 CD、2017-04 US＝iam8bit 8BIT-8047 兩片黑膠、2017-06 US）。同藝人名下沒有第二筆同名 release-group（分頁全列 60 筆確認過）。藝人 MBID 78f15956-c5e1-46d6-a46b-fa6f46681ec8。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Abzu；ABZU；オースティン・ウィントリー",
+  "reissuedBy": "iam8bit（2017 US，8BIT-8047，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Mick Gordon",
+  "album": "DOOM: Original Game Soundtrack",
+  "year": 2016,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Bethesda Softworks（2016-09-28 全球數位，31 軌）；2018 年起 Laced Records 出 CD（5053760038986）與黑膠（BI 14351）",
+  "why": "Mick Gordon 目錄裡唯一一張進到實體唱片通路的原聲，也是英國 Laced Records 這條遊戲黑膠線最早的旗艦品項之一：2016 年 9 月 28 日由 Bethesda Softworks 發 31 軌數位盤；2018 年 7 月 27 日 Laced Records 出兩片 CD（16＋15 軌），同年另出兩片 12 吋黑膠（BI 14351），2019 年 10 月 21 日再出四片黑膠加 USB 的盒裝。四年後的《DOOM Eternal》至今只有 Bethesda 的數位盤、沒有任何實體版本，這是本張在他目錄裡的位置差別。實掃 seed_cards.json 全 14,424 列，`Mick Gordon` 零命中，`DOOM` 的七筆命中全是 MF DOOM 等別的藝人。",
+  "risk": "**藝人與盤名兩邊都有強力的同名干擾**：`DOOM` 在池中已有 MF DOOM 四張（第 1788／1789／5242／6600 列）與 Danger Doom 一張，字串鍵 `mickgordon|doomoriginalgamesoundtrack` 與它們不衝突，但任何只比對盤名的查詢都會撈錯；Apple jp 搜 `Mick Gordon DOOM` 還會回到 2026 年 Bobby Prince 的《DOOM (1993)》（1895035456），那是 1993 年初代的音樂、不是本張。店面序 GAME：jp 與 us 都命中同一個 collectionId 1885803215《DOOM (Original Game Soundtrack)》（兩邊掛名都是 `Mick Gordon`，releaseDate 2016-09-28，與 MB 原盤日期完全一致）；本卡取 us。MB 轄下有兩筆 Bootleg（2016-05-27 與一筆無日期），最早那筆 Bootleg 正是 first-release-date 的來源，年份仍為 2016。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group f40630d4-f52d-403f-81a2-c6904e8acc99。回問確認：title「DOOM: Original Game Soundtrack」、artist-credit「Mick Gordon」、first-release-date 2016-05-27（該筆為 XW/Bootleg；最早的 Official 是 2016-09-28 XW＝Bethesda Softworks／31 軌，同年）、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2016-09-28 XW/Official、2018-07-27 XE/Official＝Laced Records CD、2018 XW/Official＝Laced Records BI 14351 黑膠、2019-10-21 XE/Official＝Laced 四片黑膠＋USB，另 Bootleg ×2）。刻意不釘：8782d6f7-183c-442d-9437-c6703f04361e《DOOM Eternal (Original Game Soundtrack)》（2020 續作，另立一卡）、d320ea61-0072-418d-bf37-144f1723e4de《Doom Eternal OST》（無日期的重複建檔）。藝人 MBID 01a36baf-fa2d-4659-8bc2-dbfb5ffed791，名下 21 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DOOM (Original Game Soundtrack)；Doom 2016 Original Game Soundtrack",
+  "reissuedBy": "Laced Records（2018–2019 XE／XW，CD 5053760038986 與黑膠 BI 14351）",
+  "g": "b"
+ },
+ {
+  "artist": "Mick Gordon",
+  "album": "DOOM Eternal (Original Game Soundtrack)",
+  "year": 2020,
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Bethesda Softworks（2020-04-18 全球數位，59 軌，無實體版本）",
+  "why": "Mick Gordon 名下軌數最多、爭議也最大的一份：2020 年 4 月 18 日由 Bethesda Softworks 發 59 軌數位盤，是《DOOM》(2016) 那 31 軌的近兩倍。與前作不同的是，這張至今沒有任何實體版本——MB 轄下六筆 release 只有 2020-04-18 那一筆 Official，其餘五筆全是 2020–2025 年的 Bootleg，Laced Records 也沒有接手。兩張並列，正好標出這條線在 2016 到 2020 年之間從「有唱片」退回「只有檔案」的轉折。實掃 seed_cards.json 全 14,424 列，`Mick Gordon`／`DOOM Eternal` 零命中。",
+  "risk": "**Apple 上查無**：jp 與 us 兩店面用 `Mick Gordon DOOM Eternal` 與 `Mick Gordon DOOM Eternal Original Game Soundtrack` 各搜一次，回到的第一筆都是 2016 年那張（1885803215），其餘全是第三方翻奏單曲（1511443190 Cyberpunkers、1504991092 Daredevil、1859844277 The Chalkeaters）——本張沒有上架，屬「搜到了但目錄裡沒有這張」（裁定第 152 條的分界）。固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。與同批的《DOOM: Original Game Soundtrack》盤名互為子字串，去重要比對完整盤名（裁定第 162 條的形狀）。",
+  "mbNote": "釘 release-group 8782d6f7-183c-442d-9437-c6703f04361e。回問確認：title「DOOM Eternal (Original Game Soundtrack)」、artist-credit「Mick Gordon」、first-release-date 2020-04-18、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，僅 2020-04-18 XW 一筆 Official（Bethesda Softworks／59 軌），其餘 2020-05-29 XW ×2、2020-07-31 XW、2024-05-18 XW、2025-03-21 XW 全部 Bootleg。刻意不釘：d320ea61-0072-418d-bf37-144f1723e4de《Doom Eternal OST》（無日期的重複建檔，不是另一張碟）、f40630d4-f52d-403f-81a2-c6904e8acc99《DOOM: Original Game Soundtrack》（2016 前作，另立一卡）。藝人 MBID 01a36baf-fa2d-4659-8bc2-dbfb5ffed791。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DOOM Eternal Original Game Soundtrack；Doom Eternal OST",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jesper Kyd",
+  "album": "Assassin’s Creed II: The Original Game Soundtrack",
+  "year": 2009,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "Ubisoft Music（2009-11-16 全球數位，17＋18 軌；catno 5284 的 35 軌單片版同日）；2015 年 Sumthing Else Music Works CD（SE-3145-2）",
+  "why": "Jesper Kyd 從 IO Interactive 的 Hitman 系列轉到 Ubisoft 之後最被反覆再發的一張：2009 年 9 月 20 日先以 Ubisoft Entertainment 的 14 軌 DVD 附贈版出現，同年 11 月 16 日 Ubisoft Music 發兩張數位版（17＋18 軌的兩片式與 catno 5284 的 35 軌單片式），2015 年 10 月 2 日 Sumthing Else Music Works 以 SE-3145-2 出兩片 CD。他 2000–2006 年的 Hitman 四張同樣在 MB 上齊全，本批先取這張進池。實掃 seed_cards.json 全 14,424 列，`Jesper Kyd`／`イェスパー・キッド`／`Assassin` 全部零命中。",
+  "risk": "**盤名的撇號是 U+2019（’）不是 ASCII 單引號**：MB 標題《Assassin’s Creed II: The Original Game Soundtrack》、Apple 用 ASCII 撇號的《Assassin's Creed 2 (Original Game Soundtrack)》，而且羅馬數字 II 在 Apple 是阿拉伯數字 2——**兩處差異疊在一起，字串比對必定落空**，兩種寫法都要掃（裁定第 49 條）。撇號不在 chk-prop 的非 ASCII 連字號清單內，不會誤報。店面序 GAME：jp 與 us 都命中同一個 collectionId 1640108379（jp 掛片假名 `イェスパー・キッド`、us 掛 `Jesper Kyd`），但該筆的 **releaseDate 記 2007-01-01，與 MB 的 2009-09-20 差兩年多**——Apple 這個日期明顯是建檔誤植（初代《Assassin's Creed》才是 2007），依裁定第 77 條只當訊號、不當版本門檻，年份取 MB。同系列同名別碟：1640065664《Assassin's Creed (Original Game Soundtrack)》是初代、1640271819《Assassin's Creed: The Best of Jesper Kyd》是精選。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 5bf7477e-8d21-4e52-a7c7-7ad93add0a5f。回問確認：title「Assassin’s Creed II: The Original Game Soundtrack」、artist-credit「Jesper Kyd」、first-release-date 2009-09-20、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2009-09-20 Ubisoft Entertainment／DVD 14 軌、2009-11-16 XW ×2＝Ubisoft Music 17＋18 軌與 catno 5284 的 35 軌、2015-10-02 US＝Sumthing Else Music Works SE-3145-2、另一筆無日期）。刻意不釘：678c6ed1-439b-4a59-84e4-cb5805372c4c《Assassin’s Creed 2: Rare Tracks》（2019，secondary-types 含 Compilation）、1da1ffcd-e3ee-4ba8-b235-3f042480a75d《Assassin’s Creed Revelations, Vol. II》（2011 另一部作品）、6fe6c939-a08b-33e2-9970-8249500bc4e1《Hitman: Blood Money Original Soundtrack》（2006 另一條線，本批未收，可進日後的補遺批）。藝人 MBID 5156bb2c-45d7-4660-8234-4d84452c93e1，名下 79 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "イェスパー・キッド；Assassin's Creed 2 (Original Game Soundtrack)；Assassin's Creed II Original Game Soundtrack",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Darren Korb",
+  "album": "Bastion: Original Soundtrack",
+  "year": 2011,
+  "genres": [
+   "folk",
+   "electronic"
+  ],
+  "label": "Supergiant Games 自主發行（2011-08-05 全球數位，22 軌；2011-09-02 US CD）；2017 年黑膠 SGG-02",
+  "why": "Supergiant Games 這條「開發商自己發唱片」路線的第一張，也是 Darren Korb 目錄的起點：2011 年 8 月 5 日與遊戲同期以 22 軌數位盤自主發行，8 月 27 日再發一版，9 月 2 日在美國出 CD（barcode 700261336923）；2017 年 6 月 20 日同一家以 SGG-02 做成兩片 12 吋黑膠（11＋11 軌）。三年後的《Transistor》與九年後的《Hades》都走完全相同的發行形狀——沒有外部廠牌、沒有 iam8bit，全部掛 Supergiant Games 自己的名字。實掃 seed_cards.json 全 14,424 列，`Darren Korb`／`Bastion`／`Transistor`／`Hades` 全部零命中（`Hades` 的七筆命中是 Madlib《Shades of Blue》等子字串誤配）。",
+  "risk": "店面序 GAME：jp 與 us 兩邊都命中同一個 collectionId 459457260《Bastion (Original Soundtrack)》（兩邊掛名都是 `Darren Korb`，releaseDate 2011-08-05，與 MB 原盤日期完全一致）；本卡取 us。盤名 MB 用冒號《Bastion: Original Soundtrack》、Apple 用括號《Bastion (Original Soundtrack)》，兩種寫法都要掃。**盤名首字是常見普通名詞**，子字串比對容易誤配（裁定第 162 條的形狀），去重要比對完整盤名。CAA release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group f8f33c9d-b938-43d6-a1dd-fc4010bee8c6。回問確認：title「Bastion: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2011-08-05、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release 全部 Official（2011-08-05 XW＝Supergiant Games 數位 22 軌、2011-08-27 XW、2011-09-02 US CD、2017-06-20 US＝Supergiant Games SGG-02 兩片黑膠）。刻意不釘：37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 跨作品合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b，名下 11 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bastion (Original Soundtrack)；Bastion Original Soundtrack",
+  "reissuedBy": "Supergiant Games（2017 US，SGG-02，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Darren Korb",
+  "album": "Transistor: Original Soundtrack",
+  "year": 2014,
+  "genres": [
+   "electronic",
+   "pop"
+  ],
+  "label": "Supergiant Games 自主發行（2014-05-20 US CD 與全球數位，23 軌）；2016 年兩片 12 吋黑膠",
+  "why": "Darren Korb 三張 Supergiant 原聲的中段，也是他第一次把人聲（Ashley Barrett 演唱）寫成整張碟的骨架：2014 年 5 月 20 日與遊戲同日發行，美國 CD 版 23 軌（barcode 700261405490），同日兩筆數位版分別 23 與 24 軌；2016 年 3 月出兩片 12 吋黑膠（12＋12 軌）。發行形狀與 2011 年的《Bastion》、2020 年的《Hades》完全相同，都由 Supergiant Games 自營。實掃 seed_cards.json 全 14,424 列，`Darren Korb`／`Transistor` 零命中。",
+  "risk": "店面序 GAME：jp 與 us 都命中同一個 collectionId 879693684《Transistor (Original Soundtrack)》（兩邊掛名 `Darren Korb`，releaseDate 2014-05-20，與 MB 完全一致）；本卡取 us。盤名 MB 用冒號、Apple 用括號，兩種都要掃。同藝人名下有三筆盤名極近的別碟：4544f073-5480-40de-bb00-d05b603ea794《Transistor: Breached Tracks》(2014) 與 7c294cc4-2306-4f0c-9a1e-cbb582c890b8《Transistor: Original Soundtrack Extended》(2014)，後者只多一個字 Extended，是本張最像的假陽性。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 16b60f17-aeca-4f2b-a8b8-f0ec1e7e88de。回問確認：title「Transistor: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2014-05-20、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release 全部 Official（2014-05-20 US CD 23 軌、2014-05-20 XW ×2 數位 23／24 軌、2016-03 US 兩片黑膠、2017-05-20 XW）。刻意不釘：7c294cc4-2306-4f0c-9a1e-cbb582c890b8《Transistor: Original Soundtrack Extended》（2014 加曲版，非原盤）、4544f073-5480-40de-bb00-d05b603ea794《Transistor: Breached Tracks》（2014 附加曲）、37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Transistor (Original Soundtrack)；Transistor Original Soundtrack",
+  "reissuedBy": "Supergiant Games（2016 US，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Darren Korb",
+  "album": "Hades: Original Soundtrack",
+  "year": 2020,
+  "genres": [
+   "rock",
+   "world"
+  ],
+  "label": "Supergiant Games 自主發行（2020-09-16 全球數位 30 軌；2020-09 US 兩片 CD）",
+  "why": "Darren Korb 三張 Supergiant 原聲裡最晚、也是曲目最多的一張：2020 年 9 月 16 日隨遊戲正式版同日發 30 軌數位盤，同月在美國出兩片 CD（16＋14 軌）。這張之前兩年，Supergiant 先以 bc728e2f-dbe8-4205-bd48-ce65feeb214c《Hades: Singles》(2018) 在搶先體驗期間逐首釋出，因此 MB 上這條線有兩個 release-group；本卡釘的是 2020 年的完整原聲。四年後的《Hades II》(2024) 另立一筆。實掃 seed_cards.json 全 14,424 列，`Darren Korb`／`Hades` 零命中。",
+  "risk": "**同一部作品在 MB 上有兩個 release-group**：bc728e2f-dbe8-4205-bd48-ce65feeb214c《Hades: Singles》(2018) 是搶先體驗期間的逐首釋出，dc4818c3 才是 2020 年的完整原聲；兩筆都掛 Darren Korb、盤名都以 Hades 開頭，是本張最強的假陽性（裁定第 3／73 條「兩個都對得上的候選要能舉證挑哪一個」——這裡能舉證：軌數 30 對 CD 兩片 16＋14，與 2020 版一致）。店面序 GAME：jp 與 us 都命中 collectionId 1531339044《Hades: Original Soundtrack》（掛名 `Darren Korb`，releaseDate 2020-09-16，與 MB 完全一致）；本卡取 us。另 1852248640《Hades II (Original Soundtrack)》(2025) 是續作。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group dc4818c3-a34f-40c6-9223-63570980694d。回問確認：title「Hades: Original Soundtrack」、artist-credit「Darren Korb」、first-release-date 2020-09-16、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release 皆 Official（2020-09-16 XW 數位 30 軌／barcode 859741990176、2020-09 US 兩片 CD 16＋14 軌）。刻意不釘：bc728e2f-dbe8-4205-bd48-ce65feeb214c《Hades: Singles》（2018 搶先體驗期逐首釋出，非本盤）、a0c1237b-946f-434d-9e9e-39b00e3c71ba《Hades II: Original Soundtrack》（2024 續作）、37ae517c-e5f1-45d5-802f-bd150b8e77e9《Songs of Supergiant Games》（2020 合輯）。藝人 MBID a7e3c900-1c91-444c-9fce-77d230e5791b。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hades (Original Soundtrack)；Hades Original Soundtrack",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Disasterpeace",
+  "album": "FEZ: Original Soundtrack",
+  "year": 2012,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Joypad Records／OverClocked Records（catno JOY-546，2012-04-20 數位，26 軌）；2015 年 Polytron 以 PO050001 做成兩片黑膠",
+  "why": "Disasterpeace（Rich Vreeland）在池中的第二張，也是他從遊戲跨進電影之前的代表作：2012 年 4 月 20 日與遊戲同日發行 26 軌數位盤，MB 記三筆同日 release，其中一筆掛 Joypad Records（JOY-546）與 OverClocked Records；2015 年 11 月 27 日遊戲開發商自己的 Polytron 以 PO050001 做成兩片 12 吋黑膠（13＋13 軌），2016 年再壓一次。實掃 seed_cards.json 全 14,424 列，池中已有他一張——第 11778 列《It Follows: Original Motion Picture Soundtrack》(2015)，那是電影配樂；本張是他第一張遊戲原聲進池，兩張正好標出他 2012 到 2015 年的跨界。",
+  "risk": "**池中已有同藝人一張**（第 11778 列 `Disasterpeace`《It Follows: Original Motion Picture Soundtrack》，年份記 2015），字串鍵 `disasterpeace|fezoriginalsoundtrack` 與它不衝突，chk-prop 不會判撞卡；「同一藝人上限 3 張」那條規則已於 2026-09-04 作廢（裁定第 150 條），不構成不收的理由。店面序 GAME：jp 與 us 都命中同一個 collectionId 1765770688《FEZ (Original Game Soundtrack)》（兩邊掛名都是 `Disasterpeace`，releaseDate 2012-04-20，與 MB 完全一致）；本卡取 us。盤名 MB 用冒號＋Soundtrack、Apple 用括號＋Game Soundtrack，兩種都要掃。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 7a97a60d-1f30-45a5-807b-9d16375cac4d。回問確認：title「FEZ: Original Soundtrack」、artist-credit「Disasterpeace」、first-release-date 2012-04-20、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release 全部 Official（2012-04-20 XW ×3＝Joypad Records JOY-546／OverClocked Records 與兩筆無廠牌，皆 26 軌；2015-11-27 CA＝Polytron PO050001 兩片黑膠、2015-11-27 XW、2016-11-21 CA）。刻意不釘：5c66aba2-18a3-4ddc-806d-23e15d594f0b《Hyper Light Drifter》（2016 另一部作品，本批未收）、7c574c1a-2c29-4fd0-87e8-9903b6d6825a《Hyper Light Fragments》（2022）、528bd202-fa2d-4abc-ba3b-d5dc3ce156f5《It Follows: Original Motion Picture Soundtrack》（2015 電影配樂，**池中已有此卡**）。藝人 MBID 8a562589-9650-45f6-ab82-332625c0bf2d，名下 20 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "FEZ (Original Game Soundtrack)；FEZ OST；Rich Vreeland",
+  "reissuedBy": "Polytron（2015 CA，PO050001，兩片 12 吋黑膠）",
+  "g": "b"
+ },
+ {
+  "artist": "Grant Kirkhope",
+  "album": "Banjo-Kazooie",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Nintendo of America 自營（1998 US，17 軌）；1999-02-17 日本版 NINTENDO64 Sound Series／Pony Canyon PCCG-00486",
+  "why": "Grant Kirkhope 在 Rare 十年裡最被記住的一張，也是任天堂體制外開發商（Rare）作品少數有正式原聲盤的一例：1998 年先由 Nintendo of America 在美國自營發行 17 軌 CD，1999 年 2 月 17 日 Pony Canyon 的 NINTENDO64 Sound Series 以 PCCG-00486 在日本發行同樣 17 軌（同一編號兩筆建檔），2013 年 4 月 2 日另有一筆 17 軌數位版。他名下另有《Banjo-Tooie》(2000)、《Donkey Kong 64》(1999) 與 Goldeneye 007（該筆 MB 轄下四個 release 全是 Bootleg，本批不收）。實掃 seed_cards.json 全 14,424 列，`Grant Kirkhope`／`グラント・カークホープ`／`Banjo` 全部零命中。",
+  "risk": "**MB 標題用的是 U+2010 連字號《Banjo‐Kazooie》**，那正好踩 chk-prop 的非 ASCII 連字號反模式（c-50 踩過）。卡片取遊戲與唱片實際使用的 ASCII 連字號《Banjo-Kazooie》——依裁定第 117 條的分界，MB 的 U+2010 是資料庫排版而不是「另一種有人這樣印的寫法」；MB 版寫進 queryAlias 供下游查詢。**Apple 上查無官方原盤**：jp 與 us 兩店面搜 `Grant Kirkhope Banjo-Kazooie`，只回到 2021 年他自己的重編盤《Banjo Kazooie: Re - Jiggyed》（1592541500，jp 掛片假名 `グラント・カークホープ`）與第三方翻奏；1998 年那張沒有上架，固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。",
+  "mbNote": "釘 release-group 702de139-4508-3423-a817-4d811413b7ac。回問確認：title「Banjo‐Kazooie」（MB 用 U+2010，卡片改用 ASCII 連字號，理由見 risk）、artist-credit「Grant Kirkhope」、first-release-date 1998、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（1998 US/Official＝Nintendo of America／17 軌、1999-02-17 JP/Official ×2＝Pony Canyon PCCG-00486、2013-04-02 XW/Official 數位、2019-11-26 US/Official，另 1998 DE/Promotion）。刻意不釘：887d9683-9587-4be9-8a02-170343daf39a《Banjo-Kazooie: Original Sound Version 2017 [Remastered]》（2017 重製，非原盤）、591fc7eb-62f5-48b9-acff-c165081d616b《Banjo Kazooie: Re‐Jiggyed》（2021 重編盤，非原聲）、f47bbee7-095c-4057-b0fc-617ad56d1a13《Banjo-Kazooie: Everything and the Kitchen Sink!》（2014）、1e441618-517f-33dd-b3f9-7369c6d5a224《Banjo-Tooie》（2000 續作）、40b7a3bc-61e8-4920-ace8-5c489920d464《Banjo-Kazooie: Nuts & Bolts》（2008 另一作）、431cee37-4082-3c4d-a0c1-d7f3bb8edb74《Goldeneye 007: Original Soundtrack》（1997，轄下四個 release 全為 Bootleg，本批不收）。藝人 MBID 3237b5a8-ae44-400c-aa6d-cea51f0b9074，名下 41 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "グラント・カークホープ；Banjo‐Kazooie；Banjo Kazooie Original Soundtrack",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "David Wise",
+  "album": "Donkey Kong Country 2: Diddy’s Kong Quest",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Nintendo of America 自營（catno 7250-Winter95，1995-10-01 US，55 軌）；1996-03-25 日本版 NTT出版 PSCN-5049（34 軌）",
+  "why": "David Wise 唯一一張單人掛名的 Donkey Kong Country 原聲：1994 年的初代由他與 Eveline Fischer、Robin Beanland 三人共作，1995 年 10 月 1 日這一張由他一人寫完，先由 Nintendo of America 以 7250-Winter95 在美國自營發行 55 軌 CD（同年 11 月再一版），1996 年 3 月 25 日 NTT出版 以 PSCN-5049 在日本發行 34 軌版。日美兩地曲數不同，是任天堂自營通路與日本唱片通路各自編輯的結果。他 2014 年的《Donkey Kong Country: Tropical Freeze》在 MB 上兩筆 release 全是 Bootleg，本批不收。實掃 seed_cards.json 全 14,424 列，`David Wise`／`Donkey Kong` 全部零命中（`Larkin` 那組命中的是 Kenny Larkin 與 Larkin Poe，與本批無關）。",
+  "risk": "**Apple 上查無**：jp 與 us 兩店面用 `David Wise Donkey Kong Country 2` 搜，只回第三方 remix 單曲（1716472049 State of Mint、1735012179 The Greatest Bits）與 Video Games Live 的現場輯——任天堂／Rare 的原盤沒有上架，固定試聽預估 unavailable，封面走 CAA（release-group 端點 200，實測）。盤名的撇號是 U+2019（Diddy’s），Apple 與一般寫法用 ASCII 撇號，兩種都要掃；撇號不在 chk-prop 的非 ASCII 連字號清單內、不會誤報。同系列同名別碟：77522908-4a46-3299-8a05-00e3de02f308《Donkey Kong Country》(1994，三人共作，掛名不同) 與 595fb34b-f5e0-4f68-a8ea-fc5477b0ecdc《Donkey Kong Country: Tropical Freeze》(2014，全 Bootleg)。",
+  "mbNote": "釘 release-group 1a3b20ad-34e8-3ad7-9fe5-bafdd473ad27。回問確認：title「Donkey Kong Country 2: Diddy’s Kong Quest」、artist-credit「David Wise」（單人）、first-release-date 1995-10-01、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1995-10-01 US/Official＝Nintendo of America 7250-Winter95／55 軌、1995-11-01 US/Official／55 軌、1996-03-25 JP/Official＝NTT出版 PSCN-5049／34 軌，另 JP/Bootleg、Bootleg ×3、狀態不明與 Pseudo-Release 各一）。刻意不釘：77522908-4a46-3299-8a05-00e3de02f308《Donkey Kong Country》（1994，artist-credit 為 David Wise, Eveline Fischer & Robin Beanland 三人，掛名與本張不同）、595fb34b-f5e0-4f68-a8ea-fc5477b0ecdc《Donkey Kong Country: Tropical Freeze》（2014，轄下兩個 release 全為 Bootleg）。藝人 MBID ae29aae4-abfb-4609-8f54-417b1f4d64cc（disambiguation「video game composer」；MB 上另有兩個同名的 David Wise——a0ce719e 是 a cappella 團員、3bd1d6d9 是美國薩克斯風手，識別靠 MBID 不靠字串），名下 32 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Donkey Kong Country 2: Diddy's Kong Quest；スーパードンキーコング2 ディクシー&ディディー；DKC2",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Christopher Larkin",
+  "album": "Hollow Knight",
+  "year": 2017,
+  "genres": [
+   "classical"
+  ],
+  "label": "自主發行（2017-02-10 全球數位，26 軌）；2017-06-01 US IndieBox CD",
+  "why": "Christopher Larkin 目錄裡的代表作，也是 2010 年代後期獨立遊戲原聲少數以室內樂編制寫成的一份：2017 年 2 月 10 日與遊戲同日以 26 軌數位盤自主發行、無廠牌，2 月 25 日再發一版，6 月 1 日由 IndieBox 在美國做成 CD（barcode 0700645624042）。他名下之後有兩張同系列的追加曲（《Hidden Dreams》2017 EP、《Gods & Nightmares》2018）與 2025 年的《Silksong》原聲。**派工單寫「池中已 3 張」，實掃是錯的**：seed_cards.json 全 14,424 列裡 `Christopher Larkin`、`Hollow Knight` 兩種查法都是 0 命中（`Larkin` 的五筆命中是 XTC《Skylarking》、Kenny Larkin 兩張、Larkin Poe、Horace Andy《Skylarking》），本張是他在池中的第一張卡。",
+  "risk": "**MB 上有三個同名的 Christopher Larkin**：38e0beaf（games/film/TV composer，AU，本人）、1bbf4128（英國指揮與法國號手）、ea3685fe（美國歌劇指揮），三筆 search score 分別 100／96／95，**只看分數會抓錯人**（裁定第 3／126 條的形狀）；本卡的身分靠 MBID 而不靠字串。盤名是兩個常見英文單字，子字串比對容易誤配。店面序 GAME：jp 與 us 都命中同一個 collectionId 1263341718《Hollow Knight (Original Soundtrack)》（兩邊掛名 `Christopher Larkin`，releaseDate 2017-02-10，與 MB 原盤日期完全一致）；本卡取 us。Apple 的盤名多「(Original Soundtrack)」尾綴，靠 OST 尾綴剝除規則（裁定第 123 條）才配得上。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 9df7cf82-6ea3-4021-829f-f2192977ac8d。回問確認：title「Hollow Knight」、artist-credit「Christopher Larkin」、first-release-date 2017-02-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release 全部 Official（2017-02-10 XW 無廠牌／26 軌／barcode 840095520225、2017-02-25 XW、2017-06-01 US＝IndieBox CD）。刻意不釘：91a79b91-a98c-447c-a7b9-c40e731d8d8d《Hollow Knight: Hidden Dreams》（2017 EP）、b1c402a5-2595-4276-a668-ce7001f7193a《Hollow Knight: Gods & Nightmares》（2018 追加曲）、cb338578-6398-4ab1-8730-0bbe7c976d65《Hollow Knight: Silksong (OST Sample)》（2019 EP）、d34d8658-6603-449e-b691-a982ccc79116《Hollow Knight: Silksong (Original Soundtrack)》（2025 續作）。藝人 MBID 38e0beaf-c6ea-4561-808c-ba4a84b66341，名下 10 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hollow Knight (Original Soundtrack)；Hollow Knight Original Soundtrack",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gareth Coker",
+  "album": "Ori and the Blind Forest (Original Soundtrack)",
+  "year": 2015,
+  "genres": [
+   "classical"
+  ],
+  "label": "Microsoft Studios Music（2015-03-10 全球數位，32 軌）；2016 年 Microsoft Studios／Moon Studios／Nordic Games CD",
+  "why": "Gareth Coker 在遊戲音樂這條線的起點，也是微軟第一方作品少數把原聲當成獨立商品發的一張：2015 年 3 月 10 日由 Microsoft Studios Music 發 32 軌數位盤（barcode 889326158394），2015-06-10 與 2016-04-27 兩度以 Microsoft Studios／Moon Studios 名義再發，2016 年 5 月 23 日與 Nordic Games 合作在美國出 24 軌 CD，2016 年 6 月英美各再一版，2020 年 3 月 10 日又一次數位再發——MB 轄下九個 release 全部 Official，是本批再發最密集的一張。五年後的《Ori and the Will of the Wisps》(2020) 另立一筆，本批只取首作。實掃 seed_cards.json 全 14,424 列，`Gareth Coker`／`Ori and the Blind Forest` 零命中。",
+  "risk": "**盤名的前兩個字 `Ori` 是極短的常見字串**：在池中 grep `Ori` 會命中 27 筆（The Original Spinners、Black Origami、Jack Orion…），任何子字串比對都會誤配（裁定第 162 條「盤名太短會配到別人」的同型）；去重必須比對完整盤名。店面序 GAME：jp 與 us 都命中同一個 collectionId 971519718《Ori and the Blind Forest (Original Soundtrack)》（兩邊掛名 `Gareth Coker`，releaseDate 2015-03-10，與 MB 原盤日期完全一致）；本卡取 us。同藝人同系列別碟：1500849132《Ori and the Will of the Wisps (Original Soundtrack Recording)》(2020)、0c6ec9da-8cd5-495b-b015-9493e2a0306c《…The Piano Collections》(2020 鋼琴編曲盤)。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 36009069-d3e9-4d57-9540-dd105ff4d76c。回問確認：title「Ori and the Blind Forest (Original Soundtrack)」、artist-credit「Gareth Coker」、first-release-date 2015-03-10、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release 全部 Official（2015-03-10 XW＝Microsoft Studios Music／32 軌、2015-06-10 XW、2016-04-27 XW、2016-05-23 US＝Microsoft Studios／Moon Studios／Nordic Games CD 24 軌、2016-06-14 GB 與 US、2017-02-24 US、2020-03-10 XW、2020 US）。刻意不釘：0c6ec9da-8cd5-495b-b015-9493e2a0306c《Ori and the Will of the Wisps: The Piano Collections》（2020 鋼琴編曲盤，非原聲）、1d98d67a-1cdb-4ac8-9a4d-65ee8a202753《Ori and the Will of the Wisps - Teaser Music》（2017 單曲）。藝人 MBID 96eca91a-fdb5-4a0e-908b-ba526ba166df。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ori and the Blind Forest Original Soundtrack；Ori and the Blind Forest",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Christopher Tin",
+  "album": "Calling All Dawns: A Song Cycle",
+  "year": 2009,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "Tin Works Publishing（catno TW001，2009-10-01，CD 與數位皆 12 軌）",
+  "why": "遊戲音樂第一次拿到葛萊美獎的那張碟：開場曲〈Baba Yetu〉原是 2005 年《Sid Meier's Civilization IV》的主題曲，Christopher Tin 把它放進這張十二首的聯篇歌集，2009 年 10 月 1 日以自家 Tin Works Publishing 的 TW001 發行 CD 與數位；2011 年 9 月以 TW002 出 CD＋DVD 版，2023 年再發一次，另有 Universal Music Classics Group 參與的一筆數位建檔。收進本批的理由是這張本身就是「遊戲主題曲進到唱片工業」這件事的節點——2011 年〈Baba Yetu〉以本輯的錄音拿下葛萊美最佳器樂編曲伴唱獎。他之後的《Sid Meier's Civilization VII》(2025) 與《Offworld Trading Company》(2016) 才是純遊戲原聲，本批不取。實掃 seed_cards.json 全 14,424 列，`Christopher Tin`／`Baba Yetu`／`Civilization` 全部零命中。",
+  "risk": "**這不是一張遊戲原聲盤，是一張含有遊戲主題曲的聯篇歌集**——MB 的 primary-type 是 Album、secondary-types 空（不是 Soundtrack），與本批其他 18 張的型別不同；收進 b 組是策展判斷（見 rulings.md），不是把它當 OST。盤名兩種：MB 作《Calling All Dawns: A Song Cycle》、Apple 作《Calling All Dawns》（jp collectionId 1526759916 掛片假名 `クリストファー・ティン`、us 同一 collectionId 掛 `Christopher Tin`，releaseDate 2009-10-01 與 MB 完全一致），兩種都要掃。店面序 GAME 取 us。歌詞跨十二種語言，`world` 桶與 `classical` 並列是依聲音本體（管弦＋合唱）而不是依題材。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 164e1861-c100-4e1f-8472-5e4b91588106。回問確認：title「Calling All Dawns: A Song Cycle」、artist-credit「Christopher Tin」、first-release-date 2009-10-01、**primary-type Album、secondary-types 空**（本批唯一一張 secondary-types 不含 Soundtrack 的卡）、轄下 6 個 release 全部 Official（2009-10-01 XW ×2＝Tin Works Publishing TW001 數位與 CD 各 12 軌、2009-10-01＝Tin Works／Universal Music Classics Group、2011-09-01 XW＝TW002 CD＋DVD、2015-05-11、2023-05-26 XW）。刻意不釘：a3a73db5-cf9a-4a85-a258-6a3e8a515c3e《Song Offerings: Choral Works by Christopher Tin》（2025 合唱作品集）、c98ba44a-d602-4cef-b15a-9372bdf5cae8《The Drop That Contained the Sea》（2014 另一部聯篇歌集）、463d3803-216f-491a-be5f-6bcda76e22b3《Sid Meier's Civilization VII (Original Game Soundtrack)》（2025 遊戲原聲，本批未收）、40177e2c-c55f-422f-9d43-8546fc58d97a《Old World》（2021 遊戲原聲）。藝人 MBID bc37fe19-d935-48c0-b2ab-65212e09cf6c，名下 24 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "クリストファー・ティン；Calling All Dawns；Baba Yetu",
+  "reissuedBy": "",
+  "g": "b"
  }
 ]
