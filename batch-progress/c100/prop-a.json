@@ -1,0 +1,97 @@
+[
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Arturo Toscanini",
+  "album": "Respighi: Pini di Roma / Fontane di Roma / Feste Romane",
+  "year": 1990,
+  "label": "RCA Victor Gold Seal（catno 60262-2-RG；2007 JVC XRCD JM-M24XR01、2009 Past Classics 數位版）",
+  "why": "Toscanini 與 NBC Symphony 1949–1953 年在紐約 Carnegie Hall 錄下的雷史畢基羅馬三部曲，是 RCA 把三首交響詩收成一張的標準組合，也是這位指揮在美國廣播樂團時期最常被援引的錄音之一——雷史畢基本人與 Toscanini 有直接往來，《羅馬節日》1929 年的世界首演就是 Toscanini 指揮紐約愛樂。實掃 seed_cards.json 全 14,424 列，Toscanini 名下池中只有 1 張（《Beethoven: Symphony no. 3 Eroica (1953)》，1953），是本批骨幹名單裡最薄的一位；他的義大利曲目在池中完全沒有代表。MB 藝人 da96be23 名下 197 個 release-group（用 release-group?artist=&limit=100&offset= 分頁全列，非 browse 預設 25 筆），其中絕大多數是 1990 年代之後 RCA／Naxos／義大利小廠的整編，這一筆是少數標題、曲目與班底都寫清楚的條目。",
+  "risk": "年份取 release-group 的 first-release-date 1990（RCA 60262-2-RG 這次 CD 整編），錄音年是 1949–1953，兩者差約四十年，卡片年份不等於錄音年，行文不得把 1990 當演出年。CAA release-group 端點實測 200，封面有來源。Apple 命中 gb collectionId 1216431492「Arturo Toscanini — Respighi: Pines of Rome, Fountains of Rome & Roman Festivals」（releaseDate 記 1953）與 gb 334518342「NBC Symphony Orchestra & Arturo Toscanini — Respighi: Pini Di Roma, Fontane Di Roma」（2009），兩筆都是同一份錄音的不同再發，取哪一筆都要先核曲目數；店面序 UKB，gb 即命中。掛名寫法查過 Arturo Toscanini／Toscanini／NBC Symphony Orchestra & Arturo Toscanini 三種，池中用 Arturo Toscanini，沿用。盤名義大利文與英文兩套並存（Pini di Roma／Pines of Rome），去重時兩邊都要掃。",
+  "mbNote": "釘 release-group fde44455-d1d1-3e93-a1a0-be3ae0d164ad。回問 release-group/<id>?fmt=json&inc=artist-credits+releases 確認：title「Pini di Roma / Fontane di Roma / Feste Romane」、artist-credit「Respighi; NBC Symphony Orchestra, Arturo Toscanini」（作曲家與演奏者並列，依派工取演奏者當卡片掛名）、first-release-date 1990、primary-type Album、secondary-types 空、轄下 3 個 release（US 1990 RCA 60262-2-RG／JP 2007 JVC／XW 2009 Past Classics），status 全數 Official。藝人 MBID da96be23-ef88-420e-8173-3efb7fd995cc，名下 197 個 release-group。刻意不釘：8e53ec3e《Toscanini Conducts Beethoven: Eroica, Egmont, Leonore No. 3》（與池中既有的 Eroica 同一份錄音）、ab8660f8《Falstaff》與 01b94cb0《La traviata》與 a3655705《Messa da requiem》（三筆 CAA 皆 404，封面鏈斷）、161275e7《Maestro Furioso》與 c53a393c《The Complete RCA Collection》（廠牌大盒）。",
+  "queryAlias": "Pines of Rome; Fountains of Rome; Roman Festivals; NBC Symphony Orchestra"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Arturo Toscanini",
+  "album": "Tchaikovsky: Manfred Symphony / Romeo and Juliet",
+  "year": 1991,
+  "label": "RCA Victor Gold Seal（catno 60298-2-RG）",
+  "why": "Toscanini 1946 與 1949 年與 NBC Symphony 的柴可夫斯基《曼弗雷德交響曲》與《羅密歐與茱麗葉》幻想序曲，是《曼弗雷德》在唱片史上最早的完整商業錄音之一，也是 Toscanini 少數把整首《曼弗雷德》錄完的曲目（他在音樂會上通常只演其中兩個樂章）。RCA 1991 年把兩首收進 Gold Seal 系列一張。池中實掃：Toscanini 只有 1 張（Beethoven Eroica 1953），俄國曲目 0 張；池中的柴可夫斯基交響曲由 Mravinsky（4–6 號）與 Rostropovich（第 6 號）掛名，NBC 時期的美式讀法沒有任何代表。",
+  "risk": "年份取 first-release-date 1991，錄音年 1946／1949，差四十餘年，risk 與 why 都已寫明，行文不得把 1991 當演出年。CAA release-group 端點實測 200。Apple gb 有兩筆同型條目：1216431103「Arturo Toscanini — Tchaikovsky: Manfred Symphony, Op. 58 & Romeo and Juliet, TH 42」（releaseDate 記 1949）與 447412359「NBC Symphony Orchestra & Arturo Toscanini — Tchaikovsky: Manfred - Romeo and Juliet (Toscanini) (1953)」（2011 Naxos Historical），兩筆曲目相同但整編方不同，上架時要鎖定其中一個 collectionId 並記下來；另有 1695118894「Manfred Symphony」（1990）與 666422773「Toscanini Conducts Tchaikovsky (1941-1944)」是不同編輯版本，不得混用。店面序 UKB，gb 即命中。MB 該 release-group 轄下唯一 release 的 country 欄為空，status 為 Official。",
+  "mbNote": "釘 release-group 3f6128b1-406d-4a46-a201-803086485df1。回問確認：title「Manfred Symphony / Romeo & Juliet」、artist-credit「Tchaikovsky; Arturo Toscanini, NBC Symphony Orchestra」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（1991、country 空、RCA Victor Gold Seal 60298-2-RG、status Official）。卡片盤名把 MB 的「&」寫成「and」並補上作曲家前綴，依裁定第 91／95 條，RG 標題與卡片盤名不必相等。刻意不釘：666422773 對應的 MB 條目與 a92ba6f7《Arturo Toscanini dirige Richard Wagner》（Compilation+Live）、c6d10ef5《PBS Presents Legendary Performances》（電視節目輯）。",
+  "queryAlias": "Manfred Symphony; Romeo and Juliet Fantasy Overture; NBC Symphony Orchestra"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Artur Schnabel",
+  "album": "The Complete Schubert Recordings",
+  "year": 2005,
+  "label": "Music & Arts（catno CD-1175(5)，五片裝）",
+  "why": "Schnabel 1932–1950 年間留下的全部舒伯特錄音，由 Music & Arts 整編成一套。Schnabel 是二十世紀第一位把貝多芬鋼琴奏鳴曲全集錄完的鋼琴家，但他同時也是把舒伯特晚期奏鳴曲從冷門曲目推回音樂會核心的人；他錄的 D. 960、D. 850 與《樂興之時》在唱片史上都是最早的一批。池中實掃 14,424 列：Schnabel 只有 1 張（《Beethoven: Complete Piano Sonatas (1932-35)》，1935），舒伯特那一半完全沒有；而池中的舒伯特鋼琴作品目前掛在 Sviatoslav Richter（D. 960、Wanderer Fantasy）名下，1930 年代的錄音一張都沒有。",
+  "risk": "年份取 first-release-date 2005（Music & Arts 這次整編），錄音年 1932–1950，落差超過半世紀，行文只能說「1930–50 年代的錄音在 2005 年被整編成套」，不得斷言發行年即演奏年。CAA release-group 端點實測 200。Apple gb 命中 457923459「Various Artists — Schubert Recordings (Complete) (Schnabel) (1932-1950)」（2011），掛名被記成 Various Artists 而不是 Schnabel，是 Apple 端的建檔問題，上架時要以曲目與年代區間核對而不是掛名；另有 1216582089「Artur Schnabel - The RCA Victor Recordings」是不同曲目的套裝，不得誤配。店面序 UKB，gb 即命中。掛名查過 Artur Schnabel／Arthur Schnabel（MB 上 a193e4d7 那筆用的是 Arthur 拼法）兩種寫法，池中用 Artur Schnabel，沿用。",
+  "mbNote": "釘 release-group 6e629685-5d65-4213-9135-30a03f1c6780。回問確認：title「The Complete Schubert Recordings」、artist-credit「Artur Schnabel, Franz Schubert」（演奏者在前，依派工取演奏者掛名）、first-release-date 2005、primary-type Album、secondary-types 空、轄下 1 個 release（US 2005、Music & Arts CD-1175(5)、status Official）。藝人 MBID 3b3d28fa-caaf-46ed-a545-29558adf25ec，名下 63 個 release-group（分頁全列）。刻意不釘：8b37b6c5《Schnabel Plays Schubert, Volume II》與 c2b0f8ce《Schnabel Plays Schubert, Volume I》（EMI 分卷，依第 87 條「分卷不是一張碟」不收）、f3ceecff《Schnabel maestro espressivo: The Complete Beethoven Piano Sonatas》（與池中既有的貝多芬全集是同一份錄音）、a193e4d7《Arthur Schnabel joue Ludwig van Beethoven》（同上）。",
+  "queryAlias": "Schubert Recordings Complete Schnabel; Schnabel Plays Schubert; Arthur Schnabel"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Artur Schnabel",
+  "album": "Schnabel Plays the Beethoven Piano Concertos",
+  "year": 1993,
+  "label": "Pearl（catno GEMM CDS 9063）",
+  "why": "Schnabel 1932–1947 年錄下的貝多芬五首鋼琴協奏曲，指揮分別是 Malcolm Sargent（倫敦交響、倫敦愛樂）與 Izler Solomon（哥倫布交響），由考古廠牌 Pearl 在 1993 年整編成一套。這一套與池中已有的《Complete Piano Sonatas (1932-35)》是同一個計畫的兩半：HMV 當年為 Schnabel 開的貝多芬錄音案同時涵蓋奏鳴曲全集與協奏曲全集，池中只收了前者。實掃池中 Schnabel 僅 1 張，貝多芬協奏曲則由 Gilels（Szell）、Glenn Gould（第 3 號）、Rubinstein 系列與 Van Cliburn 分別代表，1930 年代的版本 0 張。",
+  "risk": "MB 的 secondary-types 含 Compilation、primary-type 是 Album，依 ALBUM_ONBOARDING §5.6 明文照一般 Album 寫法，releaseType 填 Album、不填例外欄位（填了會被 chk-prop 判「非合輯卻帶例外欄位」）。年份取 first-release-date 1993，錄音年 1932–1947。CAA release-group 端點實測 200。Apple gb 有三筆相關但都不是這一套：192266789「Beethoven: Piano Concertos Nos. 3 and 4」（2001）、72794667「Schnabel, Beethoven: Piano Concertos 4 & 5 Plus Fur Elise」（1997，掛 Various Artists）、525678270「Beethoven: Piano Concertos」（2012），全部是分張或部分曲目的再發，不是 Pearl 這套五首全集；上架時若要用其中一筆，必須先核曲目數並在備註寫明版本不同。店面序 UKB。Pearl 是英國考古廠牌，本次 release 在 MB 上標 Official（依第 43／57／65／78 條逐筆判定，這一筆乾淨；不得因此把 Pearl 一概當背書）。",
+  "mbNote": "釘 release-group 5be34956-e1ee-4dd2-a501-703920b88f22。回問確認：title「Schnabel Plays the Beethoven Piano Concertos」、artist-credit「Beethoven; Artur Schnabel, Sir Malcolm Sargent, London Symphony Orchestra, London Philharmonic Orchestra, Izler Solomon, Columbus Symphony Orchestra」（作曲家＋六位演奏方，卡片取領銜的 Artur Schnabel）、first-release-date 1993、primary-type Album、secondary-types [\"Compilation\"]、轄下 1 個 release（GB 1993、Pearl GEMM CDS 9063、status Official）。刻意不釘：74a59644《Piano Concertos nos. 1 & 2 / Für Elise》、80ed7980《Piano Concerto no. 3 / Piano Concerto no. 4 / Rondo in C major》、0327c86c《Piano Concerto no. 5 \"Emperor\" / Cello Sonata no. 2》（三筆是同一批錄音的 Naxos 分張再發，與本套是同一份母帶的不同切法）。",
+  "queryAlias": "Beethoven Piano Concertos Schnabel; Schnabel Beethoven Concertos; Arthur Schnabel"
+ },
+ {
+  "genres": [
+   "classical"
+  ],
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Alfred Cortot",
+  "album": "Victor Recordings of 1919-1926",
+  "year": 1989,
+  "label": "Pearl（catno GEMM CD 9386）",
+  "why": "Cortot 1919–1926 年在美國 Victor 灌下的獨奏錄音，由 Pearl 在 1989 年整編。這批是他最早的一批唱片，時間點早於他 1930 年代那批著名的 HMV 蕭邦錄音（池中已有《Chopin: 24 Préludes》1934），曲目跨蕭邦、韋伯、舒伯特、德布西、拉威爾、聖桑與布拉姆斯，是他戰前巴黎音樂院教學曲目的實錄。池中實掃：Cortot 只有 1 張，與他同代的法國學派同僚 Jacques Thibaud 也只有 1 張（《French Violin Works》1931）。MB 藝人 c063351f 名下 44 個 release-group，是本批骨幹裡目錄最小的一位。",
+  "risk": "年份取 first-release-date 1989（Pearl 整編年），錄音年 1919–1926，落差近七十年，行文一律以錄音年代為主、發行年只當版本標記。CAA release-group 端點實測 200。Apple 在 gb／us／jp／de／fr／it／ie 七個店面用「Cortot Victor Recordings 1919-1926」與「Alfred Cortot The Victor Recordings」兩組字串搜尋均未命中這一套；查到的是 1379848168《The Late Recordings, Vol. 2 (1947-1949)》、1379849740《Vol. 3 (1949-1951)》、447386425《Alfred Cortot: 1929-1937 Recordings》、215991510《Chopin: Ballades Nos. 1-4, Nocturnes (Cortot, 78 Rpm Recordings, Vol. 5)》——四筆都是別的年代區間，一律不得當本盤的封面或試聽來源。預估 previewStatus=unavailable，封面走 CAA。盤名的年份區間用 ASCII 連字號（1919-1926），MB 標題原文即如此。",
+  "mbNote": "釘 release-group d007350e-6db7-4fbd-9b6a-2a2012a987be。回問確認：title「Victor Recordings of 1919-1926」、artist-credit「Alfred Cortot, Chopin, Weber, Schubert, Debussy, Ravel, Saint-Saëns, Brahms」（演奏者排在最前、其後全是作曲家，卡片取 Alfred Cortot）、first-release-date 1989、primary-type Album、secondary-types 空、轄下 1 個 release（GB 1989、Pearl GEMM CD 9386、status Official）。藝人 MBID c063351f-8877-415f-b4bd-c65f60cedb66，名下 44 個 release-group（分頁全列）。刻意不釘：3871cdec《Carnaval and Etudes Symphoniques》（1954，CAA 404）、8d28afc4《Chopin》與 a242e4c4《Alfred Cortot ● Chopin》與 9a4e7c56《Chopin • Œuvres pour piano • Cortot》（三筆蕭邦整編都可能與池中既有的《Chopin: 24 Préludes》重疊）、51cd046a／ca320c36《Great Pianists of the 20th Century, Volume 20／21》（系列選輯）。",
+  "queryAlias": "Alfred Cortot Victor Recordings; Cortot 1919-1926; Cortot Pearl GEMM CD 9386"
+ }
+]

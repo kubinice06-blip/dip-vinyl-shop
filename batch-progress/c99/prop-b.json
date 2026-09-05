@@ -289,5 +289,162 @@
   "queryAlias": "L. Shankar；Lakshminarayana Shankar；L Shankar",
   "reissuedBy": "",
   "g": "b"
+ },
+ {
+  "artist": "Fania All-Stars",
+  "album": "Our Latin Thing (Nuestra cosa)",
+  "year": 1972,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno SLP 00431，US）",
+  "why": "Fania All-Stars 1971 年 Cheetah 夜總會那場演出所拍紀錄片的原聲，1972 年由 Fania 發行，是把紐約 salsa 從社區音樂變成產業的那一步。池中這個團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Live at the Cheetah, Vol. 1》(1972，王牌 hall)、《Rhythm Machine》(1977)；本張與池中那張《Live at the Cheetah, Vol. 1》錄自同一晚的同一場，但是不同的發行物（一個是雙 LP 現場錄音、一個是紀錄片原聲），兩者在 MB 上也是兩個 release-group。MB release 端點實查：1972 US Fania SLP 00431 原盤（Official）、2020-10-02 XW Fania 數位再發（Official）、另一筆 US Official。",
+  "risk": "與池中《Live at the Cheetah, Vol. 1》錄自同一場，是本張最需要說明的撞卡邊界：兩者是不同 release-group（本張 2c12a98b、池中那張 8b5e9d54），曲目與發行物都不同，不算撞卡；但任何以「Fania All-Stars＋1972＋Cheetah」判同的做法會誤合。盤名有雙語並列：MB 作「Our Latin Thing (Nuestra cosa)」，Apple us collectionId 1465813337 作「Our Latin Thing: 40th Anniversary Limited Edition」，MB 轄下另一筆 release 也叫這個長名；用「Our Latin Thing Nuestra Cosa」直搜十六個店面全部落空，改用不帶副標的短名整批列目錄才撈到（裁定第 158 條的同一形狀）。掛名寫法查過 Fania All-Stars、Fania All Stars、The Fania All-Stars 三種，MB 這筆的 artist-credit 是帶 The 的版本。MB secondary-types 是 [Soundtrack]、primary-type 是 Album，依 §5.6 明文照一般 Album 寫、不填例外欄位。cu 店面回 HTTP 400。封面與固定試聽走 us 1465813337，但那是四十週年版、與 1972 原盤不同版，上架時要在備註標明。",
+  "mbNote": "釘 release-group 2c12a98b-243e-4b81-b077-7b4a15ec8d1e。回問確認：title「Our Latin Thing (Nuestra cosa)」、artist-credit「The Fania All-Stars」、first-release-date 1972、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（US／Official Fania SLP 00431、XW／Official Fania 2020、US／Official）。刻意不釘：8b5e9d54-6c5d-4867-a8d0-d0422df923e3《Live at the Cheetah, Vol. 1》(池中已有王牌卡)、aadf0212-3c32-4670-a76c-e2436f5ff0bb《Live at the Cheetah, Vol. 2》(1972)、b449e83f-4c27-4551-b2e9-17578dd7e57d《Live at the Cheetah》(1988 合輯)、e25ab9f3-0d03-4097-b8f1-e1a9f0ef6c7c《Salsa》(電影原聲，MB 未記年)。藝人 MBID 4b61339a-4074-43a6-bf6b-7f9d0d5d530f，名下 54 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fania All Stars；The Fania All-Stars；Nuestra Cosa；Our Latin Thing: 40th Anniversary Limited Edition",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Fania All-Stars",
+  "album": "Latin-Soul-Rock",
+  "year": 1974,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno SLP 00470，US）／Sonodisc（catno CDF 470，FR 再發）",
+  "why": "Fania All-Stars 1973 年 Yankee Stadium 那場演出前後的錄音，1974 年由 Fania 發行，客座包括 Jan Hammer、Manu Dibango 與 Billy Cobham，是這個團最直接往爵士與搖滾靠攏的一張。池中這個團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Live at the Cheetah, Vol. 1》(1972)、《Rhythm Machine》(1977)——本張正落在兩者之間，而且與池中《Rhythm Machine》同屬他們跨界那幾年。MB release 端點實查：1974 US Fania SLP 00470 原盤（Official）、1974 DE Fania 69.027（標題《Salsa》）、1989 FR Sonodisc CDF 470、2000 US Fania SLP 470、2020-10-02 XW Fania 兩筆，共 6 筆全部 Official。",
+  "risk": "一碟三名是本張最大的坑：MB release-group 標題《Latin-Soul-Rock》，轄下德國那筆 release 標題是《Salsa》、另一筆 XW 標題是《Featuring Jan Hammer》，三個名字指同一張碟；而 MB 名下另有 e25ab9f3《Salsa》是 1976 年那部同名紀錄片的原聲、完全另一張。任何靠標題比對的腳本在這裡會兩邊都錯，釘位必須用 32e84baa 這個 MBID。盤名用連字號串起三個詞（Latin-Soul-Rock），去掉連字號後會與一般詞組相等。掛名寫法查過 Fania All-Stars、Fania All Stars、The Fania All-Stars。MB secondary-types 是 [Live]、primary-type 是 Album，依 §5.6 照一般 Album 寫、不填例外欄位。Apple us 命中 collectionId 1464275342「Latin-Soul-Rock」/Fania All-Stars/1974，年份與 MB 一致；同店面另有 1744487799「Latin-Soul-Rock (Remastered 2024)」是 2024 重製版、不取。cu 店面回 HTTP 400。封面與固定試聽走 us 1464275342。",
+  "mbNote": "釘 release-group 32e84baa-ce06-3cd3-bda3-d5d8cd3252de。回問確認：title「Latin-Soul-Rock」、artist-credit「Fania All Stars」、first-release-date 1974、primary-type Album、secondary-types [Live]、轄下 6 個 release（US／Official×2、DE／Official 標題《Salsa》、FR／Official、XW／Official×2 其一標題《Featuring Jan Hammer》）。刻意不釘：e25ab9f3-0d03-4097-b8f1-e1a9f0ef6c7c《Salsa》(1976 紀錄片原聲，與本張德國盤同名但不同碟)、c3965c4c-7b24-4ccd-8528-07e31498345f《Rhythm Machine》(池中已有)、68baeecf-61cb-330b-9150-3e9032ea1cf9《Live at Yankee Stadium, Vol. 1》與 0dd09256-df92-30db-ac54-12fbe69861a1《Vol. 2》(1975，Apple 只有 2025 年重製 EP、本批未收)、2c12a98b-243e-4b81-b077-7b4a15ec8d1e《Our Latin Thing (Nuestra cosa)》(本批另一張)。藝人 MBID 4b61339a-4074-43a6-bf6b-7f9d0d5d530f，名下 54 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fania All Stars；The Fania All-Stars；Latin Soul Rock；Salsa；Featuring Jan Hammer",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Celia Cruz & Johnny Pacheco",
+  "album": "Tremendo caché",
+  "year": 1975,
+  "genres": [
+   "world"
+  ],
+  "label": "Vaya（catno VS-37，US）",
+  "why": "Celia Cruz 與 Johnny Pacheco 搭檔的第二張，接在 1974 年《Celia & Johnny》之後，同樣由 Fania 旗下 Vaya 發行。池中 Celia Cruz 相關現有 6 筆（實掃 seed_cards.json 全 14,424 列）：《Reflexiones de Celia Cruz》(1960)、《La reina del ritmo cubano》(1958)、《Son con Guaguancó》(1966，王牌 hall)、《Only They Could Have Made This Album》(1977，與 Willie Colón)，以及《Celia & Johnny》(1974) 在池中有兩筆——一筆掛「Celia Cruz & Johnny Pacheco」（王牌 hall）、一筆掛「Celia Cruz」，是同一張碟的掛名分裂。本張是那一組搭檔的下一張，池中沒有。MB release 端點實查：1975 US Vaya VS-37，Official，僅此一筆 release。",
+  "risk": "掛名分裂在池中已經存在（《Celia & Johnny》同時掛「Celia Cruz & Johnny Pacheco」與「Celia Cruz」兩種），本卡沿用「Celia Cruz & Johnny Pacheco」這個池中王牌卡用的寫法；MB 這筆的 artist-credit 卻是「Celia & Johnny」——三種寫法都要拿去比。盤名的重音符號兩套：MB 作「Tremendo caché」（小寫 c、帶 é），Apple us collectionId 1464277703 作「Tremendo Cache」（大寫 C、無重音），NFKD 正規化後才會相等，兩種都進 queryAlias。Celia Cruz 名下 MB 有 222 個 release-group，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條）。Apple 年份 1975 與 MB 一致；cu 店面回 HTTP 400（Apple 沒有古巴店面，這位藝人正是該缺口最明顯的一位）。封面與固定試聽走 us 1464277703。",
+  "mbNote": "釘 release-group f9bcebcd-956b-32c5-be9e-54129e968a0d。回問確認：title「Tremendo caché」、artist-credit「Celia & Johnny」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official，Vaya VS-37）。刻意不釘：b4702b99-60c8-3659-ac2c-6ed90d9206c6《Recordando el ayer》(1976，artist-credit「Celia, Johnny, Justo & Papo」四人共掛)、af46bb0a-62fe-3b6c-b041-0898fd0530c1《La ceiba》(1979)、c02c132f-ef0f-375f-b81e-771a4bdbdcd3《Celia y Willie》(1981)、e16554d1-1f7a-3d46-bbaf-19448559bfac《Cuba y Puerto Rico son…》(1966)。藝人 MBID 7b8e1188-9ca4-4aa5-8393-172de6fa04de，名下 222 個 release-group（分頁列完，共三頁）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Celia & Johnny；Celia Cruz；Johnny Pacheco；Tremendo Cache",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Celia Cruz & Ray Barretto",
+  "album": "Ritmo en el corazón",
+  "year": 1988,
+  "genres": [
+   "world",
+   "jazz"
+  ],
+  "label": "Fania（catno JM 651，US）／Charly（catno CD CHARLY 172，XE）",
+  "why": "Celia Cruz 與 Ray Barretto 合作的專輯，1988 年由 Fania 發行，是她第一次拿到葛萊美的作品。池中 Celia Cruz 相關現有 6 筆（實掃 seed_cards.json 全 14,424 列）（1958、1960、1966、1974×2、1977），最晚一張是 1977 年；1980 年代之後池中完全空白，本張補的是她生涯後段最被制度承認的一格。Ray Barretto 在池中另有 4 張（《Acid》1968、《Que Viva la Música》1972、《Indestructible》1973、《Barretto》1975），兩人合作的這張則沒有。MB release 端點實查：1988 US Fania JM 651、1988 XE Charly CD CHARLY 172、另一筆 ??／Official，共 3 筆全部 Official。",
+  "risk": "掛名順序兩套：MB 這筆的 artist-credit 是「Celia Cruz & Ray Barretto」，Apple us collectionId 1464283597 掛的卻是「Ray Barretto & Celia Cruz」（順序相反）；卡片取 MB 的順序，兩種都進 queryAlias，順序敏感的比對兩邊都要跑。盤名帶重音（corazón），MB 作小寫「Ritmo en el corazón」、Apple 作「Ritmo en el Corazón」（大寫 C）。MB 名下另有 50ff8019《Ritmo en el corazón》(2003) 是同名合輯重複建檔，是本張最像的假陽性。Celia Cruz 名下 222 個 release-group，一律分頁。Apple 年份 1988 與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1464283597。",
+  "mbNote": "釘 release-group 0bf5cc06-314b-3697-9411-a50da97f12d0。回問確認：title「Ritmo en el corazón」、artist-credit「Celia Cruz & Ray Barretto」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（US／Official Fania JM 651、XE／Official Charly CD CHARLY 172、??／Official）。刻意不釘：50ff8019-8c5a-4440-9e67-357569f72d64《Ritmo en el corazón》(2003 同名合輯，MB 重複建檔)、f9bcebcd-956b-32c5-be9e-54129e968a0d《Tremendo caché》(本批另一張)、193754e2-7322-4b8d-8614-eccf16d6c0d1《De nuevo》(1985)、449536f3-54bd-3a58-820f-d73c9039e8a5《The Winners》(1987)。藝人 MBID 7b8e1188-9ca4-4aa5-8393-172de6fa04de，名下 222 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ray Barretto & Celia Cruz；Celia Cruz；Ray Barretto；Ritmo en el Corazon",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Juan Luis Guerra y 440",
+  "album": "Areíto",
+  "year": 1992,
+  "genres": [
+   "world"
+  ],
+  "label": "Karen Records（catno CDK 146，US／CA／ES）／BMG（catno 3456）",
+  "why": "Juan Luis Guerra 在《Bachata Rosa》(1990) 之後的專輯，1992 年由 Karen Records 發行，是他把 merengue 與 bachata 帶進泛拉美主流之後的下一步。池中這個團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Ojalá Que Llueva Café》(1989)、《Bachata Rosa》(1990)；1990 年之後的目錄池中一張都沒有，本張是那條線的直接續篇。MB release 端點實查：1992 US BMG 3456 與 Karen Records CDK 146、1992-01-01 XW Karen Publishing Co.、1992 ES Karen Records 74321 128972、1992 CA Karen Records 10793 0146-2，共 4 筆全部 Official。",
+  "risk": "掛名寫法至少四種：MB 藝人實體有「Juan Luis Guerra」(c3dcad1b，名下 21 個 release-group) 與「Juan Luis Guerra 4.40」(1659a41f，名下 54 個) 兩個，MB 這筆的 artist-credit 是「Juan Luis Guerra 4.40」，池中兩張都用「Juan Luis Guerra y 440」，Apple 用「Juan Luis Guerra 4.40」；卡片沿用池中寫法，四種（Juan Luis Guerra／Juan Luis Guerra 440／Juan Luis Guerra 4.40／Juan Luis Guerra y 440）都拿去實掃過，兩個 MB 實體也各自分頁 browse 過。盤名帶重音（Areíto），Apple us collectionId 1526561393 保留了重音；NFKD 後 Areito 也要比。Apple 年份 1992 與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1526561393。",
+  "mbNote": "釘 release-group bee64ca0-9c3c-3652-a0db-9f74d13e7163。回問確認：title「Areíto」、artist-credit「Juan Luis Guerra 4.40」、first-release-date 1992-01-01、primary-type Album、secondary-types 空、轄下 4 個 release（US／Official、XW／Official、ES／Official、CA／Official，皆 Karen Records 系）。刻意不釘：c4189280-9403-3827-a1c3-64247b4dd32e《Ojalá que llueva café》與 acb01f0a-5c5a-35d3-adbf-08697accd6c9《Bachata rosa》(池中已有)、c868aa60-4683-3317-bc0d-e88757eac320《Romance rosa》(1992 同年合輯，盤名含 rosa 的假陽性)、30a0676f-2c54-4f7c-8601-c52af81ba21f《Woman del Callao》(1990 合輯)。藝人 MBID：Juan Luis Guerra 4.40 為 1659a41f-27d3-4823-8a15-bf7cd295cf59（名下 54 個 release-group）、Juan Luis Guerra 為 c3dcad1b-1380-4a94-98d8-3f8272f19df6（名下 21 個），兩者皆分頁列完。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Juan Luis Guerra；Juan Luis Guerra 4.40；Juan Luis Guerra 440；Areito",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Juan Luis Guerra y 440",
+  "album": "Fogaraté!",
+  "year": 1994,
+  "genres": [
+   "world"
+  ],
+  "label": "Karen Records（catno 74321 21110 2，US）／Karen Publishing Co.（XW）",
+  "why": "Juan Luis Guerra 1994 年的專輯，是他在《Bachata Rosa》(1990)、《Areíto》(1992) 之後把多明尼加鄉間的 perico ripiao 編制放回主流發行的一張。池中這個團現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Ojalá Que Llueva Café》(1989)、《Bachata Rosa》(1990)；本張與同批的《Areíto》一起把 1990 年代那一段補上。MB release 端點實查：1994-01-01 XW Karen Publishing Co.、1994-02-25 US Karen Records 74321 21110 2，兩筆皆 Official。",
+  "risk": "盤名的驚嘆號是陷阱：MB release-group 作《Fogaraté!》（帶驚嘆號），轄下 XW 那筆 release 與 Apple us collectionId 1526554412 都作《Fogaraté》（無驚嘆號），任何保留標點的比對會判成兩張碟，兩種都進 queryAlias；重音符號（é）NFKD 後的 Fogarate 也要比。掛名同前一張：MB 藝人實體有 Juan Luis Guerra 4.40（1659a41f，54 個 release-group）與 Juan Luis Guerra（c3dcad1b，21 個）兩個，池中用「Juan Luis Guerra y 440」，Apple 用「Juan Luis Guerra 4.40」，四種寫法都實掃過。Apple 年份 1994 與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1526554412。",
+  "mbNote": "釘 release-group 5d6e658a-9046-3f06-8b35-64d8c823e570。回問確認：title「Fogaraté!」、artist-credit「Juan Luis Guerra 4.40」、first-release-date 1994-01-01、primary-type Album、secondary-types 空、轄下 2 個 release（XW／Official Karen Publishing Co. 標題《Fogaraté》、US／Official Karen Records 74321 21110 2 標題《Fogaraté!》）。刻意不釘：bee64ca0-9c3c-3652-a0db-9f74d13e7163《Areíto》(本批另一張)、2bb10976-4d26-3591-9598-52e08df8dabe《Ni es lo mismo ni es igual》(1998)、acb01f0a-5c5a-35d3-adbf-08697accd6c9《Bachata rosa》(池中已有)、4c76b161-e287-48ff-a846-22eb819da066《Grandes éxitos》(1995 合輯)。藝人 MBID：Juan Luis Guerra 4.40 為 1659a41f-27d3-4823-8a15-bf7cd295cf59、Juan Luis Guerra 為 c3dcad1b-1380-4a94-98d8-3f8272f19df6，兩者皆分頁列完。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Juan Luis Guerra；Juan Luis Guerra 4.40；Juan Luis Guerra 440；Fogaraté；Fogarate",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Juan Gabriel",
+  "album": "El alma joven",
+  "year": 1971,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "RCA Victor（catno MKS-2075，MX）",
+  "why": "Juan Gabriel 的首張專輯，1971 年由 RCA Victor 在墨西哥發行，之後還有掛 II、III 的兩集續作。池中這位藝人現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Juan Gabriel en el Palacio de Bellas Artes》(1990，王牌 hall)、《Recuerdos II》(1984)，另有 Rocío Dúrcal 唱他作品的《Canta a Juan Gabriel, Vol. 2》(1978)。池中兩張都在 1984 年之後，出道那十幾年完全空白，本張是那條線的起點。MB release 端點實查：1971 MX（Official，未記編號）為首發，另有 1976 MX RCA Victor MKS-2075、1996-01-01 US、2010-02-10 XW RCA 三筆再發，全部 Official。",
+  "risk": "系列同名是本張最大的坑：MB 名下有 1117c8d1《El alma joven》(1971)、1eb2e62a《Juan Gabriel (El alma joven, II)》(1972)、c9feec84《El alma joven, volumen III》(1973) 三筆，後兩筆的盤名都完整包含本張，子字串比對會全數誤配（裁定第 162 條的鏡像）。年份兩說：MB first-release-date 記 1971，Apple us collectionId 404399171「El Alma Joven」/Juan Gabriel 記 1996（那是美國再發年）；卡單取 1971，Apple 日期只當訊號（裁定第 77 條）。掛名寫法查過 Juan Gabriel、Alberto Aguilera Valadez、Juanga 三種。大小寫兩套：MB 作「El alma joven」（小寫 a、j），Apple 作「El Alma Joven」。Juan Gabriel 名下 MB 有 100 個 release-group，一律分頁（裁定第 116 條）。cu 店面回 HTTP 400。封面與固定試聽走 us 404399171，但要注意那是 1996 年美國版、與 1971 原盤不同版，上架時要在備註標明。",
+  "mbNote": "釘 release-group 1117c8d1-2551-3528-a5e1-3feed46ea802。回問確認：title「El alma joven」、artist-credit「Juan Gabriel」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 4 個 release（MX／Official×2、US／Official、XW／Official）。刻意不釘：1eb2e62a-056e-49ad-9387-47568baa0b1c《Juan Gabriel (El alma joven, II)》(1972)、c9feec84-91f9-3a9c-a3b1-5bb23ba5af53《El alma joven, volumen III》(1973)（兩筆盤名都包含本張）、21ffb6f4-5441-38f1-bc64-9482eaad8a5f《Recuerdos II》(池中已有)、b1317f1a-0f48-3189-8069-880292c65234《Recuerdos》(1980)。藝人 MBID bc9b7500-0afc-41ba-a056-b0bc81669702，名下 100 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alberto Aguilera Valadez；Juanga；El Alma Joven；Juan Gabriel",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Juan Gabriel",
+  "album": "Siempre en mi mente",
+  "year": 1977,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Arcano Records（catno DKL1-3388，MX）／RCA Victor（catno MKS-2115，MX）",
+  "why": "Juan Gabriel 1977 年的專輯，同名主打是他最常被翻唱的作品之一，屬他 1970 年代中後段從新人變成墨西哥主流歌手的那一段。池中這位藝人現有 2 張（實掃 seed_cards.json 全 14,424 列）：《Juan Gabriel en el Palacio de Bellas Artes》(1990)、《Recuerdos II》(1984)。本張與同批的《El alma joven》(1971) 一起把他 1971–1984 之間十三年的空白補上兩格。MB release 端點實查：1977 MX Arcano Records DKL1-3388 為首發（Official），另有 1978-07-30 MX RCA／RCA Victor MKS-2115、1996 MX BMG、一筆 XW RCA，共 4 筆全部 Official。",
+  "risk": "年份兩說：MB first-release-date 記 1977（Arcano 原盤），MB 轄下另一筆 RCA release 記 1978-07-30，Apple us collectionId 254859685「Siempre en Mi Mente」/Juan Gabriel 記 1978；卡單取 MB release-group 的 1977。大小寫兩套：MB 作「Siempre en mi mente」（小寫），Apple 作「Siempre en Mi Mente」。MB 名下另有 1f0e6166《Siempre estoy pensando en ti》(1978 合輯) 是盤名以 Siempre 開頭的假陽性。掛名寫法查過 Juan Gabriel、Alberto Aguilera Valadez、Juanga 三種；另注意池中有 Rocío Dúrcal《Canta a Juan Gabriel, Vol. 2》，盤名含他的名字、`artist:` 字串查詢會撈到（裁定第 20 條）。Juan Gabriel 名下 100 個 release-group，一律分頁。cu 店面回 HTTP 400。封面與固定試聽走 us 254859685。",
+  "mbNote": "釘 release-group aab708fe-289e-4a5f-973d-62cdc6f64998。回問確認：title「Siempre en mi mente」、artist-credit「Juan Gabriel」、first-release-date 1977、primary-type Album、secondary-types 空、轄下 4 個 release（MX／Official×3 Arcano DKL1-3388、BMG、RCA Victor MKS-2115；XW／Official RCA）。刻意不釘：1f0e6166-824b-4f96-a5ac-2bc63d3c6909《Siempre estoy pensando en ti》(1978 合輯，盤名同以 Siempre 開頭)、1117c8d1-2551-3528-a5e1-3feed46ea802《El alma joven》(本批另一張)、21ffb6f4-5441-38f1-bc64-9482eaad8a5f《Recuerdos II》(池中已有)、1022a666-45d7-4f5a-a507-33462250abd6《Te llegará mi olvido》(1977 同年)。藝人 MBID bc9b7500-0afc-41ba-a056-b0bc81669702，名下 100 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Alberto Aguilera Valadez；Juanga；Siempre en Mi Mente；Juan Gabriel",
+  "reissuedBy": "",
+  "g": "b"
  }
 ]
