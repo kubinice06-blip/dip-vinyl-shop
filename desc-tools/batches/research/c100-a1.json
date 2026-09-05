@@ -86,5 +86,407 @@
   "status": "full",
   "yearVerified": "三個數字要分開講。(1) MB release-group 的 first-release-date 是 **1991**，與 Discogs release 10056913 的 year 1991 一致，指的是 RCA Victor Gold Seal 把兩首收進同一張 CD（GD60298／60298-2-RG，Arturo Toscanini Collection）的那一次整編。(2) **原始錄音年是 1949 與 1946**：Discogs 說明欄寫「Recorded: December 5, 1949 (1 to 5) and April 8, 1946 (6) at Carnegie Hall」；Apple 那一筆的 ℗ 年份是 1949，對應《曼弗雷德》那一段。**⚠ Discogs 的軌號標註本身有瑕疵**——該 CD 只有 5 軌（曼弗雷德 4＋序曲 1），說明欄卻寫成「1 to 5」與「(6)」，這是把曲目表上那個沒有編號的作品標題列一起數進去的結果；照曲目表對位，1949-12-05 對應《曼弗雷德》、1946-04-08 對應《羅密歐與茱麗葉》。**行文若要引用日期，只能寫「兩首錄於 1949 年 12 月 5 日與 1946 年 4 月 8 日、同在 Carnegie Hall」，不得指名哪一首配哪一天**，除非另有來源。(3) **卡單的 1991 是 CD 整編年，不是原盤年也不是錄音年**；1946／1949 兩段錄音當年是分別以 78 轉與 LP 發行的，MB 上這個 release-group 底下只有 1991 那一筆，沒有更早的 release 可以當原盤年（第 95 條「MB 只建了重發那一筆」的形狀）。**行文不得把 1991 當演出年**（第 18／46 條）。",
   "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=316591&entity=album&limit=200&country=jp 撈到 collectionId **1216431103**，再以 lookup?id=1216431103&entity=song 覆核：5 軌、曲名與曲序與 MB 逐軌相同、五軌皆有 previewUrl、逐軌時長與 MB 相差不到 1%。逐店面覆核 **gb／us／de／fr／at／it／jp 七店全有**（藝人頁只在 jp 列出它，是因為其他店面把這張的 artistName 排在別的實體名下）。建議探測檔補：ready／gb／1216431103／5 軌。\n**⚠ 最重要的一項：Apple 上有兩張長得幾乎一樣的碟，只有一張是本盤。** 策展層 risk 已經列了 447412359「Tchaikovsky: Manfred - Romeo and Juliet (Toscanini) (1953)」，但把它描述成「兩筆曲目相同但整編方不同」——**不成立**。逐軌對時長之後：447412359 是 **Music and Arts 從 1953 年的另一次演出做的**，第一樂章 882.0 秒（本盤 918.4）、第三樂章 593.2（本盤 628.1）、序曲 1171.1（本盤 1088.9），**五軌沒有一軌對得上**。它的標題自己就寫著 (1953)，而本盤釘的 RCA 母帶是 1949／1946。**固定試聽與封面一律只能用 1216431103，不得用 447412359。**\n**擋下策展層說法（兩處，其中一處與來源相反）**：\n1. curatorWhy 稱「是 Toscanini 少數把整首《曼弗雷德》錄完的曲目（他在音樂會上通常只演其中兩個樂章）」——**與來源相反**。英文維基〈Manfred Symphony〉明寫他演出與錄音本曲時「made changes in Manfred's score ... including a number of cuts」，也就是**這份錄音本身就不是全譜**。至於「音樂會上通常只演兩個樂章」查不到任何來源；維基那句「one of only two Tchaikovsky symphonies ... that he ever programmed」講的是**他只排過兩首柴可夫斯基交響曲**（另一首是《悲愴》），不是「只演兩個樂章」——這看起來就是把那個「two」讀錯了。**行文不得寫「錄完整首」，也不得寫「只演兩個樂章」。**\n2. curatorWhy 稱「是《曼弗雷德》在唱片史上最早的完整商業錄音之一」——沒有來源，且與第 1 點直接衝突（有刪節就談不上「完整」）。**擋下。**\n**查證通過可以寫的**：維基原話「Toscanini 認為《曼弗雷德》是柴可夫斯基最好的作品，而且是他唯一排演過的兩首柴可夫斯基交響曲之一（另一首是《悲愴》）」——這一句有來源、也比策展層原本那句有力。\n盤名：MB 作「Manfred Symphony / Romeo & Juliet」、卡片作「…Manfred Symphony / Romeo and Juliet」並補作曲家前綴，Apple 作「Tchaikovsky: Manfred Symphony, Op. 58 & Romeo and Juliet, TH 42」——**「&」／「and」／作曲家前綴三處差異同時發生**，去重與查詢都要三種一起掃（第 91 條）。"
+ },
+ {
+  "key": "desc2:Artur Schnabel|The Complete Schubert Recordings",
+  "artist": "Artur Schnabel",
+  "album": "The Complete Schubert Recordings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6e629685 的欄位：title「The Complete Schubert Recordings」、artist-credit「Artur Schnabel, Franz Schubert」（演奏者在前）、first-release-date 2005、primary-type Album、secondary-types 空陣列、轄下 1 個 release（US 2005、Music & Arts CD-1175(5)、status Official）。該 release 是 5 片裝，逐片軌數 10／10／8／15／8，合計 51 軌。",
+    "src": "https://musicbrainz.org/release-group/6e629685-5d65-4213-9135-30a03f1c6780"
+   },
+   {
+    "f": "Discogs release 17829199 的欄位：title 直接印成「Complete Schubert Recordings 1932 - 1950」、廠牌 Music And Arts Programs Of America, Inc.、編號 CD-1175(5)、year 2005。曲目表**逐曲標了錄音年**：CD1 即興曲 D.899（1950）、即興曲 D.935（1950）、Allegretto D.915（1939）、March D.606（1939）；CD2《樂興之時》D.780（1937）、鋼琴奏鳴曲 D.850（1939）；CD3 奏鳴曲 D.959（1937）、D.960（1939）；CD4《鱒魚》五重奏 D.667（1935，與 Pro Arte 四重奏成員及低音提琴 C. Hobday）、藝術歌曲（1932，與女低音 Theresa Behr-Schnabel）、《軍隊進行曲》D.733（1937，與鋼琴 Karl Ulrich Schnabel）；CD5 匈牙利嬉遊曲 D.818 與 D.819／D.823／D.947／D.951 全部 1937（四手聯彈曲目與 Karl Ulrich Schnabel）。另註：盒背編號印 CD-1175(5)、書脊卻印 CD-1173。",
+    "src": "https://api.discogs.com/releases/17829199"
+   },
+   {
+    "f": "英文維基〈Artur Schnabel〉記：樂評 Harold C. Schonberg 稱他是「the man who invented Beethoven」；1932 至 1935 年間他做出史上第一套貝多芬鋼琴奏鳴曲全集錄音（為英國 HMV），2018 年 3 月美國國會圖書館把這套錄音選入 National Recording Registry（當年入選的 25 筆之一）。同條目另記他「was known for championing the then-neglected sonatas of Schubert and, even more so, Beethoven」，並記拉赫瑪尼諾夫據說稱他為「the great adagio pianist」。",
+    "src": "https://en.wikipedia.org/wiki/Artur_Schnabel"
+   },
+   {
+    "f": "同一條目記：他 1951 年 8 月因尿毒症病逝於瑞士 Axenstein，享年 69，葬於 Schwyz；戰後他再也沒有回過德國或奧地利。他母親 Ernestine Taube 1942 年 8 月以 83 歲之齡自維也納被遣送到 Theresienstadt 集中營，兩個月後死於營中。",
+    "src": "https://en.wikipedia.org/wiki/Artur_Schnabel"
+   },
+   {
+    "f": "Apple Music collectionId 1425085126 的 lookup 欄位：collectionName「Schubert: Piano Works, Trout Quintet, Lieder」、artistName「Therese Behr-Schnabel, Artur Schnabel & Pro Arte Quartet」、releaseDate 2018-08-24、trackCount 51、copyright「℗ 2018 This compilation Parlophone Records Limited, a Warner Music Group Company」；51 軌全部帶 previewUrl，曲目與 MB 那一筆的 51 軌逐曲相同（只是分組次序不同：Apple 把獨奏、四手聯彈、五重奏、藝術歌曲各自集中，MB／Music & Arts 依五片分卷）。逐軌時長與 MB 前三片幾乎逐毫秒相同——例如 D.899 第一首 543.6 秒對 543573 毫秒、《樂興之時》第五首 76.1 秒對 76146 毫秒。gb／us／de／fr／at／it／jp 七店全部查得到。",
+    "src": "https://itunes.apple.com/lookup?id=1425085126&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "MB 該 release 的曲目表顯示這套的四手聯彈與室內樂佔了整整兩片：CD4 是《鱒魚》五重奏五個樂章＋七首藝術歌曲（〈Der Doppelgänger〉〈Die Stadt〉〈Gruppe aus dem Tartarus〉〈Der Kreuzzug〉〈An die Laute〉〈Der Musensohn〉〈Erlkönig〉）＋三首《軍隊進行曲》；CD5 全部是四手聯彈（匈牙利嬉遊曲三段、兩首大進行曲、Andantino varié、〈Lebensstürme〉、A 大調輪旋曲）。**獨奏曲目只佔前三片。**",
+    "src": "https://musicbrainz.org/release/12d94f8b-5e40-4516-a99d-64647fb31979"
+   }
+  ],
+  "hookCandidates": [
+   "同一位鋼琴家的舒伯特全部錄音，最早的 1932 年、最晚的 1950 年",
+   "五片裡有兩片不是獨奏——四手聯彈的搭檔是他兒子，藝術歌曲的歌手是他太太"
+  ],
+  "sound": "Apple 1425085126 的 51 軌逐軌時長顯示這套的內部落差極大：最短的〈6 Moments musicaux, D. 780: No. 5〉只有 76.1 秒，最長的〈Piano Sonata No. 21 in B-Flat Major, D. 960: I. Molto moderato〉是 831.8 秒——**同一套裡最長與最短的一軌差了十一倍**。三首晚期奏鳴曲的第一樂章分別是 508.5（D.850）、675.1（D.959）、831.8（D.960）秒，一首比一首長；八首即興曲落在 253.4 到 602.8 秒之間；七首藝術歌曲全部在 119.5 到 302.3 秒之間，是這套裡唯一整組都短的區塊（Apple lookup 曲長欄；MB 前三片的毫秒值與 Apple 幾乎逐軌相同，第四、五片 MB 只填到整千毫秒，是估值，不採）。",
+  "keyTracks": [
+   "Piano Sonata No. 21 in B-Flat Major, D. 960",
+   "4 Impromptus, D. 899",
+   "Piano Quintet in A Major, D. 667, \"The Trout\""
+  ],
+  "status": "full",
+  "yearVerified": "三個數字要分開講。(1) MB release-group 的 first-release-date 是 **2005**，與 Discogs release 17829199 的 year 2005 一致，指的是 Music & Arts 把這批錄音整編成五片裝（CD-1175(5)）的那一次。(2) **原始錄音年是 1932–1950**，而且有逐曲的來源：Discogs 曲目表在每一項後面直接標年——1932（藝術歌曲）、1935（《鱒魚》五重奏）、1937（《樂興之時》、D.959、四手聯彈全部、軍隊進行曲）、1939（Allegretto D.915、March D.606、D.850、D.960）、1950（兩組即興曲）。Discogs 的盤名本身就印成「Complete Schubert Recordings 1932 - 1950」。(3) **卡單的 2005 是整編年**，不是原盤發行年也不是錄音年；這批錄音當年是 HMV 的 78 轉單張，MB 上這個 release-group 底下只有 2005 那一筆，沒有更早的 release 可以當原盤年（第 95 條的形狀）。**行文一律以「1932 到 1950 年間的錄音」為錨點，不得斷言發行年、也不得把 2005 當演奏年**（第 18／46 條）。附帶：Apple 那一筆的 releaseDate 2018-08-24 與 ℗2018 是 Warner／Parlophone 這一次數位整編的日期，**第三個與錄音無關的年份**，更不能用。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=507378&entity=album&limit=200&country=<store>（Artur Schnabel，gb 回 159 筆、us 95 筆）後，用**軌數**而不是盤名去比對，撈到 collectionId **1425085126**（51 軌，與 MB 那一筆的 10+10+8+15+8=51 完全相同），再以 lookup?id=1425085126&entity=song 覆核：51 軌全部有 previewUrl、曲目逐曲相同、前三片的時長與 MB 幾乎逐毫秒相同。逐店面實測 **gb／us／de／fr／at／it／jp 七店全有**。落空的原因是盤名完全不同——Apple 作《Schubert: Piano Works, Trout Quintet, Lieder》，卡單作《The Complete Schubert Recordings》，**兩個字串零重疊**；而且 Apple 的 artistName 是「Therese Behr-Schnabel, Artur Schnabel & Pro Arte Quartet」，**藝人閘的子字串比對雖然過得了（含 Artur Schnabel），但盤名閘一定擋**。建議探測檔補：ready／gb／1425085126／51 軌。\n**⚠ 這是「同內容、不同發行方」的配對，上架備註要寫明**：卡片釘的是 Music & Arts CD-1175(5)（美國考古廠牌，2005），Apple 那一筆是 Warner／Parlophone 2018 年的數位整編。兩者的母帶來源同樣是 HMV 的 78 轉，曲目與時長對得上，但**不是同一次出版**。策展層 risk 提到的 gb 457923459「Various Artists — Schubert Recordings (Complete) (Schnabel) (1932-1950)」在藝人頁目錄裡查不到（因為掛 Various Artists），**盤名雖然更接近卡單，但沒有實測過曲目，不建議採用**；1425085126 是實測過 51 軌全數帶 preview 的那一筆。\n**曲目編號兩套並存，行文要小心**：Discogs 用舊編號（D.850 記為「Piano Sonata No. 18」、D.959 記為「No. 21」、D.960 記為「No. 22」），MB 與 Apple 用新編號（D.850 = No. 17、D.959 = No. 20、D.960 = No. 21）。**行文一律用 D 編號，不要用序數**，否則同一首曲子會出現兩個號。\n**查證通過可以寫的**：〈他做出史上第一套貝多芬鋼琴奏鳴曲全集錄音，1932–35 年為 HMV 完成〉有維基來源；〈2018 年入選美國國會圖書館 National Recording Registry〉有維基引註國會圖書館頁面。**但注意這兩件事講的是貝多芬那套、不是本張**，行文要能分辨（本批第 4 張是他的貝多芬協奏曲集，池中另有他的貝多芬奏鳴曲全集）。\n**擋下策展層說法（兩處，都無來源）**：\n1. curatorWhy 稱「他同時也是把舒伯特晚期奏鳴曲從冷門曲目推回音樂會核心的人」——維基只寫到他「championing the then-neglected sonatas of Schubert」，**沒有寫「推回音樂會核心」這個結果**。可以寫「他推廣當時乏人問津的舒伯特奏鳴曲」，**不得寫成他改變了曲目地位**。\n2. curatorWhy 稱「他錄的 D. 960、D. 850 與《樂興之時》在唱片史上都是最早的一批」——**查不到來源**。Discogs 與維基都沒有這類「最早」的陳述。**擋下這個時序主張。**\n掛名拼法：MB 主 artist 用「Artur Schnabel」（MBID 3b3d28fa），但 MB 另有 release-group a193e4d7 用「Arthur Schnabel」拼法，Apple 上也有 967737962「Arthur Schnabel - …」與 822022087「Schanbel plays Schubert」（**Schanbel，字母顛倒的錯拼**）。**三種拼法都要進去重掃描。**"
+ },
+ {
+  "key": "desc2:Artur Schnabel|Schnabel Plays the Beethoven Piano Concertos",
+  "artist": "Artur Schnabel",
+  "album": "Schnabel Plays the Beethoven Piano Concertos",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5be34956 的欄位：title「Schnabel Plays the Beethoven Piano Concertos」、artist-credit「Beethoven; Artur Schnabel, Sir Malcolm Sargent, London Symphony Orchestra, London Philharmonic Orchestra, Izler Solomon, Columbus Symphony Orchestra」、first-release-date 1993、primary-type **Album**、secondary-types **[\"Compilation\"]**、轄下 1 個 release（GB 1993、Pearl GEMM CDS 9063、status Official）。該 release 是 3 片裝，逐片軌數 8／7／6，合計 21 軌。",
+    "src": "https://musicbrainz.org/release-group/5be34956-e1ee-4dd2-a501-703920b88f22"
+   },
+   {
+    "f": "MB 該 release 的曲目表：CD1＝第一號協奏曲三個樂章（1011／745／518 秒）＋〈Für Elise〉（180 秒）＋第二號三個樂章（803／551／333 秒）＋〈Bagatelle op. 126 no. 4 in B minor〉（219 秒）；CD2＝第三號三個樂章（900／639／475 秒）＋〈Rondo in C, op. 51 no. 1〉（280 秒）＋第四號三個樂章（1048／290／546 秒）；CD3＝第五號《皇帝》三個樂章（1143／492／555 秒）＋**第四號協奏曲的第二個版本**（1081／347／566 秒）。也就是說這套三片裡有兩份第四號協奏曲。",
+    "src": "https://musicbrainz.org/release/fce549c0-f58b-4f54-a1c1-d5d022472027"
+   },
+   {
+    "f": "Discogs release 12834715（Pearl GEMM CDS 9063，1993，CD／Compilation／Mono，德國壓片）的曲目表逐曲掛出指揮與樂團：第一號 Sargent／London Symphony Orchestra、第二號 Sargent／London Philharmonic Orchestra、第三號 Sargent／London Philharmonic Orchestra、第四號 Sargent／London Philharmonic Orchestra、第五號《皇帝》Sargent／London Symphony Orchestra、**第二份第四號 Izler Solomon／The Columbus Philharmonic Orchestra**。三片總長 73'18\"／70'04\"／70'04\"，穿插的小品是〈Für Elise〉3:00、〈Bagatelle Op. 126 No. 4〉3:39、〈Rondo In C, Op. 51 No. 1〉4:40。說明欄未標任何錄音年。",
+    "src": "https://api.discogs.com/releases/12834715"
+   },
+   {
+    "f": "英文維基〈Artur Schnabel〉的正文寫「He also recorded all the Beethoven piano concertos.」；條目側欄的外部連結說明則寫得更細：可在 archive.org 聽他「performing Beethoven's Piano Concertos No. 1-3 with Malcolm Sargent conducting two London orchestras in 1932-35 and Beethoven's Piano Concertos No. 4 & 5 with Frederick Stock conducting the Chicago Symphony Orchestra in 1942」。同條目記他 1932–1935 年為 HMV 完成史上第一套貝多芬鋼琴奏鳴曲全集，2018 年入選美國國會圖書館 National Recording Registry。",
+    "src": "https://en.wikipedia.org/wiki/Artur_Schnabel"
+   },
+   {
+    "f": "Apple Music 上這套 Pearl 三片裝沒有對應條目，但**同一批 Sargent 母帶被 Naxos Historical 切成兩張上架、且逐軌時長與 Pearl 對得上**：collectionId 192264338「Beethoven: Piano Concertos Nos. 1 and 2」（Artur Schnabel, London Philharmonic Orchestra, London Symphony Orchestra & Sir Malcolm Sargent，℗ 2001 Naxos，7 軌）逐軌 1015.1／744.8／523.1／805.7／550.9／339.5／182.6 秒，對應 Pearl CD1 的 1011／745／518／803／551／333／180；collectionId 192266789「Beethoven: Piano Concertos Nos. 3 and 4」（℗ 2001 Naxos，7 軌）逐軌 908.0／645.4／481.1／1055.4／289.2／554.3／282.1 秒，對應 Pearl CD2 的 900／639／475／1048／290／546／280。兩筆都是 14 軌全帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=192264338&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "Apple 上另有 Schnabel 戰後在 Philharmonia 重錄的同一批協奏曲，班底完全不同：829034978「Beethoven: Piano Concerto No. 4 in G Major (Mono Version)」掛 Philharmonia Orchestra／Issay Dobrowen、959771953「Concerto pour piano No. 3」同樣掛 Philharmonia／Dobrowen、829053255「Concerto pour piano No. 5 (Recorded 1947, Mono Version)」掛 Philharmonia／Alceo Galliera。**這批與 Pearl 那套（Sargent／倫敦兩團）不是同一份錄音。**",
+    "src": "https://itunes.apple.com/search?term=Schnabel%20Beethoven%20Piano%20Concertos&entity=album&limit=50&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "三片的協奏曲全集裡，第四號出現了兩次——兩次的指揮與樂團都不同",
+   "五首協奏曲之間塞了三首小品，最短的一首三分鐘"
+  ],
+  "sound": "MB 該 release 的 21 軌毫秒值顯示兩份第四號協奏曲的差別就在時長上：CD2 那一份（Sargent／London Philharmonic）三個樂章是 1048／290／546 秒，CD3 那一份（Izler Solomon／Columbus）是 1081／347／566 秒——**第二樂章差了 57 秒、將近兩成**。整套最長的一軌是《皇帝》第一樂章 1143 秒（19:03），最短的是〈Für Elise〉180 秒；Discogs 給的三片總長 73'18\"／70'04\"／70'04\" 與逐軌加總相符。**行文引用時長只能用 MB／Discogs 這兩組原盤數字，不得拿 Apple 的 Naxos 分卷來代表本套**（那是另一次出版的另一種切法）。",
+  "keyTracks": [
+   "Concerto no. 5 in Eb \"Emperor\", op. 73",
+   "Concerto no. 4 in G, op. 58",
+   "Für Elise"
+  ],
+  "status": "full",
+  "yearVerified": "三個數字要分開講。(1) MB release-group 的 first-release-date 是 **1993**，與 Discogs release 12834715 的 year 1993 一致，指的是英國考古廠牌 Pearl 把五首協奏曲收成三片（GEMM CDS 9063）的那一次整編。(2) **原始錄音年查不到直接來源，卡單／策展層寫的「1932–1947」沒有出處**。實查結果：Pearl 的 Discogs 條目說明欄與曲目表**完全沒有標任何錄音年**；MB 該 release 也沒有；英文維基能給的只有兩個點——第一至三號是 Sargent 指揮兩個倫敦樂團、1932-35 年錄的，而第四、五號的另一份是 1942 年 Frederick Stock／芝加哥交響（**那一份不在本套裡**，本套的第五號掛 Sargent／LSO）。**行文不得寫「1932–1947」這個區間**，只能寫維基支持的「1932 至 1935 年間與 Sargent 錄下前三號」，其餘各首的年份留白。(3) **卡單的 1993 是整編年**，不是原盤年也不是錄音年（第 18／46 條）。\n**另記一項與型別有關的**：MB 的 secondary-types 是 [\"Compilation\"]、primary-type 是 Album，依 §5.6 明文與裁定第 167 條，**照一般 Album 寫、releaseType 填 Album、例外欄位留空**。",
+  "notes": "**試聽維持 unavailable，但這一次是查得徹底之後的 unavailable。** 走藝人頁目錄端點 lookup?id=507378&entity=album&limit=200&country=<store> 逐店面列完 Artur Schnabel 的全部目錄（gb 159／us 95／de 158／fr 158／at 159／it 159／jp 160 筆），再以 search 端點用「Schnabel Beethoven Piano Concertos」補查七店，**沒有任何一筆是 21 軌的 Pearl 三片裝**。七個店面（gb／us／de／fr／at／it／jp）全數落空。\n**但落空的同時抓到一件有用的事：同一批母帶在 Apple 上是被 Naxos 切成分卷上架的。** 192264338（Nos. 1 & 2，7 軌）與 192266789（Nos. 3 & 4，7 軌）逐軌時長與 Pearl CD1／CD2 對得上（最大差 8 秒，全部在 1% 內），14 軌都有 previewUrl。**這兩筆不能當本卡的固定試聽**——依第 87 條「分卷不是一張碟」、以及本卡釘的是 Pearl 那一次三片整編；但它們證明了「查無」的是**這一次出版**，不是這些錄音。若日後要走 §4 的人工核對路線，這兩個 collectionId 是唯一有時長證據的候選，缺的是《皇帝》與 Solomon 那份第四號。\n**⚠ 同一位鋼琴家同一批曲子有兩套完全不同的錄音，Apple 上兩套都在，非常容易配錯**：本套是 **Sargent／倫敦交響＋倫敦愛樂**（1930 年代）；Apple 上另有 **Philharmonia／Issay Dobrowen（第三、四號）與 Alceo Galliera（第五號，標明 Recorded 1947）** 的戰後重錄（829034978／959771953／829053255）。**這兩套不得混用**，這正是本批派工信講的「同一位演奏家同一首曲子錄過三四次」的實例。策展層 risk 列的三筆（192266789／72794667／525678270）裡，**192266789 是 Sargent 那一套（可用作對照）、72794667 掛 Various Artists、525678270 只有 5 軌且把第四號的二三樂章併成一軌**，三筆都不是本套。\n**這套裡有兩份第四號協奏曲，這件事本身要寫進下游備註**：Discogs 曲目表明列 CD3 的第二份第四號是 **Izler Solomon 指揮 The Columbus Philharmonic Orchestra**，而 MB 的 artist-credit 把樂團寫成 **Columbus Symphony Orchestra**——**兩邊的樂團名不一樣**，行文若要提這個樂團，兩種寫法都要註明或整條避開。\n**擋下策展層說法（三處）**：\n1. curatorWhy 稱「Schnabel 1932–1947 年錄下的貝多芬五首鋼琴協奏曲」——**錄音年區間無來源**（見 yearVerified）。擋下這個區間。\n2. curatorWhy 稱「HMV 當年為 Schnabel 開的貝多芬錄音案同時涵蓋奏鳴曲全集與協奏曲全集，池中只收了前者」——**「同一個計畫的兩半」這個說法查不到來源**；維基只寫「He also recorded all the Beethoven piano concertos」，沒有把兩者說成同一個案子。**行文不得把兩套寫成同一個錄音計畫。**\n3. curatorRisk 稱三筆 Naxos 條目「全部是分張或部分曲目的再發」——其中 **192266789 已實測與 Pearl CD2 逐軌相符**，這句本身沒錯但不夠：它其實是**同一份母帶**，不只是「部分曲目」。\n**查證通過可以寫的**：〈第一至三號是 Sargent 指揮兩個倫敦樂團、1932-35 年錄的〉（維基）、〈這套裡第四號出現兩次、第二份的指揮與樂團都不同〉（Discogs 曲目表＋MB 時長）、〈Schnabel 是史上第一套貝多芬奏鳴曲全集錄音的完成者〉（維基，但那是另一套碟）。"
+ },
+ {
+  "key": "desc2:Alfred Cortot|Victor Recordings of 1919-1926",
+  "artist": "Alfred Cortot",
+  "album": "Victor Recordings of 1919-1926",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d007350e 的欄位：title「Victor Recordings of 1919-1926」、artist-credit「Alfred Cortot, Chopin, Weber, Schubert, Debussy, Ravel, Saint-Saëns, Brahms」（演奏者排最前、其後七位作曲家）、first-release-date 1989、primary-type Album、secondary-types 空陣列、轄下 1 個 release（GB 1989、Pearl GEMM CD 9386、status Official、單片 17 軌）。",
+    "src": "https://musicbrainz.org/release-group/d007350e-6db7-4fbd-9b6a-2a2012a987be"
+   },
+   {
+    "f": "Discogs release 16575117（Pearl GEMM CD 9386，1989，CD／Compilation／Mono）的曲目表逐軌掛作曲者：1 Litany（Schubert）／2 Invitation To The Waltz, Op. 65（Weber）／3–4 Grande Polonaise Brillante, Op. 22（兩軌，Discogs 把第 3 軌的作曲者誤掛成 Weber、第 4 軌掛 Chopin）／5 Etude In A Flat, Op. 25/1／6 Valse In C Sharp, Op. 64/2／7 Etude In A Minor, Op. 25/11／8 Impromptu In A Flat, Op. 29／9 Impromptu In F Sharp／10 Ballade In G Minor, Op. 23／11「My Joys」(Chant Polonais, Op. 74/12)／12 Berceuse Op. 57（5–12 全部 Chopin）／13 Bourrée For Left Hand, Op. 135 與 14 Etude En Forme de Valse, Op. 52/6（Saint-Saëns）／15 (a) La Fille Aux Cheveux de Lin ／ (b) Minstrels（Debussy，兩曲併一軌）／16 Jeux D'Eau（Ravel）／17 Wiegenlied, Op. 49/4（Brahms）。說明欄空白，沒有標任何錄音日期。",
+    "src": "https://api.discogs.com/releases/16575117"
+   },
+   {
+    "f": "英文維基〈Alfred Cortot〉記：**1925 年 3 月 21 日，Cortot 在美國新澤西州 Camden 為 Victor Talking Machine Company 錄下史上第一份古典音樂的商業電氣錄音**，曲目是蕭邦的即興曲與舒伯特的〈Litanei〉，以 Victor 的 Red Seal 標籤發行（引註 Jacques Chailley《40,000 Years of Music》）。",
+    "src": "https://en.wikipedia.org/wiki/Alfred_Cortot"
+   },
+   {
+    "f": "同一條目記：Cortot 1877 年 9 月 26 日生於瑞士法語區 Nyon，父親法國人、母親瑞士人，國籍是法國；作曲家 Edgard Varèse 是他的表親。他在巴黎音樂院師從蕭邦的學生 Émile Decombes 與 Louis Diémer，1896 年取得 premier prix，1897 年在 Concerts Colonne 首度登台演貝多芬第三號鋼琴協奏曲。1919 年他創辦巴黎高等音樂師範學院（École Normale de Musique de Paris）。同條目另記他錄下的李斯特 B 小調奏鳴曲是**該曲有史以來第一份錄音**，而他錄的聖桑〈Etude en forme de valse〉讓 Horowitz 印象深刻到跑來問他訣竅、他沒有告訴對方。",
+    "src": "https://en.wikipedia.org/wiki/Alfred_Cortot"
+   },
+   {
+    "f": "同一條目記：二戰期間 Cortot 出任維琪政府的藝術「Haut-Commissaire」，1941 與 1942 兩度擔任維琪 Conseil national 成員，1941 年參加巴黎的 Propaganda Staffel 音樂節、1942 年與 Wilhelm Kempff 一起在納粹御用雕刻家 Arno Breker 的展覽上演出。戰後法國政府的審查小組認定他與敵人合作，**停演一年**；停演期滿後他恢復到一季超過一百場音樂會。同條目也記他曾在 1943 年反對音樂家被徵入強制勞動役、1943 年 5 月成功讓二十名音樂家俘虜獲釋、並幫助被捕的波蘭女高音 Marya Freund 轉院而得以倖存。",
+    "src": "https://en.wikipedia.org/wiki/Alfred_Cortot"
+   },
+   {
+    "f": "MB 該 release 的 17 軌毫秒值：200000／245693／391600／283640／124560／176306／215266／216826／266000／484106／207826／270066／172266／249306／201600／264160／157173。最長的一軌是〈Ballade in G minor, Op. 23〉484106 毫秒（8:04），最短的是〈Etude in A flat, Op. 25/1〉124560 毫秒（2:05）；十七軌裡有十三軌在四分半以內，是 78 轉單面的長度上限所決定的。",
+    "src": "https://musicbrainz.org/release/70fb1892-b640-4af2-a73f-a89c55ade6f1"
+   }
+  ],
+  "hookCandidates": [
+   "這張碟收的年代裡，有一天他錄下了古典音樂史上第一份商業電氣錄音",
+   "十七軌裡十三軌不到四分半——78 轉單面能刻多久，曲目就多長"
+  ],
+  "sound": "MB 該 release 的 17 軌毫秒值換算：〈Litany〉200.0 秒、〈Invitation to the Waltz〉245.7、〈Grande Polonaise Brillante〉分成 391.6 與 283.6 兩軌、〈Etude op. 25/1〉124.6、〈Valse op. 64/2〉176.3、〈Etude op. 25/11〉215.3、〈Impromptu op. 29〉216.8、〈Impromptu in F sharp〉266.0、〈Ballade op. 23〉484.1、〈My Joys〉207.8、〈Berceuse op. 57〉270.1、〈Bourrée for Left Hand〉172.3、〈Etude en forme de valse〉249.3、〈La fille aux cheveux de lin／Minstrels〉201.6、〈Jeux d'eau〉264.2、〈Wiegenlied〉157.2。**唯一超過八分鐘的是那首敘事曲，而它與蕭邦的〈波蘭舞曲〉都是被切成兩面刻的**——後者在曲目表上直接留成兩軌（391.6＋283.6 秒），前者沒有。整張碟的中位數落在四分鐘出頭（MB release 曲長欄；Discogs 該筆未填時長）。",
+  "keyTracks": [
+   "Ballade in G minor, Op. 23",
+   "Jeux d'eau",
+   "Etude en forme de valse, Op. 52/6"
+  ],
+  "status": "full",
+  "yearVerified": "三個數字要分開講。(1) MB release-group 的 first-release-date 是 **1989**，與 Discogs release 16575117 的 year 1989 一致，指的是英國考古廠牌 Pearl 出這張 CD（GEMM CD 9386）的那一次整編。(2) **原始錄音年寫在盤名裡：1919–1926**，這是 Cortot 為美國 Victor 灌錄的那一段；**逐軌的錄音日期查不到**——Pearl 的 Discogs 條目說明欄空白、曲目表也沒有標年，MB 該 release 同樣沒有。可以掛鉤的唯一確切日期是維基給的 **1925 年 3 月 21 日**（Camden，Victor，第一份古典電氣錄音，曲目是蕭邦即興曲與舒伯特〈Litanei〉）——**這張碟的曲目表上第 1 軌就是〈Litany〉、第 8／9 軌就是兩首即興曲，落在 1919–1926 這個區間之內**，但沒有任何來源直接說明這張碟收的就是那一天的母版。**行文可以並置這兩件事，不得斷言「這張收的就是那一天的錄音」。**(3) **卡單的 1989 是整編年，不是原盤年也不是錄音年**（第 18／46 條）。這張碟沒有「原盤」可言——Victor 當年發的是 78 轉單張，Pearl 1989 這一次才第一次把它們收成一張。",
+  "notes": "**試聽維持 unavailable，這是查得徹底之後的 unavailable。** 走藝人頁目錄端點 lookup?id=62369329&entity=album&limit=200&country=<store> 逐店面列完 Alfred Cortot 的全部目錄（gb 128／us 73／de 130／fr 129／at 130／it 130／jp 132 筆，共 130 餘個不重複 collectionId），再以 search 端點補查「Cortot Victor Recordings 1919」七店，**沒有任何一筆對應 Pearl GEMM CD 9386 這 17 軌**。七個店面（gb／us／de／fr／at／it／jp）全數落空。\n**逐筆排除過的近似品**（都不得當本盤的封面或試聽來源）：303962579《Alfred Cortot (Vol. 1)》（Naxos，12 軌，**含〈Litanei auf das Fest aller Seelen〉218.8 秒與〈Wiegenlied〉157.3 秒——後者與 MB 的 157173 毫秒逐秒相同，但整張的主體是 Weber 第二號奏鳴曲與 Liszt B 小調奏鳴曲，本盤沒有這兩首**）；458398821《Alfred Cortot Plays Weber & Liszt (1925)》（Music and Arts，10 軌，同樣是 Weber／Liszt 那一路）；1682096742《Alfred Cortot Plays Beethoven, Schubert & Weber》（Warner 2023，12 軌，含〈Am Tage Aller Seelen, D. 343〉206.0 秒）；1092212482／447386425／1296473018 三筆雖然都是 17 軌，但分別是 Nimbus 的鋼琴捲片（piano roll）、1929-1937 年的另一段錄音、與 Condon Collection 的捲片系列——**軌數相同純屬巧合，曲目全對不上**。策展層 risk 列的四筆（1379848168／1379849740／447386425／215991510）我全部覆核過，結論一致：都是別的年代區間。\n**⚠ 一個要傳給下游的觀察**：Apple 上有 collectionId **1892920759《Waltz Etude - Single》，releaseDate 記 1919-07-08**，掛 Alfred Cortot，7 店都有。曲名對得上本盤第 14 軌〈Etude en forme de valse〉、日期也落在本盤標題的區間第一年。**但它只有 1 軌，不是本盤**；記在這裡是因為它證明 Apple 上確實有 Cortot 這一段年代的散軌，日後若要走 §4 人工身分路線可以從這裡查起。\n**擋下策展層說法（兩處）**：\n1. curatorWhy 稱「這批是他最早的一批唱片」——**與來源相反的風險很高**。維基明記他 1925 年才做出第一份電氣錄音，但那不等於 1919 是他最早的唱片；Apple 上另有 Condon Collection 的鋼琴捲片系列（1255118712／1296473018／1890299360），捲片的年代通常更早。**沒有來源支持「最早的一批」，擋下。**\n2. curatorWhy 稱曲目「是他戰前巴黎音樂院教學曲目的實錄」——**查不到任何來源**把這張碟的曲目與他的教學曲目連起來；維基只寫他 1907–1923 年在巴黎音樂院任教、1919 年另創 École Normale。**擋下。**\n**查證通過、而且比策展層原本的說法更有力的三條**：(a) 1925-03-21 在 Camden 為 Victor 錄下史上第一份古典電氣錄音（曲目正是蕭邦即興曲與舒伯特〈Litanei〉，本盤第 1／8／9 軌就是這幾首）；(b) 他錄的李斯特 B 小調奏鳴曲是該曲第一份錄音；(c) 本盤第 14 軌的聖桑〈Etude en forme de valse〉正是讓 Horowitz 跑來問訣竅的那一首。**(c) 是本盤曲目與可查證軼事的直接接點，建議優先使用。**\n**資料瑕疵一處**：Discogs 16575117 把第 3 軌〈Grande Polonaise Brillante, Op. 22〉的作曲者掛成 Weber（第 4 軌才掛 Chopin），那是同一首曲子被切成兩面刻的兩軌，**作曲者應該都是 Chopin**。行文不得依 Discogs 的作曲者欄敘述這一首。\n掛名：Apple 上另有 artistId 1067433723「Alfred Denis Cortot」（他的全名，維基已記）作為第二個藝人實體，1890299360《The Condon Collection – Alfred Denis Cortot》掛在那個實體下——**這是第 49 條在同一書寫系統內的變形（本名 vs 通行名），去重與查詢兩個實體都要掃**。"
+ },
+ {
+  "key": "desc2:Jacques Thibaud & Alfred Cortot|Franck: Sonate / Fauré: Sonate no. 1 / Debussy: Sonate",
+  "artist": "Jacques Thibaud & Alfred Cortot",
+  "album": "Franck: Sonate / Fauré: Sonate no. 1 / Debussy: Sonate",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1e85c5b7 的欄位：title「Franck: Sonate / Fauré: Sonate no. 1, Berceuse / Debussy: Sonate, Minstrels」、artist-credit「Franck, Fauré, Debussy; Jacques Thibaud, Alfred Cortot」、first-release-date 1989、primary-type Album、secondary-types 空陣列、轄下 1 個 release（GB 1989、EMI 7 63032 2、status Official、單片 13 軌）。13 軌是：法朗克奏鳴曲四個樂章（390533／453240／425226／353933 毫秒）、德布西奏鳴曲三個樂章（239400／235866／220400）、〈Minstrels〉（131200）、佛瑞第一號奏鳴曲四個樂章（412666／399906／225066／285026）、〈Berceuse〉（148600）。",
+    "src": "https://musicbrainz.org/release-group/1e85c5b7-e0b8-4e41-90df-3c19c1f68d0d"
+   },
+   {
+    "f": "Discogs release 19473007（Toshiba-EMI CE30-5741，1989，Great Recordings 系列，CD／Compilation／Remastered）收的是**完全相同的 13 軌同一組曲目**（法朗克奏鳴曲 4＋德布西奏鳴曲 3＋Minstrels＋佛瑞第一號奏鳴曲 4＋Berceuse），說明欄逐段標了錄音年：**「Recorded 1929 (Tr.1 to 8), 1927 (Tr.9 to 12), 1942 (Tr.13).」**；並且第 13 軌〈Berceuse〉的鋼琴掛的是 **Tasso Janopoulo，不是 Cortot**。",
+    "src": "https://api.discogs.com/releases/19473007"
+   },
+   {
+    "f": "Apple Music collectionId 868359590「Franck & Fauré: Sonates pour violon et piano (Mono Version)」（Jacques Thibaud & Alfred Cortot，℗ 1959 - BNF Collection 2014，8 軌，8 軌全帶 previewUrl）**把錄音年寫進了每一軌的曲名**：法朗克奏鳴曲四軌全部標「(Recorded in 1929)」、佛瑞第一號奏鳴曲四軌全部標「(Recorded in 1927)」。逐軌秒數 385.3／448.5／421.8／346.1／408.1／396.7／222.1／275.1，與 MB 那 13 軌裡對應的八軌逐軌相差都在 1.5% 以內。**這是與 Discogs 說明欄互相獨立的第二個來源，兩邊給的年份完全一致。**",
+    "src": "https://itunes.apple.com/lookup?id=868359590&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "英文維基〈Violin Sonata (Franck)〉記：這首 A 大調小提琴奏鳴曲是 1886 年 63 歲的法朗克寫給 28 歲小提琴家 Eugène Ysaÿe 的**結婚禮物**；1886 年 9 月 26 日婚禮當天早上由共同的朋友 Charles Bordes 代為致贈，Ysaÿe 與 Bordes 的小姨、鋼琴家 Marie-Léontine Bordes-Pène 匆匆排練之後就當場演給賓客聽。首次公開演出是同年 12 月 16 日在布魯塞爾的 Musée Moderne de Peinture——那場音樂會下午三點開始，輪到這首時天已經黑了，館方不准點任何人工照明，兩人決定照演，**最後三個樂章是在近乎全黑中背譜演完的**。",
+    "src": "https://en.wikipedia.org/wiki/Violin_Sonata_(Franck)"
+   },
+   {
+    "f": "英文維基〈Violin Sonata No. 1 (Fauré)〉記：佛瑞這首 A 大調第一號小提琴奏鳴曲寫於 1875–1876 年，1877 年 1 月 27 日在巴黎 Salle Pleyel 由作曲家本人與小提琴家 Marie Tayau 首演，第三樂章被要求安可；出版商 Breitkopf & Härtel 只肯在佛瑞放棄稿酬的條件下出版。同條目記這首曲子「quickly found its way into the programmes of artists such as Benjamin Godard, Camille Saint-Saëns, **Eugène Ysaÿe, Jacques Thibaud**, George Enescu, **Alfred Cortot** and others」——**本盤這兩位演奏者的名字就寫在那份名單裡**。",
+    "src": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Faur%C3%A9)"
+   },
+   {
+    "f": "英文維基〈Six sonatas for various instruments〉（德布西奏鳴曲群的條目）記：德布西原本計畫寫六首不同編制的奏鳴曲，1918 年 3 月 25 日過世時只完成三首；G 小調小提琴與鋼琴奏鳴曲寫於 1917 年，是**他最後一部大型作品**，全曲典型演奏長度只有約 13 分鐘；1917 年 5 月 5 日首演，小提琴 Gaston Poulet、德布西本人彈鋼琴，**那是他最後一次公開演出**。",
+    "src": "https://en.wikipedia.org/wiki/Six_sonatas_for_various_instruments"
+   },
+   {
+    "f": "英文維基〈Jacques Thibaud〉記：Thibaud 1880 年生於波爾多，先跟父親學琴，十三歲進巴黎音樂院，1896 年與後來成為名指揮的 Pierre Monteux 並列音樂院小提琴首獎；一次大戰負傷後必須重建技巧。條目寫他「was a **friend** of violinist Eugène Ysaÿe, who dedicated his 2nd Sonata for solo violin to him」。1953 年 9 月 1 日他搭乘的法航 178 號班機在下降到尼斯途中撞上法國阿爾卑斯山的 Mount Cimet，機上 42 人全數罹難，他那把 1720 年的史特拉底瓦里也在墜機中毀了。",
+    "src": "https://en.wikipedia.org/wiki/Jacques_Thibaud"
+   }
+  ],
+  "hookCandidates": [
+   "碟上三首曲子的作曲家，兩位把它們寫成禮物、一位寫的是自己最後一部大作",
+   "十三軌裡有一軌的鋼琴不是他——那一軌晚了十三年，換了人"
+  ],
+  "sound": "MB 該 release 的 13 軌毫秒值顯示三首奏鳴曲的體量完全不同：法朗克四個樂章合計 1622.9 秒（27:03），佛瑞第一號四個樂章 1322.7 秒（22:03），德布西三個樂章只有 695.7 秒（11:36）——**德布西那一首不到法朗克的一半**，正好對上維基說的「typical performance lasts about 13 minutes」。單軌最長的是法朗克第二樂章 453.2 秒、最短的是〈Minstrels〉131.2 秒。Apple 868359590 那八軌的逐軌秒數（385.3／448.5／421.8／346.1／408.1／396.7／222.1／275.1）與 MB 對應軌相差都在 1.5% 以內（MB release 曲長欄＋Apple lookup 曲長欄）。",
+  "keyTracks": [
+   "Sonata for Violin and Piano in A major (Franck)",
+   "Sonata for Violin and Piano in G minor (Debussy)",
+   "Sonata for Violin and Piano No. 1 in A major, Op. 13 (Fauré)"
+  ],
+  "status": "full",
+  "yearVerified": "四個數字要分開講，而且**這一張的錄音年策展層寫錯了**。(1) MB release-group 的 first-release-date 是 **1989**，指的是 EMI 以 Références 歷史系列出這張 CD（7 63032 2）的那一次。(2) **原始錄音年是 1929、1927、1942 三個，不是策展層寫的「1929–1931」。** 兩個互相獨立的來源給出完全一致的答案：Discogs release 19473007（同一組 13 軌的 Toshiba-EMI 版）說明欄寫「Recorded 1929 (Tr.1 to 8), 1927 (Tr.9 to 12), 1942 (Tr.13)」；Apple 868359590 把年份寫進曲名——法朗克四軌標 (Recorded in 1929)、佛瑞四軌標 (Recorded in 1927)。也就是：**佛瑞奏鳴曲 1927 年最早，法朗克與德布西兩首奏鳴曲加〈Minstrels〉1929 年，最後一軌〈Berceuse〉晚到 1942 年**。(3) **第 13 軌不只年份不同，鋼琴也不是 Cortot**——Discogs 該軌的鋼琴掛 Tasso Janopoulo。**行文不得寫「1929–1931 年錄下」，也不得把十三軌一律說成這兩人的演奏。**(4) 卡單的 1989 是整編年（第 18／46 條），本盤沒有可稱為原盤的單一發行，1927／1929 那幾首當年是 HMV 的 78 轉單張。",
+  "notes": "**試聽維持 unavailable，但這是查得徹底之後的 unavailable，而且抓到兩筆可用的部分覆蓋。** 走藝人頁目錄端點逐店面列完 Jacques Thibaud（artistId 62369333；gb／de／fr／at／it／jp 各 45 筆、us 19 筆）與 Alfred Cortot（62369329）的全部目錄，再以 search 端點補查「Thibaud Cortot sonates」七店，**沒有任何一筆是 13 軌的完整條目**。七店全數落空。\n兩筆部分覆蓋（都已用 entity=song 覆核、曲目全帶 previewUrl）：\n- **868359590**「Franck & Fauré: Sonates pour violon et piano (Mono Version)」（BNF Collection，8 軌，at／de／fr／gb／it／jp 六店）＝本盤第 1–4 與 9–12 軌，**缺德布西奏鳴曲、Minstrels、Berceuse**。\n- **602779041**「Jaques Thibaud Plays Debussy, Fauré, Saint-Saens & Lalo」（Mangora Classical，14 軌，7 店）前四軌＝本盤的德布西奏鳴曲三個樂章（239.2／236.1／216.0 秒，與 MB 的 239.4／235.9／220.4 逐軌相符）＋〈Minstrels〉。\n**建議仍記 unavailable，不要拿 868359590 當固定試聽**：卡片盤名三首曲子並列，而那一筆缺其中一首（德布西），依第 140／141 條「不開原盤就不要下判斷、判斷了就要對得上原盤」，用它會讓卡片的盤名與試聽內容不一致。若店主要放寬，兩個 collectionId 都在上面。\n**⚠ 資料衝突一處，MB 那一側可能是錯的**：MB 把第 13 軌記成「Berceuse (from Dolly, Op. 56)」148600 毫秒，但 Apple 602779041 的對應曲目是「Berceuse for Violin & Piano, in D Major **Op. 16**」192.9 秒。佛瑞的 Op. 16《搖籃曲》本來就是小提琴與鋼琴的曲子，Dolly 組曲 Op. 56 是四手聯彈；**在一張小提琴奏鳴曲集上，Op. 16 才合理**。Discogs 19473007 只寫「Berceuse」沒有作品號。**行文不得指名這一首的作品號，也不得寫「出自 Dolly」。**\n**擋下策展層說法（三處，其中兩處與來源相反）**：\n1. curatorWhy 稱錄音年是「1929–1931」——**與來源相反**。兩個獨立來源都說 1927／1929／1942（見 yearVerified）。\n2. curatorWhy 稱「Thibaud 正是 Ysaÿe 的學生輩」——**與來源相反**。英文維基〈Jacques Thibaud〉明寫他是 Ysaÿe 的**朋友**（friend），Ysaÿe 把第二號無伴奏小提琴奏鳴曲題獻給他；他的老師是他父親與巴黎音樂院。**行文不得把兩人寫成師承關係。**\n3. curatorWhy 稱「這份錄音距首演不到十五年」（指德布西奏鳴曲）——首演 1917-05-05、錄音 1929，是**十二年**；「不到十五年」字面上不算錯，但既然兩個確切年份都查得到，**行文應該直接用 1917 與 1929 這兩個數字，不要用區間**（第 18 條末段的做法）。\n**查證通過、而且比策展層原本說法更有力的四條**：(a) 法朗克奏鳴曲是 1886 年寫給 Ysaÿe 的結婚禮物，婚禮當天早上才送到、當場演給賓客聽；(b) 首次公開演出因為館方不准點燈，最後三個樂章是在近乎全黑中背譜演完的；(c) 佛瑞第一號奏鳴曲的維基條目**逐名列出把這首曲子帶進音樂會的演奏家，Jacques Thibaud 與 Alfred Cortot 兩個名字都在名單裡**；(d) 德布西那首是他最後一部大型作品，1917 年首演時他本人彈鋼琴，那是他最後一次公開演出。**(c) 與 (d) 是本盤三首曲子與這兩位演奏者之間最硬的接點。**\n掛名：卡片用「Jacques Thibaud & Alfred Cortot」，MB 的 artist-credit 把三位作曲家排在前面、兩位演奏者在後；Apple 上這一組的掛名至少有五種寫法——「Jacques Thibaud & Alfred Cortot」「Jaques Thibaud」（少一個 c，602779041 就是）「Alfred Cortot & Jacques Thibaud」（順序相反）「Jacques Thibaud, Alfred Cortot & Pablo Casals」「Alfred Denis Cortot」（另一個 artistId 1067433723）。**c-98 第 1 條的形狀：`artistOk` 的子字串比對在「Jaques／Jacques」這種一字之差上會直接落空。**"
+ },
+ {
+  "key": "desc2:Cortot / Thibaud / Casals|Beethoven: Archduke Trio / Schubert: Piano Trio D 898",
+  "artist": "Cortot / Thibaud / Casals",
+  "album": "Beethoven: Archduke Trio / Schubert: Piano Trio D 898",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ec9a572e 的欄位：title「Beethoven: Piano Trio in B-flat, op. 97 \"Archduke\" / Schubert: Piano Trio no. 1 in B-flat, D 898」、artist-credit「Ludwig van Beethoven, Franz Schubert; Alfred Cortot, Jacques Thibaud, Pablo Casals」、first-release-date 1999-09-14、primary-type Album、secondary-types 空陣列、轄下 2 個 release 皆 Official（US 1999-09-14 EMI Classics 5 67001 2／XE 1999 EMI Classics 5 66986 2），兩筆都是單片 8 軌。8 軌是《大公》四個樂章（579400／401866／795533／399266 毫秒）與舒伯特 D 898 四個樂章（628933／533533／221066／492133）。",
+    "src": "https://musicbrainz.org/release-group/ec9a572e-59e0-3022-99f0-afd4c184ab45"
+   },
+   {
+    "f": "Discogs release 18053263（EMI Classics 7243 5 67001 2 3，1999，CD／Compilation／Repress／Mono）的說明欄逐字寫：「Total running time 1:07:31. **Originally released 1988.**」曲目就是《大公》與舒伯特第一號鋼琴三重奏兩首。",
+    "src": "https://api.discogs.com/releases/18053263"
+   },
+   {
+    "f": "英文維基〈Pablo Casals〉記：「Back in Paris, Casals organized a trio with the pianist Alfred Cortot and the violinist Jacques Thibaud; they played concerts **from 1906 to 1933**, and made recordings **from 1926 to 1929**.」該句的引註（EMI CHS 7 64057 2 三片裝的內頁，Jean Loubier 撰）補充：已知最早的音樂會是 1906 年（可能更早），**最後一場是 1933 年 5 月 13 日在史特拉斯堡**。同條目的錄音年表列出「1926–1928: Casals, Jacques Thibaud and Alfred Cortot – the first trios of Schubert, Schumann and Mendelssohn, the Beethoven Archduke, Haydn's G major and Beethoven's Kakadu Variations（**recorded in London**）」。",
+    "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+   },
+   {
+    "f": "英文維基〈Alfred Cortot〉記：「In 1905, Cortot formed a trio with Jacques Thibaud and Pablo Casals, which **established itself as the leading piano trio of its era**.」——**成軍年份 Cortot 條目寫 1905、Casals 條目寫 1906（音樂會起算），兩個條目不一致。**",
+    "src": "https://en.wikipedia.org/wiki/Alfred_Cortot"
+   },
+   {
+    "f": "Apple Music collectionId 685359329「Beethoven & Schubert: Piano Trio」（Alfred Cortot, Jacques Thibaud & Pablo Casals，℗ 2013 Mangora Classical，8 軌）的 lookup：8 軌全部帶 previewUrl，曲名與曲序與 MB 那兩筆逐軌相同（《大公》四樂章＋舒伯特 D 898 四樂章），逐軌秒數 579.5／401.9／795.6／399.3／629.0／533.6／221.1／490.2，**與 MB 的毫秒值逐軌相差不到 0.4%**。gb／us／de／fr／at／it／jp 七店全部查得到。",
+    "src": "https://itunes.apple.com/lookup?id=685359329&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "英文維基〈Pablo Casals〉另記：1939 年西班牙共和政府敗於佛朗哥之後 Casals 自我流亡，誓言不待民主恢復不回西班牙，1939–1956 年住在法國 Prades、1956 年之後住波多黎各直到 1973 年過世；他拒絕在承認佛朗哥政權的國家演出。英文維基〈Alfred Cortot〉則記 Cortot 二戰期間出任維琪政府的藝術 Haut-Commissaire、1941 與 1942 年兩度任維琪 Conseil national 成員，戰後被法國政府審查小組認定與敵人合作、停演一年。**兩人政治立場的分歧發生在 1936 年之後，而三重奏的最後一場音樂會是 1933 年 5 月 13 日。**",
+    "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+   },
+   {
+    "f": "英文維基〈Jacques Thibaud〉記：Thibaud 1953 年 9 月 1 日死於法航 178 號班機在法國阿爾卑斯山 Mount Cimet 的空難，同機 42 人全數罹難，他的 1720 年史特拉底瓦里毀於墜機；他當時正要飛往東京演出。Casals 1973 年 10 月 22 日在波多黎各過世，享年 96；Cortot 1962 年 6 月 15 日在洛桑過世，享年 84。**三個人的卒年分別是 1953、1962、1973。**",
+    "src": "https://en.wikipedia.org/wiki/Jacques_Thibaud"
+   }
+  ],
+  "hookCandidates": [
+   "三個人的最後一場音樂會是 1933 年 5 月 13 日在史特拉斯堡，此後再沒有下一場",
+   "他們一起錄音只有三年，一起開音樂會有二十七年"
+  ],
+  "sound": "MB 該 release 的 8 軌毫秒值：《大公》四樂章 579.4／401.9／795.5／399.3 秒，舒伯特 D 898 四樂章 628.9／533.5／221.1／492.1 秒。兩首的重心落在不同的樂章——《大公》最長的是第三樂章的變奏曲慢板（795.5 秒，13:16，是整張碟最長的一軌），舒伯特那首最長的是第一樂章（628.9 秒）；而 D 898 的詼諧曲只有 221.1 秒，是全碟最短的一軌，兩首合計 4051.7 秒（1:07:32），與 Discogs 說明欄印的 total running time 1:07:31 相差一秒。Apple 685359329 的逐軌秒數與 MB 逐軌相差不到 0.4%（MB release 曲長欄＋Discogs 說明欄＋Apple lookup 曲長欄三邊互核）。",
+  "keyTracks": [
+   "Piano Trio no. 7 in B-flat major, op. 97 \"Archduke\": III. Andante cantabile ma però con moto",
+   "Piano Trio no. 1 in B-flat major, D 898: I. Allegro moderato",
+   "Piano Trio no. 7 in B-flat major, op. 97 \"Archduke\": I. Allegro moderato"
+  ],
+  "status": "full",
+  "yearVerified": "四個數字要分開講。(1) MB release-group 的 first-release-date 是 **1999-09-14**，指的是 EMI Classics 這次美國版（5 67001 2）的發行日；同一個 release-group 底下另有一筆 XE 1999（5 66986 2）。(2) **但 1999 連 CD 首發都不是**——Discogs release 18053263 的說明欄明寫「**Originally released 1988**」，也就是 EMI 這套 CD 1988 年就出過，1999 那一次是 repress。(3) **原始錄音年是 1926–1928，地點倫敦**：英文維基〈Pablo Casals〉的錄音年表把《大公》與舒伯特第一號三重奏都列在「1926–1928 … recorded in London」那一組；同條目正文另寫這個三重奏「made recordings from 1926 to 1929」。Apple 上另一筆同組合的 777138424 曲名直接標「Beethoven: Trio No. 7, Op. 97 (**Recorded 1928**, Mono Version)」，與年表相符。**兩首各自的確切日期查不到**，只能寫區間。(4) **卡單的 1999 是再壓年，既不是原盤年、也不是 CD 首發年、更不是錄音年**——這是本批年份落差最複雜的一張，一個數字後面藏了三層。**行文一律以「1926 到 1928 年間在倫敦錄下」為錨點，不得斷言發行年**（第 18／46／141 條）。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=62369329&entity=album&limit=200&country=<store>（Alfred Cortot）撈到 collectionId **685359329「Beethoven & Schubert: Piano Trio」**，再以 lookup?id=685359329&entity=song 覆核：8 軌、曲名與曲序與 MB 逐軌相同、8 軌皆有 previewUrl、逐軌時長與 MB 相差不到 0.4%。逐店面實測 **gb／us／de／fr／at／it／jp 七店全有**。落空的原因是掛名與盤名兩邊同時變形——Apple 的 artistName 是「Alfred Cortot, Jacques Thibaud & Pablo Casals」（**次序與卡片的 Cortot / Thibaud / Casals 相同，但分隔符是逗號與 &，不是斜線**），盤名則從「Beethoven: Archduke Trio / Schubert: Piano Trio D 898」縮成「Beethoven & Schubert: Piano Trio」（**單數 Trio，而且拿掉了 Archduke 與 D 898 兩個關鍵字**）。這是第 162 條「盤名被縮短過的卡，子字串比對是反的」的又一例。建議探測檔補：ready／gb／685359329／8 軌。\n**逐筆排除過的近似品**（策展層列的五筆我全部覆核）：80842987《Thibaud, Casals, Cartot - Beethoven: Archduke Trio - Kreutzer Sonata - Magic Flute Variations》8 軌但曲目是《大公》＋《克羅采》＋魔笛變奏（**沒有舒伯特**，而且 Apple 把 Cortot 拼成 **Cartot**）；777138424《Beethoven: Trio No. 7, Op. 97 (Recorded 1928, Mono Version)》只有 4 軌（只有《大公》）；298319036 是西班牙文條目 7 軌；1685393170《Chamber Music》44 軌是大合輯；81359220 是孟德爾頌／舒曼三重奏。另外自行查到的 696294690《Beethoven/Schubert: Piano Trios》（8 軌）與 962328112《Alfred Cortot - Jacques Thibaud - Pablo Casals》（8 軌）**軌數對得上、但未逐軌覆核，若要換用必須先跑 entity=song**。\n**擋下策展層說法（三處，其中一處與來源相反）**：\n1. curatorWhy 稱「三人在 1930 年代因政治立場決裂後再未同台」——**與來源相反**。三重奏的最後一場音樂會有確切日期：**1933 年 5 月 13 日在史特拉斯堡**（維基〈Pablo Casals〉的引註）；而 Casals 的流亡起於 1939 年西班牙共和政府戰敗、Cortot 出任維琪職務是 1941–42 年，**兩件政治事件都發生在三重奏停止活動之後六到九年**。**行文不得把停止合作寫成政治決裂**，只能寫「最後一場是 1933 年 5 月 13 日在史特拉斯堡」這個有來源的事實。\n2. curatorWhy 稱「是二十世紀第一個由三位獨奏名家長期合作的鋼琴三重奏」——**查不到來源**。維基〈Alfred Cortot〉能支持的只有「established itself as **the leading** piano trio of its era」（該時代最重要的鋼琴三重奏），**不是「第一個」**。擋下這個序數主張。\n3. curatorWhy 稱「1905 年在巴黎組成」——**兩個維基條目不一致**：〈Alfred Cortot〉寫 1905 年組成，〈Pablo Casals〉寫「played concerts from 1906 to 1933」、引註說已知最早的音樂會是 1906 年（並註明可能有更早的）。**行文不得斷言成軍年份**；要提時間就用有引註的那一端（1906 年起有音樂會、1933 年 5 月 13 日最後一場、1926–1928 年在倫敦錄音）。\n**查證通過可以寫的**：〈他們一起開音樂會的年份與一起錄音的年份差距懸殊——音樂會 1906 到 1933、錄音只集中在 1926 到 1929〉（維基〈Pablo Casals〉正文與年表）；〈錄音全在倫敦〉（同上年表）；〈這一組被稱為該時代最重要的鋼琴三重奏〉（維基〈Alfred Cortot〉）。\n掛名：MB 的 Casals 藝人實體名是**「Pau Casals」**（加泰隆尼亞語，MBID 2fcffd9a），本 release-group 的 artist-credit 卻用「Pablo Casals」；Apple 上兩種都有（499489 Pablo Casals、以及 298319036 那筆把三人寫成「Pau Casals, Alfred Cortot & Jacques Thibaud」），另有片假名實體「パブロ・カザルス」（359836163）與拼錯的「Cartot」「Jaques Thibaud」「Jacques Tibaud」（525635735／537549436 用 Tibaud）。**五種以上的寫法，去重要全掃**——這正是 c-98 第 1 條說的「`artistOk` 的子字串比對擋不住不同實體」。"
+ },
+ {
+  "key": "desc2:Fritz Kreisler|The Berlin HMV Recordings, 1926-27",
+  "artist": "Fritz Kreisler",
+  "album": "The Berlin HMV Recordings, 1926-27",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6ba51093 的欄位：title「The Berlin HMV Recordings, 1926-27」、artist-credit「Fritz Kreisler」（單一演奏者）、first-release-date 1991、primary-type Album、secondary-types **[\"Compilation\"]**、轄下 2 個 release 皆 Official——GB 1991 Biddulph Recordings LAB 049-50（2 片，7＋15＝22 軌）與 XW 2020-03-06 Biddulph 數位版（同樣 7＋15）。",
+    "src": "https://musicbrainz.org/release-group/6ba51093-bbb8-4fba-8a98-d2ad931d62db"
+   },
+   {
+    "f": "MB 該 release 的曲目表：第一片是巴哈無伴奏第一號奏鳴曲的 Adagio（253600 毫秒）＋**貝多芬小提琴協奏曲全曲**（1436960／622800／617933）＋**孟德爾頌小提琴協奏曲全曲**（732933／468733／408600）；第二片是**布拉姆斯小提琴協奏曲全曲**（1247067／471133／497227）＋十二首小品，小品裡有九首標明是 Kreisler 自己的改編（arr. F. Kreisler），包括孟德爾頌〈無言歌 op. 62 no. 1〉、舒曼〈三首浪漫曲 op. 94 no. 2〉、布拉姆斯〈匈牙利舞曲第 17 號〉、法雅《短暫的人生》西班牙舞曲（**同一首錄了兩個版本，第 9 與第 10 軌**）、Scott〈Lotus Land〉，以及四首小提琴／大提琴／鋼琴三重奏編制的小品（〈O Sanctissima〉〈Agnus Dei〉〈Marche miniature viennoise〉〈Syncopation〉）。",
+    "src": "https://musicbrainz.org/release/2bbf00b3-da04-4623-9d6a-915a78b911ee"
+   },
+   {
+    "f": "英文維基〈Fritz Kreisler〉記：Kreisler 1875 年 2 月 2 日生於維也納、1962 年 1 月 29 日卒於紐約。七歲進維也納音樂院，師從 Anton Bruckner、Jakob Dont 與 Joseph Hellmesberger Jr.；1885–1887 年在巴黎音樂院隨 Léo Delibes、Lambert Massart 與 Jules Massenet 學習，**十二歲以最高的 Premier Prix 畢業，同場競爭的四十人多數已經二十歲以上**。1888 年 11 月 10 日在紐約 Steinway Hall 首度登台。他曾應徵維也納愛樂被首席 Arnold Rosé 拒絕，一度離開音樂去學醫。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+   },
+   {
+    "f": "同一條目記：**他 1924 年回到歐洲，先住柏林，1938 年才搬到法國**，二戰爆發後再度定居美國、1943 年入籍，1947 年舉行最後一場公開音樂會。1910 年他首演艾爾加小提琴協奏曲——那是為他而寫、並題獻給他的作品。他為布拉姆斯、帕格尼尼第一號與貝多芬三首協奏曲寫的裝飾奏至今仍在使用，**貝多芬那組是今天小提琴家最常演奏的版本**。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+   },
+   {
+    "f": "同一條目記：他寫過大量託名舊時代作曲家的「仿作」，長年掛在 Gaetano Pugnani、Giuseppe Tartini、Antonio Vivaldi 等人名下，**1935 年他自己揭穿那些其實都是他寫的**；面對批評他回了一句「The name changes, the value remains」。他也寫輕歌劇（1919《Apple Blossoms》、1932《Sissy》）與一首弦樂四重奏。錄音方面他長期為 Victor／RCA Victor 與 HMV 灌片，**最後一批錄音在 1950 年**。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+   },
+   {
+    "f": "Apple Music collectionId 192553360「Beethoven & Mendelssohn: Violin Concertos」（Arpad Sandor, Fritz Kreisler, Leo Blech & Staatskapelle Berlin，℗ 2000 Naxos，8 軌全帶 previewUrl）逐軌秒數 1433.7／624.8／615.9（貝多芬）／253.8（巴哈 Adagio）／167.8（孟德爾頌無言歌）／728.8／464.2／408.7（孟德爾頌協奏曲），**與 MB 該 release 的對應八軌逐軌相差都在 0.9% 以內**（MB：1436.96／622.8／617.9／253.6／168.24／732.9／468.7／408.6）。該筆的班底掛名點出本盤協奏曲的伴奏是 **Leo Blech 指揮柏林國家歌劇院管弦樂團（Staatskapelle Berlin）、鋼琴 Arpad Sandor**。",
+    "src": "https://itunes.apple.com/lookup?id=192553360&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "同一首西班牙舞曲在這套裡出現兩次，是同一批錄音留下的兩個版本",
+   "錄這批唱片的那幾年，他人就住在柏林"
+  ],
+  "sound": "MB 該 release 的 22 軌毫秒值顯示這套的結構是「三首大協奏曲＋一堆三分鐘小品」：三首協奏曲的第一樂章分別是 1436.96 秒（貝多芬，23:57）、732.9 秒（孟德爾頌）、1247.1 秒（布拉姆斯），三軌合計就超過 58 分鐘；而第二片後段十二首小品沒有一首超過 277 秒，最短的〈Syncopation〉只有 119.9 秒。**單軌長度的落差是十二倍。**巴哈那首無伴奏 Adagio（253.6 秒）夾在第一片開頭、協奏曲之前，是全套唯一的無伴奏曲目（MB release 曲長欄；Apple 192553360 的對應八軌逐軌相差不到 0.9%，可互核）。",
+  "keyTracks": [
+   "Violin Concerto in D major, op. 61 (Beethoven)",
+   "Violin Concerto in E minor, op. 64 (Mendelssohn)",
+   "Violin Sonata no. 1 in G minor, BWV 1001: I. Adagio"
+  ],
+  "status": "full",
+  "yearVerified": "(1) MB release-group 的 first-release-date 是 **1991**，指的是英國考古廠牌 Biddulph 出這套兩片裝（LAB 049-50）的那一次整編；同一個 release-group 底下另有一筆 2020-03-06 的 XW 數位版，**同樣 7＋15 軌**。(2) **原始錄音年寫在盤名裡：1926–27**，這一點在本張上比其他幾張穩——盤名本身就是錄音年區間，MB 的 title 與 Biddulph 的編號都這麼寫。**逐曲的錄音日期查不到**（Discogs 上找不到 LAB 049-50 的條目，Apple 那筆 Naxos 也沒有標日期）。(3) **卡單的 1991 是整編年**，不是原盤年也不是錄音年（第 18／46 條）；1926–27 年這批當年是 HMV 的 78 轉單張。**可以並置的傳記錨點**：維基記 Kreisler 1924 年回歐洲後**先住柏林**、1938 年才離開，所以這批柏林錄音正落在他定居該地的那幾年——這是有來源的時間對應，比「電氣錄音早期」之類的模糊說法可靠。",
+  "notes": "**試聽維持 unavailable，這是查得徹底之後的 unavailable。** 走藝人頁目錄端點 lookup?id=4113683&entity=album&limit=200&country=<store>（Fritz Kreisler，七個店面都回到 200 筆上限，代表目錄比 200 大、藝人頁本身列不完），再以 search 端點用「Kreisler Berlin HMV Recordings」「Kreisler Blech Beethoven Violin Concerto」「Kreisler Biddulph」三組字串補查七店，**沒有任何一筆是 22 軌的 Biddulph 兩片裝**。七個店面（gb／us／de／fr／at／it／jp）全數落空。\n**⚠ 藝人頁目錄端點在本張上不可靠**：Kreisler 在七個店面的 `lookup?entity=album&limit=200` **全部回滿 200 筆**，也就是被 limit 截斷了（第 116 條在 Apple 這一側的同型症狀——回 200、回了資料、只是不完整）。本張與第 9 張都是靠 **search 端點**才補到東西的，**與第 166 條的方向相反**：那一條說搜尋端點會騙人、要改問目錄端點；這裡是目錄端點被 limit 截斷、要靠搜尋端點補。**兩個端點都要跑，不能二選一。**\n**抓到一筆部分覆蓋**：collectionId **192553360**「Beethoven & Mendelssohn: Violin Concertos」（Naxos Historical，8 軌，at／de／fr／gb／it／jp 六店）逐軌時長與本套第一片的七軌＋第二片第 4 軌完全對得上（差距全在 0.9% 內），**是同一批母帶**。但它只有 22 軌裡的 8 軌、**缺整首布拉姆斯協奏曲與全部三重奏小品**，依第 87／140 條不能當本卡的固定試聽。記在這裡供日後 §4 路線參考。另一筆 380557089「Beethoven: Violin Concerto in D Major, Op. 61」（Fritz Kreisler, Leo Blech & State Opera Orchestra of Berlin，2 軌）與 571288882「Kreisler Plays Beethoven & Mendelssohn」（6 軌，混進了 Barbirolli／倫敦愛樂的另一份錄音）**都不得採用**。\n**策展層 risk 的一個判斷要修正**：它說 1566627538《The Kreisler Collection: The Complete Acoustic HMV Recordings》「是機械錄音時期（1926 年之前）的另一套，年代與母帶都不同」——**這句本身正確**（acoustic＝機械錄音，本套是電氣錄音），但它遺漏了真正的近似品 192553360，那一筆才是同一批母帶、才是去重與配對時真正危險的一個。\n**⚠ 本批內部的雙胞胎警示**：本卡與第 9 張《The 1926 & 1927 Victor Recordings: Favourite Short Pieces》**盤名的年份區間幾乎一樣（1926-27 對 1926 & 1927）、廠牌一樣（Biddulph）、藝人一樣**，但母帶完全不同——本套是柏林 HMV 的三首協奏曲＋小品（22 軌，LAB 049-50），第 9 張是美國 Victor 的二十二首小品（22 軌，LAB 075）。**兩張的軌數還剛好都是 22**，任何靠軌數去配的比對都會撞在一起。**兩張的 catno 必須進所有比對鍵。**\n**擋下策展層說法（兩處）**：\n1. curatorWhy 稱「柏林那批用的是德國 Electrola 的錄音棚與伴奏班底」——**查不到來源**。可查證的伴奏班底是 Apple 192553360 掛出的 **Leo Blech／Staatskapelle Berlin 與鋼琴 Arpad Sandor**；「Electrola 錄音棚」沒有任何來源。**改寫成有來源的班底名，不要寫錄音棚。**\n2. curatorWhy 稱「他的運弓與揉弦習慣被整代人模仿」——維基只寫他「produced a characteristic sound which was immediately recognizable as his own」、並把他的風格與 Mischa Elman 相比，**沒有寫「被整代人模仿」**。擋下這個影響力主張。\n**查證通過、可以取代上面兩句的三條**：(a) 1935 年他自己揭穿那些託名 Pugnani／Tartini／Vivaldi 的曲子其實都是他寫的，並回應批評說「The name changes, the value remains」；(b) 1910 年他首演艾爾加小提琴協奏曲，那是為他而寫並題獻給他的；(c) 他為貝多芬協奏曲寫的裝飾奏是今天最常被演奏的版本——**而本套第一片收的正是貝多芬協奏曲全曲**，(c) 與曲目直接接得上。"
+ },
+ {
+  "key": "desc2:Fritz Kreisler|The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+  "artist": "Fritz Kreisler",
+  "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bf952c10 的欄位：title「The 1926 & 1927 Victor Recordings: Favourite Short Pieces」、artist-credit「Fritz Kreisler」、first-release-date 1993、primary-type Album、secondary-types **[\"Compilation\"]**、轄下 1 個 release（GB 1993、Biddulph Recordings LAB 075、status Official、單片 22 軌）。",
+    "src": "https://musicbrainz.org/release-group/bf952c10-656c-3909-b858-239126370b39"
+   },
+   {
+    "f": "Apple Music collectionId 1617284555 的 lookup 欄位：collectionName「The 1926 & 1927 Victor Recordings」、artistName「**Fritz Kreisler & Carl Lamson**」（多掛了鋼琴伴奏）、releaseDate 1993-08-04、trackCount 22、copyright「**℗ 1993 Biddulph Recordings**」；22 軌全部帶 previewUrl，曲名與曲序與 MB 那一筆逐軌相同，逐軌秒數 196.8／212.7／197.4／157.2／190.2／208.7／147.7／143.7／164.0／134.4／215.4／189.1／204.4／202.9／217.7／142.0／262.4／268.4／108.9／103.6／217.2／228.1，與 MB 的 193／210／194／155／187／207／144／141／162／132／210／186／201／200／217／140／259／266／105／100／216／227 逐軌相差都在 2% 以內。gb／us／de／fr／at／it／jp 七店全部查得到。",
+    "src": "https://itunes.apple.com/lookup?id=1617284555&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "Apple 那一筆的完整曲名把 MB 的簡寫全部展開，可以看出這張碟的曲目來源：第 1 軌是 Romberg 輕歌劇《The Student Prince》的〈Deep in My Heart, Dear〉、第 2 軌是 Friml《Rose-Marie》的〈Indian Love Call〉、第 10 軌是 Lehár《Frasquita》的小夜曲、**第 15 軌是 Irving Berlin 為 1926 年音樂劇《Betsy》寫的〈Blue Skies〉**，全部標「Arr. F. Kreisler for Violin & Piano」；另外第 5／11／12／13／14／19 軌是 Kreisler 自己的作品（〈Serenade\"Kreisler Serenade\"〉〈Caprice viennois, Op. 2〉〈Alt-Wiener Tanzweisen〉三首：Liebesfreud、Liebesleid 兩個版本、Schön Rosmarin），第 8 軌是柴可夫斯基〈Humoresque op. 10 no. 2〉、第 9 軌是拉赫瑪尼諾夫〈Margaritki op. 38 no. 3〉、第 20 軌是 Falla《七首西班牙民歌》的〈Canción〉（Kochanski 改編）、第 21 軌是 Albéniz〈Malagueña〉、第 22 軌是德弗札克〈幽默曲 op. 101 no. 7〉。",
+    "src": "https://itunes.apple.com/lookup?id=1617284555&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "英文維基〈Fritz Kreisler〉記：他寫過大量託名舊時代作曲家的仿作（Pugnani、Tartini、Vivaldi 等），**1935 年才自己揭穿是他寫的**，並回應批評說「The name changes, the value remains」；他自己的安可小品包括〈Liebesleid〉與〈Liebesfreud〉。同條目記他長期為 Victor／RCA Victor 與 HMV 錄音，最後一批錄音在 1950 年；1962 年 1 月 29 日卒於紐約，葬於 Bronx 的 Woodlawn Cemetery 私人墓室。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+   },
+   {
+    "f": "同一條目記：他 1875 年生於維也納，七歲進維也納音樂院師從 Bruckner、Dont 與 Hellmesberger Jr.，1885–1887 年在巴黎音樂院隨 Delibes、Massart、Massenet 學習，十二歲以最高 Premier Prix 畢業。1901 年在美國巡演時認識紐約出生的 Harriet Lies，隔年結婚，**因為法律手續問題前後又重辦了三次婚禮**，兩人結縭六十年直到他過世。1914 年他在一次大戰的奧地利陸軍中負傷後光榮退伍，同年 11 月 24 日抵達紐約，在美國度過整個戰爭期間。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+   },
+   {
+    "f": "MB 該 release 的 22 軌毫秒值：193000／210000／194000／155000／187000／207000／144000／141000／162000／132000／210000／186000／201000／200000／217000／140000／259000／266000／105000／100000／216000／227000。**沒有一軌超過 266 秒（4:26），最短的〈Cancion populaire〉只有 100 秒**；其中〈Liebesleid〉連續兩軌（201 與 200 秒），是同一首曲子的兩個版本並列。",
+    "src": "https://musicbrainz.org/release/34c179a4-93f8-4039-838f-82134775e037"
+   }
+  ],
+  "hookCandidates": [
+   "二十二首裡沒有一首超過四分半——每一首都是一張唱片的一面",
+   "同一首〈愛之悲〉並排放了兩次，只差一秒"
+  ],
+  "sound": "MB 該 release 的 22 軌毫秒值全部落在 100 到 266 秒之間，中位數約 196 秒（3:16）；最長的〈Gypsy Caprice〉266 秒、最短的〈Cancion populaire〉100 秒。**整張碟沒有一軌超過四分半，這是 78 轉單面容量直接決定的形狀**——每一軌就是當年一張唱片的一面。第 13 與第 14 軌是同一首〈Liebesleid〉的兩個版本，時長 201 與 200 秒，**只差一秒**；Apple 1617284555 把它們標成〈Liebesleid [1]〉與〈Liebesleid [2]〉，時長 204.4 與 202.9 秒（Apple lookup 曲長欄與 MB release 曲長欄逐軌相差都在 2% 以內，兩邊互核）。",
+  "keyTracks": [
+   "Liebesfreud",
+   "Schön Rosmarin",
+   "Caprice viennois, Op. 2"
+  ],
+  "status": "full",
+  "yearVerified": "(1) MB release-group 的 first-release-date 是 **1993**，指 Biddulph 出這張 CD（LAB 075）的那一次整編；**Apple 那一筆的 releaseDate 1993-08-04 與 copyright ℗ 1993 Biddulph Recordings 給出同一年、而且多給了確切日期**，兩邊互相佐證。(2) **原始錄音年寫在盤名裡：1926 與 1927**，這是 Kreisler 在美國 Victor 灌的那一段；逐曲日期查不到（Discogs 上找不到 LAB 075 的條目）。**曲目本身可以佐證這個年份**：第 15 軌是 Irving Berlin 為 1926 年音樂劇《Betsy》寫的〈Blue Skies〉——這首歌 1926 年底才問世，錄音不可能早於它。(3) **卡單的 1993 是整編年，不是錄音年**（第 18／46 條）；1926–27 年這批當年是 Victor 的 78 轉單張。**本張是本批二十張裡年份鏈最乾淨的一張**：整編年有兩個獨立來源、錄音年寫在盤名裡、還有一個曲目本身的下限佐證。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。**藝人頁目錄端點在這一張上失效**——Kreisler 的 `lookup?id=4113683&entity=album&limit=200` 在七個店面全部回滿 200 筆（被 limit 截斷，目錄比 200 大），本筆不在那 200 筆裡。改走 **search 端點**（term=Fritz Kreisler 1926 1927）才撈到 collectionId **1617284555**，再以 lookup?id=1617284555&entity=song 覆核：22 軌、曲名與曲序與 MB 逐軌相同、22 軌皆有 previewUrl、逐軌時長差距全在 2% 內、℗ 1993 Biddulph Recordings **與卡片釘的廠牌完全一致**。逐店面實測 **gb／us／de／fr／at／it／jp 七店全有**。建議探測檔補：ready／gb／1617284555／22 軌。\n**落空原因有兩層，兩層都要記**：(a) **目錄端點被 200 筆上限截斷**（第 116 條在 Apple 這一側的同型症狀，回 200、回了資料、只是不完整）；(b) 盤名少了副標——Apple 作《The 1926 & 1927 Victor Recordings》，卡單作《The 1926 & 1927 Victor Recordings: **Favourite Short Pieces**》，**卡單那一邊比較長**，這是第 162 條「長短包覆」的反向形狀。**掛名也多了一層**：Apple 的 artistName 是「Fritz Kreisler & Carl Lamson」（把鋼琴伴奏掛進去），MB 只有 Fritz Kreisler。**這一張同時踩到目錄截斷、盤名包覆、掛名多人三個坑，是本批試聽最難救的一筆。**\n**⚠ 與本批第 8 張的雙胞胎警示**：本卡與《The Berlin HMV Recordings, 1926-27》是同一位藝人、同一家考古廠牌（Biddulph）、幾乎同一個年份區間、**而且軌數都是 22**。母帶完全不同：本張是美國 Victor 的二十二首小品（LAB 075，單片），第 8 張是柏林 HMV 的三首協奏曲＋小品（LAB 049-50，兩片）。**兩張的 catno 與片數必須進所有比對鍵**，只靠盤名或軌數一定會撞。\n**逐筆排除過的近似品**：1449871023《The Complete Recordings, Vol. 8 (1926-1927)》（Naxos，25 軌，fr／gb／jp）**年份區間與本盤完全一樣、但軌數多三軌**，是 Naxos 全集分卷的另一種切法，**不得混用**（第 87 條）；1566627538《The Kreisler Collection: The Complete Acoustic HMV Recordings》（43 軌）是機械錄音時期；1017356225／598379648 是 Naxos 全集的第 5、6 卷。\n**查證通過、而且與曲目直接接得上的三條**：(a) 本盤第 5／11／12／13／14／19 軌是 Kreisler 自己的作品（Kreisler Serenade、Caprice viennois、Liebesfreud、Liebesleid ×2、Schön Rosmarin），維基把〈Liebesleid〉與〈Liebesfreud〉列為他最著名的安可小品；(b) 1935 年他揭穿託名舊作曲家的仿作是自己寫的，並說「The name changes, the value remains」——**本盤沒有仿作曲目，所以這一條只能當背景，不得寫成「這張碟上的曲子」**；(c) 第 15 軌是 Irving Berlin 1926 年為音樂劇《Betsy》寫的〈Blue Skies〉，**一位維也納出身的協奏曲名家在 1926–27 年把百老匯當季新歌錄成小提琴曲**——這一條完全由 Apple 的完整曲名支撐，是本張最具體的一個切點。\n**擋下策展層說法（兩處，其中一處與來源相反）**：\n1. curatorWhy 稱「《愛之喜》《愛之悲》《美麗的羅絲瑪琳》這些他自己寫的曲子就是靠這批唱片變成小提琴常備曲目的」——**因果關係查不到來源**。維基只說這些是他寫的安可小品，**沒有把它們進入常備曲目歸因於 1926–27 這批 Victor 唱片**；而且這三首在 1910 年代的機械錄音時期就已經錄過（1566627538 那套 acoustic HMV 全集）。**擋下這個因果主張。**\n2. curatorWhy 稱「這批唱片是他商業上最成功的一塊：Victor 把他的三分鐘小品當單曲賣」——前半句「商業上最成功」**無來源**，擋下；後半句「三分鐘小品」倒是有數據支撐（22 軌中位數 196 秒），**可以改寫成有數字的敘述**。"
+ },
+ {
+  "key": "desc2:Van Cliburn|Rachmaninoff: Piano Concerto no. 3",
+  "artist": "Van Cliburn",
+  "album": "Rachmaninoff: Piano Concerto no. 3",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f0a577af 的欄位：title「Concerto no. 3」、artist-credit「Sergei Rachmaninov; Symphony of the Air, Kiril Kondrashin, Van Cliburn」、first-release-date 1959、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——RCA Victor LM-2355（日期與國別皆空，單聲道盤）、US 1959 RCA Victor Red Seal LSC-2355、US 1983 RCA Red Seal ARP1-4688。三筆都是 3 軌，逐軌毫秒 1052440／638226／895760。",
+    "src": "https://musicbrainz.org/release-group/f0a577af-e1c3-40d8-ae8f-942c8eed34b0"
+   },
+   {
+    "f": "Discogs release 4011664（RCA Victor Red Seal LSC-2355，1959，Vinyl LP／Living Stereo／Stereo，公司欄位掛 Carnegie Hall）的說明欄逐字寫：**「Actual Carnegie Hall Performance of May 19, 1958」**。也就是這張唱片不是錄音室製品，是 **1958 年 5 月 19 日那一場音樂會的實況**。",
+    "src": "https://api.discogs.com/releases/4011664"
+   },
+   {
+    "f": "英文維基〈Van Cliburn〉記：Cliburn 1934 年生、2013 年卒；1958 年他 23 歲時拿下第一屆莫斯科國際柴可夫斯基大賽首獎，決賽（4 月 13 日）彈的是柴可夫斯基第一號與**拉赫瑪尼諾夫第三號**兩首協奏曲，換來長達八分鐘的起立鼓掌，評審團還得先徵詢赫魯雪夫的同意才敢把首獎給一個美國人。**「Upon returning to the United States, Cliburn appeared in a Carnegie Hall concert with the Symphony of the Air, conducted by Kirill Kondrashin, who had led the Moscow Philharmonic in the prize-winning performances in Moscow. The performance of the Rachmaninoff 3rd Piano Concerto at this concert was subsequently released by RCA Victor on LP.」**——本盤就是這一段所指的那張 LP。",
+    "src": "https://en.wikipedia.org/wiki/Van_Cliburn"
+   },
+   {
+    "f": "同一條目記：他回國時紐約市為他辦了 ticker-tape parade，**「the only time the honor has been accorded a classical musician」**（史上唯一一次由古典音樂家獲此禮遇）；《時代》雜誌的封面故事稱他為「The Texan Who Conquered Russia」，美聯社在他過世時引 1958 年那篇報導說他像「Horowitz、Liberace 與 Presley 三個人合在一起」。他 1958 年那張《柴可夫斯基第一號鋼琴協奏曲》在 1958 年八、九月大半時間高踞 Billboard Top 200 冠軍，拿下當年葛萊美最佳古典演奏獎，1961 年獲金唱片認證，**1989 年成為史上第一張獲白金認證的古典專輯**，最終達三白金。",
+    "src": "https://en.wikipedia.org/wiki/Van_Cliburn"
+   },
+   {
+    "f": "英文維基〈Piano Concerto No. 3 (Rachmaninoff)〉記：這首協奏曲 1909 年夏天寫於德勒斯登、9 月 23 日完成，同年 11 月 28 日在紐約 New Theatre 首演，作曲家本人擔任獨奏、Walter Damrosch 指揮 New York Symphony Society；1910 年 1 月 16 日的第二次演出由馬勒指揮。作品題獻給 Josef Hofmann，**但 Hofmann 從未公開演過它，說這首「不適合」他**。同條目記這首曲子「has the reputation of being one of the most technically challenging piano concertos in the standard classical piano repertoire」，並記 Horowitz 1930 年的錄音室版本讓這首曲子在全世界流行起來。",
+    "src": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Rachmaninoff)"
+   },
+   {
+    "f": "Apple Music 上這份錄音至少有兩筆各自完整的三軌條目：**846125375**「Rachmaninoff: Concerto pour piano No. 3 (**Live**, Mono Version)」（Van Cliburn, Kirill Kondrashin & Symphony Of The Air Orchestra，℗ 1959 - BNF Collection 2014，3 軌全帶 previewUrl，逐軌 1046.9／638.5／887.4 秒，at／de／fr／gb／it／jp 六店）與 **922705395**「Masterpieces Presents Sergei Rachmaninoff: Piano Concerto No. 3 in D Minor, Op. 30」（Symphony of the Air, Kirill Kondrashin & Van Cliburn，℗ 2014 Masterpieces，3 軌全帶 previewUrl，逐軌 1052.6／638.9／906.5 秒，at／de／fr／gb／it 五店）。**922705395 的前兩軌與 MB 的 1052440／638226 毫秒幾乎逐毫秒相同。**",
+    "src": "https://itunes.apple.com/lookup?id=922705395&entity=song&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "唱片背面印著這是 1958 年 5 月 19 日那一晚的實況，不是錄音室",
+   "指揮就是三個星期前在莫斯科替他伴奏的那一位"
+  ],
+  "sound": "MB 該 release 的三軌毫秒值：第一樂章 1052.4 秒（17:32）、第二樂章 638.2 秒（10:38）、第三樂章 895.8 秒（14:56），全曲 2586.4 秒（43:06）。**三個樂章沒有一個短於十分半**，第一與第三樂章加起來就佔了全曲的四分之三。Apple 922705395 的前兩軌（1052.6／638.9 秒）與 MB 幾乎逐毫秒相同，第三軌 906.5 秒比 MB 多 10.7 秒——**那多出來的十秒多，正好是實況錄音末尾會有而唱片切軌時可長可短的部分**；Apple 846125375 的第三軌則是 887.4 秒，比 MB 少 8 秒。三組數字互核之後，可以確定是同一場演出的三種切法（MB release 曲長欄＋兩筆 Apple lookup 曲長欄）。",
+  "keyTracks": [
+   "Piano Concerto no. 3 in D minor, op. 30: I. Allegro ma non tanto",
+   "Piano Concerto no. 3 in D minor, op. 30: III. Finale: Alla breve"
+  ],
+  "status": "full",
+  "yearVerified": "本張是本批年份落差最小的一張，但**「錄音」這個詞本身要改**。(1) MB release-group 的 first-release-date 是 **1959**，與 Discogs release 4011664 的 year 1959 一致，指 RCA Victor Red Seal LSC-2355 這張 LP 的發行年。(2) **原始演出日期是 1958 年 5 月 19 日**，Discogs 說明欄逐字寫「Actual Carnegie Hall Performance of May 19, 1958」——**不是錄音室日期，是音樂會日期**；英文維基〈Van Cliburn〉也把這張 LP 描述成「a Carnegie Hall concert … subsequently released by RCA Victor on LP」，兩個來源一致。(3) **卡單的 1959 是原盤發行年**（不是再版年、也不是整編年），與演出只差約七個月，**是本批二十張裡唯一一張卡單年份就是原盤年的**。（策展層寫「錄音年 1958-05」方向正確，但把它當成錄音室錄音，見 notes。）",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=266971&entity=album&limit=200&country=<store>（Van Cliburn，gb 65／us 40／de 67／fr 65／at 62／it 65／jp 66 筆，未被上限截斷）後撈到兩筆各自完整的三軌條目：\n- **846125375**「Rachmaninoff: Concerto pour piano No. 3 (Live, Mono Version)」（BNF Collection，3 軌全帶 preview）——**gb／de／fr／at／it／jp 六店有，us 沒有**。\n- **922705395**「Masterpieces Presents …」（Masterpieces，3 軌全帶 preview）——**gb／de／fr／at／it 五店有，jp／us 沒有**。\n**建議取 846125375**：店面覆蓋較廣（多一個 jp），而且它的曲名直接標「Live」，與 Discogs 說明欄的「Actual Carnegie Hall Performance」對得上，版本語意最清楚。**若要曲長最貼近 MB 則取 922705395**（前兩軌幾乎逐毫秒相同）。**兩筆都不在 us 店面**，這一點要傳給下游。落空的原因是盤名語言——兩筆都用法文「Concerto pour piano No. 3」或加了系列前綴「Masterpieces Presents …」，卡單是英文「Rachmaninoff: Piano Concerto no. 3」。建議探測檔補：ready／gb／846125375／3 軌。\n**⚠ 這一格是本批最容易配錯的一格，Apple 上 Van Cliburn 名下至少有四份不同的拉赫第三號**：(a) 本盤 1958-05-19 Carnegie Hall／Kondrashin／Symphony of the Air（846125375、922705395、339921254）；(b) **1967 年蒙特勒現場、Sawallisch 指揮科隆 Gürzenich 管弦樂團**（290433511，曲名自己標明 Live Recording, Montreux 1967）；(c) 583198038「Sergei Rachmaninoff - Piano Concerto No.3 (1958)」掛的是 **Moscow Philharmonic Orchestra／Kondrashin**——**那是莫斯科決賽那一場，不是紐約這一場**；(d) 401475335／347382870／407707766／939786437 等把第三號與別的協奏曲併成一張的再發。**(c) 特別危險**：同一年、同一位指揮、同一首曲子，只有樂團不同，而且盤名的括號還寫著 (1958)。**行文與配對都必須用「Symphony of the Air」這個樂團名來分辨。**\n**擋下策展層說法（三處，其中一處與來源相反）**：\n1. curatorWhy 稱「RCA 特地把人請到紐約重錄」——**與來源相反**。Discogs 明寫這是 1958 年 5 月 19 日 Carnegie Hall 的**實況**，維基也寫是一場音樂會的演出後來由 RCA 發成 LP。**不是重錄，是把音樂會錄下來發行。行文不得寫「錄音室」「重錄」。**\n2. curatorWhy 稱池中既有的《Tchaikovsky: Piano Concerto no. 1》(1958)「是史上第一張銷量破百萬的古典唱片」——**要修正措辭**。維基寫的是它 1961 年獲金唱片認證、**1989 年成為第一張獲白金認證的古典專輯**。「第一張破百萬」與「第一張獲白金認證」不是同一件事（認證晚於實際銷量），**行文要用維基的措辭，不要自己換算**。\n3. curatorWhy 稱本盤是「他拿下首獎、回國受到紐約市遊行歡迎之後的第二張 RCA 唱片」——**「第二張」這個序數查不到來源**。可查證的只有：柴一那張是 1958 年的暢銷冠軍、本盤 1959 年發行。**擋下序數主張。**\n**查證通過、可以寫的**：(a) 紐約市為他辦的 ticker-tape parade 是**史上唯一一次由古典音樂家獲此禮遇**（維基原話）；(b) 指揮 Kondrashin 就是在莫斯科替他伴奏得獎演出的那一位，回美國後在 Carnegie Hall 又合作了一次（維基原話）；(c) 這首協奏曲題獻給 Josef Hofmann，而 Hofmann 從未公開演過它，說這首「不適合」他（維基〈Piano Concerto No. 3 (Rachmaninoff)〉）；(d) 決賽那天（1958-04-13）他彈的正是柴一與拉赫三這兩首，鼓掌八分鐘。\n盤名：MB 的 title 只寫「Concerto no. 3」（四個字，**極短，子字串比對會被任何含這幾個字的碟吃掉**），卡片補上作曲家與「Piano」。依第 91 條兩者不必相等，但**去重時一定要用完整字串**（第 162 條）。"
+ },
+ {
+  "key": "desc2:Van Cliburn|Prokofiev: Piano Concerto no. 3 / MacDowell: Piano Concerto no. 2",
+  "artist": "Van Cliburn",
+  "album": "Prokofiev: Piano Concerto no. 3 / MacDowell: Piano Concerto no. 2",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d3512db4 的欄位：title「**Prokofieff**: Concerto no. 3 / MacDowell: Concerto no. 2」（MB 用德式拼法 Prokofieff）、artist-credit「Prokofieff, Edward MacDowell; Van Cliburn, Chicago Symphony Orchestra, Walter Hendl」、first-release-date 1961、primary-type Album、secondary-types 空陣列、轄下 1 個 release（US 1961、RCA Victor Red Seal LSC-2507、status Official）。該 release 只建了兩軌（A 面＝普羅高菲夫全曲 1784000 毫秒、B 面＝麥克道威爾全曲 1685000 毫秒），**是以黑膠面為單位建檔的，不是逐樂章**。",
+    "src": "https://musicbrainz.org/release-group/d3512db4-a492-428d-bd3a-e7ceda404f59"
+   },
+   {
+    "f": "Discogs 上 RCA Victor Red Seal LSC-2507 有多筆壓片，year 都是 1961（4442690 德國立體聲版、6197153 好萊塢廠壓片、20750506 印第安納波利斯廠壓片，後者的說明欄記內頁說明文字的版權年是「© by Radio Corporation of America, **1961**」）；2020 年 Analogue Productions 以 AAPC 2507 重製發行（14844966，編號限量、Quality Record Pressings 壓片、Sterling Sound 後製）。**沒有任何一筆的說明欄標出錄音日期。**",
+    "src": "https://api.discogs.com/releases/20750506"
+   },
+   {
+    "f": "Apple Music collectionId 986838052「Prokofiev: Concerto pour piano No. 3 - MacDowell: Concerto pour piano No. 2 (**Mono Version**)」（Van Cliburn, Walter Hendl & Chicago Symphony Orchestra，℗ 1961 - BNF Collection 2015）的 lookup：collection 欄的 trackCount 記 **7**，但 entity=song 在 gb 與 fr 兩個店面都只攤得出 **6 軌**，六軌全部帶 previewUrl。六軌是普羅高菲夫第三號三個樂章（585.6／604.1／611.5 秒）與麥克道威爾第二號三個樂章（879.0／290.7／467.6 秒）。gb／de／fr／at／it／jp 六店查得到，**us 沒有**。",
+    "src": "https://itunes.apple.com/lookup?id=986838052&entity=song&limit=200&country=gb"
+   },
+   {
+    "f": "英文維基〈Van Cliburn〉的錄音段落把普羅高菲夫第三號列進他錄過的標準曲目名單：「Other standard repertoire Cliburn recorded include the Brahms Piano Concerto No. 2, Schumann Piano Concerto in A minor, Grieg Piano Concerto in A minor, Rachmaninoff Piano Concerto No. 2, Beethoven Piano Concerto No. 4 and No. 5 \"Emperor\", and the **Prokofiev Piano Concerto No. 3**.」——**這份名單裡沒有 MacDowell。**",
+    "src": "https://en.wikipedia.org/wiki/Van_Cliburn"
+   },
+   {
+    "f": "同一條目記：Cliburn 1958 年拿下第一屆莫斯科國際柴可夫斯基大賽首獎，回國時獲紐約市 ticker-tape parade（史上唯一一次由古典音樂家獲此禮遇）；RCA Victor 與他簽下獨家合約，1958 年那張柴一在 Billboard Top 200 拿下冠軍、獲當年葛萊美最佳古典演奏獎。1958 年全美鋼琴教師協會晚宴上，會長 Irl Allison 宣布捐出一萬美元設立以他為名的鋼琴大賽，**第一屆范‧克萊本國際鋼琴大賽於 1962 年 9 月 24 日至 10 月 7 日在德州基督教大學舉行**。截至 2023 年那一屆為止，**他仍是唯一贏得柴可夫斯基大賽鋼琴組的美國人**。",
+    "src": "https://en.wikipedia.org/wiki/Van_Cliburn"
+   },
+   {
+    "f": "Apple 上另有 collectionId 401475335「Rachmaninoff: Concerto No. 3; Prokofiev: Concerto No. 3」（Van Cliburn, Chicago Symphony Orchestra & Symphony of the Air，6 軌，releaseDate 1987-06-16，**gb／us／de／fr／at／it／jp 七店全有**），把本盤的普羅高菲夫那一半與本批第 10 張的拉赫第三號併成一張——**它同時撞到本批兩張卡，而且是七個店面裡覆蓋最完整的一筆**。",
+    "src": "https://itunes.apple.com/lookup?id=401475335&entity=album&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "A 面是俄國人寫的，B 面是美國人寫的，彈的人剛從莫斯科抱著首獎回來",
+   "同一張唱片上的兩首協奏曲，一首是曲目常客，一首當時幾乎沒人錄"
+  ],
+  "sound": "MB 該 release 以黑膠面為單位建檔：A 面（普羅高菲夫第三號全曲）1784.0 秒（29:44）、B 面（麥克道威爾第二號全曲）1685.0 秒（28:05），兩面幾乎等長——**這是一張把兩首協奏曲各塞滿一面的唱片**。Apple 986838052 把它拆成六軌：普羅高菲夫 585.6／604.1／611.5 秒（三個樂章長度幾乎相同，合計 1801.2 秒），麥克道威爾 879.0／290.7／467.6 秒（第一樂章比後兩樂章加起來還長，合計 1637.3 秒）。**兩邊的 A 面差 17 秒、B 面差 48 秒**——B 面那 48 秒的落差不能忽略，MB 的面級長度是否精確無法判斷，**行文不得引用單一樂章以外的秒數，也不得說兩面「等長」**（MB release 曲長欄＋Apple lookup 曲長欄）。",
+  "keyTracks": [
+   "Concerto no. 3 in C, op. 26 (Prokofiev)",
+   "Concerto no. 2 in D minor, op. 23 (MacDowell)"
+  ],
+  "status": "full",
+  "yearVerified": "(1) MB release-group 的 first-release-date 是 **1961**，Discogs 上 LSC-2507 的多筆壓片 year 也都是 1961，其中 20750506 的內頁說明文字版權年逐字印「© by Radio Corporation of America, 1961」——**卡單的 1961 是原盤發行年，有兩個獨立來源**。(2) **原始錄音年查不到直接來源**。Discogs 的 LSC-2507 各筆說明欄都沒有標錄音日期，MB 也沒有，Apple 那筆只有 ℗1961。**策展層寫的「錄音年 1960」沒有出處，行文不得使用。**（對照本批第 10 張：那一張的 Discogs 說明欄明寫「Actual Carnegie Hall Performance of May 19, 1958」，本張沒有對應的一句。）(3) 因此本張只能寫 **1961 年由 RCA Victor 以 LSC-2507 發行**，不得斷言錄音年份（第 18／46 條）。**這是本批少數幾張「卡單年份＝原盤發行年」的卡**，年份本身沒有爭議，有爭議的是錄音年。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。走藝人頁目錄端點 lookup?id=266971&entity=album&limit=200&country=<store>（Van Cliburn）撈到 collectionId **986838052**，再以 lookup?id=986838052&entity=song 在 gb 與 fr 兩店覆核：**六軌全部帶 previewUrl**，曲目＝普羅高菲夫第三號三樂章＋麥克道威爾第二號三樂章，正是本盤 A／B 兩面的內容。逐店面實測 **gb／de／fr／at／it／jp 六店有、us 沒有**。落空的原因是盤名法文化（Concerto pour piano）＋加了「(Mono Version)」後綴。建議探測檔補：ready／gb／986838052／6 軌。\n**⚠ 一個必須寫進備註的異常**：986838052 的 **collection 欄 trackCount 記 7，entity=song 只攤得出 6 軌**，gb 與 fr 兩個店面都一樣。依 c-97 第 11 條，曲目列要攤得開且每軌有 previewUrl——**六軌都有 preview、也涵蓋了原盤的全部內容，但 Apple 自己宣稱有第七軌而不列出**。下游上架時若有任何以 trackCount 為準的檢查，這一筆會被判「軌數對不上」。\n**⚠ 版本差異，上架必須註明**：本盤的原始發行是 **RCA Living Stereo LSC-2507（立體聲）**，Apple 986838052 明標「**Mono Version**」（對應的是 LM-2507 單聲道盤）。**兩者是同一場錄音的兩個版位**，行文不得提到立體聲，備註要寫明試聽來源是單聲道版。\n**不得採用的鄰居**：401475335「Rachmaninoff: Concerto No. 3; Prokofiev: Concerto No. 3」（6 軌，七店全有）把本盤的普羅高菲夫與本批第 10 張的拉赫第三號併成一張——**它同時撞到本批兩張卡，而且覆蓋率最高，是最容易被自動配對抓走的一筆**。1645417797「Tchaikovsky & Prokofiev: Piano Concertos」把柴一併進來（會再撞到池中既有的柴一卡）；347382870 只有 us 店面、同樣是拉赫＋普羅高菲夫的併輯。**三筆都缺 MacDowell，一律不得當本盤的試聽或封面來源。**\n**擋下策展層說法（三處，其中兩處無來源）**：\n1. curatorWhy 稱「1960 年與 Walter Hendl 指揮的芝加哥交響錄下」——**錄音年 1960 無來源**（見 yearVerified）。擋下。\n2. curatorWhy 稱麥克道威爾「是十九世紀末美國最早被歐洲樂壇接受的作曲家」——**查不到來源**，本次沒有取得麥克道威爾的條目佐證。擋下這個序數／地位主張。\n3. curatorWhy 稱這首協奏曲「在 1960 年代幾乎沒有其他現役錄音」——**查不到來源**，這是一個關於同期唱片市場的比較主張，需要唱片目錄統計才能成立。擋下。**可以改用的替代事實**：英文維基〈Van Cliburn〉列他錄過的標準曲目時，名單裡有普羅高菲夫第三號、**沒有麥克道威爾**——「連他自己的維基條目在列舉標準曲目時都沒把 B 面那一首算進去」是有來源、也更有味道的講法。\n4. curatorWhy 稱「Cliburn 用自己得獎後的商業分量把美國曲目帶進 RCA 的主線目錄」——這是**因果推論**，沒有來源。擋下。\n**查證通過可以寫的**：(a) 他 1958 年是第一屆莫斯科柴可夫斯基大賽首獎，**截至 2023 年那一屆仍是唯一贏得該賽鋼琴組的美國人**；(b) 紐約市為他辦的 ticker-tape parade 是史上唯一一次由古典音樂家獲此禮遇；(c) 1958 年就有人捐一萬美元設立以他為名的鋼琴大賽，第一屆 1962 年 9 月 24 日至 10 月 7 日在德州基督教大學舉行——**本盤發行的隔年**。\n作曲家拼法：MB 用「**Prokofieff**」（德式）、卡片與 Apple 用「Prokofiev」、Discogs 兩種都出現（4442690 的德國版曲目印德文「Konzert Für Klavier Und Orchester Nr.3」）。**去重與查詢兩種拼法都要掃**（第 50 條）。"
  }
 ]
