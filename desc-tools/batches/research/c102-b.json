@@ -714,5 +714,49 @@
   "status": "full",
   "yearVerified": "一致，2006。MB release-group first-release-date 2006-11-23，其下 2006-11-23 JP Official Chaos Union (Teslakite) CHTE-0038 為原盤，卡單年份 2006 相符、**不是復刻年**；2007 年的兩筆數位版與美國 Milan CD 都是隔年的再發。**作品年與原聲帶發行年要分開寫**：電影《パプリカ》**2006-09-02 威尼斯影展首映、2006-11-25 日本上映**（en 維基），原聲盤 **2006-11-23** 比日本上映**早 2 天**、比威尼斯首映晚 82 天——**同一年裡碟落在兩個「作品日期」之間**，行文提年份時要說清楚指的是哪一個。",
   "notes": "**unavailable 覆核成立：Apple 上真的沒有。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 76056888 在 jp 16 筆／us 9 筆／de 16 筆（**離 limit=200 的截斷線極遠**），六店目錄裡沒有パプリカ；`search` 端點另跑日文與英文兩種盤名與「Susumu Hirasawa Paprika」，回的全是別碟。**原因與本組另一張《千年女優》相同：兩張都是他自營的 Chaos Union／Teslakite 發行，整批沒有上 Apple。**⚠ **值得記一筆的是：MB 顯示 2007 年 Milan 曾在美國發行 CD（M2-36284）與數位版，但那批也沒有留在 Apple 上**——所以「有歐美發行」不等於「串流查得到」。\\n**⚠ 盤名撞字是本卡最強的假陽性**（策展層已寫，覆核成立）：Apple 上 1537765253（Foorin，2018）與 1537279370（米津玄師，2020）兩首同名單曲《パプリカ》是兒歌，**與本張毫無關係**；另有 1474247130《Paprika (Original Series Soundtrack)》(Vincent Artaud，2019) 是法國影集的原聲。**配對必須連「オリジナルサウンドトラック」一起比，下游不得改配上述任何一筆。**\\n**盤名四種寫法**（去重都要掃）：日文《パプリカ オリジナルサウンドトラック》、同編號的 English titles 版《“Paprika” Original Soundtrack》、數位版《Paprika (Original Soundtrack)》、美國 Milan 版《Paprika: Music from the Motion Picture》。\\n**別碟警示**：策展層已明寫刻意不釘 e7c6c955《Paprika》（2007 另一個 release-group）與 4c204285《映像のための音楽》（精選）。"
+ },
+ {
+  "key": "desc4:大野雄二|Original Soundtrack from Lupin III",
+  "artist": "大野雄二",
+  "album": "Original Soundtrack from Lupin III",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 10cd5905 的欄位：title「Original Soundtrack from Lupin III」、artist-credit「大野雄二」（藝人 MBID 49b6b461，名下 86 個 release-group）、first-release-date 1978-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release。",
+    "src": "https://musicbrainz.org/release-group/10cd5905-2af3-46e4-9729-c06e347699d7"
+   },
+   {
+    "f": "同一 RG 的 release 明細與**軌數落差**：**1978-01-25 JP Official Columbia YP-7071-AX 12\" Vinyl 是 10 軌**（原盤）；1985 Columbia 33C35-7575 CD 10 軌、1994-11-21 Columbia COCC-12206 CD 10 軌；1985 另一筆 Columbia release 11 軌；**2015-10-14 Columbia COCX-39261 Blu-spec CD 是 17 軌、2016-09-23 Columbia COKM-40032 數位版同為 17 軌，兩筆的標題都改成日文《ルパン三世 オリジナル・サウンドトラック》**。**原盤軌數是 10，不是 17。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=10cd5905-2af3-46e4-9729-c06e347699d7&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 1fece4ec（1978-01-25 JP Columbia YP-7071-AX，12\" Vinyl）的逐軌曲目：10 軌，**曲名全部是英文**——第 1 軌〈THEME FROM LUPIN III〉227 秒、第 2 軌〈SILHOUETTE〉262 秒、第 3 軌〈I MISS YOU BABE (,YES, I DO)〉273 秒、第 4 軌〈RED ROSES FOR THE KILLER〉277 秒、第 5 軌〈GOODNIGHT MOON-SHADOW〉174 秒、第 6 軌〈DANGEROUS ZONE〉234 秒、第 7 軌〈SUNSET FLIGHT〉129 秒、**第 8 軌〈MAGNUM DANCE~LONELY FOR THE ROAD〉492 秒是全碟最長**、第 9 軌〈LOVIN' YOU (LUCKY)〉199 秒、末軌〈LOVE THEME〉162 秒。對照 2015 年 COCX-39261 的 17 軌曲目列：**前 10 軌是同一份錄音、曲長逐軌相同，但標題全部換成日文**（〈ルパン三世のテーマ〉〈愛のシルエット〉〈抱いて、ルパン〉…），**第 11 至 17 軌是原盤沒有的シングル・ヴァージョン 與 編集前ヴァージョン**。",
+    "src": "https://musicbrainz.org/release/1fece4ec-adca-48ae-975f-3dd8922023e1"
+   },
+   {
+    "f": "Apple Music collectionId 1588676227《Lupin the Third Original Soundtrack》：**artistName 記成「ユー & ザ・エクスプロージョン・バンド」（jp／tw／hk）／「You & The Explosion Band」（us／gb／de），不是大野雄二**；releaseDate 1978-01-25、copyright「℗ 1978 Nippon Columbia Co., Ltd./NIPPONOPHONE」、**trackCount 17**，`entity=song` **攤得出 17 軌、17 軌全部有 previewUrl**。曲目列與 MB 的 **2015 年 17 軌版**逐位置相符（前 10 軌曲長與 1978 原盤逐軌只差 0 至 4 秒，第 11 至 17 軌是那七軌加曲）。**同一個 id 在 jp／us／gb／tw／hk／de 六個店面全部命中。**",
+    "src": "https://itunes.apple.com/lookup?id=1588676227&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "大野雄二 Apple 藝人頁 artistId 73404621 的目錄筆數 jp 101、us 97（未到 limit=200 的截斷值），**盤名含 LUPIN／ルパン 的共 75 筆，其中絕大多數是 1997 年之後的作品**（LUPIN the THIRD WALTHER P38 1997、da capo of love 1999、1$ MONEY WARS 2000、ALCATRAZ CONECTION 2001、Pt. III 2001、EPISODE:0 2002、Pt. IV ITALIANO 2015、Pt. V 2018、Pt. 6 LONDON 2021、vs Cat's Eye 2023 等）；1970–80 年代的只有 **1588676227（本張）、1588672667《Lupin the Third Original Soundtrack 2》(1978-12-10，13 軌)、1588676420《同 3》(1979-12-10，15 軌)、1588680244《Lupin the Third: The Castle of Cagliostro Original Soundtrack BGM》(1983-03-21，19 軌)** 四筆，另有 1612441979《Lupin the Third Original Sound Best Collection》(1992-08-21，15 軌) 與 1539321882《SPACE KID》(1978，大野自己的專輯)。",
+    "src": "https://itunes.apple.com/lookup?id=73404621&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈ルパン三世 (TV第2シリーズ)〉導言：モンキー・パンチ 漫畫原作，**1977 年 10 月 3 日至 1980 年 10 月 6 日**播出；**主角的紅色外套與〈ルパン三世のテーマ〉都是這一系列生出來的**，是把《ルパン三世》的形象定型的作品；約三年間製作 **155 話**，是全部電視系列中播放期間最長的一部。**本碟 1978-01-25 發行時，第 2 系列開播才 114 天、還在播出中。**",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%91%E3%83%B3%E4%B8%89%E4%B8%96_(TV%E7%AC%AC2%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA)"
+   }
+  ],
+  "hookCandidates": [
+   "1978 年那張黑膠上的十首曲名全是英文，2015 年復刻時整批換回日文",
+   "碟上架時那部片才播了不到四個月，之後一路播了三年、一百五十五話"
+  ],
+  "sound": "MB release 1fece4ec（Columbia YP-7071-AX）記 12 吋黑膠 **10 軌**，MB 未填總長；逐軌長度自 129 秒到 492 秒，最長的是第 8 軌〈MAGNUM DANCE~LONELY FOR THE ROAD〉492 秒（兩首曲子接成一軌），最短的是第 7 軌〈SUNSET FLIGHT〉129 秒。**十軌的標題全部是英文**，開場〈THEME FROM LUPIN III〉227 秒、收在〈LOVE THEME〉162 秒。**⚠ 2015 年 COCX-39261 起的復刻版是 17 軌、標題全部換成日文，多出來的第 11 至 17 軌是シングル・ヴァージョン 與 編集前ヴァージョン；行文寫軌數與曲名一律以原盤的 10 軌英文曲名為準。**",
+  "keyTracks": [
+   "THEME FROM LUPIN III",
+   "MAGNUM DANCE~LONELY FOR THE ROAD",
+   "LOVE THEME"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978。MB release-group first-release-date 1978-01-25，其下 1978-01-25 JP Official Columbia YP-7071-AX（12\" Vinyl）為原盤，卡單年份 1978 相符、**不是復刻年**；1985 的 33C35-7575、1994 的 COCC-12206、2015 的 COCX-39261、2016 的 COKM-40032 都是後來的再發。**作品年與原聲帶發行年要分開寫**：《ルパン三世》TV 第 2 系列 **1977-10-03 開播、1980-10-06 播畢 155 話**（ja 維基），本碟 **1978-01-25** 發行時作品開播才 114 天、還要再播兩年半——**作品年是一個橫跨三年的區間，不是單一年份**。**Apple 那筆雖然把 releaseDate 顯示成 1978-01-25、℗ 也寫 1978，但它的曲目列是 2015 年那個 17 軌版本**，日期不能當版本門檻（裁定 77）。",
+  "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready（但是加曲版）。** 正解 **1588676227**，**jp／us／gb／tw／hk／de 六個店面全部命中**、17 軌全部有 previewUrl。**探測落空有兩個原因疊在一起**：(1) **掛名不是作曲家**——Apple 把這張碟掛在樂團「ユー & ザ・エクスプロージョン・バンド／You & The Explosion Band」名下，不是大野雄二，所以他的藝人頁目錄（jp 101 筆、us 97 筆）撈不到，**只有 `search` 端點看得見**（c-101 第 8 條的形狀＋裁定 173）；(2) **盤名字序不同**——卡片與 MB 用《Original Soundtrack from Lupin III》，Apple 用《Lupin the Third Original Soundtrack》。\\n**⚠ 但它不是原盤的軌目，是加曲版（裁定 140／141）**：Apple 那筆 17 軌＝**原盤 10 軌（曲長逐軌只差 0 至 4 秒）＋七軌原盤沒有的シングル・ヴァージョン／編集前ヴァージョン**，而且**十軌的標題從 1978 年的英文全部換成了日文**。它對應的是 MB 上 2015-10-14 Columbia COCX-39261 Blu-spec CD 那一筆。**下游要鎖 `originalTrackCount=10`，行文不得把 17 當本碟軌數、也不得用日文曲名冒充 1978 年黑膠上的曲名。**\\n**別碟警示**：Apple 同一個樂團掛名底下另有 **1588672667《Lupin the Third Original Soundtrack 2》(1978-12-10，13 軌)、1588676420《同 3》(1979-12-10，15 軌)**——**盤名只差尾端一個數字，是裁定 168 的形狀**；還有 **1588680244《Lupin the Third: The Castle of Cagliostro Original Soundtrack BGM》(1983-03-21，19 軌)，那正是池中已有的那張卡**，不得與本卡混。策展層已明寫刻意不釘 dcae5ca1《Original Soundtrack 2》、49cdada1《同 3》、54dc40d2《カリオストロの城》、3f8286ee《パーフェクト・コレクション》、fd841d4a《ルパン三世 BOX》、eb5863c1《LUPIN THE BEST!》。\\n**掛名分裂要記**：MB 藝人實體名是日文「大野雄二」，Apple 的藝人頁用羅馬拼音 Yuji Ohno（artistId 73404621），**而本張在 Apple 上掛的又是樂團名**——同一張碟在池中可能出現三種寫法，去重都要掃（裁定 49）。\\n**擋下策展層一處說法**：`curatorRisk` 寫「他的 Apple 目錄裡 66 筆 LUPIN 相關**全部是** 1999 年之後 Lupintic 系列的重新錄音」——**與來源相反**。實掃 jp 目錄 101 筆，盤名含 LUPIN／ルパン 的有 **75 筆**，其中 **1588676227（本張 1978）、1588672667（1978）、1588676420（1979）、1588680244（1983）四筆是 1970–80 年代的原盤**，另有 1997 年的《WALTHER P38》。**行文不得寫「全部是重新錄音」。**"
  }
 ]
