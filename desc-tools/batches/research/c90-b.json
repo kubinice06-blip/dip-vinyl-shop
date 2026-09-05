@@ -796,5 +796,134 @@
   ],
   "status": "full",
   "notes": "**盤名兩說**：MB、Apple 與卡單用中文《美麗混亂》；中文維基的沿革段與作品表都用英文《Beautiful Chaos》——**而 Beautiful Chaos 正是這張碟第 7 軌的曲名**。依 `TW_INDIE_NAMING_RULINGS.md` 規則 3（中英並存取中文），卡片用《美麗混亂》正確；**行文可以點出這組對應，但不得斷言哪一個是「正式」名稱。**\n**日期分歧**：維基記 2012 年 11 月 13 日，MB 與 Apple 都記 2012-11-15。**兩票對一票，但差只有兩天且無實體佐證，行文不得寫到日，只寫 2012 年。**\n**廠牌兩層**：MB 記前衛花園（AG1305）、維基記前衛花園唱片，**Apple 的 ℗ 行是神奇小巷有限公司**。與同批《年年》同一個形狀（喜瑪拉雅 vs 神奇小巷）——**但「同一個形狀」這句歸納不入文（第 145 條）**，本張只寫自己這一筆並帶出處。\n**互斥分派——本張獨占「2012 年進來兩位新團員（吉他手大偉、鼓手陳翰）與 2010 年加入的大提琴手」這條編制線**，以及「中文碟名與第七軌英文曲名的對應」。同批《年年》不得寫編制變動。\n**第 33 條**：成員表只給了在團年份，**不得推論誰演奏了本張的哪一軌**，也不得寫「這是新編制的第一張」（沒有來源這麼說）。\n**本張查無獎項紀錄。**\n**試聽（複核 ready）**：`previews.json` 標 ready、front=tw、collectionId **6795121605**。本層以 `lookup?id=6795121605&country=tw&entity=song` 逐軌核對：**12 軌，曲名、曲序與 MB 逐項相同，逐軌曲長差在一秒內，十二軌全部帶 previewUrl**；掛名「熊寶貝樂團」、releaseDate 2012-11-15 與卡片年份相符；collectionName 沒有 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。**第 1 軌就是原盤第 1 軌〈不要輕易碰觸〉，但那一軌只有 1:26，下游若覺得試聽太短要換軌，必須按曲名換、不得按 Apple 軌號亂取（第 157 條的操作面）。維持 ready。**"
+ },
+ {
+  "key": "desc4:八十八顆芭樂籽|浪漫野球戰士列傳",
+  "artist": "八十八顆芭樂籽",
+  "album": "浪漫野球戰士列傳",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8f53bc14 的欄位：title《浪漫野球戰士列傳》、artist-credit「八十八顆芭樂籽」（藝人實體 2452f0f8，disambiguation 欄「88 balaz」）、first-release-date **2024**、primary-type **Album**、secondary-types **空**，轄下 1 筆 release：2024 TW Official，廠牌欄 GO MAN ZHI MUSIC CO.,LTD.，載體 CD、track-count 12。",
+    "src": "https://musicbrainz.org/release-group/8f53bc14-a45b-4c77-b511-f0769e8cf41f"
+   },
+   {
+    "f": "MB 那筆 release 的曲目表 12 軌與逐軌曲長：〈野球乾一杯〉5:20、〈窒息〉4:39、〈我要和棒球做愛〉4:18、〈炸雞之歌〉3:41、〈沒有同理心〉4:20、〈中年聖戰士〉3:52、〈殘暴的歌〉4:07、〈野球狼〉5:24、〈沒有窮過怎麼知道什麼是搖滾樂〉4:32、〈野球狂之詩〉5:34、〈恭喜你又活下來了一天〉4:33、〈我們回家吧〉3:54。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f53bc14-a45b-4c77-b511-f0769e8cf41f&inc=labels+media+recordings&fmt=json"
+   },
+   {
+    "f": "中文維基〈最佳樂團獎 (金曲獎)〉條目的 2025 年（第 36 屆）名單（該列帶文化部影視及流行音樂產業局的入圍名單與得獎名單兩份官方連結當引註）：**得獎者是 TRASH《幸福的末班車》**（華納國際音樂）；**八十八顆芭樂籽《浪漫野球戰士列傳》入圍未得**，報名單位欄寫「共勉之股份有限公司」；同獎項另四組入圍者為無妄合作社《開往天堂的海盜船》、JADE《Creeper》、美秀集團《美秀集團同名專輯》、AAA（HYUKOH & 落日飛車）《AAA》。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9C%80%E4%BD%B3%E6%A8%82%E5%9C%98%E7%8D%8E_(%E9%87%91%E6%9B%B2%E7%8D%8E)"
+   },
+   {
+    "f": "中文維基〈八十八顆芭樂籽〉條目的入圍欄記：2025 年第 16 屆金音創作獎**最佳樂團獎《浪漫野球戰士列傳》入圍**、**最佳搖滾專輯獎《浪漫野球戰士列傳》入圍**，以及最佳現場演出獎《【二巡的盡頭】Tour Final 台北 THE WALL LIVEHOUSE》入圍；同條目的獎項欄（榮獲）列 2001 年第 2 屆海洋音樂祭海洋大賞、2010 年第 1 屆金音創作獎最佳搖滾數位發表獎、2011 年第 2 屆金音創作獎最佳搖滾單曲獎、2013 年第 4 屆與 2016 年第 7 屆金音創作獎最佳現場演出獎、2016 年第 7 屆金音創作獎最佳搖滾專輯獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%81%E5%85%AB%E9%A1%86%E8%8A%AD%E6%A8%82%E7%B1%BD"
+   },
+   {
+    "f": "同條目說：八十八顆芭樂籽（88 balaz）是台灣樂團，成立於 1996 年；現任成員為阿強（主唱／吉他）、大頭（吉他）、冠伶（貝斯）、東祐（鼓手）；專輯欄列 2000《曹豹的野望》、2008《四十四隻石獅子》、2010《比獸還壞》、2012《比獸還帥》、2016《龐克佛洛伊德》、2020《我的心正為你這個中年翹臀燃燒著》、2024《浪漫野球戰士列傳》。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%8D%81%E5%85%AB%E9%A1%86%E8%8A%AD%E6%A8%82%E7%B1%BD"
+   },
+   {
+    "f": "Apple Music（**jp** storefront）collectionId 1783485028：collectionName **《Legend of the Romantic Baseball Warriors》**、artistName **「88balaz」**、releaseDate 2024-11-01、trackCount 12、copyright 欄 **「℗ 2024 台日爆音RECORDS」**；十二軌的曲名**全部是英文**（〈Yakyu kanpai〉〈Suffocation〉〈I want f*ck with baseball〉〈The Fried Chicken Song〉〈No Empathy〉〈Middle-Aged Holy Warrior〉〈Brutal Song〉〈Baseball Wolf〉〈How Can You Understand rock n roll Without Being Poor〉〈Ode to the Baseball Maniac〉〈Congratulations, You Survived!!〉〈Let's Go Home〉），曲序與逐軌曲長與 MB 的中文曲目表逐項對應。",
+    "src": "https://itunes.apple.com/lookup?id=1783485028&country=jp&entity=song"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌，六首的歌名裡有棒球",
+   "成軍第二十八年，這個團第一次入圍金曲獎最佳樂團"
+  ],
+  "sound": "MB 曲目表登錄 12 軌，逐軌曲長從最短的〈炸雞之歌〉3:41 到最長的〈野球狂之詩〉5:34；開場的〈野球乾一杯〉5:20 是次長的一軌。（本欄的原始值都在 facts 裡，未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "野球乾一杯",
+   "野球狂之詩",
+   "沒有窮過怎麼知道什麼是搖滾樂"
+  ],
+  "status": "full",
+  "notes": "**獎項三件事，三筆都是入圍未得**：(1) 2025 年**第 36 屆金曲獎最佳樂團獎**，作品《浪漫野球戰士列傳》，**入圍未得**（得獎者 TRASH《幸福的末班車》）——這一筆本層在〈最佳樂團獎 (金曲獎)〉條目上覆核過，該列引的是文化部影視及流行音樂產業局的官方入圍與得獎名單兩份連結，**不是單一條目的自述**；(2)(3) 2025 年**第 16 屆金音創作獎最佳樂團獎**與**最佳搖滾專輯獎**，作品同為本張，**都在〈八十八顆芭樂籽〉條目的「入圍」欄、不在「榮獲」欄**。**行文絕不可把任何一筆寫成得獎，也不可合併寫成「拿下三項」。** 該條目 2016 年以前的金音獎得獎紀錄講的是別張碟，**與本張無關、不寫**。\n**「第一次入圍金曲獎」要小心**：〈八十八顆芭樂籽〉條目的入圍欄裡，2025 年那筆是**唯一一筆金曲獎**，其餘全是金音創作獎——**hookCandidates 的第二條就是靠這個**。**行文若要用，只能寫成「條目列出的金曲獎入圍只有這一筆」，不得斷言「生涯首度入圍金曲獎」**（該條目掛著 {{refimprove}}{{Advert}}，不是完整的獎項檔案）。\n**成立年 1996 加上 2024，算出來是 28 年——這是算術（第 64 條），facts 沒有直接寫這個數字。行文不得寫「成軍二十八年」，只能分開寫兩個年份。** hook 第二條若被採用，寫作層必須改掉那個數字。\n**廠牌三說**：MB 記 GO MAN ZHI MUSIC CO.,LTD.、金曲獎報名單位欄記「共勉之股份有限公司」、**Apple 的 ℗ 行記「台日爆音RECORDS」**。前兩者的羅馬拼音與中文對得上，**但沒有來源明說兩者是同一家，行文不得斷言**；台日爆音 RECORDS 是第三個名字，一併帶出處。\n**掛名四種寫法**（`TW_INDIE_NAMING_RULINGS.md` 點名這是最容易漏 grep 的一組）：八十八顆芭樂籽（卡片正名）、88顆芭樂籽、88 Balaz／88balaz／88Balaz。**Apple 在 jp storefront 掛的是 88balaz、在 tw 的搜尋結果裡掛的是八十八顆芭樂籽。**\n**Discogs 全庫查無這張的建檔**（本層以「88 Balaz 浪漫野球」與盤名各搜一次，皆 0 筆），**發行細節只有 MB 與 Apple 兩個來源，行文不得正面斷言編號或條碼**（兩庫都沒有）。\n**試聽（本層推翻探測層）**：`previews.json` 標 unavailable，`tried` 欄的 `jp:1→0` 是關鍵——**探測層在日本店面搜到了一筆卻沒配上**，因為卡片盤名是中文、Apple 的 collectionName 是英文（第 152／158 條）。本層以中文團名在 jp storefront 搜到 collectionId **1783485028**，再以 `lookup?id=1783485028&country=jp&entity=song` 逐軌核對：**12 軌，曲序與逐軌曲長與 MB 的中文曲目表逐項對應（差在一秒內），十二軌全部帶 previewUrl**；collectionName 沒有 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何一種尾綴。⚠ **這張只在 jp 店面上架**：`lookup?id=1783485028&country=tw` 回 0 筆，tw 的藝人目錄裡也沒有它（第 137 條的形狀）。**判可用，建議 previews.json 改 ready、front=jp、collectionId 1783485028，並註明必須帶 `country=jp`。**"
+ },
+ {
+  "key": "desc4:糯米糰|青春鳥王",
+  "artist": "糯米糰",
+  "album": "青春鳥王",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 11a54b17 的欄位：title《青春鳥王》、artist-credit「糯米糰」（藝人實體 41aed5a2）、first-release-date **2000-11-01**、primary-type **Album**、secondary-types **空**，轄下 1 筆 release：2000-11-01 TW Official，廠牌欄 **魔岩唱片**、編號 **MSD-085**、barcode 4715122014960、載體 CD、track-count 12。",
+    "src": "https://musicbrainz.org/release-group/11a54b17-d45a-4b5f-a0b2-9f7cc3e64c12"
+   },
+   {
+    "f": "MB 那筆 release 的曲目表 12 軌與逐軌曲長：〈阿魯巴痢疾〉3:50、〈拜拜拜〉4:17、〈Funky People〉5:21、〈巴黎草莓〉5:07、〈青春小鳥〉3:08、〈沖脫炮蓋爽〉0:40、〈跆拳道〉3:05、〈Disco Night〉3:01、〈星期六晚上你要帶我去哪邊〉5:25、〈來不及〉3:46、〈蚋仔肉〉3:41、〈Outro〉3:08。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=11a54b17-d45a-4b5f-a0b2-9f7cc3e64c12&inc=labels+media+recordings&fmt=json"
+   },
+   {
+    "f": "Discogs release 9581130（Taiwan、**2000-09**、CD Enhanced、Magic Stone MSD-085、barcode 4715122014960）的掛名欄記 Lead Vocals 與 Guitar「馬念先」、Guitar 與 Backing Vocals「沈其翰」、Bass 與 Chorus「余光耀」、Drums 與 Backing Vocals「洪峙立」、Photography By「許熙正」；曲目表中英並列（〈阿魯巴痢疾 = A-Lu-Ba〉〈巴黎草莓 = Paris Strawberry〉〈青春小鳥 = Bird King〉〈跆拳道 = Tekwando〉〈蚋仔肉 = Clam〉等），末端另列「CD Plus」與「Video MTV」兩個位置；註記欄寫「18-page booklet, with mega-large obi surrounding the front and back of jewel case」。",
+    "src": "https://www.discogs.com/release/9581130"
+   },
+   {
+    "f": "中文維基〈糯米糰 (樂團)〉條目的獎項紀錄表：**2001 年第 12 屆金曲獎，糯米糰《青春鳥王》入圍最佳樂團獎、未得獎**；同屆**張時霖以〈跆拳道〉拿下最佳音樂錄影帶獎（得獎）**。同條目的編年段另記 2001 年 1 月獲中國時報年度 10 大最佳專輯、2001 年 3 月獲中華音樂人交流協會 2000 年娛樂十大華語音樂專輯。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%B3%AF%E7%B1%B3%E5%9C%98_(%E6%A8%82%E5%9C%98)"
+   },
+   {
+    "f": "同條目說：糯米糰（Sticky Rice）成立於 1994 年，原始成員有吉他手兼主唱馬念先、貝斯手余光燿、吉他手沈其翰、鼓手洪峙立；**1994 年組團時因為在一場比賽裡主辦單位要求出賽者一定要有個「團名」，四個人腦力激盪，既然提到「團、團、團」，乾脆取名為「糯米糰」，象徵四人的音樂就像糯米糰一般隨手可得**；1999 年底退伍後加入魔岩唱片，2000 年 11 月推出第 2 張專輯《青春鳥王》。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%B3%AF%E7%B1%B3%E5%9C%98_(%E6%A8%82%E5%9C%98)"
+   },
+   {
+    "f": "同條目的編年段另記：1997 年 4 月推出首張《同名專輯》；1998 年參與陳玉勳導演的電影《愛情來了》原聲帶創作、以〈愛情來了〉入圍第 34 屆金馬獎最佳原創電影歌曲（未得獎）；2001 年 7 月 26 日發行《Super EP》；2001 年底鼓手洪峙立離團。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%B3%AF%E7%B1%B3%E5%9C%98_(%E6%A8%82%E5%9C%98)"
+   },
+   {
+    "f": "Discogs 上另有同編號 MSD-085 的一筆 release 11455048（Taiwan、2000、CD Album Enhanced、Magic Stone Music Co., Ltd.），掛名建成英文「Sticky Rice」、標題《青春鳥王》；9581130 那一筆的標題則印作《青春鳥王 (巴黎草蛋)》。",
+    "src": "https://www.discogs.com/release/11455048"
+   }
+  ],
+  "hookCandidates": [
+   "團名是報名比賽時當場想出來的——因為表格上一定要填一個",
+   "同一張碟送進兩個獎項，樂團那個沒拿到，錄影帶那個拿到了"
+  ],
+  "sound": "MB 曲目表登錄 12 軌，逐軌曲長從最短的〈沖脫炮蓋爽〉0:40 到最長的〈星期六晚上你要帶我去哪邊〉5:25；末軌是一段 3:08 的〈Outro〉。Discogs 的實體另在曲目表末端掛了「CD Plus」與「Video MTV」兩個位置，格式欄標 Enhanced。（本欄的原始值都在 facts 裡，未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "跆拳道",
+   "巴黎草莓",
+   "阿魯巴痢疾"
+  ],
+  "status": "full",
+  "notes": "**年份：策展層的 2000 成立，本層再加一個獨立來源。** 中文維基〈糯米糰 (樂團)〉的編年段明寫「2000 年 11 月，推出第 2 張專輯《青春鳥王》」，與 MB release（2000-11-01）、Discogs 兩筆同編號實體（MSD-085）一致。**候選清單的 1998 一說在四個來源上都不成立，行文不得提。** 唯一的小落差是 Discogs 9581130 的 released 欄寫 2000-09、MB 寫 2000-11-01，**同年，行文不寫到月。**\n**獎項三件事，兩筆要分開講**：2001 年**第 12 屆金曲獎**——(a)**最佳樂團獎**，作品《青春鳥王》，**入圍未得**；(b)**最佳音樂錄影帶獎**，入圍者是**張時霖**、作品是〈跆拳道〉，**得獎**。**兩筆的獎項、掛名對象、結果都不同，絕不可合併寫成「拿下金曲獎」或「入圍兩項」。** 另兩筆是媒體與協會的年度榜（中國時報年度 10 大最佳專輯、中華音樂人交流協會十大華語音樂專輯），**要寫必須具名主辦者**（第 128 條、`qa-batch` 的未具名榜單標記）。1997 年的第 34 屆金馬獎那筆是**別張作品**（《愛情來了》原聲帶），**不得與本張混講**。\n**盤名的第二種寫法**：Discogs 9581130 把標題印作《青春鳥王 (巴黎草蛋)》，而同一份曲目表的第 4 軌是〈巴黎草莓 = Paris Strawberry〉。**「草蛋」與「草莓」的落差只有這一個來源支持，行文不得引用括號那一半。**\n**互斥分派——本張獨占「團名是報名比賽時當場取的」這條線**（本批只有這一張糯米糰卡，無跨卡衝突）。\n**掛名的漢字**：維基導言寫貝斯手「余光燿」、Discogs 掛名欄寫「余光耀」，**兩種寫法都出現過，行文若要點名只寫馬念先（兩庫一致）**。\n**反向禁令（第二類）**：2003 年主唱馬念先開刀、2008 年他在《海角七號》演出、2004 年後樂團停止活動、2012 年復出——**都是與本作無關的後續生平事件，一律不寫。**\n**試聽**：探測層標 unavailable，八個 storefront 的 tried 幾乎全是 0→0。本層做了兩條路徑：(1) tw storefront 搜中文團名「糯米糰」→ 回 9 筆，涵蓋 1997《糯米糰》、2001《Super EP》、2003《迷你專輯 (貳)》、2003《903 id club 拉闊音樂會》、2008《馬拉桑醉飽精選》、2021《別急著說愛我到天長地久 20》、2022〈Finger Good〉，**唯獨沒有 2000 年的《青春鳥王》**；(2) tw 搜盤名「青春鳥王」→ 10 筆全是無關的西方古典條目。**確認 Apple 台灣沒有這張，維持 unavailable。**"
+ },
+ {
+  "key": "desc4:Various Artists|藏金閣第壹卷：Metal Treasure Attic 1",
+  "artist": "Various Artists",
+  "album": "藏金閣第壹卷：Metal Treasure Attic 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f2854491 的欄位：title《藏金閣第壹卷: Metal Treasure Attic 1》、artist-credit 串起六個名字「ChthoniC / Manum / 刺客 / 詛咒 / 火舞 / 雪舞」、first-release-date **2001-02-15**、primary-type **Album**、secondary-types **空**，轄下 1 筆 release：2001-02-15 TW Official，廠牌欄 **Fredmosa Records 編號 CIRD1110** 與 **Taiwan Rock Ally**，載體 CD、track-count 9。",
+    "src": "https://musicbrainz.org/release-group/f2854491-f806-4971-9a1b-17848bf4402c"
+   },
+   {
+    "f": "MB 那筆 release 的曲目表**逐軌各有自己的 artist-credit**：第 1 軌〈真實的色彩〉5:27 與第 2 軌〈心情輓歌〉5:21 掛**火舞**；第 3 軌〈重生〉7:41 掛**雪舞**；第 4 軌〈幽游冥河 演秦版本〉7:00 與第 5 軌〈永固邦稷 (remix 版)〉掛**閃靈**；第 6 軌〈Silent Scream〉6:10 掛**詛咒**；第 7 軌〈Sorry〉與第 8 軌〈No〉掛**刺客**；第 9 軌〈末世滅神錄〉掛 **Manum**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f2854491-f806-4971-9a1b-17848bf4402c&inc=labels+media+recordings+artist-credits&fmt=json"
+   },
+   {
+    "f": "Discogs release 9585456（Taiwan、2001、CD、barcode 4719672001104）把標題印作 **《藏金閣 (第壹卷) = Metal Treasure Attic 1》**，廠牌欄記 Fredmosa Records CIRD1110 與 Taiwan Rock Ally CIRD1110、公司欄記 Record Company「TRA Music」；genre 欄 Rock、style 欄 Thrash／Death Metal／Speed Metal／Heavy Metal；註記欄寫「24-page booklet, plus obi」；九軌的曲長為 5:20、5:16、7:40、6:57、7:46、6:05、5:31、2:24、6:09。",
+    "src": "https://www.discogs.com/release/9585456"
+   },
+   {
+    "f": "同一條 Discogs 條目的 identifiers 欄除 barcode 外另列「CIRD-1110」與「IFPI LE91」。",
+    "src": "https://www.discogs.com/release/9585456"
+   },
+   {
+    "f": "MusicBrainz release-group 1827c0a2《反中國併吞: Anti China Invasion Live》(2002-06) 的 release 廠牌欄同樣是 Fredmosa Records、編號 **CIRD1082**——與本張的 CIRD1110 屬同一組編號序列。",
+    "src": "https://musicbrainz.org/release-group/1827c0a2-2259-4b65-a2ce-fa30b07037ac"
+   }
+  ],
+  "hookCandidates": [
+   "九軌分給六個團，最少的一個團只有一軌",
+   "同一組編號的下一張，兩年後換成一張現場錄音"
+  ],
+  "sound": "Discogs 登錄的九軌曲長從最短的〈No〉2:24 到最長的〈永固邦稷 Remix版〉7:46；MB 的同一份曲目表只填了其中六軌的曲長，兩庫都有值的那幾軌差在數秒內。（本欄的原始值都在 facts 裡，未引用任何未查證的音色形容。）",
+  "keyTracks": [
+   "幽游冥河 演秦版本",
+   "重生",
+   "Silent Scream"
+  ],
+  "status": "full",
+  "notes": "**性質**：MB 的 primary-type 是 Album、secondary-types **空**（不是 Compilation），依 §5.6 照一般 Album 寫法，`releaseType` 填 Album、例外欄位留空——策展層的處理正確。**但這實質上是一張場景型合輯**，行文必須寫清楚它是多團拼盤、**不得寫成任何一個團的專輯**（池中已有閃靈四張，尤其不可與那四張混講）。\n**逐軌掛名是本張最硬的材料**：MB 的曲目表逐軌帶各自的 artist-credit，**九軌分屬六個團**——火舞兩軌、雪舞一軌、閃靈兩軌、詛咒一軌、刺客兩軌、Manum 一軌。**這是可以直接數的完整陳述（第 108／110 條的「完整清單」形態），可寫。**\n**掛名寫法**：MB 的 release-group artist-credit 把閃靈寫成英文 ChthoniC，但**逐軌的 artist-credit 寫的是中文「閃靈」**。卡片依卡池既有場景型合輯的先例掛 Various Artists，六個團名進 aliasReview——**行文提到閃靈時一律用中文**（依 `TW_INDIE_NAMING_RULINGS.md` 規則 3；該檔是本 repo 的內部裁定表，不是可引用的來源，故未列入 facts）。\n**廠牌**：Fredmosa Records 是水晶唱片的英文廠牌名，編號 CIRD1110 落在水晶的正編號序列上；Discogs 另記 Taiwan Rock Ally 與 TRA Music。**三個名字都有來源，行文要帶出處，不得只寫「水晶唱片發行」。**\n**互斥分派——本張獨占「CIRD 這組編號序列」與「金屬曲風分類（Discogs 的 style 欄）」這兩條線**。同批的《反中國併吞》分到的是它自己的三段式曲目結構與現場性質，**兩張 VA 卡不得互相重述。**\n**第 136 條**：Discogs 的 style 欄寫 Thrash／Death Metal／Speed Metal／Heavy Metal，**只能寫成「Discogs 的 style 欄寫的是」**，不得寫成本張「被公認為」什麼。\n**第 109 條**：「24 頁小冊加腰帶」只能寫成註記欄寫，不得推論稀有度或二手價。\n**曲名照抄**：第 4 軌 MB 與 Discogs 都寫「幽游冥河 演秦版本」（兩庫一致），**照原樣抄，不要替它改字。**\n**試聽**：探測層標 unavailable，`tried` 顯示 tw／hk／sg／my／jp 各搜到 1 筆卻都沒配上（`1→0`）。本層在 tw storefront 以「藏金閣」「藏金閣第壹卷」「Metal Treasure Attic」三種字串重搜，**中文兩次都是 0 筆、英文一次 0 筆**；唯一回到的一筆是無關的〈半卷闲书 一缕沉香〉。**確認 Apple 台灣沒有這張，維持 unavailable。**"
  }
 ]
