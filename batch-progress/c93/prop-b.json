@@ -1,0 +1,485 @@
+[
+ {
+  "artist": "Magma",
+  "album": "Kobaïa",
+  "year": 1970,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Philips（FR 原盤 6 621 032）／Seventh Records（1988 REX IV／REX V）",
+  "why": "Magma 的首張專輯，1970 年 Philips 雙 LP 6 621 032，也是 Christian Vander 自創語言 Kobaïan 與整套虛構星球敘事的起點——後面所有 Magma 專輯的設定都從這張開始。實掃 seed_cards.json 全 14,424 列，池中 Magma 只有兩張：1973《Mëkanïk Dëstruktïw Kömmandöh》（頂點 heresy）與 1974《Köhntarkösz》。也就是說池裡有中期兩張、卻沒有起點。1988 年 Vander 自營的 Seventh Records 把全目錄收回自行再發（REX 編號序），本張為 REX IV／REX V。MB release-group 8d34e575 轄下 8 個 release 全部 Official（FR5／JP1／XW2）。",
+  "risk": "Apple FR 有確切條目：collectionId 1719595176（notExplicit、店面 fr、releaseDate 1970-01-01）；us／gb 店面搜不到，依裁定第 158 條法語盤要用 fr 店面查，封面與試聽都應優先走 fr。盤名帶分音符 ï，外部服務多半會正規化，Kobaia 進 queryAlias。MB 另有 d12cee75《Kobaïa / Mûh》(1970) 是同期單曲，型別為 Single。",
+  "mbNote": "釘 release-group 8d34e575-a50c-3fa5-8728-36381f3b2ac1。回問 release-group/<id>?inc=artist-credits+releases 確認：title「Kobaïa」、artist-credit「Magma」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 8 個 release（FR5／JP1／XW2，全部 Official），FR 原盤 Philips 6 621 032、1988 Seventh Records REX IV／REX V、2008-11-20 Seventh Records 274 1700／274 1701。刻意不釘：d12cee75-c2c4-4097-9458-e7819c1d3a49《Kobaïa / Mûh》（1970，primary-type Single，同名的同期單曲）。藝人 MBID 7f89e84d-4c35-4d53-a965-4f3ce1c4ef4f（法國 Magma；MB 另有波蘭 5fb16c93 與德國 5e71484a 兩個同名藝人實體，均非本團），名下 77 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kobaia；Magma Kobaïa",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Magma",
+  "album": "1001° Centigrades",
+  "year": 1971,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Philips（FR 原盤 6397 031）／Seventh Records（1993 REX VI）",
+  "why": "Magma 第二張專輯，1971 年 Philips 6397 031，是 Kobaïa 敘事三部曲的第二部；當時樂團仍是大編制銅管陣容，Teddy Lasry、Louis Toesca 等管樂手掛名其中。池中 Magma 只有 1973、1974 那兩張中期作，Philips 時期的兩張（1970 首張與本張）皆缺。1993 年 Seventh Records 以 REX VI 再發、2008 年再以 274 1702 重版。MB release-group 8ee2e6b7 轄下 6 個 release 全部 Official（FR4／XW1／未填1）。",
+  "risk": "盤名數字寫法兩派：MB 的 release-group 與全部 FR release 作「1.001° Centigrades」（法式千位點），Apple FR 作「1001° centigrades」（collectionId 1719590118、notExplicit、店面 fr、releaseDate 1971-01-01），原盤封面與 Discogs 通行寫法皆為「1001° Centigrades」。卡片依裁定第 50 條取原盤寫法《1001° Centigrades》，MB 的 1.001° 形式與 Apple 的小寫 c 形式全部進 queryAlias；依裁定第 91 條，RG 標題與卡片盤名不必相等，`fix-rgmbid` 不得因此判定對不上。MB 另有一筆 XW release 標題作「Magma 2」（Seventh Records 的系列命名），同一個 RG 內部就有兩種盤名。",
+  "mbNote": "釘 release-group 8ee2e6b7-2c8f-367a-ab03-fa54cc70cfaf。回問確認：title「1.001° Centigrades」、artist-credit「Magma」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 6 個 release（FR4／XW1／未填1，全部 Official），FR 原盤 Philips 6397 031、1993-02-08 Seventh Records REX VI、2008-11-20 Seventh Records 274 1702；另有一筆 XW Seventh Records 盤標題作「Magma 2」。MB 名下無第二筆標題含 Centigrades 的 release-group。藝人 MBID 7f89e84d-4c35-4d53-a965-4f3ce1c4ef4f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "1.001° Centigrades；1001 Centigrades；1001° centigrades；Magma 2",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Magma",
+  "album": "Ẁurdah Ïtah",
+  "year": 1974,
+  "genres": [
+   "rock"
+  ],
+  "label": "Barclay（FR 1974 原盤 80.528，盤名作《Tristan et Yseult》）／Seventh Records（1989 REX IX）",
+  "why": "1974 年為 Yvan Lagrange 的電影《Tristan et Yseult》所錄的一張，原盤即以片名發行（Barclay 80.528），1989 年 Vander 的 Seventh Records 以 Kobaïan 原題《Ẁurdah Ïtah》再發、此後所有版本沿用再發名。這張與同年《Köhntarkösz》是 Magma 1974 年的兩張，池中已有《Köhntarkösz》、卻沒有這一張；它也是《Mëkanïk Dëstruktïw Kömmandöh》敘事的第一部（三部曲的時序起點），與池中那張頂點 heresy 卡直接相關。MB release-group 1af65602 轄下 8 個 release 全部 Official（FR5／JP1／XW2）。",
+  "risk": "盤名依裁定第 45 條取再發名：原盤沒有用本題（印的是電影名《Tristan et Yseult》），再發才正式命名——與 Debris'《Static Disposal》、Opus Avantra《Introspezione》同型。《Tristan et Yseult》必須進 queryAlias，否則查 1974 原盤會落空。字母 Ẁ（W 加重音）與 Ï 在多數服務會被正規化：Apple US 作「Wurdah itah (2020 Remastered)」（collectionId 1536020260、notExplicit、店面 us、12 軌），fr／gb 店面本次未命中，ASCII 形 Wurdah Itah 一併進 queryAlias。MB 同一 RG 內 2012／2020 兩筆 release 標題已改用 ASCII 的「Wurdah Itah」。",
+  "mbNote": "釘 release-group 1af65602-8ccb-37fd-9cd7-6c1f331e5d2c。回問確認：title「Ẁurdah Ïtah」、artist-credit「Magma」、first-release-date 1974、primary-type Album、secondary-types 空、轄下 8 個 release（FR5／JP1／XW2，全部 Official）：1974 FR Barclay 80.528 標題「Tristan et Yseult」、1989 FR Seventh Records REX IX 標題「Ẁurdah Ïtah」、2008-11-20 Seventh Records 274 1704、2012／2020 兩筆標題作「Wurdah Itah」。同一 RG 內有三種盤名寫法，屬裁定第 91 條「RG 標題與卡片盤名不必相等」的正面案例。MB 名下無同名雙胞胎。藝人 MBID 7f89e84d-4c35-4d53-a965-4f3ce1c4ef4f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wurdah Itah；Tristan et Yseult；Ẁurdah Ïtah",
+  "reissuedBy": "Seventh Records（1989 REX IX，Christian Vander 自營廠牌）",
+  "g": "b"
+ },
+ {
+  "artist": "Magma",
+  "album": "Üdü Wüdü",
+  "year": 1976,
+  "genres": [
+   "rock"
+  ],
+  "label": "Utopia（FR 原盤 BUL 1-1730）／Tomato（US 1977 TOM-6001）",
+  "why": "Magma 1976 年的專輯，法國 Utopia BUL 1-1730 發行、隔年美國 Tomato TOM-6001 發行，是樂團第一次同時在法美兩地正式流通的一張；貝斯手 Jannick Top 的〈De Futura〉佔整個 B 面。池中 Magma 只有 1973 與 1974 兩張，1976 年之後的目錄完全缺席；本張與《Kobaïa》《1001° Centigrades》《Ẁurdah Ïtah》一起，把 Magma 1970–1976 的六張正規作在池中補到六分之六。MB release-group ffb5a527 轄下 13 個 release 全部 Official（FR6／GB3／JP2／US1／XW1）。",
+  "risk": "盤名有三種寫法：MB 的 release-group 標題作「Üdü Ẁüdü」（第二個 W 帶重音）、1976 FR 原盤 release 標題作「Üdü Wüdü」（一般 W）、XW Seventh Records 盤作「Udü Wüdü」。卡片依裁定第 50 條取原盤 release 的《Üdü Wüdü》，另外兩種寫法與 ASCII 形 Udu Wudu 全部進 queryAlias；依裁定第 91 條 RG 標題與卡片盤名不等不算錯。Apple GB 命中兩組：1541002705「Üdü wüdü (2020 Remastered Version)」7 軌與 379203040／379202120「Udu Wudu」6 軌（皆 notExplicit、店面 gb），軌數不同，下游取試聽要標明用的是哪一版。",
+  "mbNote": "釘 release-group ffb5a527-3d9a-3933-a5d6-01139ecc6638。回問確認：title「Üdü Ẁüdü」、artist-credit「Magma」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 13 個 release（FR6／GB3／JP2／US1／XW1，全部 Official），1976 FR Utopia BUL 1-1730（release 標題「Üdü Wüdü」）、1977 US Tomato TOM-6001、1988 GB Charly Records CD CHARLY 105、XW Seventh Records（release 標題「Udü Wüdü」）。MB 名下無同名雙胞胎。藝人 MBID 7f89e84d-4c35-4d53-a965-4f3ce1c4ef4f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Üdü Ẁüdü；Udu Wudu；Udü Wüdü",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Robert Wyatt",
+  "album": "The End of an Ear",
+  "year": 1970,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "CBS（GB 原盤 S 64189）",
+  "why": "Robert Wyatt 的第一張個人專輯，1970 年 12 月 CBS S 64189，錄於他仍是 Soft Machine 鼓手的時期（《Third》與《Fourth》之間）。池中 Wyatt 只有 1974《Rock Bottom》與 1985《Old Rottenhat》兩張，1970 年這張首作與 1975《Ruth Is Stranger Than Richard》都不在——而《Rock Bottom》之所以被當成分水嶺，正是相對於這張與 Soft Machine 時期而言。MB release-group 819920d1 轄下 6 個 release 全部 Official（GB3／JP2／XE1），1999 年 Columbia 493342 2、2005 年 Sony Japan MHCP 620 再發。",
+  "risk": "Apple GB collectionId 529102031（notExplicit、店面 gb、releaseDate 1971-01-01），MB 記 1970-12-04；Apple 記的是隔年，屬裁定第 77 條「Apple 的 releaseDate 只能當訊號」。年份採 MB 與 GB 原盤的 1970。盤名《The End of an Ear》是常見片語，去重要 artist+album 成對比對。",
+  "mbNote": "釘 release-group 819920d1-d513-3138-ad7e-18e16a224c79。回問確認：title「The End of an Ear」、artist-credit「Robert Wyatt」、first-release-date 1970-12-04、primary-type Album、secondary-types 空、轄下 6 個 release（GB3／JP2／XE1，全部 Official），GB 原盤 CBS S 64189、1980 CBS 31846、1999-02-08 XE Columbia 493342 2、2005-03-02 JP Sony Records International MHCP 620。MB 名下無同名雙胞胎。藝人 MBID 9f041c61-f382-4048-a1f1-33105124bb99（Canterbury scene 那一位；MB 另有同名攝影師 f7940254，非本人），名下 69 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Robert Wyatt End of an Ear",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Robert Wyatt",
+  "album": "Ruth Is Stranger Than Richard",
+  "year": 1975,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "Virgin（GB 原盤 V 2034）",
+  "why": "Robert Wyatt 在《Rock Bottom》之後的下一張，1975 年 Virgin V 2034，也是他 1970 年代最後一張錄音室專輯（此後到 1985 年《Old Rottenhat》之間只有單曲與合輯）。池中 Wyatt 剛好就是《Rock Bottom》與《Old Rottenhat》兩張——中間十年的唯一一張正規專輯就是本張，這是「兩張既有卡之間的那一格」。MB release-group 5ef4a8d5 轄下 7 個 release 全部 Official（GB4／XE2／US1），1989 年 Virgin CDV 2034、1998 年 Thirsty Ear THI 57044.2 再發。",
+  "risk": "Apple GB collectionId 292514307（notExplicit、店面 gb、releaseDate 1975-05-30），MB 只記到年份 1975，兩者不衝突。盤名長且獨特，撞卡風險低。MB 有兩筆完全相同編號（Virgin CDV 2034）的 XE release 重複建檔，屬 MB 資料面重複，不影響釘位。",
+  "mbNote": "釘 release-group 5ef4a8d5-9f83-3bad-9eae-5990421246bb。回問確認：title「Ruth Is Stranger Than Richard」、artist-credit「Robert Wyatt」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 7 個 release（GB4／XE2／US1，全部 Official），GB 原盤 Virgin V 2034、1989 XE Virgin CDV 2034（兩筆重複建檔）、1998 US Thirsty Ear THI 57044.2。MB 名下無同名雙胞胎。藝人 MBID 9f041c61-f382-4048-a1f1-33105124bb99。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ruth Is Stranger Than Richard",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Robert Wyatt",
+  "album": "Shleep",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Hannibal（GB 原盤 HNCD 1418）／Thirsty Ear（US 1998 THI57040.2）",
+  "why": "Robert Wyatt 1997 年的專輯，Hannibal HNCD 1418，是他 1990 年代之後最常被引用的一張，Brian Eno、Paul Weller、Philip Catherine、Evan Parker 等人參與錄音。池中 Wyatt 兩張分別落在 1974 與 1985，1990 年代之後零張；本張與《The End of an Ear》《Ruth Is Stranger Than Richard》一起，把他 1970／1975／1997 三個時期各補一張，讓池中的 Wyatt 從兩張孤點變成一條可讀的線。MB release-group aa501697 轄下 4 個 release 全部 Official（GB2／US1／XW1），2008 年 Domino REWIGCD45 再發。",
+  "risk": "Apple GB collectionId 293646984（notExplicit、店面 gb、releaseDate 1997-11-01），MB 記 1997-09-29，差約一個月，依裁定第 77 條 Apple 日期不當版本門檻。盤名《Shleep》為自造詞，外部查詢常被拼字修正成 sleep，queryAlias 需含 Sleep 以外的完整字串「Robert Wyatt Shleep」。",
+  "mbNote": "釘 release-group aa501697-af7b-34c2-9276-03118977f9fe。回問確認：title「Shleep」、artist-credit「Robert Wyatt」、first-release-date 1997-09-29、primary-type Album、secondary-types 空、轄下 4 個 release（GB2／US1／XW1，全部 Official），GB 原盤 Hannibal HNCD 1418、1998-01-20 US Thirsty Ear THI57040.2、2008-11-17 GB Domino REWIGCD45。MB 名下無同名雙胞胎。藝人 MBID 9f041c61-f382-4048-a1f1-33105124bb99。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Robert Wyatt Shleep",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "This Heat",
+  "album": "Repeat",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "These Records（GB 原盤 These 6 CD）／This Is（2006 this is 5）",
+  "why": "This Heat 只錄過兩張正規專輯（1979 年同名首張、1981《Deceit》），兩張都已在池中且都是頂點 heresy 卡。剩下的目錄只有兩個品項，本張是其一：1993 年 These Records（樂團自己的通路）把〈Health and Efficiency〉與長篇〈Graphic/Varispeed〉整成一張 CD 發行，MB release-group f798f048 的 primary-type 是 Album、secondary-types 為空。2006 年 This Is 廠牌以 this is 5 再發。要把這個團在池中補深，能補的就是這兩個品項——不是去挖冷門，是這個目錄本來就只有四格。MB 轄下 2 個 release 皆 GB／Official。",
+  "risk": "Apple GB 把它標成 EP：collectionId 1526177110「Repeat - EP」（notExplicit、店面 gb、releaseDate 1993-08-27）。MB 的 primary-type 是 Album，依 §1 收錄以 MB 為準；Apple 的 EP 後綴要在標題比對時剝掉，且不得因此改判 releaseType。盤名《Repeat》只有六個字母，是裁定第 162 條「短盤名被更長的別碟包住」的高風險形狀——MB 另有 1e100296《Health and Efficiency / Repeat》(1998，EP+Compilation)，子字串比對必然命中，已明列為不釘。",
+  "mbNote": "釘 release-group f798f048-7189-3823-a1db-6837289739f1。回問確認：title「Repeat」、artist-credit「This Heat」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 2 個 release（GB2，全部 Official），1993 These Records These 6 CD、2006 This Is this is 5。刻意不釘：1e100296-a579-44ea-8097-55e73a346615《Health and Efficiency / Repeat》（1998，primary-type EP＋secondary Compilation，盤名整段包含本張標題）、3fd03287-c292-353e-be91-951cede35243《Health and Efficiency》（1980，primary-type EP，本張其中一軌的原始單曲）。藝人 MBID 8e538a69-fc3b-43e1-9a6b-801ea56d6d48，名下 19 個 release-group（分頁全列，數量少但仍以分頁確認）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Repeat - EP；This Heat Repeat",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "This Heat",
+  "album": "Made Available: John Peel Sessions",
+  "year": 1996,
+  "genres": [
+   "rock"
+  ],
+  "label": "These Records（GB 原盤 THESE 10 CD）／This Is（2006 this is 4）",
+  "why": "This Heat 目錄的第四個品項：1977 年為 BBC John Peel 節目錄的兩次 session，1996 年由 These Records 以 THESE 10 CD 首次正式發行，2006 年 This Is 以 this is 4 再發。池中 This Heat 兩張（同名首張、《Deceit》）都是頂點 heresy 卡，這批把剩下兩個品項一併補上，該團在池中就是完整目錄。MB release-group 5f5e93e7 的 primary-type 為 Album、secondary-types 為空，轄下 3 個 release（GB2／XW1）全部 Official。",
+  "risk": "Apple GB collectionId 1526894764（notExplicit、店面 gb、releaseDate 記 1977-01-01）——那是**錄音年**不是發行年，依裁定第 86 條年份記到達公眾的那一年，卡片取 1996。盤名帶冒號副標，Apple 與 MB 寫法一致，比對風險低。MB 有一筆 XW release 的廠牌欄記為 [no label]。",
+  "mbNote": "釘 release-group 5f5e93e7-2803-3883-84d7-308c1013db69。回問確認：title「Made Available: John Peel Sessions」、artist-credit「This Heat」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 3 個 release（GB2／XW1，全部 Official），1996 These Records THESE 10 CD、2006-05 This Is this is 4。MB 名下無同名雙胞胎，亦無第二筆標題含「Made Available」者。藝人 MBID 8e538a69-fc3b-43e1-9a6b-801ea56d6d48。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Made Available；John Peel Sessions This Heat",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Soft Machine",
+  "album": "Fourth",
+  "year": 1971,
+  "genres": [
+   "rock",
+   "jazz"
+  ],
+  "label": "CBS（GB 原盤 S 64280）／Columbia（US C 30754）",
+  "why": "Soft Machine 第四張專輯，1971 年 2 月 CBS S 64280（美國 Columbia C 30754），是 Robert Wyatt 在團內的最後一張，也是樂團第一張全器樂作品。實掃 seed_cards.json，池中 Soft Machine 有三張——1968 首張、1969《Volume Two》、1970《Third》，正好停在本張之前一格。同一批的 Robert Wyatt 三張（1970 首作、1975、1997）與這張互為背景：他離團的那張與他離團後的第一張個人作在池中同時到位。MB release-group f6da9301 轄下 7 個 release 全部 Official（GB3／JP2／US1／XE1）。",
+  "risk": "盤名《Fourth》是序數詞，撞卡與外部查詢誤配風險高，一律 artist+album 成對比對。Apple GB collectionId 219379144「Fourth (Remastered)」（notExplicit、店面 gb、releaseDate 1971-02-17），MB 記 1971-02，一致；版本後綴要剝掉。MB 另有 02fb032c《Fourth / Fifth》（1999，Album+Compilation）兩張合一再發，子字串比對必然命中，已列為不釘。",
+  "mbNote": "釘 release-group f6da9301-62ba-3553-adde-eb6589e4df70。回問確認：title「Fourth」、artist-credit「Soft Machine」、first-release-date 1971-02、primary-type Album、secondary-types 空、轄下 7 個 release（GB3／JP2／US1／XE1，全部 Official），GB 原盤 CBS S 64280、US Columbia C 30754、1991 JP Epic ESCA 5417、Talking Elephant TECD358。刻意不釘：02fb032c-6266-3090-adeb-a0efbb19c847《Fourth / Fifth》（1999，Album＋secondary Compilation，兩張合一的再發）。藝人 MBID 5193ce6b-a315-4c50-ae49-54e69ffbc988，名下 75 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Fourth (Remastered)；Soft Machine Fourth；Soft Machine 4",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gentle Giant",
+  "album": "Acquiring the Taste",
+  "year": 1971,
+  "genres": [
+   "rock"
+  ],
+  "label": "Vertigo（GB／DE／IT 原盤 6360 041、US VEL-1005）",
+  "why": "Gentle Giant 第二張專輯，1971 年 Vertigo 6360 041（美國 VEL-1005），內頁那段自述「以擴張當代流行音樂的邊界為目標、不惜失去人氣」是這個團最常被引用的宣言。實掃 seed_cards.json，池中 Gentle Giant 有三張：1972《Three Friends》《Octopus》與 1975《Free Hand》——1970 首張與本張這兩張 Vertigo 早期作都不在，等於池裡的 Gentle Giant 是從第三張開始的。MB release-group 63de3b9c 轄下 25 個 release（DE5／CA5／GB3／JP3／US3／AU1／IT1／VE1／XE1／RU1／LI1），24 筆 Official、1 筆 Bootleg。",
+  "risk": "Apple GB collectionId 1406799967「Acquiring The Taste」（notExplicit、店面 gb、releaseDate 1971-01-01，MB 記 1971-07-16，Apple 為年初預設值）。MB 轄下 25 個 release 內含 1 筆 Bootleg，下游解封面／試聽時不得取該筆。另有 ee4d86d0《Gentle Giant / Acquiring the Taste》(2012 兩張合一合輯) 盤名整段包含本張標題，已列為不釘。",
+  "mbNote": "釘 release-group 63de3b9c-e71b-3f4d-af82-216011f95805。回問確認：title「Acquiring the Taste」、artist-credit「Gentle Giant」、first-release-date 1971-07-16、primary-type Album、secondary-types 空、轄下 25 個 release（GB3／AU1／CA5／DE5／IT1／US3／VE1／JP3／XE1／RU1／LI1；Official 24、Bootleg 1），原盤 Vertigo 6360 041（GB／DE／IT）與 Vertigo VEL-1005（US／CA）。刻意不釘：ee4d86d0-5781-43a8-adaa-840281e26220《Gentle Giant / Acquiring the Taste》（2012，Album＋secondary Compilation，首張與本張合一的再發）。藝人 MBID f795c501-1c41-4be2-bc2a-875eba75aa31，名下 86 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Acquiring The Taste",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gentle Giant",
+  "album": "In a Glass House",
+  "year": 1973,
+  "genres": [
+   "rock"
+  ],
+  "label": "WWA Records（GB 原盤 WWA 002）／Vertigo（DE 6366100 D、IT／NZ 6366 100）",
+  "why": "Gentle Giant 第五張專輯，1973 年 WWA Records WWA 002（歐陸由 Vertigo 發行），因當時美國廠牌 Columbia 拒發而多年只能靠進口盤在美國流通，是這個團在英美兩地待遇落差最大的一張。池中三張 Gentle Giant 是 1972 年兩張與 1975《Free Hand》，1973–1974 這兩年（本張與《The Power and the Glory》）缺席；本張夾在池中既有的《Octopus》(1972) 與《Free Hand》(1975) 之間，補的是連續期的中段。MB release-group ba567eb2 轄下 23 個 release（GB7／US4／XW2／XE2／未填2／CL1／DE1／IT1／NZ1／JP1／RU1），21 筆 Official、2 筆 Bootleg。",
+  "risk": "Apple GB collectionId 1700266318（notExplicit、店面 gb、releaseDate 1973-07-01），MB 記 1973-09，差兩個月。MB 轄下有 2 筆 Bootleg（其中一筆國別未填、廠牌記 [no label]），下游解封面／試聽要避開。另有 f2826f6c《In'terview [1976] + In a Glass House [1973]》(2000 合輯) 與 f953d8c4《In a Glass House / An Inmates Lullaby》(1973 Single)，兩筆盤名都包含本張標題，已列為不釘。",
+  "mbNote": "釘 release-group ba567eb2-9290-3b5e-a4e9-831bbd78abe0。回問確認：title「In a Glass House」、artist-credit「Gentle Giant」、first-release-date 1973-09、primary-type Album、secondary-types 空、轄下 23 個 release（GB7／US4／XW2／XE2／未填2／CL1／DE1／IT1／NZ1／JP1／RU1；Official 21、Bootleg 2），GB 原盤 WWA Records WWA 002、DE Vertigo 6366100 D、IT WWA 6366 200 A。刻意不釘：f2826f6c-4b82-468d-98b4-d84ea74b4599《In'terview [1976] + In a Glass House [1973]》（2000，Album＋secondary Compilation）、f953d8c4-4409-4c4a-a3d7-cd59698d780e《In a Glass House / An Inmates Lullaby》（1973，primary-type Single）。藝人 MBID f795c501-1c41-4be2-bc2a-875eba75aa31。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "In A Glass House",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Flaming Lips",
+  "album": "Transmissions From the Satellite Heart",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Warner Bros. Records（US 原盤 9 45334-2）",
+  "why": "The Flaming Lips 第六張專輯，1993 年 Warner Bros. 9 45334-2，收錄〈She Don't Use Jelly〉——樂團第一次進入美國主流電台與 MTV 播放的曲目，也是吉他手 Ronald Jones 加入後的第一張。實掃 seed_cards.json，池中這個團只有 1999《The Soft Bulletin》與 2002《Yoshimi Battles the Pink Robots》兩張，等於 1983–1998 這十五年全部缺席。本張與《Clouds Taste Metallic》《Zaireeka》三張補的是《The Soft Bulletin》之前那條直接的來路。MB release-group 9110fa7a 轄下 9 個 release（US3／XW2／CA1／XE1／AU1／JP1），7 筆 Official、2 筆 Promotion。",
+  "risk": "Apple US collectionId 1231989623「Transmissions from the Satellite Heart」（notExplicit、店面 us、releaseDate 1993-06-22，與 MB 完全一致）——Apple 的 from 小寫、MB 與原盤作 From，大小寫差異在正規化後不影響命中。MB 轄下有 2 筆 Promotion 盤（US 2-45334-A），下游不得取促銷盤當版本。AU 盤 release 標題作「Transmissions From The Satellite Heart」（全字首大寫），亦屬同一盤名的寫法差異。",
+  "mbNote": "釘 release-group 9110fa7a-360b-3a7e-a693-50526d05a2d3。回問確認：title「Transmissions From the Satellite Heart」、artist-credit「The Flaming Lips」、first-release-date 1993-06-22、primary-type Album、secondary-types 空、轄下 9 個 release（CA1／XE1／US3／AU1／XW2／JP1；Official 7、Promotion 2），US 原盤 Warner Bros. Records 9 45334-2。以分頁掃過 The Flaming Lips 名下 175 個 release-group，無第二筆標題含「Transmissions」者。藝人 MBID 1f43d76f-8edf-44f6-aaf1-b65f05ad9402。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Transmissions from the Satellite Heart",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Flaming Lips",
+  "album": "Clouds Taste Metallic",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "Warner Bros. Records（US 原盤 9 45911-2）",
+  "why": "The Flaming Lips 第七張專輯，1995 年 Warner Bros. 9 45911-2，是吉他手 Ronald Jones 離團前的最後一張，也是製作人 Dave Fridmann 與樂團合作序列裡緊接《The Soft Bulletin》之前的一張。池中只有 1999 與 2002 那兩張，本張是《The Soft Bulletin》直接的前一張正規專輯——先確認「前一張在不在」比再找一張冷門重要。2015 年 Warner 以《Heady Nuggs: 20 Years After Clouds Taste Metallic》做過 20 週年套裝，說明這張至今仍被當成獨立事件重發。MB release-group 66eada26 轄下 7 個 release 全部 Official（US3／GB1／AU1／XE1／XW1）。",
+  "risk": "Apple US collectionId 1231989429（notExplicit、店面 us、releaseDate 1995-09-19，與 MB 完全一致）。MB 另有兩筆盤名整段包含本張標題的合輯：089526f3《Heady Nuggs: 20 Years After Clouds Taste Metallic 1994-1997》(2015) 與 5948675d《Clouds Taste Metallic / Hit to Death in the Future Head / The Soft Bulletin》（三張合一，且其中《The Soft Bulletin》已在池中），子字串比對都會命中，已列為不釘。",
+  "mbNote": "釘 release-group 66eada26-4acb-3d1a-b14f-01ff69eb566a。回問確認：title「Clouds Taste Metallic」、artist-credit「The Flaming Lips」、first-release-date 1995-09-19、primary-type Album、secondary-types 空、轄下 7 個 release（US3／GB1／AU1／XE1／XW1，全部 Official），US 原盤 Warner Bros. Records 9 45911-2。刻意不釘：089526f3-9b1a-4ee5-8f4d-8cb93a8a0705《Heady Nuggs: 20 Years After Clouds Taste Metallic 1994-1997》（2015-11-27，Album＋secondary Compilation，20 週年套裝）、5948675d-5c43-4464-85a0-43b140e35653《Clouds Taste Metallic / Hit to Death in the Future Head / The Soft Bulletin》（三張合一的再發合輯）。藝人 MBID 1f43d76f-8edf-44f6-aaf1-b65f05ad9402。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Clouds Taste Metallic",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Flaming Lips",
+  "album": "Zaireeka",
+  "year": 1997,
+  "genres": [
+   "rock"
+  ],
+  "label": "Warner Bros. Records（US 原盤 9 46804-2）",
+  "why": "1997 年 Warner Bros. 9 46804-2 發行的四片 CD 專輯，設計成四台唱機同時播放；這是《The Soft Bulletin》(1999) 之前樂團與 Dave Fridmann 做的最後一個大型製作，池中已有的《The Soft Bulletin》正是從這套實驗的班底延續下來。池中 The Flaming Lips 只有 1999 與 2002 兩張，1990 年代這條線一張都沒有。本張形態特殊（四片同步播放），但 MB release-group d3e3879d 的 primary-type 是 Album、secondary-types 為空，收錄身分沒有疑義。",
+  "risk": "MB 轄下 8 個 release 裡有 3 筆 Bootleg（含一筆 XW [no label] [none]）與 1 筆 Promotion，只有 4 筆 Official，下游解封面／試聽必須挑 1997-10-28 US Warner Bros. 9 46804-2 或 XW Warner Records 這兩筆。Apple US collectionId 1695992880（notExplicit、店面 us、releaseDate 1997-10-28，與 MB 完全一致），但 Apple 版是把四片併成單一序列的數位版，與實體四片同步播放的形態不同，行文不得斷言實體形態等同串流版本。",
+  "mbNote": "釘 release-group d3e3879d-1676-3e9d-8a55-0ed4816220df。回問確認：title「Zaireeka」、artist-credit「Flaming Lips」（此 RG 的 credit 少了 The，卡片沿用池中既有形態「The Flaming Lips」）、first-release-date 1997-10-28、primary-type Album、secondary-types 空、轄下 8 個 release（US2／XW3／DK1／未填2；Official 4、Bootleg 3、Promotion 1），US 原盤 Warner Bros. Records 9 46804-2。以分頁掃過名下 175 個 release-group，無第二筆標題含 Zaireeka 者。藝人 MBID 1f43d76f-8edf-44f6-aaf1-b65f05ad9402。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Flaming Lips Zaireeka",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Spiritualized",
+  "album": "Pure Phase",
+  "year": 1995,
+  "genres": [
+   "rock"
+  ],
+  "label": "Dedicated（GB 原盤 DEDCD 017）／Arista（US 74321 26035 2）",
+  "why": "Spiritualized 第二張專輯，1995 年 Dedicated DEDCD 017，原盤掛名印作「Spiritualized Electric Mainline」——MB 的 artist-credit 也是這個字串。池中 Spiritualized 有兩張：1992 首張《Lazer Guided Melodies》與 1997《Ladies and Gentlemen We Are Floating in Space》（頂點 hall）。本張正是這兩張之間唯一的一張正規專輯，補的是「兩張既有卡之間那一格」。MB release-group 9b1640de 轄下 5 個 release 全部 Official（GB1／US1／JP1／XE1／XW1）。",
+  "risk": "**Apple 沒有這張**：us 與 gb 店面以盤名搜皆回 0 筆（非 403，已確認是真查無），改用藝人名列 Apple GB 全目錄 25 筆亦無此盤——《Lazer Guided Melodies》《Let It Come Down》《Amazing Grace》《Songs in A&E》都在，唯獨 1995 這張缺。封面須走 CAA／release-group，固定試聽預估為 unavailable。掛名依裁定第 11 條取通行名「Spiritualized」，原盤 credit「Spiritualized Electric Mainline」進 queryAlias 與本欄；MB 另有 dc0e986b《Pure Phase Tones for DJ's》(1996，primary-type Other) 是同期的 DJ 用測試盤。",
+  "mbNote": "釘 release-group 9b1640de-4eb7-3071-b6a3-1c6f76c1a1b4。回問確認：title「Pure Phase」、artist-credit「Spiritualized Electric Mainline」、first-release-date 1995-02-06、primary-type Album、secondary-types 空、轄下 5 個 release（XE1／GB1／US1／JP1／XW1，全部 Official），XE／GB 原盤 Dedicated DEDCD 017、US Arista 74321 26035 2、JP BMG Japan BVCP-838。刻意不釘：dc0e986b-1397-308e-9f81-e9cdf438643d《Pure Phase Tones for DJ's》（1996，primary-type Other，盤名整段包含本張標題）。藝人 MBID 65041e06-83d2-4987-ae52-c17a915fc82a，名下 71 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Spiritualized Electric Mainline；Pure Phase",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Spiritualized",
+  "album": "Let It Come Down",
+  "year": 2001,
+  "genres": [
+   "rock"
+  ],
+  "label": "Arista（GB 原盤 74321 87853 2）／Spaceman（OPM 001）",
+  "why": "Spiritualized 第四張專輯，2001 年 Arista 與 Jason Pierce 自營的 Spaceman 廠牌合作發行（GB OPM 001），是《Ladies and Gentlemen We Are Floating in Space》之後樂團全面換血、以百人編制錄音的一張。池中兩張分別是 1992 首張與 1997 那張頂點 hall 卡，1997 年之後零張；本張是《Ladies and Gentlemen》直接的下一張正規專輯，與《Pure Phase》一前一後把池中兩張既有卡的上下游都補上。MB release-group 8d64439f 轄下 7 個 release 全部 Official（GB4／US1／CA1／未填1）。",
+  "risk": "Apple GB collectionId 1502492981（notExplicit、店面 gb、11 軌、releaseDate 2001-09-17），MB 記 2001-09-16，差一天。盤名《Let It Come Down》是常見片語（另有 The Rolling Stones 相關與多位藝人同名品項），去重與外部查詢一律 artist+album 成對比對。GB 原盤同時掛 Arista 與 Spaceman 兩個廠牌與兩組編號，`label` 欄兩者並列、不斷言單一發行方。",
+  "mbNote": "釘 release-group 8d64439f-5e8f-374b-a993-629f000258a2。回問確認：title「Let It Come Down」、artist-credit「Spiritualized」、first-release-date 2001-09-16、primary-type Album、secondary-types 空、轄下 7 個 release（GB4／US1／CA1／未填1，全部 Official），GB 原盤 Arista 74321 87853 2／Spaceman OPM 001（另一筆 GB 為 74321882231／OPM001LP）、CA Arista 07822-14722-2。以分頁掃過名下 71 個 release-group，無第二筆標題含「Let It Come Down」者。藝人 MBID 65041e06-83d2-4987-ae52-c17a915fc82a。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Let It Come Down",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Liz Phair",
+  "album": "whitechocolatespaceegg",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "Matador／Capitol Records（US 原盤 CDP 7243 8 53554 2 4／OLE 191-2）",
+  "why": "Liz Phair 第三張專輯，1998 年由 Matador 與 Capitol 聯合發行（US CDP 7243 8 53554 2 4／Matador OLE 191-2），是她 Matador 三部曲的最後一張。實掃 seed_cards.json，池中 Liz Phair 只有 1993《Exile in Guyville》與 1994《Whip-Smart》——三部曲缺了第三張。本張與 2003 年那張同名輯一起補進去之後，她從 Matador 獨立時期到 Capitol 主流時期的四張主要作品在池中才連得起來。MB release-group fbce2832 轄下 8 個 release 全部 Official（CA2／US2／XE2／JP1／XW1）。",
+  "risk": "**Apple 沒有這張**：us 與 gb 以盤名搜皆回 0 筆，改以藝人名列 Apple US 目錄 16 筆亦無（只有《Somebody's Miracle》《Funstyle》《Liz Phair》與單曲）。封面須走 CAA／release-group，固定試聽預估為 unavailable。盤名為全小寫無空格的單一長串「whitechocolatespaceegg」，任何加空格或改大小寫的變體都會查不到，queryAlias 必須同時放分詞形與 Title Case 形。MB 另有 b1a34244《whitechocolatespaceegg sessions》與 f08a623b《Whitechocolatespaceegg Demos》(1999，Demo)，兩筆都以本張盤名開頭，是子字串比對下的假陽性。",
+  "mbNote": "釘 release-group fbce2832-8614-346b-9e72-236827a22dd5。回問確認：title「whitechocolatespaceegg」、artist-credit「Liz Phair」、first-release-date 1998-08-07、primary-type Album、secondary-types 空、轄下 8 個 release（JP1／CA2／US2／XE2／XW1，全部 Official），US 原盤 Capitol Records CDP 7243 8 53554 2 4／Matador OLE 191-2、JP Matador TOCP-50468。刻意不釘：b1a34244-e6cf-34ad-bbea-38bc80a90a85《whitechocolatespaceegg sessions》（無日期，primary-type Album）、f08a623b-69a5-3a07-8962-083fc0e289cc《Whitechocolatespaceegg Demos》（1999，Album＋secondary Demo）。藝人 MBID 149326c2-b8a3-48e3-b3d2-9b5b9593127f，名下 53 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "white chocolate space egg；Whitechocolatespaceegg；WCSE",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Liz Phair",
+  "album": "Liz Phair",
+  "year": 2003,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Capitol Records（XE 724352208401）",
+  "why": "Liz Phair 第四張專輯、2003 年 Capitol 發行的自我同名作，是她離開 Matador 進入大廠體系的第一張，也是她目錄裡爭議最集中的一張（部分曲目由 The Matrix 製作）。池中只有 1993 與 1994 那兩張 Matador 早期作，Capitol 時期零張；本張與《whitechocolatespaceegg》一起把 1993–2003 這條主線補齊。MB release-group 6434e1a7 轄下 8 個 release（US3／XE2／GB1／未填2），7 筆 Official、1 筆 Promotion。",
+  "risk": "自我同名卡，依 §1 屬高風險身分，`selfTitled` 標 true；身分證據為 release-group MBID 6434e1a7 與 Apple US 的確切條目 collectionId 725785998（notExplicit、店面 us、13 軌、releaseDate 2003-01-01，MB 記 2003-06-24，Apple 是年初預設值）。掛名與盤名完全相同，任何只比盤名的去重都會把她名下其他卡誤判成本張，必須 artist+album 成對比對。MB 轄下有 1 筆 GB Promotion 盤（DJ 5939992），下游不得取促銷盤。",
+  "mbNote": "釘 release-group 6434e1a7-f798-3349-ae53-8de27f9f223f。回問確認：title「Liz Phair」、artist-credit「Liz Phair」、first-release-date 2003-06-24、primary-type Album、secondary-types 空、轄下 8 個 release（US3／XE2／GB1／未填2；Official 7、Promotion 1），XE Capitol Records 724352208401、GB Promotion Capitol DJ 5939992。以分頁掃過名下 53 個 release-group，標題恰為「Liz Phair」者僅此一筆，無同名雙胞胎。藝人 MBID 149326c2-b8a3-48e3-b3d2-9b5b9593127f。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Liz Phair 2003；Liz Phair self-titled",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Cranberries",
+  "album": "To the Faithful Departed",
+  "year": 1996,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Island（GB 原盤 CRANCD2、US I2 24234）",
+  "why": "The Cranberries 第三張專輯，1996 年 Island 發行（GB CRANCD2／US I2 24234），製作人由前兩張的 Stephen Street 換成 Bruce Fairbairn。實掃 seed_cards.json，池中這個團有 1993 首張《Everybody Else Is Doing It, So Why Can't We?》與 1994《No Need to Argue》兩張，剛好就停在本張之前一格。這張是他們在銷量高峰上發的一張，也是 Dolores O'Riordan 開始寫時事題材的分界。MB release-group e667e66b 轄下 21 個 release 全部 Official，國別橫跨 US／GB／CA／JP／DE／AU／ZA 與 XE／XW。",
+  "risk": "Apple GB 命中的是擴充版：collectionId 1705726407「To The Faithful Departed (Deluxe Edition)」（notExplicit、店面 gb、releaseDate 1996-04-30，MB 記 1996-04-19），Deluxe 版曲數多於原盤，下游取試聽要在備註寫明版本。盤名長且獨特，撞卡風險低。1996 年英美同時發行、編號不同（CRANCD2／I2 24234），`label` 兩者並列。",
+  "mbNote": "釘 release-group e667e66b-f93d-327e-acb8-ae7aaf6a6ee5。回問確認：title「To the Faithful Departed」、artist-credit「The Cranberries」、first-release-date 1996-04-19、primary-type Album、secondary-types 空、轄下 21 個 release（US5／GB4／XW3／CA2／JP1／DE1／AU1／ZA1／XE1／未填2，全部 Official），GB Island CRANCD2、US Island I224234、ZA PolyGram SA STARCD 6248。以分頁掃過 The Cranberries 名下 137 個 release-group，無第二筆標題含「Faithful Departed」者。藝人 MBID c98d40fd-f6cf-4b26-883e-eaa515ee2851。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "To The Faithful Departed (Deluxe Edition)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Cranberries",
+  "album": "Bury the Hatchet",
+  "year": 1999,
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "label": "Island（US I2 24611、586 750-2）",
+  "why": "The Cranberries 第四張專輯，1999 年 Island 發行，是樂團在 1997 年中止巡演、Dolores O'Riordan 休養之後回歸的一張，製作人 Benedict Fenner。池中只有 1993 與 1994 兩張，1996 年之後整段缺席；本張與《To the Faithful Departed》一起把 Island 時期四張正規專輯在池中補到四分之四。MB release-group 97e9c8bf 轄下 22 個 release 全部 Official，國別橫跨 US／GB／CA／AU／JP／AT 與 XE／XW，是這個團流通最廣的品項之一。",
+  "risk": "Apple GB collectionId 1440923969（notExplicit、店面 gb、releaseDate 1999-01-01，MB 記 1999-04-19，Apple 是年初預設值）。盤名《Bury the Hatchet》是常見片語，另有多位藝人同名品項，去重一律 artist+album 成對比對。MB 有兩筆 release 未填國別、一筆未填廠牌，不影響釘位。",
+  "mbNote": "釘 release-group 97e9c8bf-711c-32df-971d-2ad1a2d7036f。回問確認：title「Bury the Hatchet」、artist-credit「The Cranberries」、first-release-date 1999-04-19、primary-type Album、secondary-types 空、轄下 22 個 release（US5／XE4／AU2／CA2／JP2／GB2／AT1／XW1／未填3，全部 Official），US Island I2 24611、另有 Island 586 750-2。以分頁掃過名下 137 個 release-group，無第二筆標題含「Bury the Hatchet」者。藝人 MBID c98d40fd-f6cf-4b26-883e-eaa515ee2851。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bury The Hatchet",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jeff Buckley",
+  "album": "Sketches for My Sweetheart the Drunk",
+  "year": 1998,
+  "genres": [
+   "rock"
+  ],
+  "label": "Columbia（XE 原盤 488661 2／GB 488661 6）",
+  "why": "Jeff Buckley 1997 年溺斃後，家屬與 Columbia 依他生前的工作進度整理出的雙 CD：第一片是 Tom Verlaine 製作的錄音室 session，第二片是他自行錄下的四軌 demo。這是他名下第二個、也是唯一一個非現場的長篇正式發行。實掃 seed_cards.json，池中 Jeff Buckley 只有《Grace》一張（頂點 hall）——他生前只出過那一張專輯，所以「第一張該有的」之後真正能補的就是這張。MB release-group 98dd8826 的 primary-type 是 Album、secondary-types 含 Compilation，依 §5.6 明文照一般 Album 寫、不填例外欄位。轄下 8 個 release 全部 Official（XE2／US2／GB1／JP1／AU1／AI1）。",
+  "risk": "Apple US 命中擴充版：collectionId 1476888879「Sketches for My Sweetheart the Drunk (Expanded Edition)」（notExplicit、店面 us、releaseDate 1998-05-26，MB 記 1998-05-07），Expanded 版曲數多於原雙 CD，下游取試聽要在備註寫明版本。MB 另有 496158cc《Three Songs From Sketches for My Sweetheart the Drunk》（1998，primary-type Single）是同期宣傳單曲，盤名整段包含本張標題，已列為不釘。Buckley 名下 104 個 release-group 裡絕大多數是現場錄音（Album＋Live），標題比對時要以 secondary-types 排除。",
+  "mbNote": "釘 release-group 98dd8826-eae5-3700-957e-397bd0cf82d4。回問確認：title「Sketches for My Sweetheart the Drunk」、artist-credit「Jeff Buckley」、first-release-date 1998-05-07、primary-type Album、secondary-types [Compilation]、轄下 8 個 release（XE2／US2／GB1／JP1／AU1／AI1，全部 Official），XE Columbia 488661 2、GB Columbia 488661 6、AU Columbia 488661 2。刻意不釘：496158cc-78c3-4833-92e7-bf37f25b6d49《Three Songs From Sketches for My Sweetheart the Drunk》（1998，primary-type Single）、93a596e9-778d-44b0-8638-5d0bcd129683《Born Again From the Rhythm: The Grace Outtakes》（2006，Album，另一批 Grace 時期外流錄音）。藝人 MBID e6e879c0-3d56-4f12-b3c5-3ce459661a8e，名下 104 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sketches for My Sweetheart the Drunk (Expanded Edition)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Guns N’ Roses",
+  "album": "\"The Spaghetti Incident?\"",
+  "year": 1993,
+  "genres": [
+   "rock"
+  ],
+  "label": "Geffen Records（US 原盤 GEFD-24617）／Uzi Suicide（XE 424 617-2）",
+  "why": "Guns N' Roses 第五張正規發行，1993 年 Geffen GEFD-24617，整張是龐克與 glam 時期曲目的翻唱（Stooges、New York Dolls、UK Subs、The Damned、Fear 等），也是原編制在《Use Your Illusion》雙輯之後、樂團解體之前的最後一張錄音室作品。實掃 seed_cards.json，池中 Guns N' Roses 有四張：《Appetite for Destruction》（頂點 hall）、《G N' R Lies》、《Use Your Illusion I》（頂點 hall）、《Use Your Illusion II》——正好停在本張之前。這張也直接對到本批同組收的 New York Dolls／The Stooges 這條車庫與 proto-punk 線（兩團的碟池中已齊）。MB release-group 7ef05688 轄下 14 個 release 全部 Official。",
+  "risk": "盤名含引號：MB 的 release-group 與全部 release 作「“The Spaghetti Incident?”」（彎引號）、原盤封面亦有引號、Apple US 作「The Spaghetti Incident?」（無引號）。卡片依裁定第 50 條保留引號、改用 ASCII 直引號，無引號形進 queryAlias；標點在外部服務會被正規化，命中率不受影響。**Apple 的 collectionExplicitness 為 explicit**（collectionId 1440819825、店面 us、12 軌、releaseDate 1993-11-23，MB 記 1993-11-21）——依 §6 一律優先取 explicit，不得配到淨化版。掛名池中分裂成彎撇號（《Use Your Illusion II》《G N' R Lies》）與直撇號（《Appetite for Destruction》《Use Your Illusion I》）兩種，本張採 MB 實體的彎撇號形，直撇號形進 queryAlias。",
+  "mbNote": "釘 release-group 7ef05688-558a-36a6-97a8-ff4e6174aae6。回問確認：title「“The Spaghetti Incident?”」、artist-credit「Guns N’ Roses」、first-release-date 1993-11-21、primary-type Album、secondary-types 空、轄下 14 個 release（US4／XE4／JP2／CA1／DE1／DZ1／AU1，全部 Official），US 原盤 Geffen Records GEFD-24617、XE Uzi Suicide 424 617-2／Geffen GED24617。以 release-group?artist=…&limit=100&offset= 分頁掃過 Guns N’ Roses 名下 313 個 release-group，無第二筆標題含「Spaghetti」者。藝人 MBID eeb1195b-f213-4ce1-b28c-8565211f8e43。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Spaghetti Incident?；“The Spaghetti Incident?”；Guns N' Roses",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Guns N’ Roses",
+  "album": "Chinese Democracy",
+  "year": 2008,
+  "genres": [
+   "rock"
+  ],
+  "label": "Geffen Records（1790607）／Universal Music",
+  "why": "Guns N' Roses 第六張正規專輯，2008 年 Geffen 1790607，是 Axl Rose 主導、耗時十餘年完成的一張，也是樂團 1993 年之後唯一的錄音室專輯。池中四張 Guns N' Roses 全部落在 1987–1991，1993 年以後零張；本張與《\"The Spaghetti Incident?\"》一起，把這個團至今全部六張正規錄音室發行在池中補到六分之六——這正是廣度線「先確認該有的在不在」的判準，不是挖冷門。MB release-group cdfb0664 轄下 16 個 release（US4／JP3／XE2／XW1／CA1／GB1／AR1／AU1／BR1／未填1），14 筆 Official、2 筆 Bootleg。",
+  "risk": "**Apple 的 collectionExplicitness 為 explicit**（collectionId 1440756253、店面 us、15 軌、releaseDate 2008-11-23，MB 記 2008-06-18），依 §6 取 explicit 版；同一藝人在 Apple 上另有《Live Era '87-'93》的 explicit／cleaned 雙胞胎（1452802799／1452868521），是本目錄確實存在淨化版問題的證據，下游配對要逐張核 explicitness。MB 記的 2008-06-18 早於實際上市的 2008-11-23（美國 Best Buy 獨賣），兩者落差已知，行文不得斷言單一發行日。MB 轄下有 2 筆 Bootleg，解封面／試聽時要避開；另有 a7ff5691《The Complete 2008 Chinese Democracy Demos》與 185fba03 同名單曲，已列為不釘。",
+  "mbNote": "釘 release-group cdfb0664-26b5-3475-88f5-dd6ccd4d74ce。回問確認：title「Chinese Democracy」、artist-credit「Guns N’ Roses」、first-release-date 2008-06-18、primary-type Album、secondary-types 空、轄下 16 個 release（US4／JP3／XE2／XW1／CA1／GB1／AR1／AU1／BR1／未填1；Official 14、Bootleg 2），AU／AR Geffen Records 1790607、BR Universal Music Ltda. 60251790607。刻意不釘：185fba03-e06e-3899-8395-6d4d9a42dccc《Chinese Democracy》（2008-11-06，primary-type Single，與本張完全同名的單曲，是本張最像的假陽性）、a7ff5691-02fa-42d7-8c88-2856317be956《The Complete 2008 Chinese Democracy Demos》（2008，Album＋secondary Compilation）。藝人 MBID eeb1195b-f213-4ce1-b28c-8565211f8e43，名下 313 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Guns N' Roses；Chinese Democracy",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Sonics",
+  "album": "Boom",
+  "year": 1966,
+  "genres": [
+   "rock"
+  ],
+  "label": "Etiquette Records（US 原盤 ET-ALB-027）",
+  "why": "The Sonics 第二張專輯，1966 年 Etiquette Records ET-ALB-027，與 1965 年《Here Are the Sonics!!!》同一家西雅圖廠牌、同一組編制。實掃 seed_cards.json，池中 The Sonics 只有《Here Are the Sonics》一張——這個團在 1960 年代只出過兩張半（第三張《Introducing the Sonics》1967 已換廠牌 Jerden 且評價遠不如前兩張），所以《Boom》就是「第二張該有的」，不是冷門補遺。1999 年 Norton Records（CNW 905）、2007 年 Big Beat（CDHP 023）分別再發，兩次都是有授權的考古廠牌再版。MB release-group b3139f76 轄下 3 個 release 全部 Official（US2／GB1）。",
+  "risk": "Apple 上的盤名被串上團名：collectionId 626202316「The Sonics Boom」（notExplicit、店面 us 與 gb 皆命中、12 軌、releaseDate 記 1977-01-01）。已逐軌核對，12 軌曲目與曲序與 1966 年 Etiquette 原盤完全相同（Cinderella／Don't Be Afraid of the Dark／Skinny Minny／Let the Good Times Roll／Don't You Just Know It／Jenny Jenny／He's Waitin'／Louie Louie／Since I Fell for You／Hitch Hike／It's Allright／Shot Down），確認是同一張碟——這是裁定第 152 條「Apple 把系列名／團名與盤名串成一個字串」的形狀，標題比對必須放寬，否則會判成別碟。Apple 的 1977 是後續再版年，不是原盤年，依裁定第 95 條年份另取原盤的 1966。盤名《Boom》只有四個字母，是裁定第 162 條的極端形狀，去重與 `fix-rgmbid` 一律 artist+album 成對比對。",
+  "mbNote": "釘 release-group b3139f76-4fd3-330b-88ee-ab74a9d702b8。回問確認：title「Boom」、artist-credit「The Sonics」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 3 個 release（US2／GB1，全部 Official），US 原盤 Etiquette Records ET-ALB-027、1999-06-01 US Norton Records CNW 905、2007 GB Big Beat CDHP 023。以分頁掃過 The Sonics 名下 25 個 release-group，無第二筆標題含 Boom 者；MB 另有兩個同名藝人實體（6953191d 明尼阿波利斯 rockabilly 團、6e84c07a 紐澤西 doo wop 團），均非本團，是裁定第 29 條「兩個對象搶同一個通行名」的潛在來源，本張已釘死藝人 MBID。藝人 MBID 16346cf4-4d2b-40ec-8393-0fc7296d92fe。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Sonics Boom；Boom!",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]

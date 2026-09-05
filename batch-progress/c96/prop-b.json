@@ -1,0 +1,485 @@
+[
+ {
+  "artist": "Frank Ocean",
+  "album": "Endless",
+  "year": 2016,
+  "genres": [
+   "soul",
+   "pop"
+  ],
+  "label": "Boys Don't Cry／Def Jam",
+  "why": "Frank Ocean 在 2016 年 8 月 19 日以影像作品形態發表的專輯，隔日《Blonde》才問世；這張是他與 Def Jam 合約的最後一件交付品，發表方式（先影像、後音檔）與時間點本身就是他脫離大廠的關鍵環節。MB 這一筆 primary-type 為 Album、secondary-types 標 Soundtrack，是 MB 對「視覺專輯」的建檔慣例，不是電影配樂。池中 Frank Ocean 有 2 張（實掃 seed_cards.json 全 14,424 列）：《Channel Orange》(2012)、《Blonde》(2016)——兩張正規專輯都在，缺的是與《Blonde》同一週、綁在一起才說得清楚的這一張。",
+  "risk": "Apple 查無：artistId 442122051 名下 20 張中沒有這一筆，us 與 gb 的 search 端點以「Frank Ocean Endless」查回的全是 Miley Cyrus《Endless Summer Vacation》等不相干條目；試聽預估 unavailable，封面走 CAA（release-group 端點 200）。MB 轄下 7 個 release 中有 1 筆 status=Bootleg，釘 release-group 不受影響，但下游若逐 release 取值要避開那一筆。盤名《Endless》極短、跨藝人撞名嚴重（第 162 條「盤名太短會配到別人」），比對必須連掛名一起看。",
+  "mbNote": "釘 release-group b69366e3-8145-405e-9220-c0a575f23474。回問確認：title「Endless」、artist-credit「Frank Ocean」、first-release-date 2016-08-19、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（US/Official 2、XW/Official 2、未標國別 Official 1、未標 status 1、Bootleg 1）。刻意不釘：0da340a0-6ad7-4fc2-a272-6f94393a7831《Blonde》(2016，池中已有)、c2dde373-d47b-45a9-8b7e-0a9f5f011ed4《nostalgia,ULTRA.》(2011 mixtape，未正式商業發行)、1a75468e-b63c-45ee-8824-ac61b21bffe8《unreleased, MISC.》(Compilation)、85ab7e19-18dc-4af8-85a9-b7b325006f04《Live at FYF Fest》(Live)。藝人 MBID e520459c-dff4-491d-a6e4-c97be35e0044，名下 35 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Frank Ocean Endless；Boys Don’t Cry",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jill Scott",
+  "album": "Beautifully Human: Words and Sounds Vol. 2",
+  "year": 2004,
+  "genres": [
+   "soul"
+  ],
+  "label": "Hidden Beach Recordings",
+  "why": "Jill Scott 的第二張錄音室專輯，2004 年由 Hidden Beach 發行、美國專輯榜第三，並以〈Cross My Mind〉獲葛萊美最佳都會／另類演出。池中 Jill Scott 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Who Is Jill Scott? Words and Sounds Vol. 1》(2000)、《Woman》(2015)、《To Whom This May Concern》(2026)——Vol. 1 在池中、Vol. 2 與 Vol. 3 都不在，一套明確編號的三部曲只收了頭一本；這張是最該補的一張。",
+  "risk": "Apple 命中兩店但條目名不同：us collectionId **1416155837**（notExplicit、16 軌、2004-08-31、「Beautifully Human: Words and Sounds, Vol. 2」）、gb collectionId 365567180（notExplicit、16 軌、同日、「Beautifully Human - Words and Sounds, Vol. 2」，冒號換破折號）。notExplicit 在此是「本來就無不雅內容」——同一藝人目錄下沒有這張的 explicit 對照條目，且 Hidden Beach 未發行過淨化版。盤名分隔符三式（冒號／破折號／逗號位置）全部要進 queryAlias。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 5949b01b-4f5f-365a-ac61-7ac3d429351a。回問確認：title「Beautifully Human: Words and Sounds Vol. 2」、artist-credit「Jill Scott」、first-release-date 2004-08-30、primary-type Album、secondary-types 空、轄下 5 個 release（US/Official 2、GB/XE 各 1 Official、未標國別 1）。刻意不釘：507eb40f-d65d-3517-8087-a31fe7a8a45a《Experience: Jill Scott 826+》(2001 Live)、6b4268c8-3fc0-3487-8e2b-f620dc04d1cc《Collaborations》(2007 精選)。藝人 MBID b1fb6a18-1626-4011-80fb-eaf83dfebcb6，名下 38 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Beautifully Human - Words and Sounds Vol. 2；Beautifully Human；Words and Sounds Vol 2",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jill Scott",
+  "album": "The Real Thing: Words and Sounds Vol. 3",
+  "year": 2007,
+  "genres": [
+   "soul"
+  ],
+  "label": "Hidden Beach Recordings",
+  "why": "Jill Scott 的第三張錄音室專輯，2007 年發行、美國專輯榜第二，也是她與 Hidden Beach 合作的最後一張正規作，此後轉往 Blues Babe／Warner。池中 Jill Scott 有 3 張（實掃 seed_cards.json 全 14,424 列）：Vol. 1(2000)、《Woman》(2015)、《To Whom This May Concern》(2026)——這張補上之後 Words and Sounds 三部曲才完整，也把 2000 到 2015 之間的十五年空白填掉一半。",
+  "risk": "Apple 版本極多、曲數各異，必須挑對版：us artistId 14867 名下至少五筆——324777083／1416191630（15 軌，標準版）、264572714（16 軌，Bonus Track Version）、325453168／1415240649（17 軌，Deluxe），gb 另有 1578980833（19 軌，Deluxe Edition）與 365571497（15 軌）。全部 **notExplicit**（本來就無不雅內容，非淨化版）。**依派工「Deluxe／擴充版一律不取」，下游要取 15 軌的標準版**（us 324777083 或 1416191630）。盤名分隔符四式（冒號／破折號、Words and Sounds／Words & Sounds、Vol. 3／Volume 3）都要進 queryAlias。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 7ad54d9a-861d-3635-856b-3bf5187b5d06。回問確認：title「The Real Thing: Words and Sounds, Volume 3」、artist-credit「Jill Scott」、first-release-date 2007-09-25、primary-type Album、secondary-types 空、轄下 8 個 release（US/Official 5、XE/JP 各 1 Official、未標國別 1）。卡片盤名採「The Real Thing: Words and Sounds Vol. 3」與同系列前兩張的寫法一致，與 RG 標題不等（第 91 條）。刻意不釘：17efb3d4-ff8d-48c3-81a2-a3fecbdb5604《Crates: Remix Fundamentals, Volume 1》(Compilation)、7d58403f-5080-4d9b-bdc1-dab264e1f75c《The Original Jill Scott From the Vault, Vol. 1》(Compilation)。藝人 MBID b1fb6a18-1626-4011-80fb-eaf83dfebcb6。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Real Thing: Words and Sounds, Volume 3；The Real Thing - Words & Sounds, Vol. 3；The Real Thing Jill Scott",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jill Scott",
+  "album": "The Light of the Sun",
+  "year": 2011,
+  "genres": [
+   "soul",
+   "hiphop"
+  ],
+  "label": "Blues Babe Records／Warner Bros.",
+  "why": "Jill Scott 的第四張錄音室專輯，也是她離開 Hidden Beach、改由自營廠牌 Blues Babe 經 Warner 發行的第一張，2011 年在美國專輯榜登頂——她生涯唯一一張冠軍專輯。池中 Jill Scott 有 3 張（實掃 seed_cards.json 全 14,424 列）：Vol. 1(2000)、《Woman》(2015)、《To Whom This May Concern》(2026)——2000 年之後的下一張跳到 2015 年；這張是那十五年空白裡商業成績最高的一張，也是她換廠牌的分界。",
+  "risk": "Apple 命中 us：artistId 14867 名下 **433561623**（explicit、15 軌、2011-06-17，標準版）、6805265789（explicit、15 軌，重複條目）、435260991（explicit、19 軌，Deluxe Version）、6806023673（explicit、18 軌，Deluxe）。**依派工 Deluxe 版不取，下游取 15 軌標準版**；四筆皆 explicit、無 cleaned 雙胞胎（這張是本組唯一標 explicit 的靈魂樂卡）。us／gb 的 search 端點以「Jill Scott The Light of the Sun」查皆無命中，必須走 lookup?id=14867。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group e4f800f9-a663-4476-9b23-878dc654c36c。回問確認：title「The Light of the Sun」、artist-credit「Jill Scott」、first-release-date 2011-06-20、primary-type Album、secondary-types 空、轄下 6 個 release（US/Official 2、未標國別 Official 2、BR/XE 各 1）。刻意不釘：435260991 對應的 Apple Deluxe Version（擴充版）、748bd5ae-1baf-4038-9ccb-fd5db121c8bd《Golden Moments》(2015 精選)、1b795608-5b45-40b6-bc6e-60d87a72e112《By Popular Demand》(2018 精選)。藝人 MBID b1fb6a18-1626-4011-80fb-eaf83dfebcb6。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Light of the Sun；Jill Scott 2011",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dusty Springfield",
+  "album": "A Girl Called Dusty",
+  "year": 1964,
+  "genres": [
+   "soul",
+   "pop"
+  ],
+  "label": "Philips Records",
+  "why": "Dusty Springfield 離開 The Springfields 單飛後的第一張個人專輯，1964 年由 Philips 在英國發行、英國專輯榜第六，曲目以美國靈魂樂與 Brill Building 曲目的翻唱為主，是她把美國黑人流行音樂帶進英國主流市場的起點。池中 Dusty Springfield 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Dusty in Memphis》(1969)——池中呈現的是「她只有 1969 年那一張」，而 1964–1968 的六張 Philips 專輯全缺；照「先確認第一張該有的在不在」的判準，這張首作是最該補的。",
+  "risk": "Apple 命中 us 與 gb 同一 collectionId：**1443726966**、collectionExplicitness **notExplicit**（本來就無不雅內容）、20 軌、releaseDate 1964-04-01；20 軌明顯多於原盤的 12 軌，是加曲的 Remastered 版（Apple 條目名帶「(Remastered)」）——**依派工「擴充版不取」，若下游只能取到這一筆，要在備註寫明它是加曲版**。依第 158 條，這是英國盤，店面順序 gb 優先於 us。CAA release-group 端點 200。撞卡：池中無同名碟。",
+  "mbNote": "釘 release-group 813ecf80-7a92-3188-8eda-915dbbdbd43d。回問確認：title「A Girl Called Dusty」、artist-credit「Dusty Springfield」、first-release-date 1964-04-17、primary-type Album、secondary-types 空、轄下 4 個 release（GB/Official 2、XW/Official 2）。刻意不釘：3c5feea3-292c-3bfc-ba8c-2df3d9221a69《Dusty》(1964-10 美國盤，曲目與本張大幅重疊但編輯不同)、af11e053-1589-3d9d-a7e6-fe659721fbb3《Stay Awhile / I Only Want to Be With You》(1964 美國盤)、6a608095-7cb5-31d3-987e-c6e7460b8b7c《Ooooooweeee!!!》(1965)。藝人 MBID b896aa8c-2761-40ce-b485-0e1fffd26167，名下 160 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "A Girl Called Dusty (Remastered)；Dusty Springfield 1964",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dusty Springfield",
+  "album": "Ev'rything's Coming Up Dusty",
+  "year": 1965,
+  "genres": [
+   "soul",
+   "pop"
+  ],
+  "label": "Philips Records",
+  "why": "Dusty Springfield 的第二張英國專輯，1965 年由 Philips 發行、英國專輯榜第六，原盤為對開式紙套的雙折裝，曲目繼續以美國靈魂樂與音樂劇曲目為主。池中 Dusty Springfield 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Dusty in Memphis》(1969)；與《A Girl Called Dusty》一起補進來，她的 Philips 時期就有頭兩張可依。",
+  "risk": "Apple 命中 us 與 gb 同一 collectionId：**1443722946**、collectionExplicitness **notExplicit**、21 軌、releaseDate 1965-09-01，Apple 條目名帶「(Remastered)」且 21 軌遠多於原盤 14 軌，屬加曲版——**下游取值時要記明是加曲版**。盤名撇號寫法兩式：MB 作「Ev’rything’s Coming Up Dusty」（U+2019）、卡片與 Apple 作 ASCII「Ev'rything's」；另有省略寫法「Everything's Coming Up Dusty」（無縮寫撇號）在部分資料庫通行，三種都要掃。依第 158 條店面 gb 優先。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group c19de945-fc16-398c-9494-48b4c6be286c。回問確認：title「Ev’rything’s Coming Up Dusty」、artist-credit「Dusty Springfield」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 4 個 release（皆 GB/Official）。刻意不釘：6a608095-7cb5-31d3-987e-c6e7460b8b7c《Ooooooweeee!!!》(1965-03 美國盤)、899d5ca1-0ced-4509-9029-c4e2c9756832《You Don't Have to Say You Love Me》(1966 美國盤)。藝人 MBID b896aa8c-2761-40ce-b485-0e1fffd26167。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Everything's Coming Up Dusty；Ev’rything’s Coming Up Dusty；Evrythings Coming Up Dusty",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Dusty Springfield",
+  "album": "A Brand New Me",
+  "year": 1970,
+  "genres": [
+   "soul"
+  ],
+  "label": "Atlantic Records",
+  "why": "Dusty Springfield 繼《Dusty in Memphis》之後、仍由 Atlantic 發行的續作，1970 年在費城由 Kenny Gamble 與 Leon Huff 製作，是她從曼菲斯轉往費城靈魂樂體系的一張；英國同一批錄音以《From Dusty… With Love》為名發行。池中 Dusty Springfield 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Dusty in Memphis》(1969)——補這張是把她美國靈魂樂時期的兩張擺在一起，也交代了曼菲斯之後她去了哪裡。",
+  "risk": "盤名兩地不同：美國 Atlantic 盤作《A Brand New Me》、英國 Philips 盤作《From Dusty… With Love》，MB release-group 標題只作「Brand New Me」（無冠詞）——卡片依第 85 條採原始廠牌（Atlantic）那一個、且採封面全名「A Brand New Me」，三種寫法全部進 queryAlias。Apple 命中 us：collectionId **76044988**、collectionExplicitness **notExplicit**、19 軌、releaseDate 1970-01-15；另有 1263081611 是 2011 年的同名單曲（1 軌，us 與 gb 都在前兩筆），**不是這張碟**。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 64d59aea-dffd-3146-9967-e1741de178eb。回問確認：title「Brand New Me」、artist-credit「Dusty Springfield」、first-release-date 1970-01-15、primary-type Album、secondary-types 空、轄下 5 個 release（US/Official 2、GB/JP 各 1 Official、未標國別 1）。刻意不釘：8c59c117-0869-3e79-ab50-fc03eeb260ab《See All Her Faces》(1972)、cf429681-0510-3cdc-be58-3d9db8c9469f《Cameo》(1973)——兩張同為 Atlantic 期後續作，非本張。藝人 MBID b896aa8c-2761-40ce-b485-0e1fffd26167。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Brand New Me；From Dusty With Love；From Dusty… With Love",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Miracles",
+  "album": "Hi... We're the Miracles",
+  "year": 1961,
+  "genres": [
+   "soul"
+  ],
+  "label": "Tamla Records",
+  "why": "The Miracles 的首張專輯，1961 年由 Tamla 發行——**這是 Motown 體系發行的第一張 LP**，收錄公司第一支百萬單曲〈Shop Around〉。池中這條線有 9 張（實掃 seed_cards.json 全 14,424 列）：The Miracles《The Fabulous Miracles》(1963)、《City of Angels》(1975)；Smokey Robinson & the Miracles《Going to a Go-Go》(1965)、《Away We a Go-Go》(1966)、《Make It Happen》(1967)；Smokey Robinson 個人《Smokey》(1973)、《A Quiet Storm》(1975)、《Deep in My Soul》(1977)、《Where There's Smoke...》(1979)——池中最早的一張是 1963 年，1961–1962 的三張 Tamla 早期盤全缺；照「第一張該有的」判準，這張首作是整條線最該補的。",
+  "risk": "掛名分期是本組最大的坑：1961–1965 年的碟 artist-credit 是「The Miracles」，1965–1972 才改成「Smokey Robinson and The Miracles」，1973 年後又改回「The Miracles」；池中三種寫法都有，新卡一律照該張碟當年的 credit 走。Apple 命中 us 與 gb 同一 collectionId：**1444086503**、collectionExplicitness **notExplicit**（本來就無不雅內容）、11 軌、releaseDate 1961-01-01、Apple 條目名「Hi ...We're The Miracles」（空格位置與 MB 不同）。盤名省略號寫法三式：MB「Hi… We’re the Miracles」（U+2026＋U+2019）、Apple「Hi ...We're The Miracles」、卡片採 ASCII「Hi... We're the Miracles」。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group f33586f5-a1dd-35f1-ac64-4397eef65923。回問確認：title「Hi… We’re the Miracles」、artist-credit「The Miracles」、first-release-date 1961-06、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US/Official）。刻意不釘：f654a2eb-f736-3a76-960d-1a1c254ab25e《Cookin' With the Miracles》(1961-11 第二張)、e9fd8904-486b-3b51-8d74-11f404e1d3c2《Christmas With The Miracles》(1963 節慶盤)、d167eed5-3ebe-3cc7-abc0-6c05af64efa9《The Fabulous Miracles》(1963，池中已有)。藝人 MBID 6a4c2d34-7f7f-4f87-b17f-b5540aa840db，名下 97 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hi We're the Miracles；Hi ...We're The Miracles；Hi… We’re the Miracles；Smokey Robinson and the Miracles",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "The Miracles",
+  "album": "Doin' Mickey's Monkey",
+  "year": 1963,
+  "genres": [
+   "soul"
+  ],
+  "label": "Tamla Records",
+  "why": "The Miracles 的第五張專輯，1963 年底發行，是他們與 Holland–Dozier–Holland 合作的一張，主打曲〈Mickey's Monkey〉當年進美國單曲榜前十，也是 Motown 早期把舞步名稱直接寫進專輯企劃的做法。池中這條線有 9 張（實掃 seed_cards.json 全 14,424 列），其中 The Miracles 名義的只有《The Fabulous Miracles》(1963) 與《City of Angels》(1975)；本張與《The Fabulous Miracles》同年、緊接其後，補上之後 1963 年這一年的兩張就成對。",
+  "risk": "盤名兩式：MB release-group 標題作「The Miracles Doin’ Mickey’s Monkey」（把團名寫進標題，是原盤封面的排法）、Apple 與通行資料庫作「Doin' Mickey's Monkey」；卡片採後者，避免掛名與盤名重複（第 91 條 RG 標題與卡片盤名不必相等），MB 全名進 queryAlias。Apple 命中 us 與 gb 同一 collectionId：**1444109217**、collectionExplicitness **notExplicit**、11 軌、releaseDate 1963-01-01。撇號 MB 用 U+2019、卡片用 ASCII。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 8ea667f3-c095-4983-8d50-d77c3486a8a9。回問確認：title「The Miracles Doin’ Mickey’s Monkey」、artist-credit「The Miracles」、first-release-date 1963-11-11、primary-type Album、secondary-types 空、轄下 1 個 release（US/Official）。刻意不釘：d167eed5-3ebe-3cc7-abc0-6c05af64efa9《The Fabulous Miracles》(1963-02，池中已有)、e9fd8904-486b-3b51-8d74-11f404e1d3c2《Christmas With The Miracles》(1963-10)。藝人 MBID 6a4c2d34-7f7f-4f87-b17f-b5540aa840db。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Miracles Doin' Mickey's Monkey；Doin Mickeys Monkey；Mickey's Monkey",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Smokey Robinson & the Miracles",
+  "album": "Special Occasion",
+  "year": 1968,
+  "genres": [
+   "soul"
+  ],
+  "label": "Tamla Records",
+  "why": "Smokey Robinson & the Miracles 在 1967 年《Make It Happen》之後的下一張錄音室專輯，1968 年由 Tamla 發行，是團體改掛「Smokey Robinson &」之後、進入 1970 年代抒情路線之前的一張。池中這條線有 9 張（實掃 seed_cards.json 全 14,424 列），Smokey Robinson & the Miracles 名義的三張是《Going to a Go-Go》(1965)、《Away We a Go-Go》(1966)、《Make It Happen》(1967)——三張連續、然後就斷了；補這張，1965–1968 的四張就連得起來。",
+  "risk": "掛名兩式：MB release-group 的 artist-credit 作「Smokey Robinson and The Miracles」、Apple 條目作「Smokey Robinson & The Miracles」、池中三張既有卡作「Smokey Robinson & the Miracles」（卡片沿用，the 小寫），三種都進 queryAlias。Apple 命中 us 與 gb 同一 collectionId：**1443835836**、collectionExplicitness **notExplicit**、11 軌、releaseDate 1968-01-01。盤名《Special Occasion》常見，跨藝人撞名要靠掛名分辨。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group a789c695-f87c-4502-a68e-0d96f828f255。回問確認：title「Special Occasion」、artist-credit「Smokey Robinson and The Miracles」、first-release-date 1968-08、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、XW/Official 1）。刻意不釘：1c119f5b-8d50-4633-b2b6-2b3efc9ecd75《Time Out for Smokey Robinson & The Miracles》(1969)、0279a065-293c-4536-8a76-0b029d01cf84《Four in Blue》(1969)——兩張同為緊接其後的作品，非本張。藝人 MBID 6a4c2d34-7f7f-4f87-b17f-b5540aa840db。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Smokey Robinson and The Miracles；The Miracles Special Occasion",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Labelle",
+  "album": "Labelle",
+  "year": 1971,
+  "genres": [
+   "soul"
+  ],
+  "label": "Warner Bros. Records",
+  "why": "Patti LaBelle、Nona Hendryx 與 Sarah Dash 從 Patti LaBelle and the Blue Belles 改組為 Labelle 之後的首張同名專輯，1971 年由 Warner Bros. 發行、Vicki Wickham 經紀主導，是這個團體從 1960 年代 girl group 轉向自主創作的分界。池中 Labelle 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Pressure Cookin'》(1973)、《Nightbirds》(1974)、《Phoenix》(1975)（另有 Patti LaBelle 個人《Patti LaBelle》1977）——池中最早的一張是 1973 年，1971 與 1972 的頭兩張缺席；照「第一張該有的」判準，這張同名首作最該補。",
+  "risk": "自我同名卡，身分核對要嚴格（§1）：掛名「Labelle」與盤名「Labelle」相同，release 身分靠所釘的 release-group MBID 與 Apple collectionId 兩重釘死。Apple 命中 us：artistId 539324 名下 collectionId **80008100**、collectionExplicitness **notExplicit**、11 軌、releaseDate 1971-01-01、artistName「LaBelle」；us 的 search 端點以「Labelle Labelle 1971」查回 0 筆，必須走 lookup?id=539324。掛名大小寫兩式：MB 實體與 Apple 作「LaBelle」（大寫 B）、池中三張既有卡作「Labelle」（卡片沿用）。MB 上另有兩個同名實體（b6096f38 留尼旺的 Jérémy Labelle、fabcddc6 義大利 italodance），釘的是 875074d3。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group ed1a3656-6482-321e-9446-b84f27016c0c。回問確認：title「Labelle」、artist-credit「LaBelle」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US/Official）。刻意不釘：c93ff06b-8a90-3537-8f38-7bdd2e17feaa《Gonna Take a Miracle》(1971 同年，主掛名是 Laura Nyro)、22ed5180-2a4c-3c25-8f71-ac82e18ad8f6《Moon Shadow》(1972 第二張)、3784dda1-b9fb-3bb8-a8e0-de8f038c9c65《Lady Marmalade: Best of Patti & Labelle》(精選)、c54a6b9c-25b9-41df-a479-89b686e1aa68《Something Silver》(精選)。藝人 MBID 875074d3-6458-47b4-b515-f7ecda93bd8d，名下 16 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "LaBelle；Patti LaBelle Nona Hendryx Sarah Dash",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Labelle",
+  "album": "Chameleon",
+  "year": 1976,
+  "genres": [
+   "soul"
+  ],
+  "label": "Epic Records",
+  "why": "Labelle 的最後一張專輯，1976 年由 Epic 發行，三人隨即拆夥、Patti LaBelle 轉入個人生涯。池中 Labelle 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Pressure Cookin'》(1973)、《Nightbirds》(1974)、《Phoenix》(1975)——三張連續之後就斷在 1975 年，而這個團體的目錄總共只有六張正規專輯；補首作與這張收尾之作，池中就握有這條線的兩端。",
+  "risk": "Apple 命中 us：collectionId **217274257**、collectionExplicitness **notExplicit**、8 軌、releaseDate 1976-01-01、artistName「LaBelle」；gb 未測到。盤名《Chameleon》極常見（Herbie Hancock 1973 年的曲名、多組樂團的專輯名），跨藝人撞名風險高，比對必須連掛名一起看。掛名大小寫同上（MB／Apple 作 LaBelle、卡片作 Labelle）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 4eb5e704-b1a7-4da0-903b-4fa3494d7c6d。回問確認：title「Chameleon」、artist-credit「LaBelle」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、未標國別 Official 1）。刻意不釘：283ae300-cbc2-4bf8-9d37-ddea3ae02763《Nightbirds / Phoenix / Chameleon》(2009 三合一)、50347326-6f8d-4ba7-bff9-6b09d7451835《Original Album Classics》(套裝)、170d2970-fa77-3f5e-aa30-991593dd6ff6《Back to Now》(2008 重組專輯)。藝人 MBID 875074d3-6458-47b4-b515-f7ecda93bd8d。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "LaBelle Chameleon",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gil Scott-Heron",
+  "album": "Small Talk at 125th and Lenox",
+  "year": 1970,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Flying Dutchman Records",
+  "why": "Gil Scott-Heron 的首張唱片，1970 年由 Bob Thiele 的 Flying Dutchman 發行，在紐約一間小場地當著聽眾錄成，收錄〈The Revolution Will Not Be Televised〉的最初版本。MB 這一筆 secondary-types 標 Live，指的是這種「有聽眾在場的錄音」形態，**不是後世的演唱會實況再發**——它就是他的錄音室目錄第一張。池中 Gil Scott-Heron 有 4 張（實掃 seed_cards.json 全 14,424 列）：《Pieces of a Man》(1971)、《Winter in America》(1974)、Gil Scott-Heron & Brian Jackson《From South Africa to South Carolina》(1975)、《I'm New Here》(2010)——池中最早的是 1971 年，首作缺席；照「第一張該有的」判準，這張最該補。",
+  "risk": "Apple 命中 us：artistId 315331 名下 collectionId **1621357715**、collectionExplicitness **explicit**、14 軌、releaseDate 1970-01-01（該作有直白的口語內容，explicit 標記合理，非誤標；同目錄無 cleaned 對照條目）。us 的 search 端點以「Gil Scott-Heron Small Talk at 125th and Lenox」查只回 1 筆不相干條目，必須走 lookup?id=315331。MB secondary-types 含 Live，下游若用「不得把正規盤換成 Live 版」的規則（第 162 條第 2 點）自動比對，會誤以為這是對照組——**這是本張唯一的釘位風險，要在卡層標記為刻意選定**。掛名 MB 作「Gil Scott‐Heron」（U+2010 連字號）、池中作 ASCII，卡片沿用池中寫法。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group ec408b92-2c5e-301e-94ee-2dcfe59cece6。回問確認：title「Small Talk at 125th and Lenox」、artist-credit「Gil Scott‐Heron」、first-release-date 1970、primary-type Album、secondary-types [Live]、轄下 6 個 release（US/Official 2、JP/GB/XE/XW 各 1 Official）。刻意不釘：98e59d65-f790-34a4-9880-c82f9921fbf1《The Revolution Will Not Be Televised》(1974 精選，主打曲同名，是最像的假陽性)、1621355321 對應的同名單曲、80ca3632-3a99-4ec4-802e-f73680fd83d9《The Revolution Begins: The Flying Dutchman Masters》(套裝)。藝人 MBID b5b89643-c488-4f39-a302-25cab31084a5，名下 61 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Small Talk at 125th & Lenox；Gil Scott Heron；Gil Scott‐Heron",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gil Scott-Heron",
+  "album": "Free Will",
+  "year": 1972,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Flying Dutchman Records",
+  "why": "Gil Scott-Heron 的第三張唱片，1972 年由 Flying Dutchman 發行，是他與 Brian Jackson 合作體制成形前的最後一張 Flying Dutchman 盤，A 面為編曲完整的歌曲、B 面回到首作的口語形態，等於把他前兩張的兩種做法並排在同一張碟上。池中 Gil Scott-Heron 有 4 張（實掃 seed_cards.json 全 14,424 列）：《Pieces of a Man》(1971)、《Winter in America》(1974)、《From South Africa to South Carolina》(1975)、《I'm New Here》(2010)——1971 與 1974 之間就缺這一張。",
+  "risk": "Apple 命中 us：artistId 315331 名下 collectionId **1621389194**、collectionExplicitness **notExplicit**、23 軌、releaseDate 1972-01-01；23 軌遠多於原盤 11 軌，是加曲的再發版本，**依派工「擴充版不取」，下游若只能取到這一筆要在備註寫明**。另有 1621453802《When You Are Who You Are / Free Will (Alternate Take 1)》單曲（2 軌），**不是這張碟**，us 的 search 端點會把它排在第二筆。盤名《Free Will》極短、跨藝人撞名嚴重。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 69a771aa-3fb0-307c-8d5e-328810f9c428。回問確認：title「Free Will」、artist-credit「Gil Scott‐Heron」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 7 個 release（US/Official 3、JP/FR/XW/XE 各 1 Official）。刻意不釘：0db8d9ab-0642-365e-8842-d5ed8fef5b46《The Mind of Gil Scott Heron》(1978 精選)、19e912b7-4d30-47f7-9969-e4363a1a9f1e《The Gil Scott-Heron Collection: Sampler 1974-1975》(精選)。藝人 MBID b5b89643-c488-4f39-a302-25cab31084a5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gil Scott Heron Free Will；Gil Scott‐Heron",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Gil Scott-Heron & Brian Jackson",
+  "album": "The First Minute of a New Day",
+  "year": 1975,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Arista Records",
+  "why": "Gil Scott-Heron 與 Brian Jackson 掛雙名的第一張 Arista 盤，1975 年發行——它同時是 Arista Records 成立後編號最前的幾張唱片之一，兩人與 Midnight Band 的固定班底自此定型。池中 Gil Scott-Heron 有 4 張（實掃 seed_cards.json 全 14,424 列），其中掛雙名的只有《From South Africa to South Carolina》(1975)；本張與它同年、且在它之前，補上之後這個雙名編制在池中就有頭兩張。",
+  "risk": "Apple 全面查無：artistId 315331 名下 52 張中沒有這一筆（1975–1982 的 Arista 期作品在 Apple US 上大量缺席，《Bridges》《Secrets》《1980》同樣不在），試聽預估 unavailable，collectionExplicitness **待下游辨識**；封面走 CAA（release-group 端點 200）。掛名三式：MB release-group 的 artist-credit 作「Gil Scott‐Heron, Brian Jackson & The Midnight Band」（含樂團名）、池中既有卡作「Gil Scott-Heron & Brian Jackson」（卡片沿用）、原盤封面作「Gil Scott-Heron and Brian Jackson」，三種都進 queryAlias——**這是派工提醒的第一種坑（掛名的括號與 feat.）在本組的實例**。",
+  "mbNote": "釘 release-group 44ed1384-72cf-3684-84ba-551a7b06ac39。回問確認：title「The First Minute of a New Day」、artist-credit「Gil Scott‐Heron, Brian Jackson & The Midnight Band」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US/Official）。刻意不釘：790abcb0-3dfc-3420-bf8c-067c947888ff《From South Africa to South Carolina》(1975 同年，池中已有)、daa5af3e-c9c9-3ef5-a998-941decc41212《It's Your World》(1976 Live)、95d796bd-5720-316a-9931-a769c1c54e01《Bridges》(1977)。藝人 MBID b5b89643-c488-4f39-a302-25cab31084a5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gil Scott-Heron, Brian Jackson & The Midnight Band；Gil Scott-Heron and Brian Jackson；The Midnight Band",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Rufus",
+  "album": "Rufus",
+  "year": 1973,
+  "genres": [
+   "soul"
+  ],
+  "label": "ABC Records",
+  "why": "Rufus 的首張同名專輯，1973 年由 ABC 發行，是 Chaka Khan 加入之後這個芝加哥團體的第一份錄音，隔年《Rags to Rufus》才讓他們走紅。池中這條線有 4 張（實掃 seed_cards.json 全 14,424 列）：Rufus & Chaka Khan《Rags to Rufus》(1974)、Rufus《Rufusized》(1974)、Rufus featuring Chaka Khan《Ask Rufus》(1977)、《Street Player》(1978)（另有 Chaka Khan 個人 3 張）——池中最早的是 1974 年，首作缺席；照「第一張該有的」判準，這張最該補。",
+  "risk": "自我同名卡，身分核對要嚴格（§1）：掛名與盤名同為「Rufus」，靠所釘 release-group MBID 與 Apple collectionId 兩重釘死。**掛名撞卡是本組最大的坑**：池中「Rufus」字串會同時命中 Rufus Wainwright（3 張）與 Rufus Thomas（3 張），去重必須用掛名全等而非子字串。Apple 命中 us：artistId 59865（條目名多作「Rufus & Chaka Khan」或「Chaka Khan & Rufus」）名下 collectionId **1474309696**、artistName「Rufus」、collectionExplicitness **notExplicit**、10 軌、releaseDate 1973-07-18；us 的 search 端點以「Rufus Rufus 1973 funk」查回 0 筆，必須走 lookup?id=59865。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group e0a5918e-edd4-3e1f-80eb-71d53b1f815a。回問確認：title「Rufus」、artist-credit「Rufus」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、JP/Official 1）。刻意不釘：78ea6eb4-a10e-3b37-af06-53a42b59397d《Rags to Rufus》(1974，池中已有)、de011fb8-6efb-3e30-a13e-4d77396f2acc《Rufusized》(1974，池中已有)、cf1d9783-fe3b-461a-bda5-0ce5c8e68487《Tres Hombres / Rufus》(二合一)、35aa0319-25af-3347-a561-132b863d2c64《The Very Best of Rufus with Chaka Khan》(精選)。藝人 MBID ec6b11b5-d6a6-4c77-af55-8076a160cc94（MB 標註「70s/80s USA funk band」，與 Rufus Wainwright 78e46ae5、Rufus Thomas af1f46fe 為不同實體），名下 21 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Rufus & Chaka Khan；Rufus featuring Chaka Khan；Rufus 1973",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Rufus featuring Chaka Khan",
+  "album": "Rufus Featuring Chaka Khan",
+  "year": 1975,
+  "genres": [
+   "soul"
+  ],
+  "label": "ABC Records",
+  "why": "Rufus 的第四張專輯，1975 年由 ABC 發行，也是「Rufus featuring Chaka Khan」這個掛名第一次成為正式團名的一張——盤名與掛名同字，正是那次改名的產物；收錄的〈Sweet Thing〉是他們最常被重錄與取樣的曲目。池中這條線有 4 張（實掃 seed_cards.json 全 14,424 列）：《Rags to Rufus》(1974)、《Rufusized》(1974)、《Ask Rufus》(1977)、《Street Player》(1978)——1975 與 1976 兩年空白，本張正是那段的第一張，也是掛名改制的分界點。",
+  "risk": "**派工提醒的第一種坑最直接的實例**：同一團體在池中已有三種掛名（Rufus & Chaka Khan／Rufus／Rufus featuring Chaka Khan），MB 這一筆的 artist-credit 是「Rufus featuring Chaka Khan」、Apple 條目作「Rufus & Chaka Khan」、原盤封面作「Rufus featuring Chaka Khan」；卡片採 MB／封面一致的那一個（也與池中《Ask Rufus》《Street Player》同寫法），其餘進 queryAlias。掛名與盤名近乎同字（大小寫不同），自我同名卡的身分核對要嚴格。Apple 命中 us：collectionId **1443806525**、collectionExplicitness **notExplicit**、10 軌、releaseDate 1975-11-18、artistName「Rufus & Chaka Khan」。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group aa16ac32-6d6f-3673-a50f-82c03edfffdc。回問確認：title「Rufus featuring Chaka Khan」、artist-credit「Rufus featuring Chaka Khan」、first-release-date 1975-11-18、primary-type Album、secondary-types 空、轄下 5 個 release（US/Official 3、JP/Official 2）。刻意不釘：e0a5918e-edd4-3e1f-80eb-71d53b1f815a《Rufus》(1973 同名首作，本批另收)、cb6327b8-4ef5-3ca2-bbe2-260473c457cd《Ask Rufus》(1977，池中已有)、35aa0319-25af-3347-a561-132b863d2c64《The Very Best of Rufus with Chaka Khan》(精選)——三筆盤名都含「Rufus」。藝人 MBID ec6b11b5-d6a6-4c77-af55-8076a160cc94。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Rufus & Chaka Khan；Rufus and Chaka Khan；Rufus Featuring Chaka Khan 1975",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Rufus & Chaka Khan",
+  "album": "Masterjam",
+  "year": 1979,
+  "genres": [
+   "soul"
+  ],
+  "label": "MCA Records",
+  "why": "Rufus 轉往 MCA、由 Quincy Jones 製作的一張，1979 年發行、美國專輯榜前十並取得白金認證，是 Chaka Khan 同時經營個人生涯期間與樂團的最後幾張合作之一。池中這條線有 4 張（實掃 seed_cards.json 全 14,424 列）：《Rags to Rufus》(1974)、《Rufusized》(1974)、《Ask Rufus》(1977)、《Street Player》(1978)——全部集中在 1974–1978 的 ABC 時期，MCA 時期一張都沒有；補這張，池中才有他們換廠牌之後的樣子。",
+  "risk": "掛名四式，撞卡與去重都要一起掃：MB release-group 的 artist-credit 作「Rufus & Chaka」（無 Khan）、Apple 條目作「Chaka Khan & Rufus」（前後顛倒）、原盤封面作「Rufus and Chaka Khan」、池中《Rags to Rufus》那張作「Rufus & Chaka Khan」（卡片沿用）。Apple 命中 us：collectionId **1444134368**、collectionExplicitness **notExplicit**、9 軌、releaseDate 1979-11-01（MB 記 1979-10-26，差六天，取 MB；Apple 日期只能當訊號，第 77 條）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group ec0bd65d-7013-4b9c-9903-4b2f4b40bb34。回問確認：title「Masterjam」、artist-credit「Rufus & Chaka」、first-release-date 1979-10-26、primary-type Album、secondary-types 空、轄下 5 個 release（US/Official 3、JP/Official 2）。刻意不釘：8ea15429-b259-4129-9ab4-4d0e871cb5b4《Numbers》(1979 同年另一張)、8819781b-defd-3b2f-a245-e3fa458fc486《Stompin' at the Savoy: Live》(Live)。藝人 MBID ec6b11b5-d6a6-4c77-af55-8076a160cc94。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rufus & Chaka；Chaka Khan & Rufus；Rufus and Chaka Khan Masterjam",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jerry Butler",
+  "album": "Jerry Butler, Esq.",
+  "year": 1959,
+  "genres": [
+   "soul"
+  ],
+  "label": "Abner Records",
+  "why": "Jerry Butler 離開 The Impressions 單飛後的首張個人專輯，1959 年由 Vee-Jay 旗下的 Abner 發行，收錄他與 Curtis Mayfield 合寫、原由 The Impressions 唱紅的〈For Your Precious Love〉。池中 Jerry Butler 只有 2 張（實掃 seed_cards.json 全 14,424 列）：《The Ice Man Cometh》(1968)、《Ice on Ice》(1969)——兩張都是十年後的費城 Gamble & Huff 時期，1959–1967 的芝加哥時期在池中完全空白；照「第一張該有的」判準，這張首作最該補。",
+  "risk": "Apple 查無：artistId 136031 名下 29 張中沒有這一筆，us 的 search 端點以「Jerry Butler Jerry Butler Esq」查回 0 筆；gb 只有《The Ice Man Cometh》(1582800320，池中已有)。試聽預估 unavailable，collectionExplicitness **待下游辨識**；封面走 CAA（release-group 端點 200）。盤名含逗號與縮寫句點「Jerry Butler, Esq.」，去標點正規化後與掛名「Jerry Butler」高度重疊，是自我同名的邊界情況——身分靠所釘 release-group MBID 釘死。MB 上另有三個同名藝人實體（7bef2432 藍草樂手、a6387d64、64a87ced），釘的是 fec55784（soul singer）。",
+  "mbNote": "釘 release-group 20576a7e-7023-4af9-897b-e08c65d07941。回問確認：title「Jerry Butler, Esq.」、artist-credit「Jerry Butler」、first-release-date 1959-11、primary-type Album、secondary-types 空、轄下 1 個 release（US/Official）。刻意不釘：7c7d270e-8d78-448a-81b8-1b9ac65ec47c 與 d89caf53-17cf-487c-915b-ba015d97612a 兩筆《For Your Precious Love》(1994／1997 再編輯版，主打曲同名)、c3798a30-f02a-3916-aca1-5eae115212c4《Philadelphia Sessions》(2001 整理輯)。藝人 MBID fec55784-ff5c-4992-83dd-1f7c4b10c6bf，名下 68 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Jerry Butler Esq；Jerry Butler Esquire；The Iceman",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Jerry Butler",
+  "album": "He Will Break Your Heart",
+  "year": 1960,
+  "genres": [
+   "soul"
+  ],
+  "label": "Vee-Jay Records",
+  "why": "Jerry Butler 的第二張個人專輯，1960 年由 Vee-Jay 發行，同名主打曲由他與 Curtis Mayfield、Calvin Carter 合寫，登上美國 R&B 榜冠軍，是芝加哥靈魂樂在 Motown 成形之前的代表作之一。池中 Jerry Butler 只有 2 張（實掃 seed_cards.json 全 14,424 列）：《The Ice Man Cometh》(1968)、《Ice on Ice》(1969)；與《Jerry Butler, Esq.》一起補進來，他的芝加哥時期就有頭兩張可依。",
+  "risk": "Apple 查無專輯條目：artistId 136031 名下 29 張中無此盤，us 的 search 端點只回 1818293175《He Will Break Your Heart / Moon River (Rerecorded Version) - Single》（2025 年的重錄單曲，**不是這張碟**）與一筆卡拉 OK 單曲。試聽預估 unavailable，collectionExplicitness **待下游辨識**；封面走 CAA（release-group 端點 200）。盤名是完整句子、與同名單曲重疊，比對必須看 release-group 型別。",
+  "mbNote": "釘 release-group 2a045742-ae4d-43d6-851b-99fdcf4e2424。回問確認：title「He Will Break Your Heart」、artist-credit「Jerry Butler」、first-release-date 1960、primary-type Album、secondary-types 空、轄下 1 個 release（US/Official）。刻意不釘：c8244367-9f4d-4f81-b21f-bbf4f08eb49a《Aware Of Love》(1961 下一張)、613d35e3-0582-3ae5-828b-29b2bbf7012a《Need to Belong》(1963)。藝人 MBID fec55784-ff5c-4992-83dd-1f7c4b10c6bf。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "He Will Break Your Heart Jerry Butler；Jerry Butler 1960",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Come and Get These Memories",
+  "year": 1963,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gordy Records",
+  "why": "Martha & the Vandellas 的首張專輯，1963 年由 Gordy 發行，主打曲由 Holland–Dozier–Holland 寫成，是這組作者搭檔第一次在 Motown 取得排行成績、也常被視為 Motown 定型化製作方式的起點。池中這條線有 3 張（實掃 seed_cards.json 全 14,424 列）：《Heat Wave》(1963)、《Dance Party》(1965)、《Watchout!》(1966)——池中最早的是同年稍晚的《Heat Wave》，首作缺席；照「第一張該有的」判準，這張最該補。",
+  "risk": "**掛名與盤名各壞一層，是本組最需要小心的一張**。掛名：1963 年原盤 credit 是「Martha & the Vandellas」（1967 年才改成 Martha Reeves & the Vandellas），MB release-group 的 artist-credit 作「Martha and the Vandellas」、MB 藝人實體作「Martha Reeves and the Vandellas」、Apple 作「Martha Reeves & The Vandellas」、池中三張既有卡有「Martha Reeves and the Vandellas」與「Martha Reeves & the Vandellas」兩種寫法——卡片採池中多數的「Martha Reeves & the Vandellas」，其餘四種全部進 queryAlias。盤名：Apple gb 條目作「**Come Get These Memories**」（少了 and），與 MB／原盤的「Come and Get These Memories」不等，去重兩種都要掃。Apple 只在 gb 命中：artistId 13431501、collectionId **1443650840**、collectionExplicitness **notExplicit**、12 軌；us 名下 16 張中無此盤，依第 158 條店面順序 gb 優先。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group bc3c62c9-a6a4-4034-b594-0a555a4a8ad4。回問確認：title「Come and Get These Memories」、artist-credit「Martha and the Vandellas」、first-release-date 1963-06-28、primary-type Album、secondary-types 空、轄下 1 個 release（US/Official）。刻意不釘：38f69733-a7a6-3304-9bff-0c0765ee8bc5《Come and Get These Memories / Heatwave》(2002 二合一，盤名完全包含本張)、d2f39328-b948-469b-bca7-93a99840e45a《Heat Wave》(1963-09，池中已有)、6971de92-876e-4575-bdbc-d75028850ade《Compact Command Performances: 24 Greatest Hits》(精選)。藝人 MBID 9d1bc10a-24fe-4b41-8338-ea92d8101a09，名下 48 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Martha and the Vandellas；Martha & the Vandellas；Martha Reeves and the Vandellas；Come Get These Memories",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Ridin' High",
+  "year": 1968,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gordy Records",
+  "why": "Martha Reeves & the Vandellas 改掛新團名之後的第一張專輯，1968 年由 Gordy 發行，收錄〈Honey Chile〉與〈I Promise to Wait My Love〉。池中這條線有 3 張（實掃 seed_cards.json 全 14,424 列）：《Heat Wave》(1963)、《Dance Party》(1965)、《Watchout!》(1966)——三張都停在 1966 年以前、都還是舊團名時期；補這張，池中才有她們改名之後的樣子。",
+  "risk": "掛名寫法同上（五式），卡片採池中多數的「Martha Reeves & the Vandellas」。Apple 命中 us：artistId 13431501、collectionId **1443571643**、collectionExplicitness **notExplicit**、12 軌、releaseDate 1968-01-01（MB 只記到年，無月日）。盤名撇號 MB 與卡片皆用 ASCII「Ridin' High」，但 Apple 條目作「Ridin' High」、部分資料庫作「Riding High」，兩種都要掃。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 222ae95b-b33e-4356-ab8a-544e7552f611。回問確認：title「Ridin' High」、artist-credit「Martha Reeves & the Vandellas」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 1 個 release（US/Official）。刻意不釘：473377d5-e653-39f0-a162-20a5de31bffd《Ridin' High / Sugar n' Spice》(2002 二合一，盤名完全包含本張)、0faec8a6-b409-4666-9a7c-dce8bf42c47a《Sugar n' Spice》(1969 下一張)。藝人 MBID 9d1bc10a-24fe-4b41-8338-ea92d8101a09。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Riding High；Martha and the Vandellas；Martha Reeves and the Vandellas",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Natural Resources",
+  "year": 1970,
+  "genres": [
+   "soul"
+  ],
+  "label": "Gordy Records",
+  "why": "Martha Reeves & the Vandellas 1970 年的專輯，是她們在 Motown 遷往洛杉磯前的最後幾張之一，收錄〈I Should Be Proud〉——Motown 少見的直接觸及越戰的單曲。池中這條線有 3 張（實掃 seed_cards.json 全 14,424 列）：《Heat Wave》(1963)、《Dance Party》(1965)、《Watchout!》(1966)；補《Come and Get These Memories》《Ridin' High》與這張之後，她們的目錄在池中就從 1963 延伸到 1970。",
+  "risk": "掛名寫法同組內另外兩張（五式），卡片採「Martha Reeves & the Vandellas」。Apple 只在 gb 命中：artistId 13431501、collectionId **1443795624**、collectionExplicitness **notExplicit**、12 軌；us 名下 16 張中無此盤，店面 gb 優先。盤名《Natural Resources》為常見詞組，跨藝人撞名要靠掛名分辨。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 81b693dd-1e45-3e5a-b465-f92d091dbc1c。回問確認：title「Natural Resources」、artist-credit「Martha Reeves & the Vandellas」、first-release-date 1970-09-08、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、XW/Official 1）。刻意不釘：8f56ac61-62a7-3909-bea8-7915fd74b140《Natural Resources / Black Magic》(2002 二合一，盤名完全包含本張)、9a34a1f8-fe95-388c-935c-03457474d011《Black Magic》(1972 下一張)。藝人 MBID 9d1bc10a-24fe-4b41-8338-ea92d8101a09。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Martha and the Vandellas；Martha Reeves and the Vandellas Natural Resources",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Boyz II Men",
+  "album": "Evolution",
+  "year": 1997,
+  "genres": [
+   "soul",
+   "pop"
+  ],
+  "label": "Motown Records",
+  "why": "Boyz II Men 的第三張錄音室專輯，1997 年由 Motown 發行、美國專輯榜冠軍，製作班底包含 Babyface、Jimmy Jam & Terry Lewis 與 Sean \"Puffy\" Combs，是他們在《II》創下連續榜首紀錄之後的接續作。池中 Boyz II Men 有 2 張（實掃 seed_cards.json 全 14,424 列）：《Cooleyhighharmony》(1991)、《II》(1994)——池中停在 1994 年，之後全缺；這張是緊接在《II》之後的一張，也是他們四人編制的最後一張冠軍專輯。",
+  "risk": "Apple 命中 us：artistId 對應 collectionId **1440923061**、collectionExplicitness **notExplicit**、13 軌、releaseDate 1997-01-01（MB 記 1997-09-20，Apple 只記到年份，取 MB，第 77 條）。同名撞卡風險高：《Evolution》是極常見盤名（MB 上另有 Journey、Anthrax 等多組同名碟），比對必須連掛名一起看。MB 另有西語版《Evolución》(41b5033b) 為同一批錄音的另一種發行，屬不同 release-group，不釘。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 2cbc5101-bcbe-364a-a57e-bd575f4584be。回問確認：title「Evolution」、artist-credit「Boyz II Men」、first-release-date 1997-09-20、primary-type Album、secondary-types 空、轄下 9 個 release（JP/Official 2、CA/Official 2、US/DE/AU/XE/GB 各 1）。刻意不釘：41b5033b-03d6-45a7-a0de-85d0ecb1ef4d《Evolución》(1997 西語版)、477ba128-6cb0-4da7-bb69-eba3b8ee183c《Extras》(1996 精選)、ec2a2fb4-fb8b-3c68-8420-1e77142e9520《Legacy: The Greatest Hits Collection》(2001 精選)。藝人 MBID b42eca0f-9381-43db-badb-1cba080a7dc2，名下 77 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Evolución；Boyz 2 Men；Boyz II Men Evolution",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Boyz II Men",
+  "album": "Nathan Michael Shawn Wanya",
+  "year": 2000,
+  "genres": [
+   "soul"
+  ],
+  "label": "Universal Records",
+  "why": "Boyz II Men 的第四張錄音室專輯，2000 年發行，盤名直接用四位成員的名字，也是他們自製比重最高、與 Motown 分手前的最後一張四人作品；此後 Michael McCary 因健康因素退團。池中 Boyz II Men 有 2 張（實掃 seed_cards.json 全 14,424 列）：《Cooleyhighharmony》(1991)、《II》(1994)；補《Evolution》與這張之後，池中就有這個編制從 1991 到 2000 的完整四張。",
+  "risk": "Apple 命中 us：collectionId **1443527057**、collectionExplicitness **notExplicit**、14 軌、releaseDate 2000-08-30（與 MB 完全一致）。盤名是四個人名連寫、無標點，任何以空格分詞的比對都會拆散它；另有「Nathan, Michael, Shawn, Wanya」（帶逗號）的寫法在部分資料庫通行，兩種都要掃。撞卡：池中無同名碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group a7f17acc-d51e-3a5c-a1eb-2121715c86df。回問確認：title「Nathan Michael Shawn Wanya」、artist-credit「Boyz II Men」、first-release-date 2000-08-30、primary-type Album、secondary-types 空、轄下 3 個 release（JP/XE/US 各 1 Official）。刻意不釘：18cb20a4-fbf1-3140-a2db-487cb004366f《The Ballad Collection》(2000 同年精選)、6aab9fc1-730c-4bb0-8704-bbecebe540a6《Platinum Collection 2000》(精選)。藝人 MBID b42eca0f-9381-43db-badb-1cba080a7dc2。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nathan, Michael, Shawn, Wanya；Boyz 2 Men",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
