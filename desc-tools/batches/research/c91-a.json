@@ -1,0 +1,346 @@
+[
+ {
+  "key": "desc4:董事長樂團|董事長.tw",
+  "artist": "董事長樂團",
+  "album": "董事長.tw",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fa0d6c30 的欄位：title「董事長.tw Chairman 2」、artist-credit「董事長樂團」、first-release-date 2001-11-15、primary-type Album、secondary-types 空，轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/fa0d6c30-db82-4993-8bde-329379fd435a"
+   },
+   {
+    "f": "該 release-group 唯一的 release（731c98a9）欄位：標題「董事長.tw Chairman 2」、2001-11-15、TW、status Official、廠牌欄 Sony BMG Music Entertainment、編號 PMD0135、載體 CD、10 軌。逐軌曲名與曲長依序為〈123〉4:40、〈不爽〉4:30、〈算了吧〉4:34、〈少年ㄟ〉3:25、〈我不是你的司機〉3:54、〈憨大呆〉3:14、〈我想欲飛〉4:29、〈星期六的晚上〉4:37、〈後悔〉3:45、〈這樣也好〉4:59。",
+    "src": "https://musicbrainz.org/release/731c98a9-ad79-4caa-b7a6-a4c964b766f0"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的正規專輯表把 2001 年這一張記成第 2 張、盤名寫「chairman.tw2」、發行方寫「動能音樂」；同表記 2000 年第 1 張《你袂了解》由華研國際音樂發行，1999 年首支單曲《攏袂歹勢》由角頭音樂發行。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉導言記：冠宇、吳永吉、杜文祥三人 1989 年一起組成「1989」樂團；1997 年 7 月 4 日阿吉（吳永吉）與冠宇、小白、大鈞、金剛五位原始團員在「女巫店」通過「董事長」這個團名。同條目「其他」欄記 2000 年原主唱冠宇（何志盛）過世。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "ETtoday 星光雲 2014 年的報導寫「董事長樂團」的前主唱冠宇「因血癌病逝」，並記其父獨居陽明山鐵皮屋、十四年來一人過年，該年由團員阿吉、大鈞、小豪、小白帶全家到何爺爺家提前圍爐。",
+    "src": "https://star.ettoday.net/news/317602"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 1999 年第 2 屆中華音樂人交流協會年度十大單曲，入圍與得獎項目都是〈攏袂歹勢〉，結果欄記獲獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 1445803773 的欄位：collectionName「董事長.tw Chairmans 2」（Chairman 帶 s）、artistName 董事長樂團、releaseDate 2001-11-15、trackCount 10、notExplicit；十軌曲名與曲序和 MB 那筆逐項相同，僅第 5 軌 Apple 作〈我不是妳的司機〉、MB 作〈我不是你的司機〉，差一個字。十軌全部帶 previewUrl。",
+    "src": "https://music.apple.com/tw/album/1445803773"
+   }
+  ],
+  "hookCandidates": [
+   "盤名在團名後面接了一個 .tw",
+   "同一張碟三個地方三種寫法，沒有兩個一樣"
+  ],
+  "sound": "十軌都是三分多到五分鐘的長度，最短的〈憨大呆〉3:14、最長的〈這樣也好〉4:59（MB 2001 TW 原盤逐軌曲長）。",
+  "keyTracks": [
+   "123",
+   "少年ㄟ",
+   "星期六的晚上"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2001 三方一致：MB release-group first-release-date 2001-11-15、MB 唯一 release 的日期同、Apple TW releaseDate 同。中文維基專輯表也記 2001 年，無爭議。",
+  "notes": "**推翻探測層**：`previews.json` 這一筆標 unavailable、tried 記八個店面各搜到 1 筆卻都沒配上（tw:1→0 …）。本層以策展層已記下的 collectionId 1445803773 直查 `lookup?id=…&entity=song&country=tw`，**回到十軌、十軌全部有 previewUrl**，曲名與曲序與 MB 原盤逐項相同。落空的原因是盤名比對：Apple 的字串是「董事長.tw Chairmans 2」（Chairman 多一個 s），卡片盤名《董事長.tw》比它短，屬第 152／162 條那個形狀。**建議主線把這筆改成 ready、front tw、collectionId 1445803773**（本層依禁令不動 previews.json）。\n**廠牌兩說**：MB 記 Sony BMG Music Entertainment／PMD0135，中文維基記動能音樂。facts 兩邊都給了，行文不得只寫一方，也不要寫成「Sony 簽下他們」。\n**冠宇的死**：facts 給的是兩件分開查證的事——中文維基記 2000 年過世、ETtoday 記死因為血癌。**不要把「2001 年這張是他過世後的第一張」寫進正文**，那是把兩條 fact 併成一個推論（第 33／110 條），而且 2000 年的《你袂了解》與他過世的先後查不到確切日期。\n**不入 facts 的一筆**：中文維基〈董事長樂團〉有「爭議事件」欄，記 2002 年一件對團員的性侵指控（結果為不起訴處分）。與本張唱片無關、且是不起訴，本層不寫進 facts，記在這裡供主線判斷。\n**互斥可用面向**：本張獨有的是團名由來（女巫店、1989 樂團）與盤名的網址寫法。"
+ },
+ {
+  "key": "desc4:董事長樂團|十一台",
+  "artist": "董事長樂團",
+  "album": "十一台",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9a395496 的欄位：title「十一台」、artist-credit「董事長樂團」、first-release-date 2002-08-09、primary-type Album、secondary-types 空，轄下 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/9a395496-8008-47c6-8c38-e766adfa7f09"
+   },
+   {
+    "f": "該 release（4f897b81）欄位：2002-08-09、TW、Official、Sony BMG Music Entertainment、編號 IMD0239、CD、11 軌。逐軌曲名與曲長：〈加暝班〉3:30、〈樂介燒〉4:07、〈心愛的牛肉麵〉2:27、〈檳榔西施〉2:38、〈悲哀〉2:05、〈牽拖〉4:12、〈瘋豬哥〉3:59、〈沒問題〉4:40、〈是嘸是〉4:18、〈卒仔〉5:08、〈加暝班 (original)〉4:28。",
+    "src": "https://musicbrainz.org/release/4f897b81-a715-4e13-9dd2-2fc9b7b1b508"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2003 年第 14 屆金曲獎最佳樂團獎，入圍作品《十一台》，結果欄記提名（未得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的資訊框把〈心愛的牛肉麵〉與〈出外的黑人〉並列為樂團代表作。同條目的正規專輯表把 2002 年這一張記成第 3 張、盤名寫「11台」、發行方寫「愛做音樂」。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 840578032 的欄位：collectionName「十一台」、artistName 董事長樂團、releaseDate 2002-01-01、trackCount 11。",
+    "src": "https://music.apple.com/tw/album/840578032"
+   }
+  ],
+  "hookCandidates": [
+   "最後一軌是第一軌的原始版",
+   "碟上有一首歌叫〈心愛的牛肉麵〉"
+  ],
+  "sound": "十一軌從〈悲哀〉2:05 到〈卒仔〉5:08，末軌〈加暝班 (original)〉4:28 與首軌〈加暝班〉3:30 是同一首的兩個版本（MB 2002 TW 原盤逐軌曲長與曲名）。",
+  "keyTracks": [
+   "心愛的牛肉麵",
+   "檳榔西施",
+   "加暝班"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2002 採 MB 的 2002-08-09（release-group 與唯一 release 一致），中文維基專輯表亦記 2002 年。Apple TW 那筆的 releaseDate 是 2002-01-01，屬 Apple 常見的年初佔位值（第 77 條：Apple 的 releaseDate 只能當訊號），不採。",
+  "notes": "**盤名兩種寫法**：MB 與 Apple 都作「十一台」，中文維基作「11台」。行文用卡片的《十一台》即可，不必解釋兩種寫法。\n**探測層**：標 ready、front tw、collectionId 840578032、11 軌，本層複核 Apple 標題與 MB 曲數一致，無 Karaoke／Instrumental／Tribute 一類尾綴（第 153 附）。無更正。\n**獎項**：facts 那筆已寫明第幾屆、哪一年、哪個類別、提名而非得獎。**不得寫成「拿下金曲獎」**——樂團真正拿到最佳樂團獎是 2006 年的《找一個新世界》與 2018 年的《祭》，不是這一張。\n**廠牌兩說**：MB 記 Sony BMG／IMD0239，中文維基記愛做音樂。\n**互斥可用面向**：本張獨有的是「末軌是首軌的 original 版」這個曲目結構，以及〈心愛的牛肉麵〉的代表作地位。"
+ },
+ {
+  "key": "desc4:董事長樂團|找一個新世界",
+  "artist": "董事長樂團",
+  "album": "找一個新世界",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ce899faf 的欄位：title「找一個新世界」、artist-credit「董事長樂團」、first-release-date 2005-03-24、primary-type Album、secondary-types 空，轄下 1 個 release（446d573a：2005-03-24、TW、Official、編號 CMD402、CD、10 軌，廠牌名欄空白）。",
+    "src": "https://musicbrainz.org/release/446d573a-d445-4fd0-8fd1-5e73e1aa8bd4"
+   },
+   {
+    "f": "該 release 的逐軌曲名與曲長：〈找一個新世界〉4:49、〈Just Give Me A Chance (獻給陳金鋒)〉4:54、〈無以名狀〉4:22、〈藍旗袍〉5:04、〈夢〉5:48、〈風速200米〉4:26、〈憨慢〉5:39、〈刺字〉4:36、〈立法院〉3:29、〈般若波羅蜜多心經〉8:54。",
+    "src": "https://musicbrainz.org/release/446d573a-d445-4fd0-8fd1-5e73e1aa8bd4"
+   },
+   {
+    "f": "Hit FM 的專輯介紹頁記：發行公司典選音樂、發行月份 2005-Mar；主打歌〈找一個新世界〉邀請金曲獎最佳新人紀曉君吟唱一段卑南古調做為 intro；〈Just Give Me A Chance〉獻給陳金鋒；〈般若波羅蜜多心經〉以〈心經〉做為整張專輯的中心思想；混音由顏仲坤（Paul）負責。",
+    "src": "https://www.hitoradio.com/newweb/4253album"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2006 年第 17 屆金曲獎最佳樂團獎，入圍作品《找一個新世界》，結果欄記獲獎；同表另記 2006 年第 9 屆中華音樂人交流協會年度十大專輯，入圍作品《找一個新世界》，結果欄記獲獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的正規專輯表把 2005 年這一張記成第 5 張、發行方典選音樂；同表把 2003 年的第 4 張記為《冠宇單飛》（角頭音樂），並在獎項表記 2004 年第 15 屆金曲獎最佳台語男演唱人獎入圍者為冠宇《單飛》、結果提名。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 702795326 的欄位：collectionName「找一個新世界」、releaseDate 2005-03-24（與 MB 同日）、trackCount 10。",
+    "src": "https://music.apple.com/tw/album/702795326"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟的中心思想是一部〈心經〉",
+   "專輯開頭是一段卑南古調"
+  ],
+  "sound": "十軌從〈立法院〉3:29 到收尾的〈般若波羅蜜多心經〉8:54，末軌比其他任何一軌都長出三分鐘以上（MB 2005 TW 原盤逐軌曲長）。混音由顏仲坤負責（Hit FM 專輯介紹頁）。",
+  "keyTracks": [
+   "找一個新世界",
+   "Just Give Me A Chance (獻給陳金鋒)",
+   "般若波羅蜜多心經"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2005 三方一致：MB release-group 與 release 皆 2005-03-24、Apple TW releaseDate 同日、Hit FM 專輯頁記 2005-Mar、中文維基專輯表記 2005 年。",
+  "notes": "**廠牌**：MB 的 TW release 只填了編號 CMD402、廠牌名欄空白；「典選音樂」來自 Hit FM 專輯頁與中文維基，兩者一致，可寫。\n**探測層**：標 ready、front tw、collectionId 702795326、10 軌，與 MB 曲數一致，標題無翻唱／伴奏尾綴。無更正。\n**獎項寫法**：第 17 屆金曲獎最佳樂團獎是**得獎**（樂團史上第一座金曲最佳樂團），中華音樂人交流協會第 9 屆年度十大專輯也是**得獎**，兩筆都要分開講、不可合併成「拿下兩座獎」。⚠ 中文維基獎項表 2007 年那一列（第 10 屆中華音樂人交流協會，專輯欄寫《真的假的》、入圍欄卻寫《找一個新世界》）**表格自相矛盾**，本層不採、facts 未寫。\n**〈Just Give Me A Chance〉的副標**：MB 曲名欄自己就帶「(獻給陳金鋒)」，Hit FM 也寫「獻給陳金鋒」，兩處互相印證。陳金鋒是棒球選手，**行文若要提，只寫「獻給陳金鋒」這件事，不要補他的生涯數據或球隊**——那些不在 facts 裡。\n**互斥可用面向**：本張獨有的是紀曉君的卑南古調 intro、〈心經〉當中心思想、第 17 屆金曲獎最佳樂團得獎。"
+ },
+ {
+  "key": "desc4:董事長樂團|真的假的!?",
+  "artist": "董事長樂團",
+  "album": "真的假的!?",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 342283b8 的欄位：title「真的假的!?」、artist-credit「董事長樂團」、first-release-date 2006-11-22、primary-type Album、secondary-types 空，轄下 2 個 release，都是 TW／Official。",
+    "src": "https://musicbrainz.org/release-group/342283b8-f984-4df2-980b-a066e2ad71aa"
+   },
+   {
+    "f": "其中一筆 release（fe436697，2006、TW、Official、廠牌欄 Here Music、編號 CMD 204、CD）登錄 20 軌：第 1–10 軌是〈愛在發燒〉4:01、〈出外的黑人〉3:40、〈可愛的車〉2:41、〈搖囝仔歌〉2:56、〈妻奴〉4:06、〈黑風寨〉3:21、〈新男性的復仇〉6:12、〈燃燒吧小鳥〉3:13、〈台灣之光〉4:23、〈追追追〉3:35，第 11–12 軌是〈黑風寨 (俠客版)〉3:23 與〈可愛的車 (轉音版)〉2:39，**第 13 到 19 軌是七段各 4 秒、曲名欄只有一個句點的空白軌**，第 20 軌是〈八達樓子〉4:04。",
+    "src": "https://musicbrainz.org/release/fe436697-6d87-49f7-9e6b-c7c657929692"
+   },
+   {
+    "f": "同一個 release-group 的另一筆 release（7462ee9f，2006-11-22、TW、Official、編號 CMD204、CD）只登錄到第 12 軌為止，沒有那七段空白軌與〈八達樓子〉。",
+    "src": "https://musicbrainz.org/release/7462ee9f-fb63-4c9c-8c62-f55a2dc018da"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2007 年第 18 屆金曲獎最佳台語專輯獎，入圍作品《真的假的》，結果欄記獲獎；金曲獎最佳台語專輯獎的歷屆名單也把 2007 年那一格記為《真的假的！？》董事長樂團。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的資訊框把〈出外的黑人〉與〈心愛的牛肉麵〉並列為樂團代表作；同條目正規專輯表把 2006 年這一張記成第 6 張、發行方典選音樂。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 702818249 的欄位：collectionName「真的假的」（沒有驚嘆號與問號）、releaseDate 2006-10-22、trackCount 12。",
+    "src": "https://music.apple.com/tw/album/702818249"
+   }
+  ],
+  "hookCandidates": [
+   "第十三軌起連著七段四秒鐘的空白",
+   "數位版把盤名尾巴那兩個標點吃掉了"
+  ],
+  "sound": "正曲十首從〈可愛的車〉2:41 到〈新男性的復仇〉6:12，之後接兩個改編版本；MB 那筆 20 軌的登錄在第 12 軌之後排了七段各 4 秒的空白，末端才是〈八達樓子〉4:04（MB release fe436697 的曲目表）。",
+  "keyTracks": [
+   "出外的黑人",
+   "追追追",
+   "八達樓子"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2006 採 MB 的 2006-11-22（release-group first-release-date 與 7462ee9f 那筆 release 同日），中文維基專輯表亦記 2006 年。Apple TW 那筆 releaseDate 記 2006-10-22，早一個月，屬 Apple 的上架日訊號、不採（第 77 條）。",
+  "notes": "**同一張碟兩筆 release**：曲數 12 與 20 的差別在**隱藏軌**（七段 4 秒空白＋〈八達樓子〉），不是兩張不同的碟——兩筆同編號 CMD204／CMD 204、同年、同國。行文可以寫隱藏軌，但**不要寫成「有兩個版本」**。\n**探測層**：標 ready、front tw、collectionId 702818249、12 軌。本層複核：Apple 的 12 軌對應 MB 的第 1–12 軌，曲序一致，Apple 沒有收那七段空白與〈八達樓子〉。標題被 Apple 去掉了「!?」，這是 tried 記「tw:429, tw:1→1」仍配上的原因。無更正。\n**獎項**：第 18 屆金曲獎最佳台語專輯獎是**得獎**，而且有兩處互相印證（條目獎項表＋歷屆名單導覽框）。寫的時候要寫明第 18 屆／2007 年／最佳台語專輯獎／得獎。\n**〈追追追〉**：本層**查不到**這首是原創還是翻唱，facts 只寫它是第 10 軌。**行文不得寫成翻唱、也不得寫成原創。**\n**互斥可用面向**：本張獨有的是隱藏軌結構與第 18 屆金曲最佳台語專輯得獎。"
+ },
+ {
+  "key": "desc4:董事長樂團|花光他的錢",
+  "artist": "董事長樂團",
+  "album": "花光他的錢",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c5901858 的欄位：title「花光他的錢」、artist-credit「董事長樂團」、first-release-date 2008-12-26、primary-type Album、secondary-types 空，轄下 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/c5901858-324a-4538-999c-e1a3fbb8f9a8"
+   },
+   {
+    "f": "該 release（1f60eeb6）欄位：2008-12-26、TW、Official、廠牌欄喜瑪拉雅、編號 SO1002，**載體是兩張 CD，兩片各 10 軌**。第一片是〈為啥我攏無〉3:27、〈娘娘腔〉3:01、〈溫室.花朵〉3:28、〈鋼琴老師〉3:48、〈山地醉拳〉4:04、〈假嘻哈〉3:14、〈二奶〉3:14、〈花光他的錢〉3:21、〈Party all night, Sleep all day〉3:40、〈藥〉3:36；**第二片是同樣十首的 remix 版**，從〈假嘻哈 (remix)〉3:35 到〈藥 (remix)〉12:07。",
+    "src": "https://musicbrainz.org/release/1f60eeb6-be5c-4e1a-b2c6-9e5b397b2af4"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2009 年第 20 屆金曲獎最佳樂團獎，入圍作品《花光他的錢》，結果欄記提名（未得獎）。同條目正規專輯表把 2008 年這一張記成第 7 張、發行方喜瑪拉雅音樂。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的「其他」欄記樂團 2007 年成立「大吉祥音樂工作室」，同年製作蔣進興的原住民專輯《My name is Bai lang》；獎項表記該作入圍 2008 年第 19 屆金曲獎最佳原住民語專輯獎與最佳原住民語歌手獎，兩項都是提名。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 840618106 的欄位：collectionName「花光他的錢」、trackCount 20、collectionExplicitness 為 explicit；回傳的二十軌分兩片，第一片十軌與第二片十首 remix 的曲名與曲序和 MB 那筆逐項相同，只有第一片第 9 軌 Apple 作〈及時行樂〉、MB 作〈Party all night, Sleep all day〉。二十軌全部帶 previewUrl。",
+    "src": "https://music.apple.com/tw/album/840618106"
+   }
+  ],
+  "hookCandidates": [
+   "第二張碟是第一張碟從頭再混一遍",
+   "一首三分半的歌被混成十二分鐘"
+  ],
+  "sound": "第一片十軌都在三分到四分之間，最短〈娘娘腔〉3:01、最長〈山地醉拳〉4:04；第二片的 remix 版整個拉長，最短〈假嘻哈 (remix)〉3:35、最長〈藥 (remix)〉12:07（MB 2008 TW 原盤兩片的逐軌曲長）。",
+  "keyTracks": [
+   "花光他的錢",
+   "二奶",
+   "藥"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2008 一致：MB release-group 與唯一 release 皆 2008-12-26，中文維基專輯表記 2008 年。",
+  "notes": "**推翻策展層**：`curatorRisk` 說「Apple TW 840618106 的曲數是 20 軌…MB 的 TW release 未列曲目，兩者曲數對不上——很可能是二合一或加曲版」。**不成立。** MB 那筆 release 有曲目，而且**原盤本身就是兩片 CD、10＋10 軌**，第二片是同十首的 remix。Apple 的 20 軌與原盤逐項對得上（第 141 條：要對軌數下判斷就要開原盤來源）。**這張不是二合一、不是加曲版，不必扣任何東西。**\n**推翻探測層**：`previews.json` 標 unavailable、tried 全是 0→0（真的搜不到）。但用策展層記下的 collectionId 直查 `lookup?id=840618106&entity=song&country=tw` **回到二十軌、全部有 previewUrl**（第 134／137 條的回補路徑）。落空是搜尋字串問題，不是 Apple 沒有這張碟。**建議主線改成 ready、front tw、collectionId 840618106，並在 note 寫明固定試聽要取第一片第 1 軌〈為啥我攏無〉。**\n**曲名差異**：第一片第 9 軌兩邊不同名（Apple〈及時行樂〉／MB〈Party all night, Sleep all day〉），曲長 3:40 對得上，是同一首的兩種標法。**行文引用曲名時擇一並註明出處，不要並列成兩首歌。**\n**同日同廠牌**：喜瑪拉雅同一天（2008-12-26）也發了濁水溪公社《藍寶石》（LTKC-005），這條線由本張與《藍寶石》共用，兩張擇一寫即可——**本層把它分給《藍寶石》**，本張不寫。\n**互斥可用面向**：本張獨有的是「第二片整片 remix」的雙碟結構與第 20 屆金曲獎最佳樂團入圍。"
+ },
+ {
+  "key": "desc4:董事長樂團|一條命",
+  "artist": "董事長樂團",
+  "album": "一條命",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 81e9aa10 的欄位：title「一條命」、artist-credit「董事長樂團」、first-release-date 2013-11-07、primary-type Album、secondary-types 空，轄下 1 個 release（9374a034：2013-11-07、TW、Official、廠牌欄大吉祥整合行銷有限公司、編號 DGS-1301、CD、10 軌）。",
+    "src": "https://musicbrainz.org/release/9374a034-55d0-4e16-8c43-4ebe91a088e2"
+   },
+   {
+    "f": "該 release 的逐軌曲名與曲長：〈美麗啊！〉4:20、〈幸福的滋味〉4:19、〈一句話〉4:11、〈破船〉3:27、〈啊娘喂〉3:37、〈攏汝啦〉3:15、〈踹共〉3:42、〈No俗〉3:54、〈火大〉3:13、〈家己的〉4:15。",
+    "src": "https://musicbrainz.org/release/9374a034-55d0-4e16-8c43-4ebe91a088e2"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2014 年第 25 屆金曲獎兩項：最佳台語專輯獎入圍《One Life／一條命》、最佳樂團獎入圍同作，兩項結果欄都記提名。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的正規專輯表把 2013 年這一張記成第 9 張、盤名寫「One Life／一條命」、發行方大吉祥整合行銷；同條目「其他」欄記 2013 年「集體記憶」巡演首站於台北國際會議中心登場，主唱阿吉在該場發表新書《最後一杯酒》。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "KKBOX 數位音樂風雲榜年度創作精神獎的歷屆名單把 2014 年那一格記為董事長樂團。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 香港店面 collectionId 710014482 的欄位：collectionName「一條命」、artistName 董事長樂團、releaseDate 2013-08-02、trackCount 10。",
+    "src": "https://music.apple.com/tw/album/710014482"
+   }
+  ],
+  "hookCandidates": [
+   "自家開的公司出的第一批唱片，編號從 DGS-1301 起算",
+   "巡演首站那天，主唱在台上發了一本書"
+  ],
+  "sound": "十軌全部落在三分到四分半之間，最短〈火大〉3:13、最長〈美麗啊！〉4:20（MB 2013 TW 原盤逐軌曲長）。",
+  "keyTracks": [
+   "美麗啊！",
+   "踹共",
+   "家己的"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2013 採 MB 的 2013-11-07（release-group 與唯一 release 一致），中文維基專輯表亦記 2013 年。Apple 那筆的 releaseDate 2013-08-02 早三個月，屬上架日訊號、不採（第 77／91 條）。",
+  "notes": "**廠牌名不要混用**：MB 的 release 廠牌欄是「大吉祥整合行銷有限公司」，中文維基「其他」欄記樂團 2007 年成立的是「大吉祥音樂工作室」，**是兩個名稱**，行文不得互換。\n**探測層**：標 ready，但 front 是 **hk 不是 tw**（tried 記 tw 連兩次 429 後 tw:0→0，hk 才配上）。本層複核 collectionId 710014482 的標題與曲數與 MB 一致、無翻唱尾綴。無更正；只提醒本機端這一筆的試聽是香港店面來的。\n**獎項**：兩項都是**入圍**，不是得獎，而且同屆（第 25 屆／2014）。**不得合併寫成「入圍兩項並拿下」。**\n**KKBOX 那一筆**：頒給的是**樂團**（年度創作精神獎），不是頒給這張專輯，行文不要寫成「本張獲獎」。\n**互斥可用面向**：本張獨有的是 DGS 自家編號系列的起點與「集體記憶」巡演首站發書那件事。"
+ },
+ {
+  "key": "desc4:董事長樂團|一個世界",
+  "artist": "董事長樂團",
+  "album": "一個世界",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2255ffed 的欄位：title「一個世界」、artist-credit「董事長樂團」、first-release-date 2014-12-20、primary-type Album、secondary-types 空，轄下 1 個 release（179d6f3e：2014-12-20、TW、Official、廠牌欄禾廣娛樂股份有限公司、編號 DGS-1403、CD、12 軌）。",
+    "src": "https://musicbrainz.org/release/179d6f3e-d0ac-4fb1-a74b-ee8d52c6bfd8"
+   },
+   {
+    "f": "該 release 的逐軌曲名與曲長：〈或許從來沒有遇見你〉4:47、〈背包客〉3:45、〈走不走〉3:39、〈沉下去〉3:52、〈海邊的房子〉3:03、〈說不出口的那句話〉3:21、〈往事的往事〉3:42、〈Run Baby Run〉3:31、〈謊言〉2:58、〈天，一直亮著〉3:58、〈黑肉戀曲〉4:23、〈毛毛雨〉4:45。",
+    "src": "https://musicbrainz.org/release/179d6f3e-d0ac-4fb1-a74b-ee8d52c6bfd8"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2015 年第 26 屆金曲獎最佳樂團獎，入圍作品《One World／一個世界》，結果欄記提名（未得獎）。同條目正規專輯表把 2014 年這一張記成第 10 張、盤名寫「One World／一個世界」、發行方大吉祥整合行銷。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "編號 DGS-1403 與前一年《一條命》的 DGS-1301 同屬一組自家編號；MB 兩筆 release 的廠牌欄卻不同——《一條命》記大吉祥整合行銷有限公司，本張記禾廣娛樂股份有限公司。",
+    "src": "https://musicbrainz.org/release-group/2255ffed-9ce5-4575-9306-6d0ed891682d"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 956111106 的欄位：collectionName「一個世界」、releaseDate 2015-01-08、trackCount 12。",
+    "src": "https://music.apple.com/tw/album/956111106"
+   }
+  ],
+  "hookCandidates": [
+   "自家編號沒變，唱片背面的公司名卻換了一個",
+   "十二首歌只有一首破四分半"
+  ],
+  "sound": "十二軌從〈謊言〉2:58 到〈或許從來沒有遇見你〉4:47，是三團裡曲長分佈最集中的一張（MB 2014 TW 原盤逐軌曲長）。",
+  "keyTracks": [
+   "或許從來沒有遇見你",
+   "背包客",
+   "毛毛雨"
+  ],
+  "status": "thin",
+  "yearVerified": "卡片 year 2014 採 MB 的 2014-12-20（release-group 與唯一 release 一致），中文維基專輯表亦記 2014 年。Apple TW 那筆 releaseDate 2015-01-08 跨年，是上架日、不採。",
+  "notes": "**標 thin 的理由**：這一張除了曲目、編號、廠牌與一項金曲入圍之外，本層查不到任何專輯層級的製作、錄音或評論素材（中文維基專輯表只有一行、官方經紀公司頁面沒有它的介紹、Discogs 查無、無專屬條目）。**thin 卡簡介字數帶 120–180（第 161 條）。**\n**廠牌兩說**：MB 記禾廣娛樂、中文維基記大吉祥整合行銷，兩邊 facts 都給了，是自家公司與代理發行的差別，**行文不得只寫一方**。\n**別名 One World 不可作自動比對**：池中已有 John Martyn《One World》（策展層已指出），字串相同。\n**探測層**：標 ready、front tw、collectionId 956111106、12 軌，與 MB 曲數一致、曲名逐項對得上、無翻唱尾綴。無更正。\n**互斥可用面向**：本張只剩「DGS 編號沒變但廠牌欄換人」這條，其餘素材不足。"
+ },
+ {
+  "key": "desc4:董事長樂團|董事長的少年時代",
+  "artist": "董事長樂團",
+  "album": "董事長的少年時代",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7ddaca66 的欄位：title「董事長的少年時代」、artist-credit「董事長樂團」、first-release-date 2016-06-30、primary-type Album、secondary-types 空，轄下 1 個 release（5792d2a1：2016-06-30、TW、Official、編號 DGS1601、CD、10 軌，廠牌名欄空白）。",
+    "src": "https://musicbrainz.org/release/5792d2a1-15d9-4236-85c0-0ac32ddcf4a4"
+   },
+   {
+    "f": "該 release 的逐軌曲名與曲長：〈電火柱仔〉4:14、〈倒退嚕〉3:39、〈向前行〉5:39、〈愛拼才會贏〉3:35、〈無緣〉3:33、〈拼宵夜〉3:03、〈黃昏的故鄉〉4:09、〈媽媽請妳也保重〉3:34、〈燒肉粽〉3:30、〈月夜愁〉2:57。",
+    "src": "https://musicbrainz.org/release/5792d2a1-15d9-4236-85c0-0ac32ddcf4a4"
+   },
+   {
+    "f": "吹音樂（Blow）2016 年 8 月的報導寫這張專輯是「重新編曲、製作、翻唱對成員們影響深遠的歌曲」，「選曲範圍橫跨 1933~1992 年 60 個年頭」，並「邀請李炳輝、流氓阿德、文夏、顏正國、黃連煜等樂壇代表性人物共同合唱」；同篇記〈倒退嚕〉的音樂錄影帶由美秀集團的影像組林宏叡擔任導演、主唱兼吉他手狗柏擔任製作。",
+    "src": "https://blow.streetvoice.com/24331/"
+   },
+   {
+    "f": "樂團經紀公司大吉祥整合行銷的官方藝人頁把這張記為「出道 19 年推出第 11 張專輯」，內容「代表的是樂團成員在音樂生命成長過程所受影響的當代知名臺語歌曲，從 1933~1992 年收錄涵蓋每個年份別具時代意義的歌曲」。",
+    "src": "https://www.dagishoang.com.tw/artist/5a0d5e92b630873263148ffb"
+   },
+   {
+    "f": "中文維基〈董事長樂團〉的獎項表記 2017 年第 28 屆金曲獎三項：年度專輯獎入圍《董事長的少年時代》、最佳台語專輯獎入圍同作、最佳樂團獎入圍同作，三項結果欄都記提名（皆未得獎）。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%91%A3%E4%BA%8B%E9%95%B7%E6%A8%82%E5%9C%98"
+   },
+   {
+    "f": "Apple Music 台灣店面 collectionId 1152347294 的欄位：collectionName「董事長的少年時代」、releaseDate 2016-06-30（與 MB 同日）、trackCount 10、collectionExplicitness 為 explicit。該筆的曲名帶合唱來賓：〈電火柱仔 (feat. 顏正國)〉〈倒退嚕 (feat. 黃克林)〉〈向前行 (feat. 流氓阿德)〉〈愛拚才會贏 (feat. 葉啟田)〉〈無緣 (feat. 黃連煜)〉〈拼宵夜 (feat. 王夢麟)〉〈燒肉粽 (feat. 劉福助)〉〈月夜愁 (feat. 李婭莎)〉。",
+    "src": "https://music.apple.com/tw/album/1152347294"
+   }
+  ],
+  "hookCandidates": [
+   "選曲從一九三三年排到一九九二年",
+   "〈愛拚才會贏〉這一軌，合唱的是葉啟田本人"
+  ],
+  "sound": "十軌都是三分到五分半的老歌重編，最短〈月夜愁〉2:57、最長〈向前行〉5:39（MB 2016 TW 原盤逐軌曲長）。Apple 那筆的曲名欄把合唱來賓一併掛在標題裡。",
+  "keyTracks": [
+   "愛拚才會贏",
+   "倒退嚕",
+   "向前行"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 2016 三方一致：MB release-group 與 release 皆 2016-06-30、Apple TW releaseDate 同日、中文維基專輯表記 2016 年。",
+  "notes": "**這一張的性質要標記（研究層通則「選輯／重發要主動標記」）**：它**不是原創錄音室專輯，是台語老歌的重唱／重編專輯**，十首都是別人的作品，由樂團重新編曲錄音並邀原唱或代表性人物合唱。**它有明確的歷史定位**（官方與媒體都把它當一張策劃過的世代選曲集，並入圍第 28 屆金曲獎年度專輯獎），**不列建議移除**。但**行文必須交代「翻唱／重編」這件事，不得寫成樂團的原創新作**。\n**推翻探測層**：`previews.json` 標 unavailable、tried 記 tw:0→0 但 hk／sg／us／jp／gb 各搜到 1 筆卻沒配上。本層用 collectionId 1152347294 直查 `country=tw`，**Apple 有這張碟、trackCount 欄是 10、實際回傳 8 軌且八軌全部帶 previewUrl**——缺的是第 7 軌〈黃昏的故鄉〉與第 8 軌〈媽媽請妳也保重〉（台灣店面未上架這兩軌）。**第 1 軌〈電火柱仔〉在，固定試聽取首軌沒問題。建議主線改成 ready、front tw、collectionId 1152347294，並在 note 記明「10 軌中只有 8 軌上架，第 7、8 軌缺」。**\n**合唱名單有兩份、不完全相同**：吹音樂那篇列了李炳輝、流氓阿德、文夏、顏正國、黃連煜；Apple 的曲名欄列了顏正國、黃克林、流氓阿德、葉啟田、黃連煜、王夢麟、劉福助、李婭莎。**兩份都寫進 facts 了，行文只能引其中一份並註明出處，不得把兩份併成一張總名單**——李炳輝與文夏對應的正是 Apple 缺的那兩軌，但那是推論，不得寫。\n**廠牌**：MB 的 release 廠牌名欄空白、只有編號 DGS1601；「好有感覺音樂」來自中文維基與同系列編號，行文寫「編號 DGS1601」較安全。\n**互斥可用面向**：本張獨占「老歌重唱＋原唱合唱」與 1933–1992 選曲跨度這條線。"
+ }
+]
