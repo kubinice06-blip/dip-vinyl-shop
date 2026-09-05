@@ -1,0 +1,555 @@
+[
+ {
+  "key": "desc2:Georges Brassens|Nº2 : Georges Brassens interprète ses dernières compositions",
+  "artist": "Georges Brassens",
+  "album": "Nº2 : Georges Brassens interprète ses dernières compositions",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4f0e657a 的欄位：title「Nº2 : Georges Brassens interprète ses dernières compositions」、artist-credit「Georges Brassens」、first-release-date 1953-11、primary-type Album、secondary-types 空、轄下 3 個 release（1953-11 FR、2002 FR、2007-01-29 FR，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/4f0e657a-ad8e-335f-860e-bb3ecd72ab97"
+   },
+   {
+    "f": "該 release-group 底下 1953-11 的法國 release 由 Polydor 發行、編號 LP 530.024、載體 10 吋黑膠，11 軌：A 面〈Le Vent〉1:17、〈J'ai rendez-vous avec vous〉2:06、〈Bancs publics〉3:03、〈Ballade des dames du temps jadis〉2:07、〈Comme hier〉1:45；B 面〈Pauvre Martin〉1:40、〈Brave Margot〉3:21、〈Il suffit de passer le pont〉2:01、〈La Cane de Jeanne〉1:30、〈La Marine〉2:29、〈Il n'y a pas d'amour heureux〉2:26。",
+    "src": "https://musicbrainz.org/release/0797632e-44ad-3243-9ead-ce6fda9c220c"
+   },
+   {
+    "f": "法文維基〈Le Vent (album)〉開頭寫：這是 Brassens 在法國發行的第二張專輯，1953 年出版時原本沒有標題，封面正面以「Georges Brassens interprète ses dernières compositions」當作稱呼；條目本身用首曲曲名《Le Vent》來指稱它。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Vent_(album)"
+   },
+   {
+    "f": "同一條目的「原始版本」段寫：1953 年 11 月，33 轉 25 公分微槽唱片，Polydor 第二系列（LP 530.024）；封面照片由 Monique Senez 拍攝；錄音為單聲道。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Vent_(album)"
+   },
+   {
+    "f": "同一條目列出演出者三人：Georges Brassens（演唱、吉他）、Pierre Nicolas（低音提琴）、Lucien Bellevallée（第二吉他）。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Vent_(album)"
+   },
+   {
+    "f": "同一條目的曲目註記寫：〈Bancs publics〉的靈感來自畫家 Raymond Peynet 筆下的戀人，這首歌並隨 Yves Robert 1953 年的電影《Les hommes ne pensent qu'à ça》一同流傳；〈La Cane de Jeanne〉是寫給 Jeanne Planche 的致意，她在 Brassens 初到巴黎那幾年艱難時期收留過他；〈Il n'y a pas d'amour heureux〉的旋律後來也被用在第三張專輯的〈La Prière〉。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Vent_(album)"
+   },
+   {
+    "f": "同一條目的再版清單寫：1954 年 2 月 Minigroove／Philips 第二系列（N 76.062 R）；1957 年 Philips（n° 2 - B 76.062 R，新封面，照片由 Choura 拍攝）；2002 年 Polydor／Mercury 復刻原始版本；2002 與 2010 年兩次 CD 復刻原封面。",
+    "src": "https://fr.wikipedia.org/wiki/Le_Vent_(album)"
+   },
+   {
+    "f": "Apple Music 法國店面 collectionId 1442662491「Georges Brassens interprète ses dernières compositions (N°2)」，releaseDate 1953-11-01，trackCount 11，copyright「℗ 1953 Mercury Music Group」；十一軌曲名與 MB 1953 年 Polydor 原盤逐軌對得上（第 3 軌在 Apple 作〈Les amoureux des bancs publics〉、MB 作〈Bancs publics〉），十一軌全部有 previewUrl。",
+    "src": "https://music.apple.com/fr/album/1442662491"
+   }
+  ],
+  "hookCandidates": [
+   "封面上沒有盤名，只有一句「Brassens 演唱他最新的作品」——後人只好拿第一首歌〈Le Vent〉來叫它",
+   "十一首歌、二十三分鐘，三個人：一把吉他、一把第二吉他、一把低音提琴"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：法文維基記演出者只有三人——Brassens 演唱與吉他、Pierre Nicolas 低音提琴、Lucien Bellevallée 第二吉他，錄音為單聲道。十一軌長度介於 1:17 到 3:21，載體是 33 轉 25 公分盤。",
+  "keyTracks": [
+   "Le Vent",
+   "Bancs publics",
+   "Brave Margot",
+   "Il n'y a pas d'amour heureux"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1953。MB first-release-date 1953-11、Apple fr releaseDate 1953-11-01、法文維基〈Le Vent (album)〉記「1953 年 11 月」三方一致；策展層 risk 記 Discogs master 191505 作 1954（法文維基把 1954 年 2 月的 Minigroove／Philips 版列為再版，這正可解釋那個 1954）。取 1953，但依裁定 18／46 行文不得正面斷言發行年。",
+  "notes": "試聽探測判 unavailable 為誤判：Apple **fr 1442662491** 確有本張，trackCount 11 與 MB 1953 年 Polydor 原盤相符、曲序逐軌對得上、十一軌全有 previewUrl，應改判 ready、front=fr、首軌〈Le vent〉。｜盤名的編號前綴：MB 用序數指示符 Nº、Apple fr 用度數符 N° 且放在句尾、Discogs master 191505 完全不帶編號——三種寫法都要掃（策展層裁定 11 已定案採 MB 的 Nº）。｜擋下策展層一處：curatorWhy 稱這與首張「合起來就是他 1952–1953 年一口氣把積壓多年的歌錄完的那批」——沒有任何來源這樣寫，法文維基只說這是他在法國發行的第二張專輯。行文不得寫「一口氣把積壓多年的歌錄完」。｜1965 年 Philips 重新編號成《Volume 2 : Les Amoureux des bancs publics》是同批錄音的另一種包裝，不是本張（策展層已列為刻意不釘）。"
+ },
+ {
+  "key": "desc2:Georges Brassens|Nº10 : Les Copains d'abord",
+  "artist": "Georges Brassens",
+  "album": "Nº10 : Les Copains d'abord",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f8335795 的欄位：title「Nº10 : Les Copains d'abord」、artist-credit「Georges Brassens」、first-release-date 1964-11、primary-type Album、secondary-types 空、轄下 4 個 release（1964-11 FR、1984 FR、1998-06 FR、無日期 XW，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/f8335795-a806-3bfc-8113-8b0fc7f1ea8e"
+   },
+   {
+    "f": "該 release-group 底下 1964-11 的法國 release 由 Philips 發行、編號 B 77.894 L、載體 12 吋黑膠，11 軌：A 面〈Les Copains d'abord〉4:01、〈Les 4 z'arts〉4:33、〈Le Petit Joueur de flûteau〉3:38、〈La Tondue〉2:48、〈Le 22 septembre〉3:32；B 面〈Les Deux Oncles〉4:22、〈Vénus callipyge〉3:44、〈Le Mouton de Panurge〉3:30、〈La Route aux 4 chansons〉2:53、〈Saturne〉2:54、〈Le Grand Pan〉4:18。",
+    "src": "https://musicbrainz.org/release/deff1c6c-ba19-497d-8375-98b5ecdd8a1d"
+   },
+   {
+    "f": "法文維基〈Les Copains d'abord (album de Georges Brassens)〉開頭寫：這是 Brassens 在法國發行的第十張專輯；原本發行時沒有標題，是用唱片第一首歌的歌名來指稱它；原始版本 1964 年 11 月問世。",
+    "src": "https://fr.wikipedia.org/wiki/Les_Copains_d'abord_(album_de_Georges_Brassens)"
+   },
+   {
+    "f": "同一條目的曲目說明寫：〈Les Copains d'abord〉是寫給 Yves Robert 的電影《Les Copains》的，那部喜劇 1965 年 1 月 14 日上映；〈Les 4 z'arts〉是以學生葬禮的戲仿向死亡做鬼臉，典出巴黎的 Bal des Quat'z'Arts；〈La Tondue〉是為解放後被剃頭的女性求情。",
+    "src": "https://fr.wikipedia.org/wiki/Les_Copains_d'abord_(album_de_Georges_Brassens)"
+   },
+   {
+    "f": "同一條目寫：〈Les Deux Oncles〉是反軍國主義的歌，敘事者說兩位叔叔（親英的 Martin 與親德的 Gaston）都死了、當年的殺伐已無人在意，該翻頁了；這首歌被部分媒體嚴詞批評，指 Brassens 把反抗運動與通敵混為一談；Brassens 後來在 1972 年的〈Mourir pour des idées〉裡把這個立場說得更細。",
+    "src": "https://fr.wikipedia.org/wiki/Les_Copains_d'abord_(album_de_Georges_Brassens)"
+   },
+   {
+    "f": "同一條目列出樂手三人：Georges Brassens（演唱、節奏吉他）、Barthélémy Rosso（主奏吉他）、Pierre Nicolas（低音提琴）；執行製作 Georges Meyerstein-Maigret，封面照片 Jacques Aubert。",
+    "src": "https://fr.wikipedia.org/wiki/Les_Copains_d'abord_(album_de_Georges_Brassens)"
+   },
+   {
+    "f": "Apple Music 法國店面 collectionId 1442280345「Les copains d'abord (N°10)」，releaseDate 1964-11-07，trackCount 11，copyright「℗ 1964 Mercury Music Group」；十一軌曲名與 MB 1964 年 Philips 原盤逐軌相同、順序一致，十一軌全部有 previewUrl。",
+    "src": "https://music.apple.com/fr/album/1442280345"
+   }
+  ],
+  "hookCandidates": [
+   "標題曲是替一部隔年才上映的電影寫的，結果電影散了、歌留下來當了他的代名詞",
+   "三個人錄的十一首歌：節奏吉他、主奏吉他、低音提琴，沒有第四件樂器"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：法文維基記樂手三人——Brassens 節奏吉他與演唱、Barthélémy Rosso 主奏吉他、Pierre Nicolas 低音提琴。十一軌長度介於 2:48 到 4:33，比 1953 年那張 25 公分盤的曲子普遍長。",
+  "keyTracks": [
+   "Les Copains d'abord",
+   "Le 22 septembre",
+   "Les Deux Oncles",
+   "Saturne"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1964。MB first-release-date 1964-11、Apple fr releaseDate 1964-11-07、法文維基專屬條目記「1964 年 11 月」三方一致；策展層 risk 記 Discogs master 361365 作 1965，但那是比利時壓片。取 1964，行文不必迴避年份，但依裁定 18／46 亦不必正面斷言。",
+  "notes": "試聽探測判 unavailable 為誤判：Apple **fr 1442280345** 確有本張，trackCount 11、曲序與 MB 1964 年 Philips 原盤逐軌相符、十一軌全有 previewUrl，應改判 ready、front=fr、首軌〈Les copains d'abord〉。｜同店面另有 1444007582「Les copains d'abord (N°10)」12 軌與 1444130459「Les copains d'abord」41 軌，兩筆都不是原盤，不得取。｜擋下策展層一處：curatorWhy 稱這是「Brassens 目錄裡最廣為人知的一張」——沒有來源支撐這個最高級，行文不得寫。可寫的是有來源的事實：標題曲是為 Yves Robert 的電影《Les Copains》而寫。｜策展層說「與首張相距十二年」——首張 1952、本張 1964-11，這個算術成立，但法文維基把它記成「在法國發行的第十張專輯」，用序數比用年差安全。"
+ },
+ {
+  "key": "desc2:Léo Ferré|Verlaine et Rimbaud chantés par Léo Ferré",
+  "artist": "Léo Ferré",
+  "album": "Verlaine et Rimbaud chantés par Léo Ferré",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 217f3aa1 的欄位：title「Verlaine et Rimbaud chantés par Léo Ferré」、artist-credit「Léo Ferré」、first-release-date 1964-12、primary-type Album、secondary-types 空、轄下 2 個 release（1964-12 FR、2005-02-28 FR，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/217f3aa1-41fa-470f-a3c1-99db6f3345a5"
+   },
+   {
+    "f": "該 release-group 底下 1964-12 的法國 release 由 Barclay 發行、編號 80 236 與 80 237、載體兩張 12 吋黑膠，每張 12 軌共 24 軌：第一張 A 面〈Écoutez la chanson bien douce〉2:49、〈Chanson de la plus haute tour〉2:15、〈Il patinait merveilleusement〉1:51、〈Mon rêve familier〉2:04、〈Soleils couchants〉1:51、〈Les Assis〉3:12、〈L'espoir luit comme un brin de paille dans l'étable〉2:15，B 面〈Art poétique〉3:30、〈Pensionnaires〉2:28、〈Âme, te souvient-il ?〉2:43、〈Le Buffet〉2:04、〈Les Poètes de 7 ans〉5:11；第二張 C 面〈Chanson d'automne〉2:34、〈Les Corbeaux〉2:19、〈Green〉2:48、〈Mes petites amoureuses〉2:28、〈Je vous vois encore〉2:07、〈L'étoile a pleuré rose〉1:32，D 面〈Ô triste, triste était mon âme〉2:47、〈Rêvé pour l'hiver〉2:04、〈Clair de Lune〉2:15、〈Les Chercheuses de poux〉3:03、〈Ma bohème〉1:23、〈Sérénade〉2:44。",
+    "src": "https://musicbrainz.org/release/b18f7726-294a-4c5b-938e-01a5fd7046ad"
+   },
+   {
+    "f": "法文維基〈Verlaine et Rimbaud chantés par Léo Ferré〉開頭寫：這是 Léo Ferré 1964 年 12 月問世的一張雙唱片，交錯編排了 Paul Verlaine 的十四首詩與 Arthur Rimbaud 的十首詩。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   },
+   {
+    "f": "同一條目寫：這是 Ferré 繼 Baudelaire 的《Les Fleurs du mal》(1957)、Apollinaire 的《La Chanson du mal-aimé》(1957) 與 Aragon 的《Les Chansons d'Aragon》(1961) 之後，第四張獻給書冊詩人的專輯。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   },
+   {
+    "f": "同一條目的「歷史」段寫：Verlaine 那部分的曲子 Ferré 寫於 1959 至 1963 年間；Rimbaud 那部分除了 1960 年寫成、1961 年 1 月在 Vieux-Colombier 劇院唱過的〈Rêvé pour l'hiver〉之外，都是 1964 年在洛特省的 Pechrigal 城堡寫的；二十四首成形後，1964 年 5 月在巴黎歐許大道的 Barclay 錄音室錄了四天。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   },
+   {
+    "f": "同一條目寫：編曲與音樂指揮是 Jean-Michel Defaye，錄音 Gerhard Lehner，監製 Jean Fernandez；未掛名的樂手包括小提琴 Lionel Gali、吉他 Barthélémy Rosso、人聲 Janine de Waleyne；封面繪圖 Maurice Frot、攝影 Hubert Grooteclaes，原封套文字由 Ferré 自己寫。同段並記 Ferré 為求清楚有力而改動了部分詩題。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   },
+   {
+    "f": "同一條目另寫：這張是流行音樂史上第一張錄音室雙唱片。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   },
+   {
+    "f": "Apple Music 法國店面 collectionId 1442698879「Léo Ferré chante Verlaine et Rimbaud」，releaseDate 1964-12-01，trackCount 24，二十四軌曲名與 MB 1964 年 Barclay 雙唱片逐軌相同、順序一致，二十四軌全部有 previewUrl；同店面另有 1444213326 為同一內容的另一筆（copyright 記 1991 Barclay）。",
+    "src": "https://music.apple.com/fr/album/1442698879"
+   }
+  ],
+  "hookCandidates": [
+   "Verlaine 十四首、Rimbaud 十首，交錯排成兩張唱片——四天錄完",
+   "第四次把一本詩集整本唱掉：Baudelaire、Apollinaire、Aragon 之後輪到這兩位"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的班底有據：法文維基記編曲與音樂指揮是 Jean-Michel Defaye，未掛名的樂手有小提琴 Lionel Gali、吉他 Barthélémy Rosso、人聲 Janine de Waleyne。二十四軌長度介於 1:23 到 5:11，分裝成兩張 12 吋黑膠，Verlaine 十四首與 Rimbaud 十首交錯編排。",
+  "keyTracks": [
+   "Chanson d'automne",
+   "Green",
+   "Les Poètes de 7 ans",
+   "Ma bohème"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1964。MB first-release-date 1964-12、Apple fr releaseDate 1964-12-01、法文維基專屬條目記「1964 年 12 月」三方一致。無異說。",
+  "notes": "試聽探測判 unavailable 為誤判，原因是盤名寫法不同：Apple 用《Léo Ferré chante Verlaine et Rimbaud》、卡單用 MB 的《Verlaine et Rimbaud chantés par Léo Ferré》。Apple **fr 1442698879** 確有本張，trackCount 24 與 MB 1964 年 Barclay 雙唱片相符、曲序逐軌對得上、二十四軌全有 previewUrl，應改判 ready、front=fr、首軌〈Ecoutez la chanson bien douce〉。queryAlias 建議補「Léo Ferré chante Verlaine et Rimbaud」。｜**「流行音樂史上第一張錄音室雙唱片」這句是法文維基自己的斷言，條目上看不到內文註腳**——寫作層若要用，必須寫成「法文維基記…」的轉述，不得當成既成事實正面斷言（裁定 156 的形狀）。｜「詩人系列第四張」有來源（同條目點名前三張與年份），可以寫。｜擋下策展層一處：curatorWhy 稱這是「他『詩人系列』裡規模最大的一次」——沒有來源比較過規模，行文不得寫最高級；可寫的是「第四張」與「雙唱片、二十四首」這兩個數字。｜2005 年 Barclay 的《Les Poètes, Volume 3: Verlaine, Rimbaud》(847 172-2) 是同內容的 CD 再版，不是另一張碟。"
+ },
+ {
+  "key": "desc2:Léo Ferré|Il n'y a plus rien",
+  "artist": "Léo Ferré",
+  "album": "Il n'y a plus rien",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9ad2ae87 的欄位：title「Il n'y a plus rien」（MB 用彎撇 ’）、artist-credit「Léo Ferré」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 3 個 release（1973 FR、1999 FR、2003 FR，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/9ad2ae87-70e9-3861-b457-8cd44658f6a4"
+   },
+   {
+    "f": "該 release-group 底下 1973 年的法國 release 由 Barclay 發行、編號 80 483、載體 12 吋黑膠，6 軌：A 面〈Préface〉3:20、〈Ne chantez pas la mort〉7:31、〈Night and Day〉6:41、〈Richard〉5:11；B 面〈L'Oppression〉6:29、〈Il n'y a plus rien〉16:08。",
+    "src": "https://musicbrainz.org/release/e1a32a02-2d7b-405b-8f2e-c4eeeb6e3ff0"
+   },
+   {
+    "f": "法文維基〈Il n'y a plus rien (album)〉開頭寫：這是 Léo Ferré 1973 年問世的專輯，是他第一張由自己一手包辦全部音樂事務的交響作品——從配器到指揮都是他本人。",
+    "src": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)"
+   },
+   {
+    "f": "同一條目的「緣起」段寫：在《La Solitude》那張「pop」專輯裡放進兩段交響樂章、又重錄了他 1950 年代根據 Apollinaire 的詩《La Chanson du mal-aimé》寫的清唱劇之後，Ferré 已經成熟到可以自居為總體藝術家、作者兼完整的音樂家，此後不再需要編曲者的服務。",
+    "src": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)"
+   },
+   {
+    "f": "同一條目的「藝術特徵」段寫：唱片以〈Préface〉開場，那是他 1957 年詩集《Poète... vos papiers !》卷首那篇序言—宣言的節縮版；以激進的〈Il n'y a plus rien〉作結，那是一首長篇的悲觀曲子，清算 1960 年代與五月風暴留下的自由派與革命派烏托邦。同段並寫：這張唱片的演唱更接近宣敘調、口語詩、朗誦、說唱之間，而不是歌唱。",
+    "src": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)"
+   },
+   {
+    "f": "同一條目的製作欄寫：配器與音樂指揮 Léo Ferré；錄音 Claude Achallé、Charles Rochko，助理 Philippe Omnes；監製 Richard Marsan；原始內頁文字 Maurice Frot；第 1 軌的人聲是 Danièle Licari，其餘樂手至今未被辨識出來。",
+    "src": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1442884628「Il n'y a plus rien」，releaseDate 1973-06-11，trackCount 6，copyright「℗ 1999 Barclay」；六軌曲名與 MB 1973 年 Barclay 原盤逐軌相同、順序一致、時長吻合（〈Il N'y a Plus Rien〉16:08），六軌全部有 previewUrl。",
+    "src": "https://music.apple.com/us/album/1442884628"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌，最後一首佔了十六分鐘：一整面黑膠只放這一首",
+   "從配器到指揮都自己來——這一張之後他不再用編曲者"
+  ],
+  "sound": "法文維基記這張的演唱更接近宣敘調、口語詩、朗誦、說唱之間，而不是歌唱；配器與指揮由 Ferré 本人擔任，是他第一張這樣做的交響作品。第 1 軌〈Préface〉有 Danièle Licari 的人聲，其餘樂手未被辨識。六軌長度從 3:20 到 16:08，B 面第二軌〈Il n'y a plus rien〉一首就佔了十六分鐘。",
+  "keyTracks": [
+   "Préface",
+   "Ne chantez pas la mort",
+   "Il n'y a plus rien"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1973。MB first-release-date 1973、法文維基專屬條目記 1973、Apple us releaseDate 1973-06-11 三方一致。無異說。",
+  "notes": "試聽探測 ready 正確：Apple us 1442884628 六軌與 MB 1973 年 Barclay 80 483 原盤逐軌相符、時長吻合，非再版擴充內容，配對正確；首軌〈Préface〉即原盤開場。｜盤名撇號：MB 用彎撇「n’y」、卡單用 ASCII「n'y」，依策展層裁定 10 兩種都要掃。｜二合一注意：1989 年 Barclay 把本張與《L'Espoir》併成《Vol. IX Il N'Y A Plus Rien - L'Espoir》（策展層已列為對照組），不得取那一筆。｜擋下策展層一處：curatorWhy 稱這是「Léo Ferré 1970 年代最極端的一張」——沒有來源做過這個比較，行文不得寫最高級。可寫的有來源版本是：法文維基稱它是他第一張自己包辦配器與指揮的交響作品，且演唱方式接近朗誦而非歌唱。｜策展層說「開場的長篇朗誦體標題曲」——**錯在位置**：〈Préface〉才是開場（3:20），16:08 的標題曲是最後一軌。行文不得把標題曲寫成開場。"
+ },
+ {
+  "key": "desc2:Víctor Jara|Canto libre",
+  "artist": "Víctor Jara",
+  "album": "Canto libre",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bd37a91a 的欄位：title「Canto libre」、artist-credit「Víctor Jara」、first-release-date 1970、primary-type Album、secondary-types 空、轄下 2 個 release（1970 CL 黑膠、2007-12-05 CL 數位，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/bd37a91a-1af4-49e5-a127-0f96044ee47c"
+   },
+   {
+    "f": "該 release-group 底下 1970 年的智利 release 由 Odeon 發行、編號 LDC-36726、載體 12 吋黑膠，11 軌：A 面〈Inga〉2:28、〈Canción del árbol del olvido〉2:56、〈La pala〉3:30、〈Lamento borincano〉4:09、〈Ventolera〉3:10、〈El tinku〉3:26；B 面〈Angelita Huenumán〉4:03、〈Corrido de Pancho Villa〉3:44、〈Caminando, caminando〉2:43、〈¿Quién mató a Carmencita?〉4:50、〈Canto libre〉4:50。",
+    "src": "https://musicbrainz.org/release/eb106890-7797-4548-833e-5abfc74507be"
+   },
+   {
+    "f": "西班牙文維基〈Canto libre〉開頭寫：這是智利創作歌手 Víctor Jara 個人名下的第五張錄音室專輯，1970 年錄音、同年由 Odeon（今 EMI Chile）發行；此後多次在不同國家再版並加進新曲，但盤名一直原封保留，與先前幾張專輯的情況相反。",
+    "src": "https://es.wikipedia.org/wiki/Canto_libre"
+   },
+   {
+    "f": "同一條目寫：這張專輯有 Quilapayún 與 Inti-Illimani 兩個團體參與，另有 Patricio Castillo——他那段期間曾短暫加入前者，多年後才正式入團；1993 年再版封套的內文由 Jara 的妻子 Joan Jara 撰寫。",
+    "src": "https://es.wikipedia.org/wiki/Canto_libre"
+   },
+   {
+    "f": "同一條目的「版本」段寫：原始版本收 11 首歌；1993 年的再版又加了 12 首；2007 年 EMI Chile 的版本有 14 首。原始封面是一扇掛著掛鎖的門，門上有一塊寫著「Víctor Jara」的金屬牌；後來的版本改用馬丘比丘的彩色照片。",
+    "src": "https://es.wikipedia.org/wiki/Canto_libre"
+   },
+   {
+    "f": "西班牙文維基〈Anexo:Discografía de Víctor Jara〉的錄音室專輯欄依序列出：1966《Víctor Jara》、1967《Canciones folclóricas de América》（與 Quilapayún）、1967《Víctor Jara》、1969《Pongo en tus manos abiertas...》、1970《Canto libre》、1971《El derecho de vivir en paz》、1972《La Población》、1973《Canto por travesura》。",
+    "src": "https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_V%C3%ADctor_Jara"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 713635889「Canto Libre」，藝人 Victor Jara，releaseDate 1970-01-01，trackCount 13，copyright「℗ 2007 EMI CHILE」；前 11 軌與 MB 1970 年 Odeon 原盤逐軌同名同序，第 12、13 軌〈Gira Gira Girasol〉2:55 與〈Palomas del Palomar〉1:09 是原盤沒有的追加曲。",
+    "src": "https://music.apple.com/gb/album/713635889"
+   }
+  ],
+  "hookCandidates": [
+   "原始封面只有一扇上了掛鎖的門，門上釘著寫他名字的金屬牌",
+   "十一首歌裡有 Quilapayún 與 Inti-Illimani：智利那三個團在同一張唱片上"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的參與者有據：西班牙文維基記 Quilapayún 與 Inti-Illimani 兩個團體參與，另有 Patricio Castillo。原盤十一軌長度介於 2:28 到 4:50，曲目橫跨阿根廷、波多黎各與墨西哥的曲子（〈Canción del árbol del olvido〉〈Lamento borincano〉〈Corrido de Pancho Villa〉）以及他自己的作品。",
+  "keyTracks": [
+   "Canto libre",
+   "Angelita Huenumán",
+   "El tinku",
+   "¿Quién mató a Carmencita?"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1970。MB first-release-date 1970、西班牙文維基專屬條目記「1970 年錄音、同年發行」、同站 Jara 唱片目錄把它列在 1970、Apple gb releaseDate 1970-01-01 四方一致。無異說。",
+  "notes": "試聽探測 ready，但 **Apple gb 713635889 是 ℗2007 EMI Chile 的加曲版，13 軌**：前 11 軌與 MB 1970 年 Odeon LDC-36726 原盤逐軌同名同序，第 12、13 軌〈Gira Gira Girasol〉〈Palomas del Palomar〉是原盤沒有的。依裁定 140，多出來的排在後面且不是別張專輯的整批曲目，屬加曲版、**接受**；但 notes 明令：**原盤是 11 軌**，行文不得把那兩首當成本張曲目。首軌〈Inga〉即原盤開場，固定試聽取首軌無誤。｜掛名：Apple 的 artistName 是無重音的 Victor Jara，卡片依 MB 取 Víctor Jara（策展層裁定 9），兩種都要掃。｜擋下策展層一處：curatorWhy 稱這是「他 1970 年前後產量最密那三年的中間一張」——沒有來源談產量密度，行文不得寫；可寫的有來源版本是西班牙文維基記的「個人名下第五張錄音室專輯」，以及唱片目錄裡它夾在 1969《Pongo en tus manos abiertas...》與 1971《El derecho de vivir en paz》之間。"
+ },
+ {
+  "key": "desc2:Víctor Jara|Canto por travesura",
+  "artist": "Víctor Jara",
+  "album": "Canto por travesura",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 951bb2bd 的欄位：title「Canto por travesura」、artist-credit「Víctor Jara」、first-release-date 1973-09、primary-type Album、secondary-types 空、轄下 10 個 release（1973 CL、1978 ES、1979 EC、1986 ES、1994 ES、1997 CL 兩筆、2001 CL 兩筆、2017 XE，全數 Official）。",
+    "src": "https://musicbrainz.org/release-group/951bb2bd-7287-4766-a1c6-92fb78ae9b2a"
+   },
+   {
+    "f": "該 release-group 底下 1973-09 的智利 release 由 DICAP 發行、編號 DCP-47、載體 12 吋黑膠，12 軌：A 面〈Brindis〉0:57、〈La palmatoria〉3:18、〈Vengan a mi casamiento〉3:24、〈La fonda〉2:22、〈La edad de la mujer〉2:26、〈La cafetería〉2:08；B 面〈La diuca〉2:44、〈Iba yo para una fiesta〉3:06、〈Por un pito ruin〉4:41、〈La beata〉2:39、〈Adivinanzas〉1:02、〈El chincolito〉1:57。",
+    "src": "https://musicbrainz.org/release/49507b26-b046-4ab3-bedb-23dae6b822a9"
+   },
+   {
+    "f": "西班牙文維基〈Canto por travesura〉開頭寫：這是智利創作歌手 Víctor Jara 個人名下的第八張錄音室專輯，1973 年 9 月由 DICAP 廠牌首次發行。",
+    "src": "https://es.wikipedia.org/wiki/Canto_por_travesura"
+   },
+   {
+    "f": "同一條目的「版本」段寫：這張至少有一次以《Desde Lonquén hasta siempre》為名的再版；2001 年 WEA Chile 的再版在原曲目最後加了六首歌。",
+    "src": "https://es.wikipedia.org/wiki/Canto_por_travesura"
+   },
+   {
+    "f": "同一條目寫：〈La Beata〉是 Víctor Jara 第一次把這首歌收進長時間唱片；這首歌原先發表在他 1966 年的第二張單曲上，當年因為歌詞引起天主教會的爭議而讓他有了一定名氣，儘管那首歌出自傳統、二十世紀初就在鄉間流傳。",
+    "src": "https://es.wikipedia.org/wiki/Canto_por_travesura"
+   },
+   {
+    "f": "西班牙文維基〈Anexo:Discografía de Víctor Jara〉的錄音室專輯欄以 1973《Canto por travesura》結束，其後的「身後作品」欄第一筆是 1974《Tiempos que cambian》。",
+    "src": "https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_V%C3%ADctor_Jara"
+   },
+   {
+    "f": "西班牙文維基〈Víctor Jara〉開頭寫：Víctor Lidio Jara Martínez，1932 年 9 月 28 日生於 San Ignacio，1973 年 9 月 16 日歿於聖地牙哥；1973 年 9 月 11 日推翻 Salvador Allende 政府的政變之後，他隔天被軍方逮捕，四天後在舊 Estadio Chile 被殺害，該場館在民主回歸後更名為「Estadio Víctor Jara」。",
+    "src": "https://es.wikipedia.org/wiki/V%C3%ADctor_Jara"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1446799751「Canto por Travesura」，releaseDate 1973-09-01，trackCount 18，copyright「℗ 2016 Fundación Víctor Jara bajo licencia de la Sucesión Víctor Jara」；前 12 軌是原盤那 12 首（第 4 與第 8 軌對調：Apple 第 4 軌是〈Iba Yo para una Fiesta〉、第 8 軌是〈La Fonda〉，原盤順序相反），第 13–18 軌是原盤沒有的六首劇場錄音，曲名各自標明年份（〈Pieza Uno (La Remolienda, 1965)〉至〈Pieza Cinco〉，以及〈Pepe Mendigo (Cuento de Navidad, Para los Mimos de Noisvander, 1965)〉11:14）。",
+    "src": "https://music.apple.com/us/album/1446799751"
+   }
+  ],
+  "hookCandidates": [
+   "十二首鄉間的葷笑話與謎語歌，最短那首〈Brindis〉只有五十七秒",
+   "〈La beata〉1966 年當單曲發行時惹上教會，七年後才第一次進長時間唱片"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的曲目性質有據：西班牙文維基記全碟音樂皆出自智利民間傳統（除另有註明者），並記〈La beata〉出自傳統、二十世紀初就在鄉間流傳。原盤十二軌長度介於 0:57 到 4:41，總長不到半小時。",
+  "keyTracks": [
+   "Brindis",
+   "La beata",
+   "Adivinanzas",
+   "El chincolito"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1973。MB first-release-date 1973-09、西班牙文維基專屬條目記「1973 年 9 月由 DICAP 首次發行」、Apple us releaseDate 1973-09-01 三方一致。無異說。",
+  "notes": "**「生前最後一張專輯」查證通過**：西班牙文維基的 Víctor Jara 唱片目錄，錄音室專輯欄最後一筆就是 1973《Canto por travesura》，「身後作品」欄第一筆是 1974《Tiempos que cambian》；同站 Jara 條目記他 1973 年 9 月 16 日遇害，本張則記 1973 年 9 月發行。**限定在「錄音室專輯」這個範圍內可以寫**，不得擴大成「最後一張唱片」（同年另有單曲〈Marcha de los trabajadores de la construcción〉與合輯《No volveremos atrás》）。｜試聽探測 ready，但 **Apple us 1446799751 是 ℗2016 的 18 軌加曲版**：原盤 12 首全在，第 13–18 軌是 1965 年的劇場錄音、曲名自帶年份標記，依裁定 140 屬加曲版、**接受**；notes 明令 **原盤是 12 軌**，行文不得把那六首劇場錄音當成本張曲目。｜**曲序有出入**（裁定 157 的形狀）：Apple 把原盤 A4〈La fonda〉與 B2〈Iba yo para una fiesta〉對調。首軌〈Brindis〉兩邊一致，固定試聽取首軌無誤。｜擋下策展層一處：curatorWhy 稱曲目「與他政治歌那一面剛好相反」——這是評價不是事實，沒有來源，行文不得寫成對立命題；可寫的是有來源的〈La beata〉教會爭議那一筆。"
+ },
+ {
+  "key": "desc2:Violeta Parra|Recordando a Chile: Una chilena en París",
+  "artist": "Violeta Parra",
+  "album": "Recordando a Chile: Una chilena en París",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fa3830b1 的欄位：title「Recordando a Chile: Una chilena en París」、artist-credit「Violeta Parra」、first-release-date 1965-08、primary-type Album、secondary-types 空、轄下 3 個 release（1965-08 CL、1968 CL、2022-10-04 XW，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/fa3830b1-9f55-4880-b861-15364a743417"
+   },
+   {
+    "f": "該 release-group 底下 1965-08 的智利 release 由 EMI Odeón Chilena S.A. 發行、編號 LDC-36533、載體 12 吋黑膠，11 軌：〈Defensa de Violeta Parra〉、〈Mañana me voy pa'l norte〉、〈Qué he sacado con quererte〉、〈El diablo en el paraíso〉、〈A la una nací yo〉、〈Une chilienne à Paris〉、〈Paloma ausente〉、〈Arriba quemando el sol〉、〈Julián Grimau〉（又題〈Qué dirá el Santo Padre〉）、〈Pedro Urdemales〉、〈Écoute moi, petit〉。",
+    "src": "https://musicbrainz.org/release/816b7fa5-6c9d-45af-a3d0-359ee9dda865"
+   },
+   {
+    "f": "西班牙文維基〈Recordando a Chile (una chilena en París)〉開頭寫：本張又稱《Una chilena en París》，是智利民謠學者與創作歌手 Violeta Parra 的第九張正式錄音室專輯，1964 到 1965 年間錄於智利聖地牙哥與巴黎，1965 年首度由 EMI Odeon 發行；參與者有她的兩個孩子 Isabel 與 Ángel Parra，以及兄姊 Hilda 與 Nicanor——後者這位著名詩人在本張朗誦了一首當時尚未發表的自作詩。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "同一條目的「錄音與設計」段寫：〈Defensa de Violeta Parra〉〈El diablo en el paraíso〉〈Paloma ausente〉〈Y arriba quemando el sol〉〈Qué dirá el Santo Padre〉五首錄於 1964 年 8 月 14 日與 10 月 21 日的聖地牙哥，其餘各首錄於隔年的巴黎、就在 1965 年由智利 EMI Odeón 發行前不久。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "同一條目寫：原始封面用的是 Violeta Parra 自己的兩幅麻布繡畫〈Le clown〉(1960) 與〈Contre la guerre〉(1963)，封面小字註明「Violeta Parra 於巴黎羅浮宮裝飾藝術博物館展出的彩色繡毯」，並在括號裡標出「Una chilena en París」——那是 1964 年時原本考慮的盤名。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "同一條目寫：這張唱片沒有發行過 CD，一直維持黑膠形態，不過全部曲目都可以在後來的合輯裡找到，特別是 EMI 的《El folklore y la pasión》與《La jardinera y su canto》。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "同一條目的曲目說明寫：全碟含九首 Violeta 自作曲、兩首智利民間 cueca（〈A la una〉與〈Pedro Urdemales〉），外加由她兄長、反詩人 Nicanor Parra 寫並朗誦、Violeta 以吉他伴奏的詩〈Defensa de Violeta Parra〉；那首詩的文本後來收進 1969 年的《Obra gruesa》。〈Una chilena en París〉（〈Une chilienne à Paris〉）與〈Escúchame, pequeño〉（〈Écoute moi, petit〉）兩首由她以法文演唱。同段並寫：〈Defensa de Violeta Parra〉在某些版本裡是開場曲、在另一些版本裡是終曲。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "同一條目寫：唱片題材多樣，相對於她先前的作品是一次重要的音樂演進，使用的樂器種類增加——〈Mañana me voy pa'l norte〉裡聽得到打擊樂與笛，〈Qué he sacado con quererte〉裡有 trutruca，〈Una chilena en París〉裡有華爾滋的典型樂器手風琴。",
+    "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)"
+   },
+   {
+    "f": "Apple Music 智利店面 collectionId 1647764240「Recordando a Chile」，藝人 Violeta Parra，releaseDate 2022-10-04，trackCount 11，copyright「℗ 2022 Fundación Violeta Parra」；十一軌與 MB 1965 年 Odeón 原盤逐軌對應、順序一致（首軌〈Defensa de V. Parra〉5:38），十一軌全部有 previewUrl。",
+    "src": "https://music.apple.com/cl/album/1647764240"
+   }
+  ],
+  "hookCandidates": [
+   "封面印的是她自己的兩幅繡毯，那年剛在羅浮宮的裝飾藝術博物館展過",
+   "十一首歌裡有兩首用法文唱，還有一首是她哥哥寫給她的詩、由他本人朗誦"
+  ],
+  "sound": "西班牙文維基記這張的用器種類比她先前的作品增加：〈Mañana me voy pa'l norte〉裡有打擊樂與笛、〈Qué he sacado con quererte〉裡有馬普切人的 trutruca、〈Una chilena en París〉裡有手風琴。曲目包含九首自作曲、兩首智利 cueca，以及一首由 Nicanor Parra 朗誦、Violeta 吉他伴奏的詩。其中兩首以法文演唱。",
+  "keyTracks": [
+   "Defensa de Violeta Parra",
+   "Qué he sacado con quererte",
+   "Arriba quemando el sol",
+   "Une chilienne à Paris"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1965。MB first-release-date 1965-08、西班牙文維基專屬條目記「1964 到 1965 年間錄音、1965 年首度發行」兩方一致。Apple cl 的 releaseDate 2022-10-04 是 Fundación Violeta Parra 的數位重發日期，依裁定 77 只當訊號、不當版本門檻。取 1965。",
+  "notes": "**缺封面覆核結論：CAA 真的沒有圖，不是釘位問題。** 逐一實測四個端點全數 404——release-group/fa3830b1（404）、release/816b7fa5（1965 原盤，404）、release/def576ef（1968 CL，404）、release/b6befcb1（2022 XW，404）。依 §4 走 `apple-verified-collection`，**人工核對過的 collectionId 是 cl 1647764240**：11 軌與 MB 1965 年原盤逐軌對應、首軌〈Defensa de V. Parra〉、藝人與盤名皆相符。依裁定 134，這一筆同時當封面來源與試聽來源。｜試聽探測判 unavailable 為誤判：cl 1647764240 十一軌全有 previewUrl，應改判 ready、front=cl。｜策展層的「旅居巴黎期間錄」**只對一半**：西班牙文維基明記其中五首錄於 1964 年的聖地牙哥、其餘錄於 1965 年的巴黎。行文不得寫成整張都錄在巴黎。｜曲序注意：同條目寫〈Defensa de Violeta Parra〉在某些版本是開場、在另一些是終曲；MB 1965 原盤與 Apple cl 都把它放在第一軌，固定試聽取首軌與這兩個來源一致。｜策展層說「《Las últimas composiciones》前一年的作品」——本張 1965、那張 1966，算術成立。"
+ },
+ {
+  "key": "desc2:Atahualpa Yupanqui|Basta ya",
+  "artist": "Atahualpa Yupanqui",
+  "album": "Basta ya",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ac41c4b4 的欄位：title「Basta ya」、artist-credit「Atahualpa Yupanqui」、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（1971 FR、1988 DE Pläne 88624，皆 Official），兩筆都是 12 軌。",
+    "src": "https://musicbrainz.org/release-group/ac41c4b4-2a9a-3e48-a3c6-b9ac5b14ab71"
+   },
+   {
+    "f": "該 release-group 底下 1971 年的法國 release 為 12 軌：〈Basta ya〉5:40、〈La pobrecita〉2:58、〈El pampino〉2:53、〈El alazán〉5:04、〈Chicla Juliana〉2:01、〈Lo miro al viento y me río〉3:05、〈Baguala del minero〉4:17、〈La flecha〉2:58、〈Vivala del Yanarca〉3:35、〈Yo quiero un caballo negro〉2:25、〈De aquellos cerros vengo〉2:12、〈Salmo a la guitarra〉5:18。",
+    "src": "https://musicbrainz.org/release/89b7369e-5cd7-4e06-8218-b00fec97fbce"
+   },
+   {
+    "f": "Discogs master 340756《Basta Ya》記年份 1971，主要 release 2913298 是法國 Le Chant Du Monde 的黑膠 LP、編號 LDX 74457、1971 年；曲目 A1–A6／B1–B6 共 12 軌，與 MB 那筆逐軌同名同序。",
+    "src": "https://www.discogs.com/release/2913298"
+   },
+   {
+    "f": "同一筆 Discogs release 的說明欄寫：三折封套、紅色標籤；歌詞以西班牙文與法文並列，翻譯 Sarah Leibovici，版面設計 Roland Gonzalez，圖像取自安地斯的印第安藝術，封面照片 Jean-Pierre Leloir、封底照片 Vic Nowas。同筆的作者欄除 Atahualpa Yupanqui 外，另列 José María Requena、Miguel Ángel Miranda、Pablo Del Cerro、Romildo Risso。",
+    "src": "https://www.discogs.com/release/2913298"
+   },
+   {
+    "f": "西班牙文維基〈Atahualpa Yupanqui〉寫：Héctor Roberto Chavero Aramburu，1908 年 1 月 31 日生於布宜諾斯艾利斯省 Pergamino 的 Juan A. de la Peña，1992 年 5 月 23 日歿於法國尼姆；他被廣泛視為阿根廷民謠史上最重要的音樂家，1986 年獲法國授予藝術與文學騎士勳章。",
+    "src": "https://es.wikipedia.org/wiki/Atahualpa_Yupanqui"
+   },
+   {
+    "f": "同一條目寫：Chavero 1949 年前往法國時已使用 Atahualpa Yupanqui 這個藝名；歌手 Edith Piaf 邀他在 1950 年 7 月 7 日於巴黎演出，他隨即與 Chant du Monde 簽約，該公司發行了他在歐洲的第一張 LP《Minero soy》，並拿下 Charles Cros 學院的最佳唱片首獎。",
+    "src": "https://es.wikipedia.org/wiki/Atahualpa_Yupanqui"
+   },
+   {
+    "f": "同一條目寫：1967 年他到西班牙巡演，最終定居巴黎；他仍定期回到當時處於各種獨裁之下的阿根廷，但在 1976 年 3 月 Videla 的軍政府上台之後，回國的次數變少。",
+    "src": "https://es.wikipedia.org/wiki/Atahualpa_Yupanqui"
+   }
+  ],
+  "hookCandidates": [
+   "巴黎的 Le Chant du Monde 把歌詞印成西班牙文與法文並排，裝進三折封套",
+   "1950 年 Edith Piaf 把他請上巴黎的舞台，二十一年後他仍在同一家法國廠牌出片"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的物件細節有據：Discogs 記 1971 年法國 Le Chant du Monde 原盤是三折封套、紅色標籤，歌詞西法並列，封面照片出自 Jean-Pierre Leloir。十二軌長度介於 2:01 到 5:40，作者除 Yupanqui 本人外還有 José María Requena、Miguel Ángel Miranda、Pablo Del Cerro 與 Romildo Risso。",
+  "keyTracks": [
+   "Basta ya",
+   "El alazán",
+   "Baguala del minero",
+   "Salmo a la guitarra"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1971。MB first-release-date 1971 與 Discogs master 340756／release 2913298（Le Chant Du Monde LDX 74457，France）皆直記 1971，兩方一致。Apple us 1340696107 的 releaseDate 2006 是另一張碟的日期（見 notes），不構成第三說。取 1971。",
+  "notes": "**試聽探測 ready 是錯配，必須改回 unavailable。** Apple us 1340696107「Basta Ya」是 ℗2006 Le Chant du Monde 的 **19 軌**輯：第 1–8 軌（〈Preguntitas Sobre Dios〉〈Cancion Del Canaveral〉〈Ahi Andamos Senor〉〈Juan〉〈La Del Campo〉〈El Pajarillo〉〈Cachilo Dormido〉〈Los Hermanos〉）**完全不在 1971 年原盤上**，而原盤 12 首裡的〈De aquellos cerros vengo〉與〈Salmo a la guitarra〉**在這一筆裡不存在**，另多出一首〈Recauda Tus Prendas〉。依裁定 140／141，這是別張碟的曲目排在本張前面、且本張曲目不齊——屬二合一／再編輯，**剔除**。而且固定試聽取首軌會取到〈Preguntitas Sobre Dios〉，那不是本張的開場（裁定 157 的最壞形狀）。｜策展層 risk 已預告 appleYear 2006 與卡單 1971 差 35 年，這次差異不是重製日期而是**不同的碟**。｜擋下策展層一處：curatorWhy 稱這是「流亡歐洲期間」的唱片、「標題曲後來被整個 nueva canción 圈翻唱」——兩句都沒有來源。西班牙文維基只寫他 1967 年巡演西班牙後定居巴黎、仍定期返阿根廷，並未稱之為流亡；翻唱那句查不到任何來源。行文一律不得寫「流亡」與「被整個 nueva canción 圈翻唱」。｜可寫的替代錨點：1950 年 Edith Piaf 邀他在巴黎演出、他隨即與 Le Chant du Monde 簽約，而本張 1971 年仍出自同一家法國廠牌。"
+ },
+ {
+  "key": "desc2:Quilapayún|La Fragua",
+  "artist": "Quilapayún",
+  "album": "La Fragua",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5ec07bc8 的欄位：title「La Fragua」、artist-credit「Quilapayún」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（1973 CL、2000 CL）。",
+    "src": "https://musicbrainz.org/release-group/5ec07bc8-2521-439a-b9ca-8f0549ed9eed"
+   },
+   {
+    "f": "該 release-group 底下 1973 年的智利 release 由 DICAP 發行、編號 JJLS-17，載體是**兩張 12 吋黑膠**：第一張 9 軌（A 面〈Recitado 1: Canción 1 - sol luminoso〉5:01、〈Canción 2: Hondo desierto: Recitado 2〉5:05、〈Canción 3: Norte grande, pobre norte〉5:40、〈Recitado 3: Romance de marga-marga〉3:40；B 面〈Recitado 4: Canción 4 - marcha de los mineros del carbón〉3:58、〈Recitado 5: Canción 5 - la represión〉3:50、〈Recitado 6: Canción 6 - los talleres〉2:17、〈Canción 7: Niño araucano: Recitado 7〉6:06、〈Canción 8: Lautaro y Valdivia: Recitado 8〉3:30），第二張 12 軌（C 面六段續接的朗誦與歌，D 面〈Las ollitas〉〈El enano maldito〉〈La tribuna〉〈Vox populi〉〈La merluza〉〈No se para la cuestión〉）。",
+    "src": "https://musicbrainz.org/release/3dd718a7-a214-4a94-abff-9a44ef16c2b5"
+   },
+   {
+    "f": "Discogs release 4763309《La Fragua》記：1973 年、智利、Dicap 編號 JJLS-17、2×Vinyl LP、Stereo；掛名為 Sergio Ortega 與 Quilapayún，Sergio Ortega 掛 Lyrics By／Music By／Composed By，Eduardo Moubarak 掛 Directed By，Roberto Parada 掛 Narrator [Relato]，樂團六人（Eduardo Carrasco、Carlos Quezada、Willy Oddó、Hernán Gómez、Rodolfo Parada、Rubén Escudero）列為未掛名演出者。",
+    "src": "https://www.discogs.com/release/4763309"
+   },
+   {
+    "f": "同一筆 Discogs release 的說明欄寫：這是 DICAP 的第一張立體聲發行；D 面收的是先前已發表過的歌曲的不同版本。",
+    "src": "https://www.discogs.com/release/4763309"
+   },
+   {
+    "f": "西班牙文維基〈La fragua (álbum)〉寫：《La Fragua》是智利樂團 Quilapayún 的第十張專輯，1973 年出版，是該團的第一張雙唱片，音樂形式屬於清唱劇（cantata）；全部歌詞與音樂皆由 Sergio Ortega 所作；參與者列出樂團六人，另有朗誦者 Roberto Parada。",
+    "src": "https://es.wikipedia.org/wiki/La_fragua_(%C3%A1lbum)"
+   },
+   {
+    "f": "西班牙文維基〈Quilapayún〉寫：樂團 1965 年 7 月 26 日成立於聖地牙哥；1968 年錄下《X Vietnam》，自此確立了讓他們成為革命民歌典範的風格；1970 年錄下 Luis Advis 的《Cantata de Santa María de Iquique》，那部作品成為智利音樂的重要作品，也成為西語美洲同類作品的範本。",
+    "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn"
+   },
+   {
+    "f": "同一條目寫：皮諾契發動政變時 Quilapayún 正在歐洲巡演；1973 年 9 月 15 日該團在巴黎奧林匹亞劇院演出，成為第一個登上那個舞台的智利團體；政變之後樂團留在法國，開始無限期的流亡。",
+    "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1596952734「La Fragua」，Quilapayún，releaseDate 1973-03-30，trackCount 31，copyright「℗ 1973 Quilapayún. Distribuido en forma exclusiva por Warner Music Chile S.A.」；分兩片，第一片 25 軌把 MB 原盤裡與歌曲合併計軌的十一段〈Recitado〉各自獨立編號（例如 MB 的〈Recitado 1: Canción 1 - sol luminoso〉5:01 在 Apple 拆成〈Recitado 1〉3:23 與〈Sol Luminoso〉1:37），第二片 6 軌與 MB 原盤 D 面六首同名同序。",
+    "src": "https://music.apple.com/us/album/1596952734"
+   }
+  ],
+  "hookCandidates": [
+   "兩張黑膠、一位朗誦者、六個唱歌的人：歌與朗誦交錯著把整部作品串起來",
+   "DICAP 的第一張立體聲唱片，編號 JJLS-17"
+  ],
+  "sound": "西班牙文維基記本張的音樂形式屬於清唱劇，全部歌詞與音樂由 Sergio Ortega 所作；Discogs 記 Roberto Parada 擔任朗誦（relato）、Eduardo Moubarak 指揮，樂團六人未在封面掛名。結構上歌與朗誦交錯：MB 的原盤曲目多數把一段〈Recitado〉與一首〈Canción〉併成一軌，Apple 的數位版則把十一段朗誦各自獨立編號。第二張唱片的 D 面依 Discogs 說明收的是先前已發表歌曲的不同版本。",
+  "keyTracks": [
+   "Sol luminoso",
+   "Norte grande, pobre norte",
+   "Niño araucano",
+   "El puño del pueblo"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1973。MB first-release-date 1973、Discogs release 4763309（Dicap JJLS-17，Chile）直記 1973、西班牙文維基專屬條目記 1973 三方一致。Apple us 的 releaseDate 1973-03-30 亦落在同一年。無異說。",
+  "notes": "**31 軌之謎解開了，不是錯配。** Apple us 1596952734 的 31 軌與 MB 原盤的 21 軌（9+12）是**同一份內容的兩種計軌方式**：MB 把〈Recitado N〉與相鄰的〈Canción N〉併成一軌，Apple 把十一段朗誦各自獨立編號；兩邊逐段對得上（例如 MB 5:01 = Apple 3:23+1:37），第二片 6 軌與原盤 D 面同名同序，copyright 記 ℗1973。**配對正確，維持 ready**。｜但 notes 要提醒：**原盤是雙 LP，MB 計 21 軌、Apple 計 31 軌**，行文不得引用任何一個軌數當「這張碟有幾首」。固定試聽取首軌會取到〈Recitado 1〉，那是一段朗誦而不是歌——這與原盤的開場一致，但寫作層若要點首曲，用〈Sol luminoso〉比較安全。｜擋下策展層一處：curatorWhy 稱這是「繼《Cantata Santa María de Iquique》之後第二部整張規模的作品」——**查不到支撐，而且有反例**：MB 該團目錄裡 1971 年還有《Vivir como él》（西班牙文維基記為第八張專輯，credits 列有「Relator lado A」朗誦者），夾在兩者之間、形式同型。行文不得寫「第二部」。｜「政變前的最後一張」**成立到什麼程度要講清楚**：MB 該團目錄按 first-release-date 排序，1973《La Fragua》之後下一筆是 1974 年的 Live 輯，而西班牙文維基記政變時樂團正在歐洲巡演、此後留在法國。可寫「1973 年在智利出版、此後樂團滯留法國」，不必寫成最高級的「最後一張」。｜掛名：Discogs master 1338009 把掛名記成「Sergio Ortega, Quilapayún」，卡片依 MB 取 Quilapayún，Ortega 的作者身分寫進行文即可。"
+ },
+ {
+  "key": "desc2:Inti-Illimani|Inti-Illimani 2: La nueva canción chilena",
+  "artist": "Inti-Illimani",
+  "album": "Inti-Illimani 2: La nueva canción chilena",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0fef6dcb 的欄位：title「Inti-Illimani 2: La nueva canción chilena」、artist-credit「Inti‐Illimani」（MB 實體名用 U+2010 連字號）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 4 個 release（1974 IT、1991、1994、1997 CL，皆 Official）。",
+    "src": "https://musicbrainz.org/release-group/0fef6dcb-5997-4abd-9b90-6f0dbf86ce8a"
+   },
+   {
+    "f": "該 release-group 底下 1974 年的義大利 release 由 I dischi dello zodiaco 發行、編號 VPA 8207、載體 12 吋黑膠，12 軌。",
+    "src": "https://musicbrainz.org/release/26a6464e-9149-4abb-8f8e-d31eea4493b2"
+   },
+   {
+    "f": "西班牙文維基〈La nueva canción chilena (Inti-Illimani 2)〉寫：本張又簡稱《La Nueva Canción Chilena》，是智利樂團 Inti-Illimani 的第十張專輯；1974 年 3 月錄於米蘭，同年由義大利廠牌 Dischi dello Zodiaco 發行。",
+    "src": "https://es.wikipedia.org/wiki/La_nueva_canci%C3%B3n_chilena_(Inti-Illimani_2)"
+   },
+   {
+    "f": "同一條目寫：這是該團在義大利錄製並發行的**第二張**唱片，時間點在 1973 年智利政變導致他們流亡該國之後；1991 年 Monitor Records 以 CD 形式再版。",
+    "src": "https://es.wikipedia.org/wiki/La_nueva_canci%C3%B3n_chilena_(Inti-Illimani_2)"
+   },
+   {
+    "f": "同一條目的參與者欄列出樂團六人：Max Berrú（人聲、打擊、吉他）、José Miguel Camus（quena、打擊、人聲）、Jorge Coulón（人聲、tiple、吉他）、Horacio Durán（charango、cuatro、人聲）、Horacio Salinas（人聲、吉他、tiple、打擊）、José Seves（人聲、吉他、quena、打擊）；封面設計 Gracia Barrios。",
+    "src": "https://es.wikipedia.org/wiki/La_nueva_canci%C3%B3n_chilena_(Inti-Illimani_2)"
+   },
+   {
+    "f": "西班牙文維基〈Quilapayún〉寫：皮諾契 1973 年 9 月發動政變時，智利的 nueva canción 團體多在歐洲巡演，政變後留在當地開始無限期流亡；同一段記 Quilapayún 於 1973 年 9 月 15 日在巴黎奧林匹亞劇院演出。",
+    "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn"
+   }
+  ],
+  "hookCandidates": [
+   "1974 年 3 月錄在米蘭，封套由畫家 Gracia Barrios 設計",
+   "六個人、charango、cuatro、tiple、quena：一整套安地斯樂器搬進了義大利的錄音室"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的編制有據：西班牙文維基逐人列出樂團六名成員與各自的樂器——charango、cuatro、tiple、quena、吉他與打擊，六人皆兼人聲。錄音在 1974 年 3 月的米蘭，原盤 12 軌，封面設計出自畫家 Gracia Barrios。",
+  "keyTracks": [],
+  "status": "thin",
+  "yearVerified": "卡單 1974。MB first-release-date 1974 與西班牙文維基專屬條目「1974 年 3 月錄於米蘭、同年發行」一致。無異說。",
+  "notes": "**unavailable 覆核結論：Apple 真的沒有這張碟。** 逐店面用藝人目錄端點覆核（裁定 166）：Inti-Illimani 的兩個 Apple 藝人實體 35981885 與 40547661，在 it／cl／es／us 四個店面各自 `lookup?entity=album&limit=200` 攤開全目錄（35981885 分別回 34／31／32／31 筆，40547661 在 cl 回 21 筆），**1970 年代的條目一筆都沒有**（唯一一筆 1979 是芬蘭語的《Miten voin kyllin kiittää》）；用《La nueva canción chilena》盤名在 it 與 cl 搜尋也是 0 筆。維持 unavailable、不留 URL。｜**keyTracks 留空**：MB 該 1974 年 release 沒有攤開曲名，西班牙文維基的曲目表在純文字擷取下也取不到，查不到可靠的曲名清單。依裁定 56／60 的先例，寧可留空。status 因此判 **thin**。｜**擋下策展層一處硬錯**：curatorWhy 稱「這張是他們在米蘭錄的第一張流亡專輯」——西班牙文維基專屬條目明寫這是「該團在義大利錄製並發行的**第二張**」。行文不得寫「第一張流亡專輯」。｜同一段的「把他們此前在智利的曲目重新編成一份對外的目錄」也查不到來源，不得寫。｜掛名連字號：MB 實體名用 U+2010，卡片與池中一律用 ASCII 連字號（策展層裁定 9），維持。"
+ },
+ {
+  "key": "desc2:Chavela Vargas|La Llorona",
+  "artist": "Chavela Vargas",
+  "album": "La Llorona",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1629ef12 的欄位：title「La Llorona」、artist-credit「Chavela Vargas」、first-release-date 1993-04、primary-type Album、secondary-types 空、轄下 3 個 release（皆 1993、皆 ES、皆 Official，其中兩筆掛 Turner Records、一筆掛 Warner Music Germany）。",
+    "src": "https://musicbrainz.org/release-group/1629ef12-917e-3db1-9854-bec7a0fb8e11"
+   },
+   {
+    "f": "該 release-group 底下 1993 年的西班牙 release 由 Turner Records 發行、編號 5144562 與 TCD 0002、載體 CD，11 軌：〈Cruz de olvido〉4:38、〈Sombras〉4:04、〈Rogaciano〉3:30、〈La china〉3:14、〈Amanecí en tus brazos〉2:40、〈Luz de luna〉3:29、〈Un mundo raro〉3:54、〈La Llorona〉8:31、〈Toda una vida〉2:36、〈A prisión perpetua〉4:16、〈El andariego〉3:21。",
+    "src": "https://musicbrainz.org/release/21938965-5c06-4a1b-bef0-4470144dace9"
+   },
+   {
+    "f": "英文維基〈Chavela Vargas〉寫：她的第一張專輯《Noche Bohemia》1961 年發行，得到 José Alfredo Jiménez 的專業支持；她一生錄過八十多張唱片，1950 年代、1960 年代與 1970 年代前半在墨西哥、美國、法國與西班牙巡演，聲勢極盛。",
+    "src": "https://en.wikipedia.org/wiki/Chavela_Vargas"
+   },
+   {
+    "f": "同一條目的「部分退隱與重返舞台」段寫：她因為長達十五年的酗酒而退出演出，並在自傳裡把那段稱為「我在地獄的十五年」；1970 年她「淹沒在酒精的迷霧裡」時被一戶原住民人家收留照顧、對方並不知道她是誰；2003 年她告訴《紐約時報》，她已經二十五年沒喝酒。",
+    "src": "https://en.wikipedia.org/wiki/Chavela_Vargas"
+   },
+   {
+    "f": "同一條目寫：Vargas 於 **1991 年**重返舞台，地點是墨西哥城 Coyoacán 一家名為「El Hábito」的波希米亞夜總會；她的事業自此重新取得國際聲量，在拉丁美洲、歐洲與美國演出。2003 年，在西班牙導演 Pedro Almodóvar 的力邀與推動下，她以 83 歲之齡首度登上卡內基音樂廳。",
+    "src": "https://en.wikipedia.org/wiki/Chavela_Vargas"
+   },
+   {
+    "f": "西班牙文維基〈Chavela Vargas〉寫：她在西班牙的決定性成功來自 1990 年代、靠 Almodóvar 的支持，並讓她在 1994 年 10 月得以登上巴黎傳奇的奧林匹亞劇院；Almodóvar 與法國女演員 Jeanne Moreau 都到場。同一條目並記她後來在 Julie Taymor 的電影《Frida》(2002) 裡演唱〈La Llorona〉。",
+    "src": "https://es.wikipedia.org/wiki/Chavela_Vargas"
+   },
+   {
+    "f": "Apple Music 西班牙店面 collectionId 257207298「La Llorona」，Chavela Vargas，releaseDate 1993-04-01，trackCount 11，copyright「℗ 1996 WARNER MUSIC SPAIN S.A.」；十一軌曲名、順序與時長與 MB 1993 年 Turner Records 原盤逐軌相符（〈La Llorona〉8:31），十一軌全部有 previewUrl。",
+    "src": "https://music.apple.com/es/album/257207298"
+   }
+  ],
+  "hookCandidates": [
+   "第八軌〈La Llorona〉一首就唱了八分半，比這張唱片上任何一首都長一倍",
+   "重返舞台兩年後錄的十一首歌，發行的是一家西班牙廠牌"
+  ],
+  "sound": "沒有具名來源談這張的音色，因此不寫聲響形容。可寫的結構有據：原盤十一軌，長度介於 2:36 到 8:31，標題曲〈La Llorona〉8:31 排在第八軌，是全碟最長的一首、幾乎是次長曲的兩倍。",
+  "keyTracks": [
+   "La Llorona",
+   "Un mundo raro",
+   "Luz de luna",
+   "El andariego"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1993。MB first-release-date 1993-04、Apple es 257207298 的 releaseDate 1993-04-01 一致；MB 轄下三筆 release 全記 1993。Apple 那筆的 copyright 寫 ℗1996 WARNER MUSIC SPAIN，依裁定 77 只當訊號、不當版本門檻。取 1993。",
+  "notes": "**試聽探測 ready 是錯配，而且錯得徹底。** 探測層取的 Apple us 951041210「La llorona (Remastered 2014)」是 ℗2014 Caribe Sound 的 **17 軌**輯，與 1993 年原盤只有〈La llorona〉一首同名、且時長 3:60 vs 原盤 8:31 明顯是不同錄音，其餘十六首原盤上一首都沒有——**不是本張**。策展層裁定 13 提示的 Apple mx 1674222184 也**不是**（12 軌、℗2017 Editions Milan Music，與原盤只有〈La Llorona〉與〈Un Mundo Raro〉兩首交集）。｜**正確的一筆是 Apple es 257207298**：11 軌、releaseDate 1993-04-01、曲名／曲序／時長與 MB 1993 年 Turner Records 原盤逐軌相符、十一軌全有 previewUrl。**試聽與封面都應改用 es 257207298**，首軌〈Cruz del Olvido〉。｜**擋下策展層兩處**：(a) curatorWhy 稱這是「沉寂十餘年後在西班牙復出的一張」——英文維基明記她 **1991 年在墨西哥城 Coyoacán 的 El Hábito** 重返舞台，復出地點不是西班牙；西班牙那一段是 1990 年代靠 Almodóvar 打開的市場。行文不得寫「在西班牙復出」。(b)「標題曲此後成為她的代名詞」沒有來源，不得寫；可替換的有來源事實是她 2002 年在電影《Frida》裡演唱〈La Llorona〉。｜同名假陽性極多（她名下至少五筆盤名相同或近似的碟），下游一律以 MBID 與上面那個 es collectionId 為準。"
+ }
+]
