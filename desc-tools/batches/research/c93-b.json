@@ -785,7 +785,7 @@
     "src": "https://en.wikipedia.org/wiki/Zaireeka"
    },
    {
-    "f": "英文維基〈Zaireeka〉：Warner Bros. 起初對發行本張有疑慮，經理人 Scott Booker 算出只要賣掉 12,000 套廠牌就能打平（預購來到 14,000 套）；雙方最後的協議是本張不計入樂團欠 Warner 的七張合約張數，樂團以 20 萬美元的預付款同時交出《Zaireeka》與《The Soft Bulletin》。到 2006 年為止本張賣出 28,000 套。",
+    "f": "英文維基〈Zaireeka〉：Warner Bros. 起初對發行本張有疑慮，經理人 Scott Booker 算出只要賣掉 一萬兩千套廠牌就能打平（預購來到 一萬四千套）；雙方最後的協議是本張不計入樂團欠 Warner 的七張合約張數，樂團以 20 萬美元的預付款同時交出《Zaireeka》與《The Soft Bulletin》。到 2006 年為止本張賣出 兩萬八千套。",
     "src": "https://en.wikipedia.org/wiki/Zaireeka"
    },
    {
@@ -885,7 +885,7 @@
     "src": "https://en.wikipedia.org/wiki/Let_It_Come_Down_(Spiritualized_album)"
    },
    {
-    "f": "英文維基〈Let It Come Down (Spiritualized album)〉：本張是樂團在英國專輯榜上最成功的一張，最高名次第三名；截至 2005 年在美國賣出 55,000 張，截至 2003 年在歐洲出貨 250,000 套。",
+    "f": "英文維基〈Let It Come Down (Spiritualized album)〉：本張是樂團在英國專輯榜上最成功的一張，最高名次第三名；截至 2005 年在美國賣出 五萬五千張，截至 2003 年在歐洲出貨 二十五萬套。",
     "src": "https://en.wikipedia.org/wiki/Let_It_Come_Down_(Spiritualized_album)"
    },
    {
@@ -925,7 +925,7 @@
     "src": "https://musicbrainz.org/release/76e673df-efe9-4735-9952-7c97c5d2e6ce"
    },
    {
-    "f": "英文維基〈Whitechocolatespaceegg〉：本張是美國創作歌手 Liz Phair 的第三張錄音室專輯，1998 年發行，在 Billboard 200 上最高第 35 名；截至 2010 年 7 月賣出 293,000 張。",
+    "f": "英文維基〈Whitechocolatespaceegg〉：本張是美國創作歌手 Liz Phair 的第三張錄音室專輯，1998 年發行，在 Billboard 200 上最高第 35 名；截至 2010 年 7 月賣出 二十九萬三千張。",
     "src": "https://en.wikipedia.org/wiki/Whitechocolatespaceegg"
    },
    {
@@ -961,7 +961,7 @@
   ],
   "status": "full",
   "yearVerified": "MB first-release-date 1998-08-07（JP 那筆）、MB 的 US／CA 盤記 1998-08-11、英文維基記 1998、Apple releaseDate 1998-08-11。**都是 1998，無兩說。**",
-  "notes": "**⚠ 本層推翻了試聽 unavailable 判定，也推翻了策展層的預判。** `previews.json` 記本張 `gb:0→0 us:0→0 …` 八個店面全部 0 筆，判 unavailable；`curatorRisk` 寫「**Apple 沒有這張**……改以藝人名列 Apple US 目錄 16 筆亦無」。**兩者都錯。**依裁定第 166 條改打 `lookup?id=22707&entity=album&limit=200&country=<front>` 撈 Liz Phair 全目錄（gb 19 筆、us 18、jp 18、de 19、fr 19、ie 19、ca 18、au 19），**八個店面全部命中 collectionId 724319797《Whitechocolatespaceegg》**，16 軌、explicit、℗ 1998 Capitol。以 `lookup?id=724319797&entity=song` 逐軌核對 MB 的 16 軌 US 原盤：**曲名、曲序、曲長逐項相同**（第 1 軌兩邊都是〈White Chocolate Space Egg〉4:36），無 Karaoke／Instrumental／Tribute 尾綴，16 軌全部有 previewUrl。**改判 ready，固定試聽可取 724319797，建議店面 gb。**\n（搜尋落空的成因是第 152 條的形狀：**Apple 把盤名寫成首字母大寫的「Whitechocolatespaceegg」，而卡片與 MB 都是全小寫**；再加上第 166 條 search 端點系統性漏碟。）\n**⚠ 依 §6 一律優先取 explicit**：本張 Apple 條目正是 explicit，**不得配到淨化版**。\n**策展層說法逐條核對**：〈第三張錄音室專輯〉有源 ✔；〈1998 年由 Matador 與 Capitol 聯合發行、US CDP 7243 8 53554 2 4／Matador OLE 191-2〉有源（MB release 的 label-info 兩個廠牌兩組編號都在）✔。**未採用**：〈是她 Matador 三部曲的最後一張〉——**「三部曲」查無來源**，可替代的有源說法是〈Liz Phair (album)〉條目對前三張的排序敘述，已入 facts。\n**互斥分派——本張獨占「題材從性與關係轉向為人母」與 Billboard 200 第 35 名／293,000 張。**\n**本張禁用**：The Matrix、Capitol 的壓力、Pitchfork 的 0.0 分（全部分派給 2003 年那張同名輯）。"
+  "notes": "**⚠ 本層推翻了試聽 unavailable 判定，也推翻了策展層的預判。** `previews.json` 記本張 `gb:0→0 us:0→0 …` 八個店面全部 0 筆，判 unavailable；`curatorRisk` 寫「**Apple 沒有這張**……改以藝人名列 Apple US 目錄 16 筆亦無」。**兩者都錯。**依裁定第 166 條改打 `lookup?id=22707&entity=album&limit=200&country=<front>` 撈 Liz Phair 全目錄（gb 19 筆、us 18、jp 18、de 19、fr 19、ie 19、ca 18、au 19），**八個店面全部命中 collectionId 724319797《Whitechocolatespaceegg》**，16 軌、explicit、℗ 1998 Capitol。以 `lookup?id=724319797&entity=song` 逐軌核對 MB 的 16 軌 US 原盤：**曲名、曲序、曲長逐項相同**（第 1 軌兩邊都是〈White Chocolate Space Egg〉4:36），無 Karaoke／Instrumental／Tribute 尾綴，16 軌全部有 previewUrl。**改判 ready，固定試聽可取 724319797，建議店面 gb。**\n（搜尋落空的成因是第 152 條的形狀：**Apple 把盤名寫成首字母大寫的「Whitechocolatespaceegg」，而卡片與 MB 都是全小寫**；再加上第 166 條 search 端點系統性漏碟。）\n**⚠ 依 §6 一律優先取 explicit**：本張 Apple 條目正是 explicit，**不得配到淨化版**。\n**策展層說法逐條核對**：〈第三張錄音室專輯〉有源 ✔；〈1998 年由 Matador 與 Capitol 聯合發行、US CDP 7243 8 53554 2 4／Matador OLE 191-2〉有源（MB release 的 label-info 兩個廠牌兩組編號都在）✔。**未採用**：〈是她 Matador 三部曲的最後一張〉——**「三部曲」查無來源**，可替代的有源說法是〈Liz Phair (album)〉條目對前三張的排序敘述，已入 facts。\n**互斥分派——本張獨占「題材從性與關係轉向為人母」與 Billboard 200 第 35 名／二十九萬三千張。**\n**本張禁用**：The Matrix、Capitol 的壓力、Pitchfork 的 0.0 分（全部分派給 2003 年那張同名輯）。"
  },
  {
   "key": "desc2:Liz Phair|Liz Phair",
@@ -985,7 +985,7 @@
     "src": "https://en.wikipedia.org/wiki/Liz_Phair_(album)"
    },
    {
-    "f": "英文維基〈Liz Phair (album)〉：本張在 Billboard 200 以第 27 名進榜，〈Why Can't I?〉打進 Adult Top 40 與 Hot Adult Contemporary 榜，它的音樂錄影帶讓 Phair 第一次在 VH1 上大量播出。截至 2010 年 7 月售出 433,000 張，2018 年 5 月 14 日以 50 萬張的銷量在美國取得金唱片認證。",
+    "f": "英文維基〈Liz Phair (album)〉：本張在 Billboard 200 以第 27 名進榜，〈Why Can't I?〉打進 Adult Top 40 與 Hot Adult Contemporary 榜，它的音樂錄影帶讓 Phair 第一次在 VH1 上大量播出。截至 2010 年 7 月售出 四十三萬三千張，2018 年 5 月 14 日以 50 萬張的銷量在美國取得金唱片認證。",
     "src": "https://en.wikipedia.org/wiki/Liz_Phair_(album)"
    },
    {
@@ -1014,5 +1014,325 @@
   "status": "full",
   "yearVerified": "MB first-release-date 2003-06-24、英文維基記 2003 年 6 月 24 日、Apple releaseDate 2003-01-01（年初預設值）。**都是 2003，無兩說。**",
   "notes": "**自我同名卡**（`selfTitled` true）：掛名與盤名完全相同，**任何只比盤名的去重都會誤判，必須 artist+album 成對比對**。身分證據為 release-group MBID 6434e1a7 與 Apple 條目 725785998。\n**策展層說法逐條核對**：〈第四張專輯、2003 年 Capitol 發行的自我同名作〉有源 ✔；〈是她離開 Matador 進入大廠體系的第一張〉——維基的有源版本是「1999 年 Matador 被 Capitol 收購」＋本張由 Capitol 發行，**「第一張」這個序數沒有直述來源，行文不要寫「第一張」**；〈部分曲目由 The Matrix 製作〉有源，維基的確數是**四首由 The Matrix 共同創作**，含〈Extraordinary〉與〈Why Can't I?〉✔；〈她目錄裡爭議最集中的一張〉——用有源的具體事實替代（Metacritic mixed、NYT 與 Pitchfork 0.0、2019 年樂評道歉），已入 facts。\n**MB 資料面**：轄下有 **1 筆 GB Promotion**，下游不得取促銷盤。\n**試聽**：`previews.json` 標 ready、`gb:11→1`、collectionId **725785998**、**13 軌**，比 MB 2003 US 原盤的 14 軌**少一軌**（MB 版第 11 軌是〈H.W.C.〉）。第 1 軌位置相符（兩邊都是〈Extraordinary〉）。**判定為同一張碟、複核通過**，但⚠ **Apple 端是刪掉一軌的版本，且 collectionExplicitness 標 notExplicit**——**下游做 §6 的 explicit 檢查時要注意本張可能只有淨化／刪節版，manifest 必須註明軌數差**。\n**互斥分派——本張獨占「The Matrix／Pitchfork 0.0 與那篇道歉」與〈HWC〉的爭議。**\n**本張禁用**：為人母的題材、Billboard 第 35 名（那是《whitechocolatespaceegg》的）。"
+ },
+ {
+  "key": "desc2:The Cranberries|To the Faithful Departed",
+  "artist": "The Cranberries",
+  "album": "To the Faithful Departed",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e667e66b 的欄位：title「To the Faithful Departed」、artist-credit「The Cranberries」、first-release-date 1996-04-19、primary-type Album、secondary-types 空、轄下 21 個 release 全部 Official，國別橫跨 US／GB／CA／JP／DE／AU／ZA 與 XE／XW。",
+    "src": "https://musicbrainz.org/release-group/e667e66b-f93d-327e-acb8-ae7aaf6a6ee5"
+   },
+   {
+    "f": "該 release-group 底下 1996 年的英國盤（Island，編號 524 234-2／CID 8048、barcode 731452423429）是十三軌的 CD：〈Hollywood〉5:07、〈Salvation〉2:24、〈When You're Gone〉4:57、〈Free to Decide〉4:25、〈War Child〉3:50、〈Forever Yellow Skies〉4:10、〈The Rebels〉3:20、〈I Just Shot John Lennon〉2:41、〈Electric Blue〉4:51、〈I'm Still Remembering〉4:49、〈Will You Remember?〉2:49、〈Joe〉3:22、〈Bosnia〉5:38。",
+    "src": "https://musicbrainz.org/release/717dbd95-9238-40b2-a13d-29bc184aa219"
+   },
+   {
+    "f": "英文維基〈To the Faithful Departed〉：本張是愛爾蘭另類搖滾樂團 the Cranberries 的第三張錄音室專輯，1996 年 4 月 29 日發行；這張碟是為紀念當年過世的兩個人而做——把樂團簽進 Island Records 的 Denny Cordell，以及主唱 Dolores O'Riordan 的祖父 Joe O'Riordan。",
+    "src": "https://en.wikipedia.org/wiki/To_the_Faithful_Departed"
+   },
+   {
+    "f": "英文維基〈To the Faithful Departed〉：本張在四個國家拿下榜首，並成為樂團在美國 Billboard 200 上名次最高的專輯，最高第四名。",
+    "src": "https://en.wikipedia.org/wiki/To_the_Faithful_Departed"
+   },
+   {
+    "f": "英文維基〈To the Faithful Departed〉：封套拍攝分成兩部分——原本要當封面的是一個仰躺的赤裸男嬰，在攝影師 Andy Earl 位於倫敦 Shad Thames 的新工作室拍的；另一部分是樂團坐在一個黃色房間裡。最後一刻應 Dolores O'Riordan 要求把兩者對調，黃房間成了封面。那個黃房間在倫敦搭好、運到湖區、在 Loughrigg Holme 附近的林子裡架起來；拍攝當天下雪，樂團穿著新的紫色 Dolce & Gabbana 服裝，盡可能縮短拍攝時間。",
+    "src": "https://en.wikipedia.org/wiki/To_the_Faithful_Departed"
+   },
+   {
+    "f": "英文維基〈To the Faithful Departed〉：為宣傳本張，樂團在 1996 年赴亞洲、大洋洲與北美巡演，這趟 117 場的世界巡迴 4 月 30 日在菲律賓開始，卻在 6 月 8 日澳洲段的凱恩斯因 O'Riordan 膝傷中止；8 月 1 日在北美重啟後又因她的身心狀況在二十八場後停下，其餘北美場次與歐洲段全部取消。",
+    "src": "https://en.wikipedia.org/wiki/To_the_Faithful_Departed"
+   },
+   {
+    "f": "英文維基〈To the Faithful Departed〉的製作名單：製作為 Bruce Fairbairn 與樂團自己，Mike Plontikoff 負責錄音與混音；客座包括 Michael Kamen（管弦編寫）、Henry Daag（〈Bosnia〉的鋸琴）、Richie Buckley 與 Michael Buckley（〈Salvation〉的次中音與上低音薩克斯風）、Bruce Fairbairn（〈Salvation〉的小號）。",
+    "src": "https://en.wikipedia.org/wiki/To_the_Faithful_Departed"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1705726407：標題《To The Faithful Departed (Deluxe Edition)》、掛名 The Cranberries、**43 軌**、releaseDate 1996-04-30、notExplicit，第 1 軌是〈Hollywood〉。",
+    "src": "https://music.apple.com/gb/album/1705726407"
+   }
+  ],
+  "hookCandidates": [
+   "封面上的黃房間是在倫敦搭好、運到湖區的林子裡再架起來的",
+   "一百一十七場的巡迴，撐到第二十八場就停了"
+  ],
+  "sound": "十三軌，最長的收尾曲〈Bosnia〉5:38、最短的〈Salvation〉2:24；客座樂器包括管弦編寫、鋸琴與兩把薩克斯風。（本欄由 MB 1996 GB 原盤的曲目表與曲長、加上英文維基的客座名單歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Salvation",
+   "Free to Decide",
+   "When You're Gone"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1996-04-19（JP 那筆）、MB 的 GB／DE 盤記 1996-04-29、英文維基記 1996 年 4 月 29 日、Apple releaseDate 1996-04-30。**四邊都是 1996，無兩說。**",
+  "notes": "**策展層說法逐條核對**：〈第三張錄音室專輯〉有源 ✔；〈1996 年 Island 發行〉有源 ✔；〈製作人由前兩張的 Stephen Street 換成 Bruce Fairbairn〉——**Bruce Fairbairn 是本張製作人有源**（維基製作名單）✔，但**「前兩張是 Stephen Street」在本層查無來源，那半句不寫進 facts**；〈這張是他們在銷量高峰上發的一張〉——可用有源的「四國榜首、Billboard 200 第四名」替代，已入 facts；〈也是 Dolores O'Riordan 開始寫時事題材的分界〉——**查無來源，不採用**（曲名如〈War Child〉〈Bosnia〉〈I Just Shot John Lennon〉可以直接列，但不得斷言「開始」）。**未採用**：〈GB CRANCD2／US I2 24234〉——MB 的 GB release 掛的編號是 **524 234-2／CID 8048**，**與策展層寫的 CRANCD2 不一致，且 CRANCD2 本層查無來源，不寫進 facts**。\n**試聽**：`previews.json` 標 ready、`gb:3→2`、collectionId **1705726407**、**43 軌**——**這是 Deluxe Edition，遠多於原盤的 13 軌**。第 1 軌位置相符（兩邊都是〈Hollywood〉）。**判定為同一張碟、複核通過**，但**下游備註必須寫明取的是 Deluxe 版，行文不得用「這張碟有幾軌」的單一數字**（第 141 條形狀）。\n**互斥分派——本張獨占「黃房間封面的搬運」與「117 場巡迴中止」，以及紀念 Denny Cordell 與 Joe O'Riordan 這件事。**\n**本張禁用**：Storm Thorgerson 的巨眼封面、Dolores 的休養與生子（那些是《Bury the Hatchet》的）。"
+ },
+ {
+  "key": "desc2:The Cranberries|Bury the Hatchet",
+  "artist": "The Cranberries",
+  "album": "Bury the Hatchet",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 97e9c8bf 的欄位：title「Bury the Hatchet」、artist-credit「The Cranberries」、first-release-date 1999-04-19、primary-type Album、secondary-types 空、轄下 22 個 release 全部 Official，國別橫跨 US／GB／CA／AU／JP／AT 與 XE／XW。",
+    "src": "https://musicbrainz.org/release-group/97e9c8bf-711c-32df-971d-2ad1a2d7036f"
+   },
+   {
+    "f": "該 release-group 底下 1999 年的美國盤（Island，編號 I2 24611）是十三軌的 CD：〈Animal Instinct〉3:31、〈Loud and Clear〉2:45、〈Promises〉5:28、〈You and Me〉3:36、〈Just My Imagination〉3:41、〈Shattered〉3:42、〈Desperate Andy〉3:44、〈Saving Grace〉3:08、〈Copycat〉2:54、〈What's on My Mind〉3:13、〈Delilah〉3:32、〈Fee Fi Fo〉4:47、〈Dying in the Sun〉3:31。",
+    "src": "https://musicbrainz.org/release/3063ea2b-5147-4c47-984e-2c5654d76abd"
+   },
+   {
+    "f": "英文維基〈Bury the Hatchet (album)〉：本張是愛爾蘭另類搖滾樂團 the Cranberries 的第四張錄音室專輯，1999 年 4 月 19 日發行；截至 1999 年 6 月 2 日在美國已出貨 50 萬張並取得金唱片認證。",
+    "src": "https://en.wikipedia.org/wiki/Bury_the_Hatchet_(album)"
+   },
+   {
+    "f": "英文維基〈Bury the Hatchet (album)〉：這是樂團 1996 年 9 月開始的第一次休團之後發的第一張專輯。那段期間 Dolores O'Riordan 從壓力引起的病症中復原，也生下了第一個孩子 Taylor；這件事影響了碟上部分曲目，最明顯的是〈Animal Instinct〉與〈You and Me〉。整張的題材從生育與孩子橫跨到離婚與虐童。",
+    "src": "https://en.wikipedia.org/wiki/Bury_the_Hatchet_(album)"
+   },
+   {
+    "f": "英文維基〈Bury the Hatchet (album)〉：封面由 Storm Thorgerson 設計，畫的是一個赤裸男子在荒地上被一隻巨眼注視著，照片攝於亞利桑那州的 Oljato-Monument Valley；黑膠版的封面不同，赤裸男子與巨眼換到另一片沙漠場景，但原封面圖仍印在唱片標籤上，封底則是那名男子轉過身對著巨眼大喊。",
+    "src": "https://en.wikipedia.org/wiki/Bury_the_Hatchet_(album)"
+   },
+   {
+    "f": "英文維基〈Bury the Hatchet (album)〉：這張封面後來被 Pitchfork 列進「史上最糟唱片封面」名單，該文寫道「Storm Thorgerson 的作品在標誌性與愚蠢之間擺盪，這一張屬於後者」。Thorgerson 也設計了樂團 2001 年《Wake Up and Smell the Coffee》的封面。",
+    "src": "https://en.wikipedia.org/wiki/Bury_the_Hatchet_(album)"
+   },
+   {
+    "f": "英文維基〈Bury the Hatchet (album)〉：黑膠版的曲序與 CD 版不同，這個曲序在 2015 年的再發版上被保留。製作為樂團自己與 Benedict Fenner（Fenner 兼錄音），混音 Mike Plotnikoff。",
+    "src": "https://en.wikipedia.org/wiki/Bury_the_Hatchet_(album)"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1440923969：標題《Bury the Hatchet》、掛名 The Cranberries、13 軌、releaseDate 1999-01-01、notExplicit，第 1 軌是〈Animal Instinct〉。",
+    "src": "https://music.apple.com/gb/album/1440923969"
+   }
+  ],
+  "hookCandidates": [
+   "黑膠版的封面與曲序都跟 CD 版不一樣，兩邊是兩張碟的樣子",
+   "那隻巨眼後來被列進「史上最糟唱片封面」"
+  ],
+  "sound": "十三軌，最長的〈Promises〉5:28、最短的〈Loud and Clear〉2:45，其餘十一軌都在兩分五十四秒到四分四十七秒之間。（本欄由 MB 1999 US 盤的曲目表與曲長歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Animal Instinct",
+   "Promises",
+   "Just My Imagination"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1999-04-19、英文維基記 1999 年 4 月 19 日、Apple releaseDate 1999-01-01（年初預設值）。**都是 1999，無兩說。**",
+  "notes": "**策展層說法逐條核對**：〈第四張錄音室專輯〉有源 ✔；〈1999 年 Island 發行〉有源（MB release）✔；〈是樂團在 1997 年中止巡演、Dolores O'Riordan 休養之後回歸的一張〉——**維基記的是「1996 年 9 月開始的第一次休團」，不是 1997**；本層以維基的 1996 年 9 月入 facts，**行文不得寫 1997**。〈製作人 Benedict Fenner〉有源 ✔。**未採用**：〈US I2 24611、586 750-2〉——I2 24611 有源（MB release 的 label-info），**586 750-2 本層查無來源，不寫進 facts**；〈是這個團流通最廣的品項之一〉屬評價，不採用。\n**盤名是常見片語**：《Bury the Hatchet》另有多位藝人同名品項，**去重一律 artist+album 成對比對**。\n**試聽**：`previews.json` 標 ready、`gb:2→1`、collectionId **1440923969**、13 軌，與 MB 1999 US 盤同軌數同序（第 1 軌兩邊都是〈Animal Instinct〉）。**複核通過、無異議。**⚠ 維基載黑膠版曲序與 CD 不同，**若下游改採黑膠版曲序，第 157 條的位置比對會誤報**。\n**互斥分派——本張獨占「Thorgerson 的巨眼封面／黑膠版兩處不同」與「休團、復原與生子」。**\n**本張禁用**：黃房間封面、117 場巡迴（那是《To the Faithful Departed》的）。"
+ },
+ {
+  "key": "desc2:Jeff Buckley|Sketches for My Sweetheart the Drunk",
+  "artist": "Jeff Buckley",
+  "album": "Sketches for My Sweetheart the Drunk",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 98dd8826 的欄位：title「Sketches for My Sweetheart the Drunk」、artist-credit「Jeff Buckley」、first-release-date 1998-05-07、primary-type Album、secondary-types 含 Compilation、轄下 8 個 release（XE 2、US 2、GB／JP／AU／AI 各 1）全部 Official。",
+    "src": "https://musicbrainz.org/release-group/98dd8826-eae5-3700-957e-397bd0cf82d4"
+   },
+   {
+    "f": "該 release-group 底下 1998-05-11 的英國盤（Columbia，編號 488661 6、barcode 5099748866165）是雙 CD。第一片十軌：〈The Sky Is a Landfill〉5:09、〈Everybody Here Wants You〉4:47、〈Opened Once〉3:30、〈Nightmares by the Sea〉3:54、〈Yard of Blonde Girls〉4:07、〈Witches' Rave〉4:41、〈New Year's Prayer〉4:41、〈Morning Theft〉3:40、〈Vancouver〉3:13、〈You & I〉5:38。",
+    "src": "https://musicbrainz.org/release/79aac306-2994-39b3-8c91-4b3003f23216"
+   },
+   {
+    "f": "同一筆英國雙 CD 的第二片十一軌：〈Nightmares by the Sea〉3:51、〈New Year's Prayer〉4:10、〈Haven't You Heard〉4:08、〈I Know We Could Be So Happy Baby (If We Wanted to Be)〉4:27、〈Murder Suicide Meteor Slave〉5:55、〈Back in N.Y.C.〉7:36、〈Gunshot Glitter〉5:37、〈Demon John〉5:14、〈Your Flesh Is So Nice〉3:38、〈Jewel Box〉3:37、〈Satisfied Mind〉5:58——其中〈Nightmares by the Sea〉與〈New Year's Prayer〉在兩片上各出現一次。",
+    "src": "https://musicbrainz.org/release/79aac306-2994-39b3-8c91-4b3003f23216"
+   },
+   {
+    "f": "英文維基〈Sketches for My Sweetheart the Drunk〉：本張是美國創作歌手 Jeff Buckley 的一張合輯，1998 年 5 月 11 日由 Columbia Records 發行，距他過世一年；內容是他 1996 至 1997 年與製作人 Tom Verlaine 合作、為第二張專輯《My Sweetheart the Drunk》所錄的材料。",
+    "src": "https://en.wikipedia.org/wiki/Sketches_for_My_Sweetheart_the_Drunk"
+   },
+   {
+    "f": "英文維基〈Sketches for My Sweetheart the Drunk〉：Buckley 對與 Verlaine 錄出來的成果不滿意，把那批錄音擱下、帶著樂團去孟菲斯重來；1997 年 5 月 29 日傍晚他到密西西比河游泳，溺斃。",
+    "src": "https://en.wikipedia.org/wiki/Sketches_for_My_Sweetheart_the_Drunk"
+   },
+   {
+    "f": "英文維基〈Sketches for My Sweetheart the Drunk〉：Buckley 沒有留下遺囑，遺產歸母親 Mary Guibert。她在追思儀式後不久得知 Sony 正在混音與母帶處理那批 Verlaine 錄音準備發行，因此透過律師寄出禁制通知。Sony 尚未回收與 Buckley 的合約投資、急著出新碟，Guibert 則只允許他們發行「值得拿出來用的」材料，雙方最後折衷成一張雙碟——一片放 Verlaine 的錄音，另一片放 Buckley 後來的 demo；Guibert 不准 Sony 更動那些 demo。",
+    "src": "https://en.wikipedia.org/wiki/Sketches_for_My_Sweetheart_the_Drunk"
+   },
+   {
+    "f": "英文維基〈Sketches for My Sweetheart the Drunk〉：第二片收了 Genesis〈Back in NYC〉的翻唱；2011 年 Genesis 鍵盤手 Tony Banks 說：「我很意外他把整首都做了，連好笑的段落也在。要是我，大概只會抓主要的部分。不過那很好玩、也真的挺可愛的，有點『為什麼不呢』的感覺。」國際（非美國）版的第二片把〈Gunshot Glitter〉放在第 7 軌，美國版的第 7 到 10 軌因此各往後挪一位，全碟共 21 軌。",
+    "src": "https://en.wikipedia.org/wiki/Sketches_for_My_Sweetheart_the_Drunk"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 253531816：標題《Sketches for My Sweetheart the Drunk》、掛名 Jeff Buckley、20 軌、releaseDate 1998-05-11、notExplicit，第 1 軌是〈The Sky Is a Landfill〉。",
+    "src": "https://music.apple.com/gb/album/253531816"
+   }
+  ],
+  "hookCandidates": [
+   "同兩首歌在兩片碟上各出現一次，一片是錄音室版、一片是他自己錄的",
+   "母親寄出禁制通知，換來的協議是：第二片碟一個音都不准動"
+  ],
+  "sound": "雙碟共二十一軌，最長的〈Back in N.Y.C.〉7:36、最短的〈Vancouver〉3:13；〈Nightmares by the Sea〉與〈New Year's Prayer〉在兩片上各有一個版本，兩邊曲長不同（3:54／3:51、4:41／4:10）。（本欄由 MB 1998 GB 雙 CD 的曲目表與曲長歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Everybody Here Wants You",
+   "The Sky Is a Landfill",
+   "Morning Theft"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1998-05-07（XE 那筆）、MB 的 GB 盤記 1998-05-11、英文維基記 1998 年 5 月 11 日、Apple releaseDate 1998-05-11。**都是 1998，無兩說。**",
+  "notes": "**收錄身分**：MB 的 secondary-types 含 **Compilation**，依 §5.6 照一般 Album 寫、不填例外欄位（策展層判斷正確）。\n**策展層說法逐條核對**：〈家屬與 Columbia 依他生前的工作進度整理出的雙 CD〉有源，且維基給了更精確的經過（Mary Guibert 的禁制通知與折衷協議）✔；〈第一片是 Tom Verlaine 製作的錄音室 session，第二片是他自行錄下的 demo〉有源 ✔；〈1997 年溺斃〉有源（1997-05-29，密西西比河）✔。**未採用**：〈第二片是他自行錄下的**四軌** demo〉——**「四軌（四軌機）」查無來源，不寫進 facts**；〈這是他名下第二個、也是唯一一個非現場的長篇正式發行〉屬序數／盤點推論，**不寫**。\n**軌數兩說**：MB 的 GB 盤是 10＋11＝**21 軌**（維基說國際版含〈Gunshot Glitter〉共 21 軌），Apple GB 條目是 **20 軌**（＝美國版）。**行文不得寫「這張碟有幾軌」的單一數字**（第 141 條形狀）；要提就得指明版本。\n**試聽**：`previews.json` 標 ready、`gb:2→2`、collectionId **253531816**、20 軌，第 1 軌位置相符（兩邊都是〈The Sky Is a Landfill〉）。**複核通過、無異議。**⚠ 注意 `curatorRisk` 記的是另一個 id（1476888879「Expanded Edition」，us 店面）；**本層在 gb 店面拿到的是 253531816、非 Expanded**，兩者不是同一筆，**下游請以 previews.json 的 253531816 為準**。\n**互斥分派——本張獨占「遺產、禁制通知與那份不准更動的 demo」與 Genesis〈Back in NYC〉的翻唱。**\n**本張禁用**：《Grace》的任何敘述（那張是池中既有的頂點 hall 卡）。"
+ },
+ {
+  "key": "desc2:Guns N’ Roses|\"The Spaghetti Incident?\"",
+  "artist": "Guns N’ Roses",
+  "album": "\"The Spaghetti Incident?\"",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7ef05688 的欄位：title「“The Spaghetti Incident?”」（彎引號）、artist-credit「Guns N' Roses」、first-release-date 1993-11-21、primary-type Album、secondary-types 空、轄下 14 個 release 全部 Official（JP／XE／US／CA／DE／AU／DZ 等）。",
+    "src": "https://musicbrainz.org/release-group/7ef05688-558a-36a6-97a8-ff4e6174aae6"
+   },
+   {
+    "f": "該 release-group 底下 1993 年的美國盤（Geffen Records，編號 GEFD-24617）是十三軌的 CD：〈Since I Don't Have You〉4:20、〈New Rose〉2:39、〈Down on the Farm〉3:28、〈Human Being〉6:48、〈Raw Power〉3:12、〈Ain't It Fun〉5:06、〈Buick Makane (Big Dumb Sex)〉2:40、〈Hair of the Dog〉3:55、〈Attitude〉1:27、〈Black Leather〉4:09、〈You Can't Put Your Arms Around a Memory〉3:35、〈I Don't Care About You〉2:17、〈Look at Your Game, Girl〉2:34。",
+    "src": "https://musicbrainz.org/release/906fb730-0261-4a45-b545-7e6c375ff5ac"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：本張是美國硬搖滾樂團 Guns N' Roses 的第五張錄音室專輯，整張由翻唱組成，來源多半是龐克與硬搖滾的老歌；這是唯一一張有節奏吉他手 Gilby Clarke 的錄音室作，也是 Slash、Duff McKagan 與 Matt Sorum 最後參與的一張，同時是最後一張由長期製作人 Mike Clink 操刀的專輯。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：這是 Guns N' Roses 唯一一張沒有巡演支撐的專輯發行；雖然評論大致不差，卻是樂團賣得最差的錄音室專輯，到 2018 年為止在美國賣出一百萬張。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：樂團原本打算 1992 或 1993 年出一張翻唱 EP。Slash 的說法是，為了紓解錄新歌的壓力，他們會聚在一起玩老歌熱身，結果錄了四首、覺得可以做成 EP；巡演途中陸續又錄了更多，最後湊到十三首。曲目來源包括 U.K. Subs、The Damned、New York Dolls、The Stooges、Dead Boys、Misfits、Johnny Thunders、The Professionals、FEAR，以及 T. Rex、Soundgarden 與 The Skyliners。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：樂團選曲時想抬高幾支自己喜歡的樂團的能見度、也想用版稅在財務上幫他們一把，一度考慮把盤名取作「Pension Fund」（退休金）；Rose 承認那個提議是因為他們在「幫這些人付點房租」。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：盤名出自 1989 年 Steven Adler 在芝加哥一間公寓發生的事——Adler 把毒品冰在冰箱裡、就放在樂團的外帶義大利菜旁邊，他給那批貨的暗號是「spaghetti」；他控告樂團時，律師要求他們「講講那個 spaghetti incident」，樂團覺得好笑就拿來當盤名。封面下方有一行以黃道十二宮殺手所創密碼寫成的訊息，多年後被解讀為「Fuck 'Em All」。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "英文維基〈\"The Spaghetti Incident?\"〉：本張收了一首隱藏曲目——邪教領袖 Charles Manson 的〈Look at Your Game, Girl〉。這首歌被刻意保密、沒有放進寄給樂評的試聽帶，收錄後引來執法單位與被害人權益團體的抗議；Rose 表示會把這首歌的全部演出版稅捐給一個非營利環保組織，Geffen Records 則表示自家那份版稅將捐給 Doris Tate Crime Victims Bureau。",
+    "src": "https://en.wikipedia.org/wiki/%22The_Spaghetti_Incident%3F%22"
+   },
+   {
+    "f": "Apple Music GB 店面的條目 collectionId 1440819825：標題《The Spaghetti Incident?》（無引號）、掛名 Guns N' Roses、12 軌、releaseDate 1993-11-23、collectionExplicitness **explicit**，第 1 軌是〈Since I Don't Have You〉；軌數比 MB 的 1993 US 盤少一軌。",
+    "src": "https://music.apple.com/gb/album/1440819825"
+   }
+  ],
+  "hookCandidates": [
+   "盤名來自一場官司裡的一句問話：「講講那個 spaghetti incident」",
+   "原本想叫「退休金」，因為他們是在幫這些老團付房租"
+  ],
+  "sound": "十三軌全是翻唱，最長的〈Human Being〉6:48、最短的〈Attitude〉1:27；來源橫跨 U.K. Subs、The Damned、New York Dolls、The Stooges、Dead Boys、Misfits 與 T. Rex 等。（本欄由 MB 1993 US 盤的曲目表與曲長、加上英文維基的翻唱來源清單歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Since I Don't Have You",
+   "Ain't It Fun",
+   "New Rose"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date 1993-11-21（JP 那筆）、MB 的 US 盤記 1993-11-23、英文維基記 1993、Apple releaseDate 1993-11-23。**都是 1993，無兩說。**",
+  "notes": "**盤名含引號**：MB 的 release-group 與全部 release 作「“The Spaghetti Incident?”」（彎引號）、Apple 作「The Spaghetti Incident?」（無引號）、卡片取 ASCII 直引號形。**三者指同一張碟**；標點在外部服務會被正規化，命中率不受影響。\n**掛名撇號兩形**：MB 的 release-group title 用彎撇號「Guns N’ Roses」、artist-credit 與 Apple 用直撇號「Guns N' Roses」。**去重與 `fix-rgmbid` 要把兩形都當同一個。**\n**策展層說法逐條核對**：〈第五張正規發行〉——維基寫的是「第五張錄音室專輯」✔；〈1993 Geffen GEFD-24617〉有源（MB release）✔；〈整張是龐克與 glam 時期曲目的翻唱（Stooges、New York Dolls、UK Subs、The Damned、Fear 等）〉有源 ✔；〈也是原編制在《Use Your Illusion》雙輯之後、樂團解體之前的最後一張錄音室作品〉——維基的有源版本是「最後一張有 Slash、Duff McKagan 與 Matt Sorum 的專輯」，**改用維基措辭入 facts，不寫「樂團解體」**。**未採用**：〈Uzi Suicide（XE 424 617-2）〉——本層未取到該 release 的廠牌與編號，**查無來源，不寫進 facts**。\n**試聽**：`previews.json` 標 ready、front `gb`、`gb:1→0` 後改走 `gb:artistPage→1` 命中、collectionId **1440819825**、**12 軌**，比 MB 1993 US 盤的 13 軌**少一軌**（少的是隱藏曲目〈Look at Your Game, Girl〉）。第 1 軌位置相符（兩邊都是〈Since I Don't Have You〉）。**判定為同一張碟、複核通過**；**collectionExplicitness 是 explicit，符合 §6，不得改配淨化版**。下游 manifest 要註明軌數差與其成因。\n**互斥分派——本張獨占「盤名的由來」「退休金那個提案」與 Manson 那首隱藏曲目的爭議。**\n**本張禁用**：耗時十餘年、Best Buy 獨賣、Dr Pepper（全部分派給《Chinese Democracy》）。"
+ },
+ {
+  "key": "desc2:Guns N’ Roses|Chinese Democracy",
+  "artist": "Guns N’ Roses",
+  "album": "Chinese Democracy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cdfb0664 的欄位：title「Chinese Democracy」、artist-credit「Guns N' Roses」、first-release-date 2008-06-18、primary-type Album、secondary-types 空、轄下 16 個 release（US 4、JP 3、XE 2、XW／CA／GB／AR／AU／BR 各 1、1 筆未填），其中 14 筆 Official、2 筆 Bootleg。",
+    "src": "https://musicbrainz.org/release-group/cdfb0664-26b5-3475-88f5-dd6ccd4d74ce"
+   },
+   {
+    "f": "該 release-group 底下 2008 年的美國黑膠（Geffen Records，編號 B0012356-01）是兩張 12\" Vinyl、每張七軌。第一張：〈Chinese Democracy〉4:43、〈Shackler's Revenge〉3:36、〈Better〉4:58、〈Street of Dreams〉4:46、〈If the World〉4:54、〈There Was a Time〉6:41、〈Catcher in the Rye〉5:52；第二張：〈Scraped〉3:31、〈Riad n' the Bedouins〉4:10、〈Sorry〉6:15、〈I.R.S.〉4:29、〈Madagascar〉5:38、〈This I Love〉5:34、〈Prostitute〉6:16。",
+    "src": "https://musicbrainz.org/release/850e2c4f-11b2-4f47-a169-e3816b3ea5e4"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：本張是美國硬搖滾樂團 Guns N' Roses 的第六張錄音室專輯，2008 年 11 月 23 日經 Geffen Records 與 Black Frog 發行；這是他們自《Use Your Illusion I》與《II》(1991) 之後第一張原創材料的專輯，也是第一張除主唱 Axl Rose 外沒有任何經典成員的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：這張碟的開發橫跨十餘年，成為搖滾史上最曠日費時、最昂貴的錄音過程之一，據報成本超過 一千三百萬美元。錄音自 1998 年開始，原本打算做出多張專輯，完成的曲目超過 50 首，但 Rose 不固定的進錄音室時間與反覆重錄造成大量延誤。這是第一張不由 Mike Clink 製作的 Guns N' Roses 專輯，改由 Rose 與 Caram Costanzo 掌製作。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：本張把硬搖滾與工業、電子影響混在一起，相對於樂團先前以藍調與龐克為底的音樂是一次轉向；發行後在 Billboard 200 以第三名進榜、獲白金認證，評論對它的野心與人聲表現大致肯定，對製作與漫長的錄音過程則反應不一。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：在美國，本張是透過 Best Buy 獨家發行；它因首支單曲、也就是同名曲的歌詞而在中國被禁。發行同時搭配了一場廣受報導的 Dr Pepper 促銷——該公司宣布只要專輯在 2008 年內問世，就請全美國人喝一罐汽水。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：Rose 在錄音期間與一長串輪替的樂手與製作人合作，樂手包括 Dizzy Reed、Paul Tobias、Robin Finck、Josh Freese、Tommy Stinson、Chris Pitman、Buckethead、Richard Fortus、Ron \"Bumblefoot\" Thal、Brain 與 Frank Ferrer，製作人包括 Youth、Sean Beavan、Roy Thomas Baker 與 Caram Costanzo。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "英文維基〈Chinese Democracy〉：1995 年 8 月 Rose 在法律上退出原樂團、以 Guns N' Roses 之名另組合夥關係，並據報於 1997 年買下這個團名的全部權利；Slash 1996 年離團，1997 年 1 月由前 Nine Inch Nails 吉他手 Robin Finck 接替，McKagan 1997 年 8 月離開。",
+    "src": "https://en.wikipedia.org/wiki/Chinese_Democracy"
+   },
+   {
+    "f": "Apple Music 的條目 collectionId 1440756253：標題《Chinese Democracy》、掛名 Guns N' Roses、trackCount 欄記 15 但實際回傳 14 軌、releaseDate 2008-11-23、collectionExplicitness **explicit**、copyright「℗ 2008 Geffen Records」；十四軌與 MB 2008 US 黑膠逐軌同名同序、曲長逐項相符。",
+    "src": "https://music.apple.com/gb/album/1440756253"
+   }
+  ],
+  "hookCandidates": [
+   "一張碟做了十幾年、據報花掉一千三百萬美元",
+   "汽水公司說：只要它今年出得來，全美國人一人一罐"
+  ],
+  "sound": "十四軌，最長的〈Sorry〉6:15 與〈Prostitute〉6:16、最短的〈Scraped〉3:31；音樂把硬搖滾與工業、電子影響混在一起。（本欄由 MB 2008 US 黑膠的曲目表與曲長、加上英文維基對音樂取向的敘述歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Chinese Democracy",
+   "Better",
+   "Street of Dreams"
+  ],
+  "status": "full",
+  "yearVerified": "MB first-release-date **2008-06-18**（那一筆是 XW／**Bootleg**，即外流版），MB 的 US／GB／CA 官方盤記 **2008-11-23**，英文維基記 2008 年 11 月 23 日，Apple releaseDate 2008-11-23。**年份四邊都是 2008，無兩說**；但**MB 的 first-release-date 取自外流的 bootleg，行文不得斷言單一發行日**（策展層已提示，本層確認成因是 bootleg 那筆）。",
+  "notes": "**策展層說法逐條核對**：〈第六張正規專輯〉有源 ✔；〈是 Axl Rose 主導、耗時十餘年完成的一張〉有源 ✔；〈也是樂團 1993 年之後唯一的錄音室專輯〉——維基的有源版本是「自 1991 年《Use Your Illusion》之後第一張原創材料的專輯」，**改用維基措辭**；〈MB 記的 2008-06-18 早於實際上市的 2008-11-23（美國 Best Buy 獨賣）〉**有源且成因確認**：那筆 06-18 是 XW／Bootleg ✔。**未採用**：〈Geffen 1790607〉——MB 的 US 黑膠掛的編號是 **B0012356-01**，**1790607 本層查無來源，不寫進 facts**。\n**MB 資料面**：轄下 16 筆裡有 **2 筆 Bootleg**，下游解封面／試聽必須避開。\n**⚠ 本層推翻了試聽 unavailable 判定。** `previews.json` 記本張 `gb:1→0 us:1→0 jp:4→0 …` 八個店面全部 0，判 unavailable。依裁定第 166 條改打 `lookup?id=106621&entity=album&limit=200&country=<front>` 撈 Guns N' Roses 全目錄（每個店面 23 筆），**gb／us／jp／de／fr／ie／ca／au 八個店面全部命中 collectionId 1440756253《Chinese Democracy》**，explicit、℗ 2008 Geffen。以 `lookup?id=1440756253&entity=song` 逐軌核對 MB 的 2008 US 黑膠：**十四軌曲名、曲序、曲長逐項相符**（第 1 軌兩邊都是〈Chinese Democracy〉4:43），無 Karaoke／Instrumental／Tribute 尾綴，14 軌全部有 previewUrl。**改判 ready，固定試聽可取 1440756253，建議店面 gb。**⚠ Apple 的 `trackCount` 欄寫 15、實際只回傳 14 軌，**下游若拿 trackCount 做軌數比對會誤報，要以實際軌目為準**。\n（搜尋落空的成因：掛名撇號兩形「Guns N’ Roses」／「Guns N' Roses」，加上第 166 條 search 端點系統性漏碟。）\n**⚠ 依 §6 一律優先取 explicit**：本張正是 explicit，**不得配到淨化版**；策展層提到同藝人《Live Era '87-'93》有 explicit／cleaned 雙胞胎，是本目錄確實存在淨化版問題的旁證。\n**互斥分派——本張獨占「十餘年、一千三百萬美元」「Best Buy 獨賣與 Dr Pepper」與那份輪替樂手名單。**\n**本張禁用**：翻唱來源清單、Manson 那首隱藏曲目、盤名由來（全部是《\"The Spaghetti Incident?\"》的）。"
+ },
+ {
+  "key": "desc2:The Sonics|Boom",
+  "artist": "The Sonics",
+  "album": "Boom",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b3139f76 的欄位：title「Boom」、artist-credit「The Sonics」、first-release-date 1966、primary-type Album、secondary-types 空、轄下 3 個 release（US 2、GB 1）全部 Official。",
+    "src": "https://musicbrainz.org/release-group/b3139f76-4fd3-330b-88ee-ab74a9d702b8"
+   },
+   {
+    "f": "該 release-group 底下 1966 年的美國原盤（Etiquette Records，編號 ET-ALB-027）是十二軌的 12\" Vinyl：〈Cinderella〉2:44、〈Don't Be Afraid of the Dark〉2:22、〈Skinny Minny〉2:11、〈Let the Good Times Roll〉2:00、〈Don't You Just Know It〉2:49、〈Jenny Jenny〉2:19、〈He's Waitin'〉2:32、〈Louie Louie〉3:00、〈Since I Fell for You〉3:59、〈Hitch Hike〉2:45、〈It's Allright〉2:10、〈Shot Down〉2:08。",
+    "src": "https://musicbrainz.org/release/a6e36357-8bdc-4082-a39b-7221cf3d81c7"
+   },
+   {
+    "f": "英文維基〈Boom (The Sonics album)〉：本張是美國車庫搖滾樂團 the Sonics 的第二張錄音室專輯，1966 年 2 月發行。",
+    "src": "https://en.wikipedia.org/wiki/Boom_(The_Sonics_album)"
+   },
+   {
+    "f": "英文維基〈Boom (The Sonics album)〉：本張 1966 年由 Etiquette 廠牌發行、編號 ET-ALBS-027，1999 年由 Norton Records 以 NW 905 再發。",
+    "src": "https://en.wikipedia.org/wiki/Boom_(The_Sonics_album)"
+   },
+   {
+    "f": "英文維基〈Boom (The Sonics album)〉：AllMusic 的 Cub Koda 稱本張「與他們的首張出擊一樣具有爆發力與影響力」，給了四顆半星。",
+    "src": "https://en.wikipedia.org/wiki/Boom_(The_Sonics_album)"
+   },
+   {
+    "f": "英文維基〈Boom (The Sonics album)〉：一如前作《Here Are the Sonics》(1965)，本張對後來的龐克搖滾具有影響力（見 protopunk）。",
+    "src": "https://en.wikipedia.org/wiki/Boom_(The_Sonics_album)"
+   },
+   {
+    "f": "英文維基〈Boom (The Sonics album)〉列出的編制是 Gerry Roslie（鍵盤、人聲）、Andy Parypa（貝斯、人聲）、Larry Parypa（主奏吉他、人聲）、Rob Lind（薩克斯風、人聲）、Bob Bennett（鼓），製作 Kent Morrill 與 Buck Ormsby，錄音師 Bill Wiley。",
+    "src": "https://en.wikipedia.org/wiki/Boom_(The_Sonics_album)"
+   },
+   {
+    "f": "Apple Music 的條目 collectionId 626202316：標題《The Sonics Boom》（團名被串進盤名）、掛名 The Sonics、12 軌、releaseDate 1977-01-01、notExplicit、copyright「℗ 2013 Etiquette Records」；十二軌與 MB 1966 原盤逐軌同名同序（第 1 軌兩邊都是〈Cinderella〉），曲長各差一到八秒。",
+    "src": "https://music.apple.com/gb/album/626202316"
+   }
+  ],
+  "hookCandidates": [
+   "十二首歌沒有一首滿四分鐘，最短的兩分鐘整",
+   "五個人裡有四個掛人聲，另一個負責打鼓"
+  ],
+  "sound": "十二軌都很短，最長的〈Since I Fell for You〉3:59、最短的〈Let the Good Times Roll〉2:00，其餘十軌落在 2:08 到 3:00 之間。編制是鍵盤、貝斯、主奏吉他、薩克斯風與鼓，五人裡四人掛人聲。（本欄由 MB 1966 US 原盤的曲目表與曲長、加上英文維基的編制表歸納，構成它的原始值都在 facts 裡。）",
+  "keyTracks": [
+   "Cinderella",
+   "He's Waitin'",
+   "Shot Down"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說**：MB first-release-date **1966**、英文維基記 **1966 年 2 月**，Apple 的 releaseDate 記 **1977-01-01**。1977 是後續再版年、不是原盤年（Apple 那筆的 copyright 欄還寫 ℗ 2013 Etiquette Records）。依裁定第 95 條年份另取原盤的 **1966**，與卡單一致。兩說已列，交主線。",
+  "notes": "**⚠ 本層推翻了試聽 unavailable 判定。** `previews.json` 記本張 `gb:12→0 us:12→0 …` 八個店面各查到 12 筆但全部配不上，判 unavailable。依裁定第 166 條改打 `lookup?id=201979340&entity=album&limit=200&country=<front>` 撈 The Sonics 全目錄（gb 20 筆、us 19、jp 21、de 20、fr 20、ie 20、ca 21、au 20），**八個店面全部命中 collectionId 626202316**。以 `lookup?id=626202316&entity=song` 逐軌核對 MB 的 1966 原盤：**十二軌曲名與曲序逐項相同**（第 1 軌兩邊都是〈Cinderella〉），曲長各差一到八秒（母帶／轉錄差異），無 Karaoke／Instrumental／Tribute／Performed by／Made Famous by 任何尾綴，12 軌全部有 previewUrl。**改判 ready，固定試聽可取 626202316，建議店面 gb。**\n**搜尋落空的成因是第 152 條的形狀**：**Apple 把團名串進盤名，寫成「The Sonics Boom」**，四個字母的盤名《Boom》在 12 筆搜尋結果裡完全配不上。策展層已預判到這一點且判斷正確 ✔。\n⚠ **同名陷阱**：Apple 另有藝人 id 1449855211「The Sonics」名下一筆《Night Beats Perform 'The Sonics' Boom (feat. The Sonics)》(2019，collectionId 1449855207，12 軌)，**那是 Night Beats 的翻演版，不是本張，八個店面都會出現，下游務必避開**。\n**策展層說法逐條核對**：〈第二張專輯〉有源 ✔；〈1966 年 Etiquette Records〉有源 ✔（**編號兩說**：MB 記 ET-ALB-027、維基記 ET-ALBS-027，兩者都列，行文不寫編號較安全）；〈1999 年 Norton Records 再發〉有源，維基記的編號是 **NW 905**、策展層寫 CNW 905，**以維基的 NW 905 為準**。**未採用**：〈同一家西雅圖廠牌〉——**「西雅圖」查無來源，不寫進 facts**；〈第三張《Introducing the Sonics》1967 已換廠牌 Jerden 且評價遠不如前兩張〉——**查無來源，不採用**；〈2007 年 Big Beat（CDHP 023）再發〉——MB 轄下確有一筆 2007/GB，但本層未取到廠牌與編號，**無來源，不採用**。\n**互斥分派——本張獨占「Apple 把團名串進盤名」這個查詢陷阱與 Cub Koda 的評語。**\n**本張禁用**：《Here Are the Sonics》的任何獨立敘述（那張是池中既有卡）。"
  }
 ]

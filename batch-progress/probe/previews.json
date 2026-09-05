@@ -7083,9 +7083,21 @@
    "fr:12→0",
    "ie:12→0",
    "ca:2→0",
-   "au:2→0"
+   "au:2→0",
+   "gb:artistPage-retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1526177110,
+  "appleTitle": "Repeat - EP",
+  "appleArtist": "This Heat",
+  "appleYear": "1993",
+  "explicitness": "notExplicit",
+  "trackCount": 1,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/26/f4/2126f4b9-6819-ed4b-9767-8a038bb606ae/mzaf_4382652885484056375.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線裁定採用**：八個店面都命中 1526177110，但**那筆 Apple 條目只有同名首軌一軌**（20:20，與 MB 的 20:23 對得上），不是三軌全碟——卡片盤名《Repeat》的原盤是〈Repeat〉〈Metal〉〈Graphic/Varispeed〉三軌。**主線裁定：試聽採用、但這個 collectionId 不得作為封面或任何後設資料（軌數、曲目、年份）的來源。** 依據：取的那一軌確實出自本盤，與第 157 條「取試聽按曲名不按軌號」同一方向；且此舉可逆，改的是卡單一個欄位。封面走 CAA。",
+  "partialCollection": true
  },
  "This Heat|Made Available: John Peel Sessions": {
   "batch": "c93",
@@ -7211,9 +7223,20 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "gb:artistPage-retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1502468694,
+  "appleTitle": "Pure Phase",
+  "appleArtist": "Spiritualized",
+  "appleYear": "1995",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/4d/2e/914d2e4c-d58a-f8e2-b5df-cc173c1f2389/mzaf_4235837838798419543.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**掛名別名**——MB 的 artist-credit 是 Spiritualized Electric Mainline。逐軌比對 14/14 曲名、曲序、曲長全同。研究層是用第 166 條的藝人頁 lookup 撈全目錄才找到的。"
  },
  "Spiritualized|Let It Come Down": {
   "batch": "c93",
@@ -7241,9 +7264,20 @@
    "fr:0→0",
    "ie:0→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "gb:artistPage-retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 724319797,
+  "appleTitle": "Whitechocolatespaceegg",
+  "appleArtist": "Liz Phair",
+  "appleYear": "1998",
+  "explicitness": "explicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/eb/7e/efeb7ee1-5c1a-0b55-7f56-0592989cb97c/mzaf_8648869874089948267.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**大小寫**——Apple 寫成首字母大寫的 Whitechocolatespaceegg。逐軌比對 16/16 全同。⚠ 同藝人 2003 年那張《Liz Phair》的 Apple 條目比 MB 少一軌（缺〈H.W.C.〉）且標 notExplicit，是另一回事、另一張卡。"
  },
  "Liz Phair|Liz Phair": {
   "batch": "c93",
@@ -7336,9 +7370,21 @@
    "fr:4→0",
    "ie:4→0",
    "ca:1→0",
-   "au:1→0"
+   "au:1→0",
+   "gb:artistPage-retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 1440756253,
+  "appleTitle": "Chinese Democracy",
+  "appleArtist": "Guns N' Roses",
+  "appleYear": "2008",
+  "explicitness": "explicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/05/e0/0405e09d-822f-f757-3535-ba1d9d3f39e2/mzaf_1072987212322894132.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因有兩層——**掛名的撇號有彎直兩形**，加上 search 端點漏掉整張碟（第 166 條），要走藝人頁 lookup 才撈得到。逐軌比對 14/14 全同。 ⚠ **Apple 的 collection 物件寫 trackCount 15，但 lookup 只回得出 14 個 song 列**（逐軌與 MB 原盤的 14 軌完全對應，第 14 軌是〈Prostitute〉）。**行文寫軌數一律以 14 為準，不得引 Apple 的 15**（第 157 條同族：Apple 的欄位值與實際曲目表不一致時，以曲目表為準）。",
+  "appleTrackCountField": 15
  },
  "The Sonics|Boom": {
   "batch": "c93",
@@ -7350,9 +7396,20 @@
    "fr:12→0",
    "ie:12→0",
    "ca:12→0",
-   "au:12→0"
+   "au:12→0",
+   "gb:artistPage-retry→1"
   ],
-  "status": "unavailable"
+  "front": "gb",
+  "collectionId": 626202316,
+  "appleTitle": "The Sonics Boom",
+  "appleArtist": "The Sonics",
+  "appleYear": "1977",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/51/4d/e4514df7-24ff-a35b-a1a2-de3581c4cd57/mzaf_3494638873685514198.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-93 b 覆核、主線用 collectionId 直查複驗**：探測層判 unavailable 是誤判，成因是**Apple 把團名串進盤名**——條目作《The Sonics Boom》、卡片作《Boom》。12/12 同序，曲長差 1–8 秒。⚠ Apple 的年份欄是 1977（再版年），**不得寫成發行年**；原盤 1966（第 95 條）。"
  },
  "N.W.A|N.W.A. and the Posse": {
   "batch": "c96",
@@ -8866,6 +8923,502 @@
   "explicitness": "notExplicit",
   "trackCount": 15,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e7/82/ce/e782ceab-074e-785d-5a4a-fb7b00b98a32/mzaf_17544509833581745872.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Big Bill Broonzy|Big Bill Broonzy Sings Folk Songs": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 86302512,
+  "appleTitle": "Big Bill Broonzy Sings Folk Songs",
+  "appleArtist": "Big Bill Broonzy",
+  "appleYear": "1956",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9e/e6/95/9ee69585-0980-81d8-5c66-dcb4dfc981ce/mzaf_11407345808100450458.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 6,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Tampa Red|Don't Tampa With the Blues": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 1775248899,
+  "appleTitle": "Don't Tampa With The Blues (Remastered 1992)",
+  "appleArtist": "Tampa Red",
+  "appleYear": "1960",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/cb/90/34cb90a3-5b02-4913-3908-9e63ade859a0/mzaf_12343934875066395060.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Victoria Spivey|Woman Blues!": {
+  "batch": "c95",
+  "tried": [
+   "us:12→0",
+   "gb:12→1"
+  ],
+  "front": "gb",
+  "collectionId": 1446883888,
+  "appleTitle": "Woman Blues (Remastered)",
+  "appleArtist": "Victoria Spivey",
+  "appleYear": "2009",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/90/01/f09001d0-3367-500b-b23f-f1df3ae47dfa/mzaf_8031541522338826852.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 47,
+  "reissueTitle": true,
+  "status": "ready"
+ },
+ "Sippie Wallace|Women Be Wise": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 276947151,
+  "appleTitle": "Women Be Wise",
+  "appleArtist": "Sippie Wallace",
+  "appleYear": "1966",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/51/b5/11/51b511f7-cc8a-07bb-cca7-d1c1bce9f806/mzaf_9157726667710847930.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Ida Cox|Blues for Rampart Street": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1442454284,
+  "appleTitle": "Blues for Rampart Street (Remastered)",
+  "appleArtist": "Ida Cox & Coleman Hawkins Quintet",
+  "appleYear": "1961",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/89/84/3a/89843a41-510c-5e34-1c12-1c4b983e85e7/mzaf_7178889200898131188.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gus Cannon|Walk Right In": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1775246168,
+  "appleTitle": "Walk Right In",
+  "appleArtist": "Gus Cannon",
+  "appleYear": "1962",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/22/ff/2e22ff85-1f08-6938-7adb-c10c5a50fcba/mzaf_18140800021204570288.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Barbecue Bob|Chocolate to the Bone": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1568075685,
+  "appleTitle": "Chocolate To the Bone",
+  "appleArtist": "Barbecue Bob",
+  "appleYear": "1992",
+  "explicitness": "notExplicit",
+  "trackCount": 20,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/55/dd/5d55dd55-b212-9a7c-05f2-92234bb240b2/mzaf_3608799764109556378.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Washboard Sam|Rockin' My Blues Away": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:3→0",
+   "dk:3→0",
+   "se:3→0",
+   "de:0→0",
+   "nl:3→0",
+   "jp:3→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Lonnie Johnson|Blues & Ballads": {
+  "batch": "c95",
+  "tried": [
+   "us:2→0",
+   "gb:3→1"
+  ],
+  "front": "gb",
+  "collectionId": 1820855345,
+  "appleTitle": "Blues & Ballads",
+  "appleArtist": "Lonnie Johnson & Elmer Snowden",
+  "appleYear": "1960",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/82/3f/c5823f9e-0aa7-7607-a5db-e581da9ab5c5/mzaf_4544631005972811488.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Little Walter|Hate to See You Go": {
+  "batch": "c95",
+  "tried": [
+   "us:4→1"
+  ],
+  "front": "us",
+  "collectionId": 1434278279,
+  "appleTitle": "Hate to See You Go",
+  "appleArtist": "Little Walter",
+  "appleYear": "1969",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/27/39/5e273961-4618-7c8f-0cdf-1e924fdc31a4/mzaf_2544126539163061323.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "J.B. Lenoir|Alabama Blues": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 531342775,
+  "appleTitle": "Alabama Blues!",
+  "appleArtist": "J.B. Lenoir",
+  "appleYear": "1979",
+  "explicitness": "notExplicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/c4/cc/fcc4cca4-2ac3-1248-9731-b24a65024d99/mzaf_5220645262642980657.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 13,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Jimmy Rogers|Chicago Bound": {
+  "batch": "c95",
+  "tried": [
+   "us:4→2"
+  ],
+  "front": "us",
+  "collectionId": 1434917283,
+  "appleTitle": "Chicago Bound",
+  "appleArtist": "Jimmy Rogers",
+  "appleYear": "1976",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/26/2b/e8262bbb-493d-b7bc-963e-36b41c33b178/mzaf_2269200446183735078.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 6,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Elmore James|Whose Muddy Shoes": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1587981186,
+  "appleTitle": "Whose Muddy Shoes",
+  "appleArtist": "Elmore James & John Brim",
+  "appleYear": "1969",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/da/9c/8bda9cec-c5be-3987-6c11-b5bf0f39dcf7/mzaf_12157539373623647805.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Earl Hooker|Sweet Black Angel": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 1283483865,
+  "appleTitle": "Sweet Black Angel",
+  "appleArtist": "Earl Hooker",
+  "appleYear": "1970",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/7c/fc/a47cfce7-ffda-dac3-8b59-c46b20cdb98d/mzaf_12918409988588197042.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Magic Sam|Give Me Time": {
+  "batch": "c95",
+  "tried": [
+   "us:6→1"
+  ],
+  "front": "us",
+  "collectionId": 96614076,
+  "appleTitle": "Give Me Time",
+  "appleArtist": "Magic Sam",
+  "appleYear": "1991",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/be/24/a5be248a-fe16-5bac-4b12-958fb277203b/mzaf_11791707630386505342.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Willie Dixon|Catalyst": {
+  "batch": "c95",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1610473392,
+  "appleTitle": "Catalyst",
+  "appleArtist": "Willie Dixon",
+  "appleYear": "1973",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/db/e4/ee/dbe4eeb2-8ea2-6289-8c6e-8334c9242ced/mzaf_17483368001747607694.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Roscoe Mitchell|Old / Quartet": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:0→0",
+   "dk:0→0",
+   "se:0→0",
+   "de:0→0",
+   "nl:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Albert Ayler|My Name Is Albert Ayler": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 152606352,
+  "appleTitle": "My Name Is Albert Ayler",
+  "appleArtist": "Albert Ayler",
+  "appleYear": "1963",
+  "explicitness": "cleaned",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/16/59/4b1659be-71c1-80d8-dfc5-b528b078d0cc/mzaf_8746440703043869537.plus.aac.p.m4a",
+  "cleanedOnly": true,
+  "status": "ready"
+ },
+ "Albert Ayler|Spirits Rejoice": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1233967311,
+  "appleTitle": "Spirits Rejoice",
+  "appleArtist": "Albert Ayler",
+  "appleYear": "1965",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/17/35/2e/17352e7f-c252-e2d9-5406-997394e18d51/mzaf_1550976804053139522.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Benny Carter|Jazz Giant": {
+  "batch": "c95",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1657783137,
+  "appleTitle": "Jazz Giant",
+  "appleArtist": "Benny Carter",
+  "appleYear": "1958",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/09/b0/7c/09b07cdf-801f-6bc8-555b-2a3638b3faf7/mzaf_5052798065706009381.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Bix Beiderbecke|Singin' the Blues": {
+  "batch": "c95",
+  "tried": [
+   "us:8→0",
+   "gb:12→0",
+   "fr:12→0",
+   "dk:12→0",
+   "se:12→0",
+   "de:12→0",
+   "nl:12→0",
+   "jp:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Mary Lou Williams|Zodiac Suite": {
+  "batch": "c95",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 261233781,
+  "appleTitle": "Zodiac Suite",
+  "appleArtist": "Mary Lou Williams",
+  "appleYear": "1945",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/39/8e/67/398e672f-cb7c-ade2-3256-6e345c946aed/mzaf_15136637310768837348.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 30,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Mary Lou Williams|Zoning": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 261235738,
+  "appleTitle": "Zoning",
+  "appleArtist": "Mary Lou Williams",
+  "appleYear": "1974",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/5f/51/195f51a8-85ed-a21a-e9bc-23c846f7987e/mzaf_3423057147093097897.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Helen Merrill|Helen Merrill": {
+  "batch": "c95",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 1434912013,
+  "appleTitle": "Helen Merill",
+  "appleArtist": "Helen Merrill",
+  "appleYear": "1955",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/da/ee/34daeeca-1277-596a-45da-62e9301a7b9e/mzaf_6890361730013184830.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jimmy Rushing|The Jazz Odyssey of James Rushing Esq.": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:2→1"
+  ],
+  "front": "gb",
+  "collectionId": 306321094,
+  "appleTitle": "The Jazz Odyssey of James Rushing Esq.",
+  "appleArtist": "Jimmy Rushing",
+  "appleYear": "1957",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/67/9d/7d/679d7d68-9c3c-4ecd-ab88-9791e1408bbb/mzaf_2171828145536327062.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Roy Eldridge & Dizzy Gillespie|Roy & Diz": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:1→0",
+   "dk:1→0",
+   "se:1→0",
+   "de:0→0",
+   "nl:1→0",
+   "jp:1→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Bunk Johnson|Bunk Johnson and His Superior Jazz Band": {
+  "batch": "c95",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1532292817,
+  "appleTitle": "Bunk Johnson And His Superior Jazz Band",
+  "appleArtist": "Bunk Johnson",
+  "appleYear": "1957",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/aa/4a/c5/aa4ac53c-e55c-0cfe-1ab5-d4210c7d814a/mzaf_2555359432012876181.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 5,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Kid Ory|Kid Ory Plays W.C. Handy": {
+  "batch": "c95",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "fr:0→0",
+   "dk:0→0",
+   "se:0→0",
+   "de:0→0",
+   "nl:0→0",
+   "jp:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "James P. Johnson|Carolina Shout": {
+  "batch": "c95",
+  "tried": [
+   "us:5→1"
+  ],
+  "front": "us",
+  "collectionId": 203053431,
+  "appleTitle": "Carolina Shout",
+  "appleArtist": "James P. Johnson",
+  "appleYear": "1988",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/fe/f8/95fef813-c0ff-613e-688f-cb7d41f2a74d/mzaf_8479761461529517933.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Art Tatum|God Is in the House": {
+  "batch": "c95",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 1438004708,
+  "appleTitle": "God Is In the House (Live)",
+  "appleArtist": "Art Tatum",
+  "appleYear": "1973",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/b0/4e/31/b04e315b-bd38-9195-3025-397e62bc9f5b/mzaf_822208135989913457.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
  }
