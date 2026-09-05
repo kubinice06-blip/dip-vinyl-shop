@@ -298,3 +298,73 @@ Dock Boggs 的 release-group 與轄下 2 個 release **全 404**。
 有來源的是**單曲**〈Mr. Bojangles〉（Hot 100 第 9）。**行文要寫「第一次賣開」必須寫在單曲上。**
 
 **累計：策展層的時序／序數主張被攻破第六次。**
+
+---
+
+## （主線追加）第 7 條：**b 組推翻探測層八筆，兩張是錯配**
+
+**六張誤記 unavailable、全部救回**（都以 `lookup?id=<collectionId>&entity=song` 覆核過曲目列攤得開且每軌有 previewUrl）：
+
+| 卡 | 正解 | 探測落空的原因 |
+|---|---|---|
+| Brassens《Nº2》 | fr 1442662491（11 軌） | Apple 把編號寫成**尾綴**「(N°2)」，卡片寫在前面 |
+| Brassens《Nº10》 | fr 1442280345（11 軌） | 同上 |
+| Ferré《Verlaine et Rimbaud…》 | fr 1442698879（24 軌） | Apple 作《Léo Ferré **chante** Verlaine et Rimbaud》——動詞在前、掛名在中 |
+| Violeta Parra《Recordando a Chile》 | **cl** 1647764240（11 軌） | Apple 盤名無副標，且**只在 cl 店面** |
+| Stivell《E langonned》 | fr 1677196014（16 軌） | Apple 只作《E Langonned》，無括號內的法文對照 |
+| The Chieftains《The Chieftains》 | **ie** 1573288169（11 軌） | **Apple 盤名作《The Chieftains 1》** |
+
+**兩張 ready 是錯配**：
+
+- **Yupanqui《Basta ya》us 1340696107 → 改回 unavailable。** 那是 ℗2006 的 19 軌再編輯，
+  **前八軌全屬別張碟、原盤兩首缺席**——依 c-97 第 10 條，這是「換了內容」不是「缺一段」。
+- **Chavela《La Llorona》→ es 257207298。** 原記 us 951041210 是 ℗2014 的 17 軌再編輯（appleYear 1996）；
+  策展層提示的 mx 1674222184（12 軌 ℗2017）也不是本張。正解 11 軌、℗1993，曲序與時長全對。
+
+**c-98 試聽：26/44 → 33/44（a 組）→ 38/44（b 組）。**
+
+## 第 8 條：**《The Chieftains》這一張把三道防線同時打敗** —— 自我同名卡的最壞情形
+
+Apple 上這張叫**《The Chieftains 1》**（後來為了與續作對齊而回頭加的序號），卡片叫《The Chieftains》。於是：
+
+1. `titleOk` 的 **selfTitled 嚴格比對**——自我同名卡只接受完全相等，`The Chieftains 1` 不相等，擋掉。
+2. **第 168 條的卷號記號**——卡片側沒有卷號、Apple 側有「1」，判成不同碟，擋掉。
+3. **數字殘餘**（第 77 條那一族）——殘餘是「1」，含數字，擋掉。
+
+**三道都是對的規則，三道都擋掉了正解。** 這不是要放寬哪一道，
+而是：**「自我同名的首作」這個型態，探測層天生配不到，只能人工釘**——
+因為「藝人名＋序號」既是最常見的續作命名，也是這一張的真實盤名。
+往後排到系列首作（The Chieftains、Chicago、Led Zeppelin 這一類）**直接預期要人工**。
+
+**順帶記兩個店面**：`cl`（智利）與 `ie`（愛爾蘭）都存在且回得出結果，
+但**現行的 WLD／UKB 店面組都沒有它們**——本批兩張正解各只在其中一個店面上。
+（對照：`cu` 不存在，加了會回 HTTP 400，見 c-99 策展層抓到的那筆。）本批不改店面組。
+
+## 第 9 條：**b 組擋下策展層說法 19 處，其中 5 處與來源相反**
+
+- **José Afonso《Venham mais cinco》「收錄〈Grândola, Vila Morena〉」——假的。**
+  該曲 1971 年 10 月錄、收在《Cantigas do Maio》（1971-12，**池中已有那張**）。原盤十軌沒有它。
+- Inti-Illimani 2「米蘭錄的第一張流亡專輯」→ es 維基明寫是義大利錄製發行的**第二張**
+- Malicorne《Le Bestiaire》「第五張／四張自我同名之後第一張有獨立盤名」→ fr 維基記第**六**張，
+  自我同名只有三張，《Almanach》(1976) 早就有獨立盤名
+- Planxty「Tara 廠牌的創業盤」→ 廠牌首發是 Christy Moore《Prosperous》
+- Neşet Ertaş「1990 年代末回到土耳其定居前後」→ 他 1979–2003 住德國，**2003 才回國**
+
+另擋下九處無來源的最高級／評價、五處時序或事實需修正
+（Chavela 是 1991 年**墨西哥城** El Hábito 復出不是西班牙、Violeta Parra 那五首錄於 1964 **聖地牙哥**
+不是巴黎、Nic Jones 是五張不是六張、Selda 只有 1984-04-24 **一次**入獄不是三度）。
+
+**兩處時序主張查證通過**：Jara《Canto por travesura》「生前最後一張」（限定錄音室專輯）、
+Neşet Ertaş「Türkmen／Abdal 傳統最後一位大家」（tr 維基開頭原話）。
+
+**累計：策展層的時序／序數主張被攻破第七次，本批一批就佔了兩次。**
+
+## 第 10 條：兩處年份兩說，一律維持卡單值、禁止行文斷言（裁定 141）
+
+- **The Chieftains 卡單 1963**：策展層原本的理由（「Discogs 那筆 catno 是 CC2、疑為再壓」）
+  **已被推翻**——MB 自己的 1963 那筆 catno 也是 CC2，而 Claddagh 的 **CC1 是
+  Leo Rowsome《Rí Na bPíobairí》(1959)**。1964 那一側有 en 維基＋Discogs master 334099＋Apple ℗1964 三個來源。
+- **Ruhi Su 卡單 1972**：tr 維基的專屬條目與藝人唱片目錄**兩處都記 1973**
+  （1972 那兩格是《Yunus Emre》與《Karacaoğlan》）。
+
+兩張都維持卡單值，`yearVerified` 已寫明幾說，**行文一律不得正面斷言發行年**。
