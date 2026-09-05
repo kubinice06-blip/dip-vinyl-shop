@@ -1,0 +1,638 @@
+[
+ {
+  "key": "desc2:Joy Division|Substance",
+  "artist": "Joy Division",
+  "album": "Substance",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dcb06128 的欄位：title「Substance」、artist-credit「Joy Division」、first-release-date 1988-06、primary-type Album、secondary-types [Compilation]、無 disambiguation；轄下 22 個 release（GB 3、DE 3、XE 3、US 2、JP 2、XW 2、CA 1、FR 1、AU 1、ZA 1、PL 1、BR 1、未填國別 1），其中 20 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/dcb06128-02ea-3885-a097-5d382402d17c"
+   },
+   {
+    "f": "該 release-group 的 1988-06 GB 原盤（release e82593ba）欄位：title「Substance」、country GB、status Official、廠牌欄 Factory、編號 FACD 250、barcode 5016839502504、載體 CD、17 軌。逐軌曲名與曲長依序為〈Warsaw〉2:26、〈Leaders of Men〉2:35、〈Digital〉2:51、〈Autosuggestion〉6:09、〈Transmission〉3:36、〈She's Lost Control〉4:46、〈Incubation〉2:52、〈Dead Souls〉4:55、〈Atmosphere〉4:11、〈Love Will Tear Us Apart〉3:28、〈No Love Lost〉3:43、〈Failures〉3:45、〈Glass〉3:53、〈From Safety to Where〉2:27、〈Novelty〉4:00、〈Komakino〉3:53、〈These Days〉3:26。",
+    "src": "https://musicbrainz.org/release/e82593ba-55f7-4e03-a003-fff0643ff972"
+   },
+   {
+    "f": "英文維基〈Substance (Joy Division album)〉的 infobox 記：type compilation、released 11 July 1988、recorded December 1977 – March 1980、label Factory、producer Martin Hannett 與 Joy Division、length 37:52（LP）／62:29（CD）。",
+    "src": "https://en.wikipedia.org/wiki/Substance_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目導言記：本張是 Joy Division 的單曲合輯，1988 年 7 月 11 日由 Factory Records 發行，是他們後繼樂團 New Order 同名合輯《Substance》的對應作；在 UK Albums Chart 最高第 7 名、在 Billboard 200 最高第 146 名（條目寫這是該團在美國唯一一次進榜），並在紐西蘭最高第 15 名、1988 年 8 月在澳洲最高第 53 名。",
+    "src": "https://en.wikipedia.org/wiki/Substance_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Content 節記：本張收的是該團四首沒有收進專輯的單曲——〈Transmission〉〈Komakino〉〈Love Will Tear Us Apart〉〈Atmosphere〉——以及大部分 B 面；另外收了 EP《An Ideal for Living》與 Factory 兩張選輯《A Factory Sample》《Earcom 2: Contradiction》上的曲目。同節並記其中〈Glass〉與〈Dead Souls〉兩軌先前已收在 1981 年的合輯《Still》。",
+    "src": "https://en.wikipedia.org/wiki/Substance_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Content 節記：黑膠版因容量較小，略去單曲〈Komakino〉、也沒有完整收錄那幾張 EP 的曲目；後期由 London Records 壓製的 CD 收的是一個先前未發表的〈She's Lost Control〉混音版，吉他量更多、合成器旋律縮短且進得更晚、結尾多 15 秒且不淡出。",
+    "src": "https://en.wikipedia.org/wiki/Substance_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Cover 節記：封面盤名以綠色排字，用的是 Wim Crouwel 的 New Alphabet 字體，字母實際拼出來是「Subst1mce」而不是「Substance」；經手封面的 Brett Wickens（當時是 Saville Associates 的合夥人）說這是基於美感考量。",
+    "src": "https://en.wikipedia.org/wiki/Substance_(Joy_Division_album)"
+   },
+   {
+    "f": "Apple Music GB 店面 collectionId 996111401 的欄位：collectionName「Substance 1977-1980」、artistName Joy Division、artistId 722383、releaseDate 1988-07-11、trackCount 19、notExplicit；十九軌依序為 Warsaw／Leaders of Men／Digital／Autosuggestion／Transmission／She's Lost Control／Incubation／Dead Souls／Atmosphere／Love Will Tear Us Apart／No Love Lost／Failures／Glass／From Safety to Where／Novelty／Komakino／As You Said／These Days／Love Will Tear Us Apart (Pennine Version)，十九軌全部帶 previewUrl。",
+    "src": "https://music.apple.com/gb/album/996111401"
+   }
+  ],
+  "hookCandidates": [
+   "封面上那個字拼出來其實不是專輯的名字",
+   "四首沒進過任何一張專輯的單曲，這裡才第一次收在一起"
+  ],
+  "sound": "沒有統一的錄音期：十七軌的錄音橫跨 1977 年 12 月到 1980 年 3 月，製作掛 Martin Hannett 與樂團兩方（英文維基 infobox）。長度落差也大，最短〈Warsaw〉2:26、最長〈Autosuggestion〉6:09（MB 1988 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Transmission",
+   "Love Will Tear Us Apart",
+   "Atmosphere",
+   "Digital"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1988 三方一致：MB release-group first-release-date 1988-06、MB GB 原盤 1988-06、Apple GB releaseDate 1988-07-11。月份兩說（MB 記 6 月、維基與 Apple 記 7 月 11 日），但年份無爭議，正文不要寫月份。",
+  "notes": "**推翻探測層**：`previews.json` 這一筆原判 unavailable，tried 是 gb／us／jp／de／fr／ie／ca／au 各 `1→0`（八個店面都搜到一筆卻都沒配上）。本層直接 `lookup?id=996111401&entity=song&country=gb`，**回到 19 軌、19 軌全部有 previewUrl**。落空原因就是盤名字串：Apple 的條目名是「Substance 1977-1980」（副標被串進盤名），卡片盤名《Substance》比它短，屬第 152 條的形狀。**建議主線把這筆改成 ready、front gb、collectionId 996111401**（本層依禁令不動 previews.json）。\n**同名去重**：New Order 也有一張 1987 年的《Substance》，維基明記兩者是對應作。去重必須 artist+album 成對比，只比盤名會撞。\n**策展層有一處無來源、未採用**：curatorWhy 寫「從未收進兩張正規專輯的錄音」——維基 Content 節明記〈Glass〉與〈Dead Souls〉先前已收在 1981 年合輯《Still》，所以「這裡的錄音都沒別的地方收過」是錯的。facts 已把這條反例寫進去，**正文不得寫「全部都是沒收錄過的錄音」**。策展層另一句「實掃 seed_cards.json 全 14,424 列」是卡池內部作業、非可查證事實，未入 facts。\n**版本落差要小心**：黑膠 13 軌、MB GB CD 17 軌、Apple 19 軌（多了 As You Said 與 Love Will Tear Us Apart 的 Pennine Version），正文寫軌數要指明是哪個版本，或乾脆不寫軌數。\n**互斥可用面向**：本張獨有的是封面拼成「Subst1mce」的字體事故，以及黑膠／CD 收錄不同這件事。"
+ },
+ {
+  "key": "desc2:Joy Division|Still",
+  "artist": "Joy Division",
+  "album": "Still",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 532ffe12 的欄位：title「Still」、artist-credit「Joy Division」、first-release-date 1981-10-08、primary-type Album、secondary-types [Compilation]；轄下 19 個 release（GB 5、XE 4、JP 2、US 2、IT 1、CA 1、FR 1、DE 1、XW 1、未填國別 1），其中 18 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/532ffe12-0f7a-3340-bb89-b35a4f7c4cb5"
+   },
+   {
+    "f": "該 release-group 的 1981-10-08 GB 原盤（release cc248702）欄位：title「Still」、country GB、status Official、廠牌欄 Factory、編號 FACT 40、載體 12\" Vinyl 兩片。第一片 10 軌：〈Exercise One〉3:08、〈Ice Age〉2:27、〈The Sound of Music〉3:57、〈Glass〉3:59、〈The Only Mistake〉4:18、〈Walked in Line〉2:48、〈The Kill〉2:17、〈Something Must Break〉2:50、〈Dead Souls〉4:56、〈Sister Ray (live)〉7:36。第二片 11 軌：〈Ceremony〉3:50、〈Shadowplay〉3:54、〈Means to an End〉4:01、〈Passover〉5:05、〈New Dawn Fades〉4:01、〈Twenty Four Hours〉4:00、〈Transmission〉3:33、〈Disorder〉3:20、〈Isolation〉3:05、〈Decades〉5:22、〈Digital〉3:53。",
+    "src": "https://musicbrainz.org/release/cc248702-5d32-4db6-b6b8-df3aad362ea9"
+   },
+   {
+    "f": "英文維基〈Still (Joy Division album)〉的 infobox 記：type compilation、released 9 October 1981、recorded October 1978 – May 1980、label Factory – FACT40、producer Martin Hannett、length 83:25。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目導言與 Background 節記：本張由先前未使用或無法取得的錄音室素材，加上樂團在 Birmingham University 的最後一場演出的實況錄音組成，1981 年 10 月 9 日由 Factory Records 發行，發行時主唱 Ian Curtis 已過世。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Background 節記：本張收了該團唯一一次現場演出〈Ceremony〉的錄音，該曲後來成為 New Order 的單曲；錄音在第一段副歌前突然開始，Curtis 的人聲幾乎聽不見，但最後一段副歌異常清楚。另收〈Sister Ray〉，是 The Velvet Underground 的翻唱，1980 年 4 月 2 日錄於倫敦 Moonlight Club。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Track listing 的逐軌註記把每一軌的來歷寫明：〈Exercise One〉〈The Only Mistake〉〈Walked in Line〉〈The Kill〉錄於 1979 年 4 月 Stockport 的 Strawberry Studios、屬《Unknown Pleasures》的錄音期；〈Ice Age〉與〈Dead Souls〉錄於 1979 年 10–11 月 Rochdale 的 Cargo Studios、屬〈Licht und Blindheit〉單曲的錄音期；〈The Sound of Music〉錄於 1980 年 1 月 Oldham 的 Pennine Sound Studios、屬〈Love Will Tear Us Apart〉的錄音期；〈Glass〉錄於 1978 年 10 月 Cargo Studios、原收在《A Factory Sample》；C、D 兩面十一軌全部錄於 1980 年 5 月 2 日 Birmingham University 的 High Hall。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Release 節記：本張原訂 8 月發行、最後在 1981 年 10 月才出，發行時在英國最高第 5 名；CD 版 1990 年 3 月才發行，是第一個把〈Twenty Four Hours〉拿掉的版本。2007 年 9 月 17 日本張與《Closer》《Unknown Pleasures》一同重製再版，附一張 1980 年 2 月 20 日 High Wycombe Town Hall 的實況錄音。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   },
+   {
+    "f": "同條目 Reception 節引 Pitchfork 的 Joshua Klein 稱本張是「a ragged, enigmatic coda; an uneven odds-and-ends collection of lost tracks」，並引 BBC Music 稱它是「a partly frustrating compilation...aimed at quickly curtailing the bootleg industry that always follows the death of a young icon」。",
+    "src": "https://en.wikipedia.org/wiki/Still_(Joy_Division_album)"
+   }
+  ],
+  "hookCandidates": [
+   "後半整整兩面，是同一個晚上、同一場演出",
+   "唱片公司自己說得白：要趕在盜錄盤之前"
+  ],
+  "sound": "兩片黑膠是兩種東西：第一片十軌是 1978–1980 年散落各錄音室的錄音室素材，第二片十一軌全部是 1980 年 5 月 2 日 Birmingham University 同一場的實況（維基逐軌註記）。全長 83:25、製作掛 Martin Hannett（維基 infobox）。",
+  "keyTracks": [
+   "Ceremony",
+   "Sister Ray",
+   "The Sound of Music",
+   "Dead Souls"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1981 三方一致：MB release-group first-release-date 1981-10-08、MB GB 原盤 1981-10-08、英文維基 infobox 記 9 October 1981。日期差一天（MB 8 日、維基 9 日），年份無爭議，正文不要寫日。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 275023653，tried gb `4→1`），本層沒有推翻的必要。\n**「最後一場演出」要照抄措辭**：維基導言寫的是 Birmingham University 那場是樂團的最後一場演出（last concert）。這是有來源的直述，可以寫；但**不要換算成「Curtis 死前幾天」之類的算術**（第 4 條）。\n**Curtis 過世與本張的關係**：維基只寫「released after the death of the band's frontman Ian Curtis」，本層照抄。**不要寫成「遺作」「最後一張」**——同一團的《Substance》1988 年還在後面。\n**〈Twenty Four Hours〉**：黑膠與卡帶有、1990 年 CD 版被拿掉（維基 Release 節）。MB GB 原盤那筆是黑膠、21 軌，有這一軌。寫軌數要指明版本。\n**〈Glass〉〈Dead Souls〉與《Substance》重疊**：這兩軌 1988 年的《Substance》又收了一次（見該卡 facts）。本批兩張同時在池裡，正文選曲要避開撞車。\n**互斥可用面向**：本張獨有的是〈Ceremony〉唯一一次的現場錄音，以及「錄音室半張＋最後一場實況半張」的雙盤結構。"
+ },
+ {
+  "key": "desc2:Devo|Duty Now for the Future",
+  "artist": "Devo",
+  "album": "Duty Now for the Future",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ae44cba8 的欄位：title「Duty Now for the Future」、artist-credit「DEVO」、first-release-date 1979-06-07、primary-type Album、secondary-types 空；轄下 10 個 release（US 7、JP 2、XW 1），10 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/ae44cba8-7d73-3814-9dd4-fc30e1b6fb9c"
+   },
+   {
+    "f": "該 release-group 的 1979-06-07 US 原盤（release 624d7026）欄位：country US、status Official、廠牌欄 Warner Bros. Records、編號 BSK 3337、barcode 3386252862、載體 12\" Vinyl、13 軌。逐軌曲名與曲長依序為〈Devo Corporate Anthem〉1:16、〈Clockout〉2:48、〈Timing X〉1:14、〈Wiggly World〉2:45、〈Blockhead〉3:01、〈Strange Pursuit〉2:45、〈S.I.B. (Swelling Itching Brain)〉4:28、〈Triumph of the Will〉2:19、〈The Day My Baby Gave Me a Surprize〉2:43、〈Pink Pussycat〉3:13、〈Secret Agent Man〉3:38、〈Smart Patrol / Mr. DNA〉6:06、〈Red Eye〉2:50。",
+    "src": "https://musicbrainz.org/release/624d7026-12bc-46fe-ab0a-b7e579038685"
+   },
+   {
+    "f": "英文維基〈Duty Now for the Future〉的 infobox 與導言記：Devo 的第二張錄音室專輯，1979 年 6 月 1 日由 Warner Bros. Records 發行，製作人 Ken Scott，1978 年 9 月至 1979 年初錄於好萊塢的 Chateau Recorders，全長 38:56，單曲是〈The Day My Baby Gave Me a Surprize〉與〈Secret Agent Man〉。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   },
+   {
+    "f": "同條目 Production and recording 節記：Ken Scott 和製作前作的 Brian Eno 一樣都做過 David Bowie，最著名的是《The Rise and Fall of Ziggy Stardust and the Spiders from Mars》(1972) 與《Aladdin Sane》(1973)；Scott 自己引述「我知道他們選我是因為我做的那些 Bowie 唱片」「Devo 一直想學東西，所以他們每個製作人只合作一次」。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   },
+   {
+    "f": "同節記：Gerald Casale 在 1979 年接受《BAM》雜誌訪問時說「吉他只能做吉他做的事，它就像合成器的一小塊。這張我們對吉他做的事多得多，有時候你根本不知道那是吉他。」錄〈Secret Agent Man〉的獨奏時，據 Scott 說他們「把麥克風前級推爆，再把訊號送進貼在麥克風上的耳機」。〈Secret Agent Man〉是 Johnny Rivers 的翻唱，由 Bob Mothersbaugh 罕見地擔任主唱。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   },
+   {
+    "f": "同節記多位團員事後對本張聲音的不滿：Gerald Casale 說「Scott 要的是處理過的東西，我們要的是有攻擊性的東西」；Bob Mothersbaugh 覺得 Scott 不懂樂團的「想法與視野」；Mark Mothersbaugh 回憶當時認為 Scott 一次錄一件樂器、對著 click track 錄以強調樂團緊繃機械的特質，是走錯了路；樂團被排除在最終混音之外，Casale 說他們「幾乎不知道成品聽起來多平淡」。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   },
+   {
+    "f": "同條目 Artwork and packaging 節記：封面由 Janet Perr 依樂團概念設計；當時 UPC 條碼還是新東西，樂團自製了一個諷刺用的假條碼放上封面。封面附一張可撕下的明信片，Warner Bros. 原以成本太高否決，Devo 要求用樂團自己的錢支付。封面上的「Science Boy」標誌是 George L. Kaufman 1956 年為《Cleveland Press》的「Science Emblem」徵件設計的，1976 年由 Casale 與 Mark Mothersbaugh 在 Akron 的一份小冊子上重新發現，並配上 Casale 想出來的那句「Duty Now for the Future」。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   },
+   {
+    "f": "同條目 Reception 節記：本張在《Billboard》榜上停留 10 週、最高第 73 名，在加拿大最高第 87 名。《Rolling Stone》的 Dave Marsh 批評本張，說「inspired amateurism works only when the players aspire to something better」；《The Village Voice》的 Robert Christgau 把第一面貶為「dire」與「arena-rock」，但認為〈The Day My Baby Gave Me a Surprize〉與〈Secret Agent Man〉「as bright as anything on the debut」。",
+    "src": "https://en.wikipedia.org/wiki/Duty_Now_for_the_Future"
+   }
+  ],
+  "hookCandidates": [
+   "封面那個條碼是他們自己編的假貨",
+   "團員後來一致嫌它太乾淨——他們要的是有攻擊性的東西"
+  ],
+  "sound": "合成器被推到比前作更前面，吉他常被處理到聽不出是吉他——Casale 1979 年對《BAM》說「有時候你根本不知道那是吉他」；製作人 Ken Scott 一次錄一件樂器、對著 click track 錄，用來強調樂團緊繃機械的質地（英文維基 Production and recording 節）。十三軌裡最短的〈Timing X〉只有 1:14、最長的〈Smart Patrol / Mr. DNA〉6:06（MB 1979 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Blockhead",
+   "S.I.B. (Swelling Itching Brain)",
+   "The Day My Baby Gave Me a Surprize",
+   "Secret Agent Man"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1979 三方一致：MB release-group first-release-date 1979-06-07、MB US 原盤 1979-06-07、英文維基 infobox 記 June 1, 1979。日期兩說（MB 6/7、維基 6/1，維基那條引 Rhino《Pioneers Who Got Scalped》內頁），年份無爭議，正文不要寫日。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（us、collectionId 335252841，tried gb `1→0`／us `1→1`），命中店面是 us 不是 gb，下游若要顯示店面要照 us。\n**「第二張」可以寫**：英文維基導言明寫 second studio album，是來源直述、不是本層推序數。\n**製作人不滿那組料很硬但要平衡**：facts 給了三位團員各自的說法與 Ken Scott 自己的說法，正文若寫這條，不要只寫團員罵、也不要寫成「這張是失敗作」——維基同節記 Scott 說 Devo「在錄音室裡相當專業」、他「享受每一分鐘」。\n**Devo 的 MB artist-credit 是全大寫「DEVO」**，卡片與 Apple 用「Devo」，比對時要放寬大小寫。\n**互斥可用面向**：本張獨有的是假 UPC 條碼與可撕下的明信片、Science Boy 標誌的來歷、以及「每個製作人只合作一次」這個作法。本批另兩張 Devo（《New Traditionalists》《Oh, No! It's Devo》）不要重複用製作人這條。"
+ },
+ {
+  "key": "desc2:Devo|New Traditionalists",
+  "artist": "Devo",
+  "album": "New Traditionalists",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 04103c21 的欄位：title「New Traditionalists」、artist-credit「DEVO」、first-release-date 1981-08、primary-type Album、secondary-types 空；轄下 8 個 release（US 5、JP 2、XW 1），8 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/04103c21-91d1-3172-95e2-b80544e238b3"
+   },
+   {
+    "f": "該 release-group 的 1981-08 US 原盤（release 5dccc4a8）欄位：country US、status Official、廠牌欄 Warner Bros. Records、編號 BSK 3595 與 EP-3595、barcode 075992359511。載體是一張 12\" Vinyl（10 軌）加一張 7\" Vinyl（2 軌，兩面同為〈Working in the Coal Mine〉2:48）。12 吋逐軌曲名與曲長為〈Through Being Cool〉3:11、〈Jerkin' Back 'n' Forth〉3:01、〈Pity You〉2:43、〈Soft Things〉3:24、〈Going Under〉3:26、〈Race of Doom〉3:41、〈Love Without Anger〉2:34、〈The Super Thing〉4:19、〈Beautiful World〉3:33、〈Enough Said〉3:27。",
+    "src": "https://musicbrainz.org/release/5dccc4a8-524a-4be4-a6f6-72dc7a7ec101"
+   },
+   {
+    "f": "英文維基〈New Traditionalists〉的 infobox 與導言記：Devo 的第四張錄音室專輯，1981 年 9 月 16 日由 Warner Bros. Records 發行，樂團自製（producer 欄就是 Devo），1980 年 12 月至 1981 年 4 月錄於紐約 Power Station 與洛杉磯 Record Plant，全長 33:28；單曲三首：〈Love Without Anger〉(1981-08-26)、〈Through Being Cool〉(1981-09-18)、〈Beautiful World〉(1981-10-14)。",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   },
+   {
+    "f": "同條目 Background 節記：前作《Freedom of Choice》與〈Whip It〉大賣後，唱片公司 Warner Bros. 開始施壓要樂團「再寫一首〈Whip It〉」，並決定不再從前作抽單曲、要 Devo 專心把下一張做完以延續氣勢；Devo 反而選擇做一張更暗、更不好入口、把「de-evolution」概念推得更遠的專輯。Gerald Casale 說「我們不會一直畫同一幅畫，那不是我們的天性。」",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   },
+   {
+    "f": "同條目 Production 節記：本張是樂團第一張完全自製的專輯；相較先前的唱片，合成器比吉他更吃重，數軌用上鼓機，器材包含 Roland 的音序器、SH-101 合成器與 CR-78 鼓機。錄音用的是 3M 當時新出的 2 吋帶，錄人聲時帶子邊緣開始崩解，樂團要求 Warner Bros. 讓他們整張重錄被拒，只好把已完成的部分轉到數位盤帶，在洛杉磯 Record Plant 以數位錄音收尾。",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   },
+   {
+    "f": "同條目 Title and artwork 節記：盤名來自 Devo 帶《Freedom of Choice》巡演到日本時，在一家壽司店遇到兩位別著寫有「New Traditionalists」徽章的商人；那句話其實是日本一個右翼政治團體的名號，樂團當笑話把徽章買下來，寫這張時想起這個名字。Casale 說「我們成了 New Traditionalists，但把它整個翻過來——我們要提供你新的傳統，好讓你忘掉舊的。」",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   },
+   {
+    "f": "同節記：封面與封底由 Moshe Brakha 拍攝、Richard Seireeni 依樂團概念做美術；團員戴的橡膠飛機頭（pompadour）由 Brent Scrivner 製作，原型是 John F. Kennedy 的髮型，卻經常被誤認成 Ronald Reagan 的。首批 LP 附一張 33 吋 × 22 吋的海報，由 Church of the SubGenius 設計。",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   },
+   {
+    "f": "同條目〈Working in the Coal Mine〉一節記：本張原始包裝附贈一張 7 吋單曲，收樂團翻唱 Allen Toussaint 的〈Working in the Coal Mine〉。同條目 Composition 節記〈Enough Said〉是 Devo 最早的明確政治發言之一，歌詞由 Mark 與 Bob 的父親 Robert Mothersbaugh Sr. 所寫，他也是樂團 General Boy 這個角色的扮演者。",
+    "src": "https://en.wikipedia.org/wiki/New_Traditionalists"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是壽司店裡兩枚徽章上的字，原主是日本右翼團體",
+   "母帶錄到一半自己爛掉，公司不准重來"
+  ],
+  "sound": "極簡的 synth-pop：以合成器 riff 與舞曲節奏為主、電子打擊比重提高，合成器比吉他吃重，數軌用鼓機，器材包含 Roland 音序器、SH-101 與 CR-78（英文維基 Composition／Production 節）。歌詞比前幾張直白，常放掉挖苦與反諷、改成直接的怒氣（同節引 AllMusic）。十軌都在 2:34 到 4:19 之間（MB 1981 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Through Being Cool",
+   "Beautiful World",
+   "Jerkin' Back 'n' Forth",
+   "Enough Said"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1981 兩方一致：MB release-group first-release-date 1981-08、MB US 原盤 1981-08；英文維基 infobox 記 September 16, 1981（引 Rhino《Pioneers Who Got Scalped》內頁）。MB 記 8 月、維基記 9 月 16 日，月份兩說，年份無爭議，正文不要寫月份。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（us、collectionId 335252849，tried gb `2→0`／us `2→1`），命中店面是 us。\n**「第四張」可以寫**：英文維基導言明寫 fourth studio album。\n**7 吋贈品要講清楚**：MB 的 US 原盤把那張 7 吋算成第二片載體，所以 MB 顯示 12 軌；本體專輯是 10 軌。正文寫軌數要指明。\n**曲名的撇號**：MB 用彎引號〈Jerkin' Back 'n' Forth〉，本層 facts 已統一成直式撇號，下游做字串比對要放寬。\n**pompadour 那條不要寫成 Reagan**：維基寫的是原型為甘迺迪、卻常被誤認成雷根。兩者不可互換。\n**互斥可用面向**：本張獨有的是盤名的日本徽章來歷、母帶崩解轉數位這件事、以及贈品 7 吋。本批另兩張 Devo 不要重複用「Warner 施壓」這條——它其實是《Freedom of Choice》的後續，不是本張獨有。"
+ },
+ {
+  "key": "desc2:Devo|Oh, No! It's Devo",
+  "artist": "Devo",
+  "album": "Oh, No! It's Devo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d81cf3ca 的欄位：title「Oh, No! It's DEVO」、artist-credit「DEVO」、first-release-date 1982-11、primary-type Album、secondary-types 空；轄下 5 個 release（US 2、JP 2、XE 1），5 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/d81cf3ca-b402-32c1-9add-134a6f5a5e94"
+   },
+   {
+    "f": "該 release-group 的 1982-11 US 原盤（release ef9fd6be）欄位：country US、status Official、廠牌欄 Warner Bros. Records、編號 23741-1、barcode 075992374118、載體 12\" Vinyl、11 軌。逐軌曲名與曲長依序為〈Time Out for Fun〉2:48、〈Peek-A-Boo!〉3:01、〈Out of Sync〉3:34、〈Explosions〉3:01、〈That's Good〉3:23、〈Patterns〉2:57、〈Big Mess〉2:42、〈Speed Racer〉2:38、〈What I Must Do〉2:34、〈I Desire〉3:13、〈Deep Sleep〉3:24。",
+    "src": "https://musicbrainz.org/release/ef9fd6be-c037-4bf2-a541-df46986c295c"
+   },
+   {
+    "f": "英文維基〈Oh, No! It's Devo〉的 infobox 與導言記：Devo 的第五張錄音室專輯，1982 年 10 月 27 日由 Warner Bros. Records 發行，製作人 Roy Thomas Baker，1982 年 5 月至 9 月錄於好萊塢的 Cherokee Studios，全長 32:14；單曲兩首：〈Peek-a-Boo!〉(1982-09-22) 與〈That's Good〉(1982-11-24)。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   },
+   {
+    "f": "同條目 Background 節記：Mark Mothersbaugh 在 1982 年的訪問裡說盤名叫《Oh, No! It's Devo》，是因為「外面很多人聽到我們又出現了、或又要出一張唱片時，反應就是這句」。Gerald Casale 後來說本張源自樂評把樂團一下說成「法西斯」、一下說成「小丑」，樂團於是決定做一張回答「法西斯小丑做的唱片會是什麼聲音」的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   },
+   {
+    "f": "同條目 Composition 節記：〈I Desire〉的歌詞直接取自 John Hinckley Jr. 寫的一首詩——他為了打動女演員 Jodie Foster 而企圖刺殺美國總統 Ronald Reagan；樂團最早是在《National Enquirer》上讀到這首詩。Casale 說 Hinckley 對這首歌「相當得意」，卻「完全沒懂我們把它反過來了，我加的第三段清楚地把鏡子轉向那個瘋子」。Foster 同意樂團使用歌詞，FBI 則對他們發出數次警告。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   },
+   {
+    "f": "同節記：〈Peek-a-Boo!〉建立在 Mark Mothersbaugh 一段「嚇人的」音序器樂句上，歌詞靈感來自 Casale 大學時的哲學教授教的榮格人性二元論；〈Big Mess〉的靈感來自一個自稱「Cowboy Kim」的人寄給某個電視遊戲節目主持人的信。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   },
+   {
+    "f": "同條目 Release and promotion 節記：LP 封套背面做了模切立架，可以像相框一樣立起來。北美巡演中有 20 分鐘樂團在背投影像前演出，影像與音序器樂句和 click track 同步，銀幕高 25 呎、寬 17 呎；巡演器材花了四萬美元，動畫由 Digital Productions 的 John Whitney, Jr. 在 Cray 電腦上做。本張與其影片、巡演期間樂團戴的白色「spud ring」領圈，最初是為了拍〈Time Out for Fun〉的綠幕段落時比較好把頭摳出來而設計的，設計者是 Brent Scrivner。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   },
+   {
+    "f": "同節記：〈That's Good〉的影片在 MTV 遇上審查——卡通薯條插進甜甜圈的洞、緊接著切到一名扭動微笑的裸女（頸部以上入鏡）被認為太露骨。Casale 事後回憶與 MTV 共同創辦人 Les Garland 通了一通火爆的電話，對方說「我們談的是你們，不是他們」。Casale 最後妥協剪了片，事後後悔，因為「那首歌在榜上是往下走，不是往上」。",
+    "src": "https://en.wikipedia.org/wiki/Oh,_No!_It%27s_Devo"
+   }
+  ],
+  "hookCandidates": [
+   "樂評說他們是法西斯，也說他們是小丑，那就做一張法西斯小丑的唱片",
+   "有一首歌的詞，抄自刺殺雷根那個人寫的詩"
+  ],
+  "sound": "比前作《New Traditionalists》更依賴程式化的合成器與鼓機；Reverb.com 的 DJ Pangburn 指出這些元素「加上吉他用得極少，給了這張唱片一種節拍器般、機器人化的質地」（英文維基 Background 節）。製作人是 Roy Thomas Baker（同條目 infobox）。十一軌全部在 2:34 到 3:34 之間，沒有一軌超過四分鐘（MB 1982 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Peek-a-Boo!",
+   "That's Good",
+   "I Desire",
+   "Time Out for Fun"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1982 兩方一致：MB release-group first-release-date 1982-11、MB US 原盤 1982-11；英文維基記 October 27, 1982（引 Rhino《Pioneers Who Got Scalped》內頁）。MB 記 11 月、維基記 10 月 27 日，月份兩說，年份無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（us、collectionId 335252990，tried gb `12→0`／us `2→1`），命中店面是 us。gb 搜到 12 筆卻全部沒配上，形狀上是盤名撇號（Apple 常用彎引號 It's）造成的比對失敗，但既然 us 已 ready，本層不建議主線改動。\n**盤名的撇號與大小寫**：卡片《Oh, No! It's Devo》用直式撇號、Devo 首字大寫；MB 是「Oh, No! It's DEVO」（彎引號＋全大寫）。維基條目名與卡片一致。比對要同時放寬撇號與大小寫。\n**〈I Desire〉那條要小心分寸**：facts 已把「歌詞取自 Hinckley 的詩」「Foster 同意」「FBI 警告」「Casale 說第三段是他加的、把鏡子轉向那個瘋子」四項分開寫。**不要把它寫成 Devo 同情刺客**——維基同段明記 Casale 說 Hinckley 完全沒看懂。\n**「第五張」可以寫**：英文維基導言明寫 fifth studio album。\n**互斥可用面向**：本張獨有的是盤名的自嘲來歷、〈I Desire〉的爭議、MTV 那場審查，以及可立起來的模切封套。本批另兩張 Devo 已用掉「假條碼／明信片」（Duty Now）與「壽司店徽章／母帶崩解」（New Traditionalists）。"
+ },
+ {
+  "key": "desc2:Pere Ubu|New Picnic Time",
+  "artist": "Pere Ubu",
+  "album": "New Picnic Time",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2653f157 的欄位：title「New Picnic Time」、artist-credit「Pere Ubu」、first-release-date 1979-09-21、primary-type Album、secondary-types 空；轄下 5 個 release（US 2、GB 1、IT 1、XW 1），5 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/2653f157-79b8-3c5a-98a6-540c4b1680c5"
+   },
+   {
+    "f": "該 release-group 的 1979-09-21 GB 原盤（release 8aecadb5）欄位：country GB、status Official、廠牌欄 Chrysalis、編號 CHR 1248、載體 12\" Vinyl、10 軌。逐軌曲名與曲長依序為〈Have Shoes Will Walk (The Fabulous Sequel)〉3:16、〈49 Guitars and One Girl〉2:51、〈A Small Dark Cloud〉5:49、〈Small Was Fast〉3:39、〈All the Dogs Are Barking〉3:03、〈One Less Worry〉3:49、〈Make Hay〉4:03、〈Goodbye〉5:18、〈The Voice of the Sand〉1:28、〈Jehovah's Kingdom Comes〉3:17。",
+    "src": "https://musicbrainz.org/release/8aecadb5-865f-4e5e-ab8b-87215ae4dc73"
+   },
+   {
+    "f": "英文維基〈New Picnic Time〉的 infobox 與導言記：Pere Ubu 的第三張專輯，1979 年 9 月由 Chrysalis Records 發行，1979 年 5 月 21 日至 6 月 28 日錄於俄亥俄州 Painesville 的 Suma Recording，製作掛 Pere Ubu 與 Ken Hamann，全長 35:54；1989 年由 Rough Trade、1999 年由 Thirsty Ear、2008 年由 Cooking Vinyl、2017 年由 Fire Records 陸續再版。",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   },
+   {
+    "f": "同條目 Background and recording 節記：本張的工作標題原本是《Goodbye》，錄音過程緊繃而多爭執。David Thomas 自述樂團「一心想把歌的邊界撐開」，並說「我大概推得太用力、也不夠明智。我很執拗。〈All the Dogs Are Barking〉是臨界點。那是一首照我們以前作法寫的流行歌，一首有好記 hook 的搖滾歌。我叫 Ken（Hamann，錄音師）把疊錄以外的全部洗掉。」",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   },
+   {
+    "f": "同節記一個具體的錄音作法：錄〈The Fabulous Sequel〉時樂團想錄沙鈴，但錄音室只有一支、不成對，於是把麥克風架到錄音室外的碎石車道上，全體團員繞圈子走路來製造沙鈴的聲音。",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   },
+   {
+    "f": "同節記：另一個爭執點是 David Thomas 加入耶和華見證人一事。合成器手 Allen Ravenstine 說這件事連同對樂團方向的分歧，導致吉他手 Tom Hermann 在本張完成後不久離團——「他（Thomas）想把他那套耶和華見證人的訊息放進去，然後他（Hermann）就非常不高興。他就這樣結束了。」這個信仰也反映在專輯最後一首〈Jehovah's Kingdom Comes!〉的歌詞上。〈The Voice of the Sand〉的詞則取自 Vachel Lindsay 的詩。",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   },
+   {
+    "f": "同節記：樂團當時的廠牌 Chrysalis 對成品不滿意，拒絕在美國發行本張。在美國跑完一趟宣傳巡演、Tom Hermann 離團之後，樂團短暫停擺，1980 年才與 Mayo Thompson 一起重組。",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   },
+   {
+    "f": "同條目 Critical reception 節記：本張因為聲音比先前任何一張都更實驗、且原本沒有在美國發行、只巡演過一次，被稱為樂團目錄中的「黑羊」。Dave McCullough 1979 年 9 月 15 日在《Sounds》寫本張是「a drunken, wanton, wilful sounding album with a spine as elastic and as totally absorbing as Beefheart...exhilarating, funny, somehow very vital music」。",
+    "src": "https://en.wikipedia.org/wiki/New_Picnic_Time"
+   }
+  ],
+  "hookCandidates": [
+   "唯一那支沙鈴不成對，於是全團到碎石車道上繞圈子走",
+   "唱片公司拒絕在自己國家發行這張"
+  ],
+  "sound": "工作方式本身就是聲音的來源：主唱 David Thomas 把〈All the Dogs Are Barking〉那首「有好記 hook 的搖滾歌」除疊錄外整軌洗掉；沙鈴不成對就把麥克風架到室外碎石車道上、全團繞圈走路錄腳步（英文維基 Background and recording 節）。曲長落差很大，〈The Voice of the Sand〉只有 1:28，〈A Small Dark Cloud〉5:49（MB 1979 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Have Shoes Will Walk (The Fabulous Sequel)",
+   "All the Dogs Are Barking",
+   "The Voice of the Sand",
+   "Jehovah's Kingdom Comes"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1979 兩方一致：MB release-group first-release-date 1979-09-21、MB GB 原盤 1979-09-21；英文維基 infobox 記 September 19, 1979。日期兩說（MB 9/21、維基 9/19），同月同年，正文不要寫日。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1667351979，tried gb `1→1`）。\n**曲名末尾的驚嘆號兩說**：MB 曲目寫〈Jehovah's Kingdom Comes〉（無驚嘆號），維基內文寫〈Jehovah's Kingdom Comes!〉（有）。keyTracks 取 MB 的寫法。\n**「第三張」可以寫**：英文維基導言明寫 third album（並引 1979、1986 兩則報紙）。\n**Thomas 的信仰要照抄措辭**：維基寫的是「Thomas's involvement in Jehovah's Witnesses」與 Ravenstine 的轉述。**不要寫成 Thomas 因宗教把吉他手趕走**——來源說的是信仰加上方向分歧「contributed to」Hermann 離團。\n**廠牌兩說不存在，但發行地要講清楚**：Chrysalis 拒絕在美國發行，MB 卻列了 2 個 US release——那是 1989 年之後的再版（維基列了 Rough Trade／Thirsty Ear／Cooking Vinyl／Fire 四次再版）。正文若寫「美國沒發行」，要限定在 1979 年。\n**互斥可用面向**：本張獨有的是碎石車道錄沙鈴、Thomas 把整軌洗掉、以及 Chrysalis 拒發美國盤。本批另兩張 Pere Ubu 不要重複用「Ubu 很實驗」這種泛論。"
+ },
+ {
+  "key": "desc2:Pere Ubu|The Art of Walking",
+  "artist": "Pere Ubu",
+  "album": "The Art of Walking",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d39806ba 的欄位：title「The Art of Walking」、artist-credit「Pere Ubu」、first-release-date 1980-07-04、primary-type Album、secondary-types 空；轄下 6 個 release（GB 2、US 2、XE 1、XW 1），6 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/d39806ba-f7ce-3e03-bc54-361d86317dd8"
+   },
+   {
+    "f": "該 release-group 的 1980-07-04 GB 原盤（release f17bade8）欄位：country GB、status Official、廠牌欄 Rough Trade、編號 ROUGH 14、載體 12\" Vinyl、11 軌。逐軌曲名與曲長依序為〈Go〉3:36、〈Rhapsody in Pink〉3:36、〈Arabia〉4:01、〈Tribute to Miles〉3:00、〈Misery Goats〉2:41、〈Loop〉3:16、〈Rounder〉3:25、〈Birdies〉2:29、〈Lost in Art〉5:14、〈Horses〉2:37、〈Crush This Horn〉3:02。",
+    "src": "https://musicbrainz.org/release/f17bade8-a29a-35d2-b7dc-698b6c808686"
+   },
+   {
+    "f": "英文維基〈The Art of Walking〉的 infobox 與導言記：Pere Ubu 的第四張錄音室專輯，1980 年 6 月由 Rough Trade Records 發行，1980 年 1 月錄於俄亥俄州 Painesville 的 Suma Recording，製作人 Paul Hamann；吉他手 Tom Hermann 離團後，樂團找來 Red Krayola 的 Mayo Thompson 重組。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   },
+   {
+    "f": "同條目 Background 節記：Hermann 離團後樂團一度解散，幾個月後 David Thomas 與 Allen Ravenstine 去看 Talking Heads 的演出，Thomas 對 Ravenstine 說「我們比這些傢伙好」，Ravenstine 回答「Mayo Thompson」。1979 年底樂團找 Thompson 來當吉他手——他們 1978 年曾一起巡演英國並合作過。Thompson 的加入把樂團更推向解構與抽象，離開 Hermann 的吉他所支撐的「rock and roll」。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   },
+   {
+    "f": "同節引 David Thomas 說本張的概念是在浴缸裡撞見的：「我記得坐在浴缸裡。水排掉的時候，我看見它形成的漏斗形狀是由空掉的中心界定的。換句話說，是由不在那裡的東西界定的。我想做一張由沒有被說出來的東西界定的專輯。」同節並記盤名是在一位歌迷批評樂團寫太多關於開車的歌之後才定下來的。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   },
+   {
+    "f": "同條目 Recording and music 節記：本張是第一張由 Paul Hamann 錄音的 Pere Ubu 錄音室專輯；先前的專輯由 Ken Hamann 製作與錄音，他 1979 年退休、由兒子接手。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   },
+   {
+    "f": "同節記〈Lost in Art〉的成形經過：Scott Krauss 與 Tony Maimone 在鍵盤上即興 jam 並錄進帶機，David Thomas 的反應是「我要拿這個怎麼辦！？」，他叫 Paul Hamann 把鼓的麥克風打開，一次錄完鼓與人聲。Thomas 在控制室畫了一個帶惡魔角的笑臉，配上標語「Self-expression is evil」。Mayo Thompson 事後說「樂團在彈很滑順的東西，他抓起鼓棒打小鼓，一邊大喊『really grooving!』，很好笑」。同節並記〈Horses〉原本是 Thompson 寫的歌，收在他 1970 年的個人專輯《Corky's Debt to His Father》。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   },
+   {
+    "f": "同條目 Critical reception 節記：本張 1980 年 6 月發行，據稱賣得比 Pere Ubu 此前任何一張都好，但仍稱不上大成功。Chris Cutler 1980 年在《Melody Maker》寫「Ubu 正離搖滾樂的成規、也離他們自己的過去更遠……這是一張獨一無二地美的唱片」。Legacy 節記〈Birdies〉的一段演出收進 1982 年的電影《Urgh! A Music War》。",
+    "src": "https://en.wikipedia.org/wiki/The_Art_of_Walking"
+   }
+  ],
+  "hookCandidates": [
+   "浴缸的水排掉時，他看見那個漏斗是被空掉的中心界定的",
+   "有歌迷嫌他們寫太多開車的歌，於是這張叫走路"
+  ],
+  "sound": "Thomas 說他要做一張「由沒有被說出來的東西界定」的專輯；新吉他手 Mayo Thompson 的加入把樂團更推向解構與抽象，離開前任吉他手所支撐的搖滾樂路數（英文維基 Background 節）。〈Lost in Art〉的鼓與人聲是在別人 jam 好的鍵盤上一次錄完的（同條目 Recording and music 節）。十一軌只有〈Lost in Art〉超過五分鐘（MB 1980 GB 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Birdies",
+   "Arabia",
+   "Lost in Art",
+   "Horses"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1980 兩方一致：MB release-group first-release-date 1980-07-04、MB GB 原盤 1980-07-04；英文維基 infobox 與內文記 June 1980。MB 記 7 月 4 日、維基記 6 月，月份兩說，年份無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1667671491，tried gb `1→1`）。\n**「第四張」可以寫**：英文維基導言明寫 fourth studio album。\n**製作人與錄音師父子交接那條很硬**：Ken Hamann 1979 年退休、兒子 Paul 接手，本張是父子交接後的第一張。這是有來源的直述。**但不要寫成「Pere Ubu 換了製作人所以聲音變了」**——維基把聲音的轉變歸給 Mayo Thompson 的加入，不是錄音師。\n**〈Horses〉不是原創**：維基明記它出自 Mayo Thompson 1970 年的個人專輯《Corky's Debt to His Father》。若把它列進 keyTracks 敘述，要寫清楚。\n**互斥可用面向**：本張獨有的是浴缸的漏斗、盤名的由來、控制室那句「Self-expression is evil」。前一張《New Picnic Time》已用掉碎石車道與 Chrysalis 拒發，不要重複。"
+ },
+ {
+  "key": "desc2:Pere Ubu|Song of the Bailing Man",
+  "artist": "Pere Ubu",
+  "album": "Song of the Bailing Man",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0fc921c8 的欄位：title「Song of the Bailing Man」、artist-credit「Pere Ubu」、first-release-date 1982、primary-type Album、secondary-types 空；轄下 5 個 release（GB 3、US 1、XW 1），5 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/0fc921c8-0c27-3fef-b36d-251c4e2b7b11"
+   },
+   {
+    "f": "該 release-group 的 1982 GB 盤（release d74d0d51）欄位：country GB、status Official、廠牌欄 Rough Trade、編號 ROUGH 33、11 軌。逐軌曲名與曲長依序為〈The Long Walk Home〉2:36、〈Use of a Dog〉3:19、〈Petrified〉2:17、〈Stormy Weather〉3:21、〈West Side Story〉2:48、〈Thoughts That Go by Steam〉3:49、〈Big Ed's Used Farms〉2:25、〈A Day Such as This〉7:18、〈The Vulgar Boatman Bird〉2:51、〈My Hat〉1:20、〈Horns Are a Dilemma〉4:22。",
+    "src": "https://musicbrainz.org/release/d74d0d51-4251-4c03-9c66-9e08824c8844"
+   },
+   {
+    "f": "英文維基〈Song of the Bailing Man〉的 infobox 與導言記：Pere Ubu 的第五張專輯，1982 年 9 月由 Rough Trade Records 發行，1981 年 8 月至 1982 年 1 月錄於俄亥俄州 Painesville 的 Suma Recording，製作人 Adam Kidron，全長 36:10；錄音時鼓手 Scott Krauss 由 the Feelies 的 Anton Fier 取代。條目寫這是樂團在 1988 年《The Tenement Year》之前的最後一張作品。",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   },
+   {
+    "f": "同條目 Background 節記：前作《The Art of Walking》成功後樂團想做一個更聚焦的計畫，Rough Trade 老闆 Geoff Travis 推薦英國製作人 Adam Kidron，由他從 Paul Hamann 手中接下製作。Anton Fier 的工作紀律替錄音帶來更強的結構感，但他反覆重錄的完美主義與偏好自由即興的吉他手 Mayo Thompson 衝突。",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   },
+   {
+    "f": "同節記：除了 David Thomas 之外，團員對本張都不滿意，Mayo Thompson 把它叫成「Song of the Boring Man」，並自述「我那時是那些唱片上的吉他手。《Song of the Bailing Man》上那個不快樂的吉他手……我準備回家了，我很火大。那時他們討厭我、我討厭他們——就是一團慘。Ravenstine 到現在還不跟我說話。」1982 年底一趟美國巡演讓緊張升高，回來後團員彼此不再聯絡，幾個月後樂團承認 Pere Ubu 實質上已經解散。",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   },
+   {
+    "f": "同條目 Recording and production 節記 Thompson 對錄音方式的說法：「《Bailing Man》的錄音有點不一樣，因為它真的是一塊一塊做出來的。Adam（Kidron）會從辦公室找個人過來，他們就坐在那裡兩個小時做點什麼。那不是樂團照一般方式一起錄音。」同節引 David Thomas 事後的說法：「《Song of the Bailing Man》是被嚴重低估的成就。它本來是要當《Art of Walking》的另一個書擋——那張我構想成看著水從浴缸排掉，排水形成漏斗，焦點是漏斗中間那個空的地方，歌由不在那裡的東西界定。《Song of the Bailing Man》要做的是相反的事。」",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   },
+   {
+    "f": "同條目 Critical reception 節引《The Wire》寫本張「swathed in layers of reverb-as-sugarcoating」，且鼓手 Anton Fier 的 backbeat「讓這裡每一首歌都比他們目錄裡其他任何東西快上好幾 bpm」，是「Ubu 最好入口的素材」；引《Trouser Press》寫「Fier 較輕、較爵士的打法定了這張專輯的調子」；引《Spin Alternative Record Guide》稱它「more of a bouncy pop record, though Thomas is as gone as ever」。",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   },
+   {
+    "f": "同節引《The Quietus》：「你幾乎可以叫它 Pere Ubu 的『爵士專輯』。在〈The Vulgar Boatman Bird〉上，Ravenstine 的合成器模仿蟬鳴，Tony Maimone 重複的貝斯句讓人想起 Can 的 Holger Czukay……Thompson 的吉他與 Anton Fier 滾動的鼓看似毫不費力地卡在一起。」同段記 Fier 的完美主義與 Thompson 隨性的態度在巡演時處不來，樂團隨後解散。",
+    "src": "https://en.wikipedia.org/wiki/Song_of_the_Bailing_Man"
+   }
+  ],
+  "hookCandidates": [
+   "吉他手把它改叫「Song of the Boring Man」",
+   "上一張是看水從浴缸排掉，這張要做相反的事"
+  ],
+  "sound": "新鼓手 Anton Fier 的 backbeat 讓整張比樂團目錄裡其他任何東西都快上好幾 bpm，打法較輕、較爵士，《The Wire》還說它裹在「reverb-as-sugarcoating」的層次裡；《The Quietus》舉〈The Vulgar Boatman Bird〉為例，說 Ravenstine 的合成器在模仿蟬鳴、Maimone 的貝斯句讓人想起 Can 的 Holger Czukay（英文維基 Critical reception 節）。錄音本身是一塊一塊拼的，不是樂團一起 tracking（同條目 Recording and production 節引 Thompson）。十一軌裡〈My Hat〉只有 1:20、〈A Day Such as This〉7:18（MB 1982 GB 盤逐軌曲長）。",
+  "keyTracks": [
+   "The Vulgar Boatman Bird",
+   "Thoughts That Go by Steam",
+   "A Day Such as This",
+   "The Long Walk Home"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1982 兩方一致：MB release-group first-release-date 1982（只到年）、MB GB 盤 1982；英文維基 infobox 記 September 1982。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1677410397，tried gb `1→1`）。\n**「第五張」可以寫**：英文維基導言明寫 fifth album。\n**MB 那筆 GB release 的載體標成 CD**：first-release-date 是 1982、編號 ROUGH 33 是黑膠編號，MB 這筆的 medium 欄卻寫 CD，疑似 MB 資料有誤。**正文不要寫載體**，寫曲目與曲長就好。\n**團員不滿那組料要平衡**：facts 給了 Thompson 罵、也給了 Thomas 事後高度評價，以及《The Wire》《Quietus》的正面評價。**不要單邊寫成「這是一張失敗作」**。\n**解散那條要照抄措辭**：維基寫的是 1982 年底巡演後彼此不聯絡、幾個月後承認實質解散，而下一張《The Tenement Year》是 1988 年。**不要寫「解散六年」這種算術**（第 4 條）。\n**互斥可用面向**：本張獨有的是 Thompson 的「Boring Man」諢名、Adam Kidron 一塊一塊拼的錄法、以及 Fier 讓速度變快這件事。前兩張 Pere Ubu 已用掉碎石車道與浴缸漏斗，本張引浴缸只能當「相反的那一端」用。"
+ },
+ {
+  "key": "desc2:Suicide|A Way of Life",
+  "artist": "Suicide",
+  "album": "A Way of Life",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3979465e 的欄位：title「A Way of Life」、artist-credit「Suicide」、first-release-date 1988、primary-type Album、secondary-types 空；轄下 7 個 release（GB 3、US 3、XW 1），7 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/3979465e-cea8-346a-bdb5-1dc33312f350"
+   },
+   {
+    "f": "該 release-group 的 1988 GB 盤（release 9aaed464）欄位：country GB、status Official、廠牌欄 Chapter 22、編號 CHAP CD 35、barcode 5016295600356、9 軌。逐軌曲名與曲長依序為〈Wild in Blue〉4:34、〈Surrender〉3:47、〈Jukebox Baby 96〉3:21、〈Rain of Ruin〉4:00、〈Suffering in Vain〉4:41、〈Dominic Christ〉6:47、〈Love So Lovely〉4:04、〈Devastation〉4:01、〈Heat Beat〉4:13。",
+    "src": "https://musicbrainz.org/release/9aaed464-3521-34c2-8ee0-16216698db08"
+   },
+   {
+    "f": "英文維基〈A Way of Life (Suicide album)〉的 infobox 與導言記：Suicide 的第三張錄音室專輯，1988 年發行，錄音日期記為 1987 年 12 月 13 日、地點紐約 Right Track Recording，製作人 Ric Ocasek，全長 39:24，廠牌欄記 Chapter 22 與 Wax Trax! Records。條目寫本張最初由 Chapter 22 Records 發行，一年後才透過 Wax Trax! Records 取得更廣的全球發行。",
+    "src": "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)"
+   },
+   {
+    "f": "同條目導言記：視覺藝術家 Stefan Roloff 為〈Dominic Christ〉做了一支音樂錄影帶；Suicide 到海外宣傳本張，在巴黎演出單曲〈Surrender〉並於法國電視播出。2005 年本張經 Martin Rev 略作重混後重製，由 Mute 旗下的 Blast First 廠牌再發，加一張現場素材的附碟。",
+    "src": "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)"
+   },
+   {
+    "f": "同條目 Personnel 節（採自唱片內頁）記編制只有兩人加兩位工作人員：Martin Rev 負責鍵盤與鼓機編程、Alan Vega 負責人聲；Joe Barbaria 錄音、Ric Ocasek 製作。infobox 的曲風欄依 AllMusic 記為 synth-pop 與 drone rock。Release history 表列 1988 年英國 Chapter 22（CHAP 35）、美國 Wax Trax!（WAX 7072）、法國 Accord（10227）、德國 Rough Trade（RTD 96），皆為 CD 與 LP；2005 年美／歐 Blast First/Mute/EMI 出 CD。",
+    "src": "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)"
+   },
+   {
+    "f": "英文維基〈Surrender (Suicide song)〉記：〈Surrender〉1988 年由 Chapter 22 發行為單曲，B 面是〈Rain of Ruin〉，UK 12 吋編號 CHAP 36；曲風欄記 synthpop、doo-wop、dream pop；錄音同為 1987 年 12 月 13 日於紐約 Right Track Recording，製作人 Ric Ocasek。條目的單曲年表記本張的前一首單曲是 1979 年的〈Dream Baby Dream〉。",
+    "src": "https://en.wikipedia.org/wiki/Surrender_(Suicide_song)"
+   },
+   {
+    "f": "英文維基〈Suicide: Alan Vega and Martin Rev〉記：Suicide 的第二張錄音室專輯 1980 年由 Ric Ocasek（the Cars 成員）為 ZE Records 製作，1980 年 1 月錄音；Ocasek 給了鍵盤手 Martin Rev 新的器材來演奏，而 Alan Vega 則與音樂拉開距離、專心在人聲上。",
+    "src": "https://en.wikipedia.org/wiki/Suicide:_Alan_Vega_and_Martin_Rev"
+   },
+   {
+    "f": "Apple Music GB 店面有兩個對應本張的條目：collectionId 1435782281「A Way of Life (2005 - Remaster)」9 軌、releaseDate 1988-01-01、9 軌全部帶 previewUrl；collectionId 1684448551「A Way of Life (35th Anniversary Edition) [2023 Remaster]」13 軌、releaseDate 1988-01-01、13 軌全部帶 previewUrl，後四軌是〈Born in the USA (Extended Version - Live in Paris 1988)〉〈Devastation (Live in Paris 1988)〉〈Dominic Christ (Early Version 1987)〉〈Cheree (Live in Paris 1988)〉。",
+    "src": "https://music.apple.com/gb/album/1435782281"
+   }
+  ],
+  "hookCandidates": [
+   "整張唱片只有兩個人：一台鍵盤加一支麥克風",
+   "製作人是 The Cars 的 Ric Ocasek，八年前那張也是他"
+  ],
+  "sound": "編制就是兩個人：Martin Rev 一人包辦鍵盤與鼓機編程，Alan Vega 只唱（英文維基 Personnel 節，採自內頁）。曲風欄依 AllMusic 記為 synth-pop 與 drone rock；單曲〈Surrender〉的曲風欄則記 synthpop、doo-wop、dream pop（英文維基〈Surrender (Suicide song)〉）。九軌集中在 3:21 到 4:41 之間，只有〈Dominic Christ〉拉到 6:47（MB 1988 GB 盤逐軌曲長）。",
+  "keyTracks": [
+   "Surrender",
+   "Dominic Christ",
+   "Wild in Blue",
+   "Rain of Ruin"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1988 三方一致：MB release-group first-release-date 1988（只到年）、MB GB 盤 1988、英文維基 infobox 記 1988、Apple 兩個條目的 releaseDate 都是 1988-01-01（Apple 是年初預設值，不可當日期用）。無爭議。",
+  "notes": "**試聽判定要換版本（不是推翻 unavailable，是換條目）**：`previews.json` 這一筆已是 ready，但綁的 collectionId 是 **1684448551**，那是 2023 年的 35 週年版、**13 軌**，多出四軌 1987–88 的現場與早期版本，與原盤 9 軌不對應。**建議主線改綁 collectionId 1435782281（「A Way of Life (2005 - Remaster)」、gb、9 軌、9 軌全部有 previewUrl）**，與 MB 原盤逐軌對得上。策展層 curatorRisk 已經指出這一點，本層實查證實。\n**曲名兩說**：MB 作〈Suffering in Vain〉〈Love So Lovely〉，Apple 作〈Sufferin' in Vain〉〈Love so Lovely〉。keyTracks 取 MB 的寫法。\n**「第三張」可以寫**：英文維基導言明寫 third studio album。\n**Ocasek 那條的分寸**：facts 分開給了「本張製作人是 Ocasek」與「1980 年第二張也是 Ocasek 製作」兩條，是兩個獨立來源的直述。**不要寫「睽違八年再合作」之類的算術**（第 4 條）。\n**策展層有一處無來源、未採用**：curatorWhy 說「兩人此後只再錄過三張，這張是其中流通最廣的一張」——「流通最廣」本層找不到任何來源，未寫進 facts，正文不得使用。同欄「實掃 seed_cards.json」是卡池內部作業、非可查證事實，亦未入 facts。\n**素材偏薄但夠**：英文維基本體條目很短（無 Background、無 Reception 段），本層靠單曲條目與第二張的條目補足，正文帶仍走 180–240 字，但可寫的面向少，建議集中在二人編制、Ocasek、以及巴黎那場電視演出。"
+ },
+ {
+  "key": "desc2:The B-52's|Wild Planet",
+  "artist": "The B-52's",
+  "album": "Wild Planet",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7c9f7229 的欄位：title「Wild Planet」、artist-credit「The B‐52s」、first-release-date 1980-08-27、primary-type Album、secondary-types 空；轄下 13 個 release（US 8、DE 3、GB 1、XE 1），其中 12 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/7c9f7229-7f75-371d-8165-e1d57a81155c"
+   },
+   {
+    "f": "該 release-group 的 1980-08-27 US 原盤（release 10a1d31d）欄位：country US、status Official、廠牌欄 Warner Bros. Records、編號 BSK 3471、barcode 075992347112、載體 12\" Vinyl、9 軌。逐軌曲名與曲長依序為〈Party Out of Bounds〉3:22、〈Dirty Back Road〉3:21、〈Runnin' Around〉3:10、〈Give Me Back My Man〉4:02、〈Private Idaho〉3:38、〈Devil in My Car〉4:29、〈Quiche Lorraine〉3:59、〈Strobe Light〉4:01、〈53 Miles West of Venus〉4:53。",
+    "src": "https://musicbrainz.org/release/10a1d31d-55cb-4c6a-b43e-93fe7bdeefa1"
+   },
+   {
+    "f": "英文維基〈Wild Planet〉的 infobox 與導言記：the B-52's 的第二張錄音室專輯，1980 年 8 月發行，美國由 Warner Bros.、歐洲與日本由 Island Records 發行；1980 年 4 月錄於巴哈馬拿騷的 Compass Point Studios，製作掛 Rhett Davies 與樂團，全長 34:44。單曲三首：〈Private Idaho〉(1980 年 10 月)、〈Give Me Back My Man〉、〈Party Out of Bounds〉。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   },
+   {
+    "f": "同條目導言記：和第一張一樣，樂團跑到巴哈馬的 Compass Point Studios 錄本張；本張數首歌自 1978 年起就是演出的固定曲目，第一張沒有收，因為當時歌比一張品質過得去的 LP 裝得下的還多。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   },
+   {
+    "f": "同條目 Reception 節記：《Billboard》給本張正面評價，稱它比首張進步，是「a cinch for hot rotation in rock-oriented discos」；《Rolling Stone》的 Frank Rose 認為它「明顯少了樂團首張那股不停歇的興高采烈」，並把原因部分歸給製作——「比前作更平、更悶」；《New York Rocker》則寫本張「比第一張更好地捕捉了 Ricky Wilson 那種怪調弦的 riff，以及 Keith Strickland 鼓的脆勁」。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   },
+   {
+    "f": "同節記 AllMusic 的 David Cleary 回顧本張，說歌「比先前更快、更緊、更帶勁，只是製作上沒那麼奇趣、沒那麼細」，並點出它「狡猾地把女子團體、車庫樂團、衝浪與電視主題曲的影響混在一起，全部由一個坐不住的舞曲節拍推著走」。2018 年《Pitchfork》把本張列進樂評票選「1980 年代 200 張最佳專輯」的第 183 名。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   },
+   {
+    "f": "同條目 Commercial 節記：本張在 Billboard 200 上榜 27 週、最高第 18 名，並獲 RIAA 認證金唱片。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   },
+   {
+    "f": "同條目 In popular culture 節記：導演 Gus Van Sant 在他 1991 年的電影《My Own Private Idaho》片名中引用了〈Private Idaho〉這首歌，並在片尾感謝樂團，不過他並未事先徵得樂團同意。",
+    "src": "https://en.wikipedia.org/wiki/Wild_Planet"
+   }
+  ],
+  "hookCandidates": [
+   "這些歌 1978 年就在台上唱了，只是第一張裝不下",
+   "有部電影直接把其中一首的歌名放進片名，還沒問過他們"
+  ],
+  "sound": "AllMusic 的 David Cleary 形容本張比前作「更快、更緊、更帶勁」，但製作沒那麼奇趣細膩，並指出它把女子團體、車庫樂團、衝浪與電視主題曲的影響混在一起，由一個坐不住的舞曲節拍推著走；《New York Rocker》則說它比第一張更好地捕捉了 Ricky Wilson 怪調弦的 riff 與 Keith Strickland 鼓的脆勁（英文維基 Reception 節）。九軌全長 34:44、沒有一軌到五分鐘（維基 infobox 與 MB 1980 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Private Idaho",
+   "Give Me Back My Man",
+   "Party Out of Bounds",
+   "Quiche Lorraine"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1980 三方一致：MB release-group first-release-date 1980-08-27、MB US 原盤 1980-08-27、英文維基 infobox 記 August 27, 1980。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1442407466，tried gb `6→3`）。\n**掛名寫法三說**：卡片與維基作「The B-52's」，MB artist-credit 作「The B‐52s」（用的是 U+2010 連字號、且沒有撇號）。卡單 queryAlias 已備了「The B‐52s」「The B-52s」。比對要同時放寬連字號種類與撇號。\n**「第二張」可以寫**：英文維基導言明寫 second studio album。\n**評價要平衡**：facts 給了《Billboard》正面、《Rolling Stone》負面、《New York Rocker》正面、AllMusic 回顧。**不要只挑一邊寫**。\n**〈Private Idaho〉與電影那條要照抄措辭**：維基寫的是 Van Sant 在片名中「referred to」這首歌、片尾致謝，但沒有事先徵得同意。**不要寫成電影用了這首歌**——來源沒說歌有出現在片中。\n**互斥可用面向**：本張獨有的是「第一張裝不下所以留到第二張」、Compass Point 連錄兩張、以及《My Own Private Idaho》的片名。本批另兩張 B-52's（《Whammy!》《Cosmic Thing》）不要重複用巴哈馬這條。"
+ },
+ {
+  "key": "desc2:The B-52's|Whammy!",
+  "artist": "The B-52's",
+  "album": "Whammy!",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dd870496 的欄位：title「Whammy!」、artist-credit「The B‐52s」、first-release-date 1983-04、primary-type Album、secondary-types 空；轄下 13 個 release（US 3、DE 2、GB 2、AR 3、AD 2、AT 1），13 筆全部 status Official。",
+    "src": "https://musicbrainz.org/release-group/dd870496-4a3b-3c0c-9345-1b1fc49e70cf"
+   },
+   {
+    "f": "該 release-group 的 1983-04 US 盤（release 68d817db）欄位：country US、status Official、載體 12\" Vinyl、9 軌。逐軌曲名與曲長依序為〈Legal Tender〉3:41、〈Whammy Kiss〉5:22、〈Song for a Future Generation〉3:59、〈Butterbean〉4:18、〈Trism〉3:24、〈Queen of Las Vegas〉4:37、〈Don't Worry〉3:58、〈Big Bird〉4:14、〈Work That Skirt〉3:51。同 release-group 的 1983 GB 盤（release b058c9ae）廠牌欄記 Island、編號 ICT 9759。",
+    "src": "https://musicbrainz.org/release/68d817db-ebe7-4464-bed6-4ce207bfe880"
+   },
+   {
+    "f": "英文維基〈Whammy!〉的 infobox 與導言記：the B-52's 的第三張錄音室專輯，1983 年 4 月 27 日發行，美國由 Warner Bros.、歐洲與日本由 Island Records 發行；1982 年 12 月錄於巴哈馬拿騷的 Compass Point Studios，製作人 Steven Stanley；全長首刷 37:17、二刷 37:29。單曲三首：〈Legal Tender〉／Moon 83、〈Whammy Kiss〉（德國）、〈Song for a Future Generation〉／Trism。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   },
+   {
+    "f": "同條目導言記：樂團做本張的目標是用鼓機與合成器把他們的招牌聲音更新一遍；本張也是第一張五位團員全部獻聲的專輯，〈Song for a Future Generation〉即是例子。這是吉他手與創團團員 Ricky Wilson 1985 年因愛滋病過世之前，B-52's 發行的最後一張專輯，不過他在下一張錄音室專輯《Bouncing Off the Satellites》(1986) 上以遺作方式出現。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   },
+   {
+    "f": "同條目 Recording 節記：〈Butterbean〉〈Big Bird〉〈Queen of Las Vegas〉三首原本要收進前作《Mesopotamia》(1982)，因為 Warner Bros. 與經紀人 Gary Kurfirst 的壓力與時間限制而沒有完成，1982 年初樂團回到 Compass Point 重錄這三首；其餘六首〈Legal Tender〉〈Whammy Kiss〉〈Song for a Future Generation〉〈Trism〉〈Don't Worry〉〈Work That Skirt〉在 1982 年 12 月同樣錄於 Compass Point。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   },
+   {
+    "f": "同節記：與先前的錄音室專輯不同，本張所有樂器只由 Keith Strickland 與 Ricky Wilson 兩人演奏——兩人都彈吉他與鍵盤，Strickland 打鼓、Wilson 彈貝斯。Kate Pierson 後來稱這張錄音是「一張過渡的專輯」，並說鼓手 Strickland「不想再打鼓了，所以《Whammy!》用了鼓機和一些合成器。那是聲音上滿大的改變，我其實不太贊成。我不太喜歡鼓機。」她補充後來的巡演裡樂團會在鼓機與 Strickland 的真鼓之間輪替。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   },
+   {
+    "f": "同節記：製作人 Steven Stanley 支持 Wilson 與 Strickland 最初的構想——把整張混成一條連續的音軌，作法類似樂團的混音專輯《Party Mix!》(1981)；但 Kurfirst 與 Warner Bros. 否決了，改用比較傳統的分軌排序。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   },
+   {
+    "f": "同條目 Release 節記：LP 首刷的第七軌是〈Don't Worry〉，翻唱小野洋子的〈Don't Worry, Kyoko (Mummy's Only Looking for Her Hand in the Snow)〉；後續壓片因法律問題把這首拿掉，換成〈Moon 83〉——那是樂團 1979 年首張上〈There's a Moon in the Sky (Called the Moon)〉的重製版，原本是〈Legal Tender〉單曲的 B 面。Reception 節記本張 1983 年兩度進 Billboard 200，年內分別到第 29 名與第 171 名。",
+    "src": "https://en.wikipedia.org/wiki/Whammy!"
+   }
+  ],
+  "hookCandidates": [
+   "第七軌翻唱小野洋子，後來因為法律問題被整首換掉",
+   "鼓手不想再打鼓了，所以這張的鼓是機器打的"
+  ],
+  "sound": "目標明確是用鼓機與合成器更新招牌聲音；全張樂器只由兩個人彈——Strickland 與 Wilson 都彈吉他與鍵盤，Strickland 打鼓、Wilson 彈貝斯（英文維基 Recording 節）。Kate Pierson 稱它是「過渡的專輯」，並說鼓手不想再打鼓、所以改用鼓機。製作人原本想把整張混成一條連續音軌，被廠牌否決（同節）。九軌只有〈Whammy Kiss〉超過五分鐘（MB 1983 US 盤逐軌曲長）。",
+  "keyTracks": [
+   "Legal Tender",
+   "Song for a Future Generation",
+   "Whammy Kiss",
+   "Queen of Las Vegas"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1983 三方一致：MB release-group first-release-date 1983-04、MB US 盤 1983-04、英文維基記 April 27, 1983（引 Rhino《Nude on the Moon》內頁）。無爭議。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1442386958，tried gb `1→1`）。\n**MB 的預設 GB release 是卡帶、曲目重複列了兩次**（b058c9ae，18 軌＝9 軌 ×2，後九軌無曲長）。本層改採 1983-04 的 US 12 吋（68d817db，9 軌）當逐軌來源，GB 那筆只取廠牌與編號（Island ICT 9759）。**下游不要引 MB 那個 18 軌的數字。**\n**第七軌兩說（同一張碟兩種曲目）**：首刷是〈Don't Worry〉（小野洋子翻唱），後刷換成〈Moon 83〉。MB 那筆 US 盤列的是〈Don't Worry〉，屬首刷。正文若寫曲目要指明是哪一刷。\n**Ricky Wilson 的死要照抄措辭**：維基寫的是「本張是他 1985 年因愛滋病過世前 B-52's 發行的最後一張專輯」，並明記他在 1986 年的《Bouncing Off the Satellites》上以遺作方式出現。**不要寫成「他的最後一張」**。\n**「第三張」可以寫**：英文維基導言明寫 third studio album。\n**掛名寫法**：同《Wild Planet》那筆——MB artist-credit 是「The B‐52s」（U+2010 連字號、無撇號）。\n**互斥可用面向**：本張獨有的是鼓機轉向與 Pierson 的反對、連續音軌構想被否決、〈Don't Worry〉被換掉。《Wild Planet》已用掉 Compass Point 這條。"
+ },
+ {
+  "key": "desc2:The B-52's|Cosmic Thing",
+  "artist": "The B-52's",
+  "album": "Cosmic Thing",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1b36a363 的欄位：title「Cosmic Thing」、artist-credit「The B‐52s」、first-release-date 1989-06-06、primary-type Album、secondary-types 空；轄下 20 個 release（US 10、XE 3、CA 2、AU 1、FR 1、XW 1、未填國別 2），其中 19 筆 status Official。",
+    "src": "https://musicbrainz.org/release-group/1b36a363-eec6-35ba-b0ed-34a1f2f2cd82"
+   },
+   {
+    "f": "該 release-group 的 1989-06-06 US 原盤（release 80b82879）欄位：country US、status Official、廠牌欄 Reprise Records、編號 R1-25854、載體 12\" Vinyl、10 軌。逐軌曲名與曲長依序為〈Cosmic Thing〉3:55、〈Dry County〉4:57、〈Deadbeat Club〉4:50、〈Love Shack〉5:24、〈Junebug〉5:10、〈Roam〉4:57、〈Bushfire〉4:59、〈Channel Z〉4:52、〈Topaz〉4:23、〈Follow Your Bliss〉4:09。",
+    "src": "https://musicbrainz.org/release/80b82879-bbb0-422a-9a3d-4eac8d5ebb38"
+   },
+   {
+    "f": "英文維基〈Cosmic Thing〉的 infobox 與導言記：the B-52's 的第五張錄音室專輯，1989 年 6 月 27 日由 Reprise Records 發行，1988–1989 年錄於紐約市的 Skyline 與 Electric Lady、紐約州 Hurley 的 Dreamland 與 Bearsville 的 Bearsville，全長 47:03；十軌中六軌由 Nile Rodgers 在紐約市製作、其餘四軌由 Don Was 在紐約州北部製作。〈Love Shack〉的音樂錄影帶拿下 1990 年 MTV Video Music Awards 的最佳團體錄影帶。",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   },
+   {
+    "f": "同條目導言記：本張是 1990 年全美銷量第九名的專輯，在 Billboard 200 最高第 4 名，英國進前十，在澳洲與紐西蘭都到第 1 名；最終在美國取得 4× 白金、在英國取得白金認證。條目寫它的成功是樂團在 1985 年吉他手兼創團團員 Ricky Wilson 過世之後的復出。",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   },
+   {
+    "f": "同條目 Background 節記：Wilson 過世、1986 年《Bouncing Off the Satellites》只做了短暫宣傳後，樂團對未來並不確定；那張是他們製作費最高的一張，又放棄巡演宣傳，收入極少，導致嚴重財務困難。1988 年在 Keith Strickland 的推動下樂團重新聚在一起寫歌，大部分在紐約州北部的 Woodstock 一帶完成——Strickland 與 Kate Pierson 在休團期間都搬到那裡。樂團在曼哈頓華爾街一帶租了排練室，一週工作四天，同時離開長年的經紀人 Gary Kurfirst，並從 Warner Bros. 轉到 Reprise。",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   },
+   {
+    "f": "同條目 Composition 節記：Wilson 死後，Strickland 接下吉他與大部分作曲工作；作法是他先錄器樂 demo，Pierson、Cindy Wilson 與 Fred Schneider 再在上面即興出旋律與歌詞，四人共同定編曲。他為本張寫的第一段音樂後來成了〈Deadbeat Club〉，那首關於樂團早年在喬治亞州 Athens 生活的自傳式歌詞，成了整張的藍本；〈Junebug〉是 jam 中第一首完整完成的歌。Pierson 形容這些歌「電影感」「懷舊」，覺得整張長出一種「鄉間的、有點南方的、帶塵土味的感覺」。",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   },
+   {
+    "f": "同條目 Recording and production 節記：本張最大的一首〈Love Shack〉是最後錄的一首，是從樂團先前一段 15 分鐘的未完成素材長出來的；Strickland 起初覺得還不能發，Pierson 與 Schneider 認為會紅。樂團與 Don Was 的錄音提早一天結束，他問還有沒有素材，這首才被拿出來細修加料。樂團先前已與 Nile Rodgers 合作過——他錄過他們給 1988 年電影《Earth Girls Are Easy》原聲帶的〈(Shake That) Cosmic Thing〉。",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   },
+   {
+    "f": "同節記：樂評 Michael Azerrad 指出 Strickland 把整張的曲序當成一部電影來排，從鄉間題材走到更抽象的概念，最後以一段器樂尾聲收場，像片尾字幕。Strickland 後來補充：「我們用一種我們覺得在說故事的方式排序。我不知道有沒有人注意到，但一首歌會很漂亮地帶進下一首。它從頭到尾在講一個故事。」",
+    "src": "https://en.wikipedia.org/wiki/Cosmic_Thing"
+   }
+  ],
+  "hookCandidates": [
+   "最紅的那首是最後才錄的，因為前一天提早收工、製作人問還有沒有東西",
+   "曲序是照一部電影排的，最後那首是片尾字幕"
+  ],
+  "sound": "兩位製作人分工：Nile Rodgers 在紐約市做六軌、Don Was 在紐約州北部做四軌（英文維基 infobox 與 Recording and production 節）。作曲方式也換了——Strickland 先錄器樂 demo，三位歌手再在上面即興出旋律與歌詞（同條目 Composition 節）。Pierson 說整張長出一種「鄉間的、有點南方的、帶塵土味的感覺」。十軌只有開場的〈Cosmic Thing〉不到四分鐘，其餘全在 4:09 到 5:24 之間（MB 1989 US 原盤逐軌曲長）。",
+  "keyTracks": [
+   "Love Shack",
+   "Roam",
+   "Deadbeat Club",
+   "Channel Z"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1989 兩方一致：MB release-group first-release-date 1989-06-06、MB US 原盤 1989-06-06；英文維基 infobox 記 June 27, 1989。日期兩說（MB 6/6、維基 6/27），同年同月，正文不要寫日。",
+  "notes": "**試聽**：`previews.json` 這一筆本來就是 ready（gb、collectionId 1464527564，tried gb `8→2`）。卡單 queryAlias 帶了「Cosmic Thing (30th Anniversary Expanded Edition)」，下游若換綁要確認是十軌原盤不是擴充版。\n**「第五張」可以寫**：英文維基導言明寫 fifth studio album。\n**Ricky Wilson 那條的分寸**：維基寫的是本張的成功「是樂團在 Wilson 1985 年過世後的復出」。**可以寫「復出」，不要寫「悼念專輯」**——來源說的是療癒與懷舊，且 Pierson 明說寫歌是團員彼此的療癒過程。\n**銷量數字要照抄**：1990 年全美銷量第九、Billboard 200 第 4、美國 4× 白金、英國白金、澳紐第 1。**不要換算成張數**（第 4 條）。\n**掛名寫法**：同前兩張 B-52's——MB artist-credit 是「The B‐52s」（U+2010 連字號、無撇號）。\n**互斥可用面向**：本張獨有的是〈Love Shack〉最後才錄、雙製作人分工、曲序當電影排。《Wild Planet》用巴哈馬、《Whammy!》用鼓機，三張不撞。"
+ }
+]
