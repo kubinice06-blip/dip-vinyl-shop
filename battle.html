@@ -42,6 +42,7 @@
   .side.enemy { border-bottom:1px solid var(--line); }
   .nameplate { display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
   .nameplate .who { font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
+  .nameplate .who svg { vertical-align:-4px; }
   .nameplate .meta { font-size:9px; color:var(--gray); letter-spacing:0.08em; }
   .np-right { display:flex; align-items:center; gap:8px; }
   .recbtn { font-family:var(--mono); font-size:9px; font-weight:700; letter-spacing:0.05em; border:1px solid var(--line); background:#fff; color:var(--black); padding:3px 7px; cursor:pointer; white-space:nowrap; transition:all .12s; }
@@ -576,6 +577,16 @@
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=40"></script>
 <script src="dip-draw-anim.js?v=2"></script>
+<script src="dip-character.js?v=2"></script>
+<script>
+  // 序章捏的角色跟著來：名牌換成像素小人＋名字＋耳朵（沒角色就維持「你 · 黑膠玩家」）
+  (function(){
+    const ch = window.DipChar && DipChar.load(); if(!ch || !(ch.name||ch.avatar)) return;
+    const who = document.querySelector('.player-zone .nameplate .who'); if(!who) return;
+    who.innerHTML = (ch.avatar?DipChar.avatarSVG(ch.avatar, 18)+' ':'') + DipChar.esc(ch.name||'你') + ' · ' + (DipChar.profileName(ch.profile)||'黑膠玩家');
+    who.style.textTransform='none';
+  })();
+</script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc, query, limit, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1648,7 +1659,8 @@ function cardInfoRow(card){
 function openRecords(side){
   recShowsCardInfo=false;
   const list = G && G[side] ? G[side].played : [];
-  const who = side==='p' ? '你' : (OPPONENTS[G.opp]||{}).who || '對手';
+  const _ch = window.DipChar && DipChar.load();
+  const who = side==='p' ? ((_ch&&_ch.name)||'你') : (OPPONENTS[G.opp]||{}).who || '對手';
   document.getElementById('recTitleTxt').textContent = `${who} · 出過的牌`;
   document.getElementById('recBody').innerHTML = list.length
     ? list.slice().reverse().map(cardInfoRow).join('')

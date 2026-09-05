@@ -309,6 +309,41 @@
     .relic-row input, .relic-row select { border:1px solid var(--line); padding:6px; font-family:var(--mono); font-size:11px; width:100%; }
     .relic-row .del { background:#fff; border:1px solid var(--line); cursor:pointer; padding:6px 9px; font-size:11px; color:var(--dmg,#c11628); }
     .relic-head { display:grid; grid-template-columns:1.1fr 2fr 0.9fr 0.6fr 1.3fr 0.6fr 0.6fr auto; gap:6px; font-size:9px; color:var(--gray); font-family:var(--mono); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em; }
+  /* 🎬 序章劇本編輯器 */
+  .sc-group{font-size:11px;font-weight:700;letter-spacing:0.08em;margin:4px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);}
+  .sc-row{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--line);}
+  .sc-idx{flex:none;width:22px;text-align:right;font-size:10px;color:var(--gray);line-height:26px;}
+  .sc-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;}
+  .sc-main input,.sc-main textarea{width:100%;font-family:var(--mono);font-size:12px;padding:5px 7px;border:1px solid var(--line);background:#fff;color:var(--black);line-height:1.7;}
+  .sc-main input{max-width:150px;font-weight:700;}
+  .sc-main textarea{resize:vertical;}
+  .sc-tags{display:flex;gap:6px;flex-wrap:wrap;}
+  .sc-tag{font-size:9px;color:var(--gray);border:1px solid var(--line);padding:1px 6px;letter-spacing:0.04em;}
+  .sc-tag.ui{color:#b8860b;border-color:#b8860b;}
+  .sc-ops{flex:none;display:flex;gap:3px;}
+  .sc-ops button{width:24px;height:24px;padding:0;font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--black);}
+  .sc-ops button:hover:not(:disabled){background:#111;color:#fff;}
+  .sc-ops button:disabled{opacity:.28;cursor:default;}
+  .sc-pair{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:center;margin-bottom:8px;}
+  .sc-pair label{font-size:11px;font-weight:700;}
+  .sc-pair input{font-family:var(--mono);font-size:12px;padding:5px 7px;border:1px solid var(--line);background:#fff;color:var(--black);}
+  /* 遇敵特效預覽：與 roguelike.html 的 .enc-* 同一份動畫 */
+  .enc-ov{position:fixed;inset:0;z-index:2147482000;}
+  .enc-ov .enc-flash{position:absolute;inset:0;background:#fff;opacity:0;}
+  .enc-ov.flash .enc-flash{animation:encFlash .22s steps(1,end) 3;}
+  @keyframes encFlash{0%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
+  .enc-ov .enc-bars{position:absolute;inset:0;display:flex;flex-direction:column;}
+  .enc-ov .enc-bars i{flex:1;background:#000;transform:translateX(-101%);}
+  .enc-ov .enc-bars i:nth-child(even){transform:translateX(101%);}
+  .enc-ov.bars .enc-bars i{animation:encBar .5s steps(6,end) forwards;}
+  .enc-ov.bars .enc-bars i:nth-child(2),.enc-ov.bars .enc-bars i:nth-child(7){animation-delay:.04s;}
+  .enc-ov.bars .enc-bars i:nth-child(3),.enc-ov.bars .enc-bars i:nth-child(6){animation-delay:.08s;}
+  .enc-ov.bars .enc-bars i:nth-child(4),.enc-ov.bars .enc-bars i:nth-child(5){animation-delay:.12s;}
+  @keyframes encBar{to{transform:translateX(0);}}
+  .enc-ov.black{background:#000;} .enc-ov.black .enc-bars{display:none;}
+  .enc-ov.out{transition:opacity .35s;opacity:0;}
+  .enc-ov .enc-note{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.1em;opacity:0;}
+  .enc-ov.black .enc-note{opacity:1;}
   </style>
 </head>
 <body>
@@ -990,6 +1025,7 @@
       <div class="subtab-bar">
         <button class="subtab-btn active" data-sub="sub-battle">🎴 對戰系統</button>
         <button class="subtab-btn" data-sub="sub-rogue">🎮 Roguelike</button>
+        <button class="subtab-btn" data-sub="sub-script">🎬 序章劇本</button>
         <button class="subtab-btn" data-sub="sub-draw">🎰 抽卡動畫</button>
       </div>
 
@@ -1048,6 +1084,46 @@
         </div>
       </div>
       </div><!-- end sub-rogue -->
+
+      <div class="subpanel" id="sub-script">
+      <div class="section">
+        <div class="section-label">序章劇本（gameConfig/roguelike.script）</div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:12px;line-height:1.8;">
+          唱片行序章與教學尾聲的<b>每一句對白</b>都能在這裡改，存檔後 <b>roguelike.html</b> 下次載入就生效，不用等程式改版。<br>
+          ・<b>說話者</b>留白＝旁白（沒有名牌）；填「老闆」會顯示名牌，填<b>男子</b>或<b>？？？</b>是紅框（敵意）。<br>
+          ・標著 <span class="sc-tag ui">🎛</span> 的句子綁著面板或選單（三選一、四張、木箱、選單），<b>不能刪</b>，但文字可以改。<br>
+          ・標著 <span class="sc-tag">⚙</span> 的句子帶著站位與特效（誰走到哪、音符、💢）；刪掉它時站位會自動併到下一句。<br>
+          ・「＋」在該句<b>後面</b>插一句純對白（不帶站位、不帶面板），想加旁白就用它。
+        </p>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
+          <button class="gbtn" id="scPreviewFx">▶ 播放遇敵特效</button>
+          <a class="gbtn" href="roguelike.html?prologue=1" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">▶ 到前台看序章</a>
+          <span style="font-size:10px;color:var(--gray);">（已經有角色的話會直接跳過序章；用無痕視窗，或在預覽站按右下角「🧪 重置」）</span>
+        </div>
+        <div class="sc-group">序章對白 · 唱片行（<span id="scBeatsN">0</span> 句）</div>
+        <div id="scBeats"></div>
+        <button class="gbtn" id="scBeatAdd" style="margin-top:8px;">＋ 在最後加一句</button>
+      </div>
+      <div class="section">
+        <div class="sc-group">教學打完的尾聲（<span id="scEpiN">0</span> 句）</div>
+        <div id="scEpi"></div>
+        <button class="gbtn" id="scEpiAdd" style="margin-top:8px;">＋ 在最後加一句</button>
+      </div>
+      <div class="section">
+        <div class="sc-group">老闆的「內行喔」（玩家挑完王牌，依挑到哪一張說對應那句）</div>
+        <div id="scAcePick"></div>
+        <div class="sc-group" style="margin-top:18px;">四張推薦盤的推薦語（依王牌那一軸各四句，順序＝畫面上四張的順序）</div>
+        <div id="scPitch"></div>
+      </div>
+      <div class="section">
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <button class="gbtn gbtn-primary" id="scSave">儲存到 Firestore</button>
+          <button class="gbtn" id="scReload">重新載入</button>
+          <button class="gbtn" id="scReset">改回內建劇本</button>
+          <span id="scMsg" style="font-size:11px;color:var(--gray);"></span>
+        </div>
+      </div>
+      </div><!-- end sub-script -->
 
       <div class="subpanel" id="sub-draw">
       <div class="section">
@@ -3881,7 +3957,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
       rogueCfg = s.exists()? deepMergeRogue(s.data()) : JSON.parse(JSON.stringify(DEF_ROGUE));
       if(msg) msg.textContent = s.exists()?'已載入線上設定':'尚無線上設定，顯示預設'; }
     catch(e){ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); if(msg) msg.textContent='讀取失敗，顯示預設：'+(e.message||e); }
-    renderRogueForm(); renderBuffs(); renderRelics();
+    renderRogueForm(); renderBuffs(); renderRelics(); renderScript();
   }
   function deepMergeRogue(d){
     const o=JSON.parse(JSON.stringify(DEF_ROGUE));
@@ -3890,6 +3966,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if(d.metaXp) Object.assign(o.metaXp,d.metaXp);
     if(Array.isArray(d.upgrades)&&d.upgrades.length) o.upgrades=d.upgrades;
     if(Array.isArray(d.relics)&&d.relics.length) o.relics=d.relics;
+    if(d.script && typeof d.script==='object') o.script=d.script;   // 🎬 序章劇本（沒存過就是 undefined＝前台用內建）
     return o;
   }
   function renderRogueForm(){
@@ -3996,6 +4073,164 @@ ${discogs ? '- Discogs：' + discogs : ''}
   });
   document.getElementById('rogueReload')?.addEventListener('click', loadRogueCfg);
   document.getElementById('rogueReset')?.addEventListener('click', ()=>{ rogueCfg=JSON.parse(JSON.stringify(DEF_ROGUE)); renderRogueForm(); renderBuffs(); renderRelics(); document.getElementById('rogueMsg').textContent='已填回預設（尚未儲存）'; });
+
+  // ══════════════════════════════════════════════════════════════════
+  //  🎬 序章劇本編輯器（gameConfig/roguelike.script）
+  //  下面的 DEF_SCRIPT 是從 roguelike.html 的 RPG_BEATS／TUT_EPILOGUE_BEATS／SHOP_ACE_INFO.pick／
+  //  TUT_SETS.pitch 複製過來的一份**顯示用預設**：沒存過覆寫時前台走它自己那份內建，不受這裡影響；
+  //  按「儲存」才會把整份寫進 Firestore、前台改讀這裡的。改程式碼裡的台詞時記得也更新這份，兩邊才不會對不起來。
+  // ══════════════════════════════════════════════════════════════════
+  const DEF_SCRIPT = {
+    beats: [
+  { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out'} },
+  { who:'', text:'櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
+  { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'shelf'} },
+  { who:'', text:'這時候，店裡的音響傳出一段旋律。', stage:{notes:true,oBusy:false} },
+  { who:'', text:'……很迷人。你停下腳步，不自覺跟著點起頭來。' },
+  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
+  { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
+  { who:'老闆', text:'「……你眼光真不錯。」老闆終於抬起頭來，看著你。', stage:{notes:false} },
+  { who:'老闆', text:'「這張是我的私人收藏。今天讓給你。」' },
+  { who:'', text:'老闆走出櫃檯，在店裡翻翻找找。', stage:{o:'floor'} },
+  { who:'老闆', text:'「這四張也很適合你。跟你有緣，收下吧。」', ui:'recs', prompt:'（老闆把四張盤遞給你。）' },
+  { who:'', text:'你抱著五張唱片，心滿意足，正準備離開。', stage:{p:'leave',o:'counter'} },
+  { who:'', text:'這時，門開了。', stage:{f:'door'} },
+  { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
+  { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
+  { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
+  { who:'', text:'老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage:{o:'between',anger:false} },
+  { who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」', ui:'choice' }
+    ],
+    epilogue: [
+
+  { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
+  { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
+  { who:'男子', text:'「搵休督欸丟！」' },
+  { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
+  { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
+  { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
+  { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃檯底下拖出一個木箱。）' },
+  { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
+  { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1'} },
+  { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
+  { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' }
+    ],
+    acePick: {
+      classic:'「選這張？內行喔。敢在我店裡拿這張的人不多，多數人只會說『聽過』。」',
+      obscurity:'「選這張？內行喔。這張我放在最裡面那格，就是在等有人伸手。」',
+      accessibility:'「選這張？內行喔。這張放出來客人會跑光……我喜歡。」',
+    },
+    pitches: {
+      classic:['「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」','「封面你八成在 T 恤上看過。裡面的東西比 T 恤冷得多。」','「雙碟，吉他調成你沒聽過的音。年輕人的噪音教科書。」','「一個人、一把吉他、不到半小時。他生前沒幾個人買。」'],
+      obscurity:['「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」','「她不寫歌，唱別人的歌卻比原唱還像自己的。」','「『後搖滾』這三個字，就是樂評為了形容這張才用起來的。」','「錄完沒人敢發，擱了好幾年。崩潰的人做出來的美。」'],
+      accessibility:['「B 面那首十七分鐘。據說錄音師錄到一半就走人了。」','「六〇年代的情歌王子，隔了幾十年交出這張。第一首就把客人嚇走。」','「雙碟。日本主唱是在慕尼黑街頭被他們撿到的。」','「一台鼓機、一台琴、一個人在吼。1977 年的觀眾拿東西丟他們。」'],
+    },
+  };
+  const SC_UI_ZH = { aces:'🎛 三張王牌三選一', recs:'🎛 四張推薦盤', choice:'🎛 對決選單', relic:'🎛 木箱三選一', go:'🎛 應戰選單' };
+  const SC_AXIS_ZH = { classic:'殿堂（經典）', obscurity:'流亡（冷門）', accessibility:'異端（硬蕊）' };
+  const scEsc = t => String(t==null?'':t).replace(/[&<>"]/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+  // 還沒動過就顯示內建；一旦要改就把內建整份複製進 rogueCfg.script（按儲存才會寫出去）
+  function scView(){ return rogueCfg.script || DEF_SCRIPT; }
+  function scEdit(){ if(!rogueCfg.script) rogueCfg.script = JSON.parse(JSON.stringify(DEF_SCRIPT)); return rogueCfg.script; }
+  function scRows(list, kind){
+    return list.map((b,i)=>{
+      const tags=[];
+      if(b.stage) tags.push('<span class="sc-tag">⚙ 站位／特效</span>');
+      if(b.ui) tags.push('<span class="sc-tag ui">'+(SC_UI_ZH[b.ui]||b.ui)+'</span>');
+      if(b.prompt) tags.push('<span class="sc-tag">面板打開時補一句：'+scEsc(b.prompt)+'</span>');
+      return '<div class="sc-row">'
+        + '<div class="sc-idx">'+(i+1)+'</div>'
+        + '<div class="sc-main">'
+        +   '<input class="sc-f" data-kind="'+kind+'" data-i="'+i+'" data-k="who" placeholder="（旁白）" value="'+scEsc(b.who||'')+'">'
+        +   '<textarea class="sc-f" data-kind="'+kind+'" data-i="'+i+'" data-k="text" rows="2">'+scEsc(b.text||'')+'</textarea>'
+        +   (tags.length?'<div class="sc-tags">'+tags.join('')+'</div>':'')
+        + '</div>'
+        + '<div class="sc-ops">'
+        +   '<button class="sc-op" data-kind="'+kind+'" data-i="'+i+'" data-op="up"'+(i===0?' disabled':'')+'>↑</button>'
+        +   '<button class="sc-op" data-kind="'+kind+'" data-i="'+i+'" data-op="down"'+(i===list.length-1?' disabled':'')+'>↓</button>'
+        +   '<button class="sc-op" data-kind="'+kind+'" data-i="'+i+'" data-op="ins" title="在這句後面插一句">＋</button>'
+        +   '<button class="sc-op" data-kind="'+kind+'" data-i="'+i+'" data-op="del"'+(b.ui?' disabled title="這句綁著面板或選單，不能刪"':'')+'>✕</button>'
+        + '</div></div>';
+    }).join('');
+  }
+  function renderScript(){
+    const wrapB=document.getElementById('scBeats'); if(!wrapB) return;
+    const v=scView();
+    wrapB.innerHTML = scRows(v.beats,'beats');
+    document.getElementById('scEpi').innerHTML = scRows(v.epilogue,'epi');
+    document.getElementById('scBeatsN').textContent = v.beats.length;
+    document.getElementById('scEpiN').textContent = v.epilogue.length;
+    document.getElementById('scAcePick').innerHTML = Object.keys(SC_AXIS_ZH).map(a=>
+      '<div class="sc-pair"><label>'+SC_AXIS_ZH[a]+'</label>'
+      + '<input class="sc-pick" data-a="'+a+'" value="'+scEsc((v.acePick||{})[a]||'')+'"></div>').join('');
+    document.getElementById('scPitch').innerHTML = Object.keys(SC_AXIS_ZH).map(a=>
+      '<div style="margin-bottom:12px;"><div style="font-size:10px;color:var(--gray);margin-bottom:5px;">'+SC_AXIS_ZH[a]+'</div>'
+      + (((v.pitches||{})[a])||['','','','']).map((t,i)=>
+          '<div class="sc-pair"><label style="font-weight:400;color:var(--gray);">第 '+(i+1)+' 張</label>'
+          + '<input class="sc-pitch" data-a="'+a+'" data-i="'+i+'" value="'+scEsc(t)+'"></div>').join('')
+      + '</div>').join('');
+  }
+  ['scBeats','scEpi'].forEach(id=>document.getElementById(id)?.addEventListener('input', e=>{
+    const el=e.target.closest('.sc-f'); if(!el) return;
+    const d=scEdit(), list=(el.dataset.kind==='beats')?d.beats:d.epilogue;
+    list[+el.dataset.i][el.dataset.k]=el.value;
+  }));
+  document.getElementById('scAcePick')?.addEventListener('input', e=>{
+    const el=e.target.closest('.sc-pick'); if(!el) return;
+    const d=scEdit(); d.acePick=d.acePick||{}; d.acePick[el.dataset.a]=el.value;
+  });
+  document.getElementById('scPitch')?.addEventListener('input', e=>{
+    const el=e.target.closest('.sc-pitch'); if(!el) return;
+    const d=scEdit(); d.pitches=d.pitches||{}; d.pitches[el.dataset.a]=d.pitches[el.dataset.a]||['','','',''];
+    d.pitches[el.dataset.a][+el.dataset.i]=el.value;
+  });
+  ['scBeats','scEpi'].forEach(id=>document.getElementById(id)?.addEventListener('click', e=>{
+    const btn=e.target.closest('.sc-op'); if(!btn || btn.disabled) return;
+    const d=scEdit(), kind=btn.dataset.kind, list=(kind==='beats')?d.beats:d.epilogue, i=+btn.dataset.i, op=btn.dataset.op;
+    if(op==='up' && i>0){ const t=list[i-1]; list[i-1]=list[i]; list[i]=t; }
+    else if(op==='down' && i<list.length-1){ const t=list[i+1]; list[i+1]=list[i]; list[i]=t; }
+    else if(op==='ins'){ list.splice(i+1,0,{ who:'', text:'（新的一句）' }); }
+    else if(op==='del'){
+      if(list[i].ui || list.length<=1) return;
+      // 站位不能跟著句子一起消失：併進下一句（下一句自己有寫的優先）
+      if(list[i].stage && list[i+1]) list[i+1].stage = Object.assign({}, list[i].stage, list[i+1].stage||{});
+      list.splice(i,1);
+    }
+    renderScript();
+  }));
+  document.getElementById('scBeatAdd')?.addEventListener('click', ()=>{ scEdit().beats.push({who:'',text:'（新的一句）'}); renderScript(); });
+  document.getElementById('scEpiAdd')?.addEventListener('click', ()=>{ scEdit().epilogue.push({who:'',text:'（新的一句）'}); renderScript(); });
+  // 儲存：跟 Roguelike 分頁同一份 gameConfig/roguelike 文件一起寫
+  document.getElementById('scSave')?.addEventListener('click', async ()=>{
+    const msg=document.getElementById('scMsg'); msg.textContent='儲存中…';
+    const d=scView();
+    const need=(list,ids,where)=>{ const have=list.filter(b=>b.ui).map(b=>b.ui); const miss=ids.filter(x=>!have.includes(x));
+      return miss.length ? where+'少了必要的段落：'+miss.map(x=>SC_UI_ZH[x]||x).join('、') : ''; };
+    const empty=(list,where)=>{ const i=list.findIndex(b=>!String(b.text||'').trim()); return i<0?'':(where+'第 '+(i+1)+' 句是空的'); };
+    const err = empty(d.beats,'序章') || empty(d.epilogue,'尾聲')
+      || need(d.beats,['aces','recs','choice'],'序章') || need(d.epilogue,['relic','go'],'尾聲');
+    if(err){ msg.textContent='✗ '+err; return; }
+    try{ await setDoc(doc(db,'gameConfig','roguelike'), collectRogue()); msg.textContent='✓ 已儲存（roguelike.html 下次載入生效）'; }
+    catch(e){ msg.textContent='儲存失敗（檢查 Firestore 規則 gameConfig 是否開放管理員寫入）：'+(e.message||e); }
+  });
+  document.getElementById('scReload')?.addEventListener('click', loadRogueCfg);
+  document.getElementById('scReset')?.addEventListener('click', ()=>{
+    if(!confirm('把序章劇本改回程式內建的那一份？（按下去只是填回表單，要再按「儲存」才會生效）')) return;
+    rogueCfg.script = JSON.parse(JSON.stringify(DEF_SCRIPT)); renderScript();
+    document.getElementById('scMsg').textContent='已填回內建劇本（尚未儲存）';
+  });
+  // 遇敵特效預覽：與 roguelike.html 同一份動畫（閃白 ×3 → 黑條交錯掃入 → 全黑 → 淡出）
+  document.getElementById('scPreviewFx')?.addEventListener('click', ()=>{
+    document.querySelectorAll('.enc-ov').forEach(el=>el.remove());
+    const ov=document.createElement('div'); ov.className='enc-ov';
+    ov.innerHTML='<div class="enc-flash"></div><div class="enc-bars">'+'<i></i>'.repeat(8)+'</div><div class="enc-note">遇敵！</div>';
+    document.body.appendChild(ov);
+    const t=ms=>new Promise(r=>setTimeout(r,ms));
+    (async()=>{ ov.classList.add('flash'); await t(660);
+      ov.classList.remove('flash'); ov.classList.add('bars'); await t(640);
+      ov.classList.add('black'); await t(700);
+      ov.classList.add('out'); await t(380); ov.remove(); })();
+  });
 
   // ── 抽卡動畫：兩組參數 ──
   //   front  → gameConfig/drawAnimation（心情選歌／類型挑片／猜你喜歡／直接來一張共用）

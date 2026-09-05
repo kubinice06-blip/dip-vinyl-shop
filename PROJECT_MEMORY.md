@@ -1,5 +1,107 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-05｜dip-vinyl-shop｜後台「🎬 序章劇本」編輯器：對白改成資料、店主自己改；台詞用字修正
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+1. **台詞**：第 17 句改成店主指定的「老闆不發一語，緩步走出櫃檯，站在兩人之間。」；玩家看得到的字一律用「櫃檯」（原本 4 處寫「櫃台」，與另外 2 處不一致）。
+2. **序章對白改成可被後台覆寫的資料**：`RPG_BEATS` 由 const 改 let、尾聲從函式裡抽成 `TUT_EPILOGUE_BEATS`；
+   `applyConfig` 新增 `cfg.script` 分支，可覆寫 `beats`／`epilogue`（整份 beat 物件，`who`／`text` 給店主改，`stage`／`ui`／`prompt` 原樣帶回）、
+   `acePick`（老闆的「內行喔」三句）、`pitches`（十二句推薦語）。**驗證失敗就整份忽略**（空字串、非陣列、缺 text），
+   寧可少一次改稿也不要把序章弄成空白畫面。
+3. **`admin.html` 新增「🎬 序章劇本」子分頁**（遊戲設定分頁下）：18 句序章＋11 句尾聲逐句編輯（說話者／文字），
+   帶面板或選單的句子標 🎛 且**不可刪**，帶站位特效的標 ⚙、刪掉時站位自動併到下一句；可上移／下移／插入純對白；
+   另有王牌三句與十二句推薦語。存檔寫進同一份 `gameConfig/roguelike`（`deepMergeRogue` 保留 `script`），
+   存檔前擋空白句與缺面板（缺 aces／recs／choice／relic／go 會拒存）。面板上另有「▶ 播放遇敵特效」與「▶ 到前台看序章」。
+4. **遇敵特效預覽**：admin 內嵌與 `roguelike.html` 同一份 `.enc-*` 動畫，按鈕即可重播（店主看不到我傳的 GIF，改給定格分解圖）。
+
+**主要檔案**：`roguelike.html`、`admin.html`、`PROJECT_MEMORY.md`。
+
+**驗證**：兩檔腳本過 `node --check`。編輯器邏輯用獨立 harness 以 Playwright 實測（Firebase 在沙盒連不出去，admin 整份 module 不會執行，
+所以把編輯器那段抽出來配假的 `setDoc`／`rogueCfg` 跑）：18／11 列、5 個 🎛 列的刪除鈕鎖住、改字／插入／上移／刪除後面板三個 ui 都還在、
+存出去的 doc 含 `script`、空白句被擋（「尾聲第 2 句是空的」）、特效播完自己收乾淨、console 無錯誤。
+前台覆寫走 `addInitScript` 注入假 `__rogueCfg` 實測：序章變成後台那 4 句、推薦語換成後台那句、面板與選單照常；
+**故意餵壞資料（text 全空白）→ 自動回退用內建 18 句**。
+
+### 2026-09-05｜dip-vinyl-shop｜序章第 17 句改旁白、遇敵特效（神奇寶貝初代式）、大改版規劃 `DUNGEON_DESIGN.md`
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+1. 序章第 17 句由老闆台詞改成旁白：「老闆不發一語，緩步從櫃台走出來，站在兩人之間。」（店主指定）。
+2. **遇敵特效 `encounterFx(done, opts)`**：對手頭上跳「！」→ 畫面閃白三下 → 八條黑色橫條左右交錯掃入（`steps(6)` 做像素跳動）→ 全黑 →
+   黑幕底下換場 → 淡出。純 CSS 動畫，覆蓋層掛 body 不被 `#app` 重繪洗掉。接在序章「接受對決」與尾聲「應戰」兩處；`opts.mark=false` 給沒有對手小人的場景。
+   實測從按下到牌桌出現 2.3 秒、黑幕 2.7 秒消失；預覽 GIF 用 Playwright 錄影 + Playwright 自帶的 ffmpeg 抽格 + Pillow 合成。
+3. **`DUNGEON_DESIGN.md`（新）**：店主要的暗黑地牢式大改版規劃草案 v0.1——聆聽室（主城）、唱片行＝地牢（小地圖、五種節點、事件、店長）、
+   專輯品相（耐久，與配件耗損同一套）、敵人資料化（流派＋個性特技＋台詞＋像素造型，第一批 16 個）、無盡試煉改成往右的路徑圖（分歧＝選敵人流派）、
+   與現有系統的對接、P0／P1／P2 分階段、六個要店主決定的問題。
+
+**主要檔案**：`roguelike.html`、`DUNGEON_DESIGN.md`。
+**驗證**：腳本過 `node --check`；Playwright 錄影確認特效順序與換場時機，console 無錯誤。
+
+### 2026-09-03｜dip-vinyl-shop｜序章微調：木箱改固定三件、拿掉一句對白、名字產生器擴充到 45 組
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。店主試玩後的三點回饋：
+
+1. **教學尾聲拿掉第 8 句**（老闆宣告「往後都是你自己的打法了＋耳朵專長」）——耳朵三圍與專長在首頁角色卡上本來就看得到，
+   對白重複反而拖節奏。連帶移除 `tutEpilogueBeats()` 裡沒人用的 `ear` 變數。
+2. **木箱三選一改成固定三件**（`TUT_GIFT_RELICS = ['dustcover','stylus','cleaner']`＝防塵套／黑膠唱針／洗碟水，守・攻・續三個方向、都是 tier 1）。
+   原本是 `relicPool()` 隨機三件，但序章走完必定是新手、不可能有已持有的重複，隨機沒有意義且會出現看不懂的進階件。
+   保留「撞同款升級整新」的分支給「再玩一次教學」用；後台若把這三件改掉或刪掉，`relicPanelHTML` 會退回隨機三件當後備。
+3. **名字產生器 12 → 45 組**，改成台灣樂迷梗四類：器材規格（跳針王、針壓強迫症、慢轉33）、收藏行為（買了沒拆、月底吃土、唱片行釘子戶）、
+   聽法（只聽前奏、A面就睡、我早就聽過）、品味（金耳朵、木耳朵、冷門仙人、排行榜絕緣）。全部 ≤8 字（`NAME_MAX`），程式檢查過無超長。
+
+4. **分支預覽站每開新分頁就重置成全新玩家**（店主要求：手機上清網站資料很麻煩）。做在共用的 `dip-character.js` 最上面，
+   以主機名 `/^[a-z0-9-]+\.dip-vinyl-shop\.pages\.dev$/` 開關——正式站是裸網域 `dip-vinyl-shop.pages.dev`（比不中）與自訂網域，
+   本機開發也比不中，全部 inert。旗標用 `sessionStorage`：**同分頁重整保留進度**（才測得到續玩），**關掉分頁再進就整份清空**。
+   清的是預覽網域自己的 localStorage 與 `firebaseLocalStorageDb`（預覽站與正式站是不同來源，資料本來就各自獨立）。
+   另給右下角「🧪 重置」鈕（`body.in-battle` 時隱藏，免得壓到手牌）與首次進站的提示條（15 秒內跨頁仍會顯示，因為主選單會馬上轉去序章）。
+
+5. 序章第 6 句改寫：櫃台上那兩張從「剛拆封的」改成「封套邊緣磨損嚴重，顯然塵封已久」（用字由店主定）——
+   老闆待會要說「這是我的私人收藏」，剛拆封與私藏矛盾。
+
+6. **序章、尾聲、老闆帶打的台詞全面拿掉破折號**（店主指示），30 處改用逗號、句號或冒號。
+   卡池簡介與其他既有 UI 字串（備份盤 toast、牌庫抽乾 log 等）不在這次範圍，仍有破折號。
+
+**主要檔案**：`roguelike.html`、`dip-character.js`、`pvp.html`／`battle.html`（`?v=2`）、`ROGUELIKE_DESIGN.md` §2.0。
+
+**驗證**：腳本過 `node --check`；Playwright 390×844 重跑整條——隨機取名連按 8 次全不重複且都在字數內；
+序章 → 教學兩場（腳本照課表打，兩場都第五手收尾）→ 尾聲 11 段（原 12 段少一句）→ 木箱固定顯示防塵套／黑膠唱針／洗碟水 →
+選了裝上（`RUN.relics=["dustcover"]`、`equipped` 同步）→「應戰」進第 3 場正常對手。console 無錯誤。
+預覽重置另以 Chromium `--host-resolver-rules` 把 `claude-card-game-character-c.dip-vinyl-shop.pages.dev` 與裸網域 `dip-vinyl-shop.pages.dev`
+都指到本機測——預覽站首次進站清空並顯示提示條、同分頁重整角色還在、另開分頁又變全新、「🧪 重置」鈕按下去回到空白捏角畫面、
+戰鬥中按鈕隱藏；**裸網域（模擬正式站）不清、沒有按鈕、預先寫入的 xp 999 原封不動**。
+
+### 2026-09-02｜dip-vinyl-shop｜品味試煉新開場：RPG 序章（從品味生死鬥主選單開始、角色跨頁共用）＋教學尾聲（老闆送設備）
+
+雲端工作階段（分支 `claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main、未部署**；Cloudflare 有分支預覽站）。
+
+**流程**：第一次進品味生死鬥主選單（`pvp.html`）讀不到角色 → 轉 `roguelike.html?prologue=1`：捏角色（名字 ≤8 字、像素造型五項）→
+勇者鬥惡龍式 RPG 場景（唱片行舞台＋黑底白雙框對話窗，逐字、點一下下一段、▼ 閃爍、⏩ 快轉）：推門 → 老闆看一眼繼續做事 → 自己逛 → 音響傳出旋律 →
+抬頭見老闆在放唱片 → **三張頂點卡三選一**（殿堂《OK Computer》／流亡 Bobb Trimble《Iron Curtain Innocence》／異端 Swans《Cop》，附三軸介紹）→
+「你眼光真不錯，這張是我的私人收藏，今天讓給你」→ 老闆走出櫃台翻找 → 「這四張也很適合你，收下吧」（固定四張）→ 準備離開 → 男子「這品味也敢出來丟臉？」→ 💢 →
+老闆「來一場品味對決如何？」→ 接受對決＝老闆帶打兩場（第一場對手就是那名男子）→ **尾聲**：男子「搵休督欸丟！」離開 → 老闆「你對音樂脈絡很有天份，被我淘汰的設備挑一個帶回去」
+＝發燒配件三選一 → 「有空再來走走，與大家交流音樂」→ 又有人踢館 → 「應戰」→ 無止盡品味試煉第 3 場起。
+要玩家選東西的段落**不自動彈面板**，字跑完亮 ▼、再點一下才展開。選的王牌決定耳朵（老派耳朵／挖盤狂／噪音信徒＝三流派輕量版，決定出師前三圍與專長）。
+
+**角色跨頁**：像素零件與角色讀取抽成 `dip-character.js`（`PIX_PAL`／`pixArtHTML`／`SPR_BODY`／`sprRows`／`AVATAR_*`／`avatarRows`＋`DipChar`），
+`roguelike.html`／`pvp.html`／`battle.html` 三頁共用；主選單標題下顯示角色卡（點了 `?char=1` 改造型、存完回主選單），`battle.html` 我方名牌改成小人＋名字＋耳朵。
+資料仍存樂歷（本機 `dipRogueMeta_v2[:uid]`、雲端 `rogueMeta`）；`?prologue=1`／`?char=1` 先等登入與樂歷綁定（`__rogueBindP`），雲端已有角色不重走序章。
+
+**教學改成依牌組生成課表**（`TUT_SETS`／`tutBuild`）：三套「王牌＋四張」＋ legacy 原版固定牌組。有王牌的三套第二場第 3 手改教七星回擊。
+敵方 HP 由課表反推——**實測抓到敵方每出一手經典會回 1 滴（屬性效果在扣血之後才回），第一版漏算，殿堂那套第二場差一滴沒收掉**；補上後四套兩場都在第五手收尾。
+教學兩場鎖守舊派三圍、第二場打完換回耳朵；教學後牌組＝五張＋雜牌；`autoSeeds()`＝那五張；尾聲的木箱取代該場抽盤；`saveRun('epilogue')` 可續玩。
+
+**主要檔案**：`dip-character.js`（新）、`roguelike.html`（CSS `.rpg*`／`.acepick`／`.shop*`、`SPR.owner`、`ROOKIE_PROFILES`／`SHOP_ACE_INFO`、`TUT_SETS`／`tutBuild`／`tutScript`、
+`RPG_BEATS`／`rpgStart`／`rpg*`／`tutEpilogueBeats`／`renderTutEpilogue`／`relicPanelHTML`、`renderCharCreate`／`charCancel`、`applyRookieProfile`／`roleOf`，
+以及 `loadMeta`／`mergeMeta`／`bindMetaToAccount`／`initRun`／`startTutorialRun`／`winFight`／`resumeRun`／`mountSprites`／`renderBattle`／`renderDeath`／`bootstrap` 掛勾）、
+`pvp.html`（角色卡、無角色轉序章、試煉卡副標題「你的品味禁得起考驗？」）、`battle.html`（名牌）、`ROGUELIKE_DESIGN.md` §2.0。
+
+**驗證**：三頁腳本與 `dip-character.js` 過 `node --check`；Playwright 390×844——主選單無角色轉序章、三選一段落 ▼ 亮但面板未開、點一下才開、
+序章走完接教學兩場（腳本照課表打，四套含 legacy 都在第五手收尾）、尾聲階段存檔為 `epilogue` 且重開後可續、木箱三選一拿到配件並裝上、「應戰」後第 3 場正常對手且 `RUN.relics` 1 件、
+主選單顯示角色卡、`battle.html` 名牌顯示小人＋名字＋耳朵、`?char=1` 改名存檔回主選單。沙盒無外網，封面與 Firebase 被擋，頁面靠既有 fallback 照常。
+
+**待店主決定**：十二張推薦盤推薦語與對話台詞請過一遍；既有 Lv.1～2 舊訪客下次進來會走一次序章（白拿一張王牌）；沒做「再逛唱片行」。
+
 ### 2026-09-04（五）｜dip-vinyl-shop｜雷鬼桶的判準：看音樂不看產地（店主裁示）
 
 店主：**「不一定要牙買加，只要是雷鬼 dub 又是在南美的都可以。」**

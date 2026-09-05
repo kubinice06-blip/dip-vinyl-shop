@@ -39,6 +39,14 @@
       .card:hover .card-desc { color: #bbb; }
     }
     .card:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
+    /* 你的角色（序章捏的，跟著你去每一個挑戰）：像素小人＋名字＋耳朵，點了改名字／造型 */
+    .hero-char { margin-top: 16px; display: flex; justify-content: center; }
+    .hero-char-card { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--black); padding: 6px 12px 6px 8px; text-decoration: none; color: var(--black); background: #fff; }
+    .hero-char-card svg { display: block; }
+    .hero-char-card .hcn { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; }
+    .hero-char-card .hcp { font-size: 9px; color: #b8860b; border: 1px solid #b8860b; padding: 1px 6px; letter-spacing: 0.06em; }
+    .hero-char-card .hce { font-size: 10px; color: var(--gray); }
+    .hero-char-card:hover { background: #111; color: #fff; }
 
     /* ── 第一列：音樂地圖收合條，點開才展開完整地圖 ── */
     .maprow { position: relative; border-bottom: 1px solid var(--line); }
@@ -68,6 +76,7 @@
   <div class="hero">
     <div class="hero-title">品味生死鬥<span class="hero-beta">BETA</span></div>
     <div class="hero-sub">用你手邊的專輯，一決高下。<br>選一種玩法開打。</div>
+    <div class="hero-char" id="heroChar"></div>
   </div>
   <div class="cards">
     <div class="maprow" id="mapRow">
@@ -91,7 +100,7 @@
     <a class="card" href="roguelike.html">
       <div>
         <div class="card-name">無盡品味試煉</div>
-        <div class="card-desc">選流派、挑三張盤，一場接一場越打越強，撐到死。</div>
+        <div class="card-desc">你的品味禁得起考驗？</div>
       </div>
       <span class="card-arrow">→</span>
     </a>
@@ -103,6 +112,16 @@
       <span class="card-arrow">→</span>
     </a>
   </div>
+  <script src="dip-character.js?v=2"></script>
+  <script>
+    // 第一次來品味生死鬥（還沒有角色）→ 先去唱片行的序章捏角色；有角色就在標題下顯示他
+    (function(){
+      const ch = window.DipChar && DipChar.load();
+      if(!ch || !ch.profile){ location.replace('roguelike.html?prologue=1'); return; }
+      const el = document.getElementById('heroChar'); if(!el) return;
+      el.innerHTML = `<a class="hero-char-card" href="roguelike.html?char=1" title="改名字／造型">${DipChar.avatarSVG(ch.avatar, 36)}<span class="hcn">${DipChar.esc(ch.name||'黑膠玩家')}</span><span class="hcp">${DipChar.profileName(ch.profile)}</span><span class="hce">✏️</span></a>`;
+    })();
+  </script>
   <script src="music-map-widget.js?v=13"></script>
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
