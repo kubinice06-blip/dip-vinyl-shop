@@ -254,5 +254,129 @@
   "status": "full",
   "yearVerified": "卡單 1998 正確，但要注意 MB 的 first-release-date 記的是 **1998-11**（北美 35 軌版），日本盤 PCCG-00475 是 **1998-12-18**——同年、不同月，兩筆都在 1998。**遊戲發售年與原聲帶發行年**：NINTENDO 64《ゼルダの伝説 時のオカリナ》日本 **1998-11-21**（ja 維基 Date 欄），日本原聲盤 **1998-12-18**，**同年、唱片晚 27 天**；北美原聲盤（1998-11）與北美遊戲（1998-11-23）同月。**行文若要寫月份，必須指明是哪一版。**",
   "notes": "**試聽 unavailable 成立。** 目錄端點掃過近藤浩治四個藝人實體 × 六個店面（jp／us／gb／de／tw／hk），加日英兩種盤名各一次搜尋，**都沒有本盤**。原因同 Mario 64：任天堂的原聲盤不在 Apple Music 上。**維持 unavailable、不留 URL。**\\n**⚠ 陷阱要往下游傳**：Apple jp／tw／hk 有一筆 **1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》**（Various Artists、21 軌、2017），盤名含「ゼルダの伝説 時のオカリナ」，**任何以盤名子字串比對的腳本都會把它當本張**（裁定 162 的形狀：卡片盤名長、對照組短，但兩者共享最長的那一段）。**不得取用。**\\n**擋下策展層說法一處（與來源相反）**：「近藤浩治目錄裡篇幅最大的一份」——**假的**。同一位作曲家的《ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック》是兩片 59＋53＝**112 軌**，比本張的 82 軌長；策展層自己在下一張卡上就寫了那個數字。**行文不得寫「篇幅最大」。**\\n另擋下一處：「他從 Famicom 短曲循環轉向長篇場景音樂的分界」是敘事判斷、無來源，**不得寫成事實**。\\n可以寫的：「日本版 1998-12-18 Pony Canyon PCCG-00475 單片 82 軌」「北美版早一個月由 Nintendo of America 自營發行 35 軌版」「另有 Bensussen Deutsch & Associates 的 24 軌預購贈品」——三句都與 MB 相符（**但 BD&A 那筆 MB 沒填 barcode，策展層寫的 barcode 617885700026 本輪查不到來源，不得引用**）。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:近藤浩治|ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック",
+  "artist": "近藤浩治",
+  "album": "ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 745f04d2 的欄位：title「ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック」、artist-credit「近藤浩治」（實體 c376498a）、first-release-date 2000-06-23、primary-type Album、secondary-types [Soundtrack]。轄下 13 個 release：Official 4、**Promotion 3**、Bootleg 3、Pseudo-Release 2、狀態未填 1。",
+    "src": "https://musicbrainz.org/release-group/745f04d2-3408-39a9-ac60-c598b9c6128b"
+   },
+   {
+    "f": "同一端點的 release 明細：2000-06-23 JP Official，**Pioneer LDC PICA-2006**，CD，**兩片 59＋53＝112 軌**；另一筆同編號 PICA-2006 掛 **Geneon**（Pioneer LDC 改名後）、無日期、同 59＋53；2000-11-15 US Official，Nintendo of America（無編號），兩片 59＋53，《The Legend of Zelda: Majora's Mask Game Music Soundtrack CD Set》；2013-12-20 US **Promotion**，Club Nintendo 81456A，兩片 59＋53。德國 Nintendo of Europe 的兩筆 Promotion（3591540／3591566）只有 30＋24 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=745f04d2-3408-39a9-ac60-c598b9c6128b&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "同一 release-group 底下的 **2015-10-07 JP Official，Symphony No.5 TSCM-0029／TSCM-0030，兩片 59＋54 軌，盤名《ゼルダの伝説 ムジュラの仮面3D オリジナルサウンドトラック》**——比 2000 年原盤**第二片多一軌**，且盤名帶「3D」，是 3DS 重製版的原聲，不是原盤的重出。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=745f04d2-3408-39a9-ac60-c598b9c6128b&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release b843bebf（2000-06-23 JP Pioneer LDC PICA-2006）的逐軌曲目：兩片 59＋53 軌，第 1 軌〈タイトルデモ〉、第 2 軌〈オープニングデモ〉、第 3 軌〈追跡のテーマ〉、第 4 軌〈洞窟〉、第 5 軌〈ムジュラのテーマ〉，第二片末兩軌〈巨人去る〉〈スタッフロール〉。",
+    "src": "https://musicbrainz.org/release/b843bebf-d790-4215-ab70-6089d1644af6"
+   },
+   {
+    "f": "Apple Music 目錄端點逐一列完近藤浩治四個藝人實體在 jp／us／gb／de／tw／hk 六個店面的完整目錄，**沒有本盤**；以日文（`ムジュラの仮面 オリジナル`，jp）搜回 **0 筆**，以英文（`Majora's Mask Original Soundtrack`，us）搜回 15 筆全是翻奏（Theophany、The Marcus Hedges Trend Orchestra、Ready Player Piano、Masters of Sound…）。近藤浩治藝人頁上唯一叫《Majora's Mask》的是 1841643749（Daniel Welch & 近藤浩治，18 軌，2025），**是翻奏不是原盤**。",
+    "src": "https://itunes.apple.com/search?term=Majora%27s%20Mask%20Original%20Soundtrack&entity=album&limit=15&country=us"
+   },
+   {
+    "f": "日文維基〈ゼルダの伝説 ムジュラの仮面〉的 Date 欄記 NINTENDO 64 版**日本 2000 年 4 月 27 日**、美國 2000-10-24、歐洲 2000-11-17。原聲盤 2000-06-23 比日本版遊戲**晚 57 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC_%E3%83%A0%E3%82%B8%E3%83%A5%E3%83%A9%E3%81%AE%E4%BB%AE%E9%9D%A2"
+   }
+  ],
+  "hookCandidates": [
+   "兩片一百一十二軌，是他名下最長的一份",
+   "德國那兩筆促銷盤只放了三十加二十四軌，同一張碟在歐洲被砍掉一半"
+  ],
+  "sound": "MB release b843bebf 記兩片 59＋53＝112 軌（CD，Pioneer LDC PICA-2006）。第一片自〈タイトルデモ〉起、第二片以〈巨人去る〉〈スタッフロール〉收。MB 未填逐軌長度。**同一 release-group 底下的德國 Promotion 盤只有 30＋24 軌、2015 年的 3DS 版是 59＋54 軌——三種分片都不同，行文只能用 2000 年 PICA-2006 的 59＋53。**",
+  "keyTracks": [
+   "タイトルデモ",
+   "ムジュラのテーマ",
+   "巨人去る"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2000。MB first-release-date 2000-06-23、其下 2000-06-23 JP Official（Pioneer LDC PICA-2006）。**遊戲發售年與原聲帶發行年**：NINTENDO 64《ゼルダの伝説 ムジュラの仮面》日本 **2000-04-27**（ja 維基 Date 欄），原聲盤 **2000-06-23**，**同年、唱片晚 57 天**。",
+  "notes": "**試聽 unavailable 成立。** 目錄端點掃過近藤浩治四個藝人實體 × 六個店面，日文盤名搜尋回 0 筆、英文回 15 筆全是翻奏。原因同前兩張近藤卡：任天堂原聲盤不在 Apple Music 上。**維持 unavailable、不留 URL。**\\n**⚠ 陷阱**：近藤浩治的 Apple 藝人頁上有 1841643749《Majora's Mask》（Daniel Welch & 近藤浩治、18 軌、2025），**盤名與卡片幾乎相同、掛名還含卡片的藝人名**，`artistOk` 的雙向子字串比對與 `titleOk` 兩道都可能放行（c-98 第 1 條那個形狀）。**不得取用。**\\n**更正策展層一處事實**：策展層寫「同一編號後來在 Geneon 名下續行，**2015 年 10 月 7 日再由 Symphony No.5 以 TSCM-0029／0030 重出**」——**那不是重出**。MB 那筆的盤名是《ゼルダの伝説 ムジュラの仮面**3D** オリジナルサウンドトラック》、兩片 **59＋54** 軌（第二片比原盤多一軌），是 **3DS 重製版**的原聲。**行文不得把它寫成本盤的再發**；Geneon 那一筆（同 PICA-2006、同 59＋53）才是「同編號續行」。\\n可以寫的：「2000-06-23 Pioneer LDC PICA-2006 兩片 59＋53 軌」「北美版同年 11 月 15 日由 Nintendo of America 自營發行」——與 MB 相符。**另可補一筆策展層沒寫的**：2013-12-20 美國有一筆 Club Nintendo 81456A 的 Promotion 盤，同樣 59＋53 軌。\\n「他少數不由 Pony Canyon 而由 Pioneer LDC 發行的一張」——本輪沒有掃他的完整廠牌分佈，**行文不得寫「少數」這種計數詞**。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:下村陽子|LIVE A LIVE オリジナル・サウンドトラック",
+  "artist": "下村陽子",
+  "album": "LIVE A LIVE オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 743d0014 的欄位：title「LIVE A LIVE オリジナル・サウンドトラック」、artist-credit「下村陽子」（藝人實體名同為日文「下村陽子」，MBID b3933fd6，sort-name Shimomura, Yōko）、first-release-date 1994-08-25、primary-type Album、secondary-types [Soundtrack]。轄下 9 個 release：Official 5、Withdrawn 1、Bootleg 1、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/743d0014-f626-3715-83dd-bea0f254e15a"
+   },
+   {
+    "f": "同一端點的 release 明細**分成 41 軌與 43 軌兩代**：1994-08-25 JP Official，NTT出版 **PSCN-5007**，CD，**41 軌**，盤名《ライブ・ア・ライブ オリジナル・サウンド・**ヴァージョン**》；2008-07-11 XW Withdrawn，SQUARE ENIX SEMO-00041，41 軌。**43 軌那一代**：2012-05-02 JP Official，SQUARE ENIX **SQEX-10308**，CD，盤名改成《ライブ・ア・ライブ オリジナル・サウンド**トラック**》；2014 JP 同編號；2023-08-02 JP Digital SQEX-10308-1 與 XW Digital《LIVE A LIVE Original Soundtrack Re-Release》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=743d0014-f626-3715-83dd-bea0f254e15a&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "逐軌比對 MB release bbc6d12c（1994 原盤 41 軌）與 ed97350b（2012 SQEX-10308，43 軌）：**前 41 軌同名同序**（第 1 軌〈LIVE・A・LIVE〉、第 2 軌〈SELECT・A・LIVE〉、第 3 軌〈密命〉…原盤末兩軌〈Live over Again〉〈Live for Live〉），2012 版在**尾端追加兩軌**〈Battlissimo〉（第 42 軌）與〈Forgotten Wings 〜忘れられた翼〜〉（第 43 軌）。**是加曲版，不是二合一**（沒有任何一首來自別張碟，多出來的兩軌排在最後，符合裁定 140 的「加曲版」判準）。",
+    "src": "https://musicbrainz.org/release/ed97350b-1461-4118-bfbc-f491c70fffb9"
+   },
+   {
+    "f": "Apple Music jp collectionId 1696074156《LIVE A LIVE オリジナル・サウンドトラック **(再発売)**》：artistName 下村陽子、releaseDate **1994-01-01**（佔位日）、copyright「℗ 1994 SQUARE ENIX CO., LTD.」、trackCount **43**，`entity=song` 攤得出 43 軌、**43 軌全部有 previewUrl**。逐軌與 MB 的 **2012 年 43 軌版**同位置相符（差異只在寫法：〈忍音(しのびね）〉／〈忍音〉、〈最強ーVICTORY ROADー〉／〈最強 -VICTORY ROAD-〉、〈凛然たる戦い〉／〈凛然なる戦い〉等），**不是 1994 年的 41 軌原盤**。",
+    "src": "https://itunes.apple.com/lookup?id=1696074156&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ライブ・ア・ライブ〉的 Date 欄與內文都記 Super Famicom 版**日本 1994 年 9 月 2 日**由スクウェア發售。原聲盤 1994-08-25 比遊戲本體**早 8 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%82%A2%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%96"
+   }
+  ],
+  "hookCandidates": [
+   "原盤四十一軌，十八年後再版才多出兩首：〈Battlissimo〉與〈Forgotten Wings〉",
+   "盤名自己也改過一次——1994 年印的是「サウンド・ヴァージョン」，2012 年才變成「サウンドトラック」"
+  ],
+  "sound": "MB release bbc6d12c 記 1994 年原盤單片 **41 軌**（CD，NTT出版 PSCN-5007），開場〈LIVE・A・LIVE〉〈SELECT・A・LIVE〉〈密命〉，收尾〈Live over Again〉〈Live for Live〉。2012 年 SQEX-10308 在同樣的 41 軌之後追加〈Battlissimo〉與〈Forgotten Wings 〜忘れられた翼〜〉，成為 43 軌。MB 未填逐軌長度。**行文一律以 41 軌的原盤為準，不得說「這張碟有 43 首」。**",
+  "keyTracks": [
+   "LIVE・A・LIVE",
+   "密命",
+   "Live for Live"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1994。MB first-release-date 1994-08-25、其下 1994-08-25 JP Official（NTT出版 PSCN-5007，41 軌）、Apple 的 ℗ 年份也是 1994（**但 Apple 的 releaseDate 1994-01-01 是佔位日，不是真的發行日——裁定 140 附錄那個形狀，不得引用**）。**遊戲發售年與原聲帶發行年**：Super Famicom《ライブ・ア・ライブ》日本 **1994-09-02**（ja 維基），原聲盤 **1994-08-25**，**同年、唱片早 8 天**。",
+  "notes": "**ready 覆核通過，但配到的是加曲再版，不是原盤。** jp 1696074156 的盤名帶「(再発売)」，43 軌、43 軌皆有 previewUrl，逐軌與 MB **2012 年 SQEX-10308 那一代**同位置相符。**原盤是 41 軌**（1994 NTT出版 PSCN-5007），多出來的是尾端追加的〈Battlissimo〉〈Forgotten Wings 〜忘れられた翼〜〉兩軌——**依裁定 140 是「加曲版」（本張曲目完整排在前面、多出來的在後面、沒有別張碟的曲子），依裁定 77 可以接受**，但下游必須知道：**行文不得寫「這張碟有 43 首」，也不得把那兩軌當原盤曲目**。上架時 manifest 要註明版本差異（c-99 第 5 條的做法）。\\n固定試聽取第 1 軌〈LIVE・A・LIVE〉即原盤開場，**不需人工改指**（曲序沒有錯位，裁定 157 那個形狀不成立）。\\n**盤名要注意**：卡片用的《LIVE A LIVE オリジナル・サウンドトラック》其實是 **2012 年那一代的盤名**；1994 原盤印的是《ライブ・ア・ライブ オリジナル・サウンド・ヴァージョン》（片假名＋「ヴァージョン」）。卡片盤名取的是 MB release-group 的標題，依裁定 6 照收，**但行文提到 1994 年那張實體碟時不得用「サウンドトラック」這個名字**。\\n**策展層說法查證**：「1994 年 8 月 25 日由 NTT出版 以 PSCN-5007 發行，單片 41 軌」「2012 年 5 月 2 日 SQUARE ENIX 以 SQEX-10308 重出並補到 43 軌，2023 年再轉數位（SQEX-10308-1）」——**兩句全部與 MB 相符，可以寫**。「下村陽子離開 Capcom 進入 Square 之後的第一張整部作品原聲」與「Capcom 時期的《ストリートファイターII》她是團隊成員之一」——本輪查不到可點來源，**行文不得寫「第一張」**。\\n池中重複卡：0（策展層實掃 14,424 列，`下村陽子`／`Yoko Shimomura` 皆 0）。"
+ },
+ {
+  "key": "desc4:下村陽子|聖剣伝説 Legend of Mana オリジナル・サウンドトラック",
+  "artist": "下村陽子",
+  "album": "聖剣伝説 Legend of Mana オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 06bef54a 的欄位：title「聖剣伝説 Legend of Mana オリジナル・サウンドトラック」、artist-credit「下村陽子」（實體 b3933fd6）、first-release-date 1999-07-23、primary-type Album、secondary-types [Soundtrack]。**轄下只有 4 個 release**：Official 2、Bootleg 1（2004 台灣 MIYA MICA-0366／0367）、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/06bef54a-d29e-3201-9c07-768e4c5e79e6"
+   },
+   {
+    "f": "兩筆 Official 全文：1999-07-23 JP，DigiCube **SSCX-10034**，CD，**兩片 23＋32＝55 軌**；2004-10-20 JP，SQUARE ENIX **SQEX-10036／10037**，CD，同樣兩片 23＋32。**兩筆軌數與分片完全相同，沒有加曲版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=06bef54a-d29e-3201-9c07-768e4c5e79e6&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release f7daa7f3（1999-07-23 JP DigiCube SSCX-10034）的逐軌曲目：兩片 23＋32 軌，第 1 軌〈Legend of MANA 〜Title Theme〜〉、第 2 軌〈懐かしき歌〉、第 3 軌〈World of Mana〉、第 4 軌〈Song of MANA 〜Opening Theme〜〉；第二片末兩軌〈Nostalgic Song 〜Ending Theme for Mana's Story〜〉〈Song of MANA 〜Ending Theme〜〉。",
+    "src": "https://musicbrainz.org/release/f7daa7f3-2760-4a3f-bec9-65b91565a484"
+   },
+   {
+    "f": "Apple Music **jp** collectionId 251753897《聖剣伝説 Legend of Mana (Original Soundtrack)》：artistName 下村陽子、releaseDate **2004-10-20**、copyright「℗ 2004 SQUARE ENIX MUSIC」、trackCount 55，`entity=song` 攤得出 55 軌、**55 軌全部有 previewUrl**，兩片分佈 23／32。逐軌與 MB 原盤同位置相符（五處只是全形／半形與假名寫法差異，如第 16 軌 MB「港町 ポルボタ」／Apple「港町 ポルポタ」）。**這一筆只在 jp 店面有**——us／gb／de／tw／hk 五個店面的下村陽子目錄裡都沒有它。",
+    "src": "https://itunes.apple.com/lookup?id=251753897&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈聖剣伝説 LEGEND OF MANA〉的發売日欄記 PlayStation 通常版**1999 年 7 月 15 日**（其後ミレニアムコレクション版 2000-09-28、PS one Books 版 2002-02-21、アルティメットヒッツ版 2006-07-20、GA 版 2010-07-28、Remastered 版 2021-06-24）。原聲盤 1999-07-23 比遊戲本體**晚 8 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%81%96%E5%89%A3%E4%BC%9D%E8%AA%AC_LEGEND_OF_MANA"
+   }
+  ],
+  "hookCandidates": [
+   "開場與結尾是同一首〈Song of MANA〉的兩個版本，一頭一尾把兩片扣起來",
+   "MB 上這張只有四筆 release，本組最少的一張"
+  ],
+  "sound": "MB release f7daa7f3 記兩片 23＋32＝55 軌（CD，DigiCube SSCX-10034）。第一片自〈Legend of MANA 〜Title Theme〜〉起，第 4 軌是〈Song of MANA 〜Opening Theme〜〉；第二片以〈Nostalgic Song 〜Ending Theme for Mana's Story〜〉〈Song of MANA 〜Ending Theme〜〉收。MB 未填逐軌長度。2004 年的 SQEX-10036／10037 重出是同樣的兩片 23＋32。",
+  "keyTracks": [
+   "Legend of MANA 〜Title Theme〜",
+   "懐かしき歌",
+   "Song of MANA 〜Ending Theme〜"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1999。MB first-release-date 1999-07-23、其下 1999-07-23 JP Official（DigiCube SSCX-10034）。**Apple jp 251753897 的 releaseDate 2004-10-20 與 ℗ 2004 指向的是 MB 那筆 2004-10-20 的 SQUARE ENIX 重出（SQEX-10036／10037），內容與原盤相同（同樣兩片 23＋32）**，依裁定 77 只當訊號、不改卡單值。**遊戲發售年與原聲帶發行年**：PlayStation《聖剣伝説 LEGEND OF MANA》日本 **1999-07-15**（ja 維基發売日欄），原聲盤 **1999-07-23**，**同年、唱片晚 8 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 251753897**（55 軌、55 軌皆有 previewUrl、兩片分佈 23／32 與 MB 原盤相同、逐軌逐位置相符）。**只有 jp 店面有**——us／gb／de／tw／hk 五個店面的下村陽子完整目錄裡都沒有這一筆，這是「同一張碟在不同 storefront 的授權不一樣」（裁定 93）的又一例。探測落空的原因是**盤名的括號式改寫**：卡片《聖剣伝説 Legend of Mana オリジナル・サウンドトラック》、Apple《聖剣伝説 Legend of Mana (Original Soundtrack)》，日文尾綴被換成英文括號（裁定 123 那個「原聲帶尾綴」的形狀）。\\n固定試聽取第 1 軌〈Legend of MANA 〜Title Theme〜〉即原盤開場。\\n**⚠ 陷阱要往下游傳**：下村陽子的 Apple 目錄裡另有 **1572609041《聖剣伝説 レジェンド オブ マナ Remastered: The Soundtrack》54 軌**（2021 重製版，六個店面都有）與 **276283611《聖剣伝説 HEROES of MANA》49 軌**——前者盤名只差「Remastered」與片假名／拉丁的寫法、軌數只差一軌，**是本張最像的假陽性**；策展層已在「刻意不釘」列了 Legend of Mana Remastered。**不得取用。**\\n**策展層說法查證**：「DigiCube 編號 SSCX-10034，兩片 23＋32 軌」「2004 年 10 月 20 日 SQUARE ENIX 以 SQEX-10036／10037 重出」——**與 MB 相符，可以寫**。\\n**擋下策展層一處敘述**：「前兩作分別由菊田裕樹（《聖剣伝説2》1993）與伊藤賢治（《ファイナルファンタジー外伝 聖剣伝説》1991）寫，第四作 1999 年⋯交到她手上」——**這個列舉漏掉了《聖剣伝説3》(1995)**，而策展層自己在菊田裕樹那張卡上寫了「菊田在 Square 唯二的整部作品原聲之一（另一張是 1995 年的《聖剣伝説3》）」。**行文若要點系列前作，必須把 1995 年那一作算進去，或者整段不寫。**\\n池中重複卡：0。"
  }
 ]
