@@ -197,5 +197,103 @@
   "queryAlias": "Yoko Shimomura；キングダム ハーツ オリジナル・サウンドトラック；Kingdom Hearts OST",
   "reissuedBy": "",
   "g": "a"
+ },
+ {
+  "artist": "光田康典",
+  "album": "クロノ・トリガー オリジナル・サウンド・ヴァージョン",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "NTT出版（catno PSCN-5021〜5023，1995-03-25 JP 三片組，23／24／17 軌）",
+  "why": "光田康典的第一張整部作品原聲，也是他在 Square 從音效工程師轉成作曲家的那一張：1995 年 3 月 25 日由 NTT出版 以 PSCN-5021／5022／5023 三片組發行，共 64 軌。2004 年 10 月 1 日 NTT出版 以 NTCP-5021〜5023 重出，2019 年 7 月 10 日 SQUARE ENIX MUSIC 再以 Blu-ray 音源版 SQEX-20066 收錄全 64 軌。這張在他目錄裡是起點，與四年後的《Chrono Cross》構成同系列的兩端。實掃 seed_cards.json 全 14,424 列，`光田康典` 與羅馬拼音 `Yasunori Mitsuda` 兩種寫法都查過，池中 0 張（`Chrono` 唯一命中的第 2495 列是雷鬼歌手 Chronixx）。",
+  "risk": "盤名日文／英文兩套，且 MB 內部就分裂：本張 MB 標題是日文《クロノ・トリガー オリジナル・サウンド・ヴァージョン》，另一筆 335a2416-64a9-3572-ab6b-54fe93447176 的標題是英文《Chrono Trigger Original Soundtrack》（1999 年 DigiCube 重製版），兩者不是同一張碟——**這是本張最危險的假陽性**。店面序 GAME：Apple jp／us 兩店面唯一的官方條目是 collectionId 324080907《Chrono Trigger (Original Soundtrack) [DS Version]》（掛名 `光田康典`，releaseDate 記 1999-01-01），那是 2008 年 DS 重製版的音源、不是 1995 原盤，**不得當成本卡的固定試聽**；固定試聽預估 unavailable。封面走 CAA，release-group 端點 200（實測）。",
+  "mbNote": "釘 release-group 9e5bbb98-c915-314a-871a-eab6ed7dc6f5。回問確認：title「クロノ・トリガー オリジナル・サウンド・ヴァージョン」、artist-credit「光田康典」、first-release-date 1995-03-25、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（1995-03-25 JP/Official＝NTT出版 PSCN-5021〜5023、2004-10-01 JP/Official＝NTCP-5021〜5023、2019-07-10 JP/Official＝SQEX-20066 Blu-ray，另 TW/Bootleg、Bootleg、Pseudo-Release ×2）。刻意不釘：335a2416-64a9-3572-ab6b-54fe93447176《Chrono Trigger Original Soundtrack》（1999 DigiCube 重製版，非原盤）、ef116c91-cf79-371d-bb68-39e99733ff02《Chrono Trigger: The Brink of Time》（1995 acid-jazz 編曲盤，非原聲）、c19cb7ee-6bf5-4571-adf0-50eb56144bcd《Chrono Trigger Original Soundtrack》（2009 DS 版，非原盤）、5e0a65bb-2fdf-46a2-b88f-e8a6421f886a《CHRONO TRIGGER Orchestral Arrangement》（2019 管弦編曲盤）、48cedac5-2df6-4bd9-88ea-bb66511c75ce《SQUARE ENIX JAZZ -CHRONO TRIGGER-》（2022 爵士編曲盤）、18f79ab3-99e4-469a-915f-d5bd2f4def01《Chrono Trigger Remixes》（2007）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea，名下 84 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yasunori Mitsuda；Chrono Trigger Original Sound Version；クロノトリガー",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "光田康典",
+  "album": "Xenogears Original Soundtrack",
+  "year": 1998,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "DigiCube（catno SSCX-10013，1998-03-01 JP 兩片組，25＋19 軌）",
+  "why": "光田康典離開 Square 專職編制、改以外部作曲家身分交件的第一張：1998 年 3 月 1 日由 DigiCube 以 SSCX-10013 兩片組發行，25＋19 軌。2005 年 2 月 23 日 SQUARE ENIX 以 SQEX-10043／10044 重出，2018 年 4 月 4 日再出 Blu-ray 音源版 SQEX-20048（49 軌），2023 年 2 月 10 日轉全球數位。位置在《クロノ・トリガー》（1995）與《Chrono Cross》（1999）之間，是他三張代表作的中段。實掃 seed_cards.json 全 14,424 列，`光田康典`／`Yasunori Mitsuda`／`Xenogears` 全部零命中。",
+  "risk": "**掛名寫法在 MB 內部就不一致**：本張的 artist-credit 是羅馬拼音 `Yasunori Mitsuda`，而同一位藝人實體（118bf512）名下的《クロノ・トリガー》《Chrono Cross》兩張 artist-credit 都是 `光田康典`。依裁定第 6／70／120 條取 MB 藝人實體實際使用的寫法（`光田康典`），羅馬拼音進 queryAlias，以免在池中造出兩個鍵（裁定第 49 條的預防）。店面序 GAME：Apple jp collectionId 296408171（掛名 `光田康典`、releaseDate 1998-03-01，與 MB 原盤日期完全一致），us 店面同碟掛 `Yasunori Mitsuda`；取 jp。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 3f90f58a-37ba-375e-9e76-db6e6a60bd2d。回問確認：title「Xenogears Original Soundtrack」、artist-credit「Yasunori Mitsuda」（羅馬拼音，卡片掛名依第 120 條改採 MB 實體名 `光田康典`，理由見 risk）、first-release-date 1998-03-01、primary-type Album、secondary-types [Soundtrack]、轄下 13 個 release（1998-03-01 JP/Official ×2＝DigiCube SSCX 10013、2005-02-23 JP/Official＝SQEX-10043／10044、2018-04-04 JP/Official ×2＝SQEX-20048 Blu-ray、2023-02-10 XW/Official，另 TW/Bootleg ×3、Pseudo-Release ×4）。刻意不釘：04b2c678-1a5b-40d5-bf28-ff305e79c9a8《Myth: The Xenogears Orchestral Album》（2011 管弦編曲盤，非原聲）、ece06f1d-4c97-31f5-ba97-08d30591e868《CREID》（1998 編曲盤，secondary-types Remix）、5bcb0d72-2ca4-4918-bcfa-7610937cb1eb《Xenogears 20th Anniversary Concert》（2019 現場）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yasunori Mitsuda；ゼノギアス オリジナルサウンドトラック；Xenogears",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "光田康典",
+  "album": "Chrono Cross Original Soundtrack",
+  "year": 1999,
+  "genres": [
+   "world",
+   "classical"
+  ],
+  "label": "DigiCube（catno SSCX-10040，1999-12-18 JP 三片組，25／26／16 軌）",
+  "why": "光田康典目錄裡再發次數最多的一張：1999 年 12 月 18 日由 DigiCube 以 SSCX-10040 三片組發行共 67 軌；2005 年 6 月 29 日 SQUARE ENIX 以 SQEX-10047〜10049 重出，2019 年 9 月 4 日 SQUARE ENIX MUSIC 同時出全球數位版與日本 Blu-ray 音源版 SQEX-20068，2020 年另有《CHRONO CROSS 20th Anniversary Live Tour》現場盤。這張與 1995 年的《クロノ・トリガー》是同系列兩端，池中兩張都沒有。實掃 seed_cards.json 全 14,424 列，`光田康典`／`Yasunori Mitsuda` 零命中。",
+  "risk": "盤名兩套：MB 與 Apple us 用英文《Chrono Cross Original Soundtrack》，Apple jp 用日文《クロノ・クロス オリジナル・サウンドトラック》——同一 collectionId 1435281114 在兩個店面顯示不同語言的盤名（releaseDate 1999-12-18，與 MB 原盤日期完全一致）。店面序 GAME 取 jp。兩種寫法都要掃（裁定第 49／158 條）。MB 轄下有四筆 TW/Bootleg（1999／2004），是台灣翻版，不得當 release 證據。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 93f27892-85b8-3959-bfd3-038990078f5b。回問確認：title「Chrono Cross Original Soundtrack」、artist-credit「光田康典」、first-release-date 1999-12-12（MB 記的最早一筆是 1999-12-12 TW/Bootleg；最早的 Official 是 1999-12-18 JP＝DigiCube SSCX-10040，年份同為 1999）、primary-type Album、secondary-types [Soundtrack]、轄下 10 個 release（1999-12-18 JP/Official、2005-06-29 JP/Official、2019-09-04 XW/Official、2019-09-07 JP/Official，另 TW/Bootleg ×4、Pseudo-Release ×2）。刻意不釘：894efb3a-a273-4b8a-97ec-a4999182d785《CHRONO CROSS Orchestral Arrangement》（2019 管弦編曲盤，非原聲）、da9c7d47-8c59-3357-ae0b-fd34c7f8dcb5《Chrono Cross: Music Selection》（2000 精選）、b7edfcd3-181b-4f7e-b8a6-0b6138a2fec4 與 151ea528-c0a4-4e80-a9bf-933434bc9fa0（2020／2021 兩張 20 週年現場盤）、705e2d2a-c4c2-45bc-a238-634c2937c2e6《CHRONO ORCHESTRA Arrangement BOX》（2019 編曲盒）。藝人 MBID 118bf512-9ce9-42a5-95e0-10359bb3e3ea。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yasunori Mitsuda；クロノ・クロス オリジナル・サウンドトラック；Chrono Cross",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "崎元仁 / 岩田匡治",
+  "album": "FINAL FANTASY TACTICS Original Sound Track",
+  "year": 1997,
+  "genres": [
+   "classical"
+  ],
+  "label": "DigiCube（catno SSCX-10008，1997-06-21 JP 兩片組，42＋29 軌）",
+  "why": "崎元仁與岩田匡治從 Quest（伝説のオウガバトル、タクティクスオウガ）帶進 Square 的第一張案子：1997 年 6 月 21 日由 DigiCube 以 SSCX-10008 兩片組發行，42＋29 軌。2006 年 3 月 24 日 SQUARE ENIX 以 SQEX-10066／10067 重出，2007 年 5 月 30 日轉全球數位（Apple 的 releaseDate 即取這一天）。2025 年 10 月 1 日另有《FINAL FANTASY TACTICS Best Selection - Vinyl Soundtrack》黑膠選輯。這張與同批的《VAGRANTSTORY》《FINAL FANTASY XII》構成崎元在 Square 的三張主線。實掃 seed_cards.json 全 14,424 列，`崎元仁`／`Hitoshi Sakimoto`／`岩田匡治`／`Masaharu Iwata`／`Tactics` 全部零命中。",
+  "risk": "**掛名是兩人共作**：MB artist-credit 的順序是「岩田匡治 & 崎元仁」，但 Apple jp／us 的 collectionId 255190011 掛的是「崎元仁 & 岩田匡治」（崎元在前），且崎元是本案的音樂總監。依 c-95 裁定第 3 條的先例（MB 的 credit 順序是字母／建檔偏差時，採有獨立證據支持的順序），卡片掛名取 `崎元仁 / 岩田匡治`，依裁定第 16 條用 ` / ` 分隔；MB 的原順序已寫進 mbNote。店面序 GAME：Apple jp collectionId 255190011《Final Fantasy Tactics (Original Soundtrack)》releaseDate 2007-05-30（＝數位發行日，非原盤日；依第 77 條只當訊號），us 同一 collectionId 掛羅馬拼音。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 77f7682d-f156-39a6-9517-9e275e4e4ffa。回問確認：title「FINAL FANTASY TACTICS Original Sound Track」、artist-credit「岩田匡治 & 崎元仁」（卡片掛名改採 `崎元仁 / 岩田匡治`，理由見 risk）、first-release-date 1997-06-21、primary-type Album、secondary-types [Soundtrack]、轄下 9 個 release（1997-06-21 JP/Official＝DigiCube SSCX-10008、2006-03-24 JP/Official＝SQEX-10066／10067、2007-05-30 XW/Official 數位、XW/Official，另 TW/Bootleg ×3、Pseudo-Release ×2）。刻意不釘：0559d73c-d5da-4fdb-b1ab-44869842cd88《FINAL FANTASY TACTICS Best Selection - Vinyl Soundtrack》（2025 黑膠選輯，非原盤）、69bf8215-02a6-4c6a-badb-286f4d4bb6ba《FINAL FANTASY TACTICS Complete Soundtrack》（2025 重製版全集）、650c9c2b-5cf8-30d0-bb24-b019c5c00df6《FINAL FANTASY TACTICS ADVANCE Original Soundtrack》（2003 另一部作品）、19e7e540-c839-4e47-a357-2cdde27bc680《Final Fantasy Tactics A2》（2007 另一部作品）、53b7d96f-c386-4a68-9968-047bbe9ddcb9《FINAL FANTASY TACTICS ADVANCE RADIO EDITION》（廣播劇，secondary-types Audio drama）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb（崎元仁），名下 86 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hitoshi Sakimoto；Masaharu Iwata；岩田匡治；Final Fantasy Tactics (Original Soundtrack)；ファイナルファンタジータクティクス",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "崎元仁",
+  "album": "VAGRANTSTORY Original Soundtrack",
+  "year": 2000,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "DigiCube（catno SSCX-10042，2000-03-08 JP 兩片組，26＋31 軌）",
+  "why": "崎元仁在 Square 三張主線裡唯一一張單人掛名的：2000 年 3 月 8 日由 DigiCube 以 SSCX-10042 兩片組發行，26＋31 軌。2006 年 3 月 4 日 SQUARE ENIX 以 SQEX-10068／10069 重出，其後另有全球數位版（同 barcode 4988601460453）。位置在 1997 年與岩田匡治合作的《FINAL FANTASY TACTICS》與 2006 年的《FINAL FANTASY XII》之間，是他 1997–2006 這條 Square 線的中段。實掃 seed_cards.json 全 14,424 列，`崎元仁`／`Hitoshi Sakimoto`／`Vagrant` 全部零命中。",
+  "risk": "**Apple 上查無**：jp 與 us 兩店面用 `崎元仁 ベイグラントストーリー` 與 `崎元仁 Vagrant Story` 各搜一次，兩邊都回 0 筆——是真的沒有上架（搜到 0 筆而非「搜到了沒配上」，依裁定第 152 條的分界屬前者），固定試聽預估 unavailable。封面走 CAA，release-group 端點 200（實測）。盤名 MB 寫成單字連寫的《VAGRANTSTORY》（無空格），一般寫法是《Vagrant Story》，兩種都要掃；日文盤名《ベイグラントストーリー オリジナル・サウンドトラック》一併進 queryAlias。",
+  "mbNote": "釘 release-group 8eabbfc1-a141-3c63-b57a-7cb272fc0160。回問確認：title「VAGRANTSTORY Original Soundtrack」、artist-credit「崎元仁」、first-release-date 2000-03-08、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（2000-03-08 JP/Official＝DigiCube SSCX-10042、2006-03-04 JP/Official＝SQEX-10068／10069、XW/Official 數位，另 TW/Bootleg ×2、Pseudo-Release ×1）。同一藝人名下沒有第二筆同名 release-group（分頁全列 86 筆確認過）。藝人 MBID 53a2cda4-31d0-405e-8a9d-5027c2479ebb。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hitoshi Sakimoto；Vagrant Story Original Soundtrack；ベイグラントストーリー オリジナル・サウンドトラック",
+  "reissuedBy": "",
+  "g": "a"
  }
 ]

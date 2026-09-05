@@ -232,5 +232,219 @@
   "queryAlias": "Kohei Tanaka；Aim for the Top! Music Encyclopedia；GunBuster；トップをねらえ 音楽大図鑑",
   "reissuedBy": "",
   "g": "b"
+ },
+ {
+  "artist": "澤野弘之",
+  "album": "MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK",
+  "year": 2010,
+  "genres": [
+   "classical"
+  ],
+  "label": "MusicRay'n（catno SMCL-20004）",
+  "why": "澤野弘之接下 Gundam 正傳劇伴的第一張，2010-03-10 由 MusicRay'n 以 SMCL-20004 發行，同系列後續出到第四張（2014），2020-08-07 SUNRISE Music Label 以《機動戦士ガンダムUC オリジナルサウンドトラック 1》重出。這是他從電視劇伴轉進大型動畫企劃的起點。池中澤野弘之一張都沒有（實掃 seed_cards.json 全 14,424 列，澤野弘之與 Sawano 兩種寫法皆 0 筆），Gundam 系列的原聲盤在池中也一張都沒有。",
+  "risk": "同一張碟有英文與日文兩種盤名（MB 的 RG 用英文 MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK、2014 與 2020 的 release 用日文《機動戦士ガンダムUC オリジナルサウンドトラック》），跨文字系統的去重兩邊都要掃（裁定第 49 條）。Apple jp collectionId 1524640230「機動戦士ガンダムUC オリジナルサウンドトラック 1」掛 澤野弘之、releaseDate 2010-03-10、24 軌，是靠藝人頁 lookup（artistId 156620523，Hiroyuki Sawano，130 張）撈到的——用英文盤名搜 jp 回的全是 SawanoHiroyuki[nZk] 的別的專輯，屬裁定第 166 條的形狀；同一頁還有 OST 2（520758314／1524643042）、3（604790361／1524642700）、4（1525247143）四筆，盤名只差尾號。另有 2019 年《機動戦士ガンダムUC ニューベストサウンドトラック》精選。",
+  "mbNote": "釘 release-group ded04e73-1c32-4a2b-9a71-6164a20b7c26。回問確認：title「MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK」、artist-credit「澤野弘之」、first-release-date 2010-03-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 3：MusicRay'n SMCL-20004 2010、サンライズ音楽出版 2014、SUNRISE Music Label 2020〔標題 機動戦士ガンダムUC オリジナルサウンドトラック 1〕）。刻意不釘：eefc3e0e-17d8-45f8-8dc4-9d5463ed0c04《MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK 2》、61dbe02e-6a30-4a5c-8d07-ed7773801420《同 3》、c61c9ed4-3318-4b5e-b7b7-e148be60f5f4《同 4》（皆續集）、ca536f04-884b-4965-b6c9-9a864fc8bbff《機動戦士ガンダムUC ニューベストサウンドトラック》（精選，非原聲）、d8690835-dc8d-411a-821b-828acd3eab49《Mobile Suit Gundam Unicorn Unreleased Soundtrack》（未收錄曲集）、4f849a18-b4a9-4142-93c9-9a61e3ef9ef8《MOBILE SUIT GUNDAM UNICORN suite》（2025 EP）。藝人 MBID 60d2ea34-1912-425f-bf9c-fc544e4448cd，用 release-group?artist=…&limit=100&offset= 分頁全列共 181 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroyuki Sawano；機動戦士ガンダムUC オリジナルサウンドトラック；Mobile Suit Gundam Unicorn Original Soundtrack",
+  "reissuedBy": "SUNRISE Music Label（2020）",
+  "g": "b"
+ },
+ {
+  "artist": "澤野弘之",
+  "album": "TVアニメ「進撃の巨人」オリジナルサウンドトラック",
+  "year": 2013,
+  "genres": [
+   "classical",
+   "rock"
+  ],
+  "label": "PONY CANYON（catno PCCG-01351）",
+  "why": "澤野弘之最被引用的一張劇伴，2013-06-28 由 PONY CANYON 以 PCCG-01351 發行，同日另有英文盤 Attack on Titan (Original Soundtrack)，2013 年 7 月 Ponycanyon Korea 以 PCKD-30143 發韓國盤；此後 Season 2（2017）、Season 3（2019）、The Final Season（2021–23）各出一張。池中澤野弘之一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名帶 TVアニメ 前綴與「」括號，續作四張的盤名結構相同、只差季別字樣，是最強的假陽性；英文盤名 Attack on Titan (Original Soundtrack) 與韓文盤名「진격의 거인」오리지널 사운드 트랙 屬跨文字系統的第二、第三種寫法，去重三種都要掃（裁定第 49 條）。MB 有三筆 release 的 country 被填成 AF（阿富汗），看起來是建檔錯誤而非真的阿富汗發行，判斷發行地時不採。Apple jp collectionId 661050312「TVアニメ「進撃の巨人」オリジナルサウンドトラック」掛 澤野弘之、releaseDate 2013-06-28，與卡片盤名逐字相同；同一頁的 1239706770（Season 2）與 1468037766（Season3）是最像的假陽性。",
+  "mbNote": "釘 release-group a75812d1-c4d3-4583-bb77-7cdbd82a8ab6。回問確認：title「TVアニメ「進撃の巨人」オリジナルサウンドトラック」、artist-credit「澤野弘之」、first-release-date 2013-06-28、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 2〔PONY CANYON PCCG-01351〕、AF/Official 3〔國別欄疑為建檔錯誤〕、KR/Official 1、GB/Official 1、Pseudo-Release 1）。刻意不釘：bdb150b2-6b97-4a80-b01d-50373e31d187《TVアニメ「進撃の巨人」オリジナルサウンドトラックII》、f17d521f-f8e9-41d8-9b0e-e270d5d905ed《同 Season 2》、58d84467-7a4d-428b-8637-417ac36ac42b《同 Season 3》、4fb3d3f9-8d7e-445d-87b9-511ea5936691《同 The Final Season》（皆續集）、de24f0b9-25bb-48d6-b91b-2b3ef09a774d《劇場版「進撃の巨人」前編〜紅蓮の弓矢〜》與 d6540234-5395-4e81-a245-1fe9f17cd114《同後編〜自由の翼〜》（劇場版）、161a3ad5-ce7c-46a5-8e0c-385c1066b278《The Final Season Original Sound Track Complete Album》（精選，非原盤）。藝人 MBID 60d2ea34-1912-425f-bf9c-fc544e4448cd。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroyuki Sawano；Attack on Titan (Original Soundtrack)；진격의 거인 오리지널 사운드 트랙；Shingeki no Kyojin",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "BERSERK",
+  "year": 1997,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "vap（catno VPCG-84639）",
+  "why": "平沢進替 TV 版《剣風伝奇ベルセルク》寫的原聲盤，1997-11-06 由 vap 以 VPCG-84639 在日本發行，同日另出國際版《BERSERK Original Soundtrack》；1999 年他另替遊戲《ベルセルク 千年帝国の鷹篇》寫過一張，2004 年再出主題曲集。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，平沢進與 Hirasawa 兩種寫法皆 0 筆），他的 P-MODEL 時期與個人作品在池中同樣空白。",
+  "risk": "盤名只有 BERSERK 一個常見英文字：池中已有 Gary Numan《Berserker》與 Roy Harper《Flat Baroque and Berserk》兩張，皆非本張；Apple jp 用 BERSERK 搜回的前四筆全是 2021–25 年不相干藝人的同名單曲（vamplug、AFOK、APHRO），子字串比對誤中率極高（裁定第 124 條的形狀）。平沢進藝人頁（Apple jp artistId 76056888，Susumu Hirasawa，15 張）有兩筆同名的《BERSERK Original Soundtrack》，releaseDate 都是 1997-11-06、軌數一個 11 一個 10（collectionId 1652625970 與 1652630218）——同名同日的雙胞胎，選定固定試聽時要記下取的是哪一個。MB 轄下 3 筆是 Bootleg／Pseudo-Release，依裁定第 43 條不算背書。日文盤名《剣風伝奇ベルセルク》是第二種寫法。",
+  "mbNote": "釘 release-group 5b0d84c5-34ce-3156-9123-09cc50dffd3a。回問確認：title「BERSERK」、artist-credit「平沢進」、first-release-date 1997-11-06、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 1〔vap VPCG-84639〕、XW/Official 1〔BERSERK Original Soundtrack〕、TW/Bootleg 2、Bootleg 1、Pseudo-Release 2）。刻意不釘：25df9b52-48f3-37f1-8a78-2c61c7f9b48b《BERSERK-Forces-》（1997 單曲）、32d01bc2-aee8-3e3d-bd46-b6f86023d677《ベルセルク 千年帝国の鷹篇 喪失花の章 オリジナルゲームサウンドトラック》（遊戲原聲，屬 c-101 範疇）、6316b695-e07b-45ab-a6ee-1bc9a61a9cf4《ベルセルク 〜千年帝国の鷹篇 聖魔戦記の章〜 テーマ曲集》（主題曲集）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab（另有一個標為 imposter 的同名實體 f7a56d48-092f-40b3-8ab8-9dc9623767ba，未採），用 release-group?artist=…&limit=100&offset= 分頁全列共 131 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；BERSERK Original Soundtrack；剣風伝奇ベルセルク",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "千年女優",
+  "year": 2002,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Chaos Union (Teslakite)（catno CHTE-0022）",
+  "why": "平沢進與今敏合作的第一張劇場動畫原聲盤，2002-09-06 由他自營的 Chaos Union／Teslakite 以 CHTE-0022 發行；四年後同一家廠牌以 CHTE-0038 出《パプリカ》，兩張加上 2004 年的《妄想代理人》構成他替今敏寫的全部劇伴。自營廠牌發行是這幾張在串流上難找的直接原因。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "MB 只有一個 JP Official release 加兩筆 Pseudo-Release，兩筆 Pseudo 用英文盤名 Millennium Actress——跨語言的第二種寫法，去重要一起掃。Apple jp 用日文盤名搜回的是平沢進的《Kyuusai No Gihou》與一堆不相干的專輯；他的 Apple jp 藝人頁（artistId 76056888）15 張裡只有 BERSERK 那兩筆與本張無關的個人作品，千年女優 0 筆命中——Teslakite 的自營盤沒有上 Apple，固定試聽要走 YouTube 官方專輯播放清單。同名的還有電影本身與各種翻奏。",
+  "mbNote": "釘 release-group 3a2b52ef-9ce5-330a-b9e0-87199b968fcf。回問確認：title「千年女優」、artist-credit「平沢進」、first-release-date 2002-09-06、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 1〔Chaos Union (Teslakite) CHTE-0022〕、Pseudo-Release 2〔Millennium Actress〕）。刻意不釘：e62983b3-f5a5-3ceb-9b69-96271a526506《妄想代理人 オリジナルサウンドトラック》與 e511b979-410b-3cad-98f8-81a293b06975《『妄想代理人』アウトテイク・コレクション》（今敏另一部作品）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；Millennium Actress；Sennen Joyu",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "パプリカ オリジナルサウンドトラック",
+  "year": 2006,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Chaos Union (Teslakite)（catno CHTE-0038）",
+  "why": "平沢進與今敏最後一次合作的劇場動畫原聲盤，2006-11-23 由 Chaos Union／Teslakite 以 CHTE-0038 發行，同編號另出英文標題版《Paprika Original Soundtrack》；隔年另有一張 e7c6c955-75f9-421f-ad1b-b50ba5d63027《Paprika》。與 2002 年《千年女優》同批補進本批。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名前段パプリカ 與 2018 年 Foorin／2020 年 米津玄師 的同名單曲《パプリカ》完全撞字——Apple jp 用原文盤名搜，前幾筆全是那兩首兒歌單曲（1537765253、1537279370），是本張最強的假陽性，配對必須連「オリジナルサウンドトラック」一起比。平沢進 Apple jp 藝人頁（artistId 76056888）パプリカ 0 筆命中，Teslakite 的自營盤沒有上 Apple，固定試聽要走 YouTube 官方專輯播放清單。英文盤名 Paprika Original Soundtrack 是第二種寫法。",
+  "mbNote": "釘 release-group 54c75c86-bf80-3a18-b77a-6dab25d1a558。回問確認：title「パプリカ オリジナルサウンドトラック」、artist-credit「平沢進」、first-release-date 2006-11-23、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 2：Chaos Union (Teslakite) CHTE-0038 兩筆〔一筆標題作 “Paprika” Original Soundtrack〕、XW/Official 2、US/Official 1）。刻意不釘：e7c6c955-75f9-421f-ad1b-b50ba5d63027《Paprika》（2007 另一個 release-group）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；Paprika Original Soundtrack；パプリカ",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "大野雄二",
+  "album": "Original Soundtrack from Lupin III",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Columbia（catno YP-7071-AX）",
+  "why": "大野雄二替《ルパン三世》第二 TV 系列寫的第一張原聲盤，1978-01-25 由 Columbia 以 YP-7071-AX 發行；1985 年以 33C35-7575 重出、1994 年出 COCC-12206、2015-10-14 再以 COCX-39261 發行並改名《ルパン三世 オリジナル・サウンドトラック》。池中大野雄二只有 1983 年的《ルパン三世 カリオストロの城 オリジナル・サウンドトラック》一張（實掃 seed_cards.json 全 14,424 列，大野雄二與 Yuji Ohno 兩種寫法都查過），系列起點的這一張沒有。",
+  "risk": "MB 的 RG 標題是英文《Original Soundtrack from Lupin III》，2015 再發改成日文《ルパン三世 オリジナル・サウンドトラック》——跨文字系統的兩種盤名，而後者與池中既有那張《ルパン三世 カリオストロの城 オリジナル・サウンドトラック》只差中間的作品名，去重兩種都要掃並看完整字串（裁定第 49／162 條）。Apple 的掛名用羅馬拼音 Yuji Ohno（jp artistId 73404621，100 張），與池中既有卡的日文掛名分屬兩種寫法；他的 Apple 目錄裡 66 筆 LUPIN 相關全部是 1999 年之後 Lupintic 系列的重新錄音（JAZZ、the Last Job、Pt. V／Pt. 6 等），1978 年那張原盤 Apple 上沒有——固定試聽要走 YouTube 官方專輯播放清單或依 §4 人工核對的 collectionId，且要特別小心不要配到 Lupintic 的重錄版。",
+  "mbNote": "釘 release-group 10cd5905-2af3-46e4-9729-c06e347699d7。回問確認：title「Original Soundtrack from Lupin III」、artist-credit「大野雄二」、first-release-date 1978-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 6：Columbia YP-7071-AX 1978、33C35-7575 1985、另一筆 1985、COCC-12206 1994、COCX-39261 2015〔標題 ルパン三世 オリジナル・サウンドトラック〕等）。刻意不釘：dcae5ca1-8709-4e1c-80bc-6b9807cd6325《Lupin the 3rd: Original Soundtrack 2》、49cdada1-d41e-463b-bc2d-c0a14eee02f5《同 3》（續集）、54dc40d2-dd03-3100-86e2-d39844e7c1f4《ルパン三世 カリオストロの城 オリジナル・サントラBGM集》（池中已有同一張碟的卡）、3f8286ee-7ba8-4f6d-8831-5373556ba4bf《ルパン三世 パーフェクト・コレクション》、fd841d4a-3d51-4388-a4b1-6d827eb9a819《ルパン三世 BOX》、eb5863c1-c2fb-498c-acf3-5ec89f3ceabf《LUPIN THE BEST! PUNCH THE ORIGINALS》（皆精選或套裝，非原盤）。藝人 MBID 49b6b461-0e97-4e96-8e5f-b77192ea7762，用 release-group?artist=…&limit=100&offset= 分頁全列共 86 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuji Ohno；ルパン三世 オリジナル・サウンドトラック；Lupin the Third Original Soundtrack",
+  "reissuedBy": "Columbia（2015，COCX-39261）",
+  "g": "b"
+ },
+ {
+  "artist": "菊池俊輔",
+  "album": "ドラゴンボール 音楽集",
+  "year": 1986,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Columbia（catno CX-7272）",
+  "why": "菊池俊輔替《ドラゴンボール》TV 版寫的劇伴集，1986-04-21 由 Columbia 以 CX-7272 發行（同編號另有一筆標題加了「テレビ・オリジナル・サウンドトラック」副標），2003-09-25 Columbia Music Entertainment 以 COCC-72015 重出。他名下 34 個 release-group 裡，《ドラゴンボール》《ドラゴンボールZ》與《ドラえもん》三條線份量最重，本張是其中的起點。池中菊池俊輔一張都沒有（實掃 seed_cards.json 全 14,424 列，菊池俊輔與 Kikuchi Shunsuke 兩種寫法皆 0 筆），東映動畫 1970–80 年代的劇伴在池中整片空白。",
+  "risk": "同一 RG 底下兩筆同編號 CX-7272 的 release 標題長度不同（帶／不帶「テレビ・オリジナル・サウンドトラック」副標），是裁定第 152 條那種副標串進盤名的形狀，卡片取 RG 標題。續作《ドラゴンボールZ 音楽集 vol.1／vol.2》盤名只差 Z 與卷號。英文盤名 Dragon Ball: Music Collection 是第二種寫法。Apple jp 用原文盤名搜回的全是 ZARD、Zedd 等後世主題曲；菊池俊輔 Apple jp 藝人頁（artistId 193509151，16 張）ドラゴンボール 0 筆命中——1986 年那張 Apple 上沒有，固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 6c1c9bae-2aa0-380f-b7ce-48e696028434。回問確認：title「ドラゴンボール 音楽集」、artist-credit「菊池俊輔」、first-release-date 1986-04-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 3：Columbia CX-7272 兩筆、Columbia Music Entertainment COCC-72015 2003；Pseudo-Release 2）。刻意不釘：509efbd4-7686-430a-b68f-00d6237bffea《ドラゴンボールZ 音楽集 vol.1》、ad78c289-9598-4b6d-88e6-61a358d7cfa2《同 vol.2》（續作系列）、d84f5899-1b69-4e9a-90a3-b8c00dc175ca《ドラゴンボール/ドラゴンボールZ大全集》與 38c1e4c4-ceee-4bf8-af97-edd39561fa55《Dragon Ball Z BGM Collection CD-BOX》（套裝精選）、6043649c-48ef-456c-b0df-7efeb25cc542《菊池俊輔BGMコレクョン》與 602a43b1-376c-4794-8822-0c3d27ec1538《菊池俊輔 作曲50周年 CD-BOX》（皆精選，非原盤）。藝人 MBID 3240614e-869e-4c37-94ca-65a570a2d7cb，用 release-group?artist=…&limit=100&offset= 分頁全列共 34 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shunsuke Kikuchi；ドラゴンボール 音楽集 テレビ・オリジナル・サウンドトラック；Dragon Ball: Music Collection",
+  "reissuedBy": "Columbia Music Entertainment（2003，COCC-72015）",
+  "g": "b"
+ },
+ {
+  "artist": "神前暁",
+  "album": "化物語 音楽全集 Songs & Soundtracks",
+  "year": 2011,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Aniplex（catno SVWC-7814／7815）",
+  "why": "神前暁替〈物語〉シリーズ第一部《化物語》寫的劇伴，MB 上原本是兩張隨 Blu-ray 附贈的《劇伴音楽集 其ノ壹／其ノ貮》（2010），2011-12-21 Aniplex 以 SVWC-7814／7815 把劇伴與歌曲整編成這張兩片裝音楽全集，是這套音樂唯一以獨立商品形態發行的版本。池中神前暁一張都沒有（實掃 seed_cards.json 全 14,424 列，神前暁與 Kousaki／Kosaki 三種寫法皆 0 筆），〈物語〉シリーズ 在池中完全沒有代表。",
+  "risk": "MB 的 primary-type 是 Album、secondary-types 含 Compilation 與 Soundtrack；依 §5.6 明文與 c-90 裁定第 3 條，primary-type=Album 照一般 Album 寫法、exceptionReason 與 exceptionEvidenceUrls 留空。不釘 2010 那兩張的理由寫在 mbNote：它們的 MB 標題把 OP 單曲名（sugar sweet nightmare）與劇伴音楽集串成同一個字串，卡片盤名無法乾淨取用。英文／羅馬拼音盤名有兩種（Bakemonogatari Complete Music Works: Songs & Soundtracks／Bakemonogatari Ongaku Zenshuu: Songs & Soundtracks，MB 的兩筆 Pseudo-Release 各用一種），去重三種都要掃。Apple jp 用原文盤名搜七個店面 0 筆；神前暁 Apple jp 藝人頁（artistId 404614477，Satoru Kosaki，17 張）物語 0 筆命中，只有 1535798229《歌物語 Special Edition》掛在「物語シリーズ」這個名義下、且是歌曲精選不是本張。固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group c39bf004-2fd9-4d0f-9921-0b5ef781148e。回問確認：title「化物語 音楽全集 Songs & Soundtracks」、artist-credit「神前暁」、first-release-date 2011-12-21、primary-type Album、secondary-types [Compilation, Soundtrack]、轄下 3 個 release（JP/Official 1〔Aniplex SVWC-7814、SVWC-7815〕、Pseudo-Release 2）。刻意不釘：fc21f4c3-eca9-4c99-a9ce-e8b0d2cdaaa8《「sugar sweet nightmare」&「化物語」劇伴音楽集 其ノ壹》與 72380bbe-62aa-4454-93b1-84e65dd17226《「化物語」劇伴音楽集 其ノ貮&あとがたり》（2010 兩張隨碟附贈盤，RG 標題把單曲名與劇伴集串在一起）、318a3d21-b8d0-4898-8b53-dd518e907061 起的《偽物語》《猫物語》《傾物語》各卷劇伴音楽集（續作系列）、1588bd3d-8c1f-48a3-b21d-18ddeb8a6fc1《<物語>シリーズ セカンドシーズン Original Soundtracks》（整編精選，非原盤）。藝人 MBID 557e6938-404b-4332-a169-bec2b77fe05b，用 release-group?artist=…&limit=100&offset= 分頁全列共 79 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Satoru Kousaki；Satoru Kosaki；Bakemonogatari Complete Music Works: Songs & Soundtracks；Bakemonogatari Ongaku Zenshuu",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nujabes / Fat Jon",
+  "album": "samurai champloo music record: departure",
+  "year": 2004,
+  "genres": [
+   "hiphop",
+   "jazz"
+  ],
+  "label": "Victor（catno VICL-61411）",
+  "why": "《サムライチャンプルー》四張原聲盤裡由 Nujabes 與 Fat Jon 共同署名的第一張，2004-06-23 由 Victor 以 VICL-61411 發行，2008 年 JVC 出韓國盤 JEKAC8001，2018 年 Victor 又出一筆 VICL-61411 F（狀態 Withdrawn）。同系列另有 masta（Force of Nature／Tsutchie）、impression（三方共同）與 playlist（Tsutchie）。池中 Nujabes 已有三張個人作品（Metaphorical Music 2003、Modal Soul 2005、Spiritual State 2011，實掃 seed_cards.json 全 14,424 列），但他最廣為流傳的這套動畫劇伴一張都沒有——2026-09-04 店主已明示沒有「同一藝人上限三張」這條規則（裁定第 150 條），三張不是不收的理由。",
+  "risk": "掛名是共同署名：MB 的 artist-credit 作「Nujabes / Fat Jon」（斜線，與裁定第 16 條池中既有寫法一致），Apple jp 記成「Nujabes/fat jon」（無空格、小寫），池中既有三張則是單掛 Nujabes——本卡另立共同掛名鍵，因為這確實是兩人共同署名的碟、不是同一人的第二種寫法。Apple jp collectionId 1721842998「Samurai Champloo Music Record Departure」（無冒號、字首大寫），releaseDate 2004-06-23；同一頁 1721843312 是 impression，兩張盤名只差最後一個字。MB 轄下有 1 筆 XW Bootleg（無廠牌 SCR002，標題只作 departure）與 1 筆 Withdrawn，依裁定第 43 條都不算再發背書。",
+  "mbNote": "釘 release-group 109bed29-720c-3a93-88ae-af83a464e5ed。回問確認：title「samurai champloo music record: departure」、artist-credit「Nujabes / Fat Jon」、first-release-date 2004-06-23、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（JP/Official 4〔Victor VICL-61411〕、KR/Official 1〔JVC JEKAC8001〕、Official 1、JP/Withdrawn 1、XW/Bootleg 1、狀態未填 1、Pseudo-Release 2）。刻意不釘：e8c3e38f-de01-30e4-af7c-5eabc68d3471《samurai champloo music record: impression》、1b6101ec-146c-33e4-871d-048ad3557f62《同 masta》、655400ef-8e44-3604-8fe5-86c9565b5aa5《同 playlist》（同系列他卷，掛名各不相同）、ab6894f3-9f49-32db-a764-1a67b17abf38《Samurai Champloo Music Record: Katana》（掛 Various Artists 的精選）、e2444f98-1e73-402c-9194-12a4575a5450《Lost Lullabies - Samurai Champloo Unreleased Tracks》（未收錄曲集）、2d91c1d5-a057-47fb-8f83-4f7afdb3dc2f《Samurai Champloo Rhythm Track》（掛 Masafumi Takada，另一部遊戲作品）。Fat Jon 實體 f9288855-58f9-42ed-8001-6edc34d2f00a（MB 主名 Fat Jon the Ample Soul Physician）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nujabes；Fat Jon；Fat Jon the Ample Soul Physician；Samurai Champloo Music Record Departure；サムライチャンプルー",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "大島ミチル",
+  "album": "鋼の錬金術師 オリジナルサウンドトラック 1",
+  "year": 2004,
+  "genres": [
+   "classical"
+  ],
+  "label": "Aniplex（catno SVWC-7191）",
+  "why": "大島ミチル替 2003 年版《鋼の錬金術師》寫的第一張劇伴，2004-03-24 由 Aniplex 以 SVWC-7191 發行（原盤標題帶「TVアニメーション」前綴），2005 年以 SVWC-1034 重出、2022 年再以 ANXX01082B00Z 發行；同系列續出 2、3 與劇場版《シャンバラを征く者》。她名下 103 個 release-group 大半是東寶特攝與日劇，這一組是她在動畫這邊最完整的一套。池中大島ミチル一張都沒有（實掃 seed_cards.json 全 14,424 列，大島ミチル與 Michiru Oshima 兩種寫法皆 0 筆）。",
+  "risk": "同一張碟在 MB 有三種標題：2004 原盤《TVアニメーション 鋼の錬金術師 オリジナルサウンドトラック1》、2005 再發《鋼の錬金術師 オリジナルサウンドトラック 1》（即 RG 標題）、2022 版《鋼の錬金術師 オリジナル・サウンドトラック》（無編號、中間多一個中黑）；Apple jp 用的是第三種（collectionId 1618724980，掛 大島ミチル、releaseDate 2004-03-24），三種寫法都要進去重。同一頁的 1618725351（2）、1618726267（3，掛 Various Artists）、1618726452（劇場版）是最像的假陽性。英文盤名 Fullmetal Alchemist Original Soundtrack 1 是跨語言的第四種寫法。",
+  "mbNote": "釘 release-group 0d0869a0-b725-35bc-9fc5-915fdfbc180c。回問確認：title「鋼の錬金術師 オリジナルサウンドトラック 1」、artist-credit「大島ミチル」、first-release-date 2004-03-24、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 3：Aniplex SVWC-7191 2004、SVWC-1034 2005、ANXX01082B00Z 2022；Pseudo-Release 2）。刻意不釘：516f7ed5-e10c-3444-adbc-b8126ce703a3《鋼の錬金術師 オリジナルサウンドトラック 2》、cff60ee7-3c1b-3f85-aa93-0d2c70bb4bd2《同 3》（續集）、ca8b2ce9-700d-3606-bb75-f13a0962fda9《劇場版 鋼の錬金術師 シャンバラを征く者 オリジナル・サウンドトラック》（劇場版另一部）。藝人 MBID e6fae4d5-2a94-433d-b046-e34d7d136429，用 release-group?artist=…&limit=100&offset= 分頁全列共 103 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Michiru Oshima；TVアニメーション 鋼の錬金術師 オリジナルサウンドトラック1；鋼の錬金術師 オリジナル・サウンドトラック；Fullmetal Alchemist Original Soundtrack 1",
+  "reissuedBy": "Aniplex（2005，SVWC-1034）",
+  "g": "b"
+ },
+ {
+  "artist": "横山菁児",
+  "album": "聖闘士星矢 音楽集",
+  "year": 1987,
+  "genres": [
+   "classical"
+  ],
+  "label": "Columbia（catno CX-7296）",
+  "why": "横山菁児替《聖闘士星矢》TV 版寫的第一張劇伴，1987-01-21 由 Columbia 同時以 CX-7296（LP）與 32CC-1368（CD）發行，2003-09-25 Columbia Music Entertainment 以 COCC-72009 重出；同系列此後出到音楽集Ⅷ（1989）與冥王ハーデス篇（1990），是他名下 34 個 release-group 的主幹。池中横山菁児一張都沒有（實掃 seed_cards.json 全 14,424 列，横山菁児與 Seiji Yokoyama 兩種寫法皆 0 筆），東映動畫 1980 年代的管弦劇伴在池中沒有代表。",
+  "risk": "同系列八張的盤名只差尾端的羅馬數字（本張無數字），是最強的假陽性；1987-07 另有《聖闘士星矢 ヒット曲集II いかなる星の下に》（Album/Compilation），屬歌曲精選不是劇伴。英文盤名 Saint Seiya TV Original Soundtrack 與法文再版名 Les Chevaliers du Zodiaque 屬跨語言的第二、三種寫法，去重都要掃。Apple jp 用原文盤名搜回的全是不相干的近年單曲；横山菁児 Apple jp 藝人頁（artistId 408923928，Seiji Yokoyama，22 張）3 筆命中全部是 2019–21 年的單曲（1488458605、1502253529、1553666625），1987 年那張 Apple 上沒有——固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 7153d9e7-8d2d-4d27-9211-ea80de20494e。回問確認：title「聖闘士星矢 音楽集」、artist-credit「横山菁児」、first-release-date 1987-01-21、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 3：Columbia CX-7296、Columbia 32CC-1368、Columbia Music Entertainment COCC-72009 2003；Pseudo-Release 1）。刻意不釘：8c52baf6-c803-4888-9f36-ffef8e944e27《聖闘士星矢 音楽集Ⅱ》、8777d14f-79c7-4fd3-8f96-4bb2d1b4d38e《同Ⅲ》、f7ac1ab5-028e-4ccf-9417-2a63bee49427《同Ⅳ》、3ccca9ee-7c12-46ac-90d8-5b308b01762d《同Ⅴ》、e177af55-ebb9-40af-878d-9051bdf609b2《同Ⅵ》、f86b5e44-02de-4d26-a795-4b755a7470ec《同Ⅶ》、bbda6eb5-3e92-42e6-8b41-ad119d657e9e《同Ⅷ》（皆同系列他卷）、1156409d-7081-4aa2-919b-2511039c86bc《聖闘士星矢 ヒット曲集II いかなる星の下に》（歌曲精選，非劇伴）、997da441-cfbe-30e7-8a68-6a731015bd89《聖闘士星矢 メモリアルBOX》（套裝精選）。藝人 MBID 81df6a19-c74b-41dd-a628-1ffcb6b6a9ee，用 release-group?artist=…&limit=100&offset= 分頁全列共 34 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Seiji Yokoyama；Saint Seiya TV Original Soundtrack；Les Chevaliers du Zodiaque",
+  "reissuedBy": "Columbia Music Entertainment（2003，COCC-72009）",
+  "g": "b"
  }
 ]
