@@ -1,0 +1,293 @@
+[
+ {
+  "artist": "Umm Kulthum",
+  "album": "Amal Hayaty",
+  "year": 1965,
+  "genres": [
+   "world"
+  ],
+  "label": "Sono Cairo（catno SOCA 0015，EG）",
+  "why": "Umm Kulthum 與作曲家 Mohammed Abdel Wahab 合作系列中的一首長篇歌，與同年的《Enta Omri》出自同一組合作關係，是她 1960 年代中期最常被引用的作品之一。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Enta Omri》(1965，王牌 hall)、《Al Atlal》(1966，王牌 hall)、《Alf Leila wa Leila》(1969)——三張都集中在 1965–69 那五年，其餘四十年的目錄一張都沒有。本張與池中《Enta Omri》同年、同一作曲搭檔，補的是「那一組合作不只一首」這一層。MB release 端點實查：Sono Cairo SOCA 0015，EG／Official，僅此一筆 release。",
+  "risk": "掛名的拉丁轉寫至少七種，全部拿去實掃過池與 MB：أم كلثوم、Umm Kulthum、Oum Kalthoum、Om Kalthoum、Om Kalthom、Oum Kaltsoum、Oum Koulsoum、Om Kalsoum；MB 藝人實體的主名是阿拉伯文「أم كلثوم」，池中與 Apple 都用「Umm Kulthum」，卡片沿用池中寫法。裁定第 49 條在這裡是三重的：原文、拉丁轉寫、以及同一轉寫的多種拼法，去重必須三種都比。盤名的轉寫同樣多套：MB release-group 標題是「أمل حياتي (Amal Hayaty)」阿拉伯文加括號拉丁並列，Apple us collectionId 922602673 作「Amal Hayate - Aroh Le Men」（把兩首歌併成一張），卡片取池中風格的拉丁單名《Amal Hayaty》，Amal Hayate／Amal Hayati／أمل حياتي 三種都進 queryAlias。年份兩說：MB first-release-date 記 1999（Sono Cairo 的 CD 版），Apple 記 1965（歌曲首演年）；卡單依池中三張既有卡的做法取歌曲首演年 1965，rgMbid 只當身分鍵（裁定第 91 條）。Apple 命中 us 店面；封面與固定試聽走 us 922602673，但要注意那一筆是雙曲併盤、與 MB 的單曲盤不完全同版，上架時要在備註標明。eg 店面該輪查到 0–2 筆但無一相符，cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group b5188b48-9c12-40af-960e-92d562b56252。回問確認：title「أمل حياتي (Amal Hayaty)」、artist-credit「أم كلثوم (Om Kalthoum)」、first-release-date 1999、primary-type Album、secondary-types 空、轄下 1 個 release（EG／Official，Sono Cairo SOCA 0015）。刻意不釘：af7025f2-f308-362c-affc-fcca3657f9ff《Enta Omri》、01ae5147-7c35-4053-b8ef-e9039b0910bd《Alf Leila wa Leila》、20f5b015-fa86-3394-a9c9-f9aafee9492b《El Atlal》(三張池中都已有，其中 El Atlal 與池中的 Al Atlal 是同一張、拼法不同)、aa55b3a1-f766-4cfb-8188-51508dbf7d4e《الأمل ❤ حلم》(1994，盤名同含 الأمل 的假陽性)、f796f5aa-17e2-4211-afe3-769c561815dd《Enta Omri / Lesa Faker / Baid Anak / Enta Fin》(2006 四合一)。藝人 MBID 0a354a70-b879-4697-ad9b-60bfe2bd1d63，名下 136 個 release-group（用 release-group?artist=…&limit=100&offset= 分頁列完，共兩頁；裁定第 116 條）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oum Kalthoum；Om Kalthoum；Oum Kaltsoum；أم كلثوم；Amal Hayate；Amal Hayati；أمل حياتي",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Umm Kulthum",
+  "album": "Fakarouni",
+  "year": 1966,
+  "genres": [
+   "world"
+  ],
+  "label": "Sono Cairo（EG／未記編號）",
+  "why": "Umm Kulthum 1966 年由 Mohammed Abdel Wahab 作曲的一首長篇歌，與同年的《Al Atlal》同屬她那一年最常被提起的兩首。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Enta Omri》(1965，王牌 hall)、《Al Atlal》(1966，王牌 hall)、《Alf Leila wa Leila》(1969)——三張都集中在 1965–69 那五年，其餘四十年的目錄一張都沒有。池中已有同年的《Al Atlal》，本張補的是同一年、不同作曲家路線的另一首代表作。MB release 端點實查：Sono Cairo 發行，1 筆 release，country 未填但 status Official。",
+  "risk": "掛名的拉丁轉寫至少七種，全部拿去實掃過池與 MB：أم كلثوم、Umm Kulthum、Oum Kalthoum、Om Kalthoum、Om Kalthom、Oum Kaltsoum、Oum Koulsoum、Om Kalsoum；MB 藝人實體的主名是阿拉伯文「أم كلثوم」，池中與 Apple 都用「Umm Kulthum」，卡片沿用池中寫法。裁定第 49 條在這裡是三重的：原文、拉丁轉寫、以及同一轉寫的多種拼法，去重必須三種都比。本張是全批 MB 資料最薄的一筆：release-group 沒有 first-release-date、唯一那筆 release 的 country 也未填，只有廠牌 Sono Cairo 可依。年份取歌曲首演年 1966，與 Apple us collectionId 922813005「Fakarony (Remastered)」/Umm Kulthum 記的 1966 一致，兩個獨立來源互相印證。盤名轉寫三種：Fakarouni（MB）／Fakarony（Apple）／فكروني，全部進 queryAlias。封面與固定試聽走 us 922813005；eg／gb／fr 該輪各回 0–1 筆且無一相符，cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 86f24a60-fbff-4565-8102-28c366283c57。回問確認：title「Fakarouni」、artist-credit「Umm Kulthum」、first-release-date 空、primary-type Album、secondary-types 空、轄下 1 個 release（country 未填／Official，Sono Cairo）。刻意不釘：20f5b015-fa86-3394-a9c9-f9aafee9492b《El Atlal》(池中已有)、b5188b48-9c12-40af-960e-92d562b56252《Amal Hayaty》(本批另一張)、c6627f2f-950a-3847-9466-35c62b0f3819《Ifrah Ya Qalbi》、931f36b9-a97f-42d4-919d-80ebc2e9e1f1《El Sett》(2002 合輯)。藝人 MBID 0a354a70-b879-4697-ad9b-60bfe2bd1d63，名下 136 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oum Kalthoum；Om Kalthoum；أم كلثوم；Fakarony；Fakkarouni；فكروني",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Umm Kulthum",
+  "album": "Lesa Faker",
+  "year": 1960,
+  "genres": [
+   "world"
+  ],
+  "label": "Sono Cairo（catno SC 22 141，FR）",
+  "why": "Umm Kulthum 1960 年由 Riad Al Sunbati 作曲的一首歌，時間上早於池中那三張十年，屬她 1950 年代末到 1960 年代初的段落。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Enta Omri》(1965，王牌 hall)、《Al Atlal》(1966，王牌 hall)、《Alf Leila wa Leila》(1969)——三張都集中在 1965–69 那五年，其餘四十年的目錄一張都沒有。本張把池中最早的一張再往前推五年。MB release 端點實查：1973 年 Sono Cairo SC 22 141 於法國發行，Official，僅此一筆——這也顯示她的錄音在歐洲是透過 Sono Cairo 的法國分銷流通。",
+  "risk": "掛名的拉丁轉寫至少七種，全部拿去實掃過池與 MB：أم كلثوم、Umm Kulthum、Oum Kalthoum、Om Kalthoum、Om Kalthom、Oum Kaltsoum、Oum Koulsoum、Om Kalsoum；MB 藝人實體的主名是阿拉伯文「أم كلثوم」，池中與 Apple 都用「Umm Kulthum」，卡片沿用池中寫法。裁定第 49 條在這裡是三重的：原文、拉丁轉寫、以及同一轉寫的多種拼法，去重必須三種都比。盤名轉寫四種：MB 作「لسه فاكر = Lesa Faker」（阿拉伯文加等號加拉丁），Apple us collectionId 922653017 作「Lesa Faker」，另有 Lissa Faker、Lesa Faker 兩種常見拼法與 لسه فاكر 原文，全部進 queryAlias。年份兩說：MB first-release-date 記 1973（法國盤發行年），Apple 記 1960（歌曲年）；卡單依池中既有三張的做法取 1960。MB 名下另有 53d1d594《Lesa Faker (enregistrement public)》(1989) 是現場版、以及 f796f5aa 那筆四合一，兩者都是本張最像的假陽性。封面與固定試聽走 us 922653017；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 3697ff4e-ceec-4138-be69-93f0bc342f8f。回問確認：title「لسه فاكر = Lesa Faker」、artist-credit「أم كلثوم」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release（FR／Official，Sono Cairo SC 22 141）。刻意不釘：53d1d594-27e3-317c-b33f-386557d187a2《Lesa Faker (enregistrement public)》(1989 現場版)、f796f5aa-17e2-4211-afe3-769c561815dd《Enta Omri / Lesa Faker / Baid Anak / Enta Fin》(2006 四合一)、af7025f2-f308-362c-affc-fcca3657f9ff《Enta Omri》(池中已有)。藝人 MBID 0a354a70-b879-4697-ad9b-60bfe2bd1d63，名下 136 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oum Kalthoum；Om Kalthoum；أم كلثوم；Lissa Faker；لسه فاكر；Lesa Faker",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Umm Kulthum",
+  "album": "Ya Msaharny",
+  "year": 1972,
+  "genres": [
+   "world"
+  ],
+  "label": "Sono Cairo（catno 0004，EG）",
+  "why": "Umm Kulthum 1972 年的作品，是她 1975 年過世前最後幾首新歌之一，時間上晚於池中那三張。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Enta Omri》(1965，王牌 hall)、《Al Atlal》(1966，王牌 hall)、《Alf Leila wa Leila》(1969)——三張都集中在 1965–69 那五年，其餘四十年的目錄一張都沒有。本張補的是她生涯末段這一格。MB release 端點實查：Sono Cairo 0004，EG／Official，僅此一筆 release。",
+  "risk": "掛名的拉丁轉寫至少七種，全部拿去實掃過池與 MB：أم كلثوم、Umm Kulthum、Oum Kalthoum、Om Kalthoum、Om Kalthom、Oum Kaltsoum、Oum Koulsoum、Om Kalsoum；MB 藝人實體的主名是阿拉伯文「أم كلثوم」，池中與 Apple 都用「Umm Kulthum」，卡片沿用池中寫法。裁定第 49 條在這裡是三重的：原文、拉丁轉寫、以及同一轉寫的多種拼法，去重必須三種都比。盤名轉寫三種：MB 作「يا مسهرني (Ya Msaharny)」，Apple us collectionId 922509163 作「Yamsaharny (Remastered)」（連寫、無空格），另有 Ya Mosaharny 拼法與 يا مسهرني 原文，全部進 queryAlias；Apple 那種連寫形式在任何以空白切詞的比對下都不會與 MB 相等。年份兩說：MB first-release-date 記 1997（Sono Cairo CD 版），Apple 記 1972（歌曲年）；卡單取 1972。用「Umm Kulthum Ya Msaharny」直搜十六個店面全部落空，改用藝人名整批列 us 店面目錄才撈到——這是裁定第 158 條的同一形狀（搜尋字串與店面要交叉試）。封面與固定試聽走 us 922509163；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 246daebd-70bf-444d-8a19-458415588ded。回問確認：title「يا مسهرني (Ya Msaharny)」、artist-credit「أم كلثوم (Om Kalthom)」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（EG／Official，Sono Cairo 0004）。刻意不釘：9797567a-2e61-3bca-85ed-bd903f210f26《Leilet Hob》與 15e166ee-bd39-4493-8974-cea8ddcbddbf《Lailet Hob》(1988，MB 同碟兩種拼法)、db05f1da-b4e3-44ee-9212-dc4fec0523ab《سهرة مع ليلة حب》、94cdec35-d7f0-4f29-8705-55099b9ceab5《Hazehi Laylaty》(本批另一張)。藝人 MBID 0a354a70-b879-4697-ad9b-60bfe2bd1d63，名下 136 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oum Kalthoum；Om Kalthom；أم كلثوم；Yamsaharny；Ya Mosaharny；يا مسهرني",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Umm Kulthum",
+  "album": "Hazehi Laylaty",
+  "year": 1968,
+  "genres": [
+   "world"
+  ],
+  "label": "Sono Cairo（catno SOCA 0026，EG）",
+  "why": "Umm Kulthum 1968 年由 Mohammed Abdel Wahab 作曲的一首長篇歌，緊接在池中《Al Atlal》(1966) 之後、《Alf Leila wa Leila》(1969) 之前。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Enta Omri》(1965，王牌 hall)、《Al Atlal》(1966，王牌 hall)、《Alf Leila wa Leila》(1969)——三張都集中在 1965–69 那五年，其餘四十年的目錄一張都沒有。本張正好落在池中兩張之間的空檔。MB release 端點實查：Sono Cairo SOCA 0026，EG／Official，僅此一筆 release。",
+  "risk": "掛名的拉丁轉寫至少七種，全部拿去實掃過池與 MB：أم كلثوم、Umm Kulthum、Oum Kalthoum、Om Kalthoum、Om Kalthom、Oum Kaltsoum、Oum Koulsoum、Om Kalsoum；MB 藝人實體的主名是阿拉伯文「أم كلثوم」，池中與 Apple 都用「Umm Kulthum」，卡片沿用池中寫法。裁定第 49 條在這裡是三重的：原文、拉丁轉寫、以及同一轉寫的多種拼法，去重必須三種都比。盤名轉寫四種：MB 作「هذه ليلتي (Hazehi Laylaty)」，Apple us collectionId 920509422 作「Hazehe Lailaty (Remastered)」，另有 Hazihi Laylati 與 هذه ليلتي，全部進 queryAlias。年份兩說：MB first-release-date 記 1997（Sono Cairo CD 版），Apple 記 1968（歌曲年）；卡單取 1968。MB 名下另有 db05f1da《سهرة مع ليلة حب》與 7f0835f4《ليلة حب (Lylat Hob)》兩筆盤名同含「ليل」的假陽性，去重要小心。封面與固定試聽走 us 920509422；cu 店面回 HTTP 400。",
+  "mbNote": "釘 release-group 94cdec35-d7f0-4f29-8705-55099b9ceab5。回問確認：title「هذه ليلتي (Hazehi Laylaty)」、artist-credit「أم كلثوم (Om Kalthoum)」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（EG／Official，Sono Cairo SOCA 0026）。刻意不釘：db05f1da-b4e3-44ee-9212-dc4fec0523ab《سهرة مع ليلة حب》、7f0835f4-65a7-4339-bc5b-4e2e89508f29《ليلة حب (Lylat Hob)》、9797567a-2e61-3bca-85ed-bd903f210f26《Leilet Hob》(三筆盤名近似的假陽性)、20f5b015-fa86-3394-a9c9-f9aafee9492b《El Atlal》與 01ae5147-7c35-4053-b8ef-e9039b0910bd《Alf Leila wa Leila》(池中已有)。藝人 MBID 0a354a70-b879-4697-ad9b-60bfe2bd1d63，名下 136 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Oum Kalthoum；Om Kalthoum；أم كلثوم；Hazehe Lailaty；Hazihi Laylati；هذه ليلتي",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "R.D. Burman",
+  "album": "Amar Prem",
+  "year": 1971,
+  "genres": [
+   "world"
+  ],
+  "label": "Odeon（catno MOCE 4114，IN）／Saregama（再發）",
+  "why": "R.D. Burman 1971 年的電影配樂，與同年的《Hare Rama Hare Krishna》《Caravan》同屬他產量與影響力的爆發年，是他與作詞者 Anand Bakshi 合作的代表之一。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「R.D. Burman」3 張《Hare Rama Hare Krishna》(1971)、《Sholay》(1975)、《Shalimar》(1978)，「R. D. Burman」（中間帶空格）1 張《Teesri Manzil》(1966)；另有其父 S.D. Burman 3 張。兩種掛名寫法在任何字串比對下都不相等，撞卡與去重兩邊都要比。池中已有同年的《Hare Rama Hare Krishna》，本張補的是同一年另一條路線。MB release 端點實查：1971 IN Odeon MOCE 4114 原盤（Official），另有 Saregama 的 IN 再發（Official）與一筆 2001 年 status 未填的條目。",
+  "risk": "掛名寫法查過 R.D. Burman、R. D. Burman、RD Burman、Rahul Dev Burman、Pancham 五種；MB 藝人實體主名是「Rahul Dev Burman」，池中多數卡用「R.D. Burman」，卡片沿用池中多數寫法。父子同姓：S.D. Burman（Sachin Dev Burman）在池中有 3 張，任何只比對姓氏的腳本會混。Rahul Dev Burman 名下 MB 有 339 個 release-group，`artist/<MBID>?inc=release-groups` 只回前 25 筆，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條，這位藝人是該條最極端的例子之一）。MB 這筆的 artist-credit 是「Rahul Dev Burman & Anand Bakshi」（作曲＋作詞併列），卡片只取作曲者，比對時 artist-credit 字串與卡片掛名不相等（裁定第 20 條）。MB 名下另有 b44c51ad《Amar Prem / Aandhi》(1997) 是把兩部片併成一張的合輯，盤名包含《Amar Prem》，是本張最像的假陽性。Apple us 命中 collectionId 1360771957「Amar Prem (Original Motion Picture Soundtrack)」/R.D. Burman/1971，年份與 MB 一致；Apple 標題多了「(Original Motion Picture Soundtrack)」尾綴，卡片取 MB 的《Amar Prem》。cu 店面回 HTTP 400。封面與固定試聽走 us 1360771957。",
+  "mbNote": "釘 release-group 38f3d63b-2fa1-468a-bdc0-0af90186ca3f。回問確認：title「Amar Prem」、artist-credit「Rahul Dev Burman & Anand Bakshi」、first-release-date 1971、primary-type Album、secondary-types [Soundtrack]（依 §5.6 明文，primary-type=Album 者照一般 Album 寫、不填例外欄位）、轄下 3 個 release（IN／Official×2、??／status 未填）。刻意不釘：b44c51ad-1d22-35cd-b45d-1b63ce353a4f《Amar Prem / Aandhi》(1997 兩片併盤合輯)、5665cdcc-cf13-417e-a3a0-66a81d0a9629《Aandhi》(1975)、38b37a68-11d9-47c8-b3c7-d2fe3ec001c3《Kati Patang》(本批另一張)。藝人 MBID 0278f30f-266b-4261-ba3a-67491555eab0，名下 339 個 release-group（分頁列完，共四頁）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rahul Dev Burman；R. D. Burman；RD Burman；Pancham；Amar Prem (Original Motion Picture Soundtrack)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "R.D. Burman",
+  "album": "Yaadon Ki Baaraat",
+  "year": 1973,
+  "genres": [
+   "world"
+  ],
+  "label": "Odeon（catno D/MOCE 4194，IN）／Saregama（再發）",
+  "why": "R.D. Burman 1973 年的電影配樂，與作詞者 Majrooh Sultanpuri 合作，是他 1970 年代前期最常被列進印度電影音樂正典名單的一張。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「R.D. Burman」3 張《Hare Rama Hare Krishna》(1971)、《Sholay》(1975)、《Shalimar》(1978)，「R. D. Burman」（中間帶空格）1 張《Teesri Manzil》(1966)；另有其父 S.D. Burman 3 張。兩種掛名寫法在任何字串比對下都不相等，撞卡與去重兩邊都要比。池中他的 1970 年代只有 1971 與 1975 兩張，1973 這一年空白。MB release 端點實查：1973 IN Odeon D/MOCE 4194 原盤（Official），另有兩筆 Saregama 再發（Official）。",
+  "risk": "掛名寫法查過 R.D. Burman、R. D. Burman、RD Burman、Rahul Dev Burman、Pancham 五種；MB 藝人實體主名是「Rahul Dev Burman」，池中多數卡用「R.D. Burman」，卡片沿用池中多數寫法。父子同姓：S.D. Burman（Sachin Dev Burman）在池中有 3 張，任何只比對姓氏的腳本會混。Rahul Dev Burman 名下 MB 有 339 個 release-group，`artist/<MBID>?inc=release-groups` 只回前 25 筆，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條，這位藝人是該條最極端的例子之一）。MB 這筆的 artist-credit 是「Rahul Dev Burman & Majrooh」。盤名轉寫兩種：Yaadon Ki Baaraat／Yaadon Ki Barat，兩種都進 queryAlias。MB 名下另有 8212e740《Yaadon Ki Baaraat / Hum Kisise Kum Naheen》(2008) 是兩片併盤合輯、盤名包含本張，是最像的假陽性。Apple us 命中 collectionId 1337333373「Yaadon Ki Baaraat (Original Motion Picture Soundtrack)」/R.D. Burman/1973，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1337333373。",
+  "mbNote": "釘 release-group 89e09e75-67ca-433e-a7c8-f83c1000318f。回問確認：title「Yaadon Ki Baaraat」、artist-credit「Rahul Dev Burman & Majrooh」、first-release-date 1973、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（IN／Official×2、??／Official）。刻意不釘：8212e740-d0dd-370b-8125-6d102ae1646b《Yaadon Ki Baaraat / Hum Kisise Kum Naheen》(2008 併盤合輯)、d310e1d2-8d8a-4c76-acc7-ae26827f4e13《Hum Kisise Kum Naheen》(1977)、9887f5ea-55cf-4336-bb94-2d7b4ef275e7《Namak Haraam》(1973 同年)。藝人 MBID 0278f30f-266b-4261-ba3a-67491555eab0，名下 339 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rahul Dev Burman；R. D. Burman；RD Burman；Pancham；Yaadon Ki Barat",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "R.D. Burman",
+  "album": "Kati Patang",
+  "year": 1970,
+  "genres": [
+   "world"
+  ],
+  "label": "Odeon（catno MOCE 4003，IN）／Saregama（再發）",
+  "why": "R.D. Burman 1970 年的電影配樂，時間上早於池中最早的 1971 年那張（《Teesri Manzil》1966 之後就是這一段），是他從父親助手轉為獨當一面的那幾年裡最常被引用的一張。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「R.D. Burman」3 張《Hare Rama Hare Krishna》(1971)、《Sholay》(1975)、《Shalimar》(1978)，「R. D. Burman」（中間帶空格）1 張《Teesri Manzil》(1966)；另有其父 S.D. Burman 3 張。兩種掛名寫法在任何字串比對下都不相等，撞卡與去重兩邊都要比。池中的 1966→1971 之間空白，本張正落在那一格。MB release 端點實查：1970 IN Odeon MOCE 4003 原盤（Official）與一筆 XW Saregama 再發（Official）。",
+  "risk": "掛名寫法查過 R.D. Burman、R. D. Burman、RD Burman、Rahul Dev Burman、Pancham 五種；MB 藝人實體主名是「Rahul Dev Burman」，池中多數卡用「R.D. Burman」，卡片沿用池中多數寫法。父子同姓：S.D. Burman（Sachin Dev Burman）在池中有 3 張，任何只比對姓氏的腳本會混。Rahul Dev Burman 名下 MB 有 339 個 release-group，`artist/<MBID>?inc=release-groups` 只回前 25 筆，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條，這位藝人是該條最極端的例子之一）。MB 這筆的 artist-credit 是「Rahul Dev Burman & Anand Bakshi」。年份兩說：MB first-release-date 記 1970（與 Odeon 原盤一致），Apple us collectionId 1347318440「Kati Patang (Original Motion Picture Soundtrack)」/R.D. Burman 記 1971；卡單取 MB 與原盤標籤一致的 1970，Apple 日期只當訊號（裁定第 77 條）。盤名在 MB 名下唯一，撞卡風險低。cu 店面回 HTTP 400。封面與固定試聽走 us 1347318440。",
+  "mbNote": "釘 release-group 38b37a68-11d9-47c8-b3c7-d2fe3ec001c3。回問確認：title「Kati Patang」、artist-credit「Rahul Dev Burman & Anand Bakshi」、first-release-date 1970、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release（IN／Official Odeon MOCE 4003、XW／Official Saregama）。刻意不釘：38f3d63b-2fa1-468a-bdc0-0af90186ca3f《Amar Prem》(本批另一張)、7266d78a-faf8-4525-847e-7380ea13c37d《Padosan》(1968)、4fb7f714-ae99-418e-b47d-02b48fcb8022《Caravan》(1971)。藝人 MBID 0278f30f-266b-4261-ba3a-67491555eab0，名下 339 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rahul Dev Burman；R. D. Burman；RD Burman；Pancham；Kati Patang (Original Motion Picture Soundtrack)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "R.D. Burman",
+  "album": "1942: A Love Story",
+  "year": 1994,
+  "genres": [
+   "world"
+  ],
+  "label": "Saregama（IN／US）／RPG",
+  "why": "R.D. Burman 1994 年過世前完成的最後一部電影配樂，發行時他已不在世，是他目錄的終點。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「R.D. Burman」3 張《Hare Rama Hare Krishna》(1971)、《Sholay》(1975)、《Shalimar》(1978)，「R. D. Burman」（中間帶空格）1 張《Teesri Manzil》(1966)；另有其父 S.D. Burman 3 張。兩種掛名寫法在任何字串比對下都不相等，撞卡與去重兩邊都要比。池中最晚的一張是 1978 年的《Shalimar》，1978 年之後到他過世的十六年池中完全空白，本張補的是收尾這一格。MB release 端點實查：1994-04-15 IN Saregama（Official）為首發，另有 1994-12-01 US Saregama（Official）、一筆 RPG 的 status 未填條目與一筆 IN／Official。",
+  "risk": "掛名寫法查過 R.D. Burman、R. D. Burman、RD Burman、Rahul Dev Burman、Pancham 五種；MB 藝人實體主名是「Rahul Dev Burman」，池中多數卡用「R.D. Burman」，卡片沿用池中多數寫法。父子同姓：S.D. Burman（Sachin Dev Burman）在池中有 3 張，任何只比對姓氏的腳本會混。Rahul Dev Burman 名下 MB 有 339 個 release-group，`artist/<MBID>?inc=release-groups` 只回前 25 筆，一律用 release-group?artist=…&limit=100&offset= 分頁（裁定第 116 條，這位藝人是該條最極端的例子之一）。盤名有帶／不帶冒號兩種寫法：MB release-group 作「1942: A Love Story」，轄下 US 那筆 release 與 Apple 都作「1942 A Love Story」，冒號在任何標點正規化下會消失、但在原樣比對下會讓兩者不相等，兩種都進 queryAlias。盤名以數字開頭，排序與索引容易出錯。MB 名下另有 944b70d1《1942 A Love Story & Memorable Hits Of R.D. Burman》(1994 合輯) 與 66d06a13《Khamoshi / 1942 A Love Story》(2001 併盤合輯) 兩筆盤名包含本張的假陽性。Apple us 命中 collectionId 1450857375「1942 A Love Story (Original Motion Picture Soundtrack)」/R.D. Burman/1994，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1450857375。",
+  "mbNote": "釘 release-group 7e0658ca-66ce-3819-92ba-a6cba7e3d485。回問確認：title「1942: A Love Story」、artist-credit「Rahul Dev Burman」、first-release-date 1994-04-15、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（IN／Official×2、US／Official、??／status 未填）。刻意不釘：944b70d1-1a8d-4792-82da-843795cffb31《1942 A Love Story & Memorable Hits Of R.D. Burman》(1994 合輯)、66d06a13-8597-4380-8094-4d89a75a2896《Khamoshi / 1942 A Love Story》(2001 併盤合輯)、cbde4e79-76fd-4f9b-8eec-ac811cd3dc83《Ijaazat》(1986)。藝人 MBID 0278f30f-266b-4261-ba3a-67491555eab0，名下 339 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rahul Dev Burman；R. D. Burman；RD Burman；Pancham；1942 A Love Story；1942 A Love Story (Original Motion Picture Soundtrack)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "A.R. Rahman",
+  "album": "Dil Se..",
+  "year": 1998,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Venus（catno VCDD 772／VCDSP-772，IN）",
+  "why": "A.R. Rahman 為 Mani Ratnam 執導的《Dil Se..》所作的配樂，是他繼《Roja》(1992)、《Bombay》(1995) 之後與同一位導演合作的第三部，也是他第一次由印地語市場全面接收。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「A.R. Rahman」3 張《Lagaan》(2001)、《Roja》(1992，王牌 hall)、《Vande Mataram》(1997)，「A. R. Rahman」（中間帶空格）1 張《Bombay》(1995)。1998–2000 那一段池中空白，本張正落在那裡。MB release 端點實查：1998 IN Venus VCDD 772 與 VCDSP-772 兩筆 Official，另有一筆 XW Venus（Official）。",
+  "risk": "掛名兩種寫法（A.R. Rahman／A. R. Rahman）在池中並存，MB 藝人實體用帶空格的「A. R. Rahman」，卡片沿用池中多數寫法「A.R. Rahman」，兩種都要比。盤名尾巴的兩點是陷阱：MB release-group 作「Dil Se..」（兩點），轄下 XW 那筆 release 與 Apple 都作「Dil Se」（無點），任何去尾標點的正規化會讓兩者相等、任何原樣比對則不會，兩種都進 queryAlias。MB 名下另有 b7bb6eea《Dil Se..》(無日期) 是同名重複建檔、以及 274885ca《Bombay / Dil Se》(1998 併盤合輯，池中已有 Bombay)，兩筆都是最像的假陽性。A. R. Rahman 名下 MB 有 417 個 release-group，一律分頁（裁定第 116 條）。Apple us 命中 collectionId 1130322055「Dil Se (Original Motion Picture Soundtrack)」/A.R. Rahman/1998，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1130322055。",
+  "mbNote": "釘 release-group 4fc8cb2f-cf67-3253-bac7-5419793cd342。回問確認：title「Dil Se..」、artist-credit「A. R. Rahman, Gulzar」、first-release-date 1998、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（IN／Official×2 Venus VCDSP-772 與 VCDD 772、XW／Official Venus）。刻意不釘：b7bb6eea-4973-481c-9174-fb072fd5be45《Dil Se..》(無日期，MB 同名重複建檔)、274885ca-fd31-3b60-9f87-33309073afaf《Bombay / Dil Se》(1998 併盤合輯)、2cc1a61a-00d6-4160-9acf-42a4c289ddb1／d0d4daec-5db4-32e6-9917-ba4f4c50677c／e51a0f58-0da7-4594-88a5-f665d5d6c79b《Bombay》(池中已有，MB 三筆重複建檔)。藝人 MBID e0bba708-bdd3-478d-84ea-c706413bedab，名下 417 個 release-group（分頁列完，共五頁）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "A. R. Rahman；AR Rahman；Allah Rakha Rahman；Dil Se；Dil Se (Original Motion Picture Soundtrack)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "A.R. Rahman",
+  "album": "Taal",
+  "year": 1999,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "TIPS（catno TCCD 6165，IN）",
+  "why": "A.R. Rahman 為 Subhash Ghai 執導的《Taal》所作的配樂，1999 年由 TIPS 發行，是他在印地語主流市場銷量最高的作品之一。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「A.R. Rahman」3 張《Lagaan》(2001)、《Roja》(1992，王牌 hall)、《Vande Mataram》(1997)，「A. R. Rahman」1 張《Bombay》(1995)。1998–2000 那一段池中空白，本張與同批的《Dil Se..》一起把那三年補上。MB release 端點實查：1999-08-13 IN TIPS 兩筆為首發（Official），另有 1999 IN TIPS TCCD 6165 與 2006 IN TCCD 6165（標題《Taal: A Subhash Ghai Film》）等共 7 筆 release。",
+  "risk": "掛名兩種寫法（A.R. Rahman／A. R. Rahman）在池中並存，MB 用帶空格版，卡片沿用池中多數寫法。盤名《Taal》極短（四個字母），子字串比對會被 Taal Se Taal、Taalismaan 之類更長的盤名包住，也會撞到印度古典的 tala／taal 一般詞（裁定第 162 條的鏡像）。MB 轄下 release 另有《Taal: A Subhash Ghai Film》這個長標題變體，去重要一併比。A. R. Rahman 名下 417 個 release-group，一律分頁（裁定第 116 條）。Apple us 命中 collectionId 1536519242「Taal (Original Motion Picture Soundtrack)」/A.R. Rahman/1999，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1536519242。",
+  "mbNote": "釘 release-group b9ceb81a-2219-3b75-b5e9-9915d29692cf。回問確認：title「Taal」、artist-credit「A. R. Rahman」、first-release-date 1999-08-13、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（IN／Official×6、??／Official）。刻意不釘：4ef9ed88-ec3e-418c-88cd-9c27fbbc04b6《A. R. Rahman’s 1993 Hits / Thiruda Thiruda - Gentleman - Roja》(1993 併盤合輯)、0da99758-8b79-3429-8e21-8d8aba123b64《Rangeela》(1995)、b666de1e-2656-43f9-a36b-037ac3a7eadb 與 85ad7e58-fbcd-42d2-90d4-38e3b37884f3《Alaipayuthey》(2000，MB 兩筆重複建檔)。藝人 MBID e0bba708-bdd3-478d-84ea-c706413bedab，名下 417 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "A. R. Rahman；AR Rahman；Taal: A Subhash Ghai Film；Taal (Original Motion Picture Soundtrack)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "A.R. Rahman",
+  "album": "Slumdog Millionaire: Music From the Motion Picture",
+  "year": 2008,
+  "genres": [
+   "world",
+   "pop"
+  ],
+  "label": "Interscope Records（catno B0012502-02，US）／T-Series（catno SFCD 1-1393，IN）",
+  "why": "A.R. Rahman 為 Danny Boyle 執導的《Slumdog Millionaire》所作的配樂，是他第一次由美國大廠全球發行、也是他目錄裡流通最廣的一張。池中這位藝人以兩種掛名共有 4 張（實掃 seed_cards.json 全 14,424 列）：「A.R. Rahman」3 張《Lagaan》(2001)、《Roja》(1992，王牌 hall)、《Vande Mataram》(1997)，「A. R. Rahman」1 張《Bombay》(1995)。池中最晚的一張是 2001 年的《Lagaan》，2001 年之後池中一張都沒有，本張補的是他國際化之後這一格。MB release 端點實查：2008-12-21 US Interscope B0012502-02 為首發（Official），另有 GB／FR／JP／IN／BR 六筆 Official 與一筆 US Promotion，共 8 筆。",
+  "risk": "盤名有長短兩種：MB release-group 作「Slumdog Millionaire: Music From the Motion Picture」，Apple us collectionId 1358474686 作「Slumdog Millionaire (Original Motion Picture Soundtrack)」，MB 轄下多數 release 則只作「Slumdog Millionaire」；用完整長標題直搜十六個店面全部落空（每個店面都回 14–25 筆但無一相符），改用短名才命中——這是裁定第 152 條「盤名太長搜不到」的原樣重現。三種寫法都進 queryAlias。掛名兩種（A.R. Rahman／A. R. Rahman）。年份兩說：MB first-release-date 2008-12-21，Apple 記 2009；卡單取 MB 的 2008。cu 店面回 HTTP 400。封面與固定試聽走 us 1358474686。",
+  "mbNote": "釘 release-group 8190b9e6-c264-372b-b525-d32d3219d5dd。回問確認：title「Slumdog Millionaire: Music From the Motion Picture」、artist-credit「A. R. Rahman」、first-release-date 2008-12-21、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（US／Official、US／Promotion、GB／Official、FR／Official、JP／Official、IN／Official×2、BR／Official）。刻意不釘：0e97bbcc-f51a-46b2-9f6f-5606f807282e《127 Hours: Music From the Motion Picture》(2010，同一導演、標題結構相同的假陽性)、325bf45e-bc99-4707-b34d-c6fedaaf091c《Rockstar》(2011)、b815d21e-c417-3b15-9b4f-c39738a5a090《Delhi-6》(2009)。藝人 MBID e0bba708-bdd3-478d-84ea-c706413bedab，名下 417 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "A. R. Rahman；AR Rahman；Slumdog Millionaire；Slumdog Millionaire (Original Motion Picture Soundtrack)；Slumdog Millionaire (Music From the Motion Picture)",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Ali Akbar Khan",
+  "album": "Shree Rag",
+  "year": 1969,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "Connoisseur Society（catno CS-2015，US）",
+  "why": "Ali Akbar Khan 1969 年在美國 Connoisseur Society 錄的獨奏專輯，屬他 1960 年代末在美國定居、透過小型古典廠牌把北印度古典樂介紹給西方聽眾的那一批。池中這位藝人現有 3 張（實掃 seed_cards.json 全 14,424 列）：《Music of India: Morning and Evening Ragas》(1955)、《Sound of the Sarod》(1967)、《Journey》(1990)，另有與 Ravi Shankar 合掛的《In Concert 1972》(1973)。1967 到 1990 之間二十三年池中空白，本張正落在那一段的開頭。MB release 端點實查：1969 US Connoisseur Society CS-2015，Official，僅此一筆 release。",
+  "risk": "掛名寫法查過 Ali Akbar Khan、Ustad Ali Akbar Khan、Ali Akbar Khân（MB 這筆的 artist-credit 帶抑揚符）、Khansahib Ali Akbar Khan、Ali Akbar 五種；帶抑揚符那一種在 NFKD 正規化後才會與無符號版相等。同名近似：MB 名下有 92fade71《Music of India: Morning and Evening Rāgas》(1956) 與 b1d6ca85《Morning and Evening Ragas》(1966) 兩筆，池中已有前者，兩筆都是高風險假陽性。盤名《Shree Rag》極短，且 MB 名下另有 88b59f46《Shree / Sindhu Bhairavi》(1965) 盤名包含 Shree。Apple us 命中 collectionId 1713351921「Shree Rag」/Ali Akbar Khan/1969，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1713351921。",
+  "mbNote": "釘 release-group a6507f9f-7246-4211-b4fd-c5b8fbb4d77d。回問確認：title「Shree Rag」、artist-credit「Ali Akbar Khân」、first-release-date 1969、primary-type Album、secondary-types 空、轄下 1 個 release（US／Official，Connoisseur Society CS-2015）。刻意不釘：92fade71-c90b-4069-9493-e2ed00d32175《Music of India: Morning and Evening Rāgas》(池中已有)、b1d6ca85-2440-44da-a59f-07f23175e677《Morning and Evening Ragas》(1966 同名近似)、88b59f46-d10f-4473-afa8-27110b33c92e《Shree / Sindhu Bhairavi》(1965，盤名含 Shree)、2a64c859-7f7c-4dd8-8118-39bb1fd1ba03《Sound of the Sarod》(池中已有)、94e6a2e1-2456-4e76-a5b5-51d73eea6bd2《Raga Marwa》與 bcb21028-90bd-464f-8f23-fef7a13fa91e《The Forty Minute Raga: Raga Marwa》(1968 同一錄音 MB 兩筆建檔，Apple 十六店面全查無、本批未收)。藝人 MBID 00fa3579-6b4e-4efc-bd26-03a93302ebdc，名下 74 個 release-group（分頁列完）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ustad Ali Akbar Khan；Ali Akbar Khân；Khansahib Ali Akbar Khan；Ali Akbar Khan",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Shankar",
+  "album": "Who's to Know",
+  "year": 1981,
+  "genres": [
+   "world",
+   "classical"
+  ],
+  "label": "ECM Records（catno ECM 1195／2301 195，DE）",
+  "why": "L. Shankar 在 ECM 的第一張個人專輯，是他離開 Shakti 之後、以南印度卡納提克傳統為主體錄的一張，與池中那張《Pancha Nadai Pallavi》(1990) 同屬 ECM 同一條線的頭與尾。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Pancha Nadai Pallavi》(1990)。MB release 端點實查：1981 DE ECM 1195／2301 195 原盤（Official）與 1988 DE ECM 827 269-2 的 CD 再發（Official）。",
+  "risk": "「Shankar」這個掛名在池中同時指三個不同的人，這是本張最需要講清楚的一點：本卡的 Shankar 是小提琴家 L. Shankar（MB 藝人 MBID 64c98753-d570-47ec-b5f6-0c0ac0f23811，disambiguation 寫「L. Shankar」，名下 18 個 release-group），與池中 10 張的西塔琴家 Ravi Shankar、2 張的 Ananda Shankar、3 張的作曲搭檔 Shankar Jaikishan 是四個不同實體；釘 MBID 前已逐一回問確認。掛名寫法查過 Shankar、L. Shankar、Lakshminarayana Shankar、L Shankar 四種，Apple 那一筆掛在「L. Shankar」名下、池中那一張掛「Shankar」，卡片沿用池中寫法。盤名的撇號是陷阱：MB 用 U+2019 的「Who’s to Know」，Apple 用 ASCII 撇號的「Who's to Know」，卡片取 ASCII 版（與池中既有卡的標點習慣一致），兩種都進 queryAlias。Apple us 命中 collectionId 1443515507「Who's to Know」/L. Shankar/1981，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1443515507。",
+  "mbNote": "釘 release-group e62e2d08-15af-3248-8bab-c133d82c0d33。回問確認：title「Who’s to Know」、artist-credit「Shankar」、first-release-date 1981、primary-type Album、secondary-types 空、轄下 2 個 release（DE／Official×2，ECM 1195 與 ECM 827 269-2）。刻意不釘：ea621659-1b2d-3704-b159-d7d5e9bf521a《Pancha Nadai Pallavi》(池中已有)、2cce5972-e248-3821-87c1-07b528db169c《Touch Me There》(1979，Zappa 製作，路線不同)、63924ac4-ad4d-3290-8f6b-1368738403f8《Vision》(本批另一張)。藝人 MBID 64c98753-d570-47ec-b5f6-0c0ac0f23811（MB disambiguation：L. Shankar），名下 18 個 release-group（分頁列完）。同名的另外兩位是 Ravi Shankar 與 Ananda Shankar，各自為獨立 MB 實體，本批未動。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "L. Shankar；Lakshminarayana Shankar；L Shankar；Who’s to Know",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Shankar",
+  "album": "Vision",
+  "year": 1984,
+  "genres": [
+   "jazz",
+   "world"
+  ],
+  "label": "ECM Records（catno ECM 1261／811 969-2，DE）／Warner Bros. Records（catno 1-25004，US）",
+  "why": "L. Shankar 在 ECM 的第二張個人專輯，與 Jan Garbarek、Palle Mikkelborg 合作，是他從卡納提克獨奏走向北歐爵士編制的轉向之作，也是 ECM 這條線上他被最多爵士名單收錄的一張。池中這位藝人只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Pancha Nadai Pallavi》(1990)；1981 與 1984 這兩張 ECM 都不在池中。MB release 端點實查：1984 DE ECM 1261／811 969-2、1984 US Warner Bros. 1-25004 與 ECM 1261，共 4 筆 release，全部 Official。",
+  "risk": "掛名同上一張：本卡的 Shankar 是小提琴家 L. Shankar（MB 64c98753），不是 Ravi Shankar（池中 10 張）、不是 Ananda Shankar（池中 2 張）、也不是 Shankar Jaikishan（池中 3 張）；四個實體都各自 browse 過。盤名《Vision》是全批最短、最泛的一個詞，撞卡風險極高：實掃池中所有 album 欄位確認沒有掛在 Shankar 名下的《Vision》，但跨藝人的同名盤在卡池裡不算撞卡、上架時要靠 rgMbid 分辨。Apple us 命中 collectionId 1443522663「Vision」/L. Shankar/1984，年份與 MB 一致；cu 店面回 HTTP 400。封面與固定試聽走 us 1443522663。",
+  "mbNote": "釘 release-group 63924ac4-ad4d-3290-8f6b-1368738403f8。回問確認：title「Vision」、artist-credit「Shankar」、first-release-date 1984、primary-type Album、secondary-types 空、轄下 4 個 release（DE／Official、US／Official×2、??／Official）。刻意不釘：33f14c55-b9c7-3d3f-a427-c6ba08bdb053《Song for Everyone》(1985 ECM 第三張)、84a6b119-0efe-496b-99b9-f088ccd7321f《The Epidemics》(1986)、ea621659-1b2d-3704-b159-d7d5e9bf521a《Pancha Nadai Pallavi》(池中已有)、e62e2d08-15af-3248-8bab-c133d82c0d33《Who’s to Know》(本批另一張)。藝人 MBID 64c98753-d570-47ec-b5f6-0c0ac0f23811，名下 18 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "L. Shankar；Lakshminarayana Shankar；L Shankar",
+  "reissuedBy": "",
+  "g": "b"
+ }
+]
