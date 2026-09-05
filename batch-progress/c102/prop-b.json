@@ -1,0 +1,450 @@
+[
+ {
+  "artist": "鷺巣詩郎",
+  "album": "NEON GENESIS EVANGELION II",
+  "year": 1996,
+  "genres": [
+   "classical",
+   "jazz"
+  ],
+  "label": "STARCHILD（catno KICA-290）",
+  "why": "《新世紀エヴァンゲリオン》TV 版三張原聲盤的第二張，1996-02-16 由 STARCHILD 以 KICA-290 發行，2004-03-16 Geneon 在美國以 52252 發行。池中鷺巣詩郎只有第一張（鷺巣詩郎《NEON GENESIS EVANGELION》1995，實掃 seed_cards.json 全 14,424 列，鷺巣詩郎與 Sagisu 兩種寫法都查過），第三張與《EVANGELION:DEATH》池中都沒有；補這張是把 1995–97 那三張補成連號的第一步。",
+  "risk": "同系列三張的盤名只差尾端一個羅馬數字（I 無、II、III），是本卡最強的假陽性來源；池中已有的第一張盤名是不帶數字的《NEON GENESIS EVANGELION》，子字串比對會判本張包含它，去重要用完整字串比。MB 轄下 11 筆有 2 筆是 TW Bootleg（笙美 GA-065、MIYA MICA-0318），依裁定第 43 條不算再發背書。Apple jp 用原文盤名搜只回 1638088437《NEON GENESIS EVANGELION SOUNDTRACK 25th ANNIVERSARY BOX》（Various Artists）與封面翻奏 EP；鷺巣詩郎藝人頁（Apple jp artistId 76121793，Shiro SAGISU，76 張）13 筆命中裡沒有 1990 年代那三張 TV 原聲盤，只有 EVANGELION:1.0／2.0／3.0／SHIN 與 INFINITY（1641831385）。固定試聽因此要走 YouTube 官方專輯播放清單或依 §4 人工核對的 collectionId。",
+  "mbNote": "釘 release-group c1b5e3f5-f2cc-3764-8098-992821c6df3b。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「NEON GENESIS EVANGELION II」、artist-credit「鷺巣詩郎」、first-release-date 1996-02-16、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（JP/Official 5〔STARCHILD KICA-290〕、US/Official 1〔Geneon 52252〕、TW/Bootleg 2、Official 1、Pseudo-Release 2）。刻意不釘：4b608935-0ed2-3ff3-9618-3dd07055d814《NEON GENESIS EVANGELION》（第一張，池中已有）、94007807-67b7-35eb-9c8b-090f23a5650b《NEON GENESIS EVANGELION III》（第三張）、b49b4eb1-289a-336c-bb1f-a297c05f7d84《EVANGELION-VOX》（Remix）、34771bb7-e470-31e8-aece-ff67a927ac59《NEON GENESIS EVANGELION: S² WORKS》（套裝精選）、7d003ed3-3f4d-44b8-8f05-840cafe01b67《NEON GENESIS EVANGELION SOUNDTRACK 25th ANNIVERSARY BOX》（周年重製，非原盤）、d4f180c7-507a-4395-bfa0-a3b7bb1bed7f《新世紀エヴァンゲリオン 5.1chサラウンド版 オリジナル・サウンドトラック》（重混版）。藝人 MBID 9b127d23-f877-4541-83cd-44f46393dfb7，用 release-group?artist=…&limit=100&offset= 分頁全列共 123 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shiro Sagisu；新世紀エヴァンゲリオン II；Neon Genesis Evangelion II",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "鷺巣詩郎",
+  "album": "THE END OF EVANGELION",
+  "year": 1997,
+  "genres": [
+   "classical"
+  ],
+  "label": "STARCHILD（catno KICA-370）",
+  "why": "《新世紀エヴァンゲリオン》劇場版完結篇的原聲盤，1997-09-26 由 STARCHILD 以 KICA-370 發行，2004 年 Geneon 在美國以 5231-2 發行、同年 STARCHILD 另出 KIAW-25，2012-10-01 再以原編號重出。池中鷺巣詩郎只有 TV 版第一張（鷺巣詩郎《NEON GENESIS EVANGELION》1995，實掃 seed_cards.json 全 14,424 列），劇場版這一支池中沒有。",
+  "risk": "盤名與同一部作品的其他盤高度重疊（EVANGELION:DEATH、EVANGELION-VOX、25th ANNIVERSARY BOX 都含 EVANGELION），本張又是常見英文詞組，配對要看年份與軌數。Apple jp 有兩筆同名條目：258925326「THE END OF EVANGELION (Original Soundtrack)」掛 Various Artists、releaseDate 1997-09-26（與原盤同日，就是本張），以及 1605640852「The End of Evangelion」掛 鷺巣詩郎、releaseDate 2022-01-17（後出版本）——同名雙胞胎、掛名一個是 Various Artists 一個是作曲家，取的要是 1997 那一筆。TW Bootleg 1 筆（長榮國際 AnG-282）不算背書。",
+  "mbNote": "釘 release-group 03587dbb-a647-34d5-a326-9661fd626197。回問確認：title「THE END OF EVANGELION」、artist-credit「鷺巣詩郎」、first-release-date 1997-09-26、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 4〔STARCHILD KICA-370 兩筆、KIAW-25〕、US/Official 1〔Geneon 5231-2〕、TW/Bootleg 1、Pseudo-Release 2）。刻意不釘：aae5f7aa-52a4-3c14-a6c3-17981885f7ad《EVANGELION:DEATH》（同年另一部劇場版）、24576202-22b4-466f-86bb-b004e207dece《エヴァンゲリオン交響楽》（Live）、7d675bd3-4ae6-4601-81f2-549216ab5d79《EVANGELION INFINITY》（精選，非原聲）。藝人 MBID 9b127d23-f877-4541-83cd-44f46393dfb7。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shiro Sagisu；THE END OF EVANGELION (Original Soundtrack)；新世紀エヴァンゲリオン劇場版",
+  "reissuedBy": "STARCHILD（2012，KICA-370）",
+  "g": "b"
+ },
+ {
+  "artist": "鷺巣詩郎",
+  "album": "Shiro SAGISU Music from EVANGELION:1.0 YOU ARE (NOT) ALONE",
+  "year": 2007,
+  "genres": [
+   "classical"
+  ],
+  "label": "STARCHILD（catno KICA-887）",
+  "why": "鷺巣詩郎替《ヱヴァンゲリヲン新劇場版》四部曲寫的第一張，2007-09-26 由 STARCHILD 以 KICA-887 發行，2012 年キングレコード以同編號重出，2016 年 Milan 在美國以 M2-36799、Éditions Milan Music 在巴西各發一版——是他少數在歐美有正規發行的原聲盤。池中鷺巣詩郎只有 1995 年 TV 版第一張（實掃 seed_cards.json 全 14,424 列），新劇場版這條線池中沒有。",
+  "risk": "盤名在 MB 用彎引號寫成 Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”，官方再發與 Apple 則寫成 Music from EVANGELION 1.0 YOU ARE (NOT) ALONE（直引號、冒號改空格）；卡片依裁定第 50 條取通行的直排寫法並去掉引號，MB 原字串進 queryAlias。Apple jp collectionId 263727634「Shiro SAGISU Music from EVANGELION 1.0 YOU ARE (NOT) ALONE」掛 鷺巣詩郎、releaseDate 2007-09-26、26 軌，是靠藝人頁 lookup（id=76121793）確認的。同系列 2.0（1522843603）、3.0（579570501）、SHIN（1569126716）盤名只差版本號，是最強的假陽性。TW Bootleg 1 筆（MIYA MICA-0865）不算背書。",
+  "mbNote": "釘 release-group 71086160-3b53-3a3e-a2a6-b0132812376f。回問確認：title「Shiro SAGISU Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”」、artist-credit「鷺巣詩郎」、first-release-date 2007-09-26、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 2〔STARCHILD KICA-887、キングレコード KICA-887〕、US/Official 1〔Milan M2-36799〕、CA/Official 1、BR/Official 1、TW/Bootleg 1）。刻意不釘：4e5e3978-3133-34bb-a3fc-5f8a9ba7eb84《evangelion:1.0 you are (not) alone. original sound track》（2008 另一個編輯版本）、7c1d37ae-1194-4619-a658-e887f527b199《evangelion:2.0》、8f54db82-751c-46cd-a8b8-df4ac43316ea《Shiro SAGISU Music from “EVANGELION:3.0”》、d1c92712-7c50-4f88-935c-6933673c15dd《Shiro SAGISU Music from “SHIN EVANGELION”》（皆續集）、0f6a34f6-9efb-4193-8e88-e3696e3b3c81《Shiro SAGISU OUTTAKES FROM EVANGELION (VOL.1)》（未收錄曲集）。藝人 MBID 9b127d23-f877-4541-83cd-44f46393dfb7。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shiro Sagisu；Shiro SAGISU Music from “EVANGELION:1.0 YOU ARE (NOT) ALONE”；ヱヴァンゲリヲン新劇場版:序",
+  "reissuedBy": "キングレコード（2012，KICA-887）／Milan（2016，M2-36799）",
+  "g": "b"
+ },
+ {
+  "artist": "川井憲次",
+  "album": "機動警察パトレイバー, Volume 1: INTERFACE",
+  "year": 1988,
+  "genres": [
+   "electronic",
+   "classical"
+  ],
+  "label": "Warner-Pioneer Corporation（catno 32XL-272）",
+  "why": "川井憲次替押井守《機動警察パトレイバー》OVA 寫的第一張原聲盤，也是他劇伴生涯真正開始的地方，1988-03-25 由 Warner-Pioneer 以 32XL-272 發行，1998-11-26 WEA Japan 以 WPC7-8652 重出；同系列後續出到 Volume 5 與 PHASE III／V。池中川井憲次只有一張（川井憲次《攻殻機動隊/オリジナル・サウンドトラック》1995，實掃 seed_cards.json 全 14,424 列，川井憲次與 Kawai 兩種寫法都查過），他 1980 年代的目錄在池中完全空白。",
+  "risk": "MB 的 RG 標題用英式編目寫法（逗號＋Volume 1＋冒號），原盤封面作「機動警察パトレイバー VOL.1 INTERFACE」；兩種寫法都要進去重比對，本卡取 MB 的 RG 與 release 共同使用的那一種。同系列 Volume 2 INTERCEPT、Volume 5 INQUEST 與 PHASE II/III/IV/V 盤名結構相同，只差卷號與副標。Apple jp 用原文盤名搜七個店面 0 筆；川井憲次藝人頁（Apple jp artistId 76058734，Kenji Kawai，115 張）7 筆命中裡只有 2002 年之後的 WXIII 與 THE NEXT GENERATION 系列，1988–93 年那批 OVA／劇場版原聲盤 Apple 上都沒有——固定試聽要走 YouTube 官方專輯播放清單或依 §4 人工核對的 collectionId。",
+  "mbNote": "釘 release-group cd3d7740-bd13-390b-97f5-bf23486f6e42。回問確認：title「機動警察パトレイバー, Volume 1: INTERFACE」、artist-credit「川井憲次」、first-release-date 1988-03-25、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release（JP/Official 2：Warner-Pioneer 32XL-272 1988、WEA Japan WPC7-8652 1998）。刻意不釘：33a29f04-e51f-46a7-8a05-2cc06777d08b《機動警察パトレイバー, Volume 2: INTERCEPT》、9c842444-e010-385d-9d4d-663520af4b91《同 Volume 5: INQUEST》、146cd6f5-23b7-3956-a32f-3a6c526d1a16《機動警察パトレイバー・フェイズIII》、1346002f-e403-4a70-99ff-cc3202ef94b7《同フェイズV》（皆同系列他卷）、edd3e537-8a4a-41fd-b0b7-bbfc6793c7cd《「機動警察パトレイバー」TVシリーズ&ニューOVA・ミュージック・コンプリート CDBOX》（套裝精選）、5786803a-8565-3fbb-8e0c-ccbcc3c9f0a3《1999 PATLABOR THE MOVIE SOUND RENEWAL》（重製，非原盤）。藝人 MBID c50e52e1-01f4-494d-b1ef-376fe3581d90，用 release-group?artist=…&limit=100&offset= 分頁全列共 248 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kenji Kawai；機動警察パトレイバー VOL.1 INTERFACE；Mobile Police Patlabor Vol.1 INTERFACE",
+  "reissuedBy": "WEA Japan（1998，WPC7-8652）",
+  "g": "b"
+ },
+ {
+  "artist": "川井憲次",
+  "album": "Patlabor 2 the Movie",
+  "year": 1993,
+  "genres": [
+   "classical"
+  ],
+  "label": "vap（catno VPCG-84206）",
+  "why": "川井憲次替押井守第二部《パトレイバー》劇場版寫的原聲盤，1993-09-21 由 vap 以 VPCG-84206 發行，1996 年 Demon Soundtracks 在英國以 DSCD 15 發行；2021 年瑞士的 WRWTFWW Records 以 WRWTFWW048LTD／048CD 出黑膠與 CD 復刻，是本批少數有近年黑膠再發的一張。池中川井憲次只有《攻殻機動隊》1995 一張（實掃 seed_cards.json 全 14,424 列），押井守／川井憲次這條線在《攻殻》之前的兩部《パトレイバー》劇場版都沒有。",
+  "risk": "MB 的 RG 標題是短的《Patlabor 2 the Movie》，轄下 release 的標題則是《PATLABOR 2 the Movie / ORIGINAL SOUNDTRACK P2》（原字串用彎引號包住 P2）；依裁定第 91 條 RG 標題與卡片盤名不必相等，本卡取 RG 標題、release 標題進 queryAlias。同一 RG 另有 1993-08-01 的 558ace16-6c97-4ca7-a73a-7f46b390e1d5《Patlabor 2 The Movie Pre Soundtrack》——那是先行盤、獨立的 release-group，盤名幾乎相同，是最強的假陽性。1998 年另有《2002 Patlabor 2 The Movie Sound Renewal》重製盤。Apple jp 用盤名搜七個店面 0 筆，川井憲次藝人頁（id=76058734）也只有 WXIII 那一張，固定試聽要另尋。",
+  "mbNote": "釘 release-group d4b6f7a3-756d-3bcb-a4b4-d89d2a5f16d8。回問確認：title「Patlabor 2 the Movie」、artist-credit「川井憲次」、first-release-date 1993-09-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 1〔vap VPCG-84206〕、GB/Official 1〔Demon Soundtracks DSCD 15〕、XW/Official 2〔WRWTFWW Records 2021〕、狀態未填 1）。刻意不釘：558ace16-6c97-4ca7-a73a-7f46b390e1d5《Patlabor 2 The Movie Pre Soundtrack》（1993-08 先行盤，非本張）、2c349f4c-e1d0-30a2-a9e2-3311810f2260《2002 Patlabor 2 The Movie Sound Renewal》（重製，非原盤）、d01bb196-803e-460c-9534-c8e599d7a7d8《泉 野明写真集イメージ・アルバム「LIVE」》（EP）。藝人 MBID c50e52e1-01f4-494d-b1ef-376fe3581d90。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kenji Kawai；PATLABOR 2 the Movie / ORIGINAL SOUNDTRACK P2；機動警察パトレイバー2 the Movie",
+  "reissuedBy": "WRWTFWW Records（2021 黑膠與 CD，WRWTFWW048）",
+  "g": "b"
+ },
+ {
+  "artist": "川井憲次",
+  "album": "INNOCENCE O.S.T.",
+  "year": 2004,
+  "genres": [
+   "classical",
+   "world"
+  ],
+  "label": "Victor（catno VICL-61294）",
+  "why": "川井憲次替押井守《イノセンス》寫的原聲盤，也是他 1995 年《攻殻機動隊》的直接續作，2004-03-03 由 Victor 以 VICL-61294 發行，2005 年 beez Entertainment 在法國以 BM 1171、Bandai Entertainment 在美國以 25190 各發一版（美國盤盤名改成 Ghost in the Shell 2: Innocence）。池中川井憲次只有 1995 年那一張（實掃 seed_cards.json 全 14,424 列），這張是同一條線的另一半。",
+  "risk": "盤名 INNOCENCE 是常見英文詞——池中已有 David Axelrod《Song of Innocence》與 Bobb Trimble《Iron Curtain Innocence》兩張含此字的卡，皆非本張；再加上美國盤改名 Ghost in the Shell 2: Innocence，跨語言的兩種盤名要一起掃（裁定第 49 條第二款）。MB 轄下同一個 JP 編號 VICL-61294 有 Official 與 Pseudo-Release 兩筆並存，取 Official 那一筆。TW Bootleg 1 筆（MIYA MICA-0144）不算背書。Apple jp collectionId 911385018「Innocence Original Soundtrack」掛 川井憲次、releaseDate 2004-03-03、12 軌，是靠藝人頁 lookup（id=76058734）撈到的；用 INNOCENCE O.S.T. 直接搜 jp 回的是菅野よう子的 S.A.C. 系列，屬裁定第 166 條的形狀。",
+  "mbNote": "釘 release-group 7103a8dc-cb7b-37fc-a9bf-0dd9ceda724d。回問確認：title「INNOCENCE O.S.T.」、artist-credit「川井憲次」、first-release-date 2004-03-03、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 2、JP/Pseudo-Release 1、US/Official 1〔Bandai Entertainment 25190〕、FR/Official 1〔beez BM 1171〕、TW/Bootleg 1）。刻意不釘：815898d6-7e1d-3554-9d4c-6d973a2140e8《攻殻機動隊/オリジナル・サウンドトラック》（1995 前作，池中已有）、29728a77-f144-4d29-b428-36e32e28bedc《攻殻機動隊2.0 ORIGINAL SOUNDTRACK》（Remix）、1f7118f3-a9d5-3cc6-ade6-53685102e433《PROJECT2501 REAL IMAGE COLLECTION OF GHOST IN THE SHELL》（企劃盤）、eef47478-8515-44c1-9f63-191dcf607fa5《攻殻機動隊 superb music》（精選，非原聲）。藝人 MBID c50e52e1-01f4-494d-b1ef-376fe3581d90。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kenji Kawai；Innocence Original Soundtrack；Ghost in the Shell 2: Innocence；イノセンス",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "羽田健太郎",
+  "album": "The S.D.F. Macross",
+  "year": 1982,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Victor（catno JBX-25008）",
+  "why": "《超時空要塞マクロス》TV 版的第一張原聲盤，1982-12-16 由 Victor 以 JBX-25008 發行，1995-05-03 以 VICL-23101 重出，2014-11-26 再以 VEAHD-10405 出高解析版、盤名改成《「超時空要塞マクロス」マクロス》。這是 Macross 系列音樂的起點，也是羽田健太郎最常被引用的一份劇伴。池中羽田健太郎一張都沒有（實掃 seed_cards.json 全 14,424 列，羽田健太郎與 Haneda 兩種寫法都查過），Macross 這條線池中也完全沒有原聲盤。",
+  "risk": "MB 的 RG 標題是英文《The S.D.F. Macross》，日本原盤與 2014 再發用的是《「超時空要塞マクロス」マクロス》——跨文字系統的兩種盤名（裁定第 49 條），兩邊都要掃。Apple jp collectionId 469318130「MBS・TBS系「超時空要塞マクロス」 マクロス」的掛名記成「飯島真理 & 藤原誠」（主唱），不是作曲者羽田健太郎；卡片依裁定第 121 條走作曲者掛名，Apple 那筆的掛名差異寫在本欄。羽田健太郎的 Apple jp 藝人頁（artistId 296873055，Kentaro Haneda，27 張）Macross 相關 0 筆命中，固定試聽多半要靠人工核對的 collectionId 469318130 或 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 8bb051c2-8877-4c75-92bd-da6dca921197。回問確認：title「The S.D.F. Macross」、artist-credit「羽田健太郎」、first-release-date 1982-12-16、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 3：Victor JBX-25008 1982、Victor VICL-23101 1995、VEAHD-10405 2014〔標題「超時空要塞マクロス」マクロス〕）。刻意不釘：40409a65-3a23-4a15-b657-33b01e25e91a《「超時空要塞マクロス」 マクロス Vol.II》（第二張）、e5c11568-d7d2-4363-8d56-1bb68e916208《超時空要塞マクロス BGMコレクション》（1985 BGM 集）、8e53d62c-9ef6-3f58-95ac-ed90bb2745ae《MACROSS THE COMPLETE》（精選，非原聲）、19a35754-99a7-43ec-af04-cc98a1e1499e《超時空要塞マクロス Vol. III MISS D.J.》（廣播劇）。藝人 MBID 307511e5-a46b-4fd6-8105-8be861fb148a，用 release-group?artist=…&limit=100&offset= 分頁全列共 58 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kentaro Haneda；超時空要塞マクロス マクロス；The Super Dimension Fortress Macross",
+  "reissuedBy": "Victor（1995，VICL-23101）",
+  "g": "b"
+ },
+ {
+  "artist": "羽田健太郎",
+  "album": "「超時空要塞マクロス」愛・おぼえていますか",
+  "year": 1984,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Victor（catno JBX-25049）",
+  "why": "1984 年劇場版《超時空要塞マクロス 愛・おぼえていますか》的原聲盤，1984-07-21 由 Victor 以 JBX-25049 發行，1995-05-03 以 VICL-23105 重出、2008-04-23 flying DOG 再以 VTCL-60047 發行，2015 年 Victor 又出 VICL-23105_F。與 1982 年 TV 版原聲盤同批補進本批。池中羽田健太郎一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名前後有「」括號與中黑點，2015 年再發把標題擴寫成《映画「超時空要塞マクロス」愛・おぼえていますか<音楽篇>オリジナル・サウンドトラック》——同一張碟四種長度的標題，去重要用作品名核心比對。Apple jp collectionId 469318277「映画「超時空要塞マクロス」  愛・おぼえていますか <音楽篇>」掛 飯島真理（主唱）而非作曲者，卡片依裁定第 121 條走作曲者掛名；同一次搜尋還回了三筆翻奏單曲（VocaPanda、オルゴールサウンド J-POP、NIYARI計画），配對要看軌數。羽田健太郎 Apple 藝人頁 Macross 0 筆命中。",
+  "mbNote": "釘 release-group 183706bc-1515-31cb-97ce-2789f83c780f。回問確認：title「「超時空要塞マクロス」愛・おぼえていますか」、artist-credit「羽田健太郎」、first-release-date 1984-07-21、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 4：Victor JBX-25049 1984、VICL-23105 1995、flying DOG VTCL-60047 2008、VICL-23105_F 2015；Pseudo-Release 2）。刻意不釘：8303f863-93ae-3ef5-ade2-e0296a7a931a《映画「超時空要塞マクロス」愛・おぼえていますか＜組曲マクロス＞》（組曲盤，非原聲）、767cdf31-0340-374c-b2e0-ae379e40b287《マクロス・ジェネレーション Legend of Eternal Songs》（精選）。藝人 MBID 307511e5-a46b-4fd6-8105-8be861fb148a。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kentaro Haneda；超時空要塞マクロス 愛・おぼえていますか；Macross: Do You Remember Love?；Ai Oboete Imasu ka",
+  "reissuedBy": "flying DOG（2008，VTCL-60047）",
+  "g": "b"
+ },
+ {
+  "artist": "渡辺岳夫",
+  "album": "機動戦士ガンダム オリジナル・サウンドトラック",
+  "year": 1979,
+  "genres": [
+   "classical"
+  ],
+  "label": "KING（catno SKD(H)2005）",
+  "why": "第一部《機動戦士ガンダム》TV 版的原聲盤，1979-06-05 由 KING 以 SKD(H)2005 發行；1991-03-05 STARCHILD 以 KICA-2001 重出時才定名為《オリジナル･サウンドトラック》，2003 年另出《劇場版総音楽集》與《TV版総音楽集》兩套整編盤。池中渡辺岳夫一張都沒有（實掃 seed_cards.json 全 14,424 列，渡辺岳夫與 Watanabe Takeo 兩種寫法都查過），Gundam 系列的原聲盤在池中也一張都沒有——這是整條 real robot 線的起點。",
+  "risk": "MB 的 artist-credit 是「渡辺岳夫 / 松山祐士」（兩位共同掛名，斜線分隔），Apple 的 2003 年整編盤也記成「松山祐士 & 渡辺岳夫」；卡片依裁定第 121 條取主要作曲者渡辺岳夫，共同掛名寫在本欄與 mbNote，松山祐士 進 queryAlias。MB 的 RG 標題用半形片假名中黑「･」（U+FF65）並在作品名後多一個連字號，卡片依裁定第 50 條改用通行的全形中黑寫法，MB 原字串進 queryAlias。Apple jp 用原文盤名搜回的全是別的 Gundam 作品（澤野弘之《閃光のハサウェイ》等）；渡辺岳夫藝人頁（artistId 74964114，Takeo Watanabe，7 張）只有 2003 年的兩套総音楽集（1684537162、1684543356），1979 原盤 Apple 上沒有。",
+  "mbNote": "釘 release-group be900f60-2361-4923-a8f3-a71606b60c8c。回問確認：title「機動戦士ガンダム - オリジナル･サウンドトラック」、artist-credit「渡辺岳夫 / 松山祐士」、first-release-date 1979-06-05、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 3：KING SKD(H)2005 1979〔標題「機動戦士ガンダム」〕、STARCHILD KICA-2001 1991、另一筆；Pseudo-Release 1）。刻意不釘：be97b50a-f3ed-4a7f-ace3-d8ab81be143a《機動戦士ガンダム 戦場で》（1979-11 歌曲集）、4985c863-51fa-413e-a87c-6d6d3bd9f2c5《交響詩ガンダム》（1980 交響詩盤，非原聲）、9ef4eecb-5f34-487d-b138-0224dffa18a3《Mobile Suit Gundam I》、cd3d6c1a-12c4-4159-a645-8959906d7cb2《機動戦士ガンダムII 哀 戦士》、b8c5d10a-d575-4f49-8ea6-bcf17c721e10《機動戦士ガンダムIII めぐりあい宇宙》（三部劇場版）、ef3ddf20-2170-4bbc-a3e0-1b5944a605f1《機動戦士ガンダム 劇場版総音楽集》與 0370db17-313e-44ce-9417-8b71f17009dd《同 TV版総音楽集》（皆整編精選，非原盤）。藝人 MBID 5f2b6515-701e-424a-822a-14ce9911eb7a，用 release-group?artist=…&limit=100&offset= 分頁全列共 25 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Takeo Watanabe；松山祐士；機動戦士ガンダム - オリジナル･サウンドトラック；Mobile Suit Gundam Original Soundtrack",
+  "reissuedBy": "STARCHILD（1991，KICA-2001）",
+  "g": "b"
+ },
+ {
+  "artist": "天野正道",
+  "album": "ジャイアントロボ THE ANIMATION -地球が静止する日- ORIGINAL SOUND TRACK I",
+  "year": 1992,
+  "genres": [
+   "classical"
+  ],
+  "label": "APOLLON（catno BCCM-18）",
+  "why": "天野正道替今川泰宏《ジャイアントロボ THE ANIMATION》寫的第一張劇伴，1992-08-21 由 APOLLON 以 BCCM-18 發行，之後同系列出到第七張（1997），2001 年德間 TOKUMA JAPAN 以 TKCA-72240 重出，2003 年 ANIMEtrax 在美國以 AT9326 發行英文盤。這七張是他名下 34 個 release-group 裡份量最重的一組。池中天野正道一張都沒有（實掃 seed_cards.json 全 14,424 列，天野正道與 Amano Masamichi 兩種寫法皆 0 筆）。",
+  "risk": "盤名含兩個 ASCII 連字號包住的副標「-地球が静止する日-」，並以羅馬數字 I 結尾——同系列七張的盤名只差最後那個數字，是最強的假陽性；MB 上另有 1d0a3eec-0b26-45ef-a076-bc616f4e0915《管弦楽曲 ジャイアントロボ … 完全盤》與 2001 年 TOKUMA 版把副標縮成「… I」的寫法，去重要三種都掃。英文盤名 GIANT ROBO THE ANIMATION -THE DAY THE EARTH STOOD STILL- I 屬跨語言的第二種寫法。Apple jp 用原文盤名搜七個店面回的全是無關條目；天野正道藝人頁（artistId 284293644，Masamichi Amano，11 張）ジャイアントロボ 0 筆命中，固定試聽要走 YouTube 官方專輯播放清單或依 §4 人工核對的 collectionId。",
+  "mbNote": "釘 release-group 92ae6b61-dea2-3623-81ab-5f0e170fe446。回問確認：title「ジャイアントロボ THE ANIMATION -地球が静止する日- ORIGINAL SOUND TRACK I」、artist-credit「天野正道」、first-release-date 1992-08-21、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 2〔APOLLON BCCM-18 1992、TOKUMA JAPAN TKCA-72240 2001〕、US/Official 1〔ANIMEtrax AT9326 2003〕、Pseudo-Release 1）。刻意不釘：6c5f479c-d1cb-3153-a34b-f9927b2add3b《同 ORIGINAL SOUND TRACK II》、1763f535-5aac-3ec2-a5d5-86c5f6013ecb《同 III》、72a7f07d-22a8-343e-bb52-880563cbfcca《同 IV》、bd34f065-53dd-43b6-89f7-c472c5b466d4《同 V》、453651e8-271b-4a93-b023-ab922d62ed44《同 VI》、ca237a30-3a6a-401c-ab85-7b4e9e969984《同 VII》（皆同系列他卷）、1d0a3eec-0b26-45ef-a076-bc616f4e0915《管弦楽曲 ジャイアントロボ THE ANIMATION -地球が静止する日- 完全盤》（整編完全盤，非原盤）、b7ee8264-85ad-44c8-85c3-ff6892a181e5《2e. Suite Symphonique GR》（管樂改編）。藝人 MBID e4d28ff6-9235-4c42-8e3a-e20d2534b843，用 release-group?artist=…&limit=100&offset= 分頁全列共 34 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Masamichi Amano；GIANT ROBO THE ANIMATION -THE DAY THE EARTH STOOD STILL- I；Giant Robo Original Soundtrack 1",
+  "reissuedBy": "TOKUMA JAPAN COMMUNICATIONS（2001，TKCA-72240）",
+  "g": "b"
+ },
+ {
+  "artist": "大谷幸",
+  "album": "新機動戦記ガンダムW OPERATION 1",
+  "year": 1995,
+  "genres": [
+   "classical",
+   "electronic"
+  ],
+  "label": "STARCHILD（catno KICA-251）",
+  "why": "大谷幸替《新機動戦記ガンダムW》寫的第一張劇伴，1995-07-21 由 STARCHILD 以 KICA-251 發行，同年續出 OPERATION 2、3，1997 年出 OPERATION S，1999 年 STARCHILD 以 KICA-2059 重出，2023 年 SUNRISE Music Label 再以英文盤名 MOBILE SUIT GUNDAM WING Original Motion Picture Soundtrack - Operation 1 發行。池中大谷幸一張都沒有（實掃 seed_cards.json 全 14,424 列，大谷幸與 Kow Otani 兩種寫法皆 0 筆）。",
+  "risk": "盤名的 W 與 OPERATION 1 在任何正規化下都會被拆成常見片段，而 Gundam 系列同期還有 Gガンダム、第08MS小隊 等盤名結構相同的原聲盤，配對要用完整字串。跨語言的第二種盤名是 Mobile Suit Gundam Wing: Operation 1。Apple jp collectionId 1718514555「新機動戦記ガンダムW (Original Soundtrack) - Operation 1」掛「大谷幸, TWO-MIX & 大石ルミ」、releaseDate 1995-07-21——Apple 把主題曲演唱者串進掛名，卡片依裁定第 121 條取作曲者；同一頁另有 1529284120（OPERATION S）與 1529288456（Operation 4，掛 Various Artists），是最強的假陽性。",
+  "mbNote": "釘 release-group d34df322-a106-35a4-bbef-f097642a9b9c。回問確認：title「新機動戦記ガンダムW OPERATION 1」、artist-credit「大谷幸」、first-release-date 1995-07-21、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 2〔STARCHILD KICA-251 1995、KICA-2059 1999〕、Official 1〔SUNRISE Music Label 2023〕、Pseudo-Release 1）。刻意不釘：5c55f657-b11c-3b66-990a-73868d77465e《新機動戦記ガンダムW OPERATION 2》、caa97030-e08a-3de6-91ab-2223e066b941《同 OPERATION 3》、f2860e9e-eee7-36da-ab4e-32aec2616fa6《同 OPERATION S》（皆同系列他卷）。藝人 MBID 615e497a-340d-4efd-b191-73a22c280784，用 release-group?artist=…&limit=100&offset= 分頁全列共 76 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kow Otani；大谷幸, TWO-MIX & 大石ルミ；Mobile Suit Gundam Wing: Operation 1；MOBILE SUIT GUNDAM WING Original Motion Picture Soundtrack - Operation 1",
+  "reissuedBy": "SUNRISE Music Label（2023）",
+  "g": "b"
+ },
+ {
+  "artist": "田中公平",
+  "album": "トップをねらえ! 音楽大図鑑",
+  "year": 1989,
+  "genres": [
+   "classical"
+  ],
+  "label": "Victor（catno VDR-1601）",
+  "why": "田中公平替庵野秀明第一部導演作《トップをねらえ!》寫的劇伴，1989-06-07 由 Victor 以 VDR-1601 發行；1990 年另出《ウルトラ・サウンド・コレクション トップをねらえ！—田中公平の世界—》、1994 年出《トップをねらえ!響綜覧》，本張是其中的原盤。池中田中公平一張都沒有（實掃 seed_cards.json 全 14,424 列，田中公平與 Kohei Tanaka 兩種寫法皆 0 筆）。他名下 151 個 release-group 裡大半是《サクラ大戦》的遊戲盤，那條線歸 c-101，本批只取動畫作品。",
+  "risk": "盤名帶半形驚嘆號，去重時 ! 會被正規化掉、剩下「トップをねらえ 音楽大図鑑」，與同系列的《トップをねらえ!響綜覧》和 1990 年那張選輯只差後半段。Apple jp／us／gb／de／fr／ca／au 七個店面用原文盤名搜全部 0 筆；田中公平藝人頁（Apple jp artistId 263554848，Kohei Tanaka，46 張）トップをねらえ 與 Gガンダム 皆 0 筆命中——Apple 上這張確實沒有，不是比對誤判（裁定第 152 條的區分）。固定試聽要走 YouTube 官方專輯播放清單。跨語言的第二種盤名是 Aim for the Top! Music Encyclopedia（MB 的 Pseudo-Release 就用這個）。",
+  "mbNote": "釘 release-group f81bb87a-f941-3467-8593-0748786096c2。回問確認：title「トップをねらえ! 音楽大図鑑」、artist-credit「田中公平」、first-release-date 1989-06-07、primary-type Album、secondary-types [Soundtrack]、轄下 2 個 release（JP/Official 1〔Victor VDR-1601〕、Pseudo-Release 1〔Aim for the Top! Music Encyclopedia〕）。刻意不釘：62d49ec0-3f43-4763-96e2-feb672714e18《◉ウルトラ・サウンド・コレクション◉トップをねらえ！—田中公平の世界—》（1990 選輯，非原盤）、a8c46328-147d-462b-9076-316892dc6cd9《トップをねらえ!響綜覧》（1994 整編盤）。藝人 MBID 7805e018-4db0-46f9-96a6-8607995c26a8，用 release-group?artist=…&limit=100&offset= 分頁全列共 151 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kohei Tanaka；Aim for the Top! Music Encyclopedia；GunBuster；トップをねらえ 音楽大図鑑",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "澤野弘之",
+  "album": "MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK",
+  "year": 2010,
+  "genres": [
+   "classical"
+  ],
+  "label": "MusicRay'n（catno SMCL-20004）",
+  "why": "澤野弘之接下 Gundam 正傳劇伴的第一張，2010-03-10 由 MusicRay'n 以 SMCL-20004 發行，同系列後續出到第四張（2014），2020-08-07 SUNRISE Music Label 以《機動戦士ガンダムUC オリジナルサウンドトラック 1》重出。這是他從電視劇伴轉進大型動畫企劃的起點。池中澤野弘之一張都沒有（實掃 seed_cards.json 全 14,424 列，澤野弘之與 Sawano 兩種寫法皆 0 筆），Gundam 系列的原聲盤在池中也一張都沒有。",
+  "risk": "同一張碟有英文與日文兩種盤名（MB 的 RG 用英文 MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK、2014 與 2020 的 release 用日文《機動戦士ガンダムUC オリジナルサウンドトラック》），跨文字系統的去重兩邊都要掃（裁定第 49 條）。Apple jp collectionId 1524640230「機動戦士ガンダムUC オリジナルサウンドトラック 1」掛 澤野弘之、releaseDate 2010-03-10、24 軌，是靠藝人頁 lookup（artistId 156620523，Hiroyuki Sawano，130 張）撈到的——用英文盤名搜 jp 回的全是 SawanoHiroyuki[nZk] 的別的專輯，屬裁定第 166 條的形狀；同一頁還有 OST 2（520758314／1524643042）、3（604790361／1524642700）、4（1525247143）四筆，盤名只差尾號。另有 2019 年《機動戦士ガンダムUC ニューベストサウンドトラック》精選。",
+  "mbNote": "釘 release-group ded04e73-1c32-4a2b-9a71-6164a20b7c26。回問確認：title「MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK」、artist-credit「澤野弘之」、first-release-date 2010-03-10、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 3：MusicRay'n SMCL-20004 2010、サンライズ音楽出版 2014、SUNRISE Music Label 2020〔標題 機動戦士ガンダムUC オリジナルサウンドトラック 1〕）。刻意不釘：eefc3e0e-17d8-45f8-8dc4-9d5463ed0c04《MOBILE SUIT GUNDAM UNICORN ORIGINAL SOUNDTRACK 2》、61dbe02e-6a30-4a5c-8d07-ed7773801420《同 3》、c61c9ed4-3318-4b5e-b7b7-e148be60f5f4《同 4》（皆續集）、ca536f04-884b-4965-b6c9-9a864fc8bbff《機動戦士ガンダムUC ニューベストサウンドトラック》（精選，非原聲）、d8690835-dc8d-411a-821b-828acd3eab49《Mobile Suit Gundam Unicorn Unreleased Soundtrack》（未收錄曲集）、4f849a18-b4a9-4142-93c9-9a61e3ef9ef8《MOBILE SUIT GUNDAM UNICORN suite》（2025 EP）。藝人 MBID 60d2ea34-1912-425f-bf9c-fc544e4448cd，用 release-group?artist=…&limit=100&offset= 分頁全列共 181 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroyuki Sawano；機動戦士ガンダムUC オリジナルサウンドトラック；Mobile Suit Gundam Unicorn Original Soundtrack",
+  "reissuedBy": "SUNRISE Music Label（2020）",
+  "g": "b"
+ },
+ {
+  "artist": "澤野弘之",
+  "album": "TVアニメ「進撃の巨人」オリジナルサウンドトラック",
+  "year": 2013,
+  "genres": [
+   "classical",
+   "rock"
+  ],
+  "label": "PONY CANYON（catno PCCG-01351）",
+  "why": "澤野弘之最被引用的一張劇伴，2013-06-28 由 PONY CANYON 以 PCCG-01351 發行，同日另有英文盤 Attack on Titan (Original Soundtrack)，2013 年 7 月 Ponycanyon Korea 以 PCKD-30143 發韓國盤；此後 Season 2（2017）、Season 3（2019）、The Final Season（2021–23）各出一張。池中澤野弘之一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名帶 TVアニメ 前綴與「」括號，續作四張的盤名結構相同、只差季別字樣，是最強的假陽性；英文盤名 Attack on Titan (Original Soundtrack) 與韓文盤名「진격의 거인」오리지널 사운드 트랙 屬跨文字系統的第二、第三種寫法，去重三種都要掃（裁定第 49 條）。MB 有三筆 release 的 country 被填成 AF（阿富汗），看起來是建檔錯誤而非真的阿富汗發行，判斷發行地時不採。Apple jp collectionId 661050312「TVアニメ「進撃の巨人」オリジナルサウンドトラック」掛 澤野弘之、releaseDate 2013-06-28，與卡片盤名逐字相同；同一頁的 1239706770（Season 2）與 1468037766（Season3）是最像的假陽性。",
+  "mbNote": "釘 release-group a75812d1-c4d3-4583-bb77-7cdbd82a8ab6。回問確認：title「TVアニメ「進撃の巨人」オリジナルサウンドトラック」、artist-credit「澤野弘之」、first-release-date 2013-06-28、primary-type Album、secondary-types [Soundtrack]、轄下 8 個 release（JP/Official 2〔PONY CANYON PCCG-01351〕、AF/Official 3〔國別欄疑為建檔錯誤〕、KR/Official 1、GB/Official 1、Pseudo-Release 1）。刻意不釘：bdb150b2-6b97-4a80-b01d-50373e31d187《TVアニメ「進撃の巨人」オリジナルサウンドトラックII》、f17d521f-f8e9-41d8-9b0e-e270d5d905ed《同 Season 2》、58d84467-7a4d-428b-8637-417ac36ac42b《同 Season 3》、4fb3d3f9-8d7e-445d-87b9-511ea5936691《同 The Final Season》（皆續集）、de24f0b9-25bb-48d6-b91b-2b3ef09a774d《劇場版「進撃の巨人」前編〜紅蓮の弓矢〜》與 d6540234-5395-4e81-a245-1fe9f17cd114《同後編〜自由の翼〜》（劇場版）、161a3ad5-ce7c-46a5-8e0c-385c1066b278《The Final Season Original Sound Track Complete Album》（精選，非原盤）。藝人 MBID 60d2ea34-1912-425f-bf9c-fc544e4448cd。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hiroyuki Sawano；Attack on Titan (Original Soundtrack)；진격의 거인 오리지널 사운드 트랙；Shingeki no Kyojin",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "BERSERK",
+  "year": 1997,
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "label": "vap（catno VPCG-84639）",
+  "why": "平沢進替 TV 版《剣風伝奇ベルセルク》寫的原聲盤，1997-11-06 由 vap 以 VPCG-84639 在日本發行，同日另出國際版《BERSERK Original Soundtrack》；1999 年他另替遊戲《ベルセルク 千年帝国の鷹篇》寫過一張，2004 年再出主題曲集。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，平沢進與 Hirasawa 兩種寫法皆 0 筆），他的 P-MODEL 時期與個人作品在池中同樣空白。",
+  "risk": "盤名只有 BERSERK 一個常見英文字：池中已有 Gary Numan《Berserker》與 Roy Harper《Flat Baroque and Berserk》兩張，皆非本張；Apple jp 用 BERSERK 搜回的前四筆全是 2021–25 年不相干藝人的同名單曲（vamplug、AFOK、APHRO），子字串比對誤中率極高（裁定第 124 條的形狀）。平沢進藝人頁（Apple jp artistId 76056888，Susumu Hirasawa，15 張）有兩筆同名的《BERSERK Original Soundtrack》，releaseDate 都是 1997-11-06、軌數一個 11 一個 10（collectionId 1652625970 與 1652630218）——同名同日的雙胞胎，選定固定試聽時要記下取的是哪一個。MB 轄下 3 筆是 Bootleg／Pseudo-Release，依裁定第 43 條不算背書。日文盤名《剣風伝奇ベルセルク》是第二種寫法。",
+  "mbNote": "釘 release-group 5b0d84c5-34ce-3156-9123-09cc50dffd3a。回問確認：title「BERSERK」、artist-credit「平沢進」、first-release-date 1997-11-06、primary-type Album、secondary-types [Soundtrack]、轄下 7 個 release（JP/Official 1〔vap VPCG-84639〕、XW/Official 1〔BERSERK Original Soundtrack〕、TW/Bootleg 2、Bootleg 1、Pseudo-Release 2）。刻意不釘：25df9b52-48f3-37f1-8a78-2c61c7f9b48b《BERSERK-Forces-》（1997 單曲）、32d01bc2-aee8-3e3d-bd46-b6f86023d677《ベルセルク 千年帝国の鷹篇 喪失花の章 オリジナルゲームサウンドトラック》（遊戲原聲，屬 c-101 範疇）、6316b695-e07b-45ab-a6ee-1bc9a61a9cf4《ベルセルク 〜千年帝国の鷹篇 聖魔戦記の章〜 テーマ曲集》（主題曲集）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab（另有一個標為 imposter 的同名實體 f7a56d48-092f-40b3-8ab8-9dc9623767ba，未採），用 release-group?artist=…&limit=100&offset= 分頁全列共 131 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；BERSERK Original Soundtrack；剣風伝奇ベルセルク",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "千年女優",
+  "year": 2002,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Chaos Union (Teslakite)（catno CHTE-0022）",
+  "why": "平沢進與今敏合作的第一張劇場動畫原聲盤，2002-09-06 由他自營的 Chaos Union／Teslakite 以 CHTE-0022 發行；四年後同一家廠牌以 CHTE-0038 出《パプリカ》，兩張加上 2004 年的《妄想代理人》構成他替今敏寫的全部劇伴。自營廠牌發行是這幾張在串流上難找的直接原因。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "MB 只有一個 JP Official release 加兩筆 Pseudo-Release，兩筆 Pseudo 用英文盤名 Millennium Actress——跨語言的第二種寫法，去重要一起掃。Apple jp 用日文盤名搜回的是平沢進的《Kyuusai No Gihou》與一堆不相干的專輯；他的 Apple jp 藝人頁（artistId 76056888）15 張裡只有 BERSERK 那兩筆與本張無關的個人作品，千年女優 0 筆命中——Teslakite 的自營盤沒有上 Apple，固定試聽要走 YouTube 官方專輯播放清單。同名的還有電影本身與各種翻奏。",
+  "mbNote": "釘 release-group 3a2b52ef-9ce5-330a-b9e0-87199b968fcf。回問確認：title「千年女優」、artist-credit「平沢進」、first-release-date 2002-09-06、primary-type Album、secondary-types [Soundtrack]、轄下 3 個 release（JP/Official 1〔Chaos Union (Teslakite) CHTE-0022〕、Pseudo-Release 2〔Millennium Actress〕）。刻意不釘：e62983b3-f5a5-3ceb-9b69-96271a526506《妄想代理人 オリジナルサウンドトラック》與 e511b979-410b-3cad-98f8-81a293b06975《『妄想代理人』アウトテイク・コレクション》（今敏另一部作品）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；Millennium Actress；Sennen Joyu",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "平沢進",
+  "album": "パプリカ オリジナルサウンドトラック",
+  "year": 2006,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Chaos Union (Teslakite)（catno CHTE-0038）",
+  "why": "平沢進與今敏最後一次合作的劇場動畫原聲盤，2006-11-23 由 Chaos Union／Teslakite 以 CHTE-0038 發行，同編號另出英文標題版《Paprika Original Soundtrack》；隔年另有一張 e7c6c955-75f9-421f-ad1b-b50ba5d63027《Paprika》。與 2002 年《千年女優》同批補進本批。池中平沢進一張都沒有（實掃 seed_cards.json 全 14,424 列，日文與羅馬拼音兩種寫法皆 0 筆）。",
+  "risk": "盤名前段パプリカ 與 2018 年 Foorin／2020 年 米津玄師 的同名單曲《パプリカ》完全撞字——Apple jp 用原文盤名搜，前幾筆全是那兩首兒歌單曲（1537765253、1537279370），是本張最強的假陽性，配對必須連「オリジナルサウンドトラック」一起比。平沢進 Apple jp 藝人頁（artistId 76056888）パプリカ 0 筆命中，Teslakite 的自營盤沒有上 Apple，固定試聽要走 YouTube 官方專輯播放清單。英文盤名 Paprika Original Soundtrack 是第二種寫法。",
+  "mbNote": "釘 release-group 54c75c86-bf80-3a18-b77a-6dab25d1a558。回問確認：title「パプリカ オリジナルサウンドトラック」、artist-credit「平沢進」、first-release-date 2006-11-23、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 2：Chaos Union (Teslakite) CHTE-0038 兩筆〔一筆標題作 “Paprika” Original Soundtrack〕、XW/Official 2、US/Official 1）。刻意不釘：e7c6c955-75f9-421f-ad1b-b50ba5d63027《Paprika》（2007 另一個 release-group）、4c204285-02f3-41a3-bcc8-d12bc4fdfd6d《映像のための音楽》（精選，非原聲）。藝人 MBID 31e7b30b-f960-408f-908b-c8e277308eab。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Susumu Hirasawa；Paprika Original Soundtrack；パプリカ",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "大野雄二",
+  "album": "Original Soundtrack from Lupin III",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Columbia（catno YP-7071-AX）",
+  "why": "大野雄二替《ルパン三世》第二 TV 系列寫的第一張原聲盤，1978-01-25 由 Columbia 以 YP-7071-AX 發行；1985 年以 33C35-7575 重出、1994 年出 COCC-12206、2015-10-14 再以 COCX-39261 發行並改名《ルパン三世 オリジナル・サウンドトラック》。池中大野雄二只有 1983 年的《ルパン三世 カリオストロの城 オリジナル・サウンドトラック》一張（實掃 seed_cards.json 全 14,424 列，大野雄二與 Yuji Ohno 兩種寫法都查過），系列起點的這一張沒有。",
+  "risk": "MB 的 RG 標題是英文《Original Soundtrack from Lupin III》，2015 再發改成日文《ルパン三世 オリジナル・サウンドトラック》——跨文字系統的兩種盤名，而後者與池中既有那張《ルパン三世 カリオストロの城 オリジナル・サウンドトラック》只差中間的作品名，去重兩種都要掃並看完整字串（裁定第 49／162 條）。Apple 的掛名用羅馬拼音 Yuji Ohno（jp artistId 73404621，100 張），與池中既有卡的日文掛名分屬兩種寫法；他的 Apple 目錄裡 66 筆 LUPIN 相關全部是 1999 年之後 Lupintic 系列的重新錄音（JAZZ、the Last Job、Pt. V／Pt. 6 等），1978 年那張原盤 Apple 上沒有——固定試聽要走 YouTube 官方專輯播放清單或依 §4 人工核對的 collectionId，且要特別小心不要配到 Lupintic 的重錄版。",
+  "mbNote": "釘 release-group 10cd5905-2af3-46e4-9729-c06e347699d7。回問確認：title「Original Soundtrack from Lupin III」、artist-credit「大野雄二」、first-release-date 1978-01-25、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release（JP/Official 6：Columbia YP-7071-AX 1978、33C35-7575 1985、另一筆 1985、COCC-12206 1994、COCX-39261 2015〔標題 ルパン三世 オリジナル・サウンドトラック〕等）。刻意不釘：dcae5ca1-8709-4e1c-80bc-6b9807cd6325《Lupin the 3rd: Original Soundtrack 2》、49cdada1-d41e-463b-bc2d-c0a14eee02f5《同 3》（續集）、54dc40d2-dd03-3100-86e2-d39844e7c1f4《ルパン三世 カリオストロの城 オリジナル・サントラBGM集》（池中已有同一張碟的卡）、3f8286ee-7ba8-4f6d-8831-5373556ba4bf《ルパン三世 パーフェクト・コレクション》、fd841d4a-3d51-4388-a4b1-6d827eb9a819《ルパン三世 BOX》、eb5863c1-c2fb-498c-acf3-5ec89f3ceabf《LUPIN THE BEST! PUNCH THE ORIGINALS》（皆精選或套裝，非原盤）。藝人 MBID 49b6b461-0e97-4e96-8e5f-b77192ea7762，用 release-group?artist=…&limit=100&offset= 分頁全列共 86 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Yuji Ohno；ルパン三世 オリジナル・サウンドトラック；Lupin the Third Original Soundtrack",
+  "reissuedBy": "Columbia（2015，COCX-39261）",
+  "g": "b"
+ },
+ {
+  "artist": "菊池俊輔",
+  "album": "ドラゴンボール 音楽集",
+  "year": 1986,
+  "genres": [
+   "classical",
+   "pop"
+  ],
+  "label": "Columbia（catno CX-7272）",
+  "why": "菊池俊輔替《ドラゴンボール》TV 版寫的劇伴集，1986-04-21 由 Columbia 以 CX-7272 發行（同編號另有一筆標題加了「テレビ・オリジナル・サウンドトラック」副標），2003-09-25 Columbia Music Entertainment 以 COCC-72015 重出。他名下 34 個 release-group 裡，《ドラゴンボール》《ドラゴンボールZ》與《ドラえもん》三條線份量最重，本張是其中的起點。池中菊池俊輔一張都沒有（實掃 seed_cards.json 全 14,424 列，菊池俊輔與 Kikuchi Shunsuke 兩種寫法皆 0 筆），東映動畫 1970–80 年代的劇伴在池中整片空白。",
+  "risk": "同一 RG 底下兩筆同編號 CX-7272 的 release 標題長度不同（帶／不帶「テレビ・オリジナル・サウンドトラック」副標），是裁定第 152 條那種副標串進盤名的形狀，卡片取 RG 標題。續作《ドラゴンボールZ 音楽集 vol.1／vol.2》盤名只差 Z 與卷號。英文盤名 Dragon Ball: Music Collection 是第二種寫法。Apple jp 用原文盤名搜回的全是 ZARD、Zedd 等後世主題曲；菊池俊輔 Apple jp 藝人頁（artistId 193509151，16 張）ドラゴンボール 0 筆命中——1986 年那張 Apple 上沒有，固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 6c1c9bae-2aa0-380f-b7ce-48e696028434。回問確認：title「ドラゴンボール 音楽集」、artist-credit「菊池俊輔」、first-release-date 1986-04-21、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 3：Columbia CX-7272 兩筆、Columbia Music Entertainment COCC-72015 2003；Pseudo-Release 2）。刻意不釘：509efbd4-7686-430a-b68f-00d6237bffea《ドラゴンボールZ 音楽集 vol.1》、ad78c289-9598-4b6d-88e6-61a358d7cfa2《同 vol.2》（續作系列）、d84f5899-1b69-4e9a-90a3-b8c00dc175ca《ドラゴンボール/ドラゴンボールZ大全集》與 38c1e4c4-ceee-4bf8-af97-edd39561fa55《Dragon Ball Z BGM Collection CD-BOX》（套裝精選）、6043649c-48ef-456c-b0df-7efeb25cc542《菊池俊輔BGMコレクョン》與 602a43b1-376c-4794-8822-0c3d27ec1538《菊池俊輔 作曲50周年 CD-BOX》（皆精選，非原盤）。藝人 MBID 3240614e-869e-4c37-94ca-65a570a2d7cb，用 release-group?artist=…&limit=100&offset= 分頁全列共 34 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Shunsuke Kikuchi；ドラゴンボール 音楽集 テレビ・オリジナル・サウンドトラック；Dragon Ball: Music Collection",
+  "reissuedBy": "Columbia Music Entertainment（2003，COCC-72015）",
+  "g": "b"
+ },
+ {
+  "artist": "神前暁",
+  "album": "化物語 音楽全集 Songs & Soundtracks",
+  "year": 2011,
+  "genres": [
+   "pop",
+   "electronic"
+  ],
+  "label": "Aniplex（catno SVWC-7814／7815）",
+  "why": "神前暁替〈物語〉シリーズ第一部《化物語》寫的劇伴，MB 上原本是兩張隨 Blu-ray 附贈的《劇伴音楽集 其ノ壹／其ノ貮》（2010），2011-12-21 Aniplex 以 SVWC-7814／7815 把劇伴與歌曲整編成這張兩片裝音楽全集，是這套音樂唯一以獨立商品形態發行的版本。池中神前暁一張都沒有（實掃 seed_cards.json 全 14,424 列，神前暁與 Kousaki／Kosaki 三種寫法皆 0 筆），〈物語〉シリーズ 在池中完全沒有代表。",
+  "risk": "MB 的 primary-type 是 Album、secondary-types 含 Compilation 與 Soundtrack；依 §5.6 明文與 c-90 裁定第 3 條，primary-type=Album 照一般 Album 寫法、exceptionReason 與 exceptionEvidenceUrls 留空。不釘 2010 那兩張的理由寫在 mbNote：它們的 MB 標題把 OP 單曲名（sugar sweet nightmare）與劇伴音楽集串成同一個字串，卡片盤名無法乾淨取用。英文／羅馬拼音盤名有兩種（Bakemonogatari Complete Music Works: Songs & Soundtracks／Bakemonogatari Ongaku Zenshuu: Songs & Soundtracks，MB 的兩筆 Pseudo-Release 各用一種），去重三種都要掃。Apple jp 用原文盤名搜七個店面 0 筆；神前暁 Apple jp 藝人頁（artistId 404614477，Satoru Kosaki，17 張）物語 0 筆命中，只有 1535798229《歌物語 Special Edition》掛在「物語シリーズ」這個名義下、且是歌曲精選不是本張。固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group c39bf004-2fd9-4d0f-9921-0b5ef781148e。回問確認：title「化物語 音楽全集 Songs & Soundtracks」、artist-credit「神前暁」、first-release-date 2011-12-21、primary-type Album、secondary-types [Compilation, Soundtrack]、轄下 3 個 release（JP/Official 1〔Aniplex SVWC-7814、SVWC-7815〕、Pseudo-Release 2）。刻意不釘：fc21f4c3-eca9-4c99-a9ce-e8b0d2cdaaa8《「sugar sweet nightmare」&「化物語」劇伴音楽集 其ノ壹》與 72380bbe-62aa-4454-93b1-84e65dd17226《「化物語」劇伴音楽集 其ノ貮&あとがたり》（2010 兩張隨碟附贈盤，RG 標題把單曲名與劇伴集串在一起）、318a3d21-b8d0-4898-8b53-dd518e907061 起的《偽物語》《猫物語》《傾物語》各卷劇伴音楽集（續作系列）、1588bd3d-8c1f-48a3-b21d-18ddeb8a6fc1《<物語>シリーズ セカンドシーズン Original Soundtracks》（整編精選，非原盤）。藝人 MBID 557e6938-404b-4332-a169-bec2b77fe05b，用 release-group?artist=…&limit=100&offset= 分頁全列共 79 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Satoru Kousaki；Satoru Kosaki；Bakemonogatari Complete Music Works: Songs & Soundtracks；Bakemonogatari Ongaku Zenshuu",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "Nujabes / Fat Jon",
+  "album": "samurai champloo music record: departure",
+  "year": 2004,
+  "genres": [
+   "hiphop",
+   "jazz"
+  ],
+  "label": "Victor（catno VICL-61411）",
+  "why": "《サムライチャンプルー》四張原聲盤裡由 Nujabes 與 Fat Jon 共同署名的第一張，2004-06-23 由 Victor 以 VICL-61411 發行，2008 年 JVC 出韓國盤 JEKAC8001，2018 年 Victor 又出一筆 VICL-61411 F（狀態 Withdrawn）。同系列另有 masta（Force of Nature／Tsutchie）、impression（三方共同）與 playlist（Tsutchie）。池中 Nujabes 已有三張個人作品（Metaphorical Music 2003、Modal Soul 2005、Spiritual State 2011，實掃 seed_cards.json 全 14,424 列），但他最廣為流傳的這套動畫劇伴一張都沒有——2026-09-04 店主已明示沒有「同一藝人上限三張」這條規則（裁定第 150 條），三張不是不收的理由。",
+  "risk": "掛名是共同署名：MB 的 artist-credit 作「Nujabes / Fat Jon」（斜線，與裁定第 16 條池中既有寫法一致），Apple jp 記成「Nujabes/fat jon」（無空格、小寫），池中既有三張則是單掛 Nujabes——本卡另立共同掛名鍵，因為這確實是兩人共同署名的碟、不是同一人的第二種寫法。Apple jp collectionId 1721842998「Samurai Champloo Music Record Departure」（無冒號、字首大寫），releaseDate 2004-06-23；同一頁 1721843312 是 impression，兩張盤名只差最後一個字。MB 轄下有 1 筆 XW Bootleg（無廠牌 SCR002，標題只作 departure）與 1 筆 Withdrawn，依裁定第 43 條都不算再發背書。",
+  "mbNote": "釘 release-group 109bed29-720c-3a93-88ae-af83a464e5ed。回問確認：title「samurai champloo music record: departure」、artist-credit「Nujabes / Fat Jon」、first-release-date 2004-06-23、primary-type Album、secondary-types [Soundtrack]、轄下 11 個 release（JP/Official 4〔Victor VICL-61411〕、KR/Official 1〔JVC JEKAC8001〕、Official 1、JP/Withdrawn 1、XW/Bootleg 1、狀態未填 1、Pseudo-Release 2）。刻意不釘：e8c3e38f-de01-30e4-af7c-5eabc68d3471《samurai champloo music record: impression》、1b6101ec-146c-33e4-871d-048ad3557f62《同 masta》、655400ef-8e44-3604-8fe5-86c9565b5aa5《同 playlist》（同系列他卷，掛名各不相同）、ab6894f3-9f49-32db-a764-1a67b17abf38《Samurai Champloo Music Record: Katana》（掛 Various Artists 的精選）、e2444f98-1e73-402c-9194-12a4575a5450《Lost Lullabies - Samurai Champloo Unreleased Tracks》（未收錄曲集）、2d91c1d5-a057-47fb-8f83-4f7afdb3dc2f《Samurai Champloo Rhythm Track》（掛 Masafumi Takada，另一部遊戲作品）。Fat Jon 實體 f9288855-58f9-42ed-8001-6edc34d2f00a（MB 主名 Fat Jon the Ample Soul Physician）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Nujabes；Fat Jon；Fat Jon the Ample Soul Physician；Samurai Champloo Music Record Departure；サムライチャンプルー",
+  "reissuedBy": "",
+  "g": "b"
+ },
+ {
+  "artist": "大島ミチル",
+  "album": "鋼の錬金術師 オリジナルサウンドトラック 1",
+  "year": 2004,
+  "genres": [
+   "classical"
+  ],
+  "label": "Aniplex（catno SVWC-7191）",
+  "why": "大島ミチル替 2003 年版《鋼の錬金術師》寫的第一張劇伴，2004-03-24 由 Aniplex 以 SVWC-7191 發行（原盤標題帶「TVアニメーション」前綴），2005 年以 SVWC-1034 重出、2022 年再以 ANXX01082B00Z 發行；同系列續出 2、3 與劇場版《シャンバラを征く者》。她名下 103 個 release-group 大半是東寶特攝與日劇，這一組是她在動畫這邊最完整的一套。池中大島ミチル一張都沒有（實掃 seed_cards.json 全 14,424 列，大島ミチル與 Michiru Oshima 兩種寫法皆 0 筆）。",
+  "risk": "同一張碟在 MB 有三種標題：2004 原盤《TVアニメーション 鋼の錬金術師 オリジナルサウンドトラック1》、2005 再發《鋼の錬金術師 オリジナルサウンドトラック 1》（即 RG 標題）、2022 版《鋼の錬金術師 オリジナル・サウンドトラック》（無編號、中間多一個中黑）；Apple jp 用的是第三種（collectionId 1618724980，掛 大島ミチル、releaseDate 2004-03-24），三種寫法都要進去重。同一頁的 1618725351（2）、1618726267（3，掛 Various Artists）、1618726452（劇場版）是最像的假陽性。英文盤名 Fullmetal Alchemist Original Soundtrack 1 是跨語言的第四種寫法。",
+  "mbNote": "釘 release-group 0d0869a0-b725-35bc-9fc5-915fdfbc180c。回問確認：title「鋼の錬金術師 オリジナルサウンドトラック 1」、artist-credit「大島ミチル」、first-release-date 2004-03-24、primary-type Album、secondary-types [Soundtrack]、轄下 5 個 release（JP/Official 3：Aniplex SVWC-7191 2004、SVWC-1034 2005、ANXX01082B00Z 2022；Pseudo-Release 2）。刻意不釘：516f7ed5-e10c-3444-adbc-b8126ce703a3《鋼の錬金術師 オリジナルサウンドトラック 2》、cff60ee7-3c1b-3f85-aa93-0d2c70bb4bd2《同 3》（續集）、ca8b2ce9-700d-3606-bb75-f13a0962fda9《劇場版 鋼の錬金術師 シャンバラを征く者 オリジナル・サウンドトラック》（劇場版另一部）。藝人 MBID e6fae4d5-2a94-433d-b046-e34d7d136429，用 release-group?artist=…&limit=100&offset= 分頁全列共 103 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Michiru Oshima；TVアニメーション 鋼の錬金術師 オリジナルサウンドトラック1；鋼の錬金術師 オリジナル・サウンドトラック；Fullmetal Alchemist Original Soundtrack 1",
+  "reissuedBy": "Aniplex（2005，SVWC-1034）",
+  "g": "b"
+ },
+ {
+  "artist": "横山菁児",
+  "album": "聖闘士星矢 音楽集",
+  "year": 1987,
+  "genres": [
+   "classical"
+  ],
+  "label": "Columbia（catno CX-7296）",
+  "why": "横山菁児替《聖闘士星矢》TV 版寫的第一張劇伴，1987-01-21 由 Columbia 同時以 CX-7296（LP）與 32CC-1368（CD）發行，2003-09-25 Columbia Music Entertainment 以 COCC-72009 重出；同系列此後出到音楽集Ⅷ（1989）與冥王ハーデス篇（1990），是他名下 34 個 release-group 的主幹。池中横山菁児一張都沒有（實掃 seed_cards.json 全 14,424 列，横山菁児與 Seiji Yokoyama 兩種寫法皆 0 筆），東映動畫 1980 年代的管弦劇伴在池中沒有代表。",
+  "risk": "同系列八張的盤名只差尾端的羅馬數字（本張無數字），是最強的假陽性；1987-07 另有《聖闘士星矢 ヒット曲集II いかなる星の下に》（Album/Compilation），屬歌曲精選不是劇伴。英文盤名 Saint Seiya TV Original Soundtrack 與法文再版名 Les Chevaliers du Zodiaque 屬跨語言的第二、三種寫法，去重都要掃。Apple jp 用原文盤名搜回的全是不相干的近年單曲；横山菁児 Apple jp 藝人頁（artistId 408923928，Seiji Yokoyama，22 張）3 筆命中全部是 2019–21 年的單曲（1488458605、1502253529、1553666625），1987 年那張 Apple 上沒有——固定試聽要走 YouTube 官方專輯播放清單。",
+  "mbNote": "釘 release-group 7153d9e7-8d2d-4d27-9211-ea80de20494e。回問確認：title「聖闘士星矢 音楽集」、artist-credit「横山菁児」、first-release-date 1987-01-21、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release（JP/Official 3：Columbia CX-7296、Columbia 32CC-1368、Columbia Music Entertainment COCC-72009 2003；Pseudo-Release 1）。刻意不釘：8c52baf6-c803-4888-9f36-ffef8e944e27《聖闘士星矢 音楽集Ⅱ》、8777d14f-79c7-4fd3-8f96-4bb2d1b4d38e《同Ⅲ》、f7ac1ab5-028e-4ccf-9417-2a63bee49427《同Ⅳ》、3ccca9ee-7c12-46ac-90d8-5b308b01762d《同Ⅴ》、e177af55-ebb9-40af-878d-9051bdf609b2《同Ⅵ》、f86b5e44-02de-4d26-a795-4b755a7470ec《同Ⅶ》、bbda6eb5-3e92-42e6-8b41-ad119d657e9e《同Ⅷ》（皆同系列他卷）、1156409d-7081-4aa2-919b-2511039c86bc《聖闘士星矢 ヒット曲集II いかなる星の下に》（歌曲精選，非劇伴）、997da441-cfbe-30e7-8a68-6a731015bd89《聖闘士星矢 メモリアルBOX》（套裝精選）。藝人 MBID 81df6a19-c74b-41dd-a628-1ffcb6b6a9ee，用 release-group?artist=…&limit=100&offset= 分頁全列共 34 個 RG。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Seiji Yokoyama；Saint Seiya TV Original Soundtrack；Les Chevaliers du Zodiaque",
+  "reissuedBy": "Columbia Music Entertainment（2003，COCC-72009）",
+  "g": "b"
+ }
+]

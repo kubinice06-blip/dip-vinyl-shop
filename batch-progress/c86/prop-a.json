@@ -1,0 +1,429 @@
+[
+ {
+  "artist": "Henry Franklin",
+  "album": "The Skipper at Home",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/17，是貝斯手 Henry Franklin 在該廠牌的第二張，原盤同年另有日本 Black Jazz YX-7016 壓片。地位證據是連續四十年不斷線的授權再發：P-Vine 1997 年黑膠 PLP-6732 與 1998 年 CD PCD-5286、Black Jazz 自家 2002 年 CD BJ/17、P-Vine 2005 年 PCD-22102、2013 年日本重製 SDGBJ1217，以及 Real Gone Music 2021 年起的黑膠與 CD 復刻 RGM-1264／RGM-1266（2024、2026 兩度再壓）。Discogs master 506942 的 17 個版本零筆標 Unofficial。池中已有同藝人 1972 年的《The Skipper》(BJ/7)，本張是同一條線的下一張、不是同一張碟。",
+  "risk": "撞卡風險：池中的《The Skipper》(1972) 與本張《The Skipper at Home》(1974) 盤名互為子字串，任何用子字串比對的去重都會誤判為同一張，實掃已確認是兩張不同的碟。Black Jazz 原盤是四聲道（Quadraphonic）壓片，日後 CD 多為立體聲混音，行文不得把兩種混音當同一版本。**CAA 實測無封面（本批 45 張裡只有 3 張如此）**，封面要走 Apple 那條線——實測 us 店面有這張碟（collectionId 1509131569）。",
+  "mbNote": "MB release-group 52e06de4-4e3b-309f-9165-bc57393b3f4f《The Skipper at Home》，artist-credit「Henry Franklin」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1974 US（Black Jazz 原盤）、2002 US、2013-03-27 JP。已回問 release-group 端點確認實體類型與標題。藝人另有 1972 年《The Skipper》的獨立 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Walter Bishop, Jr.'s 4th Cycle",
+  "album": "Keeper of My Soul",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/14，bebop 世代鋼琴手 Walter Bishop, Jr. 以「4th Cycle」團名發表的電氣化作品。地位證據是完整的授權再發鏈：Black Jazz 自家 2003 年 CD（BJ/14）、P-Vine 2005 年 PCD-22098、Snow Dog 2013 年日本重製 SDGBJ1214，以及 Real Gone Music 2021 年的黑膠 RGM-1283 與 CD RGM-1285（同年另有 P-Vine PCD-17838 與 PLP-7760 兩筆日本授權盤，2022 年再出俱樂部限量版）。Discogs master 590903 的 15 個版本零筆標 Unofficial。池中已有同一位鋼琴手 1971 年的《Coral Keys》(BJ/2)，本張是兩年後的另一張碟。",
+  "risk": "掛名拼法分歧最需注意：MB 實體寫成「Walter Bishop, Jr.’s 4th Cycle」（撇號為 U+2019），本卡一律採 ASCII 撇號；Discogs 記為「Walter Bishop Jr.'s 4th Cycle」（無逗號），池中既有卡則寫「Walter Bishop Jr.」。三種寫法都要進 queryAlias，否則封面與試聽的字串查詢會落空。撞卡方面已實掃全池：盤名《Keeper of My Soul》完全相等 0 筆。",
+  "mbNote": "MB release-group 033c9fa7-c405-4235-9e5b-198fe2380f9a《Keeper of My Soul》，artist-credit「Walter Bishop, Jr.’s 4th Cycle」（MB 用 U+2019），first-release-date 1973，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1973 US（Black Jazz 原盤）、2005-04-02 JP、2012-12-18 US、2021-10-01 US。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Walter Bishop Jr.'s 4th Cycle／Walter Bishop, Jr.／Walter Bishop Jr.",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Gene Russell",
+  "album": "Talk to My Lady",
+  "year": 1973,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/10。Gene Russell 是這家廠牌目錄上的第一號（BJ/1《New Direction》，池中已有），《Talk to My Lady》是他在自家廠牌的第二張。地位證據是 Black Jazz 自家 2003 年 CD（BJQD/10）、2005 年日本 PCD-22095、2012 年 Snow Dog 重製 SDGBJ1210，以及 Real Gone Music 2021 年的黑膠 RGM-1186 與 CD RGM-1188（同年另有日本授權盤 PLP 7136，2022 年再出編號限量版）。Discogs master 432263 的 15 個版本零筆標 Unofficial。",
+  "risk": "年份分歧：MB 與 Discogs 原盤皆記 1973，但部分再發文案寫 1974，行文不得正面斷言發行年以外的說法。盤名短、常見詞多，以盤名為主鍵掃全池時 `talktomylady` 完全相等 0 筆、子字串 0 筆。封面預估良好（Real Gone 復刻已上串流）。",
+  "mbNote": "MB release-group 5cb2dd05-4f0f-409e-b649-648aec035c47《Talk to My Lady》，artist-credit「Gene Russell」，first-release-date 1973，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1973 US（Black Jazz 原盤）、2005-03-04 JP。已回問 release-group 端點確認實體類型與標題。同藝人 1971 年《New Direction》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music",
+  "g": "a"
+ },
+ {
+  "artist": "Calvin Keys",
+  "album": "Proceed With Caution",
+  "year": 1974,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/18，吉他手 Calvin Keys 在該廠牌的第二張。地位證據是四十年的連續授權再發：Black Jazz 2003 年 CD BJQD/18、P-Vine 2005 年 PCD-22103、2009 年日本四聲道 CD、2013 年重製 SDGBJ1218、2020 年官方數位重製，以及 Real Gone Music 2021 年黑膠 RGM-1294 與 CD RGM-1296、2022 年 P-Vine 黑膠 PLP-7781 與 CD PCD-17840。Discogs master 592769 的 15 個版本零筆標 Unofficial。池中已有他 1971 年的首張《Shawn-Neeq》(BJ/5)。",
+  "risk": "盤名寫法分歧：Discogs master 標題帶驚嘆號《Proceed With Caution!》，MB 實體不帶，本卡採 MB 寫法，兩種寫法都要進下游查詢。原盤是四聲道壓片，後來的 CD 多為立體聲，版本核對時不可混用。撞卡方面盤名完全相等 0 筆。",
+  "mbNote": "MB release-group fcf0a72c-cf08-4877-bc85-428988456628《Proceed With Caution》，artist-credit「Calvin Keys」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1974 US（Black Jazz 原盤）、2005-05-04 JP。已回問 release-group 端點確認實體類型與標題。同藝人 1971 年《Shawn-Neeq》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Proceed With Caution!",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Rudolph Johnson",
+  "album": "The Second Coming",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/11，薩克斯風手 Rudolph Johnson 在該廠牌的第二張。地位證據是從 1997 年一路到 2022 年的授權再發：P-Vine 1997 年 CD PCD-5281、Black Jazz 2002／2003／2005 年三次 CD、Snow Dog 2012 年日本重製 SDGBJ1211，以及 Real Gone Music 2021 年黑膠 RGM-1286 與 CD RGM-1288、同年日本 PLP-7761、2022 年編號俱樂部版。Discogs master 445694 的 18 個版本零筆標 Unofficial。池中已有他 1971 年的《Spring Rain》(BJ/4)。",
+  "risk": "盤名撞名風險高：《The Second Coming》是常見盤名，池中另有 The Stone Roses《Second Coming》(1994)，以盤名為主鍵掃池時務必連掛名一起比。原盤四聲道、CD 立體聲的版本差異同前。封面與試聽預估良好（Real Gone 復刻在串流上）。",
+  "mbNote": "MB release-group 95518e5a-899f-39e5-ae44-38249075b8c2《The Second Coming》，artist-credit「Rudolph Johnson」，first-release-date 1973，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1973 US（Black Jazz 原盤）、2005-04-02 JP、2005 US、2021-10-01 US。已回問 release-group 端點確認實體類型與標題。同藝人 1971 年《Spring Rain》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Awakening",
+  "album": "Mirage",
+  "year": 1973,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/15，芝加哥團體 The Awakening 在該廠牌的第二張。地位證據是 P-Vine 1997 年 CD PCD-5284、2005 年 PCD-22099、Snow Dog 2013 年日本重製 SDGBJ1215，以及 Real Gone Music 2021 年黑膠 RGM-1261 與 CD RGM-1263（同年日本黑膠 PLP-7200，2024、2026 兩度再壓）。Discogs master 197952 的 20 個版本零筆標 Unofficial。池中已有本團 1972 年的《Hear, Sense and Feel》(BJQD/9)，本張是同團次年的另一張碟。",
+  "risk": "盤名撞名極高：池中另有 Camel《Mirage》(1974)、Fleetwood Mac《Mirage》(1982)、Art Farmer Quintet《Mirage》(1982)，以盤名為主鍵掃池必須連掛名一起比，四筆已逐一人眼核對為不同的碟。掛名「The Awakening」去 The 之後是常見詞，Discogs 實體為「The Awakening (4)」，引用時要帶括號序號。",
+  "mbNote": "MB release-group 9e2febc0-ff1f-3022-8f60-7665e8d6a1ee《Mirage》，artist-credit「The Awakening」，first-release-date 1973，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1973 US（Black Jazz 原盤）、1999 US、2005-04-02 JP、2013 JP。已回問 release-group 端點確認實體類型與標題。本團 1972 年《Hear, Sense and Feel》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Awakening (4)",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Kellee Patterson",
+  "album": "Maiden Voyage",
+  "year": 1973,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/12，是這家器樂為主的廠牌少數的女聲掛名專輯。地位證據是 P-Vine 1997 年的 CD PCD-5283 與四聲道黑膠 PLP 6731、Black Jazz 自家 1998／2005／2006 三次 CD、2012 年 Snow Dog 重製 SDGBJ1212，以及 Real Gone Music 2020 年的黑膠 RGM-1104 與 CD RGM-1107（含日本授權盤 PLP-6775 與美國編號限量版）。Discogs master 197958 的 17 個版本零筆標 Unofficial。池中 Kellee Patterson 零張。",
+  "risk": "盤名撞名：池中已有 Herbie Hancock《Maiden Voyage》(1965)，該曲亦為爵士標準曲，任何以盤名為主鍵的比對都會撞上，已人眼核對為不同的碟；封面與試聽的字串查詢也必然撈回 Hancock 那張，下游要靠 rgMbid 或掛名限定。原盤四聲道、後來 CD 立體聲。",
+  "mbNote": "MB release-group 1348ff9a-560e-3dee-a2fc-dfe4eb3f3425《Maiden Voyage》，artist-credit「Kellee Patterson」，first-release-date 1973，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1973 US（Black Jazz 原盤）、1998 US、2005-04-02 JP。已回問 release-group 端點確認實體類型與標題。Herbie Hancock 同名碟為完全不同的 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Roland Haynes",
+  "album": "2nd Wave",
+  "year": 1975,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/19，鋼琴手 Roland Haynes 名下唯一的專輯。地位證據是 Black Jazz 2003 年 CD BJQD/19、P-Vine 2005 年 PCD-22104、2013 年日本重製 SDGBJ1219，以及 Real Gone Music 2020 年的黑膠 RGM-1108 與 CD RGM-1111（含日本授權黑膠 PLP-6780 與編號限量版，2025 年再壓兩次）。Discogs master 652882 的 13 個版本零筆標 Unofficial。池中 Roland Haynes 零張，本張是這條線少數「藝人只留下一張唱片」的例子。",
+  "risk": "「名下唯一專輯」是依 Discogs 與 MB 兩邊查詢的結果，屬推論，研究層要另行核對是否另有掛名或參與盤。盤名以數字開頭（2nd Wave），字串正規化後為 `2ndwave`，與常見詞不相撞，掃池完全相等 0 筆。原盤四聲道、CD 立體聲。",
+  "mbNote": "MB release-group 66aac09d-08ad-4dcd-8ecf-ebba58182476《2nd Wave》，artist-credit「Roland Haynes」，first-release-date 1975，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1975 US（Black Jazz 原盤）、2005-05-04 JP、2013 JP、2020-10 US。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music",
+  "g": "a"
+ },
+ {
+  "artist": "Cleveland Eaton",
+  "album": "Plenty Good Eaton",
+  "year": 1975,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Jazz Records",
+  "why": "Black Jazz Records 目錄 BJQD/20。地位證據是 Black Jazz 2005 年 CD BJQD 20、P-Vine 2006 年 PCD-22105、2009 年日本四聲道 CD、2013 年 Snow Dog 重製 SDGBJ1220、2019 年黑膠 BJ/20，以及 Real Gone Music 2020 年的黑膠 RGM-1155 與 CD RGM-1157（含日本授權盤）。Discogs master 197953 的 14 個版本零筆標 Unofficial。池中 Cleveland Eaton 零張。",
+  "risk": "掛名與盤名共用「Eaton」一字，字串比對時會與藝人名互相干擾；掃池以盤名為主鍵完全相等 0 筆、子字串 0 筆。原盤四聲道、CD 立體聲的版本差異同本批其他 Black Jazz 卡。封面與試聽預估良好（Real Gone 復刻在串流上）。",
+  "mbNote": "MB release-group c9a6db61-1232-4fcc-81ab-f9228976706b《Plenty Good Eaton》，artist-credit「Cleveland Eaton」，first-release-date 1975，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1975 US（Black Jazz 原盤）、2005-05-04 JP、2005 US。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Real Gone Music／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Creative Arts Ensemble",
+  "album": "One Step Out",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 NS-913，出自 Horace Tapscott 周邊的洛杉磯 UGMAA 圈子。地位證據是 Nimbus West 自家 2001 年的 CD（NS 913 C）與 2021 年黑膠再壓（NS-913），以及英國 Outernational Sounds 2018 年的授權黑膠復刻 OTR-005——Outernational Sounds 從 2018 年起系統性重發 Nimbus West 目錄，這是該系列的其中一張。Discogs master 的 5 個版本零筆標 Unofficial。池中 Creative Arts Ensemble 零張，Nimbus West 這條線在本批之前只有 Horace Tapscott《The Call》一張。",
+  "risk": "掛名由三個常見英文字組成，外部服務的字串搜尋幾乎必然撈回大量無關結果，封面與試聽要靠 rgMbid 或完整盤名限定。「Outernational Sounds 系統性重發 Nimbus West 目錄」是依 Discogs 版本頁歸納，屬推論，研究層要另行核對該廠牌的官方頁。盤名《One Step Out》掃池完全相等 0 筆。",
+  "mbNote": "MB release-group 5b526621-c74b-43d0-8952-3a937c4ff2d4《One Step Out》，artist-credit「Creative Arts Ensemble」，first-release-date 1981，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1981 US（Nimbus West 原盤）、2001 US、2006。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Outernational Sounds",
+  "g": "a"
+ },
+ {
+  "artist": "Linda Hill",
+  "album": "Lullaby for Linda",
+  "year": 1981,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 Nimbus #791，鋼琴手 Linda Hill 名下唯一的專輯，同屬洛杉磯 UGMAA 圈子。地位證據是 Nimbus West 自家 2012 年 CD（NS791C）、2019 年黑膠再壓（NS-791），以及 2019 年 UGMAA 掛名的復刻版（NIMBUS #791）；Discogs 版本頁 5 筆零筆標 Unofficial。池中 Linda Hill 零張。",
+  "risk": "掛名是兩個極常見的英文名，且盤名裡又出現同一個名字（Linda），字串比對兩邊互相干擾，下游一律要靠 rgMbid。「名下唯一專輯」依 MB 與 Discogs 查詢結果，屬推論。封面與試聽的實測結果：CAA 有圖，**Apple 只在 jp 店面命中**（collectionId 1101405649），us／gb 皆空，下游查詢一定要帶 country 參數（裁定第 137 條）。",
+  "mbNote": "MB release-group b595a473-7adc-40d0-83d0-b51dcfa940b0《Lullaby for Linda》，artist-credit「Linda Hill」，first-release-date 1981，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1981 US（Nimbus West 原盤）、2012 US、2014-07-31 XW、2019 GB。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "",
+  "reissuedBy": "Nimbus West Records／UGMAA",
+  "g": "a"
+ },
+ {
+  "artist": "Pan Afrikan Peoples Arkestra",
+  "album": "Flight 17",
+  "year": 1978,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 NIMBUS-135，是這家廠牌成立後最早發行的作品之一，掛的是樂團本身而不是指揮 Horace Tapscott。地位證據是 Nimbus West 1997 年的 CD（NS 135 C）、2019 年 UGMAA 與 Outernational Sounds 合作的授權黑膠復刻（NIMBUS-135／OTR-010）與 2021 年再壓（NS-135）。Discogs 版本頁 5 筆中有 1 筆 2019 年英國盤被標為 Bootleg，其餘為授權版。池中已有 Horace Tapscott 掛名的《The Call》(1978, NS-246) 與《The Giant Is Awakened》(1969)，樂團本身掛名的碟則零張。",
+  "risk": "掛名歧異是本卡最大的風險，且正是裁定第 151 條說的「團體名 vs 領班名」：同一個樂團在不同碟上寫成「Pan Afrikan Peoples Arkestra」「Pan-Afrikan Peoples Arkestra」（帶連字號）與「Horace Tapscott with the Pan-Afrikan Peoples Arkestra」，池中既有卡用的是第三種。三種寫法都要進 queryAlias，否則去重與封面查詢都會漏。另 MB 轄下有一筆 2019 GB release 標 Bootleg，考古再發的背書判定要以 1997 年 Nimbus West 自家 CD 與 2019 年 UGMAA 版為準，不得引用那一筆。",
+  "mbNote": "MB release-group 595b6884-1253-4fec-8415-f577b6a4c623《Flight 17》，artist-credit「Pan Afrikan Peoples Arkestra」，first-release-date 1978，primary-type Album、secondary-types 空。轄下 4 個 release：1978 US Official（Nimbus West 原盤）、1997 US Official、2019 GB **Bootleg**、2021-10 DE Official。已回問 release-group 端點確認實體類型與標題。Horace Tapscott 掛名的《The Call》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Pan-Afrikan Peoples Arkestra／Horace Tapscott with the Pan-Afrikan Peoples Arkestra",
+  "reissuedBy": "Outernational Sounds／UGMAA",
+  "g": "a"
+ },
+ {
+  "artist": "Horace Tapscott with The Pan-Afrikan Peoples Arkestra",
+  "album": "Live at I.U.C.C.",
+  "year": 1979,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Nimbus West Records",
+  "why": "Nimbus West Records 目錄 NIMBUS No. 357，錄於洛杉磯 Immanuel United Church of Christ 的現場雙碟。地位證據是 Nimbus West 2006 年的 CD（NS 357 C）、Soul Jazz Records 2019 年的授權 CD（SJR CD424）與 UGMAA 2023 年的限量重製黑膠。Discogs 上另有 Outernational Sounds 2019 年的黑膠 OTR-007，該筆被標為 Partially Unofficial，背書判定不採該筆、改以 Nimbus West 自家 CD 與 Soul Jazz 版為準（裁定第 43／57／65／78 條：判定單位是「這一次再發」）。池中已有 Tapscott 的《The Call》與《The Giant Is Awakened》，本張是他名下的現場錄音、不是同一張碟。",
+  "risk": "MB 標 secondary-type Live，是現場盤而非錄音室盤，行文要寫清楚。掛名歧異同《Flight 17》那張，三種寫法都要備查。Nimbus West 近年另出了一整套《Live at I.U.C.C.》加日期的分冊（ns-7901c 至 ns-7911c，2023–24 年），盤名與本張互為子字串，去重與封面比對時極易混淆，本卡釘的是 1979 年那張原始雙碟。另 MB 轄下有一筆 2019-03-26 GB release 標 Bootleg，不得引用。",
+  "mbNote": "MB release-group e5e3143e-1016-4ddf-9b43-b05f5d889ce9《Live at I.U.C.C.》，artist-credit「Horace Tapscott with The Pan-Afrikan Peoples Arkestra」，first-release-date 1979，primary-type Album、secondary-types **Live**。轄下 6 個 release：1979 US Official（Nimbus West 原盤）、2006 US Official、2014-07-31 XW Official、2019-03-22 AF Official、2019-03-26 GB **Bootleg**、2019 GB Official。已回問 release-group 端點確認實體類型與標題。2023–24 年 Nimbus West 的《Live at I.U.C.C. 2/25/79》等分冊各有獨立 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Horace Tapscott／Pan-Afrikan Peoples Arkestra",
+  "reissuedBy": "Soul Jazz Records／UGMAA",
+  "g": "a"
+ },
+ {
+  "artist": "Phil Ranelin",
+  "album": "The Time Is Now!",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 TRCD 4006，長號手 Phil Ranelin 名下的作品。地位證據是 Hefty Records 2001 年與 Tribe 合作的授權再發（HEFTY32／TRCD 4006）與 P-Vine 2009 年的日本 CD PCD-22332；Discogs master 的 11 個版本中 10 筆為再發，零筆標 Unofficial。池中已有他 1976 年的《Vibes from the Tribe》(TRCD4008)，本張是兩年前的另一張碟，Tribe 這條線在本批之前池中只有那一張。",
+  "risk": "盤名帶驚嘆號，字串正規化後與不帶驚嘆號的寫法相同，但外部服務的精確比對會分歧，queryAlias 要備一份不帶驚嘆號的。掛名另有「Phillip Ranelin」的寫法（同廠牌 1973 年《A Message From the Tribe》即用此寫法），是裁定第 151 條說的同一人兩種掛名，去重時要一起比。Tribe 廠牌在 Discogs 上的實體是「Tribe (3)」，與英國、挪威的同名廠牌不是同一家，引用時要帶括號序號。",
+  "mbNote": "MB release-group 7c6b1237-1783-4246-844e-af0c6fa6fdd5《The Time Is Now!》，artist-credit「Phil Ranelin」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1974 US（Tribe 原盤）、2001 US（Hefty）。已回問 release-group 端點確認實體類型與標題。同藝人《Vibes From the Tribe》另有 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Phillip Ranelin／The Time Is Now",
+  "reissuedBy": "Hefty Records／P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Harold McKinney",
+  "album": "Voices and Rhythms of the Creative Profile",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 PRSD 2233。地位證據是 P-Vine 2004 年 CD PCD-23571 與 2009 年 PCD-22334、Tribe 自家 2018 年的黑膠再壓（PRSD 2233）；Discogs master 517353 的 15 個版本中 11 筆為再發，零筆標 Unofficial。池中 Harold McKinney 零張。",
+  "risk": "盤名在 Discogs 上寫成《Voices & Rhythms Of The Creative Profile》（用 &），MB 寫成 and，正是裁定第 151 條「比對兩邊時先問用的是不是同一套命名」的形狀；兩種寫法都要進 queryAlias，否則封面與試聽的精確比對會落空。Tribe 廠牌實體為 Discogs 的「Tribe (3)」。",
+  "mbNote": "MB release-group a6553d49-f502-48e8-a5a5-ba42d392d82a《Voices and Rhythms of the Creative Profile》，artist-credit「Harold McKinney」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1974 US（Tribe 原盤）、2004 JP。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Voices & Rhythms of the Creative Profile",
+  "reissuedBy": "P-Vine Records",
+  "g": "a"
+ },
+ {
+  "artist": "Mixed Bag",
+  "album": "Mixed Bag's First Album",
+  "year": 1976,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Tribe",
+  "why": "底特律 Tribe 廠牌目錄 TRCD4010。地位證據橫跨三十年：Soul Jazz Records 1992 年的英國授權黑膠（SJC 0001／TRCD 4010，是 Soul Jazz 目錄的第一號）、P-Vine 2004 年 PCD-23570 與 2009 年 PCD-22336、Octave Lab 2021 年的日本 CD 與黑膠（OTLCD2559／OTS 244），以及 Tidal Waves Music 2023 年的美國黑膠復刻 TWM103。Discogs master 595982 的 9 個版本零筆標 Unofficial。池中 Mixed Bag 零張。",
+  "risk": "掛名「Mixed Bag」是常見詞組，池中另有 Richie Havens《Mixed Bag》(1967) 這張盤名相同的碟——**掛名與盤名剛好對調**，任何以單一欄位比對的去重都會誤判，已人眼核對為不同的碟與不同的藝人。MB 實體標題用 U+2019 撇號《Mixed Bag’s First Album》，本卡一律採 ASCII 撇號，兩種寫法都要備查。「Soul Jazz 目錄第一號」是依 Discogs 編號 SJC 0001 歸納，屬推論，研究層要另行核對。",
+  "mbNote": "MB release-group a941d763-312f-4d7f-abd7-1bf0d10d7721《Mixed Bag’s First Album》（MB 用 U+2019），artist-credit「Mixed Bag」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1976 US（Tribe 原盤）、2004-10-15 JP。已回問 release-group 端點確認實體類型與標題。MB 上另有一個同名同碟的 release（5b4e23ce，country US、status undefined），非 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mixed Bag’s First Album",
+  "reissuedBy": "Tidal Waves Music／Soul Jazz Records",
+  "g": "a"
+ },
+ {
+  "artist": "Maulawi",
+  "album": "Maulawi",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 104-74，薩克斯風手 Maulawi Nururdin 的自我同名專輯。地位證據是 Universal Sound（Soul Jazz 旗下考古廠牌）2005 年的黑膠與 CD 授權復刻（US LP 26／US CD 26），以及 Strata Records 2020 年自家的黑膠重製（SRI 104-74／OEP1009）——後者屬 180 Proof Records 從 2018 年起系統性重發 Strata 目錄的那一批。Discogs master 183381 的 5 個版本零筆標 Unofficial。池中 Maulawi 零張，Strata（底特律）這條線在本批之前池中只有 The Lyman Woodard Organization《Saturday Night Special》一張。",
+  "risk": "自我同名卡（盤名＝掛名），依 §1 屬高風險，`selfTitledVerified` 必填。**實測 Apple 三個 storefront（us／gb／jp／ca）都查不到這張**，身分證據改採 release-group MBID（依 2026-09-04 店主放寬的三選一），CAA 實測有封面。掛名只有一個單字且是常見的阿拉伯語人名，外部服務的字串搜尋會撈回大量無關結果；藝人全名「Maulawi Nururdin」要進 queryAlias。Strata 廠牌實體為 Discogs 的「Strata Records (4)」，與同名的其他 Strata 不是同一家。",
+  "mbNote": "MB release-group d2b5c40a-8637-3055-b75f-fad1104ae0f0《Maulawi》，artist-credit「Maulawi」，first-release-date 1974，primary-type Album、secondary-types 空。轄下 4 個 release 全為 Official：1974 US（Strata 原盤）、2005-04-18 GB ×2（Universal Sound）、2020-12-01 XW。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "Maulawi Nururdin",
+  "reissuedBy": "Universal Sound／180 Proof Records",
+  "g": "a"
+ },
+ {
+  "artist": "The Contemporary Jazz Quintet",
+  "album": "Location",
+  "year": 1973,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 1001-73，是這家廠牌編號最前面的一張。地位證據是 2018 年 BBE 與 Strata 合作的授權復刻：BBE 的 CD（BBE430ACD）與數位版，以及 Strata Records 自家的限量黑膠再壓（SRI 1001-73／OEP 1006）。Discogs master 1338288 的 4 個版本零筆標 Unofficial。池中 The Contemporary Jazz Quintet 零張。",
+  "risk": "掛名由四個常見英文字組成，Discogs 實體為「The Contemporary Jazz Quintet (2)」，字串搜尋會撈回大量無關結果；盤名《Location》是單一常見詞，掃池以盤名為主鍵時務必連掛名一起比（完全相等 0 筆）。MB 轄下只有 1 個 release 且 status 為 null（不是 Official 也不是 Bootleg），本卡的背書依據改採 2018 年 BBE 與 Strata 的授權復刻，不引用該筆 status。**CAA 實測無封面**，封面要走 Apple 那條線（實測 us 店面有這張碟）。",
+  "mbNote": "MB release-group de2e8401-1b14-49a8-b1bd-49a768643947《Location》，artist-credit「The Contemporary Jazz Quintet」，first-release-date 1973，primary-type Album、secondary-types 空。轄下僅 1 個 release：1973 US，**status 為 null**。已回問 release-group 端點確認 primary-type 為 Album 與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Contemporary Jazz Quintet (2)／CJQ",
+  "reissuedBy": "BBE／180 Proof Records",
+  "g": "a"
+ },
+ {
+  "artist": "Sphere",
+  "album": "Inside Ourselves",
+  "year": 1974,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata Records",
+  "why": "底特律 Strata Records 目錄 SRI 103-74。地位證據是 180 Proof Records 2019 年的授權黑膠復刻（OEP 1007，含測試壓片）、Octave Lab 2022 年的日本 CD（OTLCD2601），以及 BBE 2023 年的德國黑膠（BBE714ALP，封套同時印上 SRI 103-74 與 OEP 1007 兩組編號）。Discogs master 1591566 的 5 個版本零筆標 Unofficial。池中 Strata（底特律）這條線在本批之前只有一張。",
+  "risk": "掛名撞名是本卡最大的風險：1980 年代另有一個由 Charlie Rouse、Kenny Barron、Buster Williams、Ben Riley 組成、同樣叫 Sphere 的四重奏（Elektra／Verve 出片），與底特律這個 Sphere 不是同一團；Discogs 用「Sphere (19)」區分。任何以單一藝人名查詢的下游都會撈錯團，封面與試聽務必靠 rgMbid。MB 標 secondary-type Live，行文要寫成現場錄音。",
+  "mbNote": "MB release-group 24b19429-df70-47c7-9c5f-d59ca4460c1e《Inside Ourselves》，artist-credit「Sphere」，first-release-date 1974，primary-type Album、secondary-types **Live**。轄下 3 個 release 全為 Official：1974 US（Strata 原盤）、2023-05-19 XW ×2。已回問 release-group 端點確認實體類型與標題。1980 年代同名四重奏的各張碟為完全不同的 release-group，刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sphere (19)",
+  "reissuedBy": "180 Proof Records／BBE",
+  "g": "a"
+ },
+ {
+  "artist": "Oneness of Juju",
+  "album": "Space Jungle Luv",
+  "year": 1976,
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19754。地位證據橫跨三十年：Black Fire 自家 1993／1994 兩次 CD、Strut 2002 年的英國授權黑膠與 CD（STRUTLP 028）、以及 Strut 2021 年重啟 Black Fire 目錄時的再版；Discogs master 的 15 個版本中 13 筆為再發，零筆標 Unofficial。池中已有本團 1975 年的《African Rhythms》(BF19751)，本張是次年的另一張碟；同一批人以「Juju」掛名的《A Message From Mozambique》與《Chapter Two: Nia》池中也已有。",
+  "risk": "掛名歧異密集，正是裁定第 151 條說的形狀：同一批人先後用「Juju」「Oneness of Juju」「Plunky and Oneness of Juju」「Plunky & Oneness of Juju」發片，池中三張分屬前兩種寫法，去重時四種都要比（本卡與池中三張皆非同一張碟，已逐一核對）。另 1994 年 Black Fire 曾以《Chapter Two: Nia》沿用 Strata-East 的編號 SES-7420 重發，跨廠牌重出的情形在這條線上很常見，年份引用要看清楚是哪一次。",
+  "mbNote": "MB release-group 007ce1bd-2321-37dd-b511-57a5ae447af1《Space Jungle Luv》，artist-credit「Oneness of Juju」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1976 US（Black Fire 原盤）、2002-04-30 GB（Strut）、2021-05-21 XW。已回問 release-group 端點確認實體類型與標題。《African Rhythms》《A Message From Mozambique》《Chapter Two: Nia》各有獨立 release-group（池中已有），刻意不釘。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Juju／Plunky and Oneness of Juju",
+  "reissuedBy": "Strut",
+  "g": "a"
+ },
+ {
+  "artist": "Wayne Davis",
+  "album": "Wayne Davis",
+  "year": 1976,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19752，Wayne Davis 的自我同名專輯。地位證據是 Strut 2022 年的授權黑膠復刻（STRUT244LP）——Strut 從 2020 年的《Soul Love Now: The Black Fire Records Story 1975-1993》開始系統性重發這家廠牌的目錄，本張是該系列的其中一張。Discogs 版本頁 3 筆零筆標 Unofficial。池中 Wayne Davis 零張。",
+  "risk": "自我同名卡（盤名＝掛名），依 §1 屬高風險，`selfTitledVerified` 必填；實測 Apple us 店面有這張碟（collectionId 1524569657），CAA 也有封面，身分證據充足。掛名由兩個極常見的英文名組成，同名的人在資料庫裡不只一個，下游一律要靠 rgMbid。「Strut 系統性重發 Black Fire 目錄」是依 Discogs 版本頁與該合輯歸納，屬推論，研究層要另行核對 Strut 官方頁。",
+  "mbNote": "MB release-group 43c8595c-060f-471b-8b88-9153de107c03《Wayne Davis》，artist-credit「Wayne Davis」，first-release-date 1976，primary-type Album、secondary-types 空。轄下 2 個 release 全為 Official：1976 US（Black Fire 原盤）、2022-05-13 XW（Strut）。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "",
+  "reissuedBy": "Strut",
+  "g": "a"
+ },
+ {
+  "artist": "Experience Unlimited",
+  "album": "Free Yourself",
+  "year": 1977,
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "label": "Black Fire",
+  "why": "華府 Black Fire 廠牌目錄 BF 19757，是後來以 go-go 聞名的 E.U. 最早的一張 LP。地位證據是 Black Fire 自家 1994 年的重發（BF19757）與 Now-Again Records 2019–20 年的授權黑膠復刻（NA 5176、NA 5176-LP-ST），後者同時作為 Vinyl Me, Please Essentials 的選盤發行。Discogs 上這張碟的各版本零筆標 Unofficial。池中 Experience Unlimited 零張。",
+  "risk": "掛名歧異：Discogs 記為「Experience Unlimited*」並指向 E.U. 這個實體，同一團日後多以「E.U.」發片，兩種寫法都要進 queryAlias，否則去重與查詢會漏。曲風歸類要小心：這張碟在爵士廠牌上發行，但團體本身屬華府 go-go 一脈，卡上填 soul 與 jazz 兩個標籤是策展層的判斷，不是外部資料庫的分類。MB 轄下的 1977 那筆 country 為 null。",
+  "mbNote": "MB release-group e79f3e9f-2c24-4940-bd9a-c87fb53834f4《Free Yourself》，artist-credit「Experience Unlimited」，first-release-date 1977，primary-type Album、secondary-types 空。轄下 3 個 release 全為 Official：1977（country null，Black Fire 原盤）、2019-05 US（Now-Again）、2021-02-05 XW。已回問 release-group 端點確認實體類型與標題。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "E.U.",
+  "reissuedBy": "Now-Again Records",
+  "g": "a"
+ }
+]

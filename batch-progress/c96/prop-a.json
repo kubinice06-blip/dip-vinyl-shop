@@ -1,0 +1,386 @@
+[
+ {
+  "artist": "N.W.A",
+  "album": "N.W.A. and the Posse",
+  "year": 1987,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Macola Record Co.",
+  "why": "N.W.A 掛名下最早問世的一張 LP，比《Straight Outta Compton》早一年，由洛杉磯的按單壓片廠 Macola 發行，內容是 Ruthless 早期班底（N.W.A、Eazy‑E、Fila Fresh Crew、Rappinstinct）當時各自的單曲與未發表曲的集合，也是 Dr. Dre 與 Eazy‑E 建廠初期的流通形態。MB 這一筆 primary-type 為 Album、secondary-types 含 Compilation，依 ALBUM_ONBOARDING §5.6 明文照一般 Album 寫、不填例外欄位。池中 N.W.A 只有 2 張（實掃 seed_cards.json 全 14,424 列）：《Straight Outta Compton》(1988)、《Niggaz4Life》(1991)——正規目錄兩張都在，缺的正是它們之前的這一張。",
+  "risk": "Apple 命中 us 店面：artistId 569363 名下 collectionId 1440826297、collectionExplicitness **explicit**、11 軌、releaseDate 1987-11-06；同名淨化版在該目錄中未出現（同一目錄裡只有《Straight Outta Compton》有 explicit 1440816032／cleaned 1478946356 的雙胞胎）。盤名句點寫法有「N.W.A. and the Posse」與「NWA and the Posse」兩式，兩種都要掃。掛名池中作「N.W.A」、MB artist-credit 作「N.W.A.」，正規化後同字串，撞卡檢查不受影響。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 4be84ac2-bde2-3b81-a112-65fa2f620bac。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「N.W.A. and the Posse」、artist-credit「N.W.A.」、first-release-date 1987、primary-type Album、secondary-types [Compilation]、轄下 4 個 release（US/Official 2、NL/Official 1、XW/Official 1）。刻意不釘：af542890-2cfb-3efe-847c-d06cbb4c5c8e《Greatest Hits》(1996 精選)、eb6713d9-c7f4-3052-accc-41937e219df3《The Best of N.W.A: The Strength of Street Knowledge》(2006 精選)、92dd0bf7-e329-4e7c-945e-85747a7d7743《Efil4zaggin / Straight Outta Compton》(2007 二合一)、9f3b1c61-de45-3d60-98ad-65b57980eef5《100 Miles and Runnin'》(1990 EP)、ca113e0b-face-40c7-aed9-89dcdcfdbecf《Straight Outta Compton: 10th Anniversary Tribute》(Remix)。藝人 MBID 3a54bffa-2314-44a2-927b-60144119c780，名下 17 個 release-group（release-group?artist=…&limit=100&offset= 分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "NWA and the Posse；N.W.A. & the Posse；N.W.A",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "The Notorious B.I.G.",
+  "album": "Born Again",
+  "year": 1999,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Bad Boy Records／Arista",
+  "why": "Biggie 遇害後兩年由 Bad Boy 編成的第三張專輯，取未發表的 vocal 母帶重新配置伴奏與客座，是他名下最後一批以「新專輯」形態流通的錄音，1999 年底發行後在美國專輯榜登頂。MB 這一筆 primary-type 為 Album、secondary-types 含 Compilation，依 §5.6 明文照一般 Album 寫。池中 The Notorious B.I.G. 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Ready to Die》(1994)、《Life After Death》(1997)、《Duets: The Final Chapter》(2005)——生前兩張與 2005 年那張身後輯都在，中間的《Born Again》正是缺口，補上之後身後三部曲的兩端才對得起來。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎，必須取 explicit：artistId 5499810 名下 collectionId **78989263**（explicit，「Born Again (2005 Remaster)」、18 軌）與 collectionId 1782256137（**cleaned**、18 軌、1999-12-07），兩筆同曲數、只有 explicitness 與版本尾綴不同；us 與 gb 店面搜尋預設回的是 cleaned 那一筆，這正是 audits/cleaned-previews-hiphop.md 記的形狀。撞卡風險：盤名《Born Again》在池中無同名碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group f04201c6-8d95-344c-9e1b-b5212366091b。回問確認：title「Born Again」、artist-credit「The Notorious B.I.G.」、first-release-date 1999-12-07、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（US/Official 1、AL/Official 1）。刻意不釘：18f1f809-0332-412e-8e8c-80a3b7c6475d《The Here After》(1999 精選)、961a7d96-5b21-37dd-8341-13316cf7dfa3《The Commission》(2006 精選)、81a7ef80-be2e-3ec5-a8da-6e5c7ace5714《Greatest Hits》(2007)、63cf4d69-76dc-3dbb-89f5-e9fec5c189e7《Notorious》(2009 電影原聲)、2afd9763-ee90-4cf6-b722-cf421640037f《Ready to Die (The O.G. Edition)》(Mixtape/Street)。藝人 MBID d5d97b2b-b83b-4976-814a-056d9076c8c3，名下 92 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Notorious BIG Born Again；Biggie Smalls",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "JAY-Z",
+  "album": "In My Lifetime, Vol. 1",
+  "year": 1997,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Roc-A-Fella Records／Def Jam",
+  "why": "JAY-Z 的第二張專輯，也是 Roc-A-Fella 與 Def Jam 建立發行同盟後的第一張，把《Reasonable Doubt》的獨立廠牌路線換成大廠通路，Puff Daddy 一線製作班底進場，1997 年在美國專輯榜進前三。池中 JAY-Z 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Reasonable Doubt》(1996)、《The Blueprint》(2001)、《The Black Album》(2003)——1997 到 2000 的四張（Vol. 1、Vol. 2、Vol. 3、The Dynasty）全部空白，這張是那段的開頭，補在《Reasonable Doubt》旁邊才看得出他從獨立走進大廠的那一步。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎：artistId 1352449404 名下 collectionId **1440910816**（explicit、14 軌、1997-11-04）與 1442903698（**cleaned**、14 軌、1997-01-01）；us 與 gb 的 search 端點兩店都只回 cleaned 那一筆，必須改走 lookup?id=1352449404&entity=album 才看得到 explicit 版——這批 JAY-Z 四張全部是這個形狀。掛名寫法分歧：MB 藝人實體作「JAŸ-Z」（帶分音符）、releases 的 artist-credit 作「Jay‐Z」、Apple 作「JAŸ-Z」、池中三張既有卡作「JAY-Z」；新卡沿用池中的「JAY-Z」，四種寫法全部進 queryAlias，否則跨系統比對會漏。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 3a7cb4ec-575e-3614-b71d-1248c2e470cf。回問確認：title「In My Lifetime, Vol. 1」、artist-credit「Jay‐Z」、first-release-date 1997-10-27、primary-type Album、secondary-types 空、轄下 11 個 release（US/Official 3、XE/Official 2、CA/Official 2、GB/DE/JP 各 1、未標國別 1）。刻意不釘：9f58f849-59db-4bab-b737-cf50a34d2d89《In My Lifetime / I Can't Get Wid Dat》(1994 單曲)、2dca9505-7aa4-423f-afe0-b75e6975fd0b《In My Lifetime》(1995 remix 單曲)——兩筆盤名都含「In My Lifetime」，是本張最像的假陽性。藝人 MBID f82bcf78-5b69-4622-a5ef-73800768d9ac，名下 212 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "JAŸ-Z；Jay-Z；Jay Z；In My Lifetime Vol 1",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "JAY-Z",
+  "album": "Vol. 2... Hard Knock Life",
+  "year": 1998,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Roc-A-Fella Records／Def Jam",
+  "why": "JAY-Z 商業上最成功的一張，1998 年美國專輯榜冠軍、後來獲葛萊美最佳饒舌專輯，把 Roc-A-Fella 從紐約廠牌推成全國品牌。池中 JAY-Z 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Reasonable Doubt》《The Blueprint》《The Black Album》——目前池中呈現的是「獨立起家、2001 之後成名」，中間 1997–2000 的四張全缺；《Vol. 2》是這段的頂點，不補這一張，池裡就沒有 JAY-Z 從紐約走向全國市場的那一年。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎：collectionId **1440914180**（explicit、14 軌）與 1440913253（**cleaned**、14 軌、1998-09-29），Apple 條目名兩筆都作「Vol.2... Hard Knock Life」（Vol. 與 2 之間無空格），與 MB 的「Vol. 2… Hard Knock Life」（含 U+2026 省略號）、卡片採用的 ASCII「Vol. 2... Hard Knock Life」三種寫法都要進去重比對。us 與 gb 的 search 端點只回 cleaned。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 342d74c6-4c01-4541-b3ae-4524c47ad543。回問確認：title「Vol. 2… Hard Knock Life」、artist-credit「Jay‐Z」、first-release-date 1998-09-28、primary-type Album、secondary-types 空、轄下 8 個 release（US/Official 4、XW/Official 2、XE/Official 1、CA/Official 1）。刻意不釘：284c4d71-6c7e-36ff-91dd-00be3f89eaa7《Hard Knock Life (Ghetto Anthem)》(1998 單曲)、1444999652 對應的 Apple「Hard Knock Life - Single」——盤名子字串相同，是最像的假陽性。藝人 MBID f82bcf78-5b69-4622-a5ef-73800768d9ac。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Vol.2... Hard Knock Life；Vol. 2 Hard Knock Life；Hard Knock Life；JAŸ-Z；Jay-Z",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "JAY-Z",
+  "album": "American Gangster",
+  "year": 2007,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Roc-A-Fella Records／Def Jam",
+  "why": "JAY-Z 在 2003 年宣告退休、2006 年《Kingdom Come》復出之後的第十張專輯，以雷利．史考特同名電影為觸發點寫成的整體概念作，2007 年在美國專輯榜登頂。這張與電影的 Various Artists 原聲帶是兩張不同的碟，Def Jam 當時同期發行、名字相同。池中 JAY-Z 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Reasonable Doubt》《The Blueprint》《The Black Album》，2003 年之後一張都沒有；補這張與《4:44》，池中才有他 2003 年後的兩個代表點。",
+  "risk": "Apple 有三筆同名不同碟，必須靠 artistId 分辨：JAY-Z 本人 artistId 1352449404 名下 collectionId **1440835945**（explicit、15 軌、2007-11-06）與 1444024033（**cleaned**、15 軌）；另有 Various Artists《American Gangster (Original Motion Picture Soundtrack)》collectionId 1440779373（notExplicit、14 軌）與 Marc Streitenfeld《American Gangster (Original Motion Picture Score)》1443412565（notExplicit、18 軌）——後兩筆是電影原聲，不是這張碟，us 與 gb 的 search 端點都會把它們排在前面。撞卡：池中無同名碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 4632d7ca-8813-303b-b85d-c1125cb05671。回問確認：title「American Gangster」、artist-credit「Jay‐Z」、first-release-date 2007-11-06、primary-type Album、secondary-types 空、轄下 7 個 release（US/Official 3、US 未標 status 1、CA/Official 1、XW/Official 1、SG/Official 1）。刻意不釘：c5db60fa-1832-4a7a-981e-5aa5887d7f70《An American Gangster The Mixtape (Re-loaded)》（mixtape，盤名含 American Gangster，最像的假陽性）。藝人 MBID f82bcf78-5b69-4622-a5ef-73800768d9ac。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "JAŸ-Z；Jay-Z；American Gangster Jay-Z",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "JAY-Z",
+  "album": "4:44",
+  "year": 2017,
+  "genres": [
+   "hiphop",
+   "soul"
+  ],
+  "label": "Roc Nation",
+  "why": "JAY-Z 的第十三張專輯，2017 年先在 Tidal 獨佔上線再進其他平台，全碟由 No I.D. 一人製作，內容以自述形態回應婚姻與家族財產的公開爭議，是他中後期評價最集中的一張。池中 JAY-Z 有 3 張（實掃 seed_cards.json 全 14,424 列），最新的一張停在 2003 年的《The Black Album》；池中沒有任何一張他 2010 年代的碟，補《4:44》是把這位藝人的目錄拉到當代的最短路徑。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎且各有兩個版本：explicit 的 collectionId **1440935425**（10 軌、2017-06-30）；cleaned 的 1440935729（10 軌、2017-07-07）與 6783468117（13 軌、2017-06-30，加曲版）。us 與 gb 的 search 端點只回兩筆 cleaned。盤名「4:44」是純數字加冒號，任何去標點正規化都會變成「444」，容易配到 Kochetkovv《4:44 Am》、Solyn《4:44 ALIGNMENT》與多筆卡拉 OK 單曲（實測 us／gb 都在前五筆），下游比對必須連 artistId 一起看。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group aa35dd3d-b629-4a5f-abe9-a8463f80b37e。回問確認：title「4:44」、artist-credit「JAY‐Z」、first-release-date 2017-06-30、primary-type Album、secondary-types 空、轄下 10 個 release（未標國別 3、XW/Official 2、US/Official 2、XE/GB/DZ 各 1）。刻意不釘：ef9c3e7c-d731-4e87-9b0a-5994dc56c02a《The Blueprint 3》(EP／Mixtape 條目)。藝人 MBID f82bcf78-5b69-4622-a5ef-73800768d9ac。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "JAŸ-Z；Jay-Z；444；4 44",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Raekwon",
+  "album": "Immobilarity",
+  "year": 1999,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Loud Records",
+  "why": "Raekwon 的第二張個人專輯，也是他第一張不由 RZA 主導製作的作品——製作交給 Infinite Arkatechz 等外部班底，是 Wu-Tang 成員在 1999 年前後各自脫離集體製作體系的實例之一。池中 Raekwon 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Only Built 4 Cuban Linx...》(1995)、《The Babygrande Recordings》(2009)、《The Wild》(2017)——1995 到 2009 之間十四年只有空白，《Immobilarity》正是那段的第一張。",
+  "risk": "Apple 命中 us：artistId 397104 名下同一張碟有三個 collectionId，皆 explicit、皆 21 軌、releaseDate 皆 1999-11-16——**159872470**、324217934、476986603；沒有 cleaned 版本。三筆重複條目會讓自動配對每次挑到不同的一筆，下游要固定其中一個。us／gb 的 search 端點對「Raekwon Immobilarity」回 0 筆（resultCount=0，不是 403），必須改走 lookup?id=397104 才查得到——這是第 116／163 條「查得到但查法不對」的同型狀況。撞卡：池中無同名碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group a56ac6dd-e4b9-3a47-b7e2-9b81ad227f05。回問確認：title「Immobilarity」、artist-credit「Raekwon」、first-release-date 1999-11-15、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US/Official）。藝人 MBID 4e954b02-fae2-4bd7-9547-e055a6ac0527，名下 74 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Raekwon the Chef；Immobilarity",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Raekwon",
+  "album": "Only Built 4 Cuban Linx... Pt. II",
+  "year": 2009,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Ice H2O Records／EMI",
+  "why": "1995 年《Only Built 4 Cuban Linx...》的正式續作，籌備多年後於 2009 年發行，製作回到 RZA、Dr. Dre、J Dilla、Marley Marl、Pete Rock 等人手上，也是 Wu-Tang 個人目錄在 2000 年代末最受評論注意的一張。池中 Raekwon 有 3 張（實掃 seed_cards.json 全 14,424 列）：《Only Built 4 Cuban Linx...》《The Babygrande Recordings》《The Wild》——第一集在池中、續作不在，這是最該補的一組配對。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎且曲數不同：**716639724**（explicit、24 軌、2009-09-07）與 716706036（**cleaned**、23 軌、2009-01-01）；us 的 search 端點只回 cleaned 那一筆、gb 回 0 筆。盤名有四種寫法要同時掃：MB 作「Only Built 4 Cuban Linx… Pt II」（U+2026、Pt 後無句點）、Apple 作「Only Built 4 Cuban Linx, Pt. 2」（逗號、阿拉伯數字）、原盤封面作「Only Built 4 Cuban Linx... Pt. II」（卡片採用）、池中第一集作「Only Built 4 Cuban Linx...」——最後這一項是真正的風險：**卡片盤名的前 30 字元與池中既有卡完全相同**，任何子字串比對都會誤判成撞卡（第 162 條「盤名太短會配到別人」的鏡像）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group f1459996-e174-43b4-a871-f72a9fca3dc6。回問確認：title「Only Built 4 Cuban Linx… Pt II」、artist-credit「Raekwon」、first-release-date 2009-09-07、primary-type Album、secondary-types 空、轄下 4 個 release（GB/AU/US 各 1 Official、1 筆未標）。刻意不釘：ab981b48-9a7b-34c4-b46a-f6266317ce7c《Only Built 4 Cuban Linx…》(1995 第一集，池中已有)、a457f565-50f7-433f-a675-542e77a02918《Only Built 4 Cuban Linx, Pt. 2 (Gold Edition)》(2010 EP 擴充版)、d8dd8529-f0ea-4717-a99a-db90ce703d79《Prelude to Cuban Linx II》(mixtape)、d87b8221-afb2-40df-aa0d-ed5f3cf383b2《Cuban Link 2 Fishscale - The Prequel》(mixtape)——四筆盤名都含 Cuban Linx。藝人 MBID 4e954b02-fae2-4bd7-9547-e055a6ac0527。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Only Built 4 Cuban Linx Pt II；Only Built 4 Cuban Linx, Pt. 2；OB4CL2；Cuban Linx 2",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "GZA",
+  "album": "Words From the Genius",
+  "year": 1991,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Cold Chillin' Records／Warner Bros.",
+  "why": "GZA 在 Wu-Tang Clan 成軍之前、以「The Genius」名義發行的首張個人專輯，由 Cold Chillin' 出版、Easy Mo Bee 擔綱大部分製作，是九位成員裡最早出唱片的一張，也是理解 Wu-Tang 1993 年之前來歷的直接材料。池中 GZA 這條線只有 2 張（實掃 seed_cards.json 全 14,424 列）：GZA《Liquid Swords》(1995)、GZA/Genius《Legend of the Liquid Sword》(2002)——兩張都在 Wu-Tang 成立之後，1991 年那張首作缺席；「第一張該有的」在這位藝人身上指的就是它。",
+  "risk": "Apple 查無：artistId 64434（GZA）名下 30 張專輯中沒有這一筆，us 的 search 端點對「Words From the Genius」與「The Genius Words From the Genius」皆回 0 筆——Cold Chillin' 目錄大量未進串流，試聽預估 unavailable，封面走 CAA（release-group 端點 200）。Apple collectionExplicitness 因此無值可記，**待下游辨識**。掛名分歧最嚴重的一張：MB 藝人實體作「GZA/Genius」、這一筆 release-group 的 artist-credit 作「**The Genius**」、原盤封面作「The Genius」、池中兩張既有卡分別作「GZA」與「GZA/Genius」；卡片採「GZA」與池中主寫法一致，其餘三種全部進 queryAlias。",
+  "mbNote": "釘 release-group d721f6d6-875d-4a2e-aef2-647a537b5cd8。回問確認：title「Words From the Genius」、artist-credit「The Genius」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 3 個 release（皆 US/Official）。刻意不釘：ff0e0bb0-590e-4dd0-b0e5-9aca9033c61c《Words From a Genius》(1991 單曲，盤名只差一個冠詞，是本張最像的假陽性)、116a7d16-4b4d-3633-af8f-6c8f09097122《Collection of Classics》(2007 精選)、ce9d23fa-d5c8-471a-b2a0-188c88a3779f《D.A.R.T.S.》(精選)。藝人 MBID 550cb78b-4995-4873-baea-76ef265531f5，名下 43 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Genius；GZA/Genius；Words From a Genius；Genius Words From the Genius",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "GZA",
+  "album": "Beneath the Surface",
+  "year": 1999,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "MCA Records",
+  "why": "GZA 在《Liquid Swords》之後的第二張 Wu-Tang 期個人專輯，1999 年由 MCA 發行，製作由 RZA 分權給 Inspectah Deck、Mathematics、Arabian Knight 等 Wu 系內部人手，是 Wu-Tang 製作體系從 RZA 單點轉向分工的一個節點，發行當週進美國專輯榜前十。池中 GZA 這條線只有 2 張（實掃 seed_cards.json 全 14,424 列）：《Liquid Swords》(1995)、《Legend of the Liquid Sword》(2002)——1999 年這張正好落在兩者之間，補上之後 GZA 的 Wu 期三張才連得起來。",
+  "risk": "Apple 命中 us：artistId 64434 名下 collectionId **1440764778**、collectionExplicitness **explicit**、18 軌、releaseDate 1999-01-01；未見 cleaned 雙胞胎。但 search 端點以「GZA Beneath the Surface」查 us 回 0 筆、查 gb 只回 Pola & Bryson、Alex Banks、Incognito 三組同名別碟（都叫《Beneath the Surface》）——**盤名撞名嚴重，下游一定要用 artistId 或 collectionId 直取**。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 9abd4b38-1c2c-3656-bcec-8a22b62eba65。回問確認：title「Beneath the Surface」、artist-credit「GZA/Genius」、first-release-date 1999-06-29、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、CA/Official 1）。刻意不釘：9150e6e2-1ba9-3003-bddd-cabea747385a《Grandmasters: Remix Album》(Remix)、a2bc3a7f-9381-47c7-a0a8-fa9cc09cee61《Genius vs Genius》(Remix)、4f5325a6-5aa9-32e4-b5a7-bdaf4a8907b5《Grandmasters》(2005 與 DJ Muggs 的合作盤，掛名不同)。藝人 MBID 550cb78b-4995-4873-baea-76ef265531f5。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "GZA/Genius；The Genius；Beneath the Surface GZA",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Black Star",
+  "album": "No Fear of Time",
+  "year": 2022,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Luminary",
+  "why": "Mos Def（Yasiin Bey）與 Talib Kweli 以 Black Star 名義的第二張專輯，距 1998 年首作二十四年，全碟由 Madlib 製作，2022 年 5 月先在 Luminary 播客平台獨佔發行、不進一般串流通路，這種發行方式本身就是這張碟的識別特徵。池中 Black Star 這條線有 2 筆（實掃 seed_cards.json 全 14,424 列）：「Mos Def & Talib Kweli — Black Star」與「Black Star — Mos Def & Talib Kweli Are Black Star」——**兩筆指的是同一張 1998 年首作、只是掛名與盤名互換**（這件事本身要回報給本機處理）；第二張專輯池中完全沒有。Mos Def 個人 5 張、Talib Kweli 個人 5 張都在池中，唯獨 Black Star 名義的續作缺席。",
+  "risk": "Apple 查無：us 與 gb 的 search 端點對「No Fear of Time」「Black Star No Fear of Time」「Black Star Yasiin Bey」皆無命中（回的全是 Billie Eilish、DeJ Loaf 等不相干條目），與這張碟的 Luminary 獨佔發行方式一致；試聽預估 unavailable，collectionExplicitness **待下游辨識**。掛名撞卡風險最高的一張：MB 上有四個叫 Black Star 的實體（02708fd6 嘻哈組合、8462eb04 加拿大 disco、c95f9ee3 瑞士 trance、d56a0679 90 年代紐澤西 rapper），釘的是 02708fd6。池中既有那兩筆若日後合併，掛名要一起校對。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group b808c2aa-126f-4e5a-bfe8-4fbb574b809e。回問確認：title「No Fear of Time」、artist-credit「Black Star」、first-release-date 2022-05-03、primary-type Album、secondary-types 空、轄下 3 個 release（US/Official 1、XW/Official 2）。刻意不釘：aaa445c1-5f73-37c0-b53a-2444b279c538《Mos Def & Talib Kweli Are Black Star》(1998 首作，池中已有)、a3e0b5f8-ea36-494f-806f-6bf72de64207《Black Star: The Remix Album》(Remix/Mixtape)、4d4912da-f7d7-3214-a5d0-5ed13d9f11ed《Three Definition (Hosted by DJ Lt. Dan)》(DJ-mix)。藝人 MBID 02708fd6-0fe6-4738-a27d-0561ace8b4c6，名下 12 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mos Def & Talib Kweli；Yasiin Bey；Black Star Madlib",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Bone Thugs-n-Harmony",
+  "album": "The Art of War",
+  "year": 1997,
+  "genres": [
+   "hiphop",
+   "soul"
+  ],
+  "label": "Ruthless Records",
+  "why": "Bone Thugs-n-Harmony 的第三張專輯，以雙 CD 形態發行（World War 1／World War 2），1997 年在美國專輯榜登頂並取得多白金認證，是 Ruthless Records 在 Eazy-E 過世後最大的一次商業成果。池中 Bone Thugs-n-Harmony 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《E. 1999 Eternal》(1995)——這位藝人在池中是「只有一張代表作」的狀態，1997 與 2000 那兩張正規專輯全缺，補這一張是把他的三張核心目錄補到一半。",
+  "risk": "Apple 把這張雙 CD 拆成兩個獨立條目，沒有合併版：artistId 1493325 名下 **1159475968**（World War 1、explicit、13 軌）與 **1170658006**（World War 2、explicit、15 軌），另有對應的兩筆 cleaned（1168161721 12 軌、1168165420 14 軌）；us 與 gb 的 search 端點預設只回兩筆 cleaned。下游取固定試聽時必須決定取 World War 1 還是 2，且務必取 explicit 那一組。盤名撞卡：MB 同藝人名下另有 afd32187-03d5-4de0-bba6-50caae023a93《Art of War: WW III》(2013) 與 82228163-b6d3-3470-b106-27be7be17e06《Heaven or Hell: The Art of War》，三者盤名互為子字串。掛名 MB 實體作「Bone Thugs‐n‐Harmony」（U+2010 連字號）、池中作 ASCII 連字號，卡片沿用池中寫法。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 5248d2c4-cf58-3b1a-a2f8-7c1bbbbe5f64。回問確認：title「The Art of War」、artist-credit「Bone Thugs‐n‐Harmony」、first-release-date 1997-07-29、primary-type Album、secondary-types 空、轄下 9 個 release（US/Official 3、XW/Official 3、CA/XE 各 1、未標國別 1）。刻意不釘：afd32187-03d5-4de0-bba6-50caae023a93《Art of War: WW III》(2013 另一張碟)、82228163-b6d3-3470-b106-27be7be17e06《Heaven or Hell: The Art of War》、359f0fe9-0d05-36cc-ad88-69644915ac1b《Crept and We Came: The Remixes》(Remix)、38bd89db-af21-381b-a250-b3bcf2ae601d《Greatest Hits》(2004 精選)。藝人 MBID 2fa45bbb-0efb-4950-9d40-94bf23cbfec1，名下 86 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bone Thugs n Harmony；The Art of War World War 1；The Art of War World War 2；BTNH",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Bone Thugs-n-Harmony",
+  "album": "BTNHResurrection",
+  "year": 2000,
+  "genres": [
+   "hiphop",
+   "soul"
+  ],
+  "label": "Ruthless Records",
+  "why": "Bone Thugs-n-Harmony 的第四張專輯，2000 年 2 月發行、首週在美國專輯榜登頂，是團體五人完整編制的最後一張大廠正規作。池中 Bone Thugs-n-Harmony 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《E. 1999 Eternal》(1995)；補《The Art of War》與這張之後，1995／1997／2000 三張連續的正規專輯才成形。",
+  "risk": "Apple 命中 us：artistId 1493325 名下有兩筆重複條目，皆 **explicit**、皆 16 軌、releaseDate 皆 2000-02-29——**1168186112** 與 1168164225；沒有 cleaned 版本。us 與 gb 的 search 端點以「BTNHResurrection」查回 0 筆（盤名是無空格的合寫字），必須走 lookup?id=1493325。盤名寫法有「BTNHResurrection」（MB／Apple 條目名作全大寫 BTNHRESURRECTION）與「BTNH Resurrection」兩式，兩種都要掃。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 63c90ae3-2eb3-39f3-8d14-ba705f4aaaec。回問確認：title「BTNHResurrection」、artist-credit「Bone Thugs‐n‐Harmony」、first-release-date 2000-02-29、primary-type Album、secondary-types 空、轄下 3 個 release（US/Official 2、XE/Official 1）。刻意不釘：bc96d3fc-6f20-38d9-be29-9040132d939f《The Collection, Volume Two》(2000 同年精選)。藝人 MBID 2fa45bbb-0efb-4950-9d40-94bf23cbfec1。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "BTNH Resurrection；BTNHRESURRECTION；Bone Thugs n Harmony",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lil' Kim",
+  "album": "The Notorious K.I.M.",
+  "year": 2000,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Queen Bee Records／Atlantic",
+  "why": "Lil' Kim 的第二張專輯，也是她在 The Notorious B.I.G. 過世後的第一張，2000 年由自營廠牌 Queen Bee 經 Atlantic 發行，首週在美國專輯榜第四並取得白金認證。池中 Lil' Kim 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Hard Core》(1996)——1990 年代末到 2000 年代女性 rapper 在池中的深度幾乎全靠這一張撐著，補上第二張才談得上目錄。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎、同曲數同日期：artistId 155408 名下 **262484199**（explicit、18 軌、2000-06-26）與 262767798（**cleaned**、18 軌、同日）；us 與 gb 的 search 端點兩店都只回 cleaned 那一筆。盤名寫法：MB release-group 作「The Notorious KIM」（無句點）、Apple 與原盤封面作「The Notorious K.I.M.」（卡片採用，依第 91 條 RG 標題與卡片盤名不必相等），兩種都要進去重比對。撞卡另一風險：池中有 The Notorious B.I.G. 三張，盤名子字串「Notorious」重疊，比對必須連掛名一起看。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group af8b70b8-8ce1-3dcc-9112-77b8cd723073。回問確認：title「The Notorious KIM」、artist-credit「Lil' Kim」、first-release-date 2000-06-26、primary-type Album、secondary-types 空、轄下 4 個 release（US/Official 2、DE/Official 1、XW/Official 1）。刻意不釘：1b965c4f-679c-475b-830a-277be7f92f30《Hard Core》(2014 mixtape，與池中 1996 年那張同名)、3838ae81-eb11-44c2-a0b9-6e9956bd9d20《Ms. G.O.A.T.》(mixtape)。藝人 MBID bc1b5c95-e6d6-46b5-957a-5e8908b02c1e，名下 54 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Notorious KIM；Lil Kim；Notorious KIM",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Lil' Kim",
+  "album": "La Bella Mafia",
+  "year": 2003,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Queen Bee Records／Atlantic",
+  "why": "Lil' Kim 的第三張專輯，2003 年發行、美國專輯榜第五，也是她被判偽證罪入獄前的最後一張錄音室作品，收錄與 50 Cent、Twista 等人的合作曲，同年獲兩項葛萊美提名。池中 Lil' Kim 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Hard Core》(1996)；與《The Notorious K.I.M.》一起補進來，池中才有她 1996／2000／2003 這三張連續的正規專輯。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎，且兩店的日期不同：us artistId 155408 名下 **76150451**（explicit、16 軌、2003-03-04）與 76150945（**cleaned**、16 軌、2003-03-03）；gb 另有 996021（notExplicit、16 軌、2003-03-04）——同一張碟在 gb 被標成 notExplicit、在 us 被標成 cleaned／explicit 兩筆，取值時要以 us 的 explicit 為準。us 與 gb 的 search 端點預設回的都是 cleaned 那一筆。撞卡：池中無同名碟；MB 上「La Bella Mafia」無同名別碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 54401f2a-f149-340b-8655-aad2fa8b3f1f。回問確認：title「La Bella Mafia」、artist-credit「Lil' Kim」、first-release-date 2003-03-03、primary-type Album、secondary-types 空、轄下 7 個 release（US/Official 4、XW/BR/JP 各 1 Official）。刻意不釘：e6806954-6b0d-4420-a9f1-1208dfadff25《Dance Remixes》(2005 Remix)、e59c24f3-6fff-4c14-86c3-5b5f597423ff《Thelma and Louise》(2002 mixtape)。藝人 MBID bc1b5c95-e6d6-46b5-957a-5e8908b02c1e。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Lil Kim La Bella Mafia；Bella Mafia",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Grandmaster Flash & The Furious Five",
+  "album": "On the Strength",
+  "year": 1988,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Elektra Records",
+  "why": "Grandmaster Flash 與 Furious Five 原班人馬在 1983 年分裂、1987 年重組後的唯一一張專輯，也是這個編制在 Sugar Hill 之外、由 Elektra 發行的唯一一張 LP，1988 年問世後團體再度解散。池中這條線只有 1 張（實掃 seed_cards.json 全 14,424 列）：《The Message》(1982)——嘻哈第一代最重要的團體在池中只有一張碟，而 MB 上他們掛名的 Album 型 release-group 總共也只有《The Message》《On the Strength》兩張（其餘皆為 12 吋單曲與後世精選）；補這一張，他們的正規專輯目錄就完整了。",
+  "risk": "Apple 只在 gb 命中、us 查無：collectionId **360736245**、collectionExplicitness **notExplicit**（該作確實無不雅內容，不是淨化版——同目錄下沒有 explicit 對照條目）、10 軌、releaseDate 1988-04-03、artistName「Grandmaster Flash & The Furious Five」（artistId 50842875）。us 店面該藝人名下 7 張中沒有這一筆、gb 名下 14 張中有——**依第 158 條，店面順序要把 gb 排在 us 前面**。掛名寫法三分歧：MB release-group 的 artist-credit 作「Grandmaster Flash and the Furious Five」、MB 藝人實體作「Grandmaster Flash & The Furious Five」、池中既有卡作「Grandmaster Flash & The Furious Five」（卡片沿用），三種都進 queryAlias。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 1c66cd22-fa54-32a4-980d-ab611fabda39。回問確認：title「On the Strength」、artist-credit「Grandmaster Flash and the Furious Five」、first-release-date 1988、primary-type Album、secondary-types 空、轄下 3 個 release（US/AU/XW 各 1 Official）。刻意不釘：de9790aa-eb2f-4325-b7d4-1f04e648e657《Magic Carpet Ride / On the Strength》(1988 單曲，盤名含本張標題，是最像的假陽性)、fc85b058-2682-31d5-8734-ac06daed48f2《Grandmaster Flash & The Furious Five》(1983 精選)、c082cc4b-103c-3375-987c-db0067e2199f《Greatest Messages》(1984 精選)、2348a270-ad78-30e1-b50f-82b2445c15f0《The Message》(1982，池中已有)。藝人 MBID 1390d663-2f56-4b41-9f75-f45ba489250b，名下 26 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Grandmaster Flash and the Furious Five；Grandmaster Flash；The Furious Five",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Snoop Dogg",
+  "album": "Tha Last Meal",
+  "year": 2000,
+  "genres": [
+   "hiphop",
+   "soul"
+  ],
+  "label": "No Limit Records／Priority Records",
+  "why": "Snoop Dogg 的第四張專輯，也是他在 No Limit 三張約滿後的最後一張，Dr. Dre 與 Timbaland 都回來參與製作，2000 年底發行、美國專輯榜第四，隔年他即轉往 Doggystyle Records／Capitol。池中 Snoop Dogg 只有 2 張（實掃 seed_cards.json 全 14,424 列）：《Doggystyle》(1993)、《Tha Doggfather》(1996)——都是 Death Row 時期，1998 年之後的 No Limit 三張與其後全部缺席；《Tha Last Meal》是那段的收尾，也是最常被引用的一張。",
+  "risk": "Apple 命中 us：artistId 21769 名下 collectionId **724894487**、collectionExplicitness **explicit**、20 軌、releaseDate 2000-12-19；該目錄中沒有這張的 cleaned 雙胞胎（但同藝人《Da Game Is to Be Sold, Not to Be Told》有 explicit 723830366／cleaned 723779808 的雙胞胎，是同目錄的對照）。us 與 gb 的 search 端點以「Snoop Dogg Tha Last Meal」查，前八筆全是不相干的 feat. 單曲、無命中——必須走 lookup?id=21769（該 artistId 名下 200 筆以上）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 7b45c670-84fd-3552-b833-85047fc481c3。回問確認：title「Tha Last Meal」、artist-credit「Snoop Dogg」、first-release-date 2000-12-19、primary-type Album、secondary-types 空、轄下 7 個 release（US/Official 3、XE/Official 2、CA/DE 各 1）。刻意不釘：a4cb5b59-6d54-3ab0-9e77-9724b325e358《Snoop Dogg presents Tha Eastsidaz》(2000 同年、掛名不同)、92fee5a3-70aa-3dea-805c-f014e8f8b9f2《Pleezbaleevit!》(2000)。藝人 MBID f90e8b26-9e52-4669-a5c9-e28529c47894，名下 582 個 release-group（分頁全列，第 116 條在這位藝人身上最明顯）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "The Last Meal；Snoop Doggy Dogg",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Ultramagnetic MC's",
+  "album": "The Four Horsemen",
+  "year": 1993,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Wild Pitch Records",
+  "why": "Ultramagnetic MC's 的第三張專輯，1993 年由 Wild Pitch 發行，是 Kool Keith、Ced Gee、TR Love、Moe Love 原始四人編制的最後一張，此後 Kool Keith 轉入個人與 Dr. Octagon 等化名創作。池中 Ultramagnetic MC's 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《Critical Beatdown》(1988)——他們 MB 上共九張 Album 型 release-group，池中只收了公認的那一張；Kool Keith 個人在池中有 2 張（《Sex Style》《Black Elvis/Lost in Space》），團體端卻只有一張，補這張是把團體與個人兩端的比例拉回來。",
+  "risk": "Apple 命中 us：artistId 145935593 名下 collectionId **1565362633**、collectionExplicitness **explicit**、14 軌、releaseDate 1993-05-18；該目錄無 cleaned 雙胞胎（同目錄《Critical Beatdown》兩筆皆 notExplicit）。us 與 gb 的 search 端點以「Ultramagnetic MC's The Four Horsemen」查皆回 0 筆，必須走 lookup?id=145935593。盤名撞名風險高：《The Four Horsemen》是常見盤名（Aphrodite's Child 亦有同名曲），比對必須連掛名一起看。掛名撇號寫法：MB 作「Ultramagnetic MC’s」（U+2019）、Apple 作「Ultramagnetic MC's」（ASCII）、池中既有卡作「Ultramagnetic MC's」（卡片沿用）。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group 877e05cd-e45d-37b0-a807-f61d71d59f57。回問確認：title「The Four Horsemen」、artist-credit「Ultramagnetic MC’s」、first-release-date 1993、primary-type Album、secondary-types 空、轄下 4 個 release（US/Official 3、未標國別 1）。刻意不釘：89197b3f-31db-475c-b1a6-c0fcf7b35f49《Instrumentals》(1992 純伴奏版)、13d2c692-a1bd-30a2-8b98-c5e18dba41d5《The Basement Tapes 1984-1990》(精選)、efdb55a1-4926-38c4-b8d1-88608c13ce67《The B-Sides Companion》(Compilation/Remix)。藝人 MBID 911fc89f-aea6-463a-9622-b7d8ede07af5，名下 29 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ultramagnetic MCs；Ultramagnetic MC’s；Kool Keith Ced Gee",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Souls of Mischief",
+  "album": "No Man's Land",
+  "year": 1995,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Jive Records",
+  "why": "Souls of Mischief 的第二張專輯，1995 年由 Jive 發行，是 Hieroglyphics 集體在首作大受好評後、與大廠關係轉冷之前的最後一張 Jive 盤，此後團體轉為自營發行。池中 Souls of Mischief 只有 1 張（實掃 seed_cards.json 全 14,424 列）：《93 'til Infinity》(1993)——這位藝人在池中是典型的「只有代表作」狀態；MB 上他們有六張 Album 型 release-group，這張是緊接在池中那張之後的一張。",
+  "risk": "Apple 全面查無：us 的 search 端點以「Souls of Mischief」查只回 Lofi Matrillda、Doni Blu 等不相干條目（resultCount 6，無一為本團），以「Souls of Mischief No Man's Land」與「Souls of Mischief 93 til Infinity」查皆回 0 筆——**整個 Hieroglyphics／Jive 目錄在 Apple US 上似乎不存在**，試聽預估 unavailable，collectionExplicitness **待下游辨識**。盤名《No Man's Land》極常見，跨藝人撞名風險高。撇號寫法 MB 作「No Man’s Land」（U+2019）、卡片採 ASCII。CAA release-group 端點 200，封面走 CAA。",
+  "mbNote": "釘 release-group 898b1ff5-05bf-3598-9c95-0b5ac0db4422。回問確認：title「No Man’s Land」、artist-credit「Souls of Mischief」、first-release-date 1995-10-10、primary-type Album、secondary-types 空、轄下 2 個 release（US/Official 1、JP 未標 status 1）。刻意不釘：408d8ab4-4e0c-4c1f-afa5-a1f234c49e6e《93 'Til Infinity (The Remixes)》(Compilation/Remix)、22988dc5-7a33-358a-bccf-8a250a557f6b《93 'til Infinity》(1993，池中已有)。藝人 MBID 7b61cf8f-c042-4bd4-b64a-25cb40f3dd50，名下 14 個 release-group。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "No Man’s Land；Souls of Mischief Hieroglyphics",
+  "reissuedBy": "",
+  "g": "a"
+ },
+ {
+  "artist": "Wu-Tang Clan",
+  "album": "Iron Flag",
+  "year": 2001,
+  "genres": [
+   "hiphop"
+  ],
+  "label": "Loud Records",
+  "why": "Wu-Tang Clan 的第四張團體專輯，2001 年底發行，是 Ol' Dirty Bastard 缺席、Loud Records 併入 Sony 前的最後一張，也是團體 1990 年代合約週期的收尾。池中 Wu-Tang Clan 有 4 張（實掃 seed_cards.json 全 14,424 列）：《Enter the Wu-Tang (36 Chambers)》(1993)、《Wu-Tang Forever》(1997)、《The W》(2000)、《8 Diagrams》(2007)——四張裡少了夾在《The W》與《8 Diagrams》之間的這一張，補上之後團體的正規專輯序列在 1993–2007 之間就沒有斷點。",
+  "risk": "Apple 有 explicit／cleaned 雙胞胎且曲數不同：artistId 200986 名下 **1762519766**（explicit、13 軌、2001-12-18）與 1762519588（**cleaned**、12 軌、同日）；us 與 gb 的 search 端點兩店都只回 cleaned 那一筆。掛名 MB 實體作「Wu‐Tang Clan」（U+2010 連字號）、池中與 Apple 作 ASCII 連字號，卡片沿用池中寫法。盤名《Iron Flag》在 MB 上無同名別碟。CAA release-group 端點 200。",
+  "mbNote": "釘 release-group b873b4dd-f84a-3d60-989d-6a8f43238c97。回問確認：title「Iron Flag」、artist-credit「Wu‐Tang Clan」、first-release-date 2001-12-17、primary-type Album、secondary-types 空、轄下 7 個 release（US/Official 2、XE/XW/JP/AU/CA 各 1 Official）。刻意不釘：42cc14d2-c555-4b5a-b0f3-f941a8bf48cb《Once Upon a Time in Shaolin…》(2015 單張拍賣品，非商業發行)、aaad19d5-ec41-4700-bc7f-cb0d5a2d338e《Wu-Block》(2012 合作盤)。藝人 MBID 0febdcf7-4e1f-4661-9493-b40427de2c13，名下 105 個 release-group（分頁全列）。",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Wu‐Tang Clan；Wu Tang Clan Iron Flag",
+  "reissuedBy": "",
+  "g": "a"
+ }
+]

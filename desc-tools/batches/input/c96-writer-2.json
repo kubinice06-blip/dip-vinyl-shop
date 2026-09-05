@@ -1,0 +1,739 @@
+[
+ {
+  "key": "desc2:Frank Ocean|Endless",
+  "artist": "Frank Ocean",
+  "album": "Endless",
+  "hook": "畫面裡他一言不發地做木工，搭一座樓梯，音檔在上頭跑。",
+  "note": "重心是這張的形式與合約位置。開頭止於影像，接著寫 2016 年以 Apple Music 獨家串流影像發表、早《Blonde》一天→接這是他與 Def Jam 的最後一張、履行完錄音合約→接 Sampha 與 Jazmine Sullivan 未列名客串，MB 逐軌掛名另記 Rita Zebdi→接聲響：極簡美學、鬆散結構，含氛圍音樂、avant-soul、R&B 與 trap→接開場〈At Your Best (You Are Love)〉翻自 Isley 家族的作品→接 2017 年限量實體版由 Blonded 發行、對開封套、兩張 12 吋 19 軌。MB 的 Soundtrack 標記是建檔慣例，勿寫成電影配樂。樂評分數避開。「脫離大廠的關鍵環節」勿寫。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group b69366e3 的欄位：title「Endless」、artist-credit「Frank Ocean」、first-release-date 2016-08-19、primary-type Album、secondary-types 為 [Soundtrack]、轄下 7 個 release。",
+   "該 release-group 轄下 7 筆的國別與狀態分別是：XW／Official 2 筆（皆 2016-08-19）、US／Official 2 筆（2017-11-27 與 2018-04-09，barcode 皆 602557139785）、未標國別的 Official 2 筆、Bootleg 1 筆（2019-01-25）。",
+   "其中 US／Official 那筆（2017-11-27、barcode 602557139785）由 Blonded 發行、包裝為 Gatefold Cover、兩張 12 吋黑膠共 19 軌：第一張 11 軌從〈At Your Best (You Are Love)〉5:11 到〈In Here Somewhere〉1:41，第二張 8 軌從〈Slide On Me〉3:02 到〈Mitsubishi Sony〉2:45。",
+   "該 release 的軌別掛名並非全部相同：〈Alabama〉的 artist-credit 是「Frank Ocean feat. Jazmine Sullivan & Sampha」、〈Comme Des Garçons〉是「Frank Ocean feat. Rita Zebdi」、〈Wither〉〈Hublots〉〈Rushes〉是「Frank Ocean feat. Jazmine Sullivan」。",
+   "英文維基〈Endless (Frank Ocean album)〉：這是一張視覺專輯，2016 年 8 月 19 日以 Apple Music 獨家串流影像的形式發表，早於 8 月 20 日問世的《Blonde》一天。",
+   "同條目：《Endless》是 Ocean 與 Def Jam Recordings 的最後一張專輯，履行完他的錄音合約。",
+   "同條目：影像的內容是 Ocean 一言不發地做木工、搭一座樓梯，音檔在其上播放。",
+   "同條目：專輯有 Sampha 與 Jazmine Sullivan 未列名的客串。",
+   "同條目：樂評注意到這張的極簡美學與鬆散的音樂結構，並指出它包含與《Blonde》共通的元素——氛圍音樂、avant-soul、R&B 與 trap。",
+   "同條目：2017 年 11 月 27 日推出重新母帶處理的限量實體版，含音檔與影像兩種格式。Metacritic 依 13 篇樂評給出 74 分。",
+   "同條目的取樣註記：〈At Your Best (You Are Love)〉是 Isley 家族所寫、原由 The Isley Brothers 演唱、Aaliyah 翻唱過的同名曲的翻唱版。",
+   "Apple 藝人目錄回查（artistId 442122051、country us、entity=album、limit 200）共回 20 張專輯條目，其中沒有《Endless》——與探測結果 unavailable 一致。"
+  ],
+  "sound": "英文維基記述樂評對這張的形容：極簡美學、鬆散的音樂結構，並含氛圍音樂、avant-soul、R&B 與 trap 的元素。",
+  "keyTracks": [
+   "At Your Best (You Are Love)",
+   "Slide On Me",
+   "Rushes",
+   "Wither",
+   "Mitsubishi Sony"
+  ],
+  "researchNotes": "掛名：MB artist-credit「Frank Ocean」與卡片相同。試聽覆核：previews.json 的 tried 是 us/gb/ca/de/au 各 1→0、jp/fr 各 12→0，不是 NOQUERY，屬真的配不上；依第 166 條改打 lookup?id=442122051 撈全目錄 20 張，確實沒有《Endless》，維持 unavailable。無 cleaned／cleanedOnly 標記，不需找 explicit 雙胞胎。MB secondary-types 標 Soundtrack 是視覺專輯的建檔慣例，正文不要寫成電影配樂——但也沒有來源直述「這是 MB 的慣例」，此句只當提醒、未寫進 facts。策展層說「這張是他脫離大廠的關鍵環節」，可用來源只支持「最後一張 Def Jam 專輯、履行完合約」，正文照後者寫。"
+ },
+ {
+  "key": "desc2:Jill Scott|Beautifully Human: Words and Sounds Vol. 2",
+  "artist": "Jill Scott",
+  "album": "Beautifully Human: Words and Sounds Vol. 2",
+  "hook": "〈Golden〉後來進了電影，也進了《俠盜獵車手 IV》的虛構電台。",
+  "note": "重心是曲目被外面接走，成績收尾。開頭止於〈Golden〉的去處，接著寫它用在《美髮沙龍》與《為愛痴狂》，也收進《俠盜獵車手 IV》虛構電台 The Vibe 98.8 的歌單→接編制：Nicholas Payton 編寫並吹〈Talk to Me〉的號組，Larry Gold 編〈Missing You〉弦樂，Pino Palladino 彈兩軌貝斯→接〈Family Reunion〉用 The Escorts、〈Rasool〉取樣 Barry White→接 Billboard 200 第 3 名、Billboard Top R&B/Hip-Hop Albums 第 1 名、首週 193000 張。管樂支數勿相加。GB 與 US 盤差一天，避開月日。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 5949b01b 的欄位：title「Beautifully Human: Words and Sounds Vol. 2」、artist-credit「Jill Scott」、first-release-date 2004-08-30、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official 2、GB／Official 1、XE／Official 1、未標國別 1）。",
+   "其中 US／Official 那筆（2004-08-31、barcode 827969277324）由 Hidden Beach Recordings 發行、編號 HBR00012、CD 一張 16 軌：從〈Warm Up〉1:20 到〈I Keep / Still Here〉8:45。",
+   "同一 release 的中段曲長：〈Golden〉3:52、〈The Fact Is (I Need You)〉4:38、〈Cross My Mind〉4:45、〈Family Reunion〉5:13、〈My Petition〉4:12。",
+   "英文維基〈Beautifully Human: Words and Sounds Vol. 2〉：這是 Jill Scott 的第二張錄音室專輯，2004 年 8 月 31 日由 Hidden Beach Recordings 發行。",
+   "同條目：專輯以首週 193000 張的成績在 Billboard 200 開在第三名、在 Billboard Top R&B/Hip-Hop Albums 開在第一名，是 Scott 的第一張冠軍專輯。",
+   "同條目：〈Cross My Mind〉為 Scott 拿下她的第一座葛萊美獎，2005 年最佳 Urban/Alternative 演出獎。",
+   "同條目的取樣註記：〈Family Reunion〉用了 The Escorts〈Look Over Your Shoulder〉的元素，〈Rasool〉取樣 Barry White〈Mellow Mood Pt. 1〉。",
+   "同條目的樂手名單：〈Talk to Me〉的號組編曲與小號由 Nicholas Payton 擔任，另有三支小號、三支長號與四支薩克斯風；〈Missing You〉的弦樂編曲是 Larry Gold；Pino Palladino 彈〈Making You Wait〉與〈I Keep / Still Here〉的貝斯。",
+   "同條目的製作名單：James Poyser 製作第 1、8、10 軌，Raphael Saadiq 與 Kelvin Wooten 共同製作第 5 軌，Andre Harris 與 Vidal Davis 製作第 13 至 16 軌，執行製作為 Steve McKeever、Jazzy Jeff Townes 與 Lyzel Williams。",
+   "同條目：〈Golden〉先後用在電影《美髮沙龍》(2005) 與《為愛痴狂》(2009)，也收在《俠盜獵車手 IV》虛構電台 The Vibe 98.8 的歌單裡。",
+   "Apple us 條目 collectionId 1416155837：標題「Beautifully Human: Words and Sounds, Vol. 2」、16 軌、releaseDate 2004-08-31、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 樂手名單：〈Talk to Me〉編制含 Nicholas Payton 編寫的號組（三支小號、三支長號、四支薩克斯風），〈Missing You〉由 Larry Gold 編弦樂，Pino Palladino 彈兩軌貝斯。",
+  "keyTracks": [
+   "Golden",
+   "Cross My Mind",
+   "The Fact Is (I Need You)",
+   "Whatever",
+   "Family Reunion"
+  ],
+  "researchNotes": "掛名：MB artist-credit「Jill Scott」與卡片相同。試聽探測 status=ready（us 1→1、collectionId 1416155837），不需覆核。無 cleaned 標記。"
+ },
+ {
+  "key": "desc2:Jill Scott|The Real Thing: Words and Sounds Vol. 3",
+  "artist": "Jill Scott",
+  "album": "The Real Thing: Words and Sounds Vol. 3",
+  "hook": "三部曲在這裡收尾，也是她在 Hidden Beach 的最後一張。",
+  "note": "重心是系列與廠牌的收尾，製作方法居次。開頭止於收尾，接著寫 2007 年由 Hidden Beach 發行、2010 年她離開這家廠牌→接〈Whenever You're Around〉：製作人 JR Hutson 自述用了很 Quincy Jones 的做法，找一堆樂手 jam，再從即興裡剪出這條 track，George Duke 參與，Hot R&B/Hip-Hop Songs 第 56 名→接首支單曲〈Hate On Me〉→接 Billboard 200 第 4 名、Billboard Top R&B/Hip-Hop Albums 第 2 名、首週 148000 張，2011 年 4 月累計 663000 張。「美國專輯榜第二」勿寫。樂評分數勿寫。曲數以 15 軌標準版為準。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 7ad54d9a 的欄位：title「The Real Thing: Words and Sounds, Volume 3」、artist-credit「Jill Scott」、first-release-date 2007-09-25、primary-type Album、secondary-types 空、轄下 8 個 release（US／Official 5、XE／Official 1、JP／Official 1、未標國別 1）。",
+   "其中 2007-09-25 的 US／Official 那筆（barcode 894096001320）由 Hidden Beach Recordings 發行、編號 HBRCD 00050、CD 一張 15 軌：從〈Let It Be〉1:51 到〈Breathe〉2:06。",
+   "同一 release 的曲長：〈The Real Thing〉3:25、〈Hate On Me〉3:29、〈Come See Me〉5:00、〈Whenever You're Around〉4:05、〈All I〉4:56。",
+   "英文維基〈The Real Thing: Words and Sounds Vol. 3〉：這是 Jill Scott 的第三張錄音室專輯，2007 年 9 月 25 日由 Hidden Beach Recordings 發行。",
+   "同條目：專輯以首週 148000 張在 Billboard 200 開在第四名、在 Billboard Top R&B/Hip-Hop Albums 開在第二名。",
+   "同條目：2009 年 3 月 17 日獲 RIAA 金唱片認證，到 2011 年 4 月在美國賣出 663000 張；另在荷蘭第 65 名、英國第 75 名、法國第 128 名上榜。",
+   "同條目：這是 Scott 在 2010 年離開 Hidden Beach 之前的最後一張該廠牌作品，也是 Words and Sounds 系列的最後一部。",
+   "同條目：首支單曲〈Hate On Me〉在專輯試聽片裡由 Scott 說明是寫給她在網路上看到的一群人；第三支單曲〈Whenever You're Around〉有 George Duke 參與，登上 Hot R&B/Hip-Hop Songs 第 56 名與 Hot Adult R&B Airplay 第 16 名。",
+   "同條目引製作人 JR Hutson 談〈Whenever You're Around〉：他說自己用了很 Quincy Jones 的做法，找了一堆樂手來 jam，再從那天的即興裡挑出這條 track 反覆修剪重組。",
+   "同條目：Metacritic 依 11 篇樂評給 79 分；Robert Christgau 在 MSN Music 的評論說整張在音樂上是連貫的，因為它有一條輪廓與一種 groove 配得上這個經營得很徹底的分手主題。",
+   "Apple us 條目 collectionId 1415240649：標題「The Real Thing: Words and Sounds Vol. 3 (Deluxe Limited Edition)」、17 軌、releaseDate 2007-09-25、collectionExplicitness notExplicit。",
+   "同一藝人目錄裡的 15 軌標準版另有兩筆：collectionId 324777083 與 1416191630，標題皆作「The Real Thing - Words & Sounds, Vol. 3」、releaseDate 2007-09-25、notExplicit。"
+  ],
+  "sound": "",
+  "keyTracks": [
+   "Hate On Me",
+   "My Love",
+   "Whenever You're Around",
+   "The Real Thing",
+   "Crown Royal"
+  ],
+  "researchNotes": "掛名一致。盤名兩式：MB RG 標題用「Volume 3」、卡片用「Vol. 3」。試聽探測 ready（us 8→3、collectionId 1415240649），該筆是 17 軌 Deluxe Limited Edition，若下游要 15 軌標準版可改用 324777083 或 1416191630。**擋下策展層一處**：卡單 curatorWhy 寫「美國專輯榜第二」，Wikipedia 記的是 Billboard 200 第四、R&B/Hip-Hop 榜第二，正文不得寫成「專輯榜第二」。"
+ },
+ {
+  "key": "desc2:Jill Scott|The Light of the Sun",
+  "artist": "Jill Scott",
+  "album": "The Light of the Sun",
+  "hook": "她讓貝斯與吉他先彈，詞是在錄音室當場填上去的。",
+  "note": "重心是錄音方法，成績其次。開頭止於當場填詞，接著寫她在 Metro 的自述：沒帶歌詞進錄音室，Adam Blackstone 彈貝斯、Randy Bowland 彈吉他，錄完一片歡呼擁抱→接背景：停工四年、離開 Hidden Beach 之後錄的，主要由她與 JR Hutson 製作，Terry Lewis 與 Justice League 參與→接〈Shame〉有 Eve 與 The A Group，MV 拍在費城 Cecil B. Moore Recreational Center→接 Billboard 200 冠軍、首週 135000 張，來源寫的是「第一張美國冠軍專輯」。「生涯唯一冠軍」勿寫。日期三說，避開月日。曲數勿寫死。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group e4f800f9 的欄位：title「The Light of the Sun」、artist-credit「Jill Scott」、first-release-date 2011-06-20、primary-type Album、secondary-types 空、轄下 6 個 release（US／Official 2、未標國別 Official 2、BR／Official 1、XE／Official 1）。",
+   "其中 2011-06-20 的 US／Official 那筆（barcode 093624956860）由 Blues Babe Records 發行、CD 一張 18 軌：從〈Blessed〉3:27 到〈I Love You〉2:56，第 15 軌〈Rolling Hills〉之後多出〈The Light of the Sun〉6:27、〈Love Soul Bounce〉3:35、〈I Love You〉三軌。",
+   "同一 release 的曲長：〈Le BOOM Vent Suite〉9:01 是全碟最長的一軌，〈Quick〉1:50 最短。",
+   "英文維基〈The Light of the Sun〉：這是 Jill Scott 的第四張錄音室專輯，2011 年 6 月 21 日由她自己的廠牌發行、Warner Bros. Records 代理，是 Blues Babe 與 Warner Bros. 的代理協議下的第一張。",
+   "同條目：專輯在 Billboard 200 開在第一名、首週在美國賣 135000 張，是她的第一張美國冠軍專輯；到 2015 年 5 月累計賣出 479000 張。",
+   "同條目：這張是在 Scott 停工四年、離開 Hidden Beach 之後錄的，主要由 Scott 與 JR Hutson 製作，另有 Terry Lewis 與 Justice League 參與。",
+   "同條目：三支單曲是〈So in Love〉〈So Gone (What My Mind Says)〉〈Blessed〉；〈So in Love〉有 Anthony Hamilton 參與，在 Hot R&B/Hip-Hop Songs 停留九週、最高第 10 名，在 Hot 100 停留一週、最高第 97 名。",
+   "同條目引 Scott 在 Metro 的訪談：她說自己沒帶歌詞進錄音室，找來 Adam Blackstone 彈貝斯、Randy Bowland 彈吉他，讓他們先彈、她即興填詞，錄完一片歡呼擁抱。",
+   "同條目：〈Shame〉有饒舌歌手 Eve 與人聲團 The A Group 參與，MV 在費城 Cecil B. Moore Recreational Center 拍攝，Scott 說她小時候好幾個夏天都在那裡度過、當時那棟建築面臨拆除。",
+   "Apple us 條目 collectionId 433561623：標題「The Light of the Sun」、掛名 Jill Scott、15 軌、releaseDate 2011-06-17、collectionExplicitness explicit、copyright 欄「℗ 2011 Blues Babe Records, LLC licensed exclusively to Warner Records Inc.」，15 軌全部有 previewUrl，其中只有第 14 軌〈Womanifesto〉的 trackExplicitness 是 explicit。"
+  ],
+  "sound": "依 Wikipedia：整張大量來自錄音室的 jam 與即興，Scott 自述由 Adam Blackstone 的貝斯與 Randy Bowland 的吉他先起頭、她再即興填詞。",
+  "keyTracks": [
+   "Blessed",
+   "So in Love",
+   "Shame",
+   "Hear My Call",
+   "Le Boom Vent Suite"
+  ],
+  "researchNotes": "**推翻試聽 unavailable**：previews.json 記 us/gb/ca/de/au 各 1→0、jp/fr 各 12→0，不是 NOQUERY；依第 166 條改打 lookup?id=14867 撈全目錄，找到 us collectionId 433561623（15 軌標準版、explicit、15 軌全有 previewUrl）。同目錄另有 6805265789（15 軌 explicit，重複條目）、435260991 與 6806023673（19 軌／18 軌 Deluxe，依派工不取）。卡片無 cleaned／cleanedOnly 標記，但此碟 Apple 標 explicit，已回查同目錄無同名同軌數的 cleaned 雙胞胎。掛名一致。**擋下策展層一處**：curatorWhy 寫「生涯唯一一張冠軍專輯」，Wikipedia 只說是「第一張美國冠軍專輯」，「唯一」無來源，未採用。另注意 MB 釘的那筆 US release 是 18 軌，Apple 標準版是 15 軌，正文不要寫死曲數。"
+ },
+ {
+  "key": "desc2:Dusty Springfield|A Girl Called Dusty",
+  "artist": "Dusty Springfield",
+  "album": "A Girl Called Dusty",
+  "hook": "Bacharach 與 Goffin/King 的歌，她從首作開始唱了一輩子。",
+  "note": "重心是選曲來源與她的來歷。開頭止於兩組作者，接著寫這是她第一次錄 Burt Bacharach／Hal David 與 Gerry Goffin／Carole King 的作品→接來歷：1958 至 1960 年在 The Lana Sisters、1960 至 1963 年與哥哥 Tom Springfield 組 The Springfields，赴美巡演時接觸靈魂樂，1963 年單飛→接內容是流行歌與幾首受 Motown 影響的曲子混編→接班底：製作 Johnny Franz、指揮 Ivor Raymonde、和聲 The Breakaways→接 1964 年英國專輯榜第 6 名、NME 榜第 5 名→收在多軌母帶多已佚失一句。曲數以原盤 12 軌為準。「1001 張」名單勿寫。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 813ecf80 的欄位：title「A Girl Called Dusty」、artist-credit「Dusty Springfield」、first-release-date 1964-04-17、primary-type Album、secondary-types 空、轄下 4 個 release（GB／Official 2、XW／Official 2）。",
+   "其中 1964-04-17 的 GB／Official 那筆由 Philips 發行、編號記為 BL 7594（另列 632 325 BL）、紙套包裝、12 吋黑膠 12 軌：從〈Mama Said〉2:14 到〈Don't You Know〉2:52。",
+   "同一 release 的曲長：〈Anyone Who Had a Heart〉3:11、〈Twenty-Four Hours From Tulsa〉3:07、〈Wishin' and Hopin'〉2:57、〈Will You Love Me Tomorrow〉2:41。",
+   "英文維基〈A Girl Called Dusty〉：這是 Dusty Springfield 的首張錄音室專輯，1964 年 4 月 17 日在英國由 Philips Records 發行，1964 年 5 月在英國專輯榜最高第 6 名、在 NME 榜最高第 5 名。",
+   "同條目：原盤同時發行單聲道 BL 7594 與立體聲 SBL 7594 兩種版本。",
+   "同條目：Springfield 1958 至 1960 年待過女聲團 The Lana Sisters、1960 至 1963 年與哥哥 Tom Springfield 組民謠流行三重唱 The Springfields，1960 年代初在美國巡演時接觸到靈魂樂，1963 年決定單飛。",
+   "同條目：這張的曲目是流行歌與幾首受 Motown 影響的曲子混編，並且是她第一次錄 Burt Bacharach／Hal David 與 Gerry Goffin／Carole King 的作品，此後她一輩子都在唱這兩組人的歌。",
+   "同條目：這張當年沒有在美國發行，Philips 改在美國推出把單曲與專輯錄音混編的《Stay Awhile/I Only Want To Be With You》。",
+   "同條目的製作名單：製作人 Johnny Franz、樂團指揮 Ivor Raymonde、和聲 The Breakaways、錄音師 Keith Grant。條目另記大部分原始多軌母帶被認為已在 Philips 檔案室中佚失。",
+   "同條目：這張收在 Robert Dimery 編的《1001 Albums You Must Hear Before You Die》裡。",
+   "Apple us 條目 collectionId 1443726966：掛名 Dusty Springfield、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：整張由 Johnny Franz 製作、Ivor Raymonde 指揮樂團，和聲由 The Breakaways 擔任；曲目是流行歌與幾首受 Motown 影響的曲子混編。",
+  "keyTracks": [
+   "Mama Said",
+   "Anyone Who Had a Heart",
+   "Wishin' and Hopin'",
+   "Will You Love Me Tomorrow",
+   "Mocking Bird"
+  ],
+  "researchNotes": "掛名一致。試聽探測 ready（us 1→1、collectionId 1443726966）。策展層提醒該 Apple 條目是 20 軌加曲版、原盤 12 軌——MB release 確認原盤為 12 軌，正文若寫曲數要以 12 軌為準。"
+ },
+ {
+  "key": "desc2:Dusty Springfield|Ev'rything's Coming Up Dusty",
+  "artist": "Dusty Springfield",
+  "album": "Ev'rything's Coming Up Dusty",
+  "hook": "首作讓她成為 Philips 銷量最高的女歌手，第二張才換來對開紙套。",
+  "note": "重心是包裝與選曲胃口。開頭止於紙套，接著寫首作賣得夠好，Philips 因此給第二張對開式紙套與大量內頁文字→接選曲：〈Doodlin'〉與〈That's How Heartaches Are Made〉原是 Baby Washington 的小熱門；作者橫跨 Horace Silver、Randy Newman、Goffin／King 與 Bacharach／David→接班底：Johnny Franz 製作、Ivor Raymonde 指揮、和聲 Doris Troy 與 Madeline Bell→接英國專輯榜第 6 名、NME 榜第 4 名。曲數寫 13 軌，「14 軌」勿寫。美國版以《You Don't Have to Say You Love Me》為名重排發行。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group c19de945 的欄位：title「Ev’rything’s Coming Up Dusty」、artist-credit「Dusty Springfield」、first-release-date 1965、primary-type Album、secondary-types 空、轄下 4 個 release（皆 GB／Official，年份 1965、1989、1998、1998）。",
+   "其中 1965 年的 GB／Official 那筆由 Philips 發行、編號 PHM-200303、紙套包裝、12 吋黑膠 13 軌：從〈Won't Be Long〉3:23 到〈Packin' Up〉2:00。",
+   "同一 release 的曲長：〈Oh No! Not My Baby〉2:53、〈Who Can I Turn To?〉3:27、〈Doodlin'〉2:49、〈That's How Heartaches Are Made〉2:49、〈La Bamba〉2:37。",
+   "英文維基〈Ev'rything's Coming Up Dusty〉：這是 Springfield 的第二張錄音室專輯，1965 年由 Philips Records 在英國發行。",
+   "同條目：1964 年的首作《A Girl Called Dusty》賣得夠好，讓她成為 Philips Records 銷量最高的女歌手；因此第二張 Philips 用對開式紙套包裝並附上大量內頁文字。",
+   "同條目：專輯在英國榜最高第 6 名、隔月在 NME 榜最高第 4 名。",
+   "同條目：〈Doodlin'〉與〈That's How Heartaches Are Made〉原是 Baby Washington 的小熱門，Baby Washington 是 Springfield 個人最喜歡的歌手之一；〈La Bamba〉是她的演唱會常備曲，但與整張的路數不合。",
+   "同條目：1960 年代的英國常把暢銷單曲留在專輯之外，美國則不然；等〈You Don't Have to Say You Love Me〉大紅之後，這張在美國被改名重排為《You Don't Have to Say You Love Me》發行。",
+   "同條目的名單：和聲 Doris Troy 與 Madeline Bell、伴奏 The Echoes、製作人 Johnny Franz、伴奏與樂團指揮 Ivor Raymonde。",
+   "同條目的曲目表列出作者：〈Oh No Not My Baby〉是 Gerry Goffin 與 Carole King、〈Long After Tonight Is All Over〉是 Burt Bacharach 與 Hal David、〈Doodlin'〉是 Horace Silver 與 Jon Hendricks、〈I've Been Wrong Before〉是 Randy Newman、〈If It Don't Work Out〉是 Rod Argent。",
+   "Apple us 條目 collectionId 1443722946：掛名 Dusty Springfield、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：製作人 Johnny Franz、伴奏與指揮 Ivor Raymonde、伴奏團 The Echoes，和聲由 Doris Troy 與 Madeline Bell 擔任。",
+  "keyTracks": [
+   "Won't Be Long",
+   "Oh No! Not My Baby",
+   "Who Can I Turn To?",
+   "Doodlin'",
+   "I've Been Wrong Before"
+  ],
+  "researchNotes": "掛名一致。盤名撇號兩式：MB 用 U+2019、卡片與 Apple 用 ASCII。試聽探測 ready（us 1→1、collectionId 1443722946）。MB release 記原盤 13 軌、Wikipedia 曲目表也是 13 軌；策展層說「原盤 14 軌」與兩處來源不符，正文以 13 軌為準。策展層說原盤是「對開式紙套的雙折裝」，Wikipedia 記 gatefold sleeve，可用；MB 該 release 的 packaging 欄只寫 Cardboard/Paper Sleeve。"
+ },
+ {
+  "key": "desc2:Dusty Springfield|A Brand New Me",
+  "artist": "Dusty Springfield",
+  "album": "A Brand New Me",
+  "hook": "錄音搬到費城的 Sigma Sound，整張交給 Gamble 與 Huff 做完。",
+  "note": "重心是製作歸屬。開頭止於這對搭檔，接著寫 1969 年末錄於費城 Sigma Sound，這是她唯一一張每首歌都由同一組製作人做完的專輯，Gamble 也共同寫了每一首→接這對搭檔同期還替 The O'Jays 與 Harold Melvin & the Blue Notes 做出成績→接同名曲 1969 年 12 月登美國 Adult Contemporary 榜第 3 名、Top 40 第 24 名，此後 17 年她沒有再進美國 Top 40→接專輯英國榜第 35 名、美國第 107 名→收在 Christgau 的評語：那套 cool-soul 公式在這裡開始磨薄。正文用卡片的《A Brand New Me》，英國 Philips 盤另作《From Dusty with Love》。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 64d59aea 的欄位：title「Brand New Me」（無冠詞）、artist-credit「Dusty Springfield」、first-release-date 1970-01-15、primary-type Album、secondary-types 空、轄下 5 個 release。",
+   "該 release-group 的 5 筆之中，1970-01-15 的 US／Official 一筆盤名作「Brand New Me」，1970 年的 JP 盤與 1990 年的 GB 盤（barcode 042284625128）盤名作「From Dusty....With Love」，1992 年的 US 盤（barcode 081227103620）作「A Brand New Me」，2017-07-14 的一筆作「A Brand New Me: The Complete Philadelphia Sessions」。",
+   "1970-01-15 的 US／Official 那筆由 Atlantic 發行、編號 SD 8249、紙套包裝、12 吋黑膠 10 軌：從〈Lost〉2:29 到〈Let's Talk It Over〉2:29，同名曲〈Brand New Me〉2:30 排在第 6 軌。",
+   "英文維基〈A Brand New Me (Dusty Springfield album)〉：這是 Dusty Springfield 的第六張錄音室專輯，1970 年發行。",
+   "同條目：錄音在 1969 年末於費城的 Sigma Sound Studios 進行，是 Springfield 唯一一張每首歌都由同一組製作人做完的專輯——Kenny Gamble 與 Leon Huff；Gamble 也共同寫了整張的每一首。",
+   "同條目：Gamble 與 Huff 這對搭檔在 1970 年代替 Harold Melvin & the Blue Notes、The O'Jays、MFSB 與 The Three Degrees 做出成績。",
+   "同條目：專輯 1970 年 1 月先由 Atlantic Records 在美國發行，三個月後才由 Philips Records 在英國以《From Dusty with Love》為名推出。",
+   "同條目：同名曲在 1969 年末先在美國發行單曲，1969 年 12 月 20 日登上美國 Adult Contemporary 榜第 3 名、Top 40 第 24 名；此後 17 年 Springfield 沒有再進過美國 Top 40。",
+   "同條目：專輯在英國榜最高第 35 名，美國版停在第 107 名。",
+   "同條目引 Robert Christgau 在《Christgau's Record Guide: Rock Albums of the Seventies》(1981) 的評語：Gamble 與 Huff 把那套替 Jerry Butler 奏效過的 cool-soul 公式用在 Dusty 身上，但這裡開始磨薄了——每首歌在旋律與節奏上互相回聲，配器與人聲情緒都沒有變化。",
+   "Apple us 條目 collectionId 76044988：掛名 Dusty Springfield、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：這是她唯一一張全部由同一組製作人（Kenny Gamble 與 Leon Huff）完成的專輯，錄於費城 Sigma Sound Studios；Christgau 的評語則指出整張的配器與人聲情緒幾乎沒有變化。",
+  "keyTracks": [
+   "Brand New Me",
+   "Lost",
+   "Silly, Silly, Fool",
+   "Joe",
+   "Bad Case of the Blues"
+  ],
+  "researchNotes": "掛名一致。**盤名三式**：MB release-group 標題作「Brand New Me」、美國 Atlantic 原盤作「A Brand New Me」、英國 Philips 盤作「From Dusty with Love」（MB 該筆寫成「From Dusty....With Love」）。試聽探測 ready（us 2→1、collectionId 76044988）。"
+ },
+ {
+  "key": "desc2:The Miracles|Hi... We're the Miracles",
+  "artist": "The Miracles",
+  "album": "Hi... We're the Miracles",
+  "hook": "第十軌翻的是〈Money〉——Barrett Strong 唱紅、Motown 的第一支熱門。",
+  "note": "重心是曲目與廠牌。開頭止於〈Money〉，接著寫〈Shop Around〉：Smokey Robinson 與 Berry Gordy 合寫、Tamla 編號 T 54034，R&B 單曲榜第 1 名、流行單曲榜第 2 名，是 Tamla 第一支百萬銷量單曲；Gordy 嫌原始的藍調版商業性不夠，清晨三點把人叫回錄音室重錄→接編制：Smokey Robinson、Ronald White、Bobby Rogers、Pete Moore、Claudette Rogers Robinson，Marv Tarplin 彈吉他、名字在唱片背面，The Funk Brothers 補伴奏→接曲風從後期 doo-wop 到快版 R&B。「Motown 第一張 LP」勿寫。月份兩說，避開月日。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group f33586f5 的欄位：title「Hi… We’re the Miracles」、artist-credit「The Miracles」、first-release-date 1961-06、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US／Official）。",
+   "其中 1961-06 的 US／Official 那筆由 Tamla 發行、編號 TM-220、12 吋黑膠 11 軌：從〈Who’s Lovin’ You〉3:06 到〈Don’t Leave Me〉2:40，〈Shop Around〉2:51 排第 4 軌、〈Money〉3:50 排第 10 軌。",
+   "英文維基〈Hi... We're the Miracles〉：這是 The Miracles 的首張錄音室專輯，1961 年 1 月由 Motown 旗下 Tamla 廠牌發行。",
+   "同條目：專輯的曲風從〈Who's Lovin' You〉與〈(You Can) Depend on Me〉的後期 doo-wop 到〈Way Over There〉的快版 R&B，另收錄 Motown 第一支熱門單曲、Barrett Strong 的〈Money (That's What I Want)〉的翻唱。",
+   "同條目：全碟最大的一支是帶藍調味的〈Shop Around〉，1960 年以單曲發行，登上 Billboard R&B 單曲榜第 1 名、流行單曲榜第 2 名，是 Miracles 與 Tamla 廠牌的第一支 R&B 冠軍單曲，也是該廠牌第一支百萬銷量單曲，2006 年入選葛萊美名人堂。",
+   "英文維基〈Shop Around〉：這首由 Smokey Robinson 與 Berry Gordy 合寫，Tamla 編號 T 54034，是 Motown Record Corporation 第一支百萬銷量單曲；歌詞是母親對已經長大的兒子講怎麼挑對象。",
+   "同條目：〈Shop Around〉的原始版本藍調味很重，先在底特律當地發行，Gordy 認為要重錄才有更廣的商業吸引力，於是在清晨三點把人叫回錄音室重來。",
+   "英文維基〈Hi... We're the Miracles〉的名單：這張是 Miracles 的經典原始編制——Smokey Robinson、Ronald White、Bobby Rogers、Pete Moore、Marv Tarplin（吉他，唱片背面有列名但封面沒有照片）與 Robinson 當時的妻子 Claudette Rogers Robinson；伴奏由 The Funk Brothers 補充，製作人 Berry Gordy。",
+   "同條目：〈Who's Lovin' You〉後來被 The Temptations、The Jackson 5、Terence Trent D'Arby 與 En Vogue 錄過。",
+   "英文維基〈The Miracles〉的專輯表把 The Miracles 名義的作品依序列為《Hi... We're the Miracles》(1961)、《Cookin' with the Miracles》(1961)、《I'll Try Something New》(1962)、《The Fabulous Miracles》(1963)、《The Miracles Doin' Mickey's Monkey》(1963)、《I Like It Like That》(1964)。",
+   "Apple us 條目 collectionId 1444086503：掛名 The Miracles、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：曲風從〈Who's Lovin' You〉與〈(You Can) Depend on Me〉的後期 doo-wop，到〈Way Over There〉的快版 R&B；伴奏由 The Funk Brothers 補充，Marv Tarplin 彈吉他。",
+  "keyTracks": [
+   "Shop Around",
+   "Who's Lovin' You",
+   "Way Over There",
+   "Money",
+   "Depend on Me"
+  ],
+  "researchNotes": "掛名：MB artist-credit「The Miracles」與卡片相同。試聽探測 ready（us 1→1、collectionId 1444086503）。**擋下策展層一處**：curatorWhy 寫「這是 Motown 體系發行的第一張 LP」，回查 Wikipedia 的〈Motown〉〈The Miracles〉〈Hi... We're the Miracles〉三條都沒有這個陳述，無來源，未採用；可寫的是「Motown 旗下 Tamla 發行、收錄該公司第一支百萬單曲」。盤名省略號三式：MB「Hi… We’re the Miracles」、Apple「Hi ...We're The Miracles」、卡片 ASCII。"
+ },
+ {
+  "key": "desc2:The Miracles|Doin' Mickey's Monkey",
+  "artist": "The Miracles",
+  "album": "Doin' Mickey's Monkey",
+  "hook": "〈Mickey's Monkey〉出自 H-D-H 之手，這團平常自己寫歌。",
+  "note": "重心是外人寫的那支單曲。開頭止於 H-D-H，接著寫〈Mickey's Monkey〉由 Brian Holland、Lamont Dozier 與 Eddie Holland 寫作與製作→接該曲流行榜第 8 名、R&B 榜第 3 名，Smokey Robinson 說它是他們這輩子最大的唱片之一，歌詞講一個叫 Mickey 的外地人把新舞步傳開→接整張其餘大半是當時的舞曲翻唱，如〈The Twist〉〈Twist and Shout〉，Claudette Robinson 主唱翻自 The Orlons 的〈The Wah-Watusi〉→接封面美術 Stanley Mouse，這是他第一次接唱片案→接專輯 Billboard 200 第 113 名。序數兩說，勿寫第幾張。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 8ea667f3 的欄位：title「The Miracles Doin’ Mickey’s Monkey」（團名寫進標題）、artist-credit「The Miracles」、first-release-date 1963-11-11、primary-type Album、secondary-types 空、轄下只有 1 個 release（US／Official）。",
+   "該唯一的 release 由 Tamla 發行、編號 TM 245、紙套包裝、12 吋黑膠 11 軌：從〈Mickey’s Monkey〉2:49 到〈Do You Love Me〉2:39，中間是〈The Wah‐Watusi〉2:41、〈The Twist〉2:32、〈Land of a Thousand Dances〉2:30、〈The Monkey Time〉2:54、〈Twist and Shout〉2:05。",
+   "英文維基〈The Miracles Doin' Mickey's Monkey〉：這張 1963 年 11 月 11 日由 Motown 旗下 Tamla 發行，收錄由 Holland–Dozier–Holland 寫作與製作的 Top 10 單曲〈Mickey's Monkey〉，該曲後來被多位藝人翻唱，也讓「The Monkey」這個新奇舞步流行起來。",
+   "同條目：另收一支同樣是 H-D-H 寫的舞曲單曲〈I Gotta Dance to Keep From Crying〉，那是 Billboard Top 40 熱門；專輯本身在 Billboard 200 最高第 113 名。",
+   "同條目：整張其餘大半是當時流行的舞曲，包括〈The Twist〉〈Twist and Shout〉與 The Contours 的 Motown 熱門〈Do You Love Me〉；團員 Bobby Rogers 替專輯共同寫了〈Dancin' Holiday〉；Claudette Robinson 在翻唱 The Orlons 熱門〈The Wah-Watusi〉時擔任主唱。",
+   "同條目：封面美術由 Stanley Mouse 繪製，是這位畫家第一次接專輯案；Berry Gordy 早期常刻意不在 Motown 唱片封面上放歌手照片，以免這個廠牌被定義成一家「黑人」唱片公司。",
+   "同條目的名單：主唱 Smokey Robinson、Claudette Rogers Robinson（〈The Wah-Watusi〉主唱）、和聲 Bobby Rogers／Ronnie White／Pete Moore、吉他 Marv Tarplin、伴奏 The Funk Brothers；製作人 Smokey Robinson、Brian Holland、Lamont Dozier。",
+   "英文維基〈Mickey's Monkey (song)〉：這首 1963 年由 Brian Holland、Lamont Dozier 與 Eddie Holland 寫作與製作，對 Miracles 來說是罕見的情況——他們的歌通常由團員自己寫。",
+   "同條目：〈Mickey's Monkey〉是 Billboard 流行榜 Top 10、最高第 8 名，R&B 榜第 3 名，也是這個團體三年內第三張百萬銷量唱片（前兩張是 1961 年〈Shop Around〉與 1962 年〈You've Really Got A Hold On Me〉）；Smokey Robinson 形容它是「我們這輩子最大的唱片之一」。歌詞講的是一個從外地來、叫 Mickey 的傢伙（指 William「Mickey」Stevenson）把新舞步傳開來。",
+   "Apple us 條目 collectionId 1444109217：掛名 The Miracles、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：整張大半是當時流行的舞曲翻唱，伴奏由 The Funk Brothers 擔任、Marv Tarplin 彈吉他。",
+  "keyTracks": [
+   "Mickey's Monkey",
+   "I Gotta Dance to Keep From Crying",
+   "The Wah-Watusi",
+   "Dancin' Holiday",
+   "Do You Love Me"
+  ],
+  "researchNotes": "掛名一致。盤名兩式：MB RG 標題把團名寫進去作「The Miracles Doin’ Mickey’s Monkey」、卡片與 Apple 作「Doin' Mickey's Monkey」。試聽探測 ready（us 1→1、collectionId 1444109217）。序數兩說：Wikipedia 該條目寫「第六張錄音室專輯」，但同站〈The Miracles〉的專輯表把它排在第五位；策展層寫「第五張」。**正文不要寫序數。**"
+ },
+ {
+  "key": "desc2:Smokey Robinson & the Miracles|Special Occasion",
+  "artist": "Smokey Robinson & the Miracles",
+  "album": "Special Occasion",
+  "hook": "〈I Heard It Through the Grapevine〉他們錄得最早，收進來的是重錄版。",
+  "note": "重心是 Motown 曲庫的內部流動。開頭止於重錄版，接著寫他們早於 Marvin Gaye 與 Pips 版就錄過這首，這張用的母帶是 Pips 版問世之後重錄的→接〈Give Her Up〉五年前以〈Give Him Up〉之名出現在 Martha and the Vandellas 的《Come and Get These Memories》→接〈If You Can Want〉是全碟最大的一支、流行榜第 11 名，1968 年他們初登 The Ed Sullivan Show 唱的就是它→接編制：Marv Tarplin 吉他、The Funk Brothers 伴奏。掛名照卡片作「Smokey Robinson & the Miracles」，勿拆成兩組人。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group a789c695 的欄位：title「Special Occasion」、artist-credit「Smokey Robinson and The Miracles」、first-release-date 1968-08、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official 1968-08、XW／Official 2013-04-23 barcode 737463541824）。",
+   "其中 1968-08 的 US／Official 那筆由 Tamla 發行、編號 TS-290、12 吋黑膠 11 軌：從〈Yester Love〉2:21 到〈You Only Build Me Up to Tear Me Down〉3:26，〈I Heard It Through the Grapevine〉3:03 與〈Yesterday〉3:40 分列第 7、8 軌。",
+   "該 release 的每一軌 artist-credit 都寫成「Smokey Robinson and The Miracles」。",
+   "英文維基〈Special Occasion (The Miracles album)〉：這張 1968 年由 Tamla Motown 發行，收三支 Top 40 熱門〈If You Can Want〉〈Yester Love〉〈Special Occasion〉。",
+   "同條目：全碟最大的一支是快版的〈If You Can Want〉，差一點進 Billboard 流行榜前十、最高第 11 名，他們 1968 年第一次上 The Ed Sullivan Show 就唱這首。",
+   "同條目：專輯另收 Motown 熱門〈I Heard It Through the Grapevine〉與〈Everybody Needs Love〉（兩首都是 Gladys Knight & the Pips 唱紅的）以及披頭四的〈Yesterday〉。",
+   "同條目：The Miracles 其實是最早錄〈I Heard It Through the Grapevine〉的團體，早於 Marvin Gaye 與 Gladys Knight & the Pips 的熱門版本，但這張用的母帶是 Pips 版問世之後重錄的。",
+   "同條目：專輯也收了 Miracles 的地區熱門 B 面〈Much Better Off〉（後來啟發已故饒舌歌手 J Dilla 的翻唱版）與〈Give Her Up〉；〈Give Her Up〉最早以〈Give Him Up〉之名出現在 Martha & the Vandellas 1963 年的《Come and Get These Memories》。",
+   "同條目的名單：主唱兼製作 Smokey Robinson、和聲 Ronnie White／Bobby Rogers／Warren「Pete」Moore／Claudette Robinson、吉他 Marv Tarplin、伴奏 The Funk Brothers；〈Everybody Needs Love〉與〈I Heard It Through the Grapevine〉由 Norman Whitfield 製作。",
+   "Apple us 條目 collectionId 1443835836：掛名 Smokey Robinson & The Miracles、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：主唱 Smokey Robinson、和聲為 Ronnie White、Bobby Rogers、Pete Moore 與 Claudette Robinson，Marv Tarplin 彈吉他，伴奏由 The Funk Brothers 擔任。",
+  "keyTracks": [
+   "If You Can Want",
+   "Yester Love",
+   "Special Occasion",
+   "I Heard It Through the Grapevine",
+   "Much Better Off"
+  ],
+  "researchNotes": "**掛名不一致**：MB artist-credit 作「Smokey Robinson and The Miracles」（and、The 大寫），卡片作「Smokey Robinson & the Miracles」，Apple 作「Smokey Robinson & The Miracles」。這是同一個掛名的三種寫法，不是「樂團＋主唱」兩個獨立的人，正文不得拆開寫。試聽探測 ready（us 12→1、collectionId 1443835836）。"
+ },
+ {
+  "key": "desc2:Labelle|Labelle",
+  "artist": "Labelle",
+  "album": "Labelle",
+  "hook": "Birdsong 去了 The Supremes，剩下三人聽 Vicki Wickham 的話重組。",
+  "note": "重心是重組經過與首作選曲。開頭止於重組，接著寫前身是四人女聲團 Patti LaBelle & The Bluebelles，Birdsong 1967 年離團加入 The Supremes 後，三人依 Vicki Wickham 的建議換造型與音樂方向，1971 年以進步靈魂樂三重唱重新出發→接這是她們在 Warner Bros. 的第一張→接選曲：Carole King 的〈You've Got a Friend〉、Jagger／Richards 的〈Wild Horses〉→接和聲 Judy Clay 與 The Sweet Inspirations、Al Kooper 在〈Time〉彈風琴。掛名照卡片作 Labelle。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group ed1a3656 的欄位：title「Labelle」、artist-credit「LaBelle」（大寫 B）、first-release-date 1971、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US／Official，1971 與 2000）。",
+   "其中 1971 年的 US／Official 那筆由 Warner Bros. Records 發行、編號 WS 1943、紙套包裝、12 吋黑膠 11 軌：從〈Morning Much Better〉4:01 到〈When the Sun Comes Shining Through (The Ladder)〉3:57。",
+   "同一 release 的第 6 軌是〈Running Out of Fools / If You Gotta Make a Fool of Somebody〉4:23 的串接，〈You've Got a Friend〉4:24 與〈Time〉3:52 是另外兩首長曲。",
+   "英文維基〈Labelle (album)〉：這是三重唱 Labelle 的首張錄音室專輯，她們前身是四人女聲團 Patti LaBelle & The Bluebelles；這是 Labelle 在 Warner Bros. Records 的第一張。",
+   "同條目的曲目表：〈You've Got a Friend〉是 Carole King 的作品、〈Time & Love〉是 Laura Nyro 的作品、〈Wild Horses〉是 Mick Jagger 與 Keith Richards 的作品、〈Heart Be Still〉是 Bert Berns 與 Jerry Ragavoy 的作品；〈Too Many Days〉由 Nona Hendryx 寫、〈Shades of Difference〉由 Hendryx 與 Patti LaBelle 合寫。",
+   "同條目的名單：人聲 Patti LaBelle、Nona Hendryx、Sarah Dash；和聲有 Judy Clay 與 The Sweet Inspirations；Al Kooper 在〈Time〉彈風琴；吉他有 Gene Cornish、Bob Mann、David Spinozza；鼓有 Jimmy Johnson、Luther Rix、Dave Williams；封面照片 Bob Gruen。",
+   "英文維基〈Labelle〉：Cindy Birdsong 在 1967 年離團加入 The Supremes 之後，這個團體依 Vicki Wickham 的建議改變造型、音樂方向與風格，1971 年以進步靈魂樂團體 Labelle 的名義重組。",
+   "同條目：Labelle 的前身是費城與紐澤西 Trenton 一帶兩個互別苗頭的女聲團 The Ordettes 與 The Del-Capris 解散後重組而成，創始成員是 Patti LaBelle（本名 Patricia Louise Holte）、Cindy Birdsong、Nona Hendryx 與 Sarah Dash。",
+   "同條目：這段時期的錄音因為處理黑人女性團體通常不碰的題材而成為 cult favorites；她們後來以 1974 年的 proto-disco 單曲〈Lady Marmalade〉走紅，並且是第一個在大都會歌劇院演出的當代流行團體與黑人流行團體，也是第一個登上《滾石》封面的黑人人聲團體。",
+   "Apple us 條目 collectionId 80008100：掛名 LaBelle、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 名單：人聲是 Patti LaBelle、Nona Hendryx、Sarah Dash 三人，和聲另有 Judy Clay 與 The Sweet Inspirations，Al Kooper 在〈Time〉彈風琴。",
+  "keyTracks": [
+   "Morning Much Better",
+   "You've Got a Friend",
+   "Time & Love",
+   "Wild Horses",
+   "Shades of Difference"
+  ],
+  "researchNotes": "**掛名大小寫不一致**：MB artist-credit 與 Apple 作「LaBelle」，卡片作「Labelle」。自我同名卡，身分靠 release-group MBID ed1a3656 與 Apple collectionId 80008100 兩重釘死。試聽探測 ready（us 12→1、collectionId 80008100）。"
+ },
+ {
+  "key": "desc2:Labelle|Chameleon",
+  "artist": "Labelle",
+  "album": "Chameleon",
+  "hook": "八軌裡有五軌超過六分鐘，涵蓋的地帶也比前作更廣。",
+  "note": "重心是長曲與風格幅度，收在三人各奔東西。開頭止於幅度，接著寫最長的一軌是〈Isn't It A Shame〉7:58→接新製作人 David Rubinson 進來，PopMatters 的 Christian John Wikane 說整張在 doo wop、放克、拉丁與硬式搖滾之間展現可變性→接樂手：吉他 Ray Parker Jr. 與 Wah Wah Watson、鼓 James Gadson、四支薩克斯風→接八首有六首掛 Nona Hendryx 的名字→接流行榜第 94 名、R&B 榜第 21 名，〈Isn't It A Shame〉R&B 榜第 18 名→收在 1976 年巡演結束後三人各自發展。星等勿寫。掛名照卡片作 Labelle。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 4eb5e704 的欄位：title「Chameleon」、artist-credit「LaBelle」、first-release-date 1976、primary-type Album、secondary-types 空、轄下 2 個 release（1976 年 US／Official 一筆，另一筆未標國別、barcode 07464341892）。",
+   "其中 1976 年的 US／Official 那筆由 Epic 發行、黑膠 8 軌：從〈Get You Somebody New〉6:11 到〈Going Down Makes Me Shiver〉7:08，最長的一軌是〈Isn't It A Shame〉7:58。",
+   "同一 release 的其餘曲長：〈Come Into My Life〉6:46、〈Who's Watching The Watcher〉4:16、〈Chameleon〉5:15、〈Gypsy Moths〉5:01、〈A Man In A Trenchcoat (Voodoo)〉7:49——八軌之中有五軌超過六分鐘。",
+   "英文維基〈Chameleon (Labelle album)〉：這是 Labelle 的第六張專輯；Patti LaBelle 的自傳《Don't Block The Blessings》提到本來還規劃了名為《Shaman》的續作，但那張從未成形，三人要到 2008 年的《Back to Now》才再有新錄音。",
+   "同條目：這張最高在流行榜第 94 名、R&B 榜第 21 名；只有兩支單曲上榜——〈Get You Somebody New〉流行榜第 50 名、〈Isn't It A Shame〉R&B 榜第 18 名。〈Isn't It A Shame〉後來被 Nelly 用在 2004 年與 Jaheim 合作的〈My Place〉裡。",
+   "同條目引 PopMatters 的 Christian John Wikane：換上新製作人 David Rubinson 之後，這張如其名，在 doo wop、放克、拉丁與硬式搖滾之間展現這個團體的可變性，八首歌涵蓋的地帶比前作還廣。",
+   "同條目引 AllMusic 的 Craig Lytle（三顆星）：Patti LaBelle 是這個以她為名的團體的人聲主力，Nona Hendryx 則提供她拿來唱的材料；八首之中有六首掛 Hendryx 的名字。",
+   "同條目的名單：鍵盤 James Ellison，合成器 David Rubinson 與 Tom Coster，吉他 Eddie Martinez、Ray Parker Jr.、Wah Wah Watson，貝斯 Carmine Rojas，鼓 James Gadson 與 Scott Mathews，打擊樂 José Chepitó Áreas 與 Leon「Ndugu」Chancler，薩克斯風 Emilio Castillo、Lenny Pickett、Stephen Kupka、Kurt McGettrick。",
+   "英文維基〈Labelle〉：三位成員在 1976 年一趟巡演結束後各自展開個人生涯。",
+   "Apple us 條目 collectionId 217274257：掛名 LaBelle、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 名單與 PopMatters 的評語：新製作人 David Rubinson，樂手含吉他 Ray Parker Jr. 與 Wah Wah Watson、鼓 James Gadson、打擊樂 José Chepitó Áreas 與 Leon「Ndugu」Chancler，以及四支薩克斯風；風格在 doo wop、放克、拉丁與硬式搖滾之間游走。",
+  "keyTracks": [
+   "Get You Somebody New",
+   "Isn't It a Shame",
+   "Chameleon",
+   "A Man in a Trenchcoat (Voodoo)",
+   "Who's Watching the Watcher?"
+  ],
+  "researchNotes": "掛名大小寫同前一張（MB／Apple 作 LaBelle、卡片作 Labelle）。試聽探測 ready（us 1→1、collectionId 217274257）。MB 該 release 的 label-info 只寫 Epic、無編號。"
+ },
+ {
+  "key": "desc2:Gil Scott-Heron|Small Talk at 125th and Lenox",
+  "artist": "Gil Scott-Heron",
+  "album": "Small Talk at 125th and Lenox",
+  "hook": "他在 2012 年套裝的內頁講明：聽眾坐在錄音室的折疊椅上。",
+  "note": "重心是錄音場合的兩種說法，務必兩說並陳。開頭止於他的說法，接著寫早年的說法是在 125 街與 Lenox 大道口的一間夜店當著聽眾錄成，Scott-Heron 本人在 2012 年套裝的內頁裡說是把一小群聽眾帶進錄音室、坐折疊椅——只寫夜店那一說會失準→接錄這張時他已出版一本詩集與小說《The Vulture》→接伴奏只有 David Barnes 的打擊樂與人聲、Charlie Saunders 與 Eddie Knowles 的康加鼓，他自己彈吉他與鋼琴，製作 Bob Thiele→接曲長落差：〈Paint It Black〉0:34 對上〈Who'll Pay Reparations on My Soul?〉5:16。掛名照卡片的 ASCII 連字號。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group ec408b92 的欄位：title「Small Talk at 125th and Lenox」、artist-credit「Gil Scott‐Heron」（連字號為 U+2010）、first-release-date 1970、primary-type Album、secondary-types 為 [Live]、轄下 6 個 release（US／Official 2、JP／Official 1、XE／Official 1、XW／Official 1、GB／Official 1）。",
+   "其中 1970 年的 US／Official 那筆由 Flying Dutchman 發行、編號 FDS 131、12 吋黑膠 14 軌：從〈Introduction / The Revolution Will Not Be Televised〉3:22 到〈Everyday〉4:30。",
+   "同一 release 的曲長落差極大：〈Paint It Black〉只有 0:34、同名曲〈Small Talk at 125th & Lenox〉1:21、〈Whitey on the Moon〉2:00，而〈Who'll Pay Reparations on My Soul?〉5:16、〈The Vulture〉4:32、〈Comment #1〉4:27。",
+   "英文維基〈Small Talk at 125th and Lenox〉：全名《A New Black Poet – Small Talk at 125th and Lenox》，是 Gil Scott-Heron 的第一張唱片，1970 年由 Flying Dutchman Records 發行。",
+   "同條目：這張的錄音一開始被說成是在紐約 125 街與 Lenox 大道口的一間夜店現場錄的，但 2012 年套裝《The Revolution Begins: The Flying Dutchman Masters》的內頁文字裡，Scott-Heron 本人堅稱是把一小群聽眾帶進「錄音室」、讓他們坐在「折疊椅」上。",
+   "同條目：錄這張的時候，Scott-Heron 已經出版過一本詩集與他的第一本小說《The Vulture》。",
+   "同條目的名單：David Barnes 打擊樂與人聲，Charlie Saunders 與 Eddie Knowles 打康加鼓，Scott-Heron 自己彈吉他與鋼琴並演唱；製作人 Bob Thiele，封面美術 Charles Stewart。",
+   "同條目：AllMusic 編輯 John Bush 形容這張是「一場知識主義與社會批判的火山噴發」。",
+   "同條目：〈Comment #1〉被 Kanye West 2010 年的《My Beautiful Dark Twisted Fantasy》裡的〈Lost in the World〉與〈Who Will Survive In America〉大量取樣；Leon Bridges 在 2018 年電影《First Man》中重新演唱〈Whitey on the Moon〉，該版本也收進電影原聲帶。",
+   "Apple us 條目 collectionId 1621357715：標題「Small Talk at 125th and Lenox」、掛名 Gil Scott-Heron、14 軌、releaseDate 1970-01-01、collectionExplicitness explicit、copyright 欄「℗ 2015 Ace Records」，14 軌全部有 previewUrl。"
+  ],
+  "sound": "依 Wikipedia 名單：伴奏只有 David Barnes 的打擊樂與人聲、Charlie Saunders 與 Eddie Knowles 的康加鼓，加上 Scott-Heron 自己的吉他與鋼琴。",
+  "keyTracks": [
+   "Introduction / The Revolution Will Not Be Televised",
+   "Whitey on the Moon",
+   "Comment #1",
+   "Who'll Pay Reparations on My Soul?",
+   "The Vulture"
+  ],
+  "researchNotes": "**推翻試聽 unavailable**：previews.json 記七個店面各 1→0，不是 NOQUERY；依第 166 條改打 lookup?id=315331 撈全目錄（53 筆），找到 us collectionId 1621357715，14 軌全有 previewUrl，軌數與 MB 原盤相同。該筆 collectionExplicitness 是 explicit（14 軌中 5 軌 trackExplicitness 為 explicit），卡片無 cleaned／cleanedOnly 標記，回查同目錄也沒有同名同軌數的 cleaned 雙胞胎。**掛名不一致**：MB artist-credit 用 U+2010 連字號「Gil Scott‐Heron」，卡片用 ASCII 連字號。**擋下策展層一處**：curatorWhy 寫「在紐約一間小場地當著聽眾錄成」，Wikipedia 記這是早年的說法、Scott-Heron 本人在 2012 年套裝內頁反駁說是錄音室加折疊椅，正文要兩說並陳、不得只寫夜店那一說。MB secondary-types 標 Live 為刻意選定。"
+ },
+ {
+  "key": "desc2:Gil Scott-Heron|Free Will",
+  "artist": "Gil Scott-Heron",
+  "album": "Free Will",
+  "hook": "A 面五首交給整個樂團，B 面只剩長笛與兩位打擊樂手。",
+  "note": "重心是兩面的編制差異。開頭止於分工，接著寫 A 面五軌由他與整個樂團錄成：Brian Jackson 原聲與電鋼琴、Bernard Purdie 鼓、Horace Ott 指揮編曲；B 面七軌更像一場現場 rap session，只有 Jackson 的長笛與 Eddie Knowles、Charles Saunders 的打擊樂→接曲長跟著分家，後段〈Sex Education: Ghetto Style〉只有 0:50→接題材：〈No Knock〉講警察無須敲門即可進屋的政策，〈…and then he wrote Meditations〉獻給 John Coltrane→接這是他在 Flying Dutchman 的最後一張錄音室專輯。序數勿寫。掛名照卡片。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 69a771aa 的欄位：title「Free Will」、artist-credit「Gil Scott‐Heron」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 7 個 release（US／Official 3、JP／Official 1、FR／Official 1、XW／Official 1、XE／Official 1）。",
+   "其中 1972 年的 US／Official 那筆由 Flying Dutchman 發行、編號 FD 10153、12 吋黑膠 12 軌：從〈Free Will〉3:30 到〈…and then he wrote Meditations〉3:14。",
+   "同一 release 的曲長分佈很清楚地分成兩半：前五軌〈Free Will〉3:30、〈The Middle of Your Day〉4:30、〈The Get Out of the Ghetto Blues〉5:04、〈Speed Kills〉3:15、〈Did You Hear What They Said?〉3:28；後七軌明顯偏短，〈Wiggy〉1:38、〈Billy Green Is Dead〉1:30、〈Sex Education: Ghetto Style〉只有 0:50。",
+   "英文維基〈Free Will (Gil Scott-Heron album)〉：這是 Gil Scott-Heron 的第二張錄音室專輯，1972 年 8 月由 Flying Dutchman Records 發行，製作人 Bob Thiele，錄音在 1972 年 3 月 2 日與 3 日於紐約 RCA Studios 進行。",
+   "同條目：這是繼《Pieces of a Man》(1971) 之後的作品，也是第二張有鍵盤手 Brian Jackson 參與的專輯，以及 Scott-Heron 在 Flying Dutchman 的最後一張錄音室專輯；2001 年由 Bluebird Records 再版 CD，附上原盤其中八軌的另一種版本。",
+   "同條目：《Free Will》在音樂上把黑膠的兩面分開處理——A 面是五段由 Scott-Heron 與整個樂團錄的曲子，B 面則更像一場現場的 rap session，只有 Brian Jackson 的長笛與兩位打擊樂手。",
+   "同條目：同名曲以一段關於個人責任的沉思開場；〈The Get Out of the Ghetto Blues〉有 Brian Jackson 的鋼琴與 David Spinozza 的吉他撐起藍調味；〈Wiggy〉是一首俳句式的、對自然黑人髮質的讚頌；〈No Knock〉指的是警察無須敲門即可進屋的政策；〈… And Then He Wrote Meditations〉是獻給 John Coltrane 的。",
+   "同條目引〈Ain't No New Thing〉的段落：「我們早就習慣白人來搶我們／他們怎麼不試著偷走一些這種貧窮／這不是什麼新鮮事……任何他們不懂的東西／他們就設法毀掉」。",
+   "同條目的名單：Scott-Heron 演唱全部曲目；Horace Ott 指揮與編曲；Brian Jackson 彈原聲與電鋼琴、人聲、長笛與鈴，參與第 1 至 5 軌；Gerald Jemmott 貝斯、Bernard Purdie 鼓、David Spinozza 吉他、Hubert Laws 長笛與短笛（皆第 1 至 5 軌）；Eddie Knowles 與 Charles Saunders 打擊樂（第 6 至 12 軌）。",
+   "Apple us 條目 collectionId 1621389194：掛名 Gil Scott-Heron、23 軌、releaseDate 1972-01-01、collectionExplicitness notExplicit——軌數多於 MB 原盤的 12 軌，屬加曲的再發版本。"
+  ],
+  "sound": "依 Wikipedia 名單：A 面由樂團編制錄成，Brian Jackson 彈原聲與電鋼琴、Gerald Jemmott 貝斯、Bernard Purdie 鼓、David Spinozza 吉他、Hubert Laws 長笛與短笛，Horace Ott 指揮編曲；B 面只有 Jackson 的長笛與兩位打擊樂手。",
+  "keyTracks": [
+   "Free Will",
+   "The Get Out of the Ghetto Blues",
+   "No Knock",
+   "Ain't No New Thing",
+   "…and then he wrote Meditations"
+  ],
+  "researchNotes": "掛名同前（MB U+2010 連字號）。試聽探測 ready（us 12→1、collectionId 1621389194），但該 Apple 條目是 23 軌的加曲再發版，原盤 12 軌。序數兩說：Wikipedia 記「第二張錄音室專輯」（把《Small Talk》算成 live album），策展層寫「第三張唱片」；正文避開序數或照 Wikipedia 的「第二張錄音室專輯」寫。"
+ },
+ {
+  "key": "desc2:Gil Scott-Heron & Brian Jackson|The First Minute of a New Day",
+  "artist": "Gil Scott-Heron & Brian Jackson",
+  "album": "The First Minute of a New Day",
+  "hook": "〈Winter in America〉那首歌，要到這張才第一次收進專輯。",
+  "note": "重心是那首歌與前一張盤名的錯位，其次是編制擴大。開頭止於錯位，接著寫那是前一張《Winter in America》的同名曲、當時沒收進原始黑膠→接八人編制的 The Midnight Band 進場，這是他們在 Arista 的首作，資金較好、班底更大、製作更光滑→接〈Pardon Our Analysis (We Beg Your Pardon)〉是整張唯一的口語段落、也是現場錄音，針對尼克森獲赦，該軌沒有任何音樂伴奏→接 Top Jazz Albums 最高第 5 名、在榜 24 週，Pop Albums 榜第 30 名，沒發單曲。「Arista 編號最前」勿寫，只寫編號 A 4030。掛名照卡片，The Midnight Band 寫成八人編制的樂團。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 44ed1384 的欄位：title「The First Minute of a New Day」、artist-credit「Gil Scott‐Heron, Brian Jackson & The Midnight Band」、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release（皆 US／Official，1975 與 1998 barcode 016581435025）。",
+   "其中 1975 年的 US／Official 那筆由 Arista 發行、編號 A 4030、12 吋黑膠 9 軌：從〈Offering〉3:34 到〈Alluswe〉5:04。",
+   "同一 release 的九軌全部把 artist-credit 寫成「Gil Scott‐Heron, Brian Jackson & The Midnight Band」；最長的兩軌是〈Pardon Our Analysis (We Beg Your Pardon)〉8:01 與〈Guerilla〉7:49，〈Winter in America〉6:09 排在第 7 軌。",
+   "英文維基〈The First Minute of a New Day〉：這是一張由歌手 Gil Scott-Heron、鍵盤手 Brian Jackson 與八人編制的 Midnight Band 共同掛名的專輯，1975 年 1 月由 Arista Records 發行。",
+   "同條目：錄音在 1974 年夏天於馬里蘭州 Silver Spring 的 D&B Sound 進行；這是繼《Winter in America》之後的作品，也是第一張收錄〈Winter in America〉這首歌的專輯——那首是前一張的同名曲，卻沒有放進前一張的原始黑膠裡。1998 年由 Scott-Heron 自己的廠牌 Rumal-Gia Records 再版 CD。",
+   "同條目：這是 Jackson 與 Scott-Heron 在 Arista 廠牌的首作，有了 Midnight Band 與 Arista 較好的資金支援，這張的班底更大、製作更光滑，與《Winter in America》的稀薄製作成對比；Midnight Band 此後繼續出現在 Scott-Heron 的專輯上。",
+   "同條目：整張唯一的口語段落〈Pardon Our Analysis〉也是現場錄音，是《Winter in America》裡〈H2O Gate Blues〉的續篇、針對尼克森獲赦一事，而且這一軌完全沒有任何音樂伴奏。",
+   "同條目：專輯在 1975 年 2 月 8 日以第 17 名進入 Top Jazz Albums 榜，之後最高爬到第 5 名，1975 年 7 月 19 日掉出榜外，共在榜 24 週；另在 Black Albums 榜最高第 8 名、Pop Albums 榜最高第 30 名。這張沒有發行任何單曲。",
+   "同條目：AllMusic 的 Tim Sheridan 稱它是「紮實、明顯偏左的 jazz-R&B」；樂評 Neil Tesser 形容 Scott-Heron 在這張的歌聲是「桃花心木、陽光與眼淚」；Robert Christgau 在《The Village Voice》寫這支走向民粹的自由爵士樂團產生的節奏能量大到足以蓋過弱處。",
+   "同條目的名單：Scott-Heron 唱歌並彈鋼琴、電鋼琴與吉他；Brian Jackson 合成器、鍵盤、長笛與人聲；Bilal Sunni Ali 長笛、口琴、薩克斯風；Danny Bowens 貝斯；Eddie Knowles、Barnett Williams、Victor Brown、Charlie Saunders 打擊樂與康加鼓；Bob Adams 鼓。",
+   "Apple 藝人目錄回查：artistId 315331（Gil Scott-Heron）名下 53 筆與 artistId 315335（Brian Jackson）名下 41 筆之中，都沒有《The First Minute of a New Day》；315331 名下只有 Arista 期的《Winter in America》(6781297373)。"
+  ],
+  "sound": "依 Wikipedia 名單與敘述：八人編制的 Midnight Band 進場，Jackson 掌合成器、鍵盤與長笛，另有 Bilal Sunni Ali 的長笛與薩克斯風、Danny Bowens 的貝斯與四位打擊樂手；條目指出這張的班底比《Winter in America》更大、製作更光滑。",
+  "keyTracks": [
+   "Offering",
+   "The Liberation Song (Red, Black and Green)",
+   "Ain't No Such Thing as Superman",
+   "Winter in America",
+   "Pardon Our Analysis (We Beg Your Pardon)"
+  ],
+  "researchNotes": "**掛名不一致（本組最需注意的一張）**：MB artist-credit 是「Gil Scott‐Heron, Brian Jackson & The Midnight Band」，含樂團名且用 U+2010 連字號；卡片作「Gil Scott-Heron & Brian Jackson」。The Midnight Band 是共同掛名的一部分，不是伴奏註記，但也不是第三個「人」，正文提到時要照 Wikipedia 的寫法說成八人編制的樂團。試聽覆核：previews.json 記七個店面各 12→0，不是 NOQUERY；依第 166 條分別打 lookup?id=315331 與 lookup?id=315335 撈兩位的全目錄，兩邊都沒有這張，**維持 unavailable**。無 cleaned 標記。**擋下策展層一處**：curatorWhy 寫「它同時是 Arista Records 成立後編號最前的幾張唱片之一」，查不到來源，未採用；可寫的只有 MB 記載的編號 A 4030。"
+ },
+ {
+  "key": "desc2:Rufus|Rufus",
+  "artist": "Rufus",
+  "album": "Rufus",
+  "hook": "原主唱走了，頂上的是替樂團當和聲的朋友 Chaka Khan。",
+  "note": "重心是主唱換人與這張的位置。開頭止於頂替，接著寫 Rufus 由 Kevin Murphy 與 Al Ciner 1969 年在芝加哥組成，原女主唱 Paulette McWilliams 選擇離團→接 Khan 當時 19 歲，Chaka 是 13 歲時一位 Yoruba Baba 給的名字、意思是「火」→接樂團的藝術方向當時由 Ron Stockert 主導，她高低音域都撐得住→接聲響是上揚的搖滾／靈魂樂，之後才被更重的放克與帶爵士味的錄音取代；編制 Stockert 鍵盤與 Mellotron、Murphy 風琴與 Clavinet、André Fischer 鼓，製作 Bob Monaco→接 R&B 專輯榜第 44 名、流行榜第 175 名。年齡照來源寫 19 歲。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group e0a5918e 的欄位：title「Rufus」、artist-credit「Rufus」、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official 1973、JP／Official 2004-03-03 barcode 4988005357069）。",
+   "其中 1973 年的 US／Official 那筆由 ABC Records 發行、編號 ABCX 783、12 吋黑膠 10 軌：從〈Slip ’n Slide〉3:50 到第 10 軌的串燒〈Medley: Love the One You’re With / Sit Yourself Down〉6:23。",
+   "同一 release 的其餘曲長：〈Keep It Coming〉3:16、〈There’s No Telling〉4:56、〈Maybe Your Baby〉4:18、〈I Finally Found You〉3:58、〈Feel Good〉4:14、〈Satisfied〉3:29、〈Haulin’ Coal〉5:05、〈Whoever’s Thrilling You (Is Killing Me)〉2:42。",
+   "英文維基〈Rufus (Rufus album)〉：這是美國 R&B／放克團體 Rufus 的首張專輯，1973 年由 ABC Records 發行，前排是 Chaka Khan 與 Ron Stockert 兩位歌手；條目指出這張的上揚搖滾／靈魂樂聲響，後來被更重的放克與帶爵士味的錄音取代。",
+   "同條目：Rufus 由 Kevin Murphy 與 Al Ciner 在 1969 年組成，來自芝加哥兩個互別苗頭的樂團；1972 年短暫待過 Epic 之後與 ABC 簽約，同年原女主唱 Paulette McWilliams 選擇離團，找了原本替樂團當和聲的朋友 Chaka Khan 頂替她成為唯一主唱。",
+   "同條目：樂團當時的藝術方向由歌手兼多樂器手 Ron Stockert 主導，但 Khan 補上了團裡缺的東西——她高低音域都能唱，既扛得住樂團偏搖滾的曲子，也唱得了慢歌。",
+   "同條目：Khan 當時 19 歲，本名 Yvette Marie Stevens，Chaka 這個名字是她 13 歲時一位 Yoruba Baba 給的，意思是「火」。",
+   "同條目：首作在 1972 年錄了一整年、1973 年春天發行，最高在 Billboard R&B 專輯榜第 44 名、流行榜第 175 名，單曲有〈Feel Good〉（R&B 第 45 名）與〈Whoever's Thrilling You (Is Killing Me)〉（第 40 名）。",
+   "同條目：這張發行後不久，Stockert 在下一張《Rags to Rufus》的錄音期間因為樂團爬升太慢而離團；此後 Khan 的角色被提升，樂團成功之後焦點幾乎全落在她身上。",
+   "同條目的名單：Chaka Khan 主唱與和聲、Dennis Belfield 貝斯、Al Ciner 吉他、André Fischer 鼓與打擊樂、Kevin Murphy 風琴與 Clavinet、Ron Stockert 鍵盤與 Mellotron；製作人 Bob Monaco，編曲由 Rufus 自己擔任。",
+   "Apple us 條目 collectionId 1474309696：掛名 Rufus、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia：這張是上揚的搖滾／靈魂樂聲響，之後才被更重的放克與帶爵士味的錄音取代；編制為 Khan 主唱、Ron Stockert 鍵盤與 Mellotron、Kevin Murphy 風琴與 Clavinet、Al Ciner 吉他、Dennis Belfield 貝斯、André Fischer 鼓。",
+  "keyTracks": [
+   "Feel Good",
+   "Whoever's Thrilling You (Is Killing Me)",
+   "Slip 'n Slide",
+   "Maybe Your Baby",
+   "Haulin' Coal"
+  ],
+  "researchNotes": "掛名：MB artist-credit「Rufus」與卡片相同。自我同名卡，身分靠 release-group MBID e0a5918e 與 Apple collectionId 1474309696 兩重釘死。試聽探測 ready（us 12→1、collectionId 1474309696）。"
+ },
+ {
+  "key": "desc2:Rufus featuring Chaka Khan|Rufus Featuring Chaka Khan",
+  "artist": "Rufus featuring Chaka Khan",
+  "album": "Rufus Featuring Chaka Khan",
+  "hook": "掛名與盤名寫成同一句話，主唱的名字排進了團名裡。",
+  "note": "重心是掛名與〈Sweet Thing〉。開頭止於掛名，接著寫 MB 這一筆的每軌 artist-credit 與盤名同字→接〈Sweet Thing〉排第 6 軌、3:18，由 Khan 與 Tony Maiden 合寫，1975 年末先以單曲發行，R&B 單曲榜第 1 名、流行榜第 5 名→接 2024 年貝斯手 Bobby Watson 說自己也參與創作，Maiden 未分享作者掛名→接 Mary J. Blige 1992 年在《What's the 411?》翻唱過→接 R&B 專輯榜連續六週冠軍；班底另有 Tower of Power 的號組。「掛名第一次成為團名」與「最常被取樣」勿寫。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group aa16ac32 的欄位：title「Rufus featuring Chaka Khan」、artist-credit「Rufus featuring Chaka Khan」、first-release-date 1975-11-18、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official 3、JP／Official 2）。",
+   "其中 1975-11-18 的 US／Official 那筆由 ABC Records 發行、編號 ABCD-909、紙套包裝、12 吋黑膠 10 軌：從〈Fool’s Paradise〉4:41 到〈Jive Talkin’〉3:33，〈Sweet Thing〉3:18 排在第 6 軌。",
+   "同一 release 的每一軌 artist-credit 都寫成「Rufus featuring Chaka Khan」；其餘曲長為〈Have a Good Time〉3:20、〈Ooh I Like Your Loving〉3:39、〈Everybody Has an Aura〉3:48、〈Circles〉3:56、〈Dance Wit Me〉3:57、〈Little Boy Blue〉5:02、〈On Time〉3:31。",
+   "英文維基〈Rufus featuring Chaka Khan (album)〉：這是放克團體 Rufus 與 Chaka Khan 的第四張錄音室專輯、獲金唱片銷量，1975 年由 ABC Records 發行，並在 R&B 專輯榜連續六週居冠。",
+   "同條目的名單：Chaka Khan 人聲、Tony Maiden 吉他與人聲、André Fischer 鼓、Kevin Murphy 鍵盤、Bobby Watson 貝斯與人聲，另有 Tower of Power 的號組；製作由 Rufus 自己擔任，弦樂編曲 Clare Fischer、號組編曲 Greg Adams、封面插畫 Bill Imhoff。",
+   "英文維基〈Sweet Thing (Rufus song)〉：〈Sweet Thing〉1975 年末先以單曲發行，登上 R&B 單曲榜第 1 名、流行榜第 5 名，由 Khan 與團員 Tony Maiden 合寫，成為樂團與 Khan 的招牌曲之一，收在他們的第四張專輯《Rufus featuring Chaka Khan》裡。",
+   "同條目：2024 年 Rufus 貝斯手 Bobby Watson 表示自己也參與了這首歌的創作，但 Maiden 拒絕分享作者掛名；2009 年《Essence》雜誌把這首選進「史上 25 首最佳慢歌」名單。",
+   "同條目：Mary J. Blige 1992 年替她的首張專輯《What's the 411?》錄了〈Sweet Thing〉的翻唱版，成為她在 Billboard Hot 100 的第三支 Top 40 單曲、最高第 28 名，也是她第一次進紐西蘭單曲榜。",
+   "英文維基〈Rufus featuring Chaka Khan (album)〉的取樣註記：〈Ooh I Like Your Lovin'〉被 Boogie Down Productions 的〈The Blueprint〉取樣，〈Circles〉被 Little Brother 的〈The Becoming〉取樣，〈Sweet Thing〉被 Mellow Man Ace 的〈B-Boy in Love〉與 RBL Posse 的〈Remind Me〉取樣。",
+   "Apple us 條目 collectionId 1443806525：掛名 Rufus & Chaka Khan、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 名單：Khan 人聲、Tony Maiden 吉他、Kevin Murphy 鍵盤、Bobby Watson 貝斯、André Fischer 鼓，號組是 Tower of Power 的班底（Greg Adams 編曲），弦樂由 Clare Fischer 編寫。",
+  "keyTracks": [
+   "Sweet Thing",
+   "Fool's Paradise",
+   "Circles",
+   "Ooh I Like Your Loving",
+   "Dance Wit Me"
+  ],
+  "researchNotes": "掛名：MB artist-credit「Rufus featuring Chaka Khan」與卡片完全相同；Apple 條目名作「Rufus & Chaka Khan」。試聽探測 ready（us 12→1、collectionId 1443806525）。**擋下策展層一處**：curatorWhy 寫「也是『Rufus featuring Chaka Khan』這個掛名第一次成為正式團名的一張」與「〈Sweet Thing〉是他們最常被重錄與取樣的曲目」，兩句都查不到來源，未採用；可寫的是 MB 這一筆的 artist-credit 與盤名同字，以及 Wikipedia 列出的三筆取樣與 Mary J. Blige 的翻唱。"
+ },
+ {
+  "key": "desc2:Rufus & Chaka Khan|Masterjam",
+  "artist": "Rufus & Chaka Khan",
+  "album": "Masterjam",
+  "hook": "Quincy Jones 接手製作，連他自己的〈Body Heat〉都被翻成放克。",
+  "note": "重心是製作人接手後的變化。開頭止於 Quincy Jones，接著寫這是 MCA 買下並解散 ABC 之後他們在 MCA 的第一張→接 Jones 找來 Seawind Horns，Brothers Johnson 幫打擊樂，錄音混音 Bruce Swedien，節奏與人聲編曲 Rod Temperton→接1979 年她已有個人專輯《Chaka》與〈I'm Every Woman〉，依合約仍須留在樂團→接 Billboard R&B 專輯榜冠軍、流行榜第 14 名，〈Do You Love What You Feel〉R&B 單曲榜冠軍、流行榜第 30 名「美國專輯榜前十」勿寫。掛名照卡片作 Rufus & Chaka Khan。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group ec0bd65d 的欄位：title「Masterjam」、artist-credit「Rufus & Chaka」（沒有 Khan）、first-release-date 1979-10-26、primary-type Album、secondary-types 空、轄下 5 個 release（US／Official 3、JP／Official 2）。",
+   "其中 1979-10-26 的 US／Official 那筆由 MCA Records 發行、編號 MCA-5103、紙套包裝、12 吋黑膠 9 軌：從〈Do You Love What You Feel〉4:27 到同名曲〈Masterjam〉3:34。",
+   "同一 release 的九軌 artist-credit 全寫成「Rufus & Chaka」；其餘曲長為〈Any Love〉4:50、〈Heaven Bound〉3:45、〈Walk the Rockway〉4:04、〈Live in Me〉3:54、〈Body Heat〉5:45（全碟最長）、〈I'm Dancing for Your Love〉4:31、〈What Am I Missing?〉4:03。",
+   "英文維基〈Masterjam〉：這是放克團體 Rufus 的第八張錄音室專輯、獲白金銷量，也是他們第七張有 Chaka Khan 參與的專輯；1979 年發行，是 MCA Records 買下並解散 ABC Records 之後他們在 MCA 的第一張。",
+   "同條目：專輯由 Quincy Jones 製作，是樂團第四張登上 Billboard R&B 專輯榜冠軍的作品，在流行榜最高第 14 名。",
+   "同條目：單曲〈Do You Love What You Feel〉是他們在 R&B 單曲榜的第四支冠軍、流行榜第 30 名；〈Any Love〉1980 年 R&B 第 24 名、〈I'm Dancing for Your Love〉1980 年 R&B 第 43 名。",
+   "同條目：1979 年 Chaka Khan 以個人專輯《Chaka》與其中的〈I'm Every Woman〉取得個人成績，那首在《I Feel for You》之前多年就成了她的招牌曲；但她依合約仍須留在 1972 年加入的 Rufus。",
+   "同條目：Khan 早在 Jones 前一年的專輯《Sounds...and Stuff Like That!!》就與他合作過；Jones 這次還找來 Seawind Horns 以及 Brothers Johnson 幫忙打擊樂，樂團也把 Jones 自己的〈Body Heat〉翻成放克版。",
+   "同條目的名單：Chaka Khan 主唱與和聲、Tony Maiden 吉他與主唱、Kevin Murphy 與 David「Hawk」Wolinski 鍵盤、John Robinson 鼓、Bobby Watson 貝斯；Seawind Horns 為 Jerry Hey、Gary Grant、Larry Hall（小號與柔音號）與 Kim Hutchcroft、Larry Williams（薩克斯風與長笛）；錄音與混音 Bruce Swedien，節奏與人聲編曲 Rod Temperton。",
+   "同條目：《Masterjam》之後 Chaka Khan 錄了第二張個人專輯《Naughty》、Rufus 錄了《Party 'Til You're Broke》，分別在 1980 與 1981 年發行；1981 年 Khan 再與樂團合作錄《Camouflage》。",
+   "Apple us 條目 collectionId 1444134368：掛名 Chaka Khan & Rufus、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 名單：Quincy Jones 製作、Bruce Swedien 錄音混音、Rod Temperton 寫節奏與人聲編曲；樂手為 Khan 主唱、Tony Maiden 吉他、Kevin Murphy 與 David「Hawk」Wolinski 鍵盤、John Robinson 鼓、Bobby Watson 貝斯，號組是 Seawind Horns 的五人班底。",
+  "keyTracks": [
+   "Do You Love What You Feel",
+   "Any Love",
+   "Body Heat",
+   "I'm Dancing for Your Love",
+   "Masterjam"
+  ],
+  "researchNotes": "**掛名四式**：MB artist-credit 作「Rufus & Chaka」（無 Khan）、Apple 作「Chaka Khan & Rufus」（前後顛倒）、卡片作「Rufus & Chaka Khan」。同一組人的四種寫法，不是兩個獨立的掛名。試聽探測 ready（us 1→1、collectionId 1444134368）。**擋下策展層一處**：curatorWhy 寫「美國專輯榜前十」，Wikipedia 記的是 R&B 專輯榜冠軍、流行榜第 14 名，正文不得寫成前十。"
+ },
+ {
+  "key": "desc2:Jerry Butler|Jerry Butler, Esq.",
+  "artist": "Jerry Butler",
+  "album": "Jerry Butler, Esq.",
+  "hook": "〈For Your Precious Love〉排在第二軌，那是 1958 年的 Vee-Jay 單曲。",
+  "note": "本卡正文寫 120–180 字。重心是曲目本身。開頭止於第二軌，接著寫該曲由 Arthur Brooks、Richard Brooks 與 Jerry Butler 合寫，Billboard Top 100 第 11 名→接這張由 Abner 發行、12 軌，開場〈September Song〉4:22 是全碟唯一超過四分鐘的一軌→接他是 The Impressions 的原始主唱、1960 年離團，教會唱詩班認識 Curtis Mayfield→接綽號 Iceman 出自費城電台 WDAS 的 DJ Georgie Woods。素材就這些，沒有專輯層級的評論或銷量可用。「離團後」「第一張」「首張」一律勿寫；作者欄勿掛 Curtis Mayfield。",
+  "status": "thin",
+  "facts": [
+   "MusicBrainz release-group 20576a7e 的欄位：title「Jerry Butler, Esq.」、artist-credit「Jerry Butler」、first-release-date 1959-11、primary-type Album、secondary-types 空、轄下只有 1 個 release（US／Official）。",
+   "該唯一的 release 由 Abner 發行、編號 LP 2001、紙套包裝、12 吋黑膠 12 軌：從〈September Song〉4:22 到〈You Go Right Through Me〉2:10，〈For Your Precious Love〉2:42 排在第 2 軌。",
+   "同一 release 的其餘曲長：〈Don't Take Your Love From Me〉2:10、〈Comeback My Love〉2:33、〈If You Let Me〉2:13、〈The Challenge〉2:55、〈Chi Town〉3:00、〈Rainbow Valley〉2:01、〈I Was Wrong〉2:45、〈Lost〉2:20、〈No End or Time〉3:39——十二軌之中只有開場的〈September Song〉超過四分鐘。",
+   "英文維基〈Jerry Butler〉：Jerry Butler Jr.（1939 年 12 月 8 日至 2025 年 2 月 20 日）是美國靈魂樂歌手、詞曲作者、製作人與政治人物，也是 R&B 人聲團體 The Impressions 的原始主唱；他在 1960 年離團。",
+   "同條目：Butler 生於密西西比州 Sunflower，三歲時舉家遷往芝加哥，在 Cabrini–Green 國宅長大；他在教會唱詩班認識 Curtis Mayfield，青少年時期與 Mayfield 一起在福音四重唱 Northern Jubilee Gospel Singers 唱歌。",
+   "同條目：The Impressions 曾向 Chess Records 與 Vee-Jay Records 試音，最後與 Vee-Jay 簽約，1958 年發行〈For Your Precious Love〉，那是該團的第一支熱門與金唱片。Butler 的綽號「Iceman」是費城電台 WDAS 的 DJ Georgie Woods 在他登台時給的。",
+   "英文維基〈For Your Precious Love〉：這首由 Arthur Brooks、Richard Brooks 與 Jerry Butler 合寫，1958 年由 Jerry Butler 與 The Impressions 演唱；單曲在 Vee-Jay Records 發行，最高在 Most Played R&B 榜第 3 名、Billboard Top 100 第 11 名，加拿大第 18 名。2010 年《滾石》把它排在 500 大歌曲第 335 名。",
+   "Apple 藝人目錄回查：artistId 136031（Jerry Butler）名下 29 張專輯條目之中沒有《Jerry Butler, Esq.》——與探測結果一致。"
+  ],
+  "sound": "",
+  "keyTracks": [
+   "For Your Precious Love",
+   "September Song",
+   "Chi Town",
+   "Rainbow Valley",
+   "No End or Time"
+  ],
+  "researchNotes": "**thin**。素材預算：可查證細節共七項——(1) MB release-group 欄位（1959-11、Album、只有 1 個 release）；(2) Abner LP 2001 的 12 軌曲目與逐軌曲長；(3) 開場〈September Song〉4:22 是全碟唯一超過四分鐘的一軌；(4) Butler 是 The Impressions 原始主唱、1960 年離團；(5) 芝加哥 Cabrini–Green 成長、與 Curtis Mayfield 在福音四重唱共事；(6)〈For Your Precious Love〉的作者、1958 年 Vee-Jay 單曲與榜位、滾石 500 大第 335 名；(7) Iceman 綽號的由來。**這張沒有任何專輯層級的評論、榜位或銷量來源**（Wikipedia 無此專輯條目），正文請帶 120 至 180 字、只寫得出來源的部分。掛名一致。試聽覆核：previews.json 記 us 0→0、gb 1→1（探測回填的 1769144288 其實是《The Ice Man Cometh》系的條目，非本張）；依第 166 條打 lookup?id=136031 撈全目錄 29 張，沒有這張，**維持 unavailable**。**擋下策展層一處**：curatorWhy 寫〈For Your Precious Love〉是「他與 Curtis Mayfield 合寫」，Wikipedia 記的作者是 Arthur Brooks、Richard Brooks 與 Jerry Butler，沒有 Mayfield，未採用。"
+ },
+ {
+  "key": "desc2:Jerry Butler|He Will Break Your Heart",
+  "artist": "Jerry Butler",
+  "album": "He Will Break Your Heart",
+  "hook": "1975 年 Tony Orlando and Dawn 換個名字重錄，送上 Billboard Hot 100 冠軍。",
+  "note": "重心是同名曲的傳播。開頭止於 Dawn，接著寫他們 1975 年把它換成〈He Don't Love You (Like I Love You)〉，登 Billboard Hot 100 冠軍、蟬聯三週；換名字是 Orlando 向 Mayfield 徵得同意的→接原曲由 Butler、Calvin Carter 與 Curtis Mayfield 合寫，1960 年單曲，Hot 100 第 7 名、Cash Box Top 100 第 3 名，R&B 榜非連續七週冠軍，Mayfield 在旁唱和聲→接整張 Vee-Jay LP 1029、12 軌，沒有一軌到三分鐘。專輯層級的評論與榜位沒有來源，正文靠曲目與曲長撐。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 2a045742 的欄位：title「He Will Break Your Heart」、artist-credit「Jerry Butler」、first-release-date 1960、primary-type Album、secondary-types 空、轄下只有 1 個 release（US／Official）。",
+   "該唯一的 release 由 Vee-Jay Records 發行、編號 LP 1029、12 吋黑膠 12 軌：從同名曲〈He Will Break Your Heart〉2:49 到〈I Found A Love〉2:12。",
+   "同一 release 的其餘曲長：〈The Gift Of Love〉2:42、〈Teardrops From My Eyes〉2:33、〈Give Me Your Love〉2:36、〈Have A Good Time〉2:07、〈A Lonely Soldier〉2:57、〈Thanks To You〉2:42、〈Sweet Was The Wine〉2:06、〈Butterfly〉2:31、〈After The Laughter〉2:17、〈The Lights Went Out〉2:16——十二軌沒有一軌到三分鐘。",
+   "英文維基〈He Will Break Your Heart〉：這首由 Jerry Butler、Calvin Carter 與 Curtis Mayfield 合寫，Butler 錄唱、1960 年以單曲發行，最高在 Billboard Hot 100 第 7 名、Cash Box Top 100 第 3 名，並在美國 R&B 榜非連續地待了七週冠軍。",
+   "同條目：1960 年代這首被 Margie Singleton 與 Lulu 翻唱（兩人都改性別唱成〈She Will Break Your Heart〉），另有 The Righteous Brothers、Freddie Scott、Billy Fury、Bobby Vee、Lloyd Price、Ben E. King、The Merseybeats、Jackie Edwards 等人的版本。",
+   "同條目：1975 年 Tony Orlando and Dawn 把它改名為〈He Don't Love You (Like I Love You)〉重錄，5 月 3 日登上 Billboard Hot 100 冠軍、蟬聯三週，同年也在美國 adult contemporary 榜奪冠一週，後獲 RIAA 金唱片認證；改名是 Orlando 直接向 Mayfield 徵得同意的。",
+   "同條目：Joe Tex 曾以另一個男人的視角寫了一首回應歌〈I Will Never Break Your Heart〉。",
+   "英文維基〈Jerry Butler〉：Butler 單飛後的 Top 10 成績包括〈He Will Break Your Heart〉〈Find Another Girl〉〈I'm A-Telling You〉，三首都由同為 Impressions 成員的 Curtis Mayfield 共同寫作，Mayfield 並在其中唱和聲。",
+   "同條目：Butler 單飛後在 Billboard 流行榜與 R&B 榜累積超過 55 首上榜歌曲，2015 年入選 National Rhythm & Blues Hall of Fame；他 1985 至 2018 年擔任伊利諾州 Cook County 的民選委員。",
+   "Apple 藝人目錄回查：artistId 136031 名下 29 張專輯條目之中沒有《He Will Break Your Heart》這張碟；唯一同名的條目是 2025 年的重錄單曲《He Will Break Your Heart / Moon River (Rerecorded Version) - Single》(collectionId 1818293175)。"
+  ],
+  "sound": "",
+  "keyTracks": [
+   "He Will Break Your Heart",
+   "A Lonely Soldier",
+   "The Gift Of Love",
+   "Teardrops From My Eyes",
+   "I Found A Love"
+  ],
+  "researchNotes": "掛名一致。試聽覆核：previews.json 記 us/gb/ca 各 7→0、de 8→0、jp/fr 各 11→0、au 7→0，不是 NOQUERY；依第 166 條打 lookup?id=136031 撈全目錄 29 張，沒有這張碟（只有 2025 年的重錄單曲 1818293175），**維持 unavailable**。無 cleaned 標記。可用素材裡的專輯層級來源仍偏薄——Wikipedia 沒有這張碟的條目，同名曲條目與藝人條目撐起大部分事實，正文若要談整張的內容只能靠 MB 的曲目與曲長。"
+ },
+ {
+  "key": "desc2:Martha Reeves & the Vandellas|Come and Get These Memories",
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Come and Get These Memories",
+  "hook": "泰迪熊、唱片，連殘留的愛都要還回去——同名曲的歌詞這樣寫。",
+  "note": "重心是同名曲的歌詞與 H-D-H。開頭止於歌詞，接著寫 Martha Reeves 一邊翻自己的東西、一邊把前男友送的每一樣都還回去→接這是她們在 Gordy 的第二支單曲、第一支熱門，Billboard 流行單曲榜第 29 名、R&B 單曲榜第 6 名，也是 Holland-Dozier-Holland 第一支寫成熱門的錄音，兩邊合作到 1967 年他們離開 Motown→接伴奏是 The Funk Brothers：Benny Benjamin 鼓、James Jamerson 低音提琴；和聲 Rosalind Ashford 與 Annette Beard。「Motown 定型化製作的起點」勿寫。掛名照卡片作 Martha Reeves & the Vandellas。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group bc3c62c9 的欄位：title「Come and Get These Memories」、artist-credit「Martha and the Vandellas」、first-release-date 1963-06-28、primary-type Album、secondary-types 空、轄下只有 1 個 release（US／Official）。",
+   "該唯一的 release 由 Gordy 發行、編號 902、紙套包裝、12 吋黑膠 12 軌：從同名曲〈Come and Get These Memories〉2:25 到〈Old Love (Let's Try It Again)〉2:28；第 10 軌是〈Give Him Up〉2:30。",
+   "該 release 的十二軌 artist-credit 全寫成「Martha and the Vandellas」；其餘曲長為〈Moments (to Remember)〉2:32、〈This Is When I Need You Most〉2:22、〈A Love Like Yours (Don't Come Knocking Everyday)〉2:26、〈Tears on My Pillow〉2:55、〈To Think He Would Hurt Me〉2:50、〈There He Is (at My Door)〉2:30、〈I'll Have to Let Him Go〉2:47、〈Jealous Lover〉2:40。",
+   "英文維基〈Come and Get These Memories〉：這是 Motown 女聲團 Martha and the Vandellas 的作品，是她們在 Motown 旗下 Gordy Records 發的第二支單曲，也是她們的第一支熱門單曲，最高在 Billboard 流行單曲榜第 29 名、R&B 單曲榜第 6 名。",
+   "同條目：歌詞是主唱 Martha Reeves 一邊翻自己的東西、一邊把前男友送的每一樣都還回去——泰迪熊、唱片，還有「殘留的愛」。",
+   "同條目：這首也是 Holland-Dozier-Holland 這組作者兼製作搭檔第一支寫成熱門的錄音；到 1965 年底他們成為 Motown 最頂的創作團隊，並在轉去主攻 The Supremes 與 Four Tops 之前替 Vandellas 做出好幾首熱門，一直合作到 1967 年他們離開 Motown 為止。",
+   "同條目的名單：製作 Brian Holland 與 Lamont Dozier，作者 Brian Holland、Lamont Dozier 與 Edward Holland Jr.；主唱 Martha Reeves，和聲 Rosalind Ashford 與 Annette Beard；伴奏由 The Funk Brothers 擔任——Benny Benjamin 鼓、James Jamerson 低音提琴、Joe Hunter 鋼琴、Earl Van Dyke Wurlitzer 電鋼琴、Robert White 與 Eddie Willis 吉他、Andrew「Mike」Terry 上低音薩克斯風。",
+   "同條目：這首後來被 The Supremes（收在 1966 年《The Supremes A' Go-Go》、由 Mary Wilson 主唱）、Kim Weston 與 Bette Midler（2014 年《It's the Girls!》）唱過。",
+   "英文維基〈Martha and the Vandellas〉的專輯表把《Come and Get These Memories》(1963) 列在第一位，其後依序是《Heat Wave》(1963)、《Dance Party》(1965)、《Greatest Hits》(1966)、《Watchout!》(1966)、《Martha and the Vandellas Live!》(1967)、《Ridin' High》(1968)、《Sugar 'n' Spice》(1969)、《Natural Resources》(1970)、《Black Magic》(1972)。",
+   "英文維基〈Special Occasion (The Miracles album)〉：Smokey Robinson & the Miracles 1968 年那張裡的〈Give Her Up〉，最早是以〈Give Him Up〉之名出現在 Martha & the Vandellas 1963 年的《Come and Get These Memories》。",
+   "Apple us 條目 collectionId 1443650840：標題「Come Get These Memories」（少了 and）、掛名 Martha Reeves & The Vandellas、12 軌、releaseDate 1963-01-01、collectionExplicitness notExplicit、copyright 欄「A Motown Records Release; ℗ 1963 UMG Recordings, Inc.」，12 軌全部有 previewUrl；首軌條目名作〈Come and Get These Memories (Single Version)〉。"
+  ],
+  "sound": "依 Wikipedia：主唱 Martha Reeves、和聲 Rosalind Ashford 與 Annette Beard，伴奏是 The Funk Brothers——Benny Benjamin 的鼓、James Jamerson 的低音提琴、Joe Hunter 的鋼琴、Earl Van Dyke 的 Wurlitzer 電鋼琴、Robert White 與 Eddie Willis 的吉他，以及 Andrew「Mike」Terry 的上低音薩克斯風。",
+  "keyTracks": [
+   "Come and Get These Memories",
+   "Give Him Up",
+   "Tears on My Pillow",
+   "A Love Like Yours (Don't Come Knocking Everyday)",
+   "Jealous Lover"
+  ],
+  "researchNotes": "**推翻試聽 unavailable**：previews.json 記 us/gb/ca 各 11→0、jp/de/fr/au 各 12→0，不是 NOQUERY；依第 166 條打 lookup?id=13431501 撈全目錄 16 張，找到 us collectionId 1443650840，標題作「Come Get These Memories」（少了 and，所以 search 配不上），12 軌與 MB 原盤相同、全部有 previewUrl。無 cleaned 標記。**掛名不一致**：MB artist-credit 作「Martha and the Vandellas」（1963 年原盤的寫法），卡片作「Martha Reeves & the Vandellas」，Apple 作「Martha Reeves & The Vandellas」。這是同一組人的不同時期寫法，不是兩組人。**擋下策展層一處**：curatorWhy 說這張「常被視為 Motown 定型化製作方式的起點」，查不到來源，未採用；可寫的是 Wikipedia 直述的「H-D-H 第一支寫成熱門的錄音」。"
+ },
+ {
+  "key": "desc2:Martha Reeves & the Vandellas|Ridin' High",
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Ridin' High",
+  "hook": "Billboard 200 第 167 名，停留八週——她們當時名次最低的一張。",
+  "note": "重心是榜上的位置與班底更替。開頭止於名次，接著寫 1968 年進榜、停留八週，是她們倒數第二張進 Billboard 200 的專輯→接班底：Mickey Stevenson 與 H-D-H 都已不在，改由 Richard Morris 與詞曲作者 Sylvia Moy 撐起，擠出〈Love Bug Leave My Heart Alone〉與〈Honey Chile〉這她們最後兩支美國流行榜 Top 40→接封面原本拍的是 Reeves、Rosalind Ashford 與 Betty Kelly，發行前 Kelly 由 Reeves 的妹妹 Lois Reeves 取代，Lois 的照片直接裁切覆蓋上去、沒有重拍。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 222ae95b 的欄位：title「Ridin' High」、artist-credit「Martha Reeves & the Vandellas」、first-release-date 1968、primary-type Album、secondary-types 空、轄下只有 1 個 release（US／Official）。",
+   "該唯一的 release 由 Gordy 發行、編號 GLPS 926、紙套包裝、12 吋黑膠 12 軌：從〈I Promise to Wait My Love〉2:05 到〈Show Me the Way〉2:38。",
+   "該 release 的十二軌 artist-credit 全寫成「Martha Reeves & the Vandellas」；曲長為〈Honey Chile〉2:55、〈(There's) Always Something There to Remind Me〉3:00、〈Leave It in the Hands of Love〉2:37、〈Love Bug Leave My Heart Alone〉2:06、〈To Sir, With Love〉2:53、〈I Say a Little Prayer〉2:59。",
+   "英文維基〈Ridin' High (Martha and the Vandellas album)〉：這是 Motown 女聲團 1968 年在 Gordy 廠牌發行的專輯，收錄她們在錄音生涯裡最後兩支進美國流行榜前 40 的熱門——〈Love Bug Leave My Heart Alone〉與〈Honey Chile〉。",
+   "同條目：這是一連串「第一次」：第一張沒有已離開的製作人 William「Mickey」Stevenson 與 Holland–Dozier–Holland 幫忙的專輯，不過 Motown 仍在裡面放了一首 H-D-H 的〈Leave It In The Hands Of Love〉；也是第一張她們被掛名為 Martha Reeves and the Vandellas 的專輯。",
+   "同條目：專輯裡另有翻唱 Dionne Warwick 當時新歌的〈I Say a Little Prayer〉；製作找來 Richard Morris 與詞曲作者 Sylvia Moy，才擠出兩支熱門單曲，但這也是她們作為流行榜熱門製造者的尾聲——像 The Supremes 與 Four Tops 一樣，沒有 H-D-H 就停滯了，只是在 R&B 榜與英國仍有成績，直到 1973 年解散。",
+   "同條目：封面原本的拍攝是 Martha Reeves、Rosalind Ashford 與 Betty Kelly 三人，但專輯發行前 Kelly 被 Reeves 的妹妹 Lois Reeves 取代，最後印在封面上的是 Lois；為了不重拍，Lois 的照片是裁切覆蓋在 Betty Kelly 的位置上。這也是原始成員 Rosalind Ashford 參與的最後一張專輯，她在這張問世約一年後離團。",
+   "同條目：專輯在 1968 年 6 月 1 日進到 Billboard 200 第 167 名、停留八週，是她們當時名次最低的一張，也是她們倒數第二張進 Billboard 200 的專輯。",
+   "同條目的名單：主唱 Martha Reeves；和聲依曲目分別是 Rosalind Ashford、Lois Reeves、Betty Kelly 與 The Andantes；伴奏 The Funk Brothers。",
+   "Apple us 條目 collectionId 1443571643：掛名 Martha Reeves & The Vandellas、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia 名單：主唱 Martha Reeves，和聲依曲目分別由 Rosalind Ashford、Lois Reeves、Betty Kelly 與 The Andantes 擔任，伴奏是 The Funk Brothers。",
+  "keyTracks": [
+   "Honey Chile",
+   "Love Bug Leave My Heart Alone",
+   "I Promise to Wait My Love",
+   "I Say a Little Prayer",
+   "Forget Me Not"
+  ],
+  "researchNotes": "掛名：MB artist-credit「Martha Reeves & the Vandellas」與卡片完全相同（本組三張裡唯一一致的一張）；Apple 作「Martha Reeves & The Vandellas」。試聽探測 ready（us 1→1、collectionId 1443571643）。"
+ },
+ {
+  "key": "desc2:Martha Reeves & the Vandellas|Natural Resources",
+  "artist": "Martha Reeves & the Vandellas",
+  "album": "Natural Resources",
+  "hook": "〈I Should Be Proud〉唱的是越南，越戰高峰期被電台撤下歌單。",
+  "note": "重心是〈I Should Be Proud〉。開頭止於電台，接著寫這首 1970 年由 Henry Cosby、Pam Sawyer 與 Joe Hinton 寫作，被視為 Motown 第一支發行的抗議歌，早於同年的〈War〉數個月，也是這張的第一支單曲→接歌詞：敘事者聽到愛人在越南戰死而崩潰，周遭要她為那個「為她而戰」的人驕傲，她只想要人回來，並說那個化名 Private Johnny C. Miller 的男人是在「為社會的惡而戰」→接 Reeves 在 MSNBC 節目上說這首被許多電台撤下歌單，她自己有一個兄弟死於與越戰相關的事件→接該曲 R&B 榜第 45 名→接整張以當時流行曲的翻唱為主。「Motown 遷洛杉磯前最後幾張」勿寫。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 81b693dd 的欄位：title「Natural Resources」、artist-credit「Martha Reeves & the Vandellas」、first-release-date 1970-09-08、primary-type Album、secondary-types 空、轄下 2 個 release（US／Official 1970-09-08、XW／Official 2013-06-18 barcode 0602537424887）。",
+   "其中 1970-09-08 的 US／Official 那筆由 Gordy 發行、編號 GS952、紙套包裝、12 吋黑膠 12 軌：從〈Something〉2:52 到〈People Got to Be Free〉2:40，〈I Should Be Proud〉3:01 排在第 11 軌。",
+   "該 release 的十二軌 artist-credit 全寫成「Martha Reeves & the Vandellas」；其餘曲長為〈Easily Persuaded〉2:49、〈Didn’t We〉2:45、〈I’m in Love〉3:18、〈Love, Guess Who〉3:11、〈Everybody’s Talking〉2:55、〈Put a Little Love in Your Heart〉2:32、〈Hurt Is Over (Since I’ve Found You)〉3:02、〈Take a Look Around〉2:20、〈Won’t It Be So Wonderful?〉2:35——整張以翻唱當時流行曲為主。",
+   "英文維基〈Martha and the Vandellas〉的專輯表把《Natural Resources》列為 1970 年的作品，排在《Sugar 'n' Spice》(1969) 與《Black Magic》(1972) 之間。",
+   "英文維基〈I Should Be Proud〉：這是一首 1970 年的抗議歌，由 Henry Cosby、Pam Sawyer 與 Joe Hinton 寫作，由 Motown 女聲團 Martha and the Vandellas 錄唱（掛名為 Martha Reeves & the Vandellas）。",
+   "同條目：這首以 1970 年 2 月發行，被視為 Motown 第一支發行的抗議歌曲，早於同年 Edwin Starr〈War〉與 The Temptations〈Ball of Confusion〉數個月；它也是 Vandellas 這張《Natural Resources》LP 的第一支單曲。",
+   "同條目：歌詞裡的敘事者聽到愛人在越南戰死的消息而崩潰，周遭的人要她為那個「為她而戰」的人驕傲，她卻只想要人回來、不要那些榮譽，並直言那個化名為「Private Johnny C. Miller」的男人是在「為社會的惡而戰」。",
+   "同條目：Martha Reeves 在 MSNBC 節目《Headliners And Legends: Martha & The Vandellas》上說，這首因為反戰訊息在越戰高峰期被許多電台從歌單裡撤下；Reeves 自己對這首特別有感，因為她有一個兄弟死於與越戰相關的事件。這首最高只到 R&B 榜第 45 名。",
+   "同條目的名單：主唱 Martha Reeves，和聲 Sandra Tilley、Lois Reeves 與 The Andantes（Marlene Barrow、Jackie Hicks、Louvain Demps），伴奏 The Funk Brothers。",
+   "Apple us 條目 collectionId 1443795624：標題「Natural Resources」、掛名 Martha Reeves & The Vandellas、12 軌、collectionExplicitness notExplicit。"
+  ],
+  "sound": "依 Wikipedia〈I Should Be Proud〉的名單：主唱 Martha Reeves，和聲為 Sandra Tilley、Lois Reeves 與 The Andantes，伴奏是 The Funk Brothers。",
+  "keyTracks": [
+   "I Should Be Proud",
+   "Something",
+   "Everybody's Talking",
+   "Put a Little Love in Your Heart",
+   "Love, Guess Who"
+  ],
+  "researchNotes": "掛名：MB artist-credit 與卡片相同。試聽探測 ready（us 12→1、collectionId 1443795624）。Wikipedia 沒有這張專輯的獨立條目，專輯層級的來源只有〈Martha and the Vandellas〉的專輯表；其餘素材幾乎都來自單曲條目〈I Should Be Proud〉與 MB 的曲目。**擋下策展層一處**：curatorWhy 寫「是她們在 Motown 遷往洛杉磯前的最後幾張之一」，查不到來源，未採用。"
+ },
+ {
+  "key": "desc2:Boyz II Men|Evolution",
+  "artist": "Boyz II Men",
+  "album": "Evolution",
+  "hook": "同一年還出了一張西班牙語版《Evolución》，這是他們在 Motown 的最後一張。",
+  "note": "重心是兩個語言版本與這張的位置。開頭止於《Evolución》，接著寫西班牙語版拿下 Billboard Latin Music Award 的年度新人流行專輯獎→接班底仍是 Jimmy Jam and Terry Lewis 與 Babyface→接 1997 年 8 月的記者會上他們談壓力：前兩張合計在全球賣了將近 3000 萬張→接〈4 Seasons of Loneliness〉以第二名進 Billboard Hot 100，隔週登頂；〈A Song for Mama〉先出現在電影《Soul Food》→接首週 211000 張空降 Billboard 200 冠軍，只待一週。「第三張」勿寫，來源記第四張；製作班底勿列 Sean Combs。各國發行日不同，避開月日。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group 2cbc5101 的欄位：title「Evolution」、artist-credit「Boyz II Men」、first-release-date 1997-09-20、primary-type Album、secondary-types 空、轄下 9 個 release（JP 2、US 1、DE 1、AU 1、CA 2、XE 1、GB 1，全部 Official）。",
+   "該 release-group 的各國日期不同：JP 盤 1997-09-20（barcode 4988005204479）最早，US 盤 1997-09-23（barcode 731453081925），DE 盤 1997-10-03（barcode 731453082229）。",
+   "其中 1997-09-23 的 US／Official 那筆由 Motown 發行、編號 314530819-2、CD 一張 13 軌：從〈Doin’ Just Fine〉5:32 到〈Dear God〉4:58，〈4 Seasons of Loneliness〉4:52 與〈A Song for Mama〉5:03 分列第 3、5 軌。",
+   "英文維基〈Evolution (Boyz II Men album)〉：這是美國 R&B 四重唱 Boyz II Men 的第四張錄音室專輯，1997 年 9 月 23 日發行，是他們在 Motown Records 的最後一張；同時還發行了西班牙語版《Evolución》，該版拿下 Billboard Latin Music Award 的年度新人流行專輯獎。",
+   "同條目：1997 年 8 月 20 日他們開記者會談這張——這是繼 1994 年《II》之後的第一張專輯，前兩張合計在全球賣了將近 3000 萬張，壓力很大；這張仍找常合作的班底，包括 Jimmy Jam and Terry Lewis 與 Babyface。",
+   "同條目：首支單曲〈4 Seasons of Loneliness〉1997 年 9 月 8 日發行，以第二名進 Billboard Hot 100（前一名是 Mariah Carey 的〈Honey〉），隔週登頂，成為他們第五支、也是至今最後一支冠軍單曲與第六張白金單曲。",
+   "同條目：第二支單曲〈A Song for Mama〉先出現在電影《Soul Food》與其原聲帶，最高在 Hot 100 第 7 名、R&B 單曲榜第 1 名，讓 Boyz II Men 成為美國史上唯一擁有七張白金單曲的團體。",
+   "同條目：專輯以首週 211000 張直接空降並停在 Billboard 200 冠軍，同時也是 Billboard Top R&B/Hip-Hop Albums 冠軍（他們第三張登頂該榜的專輯），但只在冠軍位待了一週便快速下滑；在美國賣出 200 萬張、全球超過 400 萬張。",
+   "同條目：AllMusic 的 Stephen Thomas Erlewine 認為這張本該呈現「完全成熟」的 Boyz II Men，聽起來卻與大賣的《II》驚人地相似，他們的招牌聲音開始變成公式；《紐約時報》的 Jon Pareles 注意到他們往「電子聲景」擴張，但那些要顯得色情或現代的嘗試「很尷尬」。",
+   "同條目：宣傳期他們上了《The Rosie O'Donnell Show》《The Oprah Winfrey Show》《The Tonight Show with Jay Leno》等節目，9 月 23 日發行當晚在紐約 Virgin Megastore 簽名，1998 年 10 月赴日本與歐洲宣傳並展開 Evolution Tour。",
+   "Apple us 條目 collectionId 1440923061：掛名 Boyz II Men、collectionExplicitness notExplicit。"
+  ],
+  "sound": "",
+  "keyTracks": [
+   "4 Seasons of Loneliness",
+   "A Song for Mama",
+   "Doin' Just Fine",
+   "Can You Stand the Rain",
+   "Girl in the Life Magazine"
+  ],
+  "researchNotes": "掛名一致。試聽探測 ready（us 11→2、collectionId 1440923061）。**擋下策展層兩處**：(1) curatorWhy 寫「第三張錄音室專輯」，Wikipedia 記第四張；(2) curatorWhy 把 Sean「Puffy」Combs 列進製作班底，Wikipedia 只提 Jimmy Jam and Terry Lewis 與 Babyface，Combs 無來源，未採用。另外 curatorWhy 說這是「他們四人編制的最後一張冠軍專輯」，可用來源只支持「Motown 時期的最後一張」與「Billboard 200 冠軍」，正文照後者寫。"
+ },
+ {
+  "key": "desc2:Boyz II Men|Nathan Michael Shawn Wanya",
+  "artist": "Boyz II Men",
+  "album": "Nathan Michael Shawn Wanya",
+  "hook": "Universal 那紙短約期間，他們只交出了這一張 LP。",
+  "note": "重心是短約與自寫自製。開頭止於唯一一張，接著寫盤名就是四個人的名字，反映這張的企圖：大部分曲目由他們自己寫作與製作→接睽違三年，首週略少於 133000 張空降 Billboard 200 第 4 名，只在榜上待三週，到 2001 年 8 月賣出 686000 張；兩支單曲〈Pass You By〉與〈Thank You in Advance〉表現低於預期→接評論：AllMusic 的 Stephen Thomas Erlewine 稱這是他們第一張完全成人的專輯、收斂了人聲賣弄。「第四張」與「與 Motown 分手前最後一張」勿寫，來源記第五張、Universal 時期唯一一張；McCary 離團寫 2003 年。各國發行日不同，避開月日。",
+  "status": "full",
+  "facts": [
+   "MusicBrainz release-group a7f17acc 的欄位：title「Nathan Michael Shawn Wanya」、artist-credit「Boyz II Men」、first-release-date 2000-08-30、primary-type Album、secondary-types 空、轄下 3 個 release（JP／Official 2000-08-30 barcode 4988005251626、XE／Official 2000-09-12、US／Official 2000-09-12 barcode 601215928129）。",
+   "其中 2000-09-12 的 US／Official 那筆由 Universal Records 發行、編號 012 159 281-2、CD 一張 14 軌：從〈Beautiful Women〉4:09 到〈Do You Remember〉4:17。",
+   "同一 release 的其餘曲長：〈Step On Up〉4:54、〈Good Guy〉3:49、〈Bounce, Shake, Move, Swing〉4:19、〈What the Deal〉4:25、〈I Finally Know〉5:05、〈Pass You By〉4:26、〈Dreams〉3:47、〈I Do〉4:11、〈Thank You in Advance〉4:11、〈Never Go Away〉5:06、〈Lovely〉5:30、〈Know What You Want〉5:17。",
+   "英文維基〈Nathan Michael Shawn Wanya〉：這是 R&B 團體 Boyz II Men 在 2000 年的第五張專輯，也是他們與 Universal Records 短暫合約期間唯一發行的一張 LP；盤名反映了這張的企圖——與之前的作品不同，大部分曲目由 Boyz II Men 自己寫作與製作。",
+   "同條目：兩支單曲〈Pass You By〉與〈Thank You in Advance〉在排行榜上的表現都低於預期。",
+   "同條目：這是他們睽違三年的專輯，以首週略少於 133000 張的成績空降並停在 Billboard 200 第 4 名，只在榜上待三週；到 2001 年 8 月賣出 686000 張。",
+   "同條目：AllMusic 的 Stephen Thomas Erlewine 稱這是 Boyz II Men「第一張完全成人的專輯」，大多自寫自製，端出「濃郁的抒情曲與擺盪的嘻哈靈魂樂」，並收斂了人聲上的賣弄，是他們「至今最成熟」的一張；《洛杉磯時報》的 Connie Johnson 點名〈Beautiful Women〉與帶「懷舊 doo-wop 情懷」的抒情曲〈I Do〉，以及 Shep Crawford 寫的〈Thank You in Advance〉。",
+   "同條目：《娛樂週刊》的 Josh Tyrangiel 寫他們在這張「放掉抒情歌路數，換上成熟、可跳、偶爾甚至性感的曲子」；《The Stranger》的 Kris Adams 則指出他們是想搭上當時男孩團體浪潮的順風車，而那股浪潮的聲音本來就是 Boyz II Men 先做出來的。",
+   "英文維基〈Boyz II Men〉：這個 1985 年在費城成立的人聲和聲團體，目前是由男中音 Nathan Morris、男高音 Wanyá Morris 與男高音 Shawn Stockman 組成的三人編制；先前是四人，低音 Michael McCary 在 2003 年因健康因素離團。",
+   "Apple us 條目 collectionId 1443527057：掛名 Boyz II Men、collectionExplicitness notExplicit。"
+  ],
+  "sound": "",
+  "keyTracks": [
+   "Pass You By",
+   "Thank You in Advance",
+   "Beautiful Women",
+   "I Do",
+   "Bounce, Shake, Move, Swing"
+  ],
+  "researchNotes": "掛名一致。試聽探測 ready（us 11→1、collectionId 1443527057）。**擋下策展層三處**：(1) curatorWhy 寫「第四張錄音室專輯」，Wikipedia 記第五張；(2) 寫「與 Motown 分手前的最後一張四人作品」，Wikipedia 記與 Motown 分手的是前一張《Evolution》、這張是 Universal 時期唯一一張，說法不成立；(3) 寫「此後 Michael McCary 因健康因素退團」，Wikipedia 記 McCary 是 2003 年離團（與本張 2000 年之間隔了三年），時間關係要照來源寫、不要寫成緊接著。"
+ }
+]

@@ -19,6 +19,7 @@
 | listeners（Last.fm） | **本機** | 雲端擋 Last.fm（c-46 實測 3,793 張全 null） |
 | KV 寫入與逐字驗證 | **本機** | 需 CLOUDFLARE_API_TOKEN |
 | Firestore 寫入、published gate、上架開關 | **本機** | 需憑證；且要等配額窗口 |
+| `build-genre-tree.mjs --write`（類型挑片 v2 的曲風樹） | **本機** | 要 `data/rawgenres-cache.json`，那份快取不在 git 裡、只能靠 `--pull` 從 KV 重建（雲端不碰 KV）；而且它讀的是 `seed_cards.json`，新卡要先上架才有東西可算 |
 
 ## 開雲端工作階段的前置設定（第一次必做）
 
@@ -104,6 +105,9 @@ desc-restyle 產物另放 batch-progress/<批名>/desc/
 4. 封面 → UPC → 試聽 → listeners → apex 補證（只補 pending-local 名單）
 5. KV bulk put ＋ verify-kv 逐字驗證
 6. Firestore card_catalog → published gate → seed/apex 上架開關 → build-seed-genres
+   → **`node scripts/build-genre-tree.mjs --write`**（2026-09-04 新增；重建 `genre-tree.json` 與
+   `card-subgenres.json`。**要在 seed 上架之後跑**，否則新卡不在 `seed_cards.json` 裡、算不進樹。
+   `data/rawgenres-cache.json` 若過期，先跑一次 `--pull`——**這一步只有本機做得到**，需 CLOUDFLARE_API_TOKEN）
 7. progress.json、PROJECT_MEMORY.md、merge 進 main
 
 ## 兩個對話怎麼串聯

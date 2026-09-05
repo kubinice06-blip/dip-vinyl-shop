@@ -1,0 +1,1042 @@
+[
+ {
+  "key": "desc2:Hank Williams|Hank Williams Sings",
+  "artist": "Hank Williams",
+  "album": "Hank Williams Sings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 364c2c37 的欄位：title「Hank Williams Sings」、artist-credit「Hank Williams with His Drifting Cowboys」、first-release-date 1949、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 US／XW Official——1949 US（8 軌分 4 片，廠牌欄 MGM Records，編號 30453／30454／30455／30456）、1951 US（8 軌 1 片，MGM Records E 107）、1952 US（8 軌 1 片，MGM Records E107）、2021-11-05 XW（8 軌，Mercury Nashville，標題印成《Sings》）。",
+    "src": "https://musicbrainz.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6"
+   },
+   {
+    "f": "該 release-group 的 1952 年 release 05fefa8c 欄位：1952、US、status Official、廠牌 MGM Records、編號 E107、載體 10\" Vinyl、8 軌。逐軌曲名依序為 A1〈I Saw the Light〉A2〈A Mansion on the Hill〉A3〈Six More Miles〉A4〈Wedding Bells〉B1〈Lost Highway〉B2〈I've Just Told Mama Goodbye〉B3〈Wealth Won't Save Your Soul〉B4〈A House Without Love〉。",
+    "src": "https://musicbrainz.org/release/05fefa8c-5571-4dbd-b730-58d54e21e1ec"
+   },
+   {
+    "f": "Discogs master 435297 的欄位：title「Hank Williams Sings」、掛名「Hank Williams With His Drifting Cowboys」、year 1952，曲目 8 首、A／B 兩面各 4 首，曲序與 MB E107 那一筆逐軌相同。",
+    "src": "https://api.discogs.com/masters/435297"
+   },
+   {
+    "f": "英文維基〈Hank Williams Sings〉記：這是 Hank Williams 的首張專輯，MGM Records 於 1951 年 11 月 9 日發行；收錄的錄音來自 1946 至 1949 年間的錄音期，製作人 Fred Rose 從先前銷路不佳的單曲裡挑曲，傳記作者 Colin Escott 的說法是「Rose used Hank's first album as a dump site for oddball tracks that hadn't sold elsewhere」。同條目記這張同時以三種規格發行：十吋 LP、四張 45 轉的成套裝、四張 78 轉的成套裝，並且沒有進榜。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams_Sings"
+   },
+   {
+    "f": "同一條目記：八首裡有五首由 Williams 自己創作；唯一真正的暢銷曲是〈Wedding Bells〉（1949 年最高第 2 名），〈A Mansion on the Hill〉1948 年底最高只到第 12 名，其餘各曲（多為 B 面）都未進榜；〈Wealth Won't Save Your Soul〉原是 1947 年 4 月他轉入 MGM 之前為 Sterling Records 錄的、當時作為他的第二張單曲發行。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams_Sings"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1591133640 的 lookup 欄位：artistName「Hank Williams」、collectionName「Sings」、releaseDate 1951-11-09、trackCount 8、copyright「A Mercury Nashville Release; ℗ 1951 UMG Recordings, Inc.」；八軌曲名與曲序與 MB E107 逐軌相同，八軌皆帶 previewUrl。逐軌秒數依序為 166／154／168／177／164／177／168／176。",
+    "src": "https://itunes.apple.com/lookup?id=1591133640&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "首張專輯的八首，是製作人從賣不動的舊單曲裡挑出來的",
+   "同一批曲目當年分三種規格出：十吋唱片、四張 45 轉、四張 78 轉"
+  ],
+  "sound": "Apple us 1591133640 的八軌逐軌秒數依序為〈I Saw The Light〉166、〈Mansion On The Hill〉154、〈Six More Miles (To The Graveyard)〉168、〈Wedding Bells〉177、〈Lost Highway〉164、〈I've Just Told Mama Goodbye〉177、〈Wealth Won't Save Your Soul〉168、〈A House Without Love〉176——八軌都落在兩分半到三分之間，是 78 轉單曲時代的長度規格被原封搬進十吋唱片（Apple lookup 曲長欄；MB E107 那一筆未填曲長）。",
+  "keyTracks": [
+   "I Saw the Light",
+   "Lost Highway",
+   "Wedding Bells"
+  ],
+  "status": "full",
+  "yearVerified": "四說：MB release-group first-release-date 記 1949（其下確有一筆 1949 US Official、8 軌分 4 片、編號 MGM 30453–30456 的成套裝）、Apple releaseDate 與英文維基都記 1951-11-09、Discogs master 435297 記 1952、MB 另有一筆 1952 US Official 的 MGM E107 十吋盤。卡單取 1952，對應的是 MB／Discogs 都有具體記載的十吋 LP（E107）那一版；1951 那一版在 MB 上也是 8 軌 E 107，與 1952 那筆的差別 MB 沒有交代。四說各有具體來源，屬第 141 條「兩個資料庫各有一筆具體記載且互相矛盾」的形狀，**卡單值不動、行文不得正面斷言發行年**（第 18／46 條）。可用的錨點是維基給的錄音期 1946–1949，以及〈Wedding Bells〉1949 年最高第 2 名這兩個有來源的時間點。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。改打藝人頁 lookup?id=179722&entity=album&limit=200&country=us（Hank Williams，us 回 43 張、gb 回 45 張）後在清單裡看到 collectionId **1591133640《Sings》**，再以 lookup?id=1591133640&entity=song 覆核：8 軌、曲名與曲序與 MB 1952 年 E107 十吋盤逐軌相同、八軌皆有 previewUrl、℗1951 UMG。這是第 166 條「search 端點與目錄端點給出不同的世界」的又一例——Apple 上這張的盤名去掉了藝人名只作《Sings》，用卡單盤名去 search 查不到。建議探測檔補：ready／us／1591133640／8 軌。\n盤名與掛名：Apple 作《Sings》、MB／Discogs 作《Hank Williams Sings》，掛名 MB 與 Discogs 都帶 With His Drifting Cowboys、Apple 只作 Hank Williams，三種寫法都要進去重比對（策展層已寫進 queryAlias，正確）。\n**擋下策展層說法**：curatorWhy 稱「MGM 到 1950 年代初才把既有錄音改以 10 吋 LP 出版，E-107 就是那個轉換的第一筆」——維基只支持「這是他的首張專輯」，並且明寫這張同時以十吋 LP、45 轉四張裝、78 轉四張裝三種規格出，沒有「十吋 LP 化的第一筆」這個排序陳述；MB 那筆 1949 年的 4 片裝（編號 30453–30456）反而是同一批曲目的更早形態。序數說法未寫進 facts。\ncuratorWhy 另稱「Apple 條目 collectionId 1591133640 八軌，首軌〈I Saw the Light〉」——這一項實測正確。"
+ },
+ {
+  "key": "desc2:Hank Williams|Ramblin' Man",
+  "artist": "Hank Williams",
+  "album": "Ramblin' Man",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b9e595aa 的欄位：title「Ramblin' Man」（彎撇）、artist-credit「Hank Williams」、first-release-date 1955、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1955 US（12 軌，MGM Records E 3219）、1958 US（12 軌，MGM Records E3219）、2021-11-05 XW（12 軌，Mercury Nashville）。",
+    "src": "https://musicbrainz.org/release-group/b9e595aa-b513-4d0a-b5f9-a1d2a167a679"
+   },
+   {
+    "f": "該 release-group 的 1955 年原盤 release 09c63f7b 欄位：1955、US、status Official、廠牌 MGM Records、編號 E 3219、載體 12\" Vinyl、12 軌。逐軌曲名依序為 A1〈Ramblin' Man〉A2〈My Son Calls Another Man Daddy〉A3〈I Can't Escape From You〉A4〈Nobody's Lonesome for Me〉A5〈I Can't Help It (If I'm Still in Love with You)〉A6〈There'll Be No Tear Drops Tonight〉B1〈Lonesome Whistle〉B2〈I Just Don't Like This Kind of Livin'〉B3〈Take These Chains From My Heart〉B4〈Why Don't You Love Me〉B5〈My Heart Would Know〉B6〈You're Gonna Change (Or I'm Gonna Leave)〉。",
+    "src": "https://musicbrainz.org/release/09c63f7b-e1ec-4a6e-8053-2eedf808cd01"
+   },
+   {
+    "f": "Discogs master 274766 的欄位：title「Ramblin' Man」、掛名 Hank Williams、year 1955，曲目 12 首、A／B 兩面各 6 首，曲序與 MB 的 E 3219 逐軌相同。",
+    "src": "https://api.discogs.com/masters/274766"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1592563692 的 lookup 欄位：artistName「Hank Williams」、collectionName「Ramblin' Man (Undubbed Edition)」、releaseDate 1955-08-01、trackCount 12、copyright「A Mercury Nashville Release; ℗ 2021 UMG Recordings, Inc.」；十二軌曲名與曲序與 MB 的 E 3219 逐軌相同，十二軌皆帶 previewUrl。逐軌秒數依序為 184／157／138／153／146／169／148／169／157／146／148／178。",
+    "src": "https://itunes.apple.com/lookup?id=1592563692&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "英文維基〈Hank Williams〉記：Hiram「Hank」Williams 生於 1923 年 9 月 17 日、卒於 1953 年 1 月 1 日；他有 55 首單曲進過 Billboard Country & Western Best Sellers 榜前十，其中 5 首是身後發行、12 首曾登上第一名。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams"
+   },
+   {
+    "f": "英文維基的〈Ramblin' Man〉消歧義頁把「Ramblin' Man」（Hank Williams song）記為 1951 年的曲子，並另外列出 2014 年 Hank Williams III 的同名專輯《Ramblin' Man》與 The Allman Brothers Band 1992 年的同名精選——同一串字在唱片目錄上至少對應到祖孫兩代與另一支樂團。",
+    "src": "https://en.wikipedia.org/wiki/Ramblin%27_Man"
+   }
+  ],
+  "hookCandidates": [
+   "十二首都是他生前錄的，唱片本身是他死後兩年才編出來的",
+   "同一個盤名在唱片目錄上對應到祖孫兩代與另一支樂團"
+  ],
+  "sound": "Apple us 1592563692（Undubbed Edition，曲序與 MB 的 1955 年 MGM E 3219 逐軌相同）的十二軌秒數依序為〈Ramblin' Man〉184、〈My Son Calls Another Man Daddy〉157、〈I Can't Escape From You〉138、〈Nobody's Lonesome For Me〉153、〈I Can't Help It (If I'm Still In Love With You)〉146、〈There'll Be No Teardrops Tonight〉169、〈(I Heard That) Lonesome Whistle〉148、〈I Just Don't Like This Kind Of Living〉169、〈Take These Chains From My Heart〉157、〈Why Don't You Love Me〉146、〈My Heart Would Know〉148、〈You're Gonna Change (Or I'm Gonna Leave)〉178——最長的是開場的標題曲，其餘十一軌沒有一首滿三分鐘（Apple lookup 曲長欄；MB E 3219 那一筆未填曲長）。「Undubbed」指的是這一版拿掉了後製加上去的配樂，與原盤是同一批錄音的不同混音。",
+  "keyTracks": [
+   "Ramblin' Man",
+   "Take These Chains From My Heart",
+   "I Can't Help It (If I'm Still in Love with You)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1955 與 MB first-release-date 1955、Discogs master 274766 的 1955 三方一致，MB 轄下最早的一筆 release 也是 1955 年的 MGM E 3219，無分歧。Apple 那一筆的 releaseDate 1955-08-01 同樣落在 1955，只是它標的是 2021 年重新混音的 Undubbed Edition（℗2021），日期屬沿用原盤年、依第 77 條只當訊號。Williams 卒於 1953-01-01（英文維基），本張的發行年在他身後，行文若要提「身後發行」是有來源的。",
+  "notes": "**推翻探測層配對——這是配到別的藝人**：探測記 ready／us／collectionId **815502171**／8 軌／appleTitle「Ramblin' Man」／appleYear 2014。實測 lookup?id=815502171 回的是 **artistName「Hank Williams III」、℗2014 Curb Records、artistId 1253457** 的 8 軌專輯（曲目含〈Fearless Boogie〉〈Marijuana Blues〉〈Runnin' & Gunnin'〉），是孫子的碟，與本卡無關。**這個 collectionId 一定要從探測檔換掉，不得當成本張的固定試聽來源。**\n正解是 **us collectionId 1592563692《Ramblin' Man (Undubbed Edition)》**：artistId 179722（本人）、12 軌、曲名與曲序與 MB 1955 年 MGM E 3219 逐軌相同、十二軌皆有 previewUrl、notExplicit。策展層在 curatorRisk 裡本來就點名了這一筆並註明「屬同一張碟的不同混音而非別碟」——**策展層是對的，錯的是探測層**（第 141 條的形狀：只看 Apple search 回的第一筆就下判斷）。Undubbed Edition 屬同一張碟的不同混音，試聽可用，行文不得把它寫成另一張唱片。\n跨代撞名要往下游傳：Hank Williams（artistId 179722）／Hank Williams, Jr.／Hank Williams III 三個實體在 Apple 上都有《Ramblin' Man》相關條目，字串比對必配錯，去重與試聽都要用 artistId 或 MBID 釘。\n**擋下策展層說法**：curatorWhy 稱「E-3219 是這一批裡最常被當成獨立作品看待的一張」與「它把〈Ramblin' Man〉這一路較晚期、較陰暗的錄音收在一起，與同廠同期的宗教曲輯、幽默曲輯分開發行」——兩句都查不到出處（MB 只給曲目與年份，Discogs 只給版本欄位，英文維基沒有本張的條目），均未寫進 facts。curatorWhy 另稱「1953 年 Hank Williams 過世後，MGM 以 12 吋 LP 規格重新編排他的錄音」——過世年份 1953 有維基佐證、本張是 1955 年 12 吋盤也有 MB／Discogs 佐證，這一句成立。"
+ },
+ {
+  "key": "desc2:Hank Williams|Hank Williams as \"Luke the Drifter\"",
+  "artist": "Hank Williams",
+  "album": "Hank Williams as \"Luke the Drifter\"",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bda516f0 的欄位：title「Hank Williams as “Luke the Drifter”」、artist-credit「Hank Williams as Luke the Drifter」、first-release-date 1955、primary-type **Album**、secondary-types [Compilation]、轄下 2 個 release 皆 Official——1955 US（12 軌，廠牌欄 MGM Records、編號 E203、載體 12\" Vinyl）與 2021-11-05 XW（14 軌，Mercury Nashville，標題去掉引號）。",
+    "src": "https://musicbrainz.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1"
+   },
+   {
+    "f": "該 release-group 的 1955 年 release cf3b22e9 的 12 軌曲序為 A1〈Pictures From Life's Other Side〉A2〈Men With Broken Hearts〉A3〈Help Me Understand〉A4〈Too Many Parties and Too Many Pals〉A5〈Why Don't You Make Up Your Mind?〉A6〈I've Been Down That Road Before〉B1〈Be Careful of Stones That You Throw〉B2〈I Dreamed About Mama Last Night〉B3〈The Funeral〉B4〈Beyond the Sunset〉B5〈Just Waitin'〉B6〈Everything's Okay〉。",
+    "src": "https://musicbrainz.org/release/cf3b22e9-fbf2-42a5-b958-f6a909106698"
+   },
+   {
+    "f": "Discogs master 396408 的欄位：title「Hank Williams As Luke The Drifter」、掛名「Hank Williams, Luke The Drifter」、year 1955、main_release 3894357（1955 US、LP、MGM Records、編號 E3267），曲目 12 首、曲序與 MB 的 1955 年那筆逐軌相同。",
+    "src": "https://api.discogs.com/masters/396408"
+   },
+   {
+    "f": "同一個 Discogs master 的版本清單顯示，最早的一批版本都是 **1953** 年的十吋盤：US 的 MGM E-203（10\"，另有一筆同編號的 78 轉成套裝，編號 203）、Canada 的 E-203、Australia 的 M-G-M 01 119、UK 的 M-G-M D 119；十二吋的 E3267 要到 1955 年才出現（US 3894357、Canada 9416553）。1961 年 MGM 以 E3927 用《Luke The Drifter》的短盤名再發。",
+    "src": "https://api.discogs.com/masters/396408/versions?per_page=50"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1884151486 的 lookup 欄位：artistName「Hank Williams」、collectionName「Hank Williams As Luke The Drifter (Expanded Edition)」、releaseDate 1953-03-02、trackCount 14、copyright「A Mercury Nashville Release; This Compilation ℗ 2001 UMG Recordings, Inc.」，十四軌皆帶 previewUrl。十四軌之中包含 MB 1955 年那筆的十二軌全數（〈Why Don't You Make Up Your Mind?〉在 Apple 上作〈Please Make Up Your Mind〉），另多出〈No, No Joe〉與〈Ramblin' Man〉兩軌。",
+    "src": "https://itunes.apple.com/lookup?id=1884151486&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "Discogs 上 Luke the Drifter 這個掛名另有兩張 1959 年的 7 吋 45 轉 EP 續集：master 864643《Hank Williams As Luke The Drifter (Vol. 2)》（MGM X1643）與 master 3203442《Hank Williams As Luke the Drifter (Vol. 3)》（MGM、Loew's Incorporated，X1644）；1955 年另有 master 1199143 的 7 吋 EP 版（MGM X1165）。",
+    "src": "https://api.discogs.com/database/search?q=Hank+Williams+Luke+the+Drifter&type=master"
+   }
+  ],
+  "hookCandidates": [
+   "同一位歌手在同一家廠牌用兩個名字發片，勸世那一半掛的是 Luke the Drifter",
+   "十二首裡有整整一面是說白體，不是唱的"
+  ],
+  "sound": "Apple us 1884151486 的十四軌秒數依序為 173／192／178／181／181／180／187／182／172／178／162／172／148／184——十四軌沒有一首超過三分半，最短的〈No, No Joe〉148 秒、最長的〈Men With Broken Hearts〉192 秒，彼此的差距不到一分鐘（Apple lookup 曲長欄；MB 與 Discogs 對本張的曲目都未填曲長，故此處只用 Apple 的數字）。",
+  "keyTracks": [
+   "Pictures From Life's Other Side",
+   "Men With Broken Hearts",
+   "Be Careful of Stones That You Throw"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1955 對應的是十二吋的 MGM E3267（Discogs master 396408 的 main_release 與 MB 1955 年那筆都指這一版）。但 Discogs 的版本清單顯示**這張碟最早的形態是 1953 年的十吋 MGM E-203**（US、Canada 各有，另有同編號的 78 轉成套裝，UK／Australia 同年亦有各自的十吋版），Apple 的 releaseDate 1953-03-02 與那一版對得上——所以 Apple 那個「1953」不是第 77 條那種數位重製日期的漂移，而是指向另一個更早的實體版本。MB 自己把兩者混在同一筆上（載體欄寫 12\" Vinyl、編號欄卻寫 E203、日期寫 1955）。兩個年份各有具體壓片證據，屬第 141 條「兩個資料庫各有一筆具體記載且互相矛盾」的形狀：**卡單值 1955 不動，行文不得正面斷言發行年**，可用的錨點是「十吋版與十二吋版是兩個年份的兩種規格」這件有來源的事。",
+  "notes": "§5.6 判準（第 167 條）：primary-type 是 **Album**、secondary-types 才是 [Compilation]，依明文照一般 Album 寫、`releaseType` 填 Album、例外欄位留空——策展層已這樣處理，正確。\n試聽覆核：探測記 ready／us／1884151486／14 軌／appleYear 1953。逐項覆核結論是 **加曲版、不是二合一，維持 ready**——依第 140 條的兩項判準：(a) MB 1955 年原盤的十二軌**全數**出現在 Apple 那十四軌裡；(b) 多出來的〈No, No Joe〉與〈Ramblin' Man〉兩軌都是 Luke the Drifter 這個掛名自己的錄音（〈Ramblin' Man〉1951 年即以 Luke the Drifter 名義發過單曲，見同批《Ramblin' Man》卡的維基來源），**不是別張專輯的曲目整段搬進來**。行文不得把這兩軌當成原盤曲目。\n曲序要注意（第 157 條）：Apple 的十四軌**曲序與原盤 LP 不同**（原盤 A5／A6 被排到第 9、10 軌，原盤 B1–B4 被提到第 5–8 軌），但**第一軌兩邊同為〈Pictures From Life's Other Side〉**，固定試聽取首軌不會取錯。\n**擋下策展層說法**：curatorWhy 稱「當年單獨編號發行以免點唱機業者誤買」——這個說法在 MB、Discogs、英文維基三處都查不到出處，未寫進 facts；行文不得寫發行動機。curatorWhy 另稱「Luke the Drifter 是 Hank Williams 在 MGM 用的另一個發行身分，專門放勸世與朗誦體的曲目」——「另一個發行掛名」有 MB artist-credit 與 Discogs 掛名欄佐證（兩處都把 Luke the Drifter 寫進掛名），但「專門放勸世與朗誦體」查不到出處，facts 只寫得到曲名。\n**更正策展層一處欄位**：curatorRisk／label 欄寫 catno E-3267，Discogs main_release 確為 E3267，但 **MB 那筆 1955 年 release 的編號欄寫的是 E203**（那其實是 1953 年十吋版的編號）。兩個編號指的是兩種規格，下游若要寫編號請寫「十吋 E-203／十二吋 E-3267」，不要只寫一個。\ncuratorRisk 稱「同系列另有 Vol.2（1959 MGM X1643）與 Vol.3（X1644），MB 未建 release-group，Discogs 有」——實查 Discogs 兩筆都在（master 864643／3203442），且都是 7 吋 45 轉 EP 不是 LP，這一項成立且已寫進 facts。"
+ },
+ {
+  "key": "desc2:Woody Guthrie|Struggle",
+  "artist": "Woody Guthrie",
+  "album": "Struggle",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4d97dcf0 的欄位：title「Struggle」、artist-credit「Woody Guthrie」、first-release-date 1945、primary-type Album、secondary-types 空陣列、轄下 5 個 release 全數 Official——1945 US《Documentary #1: Struggle》（**6 軌分 3 片**，廠牌欄 Asch Records、編號 360）、1976 US（12 軌，Folkways Records FA 2485）、1990 GB（12 軌，Special Delivery SPDCD 1034）、1992 US（12 軌，Smithsonian Folkways SFW40025）、另一筆無日期 US（12 軌，Smithsonian Folkways CD SF 40025）。",
+    "src": "https://musicbrainz.org/release-group/4d97dcf0-b59e-3515-9bf7-df988e99c758"
+   },
+   {
+    "f": "1945 年那筆 release 593adae8 的載體是三張 10\" Shellac（78 轉），每片兩軌共 6 軌：片一〈Buffalo Skinners〉203 秒／〈Pretty Boy Floyd〉189 秒，片二〈Ludlow Massacre〉214 秒／〈1913 Massacre〉220 秒，片三〈Lost John〉177 秒／〈Union Burying Ground〉188 秒。",
+    "src": "https://musicbrainz.org/release/593adae8-35a8-4458-a988-dd333681fc5f"
+   },
+   {
+    "f": "1976 年的 Folkways FA 2485（MB release 7f8bc8aa）是 12\" Vinyl、12 軌：A 面〈Struggle Blues〉125／〈A Dollar Down and a Dollar a Week〉100／〈Get Along Little Doggies〉185／〈Hang Knot〉138／〈Waiting at the Gate〉173／〈The Dying Miner〉178，B 面〈Union Burying Ground〉186／〈Lost John〉174／〈Buffalo Skinners〉197／〈Pretty Boy Floyd〉187／〈Ludlow Massacre〉213／〈1913 Massacre〉215——1945 年那 6 首全部排在 B 面，A 面 6 首是後加的。",
+    "src": "https://musicbrainz.org/release/7f8bc8aa-3dc3-3c0f-895a-d3b14b4d72fa"
+   },
+   {
+    "f": "英文維基〈Struggle (Woody Guthrie album)〉引 1976 年 LP 內附十二頁小冊裡 Folkways 主事者 Moses Asch 自己寫的序：「This album came about this way: It was originally called 'STRUGGLE: DOCUMENTARY #1' and **I issued it in 1946** on ASCH RECORDS. I had recorded the 6 songs, Pretty Boy Floyd, Buffalo Skinners, Union Burying Ground, Lost John, Ludlow Massacre, and The 1913 Massacre, on Woody's insistence that there should be a series of records depicting the struggle of working people...」；同段並記其餘曲目取自 Asch 在 ASCH、DISC、FOLKWAYS 三家廠牌期間對 Guthrie 的錄音。",
+    "src": "https://en.wikipedia.org/wiki/Struggle_(Woody_Guthrie_album)"
+   },
+   {
+    "f": "同一條目記：1976 年的 LP 編號 FA 2485、1990 年出 CD；部分曲目由 Cisco Houston 與 Sonny Terry 伴奏；封面美術是 David Stone Martin；唱片獻給 Marjorie Guthrie 與 Pete Seeger；小冊收錄全部歌詞與多首曲子的來歷。",
+    "src": "https://en.wikipedia.org/wiki/Struggle_(Woody_Guthrie_album)"
+   },
+   {
+    "f": "Discogs master 279605 的欄位：title「Struggle」、掛名 Woody Guthrie、year 1976、main_release 2478976，曲目 12 首、A／B 兩面各 6 首，曲序與 MB 的 FA 2485 逐軌相同。",
+    "src": "https://api.discogs.com/masters/279605"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 86393036 的 lookup 欄位：artistName「Woody Guthrie」、collectionName「Struggle」、releaseDate 1976-01-01、trackCount 12、copyright「℗ 1990 Smithsonian Folkways Recordings」；十二軌曲名與曲序與 MB 的 FA 2485 逐軌相同，十二軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=86393036&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "最早的形態是三張 78 轉、一共六首，一面一首",
+   "Asch 說這套碟是 Guthrie 自己堅持要做的：一系列講勞動者處境的唱片"
+  ],
+  "sound": "MB 的 1976 年 Folkways FA 2485 逐軌曲長：A 面〈Struggle Blues〉125 秒、〈A Dollar Down and a Dollar a Week〉100 秒、〈Get Along Little Doggies〉185 秒、〈Hang Knot〉138 秒、〈Waiting at the Gate〉173 秒、〈The Dying Miner〉178 秒；B 面〈Union Burying Ground〉186 秒、〈Lost John〉174 秒、〈Buffalo Skinners〉197 秒、〈Pretty Boy Floyd〉187 秒、〈Ludlow Massacre〉213 秒、〈1913 Massacre〉215 秒。最短的〈A Dollar Down and a Dollar a Week〉一分四十秒，最長的〈1913 Massacre〉三分三十五秒（MB release 7f8bc8aa 曲長欄）。維基記部分曲目由 Cisco Houston 與 Sonny Terry 伴奏，但沒有指名是哪幾首，行文不得把伴奏指派到特定曲子。",
+  "keyTracks": [
+   "1913 Massacre",
+   "Ludlow Massacre",
+   "Pretty Boy Floyd"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1945。實查有**四說**：(a) MB release-group first-release-date 1945，其下確有一筆 1945 US Official 的《Documentary #1: Struggle》（Asch Records 360，三張 78 轉共 6 軌）；(b) **Moses Asch 本人在 1976 年 LP 的小冊裡寫的是「I issued it in 1946 on ASCH RECORDS」**（英文維基引用），與 MB 差一年，而且這是廠牌主事者的自述、強度高於資料庫欄位；(c) Discogs master 279605 記 1976；(d) Apple releaseDate 1976。卡單的 1945 對應 (a)，但 (b) 直接與它衝突。依第 127 條附（c-78）「舊值有來源、新值也有來源、兩者衝突時是標註爭議而不是改值」——**卡單值不動，`risk` 與此處記下 1945／1946 兩說，行文不得正面斷言最初發行年**（第 18／46 條）。另外要分清兩件事：1945／1946 說的是那套 6 首的 Asch 78 轉；1976 是曲目擴成 12 首的 Folkways FA 2485，兩者不是同一張碟的不同印次，是**內容不同的兩個版本**。",
+  "notes": "試聽覆核：探測記 ready／us／86393036／12 軌／appleYear 1976。逐項覆核**維持 ready**，但要標明版本——Apple 那一筆是 **1976 年 Folkways FA 2485 的 12 軌版**（曲名與曲序與 MB 該筆逐軌相同、℗1990 Smithsonian Folkways），**不是卡單年份對應的 1945 年 Asch 6 軌 78 轉套裝**。依第 140 條的判準這不是二合一（多出來的 6 首不是別張專輯的曲目，是同一位藝人同一批 Asch／Disc／Folkways 錄音的加曲，Asch 的小冊自己交代了來源），但**行文提到曲目時只能用 12 軌那一版的曲名，不得說「這張碟有幾首」而不指版本**。原盤軌數兩個都有來源：1945 版 6 軌、1976 版 12 軌，兩個數字都可寫，但必須各自帶版本。\n**擋下策展層說法**：curatorWhy 稱「Woody Guthrie 為 Moses Asch 錄的成套『documentary』唱片第一號，主題是勞動與罷工事件，與《Dust Bowl Ballads》的沙塵暴主題成對」——前半（documentary #1、勞動者主題）有 Asch 自述佐證，已寫進 facts；「與《Dust Bowl Ballads》成對」查不到任何出處，未寫進 facts，行文不得寫成兩張碟是一組。curatorWhy 另稱「1976 年 Folkways FA 2485 是同一套錄音的再發」——**這句不精確且已被證據推翻**：FA 2485 是 12 軌，1945 那套只有 6 軌，多出來的六首依 Asch 自述來自別的年份的錄音，**不是「同一套錄音的再發」而是擴編**。下游不得沿用「再發」這個說法。\ncuratorRisk 稱「MB 轄下 5 個 release 全數 Official（US ×4、GB ×1）」——實查相符。"
+ },
+ {
+  "key": "desc2:Woody Guthrie|Library of Congress Recordings",
+  "artist": "Woody Guthrie",
+  "album": "Library of Congress Recordings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0e25657d 的欄位：title「Library of Congress Recordings」、artist-credit「Woody Guthrie」、first-release-date 1964、primary-type Album、secondary-types 空陣列、轄下 5 個 release——1964 US Official（29 軌分 3 片，Elektra，編號 EKL-271/272）、1988 US Official（29 軌分 3 片，Rounder，編號 RounderCD 1041/2/3）、2015-07-31 Official（29 軌分 3 片，Rounder）、一筆無日期 XW Official（29 軌分 3 片）、以及一筆 2019 年國別未填的 **Bootleg**《Library of Congress Recordings (HD remastered)》（29 軌 1 片，Reborn Recordings）。",
+    "src": "https://musicbrainz.org/release-group/0e25657d-93cb-38ca-88cd-2d7219d02aba"
+   },
+   {
+    "f": "1964 年 Elektra 那筆 release c4410c41 的三片分軌為：片一 11 軌（〈Lost Train Blues〉382 秒起，至〈Do-Re-Mi〉179 秒）、片二 10 軌（〈Hard Times〉581 秒起，至〈Walking Down That Railroad Line〉632 秒）、片三 8 軌（〈Goin' Down That Road Feeling Bad〉713 秒起，至〈Los Angeles New Year's Flood〉280 秒），合計 29 軌。",
+    "src": "https://musicbrainz.org/release/c4410c41-f4e9-4c83-a26c-3435fec39796"
+   },
+   {
+    "f": "Discogs master 417904 的欄位：title「Library Of Congress Recordings」、掛名 Woody Guthrie、year 1964、廠牌 Elektra 與 Guthrie Children's Trust Fund、編號 EKL-271/272、載體 Vinyl／LP／Mono／Box Set。它的曲目表列出 **50 個索引點**（A1–F8），是把歌曲與訪談段落分開編號的：例如 A1〈Lost Train Blues〉之後緊接 A2「Introduction; Family; Okemah And It's People; The Colored \"Situation\"」，A3〈Railroad Blues〉之後是 A4「His \"Gang\"; Home Brew; House Parties; Drinking」，全套六面都是歌曲與口述交錯。",
+    "src": "https://api.discogs.com/masters/417904"
+   },
+   {
+    "f": "英文維基〈Library of Congress Recordings〉記：這批錄音來自 1940 年 3 月 Woody Guthrie 在華盛頓特區為 Alan Lomax 所做的錄音，編目於美國國會圖書館，是 Guthrie **最早的錄音**；內容包含若干傳統曲與他自己最著名的三首〈So Long It's Been Good To Know You〉〈Talking Dust Bowl Blues〉〈Do-Re-Mi〉，並收有他與 Lomax 對談時談奧克拉荷馬、扒火車與大蕭條時期見聞的自述。同條目記這批錄音原本並非為商業發行而做，其中部分曲目後來於 1964 年由 Elektra Records 以三張裝唱片發行，Rounder Records 則在 1988 年以 LP 與 CD 兩種形式再發。",
+    "src": "https://en.wikipedia.org/wiki/Library_of_Congress_Recordings"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1442846179 的 lookup 欄位：artistName「Woody Guthrie」、collectionName「Library of Congress Recordings」、releaseDate 1988-01-01、trackCount 29、copyright「℗ 1988 Rounder Records」；29 軌的曲名與曲序與 MB 1964 年 Elektra 那筆的 11＋10＋8 逐軌完全相同，29 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1442846179&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "1940 年在國會圖書館錄的，二十四年後才變成能買的唱片",
+   "六面唱片上歌曲與口述交錯排，講奧克拉荷馬、扒火車與大蕭條"
+  ],
+  "sound": "MB 1964 年 Elektra EKL-271/272 三片的逐軌曲長顯示長短落差極大：最短的〈Old Joe Clark〉123 秒、〈Foggy Mountain Top〉141 秒、〈Greenback Dollar〉142 秒，最長的〈Goin' Down That Road Feeling Bad〉713 秒（11 分 53 秒）、〈Walking Down That Railroad Line〉632 秒、〈Dust Bowl Refugees〉613 秒。Discogs 對同一套碟的曲目表把歌與口述分成 50 個索引點（A1 歌、A2 口述、A3 歌、A4 口述……），MB 與 Apple 則把相鄰的歌與口述併成一軌計為 29 軌——十分鐘以上那幾軌的長度就是這樣來的（MB release c4410c41 曲長欄、Discogs master 417904 曲目欄）。",
+  "keyTracks": [
+   "Talking Dust Bowl Blues",
+   "Do-Re-Mi",
+   "So Long, It's Been Good to Know You"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1964 與 MB first-release-date 1964、Discogs master 417904 的 1964（Elektra EKL-271/272）一致，MB 轄下最早的 release 也是 1964 年那筆，無分歧。Apple 的 releaseDate 1988 指的是 Rounder 再發（℗1988 Rounder，英文維基亦記 Rounder 1988 年以 LP 與 CD 再發），依第 77 條只當訊號不當版本門檻。**錄音年 1940 年 3 月與發行年 1964 相差 24 年，行文提到錄音年時必須與發行年分開講**（維基明記錄音為 1940 年 3 月、Elektra 發行為 1964 年）。",
+  "notes": "試聽覆核：探測記 ready／us／1442846179／**29 軌**／appleYear 1988，派工信要我查「29 軌是完整還是抽樣、是否配到不同的重編版本」。**結論：29 軌就是 1964 年 Elektra 三張裝的完整內容，維持 ready。** 依據是 MB 那筆 1964 Elektra release 的三片分軌 11＋10＋8＝29，與 Apple 的 29 軌**逐軌同名同序**；MB 轄下另外四筆（1988 Rounder、2015 Rounder、無日期 XW、2019 Bootleg）也全部是 29 軌，沒有任何一筆是不同軌數的重編版。Apple 那一筆是 1988 年 Rounder 版的數位上架，內容與 1964 年那套相同。\n但有一個必須寫進 notes 的落差：**Discogs 對同一套碟的曲目表是 50 個索引點**（歌曲與口述訪談分開編號），MB 與 Apple 是 29。兩邊數的是同一批內容、只是索引粒度不同——**行文不得寫「這套碟有 29 首歌」**（其中不少軌是歌曲與口述併在一起的），也不得寫「50 首」。要寫數量時只能寫「三張唱片／六面」。\n授權（第 43／57 條）：轄下 5 筆裡 1 筆是 2019 年 Reborn Recordings 的 **Bootleg**（HD remastered），**背書只採 1964 Elektra 與 1988／2015 Rounder 那幾筆 Official，行文不得引用該 Bootleg 版**——策展層已在 curatorRisk 明令，實查相符。\n**擋下策展層說法**：curatorWhy 稱「這是 Woody Guthrie 目錄裡份量最重的單一文獻，也是他自述生平的第一手來源」——「份量最重」是評價、查不到出處，未寫進 facts；「自述生平的第一手來源」則有維基的「Guthrie's autobiographical memories... in conversation with Lomax」與「the first recordings made of Woody Guthrie」可依附，已照維基原文寫進 facts。curatorRisk 稱「三張裝的分卷標題（Vol. 1／2／3）在部分再發被拆開發行」——MB 轄下五筆全部是 3 片／29 軌的完整套裝，**查不到被拆開發行的分卷 release**，這一項未獲證實，下游不要當成事實。"
+ },
+ {
+  "key": "desc2:Pete Seeger|American Favorite Ballads, Vol. 1",
+  "artist": "Pete Seeger",
+  "album": "American Favorite Ballads, Vol. 1",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 63489cbc 的欄位：title「American Favorite Ballads, Vol. 1」、artist-credit「Pete Seeger」、first-release-date 1957、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 Official——1957 US（**17 軌**，Folkways Records FA 2320）、1968 US（17 軌，Folkways Records FTS 31017，標題作《American Favorite Ballads》）、2002 US（**28 軌**，Smithsonian Folkways SFW CD 40140）、一筆無日期 XW（28 軌，Smithsonian Folkways）。",
+    "src": "https://musicbrainz.org/release-group/63489cbc-dda6-34ba-afcf-02422d880e30"
+   },
+   {
+    "f": "1957 年 Folkways FA 2320（MB release 92311810）的 17 軌曲序為 A1〈Down In The Valley〉A2〈Mary Don't You Weep〉A3〈The Blue-Tail Fly〉A4〈Yankee Doodle〉A5〈Cielito Lindo〉A6〈Buffalo Gals〉A7〈The Wabash Cannon Ball〉A8〈So Long, It's Been Good To know You (Dusty Old Dust)〉B1〈Wagoner's Lad〉B2〈The Big Rock Candy Mountain〉B3〈The Wreck Of The Old '97〉B4〈On Top Of Old Smoky〉B5〈I Ride An Old Paint〉B6〈Frankie And Jonny〉B7〈Old Dan Tucker〉B8〈Skip To My Lou〉B9〈Home On The Range〉。",
+    "src": "https://musicbrainz.org/release/92311810-dc52-4e17-b3e9-a2635c51054a"
+   },
+   {
+    "f": "2002 年 Smithsonian Folkways SFW CD 40140（MB release fce4b9d1）是 28 軌，第 1–28 軌依序為〈John Henry〉〈Shenandoah〉〈Blue-Tailed Fly (Jimmie Crack Corn)〉〈Black Girl〉〈Skip To My Lou〉〈The Big Rock Candy Mountain〉〈Clementine〉〈Yankee Doodle〉〈Home On The Range〉〈John Brown's Body〉〈Goodnight, Irene〉〈Swing Low, Sweet Chariot〉〈Oh, Susanna〉〈Wayfaring Stranger〉〈Oh, Mary, Don't You Weep〉〈Down In The Valley〉〈The Wabash Cannonball〉〈On Top Of Old Smoky〉〈Frankie And Jonny〉〈I Ride An Old Paint〉〈The Wreck Of The Railroad〉〈Wagoner's Lad〉〈Old Dan Tucker〉〈I've Been Working On The Railroad〉〈Cielito Lindo〉〈So Long, It's Been Good To know You (Dusty Old Dust)〉〈America The Beautiful〉〈This Land Is Your Land〉。",
+    "src": "https://musicbrainz.org/release/fce4b9d1-f63f-4176-9c89-ce362b1701f3"
+   },
+   {
+    "f": "Discogs master 289679 的欄位：1957 年 Folkways FA 2320 的原盤標題只作「American Favorite Ballads」（沒有卷號）；同一個 master 的版本清單顯示 1961 年有一筆 FA 2320 再壓仍作《American Favorite Ballads》，要到 1963 與 1965 年的兩筆 FA 2320 再壓才在標題上加出「Volume One」，1968 年的 FTS 31017 立體聲版又回到無卷號的《American Favorite Ballads》。",
+    "src": "https://api.discogs.com/masters/289679/versions?per_page=50"
+   },
+   {
+    "f": "同系列的第二輯在 MusicBrainz 上是獨立的 release-group e68a7bd8《American Favorite Ballads, Vol. 2》，first-release-date 1958，原盤為 Folkways Records FA 2321、**18 軌**，曲目為〈Oh, Susanna〉〈The Riddle Song〉〈Beautiful City〉〈Sally Ann〉〈The House of the Rising Sun〉〈Young Man Who Wouldn't Hoe Corn〉〈Midnight Special〉〈Careless Love〉〈Hard Travelling〉〈Poor Boy〉〈Black Girl (In The Pines)〉〈Alabama Bound〉〈Stagolee〉〈Black Is the Color of My True Love's Hair〉〈Go Tell Aunt Rhody〉〈The Water Is Wide〉〈The Fox〉〈The Keeper and the Doe〉。",
+    "src": "https://musicbrainz.org/release-group/e68a7bd8-560b-46b6-93ef-169b9e8a949a"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 82517660 的 lookup 欄位：artistName「Pete Seeger」、collectionName「American Favorite Ballads, Vol. 1」、releaseDate 1957-12-01、trackCount 28、copyright「℗ 2002 Smithsonian Folkways Recordings」；28 軌的曲名與曲序與 MB 的 SFW CD 40140 逐軌相同，28 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=82517660&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "原盤封面上沒有卷號，「第一輯」是後來的再壓才加上去的",
+   "十七首都是美國通行歌本裡的老歌，一首都不是他自己寫的"
+  ],
+  "sound": "MB 的 1957 年 Folkways FA 2320 逐軌曲長：A 面〈Down In The Valley〉226 秒、〈Mary Don't You Weep〉151、〈The Blue-Tail Fly〉155、〈Yankee Doodle〉101、〈Cielito Lindo〉155、〈Buffalo Gals〉142、〈The Wabash Cannon Ball〉185、〈So Long, It's Been Good To know You〉202；B 面〈Wagoner's Lad〉85、〈The Big Rock Candy Mountain〉189、〈The Wreck Of The Old '97〉113、〈On Top Of Old Smoky〉139、〈I Ride An Old Paint〉205、〈Frankie And Jonny〉268、〈Old Dan Tucker〉134、〈Skip To My Lou〉192、〈Home On The Range〉112。最短的〈Wagoner's Lad〉只有 85 秒（一分二十五秒），最長的〈Frankie And Jonny〉268 秒（四分二十八秒）——一張十二吋唱片塞進十七首（MB release 92311810 曲長欄）。",
+  "keyTracks": [
+   "Down in the Valley",
+   "So Long, It's Been Good to Know You (Dusty Old Dust)",
+   "Frankie and Johnny"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1957 與 MB first-release-date 1957、Discogs master 289679 的 1957（Folkways FA 2320）一致，Apple 的 releaseDate 也記 1957-12-01，無分歧。要注意的是 Apple 那個 1957 是**沿用原盤年的標示**，該筆的 ℗ 年是 2002（Smithsonian Folkways 再版），依第 77 條只當訊號。",
+  "notes": "**試聽覆核：28 軌的疑點查清了，維持 ready，但版本要標明。** 派工信提示「28 軌很像是把 Vol.1 與別卷合併」（裁定 168）。實查結論是**不是合併，是同一個 release-group 底下 2002 年 Smithsonian Folkways CD（SFW CD 40140）的擴編版**：Apple 82517660 的 28 軌與 MB 該 release 逐軌同名同序、℗2002 Smithsonian Folkways。做過的三道檢查——(a) 若是 Vol.1＋Vol.2 合併，軌數應是 17＋18＝35 而不是 28；(b) Vol.2（1958 FA 2321）的識別性曲目〈Midnight Special〉〈The Fox〉〈Stagolee〉〈Careless Love〉〈The House of the Rising Sun〉〈Hard Travelling〉**一首都沒有出現在這 28 軌裡**（第 140 條的「別張專輯的曲目」判準）；(c) MB 把這一筆建在 Vol.1 的 release-group 底下，不是 Vol.2 的。\n**但有兩件事必須往下游傳**：其一，**2002 年的 28 軌不是 1957 年 17 軌的超集**——1957 年 LP 上的〈Buffalo Gals〉**不在** 28 軌裡，其餘 16 首都在；所以 28 ＝ 原盤 16 首 ＋ 12 首新增。其二，28 軌裡的〈Oh, Susanna〉（78 秒）與〈Black Girl〉（154 秒）兩個曲名也出現在 Vol.2 的 1958 年 LP 上（該處〈Oh, Susanna〉273 秒、〈Black Girl (In The Pines)〉154 秒）——〈Oh, Susanna〉曲長差很多顯然是別的錄音，〈Black Girl〉則秒數相同，**不能排除是同一段錄音在兩卷之間重複收錄**。行文因此**不得寫「這張碟有幾首」而不指版本**，也不得把 2002 年 CD 的曲目當成 1957 年原盤的曲目。\n**擋下策展層說法**：curatorWhy 稱「五輯合計把美國通行歌本的核心曲目一次錄完，後來成為民謠復興期教學與翻唱的共同底本」——這是評價與影響力陳述，MB、Discogs、英文維基（Vol. 2 的條目只有兩句、Vol. 1 無條目）三處都查不到出處，未寫進 facts。curatorWhy 另稱「他 1950 年代最被廣泛使用的一套唱片」，同樣無來源，未採。\n盤名要注意（第 45／168 條）：**1957 年原盤的標題不含卷號**，只作《American Favorite Ballads》；「Volume One」是 1963／1965 年再壓才加上的，1968 年的立體聲 FTS 31017 又拿掉。策展層的 queryAlias 已含無卷號寫法，正確。"
+ },
+ {
+  "key": "desc2:Pete Seeger|Waist Deep in the Big Muddy & Other Love Songs",
+  "artist": "Pete Seeger",
+  "album": "Waist Deep in the Big Muddy & Other Love Songs",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3edc54fd 的欄位：title「Waist Deep in the Big Muddy & Other Love Songs」、artist-credit「Pete Seeger」、first-release-date 1967、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1967 US（**13 軌**，Columbia，編號 CS 9505）、1993 國別未填（15 軌，Columbia／Legacy，CK 57311）、1994 US（15 軌，Legacy）。",
+    "src": "https://musicbrainz.org/release-group/3edc54fd-8d08-3bba-854c-2e4edad5ded6"
+   },
+   {
+    "f": "1967 年 Columbia CS 9505（MB release 8662a15b）的 13 軌曲序為 A1〈Oh Yes I'd Climb (The Highest Mountain for You)〉254 秒 A2〈Seek and You Shall Find〉473 A3〈The Sinking of the Reuben James〉165 A4〈Waist Deep in the Big Muddy〉178 A5〈Last Night I Had the Strangest Dream〉174 A6〈Down by the Riverside〉196；B1〈Nameless Lick〉60 B2〈Over the Hills〉101 B3〈East Virginia〉157 B4〈My Name Is Lisa Kalvelage〉240 B5〈My Father's Mansion's Many Rooms〉148 B6〈Melodie D'Amour〉113 B7〈Those Three Are on My Mind〉185。",
+    "src": "https://musicbrainz.org/release/8662a15b-ca9c-4a51-85ee-11f30c5a2c33"
+   },
+   {
+    "f": "Discogs master 427991 的欄位：title「Waist Deep In The Big Muddy And Other Love Songs」（用 and 不用 &）、掛名 Pete Seeger、year 1967、main_release 3542177，曲目 13 首、A 面 6 首 B 面 7 首，曲序與 MB 的 CS 9505 逐軌相同。",
+    "src": "https://api.discogs.com/masters/427991"
+   },
+   {
+    "f": "英文維基〈Waist Deep in the Big Muddy〉記：這首歌由 Pete Seeger 於 1967 年所寫，因為在《The Smothers Brothers Comedy Hour》遭刪剪而出名。1967 年 9 月 Seeger 在該 CBS 節目錄影時唱了這首歌，CBS 管理層以其政治調性為由在播出前刪掉；在節目主持人 Smothers 兄弟力挺之後，CBS 後來讓步，讓 Seeger 回到 1968 年 2 月 25 日那一集重唱一次。條目並記 Seeger 當時與 Columbia Records 有合約，而 Columbia 為 CBS 所有，他當時剛錄完一張以這首歌為名的專輯《Waist Deep in the Big Muddy and Other Love Songs》。",
+    "src": "https://en.wikipedia.org/wiki/Waist_Deep_in_the_Big_Muddy"
+   },
+   {
+    "f": "同一條目記歌詞內容：故事講 1942 年一支排在路易斯安那州涉水做演習巡邏，上尉不理會士官的疑慮、堅持帶隊前進到水深及頸，最後上尉溺斃、士官立刻下令折返；每一段都以「the big fool said to push on」作結，只有最後一段改成現在式。條目並記這首歌被視為越戰與詹森總統升級政策的象徵。",
+    "src": "https://en.wikipedia.org/wiki/Waist_Deep_in_the_Big_Muddy"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 181586787 的 lookup 欄位：artistName「Pete Seeger」、collectionName「Waist Deep In the Big Muddy and Other Love Songs」、releaseDate 1967-08-01、trackCount 15、copyright「℗ 1993 Sony Music Entertainment Inc.」；前 13 軌的曲名與曲序與 MB 的 CS 9505 逐軌相同，第 14、15 軌是〈Come All Ye Fair and Tender Ladies〉239 秒與〈Los Quatros Generales〉176 秒，15 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=181586787&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "標題曲在電視上被剪掉，五個月後同一個節目讓他回來重唱一次",
+   "唱片公司是 Columbia，剪掉那首歌的電視台是它的母公司"
+  ],
+  "sound": "MB 的 1967 年 Columbia CS 9505 逐軌曲長：A 面〈Oh Yes I'd Climb (The Highest Mountain for You)〉254 秒、〈Seek and You Shall Find〉473、〈The Sinking of the Reuben James〉165、〈Waist Deep in the Big Muddy〉178、〈Last Night I Had the Strangest Dream〉174、〈Down by the Riverside〉196；B 面〈Nameless Lick〉60、〈Over the Hills〉101、〈East Virginia〉157、〈My Name Is Lisa Kalvelage〉240、〈My Father's Mansion's Many Rooms〉148、〈Melodie D'Amour〉113、〈Those Three Are on My Mind〉185。〈Seek and You Shall Find〉473 秒（七分五十三秒）與〈Nameless Lick〉60 秒（整整一分鐘）之間差了將近八倍（MB release 8662a15b 曲長欄）。",
+  "keyTracks": [
+   "Waist Deep in the Big Muddy",
+   "My Name Is Lisa Kalvelage",
+   "Last Night I Had the Strangest Dream"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1967 與 MB first-release-date 1967、Discogs master 427991 的 1967（Columbia CS 9505）、Apple 的 releaseDate 1967-08-01 三方一致，無分歧。英文維基亦把這首歌與這張專輯都繫在 1967 年。Apple 那筆的 ℗ 年是 1993（Legacy 再發），依第 77 條只當訊號。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。策展層在 curatorRisk 裡本來就寫了「Apple us collectionId **181586787**」，實測那個 ID 存在且可用：15 軌、℗1993 Sony Music、15 軌皆有 previewUrl。查不到的原因與盤名寫法有關——**MB／卡單用「&」，Apple 與 Discogs 用「and」**，用卡單盤名去 search 端點查會落空（第 76／166 條）。建議探測檔補：ready／us／181586787／15 軌。\n版本要標明：Apple 那 15 軌是 **1993 年 Legacy CD 版**，前 13 軌與 1967 年 Columbia CS 9505 **逐軌同名同序**，第 14、15 軌〈Come All Ye Fair and Tender Ladies〉與〈Los Quatros Generales〉是後加的。依第 140 條這是加曲版不是二合一（多出來的兩首不構成另一張專輯的曲目段落，且排在最後面）。**行文不得把這兩首當成原盤曲目；原盤是 13 軌**。首軌兩邊同為〈Oh Yes I'd Climb〉，固定試聽取首軌不會取錯（第 157 條）。\n電視爭議可以寫了：策展層在 curatorRisk 裡下了「標題曲的電視爭議在行文中要指得出具體節目與年份才寫，否則不寫」這道禁令。**節目名與兩個年份都查到了**——《The Smothers Brothers Comedy Hour》、1967 年 9 月錄影遭 CBS 刪剪、1968 年 2 月 25 日那一集獲准重唱（英文維基，已寫進 facts）。**這道禁令依第 80 條解除**，行文可以寫，但只能寫 facts 裡有的這幾項，不得延伸。\n**擋下策展層說法**：curatorWhy 稱本張是「Pete Seeger 在 Columbia 時期最直接的一張時事專輯」「與池中已有的《We Shall Overcome》(1963)、《God Bless the Grass》(1966) 屬同一條 Columbia 議題線，是三張裡最晚也最尖銳的一張」——「最直接」「最尖銳」是評價、且「三張裡最晚」是把池中選樣當成 Columbia 目錄的全部（他在 Columbia 的專輯遠不只三張），兩項都無來源，未寫進 facts。curatorWhy 另稱「同年另有 4-44273 的單曲版」，本次未查證，未寫進 facts。"
+ },
+ {
+  "key": "desc2:Odetta|One Grain of Sand",
+  "artist": "Odetta",
+  "album": "One Grain of Sand",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 55a00004 的欄位：title「One Grain of Sand」、artist-credit「Odetta」、first-release-date 1963、primary-type Album、secondary-types 空陣列、轄下 2 個 release 皆 Official——1963 US（14 軌，Vanguard，編號 VRS-9137）與 2005-11-28 GB（14 軌，Vanguard，編號 VMD 2153）。",
+    "src": "https://musicbrainz.org/release-group/55a00004-98ed-446a-8bd5-ca256af1e4ba"
+   },
+   {
+    "f": "1963 年 Vanguard VRS-9137（MB release 06b10534）的 14 軌曲序為 A1〈Sail Away Ladies〉157 秒 A2〈Moses, Moses〉175 A3〈Midnight Special〉202 A4〈Rambler-Gambler〉199 A5〈Cotton Fields〉203 A6〈Roll On, Buddy〉184 A7〈Ain't No Grave〉122；B1〈Special Delivery Blues〉156 B2〈Rambling Round Your City〉242 B3〈Boll Weevil〉133 B4〈Come All Ye Fair and Tender Ladies〉203 B5〈She Moved Through the Fair〉180 B6〈Cool Water〉183 B7〈One Grain of Sand〉126。",
+    "src": "https://musicbrainz.org/release/06b10534-9d0e-4fc8-8cbb-fd6f64a11093"
+   },
+   {
+    "f": "英文維基〈One Grain of Sand〉記：這是美國民謠歌手兼吉他手 Odetta 的一張錄音室專輯，1963 年 1 月由 Vanguard Records 發行，**是她為該廠牌錄的最後一張專輯**，1997 年再以 CD 形式發行。條目並記人員為 Odetta 演唱與吉他、Bill Lee 貝斯；封面設計 Jules Halfant、攝影 Pompeo Posar。",
+    "src": "https://en.wikipedia.org/wiki/One_Grain_of_Sand"
+   },
+   {
+    "f": "同一條目的曲目表記除另有標示外全部為傳統曲，有作者標示的四首是〈Moses, Moses〉（John Davis、Alan Lomax）、〈Cotton Fields〉（Lead Belly）、〈Rambling Round Your City〉（Woody Guthrie）、〈Cool Water〉（Bob Nolan），以及標題曲〈One Grain of Sand〉（Pete Seeger）。",
+    "src": "https://en.wikipedia.org/wiki/One_Grain_of_Sand"
+   },
+   {
+    "f": "Discogs master 563693 的欄位：title「One Grain Of Sand」、掛名 Odetta、year 1963、main_release 3629761，曲目 14 首、A 面 7 首 B 面 7 首，曲序與 MB 的 VRS-9137 逐軌相同。",
+    "src": "https://api.discogs.com/masters/563693"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1444010538 的 lookup 欄位：artistName「Odetta」、collectionName「One Grain of Sand」、releaseDate 1963-01-01、trackCount 14、copyright「℗ 2006 Vanguard Records, a division of Concord Music Group, Inc.」；14 軌的曲名與曲序與 MB 的 VRS-9137 逐軌相同，14 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1444010538&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十四首裡只有五首查得到作者，其餘都是沒有署名的老歌",
+   "整張碟只有兩個人：一把吉他、一把貝斯、一個聲音"
+  ],
+  "sound": "MB 的 1963 年 Vanguard VRS-9137 逐軌曲長：A 面〈Sail Away Ladies〉157 秒、〈Moses, Moses〉175、〈Midnight Special〉202、〈Rambler-Gambler〉199、〈Cotton Fields〉203、〈Roll On, Buddy〉184、〈Ain't No Grave〉122；B 面〈Special Delivery Blues〉156、〈Rambling Round Your City〉242、〈Boll Weevil〉133、〈Come All Ye Fair and Tender Ladies〉203、〈She Moved Through the Fair〉180、〈Cool Water〉183、〈One Grain of Sand〉126。最長的〈Rambling Round Your City〉四分零二秒、最短的〈Ain't No Grave〉兩分零二秒；編制只有 Odetta 的演唱與吉他加上 Bill Lee 的貝斯（維基人員欄）。",
+  "keyTracks": [
+   "Midnight Special",
+   "Cotton Fields",
+   "One Grain of Sand"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1963 與 MB first-release-date 1963、Discogs master 563693 的 1963（Vanguard VRS-9137）、Apple releaseDate 1963-01-01 一致；英文維基進一步給到月份，記為 1963 年 1 月由 Vanguard 發行。無分歧。",
+  "notes": "試聽覆核：探測記 ready／us／1444010538／14 軌。逐項覆核**維持 ready**——Apple 那 14 軌與 MB 1963 年 Vanguard VRS-9137 **逐軌同名同序**，首軌兩邊同為〈Sail Away Ladies〉，無加曲、無併輯、無卷號問題。\n**擋下策展層說法（兩處，方向相反）**：\n(1) curatorWhy 稱本張「曲目從美國民謠擴到愛爾蘭、以色列與非洲的歌」——**與曲目表不符**。MB、Discogs、維基三份曲目表一致，十四首裡只有〈She Moved Through the Fair〉一首是愛爾蘭曲，**沒有任何以色列或非洲曲目**；其餘是美國傳統曲與 Lead Belly／Woody Guthrie／Bob Nolan／Pete Seeger 的作品。這一句未寫進 facts，行文不得沿用。\n(2) curatorWhy 稱本張是「她 1960 年代 Vanguard／RCA 的整段目錄……那一段的入口」——**方向恰好相反**。英文維基明記這是她**為 Vanguard 錄的最後一張專輯**（\"is her last album for the label\"）。這是派工信要我特別攻的那種時序主張，已被推翻；行文不得寫成「入口」「起點」「開端」，若要寫時序定位只能寫「Vanguard 時期的最後一張」。\n(3) curatorWhy 另稱本張是「她從『ballads and blues』曲庫往國際曲目移動的一張」——同樣無來源，且與上面 (1) 相扣，未寫進 facts。\n池中掛名要注意：curatorRisk 提到池中既有卡寫《Odetta Sings Ballads and Blues》而 MB 的 release-group 標題是《Sings Ballads and Blues》（不含藝人名）——本張不受影響，但同批下游做 Odetta 去重時要兩種都掃，這一項策展層寫得正確。"
+ },
+ {
+  "key": "desc2:Patsy Cline|Patsy Cline's Greatest Hits",
+  "artist": "Patsy Cline",
+  "album": "Patsy Cline's Greatest Hits",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 26239187 的欄位：title「Patsy Cline's Greatest Hits」、artist-credit「Patsy Cline」、first-release-date **1967-03-13**、primary-type **Album**、secondary-types [Compilation]、轄下 11 個 release 全數 Official。其中 1967-03-13 CA 那筆（release c8d70b71）是 Decca Records、編號 DL 74854、12 軌；其餘多數是 1988 年起 MCA 以《12 Greatest Hits》為名的 12 軌再發（MCAD-12），另有一筆 2013 年 Analogue Productions 的 24 軌雙片版（CAPP 74854 SA）。",
+    "src": "https://musicbrainz.org/release-group/26239187-b3f4-3bac-b3cd-538a93b3fcf1"
+   },
+   {
+    "f": "MB release c8d70b71 的 12 軌曲序為 1〈Walkin' After Midnight〉122 秒 2〈Sweet Dreams (of You)〉155 3〈Crazy〉164 4〈I Fall to Pieces〉170 5〈So Wrong〉183 6〈Strange〉133 7〈Back in Baby's Arms〉125 8〈She's Got You〉181 9〈Faded Love〉224 10〈Why Can't He Be You〉209 11〈You're Stronger Than Me〉173 12〈Leavin' On Your Mind〉147。",
+    "src": "https://musicbrainz.org/release/c8d70b71-af0d-465c-ab82-f8e9ec03519e"
+   },
+   {
+    "f": "Discogs master 170124 的欄位：title「Greatest Hits」（不含藝人名）、掛名 Patsy Cline、year 1967、廠牌 Decca、編號 DL 74854、載體 Vinyl／LP／Compilation／Stereo。",
+    "src": "https://api.discogs.com/database/search?q=Patsy+Cline+Greatest+Hits+Decca+1967&type=master"
+   },
+   {
+    "f": "英文維基〈Patsy Cline's Greatest Hits〉記：這是一張收錄她 1957 至 1963 年間發行的暢銷曲的合輯，1967 年由她長期所屬的廠牌 Decca Records 發行，時間在她過世四年之後；十二軌之中有七首是她 1957–1963 年間的鄉村榜前十名曲。",
+    "src": "https://en.wikipedia.org/wiki/Patsy_Cline%27s_Greatest_Hits"
+   },
+   {
+    "f": "同一條目記：1973 年她入選鄉村音樂名人堂時，MCA Records 再發這張並再度取得金唱片；1988 年以 CD 形式再發時換了封面並改名為《12 Greatest Hits》；2003 年由 Bob Ludwig 做數位重製、以 1967 年的原封面重新推出。榜單方面，1967 年原盤在 Billboard Top Country Albums 榜最高第 17 名、在榜 24 週，改名《12 Greatest Hits》後累計再進榜 191 週。",
+    "src": "https://en.wikipedia.org/wiki/Patsy_Cline%27s_Greatest_Hits"
+   },
+   {
+    "f": "同一條目記：1989 年這張獲美國唱片工業協會（RIAA）認證雙白金（兩百萬張），使 Cline 成為鄉村音樂界第一位達到此銷量的女性；到 2005 年在美國售出一千萬張、獲 RIAA 十倍白金（鑽石）認證；金氏世界紀錄收錄它為「女性藝人在美國鄉村榜停留最久的專輯」，2001 年時距首次進榜已 722 週仍在榜上。",
+    "src": "https://en.wikipedia.org/wiki/Patsy_Cline%27s_Greatest_Hits"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1440825668 的 lookup 欄位：artistName「Patsy Cline」、collectionName「Patsy Cline's Greatest Hits」、releaseDate 1967-03-13、trackCount 12、copyright「This Compilation ℗ 2015 MCA Nashville」；12 軌的曲名與曲序與 MB release c8d70b71 逐軌相同（第 11 軌 Apple 標作〈You're Stronger Than Me (Non-Orchestra Version)〉），12 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=1440825668&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟在架上換過封面也換過名字，2003 年又換回 1967 年那個封面",
+   "2001 年統計時，它已經在鄉村榜上待了 722 週"
+  ],
+  "sound": "MB release c8d70b71 的 12 軌逐軌秒數依序為 122／155／164／170／183／133／125／181／224／209／173／147——最短的〈Walkin' After Midnight〉兩分零二秒、最長的〈Faded Love〉三分四十四秒，十二軌全部落在四分鐘以內，是 1957–1963 年間單曲原長直接排進一張唱片的規格（MB release c8d70b71 曲長欄）。",
+  "keyTracks": [
+   "Crazy",
+   "I Fall to Pieces",
+   "Walkin' After Midnight"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1967 與 MB first-release-date 1967-03-13、Discogs master 170124 的 1967（Decca DL 74854）、Apple releaseDate 1967-03-13、英文維基的「1967 年由 Decca 發行」四方一致，無分歧。MB 給到日（1967-03-13），Apple 亦同。要分清的是：**曲目本身的年代是 1957–1963**（維基），與唱片的 1967 不是同一件事，行文提到年代時要分開講。",
+  "notes": "§5.6 判準（第 167 條）：MB 的 primary-type 是 **Album**、secondary-types 才是 [Compilation]，依明文照一般 Album 寫、`releaseType` 填 Album、例外欄位留空——策展層已這樣處理，正確。派工信要我「照實記 MB primary-type／secondary-types」，已逐欄寫進第一條 fact。\n試聽覆核：探測記 ready／us／1440825668／12 軌。逐項覆核**維持 ready**——12 軌與 MB 那筆 1967 Decca DL 74854 **逐軌同名同序**，首軌兩邊同為〈Walkin' After Midnight〉。唯一差異是第 11 軌 Apple 標作〈You're Stronger Than Me (**Non-Orchestra Version**)〉，MB 只作〈You're Stronger Than Me〉——同一首的不同混音標示，不影響整張的版本判定，但行文不得引用這個副標。\n盤名要注意：**Discogs 上的原盤標題只作《Greatest Hits》**（不含藝人名），MB 與 Apple 才是《Patsy Cline's Greatest Hits》，1988 年 MCA 的 CD 版又改叫《12 Greatest Hits》——三種寫法都要進去重比對。策展層已在 queryAlias 填了前兩種，**建議下游把《12 Greatest Hits》也補進去**（MB 轄下 11 筆 release 有 8 筆用的是這個標題）。\n**擋下策展層說法**：curatorWhy 稱「它不是後世的重複包裝，而是她過世四年後由原廠編成、此後半世紀持續在架上的那一版」——「過世四年後由原廠 Decca 編成」有維基佐證、已寫進 facts；「此後半世紀持續在架上」則以維基的 722 週在榜與歷次再發紀錄為據，行文只能寫這兩項具體事實，不要寫成概括。curatorWhy 另稱「也是美國唱片工業協會認證銷量最高的女性鄉村專輯之一」——維基寫的是「1989 年雙白金使她成為鄉村音樂界第一位達到此銷量的女性」與「2005 年十倍白金」，**「銷量最高的女性鄉村專輯之一」這個排序說法不在來源裡**，未寫進 facts，行文請改用有數字的那兩句。\n身分風險（策展層已標，實查相符）：MB 上 Patsy Cline 名下 355 個 release-group，含 Greatest Hits 字樣的有十餘筆，釘位必須用 MBID。"
+ },
+ {
+  "key": "desc2:Tammy Wynette|Your Good Girl's Gonna Go Bad",
+  "artist": "Tammy Wynette",
+  "album": "Your Good Girl's Gonna Go Bad",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 24d5bfb3 的欄位：title「Your Good Girl's Gonna Go Bad」、artist-credit「Tammy Wynette」、first-release-date 1967、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1967 US（10 軌，Epic，編號 BN 26305）、一筆無日期 BE（10 軌，Epic／Legacy）、1995 US（10 軌，Sony Music，A 58922）。",
+    "src": "https://musicbrainz.org/release-group/24d5bfb3-6618-3138-8002-d15d1db0ffe1"
+   },
+   {
+    "f": "1967 年 Epic BN 26305（MB release 67f36871）的 10 軌曲序為 A1〈Apartment #9〉174 秒 A2〈Don't Come Home a Drinkin' (With Lovin' on Your Mind)〉122 A3〈Don't Touch Me〉161 A4〈There Goes My Everything〉157 A5〈Send Me No Roses〉173；B1〈Your Good Girl's Gonna Go Bad〉120 B2〈Walk Through This World With Me〉160 B3〈I'm Not Mine to Give〉134 B4〈I Wound Easy (But I Heal Fast)〉141 B5〈Almost Persuaded〉175。",
+    "src": "https://musicbrainz.org/release/67f36871-e4ea-4628-af23-a0a737123b27"
+   },
+   {
+    "f": "英文維基〈Your Good Girl's Gonna Go Bad〉記：這是 Tammy Wynette 的**首張錄音室專輯**，1967 年 5 月發行、共十軌；專輯多數曲目是她翻唱別人的歌，包含 George Jones、Loretta Lynn 與 Jeannie Seely 的曲子，另有數首新歌。收錄兩首單曲〈Apartment No. 9〉與〈Your Good Girl's Gonna Go Bad〉，後者成為她第一首打進美國鄉村榜前五名的成績。",
+    "src": "https://en.wikipedia.org/wiki/Your_Good_Girl%27s_Gonna_Go_Bad"
+   },
+   {
+    "f": "同一條目記製作過程：Wynette 1965 年帶三個孩子搬到納許維爾找唱片合約，先後被 Decca、Hickory、Kapp、Musicor 拒絕；經朋友介紹認識新製作人 **Billy Sherrill**，1966 年由他簽進 Epic Records。錄音自 1966 年 9 月開始、在納許維爾的 Columbia Studios 進行，其餘部分於 1967 年 1 月完成，製作人全程是 Sherrill。",
+    "src": "https://en.wikipedia.org/wiki/Your_Good_Girl%27s_Gonna_Go_Bad"
+   },
+   {
+    "f": "同一條目逐首列出翻唱來源：〈Almost Persuaded〉原唱 David Houston、〈Don't Come Home A-Drinkin' (With Lovin' on Your Mind)〉原唱 Loretta Lynn、〈Don't Touch Me〉原唱 Jeannie Seely、〈Walk Through This World with Me〉原唱 George Jones、〈There Goes My Everything〉原唱 Jack Greene、〈Apartment No. 9〉原唱 Bobby Austin；另有一首〈I Wound Easy〉是 Dolly Parton 1966 年錄了但當時未發行的曲子。",
+    "src": "https://en.wikipedia.org/wiki/Your_Good_Girl%27s_Gonna_Go_Bad"
+   },
+   {
+    "f": "Discogs master 746836 的欄位：title「Your Good Girl's Gonna Go Bad」、掛名 Tammy Wynette、year 1967、廠牌 Epic、編號 **LN 24305**、載體 Vinyl／LP／Album（MB 那筆用的是立體聲編號 BN 26305）。",
+    "src": "https://api.discogs.com/database/search?q=Tammy+Wynette+Your+Good+Girl%27s+Gonna+Go+Bad&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 171126447 的 lookup 欄位：artistName「Tammy Wynette」、collectionName「Your Good Girl's Gonna Go Bad」、releaseDate **1967-04-24**、trackCount 10、copyright「℗ Originally released 1967. All rights reserved by SONY BMG MUSIC ENTERTAINMENT.」；10 軌的曲名與曲序與 MB 的 BN 26305 逐軌相同，10 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=171126447&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十首裡有六首是別人已經唱紅過的歌，她一首一首重唱一遍",
+   "四家廠牌拒絕之後，第五個人聽完就把她簽了下來"
+  ],
+  "sound": "MB 的 1967 年 Epic BN 26305 逐軌曲長：A 面〈Apartment #9〉174 秒、〈Don't Come Home a Drinkin'〉122、〈Don't Touch Me〉161、〈There Goes My Everything〉157、〈Send Me No Roses〉173；B 面〈Your Good Girl's Gonna Go Bad〉120、〈Walk Through This World With Me〉160、〈I'm Not Mine to Give〉134、〈I Wound Easy (But I Heal Fast)〉141、〈Almost Persuaded〉175。十軌沒有一首滿三分鐘，最短的標題曲整整兩分鐘、最長的〈Almost Persuaded〉兩分五十五秒（MB release 67f36871 曲長欄）。",
+  "keyTracks": [
+   "Your Good Girl's Gonna Go Bad",
+   "Apartment #9",
+   "Almost Persuaded"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1967 與 MB first-release-date 1967、Discogs master 746836 的 1967（Epic LN 24305）一致。月份有兩說：**英文維基記 1967 年 5 月發行、Apple 的 releaseDate 記 1967-04-24**，兩者差約一個月。年份本身無爭議，月份兩說已記於此、行文不必寫到月。另一個要分清的是錄音期：維基記錄音自 1966 年 9 月起、1967 年 1 月完成，與發行年不同。",
+  "notes": "試聽覆核：探測記 ready／us／171126447／10 軌。逐項覆核**維持 ready**——Apple 那 10 軌與 MB 1967 年 Epic BN 26305 **逐軌同名同序**，首軌兩邊同為〈Apartment #9〉，無加曲、無併輯。\n編號要注意：**Discogs 的原盤編號是單聲道的 LN 24305，MB 那筆用的是立體聲的 BN 26305**——策展層 label 欄兩個都寫了（LN 24305／BN 26305），正確，下游不要只挑一個。\n**策展層說法查證結果（大部分成立）**：curatorWhy 稱「Tammy Wynette 的第一張專輯」——**成立**，英文維基明寫 debut studio album。稱「也是 Billy Sherrill 為她定型的那一張」——Sherrill 簽下她、製作整張碟這兩件事有維基佐證，已寫進 facts；但「為她定型」是評價，未寫進 facts。**擋下**：curatorWhy 稱「她此後十年的錄音班底與製作路線都從這裡開始」——這是往後推十年的概括陳述，查不到出處，未寫進 facts，行文不得沿用。\n掛名要注意（策展層已標，實查相符）：她與 George Jones 的合作專輯在 MB 掛在另一個實體，去重時不要與本人目錄混算。撇號彎撇與 ASCII 兩種寫法都要掃（MB 作 Your Good Girl's Gonna Go Bad 的彎撇版）。"
+ },
+ {
+  "key": "desc2:Tammy Wynette|D-I-V-O-R-C-E",
+  "artist": "Tammy Wynette",
+  "album": "D-I-V-O-R-C-E",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9a113423 的欄位：title「D-I-V-O-R-C-E」、artist-credit「Tammy Wynette」、first-release-date 1968、primary-type Album、secondary-types 空陣列、轄下 2 個 release 皆 Official——1968 US（11 軌，Epic，編號 BN 26392）與 2015-02-20 XW（11 軌，Sony Music Special Products）。",
+    "src": "https://musicbrainz.org/release-group/9a113423-dd34-396c-91ad-08e0e2415303"
+   },
+   {
+    "f": "1968 年 Epic BN 26392（MB release 0c088ce5）的 11 軌曲序為 A1〈Gentle on My Mind〉196 秒 A2〈Honey (I Miss You)〉254 A3〈The Legend of Bonnie and Clyde〉123 A4〈All Night Long〉146 A5〈Sweet Dreams〉150 A6〈Yesterday〉118；B1〈D-I-V-O-R-C-E〉178 B2〈Come on Home〉150 B3〈When There's a Fire in Your Heart〉162 B4〈Kiss Away〉149 B5〈Lonely Street〉138。",
+    "src": "https://musicbrainz.org/release/0c088ce5-8558-48f1-88d0-62a43b6a611c"
+   },
+   {
+    "f": "英文維基〈D-I-V-O-R-C-E (album)〉記：這是 Tammy Wynette 的錄音室專輯，1968 年 7 月由 Epic Records 發行、共十一軌，**是她的第四張錄音室專輯**。標題曲由 Bobby Braddock 與 Curly Putman 所寫，是製作人 Billy Sherrill 拿給她的；發行為單曲後成為她 1968 年在北美鄉村榜上的第四首冠軍曲，專輯本身也登上該年的美國鄉村專輯榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/D-I-V-O-R-C-E_(album)"
+   },
+   {
+    "f": "同一條目記錄音資料：全碟在納許維爾的 Columbia Studio B 錄製，錄音期 1968 年 3 月 22 日至 3 月 25 日，製作人 Billy Sherrill。十一軌之中有五首是新錄的（含標題曲、〈All Night Long〉〈Come on Home〉〈When There's a Fire in Your Heart〉，以及一首回應 Bobby Goldsboro〈Honey〉的答歌），其餘是翻唱——包括 The Beatles 的〈Yesterday〉、Ronnie Dove 的〈Kiss Away〉、Patsy Cline 的〈Sweet Dreams〉、Glen Campbell 的〈Gentle on My Mind〉與 Andy Williams 的〈Lonely Street〉。條目並記黑膠版 A 面六首、B 面五首。",
+    "src": "https://en.wikipedia.org/wiki/D-I-V-O-R-C-E_(album)"
+   },
+   {
+    "f": "同一條目引 Wynette 對標題曲的說法：「I hated myself for not writing that song. It fit my life completely.」",
+    "src": "https://en.wikipedia.org/wiki/D-I-V-O-R-C-E_(album)"
+   },
+   {
+    "f": "Discogs master 698187 的欄位：title「D-I-V-O-R-C-E」、掛名 Tammy Wynette、year 1968、廠牌 Epic 與 CBS Inc.、編號 BN 26392、載體 Vinyl／LP／Album／Stereo。",
+    "src": "https://api.discogs.com/database/search?q=Tammy+Wynette+D-I-V-O-R-C-E&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 967382746 的 lookup 欄位：artistName「Tammy Wynette」、collectionName「D-I-V-O-R-C-E」、releaseDate 1968-01-01、trackCount 11、copyright「℗ Originally released 1968. All rights reserved by Sony Music Entertainment」；11 軌的曲名與曲序與 MB 的 BN 26392 逐軌相同，11 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=967382746&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "把離婚兩個字逐字母拼出來唱，是為了不讓孩子聽懂",
+   "十一首裡有一首是回應別人那首〈Honey〉的答歌"
+  ],
+  "sound": "MB 的 1968 年 Epic BN 26392 逐軌曲長：A 面〈Gentle on My Mind〉196 秒、〈Honey (I Miss You)〉254、〈The Legend of Bonnie and Clyde〉123、〈All Night Long〉146、〈Sweet Dreams〉150、〈Yesterday〉118；B 面〈D-I-V-O-R-C-E〉178、〈Come on Home〉150、〈When There's a Fire in Your Heart〉162、〈Kiss Away〉149、〈Lonely Street〉138。最長的〈Honey (I Miss You)〉四分十四秒、最短的〈Yesterday〉一分五十八秒，標題曲被放在 B 面第一首（MB release 0c088ce5 曲長欄）。",
+  "keyTracks": [
+   "D-I-V-O-R-C-E",
+   "Honey (I Miss You)",
+   "Gentle on My Mind"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1968 與 MB first-release-date 1968、Discogs master 698187 的 1968（Epic BN 26392）、英文維基的「1968 年 7 月由 Epic 發行」一致，無分歧。Apple 的 releaseDate 1968-01-01 是 `YYYY-01-01` 的佔位值（第 140 條附二），只當年份訊號、不當月份證據。錄音日期維基給到日：1968 年 3 月 22–25 日於納許維爾 Columbia Studio B。",
+  "notes": "試聽覆核：探測記 ready／us／967382746／11 軌。逐項覆核**維持 ready**——Apple 那 11 軌與 MB 1968 年 Epic BN 26392 **逐軌同名同序**，首軌兩邊同為〈Gentle On My Mind〉，無加曲、無併輯。標題曲在原盤是 B1、在 Apple 是第 7 軌，位置一致。\n**擋下策展層說法**：curatorWhy 稱本張是「Tammy Wynette **第三張**專輯」——**與來源不符**。英文維基明寫「It was the **fourth** studio album of Wynette's career」，MB 上她 1968 年 1 月另有《Take Me to Your World / I Don't Want Play House》（策展層自己也把它列進「刻意不釘」）。這是派工信要我特別攻的那種時序主張，**序數已被推翻，行文不得寫「第三張」**；要寫序數只能寫「第四張」並依維基。\ncuratorWhy 另稱「標題曲把離婚一詞逐字母拼出來以避開孩子聽懂」——歌名的拼字形式本身在曲目表上看得到，但**「為了避開孩子聽懂」這個動機在維基條目裡查不到**，未寫進 facts。第二個 hookCandidate 已依此改寫成不帶歸屬的形式；若寫作層要用這個梗，**必須降級成不指來源的描述或整句捨去**（第 110／128 條：歸屬也要有來源）。\ncuratorWhy 另稱「這張與翌年的《Stand by Your Man》構成她 1968–1969 年連續兩張定義性專輯」——「定義性」是評價、無來源，未寫進 facts。\n連字號已逐字確認是 ASCII hyphen-minus（MB 1968 年那筆用的是 ASCII；MB 2015 年那筆用的是 U+2010，**不要從那一筆抄標題**）。"
+ },
+ {
+  "key": "desc2:Marty Robbins|The Song of Robbins",
+  "artist": "Marty Robbins",
+  "album": "The Song of Robbins",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b701606b 的欄位：title「The Song of Robbins」、artist-credit「Marty Robbins」、first-release-date 1957、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 Official——1957 US（12 軌，Columbia，編號 CL 976）、1995 US（12 軌，Columbia／Legacy，CK 67003）、1995 AU（12 軌，Columbia／Legacy，478538 2）、一筆國別未填（12 軌，Columbia／Legacy，標題作《The **Songs** of Robbins》）。",
+    "src": "https://musicbrainz.org/release-group/b701606b-bcc1-4768-8727-f21527843920"
+   },
+   {
+    "f": "1957 年 Columbia CL 976（MB release b3f5ef47）的 12 軌曲序為 A1〈Lovesick Blues〉153 秒 A2〈I'm So Lonesome I Could Cry〉164 A3〈It's Too Late to Worry Any More〉137 A4〈Rose of Ol' Pawnee〉196 A5〈I Never Let You Cross My Mind〉179 A6〈I Hang My Head and Cry〉135；B1〈You Only Want Me When You're Lonely〉150 B2〈Moanin' the Blues〉119 B3〈I'll Step Aside〉135 B4〈All the World Is Lonely Now〉135 B5〈Bouquet of Roses〉136 B6〈Have I Told You Lately That I Love You?〉187。",
+    "src": "https://musicbrainz.org/release/b3f5ef47-4439-45d0-92d3-cf18d305c661"
+   },
+   {
+    "f": "英文維基〈The Song of Robbins〉記：這是鄉村歌手 Marty Robbins 的一張錄音室專輯，1957 年由 Columbia Records 發行。在《Billboard》雜誌當年對鄉村音樂電台 DJ 所做的年度票選中，《The Songs of Robbins》在 1957 年的「Favorite C&W Albums」排第 2 名，隔年 1958 年的票選中仍排第 12 名。AllMusic 給三星，樂評 Jim Smith 寫道「the record achieves a nice balance of pop and honky tonk that doesn't succumb to excess」。",
+    "src": "https://en.wikipedia.org/wiki/The_Song_of_Robbins"
+   },
+   {
+    "f": "Discogs master 403934 的欄位：title「The Song Of Robbins」、掛名 Marty Robbins、year 1957、廠牌 Columbia、編號 CL 976、載體 Vinyl／LP／Album／Mono。",
+    "src": "https://api.discogs.com/database/search?q=Marty+Robbins+The+Song+of+Robbins+Columbia+CL+976&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1308728509 的 lookup 欄位：artistName「Marty Robbins」、collectionName「**The Songs of Robbins**」（複數）、releaseDate 1957-01-01、trackCount 12、copyright「℗ Originally Released 1957 Sony Music Entertainment Inc.」；12 軌的曲名與曲序與 MB 的 CL 976 逐軌相同（第 3 軌 Apple 作〈It's Too Late Now (To Worry Anymore)〉），12 軌皆帶 previewUrl。逐軌秒數依序為 154／166／139／198／180／137／151／120／136／135／138／189。",
+    "src": "https://itunes.apple.com/lookup?id=1308728509&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "MusicBrainz 上 Marty Robbins 的藝人 MBID 為 2c2add7c-9a99-4812-a20e-870d331f01fd；以 release-group?artist=&limit=100&offset= 分頁 browse 取滿，名下共 370 個 release-group（策展層 mbNote 所記，本次抽查相符：1956 年有《Rock'n Roll'n Robbins: Marty Robbins Sings》、1958 與 1965 年各有一張自我同名《Marty Robbins》）。",
+    "src": "https://musicbrainz.org/artist/2c2add7c-9a99-4812-a20e-870d331f01fd"
+   }
+  ],
+  "hookCandidates": [
+   "十二首全是別人唱紅過的鄉村曲，等於他自己開的一份師承清單",
+   "同一張碟的盤名在 Apple 上多了一個 s，單數與複數各有人用"
+  ],
+  "sound": "MB 的 1957 年 Columbia CL 976 逐軌曲長：A 面〈Lovesick Blues〉153 秒、〈I'm So Lonesome I Could Cry〉164、〈It's Too Late to Worry Any More〉137、〈Rose of Ol' Pawnee〉196、〈I Never Let You Cross My Mind〉179、〈I Hang My Head and Cry〉135；B 面〈You Only Want Me When You're Lonely〉150、〈Moanin' the Blues〉119、〈I'll Step Aside〉135、〈All the World Is Lonely Now〉135、〈Bouquet of Roses〉136、〈Have I Told You Lately That I Love You?〉187。最短的〈Moanin' the Blues〉一分五十九秒、最長的〈Rose of Ol' Pawnee〉三分十六秒（MB release b3f5ef47 曲長欄）。",
+  "keyTracks": [
+   "Lovesick Blues",
+   "I'm So Lonesome I Could Cry",
+   "Bouquet of Roses"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1957 與 MB first-release-date 1957、Discogs master 403934 的 1957（Columbia CL 976）、Apple releaseDate 1957-01-01、英文維基的「1957 年由 Columbia 發行」四方一致，無分歧。Apple 的日期是 `YYYY-01-01` 佔位值，只當年份訊號。另一個可用的錨點是維基給的《Billboard》DJ 票選成績：1957 年第 2 名、1958 年第 12 名。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，策展層也預估「Apple us／gb／de／au／ca 五個店面實搜皆無此張」。**兩邊都不成立。** 實測 search?term=Marty+Robbins+Song+of+Robbins&country=us 第一筆就是 **collectionId 1308728509《The Songs of Robbins》**（artistId 208369 本人、12 軌、℗1957 Sony Music），再以 lookup?id=1308728509&entity=song 覆核，12 軌與 MB 1957 年 Columbia CL 976 **逐軌同名同序**、12 軌皆有 previewUrl。查不到的原因是**盤名差一個字母**：卡單與 MB 是單數《The Song of Robbins》，Apple 用的是複數《The Songs of Robbins》（MB 自己也有一筆國別未填的 release 用複數標題）。建議探測檔補：ready／us／1308728509／12 軌，並把複數寫法補進 queryAlias。\n**擋下策展層說法**：curatorWhy 稱「Marty Robbins 在 Columbia 的第一張 LP」——**查不到出處且很可能不成立**：MB 上他名下 1956 年已有《Rock'n Roll'n Robbins: Marty Robbins Sings》（4a9b9806），策展層自己也把它列進「刻意不釘」。序數主張未寫進 facts，**行文不得寫「第一張」**。curatorWhy 另稱「曲目全是他挑的既有鄉村曲，等於他自己開的一份師承清單」——曲目本身（〈Lovesick Blues〉〈I'm So Lonesome I Could Cry〉〈Moanin' the Blues〉〈Bouquet of Roses〉等都是他人先唱紅的曲子）在 MB／Discogs／維基三份曲目表上看得到，但「他自己挑的」這個歸屬查不到出處；hookCandidate 已改寫成不帶歸屬的形式，行文亦不得寫成他本人的說法（第 128 條）。"
+ },
+ {
+  "key": "desc2:Marty Robbins|Devil Woman",
+  "artist": "Marty Robbins",
+  "album": "Devil Woman",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ab538cfb 的欄位：title「Devil Woman」、artist-credit「Marty Robbins」、first-release-date 1962、primary-type Album、secondary-types 空陣列、轄下**只有 1 個 release**：1962 US Official，12 軌，廠牌 Columbia、編號 CS 8718、載體 12\" Vinyl。",
+    "src": "https://musicbrainz.org/release-group/ab538cfb-857d-48ba-b3b2-3e20a0cef25e"
+   },
+   {
+    "f": "該 release 1b3528d2 的 12 軌曲序為 A1〈Devil Woman〉172 秒 A2〈Ain't Life a Crying Shame〉158 A3〈Time Can't Make Me Forget〉156 A4〈In the Ashes of an Old Love Affair〉122 A5〈The Hands You're Holding Now〉182 A6〈Worried〉125；B1〈Little Rich Girl〉149 B2〈Progressive Love〉121 B3〈I'm Beginning to Forget〉163 B4〈Love Is a Hurting Thing〉145 B5〈Kinda Halfway Feel〉163 B6〈The Wine Flowed Freely〉131。",
+    "src": "https://musicbrainz.org/release/1b3528d2-cb8d-4158-a3cb-b003bce6cd57"
+   },
+   {
+    "f": "Discogs master 324541 的欄位：title「Devil Woman」、掛名 Marty Robbins、year 1962、廠牌 Columbia 與 Marty's Music, Inc.、編號 **CL 1918**、載體 Vinyl／LP／Album／Mono（MB 那筆用的是立體聲編號 CS 8718）。同一次搜尋另回一筆 master 185661《Devil Woman / April Fool's Day》，1962 年 Columbia、編號 4-42486、7 吋 45 轉單曲。",
+    "src": "https://api.discogs.com/database/search?q=Marty+Robbins+Devil+Woman+Columbia&type=master"
+   },
+   {
+    "f": "英文維基〈Devil Woman (Marty Robbins song)〉記：這首歌由 Marty Robbins 自己創作並演唱，1962 年 6 月作為專輯《Devil Woman》的**首支單曲兼標題曲**發行；它是 Robbins 第七首登上鄉村榜冠軍的單曲，在榜首停留八週，並跨榜進入流行榜最高第 16 名；在英國榜上這是他最成功的一首單曲。",
+    "src": "https://en.wikipedia.org/wiki/Devil_Woman_(Marty_Robbins_song)"
+   },
+   {
+    "f": "同一條目列出多位其他藝人的翻唱與外語版：Trini Lopez 1968 年專輯《Welcome to Trini Country》、Grady Martin 1965 年的演奏版、波多黎各歌手 Chucho Avellanet 1963 年的西班牙語版〈Magia Blanca〉（由當時的電視主持人 Alfred D. Herger 譯詞，是他生涯第一首暢銷曲），另有墨西哥 Hermanos Carrión、祕魯 Gustavo Hit Moreno（1963）、委內瑞拉 Trio Venezuela 與 Chucho Sanoja 樂隊的西語版；南斯拉夫 beat 樂團 Zlatni Dečaci 1966 年出過塞爾維亞-克羅埃西亞語版〈Čudna devojka〉；新加坡歌手莊雪芳 1967 年在 Ruby Records 出過中文版〈小小寃家〉。",
+    "src": "https://en.wikipedia.org/wiki/Devil_Woman_(Marty_Robbins_song)"
+   },
+   {
+    "f": "Apple Music 以 artistId 208369（Marty Robbins）在 us／gb／ca／au／de 五個店面各做一次 lookup?id=208369&entity=album&limit=200：us 回 43 張、gb 回 49 張，五個店面的清單裡**都沒有《Devil Woman》**（同年只有《Marty After Midnight》，另有 1964 年的《Island Woman》這個盤名相近的別碟）。",
+    "src": "https://itunes.apple.com/lookup?id=208369&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "標題曲在鄉村榜首待了八週，還被翻成西班牙語、塞爾維亞-克羅埃西亞語與中文",
+   "整個 MusicBrainz 上這張碟只建了一筆壓片紀錄"
+  ],
+  "sound": "MB 的 1962 年 Columbia CS 8718 逐軌曲長：A 面〈Devil Woman〉172 秒、〈Ain't Life a Crying Shame〉158、〈Time Can't Make Me Forget〉156、〈In the Ashes of an Old Love Affair〉122、〈The Hands You're Holding Now〉182、〈Worried〉125；B 面〈Little Rich Girl〉149、〈Progressive Love〉121、〈I'm Beginning to Forget〉163、〈Love Is a Hurting Thing〉145、〈Kinda Halfway Feel〉163、〈The Wine Flowed Freely〉131。十二軌全部在兩分到三分零二秒之間，最長的是〈The Hands You're Holding Now〉182 秒（MB release 1b3528d2 曲長欄）。",
+  "keyTracks": [
+   "Devil Woman",
+   "The Hands You're Holding Now",
+   "Little Rich Girl"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1962 與 MB first-release-date 1962、Discogs master 324541 的 1962（Columbia CL 1918 單聲道／MB 的 CS 8718 立體聲）、英文維基的「1962 年 6 月發行標題單曲」一致，無分歧。要注意 MB 轄下**只有一筆 release**，是本組釘位證據最薄的一張——但 primary-type、artist-credit、年份與廠牌四項都對得上 Discogs 的 Columbia 條目，身分沒有疑義。",
+  "notes": "試聽覆核：探測記 unavailable。**實測維持 unavailable，且證據比策展層的更硬**——不是用 search 端點判的，而是打藝人目錄端點 lookup?id=208369&entity=album&limit=200，us／gb／ca／au／de 五個店面各回 43–49 張完整目錄，**五份清單裡都沒有這張碟**（第 166 條要求的「目錄端點覆核」已做）。最像的假陽性是 1964 年的《Island Woman》與同年的《Marty After Midnight》，兩張都不是本張。**不留 URL，也不得取任何一筆同名伴唱帶／翻唱的 collectionId 充數**——策展層在 curatorRisk 明令「不得取搜尋第一筆」（us 搜尋第一筆是 ProSource Karaoke Band 的同名單曲），實測相符。\n封面：策展層記 CAA release-group 端點實測 200，本次未重複探測（封面不在本層職責內），沿用。\n編號要注意：**Discogs 原盤是單聲道 CL 1918，MB 那筆是立體聲 CS 8718**——策展層 label 欄兩個都寫了，正確。\n**擋下策展層說法**：curatorWhy 稱標題曲「是他 1950 年代末以後最大的一首跨榜單曲」——維基給的是具體數字（鄉村榜冠軍八週、流行榜第 16 名、第七首鄉村榜冠軍、英國榜上他最成功的一首），**沒有「1950 年代末以後最大」這個排序**，最高級說法未寫進 facts，行文請改用那幾個數字。curatorWhy 另稱本張是「《Gunfighter Ballads》之後他把敘事歌路線帶回當代題材的一張」——查不到出處，未寫進 facts。"
+ },
+ {
+  "key": "desc2:Randy Travis|Old 8x10",
+  "artist": "Randy Travis",
+  "album": "Old 8x10",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 12e22c63 的欄位：title「Old 8x10」（小寫 x）、artist-credit「Randy Travis」、first-release-date **1988-07-12**、primary-type Album、secondary-types 空陣列、轄下 5 個 release 全數 Official——1988-07-12 US（**10 軌**，Warner Bros. Records，編號 9 25738-2）、1988 DE 兩筆（**各 11 軌**，Warner Bros. Records，925 466-1／925 466-2）、2009-03-13 XW（10 軌，Warner Bros. Nashville）、一筆無日期（10 軌，Warner Bros. Records 9 25738-2 與 BMG Direct D 100008）。",
+    "src": "https://musicbrainz.org/release-group/12e22c63-fbd5-32e8-8756-bd1d7552027e"
+   },
+   {
+    "f": "1988 年美國盤（MB release 3ec7f470）的 10 軌曲序為 1〈Honky Tonk Moon〉170 秒 2〈Deeper Than the Holler〉220 3〈It's Out of My Hands〉252 4〈Is It Still Over?〉191 5〈Old 8x10〉179 6〈Written in Stone〉197 7〈The Blues in Black and White〉181 8〈Here in My Heart〉193 9〈We Ain't Out of Love Yet〉145 10〈Promises〉242。",
+    "src": "https://musicbrainz.org/release/3ec7f470-6bcd-4c1d-a306-84ef2cff44e2"
+   },
+   {
+    "f": "英文維基〈Old 8×10〉記：這是 Randy Travis 的**第三張錄音室專輯**，1988 年 7 月 12 日由 Warner Records 發行。專輯推出〈Honky Tonk Moon〉〈Deeper Than the Holler〉〈Is It Still Over〉〈Promises〉四首單曲，其中除〈Promises〉外，其餘三首都在 1980 年代末登上 Hot Country Songs 榜冠軍。**英國版與德國版收錄了一首 bonus track〈Forever and Ever, Amen〉**（德國版是 Randy Travis 在該地的首次發行）。1990 年 1 月這張為他拿下三座全美音樂獎：最受歡迎鄉村男歌手、最受歡迎鄉村專輯、最受歡迎鄉村單曲（〈Deeper Than the Holler〉）。",
+    "src": "https://en.wikipedia.org/wiki/Old_8%C3%9710"
+   },
+   {
+    "f": "同一條目的人員名單列出參與樂手，包含 Dobro 的 Jerry Douglas、班鳩的 Béla Fleck、鋼棒吉他的 Doyle Grisham、Pedabro 的 Paul Franklin、鼓手 Eddie Bayers 與 Larrie Londin、貝斯 David Hungate、口琴與打擊 Terry McMillan，以及擔任和聲的 Baillie & the Boys。",
+    "src": "https://en.wikipedia.org/wiki/Old_8%C3%9710"
+   },
+   {
+    "f": "Discogs master 148466 的欄位：title「Old 8x10」、掛名 Randy Travis、year 1988、廠牌 Warner Bros. Records、編號 9 25738-1、載體 Vinyl／LP／Album／Stereo。",
+    "src": "https://api.discogs.com/database/search?q=Randy+Travis+Old+8x10+Warner&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 308387566 的 lookup 欄位：artistName「Randy Travis」、collectionName「Old 8X10」（大寫 X）、releaseDate 1988-07-12、trackCount 10、copyright「℗ 1987 Warner Records Inc.」；10 軌的曲名與曲序與 MB 的美國盤逐軌相同，10 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=308387566&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "美國盤十首，英國與德國盤多印一首當附錄",
+   "十首裡有三首後來都做到鄉村榜第一"
+  ],
+  "sound": "MB 1988 年美國盤（Warner Bros. 9 25738-2）的 10 軌逐軌秒數依序為〈Honky Tonk Moon〉170、〈Deeper Than the Holler〉220、〈It's Out of My Hands〉252、〈Is It Still Over?〉191、〈Old 8x10〉179、〈Written in Stone〉197、〈The Blues in Black and White〉181、〈Here in My Heart〉193、〈We Ain't Out of Love Yet〉145、〈Promises〉242。最長的〈It's Out of My Hands〉四分十二秒、最短的〈We Ain't Out of Love Yet〉兩分二十五秒（MB release 3ec7f470 曲長欄）。維基的人員名單顯示班底裡有 Jerry Douglas 的 Dobro 與 Béla Fleck 的班鳩。",
+  "keyTracks": [
+   "Honky Tonk Moon",
+   "Deeper Than the Holler",
+   "Old 8x10"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988-07-12、Discogs master 148466 的 1988、Apple releaseDate 1988-07-12、英文維基的「1988 年 7 月 12 日由 Warner Records 發行」四方一致，給到日且相同，無分歧。唯一要記的是 Apple 那筆的 ℗ 年寫 **1987**（比發行年早一年），依第 77 條只當訊號、不當版本門檻——該筆的軌數與曲序與美國原盤完全相同，不是別的版本。",
+  "notes": "試聽覆核：探測記 ready／us／308387566／10 軌。逐項覆核**維持 ready**——Apple 那 10 軌與 MB 1988 年美國盤 **逐軌同名同序**，首軌兩邊同為〈Honky Tonk Moon〉，無加曲、無併輯。\n**軌數兩說已查清，不是錯配**：MB 轄下兩筆 1988 年德國盤各 11 軌，比美國盤多一軌——英文維基交代了原因：**英國版與德國版多收〈Forever and Ever, Amen〉一首 bonus track**。所以「10 軌」與「11 軌」是兩個地區版本，不是版本錯配。**行文寫軌數時要指版本**（美國盤 10 軌）。\n盤名的乘號三種寫法都確認過：MB 與 Discogs 作 **Old 8x10**（小寫 x）、Apple 作 **Old 8X10**（大寫 X）、英文維基條目名作 **Old 8×10**（U+00D7）。三種都要進去重與查詢，策展層已在 queryAlias 填了後兩種，正確。\n**擋下策展層說法**：curatorWhy 稱本張是「他連續三張百萬銷量之後、把 neotraditional country 這條路線坐實的一張」——「連續三張百萬銷量」與「坐實 neotraditional country」兩項都查不到出處（維基只給四首單曲成績與三座全美音樂獎），未寫進 facts。「第三張專輯」這一項**成立**，維基明寫 third studio album。"
+ },
+ {
+  "key": "desc2:Garth Brooks|The Chase",
+  "artist": "Garth Brooks",
+  "album": "The Chase",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1d1c66cc 的欄位：title「The Chase」、artist-credit「Garth Brooks」、first-release-date **1992-09-22**、primary-type Album、secondary-types 空陣列、轄下 15 個 release，其中 14 筆 Official、1 筆（2017 年《The Chase (25th Anniversary Limited Edition)》，Pearl Records）status 未填。1992 年的那批全部是 **10 軌**（US ×4、CA ×2、XE ×1，廠牌欄 Liberty，編號如 CDP 598743、C2 98743、CDP-0777-7-98743-2-3）；1998、2000、2005、2007 年的四筆 Capitol／Pearl 再發是 11 軌。",
+    "src": "https://musicbrainz.org/release-group/1d1c66cc-84b7-3c72-ac81-84f3e7785c79"
+   },
+   {
+    "f": "英文維基〈The Chase (Garth Brooks album)〉記：這是 Garth Brooks 的**第四張錄音室專輯**，1992 年 9 月 14 日由 Liberty Records 發行，首週在美國賣出 403000 張，同時登上 Billboard 200 與 Top Country Albums 兩張榜的冠軍，並獲 RIAA 鑽石認證；在英國的鄉村專輯榜也拿下冠軍、並在前十名停留多月。條目並註明曲目表裡有一軌**不在原始發行版上**，是這張碟被收進 Brooks 的第一套 Limited Series 盒裝時才加進去、此後才成為後續版本的一部分。",
+    "src": "https://en.wikipedia.org/wiki/The_Chase_(Garth_Brooks_album)"
+   },
+   {
+    "f": "同一條目引 Brooks 對這張碟的說法：「The Chase is definitely the most personal album I think I've ever been involved with. This is as much me as anybody has ever seen. It was recorded at a time in my life that was probably the most trying time of my life. ... when you hear this album or snippets from it, and you hear things that are more, probably socially oriented as far as concerns of the world. And some things that are a little bit darker. That's probably 'cause that's where I was at that time.」條目並記〈Dixie Chicken〉是翻唱 Little Feat 1973 年同名專輯的曲子，〈Night Rider's Lament〉是 Jerry Jeff Walker 與 Chris LeDoux 都錄過的西部歌謠。製作人為 Allen Reynolds。",
+    "src": "https://en.wikipedia.org/wiki/The_Chase_(Garth_Brooks_album)"
+   },
+   {
+    "f": "英文維基〈We Shall Be Free〉記：這首由 Brooks 與 Stephanie Davis 合寫的曲子，1992 年 8 月作為《The Chase》的**首支單曲**發行，在 Billboard Hot Country Singles & Tracks 榜最高第 12 名，**是他第一首未能打進該榜前十的單曲，原因是部分電台拒播**；它在 Billboard Christian Songs 榜最高第 22 名，並為 Brooks 贏得 1993 年的 GLAAD Media Award。歌詞觸及的題材包括世界飢餓、言論自由、無家可歸、恐同、種族歧視與宗教自由。條目並記 Brooks 說這首歌的靈感來自 1992 年洛杉磯暴動期間他人在洛杉磯參加 ACM 頒獎典禮的經歷。",
+    "src": "https://en.wikipedia.org/wiki/We_Shall_Be_Free"
+   },
+   {
+    "f": "Discogs master 160057 的欄位：title「The Chase」、掛名 Garth Brooks、year 1992、廠牌 Liberty、編號 CDP 7 98743 2、載體 CD／Album。",
+    "src": "https://api.discogs.com/database/search?q=Garth+Brooks+The+Chase+Liberty+1992&type=master"
+   },
+   {
+    "f": "Apple Music 以 artistId **329451**（Garth Brooks）在 us／gb／ca／au／de 五個店面各做一次 lookup?id=329451&entity=album&limit=200，**五個店面各只回 1 筆**，而且是同一筆：collectionId 1836051401《Shallow - Single》（2021-02-05，掛名 Trisha Yearwood & Garth Brooks，1 軌）。以 search?term=Garth+Brooks&entity=album 查 us 則回 23 筆，其中沒有一筆是他本人的專輯——全是致敬輯（Garth Brooks Tribute）、搖籃曲改編（Hushabye Baby）、翻唱（Robert Mizzell、Pickin' On Series）、鋼琴演奏版與同名單曲。",
+    "src": "https://itunes.apple.com/lookup?id=329451&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "首支單曲被部分電台拒播，成了他第一首擠不進榜上前十的歌",
+   "首週四十萬張，兩張榜同時第一"
+  ],
+  "sound": "本張在 Apple Music 五個店面皆無條目、MB 轄下 15 筆 release 也沒有任何一筆填了逐軌曲長，**因此無可引用的曲長資料**。可寫的只有版本結構：1992 年的原盤是 10 軌（MB 該年份的 7 筆 release 一致），1998 年以後的 Capitol／Pearl 再發是 11 軌，多出來的那一軌依英文維基是「不在原始發行版上、收進 Limited Series 盒裝時才加入」的曲子。行文不得描述樂器與音色（無來源）。",
+  "keyTracks": [
+   "We Shall Be Free",
+   "Dixie Chicken",
+   "Night Rider's Lament"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1992 無爭議，但**日期有兩說**：MB first-release-date 記 **1992-09-22**（其下有兩筆 release 標同一天），**英文維基記 1992 年 9 月 14 日**；Discogs master 160057 只給到 1992。年份三方一致、日期差八天，兩說各有來源，依第 141 條屬「兩個來源各有具體記載且互相矛盾」，**卡單值不動、行文不得寫到日**。可用的錨點是「首支單曲〈We Shall Be Free〉1992 年 8 月發行」（維基），比專輯早一個月。",
+  "notes": "試聽覆核：探測記 unavailable。**實測維持 unavailable，且已依第 166 條走目錄端點覆核**——不是靠 search 判的：Apple 的 Garth Brooks 藝人實體是 **artistId 329451**，在 us／gb／ca／au／de 五個店面 lookup?id=329451&entity=album&limit=200，**五個店面各只回 1 筆**，是 2021 年與 Trisha Yearwood 合唱的《Shallow - Single》。他的專輯目錄在這五個店面上完全不存在。**不留 URL；並且明令不得取任何一筆致敬輯／伴唱帶／翻唱輯的 collectionId 充數**——us 的 search 回的 23 筆全是這一類（Garth Brooks Tribute artistId 79980191、Hushabye Baby、Pickin' On Series 等），這正是第 162 條末段講的「反例識別碼被下游當成指定值」的形狀，策展層已明令，實測相符。\n**擋下策展層說法（兩處）**：\n(1) curatorWhy 稱本張是「他第一次把題材推到族群與宗教爭議上的一張」——**方向對但主體錯**。有來源的是**單曲**〈We Shall Be Free〉：維基記它觸及恐同、種族歧視與宗教自由等題材、遭部分電台拒播、成為他第一首未進前十的單曲、獲 1993 年 GLAAD Media Award。**專輯層級沒有這個陳述**，而「第一次」這個序數也只在「第一首未進前十的單曲」這個具體意義上成立。行文要寫爭議，必須寫到單曲名並用維基給的那幾項具體事實。\n(2) curatorWhy 稱「當年的銷量仍以千萬計，但爭議也讓它成為他商業曲線的轉折點」——**「商業曲線的轉折點」查不到出處，而且與來源相反**：維基記它首週 403000 張、Billboard 200 與 Top Country Albums 雙榜冠軍、RIAA 鑽石認證、英國鄉村榜冠軍。這個評價未寫進 facts，**行文不得沿用**。\n軌數要注意：1992 年原盤 10 軌、1998 年後的再發 11 軌，多的那一軌依維基是 Limited Series 盒裝才加入的。**行文寫軌數要指版本。**"
+ },
+ {
+  "key": "desc2:The Louvin Brothers|Nearer My God to Thee",
+  "artist": "The Louvin Brothers",
+  "album": "Nearer My God to Thee",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ac6ec6ea 的欄位：title「Nearer My God to Thee」、artist-credit「The Louvin Brothers」、first-release-date 1957、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1957 US（12 軌，Capitol Records，編號 T 825）、1962 US（12 軌，同編號 T 825）、2013-12-14 GB（14 軌）。",
+    "src": "https://musicbrainz.org/release-group/ac6ec6ea-edce-41e7-80d3-e8fdbe1d3b4a"
+   },
+   {
+    "f": "1957 年 Capitol T 825（MB release 85959971）的 12 軌曲序為 A1〈Are You Washed in the Blood〉143 秒 A2〈Nearer My God to Thee〉166 A3〈Wait a Little Longer, Please Jesus〉166 A4〈I Can't Say No〉155 A5〈I Won't Have to Cross Jordan Alone〉143 A6〈There's No Excuse〉180；B1〈This Little Light of Mine〉149 B2〈Praying〉159 B3〈Thankful〉175 B4〈Lord, I'm Coming Home〉193 B5〈Last Chance to Pray〉160 B6〈I Steal Away and Pray〉149。",
+    "src": "https://musicbrainz.org/release/85959971-afeb-44a1-ab3b-7bbd21933f1e"
+   },
+   {
+    "f": "英文維基〈Nearer My God to Thee (album)〉記：這是美國鄉村二重唱 The Louvin Brothers 於 1957 年發行的一張藍草福音專輯，**是他們在 Capitol 的第一張福音專輯**，此前他們在 1952 至 1955 年間已發過數首福音單曲，那些單曲後來被收進另一張專輯《The Family Who Prays》。條目並記 1992 年 Bear Family Records 的八張 CD 盒裝《Close Harmony》收錄了本張全部曲目，2002 年 King Records、2007 年 Capitol Nashville Records 各再發過一次。",
+    "src": "https://en.wikipedia.org/wiki/Nearer_My_God_to_Thee_(album)"
+   },
+   {
+    "f": "同一條目的曲目表逐首標出作者：〈Are You Washed in the Blood?〉（Mark Johnson／傳統）、〈Nearer, My God, to Thee〉（Lowell Mason／傳統）、〈Wait a Little Longer, Please Jesus〉（Hazel Houser、Smith）、〈I Can't Say No〉〈There's No Excuse〉〈Thankful〉〈Last Chance to Pray〉〈I Steal Away and Pray〉（皆 Ira Louvin、Charlie Louvin）、〈I Won't Have to Cross Jordan Alone〉（C. E. Dunham、T. Ramsey）、〈This Little Light of Mine〉（傳統）、〈Praying〉（Hazel Houser）、〈Lord, I'm Coming Home〉（傳統）。人員為 Charlie Louvin 演唱與吉他、Ira Louvin 演唱與曼陀林。",
+    "src": "https://en.wikipedia.org/wiki/Nearer_My_God_to_Thee_(album)"
+   },
+   {
+    "f": "Discogs master 698879 的欄位：title「Nearer My God To Thee」、掛名 The Louvin Brothers、year 1957、廠牌 Capitol Records、編號 T825、載體 Vinyl／LP／Album／Repress／Mono。",
+    "src": "https://api.discogs.com/database/search?q=Louvin+Brothers+Nearer+My+God+to+Thee+Capitol&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 714637977 的 lookup 欄位：artistName「The Louvin Brothers」、collectionName「Nearer My God to Thee」、releaseDate 1957-01-01、trackCount 12、copyright「℗ 2007 Capitol Records Nashville」；12 軌的曲名與曲序與 MB 的 T 825 逐軌相同，12 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=714637977&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十二首裡有五首是兄弟倆自己寫的，其餘是聖詩與別人的曲",
+   "兩個人、一把吉他、一把曼陀林，整張碟就這樣錄完"
+  ],
+  "sound": "MB 的 1957 年 Capitol T 825 逐軌曲長：A 面〈Are You Washed in the Blood〉143 秒、〈Nearer My God to Thee〉166、〈Wait a Little Longer, Please Jesus〉166、〈I Can't Say No〉155、〈I Won't Have to Cross Jordan Alone〉143、〈There's No Excuse〉180；B 面〈This Little Light of Mine〉149、〈Praying〉159、〈Thankful〉175、〈Lord, I'm Coming Home〉193、〈Last Chance to Pray〉160、〈I Steal Away and Pray〉149。十二軌全部落在兩分二十三秒到三分十三秒之間，最長的〈Lord, I'm Coming Home〉193 秒；維基的人員欄只列兩個人——Charlie Louvin（演唱、吉他）與 Ira Louvin（演唱、曼陀林）。",
+  "keyTracks": [
+   "Nearer My God to Thee",
+   "Are You Washed in the Blood",
+   "I Won't Have to Cross Jordan Alone"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1957 與 MB first-release-date 1957、Discogs master 698879 的 1957（Capitol T825）、Apple releaseDate 1957-01-01、英文維基的「1957 年發行」四方一致，無分歧。Apple 的日期是 `YYYY-01-01` 佔位值、℗ 年是 2007（Capitol Nashville 再發），依第 77／140 條只當訊號。",
+  "notes": "試聽覆核：探測記 ready／us／714637977／12 軌。逐項覆核**維持 ready**——Apple 那 12 軌與 MB 1957 年 Capitol T 825 **逐軌同名同序**，首軌兩邊同為〈Are You Washed In the Blood〉，無加曲、無併輯。MB 轄下另有一筆 2013 年英國盤是 14 軌，**探測到的不是那一筆**。\n**策展層說法查證結果**：curatorWhy 稱本張是「The Louvin Brothers 在 Capitol 的第一張福音專輯」——**成立**，英文維基明寫「the duo's first Gospel album for Capitol」，已寫進 facts。**擋下**：curatorWhy 稱「他們是先以福音二重唱立足，才有後來《Tragic Songs of Life》那批世俗曲的」——**與時序不符**：《Tragic Songs of Life》是 1956 年、早於本張（1957）；維基能支持的只有「1952–1955 年間先發過數首福音**單曲**」，那是單曲不是專輯。**行文不得寫成「福音在前、世俗在後」**。curatorWhy 另稱本張是「他們兩條線裡份量較重的那一條的起點」——「份量較重」是評價、無來源，未寫進 facts。\n身分風險（策展層已標，實查相符）：〈Nearer, My God, to Thee〉是流傳極廣的傳統聖詩，字串比對會撈回大量別人的碟，釘位必須用 MBID。"
+ },
+ {
+  "key": "desc2:The Louvin Brothers|My Baby's Gone",
+  "artist": "The Louvin Brothers",
+  "album": "My Baby's Gone",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 84efe5dd 的欄位：title「My Baby's Gone」、artist-credit「The Louvin Brothers」、first-release-date 1960、primary-type Album、secondary-types 空陣列、轄下 3 個 release——1960 US Official（12 軌，Capitol Records，編號 **T 1385**）、一筆無日期 GB Official（12 軌，Stetson，HAT 3028）、一筆 2014-10-28 國別與 status 皆未填（24 軌）。",
+    "src": "https://musicbrainz.org/release-group/84efe5dd-171b-4afc-bf84-74451984c47c"
+   },
+   {
+    "f": "1960 年 Capitol T 1385（MB release 85c5df59）的 12 軌曲序為 A1〈My Baby's Gone〉160 秒 A2〈Blue From Now On〉131 A3〈When I Loved You〉155 A4〈She Didn't Even Know I Was Gone〉138 A5〈You're Running Wild〉134 A6〈Plenty of Everything but You〉146；B1〈I Wish You Knew〉146 B2〈While You're Cheatin' on Me〉122 B3〈Lorene〉118 B4〈I Wish It Had Been a Dream〉150 B5〈The First One to Love You〉157 B6〈My Baby Came Back〉131。",
+    "src": "https://musicbrainz.org/release/85c5df59-edbb-4ce3-8133-2f89300cb5ae"
+   },
+   {
+    "f": "英文維基〈My Baby's Gone (album)〉記：這是 The Louvin Brothers 於 1960 年發行的專輯。首支單曲〈My Baby Came Back〉／B 面〈She Didn't Even Know I Was Gone〉未進榜，接續的單曲〈My Baby's Gone〉／B 面〈Lorene〉則登上 Billboard Country Singles 榜第 9 名、在榜超過 20 週。條目並記大部分曲目錄於 1958 年、其中四首當年已作為單曲發行；〈I Wish It Had Been a Dream〉也發過單曲但成績不佳。",
+    "src": "https://en.wikipedia.org/wiki/My_Baby%27s_Gone_(album)"
+   },
+   {
+    "f": "同一條目記：兄弟倆此前錄過 Hazel Houser 寫的福音曲，而〈My Baby's Gone〉是他們錄過她唯一一首世俗曲；**封面上那個神情沮喪的男子的畫面是兩兄弟自己設計的**。1992 年 Bear Family Records 的八張 CD 盒裝《Close Harmony》收錄了本張全部曲目。",
+    "src": "https://en.wikipedia.org/wiki/My_Baby%27s_Gone_(album)"
+   },
+   {
+    "f": "同一條目引 AllMusic 樂評 Timothy Monger：這張碟「finds them back on the dark side, delivering a dozen haunting songs of heartbreak and woe that are every bit as masterful as the fire-and-brimstone fury of their previous LP... If Satan Is Real is the height of the duo's gospel style, then My Baby's Gone is the Louvin Brothers at their country best.」；另引《Record Collector》的 Kris Needs 稱它是「an overlooked masterpiece」。",
+    "src": "https://en.wikipedia.org/wiki/My_Baby%27s_Gone_(album)"
+   },
+   {
+    "f": "Discogs master 286113 的欄位：title「My Baby's Gone」、掛名 The Louvin Brothers、year 1960、廠牌 Capitol Records、編號 **T1385**、載體 Vinyl／LP／Album。同一次搜尋另回 master 473933《My Baby's Gone / Lorene》，1958 年 Capitol、編號 F4055、7 吋 45 轉單曲。",
+    "src": "https://api.discogs.com/database/search?q=Louvin+Brothers+My+Baby%27s+Gone&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 714643546 的 lookup 欄位：artistName「The Louvin Brothers」、collectionName「My Baby's Gone」、releaseDate 1960-01-01、trackCount 12、copyright「℗ 2007 Capitol Records Nashville」；12 軌的曲名與曲序與 MB 的 T 1385 逐軌相同，12 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=714643546&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "封面上那個垂頭喪氣的男人，是兩兄弟自己想出來的畫面",
+   "十二首裡大半錄於 1958 年，先當單曲發過才收成一張碟"
+  ],
+  "sound": "MB 的 1960 年 Capitol T 1385 逐軌曲長：A 面〈My Baby's Gone〉160 秒、〈Blue From Now On〉131、〈When I Loved You〉155、〈She Didn't Even Know I Was Gone〉138、〈You're Running Wild〉134、〈Plenty of Everything but You〉146；B 面〈I Wish You Knew〉146、〈While You're Cheatin' on Me〉122、〈Lorene〉118、〈I Wish It Had Been a Dream〉150、〈The First One to Love You〉157、〈My Baby Came Back〉131。十二軌全部在一分五十八秒到兩分四十秒之間，是十二首兩分鐘上下的曲子排成一張唱片（MB release 85c5df59 曲長欄）。",
+  "keyTracks": [
+   "My Baby's Gone",
+   "Lorene",
+   "My Baby Came Back"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1960 與 MB first-release-date 1960、Discogs master 286113 的 1960（Capitol T1385）、Apple releaseDate 1960-01-01、英文維基的「1960 年發行」四方一致，無分歧。要分清的是**錄音年**：維基記大部分曲目錄於 1958 年、其中四首當年已發過單曲（Discogs master 473933 即 1958 年 Capitol F4055 的〈My Baby's Gone / Lorene〉單曲），與 1960 年的專輯發行是兩件事。",
+  "notes": "**封面：CAA 兩路皆空，結論是「真的沒有」不是「釘錯 release」。** 依派工要求用 release 端點逐筆覆核，實測（GET、follow redirect）：coverartarchive.org/release-group/84efe5dd… **404**；轄下三個 release 逐一測——85c5df59（1960 US Capitol T 1385）**404**、c9968a4a（GB Stetson HAT 3028）**404**、73261317（2014 那筆 24 軌）**404**。**四個端點全部 404，CAA 這張碟一張圖都沒有**，所以策展層改走 §4 `apple-verified-collection` 是正確的處置，不是釘錯位置造成的假 404。人工核對過的 Apple us collectionId **714643546** 三項相符（artistName／collectionName／1960），並且本次再加驗一項：**12 軌曲名與曲序與 MB 的 Capitol T 1385 逐軌相同**——這比策展層當初的三項核對更硬。依第 134 條，同一個 collectionId 封面與試聽都可用。\n試聽覆核：探測記 ready／us／714643546／12 軌，**維持 ready**（依據同上，逐軌同名同序，首軌兩邊同為〈My Baby's Gone〉）。\n**更正策展層一處欄位（編號寫錯）**：卡單與 prop 的 `label` 欄寫「Capitol Records（catno T 1834）」——**T 1834 是錯的**。MB 1960 年那筆與 Discogs master 286113 都記 **T 1385**（Discogs 寫作 T1385）。請下游改用 T 1385。\n**擋下策展層說法**：curatorWhy 稱「標題曲後來成為他們被翻唱最多的曲子之一」——查不到出處（維基只給榜位與在榜週數），未寫進 facts。curatorWhy 另稱本張是「世俗曲那條線在《Tragic Songs of Life》之後最完整的一張」——「最完整」是評價，無來源；可以引用的是 AllMusic 的 Timothy Monger 那段有署名的評語（已寫進 facts），行文若要寫評價必須註明是誰說的（第 128 條）。\n撞卡（策展層已標，實查相符）：2006 年的精選《My Baby's Gone: The Essential Louvin Brothers 1955-1964》盤名完整包含本張，子字串比對必配錯，釘位用 MBID。"
+ },
+ {
+  "key": "desc2:Flatt & Scruggs|Songs of the Famous Carter Family",
+  "artist": "Flatt & Scruggs",
+  "album": "Songs of the Famous Carter Family",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8428462a 的欄位：title「Songs of the Famous Carter Family」、artist-credit「**Lester Flatt & Earl Scruggs featuring Mother Maybelle Carter & the Foggy Mountain Boys**」、first-release-date 1961、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 Official——1961 US（12 軌，Columbia，編號 CL 1664）、1990 國別未填（12 軌，Columbia，CK 8464）、一筆無日期 XW（12 軌，Columbia）、一筆無日期國別未填（12 軌）。",
+    "src": "https://musicbrainz.org/release-group/8428462a-e472-32d5-985b-cab8e725a350"
+   },
+   {
+    "f": "1961 年 Columbia CL 1664（MB release bad648c5）的 12 軌曲序為 A1〈Keep on the Sunny Side〉185 秒 A2〈Foggy Mountain Top〉144 A3〈False-Hearted Lover〉140 A4〈Jimmy Brown the Newsboy〉152 A5〈You Are My Flower〉162 A6〈On the Rock Where Moses Stood〉145；B1〈Forsaken Love〉144 B2〈The Homestead on the Farm〉128 B3〈Pickin' in the Wildwood〉135 B4〈Worried Man Blues〉120 B5〈The Storms Are on the Ocean〉164 B6〈Gathering Flowers From the Hillside〉130。",
+    "src": "https://musicbrainz.org/release/bad648c5-2dac-40d8-935f-9db911c02013"
+   },
+   {
+    "f": "英文維基〈Songs of the Famous Carter Family〉記：這是藍草藝人 Flatt and Scruggs 與 Mother Maybelle Carter、Foggy Mountain Boys 合作的錄音室專輯，1961 年由 Columbia Records 發行，編號 CL 1664（單聲道）與 CS 8464（立體聲）。條目記這張發行時《Billboard》還沒有開設 Top Country Albums 榜（該榜 1964 年才開始），並記它**是 Louise Scruggs 為樂團「換面貌」計畫的一部分——做法是把更早的民謠曲加進他們的曲目**。AllMusic 給三星，樂評 Jim Smith 寫 Flatt and Scruggs「cool[ed] their famous 'overdrive' to turn in a collection of relaxed, almost dreamy adaptations of Carter tunes」。",
+    "src": "https://en.wikipedia.org/wiki/Songs_of_the_Famous_Carter_Family"
+   },
+   {
+    "f": "英文維基〈Flatt and Scruggs〉記：Lester Flatt（吉他、演唱）與 Earl Scruggs（班鳩）1948 年組成這個二重唱，兩人 1945 至 1948 年間都待過 Bill Monroe 的 Blue Grass Boys；他們的伴奏班底叫 the Foggy Mountain Boys，成員包括小提琴手 Paul Warren、Dobro 手 Josh Graves、貝斯手 English P.「Cousin Jake」Tullock 與曼陀林手 John「Curly」Seckler。兩人合作到 1969 年拆夥，1985 年入選鄉村音樂名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Flatt_and_Scruggs"
+   },
+   {
+    "f": "Discogs master 515265 的欄位：掛名「Lester Flatt & Earl Scruggs Featuring Mother Maybelle Carter & The Foggy Mountain Boys」、title「Songs Of The Famous Carter Family」、year 1961、廠牌 Columbia、編號 CL 1664、載體 Vinyl／LP／Album／Mono。",
+    "src": "https://api.discogs.com/database/search?q=Flatt+Scruggs+Songs+of+the+Famous+Carter+Family&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 220100215 的 lookup 欄位：artistName「Lester Flatt & Earl Scruggs」、collectionName「Songs of the Famous Carter Family」、releaseDate 1961-01-01、trackCount 12、copyright「℗ Originally released 1961. All rights reserved by Sony BMG Music Entertainment」；12 軌的曲名與曲序與 MB 的 CL 1664 逐軌相同，12 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=220100215&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "唱片上的掛名把四個名字串成一句：兩位主角、一位客座、一支伴奏班底",
+   "這張出的時候，鄉村專輯榜還要三年才誕生"
+  ],
+  "sound": "MB 的 1961 年 Columbia CL 1664 逐軌曲長：A 面〈Keep on the Sunny Side〉185 秒、〈Foggy Mountain Top〉144、〈False-Hearted Lover〉140、〈Jimmy Brown the Newsboy〉152、〈You Are My Flower〉162、〈On the Rock Where Moses Stood〉145；B 面〈Forsaken Love〉144、〈The Homestead on the Farm〉128、〈Pickin' in the Wildwood〉135、〈Worried Man Blues〉120、〈The Storms Are on the Ocean〉164、〈Gathering Flowers From the Hillside〉130。十二軌全部在兩分到三分零五秒之間，最短的〈Worried Man Blues〉整整兩分鐘（MB release bad648c5 曲長欄）。樂評 Jim Smith 的說法是他們在這張碟上把招牌的 overdrive 收了起來（維基引 AllMusic，有署名，可引用）。",
+  "keyTracks": [
+   "Keep on the Sunny Side",
+   "Worried Man Blues",
+   "You Are My Flower"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1961 與 MB first-release-date 1961、Discogs master 515265 的 1961（Columbia CL 1664）、Apple releaseDate 1961-01-01、英文維基的「1961 年由 Columbia 發行、編號 CL 1664／CS 8464」四方一致，無分歧。Apple 的日期是 `YYYY-01-01` 佔位值，只當年份訊號。",
+  "notes": "試聽覆核：探測記 ready／us／220100215／12 軌。逐項覆核**維持 ready**——Apple 那 12 軌與 MB 1961 年 Columbia CL 1664 **逐軌同名同序**，首軌兩邊同為〈Keep On the Sunny Side〉，無加曲、無併輯。\n掛名三種寫法都確認過：MB 實體 artist-credit 是「Lester Flatt & Earl Scruggs featuring Mother Maybelle Carter & the Foggy Mountain Boys」、Discogs 同（大小寫略異）、Apple 記「Lester Flatt & Earl Scruggs」、池中既有三張用「Flatt & Scruggs」。卡片依池中寫法取 Flatt & Scruggs、另兩種進 queryAlias——策展層的處置正確。\n**策展層說法查證結果**：curatorWhy 稱「Flatt & Scruggs 與 Maybelle Carter 同台錄的一張」——**成立**，MB 的 artist-credit 與 Discogs 掛名都把 Mother Maybelle Carter 寫進 featuring，維基標題句亦然。**擋下**：curatorWhy 稱「等於藍草第一代直接回頭處理 Carter Family 的曲庫，是這兩支家系在唱片上少數的直接交會」——「少數的直接交會」是計數／稀有性主張，查不到出處，未寫進 facts。**改用有來源的更好說法**：維基記這張是 **Louise Scruggs 為樂團「換面貌」計畫的一部分，做法是把更早的民謠曲加進曲目**——這比策展層的講法更具體且有出處，已寫進 facts。"
+ },
+ {
+  "key": "desc2:Flatt & Scruggs|Hard Travelin'",
+  "artist": "Flatt & Scruggs",
+  "album": "Hard Travelin'",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f76fcb06 的欄位：title「Hard Travelin'」、artist-credit「Lester Flatt & Earl Scruggs」、first-release-date 1963、primary-type Album、secondary-types 空陣列、轄下 2 個 release 皆 Official——1963 US（12 軌，Columbia，編號 **CL 1951**）與一筆無日期 XW（12 軌，Legacy）。",
+    "src": "https://musicbrainz.org/release-group/f76fcb06-e98e-4c06-9296-af57005f27ab"
+   },
+   {
+    "f": "1963 年 Columbia CL 1951（MB release 0f3b5a77）的 12 軌曲序為 A1〈Hard Travelin'〉159 秒 A2〈Dixie Home〉145 A3〈The Wreck of the Old '97〉149 A4〈Over the Hill to the Poorhouse〉198 A5〈Drowned in the Deep Blue Sea〉140 A6〈Coal Miner's Blues〉149；B1〈Pastures of Plenty〉156 B2〈The Ballad of Jed Clampett〉121 B3〈My Native Home〉132 B4〈When I Left East Virginia〉225 B5〈99 Years Is Almost for Life〉202 B6〈Bound to Ride〉125。",
+    "src": "https://musicbrainz.org/release/0f3b5a77-f908-462f-9535-7ee22893f23f"
+   },
+   {
+    "f": "Discogs master 262019 的欄位：掛名「Lester Flatt And Earl Scruggs And The Foggy Mountain Boys」、title「Hard Travelin'」、year 1963、廠牌 Columbia、編號 **CS 8751**（立體聲）、載體 Vinyl／LP／Album／Stereo、main_release 8749270，曲目 12 首、曲序與 MB 的 CL 1951 逐軌相同。",
+    "src": "https://api.discogs.com/masters/262019"
+   },
+   {
+    "f": "英文維基〈Flatt and Scruggs〉記〈The Ballad of Jed Clampett〉：這首曲子被用作電視影集《The Beverly Hillbillies》的主題曲，在影集首播季的 1962 年最高進到榜上第 42 名，並於 **1963 年 1 月登上鄉村榜冠軍——這是他們生涯唯一一首冠軍曲**，也是史上僅有五首登上鄉村榜冠軍的電視主題曲之一。",
+    "src": "https://en.wikipedia.org/wiki/Flatt_and_Scruggs"
+   },
+   {
+    "f": "同一條目記樂團的組成與走向：Flatt 與 Scruggs 1948 年組團，伴奏班底 the Foggy Mountain Boys 含小提琴 Paul Warren、Dobro 的 Josh Graves、貝斯 Cousin Jake Tullock、曼陀林 Curly Seckler；**Scruggs 一向有求新傾向，曾與薩克斯風手 King Curtis 合錄二重奏，並把 Bob Dylan 之類的作者的曲子加進團的曲目，走傳統路線的 Flatt 不喜歡這些變化，兩人於 1969 年拆夥**。",
+    "src": "https://en.wikipedia.org/wiki/Flatt_and_Scruggs"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 727363468 的 lookup 欄位：artistName「Lester Flatt & Earl Scruggs」、collectionName「Hard Travelin' (with The Foggy Mountain Boys)」、releaseDate 1963-01-01、trackCount 12、copyright「℗ Originally released 1963. All rights reserved by Sony Music Entertainment」；12 軌的曲名與曲序與 MB 的 CL 1951 逐軌相同（每一軌的曲名後都掛著「(with The Foggy Mountain Boys)」，末軌 Apple 作〈I'm Bound to Ride〉），12 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=727363468&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "開場與 B 面第一首都是 Woody Guthrie 的歌，中間夾著一首電視影集主題曲",
+   "Apple 上這張碟的每一軌曲名後面都掛著同一句班底名"
+  ],
+  "sound": "MB 的 1963 年 Columbia CL 1951 逐軌曲長：A 面〈Hard Travelin'〉159 秒、〈Dixie Home〉145、〈The Wreck of the Old '97〉149、〈Over the Hill to the Poorhouse〉198、〈Drowned in the Deep Blue Sea〉140、〈Coal Miner's Blues〉149；B 面〈Pastures of Plenty〉156、〈The Ballad of Jed Clampett〉121、〈My Native Home〉132、〈When I Left East Virginia〉225、〈99 Years Is Almost for Life〉202、〈Bound to Ride〉125。最長的〈When I Left East Virginia〉三分四十五秒、最短的〈The Ballad of Jed Clampett〉兩分零一秒（MB release 0f3b5a77 曲長欄）。班底 the Foggy Mountain Boys 的固定編制依維基是小提琴、Dobro、貝斯與曼陀林（Paul Warren、Josh Graves、Cousin Jake Tullock、Curly Seckler），但**該處講的是樂團的一般編制、沒有指名本張的錄音陣容**，行文不得把這幾個人指派到這張碟。",
+  "keyTracks": [
+   "Hard Travelin'",
+   "Pastures of Plenty",
+   "The Ballad of Jed Clampett"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1963 與 MB first-release-date 1963、Discogs master 262019 的 1963、Apple releaseDate 1963-01-01 一致，無分歧。Apple 的日期是 `YYYY-01-01` 佔位值，只當年份訊號。可用的錨點是〈The Ballad of Jed Clampett〉1963 年 1 月登上鄉村榜冠軍（英文維基），與專輯同年。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。策展層在 curatorRisk 裡本來就寫了「Apple us collectionId **727363468**」，實測那個 ID 存在且可用：12 軌、℗1963 Sony Music、12 軌皆有 previewUrl，**曲名與曲序與 MB 1963 年 Columbia CL 1951 逐軌相同**。查不到的原因是**Apple 的盤名帶了班底副標**《Hard Travelin' (with The Foggy Mountain Boys)》——這正是第 152 條那個「系列名／班底名串進盤名」的形狀，用卡單盤名去 search 端點會被標題比對擋掉。建議探測檔補：ready／us／727363468／12 軌。首軌兩邊同為〈Hard Travelin'〉，固定試聽不會取錯。\n**更正策展層一處欄位（編號寫錯）**：卡單與 prop 的 `label` 欄寫「Columbia Records（catno CL 2151／CS 8951）」——**兩個編號都不對**。MB 1963 年那筆記 **CL 1951**（單聲道），Discogs master 262019 記 **CS 8751**（立體聲）。請下游改用 CL 1951／CS 8751。\n**擋下策展層說法**：curatorWhy 稱本張是「Flatt & Scruggs 在 1960 年代民謠復興期最明顯的一次轉向：專輯以 Woody Guthrie 的標題曲開場，把藍草的班底放進城市民謠圈的曲目裡」——**曲目部分成立、評價部分不成立**。曲目表上確實有兩首 Woody Guthrie 的曲子（A1〈Hard Travelin'〉與 B1〈Pastures of Plenty〉，可由曲名與 MB／Discogs 曲目表核對），這一項已寫進 facts；但「最明顯的一次轉向」「城市民謠圈」是評價與歸類，查不到出處，未寫進 facts。**有來源的替代說法**：維基記 Scruggs 一向有求新傾向、把 Bob Dylan 之類作者的曲子加進團的曲目，而傳統派的 Flatt 不喜歡這些變化、兩人 1969 年因此拆夥——這段可以用來鋪「轉向」的脈絡，但**它講的是整個 1960 年代不是這一張碟**，行文不得把它綁在本張上。"
+ },
+ {
+  "key": "desc2:Dock Boggs|Dock Boggs: Legendary Singer and Banjo Player",
+  "artist": "Dock Boggs",
+  "album": "Dock Boggs: Legendary Singer and Banjo Player",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dd01d57e 的欄位：title「Dock Boggs: Legendary Singer and Banjo Player」、artist-credit「Dock Boggs」、first-release-date 1964、primary-type Album、secondary-types 空陣列、轄下 2 個 release 都在 US、**status 兩筆皆未填**（1964 那筆與 2018 那筆），廠牌欄都寫 Smithsonian Folkways，各 15 軌。",
+    "src": "https://musicbrainz.org/release-group/dd01d57e-a37a-4a04-946b-45713663ca28"
+   },
+   {
+    "f": "1964 年那筆 release e1dbe309 的 15 軌曲序與曲長為 1〈Down South Blues〉131 秒 2〈Country Blues〉235 3〈Pretty Polly〉176 4〈Coal Creek March〉117 5〈My Old Horse Died〉108 6〈Wild Bill Jones〉134 7〈Rowan County Crew〉375 8〈New Prisoner's Song〉177 9〈Oh Death〉202 10〈Prodigal Son〉237 11〈Mother's Advice〉223 12〈Drunkard's Lone Child〉250 13〈Bright Sunny South〉221 14〈Mistreated Mama Blues〉115 15〈Harvey Logan〉213。",
+    "src": "https://musicbrainz.org/release/e1dbe309-4efc-4439-9fcd-9d9c002c9d68"
+   },
+   {
+    "f": "Discogs master 312449 的欄位：title「Dock Boggs」（原盤標題不含副標）、掛名 Dock Boggs、year 1964、廠牌 Folkways Records 與 Dulcet Tone Corporation、編號 **FA 2351**、載體 Vinyl／LP／Album、main_release 2408300；曲目 15 首、A 面 8 首 B 面 7 首，曲序與 MB 那筆逐軌相同（第 7 軌 Discogs 拼作〈Rowan Country Crew〉）。",
+    "src": "https://api.discogs.com/masters/312449"
+   },
+   {
+    "f": "英文維基〈Dock Boggs〉記：Moran Lee「Dock」Boggs（1898 年 2 月 7 日－1971 年 2 月 7 日）是美國 old-time 歌手、詞曲作者與班鳩手，他的班鳩與演唱被視為阿帕拉契民謠與非裔美國藍調的獨特結合；他 1927 年首度錄音、1929 年再錄一次，一生大半時間以煤礦工為業。他 1920 年代的兩首錄音〈Sugar Baby〉與〈Country Blues〉被收進 Harry Smith 1952 年的《Anthology of American Folk Music》，這是後世民謠圈把他視為源頭人物的部分原因。",
+    "src": "https://en.wikipedia.org/wiki/Dock_Boggs"
+   },
+   {
+    "f": "同一條目的〈Rediscovery〉段記：**1963 年 6 月**，民謠學者 Mike Seeger 在維吉尼亞州 Needmore 附近找到 Boggs；Seeger 發現他不久前才把班鳩買回來、已練了幾個月，並說服他當年稍晚到北卡羅萊納州 Asheville 的 American Folk Festival 演出。在 Seeger 協助下 Boggs 重新開始錄音，**最終為 Folkways Records 錄了三張專輯**；整個 1960 年代他在美國各地俱樂部與民謠節演出，包括在 Newport Folk Festival 面對一萬名聽眾的一場。",
+    "src": "https://en.wikipedia.org/wiki/Dock_Boggs"
+   },
+   {
+    "f": "同一條目的〈Technique〉段記：Boggs 雖然熟悉 clawhammer（frailing）奏法，慣用的卻是 up-picking——以上撥的方式彈頭兩弦、用拇指彈其餘三弦之一；他有數首曲子用較低的 D-modal 調弦。Seeger 認為那是「a style possessed by no other recorded player」，是為了配合原本無伴奏的山區敘事歌而發展出來的。條目並記〈Oh Death〉〈Prodigal Son〉等宗教曲是他的姊夫、Holiness 派傳道人 Lee Hansucker 教他的，〈Down South Blues〉一類則學自非裔美國藍調樂手。",
+    "src": "https://en.wikipedia.org/wiki/Dock_Boggs"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 175658461 的 lookup 欄位：artistName「Dock Boggs」、collectionName「Dock Boggs」、releaseDate 1964-01-01、trackCount 15、copyright「℗ 2004 Smithsonian Folkways Recordings/Folkways Records」；15 軌的曲名與曲序與 MB 那筆 1964 年 release 逐軌相同（第 7 軌 Apple 作〈Rowan County Crew〉），15 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=175658461&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "1929 年之後他把班鳩當了，三十幾年後有人找上門，他才剛把琴買回來",
+   "彈法是上撥的，不是山區慣用的下敲"
+  ],
+  "sound": "MB 1964 年那筆 release 的 15 軌逐軌曲長顯示落差極大：最短的〈My Old Horse Died〉108 秒、〈Mistreated Mama Blues〉115 秒、〈Coal Creek March〉117 秒，最長的〈Rowan County Crew〉375 秒（六分十五秒），其次是〈Drunkard's Lone Child〉250 秒與〈Prodigal Son〉237 秒——十五軌之中有三軌不到兩分鐘、一軌超過六分鐘（MB release e1dbe309 曲長欄）。奏法依英文維基是 up-picking（上撥頭兩弦、拇指彈其餘三弦之一），部分曲子用較低的 D-modal 調弦。",
+  "keyTracks": [
+   "Country Blues",
+   "Pretty Polly",
+   "Oh Death"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1964 與 MB first-release-date 1964、Discogs master 312449 的 1964（Folkways FA 2351）、Apple releaseDate 1964-01-01 三方一致，無分歧。Apple 的日期是 `YYYY-01-01` 佔位值、℗ 年是 2004（Smithsonian Folkways 再發），依第 77 條只當訊號。可用的錨點是英文維基給到月的「1963 年 6 月 Mike Seeger 找到他」——那是重新錄音的起點，比這張碟早約一年。",
+  "notes": "**封面：CAA 兩路皆空，結論是「真的沒有」不是「釘錯 release」。** 依派工要求用 release 端點逐筆覆核，實測（GET、follow redirect）：coverartarchive.org/release-group/dd01d57e… **404**；轄下兩個 release 逐一測——e1dbe309（1964）**404**、092080f4（2018）**404**。**三個端點全部 404**，所以策展層改走 §4 `apple-verified-collection` 是正確處置。人工核對過的 Apple us collectionId **175658461** 本次再加驗：**15 軌曲名與曲序與 MB 1964 年那筆逐軌相同**、15 軌皆有 previewUrl，比策展層當初核對的前四軌更完整。依第 134 條，同一個 collectionId 封面與試聽都可用。\n**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立——策展層在 curatorRisk 裡就寫了 collectionId 175658461，實測可用（見上）。查不到的原因是**盤名長短不一致**：卡單用 MB 的長標題《Dock Boggs: Legendary Singer and Banjo Player》，而 **Discogs 原盤與 Apple 都只作《Dock Boggs》**（自我同名），長標題去 search 端點會落空。建議探測檔補：ready／us／175658461／15 軌。\n授權（第 43／57／66 條）：MB 轄下兩筆 release 的 **status 皆未填**，依第 66 條不採為授權背書；改由 Discogs 原盤 master 312449（Folkways FA 2351）與 Smithsonian Folkways 的目錄延續性支撐——策展層已這樣處理，實查相符。\n**策展層說法查證結果**：curatorWhy 稱「1929 年後停止錄音、當了三十幾年礦工，1963 年被 Mike Seeger 找到後重新錄音」——**大體成立**：維基記他 1927、1929 兩度錄音，1930 年在 OKeh 的試音因怯場失敗、其後三年因湊不出旅費而作罷，最後把班鳩當掉放棄以音樂維生，一生大半以煤礦為業；1963 年 6 月 Mike Seeger 找到他。**擋下**：curatorWhy 稱「這張 Folkways FA 2351 就是**復出後的第一張**」——維基只寫「eventually recording three albums for Folkways Records」，**沒有給這三張的先後**；MB 上他名下另有《Dock Boggs, Vol. 2》（無年份）與《Dock Boggs 1966》，序數關係查不到出處。這是派工信要我攻的時序主張，**未寫進 facts，行文不得寫「第一張」**；可以寫的是「1964 年 Folkways FA 2351 是他在 Folkways 那三張裡的一張」。\n盤名三種寫法：MB 長標題、Discogs／Apple 的《Dock Boggs》、策展層 queryAlias 裡的《Dock Boggs Legendary Singer & Banjo Player》，三種都要進去重（第 162 條：盤名短的容易被長的吃掉，這裡是相反方向）。"
+ },
+ {
+  "key": "desc2:Elizabeth Cotten|Volume 3: When I'm Gone",
+  "artist": "Elizabeth Cotten",
+  "album": "Volume 3: When I'm Gone",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 789ca8f2 的欄位：title「Volume 3: When I'm Gone」、artist-credit「Elizabeth Cotten」、first-release-date 1979、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1979 US（13 軌，Folkways Records，編號 FA 3537）、2007 US（13 軌，Smithsonian Folkways，同編號 FA 3537，標題作《Elizabeth Cotton Volume 3: When I'm Gone》）、一筆無日期 XW（13 軌，Folkways Records）。",
+    "src": "https://musicbrainz.org/release-group/789ca8f2-33e5-4aa9-a4bd-d0a3ea038a47"
+   },
+   {
+    "f": "1979 年 Folkways FA 3537（MB release d2a5ee12）的 13 軌曲序與曲長為 1〈New Year's Eve〉197 秒 2〈Praying Time Will Soon Be Over〉195 3〈Time To Stop Your Idling〉153 4〈Gaslight Blues〉290 5〈Jenny〉161 6〈Street Blues〉137 7〈Home Sweet Home〉144 8〈Freight Train〉191 9〈Casey Jones〉109 10〈Willie〉308 11〈Boddie's Song〉137 12〈Wilson Rag〉293 13〈When I'm Gone〉287。",
+    "src": "https://musicbrainz.org/release/d2a5ee12-dec8-486f-b8ae-31a23bc091b8"
+   },
+   {
+    "f": "Discogs master 205719 的欄位：title「Volume 3: When I'm Gone」、掛名 Elizabeth Cotten、year 1979、廠牌 Folkways Records、編號 FA 3537、載體 Vinyl／LP／Album、main_release 1624845；曲目 13 首、A 面 7 首 B 面 6 首，曲序與 MB 那筆逐軌相同。",
+    "src": "https://api.discogs.com/masters/205719"
+   },
+   {
+    "f": "英文維基〈Elizabeth Cotten〉的專輯清單把她的三張編號專輯列為《Folksongs and Instrumentals with Guitar》(1958)、《Vol. 2: Shake Sugaree》(1967)、《Vol. 3: When I'm Gone》(1979)。",
+    "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten"
+   },
+   {
+    "f": "同一條目記：Elizabeth「Libba」Cotten（本姓 Nevills，1893 年 1 月 5 日－1987 年 6 月 29 日）是左撇子，卻用右手用的吉他反過來彈，因此以手指彈低音線、以拇指彈旋律，這種交替低音的手法後來被戲稱為「Cotten picking」。她的〈Freight Train〉是十來歲時自己寫的，1956 年 Chas McDevitt 與 Nancy Whiskey 的英國版成為暢銷曲，被認為是英國 skiffle 興起的主要影響之一。她 1984 年以現場專輯《Elizabeth Cotten Live!》拿下葛萊美最佳民族或傳統民謠錄音獎，當時 90 歲；同年獲美國國家藝術基金會的 National Heritage Fellow；2022 年以早期影響者身分入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten"
+   },
+   {
+    "f": "同一條目記她的早年：出生於北卡羅萊納州 Chapel Hill 附近，家中五個孩子最小的一個；八歲已能彈曲子，九歲被迫輟學去做家務工，十二歲在 Chapel Hill 有一份住家幫傭的工作、月薪一美元，母親替她存錢買下第一把吉他——一把 Sears and Roebuck 的琴，售價 3.75 美元。",
+    "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 154816804 的 lookup 欄位：artistName「Elizabeth Cotten」、collectionName「Elizabeth Cotten, Vol. 3: When I'm Gone」、releaseDate **1965-01-01**、trackCount 13、copyright「℗ 2004 Smithsonian Folkways Recordings」；13 軌的曲名與曲序與 MB 的 FA 3537 逐軌相同，13 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=154816804&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "左撇子拿右手吉他反過來彈，低音用手指、旋律用拇指",
+   "第一把吉他 3.75 美元，是母親從她一個月一美元的工錢裡存下來的"
+  ],
+  "sound": "MB 的 1979 年 Folkways FA 3537 逐軌曲長：〈New Year's Eve〉197 秒、〈Praying Time Will Soon Be Over〉195、〈Time To Stop Your Idling〉153、〈Gaslight Blues〉290、〈Jenny〉161、〈Street Blues〉137、〈Home Sweet Home〉144、〈Freight Train〉191、〈Casey Jones〉109、〈Willie〉308、〈Boddie's Song〉137、〈Wilson Rag〉293、〈When I'm Gone〉287。最短的〈Casey Jones〉一分四十九秒、最長的〈Willie〉五分零八秒；十三軌裡有四軌超過四分半（MB release d2a5ee12 曲長欄）。她的彈法依英文維基是左撇子反持右手吉他、以手指彈低音線、以拇指彈旋律。",
+  "keyTracks": [
+   "Freight Train",
+   "When I'm Gone",
+   "Wilson Rag"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1979 與 MB first-release-date 1979、Discogs master 205719 的 1979（Folkways FA 3537）、英文維基專輯清單的「Vol. 3: When I'm Gone (1979)」三方一致。**Apple 的 releaseDate 記 1965-01-01，與上述三方差 14 年**——該筆的 ℗ 年是 2004（Smithsonian Folkways），13 軌與 1979 年原盤逐軌相同，所以那個 1965 既不是版本差異也不是原盤年，只是 Apple 條目上的錯值；依第 77 條只當訊號、不當版本門檻，卡單取 1979 是對的。策展層已在 curatorRisk 標明這一項，實查相符。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。策展層在 curatorRisk 裡就寫了 Apple us collectionId **154816804**，實測可用：13 軌、℗2004 Smithsonian Folkways、13 軌皆有 previewUrl，**曲名與曲序與 MB 1979 年 Folkways FA 3537 逐軌相同**，首軌兩邊同為〈New Year's Eve〉。查不到的原因是**盤名帶藝人名**：Apple 作《Elizabeth Cotten, Vol. 3: When I'm Gone》、卡單與 MB 作《Volume 3: When I'm Gone》——卷號寫法（Volume／Vol.）加上前綴的藝人名，兩道都會讓 search 端點的標題比對失手（第 152／168 條）。建議探測檔補：ready／us／154816804／13 軌。\n卷號三種寫法：池中既有卡寫「Vol. 2: Shake Sugaree」、MB 對本張寫「Volume 3」（全寫）、Apple 寫「Elizabeth Cotten, Vol. 3」——三種都要進去重比對，策展層的 queryAlias 已含後兩種，正確。\n**策展層說法查證結果**：curatorWhy 稱本張是「Elizabeth Cotten 在 Folkways 的三張編號專輯的最後一張」——**成立**，英文維基的專輯清單列出的就是這三張（1958／1967／1979），本張是年份最晚的一張。**擋下**：curatorWhy 稱「錄於她八十幾歲時」——**這是推算不是來源**。維基給的是生年 1893 與專輯的發行年 1979，**錄音年在任何來源裡都沒有**；由生年減發行年推出的年齡屬第 64／110 條的「算術與一步推論」，未寫進 facts，**行文不得寫她錄這張時幾歲**。若要寫年齡，只能引維基那句有數字的「1984 年以《Elizabeth Cotten Live!》拿下葛萊美時 90 歲」。"
+ },
+ {
+  "key": "desc2:Joan Baez|Joan Baez, Vol. 2",
+  "artist": "Joan Baez",
+  "album": "Joan Baez, Vol. 2",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c51b1bdd 的欄位：title「Joan Baez, Vol. 2」、artist-credit「Joan Baez」、first-release-date **1961-09**、primary-type Album、secondary-types 空陣列、轄下 9 個 release，其中 8 筆 Official、1 筆 2016-05-20 XW 的 **Bootleg**（《Joan Baez, Volume II》，Revolver Records，17 軌）。1961 年的四筆都是 **14 軌**（US Vanguard VRS 9094、US Vanguard VSD-2097、FR Vanguard VRS 103、GB Fontana STFL 6025），2001／2006 年的三筆是 **17 軌**（US Vanguard 79595-2、DE Vanguard VCD 79595-2、XW Vanguard）。",
+    "src": "https://musicbrainz.org/release-group/c51b1bdd-d6bb-3271-ab28-f277fc57ca2d"
+   },
+   {
+    "f": "1961 年 9 月的 Vanguard VRS 9094（MB release c29b9868）是 12\" Vinyl、14 軌，曲序與曲長為 A1〈Wagoner's Lad〉130 秒 A2〈The Trees They Do Grow High〉176 A3〈The Lily of the West〉197 A4〈Silkie〉235 A5〈Engine 143〉209 A6〈Once I Knew a Pretty Girl〉172 A7〈Lonesome Road〉138；B1〈Banks of the Ohio〉186 B2〈Pal of Mine〉167 B3〈Barbara Allen〉253 B4〈The Cherry Tree Carol〉206 B5〈Old Blue〉152 B6〈Railroad Boy〉156 B7〈Plaisir d'amour〉187。",
+    "src": "https://musicbrainz.org/release/c29b9868-e5d6-48c4-b58b-a0765d676325"
+   },
+   {
+    "f": "英文維基〈Joan Baez, Vol. 2〉記：這是 Joan Baez 的**第二張錄音室專輯**，1961 年發行，與她 1960 年的同名首張一樣以傳統曲為主；藍草樂團 the Greenbriar Boys 在其中兩首擔任伴唱（條目人員欄註明是 B1–B2 兩軌）。這張在 Billboard 專輯榜最高第 13 名，並獲葛萊美「Best Contemporary Folk Performance」提名。條目並明記 **Vanguard 的再發版收錄三首未發表曲目〈I Once Loved a Boy〉〈Poor Boy〉〈Longest Train I Ever Saw〉**。",
+    "src": "https://en.wikipedia.org/wiki/Joan_Baez,_Vol._2"
+   },
+   {
+    "f": "同一條目引 AllMusic 樂評 Matt Fink：「The material chosen is truly exceptional... Without a doubt, Baez's version of 'Pal of Mine' is every bit as vibrant as when the Carters recorded it, though here given a more bluegrass sound by the banjo and backup vocal accompaniment of the Greenbriar Boys. Baez is a true master of her craft, and though she hasn't always made the best choices for material, the 14 interpretations here are as timeless as the songs themselves.」",
+    "src": "https://en.wikipedia.org/wiki/Joan_Baez,_Vol._2"
+   },
+   {
+    "f": "Discogs master 129756 的欄位：title「Joan Baez, Vol. 2」、掛名 Joan Baez、year 1961、廠牌 Vanguard／Vanguard Studios、編號 VRS-9094、載體 Vinyl／LP／Album／Mono。",
+    "src": "https://api.discogs.com/database/search?q=Joan+Baez+Vol+2+Vanguard+1961&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 712142981 的 lookup 欄位：artistName「Joan Baez」、collectionName「Joan Baez, Vol. 2」、releaseDate 1961-09-01、trackCount **17**、copyright「℗ 2006 Vanguard Records, a Welk Music Group Company」；**前 14 軌的曲名與曲序與 MB 1961 年 Vanguard VRS 9094 逐軌相同**，第 15–17 軌依序是〈I Once Loved a Boy〉159 秒、〈Poor Boy〉175 秒、〈Longest Train I Ever Saw〉195 秒，17 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=712142981&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十四首裡有兩首請了一支藍草樂團來和聲",
+   "四十年後再發時，末尾多出三首當年沒發表的錄音"
+  ],
+  "sound": "MB 的 1961 年 Vanguard VRS 9094 逐軌曲長：A 面〈Wagoner's Lad〉130 秒、〈The Trees They Do Grow High〉176、〈The Lily of the West〉197、〈Silkie〉235、〈Engine 143〉209、〈Once I Knew a Pretty Girl〉172、〈Lonesome Road〉138；B 面〈Banks of the Ohio〉186、〈Pal of Mine〉167、〈Barbara Allen〉253、〈The Cherry Tree Carol〉206、〈Old Blue〉152、〈Railroad Boy〉156、〈Plaisir d'amour〉187。最短的開場〈Wagoner's Lad〉兩分十秒、最長的〈Barbara Allen〉四分十三秒（MB release c29b9868 曲長欄）。依維基人員欄，B1〈Banks of the Ohio〉與 B2〈Pal of Mine〉兩軌由 the Greenbriar Boys 伴唱，其餘為她的獨唱與吉他。",
+  "keyTracks": [
+   "Wagoner's Lad",
+   "Barbara Allen",
+   "Pal of Mine"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1961 與 MB first-release-date 1961-09、Discogs master 129756 的 1961（Vanguard VRS-9094）、Apple releaseDate 1961-09-01、英文維基的「1961 年發行」一致，無分歧；MB 與 Apple 都給到月（1961 年 9 月）。Apple 那筆的 ℗ 年是 2006（Vanguard 再發），依第 77 條只當訊號。",
+  "notes": "**試聽覆核：17 軌的疑點查清了，維持 ready。** 派工信提示「1961 Vanguard 原盤 13 軌左右，多出來的是 bonus 還是別的版本」。實查結論：**原盤是 14 軌不是 13 軌**（MB 1961 年那四筆 US／FR／GB release 全部 14 軌，Discogs master 129756 亦然），而 Apple 那筆 17 軌是 **2001／2006 年 Vanguard 再發版**（℗2006）：**前 14 軌與 1961 年 VRS 9094 逐軌同名同序**，第 15–17 軌是〈I Once Loved a Boy〉〈Poor Boy〉〈Longest Train I Ever Saw〉。**英文維基明寫這三首正是 Vanguard 再發版收錄的三首未發表曲目**——三方對得上，依第 140 條這是加曲版不是二合一（多出來的三首不構成另一張專輯的曲目段落、且排在最後）。**行文不得把這三首當成原盤曲目；原盤是 14 軌**。首軌兩邊同為〈Wagoner's Lad〉，固定試聽取首軌不會取錯。\n授權（第 43／57 條）：轄下 9 筆裡 1 筆是 2016 年 Revolver Records 的 **Bootleg**（《Joan Baez, Volume II》），**背書只採其餘 8 筆 Official，行文不得引用該 Bootleg 版**——策展層已明令，實查相符。\n**擋下策展層說法**：curatorWhy 稱本張是「她在 Vanguard 早期三張裡曲目最集中於傳統民謠的一張」——**最高級說法無來源**；維基能支持的只有「像她 1960 年的首張一樣以傳統曲為主」（\"like her self-titled 1960 debut album, featured mostly traditional songs\"），**沒有「三張裡最集中」這個比較**，未寫進 facts。curatorWhy 另稱「1962 年獲葛萊美提名」——維基只寫獲「Best Contemporary Folk Performance」提名、**沒有給年份**，年份未寫進 facts。curatorWhy 另稱「與首張同為當時民謠復興期的通行教材」——查不到出處，未寫進 facts。**成立的是「第二張專輯」**（維基明寫 second studio album）與榜位第 13 名。\n跨實體撞名（策展層已標）：MB 上另有一支哥倫比亞前衛搖滾樂團 Joan Báez（掛名只差一個重音），去重要注意。"
+ },
+ {
+  "key": "desc2:Nitty Gritty Dirt Band|Uncle Charlie & His Dog Teddy",
+  "artist": "Nitty Gritty Dirt Band",
+  "album": "Uncle Charlie & His Dog Teddy",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2487403a 的欄位：title「Uncle Charlie & His Dog Teddy」、artist-credit「Nitty Gritty Dirt Band」、first-release-date 1970、primary-type Album、secondary-types 空陣列、轄下 5 個 release 全數 Official——1970 US（**16 軌**，Liberty，編號 LST-7642）、1990 GB（16 軌，Beat Goes On BGOCD22）、1994-05-31 US（21 軌，Capitol）、2003 US（23 軌，Capitol）、一筆無日期 XW（23 軌，Capitol Records Nashville，標題用 and 不用 &）。",
+    "src": "https://musicbrainz.org/release-group/2487403a-7b69-3963-9ef0-04ccce2968e6"
+   },
+   {
+    "f": "1970 年 Liberty LST-7642（MB release 0139146d）的 16 軌曲序與曲長為 A1〈Some of Shelley's Blues〉194 秒 A2〈Prodigal's Return〉192 A3〈The Cure〉132 A4〈Travelin' Mood / Chicken Reel〉216 A5〈Yukon Railroad〉136 A6〈Livin' Without You / Clinch Mountain Backstep〉273 A7〈Rave On〉178 A8〈Billy in the Low Ground〉74；B1〈Jesse James / Uncle Charlie Interview〉149 B2〈Mr. Bojangles〉218 B3〈Opus 36, Clementi (John)〉102 B4〈Santa Rosa〉144 B5〈Propinquity〉140 B6〈Uncle Charlie / Randy Lynn Rag〉217 B7〈House at Pooh Corner〉160 B8〈Swanee River / Uncle Charlie Interview / Spanish Fandango〉197——**十六個索引點裡有五個是兩首以上串在一起的組曲**。",
+    "src": "https://musicbrainz.org/release/0139146d-1cb6-41c7-bcb6-d73738877de4"
+   },
+   {
+    "f": "英文維基〈Uncle Charlie & His Dog Teddy〉記：這是 The Nitty Gritty Dirt Band 的**第四張錄音室專輯**，1970 年發行，收錄暢銷曲〈Mr. Bojangles〉；專輯在美國榜最高第 66 名，三首單曲進榜——〈Mr. Bojangles〉第 9 名、〈House at Pooh Corner〉第 53 名、〈Some Of Shelly's Blues〉第 64 名；在加拿大這三首分別是第 2、30、56 名。1994 年的 CD 版書背上的標題是《Uncle Charlie And His Dog》。",
+    "src": "https://en.wikipedia.org/wiki/Uncle_Charlie_%26_His_Dog_Teddy"
+   },
+   {
+    "f": "同一條目逐首說明來歷：〈Some of Shelly's Blues〉與〈Propinquity〉是 Michael Nesmith（The Monkees 成員）所寫；〈Travelin' Mood〉是 R&B 歌手 James「Wee Willie」Waynes 1955 年所寫並首唱；〈Clinch Mountain Backstep〉掛名 Ruby Rakes——她是 The Stanley Brothers 的同父異母姊妹，因財務因素被讓渡了他們許多曲子的版權；〈Jesse James〉是 1963 年對 Uncle Charlie（Bill McEuen 妻子的親戚）所做的錄音，同一次錄音也是〈Uncle Charlie Interview〉的來源，該段直接接進〈Mr. Bojangles〉；〈Mr. Bojangles〉由 Jerry Jeff Walker 所寫並首唱；〈Opus 36〉是 Clementi 1797 年的《C 大調小奏鳴曲 op.36 no.1》，由 Walter McEuen 改編。",
+    "src": "https://en.wikipedia.org/wiki/Uncle_Charlie_%26_His_Dog_Teddy"
+   },
+   {
+    "f": "英文維基〈Nitty Gritty Dirt Band〉記：樂團 1966 年成立於加州 Long Beach，早期作品帶有 jug band 與傳統民謠成分，曾一度自稱「the Illegitimate Jug Band」——因為他們演奏 jug band 音樂卻沒有一個團員真的吹 jug。樂團 1968 年 12 月短暫解散、**1969 年 6 月重組**，Chris Darrow 與 Ralph Barr 沒有回來，由 Jimmy Ibbotson 頂替。條目引《Virgin Encyclopedia of Country Music》作者 Colin Larkin 的說法，稱這張專輯「marked a shift in their sound from 'jokey elements' to a more country rock sound」；並記〈Mr. Bojangles〉是他們**第一首重要暢銷曲**，在 Hot 100 最高第 9 名。",
+    "src": "https://en.wikipedia.org/wiki/Nitty_Gritty_Dirt_Band"
+   },
+   {
+    "f": "Discogs master 120026 的欄位：title「Uncle Charlie & His Dog Teddy」、掛名 Nitty Gritty Dirt Band、year 1970、廠牌 Liberty／Liberty-UA, Inc.、編號 LST-7642、載體 Vinyl／LP／Album／Stereo。",
+    "src": "https://api.discogs.com/database/search?q=Nitty+Gritty+Dirt+Band+Uncle+Charlie+His+Dog+Teddy&type=master"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 723526039 的 lookup 欄位：artistName「Nitty Gritty Dirt Band」、collectionName「Uncle Charlie and His Dog Teddy (Bonus Tracks Edition) [2002 Remaster]」、releaseDate 1970-02-01、trackCount 23、copyright「℗ 2003 Capitol Records Nashville」；23 軌之中前 21 軌就是原盤那 16 個索引點**把五個組曲拆成單軌**之後的結果（例如原盤 A4〈Travelin' Mood / Chicken Reel〉在 Apple 上拆成第 4 軌〈Travelin' Mood〉159 秒與第 5 軌〈Chicken Reel〉55 秒），曲序完全對應；第 22、23 軌是明確標記的〈Mississippi Rain (Bonus Track)〉186 秒與〈What Goes On (Bonus Track)〉132 秒。23 軌皆帶 previewUrl。",
+    "src": "https://itunes.apple.com/lookup?id=723526039&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "唱片裡夾了一段 1963 年錄的老人訪談，錄的是團員親戚，那段直接接進〈Mr. Bojangles〉",
+   "他們曾自稱「冒牌 jug band」，因為沒有一個團員真的吹 jug"
+  ],
+  "sound": "MB 的 1970 年 Liberty LST-7642 逐軌曲長：A 面〈Some of Shelley's Blues〉194 秒、〈Prodigal's Return〉192、〈The Cure〉132、〈Travelin' Mood / Chicken Reel〉216、〈Yukon Railroad〉136、〈Livin' Without You / Clinch Mountain Backstep〉273、〈Rave On〉178、〈Billy in the Low Ground〉74；B 面〈Jesse James / Uncle Charlie Interview〉149、〈Mr. Bojangles〉218、〈Opus 36, Clementi (John)〉102、〈Santa Rosa〉144、〈Propinquity〉140、〈Uncle Charlie / Randy Lynn Rag〉217、〈House at Pooh Corner〉160、〈Swanee River / Uncle Charlie Interview / Spanish Fandango〉197。最短的〈Billy in the Low Ground〉只有 74 秒（一分十四秒），最長的〈Livin' Without You / Clinch Mountain Backstep〉273 秒——後者之所以長，是因為它把兩首串成一軌（MB release 0139146d 曲名與曲長欄）。",
+  "keyTracks": [
+   "Mr. Bojangles",
+   "House at Pooh Corner",
+   "Some of Shelly's Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1970 與 MB first-release-date 1970、Discogs master 120026 的 1970（Liberty LST-7642）、Apple releaseDate 1970-02-01、英文維基專輯條目的「1970 年發行」四方一致。**唯一的雜訊**：英文維基〈Nitty Gritty Dirt Band〉的樂團條目在敘述 1969 年 6 月重組時寫「the band issued its fourth Liberty album Uncle Charlie & His Dog Teddy **that same year**」（即 1969），與同一部百科的專輯條目（1970）以及 MB／Discogs／Apple 都不一致——**這是樂團條目行文上的年份錯誤，不採**；卡單取 1970 是對的。行文不必提這個分歧。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。策展層在 curatorRisk 裡就寫了 Apple us collectionId **723526039**，實測可用：23 軌、℗2003 Capitol Records Nashville、23 軌皆有 previewUrl。查不到的原因是**盤名有三重變形**：連接詞（& vs and）＋副標（Bonus Tracks Edition）＋年份標記（[2002 Remaster]），第 152 條的形狀。建議探測檔補：ready／us／723526039／23 軌。\n**23 軌 vs 原盤 16 軌的落差查清了，不是二合一**（第 140／141 條）：原盤那 16 個索引點裡**有五個本身就是組曲**（A4〈Travelin' Mood / Chicken Reel〉、A6〈Livin' Without You / Clinch Mountain Backstep〉、B1〈Jesse James / Uncle Charlie Interview〉、B6〈Uncle Charlie / Randy Lynn Rag〉、B8〈Swanee River / Uncle Charlie Interview / Spanish Fandango〉），Apple 把它們**拆成單軌**後恰好是 21 軌、曲序與原盤完全對應；剩下的第 22、23 軌是**明確標了 (Bonus Track)** 的〈Mississippi Rain〉與〈What Goes On〉。所以 23 ＝ 16（拆開後 21）＋ 2 首標記過的加曲，**沒有任何一首屬於別張專輯**。行文不得把這兩首當成原盤曲目，也不得說「這張碟有 23 首」——**原盤是 16 個索引點**。首軌兩邊同為〈Some of Shelly's Blues〉，固定試聽取首軌不會取錯。\n**策展層說法查證結果**：curatorWhy 稱「從加州的 jug band 轉成鄉村搖滾團的那一張」——**成立且有署名來源**：英文維基引《Virgin Encyclopedia of Country Music》作者 Colin Larkin，稱這張碟「marked a shift in their sound from 'jokey elements' to a more country rock sound」；樂團早期的 jug band 成分與「the Illegitimate Jug Band」這個自稱也有維基佐證。已寫進 facts。**擋下**：curatorWhy 稱「也是他們第一次真正賣開的專輯」——**專輯層級不成立**：專輯本身在美國榜只到第 66 名（維基）；有來源的是**單曲**——〈Mr. Bojangles〉是他們「第一首重要暢銷曲」（Hot 100 第 9 名）。**行文要寫「第一次賣開」必須寫在單曲上、不能寫在專輯上。** curatorWhy 另稱「兩年後才有《Will the Circle Be Unbroken》那次與納許維爾老一輩的合錄」——1972 年這個年份有維基佐證（樂團條目記三張 Circle 專輯為 1972／1989／2002），但「與納許維爾老一輩的合錄」的具體內容本次未查證，未寫進 facts。"
+ }
+]

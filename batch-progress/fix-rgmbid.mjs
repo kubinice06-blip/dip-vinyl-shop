@@ -8,9 +8,15 @@ import fs from 'node:fs';
 const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const MBID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g;
+// 2026-09-05：逾時從 25 秒放寬到 120 秒。當天 MB 的實測回應時間是 **28–34 秒**（回 200，不是 503），
+// 25 秒的上限讓**每一筆都逾時**——四次重試後回 `{_err:1}`，`found` 永遠是空的，
+// 於是每張卡都走「這次沒查到（保留既有值）」那一支：**整個步驟變成要跑七小時的空轉，
+// 而且畫面上跟正常跑完長得一模一樣。** 這是第 163／169 條那一族的第三次
+// （前兩次：舊副本整檔覆寫、被節流的探測）。**外部服務變慢時，逾時上限會把「慢」
+// 靜默翻譯成「查無」**——而這支腳本的第 28 條防線只保護既有值，不會告訴你這輪什麼也沒做。
 const get = async u => {
   for (let i = 0; i < 4; i++) {
-    const r = await fetch(u, { headers: UA, signal: AbortSignal.timeout(25000) }).catch(() => null);
+    const r = await fetch(u, { headers: UA, signal: AbortSignal.timeout(120000) }).catch(() => null);
     if (!r) { await sleep(1500); continue; }
     if (r.status === 503) { await sleep(2000 * (i + 1)); continue; }   // 裁定第 28 條
     if (r.status === 404) return { _404: 1 };
@@ -18,6 +24,56 @@ const get = async u => {
     return await r.json().catch(() => ({ _bad: 1 }));
   }
   return { _err: 1 };
+};
+
+// 「刻意不釘」的偵測，抽成函式（2026-09-05）——原本內嵌在主迴圈裡，回問完才用得到；
+// 現在要在回問**之前**就知道哪些 MBID 不必問，所以提出來。
+//
+// 2026-09-04（c-88 早坂文雄《七人の侍 / 羅生門》）：**策展層明寫「刻意不釘」的對照組要排除。**
+// 那張卡的 mbNote 寫得清清楚楚——釘 c5461038《七人の侍 / 羅生門》（1978 Victor 的合成 LP，
+// primary=Album、secondary=[Compilation, Soundtrack]），並註明「945f4af7《七人の侍》刻意不釘」。
+// 這支腳本還是把它換掉了，因為計分 12 比 11 高一分，而那一分來自 **wantComp 的比法本身是錯的**：
+// `releaseType` 鏡射的是 **primary-type**，拿它去比 **secondary-types** 裡的 Compilation，
+// 等於用兩個不同層級的欄位互相檢查——原聲帶合輯天生就是 primary=Album ＋ secondary=[Compilation]，
+// 於是每一張都先被扣 6 分。這是第 99／126 條要防的那件事第三次發生
+// （前兩次：c-66 的《Guide》EP／Album 雙胞胎、c-69 的 Collie Ryan 三合一套裝），
+// 前兩次都是加防線去救，這次改成**直接聽策展層的話**：他已經指名不要哪一個了。
+//
+// 第一版只往**後**看（MBID 之後 200 字內有沒有「不釘」），2026-09-05 的 c-91 閃靈《武德》
+// 證明那不夠：策展層寫的是「**刻意不釘**：ea81389b…《暮沉武德殿》與 c446922d…《武德殿不插電演唱會實況》」
+// ——標記在**前面**，一個標題帶兩個 MBID。兩個往後看都看不到「不釘」，於是都沒被排除，
+// 其中 Live 那筆還把正確的釘位換掉了。現在兩個方向都看：一旦出現「不釘」，其後的 MBID
+// 全部進 noPin，直到出現正面的「釘」宣告才解除；原本的往後看保留當第二道網。
+//
+// **2026-09-05 再修一個過度捕捉：釘位本身被掃進 noPin。** 上面那個 `off` 旗標一路開到
+// 下一個正面「釘」為止，可是策展層很常在「刻意不釘：…」之後**再提一次釘位**
+// （「…故仍釘 364c2c37」「該 RG 與 xxx 的關係…」）。那一提就落在 off 區裡，
+// 釘位於是進了 noPin、被濾出 found，主迴圈只好走「這輪回問失敗，保留不動」那一支。
+// 實測 c-97 44 張中 11 張、**c-98 44 張中 34 張**、c-99 45 張中 22 張都是這樣——
+// 這支腳本對那些卡等於沒跑，而報表上看起來只是「這次沒查到」。
+// 修法：**mbNote 裡第一個正面「釘」宣告後面緊接的那個 MBID 就是釘位，永遠不進 noPin。**
+// 這是策展層一貫的寫法（`mbNote` 一律以「釘 release-group <id>」開頭），比猜語意可靠。
+// 注意這不會讓「該換掉的釘位換不掉」：釘位只是**保留候選資格**，
+// 換不換仍由下面的計分與三道否決（Live／Compilation、標題對不上、既有值回問失敗）決定。
+const noPinOf = (note, curRgMbid) => {
+  const marks = [];
+  for (const m of note.matchAll(MBID)) marks.push({ kind: 'id', at: m.index, id: m[0], len: m[0].length });
+  for (const m of note.matchAll(/不釘/g)) marks.push({ kind: 'off', at: m.index });
+  // 「釘 release-group xxx」「釘住」這種正面宣告會關掉不釘區；「刻意不釘」不算正面
+  for (const m of note.matchAll(/(?<!不)釘(?=\s*release-group|\s*\*{0,2}[0-9a-f]{8}|住)/g)) marks.push({ kind: 'on', at: m.index });
+  marks.sort((a, b) => a.at - b.at);
+  const noPin = new Set();
+  let off = false, pinned = '', seenOn = false;
+  for (const mk of marks) {
+    if (mk.kind === 'off') { off = true; continue; }
+    if (mk.kind === 'on') { off = false; seenOn = true; continue; }
+    if (seenOn && !pinned && !off) pinned = mk.id;   // 第一個正面「釘」宣告後的 MBID＝釘位
+    const tail = note.slice(mk.at + mk.len, mk.at + mk.len + 200).split(MBID)[0];
+    if (off || /不釘/.test(tail)) noPin.add(mk.id);
+  }
+  if (pinned) noPin.delete(pinned);
+  if (curRgMbid === pinned) noPin.delete(curRgMbid);
+  return noPin;
 };
 
 const batch = process.argv[2];
@@ -33,13 +89,37 @@ for (const c of cards) {
   // 標題與卡片盤名吻合者優先，其次才看順序；且合輯只在卡片本身就是合輯時才採用。
   const norm = x => String(x || '').toLowerCase().normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\u4e00-\u9fff]/g, '');
-  const found = [];
-  for (const id of ids) {
+  // noPin 移到回問**之前**算（2026-09-05）。原本是先把 mbNote 裡每一個 MBID 都問過 MB、
+  // 再把「刻意不釘」的濾掉——濾掉的那些**問了也是白問**。c-99～c-102 四批實測：
+  // 873 個 MBID 裡有 721 個屬於「刻意不釘」或藝人 MBID，先濾等於**少打 83% 的請求**
+  // （873 → 152）。結果完全等價：進 found 的集合一模一樣，只是不再為丟棄的候選付網路成本。
+  // MB 慢到每筆 30 秒的日子裡，這是這條線跑不跑得完的差別（7 小時 → 76 分鐘）。
+  const noPin = noPinOf(String(c.mbNote || ''), c.rgMbid);
+  const askIds = ids.filter(id => !noPin.has(id));
+  let found = [];
+  for (const id of askIds) {
     const j = await get(`https://musicbrainz.org/ws/2/release-group/${id}?fmt=json`);
     await sleep(1100);
     if (j.title) found.push({ id, title: j.title, date: j['first-release-date'] || '',
                               type: j['primary-type'], sec: j['secondary-types'] || [] });
   }
+  // 2026-09-04（c-88 早坂文雄《七人の侍 / 羅生門》）：**策展層明寫「刻意不釘」的對照組要排除。**
+  // 那張卡的 mbNote 寫得清清楚楚——釘 c5461038《七人の侍 / 羅生門》（1978 Victor 的合成 LP，
+  // primary=Album、secondary=[Compilation, Soundtrack]），並註明「945f4af7《七人の侍》刻意不釘」。
+  // 這支腳本還是把它換掉了，因為計分 12 比 11 高一分，而那一分來自 **wantComp 的比法本身是錯的**：
+  // `releaseType` 鏡射的是 **primary-type**，拿它去比 **secondary-types** 裡的 Compilation，
+  // 等於用兩個不同層級的欄位互相檢查——原聲帶合輯天生就是 primary=Album ＋ secondary=[Compilation]，
+  // 於是每一張都先被扣 6 分。這是第 99／126 條要防的那件事第三次發生
+  // （前兩次：c-66 的《Guide》EP／Album 雙胞胎、c-69 的 Collie Ryan 三合一套裝），
+  // 前兩次都是加防線去救，這次改成**直接聽策展層的話**：他已經指名不要哪一個了。
+  // 「刻意不釘」的偵測。第一版只往**後**看（MBID 之後 200 字內有沒有「不釘」），
+  // 2026-09-05 的 c-91 閃靈《武德》證明那不夠：策展層寫的是
+  //   「**刻意不釘**：ea81389b…《暮沉武德殿》（2013 單曲）與 c446922d…《武德殿不插電演唱會實況》（2015 Live）」
+  // ——標記在**前面**，是一個標題帶兩個 MBID 的清單。兩個 MBID 往後看都看不到「不釘」，
+  // 於是兩筆都沒被排除，其中 Live 那筆還把正確的釘位換掉了。
+  // 現在兩個方向都看：一旦出現「不釘」，其後的 MBID 全部進 noPin，直到出現正面的「釘」宣告
+  // 才解除；原本的往後看保留當第二道網。
+  // （noPin 已在回問前算好，見上方）
   const wantComp = c.releaseType === 'Compilation';
   const score = x => {
     const a = norm(c.album), b = norm(x.title);
@@ -71,6 +151,21 @@ for (const c of cards) {
     continue;
   }
   let rg = found.length && score(found[0]) > 0 ? found[0] : null;
+  // (3) 2026-09-05：不得把「正規盤」換成「Live／Compilation 版」。
+  // 閃靈《武德》的卡片盤名被策展層依正名裁定去掉了台羅副標，正確的 RG 標題是「Bú-Tik」——
+  // 與「武德」零重疊、標題分 0；而 2015 年的《武德殿不插電演唱會實況》**包含**「武德」、
+  // 標題分 4，於是 12 分贏過 10 分把正確釘位換掉。**盤名被縮短過的卡，子字串比對是反的**：
+  // 越短的卡片盤名越容易被更長的別碟包住。型別是比標題更硬的訊號，這裡拿它當否決權。
+  const secOf = x => new Set(x.sec || []);
+  if (rg && c.rgMbid && rg.id !== c.rgMbid) {
+    const cur = found.find(x => x.id === c.rgMbid);
+    const gainedLive = secOf(rg).has('Live') && !(cur && secOf(cur).has('Live'));
+    const gainedComp = secOf(rg).has('Compilation') && !(cur && secOf(cur).has('Compilation'));
+    if (gainedLive || gainedComp) {
+      report.push(`✗ ${c.artist}《${c.album}》候選 ${rg.id.slice(0, 8)}…「${rg.title}」是 ${gainedLive ? 'Live' : 'Compilation'} 版，不替換既有的正規盤`);
+      rg = null;
+    }
+  }
   if (rg && c.rgMbid && rg.id !== c.rgMbid && titleScore(rg) === 0) {
     report.push(`✗ ${c.artist}《${c.album}》候選 ${rg.id.slice(0, 8)}…「${rg.title}」標題對不上盤名，不替換既有值`);
     rg = null;

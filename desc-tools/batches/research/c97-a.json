@@ -1,0 +1,871 @@
+[
+ {
+  "key": "desc2:Rhythim Is Rhythim|Nude Photo",
+  "artist": "Rhythim Is Rhythim",
+  "album": "Nude Photo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cfd4c8fd 的欄位：title「Nude Photo」、artist-credit「Rhythim Is Rhythim」、first-release-date 1987、primary-type Single、secondary-types 空陣列、轄下 3 個 release（1987 US、1987 US、1992 US），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/cfd4c8fd-d8c9-3934-a9e9-a2213a838d2f"
+   },
+   {
+    "f": "該 release-group 的 1987 年原盤 release e5c2c64e 欄位：1987、US、status Official、廠牌欄 Transmat、編號 MS-02、載體 12\" Vinyl、3 軌。逐軌曲名與曲長依序為〈Nude Photo〉7:26、〈The Dance (Living Room mix)〉6:59、〈Move It (Only mix)〉3:36。",
+    "src": "https://musicbrainz.org/release/e5c2c64e-6176-4117-99a1-63c837fe111f"
+   },
+   {
+    "f": "同一 release-group 轄下另一筆 1987 US release 4741b6b4 的 artist-credit 欄位印成「Rythim Is Rythim」（少兩個 h），但指向的藝人實體仍是同一個 MBID 159edf29-c4ae-49c7-b1e6-1f082c60d4e3「Rhythim Is Rhythim」；該筆包裝欄記 Cardboard/Paper Sleeve。",
+    "src": "https://musicbrainz.org/release/4741b6b4-4c15-4a9c-a3e4-2ad4a4db10e9"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉記：May 1963 年 4 月 6 日生於密西根州 Belleville，與 Juan Atkins、Kevin Saunderson 合稱 The Belleville Three；並記「His production career began in 1987 with 'Nude Photo' (written by Thomas Barnett)」。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "同一條目記 Transmat 是他自營的廠牌，並寫「May's Transmat Records label was the home of his best material, cuts like 'Nude Photo,' 'Strings of Life,' 'Kaos' and 'It Is What It Is,' most produced from 1987 to 1989 as Rhythim Is Rhythim」——四首代表作與 Rhythim Is Rhythim 這個掛名綁在一起。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 409591673（Rhythim Is Rhythim）逐店面 lookup（entity=album、limit=200）於 gb／us／de／nl 各只回 5 張，清單為《Innovator - Soundtrack for the Tenth Planet》《Beyond The Dance - Single》《Icon (Reconstruction by Vince Watson) - Single》《Icon (Remixed & Reconstructed) - Single》《Strings Of Life - Single》，沒有《Nude Photo》；另以 artistId 16003135（Derrick May）於 gb／us／jp／de／nl lookup 亦各只回 4 張，同樣沒有這張。",
+    "src": "https://itunes.apple.com/lookup?id=409591673&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "掛名有兩種印法，同一批壓片上就少了兩個 h",
+   "A 面七分半，B 面兩軌各自標著「mix」"
+  ],
+  "sound": "MB 1987 年 Transmat MS-02 原盤逐軌曲長：A 面〈Nude Photo〉7:26，B 面〈The Dance (Living Room mix)〉6:59 與〈Move It (Only mix)〉3:36——三軌都掛 mix 或原題，一張 12 吋只放三首、單軌長度接近七分鐘（MB release e5c2c64e 曲長欄）。",
+  "keyTracks": [
+   "Nude Photo",
+   "The Dance (Living Room mix)",
+   "Move It (Only mix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1987 與 MB first-release-date 1987 一致；英文維基〈Derrick May (musician)〉亦記其製作生涯始於 1987 年的〈Nude Photo〉。MB 未給月份，Transmat 編號 MS-02／MS-06 的先後不足以當日期證據，未推月。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 Single（已照實寫入 facts）。掛名說明：Derrick May（MBID 371c8525-8111-4497-83ba-1ead9d7ed148）、Rhythim Is Rhythim（159edf29-c4ae-49c7-b1e6-1f082c60d4e3）、Mayday 是同一人的三個掛名，維基條目明寫「He recorded under the names Rhythim Is Rhythim and Mayday」，行文不可寫成兩個人。擋下策展層說法：curatorWhy 稱本張是「Derrick May 以 Rhythim Is Rhythim 名義發行的第一張 12 吋」、且「比同年五月的《Strings of Life》(MS-004) 更早」——維基只支持「製作生涯始於 1987 年的〈Nude Photo〉」，並未寫「第一張 12 吋」，MB 也只給到年份、無月份，以目錄號推先後屬序數推論，未採用。試聽：逐店面 artist lookup 覆核後維持 unavailable（gb／us／de／nl 皆無此碟）。"
+ },
+ {
+  "key": "desc2:Rhythim Is Rhythim|It Is What It Is",
+  "artist": "Rhythim Is Rhythim",
+  "album": "It Is What It Is",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 34e5e5de 的欄位：title「It Is What It Is」、artist-credit「Rhythim Is Rhythim」、first-release-date 1988-05、primary-type EP、secondary-types 空陣列、轄下 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/34e5e5de-b635-3327-926a-3538797213c4"
+   },
+   {
+    "f": "唯一那筆 release fea6da7f 的欄位：1988-05、US、status Official、廠牌欄 Transmat、編號 MS-06、載體 12\" Vinyl、3 軌，逐軌曲名依序為〈It Is What It Is (Majestic mix)〉〈Feel Surreal (Subconscious mix)〉〈Beyond the Dance (Bizarro mix)〉，三軌的曲長欄皆為空。",
+    "src": "https://musicbrainz.org/release/fea6da7f-5ee4-4055-b82d-7057c5ae077e"
+   },
+   {
+    "f": "Transmat 官方網站的目錄頁〈Rhythim is Rhythim – It is What it is [MS006]〉記：catalogue number MS006、release date May 1988、format「Vinyl, 12″, 45 RPM, 33 ⅓ RPM」、country US；曲目為 A 面〈It Is What It Is (Majestic Mix)〉Edited by Juan、B1〈Feel Surreal (Subconscious Mix)〉Edited by Mayday、B2〈Beyond The Dance (Bizarro Mix)〉Edited by Mayday；credits 欄記「Producer, Mixed By – Mayday」與「℗&© 1988 Transmat – Mayday Music BMI」。",
+    "src": "https://transmatrecords.com/2019/11/02/rhythim-is-rhythim-it-is-what-it-is-ms006/"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉把〈It Is What It Is〉與〈Nude Photo〉〈Strings of Life〉〈Kaos〉並列為 Transmat 上的代表作，並記這批作品多數產於 1987 至 1989 年、掛 Rhythim Is Rhythim 之名。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 409591673（Rhythim Is Rhythim）於 gb／us／de／nl 逐店面 lookup（entity=album、limit=200）各只回 5 張，清單中沒有《It Is What It Is》；Derrick May（16003135）名下 4 張亦無。",
+    "src": "https://itunes.apple.com/lookup?id=409591673&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "三軌全部標成「mix」，連原版都沒放進去",
+   "同一張盤，A 面與 B 面的編輯掛不同名字"
+  ],
+  "sound": "MB 唯一那筆 1988 年 Transmat MS-06 原盤的三軌曲名全部帶括號後綴：〈It Is What It Is (Majestic mix)〉〈Feel Surreal (Subconscious mix)〉〈Beyond the Dance (Bizarro mix)〉；Transmat 官網記這張 12 吋 A 面走 45 RPM、B 面走 33 ⅓ RPM，兩面轉速不同。MB 三軌曲長欄皆空，無可引的秒數。",
+  "keyTracks": [
+   "It Is What It Is (Majestic mix)",
+   "Feel Surreal (Subconscious mix)",
+   "Beyond the Dance (Bizarro mix)"
+  ],
+  "status": "thin",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988-05 一致，Transmat 官網目錄頁亦標 1988；無分歧。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。判 thin 的理由：可查證細節只有五項——MB 的 rg 欄位、唯一 release 的國別／廠牌／編號／載體、三軌曲名（MB 曲長欄全空）、Transmat 官網記的製作與編輯掛名（Producer/Mixed By 為 Mayday、A 面編輯掛 Juan）、維基把本曲列入 Transmat 代表作。無專屬條目、無評論、無錄音細節，串流亦查無。素材預算：正文以 MS-06 這張 12 吋的三軌結構＋兩位編輯的分工＋維基的代表作定位為骨幹，寫 120–180 字。掛名同《Nude Photo》一筆（Derrick May／Rhythim Is Rhythim／Mayday 為同一人，Transmat 官網把製作人直接印成 Mayday）。試聽：逐店面 artist lookup 覆核後維持 unavailable。"
+ },
+ {
+  "key": "desc2:Derrick May|Mix-Up, Volume 5",
+  "artist": "Derrick May",
+  "album": "Mix-Up, Volume 5",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b99d09b4 的欄位：title「Mix‐Up, Volume 5」（連字號為 U+2010）、artist-credit「Derrick May」、first-release-date 1997、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 3 個 release，status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/b99d09b4-1218-3354-9738-54b7883ed7cd"
+   },
+   {
+    "f": "轄下三筆 release 的國別與標題不同：a94fb95e 為 1997／XE／Official《Mix‐Up, Volume 5》、36c0b178 為 1997／JP／Official《Mix‐Up, Volume 5》、96e3ba71 為 1997／GB／Official，標題卻是《The Mayday Mix》——同一份混音在英國換了盤名。",
+    "src": "https://musicbrainz.org/release-group/b99d09b4-1218-3354-9738-54b7883ed7cd"
+   },
+   {
+    "f": "日本盤 release 36c0b178 的欄位：1997、JP、status Official、廠牌欄 Sony Music Entertainment (Japan) Inc.、編號 SRCS 8250、載體 CD、32 軌。首軌是〈Maydays Intro (A Mayday mix Thang)〉1:24，末軌是〈Meditative Fusion (Kenny Larkin remix)〉2:49；32 軌中最長的是〈Mindless Funk〉4:20，最短的是〈Prelude〉0:44。",
+    "src": "https://musicbrainz.org/release/36c0b178-a368-35d8-b8b3-f6aa0c946308"
+   },
+   {
+    "f": "同一份曲目表裡有多首與 Detroit／Chicago 場景同名的曲目被切成一分多鐘的片段，例如〈Spank‐spank〉3:55、〈French Kiss〉2:28、〈1999〉1:22、〈Car Crash Mixer〉1:49、〈Convextion〉2:36、〈Club MCM (K.A. Happy mix)〉2:25（MB 日本盤逐軌曲長欄）。",
+    "src": "https://musicbrainz.org/release/36c0b178-a368-35d8-b8b3-f6aa0c946308"
+   },
+   {
+    "f": "英文維基〈Derrick May (musician)〉的作品列表把《The Mayday Mix》(1997) 列為 DJ mix，與專輯《Innovator》(1996) 分開列。",
+    "src": "https://en.wikipedia.org/wiki/Derrick_May_(musician)"
+   },
+   {
+    "f": "Apple Music 以 artistId 16003135（Derrick May）於 gb／us／jp／de／nl 逐店面 lookup（entity=album、limit=200）各只回 4 張——《Mysterious Traveller》《Innovator》《Innovator - Soundtrack for the Tenth Planet》《Love in Music - Single》，既沒有《Mix-Up, Volume 5》也沒有《The Mayday Mix》。",
+    "src": "https://itunes.apple.com/lookup?id=16003135&entity=album&limit=200&country=jp"
+   }
+  ],
+  "hookCandidates": [
+   "七十幾分鐘切成三十二軌，最短那軌只有四十四秒",
+   "日本叫第五輯，英國換了個名字重出一次"
+  ],
+  "sound": "MB 日本盤 SRCS 8250 的 32 軌曲長分佈：〈Prelude〉0:44、〈A Little Suntin Suntin〉0:51、〈Soundz in My Head〉0:58 三軌不到一分鐘，最長的〈Mindless Funk〉也只有 4:20——整張沒有任何一軌超過五分鐘，是連續混音被切分軌的典型索引（MB release 36c0b178 逐軌曲長欄）。",
+  "keyTracks": [
+   "Maydays Intro (A Mayday mix Thang)",
+   "French Kiss",
+   "Car Crash Mixer",
+   "Mindless Funk",
+   "Meditative Fusion (Kenny Larkin remix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1997 與 MB first-release-date 1997 一致，轄下三筆 release 也全標 1997；無分歧。MB 未給月份，未推月。",
+  "notes": "盤名分歧已入 facts：MB rg 標題用 U+2010 連字號，英國那筆 release 的標題是《The Mayday Mix》。卡片採日本盤盤名（策展層依裁定第 85 條定的），本層照實記錄三個寫法。擋下策展層說法：curatorWhy 沒有問題，但 curatorRisk 提到的「DJ 混音輯的串流授權普遍缺席」是推測而非事實，未寫進 facts——只寫實測的 lookup 結果。試聽：逐店面 artist lookup 覆核後維持 unavailable。"
+ },
+ {
+  "key": "desc2:Phuture|We Are Phuture",
+  "artist": "Phuture",
+  "album": "We Are Phuture",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 38bec4a4 的欄位：title「We Are Phuture」、artist-credit「Phuture」、first-release-date 1988、primary-type EP、secondary-types 空陣列、轄下 3 個 release（1988 US、1996-07 GB、1996 GB），status 全部 Official。1996 年那兩筆的標題各是《We Are Phuture Remix EP 2》與《We Are Phuture: Remix EP》。",
+    "src": "https://musicbrainz.org/release-group/38bec4a4-4b4e-3a69-88d1-c0961a5063f4"
+   },
+   {
+    "f": "1988 年原盤 release 5f8e99cd 的欄位：1988、US、status Official、廠牌欄 Trax Records、編號 TX165、載體 12\" Vinyl、barcode 411570016511、3 軌。逐軌曲名與曲長依序為〈We Are Phuture〉8:38、〈Slam〉5:40、〈Spank-Spank〉4:58。",
+    "src": "https://musicbrainz.org/release/5f8e99cd-2aa3-44ad-b50c-908127af9467"
+   },
+   {
+    "f": "英文維基〈Trax Records〉記：Larry Sherman 於 1983 年在芝加哥創辦 Trax（實際運作自 1984 年起），並在目錄中列出 Phuture 的「We Are Phuture EP」編號 TX165、以及〈Acid Tracks〉編號 TX142；同條目記該廠牌因使用回收黑膠而有「poor-quality vinyl pressings (partially due to the use of recycled vinyl)」之譏，並長年陷於版稅與版權訴訟。",
+    "src": "https://en.wikipedia.org/wiki/Trax_Records"
+   },
+   {
+    "f": "英文維基〈Phuture〉記：樂團 1985 年由 Earl「Spanky」Smith Jr.、DJ Pierre（Nathaniel Pierre Jones）與 Herbert「Herb J」Jackson 組成；1987 年的〈Acid Tracks〉「considered to be the first acid house record and credited for inventing and defining the genre」，做法是把 Roland TB-303 的 tone sequences 即時調變，產出「resonant and squelchy sound」。",
+    "src": "https://en.wikipedia.org/wiki/Phuture"
+   },
+   {
+    "f": "同一條目記〈Acid Tracks〉「originally...recorded to tape and played by DJ Ron Hardy at the Chicago nightclub Music Box, supposedly already in 1985」，1987 年才由 Trax 正式發行；並記「'We are Phuture' was released in 1988」，樂團的曲子「gloomy and monotonous in nature; many tracks are very long, at times passing the 10-minute mark」。",
+    "src": "https://en.wikipedia.org/wiki/Phuture"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 1601915280「We Are Phuture - Single」的欄位：artistName Phuture、releaseDate 1988-01-01、trackCount 3、copyright「℗ 1988 Trax Records」；逐軌為〈We Are Phuture〉515 秒、〈Slam〉338 秒、〈Spank Spank〉300 秒，與 MB 1988 年 TX165 原盤的三軌曲序與曲長相符。同一店面另有 collectionId 894076169，盤名與曲序相同但 copyright 記「℗ 2000 Trax Records」，是後來的版權年條目。",
+    "src": "https://music.apple.com/gb/album/1601915280"
+   }
+  ],
+  "hookCandidates": [
+   "同一張 EP 在同一個店面上了兩次，只有版權年不一樣",
+   "A 面八分三十八秒，同一台 303 被推到底"
+  ],
+  "sound": "MB 1988 年 Trax TX165 原盤三軌曲長：〈We Are Phuture〉8:38、〈Slam〉5:40、〈Spank-Spank〉4:58——A 面單軌就佔掉八分半，對應維基所記本團曲子「very long, at times passing the 10-minute mark」的寫法；維基同時記其 acid 聲響來自 Roland TB-303 的即時調變（MB release 5f8e99cd 曲長欄、英文維基〈Phuture〉）。",
+  "keyTracks": [
+   "We Are Phuture",
+   "Slam",
+   "Spank-Spank"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988 一致，英文維基〈Phuture〉亦記「'We are Phuture' was released in 1988」，Apple 條目 releaseDate 記 1988-01-01；無分歧。MB 未給月份，未推月。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。**推翻試聽 unavailable**：探測記 gb/us/jp/de/fr/ie/ca/au 八店面「9→0」（搜到 9 筆但全部不匹配），改打 artistId 16779831 的 lookup 後在 gb／us／nl 都命中，正解 collectionId 1601915280（gb，℗1988 Trax，3 軌，曲長對得上 MB 原盤）。另一筆 894076169 曲序相同但 ℗2000，屬同名雙胞胎、不採；2018 年的 1645402312《We Are Phuture (Ricardo Villalobos Phutur I - IV Remixes)》為別碟。擋下策展層說法：curatorWhy 稱本張是「Phuture 在《Acid Tracks》之後的第二張 12 吋」——維基只記兩張的發行年（1987／1988），沒有「第二張」的排序陳述，序數未採用。"
+ },
+ {
+  "key": "desc2:Basic Channel|BCD-2",
+  "artist": "Basic Channel",
+  "album": "BCD-2",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 17f80ceb 的欄位：title「BCD‐2」（連字號為 U+2010）、artist-credit「Basic Channel」、first-release-date 2008-05、primary-type Album、secondary-types [Compilation]、轄下 2 個 release（2008-05 DE、2008-08-07 XW），status 皆 Official；XW 那筆的標題用的是 ASCII 連字號「BCD-2」。",
+    "src": "https://musicbrainz.org/release-group/17f80ceb-4cd5-3158-8dd5-6c1b5267b845"
+   },
+   {
+    "f": "德國盤 release 1b43a144 的欄位：2008-05、DE、status Official、廠牌欄 Basic Channel、編號 BCD-2、載體 CD、barcode 827670143123、6 軌。逐軌曲名與曲長依序為〈Enforcement〉13:13、〈Phylyps Trak〉9:58、〈Inversion〉17:45、〈Octagon〉12:58、〈Octaedre〉13:10、〈Phylyps Trak II/II〉12:52。",
+    "src": "https://musicbrainz.org/release/1b43a144-f4be-4365-b376-947d93586550"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：由 Moritz von Oswald 與 Mark Ernestus 組成，「originated in Berlin in 1993」；von Oswald 當時是柏林 Tresor 廠牌的 in-house producer，Ernestus 於 1989 年開了 Hard Wax 唱片行。兩人為了達到想要的音質「founded their own mastering house Dubplates & Mastering」。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記：1993 至 1994 年間他們以不同掛名在 Basic Channel 自營廠牌上發了九張 12 吋，唱片上「minimal information and cryptic lettering, leaving the origin of the projects obscure」；並記他們出過兩張整編 CD 收錄這批 12 吋的編輯版——《BCD》(1995) 與《BCD-2》(2008)。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記〈Phylyps Trak〉是 1993 年的 BC-02、續作於 1994 年以 BC-09 發行；並記兩人的「minimalist sound and incorporation of delay effects inspired by dub reggae helped to define the nascent dub techno scene」，另有 Rhythm & Sound 與 Maurizio 兩個掛名，以及 Chain Reaction、Main Street、Burial Mix 等後續廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 286664836「BCD-2」的欄位：artistName Basic Channel、releaseDate 2008-05-01、trackCount 6，與 MB 德國盤的 6 軌相符；同一 artistId 47295960 的 gb／de／nl 目錄共 14 張，另含《BCD》(collectionId 47297384、1995-02-04、11 軌) 與《Phylyps Trak II》(277154046、2 軌)。",
+    "src": "https://music.apple.com/gb/album/286664836"
+   }
+  ],
+  "hookCandidates": [
+   "六軌，每一軌都超過九分半",
+   "十三年前那張收剩下的，十三年後才補齊"
+  ],
+  "sound": "MB 2008 年 Basic Channel BCD-2 原盤六軌曲長：〈Enforcement〉13:13、〈Phylyps Trak〉9:58、〈Inversion〉17:45、〈Octagon〉12:58、〈Octaedre〉13:10、〈Phylyps Trak II/II〉12:52——六軌沒有一軌短於九分半，最長的〈Inversion〉近十八分鐘；維基記這批原始 12 吋的做法是最小限度的聲響加上取自 dub reggae 的延遲效果（MB release 1b43a144 曲長欄、英文維基〈Basic Channel〉）。",
+  "keyTracks": [
+   "Enforcement",
+   "Phylyps Trak",
+   "Inversion",
+   "Octagon",
+   "Phylyps Trak II/II"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2008 與 MB first-release-date 2008-05 一致，英文維基〈Basic Channel〉亦把《BCD-2》記為 2008 年，Apple 條目 releaseDate 記 2008-05-01；無分歧。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。盤名 U+2010 與 ASCII 兩種寫法都在 facts 裡。試聽覆核：探測記 ready／gb／286664836／6 軌，回查 Apple 條目 trackCount 6 與 MB 德國盤 6 軌一致，判定正確，維持 ready。擋下策展層說法：curatorWhy 稱本張「把 1993–1995 年間未收進 1995 年《BCD》的 12 吋集中成一張」——維基只寫「two compilation CDs collecting edited versions of their 12-inch work」，沒有寫 BCD-2 收的是 BCD 的補集，該推論無來源、未寫進 facts。另 curatorWhy 稱 Porter Ricks「非同一對人」亦與本卡正文無關，未採。"
+ },
+ {
+  "key": "desc2:Basic Channel|Phylyps Trak",
+  "artist": "Basic Channel",
+  "album": "Phylyps Trak",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8ae7525f 的欄位：title「Phylyps Trak」、artist-credit「Basic Channel」、first-release-date 1993-10、primary-type EP、secondary-types 空陣列、轄下 3 個 release（1993-10、2003-11、2008-02-04），三筆全為 DE／Official。",
+    "src": "https://musicbrainz.org/release-group/8ae7525f-11a6-39d3-8494-0bddedf0b7ea"
+   },
+   {
+    "f": "1993 年原壓 release 374f98cd 的欄位：1993-10、DE、status Official、廠牌欄 Basic Channel、編號 BC-02、載體 12\" Vinyl、3 軌。逐軌曲名與曲長依序為〈Phylyps Trak〉9:46、〈Phylyps Base〉7:12、〈Axis〉5:01。",
+    "src": "https://musicbrainz.org/release/374f98cd-1168-49f2-8948-2ad122d7e774"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：「'Phylyps Trak' appeared as BC-02 in 1993, with a sequel released in 1994 as BC-09」——本碟與 1994 年的續作是兩個不同的目錄編號。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "同一條目記 Basic Channel 由 Moritz von Oswald 與 Mark Ernestus 於 1993 年在柏林成立，1993–1994 年間以不同掛名發了九張 12 吋，唱片上只有最小限度的資訊與難辨的字樣；兩人另設 Dubplates & Mastering 母帶室。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 277093544「Phylyps Trak - EP」的欄位：artistName Basic Channel、releaseDate 1993-01-01、trackCount 3、copyright「℗ 2008 Basic Channel 1993」；逐軌為〈Phylyps Trak〉597 秒、〈Phylyps Base〉447 秒、〈Axis〉314 秒，曲序與 MB 1993 年 BC-02 原盤一致。同一目錄下另有 collectionId 277154046《Phylyps Trak II》（1994-01-01、2 軌），是不同的碟。",
+    "src": "https://music.apple.com/gb/album/277093544"
+   }
+  ],
+  "hookCandidates": [
+   "三軌，A 面接近十分鐘",
+   "唱片上幾乎什麼字都沒印，只留一個編號"
+  ],
+  "sound": "MB 1993 年 Basic Channel BC-02 原盤三軌曲長：〈Phylyps Trak〉9:46、〈Phylyps Base〉7:12、〈Axis〉5:01；Apple 同碟條目的三軌各為 597／447／314 秒，比 MB 的原盤各長十餘秒，是不同母帶的版本差。維基把這批唱片的做法記為最小限度的資訊與取自 dub reggae 的延遲效果（MB release 374f98cd、Apple collectionId 277093544、英文維基〈Basic Channel〉）。",
+  "keyTracks": [
+   "Phylyps Trak",
+   "Phylyps Base",
+   "Axis"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-10 一致，英文維基亦記 BC-02 為 1993 年。Apple 條目 releaseDate 記 1993-01-01（月日為店面填充值）、copyright 記「℗ 2008 Basic Channel 1993」，年份同為 1993，無實質分歧。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 EP（已寫入 facts）。**推翻試聽 unavailable**：探測八店面全記「0→0」，改打 artistId 47295960 的 lookup 後在 gb／de／nl 都命中，正解 collectionId 277093544（gb，3 軌，曲序與 MB 原盤一致）。⚠ 同目錄下的 277154046 是《Phylyps Trak II》（1994、2 軌），不可誤配。掛名說明：Basic Channel／Maurizio／Rhythm & Sound 是同一對人（Moritz von Oswald 與 Mark Ernestus）的不同掛名，維基明列，行文不得寫成不同團體。擋下策展層說法：curatorWhy 稱本張是「Basic Channel 自營廠牌的第二張 12 吋」——維基只記編號 BC-02 與年份，未寫排序，序數未採用；curatorWhy 另稱「池中的《BCD》整編收的是 II、本張的內容不在其中」，無來源可查，未採用（且 MB 顯示《BCD-2》的第二軌就叫〈Phylyps Trak〉，與該說法方向相反）。"
+ },
+ {
+  "key": "desc2:Rhythm & Sound|Rhythm & Sound",
+  "artist": "Rhythm & Sound",
+  "album": "Rhythm & Sound",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bd5b850c 的欄位：title「Rhythm & Sound」、artist-credit「Rhythm & Sound」、first-release-date 2001-10-01、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（2001-10-01 XW、2001-10-13 DE、2005-06-12 DE），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/bd5b850c-acc9-3ef3-8601-e8b669668003"
+   },
+   {
+    "f": "release 184de999 的欄位：2001-10-01、XW、status Official、廠牌欄 Rhythm & Sound、編號 RS-01、10 軌。逐軌曲名與曲長依序為〈No Partial〉6:15、〈Trace〉7:24、〈Mango Drive〉7:12、〈Distance〉4:42、〈Smile〉9:12、〈Outward〉5:46、〈Roll Off〉9:34、〈Carrier〉6:27、〈Range〉6:29、〈Imprint〉16:51。",
+    "src": "https://musicbrainz.org/release/184de999-742e-4745-9b2e-c51423f9ce18"
+   },
+   {
+    "f": "同一筆 release 的逐軌 artist-credit 欄顯示十軌裡只有第五軌〈Smile〉掛「Rhythm & Sound w/ Savage」，其餘九軌全部只掛「Rhythm & Sound」。",
+    "src": "https://musicbrainz.org/release/184de999-742e-4745-9b2e-c51423f9ce18"
+   },
+   {
+    "f": "英文維基〈Rhythm & Sound〉記：這是 Moritz von Oswald 與 Mark Ernestus 的合作掛名，作品掛在 Burial Mix 廠牌之下；並記他們以此名做的是「more faithful takes on Jamaican dub in collaboration with vocalists such as Paul St. Hilaire, Cornell Campbell, and the Love Joys」。",
+    "src": "https://en.wikipedia.org/wiki/Rhythm_%26_Sound"
+   },
+   {
+    "f": "英文維基〈Basic Channel〉記：同一對人以 Basic Channel、Rhythm & Sound、Maurizio 三個掛名發表作品，並設有 Chain Reaction、Main Street Records、Burial Mix 等廠牌；其「minimalist sound and incorporation of delay effects inspired by dub reggae helped to define the nascent dub techno scene」。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 49295436「Rhythm & Sound」的欄位：artistName Rhythm & Sound、releaseDate 2001-01-01、trackCount 10、copyright「℗ 2001 Basic Channel」；逐軌為〈No Partial〉375 秒、〈Trace〉444 秒、〈Mango Drive〉432 秒、〈Distance〉282 秒、〈Smile〉553 秒、〈Outward〉347 秒、〈Roll Off〉574 秒、〈Carrier〉387 秒、〈Range〉390 秒、〈Imprint〉1011 秒，十軌曲序與曲長皆與 MB 的 RS-01 相符。",
+    "src": "https://music.apple.com/gb/album/49295436"
+   }
+  ],
+  "hookCandidates": [
+   "十軌裡只有一軌有人聲，其他九軌沒有",
+   "最後一軌十六分五十一秒，佔掉整張的四分之一"
+  ],
+  "sound": "MB 的 RS-01 十軌曲長：〈No Partial〉6:15 起，中段〈Smile〉9:12、〈Roll Off〉9:34，末軌〈Imprint〉16:51；十軌中只有〈Smile〉的 artist-credit 帶人聲掛名（w/ Savage），其餘九軌是純器樂掛名。維基把這個掛名的做法記為對牙買加 dub 較忠實的版本，與 Basic Channel 那條記的 dub reggae 延遲效果同源（MB release 184de999 曲長與逐軌 credit 欄、英文維基〈Rhythm & Sound〉〈Basic Channel〉）。",
+  "keyTracks": [
+   "No Partial",
+   "Smile",
+   "Roll Off",
+   "Carrier",
+   "Imprint"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2001 與 MB first-release-date 2001-10-01 一致；Apple 條目 releaseDate 記 2001-01-01（月日為店面填充值）、copyright 記 ℗ 2001，年份相同，無實質分歧。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。試聽覆核：探測記 ready／gb／49295436／10 軌，回查 Apple 逐軌曲序與曲長與 MB 的 RS-01 完全對得上，判定正確，維持 ready。自我同名卡（掛名與盤名相同）已在 facts 內以 MBID 與 Apple collectionId 兩路標定。擋下策展層說法：curatorWhy 稱本張是「Rhythm & Sound 名義發行的第一張整編」、且「把 1996–1999 年間的 12 吋集中成一張」——維基與 MB 都沒有這兩項陳述（維基把該掛名的活躍期記為 1997–2002），序數與收錄範圍均無來源，未採用。"
+ },
+ {
+  "key": "desc2:Rhythm & Sound|See Mi Yah",
+  "artist": "Rhythm & Sound",
+  "album": "See Mi Yah",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b90a3567 的欄位：title「See Mi Yah」、artist-credit「Rhythm & Sound」、first-release-date 2005-01-17、primary-type Album、secondary-types [Compilation]、轄下 3 個 release（2005-01-17 DE、status 未標；2005-03-11 XW／Official；2005-03-28 DE／Official）。",
+    "src": "https://musicbrainz.org/release-group/b90a3567-315b-3bd7-b7d1-219ca7422b6a"
+   },
+   {
+    "f": "release eeaf5f98 的欄位：2005-03-11、XW、status Official、廠牌欄 Burial Mix、編號 BMD-4、11 軌。逐軌曲名與曲長依序為〈See Mi Yah〉3:56、〈Dem Never Know〉3:56、〈Rise and Praise〉3:49、〈Truly〉4:11、〈Lightning Storm〉5:50、〈Let Jah Love Come〉5:12、〈Boss Man〉3:33、〈Poor People Must Work〉3:30、〈Let We Go〉4:27、〈Free for All〉4:27、〈See Mi Version〉4:00。",
+    "src": "https://musicbrainz.org/release/eeaf5f98-dd88-449a-9759-d6cff5afb22e"
+   },
+   {
+    "f": "同一筆 release 的逐軌 artist-credit 欄逐軌掛不同歌手：〈See Mi Yah〉w/ Willi Williams、〈Dem Never Know〉w/ Jah Cotton、〈Rise and Praise〉w/ Koki、〈Truly〉w/ Freddy Mellow、〈Lightning Storm〉w/ Rod of Iron、〈Let Jah Love Come〉w/ Sugar Minott、〈Boss Man〉w/ Walda Gabriel、〈Poor People Must Work〉w/ Bobbo Shanti、〈Let We Go〉w/ Ras Donovan & Ras Perez、〈Free for All〉w/ Paul St. Hilaire；末軌〈See Mi Version〉只掛 Rhythm & Sound。",
+    "src": "https://musicbrainz.org/release/eeaf5f98-dd88-449a-9759-d6cff5afb22e"
+   },
+   {
+    "f": "英文維基〈Rhythm & Sound〉記《See Mi Ya》(2005) 以三種載體發行——CD 編號 BMD-4、LP 編號 BMLP-4，以及一套 7 吋盒裝 BM-14-20；並記 2006 年另有 remix 集《See Mi Ya Remixes》(BMXD-1)。同條目列出的合作歌手包含 Paul St. Hilaire、Jah Batta、Jennifer Lara 與 the Chosen Brothers。",
+    "src": "https://en.wikipedia.org/wiki/Rhythm_%26_Sound"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 52996963「See Mi Yah」的欄位：artistName Rhythm & Sound、releaseDate 2005-03-11、trackCount 11、copyright「℗ 2005 Basic Channel」；十一軌的曲序與曲名與 MB 的 BMD-4 完全一致，曲長依序為 236／236／229／251／350／312／213／210／267／267／240 秒。",
+    "src": "https://music.apple.com/gb/album/52996963"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌，十個不同的人輪流上麥克風",
+   "最後一軌把人聲收掉，只剩底下那條節奏"
+  ],
+  "sound": "MB 的 BMD-4 十一軌曲長集中在 3:30 到 5:50 之間，最短〈Poor People Must Work〉3:30、最長〈Lightning Storm〉5:50；逐軌 artist-credit 顯示前十軌各掛一位（或一組）歌手、末軌〈See Mi Version〉只掛 Rhythm & Sound（MB release eeaf5f98 曲長與逐軌 credit 欄）。",
+  "keyTracks": [
+   "See Mi Yah",
+   "Let Jah Love Come",
+   "Lightning Storm",
+   "Free for All",
+   "See Mi Version"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2005 與 MB first-release-date 2005-01-17 一致。分歧：MB 的 XW 盤 date 為 2005-03-11、Apple 條目 releaseDate 亦記 2005-03-11，DE 盤為 2005-03-28，七吋盒裝那筆為 2005-01-17；同屬 2005 年，不影響卡片年份，交主線知悉。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。試聽覆核：探測記 ready／gb／52996963／11 軌，回查 Apple 曲序與曲名與 MB 的 BMD-4 逐軌一致，判定正確，維持 ready。歌手名單以 MB 逐軌 artist-credit 為準（維基列的四位裡只有 Paul St. Hilaire 出現在本碟 BMD-4 的逐軌 credit，Jah Batta／Jennifer Lara／Chosen Brothers 屬該掛名的其他作品，行文不要混寫進本碟）。擋下策展層說法：curatorWhy 稱「同一段節奏由七位牙買加歌手分別演唱」——MB 逐軌 credit 顯示的是十位（組）不同掛名、不是七位，且「同一段節奏」在 MB 與維基都查不到出處，兩項均未寫進 facts。廠牌 Burial Mix 與 Hyperdub 的藝人 Burial 無關，下游不要混用。"
+ },
+ {
+  "key": "desc2:F.U.S.E.|Dimension Intrusion",
+  "artist": "F.U.S.E.",
+  "album": "Dimension Intrusion",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d31b0c34 的欄位：title「Dimension Intrusion」、artist-credit「F.U.S.E.」、first-release-date 1993-06-07、primary-type Album、secondary-types 空陣列、轄下 9 個 release（1993-06-07 GB 兩筆、1993-07-01 CA、1993 JP、1993 US、2019-04-22 XW、2019-05-03 無國別、2023-11-10 XW 兩筆），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/d31b0c34-f02b-31a8-a32f-629a0baa6e98"
+   },
+   {
+    "f": "1993 年英國盤 release 37c5b797 的欄位：1993-06-07、GB、status Official、廠牌欄 Warp、編號 WARP LP12 LTD、barcode 5021603012110、兩張 12\" Vinyl 共 13 軌。第一張逐軌為〈A New Day〉3:54、〈F.U.〉7:45、〈Slac〉3:17、〈Dimension Intrusion〉4:04、〈Substance Abuse〉5:09、〈Train-Trac.1〉6:43、〈Another Time (Revisited)〉6:22；第二張為〈Theychx〉13:27、〈UVA〉8:06、〈Mantrax〉8:01、〈NiteDrive〉3:29、〈Into the Space〉5:30、〈Logikal Nonsense〉1:14。",
+    "src": "https://musicbrainz.org/release/37c5b797-d47b-496a-883b-590dd331da1d"
+   },
+   {
+    "f": "英文維基〈Dimension Intrusion〉記：1993 年 6 月 7 日發行，廠牌為 Plus 8 與 Warp Records，是 Richie Hawtin 以 F.U.S.E. 化名的首張錄音室專輯；錄於 1991 至 1993 年，全長 76:26，十三軌全部由 Richie Hawtin 作曲，Matthew Hawtin 負責美術。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "同一條目記本作列入 Warp 的 Artificial Intelligence 系列，排在 B12《Electro-Soma》之後、Speedy J《Ginger》之前；曲風記為 ambient techno 與 IDM，英國專輯榜最高名次 63。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "同一條目的評價段：AllMusic 給 4.5 星、《Select》給 4／5；《Fact》2012 年的「100 Best Albums of the 1990s」把本作排在第 38，並寫這是「a record which really demonstrates Hawtin's range as a producer」。",
+    "src": "https://en.wikipedia.org/wiki/Dimension_Intrusion"
+   },
+   {
+    "f": "Apple Music 英國店面沒有 1993 年原版條目，只有兩個週年版：collectionId 1459720905「Dimension Intrusion (25th Anniversary Edition)」（掛名 F.U.S.E. & Richie Hawtin、2019-05-03、14 軌、℗ 2019 Plus 8 Records），與 collectionId 1715644070「Dimension Intrusion (30th Anniversary Edition)」（掛名 F.U.S.E.、2023-11-10、13 軌、℗ 2023 Plus 8 Records）。",
+    "src": "https://music.apple.com/gb/album/1715644070"
+   },
+   {
+    "f": "兩個週年版的曲目不同：25 週年版的十四軌把第六軌換成〈Downbeat〉5:23、並多出第九軌〈Time Stop〉4:44，沒有〈Train-Trac.1〉；30 週年版的十三軌依序為〈A New Day〉〈F.U.〉〈Slac〉〈Dimension Intrusion〉〈Substance Abuse〉〈Train-Trac.1〉〈Another Time (Revisited)〉〈Theychx〉〈UVA〉〈Mantrax〉〈Nitedrive〉〈Into the Space〉〈Logikal Nonsense〉，與 MB 1993 年 WARP LP12 LTD 的十三軌曲序完全一致。",
+    "src": "https://music.apple.com/gb/album/1459720905"
+   }
+  ],
+  "hookCandidates": [
+   "二十五週年版比原盤多一軌，還換掉了其中一首",
+   "十三軌，最長那軌十三分二十七秒"
+  ],
+  "sound": "MB 1993 年 Warp WARP LP12 LTD 兩張黑膠十三軌的曲長跨度極大：最短〈Logikal Nonsense〉1:14，最長〈Theychx〉13:27，中間〈F.U.〉7:45、〈UVA〉8:06、〈Mantrax〉8:01；維基把曲風記為 ambient techno 與 IDM，全長 76:26（MB release 37c5b797 曲長欄、英文維基〈Dimension Intrusion〉）。",
+  "keyTracks": [
+   "A New Day",
+   "F.U.",
+   "Dimension Intrusion",
+   "Theychx",
+   "Logikal Nonsense"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-06-07 一致，英文維基亦記 1993 年 6 月 7 日；無分歧。",
+  "notes": "掛名說明：F.U.S.E.（MBID 99c0c596）與 Richie Hawtin（76da816f）、Plastikman（abee98f6）是同一人的三個掛名，維基〈Dimension Intrusion〉明寫本作是 Hawtin 以 F.U.S.E. 化名所作，行文不得寫成兩個人；Apple 的 25 週年版更直接把掛名印成「F.U.S.E. & Richie Hawtin」。**ready 但配錯版本**：探測取的是 gb collectionId 1459720905（25th Anniversary Edition、14 軌），該版換掉〈Train-Trac.1〉、多一軌〈Time Stop〉，與 MB 1993 原盤十三軌對不上。**正解 collectionId 1715644070**（gb，30th Anniversary Edition，13 軌，曲序與 MB 原盤逐軌一致）；Apple 目前無 1993 年原版條目，上架備註要寫明取的是 30 週年版。擋下策展層說法：curatorRisk 稱本作是「Richie Hawtin 以 F.U.S.E. 名義的唯一一張正規專輯」——維基只寫這是他以該化名的「debut studio album」，「唯一」無來源，未採用。"
+ },
+ {
+  "key": "desc2:Richie Hawtin|DE9: Closer to the Edit",
+  "artist": "Richie Hawtin",
+  "album": "DE9: Closer to the Edit",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e7a84390 的欄位：title「DE9 | Closer to the Edit」（分隔符為直線）、artist-credit「Richie Hawtin」、first-release-date 2001-09-18、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 3 個 release（2001-09-18 US、2001 CA、2001 XE），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/e7a84390-fcd3-3d5d-828a-2ba134d33d6a"
+   },
+   {
+    "f": "美國盤 release bf1b9701 的欄位：2001-09-18、US、status Official、廠牌欄 novamute、編號 3064-2、載體 CD、barcode 724596306420、31 軌。每一軌的曲名都是好幾首曲子的名字用斜線串起來，例如第 26 軌〈Formenverwandler / Friday Night With B. Reynolds / Chemistry / Octagon / A Factory Dub / Edit Blue / Concept Loop u:2 / Concept Loop u:3〉3:39，第 6 軌串了七個曲名、長 1:25。",
+    "src": "https://musicbrainz.org/release/bf1b9701-c3fd-4de0-a17b-6fcd5f86bd5a"
+   },
+   {
+    "f": "同一筆 release 的 31 軌曲長：最長的是第 1 軌〈Range / Smart Card? / 10 Strikes to 2001〉3:51，最短的是第 5 軌〈Rewomteprac / Stereo Virus / Talk to Me〉0:29 與第 24 軌〈Edit Blue / Süizgürtel / Diminishing Returns〉0:29；三十一軌中有十四軌不到一分半。",
+    "src": "https://musicbrainz.org/release/bf1b9701-c3fd-4de0-a17b-6fcd5f86bd5a"
+   },
+   {
+    "f": "英文維基〈DE9 Closer to the Edit〉記：2001 年 9 月 18 日發行，錄於 2001 年 6 月、地點 The Building 530，廠牌為 Novamute Records 與 Minus，31 軌、全長 53:10，曲風記為 Detroit techno、minimal techno、microhouse。",
+    "src": "https://en.wikipedia.org/wiki/DE9_Closer_to_the_Edit"
+   },
+   {
+    "f": "同一條目的評價段：AllMusic 4.5／5、Pitchfork 7.9／10，The A.V. Club 與 MusicOMH 皆為好評；《Spin》把它列入 2001 年二十張最佳專輯，Resident Advisor 把它排在「top 50 mixes of the 2000s」第 16 名。",
+    "src": "https://en.wikipedia.org/wiki/DE9_Closer_to_the_Edit"
+   },
+   {
+    "f": "Apple Music 以 artistId 4090861（Richie Hawtin）於 gb／us／ca 逐店面 lookup（entity=album、limit=200）各回 22 至 23 張，清單中沒有任何 DE9 系列條目；同一藝人的《Concept 1 96:12》《Minus Orange - EP》《Mixmag Live!》等舊作都在。",
+    "src": "https://itunes.apple.com/lookup?id=4090861&entity=album&limit=200&country=ca"
+   }
+  ],
+  "hookCandidates": [
+   "三十一軌，一半以上撐不到九十秒",
+   "每一軌的曲名都是好幾首歌的名字串成的"
+  ],
+  "sound": "MB 美國盤 novamute 3064-2 的三十一軌曲名全部由多個曲名以斜線串接（第 26 軌串了八個），曲長從 0:29 到 3:51，維基記全長 53:10——索引點比曲子還密。曲風依維基記為 Detroit techno、minimal techno 與 microhouse（MB release bf1b9701 曲名與曲長欄、英文維基〈DE9 Closer to the Edit〉）。",
+  "keyTracks": [
+   "Range / Smart Card? / 10 Strikes to 2001",
+   "Orph / Diminishing Returns",
+   "At the Front",
+   "Edit Blue / Süizgürtel / Diminishing Returns",
+   "Range / Dekompression / Amenity"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2001 與 MB first-release-date 2001-09-18 一致，英文維基亦記 2001 年 9 月 18 日；無分歧。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts。盤名分歧：MB 與原盤作「DE9 | Closer to the Edit」（直線分隔號），卡片改冒號與池中既有卡一致，本層照實記錄兩種寫法。試聽：探測八店面全記「0→0」，改打 artistId 4090861 的逐店面 lookup 覆核，gb／us／ca 的完整目錄裡都沒有 DE9 系列，維持 unavailable。擋下策展層說法：curatorWhy 稱本作「把上百段素材切成單軌後重新組裝」、且是「DE9 系列的第二張」——維基條目沒有這兩項陳述（製作方法段落只寫錄音時間與地點），坊間訪談的「300 loops／Final Scratch」說法未在維基或 MB 上取得可引用來源，兩項皆未寫進 facts。"
+ },
+ {
+  "key": "desc2:Richie Hawtin|DE9: Transitions",
+  "artist": "Richie Hawtin",
+  "album": "DE9: Transitions",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c2da2f08 的欄位：title「DE9 | Transitions」、artist-credit「Richie Hawtin」、first-release-date 2005-10-26、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 4 個 release（2005-10-26 CA 兩筆、2005-10-31 XE、2006-05-29 GB）。",
+    "src": "https://musicbrainz.org/release-group/c2da2f08-1984-37da-b4f0-101146670e96"
+   },
+   {
+    "f": "加拿大盤 release 648ea55f 的欄位：2005-10-26、CA、status Official、廠牌欄 M_nus、編號 MINUS 32、載體 DVD-Audio、28 軌。首軌〈Welcomm(in)〉3:49，末軌〈Transitions〉1:12；最長的是第 15 軌〈The Tunnel〉8:27，最短的是第 9 軌〈Jupiter Lander〉0:30。",
+    "src": "https://musicbrainz.org/release/648ea55f-d4c4-4a4d-b44c-6c1f52fa7d03"
+   },
+   {
+    "f": "該 28 軌的曲名多為造詞或德文，例如〈Seiltänzer〉3:00、〈Tonarzt〉5:01、〈Noch Nah(r)〉4:11、〈Weiter Noch〉5:44、〈Ich Weiss Nicht〉4:37、〈Minimission〉5:15、〈(D)ecaying Beauty〉4:41，與〈Where Is Mayday?〉4:01（MB 該筆 release 逐軌欄位）。",
+    "src": "https://musicbrainz.org/release/648ea55f-d4c4-4a4d-b44c-6c1f52fa7d03"
+   },
+   {
+    "f": "英文維基〈DE9 Transitions〉記：2005 年 10 月 26 日發行，廠牌 Novamute Records 與 Minus；CD 收 21 軌、長 75:21，特別版 DVD 收全部 28 軌、長 97:07；曲風記為 Detroit techno 與 minimal music。",
+    "src": "https://en.wikipedia.org/wiki/DE9_Transitions"
+   },
+   {
+    "f": "同一條目記本作在美國告示牌 Top Dance/Electronic Albums 榜最高名次 22；評價段列 AllMusic 4.5／5、PopMatters 8／10、Resident Advisor 4.5／5、Pitchfork 7.8／10，The A.V. Club 與 BBC Music 皆為好評。",
+    "src": "https://en.wikipedia.org/wiki/DE9_Transitions"
+   },
+   {
+    "f": "Apple Music 以 artistId 4090861（Richie Hawtin）於 gb／us／ca 逐店面 lookup（entity=album、limit=200）各回 22 至 23 張，清單中沒有任何 DE9 系列條目。",
+    "src": "https://itunes.apple.com/lookup?id=4090861&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "CD 二十一軌，DVD 二十八軌，同一份東西兩種切法",
+   "有一軌只有三十秒，叫〈Jupiter Lander〉"
+  ],
+  "sound": "MB 加拿大 DVD-Audio 版 MINUS 32 的二十八軌曲長從 0:30（〈Jupiter Lander〉）到 8:27（〈The Tunnel〉），維基記 CD 版 21 軌 75:21、DVD 版 28 軌 97:07——同一份混音被切成兩種索引密度。曲風依維基記為 Detroit techno 與 minimal music（MB release 648ea55f 曲長欄、英文維基〈DE9 Transitions〉）。",
+  "keyTracks": [
+   "Welcomm(in)",
+   "Visioning",
+   "The Tunnel",
+   "Where Is Mayday?",
+   "Transitions"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2005 與 MB first-release-date 2005-10-26 一致，英文維基亦記 2005 年 10 月 26 日。MB 轄下另有 2006-05-29 的英國盤，屬後續發行，不改卡片年份。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts。盤名分歧：MB 作「DE9 | Transitions」（直線分隔號），卡片改冒號與池中既有卡一致。試聽：探測八店面全記「0→0」，改打 artistId 4090861 的逐店面 lookup 覆核，gb／us／ca 完整目錄都沒有 DE9 系列，維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「DE9 三部曲的第三張」——維基條目未作此排序陳述，序數未採用；curatorRisk 稱「DJ 混音輯的串流授權普遍缺席」是推測，未寫進 facts。"
+ },
+ {
+  "key": "desc2:Frankie Knuckles presents Satoshi Tomiie|Tears",
+  "artist": "Frankie Knuckles presents Satoshi Tomiie",
+  "album": "Tears",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 58b4da8a 的欄位：title「Tears」、artist-credit「Frankie Knuckles presents Satoshi Tomiie」、first-release-date 1989、primary-type Single、secondary-types 空陣列、轄下 6 個 release（1989 GB／Official、1989 GB／Promotion、1989 US／Official、1999 GB／Official、2022-12-09 XW／Official，另一筆 GB 無日期無 status）。",
+    "src": "https://musicbrainz.org/release-group/58b4da8a-c553-3b9c-a688-e0e31fc28b20"
+   },
+   {
+    "f": "1989 年英國原盤 release 869a4cd6 的欄位：1989、GB、status Official、廠牌欄 FFRR、編號 FX 108、載體 12\" Vinyl、barcode 042288657712、3 軌，曲名依序為〈Tears (Classic vocal)〉〈Tears (bonus beats)〉〈Tears (Classic instrumental)〉，三軌的曲長欄皆空。",
+    "src": "https://musicbrainz.org/release/869a4cd6-e61f-4c7f-8233-3f93c7bda0a4"
+   },
+   {
+    "f": "1999 年再壓 release dec327e9 的欄位：1999、GB、status Official、廠牌欄 Essential Recordings、編號 ESXDJ07、載體 12\" Vinyl、4 軌：〈Tears (Full Intention mix)〉6:27、〈Tears (a cappella)〉2:04、〈Tears (Full Intention's Drippin' 'N' Droppin' dub)〉7:14、〈Tears (Classic vocal)〉6:47。",
+    "src": "https://musicbrainz.org/release/dec327e9-eb7a-4702-b72b-d23586c5e82b"
+   },
+   {
+    "f": "2022 年數位盤 release 07a27957 的欄位：2022-12-09、XW、status Official、廠牌欄 X5 Music Group、barcode 5059460165892、載體 Digital Media、5 軌：〈Tears (classic vocal)〉6:45、〈Tears (classic instrumental)〉7:02、〈Tears (Full Intention mix)〉8:05、〈Tears (Full Intention's Drippin' n' Droppin' dub)〉7:10、〈Tears (a cappella)〉2:17。",
+    "src": "https://musicbrainz.org/release/07a27957-f820-488b-bb2f-98f7681f01ac"
+   },
+   {
+    "f": "英文維基〈Frankie Knuckles〉記：Francis Warren Nicholls Jr.（1955 年 1 月 18 日－2014 年 3 月 31 日），1977 年起任芝加哥 The Warehouse 的駐店 DJ，1982 年 11 月自開 The Power Plant；條目確認〈Tears〉的人聲來自 Robert Owens、製作有 Satoshi Tomiie 參與；他 1997 年拿下葛萊美的 Remixer of the Year, Non-Classical。",
+    "src": "https://en.wikipedia.org/wiki/Frankie_Knuckles"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 1655154459「Tears - EP」的欄位：artistName「Frankie Knuckles & Satoshi Tomiie」、trackCount 5、copyright「℗ 2022 Warner Music Group - X5 Music Group」、collectionExplicitness notExplicit、releaseDate 顯示 1999-06-28、artwork 檔名 5059460165892.jpg——該 barcode 與 MB 2022 年 X5 數位盤 07a27957 的 barcode 5059460165892 相同，是同一筆發行。",
+    "src": "https://music.apple.com/gb/album/1655154459"
+   }
+  ],
+  "hookCandidates": [
+   "同一首歌，三個版本各印一次：人聲、無人聲、只有節拍",
+   "掛名寫著兩個人，唱的是第三個"
+  ],
+  "sound": "MB 1989 年 FFRR FX 108 原盤三軌就是同一首曲子的三種切法——〈Tears (Classic vocal)〉〈Tears (bonus beats)〉〈Tears (Classic instrumental)〉，該筆的曲長欄全空；到 2022 年 X5 數位盤才有秒數，classic vocal 6:45、classic instrumental 7:02、a cappella 2:17。維基記人聲由 Robert Owens 擔任（MB release 869a4cd6 與 07a27957、英文維基〈Frankie Knuckles〉）。",
+  "keyTracks": [
+   "Tears (Classic vocal)",
+   "Tears (Classic instrumental)",
+   "Tears (bonus beats)",
+   "Tears (a cappella)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1989 與 MB first-release-date 1989 一致。Apple 條目把 releaseDate 顯示成 1999-06-28（對應 MB 的 1999 年 Essential 再壓年份），但其 barcode 指向 2022 年 X5 數位盤；卡片年份仍以 MB 的 1989 為準，Apple 的 1999 與 ℗2022 兩個日期交主線知悉。MB 未給月份，未推月。",
+  "notes": "§5.5 白名單卡：MB primary-type 確為 Single（已寫入 facts）。**推翻試聽 unavailable**：探測八店面全記「0→0」，改打 artistId 4325666（Frankie Knuckles）的逐店面 lookup（entity=album、limit=200）後，gb／us／de／nl 的 47 張目錄裡都有 collectionId 1655154459「Tears - EP」，正解取 gb（店面序第一）。配對佐證：Apple artwork 檔名帶的 barcode 5059460165892 與 MB 2022 年 X5 數位盤完全相同、trackCount 同為 5，屬同一 release-group 內的正確配對，非同名別碟。掛名說明：MB 的 rg artist-credit 是「Frankie Knuckles presents Satoshi Tomiie」，轄下各 release 的 credit 寫成「Frankie Knuckles & Satoshi Tomiie」，Apple 也用 & 版；同一組人、兩種印法，行文不要當成兩張不同的碟。擋下策展層說法：curatorWhy 稱這是「Frankie Knuckles 與富家哲合作、Robert Owens 演唱的 12 吋，1989 年由 FFRR 在英美同步發行」——「同步」無來源（MB 兩筆都只給到年份），未寫進 facts；curatorRisk 引的三筆 Discogs 同名別碟未取得可開啟來源，亦未採。"
+ },
+ {
+  "key": "desc2:Frankie Knuckles|Choice: A Collection of Classics",
+  "artist": "Frankie Knuckles",
+  "album": "Choice: A Collection of Classics",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ea725387 的欄位：title「Choice: A Collection of Classics」、artist-credit「Frankie Knuckles」、first-release-date 2000-09-04、primary-type Album、secondary-types [Compilation]、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/ea725387-9f67-36e5-b9c9-7f26b606aa04"
+   },
+   {
+    "f": "唯一那筆 release 5e1d5e89 的欄位：2000-09-04、GB、status Official、廠牌欄 Azuli Records、編號 AZCD08、barcode 880157110087、兩張 CD 共 25 軌（第一張 14 軌、第二張 11 軌）。第一張的曲目含〈Thousand Finger Man〉5:31、〈Nights (Feel Like Getting Down)〉4:13、〈I Want You For Myself〉5:40、〈A Little Bit of Jazz〉2:43；第二張含〈Back to Life (However Do You Want Me)〉3:50、〈Set Your Loving Free〉5:35、〈Symphony〉5:13、〈What You Need〉7:29。",
+    "src": "https://musicbrainz.org/release/5e1d5e89-1026-4ddb-897d-1f88c13ef1f9"
+   },
+   {
+    "f": "AllMusic 的本作頁面記 Release Date November 14, 2000、Duration 02:05:29、Genre R&B、Styles 為 Club/Dance、Disco、Post-Disco、House、Jazz-Funk。",
+    "src": "https://www.allmusic.com/album/choice-a-collection-of-classics-mw0000528509"
+   },
+   {
+    "f": "AllMusic 由 John Bush 執筆的評論寫：「Spreading his fingers over the history of electronic dance music, from the '70s to the '90s, Frankie Knuckles mixed a solid collection of tracks, definitely focused more on contemporary house but also stretching back to the heyday of disco and jazz-funk.」並記第一張偏舊派舞曲、第二張收的是九〇年代初的 house，點名 Soul II Soul〈Back to Life〉、Lisa Stansfield〈Set Your Loving Free〉、Jestofunk〈I'm Gonna Love You〉與 Donell Rush〈Symphony〉。",
+    "src": "https://www.allmusic.com/album/choice-a-collection-of-classics-mw0000528509"
+   },
+   {
+    "f": "AllMusic 的曲目表逐軌標出原唱：〈Let's Do It〉為 Convertion、〈You Saved My Day〉為 Cheryl Lynn、〈Love Bug〉為 Bumblebee Unlimited、〈We Got the Funk〉為 Positive Force、〈Can You Handle It〉為 Sharon Redd——整張的曲目都不是 Knuckles 自己的錄音。",
+    "src": "https://www.allmusic.com/album/choice-a-collection-of-classics-mw0000528509"
+   },
+   {
+    "f": "英文維基〈Frankie Knuckles〉記：Francis Warren Nicholls Jr.（1955-01-18 至 2014-03-31），1977 年起在芝加哥 The Warehouse 當駐店 DJ、1982 年 11 月自開 The Power Plant，1997 年拿下葛萊美 Remixer of the Year, Non-Classical。",
+    "src": "https://en.wikipedia.org/wiki/Frankie_Knuckles"
+   },
+   {
+    "f": "Apple Music 以 artistId 4325666（Frankie Knuckles）於 gb／us／de／nl 逐店面 lookup（entity=album、limit=200）各回 47 張，清單中沒有《Choice: A Collection of Classics》。",
+    "src": "https://itunes.apple.com/lookup?id=4325666&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "兩張 CD 二十五軌，沒有一軌是他自己唱的",
+   "第一張停在迪斯可，第二張才走到 house"
+  ],
+  "sound": "AllMusic 記全長 02:05:29，Styles 欄列 Club/Dance、Disco、Post-Disco、House、Jazz-Funk 五項；MB 的 AZCD08 兩張 CD 共 25 軌，單軌從〈A Little Bit of Jazz〉2:43 到〈Feel It〉8:08。John Bush 的評論把兩張碟的分工寫成第一張偏舊派舞曲、第二張收九〇年代初的 house（MB release 5e1d5e89、AllMusic 本作頁面）。",
+  "keyTracks": [
+   "Thousand Finger Man",
+   "Nights (Feel Like Getting Down)",
+   "I Want You For Myself",
+   "Back to Life (However Do You Want Me)",
+   "Symphony"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2000 與 MB first-release-date 2000-09-04 一致。分歧：AllMusic 記 Release Date November 14, 2000，比 MB 晚兩個多月；同屬 2000 年，不影響卡片年份，交主線知悉。",
+  "notes": "primary-type Album／secondary-types [Compilation] 已照實寫入 facts。試聽：探測九店面零命中，改打 artistId 4325666 的逐店面 lookup 覆核，gb／us／de／nl 的 47 張目錄裡都沒有本碟，維持 unavailable。擋下策展層說法：curatorWhy 稱本碟是「他自己挑出的 Warehouse／Power Plant 時期曲目清單，等於他對那段場景的第一手註記」——AllMusic 與維基都沒有這個陳述（AllMusic 只寫選曲橫跨七〇到九〇年代），未寫進 facts。"
+ },
+ {
+  "key": "desc2:Frankie Knuckles|A New Reality",
+  "artist": "Frankie Knuckles",
+  "album": "A New Reality",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 683b4cc0 的欄位：title「A New Reality」、artist-credit「Frankie Knuckles」、first-release-date 2004、primary-type Album、secondary-types 空陣列、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/683b4cc0-80c9-3450-b141-f132a3178d7e"
+   },
+   {
+    "f": "唯一那筆 release e0cb8518 的欄位：2004、US、status Official、廠牌欄 Definity Records、編號 DF2004、barcode 634541200423、載體 CD、13 軌。逐軌曲名與曲長依序為〈Intro〉1:02、〈Hit the Floor〉5:04、〈Back n da Day〉4:35、〈Master-Peace〉6:30、〈The Bumpkin Song (Gimme Gimme)〉6:20、〈Interlude〉0:22、〈Emotional Energy〉1:50、〈What's Goin' On〉6:33、〈Journey〉6:29、〈Matter of Time〉5:18、〈Keep on Teasin' (A Night at Yello, Tokyo)〉1:33、〈Keep on Movin'〉7:55、〈I've Had Enough〉6:10。",
+    "src": "https://musicbrainz.org/release/e0cb8518-d0eb-416d-a59c-20863c0c53d2"
+   },
+   {
+    "f": "AllMusic 的本作頁面記 Release Date March 9, 2004、Duration 59:33、Genre Electronic、Styles Club/Dance 與 House；Recording Location 欄列出四處——Alec's Crib (Jersey City)、Boon Dog Recording (New York, NY)、Kupper's House (CO)、Quad Recording (New York, NY)。",
+    "src": "https://www.allmusic.com/album/a-new-reality-mw0000697201"
+   },
+   {
+    "f": "AllMusic 的 credits 欄記：Frankie Knuckles 掛 Composer、Executive Producer、Primary Artist、Producer 與 Vocal Producer；Eric Kupper 掛 Keyboard Programming、Danny Krivit 掛 Editing、Terry Burris 掛 Piano (Grand)、Doug Brandt 掛 Cover Art、Austin Downey 掛 Liner Notes。",
+    "src": "https://www.allmusic.com/album/a-new-reality-mw0000697201"
+   },
+   {
+    "f": "XLR8R 由 Peter Nicholson 執筆、日期 2004 年 7 月 20 日的評論記廠牌為 Definity，稱本作是「classy, timeless house music」，形容其手法是「delicate keys, perfectly arranged strings, and relentless drum programming」與「big room, New York-style garage」，並點名 Satoshi Tomiie 與 Eric Kupper 彈鍵盤、Jamie Principle、CeCe Rogers 與 Nicki Richards 獻聲；同一篇也寫他「stumbles with a foray into R&B」。",
+    "src": "https://xlr8r.com/reviews/a-new-reality/"
+   },
+   {
+    "f": "英文維基〈Frankie Knuckles〉把《A New Reality》記為 2004 年作品，並形容它是「his first in over a decade」的原創作品；同條目記他 1991 年的首張專輯《Beyond the Mix》收有〈The Whistle Song〉。",
+    "src": "https://en.wikipedia.org/wiki/Frankie_Knuckles"
+   },
+   {
+    "f": "Apple Music 以 artistId 4325666（Frankie Knuckles）於 gb／us／de／nl 逐店面 lookup（entity=album、limit=200）各回 47 張，清單中沒有《A New Reality》。",
+    "src": "https://itunes.apple.com/lookup?id=4325666&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有三軌不到兩分鐘，其中一軌叫〈Interlude〉",
+   "四個錄音地點，其中一個是別人家的客廳"
+  ],
+  "sound": "AllMusic 記全長 59:33、Styles 只列 Club/Dance 與 House，錄音地點四處含兩間紐約錄音室與兩處私宅；MB 的 DF2004 十三軌裡〈Interlude〉0:22、〈Intro〉1:02、〈Keep on Teasin'〉1:33 三軌是短接口，其餘多在五到八分鐘之間。XLR8R 的 Peter Nicholson 把手法寫成細緻的鍵盤、編排過的弦樂與不停的鼓機編程（MB release e0cb8518、AllMusic 本作頁面、XLR8R 評論）。",
+  "keyTracks": [
+   "Hit the Floor",
+   "Master-Peace",
+   "What's Goin' On",
+   "Keep on Movin'",
+   "I've Had Enough"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2004 與 MB first-release-date 2004 一致。分歧：AllMusic 記 Release Date March 9, 2004、XLR8R 的評論日期為 2004-07-20；同屬 2004 年，不影響卡片年份。MB 未給月份，未推月。",
+  "notes": "primary-type Album／secondary-types 空，已照實寫入 facts。試聽：探測九店面零命中，改打 artistId 4325666 的逐店面 lookup 覆核，gb／us／de／nl 的 47 張目錄裡都沒有本碟，維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「Frankie Knuckles 生前最後一張錄音室專輯」、且「由他自己與 Eric Kupper 合作的 Definity Records 發行」——維基只寫它是「his first in over a decade」的原創作品，沒有「最後一張」的陳述；Definity 的所有權歸屬也查無來源（AllMusic 只把 Eric Kupper 記為 Keyboard Programming），兩項皆未寫進 facts。維基另記他卒於 2014 年，若下游要寫時序定位，須以「2004 年」與「2014 年辭世」兩個有源的日期並陳，不要直接寫「最後一張」。"
+ },
+ {
+  "key": "desc2:Sasha & John Digweed|Northern Exposure 2",
+  "artist": "Sasha & John Digweed",
+  "album": "Northern Exposure 2",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 49e41880 的欄位：title「Northern Exposure 2」、artist-credit「Sasha & John Digweed」、first-release-date 1997-07-14、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 7 個 release，其中 1997-07-14 GB 與 1997-09-22 GB 為 Official，1998-01-13 US 三筆為 Official（標題分別是《Northern Exposure 2》《Northern Exposure 2: East Coast Edition》《Northern Exposure 2: West Coast Edition》），另有 2004 年 GB 兩筆 status 為 Bootleg。",
+    "src": "https://musicbrainz.org/release-group/49e41880-480d-3d27-9ccd-200d02749575"
+   },
+   {
+    "f": "英國原盤 release 6b89c55e 的欄位：1997-07-14、GB、status Official、廠牌欄 Ministry of Sound、編號 NECD2、barcode 5026535400226、兩張 CD 共 24 軌（第一張 13 軌、第二張 11 軌）。第一張末軌〈Symphony〉12:40 是全碟最長，第二張含〈Fusion (live)〉8:53、〈3.2〉8:15、〈Blue Fear (original extended mix)〉7:58。",
+    "src": "https://musicbrainz.org/release/6b89c55e-c369-3a3b-98cf-384dbbc709b9"
+   },
+   {
+    "f": "同一筆 release 的第一張有兩軌是把兩首曲子併成一個索引：第 2 軌〈Soothe (Chicane Jazz) / Soothe (Chicane Cyanide Ride)〉4:59 與第 7 軌〈Doi-Oing - Blue (Blue Ether mix) / The Experiment - Blue (Close Enough for Jazz mix)〉6:39；第二張第 5 軌〈Panfried (original mix) / Panfried (Mind Over Matter mix)〉7:41 同樣如此。",
+    "src": "https://musicbrainz.org/release/6b89c55e-c369-3a3b-98cf-384dbbc709b9"
+   },
+   {
+    "f": "英文維基〈Northern Exposure 2〉記：1997 年 7 月 14 日由英國 Ministry of Sound 發行雙 CD，美國 Ultra Records 則分成 East／West 兩個版本；條目寫「Like its critically acclaimed predecessor, Northern Exposure 2 is a concept album of specially selected tracks to set up two different 'journeys'」，兩張碟分別對應美國東岸與西岸。",
+    "src": "https://en.wikipedia.org/wiki/Northern_Exposure_2"
+   },
+   {
+    "f": "同一條目記 Allmusic 給東西兩版同樣的 4／5 星，英國 Compilation Chart 最高名次 15，全碟長 143 分鐘；第一張收有 GusGus、Fluke、Hybrid，第二張收有 Cygnus X、Speedy J、Sven Väth。",
+    "src": "https://en.wikipedia.org/wiki/Northern_Exposure_2"
+   },
+   {
+    "f": "Apple Music 以 artistId 91476876（John Digweed，gb 目錄 153 張）與 artistId 414607074（Sasha，gb 107 張／us 114 張）逐店面 lookup（entity=album、limit=200），兩份目錄裡與 Northern Exposure 相關的只有 2026-09-25 的 collectionId 6805597648《NORTHERN EXPOSURE REDUX》(22 軌) 與 6805597126《NORTHERN EXPOSURE REDUX (Mixed) [DJ Mix]》(21 軌)，都不是 1997 年這張。",
+    "src": "https://itunes.apple.com/lookup?id=91476876&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "兩張碟，一張走東岸一張走西岸",
+   "美國把它拆成兩張分開賣"
+  ],
+  "sound": "MB 英國盤 NECD2 兩張 CD 共 24 軌、維基記全長 143 分鐘；單軌最長是第一張末軌〈Symphony〉12:40，第二張〈Fusion (live)〉8:53 與〈3.2〉8:15 次之。有三個索引是把同一首曲子的兩種混音併在一起（如〈Soothe (Chicane Jazz) / Soothe (Chicane Cyanide Ride)〉4:59），是 DJ 混音被切分軌的痕跡（MB release 6b89c55e 曲名與曲長欄、英文維基〈Northern Exposure 2〉）。",
+  "keyTracks": [
+   "Believe (16B mix)",
+   "Symphony",
+   "Positron",
+   "Fusion (live)",
+   "Blue Fear (original extended mix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1997 與 MB first-release-date 1997-07-14 一致，英文維基亦記 1997 年 7 月 14 日；無分歧。美國 Ultra 三筆為 1998-01-13，屬後續發行。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts；轄下兩筆 2004 GB 為 Bootleg，已照實記入 rg 那條，行文與 reissuedBy 不採為背書。試聽：探測八店面全記「12→0」，改打 Sasha 與 John Digweed 兩個 artistId 的完整目錄覆核（gb 153／107 張、us 114 張），只有 2026 年的 REDUX 兩筆，維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「Northern Exposure 系列的第二輯」——維基只寫它有一張「critically acclaimed predecessor」，序數本身未直接陳述，行文可寫「前一張之後」但不要寫死第幾輯。"
+ },
+ {
+  "key": "desc2:Sasha & John Digweed|Northern Exposure: Expeditions",
+  "artist": "Sasha & John Digweed",
+  "album": "Northern Exposure: Expeditions",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ca2c5965 的欄位：title「Northern Exposure: Expeditions」、artist-credit「Sasha & John Digweed」、first-release-date 1999-02-22、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 3 個 release（1999-02-22 GB、1999-04-06 US，另一筆無日期無國別），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/ca2c5965-4f54-3171-99a1-239845cbfefe"
+   },
+   {
+    "f": "英國原盤 release b035098d 的欄位：1999-02-22、GB、status Official、廠牌欄 INCredible Records、編號 INC4CD、barcode 5099749403727、兩張 CD 共 21 軌（第一張 10 軌、第二張 11 軌）。第一張的〈Silence〉10:05 是全碟最長，其次是〈Tyrantanic〉9:16；第二張含〈Waters of Jericho〉8:49、〈Anything You Want (Delta Belter vocal Symphony)〉8:05、〈Polarstern〉7:52、〈The Silence (Tekara mix)〉7:47。",
+    "src": "https://musicbrainz.org/release/b035098d-4581-4c18-9b23-7e5113f1238c"
+   },
+   {
+    "f": "英文維基〈Northern Exposure: Expeditions〉的 infobox 記「Released 21 June 1999」，並記本作是這對英國 DJ 二人組 Northern Exposure 系列的最後一張；同條目寫「The United States version does not contain the track 'Silence'; the UK version does」。",
+    "src": "https://en.wikipedia.org/wiki/Northern_Exposure:_Expeditions"
+   },
+   {
+    "f": "同一條目記 Allmusic 給 4.5／5，高於系列前幾張；英國 Compilation Chart 上 CD 版最高第 6、黑膠版最高第 37，兩種載體分別進榜；全碟長 140:27。",
+    "src": "https://en.wikipedia.org/wiki/Northern_Exposure:_Expeditions"
+   },
+   {
+    "f": "英文維基〈Northern Exposure 2〉記系列前一張的性質：「Like its critically acclaimed predecessor, Northern Exposure 2 is a concept album of specially selected tracks to set up two different 'journeys'」，兩張碟各對應一段路線。",
+    "src": "https://en.wikipedia.org/wiki/Northern_Exposure_2"
+   },
+   {
+    "f": "Apple Music 以 artistId 91476876（John Digweed，gb 目錄 153 張）與 414607074（Sasha，gb 107 張／us 114 張）逐店面 lookup（entity=album、limit=200），兩份目錄裡與 Northern Exposure 相關的只有 2026-09-25 的 collectionId 6805597648 與 6805597126 兩筆 REDUX，沒有 1999 年這張。",
+    "src": "https://itunes.apple.com/lookup?id=414607074&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "有一軌就叫〈Silence〉，美國版把它拿掉了",
+   "CD 版進榜第六，黑膠版另外進了一次"
+  ],
+  "sound": "MB 英國盤 INC4CD 兩張 CD 共 21 軌、維基記全長 140:27；第一張〈Silence〉10:05 與〈Tyrantanic〉9:16 兩軌都超過九分鐘，第二張最長的〈Waters of Jericho〉8:49，最短的〈Sexual Movement〉4:10——整張沒有低於四分鐘的索引（MB release b035098d 曲長欄、英文維基〈Northern Exposure: Expeditions〉）。",
+  "keyTracks": [
+   "Tyrantanic",
+   "Silence",
+   "Waters of Jericho",
+   "Polarstern",
+   "The Silence (Tekara mix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1999 與 MB first-release-date 1999-02-22 一致。分歧：英文維基 infobox 記「Released 21 June 1999」，比 MB 晚四個月；同屬 1999 年，不影響卡片年份，交主線知悉。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts。試聽：探測八店面全記「12→0」，改打 Sasha 與 John Digweed 兩個 artistId 的完整目錄覆核，只有 2026 年的 REDUX 兩筆，維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「Northern Exposure 系列的第三輯」——維基把它記為系列的最後一張，但沒有「第三輯」這個序數（同一條目的敘述在第三／第四之間本身就不一致），序數未採用；行文可寫「系列的最後一張」，那句有源。"
+ },
+ {
+  "key": "desc2:Sasha & John Digweed|Communicate",
+  "artist": "Sasha & John Digweed",
+  "album": "Communicate",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cd0b7a86 的欄位：title「Communicate」、artist-credit「Sasha & John Digweed」、first-release-date 2000-06-20、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下 4 個 release（2000-06-20 US、2000-06-26 GB 三筆），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/cd0b7a86-0380-3813-a6d4-d4dc9639b025"
+   },
+   {
+    "f": "美國盤 release 3f46dd36 的欄位：2000-06-20、US、status Official、廠牌欄 Kinetic Records、編號 54657-2、barcode 677285465727、兩張 CD 共 22 軌（各 11 軌）。第一張最長的是〈West on 27th (A Tribe Called Khz mix)〉10:39 與〈Barbarella (Deep Dish mix)〉10:10，最短的是〈Tyrantanic (Slacker's Kingdom Come mix)〉3:09；第二張含〈Narcotic〉8:12、〈Ruhe (Humate mix)〉8:14、〈The Blue Hour〉7:15。",
+    "src": "https://musicbrainz.org/release/3f46dd36-e7c9-4dea-aaa8-fbdb4e5dd1ff"
+   },
+   {
+    "f": "同一筆 release 的 22 軌裡有十軌的曲名帶括號 remix／mix 標記，例如〈Get Lost (Stereo dub)〉6:04、〈Roaches (Peace Division remix)〉9:09、〈Voices (Slacker's Dumbstruck mix)〉4:25 與第二張的〈Voices (Freelance Icebreakers mix)〉5:19——同一首〈Voices〉的兩種混音分置兩張碟。",
+    "src": "https://musicbrainz.org/release/3f46dd36-e7c9-4dea-aaa8-fbdb4e5dd1ff"
+   },
+   {
+    "f": "英文維基〈Communicate (Sasha and John Digweed album)〉記：2000 年 6 月 26 日發行，兩張碟共 22 軌、全長 148 分鐘，廠牌為 INCredible 與 Kinetic Records，曲風記為 progressive house；並記美國版有一軌與國際版不同。",
+    "src": "https://en.wikipedia.org/wiki/Communicate_(Sasha_and_John_Digweed_album)"
+   },
+   {
+    "f": "同一條目的評價段：Metacritic 依七篇評論給加權平均 53／100；AllMusic 給 3／5，Jason Birchmeier 稱它是「the duo's best mix CD to date with its striking consistency」；Pitchfork 給 4／10；Exclaim! 寫本作「may not be as challenging and as boundary pushing as the earlier albums, but it still pleases the ear」。",
+    "src": "https://en.wikipedia.org/wiki/Communicate_(Sasha_and_John_Digweed_album)"
+   },
+   {
+    "f": "Apple Music 以 artistId 91476876（John Digweed）與 414607074（Sasha）於 gb／us 逐店面 lookup（entity=album、limit=200），兩份共 153／107／114 張的目錄裡都沒有《Communicate》。",
+    "src": "https://itunes.apple.com/lookup?id=91476876&entity=album&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "同一首〈Voices〉的兩種混音，一張碟放一個",
+   "AllMusic 說是他們最好的一張，Pitchfork 給四分"
+  ],
+  "sound": "MB 美國盤 Kinetic 54657-2 的 22 軌裡有十軌曲名帶括號 remix／mix 標記，單軌從〈Tyrantanic (Slacker's Kingdom Come mix)〉3:09 到〈West on 27th (A Tribe Called Khz mix)〉10:39；維基記全碟 148 分鐘、曲風 progressive house（MB release 3f46dd36 曲名與曲長欄、英文維基本作條目）。",
+  "keyTracks": [
+   "Like a Bitch",
+   "Barbarella (Deep Dish mix)",
+   "West on 27th (A Tribe Called Khz mix)",
+   "Narcotic",
+   "Ruhe (Humate mix)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2000 與 MB first-release-date 2000-06-20（美國 Kinetic 盤）一致。分歧：英文維基記 2000 年 6 月 26 日（英國 INCredible 盤），MB 轄下三筆英國盤也標 2000-06-26；同屬 2000 年 6 月，不影響卡片年份。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts。試聽：探測八店面全記「12→0」，改打兩位藝人的完整目錄覆核後維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「兩人在 INCredible 的第二張、也是 Northern Exposure 系列之後的接續作」——維基只寫它「departed from the Northern Exposure concept series」，「第二張」無來源，序數未採用（維基另有「fifth mix album」的說法，與策展層的算法不同，兩者皆未寫進 facts）。"
+ },
+ {
+  "key": "desc2:Akufen|Fabric 17",
+  "artist": "Akufen",
+  "album": "Fabric 17",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group fb344473 的欄位：title「Fabric 17: Akufen」、artist-credit「Akufen」、first-release-date 2004-07-19、primary-type Album、secondary-types [Compilation, DJ-mix]、轄下只有 1 個 release。",
+    "src": "https://musicbrainz.org/release-group/fb344473-de8f-3eaf-9471-6a5a5158fa7c"
+   },
+   {
+    "f": "唯一那筆 release bdd587c3 的欄位：2004-07-19、GB、status Official、廠牌欄 fabric、編號 Fabric33、barcode 0802560003329、CD、21 軌。逐軌曲長從〈Set Me Free〉1:20、〈Blood Red (Lyin' Beats)〉1:25、〈Karashik〉1:28，到〈Red Fibreglass〉5:33、〈Funky Sterling〉5:26、〈Close to Me〉5:17。",
+    "src": "https://musicbrainz.org/release/bdd587c3-9657-4c63-83ff-e7b9e5a7cc27"
+   },
+   {
+    "f": "AllMusic 的本作頁面記 Release Date October 5, 2004、Duration 01:13:17、Genre Electronic、Styles 為 Club/Dance、Experimental Techno、Techno、House、Microhouse。",
+    "src": "https://www.allmusic.com/album/fabric-17-mw0000300779"
+   },
+   {
+    "f": "AllMusic 由 Andy Kellman 執筆的評論寫：這張混音是「done with a pair of turntables and a mixer」；他的混音手法「closer in spirit to Herbert and Dan Bell than Michael Mayer」，「rather than build some sense of a story line and allow each track to unwrap itself, he'll occasionally ride out a track for several minutes and isn't afraid to get several others in and out within 90 seconds」；開場兩軌——Philippe Cam〈LFO Drive〉與 Matthew Dear〈Dog Days〉的 Pantytec 混音——「overlap for nearly four minutes」，其餘銜接則相對克制、沒有生硬的轉場。",
+    "src": "https://www.allmusic.com/album/fabric-17-mw0000300779"
+   },
+   {
+    "f": "同一篇評論記 Marc Leclair 另有 Nekufa、Anna Kaufen、Horror Inc. 等掛名，主要以製作人身份為人所知，DJ 資歷則「well over a decade」但本地以外少有人知；整張填的是他自九〇年代末以來做的那種「upbeat, clicky, hiccup-ridden microhouse」的別種版本。",
+    "src": "https://www.allmusic.com/album/fabric-17-mw0000300779"
+   },
+   {
+    "f": "英文維基〈Akufen〉記：本名 Marc Leclair，1966 年 8 月 13 日生於加拿大蒙特婁；他 2002 年的首張專輯確立了 microsampling 手法——「a way of using extremely small and short clips of samples he had randomly recorded from FM radio broadcasts as a key musical element」；作品列表把《Fabric 17》記為 2004 年的 mix album；「Akufen」一名取自法文的耳鳴「acouphène」。",
+    "src": "https://en.wikipedia.org/wiki/Akufen"
+   },
+   {
+    "f": "Apple Music 以「Akufen」搜 gb 店面得兩個藝人實體（artistId 1498625105 與 1466674153），逐一 lookup（entity=album、limit=200）合計只回 5 張——《Battlestar Galacticlown - EP》《My Blue House - EP》《NE LUI DIS PAS - Single》《Architextures 1 -2 -3 - Single》《We Shall Not Surrender - EP》，沒有《Fabric 17》；另以「fabric 17 Akufen」與「fabric 17」搜 gb／us 的 album 端點，只回《Global House Fabric, Pt. 17》這筆不相干的整編。",
+    "src": "https://itunes.apple.com/lookup?id=1498625105&entity=album&limit=200&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "二十一軌塞進七十三分鐘，有三軌撐不到一分半",
+   "開場兩首疊了將近四分鐘才分開"
+  ],
+  "sound": "MB 的 Fabric33 二十一軌曲長最短 1:20（〈Set Me Free〉）、最長 5:33（〈Red Fibreglass〉），AllMusic 記全長 01:13:17。Andy Kellman 把手法寫成兩台唱盤加一台混音器，有時讓一軌跑上好幾分鐘、也不介意讓好幾軌在九十秒內進出；Styles 欄列 Microhouse 與 Experimental Techno（MB release bdd587c3 曲長欄、AllMusic 本作頁面）。",
+  "keyTracks": [
+   "LFO Drive",
+   "Dog Days (Pantytec mix)",
+   "Red Fibreglass",
+   "Close to Me",
+   "My Old Lady"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2004 與 MB first-release-date 2004-07-19 一致，英文維基〈Akufen〉亦把《Fabric 17》記為 2004 年。分歧：AllMusic 記 Release Date October 5, 2004，比 MB 晚兩個多月；同屬 2004 年，不影響卡片年份。",
+  "notes": "primary-type Album／secondary-types [Compilation, DJ-mix] 已照實寫入 facts。盤名分歧：MB rg 標題是「Fabric 17: Akufen」（系列名＋藝人名），廠牌編號卻是 Fabric33，兩者都已入 facts。試聽：探測八店面全記「0→0」，改打兩個 Akufen artistId 的完整目錄與 album 端點覆核，仍無本碟，維持 unavailable。擋下策展層說法：curatorWhy 稱本作是「倫敦 fabric 俱樂部的官方混音系列第 17 輯」——「官方」與系列歸屬在 AllMusic 與維基都沒有明文（AllMusic 只寫他是「the provider of the 17th Fabric mix」），行文可照 AllMusic 那句寫，不要自行加「官方」二字。"
+ },
+ {
+  "key": "desc2:Jam City|Dream a Garden",
+  "artist": "Jam City",
+  "album": "Dream a Garden",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 37a6a59d 的欄位：title「Dream a Garden」、artist-credit「Jam City」、first-release-date 2015-03-23、primary-type Album、secondary-types 空陣列、轄下 3 個 release（2015-03-23 GB 兩筆、2015-03-24 JP），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/37a6a59d-e10b-4d6e-aba3-74bf6fbeebab"
+   },
+   {
+    "f": "英國盤 release dad902e8 的欄位：2015-03-23、GB、status Official、廠牌欄 Night Slugs、載體 Digital Media、9 軌。逐軌曲名與曲長依序為〈The Garden Thrives〉2:36、〈A Walk Down Chapel〉5:34、〈Unhappy〉3:38、〈Good Lads, Bad Lads〉2:34、〈Today〉4:08、〈Damage〉4:01、〈Crisis〉4:16、〈Black Friday〉4:56、〈Proud〉5:02。",
+    "src": "https://musicbrainz.org/release/dad902e8-fe32-425d-94e5-a6cf39d317bb"
+   },
+   {
+    "f": "英文維基〈Dream a Garden〉記：2015 年 3 月 24 日由 Night Slugs 發行，是英國電子製作人 Jam City（Jack Latham）的第二張錄音室專輯，錄於 2014 至 2015 年；Latham 在本作中親自演唱，他說「I pushed up against the point where I had to sing. You have to say it and be obvious about it sometimes.」",
+    "src": "https://en.wikipedia.org/wiki/Dream_a_Garden"
+   },
+   {
+    "f": "同一條目記 Latham 把本作與 2012 年的《Classical Curves》的關係說成「not a total break from the world of Classical Curves, but rather an inversion」——前作是表面，本作寫的是底下的「exhaustion, frustration, anger, and dizziness」；聲響從冷硬的俱樂部製作轉為較溫暖的質地，帶毛邊的鼓點與浸在殘響裡的吉他。",
+    "src": "https://en.wikipedia.org/wiki/Dream_a_Garden"
+   },
+   {
+    "f": "同一條目記本作的主題受 2011 年英格蘭暴動與 bell hooks 的著作啟發，處理新自由主義的影響；評價段記 Metacritic 78／100，《The Guardian》給 5／5、稱其「strange and disorientating...a modern-day psychedelia」，Clash 給 7／10、稱其「optimistic, romantic and frequently lovely」，Pitchfork 給 6.5／10，《The Observer》給 4／5。",
+    "src": "https://en.wikipedia.org/wiki/Dream_a_Garden"
+   },
+   {
+    "f": "Apple Music 英國店面 collectionId 1700027717「Dream A Garden」的欄位：artistName Jam City、releaseDate 2015-03-24、trackCount 9、copyright「℗ 2015 Earthly under exclusive license to Mad Decent」；九軌曲名與曲序與 MB 英國盤完全一致，曲長依序為 155／333／217／153／247／240／255／295／301 秒。",
+    "src": "https://music.apple.com/gb/album/1700027717"
+   }
+  ],
+  "hookCandidates": [
+   "上一張是表面，這一張寫的是底下那層",
+   "做器樂的人開口唱了，九軌裡他都在唱"
+  ],
+  "sound": "MB 英國盤九軌曲長從〈Good Lads, Bad Lads〉2:34 到〈A Walk Down Chapel〉5:34，全長不到四十分鐘；維基把聲響的變化記為從冷硬的俱樂部製作轉向較溫暖的質地、帶毛邊的鼓點與浸在殘響裡的吉他，並記 Latham 在本作中親自演唱（MB release dad902e8 曲長欄、英文維基〈Dream a Garden〉）。",
+  "keyTracks": [
+   "The Garden Thrives",
+   "Unhappy",
+   "Today",
+   "Crisis",
+   "Proud"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2015 與 MB first-release-date 2015-03-23 一致。分歧：英文維基與 Apple 條目都記 2015 年 3 月 24 日（MB 的日本盤日期），比 MB 的英國盤晚一天；同屬 2015 年 3 月，不影響卡片年份。",
+  "notes": "試聽覆核：探測記 ready／gb／1700027717／9 軌，回查 Apple 九軌曲名與曲序與 MB 英國盤逐軌一致、曲長差在兩秒內，判定正確，維持 ready。⚠ 版權欄記「℗ 2015 Earthly under exclusive license to Mad Decent」，與 MB 的廠牌欄 Night Slugs 不同，屬同一發行的授權轉手，非配錯碟。掛名說明：Jam City 是 Jack Latham 的化名（維基明寫），與日本的 JAM Project 無關。擋下策展層說法：curatorWhy 稱「它與 2012 年《Classical Curves》同屬 Night Slugs 目錄，但改為以人聲與歌曲形式呈現」——前半無來源（維基未寫《Classical Curves》的廠牌），後半有源（Latham 自述必須開口唱），已只保留後半。"
+ }
+]

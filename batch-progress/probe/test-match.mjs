@@ -26,6 +26,19 @@ const cases = [
   ['Θεοδωράκης vs Mikis Theodorakis & Grigóris Bithikótsis（合掛名放行）', A, 'Μίκης Θεοδωράκης', 'Mikis Theodorakis & Grigóris Bithikótsis', true],
   ['Θεοδωράκης vs Grigóris Bithikótsis 單掛演唱者 → 擋（第 77 條留人工）', A, 'Μίκης Θεοδωράκης', 'Grigóris Bithikótsis', false],
   ['canon：Ρωμιοσύνη → romiosini', s => canon(s), 'Ρωμιοσύνη', 'romiosini'],
+  // 2026-09-05 c-96：卷號殘餘（第 140／141／162 條那一族）
+  ['Cuban Linx Pt. II vs 第一集 → 擋（卷號殘餘，c-96 實際錯配）', T, 'Only Built 4 Cuban Linx... Pt. II', 'Only Built 4 Cuban Linx...', false, false],
+  ['Cuban Linx Pt. II vs Pt. II → 放行', T, 'Only Built 4 Cuban Linx... Pt. II', 'Only Built 4 Cuban Linx… Pt. II', false, true],
+  ['Led Zeppelin II vs Led Zeppelin → 擋（裸羅馬數字）', T, 'Led Zeppelin II', 'Led Zeppelin', false, false],
+  ['Led Zeppelin IV vs Led Zeppelin IV (Remastered) → 放行', T, 'Led Zeppelin IV', 'Led Zeppelin IV (Remastered)', false, true],
+  // Vol. 1 vs Volume 1：卷號相同、卷號那道放行，但 `vol`→`volume` 讓摺疊後長度差 3 之外還斷了子字串關係，
+  // 兩道都判 false。這是既有的長度差／子字串設計，不是本次卷號改動造成的，先記錄現況。
+  ['In My Lifetime, Vol. 1 vs Volume 1 → 現況擋（子字串斷開，非卷號所致）', T, 'In My Lifetime, Vol. 1', 'In My Lifetime, Volume 1', false, false],
+  ['In My Lifetime, Vol. 1 vs Vol. 2 → 擋（卷號不同）', T, 'In My Lifetime, Vol. 1', 'In My Lifetime, Vol. 2', false, false],
+  ['4 Walls vs 4 Walls（數字在字首不是卷號）→ 放行', T, '4 Walls', '4 Walls', false, true],
+  // Boom vs The Sonics Boom：卷號那道放行（兩邊都無），但摺疊後長度差 9 超過上限 8 → 擋。
+  // c-96／c-93 那張就是因此判 unavailable、由研究層人工救回，**這是既有設計的已知代價**，先記錄現況。
+  ['Boom vs The Sonics Boom → 現況擋（長度差 9 > 8，非卷號所致）', T, 'Boom', 'The Sonics Boom', false, false],
 ];
 let pass = 0, fail = 0;
 for (const [name, fn, ...rest] of cases) {

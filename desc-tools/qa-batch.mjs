@@ -26,7 +26,13 @@ const cards = JSON.parse(fs.readFileSync(cardsPath, 'utf8'));
 const cardKeys = new Set(cards.map(x => x.key));
 const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9㐀-鿿぀-ヿ]/g, '');
 // 簡體專用字表（正體字不會出現的字形；「制值台准」等正體字曾造成誤報，勿加入）
-const SIMP = /[们这来说过时国际开关见证华语电视习动员双专辑签约终选价观论坛对个从会众组织实现发达经济应该请问题让边书买卖东车马鸟鱼龙凤丰艺术录历纪乐为无与软权变现类点热战强气长闻队队]/;
+// 2026-09-05：**「个」移出字表。** 它不是「個」的簡體專用字——**「个」是教育部台語推薦用字**
+// （讀作 ê，例：農村武裝青年〈Tsit 个老歲仔〉），台語盤的曲名與歌詞本來就會用它。
+// c-91 b 的研究層代理自己預告了這個誤報並解釋對了。實掃全 batches：含「个」的片段 38 處，
+// **零處與其他簡體字同時出現**——這個語料裡每一個都是台語用字，不是簡繁轉換的殘留。
+// 依本字表原本的收錄原則（「正體字不會出現的字形；『制值台准』等正體字曾造成誤報，勿加入」），
+// 它本來就不該在裡面。台灣線往後還會一直出現，留著等於每批都要人工複核一次同樣的誤報。
+const SIMP = /[们这来说过时国际开关见证华语电视习动员双专辑签约终选价观论坛对从会众组织实现发达经济应该请问题让边书买卖东车马鸟鱼龙凤丰艺术录历纪乐为无与软权变现类点热战强气长闻队队]/;
 const GARBAGE = /[Ѐ-ӿऀ-ॿ가-힯]/;
 // 專名本身就用非拉丁文字時合法（例：박효신、가리온《가리온2》）。
 // 從本批卡單的 artist|album 取出所有非拉丁片段當白名單，掃描前連同《》〈〉內的原始標題一併剝除，
@@ -214,6 +220,40 @@ if (stage === 'out') {
     outTotal += o.length;
     console.log(`out-${n}｜${o.length} 張｜字數 ${Math.min(...lens)}–${Math.max(...lens)}｜>260: ${lens.filter(x => x > 260).length}`);
   }
+  // thin 卡字數帶（2026-09-04 新增）。writer-base 給 thin 卡 120–180、full 卡 180–240，
+  // 但**這條規則過去只寫在 writer-base 裡，沒有任何機器檢查在看它**——它要生效，
+  // 全靠派工信有沒有轉述給寫作代理。雲端派工模板從 c-67 起就漏掉了這一句，
+  // 結果 c-53–c-56 的 13 張 thin 卡全部守住 180，c-67 之後的 22 張全部超出（206–238）。
+  // 規則沒被違反，是**沒有人把規則交到寫作層手上**，而檢查層也沒攔。這裡把它補上。
+  //
+  // status 只存在於研究稿與 writer 輸入，卡單裡沒有，所以從 batches/input/ 取。
+  // 取不到就安靜略過（本機批可能沒有 input 檔），不要因此讓整個 out 檢查失敗。
+  const thinKeys = new Set();
+  for (const n of outNums) {
+    const ip = `batches/input/${batch}-writer-${n}.json`;
+    if (!fs.existsSync(ip)) continue;
+    try {
+      const raw = JSON.parse(fs.readFileSync(ip, 'utf8'));
+      for (const c of (Array.isArray(raw) ? raw : raw.cards || [])) {
+        if (c && c.status === 'thin' && c.key) thinKeys.add(c.key);
+      }
+    } catch { /* 輸入檔壞掉是別的檢查的事，這裡不接管 */ }
+  }
+  if (thinKeys.size) {
+    const over = [];
+    for (const n of outNums) {
+      const p2 = `batches/output/${batch}-out-${n}.json`;
+      if (!fs.existsSync(p2)) continue;
+      for (const r of JSON.parse(fs.readFileSync(p2, 'utf8'))) {
+        if (!thinKeys.has(r.key)) continue;
+        const L = Array.from(r.desc).length;
+        if (L > 180) over.push(`${r.key} (${L})`);
+      }
+    }
+    if (over.length) warn('thin 卡超過 180 字', `${over.length}/${thinKeys.size}`, '→', over.join('、'));
+    else console.log(`thin 卡 ${thinKeys.size} 張，全部 ≤180 ✓`);
+  }
+
   // 總數對卡單——這是擋住「只驗到部分組別」的最後防線
   if (outTotal !== cardKeys.size) warn('輸出總張數與卡單不符', `${outTotal} vs ${cardKeys.size}`);
   else console.log(`out 合計 ${outTotal} 張，與卡單相符 ✓`);
