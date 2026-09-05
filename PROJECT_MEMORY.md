@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-05｜dip-vinyl-shop｜後台「🎬 序章劇本」編輯器：對白改成資料、店主自己改；台詞用字修正
+
+同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。
+
+1. **台詞**：第 17 句改成店主指定的「老闆不發一語，緩步走出櫃檯，站在兩人之間。」；玩家看得到的字一律用「櫃檯」（原本 4 處寫「櫃台」，與另外 2 處不一致）。
+2. **序章對白改成可被後台覆寫的資料**：`RPG_BEATS` 由 const 改 let、尾聲從函式裡抽成 `TUT_EPILOGUE_BEATS`；
+   `applyConfig` 新增 `cfg.script` 分支，可覆寫 `beats`／`epilogue`（整份 beat 物件，`who`／`text` 給店主改，`stage`／`ui`／`prompt` 原樣帶回）、
+   `acePick`（老闆的「內行喔」三句）、`pitches`（十二句推薦語）。**驗證失敗就整份忽略**（空字串、非陣列、缺 text），
+   寧可少一次改稿也不要把序章弄成空白畫面。
+3. **`admin.html` 新增「🎬 序章劇本」子分頁**（遊戲設定分頁下）：18 句序章＋11 句尾聲逐句編輯（說話者／文字），
+   帶面板或選單的句子標 🎛 且**不可刪**，帶站位特效的標 ⚙、刪掉時站位自動併到下一句；可上移／下移／插入純對白；
+   另有王牌三句與十二句推薦語。存檔寫進同一份 `gameConfig/roguelike`（`deepMergeRogue` 保留 `script`），
+   存檔前擋空白句與缺面板（缺 aces／recs／choice／relic／go 會拒存）。面板上另有「▶ 播放遇敵特效」與「▶ 到前台看序章」。
+4. **遇敵特效預覽**：admin 內嵌與 `roguelike.html` 同一份 `.enc-*` 動畫，按鈕即可重播（店主看不到我傳的 GIF，改給定格分解圖）。
+
+**主要檔案**：`roguelike.html`、`admin.html`、`PROJECT_MEMORY.md`。
+
+**驗證**：兩檔腳本過 `node --check`。編輯器邏輯用獨立 harness 以 Playwright 實測（Firebase 在沙盒連不出去，admin 整份 module 不會執行，
+所以把編輯器那段抽出來配假的 `setDoc`／`rogueCfg` 跑）：18／11 列、5 個 🎛 列的刪除鈕鎖住、改字／插入／上移／刪除後面板三個 ui 都還在、
+存出去的 doc 含 `script`、空白句被擋（「尾聲第 2 句是空的」）、特效播完自己收乾淨、console 無錯誤。
+前台覆寫走 `addInitScript` 注入假 `__rogueCfg` 實測：序章變成後台那 4 句、推薦語換成後台那句、面板與選單照常；
+**故意餵壞資料（text 全空白）→ 自動回退用內建 18 句**。
+
 ### 2026-09-05｜dip-vinyl-shop｜序章第 17 句改旁白、遇敵特效（神奇寶貝初代式）、大改版規劃 `DUNGEON_DESIGN.md`
 
 同一條分支（`claude/card-game-character-creation-xpgz1f`，PR #12 草稿，**未合併 main**）。

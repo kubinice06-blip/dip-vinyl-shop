@@ -2146,13 +2146,13 @@ const RPG_POS = {   // 站位（left%／bottom px），舞台 100%×190px；櫃�
   o:{ counter:[71,44], floor:[58,14], between:[40,14] },
   f:{ out:[-30,14], door:[5,14] },
 };
-const RPG_BEATS = [
+let RPG_BEATS = [   // ✏️ 後台「序章劇本」可整份覆寫（gameConfig/roguelike.script.beats）
   { who:'', text:'下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage:{p:'door',o:'counter',f:'out'} },
-  { who:'', text:'櫃台後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
+  { who:'', text:'櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', stage:{oBusy:true} },
   { who:'', text:'你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', stage:{p:'shelf'} },
   { who:'', text:'這時候，店裡的音響傳出一段旋律。', stage:{notes:true,oBusy:false} },
   { who:'', text:'……很迷人。你停下腳步，不自覺跟著點起頭來。' },
-  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃台上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
+  { who:'', text:'你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage:{p:'mid'} },
   { who:'老闆', text:'「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」', ui:'aces', prompt:'（挑一張。）' },
   { who:'老闆', text:'「……你眼光真不錯。」老闆終於抬起頭來，看著你。', stage:{notes:false} },
   { who:'老闆', text:'「這張是我的私人收藏。今天讓給你。」' },
@@ -2163,7 +2163,7 @@ const RPG_BEATS = [
   { who:'', text:'一名男子走進來。他的視線，落在你手上的那幾張專輯上。' },
   { who:'男子', text:'「……這品味，也敢出來丟臉？」' },
   { who:'', text:'你的憤怒表露無遺。', stage:{anger:true} },
-  { who:'', text:'老闆不發一語，緩步從櫃台走出來，站在兩人之間。', stage:{o:'between',anger:false} },
+  { who:'', text:'老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage:{o:'between',anger:false} },
   { who:'老闆', text:'「既然雙方都不服氣，不如來一場品味對決如何？」', ui:'choice' },
 ];
 let _rpg=null;
@@ -2307,21 +2307,21 @@ function shopLeave(how){
 //  🎮 教學打完的尾聲（唱片行那套牌組才有）：男子放話 → 老闆送淘汰設備（發燒配件三選一）→ 又有人踢館 → 試煉開始
 //  由 winFight 在第二場打完時接手（RUN._tutEpilogue）；關頁續玩走 saveRun('epilogue')。
 // =========================================================================
-function tutEpilogueBeats(){
-  return [
-    { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
-    { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
-    { who:'男子', text:'「搵休督欸丟！」' },
-    { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
-    { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
-    { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
-    { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃台底下拖出一個木箱。）' },
-    { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
-    { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1'} },
-    { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
-    { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
-  ];
-}
+let TUT_EPILOGUE_BEATS = [   // ✏️ 同上（…script.epilogue）；stage／ui 由後台原樣帶回，只有 who／text 給店主改
+
+  { who:'', text:'對決結束。店裡安靜了幾秒。', stage:{p:'leave',o:'between',f:'door',fSpr:'e0',anger:false,notes:false} },
+  { who:'男子', text:'「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。' },
+  { who:'男子', text:'「搵休督欸丟！」' },
+  { who:'', text:'門上的鈴鐺又響了一聲。他走了。', stage:{f:'out'} },
+  { who:'老闆', text:'「年輕人。」老闆看著你，慢慢點了點頭。', stage:{o:'floor'} },
+  { who:'老闆', text:'「我看你對音樂脈絡，很有天份。」' },
+  { who:'老闆', text:'「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui:'relic', prompt:'（老闆從櫃檯底下拖出一個木箱。）' },
+  { who:'老闆', text:'「年輕人，有空再來這邊走走，與大家交流音樂。」' },
+  { who:'', text:'你正要道謝，門又開了。', stage:{f:'door',fSpr:'e1'} },
+  { who:'？？？', text:'「聽說這裡有個新來的，品味不錯？」' },
+  { who:'', text:'無止盡的品味試煉，開始了。', ui:'go' },
+];
+function tutEpilogueBeats(){ return TUT_EPILOGUE_BEATS; }
 function renderTutEpilogue(){
   saveRun('epilogue');
   rpgStart(tutEpilogueBeats(), {p:'leave',o:'between',f:'door',fSpr:'e0'}, 0);
@@ -4991,6 +4991,20 @@ function applyConfig(cfg){
     // 中繼點：淺層覆寫（roguelike.mid）——中繼場次與快速選秀次數可後台調
     if(cfg.mid && typeof cfg.mid==='object'){
       ['depth','draftCards','draftLevels'].forEach(k=>{ if(typeof cfg.mid[k]==='number') MID[k]=cfg.mid[k]; });
+    }
+    // ✏️ 序章劇本：後台「序章劇本」分頁存的整份對白（roguelike.script）
+    //    beats／epilogue 是完整的 beat 物件陣列（who／text 店主改，stage／ui／prompt 原樣帶回），
+    //    缺欄位或格式不對就整份忽略、用內建的，寧可少一次改稿也不要把序章弄成空白畫面。
+    if(cfg.script && typeof cfg.script==='object'){
+      const KEEP=['who','text','stage','ui','prompt'];
+      const normBeat = b => { const o={}; KEEP.forEach(k=>{ if(b[k]!==undefined) o[k]=b[k]; }); if(typeof o.who!=='string') o.who=''; return o; };
+      const okBeats = a => Array.isArray(a) && a.length>0 && a.every(b=>b && typeof b==='object' && typeof b.text==='string' && b.text.trim());
+      if(okBeats(cfg.script.beats)) RPG_BEATS = cfg.script.beats.map(normBeat);
+      if(okBeats(cfg.script.epilogue)) TUT_EPILOGUE_BEATS = cfg.script.epilogue.map(normBeat);
+      if(cfg.script.acePick && typeof cfg.script.acePick==='object')
+        ATTRS.forEach(a=>{ const v=cfg.script.acePick[a]; if(typeof v==='string' && v.trim() && SHOP_ACE_INFO[a]) SHOP_ACE_INFO[a].pick=v; });
+      if(cfg.script.pitches && typeof cfg.script.pitches==='object')
+        ATTRS.forEach(a=>{ const p=cfg.script.pitches[a]; if(Array.isArray(p) && p.length===4 && TUT_SETS[a]) TUT_SETS[a].pitch=p.map(x=>String(x||'')); });
     }
     // 現金系統：淺層覆寫（roguelike.cash）
     if(cfg.cash && typeof cfg.cash==='object'){
