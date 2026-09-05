@@ -469,9 +469,13 @@
   "year": 1973,
   "g": "b",
   "rgMbid": "79bca8f7-b190-3dba-9584-a64e7ff548ca",
-  "art": null,
-  "probed": false,
-  "probeError": 500
+  "art": {
+   "url": "https://coverartarchive.org/release-group/79bca8f7-b190-3dba-9584-a64e7ff548ca/front",
+   "source": "caa",
+   "rgMbid": "79bca8f7-b190-3dba-9584-a64e7ff548ca"
+  },
+  "probed": true,
+  "note": "2026-09-05 主線補探：首輪回 HTTP 500（probed:false，第 28 條——查詢失敗不是查無），重打一次即回 200。"
  },
  {
   "artist": "Jelly Roll Morton",

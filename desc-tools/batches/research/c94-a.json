@@ -598,5 +598,433 @@
   "status": "full",
   "yearVerified": "卡單 year 2019 與 MB first-release-date 2019-05-24、英文維基的 2019 年 5 月 24 日、Apple 的 releaseDate 2019-05-24 三者一致。無兩說。",
   "notes": "MB 只有 2 個 release，都是 Official，無 Bootleg、無 status 空白。試聽探測判 ready（us:1→1，collectionId 1463068170），我以 lookup 回查確認 11 軌、11/11 有 preview、首軌〈Neither Meaning nor Justice〉，判定維持。策展層說「這個樂團不公開成員」——維基記的是樂團十五年來第一次正式受訪、且受訪未具名個人，我把可查證的那一句寫進 facts，「不公開成員」本身沒找到來源，未採用。"
+ },
+ {
+  "key": "desc2:King Diamond|\"Them\"",
+  "artist": "King Diamond",
+  "album": "\"Them\"",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 57ed3d2c 的欄位：title 用彎引號寫成「“Them”」、artist-credit「King Diamond」、first-release-date 1988-07-18、primary-type Album、secondary-types 空；轄下 12 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 XE／JP／US／DK／DE／XW。",
+    "src": "https://musicbrainz.org/ws/2/release-group/57ed3d2c-c6ae-3bc9-94e3-6bc2e7d8a774?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 4c74b38f（1988-07-18、XE、status Official、條碼 016861955014）：廠牌欄 Roadrunner Records、編號 RR 9550 1、載體 12\" Vinyl、11 軌。逐軌曲名與曲長依序為〈Out From the Asylum〉1:48、〈Welcome Home〉4:35、〈The Invisible Guests〉5:03、〈Tea〉5:13、〈Mother's Getting Weaker〉4:00、〈Bye, Bye, Missy〉5:06、〈A Broken Spell〉4:07、〈The Accusation Chair〉4:20、〈\"Them\"〉1:55、〈Twilight Symphony〉4:08、〈Coming Home〉1:11。",
+    "src": "https://musicbrainz.org/release/4c74b38f-d88b-4d31-8088-abe741450a56"
+   },
+   {
+    "f": "英文維基〈Them (King Diamond album)〉的資訊框記：類型 studio、發行日 1988 年 7 月 18 日、錄音年 1988、錄音室 M.M.C. Studio（丹麥哥本哈根）、曲風 heavy metal、總長 41:39、廠牌 Roadrunner、製作人 King Diamond 與 Roberto Falcao、前一張《Abigail》(1987)、後一張《Conspiracy》(1989)。",
+    "src": "https://en.wikipedia.org/wiki/Them_(King_Diamond_album)"
+   },
+   {
+    "f": "同條目導言記這是丹麥樂團 King Diamond 的第三張錄音室專輯，1988 年 7 月 18 日在歐洲經 Roadrunner Records 發行、1988 年 9 月 13 日在美國經 Roadracer Records 發行；也是吉他手 Pete Blakk 與貝斯手 Hal Patino 第一次參與的專輯。",
+    "src": "https://en.wikipedia.org/wiki/Them_(King_Diamond_album)"
+   },
+   {
+    "f": "同條目導言記本作是關於 King 與他患精神疾病的祖母的兩張虛構概念專輯中的第一張，第二張是《Conspiracy》；故事寫 King 在祖母與「阿蒙宅」裡那些只被聽眾稱作「Them」的聲音牽引下一路走向瘋狂。",
+    "src": "https://en.wikipedia.org/wiki/Them_(King_Diamond_album)"
+   },
+   {
+    "f": "同條目「Plot summary」節逐曲敘述劇情：開場〈Out From the Asylum〉與〈Welcome Home〉是年幼的 King 與母親、姊妹迎接祖母從精神病院回家；〈The Invisible Guests〉裡 King 撞見祖母獨自開茶會、茶杯與茶壺卻懸在空中；〈Tea〉裡祖母以名為「Amon」的茶壺教他，並割開熟睡母親的手把血加進壺裡。",
+    "src": "https://en.wikipedia.org/wiki/Them_(King_Diamond_album)"
+   },
+   {
+    "f": "同條目的評分表記 AllMusic 四顆星（滿分五顆）、Martin Popoff 的《Collector's Guide to Heavy Metal》7／10。",
+    "src": "https://en.wikipedia.org/wiki/Them_(King_Diamond_album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1296481392：artistName King Diamond、collectionName「\"Them\" (Bonus Track Version)」、trackCount 12、releaseDate 1988-09-13、12/12 軌帶 previewUrl、首軌〈Out from the Asylum〉。該日期與維基記的美國 Roadracer 發行日 1988 年 9 月 13 日相同，軌數比 MB 歐洲原盤的 11 軌多一軌。",
+    "src": "https://music.apple.com/us/album/1296481392"
+   }
+  ],
+  "hookCandidates": [
+   "關於 King 與他患精神疾病的祖母的兩張概念專輯裡的第一張。",
+   "1988 年錄於丹麥哥本哈根的 M.M.C. Studio，製作人是 King Diamond 與 Roberto Falcao。"
+  ],
+  "sound": "英文維基〈Them (King Diamond album)〉的資訊框把曲風欄填成 heavy metal、總長 41:39，製作人記為 King Diamond 與 Roberto Falcao。十一軌裡有三首是不到兩分鐘的短段落：開場〈Out From the Asylum〉1:48、同名的〈\"Them\"〉1:55 與收尾的〈Coming Home〉1:11，其餘多在四到五分鐘之間（MB release 4c74b38f 的逐軌曲長）。整張碟依同條目是一則逐曲推進的敘事，「Plot summary」節可以逐首對上劇情。",
+  "keyTracks": [
+   "Out From the Asylum",
+   "Welcome Home",
+   "The Invisible Guests",
+   "Tea",
+   "Twilight Symphony"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1988 與 MB first-release-date 1988-07-18、英文維基的 1988 年 7 月 18 日（歐洲）一致；維基另記美國 Roadracer 版是 1988 年 9 月 13 日，Apple us 的 releaseDate 跟的就是這一天。同為 1988 年，年份無兩說。",
+  "notes": "MB 12 個 release 全為 Official，無 Bootleg、無 status 空白。盤名在 MB 的 release-group 標題用彎引號「“Them”」，1988-07-18 的 XE release 則用 ASCII 直引號，卡單取直引號版。試聽探測判 ready（us:3→1，collectionId 1296481392），我以 lookup 回查確認該筆存在、12 軌、12/12 有 preview、首軌〈Out from the Asylum〉與 MB 原盤首軌相同；**但它是《\"Them\" (Bonus Track Version)》、比原盤多一軌**，Apple us 搜不到純 11 軌版本。判定維持 ready，但主線若要求軌數與原盤一致，這張要另外處理。策展層說「日本 Far East Metal Syndicate MP32-5327、1997 年 RR 8785-2 與 1686-187852 重發、2018／2020 Metal Blade 3984-25056-1 與 3984-15677-1／-2 復刻」——我只逐筆回問到歐洲 Roadrunner RR 9550 1，其餘編號無來源可附，未寫進 facts。"
+ },
+ {
+  "key": "desc2:Anthrax|Persistence of Time",
+  "artist": "Anthrax",
+  "album": "Persistence of Time",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ea25c463 的欄位：title「Persistence of Time」、artist-credit「Anthrax」、first-release-date 1990-08-07、primary-type Album、secondary-types 空；轄下 18 個 release，status 清點為 Official 17 筆、Promotion 1 筆（無 Bootleg、無空白），國別涵蓋 US／DE／JP／CA／XE／GB／XW 與一筆國別空白。唯一非 Official 的是 1990 年那筆 Promotion release 15b265d9。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ea25c463-c8e7-3f2b-8ec9-d883ed227e25?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 7bf0e30c（1990-08-07、US、status Official）：label-info 掛三筆——Island／422-846 480-2、Megaforce Records／422-846 480-2、BMG Direct／D 183468；載體 CD、11 軌。逐軌曲名與曲長依序為〈Time〉6:55、〈Blood〉7:13、〈Keep It in the Family〉7:09、〈In My World〉6:25、〈Gridlock〉5:17、〈Intro to Reality〉3:24、〈Belly of the Beast〉4:48、〈Got the Time〉2:44、〈H8 Red〉5:04、〈One Man Stands〉5:38、〈Discharge〉4:13。",
+    "src": "https://musicbrainz.org/release/7bf0e30c-54e5-4fde-9100-fefae89a2aa5"
+   },
+   {
+    "f": "英文維基〈Persistence of Time〉的資訊框記：發行日 1990 年 8 月 21 日、錄音期 1989 年 12 月至 1990 年 2 月、錄音室 A&M 與 Conway（加州好萊塢）以及 Soundtrack（紐約市）、曲風 thrash metal、總長 58:40、廠牌 Megaforce 與 Island、製作人 Anthrax 與 Mark Dodson。",
+    "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+   },
+   {
+    "f": "同條目導言記這是美國 thrash metal 樂團 Anthrax 的第五張錄音室專輯，1990 年 8 月 21 日經 Megaforce Worldwide／Island Records 發行，並在 1991 年入圍葛萊美獎最佳金屬演出。",
+    "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+   },
+   {
+    "f": "同條目導言記〈Got the Time〉是 Joe Jackson 的翻唱；〈In My World〉樂團曾在《Married... with Children》的〈My Dinner with Anthrax〉那集裡演出。本作也是 Joey Belladonna 擔任主唱的最後一張完整 Anthrax 專輯，直到 2011 年的《Worship Music》才回歸。",
+    "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+   },
+   {
+    "f": "同條目「Album information」節記：樂團 1989 年秋天帶著上一張《State of Euphoria》的製作人 Mark Dodson 重回錄音室；1990 年 1 月 24 日紐約 Yonkers 的一場大火燒掉他們的排練室與價值十萬美元以上的器材，樂團因此在該年 2 月底改到另一間錄音室收尾。",
+    "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+   },
+   {
+    "f": "同節記本作的基調比 Anthrax 先前作品沉靜成熟，捨棄了過去常見的幽默與漫畫典故，歌詞焦點放在寬容與和平；樂團也引入先前沒有的前衛面向，並降低快節奏與侵略性這類典型 thrash metal 元素的比重。該節另記第六軌〈Intro to Reality〉的引子取自《陰陽魔界》〈Deaths-Head Revisited〉那集的對白。",
+    "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 1531807492：artistName Anthrax、collectionName「Persistence Of Time」、trackCount 11、releaseDate 1990-08-21、11/11 軌帶 previewUrl、首軌〈Time〉，軌數與曲序與 MB 的美國 Island／Megaforce 原盤相符。",
+    "src": "https://music.apple.com/us/album/1531807492"
+   }
+  ],
+  "hookCandidates": [
+   "1990 年 1 月一場大火燒掉樂團在紐約 Yonkers 的排練室與十萬美元以上的器材。",
+   "〈Intro to Reality〉的引子取自《陰陽魔界》〈Deaths-Head Revisited〉那集的對白。"
+  ],
+  "sound": "英文維基〈Persistence of Time〉的資訊框把曲風欄填成 thrash metal、總長 58:40，製作人記為樂團與 Mark Dodson。同條目「Album information」節說本作的基調比先前沉靜成熟、捨棄幽默與漫畫典故，歌詞轉向寬容與和平，並引入先前沒有的前衛面向、降低快節奏與侵略性的比重。十一軌中有三首超過七分鐘（MB release 7bf0e30c 的逐軌曲長），最短的〈Got the Time〉只有 2:44。",
+  "keyTracks": [
+   "Time",
+   "Keep It in the Family",
+   "In My World",
+   "Belly of the Beast",
+   "Got the Time"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1990 與 MB first-release-date 1990-08-07 一致；英文維基與 Apple 都記 1990 年 8 月 21 日，與 MB 差兩週、同為 1990 年。年份無兩說，日期兩說已記。",
+  "notes": "MB 18 個 release 中無 Bootleg、無 status 空白，唯一非 Official 的是 1990 年的 Promotion release 15b265d9，未作為來源。試聽探測判 ready（us:3→3，collectionId 1531807492），我以 lookup 回查確認 11 軌、11/11 有 preview、首軌〈Time〉，判定維持。"
+ },
+ {
+  "key": "desc2:Burzum|Det som engang var",
+  "artist": "Burzum",
+  "album": "Det som engang var",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 4907bca2 的欄位：title「Det som engang var」、artist-credit「Burzum」、first-release-date 1993-08-20、primary-type Album、secondary-types 空；轄下 8 個 release，國別為 NO／GB／BR／XW 與一筆國別空白。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4907bca2-147d-3720-84ce-e6e5dd3a6c13?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "該 release-group 8 個 release 的 status 清點為 Official 5 筆、空白 2 筆、**Bootleg 1 筆**。Bootleg 那筆是 2013 年、國別空白的 release 81dade04；status 空白的兩筆是 1994-10-13 的 GB release 130f7b1a 與 2005 年的 GB release 403184d5。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4907bca2-147d-3720-84ce-e6e5dd3a6c13?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 916f2b92（1993-08-20、NO、status Official）：廠牌欄 Cymophane Productions、編號 EYE 001、載體 CD、8 軌。逐軌曲名與曲長依序為〈Den onde kysten〉2:20、〈Key to the Gate〉5:15、〈En ring til å herske〉7:11、〈Lost Wisdom〉4:38、〈Han som reiste〉4:51、〈Når himmelen klarner〉3:51、〈Snu mikrokosmos tegn〉9:37、〈Svarte troner〉2:17。",
+    "src": "https://musicbrainz.org/release/916f2b92-4548-4516-9336-ad245e4b2f1e"
+   },
+   {
+    "f": "英文維基〈Det som engang var〉的資訊框記：類型 studio、發行 1993 年 8 月、錄音 1992 年 4 月、錄音場所 Grieg Hall（挪威卑爾根）、曲風 black metal 與 dark ambient、總長 39:49、語言英語與挪威語、廠牌 Cymophane、製作人 Count Grishnackh 與 Pytten、前一作《Aske》(1993)、後一作《Hvis lyset tar oss》(1994)。",
+    "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+   },
+   {
+    "f": "同條目導言記盤名的挪威語意思是「What Once Was」，這是挪威 black metal 個人企劃 Burzum 的第二張錄音室專輯，1992 年 4 月錄音、1993 年 8 月經 Burzum 自己的廠牌 Cymophane Productions 發行。",
+    "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+   },
+   {
+    "f": "同條目「Background」節記：Varg Vikernes 在 1992 年 1 月到 1993 年 3 月之間於卑爾根 Grieg Hall 錄完 Burzum 的前四張專輯，但發行時程拉得很開，每張錄音與發行之間都隔了好幾個月。本作原本要叫《På svarte troner》（挪威語「在黑色王座上」），臨發行前才改名。",
+    "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+   },
+   {
+    "f": "同節記封面在視覺上取材自《Advanced Dungeons & Dragons》第一版的模組《The Temple of Elemental Evil》，畫面下方有 Burzum 首張專輯上那個「收割者」與那棵樹；封面由 Jannicke Wiese-Hansen 所繪，她也畫了 Burzum 首張專輯的封面。",
+    "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+   },
+   {
+    "f": "同條目「Release」節記：本作 1993 年 8 月以 CD 發行，Vikernes 創辦 Cymophane Productions 是為了離開 Mayhem 吉他手 Euronymous 所有的 Deathlike Silence Productions；發行量限於約 950 張。1993 年 8 月 10 日 Vikernes 在奧斯陸刺死 Euronymous，數日後被捕，1994 年 5 月因該起殺人與多起教堂縱火被判二十一年徒刑。1994 年 Misanthropy Records 以 CD 與黑膠兩種形式再發，黑膠版附封面藝術的限量海報。",
+    "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 286929510：artistName Burzum、collectionName「Det Som Engang Var」、trackCount 8、releaseDate 1993-08-01、8/8 軌帶 previewUrl、首軌〈Den Onde Kysten〉，軌數與曲序與 MB 的 Cymophane EYE 001 相符。",
+    "src": "https://music.apple.com/us/album/286929510"
+   }
+  ],
+  "hookCandidates": [
+   "原本要叫《På svarte troner》，臨發行前才改名。",
+   "封面由 Jannicke Wiese-Hansen 所繪，視覺取材自《Advanced Dungeons & Dragons》第一版模組《The Temple of Elemental Evil》。"
+  ],
+  "sound": "英文維基〈Det som engang var〉的資訊框把曲風欄填成 black metal 與 dark ambient、總長 39:49、語言列英語與挪威語，錄音場所是挪威卑爾根的 Grieg Hall、時間 1992 年 4 月，製作人記為 Count Grishnackh 與 Pytten。八軌的長短差距很大：最長的〈Snu mikrokosmos tegn〉9:37，最短的〈Svarte troner〉2:17（MB release 916f2b92 的逐軌曲長）。",
+  "keyTracks": [
+   "Den onde kysten",
+   "Key to the Gate",
+   "En ring til å herske",
+   "Lost Wisdom",
+   "Snu mikrokosmos tegn"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1993 與 MB first-release-date 1993-08-20、英文維基的「1993 年 8 月」一致。Apple 的 releaseDate 1993-08-01 是店面月初佔位日。無兩說。",
+  "notes": "**本張 MB 有 Bootleg**：8 個 release 中 Official 5 筆、status 空白 2 筆、Bootleg 1 筆（2013 年、國別空白的 release 81dade04）。我取的曲目來源是 1993-08-20 挪威 Cymophane EYE 001（status Official），未使用任何 Bootleg 或 status 空白的 release。試聽探測判 ready（us:1→1，collectionId 286929510），我以 lookup 回查確認 8 軌、8/8 有 preview、首軌〈Den Onde Kysten〉，判定維持。**寫作層注意**：本張的來源事實包含 Vikernes 1993 年的殺人與縱火判刑，這是維基「Release」節直述的可查證事實，但不宜當賣點；hookCandidates 兩條刻意避開這一段。"
+ },
+ {
+  "key": "desc2:Enslaved|Frost",
+  "artist": "Enslaved",
+  "album": "Frost",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d5d5edf9 的欄位：title「Frost」、artist-credit「Enslaved」、first-release-date 1994-08-04、primary-type Album、secondary-types 空；轄下 25 個 release，國別涵蓋 FR／MY／PL／RU／XW／DE／LT。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d5d5edf9-92f8-3778-900f-e4116581c6ff?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "該 release-group 25 個 release 的 status 清點為 Official 23 筆、Promotion 1 筆、**Bootleg 1 筆**（無 status 空白）。Bootleg 那筆是 1995 年的俄羅斯 release c9f574d6；Promotion 那筆是 1994 年的法國 release 8f5d649d。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d5d5edf9-92f8-3778-900f-e4116581c6ff?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 7afdba52（1994-08-04、FR、status Official、條碼 4001617203927）：廠牌欄 Osmose Productions、編號 OPCD 025、載體 CD、9 軌。逐軌曲名與曲長依序為〈Frost〉2:52、〈Loke〉4:22、〈Fenris〉7:17、〈Svarte vidder〉8:43、〈Yggdrasil〉5:23、〈Jotunblod〉4:07、〈Gylfaginning〉5:32、〈Wotan〉4:13、〈Isöders dronning〉7:45。",
+    "src": "https://musicbrainz.org/release/7afdba52-d434-4860-bd4c-01d49603ba4a"
+   },
+   {
+    "f": "英文維基〈Frost (album)〉的資訊框記：類型 studio、發行日 1994 年 8 月 4 日、錄音期 1994 年 6 至 7 月、錄音場所 Grieghallen（挪威卑爾根）、曲風 Viking metal 與 black metal。同條目曲目表記全碟總長 50:10，作曲主要掛 Ivar Bjørnson 與 Kjellson。",
+    "src": "https://en.wikipedia.org/wiki/Frost_(album)"
+   },
+   {
+    "f": "同條目導言記這是挪威 extreme metal 樂團 Enslaved 的第二張錄音室專輯，1994 年經 Osmose Productions 發行；也是鼓手 Trym Torson 加入 Emperor 之前參與的最後一張 Enslaved 專輯。",
+    "src": "https://en.wikipedia.org/wiki/Frost_(album)"
+   },
+   {
+    "f": "同條目「Layout」節記封面照片由 Svein Grønvold 拍攝，原本收在 Gyldendal Forlag 1991 年出版的書《Jotunheimen》裡。",
+    "src": "https://en.wikipedia.org/wiki/Frost_(album)"
+   },
+   {
+    "f": "同條目「Critical reception」節記 AllMusic 稱本作是「an important release for the extreme music subgenre of Viking metal」，也是樂團「a sizeable creative leap」；評分表列 AllMusic 四顆星、《Rock Hard》9.0／10、Martin Popoff 的《Collector's Guide to Heavy Metal》5／10。同條目並記樂團宣布要在 2019 年費城的 Decibel Metal & Beer Fest 完整演出《Frost》全碟。",
+    "src": "https://en.wikipedia.org/wiki/Frost_(album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 260248477：artistName Enslaved、collectionName「Frost」、trackCount 9、releaseDate 1994-08-04、9/9 軌帶 previewUrl、首軌〈Frost〉，軌數與日期與 MB 的 Osmose OPCD 025 逐項相符。",
+    "src": "https://music.apple.com/us/album/260248477"
+   }
+  ],
+  "hookCandidates": [
+   "封面那張照片是 Svein Grønvold 拍的，原本收在 1991 年出版的《Jotunheimen》書裡。",
+   "鼓手 Trym Torson 轉投 Emperor 之前，在 Enslaved 留下的最後一張。"
+  ],
+  "sound": "英文維基〈Frost (album)〉的資訊框把曲風欄填成 Viking metal 與 black metal，錄音在挪威卑爾根的 Grieghallen、時間 1994 年 6 至 7 月，曲目表記全碟總長 50:10。九軌長短落差明顯：開場的同名曲只有 2:52，〈Svarte vidder〉8:43、〈Isöders dronning〉7:45（MB release 7afdba52 的逐軌曲長）。AllMusic 在同條目裡稱它是 Viking metal 這個支系的重要作品、也是樂團「相當可觀的一次創作跳躍」。",
+  "keyTracks": [
+   "Frost",
+   "Loke",
+   "Fenris",
+   "Svarte vidder",
+   "Isöders dronning"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1994 與 MB first-release-date 1994-08-04、英文維基的 1994 年 8 月 4 日、Apple 的 releaseDate 1994-08-04 三者一致。無兩說。",
+  "notes": "**本張 MB 有 Bootleg**：25 個 release 中 Official 23 筆、Promotion 1 筆、Bootleg 1 筆（1995 年俄羅斯 release c9f574d6）。我取的曲目來源是 1994-08-04 法國 Osmose OPCD 025（status Official），未使用 Bootleg 或 Promotion release。試聽探測判 ready（us:1→1，collectionId 260248477），我以 lookup 回查確認 9 軌、9/9 有 preview、首軌〈Frost〉，判定維持。"
+ },
+ {
+  "key": "desc2:Neurosis|Souls at Zero",
+  "artist": "Neurosis",
+  "album": "Souls at Zero",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a9304513 的欄位：title「Souls at Zero」、artist-credit「Neurosis」、first-release-date 1992-12-01、primary-type Album、secondary-types 空；轄下 8 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 JP／US／XW。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a9304513-564c-3984-9c57-734f5a0edbd7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 64bb2d1b（1992、US、status Official、條碼 721616010923）：廠牌欄 Alternative Tentacles、編號 VIRUS 109CD、載體 CD、10 軌。逐軌曲名與曲長依序為〈To Crawl Under One's Skin〉7:51、〈Souls at Zero〉9:19、〈Zero〉1:41、〈Flight〉4:08、〈The Web〉4:56、〈Sterile Vision〉6:21、〈A Chronology for Survival〉9:34、〈Stripped〉8:01、〈Takeahnase〉7:56、〈Empty〉1:37。",
+    "src": "https://musicbrainz.org/release/64bb2d1b-e4ab-4808-be16-5466264c2e65"
+   },
+   {
+    "f": "MusicBrainz release 52e809fe（1992-12-01、JP、status Official、條碼 4988061886053）：廠牌欄 TOY'S FACTORY、編號 TFCK 88605、載體 CD、同樣 10 軌、曲名與曲序相同。",
+    "src": "https://musicbrainz.org/release/52e809fe-799b-4cbf-bf5b-481d5e808f23"
+   },
+   {
+    "f": "英文維基〈Souls at Zero〉的資訊框記：類型 studio、發行日 1992 年 5 月 19 日、錄音期 1992 年 2 至 3 月、錄音室 Starlight Sound（Richmond）、曲風 sludge metal／post-metal／industrial metal、總長 61:15、廠牌 Alternative Tentacles、製作人 Bill Thompson 與 Neurosis、前一張《The Word as Law》(1990)、後一張《Enemy of the Sun》(1993)。",
+    "src": "https://en.wikipedia.org/wiki/Souls_at_Zero"
+   },
+   {
+    "f": "同條目導言記這是美國 post-metal 樂團 Neurosis 的第三張錄音室專輯，1992 年由 Alternative Tentacles 發行；這是 Simon Mcllroy 加入後的第一張，本作標誌樂團風格轉向——從早期快速的 hardcore punk 影響移往更慢的速度與更多實驗，並因此成為最早的 post-metal 專輯之一。",
+    "src": "https://en.wikipedia.org/wiki/Souls_at_Zero"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 257523883：artistName Neurosis、collectionName「Souls At Zero」、trackCount 13、releaseDate 1992-01-01、13/13 軌帶 previewUrl。前十軌曲名與曲序與 MB 的 Alternative Tentacles VIRUS 109CD 完全相同，第 11 至 13 軌是額外的〈Souls (Demo Version)〉〈Zero (Demo Version)〉與〈Cleanse III (Live In London)〉。",
+    "src": "https://music.apple.com/us/album/257523883"
+   }
+  ],
+  "hookCandidates": [
+   "1992 年 2 到 3 月錄於 Richmond 的 Starlight Sound，發行方是 Alternative Tentacles。",
+   "維基把它列為最早的 post-metal 專輯之一。"
+  ],
+  "sound": "英文維基〈Souls at Zero〉的資訊框把曲風欄填成 sludge metal、post-metal 與 industrial metal，總長 61:15，製作人記為 Bill Thompson 與樂團自己。同條目導言說本作標誌樂團從早期快速的 hardcore punk 影響轉向更慢的速度與更多實驗。十軌裡有四首超過七分半，最長的〈Souls at Zero〉9:19 與〈A Chronology for Survival〉9:34，中間夾著 1:41 的〈Zero〉與 1:37 的〈Empty〉兩段短曲（MB release 64bb2d1b 的逐軌曲長）。",
+  "keyTracks": [
+   "To Crawl Under One's Skin",
+   "Souls at Zero",
+   "The Web",
+   "A Chronology for Survival",
+   "Takeahnase"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1992 與 MB first-release-date 1992-12-01 一致；英文維基資訊框記 1992 年 5 月 19 日，與 MB 差半年、同為 1992 年。Apple 的 releaseDate 1992-01-01 是店面年初佔位日。年份無兩說，日期兩說已記。",
+  "notes": "MB 8 個 release 全為 Official，無 Bootleg、無 status 空白。試聽探測判 ready（us:1→1，collectionId 257523883），我以 lookup 回查確認該筆存在、13/13 有 preview、前十軌與 MB 原盤逐項相同；**但它是 13 軌版，多出兩首 demo 與一首倫敦現場**，Apple us 搜不到純 10 軌版本。判定維持 ready，軌數不一致已記。策展層無額外主張需要擋。"
+ },
+ {
+  "key": "desc2:Godflesh|Selfless",
+  "artist": "Godflesh",
+  "album": "Selfless",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d8f8fb23 的欄位：title「Selfless」、artist-credit「Godflesh」、first-release-date 1994-09-26、primary-type Album、secondary-types 空；轄下 5 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 JP／GB／US／XW／XE。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d8f8fb23-7ec6-3f92-b9ef-4e057419457c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release f55441f0（1994-09-26、GB、status Official、條碼 5018615108528）：廠牌欄 Earache Records、編號 MOSH 85CD、載體 CD、11 軌。逐軌曲名與曲長依序為〈Xnoybis〉5:54、〈Bigot〉4:33、〈Black Boned Angel〉6:47、〈Anything Is Mine〉3:59、〈Empyreal〉6:03、〈Crush My Soul〉4:27、〈Body Dome Light〉5:31、〈Toll〉4:13、〈Heartless〉5:32、〈Mantra〉7:27、〈Go Spread Your Wings〉23:50。",
+    "src": "https://musicbrainz.org/release/f55441f0-52e5-4216-b998-eeba9df6754f"
+   },
+   {
+    "f": "MusicBrainz release 1f633ab6（1994-09-26、JP、status Official、條碼 4988061887128）：廠牌欄 TOY'S FACTORY、編號 TFCK-88712、載體 CD、同樣 11 軌、曲名與曲長逐項相同。",
+    "src": "https://musicbrainz.org/release/1f633ab6-be95-46ad-bd04-f25542afbe24"
+   },
+   {
+    "f": "英文維基〈Selfless (album)〉的資訊框記：類型 studio、歐洲發行 1994 年 9 月 26 日、美國發行 1994 年 10 月 18 日、錄音期 1994 年 1 至 5 月、錄音室 Avalanche、曲風 industrial metal、總長 78:12、廠牌 Earache 與美國 Columbia、製作人 J. K. Broadrick 與 G. C. Green、前一作 EP《Merciless》(1994)、後一張《Songs of Love and Hate》(1996)。",
+    "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+   },
+   {
+    "f": "同條目導言記這是英國 industrial metal 樂團 Godflesh 的第三張錄音室專輯，是樂團的大廠首作，因此比先前作品更常規、更偏搖滾；共發了兩支單曲〈Xnoybis〉與〈Crush My Soul〉，後者的音樂錄影帶由攝影家 Andres Serrano 執導。",
+    "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+   },
+   {
+    "f": "同條目「Background and composition」節記：因為《Selfless》與前一張 EP《Merciless》讓 Godflesh 進了大廠，唱片公司指派專業人員做最終母帶，找來的是 Bob Ludwig；主唱 Justin Broadrick 對這次經驗評價正面，認為 Ludwig 的調整是改善。該節並記專輯名據稱取自 John Coltrane 1969 年的唱片《Selflessness: Featuring My Favorite Things》。",
+    "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+   },
+   {
+    "f": "同節記 Broadrick 把《Selfless》形容成他的「rock & roll」專輯；AllMusic 的 Ned Raggett 則寫道：「The rough, clipped, lock and load style of the band remained essentially unchanged at heart -- Broadrick's brawling, echoed vocals, the sheer impact of the guitars and drum machine beats, Green's uneasy bass.」",
+    "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+   },
+   {
+    "f": "同條目導言記 2018 年的 Roadburn Festival 上《Selfless》第一次被近乎完整地現場演出，長達二十三分鐘的收尾曲〈Go Spread Your Wings〉以〈Messiah〉與〈Merciless〉兩首同期錄音替換。",
+    "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 310621687：artistName Godflesh、collectionName「Selfless」、trackCount 11、releaseDate 1994-01-01、11/11 軌帶 previewUrl、首軌〈Xnoybis〉，軌數與曲序與 MB 的 Earache MOSH 85CD 相符。",
+    "src": "https://music.apple.com/us/album/310621687"
+   }
+  ],
+  "hookCandidates": [
+   "收尾的〈Go Spread Your Wings〉一首就 23 分 50 秒。",
+   "大廠首作，最終母帶由 Bob Ludwig 操刀。"
+  ],
+  "sound": "英文維基〈Selfless (album)〉的資訊框把曲風欄填成 industrial metal、總長 78:12，製作人記為 J. K. Broadrick 與 G. C. Green。同條目記 Broadrick 把這張形容成他的「rock & roll」專輯，AllMusic 的 Ned Raggett 則說樂團那種粗糙、切斷式的風格在骨子裡沒變：Broadrick 迴音處理過的喊唱、吉他與鼓機節拍的衝擊力、Green 不安的貝斯。十一軌裡最後一首〈Go Spread Your Wings〉23:50，是其餘十軌任何一首的三倍以上（MB release f55441f0 的逐軌曲長）。",
+  "keyTracks": [
+   "Xnoybis",
+   "Bigot",
+   "Crush My Soul",
+   "Mantra",
+   "Go Spread Your Wings"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1994 與 MB first-release-date 1994-09-26、英文維基的歐洲發行日 1994 年 9 月 26 日一致；維基另記美國版是 1994 年 10 月 18 日。Apple 的 releaseDate 1994-01-01 是店面年初佔位日。年份無兩說。",
+  "notes": "MB 5 個 release 全為 Official，無 Bootleg、無 status 空白。**試聽探測的判定我覆核後維持**：tried 顯示 us:0→0，Apple search 端點在美國店面查不到這張，探測改走 artistPage 才命中 collectionId 310621687；我以 lookup?id=310621687&country=us 回查確認 11 軌、11/11 有 preview、首軌〈Xnoybis〉，判定成立，又一例第 166 條的 search 漏碟。"
+ },
+ {
+  "key": "desc2:Kyuss|Wretch",
+  "artist": "Kyuss",
+  "album": "Wretch",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0d2b7589 的欄位：title「Wretch」、artist-credit「Kyuss」、first-release-date 1991-09-23、primary-type Album、secondary-types 空；轄下 8 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 DE／US／GB／XW／XE。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0d2b7589-b28a-3681-827f-a1a9a99a0482?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release 358b6319（1991-09-23、US、status Official）：廠牌欄 Dali Records、編號 61256-2、載體 CD、11 軌。逐軌曲名與曲長依序為〈[Beginning of What's About to Happen] HWY 74〉4:43、〈Love Has Passed Me By〉3:12、〈Son of a Bitch〉6:03、〈Black Widow〉2:44、〈Katzenjammer〉2:24、〈Deadly Kiss〉5:05、〈The Law〉7:53、〈Isolation〉2:48、〈I'm Not〉4:39、〈Big Bikes〉5:01、〈Stage III〉4:14。",
+    "src": "https://musicbrainz.org/release/358b6319-290f-41dd-9ad9-47f6c60961a2"
+   },
+   {
+    "f": "MusicBrainz release 503a5aaa（1991-09-23、DE、status Official、條碼 737056125622）：廠牌欄 Dali Records、編號 3705-61256-2、載體 CD、同樣 11 軌、曲名與曲長逐項相同。",
+    "src": "https://musicbrainz.org/release/503a5aaa-6bb4-38de-bf40-0870a10c2a5b"
+   },
+   {
+    "f": "英文維基〈Wretch (album)〉的資訊框記：類型 studio、發行日 1991 年 9 月 23 日、錄音期 1989 至 1991 年、錄音室 Headway Studios（加州 Westminster）與 Master Control Recording Studios（加州 Burbank）、曲風 stoner rock 與 stoner metal、總長 48:49、廠牌 Dali、製作人 Catherine Enny、Ron Krown 與 Kyuss 自己、前一作 EP《Sons of Kyuss》(1990)、後一張《Blues for the Red Sun》(1992)。",
+    "src": "https://en.wikipedia.org/wiki/Wretch_(album)"
+   },
+   {
+    "f": "同條目導言記這是美國樂團 Kyuss 的第一張全長專輯，1991 年 9 月發行；〈Black Widow〉與〈Deadly Kiss〉兩軌取自樂團 1990 年的首張 EP《Sons of Kyuss》，是與原任貝斯手 Chris Cockrell 錄的，專輯其餘部分則是與接替他的 Nick Oliveri 錄的。",
+    "src": "https://en.wikipedia.org/wiki/Wretch_(album)"
+   },
+   {
+    "f": "同節記《Sons of Kyuss》上的〈Love Has Passed Me By〉〈Katzenjammer〉與〈Isolation Desolation〉三首為《Wretch》重錄，最後一首的曲名縮短成〈Isolation〉。",
+    "src": "https://en.wikipedia.org/wiki/Wretch_(album)"
+   },
+   {
+    "f": "同條目的評分表記 AllMusic 2.5 顆星（滿分五顆）、Martin Popoff 的《Collector's Guide to Heavy Metal》8／10、《The Rolling Stone Album Guide》2.5 顆星。",
+    "src": "https://en.wikipedia.org/wiki/Wretch_(album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 207946744：artistName Kyuss、collectionName「Wretch」、trackCount 11、releaseDate 1991-09-23、11/11 軌帶 previewUrl、首軌〈(Beginning of What's About to Happen) Hwy 74〉，軌數、日期與首軌與 MB 的 Dali 61256-2 相符。",
+    "src": "https://music.apple.com/us/album/207946744"
+   }
+  ],
+  "hookCandidates": [
+   "〈Black Widow〉與〈Deadly Kiss〉直接取自 1990 年的 EP《Sons of Kyuss》，是與原任貝斯手 Chris Cockrell 錄的版本。",
+   "錄音橫跨 1989 到 1991 年，分別在加州 Westminster 的 Headway 與 Burbank 的 Master Control 兩間錄音室。"
+  ],
+  "sound": "英文維基〈Wretch (album)〉的資訊框把曲風欄填成 stoner rock 與 stoner metal、總長 48:49，製作人記為 Catherine Enny、Ron Krown 與樂團自己。十一軌裡最長的〈The Law〉7:53，最短的〈Katzenjammer〉2:24（MB release 358b6319 的逐軌曲長）。同條目的評分表裡 AllMusic 給 2.5 顆星、Martin Popoff 給 8／10，兩邊落差不小。",
+  "keyTracks": [
+   "[Beginning of What's About to Happen] HWY 74",
+   "Love Has Passed Me By",
+   "Black Widow",
+   "The Law",
+   "Stage III"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1991 與 MB first-release-date 1991-09-23、英文維基的 1991 年 9 月 23 日、Apple 的 releaseDate 1991-09-23 三者一致。無兩說。",
+  "notes": "MB 8 個 release 全為 Official，無 Bootleg、無 status 空白。**試聽探測的判定我覆核後維持**：tried 顯示 us:0→0，Apple search 端點在美國店面查不到這張，探測改走 artistPage 才命中 collectionId 207946744；我以 lookup 回查確認 11 軌、11/11 有 preview、首軌與 MB 一致，判定成立，又一例第 166 條的 search 漏碟。首軌的括號寫法 MB 用方括號、Apple 用圓括號，keyTracks 依 MB。"
+ },
+ {
+  "key": "desc2:Isis|Celestial",
+  "artist": "Isis",
+  "album": "Celestial",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group e371d1e5 的欄位：title「Celestial」、artist-credit「Isis」、first-release-date 2000-07-19、primary-type Album、secondary-types 空；轄下 16 個 release，status 全部為 Official（無 Bootleg、無空白），國別為 XE／US／BE／XW。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e371d1e5-8737-3c79-a16e-0d4c487eedfd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MusicBrainz release cecd8c4e（2000-07-19、XE、status Official、條碼 0790168105920）：廠牌欄 Hydra Head Records、編號 HH666-59、載體 CD、11 軌。逐軌曲名與曲長依序為〈SGNL>01〉0:55、〈Celestial (The Tower)〉9:42、〈Glisten〉6:35、〈Swarm Reigns (Down)〉6:02、〈SGNL>02〉0:51、〈Deconstructing Towers〉7:31、〈SGNL>03〉0:34、〈Collapse and Crush〉5:55、〈C.F.T. (New Circuitry and Continued Evolution)〉5:43、〈Gentle Time〉7:02、〈SGNL>04 (End Transmission)〉1:07。",
+    "src": "https://musicbrainz.org/release/cecd8c4e-2685-4b21-9044-015a147f66b4"
+   },
+   {
+    "f": "英文維基〈Celestial (Isis album)〉的資訊框記：類型 studio、發行日 2000 年 4 月 3 日、錄音期 2000 年 1 至 2 月、曲風 post-metal 與 sludge metal、總長 51:58、廠牌 Escape Artist（EA07.0）、Hydra Head（HH666-59）與再發的 Ipecac（IPC-145）、製作人 Isis 與 Matt Bayles、前一作 EP《Sawblade》(1999)、後一作《SGNL>05》(2001)。",
+    "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+   },
+   {
+    "f": "同條目導言記這是美國 post-metal 樂團 Isis 的首張錄音室專輯，2000 年由 Escape Artist 與 Hydra Head Records 發行，是他們第三張「官方」個人發行、也是第一張全長作品。",
+    "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+   },
+   {
+    "f": "同條目記一年後 Isis 發行 EP《SGNL>05》，設計上是《Celestial》的延伸，曲目全部取自《Celestial》的錄音場次；主唱 Aaron Turner 形容兩者「part of the same whole」，之所以分開，是因為樂團第一張全長作品就出雙專輯對聽眾可能太沉重。",
+    "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+   },
+   {
+    "f": "同條目記除了一般 CD 與黑膠版，《Celestial》另有與姊妹 EP《SGNL>05》合為一組的雙碟版；2013 年 6 月 5 日宣布本作將再發。",
+    "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+   },
+   {
+    "f": "Apple Music 美國店面有兩筆：collectionId 368094228《Celestial》trackCount 11、releaseDate 2001-12-19、11/11 軌帶 previewUrl，十一軌曲名與曲序與 MB 的 Hydra Head HH666-59 逐項相同；以及 collectionId 665741313《Celestial (Remastered)》trackCount 12、releaseDate 2001-12-19，回問只列出 11 軌、每軌曲名都帶 (Remastered) 尾綴。",
+    "src": "https://music.apple.com/us/album/368094228"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有四首叫 SGNL 的短訊號段落，最短的〈SGNL>03〉只有 34 秒。",
+   "隔年的 EP《SGNL>05》曲目全部出自這張的同一批錄音場次。"
+  ],
+  "sound": "英文維基〈Celestial (Isis album)〉的資訊框把曲風欄填成 post-metal 與 sludge metal、總長 51:58，製作人記為樂團與 Matt Bayles。十一軌的結構是長曲與短訊號交替：〈Celestial (The Tower)〉9:42、〈Deconstructing Towers〉7:31、〈Gentle Time〉7:02 之間夾著〈SGNL>01〉0:55、〈SGNL>02〉0:51、〈SGNL>03〉0:34 與收尾的〈SGNL>04 (End Transmission)〉1:07（MB release cecd8c4e 的逐軌曲長）。",
+  "keyTracks": [
+   "SGNL>01",
+   "Celestial (The Tower)",
+   "Glisten",
+   "Deconstructing Towers",
+   "Gentle Time"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 2000 與 MB first-release-date 2000-07-19 一致；英文維基資訊框記 2000 年 4 月 3 日，與 MB 差三個多月、同為 2000 年。Apple 兩筆的 releaseDate 都是 2001-12-19，晚一年多，對應的是店面上架的版本而非原盤。年份以 MB 與維基的 2000 年為準，無兩說；Apple 的 2001 已記。",
+  "notes": "MB 16 個 release 全為 Official，無 Bootleg、無 status 空白。**建議主線改動試聽配對**：探測判 ready 但抓到的是 collectionId 665741313《Celestial (Remastered)》（collection 標 12 軌、lookup 只回 11 軌、每軌曲名都帶 (Remastered) 尾綴）。我以 lookup 回查，**us 店面另有 collectionId 368094228《Celestial》**，11 軌、11/11 有 preview、曲名不帶尾綴且與 MB 的 Hydra Head 原盤逐項相同，是更乾淨的一筆。兩筆的 releaseDate 都是 2001-12-19。策展層無額外主張需要擋。"
  }
 ]
