@@ -1,0 +1,134 @@
+[
+ {
+  "key": "desc2:Hank Williams|Hank Williams Sings",
+  "artist": "Hank Williams",
+  "album": "Hank Williams Sings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 364c2c37 的欄位：title「Hank Williams Sings」、artist-credit「Hank Williams with His Drifting Cowboys」、first-release-date 1949、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 US／XW Official——1949 US（8 軌分 4 片，廠牌欄 MGM Records，編號 30453／30454／30455／30456）、1951 US（8 軌 1 片，MGM Records E 107）、1952 US（8 軌 1 片，MGM Records E107）、2021-11-05 XW（8 軌，Mercury Nashville，標題印成《Sings》）。",
+    "src": "https://musicbrainz.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6"
+   },
+   {
+    "f": "該 release-group 的 1952 年 release 05fefa8c 欄位：1952、US、status Official、廠牌 MGM Records、編號 E107、載體 10\" Vinyl、8 軌。逐軌曲名依序為 A1〈I Saw the Light〉A2〈A Mansion on the Hill〉A3〈Six More Miles〉A4〈Wedding Bells〉B1〈Lost Highway〉B2〈I've Just Told Mama Goodbye〉B3〈Wealth Won't Save Your Soul〉B4〈A House Without Love〉。",
+    "src": "https://musicbrainz.org/release/05fefa8c-5571-4dbd-b730-58d54e21e1ec"
+   },
+   {
+    "f": "Discogs master 435297 的欄位：title「Hank Williams Sings」、掛名「Hank Williams With His Drifting Cowboys」、year 1952，曲目 8 首、A／B 兩面各 4 首，曲序與 MB E107 那一筆逐軌相同。",
+    "src": "https://api.discogs.com/masters/435297"
+   },
+   {
+    "f": "英文維基〈Hank Williams Sings〉記：這是 Hank Williams 的首張專輯，MGM Records 於 1951 年 11 月 9 日發行；收錄的錄音來自 1946 至 1949 年間的錄音期，製作人 Fred Rose 從先前銷路不佳的單曲裡挑曲，傳記作者 Colin Escott 的說法是「Rose used Hank's first album as a dump site for oddball tracks that hadn't sold elsewhere」。同條目記這張同時以三種規格發行：十吋 LP、四張 45 轉的成套裝、四張 78 轉的成套裝，並且沒有進榜。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams_Sings"
+   },
+   {
+    "f": "同一條目記：八首裡有五首由 Williams 自己創作；唯一真正的暢銷曲是〈Wedding Bells〉（1949 年最高第 2 名），〈A Mansion on the Hill〉1948 年底最高只到第 12 名，其餘各曲（多為 B 面）都未進榜；〈Wealth Won't Save Your Soul〉原是 1947 年 4 月他轉入 MGM 之前為 Sterling Records 錄的、當時作為他的第二張單曲發行。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams_Sings"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1591133640 的 lookup 欄位：artistName「Hank Williams」、collectionName「Sings」、releaseDate 1951-11-09、trackCount 8、copyright「A Mercury Nashville Release; ℗ 1951 UMG Recordings, Inc.」；八軌曲名與曲序與 MB E107 逐軌相同，八軌皆帶 previewUrl。逐軌秒數依序為 166／154／168／177／164／177／168／176。",
+    "src": "https://itunes.apple.com/lookup?id=1591133640&entity=song&limit=200&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "首張專輯的八首，是製作人從賣不動的舊單曲裡挑出來的",
+   "同一批曲目當年分三種規格出：十吋唱片、四張 45 轉、四張 78 轉"
+  ],
+  "sound": "Apple us 1591133640 的八軌逐軌秒數依序為〈I Saw The Light〉166、〈Mansion On The Hill〉154、〈Six More Miles (To The Graveyard)〉168、〈Wedding Bells〉177、〈Lost Highway〉164、〈I've Just Told Mama Goodbye〉177、〈Wealth Won't Save Your Soul〉168、〈A House Without Love〉176——八軌都落在兩分半到三分之間，是 78 轉單曲時代的長度規格被原封搬進十吋唱片（Apple lookup 曲長欄；MB E107 那一筆未填曲長）。",
+  "keyTracks": [
+   "I Saw the Light",
+   "Lost Highway",
+   "Wedding Bells"
+  ],
+  "status": "full",
+  "yearVerified": "四說：MB release-group first-release-date 記 1949（其下確有一筆 1949 US Official、8 軌分 4 片、編號 MGM 30453–30456 的成套裝）、Apple releaseDate 與英文維基都記 1951-11-09、Discogs master 435297 記 1952、MB 另有一筆 1952 US Official 的 MGM E107 十吋盤。卡單取 1952，對應的是 MB／Discogs 都有具體記載的十吋 LP（E107）那一版；1951 那一版在 MB 上也是 8 軌 E 107，與 1952 那筆的差別 MB 沒有交代。四說各有具體來源，屬第 141 條「兩個資料庫各有一筆具體記載且互相矛盾」的形狀，**卡單值不動、行文不得正面斷言發行年**（第 18／46 條）。可用的錨點是維基給的錄音期 1946–1949，以及〈Wedding Bells〉1949 年最高第 2 名這兩個有來源的時間點。",
+  "notes": "**推翻探測層 unavailable**：探測記本張試聽 unavailable，實測不成立。改打藝人頁 lookup?id=179722&entity=album&limit=200&country=us（Hank Williams，us 回 43 張、gb 回 45 張）後在清單裡看到 collectionId **1591133640《Sings》**，再以 lookup?id=1591133640&entity=song 覆核：8 軌、曲名與曲序與 MB 1952 年 E107 十吋盤逐軌相同、八軌皆有 previewUrl、℗1951 UMG。這是第 166 條「search 端點與目錄端點給出不同的世界」的又一例——Apple 上這張的盤名去掉了藝人名只作《Sings》，用卡單盤名去 search 查不到。建議探測檔補：ready／us／1591133640／8 軌。\n盤名與掛名：Apple 作《Sings》、MB／Discogs 作《Hank Williams Sings》，掛名 MB 與 Discogs 都帶 With His Drifting Cowboys、Apple 只作 Hank Williams，三種寫法都要進去重比對（策展層已寫進 queryAlias，正確）。\n**擋下策展層說法**：curatorWhy 稱「MGM 到 1950 年代初才把既有錄音改以 10 吋 LP 出版，E-107 就是那個轉換的第一筆」——維基只支持「這是他的首張專輯」，並且明寫這張同時以十吋 LP、45 轉四張裝、78 轉四張裝三種規格出，沒有「十吋 LP 化的第一筆」這個排序陳述；MB 那筆 1949 年的 4 片裝（編號 30453–30456）反而是同一批曲目的更早形態。序數說法未寫進 facts。\ncuratorWhy 另稱「Apple 條目 collectionId 1591133640 八軌，首軌〈I Saw the Light〉」——這一項實測正確。"
+ },
+ {
+  "key": "desc2:Hank Williams|Ramblin' Man",
+  "artist": "Hank Williams",
+  "album": "Ramblin' Man",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b9e595aa 的欄位：title「Ramblin' Man」（彎撇）、artist-credit「Hank Williams」、first-release-date 1955、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1955 US（12 軌，MGM Records E 3219）、1958 US（12 軌，MGM Records E3219）、2021-11-05 XW（12 軌，Mercury Nashville）。",
+    "src": "https://musicbrainz.org/release-group/b9e595aa-b513-4d0a-b5f9-a1d2a167a679"
+   },
+   {
+    "f": "該 release-group 的 1955 年原盤 release 09c63f7b 欄位：1955、US、status Official、廠牌 MGM Records、編號 E 3219、載體 12\" Vinyl、12 軌。逐軌曲名依序為 A1〈Ramblin' Man〉A2〈My Son Calls Another Man Daddy〉A3〈I Can't Escape From You〉A4〈Nobody's Lonesome for Me〉A5〈I Can't Help It (If I'm Still in Love with You)〉A6〈There'll Be No Tear Drops Tonight〉B1〈Lonesome Whistle〉B2〈I Just Don't Like This Kind of Livin'〉B3〈Take These Chains From My Heart〉B4〈Why Don't You Love Me〉B5〈My Heart Would Know〉B6〈You're Gonna Change (Or I'm Gonna Leave)〉。",
+    "src": "https://musicbrainz.org/release/09c63f7b-e1ec-4a6e-8053-2eedf808cd01"
+   },
+   {
+    "f": "Discogs master 274766 的欄位：title「Ramblin' Man」、掛名 Hank Williams、year 1955，曲目 12 首、A／B 兩面各 6 首，曲序與 MB 的 E 3219 逐軌相同。",
+    "src": "https://api.discogs.com/masters/274766"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1592563692 的 lookup 欄位：artistName「Hank Williams」、collectionName「Ramblin' Man (Undubbed Edition)」、releaseDate 1955-08-01、trackCount 12、copyright「A Mercury Nashville Release; ℗ 2021 UMG Recordings, Inc.」；十二軌曲名與曲序與 MB 的 E 3219 逐軌相同，十二軌皆帶 previewUrl。逐軌秒數依序為 184／157／138／153／146／169／148／169／157／146／148／178。",
+    "src": "https://itunes.apple.com/lookup?id=1592563692&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "英文維基〈Hank Williams〉記：Hiram「Hank」Williams 生於 1923 年 9 月 17 日、卒於 1953 年 1 月 1 日；他有 55 首單曲進過 Billboard Country & Western Best Sellers 榜前十，其中 5 首是身後發行、12 首曾登上第一名。",
+    "src": "https://en.wikipedia.org/wiki/Hank_Williams"
+   },
+   {
+    "f": "英文維基的〈Ramblin' Man〉消歧義頁把「Ramblin' Man」（Hank Williams song）記為 1951 年的曲子，並另外列出 2014 年 Hank Williams III 的同名專輯《Ramblin' Man》與 The Allman Brothers Band 1992 年的同名精選——同一串字在唱片目錄上至少對應到祖孫兩代與另一支樂團。",
+    "src": "https://en.wikipedia.org/wiki/Ramblin%27_Man"
+   }
+  ],
+  "hookCandidates": [
+   "十二首都是他生前錄的，唱片本身是他死後兩年才編出來的",
+   "同一個盤名在唱片目錄上對應到祖孫兩代與另一支樂團"
+  ],
+  "sound": "Apple us 1592563692（Undubbed Edition，曲序與 MB 的 1955 年 MGM E 3219 逐軌相同）的十二軌秒數依序為〈Ramblin' Man〉184、〈My Son Calls Another Man Daddy〉157、〈I Can't Escape From You〉138、〈Nobody's Lonesome For Me〉153、〈I Can't Help It (If I'm Still In Love With You)〉146、〈There'll Be No Teardrops Tonight〉169、〈(I Heard That) Lonesome Whistle〉148、〈I Just Don't Like This Kind Of Living〉169、〈Take These Chains From My Heart〉157、〈Why Don't You Love Me〉146、〈My Heart Would Know〉148、〈You're Gonna Change (Or I'm Gonna Leave)〉178——最長的是開場的標題曲，其餘十一軌沒有一首滿三分鐘（Apple lookup 曲長欄；MB E 3219 那一筆未填曲長）。「Undubbed」指的是這一版拿掉了後製加上去的配樂，與原盤是同一批錄音的不同混音。",
+  "keyTracks": [
+   "Ramblin' Man",
+   "Take These Chains From My Heart",
+   "I Can't Help It (If I'm Still in Love with You)"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1955 與 MB first-release-date 1955、Discogs master 274766 的 1955 三方一致，MB 轄下最早的一筆 release 也是 1955 年的 MGM E 3219，無分歧。Apple 那一筆的 releaseDate 1955-08-01 同樣落在 1955，只是它標的是 2021 年重新混音的 Undubbed Edition（℗2021），日期屬沿用原盤年、依第 77 條只當訊號。Williams 卒於 1953-01-01（英文維基），本張的發行年在他身後，行文若要提「身後發行」是有來源的。",
+  "notes": "**推翻探測層配對——這是配到別的藝人**：探測記 ready／us／collectionId **815502171**／8 軌／appleTitle「Ramblin' Man」／appleYear 2014。實測 lookup?id=815502171 回的是 **artistName「Hank Williams III」、℗2014 Curb Records、artistId 1253457** 的 8 軌專輯（曲目含〈Fearless Boogie〉〈Marijuana Blues〉〈Runnin' & Gunnin'〉），是孫子的碟，與本卡無關。**這個 collectionId 一定要從探測檔換掉，不得當成本張的固定試聽來源。**\n正解是 **us collectionId 1592563692《Ramblin' Man (Undubbed Edition)》**：artistId 179722（本人）、12 軌、曲名與曲序與 MB 1955 年 MGM E 3219 逐軌相同、十二軌皆有 previewUrl、notExplicit。策展層在 curatorRisk 裡本來就點名了這一筆並註明「屬同一張碟的不同混音而非別碟」——**策展層是對的，錯的是探測層**（第 141 條的形狀：只看 Apple search 回的第一筆就下判斷）。Undubbed Edition 屬同一張碟的不同混音，試聽可用，行文不得把它寫成另一張唱片。\n跨代撞名要往下游傳：Hank Williams（artistId 179722）／Hank Williams, Jr.／Hank Williams III 三個實體在 Apple 上都有《Ramblin' Man》相關條目，字串比對必配錯，去重與試聽都要用 artistId 或 MBID 釘。\n**擋下策展層說法**：curatorWhy 稱「E-3219 是這一批裡最常被當成獨立作品看待的一張」與「它把〈Ramblin' Man〉這一路較晚期、較陰暗的錄音收在一起，與同廠同期的宗教曲輯、幽默曲輯分開發行」——兩句都查不到出處（MB 只給曲目與年份，Discogs 只給版本欄位，英文維基沒有本張的條目），均未寫進 facts。curatorWhy 另稱「1953 年 Hank Williams 過世後，MGM 以 12 吋 LP 規格重新編排他的錄音」——過世年份 1953 有維基佐證、本張是 1955 年 12 吋盤也有 MB／Discogs 佐證，這一句成立。"
+ },
+ {
+  "key": "desc2:Hank Williams|Hank Williams as \"Luke the Drifter\"",
+  "artist": "Hank Williams",
+  "album": "Hank Williams as \"Luke the Drifter\"",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bda516f0 的欄位：title「Hank Williams as “Luke the Drifter”」、artist-credit「Hank Williams as Luke the Drifter」、first-release-date 1955、primary-type **Album**、secondary-types [Compilation]、轄下 2 個 release 皆 Official——1955 US（12 軌，廠牌欄 MGM Records、編號 E203、載體 12\" Vinyl）與 2021-11-05 XW（14 軌，Mercury Nashville，標題去掉引號）。",
+    "src": "https://musicbrainz.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1"
+   },
+   {
+    "f": "該 release-group 的 1955 年 release cf3b22e9 的 12 軌曲序為 A1〈Pictures From Life's Other Side〉A2〈Men With Broken Hearts〉A3〈Help Me Understand〉A4〈Too Many Parties and Too Many Pals〉A5〈Why Don't You Make Up Your Mind?〉A6〈I've Been Down That Road Before〉B1〈Be Careful of Stones That You Throw〉B2〈I Dreamed About Mama Last Night〉B3〈The Funeral〉B4〈Beyond the Sunset〉B5〈Just Waitin'〉B6〈Everything's Okay〉。",
+    "src": "https://musicbrainz.org/release/cf3b22e9-fbf2-42a5-b958-f6a909106698"
+   },
+   {
+    "f": "Discogs master 396408 的欄位：title「Hank Williams As Luke The Drifter」、掛名「Hank Williams, Luke The Drifter」、year 1955、main_release 3894357（1955 US、LP、MGM Records、編號 E3267），曲目 12 首、曲序與 MB 的 1955 年那筆逐軌相同。",
+    "src": "https://api.discogs.com/masters/396408"
+   },
+   {
+    "f": "同一個 Discogs master 的版本清單顯示，最早的一批版本都是 **1953** 年的十吋盤：US 的 MGM E-203（10\"，另有一筆同編號的 78 轉成套裝，編號 203）、Canada 的 E-203、Australia 的 M-G-M 01 119、UK 的 M-G-M D 119；十二吋的 E3267 要到 1955 年才出現（US 3894357、Canada 9416553）。1961 年 MGM 以 E3927 用《Luke The Drifter》的短盤名再發。",
+    "src": "https://api.discogs.com/masters/396408/versions?per_page=50"
+   },
+   {
+    "f": "Apple Music us 店面 collectionId 1884151486 的 lookup 欄位：artistName「Hank Williams」、collectionName「Hank Williams As Luke The Drifter (Expanded Edition)」、releaseDate 1953-03-02、trackCount 14、copyright「A Mercury Nashville Release; This Compilation ℗ 2001 UMG Recordings, Inc.」，十四軌皆帶 previewUrl。十四軌之中包含 MB 1955 年那筆的十二軌全數（〈Why Don't You Make Up Your Mind?〉在 Apple 上作〈Please Make Up Your Mind〉），另多出〈No, No Joe〉與〈Ramblin' Man〉兩軌。",
+    "src": "https://itunes.apple.com/lookup?id=1884151486&entity=song&limit=200&country=us"
+   },
+   {
+    "f": "Discogs 上 Luke the Drifter 這個掛名另有兩張 1959 年的 7 吋 45 轉 EP 續集：master 864643《Hank Williams As Luke The Drifter (Vol. 2)》（MGM X1643）與 master 3203442《Hank Williams As Luke the Drifter (Vol. 3)》（MGM、Loew's Incorporated，X1644）；1955 年另有 master 1199143 的 7 吋 EP 版（MGM X1165）。",
+    "src": "https://api.discogs.com/database/search?q=Hank+Williams+Luke+the+Drifter&type=master"
+   }
+  ],
+  "hookCandidates": [
+   "同一位歌手在同一家廠牌用兩個名字發片，勸世那一半掛的是 Luke the Drifter",
+   "十二首裡有整整一面是說白體，不是唱的"
+  ],
+  "sound": "Apple us 1884151486 的十四軌秒數依序為 173／192／178／181／181／180／187／182／172／178／162／172／148／184——十四軌沒有一首超過三分半，最短的〈No, No Joe〉148 秒、最長的〈Men With Broken Hearts〉192 秒，彼此的差距不到一分鐘（Apple lookup 曲長欄；MB 與 Discogs 對本張的曲目都未填曲長，故此處只用 Apple 的數字）。",
+  "keyTracks": [
+   "Pictures From Life's Other Side",
+   "Men With Broken Hearts",
+   "Be Careful of Stones That You Throw"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 year 1955 對應的是十二吋的 MGM E3267（Discogs master 396408 的 main_release 與 MB 1955 年那筆都指這一版）。但 Discogs 的版本清單顯示**這張碟最早的形態是 1953 年的十吋 MGM E-203**（US、Canada 各有，另有同編號的 78 轉成套裝，UK／Australia 同年亦有各自的十吋版），Apple 的 releaseDate 1953-03-02 與那一版對得上——所以 Apple 那個「1953」不是第 77 條那種數位重製日期的漂移，而是指向另一個更早的實體版本。MB 自己把兩者混在同一筆上（載體欄寫 12\" Vinyl、編號欄卻寫 E203、日期寫 1955）。兩個年份各有具體壓片證據，屬第 141 條「兩個資料庫各有一筆具體記載且互相矛盾」的形狀：**卡單值 1955 不動，行文不得正面斷言發行年**，可用的錨點是「十吋版與十二吋版是兩個年份的兩種規格」這件有來源的事。",
+  "notes": "§5.6 判準（第 167 條）：primary-type 是 **Album**、secondary-types 才是 [Compilation]，依明文照一般 Album 寫、`releaseType` 填 Album、例外欄位留空——策展層已這樣處理，正確。\n試聽覆核：探測記 ready／us／1884151486／14 軌／appleYear 1953。逐項覆核結論是 **加曲版、不是二合一，維持 ready**——依第 140 條的兩項判準：(a) MB 1955 年原盤的十二軌**全數**出現在 Apple 那十四軌裡；(b) 多出來的〈No, No Joe〉與〈Ramblin' Man〉兩軌都是 Luke the Drifter 這個掛名自己的錄音（〈Ramblin' Man〉1951 年即以 Luke the Drifter 名義發過單曲，見同批《Ramblin' Man》卡的維基來源），**不是別張專輯的曲目整段搬進來**。行文不得把這兩軌當成原盤曲目。\n曲序要注意（第 157 條）：Apple 的十四軌**曲序與原盤 LP 不同**（原盤 A5／A6 被排到第 9、10 軌，原盤 B1–B4 被提到第 5–8 軌），但**第一軌兩邊同為〈Pictures From Life's Other Side〉**，固定試聽取首軌不會取錯。\n**擋下策展層說法**：curatorWhy 稱「當年單獨編號發行以免點唱機業者誤買」——這個說法在 MB、Discogs、英文維基三處都查不到出處，未寫進 facts；行文不得寫發行動機。curatorWhy 另稱「Luke the Drifter 是 Hank Williams 在 MGM 用的另一個發行身分，專門放勸世與朗誦體的曲目」——「另一個發行掛名」有 MB artist-credit 與 Discogs 掛名欄佐證（兩處都把 Luke the Drifter 寫進掛名），但「專門放勸世與朗誦體」查不到出處，facts 只寫得到曲名。\n**更正策展層一處欄位**：curatorRisk／label 欄寫 catno E-3267，Discogs main_release 確為 E3267，但 **MB 那筆 1955 年 release 的編號欄寫的是 E203**（那其實是 1953 年十吋版的編號）。兩個編號指的是兩種規格，下游若要寫編號請寫「十吋 E-203／十二吋 E-3267」，不要只寫一個。\ncuratorRisk 稱「同系列另有 Vol.2（1959 MGM X1643）與 Vol.3（X1644），MB 未建 release-group，Discogs 有」——實查 Discogs 兩筆都在（master 864643／3203442），且都是 7 吋 45 轉 EP 不是 LP，這一項成立且已寫進 facts。"
+ }
+]
