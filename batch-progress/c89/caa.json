@@ -290,9 +290,12 @@
   "year": 1996,
   "g": "b",
   "rgMbid": "7cd4c39e-30f9-4c12-b908-084ed937b43c",
-  "art": null,
-  "probed": false,
-  "probeError": 500
+  "art": {
+   "url": "https://coverartarchive.org/release-group/7cd4c39e-30f9-4c12-b908-084ed937b43c/front",
+   "source": "caa",
+   "rgMbid": "7cd4c39e-30f9-4c12-b908-084ed937b43c"
+  },
+  "probed": true
  },
  {
   "artist": "新寶島康樂隊",
