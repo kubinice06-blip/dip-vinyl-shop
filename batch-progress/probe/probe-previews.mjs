@@ -264,10 +264,18 @@ for (const c of cards) {
     }
     if (!hits.length) continue;
 
-    // 排序：年份接近的優先（不是門檻，只是偏好），再來 explicit 優先。
+    // 排序：**沒有再發裝飾字樣的版本最優先**，再來年份接近的，最後 explicit 優先。
+    // 2026-09-05（c-94 研究 a）：a 組 23 張探測**全判 ready**，逐張回 lookup 卻抓到四筆配錯版本——
+    // Voivod《War and Pain》配到 31 軌的 Box Set（原盤 9 軌）、
+    // Killswitch Engage《The End of Heartache》配到 Bonus Track Version（18 軌／原盤 12）、
+    // Isis《Celestial》配到曲名全帶尾綴的 Remastered 版。
+    // **`ready` 只代表「配到了某一筆」，不代表配對正確。** `DECO` 這個正規式本來就認得
+    // remaster／deluxe／expanded／edition／anniversary／bonus tracks／version，
+    // 之前只拿來判「年份不計」，現在讓它進排序：**同樣配得上的候選，素面的那個先。**
+    const deco = x => { DECO.lastIndex = 0; const r = DECO.test(x?.collectionName || ''); DECO.lastIndex = 0; return r ? 1 : 0; };
     const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
-    hits.sort((x, y) => (drift(x) - drift(y)) || (rank(x) - rank(y)));
+    hits.sort((x, y) => (deco(x) - deco(y)) || (drift(x) - drift(y)) || (rank(x) - rank(y)));
     let best = hits[0];
     // 排序後最好的還是 cleaned → 回藝人頁找同名同軌數的 explicit 雙胞胎（見上方註解）。
     if (best?.collectionExplicitness === 'cleaned') {
