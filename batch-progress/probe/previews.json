@@ -9338,18 +9338,20 @@
  "Albert Ayler|My Name Is Albert Ayler": {
   "batch": "c95",
   "tried": [
-   "us:2→1"
+   "us:2→1",
+   "gb:research-swap→1"
   ],
-  "front": "us",
-  "collectionId": 152606352,
-  "appleTitle": "My Name Is Albert Ayler",
+  "front": "gb",
+  "collectionId": 652749380,
+  "appleTitle": "Albert Ayler: My Name Is Albert Ayler",
   "appleArtist": "Albert Ayler",
   "appleYear": "1963",
-  "explicitness": "cleaned",
+  "explicitness": "notExplicit",
   "trackCount": 6,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/16/59/4b1659be-71c1-80d8-dfc5-b528b078d0cc/mzaf_8746440703043869537.plus.aac.p.m4a",
-  "cleanedOnly": true,
-  "status": "ready"
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/8b/42/608b4298-e6f6-181f-334c-56a621be699a/mzaf_18218278295566300111.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 策展層預告、研究層證實、主線換綁**：原綁 us 152606352 是 **cleaned**，us 藝人頁上沒有雙胞胎；**改打 gb 找到 652749380（notExplicit、6 軌逐軌全同），front 改成 gb**。這是第 166 條的一個變形——**雙胞胎不一定在同一個店面**。"
  },
  "Albert Ayler|Spirits Rejoice": {
   "batch": "c95",
@@ -9395,9 +9397,20 @@
    "nl:12→0",
    "jp:12→0",
    "ca:12→0",
-   "au:12→0"
+   "au:12→0",
+   "us:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 193147812,
+  "appleTitle": "Bix Beiderbecke, Vol. I - Singin' the Blues",
+  "appleArtist": "Bix Beiderbecke",
+  "appleYear": "1990",
+  "explicitness": "notExplicit",
+  "trackCount": 20,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/dc/66/fcdc6601-e981-94f9-bc09-235946999a80/mzaf_5462036397105036635.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 b 覆核、主線複驗**：探測層判 unavailable 是誤判（第 166 條，Apple search 漏碟）——Apple 標題是《Bix Beiderbecke, Vol. I - Singin' the Blues》，20 軌與 MB 的 CK 45450 逐軌全同。us 193147812。"
  },
  "Mary Lou Williams|Zodiac Suite": {
   "batch": "c95",
@@ -9478,9 +9491,21 @@
    "nl:1→0",
    "jp:1→0",
    "ca:0→0",
-   "au:0→0"
+   "au:0→0",
+   "us:research-swap→1"
   ],
-  "status": "unavailable"
+  "front": "us",
+  "collectionId": 1443173406,
+  "appleTitle": "Roy and Diz",
+  "appleArtist": "Roy Eldridge & Dizzy Gillespie",
+  "appleYear": "1954",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/2c/b5/162cb546-959c-b5b1-993b-47a80cfbc6f5/mzaf_18007592415858080517.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 b 覆核、主線複驗並鎖軌**：探測層判 unavailable 是誤判（第 166 條）。us 1443173406，**但那是 Vol.1＋Vol.2 合併的 9 軌 CD**——預設第 1 軌〈Sometimes I'm Happy〉是 Vol. 2 的曲子，**固定試聽已鎖在第 6 軌〈I've Found a New Baby〉（原盤 A1）**。⚠ **軌數與曲目不得引這個條目**，原盤是 Vol. 1。",
+  "lockedTrack": 6
  },
  "Bunk Johnson|Bunk Johnson and His Superior Jazz Band": {
   "batch": "c95",
@@ -9552,20 +9577,23 @@
   "batch": "c95",
   "tried": [
    "us:0→0",
-   "gb:4→1"
+   "gb:4→1",
+   "us:research-swap→1"
   ],
-  "front": "gb",
-  "collectionId": 504543940,
-  "appleTitle": "The Pearls",
+  "front": "us",
+  "collectionId": 302055819,
+  "appleTitle": "The Pearls (Remastered - 1988)",
   "appleArtist": "Jelly Roll Morton",
-  "appleYear": "1938",
+  "appleYear": "1988",
   "explicitness": "notExplicit",
-  "trackCount": 20,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/7f/75/26/mzm.ddejdmel.aac.p.m4a",
+  "trackCount": 23,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/19/d4/5019d4e5-0508-c15a-6a7f-b697243e4b7e/mzaf_9836454891756876733.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "yearDrift": 50,
-  "reissueTitle": false,
-  "status": "ready"
+  "status": "ready",
+  "note": "**2026-09-05 研究層 c-95 b 抓到配錯碟、主線換綁**：原綁 gb 504543940（℗2012 Bold As Brass、20 軌）的曲目表與 MB 的 Bluebird 6588-2-RB 23 軌**完全不同**，末軌〈Mamie's Blues〉根本不在原盤上。改綁 us 302055819（23 軌逐軌全同）。**策展層的 `curatorRisk` 本來就指名這一筆，被探測層的 gb 命中覆蓋掉了**——這是「先命中的店面贏」在錯的一邊。⚠ **504543940 列黑名單。**",
+  "rejectedCollectionIds": [
+   504543940
+  ]
  },
  "King Oliver|The New York Sessions (1929-1930)": {
   "batch": "c95",
@@ -9598,7 +9626,8 @@
   "trackCount": 21,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d0/90/6e/d0906e36-c4f6-4057-6d6c-7b19980bf1d3/mzaf_6359087340544458372.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "note": " **2026-09-05 研究層 c-95 b：MB 與 Apple 的曲目表打架**——兩邊都 21 軌但只有中段重疊，且 MB 那筆 release 的廠牌登記成「Squirrel Thing Recordings / B01IOLFDCG」（可疑）。**主線裁定：這個條目只當試聽來源，本張禁寫任何曲目與軌數。**"
  },
  "Machito|Afro-Cuban Jazz: The Music of Chico O'Farrill": {
   "batch": "c95",

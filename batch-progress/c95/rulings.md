@@ -178,3 +178,40 @@ Victoria Spivey、Willie Dixon）。
 
 另有一處**事實錯誤就地更正**：策展層說 Blind Lemon 的兩筆 Apple 是「Riverside 1961 年盤」，
 實測版權欄是 **Milestone 與 Black Swan**。
+
+---
+
+## （主線追加，2026-09-05）第 11 條：Sidney Bechet《The Fabulous Sidney Bechet》的 rgMbid **沒有釘錯**，MB 的 release 清單不全
+
+研究層回報：`53537ba8` 的 `first-release-date` 是 **2001-01-09**、轄下只有那一筆
+2001 Blue Note 30607 CD（17 軌），**沒有 1958 年的 BLP 1207**；卡單 `year=1958`
+目前只有 Apple 725210025 一個外部背書。
+
+**主線覆核**：MB 上以這個盤名為題的 release-group 只有兩個——`53537ba8`（2001-01-09）
+與 `9691085f`《12 Years On Blue Note. The Fabulous Sidney Bechet》（1952，另一張碟）。
+**沒有第二個對應 1958 LP 的 RG。**
+
+**裁定**：
+1. **`rgMbid` 維持 `53537ba8`，沒有釘錯。** 它就是這張碟的實體，
+   **MB 的 `first-release-date` 2001 只是因為 MB 的 release 清單裡缺了 1958 的 BLP 1207**。
+   這正是第 91／95 條講的：**rgMbid 是身分鍵，不是年份來源。**
+2. **`year` 維持 1958。**
+3. **正文不得引 MB 的 2001**，也**不得寫「1958 年 Blue Note 發行」以外的細節**——
+   1958 這個年份目前只有 Apple 一個外部背書，維基完全沒提這張碟或 BLP 1207。
+4. **落差已寫進 `yearVerified`，本機拿到實體時應覆核。**
+
+### 一併記下 b 組抓到的四件事（都已改進 `previews.json`）
+
+- **Jelly Roll Morton《The Pearls》配到別的碟**：原綁 gb 504543940（℗2012 Bold As Brass、20 軌）
+  的曲目表與 MB 的 Bluebird 6588-2-RB 23 軌**完全不同**。改綁 us 302055819。
+  **策展層的 `curatorRisk` 本來就指名 us 那一筆，是被探測層的 gb 命中覆蓋掉的**——
+  「先命中的店面贏」在這裡贏在錯的一邊。gb 那筆已列黑名單。
+- **Albert Ayler《My Name Is Albert Ayler》的雙胞胎不在同一個店面**：
+  us 152606352 是 cleaned、us 藝人頁沒有雙胞胎，**gb 652749380 才是 notExplicit 的那筆**。
+  第 166 條的一個變形，**往後找 explicit 雙胞胎不能只在同一個店面找**。
+- **Roy Eldridge & Dizzy Gillespie《Roy & Diz》要鎖軌**：Apple 那筆是 Vol.1＋Vol.2 合併的 9 軌 CD，
+  **預設第 1 軌是 Vol. 2 的曲子**。固定試聽已鎖在第 6 軌〈I've Found a New Baby〉（原盤 A1），
+  並記了 `lockedTrack: 6`。**軌數與曲目不得引這個條目。**
+- **Fletcher Henderson《Tidal Wave》的 MB 與 Apple 曲目表打架**（兩邊都 21 軌但只有中段重疊，
+  且 MB 那筆 release 的廠牌登記成「Squirrel Thing Recordings / B01IOLFDCG」，可疑）。
+  **裁定：那個條目只當試聽來源，本張禁寫任何曲目與軌數。**
