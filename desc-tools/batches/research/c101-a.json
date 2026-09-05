@@ -41,7 +41,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1991。MB release-group first-release-date 1991-06-14、其下 1991-06-14 JP Official 兩筆（CD N23D-001／卡帶 N20T-001）、Apple jp 61052896 的 releaseDate 與 ℗ 年份都是 1991，四處同年同日。**遊戲發售年與原聲帶發行年要分開寫**：Super Famicom 版《ファイナルファンタジーIV》日本發售日是 **1991-07-19**（ja 維基 Date 欄），原聲盤 **1991-06-14** 比它早 35 天——**同一年，但唱片在前**。",
-  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 61052896**（44 軌、44 軌皆有 previewUrl、曲序與 MB 原盤逐位置相符），de／gb／hk／jp／tw／us 六個店面同一個 collectionId 全部命中。探測落空的原因是**盤名跨文字系統**：卡片盤名是日文《ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン》，Apple 作英文《FINAL FANTASY IV (Original Soundtrack)》，兩者零重疊（裁定 49／158 的形狀）。**策展層的 `curatorRisk` 早就寫出了這個 collectionId**，是探測層沒吃 queryAlias（裁定 76）。\\n**擋下策展層說法兩處**：(1)「也是植松目錄裡最早被美國市場接走的一張——2001 年 TOKYOPOP Soundtrax」——**與來源相反**：同一位藝人的《FF VI》在 MB 上有 **1994-12-01 US Official Squaresoft SQ108**（《Kefka's Domain》），早七年；策展層自己在 FF VI 那張卡上也寫了這一筆。**行文不得寫「最早被美國市場接走」。** (2)「1991 年 6 月 14 日隨 Super Famicom 版《FFIV》發行」——遊戲是 1991-07-19，唱片早 35 天，**不是「隨遊戲發行」**。\\n另有一處要避開：「植松伸夫在 Square 的第一張跨出『遊戲附屬品』的原聲盤」與「FF 系列從 8 位元進到 SNES 音源之後的第一份完整曲集」兩句都查不到來源（MB 與維基都沒有「第一張」的排序陳述），**行文不得寫序數**。\\n**別碟警示**：Apple jp 另有 365460760《FINAL FANTASY IV (DS Version) [Original Soundtrack]》52 軌、1612648866《FINAL FANTASY IV PIXEL REMASTER Original Soundtrack (FFPR Ver.)》54 軌、1711374624《Piano Collections FINAL FANTASY IV》14 軌——三筆都不是本盤。\\n池中重複卡：策展層實掃 seed_cards.json 全 14,424 列，`植松伸夫` 與 `Nobuo Uematsu` 兩種寫法皆 0 命中，**沒有另一種寫法的重複卡**。"
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 61052896**（44 軌、44 軌皆有 previewUrl、曲序與 MB 原盤逐位置相符），de／gb／hk／jp／tw／us 六個店面同一個 collectionId 全部命中。探測落空的原因是**盤名跨文字系統**：卡片盤名是日文《ファイナルファンタジー IV オリジナル・サウンド・ヴァージョン》，Apple 作英文《FINAL FANTASY IV (Original Soundtrack)》，兩者零重疊（裁定 49／158 的形狀）。**策展層的 `curatorRisk` 早就寫出了這個 collectionId**，是探測層沒吃 queryAlias（裁定 76）。\\n**擋下策展層說法兩處**：(1)「也是植松目錄裡最早被美國市場接走的一張——2001 年 TOKYOPOP Soundtrax」——**與來源相反**：同一位藝人的《FF VI》在 MB 上有 **1994-12-01 US Official Squaresoft SQ108**（《Kefka's Domain》），早七年；策展層自己在 FF VI 那張卡上也寫了這一筆。**行文不得寫「最早被美國市場接走」。** (2)「1991 年 6 月 14 日隨 Super Famicom 版《FFIV》發行」——遊戲是 1991-07-19，唱片早 35 天，**不是「隨遊戲發行」**。\\n另有一處要避開：「植松伸夫在 Square 的第一張跨出『遊戲附屬品』的原聲盤」與「FF 系列從 8 位元進到 SNES 音源之後的第一份完整曲集」兩句都查不到來源（MB 與維基都沒有「第一張」的排序陳述），**行文不得寫序數**。\\n**別碟警示**：Apple jp 另有 365460760《FINAL FANTASY IV (DS Version) [Original Soundtrack]》52 軌、1612648866《FINAL FANTASY IV PIXEL REMASTER Original Soundtrack (FFPR Ver.)》54 軌、1711374624《Piano Collections FINAL FANTASY IV》14 軌——三筆都不是本盤。\\n池中重複卡：策展層實掃 seed_cards.json 全 14424 列，`植松伸夫` 與 `Nobuo Uematsu` 兩種寫法皆 0 命中，**沒有另一種寫法的重複卡**。"
  },
  {
   "key": "desc4:植松伸夫|ファイナルファンタジー VI: オリジナル・サウンド・ヴァージョン",
@@ -85,7 +85,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1994。MB first-release-date 1994-03-25、其下 1994-03-25 JP Official（PSCN-5001〜5003）、Apple jp 62447175 的 releaseDate 與 ℗ 年份都是 1994。**遊戲發售年與原聲帶發行年**：Super Famicom《ファイナルファンタジーVI》日本 **1994-04-02**（ja 維基 Date 欄），原聲盤 **1994-03-25**，**同年、唱片早 8 天**。",
-  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 62447175**（61 軌、61 軌皆有 previewUrl、三片分佈 25／20／16 與 MB 原盤相同），六個店面全部命中。落空原因同 FF IV——卡片盤名日文、Apple 盤名英文，且卡片的半形冒號在 Apple 那側不存在。策展層 `curatorRisk` 已寫出這個 collectionId。\\n**擋下策展層說法一處（與來源相反）**：「也是他目錄裡篇幅最大的一份」——**假的**。同一位作曲家的《FF IX》110 軌、《FF VII》85 軌都比本張的 61 軌長，而策展層自己在 FF IX 那張卡上就寫了「是他名下軌數最多的一張」。**行文不得寫「篇幅最大」。**\\n另擋下一處措辭：「位置與次年由光田康典接手的《クロノ・トリガー》相鄰」——《クロノ・トリガー》(1995) 的作曲欄在 ja 維基上是**光田康典／植松伸夫／松枝賀子三人**，不是「交棒給光田」。行文若要提這條線，只能寫「次年的《クロノ・トリガー》由光田康典主寫」，不得寫成植松退出。\\n「植松伸夫在 SNES 音源上的收尾之作」查不到直接來源，**行文不得寫序數或「最後」**。\\n**別碟警示**：Apple jp 另有 191390921《FINAL FANTASY VI Grand Finale (Original Soundtrack)》11 軌（1994 管弦編曲盤）、1612650335《FF VI PIXEL REMASTER》94 軌、1711370165《Piano Collections FINAL FANTASY VI》13 軌——三筆都不是本盤，且 Grand Finale 的 Apple 年份也標 1994，年份閘分不出來。\\n池中重複卡：0（策展層實掃 14,424 列，日文與羅馬拼音兩種寫法皆 0）。"
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 62447175**（61 軌、61 軌皆有 previewUrl、三片分佈 25／20／16 與 MB 原盤相同），六個店面全部命中。落空原因同 FF IV——卡片盤名日文、Apple 盤名英文，且卡片的半形冒號在 Apple 那側不存在。策展層 `curatorRisk` 已寫出這個 collectionId。\\n**擋下策展層說法一處（與來源相反）**：「也是他目錄裡篇幅最大的一份」——**假的**。同一位作曲家的《FF IX》110 軌、《FF VII》85 軌都比本張的 61 軌長，而策展層自己在 FF IX 那張卡上就寫了「是他名下軌數最多的一張」。**行文不得寫「篇幅最大」。**\\n另擋下一處措辭：「位置與次年由光田康典接手的《クロノ・トリガー》相鄰」——《クロノ・トリガー》(1995) 的作曲欄在 ja 維基上是**光田康典／植松伸夫／松枝賀子三人**，不是「交棒給光田」。行文若要提這條線，只能寫「次年的《クロノ・トリガー》由光田康典主寫」，不得寫成植松退出。\\n「植松伸夫在 SNES 音源上的收尾之作」查不到直接來源，**行文不得寫序數或「最後」**。\\n**別碟警示**：Apple jp 另有 191390921《FINAL FANTASY VI Grand Finale (Original Soundtrack)》11 軌（1994 管弦編曲盤）、1612650335《FF VI PIXEL REMASTER》94 軌、1711370165《Piano Collections FINAL FANTASY VI》13 軌——三筆都不是本盤，且 Grand Finale 的 Apple 年份也標 1994，年份閘分不出來。\\n池中重複卡：0（策展層實掃 14424 列，日文與羅馬拼音兩種寫法皆 0）。"
  },
  {
   "key": "desc4:植松伸夫|Final Fantasy VII: Original Soundtrack",
@@ -145,7 +145,7 @@
     "src": "https://musicbrainz.org/release/92594dcc-390d-4b9b-888e-441ca2cead1d"
    },
    {
-    "f": "Apple Music jp collectionId 75003561《FINAL FANTASY IX (Original Soundtrack)》：artistName 植松伸夫、**releaseDate 2004-05-10**、copyright「**℗ 2000** SQUARE ENIX MUSIC」、trackCount 110，`entity=song` 攤得出 110 軌、**110 軌全部有 previewUrl**，四片分佈 32／26／26／26。逐軌與 MB 原盤同位置相符（五處只是寫法差異，如第 45 軌 MB「プルメシア王国」／Apple「ブルメシア王国」、第 108／109 軌的引號寫法）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "f": "Apple Music jp collectionId 75003561《FINAL FANTASY IX (Original Soundtrack)》：artistName 植松伸夫、**releaseDate 2004-05-10**、copyright「**℗ 2000** SQUARE ENIX MUSIC」、trackCount 110，`entity=song` 攤得出 110 軌、**110 軌全部有 previewUrl**，四片分佈 32／26／26／26。逐軌與 MB 原盤同位置相符（五處只是寫法差異，如第 45 軌 MB〈プルメシア王国〉／Apple〈ブルメシア王国〉、第 108／109 軌的引號寫法）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
     "src": "https://itunes.apple.com/lookup?id=75003561&country=jp&entity=song&limit=200"
    },
    {
@@ -213,7 +213,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1996。MB first-release-date 1996-07-19、其下 1996-07-19 JP Official（PCCG-00357）。**遊戲發售年與原聲帶發行年**：NINTENDO 64《スーパーマリオ64》日本 **1996-06-23**（ja 維基 Date 欄），原聲盤 **1996-07-19**，**同年、唱片晚 26 天**。北美那兩筆 MB 記 1996 與 1996-11，也在同一年內。",
-  "notes": "**試聽 unavailable 成立。** 依裁定 166 走目錄端點而非搜尋端點，逐一列完近藤浩治**四個** Apple 藝人實體在 **jp／us／gb／de／tw／hk 六個店面**的完整專輯目錄（合計 24 份清單，0 筆 NOQUERY），**沒有本盤**；再以日文與英文盤名各搜一次，回來的 28 筆全是翻奏與單曲。**任天堂的原聲盤整體不在 Apple Music 上**——本組三張近藤卡（Mario 64／時のオカリナ／ムジュラの仮面）全部落在這個結構上，不是比對擋掉的（裁定 152 的分界：這是「目錄裡沒有這張」，不是「搜到了卻配不上」）。**維持 unavailable、不留 URL。**\\n**擋下策展層說法兩處**：(1)「以 NINTENDO64 Sound Series 的第一號品項發行」——查不到來源（MB 只記 catno PCCG-00357，沒有任何欄位說它是系列第一號），**行文不得寫「第一號」**。(2)「近藤浩治從 Famicom 世代跨進 N64 之後的第一張原聲盤」——這句跳過了整個 Super Famicom 世代（他寫過《スーパーマリオワールド》《ゼルダの伝説 神々のトライフォース》），**行文不得寫成「Famicom 直接跳到 N64」**，也不得寫「第一張」。\\n可以寫的：「單片 36 軌」「1996-07-19 Pony Canyon PCCG-00357」「同年 11 月任天堂美國分公司自行發行 CD 與卡帶各一版、無唱片編號」「1997 年德國有一筆 Nintendo of Europe 的 Promotion 盤 94009」——四句都與 MB 相符。\\n**封面不受影響**：策展層實測 CAA release-group 端點 200。\\n池中重複卡：0（策展層實掃 14,424 列，`近藤浩治`／`Koji Kondo` 皆 0；第 9994 列的 `Toshinori Kondo / DJ Krush` 是小號手近藤等則，不同人）。"
+  "notes": "**試聽 unavailable 成立。** 依裁定 166 走目錄端點而非搜尋端點，逐一列完近藤浩治**四個** Apple 藝人實體在 **jp／us／gb／de／tw／hk 六個店面**的完整專輯目錄（合計 24 份清單，0 筆 NOQUERY），**沒有本盤**；再以日文與英文盤名各搜一次，回來的 28 筆全是翻奏與單曲。**任天堂的原聲盤整體不在 Apple Music 上**——本組三張近藤卡（Mario 64／時のオカリナ／ムジュラの仮面）全部落在這個結構上，不是比對擋掉的（裁定 152 的分界：這是「目錄裡沒有這張」，不是「搜到了卻配不上」）。**維持 unavailable、不留 URL。**\\n**擋下策展層說法兩處**：(1)「以 NINTENDO64 Sound Series 的第一號品項發行」——查不到來源（MB 只記 catno PCCG-00357，沒有任何欄位說它是系列第一號），**行文不得寫「第一號」**。(2)「近藤浩治從 Famicom 世代跨進 N64 之後的第一張原聲盤」——這句跳過了整個 Super Famicom 世代（他寫過《スーパーマリオワールド》《ゼルダの伝説 神々のトライフォース》），**行文不得寫成「Famicom 直接跳到 N64」**，也不得寫「第一張」。\\n可以寫的：「單片 36 軌」「1996-07-19 Pony Canyon PCCG-00357」「同年 11 月任天堂美國分公司自行發行 CD 與卡帶各一版、無唱片編號」「1997 年德國有一筆 Nintendo of Europe 的 Promotion 盤 94009」——四句都與 MB 相符。\\n**封面不受影響**：策展層實測 CAA release-group 端點 200。\\n池中重複卡：0（策展層實掃 14424 列，`近藤浩治`／`Koji Kondo` 皆 0；第 9994 列的 `Toshinori Kondo / DJ Krush` 是小號手近藤等則，不同人）。"
  },
  {
   "key": "desc4:近藤浩治|ゼルダの伝説 時のオカリナ オリジナルサウンドトラック",
@@ -233,7 +233,7 @@
     "src": "https://musicbrainz.org/release/6f1fef64-bced-4e0a-bc4b-8091a79178ee"
    },
    {
-    "f": "Apple Music 目錄端點逐一列完近藤浩治四個藝人實體在 jp／us／gb／de／tw／hk 六個店面的完整目錄，**沒有本盤**；以日文（`ゼルダの伝説 時のオカリナ`，jp，15 筆）與英文（`Ocarina of Time Original Soundtrack`，us，15 筆）各搜一次，回來的全是翻奏、鋼琴集與單曲（Moisés Nieto、Super Guitar Bros、Video Game Music Box、Nestalgica…）。唯一的官方相關品項 1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》(Various Artists, 21 軌, hk／jp／tw) 是**別的碟**，不是 PCCG-00475。",
+    "f": "Apple Music 目錄端點逐一列完近藤浩治四個藝人實體在 jp／us／gb／de／tw／hk 六個店面的完整目錄，**沒有本盤**；以日文（`ゼルダの伝説 時のオカリナ`，jp，15 筆）與英文（`Ocarina of Time Original Soundtrack`，us，15 筆）各搜一次，回來的全是翻奏、鋼琴集與單曲（Moisés Nieto、Super Guitar Bros、Video Game Music Box、Nestalgica…）。唯一的官方相關品項 1444734643《ヒーロー・オブ・タイム(ゼルダの伝説 時のオカリナ楽曲集)》（Various Artists／21 軌／hk・jp・tw 三店） 是**別的碟**，不是 PCCG-00475。",
     "src": "https://itunes.apple.com/search?term=%E3%82%BC%E3%83%AB%E3%83%80%E3%81%AE%E4%BC%9D%E8%AA%AC%20%E6%99%82%E3%81%AE%E3%82%AA%E3%82%AB%E3%83%AA%E3%83%8A&entity=album&limit=15&country=jp"
    },
    {
@@ -337,7 +337,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1994。MB first-release-date 1994-08-25、其下 1994-08-25 JP Official（NTT出版 PSCN-5007，41 軌）、Apple 的 ℗ 年份也是 1994（**但 Apple 的 releaseDate 1994-01-01 是佔位日，不是真的發行日——裁定 140 附錄那個形狀，不得引用**）。**遊戲發售年與原聲帶發行年**：Super Famicom《ライブ・ア・ライブ》日本 **1994-09-02**（ja 維基），原聲盤 **1994-08-25**，**同年、唱片早 8 天**。",
-  "notes": "**ready 覆核通過，但配到的是加曲再版，不是原盤。** jp 1696074156 的盤名帶「(再発売)」，43 軌、43 軌皆有 previewUrl，逐軌與 MB **2012 年 SQEX-10308 那一代**同位置相符。**原盤是 41 軌**（1994 NTT出版 PSCN-5007），多出來的是尾端追加的〈Battlissimo〉〈Forgotten Wings 〜忘れられた翼〜〉兩軌——**依裁定 140 是「加曲版」（本張曲目完整排在前面、多出來的在後面、沒有別張碟的曲子），依裁定 77 可以接受**，但下游必須知道：**行文不得寫「這張碟有 43 首」，也不得把那兩軌當原盤曲目**。上架時 manifest 要註明版本差異（c-99 第 5 條的做法）。\\n固定試聽取第 1 軌〈LIVE・A・LIVE〉即原盤開場，**不需人工改指**（曲序沒有錯位，裁定 157 那個形狀不成立）。\\n**盤名要注意**：卡片用的《LIVE A LIVE オリジナル・サウンドトラック》其實是 **2012 年那一代的盤名**；1994 原盤印的是《ライブ・ア・ライブ オリジナル・サウンド・ヴァージョン》（片假名＋「ヴァージョン」）。卡片盤名取的是 MB release-group 的標題，依裁定 6 照收，**但行文提到 1994 年那張實體碟時不得用「サウンドトラック」這個名字**。\\n**策展層說法查證**：「1994 年 8 月 25 日由 NTT出版 以 PSCN-5007 發行，單片 41 軌」「2012 年 5 月 2 日 SQUARE ENIX 以 SQEX-10308 重出並補到 43 軌，2023 年再轉數位（SQEX-10308-1）」——**兩句全部與 MB 相符，可以寫**。「下村陽子離開 Capcom 進入 Square 之後的第一張整部作品原聲」與「Capcom 時期的《ストリートファイターII》她是團隊成員之一」——本輪查不到可點來源，**行文不得寫「第一張」**。\\n池中重複卡：0（策展層實掃 14,424 列，`下村陽子`／`Yoko Shimomura` 皆 0）。"
+  "notes": "**ready 覆核通過，但配到的是加曲再版，不是原盤。** jp 1696074156 的盤名帶「(再発売)」，43 軌、43 軌皆有 previewUrl，逐軌與 MB **2012 年 SQEX-10308 那一代**同位置相符。**原盤是 41 軌**（1994 NTT出版 PSCN-5007），多出來的是尾端追加的〈Battlissimo〉〈Forgotten Wings 〜忘れられた翼〜〉兩軌——**依裁定 140 是「加曲版」（本張曲目完整排在前面、多出來的在後面、沒有別張碟的曲子），依裁定 77 可以接受**，但下游必須知道：**行文不得寫「這張碟有 43 首」，也不得把那兩軌當原盤曲目**。上架時 manifest 要註明版本差異（c-99 第 5 條的做法）。\\n固定試聽取第 1 軌〈LIVE・A・LIVE〉即原盤開場，**不需人工改指**（曲序沒有錯位，裁定 157 那個形狀不成立）。\\n**盤名要注意**：卡片用的《LIVE A LIVE オリジナル・サウンドトラック》其實是 **2012 年那一代的盤名**；1994 原盤印的是《ライブ・ア・ライブ オリジナル・サウンド・ヴァージョン》（片假名＋「ヴァージョン」）。卡片盤名取的是 MB release-group 的標題，依裁定 6 照收，**但行文提到 1994 年那張實體碟時不得用「サウンドトラック」這個名字**。\\n**策展層說法查證**：「1994 年 8 月 25 日由 NTT出版 以 PSCN-5007 發行，單片 41 軌」「2012 年 5 月 2 日 SQUARE ENIX 以 SQEX-10308 重出並補到 43 軌，2023 年再轉數位（SQEX-10308-1）」——**兩句全部與 MB 相符，可以寫**。「下村陽子離開 Capcom 進入 Square 之後的第一張整部作品原聲」與「Capcom 時期的《ストリートファイターII》她是團隊成員之一」——本輪查不到可點來源，**行文不得寫「第一張」**。\\n池中重複卡：0（策展層實掃 14424 列，`下村陽子`／`Yoko Shimomura` 皆 0）。"
  },
  {
   "key": "desc4:下村陽子|聖剣伝説 Legend of Mana オリジナル・サウンドトラック",
@@ -378,5 +378,737 @@
   "status": "full",
   "yearVerified": "一致，1999。MB first-release-date 1999-07-23、其下 1999-07-23 JP Official（DigiCube SSCX-10034）。**Apple jp 251753897 的 releaseDate 2004-10-20 與 ℗ 2004 指向的是 MB 那筆 2004-10-20 的 SQUARE ENIX 重出（SQEX-10036／10037），內容與原盤相同（同樣兩片 23＋32）**，依裁定 77 只當訊號、不改卡單值。**遊戲發售年與原聲帶發行年**：PlayStation《聖剣伝説 LEGEND OF MANA》日本 **1999-07-15**（ja 維基發売日欄），原聲盤 **1999-07-23**，**同年、唱片晚 8 天**。",
   "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 251753897**（55 軌、55 軌皆有 previewUrl、兩片分佈 23／32 與 MB 原盤相同、逐軌逐位置相符）。**只有 jp 店面有**——us／gb／de／tw／hk 五個店面的下村陽子完整目錄裡都沒有這一筆，這是「同一張碟在不同 storefront 的授權不一樣」（裁定 93）的又一例。探測落空的原因是**盤名的括號式改寫**：卡片《聖剣伝説 Legend of Mana オリジナル・サウンドトラック》、Apple《聖剣伝説 Legend of Mana (Original Soundtrack)》，日文尾綴被換成英文括號（裁定 123 那個「原聲帶尾綴」的形狀）。\\n固定試聽取第 1 軌〈Legend of MANA 〜Title Theme〜〉即原盤開場。\\n**⚠ 陷阱要往下游傳**：下村陽子的 Apple 目錄裡另有 **1572609041《聖剣伝説 レジェンド オブ マナ Remastered: The Soundtrack》54 軌**（2021 重製版，六個店面都有）與 **276283611《聖剣伝説 HEROES of MANA》49 軌**——前者盤名只差「Remastered」與片假名／拉丁的寫法、軌數只差一軌，**是本張最像的假陽性**；策展層已在「刻意不釘」列了 Legend of Mana Remastered。**不得取用。**\\n**策展層說法查證**：「DigiCube 編號 SSCX-10034，兩片 23＋32 軌」「2004 年 10 月 20 日 SQUARE ENIX 以 SQEX-10036／10037 重出」——**與 MB 相符，可以寫**。\\n**擋下策展層一處敘述**：「前兩作分別由菊田裕樹（《聖剣伝説2》1993）與伊藤賢治（《ファイナルファンタジー外伝 聖剣伝説》1991）寫，第四作 1999 年⋯交到她手上」——**這個列舉漏掉了《聖剣伝説3》(1995)**，而策展層自己在菊田裕樹那張卡上寫了「菊田在 Square 唯二的整部作品原聲之一（另一張是 1995 年的《聖剣伝説3》）」。**行文若要點系列前作，必須把 1995 年那一作算進去，或者整段不寫。**\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:下村陽子|Kingdom Hearts Original Soundtrack",
+  "artist": "下村陽子",
+  "album": "Kingdom Hearts Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a1273258 的欄位：title「Kingdom Hearts Original Soundtrack」、artist-credit「下村陽子」（實體 b3933fd6）、first-release-date 2002-03-27、primary-type Album、secondary-types [Soundtrack]。**轄下只有 4 個 release**：Official 2、Bootleg 1（台灣 Alion ALCA-8053／8054）、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/a1273258-87eb-4134-b9d7-2603d85388b4"
+   },
+   {
+    "f": "兩筆 Official 全文：2002-03-27 JP，廠牌欄同時掛 **EASTWORLD TOCT-24768／TOCT-24769、Squaresoft、Walt Disney Records**，CD，**兩片 41＋35＝76 軌**；2003-03-11 **XE**（歐洲），EASTWORLD 與 **Virgin** 同編號 7243 5 80453 21，並同樣掛 Squaresoft 與 Walt Disney Records，兩片 41＋35。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a1273258-87eb-4134-b9d7-2603d85388b4&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release cc716887（2002-03-27 JP TOCT-24768／24769）的逐軌曲目：兩片 41＋35 軌，第 1 軌〈Dearly Beloved〉、第 2 軌〈光 (Kingdom Orchestra Instrumental Version)〉、第 3 軌〈光 (PLANITb Remix) (Short Edit)〉、第 4 軌〈Dive into the Heart (Destati)〉、第 5 軌〈Destiny Islands〉；第二片末兩軌〈Having a Wild Time (Previous Version)〉〈Destati〉。",
+    "src": "https://musicbrainz.org/release/cc716887-be12-3d0c-a7ae-34d2c6fa5613"
+   },
+   {
+    "f": "Apple Music 目錄端點逐一列完下村陽子的**三個藝人實體**（251707493、1822514061、6802879944）在 jp／us／gb／de／tw／hk 六個店面的完整專輯目錄，**沒有 2002 年的《Kingdom Hearts Original Soundtrack》**；她名下有的 KINGDOM HEARTS 品項是 1762851712／1762851146／1762850795《Birth by Sleep & 358/2 Days》Vol.1〜3、1762850951《Dream Drop Distance Vol.2》、1267154799《Concert -First Breath- Album》——**全是續作或音樂會盤**。",
+    "src": "https://itunes.apple.com/lookup?id=251707493&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "再以盤名整批搜（`term=KINGDOM HEARTS`，jp 與 us 各 limit=200，兩份都回滿 200 筆），官方原聲盤只有四種：1536667542《III, II.8, Unchained χ & Union χ [Cross]》161 軌、1670071081《KINGDOM HEARTS (HD 1.5 ReMIX)》84 軌、1669111674《HD 2.5 ReMIX》103 軌、1761909964《Birth by Sleep & 358/2 Days》80 軌、1761908516《Dream Drop Distance》52 軌——**全部掛 Various Artists，沒有一筆是 2002 年那套兩片 76 軌的原盤**。",
+    "src": "https://itunes.apple.com/search?term=KINGDOM%20HEARTS&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈キングダム ハーツ〉的 Date 欄與內文都記 PlayStation 2 版**日本 2002 年 3 月 28 日**由スクウェア發售（北美 2002-09-16、歐洲 2002-11-15、澳洲 2002-11-22）。原聲盤 2002-03-27 比遊戲本體**早 1 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0_%E3%83%8F%E3%83%BC%E3%83%84"
+   }
+  ],
+  "hookCandidates": [
+   "唱片背面同時印著 Squaresoft 與 Walt Disney Records 兩個名字",
+   "碟比遊戲早一天上架——3 月 27 日出碟，3 月 28 日出遊戲"
+  ],
+  "sound": "MB release cc716887 記兩片 41＋35＝76 軌（CD，EASTWORLD TOCT-24768／24769）。開場〈Dearly Beloved〉，其後連著兩個〈光〉的改編版（Kingdom Orchestra Instrumental Version 與 PLANITb Remix 的 Short Edit）；第二片以〈Having a Wild Time (Previous Version)〉〈Destati〉收。MB 未填逐軌長度。2003 年歐洲盤（EASTWORLD／Virgin 7243 5 80453 21）是同樣兩片 41＋35。",
+  "keyTracks": [
+   "Dearly Beloved",
+   "Dive into the Heart (Destati)",
+   "Destati"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2002。MB first-release-date 2002-03-27、其下 2002-03-27 JP Official（TOCT-24768／24769）。**遊戲發售年與原聲帶發行年**：PlayStation 2《キングダム ハーツ》日本 **2002-03-28**（ja 維基 Date 欄與內文），原聲盤 **2002-03-27**，**同年、唱片早 1 天**（本組差距最小的一組）。",
+  "notes": "**試聽 unavailable 成立。** 走目錄端點列完下村陽子三個藝人實體 × 六個店面（jp／us／gb／de／tw／hk），再以 `term=KINGDOM HEARTS` 在 jp 與 us 各拉滿 200 筆，**都沒有 2002 年那套兩片 76 軌的原盤**。Apple 上的 KINGDOM HEARTS 官方品項全部是後來的 HD ReMIX 合輯與續作，且**一律掛 Various Artists**（藝人閘必擋，裁定 77 那個「Apple 掛的不是作曲家」的形狀）。**維持 unavailable、不留 URL。**\\n**⚠ 陷阱要往下游傳**：1670071081《KINGDOM HEARTS (HD 1.5 ReMIX) [Original Soundtrack]》84 軌，盤名同時含「KINGDOM HEARTS」與「Original Soundtrack」，**與卡片盤名的重疊度最高**；它收的是 1.5 ReMIX（KH1 Final Mix＋Re:Chain of Memories＋358/2 Days）的重錄與擴充版本，**不是 2002 年原盤**。**不得取用。**\\n**擋下策展層說法一處（與來源相反）**：「這是她第一張走一般唱片零售通路（而不是 Square 自營 DigiCube）的原聲盤」——**假的**。她 1994 年的《LIVE A LIVE》原盤是 **NTT出版 PSCN-5007**，DigiCube 到 1996 年才成立；同批的《聖剣伝説 Legend of Mana》(1999) 才是 DigiCube 那一條。**行文不得寫「第一張走一般零售通路」。**\\n可以寫的：「2002-03-27 EASTWORLD（東芝EMI）TOCT-24768／24769 兩片 41＋35 軌，release 上同時掛 Squaresoft 與 Walt Disney Records」「2003-03-11 EASTWORLD 與 Virgin 在歐洲以 7243 5 80453 21 發行同一套」——**兩句與 MB 相符**。「下村陽子目錄裡流通最廣的一張」是無來源的最高級，**擋下**。\\n**封面不受影響**：策展層實測 CAA release-group 端點 200。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:光田康典|クロノ・トリガー オリジナル・サウンド・ヴァージョン",
+  "artist": "光田康典",
+  "album": "クロノ・トリガー オリジナル・サウンド・ヴァージョン",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9e5bbb98 的欄位：title「クロノ・トリガー オリジナル・サウンド・ヴァージョン」、artist-credit「光田康典」（藝人實體名同為日文「光田康典」，MBID 118bf512，sort-name Mitsuda, Yasunori）、first-release-date 1995-03-25、primary-type Album、secondary-types [Soundtrack]。轄下 7 個 release：Official 3、Bootleg 2（台灣笙美 GAME-078〜080、MIYA MICA-204〜206）、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/9e5bbb98-c915-314a-871a-eab6ed7dc6f5"
+   },
+   {
+    "f": "三筆 Official 全文：1995-03-25 JP，NTT出版 **PSCN-5021／5022／5023**，CD，**三片 23＋24＋17＝64 軌**；2004-10-01 JP，NTT出版 NTCP-5021〜5023，同三片 64 軌；2019-07-10 JP，SQUARE ENIX MUSIC **SQEX-20066**，**Blu-ray**，單片 64 軌，《CHRONO TRIGGER Original Soundtrack Revival Disc》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9e5bbb98-c915-314a-871a-eab6ed7dc6f5&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release d17cc3f8（1995-03-25 JP PSCN-5021〜5023）的逐軌曲目：三片 23＋24＋17 軌，第 1 軌〈予感〉、第 2 軌〈クロノ・トリガー〉、第 3 軌〈朝の日ざし〉、第 4 軌〈やすらぎの日々〉、第 5 軌〈みどりの思い出〉；第三片末兩軌〈エピローグ 〜親しき仲間へ〜〉〈遥かなる時の彼方へ〉。",
+    "src": "https://musicbrainz.org/release/d17cc3f8-4a96-4838-8910-f2d952f691ea"
+   },
+   {
+    "f": "Apple Music 目錄端點列完光田康典的兩個藝人實體（182599998、1885612144）在 jp／us／gb／de／tw／hk 六個店面的完整目錄，**沒有 1995 年的三片原盤**；名下唯一叫 Chrono Trigger 的官方品項是 **324080907《Chrono Trigger (Original Soundtrack) [DS Version]》，78 軌**，六個店面都有——**那是 2008 年 DS 重製版的音源，比原盤多 14 軌**。以 `term=クロノ・トリガー`（jp，50 筆）與 `term=Chrono Trigger Original Sound Version`（us，15 筆）各搜一次，官方品項也只回這一筆。",
+    "src": "https://itunes.apple.com/lookup?id=182599998&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈クロノ・トリガー〉的 Date 欄記 Super Famicom 版**日本 1995 年 3 月 11 日**、北美 1995-08-22 發售；同一 infobox 的 composer 欄列的是**光田康典、植松伸夫、松枝賀子三人**。原聲盤 1995-03-25 比遊戲本體**晚 14 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%83%BB%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC"
+   }
+  ],
+  "hookCandidates": [
+   "三片六十四軌，1995 年出、2019 年整套壓成一張藍光重來一次",
+   "唱片只掛他一個人，遊戲的作曲欄卻是三個名字"
+  ],
+  "sound": "MB release d17cc3f8 記三片 23＋24＋17＝64 軌（CD，NTT出版 PSCN-5021／5022／5023）。第一片自〈予感〉〈クロノ・トリガー〉起，第三片以〈エピローグ 〜親しき仲間へ〜〉〈遥かなる時の彼方へ〉收。MB 未填逐軌長度。2019 年的 SQEX-20066 把同樣 64 軌壓成**單片 Blu-ray**——**分片數不同、軌數相同**。",
+  "keyTracks": [
+   "予感",
+   "クロノ・トリガー",
+   "遥かなる時の彼方へ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。MB first-release-date 1995-03-25、其下 1995-03-25 JP Official（NTT出版 PSCN-5021〜5023）。**遊戲發售年與原聲帶發行年**：Super Famicom《クロノ・トリガー》日本 **1995-03-11**（ja 維基 Date 欄），原聲盤 **1995-03-25**，**同年、唱片晚 14 天**。",
+  "notes": "**試聽 unavailable 成立。** 目錄端點列完光田康典兩個藝人實體 × 六個店面，加日英兩種盤名各一次搜尋，**Apple 上沒有 1995 年的三片原盤**。唯一存在的是 **324080907《Chrono Trigger (Original Soundtrack) [DS Version]》78 軌**（六店皆有）——**那是 DS 重製版音源，比原盤多 14 軌，不得當本卡的固定試聽**（策展層 c-101 rulings 第 9 條已預判，本輪實查確認）。**維持 unavailable、不留 URL。**\\n**⚠ 這一張是裁定 162 的鏡像，要往下游傳**：卡片盤名是日文《クロノ・トリガー オリジナル・サウンド・ヴァージョン》，而 324080907 的 Apple 盤名是英文《Chrono Trigger (Original Soundtrack) [DS Version]》——**兩者零字元重疊**，任何字串比對都配不上；反過來說，一旦有人把 queryAlias 的羅馬拼寫餵進去，**它會第一個命中**。策展層在 `mbNote` 已列 335a2416（1999 DigiCube 重製）與 c19cb7ee（2009 DS 版）兩個對照組。\\n**擋下策展層說法兩處**：(1)「光田康典的第一張整部作品原聲」——查不到序數來源，**不得寫「第一張」**。(2)「他在 Square 從音效工程師轉成作曲家的那一張」——本輪查不到可點來源（ja 維基該條目未載），**不得寫成事實**。\\n**另一處要更正**：MB 與卡片都把本盤掛在光田康典一人名下，但 ja 維基〈クロノ・トリガー〉的 composer 欄是**光田康典／植松伸夫／松枝賀子三人**。**行文不得寫「他一個人寫完」。**\\n可以寫的：「1995-03-25 NTT出版 PSCN-5021〜5023 三片共 64 軌」「2004-10-01 NTT出版 NTCP-5021〜5023 重出」「2019-07-10 SQUARE ENIX MUSIC 以 Blu-ray 音源版 SQEX-20066 收錄全 64 軌」——**三句與 MB 相符**。\\n**封面不受影響**：CAA release-group 端點 200（策展層實測）。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:光田康典|Xenogears Original Soundtrack",
+  "artist": "光田康典",
+  "album": "Xenogears Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3f90f58a 的欄位：title「Xenogears Original Soundtrack」、**artist-credit 是拉丁寫法「Yasunori Mitsuda」，但藝人實體名是日文「光田康典」**（MBID 118bf512，sort-name Mitsuda, Yasunori）、first-release-date 1998-03-01、primary-type Album、secondary-types [Soundtrack]。轄下 13 個 release：Official 6、Bootleg 3（台灣笙美 A&G-033／034、K-O KO-99131／99132、長榮 GM-516／517）、Pseudo-Release 4。",
+    "src": "https://musicbrainz.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d"
+   },
+   {
+    "f": "同一端點的 release 明細：1998-03-01 JP Official 兩筆（DigiCube SSCX-10013 與 SSCX 10013），CD，**兩片 25＋19＝44 軌**；2005-02-23 JP，SQUARE ENIX SQEX-10043／10044，同兩片 44 軌；2018-04-04 JP，SQUARE ENIX MUSIC **SQEX-20048**，Blu-ray 與 Digital Media 各一，**單片 49 軌**，《Xenogears Original Soundtrack Revival Disc –the first and the last–》；2023-02-10 XW，SQUARE ENIX MUSIC，Digital Media，單片 **44 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3f90f58a-37ba-375e-9e76-db6e6a60bd2d&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 647e2f7b（1998-03-01 JP DigiCube SSCX-10013）的逐軌曲目：兩片 25＋19 軌，第 1 軌〈冥き黎明〉、第 2 軌〈STARS OF TEARS (OUT TAKE)〉、第 3 軌〈海と炎の絆〉、第 4 軌〈おらが村は世界一〉；第二片末兩軌〈最先と最後〉〈SMALL TWO OF PIECES ～軋んだ破片～〉。",
+    "src": "https://musicbrainz.org/release/647e2f7b-dfd1-4b4e-beb1-c63721275f2d"
+   },
+   {
+    "f": "Apple Music jp collectionId 296408171《Xenogears Original Soundtrack》：artistName 光田康典、releaseDate 1998-03-01、copyright「℗ 1998 SQUARE ENIX」、trackCount 44，`entity=song` 攤得出 44 軌、**44 軌全部有 previewUrl**，兩片分佈 25／19。**逐軌逐位置與 MB 原盤 44 軌完全相同，零處不符。** de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=296408171&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ゼノギアス〉的 Date 欄記 PlayStation 版**日本 1998 年 2 月 11 日**、北美 1998-10-20 發售。同一條目的「音楽関連」表格第一列即記 **1998 年 3 月 1 日《Xenogears Original Soundtrack》規格品番 SSCX-10013、レーベル デジキューブ**，備考欄寫「ゼノギアスの使用曲＋フィールド曲に歌を付けたオープニングテーマ曲（ゲーム内未使用）を収録した 2 枚組」。原聲盤比遊戲本體**晚 18 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%8E%E3%82%AE%E3%82%A2%E3%82%B9"
+   }
+  ],
+  "hookCandidates": [
+   "第二軌就標著 OUT TAKE——沒被用進遊戲的那一條也收進來了",
+   "日文維基自己的唱片表把它記成「兩片組」，備考欄還註明其中一首在遊戲裡沒用到"
+  ],
+  "sound": "MB release 647e2f7b 記兩片 25＋19＝44 軌（CD，DigiCube SSCX-10013）。第一片自〈冥き黎明〉起，第 2 軌是標了 (OUT TAKE) 的〈STARS OF TEARS〉；第二片以〈最先と最後〉〈SMALL TWO OF PIECES ～軋んだ破片～〉收。MB 未填逐軌長度。2018 年的 Blu-ray Revival Disc（SQEX-20048）是**單片 49 軌**——**多五軌、分片也不同，行文不得引用那一版的數字**。",
+  "keyTracks": [
+   "冥き黎明",
+   "海と炎の絆",
+   "SMALL TWO OF PIECES ～軋んだ破片～"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。MB first-release-date 1998-03-01、其下 1998-03-01 JP Official 兩筆（DigiCube SSCX-10013）、Apple jp 296408171 的 releaseDate 1998-03-01 與 ℗ 1998 完全相同，**另有 ja 維基〈ゼノギアス〉條目的唱片表獨立記 1998 年 3 月 1 日／SSCX-10013／デジキューブ**——四處同年同日。**遊戲發售年與原聲帶發行年**：PlayStation《ゼノギアス》日本 **1998-02-11**（ja 維基 Date 欄），原聲盤 **1998-03-01**，**同年、唱片晚 18 天**。",
+  "notes": "**ready 覆核通過，配對乾淨。** jp 296408171 的 44 軌與 MB 原盤**逐軌逐位置零差異**，44 軌全部有 previewUrl，兩片分佈 25／19 與 MB 相同。固定試聽取第 1 軌〈冥き黎明〉即原盤開場。\\n**掛名要單獨記（c-98 第 1 條、c-99 第 7 條）**：本張的 **MB artist-credit 是拉丁的「Yasunori Mitsuda」**，而藝人實體名是日文「光田康典」；卡片依 c-101 策展層裁定第 3 條取實體名「光田康典」，**Apple jp 顯示的也是「光田康典」，us 店面同一 collectionId 會顯示拉丁寫法**——那是店面在地化，不是身分差異。**池中沒有另一種寫法的重複卡**（策展層實掃 14424 列，`光田康典`／`Yasunori Mitsuda`／`Xenogears` 全部 0）。\\n**策展層說法查證**：「1998-03-01 DigiCube SSCX-10013 兩片 25＋19 軌」「2005-02-23 SQEX-10043／10044 重出」「2018-04-04 Blu-ray 音源版 SQEX-20048（49 軌）」「2023-02-10 轉全球數位」——**四句全部與 MB 相符，可以寫**；ja 維基的唱片表另可獨立佐證第一句。\\n**擋下策展層說法一處**：「光田康典離開 Square 專職編制、改以外部作曲家身分交件的第一張」——本輪查不到可點來源（ja 維基〈ゼノギアス〉條目未載他的僱傭身分），**行文不得寫「第一張」也不得寫「已離職」**。\\n**別碟警示**：Apple 上另有 1877283458《Across the Kosmos - Xenosaga Piano Collection》（2026，鋼琴集）——盤名含 Xeno-，六店皆有；MB 的《Myth: The Xenogears Orchestral Album》《CREID》策展層已列刻意不釘。\\n**Bootleg 三筆全是台灣盤**，依裁定 43／57 不採為背書；本張原盤與 2005／2018／2023 三次再發全部 Official，不需要靠再發舉證。"
+ },
+ {
+  "key": "desc4:光田康典|Chrono Cross Original Soundtrack",
+  "artist": "光田康典",
+  "album": "Chrono Cross Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 93f27892 的欄位：title「Chrono Cross Original Soundtrack」、artist-credit「光田康典」（實體 118bf512）、**first-release-date 1999-12-12**、primary-type Album、secondary-types [Soundtrack]。轄下 10 個 release：Official 4、Bootleg 4、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/93f27892-85b8-3959-bfd3-038990078f5b"
+   },
+   {
+    "f": "同一端點的 release 明細：**日本原盤是 1999-12-18 JP Official，DigiCube SSCX-10040，CD，三片 25＋26＋16＝67 軌**；2005-06-29 JP，SQUARE ENIX SQEX-10047〜10049，同三片 67 軌；2019-09-04 XW Digital 與 2019-09-07 JP Blu-ray（SQUARE ENIX MUSIC SQEX-20068），**單片 67 軌**的 Revival Disc。**release-group 的 first-release-date 1999-12-12 來自一筆台灣 Bootleg（笙美 A&G-128〜130），比日本官方盤早 6 天**——那個日期不是官方發行日。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=93f27892-85b8-3959-bfd3-038990078f5b&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 083be5b8（1999-12-18 JP DigiCube SSCX-10040）的逐軌曲目：三片 25＋26＋16 軌，第 1 軌〈CHRONO CROSS ～時の傷跡～〉、第 2 軌〈死線〉、第 3 軌〈アルニ村 ホーム〉、第 4 軌〈時の草原 ホーム・ワールド〉；第三片末兩軌〈RADICAL DREAMERS〜盗めない宝石〜〉〈夢のかけら〉。",
+    "src": "https://musicbrainz.org/release/083be5b8-b7da-41fa-8578-5a4ac6136c1d"
+   },
+   {
+    "f": "Apple Music **jp** collectionId 1435281114《クロノ・クロス オリジナル・サウンドトラック》：artistName 光田康典、releaseDate 1999-12-18、copyright「℗ 1999 SQUARE ENIX CO., LTD.」、trackCount 67，`entity=song` 攤得出 67 軌、**67 軌全部有 previewUrl**，三片分佈 25／26／16。逐軌與 MB 原盤同位置相符，三處是寫法差異（第 1 軌 MB「時の傷跡」／Apple「時の傷痕」、第 65 軌 Apple 加註 (short ver.)、第 67 軌 Apple 加註 (long ver.)）。**另有一個等價的 collectionId 1478581544 掛拉丁名 Yasunori Mitsuda，在 de／gb／hk／tw／us 五個店面**——同盤名同 67 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1435281114&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈クロノ・クロス〉的 Date 欄記 PlayStation 版**日本 1999 年 11 月 18 日**、北美 2000-08-15 發售。原聲盤 1999-12-18 比遊戲本體**晚 30 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%8E%E3%83%BB%E3%82%AF%E3%83%AD%E3%82%B9"
+   },
+   {
+    "f": "MB 上同一位藝人的《Xenogears Original Soundtrack》(3f90f58a) 轄下有 **13 個 release**、《クロノ・トリガー》(9e5bbb98) 有 **7 個**，本張是 **10 個**。",
+    "src": "https://musicbrainz.org/release-group/3f90f58a-37ba-375e-9e76-db6e6a60bd2d"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌的兩種寫法一直在打架：MB 印〈時の傷跡〉，Apple 印〈時の傷痕〉",
+   "MusicBrainz 給這張碟的首發日是一張台灣翻版的日期，比日本官方盤早六天"
+  ],
+  "sound": "MB release 083be5b8 記三片 25＋26＋16＝67 軌（CD，DigiCube SSCX-10040）。第一片自〈CHRONO CROSS ～時の傷跡～〉〈死線〉起，第三片以〈RADICAL DREAMERS〜盗めない宝石〜〉〈夢のかけら〉收。MB 未填逐軌長度。2019 年的 Revival Disc（SQEX-20068）把同 67 軌壓成單片 Blu-ray——**分片不同、軌數相同**。",
+  "keyTracks": [
+   "CHRONO CROSS ～時の傷跡～",
+   "アルニ村 ホーム",
+   "RADICAL DREAMERS〜盗めない宝石〜"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1999 正確。**但 MB 的 first-release-date 1999-12-12 不可引用**——那個日期來自一筆台灣 Bootleg（笙美 A&G-128〜130），日本官方盤是 **1999-12-18**（DigiCube SSCX-10040），Apple jp 1435281114 的 releaseDate 與 ℗ 也都指 1999-12-18／1999。**行文要寫日期時用 12 月 18 日，不要用 MB 頁面上的 12 月 12 日。** **遊戲發售年與原聲帶發行年**：PlayStation《クロノ・クロス》日本 **1999-11-18**（ja 維基 Date 欄），原聲盤 **1999-12-18**，**同年、唱片晚 30 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1435281114**（67 軌、67 軌皆有 previewUrl、三片分佈 25／26／16 與 MB 原盤相同、逐軌逐位置相符）。**另有一個等價 collectionId 1478581544 在 de／gb／hk／tw／us 五個店面**（同盤名、同 67 軌，只是 artistName 顯示拉丁的 Yasunori Mitsuda）——依 GAME 店面序取 jp 的 1435281114。探測落空的原因是**卡片盤名用英文、Apple 用日文片假名**（《Chrono Cross Original Soundtrack》vs《クロノ・クロス オリジナル・サウンドトラック》）——**與同組其他卡的方向相反**（那幾張是卡片日文、Apple 英文），裁定 49 的兩個方向在同一組裡都出現了。\\n固定試聽取第 1 軌即原盤開場。\\n**擋下策展層說法一處（與來源相反）**：「光田康典目錄裡再發次數最多的一張」——**MB 上本張是 10 個 release，同一位藝人的《Xenogears》有 13 個**。**行文不得寫「再發次數最多」。**\\n**可以寫的**：「1999-12-18 DigiCube SSCX-10040 三片共 67 軌」「2005-06-29 SQUARE ENIX SQEX-10047〜10049 重出」「2019 年 9 月同時出全球數位版與日本 Blu-ray 音源版 SQEX-20068」——與 MB 相符。「2020 年另有《CHRONO CROSS 20th Anniversary Live Tour》現場盤」也查得到（Apple 1518790168，六店皆有，35 軌）。\\n**⚠ 陷阱**：Apple 上另有 1478099098／1478094764《CHRONO CROSS Orchestral Arrangement》(8 軌)、1597101416《Across the Worlds - Chrono Cross Wayô Piano Collection》(17 軌)、1628527662／1629661592《CHRONO CROSS: THE RADICAL DREAMERS EDITION》(8 軌)——**最後那一組的盤名含本張第 66 軌的曲名〈RADICAL DREAMERS〉**，是本張最像的假陽性之一。**不得取用。**\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:崎元仁 / 岩田匡治|FINAL FANTASY TACTICS Original Sound Track",
+  "artist": "崎元仁 / 岩田匡治",
+  "album": "FINAL FANTASY TACTICS Original Sound Track",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 77f7682d 的欄位：title「FINAL FANTASY TACTICS Original Sound Track」、**artist-credit 的順序是「岩田匡治 & 崎元仁」**（兩個獨立藝人實體：岩田匡治 MBID 45300cc2、崎元仁 MBID 53a2cda4）、first-release-date 1997-06-21、primary-type Album、secondary-types [Soundtrack]。轄下 9 個 release：Official 4、Bootleg 3（台灣笙美 A&G-026／027、K-O KO-99021／99022、MIYA MICA-0069／0070）、Pseudo-Release 2。",
+    "src": "https://musicbrainz.org/release-group/77f7682d-f156-39a6-9517-9e275e4e4ffa"
+   },
+   {
+    "f": "同一端點的 release 明細：1997-06-21 JP Official，DigiCube **SSCX-10008**，CD，**兩片 42＋29＝71 軌**；2006-03-24 JP，SQUARE ENIX SQEX-10066／10067，同兩片 71 軌；**2007-05-30 XW Official，SQUARE ENIX，Digital Media，兩片 42＋29，盤名《Final Fantasy Tactics Original Soundtrack》**；另有一筆無日期的 XW Digital 同編號 SQEX-10066／10067。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=77f7682d-f156-39a6-9517-9e275e4e4ffa&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 58639926（1997-06-21 JP DigiCube SSCX-10008）的逐軌曲目：兩片 42＋29 軌，第 1 軌〈Bland Logo~Title Back〉、第 2 軌〈Backborn Story〉、第 3 軌〈P.R. Movie〉、第 4 軌〈ユニット紹介〉；第二片末兩軌〈Epilogue Movie〉〈Staff Credit〉。",
+    "src": "https://musicbrainz.org/release/58639926-8fd0-467a-8da2-4cb9e9452386"
+   },
+   {
+    "f": "Apple Music jp collectionId 255190011《Final Fantasy Tactics (Original Soundtrack)》：**artistName「崎元仁 & 岩田匡治」**、**releaseDate 2007-05-30**、copyright「℗ 2007 SQUARE ENIX MUSIC」、trackCount 71，`entity=song` 攤得出 71 軌、**71 軌全部有 previewUrl**，兩片分佈 42／29。**逐軌逐位置與 MB 原盤 71 軌完全相同，零處不符。** de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=255190011&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジータクティクス〉的 Date 欄記 PlayStation 版**日本 1997 年 6 月 20 日**、北美 1998-01-28 發售。原聲盤 1997-06-21 比遊戲本體**晚 1 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC%E3%82%BF%E3%82%AF%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9"
+   },
+   {
+    "f": "Apple 記的 releaseDate 2007-05-30 與 MB 那筆 **2007-05-30 XW Official Digital Media** 是同一天——這是原盤 1997 年碟的全球數位化日，不是另一個版本（兩者同樣兩片 42＋29 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=77f7682d-f156-39a6-9517-9e275e4e4ffa&fmt=json&inc=media+labels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "遊戲六月二十日上市，唱片隔天就出——中間只隔一天",
+   "第一軌的名字是印錯的：盤面寫 Bland Logo，指的是 Brand Logo"
+  ],
+  "sound": "MB release 58639926 記兩片 42＋29＝71 軌（CD，DigiCube SSCX-10008）。第一片自〈Bland Logo~Title Back〉〈Backborn Story〉起，第二片以〈Epilogue Movie〉〈Staff Credit〉收。MB 未填逐軌長度。2006 年 SQEX-10066／10067 與 2007 年的全球數位版都是同樣兩片 42＋29。",
+  "keyTracks": [
+   "Bland Logo~Title Back",
+   "ユニット紹介",
+   "Staff Credit"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1997 正確，Apple 的 2007 是數位化日不是版本歧義。MB first-release-date 1997-06-21、其下 1997-06-21 JP Official（DigiCube SSCX-10008）。**Apple jp 255190011 的 releaseDate 2007-05-30 精確對上 MB 那筆 2007-05-30 的 XW Official 數位 release**（同樣兩片 42＋29 軌），℗ 年份 2007 同理——依裁定 77，這是訊號不是門檻。**遊戲發售年與原聲帶發行年**：PlayStation《ファイナルファンタジータクティクス》日本 **1997-06-20**（ja 維基 Date 欄），原聲盤 **1997-06-21**，**同年、唱片晚 1 天**。",
+  "notes": "**ready 覆核通過，配對乾淨。** jp 255190011 的 71 軌與 MB 原盤**逐軌逐位置零差異**，71 軌全部有 previewUrl，兩片分佈 42／29 與 MB 相同。固定試聽取第 1 軌〈Bland Logo~Title Back〉即原盤開場。\\n**年份偏差已查清：卡單 1997／Apple 2007 是全球數位化，MB 有對應的 2007-05-30 XW release**（見 yearVerified）。策展層在 `curatorWhy` 就寫了「2007 年 5 月 30 日轉全球數位（Apple 的 releaseDate 即取這一天）」——**這句經實查成立，是本組唯一一處策展層自己把 Apple 年份解釋對了的。**\\n**掛名要單獨記（c-98 第 1 條、c-99 第 7 條）**：**MB 的 artist-credit 順序是「岩田匡治 & 崎元仁」，Apple 是「崎元仁 & 岩田匡治」**，兩邊相反；卡片依 c-101 策展層裁定第 4 條取「崎元仁 / 岩田匡治」，**與 Apple 同序**。這是共同掛名，**兩位都是獨立的 MB 藝人實體**（45300cc2／53a2cda4），不是別名。`fix-rgmbid` 不得以「掛名對不上」換掉這個 MBID（策展層已在 `mbNote` 標明）。**池中沒有另一種寫法的重複卡**（策展層實掃 14424 列，`崎元仁`／`Hitoshi Sakimoto`／`岩田匡治`／`Masaharu Iwata`／`Tactics` 全部 0）。\\n**策展層說法查證**：「1997-06-21 DigiCube SSCX-10008 兩片 42＋29 軌」「2006-03-24 SQEX-10066／10067 重出」「2007-05-30 轉全球數位」——**三句與 MB 相符**。「2025 年 10 月 1 日另有《FINAL FANTASY TACTICS Best Selection - Vinyl Soundtrack》黑膠選輯」**不在本 release-group 內、本輪查不到**，行文不得引用。「崎元仁與岩田匡治從 Quest 帶進 Square 的第一張案子」查不到來源，**不得寫「第一張」**。\\n**Bootleg 三筆全是台灣盤**，依裁定 43／57 不採為背書；四筆 Official 足以支撐。"
+ },
+ {
+  "key": "desc4:崎元仁|VAGRANTSTORY Original Soundtrack",
+  "artist": "崎元仁",
+  "album": "VAGRANTSTORY Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8eabbfc1 的欄位：title「VAGRANTSTORY Original Soundtrack」、artist-credit「崎元仁」（實體 53a2cda4，sort-name Sakimoto, Hitoshi）、first-release-date 2000-03-08、primary-type Album、secondary-types [Soundtrack]。轄下 6 個 release：Official 3、Bootleg 2（台灣長榮 GM-311／312、MIYA MICA-0368／0369）、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/8eabbfc1-a141-3c63-b57a-7cb272fc0160"
+   },
+   {
+    "f": "三筆 Official 全文：2000-03-08 JP，DigiCube **SSCX-10042**，CD，**兩片 26＋31＝57 軌**；2006-03-04 JP，SQUARE ENIX SQEX-10068／10069，同兩片 57 軌，盤名改成片假名《ベイグラントストーリー オリジナル・サウンドトラック》；另一筆 XW Official，SQUARE ENIX，Digital Media，兩片 26＋31，盤名《Vagrant Story Original Soundtrack》（分寫）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8eabbfc1-a141-3c63-b57a-7cb272fc0160&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 92c2fed1（2000-03-08 JP DigiCube SSCX-10042）的逐軌曲目：兩片 26＋31 軌，第 1 軌〈Opening Movie〉、第 2 軌〈バレンディア治安維持騎士団本部~バルドルバ公爵邸内〉、第 3 軌〈グレイランド事件クライマックス〉、第 4 軌〈序文~グレイランド事件に関する調査書〉；第二片末兩軌〈Opening Movie \"Fight Mix\"〉〈Dungeon Robot Mix〉。",
+    "src": "https://musicbrainz.org/release/92c2fed1-02aa-4812-b32b-f664802e5ce2"
+   },
+   {
+    "f": "Apple Music jp collectionId 647861379《Vagrantstory (Original Soundtrack)》：artistName 崎元仁、releaseDate 2000-03-08、copyright「℗ 2000 SQUARE ENIX」、trackCount 57，`entity=song` 攤得出 57 軌、**57 軌全部有 previewUrl**，兩片分佈 26／31。**逐軌逐位置與 MB 原盤 57 軌完全相同，零處不符。**",
+    "src": "https://itunes.apple.com/lookup?id=647861379&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ベイグラントストーリー〉的 Date 欄記 PlayStation 版**日本 2000 年 2 月 10 日**、北美 2000-05-16、歐洲 2000-06-21 發售。原聲盤 2000-03-08 比遊戲本體**晚 27 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%A4%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%88%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC"
+   },
+   {
+    "f": "同一位藝人的《FINAL FANTASY XII Original Soundtrack》（MB 03b9cf7b）的 artist-credit **也是「崎元仁」一個人**，不是共同掛名。",
+    "src": "https://musicbrainz.org/release-group/03b9cf7b-c87a-34b2-9988-7cbaee82b816"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲叫〈Opening Movie〉，第二片的最後一軌是它的〈Fight Mix〉——一頭一尾同一首",
+   "盤名自己拆過一次：2000 年印 VAGRANTSTORY 連寫，2006 年再版變成片假名"
+  ],
+  "sound": "MB release 92c2fed1 記兩片 26＋31＝57 軌（CD，DigiCube SSCX-10042）。第一片自〈Opening Movie〉起，第二片以〈Opening Movie \"Fight Mix\"〉〈Dungeon Robot Mix〉收。MB 未填逐軌長度。2006 年 SQEX-10068／10069 與 XW 數位版都是同樣兩片 26＋31。",
+  "keyTracks": [
+   "Opening Movie",
+   "グレイランド事件クライマックス",
+   "Opening Movie \"Fight Mix\""
+  ],
+  "status": "full",
+  "yearVerified": "一致，2000。MB first-release-date 2000-03-08、其下 2000-03-08 JP Official（DigiCube SSCX-10042）、Apple jp 647861379 的 releaseDate 2000-03-08 與 ℗ 2000 完全相同。**遊戲發售年與原聲帶發行年**：PlayStation《ベイグラントストーリー》日本 **2000-02-10**（ja 維基 Date 欄），原聲盤 **2000-03-08**，**同年、唱片晚 27 天**。",
+  "notes": "**ready 覆核通過，配對乾淨——同時推翻策展層的一項判斷。** jp 647861379 的 57 軌與 MB 原盤**逐軌逐位置零差異**，57 軌全部有 previewUrl，兩片分佈 26／31 與 MB 相同。固定試聽取第 1 軌〈Opening Movie〉即原盤開場。\\n**推翻策展層**：c-101 rulings 第 9 條把《VAGRANTSTORY》列進「兩個店面都沒有可用的官方條目」的 12 張名單裡——**不成立**，jp 647861379 存在、可用、且是原盤。策展層那份 12 張名單裡本張要移除。\\n**擋下策展層說法一處（與同批其他卡相反）**：「崎元仁在 Square 三張主線裡唯一一張單人掛名的」——**假的**。同批的《FINAL FANTASY XII Original Soundtrack》(MB 03b9cf7b) 的 artist-credit **也是崎元仁一個人**。**行文不得寫「唯一一張單人掛名」。**\\n可以寫的：「2000-03-08 DigiCube SSCX-10042 兩片 26＋31 軌」「2006-03-04 SQEX-10068／10069 重出」——與 MB 相符。「其後另有全球數位版（同 barcode 4988601460453）」——MB 確有一筆 XW Digital，**但 barcode 本輪未核，不得引用那串數字**。\\n**盤名變形要記**：同一張碟在 MB 上有三種寫法——《VAGRANTSTORY》（連寫）／《Vagrant Story》（分寫）／《ベイグラントストーリー》（片假名），Apple 用的是第四種《Vagrantstory》（只有首字母大寫）。**四種都要掃**（裁定 49／139）。\\n池中重複卡：0（策展層實掃 14424 列，`崎元仁`／`Hitoshi Sakimoto`／`Vagrant` 全部 0）。"
+ },
+ {
+  "key": "desc4:崎元仁|FINAL FANTASY XII Original Soundtrack",
+  "artist": "崎元仁",
+  "album": "FINAL FANTASY XII Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 03b9cf7b 的欄位：title「FINAL FANTASY XII Original Soundtrack」、artist-credit「崎元仁」一人（實體 53a2cda4）、first-release-date 2006-05-31、primary-type Album、secondary-types [Soundtrack]。轄下 7 個 release：Official 4、Bootleg 2（台灣 K-O KO-99057〜99060、MIYA MICA-0684〜0687）、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/03b9cf7b-c87a-34b2-9988-7cbaee82b816"
+   },
+   {
+    "f": "同一端點的 release 明細，**CD 是 100 軌、數位是 98 軌**：2006-05-31 JP Official 兩筆（《…Limited Edition》與一般版），Aniplex **SVWC-7351／7352／7353／7354** 並掛 SQUARE ENIX，CD，**四片 30＋25＋24＋21＝100 軌**；2012-11-07 JP Official，SQUARE ENIX SQEX-10343〜10346，同四片 100 軌；另有一筆 XW Official，SQUARE ENIX，Digital Media，**單片 98 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=03b9cf7b-c87a-34b2-9988-7cbaee82b816&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "逐軌比對 MB release d00eebce（2006 CD，100 軌）與 014aee03（XW 數位，98 軌）：數位版**恰好少第四片的第 19、20 兩軌**——〈**Kiss Me Good-Bye -featured in FINAL FANTASY XII-**〉與〈**交響詩「希望」Symphonic Poem\"Hope\"〜FINAL FANTASY XII PV ver.〜**〉，其餘 98 軌同名同序。CD 第 1 軌〈ループデモ〉、第 2 軌〈FINAL FANTASY 〜FFXIIバージョン〜〉、第 3 軌〈オープニング・ムービー (FINAL FANTASY XIIのテーマ)〉、第 4 軌〈潜入〉。",
+    "src": "https://musicbrainz.org/release/d00eebce-aec9-4901-988e-1626387469b5"
+   },
+   {
+    "f": "Apple Music jp collectionId 572844917《Final Fantasy XII (Original Soundtrack)》：artistName 崎元仁、**releaseDate 2012-11-07**、copyright「℗ 2012 SQUARE ENIX MUSIC」、trackCount **98**，`entity=song` 攤得出 98 軌、**98 軌全部有 previewUrl**，四片分佈 **30／25／24／19**——**第四片正好比 CD 少那兩軌**。其餘 98 軌逐軌逐位置與 MB 相符。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=572844917&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ファイナルファンタジーXII〉的 Date 欄記 PlayStation 2 版**日本 2006 年 3 月 16 日**、北美 2006-10-31、歐洲 2007-02-23（另有 2007-08-09 的 INTERNATIONAL ZODIAC JOB SYSTEM）。原聲盤 2006-05-31 比遊戲本體**晚 76 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCXII"
+   }
+  ],
+  "hookCandidates": [
+   "四片一百軌，數位版少了兩軌——被拿掉的正是那首主題歌〈Kiss Me Good-Bye〉",
+   "2012 年的重出把同一套四片重新編號成 SQEX-10343〜10346"
+  ],
+  "sound": "MB release d00eebce 記四片 30＋25＋24＋21＝**100 軌**（CD，Aniplex SVWC-7351〜7354）。第一片自〈ループデモ〉〈FINAL FANTASY 〜FFXIIバージョン〜〉起，第四片末兩軌是〈Kiss Me Good-Bye -featured in FINAL FANTASY XII-〉與〈交響詩「希望」〜FINAL FANTASY XII PV ver.〜〉之後的〈FINAL FANTASY XIIのテーマ（制作発表会バージョン）〉。MB 未填逐軌長度。**數位版與 Apple 那筆都是 98 軌（第四片 19 軌），行文一律以 CD 的 100 軌為準。**",
+  "keyTracks": [
+   "ループデモ",
+   "オープニング・ムービー (FINAL FANTASY XIIのテーマ)",
+   "Kiss Me Good-Bye -featured in FINAL FANTASY XII-"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 2006 正確，Apple 的 2012 是重出日不是版本歧義。MB first-release-date 2006-05-31、其下 2006-05-31 JP Official 兩筆（Aniplex SVWC-7351〜7354）。**Apple jp 572844917 的 releaseDate 2012-11-07 精確對上 MB 那筆 2012-11-07 的 SQUARE ENIX 重出（SQEX-10343〜10346）**，℗ 年份 2012 同理——依裁定 77 只當訊號。**遊戲發售年與原聲帶發行年**：PlayStation 2《ファイナルファンタジーXII》日本 **2006-03-16**（ja 維基 Date 欄），原聲盤 **2006-05-31**，**同年、唱片晚 76 天**（本組差距最大的一組）。",
+  "notes": "**ready 覆核通過，但 Apple 那筆缺原盤的兩軌。** jp 572844917 是 98 軌（四片 30／25／24/**19**），**MB 的 CD 原盤是 100 軌（第四片 21 軌）**。逐軌比對確認：Apple／MB 數位版少的正是第四片第 19、20 軌——〈Kiss Me Good-Bye -featured in FINAL FANTASY XII-〉（主題歌）與〈交響詩「希望」〜FINAL FANTASY XII PV ver.〜〉，**其餘 98 軌同名同序**。依 c-97 第 10 條這是「缺一段」不是「換了內容」，**碟是對的、試聽可用**；但 manifest 要註明版本差異，**行文不得寫「這張碟有 98 首」，也不得說主題歌不在原盤上**。固定試聽取第 1 軌〈ループデモ〉即原盤開場。\\n**這一項同時修正卡單**：卡單／探測層記的 `trackCount=98` 是**數位版**的軌數；**原盤 CD 是 100 軌**，而策展層 `curatorWhy` 寫的「共 100 軌」與 `label` 欄寫的「30／25／24／21」**才是對的**。下游若以卡單的 98 當原盤軌數會錯。\\n**擋下策展層說法一處（與來源相反）**：「也是 FF 系列第一次把主線交給植松伸夫以外的人」——**這句站不住**：本盤第四片就收著**植松伸夫寫的主題歌〈Kiss Me Good-Bye〉**（曲名逐字印在 MB 的 CD 曲目表上），植松並沒有從這一作退出。**行文不得寫「第一次交給植松以外的人」。**\\n可以寫的：「2006-05-31 Aniplex SVWC-7351〜7354 四片共 100 軌，release 上同時掛 SQUARE ENIX」「2012-11-07 SQUARE ENIX 以 SQEX-10343〜10346 重出，另有全球數位版」——與 MB 相符。「這張在崎元目錄裡⋯是規模上限」是無來源的最高級，**擋下**。\\n**掛名**：MB 與 Apple 兩邊都掛崎元仁一人，**沒有共同掛名問題**；池中重複卡 0。"
+ },
+ {
+  "key": "desc4:古代祐三|Actraiser",
+  "artist": "古代祐三",
+  "album": "Actraiser",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 88f8721f 的欄位：title「Actraiser」、artist-credit「古代祐三」（藝人實體名同為日文「古代祐三」，MBID a4cda071，sort-name Koshiro, Yūzō）、first-release-date 1991-01-25、primary-type Album、secondary-types [Soundtrack]。**轄下只有 3 個 release**：1991-01-25 JP **Official，Alfa ALCA-105，CD，單片 18 軌**；一筆無日期的 Pseudo-Release（18 軌）；2019-04-08 XW **Bootleg**（[no label]，Digital Media，19 軌，《Actraiser CST》）。",
+    "src": "https://musicbrainz.org/release-group/88f8721f-970c-3b45-b4e5-206e4ae155ea"
+   },
+   {
+    "f": "MB release 87dc853a（1991-01-25 JP Alfa ALCA-105）的逐軌曲目：18 軌單片，**曲名全部用羅馬拼寫大寫**——第 1 軌〈OPENING〉、第 2 軌〈TENKUJO〉、第 3 軌〈KORIN〉、第 4 軌〈FILMOA〉、第 5 軌〈MAJU ARAWARU〉、第 6 軌〈ROUND CLEAR〉…末三軌〈SASAGEMONO〉〈HEIWA NA SEKAI〉〈ENDING〉。",
+    "src": "https://musicbrainz.org/release/87dc853a-3302-43fd-ad50-6a0fc2905731"
+   },
+   {
+    "f": "Apple Music collectionId 276661629《Yuzo Koshiro Best Selection, Vol. 1: Actraiser (Original Soundtrack)》：artistName 古代祐三、**releaseDate 1990-12-16**、copyright「℗ 1990 Yuzo Koshiro」、trackCount **19**，`entity=song` 攤得出 19 軌、**19 軌全部有 previewUrl**。**曲名是日文，與 MB 的羅馬拼寫一一對應且同序**（〈オープニング〉〈天空城〉〈降臨〉〈フィルモア〉〈魔獣現る〉〈ラウンドクリア〉…），**只在第 16 軌插入 MB 沒有的〈レベルアップ〉**，其後〈捧げ物〉〈平和な世界〉〈エンディング〉三軌整體後移一位。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=276661629&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "同一位藝人的 Apple 目錄裡另有 **276664436《Yuzo Koshiro Best Selection, Vol. 3: Actraiser (Original Soundtrack) [Sound Board II Version]》14 軌**，℗1990、六店皆有——那是另一種音源版本，不是 ALCA-105 那張碟。",
+    "src": "https://itunes.apple.com/lookup?id=276664436&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈アクトレイザー〉的 Date 欄記 Super Famicom 版**日本 1990 年 12 月 16 日**、北美 1991-11-01、歐洲 1993-03-18 發售。原聲盤 1991-01-25 比遊戲本體**晚 40 天，而且跨到了下一年**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%83%88%E3%83%AC%E3%82%A4%E3%82%B6%E3%83%BC"
+   }
+  ],
+  "hookCandidates": [
+   "盤面上的曲名全是大寫羅馬拼音：TENKUJO、KORIN、MAJU ARAWARU",
+   "Apple 上那筆的日期標的是遊戲上市日，不是唱片發行日——中間差了四十天，還跨了年"
+  ],
+  "sound": "MB release 87dc853a 記單片 **18 軌**（CD，Alfa ALCA-105），曲名一律大寫羅馬拼寫，自〈OPENING〉起、以〈ENDING〉收。MB 未填逐軌長度。Apple 那筆是同一份曲目的日文曲名版、**19 軌**（第 16 軌多一首〈レベルアップ〉）。**行文以 MB 的 18 軌為準；兩種曲名寫法（羅馬大寫／日文）要並記，不得混用。**",
+  "keyTracks": [
+   "OPENING",
+   "TENKUJO",
+   "ENDING"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1991 正確，**但 Apple 的 1990 是遊戲上市日不是唱片發行日**——這是本組最乾淨的一個「遊戲年 ≠ 原聲帶年」實例。MB first-release-date 1991-01-25、其下唯一的 Official 是 1991-01-25 JP Alfa ALCA-105；Apple 276661629 的 releaseDate 記 **1990-12-16**、℗ 記 1990，而 **1990-12-16 正是 ja 維基〈アクトレイザー〉Date 欄記的 Super Famicom 版日本發售日**。**遊戲 1990-12-16、原聲盤 1991-01-25，相隔 40 天、跨年。行文寫年份一律寫 1991（唱片），寫遊戲時才寫 1990。**",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **276661629《Yuzo Koshiro Best Selection, Vol. 1: Actraiser (Original Soundtrack)》**（19 軌、19 軌皆有 previewUrl、六個店面全部命中）。探測落空的原因是**盤名被整個包進系列名**（裁定 152 的原樣重現）：卡片盤名只有一個字《Actraiser》，Apple 是「藝人名＋Best Selection＋卷號＋盤名＋(Original Soundtrack)」。**策展層的 `queryAlias` 早就寫了「Yuzo Koshiro Best Selection, Vol. 1: Actraiser」**，是探測層沒吃 alias（裁定 76）。\\n**軌數差一軌，已查清**：MB 原盤 18 軌、Apple 19 軌；逐軌對位後確認 Apple 的日文曲名與 MB 的羅馬拼寫**一一對應且同序**，唯一的多出項是第 16 軌〈レベルアップ〉，其後三軌整體後移一位。**不是二合一、不是別張碟**（沒有任何一首屬於其他專輯，裁定 140 的判準）。**兩個數字都不填成定論**：MB 說 18、Apple 說 19，依裁定 141 附錄，`originalTrackCount` 留給人工，**行文不得斷言原盤有幾軌**。\\n固定試聽取第 1 軌〈オープニング〉＝ MB 的〈OPENING〉，即原盤開場。\\n**⚠ 陷阱要往下游傳**：同一位藝人的 **276664436《Yuzo Koshiro Best Selection, Vol. 3: Actraiser … [Sound Board II Version]》14 軌** 盤名只差一個卷號與副標，**裁定 168 那個卷號比對正是為這種形狀加的**——`Vol. 1` 與 `Vol. 3` 必須比到，否則會配錯。**不得取用。**\\n**授權狀態**：本 release-group 唯一的非 Official 是 2019 年 XW 的《Actraiser CST》（[no label]，標 **Bootleg**，19 軌）——**依裁定 43／57／78 不採為背書，且它也是 19 軌，不要與 Apple 那筆混為一談。** 原盤 ALCA-105 的 Official 身分本身成立。\\n**擋下策展層說法兩處**：(1)「古代祐三從 PC-8801 自製音源時期跨進 Super Famicom 的第一張」——查不到序數來源，**不得寫「第一張」**。(2)「古代同期的《The Super Shinobi & Works》(1989)」——本輪查不到來源，**不得引用**。可以寫的是「1991-01-25 Alfa ALCA-105」與「Bare Knuckle 是 G.M.O. ALCA-181，編號相鄰」（兩張的 catno 都由 MB 佐證）。\\n池中重複卡：0（策展層實掃 14424 列，`古代祐三`／`Yuzo Koshiro` 皆 0）。"
+ },
+ {
+  "key": "desc4:古代祐三|Bare Knuckle",
+  "artist": "古代祐三",
+  "album": "Bare Knuckle",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 07b26e0c 的欄位：title「Bare Knuckle」、**artist-credit 是拉丁寫法「Yuzo Koshiro」，藝人實體名是日文「古代祐三」**（MBID a4cda071）、first-release-date 1991-09-21、primary-type Album、secondary-types [Soundtrack]。轄下 11 個 release：Official 7、Bootleg 4。",
+    "src": "https://musicbrainz.org/release-group/07b26e0c-1152-302c-83ca-32a5f33e1111"
+   },
+   {
+    "f": "七筆 Official 的**軌數各不相同**：1991-09-21 JP，**G.M.O. Records ALCA-181，CD，24 軌，《BARE KNUCKLE》**；2015-09 GB，**Data Discs DATA001，12\" Vinyl，16 軌，《Streets of Rage》**（三筆同編號同 16 軌，是不同色膠版本）；2017 XW Digital 與 2017-12-15 FR CD，**Wayô Records WAYO-009，23 軌，《Streets of Rage: Perfect Soundtrack》**；2020-03-09 XW，**Data Discs，Digital Media，17 軌，《Streets of Rage (Remastered)》**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=07b26e0c-1152-302c-83ca-32a5f33e1111&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release a0c5c4c6（1991-09-21 JP G.M.O. ALCA-181）的逐軌曲目：24 軌 ＝ **前 19 軌是遊戲曲**（〈The Street of Rage〉〈Player Select〉〈Fighting in the Street〉〈Attack the Barbarian〉〈Round Clear〉〈Dilapidated Town〉〈Moon Beach〉〈Keep the groovin'〉〈Beatnik on the Ship〉〈Stealthy Steps〉〈Violent Breathing〉〈The Last Soul〉〈Big Boss〉〈My little baby (good ending)〉〈You Became the Bad Guy!〉〈Up & Up〉〈The Super Threc〉〈Name Entry〉〈Game Over〉）**＋後 5 軌是 arranged version**（〈The Street of Rage〉〈Fighting in the Street〉〈The Last Soul〉〈Keep the groovin'〉〈You Became the Bad Guy!〉各一）。",
+    "src": "https://musicbrainz.org/release/a0c5c4c6-c52b-4689-9a44-c8245d116444"
+   },
+   {
+    "f": "Apple Music collectionId **1509127675《Streets of Rage: Perfect Soundtrack》**：artistName 古代祐三、releaseDate 2017-01-01、copyright「℗ 2017 YUZO KOSHIRO / SEGA」、trackCount 22，`entity=song` 攤得出 22 軌、**22 軌全部有 previewUrl**，六個店面全部命中。逐軌比對 MB 的 Wayô 23 軌版：Apple 少了〈S.O.R Super Mix〉，其餘 22 軌同名同序。**它含有原盤 19 首遊戲曲的全部**（含〈Up & Up〉〈The Super Threc〉），另加三首〈Rave Dance In The City〉〈Skyscraper Night〉〈Quiet Insanity〉；**原盤那 5 首 arranged version 一首都不在**。",
+    "src": "https://itunes.apple.com/lookup?id=1509127675&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "另一個候選 **1513110952《Streets of Rage (Official Game Soundtrack)》**：artistName 古代祐三、releaseDate 2020-05-12、copyright「℗ 2020 Data Discs」、17 軌、17 軌皆有 previewUrl、六店皆有。逐軌與 MB 那筆 2020-03-09 Data Discs《Streets of Rage (Remastered)》的 17 軌**同名同序**。**它比原盤少 7 軌**——缺〈Up & Up〉〈The Super Threc〉兩首遊戲曲與全部 5 首 arranged version。",
+    "src": "https://itunes.apple.com/lookup?id=1513110952&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ベア・ナックル〉的 Date 欄記 MEGA DRIVE 版**日本 1991 年 8 月 2 日**、北美 1991-09-18、歐洲 1991 年 10 月發售。原聲盤 1991-09-21 比遊戲本體**晚 50 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%A2%E3%83%BB%E3%83%8A%E3%83%83%E3%82%AF%E3%83%AB"
+   }
+  ],
+  "hookCandidates": [
+   "原盤二十四軌裡有五軌是同一批曲子的 arranged version，排在最後",
+   "倫敦的 Data Discs 拿它當自家目錄第一號 DATA001，做成十六軌的十二吋"
+  ],
+  "sound": "MB release a0c5c4c6 記單片 **24 軌**（CD，G.M.O. Records ALCA-181）：前 19 軌是遊戲曲，自〈The Street of Rage〉起、以〈Game Over〉收；第 20〜24 軌是〈The Street of Rage〉〈Fighting in the Street〉〈The Last Soul〉〈Keep the groovin'〉〈You Became the Bad Guy!〉五首的 arranged version。MB 未填逐軌長度。**後來的三種再發都拿掉了那五軌**：Data Discs 黑膠 16 軌、Wayô《Perfect Soundtrack》23 軌（換成另外三首附加曲）、Data Discs 數位 17 軌。**行文以 24 軌的原盤為準，不得引用再發的軌數。**",
+  "keyTracks": [
+   "The Street of Rage",
+   "Fighting in the Street",
+   "The Last Soul"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。MB first-release-date 1991-09-21、其下 1991-09-21 JP Official（G.M.O. Records ALCA-181）。**遊戲發售年與原聲帶發行年**：MEGA DRIVE《ベア・ナックル 怒りの鉄拳》日本 **1991-08-02**（ja 維基 Date 欄），原聲盤 **1991-09-21**，**同年、唱片晚 50 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready；但要在兩個候選之間做選擇，兩個都不是 24 軌的原盤。** 兩筆都在**同一個 pinned release-group 內、都是 Official、六個店面都有、每軌都有 previewUrl**：\\n• **1509127675《Streets of Rage: Perfect Soundtrack》22 軌**（℗2017 Wayô）——**含原盤 19 首遊戲曲的全部**，另加三首附加曲，缺原盤的 5 首 arranged version。\\n• **1513110952《Streets of Rage (Official Game Soundtrack)》17 軌**（℗2020 Data Discs）——**缺〈Up & Up〉〈The Super Threc〉兩首遊戲曲**，也缺全部 5 首 arranged version。\\n**裁定（依下放判準第 2 條「可逆」，改的是卡單值不是卡池結構）：取 1509127675。** 理由是它保留了原盤全部 19 首遊戲曲，1513110952 少了兩首；兩者的開場曲都是原盤第 1 軌〈The Street of Rage〉，固定試聽取首軌皆正確。**1513110952 列為備選**——策展層的 `queryAlias` 寫的正是它的盤名《Streets of Rage (Official Game Soundtrack)》，下游若改採它需在 manifest 註明少兩首遊戲曲。**兩者都要在 manifest 註明「不是 1991 年 24 軌的原盤」。**\\n探測落空的原因是**盤名整個換掉**：卡片《Bare Knuckle》、Apple 一律作《Streets of Rage》——**兩個字串零重疊**，這是「同一張碟在日美兩地用不同遊戲名」的形狀（裁定 85 的鏡像）。\\n**掛名要單獨記**：本張的 **MB artist-credit 是拉丁的「Yuzo Koshiro」**，藝人實體名是日文「古代祐三」；卡片依 c-101 策展層裁定第 3 條取實體名，**Apple jp 顯示的也是「古代祐三」**。池中重複卡 0。\\n**授權狀態逐筆看（裁定 43／57／78）**：本 RG 的 4 筆 Bootleg 全是無廠牌的數位 rip（《Streets of Rage MegaDrive PAL》《Streets of Rage OSV》、The 16-bit Audiophile Project 兩筆），**不採為背書**；Data Discs 與 Wayô 的 7 筆全部 Official，可以引用。\\n**策展層說法查證**：「1991-09-21 Alfa 的 G.M.O. Records 以 ALCA-181 發行，單片 24 軌」「2015 年 9 月 Data Discs 以自家目錄第一號 DATA001 做成 12 吋黑膠（16 軌）」「2017 年另有法國版、2020 年再有一次全球再發」「北美市場用的遊戲名是 Streets of Rage，Apple 上即以此名上架」——**四句全部與 MB／Apple 相符，可以寫**（DATA001 這個編號本身就是 MB 記的）。**擋下兩處**：「古代祐三名下再發最完整的一張」是無來源的最高級；「這是該廠牌整條日本遊戲音樂復刻線的開端」——編號 001 是事實，「開端」是推論，**行文只能寫編號、不能寫斷語**。\\n**⚠ 陷阱**：Apple 上另有 278528074《Yuzo Koshiro Best Selection, Vol. 6 (Streets of Rage Original Soundtrack) [PC-8801 Sound Version]》19 軌——**盤名同時含「Streets of Rage」與「Original Soundtrack」、軌數又接近**，但那是 PC-8801 音源的另一種錄音，**不在本 release-group 內、不得取用**；1512610919／1514185559／1513084415 的 Streets of Rage 2／3 同理（裁定 168 的卷號比對要能擋住）。"
+ },
+ {
+  "key": "desc4:岡部啓一|NieR Gestalt & Replicant Original Soundtrack",
+  "artist": "岡部啓一",
+  "album": "NieR Gestalt & Replicant Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 344c2084 的欄位：title「NieR Gestalt & Replicant Original Soundtrack」、artist-credit「岡部啓一」（藝人實體名同為日文「岡部啓一」，MBID d82df34a，sort-name Okabe, Keiichi）、first-release-date 2010-04-21、primary-type Album、secondary-types [Soundtrack]。**轄下 7 個 release，Official 5、Pseudo-Release 2，一筆 Bootleg 都沒有。**",
+    "src": "https://musicbrainz.org/release-group/344c2084-ab2e-4984-9304-bbfffff748ae"
+   },
+   {
+    "f": "五筆 Official 全文：2010-04-21 JP，SQUARE ENIX **SQEX-10189／10190**，CD，**兩片 23＋20＝43 軌**；同日另有三筆數位版（JP／無國別／XW），其中兩筆是單片 43 軌、一筆是兩片 23＋20；2017-12-20 JP，SQUARE ENIX MUSIC **SQEX-10612／10613**，**Vinyl，兩片 11＋9＝20 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=344c2084-ab2e-4984-9304-bbfffff748ae&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release a3f763cd（2010-04-21 JP SQEX-10189／10190）的逐軌曲目：兩片 23＋20 軌，第 1 軌〈夏ノ雪〉、第 2 軌〈光ノ風吹ク丘〉、第 3 軌〈不完全ナ石〉、第 4 軌〈青イ鳥〉；第二片末兩軌〈Ashes of Dreams／Aratanaru-JP Version〉〈魔王 - White-note remix〉。",
+    "src": "https://musicbrainz.org/release/a3f763cd-62d6-41c8-9c48-9eea9e2cd131"
+   },
+   {
+    "f": "Apple Music jp collectionId **366643025《NieR Gestalt & Replicant Original Soundtrack》**：**artistName「SQUARE ENIX MUSIC & MONACA」**（artistId 300171518）、releaseDate 2010-04-21、copyright「℗ 2010 SQUARE ENIX MUSIC」、trackCount 43，`entity=song` 攤得出 43 軌、**43 軌全部有 previewUrl**，兩片分佈 23／20。逐軌與 MB 原盤同位置相符（唯一差異是末軌 Apple 加註「※ゲーム内未使用曲 (Bonus…)」）。",
+    "src": "https://itunes.apple.com/lookup?id=366643025&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "以目錄端點列完岡部啓一的三個藝人實體（497316869、1721838162、1856289765）在 jp／us／gb／de／tw／hk 六個店面的完整專輯目錄，**366643025 一筆都沒有出現**——它掛在 artistId **300171518（SQUARE ENIX MUSIC）**底下，不在作曲家的藝人頁上。同一份目錄裡只有 406630982《NieR Gestalt & Replicant 15 Nightmares & Arrange Tracks》(11 軌)。",
+    "src": "https://itunes.apple.com/lookup?id=497316869&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈ニーア ゲシュタルト/レプリカント〉的 Date 欄與內文都記**日本 2010 年 4 月 22 日**由スクウェア・エニックス發售（歐洲 2010-04-23、美國 2010-04-27）。原聲盤 2010-04-21 比遊戲本體**早 1 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%BC%E3%82%A2_%E3%82%B2%E3%82%B7%E3%83%A5%E3%82%BF%E3%83%AB%E3%83%88/%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%83%B3%E3%83%88"
+   }
+  ],
+  "hookCandidates": [
+   "兩片四十三軌，MusicBrainz 上七筆 release 一筆盜版都沒有——本組唯一乾淨的一張",
+   "七年後的黑膠只裝得下二十軌，四十三軌砍掉一半還多"
+  ],
+  "sound": "MB release a3f763cd 記兩片 23＋20＝43 軌（CD，SQUARE ENIX SQEX-10189／10190）。第一片自〈夏ノ雪〉〈光ノ風吹ク丘〉起，第二片以〈Ashes of Dreams／Aratanaru-JP Version〉〈魔王 - White-note remix〉收，末軌是遊戲內未使用曲。MB 未填逐軌長度。2017 年的黑膠（SQEX-10612／10613）只收兩片 11＋9＝20 軌——**選輯規格，行文不得引用**。",
+  "keyTracks": [
+   "夏ノ雪",
+   "光ノ風吹ク丘",
+   "Ashes of Dreams／Aratanaru-JP Version"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2010。MB first-release-date 2010-04-21、其下 2010-04-21 JP Official（SQEX-10189／10190）與同日三筆數位版、Apple jp 366643025 的 releaseDate 2010-04-21 與 ℗ 2010 完全相同。**遊戲發售年與原聲帶發行年**：《ニーア ゲシュタルト／レプリカント》日本 **2010-04-22**（ja 維基），原聲盤 **2010-04-21**，**同年、唱片早 1 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 366643025**（43 軌、43 軌皆有 previewUrl、兩片分佈 23／20 與 MB 原盤相同、逐軌逐位置相符）。\\n**探測落空的原因是掛名，不是盤名**——盤名 Apple 與卡片**一字不差**。這一筆掛在 **artistId 300171518「SQUARE ENIX MUSIC」**底下，**不在岡部啓一任何一個藝人頁的目錄裡**；本輪先走裁定 166 的目錄端點掃了他三個實體 × 六個店面（18 份清單）全部落空，改用盤名搜尋才撈到。**這是裁定 166「目錄端點看得比搜尋端點多」的反例**——本張正好相反：**作曲家的目錄端點看不到，搜尋端點才看得到，因為 Apple 把它掛在發行商實體底下**。這個形狀要往下游傳：**日系遊戲原聲有相當比例掛的是「發行商／音樂團隊」而不是作曲家**（同族：ペルソナ3／5 掛アトラスサウンドチーム、月下の夜想曲掛悪魔城ドラキュラ サウンドチーム）。\\n固定試聽取第 1 軌〈夏ノ雪〉即原盤開場。\\n**⚠ 陷阱要往下游傳**：岡部啓一的 Apple 目錄裡有 **1562265761《NieR Replicant ver.1.22474487139... Original Soundtrack》45 軌**（2021 重製版），盤名含「NieR Replicant」「Original Soundtrack」、軌數只差兩軌，**是本張最像的假陽性**；另有 406630982《…15 Nightmares & Arrange Tracks》11 軌、1489566949《Piano Collections NieR Gestalt & Replicant》11 軌、1502972252《NieR Orchestral Arrangement Album - Addendum》10 軌。**都不得取用。**\\n**策展層說法查證**：「2010 年 4 月 21 日由 SQUARE ENIX 以 SQEX-10189／10190 兩片組發行，23＋20 軌，同日發全球數位版」——**與 MB 完全相符，可以寫**。「岡部啓一與他主持的 MONACA 團隊接下 Square Enix 案子的第一張」——查不到序數來源，**不得寫「第一張」**。\\n**授權狀態**：本 RG 七筆 release **沒有任何 Bootleg 或狀態未填**，是本組唯一一張完全乾淨的（裁定 57 的正面例子）。\\n池中重複卡：0（策展層實掃 14424 列，`岡部啓一`／`Keiichi Okabe`／`MONACA`／`NieR`／`ニーア` 全部 0；`NieR` 的九筆是 Garnier、Vannier 這類子字串誤配）。"
+ },
+ {
+  "key": "desc4:岡部啓一|NieR:Automata Original Soundtrack",
+  "artist": "岡部啓一",
+  "album": "NieR:Automata Original Soundtrack",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 0dd51230 的欄位：title「NieR:Automata Original Soundtrack」、artist-credit「岡部啓一」（實體 d82df34a）、first-release-date 2017-03-29、primary-type Album、secondary-types [Soundtrack]。**轄下 11 個 release，Official 7、Pseudo-Release 4，一筆 Bootleg 都沒有。**",
+    "src": "https://musicbrainz.org/release-group/0dd51230-c886-4422-8385-072d0688ce36"
+   },
+   {
+    "f": "七筆 Official 全文：2017-03-29 同日**四個地區同時出**——JP Digital（SQUARE ENIX MUSIC SQEX-10589，單片 46 軌）、**GB Digital**（單片 46 軌，《NieR:Automata (Original Soundtrack)》）、無國別 Digital（46 軌）、**XW Digital 兩筆**（46 軌），以及 **JP CD，SQUARE ENIX MUSIC SQEX-10589／10590／10591，三片 15＋15＋16＝46 軌**；2017-09-21 JP，SQEX 10610／10611，**12\" Vinyl 兩片 8＋7＝15 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0dd51230-c886-4422-8385-072d0688ce36&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release b56596fe（2017-03-29 JP CD，SQEX-10589〜10591）的逐軌曲目：三片 15＋15＋16 軌，第 1 軌〈意味／無／ジュニーク・ニコール〉、第 2 軌〈遺サレタ場所／斜光〉、第 3 軌〈穏ヤカナ眠リ〉、第 4 軌〈砂塵ノ記憶〉；第三片末兩軌〈Weight of the World／Nouveau‐FR Version〉〈Weight of the World／the End of YoRHa〉。",
+    "src": "https://musicbrainz.org/release/b56596fe-24d3-41a5-87f0-bb91611c2681"
+   },
+   {
+    "f": "Apple Music jp collectionId 1212176108《NieR:Automata Original Soundtrack》：**artistName「SQUARE ENIX MUSIC, MONACA & 岡部啓一」**、releaseDate 2017-03-29、copyright「℗ 2017 SQUARE ENIX MUSIC」、trackCount 46，`entity=song` 攤得出 46 軌、**46 軌全部有 previewUrl**（列成單片，不分三 disc）。逐軌與 MB 的 CD 版同位置相符（唯一差異是末段〈Weight of the World／Nouveau-FR Version〉的連字號字元）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=1212176108&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ニーア オートマタ〉的発売日欄記 PS4 版**日本 2017 年 2 月 23 日**、美國 2017-03-07、歐洲 2017-03-10、港台 2017-04-27。原聲盤 2017-03-29 比遊戲本體**晚 34 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%BC%E3%82%A2_%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%82%BF"
+   },
+   {
+    "f": "同一位藝人的《NieR Gestalt & Replicant Original Soundtrack》（MB 344c2084）在 2010-04-21 也有一筆 **XW Official 數位 release**，與日本 CD 同日。",
+    "src": "https://musicbrainz.org/release-group/344c2084-ab2e-4984-9304-bbfffff748ae"
+   }
+  ],
+  "hookCandidates": [
+   "三片四十六軌，同一天在日本、英國與全球數位一起上架",
+   "九月的黑膠只裝得下十五軌——四十六軌壓成兩片十二吋，三分之二進不去"
+  ],
+  "sound": "MB release b56596fe 記三片 15＋15＋16＝46 軌（CD，SQUARE ENIX MUSIC SQEX-10589／10590／10591）。第一片自〈意味／無／ジュニーク・ニコール〉起，第三片以兩個〈Weight of the World〉版本收。MB 未填逐軌長度。**同日的數位版把同 46 軌壓成單片**，Apple 那筆也是單片列法——**分片數不同、內容相同**；2017-09-21 的黑膠只有 15 軌，行文不得引用。",
+  "keyTracks": [
+   "意味／無／ジュニーク・ニコール",
+   "遺サレタ場所／斜光",
+   "Weight of the World／the End of YoRHa"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2017。MB first-release-date 2017-03-29、其下 2017-03-29 JP CD（SQEX-10589〜10591）與同日 GB／XW／JP 四筆數位、Apple jp 1212176108 的 releaseDate 2017-03-29 與 ℗ 2017 完全相同。**遊戲發售年與原聲帶發行年**：PS4《ニーア オートマタ》日本 **2017-02-23**（ja 維基発売日欄），原聲盤 **2017-03-29**，**同年、唱片晚 34 天**。",
+  "notes": "**ready 覆核通過，配對乾淨。** jp 1212176108 的 46 軌與 MB 的 CD 版逐軌逐位置相符（唯一差異是一個連字號字元），46 軌全部有 previewUrl。**Apple 把它列成單片、MB 的 CD 是三片**——那是同日數位版的分片方式，不是別的內容（MB 該 RG 下同時有單片 46 軌與三片 15／15／16 的兩種 Official）。固定試聽取第 1 軌〈意味／無／ジュニーク・ニコール〉即原盤開場。\\n**掛名要記**：Apple 的 artistName 是「SQUARE ENIX MUSIC, MONACA & 岡部啓一」（三方併列），MB 的 artist-credit 是「岡部啓一」一人。**卡片依 MB 實體取「岡部啓一」，`queryAlias` 已含 MONACA 與三方併列寫法。** 池中重複卡 0。\\n**策展層說法查證**：「2017-03-29 SQUARE ENIX MUSIC 以 SQEX-10589／10590／10591 三片組發行共 46 軌，同日 GB 與 XW 各有一筆數位 release」——**與 MB 完全相符，可以寫**。\\n**擋下策展層說法兩處**：(1)「也是這條線第一次同日在日本、英國與全球數位三邊發行」——**與來源相反**：同一位藝人的《NieR Gestalt & Replicant》(2010-04-21) **同日就有一筆 XW Official 數位版**，並非「第一次」；**行文不得寫「第一次」。** (2)「2017 年 12 月 20 日另出《NieR:Automata / NieR Gestalt & Replicant Original Soundtrack Vinyl Box Set》黑膠盒」——**日期與對象都錯**：MB 上 2017-12-20 是**《NieR Gestalt & Replicant》**的黑膠（SQEX-10612／10613，兩片 11＋9），本作的黑膠是 **2017-09-21 的 SQEX 10610／10611（兩片 8＋7）**。**行文不得沿用那句。**\\n**⚠ 陷阱**：Apple 上另有 1681544979《NieR:Automata Ver1.1a Original Soundtrack》15 軌（動畫版）、1322957247《NieR:Automata Arranged & Unreleased Tracks》20 軌、1434833374《NieR:Automata Orchestral Arrangement Album》10 軌、1371986221《Piano Collections NieR:Automata》12 軌——**Ver1.1a 那筆盤名只多「Ver1.1a」四個字元，是最危險的一個**。都不得取用。\\n**授權狀態**：11 筆 release 沒有任何 Bootleg（裁定 57 的正面例子）。"
+ },
+ {
+  "key": "desc4:目黒将司|「ペルソナ3」オリジナル・サウンドトラック",
+  "artist": "目黒将司",
+  "album": "「ペルソナ3」オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b5bc44a2 的欄位：title「「ペルソナ3」オリジナル・サウンドトラック」、artist-credit「目黒将司」（藝人實體名同為日文「目黒将司」，MBID 1f456d75，sort-name Meguro, Shōji）、first-release-date 2006-07-19、primary-type Album、secondary-types [Soundtrack]。**轄下 7 個 release，Official 5、Pseudo-Release 2，一筆 Bootleg 都沒有。**",
+    "src": "https://musicbrainz.org/release-group/b5bc44a2-0b43-36eb-8ec5-f2642e979e5b"
+   },
+   {
+    "f": "五筆 Official 全文：2006-07-19 JP，**Aniplex SVWC 7380／SVWC 7381**，CD，**兩片 32＋26＝58 軌**；2006-07-19 另有一筆 ATLUS 的 Digital Media，**單片 58 軌**；2007-08-14 US，ATLUS，CD，**18 軌**（《Shin Megami Tensei: Persona 3》，精簡版）；2022-10-01 US，**iam8bit 8BIT-8164，12\" Vinyl 四片 15＋17＋14＋12＝58 軌**；2025-02 無國別，Limited Run Games LRCD-105，CD 兩片 37＋28（《Persona 3 Portable Original Soundtrack》，是另一版本的曲目）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b5bc44a2-0b43-36eb-8ec5-f2642e979e5b&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 94b90443（2006-07-19 JP Aniplex SVWC 7380／7381）的逐軌曲目：兩片 32＋26 軌，第 1 軌〈Burn My Dread〉、第 2 軌〈全ての人の魂の詩〉、第 3 軌〈はじまり〉、第 4 軌〈この不思議な感覚〉；第二片末兩軌〈キミの記憶〉〈Blues in Velvet Room〉。",
+    "src": "https://musicbrainz.org/release/94b90443-b679-4b2b-b2a4-72959c1f633e"
+   },
+   {
+    "f": "Apple Music jp collectionId **1546593202《ペルソナ3 オリジナル・サウンドトラック》**：**artistName「アトラスサウンドチーム, 川村ゆみ, 小宮知子 & Lotus Juice」**（artistId 410494066），releaseDate 2006-07-19、copyright「℗ ATLUS / SEGA All rights reserved.」、trackCount 58，`entity=song` 攤得出 58 軌、**58 軌全部有 previewUrl**（列成單片）。逐軌與 MB 原盤同位置相符（兩處只是連字號字元差異：第 48 軌〈Living With Determination ‐巌戸台分寮アレンジ‐〉、第 54 軌〈Burn My Dread ‐Last Battle‐〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1546593202&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "以目錄端點列完目黒将司的四個 Apple 藝人實體（512415377、576275669、576275665、1566105293）在 jp／us／gb／de／tw／hk 六個店面的完整專輯目錄，**1546593202 一筆都沒有出現**——它掛在 artistId **410494066（アトラスサウンドチーム／ATLUS Sound Team）**底下，不在作曲家的藝人頁上。",
+    "src": "https://itunes.apple.com/lookup?id=576275669&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈ペルソナ3〉的発売日欄記 PlayStation 2 版**日本 2006 年 7 月 13 日**、美國 2007-08-14、歐洲 2008-02-29、澳洲 2008-03-06；フェス版 2007-04-19。原聲盤 2006-07-19 比遊戲本體**晚 6 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A3"
+   }
+  ],
+  "hookCandidates": [
+   "同一套五十八軌，2022 年被 iam8bit 攤成四片十二吋黑膠",
+   "美國 2007 年那一版只放了十八軌，五十八軌砍到剩不到三分之一"
+  ],
+  "sound": "MB release 94b90443 記兩片 32＋26＝58 軌（CD，Aniplex SVWC 7380／7381）。第一片自〈Burn My Dread〉〈全ての人の魂の詩〉起，第二片以〈キミの記憶〉〈Blues in Velvet Room〉收。MB 未填逐軌長度。同日的 ATLUS 數位版把同 58 軌壓成單片；2022 年 iam8bit 的四片黑膠也是 58 軌（15／17／14／12）——**三種載體、同一份曲目**。2007 年美國 CD 只有 18 軌，行文不得引用。",
+  "keyTracks": [
+   "Burn My Dread",
+   "全ての人の魂の詩",
+   "キミの記憶"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2006。MB first-release-date 2006-07-19、其下 2006-07-19 JP Official（Aniplex SVWC 7380／7381）與同日 ATLUS 數位版、Apple jp 1546593202 的 releaseDate 2006-07-19 相同（**Apple 的 copyright 欄沒填年份，只寫「℗ ATLUS / SEGA」**）。**遊戲發售年與原聲帶發行年**：PlayStation 2《ペルソナ3》日本 **2006-07-13**（ja 維基発売日欄），原聲盤 **2006-07-19**，**同年、唱片晚 6 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1546593202**（58 軌、58 軌皆有 previewUrl、逐軌逐位置與 MB 原盤相符）。\\n**探測落空的原因是掛名**：這一筆掛在 **artistId 410494066「アトラスサウンドチーム」**底下，**目黒将司四個藝人實體 × 六個店面（24 份目錄）裡一筆都沒有**；改用盤名搜尋才撈到。**與 NieR Gestalt 同型——日系遊戲原聲常掛「音樂團隊」而不是作曲家**（裁定 77 那個「卡池掛作曲者、Apple 掛演唱者／團隊」的家族）。**卡片盤名帶引號「」而 Apple 沒有**，也是一層變形。\\n固定試聽取第 1 軌〈Burn My Dread〉即原盤開場。\\n**⚠ 陷阱要往下游傳**：同一個 artistId 底下有 **1733426661《ペルソナ3 リロード オリジナル・サウンドトラック》62 軌**（2024 重製版）、**1546587603《ペルソナ3フェス オリジナル・サウンドトラック》17 軌**、1759927341《ペルソナ3 リロード: Episode Aegis》21 軌——**第一筆只多「リロード」三個字元、軌數只差四軌，是最危險的假陽性**。都不得取用。\\n**策展層說法查證**：「2006-07-19 Aniplex SVWC 7380／7381 兩片 32＋26 軌；同日另有 ATLUS 的 58 軌數位版」「2007-08-14 ATLUS 在美國發行 18 軌精簡版」「2022-10-01 iam8bit 以 8BIT-8164 做成四片 12 吋黑膠盒（15／17／14／12 軌）」——**三句全部與 MB 相符，可以寫**。\\n**一處要提醒下游**：MB 把那筆 2006-07-19 的 ATLUS 數位版的 country 記成 **AF（阿富汗）**，明顯是建檔錯誤；**行文不得引用那個國別**。\\n「目黒将司在 Atlus 從《真・女神転生》系列的內部作曲者變成一條獨立產品線的那一張」是敘事判斷、無來源，**不得寫成事實**。\\n**授權狀態**：七筆 release 沒有任何 Bootleg。\\n池中重複卡：0（策展層實掃 14424 列，`目黒将司`／`Shoji Meguro`／`Persona`／`ペルソナ` 全部 0；`Persona` 的九筆是 Television Personalities 這類別碟）。"
+ },
+ {
+  "key": "desc4:目黒将司|『ペルソナ5』オリジナル・サウンドトラック",
+  "artist": "目黒将司",
+  "album": "『ペルソナ5』オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 249e1abc 的欄位：title「『ペルソナ5』オリジナル・サウンドトラック」、artist-credit「目黒将司」（實體 1f456d75）、first-release-date 2017-01-17、primary-type Album、secondary-types [Soundtrack]。**轄下 6 個 release，Official 5、Pseudo-Release 1，一筆 Bootleg 都沒有。**",
+    "src": "https://musicbrainz.org/release-group/249e1abc-3479-4e85-9f23-2bda4d1d0c66"
+   },
+   {
+    "f": "五筆 Official 全文：2017-01-17 JP，**Mastard Records LNCM-1175／1176／1177**，CD，**三片 36＋42＋32＝110 軌**（盤名用直角引號《「ペルソナ5」…》）；同日 JP Digital（ATLUS＋SEGA，三片 36＋42＋32）與無國別 Digital（ATLUS，三片同）；2017-12-01 US，**iam8bit 8BIT-8069，12\" Vinyl 四片 10＋19＋17＋15＝61 軌**；2018-08-15 JP，ATLUS／SEGA A53583，Digital Media，**單片 110 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=249e1abc-3479-4e85-9f23-2bda4d1d0c66&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 9ca00068（2017-01-17 JP Mastard Records LNCM-1175〜1177）的逐軌曲目：三片 36＋42＋32 軌，第 1 軌〈Wake Up, Get Up, Get Out There〉、第 2 軌〈Phantom〉、第 3 軌〈脱出〉、第 4 軌〈Life Will Change〉；第三片末兩軌〈星と僕らと〉〈Wake Up, Get Up, Get Out There -opening movie version-〉。",
+    "src": "https://musicbrainz.org/release/9ca00068-228a-4eb9-8d89-060704b6efe5"
+   },
+   {
+    "f": "Apple Music jp collectionId **1226946448《『ペルソナ5』オリジナル・サウンドトラック》**：**artistName「アトラスサウンドチーム」**（artistId 410494066），releaseDate 2017-01-17、copyright「℗ ATLUS (P)SEGA All rights reserved.」、trackCount 110，`entity=song` 攤得出 110 軌、**110 軌全部有 previewUrl**，三片分佈 36／42／32。**逐軌逐位置與 MB 原盤 110 軌完全相同，零處不符。** us 店面另有等價的 1226945984《Persona 5 (Original Soundtrack)》110 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1226946448&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "以目錄端點列完目黒将司四個 Apple 藝人實體 × 六個店面（24 份目錄），**1226946448 一筆都沒有出現**——它掛在 artistId 410494066（アトラスサウンドチーム）底下。",
+    "src": "https://itunes.apple.com/lookup?id=512415377&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈ペルソナ5〉的発売日欄記 PS3／PS4 版**日本 2016 年 9 月 15 日**、港台 2017-03-23、美歐 2017-04-04。原聲盤 2017-01-17 比遊戲本體**晚 124 天，而且跨到了下一年**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A5"
+   }
+  ],
+  "hookCandidates": [
+   "三片一百一十軌——本組軌數第二多的一份，只輸給 FF IX",
+   "黑膠版只裝得下六十一軌，一百一十軌裝不進四片十二吋"
+  ],
+  "sound": "MB release 9ca00068 記三片 36＋42＋32＝110 軌（CD，Mastard Records LNCM-1175／1176／1177）。第一片自〈Wake Up, Get Up, Get Out There〉起，第三片以〈星と僕らと〉與同一首開場曲的 -opening movie version- 收，頭尾扣在一起。MB 未填逐軌長度。2018 年的 ATLUS／SEGA 數位版把同 110 軌壓成單片；2017 年 iam8bit 的四片黑膠只有 61 軌——**行文不得引用黑膠的軌數**。",
+  "keyTracks": [
+   "Wake Up, Get Up, Get Out There",
+   "Life Will Change",
+   "星と僕らと"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2017。MB first-release-date 2017-01-17、其下 2017-01-17 JP Official（Mastard Records LNCM-1175〜1177）與同日兩筆數位、Apple jp 1226946448 的 releaseDate 2017-01-17 相同（Apple 的 copyright 欄沒填年份）。**遊戲發售年與原聲帶發行年——本組兩個跨年案例之一**：PS3／PS4《ペルソナ5》日本 **2016-09-15**（ja 維基発売日欄），原聲盤 **2017-01-17**，**遊戲 2016 年、唱片 2017 年，隔 124 天跨年**。**行文寫年份一律寫 2017（唱片），提遊戲時才寫 2016。**",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1226946448**（110 軌、110 軌皆有 previewUrl、三片分佈 36／42／32 與 MB 原盤相同、**逐軌逐位置零差異**）。us 店面另有等價的 1226945984《Persona 5 (Original Soundtrack)》110 軌，依 GAME 店面序取 jp。\\n**探測落空的原因與 ペルソナ3 完全同型**：掛在 artistId 410494066「アトラスサウンドチーム」底下，目黒将司四個藝人實體 × 六個店面的目錄裡一筆都沒有；且卡片盤名用**雙角引號『』**、MB 的 CD release 用**直角引號「」**、Apple 用『』——**三種引號在字串比對下互不相等**（裁定 49 的同書寫系統變形）。\\n固定試聽取第 1 軌〈Wake Up, Get Up, Get Out There〉即原盤開場。\\n**⚠ 陷阱要往下游傳**：同一個 artistId 家族底下有 **1608876386《『ペルソナ5 ザ・ロイヤル』オリジナル・サウンドトラック》30 軌**、**1608886170《『ペルソナ5 スクランブル…』》46 軌**、1713694803《Persona 5 Tactica》102 軌——**最後那筆軌數只差 8，且盤名前綴完全相同**。都不得取用。\\n**策展層說法查證**：「2017-01-17 Mastard Records LNCM-1175／1176／1177 三片共 110 軌，同日 ATLUS／SEGA 另發數位版」「同年 12 月 1 日 iam8bit 以 8BIT-8069 在美國做成四片 12 吋黑膠（10／19／17／15 軌）」「2018 年 8 月 15 日日本再出一版」——**三句全部與 MB 相符，可以寫**。「目黒将司名下規模最大的一份」——在本批他的兩張裡成立（110 > 58），**但沒有掃過他的完整目錄，行文不得寫成全目錄的最高級**。\\n**授權狀態**：六筆 release 沒有任何 Bootleg。\\n池中重複卡：0。"
+ },
+ {
+  "key": "desc4:菊田裕樹|聖剣伝説2 Original Sound Version",
+  "artist": "菊田裕樹",
+  "album": "聖剣伝説2 Original Sound Version",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d105ea57 的欄位：title「聖剣伝説2 Original Sound Version」、artist-credit「菊田裕樹」（藝人實體名同為日文「菊田裕樹」，MBID 0b7713fc，sort-name Kikuta, Hiroki）、first-release-date 1993-08-06、primary-type Album、secondary-types [Soundtrack]。轄下 8 個 release：Official 6、Bootleg 1（1994 台灣笙美 GAME-046）、Pseudo-Release 1。",
+    "src": "https://musicbrainz.org/release-group/d105ea57-c0fc-311b-8bab-2639ed18726c"
+   },
+   {
+    "f": "六筆 Official 全文，**軌數全部是 44、一次都沒變過**：1993-08-06 JP，NTT出版 **N25D-019**，CD；1994-12-01 US，Squaresoft **SQ107**，CD，盤名《Secret of Mana》；1998-08-25 JP，Polystar PSCN-5030；2004-10-01 JP，NTT出版 NTCP-5030；2006-11-29 XW 兩筆 Digital Media（SQUARE ENIX，其一編號 SEMO-00030），盤名分別作《Secret of Mana Original Soundtrack》與《聖剣伝説2 Original Soundtrack》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d105ea57-c0fc-311b-8bab-2639ed18726c&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release ba1f60ee（1993-08-06 JP NTT出版 N25D-019）的逐軌曲目：44 軌單片，第 1 軌〈天使の怖れ〉、第 2 軌〈不思議なお話しを〉、第 3 軌〈薔薇と精霊〉、第 4 軌〈いつもいっしょ〉，末兩軌〈最後から二番目の真実〉〈ひとみを閉じて〉。",
+    "src": "https://musicbrainz.org/release/ba1f60ee-e247-39f0-87dc-1cab522841e5"
+   },
+   {
+    "f": "Apple Music collectionId 205700367《Secret of Mana (Original Soundtrack)》：artistName 菊田裕樹、**releaseDate 2006-11-29**、copyright「℗ 2006 SQUARE ENIX MUSIC」、trackCount 44，`entity=song` 攤得出 44 軌、**44 軌全部有 previewUrl**。逐軌與 MB 原盤同位置相符，**唯一差異在第 1 軌：MB 作〈天使の怖れ〉、Apple 作〈天使の恐れ〉**（同音不同字）。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=205700367&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈聖剣伝説2〉的 Date 欄記 Super Famicom 版**日本 1993 年 8 月 6 日**、北美 1993-10-03、PAL 1994-11-24 發售。**原聲盤 1993-08-06 與遊戲本體同一天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%81%96%E5%89%A3%E4%BC%9D%E8%AA%AC2"
+   },
+   {
+    "f": "Apple 記的 releaseDate 2006-11-29 與 MB 那兩筆 **2006-11-29 XW Official Digital Media**（SQUARE ENIX／SEMO-00030）是同一天，內容同樣 44 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d105ea57-c0fc-311b-8bab-2639ed18726c&fmt=json&inc=media+labels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "遊戲與唱片同一天上市——1993 年 8 月 6 日，兩邊一起出",
+   "四十四軌從 1993 到 2006 出過五次，一次都沒加減過曲目"
+  ],
+  "sound": "MB release ba1f60ee 記單片 44 軌（CD，NTT出版 N25D-019），自〈天使の怖れ〉起、以〈最後から二番目の真実〉〈ひとみを閉じて〉收。MB 未填逐軌長度。1994 年美國版 SQ107、1998 年 Polystar、2004 年 NTT出版、2006 年兩筆數位版**全部是同樣 44 軌**——本組唯一一張所有 Official 版本軌數完全一致的碟。",
+  "keyTracks": [
+   "天使の怖れ",
+   "薔薇と精霊",
+   "ひとみを閉じて"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1993。MB first-release-date 1993-08-06、其下 1993-08-06 JP Official（NTT出版 N25D-019）。**Apple 205700367 的 releaseDate 2006-11-29 與 ℗ 2006 對上 MB 那兩筆 2006-11-29 的 XW 數位版**（同 44 軌），依裁定 77 只當訊號、不改卡單值。**遊戲發售年與原聲帶發行年——本組唯一同日的一組**：Super Famicom《聖剣伝説2》日本 **1993-08-06**（ja 維基 Date 欄），原聲盤 **1993-08-06**，**同年同月同日**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **205700367《Secret of Mana (Original Soundtrack)》**（44 軌、44 軌皆有 previewUrl、逐軌逐位置與 MB 原盤相符，六個店面全部命中）。探測落空的原因是**盤名整個換成北美遊戲名**：卡片《聖剣伝説2 Original Sound Version》、Apple《Secret of Mana (Original Soundtrack)》——**零字元重疊**（與同組《Bare Knuckle》→《Streets of Rage》同型）。**策展層的 `queryAlias` 早就寫了「Secret of Mana (Original Soundtrack)」**，是探測層沒吃 alias（裁定 76）。\\n固定試聽取第 1 軌即原盤開場，**但曲名要用原盤的〈天使の怖れ〉，不要用 Apple 的〈天使の恐れ〉**（Apple 那邊是同音誤字；MB 原盤與 1993 年盤面是「怖れ」）。\\n**⚠ 陷阱要往下游傳**：菊田裕樹的 Apple 目錄裡有 **1345280355《聖剣伝説2 SECRET of MANA Original Soundtrack》53 軌**（2018 重製版，六店皆有）——**盤名同時含卡片的「聖剣伝説2」與 Apple 那筆的「SECRET of MANA」，是本張最像的假陽性**，策展層已列刻意不釘。另有 209095425《聖剣伝説3》60 軌、548354190《Secret of Mana Genesis - Arrange Album》16 軌。**都不得取用。**\\n**策展層說法查證**：「1993 年 8 月 6 日由 NTT出版 以 N25D-019 發行，單片 44 軌」「1994 年 12 月 Squaresoft 以 SQ107 在美發行同一套」「1998 年 Polystar（PSCN-5030）與 2004 年 NTT出版（NTCP-5030）各重出一次」「1991 年的《FF外伝 聖剣伝説》由伊藤賢治寫」——**與 MB 相符（最後一句由同批伊藤賢治那張卡的線索支持），可以寫**。「菊田裕樹在 Square 唯二的整部作品原聲之一（另一張是 1995 年的《聖剣伝説3》）」——本輪沒掃他的完整目錄，**行文不得寫「唯二」**；但「另一張是《聖剣伝説3》」本身可由 Apple 209095425 佐證。\\n**授權狀態**：唯一的非 Official 是 1994 年台灣笙美 GAME-046 的 Bootleg，**不採為背書**；六筆 Official 足以支撐。\\n池中重複卡：0（策展層實掃 14424 列，`菊田裕樹`／`Hiroki Kikuta`／`聖剣`／`Secret of Mana` 全部 0）。"
+ },
+ {
+  "key": "desc4:山根ミチル|悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ",
+  "artist": "山根ミチル",
+  "album": "悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group db5c519c 的欄位：title「悪魔城ドラキュラX〜月下の夜想曲〜 オリジナル・ゲーム・サントラ」、artist-credit「山根ミチル」（藝人實體名同為日文「山根ミチル」，MBID 17dbd4b4，sort-name Yamane, Michiru）、**first-release-date 1997-03-20**、primary-type Album、secondary-types [Soundtrack]。**轄下 17 個 release**：Official 8、Bootleg 4、Pseudo-Release 5。",
+    "src": "https://musicbrainz.org/release-group/db5c519c-0ca4-3188-8f39-edf72499e722"
+   },
+   {
+    "f": "八筆 Official 分成兩類。**遊戲碟本身**：1997-03-20 JP，Sony Computer Entertainment SLPM-86023／KONAMI VX010-J1，兩片（CD＋Mixed Mode CD）2＋16 軌；1997-10-02 US SLUS-00067（2 軌）；1997-11-01 XE SLES-00524／KONAMI VX100（2＋16）；1998-03-19 與 2003-11-20 的日本廉價版（各 2 軌）。**獨立原聲盤**：**1997-04-09 JP，KONAMI KICA-7760，CD，單片 34 軌**。另有兩筆無日期的 JP／無國別 Digital，KONAMI，**單片 33 軌**，盤名帶「SELECTION」。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=db5c519c-0ca4-3188-8f39-edf72499e722&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 69b55438（1997-04-09 JP KONAMI KICA-7760）的逐軌曲目：34 軌單片，第 1 軌〈変容 NO.1〉、第 2 軌〈プロローグ〉、第 3 軌〈幻想的舞曲〉、第 4 軌〈月下の夜想曲〉、第 5 軌〈祈り〉…第 33 軌〈変容 NO.3〉、**第 34 軌〈I AM THE WIND〉**（片尾曲）。",
+    "src": "https://musicbrainz.org/release/69b55438-af22-47a5-b775-58f08b9b0d92"
+   },
+   {
+    "f": "MB release dad20d78（JP Official，KONAMI，Digital Media，《悪魔城ドラキュラX 月下の夜想曲 ORIGINAL GAME SOUNDTRACK SELECTION》）是 **33 軌**：與 34 軌原盤**第 1 到第 33 軌逐軌同名同序**，**只少最末的〈I AM THE WIND〉**。",
+    "src": "https://musicbrainz.org/release/dad20d78-3299-4076-a189-80fe5c74211c"
+   },
+   {
+    "f": "Apple Music jp collectionId **1459349587《Akumajo Dracula X Gekka no Nocturne Original Game Soundtrack SELECTION》**：**artistName「悪魔城ドラキュラ サウンドチーム」**（artistId 1459082826），releaseDate 1997-01-01（佔位日）、copyright「℗ 1997 Konami Digital Entertainment」、trackCount 33，`entity=song` 攤得出 33 軌、**33 軌全部有 previewUrl**。逐軌與 MB 那筆 33 軌數位版**完全相同**，也就是原盤的第 1〜33 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1459349587&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈悪魔城ドラキュラX 月下の夜想曲〉的 Date 欄記 PlayStation 版**日本 1997 年 3 月 20 日**、北美 1997-10-02、歐澳 1997 年發售（另有 1998-03-19 與 2003-11-20 兩次廉價版）。獨立原聲盤 1997-04-09 比遊戲本體**晚 20 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%82%AA%E9%AD%94%E5%9F%8E%E3%83%89%E3%83%A9%E3%82%AD%E3%83%A5%E3%83%A9X_%E6%9C%88%E4%B8%8B%E3%81%AE%E5%A4%9C%E6%83%B3%E6%9B%B2"
+   }
+  ],
+  "hookCandidates": [
+   "三十四軌的最後一首是英文歌〈I AM THE WIND〉，數位版就只砍掉那一軌",
+   "MusicBrainz 上這張有十七筆 release，一半是遊戲碟本身、一半是唱片"
+  ],
+  "sound": "MB release 69b55438 記單片 **34 軌**（CD，KONAMI KICA-7760）。自〈変容 NO.1〉〈プロローグ〉起，中段有與盤名同名的〈月下の夜想曲〉（第 4 軌）；第 30／33 軌是〈変容 NO.2〉〈変容 NO.3〉，末軌〈I AM THE WIND〉是唯一的英文演唱曲。MB 未填逐軌長度。**數位版與 Apple 那筆是 33 軌——只少末軌那首歌，其餘同名同序。**",
+  "keyTracks": [
+   "変容 NO.1",
+   "月下の夜想曲",
+   "I AM THE WIND"
+  ],
+  "status": "full",
+  "yearVerified": "卡單 1997 正確，但兩個日期要分清楚。**MB 的 first-release-date 1997-03-20 記的是「隨 PlayStation 版遊戲附的碟」**（SLPM-86023／VX010-J1，兩片 2＋16 軌），**獨立原聲盤 KICA-7760 是 1997-04-09**（34 軌）——**兩筆都在 1997**。Apple 1459349587 的 releaseDate 1997-01-01 是**佔位日**（裁定 140 附錄的形狀），不得引用；其 ℗ 年份 1997 可用。**遊戲發售年與原聲帶發行年**：PlayStation《悪魔城ドラキュラX 月下の夜想曲》日本 **1997-03-20**（ja 維基 Date 欄），獨立原聲盤 **1997-04-09**，**同年、唱片晚 20 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **jp 1459349587**（33 軌、33 軌皆有 previewUrl）。**探測落空的原因是掛名＋盤名雙重變形**：Apple 掛的是 **artistId 1459082826「悪魔城ドラキュラ サウンドチーム」**（不是山根ミチル；她自己的兩個藝人實體 × 六個店面的目錄裡只有 360884095《悪魔城ドラキュラ×山根ミチル Autobiography Music》9 軌），盤名則整個轉成羅馬拼寫《Akumajo Dracula X Gekka no Nocturne Original Game Soundtrack SELECTION》。**這是本組第三個「Apple 掛音樂團隊而不是作曲家」的案例**（前兩個是 NieR Gestalt 與 ペルソナ3／5）。\\n**軌數差一軌，已查清**：原盤 KICA-7760 是 **34 軌**，Apple 與 MB 的數位「SELECTION」版是 **33 軌**——逐軌比對確認**第 1〜33 軌同名同序，只少最末的〈I AM THE WIND〉**（唯一的英文演唱曲，典型的授權剝除）。依 c-97 第 10 條這是「缺一段」不是「換了內容」，**碟是對的、試聽可用**，但 manifest 要註明；**行文不得寫「這張碟有 33 首」，也不得說〈I AM THE WIND〉不在原盤上**。固定試聽取第 1 軌〈変容 NO.1〉即原盤開場。\\n**擋下策展層說法一處（與來源相反）**：「MB 轄下共 17 個 release，**是本批日本組裡再發次數最多的一張**」——**假的**。同批的《SILENT HILL 2 ORIGINAL SOUNDTRACKS》(MB 96467903) 轄下有 **18 個 release**，策展層自己在那張卡上就寫了 18。**行文不得寫「再發次數最多」。**\\n另擋下一處：「山根ミチル在 Konami 內部作曲者裡最被反覆再發的一張」是無來源的最高級。\\n可以寫的：「1997-03-20 先隨 PlayStation 版以 SLPM-86023／VX010-J1 的混合模式碟出現，同年 4 月 9 日 KONAMI 以 KICA-7760 發行 34 軌的獨立原聲盤」「10 月 2 日北美版 SLUS-00067、11 月 1 日歐洲版 SLES-00524／VX100 各一」——**與 MB 相符**。\\n**授權狀態**：17 筆裡 4 筆 Bootleg（台灣長榮 GM-006、MIYA MICA-0208 等）、5 筆 Pseudo-Release，**都不採為背書**；8 筆 Official 足以支撐。\\n池中重複卡：0（策展層實掃 14424 列，`山根ミチル`／`Michiru Yamane`／`Castlevania`／`悪魔城` 全部 0）。"
+ },
+ {
+  "key": "desc2:Akira Yamaoka|SILENT HILL 2 ORIGINAL SOUNDTRACKS",
+  "artist": "Akira Yamaoka",
+  "album": "SILENT HILL 2 ORIGINAL SOUNDTRACKS",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 96467903 的欄位：title「SILENT HILL 2 ORIGINAL SOUNDTRACKS」、**artist-credit 是全大寫的「AKIRA YAMAOKA」，藝人實體名是「Akira Yamaoka」**（MBID 23a32153，sort-name Yamaoka, Akira——**這位是本組唯一一個 MB 實體名用拉丁寫法的作曲家**）、first-release-date 2001-10-03、primary-type Album、secondary-types [Soundtrack]。**轄下 18 個 release：Official 7、Bootleg 11**——盜版比例是本組最高。",
+    "src": "https://musicbrainz.org/release-group/96467903-beb1-36e9-abd8-2b8127a68c84"
+   },
+   {
+    "f": "七筆 Official 全文：2001-10-03 JP，**KONAMI KMCA120**，CD，單片 **30 軌**；2001-10-03 XE，**Konami of Europe KOE-CDS-100**，CD，30 軌，《Silent Hill 2 Original Soundtrack》（**與日本版同一天**）；2007-08-28 US，KONAMI，Digital Media，30 軌；2019-03／2019-03-05／2019-08-15 共四筆 **Mondo MOND-161，12\" Vinyl，兩片 17＋13＝30 軌**，《Silent Hill 2: Original Video Game Soundtrack》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=96467903-beb1-36e9-abd8-2b8127a68c84&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 72ea51fd（2001-10-03 JP KONAMI KMCA120）的逐軌曲目：30 軌單片，第 1 軌〈Theme of Laura〉、第 2 軌〈White Noiz〉、第 3 軌〈Forest〉、第 4 軌〈A World of Madness〉；**第 26 軌〈Black Fairy〉**；末兩軌〈Pianissimo Epilogue〉〈Promise〉。",
+    "src": "https://musicbrainz.org/release/72ea51fd-0d61-48fc-ba16-e1ae178b408d"
+   },
+   {
+    "f": "Apple Music jp collectionId 528515992《SILENT HILL 2(Original Soundtrack)》：**artistName「山岡晃」**（jp 店面的在地化寫法）、releaseDate 2001-10-03、copyright「℗ 2001 Konami Digital Entertainment」、trackCount 30，`entity=song` 攤得出 30 軌、**30 軌全部有 previewUrl**。逐軌與 MB 原盤同位置相符，**唯一差異在第 26 軌：MB 作〈Black Fairy〉、Apple 作〈Blank Fairy〉**。",
+    "src": "https://itunes.apple.com/lookup?id=528515992&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈サイレントヒル2〉的 Date 欄記 PlayStation 2 版**北美 2001 年 9 月 25 日、日本 2001 年 9 月 27 日、歐洲 2001 年 11 月 23 日**發售。原聲盤 2001-10-03 比日本版遊戲**晚 6 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%83%92%E3%83%AB2"
+   },
+   {
+    "f": "同批的《NieR:Automata Original Soundtrack》（MB 0dd51230）在 2017-03-29 **同日就有 JP、GB 與 XW 三邊的 Official release**。",
+    "src": "https://musicbrainz.org/release-group/0dd51230-c886-4422-8385-072d0688ce36"
+   }
+  ],
+  "hookCandidates": [
+   "十八筆 release 裡有十一筆是盜版——本組盜版比例最高的一張",
+   "2019 年 Mondo 把三十軌切成兩片十二吋，17 加 13"
+  ],
+  "sound": "MB release 72ea51fd 記單片 30 軌（CD，KONAMI KMCA120），自〈Theme of Laura〉〈White Noiz〉起、以〈Pianissimo Epilogue〉〈Promise〉收。MB 未填逐軌長度。歐洲同日盤（Konami of Europe KOE-CDS-100）、2007 年美國數位版、2019 年 Mondo 的兩片黑膠**全部是同樣 30 軌**——黑膠只是把同一份曲目切成 17＋13 兩片。",
+  "keyTracks": [
+   "Theme of Laura",
+   "Black Fairy",
+   "Promise"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2001。MB first-release-date 2001-10-03、其下 2001-10-03 JP Official（KONAMI KMCA120）與同日 XE Official（Konami of Europe KOE-CDS-100）、Apple jp 528515992 的 releaseDate 2001-10-03 與 ℗ 2001 完全相同。**遊戲發售年與原聲帶發行年**：PlayStation 2《サイレントヒル2》**北美 2001-09-25、日本 2001-09-27**（ja 維基 Date 欄），原聲盤 **2001-10-03**，**同年、唱片晚 6 天**。",
+  "notes": "**ready 覆核通過。** jp 528515992 的 30 軌與 MB 原盤逐軌逐位置相符，30 軌全部有 previewUrl。固定試聽取第 1 軌〈Theme of Laura〉即原盤開場。\\n**曲名要用原盤的**：第 26 軌 MB 作〈**Black** Fairy〉、Apple 作〈**Blank** Fairy〉——**Apple 那邊是誤植，行文與 keyTracks 一律用〈Black Fairy〉**。\\n**掛名要單獨查（c-98 第 1 條、c-99 第 7 條）**：本張是本組 26 張裡**唯一一張卡片用羅馬拼寫的**，而這是對的——**MB 藝人實體名就是拉丁的「Akira Yamaoka」**（MBID 23a32153），不是日文；該 release-group 的 artist-credit 則是全大寫的「AKIRA YAMAOKA」。**Apple jp 店面顯示的是「山岡晃」**（另有 artistId 163511975 也叫「山岡 晃」、262028864／1894940504／1895051349 三個叫「Akira Yamaoka」的實體）——那是店面在地化與 Apple 的實體分裂，**不是身分差異**。**池中沒有另一種寫法的重複卡**：策展層實掃 seed_cards.json 全 14424 列，`Akira Yamaoka`／`山岡晃`／`Silent Hill` **三種寫法全部 0 命中**，所以卡片用羅馬拼寫不會與池中既有的日文寫法撞成兩個鍵（裁定 6／70／49）。\\n**策展層說法查證**：「2001-10-03 KONAMI 以 KMCA120 在日本、Konami of Europe 以 KOE-CDS-100 在歐洲同日發行，皆 30 軌」「2007-08-28 KONAMI 出美國數位版」「2019 年 3 月 Mondo 以 MOND-161 做成兩片 12 吋黑膠（17＋13 軌）」——**三句全部與 MB 相符，可以寫**。「MB 轄下 18 個 release」也對，但**盜版是 11 筆不是策展層寫的 10 筆**。\\n**擋下策展層說法兩處**：(1)「本批日本組唯一一張日、歐同日發行的原聲」——**與來源相反**：同批的《NieR:Automata》2017-03-29 同日就有 JP 與 **GB**（以及 XW）三邊的 Official release。**行文不得寫「唯一」。** (2)「山岡晃目錄裡流通最廣的一張」是無來源的最高級。\\n「那是這條線第一次進到專做電影／遊戲黑膠的美國考古廠牌」——Mondo MOND-161 這筆是事實，**但「第一次」查不到來源，行文只能寫廠牌與編號**。\\n**授權狀態（裁定 43／57／78）**：11 筆 Bootleg 裡有台灣盤三筆（長榮 GM-493、笙美 SMG-031、K-O KO-99142）與無廠牌的數位 rip 八筆（《Complete Soundtrack》《Complete》《Aethryix》《Ultimate Edition》《Unused Tracks》《Born From a Wish》系列）——**全部不採為背書，行文不得引用其中任何一筆的軌數**（那幾筆有 10／11／14／60／61／92 軌等各種數字）。7 筆 Official 足以支撐。"
+ },
+ {
+  "key": "desc4:伊藤賢治 / 植松伸夫|Romancing Sa・Ga Original Sound Version",
+  "artist": "伊藤賢治 / 植松伸夫",
+  "album": "Romancing Sa・Ga Original Sound Version",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group d6d163f6 的欄位：title「Romancing Sa・Ga Original Sound Version」、**artist-credit 是兩人並列「伊藤賢治 & 植松伸夫」**（兩個獨立藝人實體：伊藤賢治 MBID 38b566b6、植松伸夫 MBID 92bb085a）、first-release-date 1992-02-21、primary-type Album、secondary-types [Soundtrack]。**轄下 6 個 release，全部 Official——一筆 Bootleg、一筆 Pseudo-Release 都沒有，是本組建檔最乾淨的一張。**",
+    "src": "https://musicbrainz.org/release-group/d6d163f6-e0ab-3721-9404-4eb8d80271d6"
+   },
+   {
+    "f": "六筆 Official 全文：1992-02-21 JP，**SQUARE BRAND N25D-009**，CD，單片 **38 軌**（盤名用半形中點《Romancing Sa･Ga Original Sound Version》）；1995-11-25 JP，Polystar PSCN-5036，38 軌，盤名作《ロマンシング サ・ガ Original Sound Version》；2004-09-01 JP，NTT出版 NTCP-5036，38 軌；2006-07-26 XW，SQUARE ENIX **SEMO-00023**，Digital Media，38 軌，《Romancing Sa・Ga Original Soundtrack》；2014-06-18 JP，SQUARE ENIX MUSIC SQEX-10435，38 軌，《…-REMASTER-》；2019-10-09 JP，SQUARE ENIX MUSIC SQEX-20070，**Blu-ray，39 軌**，《Romancing SaGa Original Soundtrack Revival Disc》。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d6d163f6-e0ab-3721-9404-4eb8d80271d6&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release b2e7b0dd（1992-02-21 JP SQUARE BRAND N25D-009）的逐軌曲目：38 軌單片，**曲名一律「日文：羅馬拼寫…副標」的並列寫法**——第 1 軌〈オーバーチュア～オープニングタイトル: Opening-Overture…Dawn of the Romance〉、第 2 軌〈アルベルト: Theme of Albert…The Young Nobleman〉、第 3 軌〈シフ: Theme of Sif…Warrior of the Iced Land〉、第 4 軌〈クローディア: Theme of Claudia…Song of the Nature〉；末兩軌〈孤独のテーマ2: Night of the Shooting Star〉〈エスタミル: Walking Down the Street〉。",
+    "src": "https://musicbrainz.org/release/b2e7b0dd-14c4-46b0-9200-b1dd5e2b7377"
+   },
+   {
+    "f": "Apple Music collectionId 166889681《Romancing Sa-Ga (Original Soundtrack)》：**artistName 只有「伊藤賢治」一人**、**releaseDate 2006-07-26**、copyright「℗ 2006 SQUARE ENIX MUSIC」、trackCount 38，`entity=song` 攤得出 38 軌、**38 軌全部有 previewUrl**。**曲名只保留日文前半**（〈オーバーチュア~オープニングタイトル〉〈アルベルト〉〈シフ〉〈クローディア〉…），與 MB 的並列寫法逐軌對應且同序。de／gb／hk／jp／tw／us 六個店面同一 collectionId 全部命中。",
+    "src": "https://itunes.apple.com/lookup?id=166889681&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈ロマンシング サ・ガ〉的 Date 欄記 Super Famicom 版**日本 1992 年 1 月 28 日**發售，同一 infobox 的 composer 欄記**伊藤賢治**。原聲盤 1992-02-21 比遊戲本體**晚 24 天**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0_%E3%82%B5%E3%83%BB%E3%82%AC"
+   },
+   {
+    "f": "Apple 記的 releaseDate 2006-07-26 與 MB 那筆 **2006-07-26 XW Official Digital Media（SQUARE ENIX SEMO-00023）**是同一天，內容同樣 38 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d6d163f6-e0ab-3721-9404-4eb8d80271d6&fmt=json&inc=media+labels&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "盤面上每首曲名都印兩遍：先日文，再一段英文副標——〈アルベルト: Theme of Albert…The Young Nobleman〉",
+   "六筆 release 全部是正版，本組唯一一張連一筆盜版都沒有的碟"
+  ],
+  "sound": "MB release b2e7b0dd 記單片 38 軌（CD，SQUARE BRAND N25D-009）。曲名採「日文：羅馬拼寫…副標」的三段式並列，自〈オーバーチュア～オープニングタイトル: Opening-Overture…Dawn of the Romance〉起、以〈エスタミル: Walking Down the Street〉收。MB 未填逐軌長度。1995／2004／2006／2014 四次再發都是同樣 38 軌；2019 年的 Blu-ray Revival Disc（SQEX-20070）是 **39 軌**，多一軌，**行文不得引用那個數字**。",
+  "keyTracks": [
+   "オーバーチュア～オープニングタイトル: Opening-Overture…Dawn of the Romance",
+   "アルベルト: Theme of Albert…The Young Nobleman",
+   "エスタミル: Walking Down the Street"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。MB first-release-date 1992-02-21、其下 1992-02-21 JP Official（SQUARE BRAND N25D-009）。**Apple 166889681 的 releaseDate 2006-07-26 與 ℗ 2006 精確對上 MB 那筆 2006-07-26 的 XW 數位版（SEMO-00023）**，同樣 38 軌，依裁定 77 只當訊號。**遊戲發售年與原聲帶發行年**：Super Famicom《ロマンシング サ・ガ》日本 **1992-01-28**（ja 維基 Date 欄），原聲盤 **1992-02-21**，**同年、唱片晚 24 天**。",
+  "notes": "**試聽推翻：探測層記 unavailable，實為 ready。** 正解 **166889681《Romancing Sa-Ga (Original Soundtrack)》**（38 軌、38 軌皆有 previewUrl、逐軌與 MB 原盤同序，六個店面全部命中）。探測落空的原因是**中點字元**：卡片盤名用**全形中點「・」**（Sa・Ga）、Apple 用 **ASCII 連字號「-」**（Sa-Ga）、MB 的 release 又用**半形中點「･」**（Sa･Ga）——**三種字元在任何正規化下都不相等**（裁定 49 在同一書寫系統內的變形，與 c-99 的 U-Roy U+2010 同型）。加上尾綴 Sound **Version** 對 Original **Soundtrack** 的差異，兩層疊在一起。\\n固定試聽取第 1 軌即原盤開場。\\n**掛名要單獨查（c-98 第 1 條、c-99 第 7 條）**：**MB 的 artist-credit 是「伊藤賢治 & 植松伸夫」兩人並列**（兩個獨立實體 38b566b6／92bb085a），卡片依裁定 16 寫成「伊藤賢治 / 植松伸夫」，順序與 MB 相同；**但 Apple 的 artistName 只掛「伊藤賢治」一人**，ja 維基〈ロマンシング サ・ガ〉的 composer 欄也只記伊藤賢治。**三邊不一致，卡片取 MB 的兩人並列**。下游要注意：**任何用 artistName 比對 Apple 的閘都會把「伊藤賢治 / 植松伸夫」判成不符**（`artistOk` 的雙向子字串比對在這裡剛好過得了，因為卡片字串包含 Apple 字串——但方向是反的，不能倚賴）。池中重複卡 0（策展層實掃 14424 列，`伊藤賢治`／`Kenji Ito`／`Romancing` 全部 0）。\\n**曲名寫法要往下游傳**：MB 記的是「日文: 羅馬拼寫…英文副標」的三段式全名，Apple **只留日文前半**。`keyTracks` 依裁定 6 取 MB 的原盤全名；**行文若要點曲名，用日文前半即可，不必背整串副標**。\\n**策展層說法查證**：「1992-02-21 SQUARE BRAND N25D-009 單片 38 軌，artist-credit 是兩人並列」「1995 年 Polystar（PSCN-5036）、2004 年 NTT出版（NTCP-5036）各重出一次」「2006-07-26 SQUARE ENIX 以 SEMO-00023 轉全球數位」——**四句全部與 MB 相符，可以寫**。**擋下兩處**：「伊藤賢治第一次以主作曲者身分掛名的一張」與「SaGa 這條線從植松伸夫手上交出去的那一刻」——本輪查不到可點來源（ja 維基該條目未載系列前作的作曲者），**不得寫序數，也不得寫「交棒」**；「伊藤此後三十年幾乎只寫 SaGa 與聖剣伝説兩條線」同樣無來源，**擋下**（實查他的 Apple 目錄裡另有カルドセプトサーガ等作）。\\n**授權狀態**：六筆 release **全部 Official**，是本組唯一完全沒有 Bootleg 也沒有 Pseudo-Release 的一張（裁定 57 的最強正面例子）。"
  }
 ]
