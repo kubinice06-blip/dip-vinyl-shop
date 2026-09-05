@@ -262,5 +262,129 @@
   "status": "full",
   "yearVerified": "一致，2004。MB release-group first-release-date 2004-03-03，其下 2004-03-03 JP Official Victor VICL-61294 為原盤，Apple jp 911385018 的 releaseDate 與 ℗ 年份也都是 2004，三處同年同日，卡單年份 2004 相符。**作品年與原聲帶發行年要分開寫**：電影《イノセンス》**2004-03-06** 上映（ja 維基），原聲盤 **2004-03-03** 早 3 天——**同年，唱片在前**（c-101 第 12 條那個反直覺形狀，本組又一例）。2005 年的法國 beez 版與美國 Bandai 版、2014 年的高解析數位版都是後來的再發。",
   "notes": "**ready 卡覆核通過，配對正確。** jp 911385018 的 12 軌與 MB 原盤 release f3164ab6 逐軌逐位置相符（曲長逐軌對得上）、12 軌全部有 previewUrl、℗ 年份對上 2004 年的 Victor。**店面覆核**：這個 id **只有 jp 命中**，us／gb／tw／hk／de 五店回 0 筆——下游要落地固定試聽只能走 jp。\\n**盤名跨語言三種寫法**：日本原盤《INNOCENCE O.S.T.》、2014 年高解析版改日文《イノセンス O.S.T.》、**2005 年美國 Bandai Entertainment 版整個換成《Ghost in the Shell 2: Innocence》**（歐美版作品名取代原盤名，c-101 第 7 條 Streets of Rage／Secret of Mana 那個形狀），Apple jp 又用第四種《Innocence Original Soundtrack》。**去重四種都要掃。**\\n**別碟警示**：策展層已明寫刻意不釘 815898d6《攻殻機動隊/オリジナル・サウンドトラック》（1995 前作，**池中已有**）、29728a77《攻殻機動隊2.0 ORIGINAL SOUNDTRACK》（Remix）、1f7118f3《PROJECT2501…》、eef47478《攻殻機動隊 superb music》（精選）。另外池中已有 David Axelrod《Song of Innocence》與 Bobb Trimble《Iron Curtain Innocence》兩張含 Innocence 的卡，**都不是本張**。\\n**掛名**：MB 藝人實體名是日文「川井憲次」，Apple jp／tw／hk 也顯示日文，us／gb／de 店面顯示 Kenji Kawai——那是店面在地化，不是身分（c-101 第 3 條）。"
+ },
+ {
+  "key": "desc4:羽田健太郎|The S.D.F. Macross",
+  "artist": "羽田健太郎",
+  "album": "The S.D.F. Macross",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 8bb051c2 的欄位：title「The S.D.F. Macross」、artist-credit「羽田健太郎」（藝人 MBID 307511e5）、first-release-date 1982-12-16、primary-type Album、secondary-types [Soundtrack]、轄下**只有 3 個 release，三筆都是 JP／Official、都是 20 軌**：1982-12-16 Victor JBX-25008 **12\" Vinyl**、1995-05-03 Victor VICL-23101 CD、2014-11-26 VEAHD-10405 Digital Media（96.0kHz/24bit，**標題改成日文《「超時空要塞マクロス」マクロス》**）。**沒有 Bootleg 或 Pseudo-Release。**",
+    "src": "https://musicbrainz.org/release-group/8bb051c2-8877-4c75-92bd-da6dca921197"
+   },
+   {
+    "f": "MB release 4a49e15e（1982-12-16 JP Victor JBX-25008，12\" Vinyl）的逐軌曲目：20 軌，**十四軌的標題後面直接掛著劇中的 BGM 編號**（〈運命(さだめ)の矢 (BGM No.17)〉、〈涙のバイオリン (BGM No.2～4)〉、〈待ち伏せ (BGM No.24,32)〉、〈幼年期の終り (ナレーション・テーマ BGM No.34)〉、〈アクション (BGM No.67)〉、〈旅立ち (BGM No.1)〉…）；第 1 軌〈マクロス〉190 秒、第 10 軌〈愛は流れる〉245 秒、末軌〈ランナー〉247 秒是全碟最長，最短的第 9 軌〈進宙式(しんちゅうしき) (BGM No.7)〉只有 43 秒。",
+    "src": "https://musicbrainz.org/release/4a49e15e-bcb9-413a-9c8a-078103ddf7a3"
+   },
+   {
+    "f": "Apple Music jp collectionId 469318130《MBS・TBS系「超時空要塞マクロス」 マクロス》：**artistName 記成「飯島真理 & 藤原誠」**（兩位主題曲演唱者），releaseDate 2008-04-23、copyright「℗ \"Victor Entertainment, Inc.\"」、trackCount 20，`entity=song` **攤得出 20 軌、20 軌全部有 previewUrl**，二十軌的曲名與曲長與 MB 原盤 4a49e15e 逐位置相符（Apple 拿掉了 BGM 編號、第 11 軌寫成〈超時空要塞マクロス「ドッグ・ファイター」〉、第 17 軌寫成〈O-G LOVE〉，逐軌長度差 0 至 3 秒）。**這個 id 只在 jp 命中**，us／gb／tw／hk／de 五個店面回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=469318130&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "羽田健太郎的 Apple 藝人頁 artistId 296873055 在 jp 店面的目錄裡**沒有任何 Macross 條目**——探測層與策展層的「藝人頁 0 筆命中」屬實；能找到 469318130 是靠 `search` 端點，因為 Apple 把這張碟掛在演唱者名下而不是作曲者名下。",
+    "src": "https://itunes.apple.com/lookup?id=296873055&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "日文維基〈超時空要塞マクロス〉導言：スタジオぬえ原作、タツノコプロ・アニメフレンド 製作的日本電視動畫，**1982 年 10 月 3 日至 1983 年 6 月 26 日**由每日放送（MBS）製作、TBS 系列播出，**全 36 話**；是「超時空系列」與「マクロス系列」的第一作。本碟 1982-12-16 發行時，TV 版還在播（開播後 74 天、距完結尚有半年）。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%B6%85%E6%99%82%E7%A9%BA%E8%A6%81%E5%A1%9E%E3%83%9E%E3%82%AF%E3%83%AD%E3%82%B9"
+   }
+  ],
+  "hookCandidates": [
+   "二十軌裡有十四軌的標題後面掛著劇中編號：BGM No.1、No.7、No.24,32、No.67",
+   "碟上架時片子還在播——1982 年 12 月 16 日發行，TV 版要到隔年 6 月才播完"
+  ],
+  "sound": "MB release 4a49e15e（Victor JBX-25008）記 12 吋黑膠 20 軌，MB 未填總長。逐軌長度落差極大：最短〈進宙式 (BGM No.7)〉43 秒、最長〈ランナー〉247 秒，二十軌裡有六軌不到 70 秒。曲序把帶唱的曲子（〈マクロス〉〈小白竜〉〈愛は流れる〉〈シルバームーン・レッドムーン〉〈0-G Love〉〈ランナー〉）與短小的劇伴交錯排列，**十四軌的標題直接把劇中的 BGM 編號印在括號裡**。1995 年的 CD 與 2014 年的高解析數位版軌數同為 20。",
+  "keyTracks": [
+   "マクロス",
+   "愛は流れる",
+   "ランナー"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1982。MB release-group first-release-date 1982-12-16，其下 1982-12-16 JP Official Victor JBX-25008（12\" Vinyl）為原盤，卡單年份 1982 相符、**不是復刻年**；1995-05-03 VICL-23101 是 CD 化重出、2014-11-26 VEAHD-10405 是高解析數位版，MB 三筆各自標明。**作品年與原聲帶發行年要分開寫**：TV 版《超時空要塞マクロス》**1982-10-03 開播、1983-06-26 完結**（ja 維基），本碟 **1982-12-16** 發行時作品還在播出中。**Apple 那筆的 releaseDate 顯示 2008-04-23，那是 Victor 重新遞送的日期，不是本碟的發行年**（探測層若採信會差 26 年）。",
+  "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready。** 正解 **jp 469318130**（20 軌、20 軌皆有 previewUrl，曲名與逐軌長度與 MB 原盤 4a49e15e 逐位置相符）。**探測落空的原因正是 c-101 第 8 條那一條的動畫版**：Apple 把這張碟**掛在演唱者「飯島真理 & 藤原誠」名下，不是作曲者羽田健太郎**——羽田的藝人頁 artistId 296873055 目錄裡 Macross 0 筆，只有 `search` 端點撈得到（裁定 173：兩個端點都要跑）。**盤名也變形**：卡片與 MB 用英文《The S.D.F. Macross》，Apple 用日文並加上播出台前綴《MBS・TBS系「超時空要塞マクロス」 マクロス》（中間還是兩個空格），兩者零重疊。\\n**店面**：**只有 jp 命中**，us／gb／tw／hk／de 五店回 0 筆。\\n**別碟警示**：策展層已明寫刻意不釘 40409a65《「超時空要塞マクロス」 マクロス Vol.II》（第二張）、e5c11568《超時空要塞マクロス BGMコレクション》（1985 BGM 集）、8e53d62c《MACROSS THE COMPLETE》（精選）、19a35754《超時空要塞マクロス Vol. III MISS D.J.》（廣播劇）。**同一個 Apple 藝人（飯島真理）名下還有 469318277，那是本組另一張卡《「超時空要塞マクロス」愛・おぼえていますか》**——兩張的掛名相同、盤名前段相同，**是彼此最強的假陽性**，下游配對必須看軌數（20 對 14）。\\n**掛名**：MB 藝人實體名是日文「羽田健太郎」（MBID 307511e5，名下 58 個 RG），卡片照 MB 實體；Apple 那筆的掛名是演唱者，**不採為身分依據**（策展層依裁定 121 走作曲者掛名，覆核成立）。"
+ },
+ {
+  "key": "desc4:羽田健太郎|「超時空要塞マクロス」愛・おぼえていますか",
+  "artist": "羽田健太郎",
+  "album": "「超時空要塞マクロス」愛・おぼえていますか",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 183706bc 的欄位：title「「超時空要塞マクロス」愛・おぼえていますか」、artist-credit「羽田健太郎」（藝人 MBID 307511e5）、first-release-date 1984-07-21、primary-type Album、secondary-types [Soundtrack]、轄下 6 個 release，**六筆全部 14 軌**。",
+    "src": "https://musicbrainz.org/release-group/183706bc-1515-31cb-97ce-2789f83c780f"
+   },
+   {
+    "f": "同一 RG 的 release 明細：1984-07-21 JP Official Victor JBX-25049 **12\" Vinyl**；1995-05-03 JP Official Victor VICL-23105 CD；2008-04-23 JP Official flying DOG VTCL-60047 CD；2015-06-24 JP Official Victor VICL-23105_F Digital Media（96.0kHz/24bit，**標題擴寫成《映画「超時空要塞マクロス」愛・おぼえていますか<音楽篇>オリジナル・サウンドトラック》**）；另兩筆 Pseudo-Release 各用一種羅馬轉寫／英譯標題（Ai oboeteimasuka ~Macross original sound track~、The Super Dimension Fortress Macross: Do You Remember Love? Original Soundtrack <Music Collection>）。**沒有 Bootleg。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=183706bc-1515-31cb-97ce-2789f83c780f&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 629eb290（1984-07-21 JP Victor JBX-25049，12\" Vinyl）的逐軌曲目：14 軌，第 1 軌〈永遠の愛—プロローグ—〉與第 13 軌〈ここより永遠に…—エピローグ—〉是成對的序與尾，同名主題曲〈愛・おぼえていますか〉排在**第 5 軌**，末軌是〈天使の絵の具〉。MB 未填逐軌長度。",
+    "src": "https://musicbrainz.org/release/629eb290-0ca0-3867-91e3-df1efc784a7c"
+   },
+   {
+    "f": "Apple Music jp collectionId 469318277《映画「超時空要塞マクロス」  愛・おぼえていますか <音楽篇>》：**artistName 記成「飯島真理」**（主題曲演唱者），releaseDate 2008-04-23、copyright「℗ \"Victor Entertainment, Inc.\"」、trackCount 14，`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，十四軌的曲名與曲序與 MB 原盤 629eb290 逐位置相符（只有第 7 軌 Apple 作〈廃虚の星〉／MB 作〈廃墟の星〉一處字形差異）。逐軌長度：第 5 軌〈愛・おぼえていますか〉309 秒、第 12 軌〈揺れ動く心〉258 秒、末軌〈天使の絵の具〉287 秒是碟上最長的三首。**這個 id 只在 jp 命中**，us／gb／tw／hk／de 五個店面回 0 筆。",
+    "src": "https://itunes.apple.com/lookup?id=469318277&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈超時空要塞マクロス 愛・おぼえていますか〉導言：TV 動畫《超時空要塞マクロス》（1982–1983 放送）的劇場版，**1984 年 7 月 21 日**起於東寶洋畫系電影院公開，製作費約 2 億日圓、觀眾動員約 85 萬 7600 人、發行收入 7 億日圓。**原聲盤 JBX-25049 的發行日 1984-07-21 與電影上映日同一天。**",
+    "src": "https://ja.wikipedia.org/wiki/%E8%B6%85%E6%99%82%E7%A9%BA%E8%A6%81%E5%A1%9E%E3%83%9E%E3%82%AF%E3%83%AD%E3%82%B9_%E6%84%9B%E3%83%BB%E3%81%8A%E3%81%BC%E3%81%88%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%81%8B"
+   }
+  ],
+  "hookCandidates": [
+   "碟與片同一天上：1984 年 7 月 21 日，電影開映，唱片上架",
+   "同名主題曲排在第五軌，五分零九秒——不是開場，也不是結尾"
+  ],
+  "sound": "MB release 629eb290（Victor JBX-25049）記 12 吋黑膠 14 軌，MB 未填逐軌長度與總長；Apple jp 469318277 的同一份曲目逐軌長度自 128 秒到 309 秒，**沒有短於兩分鐘的曲子**（與同一位作曲者的 1982 年 TV 版原聲盤形成對照，那張二十軌裡有六軌不到 70 秒）。曲序以〈永遠の愛—プロローグ—〉開場、〈ここより永遠に…—エピローグ—〉作結，同名主題曲〈愛・おぼえていますか〉排在第 5 軌，末軌另接一首〈天使の絵の具〉。",
+  "keyTracks": [
+   "永遠の愛 ―プロローグ―",
+   "愛・おぼえていますか",
+   "天使の絵の具"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。MB release-group first-release-date 1984-07-21，其下 1984-07-21 JP Official Victor JBX-25049（12\" Vinyl）為原盤，卡單年份 1984 相符、**不是復刻年**；1995 CD（VICL-23105）、2008 flying DOG CD（VTCL-60047）、2015 高解析數位（VICL-23105_F）都是後來的再發。**作品年與原聲帶發行年要分開寫**：電影《超時空要塞マクロス 愛・おぼえていますか》**1984-07-21** 上映（ja 維基），**與原盤發行日同一天**——本組唯一一張碟與作品同日的卡。**Apple 那筆的 releaseDate 2008-04-23 是 Victor 重新遞送的日期，不是本碟的發行年。**",
+  "notes": "**unavailable 推翻：探測層記 unavailable，實為 ready。** 正解 **jp 469318277**（14 軌、14 軌皆有 previewUrl，曲名與曲序與 MB 原盤 629eb290 逐位置相符）。**探測落空的原因與本組同一位作曲者的另一張完全相同**（c-101 第 8 條的形狀）：Apple 把碟**掛在演唱者「飯島真理」名下，不是作曲者羽田健太郎**，羽田的藝人頁 artistId 296873055 目錄裡 Macross 0 筆，只有 `search` 端點撈得到（裁定 173）。**盤名還多了兩層變形**：Apple 用的是 2015 年那種擴寫標題的縮版《映画「超時空要塞マクロス」  愛・おぼえていますか <音楽篇>》（「マクロス」與「愛」之間是**兩個空格**），卡片盤名則是短的 RG 標題。\\n**店面**：**只有 jp 命中**，us／gb／tw／hk／de 五店回 0 筆。\\n**同一張碟四種長度的標題**（策展層 `curatorRisk` 已寫，覆核成立）：1984 原盤／1995／2008 三筆都用《「超時空要塞マクロス」愛・おぼえていますか》，2015 數位版擴寫成《映画「超時空要塞マクロス」愛・おぼえていますか<音楽篇>オリジナル・サウンドトラック》，兩筆 Pseudo-Release 各用一種羅馬轉寫與英譯。去重要用作品名核心比對。\\n**別碟警示**：**Apple 同一個掛名（飯島真理）名下的 469318130 是本組另一張卡《The S.D.F. Macross》**（20 軌，1982 年 TV 版），兩張盤名前段相同、掛名相同，**是彼此最強的假陽性，配對必須看軌數（14 對 20）**。策展層另已明寫刻意不釘 8303f863《映画「超時空要塞マクロス」愛・おぼえていますか＜組曲マクロス＞》（組曲盤）與 767cdf31《マクロス・ジェネレーション》（精選）；策展層 `curatorRisk` 提到的三筆翻奏單曲（VocaPanda、オルゴールサウンド J-POP、NIYARI計画）同樣不得改配。"
+ },
+ {
+  "key": "desc4:渡辺岳夫|機動戦士ガンダム オリジナル・サウンドトラック",
+  "artist": "渡辺岳夫",
+  "album": "機動戦士ガンダム オリジナル・サウンドトラック",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group be900f60 的欄位：title「機動戦士ガンダム - オリジナル･サウンドトラック」（MB 用半形中黑「･」並在作品名後多一個連字號）、artist-credit「渡辺岳夫 / 松山祐士」（**兩位共同掛名**）、first-release-date 1979-06-05、primary-type Album、secondary-types [Soundtrack]、轄下 4 個 release，**四筆全部 21 軌**。",
+    "src": "https://musicbrainz.org/release-group/be900f60-2361-4923-a8f3-a71606b60c8c"
+   },
+   {
+    "f": "同一 RG 的 release 明細：**1979-06-05 JP Official KING SKD(H)2005 12\" Vinyl，標題只作《機動戦士ガンダム》**（沒有「オリジナル・サウンドトラック」）；1991-03-05 JP Official STARCHILD KICA-2001 CD，**標題才變成《機動戦士ガンダム - オリジナル･サウンドトラック》**；2014-12-24 JP Official STARCHILD KICA-2001 Digital Media（24bit/96kHz，標題《機動戦士ガンダム オリジナル・サウンドトラック》）；另一筆 Pseudo-Release 用羅馬轉寫《Kidou Senshi Gundam Original Soundtrack》。**沒有 Bootleg。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=be900f60-2361-4923-a8f3-a71606b60c8c&fmt=json&inc=media+labels&limit=100"
+   },
+   {
+    "f": "MB release 3bae70f8（1979-06-05 JP KING SKD(H)2005，12\" Vinyl）的逐軌曲目：21 軌，第 1 軌是主題曲〈翔べ！ガンダム〉，其後全部是日文標題的劇伴——〈ガンダム大地に立つ〉〈颯爽たるシャア〉〈勇壮なるガンダム〉〈ジオンの脅威〉〈スペースコロニー〉〈ジオン公国の陰謀〉〈窮地に立つガンダム〉〈苦い勝利〉〈平和への祈り〉〈アムロの旅立ち〉，末軌〈永遠にアムロ〉。MB 未填逐軌長度。",
+    "src": "https://musicbrainz.org/release/3bae70f8-0ac1-44fc-8e01-2c5548504764"
+   },
+   {
+    "f": "Apple Music 覆核（兩個端點、六個店面）：渡辺岳夫藝人頁 artistId 74964114 的目錄筆數 jp 8、us 7、gb 7、tw 7、hk 7、de 7（**遠低於 limit=200 的截斷值**），六店的目錄裡與 Gundam 相關的只有 **2003 年那兩套総音楽集**——1684537162／1683073770《機動戦士ガンダム TV版総音楽集》(2003-09-26，**53 軌**，掛「松山祐士 & 渡辺岳夫」) 與 1684543356／1683073559《機動戦士ガンダム 劇場版総音楽集》(2003-08-27，**137 軌**，掛「松山祐士, 渡辺岳夫 & 武市昌久」)。**1979 年那張 21 軌的原盤 Apple 上沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=74964114&entity=album&limit=200&country=jp"
+   },
+   {
+    "f": "Apple `search` 端點（jp／us，term「機動戦士ガンダム オリジナル・サウンドトラック」與「Mobile Suit Gundam Original Soundtrack」）回的全是別作品的原聲盤：1563898383《逆襲のシャア》(三枝成彰，1988，15 軌)、1528489949／1528490257《サンダーボルト》(菊地成孔)、1562683736／1562670927《閃光のハサウェイ》(澤野弘之)、1527556472《IRON-BLOODED ORPHANS》(横山克)、1695604999《THE WITCH FROM MERCURY》(大間々昂)、1831486883《GQuuuuuuX》、1509506764《機動戦士ガンダム 40th Anniversary Album ~BEYOND~》(Various Artists，13 軌)。**兩個端點都跑過，結論一致。**",
+    "src": "https://itunes.apple.com/search?term=Mobile%20Suit%20Gundam%20Original%20Soundtrack&country=us&entity=album&limit=12"
+   },
+   {
+    "f": "英文維基〈Mobile Suit Gundam〉導言：日本サンライズ製作、富野由悠季 創作與導演，**1979 年 4 月 7 日**於名古屋放送與其 ANN 系列台首播，**播出 43 話至 1980 年 1 月 26 日腰斬**。日文維基另記：全 52 話的預定因收視與玩具銷售不佳**縮短為 43 話**；初回放送的收視率名古屋地區平均 9.1%、關東地區 5.3%，再放送後平均超過 10%，1982 年名古屋地區達 25.7%。**本碟 1979-06-05 發行時，TV 版開播才 59 天、還在播出中。**",
+    "src": "https://en.wikipedia.org/wiki/Mobile_Suit_Gundam"
+   }
+  ],
+  "hookCandidates": [
+   "碟在 1979 年 6 月上架時，片子才播了兩個月，而且正走在被腰斬的路上",
+   "1979 年的黑膠上只印《機動戦士ガンダム》，「オリジナル・サウンドトラック」這幾個字要等到 1991 年的 CD"
+  ],
+  "sound": "MB release 3bae70f8（KING SKD(H)2005）記 12 吋黑膠 21 軌，MB 未填逐軌長度與總長。第 1 軌是主題曲〈翔べ！ガンダム〉，其餘二十軌全部是日文標題的劇伴，曲名照劇情的情緒與場面命名（〈悲愴、そして決然と〉〈慈しみ〉〈安堵〉〈虚無感〉〈戦いへの恐怖〉〈不安〉〈苦い勝利〉），另有幾軌以角色或陣營為題（〈颯爽たるシャア〉〈勇壮なるガンダム〉〈ジオンの脅威〉〈ジオン公国の陰謀〉），末兩軌〈アムロの旅立ち〉〈永遠にアムロ〉收在主角名下。1991 年 CD 與 2014 年高解析數位版軌數同為 21。",
+  "keyTracks": [
+   "翔べ！ガンダム",
+   "ガンダム大地に立つ",
+   "永遠にアムロ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1979。MB release-group first-release-date 1979-06-05，其下 1979-06-05 JP Official KING SKD(H)2005（12\" Vinyl）為原盤，卡單年份 1979 相符、**不是復刻年**。**但盤名的年份要分開講**：1979 年那張黑膠的 release 標題只有《機動戦士ガンダム》，**卡片採用的「オリジナル・サウンドトラック」這個名字是 1991-03-05 STARCHILD KICA-2001 重出時才有的**（依裁定 45「改過名的碟取再發名」，卡片盤名成立，但行文不得說 1979 年的碟就叫這個名字）。**作品年與原聲帶發行年要分開寫**：TV 版《機動戦士ガンダム》**1979-04-07 首播、1980-01-26 播畢 43 話**（en 維基），本碟 **1979-06-05** 發行時作品才播了 59 天。",
+  "notes": "**unavailable 覆核成立：Apple 上真的沒有 1979 年那張原盤。** 兩個端點都跑過（裁定 173）——藝人頁目錄 artistId 74964114 在 jp／us／gb／tw／hk／de 六店各回 7–8 筆，**離 limit=200 的截斷線極遠**，六店目錄裡的 Gundam 條目只有 2003 年那兩套総音楽集（53 軌與 137 軌）；`search` 端點另跑日文與英文兩種盤名、兩個店面，回的全是別作品的 Gundam 原聲盤。\\n**⚠ 那兩套 2003 年的総音楽集是策展層明寫「刻意不釘」的對照組**（ef3ddf20《劇場版総音楽集》、0370db17《TV版総音楽集》，皆整編精選、非原盤），**下游不得把 1684537162／1683073770／1684543356／1683073559 任何一筆配成本卡的固定試聽**（裁定 153 那個「策展層已指名不要的東西又被配回來」的形狀）。**軌數也對不上：原盤 21 軌，那兩套是 53 軌與 137 軌。**\\n**掛名要記兩件事**：(1) MB 的 artist-credit 是「渡辺岳夫 / 松山祐士」共同掛名，**Apple 的 2003 年整編盤把順序反過來寫成「松山祐士 & 渡辺岳夫」**，劇場版那套還多一位武市昌久；卡片依裁定 121 取主要作曲者渡辺岳夫，覆核成立。(2) MB 藝人實體名是日文（MBID 5f2b6515，名下 25 個 RG），Apple us／gb／de 店面顯示 Takeo Watanabe，那是店面在地化。\\n**盤名寫法**：MB 的 RG 標題用**半形片假名中黑「･」**並在作品名後多一個連字號，卡片改用通行的全形中黑並去掉連字號（策展層依裁定 50 處理，覆核成立）；2014 年那筆數位 release 的標題與卡片盤名逐字相同，**卡片盤名有 MB release 直接背書**。"
  }
 ]
