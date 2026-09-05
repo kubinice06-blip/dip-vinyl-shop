@@ -222,3 +222,79 @@ MB 上對應的 release-group 是 3c4bb720《The New South》（Rounder 0044）�
 **盤名兩種寫法、是同一張碟**，第 49 條的同型。本批因此沒有把它當成「還沒收」。
 他名下其餘 16 個 release-group 裡值得補的是《Somewhere Between》(1982，6ea71285)，
 本批因張數上限未收，記在這裡供下一批廣度線取用。
+
+---
+
+## （主線追加，2026-09-05）第 1 條：**探測層有一張配到別的藝人** —— Hank Williams《Ramblin' Man》
+
+探測記 `ready`／us `815502171`。那筆是 **Hank Williams III**（孫子）2014 年 Curb 的 8 軌碟，
+不是 1955 年 MGM 的那張。`titleOk` 過得了（盤名完全相等）、`artistOk` 也過得了
+（`norm('Hank Williams')` 是 `norm('Hank Williams III')` 的子字串），**兩道都不擋祖孫同名**。
+
+正解 us `1592563692`《Ramblin' Man (Undubbed Edition)》12 軌，與 MB 的 MGM E 3219 逐軌同名同序，
+12 軌皆有 previewUrl。已改寫探測檔。
+
+**這是「`ready` 不等於配對正確」的第十一張，也是第一次的形狀是「同姓氏的後代」。**
+`artistOk` 的雙向子字串比對對 Jr./III/父子檔家族天生無效——鄉村、藍調、拉丁三條線都有這種家族，
+往後這幾條線的研究層要把「藝人是不是同一個人」當獨立一項查。本批不改工具。
+
+## 第 2 條：**七張誤記 unavailable，全部是盤名變形**（裁定 166 的第二次收成）
+
+| 卡 | collectionId | 探測落空的原因 |
+|---|---|---|
+| Hank Williams《Hank Williams Sings》 | us 1591133640（8 軌） | Apple 盤名只作《Sings》 |
+| Pete Seeger《Waist Deep in the Big Muddy…》 | us 181586787（15 軌） | MB 用 `&`、Apple 用 `and` |
+| Marty Robbins《The Song of Robbins》 | us 1308728509（12 軌） | Apple 是複數《The **Songs** of Robbins》 |
+| Flatt & Scruggs《Hard Travelin'》 | us 727363468（12 軌） | Apple 盤名帶班底副標「(with The Foggy Mountain Boys)」 |
+| Dock Boggs《…Legendary Singer and Banjo Player》 | us 175658461（15 軌） | Apple／Discogs 只作《Dock Boggs》 |
+| Elizabeth Cotten《Volume 3: When I'm Gone》 | us 154816804（13 軌） | Apple 盤名帶藝人名＋「Vol. 3」 |
+| Nitty Gritty Dirt Band《Uncle Charlie…》 | us 723526039（23 軌） | **三重變形**：`&`／`and` ＋「Bonus Tracks Edition」副標 ＋「[2002 Remaster]」標記 |
+
+七筆逐一以 `lookup?id=<collectionId>&entity=song` 覆核過**曲目列攤得開且每軌都有 previewUrl**
+（c-97 第 11 條要的那道獨立檢查），才寫進探測檔。**c-98 試聽 26/44 → 33/44。**
+
+**真的 unavailable 只有 2 張**：Marty Robbins《Devil Woman》（us/gb/ca/au/de 藝人目錄各 43–49 張、五份都沒有）、
+Garth Brooks《The Chase》（artistId 329451 在五個店面**各只回 1 筆**，是 2021 年的單曲）。
+
+## 第 3 條：**策展層的 catno 錯三處，一併更正**
+
+研究層比對原盤資料時抓到，`prop-a.json` 與卡單都已改：
+
+- The Louvin Brothers《My Baby's Gone》：**T 1385**（原寫 T 1834）
+- Flatt & Scruggs《Hard Travelin'》：**CL 1951／CS 8751**（原寫 CL 2151／CS 8951，兩個都錯）
+- Hank Williams《Luke the Drifter》：是**十吋 E-203（1953）與十二吋 E-3267（1955）兩種規格**，
+  MB 把兩者混在一筆上。**Apple 那個 1953 不是年份漂移，是指向更早的十吋版。**
+
+## 第 4 條：**軌數落差五張全部查清，沒有一張是二合一**
+
+| 卡 | 落差 | 結論 |
+|---|---|---|
+| Luke the Drifter | 14 vs 12 | 原盤 12 軌全在＋〈No, No Joe〉〈Ramblin' Man〉兩首同掛名錄音，加曲版 |
+| Library of Congress Recordings | 29 | **完整**：與 1964 Elektra 三片 11+10+8 逐軌同名同序 |
+| American Favorite Ballads, Vol. 1 | 28 | **不是兩卷合併**（Vol.2 的識別曲一首都沒出現），是 2002 SFW CD 40140；但**也不是 1957 年 17 軌的超集**，〈Buffalo Gals〉被拿掉了 |
+| Joan Baez, Vol. 2 | 17 vs 13 | **原盤是 14 軌不是 13**；17 ＝ 14 同序 ＋ 維基明載的三首未發表曲 |
+| Uncle Charlie & His Dog Teddy | 23 vs 16 | 原盤 16 個索引點裡**五個本身是組曲**，拆開後 21 ＋ 2 首標記 (Bonus Track)。**行文不得說「這張碟有 23 首」** |
+
+## 第 5 條：**兩張缺封面是 CAA 真的沒有，不是釘錯 release**
+
+Louvin《My Baby's Gone》的 release-group 與轄下 3 個 release **全 404**；
+Dock Boggs 的 release-group 與轄下 2 個 release **全 404**。
+策展層改走 §4 `apple-verified-collection` 正確，兩個 collectionId 另加驗過全曲序。
+
+**這兩張正好落在收尾要問店主的那個議題上**（放寬 §4 讓釘住 MBID 的卡也能用
+`apple-verified-collection` 取封面）——**它們是這個放寬的實例，不是特例**。
+
+## 第 6 條：**擋下策展層說法 12 處，其中 5 處與來源相反**
+
+- Tammy Wynette《D-I-V-O-R-C-E》寫「第三張」→ 維基是**第四張**
+- Odetta《One Grain of Sand》寫「1960 年代 Vanguard 目錄的**入口**」→ 維基明寫是她為 Vanguard 錄的
+  **最後一張**；且「愛爾蘭、以色列、非洲曲目」與曲目表不符（只有一首愛爾蘭曲）
+- Louvin《Nearer My God to Thee》寫「福音在前、《Tragic Songs》在後」→ **後者 1956 早於本張 1957**
+- Dock Boggs 寫「復出後的第一張」→ 維基只說錄了三張、沒給先後
+- Garth Brooks《The Chase》寫「商業曲線的轉折點」→ 首週 403,000 張、雙榜冠軍、RIAA 鑽石
+
+另擋下七處無來源的最高級／序數說法。**NGDB 那一處要特別記**：curatorWhy 稱
+「第一次真正賣開的專輯」——**專輯層級不成立**（美國榜只到第 66 名），
+有來源的是**單曲**〈Mr. Bojangles〉（Hot 100 第 9）。**行文要寫「第一次賣開」必須寫在單曲上。**
+
+**累計：策展層的時序／序數主張被攻破第六次。**
