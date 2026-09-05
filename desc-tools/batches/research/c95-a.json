@@ -1,0 +1,132 @@
+[
+ {
+  "key": "desc2:Robert Johnson|King of the Delta Blues Singers, Vol. II",
+  "artist": "Robert Johnson",
+  "album": "King of the Delta Blues Singers, Vol. II",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 25ff0dee 的欄位：title「King of the Delta Blues Singers, Vol. II」、artist-credit「Robert Johnson」、first-release-date 1970、primary-type Album、secondary-types [Compilation]，轄下 4 個 release（1970 US／1990 無國別／2004-08-10 US／2004 XE），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/25ff0dee-b3de-3e3a-a316-516dba185170"
+   },
+   {
+    "f": "該 release-group 的 1970 年原盤 release 57caa6ba 欄位：1970、US、status Official、廠牌欄 Columbia、編號 C 30034、載體 12\" Vinyl、16 軌。逐軌曲名與曲長依序為〈Kind Hearted Woman Blues〉2:30、〈I Believe I'll Dust My Broom〉2:59、〈Sweet Home Chicago〉3:02、〈Rambling on My Mind〉2:53、〈Phonograph Blues〉2:41、〈They're Red Hot〉2:58、〈Dead Shrimp Blues〉2:36、〈Preachin' Blues〉2:53、〈I'm a Steady Rollin' Man〉2:34、〈From Four Till Late〉2:24、〈Little Queen of Spades〉2:17、〈Malted Milk〉2:20、〈Drunken Hearted Man〉2:23、〈Stop Breakin' Down Blues〉2:23、〈Honeymoon Blues〉2:17、〈Love in Vain〉2:26。",
+    "src": "https://musicbrainz.org/release/57caa6ba-fe76-44e8-a98f-85ccece1214b"
+   },
+   {
+    "f": "英文維基〈King of the Delta Blues Singers〉條目記：1961 年那張之後「The album was followed in 1970 by King of the Delta Blues Singers, Vol. II」，並記第二輯收的是當時可得、未收進 1961 年那張的其餘錄音。",
+    "src": "https://en.wikipedia.org/wiki/King_of_the_Delta_Blues_Singers"
+   },
+   {
+    "f": "英文維基〈The Complete Recordings (Robert Johnson album)〉記 Johnson 全部錄音只有兩次臨時錄音室工作：1936 年 11 月 23–27 日於德州 San Antonio 的 Gunter Hotel，1937 年 6 月 19–20 日於德州 Dallas 的 Warner Brothers/Vitagraph Building；原始製作人為 Don Law。",
+    "src": "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 193895743 的欄位：collectionName「King of the Delta Blues Singers, Vol. 2」（Vol. 2 不是 Vol. II）、artistName Robert Johnson、releaseDate 1970-01-01、trackCount 17。同一藝人目錄下另有 collectionId 157432232「King of the Delta Blues Singers」、1961-01-01、17 軌，是 1961 年的第一輯。",
+    "src": "https://music.apple.com/us/album/193895743"
+   }
+  ],
+  "hookCandidates": [
+   "同一批母帶分兩次上市，中間隔了九年",
+   "第二輯的曲目，是第一輯挑剩的"
+  ],
+  "sound": "1970 年 Columbia 原盤十六軌沒有一軌超過三分零二秒，最短的〈Little Queen of Spades〉2:17、〈Honeymoon Blues〉2:17（MB 1970 US 原盤逐軌曲長）——78 轉單面的長度限制原樣留在整編輯裡。",
+  "keyTracks": [
+   "Sweet Home Chicago",
+   "Love in Vain",
+   "I Believe I'll Dust My Broom"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1970 是**這個整編輯的出版年**：MB release-group first-release-date 1970、原盤 release 亦記 1970（Columbia C 30034）、Apple US 1970-01-01，三方一致。**錄音年是 1936–1937**（維基記 1936-11-23~27 San Antonio、1937-06-19~20 Dallas），與出版年相差 33 年。兩者不可互換。",
+  "notes": "**⚠ 寫作層鐵則：1970 是出版年，1936–1937 是錄音年，不得互寫。**\n**推翻探測層的配對**：previews.json 這一筆 status 標 ready，但配到的 collectionId 157432232 是 **1961 年的第一輯**（appleTitle「King of the Delta Blues Singers」、appleYear 1961、17 軌），**不是本卡這張第二輯**。逐張回 lookup（id=314626 藝人目錄、country=us）查到正解是 **collectionId 193895743「King of the Delta Blues Singers, Vol. 2」、1970-01-01、17 軌、店面 us**。試聽與封面一律改用 193895743。策展層在 curatorRisk 已預告這個 collectionId，實測相符。\n軌數差異：MB 1970 原盤 16 軌、Apple 17 軌，屬同一輯的數位版多一軌，非另一張碟。\n**擋下策展層無來源說法**：curatorWhy 稱「1961 年那張沒收進去的另外十六面」與「兩張合起來才是 1961–1970 年間讓 Johnson 從戰前名錄走進戰後聽眾耳朵的那套發行」——前者的「十六面」與 MB 16 軌相符可用，後者的因果與時序定位查無來源，未採用。"
+ },
+ {
+  "key": "desc2:Robert Johnson|The Complete Recordings",
+  "artist": "Robert Johnson",
+  "album": "The Complete Recordings",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 200b18f9 的欄位：title「The Complete Recordings」、artist-credit「Robert Johnson」、first-release-date 1990-08-20、primary-type Album、secondary-types [Compilation]，轄下 13 個 release（US／JP／XE／IT／XW），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/200b18f9-789e-3875-90a1-a0c6ee1906a9"
+   },
+   {
+    "f": "該 release-group 的首發 release dfb5ebfe 欄位：1990-08-20、US、status Official、廠牌欄 Legacy、編號 C2K 64916（另列 CK 64916／CK 64917／CK 64918）、載體 CD＋CD、第一片 20 軌、第二片 21 軌，合計 41 軌。第一片開頭是〈Kind Hearted Woman Blues (take 1)〉2:55 與〈(take 2)〉2:35，第二片收〈Hell Hound on My Trail〉2:36、〈Love in Vain Blues (take 1)〉2:25／〈(take 2)〉2:17、〈Milkcow's Calf Blues (take 1)〉2:17／〈(take 2)〉2:20。",
+    "src": "https://musicbrainz.org/release/dfb5ebfe-e262-4016-a045-443adfa0696f"
+   },
+   {
+    "f": "英文維基〈The Complete Recordings (Robert Johnson album)〉記：發行日 1990 年 8 月 28 日、Columbia Records、雙 CD、總長 104:53、41 首（29 個 master 加 13 個現存的 alternate take）；原始製作人 Don Law，再發製作人 Stephen LaVere 與 Frank Driggs，錄音工程 Vincent Liebler。",
+    "src": "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)"
+   },
+   {
+    "f": "同條目記：本輯 1991 年獲葛萊美最佳歷史專輯（Best Historical Album）、Billboard 200 最高名次第 80 名、RIAA 白金認證（1,000,000 單位）、英國 BPI 銀認證、1992 年入選 Blues Hall of Fame、2003 年入選 National Recording Registry，2012 年《滾石》五百大專輯名單列第 22 名。",
+    "src": "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)"
+   },
+   {
+    "f": "同條目記錄音場次：1936 年 11 月 23–27 日 San Antonio 的 Gunter Hotel、1937 年 6 月 19–20 日 Dallas 的 Warner Brothers/Vitagraph Building。",
+    "src": "https://en.wikipedia.org/wiki/The_Complete_Recordings_(Robert_Johnson_album)"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 546817591 的欄位：collectionName「The Complete Recordings」、artistName Robert Johnson、releaseDate 1990-01-01、trackCount 41、notExplicit。軌數與 MB 雙 CD 的 20＋21 相符。",
+    "src": "https://music.apple.com/us/album/546817591"
+   }
+  ],
+  "hookCandidates": [
+   "二十九首歌、四十一個 take，一個人的全部錄音就這些",
+   "一張拿下葛萊美歷史專輯的碟，主角已經死了五十二年"
+  ],
+  "sound": "四十一軌裡有十三個是 alternate take，同一首歌並排放兩個版本（如〈Kind Hearted Woman Blues〉take 1 2:55 與 take 2 2:35），聽的是同一首歌在同一天被唱成兩種樣子（MB 首發雙 CD 逐軌）。",
+  "keyTracks": [
+   "Cross Road Blues",
+   "Hell Hound on My Trail",
+   "Love in Vain Blues",
+   "Terraplane Blues"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1990 是**整編輯出版年**，MB release-group first-release-date 記 1990-08-20、首發 release 同、Apple US 記 1990-01-01。**英文維基寫的是 1990 年 8 月 28 日**，與 MB 的 8 月 20 日差八天，日期有兩說、年份 1990 無爭議；依規定不改卡片 year，日差交主線。**錄音年 1936–1937**，與出版年相差 53 年。",
+  "notes": "**⚠ 寫作層鐵則：1990 是出版年，1936–1937 是錄音年，不得互寫。**「二十九首歌／四十一個 take」是曲目結構，不是年份。\n試聽探測 ready 且**配對正確**：collectionId 546817591、店面 us、41 軌對得上 MB 的 20＋21，無需改判。\n**擋下策展層無來源說法**：curatorWhy 稱本輯「是他從樂評名詞變成暢銷唱片的那一次發行」「是後續所有 Johnson 整編的底本」——兩句都是因果／地位定位，查無來源，未採用；可用的是同義且有來源的事實（Billboard 200 第 80 名、RIAA 白金、1991 葛萊美最佳歷史專輯）。"
+ },
+ {
+  "key": "desc2:Son House|Father of the Delta Blues: The Complete 1965 Sessions",
+  "artist": "Son House",
+  "album": "Father of the Delta Blues: The Complete 1965 Sessions",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 400a6331 的欄位：title「Father of the Delta Blues: The Complete 1965 Sessions」、artist-credit「Son House」、first-release-date 1992、primary-type Album、secondary-types [Compilation]，轄下 5 個 release（1992 GB／1992 US×2／2006 US／1 筆無日期無國別），status 全部 Official。",
+    "src": "https://musicbrainz.org/release-group/400a6331-02e5-3cf5-895d-eaf6f8e3934c"
+   },
+   {
+    "f": "該 release-group 的 1992 US release 75edb026 欄位：1992、US、status Official、廠牌欄 Legacy、編號 C2K 48867、載體 CD＋CD，第一片 9 軌、第二片 12 軌，合計 21 軌。第一片為〈Death Letter〉4:21、〈Pearline〉4:34、〈Louise McGhee〉6:13、〈John the Revelator〉2:32、〈Empire State Express〉3:41、〈Preachin' Blues〉5:45、〈Grinnin' in Your Face〉2:08、〈Sundown〉6:14、〈Levee Camp Moan〉9:27；第二片前五軌全部標 alternate take，其後為〈President Kennedy〉3:44、〈A Down the Staff〉3:42、〈Motherless Children〉4:30、〈Yonder Comes My Mother〉3:40、〈Shake It and Break It〉2:43、〈Pony Blues〉5:24、〈Downhearted Blues〉7:08。",
+    "src": "https://musicbrainz.org/release/75edb026-2a0c-44a4-af8b-589af2305fcc"
+   },
+   {
+    "f": "英文維基〈Son House〉記：House 生於 1902 年 3 月 21 日、卒於 1988 年 10 月 19 日；1964 年由 Nick Perls、Dick Waterman 與 Phil Spiro 在密西西比三角洲一帶長期尋訪後，於紐約州 Rochester 找到他。",
+    "src": "https://en.wikipedia.org/wiki/Son_House"
+   },
+   {
+    "f": "同條目記：製作人 John Hammond 找來年輕吉他手 Alan Wilson 協助 House 錄音，成果是 1965 年 Columbia 的《Father of Folk Blues》，「later reissued as a 2-CD set Father of Delta Blues: The Complete 1965 Sessions」。",
+    "src": "https://en.wikipedia.org/wiki/Son_House"
+   },
+   {
+    "f": "同條目記 House 的更早錄音：1930 年 8 月在威斯康辛州 Grafton 為 Paramount 錄九首、發行八首，商業上失敗；1941 年 8 月 Alan Lomax 在密西西比 Lake Cormorant 為國會圖書館錄音，1942 年 7 月再於 Robinsonville 錄一次。",
+    "src": "https://en.wikipedia.org/wiki/Son_House"
+   },
+   {
+    "f": "Apple Music 美國店面 collectionId 157314970 的欄位：collectionName「Father of the Delta Blues: The Complete 1965 Sessions」、artistName Son House、releaseDate 1992-06-18、trackCount 21、notExplicit。21 軌與 MB 的 9＋12 相符。",
+    "src": "https://music.apple.com/us/album/157314970"
+   }
+  ],
+  "hookCandidates": [
+   "三個人開車走遍三角洲，最後在紐約州的火車站找到他",
+   "第二片前五軌全是同一批歌的另一次 take"
+  ],
+  "sound": "二十一軌裡有九軌超過五分鐘，最長的〈Levee Camp Moan〉9:27、〈Downhearted Blues〉7:08——這個長度是 1965 年錄音室的規格，不是 78 轉時代能有的（MB 1992 US 雙 CD 逐軌曲長）。",
+  "keyTracks": [
+   "Death Letter",
+   "Grinnin' in Your Face",
+   "John the Revelator",
+   "Levee Camp Moan"
+  ],
+  "status": "full",
+  "yearVerified": "卡片 year 1992 是**整編輯出版年**：MB release-group first-release-date 1992、1992 US release（Legacy C2K 48867）同、Apple US 記 1992-06-18，三方一致。**錄音年是 1965**（盤名本身寫著「The Complete 1965 Sessions」，維基記 1965 年 John Hammond 主持的 Columbia 場次），與出版年相差 27 年。",
+  "notes": "**⚠ 寫作層鐵則：1992 是整編出版年，1965 是錄音年，不得互寫。**盤名裡的「1965」是錄音年，不是發行年。\n試聽探測 ready 且**配對正確**：collectionId 157314970、店面 us、21 軌對得上 MB 的 9＋12。\n**擋下策展層無來源說法**：curatorWhy 稱這批是「Son House 重出江湖時期最權威的一份文獻」、與池中《Father of Folk Blues》「互為單張選輯與完整場次」——「最權威」是評價、「互為」是關係定位，皆查無來源，未採用。維基只支持「later reissued as a 2-CD set」這一句關係陳述，寫作層請用這句。\n另：Blues Foundation 的名人堂頁面（blues.org）本輪回查 404，未採用任何來自該頁的說法。"
+ }
+]
