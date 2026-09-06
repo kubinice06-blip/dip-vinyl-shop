@@ -276,5 +276,148 @@
   "status": "full",
   "yearVerified": "**1996 ✓，四處對得上，日期精確到日。** 釘定條目 first-release-date 1996-02-11、其下 CN／Official CD 同為 1996-02-11；英文百科〈Black Panther (band)〉作品表寫「1996-02-11」；日版 1996-02-21（Victor VICP-5686）晚十天；線上店面 collectionId 1763085675 的 releaseDate 1996-02-01 與 ℗ 1996 是月初佔位，年份一致。卡片年份 1996 正確。",
   "notes": "**探測層判定覆核通過且加值**：封面 CAA（release-group/babc6546 回 200）；試聽方面實測 **cn 店面 entity=song 攤出 0 軌**，tw／hk／us 才攤得出 9 軌且 9 軌全有試聽——與同批的《光芒之神》一模一樣。建議釘 **tw**（曲名繁體，與 09-06 裁定同向）。\\n**擋下策展層一處**：`curatorWhy` 寫「中國首版與日版《黒豹III: 信じるまえに飛べ》同月發行」——查證屬實且更精確：**2 月 11 日對 2 月 21 日，差十天**。但同句說「日方還另做了英文標題 No Right No Wrong」需要修正：**那個英文題名出現在 JP 的 Pseudo-Release 條目與英文百科上**，不是日版 CD 的正式題名（日版正式題名是《黒豹III: 信じるまえに飛べ》）。\\n**軌數兩說要講清楚**：釘定條目底下 9 軌與 10 軌並存，多出來的是〈天外有天〉；線上店面 1763085675 是 **9 軌版**，與 CD 首版一致。寫作層若要寫軌數，寫 9 軌。\\n**MB 建檔用簡體（掛名「黑豹」、盤名「无是无非」），卡片依 09-06 裁定用繁體《無是無非》／《黑豹樂隊》**；tw／hk 店面的曲名已是繁體。\\n**可補的 Apple collectionId：`1763085675`／建議店面 tw（hk／us 亦可）／9 軌、9 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:超載|超載",
+  "artist": "超載",
+  "album": "超載",
+  "facts": [
+   {
+    "f": "釘定的 release-group f2958f8b 欄位：title「超载」、artist-credit 寫「超载」但**指向的藝人實體名是「超载乐队」**（MBID 9f895c00，country CN、type Group、begin 1991）、first-release-date **1996-08**、primary-type Album、secondary-types **空**、轄下 1 個 release。條目上沒有掛風格標籤。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f2958f8b-857c-49a9-8b0f-110c3c83aad1?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release：CN／Official／1996-08，CD 單片 **11 軌**，廠牌欄記中國音樂家音像出版社、編號 CNA509631800。逐軌長度：1〈荒原困兽〉5:23、2〈寂寞〉8:09、3〈低下头是人间〉6:07、4〈梦缠绕的时候〉5:06、5〈感受〉6:48、6〈生命之诗〉8:50、7〈距离〉5:24、8〈让没一个夜晚充满爱的火焰〉6:47、9〈一九九九〉4:49、10〈九片菱角的回忆〉3:47、11〈纯音乐演奏〉1:57。**十一軌合計約 63 分，其中兩軌超過 8 分。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f2958f8b-857c-49a9-8b0f-110c3c83aad1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **652021481**，四店都有，**tw／hk／us 三店攤得出 11 軌、11 軌全部有試聽**（cn 只回專輯層）。欄位 releaseDate 1996-05-16、℗ **1996 Rock Records Co., Ltd.**（與釘定條目登錄的中國音樂家音像出版社不同家），trackCount 11。藝人欄 tw 顯示「高旗」、us 顯示「Gao Qi & Overload」。**tw 店面的曲名是繁體、us 店面整張換成英譯**（Cornered In the Moor／Lonesome／Human Earth／Haunted By Dreams／Sensation／Poem of Death／Distance／Flames of Love／1999／Memory From Nine Demarcations／Demo）。逐軌長度與釘定條目逐位置相符。",
+    "src": "https://itunes.apple.com/lookup?id=652021481&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**曲名有三處寫法差異**（以線上店面 tw 為準對照釘定條目）：第 8 軌釘定條目寫〈让没一个夜晚充满爱的火焰〉、店面寫〈讓每一個夜晚充滿愛的火焰〉（「沒」與「每」）；第 10 軌釘定條目寫〈九片菱角的回忆〉、店面寫〈九片稜角的回憶〉；第 11 軌釘定條目寫〈纯音乐演奏〉、店面直接寫〈Demo〉。**寫作層引曲名時以店面的寫法為準，並注意第 11 軌只有 1:57，是一段器樂尾聲。**",
+    "src": "https://itunes.apple.com/lookup?id=652021481&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈超载乐队〉：「1991年10月31日: 超載樂隊正式成立，由高旗（主唱、节奏吉他手）、韩鸿宾（吉他）、赵牧阳（架子鼓）三人组成」；1995 年「樂隊簽約了台灣滾石唱片旗下的魔巖唱片」；「1996年: 發行樂隊首張音樂專輯《超載》，收錄《荒原困獸》《距離》等11首歌曲；而在這一年，韓鴻濱、王學科卻離開樂隊開始個人發展」。出版唱片表首筆寫「1996年8月《超载》（同名专辑）」。同條目另記 1994 年〈夢纏繞的時候〉（本碟第 4 軌）是電影《頭髮亂了》的插曲。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%B6%85%E8%BD%BD%E4%B9%90%E9%98%9F"
+   },
+   {
+    "f": "英文百科〈Overload (Chinese band)〉：「Gao Qi (高旗), the former guitarist and songwriter of the band The Breathing (呼吸乐队), set up his own band Overload with guitarist Han Hongbin (韩鸿宾), Li Yanliang (李延亮), bassist Wang Xueke (王学科) and drummer Zhao Muyang (赵牧阳)……The band made their band debut on **Halloween 1991**.」中文百科〈高旗〉補上前情：他 1988 年與曹鈞組團、隔年正式定名呼吸樂隊，「**因为高旗倾向重金属而于1991年离队**」。",
+    "src": "https://en.wikipedia.org/wiki/Overload_(Chinese_band)"
+   },
+   {
+    "f": "藝人 MBID 9f895c00 分頁全列，名下只有 **4 個 release-group**：1996-08 本張、1999-05《魔幻蓝天》（同批 a 組另收一張）、2002-10《生命是一次奇遇》、2006《生命之诗》（Album+Live）。別名欄登錄英文 Overload、繁體「超載樂隊」、以及「高旗 & 超载」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9f895c00-52e6-4416-8cab-61a04a5eeedc&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "樂隊的首演選在 1991 年的萬聖節；主唱是從前一支團出走的人——他想走重金屬，那支團不肯",
+   "十一軌跑了六十三分鐘，〈生命之诗〉8 分 50 秒、〈寂寞〉8 分 09 秒，最後留一段一分五十七秒的器樂收尾"
+  ],
+  "sound": "十一軌、合計約 63 分，是本批最長的一張。編排把長曲放在偶數位置：第 2 軌〈寂寞〉8:09、第 6 軌〈生命之诗〉8:50，兩首加起來就佔掉四分之一的時間；其餘正曲落在 3:47 到 6:48 之間，最短的〈九片稜角的回憶〉3:47 排在倒數第二，最後留一段 1:57 的器樂〈Demo〉收尾。風格是激流金屬取向的硬搖滾，主唱以高亢音色見長，第 4 軌〈夢纏繞的時候〉在這張之前已經先當過電影插曲。海外店面把整張的曲名換成英譯，〈生命之诗〉譯作「Poem of Death」——與中文字面不同向，可見譯名是另做的。",
+  "keyTracks": [
+   "荒原困兽",
+   "生命之诗",
+   "梦缠绕的时候",
+   "寂寞"
+  ],
+  "status": "full",
+  "yearVerified": "**1996 ✓，三處相符。** 釘定條目 first-release-date 1996-08、其下唯一 release 同為 1996-08；中文百科〈超载乐队〉的出版唱片表第一筆寫「1996年8月《超载》（同名专辑）」，**連月份都對得上**。線上店面 collectionId 652021481 的 releaseDate 記 1996-05-16、℗ 1996，年份一致、日期較早（依裁定 91／95 以釘定條目為身分鍵、年份取 1996）。卡片年份正確。**注意廠牌兩說**：釘定條目記中國音樂家音像出版社（CNA509631800），店面 ℗ 記 Rock Records，百科則說 1995 年簽的是魔巖唱片——三者不一致，寫作層要提廠牌就只能寫「1996 年出版」，不要指名。",
+  "notes": "**探測層判定覆核通過且加值**：卡單說封面走 apple-verified-collection、CAA 未查——實測 CAA 也有（本批的 caa.json 對這張登錄了 release-group/f2958f8b 的 front）。試聽方面 **cn 店面 entity=song 攤出 0 軌**，tw／hk／us 才攤得出 11 軌且 11 軌全有試聽。\\n**自我同名確認**：盤名＝掛名，Apple 上找得到（652021481 四店俱全），符合 c-67 的收錄條件。\\n**擋下策展層一處**：`curatorWhy` 寫「90 年代中期北京金屬／硬搖滾一線隊伍裡最完整的一張原盤」——「最」字沒有來源，不要寫。**「高旗離開呼吸樂隊自組樂團後的第一份作品」查證屬實**：英文百科明寫他是呼吸樂隊的前吉他手兼詞曲，中文百科〈高旗〉寫他 1991 年因倾向重金属離開呼吸；不過**「第一份作品」要限定在專輯**——樂隊 1991 年就有單曲〈三角洲戰士〉、1993 年〈祖先的陰影〉收在《搖滾北京》合輯裡，都早於這張。\\n**artist-credit 與實體名不一致**（裁定：取實體名）：credit 寫「超载」、實體名是「超载乐队」；Apple 端 tw 掛「高旗」、us 掛「Gao Qi & Overload」——三種寫法都不是卡片用的「超載」，配對只能靠 collectionId 直查。\\n**曲名三處差異**見上方第 4 條事實，寫作層以店面寫法為準。\\n**可補的 Apple collectionId：`652021481`／建議店面 tw（曲名繁體；hk 同；us 是英譯）／11 軌、11 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:眼鏡蛇樂隊|眼鏡蛇",
+  "artist": "眼鏡蛇樂隊",
+  "album": "眼鏡蛇",
+  "facts": [
+   {
+    "f": "釘定的 release-group 0d83bbac 欄位：title「眼镜蛇」（簡體建檔）、artist-credit「眼镜蛇乐队」（藝人實體 5ddc2f3c，type Group、**country 未填**、成軍 1989）、first-release-date **1996**、primary-type Album、secondary-types **空**、轄下 1 個 release。條目上沒有風格標籤、沒有外部連結。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0d83bbac-e86d-4e7a-b743-56975a842705?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release 的規格很薄：**country 未填、status 未填、無 label-info、無條碼**，只有年份 1996、CD 單片 10 軌。逐軌長度：1〈交通灯〉3:53、2〈错觉〉6:13、3〈走向人群〉6:09、4〈梦想〉4:26、5〈谁也没醉〉5:11、6〈自己的天堂〉6:04、7〈不是游戏的年纪〉6:25、8〈都是俗人〉4:33、9〈虚伪〉4:18、10〈一扇门,一堵墙,一座坟〉5:20。十軌合計約 52 分半。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0d83bbac-e86d-4e7a-b743-56975a842705&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "英文百科〈Cobra (Chinese band)〉：「Cobra……was an all-female rock band from Beijing, China. The band formed in 1989, **becoming the first all-female rock band in mainland China**. With only one album out, they disbanded in the late 1990s. Their style was a gloomy, bluesy type of hard rock with slight touches of new wave and alternative metal.」",
+    "src": "https://en.wikipedia.org/wiki/Cobra_(Chinese_band)"
+   },
+   {
+    "f": "中文百科〈中国摇滚乐〉在 1989 年條記樂隊成立與完整編制：「同年眼镜蛇乐队成立，作为中国摇滚史上第一支女子乐队，由肖楠、王晓芳、虞进、所以、林雪、林那儿、维维组成，1992年德国国家电视一台专程为眼镜蛇乐队拍摄了一部专题音乐片，同时眼镜蛇乐队是第一支在欧洲巡演、第一支在纽约……CBGB登台的中国乐队。」同條目 1994 年項另記：「**眼镜蛇乐队首张专辑《Hypocrisy》在德国发行欧洲版，同时乐队赴欧洲进行了三十场巡回演出。**」——《Hypocrisy》即本碟第 9 軌〈虚伪〉的英譯。",
+    "src": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%91%87%E6%BB%9A%E4%B9%90"
+   },
+   {
+    "f": "線上店面：collectionId **1065434395**《眼鏡蛇》四店都有，**tw／hk／us 三店攤得出 10 軌、10 軌全部有試聽**（cn 只回專輯層），trackCount 欄 10、releaseDate 1996-01-01、**℗ 2015 太合麥田**（是 2015 年的數位上架，不是 1996 年的原始版權標示）。曲序與逐軌長度與釘定條目**逐位置相符**（3:53／6:13／6:09／4:26／5:11／6:04／6:25／4:33／4:18／5:20）。**三個店面的曲名全部是繁體**，藝人欄 tw／hk 顯示繁體「眼鏡蛇樂隊」、cn／us 顯示簡體。",
+    "src": "https://itunes.apple.com/lookup?id=1065434395&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈陳健添〉記：1993 年他在北京「簽入田震、小柯、許巍、**眼鏡蛇樂隊**、天堂樂隊……令紅星生產社成為當時最具影響力的唱片公司」。另據〈麥田守望者 (樂隊)〉，1996 年眼鏡蛇樂隊的肖楠、林雪、虞進曾與麥田守望者的成員合組「毛毛蟲大樂隊」翻唱 The Cure 的作品。",
+    "src": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%81%A5%E6%B7%BB"
+   },
+   {
+    "f": "藝人 MBID 5ddc2f3c 分頁全列，名下只有 **2 個 release-group**：1996 本張與 2000-02-18《眼镜蛇Ⅱ》（同樣 primary-type Album、secondary-types 空）。這個實體**沒有登錄任何別名、也沒有任何外部連結**，是本批資料最空的一個藝人條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5ddc2f3c-e73f-48aa-a7cf-0720cdff54de&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第九軌叫〈虚伪〉——1994 年這批錄音以《Hypocrisy》的名字先在德國出過歐洲版，隨後是三十場歐洲巡演",
+   "北京來的七人全女子編制，1992 年德國國家電視台專程替她們拍了一部音樂片"
+  ],
+  "sound": "十軌、合計約 52 分半，曲長偏長且平均：六軌落在 5 到 6 分半之間，最長的〈错觉〉6:13 與〈不是游戏的年纪〉6:25，最短的開場曲〈交通灯〉3:53。收尾那首取了個三段式的長題〈一扇门,一堵墙,一座坟〉5:20。風格被描述為陰鬱的藍調底硬搖滾，帶一點新浪潮與另類金屬的成分。曲名一半是城市生活的直白物件（〈交通灯〉〈都是俗人〉），一半是抽象的自省（〈错觉〉〈虚伪〉〈梦想〉）。這一筆 release 的規格欄位幾乎全空——沒有國別、沒有狀態、沒有廠牌，只有載體與十軌長度。",
+  "keyTracks": [
+   "虚伪",
+   "交通灯",
+   "一扇门,一堵墙,一座坟",
+   "错觉"
+  ],
+  "status": "full",
+  "yearVerified": "**1996，但這個年份只有兩處薄證，且錄音更早。** 釘定條目 first-release-date 1996、其下唯一 release 亦記 1996——**但那筆 release 連 country 與 status 都沒填**，依裁定 43／57／65／78 不能單獨當 Official 背書。線上店面 collectionId 1065434395 的 releaseDate 記 1996-01-01（月初佔位）、但 **℗ 寫 2015 太合麥田**，那是數位上架年，不是原盤年。**真正要小心的是錄音年**：〈中国摇滚乐〉記 1994 年「眼镜蛇乐队首张专辑《Hypocrisy》在德国发行欧洲版」，本碟第 9 軌正是〈虚伪〉——**這批錄音至少在 1994 年就以歐洲版流通過**，1996 是中國版的年份。卡片年份 1996 維持不動，但**寫作層不要寫「1996 年錄的」，只能寫 1996 年出版。**",
+  "notes": "**探測層判定覆核通過且加值**：封面 CAA（release-group/0d83bbac 回 200）；試聽方面實測 **cn 店面 entity=song 攤出 0 軌**，tw／hk／us 才攤得出 10 軌、10 軌全有試聽，且**三店曲名都是繁體**，與 09-06 裁定同向。\\n**擋下策展層兩處**：\\n（1）`curatorWhy` 寫「1996 年這張是她們唯一一張在國內正式發行、且 MB 有建檔的專輯」。**釘定目錄裡還有 2000-02-18 的《眼镜蛇Ⅱ》**（同為 Album、secondary-types 空），「唯一」在目錄上不成立。有趣的是英文百科說她們「With only one album out」——**兩邊打架，兩種說法都不要寫**，寫「留下的錄音極少」這種不帶數字的說法才安全。\\n（2）「中國第一支全女子搖滾樂隊」**有兩處來源**（英文百科的「first all-female rock band in mainland China」、〈中国摇滚乐〉的「中国摇滚史上第一支女子乐队」），是本批少數禁得起查的序數宣稱；但同一段還掛著「第一支在歐洲巡演、第一支在 CBGB 登台的中國樂隊」兩條**沒有第二處佐證**的序數，那兩條不要寫。\\n**自我同名誤觸提醒**：盤名《眼鏡蛇》與掛名《眼鏡蛇樂隊》只差兩字，`selfTitled` 填 false 正確，但建卡時人工再看一次。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《眼鏡蛇》／《眼鏡蛇樂隊》**；這個藝人實體沒登錄任何別名，簡繁對照只能靠人工。\\n**可補的 Apple collectionId：`1065434395`／建議店面 tw（hk／us 亦可，曲名同為繁體）／10 軌、10 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:鮑家街43號|鮑家街43號",
+  "artist": "鮑家街43號",
+  "album": "鮑家街43號",
+  "facts": [
+   {
+    "f": "釘定的 release-group f35dcac6 欄位：title「鲍家街43号」（簡體建檔）、artist-credit「鲍家街43号」（藝人實體 2f60148c，country CN、type Group、**life-span 1993-11-11 至 2000、已標 ended**）、first-release-date **1997-06-01**、primary-type Album、secondary-types **空**、轄下 2 個 release，風格標籤只有一個 rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f35dcac6-bd43-4143-8781-9f183290dec5?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 CD 10 軌、曲序相同，差別在字體與年份：1997-06-01 的 CN／Official（catno CNA510231300、條碼 9787880450361）曲名是簡體；**2000 年的 TW／Official（catno SKC CR-011）連 release title 都寫繁體「鮑家街43號」、十軌曲名全部繁體**。逐軌長度：1〈我真的需要〉3:58、2〈小鳥〉4:58、3〈李建國〉4:50、4〈我們該做什麽〉3:03、5〈夜裡〉9:53、6〈沒有人要我〉5:12、7〈追夢〉4:40、8〈點亮火焰〉6:55、9〈我希望〉3:57、10〈晚安北京〉7:30（CN 版寫〈晚安，北京〉，多一個逗號）。**十軌合計約 55 分，第 5 軌〈夜裡〉9:53 是全碟最長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f35dcac6-bd43-4143-8781-9f183290dec5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "中文百科〈鮑家街43號〉：「鮑家街43號是中国北京的搖滾樂隊，1993年成立。**早年全員由中央音樂學院的學生組成，樂隊隊名亦由中央音樂學院校址鲍家街43号命名。**」條目列出 2000 年前的編制：汪峰（主唱和吉他，1993 年起）、龍隆（吉他）、李傑（吉他）、李斌（貝斯，1993–1997）、劉剛（鼓，1993–1997）、杜詠（鍵盤），1997 年後貝斯換王磊、鼓手先後為單曉帆、王立東、趙牧陽。歷程欄記「1993年11月11日成立。**2000年改名鮑家街樂隊。**」",
+    "src": "https://zh.wikipedia.org/wiki/%E9%AE%91%E5%AE%B6%E8%A1%9743%E8%99%9F"
+   },
+   {
+    "f": "中文百科〈鲍家街〉（北京西城區的一條胡同）：「1993年11月，鲍家街43号乐队成立，当时成员全部来自中央音乐学院，以中央音乐学院的门牌号码鲍家街43号为乐队命名。**该乐队第一张专辑《鲍家街43号》于1997年5月出版发行。**」——**月份與釘定條目的 1997-06-01 差一個月。**",
+    "src": "https://zh.wikipedia.org/wiki/%E9%B2%8D%E5%AE%B6%E8%A1%97"
+   },
+   {
+    "f": "線上店面：以掛名的簡體、繁體與羅馬字三種寫法在 cn／tw／us 三店各跑一次 search（entity=album），**沒有任何一筆對得上**；藝人目錄端點也搜不出這個掛名的 artistId（不是回 0 筆，是連藝人條目都不存在）。**四店查無，試聽走無來源狀態。**",
+    "src": "https://itunes.apple.com/search?term=%E9%B2%8D%E5%AE%B6%E8%A1%9743%E5%8F%B7%20%E9%B2%8D%E5%AE%B6%E8%A1%9743%E5%8F%B7&entity=album&limit=20&country=cn"
+   },
+   {
+    "f": "藝人 MBID 2f60148c 分頁全列，名下只有 **3 個 release-group**，全是 primary-type Album、secondary-types 空：1997-06-01 本張、1998-12-01《风暴来临》、2000《花火》。別名欄登錄英文 No. 43 Baojia Street 與繁體「鮑家街43號」。**這個藝人實體的 life-span 明寫 1993-11-11 起、2000 年止、ended 為真**，與百科所記「2000 年改名」相符。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=2f60148c-5222-4596-93f5-5b515af598c2&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "團名就是中央音樂學院的門牌號碼——早年全員是那所學校的學生",
+   "第五軌〈夜裡〉跑了 9 分 53 秒，收尾的〈晚安北京〉7 分 30 秒，一張 55 分鐘的碟有兩首把時間吃掉三成"
+  ],
+  "sound": "十軌、合計約 55 分。曲長落差很大：第 4 軌〈我們該做什麽〉只有 3:03，第 5 軌〈夜裡〉卻跑到 9:53，兩首緊鄰；收尾的〈晚安北京〉7:30 是第二長。中段〈點亮火焰〉6:55 再撐出一個長段落，其餘五軌壓在 3:57 到 5:12。編制是學院出身的五到六人團——主唱兼吉他、兩把吉他、貝斯、鼓，外加一台鍵盤，鍵盤在這張裡是固定編制而非客串。曲名以第一人稱的短句為主（〈我真的需要〉〈我們該做什麽〉〈沒有人要我〉〈我希望〉），中間夾一首以人名為題的〈李建國〉。條目掛的風格標籤只有一個 rock。",
+  "keyTracks": [
+   "晚安北京",
+   "夜裡",
+   "李建國",
+   "點亮火焰"
+  ],
+  "status": "full",
+  "yearVerified": "**1997 ✓，但月份兩說。** 釘定條目 first-release-date 1997-06-01、其下 CN 首版同為 1997-06-01（catno CNA510231300、條碼 9787880450361）；中文百科〈鲍家街〉寫「第一张专辑《鲍家街43号》于**1997年5月**出版发行」——**差一個月**。台灣版是 2000 年（SKC CR-011），比首版晚三年，不可拿來當年份。**四店查無，沒有 ℗ 可對。** 卡片年份 1997 正確。寫作層寫年份就好，**不要寫月份**。",
+  "notes": "**探測層判定覆核通過**：封面只能走 CAA（release-group/f35dcac6 回 200），**四店確實連 artistId 都搜不出來**，試聽走無來源狀態，與卡單預估一致。\\n**這張的簡繁狀況特別**：釘定條目與 CN 首版是簡體，**但同一個 release-group 底下的 2000 年台灣版 release title 本身就寫繁體「鮑家街43號」、十軌曲名也全是繁體**——卡片依 09-06 裁定用的繁體寫法，在這個 release-group 裡本來就有官方依據，不是我們自己轉的。曲名引用建議直接採台灣版的繁體寫法（唯一差別是第 10 軌 CN 版寫〈晚安，北京〉、TW 版寫〈晚安北京〉，少一個逗號）。\\n**擋下策展層一處**：`curatorWhy` 寫「90 年代末北京『學院派搖滾』最完整的一份紀錄」——「最完整」沒有來源，不要寫。**「中央音樂學院門牌號當團名」與「汪峰在成為主流歌手之前的隊伍」兩點都查證屬實**（兩處百科都寫團名取自中央音樂學院校址、汪峰自 1993 年起任主唱兼吉他）。**「2000 年另出過台灣版」也屬實**（TW／Official／2000／SKC CR-011）。\\n**可寫的額外事實**：藝人實體的 life-span 明寫 1993-11-11 至 2000、已結束，百科說 2000 年改名為「鮑家街樂隊」——這張是這個團名下三張碟裡的第一張。\\n**自我同名**（盤名＝掛名）且 Apple 全查無，是本批唯一一張這種組合；封面已由 CAA 解出，`selfTitled` 欄仍填 false，建卡時要人工覆核。\\n盤名含半形數字「43」，比對時不要被正規化吃掉。\\nApple collectionId：**無可補**。"
  }
 ]

@@ -678,5 +678,189 @@
   "status": "full",
   "yearVerified": "一致，1987 年 7 月。MB release-group first-release-date **1987-07**、其下同月兩筆實體（HK 12 吋黑膠 Kinn's Music KN 1-1、HK 卡帶 KN 1-4）互相佐證；Apple tw 1443334744 的 releaseDate **1987-07-17**（補上日）。中文維基〈亞拉伯跳舞女郎〉條目未寫發行月份，但記 1988 年加盟新藝寶後才重發 CD 版——與 MB 的 1989 年 Cinepoly CD 相容（Cinepoly 即新藝寶）。**三處年份一致。**注意 Apple 的 ℗ 記 2008（復黑版），不是原盤年。",
   "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1443334744**（「復黑」版，10 軌全有 previewUrl、曲名與曲序與 MB 1987 年黑膠逐位置完全相符、releaseDate 1987-07-17、trackCount 欄與曲目列都是 10）。**⚠ 該筆的 ℗ 是 2008，主線補進 `previews.json` 時要註明原盤年是 1987。**備選 `tw` **1443318407**《亞拉伯跳舞女郎(超越時代紀念版)》34 軌（2014），**軌數差太多，不建議當配對，但可當版本史的參考。**\\n**⚠ 軌數有兩種（10 與 12），配對時不要當成不符**：黑膠 10 軌、卡帶與 CD 12 軌，多出的是〈昔日舞曲〉〈新天地〉。**Apple 這一筆是 10 軌的黑膠版，與卡單釘的 MB release-group 相容。**\\n**⚠ 一處來源衝突要記下來**：維基說那兩首是 **1988 年加盟新藝寶重發 CD 版時額外收錄**，MB 卻把 12 軌的卡帶記在 **1987-07**（與黑膠同月）。**行文不要斷言哪一個對**，可寫成「黑膠是十軌，卡帶與其後的 CD 是十二軌」這種只描述結果的寫法。\\n**⚠ 序數要小心，這是本批最容易被攻破的一處。**維基寫的是「**首張粵語黑膠唱片錄音室專輯**」——限定語是「粵語黑膠唱片」；**MB 藝人頁上明明有一張《再見理想》1986-03 排在本張之前**。**行文不得寫「首張專輯」「出道專輯」「第一張唱片」**；要寫的話必須照維基原文保留「粵語黑膠唱片」這串限定，或乾脆改寫成「1987 年的碟」。\\n**製作事實可寫**（維基有具名記述）：Kinn's Music 製作及出品、寶麗金發行、中東風情概念專輯、封面取景自新加坡、全碟作曲黃家駒。\\n**掛名**：MB 與 Apple 都掛拉丁字母「Beyond」，卡單一致。**注意 Apple tw 用「Beyond」搜 `entity=musicArtist` 會回四個同名實體**，取 artistId 79668659。"
+ },
+ {
+  "key": "desc4:Beyond|現代舞台",
+  "artist": "Beyond",
+  "album": "現代舞台",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group c3a7f2cf 的欄位：title「現代舞台」、artist-credit「Beyond」（藝人實體 MBID d84d02ad）、first-release-date 1988、primary-type Album、secondary-types 空。轄下有 5 個 release：**1988 HK 12 吋黑膠（Kinn's Music KN4-1，11 軌）**、1989 JP CD（Fun House FHCF 2128，11 軌）、1989 HK CD（Cinepoly Records CP-5-001K，11 軌）、2007-06-04 HK CD（Cinepoly 1735918，11 軌）、2014-10-24 HK 雙 CD（Cinepoly 8897958，18 軌＋17 軌的紀念版）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1988 年黑膠那一筆（release 81ca2294）的逐軌曲目與長度，11 軌：1〈舊日的足跡〉262 秒 2〈天真的創傷〉240 3〈赤紅熱血〉239 4〈衝上雲霄〉237 5〈冷雨夜〉258 6**〈雨夜之後 (純音樂)〉40 秒** 7〈現代舞台 (HA，HA，HA)〉252 8〈午夜流浪〉255 9〈Once Again〉267 10〈城市獵人〉311 11〈迷離境界〉267。總長約 44 分鐘。**第 6 軌是一段 40 秒的純音樂間奏。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c3a7f2cf-e8cf-46a9-bd9f-101eec5fd40b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1443322227：collectionName「BTB現代舞台- Beyond」、artistName「Beyond」、releaseDate **1988-02-27**、copyright「℗ 2007 Cinepoly Records Co. Ltd.」、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲序與 MB 逐位置相符，逐軌長度 262／241／239／**216**／259／39／252／256／266／309／268 秒。**第 4 軌〈衝上雲霄〉Apple 是 216 秒、MB 是 237 秒，差 21 秒——這是全碟唯一一處明顯落差，其餘十軌都在 3 秒以內。**第 7 軌 Apple 只寫〈現代舞台〉，MB 帶副題〈現代舞台 (HA，HA，HA)〉；第 6 軌 Apple 寫 (Instrumental)、MB 寫（純音樂）。",
+    "src": "https://itunes.apple.com/lookup?id=1443322227&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈現代舞台〉條目：**「《現代舞台》是香港搖滾樂隊 Beyond 發行的第二張粵語錄音室專輯，由 Kinn's Music Ltd. 製作及出品，寶麗金唱片有限公司發行。」**條目稱這張專輯**比上一張《亞拉伯跳舞女郎》回歸搖滾，但同時 Beyond 的音樂作品開始加入商業元素**；其中〈舊日的足跡〉〈赤紅熱血〉〈冷雨夜〉〈現代舞台〉為 Beyond 的經典代表作。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E8%88%9E%E5%8F%B0"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Beyond 名下 118 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 28 筆，1980 年代依序為：《再見理想》1986-03、《亞拉伯跳舞女郎》1987-07、**《現代舞台》1988**、《秘密警察》1988-09-06、《Beyond IV》1989-07-11、《真的見証》1989-12。**依 MB 這份排序本張是第 3 筆**，與維基的「第二張粵語錄音室專輯」差一——差別在《再見理想》1986-03。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d84d02ad-d74c-4227-8073-6f13a039cfac&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "Apple **tw** 另有兩筆相關條目：collectionId **1443327215**《Beyond現代舞台(超越時代紀念版)》2014-01-01、35 軌（對應 MB 那筆 2014 雙 CD），以及 collectionId **1684698497**《舊日足跡》1988-12-23、12 軌、This Compilation ℗ 1988 Cinepoly——**後者的盤名與本碟第 1 軌同名但少一個「的」字，是同年底的另一張碟，不是本張。**",
+    "src": "https://itunes.apple.com/lookup?id=79668659&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "第六軌只有四十秒，叫〈雨夜之後〉，沒有人聲——它接在〈冷雨夜〉後面，是一張搖滾碟給自己留的一口氣",
+   "前一張唱中東沙丘，這一張唱城市：〈午夜流浪〉〈城市獵人〉〈現代舞台〉——一年之內把場景整個換掉"
+  ],
+  "sound": "單片 11 軌，MB 1988 年黑膠逐軌 262／240／239／237／258／40／252／255／267／311／267 秒，Apple tw 1443322227 與之相差 3 秒以內（第 4 軌除外），總長約 44 分鐘。**扣掉 40 秒的純音樂間奏，十首歌平均 4 分 22 秒，最長的〈城市獵人〉5 分 11 秒、最短的〈衝上雲霄〉3 分 57 秒**（Apple 那一版只有 3 分 36 秒）。第 6 軌〈雨夜之後〉這段 40 秒的器樂緊接在 4 分 18 秒的〈冷雨夜〉之後，等於把 A 面收在一段餘韻裡。與前一張《亞拉伯跳舞女郎》相比，曲目長度分佈接近，但主題從中東幻境換成城市場景（〈午夜流浪〉〈城市獵人〉〈現代舞台〉），維基稱這一張「比上一張回歸搖滾，但同時開始加入商業元素」。",
+  "keyTracks": [
+   "冷雨夜",
+   "舊日的足跡",
+   "現代舞台"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。MB release-group first-release-date **1988**、其下 1988 年的 HK 12 吋黑膠（Kinn's Music KN4-1）；Apple tw 1443322227 的 releaseDate **1988-02-27**（補上月日）。中文維基〈現代舞台〉條目未寫發行日期，但把本張定位在《亞拉伯跳舞女郎》（1987-07）之後、與 MB 的年序一致。**三處年份一致。**注意 Apple 的 ℗ 記 2007（Cinepoly 復刻），不是原盤年；MB 1989 年的 JP 與 HK CD 也都是後續發行。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1443322227**（11 軌全有 previewUrl、曲序與 MB 逐位置相符、releaseDate 1988-02-27、trackCount 欄與曲目列都是 11）。**⚠ 該筆的 ℗ 是 2007，主線補進 `previews.json` 時要註明原盤年是 1988。**\\n**⚠ 第 4 軌長度落差 21 秒**：MB 記〈衝上雲霄〉237 秒、Apple 記 216 秒，其餘十軌差 3 秒以內。**可能是不同版本的剪輯**，行文引這一首的長度時要註明來源或避開數字。\\n**⚠ 序數與前一張同型、同樣要小心。**維基寫「**第二張粵語錄音室專輯**」，MB 藝人頁本張排第 3 筆（差在《再見理想》1986-03）。**行文若要寫序數，必須照維基原文保留「粵語錄音室專輯」這串限定**；寫「第二張專輯」會被《再見理想》攻破。\\n**第 7 軌的副題**：MB 寫〈現代舞台 (HA，HA，HA)〉、Apple 只寫〈現代舞台〉。**行文取〈現代舞台〉**；要提副題的話註明是 MB 的登錄。**注意 MB 那個副題裡是全形逗號，引用時不要改成半形。**\\n**⚠ 不要配到 1684698497**：那是 1988-12-23 的《舊日足跡》（12 軌、This Compilation），盤名與本碟第 1 軌〈舊日的足跡〉只差一個字。\\n**製作事實可寫**（維基有具名記述）：Kinn's Music 製作及出品、寶麗金發行、「比上一張回歸搖滾但開始加入商業元素」（是維基的評述，引用時註明）。\\n**掛名**：MB 與 Apple 都掛拉丁字母「Beyond」，卡單一致。"
+ },
+ {
+  "key": "desc4:Beyond|繼續革命",
+  "artist": "Beyond",
+  "album": "繼續革命",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b2b3dfc3 的欄位：title「繼續革命」、artist-credit「Beyond」（藝人實體 MBID d84d02ad）、first-release-date **1992-08**、primary-type Album、secondary-types 空。轄下只有 2 個 release，都是 12 軌：**1992-08 HK CD（Warner Music Hong Kong，barcode 4509 90222 2）**與 1993-05-17 **KR** 12 吋黑膠（wea 4509-90222-1）。**兩筆共用同一組 4509-90222 編號。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b2b3dfc3-d466-4ae7-9a11-4b352653760b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1992-08 那一筆 HK CD（release 835b1079）的逐軌曲目與長度，12 軌：1〈長城〉290 秒 2〈農民〉316 3〈不可一世〉249 4〈Bye-Bye〉205 5〈遙望〉319 6〈溫暖的家鄉〉191 7〈可否衝破〉285 8〈快樂王國〉213 9〈繼續沉醉〉287 10〈早班火車〉350 11〈厭倦寂寞〉261 12〈無語問蒼天〉279。總長約 51 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b2b3dfc3-d466-4ae7-9a11-4b352653760b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面有兩筆同一張碟：（1）collectionId **1705353849**「繼續革命」，releaseDate **1992-07-10**、copyright「℗ 1992 AMUSE INC. & FUN HOUSE INC.」、12 軌全部有 previewUrl，逐軌長度 291／317／256／199／320／191／286／213／288／350／261／281 秒；（2）collectionId **201570795**「繼續革命」，releaseDate 1992-07-31、「℗ 2002 Warner Music Hong Kong Limited」、12 軌全部有 preview，逐軌長度 290／316／257／200／324／191／287／214／289／352／259／281 秒。**兩筆的曲名與曲序與 MB 逐位置完全相符，逐軌長度彼此相差 1–4 秒，是同一份母帶的兩次上架。**",
+    "src": "https://itunes.apple.com/lookup?id=1705353849&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈繼續革命〉條目：這是 Beyond **第八張粵語專輯**，是 Beyond **加盟華納唱片及起行往日本發展後發行的第一張專輯**；有樂評人認為與以往作品相比，專輯較為華麗且散發著鄉愁。**〈長城〉是該專輯的主打歌**，形容中國人的思想退步、封閉保守如同長城般閉關自守，是〈大地〉的延續，歌曲帶一點離鄉別井、孤單寂寞的感覺，是 Beyond 往日本發展的寫照。**音樂大師喜多郎參與鍵琴演奏和編曲工作。**條目另記〈長城〉一曲有粵語專輯《繼續革命》、國語專輯《信念》、日語專輯《超越》三種語言及歌詞版本。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%B9%BC%E7%BA%8C%E9%9D%A9%E5%91%BD"
+   },
+   {
+    "f": "**維基所說的三語三張碟，MB 上三筆都在。**MB 藝人頁 28 筆純 Album 中 1992 年有三筆：《信念》1992（國語）、**《繼續革命》1992-08（粵語）**、《超越》1992-09-26（日語）。三張同年、相隔各一個多月，與維基「〈長城〉有三種語言及歌詞版本」的說法逐筆吻合。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d84d02ad-d74c-4227-8073-6f13a039cfac&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**兩筆 Apple 條目的 ℗ 分屬兩家日本公司與華納香港**：1705353849 的 ℗ 寫 AMUSE INC. & FUN HOUSE INC.（Beyond 赴日發展時的日方經紀與唱片公司），201570795 的 ℗ 寫 Warner Music Hong Kong。MB 的兩筆 release 則分別掛 Warner Music Hong Kong（HK CD）與 wea（KR 黑膠）。**這一張碟的版權在港日兩地同時登錄，是「往日本發展後的第一張」這個定位的直接痕跡。**",
+    "src": "https://itunes.apple.com/lookup?id=201570795&country=tw&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "喜多郎進來彈鍵盤、編曲——〈長城〉這首歌後來出了粵語、國語、日語三個版本，分屬三張不同的碟",
+   "十二軌五十一分鐘，最長的〈早班火車〉五分五十秒；那是他們搬去日本之後交出的第一張碟"
+  ],
+  "sound": "CD 單片 12 軌，MB 與 Apple 兩筆逐軌長度相差都在 5 秒以內（290／316／249／205／319／191／285／213／287／350／261／279 秒），總長約 51 分鐘。**十二首平均 4 分 15 秒，最長的〈早班火車〉5 分 50 秒、最短的〈溫暖的家鄉〉3 分 11 秒**。編排把主打的〈長城〉4 分 50 秒放第 1 軌，緊接 5 分 16 秒的〈農民〉——**開頭兩首就是全碟第三與第二長的曲子**，中段用〈Bye-Bye〉3 分 25 秒與〈快樂王國〉3 分 33 秒兩首短曲調節，尾段的〈早班火車〉再拉到接近六分鐘。維基記喜多郎參與鍵琴演奏與編曲，並稱這張碟「較為華麗且散發著鄉愁」。",
+  "keyTracks": [
+   "長城",
+   "農民",
+   "早班火車"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992，**但月份三處各不相同。**MB release-group first-release-date **1992-08**、其下 HK CD 也記 1992-08；Apple 1705353849 記 **1992-07-10**、Apple 201570795 記 **1992-07-31**。**三處都是 1992 年，但月份在 7 月與 8 月之間分歧**（兩筆 Apple 條目自己也差三週）。中文維基〈繼續革命〉條目未寫發行日期。**行文寫 1992 年安全，寫月份要註明來源。**MB 另一筆 1993-05-17 的韓國黑膠是後續發行。",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1705353849**（12 軌全有 previewUrl、曲序與 MB 逐位置完全相符、**℗ 1992 與 MB 同年**、trackCount 欄與曲目列都是 12）。備選 `tw` **201570795**（同一份母帶，℗ 2002 華納香港）。**兩筆都可用，建議取 1705353849 因為 ℗ 年份正確。**\\n**⚠ 序數要保留限定語。**維基寫「Beyond **第八張粵語專輯**」；MB 藝人頁 28 筆純 Album 依日期排序本張是**第 12 筆**，但那 28 筆裡混了國語盤《信念》、日語盤《超越》與《Deliberate 猶豫》等非粵語專輯。**行文寫「第八張粵語專輯」要註明來源是維基一處；寫「第八張專輯」不成立。**\\n**〈長城〉三語三版本可寫**（維基有具名記述，且 MB 上《信念》《超越》兩張同年條目可佐證）。**喜多郎參與鍵琴演奏與編曲也可寫。**\\n**「加盟華納唱片及起行往日本發展後發行的第一張專輯」可寫**——這是維基原句，**Apple 兩筆條目的 ℗ 分掛日本 AMUSE／FUN HOUSE 與華納香港，可作旁證。**\\n**曲名第 4 軌**：MB 的 HK CD 寫〈Bye-Bye〉、Apple 201570795 寫〈Bye Bye〉（無連字號）。**取〈Bye-Bye〉。**\\n**掛名**：MB 與 Apple 都掛拉丁字母「Beyond」，卡單一致。"
+ },
+ {
+  "key": "desc4:關正傑|天蠶變",
+  "artist": "關正傑",
+  "album": "天蠶變",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 633e3bd4 的欄位：title「天蠶變」、artist-credit「關正傑」（繁體漢字，藝人實體 MBID 701e418e）、first-release-date 1979、primary-type Album、secondary-types 空。轄下有 5 個 release，全部 11 軌：**1979 HK 12 吋黑膠（Philips 7237 021）**、1979 HK 卡帶（Philips 7237 020）、1999-05-01 HK CD（Philips／Universal Music Hong Kong 546 176-2(X)）、2017-09-24 HK CD（Universal Music Hong Kong 5793644）、一筆 AF 數位。",
+    "src": "https://musicbrainz.org/ws/2/release-group/633e3bd4-0ebc-3af5-a72c-431b6661d7c3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1979 年黑膠那一筆（release 4ef55410）的逐軌曲目與長度，11 軌：1〈天蠶變〉180 秒 2〈問君知否〉195 3〈相對無言〉152 4〈孤芳獨對天〉162 5〈舊事隨夢去〉185 6〈莫彷徨〉170 7〈月亮照高原〉237 8〈雪中情〉195 9〈我要走天涯〉202 10〈換到千般恨〉209 11〈一個浪花〉185。總長約 38 分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=633e3bd4-0ebc-3af5-a72c-431b6661d7c3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1525692917：collectionName「天蠶變」、artistName「關正傑」、releaseDate **1979-06-30**、copyright「℗ 1979 Universal Music Ltd.」、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲序與 MB 逐位置相符，逐軌長度 185／204／154／167／189／180／240／199／207／208／186 秒，與 MB 每一軌相差 1–10 秒。**Apple 逐軌加註劇集出處**：第 1 軌註「電視劇 天蠶變 主題曲」、第 4 軌註「麗的武俠劇《天蠶變》插曲」、第 10 軌註「電視劇 天蠶變 插曲」。第 6 軌 MB 寫〈莫彷徨〉、Apple 寫〈莫徬徨〉。",
+    "src": "https://itunes.apple.com/lookup?id=1525692917&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈天蠶變 (電視劇)〉條目：《天蠶變》是**麗的電視**的原創武俠劇集，全劇共 60 集，**於 1979 年 7 月晚上 8 時黃金時段首播**；故事策劃蕭若元，監製蕭笙與麥當雄，武術指導程小東與韓義生。該劇於 1983 年 8 月在台灣華視首播，徐少強及顧冠忠因飾演雲飛揚而紅遍港台。**條目記本劇「於香港電視史的重要意義，是令單元劇徹底退出黃金檔」**——當時無綫每晚八至九點專播單元劇，麗的安排長劇《天蠶變》於週一至週五每天連續播放，逼得無綫跟著效仿，此後兩家電視台都在週一至週五每晚播放兩線長劇。續集為《天龍訣》。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E8%A0%B6%E8%AE%8A_(%E9%9B%BB%E8%A6%96%E5%8A%87)"
+   },
+   {
+    "f": "**唱片比劇集早一點點。**Apple 記本碟 releaseDate 1979-06-30，中文維基記劇集 **1979 年 7 月**首播——**唱片在劇集開播前後上市**，MB 的 first-release-date 只給到 1979 年。",
+    "src": "https://itunes.apple.com/lookup?id=1525692917&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列關正傑名下 38 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 14 筆，依 first-release-date 排序：《變色龍》1978、《近代豪俠傳》1979、**《天蠶變》1979**、《天龍訣》1979、《人在江湖》1980、《大地恩情》1980、《英雄出少年》1981、《天龍八部之虛竹傳奇》1982、《天籟》1983、《常在我心間…愛你不分早晚》1983、《關正傑》1984、《’85關正傑》1985、《啟示》1986、《一個秋天》1988。**十四張裡有九張的盤名直接就是電視劇名**——這位歌手的作品目錄幾乎等於一份 1978–1982 年港劇主題曲清單。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=701e418e-c88c-4c31-875a-e6889f051f13&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "**續集《天龍訣》也在 Apple 上、與本碟同日**：tw collectionId **1525692810**《天龍訣》，releaseDate 1979-06-30、℗ 1979 Universal Music Ltd.、11 軌——**與本碟同一天上架、同樣 11 軌、同樣的 ℗**，配對時很容易誤取。",
+    "src": "https://itunes.apple.com/lookup?id=14936223&country=tw&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有三首直接掛著同一部劇：主題曲、插曲、再一首插曲——這張碟本來就是為一部六十集的武俠劇做的",
+   "那部劇把單元劇趕出了香港的黃金檔；唱片在它開播前一個月就上市了"
+  ],
+  "sound": "單片 11 軌，MB 1979 年黑膠逐軌 180／195／152／162／185／170／237／195／202／209／185 秒，Apple tw 1525692917 與之相差 1–10 秒，總長約 38 分鐘。**十一首平均 3 分 26 秒，最長的〈月亮照高原〉3 分 57 秒、最短的〈相對無言〉2 分 32 秒**。點題曲〈天蠶變〉3 分整放第 1 軌，是全碟第四短的一首——電視劇主題曲的長度規格。**只有三軌（第 1、4、10）與劇集直接相關**（Apple 逐軌註記為證），其餘八首是獨立曲目，包括後來被其他歌手唱過的〈舊事隨夢去〉與〈我要走天涯〉——**同組徐小鳳 1978 年《風雨同路》第 6 軌也有一首〈舊事隨夢去〉、林子祥 1979 年《抉擇》第 8 軌也有一首〈我要走天涯〉**，是同一時期港樂圈曲目互相流通的例子。",
+  "keyTracks": [
+   "天蠶變",
+   "孤芳獨對天",
+   "換到千般恨"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1979。MB release-group first-release-date **1979**、其下兩筆 1979 年的實體發行互相佐證（HK 12 吋黑膠 Philips 7237 021、HK 卡帶 7237 020）；Apple tw 1525692917 的 releaseDate **1979-06-30**、℗ 1979 Universal Music Ltd.；中文維基〈天蠶變 (電視劇)〉條目記劇集 **1979 年 7 月**首播——**唱片與劇集同年、唱片略早，三處相容。**",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1525692917**（11 軌全有 previewUrl、曲序與 MB 逐位置相符、℗ 1979 與 MB 同年、trackCount 欄與曲目列都是 11）。\\n**⚠ 不要配到 1525692810**：那是續集劇的碟《天龍訣》，**同一天上架、同樣 11 軌、同樣 ℗ 1979 Universal**——只靠年份與軌數一定會誤配，必須逐軌攤開。這是本批第五個需要逐軌比對才能排除的候選。\\n**第 6 軌曲名分歧**：MB 寫〈莫**彷**徨〉、Apple 寫〈莫**徬**徨〉。兩種寫法都在流通（「彷徨」與「徬徨」皆通），**行文避開這一軌或照 MB 寫。**\\n**序數不得寫。**維基〈天蠶變 (電視劇)〉是劇集條目、沒有講唱片；MB 藝人頁 14 筆純 Album 裡 1979 年就有三張（《近代豪俠傳》《天蠶變》《天龍訣》）且都沒有月份，排不出序。\\n**可寫的劇集背景**（維基有具名記述）：麗的電視原創武俠劇、全劇 60 集、1979 年 7 月晚上 8 時黃金時段首播、故事策劃蕭若元、監製蕭笙與麥當雄、武術指導程小東、**「令單元劇徹底退出黃金檔」**、續集《天龍訣》。**同條目提到主題曲是香港電台第二屆十大中文金曲之一，屬年終榜，依派工信不得寫入 facts。**\\n**⚠ 行文要分清歌與劇**：這張碟只有三軌與劇集相關，**不要把整張碟寫成「電視劇原聲帶」。**MB 這個 RG 的 secondary-types 是空的（沒有標 Soundtrack），卡單填 Album 正確。\\n**掛名**：MB 與 Apple 都掛繁體漢字「關正傑」，無分歧。"
+ },
+ {
+  "key": "desc4:仙杜拉|啼笑因緣 / 好彩又到Sunday",
+  "artist": "仙杜拉",
+  "album": "啼笑因緣 / 好彩又到Sunday",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 2414af2f 的欄位：title「啼笑因緣 / 好彩又到Sunday」（兩個曲名並列）、artist-credit「仙杜拉」（繁體漢字，藝人實體 MBID e8d3d003）、first-release-date 1974、primary-type Album、secondary-types 空。轄下只有 1 個 release：1974 年 HK、Official、12 吋黑膠、廠牌 **Crown Records**、catno CST-12-18、**14 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2414af2f-ede4-4281-9d6b-2fa1b29f4922?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 這張 release（afe26f8d）的逐軌曲目，14 軌、無長度登錄：1〈啼笑因緣〉2〈送郎〉3〈想郎〉4〈我和你〉5〈賣唱姑娘〉6〈金蓮自嘆〉7〈啼笑因緣主題曲音樂〉8〈好彩又到Sunday〉9〈夢裡訴相思〉10〈相思淚〉11〈恭喜發財〉12〈苦酒嘗透〉13〈薄命花〉14〈兩地相思〉。**第 7 軌是主題曲的純音樂版，剛好落在 A 面的最後、第 8 軌〈好彩又到Sunday〉開啟 B 面——盤名的兩個曲名正是兩面的第一首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2414af2f-ede4-4281-9d6b-2fa1b29f4922&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **tw** 店面 collectionId 1842862146：collectionName **「Ti Xiao Yin Yuan」（整串漢語拼音）**、artistName「仙杜拉」、releaseDate 1974-01-01、copyright「℗ 1974 Crown Music Entertainment (HK) Limited, exclusively distributed by Sony Music Entertainment Singapore Ltd.」、trackCount 14。`entity=song` 攤得出 **14 軌、14 軌全部有 previewUrl**，曲序與 MB 逐位置完全相符，逐軌長度 150／192／149／133／104／131／206／141／173／212／125／202／146／132 秒，總長約 36 分鐘。**Apple 第 1 與第 7 軌寫〈啼笑姻緣〉（女字旁），MB 寫〈啼笑因緣〉；第 8 軌 Apple 寫〈好彩天到SUNDAY〉，MB 寫〈好彩又到Sunday〉。**",
+    "src": "https://itunes.apple.com/lookup?id=1842862146&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文維基〈啼笑因緣 (歌曲)〉條目：〈啼笑因緣〉是 1974 年無綫電視民初背景電視劇《啼笑因緣》的主題曲，由**顧嘉煇負責作曲及編曲、葉紹德填詞、仙杜拉主唱**。此曲亦被改編為劇中插曲〈想郎〉，依舊由顧嘉煇編曲、葉紹德重新填詞、仙杜拉主唱。**「同年，〈啼笑因緣〉及〈想郎〉均收錄於仙杜拉首張粵語音樂專輯《啼笑因緣 / 好彩又到Sunday》內。」**",
+    "src": "https://zh.wikipedia.org/wiki/%E5%95%BC%E7%AC%91%E5%9B%A0%E7%B7%A3_(%E6%AD%8C%E6%9B%B2)"
+   },
+   {
+    "f": "維基同一條目記這首歌的來歷：顧嘉煇最初建議填粵語詞，但當時粵語歌的流行度和地位不如國語歌，唱片公司有所疑慮，**顧嘉煇便與唱片公司攤分成本、自己負責製作對方負責發行**；**選擇仙杜拉主唱的原因，是她一向以演唱歐西流行曲為主、形象西化，希望能改變大眾對粵語歌「老土」的印象。仙杜拉曾透露因不諳中文，灌唱此曲前要先把歌詞拼寫為英文。**填詞方面，葉紹德的初稿文言成份很重，編導王天林想改得通俗點，經幾番修改，葉被逼出一句「為怕哥你變咗心」，王才收貨。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%95%BC%E7%AC%91%E5%9B%A0%E7%B7%A3_(%E6%AD%8C%E6%9B%B2)"
+   },
+   {
+    "f": "維基同一條目的反響段：**〈啼笑因緣〉當年一出隨即風靡一時，主流觀點視之為粵語流行曲振興的分水嶺（但有論者認為應是 1973 年面世的〈分飛燕〉）**，社會大眾從此不再歧視粵語歌。樂評人黃志華認為顧嘉煇 1973 年所寫的〈煙雨濛濛〉曲調西化又轉調、過於前衛而未能走紅，而〈啼笑因緣〉則「於中式小調之中悄悄加入一點西化元素」。黃霑指顧嘉煇採用中西合璧手法：西洋風體現在曲式（AABA）、和聲處理及編曲手法，中國風體現在主奏樂器（**月琴和二胡**）以及 A1、A2 兩段所用的傳統五聲音階。填詞人黎彼得則認為「為怕哥你變咗心」一句開了往後香港樂壇以粵語方言入詞的風氣。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%95%BC%E7%AC%91%E5%9B%A0%E7%B7%A3_(%E6%AD%8C%E6%9B%B2)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列仙杜拉名下只有 **1 個 release-group**，就是本張。她其餘的錄音在 MB 上沒有建檔。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e8d3d003-ac14-4b50-88b8-8c29248e53a1&limit=100&offset=0&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "她不懂中文，灌這首歌之前得先把歌詞拼成英文——唱出來的卻是後來人人說的粵語歌分水嶺",
+   "第七軌是主題曲的純音樂版、剛好收在 A 面末尾；盤名上那兩個曲名，正是兩面各自的第一首"
+  ],
+  "sound": "單片 12 吋黑膠、14 軌，MB 未登錄長度，Apple tw 1842862146 逐軌 150／192／149／133／104／131／206／141／173／212／125／202／146／132 秒，總長約 36 分鐘。**十四首平均只有 2 分 34 秒，最長的〈相思淚〉3 分 32 秒、最短的〈賣唱姑娘〉只有 1 分 44 秒**——本批 b 組平均曲長最短的一張，1974 年的粵語盤還是一面七首的密度。第 7 軌〈啼笑因緣主題曲音樂〉3 分 26 秒是全碟第二長，且是純音樂。編制上維基記主奏樂器是**月琴和二胡**、曲式是 AABA、A 段用傳統五聲音階——這張碟的聲音是中式小調的骨架加西洋和聲。",
+  "keyTracks": [
+   "啼笑因緣",
+   "想郎",
+   "好彩又到Sunday"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974。MB release-group first-release-date **1974**、其下唯一 release 記 1974（HK、Official、Crown Records CST-12-18、12 吋黑膠）；Apple tw 1842862146 的 releaseDate 1974-01-01、℗ 1974 Crown Music Entertainment (HK)；中文維基〈啼笑因緣 (歌曲)〉條目獨立記主題曲出自 1974 年無綫電視劇《啼笑因緣》、並記「**同年**，〈啼笑因緣〉及〈想郎〉均收錄於仙杜拉首張粵語音樂專輯」——**三處一致。**",
+  "notes": "**探測層可補的 Apple 條目：`tw` collectionId 1842862146**（14 軌全有 previewUrl、曲序與 MB 逐位置完全相符、℗ 1974 與 MB 同年、trackCount 欄與曲目列都是 14）。**裁定 185 實例**：Apple 的 collectionName 是整串漢語拼音「Ti Xiao Yin Yuan」，漢字盤名只出現在曲目層——與本批羅文《小李飛刀》（tw 1842833451「Xiao Li Fei Dao」）同一個形態，**都是 Crown（娛樂唱片）整批授權新加坡 Sony 上架的結果**。key／店面／id／軌數：`desc4:仙杜拉|啼笑因緣 / 好彩又到Sunday`／tw／1842862146／14 軌。\\n**裁定 192 更新**：仙杜拉在 `search?term=仙杜拉&entity=musicArtist&country=tw` **查得到**（artistId 401426980），不是「連藝人實體都 search 不出來」。\\n**兩處曲名取 MB**：第 1、7 軌 Apple 寫〈啼笑**姻**緣〉（女字旁），MB 與中文維基條目名都寫〈啼笑**因**緣〉——**兩處對一處，取「因緣」**（原著張恨水小說書名即《啼笑因緣》）。第 8 軌 Apple 寫〈好彩**天**到SUNDAY〉，MB 與卡單寫〈好彩**又**到Sunday〉——**取「又到」**，Apple 那個「天」是形近錯字，且 Apple 把 Sunday 全大寫。\\n**「首張粵語音樂專輯」：可以寫，但只有維基一處。**維基原句是「同年，〈啼笑因緣〉及〈想郎〉均收錄於仙杜拉**首張粵語音樂專輯**《啼笑因緣 / 好彩又到Sunday》內」；MB 名下只有這 1 個 release-group，**建檔量太少不構成獨立佐證。****判定：允許寫「首張粵語專輯」並保留「粵語」限定，不得寫「唯一」或帶數字的序數。**\\n**可寫的製作與反響事實**（維基有具名記述）：顧嘉煇作曲編曲、葉紹德填詞、顧嘉煇與唱片公司攤分成本、選仙杜拉是因為她形象西化、她不諳中文要把歌詞拼成英文、王天林要求改通俗、「為怕哥你變咗心」、主奏樂器月琴與二胡、AABA 曲式、五聲音階。**「粵語流行曲振興的分水嶺」是主流觀點的轉述且維基自己註明有異議（1973 年〈分飛燕〉），引用時必須連異議一起寫，不得寫成定論。**\\n**掛名**：MB 與 Apple 都掛繁體漢字「仙杜拉」，無分歧。"
  }
 ]
