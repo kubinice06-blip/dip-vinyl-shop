@@ -158,5 +158,163 @@
   "status": "full",
   "yearVerified": "一致，1996。release-group first-release-date **1996**、其下最早的 release 是 1996 GB 的 Six6 SIXXCD 6（Official），其餘三筆是 1997-11-18、1998 與 2023-07-07 的後續版本。**串流那一路的年份要當心**：collectionId 1695552154 的 releaseDate 記 **1996-01-15**、℗ 卻寫「℗ 2016 BEAT Music Fund」，**而曲目列是 1997 年那個 22 軌的美國版**——年份標成 1996、內容卻是隔年那一版。四處對照後年份仍是 1996。**同名先行單曲：無。**",
   "notes": "**裁定 167 的處置正確**：本張 primary-type=Album、secondary-types=[Compilation]，**照一般 Album 寫、例外欄位一律留空**，卡單填法無誤。｜**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **1996 GB 的 Six6 SIXXCD 6（20 軌）**，串流上架與其餘三筆再發**全是 22 軌**。**行文只能引 20 軌**；〈Truth of Self Evidence〉〈The Human Bond〉〈Velocity Funk〉三軌**不是本張曲目**，而〈Station of the Groove〉2:06 **只在本張上**、是行文可用的獨有細節。｜**回撈的 3 個候選：1695552154 逐軌覆核成立但內容是 22 軌的美國版**（若採用要在下游標明版本差）；**1695551330 與 1695543806 兩筆駁回**——前者是另一組 Extended Mix 曲目，後者是每軌標題都掛著取樣宣傳盤字樣的八軌宣傳盤。｜**`curatorRisk` 說「三店 search 與藝人目錄 lookup 全部查無」這一條要改**：回撈清單本張有三個候選，其中 1695552154 逐軌對得上，**不是查無**。｜`curatorWhy` 寫「把他 1986–96 年散在 KMS、Transmat、Network 的十年工作集中起來」——**廠牌那三個名字本層查不到來源，行文不要寫**；「本張是這個掛名下年代最早的一筆 Album 形態作品」**查證屬實**。｜**盤名兩種**：1998 年比利時版的 title 是《Faces & Phases: The Kevin Saunderson Collection》，**是同一個 release-group 的另一個 release，不是另一張碟**。｜**曲名撇號**：1996 原盤寫〈Let's, Let's, Let's Dance〉〈Groovin' Without a Doubt〉（ASCII 直撇），1998 與 2023 兩版改用彎撇。本檔依原盤。"
+ },
+ {
+  "key": "desc2:Reese|Just Want Another Chance",
+  "artist": "Reese",
+  "album": "Just Want Another Chance",
+  "facts": [
+   {
+    "f": "release-group db7921a6 的欄位：title「Just Want Another Chance」、artist-credit「Reese」（藝人實體 MBID e753448b，type Person、country US、**disambiguation「US house DJ/producer Kevin Saunderson」**）、first-release-date **1988**、**primary-type Single**、secondary-types **空**。轄下 **2 筆 release，都 Official**：1988 US 的 Incognito Records IR 111787（**12 吋、8 軌**）與 2014 XW 的 KMS KMS 153（**數位、8 軌**）。**兩筆軌數相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/db7921a6-afca-4af5-9895-da75fd7c64b3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 US 原盤（Incognito Records IR 111787，12 吋）的逐軌曲目：**前三軌是同名曲的三種版本，長度 5:13／5:45／2:30；第 4 到第 8 軌五軌在曲目列上全部是無標題（Untitled）、未記長度**。**八軌裡有五軌沒有名字**——這是把節奏素材當作品的一半直接壓進碟裡的做法。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=db7921a6-afca-4af5-9895-da75fd7c64b3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店的 collectionId **1446257423**：collectionName「Just Want Another Chance」、artistName「**Reese & Kevin Saunderson**」、releaseDate 1988-05-01、trackCount 8、copyright「℗ 1988 BEAT Music Fund」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：1〈Just Want Another Chance〉5:13、2〈(Extended Mix)〉5:46、3〈(Edit)〉2:24、4-8〈Rhythm Track 1〉3:08／〈2〉1:52／〈3〉2:17／〈4〉2:16／〈5〉3:49。**前三軌與原盤三個版本逐一對得上（5:13↔5:13、5:46↔5:45、2:24↔2:30），後五軌正是原盤那五個無標題軌，店面把它們命名為 Rhythm Track 1 到 5。**",
+    "src": "https://itunes.apple.com/lookup?id=1446257423&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**同一張碟在店面上有第二筆條目 1892252421**：artistName 只寫「Reese」、releaseDate 1988-03-01、同樣 8 軌，但**第一個版本的長度是 3:02 而不是 2:24**（1〈Just Want Another Chance〉3:02、2〈同名〉5:13、3〈(Extended Mix)〉5:46，其後同為 Rhythm Track 1-5）。**兩筆是同一張碟的兩個條目，掛名與短版長度不同**——原盤第 3 軌記 2:30，**1446257423 的 2:24 較接近，取那一筆**。",
+    "src": "https://itunes.apple.com/lookup?id=1892252421&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**§5.5 白名單條件覆核**：`Reese` 這個掛名的藝人端點分頁全列 **10 個 release-group**——**primary-type=Album 0 個、primary-type=Compilation 0 個**，EP 1 個、Single 9 個。**「這個掛名下沒有任何 Album、12 吋是唯一的作品形態」成立。** **別名各查一次（裁定 223）**：本人實體是另一個 MBID（bf259ecd，Person／US），名下 36 個 release-group，**兩份目錄完全不互通**；本批同時收的《Faces & Phases》掛在 bf259ecd 底下，**與本張不是同一份目錄查得到的**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e753448b-2970-4f7d-9265-532ef0657891&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "八軌裡有五軌在曲目列上根本沒有名字",
+   "同一張碟在串流上有兩個條目，短版的長度差了三十八秒"
+  ],
+  "sound": "1988 年 Incognito Records IR 111787 是一張 12 吋、八軌，但八軌裡只有前三軌有名字——同一首曲子的三種版本，5:13、5:45 與一段兩分半的短版；第四到第八軌在曲目列上全部是無標題、也沒有長度。後來上架的數位版把那五軌命名為 Rhythm Track 一到五，長度分別是 3:08、1:52、2:17、2:16、3:49，五軌加起來還不到十四分鐘。等於整張碟一半是成品、一半是節奏素材，直接壓進同一片黑膠的兩面上。",
+  "keyTracks": [
+   "Just Want Another Chance"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。release-group first-release-date **1988**、其下最早的 release 是 1988 US 的 Incognito Records IR 111787（Official），第二筆是 2014 XW 的 KMS KMS 153 數位再發（Official）。串流那一路的兩個條目 releaseDate 分別記 **1988-05-01**（1446257423）與 **1988-03-01**（1892252421）、℗ 都寫 1988，**兩個月份互相矛盾、都只能取年份**。**裁定 220 的形狀在本張不成立**：RG 的 first-release-date 就是原盤年份，沒有被 2014 那次再發蓋掉。四處對照後年份是 1988。**同名先行單曲：不適用**（整張的前三軌就是同名曲）。",
+  "notes": "**§5.5 覆核通過**：`exceptionReason` 寫「Reese 這個掛名 10 個 release-group 全是 Single／EP、沒有任何 Album」——**查證屬實**（10 個 RG、Album 0、Compilation 0、EP 1、Single 9）；「2014 年 KMS 以 KMS 153 重發」也**查證屬實**。兩個 HTTPS 證據網址成立。**白名單資格成立。**｜**`exceptionReason` 有一句不能寫**：「低頻音色後來被英國 jungle／drum & bass 整代人取樣成通稱的 Reese bass」——**本層查不到可引的來源**。行文不得把這句當事實寫。｜**回撈與搜尋共 2 個候選：採信 1446257423（前三軌與原盤三個版本長度最接近）、1892252421 記為同一張碟的第二個條目但不取**（它的短版是 3:02，原盤記 2:30）。**兩筆掛名不同（Reese & Kevin Saunderson 對 Reese），是同一張碟。**｜**曲目列有五軌無標題**：`keyTracks` 因此只列得出一首。**行文不得把 Rhythm Track 1-5 當原盤曲名寫**，那是店面補的命名；要提只能寫「五軌無標題的節奏素材」。｜**別名（裁定 223）**：`Reese` 與本人實體是兩份不互通的目錄，本批兩張卡分屬兩邊。**行文不得把兩張碟寫成同一份作品序列裡的第幾張。**｜**短掛名污染（裁定 224）**：`Reese` 在資料庫上同名實體極多且 score 排序不可用，本張只能靠 disambiguation 認人。"
+ },
+ {
+  "key": "desc2:K. Hand|On a Journey",
+  "artist": "K. Hand",
+  "album": "On a Journey",
+  "facts": [
+   {
+    "f": "release-group 065c0872 的欄位：title「On a Journey」、**artist-credit 是「K. Hand」（帶句點）**，而藝人實體（MBID 0773e58b，type Person、country US）的**主名卻是「Kelli Hand」**。first-release-date **1995**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1995 DE 的 !K7 !K7R001CD，Official，**CD、10 軌**。**編號是該系列的第一號。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/065c0872-4c0d-3979-ab67-c6e47375c523?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 DE 原盤（!K7 !K7R001CD）的逐軌曲目與長度：1〈On a Journey〉4:33、2〈I Can See〉6:29、3〈Dance〉6:55、4〈Starz〉8:02、5〈Psycho World〉5:43、6〈Numbers〉8:11、7〈Computer〉5:20、8〈Gotta Make You Move〉6:37、**9〈I Remember When〉9:15**、10〈Feel〉6:17。**同名曲擺在第一軌、卻是全張最短的一軌（4:33）；最長的〈I Remember When〉9:15 擺在倒數第二，比同名曲長出四分半以上。十軌總長超過 67 分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=065c0872-4c0d-3979-ab67-c6e47375c523&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **22 個 release-group**：primary-type=Album 7 個（**secondary-types 為空的 6 個**）、EP 11 個、Single 4 個、**primary-type=Compilation 0 個**。6 張長篇依序是 **1995 本張、1997《Ready for the Darkness》、1997《Soul》、1997《The Art of Music》、1998《Fantasy》、2001-05-11《Detroit History, Part 1》**——**本張是名下最早的一張長篇，而 1997 一年之內就出了三張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0773e58b-1a46-4fe9-bcc1-c6f384daf4bc&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**掛名分裂覆核（裁定 187／211 的疊加）**：同一個人在資料庫上有**兩個實體**——0773e58b（主名 `Kelli Hand`，Person／US）與另一個主名寫成 `K-HAND` 的實體；**本張所在的是前者，而該 release-group 的 artist-credit 又是第三種寫法 `K. Hand`（帶句點）**。三種寫法分屬兩個實體，**查其中一個實體查不到另一個實體名下的碟**。",
+    "src": "https://musicbrainz.org/ws/2/artist/0773e58b-1a46-4fe9-bcc1-c6f384daf4bc?fmt=json"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=K+Hand+On+a+Journey&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "同名的那一首擺在第一軌，卻是十軌裡最短的一首",
+   "一九九七年一年之內她出了三張長篇，這張是兩年前的起點"
+  ],
+  "sound": "1995 年 !K7 的系列第一號 !K7R001CD 只出過德國 CD 一種載體、十軌，總長超過六十七分鐘。同名曲〈On a Journey〉擺在第一軌、只有 4:33，是全張最短的一首；越往後越長，〈Starz〉8:02、〈Numbers〉8:11，倒數第二軌〈I Remember When〉拉到 9:15，比開場長出四分半以上。曲名一路是單詞或短句——〈Dance〉〈Numbers〉〈Computer〉〈Feel〉——把機器詞彙與身體動作交錯排開，最後以 6:17 的〈Feel〉收尾。",
+  "keyTracks": [
+   "On a Journey",
+   "Numbers",
+   "I Remember When"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**、其下唯一一筆 release 是 1995 DE 的 !K7 !K7R001CD（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1995。**同名先行單曲：無**（同名曲〈On a Journey〉是本張第 1 軌）。",
+  "notes": "**掛名分裂覆核成立**：實體主名 `Kelli Hand`、本張 artist-credit `K. Hand`（帶句點）、另一個實體主名 `K-HAND`——**三種寫法分屬兩個實體**。卡片取 artist-credit 的 `K. Hand` 是對的，**行文一律寫 `K. Hand`**；本機上架前要確認不會與另一個實體的碟生出兩張掛名不同的卡（卡單 `curatorRisk` 已標，本層確認這個風險真實存在）。｜`curatorWhy` 寫「!K7 的 R 系列第一號（!K7R001CD）」**查證屬實**（catno 就是 !K7R001CD）；「是她第一張整張長篇」**也查證屬實**（22 個 RG、6 張純長篇，本張最早）。｜**擋下策展層一處（人名／身分，裁定 241）**：`curatorWhy` 寫「底特律 techno 少數的女性作者、自營廠牌 Acacia Records 的主理人」。**本層在藝人實體上查不到任何一項**——0773e58b 的欄位只有 type Person 與 country US，沒有 disambiguation、沒有廠牌關係。**行文不得寫「自營 Acacia Records」，也不要把性別當作賣點寫成查證過的事實。**｜**盤名極常見**：`onajourney` 是高風險短鍵，搜尋與跨批比對一定要帶掛名。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Scan 7|Dark Territory",
+  "artist": "Scan 7",
+  "album": "Dark Territory",
+  "facts": [
+   {
+    "f": "release-group 298518bb 的欄位：title「Dark Territory」、artist-credit「Scan 7」（藝人實體 MBID d321aef8，**type Group**、country US）、first-release-date **1996-10-01**（帶完整月日）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1996-10-01 DE 的 Tresor 57 CD，Official，**CD、8 軌**。**沒有任何再發、沒有黑膠版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/298518bb-b86b-372f-bf42-45a213967392?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996-10-01 DE 原盤（Tresor 57 CD）的逐軌曲目與長度：1〈Planet Energy〉5:57、2〈Black Highway〉6:18、3〈Dark Universe〉6:00、4〈Unusual Channel〉6:41、5〈Beyond Sound〉6:25、6〈Dark Corridor〉7:05、**7〈VII〉7:47**、8〈Dark Territory〉7:25。**八軌全部在 5:57 到 7:47 之間、沒有一軌短於六分鐘；曲目由短到長排成一條線，前四軌都在六分半以內、後四軌逐軌加長。第 7 軌的標題只是羅馬數字 VII，正好是它自己的軌序。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=298518bb-b86b-372f-bf42-45a213967392&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 us／gb 的 collectionId **1768756278**：collectionName「Dark Territory」、artistName「Scan 7」、releaseDate **1996-10-01**、trackCount 8、copyright「℗ 1996 - 2024 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Planet Energy〉5:57／〈Black Highway〉6:20／〈Dark Universe〉6:03／〈Unusual Channel〉6:44／〈Beyond Sound〉6:29／〈Dark Corridor〉7:08／〈VII〉7:48／〈Dark Territory〉7:23。**八軌與原盤逐位置相符、逐軌長度差都在 4 秒內，日期也完全一致**。**上架的就是本張。**",
+    "src": "https://itunes.apple.com/lookup?id=1768756278&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **18 個 release-group**：primary-type=Album 6 個（**secondary-types 為空的 5 個**，另 1 個 2020 年帶 Remix）、EP 10 個、Single 1 個、**primary-type=Compilation 0 個**。5 張長篇依序是 **1996-10-01 本張、1998《Beyond Sound》、1998-06《Resurfaced》、2002《The Return Of The Beginning》、2019-07-27《Between Worlds》**——**本張是名下最早的一張長篇。** 第二張的盤名《Beyond Sound》**與本張第 5 軌同名**，配對時要分辨。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d321aef8-e1ba-4a03-9e4f-69f3f20a67a0&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**掛名的檢索陷阱（裁定 168／204）**：`Scan 7` 是**數字結尾的短掛名**，摺疊後是 `scan7`；藝人實體 d321aef8 的 type 是 Group、country US，**但沒有填 disambiguation**——同名比對時只有 area 與 type 兩欄可用。串流側以掛名加盤名查詢時，**us 與 gb 兩店有結果、de 店查無**。",
+    "src": "https://musicbrainz.org/ws/2/artist/d321aef8-e1ba-4a03-9e4f-69f3f20a67a0?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "八軌沒有一軌短於六分鐘，而且越排越長",
+   "第七軌的標題就是羅馬數字七，剛好等於它的軌序"
+  ],
+  "sound": "1996 年 10 月 Tresor 57 CD 只出過這一種載體、八軌，八軌全部落在 5:57 到 7:47 之間，沒有一軌短於六分鐘。曲序像是一條逐漸加長的線：前四軌都在六分半以內，後四軌一軌比一軌長，收在 7:25 的同名曲上。第七軌的標題只有羅馬數字〈VII〉，正好等於它自己的軌序，是全張最長的一軌。曲名整批圍著同一組詞打轉——〈Dark Universe〉〈Dark Corridor〉〈Dark Territory〉三軌共用 dark 這個字，中間夾著〈Planet Energy〉〈Black Highway〉〈Unusual Channel〉這種訊號與路徑的意象。",
+  "keyTracks": [
+   "Planet Energy",
+   "VII",
+   "Dark Territory"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996-10-01。release-group first-release-date **1996-10-01**、其下唯一一筆 release 同為 1996-10-01 DE 的 Tresor 57 CD（Official）。串流店面 us／gb 的 1768756278 releaseDate 也記 **1996-10-01**、℗ 欄寫「℗ 1996 - 2024 Tresor Records」（**跨年份的聲明，起點與原盤一致**），八軌逐軌長度差在 4 秒內。**四處對照有三處成立且完全一致**，年份是 1996。**同名先行單曲：無**（同名曲〈Dark Territory〉是本張末軌）。",
+  "notes": "**串流採信 1768756278**：八軌逐位置相符、長度差在 4 秒內、日期完全一致，是本批對得最乾淨的一筆固定試聽來源之一。**但它只在 us 與 gb 兩店查得到，de 店查無**，卡單 `curatorRisk` 寫「de:search:1768756278」這一項本層重查不到，**下游設定店面時要留意**。｜`curatorWhy` 寫「《Dark Territory》是他們第一張專輯」**查證屬實**（18 個 RG、5 張純長篇，本張最早）。｜**擋下策展層一處**：`curatorWhy` 寫「Underground Resistance 支線裡最早以整張長篇形態發行的一組」「從 1993 年起以匿名集體的方式在 UR 出 12 吋」「UR 那套不露臉不具名的作法第一次撐起一張完整的碟」。**本層在藝人實體與目錄上查不到任何一項**——d321aef8 的欄位只有 type Group 與 country US，**連 disambiguation 都沒填**，也沒有任何指向該廠牌的關係資料。**行文不得寫這三句，也不得寫「支線裡最早」這種需要跨團比較才成立的序數。**｜**盤名與曲名撞名**：名下第二張長篇《Beyond Sound》（1998）**與本張第 5 軌同名**，行文提到那張時要標年份。｜**掛名帶數字**：`scan7` 摺疊後極短，跨批比對與搜尋都要帶盤名。"
+ },
+ {
+  "key": "desc2:Urban Tribe|The Collapse of Modern Culture",
+  "artist": "Urban Tribe",
+  "album": "The Collapse of Modern Culture",
+  "facts": [
+   {
+    "f": "release-group 7814ca6d 的欄位：title「The Collapse of Modern Culture」、artist-credit「Urban Tribe」（藝人實體 MBID 836449fe，**type Group**、country US、**disambiguation「US techno/house group」**）、first-release-date **1998-10-13**、primary-type Album、secondary-types **空**。轄下 **3 筆 release，全部 Official**：1998 JP 的 TOY'S FACTORY TFCK-87965（**CD、16 軌**）、1998-10-13 GB 的 Mo Wax MW 102 CD（**CD、14 軌**）、1998-10-26 GB 的同編號 MW 102 CD（**CD、14 軌**）。**兩筆英國版是同一張碟的兩次建檔，日版比它們多兩軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7814ca6d-4e79-33ab-9035-9477ef8c6e13?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1998-10-13 GB 原盤（Mo Wax MW 102 CD）的逐軌曲目與長度：1〈Decades of Silicon〉3:49、2〈Nebula〉4:26、3〈Low Berth〉7:01、4〈D-2000〉4:27、5〈At Peace With Concrete〉5:29、6〈Sophistry〉5:52、**7〈Social Theorist〉1:57**、8〈Transaction〉5:17、9〈Genome Project〉5:53、10〈Cultural Nimrod〉6:21、**11〈Daytime T.V.〉1:28**、12〈Micro Machines〉5:17、13〈Lap Top〉4:42、14〈Peacemakers〉6:14。**十四軌裡有兩軌不到兩分鐘（〈Social Theorist〉1:57 與〈Daytime T.V.〉1:28），最長的〈Low Berth〉7:01 是它們的四倍以上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7814ca6d-4e79-33ab-9035-9477ef8c6e13&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**日版（TOY'S FACTORY TFCK-87965）是 16 軌**：前十四軌與英國版逐位置相符（長度差 1 到 3 秒），**末尾多出 15〈False Gods〉4:08 與 16〈I.F.O.〉5:23**。**這兩軌只在日版上。** 兩筆英國版的曲目完全相同，只有第 8、9、12 軌的長度差 1 到 2 秒，**是同一張碟的兩次建檔、不是兩張碟**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7814ca6d-4e79-33ab-9035-9477ef8c6e13&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**回撈候選逐筆攤開曲目列比對，兩筆都是別人的碟（裁定 224 的實例）**：collectionId **255779752**《Panorama》（1997、13 軌）與 **1220161854**《Prime Time Collection》（1998、19 軌）**兩筆的 artistName 都是「Sub-Urban Tribe」**——曲目是〈Far Side of the Sun〉〈Sun Queen〉〈Kite Song〉〈Not to Touch the Earth〉這一類，**與本張十四軌無一同名**，℗ 掛的是 Zen Garden。**這正是策展層警告過的那個字串極近的同名團，兩筆全數駁回。** 串流三店以掛名加盤名做 `search` 也**沒有任何一筆同名結果**。**本張維持無串流來源狀態。**",
+    "src": "https://itunes.apple.com/lookup?id=255779752&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **16 個 release-group**：primary-type=Album 6 個（**secondary-types 為空的 5 個**）、EP 7 個、Single 3 個、**primary-type=Compilation 0 個**。5 張長篇依序是 **1998-10-13 本張、2006-06-19《Authorized Clinical Trials》、2007-03-26《Acceptable Side Effects》、2010-07-01《Urban Tribe》×2（同名同日的雙胞胎條目）**——**本張是名下最早的一張長篇，而且與第二張之間隔了將近八年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=836449fe-07d3-4777-8e3f-ed7eb12bfc48&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡有兩軌不到兩分鐘，最長那軌是它們的四倍以上",
+   "日版在末尾多放兩軌，英國版沒有"
+  ],
+  "sound": "1998 年 10 月 Mo Wax MW 102 CD 的英國版十四軌，長度落差極大：〈Low Berth〉7:01 與〈Cultural Nimrod〉6:21、〈Peacemakers〉6:14 撐起結構，中間卻夾著 1:57 的〈Social Theorist〉與 1:28 的〈Daytime T.V.〉兩段短插曲，最短那軌是最長那軌的五分之一。曲名整批是名詞化的社會與科技詞彙——〈Decades of Silicon〉〈Genome Project〉〈Micro Machines〉〈Lap Top〉〈Transaction〉——與盤名指的那個崩塌是同一組語彙。同年的日版把同樣十四軌收進去，末尾另加〈False Gods〉4:08 與〈I.F.O.〉5:23 兩軌。",
+  "keyTracks": [
+   "Decades of Silicon",
+   "Low Berth",
+   "Daytime T.V."
+  ],
+  "status": "full",
+  "yearVerified": "一致，1998。release-group first-release-date **1998-10-13**、其下三筆 release 全部是 1998（日版只記到年、英國版兩筆分別是 10-13 與 10-26）。**兩筆英國版同編號同軌數、只有三軌的長度差 1 到 2 秒，是同一張碟的兩次建檔。** 串流三店查無本張（回撈的兩個候選是另一個同名團的碟，已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1998。**同名先行單曲：無。**",
+  "notes": "**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 寫「Sherard Ingram 召集 Carl Craig、Kenny Dixon Jr.、Anthony Shakir 三人做的一張碟，是底特律第二代四個作者第一次同時掛在同一張長篇上」。**本層在 release-group、release 與藝人實體上都查不到任何一個參與者的名字**——artist-credit 只有 `Urban Tribe` 一個實體，曲目列上沒有任何客座掛名。**行文不得寫這四個人名，也不得寫「四個作者第一次同台」這種需要參與者名單才成立的句子。**｜**回撈的 2 個候選全部駁回**：255779752 與 1220161854 的 artistName 都是 **Sub-Urban Tribe**（另一個字串極近的團），曲目與本張無一同名。**這是裁定 224「短掛名比對不可靠」在本批最乾淨的一個實例**——策展層已在第七節預告過這個團，回撈層仍把它當候選送進來。｜**軌數兩種（裁定 157）**：卡單 label 欄記的是 **Mo Wax MW 102 CD（14 軌）**，同年日版是 **16 軌**。**行文只能引 14 軌**；〈False Gods〉與〈I.F.O.〉不得當本張曲目。｜`curatorRisk` 說「同 RG 底下有兩筆 1998 GB Mo Wax 的 release 是同一張碟的兩筆建檔」**查證屬實**。｜`curatorWhy` 寫「Mo Wax 在 1998 年把它放進自家目錄（MW 102）」**查證屬實**；「那條線少數被英國獨立廠完整發行的底特律碟」是斷語，行文不要寫。"
  }
 ]
