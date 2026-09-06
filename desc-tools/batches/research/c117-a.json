@@ -246,5 +246,505 @@
   "status": "full",
   "yearVerified": "一致，1971。release-group first-release-date **1971**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971／GB／Official 的 Dawn DNLS 3025，另一筆是 2004 年的 JP CD，沒有以再發日期建檔的問題；串流店面 gb 1439092665 的 **releaseDate 記 2004-07-19，那是再發日期**，同一條目的 ℗ 欄寫的是 1971，與原盤一致。探測層也把這筆標了 yearDrift 33。**行文一律寫 1971。同名先行單曲：無。**",
   "notes": "⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「是英國 1970 年代初『不進錄音室』這條做法最有名的一例」。**「最有名」查無來源，屬待查證的最高級表述，行文不得寫。** 條目只說樂團不喜歡錄音室、兩張都錄在戶外。｜`curatorWhy` 另寫「整張在戶外實地錄音」：條目寫的是「錄在一座農舍花園裡」，**行文寫「農舍花園」比寫「戶外實地」精確**。｜⚠ **單軌長度不可引用**：原盤與串流的曲名、曲序 21 軌逐位置全同，但**第 5 軌之後兩邊的長度整整錯開一個位置**（原盤〈Miss Kiss〉7:13／串流 2:45，原盤〈John Brown〉2:56／串流 7:11，依此類推），其中一方的長度欄位錯位、無法判定何者為真，**行文不要引用任何單軌長度**。｜⚠ 掛名撞名（裁定 179）：查詢 `Heron` 時 score 最高的是 Gil Scott-Heron（子字串命中），本張用的是 e72b466b（Group／United Kingdom／1968／「UK folk rock band」）。**score 不看，只看 area 與 disambiguation。**｜盤名含 `&`，池中另有 `and` 的寫法風險（裁定 217），行文照卡單的 `&`。"
+ },
+ {
+  "key": "desc2:C.O.B.|Spirit of Love",
+  "artist": "C.O.B.",
+  "album": "Spirit of Love",
+  "facts": [
+   {
+    "f": "release-group 2f73a271 的欄位：title「Spirit of Love」、artist-credit「C.O.B.」（藝人實體 MBID 590a1bfa，type Group、area United Kingdom、begin 1970）、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1970／GB／Official（12 吋，9 軌，label-info **CBS 69010 與 CBS S 69010 兩筆**）、2001／GB／Official（CD，10 軌，Beat Goes On BGOCD534）、一筆無日期的 GB Official（9 軌）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（CBS 69010，12 吋，release bd742156）逐軌：1〈Spirit of Love〉4:03、2〈Music of the Ages〉3:53、3〈Soft Touches of Love〉4:51、4〈Banjo Land〉3:35、5〈Scranky Black Farmer〉4:37、6〈Evening Air〉3:27、7〈Serpent's Kiss〉4:00、8〈Sweet Slavery〉5:11、9〈When He Came Home〉3:58。**9 軌、總長 37 分 35 秒，每一軌都落在 3 分 27 秒到 5 分 11 秒之間，是全批長度分佈最平均的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：**C.O.B. 是 Clive's Original Band 的縮寫**，由 Clive Palmer（1943 年 5 月 14 日–2014 年 11 月 23 日）與 John Bidwell、Mick Bennett 組成。Palmer 生於北倫敦 Edmonton，八歲首度登台、十歲起學班鳩，1959 至 1960 年間與 Wizz Jones 在巴黎街頭賣藝，1963 年與 Robin Williamson 組二人組，1965 年加入 Mike Heron 後成為 Incredible String Band，**是該團的創始成員**；錄完首張後他去了印度與阿富汗，回來後決定不再歸隊。1968 年移居 Cornwall，先後組過 Famous Jug Band、The Stockroom Five、The Temple Creatures，之後才有 C.O.B.。條目把《Spirit of Love》記為 CBS 發行，隨後的〈Blue Morning〉／〈Bones〉單曲與《Moyshe McStiff and the Tartan Lancers of the Sacred Heart》則在 Polydor。C.O.B. 1972 年在英國演出頻繁，上過 Lincoln Festival 與 Cambridge Folk Festival，常為 Ralph McTell 暖場，也與 Wizz Jones 一起擔任 Pentangle 秋季巡演的暖場；1973 年初解散。",
+    "src": "https://en.wikipedia.org/wiki/Clive_Palmer_(musician)"
+   },
+   {
+    "f": "串流店面 gb 以掛名與盤名兩個鍵各查過一次都回 0 筆，改走藝人目錄 lookup：`C.O.B.` 在店面上找得到的四個同名實體全部不是本團（422001854 是 Hip-Hop/Rap、994232019 Treacherous C.O.B、1517014328 DJ C.O.B、986706012 C.O.B - The Cult of Bass），名下目錄裡沒有任何一張是《Spirit of Love》。us／jp／de／fr／ie／ca／au 七個店面亦全數 0 筆。**這張在串流上真的沒有。**",
+    "src": "https://itunes.apple.com/lookup?id=422001854&country=gb&entity=album&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 2f73a271 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/2f73a271-a0d5-43d7-a7bd-9a9fa0bfeb1d/front"
+   }
+  ],
+  "hookCandidates": [
+   "團名 C.O.B. 拆開來是 Clive's Original Band",
+   "九軌全落在三分半到五分鐘之間，沒有一軌破例"
+  ],
+  "sound": "1970 年 CBS 69010 的 12 吋原盤 9 軌、總長 37 分 35 秒，單軌從 3 分 27 秒到 5 分 11 秒，長度分佈異常平均。團名 C.O.B. 是 Clive's Original Band 的縮寫，主事者 Clive Palmer 是 Incredible String Band 的創始成員之一：八歲登台、十歲學班鳩，1959 年前後與 Wizz Jones 在巴黎街頭賣藝，錄完 Incredible String Band 首張後去了印度與阿富汗，回來便沒有歸隊。1968 年他移居 Cornwall，組過 Famous Jug Band 與 The Temple Creatures，之後才與 John Bidwell、Mick Bennett 組成這個三人編制。第 4 軌就叫〈Banjo Land〉。",
+  "keyTracks": [
+   "Spirit of Love",
+   "Banjo Land",
+   "Sweet Slavery"
+  ],
+  "status": "full",
+  "yearVerified": "⚠ **兩處分歧，取 1970**（沿用策展層第三條操作判斷）。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆是 1970／GB／Official 的 CBS 69010／S 69010，沒有以再發日期建檔的問題。**條目正文則把本張記為「Spirit of Love on CBS (1971)」。** 依裁定 127 附錄「不得拿一個有爭議的值去換另一個有爭議的值」，取有實體 release 標註佐證的 1970。串流無條目，無第三處可對。**行文一律寫 1970，不要寫 1971。同名先行單曲：無**（同名曲是本張第 1 軌，不是先行單曲）。",
+  "notes": "⚠ 掛名撞名（裁定 179）：`C.O.B.` 在 MB 上有 8 個同名實體、在串流店面上找得到的四個全是別人（hip-hop、trance、DJ）。本張採 590a1bfa（Group／United Kingdom／1970），**判準是 area 與 type，不是 score**。｜**無來源狀態**：兩個鍵、八個店面、藝人目錄 lookup 都走完（裁定 185／173），確定沒有試聽來源。｜2001 年 BGO 的 CD 是 10 軌，**行文只能引原盤 9 軌**。｜行文提 Clive Palmer 與 Incredible String Band 的關係時只能寫「創始成員」，**條目沒有說他是主腦或最重要的成員，不要加**。｜盤名〈Spirit of Love〉與第 1 軌同名，行文可用但不要寫成「同名單曲」。"
+ },
+ {
+  "key": "desc2:Jan Dukes de Grey|Sorcerers",
+  "artist": "Jan Dukes de Grey",
+  "album": "Sorcerers",
+  "facts": [
+   {
+    "f": "release-group e7bdbee2 的欄位：title「Sorcerers」、artist-credit「Jan Dukes de Grey」、first-release-date **1969**、primary-type Album、secondary-types **空**。轄下 7 筆 release，**只有兩筆是 Official**：1969／GB／Official（12 吋，18 軌，label-info Decca Records SDN 8，disambiguation「stereo」）與 1970-01／GB／Official（12 吋，18 軌，Decca Records DN 8，disambiguation「mono」）；**其餘五筆全部是 Bootleg**（2002 KR、2002 IT、2019-05-23 KR、2019-11-27 JP、2020 GB）。**最早的 release 就是 1969／GB／Official，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e7bdbee2-0bc6-35e8-b0ce-03c9994740fa?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1969／GB 原盤（Decca SDN 8，12 吋 stereo，release 0d2c4bf0）逐軌：1〈Dragons〉0:55、2〈Rags, Old Iron〉2:25、3〈28th June, Village Song〉3:04、4〈High Priced Room〉2:40、5〈Sorcerers〉2:42、6〈Ode to a Schoolgirl〉1:25、7〈The Cheering Crowd〉2:35、8〈Out of the Eastern Hills〉2:32、9〈M.S.S.〉2:01、10〈Texas〉2:44、11〈Yorkshire Indian Sitting in the Sun〉2:18、12〈Wonder Child〉2:25、13〈Dominique〉3:59、14〈Trust Me Now〉3:34、15〈Forms〉1:43、16〈City After 3.00 AM〉4:03、17〈Butterfly〉3:32、18〈Turkish Time〉4:56。**18 軌、總長 49 分 30 秒，平均一軌不到三分鐘，最短的〈Dragons〉只有 55 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e7bdbee2-0bc6-35e8-b0ce-03c9994740fa&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Jan Dukes de Grey 是 1968 年 12 月在 Leeds 成立的短命英國民謠團，最初是多樂器手兼主唱 Derek Noy 與吉他／木笛手 Michael Bairstow 的二人組；**團名是 Noy 取的、聽起來異國情調而沒有別的意思**。Noy 原在十一人的 soul 團 Buster Summers Express，1968 年為了專演自己的作品而離團，半年內寫了五、六十首。二人組 1969 年與 Decca 簽約，**同年 10 月就把這張 18 軌的《Sorcerers》錄好，全部是 Noy 的原創**。錄完後 Buster Summers 的鼓手 Denis Conlan 加入，樂團聲響轉向更 progressive 與即興，1969 年 11 月為 Pink Floyd 暖場、1970 年 5 月為 The Who 暖場。**《Sorcerers》1970 年 1 月發行**，銷量平平，下一張《Mice and Rats in the Loft》1971 年 6 月改由 Transatlantic 發行。",
+    "src": "https://en.wikipedia.org/wiki/Jan_Dukes_de_Grey"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1562933230：collectionName「Sorcerers」、artistName「Jan Dukes De Grey」、trackCount 18、℗ 欄「℗ 1970 Decca Music Group Limited」、releaseDate 記 1970。`entity=song` 攤得出 **18 軌、18 軌全部有 previewUrl**，曲名與曲序與 1969 原盤**逐位置相符**、逐軌長度差全部在 2 秒內。**上架的就是 18 軌的原盤內容，沒有加曲。** 字面差異兩處：第 3 軌店面作〈28th Of June, Village Song〉、第 16 軌作〈City After 3 a.m.〉。",
+    "src": "https://itunes.apple.com/lookup?id=1562933230&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group e7bdbee2 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/e7bdbee2-0bc6-35e8-b0ce-03c9994740fa/front"
+   }
+  ],
+  "hookCandidates": [
+   "十八軌塞進四十九分鐘，開場的〈Dragons〉只有 55 秒",
+   "二人組簽約當年十月就把這十八首錄完，全是 Derek Noy 寫的"
+  ],
+  "sound": "1969 年 Decca SDN 8 的 12 吋原盤 18 軌、總長 49 分 30 秒——平均一軌不到三分鐘，開場的〈Dragons〉只有 55 秒，最長的〈Turkish Time〉也才 4 分 56 秒。樂團 1968 年 12 月在 Leeds 成立，最初只有多樂器手兼主唱 Derek Noy 與吉他、木笛手 Michael Bairstow 兩人；團名是 Noy 隨手取的異國情調字串，沒有別的意思。Noy 原在十一人編制的 soul 團裡，離團半年就寫了五、六十首歌，1969 年與 Decca 簽約、同年十月把這十八首全部錄完，作曲全是他一個人。同一張碟另有 1970 年 1 月的單聲道版，編號 DN 8。",
+  "keyTracks": [
+   "Dragons",
+   "Sorcerers",
+   "Turkish Time"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（錄音與立體聲原壓年）。release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆是 1969／GB／Official 的 Decca SDN 8（stereo），沒有以再發日期建檔的問題。**要留意的是三個 1969／1970 的並存**：條目寫「1969 年 10 月錄好、1970 年 1 月發行」，MB 的單聲道版 DN 8 也標 1970-01，串流店面 1562933230 的 releaseDate 與 ℗ 欄同樣是 1970。**卡單取 1969（立體聲原壓的標註年），本檔沿用；行文若要寫年份寫 1969，不要同時寫 1970 造成兩個年份並陳。同名先行單曲：無**（同名曲是本張第 5 軌）。",
+  "notes": "⚠ **策展層第四條操作判斷要接手**：轄下 7 筆 release 有 **5 筆是 Bootleg**（2002 IT／KR、2019 KR／JP、2020 GB），依裁定 43／57／65／78，**年份與背書一律取 1969／GB 那筆，Bootleg 五筆不得採為背書、也不要拿它們的封面**。｜曲名字面差異兩處：原盤〈28th June, Village Song〉／店面〈28th Of June, Village Song〉、原盤〈City After 3.00 AM〉／店面〈City After 3 a.m.〉，**行文照原盤寫法**。｜條目對本張演奏技巧的評價（「naive」「lacking in technique」）屬評論，**不入行文**；同理，條目對《Mice and Rats in the Loft》的定位也與本張無關。｜掛名寫法：MB 與池中同為 `Jan Dukes de Grey`（小寫 de），店面寫 `Jan Dukes De Grey`，**照池中寫法**。"
+ },
+ {
+  "key": "desc2:Dando Shaft|An Evening With Dando Shaft",
+  "artist": "Dando Shaft",
+  "album": "An Evening With Dando Shaft",
+  "facts": [
+   {
+    "f": "release-group ae2b96ab 的欄位：title「An Evening With Dando Shaft」、artist-credit「Dando Shaft」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1970／DE／Official（12 吋，**8 軌**，label-info Young Blood SYB 3）與 2006-07-05／JP／Official（CD，**12 軌**，Air Mail Archive AIRAC-1225）。**最早的 release 就是 1970 那筆，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970 原盤（Young Blood SYB 3，12 吋，release c376c13b）逐軌：1〈Rain〉5:07、2〈Cold Wind〉4:13、3〈September Wine〉3:40、4〈Cat Song〉2:32、5〈In The Country〉**6:50**、6〈Drops Of Brandy〉2:29、7〈End Of The Game〉3:30、8〈Lazily Slowly〉3:12。**只有 8 軌、總長 31 分 33 秒，是本批最短的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Dando Shaft 1968 年成立於英格蘭 Coventry，原始編制是五人——兩位吉他兼主唱 Kevin Dempsey 與 Dave Cooper、多樂器手 Martin Jenkins、貝斯手 Roger Bullen、塔布拉與打擊 Ted Kay。**團名取自 Don Calhoun 1965 年一本小說的主角名。** 在地演出兩年後與 Young Blood Records 簽約，**1970 年錄下首張《An Evening With Dando Shaft》**。條目記這張被拿來與 Pentangle 相比，但更著重原創民謠寫作，並以多樂器編制帶入 bluegrass 味與巴爾幹（特別是保加利亞）的節奏結構。1970 年移居倫敦後，同年十月加入來自 Leamington Spa 的歌手 Polly Bolton——她此前曾與 June Tabor 同台。樂團隨後簽入 RCA 的 progressive 副廠 Neon，1971 年出同名專輯，1972 年轉到 RCA 母廠發行《Lantaloon》。",
+    "src": "https://en.wikipedia.org/wiki/Dando_Shaft"
+   },
+   {
+    "f": "吉他手條目的作品列表把三張依序列為《An Evening With Dando Shaft》1970、《Dando Shaft》1971、《Lantaloon》1972；Kevin Dempsey 是 Dando Shaft 的共同創團者，樂團 1972 年解散後他先到印度、再到美國加入簽在 Stax 的 Blue Aquarius。",
+    "src": "https://en.wikipedia.org/wiki/Kevin_Dempsey"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1699700823：collectionName「An Evening With Dando Shaft」、artistName「Dando Shaft」、trackCount **12**、℗ 欄「℗ 1970 Cherry Red Records Ltd」、releaseDate 記 1970。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**：**第 1–8 軌與 1970 原盤逐位置相符、逐軌長度差全部在 2 秒內**，第 9–12 軌〈Spring Clog Dance〉2:54、〈Thruxton Flute〉3:28、〈Digging Up The Roses〉3:27、〈Don't Forget The Animal〉2:32 **不在原盤上**。**上架的是 12 軌的再發版，不是 8 軌的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1699700823&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group ae2b96ab 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/ae2b96ab-b4ba-479c-b56a-0dc4d5fd15ec/front"
+   }
+  ],
+  "hookCandidates": [
+   "團名取自 1965 年一本小說的主角",
+   "八軌、三十一分半，收在〈Lazily Slowly〉就結束了"
+  ],
+  "sound": "1970 年 Young Blood SYB 3 的 12 吋原盤只有 8 軌、總長 31 分 33 秒。第 5 軌〈In The Country〉6 分 50 秒與開場的〈Rain〉5 分 07 秒佔掉三分之一，其餘落在兩分半到四分鐘。樂團 1968 年成立於 Coventry，五人編制是 Kevin Dempsey 與 Dave Cooper 的吉他與歌、Martin Jenkins 的多樂器、Roger Bullen 的貝斯、Ted Kay 的塔布拉與打擊；團名取自 Don Calhoun 1965 年一本小說的主角。寫作以原創民謠為主，多樂器編制帶進 bluegrass 味與巴爾幹的節奏結構。串流上架的是補到 12 軌的再發版。",
+  "keyTracks": [
+   "Rain",
+   "In The Country",
+   "Lazily Slowly"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970 的 Young Blood SYB 3，另一筆是 2006 年的 JP CD，沒有以再發日期建檔的問題；條目與吉他手條目的作品列表都把本張記為 1970 年首張；串流店面 gb 1699700823 的 releaseDate 與 ℗ 欄同為 1970。**四處一致。同名先行單曲：無。**",
+  "notes": "**串流版多四軌**（〈Spring Clog Dance〉〈Thruxton Flute〉〈Digging Up The Roses〉〈Don't Forget The Animal〉），**行文只能引原盤 8 軌，不得拿這四軌當本張曲目**（裁定 141）。｜原壓 release 建檔在 DE，但沒有對應的 GB 首版 release，**行文提發行地要謹慎，只寫廠牌 Young Blood 較安全**。｜條目把本張與 Pentangle 相比屬評論比較，**不入行文**；Polly Bolton 是本張之後（1970 年十月）才加入的，**不得寫成本張的參與者**。｜盤名的介系詞 `With` 在池中是大寫，照卡單寫法。"
+ },
+ {
+  "key": "desc2:Dando Shaft|Lantaloon",
+  "artist": "Dando Shaft",
+  "album": "Lantaloon",
+  "facts": [
+   {
+    "f": "release-group e74e47ad 的欄位：title「Lantaloon」、artist-credit「Dando Shaft」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1972／GB／Official（12 吋，10 軌，label-info RCA Victor SF 8256）與 2006／JP／Official（CD，10 軌，Air Mail Archive AIRAC-1227，disambiguation「limited edition, remastered」）。**最早的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e74e47ad-6d82-4861-92d6-441eeb9a3163?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（RCA Victor SF 8256，12 吋，release 7c020cee）逐軌：1〈Road Song〉3:34、2〈Is It Me?〉3:53、3〈Down to You, Up to Me〉3:09、4〈Melancholic Fervour (It's Only Us)〉3:44、5〈It Was Good〉2:30、6〈The Harp Lady I Bombed〉4:51、7〈The Black Prince of Paradise〉2:42、8〈When I'm Weary〉3:37、9〈I Heard Somewhere〉2:39、10〈Magnetic Beggar〉4:16。**10 軌、總長 34 分 55 秒，沒有一軌超過五分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e74e47ad-6d82-4861-92d6-441eeb9a3163&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Dando Shaft 1968 年成立於 Coventry，團名取自 Don Calhoun 1965 年小說的主角名。1970 年首張《An Evening With Dando Shaft》由 Young Blood 發行，同年移居倫敦、十月加入歌手 Polly Bolton（此前曾與 June Tabor 同台），隨後簽入 RCA 的 progressive 副廠 Neon 並在 1971 年出同名專輯。**1972 年樂團由 Neon 移到 RCA 母廠發行《Lantaloon》**；此後聲響轉向主流搖滾、出了單曲〈Sun Clog Dance〉，內部因此生隙而解散，Dempsey 與 Bolton 一度在美國組二人組、Jenkins 加入 Hedgehog Pie。數年後 Rubber 給了 Jenkins 與 Cooper 合約，Dempsey、Bolton、Kay 也想再錄，短暫重組後在 1977 年出了《Kingdom》。",
+    "src": "https://en.wikipedia.org/wiki/Dando_Shaft"
+   },
+   {
+    "f": "吉他手條目的作品列表把三張依序列為《An Evening With Dando Shaft》1970、《Dando Shaft》1971、**《Lantaloon》1972**；Kevin Dempsey 是共同創團者，樂團 1972 年解散後他先到印度、再到美國加入簽在 Stax 的 Blue Aquarius。",
+    "src": "https://en.wikipedia.org/wiki/Kevin_Dempsey"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1699705003：collectionName「Lantaloon」、artistName「Dando Shaft」、trackCount 10、℗ 欄「℗ 1972 Cherry Red Records Ltd」、releaseDate 記 1972。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1972 原盤**逐位置相符**，逐軌長度差多在 3 秒內、最大 14 秒。**上架的是 10 軌的原盤內容，沒有加曲。**",
+    "src": "https://itunes.apple.com/lookup?id=1699705003&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group e74e47ad 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/e74e47ad-6d82-4861-92d6-441eeb9a3163/front"
+   }
+  ],
+  "hookCandidates": [
+   "從 RCA 的副廠 Neon 搬回母廠，這是搬家後的第一張",
+   "十軌三十五分鐘，最長的〈The Harp Lady I Bombed〉也不到五分"
+  ],
+  "sound": "1972 年 RCA Victor SF 8256 的 12 吋原盤 10 軌、總長 34 分 55 秒，沒有一軌超過五分鐘，最長的〈The Harp Lady I Bombed〉4 分 51 秒、最短的〈It Was Good〉2 分 30 秒。這是樂團從 RCA 的 progressive 副廠 Neon 移回 RCA 母廠後的第一張，也是解散前的最後一張正規作。編制自 1970 年起加入了歌手 Polly Bolton，核心仍是 Kevin Dempsey 與 Dave Cooper 的吉他與歌、Martin Jenkins 的多樂器、Roger Bullen 的貝斯、Ted Kay 的塔布拉與打擊。此後樂團往主流搖滾靠、出了單曲〈Sun Clog Dance〉，內部生隙而散。串流上架的就是這 10 軌。",
+  "keyTracks": [
+   "Road Song",
+   "The Harp Lady I Bombed",
+   "Magnetic Beggar"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的一筆就是 1972／GB／Official 的 RCA Victor SF 8256，另一筆是 2006 年的 JP CD，沒有以再發日期建檔的問題；條目與吉他手條目的作品列表都把本張記為 1972；串流店面 gb 1699705003 的 releaseDate 與 ℗ 欄同為 1972。**四處一致。同名先行單曲：無。**",
+  "notes": "**「解散前最後一張」這個說法有條件**：條目寫的是《Lantaloon》之後樂團往主流搖滾走、出了單曲〈Sun Clog Dance〉才解散，且 1977 年短暫重組出過《Kingdom》。**行文若要寫序數，只能寫「原始編制時期的第三張」或「解散前的最後一張正規作」，不要寫成「最後一張專輯」。**｜條目說本張獲得的好評少於前兩張，屬評論比較，**不入行文**。｜同團另一張《An Evening With Dando Shaft》也在本批（a 組），**兩張的行文不要互相重複團史段落**。"
+ },
+ {
+  "key": "desc2:Michael Chapman|Rainmaker",
+  "artist": "Michael Chapman",
+  "album": "Rainmaker",
+  "facts": [
+   {
+    "f": "release-group 42cc28c1 的欄位：title「Rainmaker」、artist-credit「Michael Chapman」、first-release-date **1969-07**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1969-07／GB／Official（12 吋，11 軌，label-info Harvest SHVL 755）、1997／Official（CD，**16 軌**，Repertoire REP 4679-WY）、2012-01-24／US／Official（CD，**17 軌**，Light in the Attic LITA 079）。**最早的 release 是 1969-07，與 first-release-date 完全相同（連月份都對得上）**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/42cc28c1-86f3-3935-a716-f8782236bb3a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1969-07／GB 原盤（Harvest SHVL 755，12 吋，release 554fe728）逐軌：1〈It Didn't Work Out〉5:14、2〈Rainmaker〉3:39、3〈You Say〉3:43、4〈Thank You P.K. 1944〉4:14、5〈No-One Left to Care〉4:21、6〈Small Stones〉3:02、7〈Not So Much a Garden - More Like a Maze〉5:34、8〈No Song to Sing〉3:46、9〈One Time Thing〉4:52、10〈Sunday Morning〉4:28、11〈Goodbye to Monday Night〉5:00。**11 軌、總長 47 分 53 秒，是本批 a 組單張最長的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=42cc28c1-86f3-3935-a716-f8782236bb3a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Michael Chapman（1941 年 1 月 24 日–2021 年 9 月 10 日）是英國創作歌手兼吉他手，生於 Leeds 的 Hunslet，父親是鋼鐵工人。他在 Cockburn 文法學校時玩 skiffle，之後就讀 Leeds College of Art，再到 Bolton College 的攝影系任教，同時彈爵士吉他標準曲。**他的第一張專輯就是 1969 年的《Rainmaker》，製作人 Gus Dudgeon，發行於 EMI 的 progressive 廠標 Harvest。** Dudgeon 同時期也與 Elton John、David Bowie、Steeleye Span 合作。他 1967 年開始在倫敦與 Cornwall 的民謠場演出，同台的有 John Martyn 與 Roy Harper。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1681870385：collectionName「**Rainmaker (2011 Remaster)**」、artistName「Michael Chapman」、trackCount 11、℗ 欄「℗ 1969 Onward Music Limited / Fly Records」、releaseDate 記 1969-07-01。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，每一軌的曲名都帶「(2011 Remaster)」後綴，**截去後綴後與 1969 原盤逐位置相符**、逐軌長度差多在 2 秒內、最大 7 秒。**上架的是 11 軌的原盤內容（重製版），不是 1997 年的 16 軌或 2012 年的 17 軌 CD。** 字面差異一處：第 4 軌店面作〈Thank You PK 1944〉（無點號）。",
+    "src": "https://itunes.apple.com/lookup?id=1681870385&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 42cc28c1 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/42cc28c1-86f3-3935-a716-f8782236bb3a/front"
+   }
+  ],
+  "hookCandidates": [
+   "首張的製作人 Gus Dudgeon，同一時期還在替 Elton John 與 David Bowie 工作",
+   "十一軌四十八分鐘，開場的〈It Didn't Work Out〉就走了五分十四秒"
+  ],
+  "sound": "1969 年 7 月 Harvest SHVL 755 的 12 吋原盤 11 軌、總長 47 分 53 秒——單軌從 3 分 02 秒到 5 分 34 秒，整張沒有短曲，是本批少見的長篇幅。作者 Michael Chapman 生於 Leeds 的 Hunslet，父親是鋼鐵工人；他讀藝術學院、在攝影系教過書，彈的是爵士吉他標準曲出身，1967 年才進倫敦與 Cornwall 的民謠場，同台的有 John Martyn 與 Roy Harper。這是他的第一張專輯，製作人 Gus Dudgeon 同時期也在替 Elton John、David Bowie 與 Steeleye Span 工作，廠牌 Harvest 是 EMI 的 progressive 廠標。串流上架的是 2011 年重製的同 11 軌版本。",
+  "keyTracks": [
+   "It Didn't Work Out",
+   "Rainmaker",
+   "Not So Much a Garden - More Like a Maze"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969（月份亦一致，1969-07）。release-group first-release-date **1969-07**、**依裁定 220 回問轄下 release**，最早的一筆就是 1969-07／GB／Official 的 Harvest SHVL 755，**連月份都與 first-release-date 相同**，沒有以再發日期建檔的問題；條目把本張記為他 1969 年的第一張專輯；串流店面 gb 1681870385 的 releaseDate 記 1969-07-01、℗ 欄 1969。**三處一致。同名先行單曲：無**（同名曲是本張第 2 軌）。",
+  "notes": "**串流條目的盤名帶「(2011 Remaster)」、每一軌也都帶同一後綴**，依裁定 175 截去後綴後才比對，**不可因此判為別碟**；行文不要寫出「2011 Remaster」。｜1997 年 Repertoire CD 是 16 軌、2012 年 Light in the Attic CD 是 17 軌，**行文只能引原盤 11 軌**。｜曲名字面差異一處：原盤〈Thank You P.K. 1944〉、店面〈Thank You PK 1944〉，**行文照原盤帶點號的寫法**。｜條目對《Fully Qualified Survivor》的評價與 Mick Ronson 的參與**與本張無關**，不得挪用。｜Thurston Moore 引他為 Sonic Youth 成立的啟發，是條目對藝人生涯的整體描述、不是對本張的描述，**行文若要用須寫成藝人層級的事，不要綁在這張碟上**。"
+ },
+ {
+  "key": "desc2:Michael Chapman|Wrecked Again",
+  "artist": "Michael Chapman",
+  "album": "Wrecked Again",
+  "facts": [
+   {
+    "f": "release-group e3f7632a 的欄位：title「Wrecked Again」、artist-credit「Michael Chapman」、first-release-date **1971-11**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1971-11／GB／Official（12 吋，11 軌，label-info Harvest SHVL 798）、一筆無日期的 GB Official 數位版（11 軌）、一筆無日期的 US Official 數位版（12 軌）。**最早的 release 是 1971-11，與 first-release-date 完全相同**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e3f7632a-ae66-415f-b23f-34b1069e6ab3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1971-11／GB 原盤（Harvest SHVL 798，12 吋，release f750437e）逐軌：1〈Polar Bear Fandango〉2:35、2〈Indian Queens〉3:55、3〈Wrecked Again〉4:46、4〈All in All〉3:02、5〈Back on Your Own Again〉3:29、6〈The First Leave of Autumn〉4:11、7〈Fennario〉**7:04**、8〈Time Enough to Spare〉2:43、9〈Night Drive〉3:40、10〈Mozart Lives Upstairs〉3:24、11〈Shuffleboat River Farewell〉**6:13**。**11 軌、總長 45 分 02 秒，第 7 軌與末軌各超過六分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e3f7632a-ae66-415f-b23f-34b1069e6ab3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Michael Chapman 住在 Kingston upon Hull 期間為 Harvest 錄了另外三張，**《Window》（1970）與《Wrecked Again》（1971）接連推出，後者帶有 Memphis 味道，同名曲與〈Shuffleboat River Farewell〉都有銅管編寫**。此後他與 Kemp 到美國巡演，回來後簽進 Decca 的子廠 Deram，作品越來越偏搖滾。他生於 1941 年 1 月 24 日、2021 年 9 月 10 日過世，一生發行 58 張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1681870108：collectionName「**Wrecked Again (2013 Remaster)**」、artistName「Michael Chapman」、trackCount **12**、℗ 欄「℗ 1972 Onward Music Limited / Fly Records」、releaseDate 記 1971。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**：截去「(2013 Remaster)」後綴後，**第 1–10 軌與 1971 原盤逐位置相符、逐軌長度差全部在 1 秒內**，但 **第 11 軌是原盤沒有的〈Link〉0:51**，原盤的末軌〈Shuffleboat River Farewell〉被推到第 12 軌、長度 5:22（原盤 6:13）。**上架的是 12 軌的重製版，不是 11 軌的原盤。** 另有曲名差異一處：第 6 軌原盤作〈The First Leave of Autumn〉、店面作〈The First Leaf of Autumn〉。",
+    "src": "https://itunes.apple.com/lookup?id=1681870108&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group e3f7632a 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/e3f7632a-ae66-415f-b23f-34b1069e6ab3/front"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲與末軌〈Shuffleboat River Farewell〉都寫了銅管",
+   "串流上多出來的第十一軌〈Link〉只有 51 秒，原盤上沒有這一軌"
+  ],
+  "sound": "1971 年 11 月 Harvest SHVL 798 的 12 吋原盤 11 軌、總長 45 分 02 秒。第 7 軌〈Fennario〉7 分 04 秒與末軌〈Shuffleboat River Farewell〉6 分 13 秒撐起後半，開場的〈Polar Bear Fandango〉只有 2 分 35 秒。這是 Michael Chapman 住在 Kingston upon Hull 期間為 Harvest 錄的第四張，條目形容它帶有 Memphis 味道，同名曲與〈Shuffleboat River Farewell〉都寫了銅管。此後他到美國巡演，回來便簽進 Decca 的子廠 Deram，作品逐漸轉向搖滾。串流上架的是 2013 年重製的 12 軌版，比原盤多了一段 51 秒的〈Link〉。",
+  "keyTracks": [
+   "Wrecked Again",
+   "Fennario",
+   "Shuffleboat River Farewell"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971（月份亦一致，1971-11）。release-group first-release-date **1971-11**、**依裁定 220 回問轄下 release**，最早的一筆就是 1971-11／GB／Official 的 Harvest SHVL 798，**連月份都相同**，沒有以再發日期建檔的問題；條目把本張記為 1971 年作品；串流店面 gb 1681870108 的 releaseDate 記 1971。**⚠ 唯一不同步的是 ℗ 欄的 1972**（「℗ 1972 Onward Music Limited / Fly Records」），那是後續權利方的錄製聲明年份、不是發行年，**行文一律寫 1971。同名先行單曲：無**（同名曲是本張第 3 軌）。",
+  "notes": "⚠ **串流版是 12 軌、原盤 11 軌**：多出來的〈Link〉0:51 插在第 11 位，把原盤末軌擠到第 12 位且長度只剩 5:22。**行文只能引原盤 11 軌與原盤長度**（裁定 141／174）。｜曲名差異一處：原盤〈The First Leave of Autumn〉、店面〈The First Leaf of Autumn〉，**行文照原盤的 Leave**。｜盤名與軌名都帶「(2013 Remaster)」後綴，依裁定 175 截去後比對，**行文不要寫出後綴**。｜同一位藝人的《Rainmaker》也在本批 a 組，**兩張的行文不要重複同一段生平**。"
+ },
+ {
+  "key": "desc2:Bridget St John|Jumblequeen",
+  "artist": "Bridget St John",
+  "album": "Jumblequeen",
+  "facts": [
+   {
+    "f": "release-group 731feef0 的欄位：title「Jumblequeen」、artist-credit「**Bridget St. John**」（MB 實體名帶點號）、first-release-date **1974**、primary-type Album、secondary-types **空**。轄下 4 筆 release：1974／GB／Official（12 吋，**10 軌**，label-info Chrysalis CHR 1062）、1995／Official（CD，14 軌，Beat Goes On BGOCD260）、2006／GB／Official（CD，13 軌，Hux HUX 082）、2010／JP／Official（CD，13 軌，Air Mail Archive AIRAC-1580）。**最早的 release 就是 1974／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/731feef0-e155-43bb-870a-87b25f528a17?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1974／GB 原盤（Chrysalis CHR 1062，12 吋，release 6600408f）的 **10 軌**曲序：1〈Sparrowpit〉、2〈Song for the Waterden Widow〉、3〈I Don't Know If I Can Take It〉、4〈Some Kind of Beautiful〉、5〈Last Goodnight〉、6〈Curious & Wooly〉、7〈Want to Be With You〉、8〈Jumble Queen〉、9〈Sweet Painted Lady〉、10〈Long Long Time〉。**該筆 release 未填逐軌長度。** 2006 年 Hux HUX 082 的 13 軌 CD 前 10 軌與此完全相同並填了長度（合計 47 分 09 秒，最長〈Last Goodnight〉5:04），第 11–13 軌〈3DB Australia〉〈Bumper to bumper〉〈Grow〉是追加曲。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=731feef0-e155-43bb-870a-87b25f528a17&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Bridget St John（本名 Bridget Anne Hobbs，1946 年 10 月 4 日生於 Surrey 的 East Molesey）是英國創作歌手兼吉他手，**以 1969 至 1972 年間為 John Peel 的 Dandelion 廠牌錄的三張專輯為人所知**：《Ask Me No Questions》1969（Peel 製作、九到十小時錄完）、《Songs for the Gentle Man》1971（Ron Geesin 製作）、《Thank You For...》1972。**Dandelion 因旗下藝人缺乏商業成績而收攤，她的第四張《Jumblequeen》1974 年改由 Chrysalis 發行。** 她成長於音樂家庭，母親與姊妹都彈鋼琴；她學過鋼琴、中提琴與小號，高中畢業前用祖母給的二十英鎊買了吉他，1964 至 1965 年在 Sheffield 大學首度演出。她把 John Martyn 與 Michael Chapman 稱為自己的「musical brothers」。1976 年移居紐約 Greenwich Village 後淡出。",
+    "src": "https://en.wikipedia.org/wiki/Bridget_St_John"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1579883389：collectionName「Jumblequeen」、artistName「Bridget St. John」、trackCount **11**、℗ 欄「℗ 2006 Cherry Red Records Ltd」、releaseDate 記 1974。`entity=song` 攤得出 11 軌、11 軌全部有 previewUrl，但 **逐軌比對不通過**：第 1、2、3、5、6、7、9 軌與原盤同位置相同，**第 4 軌是〈I Need It Sometimes〉、第 8 軌是〈Maybe If I Write A Letter〉、第 10 軌是〈Castaway〉、第 11 軌是〈Feel My Love〉——原盤的〈Some Kind of Beautiful〉〈Jumble Queen〉〈Long Long Time〉三軌一軌都不在裡面，連同名曲都缺**。",
+    "src": "https://itunes.apple.com/lookup?id=1579883389&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 731feef0 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/731feef0-e155-43bb-870a-87b25f528a17/front"
+   }
+  ],
+  "hookCandidates": [
+   "前三張都在 John Peel 的 Dandelion，廠牌收攤後這第四張才換到 Chrysalis",
+   "她把 John Martyn 與 Michael Chapman 叫作自己的 musical brothers"
+  ],
+  "sound": "1974 年 Chrysalis CHR 1062 的 12 吋原盤 10 軌，從〈Sparrowpit〉開場、〈Long Long Time〉收尾，第 8 軌〈Jumble Queen〉是同名曲。2006 年的 CD 前 10 軌與原盤完全相同、合計 47 分 09 秒，最長的〈Last Goodnight〉5 分 04 秒。作者 Bridget St John 生於 Surrey 的 East Molesey，成長在母親與姊妹都彈鋼琴的家庭，自己學過鋼琴、中提琴與小號，高中畢業前用祖母給的二十英鎊買了第一把吉他。她前三張專輯都錄在 John Peel 的 Dandelion 廠牌，首張由 Peel 親自製作；Dandelion 收攤後，這第四張才改由 Chrysalis 發行。她把 John Martyn 與 Michael Chapman 稱為自己的 musical brothers。",
+  "keyTracks": [
+   "Sparrowpit",
+   "Last Goodnight",
+   "Jumble Queen"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974。release-group first-release-date **1974**、**依裁定 220 回問轄下 release**，最早的一筆就是 1974／GB／Official 的 Chrysalis CHR 1062，沒有以再發日期建檔的問題；條目把本張記為 1974 年由 Chrysalis 發行的第四張；串流店面 gb 1579883389 的 releaseDate 亦記 1974（℗ 欄的 2006 是再發權利方的錄製聲明，不是發行年）。**三處一致。同名先行單曲：無**（同名曲是本張第 8 軌）。",
+  "notes": "⚠⚠ **覆核推翻探測層的配對（裁定 157）：這筆「ready」不能用。** 串流條目 1579883389 雖然盤名與掛名都對、11 軌全有試聽，但**第 4、8、10、11 軌與原盤不符，且原盤的〈Some Kind of Beautiful〉〈Jumble Queen〉〈Long Long Time〉三軌完全不在裡面——連同名曲都缺**。原盤 10 軌與 2006 年 Hux CD 的前 10 軌兩處互相佐證，店面是孤證。**行文一律只引原盤 10 軌的曲名，絕不可引用店面上的〈I Need It Sometimes〉〈Maybe If I Write A Letter〉〈Castaway〉〈Feel My Love〉四個曲名。**｜⚠ **掛名寫法沿用池中的 `Bridget St John`（無點號）**，不要照 MB 與店面的 `Bridget St. John` 改回帶點號（裁定 177，策展層第一條操作判斷）。｜盤名兩種寫法：碟名作《Jumblequeen》（連寫），第 8 軌的曲名作〈Jumble Queen〉（分寫），**兩者都照原樣，不要統一**。｜條目提到的媒體票選名次與樂評讚語**一律不入行文**。"
+ },
+ {
+  "key": "desc2:Keith Christmas|Stimulus",
+  "artist": "Keith Christmas",
+  "album": "Stimulus",
+  "facts": [
+   {
+    "f": "release-group c6dfaef6 的欄位：title「Stimulus」、artist-credit「Keith Christmas」、first-release-date **1969**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1969／GB／Official（12 吋，**7 軌**，label-info RCA Victor SF 8059）與 2012／GB／Official（CD，**12 軌**，Talking Elephant TECD208）。**最早的 release 就是 1969／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/c6dfaef6-9e7e-44b2-b78b-736d1135e74f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1969／GB 原盤（RCA Victor SF 8059，12 吋，release 98d23102）逐軌：1〈Travelling Down〉3:54、2〈Bedsit Two-Step〉3:22、3〈Roundabout〉2:24、4〈Ice Man〉**6:00**、5〈I Know You Can't Lose〉5:17、6〈Metropolis〉3:32、7〈Trial and Judgement〉**9:43**。**只有 7 軌、總長 34 分 12 秒；末軌一首就佔 9 分 43 秒，接近全張的三分之一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c6dfaef6-9e7e-44b2-b78b-736d1135e74f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "條目正文：Keith Peter Christmas，1946 年 10 月 13 日生於 Essex 的 Wivenhoe（Colchester 附近）。他到 Bath University 讀建築，但當時建築學院設在 Bristol 的 Kingsweston House，他因而混進了那座城市的民謠圈。**1969 年，他的第一張專輯《Stimulus》透過 Sandy Roberton 的 September Productions 製作合約由 RCA Victor 發行。** 他在 David Bowie 的《Space Oddity》專輯上彈木吉他，並在 1970 年第一屆 Glastonbury Festival 演出。整個 1970 年代他在 B&C 與 Manticore 出片，巡演時與 The Who、King Crimson、Ten Years After、Frank Zappa、Roxy Music、Hawkwind、Captain Beefheart、The Kinks 等團同場。",
+    "src": "https://en.wikipedia.org/wiki/Keith_Christmas"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 580801086：collectionName「Stimulus」、artistName「Keith Christmas」、trackCount **12**、℗ 欄「℗ 1969 RCA」、releaseDate 記 1969。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**：**第 1–7 軌與 1969 原盤逐位置相符、逐軌長度差全部在 1 秒內**，第 8–12 軌是五首標了「(Live)」的現場版（〈Buddwing〉〈Examinations Rag〉〈I Know You Can't Lose〉〈Trial and Judgement〉〈The Ballad of Robin Head〉）。**上架的是 12 軌的再發版，不是 7 軌的原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=580801086&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group c6dfaef6 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/c6dfaef6-9e7e-44b2-b78b-736d1135e74f/front"
+   }
+  ],
+  "hookCandidates": [
+   "整張只有七軌，末軌〈Trial and Judgement〉一首就走了九分四十三秒",
+   "他在 David Bowie 的《Space Oddity》上彈的是木吉他"
+  ],
+  "sound": "1969 年 RCA Victor SF 8059 的 12 吋原盤只有 7 軌、總長 34 分 12 秒。末軌〈Trial and Judgement〉9 分 43 秒接近全張三分之一，加上 6 分整的〈Ice Man〉與 5 分 17 秒的〈I Know You Can't Lose〉，後半幾乎都是長曲，前三軌則落在兩分半到四分鐘。作者 Keith Christmas 生於 Essex 的 Wivenhoe，到 Bath University 讀建築，因為建築學院當時設在 Bristol，他就混進了那座城市的民謠圈。這是他的第一張專輯，透過 Sandy Roberton 的 September Productions 製作合約由 RCA Victor 發行；同一時期他在 David Bowie 的《Space Oddity》上彈木吉他，隔年在第一屆 Glastonbury Festival 演出。串流上架的是補了五首現場版、共 12 軌的再發版。",
+  "keyTracks": [
+   "Travelling Down",
+   "Ice Man",
+   "Trial and Judgement"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1969。release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆就是 1969／GB／Official 的 RCA Victor SF 8059，另一筆是 2012 年的 CD，沒有以再發日期建檔的問題；條目明寫「1969 年，他的第一張專輯《Stimulus》……由 RCA Victor 發行」；串流店面 gb 580801086 的 releaseDate 與 ℗ 欄同為 1969。**三處一致。同名先行單曲：無。**",
+  "notes": "**串流版多五首現場版**（第 8–12 軌全部標「(Live)」），**行文只能引原盤 7 軌，不得拿現場版當本張曲目**（裁定 141）。｜曲名字面差異一處：原盤用彎撇的〈I Know You Can’t Lose〉，**本檔與行文一律用 ASCII 直撇〈I Know You Can't Lose〉**。｜條目提到的 Sounds 雜誌票選名次**不得寫入**（媒體票選）。｜條目關於《Fable of the Wings》封面照片與 Magic Muscle 的段落**與本張無關**，不要挪用；策展層另一批曾把《Fable of the Wings》的 RG 判為年份不可信而未收，本張與那件事無關。"
+ },
+ {
+  "key": "desc2:Tír na nÓg|A Tear and a Smile",
+  "artist": "Tír na nÓg",
+  "album": "A Tear and a Smile",
+  "facts": [
+   {
+    "f": "release-group e7d24486 的欄位：title「A Tear and a Smile」、artist-credit「Tír na nÓg」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下只有 2 筆 release：1972／GB／Official（**10 軌，該筆未填 label-info 與載體欄**）與 2012-10-29／CD（**12 軌**，Esoteric ECLEC 2350，status 欄空白）。**最早的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/e7d24486-18c3-3daf-888f-c4ba368a84be?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（release ac79384b）逐軌：1〈Come and See the Show〉3:17、2〈Down Day〉5:50、3〈When I Came Down〉4:33、4〈The Same Thing Happened〉4:47、5〈Bluebottle Stew〉2:19、6〈So Freely〉3:40、7〈Hemisphere〉2:20、8〈Lady Ocean〉4:33、9〈Goodbye My Love〉4:20、10〈Two White Horses〉2:36。**10 軌、總長 38 分 15 秒。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=e7d24486-18c3-3daf-888f-c4ba368a84be&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《A Tear and a Smile》是愛爾蘭團 Tír na nÓg 的**第二張專輯**，**1972 年 4 月 7 日在英國由 Chrysalis Records 發行**，也是該團**第一張在美國發行的專輯**（1972 年 10 月）。**英美兩版的曲目不同，因此存在兩種版本，北美版從未再發。** 北美版裡的〈Daisy Lady〉與〈Dante〉直接取自首張同名專輯；〈Looking Up〉首張已收過，但 Leo O'Kelly 對第一版不滿意，與 Sonny Condell 決定由 Tony Cox 製作重錄一次；在歐洲以單曲發行的〈The Lady I Love〉也出現在美版上——**這四首取代了英版的〈Down Day〉〈Bluebottle Stew〉〈Hemisphere〉〈Goodbye My Love〉**。人員：Sonny Condell（人聲、吉他、clavinet、打擊）、Leo O'Kelly（人聲、吉他）、Larry Steele（貝斯）、Barry De Souza（鼓）、Paul Tregurtha（錄音）、Nick Harrison（編曲）、Tony Cox 與 Bill Leader（製作）。",
+    "src": "https://en.wikipedia.org/wiki/A_Tear_and_a_Smile_(T%C3%ADr_na_n%C3%93g_album)"
+   },
+   {
+    "f": "樂團條目：Tír na nÓg 是 1969 年在都柏林成軍的愛爾蘭民謠二人組，成員 Leo O'Kelly 與 Sonny Condell。Condell 來自 Wicklow 丘陵的 Newtownmountkennedy，早年受古典音樂影響；O'Kelly 來自 Carlow，受 Jimi Hendrix、The Velvet Underground 與 The Doors 這類重搖滾影響。兩人 1969 年在都柏林相識，取凱爾特神話的地名為團名並寫了同名歌，之後到倫敦跑民謠俱樂部並與 Chrysalis 簽約。**1971 至 1973 年間共出三張錄音室專輯**：首張《Tír na nÓg》由 Bill Leader 製作，**第二張《A Tear and a Smile》1972 年由 Tony Cox 製作、素材與首張相近**，第三張《Strong in the Sun》1973 年由 Procol Harum 的風琴手 Matthew Fisher 製作並彈鍵盤、引進更多電聲樂器與鼓。兩人常為兩把吉他用不同的開放調弦。",
+    "src": "https://en.wikipedia.org/wiki/T%C3%ADr_na_n%C3%93g_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 1629187118：collectionName「A Tear and a Smile」、artistName「Tir Na Nog」、trackCount 10、**℗ 欄「℗ 1972 Chrysalis Records Limited」、releaseDate 記 1972-04-07**。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1972 英版原盤**逐位置相符**、逐軌長度差在 9 秒內。**上架的是 10 軌的英版原盤內容，不是北美版、也不是 2012 年的 12 軌 CD。** 字面差異一處：第 4 軌店面作〈The Same Thing Happening〉。",
+    "src": "https://itunes.apple.com/lookup?id=1629187118&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group e7d24486 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/e7d24486-18c3-3daf-888f-c4ba368a84be/front"
+   }
+  ],
+  "hookCandidates": [
+   "英版與美版的曲目不一樣，美版換掉四首、其中兩首直接取自首張",
+   "兩把木吉他常各用不同的開放調弦"
+  ],
+  "sound": "1972 年 4 月 7 日在英國發行的原盤 10 軌、總長 38 分 15 秒，最長的〈Down Day〉5 分 50 秒、最短的〈Bluebottle Stew〉2 分 19 秒。同年十月的北美版曲目不同：〈Down Day〉〈Bluebottle Stew〉〈Hemisphere〉〈Goodbye My Love〉四首被換成〈Daisy Lady〉〈Dante〉〈Looking Up〉與單曲〈The Lady I Love〉，其中前兩首直接取自首張同名專輯。二人組是 1969 年在都柏林成軍的 Leo O'Kelly 與 Sonny Condell，團名取自凱爾特神話；兩人常為兩把木吉他各用不同的開放調弦。這張由 Tony Cox 製作，錄音班底另有 Larry Steele 的貝斯與 Barry De Souza 的鼓，Nick Harrison 編曲。",
+  "keyTracks": [
+   "Come and See the Show",
+   "Down Day",
+   "Two White Horses"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972，**且日期精確到 4 月 7 日**。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的一筆就是 1972／GB／Official，沒有以再發日期建檔的問題；專輯條目寫「1972 年 4 月 7 日在英國由 Chrysalis 發行」；串流店面 gb 1629187118 的 releaseDate 正好也是 **1972-04-07**、℗ 欄同為 1972 Chrysalis。**三處一致，日期兩處對得上。同名先行單曲：無**（單曲〈The Lady I Love〉不同名，且只進美版）。",
+  "notes": "**廠牌欄可以補上了**：卡單 `label` 欄寫「MB 該 release 未填 label-info」（策展層第六條操作判斷）。本次查證取得**兩個獨立的一手線索**——專輯條目明寫英國由 Chrysalis Records 發行，串流條目的 ℗ 欄寫「℗ 1972 Chrysalis Records Limited」。**建卡時可填 Chrysalis，但目錄編號仍無來源、請留白。**｜⚠ **版本要防**：北美版換掉四軌，**行文只能引英版 10 軌**；2012 年 Esoteric ECLEC 2350 是 12 軌，同樣不得挪用。｜曲名差異一處：原盤〈The Same Thing Happened〉、店面〈The Same Thing Happening〉，**行文照原盤的過去式**。｜掛名含 í 與 Ó 兩個帶重音字母，池中與 MB 一致；店面寫 `Tir Na Nog`（無重音），**照池中寫法**。｜樂團另一張《Strong in the Sun》的年份兩處不一致（策展層第 3.4 節），**本張與那件事無關，行文不要牽扯**。"
+ },
+ {
+  "key": "desc2:Wizz Jones|The Legendary Me",
+  "artist": "Wizz Jones",
+  "album": "The Legendary Me",
+  "facts": [
+   {
+    "f": "release-group 505f67e7 的欄位：title「The Legendary Me」、artist-credit「Wizz Jones」、first-release-date **1970**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1970／GB／Official（12 吋，**11 軌**，label-info Village Thing VTS 4）、2006／GB／Official（CD，**14 軌**，Sunbeam SBRCD5015）、2006／JP（CD，11 軌，Vinyl Japan JASKCD 159）。**最早的 release 就是 1970／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/505f67e7-3eb2-4d5c-9490-68361e4699b7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Village Thing VTS 4，12 吋，release 14702bff）的 **11 軌**曲序：1〈See How the Time Is Flying〉、2〈Willie Moore〉、3〈The Legendary Me〉、4〈When I Cease to Care〉、5〈Nobody Told You So〉、6〈Beggar Man〉、7〈Keep Your Lamp Trimmed and Burning〉、8〈Dazzling Stranger〉、9〈If Only I'd Known〉、10〈Slow Down to My Speed〉、11〈Stick a Little Label on It〉。**該筆 release 未填逐軌長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=505f67e7-3eb2-4d5c-9490-68361e4699b7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《The Legendary Me》是英國民謠樂手 Wizz Jones **1970 年**的專輯，**其中八首翻唱曲的作者是他的朋友、詞曲作者 Alan Tunbridge**；〈Willie Moore〉標為傳統曲、〈Keep Your Lamp Trimmed and Burning〉作者為 Reverend Gary Davis、第 9 軌則掛 Wizz Jones 自己。Sunbeam Records 後來以黑膠（SBRLP 5015）與加曲的 CD（SBRCD 5015）再發。逐軌長度：〈See How the Time is Flying〉3:26、〈Willie Moore〉4:22、〈The Legendary Me〉5:21、〈When I Cease to Care〉4:17、〈Nobody Told You So〉5:17、〈Beggar Man〉4:46、〈Keep Your Lamp Trimmed and Burning〉3:00、〈Dazzling Stranger〉3:04、第 9 軌 2:21、〈Slow Down to My Speed〉3:08、〈Stick a Little Label on It〉3:49。人員：Wizz Jones（木吉他、人聲）、John Turner（貝斯）、Pete Berryman（〈See How the Time is Flying〉與〈Beggarman〉的吉他）、**Ralph McTell（〈Dazzling Stranger〉的簧風琴、〈When I Cease to Care〉的電吉他）**、Reanna James（〈Slow Down to My Speed〉的鋼琴）。製作 Ian A. Anderson 與 John Turner，錄音 Gef Lucena 與 Ron Geesin。2006 年 CD 的三首追加曲是〈Sisters of Mercy〉（Leonard Cohen）、〈Glory of Love〉（Billy Hill）、〈Needle of Death〉（Bert Jansch）。",
+    "src": "https://en.wikipedia.org/wiki/The_Legendary_Me"
+   },
+   {
+    "f": "藝人條目：Raymond Ronald「Wizz」Jones（1939 年 4 月 25 日–2025 年 4 月 27 日）是英國木吉他手兼創作歌手，1939 年生於 Surrey 的 Thornton Heath，1950 年代中期看了 Big Bill Broonzy 與 Ramblin' Jack Elliott 在倫敦的演出後才拿起吉他。**綽號 Wizz 來自母親按漫畫角色「Wizzy the Wuz」給他取的小名**，因為他九歲會變紙牌戲法；1957 年他組第一個 skiffle 團 The Wranglers 時把它定了下來。1960 年代初他到巴黎街頭賣藝，圈子裡有 Rod Stewart、Alex Campbell、Clive Palmer 與 Ralph McTell。他 1969 年的首張個人專輯《Wizz Jones》裡有八首出自長年好友 Alan Tunbridge 之手。**2007 年 Sunbeam 把《The Legendary Me》與《When I Leave Berlin》以 CD 再發。**",
+    "src": "https://en.wikipedia.org/wiki/Wizz_Jones"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 496142391：collectionName「The Legendary Me」、artistName「Wizz Jones」、trackCount **14**、℗ 欄「℗ 2006 Sunbeam Records」、**releaseDate 記 2006-06-06**。`entity=song` 攤得出 **14 軌、14 軌全部有 previewUrl**：**第 1–11 軌與 1970 原盤逐位置相符**（長度與專輯條目所列一致或差 1 秒內），第 12–14 軌〈Sisters of Mercy〉4:22、〈Glory of Love〉2:50、〈Needle of Death〉4:30 是 2006 年 CD 的追加曲。**上架的是 14 軌的 2006 再發版，不是 11 軌的原盤。** 該條目有封面（artworkUrl100 可取）。",
+    "src": "https://itunes.apple.com/lookup?id=496142391&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group 505f67e7 直取 front **回 404**（2026-09-06 複查仍是 404）；本張的封面來源改走串流條目 496142391 的 artwork。",
+    "src": "https://coverartarchive.org/release-group/505f67e7-3eb2-4d5c-9490-68361e4699b7/front"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡有八首是同一個人寫的——他的朋友 Alan Tunbridge",
+   "Wizz 這個綽號來自母親按漫畫角色替九歲的他取的小名"
+  ],
+  "sound": "1970 年 Village Thing VTS 4 的 12 吋原盤 11 軌。十一軌裡有八首出自他的朋友、詞曲作者 Alan Tunbridge 之手，另外三軌分別是傳統曲〈Willie Moore〉、Reverend Gary Davis 的〈Keep Your Lamp Trimmed and Burning〉，以及他自己寫的第 9 軌。單軌從 2 分 21 秒到 5 分 21 秒，同名曲最長。錄音班底是 Wizz Jones 的木吉他與歌、John Turner 的貝斯，另有 Pete Berryman 的吉他，以及 Ralph McTell——他在〈Dazzling Stranger〉彈簧風琴、在〈When I Cease to Care〉彈電吉他；〈Slow Down to My Speed〉的鋼琴是 Reanna James。製作是 Ian A. Anderson 與 John Turner，錄音掛 Gef Lucena 與 Ron Geesin。串流上架的是 2006 年補了三軌的 14 軌再發版。",
+  "keyTracks": [
+   "See How the Time Is Flying",
+   "The Legendary Me",
+   "Dazzling Stranger"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**，最早的一筆就是 1970／GB／Official 的 Village Thing VTS 4，其餘兩筆都是 2006 年的再發，沒有以再發日期建檔的問題；專輯條目開宗明義寫「1970 年的專輯」。**⚠ 串流店面 gb 496142391 的 releaseDate 記 2006-06-06、℗ 欄記 2006，那是 Sunbeam 再發的日期**（探測層也標了 yearDrift 36）。依裁定 127 取 1970。**同名先行單曲：無**（同名曲是本張第 3 軌）。",
+  "notes": "⚠ **這是全批三張封面庫拿不到圖的其中一張，靠串流那一路救回來的**（裁定 219／209）：封面庫 front 回 404、2026-09-06 複查仍是 404，串流條目 496142391 有 artwork。**判「封面拿不到」之前兩路都要跑，這張就是少跑一路會被誤殺的例子。**｜**串流版是 14 軌再發**，追加的〈Sisters of Mercy〉〈Glory of Love〉〈Needle of Death〉不是原盤內容，**行文只能引原盤 11 軌**（裁定 141）。｜⚠ **曲名有兩種寫法**：專輯條目第 9 軌作〈If I'd Only Known〉，**原盤與串流兩處都作〈If Only I'd Known〉**，取兩處一致的後者。｜1970／GB 那筆 release 沒填逐軌長度，本檔的長度來自專輯條目與串流，兩者互相印證。｜藝人條目對他吉他造詣的評語（引述他人的稱讚）**一律不入行文**。｜同一位藝人的《Right Now》也在本批 a 組，兩張行文不要重複生平段落。"
+ },
+ {
+  "key": "desc2:Wizz Jones|Right Now",
+  "artist": "Wizz Jones",
+  "album": "Right Now",
+  "facts": [
+   {
+    "f": "release-group fe203557 的欄位：title「Right Now」、artist-credit「Wizz Jones」、first-release-date **1972**、primary-type Album、secondary-types **空**。轄下 3 筆 release：1972／GB／Official（12 吋，10 軌，label-info CBS CBS 64809）、2009-10-19／GB／Official（CD，10 軌，Cherry Tree CRTREE004）、2011-03-07／DE／Official（12 吋，10 軌，CBS S 64809 與 Speakers Corner S 64809）。**最早的 release 就是 1972／GB，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fe203557-c70a-42a1-861b-dbf9ad7d9df2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1972／GB 原盤（CBS 64809，12 吋，release 016f3572）逐軌：1〈Which of Them You Love the Best〉5:06、2〈One Grain of Sand〉3:38、3〈City of the Angels〉**6:08**、4〈The Raven〉3:56、5〈Right Now〉4:06、6〈Find a Man for You Girl〉3:43、7〈American Land〉4:03、8〈No More Time to Try〉2:45、9〈Mary Go 'Round〉**6:49**、10〈Deep Water〉3:46。**10 軌、總長 44 分整。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fe203557-c70a-42a1-861b-dbf9ad7d9df2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "專輯條目：《Right Now》是 Wizz Jones **1972 年**的專輯，**製作人是 John Renbourn，他同時在專輯上彈西塔琴與口琴**。作者欄：〈Which of Them You Love the Best〉〈City of the Angels〉〈Find a Man for You Girl〉〈Mary Go 'Round〉為 Alan Tunbridge 作、〈One Grain of Sand〉為 Pete Seeger 作、〈The Raven〉與〈Deep Water〉由 Wizz Jones 與 Alan Tunbridge 合寫、〈Right Now〉為傳統曲由 Wizz Jones 改編、〈American Land〉為傳統曲由 Peggy Seeger 改編、〈No More Time to Try〉為 Wizz Jones 作。人員：Wizz Jones（人聲、木吉他）、**Sandy Jones（班鳩）**、Pete Berryman（木吉他與電吉他）、Reanna Sutcliffe（鋼琴、大鍵琴、人聲）、Ian Hoyle（鼓）、Malcolm Pool（貝斯）、John Renbourn（西塔琴、口琴）、Sue Draheim（提琴）、Andy Fernbach（鋼琴）。**錄音地點是倫敦的 Marquee Studios**，錄音師 Colin Caldwell。1999 年在 Columbia 以 CD 再發、2011 年由德國 Speaker's Corner 再壓黑膠。",
+    "src": "https://en.wikipedia.org/wiki/Right_Now_(Wizz_Jones_album)"
+   },
+   {
+    "f": "藝人條目：Wizz Jones（1939 年 4 月 25 日–2025 年 4 月 27 日）1960 年代中期與 United Artists 有合約，1966 年與 bluegrass 班鳩手 Pete Stanley 合出《Sixteen Tons of Bluegrass》，1967 年拆夥後轉為個人創作歌手。他 1971 年短暫加入木吉他民謠搖滾團 Accolade 當伴奏吉他手，1975 年又短暫參加傳統民謠團 Lazy Farmer。他自 1970 年代中期起在德國極受歡迎，晚年仍每年到歐洲大陸巡演。",
+    "src": "https://en.wikipedia.org/wiki/Wizz_Jones"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 324112956：collectionName「Right Now」、artistName「Wizz Jones」、trackCount 10、℗ 欄「℗ 1972 Sony Music Entertainment (UK) Ltd.」、releaseDate 記 1972-05-01。`entity=song` 攤得出 **10 軌、10 軌全部有 previewUrl**，曲名與曲序與 1972 原盤**逐位置相符**、逐軌長度差全部在 4 秒內。**上架的是 10 軌的原盤內容，沒有加曲。** 字面差異兩處：第 4 軌店面作〈Raven〉（無 The）、第 9 軌作〈Mary Go Round〉（無撇號）。該條目有封面（artworkUrl100 可取）。",
+    "src": "https://itunes.apple.com/lookup?id=324112956&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group fe203557 直取 front **回 404**（2026-09-06 複查仍是 404）；本張的封面來源改走串流條目 324112956 的 artwork。",
+    "src": "https://coverartarchive.org/release-group/fe203557-c70a-42a1-861b-dbf9ad7d9df2/front"
+   }
+  ],
+  "hookCandidates": [
+   "製作人是 John Renbourn，他同時在盤上彈西塔琴與口琴",
+   "班鳩由 Sandy Jones 來彈，錄音地點是倫敦的 Marquee Studios"
+  ],
+  "sound": "1972 年 CBS 64809 的 12 吋原盤 10 軌、總長 44 分整。第 9 軌〈Mary Go 'Round〉6 分 49 秒與第 3 軌〈City of the Angels〉6 分 08 秒是兩首長曲，最短的〈No More Time to Try〉2 分 45 秒。製作人是 John Renbourn，他同時在盤上彈西塔琴與口琴；班鳩由 Sandy Jones 擔任，另有 Pete Berryman 的木吉他與電吉他、Reanna Sutcliffe 的鋼琴與大鍵琴、Malcolm Pool 的貝斯、Ian Hoyle 的鼓、Sue Draheim 的提琴。錄音在倫敦的 Marquee Studios，錄音師 Colin Caldwell。作曲面仍以 Alan Tunbridge 為主，另有 Pete Seeger 的〈One Grain of Sand〉與 Peggy Seeger 改編的傳統曲〈American Land〉。",
+  "keyTracks": [
+   "Which of Them You Love the Best",
+   "City of the Angels",
+   "Mary Go 'Round"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972。release-group first-release-date **1972**、**依裁定 220 回問轄下 release**，最早的一筆就是 1972／GB／Official 的 CBS 64809，其餘兩筆是 2009 與 2011 的再發，沒有以再發日期建檔的問題；專輯條目開宗明義寫「1972 年的專輯」；串流店面 gb 324112956 的 releaseDate 記 1972-05-01、℗ 欄同為 1972。**三處一致。同名先行單曲：無**（同名曲是本張第 5 軌，且是傳統曲改編）。",
+  "notes": "⚠ **這是全批三張封面庫拿不到圖的其中一張，靠串流那一路救回來的**（裁定 219／209）：封面庫 front 回 404、2026-09-06 複查仍是 404，串流條目 324112956 有 artwork。｜⚠ **盤名是通用詞組，一律用 collectionId 直查**（策展層第十條操作判斷）：以「Wizz Jones Right Now」查串流回四筆，**其中三筆是 Nick Jonas 的同名單曲**，只有 324112956 是對的。｜曲名字面差異兩處：原盤〈The Raven〉／店面〈Raven〉、原盤〈Mary Go 'Round〉／店面〈Mary Go Round〉，**行文照原盤寫法，撇號用 ASCII 直撇**。｜同一位藝人的《The Legendary Me》也在本批 a 組，兩張行文不要重複生平段落。"
+ },
+ {
+  "key": "desc2:Bread, Love and Dreams|The Strange Tale of Captain Shannon and the Hunchback From Gigha",
+  "artist": "Bread, Love and Dreams",
+  "album": "The Strange Tale of Captain Shannon and the Hunchback From Gigha",
+  "facts": [
+   {
+    "f": "release-group a3d18ddd 的欄位：title「The Strange Tale of Captain Shannon and the Hunchback From Gigha」、artist-credit「Bread, Love and Dreams」、first-release-date **1970**、primary-type Album、secondary-types **空**。**轄下只有 1 筆 release**：1970／GB／Official（12 吋，9 軌，label-info Decca Records SKL 5048）。**這是全批唯一一張只有單一 release 的 RG，最早即唯一，與 first-release-date 一致**（裁定 220 複驗通過）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970／GB 原盤（Decca SKL 5048，12 吋，release c0f9cfd7）逐軌：1〈Hymn for Sylvia〉5:46、2〈Masquerade〉4:56、3〈Sucking on a Cigarette〉3:36、4〈He Who Knows All〉4:52、5〈The Lobster Quadrille〉2:46、6〈Butterflyland〉5:10、7〈Purple Haze Melancholy〉3:53、8〈Sing Me a Song〉2:16、9〈The Strange Tale of Captain Shannon and the Hunchback From Gigha〉**6:56**。**9 軌、總長 40 分 11 秒，末軌是與盤名相同的 6 分 56 秒長曲。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "樂團條目：Bread, Love and Dreams 是英國民謠團，1969 至 1971 年間出了三張專輯。**編制是兩女一男、三人都唱**，成員為 David McNiven、Angie Rew、Carolyn Davis。**第二張有 Pentangle 的 Danny Thompson 與 Terry Cox 客串。** 作品表：《Bread, Love and Dreams》（London Records，1969）、**《The Strange Tale of Captain Shannon and the Hunchback from Gigha》（Decca Records，1970）**、《Amaryllis》（Decca Records，1971）。David McNiven 另曾為 prog 團 The Human Beast 貢獻單簧管與歌詞，2015 年 12 月 18 日過世。",
+    "src": "https://en.wikipedia.org/wiki/Bread,_Love_and_Dreams_(band)"
+   },
+   {
+    "f": "串流店面 gb 的 collectionId 878171454：collectionName「The Strange Tale of Captain Shannon and the Hunchback from Gigha」、artistName「**Bread, Love & Dreams**」、trackCount 9、℗ 欄記 1970、releaseDate 記 1970-05-13。`entity=song` 攤得出 **9 軌、9 軌全部有 previewUrl**，曲名與曲序與 1970 原盤**逐位置相符**、**逐軌長度差幾乎全為 0 秒**（僅末軌差 1 秒）。**上架的就是 9 軌的原盤內容，沒有加曲。** 字面差異兩處：第 5 軌店面作〈Lobster Quadrille〉（無 The）、第 7 軌作〈Purple Hazy Melancholy〉。",
+    "src": "https://itunes.apple.com/lookup?id=878171454&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "封面庫以 release-group a3d18ddd 直取 front 回 200，有圖。",
+    "src": "https://coverartarchive.org/release-group/a3d18ddd-b921-3dfc-82a6-1ac52c5ec57e/front"
+   }
+  ],
+  "hookCandidates": [
+   "兩女一男、三個人都唱，第二張請來 Pentangle 的兩位客串",
+   "末軌就叫盤名那一長串，一首走了六分五十六秒"
+  ],
+  "sound": "1970 年 Decca SKL 5048 的 12 吋原盤 9 軌、總長 40 分 11 秒，末軌就是與盤名相同的那一長串曲名，一首 6 分 56 秒。開場的〈Hymn for Sylvia〉5 分 46 秒與〈Butterflyland〉5 分 10 秒是另外兩首長曲，最短的〈Sing Me a Song〉2 分 16 秒。樂團是兩女一男的三人編制、三個人都唱，成員為 David McNiven、Angie Rew、Carolyn Davis；這第二張請來 Pentangle 的 Danny Thompson 與 Terry Cox 客串。首張在 London Records，這張與隔年的《Amaryllis》都在 Decca。串流上架的就是這 9 軌，逐軌長度與原盤幾乎完全一致。",
+  "keyTracks": [
+   "Hymn for Sylvia",
+   "Butterflyland",
+   "The Strange Tale of Captain Shannon and the Hunchback From Gigha"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970**、**依裁定 220 回問轄下 release**——**這個 RG 轄下只有一筆 release**，就是 1970／GB／Official 的 Decca SKL 5048，最早即唯一，完全沒有以再發日期建檔的空間；樂團條目的作品表也把本張記為 Decca、1970；串流店面 gb 878171454 的 releaseDate 記 1970-05-13、℗ 欄同為 1970。**三處一致。同名先行單曲：無。**",
+  "notes": "**掛名的連接詞是 `and` 不是 `&`**：池中與 MB 都寫 `Bread, Love and Dreams`，串流寫 `Bread, Love & Dreams`（第三種寫法），**照池中寫法**（裁定 217 的 &／and 分裂，本張是掛名側）。｜盤名裡的 `From` 在池中與 MB 是大寫 F，串流作小寫 from，**照池中寫法**。｜曲名字面差異兩處：原盤〈The Lobster Quadrille〉／店面〈Lobster Quadrille〉、原盤〈Purple Haze Melancholy〉／店面〈Purple Hazy Melancholy〉，**行文照原盤**。｜樂團第三張《Amaryllis》1971 在串流上只有標為 EP 的再發條目、形態有疑（策展層第 3.5 節），**與本張無關，行文不要提**。｜盤名極長（共 63 字元），**行文引用時請完整寫出、不要自行縮寫**。"
  }
 ]
