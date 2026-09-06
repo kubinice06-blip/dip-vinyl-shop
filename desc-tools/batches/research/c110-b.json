@@ -262,5 +262,401 @@
   "status": "full",
   "yearVerified": "一致，1995。所釘 release-group 的 first-release-date 是 **1995-09-21**、轄下原盤標同一天（IT，wea 0630 11823 2），義大利文條目寫 1995 年由 WEA Italiana 發行，德國店面 id 307159126 的 releaseDate 標 1995-09-21、℗ 1995。四處同日，取 **1995**。同名先行單曲：無；**但名下有兩筆盤名以本卡為前綴的 2025 年條目**（《Buon compleanno Elvis: Naked + Tales》與《Buon compleanno Elvis 1995–2025》），**兩筆都比本卡晚三十年，任何前綴比對都會配到**——策展層已預告，本層實查屬實。",
   "notes": "**探測層 ready 覆核通過**：de 307159126，14 軌全有 previewUrl，`trackCount` 與曲目列都是 14，**與原盤軌數一致**（盤名雖標 Remastered Version，但曲目與原盤逐位置相同、沒有加曲）。\\n**⚠ 店面端的超字串假陽性有三筆**（46 軌的 1995-2025、28 軌的 Naked + Tales、14 軌的 2025 Remaster）。**其中 1809171693 也是 14 軌、releaseDate 也標 1995-09-21**，軌數與日期雙重比對在這張會失效，只能看盤名。\\n策展層說法逐條查證：44 個 release-group、16 張純 Album、本張是第五張、WEA、14 軌、2025 年有兩張超字串盤——**全部屬實**。\\n**⚠ 本層另補一點**：2025 年那兩筆裡，《Naked + Tales》在 MB 上是 **primary-type=Album 且 secondary-types 空**（不是 Compilation），**與本卡同型**，比策展層說的「兩張超字串盤」更危險。\\n**未寫進 facts 的**：榜單名次與銷量認證，依派工信不寫。\\n晚於發行的事件：2008 與 2025 兩次再發屬「作品本身的後世流傳」，可寫但要標時序。"
+ },
+ {
+  "key": "desc2:Litfiba|17 re",
+  "artist": "Litfiba",
+  "album": "17 re",
+  "facts": [
+   {
+    "f": "所釘 release-group 24dc4275 的欄位：title「17 re」、artist-credit「Litfiba」（藝人實體 e68a900e，area **Italy**、1980-10 起、type Group）、first-release-date 1986、primary-type Album、secondary-types **空**。轄下 13 筆 release 全部 Official：**1986 IT 原盤是兩片 12\" Vinyl、8+8 共 16 軌**（IRA 508 006 1），同年另有 8+8 軌的卡帶；**1987 的法國版壓成單片、只有 9 軌**；1987 之後的 CD 版把 16 軌收成單片（IRA 508 006 2）；1990 年起改由 CGD 與 IRA 共同發行。",
+    "src": "https://musicbrainz.org/ws/2/release-group/24dc4275-a92b-3115-8f97-7c57576e2b21?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986 IT 原盤（IRA 508 006 1）的四面逐軌：A 面〈Resta〉2:53、〈Re del silenzio〉4:05、〈Cafè, Mexcal e Rosita〉3:10、〈Vendetta〉5:30；B 面〈Pierrot e la Luna〉4:00、〈Tango〉4:30、〈Come un Dio〉5:00、〈Febbre〉3:49；C 面〈Apapaia〉4:59、〈Univers〉5:16、〈Sulla Terra〉4:19、〈Ballata〉3:47；D 面〈Gira nel mio cerchio〉3:37、〈Cane〉2:50、〈Oro nero〉3:44、〈Ferito〉4:28。**四面各四首、十六軌，總長超過一小時。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=24dc4275-a92b-3115-8f97-7c57576e2b21&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈17 re〉：這是佛羅倫斯樂團 Litfiba 的第二張錄音室專輯，**1986-12-13 由 I.R.A. Records 發行**；與前一張《Desaparecido》(1985) 及後一張《Litfiba 3》(1988) 合稱「權力三部曲」。**最特別的是盤名的來歷：本來該有一首同名曲〈17 re〉，但樂團自己覺得它不夠好、在音樂上跟不上其他曲子，於是沒有收進唱片——不過那首歌的部分歌詞被印在封套內側**。錄音在 1986 年夏秋之際於佛羅倫斯進行，不過這些歌先前已經在現場演出裡磨過。當時的班底是 Antonio Aiazzi、Ringo De Palma、Gianni Maroccolo、Piero Pelù 與 Federico Renzulli，Francesco Magnelli 以合作者身分參與；全碟編曲由 Maroccolo 主導、Magnelli 協助。",
+    "src": "https://it.wikipedia.org/wiki/17_re"
+   },
+   {
+    "f": "同一條目：條目稱這張是**義大利獨立音樂史上第一張雙專輯**，也是義大利 new wave 的基石之一；因為聲響與效果隨歌曲內容變化很大，它不只是 new wave，也帶 post-punk、迷幻與搖滾。巡演的部分場次因為鼓手 Ringo De Palma 要服替代役，由 Daniele Trambusti 代打；**De Palma 過世後，Trambusti 正式接替他**（Trambusti 同時也是這張的錄音與混音工程師）。2017 年的 Record Store Day，這張由 Atlantic Records 以 180 克黑膠限量編號再發。",
+    "src": "https://it.wikipedia.org/wiki/17_re"
+   },
+   {
+    "f": "德國店面 id 41257063：標題「17 Re」、掛名「Litfiba」、releaseDate 1986-01-01、℗ 1987 CGD East West S.r.l.、`trackCount` 16。攤開的曲目列 **16 軌、16 軌全部有試聽**，曲名與曲序與 1986 原盤四面攤平後**逐位置相符**（第 4 軌寫成「Vendette」、原盤是「Vendetta」），逐軌長度差在數秒內。**軌數與原盤相同，是雙片攤成單片、不是加曲版**；同店面另有 16 軌的 6768297738《17 Re (2026 Remaster)》與 1 軌的 1887933846《17 RE - Single》。",
+    "src": "https://itunes.apple.com/lookup?id=41257063&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 e68a900e 名下 47 個 release-group，其中 primary-type=Album 且 secondary-types 空的 13 張：《Desaparecido》1985、**《17 re》1986**、《Litfiba 3》1988、《El diablo》1990、《Terremoto》1993、《Spirito》1994、《Mondi sommersi》1997 等。**本張是第二張**；47 筆裡沒有第二筆叫《17 re》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e68a900e-4fae-493a-84a8-f76ab62d23e4&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名那首歌沒有收進唱片——樂團自己覺得不夠好，只把它的部分歌詞印在封套內側",
+   "四面各四首的雙片盤，法國版卻壓成單片、只留九首"
+  ],
+  "sound": "1986 原盤四面十六軌、總長超過一小時，單軌 2:50 到 5:30。編制是雙吉他、貝斯、鼓加鍵盤：Maroccolo 的貝斯線推得很前，Aiazzi 與 Magnelli 的鍵盤負責空間感，效果器用得多且隨曲子換法，因此同一張裡有 new wave 的冷、post-punk 的緊與迷幻的擴散。Piero Pelù 的義大利語人聲戲劇性強、常在句尾拉長。〈Vendetta〉5:30 與〈Univers〉5:16 是兩首把段落鋪最長的曲子。",
+  "keyTracks": [
+   "Re del silenzio",
+   "Vendetta",
+   "Apapaia"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。所釘 release-group 的 first-release-date 是 **1986**（只到年）、轄下 IT 原盤標 1986，義大利文條目寫首發日是 **1986-12-13**（I.R.A. Records），德國店面 id 41257063 的 releaseDate 標 1986-01-01（只到年）。三處同年，取 **1986**；**℗ 1987 CGD East West 是後來換廠牌之後的標記，不是原盤年**。同名先行單曲：無；**要注意的反而是同名曲根本不存在於唱片上**（見 facts）。名下 47 個 release-group 沒有第二筆叫《17 re》的條目。",
+  "notes": "**探測層 ready 覆核通過**：de 41257063，16 軌全有 previewUrl，`trackCount` 與曲目列都是 16，**與原盤軌數一致**（雙片攤成單片，不是加曲版）。\\n**同店面的假陽性兩筆**：6768297738《17 Re (2026 Remaster)》同樣 16 軌、releaseDate 標 1986-12-13（**比本卡採用的那筆更接近真實首發日**），以及 2026 年的同名單曲。\\n**⚠ 「義大利獨立音樂史上第一張雙專輯」這種「史上第一」宣稱只有單一來源**（義大利文條目一句話，沒有註腳）。依研究層規則，**本稿只在 facts 裡寫成「條目稱……」的轉述形式，寫作層若要用，建議退成可查證的版本**（例如「四面十六首的雙片盤，在當時的義大利獨立廠牌裡罕見」），或直接不寫。\\n策展層說法逐條查證：短掛名回問藝人端點得 area IT、1980-10、Group（另有一個「SpiritoLitfiba」同名實體）、13 筆 release 全 Official、IRA、雙片 8+8——**全部屬實**。\\n**題材處理**：Ringo De Palma 過世是與樂團直接相關的事實，本張只寫到「他過世後由代打者正式接替」這一層；**死因留給同組第 29 張《El diablo》**（那張的〈Il volo〉與整張獻詞都繫在這件事上）。\\n**未寫進 facts 的**：Rolling Stone Italia 百大名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Litfiba|El diablo",
+  "artist": "Litfiba",
+  "album": "El diablo",
+  "facts": [
+   {
+    "f": "所釘 release-group 4b0c49ee 的欄位：title「El diablo」、artist-credit「Litfiba」（藝人實體 e68a900e）、first-release-date 1990、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official、**全部 8 軌**：1990 IT 的 12\" Vinyl（CGD 9031-72780-1）、CD 與卡帶（同一組目錄號）、1991-07-25 的 JP CD（CGD WMC5-384）、以及一筆在德國壓製的 IT CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4b0c49ee-06af-3db8-8519-5e3b8db48dc5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1990 IT 原盤（CGD 9031-72780-1）的逐軌：A 面〈El diablo〉4:26、〈Proibito〉3:49、〈Il volo〉4:22、〈Siamo umani〉4:09；B 面〈Woda Woda〉5:05、〈Ragazzo〉4:42、〈Gioconda〉5:08、〈Resisti〉4:50。**只有八軌、約三十七分鐘，兩面各四首，每一首都在 3:49 到 5:08 之間**——與同一支樂團四年前那張四面十六首的雙片盤形成對比。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4b0c49ee-06af-3db8-8519-5e3b8db48dc5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈El diablo (album Litfiba)〉：這是 Litfiba 的第四張錄音室專輯，**1990-11-19 由 CGD 發行**，約一年半內賣出四十萬張左右，是讓他們被大眾認識的那一張。**這也是第一張不由原始陣容演奏的錄音室專輯**：樂團由 Piero Pelù 與 Ghigo Renzulli 二人領軍，加上鍵盤手 Antonio Aiazzi。這張替後來的「四元素四部曲」打下基礎，**本張對應的元素是火**。",
+    "src": "https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba)"
+   },
+   {
+    "f": "同一條目的〈Descrizione〉節：專輯裡有數首控訴性的歌——同名曲拿搖滾樂被指為撒旦崇拜這件事開玩笑，〈Woda-Woda〉講地球上的缺水，〈Proibito〉描寫一個處處受限、什麼都不再真正自由的世界；也有更私密內省的〈Ragazzo〉與〈Il volo〉，**後者悼念樂團鼓手 Ringo De Palma——他因海洛因過量過世，整張唱片就是獻給他的**。音樂上，這張延續《Litfiba 3》與《Pirata》開始的轉向，走向更直接、較不地下的搖滾，並帶明顯的拉丁色彩。封面是一對臀部，其中一邊畫著刺青。",
+    "src": "https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba)"
+   },
+   {
+    "f": "德國店面 id 40060715：標題「El Diablo」、掛名「Litfiba」、releaseDate 1990-01-01、℗ 1990 CGD East West S.r.l.、`trackCount` 8。攤開的曲目列 **8 軌、8 軌全部有試聽**，曲名與曲序與 1990 原盤**逐位置相符**（第 5 軌寫成「Woda-Woda」，原盤是「Woda Woda」），逐軌長度差在四秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=40060715&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 e68a900e 名下 47 個 release-group 裡，primary-type=Album 且 secondary-types 空的 13 張，**本張 1990 是第四張**（前面依序是《Desaparecido》1985、《17 re》1986、《Litfiba 3》1988），下一張是 1993 的《Terremoto》。**名下另有一筆 1990-10-30 的單曲《El Diablo》**（primary-type Single），**日期比專輯的 11-19 早、盤名逐字相同**——用「取最早那筆」的邏輯會選到單曲。47 筆裡 primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e68a900e-4fae-493a-84a8-f76ab62d23e4&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲是拿「搖滾樂等於撒旦崇拜」這個指控開的玩笑",
+   "整張獻給過世的鼓手，第三首〈Il volo〉就是寫給他的"
+  ],
+  "sound": "1990 原盤八軌、約三十七分鐘，每一首都在 3:49 到 5:08 之間。與前作的冷調 new wave 相比，這張的吉他更亮、節奏更直，Ghigo Renzulli 的riff推在前面，鍵盤退居襯底；編曲裡有清楚的拉丁節奏元素（打擊樂與切分），〈Woda Woda〉5:05 與〈Gioconda〉5:08 是兩首鋪得最開的曲子。Piero Pelù 的義大利語人聲仍然戲劇化，但句法比 1986 年那張直接。",
+  "keyTracks": [
+   "El diablo",
+   "Proibito",
+   "Il volo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。所釘 release-group 的 first-release-date 是 **1990**（只到年）、轄下 IT 三筆原盤都標 1990，義大利文條目寫首發日是 **1990-11-19**（CGD），德國店面 id 40060715 的 releaseDate 標 1990-01-01（只到年）、℗ 1990。三處同年，取 **1990**。**⚠ 同名單曲更早**：名下有一筆 1990-10-30 的單曲《El Diablo》，比專輯早二十天、盤名逐字相同（裁定 179 第 1 點同型）——策展層已預告「同名單曲日期更精確」，本層實查屬實。",
+  "notes": "**探測層 ready 覆核通過**：de 40060715，8 軌全有 previewUrl，`trackCount` 與曲目列都是 8，**與原盤軌數一致**。\\n策展層說法逐條查證：47 個 release-group、13 張純 Album、本張是第四張、CGD、5 筆 release 全 Official、8 軌、同名單曲日期更精確——**全部屬實**。\\n**跨卡連結（同組第 28 張）**：同一支樂團的《17 re》也在本批。**兩張的對比本身就是素材**（1986 四面十六首的雙片對 1990 兩面八首、原始陣容對改組後、new wave 對直接搖滾），但**鼓手 Ringo De Palma 這條線只能寫一次**——建議留給本張（整張獻給他、〈Il volo〉是寫給他的）。\\n**題材處理（逝者克制）**：De Palma 因海洛因過量過世是有來源的事實、且與本作直接綁定（獻詞與曲目），**照寫但不渲染細節**。\\n**未寫進 facts 的**：榜單名次；四十萬張的銷量已寫進 facts（銷量非榜單，依規則可寫）。"
+ },
+ {
+  "key": "desc2:CCCP - Fedeli alla linea|1964-1985 Affinità-divergenze fra il compagno Togliatti e noi: Del conseguimento della maggiore età",
+  "artist": "CCCP - Fedeli alla linea",
+  "album": "1964-1985 Affinità-divergenze fra il compagno Togliatti e noi: Del conseguimento della maggiore età",
+  "facts": [
+   {
+    "f": "所釘 release-group 022f2fb8 的欄位：title「1964-1985 Affinità-divergenze fra il compagno Togliatti e noi: Del conseguimento della maggiore età」、**artist-credit 是「CCCP – Fedeli alla linea」，中間那一槓是 U+2013（EN DASH），不是 ASCII 的連字號**（藝人實體 fa08e509，area Italy、1982 起）、first-release-date 1986、primary-type Album、secondary-types **空**。轄下 6 筆 release 全部 IT／Official、**全部 10 軌**：1986 的 12\" Vinyl（Attack Punk Records，catno APR 10）、1987 換到 Virgin（CCCP 10）、1988 的 CD、2008 由 EMI 再發的兩張 CD 與一張黑膠。",
+    "src": "https://musicbrainz.org/ws/2/release-group/022f2fb8-aa63-3b69-a01b-006f1beb5fe5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986 IT 原盤（Attack Punk Records APR 10）的逐軌：A 面〈CCCP〉2:24、〈Curami〉4:26、〈Mi ami? (remiscelata)〉2:44、〈Trafitto〉2:53、**〈Valium Tavor Serenase〉1:17**、〈Morire〉3:22；B 面〈Noia〉3:47、〈Io sto bene〉3:08、〈Allarme〉5:08、**〈Emilia paranoica (remiscelata)〉7:48**。十軌、約三十七分鐘；最短 1:17、最長 7:48，而最長那首就排在最後。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=022f2fb8-aa63-3b69-a01b-006f1beb5fe5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Affinità-divergenze fra il compagno Togliatti e noi〉：這是 CCCP - Fedeli alla linea 的第一張專輯，1986 年發行，常被簡稱為《Affinità e divergenze》。**盤名出自 1962-12-31 中國共產黨機關報《人民日報》的一篇社論**。與此前兩張 EP 及之後的唱片不同，**這張裡只有〈CCCP〉一首有大量親蘇聯文化的指涉，其餘歌曲的主題是無色的外省生活**——〈Io sto bene〉的歌詞就唱著「我不唸書、不工作、不看電視、不上電影院、不做運動」。",
+    "src": "https://it.wikipedia.org/wiki/Affinit%C3%A0-divergenze_fra_il_compagno_Togliatti_e_noi"
+   },
+   {
+    "f": "同一條目的〈Pubblicazione〉與〈Formazione〉兩節：**1986 年由 Attack Punk Records 以 LP 形式發行，壓的是紅色膠**，目錄號 APR 10；之後兩次再刷分別用深紅與紅色膠。1987 年樂團轉到 Virgin Dischi 後改壓黑膠與卡帶，1988 年再發 CD，2008 年由 EMI 再發，2016 年由 Universal 以 Attack Punk Records 的廠牌重新壓紅膠。班底是 Giovanni Lindo Ferretti（人聲）、Massimo Zamboni（吉他）、Umberto Negri（貝斯、鼓機）、Annarella Giudici（和聲，並在〈Emilia paranoica〉獻聲）、Danilo Fatur（和聲）；**詞全部出自 Ferretti，曲出自 Zamboni 與 Negri**。",
+    "src": "https://it.wikipedia.org/wiki/Affinit%C3%A0-divergenze_fra_il_compagno_Togliatti_e_noi"
+   },
+   {
+    "f": "德國店面 id 713209816：標題「Affinità - Divergenze fra il compagno togliatti e noi del conseguimento della maggiore età (Remastered)」——**開頭的年份「1964-1985」被拿掉、冒號改成空白、大小寫也不同**；掛名寫成「CCCP Fedeli Alla Linea」（**連接號整個消失**）；releaseDate 1986-01-01、℗ 2008 Universal Music Italia、`trackCount` 10。攤開的曲目列 **10 軌、10 軌全部有試聽**，曲名與曲序與 1986 原盤**逐位置相符**，逐軌長度差在四秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=713209816&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 fa08e509 名下的 release-group 分頁列完後，primary-type=Album 且 secondary-types 空的幾張依序是本張 1986、《Socialismo e barbarie》1987、《Canzoni preghiere danze del II millennio – Sezione Europa》1989、《Epica Etica Etnica Pathos》1990。**本張是名下年份最早的一張**；名下沒有第二筆與本張同名的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fa08e509-aedb-48a0-bf85-d30034899156&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名抄自 1962 年最後一天中國共產黨機關報的一篇社論",
+   "首刷壓的是紅色膠，收尾那首將近八分鐘、比開場曲長三倍"
+  ],
+  "sound": "1986 原盤十軌、約三十七分鐘，長度從 1:17 到 7:48。編制極簡：一把吉他、一把貝斯、一台鼓機，沒有真鼓；Zamboni 的吉他多用單音線與空弦，鼓機的節拍硬而不變，留白很多。Ferretti 的人聲介於朗誦與喊叫之間，義大利語咬字重、句子短促，Annarella Giudici 的女聲在收尾那首裡拉開空間。整張的聲音乾、低頻薄，接近八○年代初義大利龐克的錄音條件。",
+  "keyTracks": [
+   "Curami",
+   "Io sto bene",
+   "Emilia paranoica"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。所釘 release-group 的 first-release-date 是 **1986**（只到年）、轄下 IT 原盤標 1986（Attack Punk Records APR 10），義大利文條目寫 1986 年發行，德國店面 id 713209816 的 releaseDate 標 1986-01-01（只到年）。三處同年，取 **1986**；**℗ 2008 Universal 是再發標記、不是原盤年**。同名先行單曲：無（此前的兩張是 EP，盤名不同）；名下沒有第二筆同名條目。",
+  "notes": "**探測層原判 unavailable、本層確認回撈候選可用**：de **713209816**，10 軌全有 previewUrl，`trackCount` 與曲目列都是 10，**與原盤軌數一致**。回撈清單列的另外三筆（712924519《Socialismo e Barbarie》、1438994419、378333095）**都不是本張**。\\n**⚠ 掛名的三種寫法（策展層裁定第 6 條）**：卡片取 ASCII 的「CCCP - Fedeli alla linea」；**所釘條目的 artist-credit 用的是 U+2013**（「CCCP – Fedeli alla linea」）；**店面寫成「CCCP Fedeli Alla Linea」，連接號整個沒有**。**本層實查確認三種寫法都存在，策展層說法屬實**——三種都要進 queryAlias。\\n**⚠ 盤名也有三種**：卡片與所釘條目是「1964-1985 …: Del conseguimento…」（冒號）、義大利文條目用破折號、店面把開頭年份整段拿掉。**任何盤名字串比對在這張都會失效，只能靠 collectionId。**\\n**⚠ 同名藝人風險（策展層特別點名）**：MB 上另有 acd3d634 是**德國的 synthpop 樂團「CCCP」**——本批德語與義大利語兩線同時在跑，**任何用「CCCP」字串查的步驟都可能撞到它**。本卡釘的是 fa08e509（area Italy、1982 起）。\\n策展層其餘說法逐條查證：6 筆 release 全 Official、Attack Punk Records、10 軌、本張是名下最早——**全部屬實**。\\n**未寫進 facts 的**：Rolling Stone Italia 百大名次與樂評個人榜單名次，依派工信一律不寫。"
+ },
+ {
+  "key": "desc2:CCCP - Fedeli alla linea|Epica Etica Etnica Pathos",
+  "artist": "CCCP - Fedeli alla linea",
+  "album": "Epica Etica Etnica Pathos",
+  "facts": [
+   {
+    "f": "所釘 release-group 35ccc645 的欄位：title「Epica Etica Etnica Pathos」、**artist-credit 同樣是用 U+2013 的「CCCP – Fedeli alla linea」**（藝人實體 fa08e509）、first-release-date 1990、primary-type Album、secondary-types **空**。轄下 7 筆 release 全部 Official：1990 IT 的**兩片 12\" Vinyl（6+9 共 15 軌，Virgin CCCPD 207）**與同樣 6+9 的卡帶、1990 的 CD（Virgin 7 88073 2，15 軌收成單片）、2008 由 EMI 再發的兩張 CD 與一組雙黑膠、以及一筆 XW 數位版。",
+    "src": "https://musicbrainz.org/ws/2/release-group/35ccc645-f870-34bc-a4e9-4f83b91f93db?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1990 IT 原盤（Virgin CCCPD 207）的兩片逐軌：第一片〈Aghia Sophia〉**9:30**、〈Paxo de Jerusalem〉4:25、〈Sofia〉1:09、〈Narko'$ / Baby Blue / Narko'$〉**9:53**、〈Campestre〉3:48、〈Depressione Caspica〉5:15；第二片〈In occasione della festa〉1:03、〈«Amandoti» (sedicente cover)〉2:50、〈L'andazzo generale〉4:23、〈El Ayam〉3:57、**〈Appunti di un viaggiatore nella terra del socialismo reale〉0:04**、〈Mozzill'o Re〉4:02、〈Campestre〉0:44、**〈MACISTE contro TUTTI〉11:29**、〈Annarella〉4:26。**十五軌，長度從四秒到十一分半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=35ccc645-f870-34bc-a4e9-4f83b91f93db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Epica Etica Etnica Pathos〉：**唱片分成四個部分，每一部分對應盤名裡的一個詞——Epica、Etica、Etnica、Pathos**。封套內頁的自述寫著「用七○年代的技術做出九○年代所有的髒」。〈Amandoti (sedicente cover)〉是 Ferretti 重唱的版本，這首歌 1987 年由 Annarella Giudici 在他們第一次也是唯一一次的劇場演出《Allerghia. Atto unico di confusione umana》裡唱過。**唱片的所有照片都出自攝影家 Luigi Ghirri：封面拍的是那棟別墅裡被改成混音室的小教堂，另外四張照片分別配上四個主題／四個面。**",
+    "src": "https://it.wikipedia.org/wiki/Epica_Etica_Etnica_Pathos"
+   },
+   {
+    "f": "同一條目：從這張抽出的宣傳單曲是〈Amandoti〉／〈Annarella〉，1990 年由 Virgin 以 7 吋發行，2014 年的 Record Store Day 由 Universal Music Italia 以紅膠 7 吋再發。**整張唱片第一次被完整現場演出，是 2015-05-16 在佛羅倫斯的 Stazione Leopolda**，由樂團成員（Giovanni Lindo Ferretti 除外）與義大利獨立場景的幾位同行一起完成。",
+    "src": "https://it.wikipedia.org/wiki/Epica_Etica_Etnica_Pathos"
+   },
+   {
+    "f": "德國店面 id 1541137049：標題「Epica Etica Etnica Pathos (30° Anniversario) [Remastered 2020]」、掛名「CCCP Fedeli Alla Linea」（**同樣沒有連接號**）、releaseDate 1990-09-13、℗ 2020 Universal Music Italia、`trackCount` 15。攤開的曲目列 **15 軌、15 軌全部有試聽**，曲名與曲序與 1990 原盤兩片攤平後**逐位置相符**（第 4 軌寫成「Narko'$ (Contiene Baby blue)」、第 5 軌標成「Campestre I」），逐軌長度差在一秒內。**軌數與原盤相同，不是加曲版**；同店面另有 15 軌的 712936094《Epica etica etnica pathos (Remastered)》，**releaseDate 卻標 1992-01-01**。",
+    "src": "https://itunes.apple.com/lookup?id=1541137049&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 fa08e509 名下的純 Album 型 release-group 依 first-release-date 排：《1964-1985 Affinità-divergenze…》1986、《Socialismo e barbarie》1987、《Canzoni preghiere danze del II millennio – Sezione Europa》1989、**《Epica Etica Etnica Pathos》1990**。**這張是他們最後一張錄音室專輯**（其後的條目都是現場、選輯或紀錄片原聲）。名下沒有第二筆與本張同名的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=fa08e509-aedb-48a0-bf85-d30034899156&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "四個面各對應盤名裡的一個詞，封面拍的是被改成混音室的別墅小教堂",
+   "十五軌裡有一軌只有四秒，另一軌長十一分半"
+  ],
+  "sound": "1990 原盤兩片十五軌、總長超過一小時，長度落差是本批之最——從四秒的〈Appunti di un viaggiatore nella terra del socialismo reale〉到 11:29 的〈MACISTE contro TUTTI〉。比首張多了大量真樂器與人聲層次：吉他、鍵盤、打擊樂與女聲並置，並嵌進東方與地中海的旋律素材（〈Aghia Sophia〉9:30、〈El Ayam〉），也有〈Amandoti〉這種近乎抒情曲的段落。Ferretti 的朗誦式人聲仍是核心，但整體聲響比 1986 年那張厚且雜。",
+  "keyTracks": [
+   "Amandoti",
+   "Aghia Sophia",
+   "Annarella"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1990。所釘 release-group 的 first-release-date 是 **1990**（只到年）、轄下 IT 三筆原盤都標 1990（Virgin），德國店面 id 1541137049 的 releaseDate 標 **1990-09-13**（三處中最精確的一個）。取 **1990**；**℗ 2020 是三十週年重製標記、不是原盤年**。同名先行單曲：無——抽出的宣傳單曲是〈Amandoti〉／〈Annarella〉，不與專輯同名。**⚠ 同店面另一筆同名條目的 releaseDate 標 1992-01-01**（712936094），比原盤晚兩年，靠年份比對會選錯。",
+  "notes": "**探測層 ready 覆核通過**：de 1541137049，15 軌全有 previewUrl，`trackCount` 與曲目列都是 15，**與原盤軌數一致**（雙片攤成單片，不是加曲版）。\\n**掛名寫法**：與同組第 30 張相同——卡片取 ASCII 的「CCCP - Fedeli alla linea」，所釘條目用 U+2013、店面完全沒有連接號。\\n**⚠ 同名藝人風險**：MB 上另有一個德國 synthpop 樂團叫「CCCP」（acd3d634），本批德義兩線同時在跑，字串比對務必連 area 一起看。\\n策展層說法逐條查證：7 筆 release 全 Official、Virgin、6+9 雙片十五軌、本張是他們最後一張錄音室專輯——**全部屬實**。\\n**跨卡連結（同組第 30 張）**：同一支樂團的首張也在本批。**兩張的切入面向要分開**——首張走盤名出處與紅膠首刷，本張走四主題結構與 Luigi Ghirri 的攝影。\\n**未寫進 facts 的**：榜單名次與樂評媒體排名，依派工信不寫。\\n晚於發行的事件：2015 年首度完整現場重演屬「作品本身的後世流傳」，可寫但要標時序。"
+ },
+ {
+  "key": "desc2:Afterhours|Hai paura del buio?",
+  "artist": "Afterhours",
+  "album": "Hai paura del buio?",
+  "facts": [
+   {
+    "f": "所釘 release-group a787a80c 的欄位：title「Hai paura del buio?」、artist-credit「Afterhours」（藝人實體 70a709a1，area **Italy**、1986 起、disambiguation「Italian alternative rock band」）、first-release-date 1997、primary-type Album、secondary-types **空**。轄下 4 筆 release 全部 IT／Official：1997 的 CD（Mescal 300 755-2，**19 軌**）、2007 的 Virgin Music CD（19 軌）、**2014-03-11 的兩筆再發都是雙片（CD 版 20+21 軌、數位版 20+22 軌）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a787a80c-c567-32b8-8786-d24518bf462f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 IT 原盤（Mescal 300 755-2）的逐軌：〈Hai paura del buio?〉**0:35**、〈1.9.9.6.〉3:41、〈Male di miele〉2:44、〈Rapace〉5:36、〈Elymania〉3:37、〈Pelle〉5:10、〈Dea〉1:40、〈Senza finestra〉2:46、〈Simbiosi〉4:14、〈Voglio una pelle splendida〉3:41、〈Terrorswing〉2:50、〈Lasciami leccare l'adrenalina〉1:19、〈Punto G〉5:45、〈Veleno〉3:45、〈Come vorrei〉3:06、〈Questo pazzo pazzo mondo di tasse〉2:59、〈Musicista contabile〉5:30、〈Sui giovani d'oggi ci scatarro su〉2:57、〈Mi trovo nuovo〉3:40。**十九軌、約一小時，同名曲只有三十五秒、擺在最前面當開場。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a787a80c-c567-32b8-8786-d24518bf462f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Hai paura del buio? (album)〉：**1997-10-20 由 Mescal 發行**，是他們繼《Germi》(1995) 之後**第二張用義大利語演唱的專輯**。這張誕生在一段困難時期：原本的廠牌 Vox Pop 收掉，樂團一度沒有唱片公司，最後是 Mescal 接下這件事。**這張之後，貝斯手 Alessandro Zerilli 離團。**",
+    "src": "https://it.wikipedia.org/wiki/Hai_paura_del_buio%3F_(album)"
+   },
+   {
+    "f": "同一條目的〈Stile e critica〉節：**整整十九軌，是樂團創作力最旺的一段時期的產物**，也是他們與各種曲風正面交手的一張——龐克（〈Sui giovani d'oggi ci scatarro su〉）、硬蕊龐克（〈Dea〉〈Lasciami leccare l'adrenalina〉）、流行搖滾（〈Voglio una pelle splendida〉）、噪音搖滾（〈Musicista contabile〉〈Punto G〉）與後油漬（〈Male di miele〉〈Elymania〉）都在裡面。歌詞以反諷見長，對布爾喬亞的理想與假偶像毫不客氣；**歌詞寫作也用了與前一張《Germi》相同的拼貼（cut-up）手法**。",
+    "src": "https://it.wikipedia.org/wiki/Hai_paura_del_buio%3F_(album)"
+   },
+   {
+    "f": "德國店面 id 1440859302：標題「Hai paura del buio?」、掛名「Afterhours」、releaseDate 1997-01-01、℗ **2014** Universal Music Italia、`trackCount` 42。攤開的曲目列 **42 軌、42 軌全部有試聽**——**那是 2014 年雙片再發**：第一片前 19 軌與 1997 原盤逐位置相符（都標 Remastered）、第 20 軌是原盤沒有的〈Televisione〉5:25；**第二片二十二軌全部是與客座樂手合作的重錄版**（〈Hai paura del buio?〉找 Damo Suzuki、〈Male di miele〉找 The Afghan Whigs、〈Pelle〉找 Mark Lanegan、〈Senza finestra〉找 Joan As Policewoman 等）。",
+    "src": "https://itunes.apple.com/lookup?id=1440859302&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 70a709a1 名下 32 個 release-group，其中 primary-type=Album 且 secondary-types 空的 10 張：《During Christine's Sleep》1990、《Pop Kills Your Soul》1993、《Germi》1995、**《Hai paura del buio?》1997**、《Non è per sempre》1999、《Quello che non c'è》2002 等。**義大利文條目說本張是第五張錄音室專輯，而所釘藝人頁的純 Album 型條目依日期排本張是第四筆——兩邊差一張，序數不可斷言。** 32 筆裡沒有第二筆同名條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70a709a1-8083-44c4-b61f-f7d10e1004d9&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲只有三十五秒，擺在十九首歌的最前面當開場",
+   "原本的廠牌收掉、樂團一度無處可去，這張是接手的小廠發的"
+  ],
+  "sound": "1997 原盤十九軌、約一小時，長度從 35 秒到 5:45。這是一張刻意讓曲風互相衝撞的碟：硬蕊的短打（〈Dea〉1:40、〈Lasciami leccare l'adrenalina〉1:19）夾在五分半的噪音搖滾長曲（〈Rapace〉〈Punto G〉）之間，也有旋律清楚的流行搖滾。吉他失真層次多、常用回授與雜訊，鼓打得重，Manuel Agnelli 的義大利語人聲從低喃到嘶吼都有。歌詞用拼貼手法寫成，句子常常不接。",
+  "keyTracks": [
+   "Male di miele",
+   "Voglio una pelle splendida",
+   "Sui giovani d'oggi ci scatarro su"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。所釘 release-group 的 first-release-date 是 **1997**（只到年）、轄下原盤標 1997 IT（Mescal 300 755-2），義大利文條目寫首發日是 **1997-10-20**，德國店面 id 1440859302 的 releaseDate 標 1997-01-01（只到年）。三處同年，取 **1997**；**℗ 2014 是雙片再發的標記、不是原盤年**。同名先行單曲：無；名下 32 個 release-group 沒有第二筆同名條目。**盤名結尾的問號是原盤標題的一部分。**",
+  "notes": "**探測層 ready 覆核通過，但要小心軌數**：de 1440859302，42 軌全有 previewUrl。**42 不是原盤軌數**——那是 2014 年的雙片再發：第一片 20 軌（前 19 軌是原盤、第 20 軌〈Televisione〉是加曲）、第二片 22 軌全部是客座重錄版。依裁定 140 可用，**但行文提軌數一律寫 19 軌，且不得把第二片那些客座版當成本張的曲目**（那會把 Mark Lanegan、Damo Suzuki 這些名字錯寫成 1997 年的參與者）。**這是本批最容易寫錯的一張。**\\n策展層說法逐條查證：短掛名回問藝人端點得 area IT、1986、「Italian alternative rock band」（另有 UK 的 Celtic band 與一個電子藝人同名）、4 筆 release 全 Official、Mescal、19 軌——**全部屬實**。\\n**⚠ 本層擋下一個序數**：義大利文條目寫「第五張錄音室專輯」，所釘藝人頁的純 Album 型條目排序則是第四筆。**兩邊差一張，行文不要寫第幾張。**\\n**未寫進 facts 的**：2013 年兩項由記者評審團與網站讀者投票選出的名次（獨立廠牌最佳專輯、十五年最佳義大利專輯）——**那是票選榜單，依派工信不寫**；「被視為樂團最好的一張」這類評價也不寫。"
+ },
+ {
+  "key": "desc2:Franco Battiato|Patriots",
+  "artist": "Franco Battiato",
+  "album": "Patriots",
+  "facts": [
+   {
+    "f": "所釘 release-group 639d6062 的欄位：title「Patriots」、artist-credit「Franco Battiato」（藝人實體 0cd117b2）、first-release-date **1980-07**、primary-type Album、secondary-types **空**。轄下 7 筆 release 全部 Official：**1980-07 的 IT 原盤（EMI 3C 064-18521，12\" Vinyl，7 軌）**與同年的 ES 版（EMI 056 1185211，7 軌）、1998-02-16 與 2008 的三筆 CD（都是 7 軌）、2010 的三十週年版（11 軌）、2020 的四十週年數位重製版（10 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/639d6062-c4f2-350c-8ecc-fd12321d3adf?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1980 原盤的逐軌：A 面〈Up Patriots to Arms〉5:05、〈Venezia-Istanbul〉4:37、〈Le aquile〉4:11；B 面〈Prospettiva Nevski〉4:00、〈Arabian Song〉3:40、〈Frammenti〉3:57、〈Passaggi a livello〉3:38。**只有七軌、約二十九分鐘，A 面三首 B 面四首**——是本批 b 組軌數最少的一張。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=639d6062-c4f2-350c-8ecc-fd12321d3adf&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Patriots (album)〉：唱片由 EMI Italiana 發行。**原本打算取名《I telegrafi del martedì grasso》。**〈Le aquile〉的歌詞取自 Fleur Jaeggy 的《Statue d'acqua》；**〈Arabian Song〉是他生涯裡第一首用阿拉伯語演唱的曲子**；〈Frammenti〉裡有大量對義大利詩人的文學引用（其中包括 Leopardi、Pascoli 與 Carducci）；〈Passaggi a livello〉的第二段與第三段之間，插進一段引自 Marcel Proust《追憶似水年華》第三卷的法語。〈Prospettiva Nevski〉的靈感來自聖彼得堡那條同名街道。",
+    "src": "https://it.wikipedia.org/wiki/Patriots_(album)"
+   },
+   {
+    "f": "同一條目：**〈Up Patriots to Arms〉開頭有一段來源不明的阿拉伯語口白，而那一段底下的音樂是 Richard Wagner《唐懷瑟》序曲的片段。** 2010 年出過三十週年紀念版，多收〈Up Patriots to Arms〉的影像與四首加曲；十年後的四十週年版沿用那批加曲（但拿掉了伴唱帶與影像），封面由 Francesco Messina 重做——把原封面上扛在 Battiato 肩上的小 Battiato 拿掉，並把 Battiato 與 Giusto Pio 並坐的那塊剪影移到封底。",
+    "src": "https://it.wikipedia.org/wiki/Patriots_(album)"
+   },
+   {
+    "f": "德國店面 id 713519129：標題「Patriots (Remastered)」、掛名「Franco Battiato」、releaseDate 1980-01-01、℗ 2008 EMI Music Italy、`trackCount` 7。攤開的曲目列 **7 軌、7 軌全部有試聽**，曲名與曲序與 1980 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；同店面另有 10 軌的 1539134118《Patriots (40th Anniversary Edition) [Remastered]》，**releaseDate 卻標 1981-03-23**——比原盤晚了大半年。",
+    "src": "https://itunes.apple.com/lookup?id=713519129&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 0cd117b2 名下分頁列完 91 個 release-group，其中 primary-type=Album 且 secondary-types 空的 42 張。依 first-release-date 排，本張 1980-07 的前一張是 1979-09-10 的《L'era del cinghiale bianco》、後一張是 1981-09-21 的《La voce del padrone》——**本張正好夾在兩者中間**。**義大利文條目寫這是他的第十張專輯，而所釘藝人頁的純 Album 型條目依日期排本張是第九筆；兩邊差一張，序數不可斷言。** 91 筆裡沒有第二筆叫《Patriots》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0cd117b2-2e21-406d-80cf-5ce0a6065e37&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲的阿拉伯語口白底下墊的是華格納《唐懷瑟》序曲的片段",
+   "七首歌裡塞進了 Proust 的法語原句、義大利詩人的引用，還有他第一次用阿拉伯語唱歌"
+  ],
+  "sound": "1980 原盤七軌、約二十九分鐘，單軌 3:38 到 5:05。編制以合成器與弦樂為主：Giusto Pio 的小提琴與絃樂編寫貼著電子節拍走，鼓機與真鼓交替，音色乾淨、混響控制得很緊。Battiato 的義大利語唱法平直、幾乎不加抖音，旋律線常做級進的長句；〈Up Patriots to Arms〉5:05 節奏最強，〈Prospettiva Nevski〉的合成器動機在全曲反覆，〈Arabian Song〉則轉用阿拉伯語演唱與相應的調式。",
+  "keyTracks": [
+   "Up Patriots to Arms",
+   "Prospettiva Nevski",
+   "Arabian Song"
+  ],
+  "status": "full",
+  "yearVerified": "**年份 1980 確定，月份兩說。** 所釘 release-group 的 first-release-date 是 **1980-07**、轄下 IT 原盤也標 1980-07；**義大利文條目卻寫「1980 年十月」由 EMI Italiana 發行**。兩邊差三個月，**行文不要寫月份**。德國店面 id 713519129 的 releaseDate 標 1980-01-01（只到年）、℗ 2008 是再發標記。年份三處一致，取 **1980**。同名先行單曲：無；名下 91 個 release-group 沒有第二筆叫《Patriots》。",
+  "notes": "**探測層 ready 覆核通過**：de 713519129，7 軌全有 previewUrl，`trackCount` 與曲目列都是 7，**與原盤軌數一致**。\\n**⚠ 同店面的假陽性**：1539134118《Patriots (40th Anniversary Edition) [Remastered]》10 軌、releaseDate 標 **1981-03-23**——**那個日期會讓年份比對把它誤判成別張碟，也會讓人以為原盤是 1981 年**。\\n**⚠ 本層擋下一個序數**：條目寫「第十張」，所釘藝人頁排序是第九筆。**行文不要寫第幾張。**\\n策展層說法逐條查證：91 個 release-group、7 筆 release 全 Official、EMI、7 軌、池中已有《L'era del cinghiale bianco》(1979) 與《La voce del padrone》(1981)、**本張正好夾在池中那兩張中間**——**全部屬實**。\\n**跨卡連結（同組第 34 張）**：同一位藝人的《Fisiognomica》(1988) 也在本批，兩張的切入面向要分開。\\n**未寫進 facts 的**：專輯榜名次與在榜週數，依派工信不寫。\\n晚於發行的事件：Battiato 2021 年辭世屬「與作品無關的後續生平事件」，**本張不得觸及**。"
+ },
+ {
+  "key": "desc2:Franco Battiato|Fisiognomica",
+  "artist": "Franco Battiato",
+  "album": "Fisiognomica",
+  "facts": [
+   {
+    "f": "所釘 release-group 99e4c30a 的欄位：title「Fisiognomica」、artist-credit「Franco Battiato」（藝人實體 0cd117b2）、first-release-date **1988-04-09**、primary-type Album、secondary-types **空**。轄下只有 4 筆 release、全部 IT／Official、**全部 8 軌**：1988-04-09 的 12\" Vinyl（EMI 64 7903141）、1988 的兩筆 CD（EMI 0777 7 90314 2／090-7903142）、2008 的 CD 再發（EMI 5099952240928）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/99e4c30a-b81c-379c-a6d4-6513b897e729?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1988 IT 原盤的逐軌：〈Fisiognomica〉4:32、〈E ti vengo a cercare〉3:52、〈Veni l'autunnu〉3:28、〈Secondo imbrunire〉3:17、〈Nomadi〉4:25、〈Zai saman〉3:53、〈Il mito dell'amore〉3:28、〈L'oceano di silenzio〉4:18。**八軌、約三十一分鐘，每一首都在 3:17 到 4:32 之間**，是他長度分布最平均的一張之一。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=99e4c30a-b81c-379c-a6d4-6513b897e729&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Fisiognomica (album)〉的〈Antefatto〉節：**1985 年《Mondi lontanissimi》巡演結束後，Battiato 決定只寫歌劇**，還在訪談裡說他對續約 EMI Italiana 沒有興趣。1987 年四月歌劇《Genesi》在帕爾馬皇家劇院上演、西班牙巡演之後，他開始寫第二部歌劇《Gilgamesh》；**他後來說，寫歌劇的過程中他一再寫出一些無論如何都放不進歌劇裡的流行音樂素材，於是決定出一張新的原創專輯**——那就是這張。",
+    "src": "https://it.wikipedia.org/wiki/Fisiognomica_(album)"
+   },
+   {
+    "f": "同一條目的〈Descrizione〉節：與此前的專輯相比，這張商業性低得多，阿拉伯與古典音樂的影響明顯，幾首歌裡有女高音與多組合唱參與；整體內省、走向靈性的討論，而這個方向也延續到他 1990 年代前半的作品。**全碟編曲都出自 Battiato 本人；〈Veni l'autunnu〉的歌詞一部分是西西里語、一部分是阿拉伯語；〈L'oceano di silenzio〉結尾那段德語文本取自 Fleur Jaeggy 的《Wasserstatuen》。** 條目另記：**1989-03-18 他與 Giusto Pio 在 Sala Nervi 的一場演出上，當著若望保祿二世的面演唱了〈E ti vengo a cercare〉〈Nomadi〉與〈L'oceano di silenzio〉三首。**",
+    "src": "https://it.wikipedia.org/wiki/Fisiognomica_(album)"
+   },
+   {
+    "f": "德國店面 id 713785467：標題「Fisiognomica (2008 Remastered Edition)」、掛名「Franco Battiato」、releaseDate **2008-01-01**、℗ 2008 EMI Music Italy、`trackCount` 8。攤開的曲目列 **8 軌、8 軌全部有試聽**，曲名與曲序與 1988 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；**但這筆的 releaseDate 標的是再發年 2008、不是原盤年 1988**——本批日期最容易誤用的幾筆之一。",
+    "src": "https://itunes.apple.com/lookup?id=713785467&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 0cd117b2 名下 91 個 release-group 裡，primary-type=Album 且 secondary-types 空的 42 張。本張 1988-04-09 的前後分別是 1987 年的《Genesi》與《Nómadas》、以及 1991-11-08 的《Come un cammello in una grondaia》。**義大利文條目寫這是他的第十五張錄音室專輯，而所釘藝人頁的純 Album 型條目依日期排本張是第十七筆——兩邊差兩張，序數不可斷言。** 91 筆裡沒有第二筆叫《Fisiognomica》的條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0cd117b2-2e21-406d-80cf-5ce0a6065e37&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "他當時只想寫歌劇，卻一直寫出放不進歌劇的歌——這張就是那些歌",
+   "〈Veni l'autunnu〉一半西西里語一半阿拉伯語，收尾那首的結尾是德語"
+  ],
+  "sound": "1988 原盤八軌、約三十一分鐘，單軌 3:17 到 4:32。編制以合成器與弦樂為底，加進女高音與合唱，阿拉伯調式與古典語法交替出現；打擊樂不強，速度多半中緩。Battiato 的義大利語唱法平直，句子長而級進；〈Veni l'autunnu〉在西西里語與阿拉伯語之間換，〈L'oceano di silenzio〉4:18 收尾時轉成德語朗誦。整張聲音乾淨、留白多，比他 1980 年代前半的作品少了節拍的推力。",
+  "keyTracks": [
+   "E ti vengo a cercare",
+   "L'oceano di silenzio",
+   "Veni l'autunnu"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。所釘 release-group 的 first-release-date 是 **1988-04-09**、轄下黑膠標同一天（IT，EMI 64 7903141）、兩筆 CD 標 1988，義大利文條目寫 1988 年發行。取 **1988**。**⚠ 德國店面那筆 713785467 的 releaseDate 與 ℗ 都是 2008**——那是重製版的標記，**不可拿來當卡片年份**。同名先行單曲：無（條目說抽出的四支單曲是給海外市場的）；名下 91 個 release-group 沒有第二筆同名條目。",
+  "notes": "**探測層 ready 覆核通過**：de 713785467，8 軌全有 previewUrl，`trackCount` 與曲目列都是 8，**與原盤軌數一致**。**但這筆的日期欄整個是 2008**，本批只有這張與少數幾張是這種形狀。\\n**⚠ 本層擋下一個序數**：條目寫「第十五張」，所釘藝人頁排序是第十七筆。**行文不要寫第幾張。**\\n策展層說法逐條查證：91 個 release-group、4 筆 release 全 Official、EMI、8 軌、這張把 Battiato 的目錄往後拉八年（池中已有 1979 與 1981 兩張）——**全部屬實**。\\n**跨卡連結（同組第 33 張）**：同一位藝人的《Patriots》(1980) 也在本批。**兩張都與 Fleur Jaeggy 有關**（《Patriots》的〈Le aquile〉取自《Statue d'acqua》、本張〈L'oceano di silenzio〉的德語結尾取自同一本書的德文版《Wasserstatuen》）——**這條線很好用，但只能寫一次**，建議留給本張。\\n**題材處理**：1989 年在教宗面前演出屬與作品直接綁定的後續事件，可寫但要標時序。\\n**未寫進 facts 的**：專輯榜名次與「當年第十五暢銷專輯」這個排名，依派工信不寫；三十萬張的銷量本身可寫，但條目把它與名次寫在同一句，本稿從嚴略去。"
+ },
+ {
+  "key": "desc2:Pino Daniele|Terra mia",
+  "artist": "Pino Daniele",
+  "album": "Terra mia",
+  "facts": [
+   {
+    "f": "所釘 release-group 76fbfcc9 的欄位：title「Terra mia」、artist-credit「Pino Daniele」（藝人實體 5b1633c8）、first-release-date 1977、primary-type Album、secondary-types **空**。轄下 4 筆 release、**全部 IT、全部 13 軌**：1977 的 12\" Vinyl（EMI 3C 064-18277）、**2007 一筆 Promotion**（隨雜誌附送）、2008-03-12 的 CD（EMI 50999 522352 2 1）、以及一筆未標日期的 CD。",
+    "src": "https://musicbrainz.org/ws/2/release-group/76fbfcc9-9de1-33ee-8986-7ac70ddec993?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1977 IT 原盤（EMI 3C 064-18277）的逐軌：A 面〈Napule è〉3:50、〈'Na tazzulella 'e café〉3:24、〈Ce sta chi ce penza〉3:28、〈Suonno d'ajere〉4:16、〈Maronna mia〉2:55、〈Saglie, saglie〉2:41；B 面〈Terra mia〉2:09、〈Che calore〉2:56、**〈Chi po dicere〉1:30**、〈Furtunato〉3:02、〈Cammina cammina〉2:50、〈'O padrone〉3:53、〈Libertà〉3:51。**十三軌、約四十分鐘，B 面就放了七首，最短的只有 1:30。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=76fbfcc9-9de1-33ee-8986-7ac70ddec993&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Terra mia (Pino Daniele)〉：這是 Pino Daniele 的**第一張錄音室專輯**，1977 年由 EMI Italiana 發行。**它是他把拿坡里文化與藍調焊在一起的第一次嘗試**，而這兩者都在他自己的養成裡：學藝時期他曾在拿坡里樂團 Napoli Centrale 擔任貝斯手——那支樂團是拿坡里融合樂最早的例子之一，在義大利唱片市場上也拿到過相當的認可。**〈'Na tazzulella 'e cafè〉與〈Maronna mia〉這類曲子最能看出他怎麼把傳統的拿坡里旋律與藍調的表達方式接起來。**",
+    "src": "https://it.wikipedia.org/wiki/Terra_mia_(Pino_Daniele)"
+   },
+   {
+    "f": "同一條目：專輯裡的〈Che calore〉與〈Furtunato〉兩首**來自他 1976 年的第一張單曲**（那張單曲 A 面的曲名寫作〈Ca calore〉）。**錄音在羅馬的 Studio Quattro Uno 進行——那間錄音室的主人是 Claudio Mattone，就在 RCA Italiana 總部旁邊，當時被認為是技術與聲音表現最好的一間。** 全碟詞曲都由 Pino Daniele 所寫。",
+    "src": "https://it.wikipedia.org/wiki/Terra_mia_(Pino_Daniele)"
+   },
+   {
+    "f": "德國店面 id 713514527：標題「Terra mia (2008 Remaster)」、掛名「Pino Daniele」、releaseDate 1977-01-01、℗ 2008 EMI Music Italy、`trackCount` 13。攤開的曲目列 **13 軌、13 軌全部有試聽**，曲名與曲序與 1977 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；同店面另有兩筆同樣 13 軌的《Terra mia》，但那是 2016 年的爵士致敬盤（掛名不同），**軌數與盤名都一樣、只有掛名與年份分得出來**。",
+    "src": "https://itunes.apple.com/lookup?id=713514527&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 5b1633c8 名下 61 個 release-group，其中 primary-type=Album 且 secondary-types 空的 23 張。依 first-release-date 排：**《Terra mia》1977 是最早的一張**，其後是《Pino Daniele》1979、《Nero a metà》1980、《Vai mo'》1981-06、《Bella 'mbriana》1982-04-19。61 筆裡沒有第二筆叫《Terra mia》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5b1633c8-cb78-4d85-a7d1-a6d145d8d472&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "在這張之前他是拿坡里一支融合樂團的貝斯手，這是他第一次把拿坡里話唱進藍調裡",
+   "十三首歌塞在四十分鐘裡，B 面就放了七首、最短的只有一分半"
+  ],
+  "sound": "1977 原盤十三軌、約四十分鐘，單軌 1:30 到 4:16。編制是吉他、貝斯、鼓加鍵盤與管樂，節奏帶藍調的搖擺與拿坡里歌謠的旋律線；Pino Daniele 的吉他乾淨、句法接近藍調樂手，人聲則用拿坡里方言演唱、咬字軟而黏。〈Napule è〉3:50 是全碟最慢也最素的一首，〈'Na tazzulella 'e café〉節奏最活，〈'O padrone〉與〈Libertà〉收在近四分鐘的中板。",
+  "keyTracks": [
+   "Napule è",
+   "'Na tazzulella 'e café",
+   "Terra mia"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977。所釘 release-group 的 first-release-date 是 **1977**（只到年）、轄下原盤標 1977 IT（EMI 3C 064-18277），義大利文條目寫 1977 年由 EMI Italiana 發行，德國店面 id 713514527 的 releaseDate 標 1977-01-01（只到年）。三處同年，取 **1977**；**℗ 2008 是重製版標記、不是原盤年**。同名先行單曲：無（1976 年的首張單曲是〈Ca calore〉／〈Furtunato〉，不與專輯同名）；名下 61 個 release-group 沒有第二筆同名條目。",
+  "notes": "**探測層 ready 覆核通過**：de 713514527，13 軌全有 previewUrl，`trackCount` 與曲目列都是 13，**與原盤軌數一致**。\\n**⚠ 同店面有兩筆同名同軌數的假陽性**：1880559062 與 1193973783，都叫《Terra mia》系列、都是 13 軌，但那是 2016 年一組樂手的爵士致敬盤（掛名不是 Pino Daniele 本人）。**軌數＋盤名雙重比對在這張會失效，必須看掛名。**\\n**status（裁定 167 附帶）**：4 筆裡 1 筆 Promotion，不採為背書——與策展層說法相符。\\n策展層說法逐條查證：61 個 release-group、23 張純 Album、本張最早、EMI 3C 064-18277、13 軌——**全部屬實**。\\n**跨卡連結（同組第 36 張）**：同一位藝人的《Vai mo'》(1981) 也在本批，兩張的切入面向要分開——本張寫「他從貝斯手變成把拿坡里話唱進藍調的人」，那張寫班底與撇號寫法。\\n**題材處理**：Pino Daniele 2015 年辭世屬「與作品無關的後續生平事件」，**本張不得觸及**。\\n**未寫進 facts 的**：本張未查到榜單資料。"
+ },
+ {
+  "key": "desc2:Pino Daniele|Vai mo'",
+  "artist": "Pino Daniele",
+  "album": "Vai mo'",
+  "facts": [
+   {
+    "f": "所釘 release-group 2e7b4c96 的欄位：**條目標題用的是彎撇號「Vai mo’」**、artist-credit「Pino Daniele」（藝人實體 5b1633c8）、first-release-date **1981-06**、primary-type Album、secondary-types **空**。轄下 5 筆 release 全部 Official、**全部 11 軌**：**1981-06 的 IT 原盤（EMI 3C 064 18550）標題用的是 ASCII 撇號「Vai mo'」**、1994 的 DE CD（CGD 4509 98375-2）、2018 的 IT CD（Atlantic 5054197767128，這筆用彎撇號）、一筆 FR 黑膠（Polydor 811953-1）與一筆 IT CD（EMI CDP 7468052）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2e7b4c96-ec1a-3616-ad72-c4047b6d9565?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1981-06 IT 原盤（EMI 3C 064 18550）的逐軌：A 面〈Che te ne fotte〉3:30、〈Yes I Know My Way〉3:37、〈Notte che se ne va〉2:45、〈Viento 'e terra〉3:31、〈Nun ce sta piacere〉3:28、**〈Sulo pe' parlà〉1:23**；B 面〈Puorteme a casa mia〉4:06、〈Ma che ho〉3:08、〈Un giorno che non va〉3:45、〈Have You Seen My Shoes〉3:05、**〈È sempre sera〉1:13**。**十一軌、約三十三分鐘，兩面各以一首一分多鐘的短曲收尾。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2e7b4c96-ec1a-3616-ad72-c4047b6d9565&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "義大利文條目〈Vai mo'〉：這是 Pino Daniele 的第四張錄音室專輯，**1981 年六月由 EMI Italiana 發行**，全碟詞曲都由他本人所寫。**〈Formazione〉節列的班底是拿坡里那一輩的核心樂手**：Pino Daniele（人聲、吉他）、Rino Zurzolo（電貝斯、低音提琴）、Tony Esposito（打擊樂）、**James Senese（次中音薩克斯風，第 3、7、10 軌）**、Tullio De Piscopo（鼓、打擊樂，第 4、8、10 軌）、Joe Amoruso（鍵盤、口風琴，第 11 軌）、Fabio Forte（長號，第 9、10 軌）。",
+    "src": "https://it.wikipedia.org/wiki/Vai_mo%27"
+   },
+   {
+    "f": "同一條目的曲目表：**義大利文條目記的曲名與長度與所釘條目略有出入**——第 11 軌條目寫〈È sempe sera〉1:10、所釘條目寫〈È sempre sera〉1:13（差一個字母 r），〈Yes I Know My Way〉條目寫 3:25、所釘條目寫 3:37。全碟十一首的詞曲都掛 Pino Daniele 一人。",
+    "src": "https://it.wikipedia.org/wiki/Vai_mo%27"
+   },
+   {
+    "f": "德國店面 id 1554178612：標題**「Vai mo' (2021 Remaster)」——ASCII 撇號**、掛名「Pino Daniele」、releaseDate 1981-01-01、℗ 1981, 2021 Warner Music Italy、`trackCount` 11。攤開的曲目列 **11 軌、11 軌全部有試聽**，曲名與曲序與 1981 原盤**逐位置相符**。**軌數與原盤相同，不是加曲版**；同店面另有 16 軌的 592758688《Tutta n'ata storia (Vai mo' - Live in Napoli) [Special Edition] [Live]》，**盤名含本卡盤名、是現場盤**。",
+    "src": "https://itunes.apple.com/lookup?id=1554178612&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 5b1633c8 名下 61 個 release-group 裡，primary-type=Album 且 secondary-types 空的 23 張，**本張 1981-06 是第四張**（前面依序是《Terra mia》1977、《Pino Daniele》1979、《Nero a metà》1980），下一張是 1982-04-19 的《Bella 'mbriana》——**他 1977 到 1982 年幾乎是一年一張**。61 筆裡沒有第二筆與本張同名的專輯條目。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=5b1633c8-cb78-4d85-a7d1-a6d145d8d472&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩面各用一首一分多鐘的短曲收尾，其餘九首全部三分上下",
+   "班底幾乎是那一輩拿坡里樂手的點名冊：薩克斯風、打擊樂、鼓各有各的固定軌"
+  ],
+  "sound": "1981 原盤十一軌、約三十三分鐘，除了兩首一分多鐘的短曲之外全部落在 2:45 到 4:06。編制比首作厚：電貝斯與低音提琴交替、打擊樂與鼓分開記名、次中音薩克斯風與長號在指定的幾軌加入，是拿坡里融合樂的典型配置。Pino Daniele 的吉他仍走藍調句法，人聲用拿坡里方言，但〈Yes I Know My Way〉與〈Have You Seen My Shoes〉兩首用英語標題、節奏更接近爵士放克。",
+  "keyTracks": [
+   "Yes I Know My Way",
+   "Che te ne fotte",
+   "Puorteme a casa mia"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1981。所釘 release-group 的 first-release-date 是 **1981-06**、轄下 IT 原盤標同月（EMI 3C 064 18550），義大利文條目寫 1981 年六月由 EMI Italiana 發行，德國店面 id 1554178612 的 releaseDate 標 1981-01-01（只到年）、℗ 標「1981, 2021」。四處同年，取 **1981**。同名先行單曲：無；名下 61 個 release-group 沒有第二筆同名專輯條目（最像的是店面上那張現場盤《Tutta n'ata storia (Vai mo' - Live in Napoli)》，盤名含本卡盤名）。",
+  "notes": "**探測層 ready 覆核通過**：de 1554178612，11 軌全有 previewUrl，`trackCount` 與曲目列都是 11，**與原盤軌數一致**。\\n**撇號（策展層裁定第 5 條）**：卡片取 **ASCII 撇號**「Vai mo'」。**本層實查佐證：1981 IT 原盤 release 的標題本身就是 ASCII 撇號，店面那筆也是 ASCII，只有 release-group 標題與 2018 年那筆再發用 U+2019。** 策展層說法屬實。\\n**曲名的兩種寫法**：第 11 軌所釘條目作〈È sempre sera〉、義大利文條目作〈È sempe sera〉（少一個 r）。**行文若要提這首，兩種都可查到，建議照原盤曲目列的寫法。**\\n策展層說法逐條查證：61 個 release-group、23 張純 Album、本張是第四張、EMI、11 軌、5 筆 release 全 Official——**全部屬實**。\\n**跨卡連結（同組第 35 張）**：同一位藝人的《Terra mia》(1977) 也在本批。**「拿坡里方言＋藍調」這條線只能寫一次**，建議留給首作，本張寫班底與編制的擴張。\\n**題材處理**：Pino Daniele 2015 年辭世屬「與作品無關的後續生平事件」，**本張不得觸及**。\\n**未寫進 facts 的**：本張的義大利文條目有 Classifiche 節但無內容，未查到可寫的榜單資料（依派工信本來也不寫）。"
  }
 ]
