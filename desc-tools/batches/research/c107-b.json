@@ -656,7 +656,7 @@
   "album": "Carsick Cars",
   "facts": [
    {
-    "f": "釘定的 release-group 17e8f0df 欄位：title《Carsick Cars》、artist-credit《Carsick Cars》（藝人實體 38c38eec，country CN、type Group、disambiguation「Chinese indie rock band」、成軍 2005-03）、first-release-date **2007-09**、primary-type Album、secondary-types **空**、轄下 3 個 release。條目掛的風格標籤是 alternative rock、indie rock、jangle pop、noise pop、noise rock、post-punk、rock，並掛了一條 discogs master 連結。",
+    "f": "釘定的 release-group 17e8f0df 欄位：title《Carsick Cars》、artist-credit《Carsick Cars》（藝人實體 38c38eec，country CN、type Group、disambiguation「Chinese indie rock band」、成軍 2005-03）、first-release-date **2007-09**、primary-type Album、secondary-types **空**、轄下 3 個 release。條目掛的風格標籤是 alternative rock、indie rock、jangle pop、noise pop、noise rock、post-punk、rock，並掛了一條唱片資料連結。",
     "src": "https://musicbrainz.org/ws/2/release-group/17e8f0df-51e4-336c-ab95-7345cd61b247?fmt=json&inc=artist-credits+genres+url-rels"
    },
    {
@@ -784,5 +784,226 @@
   "status": "full",
   "yearVerified": "**2007 ✓，三處相符，但月份四說。** 釘定條目 first-release-date 2007-05-01、其下數位版同為 2007-05-01、CD 版記 2007-09-30；線上店面兩筆分別記 **2007-10-01**（中文版）與 **2007-11-01**（英文版），℗ 都是 2007 摩登天空。**年份四處一致、月份從 5 月散到 11 月**，寫作層只寫年份、**不要寫月份**。卡片年份 2007 正確。",
   "notes": "**探測層判定覆核通過且加值**：卡單把這張列為「目錄裡找不到」——實測**有兩筆，而且都是滿試聽**：**1808896136**（中文曲名、繁體，tw）與 **1444302648**（英文曲名，tw），兩筆都是 11 軌、11 軌全有試聽、逐軌長度分秒相同。**建議釘 1808896136**（曲名繁體，與 09-06 裁定同向）。封面 CAA 亦有（release-group/2789851e 回 200）。\\n**⚠ 曲名兩套，寫作層要擇一並保持一致**：卡片的盤名《Noise Hit World 噪音襲擊世界》本身就是中英並列，行文引曲名建議用中文那一套（並在需要時附英文），第 4 條事實已列出一一對應表。\\n**釘定條目的中文部分是簡體「噪音襲擊世界」，卡片依 09-06 裁定用繁體「噪音襲擊世界」**；別名欄本來就有繁體「刺蝟樂隊」，線上中文版的曲名也全是繁體。\\n**⚠ 掛名要小心**：這支樂隊的 Apple 主目錄掛在另一個 artistId（1142174628「刺蝟」）底下，那個目錄非常大（攤開近兩百軌，含大量現場與綜藝版本），**不要從那裡撈**；本張的兩筆用 collectionId 直查即可。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「第二張」可以寫但只有目錄一處來源**（2006-03-12《Happy Idle Kid》在前）。建議只寫年份。\\n**可補的 Apple collectionId：`1808896136`（中文曲名，繁體）／建議店面 tw／11 軌、11 軌全有試聽。備選 `1444302648`（英文曲名，同樣 11 軌全試聽）。**"
+ },
+ {
+  "key": "desc2:Re-TROS|Watch Out! Climate Has Changed, Fat Mum Rises…",
+  "artist": "Re-TROS",
+  "album": "Watch Out! Climate Has Changed, Fat Mum Rises…",
+  "facts": [
+   {
+    "f": "釘定的 release-group 0db970c4 欄位：title《Watch Out! Climate Has Changed, Fat Mum Rises…》、**artist-credit 寫《Rebuilding the Rights of Statues》但指向的藝人實體名是《Re-TROS》**（MBID 32e69425，country CN、type Group、disambiguation「Chinese band」、成軍 2003-03）、first-release-date **2009-02-27**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的標籤是 post-punk 與 rock，並掛了廠牌官網與一個資料庫連結。",
+    "src": "https://musicbrainz.org/ws/2/release-group/0db970c4-9d90-49ce-8305-1dc4d74ddb4d?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "兩筆 release 都是 **11 軌、同曲同序**：2009-02-27 的 CN／Official CD（摩登天空，編號 **M-035**）與 2009-03-01 的 XW 數位版（同廠牌、條碼 3615934265745）。逐軌長度：1 Watch Out, Climate Has Changed… 1:36、2 Surrender 5:38、3 My Great Location 3:52、4 Momentarily Out of Mind 3:03、5 Escape Behind… I 2:30、6 Vis-à-vis 3:26、7 Escape Behind… II 4:46、8 **Up Next: Bela Lugosi's Back 8:36**、9 Billy Cannot Stop 5:22、10 By Your Both Sides, Left and Right 5:34、11 …Fat Mum Rises! 1:17。**十一軌合計約 45 分半；第 1 軌與第 11 軌各只有一分半，兩首的題名合起來正是盤名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=0db970c4-9d90-49ce-8305-1dc4d74ddb4d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1808896844**，題名寫《Watch Out!Climate Has Changed, Fat Mum Rises...》（驚嘆號後少一個空格、末尾用三個點），**tw 店面攤得出 11 軌、11 軌全部有試聽**（us 攤出 0 軌），trackCount 欄 11、releaseDate **2009-03-01**、℗ 2009 北京摩登天空文化發展有限公司。逐軌長度與釘定條目**逐位置相符到 1 秒**。這一筆掛在藝人條目 708069022（顯示名 Re-TROS）名下，同一目錄裡另有 2005 年的《CUT OFF!》EP（6 軌）與 2017 年的《Before The Applause》。",
+    "src": "https://itunes.apple.com/lookup?id=1808896844&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈重塑雕像的权利〉：「重塑雕像的權利（英語：**Re-TROS**，爲『Rebuilding the Rights of Statues』的縮寫）是**成立於2003年**的中國搖滾樂隊，來自北京……目前主要成員爲**華東、劉敏(Lumi Liu)及黃錦**。樂隊加入摩登天空後，於**2005年發行首張 EP《Cut Off!》；錄音期間布萊恩·伊諾（Brian Eno）以即興方式加入了合成器及電子聲效**，引起中國獨立音樂圈關注。」",
+    "src": "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%A1%91%E9%9B%95%E5%83%8F%E7%9A%84%E6%9D%83%E5%88%A9"
+   },
+   {
+    "f": "英文百科〈Re-Tros〉：「Re-Tros, stylized as **Re-TROS** (an abbreviation of Rebuilding the Rights of Statues, Chinese: 重塑雕像的權利) is a Chinese rock band **formed in Beijing in 2003**. The group is noted for blending post-punk and experimental rock elements, with intricate arrangements, electronics and an energetic live presence」。",
+    "src": "https://en.wikipedia.org/wiki/Re-Tros"
+   },
+   {
+    "f": "藝人 MBID 32e69425 分頁全列，名下共 **12 個 release-group**，其中 primary-type Album 且 secondary-types 為空的只有兩筆：2009-02-27 本張與 2017-09-01《Before the Applause》；其餘是 2005-11-25 的 EP《CUT OFF!》與 2017–2023 年的一批單曲與混音。**本張是他們的第一張正規專輯，也是兩張之間隔了八年的前一張。** 別名欄同時登錄簡體《重塑雕像的权利》與繁體「重塑雕像的權利」。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=32e69425-f232-48d8-9472-e816f1230b2a&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第一軌與最後一軌各只有一分半，兩個題名接起來正好是整張碟的名字",
+   "第八軌〈Up Next: Bela Lugosi's Back〉8 分 36 秒——把那首後龐克祖師曲的片名接了回去"
+  ],
+  "sound": "十一軌、合計約 45 分半。整張用一頭一尾兩段短的框住：第 1 軌〈Watch Out, Climate Has Changed…〉1:36 與第 11 軌〈…Fat Mum Rises!〉1:17，兩個題名接起來就是盤名。中間九首裡最長的是〈Up Next: Bela Lugosi's Back〉8:36，比第二長的〈Surrender〉5:38 多出三分鐘；另有一組拆成兩段的〈Escape Behind…〉，I 是 2:30、II 是 4:46，分別擺在第 5 與第 7 軌。風格是後龐克底、加上大量電子聲響與複雜的節奏結構，樂隊是三人編制。曲名全部用英文，只有盤名在中文語境裡被縮寫成四個字母。",
+  "keyTracks": [
+   "Up Next: Bela Lugosi's Back",
+   "Surrender",
+   "Escape Behind… I",
+   "…Fat Mum Rises!"
+  ],
+  "status": "full",
+  "yearVerified": "**2009 ✓，逐日近乎相符。** 釘定條目 first-release-date 2009-02-27、其下 CN／Official CD（摩登天空 M-035）同為 2009-02-27，數位版記 2009-03-01；線上店面 collectionId 1808896844 的 releaseDate 也是 **2009-03-01**、℗ 2009 摩登天空。**三處只差兩天。** 兩處百科都沒有列出這張的年份（只記 2005 年的 EP 與 2017 年的第二張專輯）。卡片年份 2009 正確。要分開的年份：2003 成軍、2005 的 EP《Cut Off!》、2017 的《Before the Applause》。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**找得到**：collectionId **1808896844**，**tw 店面**攤得出 11 軌、11 軌全有試聽（us 店面 entity=song 攤出 0 軌）。封面 CAA 亦有（release-group/0db970c4 回 200）。\\n**⚠ artist-credit 與實體名不一致（取實體名）**：credit 寫「Rebuilding the Rights of Statues」、實體名是「Re-TROS」，**卡片用 Re-TROS 正確**（策展層已處理過這一點）；線上店面顯示的也是 Re-TROS。\\n**⚠ 盤名的標點**：釘定條目與卡片用《Watch Out! Climate Has Changed, Fat Mum Rises…》（驚嘆號後有空格、末尾是刪節號），線上店面寫成《Watch Out!Climate Has Changed, Fat Mum Rises...》。**行文照卡片。** 盤名含逗號與刪節號，比對時要注意。\\n**拉丁掛名維持不變**（本批規則第 6 條）：中文團名是「重塑雕像的權利」，但釘定條目與線上店面都用 Re-TROS，卡片沿用拉丁掛名正確；行文若要提中文團名，寫繁體「重塑雕像的權利」（別名欄本來就有繁體寫法）。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。**可寫的硬事實**：2003 年成立於北京、三人編制、2005 年的首張 EP 錄音期間 Brian Eno 以即興方式加入合成器與電子聲效、本張是他們第一張正規專輯、下一張要等到 2017 年——五條都有來源。\\n**媒體評價不要寫**：兩處百科都引了樂評媒體的正面評價，**依規則不得寫入**。\\n**可補的 Apple collectionId：`1808896844`／建議店面 tw（us 攤不出曲目）／11 軌、11 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:小河|身份的表演",
+  "artist": "小河",
+  "album": "身份的表演",
+  "facts": [
+   {
+    "f": "釘定的 release-group 501b7e54 欄位：title《身份的表演》（簡繁同形）、artist-credit《小河》（藝人實體 e4af089b，country CN、type Person、1975 年生）、first-release-date **2009**、primary-type Album、secondary-types **空**、轄下 3 個 release。條目掛的風格標籤是 electronic、experimental、neofolk。",
+    "src": "https://musicbrainz.org/ws/2/release-group/501b7e54-c966-412a-be55-a7101cf5cd08?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "**這是一套雙 CD：第一片 13 軌、第二片 6 軌，合計 19 軌。** 2009 的 CN／Official（Maybe Mars，編號 **Maybe 12.1**、條碼 9787884250431）第一片：1〈锯子爱你〉2:06、2〈DiDi要〉5:29、3〈畅打腔〉4:20、4〈MTV戏〉2:27、5〈评说记〉4:06、6〈家家蹦蹦的做〉2:20、7〈飞机上的韩国人〉3:53、8〈考恩官〉6:59、9〈切朋友的生日〉4:46、10〈家乐福找你〉1:42、11〈世美颂〉5:21、12〈第333次登月〉2:32、13〈这是去哪〉6:19；第二片：1〈Ku Wa Ya〉3:49、2〈BiBi Bong〉7:23、3〈Hei Hei〉10:07、4〈A Wu〉9:24、5〈**Shui 18**〉**16:36**、6〈Jing Yang〉15:48。**第一片約 52 分、第二片約 63 分，全套約 115 分鐘——本批最長的一套。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=501b7e54-c966-412a-be55-a7101cf5cd08&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "另外兩筆 release 是同一套的英文題名版：2009 的 CN／Official《The Performance of Identity》與 2011-03 的 AU／Official（tenzenmen 050TZM／Maybe Mars 12.1），第一片十三軌逐位置英譯（Saws Love You／DiDi Wants It／Smooth-Tha-Tune／MTV Play／Record of Evaluation／Doing It Homely Bouncily／The Korean on the Plane／Testing Benevolent Officials／The Birthday of Friend Cie／Carrefour Is Looking for You／Eulogy of World Beauty／Ascending the Moon for the 333rd Time／Where Does This Go To），第二片六軌維持拼音題名不變。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=501b7e54-c966-412a-be55-a7101cf5cd08&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1521835617**，**tw／hk／us 三店攤得出 19 軌、19 軌全部有試聽**，trackCount 欄 19（**把兩片攤平成一串**），releaseDate **2009-07-03**、℗ 2009 天之痕（北京）文化傳播有限公司。曲名全部繁體（第 7 軌寫〈飛機上的韓囯人〉，「囯」是異體字），逐軌長度與釘定條目**逐位置相符到秒**；us 店面的藝人欄顯示羅馬字「Xiao He」。",
+    "src": "https://itunes.apple.com/lookup?id=1521835617&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**第二片有自己的名字。** 中文百科〈何国锋〉（即小河本名）：「2009年，發行了專輯《身份的表演》，**這是一張他的個人雙CD唱片，所包含的另一張CD是《一个人的交响》**，所收錄的歌曲再一次證明了他所具有的實驗性與先鋒性。」——第二片那六軌（拼音題名、單軌最長 16:36）就是《一個人的交響》。",
+    "src": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%9B%BD%E9%94%8B"
+   },
+   {
+    "f": "藝人 MBID e4af089b 分頁全列，名下只有 **5 個 release-group**：2002《飞的高的鸟不落在跑不快的牛的背上》、2009 本張、2011-09-24《傻瓜的情歌》、2011-12-13 的一筆現場、2014-07-19 的電影配樂作品集。別名欄只登錄羅馬字 Xiao He。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e4af089b-114d-413b-8e57-e1f74aa72000&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "雙 CD 一百一十五分鐘：第一片十三首小曲，第二片六首長曲，最長那首〈Shui 18〉十六分半",
+   "第二片其實另有名字——《一個人的交響》"
+  ],
+  "sound": "雙 CD、合計 19 軌約 115 分鐘，**是本批份量最大的一套**，而且兩片的作法完全相反。第一片十三軌全部是短曲：最短的〈家乐福找你〉1:42、〈锯子爱你〉2:06、〈家家蹦蹦的做〉2:20，最長的〈考恩官〉也才 6:59；曲名帶著明顯的市井與戲謔（〈飞机上的韩国人〉〈家乐福找你〉〈第333次登月〉）。第二片只有六軌卻長達 63 分鐘，全部用拼音當題名——〈Shui 18〉16:36、〈Jing Yang〉15:48、〈Hei Hei〉10:07、〈A Wu〉9:24 四首都超過九分鐘，是純實驗性的長段落。條目掛的標籤是 electronic、experimental 與 neofolk。",
+  "keyTracks": [
+   "身份的表演",
+   "飞机上的韩国人",
+   "考恩官",
+   "Shui 18"
+  ],
+  "status": "full",
+  "yearVerified": "**2009 ✓，三處相符。** 釘定條目 first-release-date 2009、其下兩筆 CN／Official（Maybe Mars 12.1、條碼 9787884250431）同為 2009；中文百科〈何国锋〉記《2009年，发行了专辑\u00001\u0000》；線上店面 collectionId 1521835617 的 releaseDate **2009-07-03**、℗ 2009。卡片年份 2009 正確。要分開的年份：2011-03 的澳洲版是同一套的海外發行。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**找得到**：collectionId **1521835617**，tw／hk／us 三店攤得出 **19 軌、19 軌全有試聽**、曲名繁體。封面 CAA 亦有（release-group/501b7e54 回 200）。\\n**⚠ 軌數的講法要小心**：這是一套雙 CD（13＋6），線上店面把兩片攤平成 **19 軌一串**。寫作層寫「雙 CD、十九軌」最安全，**不要寫「十九軌的專輯」**（會讓人以為是單片）。\\n**必須寫進去的一條**：**第二片另有名字《一個人的交響》**（中文百科明寫），這是這套碟最有辨識度的事實，而且解釋了為什麼第二片的六軌全是十分鐘上下的拼音題名。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**掛名只有兩個字，同名風險高**：MB 端只有一個對得上的實體（e4af089b，Person／CN／1975 年生），別名只有羅馬字 Xiao He；線上店面的中文藝人欄顯示「小河」、us 顯示「Xiao He」。**配對只能靠 collectionId 直查。**\\n**盤名與掛名都簡繁同形**，不需改寫；tw／hk 店面的曲名已是繁體（注意第 7 軌用了異體字「囯」）。\\n**廠牌編號 Maybe 12.1**，與同批 b 組 Carsick Cars（Maybe 2.2）、Snapline（Maybe 3.1）同屬一家廠牌。\\n**可補的 Apple collectionId：`1521835617`／建議店面 tw（hk／us 亦可）／19 軌、19 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:頂樓的馬戲團|上海市經典流行搖滾金曲十三首",
+  "artist": "頂樓的馬戲團",
+  "album": "上海市經典流行搖滾金曲十三首",
+  "facts": [
+   {
+    "f": "釘定的 release-group ba9f6ca5 欄位：title《上海市经典流行摇滚金曲十三首》（簡體建檔）、artist-credit《顶楼的马戏团》（藝人實體 f77c4d04，country CN、**area 上海**、type Group、**life-span 2001-10 至 2016、已標 ended**）、first-release-date **2010-12**、primary-type Album、secondary-types **空**、轄下 1 個 release。別名欄登錄英文 Top Floor Circus。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ba9f6ca5-f395-402a-9ea4-20085de6c083?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "那唯一一筆 release 的規格幾乎全空：**country 未填、無廠牌、無條碼、載體未填**，只有年份 2010-12 與 **13 軌**（**盤名裡的「十三首」與軌數相符**）。曲目：1〈做场子〉2〈快递员〉3〈海螺阿姨〉4〈是男人〉5〈我爱外来妹〉6〈申花啊，申花〉7〈假客气布鲁斯〉8〈苏州河恋曲〉9〈侬要会做人〉10〈我想有个家〉11〈小白领之歌〉12〈进来白相相〉13〈上海童年〉9:03。**只有末軌登錄了長度。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ba9f6ca5-f395-402a-9ea4-20085de6c083&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **6790334879**，**tw／hk／us 三店攤得出 13 軌、13 軌全部有試聽**，trackCount 欄 13、releaseDate **2010-12-18**、℗ **2010 陸晨**（版權標示掛個人）。tw／hk 曲名繁體：1〈做場子〉4:14、2〈快遞員〉4:42、3〈海螺阿姨〉5:29、4〈是男人〉7:49、5〈我愛外來妹〉5:28、6〈申花啊,申花〉5:22、7〈假客氣布魯斯〉4:22、8〈蘇州河戀曲〉5:47、9〈儂要會做人〉5:20、10〈我想有個家〉4:35、11〈小白領之歌〉5:21、12〈進來白相相〉7:02、13〈上海童年〉9:06。**十三軌合計約 75 分鐘**，末軌與釘定條目登錄的 9:03 相差 3 秒。us 店面整張換成英譯（Do Gigs／Couriers／Sea-snail Aunty／If You're a Man／I Love Outside-Girls／Shenhua Oh Shenhua／Fake Polite Blues／A Love Song for SuZhou River／Be a Nice Man／I Want a Home／A White-collar Song／Come in, Have Some Fun／Shanghai Childhood）。",
+    "src": "https://itunes.apple.com/lookup?id=6790334879&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "**曲名大量使用上海方言與本地專名**：〈侬要会做人〉的「儂」與〈进来白相相〉的「白相相」都是上海話；〈申花啊，申花〉指的是上海的足球俱樂部；〈苏州河恋曲〉的蘇州河穿過上海市區；〈海螺阿姨〉〈我爱外来妹〉〈小白领之歌〉則是城市生活的角色速寫。**盤名本身就是一句戲仿的合輯標題。**",
+    "src": "https://itunes.apple.com/lookup?id=6790334879&country=hk&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID f77c4d04 分頁全列，名下只有 **5 個 release-group**：2001 的《EP》、2003《最低级的小市民趣味》、2006-12《蒂米重访零陵路93号》、2010-12 本張、2013-10-25《谈钞票伤感情 谈感情又伤钞票又伤感情》。**這個藝人實體的 life-span 明寫 2001-10 起、2016 年止、ended 為真。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=f77c4d04-c116-45ef-90e5-cd06720dc330&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名說十三首就是十三首，末軌〈上海童年〉一首跑了九分鐘",
+   "曲名一路用上海話寫成——〈侬要会做人〉〈进来白相相〉，連本地足球隊都寫進去了"
+  ],
+  "sound": "十三軌、合計約 75 分鐘，是本批單片碟裡最長的一張。曲長普遍偏長：十三軌裡有九軌超過五分鐘，最長的〈上海童年〉9:06 收尾、〈是男人〉7:49 與〈进来白相相〉7:02 次之，最短的〈假客气布鲁斯〉4:22 也超過四分鐘。音樂上是搖滾底加上大量的敘事式唸唱，第 7 軌乾脆把 blues 這個字寫進題目。**最鮮明的特徵是語言**：〈侬要会做人〉〈进来白相相〉直接用上海話寫題，〈申花啊，申花〉唱本地的足球俱樂部，〈苏州河恋曲〉〈上海童年〉把地名與年代寫進去——整張是一份用方言寫成的城市速寫。盤名本身就是一句戲仿的合輯標題。",
+  "keyTracks": [
+   "上海童年",
+   "侬要会做人",
+   "申花啊，申花",
+   "苏州河恋曲"
+  ],
+  "status": "full",
+  "yearVerified": "**2010 ✓，兩處相符，日期精確到日。** 釘定條目 first-release-date 2010-12、其下唯一 release 同為 2010-12；線上店面 collectionId 6790334879 的 releaseDate **2010-12-18**、℗ 2010 陸晨——**年月相符、店面補上了日**。可查的百科裡沒有這支樂隊的條目（只在一份獎項列表裡出現過另一張碟的名字），第三處旁證缺席。**注意那筆 release 的 country、廠牌、條碼、載體全部未填**，依裁定 43／57／65／78 不能單獨當 Official 背書；線上店面的日期與它相符，兩者互相補強。卡片年份 2010 正確。",
+  "notes": "**探測層判定覆核通過且加值——這是本批四張 CAA 無封面的碟之一**：卡單把這張列為「目錄裡找不到」——實測**找得到**：collectionId **6790334879**，tw／hk／us 三店攤得出 13 軌、13 軌全有試聽、tw／hk 曲名繁體。**這一筆同時解決封面與試聽兩件事**，是本批迴撈價值最高的兩筆之一。\\n**⚠ 這個 collectionId 是十位數（6790334879）**，與本批其他碟的十位／九位 id 格式不同，抄寫時要逐位核對。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**可寫的硬事實**：樂隊 2001 年 10 月起、2016 年止；上海；十三軌與盤名的「十三首」相符；曲名大量使用上海方言與本地專名；末軌〈上海童年〉九分鐘；us 店面把整張譯成英文。\\n**⚠ 政治敏感**：這支樂隊在中國有若干作品曾引起爭議，**但本張的可查來源裡沒有任何相關記載，一律不要寫、不要推測。** 本張的材料只有曲目、方言與長度。\\n**MB 建檔用簡體，卡片依 09-06 裁定用繁體《上海市經典流行搖滾金曲十三首》／《頂樓的馬戲團》**；tw／hk 店面的曲名與藝人名都已是繁體。\\n**可補的 Apple collectionId：`6790334879`／建議店面 tw（hk 亦可；us 是英譯）／13 軌、13 軌全有試聽。⚠ 這一筆同時是這張的封面來源。**"
+ },
+ {
+  "key": "desc4:吹萬|白夜",
+  "artist": "吹萬",
+  "album": "白夜",
+  "facts": [
+   {
+    "f": "釘定的 release-group 78d0fddd 欄位：title《白夜》（簡繁同形）、artist-credit《吹万》（藝人實體 6421234a，country CN、type Group、disambiguation「**neo-psych group**」、成軍 2010）、first-release-date **2012-11-02**、primary-type Album、secondary-types **空**、轄下 **5 個 release**。條目掛的風格標籤是 experimental、psychedelic、psychedelic rock、rock。",
+    "src": "https://musicbrainz.org/ws/2/release-group/78d0fddd-115f-4bc6-aa18-15b0043a2a0c?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "五筆 release 全部 **8 軌、同曲同序**，差別在題名的語言與掛名寫法（有「吹萬」「Chui Wan」「Chui Wan 吹萬」三種）。2012 的 CN／Official CD（tenzenmen 128TZM／Maybe Mars **MAYBE 41.1**、條碼 9787798500349）逐軌：1〈游泳〉4:04、2〈不管是白猫还是黑猫〉4:04、3〈辩驳〉2:16、4〈另一种爱〉4:16、5〈丹顶鹤〉3:50、6〈白夜〉5:14、7〈啵儿啵儿〉2:51、8〈**明日未知**〉**10:47**。**八軌合計約 37 分半；末軌一首就佔掉將近三分之一。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=78d0fddd-115f-4bc6-aa18-15b0043a2a0c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同一首曲子在不同版本裡有三種寫法。** 第 7 軌：CN CD 寫〈啵儿啵儿〉、中英並列版寫〈倍儿倍儿 Berber〉、英文版寫〈Berber〉；第 5 軌：CN CD 寫〈丹顶鹤〉、繁體版與英文版都寫拼音〈Dan Ding He〉；第 8 軌的英譯是〈Tomorrow Never Knows〉。**中英並列版《White Night 白夜》（PangPang Project 發行）把八軌的中文題與英譯並排。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=78d0fddd-115f-4bc6-aa18-15b0043a2a0c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1524408665**，**tw／hk／us 三店攤得出 8 軌、8 軌全部有試聽**，trackCount 欄 8、releaseDate **2012-11-20**、℗ 2012 天之痕（北京）文化傳播有限公司。**tw／hk／us 三店的曲名都是繁體**：〈遊泳〉4:04／〈不管是白貓還是黑貓〉4:04／〈辯駁〉2:16／〈另一種愛〉4:16／〈Dan Ding He〉3:50／〈白夜〉5:14／〈Berber〉2:51／〈明日未知〉10:47，逐軌長度與釘定條目**分秒相符**；藝人欄 tw／hk 顯示繁體「吹萬」、us 顯示「Chui Wan」。",
+    "src": "https://itunes.apple.com/lookup?id=1524408665&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 MBID 6421234a 分頁全列，名下只有 **4 個 release-group**，全是 primary-type Album、secondary-types 空：2012-11-02 本張、2015-05-01《吹万》（自我同名）、2017-09-01《热带从未有过的风景》、2019-09-29《Eye》。**本張是名下日期最早的一筆。** 別名欄只登錄英文 Chui Wan；外部連結包含 bandcamp 與兩個資料庫頁。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6421234a-b4d6-4299-8fbb-005a43f75557&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**廠牌與同批另外三張同源**：本張的編號是 Maybe Mars 的 MAYBE 41.1，同批 b 組的 Carsick Cars 是 Maybe 2.2、Snapline 是 Maybe 3.1、小河是 Maybe 12.1。英文百科〈Maybe Mars〉記這家獨立廠牌成立於 2007 年。",
+    "src": "https://en.wikipedia.org/wiki/Maybe_Mars"
+   }
+  ],
+  "hookCandidates": [
+   "八軌三十七分半，末軌〈明日未知〉一首就跑了 10 分 47 秒",
+   "第七軌在三個版本裡有三個名字：〈啵儿啵儿〉、〈倍儿倍儿〉、Berber"
+  ],
+  "sound": "八軌、合計約 37 分半。結構是七首短曲加一首長曲：前七軌全部在 2:16 到 5:14 之間，最短的〈辩驳〉2:16 與〈啵儿啵儿〉2:51，然後末軌〈明日未知〉突然給出 10:47——一首就佔掉全碟將近三分之一。風格是迷幻搖滾取向的實驗編制，條目的藝人註記直接寫「neo-psych group」。曲名一半是具體的物與動作（〈游泳〉〈丹顶鹤〉〈不管是白猫还是黑猫〉），一半是抽象的短詞（〈辩驳〉〈另一种爱〉），同名曲〈白夜〉5:14 擺在第六軌。同一批錄音流通過中文、英文與中英並列三種題名版本。",
+  "keyTracks": [
+   "白夜",
+   "明日未知",
+   "不管是白猫还是黑猫",
+   "游泳"
+  ],
+  "status": "full",
+  "yearVerified": "**2012 ✓，兩處相符。** 釘定條目 first-release-date 2012-11-02、其下五筆 release 分別記 2012、2012-11-02、2012-11-10、2012-11-20（三筆）——**全部落在 2012 年 11 月**；線上店面 collectionId 1524408665 的 releaseDate **2012-11-20**、℗ 2012 天之痕。可查的百科裡沒有這支樂隊的條目（中文搜尋會回到一位清末民初的詩人高吹萬，**與本團無關**），第三處旁證缺席。卡片年份 2012 正確。",
+  "notes": "**探測層判定覆核通過且加值**：卡單記 collectionId 1524408665——**配對正確**，實測 tw／hk／us 三店都攤得出 8 軌、8 軌全有試聽、**曲名三店都是繁體**、逐軌長度與釘定條目分秒相符。封面 CAA 亦有（release-group/78d0fddd 回 200）。\\n**⚠ 曲名三種寫法**（見第 3 條事實）：第 7 軌〈啵儿啵儿〉／〈倍儿倍儿〉／Berber、第 5 軌〈丹顶鹤〉／Dan Ding He。**線上店面採的是〈Berber〉與〈Dan Ding He〉這一套**；寫作層引曲名時擇一並保持一致，建議用 CN CD 的中文寫法並註明線上版用拼音。\\n**⚠ 掛名同名污染（中文端）**：以「吹萬」查中文百科會回到清末民初的詩人高燮（字吹萬），**完全不相干**。MB 端只有一個實體（6421234a），Apple 端 tw／hk 顯示「吹萬」、us 顯示「Chui Wan」。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**「首張」可以寫但只有目錄一處來源**：釘定目錄裡這張日期最早（名下只有四張），沒有百科佐證。建議只寫年份。\\n**MB 建檔的掛名用簡體「吹萬」，卡片依 09-06 裁定用繁體《吹萬》**；線上店面 tw／hk 顯示的也是繁體。\\n**⚠ 自我同名撞卡**：這支樂隊 2015 年有一張同名專輯《吹万》，**與掛名同字**，比對時要排除。\\n**可補的 Apple collectionId：`1524408665`／建議店面 tw（hk／us 亦可，曲名同為繁體）／8 軌、8 軌全有試聽。**"
+ },
+ {
+  "key": "desc4:惘聞|八匹馬",
+  "artist": "惘聞",
+  "album": "八匹馬",
+  "facts": [
+   {
+    "f": "釘定的 release-group 87b09869 欄位：title《八匹馬》（**這一筆的盤名本身就是繁體**，與掛名的簡體《惘闻》方向相反）、artist-credit《惘闻》（藝人實體 b7637cdc，country CN、area 大連、type Group、成軍 1999）、first-release-date **2014-06-20**、primary-type Album、secondary-types **空**、轄下 3 個 release，條目掛 post-rock 與 rock 兩個標籤以及一條唱片資料連結。",
+    "src": "https://musicbrainz.org/ws/2/release-group/87b09869-5a4a-484d-abb9-e4d6c722621d?fmt=json&inc=artist-credits+genres+url-rels"
+   },
+   {
+    "f": "三筆 release 都是 **8 軌、同曲同序**：2014-06-20 的 XW 數位版（英文曲名）、同日的一筆 Pseudo-Release《Eight Horses》、以及 2015-02-27 的 **NL／Official CD**（中文曲名、無廠牌）。中文曲目與長度：1〈北方向北〉10:27、2〈大连天空〉7:21、3〈第八层地狱〉7:08、4〈万佛朝宗〉9:03、5〈**逃离母宇宙**〉**10:30**、6〈酒神经〉4:47、7〈最后旅程〉8:51、8〈Welcome to Utopia〉9:27。**八軌合計約 67 分半，平均一軌 8 分 26 秒；只有〈酒神经〉4:47 在五分鐘以內。** 英文版逐位置英譯（Northern North／Sky of Dalian／Eight Layer of Hell／Ten Thousand Buddhas／Escape from Mother Universe／Dionysus／The Last Journey／Welcome to Utopia），末軌兩版同名。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=87b09869-5a4a-484d-abb9-e4d6c722621d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "線上店面：collectionId **1597876345**，**tw／hk／us 三店攤得出 8 軌、8 軌全部有試聽**，trackCount 欄 8、releaseDate **2015-02-27**、℗ **2015 Wang Wen**（版權標示掛樂隊自己）。tw／hk 曲名繁體（〈北方向北〉10:25／〈大連天空〉7:19／〈第八層地獄〉7:07／〈萬佛朝宗〉9:02／〈逃離母宇宙〉10:29／〈酒神經〉4:46／〈最後旅程〉8:49／〈Welcome to Utopia〉9:27），us 店面整張換成英譯；逐軌長度與釘定條目相差 1–2 秒。**店面的日期對應的是 2015 年那筆 NL CD，不是 2014 年的首發。**",
+    "src": "https://itunes.apple.com/lookup?id=1597876345&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "中文百科〈惘闻〉的作品欄明列「**2014年：《八匹马》**」。同條目記樂隊 1999 年成立於大連、由謝玉崗等人發起，「時任鼓手趙丹由詞語『置若罔聞』衍生出樂隊名稱『惘聞』」，並說明英文名的沿革：「其早期專輯《二十八天失眠日记》封面上爲『Unknown Band』。而後續幾張專輯《0.7》、**《八匹马》**、《岁月鸿沟》封面上均標識爲『**Wang Wen**』。」——**本張正是英文名定為 Wang Wen 的那批之一。**",
+    "src": "https://zh.wikipedia.org/wiki/%E6%83%98%E9%97%BB"
+   },
+   {
+    "f": "藝人 MBID b7637cdc 分頁全列，名下共 **17 個 release-group**；本張在 2012-12-24 與瑞典樂隊 pg.lost 的合作盤之後、2015-12-04《White Shirt》之前。同批 b 組另收他們 2006 年的《RE:RE:RE:》——**兩張相隔八年**，中間名下還有六張專輯。條目記樂隊目前是六人編制，含鍵盤與小號。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b7637cdc-7413-422a-9dc3-3d71a19322ae&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**這是本批唯一一張在歐洲壓製實體的碟**：2015-02-27 那筆 release 的 country 登錄為 **NL（荷蘭）**、標 Official、CD 8 軌、無廠牌欄。釘定條目底下的另外兩筆都是無國別的數位版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=87b09869-5a4a-484d-abb9-e4d6c722621d&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "八軌六十七分半，平均一首八分半——只有〈酒神经〉4 分 47 秒在五分鐘以內",
+   "第二軌就叫〈大连天空〉，他們從那座海濱城市出來已經十五年"
+  ],
+  "sound": "八軌、合計約 67 分半，平均一軌 8 分 26 秒——**是本批平均曲長第二長的一張**，僅次於同一支樂隊八年前的那張。八軌裡有五軌超過八分半，最長的〈逃离母宇宙〉10:30 與〈北方向北〉10:27 都破十分，唯一的短曲是第 6 軌〈酒神经〉4:47，夾在兩首九分鐘上下的長曲中間。這是器樂後搖滾，靠吉他層疊與長段落的漸強推進；樂隊到這個階段已經是六人編制，含鍵盤與小號。曲名一半是地理與方位（〈北方向北〉〈大连天空〉），一半是神話與宇宙（〈万佛朝宗〉〈逃离母宇宙〉〈酒神经〉），末軌用英文題〈Welcome to Utopia〉收尾，中英兩版都不改。",
+  "keyTracks": [
+   "北方向北",
+   "逃离母宇宙",
+   "大连天空",
+   "Welcome to Utopia"
+  ],
+  "status": "full",
+  "yearVerified": "**2014 ✓，兩處相符；線上店面標的 2015 是實體版。** 釘定條目 first-release-date 2014-06-20、其下 XW 數位版與 Pseudo-Release 同為 2014-06-20；中文百科〈惘闻〉的作品欄明寫「2014年：《八匹马》」。**線上店面 collectionId 1597876345 的 releaseDate 2015-02-27、℗ 2015，對應的是荷蘭壓製的那筆 CD**，比首發晚八個月。卡片年份 2014 正確；**寫作層不要寫 2015**。",
+  "notes": "**探測層判定覆核通過且加值**：卡單把這張列為未回撈——實測**找得到**：collectionId **1597876345**，tw／hk／us 三店攤得出 8 軌、8 軌全有試聽，tw／hk 曲名繁體。封面 CAA 亦有（release-group/87b09869 回 200）。\\n**⚠ 店面日期是 2015 年的實體版**，不是 2014 年的數位首發，見 `yearVerified`。\\n**⚠ 曲名兩套（中／英）**：釘定條目的 2014 數位版用英文、2015 的 NL CD 用中文，線上店面 tw／hk 用中文、us 用英文。**末軌〈Welcome to Utopia〉在兩套裡都是英文**，這一點可以寫。\\n**擋下策展層零處**（卡單對這張沒有寫敘述）。\\n**可寫的硬事實**：1999 年成立於大連、團名從「置若罔聞」拆出、本張是英文名定為 Wang Wen 的那批專輯之一、2015 年的實體版在荷蘭壓製、平均曲長八分半——五條都有來源或可從資料直接算出。\\n**同批兩張同藝人**：《RE:RE:RE:》(2006) 與本張同屬 b7637cdc，兩張相隔八年；**兩張的 Apple id 分別是 1598039678 與 1597876345，只差一千**，建卡時逐位核對。\\n**簡繁方向在同一筆條目裡就不一致**：盤名《八匹馬》是繁體、掛名《惘闻》是簡體。**卡片依 09-06 裁定一律用繁體《八匹馬》／《惘聞》**；別名欄本來就同時登錄簡繁兩種寫法。\\n**可補的 Apple collectionId：`1597876345`／建議店面 tw（hk 亦可；us 是英譯）／8 軌、8 軌全有試聽。**"
  }
 ]
