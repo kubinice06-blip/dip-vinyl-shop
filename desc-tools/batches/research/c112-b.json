@@ -96,50 +96,6 @@
   "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記九店全 0，但 **jp 店面實際有貨**——`search?term=くるり 儚くも美しき12の変奏&country=jp` 一擊命中 **collectionId 1893695487**，12 軌全有 previewUrl。**探測層落空的原因與坂本慎太郎那筆同型：Apple 把盤名登記成英文譯題「Twelve Ephemeral Variations」**，用漢字盤名比對會全店皆空。apple-candidates.md 記「目錄裡找不到」同理——藝人目錄裡就有，只是那一列的 collectionName 是英文。\\n**可補的 Apple collectionId：key `desc4:くるり|儚くも美しき12の変奏`／店面 jp／id 1893695487／12 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 12 軌與 MB d8abce28 的曲名、曲序逐位置相符，逐軌長度全部相同到秒；`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。collectionExplicitness notExplicit，藝人目錄 2026 年只有一筆、沒有雙胞胎。\\n**策展層說法複驗**：`why` 寫「只有 1 筆 Official release、12 軌數位、實體與編號尚未建檔」，逐筆核對**全部成立**。`risk` 說 MB 上實體尚未建檔、行文不得斷言載體，也成立。\\n**補一處策展層沒寫到的**：MB 的廠牌名是「Noise McCartney Records」（首字大寫），卡片 label 欄與 Apple 的 ℗ 都是全大寫「NOISE McCARTNEY RECORDS」——大小寫不同、字串比對不相等（與 a 組回報的 U+2010 同族，是另一種寫法分裂）。\\n**序數**：日文維基寫「通算 15 枚目のオリジナルアルバム」，這是外部來源的說法、且 MB 藝人名下有 72 個 release-group 無法逐一分類驗證。**行文若要用「第十五張」必須帶出處，或改用可查證的錨點**：2024 年離開 SPEEDSTAR、回到自營廠牌 NOISE McCARTNEY，本張是回去之後的作品。\\n**不得寫任何評論分數、榜單名次或獎項。**"
  },
  {
-  "key": "desc2:GEZAN|I KNOW HOW NOW",
-  "artist": "GEZAN",
-  "album": "I KNOW HOW NOW",
-  "facts": [
-   {
-    "f": "MusicBrainz release-group 9264fb34 的欄位：title「I KNOW HOW NOW」、artist-credit「GEZAN」（藝人實體 MBID 4be17540，type Group、country **JP**、disambiguation「Japanese rock band」）、first-release-date 2026-02-11、primary-type Album、secondary-types **空**。轄下 **3 筆 release 全部 Official、全部 2026-02-11**：JP 的 CD 一筆（Jewel Case，barcode 4526180749455）、JP 的數位一筆（4550752734037）、XW 的數位一筆（無 barcode）。",
-    "src": "https://musicbrainz.org/ws/2/release-group/9264fb34-78c6-473a-8bc2-cff2bb46cc2b?fmt=json&inc=artist-credits+releases"
-   },
-   {
-    "f": "三筆 release 的載體、軌數與廠牌：**全部 9 軌**。CD 那筆 4e7f9d69 掛 十三月（label MBID b55ad879）、catalog-number **JSGM-065**；JP 數位 111b6827 同樣掛 十三月、無編號；**XW 數位 f93cfe98 掛的是 KiliKiliVilla（label MBID bf62e773）、無編號**——策展層 `why` 說「十三月與 KiliKiliVilla 共同發行」在 release 層面是**兩家各掛各的**，不是同一筆上並列兩家。三筆的 text-representation 分別是 Jpan／jpn、Latn／eng、Qaaa／mul。",
-    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
-   },
-   {
-    "f": "MB release 4e7f9d69（JP CD，十三月 JSGM-065）的逐軌曲目與長度：1〈beat〉5:21、2〈Amrita〉8:38、3〈TRANSIT〉3:17、4〈HAPPY HIPPIE〉5:38、5〈Memoria〉4:09、6〈数字 / SUJI〉6:30、7〈HOWL〉5:08、8〈BEST DAY EVER〉6:35、9〈予感 / Premonition〉4:56。九軌合計 50:12，最短是第 3 軌〈TRANSIT〉3:17、最長是第 2 軌〈Amrita〉8:38——**九軌裡有四軌超過五分半，第 2 軌逼近九分鐘。**",
-    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
-   },
-   {
-    "f": "同一 release-group 內三筆 release 的曲名寫法各不相同：JP 數位 111b6827 全部小寫化的原題（〈beat〉〈数字〉〈予感〉）、CD 4e7f9d69 在漢字曲名後補斜線英譯（〈数字 / SUJI〉〈予感 / Premonition〉）、XW 數位 f93cfe98 改成首字大寫加括號英譯（〈Beat〉〈数字 (Numbers)〉〈予感 (Premonition)〉）。**同一首歌在同一個 release-group 內有三種寫法**，任何以曲名字串比對的下游動作都要挑定一筆。",
-    "src": "https://musicbrainz.org/ws/2/release?release-group=9264fb34-78c6-473a-8bc2-cff2bb46cc2b&fmt=json&inc=media+labels+recordings&limit=100"
-   },
-   {
-    "f": "**Apple Music us collectionId 1870248543**：collectionName「I Know How Now」（**Apple 用的是首字大寫式，不是卡片的全大寫**）、artistName「GEZAN」、releaseDate 2026-02-11、copyright「**℗ 2026 13th records**」（十三月的英文寫法）、trackCount 9、collectionExplicitness notExplicit。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲序與 MB **逐位置相符**、逐軌長度與 JP 數位版**全部相同到秒**。曲名走英譯（〈Suji〉〈Premonition〉），**第 8 軌 Apple 記作〈Best Day Ever (feat. Ichiko Aoba)〉——MB 三筆 release 都只寫〈BEST DAY EVER〉、沒有標客席。**",
-    "src": "https://itunes.apple.com/lookup?id=1870248543&country=us&entity=song&limit=200"
-   },
-   {
-    "f": "日文維基〈GEZAN〉的年表與 infobox：樂團 2009 年在大阪難波ベアーズ成立，成立當初用「下山」名義；現行編制四人——マヒトゥ・ザ・ピーポー（主唱／吉他）、イーグル・タカ（吉他／風笛）、ヤクモア（貝斯）、石原ロスカル（鼓）；廠牌欄記自營的十三月。2012 年首張《かつてうたといわれたそれ》即由十三月發行，2014 年起自辦投錢制戶外音樂祭「全感覚祭」。同頁把本張記為 **7th アルバム**，並記 2026 年樂團辦了四名成員各連做 25 小時獨演的「100 時間リレー」企畫、3 月 14 日在日本武道館辦了首次單獨公演「独炎」。",
-    "src": "https://ja.wikipedia.org/wiki/GEZAN"
-   }
-  ],
-  "hookCandidates": [
-   "九軌五十分鐘，第二軌〈Amrita〉一首就佔掉八分半，比整張的五分之一還多",
-   "同一張碟在 MB 上有三套曲名寫法——〈数字〉在 CD 版後面補「/ SUJI」、在海外數位版後面補「(Numbers)」"
-  ],
-  "sound": "MB 三筆 Official release（JP CD、JP 數位、XW 數位）全部 9 軌，Apple us 逐軌長度與 JP 數位版相同到秒。九軌合計 50:12，曲長從 3:17（〈TRANSIT〉）到 8:38（〈Amrita〉），有四軌超過五分半，是長篇型的配置。CD 版由樂團自營的 十三月 發行、編號 JSGM-065，海外數位那筆改掛 KiliKiliVilla；Apple 的 ℗ 記成「13th records」，是十三月的英文寫法。Apple 在第 8 軌〈Best Day Ever〉標了客席 Ichiko Aoba，MB 三筆都沒有這個標記。樂團 2009 年於大阪成立、初期名為「下山」，現行四人編制含一把風笛。",
-  "keyTracks": [
-   "Amrita",
-   "BEST DAY EVER",
-   "予感"
-  ],
-  "status": "full",
-  "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-11**、三筆 Official release 全部同為 2026-02-11、Apple us 1870248543 的 releaseDate 2026-02-11 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有**——Apple us 藝人目錄（artistId 610768900）共 14 筆，2026 年只有本張一筆。策展層的釘位 9264fb34 是專輯那筆，已複驗無誤。",
-  "notes": "**探測層 ready 覆核通過**：us 1870248543，9 軌全有 previewUrl，曲序與 MB 逐位置相符、長度與 JP 數位版相同到秒（裁定 157 的位置比對已做）；`trackCount` 欄與攤開的曲目列都是 9、無裁定 175 的落差。collectionExplicitness notExplicit，us 藝人目錄 14 筆逐筆看過、2026 年只有這一筆，沒有 explicit／cleaned 雙胞胎。\\n**⚠ 交主線裁定的一件事（不是資料錯誤，是這張碟的處境）**：日文維基〈GEZAN〉infobox 的活動期間寫「2009年 - 2026年」，年表記 **2026 年 7 月 30 日樂團公告主唱マヒトゥ・ザ・ピーポー的性加害事案、宣布一定期間活動休止**，引的是朝日新聞 2026-07-31 朝刊與樂團官網公告。本張 2026-02-11 發行、早於該事件五個半月。**研究層照卡單把資料備齊，但行文層要知道這件事**：不得寫任何暗示樂團現況、未來動向或「還在跑」的句子，也不得把該事件寫進簡介。要不要留這張卡是策展面的判斷，證據與出處列在此。\\n**擋下策展層一處**：`why` 寫「由樂團自營的十三月與 KiliKiliVilla 共同發行」——**release 層面不是共同掛名**：CD 與 JP 數位掛 十三月（JSGM-065），XW 數位那筆單掛 KiliKiliVilla，兩家各掛各的 release。行文若要點廠牌，說「日本盤掛十三月、海外數位掛 KiliKiliVilla」才對得上。\\n**補一處策展層沒寫到的**：Apple 第 8 軌記〈Best Day Ever (feat. Ichiko Aoba)〉，**MB 三筆 release 都沒有標這個客席**——客席只有 Apple 一個來源，行文要點就得以 Apple 為據。\\n**曲名三種寫法**：同一 release-group 內〈数字〉有「数字」「数字 / SUJI」「数字 (Numbers)」三寫，〈予感〉同理；keyTracks 取 MB JP 數位版的原題。\\n**序數**：日文維基寫 7th アルバム。MB 藝人名下 15 個 release-group 無法逐一分類驗證，**行文若要用「第七張」必須帶出處**。\\n**不得寫任何評論分數、榜單名次或獎項。**"
- },
- {
   "key": "desc4:Reol|美辞学",
   "artist": "Reol",
   "album": "美辞学",
@@ -830,5 +786,105 @@
   "status": "full",
   "yearVerified": "**年份一致（2026），日期有一處差一天。**MB release-group first-release-date 與唯一那筆 Official release 都是 **2026-08-07**、Apple us 6795233510 的 releaseDate 2026-08-07 與 ℗ 年份 2026——**兩處同年同日**；**英文維基〈Wave to Earth〉的內文寫「On August 6th 2026」，比另兩處早一天**（該句引的是外部報導連結）。**MB 與 Apple 一致、維基那一句是孤證，採 2026-08-07。**（行文寫「2026 年 8 月」最安全。）**同名先行單曲：沒有**——Apple us 藝人目錄 2026 年的另一筆是《heaven and hell - Single》2026-05-15（專輯第 10 軌，早近三個月），盤名與專輯不同；策展層刻意不釘的 b86eae70 就是這一筆，處理正確。",
   "notes": "**探測層 ready 覆核通過**：us 6795233510，11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB dbf90880 逐位置相符（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。探測層 `tried` 記 us:4→1（四個候選收斂到一個），我另跑 us 藝人目錄 16 筆逐筆核對，2026 年只有兩筆、**沒有 explicit／cleaned 雙胞胎**，收斂到的這一筆是對的。\\n**策展層說法複驗**：`why` 寫「只有 1 筆 Official release、11 軌數位、實體與編號尚未建檔、先行單曲《heaven and hell》2026-05-15」，逐筆核對**全部成立**。`risk` 說「掛名全小寫三個常用英文字、比對要帶盤名或 MBID」也成立——但實測 Apple us 端 artistId 1477295619 的 artistName 就是全小寫「wave to earth」、目錄 16 筆全部對得上這個團，沒有撞到別人。\\n**曲名寫法**：第 1 軌 MB 用彎引號〈talking ’bout u〉、Apple 用直引號〈talking 'bout u〉，字串比對不相等。\\n**序數不可斷言（外部來源自相矛盾）**：英文維基同一頁對 2024 年的《Play with Earth! 0.03》有兩說——摘要句稱它是「第三張 EP」、History 節稱它是 studio album。**MB 那邊 primary-type 為 Album 的只有三筆（2023、2024、2026），照 MB 算本張是第三張**，但這是我從 release-group 清單推的、不是來源明說。**行文不得寫「第 N 張」**，錨點用前作《play with earth! 0.03》2024 年。\\n**日期差一天**：維基 8 月 6 日對 MB／Apple 8 月 7 日，見 yearVerified。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:deca joins|在這裡停一下",
+  "artist": "deca joins",
+  "album": "在這裡停一下",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 34833e7e 的欄位：title「在這裡停一下」、artist-credit「deca joins」（藝人實體 MBID 0ec64e22，type Group、country **TW**、disambiguation **空**）、first-release-date 2026-03-23、primary-type Album、secondary-types **空**。轄下 **只有 1 筆 release，status Official**：3d3e3681，2026-03-23、country XW、text-representation **Hant／zho**、barcode 未填。",
+    "src": "https://musicbrainz.org/ws/2/release-group/34833e7e-e3c6-49fb-b421-714aa210424a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "唯一那筆 release 3d3e3681 的載體與廠牌：**Digital Media 單片 13 軌**，**label-info 是空的、catalog-number 也沒填**——MB 上查不到發行方。**MB 也沒有任何實體載體的 release。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=34833e7e-e3c6-49fb-b421-714aa210424a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "3d3e3681 的逐軌曲目與長度：1〈我不用問〉3:58、2〈泥土〉3:38、3〈喜相逢〉4:10、4〈地圖〉4:38、5〈漫長的人生〉3:43、6〈Gabi's Stove〉0:38、7〈萬有引力〉4:17、8〈絕對的平衡〉4:00、9〈失敗的晚餐〉3:27、10〈金龍隧道〉1:03、11〈滿月〉4:20、12〈坐過站〉5:07、13〈在這裡停一下〉4:50。十三軌合計 47:49。**十三軌裡有兩軌是短插曲——第 6 軌〈Gabi's Stove〉只有 38 秒、第 10 軌〈金龍隧道〉1:03**，其餘十一軌都在 3:27 到 5:07 之間；同名曲擺在最後一軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=34833e7e-e3c6-49fb-b421-714aa210424a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music tw collectionId 1882286626**：collectionName「在這裡停一下」（繁體原題）、artistName「deca joins」、releaseDate 2026-03-23、copyright「**℗ 2026 NEW NEW SPARK CO., LTD.**」、trackCount 13、collectionExplicitness notExplicit。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名用繁體原題、與 MB **逐位置相符**、逐軌長度**全部相同到秒**。**同一個 collectionId 在 us 店面把十三軌整套換成英譯**（〈No Need to Ask〉〈Soil〉〈Encounter〉〈Picture on the Ground〉〈Prolonged〉〈Universal Gravitation〉〈Imbalance〉〈Bitter Bite〉〈Jinlong Tunnel〉〈Full Moon〉〈Behind〉〈A Brief Stop〉），只有第 6 軌〈Gabi's Stove〉兩店一致。",
+    "src": "https://itunes.apple.com/lookup?id=1882286626&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple us 藝人目錄（artistId 1251827822）共 14 筆，2026 年**只有本張一筆**——沒有同名先行單曲，也沒有 explicit／cleaned 雙胞胎。",
+    "src": "https://itunes.apple.com/lookup?id=1251827822&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人 0ec64e22 名下共 8 個 release-group，依 first-release-date 排序：Album《浴室》2017-04、EP《Go Slow》2018-11-15、Album《Go Slow (LP Version)》2019-10-02、Single《3 Songs (Live)》2020-06-01、**Album《鳥鳥鳥》2021-06-21**、EP《Audiotree Live》2023-11-07（secondary-type Live）、**EP《暗流》2023-12-12**、Album《在這裡停一下》2026-03-23。**《鳥鳥鳥》與本張之間隔著兩張 EP**，並不是接連兩張作品。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0ec64e22-aa09-48d3-9ec6-2f3f8575554f&limit=100&offset=0&fmt=json"
+   },
+   {
+    "f": "中文維基〈Deca joins〉infobox 與正規專輯表：**台灣的另類搖滾獨立樂團，2013 年 5 月成立於台北關渡，成員都是北藝大搖滾研究社社員**；成團時團名叫「FUBAR」（英文 Fucked Up Beyond All Repair 的縮寫），2016 年改名「灰矮星」，**2017 年 1 月才改成現在的團名**。團員說 deca joins 沒有特別意義，硬拆的話 decadent 是頹廢、decaffeination 是無咖啡因、joins 是接合點複數。現任成員五人：鄭敬儒（主唱、吉他）、楊尚樺（吉他）、謝俊彥（貝斯）、陸浩釗（鼓）、杜哲欣（打擊樂器）。正規專輯表只有三列：**《浴室》2017 年 4 月（空氣腦唱片）、《鳥鳥鳥》2020 年 12 月（空氣腦）、本張 2026 年 3 月 23 日（空氣腦）**——**發行公司欄填的是空氣腦，MB 那邊是空的**。",
+    "src": "https://zh.wikipedia.org/wiki/Deca_joins"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有兩軌是短插曲——第六軌三十八秒、第十軌一分零三秒，其餘十一軌都超過三分半",
+   "成團時他們叫 FUBAR，中間改過一次灰矮星，二〇一七年才變成現在這個名字"
+  ],
+  "sound": "MB 只有一筆 Official release，數位單片 13 軌，Apple tw 逐軌長度與 MB 相同到秒。十三軌合計 47:49，結構上分得很清楚：第 6 軌〈Gabi's Stove〉38 秒、第 10 軌〈金龍隧道〉1:03 是兩段短插曲，其餘十一軌都落在 3:27 到 5:07 之間，同名曲擺在最後一軌收尾。曲名十一首繁體中文、一首英文，只有插曲那首用英文。MB 上廠牌與編號都是空的，中文維基的正規專輯表把三張都填成空氣腦，Apple 的 ℗ 記的是另一個公司名。同一個 collectionId 在 tw 店面用繁體原題、在 us 店面整套換成英譯。樂團 2013 年成立於台北關渡，現行五人編制、含一位專職打擊樂手。",
+  "keyTracks": [
+   "Gabi's Stove",
+   "金龍隧道",
+   "在這裡停一下"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-03-23**、唯一那筆 Official release 同為 2026-03-23、Apple 1882286626 的 releaseDate 2026-03-23 與 ℗ 年份 2026、中文維基的正規專輯表記 2026 年 3 月 23 日，**四處同年同日**。**同名先行單曲：沒有**——Apple us 藝人目錄 14 筆裡 2026 年只有本張一筆；MB 藝人 0ec64e22 名下 8 個 release-group 也查不到同名條目。策展層的釘位 34833e7e 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過（但配對來源要換店面）**：探測層取的是 us 1882286626，13 軌全有 previewUrl；我另跑 **tw 店面同一個 collectionId，曲名是繁體原題、與 MB 逐位置相符，逐軌長度兩店完全相同**（裁定 157 的位置比對以 tw 版做）。`trackCount` 欄與攤開的曲目列兩店都是 13、無裁定 175 的落差。collectionExplicitness notExplicit，us 藝人目錄 14 筆逐筆看過、沒有雙胞胎。\\n**⚠ 建議下游取 tw 店面**：策展層 `risk` 已指定「封面與試聽走 tw 店面」，實測 **us 店面的十三軌曲名整套是英譯**（〈No Need to Ask〉〈Soil〉那一套），與卡片的繁體盤名和 MB 曲名都對不上；**tw 店面的 collectionName、artistName 與曲名全部與卡片一致**，collectionId 相同（1882286626），只要換 country 參數。\\n**推翻策展層一處（可寫的範圍變寬）**：`why` 與 `risk` 都說「MB 上廠牌與編號都沒填，行文不得斷言發行方」——MB 確實是空的，**但中文維基的正規專輯表把《浴室》《鳥鳥鳥》與本張三張的發行公司都填成「空氣腦」**（首張那列寫全名「空氣腦唱片」）。行文若要點發行方，**出處是中文維基那張表、不是 MB**；另外 **Apple 的 ℗ 欄記的是「NEW NEW SPARK CO., LTD.」**，與維基的中文廠牌名不是同一個字串（多半是同一家的登記名，但沒有來源明說，不得斷言等同）。\\n**⚠ 擋下策展層兩處**：（一）`why` 說池中《鳥鳥鳥》是 **2020** 年——**MB 的 first-release-date 是 2021-06-21**，中文維基則寫 2020 年 12 月，**兩說並存**；行文不得斷言《鳥鳥鳥》的年份。（二）`why` 說「這張接在《鳥鳥鳥》之後」——**以正規專輯論成立，但中間並不是空的**：MB 藝人名下在《鳥鳥鳥》與本張之間還有 EP《Audiotree Live》2023-11-07 與 **EP《暗流》2023-12-12**。**行文不得寫「睽違六年」「中間什麼都沒出」這類句子**（與 a 組 Kelela 那筆同型的序數陷阱）。\\n**序數不可斷言**：中文維基的正規專輯表只列三張（2017／2020／2026），照那張表本張是第三張；**但 MB 的 primary-type 為 Album 的有四筆**（多一筆《Go Slow (LP Version)》2019-10-02），兩套計數並存。**行文不得寫「第 N 張」**，錨點用前作《鳥鳥鳥》（年份兩說，寫「上一張正規專輯」最安全）。\\n**簡繁分裂**：中文維基那張表在本張那一列**是用簡體字登錄盤名與十三軌曲目的**（其餘兩列是繁體），MB 與 Apple tw 都是繁體。**卡片與行文一律用繁體原題**；策展層 `risk` 要求簡體寫法也要查撞卡，這裡確認簡體版本確實存在於中文維基那一列。\\n**⚠ 中文維基該頁帶金曲獎入圍紀錄與年度榜段落——依本批規矩，獎項與媒體年終榜一律不得寫入 `facts`，上面沒有收。**\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:回聲樂團|靈魂的回聲",
+  "artist": "回聲樂團",
+  "album": "靈魂的回聲",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5058e1ce 的欄位：title「靈魂的回聲」、artist-credit「回聲樂團」（藝人實體 MBID 025522c5，type Group、country **TW**、disambiguation「**Taiwanese rock band**」）、first-release-date 2026-08-28、primary-type Album、secondary-types **空**。轄下 **只有 1 筆 release，status Official**：61ae72aa，2026-08-28、country **TW**、text-representation Hant／cmn、包裝 **Digipak**、barcode 199584738321。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5058e1ce-5d59-48d7-a48d-94a111ac9861?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "唯一那筆 release 61ae72aa 的載體與廠牌：**兩片 CD——medium 1 十軌、medium 2 六軌，合計 16 軌**，廠牌是樂團自營的那家（label MBID e6d5f589）、catalog-number **ECHOCD015**。**MB 上沒有數位載體的 release。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5058e1ce-5d59-48d7-a48d-94a111ac9861&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "61ae72aa 的逐軌曲目與長度。**Disc 1（10 軌）**：1〈撲向那隻狼〉2:54、2〈我學會的物理〉3:16、3〈Because I Love You So〉3:32、4〈誰的心忘了〉3:35、5〈末日的我們再一起〉4:37、6〈Be Careful What You're Wishing For〉5:35、7〈Amazon〉3:18、8〈訂閱冥想〉4:46、9〈Take a Shine〉3:37、10〈Silent Night in Shinjuku〉3:48（合計 38:58）。**Disc 2（6 軌）全部是舊曲的 2026 年新版**：1〈天馬神風 (2026 Mix)〉5:59、2〈感官駕馭 (2026 Re-recording)〉4:41、3〈繞 (2026 Re-recording)〉4:43、4〈解放 (2026 Re-recording)〉4:17、5〈OK? (2026 Re-recording)〉7:39、6〈瞬間 (2026 Re-recording)〉6:44（合計 34:03）。**第二片六軌裡五軌標 Re-recording、一軌標 Mix，而且六軌的平均長度（5:40）明顯長於第一片（3:53）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5058e1ce-5d59-48d7-a48d-94a111ac9861&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**⚠ Apple 把這兩片拆成兩個獨立的 collection，日期也各自不同。**（一）**tw collectionId 6772125716**：collectionName「Echo of Your Soul」、artistName「回聲樂團」、**releaseDate 2026-06-19**、copyright「℗ 2026 ECHO SOCIETY MUSIC LTD., exclusively distributed by Sony Music Entertainment Taiwan Ltd.」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名用繁體原題、與 MB 的 **medium 1 逐位置相符**、逐軌長度相同或差一秒（第 5 軌 Apple 寫〈末日的我們**在**一起〉、MB 寫〈末日的我們**再**一起〉，一字之差）。",
+    "src": "https://itunes.apple.com/lookup?id=6772125716&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "（二）**tw collectionId 6797394173**：collectionName「Echo of the Echo」、artistName「回聲樂團」、**releaseDate 2026-08-11**、℗ 與前者相同、trackCount 6。`entity=song` **攤得出 6 軌、6 軌全部有 previewUrl**，曲名與 MB 的 **medium 2 逐位置相符**、逐軌長度相同或差一到二秒。**這兩筆合起來才等於 MB 那張兩片裝的 16 軌；Apple 上沒有任何一筆是 16 軌的。**tw 店面藝人目錄（artistId 683062866）共 27 筆，2026 年就是這兩筆、沒有第三筆。",
+    "src": "https://itunes.apple.com/lookup?id=6797394173&country=tw&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人 lookup（artistId 683062866）回傳 artistName「回聲樂團」、primaryGenreName「Alternative」，**artistLinkUrl 的網址片段是 `echo-of-your-soul`**——也就是 Apple 端這個團的英文名就是「Echo of Your Soul」，與樂團的官方英文名一致，**不是 Echo & the Bunnymen 那一類同名藝人**。",
+    "src": "https://itunes.apple.com/lookup?id=683062866&country=us"
+   },
+   {
+    "f": "中文維基〈回聲樂團〉infobox 與作品發行節：**英文團名 Echo of Your Soul**，1999 年起活動，出身新竹國立清華大學（前身是清大迴聲社，1998 年暑假為了在酒吧駐唱臨時組團，老闆問團名時順口用了社團的英文名 Echo）；現任成員五人——主唱吳柏蒼、吉他手羅尹均、貝斯手邱文彥、鼓手慕春佑、**鍵盤手吳新逸（Shipy）2008 年離團、2025 年回歸**。專輯清單只有五張：《感官駕馭》2002 年、《巴士底之日》2007 年、《處女空氣》2010 年、《獻給生命中的純粹》2014 年、**《靈魂的回聲》2026 年**。**EP 清單裡另有一筆《記憶的回聲》2026 年，註明「收錄於《靈魂的回聲》首批限量雙 CD 中」**——這正是 MB 那張兩片裝的第二片。",
+    "src": "https://zh.wikipedia.org/wiki/回聲樂團"
+   },
+   {
+    "f": "MB 藝人 025522c5 名下**只有 3 個 release-group**：《處女空氣》2010-12-03（Album）、《處女秀 (Live)》2021-06-01（Album＋Live）、《靈魂的回聲》2026-08-28（Album）。**中文維基列的《感官駕馭》2002、《巴士底之日》2007 與《獻給生命中的純粹》2014 三張在 MB 上都沒有條目**——策展層說「MB 對這團的建檔不完整、不能用它反推目錄」，**逐筆核對成立**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=025522c5-dc7f-4037-9b81-167cf52b615b&limit=100&offset=0&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "首批限量的第二片叫《記憶的回聲》：六首舊曲重錄，平均長度比新碟那十首多出快兩分鐘",
+   "團名是意外來的——1998 年在酒吧駐唱，老闆問團名，他們順口報了清大社團的英文名"
+  ],
+  "sound": "MB 只有一筆 Official release，TW 的兩片裝 Digipak CD：第一片十軌 38:58、第二片六軌 34:03，合計 16 軌。第一片曲長從 2:54（〈撲向那隻狼〉）到 5:35（〈Be Careful What You're Wishing For〉），第二片六軌全部是舊曲的 2026 年新版（五軌標 Re-recording、一軌標 Mix），長度從 4:17 到 7:39、平均比第一片長快兩分鐘。曲名十六首裡繁體中文十一首、英文五首。廠牌是樂團自營的那家、編號 ECHOCD015，MB 上沒有數位載體。樂團 1999 年起活動、出身新竹清大的社團，現行五人編制，鍵盤手 2008 年離團、2025 年才回歸。英文團名是 Echo of Your Soul。",
+  "keyTracks": [
+   "撲向那隻狼",
+   "訂閱冥想",
+   "感官駕馭 (2026 Re-recording)"
+  ],
+  "status": "full",
+  "yearVerified": "**年份一致（2026），但三個日期各不相同，要標。**MB release-group first-release-date 與唯一那筆 TW Official release 都是 **2026-08-28**（實體兩片裝 CD）；**Apple tw 的兩筆分別是 6772125716 的 2026-06-19（第一片十軌）與 6797394173 的 2026-08-11（第二片六軌）**，℗ 年份都是 2026；中文維基的專輯清單只記到年（2026 年）。**也就是數位分兩批先出（6 月 19 日與 8 月 11 日）、實體雙 CD 8 月 28 日才到齊。三處都在 2026 年，年份成立；行文不得斷言單一發行日**（寫「2026 年」或「2026 年 8 月的實體雙 CD」最安全）。**同名先行單曲：沒有**——tw 藝人目錄 27 筆裡 2026 年只有上述兩筆。策展層的釘位 5058e1ce 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記 us:7→0、gb:7→0、jp:11→0、de:7→0、fr:11→0、tw:11→0、kr:0→0、ca:7→0、au:7→0，**九店都撈到候選卻全部判不合**。實際上 **tw 店面有貨，但被 Apple 拆成兩筆**：回撈清單 apple-candidates.md 給的 **6772125716（10 軌）與 6797394173（6 軌）經逐軌攤開後都成立**——前者對應 MB 的 medium 1、後者對應 medium 2，曲名／曲序逐位置相符、長度相同或差一到二秒，兩筆合計 16 軌全部有 previewUrl。**探測層落空的原因：它拿 MB 的 16 軌（或 10＋6）去比 Apple 的 10 與 6，怎麼比都不合。**（apple-candidates.md 另給的 6797415375《The Physics I've Learned - Single》2025 是第一片第 2 軌的先行單曲、1 軌，**不採**。）\\n**可補的 Apple collectionId（兩筆）**：key `desc4:回聲樂團|靈魂的回聲`／店面 **tw**／**id 6772125716（10 軌，對應第一片，建議取這筆做試聽與封面）**；同 key／店面 tw／**id 6797394173（6 軌，對應首批限量的第二片《記憶的回聲》）**。（不改 previews.json，交主線。**兩筆擇一時取 6772125716**：它是專輯本體那十軌。）\\n**擋下策展層一處**：`why` 寫「CD 兩片、分別是 10 軌與 6 軌」——這句本身成立，**但要補一件關鍵事**：中文維基的 EP 清單記那第二片是獨立作品《記憶的回聲》、「收錄於《靈魂的回聲》首批限量雙 CD 中」，**也就是六軌那片是首批限量才有、不是常態內容**。行文若要點「十六軌」必須說明那是首批限量雙 CD；只寫本體就是十軌。\\n**曲名寫法**：第一片第 5 軌 MB 作〈末日的我們**再**一起〉、Apple tw 作〈末日的我們**在**一起〉，一字之差、字串比對不相等；keyTracks 未取這首。\\n**⚠ 掛名撞卡實測（策展層 `risk` 點名的最高風險筆）**：Apple 藝人 lookup 顯示 artistId **683062866** 的 artistName 是「回聲樂團」、網址片段 `echo-of-your-soul`，**與 Echo & the Bunnymen 等同名藝人是不同 artistId**；MB 這邊 025522c5 的 disambiguation 是「Taiwanese rock band」。**下游一律用 MBID 025522c5 與 Apple artistId 683062866。**注意 **Apple 在部分查詢回傳裡把 artistName 顯示成英文團名「Echo of Your Soul」**（與盤名 collectionName 相同字串），只看回傳欄位會誤以為藝人叫「Echo of Your Soul」。\\n**策展層的「MB 建檔不完整」複驗成立**：MB 藝人名下只有 3 個 release-group（2010／2021／2026），中文維基列的《感官駕馭》2002、《巴士底之日》2007、《獻給生命中的純粹》2014 都不在 MB 上。**不能用 MB 反推這團的目錄。**\\n**序數：可以斷言，但出處只有中文維基。**該頁「作品發行 → 專輯」清單共五張，本張是第五張（2002／2007／2010／2014／2026）。**行文若要寫「第五張」，出處是中文維基那份清單**；MB 那邊查不到、無法交叉驗證。\\n**⚠ 中文維基該頁帶金曲獎入圍與媒體提名段落——依本批規矩，獎項與媒體榜一律不得寫入 `facts`，上面沒有收。**\\n**不得寫任何評論分數、榜單名次或獎項。**"
  }
 ]
