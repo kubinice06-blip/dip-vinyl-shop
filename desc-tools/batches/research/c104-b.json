@@ -218,5 +218,225 @@
   "status": "full",
   "yearVerified": "⚠ **1984 對 1987 兩票對一票，判 1984、卡單維持。** 1984 方：release-group first-release-date **1984-11-15**、其下唯一 Official release 同為 1984-11-15；韓文百科的專輯條目**明確處理過這個誤解**——「《사람들에게 87 년 발매된 것으로 알려져 있으나 실제로는 84 년에 발매되었으며 87 년은 재발매된 것이다》」。1987 方：Apple jp 1529082769 的 releaseDate 1987-05-31 且 ℗ 年份 1987——**那正是百科說的再發行年份。****行文寫 1984，並可寫「1987 年那次是再發行」。同名先行單曲：無。**",
   "notes": "**探測層 ready 覆核通過。** 店面 **jp**、collectionId **1529082769**、trackCount 欄與攤開的曲目列都是 9、9 軌全有 previewUrl，**九軌長度逐位置完全相同、零誤差**。\\n**這一筆不是日版**：artistId 1529053180 在 us 與 jp 各回 9 筆、本張在兩邊同號，**掛名兩邊都是諺文原名**。**依同條線的既有裁定（韓國線優先 us），可改記 us。**\\n本張封面已有來源。\\n**⚠ 這是本批唯一一張 country 欄未填的 release**（不是 KR）。此 release-group 名下沒有任何日本盤，不涉「釘到日版」的風險。\\n**擋下策展層一處（年份的通俗誤解）**：外界普遍記成 1987，**百科專門寫了一句糾正**。已在 `yearVerified` 記明。\\n**⚠ 軌數**：釘住的與店面端都是 9 軌，但百科提到原盤 Side B 第 5 軌有一首《건전가요》〈너와 내가〉——**原盤實際可能是 10 軌**。行文寫軌數要保守。\\n**序數「首張」由百科支持**；名下建檔只有 1 筆 Album，**機械數不可用。**\\n可寫的背景（百科具名）：這是《민중가요》首度合法發行的唱片、發行時因政治壓力只收了通得過事前審查的曲子、製作由 《김민기》 擔任、成員來自幾所大學的歌唱社團。**「首度合法發行」是百科的說法，行文要寫成有出處的敘述。**"
+ },
+ {
+  "key": "desc4:시나위|Heavy Metal Sinawe",
+  "artist": "시나위",
+  "album": "Heavy Metal Sinawe",
+  "facts": [
+   {
+    "f": "釘住的 release-group 9f7e67d8 欄位：title「Heavy Metal Sinawe」、artist-credit「Sinawe」（藝人 MBID 7f227d98，掛名在建檔端是羅馬字）、first-release-date 1986-03-01、primary-type Album、secondary-types **空**。轄下 **2 筆同日的 KR Official 盤、軌數不同**：《시완 레코드》 那筆 **9 軌**、Yejeon Media 那筆（catno KCD-0112，barcode 8809009295040）**8 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/9f7e67d8-cd91-4f40-ae5c-95ee80bbd6b3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "兩筆的曲目**不是同一組**。8 軌那筆：1〈크게 라디오를 켜고〉4:36、2〈그대 앞에 난 촛불이여라〉5:05、3〈남사당패〉3:43、4〈젊음의 록큰롤〉3:51、5〈잃어버린 환상〉6:06、6〈아틀란티스의 꿈〉6:02、7〈1월 (January) (연주)〉5:01、8〈하루해 마냥 떠가고〉3:49。9 軌那筆多一首〈아! 대한민국〉3:11、且把〈그대앞에 난 촛불이여라〉列了兩次（5:59 與 3:35）——**後者的曲名在建檔端明顯填錯，位置與長度都對應 8 軌版的〈남사당패〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9f7e67d8-cd91-4f40-ae5c-95ee80bbd6b3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1708342859：collectionName「Heavy Metal Sinawe」（與釘住的標題完全相同）、artistName「Sinawe」、releaseDate **1986-03-01（與釘住的 first-release-date 到日相同）**、copyright「℗ 1986 《예전미디어》」、trackCount 8。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，**與 8 軌那筆（Yejeon Media 版）逐位置相符、長度差 1 到 20 秒**；與 9 軌那筆對不上。**店面端上架的是 8 軌版。**",
+    "src": "https://itunes.apple.com/lookup?id=1708342859&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "韓文百科〈Heavy Metal Sinawe〉條目：這是 시나위 的出道盤，被視為把只在地下與現場演出的韓國重金屬做成唱片的最早案例。**條目專門處理「兩個版本」**：錄音準備期間 《김종서》 與 《강기영》 退團，樂團找來 《이병문》 與 《박영배》；**初版收的〈크게 라디오를 켜고〉〈남사당패〉〈젊음의 록큰롤〉是 《이병문》 唱的，但他在錄音過程中突然退團，發行方 《서라벌레코드》 於是推出新加入的 《임재범》 演唱的再版**，初版與再版幾乎同時流通、想回收初版已來不及。條目寫兩版的封面色調也不同（初版明亮、再版偏暗），並有跨頁與單頁兩種內袋；封面用的是當時就讀美術系的樂團 Zero-G 主唱 《김병삼》 畫的演出海報。**大眾比較熟的是 《임재범》 唱的那一版。**",
+    "src": "https://ko.wikipedia.org/wiki/Heavy_Metal_Sinawe"
+   },
+   {
+    "f": "韓文百科藝人頁〈시나위 (밴드)〉：隊長是 《신중현》 的長子、吉他手 《신대철》；歷來成員含 《임재범》、H2O 的 《강기영》、《김종서》、《서태지》、《김바다》。條目列出各張的陣容：**1 《집》《Heavy Metal Sinawe》(1986) — 《신대철》（吉他）、《임재범》（主唱）、《박영배》（貝斯）、《강종수》（鼓）、《김형준》（鍵盤）**，並註明原貝斯手 《강기영》 在第一張錄音途中短暫退團、《임재범》 也在錄完後為入伍而退團。**2 《집》《Down and Up》(1987) — 《신대철》、《김종서》（主唱）、《강기영》（貝斯）、《김민기》（鼓）。**",
+    "src": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%82%98%EC%9C%84_(%EB%B0%B4%EB%93%9C)"
+   },
+   {
+    "f": "藝人頁分頁全列 7f227d98 名下 10 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 9 筆依 first-release-date 排序：**Heavy Metal Sinawe（1986-03-01）＝第一筆**、Down and Up（1987-06-10）、Freeman（1988-07）、Four（1990-07-01）、《매 맞는 아이》（1995）、Blue Baby（1997-02-01）、Psychedelos（1998-10-23）、Cheerleading Fan（2001-11-02）、Reason Of Dead Bugs（2006-04-04）。**本批同時收第一與第二筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7f227d98-fced-4718-9492-83b3b3225530&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "主唱錄到一半突然退團，公司乾脆找新主唱重錄再出一次——初版和再版幾乎同時在市面上流通，想回收也來不及",
+   "封面用的是一張演出海報，畫海報的是另一個團的主唱、當時還在念美術系"
+  ],
+  "sound": "單片 8 軌（另有 9 軌的版本）、總長約 38 分。八軌落在 3:43 到 6:06 之間，最長的兩首〈잃어버린 환상〉6:06 與〈아틀란티스의 꿈〉6:02 連著排在第 5、第 6 軌、佔掉全碟三分之一；第 7 軌〈1월〉5:01 是演奏曲。曲序開場〈크게 라디오를 켜고〉4:36 是最有名的一首，第 2 軌〈그대 앞에 난 촛불이여라〉5:05 接上；第 3 軌〈남사당패〉3:43 與第 4 軌〈젊음의 록큰롤〉3:51 是前半最短的兩首。收尾〈하루해 마냥 떠가고〉3:49。陣容是吉他 《신대철》、主唱 《임재범》、貝斯 《박영배》、鼓 《강종수》、鍵盤 《김형준》。發行方 Yejeon Media（catno KCD-0112），同日另有 《시완 레코드》 的一筆。",
+  "keyTracks": [
+   "크게 라디오를 켜고",
+   "잃어버린 환상",
+   "남사당패"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-03-01**、其下兩筆 KR Official 盤都是 1986-03-01、Apple jp 1708342859 的 releaseDate **也是 1986-03-01**（到日相同）且 ℗ 年份 1986。韓文百科的專輯條目沒寫日期，但把它記為出道盤、藝人頁的陣容表寫「1 《집 Heavy Metal Sinawe (1986 년》)」。**四處同為 1986。同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過，但軌數與版本要寫清楚。** 店面 **jp**、collectionId **1708342859**、trackCount 欄與攤開的曲目列都是 8、8 軌全有 previewUrl。\\n**⚠ 這張碟在建檔端有兩筆同日的 KR Official，軌數 8 與 9 不同、曲目也不同**：9 軌那筆多一首〈아! 대한민국〉，並把〈그대앞에 난 촛불이여라〉重複列了兩次（第二次的長度與位置其實對應 8 軌版的〈남사당패〉，**建檔填錯**）。**店面端上架的是 8 軌那一版，逐軌對得上。**\\n**⚠ 這對應百科寫的「初版／再版」兩個版本**（主唱 《이병문》 對 《임재범》）。**行文可以寫「兩個版本、主唱不同」，但不得斷言店面上架的是哪一位唱的**——長度差不足以判定，而百科也沒有給逐軌時間。\\n**⚠ 本張缺封面（`caa.json` art 為 null）——可走 apple-verified-collection，collectionId 1708342859、店面 jp。**\\n**這一筆不是日版**：artistId 433123465 在 us 與 jp 各回 21 筆、本張在兩邊同號。\\n**序數「首張正規盤」查證屬實**：百科寫「《데뷔 음반》」、藝人頁陣容表列為 1 《집》、機械排序第一，三處一致。"
+ },
+ {
+  "key": "desc4:시나위|Down and Up",
+  "artist": "시나위",
+  "album": "Down and Up",
+  "facts": [
+   {
+    "f": "釘住的 release-group cc20b5d9 欄位：title「Down and Up」、artist-credit「Sinawe」（藝人 MBID 7f227d98）、first-release-date 1987-06-10、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：KR Official，9 軌，**label-info 欄空白**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cc20b5d9-817e-4691-beb0-cd662aae26c2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "KR 原盤逐軌與長度（9 軌）：1〈새가 되어 가리〉4:57、2〈해 저문 길에서〉**6:54**、3〈마음의 춤〉3:34、4〈진실한 모습〉2:56、5〈시나위〉3:56、6〈연착 (연주곡)〉4:13、7〈들리는 노래〉5:02、8〈빈 하늘〉5:14、9〈밤 하늘엔 무엇이〉3:25。**第 5 軌的曲名就是團名本身。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cc20b5d9-817e-4691-beb0-cd662aae26c2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1593056467：collectionName「Down and Up」（與釘住的標題完全相同）、artistName「Sinawe」、releaseDate **1987-06-10（與釘住的 first-release-date 到日相同）**、copyright「℗ 1987 MUSIC&NEW」、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名整組英譯。**⚠ 曲序與原盤不同**：前四軌位置相同，第 5 軌起錯位——店面端第 5 軌是 What Is on the Night Sky 3:31（＝〈밤 하늘엔 무엇이〉，原盤第 9 軌）、第 6 軌 Sinawee(Shaman Song) 3:59（＝〈시나위〉，原盤第 5 軌）、第 7 軌 Delayed (Instrumental) 4:19（＝〈연착〉，原盤第 6 軌）、第 8 軌 Music in the Air 5:06（＝〈들리는 노래〉，原盤第 7 軌）、第 9 軌 Empty Sky 5:17（＝〈빈 하늘〉，原盤第 8 軌）。",
+    "src": "https://itunes.apple.com/lookup?id=1593056467&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "店面端與原盤建檔的曲目**集合完全相同、只有第 5 軌起的順序不同**：九首一一對得上，且**對應之後每一首的長度差都在 6 秒以內**（4:57／6:54／3:34／2:56 對 5:01／6:55／3:37／2:55，錯位的五首 3:25 對 3:31、3:56 對 3:59、4:13 對 4:19、5:02 對 5:06、5:14 對 5:17）。**沒有多出或缺少的曲目。**",
+    "src": "https://itunes.apple.com/lookup?id=1593056467&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "韓文百科〈Down and Up〉條目全文只有兩句：這是 시나위 的第二張正規盤；**1987 年發行、1992 年再發行**。條目沒有曲目與製作資料。",
+    "src": "https://ko.wikipedia.org/wiki/Down_and_Up"
+   },
+   {
+    "f": "韓文百科藝人頁〈시나위 (밴드)〉的陣容表：**2 《집》《Down and Up》(1987 《년》) — 《신대철》（吉他）、《김종서》（主唱）、《강기영》（貝斯）、《김민기》（鼓）**。條目註明 《김종서》 在 《임재범》 加入之前曾短暫擔任 부활 前身樂團 THE END 的主唱——**부활 是本批 b 組另外兩張卡的掛名**；鼓手 《김민기》 的國中同學 《탁재훈》 透過他認識了團員、還一度想當 《김종서》 的經紀人。條目另記第一張的貝斯手 《강기영》 後來以「《달파란》」為名活動——**《달파란》 正是本批 b 組《文化革命》那個團的貝斯手。**",
+    "src": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%82%98%EC%9C%84_(%EB%B0%B4%EB%93%9C)"
+   }
+  ],
+  "hookCandidates": [
+   "第五軌的曲名就是團名本身——一個借自巫樂的詞，海外店面把它譯成 Shaman Song",
+   "同一張碟的九首歌在兩處是同一批，順序卻從第五軌開始整組錯開"
+  ],
+  "sound": "單片 9 軌、總長約 40 分。九軌落在 2:56 到 6:54 之間，跨度是本批 b 組最大的一張：最長的〈해 저문 길에서〉6:54 排在第 2 軌就出現，最短的〈진실한 모습〉2:56 緊接在第 4 軌。曲序前四軌走「長—更長—短—最短」的下坡，第 5 軌〈시나위〉3:56 用團名本身當曲名把碟拉回來，第 6 軌〈연착〉4:13 是演奏曲。後段〈들리는 노래〉5:02 與〈빈 하늘〉5:14 兩首再拉長，收尾〈밤 하늘엔 무엇이〉3:25。這一張的主唱換成 《김종서》、貝斯換回 《강기영》、鼓是 《김민기》，只有吉他 《신대철》 是從第一張留下來的。發行方欄空白。",
+  "keyTracks": [
+   "시나위",
+   "해 저문 길에서",
+   "새가 되어 가리"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。release-group first-release-date **1987-06-10**、其下唯一 KR Official 盤同為 1987-06-10、Apple jp 1593056467 的 releaseDate **也是 1987-06-10**（到日相同）且 ℗ 年份 1987、韓文百科專輯條目寫「1987 《년 발매된 뒤 1992 년 재 발매되었다》」、藝人頁陣容表寫「2 《집 Down and Up (1987 년》)」。**四處到日或到年一致。同名先行單曲：無。**",
+  "notes": "**⚠ 探測層 ready，但配對要打一個星號。** 店面 **jp**、collectionId **1593056467**、9 軌全有 previewUrl，**曲目集合與原盤九首一一對得上、對應後的長度差全部在 6 秒以內**，但**第 5 軌起的曲序與原盤不同**（店面端把原盤第 9 軌提到第 5 軌，其餘四首各往後挪一格）。\\n**判定：同一張碟，但行文不得寫曲序、不得說「第 N 軌是某首」。**若下游要照曲序寫，請以原盤建檔為準。\\n**⚠ 本張缺封面（`caa.json` art 為 null）——可走 apple-verified-collection，collectionId 1593056467、店面 jp。**\\n**這一筆不是日版**：artistId 433123465 在 us 與 jp 各回 21 筆、本張在兩邊同號。\\n**序數「編號第二」查證屬實**：百科專輯條目寫「《정규 2 집》」、藝人頁陣容表列為 2 《집》、機械排序第二，三處一致。\\n**⚠ 卡單 `curatorWhy` 的主唱敘述寫反了**：卡單寫「首張是 《임재범》、本張是 《김종서》」——**方向對，但首張其實有兩個主唱版本**（初版 《이병문》、再版 《임재범》），百科的陣容表只列 《임재범》。**行文若要對比兩張的主唱，要補上首張有兩版這件事，否則會把讀者導向錯誤的單一事實。**\\n可寫的人事線（百科具名）：《김종서》 在加入本團前曾是 부활 前身樂團的主唱（**부활 是本批 b 組兩張卡**）；第一張的貝斯手 《강기영》 後來以 《달파란》 為名活動（**《달파란》 是本批 b 組《文化革命》那個團的貝斯手**）。"
+ },
+ {
+  "key": "desc4:들국화|들국화 2집",
+  "artist": "들국화",
+  "album": "들국화 2집",
+  "facts": [
+   {
+    "f": "釘住的 release-group d2fbf4e0 欄位：title「2《집》」（建檔只寫了兩個字）、artist-credit「들국화」（藝人 MBID 79bbef91）、first-release-date 1986-09-25、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：KR Official 的 12 吋黑膠，SRB Records 發行、catno VIP-20030、13 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/d2fbf4e0-0d85-4094-89af-c8db02f4d793?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "KR 原盤逐軌與長度（13 軌）：1〈제발〉4:24、2〈하나는 외로워〉5:51、3〈너는〉5:32、4〈너랑 나랑〉4:41、5〈1960년 겨울〉**1:19**、6〈또다시 크리스마스〉3:44、7〈내가 찾는 아이〉3:55、8〈님을 찾으면〉4:06、9〈여기가〉3:42、10〈오 그대는 아름다운 여인〉3:23、11〈쉽게〉3:43、12〈조용한 마음〉5:37、13〈우리의 소원〉**1:10**。**十三軌裡有兩軌不到一分二十秒，其餘十一軌都超過三分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d2fbf4e0-0d85-4094-89af-c8db02f4d793&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1811582051：collectionName「들국화 2집」（比釘住的標題多了團名）、artistName「Deulgukhwa」、releaseDate 1986-09-01、copyright「℗ 1986 Beyond Music,under license to Kakao Entertainment」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名照諺文原題、曲序逐位置相符，**十軌長度完全相同、其餘三軌各差 1 到 3 秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1811582051&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "韓文百科藝人頁〈들국화 (밴드)〉：主唱 전인권、貝斯 《최성원》、鍵盤 《허성욱》、吉他 《조덕환》、鼓 《주찬권》 於 1985 年組成。條目寫 1985 年 9 月發表的第一張全碟皆紅，**第二張失敗之後成員之間因音樂見解分歧而解散**；他們在軍事政權下以反抗性的歌詞與 전인권 近乎嘶吼的唱腔端出韓國式搖滾，並且不靠當時的主要流通管道（電視），而是靠唱片與現場演出打開局面。條目另記樂團 1983 年 10 月先由 전인권、《허성욱》、《최성원》 三人組成，團名來自 《허성욱》 當時嚼的口香糖名稱；1997 年 《허성욱》 在加拿大車禍過世、2013 年 10 月鼓手 《주찬권》 過世。**전인권 是本批 b 組《파랑새》的掛名。**",
+    "src": "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EB%B0%B4%EB%93%9C)"
+   },
+   {
+    "f": "藝人頁分頁全列 79bbef91 名下**只有 4 個 release-group**，其中 primary-type=Album 且 secondary-types 為空的 3 筆依 first-release-date 排序：들국화（1985-09-10）、**2《집》（1986-09-25）＝第二筆**、들국화（2013-12-06）。**⚠ 名下有兩筆同名的《들국화》**（1985 首張與 2013 重組盤），**同名雙胞胎，回查時必須認 MBID。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=79bbef91-63cc-4fbc-9922-702092508327&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ 韓文百科的〈들국화 (음반)〉條目講的**不是本張**：那個條目寫的是「第四張正規盤、也是最後一張正規盤、解散 27 年後重組的第一張」，2013 年 12 月 6 日發行、雙 CD 共 19 曲，鼓手 《주찬권》 在發行兩個月前的 2013 年 10 月過世、這張是他的遺作。**以「들국화 (《음반》)」為名的條目指的是 2013 年那張，不是 1986 年的第二張。**",
+    "src": "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EC%9D%8C%EB%B0%98)"
+   }
+  ],
+  "hookCandidates": [
+   "十三軌裡有兩軌不到一分二十秒——第五軌〈1960년 겨울〉一分十九秒，收尾〈우리의 소원〉一分十秒",
+   "團名據說來自鍵盤手當時嚼的那款口香糖"
+  ],
+  "sound": "單片 13 軌、總長約 51 分。十一首正常長度的曲子落在 3:23 到 5:51 之間，另外兩軌是短插曲：第 5 軌〈1960년 겨울〉1:19 與收尾〈우리의 소원〉1:10。曲序開場〈제발〉4:24，第 2、第 3 軌〈하나는 외로워〉5:51 與〈너는〉5:32 是全碟最長的兩首、連著排在前段；第 5 軌那段一分多鐘的插曲把前半切開，後半〈내가 찾는 아이〉〈님을 찾으면〉〈여기가〉〈오 그대는 아름다운 여인〉〈쉽게〉五首全部落在 3:23 到 4:06 的窄帶。第 12 軌〈조용한 마음〉5:37 拉最後一次長度，再用 1:10 的〈우리의 소원〉收尾。發行方 SRB Records，編號 VIP-20030。這是這個團 1980 年代的第二張，也是解散前的最後一張正規盤。",
+  "keyTracks": [
+   "제발",
+   "너랑 나랑",
+   "하나는 외로워"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-09-25**、其下唯一 KR 黑膠同為 1986-09-25、Apple jp 1811582051 的 releaseDate 1986-09-01（1 日是月初佔位）且 ℗ 年份 1986。**三處同為 1986 年 9 月，無第四處**（韓文百科沒有本張的專輯條目——同名的〈들국화 (음반)〉條目講的是 2013 年那張）。**同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過。** 店面 **jp**、collectionId **1811582051**、trackCount 欄與攤開的曲目列都是 13、13 軌全有 previewUrl，十軌 Δ0、三軌 Δ1–3 秒，配對無疑。\\n**這一筆不是日版**：artistId 352498477 在 us 與 jp 各回 10 筆、本張在兩邊同號。**依同條線的既有裁定（韓國線優先 us），可改記 us。**\\n本張封面已有來源。\\n**⚠ 同名雙胞胎屬實**：名下有兩筆都叫《들국화》的 release-group（1985 首張 57292ee6、2013 重組盤 20e2e6f2），**卡單已寫進刻意不釘，這裡確認。**\\n**⚠ 百科條目的陷阱**：以「들국화 (《음반》)」查到的條目是 **2013 年那張第四張**（雙 CD、19 曲、鼓手遺作），**不是本卡**。寫作層若照那個條目寫會整段寫錯。\\n**序數「編號第二」查證屬實**：機械排序第二、百科藝人頁寫「2 《집의 실패 후 …해체》」。**建檔標題只寫「2《집》」兩個字，卡單補上團名是對的。**\\n可寫的細節（百科具名）：1985 年成軍的五人陣容、靠唱片與現場而非電視打開局面、第二張之後因音樂見解分歧解散、團名來自鍵盤手嚼的口香糖。**主唱 전인권 是本批 b 組《파랑새》的掛名。**"
+ },
+ {
+  "key": "desc4:부활|부활 Vol.1",
+  "artist": "부활",
+  "album": "부활 Vol.1",
+  "facts": [
+   {
+    "f": "釘住的 release-group 8dad57a7 欄位：title「부활 Vol.1」、artist-credit「부활」（藝人 MBID faabd0b8）、first-release-date 1986-10-03、primary-type Album、secondary-types **空**。轄下 3 筆 release、全部 8 軌：KR Official 的 12 吋黑膠（1986-10-03，Seoul Records，catno srd-5-077）、一筆無日期的 Pseudo-Release（**標題作「Rock Will Never Die」**）、KR Official 的 CD 再發（2003-02-26，Seoul Records，catno SRCD-3679）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8dad57a7-3d51-4e70-b8dd-a357b51335e1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "KR 原盤逐軌與長度（8 軌）：1〈희야〉5:33、2〈비와 당신의 이야기〉6:01、3〈너뿐이야〉4:08、4〈길가의 연인들〉3:35、5〈인형(人形)의 부활(復活)〉**7:00**、6〈슬픈 환상〉4:56、7〈사랑 아닌 친구〉3:27、8〈사랑의 흔적〉3:57。**八軌總長約 39 分，第 5 軌整整七分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8dad57a7-3d51-4e70-b8dd-a357b51335e1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple **us** 店面 collectionId 1731763080：collectionName「Rock Will Never Die」（與那筆 Pseudo-Release 的標題相同）、artistName「Boohwal」、**releaseDate 2004-07-29、copyright「℗ 2004 Kakao Entertainment,under license to Kakao Entertainment」**、trackCount 8。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，曲名照諺文原題、曲序逐位置相符，**六軌長度完全相同、其餘兩軌各差 1 秒**——**逐軌對得上 1986 年的原盤，日期與 ℗ 卻是 2004。**",
+    "src": "https://itunes.apple.com/lookup?id=1731763080&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "韓文百科藝人頁〈부활 (밴드)〉：吉他手 《김태원》 帶領，1980 年代後期與 《백두산》、시나위、H2O 一起帶動韓國樂團熱潮，**第三張之後比起搖滾更靠近歌謡的語法**。條目寫 《김태원》 與 《이태윤》 的樂團「《디 엔드》」在地下受到好評，《김태원》 找 《검은진주》 的 《김종서》 當主唱後改名為 부활；《김종서》 因音樂見解退團後，《김태원》 請 이승철 幫忙找人，最後由 이승철 自己來唱，**1985 年 7 月 3 日부활正式成軍**。條目另記 1985 年 시나위 與 부활 曾同台對決，부활 走 Gary Moore 路線、시나위 走 Ozzy Osbourne 路線。**이승철 是本批 a 組《이승철 Part 1》的掛名，《김종서》 是本批 b 組《Down and Up》的主唱。**",
+    "src": "https://ko.wikipedia.org/wiki/%EB%B6%80%ED%99%9C_(%EB%B0%B4%EB%93%9C)"
+   },
+   {
+    "f": "藝人頁分頁全列 faabd0b8 名下 19 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 15 筆依 first-release-date 排序：**부활 Vol.1（1986-10-03）＝第一筆**、Remember（1987-11）、《기억상실》（1993）、《잡념에 관하여》...（1995-10）、《불의 발견》（1997-07）、理想 《시선》（1999-02）……。**本批同時收第一與第二筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=faabd0b8-88e2-4aa5-bd55-65a5b22f7f20&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 342993743，us 回 35 筆、jp 回 35 筆）**在 jp 店面把掛名顯示成片假名「プファル」、在 us 顯示成羅馬字「Boohwal」**——同一個 artistId 兩個店面兩種寫法，諺文「부활」在哪一邊都不出現。目錄裡另有一筆 1993-11-01 的「《기억상실》」（1449536082，8 軌）——**與本張同為 8 軌，是軌數擋不住的假陽性。**",
+    "src": "https://itunes.apple.com/lookup?id=342993743&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "唱這八首歌的是後來單飛的那位主唱——本批另一張卡就是他自己的第一張個人盤",
+   "海外店面把這張碟的日期記成 2004 年，逐軌長度卻和 1986 年的原盤一秒不差"
+  ],
+  "sound": "單片 8 軌、總長約 39 分。八軌落在 3:27 到 7:00 之間：最長的〈인형(人形)의 부활(復活)〉7:00 排在第 5 軌正中間，第 2 軌〈비와 당신의 이야기〉6:01 與開場〈희야〉5:33 是另外兩首長曲，三首都集中在前半。後半整個收短——〈슬픈 환상〉4:56、〈사랑 아닌 친구〉3:27、〈사랑의 흔적〉3:57。第 5 軌的曲名在原盤上諺文與漢字並列。這是這個團的第一張，主唱是 이승철、吉他與編曲是 《김태원》。發行方 Seoul Records，編號 srd-5-077；2003 年同廠牌另出 CD 再發（SRCD-3679）。",
+  "keyTracks": [
+   "희야",
+   "비와 당신의 이야기",
+   "인형(人形)의 부활(復活)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-10-03**、其下 KR 黑膠同為 1986-10-03。**⚠ Apple us 1731763080 的 releaseDate 是 2004-07-29、℗ 年份 2004**——但**它的八軌長度與 1986 年原盤逐位置相符（六軌 Δ0、兩軌 Δ1 秒）**，所以那組日期是再發上架的年份、不是錄音年份，**不可當第二票**。CD 再發另記 2003-02-26。**可用票只有建檔的兩處，都是 1986-10-03；韓文百科沒有本張的專輯條目。同名先行單曲：無。**",
+  "notes": "**⚠ 回撈成功：探測層判 unavailable、`apple-candidates.md` 記「目錄裡找不到」，實際找得到。** 藝人閘擋掉的原因是掛名——**us 店面作「Boohwal」、jp 店面作片假名「プファル」，諺文「부활」在兩邊都不出現**（裁定 194 的雙重形狀）。**盤名也對不上**：店面端用的是那筆 Pseudo-Release 的英文標題「Rock Will Never Die」。\\nkey `desc4:부활|부활 Vol.1`／店面 **us**／collectionId **1731763080**／**8 軌，8 軌全部有 previewUrl**，逐軌覆核通過。\\n**⚠ 本張缺封面（`caa.json` art 為 null）——可走 apple-verified-collection，collectionId 1731763080、店面 us。**\\n**⚠ 這一筆的 releaseDate 與 ℗ 都是 2004**，是本批「日期不可信但逐軌可信」最清楚的一例。**行文不得寫 2004。**\\n**⚠ 假陽性警告**：同一份目錄裡的「《기억상실》」（1449536082，1993-11-01，**同為 8 軌**）軌數擋不住，只能靠曲名分辨。\\n**序數「首張正規盤」查證屬實**：機械排序第一、百科藝人頁的敘事也把 1985 年成軍到第一張連起來。\\n可寫的人事線（百科具名）：前身樂團「《디 엔드》」、《김종서》 曾是主唱、成軍日 1985-07-03、主唱 이승철。**이승철 是本批 a 組的掛名、《김종서》 是本批 b 組《Down and Up》的主唱——三張卡連成一條線。**"
+ },
+ {
+  "key": "desc4:부활|Remember",
+  "artist": "부활",
+  "album": "Remember",
+  "facts": [
+   {
+    "f": "釘住的 release-group 5cf5e5ba 欄位：title「Remember」、artist-credit「부활」（藝人 MBID faabd0b8）、first-release-date **1987-11（只到月）**、primary-type Album、secondary-types **空**。轄下 2 筆 KR Official、都是 7 軌：**1987-11 的 12 吋黑膠標題是諺文「《회상》」**（Seoul Records，catno SPDR-096）、2003-02-26 的 CD 再發才改用英文標題「Remember」（SRCD-3680）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5cf5e5ba-d79b-48c3-9b41-2e6a36172fe7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "KR 原盤逐軌與長度（**只有 7 軌**）：1〈회상 I〉4:27、2〈회상 II〉**8:30**、3〈회상 III〉5:52、4〈2月 7日 (경음악)〉**1:14**、5〈천국에서〉**10:56**、6〈슬픈사슴〉4:24、7〈Jill's Theme (경음악)〉6:33。**前三軌是同一個標題的三個編號，第 5 軌將近十一分鐘、是全碟最長的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5cf5e5ba-d79b-48c3-9b41-2e6a36172fe7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1731763177：collectionName「Remember」、artistName「プファル」（片假名）、releaseDate **1987-11-01**、copyright「℗ 1987 Kakao Entertainment,under license to Kakao Entertainment」、trackCount 7。`entity=song` **攤得出 7 軌、7 軌全部有 previewUrl**，曲序逐位置相符，**四軌長度完全相同、其餘三軌各差 1 秒**。曲名把羅馬數字寫成全形（《회상》 Ⅰ／Ⅱ／Ⅲ），第 4 軌寫成〈2월(月) 7일(日)〉。",
+    "src": "https://itunes.apple.com/lookup?id=1731763177&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "韓文百科〈Remember (부활의 음반)〉條目：這是 부활 的第二張，1987 年由 YBM 《서울음반》 推出，商業上成功但因大麻事件而中斷活動；條目引 《김태원》 的自述「因為得到很多人氣、自滿之下更陷進大麻」，樂團也因此解散、이승철 轉為個人活動。**條目逐曲說明**：〈회상 III〉後來由獨立後的 이승철 以〈마지막 콘서트〉為題重唱；錄音時為了避開爆音，副歌最後那個詞「《슬픈》」的送氣音發成英語的 F。〈Jill's Theme〉是把 Sergio Leone 的電影《Once Upon A Time in the West》裡 Ennio Morricone 的曲子改成搖滾演奏。〈천국에서〉裡 《김태원》 局部用了 Mozart 安魂曲的 Lacrimosa 旋律。製作名單：企劃 《백강기》、錄音 《송형헌》、編曲與混音 《김태원》、主唱 이승철、主奏吉他與和聲 《김태원》、貝斯 《정준교》、鼓 《김성태》、鍵盤 《서영진》。",
+    "src": "https://ko.wikipedia.org/wiki/Remember_(%EB%B6%80%ED%99%9C%EC%9D%98_%EC%9D%8C%EB%B0%98)"
+   },
+   {
+    "f": "藝人頁分頁全列 faabd0b8 名下 19 個 release-group，其中 primary-type=Album 且 secondary-types 為空的 15 筆依 first-release-date 排序：부활 Vol.1（1986-10-03）、**Remember（1987-11）＝第二筆**、《기억상실》（1993）、《잡념에 관하여》...（1995-10）……。**第二張與第三張之間隔了六年**——與百科說的大麻事件與解散對得上。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=faabd0b8-88e2-4aa5-bd55-65a5b22f7f20&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 342993743，jp，entity=album，回 35 筆）本張列 1731763177「Remember」1987-11-01、7 軌。**同一份目錄裡本批的另一張卡《부활 Vol.1》列的是 1731763080「Rock Will Never Die」2004-07-29、8 軌**——兩張的 collectionId 只差最後三位（…3080 與 …3177），但軌數（8 對 7）與盤名都不同。",
+    "src": "https://itunes.apple.com/lookup?id=342993743&country=jp&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有七軌，前三軌是同一個標題的第一、第二、第三部，第五軌一首就十分五十六秒",
+   "錄音時為了避開爆音，副歌最後那個詞的送氣音被改成英語的 F 來發"
+  ],
+  "sound": "單片**只有 7 軌**、總長約 42 分——軌數少、單軌長。長度落在 1:14 到 10:56 之間，跨度是本批最大的一張：第 4 軌〈2月 7日〉1:14 是短演奏插曲，第 5 軌〈천국에서〉10:56 幾乎是它的九倍。前三軌是同一個標題的三部曲（〈회상 I〉4:27、〈회상 II〉8:30、〈회상 III〉5:52），連著佔掉將近 19 分鐘；第 4 軌那段一分多鐘的演奏把碟切開，後半〈천국에서〉10:56、〈슬픈사슴〉4:24、〈Jill's Theme〉6:33 收尾，其中頭尾兩首都是器樂或改編曲。1987 年的黑膠標題是諺文的〈회상〉，英文標題「Remember」要到 2003 年的 CD 再發才出現。陣容：主唱 이승철、吉他與編曲 《김태원》、貝斯 《정준교》、鼓 《김성태》、鍵盤 《서영진》。",
+  "keyTracks": [
+   "회상 III",
+   "천국에서",
+   "Jill's Theme (경음악)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。release-group first-release-date **1987-11**（只到月）、其下 12 吋黑膠同為 1987-11、Apple jp 1731763177 的 releaseDate 1987-11-01（1 日是月初佔位）且 ℗ 年份 1987、韓文百科專輯條目寫「1987 《년 YBM 서울음반에서 출시했다》」。**四處同為 1987 年 11 月。**CD 再發另記 2003-02-26，是同一張碟的再發。**同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過。** 店面 **jp**、collectionId **1731763177**、trackCount 欄與攤開的曲目列都是 7、7 軌全有 previewUrl，四軌 Δ0、三軌 Δ1 秒。\\n**這一筆不是日版**：artistId 342993743 在 us 與 jp 各回 35 筆、本張在兩邊同號，jp 店面只是把掛名顯示成片假名「プファル」。**依同條線的既有裁定（韓國線優先 us），可改記 us。**\\n**⚠ 本張缺封面（`caa.json` art 為 null）——可走 apple-verified-collection，collectionId 1731763177、店面 jp。**\\n**⚠ 盤名有兩套、分屬兩個年代**：1987 年黑膠題諺文「《회상》」、2003 年 CD 再發才題英文「Remember」。**卡單取「Remember」，別名一定要收「《회상》」，否則 1987 年那一版的任何紀錄都查不到。**\\n**⚠ 廠牌兩說**：建檔記 Seoul Records（catno SPDR-096），百科記 YBM 《서울음반》。**兩者是同一家的兩種寫法，行文擇一即可。**\\n**序數「編號第二」查證屬實**：百科條目寫「2 《집 앨범》」、機械排序第二，兩處一致。\\n可寫的細節（百科具名）：〈회상 III〉後來由 이승철 以另一個曲名重唱、錄音時把「《슬픈》」的送氣音發成 F、〈Jill's Theme〉改編自電影配樂、〈천국에서〉局部用了安魂曲的旋律、製作名單。**大麻事件與解散也有百科出處，可寫。**"
  }
 ]

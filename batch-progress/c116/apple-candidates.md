@@ -29,3 +29,47 @@
 - `1846922930` jp｜《9 Shocks Terror》1987｜9 軌｜依據：年份
 
 ## 鉄アレイ《鉄アレイ》1991 — **目錄裡找不到**
+
+## S.O.B.《Don't Be Swindle》1987 — **目錄裡找不到**
+
+## Various Artists《GREAT PUNK HITS》1983 — **目錄裡找不到**
+
+## Various Artists《Hardcore Unlawful Assembly》1984 — **目錄裡找不到**
+
+## Bastard《Wind of Pain》1992
+- `976234915` jp｜《Bastard》1993｜9 軌｜依據：年份
+
+## Disclose《Tragedy》1994 — **目錄裡找不到**
+
+## Crow《Last Chaos》1987 — **目錄裡找不到**
+
+## 非常階段《蔵六の奇病》1982 — **目錄裡找不到**
+
+## 非常階段《Modern》1989 — **目錄裡找不到**
+
+## Incapacitants《Eternal Paralysis》1981 — **目錄裡找不到**
+
+## Incapacitants《Quietus》1993 — **目錄裡找不到**
+
+## Masonna《Mademoiselle Anne sanglante ou notre nymphomanie auréolé》1993 — **目錄裡找不到**
+
+## Masonna《Ejaculation Generater》1996
+- `502715016` jp｜《Spectrum Ripper》1997｜25 軌｜依據：年份
+
+## C.C.C.C.《Cosmic Coincidence Control Center》1992
+- `1519786354` jp｜《Loud Sounds Dopa》1993｜2 軌｜依據：年份
+- `1519784520` jp｜《Phantasmagoria》1992｜1 軌｜依據：年份
+
+## Solmania《Vexation》1985 — **目錄裡找不到**
+
+## Solmania《Metamorphor Chorus》1991 — **目錄裡找不到**
+
+## K2《The Rust》1996
+- `1863469104` gb｜《K2 (Remastered)》1995｜11 軌｜依據：年份
+- `814076496` gb｜《Ajmo U Zivot》1995｜11 軌｜依據：年份
+- `814101884` gb｜《Malo Soula》1996｜10 軌｜依據：年份
+- `576977648` gb｜《Three Phenomena》1997｜3 軌｜依據：年份
+
+## Government Alpha《Alphaville》1999 — **目錄裡找不到**
+
+## MSBR《Ultimate Ambience》1992 — **目錄裡找不到**
