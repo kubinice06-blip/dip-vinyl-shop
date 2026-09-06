@@ -394,5 +394,141 @@
   "status": "full",
   "yearVerified": "一致，2001。release-group first-release-date **2001-09-11**、其下 FR 的 CD 與 12 吋皆 2001-09-11、另有 2001 年的 XE／RU／CA 版與 2002 年的 IT 版、條目 infobox 記 2001 年 9 月 11 日。**唯一不同步的是店面**：fr 1440863170 的 releaseDate 與 ℗ 都是 **2014**（Barclay 再發），**行文一律寫 2001**。**同名先行單曲：無**（單曲是〈Le vent nous portera〉與〈Lost〉；**第 6 軌與盤名同名**）。",
   "notes": "**配對覆核（版本差異，寫作層必讀）**：fr `1440863170` 的 12 軌與原盤逐位置相符，**但第 11 軌〈Bouquet de nerfs〉店面 4:15、實體盤 5:14**，來源端也註明串流平台上是短一分鐘的新版本。**行文不得拿店面的長度當實體盤的長度**（裁定 141）。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`L’Enfant roi`、`L’Appartement`、`À l’envers à l’endroit`），店面一律 ASCII（`L'enfant roi`）。卡池走 ASCII，`keyTracks` 已按 ASCII 寫。｜**大小寫與重音差異**：原盤作〈À l'envers à l'endroit〉、店面作〈A l'envers a l'endroit〉；原盤〈L'Enfant roi〉、店面〈L'enfant roi〉。**行文照原盤。**｜條目的獎項一筆（2002 Victoire de la musique 年度搖滾專輯）可用；銷售認證依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Johnny Hallyday|Vie",
+  "artist": "Johnny Hallyday",
+  "album": "Vie",
+  "facts": [
+   {
+    "f": "release-group 335eb1f0 的欄位：title「Vie」、artist-credit「Johnny Hallyday」（藝人 MBID 323ed974）、first-release-date **1970-11-06**、primary-type Album、secondary-types **空**。轄下只有 **3 筆 release、全部 11 軌**：1970-11-06 的 Philips 6397.018（FR，12 吋，Official）、1994 的 Philips 546 956-2（FR，CD，Official）、2022-01-28 的 Mercury Music Group 數位版（XW，Official）。**1970 到 1994 之間沒有任何再壓，是三筆裡跨度最大的一段空白。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/335eb1f0-9c0c-4144-b5e2-e1f9bae943ec?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1970-11-06 FR 原盤（Philips 6397.018，12 吋）的逐軌曲目與長度：1〈Essayez〉4:24、2〈Lire dans tes yeux〉3:11、3〈La Pollution〉5:00、4〈Rendez-moi le soleil〉3:04、5〈Dans ton univers〉4:07、6〈C'est écrit sur les murs〉3:40、7〈Poème sur la 7e〉2:25、8〈La Fille aux cheveux clairs〉3:11、9〈Le monde entier va sauter〉3:09、10〈Deux amis pour un amour〉3:33、11〈Jésus Christ〉3:10。**11 軌，最長〈La Pollution〉5:00、最短〈Poème sur la 7e〉2:25。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=335eb1f0-9c0c-4144-b5e2-e1f9bae943ec&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1605011803：collectionName「Vie」、releaseDate 1970-01-01、copyright「℗ 2022 Mercury Music Group」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1970 原盤**逐位置相符**，逐軌長度差在 12 秒內（其中〈Poème sur la 7ème〉店面 2:37、原盤 2:25 差最多）。**℗ 是 2022，對應的是那筆 2022-01-28 的數位再發，內容仍是 11 軌原盤。** 同一藝人目錄的 be 店面另有一筆 1624063845，同樣是「Vie」1970、11 軌。",
+    "src": "https://itunes.apple.com/lookup?id=1605011803&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張 1970 年 11 月 6 日發行，格式 33 tours，廠牌 Philips，製作（réalisé par）**Lee Hallyday**，錄音在巴黎的 **studios Polydor 2** 與 **Studio des Dames**，曲風記 rock／chanson française。單曲三筆，都是雙面曲：〈Jésus Christ〉/〈On me recherche〉1970 年 4 月 29 日、〈Deux amis pour un amour〉/〈Rendez-moi le soleil〉1970 年 9 月 18 日、〈Essayez〉/〈C'est écrit sur les murs〉1971 年 1 月 5 日。",
+    "src": "https://fr.wikipedia.org/wiki/Vie_(album)"
+   },
+   {
+    "f": "同一條目的 Histoire 節：這張是 Hallyday 與記者、作家、導演 **Philippe Labro** 在唱片上的第一次合作，Labro 寫的詞讓題材轉向當代議題——〈Essayez〉唱和平與友愛，〈C'est écrit sur les murs〉站在要求正義的那一代這邊，〈La Pollution〉講被人弄髒的土地，〈Poème sur la 7e〉想像核蘑菇雲之後的近未來，〈Le monde entier va sauter〉喊人類的自毀。作家 **Jacques Lanzmann**（Jacques Dutronc 的固定作詞人）也加入寫詞。條目另記〈Jésus Christ〉唱「如果耶穌今天還在，他會是個嬉皮」，引來教會與審查機構反對，該曲被禁播、多家唱片行把 45 轉單曲下架。〈Poème sur la 7e〉取材自貝多芬第七號交響曲。",
+    "src": "https://fr.wikipedia.org/wiki/Vie_(album)"
+   },
+   {
+    "f": "同一條目的 Musiciens 節：伴奏樂團是 **The New Blackburds**——吉他 Mick Jones 與 Jean-Pierre Azoulay、貝斯 Archibald Leggett、鼓 Tommy Brown、風琴 Jean-Marc Deuterre、小號 Guy Marco、長號 Jacques Ploquin 與 Pierre Goasquen、長笛與薩克斯風 René Maurizur；另有 **Jean-Claude Vannier 指揮的大樂團**，編曲 Raymond Donnez，錄音師 Paul Houdebine、Dominique Poncet、Guy Salmon。",
+    "src": "https://fr.wikipedia.org/wiki/Vie_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **442 個 release-group**（五頁分頁取完），其中 primary-type Album 且 secondary-types 為空的共 **63 張**。依 first-release-date 排序，**《Vie》1970-11-06 排第 23**（前一張是 1969 的《Johnny Hallyday》／Rivière... ouvre ton lit、後一張是 1971-06-19 的《Flagrant délit》）。**條目首句寫的是 13e album studio，與這份排序差十張，序數不可斷言。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=323ed974-8bf6-4f54-9525-b774a659f805&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "〈Jésus Christ〉唱耶穌今天會是個嬉皮，被禁播、唱片行把單曲下架",
+   "第七軌〈Poème sur la 7e〉把貝多芬第七號交響曲當底、上面唸詞"
+  ],
+  "sound": "1970-11-06 的 12 吋 11 軌，單軌 2:25 到 5:00。錄音在巴黎的 studios Polydor 2 與 Studio des Dames，製作 Lee Hallyday。伴奏是 The New Blackburds——雙吉他（Mick Jones、Jean-Pierre Azoulay）、貝斯、鼓、風琴，加上小號、兩把長號、長笛與薩克斯風的管樂組；另有 Jean-Claude Vannier 指揮的大樂團，編曲 Raymond Donnez。詞由 Philippe Labro 主寫、Jacques Lanzmann 加入，題材轉到污染、核戰、街頭標語與世代衝突。第七軌〈Poème sur la 7e〉直接架在貝多芬第七號交響曲上。再壓線很稀：1970 之後要到 1994 才有 CD、2022 才有數位版。",
+  "keyTracks": [
+   "Essayez",
+   "La Pollution",
+   "Jésus Christ"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1970。release-group first-release-date **1970-11-06**、其下最早的 release 是 1970-11-06 的 Philips 6397.018（FR／Official／12 吋 11 軌）、條目 infobox 記 1970 年 11 月 6 日。串流店面 fr 1605011803 的 releaseDate 1970-01-01（只有年份可信），**但 ℗ 是 2022 Mercury Music Group**，對應 2022-01-28 的數位再發，**行文一律寫 1970**。**同名先行單曲：無**（三筆單曲都不與專輯同名）。",
+  "notes": "**擋下策展層（序數，全批最嚴重的一位）**：Hallyday 的序數在兩處來源上完全對不起來——藝人目錄 442 個 release-group 裡符合「primary-type Album＋secondary-types 空」的有 **63 張**，本張排第 **23**；條目首句寫 **13e album studio**。**差十張，行文一律不得寫序數。** 卡單本張的 `curatorWhy` 沒寫序數，這條是給寫作層的預防。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`C’est écrit sur les murs`），店面用 ASCII（`C'est écrit sur les murs`）。`keyTracks` 三首都不含撇號、不受影響。｜曲名差異兩處：原盤〈Poème sur la 7e〉／店面〈Poème sur la 7ème〉；原盤〈Jésus Christ〉／店面〈Jésus-Christ〉（多一個連字號）。**行文照原盤。**｜店面另有 be 的 1624063845（同名、同年、11 軌），**fr 與 be 兩個 collectionId 指向同一張碟**，配對時取 fr 的 1605011803。"
+ },
+ {
+  "key": "desc2:Johnny Hallyday|Gang",
+  "artist": "Johnny Hallyday",
+  "album": "Gang",
+  "facts": [
+   {
+    "f": "release-group 74cef9c7 的欄位：title「Gang」、artist-credit「Johnny Hallyday」、first-release-date **1986-12-06**、primary-type Album、secondary-types **空**。轄下只有 **2 筆 release、全部 FR／Official**：1986-12-06 的 Philips 830 756-2（CD，**10 軌**）與 2011-04-28 的 Mercury Records 275 380-6（CD，**18 軌**）。**原盤 10 軌，2011 那筆多八軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/74cef9c7-e1cb-3569-bc74-7e5da940913e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1986-12-06 FR 原盤（Philips 830 756-2，CD）的逐軌曲目與長度：1〈L'Envie〉3:52、2〈Je t'attends〉3:59、3〈J'oublierai ton nom〉4:43、4〈Toute seule〉4:23、5〈Je te promets〉4:38、6〈Laura〉4:45、7〈Tu peux chercher〉4:56、8〈Dans mes nuits … on oublie〉3:46、9〈Ton fils〉3:48、10〈Encore〉3:30。**10 軌，全部落在 3:30 到 4:56 之間——沒有短過三分半、也沒有長過五分鐘的曲子。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=74cef9c7-e1cb-3569-bc74-7e5da940913e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 有 **兩個 collectionId 指向同一張碟**：1443183780（releaseDate 1986-12-06、℗ 2017 Mercury Music Group、10 軌）與 1444196151（releaseDate 1986-01-01、℗ 1986 Mercury Music Group、10 軌）。兩筆的 `entity=song` **各攤得出 10 軌、10 軌全部有 previewUrl**，曲名與曲序都與原盤逐位置相符，逐軌長度互差 1–3 秒（1443183780 略長）。**兩筆都把第 3 軌記成〈J'oublierai ton nom (feat. Carmel)〉，原盤沒有這個掛名。** be 店面另有第三筆 1443831679（同名、1986、10 軌）。",
+    "src": "https://itunes.apple.com/lookup?id=1443183780&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張 1986 年 12 月 6 日發行，格式含 33 tours、CD 與卡帶，總長記 42 分 18 秒，曲風記 chanson française／pop rock／ballade，廠牌 Philips-Phonogram-Laura Hallyday Productions。**全碟由 Jean‑Jacques Goldman 作詞作曲並擔任製作**，錄音期 1986 年 9 月至 12 月，地點是巴黎的 **Gang Recording Studio**（製作人 Claude Puterflam 的錄音室）——**盤名就是取自這間錄音室的名字**。單曲四首：〈Je t'attends〉1986 年 11 月、〈J'oublierai ton nom〉（與 Carmel 對唱）1987 年 1 月、〈Je te promets〉1987 年 6 月、〈Laura〉1987 年 10 月 8 日。",
+    "src": "https://fr.wikipedia.org/wiki/Gang_(album)"
+   },
+   {
+    "f": "同一條目的 Histoire 節：1985 年 Michel Berger 寫的《Rock'n'Roll Attitude》讓 Hallyday 的事業重新起來之後，他找上 Jean-Jacques Goldman。條目引 Goldman 1992 年對傳記作者說的話：一開始他只想做半張、只做一面；原本說好另一面由 Elton John 做，但因不明原因沒能成局。Goldman 先交七首讓對方挑五首，對方回覆七首全要、還請他再寫兩首補成整張——**最後錄了十首，全部掛 Goldman 一人署名**。條目另記〈L'Envie〉1988 年以 Bercy 現場版當單曲發行，收在現場專輯《Johnny à Bercy》。",
+    "src": "https://fr.wikipedia.org/wiki/Gang_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 442 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 63 張。**《Gang》1986-12-06 在這份排序裡排第 46**（前一張是 1985-06-26 的《Rock'n'Roll Attitude》、後一張是 1989-06-15 的《Cadillac》）；**條目首句寫的是 35e album studio，兩邊差十一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=323ed974-8bf6-4f54-9525-b774a659f805&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "Goldman 本來只想做半張，另一面說好給 Elton John，最後十首全是他一個人寫的",
+   "盤名直接取自錄這張的那間錄音室 Gang Recording Studio"
+  ],
+  "sound": "1986-12-06 的 CD 10 軌，總長 42 分 18 秒，十首全部落在 3:30 到 4:56，沒有一首短過三分半。全碟由 Jean-Jacques Goldman 一人作詞作曲並製作，1986 年 9 到 12 月錄在巴黎的 Gang Recording Studio——盤名就是這間錄音室的名字。第 3 軌〈J'oublierai ton nom〉是與 Carmel 的對唱。條目把曲風記成 chanson française、pop rock 與 ballade。原盤之後只有 2011 年 Mercury 一筆 18 軌的再發。",
+  "keyTracks": [
+   "L'Envie",
+   "Je t'attends",
+   "Laura"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1986。release-group first-release-date **1986-12-06**、其下唯一的原盤 release 是 1986-12-06 的 Philips 830 756-2（FR／Official／CD 10 軌）、條目 infobox 記 1986 年 12 月 6 日。串流店面兩筆的 releaseDate 分別是 1986-12-06 與 1986-01-01，℗ 一筆記 1986、一筆記 2017（再發）。**四處年份都是 1986。** **同名先行單曲：無**（單曲是〈Je t'attends〉等四首）。",
+  "notes": "**擋下策展層（序數）**：藝人目錄把本張排第 **46**、條目寫 **35e album studio**，差十一張。**行文不得寫序數。**｜**同一張碟在 fr 店面有兩個 collectionId**（1443183780 與 1444196151，都是 10 軌、逐軌相符，只差 ℗ 年份與 1–3 秒的長度），be 另有 1443831679。**配對必須指名，不能靠字串比對。** 建議取 1443183780（releaseDate 帶完整日期 1986-12-06）。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`L’Envie`、`Je t’attends`、`J’oublierai ton nom`），店面一律 ASCII。**`keyTracks` 已按 ASCII 寫。**｜曲名差異：原盤第 8 軌作〈Dans mes nuits … on oublie〉（U+2026 刪節號、前後有空格），店面作〈Dans mes nuits... on oublie〉。**行文寫成 ASCII 的三點。**｜第 3 軌的 `(feat. Carmel)` 是店面加的掛名，原盤曲名沒有；條目確認確實是與 Carmel 的對唱，**行文可以說對唱，但引曲名時不要帶 feat.**。"
+ },
+ {
+  "key": "desc2:Johnny Hallyday|Sang pour sang",
+  "artist": "Johnny Hallyday",
+  "album": "Sang pour sang",
+  "facts": [
+   {
+    "f": "release-group 1d9b4e9b 的欄位：title「Sang pour sang」、artist-credit「Johnny Hallyday」、first-release-date **1999-09-13**、primary-type Album、secondary-types **空**。轄下 4 筆 release **全部 FR、全部 Official、全部 13 軌**：1999-09 的 Mercury Records 546625-1（黑膠）、1999-09-13 的 Mercury Records 546625-2（CD）、2004 的 Mercury Records（CD）、2005-08-22 的 Mercury Records（CD）。**四筆都是 13 軌，沒有加曲版本。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/1d9b4e9b-99a5-32e4-869c-18a10969ec2c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1999-09 FR 黑膠（Mercury Records 546625-1）的逐軌曲目與長度：1〈Sang pour sang〉4:13、2〈Le Poids de mes maux〉4:54、3〈Quelques cris〉5:26、4〈Un jour viendra〉4:02、5〈Notre histoire〉3:59、6〈Les Larmes de gloire〉3:34、7〈Si tu m'aimais〉5:22、8〈Remise de peine〉4:23、9〈Partie de cartes〉4:17、10〈Pardon〉3:57、11〈Ex〉4:49、12〈Je t'aime comme je respire〉4:53、13〈Vivre pour le meilleur〉4:32。**13 軌，第 1 軌與盤名同名；最短的〈Les Larmes de gloire〉3:34、最長的〈Quelques cris〉5:26。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1d9b4e9b-99a5-32e4-869c-18a10969ec2c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1440921029：collectionName「Sang pour sang」、releaseDate **1999-09-13**、copyright「℗ 1999 Mercury Music Group」、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、**逐軌長度與原盤相同到秒**（253／294／326／242／239／214／322／263／257／237／289／293／272 秒）。差別只在大小寫（店面把〈Le Poids de mes maux〉寫成〈Le poids de mes maux〉之類）。**同一藝人目錄下另有 collectionId 1740991247「Sang pour sang - Single」（2024-04-24，1 軌），盤名比對會撞。**",
+    "src": "https://itunes.apple.com/lookup?id=1440921029&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張 1999 年 9 月 13 日發行，格式 CD／卡帶／LP，總長記 58 分 06 秒，曲風欄列 pop／pop rock／rock／ballade，廠牌 Philips-Mercury-Universal。**全碟由 David Hallyday 作曲**，他同時與 Pierre Jaconelli 共同擔任製作；錄音在 1999 年，地點是巴黎的 studios Plus XXX 與 Mega。單曲六首：〈Vivre pour le meilleur〉1999 年 5 月 26 日、〈Un jour viendra〉1999 年 8 月 24 日、〈Sang pour sang〉1999 年 11 月 16 日、〈Partie de cartes〉2000 年 2 月 21 日、〈Pardon〉2000 年 6 月 6 日、〈Quelques cris〉2000 年 10 月 2 日。",
+    "src": "https://fr.wikipedia.org/wiki/Sang_pour_sang_(album)"
+   },
+   {
+    "f": "同一條目的 Histoire 與 Musiciens 兩節：整個企劃的起點是 **Françoise Sagan** 幾年前為 Hallyday 寫的詞〈Quelques cris〉——找過幾位作曲人都不滿意，最後交給兒子 David 譜曲，成為父子合作的開端。藝術總監 Caroline Molko 再去找不同背景的作詞人補齊全碟，包括 **Miossec、Vincent Ravalec、Pierre Grillet、Zazie**；Lionel Florence 寫〈Vivre pour le meilleur〉，Eric Chemouny 寫同名曲〈Sang pour sang〉（題材是父子重逢），Philippe Labro 寫〈Pardon〉，Michel Mallory 睽違十七年回來寫兩首。樂手：吉他 Pierre Jaconelli 與 Robin Le Mesurier、貝斯 Mishko、鼓 **Abraham Laboriel Junior**、鍵盤與程式 Christophe Voisin、鋼琴 Alain Lanty、打擊 Denis Benarrosch，和聲含 Carole Fredericks、David Hallyday 與 Zazie。",
+    "src": "https://fr.wikipedia.org/wiki/Sang_pour_sang_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 442 個 release-group，其中 primary-type Album 且 secondary-types 為空的共 63 張。**《Sang pour sang》1999-09-13 在這份排序裡排第 53**（前一張是 1998-01-24 的《Ce que je sais》、後一張是 2002-11-04 的《À la vie, à la mort !》）；**條目首句寫的是 42e album studio，兩邊差十一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=323ed974-8bf6-4f54-9525-b774a659f805&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "起點是 Françoise Sagan 寫的一首詞，找不到滿意的曲，最後交給兒子譜",
+   "十三首的曲全由 David Hallyday 一個人寫，詞則發包給六七位作詞人"
+  ],
+  "sound": "1999-09-13 的 CD 與同月的黑膠同為 13 軌，總長 58 分 06 秒，單軌 3:34 到 5:26。曲全由 David Hallyday 一人作，製作由他與 Pierre Jaconelli 共同掛名，1999 年錄在巴黎的 studios Plus XXX 與 Mega。詞的來源很雜：Françoise Sagan 的〈Quelques cris〉是整個企劃的起點，另有 Miossec、Vincent Ravalec、Zazie、Lionel Florence、Philippe Labro、Michel Mallory 各寫一到兩首。樂手線是 Pierre Jaconelli 與 Robin Le Mesurier 的吉他、Mishko 的貝斯、Abraham Laboriel Junior 的鼓、Alain Lanty 的鋼琴。第 1 軌與盤名同名。",
+  "keyTracks": [
+   "Sang pour sang",
+   "Vivre pour le meilleur",
+   "Quelques cris"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1999。release-group first-release-date **1999-09-13**、其下四筆 FR／Official release（1999-09 黑膠、1999-09-13 CD，加 2004 與 2005 兩次再壓）、串流店面 fr 1440921029 的 releaseDate **1999-09-13** 與 ℗ 1999 完全相符、條目 infobox 記 1999 年 9 月 13 日。**四處同年同日，是本批對得最齊的一張。** **同名對照組有兩型**：同名單曲〈Sang pour sang〉1999-11-16（在專輯之後），與 2024-04-24 的〈Sang pour sang - Single〉（店面 1740991247，1 軌）。**第 1 軌也與盤名同名。**",
+  "notes": "**擋下策展層（序數）**：藝人目錄把本張排第 **53**、條目寫 **42e album studio**，差十一張。卡單 `curatorWhy` 只寫「本批 Hallyday 三張裡最晚的一個節點」，那是批內描述、不是目錄序數，**可用**；但**行文不得寫這張是他的第幾張**。｜**撇號兩種寫法**：來源端曲名用 ASCII 直撇（`Si tu m'aimais`、`Je t'aime comme je respire`），店面同樣 ASCII，**本張兩邊一致**。｜大小寫差異：原盤〈Le Poids de mes maux〉〈Les Larmes de gloire〉〈Partie de cartes〉首字母大寫，店面全小寫。**行文照原盤。**｜配對風險：2024 年的同名單曲 1740991247 會撞盤名，本張必須指名 1440921029。"
  }
 ]
