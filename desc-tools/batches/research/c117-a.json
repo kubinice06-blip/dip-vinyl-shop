@@ -573,7 +573,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，1969。release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆就是 1969／GB／Official 的 RCA Victor SF 8059，另一筆是 2012 年的 CD，沒有以再發日期建檔的問題；條目明寫「1969 年，他的第一張專輯《Stimulus》……由 RCA Victor 發行」；串流店面 gb 580801086 的 releaseDate 與 ℗ 欄同為 1969。**三處一致。同名先行單曲：無。**",
-  "notes": "**串流版多五首現場版**（第 8–12 軌全部標「(Live)」），**行文只能引原盤 7 軌，不得拿現場版當本張曲目**（裁定 141）。｜曲名字面差異一處：原盤用彎撇的〈I Know You Can’t Lose〉，**本檔與行文一律用 ASCII 直撇〈I Know You Can't Lose〉**。｜條目提到的 Sounds 雜誌票選名次**不得寫入**（媒體票選）。｜條目關於《Fable of the Wings》封面照片與 Magic Muscle 的段落**與本張無關**，不要挪用；策展層另一批曾把《Fable of the Wings》的 RG 判為年份不可信而未收，本張與那件事無關。"
+  "notes": "**串流版多五首現場版**（第 8–12 軌全部標「(Live)」），**行文只能引原盤 7 軌，不得拿現場版當本張曲目**（裁定 141）。｜曲名字面差異一處：原盤那一軌的撇號是彎撇（U+2019），**本檔與行文一律改成 ASCII 直撇〈I Know You Can't Lose〉**。｜條目提到的 Sounds 雜誌票選名次**不得寫入**（媒體票選）。｜條目關於《Fable of the Wings》封面照片與 Magic Muscle 的段落**與本張無關**，不要挪用；策展層另一批曾把《Fable of the Wings》的 RG 判為年份不可信而未收，本張與那件事無關。"
  },
  {
   "key": "desc2:Tír na nÓg|A Tear and a Smile",
@@ -873,7 +873,7 @@
   ],
   "status": "full",
   "yearVerified": "⚠ **兩處分歧，取 1969。** release-group first-release-date **1969**、**依裁定 220 回問轄下 release**，最早的一筆是 1969／US、status **Promotion**（Warner Bros.‐Seven Arts WS 1783），其後才是 1978／GB 與 1979／IT 的兩筆 Official；專輯條目開宗明義寫「1969 年的專輯」，串流店面 gb 1439693983 的 releaseDate 也記 1969。**⚠ 樂團條目的作品表寫「1968 — Children of the Sun (Transatlantic Records TRA 176)」，年份與編號都對不上**——TRA 176 在轄下是 **1978** 那筆 GB release 的編號，該條作品表不可信。依裁定 127 取有三處佐證的 1969。**年份仍取原盤發行年 1969，不取 1978**（策展層第五條操作判斷）。**同名先行單曲：無**（同名曲是本張第 3 軌）。",
-  "notes": "⚠ **策展層第五條操作判斷要接手**：轄下最早那筆 release 的 status 是 **Promotion**，依裁定 43／57／65／78 **不得拿它當背書**；正規盤看 1978／GB 與 1979／IT 兩筆 Official。**但年份仍取 1969。**｜⚠ **串流條目是 2002 年的加曲兩片裝（22 軌），不是 14 軌原盤**：後 9 軌全部不是原盤內容，**行文只能引原盤 14 軌**（裁定 141）。｜**盤名後綴要截斷**（策展層第九條操作判斷）：店面盤名帶「(feat. Mike Oldfield & Sally Oldfield) [Definitive Edition]」、每一軌也都帶 feat. 後綴，**截去後才比對，不可判為別碟；行文不得寫出後綴**。｜⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「Mike Oldfield 十五歲、姊姊 Sally Oldfield 十九歲時錄的」。**兩個年齡本次查證都沒有取得來源，行文不得寫年齡。**｜曲名差異一處：原壓作〈The Murder of the Children of San Francisco〉，專輯條目的原始曲目表作〈Murder of the Children of San Francisco〉（無 The），**行文照原壓寫法**。"
+  "notes": "⚠ **策展層第五條操作判斷要接手**：轄下最早那筆 release 的 status 是 **Promotion**，依裁定 43／57／65／78 **不得拿它當背書**；正規盤看 1978／GB 與 1979／IT 兩筆 Official。**但年份仍取 1969。**｜⚠ **可補的試聽來源（探測層判 unavailable，本層覆核後認為可用）**：串流條目 **key `desc2:The Sallyangie|Children of the Sun`／店面 `gb`／collectionId `1439693983`／22 軌**（22 軌全有 previewUrl）。探測層在八個店面都命中 1 筆卻判 0，應是被 22 軌對 14 軌的軌數差與「(feat. …) [Definitive Edition]」後綴擋掉；**依裁定 175／141 與策展層第九條操作判斷，截去後綴後第 1 片第 1–13 軌與原壓逐位置相符，這與本批 Keith Christmas、Dando Shaft、Wizz Jones、Principal Edwards 四張「原盤＋追加曲的再發版」是同一形狀，可用**。（依派工信，本檔只記錄，不改 `previews.json`。）**但它是 2002 年的加曲兩片裝：後 9 軌不是原盤內容，行文只能引原盤 14 軌**（裁定 141）。｜**盤名後綴要截斷**（策展層第九條操作判斷）：店面盤名帶「(feat. Mike Oldfield & Sally Oldfield) [Definitive Edition]」、每一軌也都帶 feat. 後綴，**截去後才比對，不可判為別碟；行文不得寫出後綴**。｜⚠ **擋下策展層一處**：卡單 `curatorWhy` 寫「Mike Oldfield 十五歲、姊姊 Sally Oldfield 十九歲時錄的」。**兩個年齡本次查證都沒有取得來源，行文不得寫年齡。**｜曲名差異一處：原壓作〈The Murder of the Children of San Francisco〉，專輯條目的原始曲目表作〈Murder of the Children of San Francisco〉（無 The），**行文照原壓寫法**。"
  },
  {
   "key": "desc2:Principal Edwards Magic Theatre|Soundtrack",
