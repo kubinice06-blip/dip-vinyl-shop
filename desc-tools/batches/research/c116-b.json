@@ -319,5 +319,317 @@
   "status": "partial",
   "yearVerified": "一致，1992，**但只有 MB 一個來源**。MB release-group first-release-date **1992**（只到年、無月日），其下 JP 首版（Endorphine Factory EDP CD-01）亦記 1992；2021 年 Urashima 的三筆是後世復刻。**這支團在英文維基只有一個消歧義頁（`en.wikipedia.org/wiki/C.C.C.C.` 導向「CCCC or C.C.C.C may refer to:」）、日文維基無條目、Apple 兩店查無本張**，因此**沒有第二來源**。⚠ **同年同藝人另有一筆《Phantasmagoria》(1992, EDP-002, 卡帶, Live)**，Apple 上那筆 1519784520 就是它，**別把兩張混為一談**。行文寫 1992、不要寫月份。同名先行單曲：無。",
   "notes": "**擋下策展層一處**：`curatorWhy` 寫這支團「是三者（與 Incapacitants、Masonna 相比）中唯一自己開廠牌發自己碟的」——**「唯一」不成立**：Alchemy Records 就是 非常階段 的 JOJO広重 自己開的（日文維基），Aube 的 G.R.O.S.S.、MSBR 的 MSBR Records、K2 的 Kinky Musik Institute、Crow 的 Crow Records 也都是同一種形態。**行文不得寫「唯一」。**\\n**「第一張錄音室專輯」要改措辭**：MB 藝人頁上排在本張前面的《Reflexive Universe》(1991) 帶 **Live** 標記、同年的《Phantasmagoria》(1992) 也帶 Live 標記，所以本張是**名下第一筆非現場作品**——**這個說法有 MB 欄位可查，比「第一張錄音室專輯」精確**。\\n**Apple 覆核**：本團在 Apple 上的藝人條目**要繞路才撈得到**（直接查 `C.C.C.C.` 兩店回 0 筆，是從 `MSBR` 的同名清單裡撈到 artistId **274010683**）。其目錄 8 筆裡**沒有本張**；`apple-candidates.md` 的兩個候選（1519786354《Loud Sounds Dopa》、1519784520《Phantasmagoria》）**都是別張碟**，已逐筆比對、不採信。\\n**跨卡連結（都有來源）**：**長谷川洋** 是 C.C.C.C. 成員、1993 年另起個人計畫 **ASTRO**（英文維基）；**小堺文雄** 是 C.C.C.C. 成員、後加入 **Incapacitants** 與 非常階段（英文維基）。**本批 b 組同時收了 ASTRO、Incapacitants 三張與 非常階段 兩張**，這四位是同一群人。\\n**素材中等**：有三軌的精確長度、有廠牌編號序列、有可查的人脈，但**無專屬條目、無 Apple、無製作資料**，status 填 partial。"
+ },
+ {
+  "key": "desc2:C.C.C.C.|Amplified Crystal",
+  "artist": "C.C.C.C.",
+  "album": "Amplified Crystal",
+  "facts": [
+   {
+    "f": "release-group 317687e7 的欄位：title「Amplified Crystal」、artist-credit「C.C.C.C.」（藝人實體 55394e92，Group／Japan／begin 1989）、first-release-date **1993**（只到年）、primary-type Album、secondary-types 空。轄下 2 個 release，都 Official、都 **2 軌**：**JP 1993 的 12 吋黑膠（Endorphine Factory，catno EDP-004）**、US 2023-11-16 的 CD（**Helicopter，HEL 81004；Troniks，TRO-346** 雙編號）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/317687e7-1042-4cda-a682-73ba2bca3b52?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2023 年 Helicopter／Troniks CD（0b768227）的逐軌曲目與長度：**1〈Amplified Crystal, Part I〉21:47、2〈Amplified Crystal, Part II〉23:48**。**兩軌、一面一段、總長約四十六分鐘，兩段只差兩分鐘；整張碟就是同一個標題切成兩半。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=317687e7-1042-4cda-a682-73ba2bca3b52&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp 與 us 兩店共用** collectionId 1725723264：collectionName「Amplified Crystal」、artistName「C.C.C.C.」、releaseDate **2024-02-20**、**℗ 2024 Helicopter**、trackCount 2。`entity=song` **攤得出 2 軌、2 軌全部有 previewUrl**：〈Amplified Crystal Part I〉21:47、〈Amplified Crystal Part II〉23:48，**逐軌長度與 MB 相同到秒**、曲名只差 Part 前的逗號。**這是 2023–24 年 Helicopter／Troniks 那套復刻的數位版，不是 1993 年黑膠原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1725723264&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 C.C.C.C. 名下 26 個 release-group、Album 22 筆。1992–1994 依序為《Cosmic Coincidence Control Center》1992（EDP CD-01）、《Phantasmagoria》1992（EDP-002，卡帶，Live）、**《Amplified Crystal》1993（EDP-004）**、《Loud Sounds Dopa / Live in U.S.A.》1993（Live）、**《Amplified Crystal II》1993**、《Community Center Cyber Crash / Live in Pittsburgh》1994（Live）、《Gnosis》1994。⚠ **同年名下另有一張《Amplified Crystal II》(9afdd1b0)，是不同的 release-group**，數目錄或搜尋時務必分開。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=55394e92-a45c-452e-9ed8-09ce2f68a1fe&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Astro (Japanese band)〉記 Astro 是 C.C.C.C. 的 長谷川洋（Hiroshi Hasegawa）1993 年起的個人計畫、使用老式 Moog 與 EMS 合成器等類比器材；英文維基〈Incapacitants〉記 C.C.C.C. 的 小堺文雄（Fumio Kosakai）加入 Incapacitants 成為二人組、後亦加入 Hijokaidan。**本張的 1993 年正是 長谷川洋 另起 ASTRO 的同一年**（本批 b 組收 ASTRO《Bio-Galaxy》2000）。",
+    "src": "https://en.wikipedia.org/wiki/Astro%20(Japanese%20band)"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有兩軌，Part I 二十一分四十七秒、Part II 二十三分四十八秒——一面一段",
+   "同一年名下還有一張《Amplified Crystal II》，是另外一張碟"
+  ],
+  "sound": "MB 記兩筆 release、**都是 2 軌、同曲同序**；Apple 那筆的逐軌長度與 MB 相同到秒。兩軌是〈Amplified Crystal, Part I〉**21:47** 與〈Amplified Crystal, Part II〉**23:48**，**總長約四十六分鐘、兩段只差兩分零一秒**——整張碟就是同一個標題切成前後兩半，正好對應 12 吋黑膠的兩面。載體與廠牌上，1993 年原盤是樂團自營 Endorphine Factory 的 **EDP-004**（同廠 EDP CD-01 是前一年的《Cosmic Coincidence Control Center》、EDP-002 是同樣 1992 年的《Phantasmagoria》卡帶）；三十年後由美國的 Helicopter 與 Troniks 聯名重發 CD 並上到串流。",
+  "keyTracks": [
+   "Amplified Crystal, Part I",
+   "Amplified Crystal, Part II"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1993，**但只有 MB 一個來源**。MB release-group first-release-date **1993**（只到年、無月日），其下 JP 首版（Endorphine Factory EDP-004）亦記 1993。⚠ **Apple 1725723264 的 releaseDate 是 2024-02-20、℗ 2024 Helicopter**——那是復刻年，**不可取**；MB 那筆 US CD 記 2023-11-16，同樣是復刻。**這支團在英文維基只有消歧義頁、日文維基無條目**，沒有第二來源。同名先行單曲：無，**但同年有一張《Amplified Crystal II》(MB rgMbid 9afdd1b0) 是另一個 release-group**，行文提到本張時不要讓讀者以為是同一張的第二部。",
+  "notes": "**Apple 覆核（探測層標 ready）**：`jp`（us 亦同）**1725723264**，**2 軌全部有 previewUrl**，`trackCount` 欄與曲目列都是 2，逐軌長度與 MB 相同到秒、**無裁定 175 的落差**。⚠ 但它是 **2023–24 年 Helicopter／Troniks 復刻的數位版**（℗ 2024 Helicopter），**不是 1993 年黑膠原盤**。`curatorWhy` 說「2024 年上到 Apple、是這支團少數在串流上買得到的碟」——**屬實**：藝人 274010683 目錄 8 筆裡，能對應到 MB 條目的只有本張、《Flash》《Loud Sounds Dopa》《Phantasmagoria》《Community Center Cyber Crash》《Chaos Is The Cosmos》。\\n**⚠ 最容易出錯的一點：同年還有《Amplified Crystal II》。** MB 上 9afdd1b0 是獨立的 release-group、同樣 1993 年。**行文寫本張時必須讓讀者知道指的是哪一張**（用「1993 年 Endorphine Factory 的 EDP-004」或「Part I／Part II 兩軌」指認），**不要只寫盤名**。\\n**編號序列可寫**：EDP CD-01（1992，同批另一張卡）→ EDP-002（1992《Phantasmagoria》卡帶）→ **EDP-004（本張）**，都在 MB label-info 上查得到。\\n**跨卡連結**：本張的 1993 年正是 長谷川洋 另起 **ASTRO** 的同一年（英文維基），本批 b 組收 ASTRO《Bio-Galaxy》(2000)；小堺文雄 則接到 **Incapacitants** 與 非常階段。\\n**素材中等**：兩軌長度精確、Apple 可比對、編號序列清楚，但**無專屬條目、無製作資料**，status 填 partial。"
+ },
+ {
+  "key": "desc2:Solmania|Vexation",
+  "artist": "Solmania",
+  "album": "Vexation",
+  "facts": [
+   {
+    "f": "release-group 92c2e294 的欄位：title「Vexation」、artist-credit「Solmania」（藝人實體 b785af88，**Group**／Japan、disambiguation「Japanese noise project」、life-span begin **1984**、別名「ソルマニア」）、first-release-date **1985-03**、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：**JP 1985-03 的卡帶（Fatagaga Tapes，catno FTC-3，8 軌）**，Official。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/92c2e294-a68c-409d-a99e-5688b55fe9d9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的卡帶（979e7166）：**8 軌，八軌全部題作 [untitled]，MB 未填任何長度**。這是本批素材最稀薄的一筆——沒有曲名、沒有長度、沒有再發。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92c2e294-a68c-409d-a99e-5688b55fe9d9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Solmania 名下 22 個 release-group、Album 20 筆。**開頭六筆全部出在 Fatagaga Tapes、全部是卡帶，且編號連號**：《Gakinoizz》1984-10（FTC-1）、《H·A·D·A·Y·R·O》1985-01（FTC-2）、**《Vexation》1985-03（FTC-3）**、《H.C.P. Resolvent》1985-07（FTC-4）、《Wörkenemy》1985-09（FTC-5，7 軌）、《Re-Rurr》1985-12（FTC-6）。**十五個月內連出六捲、編號一號到六號無缺；本張是第三捲。** 其後《Energetic Enema》1986、《Highdrophobia》1986-10、《Erosion》1987-08（Live），要到 1991 年才有 Alchemy 的《Metamorphor Chorus》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b785af88-5524-4102-8c08-c280f84c866e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Solmania〉：**Solmania 是 1984 年由 大野雅彦（Masahiko Ohno）創立的日本 noise 計畫**；菅原克己（Katsumi Sugahara，ex Outo）後來加入、首次出現在 1995 年的《Trembling Tongues》。**大野 以用零件自製實驗電吉他著稱**，在現場與錄音裡使用；這些吉他形狀極其古怪，用非常規的琴身、多出來的琴頸、裝在奇怪位置的弦與拾音器，還加上麥克風等各種外掛裝置，多半是多琴頸吉他與 harp guitar，**至 2026 年為止他做了九把**。**大野 同時是平面設計師，Alchemy Records 與 Hören 幾乎所有作品的設計都出自他手。** 條目的 Discography 欄依序列 Gakinoizz (1984)、H·A·D·A·Y·R·O (1985)、**Vexation (1985)**、H.C.P. Resolvent (1985)、Wörkenemy (1985)、Re-Rurr (1985)。",
+    "src": "https://en.wikipedia.org/wiki/Solmania"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 b785af88 的 type **Group**、area **Japan**、disambiguation「Japanese noise project」、begin 1984、別名「ソルマニア」；**artist-rels 明列兩位成員：大野雅彦 與 Katsumi Sugahara**。Apple Music 兩店只回到 artistId **251641278「Ohno Masahiko aka Solmania」**（**Apple 把本名與藝名併寫成一個掛名**），其目錄只有 1 筆 251641269「Nimrod」1997-01-20（11 軌），**本張不在其中**；`search?term=Solmania Vexation&country=us` 回 0 筆。**兩個端點都跑過（裁定 173）。**",
+    "src": "https://musicbrainz.org/ws/2/artist/b785af88-5524-4102-8c08-c280f84c866e?fmt=json&inc=aliases+artist-rels"
+   }
+  ],
+  "hookCandidates": [
+   "一捲卡帶八軌，八軌全部沒有標題；一九八四年十月到一九八五年十二月，同一家自營卡帶廠連出六捲，編號一號到六號",
+   "這位作者用零件自製吉他——多出來的琴頸、裝在奇怪位置的拾音器，到目前為止做了九把"
+  ],
+  "sound": "MB 只記一筆 release：1985 年 3 月 Fatagaga Tapes 的**卡帶**（FTC-3），**8 軌、八軌全部題作 [untitled]、MB 未填任何長度**，也沒有再發版可對照。**因此這張碟本身沒有可談的時間結構或曲序。** 能談的是它在目錄裡的位置與器材：同一家自營卡帶廠在 1984 年 10 月到 1985 年 12 月之間連出六捲（FTC-1 至 FTC-6），本張是第三捲；英文維基記這位作者以**用零件自製實驗電吉他**著稱，那些吉他用非常規琴身、多出來的琴頸、裝在奇怪位置的弦與拾音器，還加上麥克風等外掛，多為多琴頸吉他與 harp guitar，至 2026 年為止共做了九把。他同時是平面設計師，Alchemy Records 與 Hören 幾乎所有作品的設計都出自他手。",
+  "keyTracks": [],
+  "status": "thin",
+  "yearVerified": "一致，1985。MB release-group first-release-date **1985-03**（給到月），其下唯一的 Fatagaga Tapes 卡帶同為 1985-03；**英文維基〈Solmania〉的 Discography 欄也把 Vexation 記在 1985**。兩處同為 1985，月份只有 MB 一處給到 3 月。MB 上沒有任何再發，所以沒有復刻年要分。⚠ **同一年名下還有 H·A·D·A·Y·R·O（1985-01）、H.C.P. Resolvent（1985-07）、Wörkenemy（1985-09）、Re-Rurr（1985-12）四筆**，光靠年份無法指認是哪一張，**行文要用編號 FTC-3 或月份來綁定**。同名先行單曲：無。",
+  "notes": "⚠ **擋下策展層一處人名錯誤。** `curatorWhy` 寫「Solmania（**都元 恒雄**）」——**沒有這個人**。**英文維基〈Solmania〉明寫本計畫 1984 年由 大野雅彦（Masahiko Ohno）創立**；**MB 藝人端點的 artist-rels 也只列 大野雅彦 與 Katsumi Sugahara 兩位**；**Apple 上這一位的掛名直接寫作「Ohno Masahiko aka Solmania」**。三處一致。**行文不得出現「都元恒雄」。**\\n**「一年之內在自營的 Fatagaga Tapes 出了六捲」基本屬實、但要修正時距**：MB 上六捲的日期是 1984-10、1985-01、1985-03、1985-07、1985-09、1985-12，**橫跨十五個月而不是一年**；六捲全部是卡帶、編號 FTC-1 至 FTC-6 連號。**行文寫「十五個月內六捲」或「1984 年底到 1985 年底」比較準。**\\n**「Fatagaga Tapes 是自營」這一點沒有直接來源**：MB 只給廠牌名與編號，英文維基沒提這家廠牌的歸屬。**行文不要斷言它是大野自營的**，寫「Fatagaga Tapes」即可。\\n**掛名（裁定 179／194）**：MB 實體是 **Group**（雖然 1995 年前實質是一人計畫）；**Apple 把掛名寫成「Ohno Masahiko aka Solmania」——與卡單的 `Solmania` 不同字，下游字串比對會漏。**\\n**Apple：兩店、兩個端點都查無本張**（該 artistId 名下只有 1997 年的《Nimrod》一筆）。\\n**素材是全批最少的一筆**：無曲名、無長度、無再發、無專屬條目。**可寫的只有：卡帶形態與 FTC-3 這個編號、六捲連號的目錄事實、以及英文維基那段自製吉他與平面設計的背景。** status 誠實填 thin，行文請寫下限、不要為湊字數推論聲響。"
+ },
+ {
+  "key": "desc2:Solmania|Metamorphor Chorus",
+  "artist": "Solmania",
+  "album": "Metamorphor Chorus",
+  "facts": [
+   {
+    "f": "release-group be17f67f 的欄位：title「Metamorphor Chorus」、artist-credit「Solmania」（藝人實體 b785af88，Group／Japan／begin 1984）、first-release-date **1991-01-25**（給到日）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：**JP 1991-01-25 的 CD（Alchemy Records，catno ARCD-020，5 軌）**，Official。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/be17f67f-b994-4c21-a4d7-f3f0a9c1e818?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 CD（5711c4cb）的逐軌曲目與長度：1〈Flood〉**27:47**、2〈Dawn〉**0:34**、3〈Metamorphor Chorus I〉**20:22**、4〈Gate〉**4:38**、5〈Metamorphor Chorus II〉**3:07**。**五軌總長約五十六分鐘，第 1 軌一首就佔掉近二十八分鐘、第 2 軌卻只有三十四秒；兩首同題的〈Metamorphor Chorus〉分列第 3 與第 5 軌、長度差了六倍以上（20:22 對 3:07）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=be17f67f-b994-4c21-a4d7-f3f0a9c1e818&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Solmania 名下 22 個 release-group、Album 20 筆。1984–1987 那批全部出在 Fatagaga Tapes（FTC-1 至 FTC-6，卡帶）與其他小廠，**1987-08 的《Erosion》（Live）之後有三年多的空白，本張是 1991 年的復出作、也是這位藝人在 Alchemy Records 的第一筆**（ARCD-020）。其後為《Morphine Nocturne》1992（Live）、《Psycledelic》1993-12-22、《Trembling Tongues》1995-09-05、《Evil Bed》1996-09-06、《DLO》1998-03-17。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b785af88-5524-4102-8c08-c280f84c866e&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Solmania〉：1984 年由 **大野雅彦（Masahiko Ohno）** 創立；**菅原克己（Katsumi Sugahara，ex Outo）後來加入、首次出現在 1995 年的《Trembling Tongues》**——**也就是說 1991 年的本張仍是 大野 一人的作品**。大野 以用零件自製實驗電吉他著稱（多琴頸吉他與 harp guitar，至 2026 年做了九把），並在現場與錄音裡使用；他同時是平面設計師，**Alchemy Records 與 Hören 幾乎所有作品的設計都出自他手**。條目 Discography 欄把 Metamorphor Chorus 記在 **1991**。",
+    "src": "https://en.wikipedia.org/wiki/Solmania"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 b785af88 的 type Group／area Japan／disambiguation「Japanese noise project」／begin 1984，artist-rels 只列 大野雅彦 與 Katsumi Sugahara 兩位。Apple Music 兩店只回到 artistId **251641278「Ohno Masahiko aka Solmania」**、名下僅 1 筆《Nimrod》(1997-01-20, 11 軌)，**本張不在其中**；`search?term=Solmania Metamorphor&country=us` 回 0 筆。**兩個端點都跑過（裁定 173）。**",
+    "src": "https://musicbrainz.org/ws/2/artist/b785af88-5524-4102-8c08-c280f84c866e?fmt=json&inc=aliases+artist-rels"
+   }
+  ],
+  "hookCandidates": [
+   "五軌五十六分鐘：第一首佔掉二十八分鐘，第二首只有三十四秒",
+   "兩首同名的〈Metamorphor Chorus〉分開排，一首二十分二十二秒、另一首三分零七秒"
+  ],
+  "sound": "MB 只記一筆 release：1991 年 1 月 25 日 Alchemy Records 的 CD（ARCD-020），**5 軌、總長約五十六分鐘**，沒有再發版可對照。逐軌長度是全批落差最大的一組：〈Flood〉**27:47**、〈Dawn〉**0:34**、〈Metamorphor Chorus I〉**20:22**、〈Gate〉**4:38**、〈Metamorphor Chorus II〉**3:07**——**兩段二十分鐘以上的長曲（第 1、3 軌）中間夾著一段三十四秒的〈Dawn〉，末尾兩軌則短得多**；兩首同題的〈Metamorphor Chorus〉分列第 3 與第 5 軌、長度相差六倍以上。曲名〈Flood〉〈Dawn〉〈Gate〉都是單字題。載體上，這是這位作者從自營卡帶（Fatagaga Tapes，1984–85 六捲）轉到 Alchemy Records 之後的第一張 CD；英文維基顯示 1991 年時 Solmania 仍是 大野雅彦 一人的計畫（菅原克己 要到 1995 年才出現）。",
+  "keyTracks": [
+   "Flood",
+   "Metamorphor Chorus I",
+   "Dawn"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1991。MB release-group first-release-date **1991-01-25**（給到日），其下唯一的 Alchemy CD 同為 1991-01-25；**英文維基的 Discography 欄也把 Metamorphor Chorus 記在 1991**。兩處同為 1991、MB 給到日。MB 上沒有任何再發，沒有復刻年要分。Apple 兩店查無，沒有第三個來源。同名先行單曲：無——但**碟內第 3、5 兩軌與盤名同題**，別把曲名當成另一張碟。",
+  "notes": "⚠ **同批《Vexation》那張的人名錯誤（策展層寫成「都元 恒雄」）在這張的 `curatorWhy` 沒有重犯，但兩張要一起更正**：正確是 **大野雅彦（Masahiko Ohno）**，英文維基、MB artist-rels、Apple 掛名「Ohno Masahiko aka Solmania」三處一致。\\n**「從自營卡帶轉到 Alchemy 之後的一張」查證屬實、可以寫**：MB 藝人頁顯示 1984–85 六捲在 Fatagaga Tapes、1987-08《Erosion》之後空白三年多，本張 ARCD-020 是名下第一筆 Alchemy 作品。⚠ 但 **`curatorWhy` 把兩張的對照寫成「一年六捲的自製期，與一張一年的廠牌期」——「一張一年」不成立**：MB 上 1991 之後是 1992（Live）、1993、1995、1996、1998，**中間有兩三年的空檔**。行文不要寫「一張一年」。\\n**「Fatagaga Tapes 是自營」沒有來源**（見同批《Vexation》卡），行文不要斷言。\\n**可以寫的一條好材料**：英文維基記 大野 同時是平面設計師、**Alchemy Records 與 Hören 幾乎所有作品的設計都出自他手**——本張正是出在 Alchemy，這條關聯有來源、也具體。\\n**1991 年時仍是一人計畫**：菅原克己 要到 1995 年的《Trembling Tongues》才首次出現（英文維基），**行文不要寫成雙人組**。\\n**Apple：兩店、兩個端點都查無。**\\n**素材中等**：五軌長度精確且結構特殊、有英文維基的人物背景，但**這張碟本身沒有專屬條目、沒有再發、沒有 Apple**，status 填 partial。"
+ },
+ {
+  "key": "desc2:K2|The Rust",
+  "artist": "K2",
+  "album": "The Rust",
+  "facts": [
+   {
+    "f": "release-group 4891be57 的欄位：title「The Rust」、artist-credit「K2」（藝人實體 4838f37b，**Person**／Japan、**disambiguation「Japanese noise musician Kimihide Kusafuka」**、別名「K²」）、first-release-date **1996**（只到年）、primary-type Album、secondary-types 空。轄下 2 個 release，都 Official：**JP 1996 的 CD（Kinky Musik Institute，catno KMI-022，4 軌）**、**US 2018-09-21 的雙 12 吋黑膠（Hospital Productions，HOS-605，2+2 軌）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2018 年 Hospital Productions 雙黑膠（3d7f512d）的曲目（**4 軌、分成兩片，MB 未填長度**）：**片一 1〈The Rust, Part 1〉2〈The Rust, Part 2〉；片二 1〈The Rust, Part 3〉2〈The Rust, Part 4〉**。**整張碟只有一個標題，切成四個 Part，黑膠版每面一段。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4891be57-de1a-44e5-ae01-f4da9f3ce3e5&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 K2 名下 **47 個 release-group、Album 40 筆**。1990 年代的部分依 first-release-date 排序為《N.G. Musik》1983、《Student Apathy》1983、《Tekhnodrug》1993、《Hepatopolitika》1994、**《The Rust》1996**、《Metal Dysplasia》1996、《Traumantra》1998、《We Are All Stupid》1998（**與 Incapacitants 共有的一筆 release-group**）、《Your Daily Buzz》1999（**與 MSBR 共有**）、《Drug Delivery System + Live》1999-07。**1983 年兩筆之後隔了十年才有第三筆，1993 年起才進入密集期。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4838f37b-98df-49d8-a2d4-c0bc0c0296fa&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179／212／224）：實體 4838f37b 的 name「K2」、type **Person**、area **Japan**、**disambiguation 直接寫出本名「Japanese noise musician Kimihide Kusafuka」**、別名「K²」、artist-rels 記 is person: **Kimihide Kusafuka**。**Apple 端這個掛名的污染是本批最嚴重的之一**：jp 店 `entity=musicArtist` 查 `K2` **回 0 筆**，us 店回 **20 個 artistId**（K2／k2／K 2／K-2／K.2 等，全部同名），逐一比對後**沒有一個是本人**。",
+    "src": "https://musicbrainz.org/ws/2/artist/4838f37b-98df-49d8-a2d4-c0bc0c0296fa?fmt=json&inc=aliases+artist-rels"
+   },
+   {
+    "f": "Apple Music 兩店查無本張。`apple-candidates.md` 掛在本張底下的四個候選——1863469104《K2 (Remastered)》1995（gb, 11 軌）、814076496《Ajmo U Zivot》1995（gb, 11 軌）、814101884《Malo Soula》1996（gb, 10 軌）、576977648《Three Phenomena》1997（gb, 3 軌），依據全部只有「年份」——**軌數（11／11／10／3）與本張的 4 軌都對不上**，且前三筆的盤名與曲名是克羅埃西亞語系的另一支同名團。**全部不採信。** `search?term=K2 The Rust noise&country=us` 回 0 筆。",
+    "src": "https://itunes.apple.com/search?term=K2%20The%20Rust%20noise&country=us&media=music&entity=album&limit=10"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟只有一個標題，切成四個 Part；雙黑膠版每一面剛好放一段",
+   "一九八三年出過兩張，接著整整十年沒有下一張"
+  ],
+  "sound": "MB 記兩筆 release、**都是 4 軌**（1996 年 Kinky Musik Institute 的 CD、2018 年 Hospital Productions 的雙 12 吋黑膠），**但 MB 兩筆都沒有填曲目長度**，因此無法談時間結構。可談的是分段方式與曲名：**整張碟只有一個標題〈The Rust〉，切成 Part 1 到 Part 4**；2018 年的黑膠版把四段分成兩片、每面一段。載體與廠牌上，1996 年的原盤出在 Kinky Musik Institute 的 KMI-022，二十二年後由紐約的 Hospital Productions 以 HOS-605 重壓成雙黑膠。目錄結構上，這位作者 1983 年出過兩筆（《N.G. Musik》《Student Apathy》）之後隔了十年，1993 年起才進入密集期，MB 名下累計 47 個 release-group、40 筆 Album。",
+  "keyTracks": [
+   "The Rust, Part 1",
+   "The Rust, Part 4"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1996，**但只有 MB 一個來源**。MB release-group first-release-date **1996**（只到年、無月日），其下 JP 首版（Kinky Musik Institute KMI-022）亦記 1996、美國再發記 2018-09-21。**這位在英文與日文維基都沒有條目**（`en.wikipedia.org/wiki/K2 (musician)` 回 404）、**Apple 兩店查無**，沒有第二來源。⚠ **同年名下另有一張《Metal Dysplasia》(1996)**（`rulings.md` §4.1 記它 CAA 404 而未收），光靠年份無法指認，**行文要用編號 KMI-022 綁定**。同名先行單曲：無。",
+  "notes": "**掛名覆核（裁定 179／212／224）**：MB 實體 4838f37b 是 **Person**、area Japan、**disambiguation 直接把本名寫進去（Kimihide Kusafuka＝草深公秀）**，artist-rels 亦然。`curatorWhy` 寫的「草深 公秀」**與 MB 一致，可用**。**Apple 端 `K2` 在 jp 店回 0 筆、us 店回 20 個同名 artistId，逐一比對後沒有一個是本人**——`rulings.md` 第三節記策展層擋下四個（德國 eurodance／塞爾維亞／南非／日本同人），**我這邊在 Apple 端又看到十幾個**，這是本批 Apple 污染最重的掛名之一。\\n**`apple-candidates.md` 的四個候選全部不採信**：1863469104／814076496／814101884 三筆是克羅埃西亞語系的同名團（曲名與盤名皆非英文、軌數 11／11／10），576977648《Three Phenomena》3 軌也對不上本張的 4 軌。**已逐筆攤開比對。**\\n**MB 沒填曲目長度**，所以 `sound` 只能談分段方式與載體，**行文不要編出時間或動態的描述**。\\n**兩筆共有的 release-group 值得註記**：《We Are All Stupid》(1998) 在 MB 上同時掛 K2 與 **Incapacitants** 名下、《Your Daily Buzz》(1999) 同時掛 K2 與 **MSBR** 名下——**本批 b 組正好都收了這兩位**，這是可查的合作線索（但那兩張碟本身不是本批的卡）。\\n**素材確實少**：無曲目長度、無維基、無 Apple、只有兩筆 release 的廠牌編號與四個 Part 的分段。status 誠實填 thin。"
+ },
+ {
+  "key": "desc2:Government Alpha|Alphaville",
+  "artist": "Government Alpha",
+  "album": "Alphaville",
+  "facts": [
+   {
+    "f": "release-group 6a2cc19d 的欄位：title「Alphaville」、artist-credit「Government Alpha」（藝人實體 68481536，**Person**／Japan、disambiguation「Japanese noise」）、first-release-date **1999-09**（給到月）、primary-type Album、secondary-types 空。**轄下只有 1 個 release，而且不在日本**：**SE（瑞典）1999-09 的 12 吋黑膠（Segerhuva，catno SEGER 1，7 軌）**，Official。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6a2cc19d-eda8-4f1a-8cd4-b053014b82c9?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 release（2ee2c9e5）的逐軌曲目與長度：1〈Corroded Airspace〉4:43、2〈Revolving Canopy〉5:28、3〈Scarlet Spectrum〉4:38、4〈Disproportion〉6:25、5〈Clairaudient Isabelle〉6:40、6〈Flaring Water Column〉5:02、7〈Enantiodromia〉**9:17**。**七軌總長約四十二分鐘；六軌落在 4:38 至 6:40 之間、收尾那軌 9:17 是唯一的長段。曲名全部是英文的造詞或罕用字（Enantiodromia 是榮格心理學的術語）。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6a2cc19d-eda8-4f1a-8cd4-b053014b82c9&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Government Alpha 名下 **79 個 release-group、Album 67 筆**。1994 至 2000 年依 first-release-date 排序為《Doze》1994、《Funeral Procession》1995、《Obliteration》1996、《Erratic》1996、《Advisability Study》1996-07、《The Garden of Eternity》1997、《Snakes and Ladders》1998、《Needle Freak》1998、《Pulse》1998、《Ephemeral Warmth》1998、《The Relic》1999、《1969-1999》1999、《The Ultra-Centrifuge / Sounds From the Void》1999、**《Alphaville》1999-09**、《Sporadic Spectra》1999-11、以及 2000 年的五筆。**光是 1999 這一年就有五筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=68481536-19e7-4aa0-a282-9d5d96fb9197&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Government Alpha〉：**本名 吉田恭淑（Yasutoshi Yoshida），Government Alpha 是藝名**，日本 noise 音樂家。條目的 Partial discography 欄依序列 1969/1999 (1999)、**Alphaville (1999)**、Sporadic Spectra (1999)、Aerial Patrol EP (2002)、Artificial Pomegranate (2003)、Snappish Saurel (2003)、Strange Days (2003) 等，另列數筆分軌盤，其中 **Planet of Fluctuation 是與 MSBR 的合作（2003）**、Radiation Snowfall 是與 Bastard Noise 的合作（2003）。",
+    "src": "https://en.wikipedia.org/wiki/Government%20Alpha"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 68481536 的 type **Person**、area **Japan**、disambiguation「Japanese noise」、無別名，artist-rels 記 is person: **吉田恭淑**。Apple Music 兩店都回到同一個 artistId **1495800874「Government Alpha」**（**沒有同名污染**），其目錄 5 筆：1674715066「Divine Brontide」2022-07-10（7 軌）、1540906702「Butterfly Effect」2020-12-08（4 軌）、1498900873「Pigmon Last Stand: Live at Bears 10.24.03」2020-02-25（2 軌）、1801470198「Lauderdale Selecta - Single」2025、1773935111「From Luxor To Texas (Remix) - Single」2020。**《Alphaville》不在其中。** `search?term=Government Alpha Alphaville&country=us` 回 0 筆。**兩個端點都跑過（裁定 173）。**",
+    "src": "https://musicbrainz.org/ws/2/artist/68481536-19e7-4aa0-a282-9d5d96fb9197?fmt=json&inc=aliases+artist-rels"
+   }
+  ],
+  "hookCandidates": [
+   "七軌四十二分鐘，六軌都在四分半到六分半之間，只有收尾那首拉到九分十七秒",
+   "一九九九年這位作者名下有五筆條目，而這一張是唯一不在日本出版的"
+  ],
+  "sound": "MB 只記一筆 release：1999 年 9 月**瑞典** Segerhuva 的 12 吋黑膠（SEGER 1），**7 軌、總長約四十二分鐘**，沒有再發版可對照。逐軌長度分布很集中：〈Corroded Airspace〉4:43、〈Revolving Canopy〉5:28、〈Scarlet Spectrum〉4:38、〈Disproportion〉6:25、〈Clairaudient Isabelle〉6:40、〈Flaring Water Column〉5:02——**前六軌全部落在 4:38 到 6:40 之間**——收尾〈Enantiodromia〉**9:17** 是唯一明顯拉長的一段。曲名全部是英文的造詞或罕用字：Enantiodromia 是榮格心理學的術語、Clairaudient 指「聽覺通靈的」、Flaring Water Column 與 Corroded Airspace 則是自造的複合詞。目錄結構上，這位作者 MB 名下 79 個 release-group、67 筆 Album，光 1999 一年就有五筆。",
+  "keyTracks": [
+   "Corroded Airspace",
+   "Clairaudient Isabelle",
+   "Enantiodromia"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1999。MB release-group first-release-date **1999-09**（給到月），其下唯一的 SE release 同為 1999-09；**英文維基〈Government Alpha〉的 discography 欄也把 Alphaville 記在 1999**。兩處同為 1999，月份只有 MB 一處給到 9 月。MB 上沒有再發，沒有復刻年要分。Apple 兩店查無。⚠ **同年名下另有四筆**（《The Relic》《1969-1999》《The Ultra-Centrifuge / Sounds From the Void》《Sporadic Spectra》1999-11），**光靠年份無法指認，行文要用廠牌 Segerhuva 或編號 SEGER 1 綁定**。同名先行單曲：無。",
+  "notes": "**「不在日本出版」是這張最扎實的一條，可以寫**：MB 上這張唯一的 release 的 release-event 國別是 **SE（瑞典）**、廠牌 Segerhuva、編號 SEGER 1。⚠ 但 **`curatorWhy` 說「以創廠編號 SEGER 1 發行」——「創廠」沒有來源**（MB 只給編號，沒有廠牌成立資料）。**行文寫「編號 SEGER 1」即可，不要寫創廠盤。**\\n**`curatorWhy` 另一句「1994–2003 十年間就有 27 筆 plain Album，本張是那批裡少數不在日本出版的一張」——前半的數字我沒有逐筆核（MB 藝人頁不列國別），後半的「少數」也沒有來源。** 行文可寫「本張出在瑞典」，**不要寫「少數不在日本出版的一張」這種比較級**。\\n**掛名可用**：本名 **吉田恭淑（Yasutoshi Yoshida）**，英文維基與 MB artist-rels 兩處一致；`curatorWhy` 寫的「吉田 恭淑」正確。**這一位在 Apple 上沒有同名污染**，兩店都只回到同一個 artistId 1495800874。\\n**Apple：兩店、兩個端點都查無本張**（該 artistId 名下 5 筆都是 2020 年以後的）。\\n**跨卡連結（有來源）**：英文維基記他與 **MSBR** 有一張合作盤《Planet of Fluctuation》(2003)——MB 上那筆同時掛兩人名下，**本批 b 組正好也收 MSBR**。\\n**素材中等**：七軌長度精確、曲名可談、有本名來源，但**只有一筆 release、沒有專屬條目、沒有 Apple**，status 填 partial。"
+ },
+ {
+  "key": "desc2:Aube|Spindrift",
+  "artist": "Aube",
+  "album": "Spindrift",
+  "facts": [
+   {
+    "f": "release-group 5a438708 的欄位：title「Spindrift」、artist-credit「Aube」（藝人實體 c57d8c1f，**Person**／Japan、disambiguation「Japanese noise musician」、life-span **1959-01-13 至 2013-09-25**、別名「オウブ」）、first-release-date **1992-05-25**（給到日）、primary-type Album、secondary-types 空。轄下 5 個 release，全部 Official、全部 **2 軌**：**JP 1992-05-25 的卡帶（G.R.O.S.S.，catno GR-001）**、JP 2016-11-17 的 CD（Shrine.jp，SGR-001）、US 2020-07-08 的 12 吋黑膠與 XW 同日的數位（**Robert & Leopold，R&L066**）、JP 2021-03-20 的 CD（Shrine.jp，SRSW 472）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5a438708-b94d-46d2-97f3-06622b57f981?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2020 年 Robert & Leopold 數位版（805cd1e4）的逐軌曲目與長度：**1〈Spin〉23:24、2〈Drift〉22:46**。**兩軌、總長約四十六分鐘，兩段只差三十八秒；盤名《Spindrift》正好被切成 Spin 與 Drift 兩半當成兩軌的曲名。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5a438708-b94d-46d2-97f3-06622b57f981&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us**（jp 亦同）collectionId 1688042535：collectionName「Spindrift」、artistName「Aube」、releaseDate **1992-01-15**、**℗ 1992 G.R.O.S.S.**、trackCount 2。`entity=song` **攤得出 2 軌、2 軌全部有 previewUrl**：〈Spin〉23:25、〈Drift〉22:46，**逐軌長度與 MB 相同到一秒內**。**這是本批少數 ℗ 年份與原盤年一致（1992）、廠牌也與原盤相同（G.R.O.S.S.）的 Apple 條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1688042535&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Aube (musician)〉：本名 **中嶋昭文（Akifumi Nakajima）**，1959-01-13 生於京都、2013-09-25 過世；他不喜歡用「music」稱呼自己的作品，偏好「design」——條目引他的話：「I don’t think of myself as a musician or an artist. I’m a designer.」。⚠ **關鍵一段**：「The essential element of Nakajima recordings is that **each record was composed with only a single material source**, which was manipulated and processed using various types of electronic equipment.」——條目列舉的素材包括空氣、水、日光燈、壓控振盪器、人聲、肺音、聖經書頁與鋼絲；並明寫 **「Many of his earliest recordings use water as a source」**。**他自己的廠牌就是 G.R.O.S.S. Records**，並與各地廠牌合作把作品發到亞洲、北美與歐洲。",
+    "src": "https://en.wikipedia.org/wiki/Aube%20(musician)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Aube 名下 **194 個 release-group、Album 159 筆**，是本批深度最大的一位。依 first-release-date 排序的最前面幾筆為 **《Spindrift》1992-05-25**、《Submerged Tension》1993、《Flood-Gate》1993、《Luminous》1993-03-01、《Flash-Point》1993-09-28（Live）、《Recycled》1994、《Luminescence》1994……**本張是 MB 目錄上最早的一筆**；1995 至 2002 年間平均一年十筆以上，2000–2002 還有一整套以月份命名的《Millennium》系列（Ianuarius／Februarius／Martius／Aprilis／Maius／Iunius／Iulius／Augustus／September／October／November／December）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=c57d8c1f-e8a9-442e-9700-1821f165460a&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "兩軌各二十三分鐘，曲名就是把盤名切成兩半：Spin 與 Drift",
+   "這位作者的做法是一張碟只用一種聲音素材——空氣、日光燈、肺音、聖經書頁都當過來源"
+  ],
+  "sound": "MB 記五筆 release、**全部 2 軌、同曲同序**；Apple 那筆的逐軌長度與 MB 相同到一秒內。兩軌是〈Spin〉**23:24** 與〈Drift〉**22:46**，**總長約四十六分鐘、兩段只差三十八秒**——**盤名《Spindrift》被切成 Spin 與 Drift 兩半，剛好當成兩軌的曲名**，也對應卡帶的兩面。載體上，1992 年的原件是作者自營 G.R.O.S.S. 的卡帶（GR-001），之後在 2016、2020、2021 三度以 CD、黑膠與數位重發。英文維基把這位作者的做法記得很清楚：**每一張作品只用一種素材來源，再用各式電子器材加工**；條目列舉的素材有空氣、水、日光燈、壓控振盪器、人聲、肺音、聖經書頁與鋼絲，並明寫他最早的一批錄音多半以水為素材。他本人不用「music」稱呼作品，偏好「design」。",
+  "keyTracks": [
+   "Spin",
+   "Drift"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。MB release-group first-release-date **1992-05-25**（給到日），其下 JP 首版（G.R.O.S.S. GR-001 卡帶）同為 1992-05-25；**Apple 1688042535 的 releaseDate 是 1992-01-15、℗ 1992 G.R.O.S.S.**——**年份與廠牌都與原盤一致，只有日期差四個多月**（Apple 的 1 月 15 日應是佔位值，取 MB 的 5 月 25 日）。**這是本批少數 Apple 沒把再發年蓋掉原盤年的條目。** 三筆再發（2016／2020／2021）不可與原盤年混用。同名先行單曲：無——MB 藝人頁 194 個 release-group 裡沒有第二筆叫《Spindrift》的東西。",
+  "notes": "**Apple 覆核（探測層標 ready）**：`us`（jp 亦同）**1688042535**，**2 軌全部有 previewUrl**，`trackCount` 欄與曲目列都是 2，逐軌長度與 MB 相同到一秒內、**無裁定 175 的落差**；**℗ 欄寫 1992 G.R.O.S.S.，與原盤同年同廠**。這一筆品質是本批最好的。\\n**⚠ 擋下策展層一處推論**：`curatorWhy` 寫「這位作者的做法是一張碟只用一種聲音來源，**《Spindrift》用的是水**」——**前半有來源（英文維基明寫 each record was composed with only a single material source），後半沒有**。英文維基只寫「他最早的一批錄音多半以水為素材」，**並未指名 Spindrift 的素材**；條目點名用水的例子是 Hydrophobia (1991)、Métal De Métal (1996)、Cardiac Strain (1997)、Set On (2001)。**行文可以寫「一張碟只用一種素材」這個做法，但不得斷言本張用的是水**；要提就寫「早期作品多以水為素材」。\\n**「第一張」查證屬實、可以寫**：MB 藝人頁 194 個 release-group 裡，本張的 1992-05-25 是最早的 first-release-date。\\n**「G.R.O.S.S. 是自營廠牌」有來源**（英文維基：Nakajima had his own record label, G.R.O.S.S. Records），`curatorWhy` 這一點正確。\\n**掛名**：MB 實體是 **Person**、本名 **中嶋昭文**（英文維基與 MB artist-rels 一致）、生卒 1959-01-13～2013-09-25。**Apple 端 `Aube` 兩店各回 20 個同名 artistId**（含日本 V 系的 AUBE、法語系的 Aube／Aubé、韓文的 오브 等），**逐一 lookup 後只有 999541473「Aube」是本人**（名下 4 筆：Magnetostriction／Spindrift／Mutation／Mort Aux Vaches），其餘全部排除。\\n**194 個 release-group 是本批之最**（超過 Pain Jerk 的 161 與 灰野敬二 的 121），這條可寫。"
+ },
+ {
+  "key": "desc2:MSBR|Ultimate Ambience",
+  "artist": "MSBR",
+  "album": "Ultimate Ambience",
+  "facts": [
+   {
+    "f": "release-group ed8a9c18 的欄位：title「Ultimate Ambience」、artist-credit「MSBR」（藝人實體 702fffc3，**Person**／Japan、disambiguation「Japanese noise musician」、**life-span 1961-02-09 至 2005-07-31**、別名「M.S.B.R.」與「Molten Salt Breeder Reactor」）、first-release-date **1992**（只到年）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：**JP 1992 的黑膠（MSBR Records，catno MR 01，2 軌）**，Official。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 release（9cd8f3b5）的逐軌曲目與長度：**1〈Ultimate Ambience #1〉25:15、2〈Ultimate Ambience #2〉22:24**。**兩軌、一面一段、總長約四十八分鐘；整張碟只有一個標題，用 #1 與 #2 分開。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed8a9c18-74dc-4bc3-9898-78892d2760be&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 MSBR 名下 **41 個 release-group、Album 29 筆**。依 first-release-date 排序：**《Ultimate Ambience》1992 排最前**，其後為《Structured Suicide》1993、《Collaboration》1994、1995 年六筆（Sonic Destruction／Metal Stricken Terror Action／Collapseland／Intensification／Fracture Of Silence／Destructive Locomotion／2,000 Thousends Contaminate Electronic Acid）、1996–2002 每年一至三筆，末筆是 2009 年的《Negative / Offensive》。⚠ **名下有多筆是與他人共有的 release-group**：《Your Daily Buzz》1999（與 **K2** 共有）、《3 Cadavres Exquis》1998（與 **Aube** 共有）、《Japanoise Action In Russia》2000（與 **Government Alpha** 共有）、《Planet of Fluctuation》2005（與 Government Alpha 共有）、《Guilty Connector / Bastard Noise / MSBR》2000。**這四位本批 b 組全部都收了。** 另有《Ultimate Ambience 2》(2000, 6911c86b) 是不同的 release-group。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=702fffc3-c826-4f8e-9719-660fb92b6895&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 702fffc3 的 name「MSBR」、type **Person**、area **Japan**、disambiguation「Japanese noise musician」、**life-span 1961-02-09 至 2005-07-31（有明確卒日）**、別名三筆（M.S.B.R.／MSBЯ／**Molten Salt Breeder Reactor**）、artist-rels 記 is person: **田野幸治**。Apple Music：`entity=musicArtist` 查 `MSBR` 在 jp 店只回到 **一個與本人無關的 artistId（274010683，實際是 C.C.C.C.）**、us 店回 0 筆；`search?term=MSBR Ultimate Ambience&country=us` 回 0 筆。**兩個端點都跑過（裁定 173），確認兩店連藝人條目都不存在。**",
+    "src": "https://musicbrainz.org/ws/2/artist/702fffc3-c826-4f8e-9719-660fb92b6895?fmt=json&inc=aliases+artist-rels"
+   },
+   {
+    "f": "英文維基查無本人條目（`en.wikipedia.org/wiki/MSBR` 回 404），日文維基亦無。**這一位可用的來源只有 MusicBrainz 的欄位。** 唯一的外部佐證是英文維基〈Government Alpha〉的 discography 欄，該處把《Planet of Fluctuation》記為 Government Alpha **與 MSBR 的合作盤（2003）**——與 MB 上那筆共有的 release-group（2005）年份不同。",
+    "src": "https://en.wikipedia.org/wiki/Government%20Alpha"
+   }
+  ],
+  "hookCandidates": [
+   "兩軌，一面一段，二十五分十五秒對二十二分二十四秒；整張碟只有一個標題，用 #1 與 #2 分開",
+   "這個名字的別名欄裡寫著 Molten Salt Breeder Reactor——熔鹽增殖反應爐"
+  ],
+  "sound": "MB 只記一筆 release：1992 年 MSBR Records 的黑膠（MR 01），**2 軌、總長約四十八分鐘**，沒有再發版可對照。兩軌是〈Ultimate Ambience #1〉**25:15** 與〈Ultimate Ambience #2〉**22:24**——**整張碟只有一個標題，用 #1 與 #2 分開，一面一段，兩段差兩分五十一秒**。掛名本身有一條可談的線索：MB 的別名欄除了「M.S.B.R.」之外，還收了一個完整展開 **「Molten Salt Breeder Reactor」**（熔鹽增殖反應爐）。目錄結構上，這是這位作者 MB 名下最早的一筆，其後 1995 年一年就有六筆、累計 41 個 release-group。",
+  "keyTracks": [
+   "Ultimate Ambience #1",
+   "Ultimate Ambience #2"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1992，**但只有 MB 一個來源**。MB release-group first-release-date **1992**（只到年、無月日），其下唯一的 JP release（MSBR Records MR 01）亦記 1992。**這一位在英文與日文維基都沒有條目、Apple 兩店連藝人條目都不存在**，因此**沒有任何第二來源**。行文寫 1992、不要寫月份。⚠ **名下另有一張《Ultimate Ambience 2》(2000)**，是不同的 release-group，**行文不要讓兩張混淆**。同名先行單曲：無。",
+  "notes": "**掛名可用**：本名 **田野幸治**（MB artist-rels）、生卒 **1961-02-09～2005-07-31**（MB life-span）。`curatorWhy` 寫的「田野 幸治」與「作者本人 2005 年過世」**都與 MB 一致**，可以寫。**MB 別名欄的「Molten Salt Breeder Reactor」是 MSBR 四個字母的展開**，這是可查的欄位事實、也是這張卡少數具體的材料。\\n**擋下策展層一處**：`curatorWhy` 寫「這家廠牌後來成為 1990 年代日本 noise 對外交換卡帶與 CD-R 的主要節點之一」——**沒有來源**（本人無維基條目，MB 只給廠牌名與編號）。**不得寫入。**\\n**「MR 01 是創廠編號」可以寫**（MB label-info 的編號本身就是 01，且是名下最早的一筆），但**不要加上「後來成為節點」那類敘事**。\\n**`curatorWhy` 的「41 個 release-group、24 筆 1992–2004 的 plain Album」**：MB 藝人頁確認 41 個 release-group、Album 29 筆（含 Live 與 Compilation 標記者），**24 這個數字我沒有逐筆核，行文用「MB 名下 41 個 release-group」比較安全**。\\n**跨卡連結（MB 欄位可查）**：MB 上有數筆與本批其他藝人共有的 release-group——《Your Daily Buzz》1999（與 **K2**）、《3 Cadavres Exquis》1998（與 **Aube**）、《Japanoise Action In Russia》2000 與《Planet of Fluctuation》2005（與 **Government Alpha**）。**這四位本批 b 組全部收了**，是這一組互相合作最密的證據。⚠ 但英文維基〈Government Alpha〉把《Planet of Fluctuation》記在 2003、MB 記 2005，**年份兩說，行文不要引年份**。\\n**Apple：兩店、兩個端點都查無，連藝人條目都沒有。**\\n**素材確實少**：只有一筆 release、兩軌長度、廠牌編號與 MB 的人物欄位。status 誠實填 thin。"
+ },
+ {
+  "key": "desc2:Pain Jerk|Aktion Bruit",
+  "artist": "Pain Jerk",
+  "album": "Aktion Bruit",
+  "facts": [
+   {
+    "f": "release-group 4ce3524d 的欄位：title「Aktion Bruit」、artist-credit「Pain Jerk」（藝人實體 7e199c07，**Person**／Japan、disambiguation「Japanese noise」、life-span begin **1963-11-09**、別名「Painjerk」「Painjerk Wracked and Ruined」「ペイン・ジャーク」）、first-release-date **1995**（只到年）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：**JP 1995 的卡帶（AMP，catno AMP-013，3 軌）**，Official。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的卡帶（8bfcc277）的逐軌曲目與長度：**1〈Neon Kid〉19:28、2〈In die Glutenkiste〉12:50、3〈Mosquitomagus〉9:37**。**三軌總長約四十二分鐘，長度依序遞減（19:28→12:50→9:37）；三個曲名分屬三種語言的拼法——英文、德文、以及拉丁語式的造詞。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4ce3524d-1e39-423b-9d01-ddb866c7f762&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Pain Jerk 名下 **161 個 release-group、Album 109 筆、EP 20 筆**，深度僅次於本批的 Aube（194）。**1995 年一年就有八筆**：《Alchemistry》《Recycled》《Trashware》**《Aktion Bruit》**《Split-Tape》《Retrogress》《Fatamorgana》《Exhibition of Electro-Disease》(1995-05-25)；1996 年更多達十四筆（Decollaboration／Neurotten／Spitfire／Great Invisible Crashing／Epistasis／Pleonasm／Snuff Electronics／From Nothing to Nothingness／Fragmentagraph／Cacophony of a Thousand Pleasures／Transcription of Piss Angel 等）。**光是 1995–1996 兩年就有二十二筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7e199c07-31f8-4f8d-9bc0-e06e54def3d2&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179）：實體 7e199c07 的 name「Pain Jerk」、type **Person**、area **Japan**、disambiguation「Japanese noise」、life-span begin **1963-11-09**、別名三筆（Painjerk／Painjerk Wracked and Ruined／ペイン・ジャーク）；**artist-rels 記 is person: 五味浩平**。Apple Music：jp／us 兩店都回到 **269344324「Pain Jerk」**（名下 2 筆：269344313「Pain Jerk / Incapacitants: Live At No Fun Fest 2007」、1799298959「Electroacoustic Sludge Dither Transformation Smear Grind Decomposition nO!se File Exchange Mega Edit」2014）與 **259847686「Painjerk」**（名下 1 筆：1490443329「Mission Invisible」2019）；**本張不在其中**。",
+    "src": "https://musicbrainz.org/ws/2/artist/7e199c07-31f8-4f8d-9bc0-e06e54def3d2?fmt=json&inc=aliases+artist-rels"
+   },
+   {
+    "f": "Apple Music 兩店查無本張：`search?term=Pain Jerk Aktion Bruit&country=us&media=music&entity=album` 回 0 筆；上述兩個 artistId 的目錄逐筆看過亦無。**兩個端點都跑過（裁定 173）。** 英文與日文維基皆無本人條目（`en.wikipedia.org/wiki/Pain Jerk` 回 404）——**這一位可用的來源同樣只有 MusicBrainz 的欄位**，唯一的外部交叉點是 Apple 上那筆與 **Incapacitants** 的 2007 年 No Fun Fest 現場合輯。",
+    "src": "https://itunes.apple.com/lookup?id=269344324&country=us&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "三軌四十二分鐘，長度一路遞減：十九分半、十二分五十、九分三十七",
+   "一九九五到九六這兩年，這位作者名下就出現二十二筆條目"
+  ],
+  "sound": "MB 只記一筆 release：1995 年 AMP 的**卡帶**（AMP-013），**3 軌、總長約四十二分鐘**，沒有再發版可對照。三軌是〈Neon Kid〉**19:28**、〈In die Glutenkiste〉**12:50**、〈Mosquitomagus〉**9:37**——**長度一路遞減，第一軌幾乎是第三軌的兩倍**。三個曲名分屬三種寫法：英文的〈Neon Kid〉、德文的〈In die Glutenkiste〉、以及拉丁語式的造詞〈Mosquitomagus〉。目錄結構上，這位作者 MB 名下 **161 個 release-group、109 筆 Album**，是本批深度第二大的一位（僅次於 Aube 的 194）；**光 1995 一年就有八筆、1996 一年十四筆**，本張是 1995 那八筆之一。",
+  "keyTracks": [
+   "Neon Kid",
+   "In die Glutenkiste",
+   "Mosquitomagus"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1995，**但只有 MB 一個來源**。MB release-group first-release-date **1995**（只到年、無月日），其下唯一的 JP 卡帶（AMP-013）亦記 1995。**這一位在英文與日文維基都沒有條目、Apple 兩店查無本張**，沒有第二來源。⚠ **同年名下另有七筆**（Alchemistry／Recycled／Trashware／Split-Tape／Retrogress／Fatamorgana／Exhibition of Electro-Disease），**光靠年份完全無法指認，行文要用廠牌 AMP 或編號 AMP-013 綁定**。行文寫 1995、不要寫月份。同名先行單曲：無。",
+  "notes": "⚠ **擋下策展層一處人名錯誤。** `curatorWhy` 寫「**小池 孝行** 的 Pain Jerk」——**錯**。**MB 藝人端點的 artist-rels 明寫 is person: 五味浩平**（別名欄另有 Painjerk／ペイン・ジャーク）。**行文不得出現「小池孝行」，要寫本名就寫 五味浩平。**\\n**`curatorWhy` 的「161 個 release-group、光是 1995–2000 六年就有 50 筆 plain Album」**：161 這個數字與 MB 一致；**50 筆那個數字我沒有逐筆核**，我實際數到的是 1995 年八筆、1996 年十四筆。**行文用「MB 名下 161 個 release-group、109 筆 Album」與「1995–96 兩年二十二筆」這兩個我核過的數字。**\\n**「取起步那一年的一張當代表」要註記**：1995 是這位作者 MB 目錄上最早的一年（藝人頁上沒有更早的 release-group），**但同年有八筆，本張不是「第一張」**，行文不要寫成處女作。\\n**掛名（裁定 179／194）**：MB 實體是 **Person**／Japan／「Japanese noise」；**Apple 端分裂成兩個 artistId——269344324「Pain Jerk」與 259847686「Painjerk」（連寫）**，下游做字串比對會漏掉後者。\\n**Apple：兩店、兩個端點都查無本張。** 唯一的外部交叉點是 Apple 上那筆與 **Incapacitants** 合演的 2007 年 No Fun Fest 現場（collectionId 269344313），**本批 b 組正好收了 Incapacitants 三張**。\\n**素材確實少**：只有一筆卡帶 release、三軌長度、廠牌編號與 MB 的人物欄位，無維基、無 Apple。status 誠實填 thin。"
  }
 ]
