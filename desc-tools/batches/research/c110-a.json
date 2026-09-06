@@ -658,5 +658,137 @@
   "status": "full",
   "yearVerified": "**年份 1984 確定，但日期兩說。** 所釘 release-group 的 first-release-date 是 **1984-09-21**，而**那個日期其實是轄下日本版 CD 的發行日**——DE 的黑膠與 CD 兩筆只標到「1984」，沒有月日。英文條目與德國店面（id 1446011800）**都寫 1984-01-27**。**兩邊差了八個月，本層採 1984-01-27 那一說**（有兩個獨立來源、且與「本張早於同年的國際版《99 Luftballons》幾個月」這個敘述相容；若採 09-21 則國際版反而更早，與條目衝突）。**卡片年份不受影響，兩說同為 1984。** 同名先行單曲：無；同名曲〈? (Fragezeichen)〉在 1983 年就以單曲形式出過，**但那是單曲不是專輯**，而且與專輯同名——行文若提「同名曲比專輯早」要標明那是單曲。",
   "notes": "**探測層 ready 覆核通過**：de 1446011800，12 軌全有 previewUrl，`trackCount` 欄與曲目列都是 12，**與原盤軌數一致**。\\n**⚠ 本層推翻了一個日期**：所釘條目的 first-release-date 1984-09-21 是日本版的日期，不是首發日；兩個獨立來源都指 1984-01-27。**寫作層若要寫月份，寫一月，不要寫九月。**\\n**掛名（裁定 177 第 1 步）**：所釘條目掛的是樂團實體 c954d136（1982–87），與池中既有兩張共用的鍵 `Nena` 一致——**不為了對齊而把池中一個鍵拆成兩個**，策展層的處理正確。\\n策展層說法逐條查證：37 個 release-group、6 筆 release 全 Official、CBS 25870、12 軌、本張屬樂團時期——**全部屬實**。策展層說「《99 Luftballons》(1984) 是首張的國際版、與池中《Nena (1983)》同一批曲目，收了等於重複」——**本層實查：那張國際版收的是首張與本張兩張的曲子**，所以它與本張也有重疊，不收的判斷成立。\\n**跨卡連結（同組第 17、19 張）**：製作人 Reinhold Heil 與 Manne Praeker 是 Spliff 的成員，而 Spliff《85555》與 Nina Hagen Band 的同名首作都在本批 a 組——**這三張的人脈是同一條，只能寫一次**。\\n**未寫進 facts 的**：同名曲的單曲榜名次，依派工信不寫。"
+ },
+ {
+  "key": "desc2:Herbert Grönemeyer|Mensch",
+  "artist": "Herbert Grönemeyer",
+  "album": "Mensch",
+  "facts": [
+   {
+    "f": "所釘 release-group 5215f7ec 的欄位：title「Mensch」、artist-credit「Herbert Grönemeyer」（藝人實體 456eabce）、first-release-date **2002-08-30**、primary-type Album、secondary-types **空**。轄下 11 筆 release，9 筆 Official、**2 筆 Pseudo-Release**：2002 DE 的 Copy Control CD（Grönland Records 7243 541621 2 1，11 軌）、2002-10-21 的混合 SACD、2010 與 2018 的 CD 再發、2016-11-25 的 remaster、2017-06-30 的**兩片黑膠（8+8 軌）**、2020 的 SACD＋Blu-ray（Blu-ray 那片 30 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5215f7ec-a1ba-3e56-b132-8f4909324a88?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2002 DE 原盤（Grönland Records）的逐軌：〈Mensch〉4:28、〈Neuland〉3:44、〈Der Weg〉4:18、〈Viertel vor〉4:23、〈Lache, wenn es nicht zum Weinen reicht〉4:43、〈Unbewohnt〉5:04、〈Dort und hier〉2:33、〈Blick zurück〉5:54、〈Kein Pokal〉4:33、〈Zum Meer〉5:45、**〈Demo (Letzter Tag)〉20:41**。前十軌加起來約四十五分鐘，第十一軌一軌就佔了二十分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5215f7ec-a1ba-3e56-b132-8f4909324a88&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Mensch (Album)〉的〈Entstehungsgeschichte〉節：距前一張《Bleibt alles anders》已隔四年——**那張發行半年後，Grönemeyer 的哥哥 Wilhelm 與妻子 Anna Henkel 在幾天之內相繼過世**，他因此長時間退隱。他自己說，之所以重新開始做音樂，是因為怕連音樂也失去；這張成了他處理哀悼的方式，歌也主要在講這件事。全碟在他當時定居的倫敦錄製，製作人仍是 Alex Silva。**〈Demo (Letzter Tag)〉的曲名就是字面意思：那是唱片送去壓片廠的前一天才錄的。**",
+    "src": "https://de.wikipedia.org/wiki/Mensch_(Album)"
+   },
+   {
+    "f": "同一條目的〈Titelliste〉節：〈Demo (Letzter Tag)〉本身只有 3:27，是掛名 Bonustrack 的一首；**它唱完之後是一段一直延續到第 17 分 30 秒的靜默，靜默之後才是一首隱藏曲目——那首由 Grönemeyer 的兒子 Felix 演唱**。這也是所釘條目上那一軌長 20:41 的原因。全碟詞曲都由 Grönemeyer 所寫，只有〈Viertel vor〉是他與 Alex Silva 合寫；共抽出四支單曲：〈Mensch〉〈Der Weg〉〈Demo (Letzter Tag)〉〈Zum Meer〉。條目另記本張售出逾 315 萬張。",
+    "src": "https://de.wikipedia.org/wiki/Mensch_(Album)"
+   },
+   {
+    "f": "德國店面 id 1440952755：標題「Mensch」、掛名「Herbert Grönemeyer」、releaseDate 2002-01-01、℗ 2002 Before Grönland、`trackCount` 11。攤開的曲目列 **11 軌、11 軌全部有試聽**，曲名與曲序與原盤**逐位置相符**；**但第 11 軌〈Demo (Letzter Tag)〉在這裡只有 3:29**——數位版把靜默與後面那首隱藏曲目切掉了，只留下歌本身。",
+    "src": "https://itunes.apple.com/lookup?id=1440952755&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 456eabce 名下分頁列完 142 個 release-group，其中 primary-type=Album 且 secondary-types 空的 19 張，本張 2002-08-30 之前的一張是 1998-04-20 的《Bleibt alles anders》、之後是 2007-03-02 的《12》。**與本卡同名的條目另有四筆**：2002 年與 **2002-08-05** 的兩支單曲《Mensch》、2003 年的《Mensch Live》（Album＋Live）、2022-07-26 的《Mensch Live 2003》（EP＋Live）——**其中 2002-08-05 那支單曲比專輯的 08-30 還早**。142 筆裡 primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=456eabce-d1dd-4481-a206-36ab4f2eaeb8&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "最後一軌長二十分鐘：歌唱完後是一段延續到十七分半的靜默，靜默之後才是兒子唱的隱藏曲",
+   "收尾那首叫〈Demo (Letzter Tag)〉，錄的日子就是唱片送去壓片廠的前一天"
+  ],
+  "sound": "2002 原盤名義上十一軌，實際上是十首歌加一首附錄；前十首長度 2:33 到 5:54，總長約四十五分鐘。製作以鋼琴與弦樂鋪底，鼓與貝斯壓在後面，Grönemeyer 那把嘶啞、咬字含混的德語嗓音擺在最前面；速度大多偏慢，〈Der Weg〉與〈Zum Meer〉是全碟情緒最重的兩首，〈Dort und hier〉2:33 最短。收尾那軌唱完後長時間靜默，再接一段孩童演唱的隱藏曲。",
+  "keyTracks": [
+   "Mensch",
+   "Der Weg",
+   "Zum Meer"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2002。所釘 release-group 的 first-release-date 是 **2002-08-30**、轄下最早的 release 標 2002 DE（其中一筆精確到 2002-08-30），德文條目寫「2002 年八月發行」、並說唱片 2002-08-30 到店，店面那筆 releaseDate 標 2002-01-01（只到年）、℗ 2002。四處同年，取 **2002**。**⚠ 同名先行單曲存在且更早**：單曲《Mensch》的條目是 **2002-08-05**，比專輯早二十五天——**「取最早那筆」的自動邏輯會選到單曲**（裁定 179 第 1 點）。另有 2003 年的現場盤《Mensch Live》與 2022 年的同名現場 EP。",
+  "notes": "**探測層 ready 覆核通過**：de 1440952755，11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11。\\n**⚠ 最後一軌的長度兩邊差很多**：所釘條目的實體版是 **20:41**（歌 3:27 ＋ 靜默至 17:30 ＋ 隱藏曲），數位版只有 **3:29**。**行文若要寫「二十分鐘的收尾曲」必須說明那是實體版的隱藏曲構造**，不能寫成歌本身有二十分鐘。\\n**⚠ 本層擋下一個序數**：德文條目首句寫這是他的「第十一張錄音室專輯」，但所釘藝人頁的純 Album 型 release-group 依日期排，本張是**第十二筆**（差別在 1979 年的《Grönemeyer》與 1988 年的英語版《What's All This》算不算）。**兩邊差一張，序數不可斷言**——依 c-111 同型處理，行文不要寫第幾張。\\n策展層說法逐條查證：11 筆 release、其中 2 筆 Pseudo-Release、同名條目五個且有一支單曲比專輯早——**全部屬實**。\\n**題材處理（逝者克制）**：兄長與其妻相繼過世是這張的成因、與作品直接綁定，**照寫但不渲染細節**；隱藏曲由其子演唱這件事同屬作品構造，可寫。\\n**未寫進 facts 的**：專輯榜與單曲榜名次、發行前即獲白金認證、「德國史上第二暢銷專輯」這類銷量排名，依派工信不寫；只保留 315 萬張這個數字。"
+ },
+ {
+  "key": "desc2:Rammstein|Sehnsucht",
+  "artist": "Rammstein",
+  "album": "Sehnsucht",
+  "facts": [
+   {
+    "f": "所釘 release-group 2a323740 的欄位：title「Sehnsucht」、artist-credit「Rammstein」（藝人實體 b2d122f9）、first-release-date **1997-08-22**、primary-type Album、secondary-types **空**。轄下多達 29 筆 release，**軌數隨版本在 11 到 14 之間跳動**：1997-08-25 的 DE 原盤（Motor Music 537 304-2）是 **11 軌**，1997 年的美國、加拿大、澳洲版是 12 到 13 軌（多的是〈Engel〉與〈Du hast〉的英語版），1998 年一筆 XE 版 14 軌。狀態不齊：另有 1 筆 2013-07 的 **Bootleg**、1 筆 2000 年的 **Promotion**（特別巡演版）、1 筆 2001-02-23 的器樂版**未填 status**、以及 1 筆 Pseudo-Release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/2a323740-b615-35bc-9f58-1d2e6a5d9289?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 原盤的十一軌曲目與長度：〈Sehnsucht〉4:05、〈Engel〉4:25、〈Tier〉3:48、〈Bestrafe mich〉3:39、〈Du hast〉3:56、〈Bück dich〉3:23、〈Spiel mit mir〉4:47、〈Klavier〉4:25、〈Alter Mann〉4:24、〈Eifersucht〉3:37、〈Küss mich (Fellfrosch)〉3:31。**十一軌全部在 3:23 到 4:47 之間，總長約四十四分鐘**；1997 年的北美版在這十一軌之後多掛〈Engel〉與〈Du hast〉的英語版。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2a323740-b615-35bc-9f58-1d2e6a5d9289&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Sehnsucht (Album)〉的〈Entstehung und Artwork〉節：錄音從 1996 年秋天開始，製作人仍是 Jacob Hellner、混音仍是 Ronald Prent。**封面照片找的是奧地利藝術家 Gottfried Helnwein**——他替六名團員上妝，並在每個人臉上裝了金屬支架，**那些支架是德國外科醫師 Ferdinand Sauerbruch 用過的原件醫療器械**；**Till Lindemann 眼前那副叉狀器具，正是 Helnwein 當年替 Scorpions 的《Blackout》做封面時用過的同一副**。封面設計成每位團員都各有一張肖像，封底則是白沙灘、棕櫚樹與藍天。",
+    "src": "https://de.wikipedia.org/wiki/Sehnsucht_(Album)"
+   },
+   {
+    "f": "同一條目的〈Inhalt〉節：同名曲在 1996 年就以〈Afrika〉的名字存在過，副歌的詞與節奏略有不同；**英語圈聽眾常把 Lindemann 唱的「Sehnsucht」聽成「chainsaw」**。**〈Tier〉的旋律不是 Rammstein 寫的，而是 Die Krupps 為自己的〈The Dawning of Doom〉寫的，因此 Jürgen Engler 掛名作曲**。〈Du hast〉整首是德語 haben（有）與 hassen（恨）第二人稱單數同音的文字遊戲，內容是一場婚約的問答，副歌最後給的答案是「Nein」。〈Engel〉的錄影帶靈感來自電影《From Dusk Till Dawn》。",
+    "src": "https://de.wikipedia.org/wiki/Sehnsucht_(Album)"
+   },
+   {
+    "f": "德國店面 id 1390562159：標題「Sehnsucht」、掛名「Rammstein」、releaseDate 1997-08-22、℗ 1997 Vertigo/Capitol, a division of Universal Music GmbH、`trackCount` 11。攤開的曲目列 **11 軌、11 軌全部有試聽**，曲名與曲序與德國原盤**逐位置相符**、長度差在兩秒內，**沒有英語版加曲**。同店面另有 12 軌的 1682941077《Sehnsucht (Remastered 2023)》。",
+    "src": "https://itunes.apple.com/lookup?id=1390562159&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 b2d122f9 名下分頁列完 155 個 release-group，其中 primary-type=Album 且 secondary-types 空的 9 張：《Herzeleid》1995-09-24、**《Sehnsucht》1997-08-22**、《Mutter》2001-03-27、《Zeitreise - Reisezeit》2004、《Reise, Reise》2004-09-27、《Rosenrot》2005-10-14、《Liebe ist für alle da》2009-10-16、《[Rammstein]》2019-05-17、《Zeit》2022-04-29。**本張是第二張，也是 1995 到 2001 那六年間唯一的一張**；155 筆裡沒有第二筆叫《Sehnsucht》的條目，primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b2d122f9-eadb-4930-a196-8f221eeb0c66&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "封面上團員臉上的金屬支架是外科醫師 Ferdinand Sauerbruch 用過的原件器械",
+   "〈Tier〉的旋律不是他們寫的——那是 Die Krupps 給自己另一首歌寫的曲子"
+  ],
+  "sound": "1997 德國原盤十一軌、約四十四分鐘，每一首都在 3:23 到 4:47 之間，節奏型態高度一致。聲音是重複的下行吉他riff、四四拍的工業節拍與合成器襯底疊起來的厚牆，Till Lindemann 的德語低音幾乎不轉調、把彈舌的 r 咬得很重；〈Du hast〉靠一句問答的重複推進，〈Klavier〉以鋼琴開場再轉重，〈Engel〉的副歌加了女聲哨音式的高音。全碟德語演唱，北美版另附兩首英語版。",
+  "keyTracks": [
+   "Du hast",
+   "Engel",
+   "Sehnsucht"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。所釘 release-group 的 first-release-date 是 **1997-08-22**（那筆是法國版）、**德國原盤標的是 1997-08-25**，德文條目首句寫 1997-08-22 發行，店面那筆 releaseDate 標 1997-08-22、℗ 1997。四處同年，取 **1997**。同名先行單曲：無——先行單曲是〈Engel〉（1997），不與專輯同名；名下 155 個 release-group 沒有第二筆叫《Sehnsucht》。**要注意的不是年份而是軌數**：德國原盤 11 軌，北美與部分歐洲版 12 到 14 軌，多的是英語版與重混。",
+  "notes": "**探測層 ready 覆核通過**：de 1390562159，11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11，**與德國原盤軌數一致**（同店面 12 軌的 2023 remaster 1682941077 是最像的假陽性）。\\n**status 不齊（裁定 167 附帶）**：29 筆 release 裡有 1 筆 Bootleg、1 筆 Promotion、1 筆未填 status、1 筆 Pseudo-Release，**這四筆一律不採為「這次再發是 Official」的背書**；其餘 25 筆是 Official。策展層寫「25 筆裡 1 筆 Bootleg／1 筆 Promotion／1 筆未填」——**數字與本層實掃的 29 筆總數不同，但四筆非 Official 的形狀相符**，本層以實掃為準。\\n策展層其餘說法逐條查證：155 個 release-group、9 張純 Album、本張是第二張、池中已有的三張全在 2001 年之後——**全部屬實**。\\n**題材處理**：〈Tier〉〈Spiel mit mir〉〈Bück dich〉的歌詞主題涉及性暴力與亂倫，**依「題材無禁區、但不逐字引歌詞、不渲染細節」處理**；本稿只寫到作曲歸屬與文字遊戲這一層，寫作層若要碰主題，寫「歌詞題材極端」即可，不要複述情節。\\n**未寫進 facts 的**：各國榜單名次與銷量認證，依派工信不寫；1998 年美國演出後兩名團員被捕並判緩刑那件事屬與作品直接綁定的宣傳期事件，可寫但要標時序，本稿未收進 facts。"
+ },
+ {
+  "key": "desc2:Nina Hagen Band|Nina Hagen Band",
+  "artist": "Nina Hagen Band",
+  "album": "Nina Hagen Band",
+  "facts": [
+   {
+    "f": "所釘 release-group 907717a3 的欄位：title「Nina Hagen Band」、artist-credit「Nina Hagen Band」（**樂團實體 0c017e85，不是同名的個人實體**）、first-release-date 1978、primary-type Album、secondary-types **空**。轄下 6 筆 release 全部 Official、**全部 11 軌**：1978 DE 的兩筆 12\" Vinyl（CBS 83136 與 CBS 32293）、1985 的兩筆 CD（CBS／Columbia 83136）、1997 的 Columbia CD、2011 XE 的 180 克黑膠（Music on Vinyl MOVLP458）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/907717a3-b58e-3850-9979-29afc7a7f3fd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1978 DE 原盤（CBS 83136）的逐軌：A 面〈TV-Glotzer (White Punks on Dope)〉5:16、〈Rangehn〉3:26、〈Unbeschreiblich weiblich〉3:31、〈Auf'm Bahnhof Zoo〉5:25、〈Naturträne〉4:08；B 面〈Superboy〉4:05、〈Heiss〉4:07、**〈Fisch im Wasser〉0:57**、〈Auf'm Friedhof〉6:17、〈Der Spinner〉3:10、〈Pank〉1:52。**十一軌、約四十二分鐘，長度落差極大：最短 57 秒、最長 6:17。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=907717a3-b58e-3850-9979-29afc7a7f3fd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "德文條目〈Nina Hagen Band (Album)〉的〈Hintergrund〉節：Hagen 1977 年從東柏林遷到西柏林（中間短暫待過英國）之後，與 Herwig Mitteregger、Reinhold Heil、Bernhard Potschka、Manfred Praeker 四位樂手組成樂團，才有了這張。**全碟歌詞都由 Nina Hagen 自己寫**，用字古怪而帶挑釁：〈Unbeschreiblich weiblich〉的歌詞主張墮胎權、〈Auf'm Bahnhof Zoo〉寫的是女廁裡的一次女同志相遇，這些在當時的德語媒體引起爭議。曲風一首一個樣：〈TV-Glotzer〉是 The Tubes〈White Punks on Dope〉的翻唱、由 Hagen 重填德語詞，〈Heiß〉是雷鬼，〈Pank〉是一分多鐘的快速龐克，〈Naturträne〉與〈Der Spinner〉則是慢板搖滾抒情——**Hagen 那把尖銳、時而近乎歌劇的嗓音把它們唱到怪誕的程度**。",
+    "src": "https://de.wikipedia.org/wiki/Nina_Hagen_Band_(Album)"
+   },
+   {
+    "f": "同一條目的〈Veröffentlichung〉節：**唱片 1978-08-31 先只在西柏林發行，幾星期後、也就是 1978 年九月才鋪到整個西德——這是當時的經紀人 Jim Rakete 設計的行銷手法**（Rakete 同時也是封面那張照片的攝影者：一張後製上色的黑白肖像，Nina Hagen 叼著菸；封底是其餘團員，身後牆上貼著同一張封面照的海報）。條目另特別註明：**網路上常誤以為這張是 1978 年二月發行的，連 Nina Hagen 本人 2022 年替專輯慶生的貼文都寫錯了日期**，是前團員 Reinhold Heil 留言指正。",
+    "src": "https://de.wikipedia.org/wiki/Nina_Hagen_Band_(Album)"
+   },
+   {
+    "f": "德國店面 id 1778701966：標題「Nina Hagen Band」、**掛名寫成「Nina Hagen, Spliff & Nina Hagen Band」三個名字串在一起**、releaseDate 1978-08-31、℗ 1978 Sony Music Entertainment (Germany) GmbH、`trackCount` 11。攤開的曲目列 **11 軌、11 軌全部有試聽**，曲名與曲序與 1978 原盤**逐位置相符**（第 3 軌寫作「Unbeschreiblich Weiblich」，原盤標題在該處用的是女性符號），逐軌長度差在六秒內。**軌數與原盤相同，不是加曲版。**",
+    "src": "https://itunes.apple.com/lookup?id=1778701966&country=de&entity=song&limit=200"
+   },
+   {
+    "f": "藝人 0c017e85（樂團實體）名下只有 9 個 release-group，其中 primary-type=Album 且 secondary-types 空的**只有兩張**：本張 1978 與《Unbehagen》1979。另有 1980 年一筆同名的 **EP**《Nina Hagen Band》與 1988-07-11 一筆兩張合一的《Nina Hagen Band / Unbehagen》（Album＋Compilation）——**兩筆都是與本卡最像的假陽性**。9 筆裡 primary-type=Compilation 的是 0 筆。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0c017e85-35da-48c5-a699-4e064b37aa7d&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "唱片先只在西柏林上架，幾星期後才鋪到整個西德——那是經紀人設計的",
+   "十一首歌一首一個樣：翻唱的美國龐克、雷鬼、一分鐘的快歌，還有一首只有五十七秒"
+  ],
+  "sound": "1978 原盤十一軌、約四十二分鐘，長度從 57 秒到 6:17。四名樂手的編制是吉他、貝斯、鍵盤、鼓，製作講究、每首各換一種語法——搖滾、雷鬼、龐克、慢板抒情輪流上；真正把它們綁在一起的是 Nina Hagen 的嗓子：從尖叫、彈舌、氣音到近乎歌劇的長音，同一首歌裡就會換好幾種。歌詞全部德語、全部她自己寫，用字直接。",
+  "keyTracks": [
+   "TV-Glotzer (White Punks on Dope)",
+   "Unbeschreiblich weiblich",
+   "Naturträne"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1978。所釘 release-group 的 first-release-date 是 **1978**（只到年）、轄下兩筆原盤也只標 1978 DE，德文條目寫**首發是 1978-08-31（僅西柏林）、1978 年九月才鋪到全西德**，店面那筆 releaseDate 標 1978-08-31、℗ 1978。四處同年，取 **1978**。**條目特別警告一個常見錯誤：網路上常寫成 1978 年二月**——本稿不採。同名先行單曲：無；名下 9 個 release-group 裡有一筆 1980 年的同名 EP，**那是 EP 不是專輯**。",
+  "notes": "**探測層 ready 覆核通過**：de 1778701966，11 軌全有 previewUrl，`trackCount` 欄與曲目列都是 11，**與原盤軌數一致**。\\n**掛名（裁定 177 第 2 步）**：卡片取所釘條目的 artist-credit「Nina Hagen Band」（樂團實體 0c017e85），**不取店面那筆的「Nina Hagen, Spliff & Nina Hagen Band」**——策展層的處理正確，本層實查確認店面確實是三個名字串在一起。\\n**⚠ 本層擋下一個日期陷阱**：這張常被寫成 1978 年二月發行（連藝人本人 2022 年的貼文都寫錯）。**行文若要寫月份，寫八月／九月，不要寫二月。**\\n策展層說法逐條查證：9 個 release-group、6 筆 release 全 Official、CBS、11 軌、班底就是後來的 Spliff——**全部屬實**。\\n**跨卡連結（同組第 14、19 張）**：Mitteregger、Heil、Potschka、Praeker 四人後來就是 Spliff（本批第 19 張《85555》），其中 Heil 與 Praeker 又是 Nena《? (Fragezeichen)》（本批第 14 張）的製作人。**三張卡是同一條人脈，只能寫一次**——建議把「這批人後來成了 Spliff」留給本張（它是起點）。\\n**題材處理**：歌詞涉及墮胎權與女同志相遇的爭議，依「題材無禁區、不逐字引歌詞」處理，本稿只寫到主題與當時引起爭議這一層。\\n**未寫進 facts 的**：榜單名次與樂評媒體的經典盤選介，依派工信不寫。"
  }
 ]
