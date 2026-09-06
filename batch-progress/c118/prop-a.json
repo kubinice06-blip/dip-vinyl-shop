@@ -1,0 +1,97 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Boo Williams Home Town Chicago；Moon Man（同一人的另一個 MB 實體）",
+  "reissuedBy": "Anotherday Records（2011，0001AD／GB、XW）",
+  "g": "a",
+  "artist": "Boo Williams",
+  "album": "Home Town Chicago LP",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Relief Records（catno RR 766，US 1996）",
+  "why": "Boo Williams 名下第一張、也是 1990 年代唯一一張長篇作品：在此之前他在 Relief 與 Dance Mania 出的全是 12 吋（MB 名下 40 個 release-group 有 24 個是 EP／Single）。Relief Records 是 Cajmere 的 Cajual 在 1993 年開的 DJ 取向支線，RR 766 這個編號就是該廠把「12 吋廠牌」推進到專輯形態的那一步。實掃 seed_cards.json 全 14,424 列：Boo Williams 池中 0 張；同一批芝加哥第二代裡池中已有的是 Glenn Underground 1 張（《Atmosfear》1996）、Paul Johnson 1 張（《Feel the Music》1996）、Derrick Carter 1 張——這三張都是 1996 到 1997 年間的同一波，這張補進去正好把 Relief／Cajual 那條線補齊。來源：MB release-group 1be84cd2 轄下四個 release 的 label-info、Discogs 對 Relief RR 766 的條目。",
+  "risk": "撞卡：實掃全池，Boo Williams 0 張，《Home Town Chicago LP》不在池中；c-40（電子細分批，257 筆）、c-70（日本 new wave）、c-82（日本 1990s techno）、c-97（電子目錄深度）四批的清單逐筆比對過，皆無這張。掛名：MB 另有一個實體 `Moon Man`（5617ac66，disambiguation 明寫「Chicago house producer Boo Williams」、生日同為 1967-07-20），是同一人的別名實體，本張的 artist-credit 是 `Boo Williams`，不受影響。盤名：MB 的 RG 標題帶 `LP` 後綴，2011 年 Anotherday 再發把標題縮成《Home Town Chicago》，兩種寫法在跨批去重會摺成不同鍵，queryAlias 已補。再發 status：四個 release 有三個 Official、2020 那筆無廠牌資訊。封面 CAA：release-group 1be84cd2 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 1be84cd2-5de1-4628-ae35-9453fd202466。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Home Town Chicago LP」、artist-credit「Boo Williams」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 4 個 release（1996 US Relief RR 766／2011-11 GB Anotherday 0001AD／2011-11-20 XW Anotherday／2020-11-20 XW 無廠牌）。藝人 MBID 265c41ad-2e21-4c7a-9523-bb447906bc8c（Person／United States／1967-07-20，裁定 179 的 area／type／disambiguation 回問已做），以 release-group?artist=…&limit=100&offset= 分頁全列 40 個 RG（裁定 116），其中 primary-type=Album 只有 5 個、primary-type=Compilation 0 個。刻意不釘：351261fc-fe4d-36bc-bdcd-0628b9e1d70d《Boo Williams vs. Glen Underground》（1995，兩人的分享盤，掛名是雙人不是 Boo Williams 單獨）、f5c6592e-f50c-338f-ac30-f327a22abbbe《Lost of Time》（1995，MB 轄下無 label-info、與本張同期但流通紀錄薄）、d06d2cd9-be37-4e5f-b267-f24503812f55《The Boo Williams Explosion》（2014，晚期）、facdd2c2-2472-42df-bc4c-30df59b8300d《The Best of Boo Williams》（2021，Album+[Compilation] 的後世整編）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Glenn Underground A Story of Deepness；GU；Glen Underground（MB 上另一種拼法）；Jellybean（同一人的另一個 MB 實體）；C.V.O.",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Glenn Underground",
+  "album": "A Story of Deepness",
+  "year": 1998,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Nite Life Collective（catno NLC 007，US 1998）",
+  "why": "Glenn Crocker 在 1998 年為芝加哥自營廠牌 Nite Life Collective 做的整張長篇，是他從 Cajual／Relief 的 12 吋工作轉向 house 專輯形態的第一步；MB 名下 87 個 release-group 裡 primary-type=Album 只有 10 個，這是最早的兩張之一。實掃 seed_cards.json 全 14,424 列：Glenn Underground 池中只有 1 張《Atmosfear》（1996，Cajual），那是 12 吋時期的代表，本張補在它旁邊剛好把「Cajual 12 吋 → 自營廠牌專輯」這兩段接上。來源：MB release-group 69b175c9 轄下兩個 release 的 label-info（Nite Life Collective NLC 007 與 NLC 30072）。",
+  "risk": "撞卡：實掃全池，Glenn Underground 名下只有《Atmosfear》，《A Story of Deepness》不在池中；與 c-40／c-70／c-82／c-97 四批清單逐筆比對，皆無。掛名分裂有兩個來源：(a) MB 另有實體 `Jellybean`（bcd18849，disambiguation「Glenn Crocker aka Glenn Underground」）；(b) 1995 年《Boo Williams vs. Glen Underground》那張 MB 把姓氏寫成 `Glen`（少一個 n）——兩者都寫進 queryAlias。年份分歧：無，MB 兩個 release 都記 1998。刻意不釘的《Lounge Excursions》年份是本批查證過的重點（見 mbNote）。再發 status：兩個 release 皆 Official。封面 CAA：release-group 69b175c9 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 69b175c9-e930-3c70-aa48-d83f8c5b9479。回問確認：title「A Story of Deepness」、artist-credit「Glenn Underground」、first-release-date 1998、primary-type Album、secondary-types 空、轄下 2 個 release（皆 1998 US Nite Life Collective，NLC 007 與 NLC 30072，皆 Official）。藝人 MBID dde821f9-8847-4dc4-a20a-d909d869567b（Person／United States／1971，裁定 179 回問已做），分頁全列 87 個 RG，primary-type=Compilation 0 個。刻意不釘：983b7fa7-4cde-4b26-93b0-533955f9f35c《Lounge Excursions》（Guidance GDRC603——這張本來是本批的首選，但 MB first-release-date 與 Discogs master 48011 都記 2000 年，已超出本批 1980s–90s 的窗口，故改釘 1998 那張）、6edbbbd6-70a3-360c-87ef-fd1c36a1e424《Atmosfear》（池中已有）、351261fc《Boo Williams vs. Glen Underground》（雙人分享盤、掛名拼法不同）、61b31ebc 與 6c2f82d4 兩個《Black Resurrection》（2004／2016 同名雙胞胎）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Gemini Imagine-A-Nation；Imagine A Nation；Spencer Kincy",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Gemini",
+  "album": "Imagine-A-Nation",
+  "year": 1997,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Relief Records（catno RR778，US 1997）",
+  "why": "Spencer Kincy 以 Gemini 之名替 Relief 做的長篇，1997 年他在 Relief、Cajual 與 Peacefrog 之間一年出七、八張 12 吋的高峰期產物，也是 Relief 少數幾張以「專輯」規格編號發行的碟（RR778）。他 1998 年之後淡出，這批 1997 年的作品是他留下的完整目錄核心。實掃 seed_cards.json 全 14,424 列：Gemini 池中 0 張；池中同屬 Relief／Cajual 系統的只有 Green Velvet 2 張與 Derrick Carter 1 張，Kincy 這條線整段是空的。來源：MB release-group 5d6b0b97 轄下 release 的 label-info（Relief RR778）。",
+  "risk": "撞卡：實掃全池，Gemini 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。⚠ 短掛名同名實體：`Gemini` 在 MB 上至少三個實體——385d09fa（本張，Spencer Kincy）、aa16bd99（密西根匈牙利裔雙胞胎民謠）、3f3ca113（英國電子製作人 Thomas Slinger），依裁定 179 已回問 area／type／disambiguation 分辨，釘的是 385d09fa。盤名連字號：`Imagine-A-Nation` 用的是 ASCII 連字號 U+002D，不是 en dash；Apple 那筆寫成《Imagine - A - Nation》（帶空格），跨批比對會摺掉，已在 queryAlias 補。再發 status：唯一 release 是 1997 US Relief，Official。封面 CAA：release-group 5d6b0b97 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group 5d6b0b97-f449-368c-ad40-6f91eb151f37。回問確認：title「Imagine-A-Nation」、artist-credit「Gemini」、first-release-date 1997、primary-type Album、secondary-types 空、轄下 1 個 release（1997 US Relief Records RR778，Official）。藝人 MBID 385d09fa-1866-408c-8d15-9c7324494463（Person／United States／disambiguation「Spencer Kincy, Chicago house producer」），分頁全列 25 個 RG，primary-type=Compilation 0 個。刻意不釘：28f76675-1585-3d30-9951-f2ab9490a815《In and Out of Fog and Lights》（1997，同年另一張 Album，Peacefrog）、abb779d5-660c-3cda-8a07-c4f35129e74f《In Neutral》（1997，同年第三張）、1df2d6d1-4d33-3b0f-9f3f-ed94dfe09322《The Music Hall》（1999）、6442b14a-f3be-445b-8408-46a4769f61a2《The Beginning》（2018，Album+[Compilation] 的後世整編）、532a78d6《Live at Deep in the Flowers, Dallas》（1996，Album+[Live]）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Roy Davis Jr The Secret Mission；Roy Davis, Jr.",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Roy Davis Jr.",
+  "album": "The Secret Mission",
+  "year": 1995,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Power Music Records（catno MUCD-005，US 1995）",
+  "why": "Roy Davis Jr. 名下最早的長篇，錄於他離開 Phuture、開始替 Power Music 與 Strictly Rhythm 做製作的那幾年；MB 名下 44 個 release-group 裡 primary-type=Album 只有 6 個，這是年份最早的一張。他後來以〈Gabriel〉（1996）進入英國 UK garage 的敘事，但那之前的芝加哥時期一直沒有進池。實掃 seed_cards.json 全 14,424 列：Roy Davis Jr. 池中 0 張；池中的 Phuture 只有《Acid Tracks》1 張，DJ Pierre 只有《Wild Pitch: The Story》1 張——Phuture 這一支的三個成員裡只有他整段缺席。來源：MB release-group f53d1dc5 轄下 release 的 label-info（Power Music MUCD-005）。",
+  "risk": "撞卡：實掃全池，Roy Davis Jr. 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無（c-40 收了 Phuture 線的鄰居但沒有這一位）。掛名：MB artist-credit 是 `Roy Davis Jr.`（帶句點），Apple 側同形；另有無句點的 `Roy Davis Jr` 寫法，已補 queryAlias。年份分歧：無，MB 唯一 release 記 1995。再發 status：Official。封面 CAA：release-group f53d1dc5 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group f53d1dc5-1e95-3683-9cf6-18d2d1bab150。回問確認：title「The Secret Mission」、artist-credit「Roy Davis Jr.」、first-release-date 1995、primary-type Album、secondary-types 空、轄下 1 個 release（1995 US Power Music Records MUCD-005，Official）。藝人 MBID a58a5d1f-9467-4df4-a157-eabb24d6bf28（Person／United States／1970），分頁全列 44 個 RG，primary-type=Compilation 0 個。刻意不釘：4fc5e3e6-20d7-3dbb-b181-4d048d16494c《Soul Electrica》（1999，Album+[Compilation]）、fac73670-760e-3bf4-8d6f-c634c80e055e《Traxx From the Nile》（2000，Album+[Compilation]）、862fe378-d835-303d-9614-9391b5e5a949《Chicago Forever》（2004，晚期）、e4b35f09《Water for Thirsty Children》（2005）、34716ac7《God Life Music》（2009）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "DJ Sneak Blue Funk Files；Sneak；Carlos Sosa",
+  "reissuedBy": "Rhythm REPUBLIC（1997，RRCD-85139／JP）",
+  "g": "a",
+  "artist": "DJ Sneak",
+  "album": "Blue Funk Files",
+  "year": 1996,
+  "genres": [
+   "electronic"
+  ],
+  "label": "Relief Records（catno RR771，US 1996）；同年 Ultra Records（ULTRA 2002）同步發行",
+  "why": "DJ Sneak 從波多黎各移居芝加哥後在 Relief 出的第一張長篇，是「濾波 disco house」這個做法在 1996 年被整理成專輯的代表；此前他名下全是 Cajual／Relief 的 12 吋，MB 記錄 104 個 release-group、primary-type=Album 只有 9 個，這是最早的兩張之一。實掃 seed_cards.json 全 14,424 列：DJ Sneak 池中 0 張；池中 Relief／Cajual 這條線目前只有 Green Velvet 2 張、Derrick Carter 1 張、Paul Johnson 1 張，Sneak 是這批人裡流通量最大卻整段缺席的一位。來源：MB release-group ea89f17b 轄下三個 release 的 label-info。",
+  "risk": "撞卡：實掃全池，DJ Sneak 0 張；與 c-40／c-70／c-82／c-97 逐筆比對皆無。掛名：MB artist-credit `DJ Sneak`，另有 `Sneak` 的簡寫；本名 Carlos Sosa 已補 queryAlias。同盤雙筆：MB 轄下有兩個 1996 US release（Ultra ULTRA 2002 與 Relief RR771），是同一張碟的兩家發行，不是兩張碟——年份取 1996、廠牌以 Relief 為主並在 label 欄同時記 Ultra。再發 status：三個 release 皆 Official。封面 CAA：release-group ea89f17b 回 200。Apple 探測未完成。",
+  "mbNote": "釘 release-group ea89f17b-a88c-3573-9016-7a0e89abfb05。回問確認：title「Blue Funk Files」、artist-credit「DJ Sneak」、first-release-date 1996、primary-type Album、secondary-types 空、轄下 3 個 release（1996 US Ultra ULTRA 2002／1996 US Relief RR771／1997 JP Rhythm REPUBLIC RRCD-85139，全數 Official）。藝人 MBID 0319d75e-4100-4cd0-aa84-175335ed6e42（Person／United States／1969／disambiguation「Chicago house DJ/producer」），分頁全列 104 個 RG，primary-type=Compilation 0 個（Album+[Compilation] 有 9 個）。刻意不釘：93d8dad9-98f0-32fd-a378-53a653c8421f《Rice and Beans, Please!》（1996，同年另一張 Album）、1a90d253-2b51-3119-9c60-727123679a73《Dancin’》（1997）、aff4a0ed-1791-3400-8c22-d47ed66c49fc《Buggin' da Beats》（1997，Album+[DJ-mix]）、b065fd36-277f-385d-86f8-e36f8ca939b6《The Future Sound of Chicago》（1995，群星合輯性質的 Album+[Compilation]）、93722d14《Fabric 62》（2012，DJ mix）。"
+ }
+]
