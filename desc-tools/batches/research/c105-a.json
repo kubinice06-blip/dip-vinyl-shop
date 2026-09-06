@@ -570,5 +570,441 @@
   "status": "full",
   "yearVerified": "一致，2007。MB release-group first-release-date **2007-11-01**、其下原版三筆 release 全部記 2007-11-01、Apple 854885986 的 releaseDate **也是 2007-11-01**、℗ 2007，英文維基 infobox 記 **November 1, 2007**。四處同年同月同日。⚠ **但同一個 release-group 裡的改版《Baby Baby》記 2008-03-13、Apple 上那一筆（854886469）的 ℗ 是 2008**，若配對抓到改版，年份會被拉到 2008。⚠⚠ **更危險的是同名日版**：MB 名下另有 2011-06-01 的《GIRLS' GENERATION》（4ae417a1）、Apple jp 上是 1440769276（12 軌、℗ 2011 NAYUTAWAVE／UNIVERSAL MUSIC LLC），**盤名完全相同、年份差四年**。**「取最早那筆」在這張上不會選錯（2007 就是最早），但「取名稱完全相符那筆」會有三個候選。**",
   "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面。** 覆核結果：`jp` **854885986** 的 11 軌逐位置與 MB 的 KR 原版相符、11 軌全有 previewUrl、`trackCount` 欄與曲目列都是 11。**這一筆不是日版**——同一個 collectionId 在 **us** 店面的藝人頁目錄裡也列得到、℗ 2007 SM Entertainment。依 c-105 rulings 第 3 條，**建議主線把店面改記成 us（同一個 id 854885986，不必換 id）**。不改 `previews.json`，交主線補。\\n**⚠⚠ 本組最嚴重的韓版／日版陷阱在這張，而且探測層這次是運氣好。** Apple **jp** 店面的該團目錄裡，標題以「Girls' Generation」開頭的專輯有三筆：本卡的 854885986（2007、11 軌、℗ SM）、**1440769276（2011-06-01、12 軌、℗ NAYUTAWAVE RECORDS／UNIVERSAL MUSIC LLC ——這是日版出道正規盤，盤名與本卡完全相同）**、1443318186《Re:Package \"Girls' Generation\" - The Boys》（2011、15 軌、同樣 NAYUTAWAVE）。MB 也有對應的 4ae417a1《GIRLS’ GENERATION》2011-06-01。**分辨只能靠 ℗ 欄（SM 對 NAYUTAWAVE／UNIVERSAL）與軌數（11 對 12 對 15），盤名完全幫不上忙。**這是 c-43 那條教訓在本批的最尖銳版本，**請主線把這三個 id 一起記進 c-105 的 rulings**。\\n**策展層「出道正規盤、自我同名」查證屬實、可以寫**：MB 藝人頁 10 筆 Album 依日期排序本張最前、英文維基寫 the debut studio album 且 prev_title 欄是空的。自我同名這一點在 MB、Apple、維基三處都成立（與同批的 신화 那張不同）。\\n⚠ **但同一份 MB 排序不能拿來數後面的序數**：10 筆裡的《GIRLS' GENERATION》(2011)、《GIRLS' GENERATION II》(2012)、《LOVE&PEACE》(2013) 是日版正規盤。\\n**改版《Baby Baby》是本張最近的假陽性**：同一個 release-group、14 軌、Apple 上（854886469）**releaseDate 沿用 2007-11-01、只有 ℗ 是 2008**，日期欄分不開。`curatorWhy` 已經提到它，這裡確認軌數是 11 對 14。\\n**撇號**：MB 的 artist-credit 與 2011 日版都用彎撇號 `Girls’ Generation`，Apple 與卡單用直撇號。依 c-105 rulings 第 1 條的裁示取直撇號，本次覆核沒有異議。"
+ },
+ {
+  "key": "desc2:Girls' Generation|Gee",
+  "artist": "Girls' Generation",
+  "album": "Gee",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 9a8757c6 的欄位：title「Gee」、artist-credit「Girls’ Generation」（藝人實體 b7442f18，KR、Group）、first-release-date **2009-01-05**、**primary-type EP**、secondary-types **空**。轄下 5 個 release：KR 的 Digital Media（2009-01-05，SM Entertainment，5 軌）、**KR 的 CD（2009-01-09，SM Entertainment，catno SMCD-178，Digipak，barcode 8809049754354，5 軌）**、XW 的 Digital Media（2009-01-05，題《Gee: The First Mini Album》，barcode 888735899607，5 軌）、**CN 的 CD（2009-06，天凯唱片，catno CBM0422，Digipak，barcode 9787885165765，5 軌）**、一筆 Pseudo-Release。**五筆都是 5 軌，數位比實體 CD 早四天。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/9a8757c6-d6ef-30ef-9a2b-ff10a9624a83?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（a82ab6d3，2009-01-09，SM SMCD-178）的逐軌曲目與長度：1〈Gee〉3:22、2〈힘내! (Way To Go)〉3:04、3〈Dear. Mom〉4:06、4〈Destiny〉3:26、5〈힘들어하는 연인들을 위해 (Let's Talk About LOVE)〉4:12。**5 軌，總長約 18 分鐘**；最短〈힘내!〉3:04、最長的收尾曲〈힘들어하는 연인들을 위해〉4:12。**同名曲〈Gee〉排在第 1 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9a8757c6-d6ef-30ef-9a2b-ff10a9624a83&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 854911623：collectionName「Gee - EP」、artistName「Girls' Generation」、releaseDate **2009-01-05**（與 MB 的數位那筆同日）、℗ 2009 SM Entertainment、trackCount 5。`entity=song` **攤得出 5 軌、5 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR CD 逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 5、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=854911623&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "英文維基〈Gee (EP)〉的 infobox 與首句：**the first extended play (EP)**、released by SM Entertainment on **January 7, 2009**、**錄音 2008 年 11 月至 12 月**於 SM Studios（首爾）、曲風 K-pop、總長 **18:06**、語言韓語、廠牌 SM 與 Dreamus、**製作이수만（Lee Soo-man）一人**、prev_title《Girls' Generation》(2007)、next_title《Genie》(2009)。唯一的宣傳曲〈Gee〉記 2009-01-05。Personnel 節只列兩行：Girls' Generation 擔任主唱與和聲、이수만擔任製作。Release history 表列出南韓、菲律賓、台灣三個發行地。",
+    "src": "https://en.wikipedia.org/wiki/Gee_(EP)"
+   },
+   {
+    "f": "⚠ **同名警訊**：MB 藝人頁分頁全列 Girls' Generation 名下 53 個 release-group，其中另有一筆 **2010-10-20 的 Single 也叫《Gee》（548ca5eb）**——那是本張的日文版單曲，比本張晚一年九個月。**方向是後行不是先行，「取最早那筆」不會選錯，但「取名稱完全相符那筆」會有兩個候選。**同一份藝人頁裡，本張是 primary-type=EP、2009-01-05，排在 2007-11-01 的出道正規盤與 2009-06-29 的《Genie》之間。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b7442f18-d9be-4185-8b51-482510046156&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 357463500，us，entity=album，回 34 筆、未觸及 200 上限）在 SM 那一套裡把 Girls' Generation 2007–2010 的作品依序列出：Into the New World - EP (854926859, 2007-08-03, 4 軌)、Girls' Generation (854885986, 2007-11-01, 11 軌)、Baby Baby Repackaged (854886469, 14 軌)、**Gee - EP (854911623, 2009-01-05, 5 軌)**、Genie - EP (854915051, 2009-06-29, 6 軌)、Oh! (854890642, 2010-01-28, 11 軌)、Run Devil Run (854890807, 2010-03-22, 15 軌)、Hoot - EP (871021351, 2010-10-25, 5 軌)。**《Gee》在 Apple 的分類是 EP、與 MB 的 primary-type 一致。**",
+    "src": "https://itunes.apple.com/lookup?id=357463500&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 這個 release-group 的流通範圍：轄下五筆裡有 **KR 兩筆 Official（數位 2009-01-05、CD 2009-01-09）加 CN 一筆 Official 實體 CD（2009-06，天凯唱片 CBM0422，Digipak，帶 ISBN 型 barcode 9787885165765）**，另有 XW 數位一筆。英文維基的 Release history 表另列菲律賓與台灣。**同一張五軌的迷你專輯在 MB 上就有兩個國家的實體盤建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9a8757c6-d6ef-30ef-9a2b-ff10a9624a83&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "五軌十八分鐘，錄音只花了 2008 年的十一月到十二月兩個月",
+   "同名那首排第一軌、收尾那首題〈給那些正在受苦的戀人們〉——十八分鐘裡從最亮走到最重"
+  ],
+  "sound": "MB 記五筆 release（KR 數位 2009-01-05、KR CD 2009-01-09 SMCD-178、XW 數位、CN CD 2009-06 天凯唱片、一筆 Pseudo-Release），**全部 5 軌**；Apple us 854911623 的逐軌長度與 MB 的 KR CD 相同到 3 秒內。維基記總長 **18:06**、錄音 2008 年 11 月至 12 月於 SM Studios（首爾）、曲風欄只寫 K-pop 一項、製作이수만一人、Personnel 節只列兩行。五軌落在 3:04–4:12：同名曲〈Gee〉3:22 排第 1 軌，第 2 軌〈힘내! (Way To Go)〉3:04 是全碟最短，第 3 軌〈Dear. Mom〉4:06 與收尾〈힘들어하는 연인들을 위해 (Let's Talk About LOVE)〉4:12 是僅有的兩首破四分。曲序上英文題與諺文題交錯。",
+  "keyTracks": [
+   "Gee",
+   "Dear. Mom",
+   "힘들어하는 연인들을 위해 (Let's Talk About LOVE)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2009。MB release-group first-release-date **2009-01-05**、其下 KR 數位與 XW 數位同為 2009-01-05、**KR 的實體 CD 是 2009-01-09（晚四天）**、CN 的實體 CD 是 2009-06、Apple us 854911623 的 releaseDate **2009-01-05**、℗ 2009，英文維基 infobox 記 **January 7, 2009**（介於數位與實體之間）。四處同為 2009，日期在 1/5、1/7、1/9 之間差四天，**行文只寫年份**。**同名先行單曲：無；但有同名後行單曲**——MB 藝人頁另有 2010-10-20 的 Single《Gee》（548ca5eb，日文版單曲），比本張晚一年九個月。「取最早那筆」不會選錯。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **854911623**（5 軌全有 previewUrl，曲名／曲序與 MB 的 KR CD 逐位置相符、逐軌長度相同到 3 秒內，`trackCount` 欄與曲目列都是 5）。不改 `previews.json`，交主線補。\\n**這張沒有序數主張要擋**：`curatorWhy` 寫的是「出道盤之後的迷你專輯」，只講先後。⚠ **但英文維基首句寫「the first extended play (EP)」——如果下游想寫「第一張迷你專輯」，那是有來源的**，而且 MB 藝人頁的 EP 排序也支持（2009-01-05 排在 2009-06-29 的《Genie》之前）。**不過該團 2007-08-03 另有一張《Into the New World - EP》（Apple 854926859，4 軌），Apple 把它也分類為 EP**——若照 Apple 的分類數，《Gee》就不是第一張 EP。**兩份來源打架，行文一律不得寫「第一張迷你專輯」。**\\n**`exceptionReason` 走 asia-mini-album 白名單的理由我逐一核過**：①MB 以獨立 release-group 建檔（確認，9a8757c6）；②「轄下兩筆 KR Official 實體盤加上 CN 一筆」——**要修正：KR 的兩筆 Official 裡只有一筆是實體 CD（SMCD-178），另一筆是 Digital Media**；CN 那筆確實是實體 CD（天凯唱片 CBM0422）。**所以實體盤是 KR 一筆＋CN 一筆共兩筆，不是三筆。**流通跨兩國這件事仍然成立，白名單資格不受影響。③「英文維基為它獨立立條並記錄其榜單與獎項紀錄」——**獨立立條確認，但那個條目非常短，Personnel 節只有兩行、Charts 一節本次抓到的 wikitext 裡沒有實質內容**，⚠ **「記錄其榜單與獎項紀錄」這句在本次查到的來源裡撐不住，行文不得引用該 EP 條目的榜單或獎項。**\\n**⚠ 韓版／日版**：本張本身沒有日版專輯的混淆，但**同名的 2010 年日文版單曲（MB 548ca5eb）存在**，且該團在 Apple jp 上另有 NAYUTAWAVE／UNIVERSAL 發行的日版一批（見同批《Girls' Generation》那張卡的 notes）。配對走 collectionId。\\n`curatorWhy` 說「另有 CN 與 XW 各一筆」——確認屬實，CN 那筆是 2009 年 6 月天凯唱片的實體 Digipak。"
+ },
+ {
+  "key": "desc2:2NE1|2NE1 1st Mini Album",
+  "artist": "2NE1",
+  "album": "2NE1 1st Mini Album",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group de639ef7 的欄位：title「2NE1 1st Mini Album」、artist-credit「2NE1」（藝人實體 e119e5ff，KR、Group）、first-release-date **2009-07-08**、**primary-type EP**、secondary-types **空**。轄下 **10 個 release、全部 Official，跨五個市場**：KR 3 筆（2009-07-08 的 CD，YG Entertainment，catno **CMBC-9136**，barcode 8809231386325，**7 軌**；2009-07-08 的數位，7 軌；2011-05-07 的 CD，YG，catno YGK 0049，7 軌）、**JP 3 筆（2011-03-16，rhythm zone RZCD-46864 的 CD 10 軌、rhythm zone RZCD-46863 的 CD 10 軌＋DVD 2 軌、YGEX 的數位 10 軌，題名全部作《2NE1》）**、TH 2 筆（2010-07-06 的 CD 11 軌、2010-08-20 的 CD 11 軌＋DVD-Video 5 軌）、PH 1 筆（2010，CD 11 軌＋DVD-Video 5 軌）、XW 1 筆（2009-07-08，數位 7 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/de639ef7-9c47-46b3-8763-1da763ed3f98?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "⚠ **同一個 release-group 底下有三種軌數**：**KR／XW 原版 7 軌**、**JP 版 10 軌（題名改成《2NE1》、2011-03-16、rhythm zone／YGEX）**、**TH／PH 版 11 軌（2010）**。卡單釘的是韓版 7 軌那一組。**這是 c-43 那條「日版與韓版會混」的教訓在本批的具體形狀——差的不是年份而是軌數，而且日版連盤名都改掉了。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=de639ef7-9c47-46b3-8763-1da763ed3f98&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 那筆 KR CD 原版（71914f81，2009-07-08，YG CMBC-9136）的逐軌曲目與長度：1〈Fire〉3:46、2〈I Don't Care〉4:01、3〈In the Club〉3:48、4〈Let's Go Party〉3:51、5〈Pretty Boy〉3:28、6〈Stay Together〉3:47、7〈Lollipop〉3:08。**7 軌**，最短的收尾曲〈Lollipop〉3:08、最長〈I Don't Care〉4:01，中間五軌全部落在 3:28–3:51。**七首全部是英文題，一首諺文題都沒有。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=de639ef7-9c47-46b3-8763-1da763ed3f98&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music collectionId 1339060465（探測層釘 jp 店面、但 **us 店面的 2NE1 藝人頁目錄裡也列得到同一個 id**）：collectionName「2NE1 1st Mini Album」（**與 MB 標題完全相同**）、artistName「2NE1」、releaseDate **2009-07-08**（與 MB 同日）、℗ 2009 YG Entertainment、trackCount 7。`entity=song` **攤得出 7 軌、7 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原版逐位置相符，**逐軌長度比 MB 一律短 3053 毫秒、偏移量完全固定**（222840／238213／224467／228280／205147 對 MB 的 225893／241266／227520／231333／208200），是同一份母帶。**這是韓版 7 軌，不是日版 10 軌。**",
+    "src": "https://itunes.apple.com/lookup?id=1339060465&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 329155759，us，entity=album，回 34 筆、未觸及 200 上限）顯示 2NE1 名下同樣分成兩套：**YG Entertainment 的韓版**（2NE1 1st Mini Album 1339060465 2009-07-08 7 軌、2NE1 2nd Mini Album - EP 1338689900 2011-07-28 6 軌、To Anyone 1336366693 2010-09-09 12 軌、Crush 1317764593 2014-02-27 10 軌）與 **AVEX 的日版**（NOLZA - EP 463402622 2011-07-28 5 軌、COLLECTION 510287557 2012-03-28 11 軌、CRUSH 887792618 2014-06-25 10 軌、WELCOME BACK 1783031511 2024-12-25 15 軌）。**兩套的 ℗ 欄分得很開。**",
+    "src": "https://itunes.apple.com/lookup?id=329155759&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "英文維基〈2NE1 (2009 EP)〉的 infobox 與首段：**the debut extended play (EP)**、**別名寫 2NE1 1st Mini Album**、YG Entertainment 於 **2009-07-08** 以數位與實體形式發行、曲風 K-pop／hip hop／R&B／electropop／dance-pop、總長 **25:31**、語言韓語、**製作是테디（Teddy Park）與 Kush 兩人**、next_title《To Anyone》(2010)、prev 欄空。三首宣傳曲：LG Cyon 的商業合作單曲〈Lollipop〉(2009-03-27)、〈Fire〉(2009-05-06)、〈I Don't Care〉(2009-07-01)。首段另記本作在南韓成為 **2009 年女性藝人銷量第一、整體第三**，並在泰國、菲律賓、日本等亞洲市場發行，**日版由 avex 的 Rhythm Zone 於 2011-03-16 推出**。",
+    "src": "https://en.wikipedia.org/wiki/2NE1_(2009_EP)"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 2NE1 名下 33 個 release-group，primary-type=Album 且 secondary-types 為空的只有 2 筆（《To Anyone》2010-09-13、《CRUSH》2014-02-27），**本張是 EP、排在兩者之前**。名下沒有第二筆叫《2NE1 1st Mini Album》的 release-group，**沒有同名先行單曲**。⚠ 但要注意 **MB 上有一筆 2011 年的 EP《2NE1》（即第二張迷你專輯，Apple 題《2NE1 2nd Mini Album》）**，以及本張日版所用的《2NE1》這個題名——**「2NE1」這個字串同時是團名、日版盤名與第二張迷你專輯的 MB 題名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e119e5ff-0de0-421c-a630-0516c6acede8&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "七首歌全部是英文題，一首諺文題也沒有——2009 年的首爾出道盤，封面上連盤名都直接寫「1st Mini Album」",
+   "同一張碟在 MB 上有三種軌數：韓國 7 軌、泰國與菲律賓 11 軌、日本 10 軌而且改名叫《2NE1》"
+  ],
+  "sound": "MB 記十筆 release、跨 KR／JP／TH／PH／XW 五個市場，**軌數卻有三種**：韓版與 XW 數位 7 軌、TH／PH 版 11 軌（2010，附 DVD-Video 5 軌）、JP 版 10 軌（2011-03-16，rhythm zone／YGEX，題名改成《2NE1》）。卡單釘韓版 7 軌那一組。Apple 1339060465 的逐軌長度比 MB 一律短 3053 毫秒、偏移量完全固定，是同一份母帶。維基記總長 **25:31**、曲風欄列五項（K-pop／hip hop／R&B／electropop／dance-pop）、製作是테디與 Kush 兩人。七軌全部英文題，最長〈I Don't Care〉4:01、最短的收尾曲〈Lollipop〉3:08，中間五軌擠在 3:28–3:51。三首宣傳曲在曲序上分別是第 1 軌〈Fire〉、第 2 軌〈I Don't Care〉與第 7 軌〈Lollipop〉——**頭兩軌加最後一軌，中間四軌沒有一首出過單曲**。",
+  "keyTracks": [
+   "Fire",
+   "I Don't Care",
+   "Lollipop"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2009。MB release-group first-release-date **2009-07-08**、其下 KR CD／KR 數位／XW 數位三筆**全部同為 2009-07-08**、Apple 1339060465 的 releaseDate **也是 2009-07-08**、℗ 2009，英文維基 infobox 記 **July 8, 2009**。**四處同年同月同日。**⚠ **但同一個 release-group 裡有 2010（TH／PH）與 2011（JP 與 KR 再版）的 release**，若配對抓到那幾筆，年份會被拉到 2010 或 2011。**同名先行單曲：無**——但〈Lollipop〉這首在 2009-03-27 先以商業合作單曲形式發過（Apple us 1643628200／1695516903，1 軌，同時掛在 BIGBANG 與 2NE1 名下），**那是曲名同名不是盤名同名**。",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面。** 覆核結果：`jp` **1339060465** 的 7 軌逐位置與 MB 的 KR 原版相符、7 軌全有 previewUrl、`trackCount` 欄與曲目列都是 7、逐軌長度偏移量固定在 3053 毫秒。**這一筆是韓版 7 軌、不是日版 10 軌**——同一個 collectionId 在 **us** 店面的藝人頁目錄裡也列得到、℗ 2009 YG Entertainment。依 c-105 rulings 第 3 條，**建議主線把店面改記成 us（同一個 id，不必換）**。不改 `previews.json`，交主線補。\\n**⚠ 這張是本組「日版與韓版差在軌數」最清楚的一張，而且探測層這次也是運氣好。** MB 同一個 release-group 底下：**韓版 7 軌、TH／PH 版 11 軌、JP 版 10 軌且盤名改成《2NE1》**。若有人以「2NE1」這個字串在 jp 店面配對，很可能拿到 avex 那一套。**Apple 上分辨的關鍵是 ℗ 欄（YG 對 AVEX）與軌數（7 對 10 對 11）。**\\n**這張沒有序數主張要擋**：`curatorWhy` 寫的是「出道迷你專輯——序數出自盤名本身」，這個寫法正確且安全，MB 與 Apple 的題名都寫著 1st Mini Album、英文維基寫 the debut EP，**三處一致**。\\n**`exceptionReason` 走 asia-mini-album 白名單的核心理由——跨市場流通規模——查證屬實**：MB 轄下確實是 KR 3／JP 3／TH 2／PH 1／XW 1 共十筆，**全部 Official**。這是本組六張迷你專輯裡 release 數最多的一張。\\n⚠ **但要提醒一件 `exceptionReason` 沒說的**：那十筆裡有六筆不是韓版（JP 3、TH 2、PH 1），**其中五筆的軌數與韓版不同**。「流通最廣」這個判準成立，但**行文不得用那十筆去講「這張碟有多少首歌」**。\\n**「2NE1」這個字串在本張上同時是團名、日版盤名與第二張迷你專輯的 MB 題名**，行文提到盤名時請用完整的《2NE1 1st Mini Album》。\\n可寫的商業事實（維基有具名來源）：2009 年南韓女性藝人銷量第一、整體第三。**這是銷量榜不是媒體榜，依 c-111 裁定 2 可寫，但建議改寫成不帶名次的敘述。**"
+ },
+ {
+  "key": "desc2:f(x)|Pinocchio",
+  "artist": "f(x)",
+  "album": "Pinocchio",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3309f265 的欄位：title「Pinocchio」、artist-credit「f(x)」（藝人實體 37fa0bfd，KR、Group）、first-release-date **2011-04-20**、primary-type Album、secondary-types **空**。轄下 10 個 release 全部 Official，**分成兩組**：**原版 10 軌**（2011-04-20）——KR CD（SM Entertainment，catno **SMCD-218**，barcode 8809049756570）、KR 數位、XW 數位三筆（其中一筆題《피노키오 Pinocchio》）、一筆國別未填的數位；**改版 14 軌題《Hot Summer》**（2011-06-14）——KR CD（SM，catno **SMCD-220**，packaging Book，barcode 8809049757232）、KR 數位、XW 數位兩筆、一筆國別未填。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3309f265-d370-4920-8a30-04026455611f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD 原版（316697d0，2011-04-20，SM SMCD-218）的逐軌曲目與長度：1〈피노키오〉3:09、2〈빙그르〉3:28、3〈Dangerous〉3:14、4〈Beautiful Goodbye〉4:06、5〈Gangsta Boy〉3:08、6〈아이〉3:14、7〈Stand up!〉3:55、8〈My style〉3:41、9〈So into you〉3:34、10〈Lollipop〉3:11。**10 軌**，最短〈Gangsta Boy〉3:08、最長〈Beautiful Goodbye〉4:06 是全碟唯一破四分的曲子。**同名曲〈피노키오〉排第 1 軌、用諺文題。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3309f265-d370-4920-8a30-04026455611f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 854892507：collectionName「Pinocchio - The 1st Album」、artistName「f(x)」、releaseDate **2011-04-20**（與 MB 同日）、℗ 2011 SM Entertainment、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原版逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=854892507&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **改版在 Apple 上是另一個 collectionId**：同一份 us 藝人頁目錄（artistId 425076892，回 17 筆、未觸及 200 上限）另有 **854892762《Hot Summer》2011-06-14、14 軌、℗ 2011 SM Entertainment**——那是 MB 同一個 release-group 底下的改版。**盤名完全不同（Pinocchio 對 Hot Summer），字串比對抓不到；分辨靠軌數 10 對 14 與日期 4/20 對 6/14。**同一目錄裡還有 854928718《NU ABO - EP》2010-05-04（6 軌）與 1017693587《SUMMER SPECIAL Pinocchio / Hot Summer - Single》2015-07-22（2 軌，℗ AVEX MUSIC CREATIVE，**日版單曲**）。",
+    "src": "https://itunes.apple.com/lookup?id=425076892&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 f(x) 名下 20 個 release-group，primary-type=Album 且 secondary-types 為空的只有 4 筆，依 first-release-date 排序為 **《Pinocchio》2011-04-20**、《Pink Tape》2013-07-29、《Red Light》2014-07-07、《4 Walls》2015-10-27——**本張排最前，而且這四筆全部是韓版、沒有日版正規盤混進來**。名下另有 2015-07-22 的 Single《SUMMER SPECIAL Pinocchio / Hot Summer》（a0a3c5a4）標題含 Pinocchio，**那是四年後的日版單曲、不是先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=37fa0bfd-8bf7-422c-a97a-f8deda49b3a4&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Pinocchio (f(x) album)〉的 infobox 與首句：**the debut studio album**、released on **April 20, 2011** by SM Entertainment、錄音 **2009–2011** 於 SM Studios（首爾）、曲風 K-pop／dance-pop／electronica／electro-rock、**總長 33:27，改版 47:47**、語言韓語、製作이수만、prev_title《Nu ABO》(2010)、next_title《Electric Shock》(2012)。主打曲〈Pinocchio (Danger)〉於 2011-04-17 先以數位單曲發行、比專輯早三天。infobox 另附改版《Hot Summer》的封面與其主打曲〈Hot Summer〉(2011-06-14)。首段另記本作是 **2011 年南韓年度銷量第 19 名的專輯**。",
+    "src": "https://en.wikipedia.org/wiki/Pinocchio_(f(x)_album)"
+   },
+   {
+    "f": "MB 這個 release-group 的兩組 release 在包裝上也分得開：原版 KR CD（SMCD-218）的 packaging 欄是空的、改版 KR CD（SMCD-220）的 packaging 欄寫 **Book**；兩者 catno 只差 218 與 220、barcode 分別是 8809049756570 與 8809049757232。**同一個 release-group、兩張碟、兩個目錄號。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3309f265-d370-4920-8a30-04026455611f&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十首歌裡只有〈Beautiful Goodbye〉破四分，其餘九首全部三分出頭——三十三分鐘走完一張正規盤",
+   "主打曲比專輯早三天上線，兩個月後同一張碟換上《Hot Summer》的封面再賣一次"
+  ],
+  "sound": "MB 這個 release-group 底下有兩組 release：**原版 10 軌（KR CD SMCD-218，2011-04-20）與 2011-06-14 的改版 14 軌《Hot Summer》（SMCD-220，packaging Book）**，卡單釘的是原版。Apple us 854892507 就是 10 軌那一版，逐軌長度與 MB 相同到 3 秒內。維基記原版總長 **33:27**、改版 47:47、錄音 2009–2011 於 SM Studios、曲風欄列四項（K-pop／dance-pop／electronica／electro-rock）、製作이수만。十軌落在 3:08–4:06，只有第 4 軌〈Beautiful Goodbye〉破四分，其餘九首全部三分出頭——**是本組 25 張裡長度分布最平的一張正規盤**。同名曲〈피노키오〉用諺文題排第 1 軌，第 2 軌〈빙그르〉與第 6 軌〈아이〉也是諺文題，其餘七軌英文題。收尾〈Lollipop〉3:11。",
+  "keyTracks": [
+   "피노키오",
+   "Beautiful Goodbye",
+   "Gangsta Boy"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。MB release-group first-release-date **2011-04-20**、其下原版五筆 release 全部記 2011-04-20、Apple us 854892507 的 releaseDate **也是 2011-04-20**、℗ 2011，英文維基 infobox 記 **April 20, 2011**。**四處同年同月同日。**⚠ **但同一個 release-group 裡的改版《Hot Summer》記 2011-06-14**（Apple 854892762，14 軌），若配對抓到改版，日期會差兩個月、年份仍是 2011。**同名先行單曲：主打曲〈Pinocchio (Danger)〉2011-04-17 比專輯早三天發數位單曲，但 MB 沒有為它另建 release-group**；MB 名下唯一標題含 Pinocchio 的另一筆是 2015-07-22 的日版單曲《SUMMER SPECIAL Pinocchio / Hot Summer》（a0a3c5a4），**方向是後行不是先行**。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **854892507**（10 軌全有 previewUrl，曲名／曲序與 MB 的 KR 原版逐位置相符、逐軌長度相同到 3 秒內，`trackCount` 欄與曲目列都是 10）。不改 `previews.json`，交主線補。\\n**⚠ 改版《Hot Summer》是本張最近的假陽性、而且盤名完全不同**：MB 同一個 release-group、14 軌、Apple 上是另一個 collectionId **854892762**（2011-06-14）。`curatorWhy` 已經提到，這裡補上 Apple 那一邊的 id 與軌數，**分辨靠 10 對 14 軌與 4/20 對 6/14**。\\n**策展層「第一張正規盤」查證屬實、可以寫**：MB 藝人頁 4 筆 Album 依日期排序本張最前、Apple 目錄自標 The 1st Album、英文維基寫 the debut studio album，**三處一致**。**而且 f(x) 這四筆全部是韓版、沒有日版正規盤混進來**，與同批的 BIGBANG／Girls' Generation 不同，這位藝人的序數是乾淨的。\\n⚠ **`curatorWhy` 有一句要收緊**：「f(x) 在 2009 年單曲《라차타 (LA chA TA)》與 2010 年迷你專輯《NU ABO》之後的第一張正規盤」——**這兩筆在 Apple us 目錄裡都查得到（1078549610《LA chA TA - Single》2009-09-01、854928718《NU ABO - EP》2010-05-04），敘述屬實**；只是 Apple 另有 1077728802《Chu~♡ - The 1st Single》2009-11-09（3 軌），**該團 2009 年不只一張單曲**，行文若要列舉請不要寫成「唯一」。\\n**日版在這張上只有一筆單曲**（1017693587《SUMMER SPECIAL Pinocchio / Hot Summer》2015，℗ AVEX MUSIC CREATIVE，2 軌），不影響正規盤序列。\\n可寫的商業事實（維基有具名來源）：2011 年南韓年度銷量第 19 名。**名次依 c-111 裁定 2 從嚴，建議不寫。**"
+ },
+ {
+  "key": "desc4:SHINee|누난 너무 예뻐 (Replay)",
+  "artist": "SHINee",
+  "album": "누난 너무 예뻐 (Replay)",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 92692dca 的欄位：title「누난 너무 예뻐 (Replay)」、artist-credit「SHINee」（藝人實體 70e5098b，KR、Group）、first-release-date **2008-05-22**、**primary-type EP**、secondary-types **空**。轄下 4 個 release：XW 的 Digital Media（2008-05-22，SM Entertainment，題《Replay》，barcode 8806384555332）、**KR 的 CD（2008-05-23，Official，SM Entertainment，catno SMCD-169，barcode 8809049753661）**、KR 的 Digital Media（2008-05-23）、一筆 Pseudo-Release。**四筆都是 5 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/92692dca-d4b7-396d-b855-400d2b2805af?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（9e6c60c6，2008-05-23，SM SMCD-169）的逐軌曲目與長度：1〈누난 너무 예뻐 (Replay)〉3:36、2〈In my room〉4:50、3〈Real〉3:35、4〈사.계.한 (Love should go on)〉3:11、5〈누난 너무 예뻐 (Replay-Boom Track)〉4:27。**5 軌，其中兩軌是同一首歌的兩個版本**——第 1 軌是主打，第 5 軌是它的 Boom Track 混音；扣掉重複，這張 EP 實際只有四首不同的歌。最長〈In my room〉4:50、最短〈사.계.한〉3:11。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=92692dca-d4b7-396d-b855-400d2b2805af&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 854925787：collectionName「Replay The First Mini Album - EP」、artistName「SHINee」、releaseDate **2008-05-22**（與 MB 的 XW 那筆同日）、℗ 2008 SM Entertainment、trackCount 5。`entity=song` **攤得出 5 軌、5 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR CD 逐位置相符（含收尾的 Boom Track 混音），**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 5、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=854925787&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人頁目錄端點（artistId 433371033，us，entity=album，回 53 筆、未觸及 200 上限）顯示 SHINee 2008–2010 年在 Apple 上的韓版條目依序為：**Replay The First Mini Album - EP (854925787, 2008-05-22, 5 軌)**、The SHINee World - The 1st Album (854889064, **2008-08-28**, 12 軌)、Amigo - The 1st Album Repackage (854890144, 2008-10-29, 15 軌)、ROMEO - The Second Mini Album (854912971, 2009-05-18, 6 軌)、2009, Year Of Us - EP (854916066, 2009-10-14, 6 軌)、The 2nd Album 'Lucifer' (854891682, 2010-07-19, 13 軌)、Hello - The 2nd Album (Repackage) (854892269, 2010-09-30, 16 軌)。**本張與《The SHINee World》相隔三個月又六天，Apple 目錄自己把本張標成 The First Mini Album、把《The SHINee World》標成 The 1st Album。**",
+    "src": "https://itunes.apple.com/lookup?id=433371033&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 SHINee 名下 73 個 release-group，primary-type=Album 且 secondary-types 為空的 13 筆依 first-release-date 排序，**最前面那筆是《The SHINee World》2008-08-28、其次是《LUCIFER》2010-07-19**；本張是 primary-type=EP、2008-05-22，**排在《The SHINee World》之前三個月**。名下沒有第二筆與《누난 너무 예뻐 (Replay)》同名或近名的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70e5098b-c4ae-4cd7-9799-3c1b9b57c753&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Replay (EP)〉的 infobox 與首句：**the debut EP**（諺文原題〈누난 너무 예뻐〉直譯 Noona (Older Girl) Is So Pretty）、released on **May 22, 2008** through SM Entertainment、**錄音 2008 年 4 月至 5 月**、曲風 pop／R&B／dance、總長 **18:50**、語言韓語與英文、prev_title 欄空（確認是出道作）、next_title《The Shinee World》(2008)。主打曲〈Replay〉由유영진製作、走 contemporary R&B；EP 共五軌，在 MIAK 榜開在第 10、最高第 8，2008 年上半年售出 **17,957 張**。編舞是 **Rino Nakasone**，韓版 MV 的女主角是 f(x) 的 Victoria。",
+    "src": "https://en.wikipedia.org/wiki/Replay_(EP)"
+   },
+   {
+    "f": "同一條目的 Background and release 與 Composition 節：該團被定位為 contemporary R&B 男團，出道迷你專輯**以五首風格各異的 R&B 曲組成**，作曲人유영진與 Kenzie 參與，目標是「音域寬廣的精緻聲響」。造型師하상백為他們設計的高筒鞋、窄管褲與彩色毛衣造型在學生間帶起被媒體稱作「SHINee Trend」的風潮。2011-06-22 該團以〈Replay〉的日文版在日本出道，首週售出逾 91,000 張並獲 RIAJ 金唱片認證——**日文版是三年後的事，與本卡的韓版原盤是兩件事。**",
+    "src": "https://en.wikipedia.org/wiki/Replay_(EP)"
+   }
+  ],
+  "hookCandidates": [
+   "五軌裡有兩軌是同一首歌：第 1 軌是〈누난 너무 예뻐〉，第 5 軌是它的 Boom Track 混音——扣掉重複，出道作其實只有四首",
+   "第 4 軌〈사.계.한〉的英文副題是 Love should go on；兩年後那張《LUCIFER》的收尾曲叫〈사.계.후〉，副題 Love Still Goes On"
+  ],
+  "sound": "MB 記四筆 release（XW 數位 2008-05-22、KR CD 2008-05-23 SMCD-169、KR 數位、一筆 Pseudo-Release），**全部 5 軌**；Apple us 854925787 的逐軌長度與 MB 的 KR CD 相同到 3 秒內。維基記總長 **18:50**、錄音 2008 年 4 月至 5 月、曲風 pop／R&B／dance。五軌的結構特別：第 1 軌〈누난 너무 예뻐 (Replay)〉3:36 是主打，第 5 軌〈누난 너무 예뻐 (Replay-Boom Track)〉4:27 是同一首的混音收尾，**首尾同題**；中間三軌〈In my room〉4:50（全碟最長）、〈Real〉3:35、〈사.계.한 (Love should go on)〉3:11（全碟最短）。維基記全碟被定位為五首風格各異的 R&B，作曲人是유영진與 Kenzie，主打曲的編舞是 Rino Nakasone。",
+  "keyTracks": [
+   "누난 너무 예뻐 (Replay)",
+   "In my room",
+   "사.계.한 (Love should go on)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2008。MB release-group first-release-date **2008-05-22**、其下 XW 數位同為 2008-05-22、**KR 的 CD 與 KR 數位是 2008-05-23（晚一天）**、Apple us 854925787 的 releaseDate **2008-05-22**、℗ 2008，英文維基 infobox 記 **May 22, 2008**。四處同為 2008，只差一天。**同名先行單曲：無。**⚠ **但有一個三年後的同題日文版**：2011-06-22 該團以〈Replay〉的日文版在日本出道（Apple us 目錄裡是 720505176《Replay - Kimi wa Boku no Everything (Standard Edtion) - Single》2011-06-22，℗ EMI Music Japan，2 軌）。**若以「Replay」這個字串配對，會撞到 2011 那筆日版單曲。**",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **854925787**（5 軌全有 previewUrl，曲名／曲序與 MB 的 KR CD 逐位置相符、逐軌長度相同到 3 秒內，`trackCount` 欄與曲目列都是 5）。不改 `previews.json`，交主線補。\\n**策展層「出道迷你專輯，比同年 8 月的《The SHINee World》早三個月」查證屬實、可以寫**：MB 記本張 2008-05-22、《The SHINee World》2008-08-28，**相隔三個月又六天**；英文維基寫 the debut EP 且 prev_title 欄是空的、next_title 正是《The Shinee World》；Apple 目錄同時標了 The First Mini Album 與 The 1st Album 兩個序數。**三處一致，這個「早三個月」的敘述可以寫。**\\n⚠ **但序數本身要小心措辭**：Apple 把本張標成「The First Mini Album」、把三個月後的《The SHINee World》標成「The 1st Album」——**同一位藝人同一年有兩個「第一」**。行文若寫「出道作」沒問題（維基的 prev_title 是空的、有來源），**但不要寫成「第一張專輯」**，那個名號在 Apple 的目錄裡歸《The SHINee World》。\\n**`exceptionReason` 走 asia-mini-album 白名單的理由我逐一核過**：①判準是時序、排在池中已有的《The SHINee World》之前（確認，早三個月又六天）；②英文維基獨立立條（確認，〈Replay (EP)〉，內容相當完整）；③「MB 亦以獨立 release-group 建檔、轄下兩筆 KR Official 實體盤（SM Entertainment，catno SMCD-169）」——**要修正：MB 上 KR 的兩筆 Official 裡只有一筆是實體 CD（SMCD-169），另一筆是 Digital Media**。實體盤只有一筆。白名單資格不受影響（時序才是判準）。\\n**⚠ 韓版／日版**：本張本身沒有日版專輯混淆，但〈Replay〉的日文版單曲（2011-06-22，Apple 720505176，℗ EMI Music Japan）存在，**字串比對會撞到**。配對走 collectionId。該團在 Apple 上另有一整套 EMI／UNIVERSAL 的日版正規盤（The First 2011、Boys Meet U 2013、I'm Your Boy 2014、DxDxD 2015、Five 2017），與韓版序列無關。\\n**這張與同批的《LUCIFER》有一條可寫的內部連結**：本張第 4 軌〈사.계.한 (Love should go on)〉與《LUCIFER》收尾曲〈사.계.후 (Love Still Goes On)〉同一組題名；英文維基〈Lucifer (Shinee album)〉明寫後者是前者的「kind of a sequel」。**兩張同批上架，這條可以用。**\\n可寫的商業事實（維基有具名來源）：2008 年上半年售出 17,957 張。**MIAK 榜名次依 c-111 裁定 2 從嚴、建議不寫。**"
+ },
+ {
+  "key": "desc2:SHINee|LUCIFER",
+  "artist": "SHINee",
+  "album": "LUCIFER",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group bab02758 的欄位：title「LUCIFER」、artist-credit「SHINee」（藝人實體 70e5098b，KR、Group）、first-release-date **2010-07-19**、primary-type Album、secondary-types **空**。轄下 **13 個 release**，分成兩組：**原版 13 軌**——KR CD（2010-07-19，SM Entertainment，catno **SMCD-203**，barcode 8809049755993）、KR CD（2010-07-28，SMCD-204）、KR 數位、XW 數位兩筆、**HK CD 兩筆（2010-08-18，Avex Hong Kong，AAKCD60016／AAKCD60017，packaging Book）**、**JP CD 兩筆（2010-09-15，rhythm zone，RZCD-46639 與 RZCD-46638/B 含 DVD-Video 4 軌）**；**改版 16 軌題《Hello》**——KR CD（2010-10-04，SMCD-208）、KR 數位（2010-09-30）、**TW CD＋DVD（2010-12-14，Avex Taiwan，AVKCD80247/D，Digipak）**、一筆 Pseudo-Release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/bab02758-fbc4-40dc-8a6e-3a56a3d94b06?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD 原版（5f7ab5da，2010-07-19，SM SMCD-203）的逐軌曲目與長度：1〈UP & DOWN〉3:33、2〈LUCIFER〉3:54、3〈Electric Heart〉3:20、4〈A-Yo〉4:27、5〈욕 (慾) (Obsession)〉4:09、6〈화살 (Quasimodo)〉4:09、7〈악 (Shout Out)〉2:53、8〈WOWOWOW〉3:12、9〈Your Name〉4:07、10〈Life〉4:38、11〈Ready or Not〉3:04、12〈Love Pain〉3:43、13〈사.계.후 (Love Still Goes On)〉2:56。**13 軌**，最長〈Life〉4:38、最短〈악 (Shout Out)〉2:53。**同名曲〈LUCIFER〉排第 2 軌不是第 1 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=bab02758-fbc4-40dc-8a6e-3a56a3d94b06&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 854891682：collectionName「The 2nd Album 'Lucifer'」、artistName「SHINee」、releaseDate **2010-07-19**（與 MB 同日）、℗ 2010 SM Entertainment、trackCount 13。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原版逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 13、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=854891682&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **改版在 Apple 上是另一個 collectionId 且盤名完全不同**：同一份 us 藝人頁目錄（artistId 433371033）另有 **854892269《Hello - The 2nd Album (Repackage)》2010-09-30、16 軌、℗ 2010 SM Entertainment**——那是 MB 同一個 release-group 底下的改版。**盤名 Lucifer 對 Hello、軌數 13 對 16、日期 7/19 對 9/30，三個欄位都不同，但它們在 MB 上屬同一個 release-group。**",
+    "src": "https://itunes.apple.com/lookup?id=433371033&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 SHINee 名下 73 個 release-group，primary-type=Album 且 secondary-types 為空的 13 筆依 first-release-date 排序為《The SHINee World》2008-08-28、**《LUCIFER》2010-07-19**、《THE FIRST》2011-12-07、《Dream Girl: The Misconceptions of You》2013-02-19、《Why So Serious?: The Misconceptions of Me》2013-04-26、《Boys Meet U》2013-06-21、《I'm Your Boy》2014-09-24、《Odd》2015-05-18、《D×D×D》2015-12-29、《1 of 1》2016-09-29、《FIVE》2017-01-27、《Don't Call Me》2021-02-22、《HARD》2023-06-26——**本張排第二**。⚠ 這 13 筆裡的《THE FIRST》(2011)、《Boys Meet U》(2013)、《I'm Your Boy》(2014)、《D×D×D》(2015)、《FIVE》(2017) 是**日版正規盤**（Apple 目錄顯示這幾筆的發行方是 EMI／UNIVERSAL MUSIC LLC），**五筆日版混在這份排序裡**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70e5098b-c4ae-4cd7-9799-3c1b9b57c753&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ **同名警訊**：同一份 MB 藝人頁另有一筆 **2011-10-12 的 Single《LUCIFER》（eb214370）**——那是〈Lucifer〉的日文版單曲（Apple us 目錄裡是 720599568《Lucifer - Single》2011-10-12，℗ EMI Music Japan，2 軌），比本張晚一年三個月。**方向是後行不是先行**，「取最早那筆」不會選錯，但「取名稱完全相符那筆」會有兩個候選。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70e5098b-c4ae-4cd7-9799-3c1b9b57c753&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Lucifer (Shinee album)〉的 infobox 與內文：**the second studio album**、released **July 19, 2010** in South Korea、錄音 **2009 年 12 月至 2010 年 6 月**於首爾七家錄音室（Booming Sound／Mojo Sound／Raoby Sound／SM Blue Ocean／SM Booming System／SM Concert Hall／SM Yellow Tail）、曲風 K-pop、總長 **47:59**、廠牌 SM 與 Avex Trax、prev_title《2009, Year of Us》(2009)、next_title《The First》(2011)。Background 節記這是**該團第一次在音樂與造型上被賦予實質創作參與**，團員종현說公司在第二張給了他們很多空間；主打曲〈Lucifer〉是 1980 年代取向的 electronica、把兩面人比作魔鬼；〈Electric Heart〉是低語式人聲加電子節拍與吉他副歌，是 Key 最喜歡的一首；**온유在第 9 軌〈Your Name〉首次擔任作詞、종현第二次作詞、〈Shout Out〉由全體團員合寫、민호寫了〈Up & Down〉〈Obsession〉〈Your Name〉的饒舌段並與人合寫〈Wowowow〉〈Shout Out〉；〈Ready or Not〉由法國製作人 Will Simms 作詞作曲，是他在 SM 的出道作。**",
+    "src": "https://en.wikipedia.org/wiki/Lucifer_(Shinee_album)"
+   },
+   {
+    "f": "同一條目另明寫：**〈Love Still Goes On〉被視為該團出道迷你專輯《Replay》裡〈Love Should Go On〉的「kind of a sequel」**。Release and reception 節：2010-07-08 至 07-12 陸續放出團員預告圖、07-15 在官網放出集錦串燒；專輯 2010-07-19 發行、數小時內登上南韓多個實體與數位銷售榜首。本作是 **2010 年南韓年度銷量第六的專輯、售出逾 120,000 張**；改版《Hello》依 Gaon 統計在 2010 年售出 63,118 張。〈Lucifer〉的編舞同樣是 Rino Nakasone，並以編舞入圍 2010 年 Mnet Asian Music Awards 的最佳舞蹈表演獎；〈Obsession〉2010-11-26 獲選為電影《The Warrior's Way》主題曲。",
+    "src": "https://en.wikipedia.org/wiki/Lucifer_(Shinee_album)"
+   }
+  ],
+  "hookCandidates": [
+   "收尾那首〈사.계.후〉的英文副題是 Love Still Goes On——兩年前那張出道 EP 的第 4 軌叫〈사.계.한〉，副題 Love should go on",
+   "十三軌裡，온유第一次掛作詞、민호寫了三首的饒舌段、〈악〉由五個人合寫：這是他們第一次真的動手改自己的碟"
+  ],
+  "sound": "MB 這個 release-group 底下有兩組 release：**原版 13 軌（KR CD SMCD-203，2010-07-19，另有 HK 兩筆與 JP 兩筆同為 13 軌）與 2010-10-04 的改版 16 軌《Hello》（SMCD-208，另有 TW 一筆 CD＋DVD）**，卡單釘的是原版。Apple us 854891682 就是 13 軌那一版，逐軌長度與 MB 相同到 3 秒內。維基記總長 **47:59**、錄音 2009 年 12 月至 2010 年 6 月、跨首爾七家錄音室、廠牌 SM 與 Avex Trax。十三軌落在 2:53–4:38：最長〈Life〉4:38、最短〈악 (Shout Out)〉2:53，中段第 5、6 軌〈욕 (慾)〉與〈화살〉都是 4:09、長度到秒一致。**同名主打〈LUCIFER〉排在第 2 軌、開場給了〈UP & DOWN〉。**維基記本作是團員第一次在音樂與造型上有實質創作參與：온유首次作詞（第 9 軌〈Your Name〉）、종현第二次作詞、〈악 (Shout Out)〉由全體團員合寫、민호包辦〈UP & DOWN〉〈욕 (慾)〉〈Your Name〉三首的饒舌段。〈Ready or Not〉是法國製作人 Will Simms 在 SM 的出道作。",
+  "keyTracks": [
+   "LUCIFER",
+   "Electric Heart",
+   "사.계.후 (Love Still Goes On)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2010。MB release-group first-release-date **2010-07-19**、其下 KR CD 原版與 KR 數位同為 2010-07-19、Apple us 854891682 的 releaseDate **也是 2010-07-19**、℗ 2010，英文維基 infobox 記 **July 19, 2010**。**四處同年同月同日。**⚠ **但同一個 release-group 裡有 2010-08-18 的 HK 兩筆、2010-09-15 的 JP 兩筆、2010-09-30／10-04 的改版《Hello》、以及 2010-12-14 的 TW 一筆**——全部落在 2010 年內，年份不會被拉走，但日期與軌數會。**同名先行單曲：無；但有同名後行單曲**——MB 藝人頁另有 2011-10-12 的 Single《LUCIFER》（eb214370，日文版單曲，Apple us 720599568，℗ EMI Music Japan）。「取最早那筆」不會選錯。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **854891682**（13 軌全有 previewUrl，曲名／曲序與 MB 的 KR 原版逐位置相符、逐軌長度相同到 3 秒內，`trackCount` 欄與曲目列都是 13）。不改 `previews.json`，交主線補。\\n**⚠ 改版《Hello》是本張最近的假陽性、盤名完全不同**：MB 同一個 release-group、16 軌，Apple 上是另一個 collectionId **854892269**（2010-09-30）。`curatorWhy` 已經提到，這裡補上 Apple 那一邊的 id 與軌數，**分辨靠 13 對 16 軌與 7/19 對 9/30**。\\n**策展層「第二張正規盤」查證屬實、可以寫**：MB 藝人頁 13 筆 Album 依日期排序本張第二（前一筆是 2008 年的《The SHINee World》）、Apple 目錄自標 The 2nd Album、英文維基寫 the second studio album，**三處一致**。\\n⚠ **但同一份 MB 排序不能拿來數第三張以後的序數**：13 筆裡有 **五筆是日版正規盤**（《THE FIRST》2011、《Boys Meet U》2013、《I'm Your Boy》2014、《D×D×D》2015、《FIVE》2017，Apple 目錄顯示發行方是 EMI／UNIVERSAL MUSIC LLC）。**這是本組 25 張裡日版混入比例最高的一位藝人**，寫給後續批次。順帶一提，池中已有的《Boys Meet U》就是那五筆之一。\\n**同 release-group 內有 HK 兩筆與 JP 兩筆同為 13 軌的 Official release**（Avex Hong Kong AAKCD60016／60017、rhythm zone RZCD-46639 與含 DVD 的 RZCD-46638/B）。**這幾筆的軌數與韓版相同，不會造成軌數混淆，但釘位與封面仍應走 KR 的 SMCD-203。**\\n**與同批《누난 너무 예뻐 (Replay)》的內部連結有來源、可以寫**：英文維基本條目明寫〈Love Still Goes On〉是《Replay》裡〈Love Should Go On〉的「kind of a sequel」。兩張同批上架。\\n可寫的商業與獎項事實（維基有具名來源）：2010 年南韓年度銷量第六、售出逾 120,000 張；〈Lucifer〉以編舞入圍 2010 Mnet Asian Music Awards 最佳舞蹈表演獎（依 c-111 裁定 2，獎項入圍可寫）。**年度銷量名次從嚴、建議只寫銷量數字。**"
+ },
+ {
+  "key": "desc2:EXO|XOXO",
+  "artist": "EXO",
+  "album": "XOXO",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 054dbb3b 的欄位：title「XOXO」、artist-credit「EXO」（藝人實體 b3785a55，KR、Group）、first-release-date **2013-06-03**、primary-type Album、secondary-types **空**。轄下 8 個 release 全部 Official、全部在 KR，**分成兩組**：**原版（2013-06-03）**——CD 12 軌兩筆（SM Entertainment，catno **SMK-0242** 與 **SMK-0243**，packaging 皆 Book，barcode 8809314512429 與 8809314512436）、**Digital Media「12 軌＋12 軌」兩片一筆**；**改版（2013-08-05）**——CD 14 軌兩筆（題《으르렁》SMK-0275 與《咆哮》SMK-0276）、Digital Media 14 軌一筆、Digital Media「14＋14」一筆、另一筆 14 軌數位。",
+    "src": "https://musicbrainz.org/ws/2/release-group/054dbb3b-e753-43a7-8785-0df2c1aa3192?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**MB 上原版的兩張實體 CD 是同一份曲目的韓語版與華語版**：SMK-0242（eec94b88）的 12 軌是韓語版——1〈늑대와 미녀 (Wolf)〉3:53、2〈Baby, Don't Cry (인어의 눈물)〉3:56、3〈Black Pearl〉3:09、4〈나비소녀 (Don't Go)〉3:36、5〈Let Out the Beast〉3:28、6〈3.6.5〉3:07、7〈Heart Attack〉3:40、8〈피터팬 (Peter Pan)〉3:57、9〈Baby〉4:00、10〈My Lady〉3:34、11〈늑대와 미녀 (Wolf) (EXO-K ver.)〉3:53、12〈늑대와 미녀 (Wolf) (Chinese ver.)〉3:51；SMK-0243（16888bbd）的 12 軌是華語版——1〈狼与美女 (Wolf)〉、2〈Baby, Don't Cry (人鱼的眼泪)〉……11〈狼与美女 (Wolf) (EXO-M ver.)〉、12〈狼与美女 (Wolf) (Korean ver.)〉。**兩張的曲序與長度一一對應，差別只在演唱語言與第 11／12 軌互換。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=054dbb3b-e753-43a7-8785-0df2c1aa3192&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 980274346：collectionName「The 1st Album 'XOXO'」、artistName「EXO」、releaseDate **2013-06-03**（與 MB 同日）、℗ 2013 SM Entertainment、trackCount **24**。`entity=song` **攤得出 24 軌、24 軌全部有 previewUrl，而且是兩片**——disc 1 的 12 軌是韓語版、disc 2 的 12 軌是華語版。**這 24 軌與 MB 那筆「Digital Media 12＋12」的 release（f464fbe4，KR，2013-06-03）逐位置相符、逐軌長度相同到 1 毫秒**（231000／234000／187000／214000／206000／185000／218000／235000／238000／212000／231000／231000 兩片各一份）。**Apple 這一筆就是韓國市場的原版數位發行，不是改版、也不是精選。**",
+    "src": "https://itunes.apple.com/lookup?id=980274346&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "⚠ **改版在 Apple 上是另一個 collectionId**：同一份 us 藝人頁目錄（artistId 657630070，回 51 筆、未觸及 200 上限）另有 **854908236《The 1st Album 'XOXO' (Repackage)》2013-08-05、28 軌**——那是 MB 同一個 release-group 底下的《으르렁 (Growl)》改版（同樣兩片，14＋14）。**盤名前半完全相同、只差括號裡的 Repackage 三個字，軌數 24 對 28。**同一目錄裡還有 979878364《The 2nd Album 'EXODUS'》2015 與 979878243 的華語版，**「韓語版／華語版成對上架」是這位藝人在 Apple 上的通例。**",
+    "src": "https://itunes.apple.com/lookup?id=657630070&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 EXO 名下 34 個 release-group，primary-type=Album 且 secondary-types 為空的 9 筆依 first-release-date 排序為 **《XOXO》2013-06-03**、《EXODUS》2015-03-30、《EX'ACT》2016-06-09、《THE WAR》2017-07-18、《COUNTDOWN》2018-01-24、《DON'T MESS UP MY TEMPO》2018-11-02、《OBSESSION》2019-11-27、《EXIST》2023-07-10、《REVERXE》2026-01-19——**本張排最前**。⚠ 這 9 筆裡的 **《COUNTDOWN》(2018-01-24) 是日版正規盤**（Apple us 目錄裡 1336847916《COUNTDOWN》2018-01-31 的 ℗ 是 AVEX ENTERTAINMENT INC.）。名下沒有第二筆叫《XOXO》的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b3785a55-2cf6-497d-b8e3-cfa21a36f997&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈XOXO (Exo album)〉的 infobox 與首句：**the debut studio album**、released **June 3, 2013** by SM Entertainment、經銷 KT Music、錄音 **2011–2013** 於首爾八家錄音室、曲風 K-pop／hip hop／R&B／Mandopop、**總長 43:48，Growl 改版 49:31**、語言韓語／華語／英文、prev_title《Mama》(2012)、next_title《Miracles in December》(2013)。首句明寫**專輯以兩個版本發行——韓語的 Kiss 版與華語的 Hug 版**。製作名單長達三十餘人，含 Kenzie、Will Simms、Nermin Harambašić（Dsign Music）、Hyuk Shin、Jordan Kyle、Ryan S. Jhun、이수만等。",
+    "src": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)"
+   },
+   {
+    "f": "同一條目的 Background 與 Release and promotion 節：主打曲〈늑대와 미녀 (Wolf)〉由 Will Simms、Nermin Harambašić 與 Kenzie 共同作曲，Kenzie 寫韓語詞、周维杰寫華語詞，유영진唱和聲，編舞是 Tony Testa；團員 Kris 說那支舞花了三到四個月才練成。**〈Black Pearl〉與〈My Lady〉是 2011 年該團出道前就錄好、沒收進首張 EP《Mama》的舊曲。**2013 年 7 月推出改版《으르렁 (Growl)》、加了三首新曲、主打〈Growl〉同樣錄了韓語與華語兩版。商業面：預購逾 30 萬張；到 2013 年 12 月，韓語版、華語版與兩者的改版合計售出逾 **1,070,000 張**，是韓國樂壇睽違十二年後的第一張百萬銷量專輯。",
+    "src": "https://en.wikipedia.org/wiki/XOXO_(Exo_album)"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟做了兩份：韓語的 Kiss 版與華語的 Hug 版，曲序一一對應，只有第 11、12 軌互換位置",
+   "〈Black Pearl〉與〈My Lady〉是 2011 年就錄好的舊曲——比這團正式出道還早，等了兩年才找到位置"
+  ],
+  "sound": "MB 這個 release-group 底下有兩組 release：**原版（2013-06-03，實體是 12 軌的韓語 SMK-0242 與華語 SMK-0243 兩張，數位則是「12＋12」兩片一筆）與改版《으르렁／咆哮》（2013-08-05，14 軌／14＋14）**，卡單釘的是原版。Apple us 980274346 就是原版的數位「12＋12」，24 軌全有 preview，disc 1 韓語、disc 2 華語，逐軌長度與 MB 相同到 1 毫秒。維基記原版總長 **43:48**、改版 49:31、錄音 2011–2013 跨首爾八家錄音室、曲風 K-pop／hip hop／R&B／Mandopop。韓語版十二軌落在 3:07–4:00，長度分布極窄，最長〈Baby〉4:00、最短〈3.6.5〉3:07；第 11、12 軌是主打曲〈늑대와 미녀 (Wolf)〉的另兩個版本（EXO-K 版與華語版），**同一首歌在單張 CD 上就出現三次**。〈Black Pearl〉與〈My Lady〉是 2011 年錄好、沒收進首張 EP 的舊曲。主打曲由 Will Simms、Nermin Harambašić 與 Kenzie 共同作曲，編舞 Tony Testa。",
+  "keyTracks": [
+   "늑대와 미녀 (Wolf)",
+   "Black Pearl",
+   "Baby, Don't Cry (인어의 눈물)"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2013。MB release-group first-release-date **2013-06-03**、其下原版三筆 release 全部記 2013-06-03、Apple us 980274346 的 releaseDate **也是 2013-06-03**、℗ 2013，英文維基 infobox 記 **June 3, 2013**。**四處同年同月同日。**⚠ **但同一個 release-group 裡的改版《으르렁／咆哮》記 2013-08-05**（Apple 854908236，28 軌），若配對抓到改版，日期會差兩個月、年份仍是 2013。**同名先行單曲：無**——MB 藝人頁 34 個 release-group 裡沒有第二筆叫《XOXO》的東西。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **980274346**（**24 軌全有 previewUrl、兩片**，disc 1 韓語 12 軌、disc 2 華語 12 軌，與 MB 那筆 KR 數位「12＋12」的 release f464fbe4 **逐位置相符、逐軌長度相同到 1 毫秒**，`trackCount` 欄與攤開的曲目列都是 24、無裁定 175 的落差）。不改 `previews.json`，交主線補。\\n**⚠ 給主線的一句：這張的 24 軌不是加曲版，是「韓語版＋華語版」兩片併售。** 韓國市場的實體是兩張分開賣的 12 軌 CD（Kiss 版 SMK-0242 韓語、Hug 版 SMK-0243 華語），數位則把兩片併成一筆。**固定試聽取首軌會取到 disc 1 第 1 軌〈늑대와 미녀 (Wolf)〉的韓語版，這是對的。**\\n**`curatorRisk` 說「原版 24 軌對改版 28 軌、須以逐軌長度而非軌數辨版」——本次已照做**：24 軌逐位置比對 MB 的 f464fbe4 全部命中。改版《으르렁 (Growl)》在 Apple 上是 **854908236《The 1st Album 'XOXO' (Repackage)》2013-08-05、28 軌**，**盤名前半與原版完全相同、只差括號裡的 Repackage**，字串比對極易誤中。\\n**策展層「第一張正規盤」查證屬實、可以寫**：MB 藝人頁 9 筆 Album 依日期排序本張最前、Apple 目錄自標 The 1st Album、英文維基寫 the debut studio album，**三處一致**。\\n⚠ **但同一份 MB 排序不能拿來數後面的序數**：9 筆裡的《COUNTDOWN》(2018-01-24) 是日版正規盤（Apple us 1336847916，℗ AVEX ENTERTAINMENT INC.）。寫給後續批次。\\n**行文可寫、有來源的三條**：①同一張碟做了韓語 Kiss 版與華語 Hug 版（維基首句明寫，MB 兩張 CD 的 catno 與曲目也對得上）；②〈Black Pearl〉與〈My Lady〉是 2011 年出道前錄好、沒收進首張 EP《Mama》的舊曲（維基 Background 節，⚠ 該段落帶 citation needed 標記，**建議寫成「維基記載」而非斷言**）；③主打曲的作曲三人與編舞 Tony Testa。\\n可寫的商業事實（維基有具名來源）：預購逾 30 萬張；到 2013 年 12 月韓／華兩版加改版合計逾 1,070,000 張、是韓國樂壇睽違十二年的第一張百萬銷量專輯。**「第一張百萬銷量」是「第 N 張／唯一／最」那個形狀，但它有具名來源且限定條件清楚（睽違十二年、韓國樂壇），行文若要用請把限定詞一起帶上，不要簡化成「唯一的百萬專輯」。**"
+ },
+ {
+  "key": "desc2:Red Velvet|The Red",
+  "artist": "Red Velvet",
+  "album": "The Red",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 50f9a5ca 的欄位：title「The Red」、artist-credit「Red Velvet」（藝人實體 4f0cb3b7，KR、Group）、first-release-date **2015-09-09**、primary-type Album、secondary-types **空**。轄下 7 個 release 全部 Official、**全部 10 軌**：KR 的 CD（2015-09-09，SM Entertainment，catno **SMK-0561**，Jewel Case，barcode 8809269505156）、KR 數位、XW 數位三筆、**TW 的 CD（2015-10-23，Avex Taiwan，AVKCD80337）**、**JP 的 Digital Media（2018-10-10，SM Entertainment，catno ANTCD-29065）**。**沒有改版、沒有加曲版——這是本組 25 張裡結構最單純的一個 release-group。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/50f9a5ca-588c-459a-8a11-f51f73beea60?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（ee12a978，2015-09-09，SM SMK-0561）的逐軌曲目與長度：1〈Dumb Dumb〉3:22、2〈Huff n Puff〉3:01、3〈Campfire〉3:16、4〈Red Dress〉3:02、5〈Oh Boy〉3:08、6〈Lady's Room〉3:15、7〈Time Slip〉3:39、8〈Don't U Wait No More〉2:51、9〈Day 1〉3:26、10〈Cool World〉4:05。**10 軌**，最短〈Don't U Wait No More〉2:51、最長的收尾曲〈Cool World〉4:05，**其餘八軌全部落在 3:01–3:39**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=50f9a5ca-588c-459a-8a11-f51f73beea60&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1037732950：collectionName「The Red - The 1st Album」、artistName「Red Velvet」、releaseDate **2015-09-09**（與 MB 同日）、℗ 2015 SM Entertainment、**trackCount 欄寫 11、但 `entity=song` 只攤得出 10 軌**。⚠ **這是裁定 175 的落差**：以曲目列為準，10 軌、10 軌全部有 previewUrl，曲名／曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 相同到 3 秒內**。",
+    "src": "https://itunes.apple.com/lookup?id=1037732950&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Red Velvet 名下 56 個 release-group，primary-type=Album 且 secondary-types 為空的只有 4 筆，依 first-release-date 排序為 **《The Red》2015-09-09**、《Perfect Velvet》2017-11-17、《Bloom》2022-04-06、《Chill Kill》2023-11-13——**本張排最前**。⚠ **第三筆《Bloom》(2022) 是日版正規盤**（池中已有那一張）。名下沒有第二筆叫《The Red》的 release-group，**沒有同名先行單曲**；但有一組近名的系列作——**2017-07-09 的 EP《The Red Summer》（75013bad）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4f0cb3b7-6c06-4317-ae35-ddf3106a17ee&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "⚠ **盤名系列的真實規模**：Apple 藝人頁目錄端點（artistId 906961899，us，entity=album，回 43 筆、未觸及 200 上限）在 Red Velvet 名下同時列出 **The Red - The 1st Album (1037732950, 2015-09-09, 10 軌)**、**The Velvet - The 2nd Mini Album (1092931330, 2016-03-17, 9 軌)**、**The Red Summer - Summer Mini Album - EP (1256503505, 2017-07-09, 6 軌)**、**The Perfect Red Velvet - The 2nd Album Repackage - EP (1341259280, 2018-01-29, 6 軌)**、Perfect Velvet - The 2nd Album (1314273377, 2017-11-17, 10 軌)，另有四張 'The ReVe Festival' 系列。**「The Red」這三個字在同一位藝人的目錄裡至少出現在四個不同的盤名上。**",
+    "src": "https://itunes.apple.com/lookup?id=906961899&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "英文維基〈The Red (album)〉的 infobox 與首句：**the debut studio album**、released **September 9, 2015** by SM Entertainment、經銷 Dreamus、錄音室 SM Studios（首爾）、曲風 dance-pop／electropop／R&B／funk／hip hop、**總長 33:05**、語言韓語與英文、prev_title《Ice Cream Cake》(2015)、next_title《The Velvet》(2016)。製作群為 LDN Noise、Ryan S. Jhun、Denzil \"DR\" Remedios、Dsign Music、Kenzie、Deekay（Daniel \"Obi\" Klein）、Charli Taft、Jinbo、Dem Jointz 等，이수만掛執行製作。主打曲〈Dumb Dumb〉。",
+    "src": "https://en.wikipedia.org/wiki/The_Red_(album)"
+   },
+   {
+    "f": "同一條目的 Background and release 與 Composition 節：2015 年 3 月的《Ice Cream Cake》之後，SM 宣布該團九月推出首張全長專輯；9 月 3 日在 Instagram 放出形象預告與曲目表、9 月 4 日宣布 9 月 9 日午夜發行並以〈Dumb Dumb〉為主打、9 月 8 日放出 MV。**實體有 Red 與 Blue 兩個版本。**概念上本作**只走該團「Red」那一面**（與「Velvet」那一面相對），後續由 2017 年的《The Red Summer》與 2018 年的《Summer Magic》兩張夏季 EP 承接。逐曲：第 6 軌〈Lady's Room〉是中快板 R&B／synth-pop，與第 7 軌〈Time Slip〉同為 Daniel \"Obi\" Klein 製作的三首之一，〈Time Slip〉是九〇年代取向的 hip hop 底 R&B、英國詞曲人 Charli Taft 參與、也是韓國製作人 Jinbo 首度與該團合作；第 8 軌〈Don't U Wait No More〉以厚重 synth 襯合聲；第 9 軌〈Day 1〉是帶 bossa nova 影子的中板 pop-rock；收尾〈Cool World〉是 synth-pop 快板。",
+    "src": "https://en.wikipedia.org/wiki/The_Red_(album)"
+   }
+  ],
+  "hookCandidates": [
+   "十軌三十三分鐘，扣掉 4:05 的收尾曲，其餘九首沒有一首超過三分四十——這是一張跑完就走的碟",
+   "「Red」與「Velvet」是這團的兩張臉，這張只用其中一張：從頭到尾都是 Red"
+  ],
+  "sound": "MB 記七筆 release（KR CD SMK-0561、KR 數位、XW 三筆數位、2015-10-23 的 TW CD、2018-10-10 的 JP 數位），**全部 10 軌、沒有改版也沒有加曲版**；Apple us 1037732950 的逐軌長度與 MB 的 KR CD 相同到 3 秒內。維基記總長 **33:05**、錄音在 SM Studios、曲風欄列五項（dance-pop／electropop／R&B／funk／hip hop）。十軌落在 2:51–4:05：最短〈Don't U Wait No More〉2:51、最長的收尾曲〈Cool World〉4:05，中間八軌全部擠在 3:01–3:39。主打曲〈Dumb Dumb〉排第 1 軌。維基把後半段逐曲拆得很細：〈Lady's Room〉中快板 R&B／synth-pop、〈Time Slip〉九〇年代取向的 hip hop 底 R&B（Charli Taft 參與、Jinbo 首度合作）、〈Don't U Wait No More〉厚重 synth 襯合聲、〈Day 1〉帶 bossa nova 影子的中板 pop-rock、〈Cool World〉synth-pop 快板。製作群列了九組人，이수만掛執行製作。實體發行有 Red 與 Blue 兩個版本。",
+  "keyTracks": [
+   "Dumb Dumb",
+   "Time Slip",
+   "Cool World"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2015。MB release-group first-release-date **2015-09-09**、其下 KR CD、KR 數位與三筆 XW 數位**全部記 2015-09-09**、Apple us 1037732950 的 releaseDate **也是 2015-09-09**、℗ 2015，英文維基 infobox 記 **September 9, 2015**。**四處同年同月同日。**⚠ **但同一個 release-group 裡有 2015-10-23 的 TW CD 與 2018-10-10 的 JP 數位（ANTCD-29065）**——後者若被當成發行日，年份會被拉到 2018。**同名先行單曲：無**——MB 藝人頁 56 個 release-group 裡沒有第二筆叫《The Red》的東西。",
+  "notes": "**探測層這張標的是 unavailable，但 Apple us 確實買得到。** 覆核結果：`us` **1037732950**（10 軌全有 previewUrl，曲名／曲序與 MB 的 KR 原盤逐位置相符、逐軌長度相同到 3 秒內）。⚠ **這一筆有裁定 175 的落差：`trackCount` 欄寫 11、`entity=song` 只攤得出 10 軌。以曲目列為準，是 10 軌，與 MB 的七筆 release 全部一致。**`curatorWhy` 寫「collectionId 1037732950、11 軌」——**那個 11 抄的是 `trackCount` 欄，實際是 10 軌，請主線改正。**不改 `previews.json`，交主線補。\\n**策展層「第一張正規盤」查證屬實、可以寫**：MB 藝人頁 4 筆 Album 依日期排序本張最前、Apple 目錄自標 The 1st Album、英文維基寫 the debut studio album，**三處一致**。\\n⚠ **但同一份 MB 排序不能拿來數後面的序數**：4 筆裡的《Bloom》(2022) 是日版正規盤（池中已有那一張，見 c-105 rulings 第 8 條）。\\n**`curatorRisk` 說「盤名系列高度相似、子字串比對會整組吃掉」——查證屬實而且比 risk 寫的還多**。Apple us 目錄裡與「The Red／The Velvet」共用詞根的至少有五筆：本卡 1037732950《The Red - The 1st Album》(10 軌)、1092931330《The Velvet - The 2nd Mini Album》(2016，9 軌)、1256503505《The Red Summer》(2017 EP，6 軌)、1314273377《Perfect Velvet - The 2nd Album》(2017，10 軌)、1341259280《The Perfect Red Velvet - The 2nd Album Repackage》(2018 EP，6 軌)。**其中《Perfect Velvet》也是 10 軌，與本卡軌數相同——分辨只能靠 collectionId 或年份，軌數幫不上忙。**這一點 risk 沒抓到，請主線記進 rulings。\\n**這張的 release-group 結構是本組最單純的一個**：七筆 release 全部 10 軌、沒有 repackage 混在裡面（對比同批的 f(x)《Pinocchio》→《Hot Summer》、SHINee《LUCIFER》→《Hello》、EXO《XOXO》→《으르렁》）。\\n可寫的事實（維基有具名來源）：實體有 Red 與 Blue 兩版；本作只走「Red」那一面的概念、後續由《The Red Summer》(2017) 與《Summer Magic》(2018) 兩張夏季 EP 承接；製作群與逐曲風格如 `sound` 所述。"
+ },
+ {
+  "key": "desc2:BTS|DARK&WILD",
+  "artist": "BTS",
+  "album": "DARK&WILD",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group ea958ad6 的欄位：title「DARK&WILD」、artist-credit「BTS」（藝人實體 0d79fe8e，KR、Group）、first-release-date **2014-08-20**、primary-type Album、secondary-types **空**。轄下只有 3 個 release、全部 Official、**全部同日 2014-08-20、全部 14 軌**：KR 的 CD（BigHit Entertainment，catno **L100001039**，packaging **Box**，barcode 8804775056895）、KR 的 Digital Media、XW 的 Digital Media（同 barcode 8804775056895）。**沒有改版、沒有加曲版、沒有其他國別的 release。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ea958ad6-4519-44f8-8c7c-18b3f16218f4?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD（0148d084，2014-08-20，BigHit L100001039）的逐軌曲目與長度：1〈Intro : What am I to you〉2:45、2〈Danger〉4:05、3〈호르몬 전쟁〉4:26、4〈힙합성애자〉4:17、5〈Let Me Know〉4:15、6〈Rain〉4:25、7〈BTS Cypher PT.3 : KILLER〉4:28、8〈Interlude : 뭐해〉0:42、9〈핸드폰 좀 꺼줄래〉3:54、10〈이불킥〉4:02、11〈24/7=Heaven〉3:46、12〈여기 봐〉3:39、13〈2학년〉3:55、14〈Outro : 그게 말이 돼?〉2:53。**14 軌，其中三軌題名自帶結構標記**——第 1 軌 Intro、第 8 軌 Interlude（**只有 42 秒，是本組 25 張裡最短的一軌**）、第 14 軌 Outro。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ea958ad6-4519-44f8-8c7c-18b3f16218f4&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1597016856：collectionName「DARK&WILD」（**與 MB 標題完全相同、無空格**）、artistName「BTS」、releaseDate **2014-08-20**（與 MB 同日）、℗ **2014** BIGHIT MUSIC、trackCount 14。`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 14、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=1597016856&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1500041409（探測層釘的就是這一筆）：collectionName「DARK & WILD」（**帶空格**）、℗ **2015** Big Hit Entertainment（**與 us 那筆的 ℗ 2014 差一年**）、releaseDate 2014-08-20、trackCount 14、`entity=song` 攤得出 14 軌、14 軌全部有 previewUrl，曲名／曲序與 MB 逐位置相符、**逐軌長度與 us 的 1597016856 相同**。兩筆是同一份母帶，**差別在盤名的空格與 ℗ 年份**。",
+    "src": "https://itunes.apple.com/lookup?id=1500041409&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 BTS 名下 **101 個 release-group**，primary-type=Album 且 secondary-types 為空的 10 筆依 first-release-date 排序為 **《DARK&WILD》2014-08-20**、《WAKE UP》2014-12-24、《YOUTH》2016-09-07、《WINGS》2016-10-10、《FACE YOURSELF》2018-04-04、《LOVE YOURSELF 轉 'Tear'》2018-05-18、《MAP OF THE SOUL : 7》2020-02-21、《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》2020-07-14、《BE》2020-11-20、《ARIRANG》2026-03-20——**本張排最前**。⚠ **這 10 筆裡有四筆是日版正規盤**（《WAKE UP》2014、《YOUTH》2016、《FACE YOURSELF》2018、《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》2020）。名下沒有第二筆與《DARK&WILD》同名的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d79fe8e-ba27-4859-bb8c-2f255f346853&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Dark & Wild〉的 infobox 與首句：**the debut studio album**（**條目標題與 infobox 的 name 欄都寫帶空格的 Dark & Wild，並註明 stylized DARK&WILD**）、released by Big Hit Entertainment on **August 20, 2014**、廠牌欄列 **Big Hit、Loen（Kakao M）、Pony Canyon** 三家、曲風 hip hop 與 R&B、**總長 51:32**、語言韓語與英文、製作 Pdogg、Suga、Slow Rabbit、Supreme Boi、\"Hitman\" Bang、Shawn、이호형、SiMo、prev_title《Skool Luv Affair》(2014)、next_title《Wake Up》(2014)。專輯共十四軌，主打曲〈Danger〉(2014-08-19)，第三軌〈호르몬 전쟁 (War of Hormone)〉(2014-10-21) 後來作為第二波宣傳曲。",
+    "src": "https://en.wikipedia.org/wiki/Dark_%26_Wild"
+   },
+   {
+    "f": "同一條目的 Background and release 與 Music videos 節：2014-07-30 在官網掛上倒數時鐘、8 月 5 日上傳回歸預告片、8 月 7 日放出首波形象照與概念照，同時把 B 面曲〈Let Me Know〉（Suga 作曲製作）免費放送；曲目表公布時十四軌裡的〈Danger〉被圈成紅色標示為主打。**〈Danger〉是在洛杉磯一間車庫改成的臨時錄音室錄的。**〈Danger〉MV 2014-08-19 上線、由 Lumpens 與 GDW 製作導演；〈호르몬 전쟁〉MV 2014-10-21 上線、由 Zanybros 製作；兩首的編舞都是손성득。11 月 13 日另放出與越南歌手 Thanh Bùi 合作的〈Danger〉remix 預告。",
+    "src": "https://en.wikipedia.org/wiki/Dark_%26_Wild"
+   }
+  ],
+  "hookCandidates": [
+   "十四軌裡第 8 軌只有 42 秒——題名就叫〈Interlude : 뭐해〉，字面意思是「你在幹嘛」",
+   "主打曲〈Danger〉是在洛杉磯一間車庫改成的臨時錄音室錄的"
+  ],
+  "sound": "MB 只記三筆 release（KR CD、KR 數位、XW 數位），**全部同日 2014-08-20、全部 14 軌、沒有改版**；Apple us 1597016856 與 jp 1500041409 的逐軌長度彼此相同、也與 MB 相同到 3 秒內。維基記總長 **51:32**、曲風 hip hop 與 R&B、製作群八人（Pdogg、Suga、Slow Rabbit、Supreme Boi、\"Hitman\" Bang、Shawn、이호형、SiMo）。十四軌是明確的三段式：第 1 軌〈Intro : What am I to you〉2:45、第 8 軌〈Interlude : 뭐해〉**只有 42 秒**（本組 25 張裡最短的一軌）、第 14 軌〈Outro : 그게 말이 돼?〉2:53——**三個結構軌把碟切成兩半**。中間的主體曲落在 3:39–4:28，前半段（第 2–7 軌）每一首都超過四分、後半段（第 9–13 軌）除了〈이불킥〉4:02 之外全部三分半到三分五十幾，**前重後輕**。第 7 軌〈BTS Cypher PT.3 : KILLER〉4:28 是全碟最長。主打曲〈Danger〉排第 2 軌、緊接 Intro。",
+  "keyTracks": [
+   "Danger",
+   "호르몬 전쟁",
+   "BTS Cypher PT.3 : KILLER"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2014。MB release-group first-release-date **2014-08-20**、其下三筆 release **全部同為 2014-08-20**、Apple us 1597016856 的 releaseDate **也是 2014-08-20**、℗ **2014**，英文維基 infobox 記 **August 20, 2014**。**四處同年同月同日。**⚠ **但探測層釘的 jp 那一筆（1500041409）的 ℗ 是 2015**——releaseDate 仍是 2014-08-20、內容也是同一份母帶，**只有版權年份晚一年**。若有人以 ℗ 年份計年，會得到 2015。**同名先行單曲：無。**",
+  "notes": "**探測層 ready 覆核通過，但釘的是 jp 店面、而且那一筆的 ℗ 年份是 2015。** 覆核結果：`jp` **1500041409**（題「DARK & WILD」帶空格、℗ 2015 Big Hit Entertainment）的 14 軌逐位置與 MB 的 KR 原盤相符、14 軌全有 previewUrl。**但 us 店面另有 1597016856**（題「DARK&WILD」**與 MB 標題完全相同**、℗ **2014** BIGHIT MUSIC、14 軌全有 previewUrl、逐軌長度與 jp 那筆相同）。依 c-105 rulings 第 3 條「韓國線一律用 us」，**強烈建議主線改釘 `us` 1597016856**——它的盤名與 ℗ 年份都與卡單一致，jp 那筆兩樣都差一點。不改 `previews.json`，交主線補。\\n**策展層「第一張韓版正規盤」查證屬實、可以寫**：MB 藝人頁 10 筆 Album 依日期排序本張最前、英文維基寫 the debut studio album，**兩處一致**。`curatorWhy` 用的判準（「primary-type=Album 且轄下有 KR Official 的條目裡這一筆排在最前」）本次逐筆核過，正確。\\n⚠ **但同一份 MB 排序不能拿來數後面的序數**：10 筆裡有 **四筆是日版正規盤**（《WAKE UP》2014-12-24、《YOUTH》2016-09-07、《FACE YOURSELF》2018-04-04、《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》2020-07-14）。**池中已有的《WAKE UP》與《FACE YOURSELF》正是其中兩筆**，`curatorRisk` 已經抓到這點、屬實。這條對同批的《BE》那張更重要（見該卡）。\\n**盤名空格兩說已確認**：MB 與 Apple us 都寫無空格的《DARK&WILD》，Apple jp 與英文維基條目標題寫帶空格的《Dark & Wild》（維基另註 stylized DARK&WILD）。`curatorRisk` 說兩種都要進 queryAlias，屬實。**行文用 MB／卡單的《DARK&WILD》。**\\n**這張的 release-group 結構乾淨**：只有三筆 release、全部同日、全部 14 軌、沒有 repackage（對比同批多張 SM 系的碟）。\\n可寫的事實（維基有具名來源）：〈Danger〉在洛杉磯一間車庫改成的臨時錄音室錄成；〈Let Me Know〉由 Suga 作曲製作、在專輯發行前先免費放送；〈Danger〉與〈호르몬 전쟁〉的編舞都是손성득。⚠ **維基 Background 節有兩處掛 unreliable source 標記（曲目表公布與 SoundCloud 試聽那兩句），那兩句不要引。**"
+ },
+ {
+  "key": "desc2:BTS|BE",
+  "artist": "BTS",
+  "album": "BE",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7917fe48 的欄位：title「BE」、artist-credit「BTS」（藝人實體 0d79fe8e，KR、Group）、first-release-date **2020-11-20**、primary-type Album、secondary-types **空**。轄下 6 個 release、**全部 8 軌**：KR 的 CD（2020-11-20，BigHit Entertainment，catno **BHK1179**，barcode 8809633189159）、KR 的 Digital Media（2020-11-20，barcode 196006013851）、XW 的 Digital Media（2020-11-20，barcode 195497623273）、**KR 的 CD（2021-02-19，catno BHK1179ESS，packaging Box，barcode 8809633189531——即 Essential Edition）**、一筆國別未填的 Digital Media（2023-06-20，BIGHIT MUSIC，barcode 196922522574）、**GB 的 12\" Vinyl（2020，status Bootleg，無廠牌無條碼）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7917fe48-906d-464f-9909-0e4d18d59192?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 KR CD 原版（4adde75f，2020-11-20，BigHit BHK1179）的逐軌曲目與長度：1〈Life Goes On〉3:27、2〈내 방을 여행하는 법 (Fly To My Room)〉3:42、3〈Blue & Grey〉4:15、4〈Skit〉3:00、5〈잠시 (Telepathy)〉3:22、6〈병 (Dis-ease)〉4:00、7〈Stay〉3:25、8〈Dynamite〉3:19。**只有 8 軌**，其中第 4 軌〈Skit〉是三分鐘的談話段落、不是歌。最長〈Blue & Grey〉4:15、最短〈Skit〉3:00。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7917fe48-906d-464f-9909-0e4d18d59192&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **us** 店面 collectionId 1596532185：collectionName「BE」、artistName「BTS」、releaseDate **2020-11-20**（與 MB 同日）、℗ **2020** BIGHIT MUSIC、trackCount 8。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**，曲名／曲序與 MB 的 KR 原盤逐位置相符，**逐軌長度與 MB 相同到 3 秒內**，`trackCount` 欄與攤開的曲目列都是 8、無裁定 175 的落差。",
+    "src": "https://itunes.apple.com/lookup?id=1596532185&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "Apple **jp** 店面 collectionId 1540718800（探測層釘的就是這一筆）：collectionName「BE」、℗ **2020** Big Hit Entertainment、releaseDate 2020-11-20、trackCount 8、`entity=song` 攤得出 8 軌、8 軌全部有 previewUrl，曲名／曲序與 MB 逐位置相符、**逐軌長度與 us 的 1596532185 相同**。兩筆是同一份母帶、℗ 年份也都是 2020，**這一組沒有 DARK&WILD 那種 ℗ 差一年的問題**。",
+    "src": "https://itunes.apple.com/lookup?id=1540718800&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 BTS 名下 101 個 release-group，primary-type=Album 且 secondary-types 為空的 10 筆依 first-release-date 排序為《DARK&WILD》2014-08-20、《WAKE UP》2014-12-24、《YOUTH》2016-09-07、《WINGS》2016-10-10、《FACE YOURSELF》2018-04-04、《LOVE YOURSELF 轉 'Tear'》2018-05-18、《MAP OF THE SOUL : 7》2020-02-21、《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》2020-07-14、**《BE》2020-11-20**、《ARIRANG》2026-03-20——**本張在這份排序裡排第九**。⚠ 但這 10 筆裡有四筆是日版正規盤（《WAKE UP》《YOUTH》《FACE YOURSELF》《MAP OF THE SOUL : 7 〜 THE JOURNEY 〜》），**扣掉之後本張排第五**。名下沒有第二筆叫《BE》的 release-group，**沒有同名先行單曲**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0d79fe8e-ba27-4859-bb8c-2f255f346853&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Be (BTS album)〉的首句寫得非常明確：**「the fifth Korean-language and the ninth overall studio album」**——**同一句給了兩個序數，五與九**。released **November 20, 2020** through Big Hit Entertainment，距前作《Map of the Soul: 7》(2020) 九個月。infobox 的 type 欄旁還留了一段編輯註記，說明 Apple Music、Spotify 與 Bighit 官方都把《Be》稱為 album 而非 EP、未經三個以上可靠來源即改成 EP 將視為破壞性編輯。錄音 2020 年，橫跨 Analog Lab、Big Hit、Dogg Bounce、Echo Bar（北好萊塢）、Genius Lab、Henson（洛杉磯）、Hope World、RKive、Schmuzik 九間錄音室。",
+    "src": "https://en.wikipedia.org/wiki/Be_(BTS_album)"
+   },
+   {
+    "f": "同一條目的 Background 與 Music and lyrics 節：《Map of the Soul Tour》因 COVID-19 延期後，該團在 YouTube 直播中透露新專輯由團員自己寫作與製作，並深度參與整體製作流程——**지민負責 A&R、슈가／뷔／제이홉與진／정국共同處理製作、정국另負責 MV 導演、뷔與 RM 監督視覺與設計**。音樂上以 pop 為主、涵蓋 hip hop、EDM、disco，帶 synth-pop、neo soul、funk、R&B 與七〇至二〇一〇年代的元素；**全長 28 分 30 秒、八首歌**，大量使用木吉他、鋼琴、funk 貝斯、鼓機、銅管與抒情弦樂。專輯構想來自疫情期間的情緒，被該團形容為「隔離年代的一封希望之信」。開場〈Life Goes On〉是中板 alternative hip hop／synth-pop、底下鋪木吉他；第 2 軌〈Fly to My Room〉是九〇年代取向的 R&B／neo soul／pop，由지민、뷔、제이홉、슈가四人演唱；〈Blue & Grey〉是稀疏編制的柔性 pop 抒情曲，以木吉他、鋼琴與弦樂鋪成。",
+    "src": "https://en.wikipedia.org/wiki/Be_(BTS_album)"
+   }
+  ],
+  "hookCandidates": [
+   "八軌二十八分半，第 4 軌〈Skit〉整整三分鐘不是歌——一張碟拿八分之一的篇幅來說話",
+   "收尾放的是〈Dynamite〉：三個月前才單獨發行過的那首英文歌，被收進來當這張碟的最後一格"
+  ],
+  "sound": "MB 記六筆 release（KR CD BHK1179、KR 數位、XW 數位、2021-02-19 的 KR Essential Edition CD BHK1179ESS、2023 年的一筆數位、一筆 GB 的 Bootleg 黑膠），**全部 8 軌**；Apple us 1596532185 與 jp 1540718800 的逐軌長度彼此相同、也與 MB 相同到 3 秒內。維基記全長 **28 分 30 秒**、八首歌、錄音 2020 年橫跨九間錄音室（含北好萊塢的 Echo Bar 與洛杉磯的 Henson）。八軌落在 3:00–4:15，**第 4 軌〈Skit〉整整三分鐘是談話段落不是歌**，佔全碟八分之一的篇幅。曲序：開場〈Life Goes On〉3:27 是中板 alternative hip hop／synth-pop、底下鋪木吉他；第 3 軌〈Blue & Grey〉4:15 全碟最長，是稀疏編制的柔性 pop 抒情曲；〈Skit〉之後轉入後半；收尾〈Dynamite〉3:19。維基記全碟以 pop 為主、涵蓋 hip hop、EDM、disco，帶 synth-pop、neo soul、funk 與七〇至二〇一〇年代元素，大量使用木吉他、鋼琴、funk 貝斯、鼓機、銅管與弦樂。製作分工上團員各領一塊：지민 A&R、슈가／뷔／제이홉與진／정국做製作、정국導 MV、뷔與 RM 監督視覺設計。",
+  "keyTracks": [
+   "Life Goes On",
+   "Blue & Grey",
+   "Dynamite"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2020。MB release-group first-release-date **2020-11-20**、其下 KR CD、KR 數位與 XW 數位三筆**全部記 2020-11-20**、Apple us 1596532185 與 jp 1540718800 的 releaseDate **都是 2020-11-20**、兩筆 ℗ 年份都是 **2020**，英文維基 infobox 記 **November 20, 2020**。**四處同年同月同日、兩個店面的 ℗ 也一致**（與同批的《DARK&WILD》不同，那張的 jp ℗ 是 2015）。⚠ **但同一個 release-group 裡有 2021-02-19 的 Essential Edition（BHK1179ESS，同樣 8 軌）與 2023-06-20 的一筆數位**，若配對抓到那兩筆，年份會被拉到 2021 或 2023。**同名先行單曲：無**——MB 藝人頁 101 個 release-group 裡沒有第二筆叫《BE》的東西。",
+  "notes": "**探測層 ready 覆核通過，釘的是 jp 店面但這一筆沒有問題。** 覆核結果：`jp` **1540718800** 的 8 軌逐位置與 MB 的 KR 原盤相符、8 軌全有 previewUrl、℗ 2020 Big Hit Entertainment、`trackCount` 欄與曲目列都是 8。**us 店面另有 1596532185**（同樣 8 軌全有 preview、℗ 2020 BIGHIT MUSIC、逐軌長度與 jp 那筆相同）。依 c-105 rulings 第 3 條，**建議主線改釘 `us` 1596532185**；但即使不改，jp 那筆的內容與年份都正確，**這張不像同批的《DARK&WILD》那樣有 ℗ 差一年的問題**。不改 `previews.json`，交主線補。\\n**⚠⚠ 這張的序數是本組最危險的一個，而且卡單很聰明地沒有寫。** `curatorWhy` 只寫「在《MAP OF THE SOUL : 7》(2020-02) 同年稍晚推出的韓版正規盤」——**沒有寫第 N 張，這個做法是對的，請務必維持。**理由：**英文維基首句自己就給了兩個序數——「the fifth Korean-language and the ninth overall studio album」**；MB 藝人頁的 Album 排序把它排第九（含四筆日版），扣掉日版後排第五。**「第五」與「第九」都有來源、指的是不同的計數口徑。行文一律不得寫序數**；要講位置就用「《MAP OF THE SOUL : 7》同年稍晚」這種相對說法。\\n**同 release-group 內那筆 GB 的 Bootleg 黑膠已確認**（無廠牌、無條碼、status Bootleg），`curatorRisk` 說不得採為背書，屬實。此外還有一筆 `curatorRisk` 沒提到的：**2021-02-19 的 KR「Essential Edition」CD（BHK1179ESS，packaging Box）**，同樣 8 軌、與原版同 release-group，**若配對抓到它，年份會變 2021**。請主線記進 rulings。\\n**盤名只有兩個字母**，`curatorRisk` 說任何字串比對都會大量誤中、要走 collectionId——本次覆核全程照做。\\n可寫的製作事實（維基有具名來源）：團員各自領一塊製作分工（지민 A&R、정국導 MV、뷔與 RM 監督視覺設計等）；專輯是疫情期間寫成、該團自稱「隔離年代的一封希望之信」；錄音橫跨九間錄音室。\\n⚠ **一件行文要小心的**：〈Dynamite〉收在最後一軌，那首在 2020 年 8 月已先以單曲發行過。**MB 的這個 release-group 裡沒有它的獨立 release-group 對照組**，但那首單曲確實存在於該團目錄中；行文若要提「收錄了先前的單曲」是安全的，**但不要寫成「這張碟首發了〈Dynamite〉」。**"
  }
 ]
