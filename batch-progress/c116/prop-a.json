@@ -270,18 +270,151 @@
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
   "selfTitled": false,
-  "queryAlias": "ザ・スターリン 虫；The Stalin Mushi；STALIN 虫；ザ・スターリン Mushi",
-  "reissuedBy": "（1998 TKCA-71508／2003 TKCA-72603／2015 リマスター，皆 JP）",
+  "queryAlias": "ザ・スターリン Fish Inn；The Stalin Fish Inn；フィッシュ・イン",
+  "reissuedBy": "（2003 フィッシュ・イン／2015 リマスター・バージョン，皆 JP）",
   "g": "a",
   "artist": "ザ・スターリン",
-  "album": "虫",
+  "album": "Fish Inn",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "B.Q. Records（catno BQL-1，JP 1984-11-20）",
+  "why": "ザ・スターリン 解散前的最後一張錄音室專輯，出在 B.Q. Records 的創廠編號 BQL-1；與前一張《虫》(Climax) 分屬不同廠牌，是這支樂團一張換一家的最後一步。實掃 seed_cards.json 全 14,424 列：ザ・スターリン 池中 2 張（trash 1981、STOP JAP 1982），《虫》(1983) 已由 c-94 收走，本張補的是它後面那一張，池中的 ザ・スターリン 因此成為 1981／1982／1984 三張。2015 年另有一版《Fish Inn (re-mix)》另立 release-group，不與本張混。來源：MB release-group 38234e5a 轄下 3 個 release 的 label-info、Apple jp 店 collectionId 990162554／219988810 條目。",
+  "risk": "撞卡：實掃全池不撞。⚠ 同一支樂團在 MB 上另有 bd15cc00-6e85-496b-84e7-f47c4e83287c《Fish Inn (re-mix)》(2015) 這個獨立的 release-group，盤名只差括號後綴，是最容易釘錯的一筆（裁定 126 同名雙胞胎），已明列為刻意不釘。⚠ Apple 的 jp 店有兩筆：990162554《Fish Inn (リマスター・バージョン)》(2015) 與 219988810《フィッシュ・イン》(2003，盤名改成片假名轉寫)——後者正是裁定 193 的形狀（MB 取一種、Apple 取另一種），queryAlias 已補片假名形。us 店無。⚠ 轄下 3 個 release：JP 1984-11-20 B.Q. Records BQL-1 Official、JP 1986 Official（無廠牌）、1 筆 Pseudo-Release。年份取 MB first-release-date 1984-11-20。封面 CAA：release-group/38234e5a 回 200。",
+  "mbNote": "釘 release-group 38234e5a-4efc-31d9-854a-f74e9e116b04。回問確認：title「Fish Inn」、artist-credit「ザ・スターリン」、first-release-date 1984-11-20、primary-type Album、secondary-types 空、轄下 3 個 release。藝人 MBID acf084a3-c550-45fa-8272-869e1fecbdad，名下 31 個 RG。刻意不釘：bd15cc00-6e85-496b-84e7-f47c4e83287c《Fish Inn (re-mix)》（2015 重混，與本張同名只差後綴）、63d6547a-7ff9-351a-9c4e-07e1cf21a04d《trash》與 0b68f4c8-c6ba-4170-b701-c0294fd180bb《STOP JAP》（池中已有）、bf99d287-7f53-439f-9f04-29fd9cdd1049《虫》（1983；本批原本要收，主線 chk-prop 抓到與 c-94 已上架的同一張碟重複，已撤下）、08529fb7-dc33-42da-a6dc-b645615e2a1e《フォー・ネヴァー》與 9c62c4fb-a9d0-4173-ad27-a16209f37582《For Never》與 92521b4b-0e41-3ee1-8cdd-c0daaa1c64e4《For Never (live)》（同一批現場錄音的三種寫法）、100a37e8-f957-44e0-8f79-3ebd012622d9《-1(MINUS ONE)》、80041723-508c-4660-af46-0ea623526249《JOY》。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "queryAlias": "鉄アレイ Tetsu Arrey；Tetsu-Arrey；鉄アレイ 1991",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "鉄アレイ",
+  "album": "鉄アレイ",
+  "year": 1991,
+  "genres": [
+   "rock"
+  ],
+  "label": "Sunshine Sherbet Records（catno SS-011，JP 1991）",
+  "why": "鉄アレイ 的首張專輯，出在 Sunshine Sherbet Records（SS-011），是 1990 年代初東京 hardcore 從 1980 年代那一批（Gauze、Lip Cream、DEATH SIDE）交棒下來的一張。這支樂團名下只有四筆 primary-type=Album，其中三筆是 1991／1998／2014 相隔多年的續作，本張是起點。實掃 seed_cards.json 全 14,424 列，鉄アレイ 池中 0 張。來源：MB release-group 8f672850 的 label-info、Discogs 鉄アレイ 藝人頁。",
+  "risk": "撞卡：實掃全池 0 張。掛名是純漢字＋片假名的混寫，依 2026-08-11 東亞命名裁定與裁定 189，混漢字者照原文寫，不羅馬化；MB 實體主名即 鉄アレイ（18dc6f1e）。⚠ Apple：藝人 search 在 jp／us 兩店都找不到這個掛名（回的是どっかん小僧、The Derailers 等不相干條目，裁定 122 的形狀），改用盤名反查亦無，判定兩店皆無，走「無來源」試聽。⚠ 這個 RG 只有 1 個 release（JP 1991 Official），沒有再發，資料極薄，本機寫簡介時要留意可查證來源有限。selfTitled 為 true（同名專輯）。年份取 MB first-release-date 1991。封面 CAA：release-group/8f672850 回 200。",
+  "mbNote": "釘 release-group 8f672850-5ec4-380d-9814-3add2942c9db。回問確認：title「鉄アレイ」、artist-credit「鉄アレイ」、first-release-date 1991、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Sunshine Sherbet Records SS-011）。藝人 MBID 18dc6f1e-7a29-407b-98f9-50100032022a（Group／Japan），名下 8 個 RG 全列。刻意不釘：56bcc998-b4db-4c81-bee3-6a2add0d4ea1《II》（1998）、f7b1de3f-f7ae-4543-b9f4-02f6638d2ca9《IV》（2014）、7516f2ed-d2ce-4008-a94f-bbfabc3a3e61《LAST NIGHT》（Album+Compilation）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "S.O.B. Don't Be Swindle；SOB Dont Be Swindle；Sabotage Organized Barbarian",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "S.O.B.",
+  "album": "Don't Be Swindle",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "（MB 該 release 未填廠牌；JP 1987）",
+  "why": "大阪的 S.O.B.（Sabotage Organized Barbarian）第一張專輯，是日本 hardcore 往 grindcore 分岔的起點，1989 年英國的 Earache 把它與《Leave Me Alone》併成一張在歐洲流通，這支樂團因此成為第一批被歐美 grindcore 場景直接接收的日本團。實掃 seed_cards.json 全 14,424 列，S.O.B. 池中 0 張。名下 17 個 release-group 裡有 10 筆 primary-type=Album，本張是最早的一筆。來源：MB release-group ee4162f5 與同藝人 4357c7b2《Leave Me Alone / Don't Be Swindle》(1990) 的併輯條目、Discogs S.O.B. 藝人頁。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名（裁定 179）：MB 搜尋 S.O.B. 回法國 talkbox 歌手 S.O.B.、Vallejo 的 SOB、Cluster Records 的 S.O.B.；已回問確認取 Group／Japan／1983／disambiguation「Japanese grindcore band」的 4d4159b8。⚠ Apple 更嚴重：藝人目錄 lookup（jp／us）七個同名 artistId 共 18 張，全部是印尼的 M.A.C & S.O.B 與巴西的 S.O.B，日本這支一張都沒有——兩店皆無本張，走「無來源」試聽。⚠ MB 這個 RG 只有 1 個 release（JP 1987 Official）且未填廠牌，本機建卡時 label 欄宜留白或註明未確認。⚠ 盤名含直撇號 Don't，撞卡與反查時彎撇號形（Don’t）也要試（audits 第二節記的彎直撇號分裂）。年份取 MB first-release-date 1987。封面 CAA：release-group/ee4162f5 回 200。",
+  "mbNote": "釘 release-group ee4162f5-21f5-3fa3-b97e-0e4456cb532a。回問確認：title「Don't Be Swindle」、artist-credit「S.O.B.」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，未填廠牌）。藝人 MBID 4d4159b8-19b5-4337-9d07-4eb0100fe630（Group／Japan／1983／「Japanese grindcore band」），名下 17 個 RG 全列。刻意不釘：4357c7b2-269a-335b-80a1-e808f4c258ad《Leave Me Alone / Don't Be Swindle》（1990，Album+Compilation，與本張曲目重疊的併輯，最容易誤釘）、2d7250cb-8c1d-4a27-b0b7-644224749109《Thrash Night - Leave Me Alone》（無日期，Album+Compilation）、63361ef7-1885-45a9-bce3-9419cfffec2f《Osaka Mon Amour》（Album+Compilation）、7aa11ba8-1a79-3f36-a880-e88aa206824f《What's the Truth?》（1990）、ee53affd-4cfb-3d59-b1c0-b797e6e94878《Gate of Doom》（1993）、d75a7466-a467-3a1f-b71d-78f292f52257《Vicious World》（1994）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "GREAT PUNK HITS；グレート・パンク・ヒッツ；Great Punk Hits 1983",
+  "reissuedBy": "WAX RECORDS（1989-12-21，22WXD-130）",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "GREAT PUNK HITS",
   "year": 1983,
   "genres": [
    "rock"
   ],
-  "label": "Climax Records（catno CMC-2512，JP 1983-04-25）",
-  "why": "ザ・スターリン 從自主場景轉進較大流通後的第三張，出在 Climax Records（CMC-2512），是《STOP JAP》(1982) 的下一張。實掃 seed_cards.json 全 14,424 列：ザ・スターリン 池中有 2 張——《trash》(1981) 與《STOP JAP》(1982)，兩張都由 c-70 new wave 批帶進，時間軸停在 1982；本批補的《虫》與《Fish Inn》正好把 1983–1984 這一段接上。這張後來在 1998、2003、2015 三度以不同編號再發，是遠藤ミチロウ 目錄裡再發次數最多的一張。來源：MB release-group bf99d287 轄下 4 個 release 的 label-info、Apple jp 店 collectionId 990142158／219988005 條目。",
-  "risk": "撞卡：實掃全池，ザ・スターリン 池中 2 張（trash、STOP JAP），本張不撞。⚠ 掛名分裂：MB 藝人實體主名是片假名 ザ・スターリン（acf084a3），但同名的還有德國 alt/electronic 的 Stalin、美國饒舌 J. Stalin，以及一個 disambiguation 寫「スターリン」的 Stalin（d3e79013）——已回問 area／type 確認取 Group／Japan／1980-06-06。池中既有兩張就掛在 ザ・スターリン 下，依裁定 177 第一步沿用池中寫法。⚠ 盤名是單一漢字「虫」，這是裁定 185 的極端形狀，Apple search 不可信；已走藝人目錄與盤名反查，jp 店有 collectionId 990142158（2015 リマスター・バージョン）與 219988005（2003 版），us 店無。年份取 MB first-release-date 1983-04-25。轄下 4 個 release 中 1 筆 Pseudo-Release，其餘 JP／Official。封面 CAA：release-group/bf99d287 回 200。",
-  "mbNote": "釘 release-group bf99d287-7f53-439f-9f04-29fd9cdd1049。回問確認：title「虫」、artist-credit「ザ・スターリン」、first-release-date 1983-04-25、primary-type Album、secondary-types 空、轄下 4 個 release（JP 1983 Climax CMC-2512 Official／JP 1998 TKCA-71508 Official／JP 2003 TKCA-72603 Official／1 筆 Pseudo-Release）。藝人 MBID acf084a3-c550-45fa-8272-869e1fecbdad，名下 31 個 RG 全列。刻意不釘：63d6547a-7ff9-351a-9c4e-07e1cf21a04d《trash》與 0b68f4c8-c6ba-4170-b701-c0294fd180bb《STOP JAP》（池中已有）、38234e5a-4efc-31d9-854a-f74e9e116b04《Fish Inn》（本批另收）、127fa455-23c4-3e0a-be0f-4e32d02756dd《STOP JAP + GO GO STALIN》（合體再發）、d6543e18-3b30-498f-8722-4f067a5827cf《STOP JAP NAKED》與 075b3722-3b89-4ba6-855f-bd6416e68b9a《STALINISM NAKED》（未混音版）、dbbc634c／7b9fc18b／966b5f10／ce8910b6（Album+Compilation 的四張精選）、92521b4b／e2009b31／6c6e32d3（Live）、12ae0f61-d11d-4d25-b75e-b085fffc14e4《THE STALIN BEST》與 8f235607-27bd-4dac-94a1-2c18b8dc6f50《ザ・スターリン・ベスト》（無日期的精選雙胞胎）。"
+  "label": "JAPAN RECORD（catno 25JAL-2，JP 1983）",
+  "why": "日本 hardcore 第一波的通行入口盤：1983 年由 JAPAN RECORD 發行（25JAL-2），把當時散在自主 7 吋與卡帶上的樂團收成一張可在唱片行買到的 LP，是這條線少數不靠場景通路流通的實體。1985 與 1989 兩度改編號再發（32JC-124、22WXD-130），三個版本都標 Official。オムニバス 是這條線的正典形態，本批 a 組另收《Hardcore Unlawful Assembly》(1984, AA Records) 與之對照。實掃 seed_cards.json 全 14,424 列：池中 82 張 Various Artists 卡，逐筆比對無本張。來源：MB release-group fd48a9f6 轄下 3 個 release 的 label-info、Discogs JAPAN RECORD 廠牌頁。",
+  "risk": "⚠ §5.6 判定：MB 這一筆是 primary-type=Album ＋ secondary-types [\"Compilation\"]，依裁定 167／190 照一般 Album 寫，releaseType 填 Album、例外欄位留空——填了會被 chk-prop 判「非合輯卻帶例外欄位」。撞卡：實掃全池 82 張 VA 卡，無同名。⚠ 掛名 Various Artists 在各店面會被翻成當地語言（裁定 182），Apple 的藝人閘對本張一定會整張擋掉；藝人目錄 lookup 不適用，改用盤名反查 jp／us 兩店皆無（回的是 CCR、2Pac 等不相干條目），走「無來源」試聽。年份取合輯首次出版年 1983（＝MB first-release-date）。封面 CAA：release-group/fd48a9f6 回 200。",
+  "mbNote": "釘 release-group fd48a9f6-9165-4708-b384-fbb338108bed。回問確認：title「GREAT PUNK HITS」、artist-credit「Various Artists」、first-release-date 1983、primary-type Album、secondary-types [\"Compilation\"]（依裁定 167 照一般 Album 寫）、轄下 3 個 release（JP 1983 JAPAN RECORD 25JAL-2／JP 1985-07-25 JAPAN RECORD 32JC-124／JP 1989-12-21 WAX RECORDS 22WXD-130，全數 Official）。刻意不釘：76dfe338-f0e5-3e03-af6b-2560080bfc46《City Rockers》（1982，City Rocker Records CR-00C；CAA 回 404、Apple 兩店亦無，依裁定 195 兩路皆無封面，本批不收）、a2756071-eb9e-4cca-8626-ee7d2385150d 與 7fcd1e78-4a1e-4d38-8969-106575be11e0《ADK Omnibus, Volume 1》（同一張碟的兩筆重複建檔，且 CAA 回 404）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hardcore Unlawful Assembly；ハードコア不法集会；AA Records AA 004",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Various Artists",
+  "album": "Hardcore Unlawful Assembly",
+  "year": 1984,
+  "genres": [
+   "rock"
+  ],
+  "label": "AA Records（catno AA 004，JP 1984）",
+  "why": "1984 年 AA Records 的 AA 004，是 GREAT PUNK HITS 之後、由場景自己的廠牌做的オムニバス，兩張放在一起就對照出這條線「大廠通路」與「自主通路」兩種出口。AA Records 屬東京自主系統，同期的 ADK Records（あぶらだこ 的東家）與 Dogma Records 各有自己的合輯系列。實掃 seed_cards.json 全 14,424 列：池中 82 張 Various Artists 卡，逐筆比對無本張。來源：MB release-group ebfa26ae 的 label-info（AA Records AA 004）、Discogs AA Records 廠牌頁。",
+  "risk": "⚠ §5.6 判定同上：primary-type=Album ＋ secondary-types [\"Compilation\"]，依裁定 167／190 照一般 Album 寫，例外欄位留空。撞卡：實掃全池 82 張 VA 卡，無同名。⚠ Various Artists 的店面翻譯問題同上（裁定 182），Apple 盤名反查 jp／us 兩店皆 0 筆，走「無來源」試聽。⚠ 這個 RG 只有 1 個 release（JP 1984 Official），沒有再發，可查證來源有限。年份取合輯首次出版年 1984。封面 CAA：release-group/ebfa26ae 回 200。",
+  "mbNote": "釘 release-group ebfa26ae-74f5-4d08-a961-dec256e04b81。回問確認：title「Hardcore Unlawful Assembly」、artist-credit「Various Artists」、first-release-date 1984、primary-type Album、secondary-types [\"Compilation\"]、轄下 1 個 release（JP 1984 AA Records AA 004，Official）。刻意不釘：fd48a9f6-9165-4708-b384-fbb338108bed《GREAT PUNK HITS》（本批另收）、76dfe338-f0e5-3e03-af6b-2560080bfc46《City Rockers》（CAA 404，未收）、a2756071 與 7fcd1e78《ADK Omnibus, Volume 1》（重複建檔＋CAA 404，未收）、d929cade-00c0-4e33-92fb-583105aca7c1《Achtung ADK》（2020，與 1983 年的 ADK 系列無關）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Bastard Wind of Pain；バスタード ウィンド・オブ・ペイン；Bastard Japan hardcore",
+  "reissuedBy": "Feral Ward（2013，YAN073，US）",
+  "g": "a",
+  "artist": "Bastard",
+  "album": "Wind of Pain",
+  "year": 1992,
+  "genres": [
+   "rock"
+  ],
+  "label": "Bastard Records／BLOOD SUCKER RECORDS（catno BASTARD 02／BSR 005，JP 1992）",
+  "why": "Bastard 名下唯一一張錄音室專輯，1992 年由樂團自營的 Bastard Records 與 BLOOD SUCKER RECORDS 雙編號發行；樂團成員後來組成 Judgement 與 Forward，這張因此是 1990 年代東京 hardcore 幾支團的共同源頭。2013 年美國的 Feral Ward 以 YAN073 重發，是這張碟第一次有美國正式版本。實掃 seed_cards.json 全 14,424 列，Bastard 池中 0 張。來源：Feral Ward 官方商品頁、MB release-group d28011f6 轄下 2 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名（裁定 179）：MB 搜尋 Bastard 回俄羅斯 Theodor Bastard、美國 Bastard Noise、捷克 Havířov 的 Bastard；已回問確認取 Group／Japan／disambiguation「Japanese punk band」的 a296b6a1。⚠ Apple 更嚴重：藝人目錄 lookup（jp／us）六個同名 artistId 共 104 張，逐筆比對無本張，兩店皆無。轄下 2 個 release 皆 Official（JP 1992／US 2013）。年份取 MB first-release-date 1992。封面 CAA：release-group/d28011f6 回 200。",
+  "mbNote": "釘 release-group d28011f6-4e33-4d2d-a113-a5757623adf0。回問確認：title「Wind of Pain」、artist-credit「Bastard」、first-release-date 1992、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1992 Bastard Records BASTARD 02＋BLOOD SUCKER BSR 005 Official／US 2013 Feral Ward YAN073 Official）。藝人 MBID a296b6a1-386f-4719-90e5-a8a91fb3bd99（Group／Japan／「Japanese punk band」），名下 4 個 RG 全列。刻意不釘：4f0eedaf-4178-39d5-9852-7cf7f2edf8d4《No Hope in Here》（2002，Album+Compilation，把同一批錄音再包一次）；另外同場景的 Judgement（d2845cdb，Group／Japan／「Japanese punk band」）名下 5 個 RG 全無 primary-type=Album，本批查證後不收。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Disclose Tragedy；ディスクローズ；Disclose d-beat Tragedy",
+  "reissuedBy": "La Vida Es Un Mus（2015，MUS101，GB）",
+  "g": "a",
+  "artist": "Disclose",
+  "album": "Tragedy",
+  "year": 1994,
+  "genres": [
+   "rock"
+  ],
+  "label": "Overthrow Records（catno OVERTHROW-007，JP 1994）",
+  "why": "高知的 Disclose 第一張專輯，1994 年由 Overthrow Records 發行（OVERTHROW-007），是把英國 Discharge 的節奏形態在日本推到極致的那一支——d-beat 這個叫法在 1990 年代之後幾乎與這支樂團綁在一起。2015 年倫敦的 La Vida Es Un Mus 以 MUS101 重發，與該廠 2019 年重發 The Comes《No Side》(MUS200) 屬同一套日本 hardcore 復刻線。實掃 seed_cards.json 全 14,424 列，Disclose 池中 0 張；MB 名下 42 個 release-group 是本批藝人裡最多的一位，其中 13 筆 primary-type=Album，本張是最早的原盤。來源：La Vida Es Un Mus 官方商品頁、MB release-group b1f7e538 轄下 2 個 release 的 label-info。",
+  "risk": "撞卡：實掃全池 0 張。⚠ 短掛名（裁定 179）：MB 另有義大利 Carpi 的 Disclose（84e3d611）；已回問確認取 Group／Japan／1991／disambiguation「Japanese d-beat」的 4e3ae10c。⚠ 盤名《Tragedy》極其通用，撞卡與封面反查一定要連掛名一起看。⚠ 名下 42 個 RG 裡有 4 筆《Raw Brutal Assault》系列（Vol.1–4）是 Album+Compilation 的 discography 包，曲目與本張大量重疊，最容易誤釘，已明列刻意不釘。轄下 2 個 release 皆 Official（JP 1994／GB 2015）。Apple：本批未在 jp／us 藝人目錄命中本張。年份取 MB first-release-date 1994。封面 CAA：release-group/b1f7e538 回 200。",
+  "mbNote": "釘 release-group b1f7e538-22a3-3d03-ae15-dca63b132b59。回問確認：title「Tragedy」、artist-credit「Disclose」、first-release-date 1994、primary-type Album、secondary-types 空、轄下 2 個 release（JP 1994 Overthrow OVERTHROW-007 Official／GB 2015 La vida es un mus MUS101 Official）。藝人 MBID 4e3ae10c-b302-40a2-be94-80d76547c4ea（Group／Japan／1991／「Japanese d-beat」），以 release-group?artist=…&limit=100&offset= 分頁全列 42 個 RG。刻意不釘：c024be5d-af85-362a-a435-5cd8b0fce23f《Raw Brutal Assault, Volume 1》、953e1b2a-2ad8-3455-b94d-c8f911b27689《Volume 2: Discography 1994–1998》、5cf69955-5efe-4a3d-8430-597198def903《Vol.3》、5fd4c456-4ed1-4e85-acf3-3a67772af0ea《Vol.4》（四張皆 Album+Compilation，與本張曲目重疊）、45ed45ea-2775-3f64-94f7-2bfc66c8eca3《No More Pain》與 d124dfb9-e130-4e33-be9e-4db7672a4d20《The Demo's Album》（Album+Compilation）、bd9b2e49-0aec-38c1-a1b4-9cc2dbcd9e37《Nightmare or Reality》（1999）、cdc8db41-9aa5-4974-bd72-ef499a6cdccd《Yesterday's Fairytale, Tomorrow's Nightmare》（2004）、66e34404-4619-4875-a667-ba801d98cc8a《Requiem for Kawakami》（2018）、b9cdaf68-8878-48f1-97ab-9552382ceaa8《Totalitär / Disclose》（split）、6f093bb7-b9bd-3d98-ac13-ed15aae58d61《Live 1992》與 3b594076-c1d0-495a-9a08-7ead8210d0b9（Live）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Crow Last Chaos；クロウ ラスト・カオス；Crow Japan punk Osaka",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "Crow",
+  "album": "Last Chaos",
+  "year": 1987,
+  "genres": [
+   "rock"
+  ],
+  "label": "Crow Records（catno Crow 0，JP 1987）",
+  "why": "大阪的 Crow 首張專輯，1987 年由樂團自營的 Crow Records 以編號 Crow 0 發行——編號從 0 起算，是自主廠牌開張的第一張。這支團與同城的 Zouo、S.O.B. 同屬關西一線，與東京 Selfish／Dogma 那一條是兩個系統。實掃 seed_cards.json 全 14,424 列，Crow 池中 0 張。這張是本批補 ザ・スターリン《虫》撤下後的替換：主線 chk-prop 抓到《虫》與 c-94 已上架的同一張碟重複，改收本張，等於把關西一線多補一個名字。來源：MB release-group 5a7658b8 的 label-info（Crow Records Crow 0）、Discogs Crow 藝人頁。",
+  "risk": "撞卡：實掃全池 0 張，且已與 c-94 的清單對照過，無重複。⚠ 短掛名（裁定 179）：MB 搜尋 Crow 的第一名是 Sheryl Crow（score 100），其後有 1960 年代美國 blues-rock 的 Crow、日本的 GARNET CROW；已回問 area／type／disambiguation，確認取 Group／Osaka／disambiguation「Japanese punk band」的 2b5e6093。⚠ Sheryl Crow 這種大名字會讓封面與試聽反查整組跑偏，探測時務必連掛名一起鎖。⚠ 這個 RG 只有 1 個 release（JP 1987 Official），沒有再發。Apple：本批的 jp／us 藝人目錄探測未命中本張，預估走「無來源」試聽（裁定 195：CAA 有封面即收）。年份取 MB first-release-date 1987。封面 CAA：release-group/5a7658b8 回 200。",
+  "mbNote": "釘 release-group 5a7658b8-d804-4c36-a8ac-a71b339a93d0。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「Last Chaos」、artist-credit「Crow」、first-release-date 1987、primary-type Album、secondary-types 空、轄下 1 個 release（JP Official，Crow Records Crow 0）。藝人 MBID 2b5e6093-50b4-4b12-acf0-eac69c955076（Group／Osaka／「Japanese punk band」），以 release-group?artist=…&limit=100&offset= 分頁全列 17 個 RG，其中僅 2 筆 primary-type=Album。刻意不釘：9ce49fd1-7a16-4ee6-a9c1-07ab1c2ed06c《血涙》（2005，同藝人另一張 Album，本批只取一張）；其餘 15 筆為 EP、Single 與 split，hardcore 不在 §5.5 白名單，一律不取。"
  }
 ]
