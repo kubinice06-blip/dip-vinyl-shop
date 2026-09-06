@@ -218,5 +218,181 @@
   "status": "full",
   "yearVerified": "一致，2008。release-group first-release-date **2008-03-24**、其下兩筆 FR 的 2008-03-24 Official CD（含收藏版）同日、串流店面 fr 1440511541 的 releaseDate 2008-01-01（店面只有年份可信）與 ℗ 2008 相符，條目 infobox 記 2008 年 3 月 24 日。**同名先行單曲：無**（三首單曲都不與專輯同名）。",
   "notes": "**擋下策展層一處（序數）**：卡單 `curatorWhy` 寫「也是他生前發表的最後一張錄音室作品（1947–2009）」。藝人目錄顯示本張之後**還有兩筆 primary-type Album**——2011-11-07《L'Homme à tête de chou》與 2018-11-23《En amont》，**都晚於 2009**；這兩筆是否算「錄音室作品」本批未查到直接來源。同時**條目寫本張是 douzième（第十二張）、藝人目錄排第 13**，兩邊差一張。**行文不得寫序數，也不得寫「最後一張」**；要指這個位置只能寫「2008 年的專輯」。｜**撇號兩種寫法**：來源端與店面端本張都用 ASCII 直撇（`Je t'ai manqué`），無分歧。｜曲序陷阱：黑膠 5＋6 分面與店面單片 11 軌的第 5、6 軌順序相反，**行文不得說「第五首是〈Vénus〉」這種依序數指名的話**。｜條目提到的銷售認證（disque de platine）依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Noir Désir|Veuillez rendre l'âme (à qui elle appartient)",
+  "artist": "Noir Désir",
+  "album": "Veuillez rendre l'âme (à qui elle appartient)",
+  "facts": [
+   {
+    "f": "release-group 7664fc7a 的欄位：title「Veuillez rendre l'âme (à qui elle appartient)」（來源端用彎撇 U+2019 作「l'âme」）、artist-credit「Noir Désir」（藝人 MBID e6358374）、first-release-date **1989-01-10**、primary-type Album、secondary-types **空**。轄下 6 筆 release **全部 FR、全部 Official、全部 11 軌**：1989 的 Barclay 837 773-1（12 吋）、1989 的 Barclay 837 773-4（卡帶）、1989-01-10 的 Barclay 837 773-2（CD）、2008 的 Barclay 530 917-8（12 吋）、另兩筆無日期的 837 773-2 CD 再壓（其一標「made in the EU by Cinram Optical Discs」）。**六筆全 11 軌，沒有任何加曲版本。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7664fc7a-f99e-3352-8eba-d2afc9718f48?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1989 FR 原盤（Barclay 837 773-1，12 吋）的逐軌曲目與長度：1〈À l'arrière des taxis〉3:12、2〈Aux sombres héros de l'amer〉3:01、3〈Le Fleuve〉3:51、4〈What I Need〉3:23、5〈Apprends à dormir〉3:05、6〈Sweet Mary〉2:03、7〈La Chaleur〉3:42、8〈Les Écorchés〉4:11、9〈Joey I〉3:02、10〈Joey II〉2:27、11〈The Wound〉4:37。**11 軌裡有四首英語標題（第 4、6、11 軌與第 9、10 軌的〈Joey〉兩部曲），最短 2:03、最長 4:37。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7664fc7a-f99e-3352-8eba-d2afc9718f48&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1440855139：collectionName「Veuillez rendre l'âme (à qui elle appartient)」、releaseDate **2014-01-01**、copyright「℗ 2014 Barclay」、trackCount 11。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名與曲序與 1989 原盤**逐位置相符**、逐軌長度除末軌差 1 秒外完全相同。**店面的日期與 ℗ 都是 2014，那是再發年份不是原盤年份；內容是 11 軌原盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1440855139&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張為 Noir Désir 的 **deuxième album studio**（第二張錄音室專輯），1989 年 1 月 10 日發行；錄音在布魯塞爾的 **Studio ICP**，製作 **Ian Broudie**，總長記 36 分 13 秒，曲風記 rock alternatif，廠牌 Barclay。條目說這張靠〈Aux Sombres héros de l'amer〉把樂團帶到大眾面前。單曲兩首：〈Aux Sombres héros de l'amer〉1989 年 1 月 29 日、〈Les Écorchés〉1989。製作與美術團隊：Ian Broudie 製作、Phil Delire 錄音、Vincent Epplay 設計、Alain Duplantier 攝影。",
+    "src": "https://fr.wikipedia.org/wiki/Veuillez_rendre_l'%C3%A2me_(%C3%A0_qui_elle_appartient)"
+   },
+   {
+    "f": "藝人端點分頁全列 **69 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **6 張**，依序為《Où veux-tu qu'je r'garde ?》1986-09、**《Veuillez rendre l'âme (à qui elle appartient)》1989-01-10**、《Du ciment sous les plaines》1991-02、《Tostaky》1992-12-07、《666.667 Club》1996-01-01、《Des visages des figures》2001-09-11。**本張排第 2。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e6358374-5eea-4205-be22-382ed6df493c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "前一張《Où veux-tu qu'je r'garde ?》（release-group 88ae77ce，first-release-date 1986-09）轄下 4 筆 release **全部 FR、全部 Official、全部只有 6 軌**（1986-09 的 12 吋、1987 的卡帶、1989 與 2009 的 CD）。**六軌對十一軌**——這是「本張才是第一張整長專輯」這個說法的實據，但來源端把兩者都標成 primary-type Album。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=88ae77ce-b65b-3d36-bc02-cd8b5c937c96&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌裡四首用英語標題，〈Joey〉還拆成 I 和 II 連放兩軌",
+   "前一張只有六首，這張才是第一次撐滿一張整長專輯"
+  ],
+  "sound": "1989 年 Barclay 的 12 吋、卡帶與 CD 三種載體同為 11 軌，總長 36 分 13 秒，單軌 2:03 到 4:37。錄音在布魯塞爾的 Studio ICP，製作 Ian Broudie、錄音 Phil Delire。條目把曲風記成 rock alternatif。曲目上法語與英語混排：〈What I Need〉〈Sweet Mary〉〈The Wound〉三首英語標題，〈Joey I〉與〈Joey II〉拆成連續兩軌。再發線很乾淨——2008 年 Barclay 又壓一次 12 吋，另有兩筆無日期的 CD 再壓，六筆全部 11 軌、沒有加曲版本。",
+  "keyTracks": [
+   "Aux sombres héros de l'amer",
+   "Les Écorchés",
+   "The Wound"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1989。release-group first-release-date **1989-01-10**、其下 1989 的三筆 FR／Official release（12 吋／卡帶／CD）同年、條目 infobox 記 1989 年 1 月 10 日。**唯一不同步的是店面**：fr 1440855139 的 releaseDate 與 ℗ 都是 **2014**，那是 Barclay 再發的年份，**行文一律寫 1989**。**同名先行單曲：無**（1989-01-29 的單曲是〈Aux Sombres héros de l'amer〉）。",
+  "notes": "**擋下策展層一處（序數）**：卡單 `curatorWhy` 寫「Noir Désir 在 Barclay 名下的第一張整長專輯」。藝人目錄把本張排第 **2**，條目首句也明寫 **deuxième album studio**；本張之所以能說「第一張整長」，是因為 1986 年的《Où veux-tu qu'je r'garde ?》只有 6 軌（四筆 release 全 6 軌），但來源端仍把它標成 Album，而「Barclay 名下」這個限定也沒有查到直接來源。**行文不得寫「第一張」**；要提這個位置只能寫「前一張只有六首」。｜**撇號兩種寫法**：來源端的 release-group title 與部分 release title 用彎撇 U+2019（`l’âme`、`qu’je r’garde`），另有幾筆 release 與店面用 ASCII 直撇（`l'âme`）——**同一個 release-group 內部就兩種都有**。卡單走 ASCII，`keyTracks` 已按 ASCII 寫。｜大小寫差異：來源端作〈Aux sombres héros de l'amer〉、條目作〈Aux Sombres héros de l'amer〉，**行文照來源端的原盤寫法**。"
+ },
+ {
+  "key": "desc2:Noir Désir|Tostaky",
+  "artist": "Noir Désir",
+  "album": "Tostaky",
+  "facts": [
+   {
+    "f": "release-group c9d18ffe 的欄位：title「Tostaky」、artist-credit「Noir Désir」、first-release-date **1992-12-07**、primary-type Album、secondary-types **空**。轄下 4 筆 release **全部 FR、全部 Official**：1992-12-07 的 Barclay 517598-4（卡帶，12 軌）、1992-12-07 的 Barclay 517598-2（CD，12 軌）、2012 的 Barclay 372 331-3（**CD 15 軌＋CD 18 軌的兩片組**，disambiguation「20 ans, édition 2 CD」）、無日期的 517598-2 CD 再壓（12 軌，「made in France by PMDC」）。**原盤是 12 軌，2012 那套 33 軌的二十週年版不是原盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/c9d18ffe-4f0f-3801-94fa-def1e1ba8483?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1992-12-07 FR 原盤的逐軌曲目與長度：1〈Here It Comes Slowly〉3:04、2〈Ici Paris〉3:37、3〈Oublié〉4:34、4〈Alice〉3:56、5〈One Trip / One Noise〉4:12、6〈Tostaky (le continent)〉5:30、7〈Marlène〉3:03、8〈Johnny colère〉2:18、9〈7 Minutes〉6:01、10〈Sober Song〉2:52、11〈It Spurts〉3:53、12〈Lolita nie en bloc〉3:30。**12 軌，最長〈7 Minutes〉6:01、最短〈Johnny colère〉2:18；與盤名同名的是第 6 軌〈Tostaky (le continent)〉，不是裸的〈Tostaky〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c9d18ffe-4f0f-3801-94fa-def1e1ba8483&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1443608935：collectionName「Tostaky」、releaseDate 1992-01-01、copyright「℗ 1992 Barclay」、trackCount 12、**collectionExplicitness 標 explicit**。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、逐軌長度差都在 1 秒內。**同一藝人目錄下另有 collectionId 1649858342「Tostaky (Live) - Single」（2022-10-28，1 軌）——盤名比對會撞到那一筆，本張必須指名 1443608935。**",
+    "src": "https://itunes.apple.com/lookup?id=1443608935&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張為 Noir Désir 的 **quatrième album studio**（第四張錄音室專輯），1992 年 12 月 8 日發行於 Barclay；錄音期 1992 年 9 月至 12 月，地點是英國 Checkendon 的 **Outside Studios**；製作 **Ted Niceley 與 Noir Désir**；總長記 46 分 27 秒。條目說盤名 Tostaky 是西班牙語「todo está aquí」（一切都在這裡）的口語縮讀，是 Emiliano Zapata 那批墨西哥革命者的口號之一。單曲三首：〈Tostaky (le continent)〉〈Lolita nie en bloc〉〈Ici Paris〉。",
+    "src": "https://fr.wikipedia.org/wiki/Tostaky"
+   },
+   {
+    "f": "同一條目的 Analyse artistique 節：這張的聲音比前幾張更飽和、更粗糙，Serge Teyssot-Gay 的吉他 riff 位置更前，尤其在〈Tostaky (le continent)〉〈Here It Comes Slowly〉與〈7 minutes〉上；〈7 minutes〉接近 noise rock，〈It Spurts〉與〈Johnny colère〉靠向金屬，〈Oublié〉〈One Trip/One Noise〉〈Marlène〉〈Lolita nie en bloc〉則相對安靜。**〈Johnny colère〉是雷恩樂團 Les Nus 的翻唱**；**〈Ici Paris〉的歌詞提到 Syd Barrett，條目說那是樂團全部歌曲裡唯一一次點名一位音樂人**；〈Here It Comes Slowly〉是樂團第一首正面處理政治（極右崛起）的歌，但因為用英語唱而大多沒被聽出來。製作團隊另列 Andy Baker（錄音助理）、Graig Sangster 與 Avril Mackintosh（混音）、Eli Janney（錄音師）、Anton Corbijn 等四人攝影。",
+    "src": "https://fr.wikipedia.org/wiki/Tostaky"
+   },
+   {
+    "f": "藝人端點分頁全列 69 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 6 張，**《Tostaky》1992-12-07 排第 4**，前一張是 1991-02 的《Du ciment sous les plaines》、後一張是 1996 的《666.667 Club》。**與條目的 quatrième 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e6358374-5eea-4205-be22-382ed6df493c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是西班牙語「todo está aquí」的口語縮讀，Zapata 那批人的口號",
+   "〈Ici Paris〉點名 Syd Barrett，全團歌詞裡唯一一次寫出音樂人的名字"
+  ],
+  "sound": "1992-12-07 的卡帶與 CD 同為 12 軌，總長 46 分 27 秒，單軌 2:18 到 6:01。錄音 1992 年 9 至 12 月在英國 Checkendon 的 Outside Studios，製作 Ted Niceley 與樂團自己，混音 Graig Sangster 與 Avril Mackintosh。聲音比前幾張飽和粗糙，Serge Teyssot-Gay 的吉他 riff 站到最前面；〈7 Minutes〉靠 noise rock，〈It Spurts〉與〈Johnny colère〉靠金屬，〈Oublié〉〈Marlène〉〈Lolita nie en bloc〉相對安靜。〈Johnny colère〉是雷恩樂團 Les Nus 的翻唱。2012 年另有 15＋18 軌的二十週年兩片版。",
+  "keyTracks": [
+   "Tostaky (le continent)",
+   "Lolita nie en bloc",
+   "Here It Comes Slowly"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1992。release-group first-release-date **1992-12-07**、其下兩筆 FR／Official 原盤（卡帶與 CD）同為 1992-12-07、串流店面 fr 1443608935 的 releaseDate 1992-01-01 與 ℗ 1992 相符。**日期差一天**：條目 infobox 寫 1992 年 12 月 8 日、來源端寫 12 月 7 日，**行文只寫年份 1992、不要寫到日**。**同名對照組有一筆、在專輯之後**：2022-10-28 的〈Tostaky (Live)〉單曲（店面 1649858342，1 軌），**凡取最新或字串比對的邏輯都會選錯**。",
+  "notes": "**配對風險（本批 6 張未 ready 之一）**：探測層判本張 unavailable，回撈候選 `1443608935` 經逐軌覆核**成立**——fr 店面 12 軌、曲名曲序與 1992 原盤逐位置相符、長度差 1 秒內、℗ 1992。**可補的 collectionId：fr `1443608935`，12 軌，12 軌全有試聽。**（標 explicit，屬裁定 166 要辨的那一型，但同一張碟在 fr 目錄裡沒有第二個淨化版 collectionId。）｜**撇號**：本張曲名全部不含撇號，兩種寫法問題不觸及。｜**曲名陷阱**：盤名同名曲的完整曲名是〈Tostaky (le continent)〉，**行文不得寫成「同名曲〈Tostaky〉」**。｜條目的 Accueil／銷售段落依規則不進 facts。"
+ },
+ {
+  "key": "desc2:Noir Désir|666.667 Club",
+  "artist": "Noir Désir",
+  "album": "666.667 Club",
+  "facts": [
+   {
+    "f": "release-group 18659ce4 的欄位：title「666.667 Club」、artist-credit「Noir Désir」、first-release-date **1996-01-01**、primary-type Album、secondary-types **空**。轄下 6 筆 release **全部 Official、全部 13 軌**：1996-01-01 的 XW 數位（13 軌）、1996-11 的 Barclay 533 442-1（FR，**12 吋兩片 6＋7 軌**）、1996-11 的 Barclay 533442-2（FR，CD）、1996-11-11 的 533442-2 兩筆（FR，CD，disambiguation 分別是「no misprint, PMDC France」與「Misprint, PMDC France」）、2004-06 的 533 442-2（FR，CD，Reissue）。**實體盤全部落在 1996 年 11 月，開頭那筆 1996-01-01 是數位版的填充日期。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/18659ce4-de69-3829-aa1c-a71d64b3d97c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "13 軌的逐軌曲目與長度：1〈666.667 Club〉3:41、2〈Fin de siècle〉5:35、3〈Un jour en France〉3:12、4〈À ton étoile〉4:28、5〈Ernestine〉4:41、6〈Comme elle vient〉2:25、7〈Prayer For A Wanker〉3:10、8〈Les persiennes〉4:09、9〈L'homme pressé〉3:46、10〈Lazy〉5:34、11〈À la longue〉4:27、12〈Septembre en attendant〉2:38、13〈Song For JLP〉2:28。**13 軌，開頭第一軌就是同名曲；黑膠版把它切成 6＋7 兩片。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=18659ce4-de69-3829-aa1c-a71d64b3d97c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1443159119：collectionName「666.667 Club」、releaseDate 1996-01-01、copyright「℗ 1996 Barclay」、trackCount 13、**collectionExplicitness 標 explicit**。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、逐軌長度差都在 1 秒內。差別只在正字：店面把〈À ton étoile〉寫成〈A ton étoile〉、〈À la longue〉寫成〈A la longue〉、〈Song For JLP〉寫成〈Song For Jlp〉。",
+    "src": "https://itunes.apple.com/lookup?id=1443159119&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張為 Noir Désir 的 **cinquième album studio**（第五張錄音室專輯），1996 年 11 月 11 日發行於 Barclay；錄音在 1996 年 8 月、地點是 Landes 的 **Studio du Manoir**；製作 **Ted Niceley 與 Noir Désir**；總長記 50 分 39 秒；曲風記 rock／rock alternatif／grunge／rock expérimental。條目說這張的音樂比前一張安靜，重心移到歌詞，有些曲目私密、有些處理政治或社會題材，樂團「介入型樂團」的標籤由此而來。單曲三首：〈Un jour en France〉1996、〈À ton étoile〉1997、〈L'Homme pressé〉1997 年 6 月。製作團隊另列 Andy Baker（混音）、Karim Benzerzour（追加錄音）、Olivier Genty（前製錄音）。",
+    "src": "https://fr.wikipedia.org/wiki/666.667_Club"
+   },
+   {
+    "f": "藝人端點分頁全列 69 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 6 張，**《666.667 Club》排第 5**，前一張是 1992-12-07 的《Tostaky》、後一張是 2001-09-11 的《Des visages des figures》。**與條目的 cinquième 一致。**（兩者之間的 1994《Dies irae》在來源端帶現場屬性，不列入這 6 張。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e6358374-5eea-4205-be22-382ed6df493c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一 release-group 轄下有兩筆同日、同 catno（533442-2）的 CD，disambiguation 一筆寫「no misprint」、一筆寫「Misprint」——**同一批 1996-11-11 的壓片存在印刷錯誤版與更正版兩種**，兩者都是 13 軌、都標 FR／Official。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=18659ce4-de69-3829-aa1c-a71d64b3d97c&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "十三首開頭就是同名曲，黑膠上被切成六加七的兩片",
+   "1996 年 11 月 11 日那批壓片有印錯與更正兩個版本並存"
+  ],
+  "sound": "13 軌、總長 50 分 39 秒，單軌 2:25 到 5:35。CD 一片收完，12 吋切成 6＋7 兩片。1996 年 8 月在 Landes 的 Studio du Manoir 錄，製作 Ted Niceley 與樂團，混音 Andy Baker。條目說這張比前一張安靜、重心移到歌詞，曲風欄同時掛 rock、rock alternatif、grunge 與 rock expérimental。第一軌就是同名曲〈666.667 Club〉，末軌〈Song For JLP〉2:28 收尾。實體盤全部落在 1996 年 11 月，其中 11 日那批壓片有印錯與更正兩版。",
+  "keyTracks": [
+   "Un jour en France",
+   "À ton étoile",
+   "Comme elle vient"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date 記 **1996-01-01**，但那筆是 XW 的數位 release；**實體盤全部是 1996-11 與 1996-11-11 的 FR／Official**，條目 infobox 寫 1996 年 11 月 11 日。串流店面 fr 1443159119 的 releaseDate 1996-01-01 與 ℗ 1996 相符。**年份四處一致都是 1996，但「1 月 1 日」是填充值、不是發行日，行文只寫年份。** **同名先行單曲：無**（三首單曲都不與專輯同名，**但第 1 軌與盤名同名**）。",
+  "notes": "**配對覆核**：探測層判本張 ready、指向 fr `1443159119`。逐軌比對後**成立**——13 軌、曲名曲序逐位置相符、長度差 1 秒內、℗ 1996。（策展層裁定 6 記本張 search 端點八個店面全空、靠藝人目錄端點救回，本次覆核確認藝人目錄那一筆是對的。）｜**撇號**：本張曲名不含撇號，兩種寫法問題不觸及；**但重音有兩種寫法**——原盤作〈À ton étoile〉〈À la longue〉（大寫 À），店面作〈A ton étoile〉〈A la longue〉（無重音）。**`keyTracks` 與行文照原盤保留 À**。｜**曲名陷阱**：第 1 軌與盤名同名，字串比對會把曲當盤。"
+ },
+ {
+  "key": "desc2:Noir Désir|Des visages des figures",
+  "artist": "Noir Désir",
+  "album": "Des visages des figures",
+  "facts": [
+   {
+    "f": "release-group fb9ef440 的欄位：title「Des visages des figures」、artist-credit「Noir Désir」、first-release-date **2001-09-11**、primary-type Album、secondary-types **空**。轄下 **12 筆 release、全部 12 軌**，國別橫跨 FR（六筆，含 digipak 與 12 吋 8＋4 軌）、XE、RU、CA、IT（2002，Carosello CARSH 010-2）、AR，status 十筆 Official、**兩筆 NOSTATUS**。其中一筆 NOSTATUS 的數位版 disambiguation 寫「New Version on Streaming platforms with 1min shorter 〈Bouquet de nerfs〉」。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fb9ef440-6e16-318a-95a8-7f706688967a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2001 FR 原盤（Barclay 589 275-2，CD digipak）的逐軌曲目與長度：1〈L'Enfant roi〉6:04、2〈Le Grand Incendie〉4:37、3〈Le vent nous portera〉4:49、4〈Des armes〉2:48、5〈L'Appartement〉4:12、6〈Des visages des figures〉5:15、7〈Son style 1〉2:06、8〈Son style 2〉2:31、9〈À l'envers à l'endroit〉4:08、10〈Lost〉3:23、11〈Bouquet de nerfs〉5:14、12〈L'Europe〉**23:45**。**末軌 23 分 45 秒，比其他十一軌任何一首都長四倍以上；12 吋版把 12 軌切成 8＋4。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fb9ef440-6e16-318a-95a8-7f706688967a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1440863170：collectionName「Des visages des figures」、releaseDate **2014-01-01**、copyright「℗ 2014 Barclay」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與原盤逐位置相符、長度大多相同——**唯一的例外是第 11 軌〈Bouquet de nerfs〉：店面 4:15、原盤 5:14，短了 59 秒**。這正好對上來源端那筆數位 release 的註記「串流平台上的新版本，〈Bouquet de nerfs〉短一分鐘」。**上架的是那個串流專用版本，不是 2001 年的實體盤。**",
+    "src": "https://itunes.apple.com/lookup?id=1440863170&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張為 Noir Désir 的 **sixième et dernier album studio**（第六張、也是最後一張錄音室專輯），2001 年 9 月 11 日發行於 Barclay Records；製作分工是 **Nick Sansano 負責第 1、2、9、10、11 軌，Jean Lamoot 負責第 3–8 軌**，樂團自己也掛製作；總長記 68 分鐘；曲風記 rock expérimental／chanson française。單曲兩首：〈Le vent nous portera〉2001 年 8 月 28 日、〈Lost〉2002 年 3 月 5 日。條目另記本張在 2002 年拿到 Victoire de la musique 的「年度搖滾專輯」。",
+    "src": "https://fr.wikipedia.org/wiki/Des_visages_des_figures"
+   },
+   {
+    "f": "同一條目的樂手節：Bertrand Cantat（人聲、吉他、木吉他、**馬頭琴 morin khuur**、口琴、口袋小號、**迪吉里杜管**、合成器、人聲打擊、鋼琴）、Serge Teyssot-Gay（和聲、吉他、合成器、吉他齊特琴、取樣、巴里東吉他）、Denis Barthe（和聲、鼓、打擊、電子打擊、摩洛哥鼓、鈸、顫音琴、木琴、鈴鼓、風琴）、Jean-Paul Roy（和聲、貝斯、合成器、gumbri、風琴）。客席三組：**Akosh S.**（〈Le Vent Nous Portera〉的金屬單簧管與拇指琴；〈L'Europe〉的作曲、薩克斯風、哨笛、單簧管、拇指琴、kaval）、**Brigitte Fontaine**（〈L'Europe〉的詞與唱）、**Manu Chao**（〈Le Vent Nous Portera〉的吉他）；弦樂編寫與指揮 Romain Humeau（Eiffel），他另在同名曲上吹英國管與雙簧管。",
+    "src": "https://fr.wikipedia.org/wiki/Des_visages_des_figures"
+   },
+   {
+    "f": "藝人端點分頁全列 69 個 release-group，錄音室盤（primary-type Album＋secondary-types 空）共 6 張，**《Des visages des figures》2001-09-11 排第 6，是這份排序裡最後一筆**，其後 69 筆裡沒有更晚的 primary-type Album＋secondary-types 空的條目。**與條目的 sixième et dernier 一致。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=e6358374-5eea-4205-be22-382ed6df493c&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "末軌〈L'Europe〉23 分 45 秒，Brigitte Fontaine 在上面寫詞也開口唱",
+   "串流上的〈Bouquet de nerfs〉比實體盤短了整整一分鐘"
+  ],
+  "sound": "12 軌、總長約 68 分鐘。前十一軌落在 2:06 到 6:04，末軌〈L'Europe〉一首就 23 分 45 秒；12 吋版切成 8＋4 兩面。製作拆兩半：Nick Sansano 做第 1、2、9、10、11 軌，Jean Lamoot 做第 3 到 8 軌。編制外掛很多——Cantat 自己吹馬頭琴與迪吉里杜管，Akosh S. 在〈Le Vent Nous Portera〉吹金屬單簧管、在〈L'Europe〉包辦作曲與整組管樂，Brigitte Fontaine 為〈L'Europe〉寫詞並演唱，Manu Chao 在〈Le Vent Nous Portera〉彈吉他，Romain Humeau 編寫弦樂。串流版的〈Bouquet de nerfs〉是短一分鐘的另一個版本。",
+  "keyTracks": [
+   "Le vent nous portera",
+   "Des visages des figures",
+   "L'Europe"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2001。release-group first-release-date **2001-09-11**、其下 FR 的 CD 與 12 吋皆 2001-09-11、另有 2001 年的 XE／RU／CA 版與 2002 年的 IT 版、條目 infobox 記 2001 年 9 月 11 日。**唯一不同步的是店面**：fr 1440863170 的 releaseDate 與 ℗ 都是 **2014**（Barclay 再發），**行文一律寫 2001**。**同名先行單曲：無**（單曲是〈Le vent nous portera〉與〈Lost〉；**第 6 軌與盤名同名**）。",
+  "notes": "**配對覆核（版本差異，寫作層必讀）**：fr `1440863170` 的 12 軌與原盤逐位置相符，**但第 11 軌〈Bouquet de nerfs〉店面 4:15、實體盤 5:14**，來源端也註明串流平台上是短一分鐘的新版本。**行文不得拿店面的長度當實體盤的長度**（裁定 141）。｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`L’Enfant roi`、`L’Appartement`、`À l’envers à l’endroit`），店面一律 ASCII（`L'enfant roi`）。卡池走 ASCII，`keyTracks` 已按 ASCII 寫。｜**大小寫與重音差異**：原盤作〈À l'envers à l'endroit〉、店面作〈A l'envers a l'endroit〉；原盤〈L'Enfant roi〉、店面〈L'enfant roi〉。**行文照原盤。**｜條目的獎項一筆（2002 Victoire de la musique 年度搖滾專輯）可用；銷售認證依規則不進 facts。"
  }
 ]
