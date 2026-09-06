@@ -1,0 +1,122 @@
+[
+ {
+  "key": "desc2:Irakere|Grupo Irakere",
+  "artist": "Irakere",
+  "album": "Grupo Irakere",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 837ad33c 的欄位：title「Grupo Irakere」、**artist-credit 也是「Grupo Irakere」**（藝人實體 MBID 70365513，**實體名卻是「Irakere」**），first-release-date **1976**、**primary-type Album、secondary-types 空**。轄下 4 筆 release、**全部 8 軌、全部 Official**：**1976／CU，12 吋黑膠，Areito catno「LD-3660」**；2011-07-05／XW，Digital Media，EGREM，**release 標題拼成「Groupo Irakere」**；**2024-01-26／GB，12 吋黑膠，Mr Bongo「MRBLP287」**；2024／GB，CD，Mr Bongo「MRBCD287」。",
+    "src": "https://musicbrainz.org/ws/2/release-group/837ad33c-24c3-47fd-827d-36be2076ce30?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1976 CU 原盤（Areito LD-3660）的 8 軌與長度：1〈Chequeré-son〉6:52、2〈38 1/2〉5:16、3〈En nosotros〉4:27、4〈Juana 1600〉5:58、5〈Moja el pan〉3:55、6〈Este camino largo〉6:50、7〈Xiomara〉5:36、8〈Iya〉5:42。**八軌只有一首不到四分鐘，四首超過五分半**——與本批祕魯那幾張「十二軌全在三分鐘上下」的形狀完全相反。2011 EGREM 數位版曲目相同，只有兩處寫法不同：第 1 軌作〈Chequere son〉（無重音無連字號）、第 7 軌作〈Xiomara Mayoral‐Xiomara〉（**帶 U+2010 連字號**）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=837ad33c-24c3-47fd-827d-36be2076ce30&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 449865814：collectionName「**Groupo** Irakere」（**多一個 u 的拼錯**）、artistName「Irakere」、releaseDate **2011-07-01**、copyright「℗ 2011 EGREM」、trackCount 8。`entity=song` 攤得出 **8 軌、8 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 **MB 那筆 2011-07-05 EGREM 數位版逐位置相符到秒**（第 7 軌同樣作「Xiomara Mayoral-Xiomara」，只是換成 ASCII 連字號）。**Apple 上架的是 2011 EGREM 版，不是 1976 Areito 原盤條目。**",
+    "src": "https://itunes.apple.com/lookup?id=449865814&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 70365513：name「**Irakere**」、type **Group**、country **CU**、**disambiguation 空**、life-span 自 **1973** 起、無終止年。分頁列完共 **52 個 release-group**，是本批目錄最大的藝人。其中帶 secondary-type Compilation 的有 18 筆、帶 Live 的有 9 筆；1970 年代的 Album 依序是 1974《Grupo Irakere / Teatro Amadeo Roldan recital》、**1976《Grupo Irakere》**、1977-03《Chekere》、1978《Musica cubana contemporanea》、1978《Leo Brouwer - Irakere》、1978《Irakere》[Live]、1979《Chekeré son》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70365513-39d7-47e3-b898-1f70f607b1fe&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Irakere〉：樂團 **1973 年由鋼琴家 Chucho Valdés（Bebo Valdés 之子）創立**；班底列出薩克斯風 Paquito D'Rivera（副團長）、小號 Jorge Varona、吉他 Carlos Emilio Morales、貝斯 Carlos del Puerto、鼓 Bernardo García、打擊 Oscar Valdés II。合作廠牌列出 Areito、Bembe、Columbia、Milestone、Blue Note、Far Out Recordings。",
+    "src": "https://en.wikipedia.org/wiki/Irakere"
+   }
+  ],
+  "hookCandidates": [
+   "Apple 上這張的碟名拼成「Groupo Irakere」，多一個 u——不照著錯字查就找不到",
+   "八軌只有一首不到四分鐘，開場的〈Chequeré-son〉就跑了六分五十二"
+  ],
+  "sound": "MB 四筆 release 全部 8 軌、曲目一致：1976 年古巴 Areito 的 12 吋黑膠 LD-3660、2011-07-05 EGREM 的數位版、2024 年英國 Mr Bongo 的黑膠 MRBLP287 與 CD MRBCD287。逐軌長度 6:52／5:16／4:27／5:58／3:55／6:50／5:36／5:42，**八軌裡只有〈Moja el pan〉3:55 不到四分鐘，四首超過五分半，開場的〈Chequeré-son〉6:52 最長**——這是本批唯一一份以長曲為主的曲目結構。第 2 軌曲名直接寫成數字〈38 1/2〉。Apple pe 的逐軌長度與 2011 EGREM 版相同到秒。MB 與 Apple 都沒有這張的逐張班底資料；維基那份 1973 年創團班底（Chucho Valdés、Paquito D'Rivera、Jorge Varona、Carlos Emilio Morales、Carlos del Puerto、Bernardo García、Oscar Valdés II）**不是這張碟的錄音陣容，不得直接套用**。",
+  "keyTracks": [
+   "Chequeré-son",
+   "Juana 1600",
+   "Este camino largo"
+  ],
+  "status": "full",
+  "yearVerified": "**採 MB 的 1976，Apple 幫不上忙。** MB release-group first-release-date **1976**、其下 1976／CU／Official／Areito **LD-3660** 那筆也是 1976；Apple pe 449865814 的 releaseDate **2011-07-01** 與 ℗ **2011 EGREM** 都是數位再發年（＝MB 那筆 2011-07-05 EGREM release）。依裁定 77／91 採 MB 的 1976。**2024 年 Mr Bongo 的英國黑膠與 CD 是第三代再發，也不是原盤年。** 同名先行單曲：無。**但同名近名的坑很深**：MB 名下另有 1974《Grupo Irakere / Teatro Amadeo Roldan recital》（**盤名完整包含本張**）、1978《Irakere》、1980《Irakere II》、1982《Irakere》。",
+  "notes": "**探測層 ready 覆核通過**：pe 449865814，8 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 那筆 2011 EGREM 數位版逐位置相符到秒（裁定 157 三層全做完），`trackCount` 欄與攤開的曲目列都是 8、無裁定 175 的落差。**配到的是 2011 再發版，曲目與 1976 Areito 原盤相同，配對成立。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**這一點在 Irakere 身上要特別確認**——同藝人名下 52 筆裡有 18 筆帶 Compilation、9 筆帶 Live，本批另一張《Irakere》(1978) 就帶 Live。\\n**⚠ Apple 的盤名是錯字（c-99 裁定 10 的形狀）**：「**Groupo** Irakere」多一個 u。卡單 `risk` 已預告要進 `queryAlias`——**覆核無誤，這個錯字是配對能不能成立的關鍵**。\\n**⚠ 掛名與盤名互為子字串（裁定 162）**：MB 的 **artist-credit 是「Grupo Irakere」、藝人實體名是「Irakere」**，卡片掛名採實體名、盤名採 RG 標題，於是「Irakere」是「Grupo Irakere」的子字串。**去重必須用完整的 artist|album 鍵。**\\n**⚠ 第 7 軌帶 U+2010 連字號**：MB 2011 那筆作〈Xiomara Mayoral**‐**Xiomara〉（U+2010），Apple 作 ASCII 連字號，MB 1976 原盤只作〈Xiomara〉。**三種寫法**，行文點這一軌只寫〈Xiomara〉。\\n**擋下策展層一處（預防性）**：MB 上 1974 年那筆《Grupo Irakere / Teatro Amadeo Roldan recital》**比本張早兩年**，**行文不得寫「首張」「出道作」**；且維基把創團年記為 1973、MB 的藝人 life-span 也是 1973，**樂團成立到這張碟之間有三年**。\\n**維基那份班底名單是 1973 年創團陣容**，不是本張的錄音人員，**行文不得寫成「這張碟上有 Paquito D'Rivera」**——本次查到的來源沒有任何一份把人員對到這張碟上。"
+ },
+ {
+  "key": "desc2:Irakere|Irakere",
+  "artist": "Irakere",
+  "album": "Irakere",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f296a22c 的欄位：title「Irakere」、artist-credit「Irakere」（藝人 MBID 70365513）、first-release-date **1978**、**primary-type Album、secondary-types 含 [Live]**（**不是 Compilation**）。轄下 4 筆 release、**全部 Official、軌數兩說**：**1978／CU，12 吋黑膠，Areito catno「LD-3797」，5 軌**；**1979／US，12 吋黑膠，Columbia catno「JC 35655」，5 軌**；2007-10-29／FR，CD，Sony BMG「88697122762」，**8 軌**；2016-04-27／JP，CD，Sony Records International「SICJ 166」，**8 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f296a22c-2132-445c-a5c6-49ad20e09ab3?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**古巴盤與美國盤是同一份錄音、五軌長度完全相同，但四個曲名被改寫過。** 1978 CU（Areito LD-3797）：1〈Juana 1600〉6:31、2〈Iya〉9:21、3〈Adagio〉5:46、**4〈Misa negra〉17:41**、5〈Aguanile bonkó〉5:01。1979 US（Columbia JC 35655）：1〈**Juana mil ciento**〉6:31、2〈**Ilya**〉9:21、3〈Adagio〉5:46、4〈**Misa negra (The Black Mass)**〉17:41、5〈**Aguanile**〉5:01。**第 4 軌 17:41 佔了全碟長度的三分之一以上，五軌加起來 44:20。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f296a22c-2132-445c-a5c6-49ad20e09ab3&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "英文維基〈Irakere〉：這張 1979 年 Columbia／CBS 的《Irakere》（catno **JC-35655**，另有 EGREM／Areíto 的 **LD-3769**）的內容是「**five tracks recorded at the two festivals**」——**1978 年的 Newport 爵士節與 Montreux 爵士節**。條目另記樂團 1973 年由 Chucho Valdés 創立，班底含 Paquito D'Rivera、Jorge Varona、Carlos Emilio Morales、Carlos del Puerto、Bernardo García、Oscar Valdés II。**獎項：條目寫他們以《Irakere》這張碟拿到 Grammy 最佳拉丁錄音（Best Latin Recording）**，同一條目在兩處分別把年份寫成 **1980** 與 **1979**。",
+    "src": "https://en.wikipedia.org/wiki/Irakere"
+   },
+   {
+    "f": "**Apple 十個店面確實沒有這張，兩個端點都跑過（裁定 173）。** 探測層 search 十店面全 0（`pe:0 cl:0 us:0 co:0 mx:0 ar:0 es:0 gb:0 fr:0 br:0`）；再以藝人目錄 lookup 覆核（`id=14226038`，pe 46 筆／us 44 筆／cl 46 筆／es 46 筆），**沒有任何一筆的曲目與這五軌相符**。逐一開過的最接近候選：83919084《Irakere: Misa Negra》（4 軌〈Concierto Para Metales〉〈Misa Negra: Rezo…〉17:05〈Samba Para Enrique〉〈El Duke〉，**只有 Misa Negra 一軌重疊、長度還差 36 秒**）、585556909《Essential Irakere (Live)》（8 軌，曲名全部不同）、1286055293《Irakere 30 Años (Remasterizado)》（8 軌，只有〈Juana 1600〉重疊、長度 8:26 對 6:31）、1712042118《Bacalao Con Pan》（14 軌，只有〈Aguanile Bonko〉重疊）。**四筆全部不得取用。**",
+    "src": "https://itunes.apple.com/lookup?id=14226038&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 70365513（Irakere，Group／CU／disambiguation 空／life-span 自 1973 起）分頁列完 **52 個 release-group**。**與本張標題完全相同的還有一筆**：1982 年的《Irakere》（MBID e461d9ca）——**同名雙胞胎，只能靠 rgMbid 分辨**；另有 1980《Irakere II》（**盤名完整包含本張標題**）與一筆無年份的《Live At Newport Jazz Festival And Montreux Jazz Festival》（**與本張的錄音來源同名**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70365513-39d7-47e3-b898-1f70f607b1fe&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "五軌四十四分鐘，第四首〈Misa negra〉一個人就佔了十七分四十一",
+   "古巴盤叫〈Juana 1600〉，美國盤把它改寫成〈Juana mil ciento〉——同一段錄音、兩種曲名"
+  ],
+  "sound": "MB 四筆 release：1978 年古巴 Areito 的黑膠 LD-3797 與 1979 年美國 Columbia 的 JC 35655 都是 **5 軌**、逐軌長度完全相同（6:31／9:21／5:46／17:41／5:01，全碟 44:20）；2007 年法國 Sony BMG 與 2016 年日本 Sony 的 CD 都是 **8 軌**。**五軌的長度分布極端**：第 4 軌〈Misa negra〉17:41 一首就佔全碟三分之一以上，第 2 軌〈Iya〉9:21 次之，其餘三軌 5:01–6:31。兩份原盤的曲名有四處被改寫（Juana 1600／Juana mil ciento、Iya／Ilya、Misa negra／Misa negra (The Black Mass)、Aguanile bonkó／Aguanile）。**MB 的 secondary-type 標 Live**，維基則說這五軌錄自 1978 年的 Newport 與 Montreux 兩個爵士節——**這是一張現場錄音，不是錄音室盤**。",
+  "keyTracks": [
+   "Juana 1600",
+   "Misa negra",
+   "Iya"
+  ],
+  "status": "partial",
+  "yearVerified": "**1978（MB）與 1979（維基與 MB 的美國盤）兩說，卡片採 1978。** MB release-group first-release-date **1978**、其下古巴 Areito LD-3797 那筆是 **1978**、美國 Columbia JC 35655 那筆是 **1979**；英文維基的唱片表把它列在 **1979**、並記另有 EGREM／Areíto 的 catno **LD-3769**（**與 MB 記的 LD-3797 差兩位數字對調**）。**Apple 沒有這張，第三方交叉不存在。** 依 MB release-group 的 first-release-date 取 1978（古巴盤先於美國盤一年）。**錄音年可另外查證**：維基說五軌錄於 **1978 年的 Newport 與 Montreux**——**錄音年與古巴盤發行年同為 1978**。**行文可以寫「1978 年的現場錄音」，但不得斷言發行年是 1978 還是 1979。**",
+  "notes": "**探測層 unavailable 覆核維持不變——Apple 真的沒有。** 兩個端點都跑過（裁定 173）：十店面 search 全 0；藝人目錄 lookup（14226038，pe/us/cl/es 各 44–46 筆）逐筆開過四個最接近的候選（《Irakere: Misa Negra》《Essential Irakere (Live)》《Irakere 30 Años》《Bacalao Con Pan》），**沒有一筆的曲目與這五軌相符**。**封面走 CAA（卡單記 release-group 端點實測 307）、試聽維持 unavailable。** `status` 記 partial：Apple 這一側完全沒有來源。\\n**⚠ releaseType 覆核：這張的 secondary-type 是 [Live]，不是 [Compilation]。** MB `primary-type=**Album**`、`secondary-types` **[Live]**，依 §5.6／裁定 167 以 primary-type 為準，卡單 `releaseType: \"Album\"` **正確**。**但下游行文必須知道它是現場錄音**——維基明寫五軌錄自 1978 年 Newport 與 Montreux 兩個爵士節，**不得寫成「錄音室專輯」或「進棚錄的」**。\\n**⚠ 同名雙胞胎（裁定 162）**：MB 名下另有 1982 年的《Irakere》（e461d9ca），**標題完全相同**；1980《Irakere II》的盤名完整包含本張；還有一筆無年份的《Live At Newport Jazz Festival And Montreux Jazz Festival》**與本張的錄音來源同名**。**四筆都只能靠 rgMbid 分辨，卡單已列為刻意不釘——覆核無誤。**\\n**⚠ 軌數兩說（裁定 140／141）**：原盤 5 軌、2007／2016 再發 8 軌。**行文不得寫這張有幾軌**；若要提〈Misa negra〉的長度，那是 5 軌版的數字。\\n**⚠ catno 兩說**：MB 記古巴盤 **LD-3797**、維基記 **LD-3769**（數字對調）。**行文不得引用古巴盤的編號**；美國盤的 JC 35655 兩邊一致，可以用。\\n**可寫的獎項（依 c-111 裁定 2：獎項可寫、媒體榜不可寫）**：**Grammy 最佳拉丁錄音**。**但年份不可斷言**——同一個維基條目在兩處分別寫 1980 與 1979。**行文要提就寫「以這張碟拿下葛萊美最佳拉丁錄音」，不加年份。**\\n**擋下策展層零處**：卡單 `risk`／`mbNote` 對同名雙胞胎、secondary-type Live、軌數兩說、Apple 查無、CAA 307 的判斷**全部與實查相符**，是本批預告品質最高的一張。"
+ },
+ {
+  "key": "desc2:Irakere|Irakere II",
+  "artist": "Irakere",
+  "album": "Irakere II",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 1709dc1f 的欄位：title「Irakere II」、artist-credit「Irakere」（藝人 MBID 70365513）、first-release-date **1980**、**primary-type Album、secondary-types 空**（**與 1978 那筆的 [Live] 不同**）。轄下**只有 1 筆 release**：1980／**國別欄空**／Official，12 吋黑膠，**廠牌 CBS、catno「JC 36107」**，8 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/1709dc1f-12f5-4326-ab78-dcc54a3c010f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1980 release（CBS JC 36107）的 8 軌與長度：1〈Gira, gira〉5:40、2〈Claudia〉6:06、3〈Ayer te conocí〉5:15、4〈Añung añunga〉6:10、5〈Baila mi ritmo〉6:10、6〈Xiomara〉6:12、**7〈Ciento años de juventud〉7:47**、8〈Por romper el loco〉5:23。**八軌全部超過五分鐘、總長 48:43，是本批平均單軌最長的一張**；八軌裡有五軌落在 5:40–6:12 這三十二秒的窄帶內。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1709dc1f-12f5-4326-ab78-dcc54a3c010f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple 十個店面確實沒有這張，兩個端點都跑過（裁定 173）。** 探測層 search 十店面全 0；再以藝人目錄 lookup 覆核（`id=14226038`，pe 46 筆／us 44 筆／cl 46 筆／es 46 筆），**沒有任何一筆叫《Irakere II》、也沒有任何一筆的曲目與這八軌相符**。曲目層只有零星重疊：1329360303《The Real Cuban Music (Remasterizado)》有〈Xiomara〉5:29 與〈Por romper el **coco** (En directo)〉4:55（**曲名 loco／coco 不同、長度也不同**）、457732189《Seleccion De Exitos 1973-1979, Vol. 2》有〈Baila mi Ritmo〉5:54 與〈Xiomara Mayoral-Xiomara〉5:12、1286055293《Irakere 30 Años》有〈100 años de juventud〉6:12（**MB 作〈Ciento años de juventud〉7:47**）。**全部不得取用。**",
+    "src": "https://itunes.apple.com/lookup?id=14226038&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 70365513（Irakere，Group／CU／disambiguation 空／life-span 自 1973 起）分頁列完 52 個 release-group。**1980 年名下有兩筆 Album**：**《Irakere II》**與《Cuba libre》。**本張的盤名完整包含 1978 與 1982 兩筆《Irakere》的標題**（羅馬數字 II，裁定 168 的「數字殘餘」檢查測不到羅馬數字）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=70365513-39d7-47e3-b898-1f70f607b1fe&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈Irakere〉的選錄唱片表把 **《Irakere II》列在 1980 年、廠牌 Columbia／CBS、catno JC-36107**（**與 MB 記的 CBS JC 36107 相符**）；前一筆是 1979 年的《Irakere》（Columbia／CBS JC-35655）。條目記樂團 1973 年由 Chucho Valdés 創立，合作廠牌含 Areito、Columbia、Milestone、Blue Note。",
+    "src": "https://en.wikipedia.org/wiki/Irakere"
+   }
+  ],
+  "hookCandidates": [
+   "八軌沒有一首短於五分十五，五首擠在五分四十到六分十二的三十二秒之間",
+   "MB 這筆 release 連國別都是空的，只留下 CBS 的編號 JC 36107"
+  ],
+  "sound": "MB 只登記一筆 release：1980 年 CBS 的 12 吋黑膠 JC 36107，**國別欄是空的**，單片 8 軌，長度 5:40／6:06／5:15／6:10／6:10／6:12／7:47／5:23，總長 48:43。**八軌全部超過五分鐘**——這是本批唯一一張沒有任何一軌短於五分鐘的碟；其中五軌落在 5:40–6:12 的窄帶內，只有第 7 軌〈Ciento años de juventud〉7:47 明顯拉開。曲名一半是舞曲指令與人名（〈Gira, gira〉〈Claudia〉〈Baila mi ritmo〉〈Xiomara〉），一半是約魯巴語系的擬聲（〈Añung añunga〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料；維基那份 1973 年創團班底**不是這張碟的錄音陣容**。",
+  "keyTracks": [
+   "Gira, gira",
+   "Añung añunga",
+   "Ciento años de juventud"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1980（**三處**）。MB release-group first-release-date **1980**、其下唯一一筆 release（**國別空**／Official／CBS **JC 36107**）也是 1980、英文維基的唱片表同樣列 1980 年、Columbia／CBS、catno **JC-36107**（**與 MB 的編號相符，只差一個連字號**）。**Apple 沒有這張，不存在第四處交叉。** 同名先行單曲：無。**但同名近名的坑很深**：MB 名下另有 1978《Irakere》與 1982《Irakere》兩筆，**本張的盤名完整包含它們**。",
+  "notes": "**探測層 unavailable 覆核維持不變——Apple 真的沒有。** 兩個端點都跑過（裁定 173）：十店面 search 全 0；藝人目錄 lookup（14226038，pe/us/cl/es 各 44–46 筆）裡**沒有任何一筆叫《Irakere II》**。曲目層只有零星單軌重疊，而且重疊的那幾軌**曲名或長度都對不上**（〈Por romper el **loco**〉vs Apple 的〈Por romper el **coco** (En directo)〉；〈Ciento años de juventud〉7:47 vs〈100 años de juventud〉6:12）。**封面走 CAA（卡單記 release-group 端點實測 307）、試聽維持 unavailable。** `status` 記 partial。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。**與同批《Irakere》(1978) 的 [Live] 不同——這一張沒有 Live 標記**，行文不得把兩張混為一談。\\n**⚠ 國別欄空**：MB 唯一那筆 release **沒有 country**（status 是 Official、廠牌 CBS JC 36107）。卡單 `risk` 已預告——**覆核無誤，行文不得斷言發行國**。維基把它記成 Columbia／CBS，**是廠牌不是國別**。\\n**⚠ 羅馬數字（裁定 168）**：盤名《Irakere II》完整包含 1978 與 1982 兩筆《Irakere》的標題，**「數字殘餘」那道檢查對羅馬數字無效**，去重只能靠 rgMbid。卡單已列為刻意不釘。\\n**擋下策展層零處**：卡單 `risk`／`mbNote` 對國別空、Apple 查無、CAA 307、羅馬數字子字串的判斷**全部與實查相符**。\\n**下游警告**：盤名帶「II」極容易被寫成「續作」「第二張」——**MB 上 1978 那張《Irakere》之前還有 1974／1976／1977／1978 共五筆 Album，這張不是他們的第二張碟**，「II」是 Columbia 那條美國發行線的編號。**行文不得寫序數。**"
+ }
+]

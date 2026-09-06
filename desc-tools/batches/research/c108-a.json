@@ -678,5 +678,117 @@
   "status": "full",
   "yearVerified": "一致，1974（**兩處**）。MB release-group first-release-date **1974**、其下唯一一筆 release（US／**status 空**／catno SLP 00465）也是 1974；Apple pe 1284903069 的 releaseDate **1974-09-10** 與 MB 同年——**這是本批三張 Los Ángeles Negros 裡唯一 Apple 的 releaseDate 就落在原盤年的一張**。**但 Apple 的 ℗ 是 2017 Master Media Music Ltd**（再發方），不能算第三處。**MB 的年份沒有月日，Apple 的 09-10 是單方面的**，行文不得寫月份。同名曲〈Aplaude Mi Final〉在碟內排第 1 軌，不是同名先行單曲。",
   "notes": "**探測層 ready 覆核通過，而且是三張裡唯一三層全對的一張**：pe 1284903069，12 軌全有 previewUrl，**曲名、曲序與逐軌長度都與 MB 1974 US release 逐位置相符**（十軌差 ≤3 秒；末軌差 20 秒、第 7 軌差 6 秒）。`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**與同團《Y volveré》《Esta noche la paso contigo》兩張的曲序被重排不同，這一張沒有這個問題。**\\n**⚠ 廠牌名空、status 空（裁定 43／57）**：MB 唯一那筆 release **沒有廠牌名**（只有 catno SLP 00465）、**status 也是空的**。卡單的 `label` 寫成「美國盤，catno SLP 00465（MB 未填廠牌名）」——**這是正確的處理**。**行文不得斷言發行廠牌、不得拿這筆 release 當授權背書。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**掛名（c-108 裁定 4）**：這一筆的 artist-credit 同樣是無重音的「Los Angeles Negros」，卡單依裁定 26／70 採重音版、與 Apple 一致，**覆核無誤**。\\n**⚠ 擋下策展層一處（預防性，這一張最危險）**：本張是 MB 上這個團**不帶 Compilation 的 Album 之中 1970 年代的最後一筆**（下一筆要到 1994 年），加上盤名字面就是「為我的結局鼓掌」，**下游極容易寫成「告別作」「最後一張」「解散前的最後一張」**。**MB 沒有任何欄位支持這些說法**：藝人實體的 life-span **沒有終止年**，1994／2014／2015 年還有三筆 Album。**行文一律不得寫序數與終結語（最後一張／告別作／解散前／唯一）。**"
+ },
+ {
+  "key": "desc2:Various Artists|Cumbias Chichadélicas: Peruvian Psychedelic Chicha",
+  "artist": "Various Artists",
+  "album": "Cumbias Chichadélicas: Peruvian Psychedelic Chicha",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 5e6f7b4a 的欄位：title「Cumbias Chichadélicas **：** Peruvian Psychedelic Chicha」（**MB 的冒號前多一個空格**）、artist-credit「Various Artists」（MB 的萬用實體 89ad4ac3，type Other、disambiguation「add compilations to this artist」）、first-release-date **2011-11-28**、**primary-type Album、secondary-types 含 [Compilation]**。轄下 2 筆 release、都是 16 軌：**2011-11-28／PE／Official，CD，Infopesa catno「INF 00-00102」，disambiguation 寫「CD version released by INFOPESA in 2011.」**；**2015-11-25／ES／status 空，12 吋黑膠×2（8＋8 分片），Pharaway Sounds catno「PHS029」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5e6f7b4a-63ae-4d8a-9945-6d7008e8aa8b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 2011 PE CD 的 16 軌與長度：1〈Lobos al escape〉2:35、2〈Cumbia de los pajaritos〉2:52、3〈Me robaron mi runa mula〉3:09、4〈Ramo de rosas〉3:24、5〈El bicho〉2:50、6〈La danza del mono〉2:50、7〈Mi morena rebelde〉3:30、8〈Arre caballito〉3:11、9〈El poncho〉3:01、10〈Ya se ha muerto mi abuelo〉4:21、11〈Sonido amazónico〉2:42、12〈Vírgenes del sol〉3:00、13〈Monito saltarín〉2:25、14〈Volando〉3:08、15〈Mi gran noche〉2:58、16〈Todos juntos〉3:05。**第 3 軌〈Me robaron mi runa mula〉與第 14 軌〈Volando〉是 Juaneco y su Combo《El gran cacique》的第 1 與第 10 軌、第 11 軌〈Sonido amazónico〉是 Los Mirlos《Los charapas de oro》的第 2 軌——本批三張卡在曲目層互相咬住。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5e6f7b4a-63ae-4d8a-9945-6d7008e8aa8b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2015 年西班牙 Pharaway Sounds 那筆雙黑膠把每一軌的原始年份寫進曲名**：〈Lobos Al Escape (1970)〉〈Cumbia De Los Pajaritos / La Danza De Los Mirlos (1972)〉〈Me Robaron Mi Runa Mula (1977)〉〈Ramo De Rosas (1972)〉〈El Bicho (1973)〉〈La Danza Del Mono (1972)〉〈Mi Morena Rebelde (1981)〉〈Arre Caballito (1968)〉／〈El Poncho (1969)〉〈Ya Se Ha Muerto Mi Abuelo (1980)〉〈Sonido Amazónico (1973)〉〈Vírgenes Del Sol (1968)〉〈Monito Saltarin (1977)〉〈Volando (1974)〉〈Mi Gran Noche (1969)〉〈Todos Juntos (1982)〉。**十六軌的原始年份橫跨 1968 到 1982，共十五年**；曲目與 2011 CD 版完全相同、只是分成 8＋8 兩片。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5e6f7b4a-63ae-4d8a-9945-6d7008e8aa8b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 951761593：collectionName「Cumbias Chichadelicas: Peruvian Psychedelic Chicha」（**無重音、冒號前無空格**）、artistName「**Varios Artistas**」（**西語掛名，不是 Various Artists**）、releaseDate **2014-12-08**、copyright「℗ 2014 Infopesa」、trackCount 16。`entity=song` 攤得出 **16 軌、16 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 MB 2011 PE CD **逐位置相符到秒**（Apple 把重音全部拿掉：〈Sonido Amazonico〉〈Virgenes del Sol〉）。",
+    "src": "https://itunes.apple.com/lookup?id=951761593&country=pe&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十六首的原始錄音年從 1968 一路排到 1982，西班牙那版黑膠乾脆把年份寫進每一個曲名裡",
+   "Apple 的祕魯店面把「Various Artists」寫成「Varios Artistas」，藝人閘會整張擋掉"
+  ],
+  "sound": "MB 兩筆 release 都是 16 軌、曲目相同：2011-11-28 祕魯 Infopesa 的 CD（INF 00-00102），與 2015-11-25 西班牙 Pharaway Sounds 的雙 12 吋黑膠（PHS029，8＋8 分片）。逐軌長度 2:25–4:21，十六軌裡十四軌在 2:25–3:31 之間，只有〈Ya se ha muerto mi abuelo〉4:21 與〈Mi morena rebelde〉3:30 拉開。**這是一張把不同樂團、不同年份的錄音併在一起的整輯**：西班牙版把原始年份寫進曲名，跨度 1968–1982。曲目與本批另外兩張卡重疊——〈Me robaron mi runa mula〉〈Volando〉出自 Juaneco y su Combo《El gran cacique》、〈Sonido amazónico〉出自 Los Mirlos《Los charapas de oro》。MB 與 Apple 都沒有逐軌的原演出者欄位可查。",
+  "keyTracks": [
+   "Lobos al escape",
+   "Sonido amazónico",
+   "Ya se ha muerto mi abuelo"
+  ],
+  "status": "full",
+  "yearVerified": "**復刻年 2011，卡片記的是這一個。** MB release-group first-release-date **2011-11-28**、其下 2011 PE CD（Infopesa INF 00-00102，disambiguation 明寫「CD version released by INFOPESA in 2011.」）與 2015 ES 雙黑膠兩筆；Apple pe 951761593 的 releaseDate **2014-12-08**、℗ **2014 Infopesa**——**Apple 的年份是第三個年份，既不是 2011 也不是 2015**。依裁定 77／91 採 MB 的 2011。**原盤年與復刻年在這張要分清楚**：十六軌的**原始錄音年是 1968–1982**（由 2015 西班牙版的曲名逐軌標出），**2011 是整輯出版年**。**行文若寫年份，必須明說是整輯出版年，不得把 2011 說成這些錄音的年代，也不得寫 2014。**",
+  "notes": "**探測層 ready 覆核通過**：pe 951761593，16 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 2011 PE CD 逐位置相符到秒（裁定 157 三層全做完），`trackCount` 欄與攤開的曲目列都是 16、無裁定 175 的落差。\\n**⚠ 跨語言掛名（裁定 182）**：Apple pe 的 `artistName` 是「**Varios Artistas**」，卡片與 MB 都是「Various Artists」，**兩個字串零重疊、藝人閘的雙向子字串比對會整張擋掉**。卡單 `risk` 已預告、探測層已放行——**覆核無誤，這是裁定 182 在本批的實例**。\\n**releaseType 覆核**：MB `primary-type=**Album**`、`secondary-types` **含 [Compilation]**。依 §5.6 明文與裁定 167，`primary-type=Album` 者照一般 Album 寫，**卡單 `releaseType: \"Album\"`、例外欄位留空——正確**。**但行文必須知道它實質上是考古整輯**，不得寫成「某某樂團的專輯」。\\n**⚠ 授權狀態**：2015 ES Pharaway Sounds 那筆 **status 是空的**（裁定 43／57），2011 PE Infopesa 那筆是 Official——**引用發行資訊只用 2011 那筆**。\\n**⚠ 盤名字元（裁定 49）**：MB 的標題**冒號前有一個半形空格**（「Cumbias Chichadélicas : Peruvian…」），Apple 無空格且無重音。卡單採無空格帶重音版，**覆核無誤**。\\n**⚠ 曲目與本批另外兩張卡重疊**：〈Me robaron mi runa mula〉〈Volando〉（Juaneco《El gran cacique》）、〈Sonido amazónico〉（Los Mirlos《Los charapas de oro》）。**行文不得把這些曲子寫成本張獨有，跨卡比對腳本也要留意這幾個字串會多次命中。**\\n**擋下策展層零處**：`risk` 對 primary-type、Varios Artistas、冒號空格、2015 那筆雙碟形態的預告全部與實查相符。"
+ },
+ {
+  "key": "desc2:Various Artists|Cartagena! Curro Fuentes and the Big Band Cumbia and Descarga Sound of Colombia 1962-72",
+  "artist": "Various Artists",
+  "album": "Cartagena! Curro Fuentes and the Big Band Cumbia and Descarga Sound of Colombia 1962-72",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 78b28ed4 的欄位：title「Cartagena! Curro Fuentes **and** the Big Band Cumbia and Descarga Sound of Colombia **1962-72**」、artist-credit「Various Artists」（MB 萬用實體 89ad4ac3）、first-release-date **2011-03-07**、**primary-type Album、secondary-types 含 [Compilation]**。轄下 2 筆 release、都是 19 軌、**都是 Official**：**2011-03-07／GB，CD，Soundway catno「SNDWCD026」**；**2011-07-12／US，Digital Media，Soundway，release 標題寫成「…Curro Fuentes **&** the Big Band…Colombia **1962 - 72**」（and 改成 &、年段中間加空格）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/78b28ed4-3e4a-46e2-8cef-ce6f7a0de5a1?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的 19 軌與長度完全相同：1〈Me voy pa'la costa〉3:57、2〈La cumbia del pescador〉4:21、3〈Patuleco〉2:48、4〈El alegrón〉2:59、5〈Santa Marta cumbia〉3:31、6〈Arroz con coco〉2:30、7〈Yolanda〉3:08、8〈Oye negra〉2:11、9〈Puerto Rico zumbando〉3:57、10〈Silencio〉3:43、11〈Honolulu〉4:51、**12〈Santana en salsa〉6:16**、13〈Traigo salsa〉3:28、**14〈Salsa sabrosa〉5:26**、15〈Fiesta de negritos〉2:34、16〈La gozadera〉2:55、17〈Celoso〉4:14、18〈Viejos tiempos〉2:43、19〈Cumbia del monte〉2:42。**十九軌裡只有第 12 與第 14 軌超過五分鐘，而且兩首曲名都帶 salsa。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=78b28ed4-3e4a-46e2-8cef-ce6f7a0de5a1&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**探測層判成 unavailable，實際上 Apple cl 有這張**：collectionId **1611876689**、collectionName「Cartagena! Curro Fuentes **&** The Big Band Cumbia and Descarga Sound of Colombia 1962-72」、artistName「Various Artists」、releaseDate **2011-07-12**、copyright「℗ 2011 Soundway Records Ltd」、trackCount 19。`entity=song` 攤得出 **19 軌、19 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 MB 兩筆 release **逐位置相符到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1611876689&country=cl&entity=song&limit=200"
+   },
+   {
+    "f": "**Apple 那筆逐軌帶原演出者名，MB 兩筆都沒有這一欄。** 十九軌分屬 16 個掛名：Rosendo Y Su Banda、Puerto Rico Y Su Combo、Orquesta Sonora Curro、Rosendo Martinez Y Su Orquesta、Cantina Y Su Combo、**Lucho Bermudez Y Su Orquesta Sabanera**、Orlando Fortich Y Su Orquesta、Homero Y Su Combo／Pacho Galan／La Sonora Curro、Clodomiro Montes & El Super Combo Curro、Los Seven Del Swing、El Gran Romancito & El Super Combo Curro、Crecencio Camacho & El Super Combo Curro、Lalo Orozco Y Su Combo Sabroso、**Lucho Bermúdez y Su Orquesta**、Alex Acosta Y Su Orquesta、Rufo Garrido Y Su Banda。**Lucho Bermúdez 在這張裡以兩種掛名各出現一次——他也是本批 a 組另一張卡的藝人。**",
+    "src": "https://itunes.apple.com/lookup?id=1611876689&country=cl&entity=song&limit=200"
+   },
+   {
+    "f": "MB 的 Various Artists 萬用實體 89ad4ac3：name「Various Artists」、type **Other**、**country 為 null**、disambiguation「add compilations to this artist」、life-span 全空。**這不是一個真實的藝人實體**，MB 用它承載所有合輯，因此「藝人目錄」在這張碟上不具意義，配對只能靠盤名與逐軌曲目。",
+    "src": "https://musicbrainz.org/ws/2/artist/89ad4ac3-39f7-470e-963a-56509c546377?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "十九軌分給十六個不同的樂團掛名，Lucho Bermúdez 一個人就用了兩種名字上場兩次",
+   "十九首裡只有兩首超過五分鐘，而那兩首的曲名都帶著 salsa"
+  ],
+  "sound": "MB 兩筆 release 都是 19 軌、曲目與長度完全相同：2011-03-07 英國 Soundway 的 CD（SNDWCD026）與 2011-07-12 美國的數位版。逐軌長度 2:11–6:16，**十七軌落在 2:11–4:51、只有第 12 軌〈Santana en salsa〉6:16 與第 14 軌〈Salsa sabrosa〉5:26 拉開**，而這兩首正好都在盤名所說的 descarga／salsa 那一側；前段十一軌以 cumbia 題名為主（〈La cumbia del pescador〉〈Santa Marta cumbia〉〈Arroz con coco〉），後段轉進 salsa（〈Traigo salsa〉〈Salsa sabrosa〉〈La gozadera〉），最後又用〈Cumbia del monte〉收回來。Apple 的逐軌掛名顯示這十九軌分屬 16 個樂團，其中 El Super Combo Curro／Orquesta Sonora Curro 系列出現四次，Lucho Bermúdez 以兩種掛名出現兩次。",
+  "keyTracks": [
+   "La cumbia del pescador",
+   "Santana en salsa",
+   "Cumbia del monte"
+  ],
+  "status": "full",
+  "yearVerified": "**復刻年 2011，卡片記的是這一個。** MB release-group first-release-date **2011-03-07**、其下 GB CD（2011-03-07）與 US 數位（2011-07-12）兩筆都在 2011；Apple cl 1611876689 的 releaseDate **2011-07-12**（＝MB 那筆 US release 的日期）與 **℗ 2011 Soundway Records Ltd** 相符——**三處同年**。**原盤年在盤名裡**：「1962-72」是這些錄音的年代區間，**2011 是整輯出版年**。**行文寫年份必須分清楚**：可以寫「Soundway 2011 年整出來的一批 1962 到 1972 年的錄音」，**不得把 2011 說成錄音年，也不得替任何單軌指定年份**——MB 與 Apple 都沒有逐軌的原始年。",
+  "notes": "**⚠ 這是本批可補的 Apple collectionId 之一。** 探測層十個店面判成 **unavailable**（`pe:0→0 cl:4→0 us:1→0 co:0→0 mx:1→0 ar:0→0 es:2→0 gb:1→0 fr:2→0 br:4→0`），**但 Apple cl 上確實有這張**：**cl `1611876689`，19 軌、19 軌全有 previewUrl**，曲名／曲序／逐軌長度與 MB 逐位置相符到秒。探測層在 cl 拿到 4 筆卻沒有一筆判成相符，原因是**盤名把 `and` 換成了 `&`**（裁定 152 的長盤名＋c-99 裁定 10 的切詞變數）。**建議把 cl 1611876689 補進 previews，這張可以從 unavailable 轉成 ready。**\\n**releaseType 覆核**：MB `primary-type=**Album**`、`secondary-types` **含 [Compilation]**。依 §5.6 明文與裁定 167，卡單 `releaseType: \"Album\"`、例外欄位留空——**正確**。**行文要知道它實質是考古整輯。**\\n**⚠ 盤名三種寫法**：MB release-group 用「and…1962-72」、MB 的 US release 用「&…1962 - 72」（年段帶空格）、Apple cl 用「&…1962-72」。**三種都要進 `queryAlias`**，卡單已預告 and／& 這一組，**但「1962 - 72」帶空格那一版還沒有寫進去，建議補上。**\\n**掛名（裁定 182 的反面）**：Apple cl 的 `artistName` 就是「Various Artists」、與卡片相同，**這張沒有 Varios Artistas 的問題**（與同批《Cumbias Chichadélicas》相反）。\\n**與本批另一張卡的關聯**：Apple 的逐軌掛名裡有「Lucho Bermudez Y Su Orquesta Sabanera」與「Lucho Bermúdez y Su Orquesta」各一軌——**與本批 a 組《San Fernando y otros éxitos inolvidables…》是同一位藝人**，跨卡比對會命中。\\n**擋下策展層零處**：`risk` 對 primary-type、長盤名、and／& 變形、兩筆 Official 的判斷全部與實查相符；**唯一要更新的是「Apple 查無」這個前提已經不成立**。"
+ },
+ {
+  "key": "desc2:Various Artists|Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975-91",
+  "artist": "Various Artists",
+  "album": "Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975-91",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 3d6a69c0 的欄位：title「Palenque Palenque: Champeta Criolla & Afro Roots in Colombia 1975-91」、artist-credit「Various Artists」（MB 萬用實體 89ad4ac3，type Other、country null、disambiguation「add compilations to this artist」）、first-release-date **2009-08-10**、**primary-type Album、secondary-types 含 [Compilation]**。轄下 2 筆 release、都是 21 軌、**都是 Official**：**2009-08-10／XW，Digital Media，Soundway（無 catno）**；**2010／US，CD，Soundway catno「SNDWCD022」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/3d6a69c0-ff62-487c-919e-3e5b5e2e118a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的 21 軌與長度相同（**只有第 10 軌拼法不同**：XW 作〈Quiero a Mi Gente〉、US CD 作〈**Queiro** a Mi Gente〉，字母倒置的建檔錯字）：1〈Esclavo Moderno〉2:55、2〈Bumburumbumbum〉3:34、**3〈Palenque〉3:56**、4〈Tungalala (El Sapo)〉3:32、5〈Naga Pedale〉3:27、6〈Pim Pom〉4:17、7〈Dejala Corre〉3:28、8〈Puyalo Ahi〉3:02、9〈Tetero〉3:10、10〈Quiero a Mi Gente〉3:46、11〈Shacalao〉3:38、**12〈Palengue Palengue〉4:09**、13〈La Negra Kulengue〉3:31、14〈Calaba Calabao〉3:50、15〈Katunga〉3:26、16〈Manaye〉3:48、17〈El Sucusu〉3:16、18〈El Lobo〉3:02、19〈Dame Un Trago〉4:27、20〈La Botellita〉4:12、21〈Yoro〉3:44。**盤名《Palenque Palenque》來自第 12 軌〈Palengue Palengue〉——但那一軌的拼法是 g、盤名是 q。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3d6a69c0-ff62-487c-919e-3e5b5e2e118a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music us collectionId 1611911465：collectionName「Palenque Palenque: Champeta Criolla & Afro Roots in Colombia **1975 - 91**」（**年段中間有空格**）、artistName「Various Artists」、releaseDate **2009-08-10**、copyright「℗ 2009 Soundway Records Ltd」、trackCount 21。`entity=song` 攤得出 **21 軌、21 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 MB **逐位置相符到秒**（Apple 補了重音：〈Déjala Corre〉〈Puyalo Ahí〉；第 10 軌用的是正確的〈Quiero a Mi Gente〉）。",
+    "src": "https://itunes.apple.com/lookup?id=1611911465&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "MB 的 Various Artists 萬用實體 89ad4ac3：type **Other**、**country null**、disambiguation「add compilations to this artist」、life-span 全空、`ended: false`。**這不是真實藝人實體**，MB 用它承載所有合輯，「藝人目錄」在這張碟上不具意義，配對只能靠盤名與逐軌曲目。**MB 上另有三筆盤名與本張互為子字串、內容零關係的別碟**：4579b165《Palenque》（Felix Hess）、6893a481《Palenque》（DJANGO）、d4cec9df《Así es Palenque》（Kombilesa Mi）。",
+    "src": "https://musicbrainz.org/ws/2/artist/89ad4ac3-39f7-470e-963a-56509c546377?fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "盤名把 Palenque 寫兩次，碟裡第十二軌卻拼成〈Palengue Palengue〉——q 換成了 g",
+   "二十一軌沒有一首滿四分半，最長的〈Dame Un Trago〉四分二十七"
+  ],
+  "sound": "MB 兩筆 release 都是 21 軌、曲目與長度相同：2009-08-10 的 XW 數位版與 2010 年美國 Soundway 的 CD（SNDWCD022）。逐軌長度 2:55–4:27，**二十一軌全部落在不到一分半的區間內、沒有一首滿四分半**，是本批長度分布最平的一份；十六軌集中在 3:02–3:56。曲名幾乎全是擬聲與外來語（〈Bumburumbumbum〉〈Tungalala (El Sapo)〉〈Naga Pedale〉〈Pim Pom〉〈Shacalao〉〈Calaba Calabao〉〈Katunga〉〈Manaye〉〈Yoro〉），與本批哥倫比亞另外兩張（Lucho Bermúdez、Cartagena!）的西語地名題名是兩種語感。MB 與 Apple 都沒有逐軌的原演出者欄位，也沒有任何一軌的原始錄音年。",
+  "keyTracks": [
+   "Esclavo Moderno",
+   "Palengue Palengue",
+   "Dame Un Trago"
+  ],
+  "status": "full",
+  "yearVerified": "**復刻年 2009，卡片記的是這一個。** MB release-group first-release-date **2009-08-10**、其下 XW 數位那筆同為 2009-08-10、Apple us 1611911465 的 releaseDate **2009-08-10** 與 **℗ 2009 Soundway Records Ltd** 相符——**三處同日**。MB 另一筆 US CD 記 **2010**（只有年、無月日），是後一年的實體版，不影響首發年。**原盤年在盤名裡**：「1975-91」是這些錄音的年代區間，**2009 是整輯出版年**。**行文寫年份必須分清楚**：可以寫「Soundway 2009 年整出來的一批 1975 到 1991 年的錄音」，**不得把 2009 說成錄音年、也不得替任何單軌指定年份**——MB 與 Apple 都沒有逐軌的原始年（**與同批《Cumbias Chichadélicas》的西班牙版不同，那一張有逐軌年份，這一張沒有**）。",
+  "notes": "**探測層 ready 覆核通過**：us 1611911465（**本批只有三張落在 us 店面，這是其中之一**），21 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 逐位置相符到秒（裁定 157 三層全做完），`trackCount` 欄與攤開的曲目列都是 21、無裁定 175 的落差。\\n**releaseType 覆核**：MB `primary-type=**Album**`、`secondary-types` **含 [Compilation]**。依 §5.6 明文與裁定 167，卡單 `releaseType: \"Album\"`、例外欄位留空——**正確**。**行文要知道它實質是考古整輯**，不得寫成某個樂團的專輯。\\n**⚠ 盤名年段兩種寫法（裁定 152／c-99 裁定 10）**：MB 作「1975-91」、Apple us 作「**1975 - 91**」（帶空格）——**與同批《Cartagena!》完全同型**。卡單採 MB 的無空格版，**帶空格那一版建議補進 `queryAlias`**。\\n**⚠ 第 10 軌 MB 兩筆自己打架**：XW 那筆作〈Quiero a Mi Gente〉、US CD 那筆作〈**Queiro** a Mi Gente〉（字母倒置）。Apple 用的是正確拼法。**行文若點這一軌，用〈Quiero a Mi Gente〉。**\\n**⚠ 盤名重複字（裁定 162）**：「Palenque Palenque」前兩字重複，MB 上另有三筆叫《Palenque》《Así es Palenque》的別碟（Felix Hess、DJANGO、Kombilesa Mi），**子字串比對會反過來配到它們**；卡單已列為「刻意不釘」，覆核無誤。**另一個坑在碟內**：第 12 軌拼成〈Palengue Palengue〉（**g 不是 q**），盤名與曲名**看起來一樣、`===` 下不相等**。\\n**掛名**：Apple us 的 `artistName` 是「Various Artists」、與卡片相同，**這張沒有裁定 182 的跨語言掛名問題**。\\n**擋下策展層零處**：`risk` 對 primary-type、2009／2010 兩個年份、盤名子字串坑的判斷全部與實查相符。"
  }
 ]
