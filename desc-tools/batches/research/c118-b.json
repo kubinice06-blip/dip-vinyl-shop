@@ -1,0 +1,162 @@
+[
+ {
+  "key": "desc2:Blake Baxter|Dream Sequence",
+  "artist": "Blake Baxter",
+  "album": "Dream Sequence",
+  "facts": [
+   {
+    "f": "release-group 514a97c8 的欄位：title「Dream Sequence」、artist-credit「Blake Baxter」（藝人實體 MBID 09039d5e，type Person、country US）、first-release-date **1991**、primary-type Album、secondary-types **空**。轄下 **4 筆 release，全部 DE、全部 Official**：1991 的 Tresor 2（**12 吋、6 軌**）、1992-02-01 的 Tresor 2 CD（**CD、8 軌**）、2000-08-15 的 Tresor 149 CD（**CD、11 軌**）、2025-06-16 的 Tresor.002X（**12 吋、5 軌**，title 作《Dream Sequence X》）。**四筆的軌數是 6／8／11／5，沒有任何兩筆相同。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/514a97c8-4405-3297-b957-055b47c9692c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1991 DE 原盤（Tresor 2，12 吋）的逐軌曲目：1〈Ghost〉、2〈The Warning〉、3〈One Mo Time (mix 1)〉、4〈Laser 101〉、5〈Ex-〉、6〈Dark Basse〉。**六軌都沒有記錄長度**，而且**曲名是〈Dark Basse〉（無變音符）**。隔年的 CD 版（Tresor 2 CD）是 8 軌、曲序整個重排：1〈Dark Bässe〉4:59（**變音符在這一版才出現**）、2〈Adrenalin〉5:31、3〈Laser 101〉4:52、4〈One Mo Time (mix 1)〉5:02、5〈One Mo Time (mix 2)〉5:10、6〈The Warning〉4:22、7〈Ghost〉5:27、8〈Ex-〉4:56。**〈Adrenalin〉與〈One Mo Time (mix 2)〉兩軌是 CD 版才加的。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=514a97c8-4405-3297-b957-055b47c9692c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**2000 年的 Tresor 149 CD 是 11 軌**：前八軌是原盤六軌加 CD 版那兩軌（曲序回到 1991 的排法、〈Adrenaline〉在這一版又多一個 e），末尾三軌是 9〈Frequency Old Skool〉6:09、10〈Laugh and Dog〉4:46、**11〈Dreammaker: 909 Shuffle / Laser 101 (remix) / Adrenalin (Ciborg remix)〉13:06**——**這一軌長 13 分 06 秒，比原盤任何一軌都長得多，而且是三段串在一起的組曲。** 2025 年的《Dream Sequence X》只有 5 軌，全部標 Remastered，並多出一軌〈Luv Is Blind〉2:06。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=514a97c8-4405-3297-b957-055b47c9692c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 gb／de 的 collectionId **1810777410**：collectionName「Dream Sequence」、artistName「Blake Baxter」、releaseDate **1992-02-01**、trackCount **8**、copyright「℗ 1992 Tresor Records」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Dark Bässe〉4:56／〈Adrenalin〉5:29／〈Laser 101〉4:50／〈One Mo Time (Mix 1)〉4:60／〈(Mix 2)〉5:08／〈The Warning〉4:22／〈Ghost〉5:26／〈Ex-〉4:56。**曲名與曲序與 1992 年那張 CD 逐位置相符，不是 1991 年的六軌黑膠**——上架的是隔年的 CD 版。**店面 us 沒有這一筆。**",
+    "src": "https://itunes.apple.com/lookup?id=1810777410&country=gb&entity=song&limit=200"
+   },
+   {
+    "f": "另一個候選 collectionId **1807733937**《Dream Sequence X - EP》（releaseDate 2025-06-20、5 軌、℗ 2025 Tresor Records）攤開後是〈The Warning (Remastered)〉4:22／〈Ghost (Remastered)〉5:27／〈Ex- (Remastered)〉4:58／〈Dark Bässe (Remastered)〉4:58／〈Luv Is Blind (Remastered)〉2:06。**五軌全部標 Remastered、末軌〈Luv Is Blind〉在 1991 原盤上不存在**——這是 2025 年那次重壓，**不是本張，駁回**。藝人端點分頁全列 **45 個 release-group**：primary-type=Album 7 個（**secondary-types 為空的 6 個**）、EP 20 個、Single 18 個、**primary-type=Compilation 0 個**；6 張長篇裡 **1991 本張最早**，其後是 1992-04《The Project》、1995《The Vault》、1995-05-21《Endless Reflection》、1997-06-23《The H-Factor》、2001-01-15《Dream Sequence 3: The Collective》。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=09039d5e-335c-4c08-9474-a83d1b838f23&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟發了四次，軌數分別是六、八、十一與五，沒有兩次一樣",
+   "1991 年黑膠上的曲名沒有變音符，隔年的 CD 才把它加上去"
+  ],
+  "sound": "1991 年 Tresor 2 的原盤是一張 12 吋、六軌，六軌都沒有留下長度紀錄：〈Ghost〉〈The Warning〉〈One Mo Time (mix 1)〉〈Laser 101〉〈Ex-〉〈Dark Basse〉。隔年同廠的 CD 把曲序整個重排、補上〈Adrenalin〉與〈One Mo Time〉的第二種混音成八軌，八軌全部落在 4:22 到 5:31 之間，是一批彼此等寬的短曲。2000 年的再發又加到十一軌，末尾放進一段 13:06 的三合一組曲；2025 年的重壓則只留五軌、全部重製、另外補進一首 2:06 的〈Luv Is Blind〉。曲名從第一版就在變：黑膠寫〈Dark Basse〉，CD 寫〈Dark Bässe〉。",
+  "keyTracks": [
+   "Ghost",
+   "The Warning",
+   "Laser 101"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1991。release-group first-release-date **1991**、其下最早的 release 是 1991 DE 的 Tresor 2（Official，12 吋 6 軌），其餘三筆是 1992-02-01、2000-08-15 與 2025-06-16 的再發。**串流那一路對到的是 1992 年的 CD 版**：collectionId 1810777410 的 releaseDate 記 1992-02-01、℗ 寫「℗ 1992 Tresor Records」，**年份是隔年、內容也是隔年那一版**。四處對照後年份仍取 1991。**同名先行單曲：無。**",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **Tresor 2（1991、12 吋、6 軌）**，但**串流上架的、以及多數再發都是 8 軌或更多**。**行文只能引 6 軌、只能引原盤那六個曲名**；〈Adrenalin〉〈One Mo Time (mix 2)〉〈Frequency Old Skool〉〈Laugh and Dog〉〈Luv Is Blind〉五軌都不是本張曲目。｜**曲名有三種拼法**：1991 黑膠〈Dark Basse〉、1992 CD 與後續全部〈Dark Bässe〉；〈Adrenalin〉在 2000 年那版寫成〈Adrenaline〉。本檔 `keyTracks` 避開這一軌以免摺疊出問題。｜**回撈與搜尋共 2 個候選：採信 1810777410（但要標明是 1992 年的 8 軌 CD 版）、駁回 1807733937（2025 年的《Dream Sequence X》，五軌全部重製、多一軌原盤沒有的曲子）。** 1810777410 **只在 gb 與 de 兩店查得到，us 店查無**。｜`curatorWhy` 寫「Tresor 廠牌編號第二號」**查證屬實**（catno 就是 Tresor 2）；「1991 年這張是他第一張整張長篇」**也查證屬實**（45 個 RG 裡 6 張純長篇，本張最早）。｜`curatorWhy` 提到的〈When We Used to Play〉〈Ride Em Boy〉與 Metroplex／KMS 的來歷，**本層查不到可引的來源，行文不要寫**。｜`curatorRisk` 提醒的《Dream Sequence 3: The Collective》（2001）確實在同一份目錄裡，**與本張是不同的 release-group**，別配錯。"
+ },
+ {
+  "key": "desc2:Eddie \"Flashin\" Fowlkes|Black Technosoul",
+  "artist": "Eddie \"Flashin\" Fowlkes",
+  "album": "Black Technosoul",
+  "facts": [
+   {
+    "f": "release-group 7dde5866 的欄位：title「Black Technosoul」、**artist-credit 是「Eddie ‘Flashin’ Fowlkes」（彎單引號 U+2018／U+2019）**，而同一個藝人實體（MBID a3db0ecd，type Person、country US）的**主名卻是「Eddie “Flashin” Fowlkes」（彎雙引號 U+201C／U+201D）**——**同一個實體內部兩種引號並存**。first-release-date **1996-04-01**（帶完整月日）、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1996-04-01 DE 的 Tresor 49 CD，Official，**CD、8 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7dde5866-5adf-307c-a440-5716456c3d96?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996-04-01 DE 原盤（Tresor 49 CD）的逐軌曲目與長度：1〈Move to Detroit〉5:36、2〈X=O〉5:35、3〈You Make Me〉5:41、4〈Groovin〉5:41、5〈On the D.L.〉5:29、6〈C.B.R.〉5:39、7〈Music Is Hypnotising〉5:45、8〈Stray Dog〉5:26。**八軌全部落在 5:26 到 5:45 之間——最長與最短只差 19 秒，八軌幾乎切成同一個長度。** 其中兩軌同為 5:41。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7dde5866-5adf-307c-a440-5716456c3d96&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流三店（us／gb／de）的 collectionId **1594237677**：collectionName「**Archives Vol. 5 - Black Technosoul**」、artistName「Eddie Fowlkes」（**店面用的是不帶綽號的短寫**）、releaseDate 2021-11-26、trackCount 8、copyright「℗ 2021 Detroit Wax Digital」。`entity=song` **攤得出 8 軌、8 軌全部有 previewUrl**：〈Move to Detroit〉5:36／〈X=O〉5:35／〈You Make Me〉5:41／〈Groovin〉5:41／〈On the D.L〉5:29／〈C.B.R〉5:39／〈Music Is Hypnotising〉5:45／〈Stray Dog〉5:26。**八軌與 1996 原盤逐位置相符、逐軌長度完全相同**——盤名雖然多了 Archives Vol. 5 的前綴，**內容就是本張**。",
+    "src": "https://itunes.apple.com/lookup?id=1594237677&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **35 個 release-group**：primary-type=Album 8 個（**secondary-types 為空的 7 個**）、EP 14 個、Single 13 個、**primary-type=Compilation 0 個**。7 張長篇依 first-release-date 排序是 **1992-04《The Project》、1992-09-01《3MB》、1992-12《Technosoul》、1993《The Birth of Technosoul》、1996-04-01 本張、1999《Niko Marks & City Boy Players》、2007-02-23《Welcome to My World》**——**本張排第 5，不是他名下第一張長篇。** 前面四張裡有兩張的掛名不是他單獨（《The Project》同時掛在 Blake Baxter 名下、《3MB》是三人團）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a3db0ecd-e3f0-4320-88c3-d1d0466cc9bf&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**同族盤名有三張，極易混淆**：同一份目錄裡有 **1992-12《Technosoul》、1993《The Birth of Technosoul》、1996-04-01《Black Technosoul》**，另加一張 1993 年帶 secondary-types [Compilation] 的《Detroit Techno Soul Compilation》。**四個標題都含 technosoul 這個字，摺疊後極接近**，配對與行文都要指明是哪一張。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=a3db0ecd-e3f0-4320-88c3-d1d0466cc9bf&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "八軌最長與最短只差十九秒，其中兩軌長度完全一樣",
+   "第一軌就叫〈Move to Detroit〉，碟卻是柏林的廠牌發的"
+  ],
+  "sound": "1996 年 4 月 Tresor 49 CD 只出過這一種載體、八軌。八軌全部落在 5:26 到 5:45 之間——最長與最短只差十九秒，其中〈You Make Me〉與〈Groovin〉兩軌長度完全一樣，整張像是同一把尺切出來的。曲名一半是縮寫（〈X=O〉〈On the D.L.〉〈C.B.R.〉），一半是直述句（〈You Make Me〉〈Music Is Hypnotising〉），開場的〈Move to Detroit〉把地名擺在最前面，而碟本身是柏林的廠牌以編號 49 發行的。2021 年這八軌又以另一個系列名重新上架，逐軌長度一秒不差。",
+  "keyTracks": [
+   "Move to Detroit",
+   "X=O",
+   "Music Is Hypnotising"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996-04-01。release-group first-release-date **1996-04-01**（帶完整月日）、其下唯一一筆 release 同為 1996-04-01 DE 的 Tresor 49 CD（Official），**沒有第二筆可交叉驗證**。串流店面的 1594237677 releaseDate 記 **2021-11-26**、℗ 欄「℗ 2021 Detroit Wax Digital」——**那是 2021 年重新上架的聲明，不是原盤年份**；八軌與原盤逐軌長度完全相同，可確認是同一批錄音。四處對照後年份仍是 1996。**同名先行單曲：無**（同族名字的《Technosoul》1992-12 與《The Birth of Technosoul》1993 是**不同的碟**，不是本張的先行單曲）。",
+  "notes": "**掛名依本批裁定第 3 條處理，本層覆核成立**：實體主名是彎雙引號的 `Eddie “Flashin” Fowlkes`、本張 artist-credit 是彎單引號的 `Eddie ‘Flashin’ Fowlkes`、店面用不帶綽號的 `Eddie Fowlkes`。**卡片取 ASCII 直雙引號的 `Eddie \"Flashin\" Fowlkes`，與池中既有的同型掛名一致，行文照卡片寫。**｜**擋下策展層一處（序數）**：`curatorWhy` 寫「《Black Technosoul》是他名下 35 個 release-group 裡最完整的一張長篇」，並暗示這是他的代表長篇。**藝人目錄裡 secondary-types 為空的長篇有 7 張，本張排第 5**（前面有 1992 年三張與 1993 年一張）。**行文不得寫「第一張」或「唯一一張」**；「最完整」是斷語，也不要寫。｜**盤名有 technosoul 家族三張**：《Technosoul》（1992-12）、《The Birth of Technosoul》（1993）、本張（1996）。**行文提到前兩張時必須寫全名**，否則讀者會以為是同一張。｜**串流採信 1594237677**：八軌與原盤逐軌長度完全相同，是可用的固定試聽來源；**但盤名在店面上是《Archives Vol. 5 - Black Technosoul》**，`curatorRisk` 把它判成「後世整編、不是本張」——**逐軌比對顯示內容就是本張，這一條要改**。｜`curatorWhy` 寫「Belleville Three 之外的第四人」「techno soul 這個講法的提出者」「Metroplex M-002〈Goodbye Kiss〉」，**三句本層都查不到可引的來源，行文不要寫**。"
+ },
+ {
+  "key": "desc2:Dark Comedy|Seven Days",
+  "artist": "Dark Comedy",
+  "album": "Seven Days",
+  "facts": [
+   {
+    "f": "release-group 7236f72a 的欄位：title「Seven Days」、artist-credit「Dark Comedy」（藝人實體 MBID 7f57505a，type Person、country US）、first-release-date **1997**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1997 BE 的 Elypsia ELY007CD，Official，**CD、11 軌**。**沒有任何再發、沒有黑膠版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/7236f72a-fc9f-3d38-804d-ab54bb44f28d?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 BE 原盤（Elypsia ELY007CD）的逐軌曲目與長度：1〈Eclectic〉5:14、2〈The Bar〉4:31、3〈March〉4:55、4〈Inaroom〉8:28、5〈Solace〉9:33、6〈Darkness〉5:45、7〈War of the Worlds (Dark Room mix)〉6:39、8〈Without a Sound (Right Brain mix)〉5:41、9〈Paranoid (Prelude to Paranoia)〉3:04、10〈Paranoid〉8:04、**11〈The Bar (2Minute Epic mix)〉2:32**。**全張最長的〈Solace〉9:33 與最短的〈The Bar (2Minute Epic mix)〉2:32 差了七分鐘；第 2 軌〈The Bar〉4:31 在末軌以 2:32 的版本再出現一次，是全張唯一被重做的曲子。第 9 軌〈Paranoid (Prelude to Paranoia)〉3:04 是第 10 軌〈Paranoid〉8:04 的前奏，兩軌相連。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7236f72a-fc9f-3d38-804d-ab54bb44f28d&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**別名各查一次的結果（裁定 223）**：`Dark Comedy` 是**獨立的藝人實體**（7f57505a，Person／US），不是本人實體的 alias；**它名下分頁全列只有 5 個 release-group**——primary-type=Album 2 個（**secondary-types 都是空的**：1997 本張與 2004《Funkfaker: Music Saves My Soul》）、EP 2 個、Single 0 個、**primary-type=Compilation 0 個**。**本張是這個掛名下 1990 年代唯一的一張長篇。** 本人的實體是另一個 MBID（ed8e364a，Person／US／1968／disambiguation「techno DJ/producer」），**兩份目錄完全不互通**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7f57505a-f683-4091-8b10-45ade72909af&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Dark+Comedy+Seven+Days&country=us&media=music&entity=album&limit=30"
+   },
+   {
+    "f": "同一份 5 筆的目錄裡，另一筆是 1997-01-27 的《Plankton / Clavia's North》（primary-type 空白），與本張同年。**這個掛名在 1997 年只有兩筆作品，本張是其中的長篇那一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7f57505a-f683-4091-8b10-45ade72909af&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "第二軌的曲子到了末軌又出現一次，只剩兩分半",
+   "十一軌裡最長與最短差了七分鐘"
+  ],
+  "sound": "1997 年 Elypsia ELY007CD 只出過比利時 CD 一種載體、十一軌。長度落差極大：〈Solace〉9:33 與〈Paranoid〉8:04、〈Inaroom〉8:28 三軌撐起中後段，末軌〈The Bar (2Minute Epic mix)〉卻只有 2:32——而那正是第二軌〈The Bar〉4:31 的重做版，全張唯一被重做的曲子。第 9 軌〈Paranoid (Prelude to Paranoia)〉3:04 是第 10 軌的前奏，兩軌相連成一段十一分鐘的收尾。曲名從〈Eclectic〉〈March〉這種單詞式標題，一路走到〈Darkness〉〈War of the Worlds〉〈Paranoid〉的黑暗題材。",
+  "keyTracks": [
+   "Solace",
+   "Inaroom",
+   "Paranoid"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**、其下唯一一筆 release 是 1997 BE 的 Elypsia ELY007CD（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1997。**同名先行單曲：無**；同一個掛名在 1997 年的另一筆作品是 1997-01-27 的《Plankton / Clavia's North》，**與本張不同名、不是先行單曲**。",
+  "notes": "**別名覆核成立（裁定 223）**：`Dark Comedy` 在資料庫上是**獨立實體**、名下只有 5 筆，與本人實體（ed8e364a）的目錄**完全不互通**——查本名查不到這 5 筆。卡片依碟上印的名字掛 `Dark Comedy` 是對的。｜`curatorWhy` 寫「Dark Comedy 名下唯一的 1990 年代長篇」**查證屬實**（2 張 Album，另一張是 2004 年的）。｜**擋下策展層一處（人名，裁定 241）**：`curatorWhy` 與 `queryAlias` 把本名寫成 Kenny Larkin、又列出第三個別名 `Yennek`。**本層只能確認 7f57505a 這個實體是 Person／US、沒有 disambiguation**——**這個實體本身並沒有寫明它是誰的別名**，本名與 `Yennek` 的對應是卡單從別處帶進來的。**行文不得寫本名，也不得寫「他的另一個掛名」這種需要身分對應才成立的句子**；要寫只能寫 `Dark Comedy` 這個掛名本身。｜**盤名極常見**：`sevendays` 是高風險短鍵，**搜尋與跨批比對一定要帶掛名**。｜**曲名的空格**：第 4 軌是〈Inaroom〉（三個字連寫成一個字），不是〈In a Room〉，行文照原樣。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Kevin Saunderson|Faces & Phases",
+  "artist": "Kevin Saunderson",
+  "album": "Faces & Phases",
+  "facts": [
+   {
+    "f": "release-group 723bb9f3 的欄位：title「Faces & Phases」、artist-credit「Kevin Saunderson」（藝人實體 MBID bf259ecd，type Person、country US）、first-release-date **1996**、**primary-type Album、secondary-types ［Compilation］**（依裁定 167 照一般 Album 處理、例外欄位留空）。轄下 **4 筆 release，全部 Official**：1996 GB 的 Six6 SIXXCD 6（**兩張 CD、每張 10 軌，合計 20 軌**）、1997-11-18 US 的 Planet E PE 65235 CD（**兩張 CD、每張 11 軌，合計 22 軌**）、1998 BE 的 SSR Records SSR 196（**22 軌**，title 作《Faces & Phases: The Kevin Saunderson Collection》）、2023-07-07 XW 的 KMS BTKMSFPCD 1（**數位、22 軌**）。**1996 年的英國原盤是 20 軌，其餘三筆都是 22 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/723bb9f3-ffb0-3705-9b7a-2c68b8d4ab74?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 GB 原盤（Six6 SIXXCD 6，兩張 CD）的逐軌曲目與長度：第一張 1〈The Sound〉6:49、2〈Let's, Let's, Let's Dance〉6:23、3〈Just Another Chance〉5:08、4〈The Groove That Won't Stop〉7:30、5〈Rock to the Beat〉2:55、6〈Bassline〉6:23、7〈Funky Funk Funk〉6:02、8〈The Smooth Groove〉3:34、9〈The Savage and Beyond〉3:42、10〈Feel the Mood〉5:40；第二張 1〈Triangle of Love〉4:21、2〈Forcefield〉5:13、3〈How to Play Our Music〉6:29、4〈Bounce Your Body to the Box〉5:20、5〈Groovin' Without a Doubt〉4:55、6〈Pump Up the Move〉4:21、7〈Uptempo〉4:06、8〈Straight Outta Hell〉6:35、**9〈Station of the Groove〉2:06**、10〈Ahnongay〉7:09。**〈Station of the Groove〉2:06 是全張最短的一軌，而且只出現在這一版上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=723bb9f3-ffb0-3705-9b7a-2c68b8d4ab74&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**1997 年的美國版（Planet E PE 65235 CD）是 22 軌、曲序整個重排**：它多出 **3 軌是 1996 原盤沒有的——〈Truth of Self Evidence〉7:49、〈The Human Bond〉8:56、〈Velocity Funk〉5:11**；同時**抽掉了原盤的〈Station of the Groove〉2:06**，並把〈Pump Up the Move〉改寫成〈Pump the Move〉、〈Funky Funk Funk〉改寫成〈Funky, Funk, Funk〉、〈The Smooth Groove〉改寫成〈Smooth Groove〉。1998 年的比利時版與 2023 年的數位版都跟著這個 22 軌的版本走（2023 那筆把兩張併成單張 22 軌）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=723bb9f3-ffb0-3705-9b7a-2c68b8d4ab74&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "回撈候選逐筆攤開曲目列比對：collectionId **1695552154**《Faces and Phases》（releaseDate 1996-01-15、trackCount **22**、℗ 2016 BEAT Music Fund）**22 軌全部有 previewUrl**，曲名與曲序與 **1997 年那個 22 軌的美國版逐位置相符**（〈Bassline〉6:20 起、含〈Truth of Self Evidence〉7:45、〈The Human Bond〉5:49、〈Velocity Funk〉5:08，**沒有〈Station of the Groove〉**）——**上架的不是 1996 年的 20 軌原盤**。另兩個候選駁回：1695551330《Kevin Saunderson Presents Origins》（1995、10 軌、全部是 Extended Mix 的另一組曲目）與 1695543806《How to Play Our Music》（1996、8 軌、每一軌的標題都掛著 Special Sampler Vinyl Pack 字樣，是本張的取樣宣傳盤）。",
+    "src": "https://itunes.apple.com/lookup?id=1695552154&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **36 個 release-group**：primary-type=Album 12 個，但**其中 secondary-types 為空的只有 2 個（2017-06-30《Heavenly Revisited》與 2025-06-16《e-Dancer》）**，其餘 10 個全帶 Compilation 或 DJ-mix；EP 6 個、Single 13 個、**primary-type=Compilation 0 個**。**本張是這個掛名下年代最早的一筆 Album 形態作品**，也是那 10 筆帶 Compilation 的 Album 裡最早的一張。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=bf259ecd-fe89-4738-82fc-ecdd67de1fcc&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "1996 年英國版的第二張最後放了一首兩分零六秒的曲子，隔年美國版把它整軌拿掉",
+   "同一張碟在英國是二十軌，到了美國變成二十二軌"
+  ],
+  "sound": "1996 年 Six6 SIXXCD 6 的英國原盤是兩張 CD、每張十軌共二十軌，長度從 2:06 的〈Station of the Groove〉到 7:30 的〈The Groove That Won't Stop〉，兩張各自從長曲開場、以短曲收在中段。第二張末尾那首 2:06 的〈Station of the Groove〉是全張最短的一軌，也是唯一只出現在這一版上的曲子——隔年美國版把它整軌拿掉，換上〈Truth of Self Evidence〉〈The Human Bond〉〈Velocity Funk〉三軌成為二十二軌，順帶把好幾個曲名的拼法改掉（〈Pump Up the Move〉變〈Pump the Move〉、〈Funky Funk Funk〉多了兩個逗號）。1998 年的比利時版與後來的數位版都跟著二十二軌走。",
+  "keyTracks": [
+   "The Sound",
+   "Bassline",
+   "Station of the Groove"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996**、其下最早的 release 是 1996 GB 的 Six6 SIXXCD 6（Official），其餘三筆是 1997-11-18、1998 與 2023-07-07 的後續版本。**串流那一路的年份要當心**：collectionId 1695552154 的 releaseDate 記 **1996-01-15**、℗ 卻寫「℗ 2016 BEAT Music Fund」，**而曲目列是 1997 年那個 22 軌的美國版**——年份標成 1996、內容卻是隔年那一版。四處對照後年份仍是 1996。**同名先行單曲：無。**",
+  "notes": "**裁定 167 的處置正確**：本張 primary-type=Album、secondary-types=[Compilation]，**照一般 Album 寫、例外欄位一律留空**，卡單填法無誤。｜**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **1996 GB 的 Six6 SIXXCD 6（20 軌）**，串流上架與其餘三筆再發**全是 22 軌**。**行文只能引 20 軌**；〈Truth of Self Evidence〉〈The Human Bond〉〈Velocity Funk〉三軌**不是本張曲目**，而〈Station of the Groove〉2:06 **只在本張上**、是行文可用的獨有細節。｜**回撈的 3 個候選：1695552154 逐軌覆核成立但內容是 22 軌的美國版**（若採用要在下游標明版本差）；**1695551330 與 1695543806 兩筆駁回**——前者是另一組 Extended Mix 曲目，後者是每軌標題都掛著取樣宣傳盤字樣的八軌宣傳盤。｜**`curatorRisk` 說「三店 search 與藝人目錄 lookup 全部查無」這一條要改**：回撈清單本張有三個候選，其中 1695552154 逐軌對得上，**不是查無**。｜`curatorWhy` 寫「把他 1986–96 年散在 KMS、Transmat、Network 的十年工作集中起來」——**廠牌那三個名字本層查不到來源，行文不要寫**；「本張是這個掛名下年代最早的一筆 Album 形態作品」**查證屬實**。｜**盤名兩種**：1998 年比利時版的 title 是《Faces & Phases: The Kevin Saunderson Collection》，**是同一個 release-group 的另一個 release，不是另一張碟**。｜**曲名撇號**：1996 原盤寫〈Let's, Let's, Let's Dance〉〈Groovin' Without a Doubt〉（ASCII 直撇），1998 與 2023 兩版改用彎撇。本檔依原盤。"
+ }
+]
