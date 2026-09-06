@@ -1,0 +1,462 @@
+[
+ {
+  "key": "desc2:Los Destellos|En orbita",
+  "artist": "Los Destellos",
+  "album": "En orbita",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f90ba1f9 的欄位：title「En orbita」（無重音）、artist-credit「Los Destellos」（藝人 MBID 7968034e）、first-release-date **1969**、**primary-type Album、secondary-types 空**。轄下只有 1 筆 release：1969／PE／Official，12 吋黑膠，廠牌 Odeon del Peru、catno「ELD - 1795」，12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f90ba1f9-2e98-4b10-9c34-caf4b6b9abb7?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1969 PE 黑膠的逐軌曲目（MB 未填任何一軌的長度）：1〈El pollito〉、2〈Cucaracha〉、3〈Descarga destellos〉、4〈Frenética guajira〉、5〈Cumbia morena〉、6〈Cumbia del desierto〉、7〈Divina montaña〉、8〈Para Elisa〉、9〈Boogaloo de los destellos〉、10〈Virgencita〉、11〈Ivanna〉、12〈Mi ritmo jalaíto〉。單片 12 軌，曲名裡同時出現 cumbia、guajira、boogaloo、pachanga 系的舞曲字樣與一首〈Para Elisa〉。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f90ba1f9-2e98-4b10-9c34-caf4b6b9abb7&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1672392632：collectionName「En Órbita」（帶重音）、artistName「Los Destellos」、releaseDate **1968-01-12**、copyright「℗ 1968 Odeon del Perú」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名與曲序與 MB 那筆 1969 PE 原盤**逐位置相符**（唯一差異是第 4 軌 Apple 寫「Frenética Güajira」、MB 寫「Frenética guajira」）。逐軌長度 2:13／2:32／3:19／2:00／2:36／2:14／3:00／2:45／2:27／2:04／2:37／1:46，全碟沒有一軌超過 3:20。",
+    "src": "https://itunes.apple.com/lookup?id=1672392632&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "**同一張碟在 Apple pe 上有第二筆**：collectionId 1441430300「En Orbita」（無重音）、releaseDate 2018-11-01、copyright「℗ 2018 Iempsa」、trackCount 12、12 軌全有 previewUrl，曲目與 1672392632 完全相同，但**被切成兩片各 6 軌**（trackNumber 回到 1 再數一次）。兩筆的差別是版權年（1968 Odeon del Perú vs 2018 Iempsa）與分片方式，不是曲目。",
+    "src": "https://itunes.apple.com/lookup?id=1441430300&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 7968034e 的欄位：name「Los Destellos」、type **Group**、country **PE**、disambiguation「Peruvian 60 psychedelic rock」、life-span 自 **1966** 起、無終止年。以 `release-group?artist=…&limit=100&offset=` 分頁列完共 **28 個 release-group**，其中 primary-type Album 的 24 筆依 first-release-date 為：1967《Los Destellos》、1969《Solo Ellos》、1969《En orbita》、1970《En la cumbre》、1971《Clase aparte》、1971《Constelación》、1973《Arrollando》、1974《Destellantes》、1975《Linda Chiquilina》、1976《Ojos azules》、1976《En Jira por Todo el Perú》、1977《Los Incomparables del Ritmo》、1978《10 Años de Triunfo》、1979《Yo Mismo Soy》、1980《Para todo el mundo》、1986《El Retorno Triunfal de Enrique Delgado y sus Destellos》、1999《Los Destellos》、2015《Solo ellos... Los Destellos》，另有《Sicodélicos》《Destellos》《Éxitos》三筆帶 secondary-type Compilation。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7968034e-117f-4275-a2e6-a88472794cb2&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二首沒有一首超過三分二十秒，最短的〈Mi ritmo jalaíto〉一分四十六就結束",
+   "同一張碟在 Apple 上有兩筆：一筆掛 Odeon del Perú 的 1968，一筆掛 Iempsa 的 2018、還被切成兩片各六軌"
+  ],
+  "sound": "MB 記單片 12 軌，1969 年 Odeon del Perú 的祕魯黑膠、catno ELD - 1795；MB 未填任何一軌長度，逐軌時間只有 Apple pe 1672392632 那一份：2:13／2:32／3:19／2:00／2:36／2:14／3:00／2:45／2:27／2:04／2:37／1:46，全碟最長的〈Descarga destellos〉3:19、最短的收尾曲〈Mi ritmo jalaíto〉1:46。曲名把幾種舞曲並排在同一張裡——cumbia（〈Cumbia morena〉〈Cumbia del desierto〉）、guajira（〈Frenética guajira〉）、boogaloo（〈Boogaloo de los destellos〉）、descarga（〈Descarga destellos〉），中間夾一首〈Para Elisa〉。MB 與 Apple 都沒有這張的班底或錄音室資料。",
+  "keyTracks": [
+   "El pollito",
+   "Descarga destellos",
+   "Boogaloo de los destellos"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說，採 MB 的 1969。** MB release-group first-release-date 1969、其下唯一一筆 release（PE／Official／Odeon del Peru ELD - 1795）也是 1969；Apple pe 1672392632 的 releaseDate 是 1968-01-12、℗ 也寫 1968，另一筆 Apple pe 1441430300 的 releaseDate 是 2018-11-01（℗ 2018 Iempsa，數位再發）。**三個年份、兩個廠牌**：1969（MB／Odeon）、1968（Apple／Odeon）、2018（Apple／Iempsa）。依裁定 77／91，MB release 有具體國別、狀態與 catno，Apple 的日期只當訊號，卡片記 **1969 原盤年**。**行文不得斷言「1969 年發行」以外的年份，也不要把 2018 那筆的 Iempsa 當成原始廠牌。**",
+  "notes": "**探測層 ready 覆核通過**：pe 1672392632，12 軌全有 previewUrl，曲名／曲序與 MB 1969 PE 原盤逐位置相符，`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。MB 未填長度，所以裁定 157 的比對只能做到「曲名＋曲序」這一層，長度那一層沒有 MB 可比。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單的 `releaseType: \"Album\"` **正確**，不是考古整輯。\\n**身分回問（裁定 179）**：MB 藝人實體 7968034e 的 type=Group、country=PE、disambiguation「Peruvian 60 psychedelic rock」、1966 年起——與卡片說的「Enrique Delgado 1966 年在利馬組的樂團」中「1966」這一點相符；**但 MB 沒有任何欄位提到 Enrique Delgado 或利馬**，`why` 那半句在本次查到的來源裡沒有出處，行文要提到創團人或城市，需要另找來源。\\n**擋下策展層一處**：`why` 寫「MB 名下 28 個 release-group 裡 1967–1980 年的正規盤有 15 張」——實際分頁列完，1967–1980 年間 primary-type=Album 的是 **15 筆**（1967／1969×2／1970／1971×2／1973／1974／1975／1976×2／1977／1978／1979／1980），這個數字**查證屬實**。但「這張是 1969 年 Odeon 那一批中的一張」隱含的序數感要小心：**行文不得寫「第 N 張」「第一張 LP」**——MB 上 1967 年就有一張同名首張《Los Destellos》，而它本批未收。\\n**去重警告（裁定 162）**：同一藝人名下另有《Destellos》《Éxitos》《Sicodélicos》三筆整編輯，其中《Destellos》是團名的子字串、也是本批《Destellantes》的子字串。"
+ },
+ {
+  "key": "desc2:Los Destellos|Constelación",
+  "artist": "Los Destellos",
+  "album": "Constelación",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a549c2f1 的欄位：title「Constelación」、artist-credit「Los Destellos」（藝人 MBID 7968034e）、first-release-date **1971**、**primary-type Album、secondary-types 空**。轄下 3 筆 release，全部 11 軌：1971／PE／**Official**，12 吋黑膠，Odeon del Peru catno ELD-2105；1971／**國別空、status 空**，11 軌；2011／US／**Official**，黑膠，**Secret Stash Records catno SSR-LP-282**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a549c2f1-7052-41a8-af2e-1cb0a917b688?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1971 PE 原盤（Odeon del Peru ELD-2105）的逐軌曲目與長度：1〈A Patricia〉3:12、2〈Señorita〉2:59、3〈El corneta〉2:58、4〈Constelación〉3:26、5〈Onsta la yerbita〉6:20、6〈Pasión oriental〉4:16、7〈Otro otoño〉2:35、8〈La canción de Lily〉2:45、9〈Pachanga española〉3:22、10〈Azuquita〉3:00、11〈La arañita〉2:50。**第 5 軌〈Onsta la yerbita〉6:20 是全碟唯一超過五分鐘的一軌，比第二長的〈Pasión oriental〉4:16 還多兩分鐘。** 那筆國別與 status 皆空的 release 曲目與長度與此完全相同。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a549c2f1-7052-41a8-af2e-1cb0a917b688&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 6806401600：collectionName「Constelación」、artistName「Los Destellos」、releaseDate **1971-01-01**、copyright「℗ 1971 Odeon del Perú」、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名與曲序與 MB 1971 PE 原盤**逐位置相符**，逐軌長度 3:15／3:10／3:04／3:24／6:14／4:32／2:39／2:42／3:26／2:58／3:01 與 MB 的每一軌相差都在 20 秒內（同一份錄音的不同轉檔）。",
+    "src": "https://itunes.apple.com/lookup?id=6806401600&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 7968034e：name「Los Destellos」、type Group、country PE、disambiguation「Peruvian 60 psychedelic rock」、自 1966 年起。分頁列完 28 個 release-group，**1971 年名下有兩筆 Album**：《Clase aparte》（7a12ccca）與本張《Constelación》（a549c2f1）。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7968034e-117f-4275-a2e6-a88472794cb2&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十一首裡有十首都在三分鐘上下，第五首〈Onsta la yerbita〉獨自跑滿六分二十",
+   "祕魯 Odeon 的 ELD-2105，四十年後被美國明尼阿波利斯的 Secret Stash 整張壓成 SSR-LP-282"
+  ],
+  "sound": "MB 三筆 release 全部 11 軌，曲目一致：1971 年祕魯 Odeon del Peru 的 ELD-2105 黑膠、一筆國別與狀態皆空的同內容盤，以及 2011 年美國 Secret Stash Records 的 SSR-LP-282 黑膠。逐軌長度 MB 與 Apple 兩份相差都在 20 秒內；曲序自〈A Patricia〉3:12 起，十首落在 2:35–4:16 之間，第 5 軌〈Onsta la yerbita〉6:20 是全碟唯一的長曲。曲名把 pachanga（〈Pachanga española〉）與 oriental（〈Pasión oriental〉）擺進同一張。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "A Patricia",
+   "Onsta la yerbita",
+   "Constelación"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1971。MB release-group first-release-date **1971**、其下 1971 PE Odeon ELD-2105 那筆與另一筆無國別的 release 都是 1971，Apple pe 6806401600 的 releaseDate 1971-01-01 與 ℗ 1971 相符——**四處同年**，本張沒有年份爭議。要記的是 **2011 年那筆是美國 Secret Stash 的再發**、不是另一張碟，兩者曲目與軌數完全相同。**同名曲〈Constelación〉排在第 4 軌，是自我同名曲不是同名先行單曲**；MB 藝人頁 28 個 release-group 裡沒有第二筆叫《Constelación》的東西。",
+  "notes": "**探測層 ready 覆核通過**：pe 6806401600，11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 1971 PE 原盤逐位置相符（裁定 157 的三層比對全做完），`trackCount` 欄與攤開的曲目列都是 11。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**授權狀態**：MB 三筆中**有一筆 status 空、國別也空**（1971，11 軌），依裁定 43／57 不採為授權背書；另外兩筆（1971 PE Odeon、2011 US Secret Stash）都是 Official，行文引用發行資訊時用這兩筆。\\n**擋下策展層一處**：`why` 寫「是這個樂團少數有英美再發實體的碟」——**「少數」是個量化主張，本次查到的來源撐不住**。MB 上要一一比對 28 個 release-group 各自的 release 國別才數得出來，我沒有逐筆展開；**行文不得寫「少數」「唯一」「只有這張」**，要提 Secret Stash 就直接寫「2011 年美國 Secret Stash Records 以 SSR-LP-282 重發整張」這個查得到的事實。\\n`why` 另一句「1971 年的兩張 LP 之一（另一張是《Clase aparte》）」**查證屬實**（MB 藝人頁 1971 年確實只有這兩筆 Album）。"
+ },
+ {
+  "key": "desc2:Los Destellos|Destellantes",
+  "artist": "Los Destellos",
+  "album": "Destellantes",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 453c51f3 的欄位：title「Destellantes」、artist-credit「Los Destellos」（藝人 MBID 7968034e）、first-release-date **1974**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1974／**BR**／Official，format **Digital Media**，廠牌欄「Latin Music Record」、**catno 空**，11 軌。**MB 上沒有這張的祕魯原盤條目，唯一的條目是巴西那筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/453c51f3-085c-4ef0-8742-7826ae044a73?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1974 BR release 的逐軌曲目與長度：1〈La Hilandera〉3:23、2〈Caminito Serrano〉3:28、3〈El Campesino〉2:51、4〈Rita〉3:16、5〈Sencillita〉2:52、6〈La Llorona〉2:23、7〈La Pastorcita〉2:51、8〈Volando Alto〉3:21、9〈Lejanía〉3:11、10〈Elías Soria〉2:45、11〈Resentida〉2:29。**十一軌全部落在 2:23–3:28 之間，是本團在 MB 上長度分布最平的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=453c51f3-085c-4ef0-8742-7826ae044a73&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 6806402130：collectionName「Destellantes」、artistName「Los Destellos」、releaseDate **1974-01-01**、copyright「**℗ 1974 Odeon del Perú**」、trackCount 11。`entity=song` 攤得出 **11 軌、11 軌全部有 previewUrl**，曲名、曲序與逐軌長度與 MB 那筆巴西盤**逐位置相符到秒**（唯一差 1 秒的是第 5 軌 2:53 對 2:52）。**Apple 的 ℗ 掛的是 Odeon del Perú，MB 的 release 掛的是 Latin Music Record——同一份 11 軌錄音、兩個廠牌名。**",
+    "src": "https://itunes.apple.com/lookup?id=6806402130&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 7968034e（Los Destellos，Group／PE／1966–，disambiguation「Peruvian 60 psychedelic rock」）分頁列完 28 個 release-group：**1974 年名下只有兩筆**——本張《Destellantes》（Album）與單曲《La pastorcita / Caminito serrano》（primary-type Single）。**那張單曲的兩面曲名，正是本張的第 7 軌與第 2 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7968034e-117f-4275-a2e6-a88472794cb2&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同年那張七吋單曲的 A 面與 B 面，就是這張碟的第七軌〈La Pastorcita〉與第二軌〈Caminito Serrano〉",
+   "十一首全部擠在兩分二十三到三分二十八之間，沒有一首讓開一步"
+  ],
+  "sound": "MB 只登記一筆 release：1974 年、國別 BR、format 記為 Digital Media、廠牌欄「Latin Music Record」、無 catno，11 軌。逐軌長度 3:23／3:28／2:51／3:16／2:52／2:23／2:51／3:21／3:11／2:45／2:29，Apple pe 6806402130 那份與之相符到秒。**十一軌全部落在 2:23–3:28 之間**，最長與最短只差一分零五秒，全碟沒有長曲、也沒有短到當間奏的碎片。曲名以人物與行當為主：〈La Hilandera〉（紡紗女）、〈El Campesino〉（農人）、〈La Pastorcita〉（小牧羊女）、〈Elías Soria〉、〈Rita〉。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "La Hilandera",
+   "Caminito Serrano",
+   "La Pastorcita"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1974，**但只有兩處可比**。MB release-group first-release-date 1974、其下唯一一筆 release（BR／Official）也是 1974；Apple pe 6806402130 的 releaseDate 1974-01-01 與 ℗ 1974 相符。**沒有第三處可交叉**——MB 上沒有祕魯原盤條目，所以「1974」在 MB 這一側只靠那筆巴西盤支撐。同名先行單曲：無；同年那筆《La pastorcita / Caminito serrano》是 Single，曲名取自本張，**不是同名碟**。",
+  "notes": "**探測層 ready 覆核通過**：pe 6806402130，11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 唯一那筆 release 逐位置相符到秒，`trackCount` 欄與攤開的曲目列都是 11。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 廠牌兩說，行文不得斷言發行廠牌**：MB 那筆 release 的廠牌欄是「Latin Music Record」（BR）、catno 空；Apple 的 ℗ 卻寫「1974 Odeon del Perú」。**兩邊各有記載、互不相同**，同裁定 141 不換值也不合併，卡單的 `label` 目前寫「Latin Music Record（BR 盤，11 軌）」是採 MB 那一側，**行文若要提廠牌，兩個都要提或都不提**。\\n**⚠ MB 資料本身有一處自相矛盾**：那筆 1974 年的 release 的 format 記成 **Digital Media**——1974 年不會有數位載體，這是 MB 建檔者把後來的數位版掛上原盤年份的形狀。**行文不得寫「1974 年的黑膠」或任何載體**，只能寫年份與軌數。\\n**擋下策展層一處**：`why` 寫「與同團其餘各張留在祕魯 Odeon／Infopesa 的形態不同，是這個樂團的錄音外流到巴西市場的一個具體條目」——**「外流到巴西市場」是推論，不是查到的事實**。MB 只記了 release 的 country=BR 與一個廠牌名，沒有任何欄位說明授權關係；Apple 那筆的 ℗ 反而掛 Odeon del Perú。**行文不得寫「外流」「授權給巴西」這類因果**。\\n**去重警告（裁定 162）**：盤名《Destellantes》與團名 Los Destellos 前六個字母相同，MB 同一藝人名下另有無年份的《Destellos》與《Éxitos》兩筆整編輯，子字串比對會互相配到。"
+ },
+ {
+  "key": "desc2:Juaneco y su Combo|El gran cacique",
+  "artist": "Juaneco y su Combo",
+  "album": "El gran cacique",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group eb3e1494 的欄位：title「El gran cacique」、artist-credit「Juaneco y su Combo」（藝人 MBID 9106e92a）、first-release-date **1970**、**primary-type Album、secondary-types 空**。轄下 2 筆 release，都是 12 軌、都是 Official：**1970／PE，12 吋黑膠，Infopesa catno「LPS 8063」**；**2018-12-07／XW，Digital Media，Infopesa（無 catno），release 標題寫成大寫的「El Gran Cacique」**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/eb3e1494-0821-42d4-a20c-f20acf51fa64?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的逐軌曲目完全相同、曲序也相同（1970 那筆未填長度，2018 那筆有）：1〈Me robaron mi runa mula〉3:12、2〈Agüita de sachachorro〉2:39、3〈La marcha del sapo〉2:39、4〈La sirenita enamorada〉2:52、5〈El pajarito pajero〉2:58、6〈El capullito〉2:46、7〈Vacilando con ayahuasca〉3:33、8〈Mujer hilandera〉3:52、9〈Cumbia pa' la sierra〉2:57、10〈Volando〉3:02、11〈Bolero para ti〉3:24、12〈La incognita〉3:26。**第 8 軌〈Mujer hilandera〉3:52 是全碟最長的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=eb3e1494-0821-42d4-a20c-f20acf51fa64&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1436134761：collectionName「El Gran Cacique」、artistName「**Juaneco Y Su Combo**」（大寫 Y／Su，與 MB 的「y su」不同）、releaseDate **2018-12-07**、copyright「℗ 2018 Infopesa」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**、逐軌長度與 MB 那筆 2018 XW release 相符到 1 秒內（唯一的曲名差是第 12 軌 Apple 寫「La Incógnita」、MB 寫「La incognita」，差一個重音）。**Apple 上架的就是 MB 那筆 2018-12-07 的 Infopesa 數位再發，不是 1970 原盤條目。**",
+    "src": "https://itunes.apple.com/lookup?id=1436134761&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 9106e92a：name「Juaneco y su Combo」、type **Group**、country **PE**、**disambiguation 空**、life-span 自 **1960** 起、無終止年。分頁列完共 **12 個 release-group**，其中 primary-type Album 且不帶 Compilation 的只有 4 筆：1969《Juaneco y su Combo》、1970《El gran cacique》、1975《El brujo》、1988《No llores abuelita》；另 6 筆帶 secondary-type Compilation（1982《Grandes éxitos de...》、2008《Masters of Chicha, Vol. 1》、2013《The Birth of Jungle Cumbia》、2016《Leyenda amazónica》、2019《Legado: Colección Definitiva》、無年份的《Colección de oro》），2 筆 Single。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9106e92a-aad0-4996-ac95-37b21fd70737&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "西班牙文維基〈Juaneco y su Combo〉：樂團 **1966 年由 Juan Wong Paredes 在祕魯亞馬遜地區的普卡爾帕（Pucallpa）成立**，早期名為「Juaneco y su Conjunto」；合作過的廠牌有 Infopesa、Play Music、Sello Universal、Rosita Producciones。原始班底列出 Juan Wong Popolizio（鍵盤）、Noé Fachín（吉他）、Wilindoro Cacique（主唱）、Rosendo Hidalgo（timbales）、Walter Domínguez（貝斯）、Juvencio Pinchi（congas）。**1977 年 5 月 2 日**，樂團自 Chanchamayo 的 San Ramón 演出返程時，五名團員搭乘的小飛機失事、機上人員全數罹難；分開搭車回利馬的 Juan Wong Paredes、Wilindoro Cacique、Rosendo Hidalgo、Juvencio Pinchi 四人倖免。**該條目把《El Gran Cacique》列在 1972 年、《El Brujo》列在 1975 年。**",
+    "src": "https://es.wikipedia.org/wiki/Juaneco_y_su_Combo"
+   }
+  ],
+  "hookCandidates": [
+   "曲名一路點名亞馬遜：sachachorro 的水、ayahuasca 的暈、runa mula 的傳說，第七軌就叫〈Vacilando con ayahuasca〉",
+   "1970 年 Infopesa 的 LPS 8063，四十八年後同一家廠牌一軌不動地放上串流"
+  ],
+  "sound": "MB 兩筆 release 都是單片 12 軌、曲目與曲序一致：1970 年祕魯 Infopesa 的 12 吋黑膠 LPS 8063，與 2018-12-07 同廠的 XW 數位版。逐軌長度（取 2018 那筆與 Apple pe 相符的一份）2:39–3:52，全碟十二軌都在三分鐘上下，最長的〈Mujer hilandera〉3:52、最短的〈Agüita de sachachorro〉與〈La marcha del sapo〉同為 2:39。曲名取材幾乎全在亞馬遜：runa mula 的傳說、sachachorro 的水、ayahuasca、「cumbia pa' la sierra」，中間放一首〈Bolero para ti〉。班底名單只有維基那一份（Juan Wong Popolizio 鍵盤、Noé Fachín 吉他、Wilindoro Cacique 主唱、Rosendo Hidalgo timbales、Walter Domínguez 貝斯、Juvencio Pinchi congas），**MB 與 Apple 都沒有逐張的班底或錄音室資料，不能把那份名單當成這張碟的錄音陣容**。",
+  "keyTracks": [
+   "Me robaron mi runa mula",
+   "Vacilando con ayahuasca",
+   "Mujer hilandera"
+  ],
+  "status": "full",
+  "yearVerified": "**三說，採 MB 的 1970。** MB release-group first-release-date **1970**、其下 1970／PE／Official／Infopesa LPS 8063 那筆也是 1970；**西班牙文維基把這張列在 1972 年**；Apple pe 1436134761 的 releaseDate 與 ℗ 都是 **2018**（＝MB 那筆 2018-12-07 Infopesa 數位再發的日期，不是原盤年）。依裁定 77／91，MB 的 release 有國別、狀態與 catno（LPS 8063），是三者中唯一帶實體編號的記載，卡片記 **1970 原盤年**。**行文不得斷言發行年月，也不得把 2018 當成這張碟的年份**；若要提年份，寫「Infopesa 的 LPS 8063」比寫年份更安全。",
+  "notes": "**探測層 ready 覆核通過**：pe 1436134761，12 軌全有 previewUrl，曲名／曲序與 MB 逐位置相符、逐軌長度與 MB 2018 XW 那筆相符到 1 秒內，`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**但要記住 Apple 上架的是 2018 數位再發那一版**（℗ 2018 Infopesa），不是 1970 原盤條目——兩者曲目相同，所以配對成立。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。同藝人名下另有 6 筆帶 Compilation 的整編輯，配對時不要撞進去。\\n**身分回問（裁定 179）**：MB 藝人實體 9106e92a 的 type=Group、country=PE、**disambiguation 是空的**——這個西語團名沒有 MB 的消歧說明可用，只能靠 rgMbid。**MB 的 life-span 起年是 1960，西班牙文維基寫 1966**，兩處差六年，**行文不得寫成團年份**。\\n**擋下策展層兩處**：(1) `why` 寫「MB 名下 12 個 release-group、其中正規錄音室盤只有 4 張」——**查證屬實**（1969／1970／1975／1988 四筆，其餘 6 筆帶 Compilation、2 筆 Single）。(2) `why` 寫「本張是 Infopesa 時期的頭一批」——**「頭一批」是序數形狀、查不實**：MB 上 1969 年的同名首張沒有登記廠牌，無法判斷哪一張才是 Infopesa 的第一張。**行文不得寫序數（第一張／頭一批／最早）。**\\n**可寫但要小心的一條**：維基記 1977-05-02 的空難（五名團員罹難、四人因分開搭車倖免）——**時間在本張之後七年**，若行文要用，必須寫清楚是後來的事，**不得寫成這張碟的背景**。"
+ },
+ {
+  "key": "desc2:Juaneco y su Combo|El brujo",
+  "artist": "Juaneco y su Combo",
+  "album": "El brujo",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 6145f5c1 的欄位：title「El brujo」、artist-credit「Juaneco y su Combo」（藝人 MBID 9106e92a）、first-release-date **1975**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1975／PE／Official，12 吋黑膠，Infopesa，**同一筆掛了兩個 catno 寫法「LPS-8081」與「LPS. 8081」**，12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/6145f5c1-f892-4d51-b407-edc19b93803f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1975 PE 黑膠的逐軌曲目（MB 未填任何一軌長度）：1〈El pelejito bailarín〉、2〈Muraya〉、3〈El brujo〉、4〈San Juan 75〉、5〈Noche tropical〉、6〈Buscando tu amor〉、7〈El pinochito saltarín〉、8〈Chica linda〉、9〈Ritmo alegre〉、10〈El bagazo〉、11〈La tragedia de Rosendo〉、12〈Región oriental〉。**同名曲〈El brujo〉排在第 3 軌**；第 4 軌曲名把年份寫進去了（〈San Juan 75〉）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6145f5c1-f892-4d51-b407-edc19b93803f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1832560434：collectionName「**El Brujo (2025 Remastered)**」、artistName「Juaneco Y Su Combo」、releaseDate **2025-08-11**、copyright「**℗ 2025 Infopesa**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，**每一軌的曲名後面都掛著「(2025 Remastered)」**；曲名（去掉後綴後）與曲序與 MB 1975 PE 原盤**逐位置相符**（差異只有重音：Apple 寫「El Pelejito Bailarin」「El Pinochito Saltarin」無重音、「Región Oriental」有重音）。逐軌長度 3:24／3:12／4:26／3:17／3:24／2:56／2:36／3:29／3:55／3:16／3:37／3:19，**第 3 軌同名曲〈El brujo〉4:26 是全碟最長**。",
+    "src": "https://itunes.apple.com/lookup?id=1832560434&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 9106e92a（Juaneco y su Combo，Group／PE／disambiguation 空／life-span 自 1960 起）分頁列完 12 個 release-group：不帶 Compilation 的 Album 只有 1969《Juaneco y su Combo》、1970《El gran cacique》、**1975《El brujo》**、1988《No llores abuelita》四筆。**1975 年名下就只有這一筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=9106e92a-aad0-4996-ac95-37b21fd70737&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "西班牙文維基〈Juaneco y su Combo〉：樂團 1966 年由 Juan Wong Paredes 在普卡爾帕成立，合作廠牌含 Infopesa；該條目的選錄唱片表把 **《El Brujo》列在 1975 年**（與 MB 一致）。原始班底含 Noé Fachín（吉他）、Wilindoro Cacique（主唱）、Rosendo Hidalgo（timbales）。**1977 年 5 月 2 日**，五名團員自 San Ramón 演出返程搭乘的小飛機失事、機上人員全數罹難。",
+    "src": "https://es.wikipedia.org/wiki/Juaneco_y_su_Combo"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲排在第三軌、四分二十六，是十二首裡唯一超過四分鐘的一首",
+   "Apple 上這張的每一軌後面都掛著「2025 Remastered」，原盤是 Infopesa 的 LPS-8081"
+  ],
+  "sound": "MB 只登記一筆 release：1975 年祕魯 Infopesa 的 12 吋黑膠，catno 在同一筆裡有「LPS-8081」與「LPS. 8081」兩種寫法，單片 12 軌；MB 未填任何一軌長度。逐軌時間只有 Apple pe 1832560434 那份 2025 重製版：3:24／3:12／4:26／3:17／3:24／2:56／2:36／3:29／3:55／3:16／3:37／3:19，十一軌落在 2:36–3:55、第 3 軌同名曲〈El brujo〉4:26 獨自超過四分鐘。曲名分兩路：一路是亞馬遜的地與人（〈Muraya〉〈Región oriental〉〈La tragedia de Rosendo〉），一路是舞曲與情歌（〈Noche tropical〉〈Buscando tu amor〉〈Ritmo alegre〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "El brujo",
+   "El pelejito bailarín",
+   "La tragedia de Rosendo"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（**兩處**）。MB release-group first-release-date **1975**、其下唯一一筆 release（PE／Official／Infopesa LPS-8081）也是 1975；西班牙文維基的唱片表同樣把《El Brujo》列在 1975。**Apple 那筆不能算第三處**——pe 1832560434 的 releaseDate 是 2025-08-11、℗ 2025 Infopesa，那是重製版的年份。**與同團《El gran cacique》相反，這張的 MB 與維基年份沒有分歧。** 同名先行單曲：無；同名曲〈El brujo〉在碟內排第 3 軌。",
+  "notes": "**探測層 ready 覆核通過，但配到的是重製版**：pe 1832560434 是「**El Brujo (2025 Remastered)**」，12 軌全有 previewUrl，曲名（剝掉「(2025 Remastered)」後綴）／曲序與 MB 1975 PE 原盤逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。**MB 那筆原盤沒有填長度，所以裁定 157 的長度比對這一層在本張做不到**；能比的兩層（曲名、曲序）都相符。\\n**⚠ 上架備註必須標明版本**：Apple 這一份是 **2025 重製**（℗ 2025 Infopesa），封面與試聽都來自它，不是 1975 原盤。**行文不得把 Apple 的逐軌長度說成 1975 年原盤的長度**（重製版的曲長常有出入，而 MB 沒有原盤長度可對照）。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**身分回問（裁定 179）**：MB 藝人實體 9106e92a 的 **disambiguation 是空的**、life-span 起年 1960 與維基的 1966 不一致，**行文不得寫成團年份**。\\n**擋下策展層一處**：卡單 `risk` 已正確預告了 2025 重製版這件事；但 `why`（與《El gran cacique》共用同一段池況陳述）裡沒有序數主張要擋。**唯一要防的是「最後一張」形狀**——MB 上 1988 年還有《No llores abuelita》，**這張不是他們的末代作品，行文不得暗示它是**。\\n**時序警告**：維基的 1977-05-02 空難在本張之後兩年，**若行文引用，必須寫成後來的事**。"
+ },
+ {
+  "key": "desc2:Los Mirlos|El sonido selvático",
+  "artist": "Los Mirlos",
+  "album": "El sonido selvático",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group f95dafc0 的欄位：title「El sonido selvático」、artist-credit「Los Mirlos」（藝人 MBID 967775fc）、first-release-date **1973**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1973／PE／Official，12 吋黑膠，Infopesa，**同一筆掛「LPS 8043」與「LPS-8043」兩種 catno 寫法**，12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/f95dafc0-c909-4874-b938-480fc0138101?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1973 PE 黑膠的逐軌曲目（MB 未填任何一軌長度）：1〈El sonido de Los Mirlos〉、2〈Bailando con Rosita〉、3〈Ilusión de amor〉、4〈Don Agucho〉、5〈Sinfonía para un recuerdo〉、6〈La juguetona〉、7〈Amor tierno amor〉、8〈Hermosa flor〉、9〈Chiquita bonita〉、10〈Lenita〉、11〈Súplica de amor〉、12〈Makumba〉。**開場曲不是同名曲、而是把團名寫進曲名的〈El sonido de Los Mirlos〉。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=f95dafc0-c909-4874-b938-480fc0138101&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1810282818：collectionName「El Sonido Selvático」、artistName「Los Mirlos」、releaseDate **1973-01-01**、copyright「**℗ 1973 Infopesa**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**；兩處曲名寫法有出入：第 4 軌 Apple 作「Don Agucho \"El Pequeño Saltamontes\"」（MB 只寫「Don Agucho」）、第 7 軌 Apple 作「Amor, Tierno Amor」（MB 無逗號）。逐軌長度 2:35／2:29／2:46／2:59／2:48／2:37／2:46／2:40／2:18／2:30／2:59／2:51，**十二軌全部落在 2:18–2:59 之間，沒有一軌滿三分鐘**。",
+    "src": "https://itunes.apple.com/lookup?id=1810282818&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 967775fc：name「Los Mirlos」、type **Group**、country **PE**、**disambiguation 空**、life-span 自 **1973** 起、無終止年。分頁列完共 **18 個 release-group**，Album 依 first-release-date：**1973《El sonido selvático》**、1975《El Milagro Verde》、1975《Los charapas de oro》、1976《Tirense con la escoba》、1978《Cumbia amazónica》[Compilation]、1980《El Milagro Verde》、1980-05-27《Cumbia Amazónica Vol. 2》、1992《Juancito obrero》、1996《El Amor Hecho Canción》、2003《Pideme La Luna》、2014《La cumbia de los negros》、2014《Cumbia amazónica》[Compilation]、2017《Grandes éxitos》[Compilation]、2026-05-15《The World Meets Los Mirlos》。**本張是這份清單上年份最早的一筆，也與藝人實體的 life-span 起年同為 1973。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=967775fc-8997-47ed-8c2e-55a0eb59bfae&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "西班牙文維基〈Los Mirlos〉：樂團 **1973 年在利馬成立**，但源頭可上溯到 **1968 年聖馬丁大區的莫約班巴（Moyobamba）**，創團者 **Jorge Rodríguez Grández** 先在 1968 年組了 Los Saetas；條目稱他們「是亞馬遜 cumbia 的創造者，祕魯 cumbia 眾多面貌之一」。合作廠牌列出 Infopesa（祕魯）、Magenta Discos（阿根廷）、Barbes Records（美國）、Epic／Sony（墨西哥）。唱片表把 **《El Sonido Selvático》列在 1973 年**、《Los Charapas de Oro》1975、《Tírense con la escoba》1976。",
+    "src": "https://es.wikipedia.org/wiki/Los_Mirlos"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌沒有一首滿三分鐘，最短的〈Chiquita bonita〉兩分十八就收",
+   "開場不叫〈El sonido selvático〉，叫〈El sonido de Los Mirlos〉——他們先報自己的名字"
+  ],
+  "sound": "MB 只登記一筆 release：1973 年祕魯 Infopesa 的 12 吋黑膠，catno 在同一筆裡有「LPS 8043」與「LPS-8043」兩種寫法，單片 12 軌；MB 未填長度，逐軌時間來自 Apple pe 1810282818（℗ 1973 Infopesa，年份與 MB 同）：2:35／2:29／2:46／2:59／2:48／2:37／2:46／2:40／2:18／2:30／2:59／2:51。**十二軌全部在 2:18 到 2:59 之間，最長與最短只差四十一秒，全碟沒有一軌滿三分鐘。** 曲序以〈El sonido de Los Mirlos〉開場、〈Makumba〉收尾，中段連著五首情歌題名（〈Ilusión de amor〉〈Amor tierno amor〉〈Hermosa flor〉〈Chiquita bonita〉〈Súplica de amor〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "El sonido de Los Mirlos",
+   "Don Agucho",
+   "Makumba"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1973（**四處**）。MB release-group first-release-date **1973**、其下唯一一筆 release（PE／Official／Infopesa LPS 8043）也是 1973、Apple pe 1810282818 的 releaseDate 1973-01-01 與 **℗ 1973 Infopesa** 相符、西班牙文維基的唱片表同樣列 1973。**本批 a 組裡年份四處一致、Apple 又不是後世再發的少數幾張之一。** 同名先行單曲：無；MB 藝人頁 18 個 release-group 裡沒有第二筆叫《El sonido selvático》的東西。**要注意的反而是同名重複在別處**：《El Milagro Verde》與《Cumbia amazónica》各有兩筆同名 release-group（1975／1980 與 1978／2014）。",
+  "notes": "**探測層 ready 覆核通過**：pe 1810282818，12 軌全有 previewUrl，曲名／曲序與 MB 1973 PE 原盤逐位置相符，`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**MB 未填長度，裁定 157 的長度那一層做不到**；曲名兩處寫法差異（第 4 軌 Apple 多了副標「El Pequeño Saltamontes」、第 7 軌多一個逗號）不影響配對。**Apple 的 ℗ 是 1973 Infopesa 而非再發年，這在本批 a 組是少見的。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**身分回問（裁定 179）**：MB 藝人實體 967775fc 的 type=Group、country=PE、**disambiguation 空**、life-span 起年 **1973**；西班牙文維基寫 1973 年在利馬成立、源頭 1968 年莫約班巴。**兩處對「1973」一致**，這是本批少數成團年份對得起來的藝人。\\n**擋下策展層一處**：卡單沒有寫序數，但這張**極容易被下游寫成「首張專輯」**——MB 上它確實是年份最早的一筆，維基的唱片表也以它開頭，**但兩份都只是列舉、沒有任何一句說它是首張**，而樂團自述源頭在 1968 年（另一個團名 Los Saetas）。**行文不得寫「首張」「出道作」「第一張」**；要講位置就寫「MB 上這個團年份最早的一筆」或直接寫 1973 年的 Infopesa LPS 8043。\\n**「亞馬遜 cumbia 的創造者」這句是維基的說法**，屬於歸功主張，**行文若要用必須寫成「維基百科這麼記」或整句捨去**，不得當事實斷言。\\n**去重警告（裁定 162）**：同藝人名下《El Milagro Verde》兩筆同名（1975／1980）、《Cumbia amazónica》兩筆同名（1978／2014），只能靠 rgMbid 區分。"
+ },
+ {
+  "key": "desc2:Los Mirlos|Los charapas de oro",
+  "artist": "Los Mirlos",
+  "album": "Los charapas de oro",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7107b643 的欄位：title「Los charapas de oro」、artist-credit「Los Mirlos」（藝人 MBID 967775fc）、first-release-date **1975**、**primary-type Album、secondary-types 空**。轄下 2 筆 release、都是 12 軌、都是 Official：**1975／PE，12 吋黑膠，Infopesa catno「LPS-8069」**；**2018-07-06／XW，Digital Media，Infopesa（無 catno）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7107b643-f8cc-4b36-9022-3f66ba0378de?fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 兩筆 release 的曲序相同、曲名有三處不同寫法（1975 那筆未填長度，2018 那筆有）：1〈Somos los mirlos〉3:19、2〈Sonido amazónico〉2:42、3〈Amor ausente〉3:17、4〈El llorón〉2:52、5〈Cabalgando con ella〉3:10、6〈El viejito enamorado〉3:01、7〈Recordando un amor〉2:48、8〈La danza del **petróleo**〉／2018 作〈La danza del **petrolero**〉3:41、9〈Linda provinciana〉2:37、10〈Caprichosa y engreida〉／2018 作〈Caprichosa y engreída〉3:26、11〈Flor silvestre〉2:58、12〈Cumbia **requena**〉／2018 作〈Cumbia **a Requena**〉2:39。**第 8 軌 3:41 是全碟最長的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7107b643-f8cc-4b36-9022-3f66ba0378de&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1371716537：collectionName「Los Charapas de Oro」、artistName「Los Mirlos」、releaseDate **2018-07-06**、copyright「℗ 2018 Infopesa」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 MB 那筆 **2018-07-06 XW release 相符到秒**（第 8 軌同樣作「La Danza del Petrolero」、第 12 軌同樣作「Cumbia a Requena」）。**Apple 上架的是 2018 那一版，不是 1975 原盤條目；兩者軌數與曲序相同，差別只在三處曲名寫法。**",
+    "src": "https://itunes.apple.com/lookup?id=1371716537&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 967775fc（Los Mirlos，Group／PE／disambiguation 空／life-span 自 1973 起）分頁列完 18 個 release-group：**1975 年名下有兩筆 Album**——《El Milagro Verde》（239b3ebc）與本張《Los charapas de oro》；1980 年另有一筆**同名**的《El Milagro Verde》（296ee9f3），《Cumbia amazónica》也有 1978 與 2014 兩筆同名。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=967775fc-8997-47ed-8c2e-55a0eb59bfae&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "西班牙文維基〈Los Mirlos〉的唱片表把 **《Los Charapas de Oro》列在 1975 年**（與 MB 一致），並列出樂團 1973 年在利馬成立、源頭 1968 年莫約班巴、創團者 Jorge Rodríguez Grández，合作廠牌含 Infopesa（祕魯）、Magenta Discos（阿根廷）、Barbes Records（美國）、Epic／Sony（墨西哥）。",
+    "src": "https://es.wikipedia.org/wiki/Los_Mirlos"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲叫〈Somos los mirlos〉——他們自報名號，收尾那首把地名寫進去，Requena",
+   "第八軌在 MB 的原盤叫〈La danza del petróleo〉，到了數位版變成〈La danza del petrolero〉，一個字母之差"
+  ],
+  "sound": "MB 兩筆 release 都是單片 12 軌、曲序一致：1975 年祕魯 Infopesa 的 12 吋黑膠 LPS-8069，與 2018-07-06 同廠的 XW 數位版。逐軌長度（2018 那筆，Apple pe 相符到秒）3:19／2:42／3:17／2:52／3:10／3:01／2:48／3:41／2:37／3:26／2:58／2:39，十二軌落在 2:37–3:41 之間，最長的是第 8 軌。曲序以〈Somos los mirlos〉自報名號開場、第 2 軌就是〈Sonido amazónico〉，收尾〈Cumbia a Requena〉把亞馬遜的地名寫進曲名。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Somos los mirlos",
+   "Sonido amazónico",
+   "Cumbia a Requena"
+  ],
+  "status": "full",
+  "yearVerified": "**採 MB／維基的 1975。** MB release-group first-release-date **1975**、其下 1975／PE／Official／Infopesa LPS-8069 那筆也是 1975、西班牙文維基的唱片表同樣列 1975——**三處一致**。Apple pe 1371716537 的 releaseDate 與 ℗ 都是 **2018**，那是 MB 那筆 2018-07-06 Infopesa 數位再發的日期，依裁定 77／91 只當訊號。**行文不得把 2018 當這張碟的年份。** 同名先行單曲：無；MB 藝人頁 18 個 release-group 裡沒有第二筆叫《Los charapas de oro》的東西。",
+  "notes": "**探測層 ready 覆核通過**：pe 1371716537，12 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 那筆 2018 XW release 相符到秒，`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**配到的是 2018 數位再發那一版**（℗ 2018 Infopesa），與 1975 原盤的曲序、軌數相同，配對成立。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 三處曲名兩說，行文點曲名要小心**：第 8 軌 1975 原盤作〈La danza del **petróleo**〉（石油）、2018 版作〈La danza del **petrolero**〉（石油工人）；第 12 軌 1975 作〈Cumbia requena〉、2018 作〈Cumbia a Requena〉；第 10 軌差一個重音。**要點這三首，只能寫兩版都認得的部分，或直接避開。**\\n**⚠ 跨藝人撞名**：〈La danza del petrolero〉同時是本批另一張碟的**盤名**——Los Wembler's de Iquitos《La danza del petrolero》(1975)，兩者同年。**行文不得把這首歌與那張碟混為一談**，比對腳本也要注意這個字串會跨卡命中。\\n**身分回問（裁定 179）**：MB 藝人實體 967775fc 的 **disambiguation 空**，同名實體要靠 rgMbid 區分。\\n**擋下策展層零處**：卡單的 `why`／`risk` 在本張沒有序數主張，`risk` 已正確預告 2018 再發年與《El Milagro Verde》兩筆同名的坑。"
+ },
+ {
+  "key": "desc2:Los Mirlos|Tirense con la escoba",
+  "artist": "Los Mirlos",
+  "album": "Tirense con la escoba",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 7c408c7f 的欄位：title「Tirense con la escoba」（**Tirense 無重音**）、artist-credit「Los Mirlos」（藝人 MBID 967775fc）、first-release-date **1976**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1976／PE／Official，12 吋黑膠，Infopesa，**同一筆掛「8097」與「LPS-8097」兩種 catno 寫法**，12 軌。",
+    "src": "https://musicbrainz.org/ws/2/release-group/7c408c7f-a44c-4648-9dfa-22d48b96f946?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1976 PE 黑膠的逐軌曲目（MB 未填任何一軌長度）：1〈Así se goza〉、2〈Canción de paz y amor〉、3〈Chinita ven a bailar〉、4〈Llora corazón〉、5〈El cumbión de San Juan〉、6〈Corazón enamorado〉、**7〈Tirense con la escoba〉**、8〈Linda mujer〉、9〈Rosita〉、10〈Mi negrita〉、11〈La travesía〉、12〈Agarra el swing〉。**同名曲排在第 7 軌，正好在十二軌的中間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=7c408c7f-a44c-4648-9dfa-22d48b96f946&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1810282915：collectionName「**Tírense Con La Escoba**」（**帶重音**）、artistName「Los Mirlos」、releaseDate **1976-01-01**、copyright「**℗ 1976 Infopesa**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲序與 MB **逐位置相符**；逐軌長度 3:03／3:30／3:10／3:00／2:38／3:25／3:27／2:22／2:43／3:16／2:25／3:24。**第 11 軌兩邊曲名不同**：MB 作〈La travesía〉（航程），Apple 作〈La Traviesa〉（頑皮的女孩）——不是重音差異，是兩個不同的字。",
+    "src": "https://itunes.apple.com/lookup?id=1810282915&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 967775fc（Los Mirlos，Group／PE／disambiguation 空／life-span 自 1973 起）分頁列完 18 個 release-group：**1976 年名下只有這一筆**；1970 年代的 Album 依序是 1973《El sonido selvático》、1975《El Milagro Verde》、1975《Los charapas de oro》、1976《Tirense con la escoba》、1978《Cumbia amazónica》[Compilation]。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=967775fc-8997-47ed-8c2e-55a0eb59bfae&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "西班牙文維基〈Los Mirlos〉的唱片表把 **《Tírense con la escoba》列在 1976 年**（與 MB 一致，且維基那一份**寫成帶重音的 Tírense**），並記樂團 1973 年在利馬成立、創團者 Jorge Rodríguez Grández、合作廠牌含 Infopesa。",
+    "src": "https://es.wikipedia.org/wiki/Los_Mirlos"
+   }
+  ],
+  "hookCandidates": [
+   "同名曲不放開頭也不放結尾，排在第七軌、十二軌的正中間",
+   "第十一軌在 MB 叫〈La travesía〉、在 Apple 叫〈La Traviesa〉——航程與頑皮女孩，差的不只是重音"
+  ],
+  "sound": "MB 只登記一筆 release：1976 年祕魯 Infopesa 的 12 吋黑膠，catno 在同一筆裡有「8097」與「LPS-8097」兩種寫法，單片 12 軌；MB 未填長度，逐軌時間來自 Apple pe 1810282915（℗ 1976 Infopesa，年份與 MB 同）：3:03／3:30／3:10／3:00／2:38／3:25／3:27／2:22／2:43／3:16／2:25／3:24。十二軌落在 2:22–3:30，比同團 1973 年那張整體長了半分鐘上下。同名曲〈Tirense con la escoba〉3:27 排在第 7 軌；收尾曲名把英文字寫進去（〈Agarra el swing〉），第 5 軌〈El cumbión de San Juan〉點的是亞馬遜的聖胡安節。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Tirense con la escoba",
+   "El cumbión de San Juan",
+   "Agarra el swing"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1976（**四處**）。MB release-group first-release-date **1976**、其下唯一一筆 release（PE／Official／Infopesa 8097）也是 1976、Apple pe 1810282915 的 releaseDate 1976-01-01 與 **℗ 1976 Infopesa** 相符、西班牙文維基的唱片表同樣列 1976。**Apple 這一筆的 ℗ 是原盤年而非再發年**，與同團《Los charapas de oro》那張相反。同名先行單曲：無；同名曲〈Tirense con la escoba〉在碟內排第 7 軌。",
+  "notes": "**探測層 ready 覆核通過**：pe 1810282915，12 軌全有 previewUrl，曲序與 MB 1976 PE 原盤逐位置相符，`trackCount` 欄與攤開的曲目列都是 12。**MB 未填長度，裁定 157 的長度那一層做不到。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 盤名一個重音，兩種寫法**：MB 作「Tirense con la escoba」（無重音）、Apple 與西班牙文維基都作「Tírense」（帶重音）。**卡單目前採 MB 的無重音版**；依裁定 49 的同一書寫系統變形，兩種都要進 `queryAlias`（卡單已寫）。**行文若要寫盤名，用哪一種都要全篇一致。**\\n**⚠ 第 11 軌曲名兩說、且不是重音問題**：MB 作〈La travesía〉、Apple 作〈La Traviesa〉——一個是名詞「航程」、一個是形容詞「頑皮的」，**兩邊指的可能是同一首、也可能是 MB 建檔者打錯**。本次查到的兩份來源各執一詞，**行文不得點這一軌的曲名**。\\n**擋下策展層零處**：卡單 `risk` 已正確預告重音差異；`why` 在本張沒有序數主張。**但要提醒下游**：這張在 MB 上是該團 1970 年代最後一張非整編輯 Album（1978 那筆帶 Compilation），**這件事不得寫成「最後一張」**——1980 年還有《El Milagro Verde》與《Cumbia Amazónica Vol. 2》。"
+ },
+ {
+  "key": "desc2:Los Wembler's de Iquitos|Al Ritmo de los Wembler's",
+  "artist": "Los Wembler's de Iquitos",
+  "album": "Al Ritmo de los Wembler's",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b6659233 的欄位：title「Al Ritmo de los Wembler**’**s」（**U+2019 右單引號**）、artist-credit「Los Wembler**'**s de Iquitos」（**ASCII 撇號**）、藝人 MBID 8174abea、first-release-date **1972**、**primary-type Album、secondary-types 空**。轄下 2 筆 release、都是 12 軌、都是 Official：**1972／PE，12 吋黑膠，Odeon del Peru catno「LD 2195」**；**無日期／XW，Digital Media，廠牌 Distrolux SL**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b6659233-3016-4362-bc24-8574749a2ee0?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 兩筆 release 的曲目與曲序完全相同（1972 那筆未填長度，XW 那筆有）：1〈Cumbia Amazónica〉3:38、2〈Chancaquita〉3:29、3〈La tortuguita enamorada〉2:39、4〈El chasco〉3:16、5〈El balsero solitario〉2:55、6〈La camisola〉2:37、7〈La selvática alegre〉2:05、8〈Triste hablador〉1:56、9〈El mundialito〉3:31、10〈Las mujeres no se acaban〉2:30、11〈Paloma limón〉3:14、12〈Todo acabo〉3:07。**第 8 軌〈Triste hablador〉1:56 是全碟最短、第 1 軌〈Cumbia Amazónica〉3:38 最長。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b6659233-3016-4362-bc24-8574749a2ee0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1804945401：collectionName「Al Ritmo de los Wembler's」（**ASCII 撇號**）、artistName「Los Wembler's De Iquitos」、releaseDate **1972-01-01**、copyright「**℗ 1972 Distrolux, SL bajo licencia de Los Wembler's de Iquitos**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序／逐軌長度與 MB 那筆 XW（Distrolux SL）release **相符到秒**。**Apple 這一筆的 ℗ 明寫是「經 Los Wembler's de Iquitos 授權」的 Distrolux 版，年份卻掛 1972——與 MB 那筆無日期的 XW release 是同一份轉檔。**",
+    "src": "https://itunes.apple.com/lookup?id=1804945401&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 8174abea：name「Los Wembler**’**s de Iquitos」（**實體名用 U+2019**）、type **Group**、country **PE**、**disambiguation 空**、life-span 自 **1968** 起、無終止年。分頁列完共 **7 個 release-group**，全部是 Album、無一帶 Compilation：**1972《Al Ritmo de los Wembler’s》**、1975《La amenaza verde》、1975-01-01《La danza del petrolero》、1977《Fiesta en la selva》、2019-09-06《Visión del ayahuasca》、2020-05-27《Los Wemblers de Emerson Isaias Sanchez Casanova》、2025《Selva》。**這是本批目錄最小的藝人之一：MB 上總共只有七筆。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8174abea-0428-4480-8f97-7bc5db389244&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡最短的〈Triste hablador〉一分五十六，最長的開場〈Cumbia Amazónica〉三分三十八",
+   "MB 上這個團只有七筆條目，1972 到 2025 橫跨五十三年"
+  ],
+  "sound": "MB 兩筆 release 都是單片 12 軌、曲目與曲序一致：1972 年祕魯 Odeon del Peru 的 12 吋黑膠 LD 2195，與一筆無日期的 XW 數位版（廠牌 Distrolux SL）。逐軌長度（XW 那筆，Apple pe 相符到秒）3:38／3:29／2:39／3:16／2:55／2:37／2:05／1:56／3:31／2:30／3:14／3:07，十二軌落在 1:56–3:38，落差比本批其他祕魯盤大：前段兩首都超過三分半，第 7、8 軌連著兩首兩分鐘上下的短曲，末段又拉回三分多。開場就叫〈Cumbia Amazónica〉，曲名一路是伊基托斯的水路與人（〈El balsero solitario〉划筏人、〈La tortuguita enamorada〉、〈La selvática alegre〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Cumbia Amazónica",
+   "El balsero solitario",
+   "Triste hablador"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1972（**三處**）。MB release-group first-release-date **1972**、其下 1972／PE／Official／Odeon del Peru LD 2195 那筆也是 1972、Apple pe 1804945401 的 releaseDate 1972-01-01 與 **℗ 1972** 相符。**但 Apple 的 ℗ 掛的是 Distrolux, SL（西班牙）而不是 Odeon del Perú**，而 MB 那筆 Distrolux 的 XW release **根本沒有日期**——所以「1972」這個年份在 Distrolux 這一側是 Apple 單方面填的，只有 Odeon 那筆黑膠是有國別、狀態與 catno 的實體記載。**行文寫年份可以，寫廠牌要寫 Odeon del Perú（原盤）或明講 Distrolux 是後來的授權方，不得混為一談。**",
+  "notes": "**探測層 ready 覆核通過**：pe 1804945401，12 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 那筆 XW（Distrolux SL）release 相符到秒，`trackCount` 欄與攤開的曲目列都是 12。**配到的是 Distrolux 的授權數位版**，曲目與 1972 Odeon 原盤相同，配對成立。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。這個藝人名下七筆 release-group **沒有任何一筆帶 Compilation**。\\n**⚠ 撇號兩型（裁定 49）**：MB 的 release-group 標題與**藝人實體名**都用 **U+2019**（Al Ritmo de los Wembler’s／Los Wembler’s de Iquitos），MB 的 artist-credit 與 Apple 都用 **ASCII 撇號**。卡單依 c-108 裁定 3 採 ASCII、U+2019 進 `queryAlias`，**這一點覆核無誤**。**同一個團在 MB 上兩種撇號並存**，1972 與 1975 兩筆 RG 用 ASCII、1977 那筆用 U+2019。\\n**身分回問（裁定 179）**：MB 藝人實體 8174abea 的 type=Group、country=PE、**disambiguation 空**、1968 年起。Apple 另有次要實體 1760956287「Los Wemblers de Iquitos」（**完全無撇號**），藝人閘三種寫法都要認。\\n**擋下策展層零處，但補一個下游警告**：這是 MB 上這個團**年份最早的一筆**，很容易被寫成「首張」——**MB 只有七筆條目、樂團 1968 年就成立，四年空白期沒有任何來源交代**，**行文不得寫「首張」「出道作」**。"
+ },
+ {
+  "key": "desc2:Los Wembler's de Iquitos|La danza del petrolero",
+  "artist": "Los Wembler's de Iquitos",
+  "album": "La danza del petrolero",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b8803c80 的欄位：title「La danza del petrolero」、artist-credit「Los Wembler's de Iquitos」（ASCII 撇號，藝人 MBID 8174abea）、first-release-date **1975-01-01**、**primary-type Album、secondary-types 空**。轄下 2 筆 release，**軌數不同**：**1975／PE／Official，12 吋黑膠，Decibel catno「LP 2001」，12 軌**；**1975-01-01／XW／Official，Digital Media，廠牌欄空，18 軌**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b8803c80-b282-4694-9189-a049860997bd?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 1975 PE 原盤（Decibel LP 2001）的 12 軌（MB 未填長度）：1〈La danza del petrolero〉、2〈El intutero〉、3〈Sonido amazónico〉、4〈Chinita turrona〉、5〈El chuchuhuashero〉、6〈Bola bola en el tres〉、7〈Linda Loretana〉、8〈El serranito enamorado〉、9〈Oriente oculto〉、10〈El vacilón de Los Wembler's〉、11〈Nerón〉、12〈Mi caprichito〉。**同名曲排第 1 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8803c80-b282-4694-9189-a049860997bd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同一個 release-group 底下那筆 18 軌的 XW release 不是「原盤加六首」，是另一份曲目**：1〈La Danza Del Petrolero〉2:49、2〈La Amenaza Verde〉2:37、3〈El Chinito Llorón〉2:49、4〈Carapira〉3:09、5〈La Danza De La Sirena〉3:13、6〈Sonido Amazónico〉2:33、7〈Mi Negrita〉2:24、8〈Lamento Del Yacuruna〉2:50、9〈El Chuchuhuashero〉2:32、10〈El Intutero〉2:56、11〈La Farra Está Aquí〉2:57、12〈La Chinita Turrona〉2:12、13〈Bola Bola En El Tres〉2:04、14〈Linda Loretana〉2:25、15〈El Serranito Enamorado〉3:11、16〈El Bacilón De Los Wembler's〉2:23、17〈Mi Caprichito〉2:28、18〈Mosaico〉4:51。**曲序被重排、原盤的〈Oriente oculto〉與〈Nerón〉不在裡面，卻多出〈La Amenaza Verde〉（＝同團 1975 年另一張碟的盤名）與〈Mosaico〉等七首。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b8803c80-b282-4694-9189-a049860997bd&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1806368010：collectionName「La Danza del Petrolero」、artistName「Los Wembler's De Iquitos」、releaseDate **1975-01-01**、copyright「℗ 1975 Distrolux, SL bajo licencia de Los Wembler's de Iquitos」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序與 **MB 那筆 12 軌 Decibel 原盤逐位置相符**（寫法差異：第 4 軌 Apple 多冠詞作「La Chinita Turrona」、第 10 軌 Apple 作「El Bacilón」而 MB 作「El vacilón」）。逐軌長度 2:48／2:55／2:32／2:11／2:31／2:03／2:24／3:10／2:45／2:23／3:03／2:27。**Apple 配到的是 12 軌那一版，不是 18 軌那一版。**",
+    "src": "https://itunes.apple.com/lookup?id=1806368010&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 8174abea（Los Wembler’s de Iquitos，Group／PE／disambiguation 空／life-span 自 1968 起）分頁列完 7 個 release-group、全部是 Album：**1975 年名下有兩筆**——《La amenaza verde》（21046d72）與本張《La danza del petrolero》（b8803c80）。**18 軌那份 XW 曲目裡的〈La Amenaza Verde〉正是另一筆 release-group 的盤名。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8174abea-0428-4480-8f97-7bc5db389244&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "同一個條目底下擺了兩份曲目：Decibel 黑膠的十二軌，和一份重排過、換掉兩首又多七首的十八軌",
+   "十二軌全部在兩分到三分十秒之間，開場的同名曲兩分四十八就交棒"
+  ],
+  "sound": "MB 1975 年祕魯 Decibel 的 12 吋黑膠 LP 2001，單片 12 軌；MB 未填長度，逐軌時間來自 Apple pe 1806368010（與那 12 軌逐位置相符）：2:48／2:55／2:32／2:11／2:31／2:03／2:24／3:10／2:45／2:23／3:03／2:27。**十二軌全部落在 2:03–3:10，最長與最短只差一分零七秒**，是本團三張裡最緊的一張。同名曲〈La danza del petrolero〉放在第 1 軌開場，第 3 軌〈Sonido amazónico〉與第 5 軌〈El chuchuhuashero〉都是亞馬遜題名，第 10 軌把團名寫進曲名（〈El vacilón de Los Wembler's〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "La danza del petrolero",
+   "Sonido amazónico",
+   "El vacilón de Los Wembler's"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1975（**三處**）。MB release-group first-release-date **1975-01-01**、其下 1975／PE／Official／Decibel LP 2001 那筆是 1975、Apple pe 1806368010 的 releaseDate 1975-01-01 與 ℗ 1975 相符。**廠牌與前一張同型**：Apple 的 ℗ 掛 Distrolux, SL（授權方），MB 原盤掛 Decibel（catno LP 2001）。**年份無爭議，要防的是軌數與版本。** 同名曲〈La danza del petrolero〉在碟內排第 1 軌，不是同名先行單曲。",
+  "notes": "**探測層 ready 覆核通過，而且這一次覆核有實質作用**：pe 1806368010 是 **12 軌那一版**，曲名／曲序與 MB Decibel 原盤逐位置相符（MB 未填長度，長度那一層做不到）。`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。\\n**⚠ 同一個 release-group 底下有 12 軌與 18 軌兩份曲目，而且不是「加曲版」**：18 軌那筆 XW release 把曲序整個重排、**拿掉原盤的〈Oriente oculto〉與〈Nerón〉**、另外塞進〈La Amenaza Verde〉〈El Chinito Llorón〉〈Carapira〉〈La Danza De La Sirena〉〈Mi Negrita〉〈Lamento Del Yacuruna〉〈La Farra Está Aquí〉〈Mosaico〉。**這是裁定 174 的形狀（同一條目、兩份不同曲目），不是裁定 140 的加曲版。** 卡單 `risk` 已預告 Apple 上另有 pe 1062401368 的 18 軌版標 2008。**行文不得寫原盤軌數、不得點只在 18 軌版出現的曲名。**\\n**⚠ 18 軌那份裡的〈La Amenaza Verde〉是同團 1975 年另一張碟的盤名**（MB RG 21046d72，本批未收）。**行文不得把它當成這張碟的曲目。**\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**——**即使那筆 18 軌 XW release 實質上是整編輯，release-group 層的欄位仍是 Album、secondary 空**，照裁定 167／184 以欄位為準。\\n**擋下策展層零處**：卡單 `risk` 對軌數兩說的預告與實查相符，只是把它描述成「多出來的六軌」——**實際是換掉兩首、多七首，不是單純多六首**，這一點要修正。"
+ },
+ {
+  "key": "desc2:Los Wembler's de Iquitos|Fiesta en la selva",
+  "artist": "Los Wembler's de Iquitos",
+  "album": "Fiesta en la selva",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group 333e75c0 的欄位：title「Fiesta en la selva」、artist-credit「Los Wembler**’**s de Iquitos」（**此筆的 credit 用 U+2019，與同團 1972／1975 兩筆的 ASCII 撇號不同**，藝人 MBID 8174abea）、first-release-date **1977**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1977／PE／Official，12 吋黑膠，**廠牌 Sono Radio、catno「SE 9598」**，12 軌。**這是本團三張裡唯一不掛 Odeon 也不掛 Decibel 的一張。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/333e75c0-dabf-4426-9089-4d8f1f28e60f?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1977 PE 黑膠的逐軌曲目（MB 未填任何一軌長度）：1〈Jilguerito alegre〉、2〈Chiquita bonita〉、3〈Bailando en la selva〉、4〈Te daré una rosa〉、5〈Cásate conmigo〉、6〈Dos amores〉、**7〈Huapango del Shapshico〉**、8〈Linda Iquiteñita〉、9〈Caminito a San Juan〉、10〈Luna Bonita〉、11〈Yo le dije al cura〉、12〈Simplemente amigos〉。**第 7 軌把墨西哥的 huapango 節奏名與亞馬遜傳說中的 shapshico 並在同一個曲名裡；第 8 軌〈Linda Iquiteñita〉點的是樂團所在的伊基托斯。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=333e75c0-dabf-4426-9089-4d8f1f28e60f&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1805638180：collectionName「Fiesta en la Selva」、artistName「Los Wembler's De Iquitos」、releaseDate **1977-01-01**、copyright「℗ 1977 Distrolux, SL bajo licencia de Los Wembler's de Iquitos」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**（差異只在重音：Apple 寫「Te Dare una Rosa」「Casate Conmigo」無重音）。逐軌長度 2:04／4:07／3:23／3:50／2:40／3:45／3:00／2:43／2:45／3:35／3:57／4:31。**開場的〈Jilguerito alegre〉2:04 是全碟最短，收尾的〈Simplemente amigos〉4:31 最長——與同團另兩張「十二軌擠在一分半區間」的形狀完全相反。**",
+    "src": "https://itunes.apple.com/lookup?id=1805638180&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 8174abea（Los Wembler’s de Iquitos，Group／PE／disambiguation 空／life-span 自 1968 起）分頁列完 7 個 release-group、**全部是 Album、無一帶 Compilation**：1972《Al Ritmo de los Wembler’s》、1975《La amenaza verde》、1975-01-01《La danza del petrolero》、**1977《Fiesta en la selva》**、2019-09-06《Visión del ayahuasca》、2020-05-27《Los Wemblers de Emerson Isaias Sanchez Casanova》、2025《Selva》。**1977 年之後 MB 上有四十二年的空白，下一筆要到 2019 年。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=8174abea-0428-4480-8f97-7bc5db389244&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "開場的〈Jilguerito alegre〉兩分零四就走，收尾的〈Simplemente amigos〉留了四分三十一",
+   "第七軌把墨西哥的 huapango 和亞馬遜傳說裡的 shapshico 綁進同一個曲名"
+  ],
+  "sound": "MB 只登記一筆 release：1977 年祕魯 Sono Radio 的 12 吋黑膠 SE 9598，單片 12 軌；MB 未填長度，逐軌時間來自 Apple pe 1805638180（曲序逐位置相符）：2:04／4:07／3:23／3:50／2:40／3:45／3:00／2:43／2:45／3:35／3:57／4:31。**這張的長度分布與同團前兩張相反**——1972 那張擠在 1:56–3:38、1975 那張擠在 2:03–3:10，這張從 2:04 一路拉到 4:31，四首超過三分四十五。曲名一半是情歌（〈Te daré una rosa〉〈Cásate conmigo〉〈Dos amores〉〈Simplemente amigos〉），一半仍在亞馬遜（〈Bailando en la selva〉〈Huapango del Shapshico〉〈Linda Iquiteñita〉〈Caminito a San Juan〉）。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料。",
+  "keyTracks": [
+   "Jilguerito alegre",
+   "Huapango del Shapshico",
+   "Linda Iquiteñita"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1977（**三處**）。MB release-group first-release-date **1977**、其下唯一一筆 release（PE／Official／Sono Radio SE 9598）也是 1977、Apple pe 1805638180 的 releaseDate 1977-01-01 與 ℗ 1977 相符。**廠牌兩說同前兩張**：Apple 的 ℗ 掛 Distrolux, SL（授權方），MB 原盤掛 Sono Radio。同名先行單曲：無；MB 藝人頁 7 個 release-group 裡沒有第二筆與《Fiesta en la selva》同名的東西。",
+  "notes": "**探測層 ready 覆核通過**：pe 1805638180，12 軌全有 previewUrl，曲名／曲序與 MB 1977 PE 原盤逐位置相符（MB 未填長度，長度那一層做不到），`trackCount` 欄與攤開的曲目列都是 12。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。\\n**⚠ 撇號在同一個藝人身上兩型並存（裁定 49）**：**這一筆的 artist-credit 用 U+2019**（Los Wembler’s de Iquitos），而同團 1972《Al Ritmo de los Wembler’s》與 1975《La danza del petrolero》兩筆的 credit 用 **ASCII 撇號**；MB 的藝人**實體名**也是 U+2019。卡單依 c-108 裁定 3 一律採 ASCII、U+2019 進 `queryAlias`，**覆核無誤**。\\n**去重警告（裁定 162）**：卡單 `risk` 指出 Apple 上另有《El Encanto de la Selva》（1805906840）與《Fiebre en la Selva》（1805641490）兩張 MB 未建檔的碟，三個盤名都含「Selva」。**實查 Apple pe 藝人目錄確認這兩個 id 存在於同一個藝人底下**，子字串比對會互配，去重必須用完整字串。\\n**擋下策展層一處（預防性）**：這是 MB 上這個團 1970 年代**最後一筆**（下一筆要到 2019 年），極容易被寫成「最後一張」或「解散前最後的作品」。**MB 只是沒有 1977–2019 之間的條目，不等於樂團停止活動**（藝人實體的 life-span 沒有終止年）。**行文不得寫「最後一張」「告別作」，也不得替那四十二年的空白下任何解釋。**"
+ },
+ {
+  "key": "desc2:Chacalón y la Nueva Crema|Chacalón y la Nueva Crema",
+  "artist": "Chacalón y la Nueva Crema",
+  "album": "Chacalón y la Nueva Crema",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group a5824f3a 的欄位：title「**Chacalón Y La Nueva Crema**」（Y、La 大寫）、artist-credit「**Chacalón y la Nueva Crema**」（小寫），藝人 MBID 326162e7、first-release-date **1978**、**primary-type Album、secondary-types 空**。轄下**只有 1 筆 release**：1978／PE／Official，12 吋黑膠，**廠牌 Horoscopo、catno「HLP 001」**，12 軌。**掛名與盤名完全相同（自我同名），子字串比對必然互相包住。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/a5824f3a-3a7c-4bf2-8d66-83322e8db599?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1978 PE 黑膠（Horoscopo HLP 001）的逐軌曲目（MB 未填任何一軌長度）：1〈Mi Dolor〉、2〈Por Que Te Amo〉、3〈Llanto De Un Niño〉、4〈Maria Teresa〉、5〈Sera Mejor〉、6〈Por Ella La Botella〉、7〈Tu Y La Noche〉、8〈Quiéreme〉、9〈Mala Mujer〉、10〈Nadie Conoce El Mundo〉、11〈Sin Hogar〉、12〈Chana〉。**MB 這一份的重音幾乎全被拿掉**（Por Que／Maria／Sera／Tu 都缺重音），只有〈Llanto De Un Niño〉與〈Quiéreme〉保留。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a5824f3a-3a7c-4bf2-8d66-83322e8db599&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music pe collectionId 1093449379：collectionName「Chacalón y la Nueva Crema」、artistName「Chacalón y la Nueva Crema」、releaseDate **1976-10-24**、copyright「**℗ 1976 Discos Horóscopo**」、trackCount 12。`entity=song` 攤得出 **12 軌、12 軌全部有 previewUrl**，曲名／曲序與 MB **逐位置相符**（Apple 那一份把重音補齊：〈Porque Te Amo〉〈María Teresa〉〈Será Mejor〉〈Tú y la Noche〉）。逐軌長度 3:35／3:06／3:34／2:52／3:21／3:35／3:36／3:08／2:44／3:02／3:02／3:59，**十二軌落在 2:44–3:59，收尾的〈Chana〉3:59 最長**。",
+    "src": "https://itunes.apple.com/lookup?id=1093449379&country=pe&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人實體 326162e7：name「Chacalón y la Nueva Crema」、type **Group**、country **PE**、**disambiguation 空**、life-span **1978 起、1994 止**（**本批唯一一個 MB 上已標終止年的藝人**）。分頁列完共 **8 個 release-group**：1978《Exitos ...Exitos ...Exitos》、**1978《Chacalón Y La Nueva Crema》**、1982《El Soberano De La Cumbia》、1983《Los Admirados De La Nueva Crema》、1985《Vol. 5 Tu Vida, Mi Vida》、2005-06《El Faraon de la Chicha Vol.1》[Compilation]、2007《Recuerdos Inolvidables Vol.2》[Compilation]，另有一筆無年份、**primary-type 為空**的《Éxitos de Papá Chacalón》。**1978 年名下有兩筆 Album。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=326162e7-0e56-49ba-8aa9-a0b12dbc6526&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "廠牌編號是 HLP 001——Horóscopo 這家廠牌的第一號，就是這張",
+   "碟名與團名一模一樣，MB 把它寫成大寫的 Y 與 La，Apple 寫小寫，兩邊指的是同一張"
+  ],
+  "sound": "MB 只登記一筆 release：1978 年祕魯 Horoscopo 的 12 吋黑膠，catno HLP 001，單片 12 軌；MB 未填長度，逐軌時間來自 Apple pe 1093449379（曲序逐位置相符）：3:35／3:06／3:34／2:52／3:21／3:35／3:36／3:08／2:44／3:02／3:02／3:59。十二軌落在 2:44–3:59，八軌集中在三分到三分四十之間，收尾的〈Chana〉3:59 最長。曲名幾乎全是苦與情：〈Mi Dolor〉〈Llanto de un Niño〉〈Por Ella, la Botella〉〈Mala Mujer〉〈Sin Hogar〉——與本批祕魯亞馬遜那幾張的森林、河與節慶題名是兩種取材。MB 與 Apple 都沒有這張的班底、錄音室或製作人資料，MB 的藝人實體也沒有記載 Chacalón 本人的姓名。",
+  "keyTracks": [
+   "Mi Dolor",
+   "Por Ella La Botella",
+   "Sin Hogar"
+  ],
+  "status": "full",
+  "yearVerified": "**兩說，採 MB 的 1978。** MB release-group first-release-date **1978**、其下唯一一筆 release（PE／Official／Horoscopo **HLP 001**）也是 1978；Apple pe 1093449379 的 releaseDate 是 **1976-10-24**、℗ 也寫 **1976 Discos Horóscopo**，**兩邊差兩年**。採 MB 的三個理由：(a) MB 那筆有國別、狀態與 catno，Apple 只有日期（裁定 77／91）；(b) catno **HLP 001** 是該廠牌的第一號，與 1978 年開廠相容；(c) **MB 的藝人實體 life-span 起年就是 1978**——若採 Apple 的 1976，這張碟會早於樂團成立兩年。**行文不得斷言發行年月**；要寫年份只寫 1978，不得引用 1976。",
+  "notes": "**探測層 ready 覆核通過**：pe 1093449379，12 軌全有 previewUrl，曲名／曲序與 MB 1978 PE 原盤逐位置相符（MB 未填長度，長度那一層做不到），`trackCount` 欄與攤開的曲目列都是 12、無裁定 175 的落差。**探測層記的 appleYear 是 1976，與卡片的 1978 不同，這不是配錯碟、是 Apple 自己的日期有問題**（見 yearVerified）。\\n**releaseType 覆核**：MB `primary-type=Album`、`secondary-types` **空**，卡單 `releaseType: \"Album\"` **正確**。同藝人名下另有兩筆帶 Compilation 的整編輯（2005《El Faraon de la Chicha Vol.1》、2007《Recuerdos Inolvidables Vol.2》）與一筆 **primary-type 為空**的《Éxitos de Papá Chacalón》，配對時都不要撞進去。\\n**身分回問（裁定 179）**：MB 藝人實體 326162e7 的 type=Group、country=PE、**disambiguation 空**、**life-span 1978–1994**——**本批 45 張裡唯一一個 MB 已標終止年的藝人**。**MB 沒有任何欄位記載 Chacalón 本人的姓名或生卒**，行文若要提到他個人，需另找來源。\\n**⚠ 自我同名（裁定 162 的最強形狀）**：掛名與盤名字串完全相同，**任何方向的子字串比對都會命中**；MB 的 RG 標題大小寫（Chacalón Y La Nueva Crema）又與 artist-credit（小寫 y／la）不同。卡單採 credit 的寫法，**覆核無誤**。\\n**擋下策展層一處（預防性）**：1978 年 MB 上名下有**兩筆** Album（本張與《Exitos ...Exitos ...Exitos》），**兩筆的先後在 MB 上分不出來**（都只有年份、沒有月日）。**行文不得寫「首張」「出道作」「第一張」**——即使 catno 是 HLP 001，那是廠牌編號不是樂團的發行序。"
+ }
+]
