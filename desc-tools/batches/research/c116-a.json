@@ -342,5 +342,417 @@
   "status": "partial",
   "yearVerified": "一致，1986。MB release-group first-release-date **1986**（只到年），其下唯一的 JP release 亦記 1986；**日文維基更精確，寫「1986 年 3 月由 CAPTAIN RECORDS 發行 2nd 專輯」**。兩處同為 1986，月份只有日文維基一處給到 3 月。⚠ **策展層寫「距《No Side》三年」——依日文維基的 1983 年 11 月到 1986 年 3 月，實際是兩年四個月**，行文不要寫「三年」。同名先行單曲：無。",
   "notes": "**擋下策展層一處數字**：「距《No Side》三年」——1983-11 到 1986-03 是兩年四個月（日文維基兩個日期都有）。\\n**「第二張也是最後一張錄音室專輯」查證屬實、可以寫**：MB 藝人頁 5 個 release-group 裡只有這兩張不是現場整編輯，且日文維基記樂團 1986 年 7 月左右解散、成員另組 VIRGIN ROCKS，之後沒有新的錄音室盤。⚠ 但**「其餘三筆全是後世的 Live 整編輯」要註記一件事**：2010 年的《Live 1985-1986》與《Live1985-1986》**在 MB 上是兩筆幾乎同名的 release-group，疑為重複建檔**，數目錄時不要當成兩張不同的碟。\\n**Apple：兩店、兩個端點都查無。** `apple-candidates.md` 掛在本張底下的候選 1475643012（jp，《No Side》1985，11 軌）**經逐筆攤開曲目比對，是《No Side》不是本張**，不可採；那一筆已改記到同批《No Side》卡的 notes。\\n**素材偏少**：只有一筆 release、MB 未再發、Apple 查無、英文維基條目短，可用的具體事實集中在六軌的長度分布與日文維基的成員／廠牌沿革，status 誠實填 partial。"
+ },
+ {
+  "key": "desc2:Confuse|Indignation",
+  "artist": "Confuse",
+  "album": "Indignation",
+  "facts": [
+   {
+    "f": "release-group 9542baa9 的欄位：title「Indignation」、artist-credit「Confuse」（藝人實體 7349f02d，Group／Japan、life-span begin **1983**、disambiguation「Japanese punk」）、first-release-date **1984**（只到年）、primary-type Album、secondary-types **空**。轄下 3 個 release，全部 JP、全部 Official：**1984 的卡帶（Violent Party Records，catno 欄填 [none]，13 軌）**、1997 的 CD（Anarchy Centre「Chaotic CD:008」＋Confuse Records，13 軌）、1997 的 12 吋黑膠（Anarchy Centre 與 Confuse Records 皆 CHAOTIC:LP-008，13 軌）。**原盤是卡帶不是黑膠；黑膠版是 1997 年才有的。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/9542baa9-9056-4802-abf1-790c11b16eaf?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1984 年 Violent Party 卡帶（02d640d2）的曲目（**13 軌，MB 未填任何長度**）：1〈絶対的軍備力老人〉2〈Confuse〉3〈Why Do They Use the Violent Power?〉4〈War of Pastime〉5〈Hate War No Fuckin’ War〉6〈Kill the ...〉7〈Merciless Game〉8〈Indignation〉9〈Nuclear Poisoning〉10〈Death to a God〉11〈Rebel and War〉12〈No Victor〉13〈The End〉。**十三軌裡第 2 軌以團名為題、第 8 軌是標題曲；曲名以英文為主，只有開場〈絶対的軍備力老人〉是漢字題。第 6 軌〈Kill the ...〉在 MB 上就是這樣建檔的，後面真的只有刪節號。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9542baa9-9056-4802-abf1-790c11b16eaf&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Confuse 名下 9 個 release-group：primary-type=Album 4 筆、EP 5 筆。**4 筆 Album 裡只有本張的 secondary-types 是空的**，其餘三筆《Old Master》1989、《Confuse》1995、《Old God Meet New God》（無日期）**全部帶 secondary-type Compilation**。也就是說，這位藝人名下 **primary-type=Album 且非整編輯的碟只有《Indignation》一張**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7349f02d-3be4-435b-af69-55742979ca67&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179／212／224）：實體 7349f02d 的 name「Confuse」、type **Group**、area **Japan**、life-span begin **1983**、disambiguation **「Japanese punk」**，無別名。**Apple 端的同名污染極重**：jp／us 兩店的 `entity=musicArtist` 各回 17–20 個 artistId（Confuse／CONFUSE 各數個、Mr. Confuse、Dona Confuse、Confuse the Cat、Confuse a Cat、Idee Confuse、Never Confuse Loneliness With Isolation、CONFUSE-RAY、fleur confuse 等），逐一 lookup 藝人目錄後確認**沒有一個是本團**——其中兩個 CONFUSE 名下全是泰語單曲、一個 Confuse 名下全是葡語單曲、一個是法語、Mr. Confuse 是德國 funk 製作人。",
+    "src": "https://musicbrainz.org/ws/2/artist/7349f02d-3be4-435b-af69-55742979ca67?fmt=json&inc=aliases+artist-rels"
+   },
+   {
+    "f": "Apple Music 兩店查無：`search?term=Confuse Indignation&country=us` 回 0 筆；藝人目錄端點逐一 lookup 上述同名 artistId 亦無本團任何一張碟。**兩個端點都跑過（裁定 173）。** 日文與英文維基皆無本團條目（`ja.wikipedia.org/wiki/Confuse`、`en.wikipedia.org/wiki/Confuse (band)` 皆 404）。",
+    "src": "https://itunes.apple.com/search?term=Confuse%20Indignation&country=us&media=music&entity=album&limit=10"
+   }
+  ],
+  "hookCandidates": [
+   "十三首歌，第二首就叫〈Confuse〉、第八首才是標題曲；第六首的曲名在資料庫裡至今只寫成〈Kill the ...〉",
+   "一九八四年的原盤是一捲卡帶、連編號都沒有；要等十三年後才壓成黑膠"
+  ],
+  "sound": "MB 記三筆 release、**全部 13 軌、同曲同序**，但**沒有任何一筆填了曲目長度**，因此無法談逐軌長度或總長。可談的是形態與曲序：1984 年的原盤是 Violent Party Records 的卡帶、catno 欄填 [none]（連編號都沒有），要到 1997 年才由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成 CD 與 12 吋黑膠（兩者的編號都是 CHAOTIC:LP-008／Chaotic CD:008）。十三軌的曲名以英文為主，只有開場〈絶対的軍備力老人〉一首漢字題；第 2 軌以團名〈Confuse〉為題、第 8 軌是標題曲〈Indignation〉、收尾第 13 軌題〈The End〉。第 6 軌在 MB 上建成〈Kill the ...〉，曲名後面就是刪節號。",
+  "keyTracks": [
+   "絶対的軍備力老人",
+   "Confuse",
+   "Indignation"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1984，**但只有 MB 一個來源**。MB release-group first-release-date **1984**（只到年、無月日），其下 1984 年那筆 Violent Party 卡帶亦記 1984；兩筆 1997 年的再發（CD 與黑膠）分別記 1997。**本團在日文與英文維基都沒有條目、Apple 兩店查無**，因此**沒有第二來源可對照，MB 也沒給到月份**。⚠ 另外要注意：MB 藝人實體的 life-span begin 是 1983，比本張早一年，這是樂團起始年、不是碟的年份。同名先行單曲：無。",
+  "notes": "**擋下策展層一處數字**：`curatorWhy` 寫「Confuse 名下只有兩筆 primary-type=Album 的原盤與三筆後世整編輯」——**MB 上 primary-type=Album 共 4 筆，其中三筆帶 secondary-type Compilation，非整編輯的只有本張一筆**（不是兩筆）。**行文若要寫「名下唯一一張非整編輯的專輯」是可以的**，但不要寫「兩筆原盤」。\\n**形態要寫清楚**：1984 年的原盤是**卡帶**（Violent Party Records，catno [none]），**不是黑膠**。行文不得寫成「1984 年的 LP」。\\n**掛名覆核（裁定 179／212／224）**：MB 實體 7349f02d 為 Group／Japan／begin 1983／disambiguation「Japanese punk」；**Apple 端 17–20 個同名 artistId 逐一 lookup 藝人目錄後全部排除**（泰語、葡語、法語、德國 funk 各有一組 CONFUSE／Confuse）。**score 一概沒看，只看 area＋type＋disambiguation。**\\n**素材確實少**：MB 沒填任何曲目長度、無維基條目、無 Apple 條目、廠牌與編號之外沒有第二來源。**可寫的只有形態（卡帶原盤／1997 黑膠再發）、13 軌的曲名與曲序、廠牌與編號、以及同批 Gai《1981-1985》共用 Violent Party Records 這一條關聯。** status 誠實填 thin。"
+ },
+ {
+  "key": "desc2:Gai|1981-1985",
+  "artist": "Gai",
+  "album": "1981-1985",
+  "facts": [
+   {
+    "f": "release-group 322bdced 的欄位：title「1981-1985」、artist-credit「Gai」（藝人實體 b9298324，Group／Japan、disambiguation「Japanese punk band」）、first-release-date **1985**（只到年）、primary-type Album、**secondary-types 是 [\"Compilation\"]**。**轄下只有 1 個 release**：JP 1985 的**卡帶**（Violent Party Records，catno 欄只有一個連字號，**18 軌**，Official）。**這張碟在 MB 上既是整編輯、又是卡帶、又沒有任何再發。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的卡帶 release（2cf570f7）的曲目（**18 軌，MB 未填任何長度**）：1〈戦争を知らない子どもたち〉2〈地獄に堕ちた天使の金玉〉**3〈曲目不明〉**4〈Brake〉**5〈曲目不明〉6〈曲目不明〉**7〈Future〉8〈Tow Mohikans〉9〈Freedom〉10〈Belife〉11〈Rock N Roll History Fuck Off!!〉**12〈曲目不明〉**13〈How Long Do You Love Me?〉14〈Damination〉15〈Open The Window〉16〈I’m Punk〉17〈Five Star〉18〈Yes!! Future〉。**十八軌裡有四軌的曲名在 MB 上直接建成「曲目不明」（第 3、5、6、12 軌）。**第 10 軌〈Belife〉與第 15 軌〈Open The Window〉與同批 The Swankys《The Very Best Of Hero》的曲名重複。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=322bdced-afe2-4f0f-aa04-3f16d08fba40&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Gai 名下 5 個 release-group：primary-type=Album 4 筆、EP 1 筆。Album 依 first-release-date 排序為 **《1981-1985》1985（唯一帶 secondary-type Compilation 的一筆）**、《Damaging Noise》1996、《Damnation》1997、《Total Control》1997。**1980 年代只有本張一筆，其餘三筆都是 1990 年代後半。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b9298324-d193-4921-9265-9847e18faf4c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "MB 藝人端點回問（裁定 179／212／224）：實體 b9298324 的 name「Gai」、type **Group**、area **Japan**、disambiguation **「Japanese punk band」**、無別名、無 artist-rels。**Apple 端污染最重的掛名之一**：jp／us 兩店的 `entity=musicArtist` 回到 6 個以上叫 GAI／Gai 的 artistId，其中 **1522410451「GAI」在 jp 店名下 84 筆、us 店 83 筆，全部是中文饒舌**（〈中国梦·我的梦〉〈乾坤暴躁〉〈重庆得行〉等）；另有 1742135638「GAI 荄」10 筆、1470922423「Gai」1 筆（Sunflower - EP）、1565475151、1583252022、6769454740 各 1–2 筆。**逐一 lookup 藝人目錄後確認沒有一個是本團。**",
+    "src": "https://musicbrainz.org/ws/2/artist/b9298324-d193-4921-9265-9847e18faf4c?fmt=json&inc=aliases+artist-rels"
+   },
+   {
+    "f": "Apple Music 兩店查無本張。`apple-candidates.md` 掛在本張底下的五個候選（1443151820《Soil Festivities (Remastered)》、1443186594《Invisible Connections (Remastered)》、1443175946《Mask (Remastered)》、1442348183《The Mask》、1445663259《Soil Festivities》，全部 gb 店、依據只有「年份」）**全部是 Vangelis 的碟**——`entity=musicArtist` 查 Gai 時 Vangelis（artistId 78328）就被配進同名清單裡，那五筆是從他的目錄漏出來的。**逐筆比對後全部不採信。**",
+    "src": "https://itunes.apple.com/search?term=Gai&country=gb&media=music&entity=musicArtist&limit=20"
+   }
+  ],
+  "hookCandidates": [
+   "十八軌裡有四軌的曲名到現在還是空的，資料庫裡就寫著「曲目不明」",
+   "這張是把一九八一到八五年的錄音收成一捲卡帶，不是一張進錄音室做出來的專輯"
+  ],
+  "sound": "MB 只記一筆 release：1985 年 Violent Party Records 的**卡帶**，18 軌，**沒有填任何曲目長度**，也沒有任何再發版可對照。可談的是曲目本身：十八軌裡有四軌（第 3、5、6、12）的曲名在 MB 上就建成「曲目不明」；其餘十四軌以英文題為主，只有開場兩首是日文題〈戦争を知らない子どもたち〉〈地獄に堕ちた天使の金玉〉，收尾〈Yes!! Future〉與第 7 軌〈Future〉同源。第 10 軌〈Belife〉與第 15 軌〈Open The Window〉這兩個曲名，同時出現在同批 The Swankys《The Very Best Of Hero》(1985, Dogma DOG-10) 的曲目列裡。這張碟的 release-group 帶 secondary-type Compilation，收的是 1981 至 1985 年的錄音，不是一次進錄音室的成果。",
+  "keyTracks": [
+   "戦争を知らない子どもたち",
+   "Rock N Roll History Fuck Off!!",
+   "Yes!! Future"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1985，**但只有 MB 一個來源、且盤名本身就是年份區間**。MB release-group first-release-date **1985**（只到年），其下唯一的卡帶 release 亦記 1985。**本團在日文與英文維基都沒有條目、Apple 兩店查無**，沒有第二來源。⚠ **盤名《1981-1985》是收錄範圍不是發行年**——行文必須把「1985 年發行」與「收 1981–1985 年的錄音」分開講，不得寫成「1981 年的專輯」或「1985 年錄的專輯」。同名先行單曲：無。",
+  "notes": "**擋下策展層一處**：`curatorWhy` 寫「Gai 名下唯一一張 1980 年代出版的 LP」——**MB 上這筆的唯一實體是卡帶，不是 LP**（Violent Party Records，Cassette，18 軌）。**行文不得寫成 LP／黑膠。**「1980 年代唯一一筆」在 MB 目錄上屬實（其餘三筆是 1996／1997／1997）。\\n**這是本批四張帶 Compilation 標記的碟之一（裁定 167／策展層第 2 條）**：primary-type Album ＋ secondary-types [\"Compilation\"]，照一般 Album 寫、例外欄位留空。**但行文要分清「原盤年」與「收錄範圍」**：1985 年發行的卡帶，收的是 1981–1985 年的錄音。**不得寫成錄音室專輯。**\\n**掛名覆核（裁定 179／212／224）**：MB 實體 b9298324 為 Group／Japan／「Japanese punk band」。**Apple 端擋下的量是本批最大的一筆**：1522410451「GAI」在 jp／us 兩店名下 84／83 筆全是中文饒舌，另有 GAI 荄、Gai、GAI 等五個 artistId，**逐一 lookup 全部排除**。\\n**`apple-candidates.md` 的五個候選全部是 Vangelis 的碟**（Soil Festivities／Invisible Connections／Mask／The Mask），因為查 `Gai` 的藝人清單裡混進了 Vangelis（78328）。**已逐筆攤開比對、全部不採信。**\\n**素材確實少**：MB 沒填長度、四軌曲名不明、無維基、無 Apple、只有一筆卡帶 release。status 誠實填 thin。"
+ },
+ {
+  "key": "desc2:The Swankys|The Very Best Of Hero",
+  "artist": "The Swankys",
+  "album": "The Very Best Of Hero",
+  "facts": [
+   {
+    "f": "release-group 5a7d13e1 的欄位：title「The Very Best Of Hero」、artist-credit「The Swankys」（藝人實體 d926690c，Group／Japan、disambiguation 空）、first-release-date **1985**（只到年）、primary-type Album、**secondary-types 空——MB 沒有把它標成 Compilation**。轄下 2 個 release：JP 1985 的黑膠（**Dogma Records，catno DOG-10**，14 軌，Official）、US 2024-09-20 的 12 吋黑膠（**General Speech，GS-28；Kings World Records，KWLP-6000**，14 軌，status null）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5a7d13e1-4334-4f8e-8f4d-44b5053d18d8?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1985 年 Dogma 黑膠（1656934f）的逐軌曲目與長度：1〈Open The Window〉1:55、2〈Fundamental〉1:47、3〈Knife Will Not Open Because Of The Rust〉2:29、4〈Life Style〉2:28、5〈She Will Not Live〉2:24、6〈Total Control〉2:13、7〈I Don’t Know I Don’t Care〉3:15、8〈Blood Spit Night〉2:24、9〈Finally She Run Out Of Patience〉1:46、10〈Freedom〉2:10、11〈This Is Dokata Song〉2:39、12〈Damaging Noise〉1:42、13〈Belife〉1:37、**14〈Untitled〉0:41**。**十四軌總長約二十九分鐘，最後一軌只有四十一秒、而且沒有標題。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5a7d13e1-4334-4f8e-8f4d-44b5053d18d8&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp 與 us 兩店共用** collectionId 1881488075：collectionName「THE VERY BEST OF HERO」、artistName「THE SWANKY’S」、releaseDate **1985-09-20**、℗ THE SWANKY’S（無年份）、**trackCount 13**。`entity=song` **攤得出 13 軌、13 軌全部有 previewUrl**，曲名與曲序與 MB 前 13 軌逐位置相符、逐軌長度全部在 2 秒內（1:57／1:48／2:30／2:29／2:25／2:14／3:16／2:26／1:51／2:11／2:40／1:45／1:43）。**Apple 這一筆止於第 13 軌〈Belife〉，MB 那第 14 軌 0:41 的〈Untitled〉不在裡面——軌數 13 對 14，是裁定 175 的落差。**",
+    "src": "https://itunes.apple.com/lookup?id=1881488075&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 1880513820「THE SWANKY’S」，jp 與 us 兩店，entity=album）**各只回 2 筆**：1881488075「THE VERY BEST OF HERO」(1985-09-20, 13 軌) 與 1884209009「NEVER CAN EAT SWANK DINNER」(1987-03-21, 10 軌)。**掛名在 Apple 上寫作 THE SWANKY’S（帶撇號）**，與 MB 的 The Swankys 不同字；同名清單裡另有 641906469「The Wankys」（另一支團）與 206811036「SWANKY SWIPE」（日本 hip-hop），皆非本團。",
+    "src": "https://itunes.apple.com/lookup?id=1880513820&country=us&entity=album&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 The Swankys 名下 9 個 release-group：primary-type=Album 5 筆、EP 1 筆。Album 依 first-release-date 排序為 **《The Very Best Of Hero》1985**、《Never Can Eat Swank Dinner》1987、《Tokyo》1990、《Period The Noise Tour 1985 Lives》1997、《Control Demo》2004-11。**五筆的 secondary-types 全部是空的，本張排最前。** MB 藝人端點回問（裁定 179）：實體 d926690c 為 Group／Japan、無 disambiguation、無別名；同名清單裡另有一個 9bd53ed3「Swankys」是 Person，已排除。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d926690c-5e10-4195-8658-3bc9ecfd734d&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名寫著 The Very Best Of，其實是這支團的第一張唱片；最後一軌四十一秒、連名字都沒有",
+   "串流上的版本只有十三軌——那首沒名字的收尾曲，數位版直接沒收"
+  ],
+  "sound": "MB 記兩筆 release（1985 年 Dogma 黑膠、2024 年 General Speech／Kings World 的美國黑膠），**都是 14 軌、同曲同序**；Apple 那筆是 13 軌。1985 年版的逐軌長度自〈Open The Window〉1:55 起，十三首正歌落在 1:37 至 3:15 之間——最長〈I Don’t Know I Don’t Care〉3:15、最短〈Belife〉1:37——**收尾第 14 軌〈Untitled〉只有 0:41、沒有標題**，總長約二十九分鐘。曲名全部是英文，其中〈This Is Dokata Song〉把一個日文詞（土方）直接拼成羅馬字塞進英文句子裡。第 1 軌〈Open The Window〉與第 13 軌〈Belife〉這兩個曲名，也出現在同批 Gai《1981-1985》(1985, Violent Party Records) 的曲目列裡。",
+  "keyTracks": [
+   "Open The Window",
+   "I Don’t Know I Don’t Care",
+   "This Is Dokata Song"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1985。MB release-group first-release-date **1985**（只到年），其下 JP 首版 Dogma DOG-10 亦記 1985；**Apple 1881488075 的 releaseDate 是 1985-09-20**——**這是本批少數 Apple 日期與 MB 年份對得上、還多給了月日的例子**，但 ℗ 欄只寫「THE SWANKY’S」沒有年份，且 Apple 日期在這條線上屢屢是佔位值（同批 The Comes 就把 1983 年的碟標成 1985-01-01），**行文只寫 1985、不要寫 9 月 20 日**。本團在日文與英文維基都沒有條目，沒有第三個來源。同名先行單曲：無。",
+  "notes": "**盤名會騙人，要在 notes 裡先講清楚**：《The Very Best Of Hero》聽起來像精選輯，**但 MB 的 secondary-types 是空的（沒有 Compilation 標記），而且它是這支團 MB 目錄上最早的一張**（其後才是 1987《Never Can Eat Swank Dinner》、1990《Tokyo》）。Apple 藝人目錄也只有這兩張、順序相同。**行文可以點出「名字像精選、位置卻在最前面」，但不要斷言它是不是精選輯**——沒有來源能證明它收的是舊錄音。\\n**Apple 覆核（探測層標 ready）**：`jp`（us 亦同）**1881488075**，**13 軌全部有 previewUrl**，曲名／曲序與 MB 前 13 軌逐位置相符、逐軌長度差在 2 秒內。⚠ **`trackCount` 欄與曲目列都是 13，MB 是 14——Apple 版少了 MB 那第 14 軌 0:41 的〈Untitled〉**，這是裁定 175 的落差，下游引軌數要註明版本。\\n**掛名兩種寫法**：MB 作 `The Swankys`、**Apple 兩店作 `THE SWANKY’S`（全大寫＋撇號）**。卡單用 MB 的寫法，**行文照卡單**；下游做字串比對會對不上（裁定 194 的形狀）。MB 同名清單裡另有 9bd53ed3「Swankys」(Person) 已排除。\\n**2024 年的美國版**：MB 記 General Speech GS-28 與 Kings World Records KWLP-6000 兩個編號、國別 US、status null（不是 Official）。**行文寫「2024 年在美國重發」可以，不要寫成官方授權版**。\\n**素材中等**：有曲目長度、有 Apple 可比對、有兩筆 release 的廠牌編號，但**無維基條目**、無成員與沿革來源，status 填 partial。"
+ },
+ {
+  "key": "desc4:あぶらだこ|あぶらだこ",
+  "artist": "あぶらだこ",
+  "album": "あぶらだこ",
+  "facts": [
+   {
+    "f": "release-group 5b52575e 的欄位：title「あぶらだこ」、artist-credit「あぶらだこ」（藝人實體 b0262450，Group／Japan、life-span begin **1983**）、first-release-date **1984-09**、primary-type Album、secondary-types 空、**disambiguation「ADK12インチ盤」**。**轄下只有 1 個 release**：JP 1984-09 的 12 吋黑膠（**ADK Records，catno ADK-17A**，**6 軌**，Official）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 release（cfb7cb0c）的逐軌曲目與長度：1〈WHITE WOLF〉3:08、2〈LOGOS〉2:20、3〈煉瓦造りの丘〉2:21、4〈童愚〉2:44、5〈鏡の風景〉2:34、6〈OUT OF THE BODY〉4:06。**只有六軌、總長約十七分鐘；頭尾兩軌是大寫英文題（3:08 與 4:06，全碟最長的兩首），中間三軌是漢字題。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5b52575e-131a-369a-ac7e-25cad0dbe819&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 あぶらだこ 名下 13 個 release-group、primary-type=Album 10 筆，其中 **9 筆的題名都是《あぶらだこ》**，靠 disambiguation 分辨：**1984-09「ADK12インチ盤」（本張，5b52575e）**、1985-08「木盤」(1957121d)、1986-12「青盤」(884bd589)、1989-04-10「亀盤」(1487b682)、1996-01-01「釣り盤」(f5c8e272)、1999-12-01「OK盤」(6a2e9ec2)、2000-10-25「月盤」(60dbbcc5)、2004-05-04「穴盤」(6e7837a3)、2008-06-06（無 disambiguation，6438e6c6）；第 10 筆是 2008-06-06 的《ADK Years 1983-1985》(Compilation)。**MB 明確把 1984-09 這一張叫「ADK12インチ盤」，把 1985-08 那一張才叫「木盤」。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=b0262450-a2c3-4519-a6e0-07fa2b7b7144&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "日文維基〈あぶらだこ〉：1983 年結成的日本搖滾樂團；**「オリジナルアルバムのタイトルはすべて『あぶらだこ』であり、それぞれジャケットのアートワークに即した通称がある」**。條目的「インディーズ」欄列出兩筆：**1983 年 7 月 31 日 ADK-05S，通稱『ADKソノシート』**（曲目：ラニングハイ／忍耐／エルサレムの屈辱／絶句／無／原爆）；**1984 年 9 月 10 日 ADK-17，通稱『ADK12インチ』**（曲目：WHITE WOLF／LOGOS／煉瓦造りの丘／童愚／鏡の風景／OUT OF THE BODY）。**同條目另記吉田達也是通稱『木盤』的錄音與當時現場的支援成員。** 團名由來是結成時長谷川打工的遊樂場店長「一生氣就油光滿面像章魚」。前團員 丸井義則（マル）1984 年加入 Lip Cream、1985 年 2 月退出後加入 LAUGHIN’ NOSE。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%B6%E3%82%89%E3%81%A0%E3%81%93"
+   },
+   {
+    "f": "英文維基〈Aburadako〉：條目開宗明義寫 none of Aburadako’s albums have titles and are only distinguished by their packages。其專輯欄逐筆對照通稱與形態：**Aburadako (8/1983) — 首作是 7 吋 sonosheet，稱「ADK Sono-sheet」**；**Aburadako (9/1984) — 12 吋 LP，稱「ADK 12 inch」**；Aburadako (8/1985) — 封面是夕陽下的樹，稱「Ki-ban（木盤）」，TOKUMA JAPAN TKCA-70827；Aburadako (12/1986) — 深藍色封面，稱「Ao-ban（青盤）」TKCA-70828；Aburadako (4/1989) — 烏龜照片，稱「Kame-ban（亀盤）」TKCA-70829。",
+    "src": "https://en.wikipedia.org/wiki/Aburadako"
+   },
+   {
+    "f": "Apple Music 覆核：jp 店 `search` 回到四筆同名條目 **1007931802「あぶらだこ (木盤)」(2015-06-17, 10 軌)**、1008014768「あぶらだこ (青盤)」(2015-06-17, 12 軌)、1008040752「あぶらだこ (亀盤)」(2015-06-17, 9 軌)、1165387950「あぶらだこ」(2000-10-25, 10 軌)；us 店藝人 153615413 名下 5 筆（含 1018771131「Aburadako Kiban」10 軌、1018775447「Aburadako Aoban」12 軌、1018776222「Abuadako Kameban」9 軌）。**逐筆用 `lookup?entity=song` 攤開：1007931802「木盤」的 10 軌是 FARCE／S 60／ROW HIDE／象の背／生きた午後／ダーウィンの卵／ティラノの非苦知／BUY／PARANOIA／翌日，與本張 MB 那 6 軌（WHITE WOLF…OUT OF THE BODY）完全不同。**",
+    "src": "https://itunes.apple.com/lookup?id=1007931802&country=jp&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "這支團九張正規盤全部叫同一個名字，樂迷只能用封面的顏色分——木盤、青盤、亀盤、釣り盤、月盤、穴盤",
+   "一九八四年九月這一張是他們第一張十二吋，六首歌十七分鐘，頭尾兩首大寫英文題、中間三首漢字"
+  ],
+  "sound": "MB 只記一筆 release：1984 年 9 月 ADK Records 的 12 吋黑膠（ADK-17A），**6 軌、總長約十七分鐘**，沒有再發版可對照。逐軌長度：〈WHITE WOLF〉3:08、〈LOGOS〉2:20、〈煉瓦造りの丘〉2:21、〈童愚〉2:44、〈鏡の風景〉2:34、〈OUT OF THE BODY〉4:06——**頭尾兩軌是全碟最長的兩首，也是僅有的兩個大寫英文題，中間三軌全是漢字題**，形制對稱得很整齊。日文維基把這支團的寫法記成：以長谷川的怪異唱腔與近似現代詩的難解歌詞為核心，合奏跟著歌詞的自由詩節奏走，塞進大量變拍與複節奏、在很短的時間裡做出急促的段落轉換；並記 ADK 時代的第一張專輯就已顯出獨特的幽默感與構築性。",
+  "keyTracks": [
+   "WHITE WOLF",
+   "煉瓦造りの丘",
+   "OUT OF THE BODY"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。MB release-group first-release-date **1984-09**、其下唯一的 ADK Records 黑膠亦記 1984-09；**日文維基給到日：1984 年 9 月 10 日、編號 ADK-17**（MB 記 ADK-17A，多一個 A）；**英文維基記 9/1984**。三處同為 1984 年 9 月。⚠ **但這一位有九張同名專輯，年份只能靠 disambiguation 綁定**：MB 的「ADK12インチ盤」＝1984-09、「木盤」＝1985-08，兩者差近一年。**行文一定要用年份＋廠牌（1984 年、ADK Records ADK-17A）來指認是哪一張，不能只寫盤名。**",
+  "notes": "⚠ **擋下策展層一處事實錯誤——本張不是「木盤」。** `curatorWhy` 寫「本張即通稱的木盤」，並引 Apple jp collectionId **1007931802《あぶらだこ (木盤)》** 當來源。**三處來源一致否定這個對應**：(1) MB 把 5b52575e（1984-09）的 disambiguation 寫成 **「ADK12インチ盤」**，把 1957121d（1985-08）才寫成 **「木盤」**；(2) 日文維基的インディーズ欄把 1984 年 9 月 10 日 ADK-17 記成 **通稱『ADK12インチ』**，並在別處把『木盤』說成吉田達也支援錄音的那一張；(3) 英文維基把 8/1985 那張記成 Ki-ban、9/1984 那張記成 ADK 12 inch。**(4) 決定性的一條**：`lookup?id=1007931802&entity=song` 攤開的 10 軌（FARCE／S 60／ROW HIDE／象の背／生きた午後／ダーウィンの卵／ティラノの非苦知／BUY／PARANOIA／翌日）與本張 MB 的 6 軌完全不同。→ **行文不得把本張叫「木盤」**；要指認就寫「1984 年 ADK Records 的十二吋（MB 記為 ADK12インチ盤）」。同樣要更正的還有 `rulings.md` 第 7 條那句「本批取最早的 1984-09（木盤）一張」。\\n**Apple 覆核結果：本張在 Apple 上沒有對應條目。** 四筆同名 jp 條目（木盤 10 軌／青盤 12 軌／亀盤 9 軌／2000 年那張 10 軌）與 us 的五筆逐一比對，**沒有一筆是 6 軌**。**探測層若把 1007931802 當本張的試聽來源，那是釘錯碟，請主線撤下。**（不改 `previews.json`。）\\n**「第一張 LP」要修正措辭**：MB 目錄上 1984-09 是最早的一筆，**但日文與英文維基都記 1983 年 7-8 月另有一張 7 吋 sonosheet（ADK-05S，通稱 ADK ソノシート）在前**，MB 沒有建那一筆。**行文可寫「第一張十二吋」，不要寫「第一張唱片」。**\\n**不得寫入**：英文維基提到 Rolling Stone Japan 把 1985 年那張排進「100 Greatest Japanese Rock Albums」第 55 名——那既是媒體排行（規則禁止），指的**也不是本張**。\\n**裁定 214 的行文要求**：後續批要再補這支團，盤名必須帶顏色／通稱後綴。"
+ },
+ {
+  "key": "desc2:Lip Cream|9 Shocks Terror",
+  "artist": "Lip Cream",
+  "album": "9 Shocks Terror",
+  "facts": [
+   {
+    "f": "release-group 4b12f5f8 的欄位：title「9 Shocks Terror」、artist-credit「Lip Cream」（藝人實體 14bef585，Group／Japan、disambiguation「hardcore punk band from Japan, 1983-1990」、life-span 1984–1990）、first-release-date **1987**（只到年）、primary-type Album、secondary-types 空。轄下 3 個 release：JP 1987 的 12 吋黑膠（**Selfish Records，BEL-12013；Dynamite Records，Dondon-005**，9 軌，Official）、XW 1996 的 9 軌（release 題名寫作「9 Shocking Terror」）、US 2025 的 12 吋藍膠（**Dynamite Records DONDON-002；Relapse Records RR7611／RR76111**，9 軌，barcode 781676761111，status null）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/4b12f5f8-eec7-34c6-bbe3-c1d038655260?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1987 年 Selfish／Dynamite 黑膠（841748e3）的逐軌曲目與長度：1〈Terror〉1:48、2〈Breakin〉1:18、3〈Cold Lover〉1:40、4〈Kick Out The Jam〉1:22、5〈Amateur Baby〉1:28、6〈Enough Time〉1:15、7〈9th Nightmare〉1:28、8〈Shock Treatment〉1:30、9〈R.I.P Off〉1:59。**九軌全部落在 1:15 至 1:59 之間，總長不到十四分鐘——沒有任何一首滿兩分鐘。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4b12f5f8-eec7-34c6-bbe3-c1d038655260&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp** 店面 collectionId 1846922930：collectionName「9 Shocks Terror」、artistName「Lip Cream」、releaseDate 1987-01-01、**℗ 2025 Relapse Records Inc.**、trackCount 9。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名／曲序與 MB 逐位置相符、逐軌長度完全相同（1:48／1:18／1:40／1:22／1:28／1:15／1:28／1:30／1:59）；差別只在第 5 軌 Apple 寫作「Amateur Baby (素人娘)」、第 9 軌寫作「R.I.P. Off」（MB 少一個點）。**這是 2025 年 Relapse 那套數位重製的一員，不是 1987 年原盤的數位化。**",
+    "src": "https://itunes.apple.com/lookup?id=1846922930&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 1848182460「Lip Cream」，jp 店，entity=album）回 8 筆，全部是 2025 年 Relapse 那套：1846967059「Lonely Rock - EP」1984、1846967493「Night Rider More Than Fight! - EP」1984、1846945249「Big Foot Cassette」1985、1846872943「Kill Ugly Pop」1986（14 軌）、**1846922930「9 Shocks Terror」1987（9 軌）**、**1846930003「Close to the Edge」1988（18 軌）**、1846939944「罪 - SIN -」1989（12 軌）、1846943983「Thrash Til Death」1995（15 軌）。**這支團的整套目錄都在 Apple 上，是本批 44 張裡覆蓋最完整的一位。**",
+    "src": "https://itunes.apple.com/lookup?id=1848182460&country=jp&entity=album&limit=200"
+   },
+   {
+    "f": "日文維基〈Lip Cream〉：1984 年由退出 THE COMES 的 Naoki（吉他）與 Minoru（貝斯）結成，隨後 あぶらだこ 的 Maru（鼓）加入；同年參加 AA Record 的合輯《Hardcore Unlawful Assembly》，主唱由 Baki（the Execute〜Gastunk）擔任但未掛名。之後迎入 Dead Cops 的貝斯手 JHA JHA 當主唱，**第二張專輯錄音起 Pill（鼓）加入**。樂團 1990 年 9 月 24 日解散、2010 年 6 月 27 日在東京 LIQUIDROOM ebisu 重組演出。條目的專輯欄依序列：Kill Ugly Pop (1986)、**9 Shocking Terror (1987)**、Close To The Edge（危機）(1988)、Lip Cream (1989)、Lip Cream’s Thrash Til’ Death (1995)。**2025 年北美廠牌 Relapse Records 把全部音源以數位重製復刻。**",
+    "src": "https://ja.wikipedia.org/wiki/Lip%20Cream"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Lip Cream 名下 12 個 release-group（Album 8、EP 3）。Album 依 first-release-date 排序為《Kill the IBM》1985（secondary-type **Demo**）、《Kill Ugly Pop》1986、**《9 Shocks Terror》1987**、《Close to the Edge 危機》1988、《Lip Cream》1989、《Shocking Disc Terror》1989（Compilation）、《スラッシュ・ティル・デス》1995-11-25、《Lip Cream’s Thrash Til Death》1996-07-30。**扣掉 Demo 與 Compilation，本張排第二。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=14bef585-e0ed-49e7-903a-b4349f1b08ee&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "九首歌十四分鐘，沒有一首滿兩分鐘——連最長的收尾曲都只有一分五十九秒",
+   "盤名在資料端有兩種寫法：唱片上是 9 Shocks Terror，一九九六年那版與日文條目都寫成 9 Shocking Terror"
+  ],
+  "sound": "MB 記三筆 release、**全部 9 軌、同曲同序**；Apple 那筆的逐軌長度與 MB 完全相同。九軌自〈Terror〉1:48 起、收在〈R.I.P Off〉1:59，**最短〈Enough Time〉1:15、最長 1:59，沒有一首滿兩分鐘，全碟不到十四分鐘**——九首歌的長度差距只有四十四秒，形制平得像一份規格表。曲名全部是英文（Apple 版在第 5 軌〈Amateur Baby〉後面補了漢字「素人娘」）。日文維基把這支團與同期日本 hardcore 分開講：1980 年代日本 hardcore 多半在聲響與造型兩面受 Discharge、Disorder 等英國 hardcore 影響，**Lip Cream 受美國 hardcore、1970 年代 punk 與 hard rock 的影響較大，在當時場景裡是異數**。",
+  "keyTracks": [
+   "Terror",
+   "9th Nightmare",
+   "R.I.P Off"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1987。MB release-group first-release-date **1987**（只到年），其下 JP 首版（Selfish BEL-12013／Dynamite Dondon-005）亦記 1987；**日文維基的專輯欄記 1987 年**；Apple 1846922930 的 releaseDate 是 1987-01-01（月日是佔位值，℗ 卻是 2025 Relapse）。**三處同為 1987，沒有任何一處給到月份，行文不要寫月份。** 同名先行單曲：無——MB 藝人頁 12 個 release-group 裡沒有第二筆同名的東西，但 1989 年有一張 Compilation 叫《Shocking Disc Terror》，**標題近似、別混用**。",
+  "notes": "**Apple 覆核（探測層標 ready）**：`jp` **1846922930**，9 軌全部有 previewUrl，`trackCount` 欄與曲目列都是 9，曲名／曲序／逐軌長度與 MB 的 1987 年原盤**完全相符、無裁定 175 的落差**。⚠ 但 ℗ 欄是 **2025 Relapse Records**：**這是 2025 年那套數位重製，不是 1987 年原盤的數位化**，下游寫「串流上聽得到」可以，不要寫成「原盤上架」。\\n**盤名兩種寫法**：唱片與 MB release-group 作《9 Shocks Terror》，**MB 那筆 1996 年的 XW release 與日文維基的專輯欄都作《9 Shocking Terror》**。行文取卡單／MB 的《9 Shocks Terror》。\\n**「第二張專輯」查證屬實、可以寫**：MB 藝人頁扣掉 1985 年帶 Demo 標記的《Kill the IBM》與 1989 年的 Compilation 後，《Kill Ugly Pop》1986 排第一、本張第二；日文維基專輯欄的順序相同。**池中已有《Kill Ugly Pop》。**\\n**跨卡連結（都有來源）**：Naoki 與 Minoru 來自同批的 The Comes（日文維基兩邊條目都寫）；Maru 來自同批的 あぶらだこ；1984 年 Lip Cream 參加的合輯就是同批 a 組的《Hardcore Unlawful Assembly》（AA Records），該次主唱是未掛名的 Baki。\\n**廠牌**：MB label-info 給的是 **Selfish Records BEL-12013 與 Dynamite Records Dondon-005 雙編號**，兩個都可寫。"
+ },
+ {
+  "key": "desc4:Lip Cream|Close to the Edge 危機",
+  "artist": "Lip Cream",
+  "album": "Close to the Edge 危機",
+  "facts": [
+   {
+    "f": "release-group 79bd7d43 的欄位：title「Close to the Edge 危機」、artist-credit「Lip Cream」（藝人實體 14bef585，Group／Japan／1984–1990）、first-release-date **1988**（只到年）、primary-type Album、secondary-types 空。轄下 3 個 release：**JP 2010-01-25 的 CD（catno ONI-5，18 軌，barcode 4529102050127，release 題名作「CLOSE TO THE EDGE」）**、XW 1988 的 18 軌（Official）、XW 1988 的 18 軌 Pseudo-Release（disambiguation 註明是曲名全部轉寫成英文的版本）。**MB 上這張碟沒有一筆填了 1988 年原盤的廠牌與編號。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/79bd7d43-169d-315e-9ff4-4e970c5f2593?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 2010 年的 CD（224e515f）的曲目（**18 軌，MB 未填長度**）：1〈危機〉2〈賢者は語らず〉3〈八岐之大蛇〉4〈モルフェイス〉5〈この世は地獄〉6〈HEAD GAMES〉7〈事実(FACT)〉8〈RIGHT STUFF〉9〈邪悪〉10〈静寂〉11〈鋭角な未来〉12〈るなてぃっく〉13〈CHANGES〉14〈HONEST〉15〈ここに知識あり〉16〈末世〉17〈DESPAIR AFTER HOPE,HOPE AFTER DESPAIR〉18〈END OF YOU〉。**十八軌裡漢字／假名題與大寫英文題交錯排列，開場〈危機〉就是盤名的漢字部分。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=79bd7d43-169d-315e-9ff4-4e970c5f2593&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "Apple Music **jp** 店面 collectionId 1846930003：collectionName **「Close to the Edge」（沒有漢字副題）**、artistName「Lip Cream」、releaseDate 1988-01-01、**℗ 2025 Relapse Records Inc.**、trackCount 18。`entity=song` **攤得出 18 軌、18 軌全部有 previewUrl**，曲名與曲序與 MB 逐位置相符（第 12 軌 Apple 寫作「るなていっく」、MB 寫作「るなてぃっく」；第 7 軌 Apple 作「事実 Fact」、MB 作「事実(FACT)」）。逐軌長度：2:02／1:57／1:40／1:59／2:02／1:35／1:38／1:25／2:50／1:48／2:12／2:19／1:37／1:30／2:18／1:37／2:05／2:15，**十八軌總長約三十四分鐘，最長〈邪悪〉2:50、最短〈RIGHT STUFF〉1:25**。",
+    "src": "https://itunes.apple.com/lookup?id=1846930003&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 Lip Cream 名下 12 個 release-group（Album 8、EP 3）。Album 依 first-release-date 排序：《Kill the IBM》1985（Demo）、《Kill Ugly Pop》1986、《9 Shocks Terror》1987、**《Close to the Edge 危機》1988**、**《Lip Cream》1989**、《Shocking Disc Terror》1989（Compilation）、《スラッシュ・ティル・デス》1995-11-25、《Lip Cream’s Thrash Til Death》1996-07-30。**本張之後還有一張 1989 年的同名專輯《Lip Cream》，它才是樂團 1990 年解散前最後一張錄音室盤。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=14bef585-e0ed-49e7-903a-b4349f1b08ee&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "日文維基〈Lip Cream〉的專輯欄依序列 Kill Ugly Pop (1986)、9 Shocking Terror (1987)、**Close To The Edge（危機）(1988)**、**Lip Cream (1989)**、Lip Cream’s Thrash Til’ Death (1995)，並註明「上記の 5 タイトルは 2010 年に再発されている」。同條目記樂團 **1990 年 9 月 24 日解散**，2010 年 6 月 27 日重組演出，2025 年由 Relapse Records 把全部音源數位重製復刻。",
+    "src": "https://ja.wikipedia.org/wiki/Lip%20Cream"
+   },
+   {
+    "f": "Apple 藝人目錄端點（artistId 1848182460「Lip Cream」，jp 店）回 8 筆 2025 年 Relapse 復刻，**其中 1846939944「罪 - SIN -」1989（12 軌）就是日文維基所記 1989 年那張同名專輯《Lip Cream》在 Apple 上的題名**——Apple 用了副題而非同名，兩邊對照才看得出是同一張。另有 1846945249「Big Foot Cassette」1985（15 軌），對應 MB 的《Kill the IBM》(1985, Demo)：日文維基寫該卡帶原本沒有正式標題、暫稱 Kill The IBM，**2025 年才以 Big Foot Cassette 之名再發**。",
+    "src": "https://itunes.apple.com/lookup?id=1848182460&country=jp&entity=album&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "十八首歌三十四分鐘，漢字題與大寫英文題一路交錯，開場那首就叫〈危機〉——盤名的另一半",
+   "這張碟在資料端連原盤的廠牌都沒人填過，能查到的最早實體是二〇一〇年的再發 CD"
+  ],
+  "sound": "MB 記三筆 release、**全部 18 軌、同曲同序**；Apple 那筆的逐軌長度自〈危機〉2:02 起，十八軌落在 1:25 至 2:50 之間——最長〈邪悪〉2:50、最短〈RIGHT STUFF〉1:25——**總長約三十四分鐘，比前一年那張九軌十四分鐘的《9 Shocks Terror》整整多出一倍**，單曲長度也普遍拉長。曲序上漢字／假名題與大寫英文題交錯：〈危機〉〈賢者は語らず〉〈八岐之大蛇〉〈モルフェイス〉〈この世は地獄〉之後才進〈HEAD GAMES〉，中段〈事実(FACT)〉〈RIGHT STUFF〉再回到〈邪悪〉〈静寂〉〈鋭角な未来〉〈るなてぃっく〉，末段〈CHANGES〉〈HONEST〉〈ここに知識あり〉〈末世〉〈DESPAIR AFTER HOPE,HOPE AFTER DESPAIR〉〈END OF YOU〉——**十八軌裡英文題七軌、日文題十一軌**。",
+  "keyTracks": [
+   "危機",
+   "邪悪",
+   "END OF YOU"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1988。MB release-group first-release-date **1988**（只到年），其下兩筆 XW release 亦記 1988；**日文維基專輯欄記 Close To The Edge（危機）(1988)**；Apple 1846930003 的 releaseDate 是 1988-01-01（月日是佔位值，℗ 為 2025 Relapse）。**三處同為 1988、都沒給月份。** ⚠ MB 上唯一有廠牌編號的實體是 **2010-01-25 的 CD（ONI-5）**，1988 年原盤的廠牌與編號 MB 沒填——**行文不要寫本張 1988 年的發行廠牌**（卡單的 `label` 欄自己也註明「MB 該 release 未填廠牌」）。同名先行單曲：無。",
+  "notes": "⚠ **擋下策展層一處**：`curatorWhy` 寫本張「是這支樂團解散（1990）前最後一張錄音室作」——**錯**。**MB 藝人頁與日文維基專輯欄都顯示 1988 年之後還有一張 1989 年的同名專輯《Lip Cream》**（MB rgMbid 3bcf8082，`rulings.md` §4.3 自己也把它列進後續批候選；Apple 上題作「罪 - SIN -」1846939944，12 軌）。**行文不得寫「最後一張」。** 正確的說法是「第三張」（MB 排序與日文維基專輯欄一致，扣掉 Demo 與 Compilation）。\\n**Apple 覆核：這是本組唯一一筆「探測層標 unavailable、覆核後確認可用」的補。** `apple-candidates.md` 掛在本張底下的第一個候選 **1846930003（jp，《Close to the Edge》1988，18 軌，依據「盤名＋年份」）經逐筆攤開曲目比對成立**：18 軌與 MB 逐位置相符、**18 軌全部有 previewUrl**、`trackCount` 欄與曲目列都是 18，無裁定 175 的落差。**建議主線補 `jp` 1846930003。**（同一份候選裡的 1846939944《罪 - SIN -》1989 是 1989 年那張同名專輯、1846922930《9 Shocks Terror》1987 是同批另一張卡，**都不是本張**，不要誤採。）**不改 `previews.json`。**\\n**盤名三種寫法**：MB release-group 作《Close to the Edge 危機》（卡單同）、MB 那筆 2010 年 CD 的 release 題名作《CLOSE TO THE EDGE》、**Apple 作《Close to the Edge》（漢字副題被丟掉）**。行文取卡單的雙題寫法。\\n**廠牌不要亂填**：1988 年原盤在 MB 上沒有 label-info，能引的只有 2010 年再發的 ONI-5。"
+ },
+ {
+  "key": "desc4:ザ・スターリン|Fish Inn",
+  "artist": "ザ・スターリン",
+  "album": "Fish Inn",
+  "facts": [
+   {
+    "f": "release-group 38234e5a 的欄位：title「Fish Inn」、artist-credit「ザ・スターリン」（藝人實體 acf084a3，Group／Japan、disambiguation「The Stalin - Japanese punk band」、life-span **1980-06-06 至 1985-05-25**）、first-release-date **1984-11-20**、primary-type Album、secondary-types 空。轄下 3 個 release：JP 1984-11-20 的 12 吋黑膠（**B.Q. Records，catno BQL-1**，6 軌，Official）、JP 1986 的 6 軌（Official）、以及一筆無日期的 6 軌 Pseudo-Release。",
+    "src": "https://musicbrainz.org/ws/2/release-group/38234e5a-4efc-31d9-854a-f74e9e116b04?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1984-11-20 的 B.Q. Records 黑膠（3cee6eab）的逐軌曲目與長度：1〈廃魚〉4:36、2〈M-16 (マイナー・シックスティーン)〉4:46、3〈T-Legs〉6:42、4〈バイ・バイ・”ニーチェ”〉2:42、5〈アクマデ憐レム歌〉6:13、6〈Fish Inn〉10:09。**只有六軌、總長約三十五分鐘；標題曲〈Fish Inn〉10:09 擺在最後，是全碟長度的近三分之一，比最短的〈バイ・バイ・”ニーチェ”〉2:42 長將近四倍。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=38234e5a-4efc-31d9-854a-f74e9e116b04&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "日文維基〈ザ・スターリン〉的年表：**1984 年 11 月 20 日發行專輯《Fish Inn》，條目形容「それまでのパンクロックサウンドとは違い、サイケデリックな路線で制作された」**（與此前的 punk rock 聲響不同、以迷幻路線製作）。同年 7 月 1 日 遠藤 的個人單曲〈仰げば尊し〉先由**自主廠牌 B.Q.レコード**發行；12 月 29–31 日新宿 LOFT 的演出最後一天，遠藤 在 MC 說了「スターリンはこれで終わりだ」；**1985 年 1 月 15 日樂團解散**、2 月 21 日在調布大映攝影所辦最後一場演出。1986 年 12 月 21 日另發行由 **ビル・ラズウェル（Bill Laswell）製作的 remix 版《Fish Inn (リミックス盤)》**。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 ザ・スターリン 名下 31 個 release-group、Album 25 筆。1980 年代的原盤依 first-release-date 排序為《trash》1981-12-24、《STOP JAP》1982、《虫》1983-04-25、**《Fish Inn》1984-11-20**、《For Never (live)》1985（secondary-type **Live**）。**Fish Inn 之後、樂團 1985 年解散之前，MB 上沒有第二張錄音室盤；再往後的《Best Sellection》(1986-10-25)、《BESTESTS!》(1987-07-25) 都帶 Compilation 標記。** 另有 2015-06-17 的《Fish Inn (re-mix)》(bd15cc00) 自成一個 release-group，與本張分開。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=acf084a3-c550-45fa-8272-869e1fecbdad&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈The Stalin〉：1980 年 6 月由主唱 遠藤ミチロウ（Michiro Endo）主導結成，數度換血後於 **1985 年 2 月解散**；1987 年 5 月 遠藤 另組 Video Stalin（以影像為主、1988 年解散），1989 年再組名為 Stalin 的樂團活動到 1993 年。",
+    "src": "https://en.wikipedia.org/wiki/The%20Stalin"
+   },
+   {
+    "f": "Apple Music 覆核：`entity=musicArtist` 在 us 店回到 artistId **219986771「THE STALIN」**，藝人目錄 lookup 回 6 筆，其中 **998224972「Fish Inn」releaseDate 2003-12-23、℗ 2015 TOKUMA JAPAN COMMUNICATIONS、trackCount 6**。⚠ **但 `lookup?id=998224972&country=us&entity=song` 只回得到 collection 這一列、攤不出任何一軌（songs 0、previewUrl 0）；同一個 id 在 jp 店連 collection 都回不到。** 同目錄另有 998222939「Stop Jap」15 軌、998220928「Mushi」12 軌、998227245「For Never (Live) [Remaster Version]」18 軌等。",
+    "src": "https://itunes.apple.com/lookup?id=998224972&country=us&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "六首歌三十五分鐘，最後那首標題曲一個人佔掉十分零九秒——樂團兩個月後就宣告結束",
+   "這張碟走的不是先前那條 punk 路線；兩年後 Bill Laswell 還替它做了一版重混"
+  ],
+  "sound": "MB 記三筆 release、**全部 6 軌、同曲同序**。1984 年 B.Q. Records 黑膠的逐軌長度：〈廃魚〉4:36、〈M-16 (マイナー・シックスティーン)〉4:46、〈T-Legs〉6:42、〈バイ・バイ・”ニーチェ”〉2:42、〈アクマデ憐レム歌〉6:13、〈Fish Inn〉10:09——**六軌總長約三十五分鐘，其中三軌超過六分鐘，收尾的標題曲 10:09 一首就佔掉近三分之一**，與這支樂團 1981–1983 年那批短促的 punk 盤形制完全不同。日文維基把這張碟記成「與此前的 punk rock 聲響不同、以迷幻路線製作」。曲名上漢字題（〈廃魚〉〈アクマデ憐レム歌〉）與英文題（〈T-Legs〉〈Fish Inn〉）各半，第 2 軌〈M-16〉的片假名副題把武器編號讀成「マイナー・シックスティーン」。",
+  "keyTracks": [
+   "廃魚",
+   "T-Legs",
+   "Fish Inn"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1984。MB release-group first-release-date **1984-11-20**、其下 JP 首版（B.Q. Records BQL-1）同為 1984-11-20；**日文維基年表也記 1984 年 11 月 20 日**，兩處連日期都一致。⚠ **Apple 998224972 的 releaseDate 是 2003-12-23、℗ 2015 TOKUMA JAPAN**——那是德間的再發，不可取。另要注意 MB 上還有一筆 2015-06-17 的《Fish Inn (re-mix)》自成 release-group（bd15cc00），**日文維基則把 Bill Laswell 的 remix 版記在 1986 年 12 月 21 日**：**remix 版有 1986 與 2015 兩個年份在流通，行文提到重混一定要說是哪一版**，也不要讓它污染本張的 1984。同名先行單曲：無。",
+  "notes": "⚠ **擋下 Apple 條目一處——這張碟其實聽不到。** 探測層／策展層把 ザ・スターリン《Fish Inn》算進「a 組 10 筆 Apple 命中」，`curatorWhy` 引的是「Apple jp 店 collectionId 990162554／219988810」。**覆核結果：那兩個 id 我在兩店都找不到對應條目**（219988810 是藝人 id 219986771 的近似值，不是 collection）。實際存在的是 **us 店 998224972「Fish Inn」（trackCount 6、℗ 2015 TOKUMA JAPAN）**，但 **`entity=song` 攤不出任何一軌、0 個 previewUrl**，jp 店則連 collection 都回不到。**→ 本張沒有可用的試聽來源，請主線把它從「有 Apple」那一欄撤下。** 不改 `previews.json`。\\n**「解散前最後一張錄音室專輯」查證屬實、可以寫**：MB 藝人頁排序（1981 trash／1982 STOP JAP／1983-04-25 虫／1984-11-20 Fish Inn，之後是 1985 年帶 Live 標記的《For Never》）與日文維基年表（1984-12-31 解散宣言、1985-01-15 解散）一致；英文維基把解散寫成 1985 年 2 月（與日文維基的 1 月 15 日差一個月，**行文只寫 1985 年**）。\\n**廠牌可寫但要小心措辭**：MB label-info 給 B.Q. Records BQL-1；**日文維基顯示 B.Q.レコード 是 遠藤 的自主廠牌、1984 年 7 月已先發過他的個人單曲**，所以「BQL-1」是這個編號系列的第一號、不等於廠牌的創立第一發。`curatorWhy` 寫「B.Q. Records 的創廠編號 BQL-1」——**改寫成「B.Q. Records 的 BQL-1」比較安全**。\\n**跨批註記**：同團的《虫》(1983) 已由 c-94 收走（`rulings.md` 第 8 條），本張與池中的《trash》《STOP JAP》構成 1981／1982／1984 三張。同一個人的個人名義（遠藤ミチロウ）另有一張在 c-70。\\n**跨卡連結（有來源）**：日文維基年表記 1983 年 9 月 17 日京大西部講堂那場，ザ・スターリン 與 **非常階段** 合體以「スター階段」名義演出——本批 b 組正好收 非常階段 兩張。"
+ },
+ {
+  "key": "desc4:鉄アレイ|鉄アレイ",
+  "artist": "鉄アレイ",
+  "album": "鉄アレイ",
+  "facts": [
+   {
+    "f": "release-group 8f672850 的欄位：title「鉄アレイ」、artist-credit「鉄アレイ」（藝人實體 18dc6f1e，Group／Japan、無 disambiguation、life-span 無起訖）、first-release-date **1991**（只到年）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：JP 1991 的 CD（**Sunshine Sherbet Records，catno SS-011**，**17 軌**，Official）。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/8f672850-5ec4-380d-9814-3add2942c9db?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 CD（22974c52）的逐軌曲目與長度：1〈High way to HELL〉3:21、2〈DANGERS・LATENT〉2:06、3〈Bitch〉1:34、4〈灰〉2:22、5〈SASSY〉1:38、6〈地獄〉1:41、7〈CATCH HEAD〉2:08、8〈汚れた街〉2:29、9〈Too BAD〉3:06、10〈Born in the EARTH〉3:20、11〈ROCK N ROLL〉1:57、12〈馬鹿は馬鹿成り〉2:38、13〈終わるまで!!〉2:36、14〈自由の為に〉3:39、15〈NO MACHINE TROUBLE〉2:03、16〈INDIAN DEATH ROCK〉2:37、**17〈[untitled]〉0:28**。**十七軌總長約四十分鐘，最後一軌只有二十八秒且無標題；十六首正歌落在 1:34 至 3:39 之間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=8f672850-5ec4-380d-9814-3add2942c9db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 鉄アレイ 名下 8 個 release-group：primary-type=Album 4 筆、EP 2 筆。Album 依 first-release-date 排序為 **《鉄アレイ》1991**、《II》1998-07-24、《IV》2014-12-24、《LAST NIGHT》2016-05-11（secondary-type **Compilation**）。**本張排最前，其後的兩張正規盤分別隔了七年與十六年；MB 上沒有《III》。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=18dc6f1e-7a29-407b-98f9-50100032022a&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "Apple Music 兩店查無。`search?term=鉄アレイ&country=jp&entity=musicArtist` **只回到 1 個 artistId（1495126644「ゲリラーズ」），與本團無關**；us 店回的是 The Derailers、Ben Delay、Jan Delay、Vladislav Delay、ディレイ鏡 五個名字近似但無關的藝人。`search?term=鉄アレイ&country=jp&media=music&entity=album` 回 0 筆。**兩個端點都跑過（裁定 173），確認兩店連藝人條目都不存在。** 日文與英文維基亦無本團條目（`ja.wikipedia.org/wiki/鉄アレイ (バンド)` 回 404）。",
+    "src": "https://itunes.apple.com/search?term=%E9%89%84%E3%82%A2%E3%83%AC%E3%82%A4&country=jp&media=music&entity=musicArtist&limit=20"
+   }
+  ],
+  "hookCandidates": [
+   "十七軌裡最後一軌只有二十八秒，連名字都沒填；前面十六首沒有一首滿四分鐘",
+   "一九九一年這張之後隔了七年才有第二張、又隔十六年才有第四張——中間那張三號從來沒出現過"
+  ],
+  "sound": "MB 只記一筆 release：1991 年 Sunshine Sherbet Records 的 CD（SS-011），**17 軌、總長約四十分鐘**，沒有再發版可對照。逐軌長度：開場〈High way to HELL〉3:21，十六首正歌落在 1:34 至 3:39 之間——最短〈Bitch〉1:34、最長〈自由の為に〉3:39——**收尾第 17 軌〈[untitled]〉只有 0:28、在 MB 上連標題都沒有**。曲名上大寫英文題（〈DANGERS・LATENT〉〈CATCH HEAD〉〈NO MACHINE TROUBLE〉〈INDIAN DEATH ROCK〉）與漢字題（〈灰〉〈地獄〉〈汚れた街〉〈馬鹿は馬鹿成り〉〈自由の為に〉）交錯，第 2 軌的〈DANGERS・LATENT〉用了日文的中黑點當分隔。",
+  "keyTracks": [
+   "High way to HELL",
+   "汚れた街",
+   "自由の為に"
+  ],
+  "status": "thin",
+  "yearVerified": "一致，1991，**但只有 MB 一個來源**。MB release-group first-release-date **1991**（只到年、無月日），其下唯一的 CD release 亦記 1991。**本團在日文與英文維基都沒有條目、Apple 兩店連藝人條目都不存在**，因此**沒有任何第二來源可以對照這個年份**。行文寫 1991 可以，不要寫月份、也不要說它「經多方確認」。同名先行單曲：無——MB 藝人頁 8 個 release-group 裡沒有第二筆同名的東西。⚠ 這是自我同名盤（`selfTitled`），提到盤名時要靠年份與廠牌指認。",
+  "notes": "**素材是本組最少的幾張之一。** 可用的只有：MB 那一筆 release 的廠牌編號（Sunshine Sherbet Records SS-011）、17 軌的曲名與逐軌長度、以及藝人目錄的四筆 Album 排序。**無維基條目、無 Apple 條目、無成員資料、無第二來源。** status 誠實填 thin，行文請控制在下限、不要為了湊字數推論。\\n**策展層說法覆核**：「名下只有四筆 primary-type=Album」**屬實**（1991／1998／2014／2016，其中 2016 那筆帶 Compilation）；「其中三筆是 1991／1998／2014 相隔多年的續作，本張是起點」**屬實**。⚠ 但 `curatorWhy` 另一句「是 1990 年代初東京 hardcore 從 1980 年代那一批（Gauze、Lip Cream、DEATH SIDE）交棒下來的一張」——**這是策展層的敘事，沒有來源**（本團無維基條目，MB 也沒有任何 artist-rels）。**不得寫入行文。**\\n**編號可寫的細節**：MB 藝人目錄裡有《II》(1998) 與《IV》(2014)，**但沒有《III》**——這是可查的目錄事實，可以寫。\\n**掛名**：MB 實體主名是漢字＋片假名的「鉄アレイ」，卡單同，照原文寫。Apple 兩店查無同名污染（連藝人條目都沒有），這一位反而是本批少數不必擔心撞名的。"
+ },
+ {
+  "key": "desc2:S.O.B.|Don't Be Swindle",
+  "artist": "S.O.B.",
+  "album": "Don't Be Swindle",
+  "facts": [
+   {
+    "f": "release-group ee4162f5 的欄位：title「Don’t Be Swindle」、artist-credit「S.O.B.」（藝人實體 4d4159b8，Group／Japan、disambiguation「Japanese grindcore band」、life-span begin **1983**）、first-release-date **1987**（只到年）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：JP 1987 的黑膠（**label-info 是空的、沒有廠牌也沒有編號**，**18 軌**，Official）。這張碟在 MB 上沒有任何再發。",
+    "src": "https://musicbrainz.org/ws/2/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆唯一的 release（1af94eaf）的逐軌曲目與長度：1〈Raging Hell〉1:35、2〈Violent Anger〉1:03、3〈Hear Nothing for You〉0:52、4〈Influence of Slime〉0:53、5〈Hysteric to Temptation〉1:30、6〈Insane〉1:04、**7〈S.O.B.〉0:06**、8〈I’m a Dreamer〉1:17、9〈Let’s Go Beach〉1:48、10〈Don’t Be Swindle〉1:09、11〈Look Like Devil〉1:36、12〈Fuck or Die〉1:00、13〈Heads or Tails〉1:05、14〈Don’t Your Back〉1:15、15〈Speed My Way〉0:58、**16〈Speak Mouth Fuck You〉0:06**、17〈Revival〉0:53、18〈To Be Continued〉1:32。**十八軌總長只有約二十分鐘，其中兩軌（第 7、16）各只有六秒，六軌不到一分鐘，最長的〈Let’s Go Beach〉也只有 1:48。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ee4162f5-21f5-3fa3-b97e-0e4456cb532a&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB 藝人頁分頁全列 S.O.B. 名下 17 個 release-group：primary-type=Album 10 筆、EP 6 筆。Album 依 first-release-date 排序為 **《Don’t Be Swindle》1987**、《Leave Me Alone / Don’t Be Swindle》1990（**secondary-type Compilation**）、《What’s the Truth?》1990、《Osaka Mon Amour》1991（Compilation）、《Gate of Doom》1993-03-01、《Vicious World》1994-07-01、《Symphonies of Brutality》1995、《Dub Grind》1999、《Still Grind Attitude》2003-09-26、《Thrash Night - Leave Me Alone》（無日期，Compilation）。**本張排最前。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=4d4159b8-19b5-4337-9d07-4eb0100fe630&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "英文維基〈S.O.B. (band)〉：**團名縮寫自 Sabotage Organized Barbarian**；1983 年在大阪結成；原主唱 Yoshitomo「Tottsuan」Suzuki 於 1995 年自殺。條目稱其 considered hugely influential on grindcore bands such as Napalm Death and the genre of death metal，並列為 thrashcore 的中堅之一，樂團自己有時也被描述成 grindcore。條目的專輯欄列 1987 Don’t Be Swindle、1988 No Control、1990 What’s the Truth?、1993 Gate of Doom、1994 Vicious World、1995 Symphonies of Brutality、1999 Dub Grind、2003 Still Grind Attitude；EP 欄列 Sabotage Organized Barbarian (1985)、Leave Me Alone (1986)、與 Napalm Death 的分軌 7 吋 (1988)。現任團員含吉他 Toshimi Seki 與鼓手 Satoshi Yasue（皆 1983 年起）、貝斯 Kawataka Daisuke。",
+    "src": "https://en.wikipedia.org/wiki/S.O.B.%20(band)"
+   },
+   {
+    "f": "Apple Music 兩店查無。`entity=musicArtist` 在 jp／us 兩店各回 20 個 artistId（S.O.B／S.O.B.／S O B／Leazzy S.O.B／S.o.B.Beats／SOB X RBE／S.O.B Black／Yung S.O.B./O.B／O.B.／O.B.S 等），逐一 lookup 藝人目錄後**沒有一個是本團**；`search?term=SOB Dont Be Swindle&country=jp` 回 0 筆。**兩個端點都跑過（裁定 173）。**",
+    "src": "https://itunes.apple.com/search?term=S.O.B.&country=jp&media=music&entity=musicArtist&limit=20"
+   }
+  ],
+  "hookCandidates": [
+   "十八首歌二十分鐘，其中兩首各只有六秒——第七軌就叫〈S.O.B.〉，唱完團名就結束",
+   "團名的三個字母展開來是 Sabotage Organized Barbarian"
+  ],
+  "sound": "MB 只記一筆 release（1987 年的 JP 黑膠，**MB 沒填廠牌與編號**），**18 軌、總長只有約二十分鐘**。逐軌長度極端：**第 7 軌〈S.O.B.〉與第 16 軌〈Speak Mouth Fuck You〉各只有 0:06**，另有〈Hear Nothing for You〉0:52、〈Influence of Slime〉0:53、〈Revival〉0:53、〈Speed My Way〉0:58、〈Fuck or Die〉1:00、〈Violent Anger〉1:03、〈Insane〉1:04 一連串不到七十秒的曲子，**全碟最長的〈Let’s Go Beach〉也只有 1:48**。標題曲〈Don’t Be Swindle〉1:09 擺在第 10 軌，收尾〈To Be Continued〉1:32。曲名全部是英文。英文維基把這支團記成對 Napalm Death 等 grindcore 樂團影響甚大、也是 thrashcore 的中堅之一。",
+  "keyTracks": [
+   "Raging Hell",
+   "S.O.B.",
+   "Let’s Go Beach"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1987。MB release-group first-release-date **1987**（只到年），其下唯一的 JP release 亦記 1987；**英文維基的專輯欄也把 Don’t Be Swindle 記在 1987**。兩處同為 1987、都沒給月份。Apple 兩店查無，沒有第三個來源。同名先行單曲：無，但 **MB 上有一筆 1990 年的《Leave Me Alone / Don’t Be Swindle》帶 Compilation 標記、標題含本張盤名**，數目錄或搜尋時別混用。⚠ 另注意英文維基列了一張 **1988 年的《No Control》，MB 完全沒有這一筆**——兩邊目錄對不齊，行文不要數「第幾張」以外的東西。",
+  "notes": "**擋下策展層兩處。**\\n(1)「1989 年英國的 Earache 把它與《Leave Me Alone》併成一張在歐洲流通」——**年份與廠牌都對不上可查的來源**：MB 上那筆併輯《Leave Me Alone / Don’t Be Swindle》記的是 **1990**、且 MB 沒有填 Earache 這個廠牌；英文維基也沒提 Earache。**行文不得寫「1989 年由 Earache」**，最多寫「1990 年 MB 上出現一張把《Leave Me Alone》與本張併在一起的整編輯」。\\n(2)「這支樂團因此成為第一批被歐美 grindcore 場景直接接收的日本團」——**創始權主張，查無來源**。英文維基只寫 considered hugely influential on grindcore bands such as Napalm Death，**要寫就照這一句寫、並且是「被認為」而不是「第一批」**。\\n**可寫且有來源的**：團名縮寫 Sabotage Organized Barbarian（英文維基）、1983 年大阪結成、與 Napalm Death 1988 年出過分軌 7 吋（英文維基 EP 欄）。**原主唱 1995 年自殺一事有來源但屬個人不幸事件，行文不要當賣點，寧可不寫。**\\n**廠牌不要亂填**：MB 這筆 release 的 label-info **是空的**，卡單的 `label` 欄自己也寫「MB 該 release 未填廠牌」。**行文不得指名 1987 年的發行廠牌。**\\n**掛名覆核（裁定 179／212／224）**：MB 實體 4d4159b8 為 Group／Japan／「Japanese grindcore band」／begin 1983。**Apple 端 20 個同名 artistId 逐一 lookup 全部排除**（含 SOB X RBE、Leazzy S.O.B、S.o.B.Beats 等 hip-hop 藝人）。\\n**Apple：兩店、兩個端點都查無。**"
+ },
+ {
+  "key": "desc2:Various Artists|GREAT PUNK HITS",
+  "artist": "Various Artists",
+  "album": "GREAT PUNK HITS",
+  "facts": [
+   {
+    "f": "release-group fd48a9f6 的欄位：title「GREAT PUNK HITS」、artist-credit「Various Artists」（MB 的合輯用實體 89ad4ac3）、first-release-date **1983**（只到年）、primary-type Album、**secondary-types [\"Compilation\"]**。轄下 3 個 release，全部 JP、全部 Official、全部 12 軌：1983 的 12 吋黑膠（**JAPAN RECORD，catno 25JAL-2**）、1985-07-25 的 CD（JAPAN RECORD，32JC-124）、1989-12-21 的 CD（WAX RECORDS，22WXD-130，barcode 4988008103137）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/fd48a9f6-9165-4708-b384-fbb338108bed?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "MB 那筆 1983 年 JAPAN RECORD 黑膠（18e68457）的逐軌曲目、演出者與長度：1 GISM〈DEATH EXCLAMATIONS〉3:50、2 GISM〈FIRE〉2:56、3 THE EXECUTE〈THE VOICE〉1:57、4 THE EXECUTE〈SAG〉4:24、5 アブラダコ〈米ニスト〉1:07、6 アブラダコ〈クリスタル・ナハト〉1:20、7 LAUGHIN NOSE〈GET THE GLORY〉2:25、8 LAUGHIN NOSE〈PERDITION〉2:12、9 THE CLAY〈FUTURE TERROR〉2:21、10 THE CLAY〈MILITIA〉1:51、11 G‐ZET〈堕落〉2:28、12 G‐ZET〈オキシジェン・デストロイヤー〉4:41。**六組樂團、每組各兩首、十二軌總長約三十一分鐘，是嚴格的「一團兩曲」編排。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fd48a9f6-9165-4708-b384-fbb338108bed&fmt=json&inc=recordings+artist-credits+media&limit=10"
+   },
+   {
+    "f": "日文維基〈G.I.S.M.〉：本團「參加了由徳間ジャパン發行的合輯《GREAT PUNK HITS》，擔起把當時日本 hardcore 場景的衝擊性音源透過**主要廠牌**（メジャーレーベル）讓外界知道的一角」。同條目的オムニバス 欄把《GREAT PUNK HITS》記在 **1983 年**，並列在《OUTSIDER》(1982) 之後、《ハードコア不法集会》(1984) 之前。**這一句是「這張碟走的是大廠通路」這個說法唯一可引的來源。**",
+    "src": "https://ja.wikipedia.org/wiki/G.I.S.M."
+   },
+   {
+    "f": "MB 上這張碟的六組演出者裡，**兩組是本批 a 組自己的卡**：GISM（＝G.I.S.M.，本批收《DETESTATION》《Military Affairs Neurotic》兩張）與 アブラダコ（＝あぶらだこ，本批收 1984 年那張 ADK 12 吋）。**MB 這份建檔把 あぶらだこ 的團名寫成全片假名「アブラダコ」**，與該團自己慣用的平假名寫法「あぶらだこ」不同字。另外四組（THE EXECUTE、LAUGHIN NOSE、THE CLAY、G‐ZET）都未被本批收入；`rulings.md` §4.3 把 The Execute 列進後續批候選、§5 則記 Laughin’ Nose 有「有條目卻沒年份」的問題。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fd48a9f6-9165-4708-b384-fbb338108bed&fmt=json&inc=recordings+artist-credits+media&limit=10"
+   },
+   {
+    "f": "Apple Music 兩店查無：`search?term=GREAT PUNK HITS&country=jp&media=music&entity=album` 回 0 筆。合輯本身沒有可 lookup 的藝人目錄，另以參與團的 Apple 藝人目錄回查（G.I.S.M. artistId 22575240 名下只有 Relapse 的兩張、あぶらだこ us artistId 153615413 名下五張皆為同名專輯與 ADK 整編輯），**都沒有本張**。兩個端點都跑過（裁定 173）。",
+    "src": "https://itunes.apple.com/search?term=GREAT%20PUNK%20HITS&country=jp&media=music&entity=album&limit=10"
+   }
+  ],
+  "hookCandidates": [
+   "六支樂團、每支剛好兩首，十二軌三十一分鐘——一九八三年把地下場景整批搬進唱片行的做法",
+   "第五、六軌那兩首一分鐘出頭的短曲，掛的是後來把九張專輯都取同一個名字的那支團"
+  ],
+  "sound": "MB 記三筆 release、**全部 12 軌、同曲同序**（1983 黑膠、1985 與 1989 兩張 CD 再發）。編排是嚴格的「一團兩曲」：GISM、THE EXECUTE、アブラダコ、LAUGHIN NOSE、THE CLAY、G‐ZET 六組各佔連續兩軌。逐軌長度落差很大——最短的兩首都是 アブラダコ 的〈米ニスト〉1:07 與〈クリスタル・ナハト〉1:20，最長的是 G‐ZET 收尾的〈オキシジェン・デストロイヤー〉4:41 與 THE EXECUTE 的〈SAG〉4:24，**全碟總長約三十一分鐘**。曲名上大寫英文題（DEATH EXCLAMATIONS／FIRE／THE VOICE／GET THE GLORY／FUTURE TERROR／MILITIA）與日文題（〈米ニスト〉〈堕落〉〈オキシジェン・デストロイヤー〉）混排，開場交給 GISM 的〈DEATH EXCLAMATIONS〉3:50。",
+  "keyTracks": [
+   "DEATH EXCLAMATIONS",
+   "米ニスト",
+   "オキシジェン・デストロイヤー"
+  ],
+  "status": "partial",
+  "yearVerified": "一致，1983。MB release-group first-release-date **1983**（只到年），其下 JP 首版（JAPAN RECORD 25JAL-2）亦記 1983；**日文維基〈G.I.S.M.〉的オムニバス 欄也把它記在 1983 年**。兩處同為 1983、都沒給月份。**兩筆再發分別是 1985-07-25（JAPAN RECORD 32JC-124）與 1989-12-21（WAX RECORDS 22WXD-130），行文要把 1983 的原盤年與這兩個復刻年分開。** Apple 兩店查無，沒有第三個來源。同名先行單曲：不適用（合輯）。",
+  "notes": "**這是本批四張帶 Compilation 標記的碟之一（裁定 167／策展層第 2 條）**：primary-type Album ＋ secondary-types [\"Compilation\"]，照一般 Album 寫、例外欄位留空。**但行文必須寫清楚它是一張六團合輯（オムニバス），不得寫成錄音室專輯**，也要把 1983 的原盤年與 1985／1989 兩次 CD 再發分開。\\n**廠牌的說法要小心**：MB 的 label-info 給的是 **JAPAN RECORD（25JAL-2）**；**日文維基〈G.I.S.M.〉那一句寫的卻是「徳間ジャパンから発売された」**。兩個名字都指向同一條大廠通路（JAPAN RECORD 屬德間系），**但行文若要寫發行方，引 MB 的 JAPAN RECORD 最安全**，或並陳兩種說法。「透過主要廠牌讓外界聽見地下場景」這個判斷本身有日文維基那一句可引。\\n**擋下策展層一處措辭**：`curatorWhy` 寫「日本 hardcore 第一波的通行入口盤」「是這條線少數不靠場景通路流通的實體」——**「第一波的入口」與「少數」都沒有來源**。可寫的只有日文維基那句「透過メジャーレーベル 讓外界知道」。\\n**掛名要注意**：MB 這份建檔把 あぶらだこ 寫成 **片假名「アブラダコ」**、把 G.I.S.M. 寫成無點的 **「GISM」**、Laughin’ Nose 寫成無撇號的 **「LAUGHIN NOSE」**。**行文提到參與團時，用該團自己的正式寫法**（あぶらだこ、G.I.S.M.），不要照抄這份 credit。\\n**跨卡連結**：本張的第 1–2 軌與第 5–6 軌分別是本批 a 組另外三張卡的樂團（G.I.S.M.×2、あぶらだこ）。\\n**素材中等**：曲目與演出者、三筆 release 的廠牌編號都齊，但**合輯本身沒有維基條目、沒有 Apple、沒有製作方資料**，status 填 partial。"
  }
 ]
