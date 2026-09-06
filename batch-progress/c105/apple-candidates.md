@@ -92,3 +92,77 @@
 - `854925787` us｜《Replay The First Mini Album - EP》2008｜5 軌｜依據：年份
 - `854890144` us｜《Amigo - The 1st Album Repackage》2008｜15 軌｜依據：年份
 - `854889064` us｜《The SHINee World - The 1st Album》2008｜12 軌｜依據：年份
+
+## SHINee《LUCIFER》2010
+- `854892269` us｜《Hello - The 2nd Album (Repackage)》2010｜16 軌｜依據：年份
+- `854916066` us｜《2009, Year Of Us - EP》2009｜6 軌｜依據：年份
+- `854912971` us｜《ROMEO - The Second Mini Album》2009｜6 軌｜依據：年份
+- `720505176` us｜《Replay - Kimi wa Boku no Everything (Standard Edtion) - Single》2011｜2 軌｜依據：年份
+- `854891682` us｜《The 2nd Album 'Lucifer'》2010｜13 軌｜依據：年份
+- `1367758639` us｜《The First》2011｜13 軌｜依據：年份
+- `720562762` us｜《Juliette - Single》2011｜2 軌｜依據：年份
+- `1854722672` us｜《Fly High - Single》2010｜1 軌｜依據：年份
+
+## EXO《XOXO》2013
+- `874164741` us｜《The 2nd Mini Album 'Overdose' - EP》2014｜5 軌｜依據：年份
+- `854917291` us｜《Mama (The 1st Mini Album) - EP》2012｜6 軌｜依據：年份
+- `874290401` us｜《The 2nd Mini Album 'Overdose' - EP》2014｜5 軌｜依據：年份
+- `854908236` us｜《The 1st Album 'XOXO' (Repackage)》2013｜28 軌｜依據：年份
+- `854908527` us｜《Miracles in December - EP》2013｜6 軌｜依據：年份
+- `854942041` us｜《Mama (The 1st Mini Album) - EP》2012｜6 軌｜依據：年份
+- `854908599` us｜《Miracles in December - EP》2013｜6 軌｜依據：年份
+- `952213726` us｜《EXOLOGY CHAPTER 1: THE LOST PLANET (Live)》2014｜36 軌｜依據：年份
+
+## Red Velvet《The Red》2015
+- `977068452` us｜《The 1st Mini Album ‘Ice Cream Cake’ - EP》2015｜6 軌｜依據：年份
+- `1037732950` us｜《The Red - The 1st Album》2015｜11 軌｜依據：年份
+- `1151001050` us｜《Russian Roulette - The 3rd Mini Album》2016｜8 軌｜依據：年份
+- `905840092` us｜《Happiness - Single》2014｜1 軌｜依據：年份
+- `1092931330` us｜《The Velvet - The 2nd Mini Album》2016｜9 軌｜依據：年份
+- `928353453` us｜《Be Natural (feat. TAEYONG) - Single》2014｜1 軌｜依據：年份
+- `1067729602` us｜《Wish Tree - WINTER GARDEN - Single》2015｜1 軌｜依據：年份
+- `1109942868` us｜《Yossism (Music from "Telemonster") - Single》2016｜1 軌｜依據：年份
+
+## NewJeans《New Jeans》2022
+- `1635469682` us｜《NewJeans 1st EP 'New Jeans'》2022｜4 軌｜依據：年份
+- `1695951888` us｜《NewJeans 2nd EP 'Get Up'》2023｜6 軌｜依據：年份
+- `1659513441` us｜《NewJeans 'OMG' - Single》2023｜2 軌｜依據：年份
+- `1692686264` us｜《NewJeans 'Super Shy' - Single》2023｜2 軌｜依據：年份
+- `1657231957` us｜《Ditto - Single》2022｜1 軌｜依據：年份
+- `1678545730` us｜《Zero - Single》2023｜1 軌｜依據：年份
+- `1719868691` us｜《NJWMX》2023｜12 軌｜依據：年份
+- `1688797578` us｜《Be Who You Are (Real Magic) [feat. JID, NewJeans & Camilo] - Single》2023｜1 軌｜依據：年份
+
+## Crying Nut《Crying Nut》1998
+- `307362575` us｜《Speed Up Losers》1998｜13 軌｜依據：年份
+- `307365325` us｜《Circus Magic Clowns》1999｜13 軌｜依據：年份
+
+## Crying Nut《서커스 매직 유랑단》1999
+- `307362575` us｜《Speed Up Losers》1998｜13 軌｜依據：年份
+- `307365325` us｜《Circus Magic Clowns》1999｜13 軌｜依據：年份
+
+## No Brain《청년폭도맹진가》2000
+- `1555676583` us｜《Viva No Brain》2001｜14 軌｜依據：年份
+- `1861371655` us｜《Youth 98 - EP》1999｜4 軌｜依據：年份
+
+## 장기하와 얼굴들《장기하와 얼굴들》2011
+- `1450777498` us｜《Kiha & the Faces》2011｜11 軌｜依據：年份
+- `1449552891` us｜《범죄와의 전쟁: 나쁜놈들 전성시대 - 풍문으로 들었소 (Original Motion Picture Soundtrack) - Single》2012｜1 軌｜依據：年份
+
+## 장기하와 얼굴들《사람의 마음》2014
+- `1450775627` us｜《Human Mind》2014｜12 軌｜依據：年份
+- `1550684903` us｜《New Year's Luck - EP》2015｜5 軌｜依據：年份
+
+## 브로콜리 너마저《보편적인 노래》2008 — **目錄裡找不到**
+
+## 브로콜리 너마저《졸업》2010 — **目錄裡找不到**
+
+## 9와 숫자들《9와 숫자들》2009 — **目錄裡找不到**
+
+## 9와 숫자들《보물섬》2014 — **目錄裡找不到**
+
+## 언니네 이발관《비둘기는 하늘의 쥐》1996
+- `509439311` us｜《Pigeon Is a Rat in the Sky (Deluxe Edition)》1996｜12 軌｜依據：年份
+
+## 언니네 이발관《꿈의 팝송》2002
+- `1340071511` us｜《Pop Song of the Dream》2002｜11 軌｜依據：年份
