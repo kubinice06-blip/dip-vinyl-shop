@@ -476,5 +476,165 @@
   "status": "full",
   "yearVerified": "一致，1998。release-group first-release-date **1998-09-29**、其下四筆 release 有三筆是 1998（德版黑膠與美版 CD 只記到年、德版 CD 記 1998-09-29），第四筆是 2018-12-14 的數位再發。串流店面的 1621825744 releaseDate 記 **1998-09-29**、℗ 欄「℗ 1998 Tresor Records」——**與德版 CD 完全一致**。四處對照有三處成立，年份是 1998。**同名先行單曲：無。**",
   "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄記的是 **德版 Tresor 105 CD（9 軌）**，同年**美版 X-Sight 6385-2 是 12 軌**。**行文只能引 9 軌**；〈Higher〉〈Never Tempt Me〉〈Raindrops〉三軌**不是本張曲目**，而〈Body Oil〉在德版是 **10:28**、美版是 **4:10 的 Strip mix**，**兩個長度不可互換**。｜**回撈與搜尋共 2 個候選：採信 1621825744（德版九軌，日期與 ℗ 都與原盤一致）、1404015352 記為美版十二軌不取。** 兩筆都在 us／gb／de 三店取得到。｜**別名（裁定 223）**：`Infiniti` 是獨立實體、disambiguation 明寫對應到誰，**但它與本人實體的目錄不互通**——這個掛名名下只有 11 筆。`curatorWhy` 寫「他 1990 年代唯一一張不掛 Model 500 的長篇」**需要跨掛名比對才成立，本層只查了 Infiniti 這一個實體，不能背書**；**行文只能寫「這個掛名下最早的一張長篇」。**｜`curatorWhy` 另寫「把 1993 年起散在 Metroplex 與 Tresor 的 Infiniti 12 吋推成一張完整的碟」——**本層在 Infiniti 名下 11 筆裡查不到 Metroplex 的 label-info，行文不要寫那個廠牌名。**｜**曲名兩種寫法**：德版與串流寫〈Coffeeshop〉（連寫），美版寫〈Coffee Shop〉（分寫）；串流把〈Coffeeshop (interlude)〉寫成〈Coffeeshop Interlude〉（無括號）。本檔依德版原盤。｜**掛名易誤拼**：`Infiniti` 單 i 結尾，不是 Infinity。"
+ },
+ {
+  "key": "desc2:Psyche \\ BFC|Elements 1989-1990",
+  "artist": "Psyche \\ BFC",
+  "album": "Elements 1989-1990",
+  "facts": [
+   {
+    "f": "release-group a2b1ec04 的欄位：title「Elements 1989-1990」、**artist-credit 是「Psyche \\ BFC」——兩個獨立的藝人實體以反斜線併起來**（Psyche，MBID 98f61162，type Person、**disambiguation「techno producer Carl Craig」**、country 欄空白；BFC，MBID 81b6f2b3，type Person、country US、**disambiguation「Carl Craig」**）。first-release-date **1996**、**primary-type Album、secondary-types ［Compilation］**（依裁定 167 照一般 Album 處理、例外欄位留空）。轄下 **2 筆 release，都 Official**：1996 US 的 Planet E PE BFC 96-CD（**CD、12 軌**）與 2013-04-02 XW 的 Planet E PLE65353-0（**數位、13 軌**）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/a2b1ec04-b5b5-3eec-90f5-00882c3df725?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 US 原盤（Planet E PE BFC 96-CD）的逐軌曲目與長度：1〈Elements〉6:50、2〈Neurotic Behavior〉7:42、3〈Crackdown〉5:58、4〈From Beyond〉5:44、5〈Andromeda〉4:56、**6〈Evolution〉3:09**、7〈Galaxy〉6:41、8〈It's a Shame〉5:39、9〈Please Stand By〉5:02、10〈Chicken Noodle Soup〉6:34、11〈How the West Was Won〉3:34、12〈Sleep〉5:11。**十二軌從 3:09 到 7:42，最長與最短差四分半；盤名裡那個 1989-1990 是錄音年份，碟本身是 1996 年才出的。** 2013 年的數位版前十二軌完全相同、**末尾多出第 13 軌〈D Funk〉5:16**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=a2b1ec04-b5b5-3eec-90f5-00882c3df725&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**別名各查一次的結果（裁定 223）**：兩個實體的目錄**分別查**——`Psyche`（98f61162）名下 **5 個 release-group**：primary-type=Album 1 個（**就是本張，帶 Compilation**）、EP 3 個、Single 0 個；`BFC`（81b6f2b3）名下 **4 個 release-group**：primary-type=Album 2 個（本張加 2013-04-02 的《Psyche/Bfc (Deluxe Digital Version)》）、EP 2 個。**兩份目錄都極小，而且本張同時出現在兩邊——查其中一個掛名只會看到一半的作品。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=98f61162-a4f5-454e-b4a6-2b3b12724505&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "`BFC` 那一邊的目錄裡另有一筆 **2013-04-02 的《Psyche/Bfc (Deluxe Digital Version)》**（primary-type Album、secondary-types 空，MBID 0108bac0）——**盤名用的是斜線不是反斜線、而且是另一個 release-group**，與本張的 2013 數位版（同一個 RG 底下的第二筆 release）**不是同一筆**。配對時極易混。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=81b6f2b3-fd7b-4f4d-b940-0b7144826b89&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=Psyche+BFC+Elements+1989+1990&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "掛名是兩個名字用一道反斜線併起來的，兩邊各自有自己的作品目錄",
+   "盤名裡的 1989-1990 是錄音年份，碟要到 1996 年才出"
+  ],
+  "sound": "1996 年 Planet E 的 CD 十二軌，收的是盤名直接標明的 1989 到 1990 年那批錄音。十二軌從 3:09 的〈Evolution〉到 7:42 的〈Neurotic Behavior〉，最長與最短差四分半；中段的〈Andromeda〉4:56 與〈Galaxy〉6:41 把題材推向星系，前後卻夾著〈Crackdown〉〈It's a Shame〉〈Chicken Noodle Soup〉〈How the West Was Won〉這種完全不相干的日常與電影語彙，末軌就叫〈Sleep〉5:11。2013 年的數位版把同樣十二軌照排，末尾另加一軌〈D Funk〉5:16。掛名本身是兩個名字用一道反斜線併起來的。",
+  "keyTracks": [
+   "Elements",
+   "Neurotic Behavior",
+   "Chicken Noodle Soup"
+  ],
+  "status": "full",
+  "yearVerified": "**碟是 1996，錄音是 1989-1990**。release-group first-release-date **1996**、其下最早的 release 是 1996 US 的 Planet E PE BFC 96-CD（Official），第二筆是 2013-04-02 的數位版。**盤名裡的 1989-1990 指的是錄音年份、不是發行年**——**行文寫年份時碟一律寫 1996，寫 1989-1990 必須明說那是錄音期。** 串流三店查無、℗ 那一路對不了。四處對照只成立兩處。**同名先行單曲：無**（同名曲〈Elements〉是本張第 1 軌）。",
+  "notes": "**裁定 167 的處置正確**：本張 primary-type=Album、secondary-types=[Compilation]，**照一般 Album 寫、例外欄位一律留空**，卡單填法無誤。｜**別名覆核成立（裁定 223）**：`Psyche` 與 `BFC` 在來源端是**兩個獨立實體**、各有自己的目錄（5 筆與 4 筆），本張同時掛在兩邊。**查任何一個掛名都只看得到一半**，這是本張最需要注意的檢索陷阱。｜**反斜線是原樣**：artist-credit 就是 `Psyche \\ BFC`（反斜線前後各一個空格）。**但 `BFC` 名下另有一筆 2013 年的《Psyche/Bfc (Deluxe Digital Version)》用的是斜線、而且是另一個 release-group**——**行文與配對都不要把兩者混為一談。**｜**擋下策展層一處（人名，裁定 241）**：卡單把兩個掛名都對到同一個本名。**本層能確認的是兩個實體的 disambiguation 各自寫著同一個名字**，這一點成立；**但「兩個掛名各自代表什麼時期」之類的說法本層查不到來源，行文不要寫。**｜**軌數兩種（裁定 157）**：原盤 **12 軌**、2013 數位版 **13 軌**。**行文只能引 12 軌**，〈D Funk〉不是本張曲目。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:The Martian|Ghostdancer",
+  "artist": "The Martian",
+  "album": "Ghostdancer",
+  "facts": [
+   {
+    "f": "release-group 3a314bf5 的欄位：title「Ghostdancer」、artist-credit「The Martian」（藝人實體 MBID 0c33354e，**type Group**、country US、**disambiguation「Detroit techno」**）、first-release-date **1995**、primary-type Album、secondary-types **空**。轄下**只有 1 筆 release**：1995 US 的 Red Planet RP 06，Official，**兩張 12 吋、第一張 3 軌第二張 4 軌，合計 7 軌**。**沒有任何再發、沒有 CD 版建檔。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/3a314bf5-8953-32ab-8baa-a5756ba45af2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1995 US 原盤（Red Planet RP 06，兩張 12 吋）的逐軌曲目與長度：第一張 **1〈Ghostdancer〉10:22**、2〈Medicine Man〉5:32、3〈Marisian Probes Over Montana〉4:40；第二張 1〈Starchild〉8:05、**2〈The Vanishing Race〉2:54**、3〈The Talking Rocks of Mars〉6:08、4〈Windwalker〉6:30。**同名曲擺在第一軌、10:22，是全張最長的一軌，比最短的〈The Vanishing Race〉2:54 長出三倍半；七軌裡光這一軌就佔掉將近四分之一的時間。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=3a314bf5-8953-32ab-8baa-a5756ba45af2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**同名實體覆核（裁定 179／224）**：以掛名 `The Martian` 直接查詢，**前兩名是兩個完全不同的實體且分數只差 4 分**——0c33354e（**score 100**，Group／US／disambiguation「Detroit techno」，本張釘的就是它）與 **ab7503c2（score 96，Person／US／disambiguation「early 90s US acid producer Marlon Grant」）**。**兩者的 area 與 country 都是 US，只有 type 與 disambiguation 分得出來。**",
+    "src": "https://musicbrainz.org/ws/2/artist?query=The%20Martian&fmt=json&limit=6"
+   },
+   {
+    "f": "藝人端點分頁全列 **13 個 release-group**：primary-type=Album 2 個（**secondary-types 為空的只有 1 個，就是本張**；另 1 個是 1999-04-15 帶 Compilation 的《LBH - 6251876: A Red Planet Compilation》）、EP 6 個、Single 5 個、**primary-type=Compilation 0 個**。**本張是這個掛名下唯一的一張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=0c33354e-114e-4853-922c-7818e2b90cf8&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "串流三個店面（us／gb／de）以掛名加盤名做 `search`，**沒有任何一筆同名結果**；回撈清單對本張的結論同樣是「藝人目錄裡找不到」。**本張維持無串流來源狀態，封面走圖庫那一路。**",
+    "src": "https://itunes.apple.com/search?term=The+Martian+Ghostdancer&country=us&media=music&entity=album&limit=30"
+   }
+  ],
+  "hookCandidates": [
+   "同名的第一軌就有十分二十二秒，佔掉整張將近四分之一",
+   "七軌的曲名一半講火星、一半講北美原住民"
+  ],
+  "sound": "1995 年 Red Planet RP 06 是兩張 12 吋、三軌加四軌共七軌。開場的同名曲〈Ghostdancer〉10:22 是全張最長的一軌，佔掉整張將近四分之一的時間，而第二張中間的〈The Vanishing Race〉只有 2:54，兩者差了三倍半。曲名在兩組意象之間來回：一組是火星與星際（〈Marisian Probes Over Montana〉〈Starchild〉〈The Talking Rocks of Mars〉），一組是北美原住民（〈Ghostdancer〉〈Medicine Man〉〈The Vanishing Race〉〈Windwalker〉）——兩張唱片的七個標題就靠這兩組詞彙交錯排開。整張沒有 CD 版、沒有再發。",
+  "keyTracks": [
+   "Ghostdancer",
+   "Starchild",
+   "Windwalker"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1995。release-group first-release-date **1995**、其下唯一一筆 release 是 1995 US 的 Red Planet RP 06（Official），**沒有第二筆可交叉驗證、沒有任何再發**。串流三店查無、℗ 那一路對不了。四處對照只成立兩處，仍指向 1995。**同名先行單曲：無**（同名曲〈Ghostdancer〉10:22 是本張第 1 軌）。",
+  "notes": "**同名實體是本張最大的坑（裁定 179／224）**：`The Martian` 在來源端有兩個 US 實體，**score 100 與 96 只差 4 分**，其中 96 那個是完全不同的另一位製作人。**只有 type（Group 對 Person）與 disambiguation 分得出來，score 排序在這個掛名上不可用。** 卡單釘的 0c33354e 是對的。｜**擋下策展層一處（人名，裁定 241）**：策展層的別名表把這個掛名對到一個本名。**本層在實體欄位上查不到任何本名**——0c33354e 的 disambiguation 只寫「Detroit techno」，沒有寫它是誰。**行文不得寫本名，也不得寫「某某廠牌的核心人物做的碟」這種需要身分對應才成立的句子。**｜`curatorWhy` 寫「本張是他們第一張專輯」這件事**部分成立**：這個掛名下 primary-type=Album 有 2 個，但另一個帶 Compilation，**secondary-types 為空的只有本張**。**行文寫「這個掛名下唯一的一張長篇」最準。**｜**曲名拼寫**：第 3 軌是〈Marisian Probes Over Montana〉（Marisian，不是 Martian），照原樣寫，不要自行「更正」。｜串流三店查無，維持無來源狀態。"
+ },
+ {
+  "key": "desc2:Sean Deason|Razorback",
+  "artist": "Sean Deason",
+  "album": "Razorback",
+  "facts": [
+   {
+    "f": "release-group ed0a5d85 的欄位：title「Razorback」、artist-credit「Sean Deason」（藝人實體 MBID d827adc7，type Person、country US）、first-release-date **1996-10-07**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，都是 1996 DE 的 !K7、都 Official**：!k7R008CD（**CD、9 軌**）與 1996-10-07 的 !K7R008LP（**兩張 12 吋、第一張 4 軌第二張 3 軌，合計 7 軌**）。**同一個編號的 CD 與黑膠差兩軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ed0a5d85-d90d-3eea-91c4-0a3995b03b9c?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1996 DE 的 CD 版（!k7R008CD）逐軌曲目與長度：1〈New School〉8:00、2〈Wisdom (2030 mix)〉7:48、3〈Razorback (Saxy Muthaf*ka mix)〉7:18、4〈The Return〉9:14、**5〈Inside Out〉9:34**、**6〈Jupiter Sunrise〉6:29**、7〈Endomorphine Machine〉5:14、8〈Vibe (Topless mix)〉7:36、9〈Sience Funktion〉5:50。**九軌裡有兩軌超過九分鐘、最短的也有 5:14，整張超過 66 分鐘。** **黑膠版只有 7 軌、曲序不同**（New School／Endomorphine Machine／Wisdom／Razorback ／The Return／Vibe／Sience Funktion），**〈Inside Out〉與〈Jupiter Sunrise〉兩軌只在 CD 版上。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed0a5d85-d90d-3eea-91c4-0a3995b03b9c&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：collectionId **303709015**，collectionName「**Razorback (2.0)**」、artistName「Sean Deason」、releaseDate **1996-10-21**、trackCount **10**、copyright「℗ 2009 ComputerWorld BMI」。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，**前九軌與 CD 版逐位置相符、逐軌長度差都在 1 秒內**（8:00／7:48／7:18／9:14／9:34／6:29／5:14／7:36／5:51），**末尾多出第 10 軌〈Razorback〉8:36**——那是第 3 軌那個混音之外的另一個版本，**CD 版與黑膠版都沒有這一軌**。**採信這一筆，但要記得它多一軌。**",
+    "src": "https://itunes.apple.com/lookup?id=303709015&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "藝人端點分頁全列 **15 個 release-group**：primary-type=Album 5 個（**secondary-types 為空的 4 個**，另 1 個 2012 年帶 Soundtrack）、EP 5 個、Single 3 個、**primary-type=Compilation 0 個**。4 張長篇依序是 **1996-10-07 本張、2000-08《Allegory & Metaphor》、2009-03《Dot & Etta's Shrimp Hut》、2017-02-28《Hiatus》**——**本張是名下最早的一張長篇。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=d827adc7-ef0d-45e5-82d5-ee85476c9135&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "**同一個編號序列的三張在本批同時出現**：!K7 的 R 系列裡，**!K7R001CD 是本批 K. Hand《On a Journey》（1995）、!K7R007CD 是本批 Terrence Parker《Tragedies of a Plastic Soul Junkie》（1996-09-16）、!K7R008LP／!k7R008CD 是本張（1996-10-07）**——三張的編號與日期在來源端都對得起來，本張與前一號相隔三週。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ed0a5d85-d90d-3eea-91c4-0a3995b03b9c&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "同一個編號的 CD 比黑膠多兩軌，曲序也整個不一樣",
+   "串流上架的版本又多出一軌同名曲，兩種實體版本都沒有"
+  ],
+  "sound": "1996 年 10 月 !K7 的 R 系列第八號同時出了 CD 與黑膠，而兩者不一樣：CD 是九軌、黑膠是兩張 12 吋七軌，曲序也不同，〈Inside Out〉9:34 與〈Jupiter Sunrise〉6:29 兩軌只在 CD 上。九軌裡有兩軌超過九分鐘，最短的〈Endomorphine Machine〉也有 5:14，整張超過六十六分鐘。曲名一半帶著混音註記（〈Wisdom (2030 mix)〉〈Razorback (Saxy Muthaf*ka mix)〉〈Vibe (Topless mix)〉），一半是自己造的詞（〈Endomorphine Machine〉〈Sience Funktion〉，後者連 science 都少一個 c）。後來上架的數位版在末尾又補了一段 8:36 的同名曲。",
+  "keyTracks": [
+   "New School",
+   "Inside Out",
+   "Sience Funktion"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1996。release-group first-release-date **1996-10-07**、其下兩筆 release 都是 1996 DE 的 !K7（CD 那筆只記到年、黑膠那筆記 1996-10-07），**兩筆都 Official**。串流店面的 303709015 releaseDate 記 **1996-10-21**（**比黑膠晚兩週，是第三個日期**）、℗ 欄「℗ 2009 ComputerWorld BMI」——**℗ 是 2009 年的聲明，不是原盤年份**；前九軌與 CD 版逐軌長度差在 1 秒內。四處對照後年份是 1996。**同名先行單曲：無**（同名曲以兩種混音出現在碟上）。",
+  "notes": "**版本與軌數是本張最大的坑（裁定 157）**：卡單 label 欄同時記了 **!K7R008LP（黑膠、7 軌）與 !k7R008CD（CD、9 軌）**，而**串流上架的是 10 軌**。**行文引軌數前必須先選版本**：黑膠 7 軌、CD 9 軌、數位 10 軌，三者都不同。**最安全的寫法是引 CD 版的 9 軌並說明黑膠少兩軌**；〈Razorback〉8:36 那一軌**只在數位版上**，不得當原盤曲目。｜**回撈的 1 個候選採信 303709015**：前九軌與 CD 版逐位置相符、長度差在 1 秒內，是可用的固定試聽來源；**但盤名在店面上是《Razorback (2.0)》、多一軌、℗ 掛 2009**，下游要標明版本差。｜`curatorWhy` 相關：本層確認**本張是名下最早的一張長篇**（15 個 RG、4 張純長篇）。｜**曲名拼寫**：第 9 軌是〈Sience Funktion〉（Sience 少一個 c、Funktion 用 k），**照原樣寫，不要更正**；第 3 軌的混音名含遮蔽符號 `Muthaf*ka`，**行文選曲時避開這一軌**。｜**同系列三張**：本批的 K. Hand（!K7R001CD）、Terrence Parker（!K7R007CD）與本張（!K7R008）同屬一個編號序列，**這一點在來源端對得起來，行文可以寫**。｜**廠牌大小寫**：CD 那筆的 catno 寫成小寫 `!k7R008CD`、黑膠那筆寫成 `!K7R008LP`，來源端兩種並存。"
+ },
+ {
+  "key": "desc2:Claude Young|Soft Thru",
+  "artist": "Claude Young",
+  "album": "Soft Thru",
+  "facts": [
+   {
+    "f": "release-group 762fff4c 的欄位：title「Soft Thru」、artist-credit「Claude Young」（藝人實體 MBID 7f4ec759，type Person、country US、**disambiguation「techno producer」**）、first-release-date **1997**、primary-type Album、secondary-types **空**。轄下 **2 筆 release，都是 1997 BE 的 Elypsia、都 Official**：ELY014CD（**CD、9 軌**）與 ELY014LP（**兩張 12 吋、第一張 5 軌第二張 4 軌，合計 9 軌**）。**兩種載體軌數相同，這在本批算少見。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/762fff4c-d9d1-3cea-9861-955dfe175ca0?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "1997 BE 的 CD 版（Elypsia ELY014CD）逐軌曲目與長度：1〈Quicksand〉5:25、2〈Distant Signal〉4:15、3〈Shift〉5:06、4〈Change of Pace〉4:13、5〈Marching On〉6:22、6〈Days of Old〉（來源端記為 3:60，**即 4 分整前後的四捨五入殘留**）、7〈Things Look Better Now〉7:43、8〈Float〉4:27、**9〈Gates of the Afterlife〉8:28**。**九軌裡前六軌都在六分半以內，最後三軌卻一路加長，收在 8:28 的〈Gates of the Afterlife〉上——那是全張最長的一軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=762fff4c-d9d1-3cea-9861-955dfe175ca0&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "藝人端點分頁全列 **30 個 release-group**：primary-type=Album 9 個（**secondary-types 為空的只有 4 個**，另 5 個帶 Compilation 或 DJ-mix）、EP 16 個、Single 3 個、**primary-type=Compilation 0 個**。4 張長篇依序是 **1997 本張、2000《Patterns the Album》、2005《One.Nine.Eight.Four》、2013《Celestial Bodies》**——**本張是名下最早的一張長篇。** 那 5 筆帶 DJ-mix 的 Album 裡最早的是 1996 年的兩張，**都比本張早一年、都不是原創長篇**。",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=7f4ec759-9620-4ea8-942e-365d4925792c&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "回撈候選攤開曲目列比對：collectionId **1736519843**，**artistName 是「Mijk van Dijk & Claude Young」**、collectionName「Never Have It Cold - Single」（1998-11-13、3 軌〈Never Have It Cold〉6:41／〈The Church of the Iron Fist (Mijk Van Dijk Mix)〉8:21／〈(Claude Young Mix)〉7:34、℗ 1998 Superstition Records）。**三軌與本張九軌無一同名，掛名也是雙人合作而非他單獨**。**駁回。** 串流三店以掛名加盤名做 `search` 亦**無任何同名結果**，**本張維持無串流來源狀態**。",
+    "src": "https://itunes.apple.com/lookup?id=1736519843&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "**同廠同批**：Elypsia 這家比利時廠牌在本批出現兩次——**ELY007CD 是 Dark Comedy《Seven Days》（1997）、ELY014CD／ELY014LP 是本張（1997）**，兩張同年、編號相差七號。**兩張的 release 都只建了比利時一國。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=762fff4c-d9d1-3cea-9861-955dfe175ca0&fmt=json&inc=media+labels+recordings&limit=100"
+   }
+  ],
+  "hookCandidates": [
+   "前六軌都在六分半以內，最後三軌一路加長收在八分二十八秒",
+   "同年同廠出的 CD 與兩張 12 吋，難得軌數完全一樣"
+  ],
+  "sound": "1997 年 Elypsia 同年出了 CD 與兩張 12 吋，兩種載體都是九軌——在這批碟裡算少見，多數同期作品的黑膠與 CD 軌數都對不上。九軌的排法是明顯的漸進：前六軌〈Quicksand〉5:25 到〈Days of Old〉約四分，全部在六分半以內；最後三軌〈Things Look Better Now〉7:43、〈Float〉4:27 與〈Gates of the Afterlife〉8:28 把長度一路推開，收在全張最長的那一軌上。曲名從物理狀態（〈Quicksand〉〈Shift〉〈Float〉）走到訊號（〈Distant Signal〉），最後落在來世的門上。",
+  "keyTracks": [
+   "Quicksand",
+   "Things Look Better Now",
+   "Gates of the Afterlife"
+  ],
+  "status": "full",
+  "yearVerified": "一致，1997。release-group first-release-date **1997**、其下兩筆 release 都是 1997 BE 的 Elypsia（ELY014CD 與 ELY014LP，皆 Official），**沒有任何再發**。串流三店查無（回撈候選是 1998 年的雙人合作單曲，已駁回），℗ 那一路對不了。四處對照只成立兩處，仍指向 1997。**同名先行單曲：無。**",
+  "notes": "**回撈的 1 個候選駁回**：1736519843 的掛名是雙人合作、盤名與曲目都與本張無關。**本張維持無串流來源狀態、封面走圖庫那一路**——卡單 `curatorRisk` 提到的圖庫首次回 5xx、重試後回 200 這件事屬於本批裁定第 5 條的範圍，本層不重跑。｜**第 6 軌的長度不要引**：來源端記為 **3:60**，那是秒數四捨五入的殘留（實際約 4 分整）。**行文與 hook 都不得寫「3 分 60 秒」，要提就寫「約四分鐘」。**｜`curatorWhy` 相關：本層確認**本張是名下最早的原創長篇**（30 個 RG、4 張純長篇）；但同一份目錄裡 **1996 年有兩筆帶 DJ-mix 的 Album 比本張早**，**行文若寫「第一張」必須加上「原創長篇」的限定**，否則會與那兩筆打架。｜**兩種載體軌數相同**（CD 與兩張 12 吋都是 9 軌），**這一點可以放心引**——本批多數碟不是這樣。｜**同廠同批**：Dark Comedy《Seven Days》（ELY007CD）與本張（ELY014）同年同廠，編號相差七號，**這一點在來源端對得起來**。｜**盤名的 Thru**：是縮寫拼法，不是 Through。"
  }
 ]
