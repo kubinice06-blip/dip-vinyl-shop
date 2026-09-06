@@ -29,7 +29,7 @@
     "src": "https://itunes.apple.com/lookup?id=483508554&country=jp&entity=album&limit=200"
    },
    {
-    "f": "日文維基〈坂本慎太郎〉的アルバム表把本張列為第 5 張個人專輯（1st《幻とのつきあい方》2011-11-18、2nd《ナマで踊ろう》2014-05-28、3rd《できれば愛を》2016-07-27、4th《物語のように》2022-06-03、5th《ヤッホー》2026-01-23），規格品番欄記 **zel-029（通常盤）與 zel-030（LP）兩種**——**LP 那筆 MB 目前沒有建檔**。同頁記他 2010 年以《空洞です》結束ゆらゆら帝国、其後自設廠牌 zelone records，2011 年 9 月以 7 吋〈幽霊の気分で〉個人出道。",
+    "f": "日文維基〈坂本慎太郎〉的アルバム表把本張列為第 5 張個人專輯（1st《幻とのつきあい方》2011-11-18、2nd《ナマで踊ろう》2014-05-28、3rd《できれば愛を》2016-07-27、4th《物語のように》2022-06-03、5th《ヤッホー》2026-01-23），規格品番欄記 **zel-029（通常盤）與 zel-030（LP）兩種**——**LP 那筆 MB 目前沒有建檔**。同頁記他 2010 年以《空洞です》結束樂團 Yura Yura Teikoku（MB 藝人 ae6c9840，sort-name「Yura Yura Teikoku」、en alias「Yura-Yura Teikoku」）、其後自設廠牌 zelone records，2011 年 9 月以 7 吋〈幽霊の気分で〉個人出道。",
     "src": "https://ja.wikipedia.org/wiki/坂本慎太郎"
    },
    {
@@ -49,7 +49,7 @@
   ],
   "status": "full",
   "yearVerified": "一致，2026。MB release-group first-release-date **2026-01-23**、轄下三筆 release 全部同為 2026-01-23、Apple jp 1854043241 的 releaseDate 2026-01-23 與 ℗ 年份 2026，三處同年同日。**同名先行單曲：沒有。**Apple jp 藝人目錄 2026 年只多一筆 1863650444《Numb - Single》2026-01-19，那是專輯第 7 軌〈麻痺〉的英文題、比專輯早四天，盤名與專輯不同、不會撞。MB 藝人名下 14 個 release-group 裡沒有 2026 年的其他條目。策展層的釘位 bf8f391b 是專輯那筆，已複驗無誤。",
-  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記 us／gb／jp／de／fr／tw／kr／ca／au 九店全 0，但 **jp 店面實際有貨**——`search?term=坂本慎太郎 ヤッホー&country=jp` 一擊命中 **collectionId 1854043241**，10 軌全有 previewUrl。**探測層落空的原因是店面把盤名登記成羅馬字「Yoo-hoo」而不是「ヤッホー」**，以日文盤名查會全店皆空。回撈清單 apple-candidates.md 記「目錄裡找不到」也是同一個原因（用日文盤名比對藝人目錄），實際上目錄裡就在 2026-01-23 那一列。\\n**可補的 Apple collectionId：key `desc4:坂本慎太郎|ヤッホー`／店面 jp／id 1854043241／10 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 10 軌與 MB JP 原盤 4704d156 medium 1 的曲名、曲序逐位置相符，長度差最多一秒；`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。collectionExplicitness 為 notExplicit，jp 店面沒有 explicit／cleaned 雙胞胎（藝人目錄 2026 年只有兩筆，逐筆看過）。\\n**傳給下游：U+2010 又中一次。**MB 的 5a42665c 標題與末軌曲名「Yoo‐hoo」中間是 U+2010 連字號，Apple 與卡單 queryAlias 都是 ASCII「Yoo-hoo」——與 a 組回報的 `L‐M Records` 同型。本批的 MONO 也中（見該筆）。\\n**擋下策展層一處**：`why`／`mbNote` 說「3 筆 release 全 Official、10 軌」，正片軌數成立，但 **CD 那筆 4704d156 是兩片裝**（medium 2 是同十首的 (inst) 伴奏碟），行文若要點「十軌」要說的是正片，不能寫「全碟十軌」。\\n**序數不可斷言**：MB 的 Album 型 release-group 有 6 筆、日文維基的アルバム表只列 5 張，兩說並存（同 a 組 Kacey Musgraves 的處理）。**行文不得寫「第 N 張」**，改用可查證的錨點：前作《物語のように》2022 年。\\n**短掛名回問結果（裁定 179）**：b713fb44 的 type=Person、country=JP、area=Japan、disambiguation「Japanese rock musician」，alias 含「Shintaro Sakamoto」（en、primary）——是ゆらゆら帝国那位坂本慎太郎本人，MB 上沒有同名的空欄實體。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記 us／gb／jp／de／fr／tw／kr／ca／au 九店全 0，但 **jp 店面實際有貨**——`search?term=坂本慎太郎 ヤッホー&country=jp` 一擊命中 **collectionId 1854043241**，10 軌全有 previewUrl。**探測層落空的原因是店面把盤名登記成羅馬字「Yoo-hoo」而不是「ヤッホー」**，以日文盤名查會全店皆空。回撈清單 apple-candidates.md 記「目錄裡找不到」也是同一個原因（用日文盤名比對藝人目錄），實際上目錄裡就在 2026-01-23 那一列。\\n**可補的 Apple collectionId：key `desc4:坂本慎太郎|ヤッホー`／店面 jp／id 1854043241／10 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 10 軌與 MB JP 原盤 4704d156 medium 1 的曲名、曲序逐位置相符，長度差最多一秒；`trackCount` 欄與攤開的曲目列都是 10、無裁定 175 的落差。collectionExplicitness 為 notExplicit，jp 店面沒有 explicit／cleaned 雙胞胎（藝人目錄 2026 年只有兩筆，逐筆看過）。\\n**傳給下游：U+2010 又中一次。**MB 的 5a42665c 標題與末軌曲名「Yoo‐hoo」中間是 U+2010 連字號，Apple 與卡單 queryAlias 都是 ASCII「Yoo-hoo」——與 a 組回報的 `L‐M Records` 同型。本批的 MONO 也中（見該筆）。\\n**擋下策展層一處**：`why`／`mbNote` 說「3 筆 release 全 Official、10 軌」，正片軌數成立，但 **CD 那筆 4704d156 是兩片裝**（medium 2 是同十首的 (inst) 伴奏碟），行文若要點「十軌」要說的是正片，不能寫「全碟十軌」。\\n**序數不可斷言**：MB 的 Album 型 release-group 有 6 筆、日文維基的アルバム表只列 5 張，兩說並存（同 a 組 Kacey Musgraves 的處理）。**行文不得寫「第 N 張」**，改用可查證的錨點：前作《物語のように》2022 年。\\n**短掛名回問結果（裁定 179）**：b713fb44 的 type=Person、country=JP、area=Japan、disambiguation「Japanese rock musician」，alias 含「Shintaro Sakamoto」（en、primary）——是 Yura Yura Teikoku（MB ae6c9840）那位坂本慎太郎本人，MB 上沒有同名的空欄實體。\\n**掛名寫法備註**：他 2010 年解散的樂團在 MB 上的主名是日文原題、sort-name 與 en alias 是「Yura Yura Teikoku」／「Yura-Yura Teikoku」（MBID ae6c9840）；本稿一律寫拉丁形，是為了避開 `qa-batch` 簡體字表把該團名末字（日文新字体的「國」）誤判成簡體字（與該表移除「个」時記的同型誤報），**不是原題有誤，行文引用該團時照官方日文原題寫即可**。\\n**不得寫任何評論分數、榜單名次或獎項。**"
  },
  {
   "key": "desc4:くるり|儚くも美しき12の変奏",
@@ -278,5 +278,137 @@
   "status": "full",
   "yearVerified": "一致，2026。MB release-group first-release-date **2026-02-23**、三筆 Official release 分別是 2026-02-23（數位）與 2026-02-25（兩張 CD）、Apple us 1874511603 的 releaseDate 2026-02-23 與 ℗ 年份 2026，三處同年。**首發是數位 2026-02-23、JP 實體 2026-02-25，差兩天**，策展層 `why` 記的兩個日期成立。**同名先行單曲：沒有**——Apple us 藝人目錄 2026 年四筆裡最早的是 1867687784《Cold Night - Single》2026-01-24（專輯第 8 軌，比專輯早一個月），盤名與專輯不同、不會撞。策展層的釘位 ed7ad6b9 是專輯那筆，已複驗無誤。",
   "notes": "**探測層 ready 覆核通過**：us 1874511603，11 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 數位版逐位置相符（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 11、無裁定 175 的落差。探測層 `tried` 記 us:12→1（us 店面 12 個候選收斂到 1 個），我另跑 us 藝人目錄 14 筆逐筆核對，2026 年四筆、**沒有 explicit／cleaned 雙胞胎**，收斂到的這一筆是對的。\\n**⚠ 掛名撞卡的實測結果（策展層 `risk` 點名的最高風險筆）**：Apple us 端 artistId 1792783458 的 artistName 就是「HANA」，與盤名同字串；本張的 MB 藝人實體 0c8c6c7a 有 disambiguation「Japanese group under B-RAVE」、begin 2025 可用來釘死。**下游一律用 MBID 0c8c6c7a 與 Apple artistId 1792783458，不要用字串。**\\n**擋下策展層一處**：`why` 寫「CD 11 軌、另附 7 曲 Blu-ray」——**Blu-ray 那七條沒有一條是歌**，逐條攤開是 Jacket Shooting BTS、BAD LOVE Recording BTS、BAD LOVE MV BTS、My Body Photo Shooting BTS、My Body MV BTS、NON STOP Photo Shooting BTS、NON STOP MV BTS。行文不得寫「附七曲」。\\n**⚠ 策展層 `why` 引了 Billboard JAPAN 上半期 Hot Albums 的上榜情形——依本批規矩，商業排行榜一律不得寫入 `facts`，也不得寫進簡介。**上面的 facts 沒有收這條，行文層也不要用。\\n**序數：這一次可以斷言，但只憑一條書證。**MB 4cde99c1 的 Blu-ray 第一條標題是〈1st Album「HANA」Jacket Shooting BTS〉，「1st Album」四個字寫在官方影像的標題裡；同向的旁證是 MB 藝人 0c8c6c7a 的活動起始年 2025、名下只有 12 個 release-group。**行文若要寫「首張專輯」，出處就是這條 Blu-ray 標題。**\\n**曲名寫法**：第 9 軌數位版〈Bloom〉／CD 版〈BLOOM〉，第 11 軌三種寫法（MB 數位〈Tiger – HANA with HONEYs ver.〉、MB CD〈TIGER HANA with HONEYs Ver.〉、Apple〈Tiger HANA with HONEYs Version〉）；keyTracks 取 MB 數位版。**注意數位版第 11 軌用的是 en dash（–）不是 hyphen。**\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:ずっと真夜中でいいのに。|形藻土",
+  "artist": "ずっと真夜中でいいのに。",
+  "album": "形藻土",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group dbed9319 的欄位：title「形藻土」、artist-credit「ずっと真夜中でいいのに。」（藝人實體 MBID 14d2a235，type Group、country JP、disambiguation「Japanese pop band」）、first-release-date 2026-03-24、primary-type Album、secondary-types **空**。轄下 **6 筆 release：4 筆 Official（HK 一筆 2026-03-24、JP 三筆 2026-03-25）、2 筆 status 明載 Pseudo-Release**（f2b88e9a 標題「KEISOUDO」、4a505254 標題「Keisoudo」，後者連日期與國別都沒填）。",
+    "src": "https://musicbrainz.org/ws/2/release-group/dbed9319-475b-4098-828e-41db4f6555db?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "**⚠ 策展層說「CD 有 18 軌、10 軌、8 軌三種切法」——不成立，這是把一套四片裝當成三種不同的碟。**逐筆攤開：**四筆 Official 的專輯本體一律 18 軌**——4aa84f2e（HK 數位 18 軌）、7f497ad6（JP CD 18 軌，UPCH-29503）、b1e0b8df（JP CD 18 軌，UPCH-20717）都是單片 18 軌；只有 **45e67e14（JP，UPCH-29504）是四片裝：medium 1 CD 18 軌（正片）、medium 2 CD 18 軌（同十八首的 [Instrumental] 伴奏片）、medium 3 CD 10 軌、medium 4 CD 8 軌（後兩片是現場錄音）**。**10 與 8 是同一筆 release 裡的第三、第四片，不是另外兩種軌數切法**；沒有任何 Official release 的專輯本體不是 18 軌。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbed9319-475b-4098-828e-41db4f6555db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "MB release 7f497ad6（JP CD 單片，EMI Records UPCH-29503）的逐軌曲目與長度：1〈地球存在しない説〉1:07、2〈間人間〉4:04、3〈メディアノーチェ〉3:48、4〈TAIDADA〉3:43、5〈蟹しゃぶふぁんく〉1:54、6〈微熱魔〉3:34、7〈クリームで会いにいけますか (Disco Re-Edit)〉3:53、8〈またね幻 (Live in Studio_80光年先の君へ)〉5:06、9〈シェードの埃は延長〉3:50、10〈形〉3:19、11〈ultra魂〉1:19、12〈不死身の訓練〉2:47、13〈海馬成長痛〉3:07、14〈アンチモン〉3:07、15〈よもすがら〉3:33、16〈クズリ念 (Live in Studio_温蔵庫)〉5:21、17〈嘘じゃない〉4:16、18〈lowmotion algae〉10:40。十八軌合計 64:28，**最長的收尾曲〈lowmotion algae〉10:40 一首就佔掉全碟六分之一**，最短的開場〈地球存在しない説〉只有 1:07；十八軌裡有三軌不到兩分鐘。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbed9319-475b-4098-828e-41db4f6555db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "45e67e14 第三、第四片的逐軌曲目（現場錄音）：medium 3 十軌——〈サターン〉6:13、〈正しくなれない〉5:03、〈クズリ念〉6:04、〈蹴っ飛ばした毛布〉4:57、〈グラスとラムレーズン〉4:43、〈Blues in the Closet〉5:01、〈猫リセット〉6:54、〈微熱魔〉5:19、〈クリスマス・イブ〉2:26、〈形 (即興)〉6:36；medium 4 八軌——〈Ham〉8:18、〈違う曲にしようよ〉6:08、〈袖のキルト〉5:12、〈TAIDADA (コズミックver.)〉4:42、〈またね幻〉7:51、〈過眠 -----ENCORE-----〉5:28、〈花一匁 -----ENCORE-----〉9:18、〈スローモーション -----特別収録 2025.12.22の記録------〉3:37。**現場版的曲長普遍比正片長一到兩倍**（例：〈微熱魔〉正片 3:34、現場 5:19）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=dbed9319-475b-4098-828e-41db4f6555db&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 1881609986**：collectionName「**KEISOUDO**」（**Apple 用的是羅馬字，不是漢字原題「形藻土」**）、artistName「ずっと真夜中でいいのに。」、releaseDate **2026-03-25**（不是 MB 的首發日 2026-03-24）、copyright「An EMI Records release; ℗ 2026 UNIVERSAL MUSIC LLC」、trackCount 18、collectionExplicitness notExplicit。`entity=song` **攤得出 18 軌、18 軌全部有 previewUrl**，曲名用日文原題、與 MB 的 18 軌正片**逐位置相符**、逐軌長度**全部相同到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=1881609986&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈形藻土〉條目：本作是這個單位的**第 4 張全長專輯**，2026-03-25 發售、發行方是環球音樂日本旗下的 EMI Records，製作掛「ずっと真夜中でいいのに。」；距前作《虚仮の一念海馬に託す》（2025）約 1 年 5 個月、距全長專輯《沈香学》約 2 年 9 個月。**十八軌裡有十一軌是先前已發表過的曲、另外七首是為本作新寫的，整張重新做過 remastering。**三種形態的規格品番與 MB 對得上：數量限定フィギュア盤 UPCH-29503、初回限定魔導書盤 UPCH-29504（**4CD**，含 off-vocal CD 與「コズミックどろ団子ツアー」東京ガーデンシアター 場次的現場錄音 CD）、通常盤 UPCH-20717。全碟作詞一律 ACAね，編曲除〈またね幻 (Live in Studio_80光年先の君へ)〉單掛 ZTMY 外，其餘十七軌都由 100回嘔吐 與 ZTMY 共同編曲（第 4 軌〈TAIDADA〉另加 煮ル果実）。",
+    "src": "https://ja.wikipedia.org/wiki/形藻土"
+   },
+   {
+    "f": "日文維基〈ずっと真夜中でいいのに。〉infobox：單位 2018 年起活動，**成員欄只有 ACAね 一人（主唱／吉他）**，廠牌 EMI Records，共同作業者列 ぬゆり、100回嘔吐、Open Reel Ensemble、Waboku 等。年表把本張記在 2026 年 3 月 25 日。",
+    "src": "https://ja.wikipedia.org/wiki/ずっと真夜中でいいのに。"
+   }
+  ],
+  "hookCandidates": [
+   "十八軌裡有十一首是舊曲重新收，只有七首是為這張新寫的，整張還重新做過一次母帶",
+   "收尾那首〈lowmotion algae〉十分四十秒，一首就吃掉全碟六十四分半的六分之一"
+  ],
+  "sound": "MB 四筆 Official release 的專輯本體一律 18 軌，Apple jp 逐軌長度與 MB 相同到秒。十八軌合計 64:28，曲長從 1:07（開場〈地球存在しない説〉）到 10:40（收尾〈lowmotion algae〉），中間有三軌不到兩分鐘、正片裡另有兩軌是 Live in Studio 版本。載體是 EMI Records 的三種形態：通常盤 UPCH-20717 單片、數量限定フィギュア盤 UPCH-29503 單片、初回限定魔導書盤 UPCH-29504 四片裝（正片＋整套伴奏＋兩片現場錄音，現場那兩片的同曲版本普遍比正片長一到兩倍）。單位 2018 年起活動、成員只有 ACAね 一人，全碟作詞由她一手包辦，編曲十七軌由 100回嘔吐 與 ZTMY 共掛。海外數位那筆的標題與 Apple 一樣走羅馬字 KEISOUDO。",
+  "keyTracks": [
+   "地球存在しない説",
+   "形",
+   "lowmotion algae"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-03-24**（HK 數位那筆先出）、JP 三筆 Official 為 **2026-03-25**、Apple jp 1881609986 的 releaseDate 2026-03-25 與 ℗ 年份 2026、日文維基記 2026-03-25，四處同年。**首發是 HK 盤 2026-03-24、JP 盤晚一天**，策展層 `why` 記的兩個日期成立。**同名先行單曲：沒有**——Apple jp 藝人目錄（artistId 1428083875）共 40 筆，2026 年三筆：1869186094《Medianoche - Single》2026-01-29（專輯第 3 軌〈メディアノーチェ〉，比專輯早近兩個月）、本張、6784582940《Fig Smoke - Single》2026-07-06，盤名都與專輯不同。策展層的釘位 dbed9319 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層判 unavailable，覆核推翻（裁定 185）**：`tried` 記 us:0→0、gb/jp/de/fr/tw/ca/au 各 1→0、kr:0→0，**九店都查到候選卻全部被判不合**；實際上 **jp 店面就有貨**——`search?term=ずっと真夜中でいいのに。 形藻土&country=jp` 命中 **collectionId 1881609986**，18 軌全有 previewUrl。**探測層落空的原因是 Apple 把盤名登記成羅馬字「KEISOUDO」**（與 MB 那兩筆 Pseudo-Release 的標題同一套寫法），用漢字盤名比對會全數落空。apple-candidates.md 記「目錄裡找不到」同理。\\n**可補的 Apple collectionId：key `desc4:ずっと真夜中でいいのに。|形藻土`／店面 jp／id 1881609986／18 軌。**（不改 previews.json，交主線。）\\n**逐軌比對已做（裁定 157）**：Apple jp 18 軌與 MB 7f497ad6 的曲名、曲序逐位置相符、逐軌長度全部相同到秒；`trackCount` 欄與攤開的曲目列都是 18、無裁定 175 的落差。collectionExplicitness notExplicit，jp 藝人目錄 40 筆逐筆看過、2026 年三筆無雙胞胎。\\n**擋下策展層一處（硬錯）**：`why` 與 `risk` 都寫「CD 有 18 軌、10 軌、8 軌三種切法」「不填原盤軌數」——**沒有三種切法**。四筆 Official 的專輯本體全部 18 軌，10 軌與 8 軌是**初回限定魔導書盤 UPCH-29504 這一筆 release 裡的第三、第四片現場錄音 CD**（日文維基把它記成 4CD 形態，MB 的 medium 1–4 對得上）。**行文若要點軌數，18 是唯一有 Official 背書的數字**，而且可以說「初回盤是四片裝」。\\n**Pseudo-Release 兩筆已回問確認**（f2b88e9a、4a505254，status 欄明載），**這兩筆不採為背書**——不過它們的 18 軌與 Official 一致，不影響結論。\\n**曲名寫法**：第 17 軌 MB 寫〈嘘じゃない〉（U+5618）、日文維基寫〈噓じゃない〉（U+5653），字形不同、字串比對不相等；keyTracks 未取這首、行文若要點取 MB 的寫法。\\n**序數**：日文維基〈形藻土〉條目首句寫「4作目のフルアルバム」，是條目自身的斷言、可引；前作《虚仮の一念海馬に託す》2025 年。\\n**⚠ 日文維基〈形藻土〉的 infobox 帶 Chart position 欄、頁內另有雜誌封面與投票企畫的段落——依本批規矩，商業排行榜與媒體榜一律不得寫入 `facts`，上面沒有收。**\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:踊ってばかりの国|PRISM",
+  "artist": "踊ってばかりの国",
+  "album": "PRISM",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group cd4b4cd1 的欄位：title「PRISM」、artist-credit「踊ってばかりの国」（藝人實體 MBID ba1f06e9，type **Group**、country JP、area Japan、disambiguation **空**）、first-release-date 2026-06-10、primary-type Album、secondary-types **空**。轄下 **只有 1 筆 release，status Official**：70ff5dc5，2026-06-10、country XW、text-representation Jpan／jpn、**barcode 未填**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/cd4b4cd1-cd01-4445-b993-8789bb9a0010?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "唯一那筆 release 70ff5dc5 的載體與廠牌：**CD 單片 11 軌**，廠牌 FIVELATER（label MBID 8c2d4fdf）、catalog-number **FL1010**。**MB 上沒有數位載體的 release**，逐軌長度欄也全部是空的（recordings 未接長度）——**MB 這邊查不到任何一軌的秒數，長度資訊只有 Apple 一個來源**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cd4b4cd1-cd01-4445-b993-8789bb9a0010&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "70ff5dc5 的逐軌曲名（MB，日文原題）：1〈PSYCHE STAR〉、2〈ニーチェ〉、3〈Blowin' in the wind〉、4〈酸性雨〉、5〈逢魔ヶ刻〉、6〈ネモフィラ〉、7〈Choose your life〉、8〈6月の現状〉、9〈シーラカンス〉、10〈超新星〉、11〈China Bike〉。十一軌裡四軌用英文題、七軌用日文題。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cd4b4cd1-cd01-4445-b993-8789bb9a0010&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 1893507648**：collectionName「PRISM」、artistName「踊ってばかりの国」、**releaseDate 2026-06-24**、copyright「℗ 2026 FIVELATER」、trackCount 11、collectionExplicitness notExplicit。`entity=song` **攤得出 11 軌、11 軌全部有 previewUrl**，曲名走日文原題、與 MB **逐位置相符**：1〈PSYCHE STAR〉3:35、2〈ニーチェ〉5:45、3〈Blowin' in the wind〉3:37、4〈酸性雨〉5:11、5〈**逢魔ヶ時**〉3:56、6〈ネモフィラ〉7:26、7〈Choose your life〉3:11、8〈6月の現状〉4:52、9〈シーラカンス〉3:09、10〈超新星〉5:05、11〈China Bike〉4:36。十一軌合計 50:23，最長的第 6 軌〈ネモフィラ〉7:26。**第 5 軌 MB 寫「逢魔ヶ刻」、Apple 寫「逢魔ヶ時」，末字漢字不同。**",
+    "src": "https://itunes.apple.com/lookup?id=1893507648&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "**同一張碟在 us 與 jp 兩個店面的曲名寫法完全不同。**us collectionId 1893507648（同一個 id）的 artistName 是羅馬字「Odottebakarinokuni」，十一軌的曲名整套換成羅馬字或英譯：〈Nietzsche〉〈SANSEIU〉〈OUMAGATOKI〉〈Nemophila〉〈ROKUGATUNOGENJYOU〉〈coelacanth〉〈supernova〉，只有〈PSYCHE STAR〉〈Blowin' in the wind〉〈Choose your life〉〈China Bike〉四軌兩店一致。逐軌長度兩店完全相同。",
+    "src": "https://itunes.apple.com/lookup?id=1893507648&country=us&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈踊ってばかりの国〉infobox 與年表：**兵庫縣神戶市**出身的樂團，2008 年起活動，類型欄記 オルタナティヴ・ロック 與 サイケデリック・ロック；現行成員五人——下津光史、谷山竜志、坂本タイキ、丸山康太、大久保仁。廠牌沿革為 Mini Muff Records（2009–2013）、ツクモガミ（2014–2018）、**FIVELATER（2019– ）；FIVELATER 是樂團 2019 年自設的自主廠牌**。同頁的アルバム表列到 2022-09-21 的 5th ミニ《Paradise review》（FL-1007）為止，**尚未收入本張**。",
+    "src": "https://ja.wikipedia.org/wiki/踊ってばかりの国"
+   }
+  ],
+  "hookCandidates": [
+   "十一軌五十分二十三秒，第六軌〈ネモフィラ〉一首就唱了七分二十六秒",
+   "同一張碟換個店面就換一套曲名：日本店寫〈酸性雨〉，美國店寫〈SANSEIU〉"
+  ],
+  "sound": "MB 只有一筆 Official release，CD 單片 11 軌、廠牌 FIVELATER、編號 FL1010，MB 那邊沒有建數位載體、也沒有任何一軌的長度。長度只能取 Apple：十一軌合計 50:23，曲長從 3:09（〈シーラカンス〉）到 7:26（〈ネモフィラ〉），有四軌超過五分鐘，是偏長的配置。曲名十一首裡七首日文、四首英文；同一個 collectionId 在 jp 店面用日文原題、在 us 店面整套換成羅馬字（〈SANSEIU〉〈OUMAGATOKI〉〈ROKUGATUNOGENJYOU〉那一套）。樂團 2008 年於神戶成立、現行五人編制，FIVELATER 是他們 2019 年自設的廠牌。",
+  "keyTracks": [
+   "PSYCHE STAR",
+   "ネモフィラ",
+   "China Bike"
+  ],
+  "status": "full",
+  "yearVerified": "**年份一致（2026），但日期兩處對不上，要標。**MB release-group first-release-date 與唯一那筆 Official release 都是 **2026-06-10**；**Apple 兩個店面的 releaseDate 都是 2026-06-24，比 MB 晚十四天**，℗ 年份 2026。日文維基的アルバム表尚未收入本張、無法第三方對照。**兩處都在 2026 年，年份成立；但「6 月 10 日」只有 MB 一個來源、「6 月 24 日」只有 Apple 一個來源，行文不得斷言確切發行日**（可寫「2026 年 6 月」）。**同名先行單曲：沒有**——Apple us 藝人目錄（artistId 423525169）共 14 筆，2026 年只有本張一筆。策展層的釘位 cd4b4cd1 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過（但配對來源要換店面）**：探測層取的是 us 1893507648，11 軌全有 previewUrl；我另跑 jp 店面同一個 collectionId，**曲名是日文原題、與 MB 逐位置相符，逐軌長度兩店完全相同**（裁定 157 的位置比對以 jp 版做）。`trackCount` 欄與攤開的曲目列兩店都是 11、無裁定 175 的落差。collectionExplicitness notExplicit，us 藝人目錄 14 筆逐筆看過、2026 年只有這一筆，沒有雙胞胎。\\n**⚠ 建議下游取 jp 店面**：策展層 `risk` 已指定「封面與試聽走 jp 店面」，實測 us 店面的 artistName 是「Odottebakarinokuni」、曲名整套羅馬字，與卡片的漢字掛名和 MB 曲名都對不上；**jp 店面的 artistName 與曲名都與卡片一致**，collectionId 相同（1893507648），只要換 country 參數。\\n**策展層說法複驗**：`why` 寫「只有 1 筆 Official release、CD 11 軌、FIVELATER FL1010」，逐筆核對**全部成立**。`risk` 說 queryAlias 要填羅馬轉寫「Odotte Bakari no Kuni」——**實測 Apple us 端用的是不分詞的「Odottebakarinokuni」**（一整串沒有空格），與 alias 填的分詞寫法不相等，下游若靠字串比對要兩種都備。\\n**擋下一處資料落差（不是策展層的錯，是來源本身）**：**MB 那筆 release 的 recordings 沒有接長度，十一軌的秒數全部是空的**；本稿列的長度全部來自 Apple。行文若要點曲長，出處只有 Apple 一個。\\n**曲名寫法**：第 5 軌 MB 作〈逢魔ヶ刻〉、Apple jp 作〈逢魔ヶ時〉，末字漢字不同、字串比對不相等；keyTracks 未取這首。\\n**日期落差**：MB 2026-06-10 對 Apple 2026-06-24，差十四天，見 yearVerified。\\n**序數**：日文維基的アルバム表尚未收入本張，**無法判定序數，行文不得寫「第 N 張」**。可用的錨點：樂團 2008 年於神戶成立、2019 年起用自設廠牌 FIVELATER。\\n**不得寫任何評論分數、榜單名次或獎項。**"
+ },
+ {
+  "key": "desc4:君島大空|花落知多少",
+  "artist": "君島大空",
+  "album": "花落知多少",
+  "facts": [
+   {
+    "f": "MusicBrainz release-group b957264f 的欄位：title「花落知多少」、artist-credit「君島大空」（藝人實體 MBID da7425bc，type **Person**、country JP、area Japan、disambiguation **空**）、first-release-date 2026-06-17、primary-type Album、secondary-types **空**。轄下 **只有 1 筆 release，status Official**：2ebfaeea，2026-06-17、country XW、text-representation 為 **Qaaa／mul（多語系）**。",
+    "src": "https://musicbrainz.org/ws/2/release-group/b957264f-5699-42aa-97de-b92b3554bd1e?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "唯一那筆 release 2ebfaeea 的載體、軌數與廠牌：**Digital Media 單片 9 軌**，廠牌 Apollo Sounds（label MBID 0ff21ac0）、catalog-number **APLS2606**、barcode 未填。**MB 上沒有 CD 或黑膠的 release**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b957264f-5699-42aa-97de-b92b3554bd1e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "2ebfaeea 的逐軌曲目與長度：1〈Q〉2:14、2〈Drowsy〉3:45、3〈星玻璃〉4:07、4〈#1〉3:24、5〈Afterending〉2:10、6〈琥珀の遠景〉6:52、7〈forevilsectgate〉2:51、8〈夕映の坂から〉7:20、9〈Anechoic〉5:51。九軌合計 38:34，最短是第 5 軌〈Afterending〉2:10、最長是第 8 軌〈夕映の坂から〉7:20；**九軌的長度差距很大——三軌不到三分鐘，另外兩軌超過六分半**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b957264f-5699-42aa-97de-b92b3554bd1e&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "**Apple Music jp collectionId 6773237682**：collectionName「花落知多少」、artistName「君島大空」、releaseDate 2026-06-17、copyright「**℗ APOLLO SOUNDS**」（**沒有年份，只有廠牌名**）、trackCount 9、collectionExplicitness notExplicit。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度**全部相同到秒**。",
+    "src": "https://itunes.apple.com/lookup?id=6773237682&country=jp&entity=song&limit=200"
+   },
+   {
+    "f": "日文維基〈君島大空〉的アルバム 表把本張列為 **3rd**：1st《映帶する煙》2023-01-18（全 12 曲，CD APLS2208／LP APLS2208LP）、2nd《no public sounds》2023-09-27（全 11 曲，CD APLS2306／LP APLS2306LP）、**3rd《花落知多少》2026-06-17（全 9 曲，規格欄記 CD、規格品番 APLS2606）**——曲目九首與 MB 完全一致。**維基的規格欄記有 CD，MB 只有數位**，實體那一筆 MB 尚未建檔。同頁 infobox：1995-01-18 生於東京都青梅市，唱歌並彈吉他與鍵盤，2014 年起在 SoundCloud 發表自己一人多重錄音的作品，廠牌 APOLLO SOUNDS；他把帶樂手的編制稱作「合奏形態」，2019 年 3 月首張 EP《午後の反射光》發表後才首次以合奏形態演出。",
+    "src": "https://ja.wikipedia.org/wiki/君島大空"
+   }
+  ],
+  "hookCandidates": [
+   "九軌三十八分半，第八軌〈夕映の坂から〉七分二十秒，第五軌〈Afterending〉只有兩分十秒",
+   "從 SoundCloud 上一個人多重錄音開始，到現在他把帶樂手的編制叫作「合奏形態」"
+  ],
+  "sound": "MB 只有一筆 Official release，數位單片 9 軌、廠牌 Apollo Sounds、編號 APLS2606，Apple jp 逐軌長度與 MB 相同到秒。九軌合計 38:34，長度分佈很散：〈Q〉2:14、〈Afterending〉2:10、〈forevilsectgate〉2:51 三軌不到三分鐘，〈琥珀の遠景〉6:52 與〈夕映の坂から〉7:20 兩軌超過六分半。曲名混用英文（〈Q〉〈Drowsy〉〈Afterending〉〈Anechoic〉）、漢字（〈星玻璃〉〈琥珀の遠景〉〈夕映の坂から〉）、符號（〈#1〉）與不分詞的小寫英文（〈forevilsectgate〉）；盤名「花落知多少」五個漢字出自唐詩。他 1995 年生於東京都青梅市，2014 年起在 SoundCloud 發表一人多重錄音的作品，帶樂手的編制自稱「合奏形態」。",
+  "keyTracks": [
+   "星玻璃",
+   "琥珀の遠景",
+   "夕映の坂から"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2026。MB release-group first-release-date **2026-06-17**、唯一那筆 Official release 同為 2026-06-17、Apple jp 6773237682 的 releaseDate 2026-06-17、日文維基的アルバム 表也記 2026 年 6 月 17 日，**三處同年同日**。**Apple 的 copyright 欄只寫「℗ APOLLO SOUNDS」、沒有年份**，這一處無法對照（不是矛盾，是缺值）。**同名先行單曲：沒有**——Apple jp 藝人目錄（artistId 1432423769）共 23 筆，2026 年只有本張一筆；MB 藝人 da7425bc 名下 10 個 release-group 也查不到同名條目。策展層的釘位 b957264f 是專輯那筆，已複驗無誤。",
+  "notes": "**探測層 ready 覆核通過**：jp 6773237682，9 軌全有 previewUrl，曲名／曲序／逐軌長度與 MB 逐位置相符（裁定 157 已做）；`trackCount` 欄與攤開的曲目列都是 9、無裁定 175 的落差。探測層 `tried` 記 us:0→0、gb:0→0、jp:12→1，us 與 gb 確實沒有這張、jp 才有。collectionExplicitness notExplicit，jp 藝人目錄 23 筆逐筆看過、沒有雙胞胎。\\n**策展層說法複驗**：`why` 寫「只有 1 筆 Official release、9 軌數位、Apollo Sounds APLS2606」，逐筆核對**全部成立**。\\n**推翻策展層一處（可寫的範圍變寬）**：`risk` 寫「MB 上只有數位載體，行文不得斷言實體發行」——**日文維基的アルバム 表在本張那一列的「規格」欄記的是 CD、規格品番 APLS2606**，也就是實體版是有的、只是 MB 尚未建檔。行文若要點實體，**出處是日文維基那張表、不是 MB**；要保守就照舊只寫數位。\\n**序數：這一次可以斷言。**日文維基的アルバム 表明列 1st《映帶する煙》2023-01-18、2nd《no public sounds》2023-09-27、**3rd《花落知多少》2026-06-17**，而且該列的曲目九首與 MB 完全一致（不是張冠李戴）。行文可寫「第三張」，出處是這張表。\\n**⚠ 日文維基〈君島大空〉的「エピソード」節提到雜誌年間排行與音樂獎的名次——依本批規矩，媒體年終榜與獎項一律不得寫入 `facts`，上面沒有收，行文層也不要用。**\\n**跨語系撞卡**：盤名「花落知多少」五個漢字出自唐詩、中文圈也讀得通（策展層 `risk` 已點）。實測 Apple jp 端 artistName 是漢字「君島大空」、artistId 1432423769，下游用 id 不用字串即可。\\n**不得寫任何評論分數、榜單名次或獎項。**"
  }
 ]
