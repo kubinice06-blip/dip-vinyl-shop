@@ -390,6 +390,11 @@ Kim English《Higher Things》（1998，Nervous 20226）——廠牌合格，
   這些廠的 1990 年代目錄大量未上串流），查無的那些依裁定 195 走無來源狀態，不影響收錄。
   逐張的 collectionId 與店面已寫進各卡的 `risk` 欄。
 - 店面固定 `us`／`gb`／`de`，本批沒有需要額外店面的碟（無日／韓／華語盤）。
+- **⚠ Apple 探測的三筆假陽性已人工歸零**（裁定 168 的形狀，子字串比對吃掉了差別）：
+  Todd Terry《Works》命中的是〈Make It Work〉單曲（`makeitworksingle` 含 `works`）、
+  Sterling Void《It's All Right》命中的是 2016 年再混單曲與 Luca Fregonese 2011 年的合作曲、
+  Virgo Four《Virgo》命中的是 Stefan Braatz 的客串單曲。三張的 `risk` 欄已改記「三店查無」，
+  封面走 CAA（三張的 CAA 都是 200）。**這三筆若不人工覆核，會讓下游拿錯 collectionId 配錯碟。**
 
 ---
 
