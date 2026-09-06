@@ -798,5 +798,141 @@
   "status": "full",
   "yearVerified": "一致，1991。release-group first-release-date **1991-03-25**、其下 1991-03-25 的兩筆 FR／Official release（CD 23 軌與 12 吋 18 軌）同日、條目 infobox 記 1991 年 3 月 25 日、串流店面 fr 696519676 的 ℗ 1991 相符。**店面的 releaseDate 記 1991-01-01 是填充值**，年份無爭議。**同名對照組有一筆、在專輯之後**：2021 的《...De la planète Mars (Edition Super Deluxe)》36 軌（店面 1569638839）。**同名先行單曲：無。**",
   "notes": "**序數（可寫，但要帶條件）**：卡單 `curatorWhy` 寫「IAM 的首張專輯」。**條目首句明寫 premier album studio，並把 1990 的《Concept》稱為 demo**；**但藝人目錄把《Concept》也標成 primary-type Album、secondary-types 空，因此在目錄的排序裡本張是第 2**。**行文若要寫序數，只能寫「第一張錄音室專輯」並隱含 demo 不計；不要寫裸的「首張」或「出道作」。**｜**盤名的刪節號**：來源端 title 用 **U+2026**（`… de la planète Mars`），卡單依本批裁定 3 改成 ASCII 三點（`... de la planète Mars`），**店面則完全沒有前導刪節號**（`De la planète Mars`）。**字串比對三邊都對不上，必須指名 collectionId。**｜**版本差異**：12 吋 18 軌、CD 與店面 23 軌、超級豪華版 36 軌。**行文說軌數要指明是哪一版。**｜**撇號兩種寫法**：來源端曲名用彎撇 U+2019（`Tam‐tam de l’Afrique`、`Non soumis à l’État`、`Khéops ∈ à l’horizon`），店面一律 ASCII。**卡池走 ASCII，`keyTracks` 已按 ASCII 寫。**｜連字號：來源端〈Tam‐tam de l'Afrique〉用 U+2010，店面用 ASCII。**行文一律 ASCII。**｜**特殊符號**：第 18 軌來源端作〈Khéops ∈ à l'horizon〉（數學的屬於符號 U+2208），店面寫成〈Kheops appartient à l'horizon〉。**行文若要引這首，用店面的展開寫法比較安全。**"
+ },
+ {
+  "key": "desc2:Justice|Audio, Video, Disco.",
+  "artist": "Justice",
+  "album": "Audio, Video, Disco.",
+  "facts": [
+   {
+    "f": "release-group c3f7093d 的欄位：title「Audio, Video, Disco.」（末尾帶句點）、artist-credit「Justice」（藝人 MBID 860b2707）、first-release-date **2011-10-07**、primary-type Album、secondary-types **空**。轄下 **10 筆 release、全部 Official**，**實體一律 11 軌**（XE／AU／US／FR 的 CD 與 2011-11-25 的 FR 12 吋，Because Music／Ed Banger），**數位則有 12、13、14 軌三種**（2011-10-07 的 14 軌、2011-10-24 的 XW 12 軌、2011-10-24 的 XE「Qobuz」13 軌），日本 CD 12 軌。**11 軌是實體原盤，14 軌是數位版。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/c3f7093d-5a86-45ed-afa6-2413538074c2?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2011 XE 實體版（Because Music／Ed Banger 2564664388，CD）的 11 軌逐軌曲目與長度：1〈Horsepower〉3:40、2〈Civilization〉3:39、3〈Ohio〉4:01、**4〈Canon (Primo)〉0:27**、5〈Canon〉3:39、6〈On'n'On〉4:31、7〈Brianvision〉3:12、8〈Parade〉4:02、9〈New Lands〉4:14、10〈Helix〉4:28、**11〈Audio, Video, Disco. / Presence〉10:32**。**11 軌；第 4 軌只有 27 秒、是第 5 軌的前奏，末軌把同名曲與〈Presence〉併成一條 10 分 32 秒的軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=c3f7093d-5a86-45ed-afa6-2413538074c2&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 469202499：collectionName「Audio, Video, Disco.」、releaseDate **2011-10-24**、copyright「℗ 2011 Ed Banger Records under exclusive license to Because Music」、trackCount 14。`entity=song` **攤得出 14 軌、14 軌全部有 previewUrl**：第 1 到 10 軌與實體版**逐位置相符、長度相同到秒**；**第 11 軌之後就分家了**——店面把末軌拆開成〈Audio, Video, Disco.〉4:52 與**〈Planisphere〉17:40**，再加〈Civilization〉3:48 與〈Audio, Video, Disco.〉3:45 兩個不同版本。**上架的是 14 軌數位版，不是 11 軌實體盤。**",
+    "src": "https://itunes.apple.com/lookup?id=469202499&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張是 Justice 的 **deuxième album**（第二張專輯），2011 年 10 月 24 日在法國發行；**錄音期 2010–2011**；**製作 Gaspard Augé 與 Xavier de Rosnay**（也就是團員兩人）；總長 46 分 25 秒；曲風記 electro house／rock électronique／disco house；廠牌 Ed Banger、Elektra、Because Music。**條目說盤名是拉丁文，意思是「我聽見，我看見，我學會」。** 單曲五首：〈Civilization〉2011 年 3 月 28 日、**〈Audio, Video, Disco〉2011 年 9 月 26 日**、〈On'n'On〉2012 年 1 月 30 日、〈New Lands〉2012 年 6 月 24 日、〈Helix〉2013 年 1 月 7 日。",
+    "src": "https://fr.wikipedia.org/wiki/Audio,_Video,_Disco"
+   },
+   {
+    "f": "藝人端點分頁全列 **85 個 release-group**，其中 primary-type Album 且 secondary-types 為空的只有 **4 張**：《✝》2007-06-06、**《Audio, Video, Disco.》2011-10-07**、《Woman》2016-11-18、《Hyperdrama》2024-04-26。**本張排第 2，與條目的 deuxième 一致；池中已有《✝》《Woman》《Hyperdrama》三張，這張補齊四張正規盤的最後一格。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=860b2707-6153-4e3a-aa57-74d2b42c55b5&fmt=json&limit=100&offset=0"
+   },
+   {
+    "f": "同一藝人目錄的 fr 店面另有 `1333629536`「Audio, Video, Disco. - EP」（2011-09-26，4 軌）——**日期正好對上條目記的同名單曲發行日**，盤名與專輯只差「- EP」三字，**字串比對會配錯**。",
+    "src": "https://itunes.apple.com/lookup?id=1333629536&country=fr&entity=song&limit=200"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是拉丁文：我聽見，我看見，我學會",
+   "實體盤把同名曲與〈Presence〉焊成一條十分半的末軌，串流版又把它拆開"
+  ],
+  "sound": "實體盤（CD 與 12 吋）11 軌、總長 46 分 25 秒；數位版有 12、13、14 軌三種，串流上架的是 14 軌那一版。實體版的第 4 軌〈Canon (Primo)〉只有 27 秒、是下一軌的前奏，末軌把同名曲與〈Presence〉焊成一條 10 分 32 秒的軌；數位版則把它拆回〈Audio, Video, Disco.〉4:52 與〈Planisphere〉17:40 兩軌，另加兩首別的版本。2010 到 2011 年錄，製作就是團員兩人 Gaspard Augé 與 Xavier de Rosnay。條目把曲風記成 electro house、rock électronique 與 disco house。盤名是拉丁文的「我聽見，我看見，我學會」。",
+  "keyTracks": [
+   "Civilization",
+   "On'n'On",
+   "Audio, Video, Disco."
+  ],
+  "status": "full",
+  "yearVerified": "一致，2011。release-group first-release-date **2011-10-07**（數位）、其下 2011-10-24 的 FR／US 實體 CD 與 2011-11-25 的 FR 12 吋同年、條目 infobox 記 2011 年 10 月 24 日、串流店面 fr 469202499 的 releaseDate **2011-10-24** 與 ℗ 2011 相符。**四處同年。** **同名對照組有三型、全部要辨**：同名單曲〈Audio, Video, Disco〉2011-09-26（**比專輯早**）、店面的同名 4 軌 EP `1333629536`（日期同為 2011-09-26）、以及**專輯裡與盤名同名的曲目本身**。**凡取最早那筆的邏輯會選到 9 月 26 日那張 EP。**",
+  "notes": "**配對覆核（版本差異，寫作層必讀）**：fr `469202499` 是 **14 軌數位版**，第 1 到 10 軌與 11 軌實體盤相同到秒，**但第 11 軌之後完全不同**——實體是一條 10:32 的〈Audio, Video, Disco. / Presence〉，數位是拆開的〈Audio, Video, Disco.〉4:52＋〈Planisphere〉17:40＋兩個追加版本。**行文不得說「這張有十四首」，也不得把〈Planisphere〉當實體盤曲目**（裁定 141）。｜**配對風險**：`1333629536`（同名 4 軌 EP，2011-09-26）盤名幾乎相同、日期還更早，**必須指名 469202499**。｜**盤名末尾的句點**：來源端與店面都寫「Audio, Video, Disco.」（帶句點），**條目頁面標題卻沒有句點**。卡單走帶句點的寫法，**行文照卡單**。｜**盤名裡的半形逗號**：`Audio, Video, Disco.` 本身含兩個半形逗號，**這是官方原標題、不是行文標點**，機器掃描若報「半形逗號貼中文」屬誤報。｜**撇號**：來源端與店面本張曲名都用 ASCII 直撇（`On'n'On`），兩邊一致。｜條目的 Infobox Critique presse 整欄都是評分，**依規則一律不進 facts**。"
+ },
+ {
+  "key": "desc2:M83|Junk",
+  "artist": "M83",
+  "album": "Junk",
+  "facts": [
+   {
+    "f": "release-group b17c34e8 的欄位：title「Junk」、artist-credit「M83」（藝人 MBID 6d7b7cd4）、first-release-date **2016-04-08**、primary-type Album、secondary-types **空**。轄下 5 筆 release **全部 Official、全部 15 軌、全部同日 2016-04-08**：CA 的 Mute M83-7CD、FR 的 naïve NV834612（CD）、CA 的 Mute 數位、另兩筆數位（naïve NV834611 與 Mute 的識別碼）。**五筆全部 15 軌、全部同一天，沒有任何加曲版本。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/b17c34e8-0f3a-4c85-9592-106b203ac09b?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2016-04-08 CA 版（Mute M83-7CD，CD）的 15 軌逐軌曲目與長度：1〈Do It, Try It〉3:37、2〈Go!〉3:56、3〈Walkway Blues〉4:49、4〈Bibi the Dog〉3:54、5〈Moon Crystal〉2:27、6〈For the Kids〉4:41、**7〈Solitude〉6:04**、8〈The Wizard〉2:25、9〈Laser Gun〉4:17、10〈Road Blaster〉4:22、11〈Tension〉2:06、12〈Atlantique Sud〉3:24、13〈Time Wind〉4:09、**14〈Ludivine〉1:35**、15〈Sunday Night 1987〉4:00。**15 軌、總長 55 分 40 秒；最長〈Solitude〉6:04、最短〈Ludivine〉1:35。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=b17c34e8-0f3a-4c85-9592-106b203ac09b&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId 1160747196：collectionName「Junk」、releaseDate **2016-04-08**、copyright「℗ 2016 M83 Recording Inc. exclusively licensed to naïve for the world except North America」、**trackCount 欄寫 16**。**但 `entity=song` 只攤得出 15 軌**——依裁定 175 以攤開的曲目列為準：**15 軌、15 軌全部有 previewUrl**，曲名與曲序與原盤**逐位置相符**、**逐軌長度相同到秒**。店面另標出四軌的客席：第 2 軌 feat. Mai Lan、第 3 軌 feat. Jordan Lawlor、第 4 軌 feat. Mai Lan、第 6 軌 feat. Susanne Sundfør、第 9 軌 feat. Mai Lan、第 12 軌 feat. Mai Lan、第 13 軌 feat. Beck——**原盤曲名都沒有這些掛名。**",
+    "src": "https://itunes.apple.com/lookup?id=1160747196&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與首句：本張是 M83 的 **septième album studio**（第七張錄音室專輯），2016 年 4 月 8 日發行；總長 55 分 40 秒；曲風記 synthpop／indie pop；**製作 Anthony Gonzalez 與 Justin Meldal-Johnsen**；廠牌 **Naïve（法國）與 Mute（北美）**。條目說這張的風格與前幾張差很多，幾乎與樂團過去的 shoegazing 與 dream pop 切斷，重心整個移到 synthpop 與 indie pop。單曲三首：〈Do It, Try It〉2016 年 3 月 1 日、〈Solitude〉3 月 18 日、〈Go!〉4 月 5 日。",
+    "src": "https://fr.wikipedia.org/wiki/Junk_(album_de_M83)"
+   },
+   {
+    "f": "英語條目的首段與 Background 節：本張是樂團自 2011 年《Hurry Up, We're Dreaming》以來相隔五年的第一張，**也是自 2007 年《Digital Shades Vol. 1》以來第一張沒有長期人聲兼鍵盤手 Morgan Kibby 參與的作品**——她在錄音前離團。客席有 **Mai Lan、Steve Vai、Susanne Sundfør、Beck 與 Jordan Lawlor**；**〈Walkway Blues〉是 Jordan Lawlor（藝名 J. Laser）第一次為樂團寫詞並唱主唱**，他自己是 2011 年透過網路公開徵選進來的。**吉他手 Steve Vai 在〈Go!〉上有一段未掛名的演出。** Gonzalez 說這張碟受 1970、80 年代電視劇（《Punky Brewster》《Who's the Boss?》）啟發，是「向那些老式節目致敬」。Personnel 欄另列母帶 Dave Cooley，混音 Cameron Lister 與 Tony Hoffer。",
+    "src": "https://en.wikipedia.org/wiki/Junk_(M83_album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **66 個 release-group**，其中 primary-type Album 且 secondary-types 為空的共 **10 張**，依序為《M83》2001-04-18、《Dead Cities, Red Seas & Lost Ghosts》2003-04、《Before the Dawn Heals Us》2005-01-24、《Digital Shades [vol. I]》2007-08-31、《Saturdays = Youth》2008-04-14、《Hurry Up, We're Dreaming》2011-10-14、**《Junk》2016-04-08**、《DSVII》2019-09-20、《Fantasy》2023-03-17、《I Wrote You a Letter》2026-09-25。**本張排第 7，與兩份條目的 septième／seventh 一致。**（這個序數把兩張 Digital Shades 系列也算進去；池中缺的那兩張正是它們。）",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=6d7b7cd4-254b-4c25-83f6-dd20f98ceacd&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "Steve Vai 在〈Go!〉上彈了一段，唱片上不掛名",
+   "〈Walkway Blues〉的詞與主唱來自一個 2011 年網路徵選進來的人"
+  ],
+  "sound": "2016-04-08 五筆 release 全部 15 軌、全部同一天，沒有加曲版本；總長 55 分 40 秒，單軌 1:35 到 6:04。製作 Anthony Gonzalez 與 Justin Meldal-Johnsen，法國由 naïve 發、北美由 Mute 發。條目說這張幾乎切斷了樂團過去的 shoegazing 與 dream pop，整個移到 synthpop 與 indie pop，靈感來自七〇、八〇年代的電視劇。客席很密——Mai Lan 上了四軌，Susanne Sundfør、Beck、Jordan Lawlor 各一軌，Steve Vai 在〈Go!〉上有一段不掛名的吉他。這也是樂團第一張沒有 Morgan Kibby 的碟。",
+  "keyTracks": [
+   "Do It, Try It",
+   "Go!",
+   "Solitude"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2016。release-group first-release-date **2016-04-08**、其下五筆 Official release **全部同為 2016-04-08**、串流店面 fr 1160747196 的 releaseDate **2016-04-08** 與 ℗ 2016 相符、兩份條目 infobox 都記 2016 年 4 月 8 日。**四處同年同月同日，是本批對得最齊的一張。** **同名先行單曲：無**（三首單曲都不與專輯同名）；藝人目錄裡也沒有第二筆叫《Junk》的條目。",
+  "notes": "**裁定 175 的直接案例**：fr `1160747196` 的 **`trackCount` 欄寫 16，`entity=song` 只攤得出 15 軌**。依裁定 175 以曲目列為準——**這張是 15 軌**，與來源端五筆 release 全部一致。**行文不得寫十六首。**｜**配對覆核**：15 軌的曲名、曲序與逐軌長度與原盤相同到秒，配對正確。｜**撇號**：本張曲名不含撇號，兩種寫法問題不觸及；藝人名「M83」也不含。｜**大小寫**：原盤第 12 軌〈Atlantique Sud〉大寫 S、店面〈Atlantique sud〉小寫。**行文照原盤。**｜店面加的 feat. 掛名不是原盤曲名的一部分，**引曲名時不要帶**；但客席本身經英語條目確認屬實，**可以在行文裡說誰參與了哪一軌**。｜**序數可寫**：兩份條目與藝人目錄三處都給第 7，卡單 `curatorWhy` 的「第七張專輯」查證屬實。**但要知道這個序數把兩張 Digital Shades 系列算進去了**，若行文另有「正規錄音室盤」的算法會變成第 6。"
+ },
+ {
+  "key": "desc2:Angèle|Nonante-cinq",
+  "artist": "Angèle",
+  "album": "Nonante-cinq",
+  "facts": [
+   {
+    "f": "release-group ae0033cb 的欄位：title「Nonante‐cinq」（**來源端用 U+2010 HYPHEN，不是 ASCII 連字號**）、artist-credit「Angèle」（藝人 MBID dcd4701d）、first-release-date **2021-12-02**、primary-type Album、secondary-types **空**。轄下 **15 筆 release、全部 Official**，軌數隨時間一路長：**2021 的兩筆 FR CD（Angèle VL Records 389 664 1／3896642）與 2021-12-03 的兩筆 XW 數位都是 12 軌**；2022-03-01 的兩筆數位 13 軌、2022-09-30 的兩筆 14 軌、2022-10-28 的一筆 15 軌；**2022-11-18 之後改名「Nonante‐cinq : La Suite」的 CD 與數位是 18 軌**，2023-02-16 的數位 19 軌。**原盤 12 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release-group/ae0033cb-db62-4e53-8c1c-c003304c0173?fmt=json&inc=artist-credits+releases"
+   },
+   {
+    "f": "2021 FR 原盤（Angèle VL Records 3896642，CD）的 12 軌逐軌曲目與長度：1〈Bruxelles je t'aime〉3:48、2〈Libre〉2:45、3〈On s'habitue〉2:38、4〈Solo〉3:40、5〈Pensées positives〉3:31、6〈Taxi〉4:18、7〈Démons〉4:12、8〈Plus de sens〉3:30、9〈Tempête〉3:40、10〈Profite〉4:10、11〈Mots justes〉3:11、12〈Mauvais rêves〉3:55。**12 軌、標準版總長 43 分 15 秒；十二首全部落在 2:38 到 4:18。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ae0033cb-db62-4e53-8c1c-c003304c0173&fmt=json&inc=media+labels+recordings&limit=100"
+   },
+   {
+    "f": "串流店面 fr 的 collectionId **1597503852**：collectionName「Nonante-Cinq」、releaseDate **2021-12-03**、copyright「℗ 2021 Saïmiri」、trackCount 12。`entity=song` **攤得出 12 軌、12 軌全部有 previewUrl**，曲名與曲序與 2021 原盤**逐位置相符**、**逐軌長度相同到秒**。**這是 12 軌的原版，不是策展層 `risk` 欄一開始撈到的 19 軌 La Suite。**",
+    "src": "https://itunes.apple.com/lookup?id=1597503852&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "同一藝人目錄的 fr 店面**另有四筆同名或近名的條目，軌數各不相同**：`1611578828`「Nonante-Cinq」2022-03-01（13 軌）、`1647822111`「Nonante-Cinq (Deluxe)」2022-09-30（14 軌）、`1649957031`「Nonante-Cinq」2022-10-28（15 軌）、`1671606871`「Nonante-Cinq La Suite (Deluxe)」2022-02-18（19 軌）。**其中兩筆的盤名與原版完全相同、只有日期與軌數不同**，字串比對必然配錯。",
+    "src": "https://itunes.apple.com/lookup?id=1611578828&country=fr&entity=song&limit=200"
+   },
+   {
+    "f": "條目 infobox 與正文：本張是比利時歌手 Angèle 的 **deuxième album studio**（第二張錄音室專輯），2021 年 12 月 3 日發行（標準版），**2022 年 11 月 18 日另出加六首新曲的再版《Nonante-cinq la suite》**；標準版總長 43 分 15 秒、再版 65 分 43 秒；曲風記 pop；**製作 Angèle 與 Tristan Salvati**；廠牌 Angèle VL Records 與 Initial Artist Services。**盤名指的是她的出生年 1995**（nonante-cinq 是比利時法語的「九十五」）。條目說原訂 12 月 10 日發行，**後來為了她 12 月 3 日的二十六歲生日而提前一週**；發行前一週她確診 COVID-19，改在 Instagram 上辦線上發片派對。",
+    "src": "https://fr.wikipedia.org/wiki/Nonante-cinq_(album)"
+   },
+   {
+    "f": "同一條目的 Contexte 節：她說與 Léo Walk 分手帶來的悲傷與憂鬱、加上 COVID-19 的封城，是這張碟寫作過程的「催化劑」；不過她也承認，那種悲傷在做第一張《Brol》時感覺更強烈。單曲七首：〈Bruxelles je t'aime〉2021 年 10 月 21 日、〈Démons〉（與 Damso 合作）2021 年 12 月 3 日、〈Libre〉2022 年 4 月 26 日、〈Amour, Haine & Danger〉2022 年 9 月 30 日、〈Évidemment〉（與 Orelsan 合作）2022 年 10 月 28 日、〈Le temps fera les choses〉2023 年 2 月 16 日、〈Plus de sens〉2023 年 6 月 15 日。**封面是她在雲霄飛車上、旁邊坐著幾個不同版本的自己。**",
+    "src": "https://fr.wikipedia.org/wiki/Nonante-cinq_(album)"
+   },
+   {
+    "f": "藝人端點分頁全列 **28 個 release-group**（是本批第二小的一份目錄），其中 primary-type Album 且 secondary-types 為空的有 **3 張**：《Brol》2018-10-05、**《Nonante‐cinq》2021-12-02**、**《Instinct》2026-10-16**。**本張排第 2，與條目的 deuxième 一致；但目錄裡已經有第三筆《Instinct》（2026-10-16）。**",
+    "src": "https://musicbrainz.org/ws/2/release-group?artist=dcd4701d-64ec-443d-bfbf-73fc87c44bd6&fmt=json&limit=100&offset=0"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是比利時法語的「九十五」，指她出生那一年",
+   "原訂十二月十日出，為了自己的生日整整提前一週"
+  ],
+  "sound": "2021 年 12 月的 CD 與數位原版都是 12 軌、總長 43 分 15 秒，十二首全部落在 2:38 到 4:18。之後這張碟一路長大——2022 年三月 13 軌、九月 14 軌、十月 15 軌，十一月改名《Nonante-cinq : La Suite》變 18 軌，2023 年再到 19 軌。製作是 Angèle 自己與 Tristan Salvati，廠牌是她自營的 Angèle VL Records。盤名 nonante-cinq 是比利時法語的「九十五」，指她的出生年。第 7 軌〈Démons〉是與 Damso 的合作。封面上她坐在雲霄飛車裡，旁邊是幾個不同版本的自己。",
+  "keyTracks": [
+   "Bruxelles je t'aime",
+   "Démons",
+   "Libre"
+  ],
+  "status": "full",
+  "yearVerified": "一致，2021。release-group first-release-date **2021-12-02**、其下 2021 的兩筆 FR／Official CD 與 2021-12-03 的兩筆 XW 數位同年（皆 12 軌）、條目 infobox 記 2021 年 12 月 3 日、串流店面 fr 1597503852 的 releaseDate **2021-12-03** 與 ℗ 2021 相符。**四處同年（2 日與 3 日之差是實體與數位的一天落差）。** **同名先行單曲：無**（先行單曲是〈Bruxelles je t'aime〉，2021-10-21）；**但同名的後續版本一共五個，全部在 2022 年之後**。",
+  "notes": "**擋下策展層一處（「只有兩張正規盤」）**：卡單 `curatorWhy` 寫「她只有兩張正規盤，這張補齊第二張」。**藝人目錄現在有三筆 primary-type Album＋secondary-types 空**——《Brol》2018、本張 2021、**《Instinct》2026-10-16**。「第二張」本身沒錯，但**「只有兩張」與來源相反，行文不得寫**。｜**盤名的連字號（本批裁定 3）**：來源端 title 用 **U+2010 HYPHEN**（`Nonante‐cinq`），卡單改成 ASCII 連字號（`Nonante-cinq`），店面則寫成大寫 C 的「Nonante-Cinq」。**行文照卡單的 `Nonante-cinq`。**｜**配對風險（本批最嚴重的軌數浮動）**：fr 目錄裡有 **五個同名或近名的 collectionId**，軌數 12／13／14／15／19 各不相同，其中 `1611578828` 與 `1649957031` 的盤名與原版**完全相同**。**必須指名 `1597503852`（12 軌、2021-12-03、℗ 2021）**——策展層裁定 6 也是選這一筆，本次逐軌覆核確認正確。｜**撇號**：來源端曲名用彎撇 U+2019（`Bruxelles je t’aime`、`On s’habitue`），店面也用彎撇 U+2019（**這是本批少見的、店面端用彎撇的一張**）。**卡池慣例走 ASCII，`keyTracks` 已按 ASCII 寫。**｜**藝人的 area 是 Belgium／Linkebeek，不是 France**（策展層裁定二節已記），**行文不要把她寫成法國歌手**。"
  }
 ]
