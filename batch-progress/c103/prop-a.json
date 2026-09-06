@@ -1,0 +1,423 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "ひばり端唄草紙 Hibari Hauta Zōshi；Hibari Hauta Zoshi；Misora Hibari 端唄草紙",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "美空ひばり",
+  "album": "ひばり端唄草紙",
+  "year": 1958,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "日本コロムビア",
+  "why": "美空ひばり 1958 年在日本コロムビア錄的端唄・小唄集，是 MB 上她最早、且轄下 release 標 Official 的專輯，也是她從電影主題歌轉向「以邦樂曲目為單位企劃 LP」的起點。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。掛名同時查「美空ひばり」「Misora Hibari」「Hibari」三種寫法，**這位戰後日本最大的歌手池中 0 張**（派工信所記屬實）。她的目錄要從 1950s 末的原盤補起，不是從後世精選補起，所以先收這張。",
+  "risk": "撞卡風險低（池中 0 張）。掛名依 2026-08-11 東亞裁定寫《美空ひばり》——「美空」是漢字，屬「混漢字」那一類，不適用全假名才羅馬化的例外，不得寫成 Misora Hibari。MB 的 RG 標題帶羅馬拼音副標「ひばり端唄草紙 Hibari Hauta Zōshi」，卡片取去掉副標的《ひばり端唄草紙》，兩種寫法都進 queryAlias 否則 grep 去重會漏。1958 年的コロムビア LP 在 Apple 未必上架、CAA 也可能 404，店面先試 jp 再試 us，預期要人工補封面。",
+  "mbNote": "釘 release-group ec8df141-5bf4-4a8a-90cc-32106d987540。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「ひばり端唄草紙 Hibari Hauta Zōshi」、artist-credit「美空ひばり」、first-release-date 1958、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID ebb2a572-3424-4e2c-b468-102c4308e4c3，以 release-group?artist=…&limit=100&offset= 分頁全列 43 個 RG（不是 inc=release-groups 的 25 筆上限）。刻意不釘：845b990f-b458-4522-8d6e-27ad331e008a《リンゴ追分／リンゴ園の少女》（Single）、0e2fa687-9071-4c43-90c5-0b8f3f369167《全曲集〜好きなのさ》（1987 後世精選）、fd04aed4-af54-43c3-8051-db516385c0e4《Stereo Sound ORIGINAL SELECTION Vol.7「美空ひばり」》（2020 整編）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "マドロスさん；Misora Hibari no Madorosu-san",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "美空ひばり",
+  "album": "美空ひばりのマドロスさん",
+  "year": 1958,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1958 年 5 月的コロムビア LP，把她 1950 年代最賣座的一組「マドロスもの」（水手題材歌謡）集中在一張裡。這一型是她在《リンゴ追分》之後、進入 1960 年代艶歌之前的主要商品形態，MB 上同年只有《ひばり端唄草紙》與《ひばりの花絵巻》兩張同級的專輯。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。美空ひばり 池中 0 張，這張與《ひばり端唄草紙》一起補上 1958 這一年，讓她的目錄有起點。",
+  "risk": "同名別碟風險：她名下另有 1965／1966 的《美空ひばりの花のステージ》系列與 1958-07 的《ひばりの花絵巻》，盤名都以「美空ひばりの…」開頭，撞卡比對要用完整盤名不能用前綴。掛名寫《美空ひばり》（2026-08-11 裁定）。封面與試聽同上一張，店面 jp，1958 年盤預期 Apple 無條目。",
+  "mbNote": "釘 release-group 55fc14a4-5695-46f6-b0d3-6a5265b8a503。回問確認：title「美空ひばりのマドロスさん」、artist-credit「美空ひばり」、first-release-date 1958-05、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID ebb2a572-3424-4e2c-b468-102c4308e4c3，以 release-group?artist=…&limit=100&offset= 分頁全列 43 個 RG（不是 inc=release-groups 的 25 筆上限）。刻意不釘：b62f4f59-9873-46f6-aeab-96363f1b9165《ひばりの花絵巻》（1958-07，secondary-types 含 Live，同年另一張）、90904c8f-04c4-4fe8-9b5f-0ddda421d06b《ステレオ 美空ひばりの花ステージ (第２集)》與 47b42452-9ead-4fb2-835e-50076156ad93《美空ひばりの花のステージ 第３集》（1965／1966，盤名前綴相同的別碟）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "哀愁波止場；Hibari no Aishu Hatoba",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "美空ひばり",
+  "album": "ひばりの哀愁波止場",
+  "year": 1961,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1961 年 5 月的コロムビア LP，盤名取自 1960 年的同名單曲。這張是她 1960 年代前半「港・波止場」題材的代表企劃，位置在 1958 年那兩張邦樂／マドロス企劃與 1962 年《ひばりの渡り鳥だよ》之間。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。美空ひばり 池中 0 張；本批替她補 1958／1958／1961／1962 四張原盤，這張是四張裡年代居中、最能代表她盛期灌錄的一張。",
+  "risk": "掛名《美空ひばり》（2026-08-11 裁定）。盤名與同名單曲「哀愁波止場」同形，Apple 搜尋很容易回到單曲或後世精選裡的同名曲，配對要以 collectionId 直查、不能用歌名模糊搜。店面 jp。1961 年盤 CAA 命中率低，預期人工補封面。",
+  "mbNote": "釘 release-group aaa742b4-4a53-400a-856e-94bf65b15dc5。回問確認：title「ひばりの哀愁波止場」、artist-credit「美空ひばり」、first-release-date 1961-05、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID ebb2a572-3424-4e2c-b468-102c4308e4c3，以 release-group?artist=…&limit=100&offset= 分頁全列 43 個 RG（不是 inc=release-groups 的 25 筆上限）。刻意不釘：71f13784-5488-4876-94f7-3495c9b7e88b《ひばりのドドンパ》（1961 同年 Single）、6a8a221e-00c7-456f-a698-75c28c33825e《真赤な太陽》（1967 Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "渡り鳥だよ；Hibari no Wataridori da yo",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "美空ひばり",
+  "album": "ひばりの渡り鳥だよ",
+  "year": 1962,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1962 年 4 月的コロムビア LP，是她「股旅もの」（渡世人題材）企劃盤，與同期東映時代劇的演出互相搭配。MB 上這是她 1962–1964 年間唯一一張 primary-type=Album 的條目，之後要到 1965 年的《花ステージ》系列才有下一張，所以它同時是那三年的唯一代表。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。美空ひばり 池中 0 張。",
+  "risk": "掛名《美空ひばり》。盤名長、且「渡り鳥」是日本歌謡的通用題材（小林旭《渡り鳥》系列同名風險），撞卡與 Apple 配對都要用完整盤名。店面 jp。1962 年盤預期 CAA 404、Apple 可能只有後世精選收錄同名曲，封面走人工。",
+  "mbNote": "釘 release-group 42a2afb5-90e8-4992-b31d-5352bde03fd9。回問確認：title「ひばりの渡り鳥だよ」、artist-credit「美空ひばり」、first-release-date 1962-04、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID ebb2a572-3424-4e2c-b468-102c4308e4c3，以 release-group?artist=…&limit=100&offset= 分頁全列 43 個 RG（不是 inc=release-groups 的 25 筆上限）。刻意不釘：d934d727-0ad0-4d6b-b4af-cf25965ce813《ひばりの歌変化》（1958-12，同一系列命名的別碟）、17b42fc7-e7e1-4cbd-aa6a-29c55271a80a《ツイン・パック 川の流れのように》（1996 二片裝再包裝）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sayuri Ishikawa あなたの私；Anata no Watashi",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "石川さゆり",
+  "album": "あなたの私",
+  "year": 1975,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "石川さゆり 1973 年出道後的第一張原創專輯（日本コロムビア，1975），盤名取自同年 7 月的單曲。位置在她 1977 年《津軽海峡・冬景色》成名之前，是「成名前的第一張」。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。石川さゆり 池中 0 張（掛名同時查「石川さゆり」與 MB 另一種 credit 寫法「Sayuri Ishikawa」，都是 0）。本批替她補 1975／1979／1985／1986 四張，這張是起點。",
+  "risk": "⚠ 掛名分裂：MB 這一張的 artist-credit 是羅馬字「Sayuri Ishikawa」，同一位藝人其他 RG 卻是「石川さゆり」。依 2026-08-11 東亞裁定與第 177 條（先看池中、池中 0 張則看 MB 主要 credit），卡片一律取漢字假名混寫的《石川さゆり》，兩種寫法都進 queryAlias。1975 年 LP，Apple 條目多為後世重編，店面 jp，配對要以完整盤名比對、注意《あなたの私》三個字很短容易誤配。",
+  "mbNote": "釘 release-group 338b8985-45aa-4ed6-b82d-92bdfc23b87e。回問確認：title「あなたの私」、artist-credit「Sayuri Ishikawa」（⚠ 與其他 RG 的「石川さゆり」不一致，見 risk）、first-release-date 1975、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 4939764f-0c93-42ad-bfc0-4f18431933f8，分頁全列 158 個 RG。刻意不釘：7c9d7120-5c54-4503-bff3-afa8ca21fe4d《あなたの私 / 心の手紙》（1975-07 同名 Single，最容易撞的那一筆）、ffdfaeac-a617-4f75-b13c-59ef7184a29b《暖流 - ベスト14》（1977 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Haru Ichirin；Sayuri Ishikawa 春一輪",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "石川さゆり",
+  "album": "春一輪",
+  "year": 1979,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1979 年 3 月 25 日的コロムビア LP（AX-7200），緊接在 1977 年《津軽海峡・冬景色》與 1978 年《能登半島》兩首代表作之後，是她成名後第一波企劃盤。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。石川さゆり 池中 0 張。本批四張的間距是 1975→1979→1985→1986，這張補的是「成名直後」那一段。",
+  "risk": "掛名《石川さゆり》（同組其他卡的 MB credit 有羅馬字寫法，見《あなたの私》那張的說明）。同年她另有《命燃やして》（1979-07），兩張都是 1979 年的專輯，撞卡與 Apple 配對要用完整盤名。店面 jp。",
+  "mbNote": "釘 release-group 58ccef20-6a0f-41b4-b2d2-44c6c6995a30。回問確認：title「春一輪」、artist-credit「石川さゆり」、first-release-date 1979-03-25、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：3dda6e26-7f68-47de-995b-cee400080d8f《命燃やして》（1979-07，同年另一張專輯）、a4ca2701-2578-43fd-8958-f5198aaadd2c《ベスト ヒット》（1979 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "波止場しぐれ〜雨に咲く花物語〜；Hatoba Shigure",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "石川さゆり",
+  "album": "波止場しぐれ",
+  "year": 1985,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1985 年的コロムビア盤，盤名取自同年的單曲「波止場しぐれ」（作詞吉岡治・作曲岸本健介），是她 1980 年代中期回到演歌主線、並直接通往隔年《天城越え》的那一張。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。石川さゆり 池中 0 張；這張與《天城越え》相鄰，兩張一起收才看得出 1985–86 那兩年的連續性。",
+  "risk": "⚠ 盤名撞卡：「波止場」是演歌通用語，池中同批另有美空ひばり《ひばりの哀愁波止場》，兩者盤名不同但同含「波止場」，子字串比對會誤報，去重要用完整盤名。掛名《石川さゆり》。MB first-release-date 只到年（1985），日文維基記 1985-08-21，卡片年份取 MB 的 1985。店面 jp。",
+  "mbNote": "釘 release-group 4fa0e714-e322-4481-a932-c1b1564fd605。回問確認：title「波止場しぐれ」、artist-credit「石川さゆり」、first-release-date 1985、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：a6c41218-483f-4a54-b738-f347cb57bbaf《石川さゆり全曲集 大阪つばめ》（1986-05 全曲集）、99f3d6b2-6213-4500-ab63-71abc71e74ba《全曲集 港唄》（1991 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Amagi Goe；Amagigoe",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "石川さゆり",
+  "album": "天城越え",
+  "year": 1986,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1986 年的コロムビア盤，盤名取自同年 7 月的單曲「天城越え」（吉岡治作詞・弦哲也作曲）——該曲拿下第 28 回日本レコード大賞金賞，是《津軽海峡・冬景色》之外她最常被唱的一首，也是 1980 年代後日本演歌的標準曲。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。石川さゆり 池中 0 張。四張裡這一張是她目錄的高點，其餘三張（1975／1979／1985）是通往它的路徑。",
+  "risk": "盤名與同名單曲同形，Apple 搜尋「天城越え」會回大量翻唱版與精選集，配對必須用 collectionId 直查。掛名《石川さゆり》。MB first-release-date 1986-09-21 與日文維基所記 1986-10-21 有一個月的差，卡片年份取 1986 兩說一致的部分，行文不得斷言到日。店面 jp。",
+  "mbNote": "釘 release-group 518042be-c5ec-40ab-a16a-662c2cabb778。回問確認：title「天城越え」、artist-credit「石川さゆり」、first-release-date 1986-09-21、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：cb650c61-389f-4a14-86f0-e8275d94653f《石川さゆり全曲集 第2集「天城越え」》（1993 全曲集，盤名含同一首歌名，最容易誤釘的一筆）、e7a79827-46af-440f-bb8f-e4eaa4dbf196《全曲集 滝の白糸》（1988）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "演歌のすべて おんなの涙；Enka no Subete Onna no Namida；Aki Yashiro",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "八代亜紀",
+  "album": "演歌のすべて \"おんなの涙\"",
+  "year": 1973,
+  "genres": [
+   "pop"
+  ],
+  "label": "テイチク",
+  "why": "八代亜紀 1971 年出道後的第一張企劃專輯（テイチク，1973-07-01），盤名掛在同年那首賣破百萬張的「なみだ恋」所開出的路線上。MB 上這是她 primary-type=Album 裡年代最早的一筆，等於她目錄的起點。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。八代亜紀 池中 0 張（掛名同時查「八代亜紀」「八代亞紀」「Aki Yashiro」，全部 0）。本批替她補 1973 與 1979 兩張，先把起點與代表作各立一張。",
+  "risk": "盤名含 ASCII 雙引號與「演歌のすべて」這個系列名，テイチク 同期有多位藝人的「〜のすべて」盤，撞卡比對要連藝人一起比、不能只比盤名。掛名依 2026-08-11 裁定寫《八代亜紀》（漢字，不羅馬化）；注意日文「亜」與中文「亞」不同字，簡繁正規化摺不掉，兩種都要查。店面 jp，1973 年テイチク LP 預期 Apple 只有後世精選，封面走人工。",
+  "mbNote": "釘 release-group 35ae5df7-caa2-4e69-9522-6fdc45623ef6。回問確認：title「演歌のすべて \"おんなの涙\"」、artist-credit「八代亜紀」、first-release-date 1973-07-01、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 694ba29c-5b5f-46ae-ba19-0ad3b3c5b24f，分頁全列 23 個 RG。刻意不釘：f8a0a1a4-d2fc-428b-b09d-df5e0099a956《二人の旅路》（1974，artist-credit 實為「石原裕次郎／八代亜紀」的合唱盤，不是她的個人作）、d92c1052-c447-4d03-96ca-6fc47ae09049《池玲子がささやく・夜のムード歌謡》（1975 拼盤）、f789b337-09b7-4f75-bfa9-bb022e98f8da《ベスト歌謡16／貴方につくします》（1975 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Funauta；Fune Uta；Aki Yashiro 舟唄",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "八代亜紀",
+  "album": "舟唄",
+  "year": 1979,
+  "genres": [
+   "pop"
+  ],
+  "label": "テイチク",
+  "why": "盤名取自 1979 年那首由阿久悠作詞・浜圭介作曲的「舟唄」，是八代亜紀最常被重唱的一首，也是她從 1973 年《なみだ恋》的哭調路線轉向男性視角酒場歌的分界。隔年的「雨の慕情」拿下第 22 回日本レコード大賞。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。八代亜紀 池中 0 張；這張與 1973 年那張是本批替她補的一頭一尾。",
+  "risk": "⚠ 這一筆 MB 轄下唯一的 release status 是空的（不是 Official），依第 43／57／65／78 條，**這張的再發身分不得用來當背書**，行文不能寫「官方再發」。盤名兩個字、且「舟唄」是通用詞（八代亜紀之外另有多位翻唱），撞卡與 Apple 配對都要連藝人一起比。掛名《八代亜紀》。店面 jp。",
+  "mbNote": "釘 release-group 77fceba3-9a60-4af5-a2a7-087d263f282d。回問確認：title「舟唄」、artist-credit「八代亜紀」、first-release-date 1979、primary-type Album、secondary-types 空、轄下 1 個 release（JP／**status 未填**，見 risk）。刻意不釘：fc2ec4c3-f546-465a-a5ac-b93194b23b89《八代亜紀大全集 〜魅惑の演歌熱唱〜》（1980 全集）、81b56505-f3ec-4f50-8fd1-7e29ac97282a《演歌ごころ》（1985 精選）、fe7dd804-442a-4e0a-bc42-e1468b697568《夜のアルバム》（2012，爵士轉向之作，超出本批 1950s–1990s 的範圍）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "女ごころを唄う；Onnagokoro wo Utau",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "森進一",
+  "album": "森進一 女ごころを唄う",
+  "year": 1968,
+  "genres": [
+   "pop"
+  ],
+  "label": "ビクター",
+  "why": "森進一 1966 年以「女のためいき」出道後的早期企劃盤（ビクター，1968-08-15），主題就是他成名的那條「代唱女性心境」路線；同年他首度登上 NHK 紅白（第 19 回），此後連續出場 48 回。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。實掃結果森進一 池中 1 張，而且是 1998 年的《森進一全曲集》——**原盤一張都沒有**。本批替他補 1968／1970／1972／1992 四張原專輯，讓那張全曲集不再是他在池中唯一的形態。",
+  "risk": "盤名前綴帶藝人名（「森進一 女ごころを唄う」），與池中已有的《森進一全曲集》共用前綴，子字串去重會誤報，比對要用完整盤名。掛名《森進一》（漢字，2026-08-11 裁定）。他 1966–1974 在ビクター、1975 起轉ワーナー・パイオニア，本批四張橫跨兩個時期，廠牌不可一體套用。店面 jp。",
+  "mbNote": "釘 release-group e24087b9-c65b-485b-a754-ee5d49fbb55e。回問確認：title「森進一 女ごころを唄う」、artist-credit「森進一」、first-release-date 1968-08-15、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 1968db90-74ec-4a67-bd20-8bc01c02a96b，分頁全列 163 個 RG（超過 100，用 offset 取第二頁）。刻意不釘：559be5b4-c677-40e2-8a84-5d31a085ff78《夜と恍惚とため息と》（1968-02-05，MB 標 secondary-types=Compilation，且該 RG 同時掛青江三奈）、c2c779d5-d0a4-42e4-bdff-eca53b374518《ベスト・コレクション》（1973 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mori Shinichi no Blues；森進一のブルース",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "森進一",
+  "album": "森進一のブルース",
+  "year": 1970,
+  "genres": [
+   "pop",
+   "blues"
+  ],
+  "label": "ビクター",
+  "why": "1970-07-05 的ビクター盤，把他 1969 年「港町ブルース」大賣之後的「ブルース」路線整理成一張。同年 9 月他另出《波止場女のブルース》，兩張是同一波企劃的前後手。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。森進一 池中只有 1998 年的《森進一全曲集》一張，1960–70 年代的原盤全缺；這張補的正是他商業高點那一年的錄音。",
+  "risk": "⚠ 同一位藝人 1970 年有兩張盤名都含「ブルース」（本張與 63c2b30d-e289-402a-adce-e9599738e5ea《波止場女のブルース》），子字串比對必然誤報，去重與 Apple 配對都要用完整盤名。曲風給 pop＋blues 是依日本「歌謡ブルース」這個商品分類，不是美國 blues 樂種——行文不要把它寫成美國藍調。掛名《森進一》。店面 jp。",
+  "mbNote": "釘 release-group cec44c76-4507-4c2c-8978-d37c0d880b55。回問確認：title「森進一のブルース」、artist-credit「森進一」、first-release-date 1970-07-05、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：63c2b30d-e289-402a-adce-e9599738e5ea《波止場女のブルース》（1970-09-05，同年同題材的另一張）、bdc216a6-74ea-4931-9380-eae26554b0d0《無情の夢》（1969-12-05）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Rinne；森進一 輪廻",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "森進一",
+  "album": "輪廻",
+  "year": 1972,
+  "genres": [
+   "pop"
+  ],
+  "label": "ビクター",
+  "why": "1972-08-25 的ビクター盤，是他 1971 年「おふくろさん」拿下日本レコード大賞最優秀歌唱賞之後的第一張概念性企劃盤，也是他在ビクター末期（1975 年轉ワーナー・パイオニア）的代表作之一。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。森進一 池中僅《森進一全曲集》1 張。本批四張的間距是 1968→1970→1972→1992，這張補的是他第一個高原期的收尾。",
+  "risk": "盤名兩個漢字，「輪廻」在池中同批與其他日文卡的子字串比對容易誤配，去重要連藝人一起比。掛名《森進一》。1972 年ビクター LP 的 Apple 條目多半是後世重編合輯，配對要用 collectionId 直查、並確認曲目與 1972 年原盤一致（第 175 條：trackCount 欄與曲目列可以不一致，一律以曲目列為準）。店面 jp。",
+  "mbNote": "釘 release-group f057df2f-6f11-4a1e-ae1b-d8c1857f43e0。回問確認：title「輪廻」、artist-credit「森進一」、first-release-date 1972-08-25、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：b1fbb4d5-129f-4e62-9857-2253e73df3b9《再会》（1971-12-05）、6a71d3f3-f20c-42da-b07e-f63fedea1de6《グランド・デラックス》（1974 精選包裝）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Kanashii Uta ga Hayarimasu",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "森進一",
+  "album": "悲しい歌が流行ります",
+  "year": 1992,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1992-07-22 發行，是他 1990 年代把「歌謡曲」重新當成寫作題材的一張，也是本批替他補的四張裡唯一的平成期作品——用來把他的目錄從 1960 年代末一路拉到池中那張 1998 年《森進一全曲集》的前夕。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。森進一 池中僅 1 張全曲集；補完這四張之後，他在池中會從「只有一張後世全曲集」變成「1968 到 1992 的四個時點各有一張原盤」。",
+  "risk": "盤名是一整句日文（含「流行ります」），Apple 與 CAA 的模糊搜尋很容易斷詞失敗，配對要用完整字串或 collectionId。廠牌需在建卡時以 release 端點的 label-info 再確認——他 1975–1988 在ワーナー・パイオニア、之後回到日本ビクター與コロムビア之間，本張的發行方不得沿用前三張。掛名《森進一》。店面 jp。",
+  "mbNote": "釘 release-group bc1f1711-569c-4c78-b909-888ed10e370d。回問確認：title「悲しい歌が流行ります」、artist-credit「森進一」、first-release-date 1992-07-22、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：148f06ee-a4a5-4a75-813a-772e1496d339《劇場の前 ～野口雨情作品集～》（1992-10-21，同年另一張）、58d54487-296f-450d-a67b-553b7fdab79c《TWIN BEST》（1995 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Chiyo-chan no Ichinichi；千代ちゃんの一日",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "島倉千代子",
+  "album": "千代ちゃんの一日",
+  "year": 1958,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "島倉千代子 1955 年以「この世の花」出道（日本コロムビア），這張 1958-08 的 LP 是 MB 上她最早的一筆專輯條目，時間點就在「東京だョおっ母さん」（1957）大賣的隔年。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。島倉千代子 池中 0 張——她是紅白連續出場 30 回的紀錄保持者之一，卡池裡卻完全沒有。本批替她補 1958／1969／1973 三張，橫跨她的少女期、東海林太郎歌集與戰時歌謡集三種形態。",
+  "risk": "盤名口語（「千代ちゃんの一日」），Apple 幾乎確定沒有 1958 年原盤條目，封面要走人工或後世復刻的 collectionId 反查並在建卡時註明版本。掛名《島倉千代子》。店面 jp。",
+  "mbNote": "釘 release-group 5e967e71-1fca-4cf2-9ea6-af3d281a06e2。回問確認：title「千代ちゃんの一日」、artist-credit「島倉千代子」、first-release-date 1958-08、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID e5dd1991-8e80-431d-80f1-4e58d14d0788，分頁全列 39 個 RG。刻意不釘：95efcf1d-9647-4386-8d22-e38142f2f34b《島倉千代子の花のステージ 第2集》（1964）、686f61ab-d4dc-4b6f-b6b8-f999f8b556bc《千代ちゃんの童謡集》（2004，盤名前綴相同的後世企劃）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "すみだ川 東海林太郎を歌う；Sumidagawa；島倉千代子 東海林太郎",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "島倉千代子",
+  "album": "すみだ川 - 東海林太郎を歌う",
+  "year": 1969,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1969-09 的コロムビア盤，是她翻唱戰前歌謡代表歌手東海林太郎曲目的專輯。這一型「後輩歌手唱前輩歌集」是日本歌謡曲承傳的主要載體，而東海林太郎本人在 MB 上只有四筆 Single 與一張 2021 年的後世整編（見 to-c115.md），所以這張同時是戰前歌謡在池中唯一可釘得住的入口。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。島倉千代子 池中 0 張。",
+  "risk": "盤名含 ASCII 連字號與副標，撞卡比對要保留完整字串；另有 2003 年《古賀政男生誕100年記念 島倉千代子 古賀メロディを唄う》是同型的別碟，不可混。掛名《島倉千代子》。她翻唱的是東海林太郎的曲目，行文不得把作品寫成她的原唱。店面 jp。",
+  "mbNote": "釘 release-group b769ad8c-c37e-4ade-bd9e-ee1979693003。回問確認：title「すみだ川 - 東海林太郎を歌う」、artist-credit「島倉千代子」、first-release-date 1969-09、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：263d83e8-ba6f-4c2e-b351-30dce8022217《古賀政男生誕100年記念 島倉千代子 古賀メロディを唄う》（2003，同型的作曲家歌集）、b769ad8c 之外並無同名 RG。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "九段の母；戦時の女性をうたう；Kudan no Haha",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "島倉千代子",
+  "album": "九段の母 / 戦時の女性をうたう",
+  "year": 1973,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1973-07 的コロムビア盤，主題是戰時女性歌謡（「九段の母」等）。日本演歌／歌謡曲裡的戰爭記憶題材長期由這一型企劃盤承載，而池中完全沒有這一塊。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。島倉千代子 池中 0 張；本批這三張分別代表她的 1950s 少女期、1960s 歌集期與 1970s 主題企劃期。",
+  "risk": "盤名含斜線與副標，字串長；同批春日八郎、橋幸夫名下也有軍歌・戦時歌謡題材的盤（見 to-c115.md 與未收清單），撞卡比對不能只看副標。掛名《島倉千代子》。題材敏感，簡介行文只描述企劃事實，不作立場評價。店面 jp。",
+  "mbNote": "釘 release-group 2214e7c2-c7b8-47fd-85b7-7208d342b8ef。回問確認：title「九段の母 / 戦時の女性をうたう」、artist-credit「島倉千代子」、first-release-date 1973-07、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：23510533-ad5f-476b-9c4f-9ed36023f987《歌手生活二十周年記念 島倉千代子全集》（1973-03，同年的全集）、8a254cb8-37c8-48ae-a3ba-8089f638b5d8《オリジナル・ヒットと懐メロと》（1977）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Ruten；五木ひろし 流転",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "五木ひろし",
+  "album": "流転",
+  "year": 1971,
+  "genres": [
+   "pop"
+  ],
+  "label": "徳間音楽工業",
+  "why": "1971-11 的專輯，發行時間就在他改名「五木ひろし」、以「よこはま・たそがれ」翻身的那一年——那首歌之前他已用三個藝名出道失敗過。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。實掃結果五木ひろし 池中 1 張，是 2015 年的《五木ひろし全曲集》；他 1971 年翻身那一年的原盤缺席。這張補的就是那個起點，讓池中那張全曲集有可對照的原點。",
+  "risk": "盤名兩個漢字「流転」，日文卡跨文字系統比對（第 49 條）要同時查漢字、假名與羅馬拼音三種。與池中《五木ひろし全曲集》不是同一張，但兩者掛名相同，去重要看盤名。廠牌需在建卡時以 release 端點 label-info 再確認（他 1971 年在徳間音楽工業／ミノルフォン 系統，1970 年代中期後轉東芝EMI）。店面 jp。",
+  "mbNote": "釘 release-group 97ff0e77-7a1f-4fd0-b8a6-283cfac96f1f。回問確認：title「流転」、artist-credit「五木ひろし」、first-release-date 1971-11、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 7197f5ed-5167-4e73-8ee6-bebf18831fb2，分頁全列 28 個 RG。刻意不釘：1ae753c3-7342-4c75-8db6-c1282f375475《五木ひろし 全曲集 (汽笛✻女・ひとり)》與 ff3726cf-9349-4c81-bfe8-c9e71287f648《五木ひろし 全曲集2012》（與池中已有的《五木ひろし全曲集》同型）、ecf3b41e-1d62-422b-a061-2c8b60928e11《五木ひろし全曲集》（primary-type=Demo，MB 建檔有誤的那一筆）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "望郷 民謡アルバム；Bokyo；Hosokawa Takashi 民謡",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "細川たかし",
+  "album": "望郷／民謡アルバム",
+  "year": 1978,
+  "genres": [
+   "pop",
+   "world"
+  ],
+  "label": "日本コロムビア",
+  "why": "細川たかし 1975 年以「心のこり」出道（日本コロムビア），出身北海道民謡；這張 1978 年的盤把演歌與民謡並置成兩面，正是他 1982 年「北酒場」、1983 年「矢切の渡し」連兩年拿日本レコード大賞之前的底子。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。細川たかし 池中 0 張；連他兩座大賞的曲目在池中都沒有任何形態。MB 上他名下只有 6 個 RG、其中 primary-type=Album 的僅 3 筆，這張是三筆裡年代最早、也是唯一 1970 年代的。",
+  "risk": "盤名含全形斜線「／」，字串比對與檔名處理都要保留原字；不要替換成 ASCII 斜線（會與 MB 標題不符）。曲風給 pop＋world 是因為半張是民謡，不是把演歌歸為 world。掛名《細川たかし》（全假名的「たかし」前面有漢字「細川」，屬混漢字，不羅馬化）。店面 jp。",
+  "mbNote": "釘 release-group f5ed8491-6db7-4521-ba50-e89c0882ce05。回問確認：title「望郷／民謡アルバム」、artist-credit「細川たかし」、first-release-date 1978、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 9390d969-87d7-479b-9818-05918a67bfb4，分頁全列 6 個 RG。刻意不釘：5dcaba98-d579-434d-ad99-6f769db08df9《芸道40年記念 細川たかし全集 心のこり〜艶歌船》（2015 全集）、40ee1cb1-ade6-454e-b919-71fe23e0ed46《芸道35周年記念アルバム 三橋美智貴 民謡のこころ》（2010，掛名實為三橋美智貴，不是他的個人作）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Iwaizake；坂本冬美 祝い酒",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "坂本冬美",
+  "album": "祝い酒",
+  "year": 1988,
+  "genres": [
+   "pop"
+  ],
+  "label": "東芝EMI",
+  "why": "坂本冬美 1987 年以「あばれ太鼓」出道（東芝EMI），這張 1988-04-29 的專輯盤名取自她的第二張單曲「祝い酒」，是她出道兩年內確立祝儀歌路線的那一張，也是 MB 上她 primary-type=Album 裡最早的一筆。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。坂本冬美 池中 0 張。她是 1980 年代末「演歌三人娘」裡唯一還在主線活動的一位，卡池整條線缺她。",
+  "risk": "⚠ MB 轄下唯一的 release status 未填（不是 Official），依第 43／57／65／78 條不得當作再發背書。盤名「祝い酒」兩到三個字，且是演歌通用祝儀題材，多位歌手有同名曲，撞卡與 Apple 配對要連藝人一起比。掛名《坂本冬美》。她 1987 起在東芝EMI、後由ユニバーサルミュージック接手目錄，封面與試聽查到的可能掛在後者名下。店面 jp。",
+  "mbNote": "釘 release-group ebe4941e-ed5c-40ae-ba51-d8a87ef020a1。回問確認：title「祝い酒」、artist-credit「坂本冬美」、first-release-date 1988-04-29、primary-type Album、secondary-types 空、轄下 1 個 release（JP／**status 未填**，見 risk）。藝人 MBID 12a9f509-ceac-4de1-8780-73bb1a278b9c，分頁全列 42 個 RG。刻意不釘：dd36f007-7374-4409-846e-cd614c539cdf《演歌 村田英雄 VS. 坂本冬美》（1989，與村田英雄的合輯）、55a40aa9-0c26-431b-9e73-0a5f687d005b《男の情話》（1989 隔年的專輯）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Omoide Zake；おもいで酒 小林幸子",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "小林幸子",
+  "album": "おもいで酒",
+  "year": 1979,
+  "genres": [
+   "pop"
+  ],
+  "label": "ワーナー・パイオニア",
+  "why": "盤名取自 1979 年那首讓她在出道十五年後翻身的「おもいで酒」——她 1964 年就以童星出道，長年沒有代表作，這首歌把她推回主線。這張 1979-07-25 的專輯是 MB 上她 primary-type=Album 最早的一筆。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。小林幸子 池中 0 張。MB 上她名下只有 13 個 RG、primary-type=Album 僅 3 筆（1979／1994／2015），這張是唯一的 1970 年代作品。",
+  "risk": "MB 轄下有 3 個 release，其中一筆 country 未填且 status 是 Pseudo-Release（第 43／57／65／78 條：Pseudo-Release 不算再發背書，配對時要避開）；另兩筆 JP／Official 與 XW／Official 才是可用的。盤名與同名單曲同形，Apple 搜尋會回大量翻唱與精選，配對用 collectionId 直查。掛名《小林幸子》。店面 jp。",
+  "mbNote": "釘 release-group f0e98338-3fc2-49af-9218-b4ff08046b99。回問確認：title「おもいで酒」、artist-credit「小林幸子」、first-release-date 1979-07-25、primary-type Album、secondary-types 空、轄下 3 個 release（JP／Official、XW／Official、country 未填／Pseudo-Release）。藝人 MBID 29b8b5ea-9b2e-45d6-aa2e-afccf53405f2，分頁全列 13 個 RG。刻意不釘：36123eb7-dcc0-4a85-8b2c-32b3c0f65445《小林幸子全曲集 ～雨の屋台酒》（1994 全曲集）、d620a6f7-6ba6-4098-9323-54d648c83e4b《さちへんげ》（2015）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "都はるみ BIRTHDAY；Miyako Harumi Birthday",
+  "reissuedBy": "",
+  "g": "a",
+  "artist": "都はるみ",
+  "album": "BIRTHDAY",
+  "year": 1991,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "都はるみ 1964 年以「アンコ椿は恋の花」出道，1984 年宣布引退、1990 年復出；這張 1991-06-21 的《BIRTHDAY》就是復出後的第一張正規專輯，也是 MB 上她名下唯一一筆 primary-type=Album 且 secondary-types 為空的條目——其餘四筆全是後世精選（見 mbNote 的刻意不釘）。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970），其中四張是全曲集。都はるみ 池中 0 張。她在 MB 的建檔極薄（名下僅 5 個 RG），這是唯一釘得住的原盤，其餘代表作只能進 c-115 §1 補遺（見 to-c115.md）。",
+  "risk": "⚠ 盤名是全英文大寫「BIRTHDAY」，撞卡比對正規化後會與大量同名碟碰撞（Beatles 曲名、其他藝人同名盤），去重**必須**連藝人一起比，只比盤名一定誤報。掛名《都はるみ》（「都」是漢字，屬混漢字，不羅馬化）。MB 有 2 個 release（JP／Official 與 XW／Official），XW 那筆是數位版，封面配對優先取 JP。店面 jp。",
+  "mbNote": "釘 release-group 9e3d83b6-8b27-41c2-ae26-bfbbd9c6666c。回問確認：title「BIRTHDAY」、artist-credit「都はるみ」、first-release-date 1991-06-21、primary-type Album、secondary-types 空、轄下 2 個 release（JP／Official、XW／Official）。藝人 MBID 601cf2a4-f817-4d6f-ab8f-74f891265edf，分頁全列僅 5 個 RG。刻意不釘：2fe7e5f8-59a0-4c37-9bdf-008aa270e783《スーパー・ツインDX 小樽運河／千年の古都》（1990 二片裝精選）、f39c82dc-5f50-43ba-8764-570f801b1632《古賀メロディ～誕生７０周年記念～》（1998 歌集精選）、1d063b48-e6b1-4daa-9525-74d10d1e6f22《オリジナル大全集～デビュー40周年記念》（2003）、c5b8060c-9340-4b8f-b650-c267cf1bd19e《スペシャルベスト》（2005）——四筆 secondary-types 都含 Compilation。"
+ }
+]

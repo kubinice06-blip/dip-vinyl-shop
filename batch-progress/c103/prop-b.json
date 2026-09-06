@@ -1,0 +1,194 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "四つのお願い；Yottsu no Onegai；Naomi Chiaki",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "ちあきなおみ",
+  "album": "四つのお願い あなたに呼びかけるちあきなおみ",
+  "year": 1970,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "ちあきなおみ 1969 年出道（日本コロムビア），這張 1970-07-10 的盤名取自她第一首暢銷曲「四つのお願い」，是 MB 上她 primary-type=Album 最早的一筆，也是《喝采》之前的起點。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。ちあきなおみ 池中 0 張（掛名同時查「ちあきなおみ」與 MB 另一種 credit 寫法「Naomi Chiaki」，都是 0）。本批替她補 1970／1972／1972／1985 四張，把她從出道到 1980 年代的翻唱期串起來。",
+  "risk": "⚠ 掛名分裂：MB 這一張與《喝采》的 artist-credit 是羅馬字「Naomi Chiaki」，同一位藝人 1972-12 之後的 RG 卻是「ちあきなおみ」。依 2026-08-11 東亞裁定的例外條，「ちあきなおみ」是**全平假名、完全無漢字**，本應羅馬化成 Naomi Chiaki——但第 177 條規定取用順序是「先看池中、再看 MB credit」，池中 0 張，MB 兩種都有；本批統一取假名《ちあきなおみ》並在 c103/rulings.md 立案，理由與寫法一併記錄，兩種寫法都進 queryAlias。盤名極長（含副標），撞卡與 Apple 配對都要用完整字串。店面 jp。",
+  "mbNote": "釘 release-group 1e841e58-c4a9-409c-9f64-1249dcdbe8dd。回問 release-group?fmt=json&inc=artist-credits+releases 確認：title「四つのお願い あなたに呼びかけるちあきなおみ」、artist-credit「Naomi Chiaki」（⚠ 見 risk）、first-release-date 1970-07-10、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 7ea58fbf-121a-495b-8bd7-e12336306f2b，以 release-group?artist=…&limit=100&offset= 分頁全列 28 個 RG。刻意不釘：a98468f9-6cd5-4523-b3c0-5a8a9641b8fa《ミコーなおみーマリ》（1970-10，secondary-types 含 Compilation 的三人拼盤）、d99de3b5-c194-4824-bef6-2c700c405ef4《別れたあとで》（1970-11 Single）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "喝采 Kassai；Kassai；Naomi Chiaki 喝采",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "ちあきなおみ",
+  "album": "喝采",
+  "year": 1972,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "盤名取自 1972-09-10 的單曲「喝采」（吉田旺作詞・中村泰士作曲），該曲拿下第 14 回日本レコード大賞，發售三個月就得獎在當時是史上第二快的紀錄，單曲賣約 80 萬張。這張同名專輯是那首歌的初出專輯。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。ちあきなおみ 池中 0 張；她是 1970 年代歌謡曲最被樂評推崇的歌手之一，這一張是整批最不能少的一枚。",
+  "risk": "⚠ MB 的 RG 標題是「喝采 Kassai」（帶羅馬拼音副標），卡片取《喝采》，兩種寫法都進 queryAlias 否則 grep 去重會漏。⚠ 同名雙胞胎：她名下另有 62434361-6711-4e61-9dc9-f2adfe289d35《喝采〜紅とんぼ・吉田旺 参分劇》（1989，重新編曲的鋼琴版本），盤名前綴相同，釘位絕不能取那一筆。掛名見同組第一張的說明（MB 這筆 credit 是「Naomi Chiaki」）。店面 jp。",
+  "mbNote": "釘 release-group bc0fa382-8f9d-4cfa-bb09-462eb6b73c83。回問確認：title「喝采 Kassai」、artist-credit「Naomi Chiaki」、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：62434361-6711-4e61-9dc9-f2adfe289d35《喝采〜紅とんぼ・吉田旺 参分劇》（1989 重編版，同前綴）、61f1fbe6-3c3f-4b6c-b329-1c0449737f88《喝采 / 雨に濡れた慕情》（2005 Single）、cfebe535-c446-489b-ba92-102f6abe701a《ちあきなおみの喝采…》（2013 後世整編）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Mou Hitori no Watashi；もうひとりの私",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "ちあきなおみ",
+  "album": "もうひとりの私",
+  "year": 1972,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1972-12-10 發行，就在「喝采」拿下日本レコード大賞的那個月，是她得獎當下的下一張作品。同一年出兩張專輯，前一張是代表作、這一張是緊接著的延伸，兩張要一起收才看得出 1972 那一年的密度。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。ちあきなおみ 池中 0 張。",
+  "risk": "⚠ MB 轄下唯一的 release country 是 XW（worldwide，數位版），沒有 JP 實體 release 條目——封面與試聽要以 XW 那筆為準，並在建卡時註明取的是數位版。掛名見同組第一張的說明；這一筆 MB credit 已是假名「ちあきなおみ」。盤名「もうひとりの私」是常見日文句式，撞卡要連藝人比。店面 jp。",
+  "mbNote": "釘 release-group 513bd9c4-d956-41f9-a678-def19ac85efa。回問確認：title「もうひとりの私」、artist-credit「ちあきなおみ」、first-release-date 1972-12-10、primary-type Album、secondary-types 空、轄下 1 個 release（**XW**／Official，見 risk）。刻意不釘：e43cfe65-e8d2-4d1c-bd64-381fcab809fc《円舞曲》（1974）、b6b0640f-af67-4181-a96d-773a92346cbc《あまぐも》（1978）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Minato ga Mieru Oka；港が見える丘 1985",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "ちあきなおみ",
+  "album": "港が見える丘",
+  "year": 1985,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本コロムビア",
+  "why": "1985-01-21 的專輯，是她 1980 年代把戰後歌謡曲當成翻唱曲目來重新灌錄的代表作（盤名取自平野愛子 1947 年的同名曲）。這一型「後輩重唱戰後名曲」是戰後歌謡在唱片市場上延續的主要方式，本批 a 組的島倉千代子《すみだ川 - 東海林太郎を歌う》是同一形態的另一例。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。ちあきなおみ 池中 0 張；本批四張裡這一張把她的目錄從 1972 年拉到 1985 年。",
+  "risk": "⚠ 同名雙胞胎（第 126 條）：她名下有兩個 RG 都叫「港が見える丘」——baf2efc2-55c1-4f49-bb56-76d49334a2f2（1985-01-21）與 524e9cdd-3db8-4703-b2cb-27ac99ef0886（2007-03-21），標題完全一樣、只有年份不同。釘的是 1985 那一筆，2007 那筆明列為刻意不釘。盤名同時是平野愛子 1947 年的曲名，Apple 搜尋會回大量他人版本。掛名《ちあきなおみ》。店面 jp。",
+  "mbNote": "釘 release-group baf2efc2-55c1-4f49-bb56-76d49334a2f2。回問確認：title「港が見える丘」、artist-credit「ちあきなおみ」、first-release-date 1985-01-21、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：524e9cdd-3db8-4703-b2cb-27ac99ef0886《港が見える丘》（2007-03-21，**完全同名的另一個 RG**，回問確認 artist-credit 同為ちあきなおみ、轄下 1 個 JP／Official release）、6c090b7f-3d2f-4c05-8668-1d060ad8051f《男の郷愁》（1989）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "青江三奈 ブルースを唄う；Mina Aoe Blues wo Utau",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "青江三奈",
+  "album": "青江三奈ブルースを唄う",
+  "year": 1968,
+  "genres": [
+   "pop",
+   "blues"
+  ],
+  "label": "日本ビクター",
+  "why": "青江三奈 1966 年以「恍惚のブルース」出道（約 80 萬張），1968 年「伊勢佐木町ブルース」破百萬並拿下第 10 回日本レコード大賞歌唱賞。這張 1968 年的盤把她的「ブルース」路線整理成一張，是 MB 上她最早的兩筆專輯之一。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。青江三奈 池中 0 張。ムード歌謡（夜の盛り場題材）這個次類在池中完全不存在，本批 b 組替它補上青江三奈 3 張、内山田洋とクール・ファイブ 1 張、西田佐知子 2 張、フランク永井 1 張。",
+  "risk": "曲風給 pop＋blues 是依日本「歌謡ブルース」這個商品分類（盤名即為此），不是美國 blues 樂種，行文不得混為一談。盤名以藝人名開頭（「青江三奈ブルースを唄う」），與同組《池袋の夜・青江三奈のすべて》共用「青江三奈」字串，子字串去重會誤報，要用完整盤名。掛名《青江三奈》。店面 jp。",
+  "mbNote": "釘 release-group 80987f34-9ef3-41d5-8a8c-4b1baec08904。回問確認：title「青江三奈ブルースを唄う」、artist-credit「青江三奈」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。藝人 MBID 9bdaaa56-e3d8-44e8-bdc2-ebe758f69493，分頁全列僅 10 個 RG。刻意不釘：559be5b4-c677-40e2-8a84-5d31a085ff78《夜と恍惚とため息と》（1968-02-05，secondary-types 含 Compilation，且該 RG 同時掛森進一，是兩人共用的拼盤）、3cda9752-9ec2-4007-aa31-af9c8b094b37《ベスト＆ベスト》（2003 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "池袋の夜；青江三奈のすべて；Ikebukuro no Yoru",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "青江三奈",
+  "album": "池袋の夜・青江三奈のすべて",
+  "year": 1968,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本ビクター",
+  "why": "盤名取自「池袋の夜」——該曲 1969 年賣約 150 萬張，讓她在 1968、1969 連兩年拿日本レコード大賞相關獎項，在當年是罕見的紀錄。這張 1968 年的盤是那首歌前後的企劃輯。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。青江三奈 池中 0 張；她 MB 名下只有 10 個 RG，primary-type=Album 且 secondary-types 為空的只有 7 筆，本批取其中三筆（1968×2、1969）。",
+  "risk": "⚠ 盤名同時含「池袋の夜」與「青江三奈のすべて」兩個常見片語，跟同組另兩張的子字串重疊度高，去重必須用完整盤名。MB first-release-date 只到年份（1968），與同組《青江三奈ブルースを唄う》同年同精度，兩張的先後順序不可從 MB 推定，行文不得斷言哪張在前。掛名《青江三奈》。店面 jp。",
+  "mbNote": "釘 release-group b08f8309-910f-4839-9414-b486dfcdd3d6。回問確認：title「池袋の夜・青江三奈のすべて」、artist-credit「青江三奈」、first-release-date 1968、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：80987f34-9ef3-41d5-8a8c-4b1baec08904《青江三奈ブルースを唄う》（同年另一張，本批另收一卡）、06c9a55e-ad69-4cb2-a500-5238c0f5a1e0《グッド・ナイト》（1969-07）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "盛り場流し歌；Sakariba Nagashi Uta",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "青江三奈",
+  "album": "盛り場流し歌",
+  "year": 1969,
+  "genres": [
+   "pop"
+  ],
+  "label": "日本ビクター",
+  "why": "1969-03-25 的ビクター盤，主題是「盛り場」（夜の繁華街）的流し歌——這正是ムード歌謡最核心的題材，也是她 1968–69 兩年商業高點當中的作品。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。青江三奈 池中 0 張。本批她的三張（1968×2、1969）合起來就是她全盛期的完整切面。",
+  "risk": "⚠ 與同組西田佐知子《盛り場の女》（1970）共用「盛り場」三個字，兩張都在 b 組，跨組與批內去重都要用完整盤名，只比前綴一定誤報。掛名《青江三奈》。1969 年ビクター LP 的 Apple 條目多為後世重編，配對用 collectionId 直查並核對曲目列（第 175 條）。店面 jp。",
+  "mbNote": "釘 release-group 0417372b-ef27-4bd6-83c7-9afd6ad24f78。回問確認：title「盛り場流し歌」、artist-credit「青江三奈」、first-release-date 1969-03-25、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：09f44a25-02a1-4db9-b92d-b693e0e4d175《懐かしの映画音楽を唄う》（1971）、107bae84-aa11-4bf5-b3a5-fdbb8dfe9e5e《女》（1971，盤名單字，最容易誤配的一筆）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Onna no Blues；女のブルース 藤圭子",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "藤圭子",
+  "album": "女のブルース",
+  "year": 1970,
+  "genres": [
+   "pop",
+   "blues"
+  ],
+  "label": "RCA",
+  "why": "盤名取自 1970-02 的單曲「女のブルース」。文藝評論家五木寛之當年評她的歌「不是演歌也不是艶歌，是不折不扣的怨歌」，這個造語就是從她 1969–71 那三張專輯來的。她的專輯在 1970-03-30 到 1971-01-11 之間連續 42 週佔 Oricon 榜首，這項紀錄至今未被打破。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。實掃結果藤圭子 池中 1 張，是 1970 年的《新宿の女》——那正是她的第一張。本批替她補 1970-07、1970-12、1971-03 三張，把那 42 週的另外三張補齊。",
+  "risk": "⚠ 撞卡：池中已有藤圭子《新宿の女》，而 MB 上《新宿の女》有專輯（aa5a953c-7c23-46c6-9995-e1019c6951dd）與單曲（e50c0da0-db68-474f-b7f9-14e81f041667）兩筆——本批**不收**那張，避免與池中重複。曲風給 pop＋blues 是依「歌謡ブルース」的商品分類。盤名「女のブルース」與同期多位歌手的「〜のブルース」高度相似（同批森進一《森進一のブルース》在 a 組），去重要連藝人比。掛名《藤圭子》。店面 jp。",
+  "mbNote": "釘 release-group 3a23a76b-2b0b-4b6e-9fb3-1ddc40e208d3。回問確認：title「女のブルース」、artist-credit「藤圭子」、first-release-date 1970-07-05、primary-type Album、secondary-types 空、轄下 2 個 release（皆 JP／Official）。藝人 MBID 3d5ebe93-dfa1-434f-807f-ddab40247c4b，分頁全列 22 個 RG。刻意不釘：aa5a953c-7c23-46c6-9995-e1019c6951dd《新宿の女》（1970-05 專輯，**池中已有同名卡，不重複收**）、e50c0da0-db68-474f-b7f9-14e81f041667《新宿の女》（1969-09-25 Single，與前者同名的雙胞胎）、d2aff097-e8f8-4559-aa34-78417af5f6dc《女のブルース》（1970-02-05 Single，與本張同名）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "歌いつがれて25年 藤圭子 演歌を歌う；藤 圭子 演歌を歌う；Utaitsugarete 25nen",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "藤圭子",
+  "album": "歌いつがれて25年 藤 圭子 演歌を歌う",
+  "year": 1970,
+  "genres": [
+   "pop"
+  ],
+  "label": "RCA",
+  "why": "1970-12-05 的 RCA 盤，是她在同年連續霸榜期間錄的演歌翻唱集——盤名「歌いつがれて25年」指的是戰後二十五年間傳唱的曲目。這張與《女のブルース》《さいはての女》一起構成她 1970–71 那段 42 週連續冠軍的專輯群。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。藤圭子 池中 1 張（《新宿の女》1970）。",
+  "risk": "⚠ MB 的 RG 標題在藝人名中間有一個半形空格（「藤 圭子」），與卡片掛名《藤圭子》不一致，撞卡比對與 Apple 搜尋要兩種都試，已寫進 queryAlias。盤名很長且含數字「25」，正規化後仍可能與其他「歌いつがれて」系列碰撞。掛名《藤圭子》（不取 MB 標題裡帶空格的寫法）。店面 jp。",
+  "mbNote": "釘 release-group 22b19ae8-8656-4f27-b847-10b539d6d17a。回問確認：title「歌いつがれて25年 藤 圭子 演歌を歌う」（藝人名中間帶半形空格）、artist-credit「藤圭子」、first-release-date 1970-12-05、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：5f2fedf9-bca4-33a3-8169-dd10b9900cae《ゴールデン★ベスト》（2005 精選）、e8ab0a44-e4f0-4a94-9161-0d3bc39b29e8《GOLDEN☆BEST 藤圭子 ヒット&カバーコレクション 艶歌と縁歌》（2010 精選）。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Saihate no Onna；さいはての女 藤圭子",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "藤圭子",
+  "album": "さいはての女",
+  "year": 1971,
+  "genres": [
+   "pop"
+  ],
+  "label": "RCA",
+  "why": "1971-03-05 的 RCA 盤，盤名取自同年 2 月的單曲「さいはての女」。這是她連續霸榜期的最後一張，之後她的商業高度就開始下滑——三張一起收，1970–71 那個異常密集的兩年才完整。實掃 seed_cards.json 全 14,424 列：演歌／戰後歌謡整條線池中只有 5 張（森進一《森進一全曲集》1998、北島三郎《北島三郎全曲集》2011、フランク永井《フランク永井全曲集》1960、五木ひろし《五木ひろし全曲集》2015、藤圭子《新宿の女》1970）。藤圭子 池中 1 張（《新宿の女》1970），補完本批三張之後她在池中會有 4 張、覆蓋 1969-09 出道到 1971-03。",
+  "risk": "盤名與同年單曲同形（224f36b5-2b78-46bc-807b-61055825b896），Apple 搜尋容易回單曲版，配對要用 collectionId 直查並核對曲目列。掛名《藤圭子》。店面 jp。",
+  "mbNote": "釘 release-group e303b244-4e1c-4ebc-860a-50fb95001543。回問確認：title「さいはての女」、artist-credit「藤圭子」、first-release-date 1971-03-05、primary-type Album、secondary-types 空、轄下 1 個 release（JP／Official）。刻意不釘：224f36b5-2b78-46bc-807b-61055825b896《さいはての女》（1971-02 Single，同名雙胞胎）、fc161d6d-37af-48b6-9555-d654b3879128《知らない町で》（1971-12-25 專輯）、f1376bf9-e1df-4024-ba0a-578604610217《京都ブルース》（1974）。"
+ }
+]
